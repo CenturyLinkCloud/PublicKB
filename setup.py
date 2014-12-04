@@ -8,8 +8,8 @@
 from setuptools import setup, find_packages
 
 setup(
-	name = "clc",
-	version = "0.2",
+	name = "clc-cli",
+	version = "0.3",
 	package_dir = {'':'src'},
 	packages = find_packages("src"),
 
