@@ -93,11 +93,14 @@ Commands:
 
 
 #### Authentication
-All commands require authentication which can be accomplished in 3 ways in increasing order of priority.
-* Create a configuration file ([see example](/src/example_config.ini))
+All commands require authentication which can be accomplished in several ways in increasing order of priority.
+* System configuration file at /usr/local/etc/clc
+* User specific configuration file at ~/.clc
+* Specify configuration file with --config / -c command line option
 * Define environment variables (V1_API_KEY / V1_API_PASSWD or V2_API_USERNAME / V2_API_PASSWD)
 * Pass credentials as command line options
 
+Configuration files follow ini syntax.  Reference the [example.ini](src/example.ini) file with all currently accepted fields.
 
 #### Accounts
 Usage

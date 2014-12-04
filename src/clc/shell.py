@@ -292,12 +292,21 @@ class Args:
 
 
 	def ImportIni(self):
-		if not os.path.isfile(self.args.config):
-			clc.output.Status('ERROR',3,"Config file %s not found" % (self.args.config))
-			sys.exit(1)
+		config = False
+		# Order of preference - cmd line specified, home directory file, or system file
+		if self.args.config:
+			config_file = self.args.config
+			if self.args.config and not os.path.isfile(self.args.config):
+				clc.output.Status('ERROR',3,"Config file %s not found" % (self.args.config))
+				sys.exit(1)
+		elif os.path.isfile("~/.clc"):
+			config_file = "~/.clc"
+		elif os.path.isfile("/usr/loca/etc/clc"):
+			config_file = "/usr/local/etc/clc"
+		if config_file:  clc.output.Status('SUCCESS',3,"Reading %s" % (config_file))
 
 		config = ConfigParser.ConfigParser()
-		config.read(self.args.config)
+		config.read(config_file)
 
 		if config.has_option('global','v1_api_key'):  clc._V1_API_KEY = config.get('global','v1_api_key')
 		if config.has_option('global','v1_api_passwd'):  clc._V1_API_PASSWD = config.get('global','v1_api_passwd')
