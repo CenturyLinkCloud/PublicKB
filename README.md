@@ -21,10 +21,19 @@ This repository contains a Python SDK and a command line CLI (based on the SDK) 
 ## CLI
 
 ### Installing
-Cross-platform installation is available via pypi.  If you have pip already installed the following command will get you running:
+Cross-platform installation is available via pypi.  Requires *Python 2.r78* - this is not currently compatible with Python 3.
+If you have pip already installed the following command will get you running:
 ```
 > pip install clc-cli
 ```
+
+This should automatically install the following dependencies: prettytable, clint, argparse, requests
+
+If you do not have pip (the Python package manager) installed a quickstart install of this prereq on Linux/Mac is:
+```
+> curl https://bootstrap.pypa.io/get-pip.py | sudo python
+```
+
 
 ### Usage
 ```

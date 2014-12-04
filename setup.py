@@ -9,7 +9,7 @@ from setuptools import setup, find_packages
 
 setup(
 	name = "clc",
-	version = "0.1",
+	version = "0.2",
 	package_dir = {'':'src'},
 	packages = find_packages("src"),
 
@@ -26,7 +26,7 @@ setup(
 	author_email = "Keith.Resar@CenturyLinkCloud.com",
 	description = "CenturyLink Cloud CLI",
 	keywords = "CenturyLink Cloud CLI",
-	url = "https://github.com/hk1232/clc",
+	url = "https://github.com/CenturyLinkCloud/clc",
 
 	# could also include long_description, download_url, classifiers, etc.
 )
