@@ -5,19 +5,26 @@ This repository contains a Python SDK and a command line CLI (based on the SDK) 
 ## Contents
 
 * [CLI](#cli)
-  * [Usage](#usage)
-  *  [Accounts](#accounts) - Account level activities (list, create, modify)
-  *  [Users](#users) - User level activities (list, create, modify)
-  *  [Servers](#servers) - Server level activities (list, create, modify)
-  *  [Groups](#groups) - Group level activities (list, create, modify)
-  *  [Billing](#billing) - Billing activities
-  *  [Networks](#networks) - Network activities
-  *  [Queue](#queue) - Work queue
-  *  [Blueprints](#blueprints) - Blueprints
-  *  [Global Options](#global-options) - Formatting and execution options
+  * [Installing](#installing)
+  * [Usage](#usage) - basic usage, authentication, and configuration files
+  * [Accounts](#accounts) - Account level activities (list, create, modify)
+  * [Users](#users) - User level activities (list, create, modify)
+  * [Servers](#servers) - Server level activities (list, create, modify)
+  * [Groups](#groups) - Group level activities (list, create, modify)
+  * [Billing](#billing) - Billing activities
+  * [Networks](#networks) - Network activities
+  * [Queue](#queue) - Work queue
+  * [Blueprints](#blueprints) - Blueprints
+  * [Global Options](#global-options) - Formatting and execution options
 * [SDK](#python-sdk)
 
 ## CLI
+
+### Installing
+Cross-platform installation is available via pypi.  If you have pip already installed the following command will get you running:
+```
+> sudo pip install clc-cli
+```
 
 ### Usage
 ```
