@@ -1,0 +1,4 @@
+*.ini
+*.pyc
+*.sw?
+clc.egg-info

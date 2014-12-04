@@ -1,0 +1,49 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module user</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>user</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/usr/lib64/python2.6/user.py">/usr/lib64/python2.6/user.py</a></font></td></tr></table>
+    <p><tt>Hook&nbsp;to&nbsp;allow&nbsp;user-specified&nbsp;customization&nbsp;code&nbsp;to&nbsp;run.<br>
+&nbsp;<br>
+As&nbsp;a&nbsp;policy,&nbsp;Python&nbsp;doesn't&nbsp;run&nbsp;user-specified&nbsp;code&nbsp;on&nbsp;startup&nbsp;of<br>
+Python&nbsp;programs&nbsp;(interactive&nbsp;sessions&nbsp;execute&nbsp;the&nbsp;script&nbsp;specified&nbsp;in<br>
+the&nbsp;PYTHONSTARTUP&nbsp;environment&nbsp;variable&nbsp;if&nbsp;it&nbsp;exists).<br>
+&nbsp;<br>
+However,&nbsp;some&nbsp;programs&nbsp;or&nbsp;sites&nbsp;may&nbsp;find&nbsp;it&nbsp;convenient&nbsp;to&nbsp;allow&nbsp;users<br>
+to&nbsp;have&nbsp;a&nbsp;standard&nbsp;customization&nbsp;file,&nbsp;which&nbsp;gets&nbsp;run&nbsp;when&nbsp;a&nbsp;program<br>
+requests&nbsp;it.&nbsp;&nbsp;This&nbsp;module&nbsp;implements&nbsp;such&nbsp;a&nbsp;mechanism.&nbsp;&nbsp;A&nbsp;program<br>
+that&nbsp;wishes&nbsp;to&nbsp;use&nbsp;the&nbsp;mechanism&nbsp;must&nbsp;execute&nbsp;the&nbsp;statement<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;user<br>
+&nbsp;<br>
+The&nbsp;user&nbsp;module&nbsp;looks&nbsp;for&nbsp;a&nbsp;file&nbsp;.pythonrc.py&nbsp;in&nbsp;the&nbsp;user's&nbsp;home<br>
+directory&nbsp;and&nbsp;if&nbsp;it&nbsp;can&nbsp;be&nbsp;opened,&nbsp;execfile()s&nbsp;it&nbsp;in&nbsp;its&nbsp;own&nbsp;global<br>
+namespace.&nbsp;&nbsp;Errors&nbsp;during&nbsp;this&nbsp;phase&nbsp;are&nbsp;not&nbsp;caught;&nbsp;that's&nbsp;up&nbsp;to&nbsp;the<br>
+program&nbsp;that&nbsp;imports&nbsp;the&nbsp;user&nbsp;module,&nbsp;if&nbsp;it&nbsp;wishes.<br>
+&nbsp;<br>
+The&nbsp;user's&nbsp;.pythonrc.py&nbsp;could&nbsp;conceivably&nbsp;test&nbsp;for&nbsp;sys.version&nbsp;if&nbsp;it<br>
+wishes&nbsp;to&nbsp;do&nbsp;different&nbsp;things&nbsp;depending&nbsp;on&nbsp;the&nbsp;Python&nbsp;version.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>home</strong> = '/home/resark'<br>
+<strong>pythonrc</strong> = '/home/resark/.pythonrc.py'</td></tr></table>
+</body></html>

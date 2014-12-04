@@ -1,0 +1,74 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module clc.billing</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="clc.html"><font color="#ffffff">clc</font></a>.billing</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/files0/clc_trial_mgmt/scripts/clc_gitmaster/src/clc/billing.py">/files0/clc_trial_mgmt/scripts/clc_gitmaster/src/clc/billing.py</a></font></td></tr></table>
+    <p><tt><a href="#Billing">Billing</a>&nbsp;related&nbsp;functions.<br>
+&nbsp;<br>
+These&nbsp;billing&nbsp;related&nbsp;functions&nbsp;generally&nbsp;align&nbsp;one-for-one&nbsp;with&nbsp;published&nbsp;API&nbsp;calls&nbsp;categorized&nbsp;in&nbsp;the&nbsp;billing&nbsp;category<br>
+&nbsp;<br>
+API&nbsp;v1&nbsp;-&nbsp;https://t3n.zendesk.com/forums/20616692-<a href="#Billing">Billing</a><br>
+API&nbsp;v2&nbsp;-&nbsp;n/a</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="clc.html">clc</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="clc.billing.html#Billing">Billing</a>
+</font></dt></dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Billing">class <strong>Billing</strong></a></font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Static methods defined here:<br>
+<dl><dt><a name="Billing-GetAccountSummary"><strong>GetAccountSummary</strong></a>(alias)</dt><dd><tt>Gets&nbsp;monthly&nbsp;and&nbsp;hourly&nbsp;charges&nbsp;and&nbsp;estimates&nbsp;for&nbsp;a&nbsp;given&nbsp;account&nbsp;or&nbsp;collection&nbsp;of&nbsp;accounts.<br>
+&nbsp;<br>
+https://t3n.zendesk.com/entries/22408882-GetAccountSummary<br>
+&nbsp;<br>
+:param&nbsp;alias:&nbsp;short&nbsp;code&nbsp;for&nbsp;a&nbsp;particular&nbsp;account.&nbsp;&nbsp;If&nbsp;none&nbsp;will&nbsp;use&nbsp;account's&nbsp;default&nbsp;alias</tt></dd></dl>
+
+<dl><dt><a name="Billing-GetGroupEstimate"><strong>GetGroupEstimate</strong></a>(alias, location, group)</dt><dd><tt>Gets&nbsp;estimated&nbsp;costs&nbsp;for&nbsp;a&nbsp;group&nbsp;of&nbsp;servers.<br>
+&nbsp;<br>
+https://t3n.zendesk.com/entries/22423906-GetGroupEstimate<br>
+&nbsp;<br>
+:param&nbsp;alias:&nbsp;short&nbsp;code&nbsp;for&nbsp;a&nbsp;particular&nbsp;account.&nbsp;&nbsp;If&nbsp;none&nbsp;will&nbsp;use&nbsp;account's&nbsp;default&nbsp;alias<br>
+:param&nbsp;location:&nbsp;datacenter&nbsp;where&nbsp;group&nbsp;resides<br>
+:param&nbsp;group:&nbsp;group&nbsp;name</tt></dd></dl>
+
+<dl><dt><a name="Billing-GetGroupSummaries"><strong>GetGroupSummaries</strong></a>(alias, date_start<font color="#909090">=None</font>, date_end<font color="#909090">=None</font>)</dt><dd><tt>Gets&nbsp;the&nbsp;charges&nbsp;for&nbsp;groups&nbsp;and&nbsp;servers&nbsp;within&nbsp;a&nbsp;given&nbsp;account,&nbsp;and&nbsp;for&nbsp;any&nbsp;date&nbsp;range.<br>
+&nbsp;<br>
+https://t3n.zendesk.com/entries/22423916-GetGroupSummaries<br>
+&nbsp;<br>
+:param&nbsp;alias:&nbsp;short&nbsp;code&nbsp;for&nbsp;a&nbsp;particular&nbsp;account.&nbsp;&nbsp;If&nbsp;none&nbsp;will&nbsp;use&nbsp;account's&nbsp;default&nbsp;alias<br>
+:param&nbsp;date_start:&nbsp;YYYY-MM-DD&nbsp;string&nbsp;for&nbsp;start&nbsp;date.&nbsp;&nbsp;If&nbsp;None&nbsp;defaults&nbsp;to&nbsp;start&nbsp;of&nbsp;current&nbsp;month<br>
+:param&nbsp;date_end:&nbsp;YYYY-MM-DD&nbsp;string&nbsp;for&nbsp;end&nbsp;date.&nbsp;&nbsp;If&nbsp;None&nbsp;defaults&nbsp;to&nbsp;current&nbsp;day&nbsp;of&nbsp;current&nbsp;month</tt></dd></dl>
+
+<dl><dt><a name="Billing-GetServerEstimate"><strong>GetServerEstimate</strong></a>(alias, server)</dt><dd><tt>Gets&nbsp;the&nbsp;estimated&nbsp;monthly&nbsp;cost&nbsp;for&nbsp;a&nbsp;given&nbsp;server.<br>
+&nbsp;<br>
+https://t3n.zendesk.com/entries/22422323-GetServerEstimate<br>
+&nbsp;<br>
+:param&nbsp;alias:&nbsp;short&nbsp;code&nbsp;for&nbsp;a&nbsp;particular&nbsp;account.&nbsp;&nbsp;If&nbsp;none&nbsp;will&nbsp;use&nbsp;account's&nbsp;default&nbsp;alias<br>
+:param&nbsp;server:&nbsp;name&nbsp;of&nbsp;server&nbsp;to&nbsp;query</tt></dd></dl>
+
+</td></tr></table></td></tr></table>
+</body></html>

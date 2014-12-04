@@ -1,0 +1,112 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module clc.blueprint</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="clc.html"><font color="#ffffff">clc</font></a>.blueprint</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/files0/clc_trial_mgmt/scripts/clc_gitmaster/src/clc/blueprint.py">/files0/clc_trial_mgmt/scripts/clc_gitmaster/src/clc/blueprint.py</a></font></td></tr></table>
+    <p><tt><a href="#Blueprint">Blueprint</a>&nbsp;related&nbsp;functions.<br>
+&nbsp;<br>
+These&nbsp;<a href="#Blueprint">Blueprint</a>&nbsp;related&nbsp;functions&nbsp;generally&nbsp;align&nbsp;one-for-one&nbsp;with&nbsp;published&nbsp;API&nbsp;calls&nbsp;categorized&nbsp;in&nbsp;the&nbsp;<a href="#Blueprint">Blueprint</a>&nbsp;category<br>
+&nbsp;<br>
+API&nbsp;v1&nbsp;-&nbsp;https://t3n.zendesk.com/forums/20242326-<a href="#Blueprint">Blueprint</a><br>
+API&nbsp;v2&nbsp;-&nbsp;n/a</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="clc.html">clc</a><br>
+<a href="curses.html">curses</a><br>
+</td><td width="25%" valign=top><a href="ftplib.html">ftplib</a><br>
+<a href="operator.html">operator</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="re.html">re</a><br>
+</td><td width="25%" valign=top><a href="urlparse.html">urlparse</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="clc.blueprint.html#Blueprint">Blueprint</a>
+</font></dt></dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Blueprint">class <strong>Blueprint</strong></a></font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Static methods defined here:<br>
+<dl><dt><a name="Blueprint-GetAllPackages"><strong>GetAllPackages</strong></a>(classification)</dt><dd><tt>Gets&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;<a href="#Blueprint">Blueprint</a>&nbsp;Packages&nbsp;with&nbsp;a&nbsp;given&nbsp;classification.<br>
+&nbsp;<br>
+https://t3n.zendesk.com/entries/20411357-Get-Packages<br>
+&nbsp;<br>
+:param&nbsp;classification:&nbsp;package&nbsp;type&nbsp;filter&nbsp;(System,&nbsp;Script,&nbsp;Software)</tt></dd></dl>
+
+<dl><dt><a name="Blueprint-GetAllScriptsPackages"><strong>GetAllScriptsPackages</strong></a>()</dt><dd><tt>Returns&nbsp;list&nbsp;of&nbsp;all&nbsp;Script&nbsp;packages.</tt></dd></dl>
+
+<dl><dt><a name="Blueprint-GetAllSoftwarePackages"><strong>GetAllSoftwarePackages</strong></a>()</dt><dd><tt>Returns&nbsp;list&nbsp;of&nbsp;all&nbsp;Software&nbsp;packages.</tt></dd></dl>
+
+<dl><dt><a name="Blueprint-GetAllSystemPackages"><strong>GetAllSystemPackages</strong></a>()</dt><dd><tt>Returns&nbsp;list&nbsp;of&nbsp;all&nbsp;System&nbsp;packages.</tt></dd></dl>
+
+<dl><dt><a name="Blueprint-GetPackages"><strong>GetPackages</strong></a>(classification, visibility)</dt><dd><tt>Gets&nbsp;a&nbsp;list&nbsp;of&nbsp;<a href="#Blueprint">Blueprint</a>&nbsp;Packages&nbsp;filtered&nbsp;by&nbsp;classification&nbsp;and&nbsp;visibility.<br>
+&nbsp;<br>
+https://t3n.zendesk.com/entries/20411357-Get-Packages<br>
+&nbsp;<br>
+:param&nbsp;classification:&nbsp;package&nbsp;type&nbsp;filter&nbsp;(System,&nbsp;Script,&nbsp;Software)<br>
+:param&nbsp;visibility:&nbsp;package&nbsp;visibility&nbsp;filter&nbsp;(Public,&nbsp;Private,&nbsp;Shared)</tt></dd></dl>
+
+<dl><dt><a name="Blueprint-GetPendingPackages"><strong>GetPendingPackages</strong></a>()</dt><dd><tt>Returns&nbsp;list&nbsp;of&nbsp;packages&nbsp;pending&nbsp;publishing.</tt></dd></dl>
+
+<dl><dt><a name="Blueprint-GetStatus"><strong>GetStatus</strong></a>(request_id, location, alias, silent<font color="#909090">=False</font>)</dt><dd><tt>Gets&nbsp;the&nbsp;status&nbsp;of&nbsp;the&nbsp;specified&nbsp;<a href="#Blueprint">Blueprint</a>&nbsp;deployment.<br>
+&nbsp;<br>
+https://t3n.zendesk.com/entries/20561586-Get-Deployment-Status<br>
+&nbsp;<br>
+:param&nbsp;request_id:&nbsp;the&nbsp;int&nbsp;ID&nbsp;of&nbsp;the&nbsp;<a href="#Blueprint">Blueprint</a>&nbsp;Deployment&nbsp;to&nbsp;retrieve&nbsp;status&nbsp;for.<br>
+:param&nbsp;alias:&nbsp;short&nbsp;code&nbsp;for&nbsp;a&nbsp;particular&nbsp;account.&nbsp;&nbsp;If&nbsp;none&nbsp;will&nbsp;use&nbsp;account's&nbsp;default&nbsp;alias<br>
+:param&nbsp;location:&nbsp;datacenter&nbsp;where&nbsp;group&nbsp;resides<br>
+:param&nbsp;silent:&nbsp;disable&nbsp;status&nbsp;output&nbsp;when&nbsp;executed&nbsp;within&nbsp;CLI&nbsp;runtime</tt></dd></dl>
+
+<dl><dt><a name="Blueprint-PackagePublish"><strong>PackagePublish</strong></a>(package, classification, visibility, os)</dt><dd><tt>Publishes&nbsp;a&nbsp;<a href="#Blueprint">Blueprint</a>&nbsp;Package&nbsp;for&nbsp;use&nbsp;within&nbsp;the&nbsp;<a href="#Blueprint">Blueprint</a>&nbsp;Designer.<br>
+&nbsp;<br>
+https://t3n.zendesk.com/entries/20426453-Publish-Package<br>
+&nbsp;<br>
+:param&nbsp;package:&nbsp;path&nbsp;to&nbsp;zip&nbsp;file&nbsp;containing&nbsp;package.manifest&nbsp;and&nbsp;supporting&nbsp;scripts<br>
+:param&nbsp;classification:&nbsp;package&nbsp;type&nbsp;(System,&nbsp;Script,&nbsp;Software)<br>
+:param&nbsp;visibility:&nbsp;package&nbsp;visibility&nbsp;filter&nbsp;(Public,&nbsp;Private,&nbsp;Shared)<br>
+:param&nbsp;os:&nbsp;list&nbsp;of&nbsp;ints&nbsp;containing&nbsp;Operating&nbsp;System&nbsp;template&nbsp;IDs</tt></dd></dl>
+
+<dl><dt><a name="Blueprint-PackagePublishUI"><strong>PackagePublishUI</strong></a>(package, type, visibility)</dt><dd><tt>Publishes&nbsp;a&nbsp;<a href="#Blueprint">Blueprint</a>&nbsp;Package&nbsp;for&nbsp;use&nbsp;within&nbsp;the&nbsp;<a href="#Blueprint">Blueprint</a>&nbsp;Designer&nbsp;after&nbsp;interactive&nbsp;OS&nbsp;selection.<br>
+&nbsp;<br>
+Interactive&nbsp;selection&nbsp;of&nbsp;one&nbsp;or&nbsp;more&nbsp;operating&nbsp;systems&nbsp;by&nbsp;name.<br>
+&nbsp;<br>
+:param&nbsp;package:&nbsp;path&nbsp;to&nbsp;zip&nbsp;file&nbsp;containing&nbsp;package.manifest&nbsp;and&nbsp;supporting&nbsp;scripts<br>
+:param&nbsp;classification:&nbsp;package&nbsp;type&nbsp;(System,&nbsp;Script,&nbsp;Software)<br>
+:param&nbsp;visibility:&nbsp;package&nbsp;visibility&nbsp;filter&nbsp;(Public,&nbsp;Private,&nbsp;Shared)</tt></dd></dl>
+
+<dl><dt><a name="Blueprint-PackageUpload"><strong>PackageUpload</strong></a>(package, ftp_url)</dt><dd><tt>Uploads&nbsp;specified&nbsp;zip&nbsp;package&nbsp;to&nbsp;cloud&nbsp;endpoint.<br>
+&nbsp;<br>
+See&nbsp;URL&nbsp;below&nbsp;for&nbsp;description&nbsp;on&nbsp;how&nbsp;to&nbsp;properly&nbsp;create&nbsp;a&nbsp;package:<br>
+https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management<br>
+&nbsp;<br>
+:param&nbsp;package:&nbsp;path&nbsp;to&nbsp;zip&nbsp;file&nbsp;containing&nbsp;package.manifest&nbsp;and&nbsp;supporting&nbsp;scripts<br>
+:param&nbsp;ftp_url:&nbsp;ftp&nbsp;URL&nbsp;including&nbsp;credentials&nbsp;of&nbsp;the&nbsp;form&nbsp;<a href="ftp://user:password@hostname">ftp://user:password@hostname</a></tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>classification_stoi</strong> = {'Script': 2, 'Scripts': 2, 'Software': 3, 'System': 1}</dl>
+
+<dl><dt><strong>visibility_stoi</strong> = {'Private': 2, 'Public': 1, 'Shared': 3}</dl>
+
+</td></tr></table></td></tr></table>
+</body></html>
