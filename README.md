@@ -23,7 +23,7 @@ This repository contains a Python SDK and a command line CLI (based on the SDK) 
 ### Installing
 Cross-platform installation is available via pypi.  If you have pip already installed the following command will get you running:
 ```
-> sudo pip install clc-cli
+> pip install clc-cli
 ```
 
 ### Usage
