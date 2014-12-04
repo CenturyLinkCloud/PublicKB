@@ -26,6 +26,7 @@ from clc.billing import Billing
 from clc.queue import Queue
 from clc.blueprint import Blueprint
 from clc.api import API
+import defaults
 
 
 ####### module/object vars #######

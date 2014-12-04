@@ -3,12 +3,14 @@
 import argparse
 import ConfigParser
 import os
+import sys
 import clc
 
 
 class Args:
 
 	def __init__(self):
+		import clc.output
 		clc.args = self
 		self.ParseArgs()
 		if self.args.config:  self.ImportIni()
@@ -291,7 +293,8 @@ class Args:
 
 	def ImportIni(self):
 		if not os.path.isfile(self.args.config):
-			clc.output.Status('ERROR',3,"Config file %s not found" % self.args.config)
+			clc.output.Status('ERROR',3,"Config file %s not found" % (self.args.config))
+			sys.exit(1)
 
 		config = ConfigParser.ConfigParser()
 		config.read(self.args.config)
