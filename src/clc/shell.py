@@ -161,6 +161,11 @@ class Args:
 		parser_server_snapshot.add_argument('--alias', help='Operate on specific account alias')
 		parser_server_snapshot.add_argument('--server', nargs='*', required=True, metavar='NAME', help='Server name')
 
+		## Pause
+		parser_server_pause = parser_sp4.add_parser('pause', help='Pause one or more servers')
+		parser_server_pause.add_argument('--alias', help='Operate on specific account alias')
+		parser_server_pause.add_argument('--server', nargs='*', required=True, metavar='NAME', help='Server name')
+
 		## Get Credentials
 		parser_server_get_credentials = parser_sp4.add_parser('get-credentials', help='Get server administrator login credentials')
 		parser_server_get_credentials.add_argument('--alias', help='Operate on specific account alias')
@@ -432,6 +437,7 @@ class ExecCommand():
 		elif clc.args.GetArgs().sub_command == 'reset':  self.ServerActions("Reset")
 		elif clc.args.GetArgs().sub_command == 'shutdown':  self.ServerActions("Shutdown")
 		elif clc.args.GetArgs().sub_command == 'snapshot':  self.ServerActions("Snapshot")
+		elif clc.args.GetArgs().sub_command == 'pause':  self.ServerActions("Pause")
 		elif clc.args.GetArgs().sub_command == 'create':  self.CreateServer()
 		elif clc.args.GetArgs().sub_command == 'get-credentials':  self.GetServerCredentials()
 		elif clc.args.GetArgs().sub_command == 'list-disks':  self.GetServerDisks()

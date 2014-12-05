@@ -293,7 +293,7 @@ Usage
 ```
 > clc --config config.ini servers
 usage: clc servers [-h] 
-	{get,list,list-all,templates,create,delete,archive,poweron,poweroff,reset,shutdown,snapshot,get-credentials,list-disks} ...
+	{get,list,list-all,templates,create,delete,archive,pause,poweron,poweroff,reset,shutdown,snapshot,get-credentials,list-disks} ...
 ```
 
 ##### Templates
@@ -487,7 +487,7 @@ List all disks associated with the servere also querying the guest for disk name
 
 ##### Misc Asynchronous server operations
 These asynchronous operations can be run on one more more servers.  Currently implemented are:
-*delete, archive, poweron, poweroff, reset, shutdown, snapshot*.  Rather than waiting for process to 
+*pause, delete, archive, poweron, poweroff, reset, shutdown, snapshot*.  Rather than waiting for process to 
 complete execute asynchronously and return a job ID.
 ```
 > clc --async --config config.ini servers delete --server WA1BTDICLITST01

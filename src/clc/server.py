@@ -144,6 +144,22 @@ class Server:
 
 
 	@staticmethod
+	def _ServerActions(action,alias,servers):
+		"""Archives the specified servers.
+
+		:param action: the server action url to exec against
+		:param alias: short code for a particular account.  If none will use account's default alias
+		:param servers: list of server names
+		"""
+		if alias is None:  alias = clc.Account.GetAlias()
+		results = []
+		for server in servers:
+			r = clc.API.v1_call('post','Server/%sServer' % (action), {'AccountAlias': alias, 'Name': server })
+			if int(r['StatusCode']) == 0:  results.append(r)
+		return(results)
+
+
+	@staticmethod
 	def Archive(alias,servers):
 		"""Archives the specified servers.
 
@@ -152,12 +168,7 @@ class Server:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param servers: list of server names
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		results = []
-		for server in servers:
-			r = clc.API.v1_call('post','Server/ArchiveServer', {'AccountAlias': alias, 'Name': server })
-			if int(r['StatusCode']) == 0:  results.append(r)
-		return(results)
+		return(Server._ServerActions("Archive",alias,servers))
 
 
 	@staticmethod
@@ -169,12 +180,7 @@ class Server:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param servers: list of server names
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		results = []
-		for server in servers:
-			r = clc.API.v1_call('post','Server/PowerOnServer', {'AccountAlias': alias, 'Name': server })
-			if int(r['StatusCode']) == 0:  results.append(r)
-		return(results)
+		return(Server._ServerActions("PowerOn",alias,servers))
 
 
 	@staticmethod
@@ -186,12 +192,7 @@ class Server:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param servers: list of server names
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		results = []
-		for server in servers:
-			r = clc.API.v1_call('post','Server/PowerOffServer', {'AccountAlias': alias, 'Name': server })
-			if int(r['StatusCode']) == 0:  results.append(r)
-		return(results)
+		return(Server._ServerActions("PowerOff",alias,servers))
 
 
 	@staticmethod
@@ -203,12 +204,7 @@ class Server:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param servers: list of server names
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		results = []
-		for server in servers:
-			r = clc.API.v1_call('post','Server/RebootServer', {'AccountAlias': alias, 'Name': server })
-			if int(r['StatusCode']) == 0:  results.append(r)
-		return(results)
+		return(Server._ServerActions("Reboot",alias,servers))
 
 
 	@staticmethod
@@ -220,12 +216,7 @@ class Server:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param servers: list of server names
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		results = []
-		for server in servers:
-			r = clc.API.v1_call('post','Server/ResetServer', {'AccountAlias': alias, 'Name': server })
-			if int(r['StatusCode']) == 0:  results.append(r)
-		return(results)
+		return(Server._ServerActions("Reset",alias,servers))
 
 
 	@staticmethod
@@ -237,12 +228,7 @@ class Server:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param servers: list of server names
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		results = []
-		for server in servers:
-			r = clc.API.v1_call('post','Server/ShutdownServer', {'AccountAlias': alias, 'Name': server })
-			if int(r['StatusCode']) == 0:  results.append(r)
-		return(results)
+		return(Server._ServerActions("Shutdown",alias,servers))
 
 
 	@staticmethod
@@ -254,12 +240,7 @@ class Server:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param servers: list of server names
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		results = []
-		for server in servers:
-			r = clc.API.v1_call('post','Server/SnapshotServer', {'AccountAlias': alias, 'Name': server })
-			if int(r['StatusCode']) == 0:  results.append(r)
-		return(results)
+		return(Server._ServerActions("Snapshot",alias,servers))
 
 
 	@staticmethod
@@ -271,12 +252,19 @@ class Server:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param servers: list of server names
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		results = []
-		for server in servers:
-			r = clc.API.v1_call('post','Server/DeleteServer', {'AccountAlias': alias, 'Name': server })
-			if int(r['StatusCode']) == 0:  results.append(r)
-		return(results)
+		return(Server._ServerActions("Delete",alias,servers))
+
+
+	@staticmethod
+	def Pause(alias,servers):
+		"""Pauses the specified servers and releases all associated resources.
+
+		https://t3n.zendesk.com/entries/21005343-Pause-Server
+
+		:param alias: short code for a particular account.  If none will use account's default alias
+		:param servers: list of server names
+		"""
+		return(Server._ServerActions("Pause",alias,servers))
 
 
 	@staticmethod
