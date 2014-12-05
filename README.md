@@ -292,8 +292,10 @@ Return account details
 Usage
 ```
 > clc --config config.ini servers
-usage: clc servers [-h] {templates,list-all,get,create,list,get-credentials,delete} ...
+usage: clc servers [-h] 
+	{get,list,list-all,templates,create,delete,archive,poweron,poweroff,reset,shutdown,snapshot,get-credentials,list-disks} ...
 ```
+
 ##### Templates
 List all templates available from the specified location or if none specified the primary location associated with the provided API credentials.  These include system templates (available globally) and customer created templates (available in the location where they were created).
 ```
@@ -467,8 +469,26 @@ Output once server build completes
 +-----------------+
 ```
 
-##### Delete
-Deletes specified server.  Rather than waiting for process to complete execute asynchronously and return a job ID.
+##### List Disks
+List all disks associated with the servere also querying the guest for disk names and mount points.
+```
+> clc --config config.ini servers list-disks --server WA1BTDICLITST01
+✔  Logged into v1 API
+✔  Accounts successfully queried.
+✔  OK
++--------+-----------+--------------+--------+
+| Name   | ScsiBusID | ScsiDeviceID | SizeGB |
++--------+-----------+--------------+--------+
+| (swap) | 0         | 1            | 2      |
+| /      | 0         | 2            | 14     |
+| /boot  | 0         | 0            | 1      |
++--------+-----------+--------------+--------+
+```
+
+##### Misc Asynchronous server operations
+These asynchronous operations can be run on one more more servers.  Currently implemented are:
+*delete, archive, poweron, poweroff, reset, shutdown, snapshot*.  Rather than waiting for process to 
+complete execute asynchronously and return a job ID.
 ```
 > clc --async --config config.ini servers delete --server WA1BTDICLITST01
 ✔  Logged into v1 API
