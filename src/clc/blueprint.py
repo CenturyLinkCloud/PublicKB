@@ -11,7 +11,7 @@ import re
 import os
 import ftplib
 import urlparse
-import curses
+if os.name == 'posix':  import curses
 import operator
 import clc
 

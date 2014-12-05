@@ -10,8 +10,9 @@ from setuptools import setup, find_packages
 setup(
 	name = "clc-cli",
 	version = "0.3",
-	package_dir = {'':'src'},
-	packages = find_packages("src"),
+	#package_dir = {'':'src'},
+	#packages = find_packages("src"),
+	packages = find_packages("."),
 
 	install_requires = ['prettytable','clint','argparse','requests'],
 
@@ -20,6 +21,7 @@ setup(
 			'clc  = clc.cli:main',
 		],
 	},
+
 
 	# metadata for upload to PyPI
 	author = "Keith Resar",
