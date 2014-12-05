@@ -100,7 +100,7 @@ All commands require authentication which can be accomplished in several ways in
 * Define environment variables (V1_API_KEY / V1_API_PASSWD or V2_API_USERNAME / V2_API_PASSWD)
 * Pass credentials as command line options
 
-Configuration files follow ini syntax.  Reference the [example.ini](src/example.ini) file with all currently accepted fields.
+Configuration files follow ini syntax.  Reference the [example.ini](src/example_config.ini) file with all currently accepted fields.
 
 #### Accounts
 Usage
