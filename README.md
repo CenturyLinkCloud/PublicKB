@@ -94,8 +94,8 @@ Commands:
 
 #### Authentication
 All commands require authentication which can be accomplished in several ways in increasing order of priority.
-* System configuration file at /usr/local/etc/clc_config
-* User specific configuration file at ~/.clc
+* System configuration file at /usr/local/etc/clc_config (POSIX) or %PROGRAMDATA%\clc\clc.ini (Windows)
+* User specific configuration file at ~/.clc (POSIX) or .\clc.ini (Windows)
 * Specify configuration file with --config / -c command line option
 * Define environment variables (V1_API_KEY / V1_API_PASSWD or V2_API_USERNAME / V2_API_PASSWD)
 * Pass credentials as command line options
