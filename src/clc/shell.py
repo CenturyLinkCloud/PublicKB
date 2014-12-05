@@ -299,7 +299,7 @@ class Args:
 			if self.args.config and not os.path.isfile(self.args.config):
 				clc.output.Status('ERROR',3,"Config file %s not found" % (self.args.config))
 				sys.exit(1)
-		if os.name=='nt':
+		elif os.name=='nt':
 			if os.path.isfile("%s/clc/clc.ini" % (os.getenv("PROGRAMDATA"))):
 				config_file = "%s/clc/clc.ini" % (os.getenv("PROGRAMDATA"))
 			elif os.path.isfile("clc.ini"):
@@ -342,7 +342,11 @@ class ExecCommand():
 	def __init__(self):
 		import clc.output
 
-		self.Bootstrap()
+		try:
+			self.Bootstrap()
+		except Exception as e:
+			clc.output.Status("ERROR",3,"Exiting due to error: %s" % (str(e)))
+			sys.exit(1)
 
 
 	def Bootstrap(self):

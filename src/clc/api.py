@@ -29,6 +29,10 @@ class API():
 
 	@staticmethod
 	def _Login_v2():
+		if not clc._V2_API_USERNAME or not clc._V2_API_PASSWD:
+			clc.output.Status('ERROR',3,'V2 API username and password not provided')
+			raise(Exception("V2 API username and password not provided"))
+			
 		r = requests.post("%s%s" % (clc.defaults.ENDPOINT_URL_V2,"/authentication/login"), 
 						  data={'username': clc._V2_API_USERNAME, 'password': clc._V2_API_PASSWD},
 						  headers={'content-type': 'application/json'},
@@ -45,6 +49,10 @@ class API():
 
 	@staticmethod
 	def _Login_v1():
+		if not clc._V1_API_KEY or not clc._V1_API_PASSWD:
+			clc.output.Status('ERROR',3,'V1 API key and password not provided')
+			raise(Exception("V1 API key and password not provided"))
+
 		clc._LOGINS += 1
 
 		r = requests.post("%s%s" % (clc.defaults.ENDPOINT_URL_V1,"/Auth/logon"),
