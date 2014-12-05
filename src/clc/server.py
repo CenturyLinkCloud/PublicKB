@@ -296,3 +296,19 @@ class Server:
 		return(results)
 
 
+	@staticmethod
+	def GetDisks(alias,server,guest_names=True):
+		"""Returns list of disks configured for the server
+
+		https://t3n.zendesk.com/entries/23087091-List-Disks
+
+		:param alias: short code for a particular account.  If none will use account's default alias
+		:param server: server name
+		:param guest_names: query guest disk names and mount points
+		"""
+		if alias is None:  alias = clc.Account.GetAlias()
+
+		r = clc.API.v1_call('post','Server/ListDisks', { 'AccountAlias': alias, 'Name': server, 'QueryGuestDiskNames': guest_names } )
+		return(r['Disks'])
+
+

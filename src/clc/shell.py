@@ -166,6 +166,11 @@ class Args:
 		parser_server_get_credentials.add_argument('--alias', help='Operate on specific account alias')
 		parser_server_get_credentials.add_argument('--server', nargs='*', required=True, metavar='NAME', help='Server name')
 
+		## Get List Disks
+		parser_server_list_disks = parser_sp4.add_parser('list-disks', help='List disks mounted to server')
+		parser_server_list_disks.add_argument('--alias', help='Operate on specific account alias')
+		parser_server_list_disks.add_argument('--server', nargs='*', required=True, metavar='NAME', help='Server name')
+
 
 		########## Group ###########
 		parser_group = parser_sp1.add_parser('groups', help='Group level activities (list, create, modify)')
@@ -429,6 +434,7 @@ class ExecCommand():
 		elif clc.args.GetArgs().sub_command == 'snapshot':  self.ServerActions("Snapshot")
 		elif clc.args.GetArgs().sub_command == 'create':  self.CreateServer()
 		elif clc.args.GetArgs().sub_command == 'get-credentials':  self.GetServerCredentials()
+		elif clc.args.GetArgs().sub_command == 'list-disks':  self.GetServerDisks()
 
 
 	def Network(self):
@@ -647,6 +653,13 @@ class ExecCommand():
 		else:  alias = None
 		r = self.Exec('clc.Server.GetCredentials', { 'alias': alias, 'servers': clc.args.GetArgs().server },
 		              cols=['Username', 'Password', ])
+
+
+	def GetServerDisks(self):
+		if clc.args.args.alias:  alias = clc.args.args.alias
+		else:  alias = None
+		r = self.Exec('clc.Server.GetDisks', { 'alias': alias, 'server': clc.args.GetArgs().server },
+		              cols=['Name', 'ScsiBusID', 'ScsiDeviceID', 'SizeGB' ])
 
 
 	def ServerActions(self,action):
