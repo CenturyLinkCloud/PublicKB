@@ -21,7 +21,9 @@ This repository contains a Python SDK and a command line CLI (based on the SDK) 
 ## CLI
 
 ### Installing
-Cross-platform installation is available via pypi.  Requires *Python 2.r78* - this is not currently compatible with Python 3.
+
+#### Via Pyhthon's pip
+Cross-platform installation is available via pypi.  Requires *Python 2.7* - this is not currently compatible with Python 3.
 If you have pip already installed the following command will get you running:
 ```
 > pip install clc-cli
@@ -34,11 +36,15 @@ If you do not have pip (the Python package manager) installed a quickstart insta
 > curl https://bootstrap.pypa.io/get-pip.py | sudo python
 ```
 
+#### Windows pre-package executable
+The CLI is available as a prepackaged single-file Windows executable and the most recent compiled version is always available [here](src/dist/clc-cli.exe).
+Note also that all examples below will need to be modified since the Windows command line executable is *clc-cli* (to eliminate conflict with the a 
+standard installed PS commandlet.
 
 ### Usage
 ```
 > clc
-usage: clc.py [-h] [--cols [COL [COL ...]]] [--config CONFIG]
+usage: clc [-h] [--cols [COL [COL ...]]] [--config CONFIG]
               [--v1-api-key KEY] [--v1-api-passwd PASSWORD]
               [--v2-api-username USERNAME] [--v2-api-passwd PASSWORD]
               [--async] [--quiet] [--verbose] [--format {json,table,text,csv}]
@@ -49,7 +55,7 @@ usage: clc.py [-h] [--cols [COL [COL ...]]] [--config CONFIG]
 #### Global Parameters and General Usage
 ```
 > clc -h
-usage: clc.py [-h] [--cols [COL [COL ...]]] [--config CONFIG]
+usage: clc [-h] [--cols [COL [COL ...]]] [--config CONFIG]
               [--v1-api-key KEY] [--v1-api-passwd PASSWORD]
               [--v2-api-username USERNAME] [--v2-api-passwd PASSWORD]
               [--async] [--quiet] [--verbose] [--format {json,table,text,csv}]
@@ -106,7 +112,7 @@ Configuration files follow ini syntax.  Reference the [example.ini](src/example_
 Usage
 ```
 > clc --config config.ini accounts
-usage: clc.py accounts [-h] {list,locations,get} ...
+usage: clc accounts [-h] {list,locations,get} ...
 ```
 
 ##### Listing Accounts
@@ -179,7 +185,7 @@ Retrieves  details from specific alias or credentials default alias if none is p
 Usage
 ```
 > clc --config config.ini users
-usage: clc.py users [-h] {unsuspend,suspend,get,create,list,update,delete} ...
+usage: clc users [-h] {unsuspend,suspend,get,create,list,update,delete} ...
 ```
 
 ##### Create
@@ -286,7 +292,7 @@ Return account details
 Usage
 ```
 > clc --config config.ini servers
-usage: clc.py servers [-h] {templates,list-all,get,create,list,get-credentials,delete} ...
+usage: clc servers [-h] {templates,list-all,get,create,list,get-credentials,delete} ...
 ```
 ##### Templates
 List all templates available from the specified location or if none specified the primary location associated with the provided API credentials.  These include system templates (available globally) and customer created templates (available in the location where they were created).
@@ -479,7 +485,7 @@ Deletes specified server.  Rather than waiting for process to complete execute a
 Usaage
 ```
 > clc --config config.ini groups
-usage: clc.py groups [-h] {pause,create,list,poweron,archive,delete} ...
+usage: clc groups [-h] {pause,create,list,poweron,archive,delete} ...
 ```
 
 ##### List
@@ -593,7 +599,7 @@ Delete the specified group and all associated servers.
 Usage
 ```
 > clc --async --config config.ini billing
-usage: clc.py billing [-h] {account-summary,group-estimate,server-estimate,group-summaries}  ...
+usage: clc billing [-h] {account-summary,group-estimate,server-estimate,group-summaries}  ...
 ```
 
 ##### Account Summary
@@ -675,7 +681,7 @@ Server-level estimate of current run rate for specified server.
 Usage:
 ```
 > clc --config config.ini networks
-usage: clc.py networks [-h] {list,get} ...
+usage: clc networks [-h] {list,get} ...
 ```
 
 ##### List
@@ -722,7 +728,7 @@ Retrieve IP allocation summary for specied network.
 Usage:
 ```
 > clc --config config.ini queue
-usage: clc.py queue [-h] {list} ...
+usage: clc queue [-h] {list} ...
 ```
 
 ##### List
@@ -742,8 +748,9 @@ List items in the work queue.  Specify a type to filter the list.
 Usage:
 ```
 > clc --config config.ini blueprints
-usage: clc.py blueprints [-h] {list-system,list-software,list,package-upload,package-publish,list-pending,list-scripts} ...
+usage: clc blueprints [-h] {list-system,list-software,list,package-upload,package-publish,list-pending,list-scripts} ...
 ```
+
 
 ##### List System, Software, and Script Packages
 List all packages in inventory, optionally filtering by package classification (System, Script, Software) and visibility (Public, Private, Shared).
