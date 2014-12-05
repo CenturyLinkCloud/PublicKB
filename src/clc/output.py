@@ -115,7 +115,7 @@ def Status(status,level,message):
 	if clc.args.GetArgs().quiet<level:
 		if os.name=='posix':
 			success_mark = '✔ '
-			error_mark = '✖ '
+			error_mark = '✖  '
 		else:
 			success_mark = '/'
 			error_mark = 'x '

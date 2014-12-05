@@ -48,9 +48,14 @@ class Server:
 		payload = {'AccountAlias': alias }
 		if group:  payload['HardwareGroupID'] = clc.Group.GetGroupID(alias,location,group)
 		else:  payload['Location'] = location
-		r = clc.API.v1_call('post','Server/GetAllServers', payload)
-		if name_groups:  r['Servers'] = clc.Group.NameGroups(r['Servers'],'HardwareGroupID')
-		if int(r['StatusCode']) == 0:  return(r['Servers'])
+
+		try:
+			r = clc.API.v1_call('post','Server/GetAllServers', payload)
+			if name_groups:  r['Servers'] = clc.Group.NameGroups(r['Servers'],'HardwareGroupID')
+			if int(r['StatusCode']) == 0:  return(r['Servers'])
+		except Exception as e:
+			if str(e)=="Hardware does not exist for location":  return([])
+			else:  raise
 
 
 	@staticmethod
