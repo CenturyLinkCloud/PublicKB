@@ -8,12 +8,18 @@ import clc
 
 class API():
 	
+	#@staticmethod
+	#def _ResourcePath(relative):
+	#	return os.path.join(getattr(sys, '_MEIPASS', os.path.abspath(".")),
+	#	relative)
+
+
 	@staticmethod
 	def _Login_v2():
 		r = requests.post("%s%s" % (clc.defaults.ENDPOINT_URL_V2,"/authentication/login"), 
 						  data={'username': clc._V2_API_USERNAME, 'password': clc._V2_API_PASSWD},
 						  headers={'content-type': 'application/json'},
-						  verify=False)
+						  verify='clc/cacert.pem')
 
 		if r.status_code == 200:
 			clc._LOGIN_TOKEN_V2 = r.json()['bearerToken']
@@ -30,7 +36,7 @@ class API():
 
 		r = requests.post("%s%s" % (clc.defaults.ENDPOINT_URL_V1,"/Auth/logon"),
 						  params={'APIKey': clc._V1_API_KEY, 'Password': clc._V1_API_PASSWD},
-						  verify=False)
+						  verify='clc/cacert.pem')
 
 		try:
 			resp = xml.etree.ElementTree.fromstring(r.text)
@@ -61,7 +67,7 @@ class API():
 		                     params=payload, 
 							 headers={'content-type': 'application/json'},
 		                     cookies=clc._LOGIN_COOKIE_V1,
-							 verify=False)
+							 verify='clc/cacert.pem')
 
 		try:
 			if int(r.json()['StatusCode']) == 0:  
@@ -113,7 +119,7 @@ class API():
 		r = requests.request(method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url), 
 		                     params=payload, 
 							 headers={'content-type': 'application/json', 'Bearer': clc._LOGIN_TOKEN_V2},
-							 verify=False)
+							 verify='clc/cacert.pem')
 
 		try:
 			if int(r.json()['StatusCode']) == 0:  
