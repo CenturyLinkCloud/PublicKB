@@ -144,6 +144,125 @@ class Server:
 
 
 	@staticmethod
+	def Archive(alias,servers):
+		"""Archives the specified servers.
+
+		https://t3n.zendesk.com/entries/21016957-Archive-Server
+
+		:param alias: short code for a particular account.  If none will use account's default alias
+		:param servers: list of server names
+		"""
+		if alias is None:  alias = clc.Account.GetAlias()
+		results = []
+		for server in servers:
+			r = clc.API.v1_call('post','Server/ArchiveServer', {'AccountAlias': alias, 'Name': server })
+			if int(r['StatusCode']) == 0:  results.append(r)
+		return(results)
+
+
+	@staticmethod
+	def Poweron(alias,servers):
+		"""Powers on the specified servers.
+
+		https://t3n.zendesk.com/entries/20985206-Power-On-Server
+
+		:param alias: short code for a particular account.  If none will use account's default alias
+		:param servers: list of server names
+		"""
+		if alias is None:  alias = clc.Account.GetAlias()
+		results = []
+		for server in servers:
+			r = clc.API.v1_call('post','Server/PowerOnServer', {'AccountAlias': alias, 'Name': server })
+			if int(r['StatusCode']) == 0:  results.append(r)
+		return(results)
+
+
+	@staticmethod
+	def Poweroff(alias,servers):
+		"""Powers off the specified servers.
+
+		https://t3n.zendesk.com/entries/21005353-Power-Off-Server
+
+		:param alias: short code for a particular account.  If none will use account's default alias
+		:param servers: list of server names
+		"""
+		if alias is None:  alias = clc.Account.GetAlias()
+		results = []
+		for server in servers:
+			r = clc.API.v1_call('post','Server/PowerOffServer', {'AccountAlias': alias, 'Name': server })
+			if int(r['StatusCode']) == 0:  results.append(r)
+		return(results)
+
+
+	@staticmethod
+	def Reboot(alias,servers):
+		"""Reboots the specified servers.
+
+		https://t3n.zendesk.com/entries/20998347-Reboot-Server
+
+		:param alias: short code for a particular account.  If none will use account's default alias
+		:param servers: list of server names
+		"""
+		if alias is None:  alias = clc.Account.GetAlias()
+		results = []
+		for server in servers:
+			r = clc.API.v1_call('post','Server/RebootServer', {'AccountAlias': alias, 'Name': server })
+			if int(r['StatusCode']) == 0:  results.append(r)
+		return(results)
+
+
+	@staticmethod
+	def Reset(alias,servers):
+		"""Resets the specified servers.
+
+		https://t3n.zendesk.com/entries/21005363-Reset-Server
+
+		:param alias: short code for a particular account.  If none will use account's default alias
+		:param servers: list of server names
+		"""
+		if alias is None:  alias = clc.Account.GetAlias()
+		results = []
+		for server in servers:
+			r = clc.API.v1_call('post','Server/ResetServer', {'AccountAlias': alias, 'Name': server })
+			if int(r['StatusCode']) == 0:  results.append(r)
+		return(results)
+
+
+	@staticmethod
+	def Shutdown(alias,servers):
+		"""Shuts down the specified servers.
+
+		https://t3n.zendesk.com/entries/23126728-Shutdown-Server
+
+		:param alias: short code for a particular account.  If none will use account's default alias
+		:param servers: list of server names
+		"""
+		if alias is None:  alias = clc.Account.GetAlias()
+		results = []
+		for server in servers:
+			r = clc.API.v1_call('post','Server/ShutdownServer', {'AccountAlias': alias, 'Name': server })
+			if int(r['StatusCode']) == 0:  results.append(r)
+		return(results)
+
+
+	@staticmethod
+	def Snapshot(alias,servers):
+		"""Initiates a server snapshot.
+
+		https://t3n.zendesk.com/entries/23106211-Snapshot-Server
+
+		:param alias: short code for a particular account.  If none will use account's default alias
+		:param servers: list of server names
+		"""
+		if alias is None:  alias = clc.Account.GetAlias()
+		results = []
+		for server in servers:
+			r = clc.API.v1_call('post','Server/SnapshotServer', {'AccountAlias': alias, 'Name': server })
+			if int(r['StatusCode']) == 0:  results.append(r)
+		return(results)
+
+
+	@staticmethod
 	def Delete(alias,servers):
 		"""Deletes the specified servers and releases all associated resources.
 

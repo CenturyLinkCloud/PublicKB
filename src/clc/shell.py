@@ -130,7 +130,36 @@ class Args:
 		parser_server_delete = parser_sp4.add_parser('delete', help='Delete one or more servers')
 		parser_server_delete.add_argument('--alias', help='Operate on specific account alias')
 		parser_server_delete.add_argument('--server', nargs='*', required=True, metavar='NAME', help='Server name')
-		parser_server_delete.add_argument('--location', metavar='LOCATION', help='Operate on specific datacenter')
+
+		## Archive
+		parser_server_archive = parser_sp4.add_parser('archive', help='Archive one or more servers')
+		parser_server_archive.add_argument('--alias', help='Operate on specific account alias')
+		parser_server_archive.add_argument('--server', nargs='*', required=True, metavar='NAME', help='Server name')
+
+		## Poweron
+		parser_server_poweron = parser_sp4.add_parser('poweron', help='Power on one or more servers')
+		parser_server_poweron.add_argument('--alias', help='Operate on specific account alias')
+		parser_server_poweron.add_argument('--server', nargs='*', required=True, metavar='NAME', help='Server name')
+
+		## Poweroff
+		parser_server_poweroff = parser_sp4.add_parser('poweroff', help='Power off one or more servers')
+		parser_server_poweroff.add_argument('--alias', help='Operate on specific account alias')
+		parser_server_poweroff.add_argument('--server', nargs='*', required=True, metavar='NAME', help='Server name')
+
+		## Reset
+		parser_server_reset = parser_sp4.add_parser('reset', help='Reset one or more servers')
+		parser_server_reset.add_argument('--alias', help='Operate on specific account alias')
+		parser_server_reset.add_argument('--server', nargs='*', required=True, metavar='NAME', help='Server name')
+
+		## Shutdown
+		parser_server_shutdown = parser_sp4.add_parser('shutdown', help='Shutdown one or more servers')
+		parser_server_shutdown.add_argument('--alias', help='Operate on specific account alias')
+		parser_server_shutdown.add_argument('--server', nargs='*', required=True, metavar='NAME', help='Server name')
+
+		## Snapshot
+		parser_server_snapshot = parser_sp4.add_parser('snapshot', help='Snapshot one or more servers')
+		parser_server_snapshot.add_argument('--alias', help='Operate on specific account alias')
+		parser_server_snapshot.add_argument('--server', nargs='*', required=True, metavar='NAME', help='Server name')
 
 		## Get Credentials
 		parser_server_get_credentials = parser_sp4.add_parser('get-credentials', help='Get server administrator login credentials')
@@ -391,7 +420,13 @@ class ExecCommand():
 		elif clc.args.GetArgs().sub_command == 'list':  self.GetServers()
 		elif clc.args.GetArgs().sub_command == 'templates':  self.GetServerTemplates()
 		elif clc.args.GetArgs().sub_command == 'get':  self.GetServerDetails()
-		elif clc.args.GetArgs().sub_command == 'delete':  self.DeleteServer()
+		elif clc.args.GetArgs().sub_command == 'delete':  self.ServerActions("delete")
+		elif clc.args.GetArgs().sub_command == 'archive':  self.ServerActions("Archive")
+		elif clc.args.GetArgs().sub_command == 'poweron':  self.ServerActions("Poweron")
+		elif clc.args.GetArgs().sub_command == 'poweroff':  self.ServerActions("Poweroff")
+		elif clc.args.GetArgs().sub_command == 'reset':  self.ServerActions("Reset")
+		elif clc.args.GetArgs().sub_command == 'shutdown':  self.ServerActions("Shutdown")
+		elif clc.args.GetArgs().sub_command == 'snapshot':  self.ServerActions("Snapshot")
 		elif clc.args.GetArgs().sub_command == 'create':  self.CreateServer()
 		elif clc.args.GetArgs().sub_command == 'get-credentials':  self.GetServerCredentials()
 
@@ -614,9 +649,9 @@ class ExecCommand():
 		              cols=['Username', 'Password', ])
 
 
-	def DeleteServer(self):
-		clc.args.args.async = True
-		r = self.Exec('clc.Server.Delete', { 'alias': self._GetAlias(), 'servers': clc.args.GetArgs().server },
+	def ServerActions(self,action):
+		clc.args.args.async = True  # Force async - we can't current deal with multiple queued objects
+		r = self.Exec('clc.Server.%s' % (action), { 'alias': self._GetAlias(), 'servers': clc.args.GetArgs().server },
 		              cols=['RequestID','StatusCode','Message'])
 
 
