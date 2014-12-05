@@ -299,10 +299,16 @@ class Args:
 			if self.args.config and not os.path.isfile(self.args.config):
 				clc.output.Status('ERROR',3,"Config file %s not found" % (self.args.config))
 				sys.exit(1)
-		elif os.path.isfile("%s/.clc" % (os.environ['HOME'])):
-			config_file = "%s/.clc" % (os.environ['HOME'])
-		elif os.path.isfile("/usr/local/etc/clc_config"):
-			config_file = "/usr/local/etc/clc_config"
+		if os.name=='nt':
+			if os.path.isfile("%s/clc/clc.ini" % (os.getenv("PROGRAMDATA"))):
+				config_file = "%s/clc/clc.ini" % (os.getenv("PROGRAMDATA"))
+			elif os.path.isfile("clc.ini"):
+				config_file = "clc.ini"
+		else:
+			if os.path.isfile("%s/.clc" % (os.environ['HOME'])):
+				config_file = "%s/.clc" % (os.environ['HOME'])
+			elif os.path.isfile("/usr/local/etc/clc_config"):
+				config_file = "/usr/local/etc/clc_config"
 		if config_file:  
 			clc.output.Status('SUCCESS',3,"Reading %s" % (config_file))
 			config = ConfigParser.ConfigParser()
