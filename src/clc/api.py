@@ -4,14 +4,27 @@
 import requests
 import xml.etree.ElementTree
 import clc
+import os
+import sys
 
 
 class API():
 	
-	#@staticmethod
-	#def _ResourcePath(relative):
-	#	return os.path.join(getattr(sys, '_MEIPASS', os.path.abspath(".")),
-	#	relative)
+	# requests module includes cacert.pem which is visible when run as installed module.
+	# pyinstall single-file deployment needs cacert.pem packaged along and referenced.
+	# This module proxies between the two based on whether the cacert.pem exists in
+	# the expected runtime directory.
+	#
+	# https://github.com/kennethreitz/requests/issues/557
+	# http://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile
+	#
+	@staticmethod
+	def _ResourcePath(relative):
+		if os.path.isfile(os.path.join(getattr(sys, '_MEIPASS', os.path.abspath(".")),relative)):
+			# Pyinstall packaged windows file
+			return(os.path.join(getattr(sys, '_MEIPASS', os.path.abspath(".")),relative))
+		else:
+			return(True)
 
 
 	@staticmethod
@@ -19,7 +32,7 @@ class API():
 		r = requests.post("%s%s" % (clc.defaults.ENDPOINT_URL_V2,"/authentication/login"), 
 						  data={'username': clc._V2_API_USERNAME, 'password': clc._V2_API_PASSWD},
 						  headers={'content-type': 'application/json'},
-						  verify='clc/cacert.pem')
+						  verify=API._ResourcePath('clc/cacert.pem'))
 
 		if r.status_code == 200:
 			clc._LOGIN_TOKEN_V2 = r.json()['bearerToken']
@@ -36,7 +49,7 @@ class API():
 
 		r = requests.post("%s%s" % (clc.defaults.ENDPOINT_URL_V1,"/Auth/logon"),
 						  params={'APIKey': clc._V1_API_KEY, 'Password': clc._V1_API_PASSWD},
-						  verify='clc/cacert.pem')
+						  verify=API._ResourcePath('clc/cacert.pem'))
 
 		try:
 			resp = xml.etree.ElementTree.fromstring(r.text)
@@ -67,7 +80,7 @@ class API():
 		                     params=payload, 
 							 headers={'content-type': 'application/json'},
 		                     cookies=clc._LOGIN_COOKIE_V1,
-							 verify='clc/cacert.pem')
+							 verify=API._ResourcePath('clc/cacert.pem'))
 
 		try:
 			if int(r.json()['StatusCode']) == 0:  
@@ -99,9 +112,9 @@ class API():
 			#print "Request:  %s %s  params=%s" % (method,"%s%s/JSON" % (clc.defaults.ENDPOINT_URL_V1,url),payload)
 			#print "Response: %s" % (r.text)
 			#print r.url
-			print url
-			print payload
-			print r.text
+			#print url
+			#print payload
+			#print r.text
 			raise Exception('Error calling %s.  Server response %s' % (url,r.status_code))
 
 
@@ -119,7 +132,7 @@ class API():
 		r = requests.request(method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url), 
 		                     params=payload, 
 							 headers={'content-type': 'application/json', 'Bearer': clc._LOGIN_TOKEN_V2},
-							 verify='clc/cacert.pem')
+							 verify=API._ResourcePath('clc/cacert.pem'))
 
 		try:
 			if int(r.json()['StatusCode']) == 0:  

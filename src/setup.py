@@ -9,9 +9,7 @@ from setuptools import setup, find_packages
 
 setup(
 	name = "clc-cli",
-	version = "0.3",
-	#package_dir = {'':'src'},
-	#packages = find_packages("src"),
+	version = "0.4",
 	packages = find_packages("."),
 
 	install_requires = ['prettytable','clint','argparse','requests'],

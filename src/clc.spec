@@ -22,25 +22,16 @@ a = Analysis(['clc.py'],
              hiddenimports=[],
              hookspath=None,
              runtime_hooks=None)
-#a.datas.append(('C:\\Python27\\Lib\\site-packages\\requests\\cacert.pem', 'cacert.pem', 'DATA'))
 a.datas.append(('clc/cacert.pem','clc/cacert.pem', 'DATA'))
-#a.datas.append(('cacert.pem','dist\\cacert.pem', 'DATA'))
-#certfile = Datafiles('C:\\Python27\\Lib\\site-packages\\requests\\cacert.pem', strip_path=False) # keep the path of this file
-certfile = Datafiles('clc/cacert.pem', strip_path=False) # keep the path of this file
 pyz = PYZ(a.pure)
 exe = EXE(pyz,
           a.scripts,
-          exclude_binaries=True,
+          a.binaries,
+          a.zipfiles,
+          a.datas,
+		  #certfile,
           name='clc.exe',
           debug=False,
           strip=None,
           upx=True,
           console=True )
-coll = COLLECT(exe,
-               a.binaries,
-               a.zipfiles,
-               a.datas,
-			   certfile,
-               strip=None,
-               upx=True,
-               name='clc')
