@@ -98,7 +98,9 @@ class API():
 				return(r.json())
 			elif int(r.json()['StatusCode']) == 2:  
 				# Account is deleted
-				raise clc.AccountDeletedException(r.json()['Message'])
+				#raise clc.AccountDeletedException(r.json()['Message'])
+				if clc.args and not silent:  clc.output.Status('ERROR',3,'%s' % (r.json()['Message']))
+				raise Exception(r.json()['Message'])
 			elif int(r.json()['StatusCode']) == 5:  
 				# Account or datacenter does not exist
 				raise clc.AccountDoesNotExistException(r.json()['Message'])

@@ -838,11 +838,11 @@ class ExecCommand():
 		clc.args.args.async = True
 		if clc.args.args.os is None:
 			r = self.Exec('clc.Blueprint.PackagePublishUI', 
-			              { 'package': clc.args.args.package, 'type': clc.args.args.type, 'visibility': clc.args.args.visibility },
+			              { 'package': clc.args.args.package, 'classification': clc.args.args.type, 'visibility': clc.args.args.visibility },
 						  cols=['RequestID','StatusCode','Message'])
 		else:
 			r = self.Exec('clc.Blueprint.PackagePublish', 
-			              { 'package': clc.args.args.package, 'type': clc.args.args.type, 'os': clc.args.args.os, 'visibility': clc.args.args.visibility },
+			              { 'package': clc.args.args.package, 'classification': clc.args.args.type, 'os': clc.args.args.os, 'visibility': clc.args.args.visibility },
 						  cols=['RequestID','StatusCode','Message'])
 
 
