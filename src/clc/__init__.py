@@ -9,7 +9,7 @@ The CLI portion and other console entry points enable interactive and batch exec
 of commands against the CenturyLink Cloud API in a platform independent manner.
 
 CenturyLink Cloud: http://www.CenturyLinkCloud.com
-Package Github page: https://github.com/hk1232/clc
+Package Github page: https://github.com/CenturyLinkCloud/clc
 
 API Documentaton v1: https://t3n.zendesk.com/categories/20012068-API-v1-0
 API Documentaton v2: https://t3n.zendesk.com/categories/20067994-API-v2-0-Beta-
