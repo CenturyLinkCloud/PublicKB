@@ -4,7 +4,6 @@ This repository contains a Python SDK and a command line CLI (based on the SDK) 
 
 ## Contents
 
-* [Installing](#installing)
 * [Accounts](#accounts) - Account level activities: [list](#listing-accounts), 
 * [Users](#users) - User level activities (list, create, modify)
 * [Servers](#servers) - Server level activities (list, create, modify)
@@ -24,7 +23,7 @@ is provided the SDK will automatically select the appropriate version of the API
 
 ```python
 >>> import clc
->>> clc.SetCredentialsV1("794e4edeaa1342039c4545b4d71beb5a","E6Oh$~h!inY*2or[")
+>>> clc.SetCredentialsV1("api_key","api_password")
 
 >>> clc.SetCredentialsV2("test@example.com","dsioj34ww09dfs")
 ```
@@ -32,70 +31,80 @@ is provided the SDK will automatically select the appropriate version of the API
 
 ### Accounts
 
-#### Listing Accounts
-Retrieves deep list of current account and all subaccounts your API credentials have access to.
+#### Default Alias and Location
+Each API token is associated with a specific account alias and each alias has a primary datacenter location.
+Get the default alias and location with these calls.  These calls are often made within the SDK itself in
+functions where alias and location are optional.
+
+```python
+>>> clc.Account.GetAlias()
+u'BTDI'
+>>> clc.Account.GetLocation()
+u'WA1'
 ```
-> clc --config config.ini accounts list
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-+--------------+-------------+----------------------------------------+----------+----------+
-| AccountAlias | ParentAlias | BusinessName                           | Location | IsActive |
-+--------------+-------------+----------------------------------------+----------+----------+
-| ABCO         | JWCO        | ABC Oil and Gas                        | IL1      | True     |
-| AC01         | MDA         | Account #1                             | WA1      | True     |
-| XYZO         | JWCO        | XYZ Oil & Gas                          | NY1      | True     |
-| ZAB          | BTDI        | Zabriskie Point                        | IL1      | True     |
-+--------------+-------------+----------------------------------------+----------+----------+
+
+#### Get Accounts
+Retrieves deep list of current account and all subaccounts your API credentials have access to.
+The first result is the root account within the list followed by all other accounts.  Account relationship
+can nbe determined by reviewing the ParentAlias field associated with each result set.
+
+```python
+>>> pprint.pprint(clc.Account.GetAccounts(alias="BTDI"))
+[{u'AccountAlias': u'BTDI',
+  u'BusinessName': u'CLC Solutions Demo',
+  u'IsActive': True,
+  u'Location': u'WA1',
+  u'ParentAlias': u'T3N'},
+ {u'AccountAlias': u'QATI',
+  u'BusinessName': u'QATier3',
+  u'IsActive': True,
+  u'Location': u'WA1',
+  u'ParentAlias': u'BTDI'},
+ {u'AccountAlias': u'T3DE',
+  u'BusinessName': u'DE1 Test Account',
+  u'IsActive': True,
+  u'Location': u'DE1',
+  u'ParentAlias': u'BTDI'}]
 ```
 
 #### Locations
 Retrieves a list of all cloud datacenter locations accessible by provided credentials.
+```python
+>>> pprint.pprint(clc.Account.GetLocations())
+[{u'Alias': u'WA1', u'Region': u'US West'},
+ {u'Alias': u'UT1', u'Region': u'US Central'},
+ {u'Alias': u'IL1', u'Region': u'US Central'},
+ {u'Alias': u'NY1', u'Region': u'US East'},
+ {u'Alias': u'GB1', u'Region': u'Europe'},
+ {u'Alias': u'CA1', u'Region': u'Canada'},
+ {u'Alias': u'CA2', u'Region': u'Canada'},
+ {u'Alias': u'DE1', u'Region': u'Germany'},
+ {u'Alias': u'UC1', u'Region': u'US West'},
+ {u'Alias': u'VA1', u'Region': u'US East'},
+ {u'Alias': u'CA3', u'Region': u'Canada'},
+ {u'Alias': u'GB3', u'Region': u'Europe'}]
 ```
-> clc --config config.ini accounts locations
-✔  Logged into v1 API
-✔  Locations successfully queried.
-+-------+------------+
-| Alias | Region     |
-+-------+------------+
-| CA1   | Canada     |
-| CA2   | Canada     |
-| CA3   | Canada     |
-| DE1   | Germany    |
-| GB1   | Europe     |
-| GB3   | Europe     |
-| IL1   | US Central |
-| NY1   | US East    |
-| UC1   | US West    |
-| UT1   | US Central |
-| VA1   | US East    |
-| WA1   | US West    |
-+-------+------------+
 ```
 
-#### Get
+#### Get Account Details
 Retrieves  details from specific alias or credentials default alias if none is provided.
-```
-> clc --config config.ini accounts get
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Account details successfully queried.
-
-  ******************* 1. ********************
-         AccountAlias:  BTDI
-               Status:  Demo
-                 City:  Bellevue
-                  Fax:  None
-             Address1:  110 110th Ave NE
-             Address2:  Ste 520
-  ShareParentNetworks:  False
-            Telephone:  8773884373
-              Country:  USA
-             Location:  WA1
-         BusinessName:  CLC Solutions Demo
-           PostalCode:  98004
-             TimeZone:  Pacific Standard Time
-        StateProvince:  WA
-          ParentAlias:  T3N
+```python
+>>> pprint.pprint(clc.Account.GetAccountDetails(alias="BTDI"))
+{u'AccountAlias': u'BTDI',
+ u'Address1': u'110 110th Ave NE',
+ u'Address2': u'Ste 520',
+ u'BusinessName': u'CLC Solutions Demo',
+ u'City': u'Bellevue',
+ u'Country': u'USA',
+ u'Fax': None,
+ u'Location': u'WA1',
+ u'ParentAlias': u'T3N',
+ u'PostalCode': u'98004',
+ u'ShareParentNetworks': False,
+ u'StateProvince': u'WA',
+ u'Status': 'Demo',
+ u'Telephone': u'8773884373',
+ u'TimeZone': u'Pacific Standard Time'}
 ```
 
 ### Users

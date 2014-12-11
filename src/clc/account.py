@@ -28,8 +28,9 @@ class Account:
 
 
 	@staticmethod
-	def GetAccountDetails(alias):
+	def GetAccountDetails(alias=None):
 		"""Return account details dict associated with the provided alias."""
+		if not alias:  alias = Account.GetAlias()
 		r = clc.API.v1_call('post','Account/GetAccountDetails',{'AccountAlias': alias})
 		if r['Success'] != True: 
 			if clc.args:  clc.output.Status('ERROR',3,'Error calling %s.   Status code %s.  %s' % ('Account/GetAccountDetails',r['StatusCode'],r['Message']))

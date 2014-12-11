@@ -69,12 +69,16 @@ class output:
 
 def SetCredentialsV1(api_key,api_passwd):
 	"""Establish API key and password associated with APIv1 commands."""
+	global V1_API_KEY
+	global V1_API_PASSWD
 	V1_API_KEY = api_key
 	V1_API_PASSWD = api_passwd
 
 
 def SetCredentialsV2(api_username,api_passwd):
 	"""Establish API username and password associated with APIv2 commands."""
+	global V2_API_USERNAME
+	global V2_API_PASSWD
 	V2_API_USERNAME = api_username
 	V2_API_PASSWD = api_passwd
 
