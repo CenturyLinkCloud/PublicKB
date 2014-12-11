@@ -167,10 +167,26 @@ Usage
 usage: clc users [-h] {unsuspend,suspend,get,create,list,update,delete} ...
 ```
 
+#### List
+List users associated with the alias
+
+```
+> clc --config config.ini users list
+✔  Logged into v1 API
+✔  Accounts successfully queried.
+✔  Users successfully located.
++----------------------------+-----------------------------------------+-------------+----------------+--------------+
+| UserName                   | EmailAddress                            | FirstName   | LastName       | Roles        |
++----------------------------+-----------------------------------------+-------------+----------------+--------------+
+| Joe Smith                  | JoeSmith@example.com                    | Joe         | Smith          | [9]          |
+| Kim Smith                  | KimSmith@example.com                    | Kim         | Smith          | [9]          |
++----------------------------+-----------------------------------------+-------------+----------------+--------------+
+```
+
 #### Create
 Create new user account and return account details
 ```
->clc --config config.ini users create --user test12345 --email test@example.com --first-name Joe \
+> clc --config config.ini users create --user test12345 --email test@example.com --first-name Joe \
           --last-name Smith --roles ServerAdministrator BillingManager
 ✔  Logged into v1 API
 ✔  Accounts successfully queried.

@@ -25,7 +25,7 @@ is provided the SDK will automatically select the appropriate version of the API
 >>> import clc
 >>> clc.SetCredentialsV1("api_key","api_password")
 
->>> clc.SetCredentialsV2("test@example.com","dsioj34ww09dfs")
+>>> clc.SetCredentialsV2("test@example.com","control_portal_password")
 ```
 
 
@@ -49,7 +49,7 @@ The first result is the root account within the list followed by all other accou
 can nbe determined by reviewing the ParentAlias field associated with each result set.
 
 ```python
->>> pprint.pprint(clc.Account.GetAccounts(alias="BTDI"))
+>>> clc.Account.GetAccounts(alias="BTDI")
 [{u'AccountAlias': u'BTDI',
   u'BusinessName': u'CLC Solutions Demo',
   u'IsActive': True,
@@ -70,7 +70,7 @@ can nbe determined by reviewing the ParentAlias field associated with each resul
 #### Locations
 Retrieves a list of all cloud datacenter locations accessible by provided credentials.
 ```python
->>> pprint.pprint(clc.Account.GetLocations())
+>>> clc.Account.GetLocations()
 [{u'Alias': u'WA1', u'Region': u'US West'},
  {u'Alias': u'UT1', u'Region': u'US Central'},
  {u'Alias': u'IL1', u'Region': u'US Central'},
@@ -88,8 +88,9 @@ Retrieves a list of all cloud datacenter locations accessible by provided creden
 
 #### Get Account Details
 Retrieves  details from specific alias or credentials default alias if none is provided.
+
 ```python
->>> pprint.pprint(clc.Account.GetAccountDetails(alias="BTDI"))
+>>> clc.Account.GetAccountDetails(alias="BTDI")
 {u'AccountAlias': u'BTDI',
  u'Address1': u'110 110th Ave NE',
  u'Address2': u'Ste 520',
@@ -112,6 +113,43 @@ Usage
 ```
 > clc --config config.ini users
 usage: clc users [-h] {unsuspend,suspend,get,create,list,update,delete} ...
+```
+
+#### List Users
+List all users associated with the specified alias.
+
+```python
+>>> pprint.pprint(clc.User.GetUsers(alias="BTDI"))
+[{u'AccountAlias': u'BTDI',
+  u'AllowSMS': True,
+  u'AlternateEmailAddress': None,
+  u'EmailAddress': u'JoeSmith@example.com',
+  u'FaxNumber': None,
+  u'FirstName': u'Joe',
+  u'LastName': u'Smith',
+  u'MobileNumber': u'202-555-5555',
+  u'OfficeNumber': None,
+  u'Roles': [9],
+  u'SAMLUserName': None,
+  u'Status': u'Active',
+  u'TimeZoneID': None,
+  u'Title': u'Sr Product Manager',
+  u'UserName': u'joesmith'},
+ {u'AccountAlias': u'BTDI',
+  u'AllowSMS': True,
+  u'AlternateEmailAddress': None,
+  u'EmailAddress': u'KimSmith@example.com',
+  u'FaxNumber': None,
+  u'FirstName': u'Kim',
+  u'LastName': u'Smith',
+  u'MobileNumber': u'202-555-5555',
+  u'OfficeNumber': None,
+  u'Roles': [9],
+  u'SAMLUserName': None,
+  u'Status': u'Active',
+  u'TimeZoneID': None,
+  u'Title': u'Developer Manager',
+  u'UserName': u'Kimsmith'},]
 ```
 
 #### Create
