@@ -8,7 +8,7 @@
 from setuptools import setup, find_packages
 
 setup(
-	name = "clc-cli",
+	name = "clc-sdk",
 	version = "0.6",
 	packages = find_packages("."),
 
@@ -24,9 +24,9 @@ setup(
 	# metadata for upload to PyPI
 	author = "Keith Resar",
 	author_email = "Keith.Resar@CenturyLinkCloud.com",
-	description = "CenturyLink Cloud CLI",
-	keywords = "CenturyLink Cloud CLI",
-	url = "https://github.com/CenturyLinkCloud/clc",
+	description = "CenturyLink Cloud SDK and CLI",
+	keywords = "CenturyLink Cloud SDK CLI",
+	url = "https://github.com/CenturyLinkCloud/clc-python-sdk",
 
 	# could also include long_description, download_url, classifiers, etc.
 )
