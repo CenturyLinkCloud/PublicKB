@@ -6,21 +6,20 @@ At present this aligns most closely to [V1](https://t3n.zendesk.com/categories/2
 
 ## Contents
 
-* [CLI](#cli)
-  * [Usage](#usage) - basic usage, authentication, and configuration files
-  * [Accounts](#accounts) - Account level activities (list, create, modify)
-  * [Users](#users) - User level activities (list, create, modify)
-  * [Servers](#servers) - Server level activities (list, create, modify)
-  * [Groups](#groups) - Group level activities (list, create, modify)
-  * [Billing](#billing) - Billing activities
-  * [Networks](#networks) - Network activities
-  * [Queue](#queue) - Work queue
-  * [Blueprints](#blueprints) - Blueprints
-  * [Global Options](#global-options) - Formatting and execution options
+* [Usage](#usage) - basic usage, authentication, and configuration files
+* [Accounts](#accounts) - Account level activities (list, create, modify)
+* [Users](#users) - User level activities (list, create, modify)
+* [Servers](#servers) - Server level activities (list, create, modify)
+* [Groups](#groups) - Group level activities (list, create, modify)
+* [Billing](#billing) - Billing activities
+* [Networks](#networks) - Network activities
+* [Queue](#queue) - Work queue
+* [Blueprints](#blueprints) - Blueprints
+* [Global Options](#global-options) - Formatting and execution options
 
 
 ## Usage
-If running the Windows pre-compiled executable [clc-cli.exe](/raw/master/src/dist/clc-cli.exe) note that all examples below will need to be modified since the Windows command line executable is *clc-cli* (to eliminate conflict with the a standard installed PS commandlet.
+If running the Windows pre-compiled executable [clc-cli.exe](https://github.com/CenturyLinkCloud/clc-python-sdk/raw/master/src/dist/clc-cli.exe) note that all examples below will need to be modified since the Windows command line executable is *clc-cli* (to eliminate conflict with the a standard installed PS commandlet.
 
 ```
 > clc

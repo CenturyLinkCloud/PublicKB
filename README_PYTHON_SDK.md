@@ -5,8 +5,7 @@ This repository contains a Python SDK and a command line CLI (based on the SDK) 
 ## Contents
 
 * [Installing](#installing)
-* [Usage](#usage) - basic usage, authentication, and configuration files
-* [Accounts](#accounts) - Account level activities: [list](#listing_accounts), 
+* [Accounts](#accounts) - Account level activities: [list](#listing-accounts), 
 * [Users](#users) - User level activities (list, create, modify)
 * [Servers](#servers) - Server level activities (list, create, modify)
 * [Groups](#groups) - Group level activities (list, create, modify)

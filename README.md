@@ -26,7 +26,7 @@ If you do not have pip (the Python package manager) installed a quickstart insta
 ```
 
 ### Windows pre-package executable
-The CLI is available as a prepackaged single-file Windows executable and the most recent compiled version is always available [here](src/dist/clc-cli.exe).
+The CLI is available as a prepackaged single-file Windows executable and the most recent compiled version is always available [here](https://github.com/CenturyLinkCloud/clc-python-sdk/raw/master/src/dist/clc-cli.exe).
 Note also that all examples below will need to be modified since the Windows command line executable is *clc-cli* (to eliminate conflict with the a 
 standard installed PS commandlet.
 
