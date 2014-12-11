@@ -353,26 +353,26 @@ class Args:
 			config = ConfigParser.ConfigParser()
 			config.read(config_file)
 
-			if config.has_option('global','v1_api_key'):  clc._V1_API_KEY = config.get('global','v1_api_key')
-			if config.has_option('global','v1_api_passwd'):  clc._V1_API_PASSWD = config.get('global','v1_api_passwd')
-			if config.has_option('global','v2_api_username'):  clc._V2_API_USERNAME = config.get('global','v2_api_username')
-			if config.has_option('global','v2_api_passwd'):  clc._V2_API_PASSWD = config.get('global','v2_api_passwd')
+			if config.has_option('global','v1_api_key'):  clc.V1_API_KEY = config.get('global','v1_api_key')
+			if config.has_option('global','v1_api_passwd'):  clc.V1_API_PASSWD = config.get('global','v1_api_passwd')
+			if config.has_option('global','v2_api_username'):  clc.V2_API_USERNAME = config.get('global','v2_api_username')
+			if config.has_option('global','v2_api_passwd'):  clc.V2_API_PASSWD = config.get('global','v2_api_passwd')
 
 			if config.has_option('global','blueprint_ftp_url'):  clc._BLUEPRINT_FTP_URL = config.get('global','blueprint_ftp_url')
 
 
 	def MergeEnvironment(self):
-		if 'V1_API_KEY' in os.environ:  clc._V1_API_KEY = os.environ['V1_API_KEY']
-		if 'V1_API_PASSWD' in os.environ:  clc._V1_API_PASSWD = os.environ['V1_API_PASSWD']
-		if 'V2_API_USERNAME' in os.environ:  clc._V2_API_USERNAME = os.environ['V2_API_USERNAME']
-		if 'V2_API_PASSWD' in os.environ:  clc._V2_API_PASSWD = os.environ['V2_API_PASSWD']
+		if 'V1_API_KEY' in os.environ:  clc.V1_API_KEY = os.environ['V1_API_KEY']
+		if 'V1_API_PASSWD' in os.environ:  clc.V1_API_PASSWD = os.environ['V1_API_PASSWD']
+		if 'V2_API_USERNAME' in os.environ:  clc.V2_API_USERNAME = os.environ['V2_API_USERNAME']
+		if 'V2_API_PASSWD' in os.environ:  clc.V2_API_PASSWD = os.environ['V2_API_PASSWD']
 
 
 	def MergeCommands(self):
-		if self.args.v1_api_key:  clc._V1_API_KEY = self.args.v1_api_key
-		if self.args.v1_api_passwd:  clc._V1_API_PASSWD = self.args.v1_api_passwd
-		if self.args.v2_api_username:  clc._V2_API_USERNAME = self.args.v2_api_username
-		if self.args.v2_api_passwd:  clc._V2_API_PASSWD = self.args.v2_api_passwd
+		if self.args.v1_api_key:  clc.V1_API_KEY = self.args.v1_api_key
+		if self.args.v1_api_passwd:  clc.V1_API_PASSWD = self.args.v1_api_passwd
+		if self.args.v2_api_username:  clc.V2_API_USERNAME = self.args.v2_api_username
+		if self.args.v2_api_passwd:  clc.V2_API_PASSWD = self.args.v2_api_passwd
 
 
 
@@ -473,7 +473,7 @@ class ExecCommand():
 		if clc.args.args.alias:  return(clc.args.args.alias)
 		else:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			alias = clc._ALIAS
+			alias = clc.ALIAS
 
 			return(alias)
 
@@ -485,7 +485,7 @@ class ExecCommand():
 		except:
 			if not location:
 				self.Exec('clc.Account.GetLocation','',supress_output=True)
-				location = clc._LOCATION
+				location = clc.LOCATION
 
 		return(location)
 
@@ -557,10 +557,10 @@ class ExecCommand():
 		if clc.args.args.location:  location = clc.args.args.location
 		if not alias:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			alias = clc._ALIAS
+			alias = clc.ALIAS
 		if not location:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			location = clc._LOCATION
+			location = clc.LOCATION
 		self.Exec('clc.Group.GetGroups', { 'alias': alias, 'location': location }, cols=['ID','Name','ParentID','IsSystemGroup'])
 
 
@@ -571,10 +571,10 @@ class ExecCommand():
 		if clc.args.args.location:  location = clc.args.args.location
 		if not alias:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			alias = clc._ALIAS
+			alias = clc.ALIAS
 		if not location:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			location = clc._LOCATION
+			location = clc.LOCATION
 		if not clc.args.args.parent:  parent = "%s Hardware" % (location)
 		else:  parent = clc.args.args.parent
 		self.Exec('clc.Group.Create', 
@@ -590,10 +590,10 @@ class ExecCommand():
 		if clc.args.args.location:  location = clc.args.args.location
 		if not alias:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			alias = clc._ALIAS
+			alias = clc.ALIAS
 		if not location:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			location = clc._LOCATION
+			location = clc.LOCATION
 		self.Exec('clc.Group.Delete', 
 		          { 'alias': alias, 'location': location, 'group': clc.args.args.group },
 		          cols=['RequestID','StatusCode','Message'])
@@ -606,10 +606,10 @@ class ExecCommand():
 		if clc.args.args.location:  location = clc.args.args.location
 		if not alias:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			alias = clc._ALIAS
+			alias = clc.ALIAS
 		if not location:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			location = clc._LOCATION
+			location = clc.LOCATION
 		self.Exec('clc.Group.Pause', 
 		          { 'alias': alias, 'location': location, 'group': clc.args.args.group },
 		          cols=['RequestID','StatusCode','Message'])
@@ -622,10 +622,10 @@ class ExecCommand():
 		if clc.args.args.location:  location = clc.args.args.location
 		if not alias:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			alias = clc._ALIAS
+			alias = clc.ALIAS
 		if not location:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			location = clc._LOCATION
+			location = clc.LOCATION
 		self.Exec('clc.Group.Poweron', 
 		          { 'alias': alias, 'location': location, 'group': clc.args.args.group },
 		          cols=['RequestID','StatusCode','Message'])
@@ -638,10 +638,10 @@ class ExecCommand():
 		if clc.args.args.location:  location = clc.args.args.location
 		if not alias:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			alias = clc._ALIAS
+			alias = clc.ALIAS
 		if not location:
 			self.Exec('clc.Account.GetLocation','',supress_output=True)
-			location = clc._LOCATION
+			location = clc.LOCATION
 		self.Exec('clc.Group.Archive', 
 		          { 'alias': alias, 'location': location, 'group': clc.args.args.group },
 		          cols=['RequestID','StatusCode','Message'])
@@ -680,7 +680,7 @@ class ExecCommand():
 		if clc.args.args.location:  location = clc.args.args.location
 		else:  
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			location = clc._LOCATION
+			location = clc.LOCATION
 		r = self.Exec('clc.Server.GetServers', { 'alias': alias, 'location': location, 'group': clc.args.args.group, 'name_groups': clc.args.args.name_groups },
 		              cols=['HardwareGroupID', 'Name', 'Description', 'Cpu','MemoryGB','Status','ServerType','OperatingSystem','PowerState','Location','IPAddress'])
 
@@ -707,10 +707,10 @@ class ExecCommand():
 		if clc.args.args.location:  location = clc.args.args.location
 		if not alias:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			alias = clc._ALIAS
+			alias = clc.ALIAS
 		if not location:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			location = clc._LOCATION
+			location = clc.LOCATION
 		r = self.Exec('clc.Server.Create', 
 		              { 'alias': alias, 'location': location, 'group': clc.args.args.group, 'name': clc.args.args.name, 'template': clc.args.args.template,
 					    'backup_level': clc.args.args.backup_level, 'cpu': clc.args.args.cpu, 'ram': clc.args.args.ram, 
@@ -725,10 +725,10 @@ class ExecCommand():
 	#	if clc.args.args.location:  location = clc.args.args.location
 	#	if not alias:
 	#		self.Exec('clc.Account.GetAlias','',supress_output=True)
-	#		alias = clc._ALIAS
+	#		alias = clc.ALIAS
 	#	if not location:
 	#		self.Exec('clc.Account.GetAlias','',supress_output=True)
-	#		location = clc._LOCATION
+	#		location = clc.LOCATION
 	#	self.Exec('clc.Group.Restore', 
 	#	          { 'alias': alias, 'location': location, 'group': clc.args.args.group },
 	#	          cols=['RequestID','StatusCode','Message'])
@@ -741,10 +741,10 @@ class ExecCommand():
 		if clc.args.args.location:  location = clc.args.args.location
 		if not alias:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			alias = clc._ALIAS
+			alias = clc.ALIAS
 		if not location:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			location = clc._LOCATION
+			location = clc.LOCATION
 		r = self.Exec('clc.Billing.GetGroupEstimate', { 'alias': alias, 'location': location, 'group': clc.args.GetArgs().group }, 
 					  cols=['MonthToDate', 'PreviousHour', 'MonthlyEstimate', 'CurrentHour'])
 
@@ -776,10 +776,10 @@ class ExecCommand():
 		if clc.args.args.location:  location = clc.args.args.location
 		if not alias:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			alias = clc._ALIAS
+			alias = clc.ALIAS
 		if not location:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			location = clc._LOCATION
+			location = clc.LOCATION
 		r = self.Exec('clc.Network.GetNetworks', { 'alias': alias, 'location': location }, 
 					  cols=['Name', 'Description', 'Gateway'])
 
@@ -791,10 +791,10 @@ class ExecCommand():
 		if clc.args.args.location:  location = clc.args.args.location
 		if not alias:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			alias = clc._ALIAS
+			alias = clc.ALIAS
 		if not location:
 			self.Exec('clc.Account.GetAlias','',supress_output=True)
-			location = clc._LOCATION
+			location = clc.LOCATION
 		r = self.Exec('clc.Network.GetNetworkDetails', { 'alias': alias, 'location': location, 'network': clc.args.args.network }, 
 					  cols=['Address', 'AddressType', 'IsClaimed', 'ServerName'])
 

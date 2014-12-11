@@ -29,18 +29,18 @@ class API():
 
 	@staticmethod
 	def _Login_v2():
-		if not clc._V2_API_USERNAME or not clc._V2_API_PASSWD:
+		if not clc.V2_API_USERNAME or not clc.V2_API_PASSWD:
 			clc.output.Status('ERROR',3,'V2 API username and password not provided')
 			raise(Exception("V2 API username and password not provided"))
 			
 		r = requests.post("%s%s" % (clc.defaults.ENDPOINT_URL_V2,"/authentication/login"), 
-						  data={'username': clc._V2_API_USERNAME, 'password': clc._V2_API_PASSWD},
+						  data={'username': clc.V2_API_USERNAME, 'password': clc.V2_API_PASSWD},
 						  headers={'content-type': 'application/json'},
 						  verify=API._ResourcePath('clc/cacert.pem'))
 
 		if r.status_code == 200:
-			clc._LOGIN_TOKEN_V2 = r.json()['bearerToken']
-			clc._ALIAS = r.json()['accountAlias']
+			clc.LOGIN_TOKEN_V2 = r.json()['bearerToken']
+			clc.ALIAS = r.json()['accountAlias']
 		elif r.status_code == 400:
 			raise(Exception("Invalid V2 API login.  %s" % (r.json()['message'])))
 		else:
@@ -49,14 +49,14 @@ class API():
 
 	@staticmethod
 	def _Login_v1():
-		if not clc._V1_API_KEY or not clc._V1_API_PASSWD:
+		if not clc.V1_API_KEY or not clc.V1_API_PASSWD:
 			clc.output.Status('ERROR',3,'V1 API key and password not provided')
 			raise(Exception("V1 API key and password not provided"))
 
 		clc._LOGINS += 1
 
 		r = requests.post("%s%s" % (clc.defaults.ENDPOINT_URL_V1,"/Auth/logon"),
-						  params={'APIKey': clc._V1_API_KEY, 'Password': clc._V1_API_PASSWD},
+						  params={'APIKey': clc.V1_API_KEY, 'Password': clc.V1_API_PASSWD},
 						  verify=API._ResourcePath('clc/cacert.pem'))
 
 		try:

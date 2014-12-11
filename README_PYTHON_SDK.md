@@ -19,6 +19,9 @@ This repository contains a Python SDK and a command line CLI (based on the SDK) 
 
 ### Authentication
 All commands require authentication which can be accomplished in several ways in increasing order of priority.
+
+
+
 * System configuration file at /usr/local/etc/clc_config (POSIX) or %PROGRAMDATA%\clc\clc.ini (Windows)
 * User specific configuration file at ~/.clc (POSIX) or .\clc.ini (Windows)
 * Specify configuration file with --config / -c command line option

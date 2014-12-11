@@ -16,15 +16,15 @@ class Account:
 	@staticmethod
 	def GetAlias():  
 		"""Return specified alias or if none the alias associated with the provided credentials."""
-		if not clc._ALIAS:  Account.GetAccounts()
-		return(clc._ALIAS)
+		if not clc.ALIAS:  Account.GetAccounts()
+		return(clc.ALIAS)
 
 
 	@staticmethod
 	def GetLocation():  
 		"""Return specified location or if none the default location associated with the provided credentials and alias."""
-		if not clc._LOCATION:  Account.GetAccounts()
-		return(clc._LOCATION)
+		if not clc.LOCATION:  Account.GetAccounts()
+		return(clc.LOCATION)
 
 
 	@staticmethod
@@ -59,8 +59,8 @@ class Account:
 		r = clc.API.v1_call('post','Account/GetAccounts',payload)
 		if int(r['StatusCode']) == 0:  
 			# Assume first response is always the original account.  Not sure if this is reliable
-			if not clc._ALIAS:  clc._ALIAS = r['Accounts'][0]['AccountAlias']
-			if not clc._LOCATION:  clc._LOCATION = r['Accounts'][0]['Location']
+			if not clc.ALIAS:  clc.ALIAS = r['Accounts'][0]['AccountAlias']
+			if not clc.LOCATION:  clc.LOCATION = r['Accounts'][0]['Location']
 
 			return(r['Accounts'])
 

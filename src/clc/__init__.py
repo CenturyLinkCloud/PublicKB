@@ -30,10 +30,13 @@ import defaults
 
 
 ####### module/object vars #######
-_V1_API_KEY = False
-_V1_API_PASSWD = False
-_V2_API_USERNAME = False
-_V2_API_PASSWD = False
+V1_API_KEY = False
+V1_API_PASSWD = False
+V2_API_USERNAME = False
+V2_API_PASSWD = False
+
+ALIAS = False
+LOCATION = False
 
 args = False
 
@@ -41,8 +44,6 @@ _LOGIN_COOKIE_V1 = False
 _LOGIN_TOKEN_V2 = False
 
 _LOGINS = 0
-_ALIAS = False
-_LOCATION = False
 _BLUEPRINT_FTP_URL = False
 
 _GROUP_MAPPING = {}
