@@ -18,17 +18,17 @@ This repository contains a Python SDK and a command line CLI (based on the SDK) 
 
 
 ### Authentication
-All commands require authentication which can be accomplished in several ways in increasing order of priority.
+All API calls require authentication.  Depending on the API calls being made you will need to login using either V1, V2, or both V1/V2 credentials.
+Most most calls currently leverage V1 credentials.  Where the same capability exists with either V1 or V2 API and only one set of credentials
+is provided the SDK will automatically select the appropriate version of the API to call.
 
+```python
+>>> import clc
+>>> clc.SetCredentialsV1("794e4edeaa1342039c4545b4d71beb5a","E6Oh$~h!inY*2or[")
 
+>>> clc.SetCredentialsV2("test@example.com","dsioj34ww09dfs")
+```
 
-* System configuration file at /usr/local/etc/clc_config (POSIX) or %PROGRAMDATA%\clc\clc.ini (Windows)
-* User specific configuration file at ~/.clc (POSIX) or .\clc.ini (Windows)
-* Specify configuration file with --config / -c command line option
-* Define environment variables (V1_API_KEY / V1_API_PASSWD or V2_API_USERNAME / V2_API_PASSWD)
-* Pass credentials as command line options
-
-Configuration files follow ini syntax.  Reference the [example.ini](src/example_config.ini) file with all currently accepted fields.
 
 ### Accounts
 

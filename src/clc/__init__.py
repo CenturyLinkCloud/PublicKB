@@ -59,10 +59,22 @@ class AccountDeletedException(CLCException):
 class AccountLoginException(CLCException):
     pass
 
+
 class output:
 	
 	@staticmethod
 	def Status(status,level,message):
 		pass
 
+
+def SetCredentialsV1(api_key,api_passwd):
+	"""Establish API key and password associated with APIv1 commands."""
+	V1_API_KEY = api_key
+	V1_API_PASSWD = api_passwd
+
+
+def SetCredentialsV2(api_username,api_passwd):
+	"""Establish API username and password associated with APIv2 commands."""
+	V2_API_USERNAME = api_username
+	V2_API_PASSWD = api_passwd
 
