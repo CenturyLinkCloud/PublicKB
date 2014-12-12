@@ -35,7 +35,7 @@ class Server:
 
 
 	@staticmethod
-	def GetServers(location,group,alias=None,name_groups=False):
+	def GetServers(location,group=None,alias=None,name_groups=False):
 		"""Gets a deep list of all Servers for a given Hardware Group and its sub groups, or all Servers for a given location.
 
 		https://t3n.zendesk.com/entries/21735513-Get-All-Servers
@@ -114,7 +114,7 @@ class Server:
 
 	# TODO - implement custom fields
 	@staticmethod
-	def Create(alias,location,name,template,cpu,ram,backup_level,group, network='',description='',password=''):
+	def Create(name,template,cpu,ram,backup_level,group,alias=None,location=None,network='',description='',password=''):
 		"""Gets the list of Templates available to the account and location.
 
 		https://t3n.zendesk.com/entries/21006677-Create-Server
@@ -160,7 +160,7 @@ class Server:
 
 
 	@staticmethod
-	def Archive(alias,servers):
+	def Archive(servers,alias=None):
 		"""Archives the specified servers.
 
 		https://t3n.zendesk.com/entries/21016957-Archive-Server
@@ -172,7 +172,7 @@ class Server:
 
 
 	@staticmethod
-	def Poweron(alias,servers):
+	def Poweron(servers,alias=None):
 		"""Powers on the specified servers.
 
 		https://t3n.zendesk.com/entries/20985206-Power-On-Server
@@ -184,7 +184,7 @@ class Server:
 
 
 	@staticmethod
-	def Poweroff(alias,servers):
+	def Poweroff(servers,alias=None):
 		"""Powers off the specified servers.
 
 		https://t3n.zendesk.com/entries/21005353-Power-Off-Server
@@ -196,7 +196,7 @@ class Server:
 
 
 	@staticmethod
-	def Reboot(alias,servers):
+	def Reboot(servers,alias=None):
 		"""Reboots the specified servers.
 
 		https://t3n.zendesk.com/entries/20998347-Reboot-Server
@@ -208,7 +208,7 @@ class Server:
 
 
 	@staticmethod
-	def Reset(alias,servers):
+	def Reset(servers,alias=None):
 		"""Resets the specified servers.
 
 		https://t3n.zendesk.com/entries/21005363-Reset-Server
@@ -220,7 +220,7 @@ class Server:
 
 
 	@staticmethod
-	def Shutdown(alias,servers):
+	def Shutdown(servers,alias=None):
 		"""Shuts down the specified servers.
 
 		https://t3n.zendesk.com/entries/23126728-Shutdown-Server
@@ -232,7 +232,7 @@ class Server:
 
 
 	@staticmethod
-	def Snapshot(alias,servers):
+	def Snapshot(servers,alias=None):
 		"""Initiates a server snapshot.
 
 		https://t3n.zendesk.com/entries/23106211-Snapshot-Server
@@ -244,7 +244,7 @@ class Server:
 
 
 	@staticmethod
-	def Delete(alias,servers):
+	def Delete(servers,alias=None):
 		"""Deletes the specified servers and releases all associated resources.
 
 		https://t3n.zendesk.com/entries/21016852-Delete-Server
@@ -256,7 +256,7 @@ class Server:
 
 
 	@staticmethod
-	def Pause(alias,servers):
+	def Pause(servers,alias=None):
 		"""Pauses the specified servers and releases all associated resources.
 
 		https://t3n.zendesk.com/entries/21005343-Pause-Server
@@ -268,7 +268,7 @@ class Server:
 
 
 	@staticmethod
-	def GetCredentials(alias,servers):
+	def GetCredentials(servers,alias=None):
 		"""Gets the credentials for the specified servers.
 
 		https://t3n.zendesk.com/entries/21053657-Get-Server-Credentials
@@ -285,7 +285,7 @@ class Server:
 
 
 	@staticmethod
-	def GetDisks(alias,server,guest_names=True):
+	def GetDisks(server,alias=None,guest_names=True):
 		"""Returns list of disks configured for the server
 
 		https://t3n.zendesk.com/entries/23087091-List-Disks

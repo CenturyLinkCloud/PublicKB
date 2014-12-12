@@ -365,37 +365,96 @@ Retrieve details on one or more servers.
 ```
 
 #### Get Credentials
-Retrieve administrative credentials for specified server(s).  Easily specify alternate output formats or limit to just the password column using the global formatting options.
+Retrieve administrative credentials for specified server(s). 
 
 ```python
+>>> pprint.pprint(clc.Server.GetCredentials(servers=['WA1BTDITSTSER01',],alias=None))
+[{u'Message': u'Server credentials retrieved',
+  u'Password': u'#A$zids90djvRhH)',
+  u'StatusCode': 0,
+  u'Success': True,
+  u'Username': u'administrator'}]
 ```
 
 #### Create
-Create new server. Depending on command line options the command can return immediately or can display build status in real-time.  When build completes returns server name.
+Create new server. This is an asynchronous activity so a RequestID is returned which can be used to follow progress.
 
 ```python
+>>> clc.Server.Create(alias=None,location='WA1',name='TSTSER',template='CENTOS-5-32-TEMPLATE',cpu=1,ram=1,backup_level='Standard',
+                      group='Default Group', network='vlan_948_10.80.148',description='Test server',password='')
+{u'Message': u'Server queued for creation',
+ u'RequestID': 123586,
+ u'StatusCode': 0,
+ u'Success': True}
 ```
 
 #### List Disks
 List all disks associated with the servere also querying the guest for disk names and mount points.
 
 ```python
+>>> clc.Server.GetDisks(server='UC1BTDISERO2201',alias=None,guest_names=True)
+[{u'Name': u'C:\\', u'ScsiBusID': u'0', u'ScsiDeviceID': u'0', u'SizeGB': 60}]
 ```
 
 #### Misc Asynchronous server operations
 These asynchronous operations can be run on one more more servers.  Currently implemented are:
 *pause, delete, archive, poweron, poweroff, reset, shutdown, snapshot*.  Rather than waiting for process to 
 complete execute asynchronously and return a job ID.
-```
-> clc --async --config config.ini servers delete --server WA1BTDICLITST01
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Server queued for deletion
-+-----------+------------+----------------------------+
-| RequestID | StatusCode | Message                    |
-+-----------+------------+----------------------------+
-| 122265    | 0          | Server queued for deletion |
-+-----------+------------+----------------------------+
+
+```python
+>>> clc.Server.Snapshot(servers=['WA1BTDITSTSER01',],alias=None)
+[{u'Message': u'Server queued for snapshot',
+  u'RequestID': 123587,
+  u'StatusCode': 0,
+  u'Success': True}]
+
+>>> clc.Server.Poweroff(servers=['WA1BTDITSTSER01',],alias=None)
+[{u'Message': u'Server queued for power off',
+  u'RequestID': 123588,
+  u'StatusCode': 0,
+  u'Success': True}]
+
+>>> clc.Server.Poweron(servers=['WA1BTDITSTSER01',],alias=None)
+[{u'Message': u'Group queued for power on',
+  u'RequestID': 123589,
+  u'StatusCode': 0,
+  u'Success': True}]
+
+>>> clc.Server.Reset(servers=['WA1BTDITSTSER01',],alias=None)
+[{u'Message': u'Server queued for reset',
+  u'RequestID': 123590,
+  u'StatusCode': 0,
+  u'Success': True}]
+
+>>> clc.Server.Reboot(servers=['WA1BTDITSTSER01',],alias=None)
+[{u'Message': u'Server queued for reboot',
+  u'RequestID': 123591,
+  u'StatusCode': 0,
+  u'Success': True}]
+
+>>> clc.Server.Shutdown(servers=['WA1BTDITSTSER01',],alias=None)
+[{u'Message': u'Server queued for shutdown',
+  u'RequestID': 123592,
+  u'StatusCode': 0,
+  u'Success': True}]
+
+>>> clc.Server.Pause(servers=['WA1BTDITSTSER01',],alias=None)
+[{u'Message': u'Server queued for pause',
+  u'RequestID': 123593,
+  u'StatusCode': 0,
+  u'Success': True}]
+
+>>> clc.Server.Archive(servers=['WA1BTDITSTSER01',],alias=None)
+[{u'Message': u'Server queued for archive',
+  u'RequestID': 123595,
+  u'StatusCode': 0,
+  u'Success': True}]
+
+>>> clc.Server.Delete(servers=['WA1BTDITSTSER01',],alias=None)
+[{u'Message': u'Server queued for deletion',
+  u'RequestID': 123594,
+  u'StatusCode': 0,
+  u'Success': True}]
 ```
 
 ### Groups
