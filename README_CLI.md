@@ -237,7 +237,8 @@ Update existing account and return details
   ```
 
 #### Get
-Return account details
+Return user details
+
 ```
 > clc --config config.ini users get --user test12345
 ✔  Logged into v1 API

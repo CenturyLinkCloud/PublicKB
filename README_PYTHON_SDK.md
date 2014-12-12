@@ -109,11 +109,6 @@ Retrieves  details from specific alias or credentials default alias if none is p
 ```
 
 ### Users
-Usage
-```
-> clc --config config.ini users
-usage: clc users [-h] {unsuspend,suspend,get,create,list,update,delete} ...
-```
 
 #### List Users
 List all users associated with the specified alias.
@@ -152,104 +147,81 @@ List all users associated with the specified alias.
   u'UserName': u'Kimsmith'},]
 ```
 
-#### Create
-Create new user account and return account details
+#### Create User
+Create new user account and return account details.  Alias is optional.
 ```
->clc --config config.ini users create --user test12345 --email test@example.com --first-name Joe \
-          --last-name Smith --roles ServerAdministrator BillingManager
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  User successfully created.
-
-  ******************* 1. ********************
-               UserName:  test12345
-           MobileNumber:  None
-               AllowSMS:  False
-           SAMLUserName:  None
-                 Status:  Active
-                  Roles:   ['ServerAdministrator', 'BillingManager']
-              FirstName:  Joe
-                  Title:  None
-               LastName:  Smith
-           OfficeNumber:  None
-              FaxNumber:  None
-             TimeZoneID:  Pacific Standard Time
-           AccountAlias:  BTDI
-           EmailAddress:  test@example.com
-  AlternateEmailAddress:  None
+>>> clc.User.CreateUser(user="test12665",email="JoeSmith@example.com",first_name="Joe",last_name="Smith",roles=["ServerAdministrator",],alias="BTDI")
+{u'AccountAlias': u'BTDI',
+ u'AllowSMS': False,
+ u'AlternateEmailAddress': None,
+ u'EmailAddress': u'JoeSmith@example.com',
+ u'FaxNumber': None,
+ u'FirstName': u'Joe',
+ u'LastName': u'Smith',
+ u'MobileNumber': None,
+ u'OfficeNumber': None,
+ u'Roles': ['ServerAdministrator'],
+ u'SAMLUserName': None,
+ u'Status': u'Active',
+ u'TimeZoneID': u'Pacific Standard Time',
+ u'Title': None,
+ u'UserName': u'test12665'}
 ```
 
-#### Update
+#### Update Existing User
 Update existing account and return details
-```
-> clc --config config.ini users update --user test12345 --email test@example.com --first-name Jenny --last-name Smith --roles ServerAdministrator
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  User successfully updated.
 
-  ******************* 1. ********************
-               UserName:  test12345
-           MobileNumber:  None
-               AllowSMS:  False
-           SAMLUserName:  None
-                 Status:  Active
-                  Roles:  ['ServerAdministrator']
-              FirstName:  Jenny
-                  Title:  None
-               LastName:  Smith
-           OfficeNumber:  None
-              FaxNumber:  None
-             TimeZoneID:  Pacific Standard Time
-           AccountAlias:  BTDI
-           EmailAddress:  test@example.com
-  AlternateEmailAddress:  None
-  ```
+```python
+>>> clc.User.UpdateUser(user="test12665",email="JennySmith@example.com",first_name="Jenny",last_name="Smith",roles=["ServerAdministrator",],alias="BTDI")
+{u'AccountAlias': u'BTDI',
+ u'AllowSMS': False,
+ u'AlternateEmailAddress': None,
+ u'EmailAddress': u'JennySmith@example.com',
+ u'FaxNumber': None,
+ u'FirstName': u'Jenny',
+ u'LastName': u'Smith',
+ u'MobileNumber': None,
+ u'OfficeNumber': None,
+ u'Roles': ['ServerAdministrator'],
+ u'SAMLUserName': None,
+ u'Status': u'Active',
+ u'TimeZoneID': u'Pacific Standard Time',
+ u'Title': None,
+ u'UserName': u'test12665'}
+```
 
 #### Get
-Return account details
-```
-> clc --config config.ini users get --user test12345
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  User successfully located.
+Return user details
 
-  ******************* 1. ********************
-               UserName:  test12345
-           MobileNumber:  None
-               AllowSMS:  False
-           SAMLUserName:  None
-                 Status:  Active
-                  Roles:  ['ServerAdministrator']
-              FirstName:  Jenny
-                  Title:  None
-               LastName:  Smith
-           OfficeNumber:  None
-              FaxNumber:  None
-             TimeZoneID:  Pacific Standard Time
-           AccountAlias:  BTDI
-           EmailAddress:  test@example.com
-  AlternateEmailAddress:  None
+```python
+>>> clc.User.GetUserDetails("joesmith")
+{u'AccountAlias': u'BTDI',
+ u'AllowSMS': False,
+ u'AlternateEmailAddress': None,
+ u'EmailAddress': u'JoeSmith@example.com',
+ u'FaxNumber': None,
+ u'FirstName': u'Joe',
+ u'LastName': u'Smith',
+ u'MobileNumber': None,
+ u'OfficeNumber': None,
+ u'Roles': ['AccountAdministrator'],
+ u'SAMLUserName': None,
+ u'Status': u'Active',
+ u'TimeZoneID': u'Pacific Standard Time',
+ u'Title': None,
+ u'UserName': u'joesmith'}
 ```
 
-#### Suspend
-```
-> clc --config config.ini users suspend --user test12345
-✔  Logged into v1 API
-✔  User suspended.
-```
+#### Suspend, Unsuspend, Delete Users
+Account status modifications return no results.
 
-#### Unsuspend
-```
-> clc --config config.ini users unsuspend --user test12345
-✔  Logged into v1 API
-✔  User unsuspended.
-```
-
-#### Delete
-```
-> clc --config config.ini users delete --user test12345
-✔  Logged into v1 API
-✔  User deleted.
+```python
+>>> pprint.pprint(clc.User.SuspendUser("test12665"))
+None
+>>> pprint.pprint(clc.User.UnsuspendUser("test12665"))
+None
+>>> pprint.pprint(clc.User.DeleteUser("test12665"))
+None
 ```
 
 ### Servers

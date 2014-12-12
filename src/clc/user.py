@@ -25,7 +25,7 @@ class User:
 
 
 	@staticmethod
-	def GetUserDetails(alias, user):
+	def GetUserDetails(user, alias=None):
 		"""Gets the details of a specific user associated with a given account.
 		
 		https://t3n.zendesk.com/entries/22427672-GetUserDetails
@@ -41,7 +41,7 @@ class User:
 
 
 	@staticmethod
-	def GetUsers(alias):
+	def GetUsers(alias=None):
 		"""Gets all of users assigned to a given account.
 		
 		https://t3n.zendesk.com/entries/22427662-GetUsers
@@ -89,17 +89,17 @@ class User:
 
 	# TODO refactor payload validation/building
 	@staticmethod
-	def CreateUser(alias, user, email, first_name, last_name, roles):
+	def CreateUser(user, email, first_name, last_name, roles, alias=None):
 		"""Create new user within a given account.
 		
 		https://t3n.zendesk.com/entries/22441967-CreateUser
 
-		:param alias: short code for a particular account.  If none will use account's default alias
 		:param user: user name, which is typically an email address
 		:param email: email address.  Password credentials are emailed to this address on account creation
 		:param first_name: first name
 		:param last_name: surname
 		:param roles: list of roles (ServerAdministrator, BillingManager, DNSManager, AccountAdministrator,  AccountViewer, NetworkManager, SecurityManager, ServerOperator)
+		:param alias: short code for a particular account.  If none will use account's default alias
 		"""
 		if alias is None:  alias = clc.Account.GetAlias()
 		payload = {'AccountAlias': alias, 'Roles': [] }
@@ -117,7 +117,7 @@ class User:
 
 	# TODO refactor payload validation/building
 	@staticmethod
-	def UpdateUser(alias, user, email, first_name, last_name, roles):
+	def UpdateUser(user, email, first_name, last_name, roles,alias=None):
 		"""Update existing user within a given account.
 		
 		https://t3n.zendesk.com/entries/22454018-UpdateUser
