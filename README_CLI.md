@@ -498,7 +498,7 @@ complete execute asynchronously and return a job ID.
 ```
 
 ### Groups
-Usaage
+Usage
 ```
 > clc --config config.ini groups
 usage: clc groups [-h] {pause,create,list,poweron,archive,delete} ...

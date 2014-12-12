@@ -225,200 +225,74 @@ None
 ```
 
 ### Servers
-Usage
-```
-> clc --config config.ini servers
-usage: clc servers [-h] 
-	{get,list,list-all,templates,create,delete,archive,pause,poweron,poweroff,reset,shutdown,snapshot,get-credentials,list-disks} ...
-```
 
 #### Templates
-List all templates available from the specified location or if none specified the primary location associated with the provided API credentials.  These include system templates (available globally) and customer created templates (available in the location where they were created).
+List all templates available from the specified location or if Nnone specified the primary location associated with the provided API credentials.  These include system templates (available globally) and customer created templates (available in the location where they were created).
+
+```python
+>>> clc.Server.GetTemplates(alias=None,location=None)
+[{u'Cpu': 0,
+  u'Description': u'CentOS 5 | 32-bit',
+  u'DiskCount': 3,
+  u'ID': 0,
+  u'Location': u'WA1',
+  u'MemoryGB': 0,
+  u'Name': u'CENTOS-5-32-TEMPLATE',
+  u'OperatingSystem': 32,
+  u'TotalDiskSpaceGB': 17},
+  u'Description': u'Windows 2012 R2 Datacenter Edition | 64-bit',
+  u'DiskCount': 1,
+  u'ID': 0,
+  u'Location': u'WA1',
+  u'MemoryGB': 0,
+  u'Name': u'WIN2012R2DTC-64',
+  u'OperatingSystem': 28,
+  u'TotalDiskSpaceGB': 60}]
 ```
-> clc --config config.ini servers templates
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Successfully retrieved templates
-+-----------------+-----------------------------+---------------------------------------------+-----+----------+------------------+
-| OperatingSystem | Name                        | Description                                 | Cpu | MemoryGB | TotalDiskSpaceGB |
-+-----------------+-----------------------------+---------------------------------------------+-----+----------+------------------+
-| 2               | WIN2K3R2STD-32              | Windows 2003 R2 Standard | 32-bit           | 0   | 0        | 16               |
-| 3               | WIN2K3R2STD-64              | Windows 2003 R2 Standard | 64-bit           | 0   | 0        | 16               |
-| 5               | WIN2008R2STD-64             | Windows 2008 R2 Standard | 64-bit           | 0   | 0        | 60               |
-| 15              | WIN2K3R2ENT-32              | Windows 2003 R2 Enterprise | 32-bit         | 0   | 0        | 16               |
-| 16              | WIN2K3R2ENT-64              | Windows 2003 R2 Enterprise | 64-bit         | 0   | 0        | 16               |
-| 18              | WIN2008R2ENT-64             | Windows 2008 R2 Enterprise | 64-bit         | 0   | 0        | 60               |
-| 20              | BOSH-STEMCELL               | BOSH Stemcell Template                      | 0   | 0        | 20               |
-| 20              | MICRO-BOSH-STEMCELL         | Stemcell | Micro-BOSH                       | 0   | 0        | 20               |
-| 25              | RHEL-5-64-TEMPLATE          | RedHat Enterprise Linux 5 | 64-bit          | 0   | 0        | 17               |
-| 26              | WIN2008R2DTC-64             | Windows 2008 R2 Datacenter Edition | 64-bit | 0   | 0        | 60               |
-| 27              | WIN2012DTC-64               | Windows 2012 Datacenter Edition | 64-bit    | 0   | 0        | 60               |
-| 28              | WIN2012R2DTC-64             | Windows 2012 R2 Datacenter Edition | 64-bit | 0   | 0        | 60               |
-| 29              | UBUNTU-10-32-TEMPLATE       | Ubuntu 10 | 32-bit                          | 0   | 0        | 17               |
-| 30              | UBUNTU-10-64-TEMPLATE       | Ubuntu 10 | 64-bit                          | 0   | 0        | 17               |
-| 30              | UBUNTU-10-64-WF-TEMPLATE    | Web Fabric Ubuntu x64 Template              | 0   | 0        | 17               |
-| 30              | UBUNTU-10-64-WF-TEMPLATE-V2 | Web Fabric Ubuntu x64 Template V2           | 0   | 0        | 17               |
-| 31              | UBUNTU-12-64-TEMPLATE       | Ubuntu 12 | 64-bit                          | 0   | 0        | 17               |
-| 32              | CENTOS-5-32-TEMPLATE        | CentOS 5 | 32-bit                           | 0   | 0        | 17               |
-| 33              | CENTOS-5-64-TEMPLATE        | CentOS 5 | 64-bit                           | 0   | 0        | 17               |
-| 34              | CENTOS-6-32-TEMPLATE        | CentOS 6 | 32-bit                           | 0   | 0        | 17               |
-| 35              | CENTOS-6-64-TEMPLATE        | CentOS 6 | 64-bit                           | 0   | 0        | 17               |
-| 36              | DEBIAN-6-64-TEMPLATE        | Debian 6 | 64-bit                           | 0   | 0        | 17               |
-| 37              | DEBIAN-7-64-TEMPLATE        | Debian 7 | 64-bit                           | 0   | 0        | 17               |
-| 38              | RHEL-6-64-TEMPLATE          | RedHat Enterprise Linux 6 | 64-bit          | 0   | 0        | 17               |
-| 40              | PXE-TEMPLATE                | PXE Boot [EXPERIMENTAL]                     | 0   | 0        | 0                |
-| 41              | UBUNTU-14-64-TEMPLATE       | Ubuntu 14 | 64-bit                          | 0   | 0        | 17               |
-+-----------------+-----------------------------+---------------------------------------------+-----+----------+------------------+
+
+#### Get Template ID
+Each template has a unique Int ID.  Given a name get this ID.
+
+```python
+>>> clc.Server.GetTemplateID(alias=None, location=None, name='WIN2012DTC-64')
+27
 ```
 
 #### List
 List all servers in the specified location or if none specified the primary location associated with the provided API credentials.
-```
-> clc --config config.ini servers list
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Successfully retrieved deep view of servers
-+-----------------+-----------------+----------------------------------------+-----+----------+----------+------------+-----------------+------------+----------+--------------+
-| HardwareGroupID | Name            | Description                            | Cpu | MemoryGB | Status   | ServerType | OperatingSystem | PowerState | Location | IPAddress    |
-+-----------------+-----------------+----------------------------------------+-----+----------+----------+------------+-----------------+------------+----------+--------------+
-| 1003            | WA1BTDIJLVB01   | John LAMP test platform                | 1   | 2        | Active   | 1          | 20              | Started    | WA1      | 10.80.146.15 |
-| 1045            | WA1BTDITEST15   | test                                   | 1   | 1        | Active   | 1          | 5               | Started    | WA1      | 10.81.0.17   |
-| 1798            | WA1BTDIWS005101 | demo server                            | 0   | 0        | Archived | 1          | 7               | None       | WA1      | 10.80.146.54 |
-| 2487            | WA1BTDISUB01    | 1234                                   | 2   | 1        | Active   | 2          | 6               | Started    | WA1      | 10.80.146.36 |
-| 2487            | WA1BTDITESTCH01 | WA1BTDITESTCH01                        | 1   | 2        | Active   | 1          | 5               | Stopped    | WA1      | 10.80.146.30 |
-| 3728            | WA1BTDISAML0101 | My ADFS server                         | 1   | 4        | Active   | 1          | 5               | Stopped    | WA1      | 10.80.146.49 |
-| 4416            | WA1BTDITEST11   | test                                   | 1   | 1        | Active   | 1          | 7               | Started    | WA1      | 10.80.146.14 |
-| 20220           | WA1BTDISQL06    | SQL Server                             | 4   | 15       | Active   | 1          | 5               | Paused     | WA1      | 10.80.146.18 |
-| 20220           | WA1BTDITSDEMO02 | Tyce Demo Server 2                     | 2   | 16       | Active   | 1          | 27              | Started    | WA1      | 10.80.148.13 |
-+-----------------+-----------------+----------------------------------------+-----+----------+----------+------------+-----------------+------------+----------+--------------+
+
+```python
+
 ```
 
 #### List All
 Perform a deep list of all servers in all locations.
-```
-> clc --config config.ini servers list-all
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Locations successfully queried.
-✔  Successfully retrieved deep view of servers
-✔  Successfully retrieved deep view of servers
-✔  Successfully retrieved deep view of servers
-✔  Successfully retrieved deep view of servers
-✔  Successfully retrieved deep view of servers
-✔  Successfully retrieved deep view of servers
-✔  Successfully retrieved deep view of servers
-✔  Successfully retrieved deep view of servers
-✔  Successfully retrieved deep view of servers
-✔  Successfully retrieved deep view of servers
-+-----------------+-----------------+----------------------------------------+-----+----------+-------------------+------------+-----------------+------------+----------+--------------+
-| HardwareGroupID | Name            | Description                            | Cpu | MemoryGB | Status            | ServerType | OperatingSystem | PowerState | Location | IPAddress    |
-+-----------------+-----------------+----------------------------------------+-----+----------+-------------------+------------+-----------------+------------+----------+--------------+
-| 1003            | WA1BTDIJLVB01   | John  LAMP test platform               | 1   | 2        | Active            | 1          | 20              | Started    | WA1      | 10.80.146.15 |
-| 1045            | WA1BTDITEST15   | test                                   | 1   | 1        | Active            | 1          | 5               | Started    | WA1      | 10.81.0.17   |
-| 1798            | WA1BTDIWS005101 | demo server                            | 0   | 0        | Archived          | 1          | 7               | None       | WA1      | 10.80.146.54 |
-| 2487            | WA1BTDISUB01    | 1234                                   | 2   | 1        | Active            | 2          | 6               | Started    | WA1      | 10.80.146.36 |
-| 2487            | WA1BTDITESTCH01 | WA1BTDITESTCH01                        | 1   | 2        | Active            | 1          | 5               | Stopped    | WA1      | 10.80.146.30 |
-| 3728            | WA1BTDISAML0101 | My ADFS server                         | 1   | 4        | Active            | 1          | 5               | Stopped    | WA1      | 10.80.146.49 |
-| 3732            | IL1BTDITEST05   | first                                  | 0   | 0        | Archived          | 1          | 27              | None       | IL1      | 10.90.61.12  |
-| 3732            | IL1BTDITEST201  | first                                  | 0   | 0        | Archived          | 1          | 27              | None       | IL1      | 10.90.61.15  |
-| 4416            | WA1BTDITEST11   | test                                   | 1   | 1        | Active            | 1          | 7               | Started    | WA1      | 10.80.146.14 |
-| 5132            | CA2BTDIKLEBAN01 | Chris  Demo Server                     | 1   | 1        | Active            | 1          | 35              | Stopped    | CA2      | 10.55.60.14  |
-| 6559            | CA1BTDIMDA01    | Test for MDA                           | 0   | 0        | Active            | 1          | 28              | None       | CA1      |              |
-| 6559            | CA1BTDIMGDOS01  | Derek                                  | 2   | 4        | Active            | 1          | 38              | Started    | CA1      | 10.50.84.12  |
-| 6879            | DE1BTDITEST02   | apache test                            | 1   | 1        | UnderConstruction | 1          | 38              | Started    | DE1      | 10.110.81.13 |
-| 6884            | DE1BTDI2K1201   | windows 2012                           | 2   | 4        | Active            | 1          | 27              | Started    | DE1      | 10.110.81.12 |
-| 9261            | NY1BTDIPHYP0101 | Hyperscale server                      | 2   | 4        | Active            | 1          | 27              | Started    | NY1      | 10.70.171.13 |
-| 11703           | UC1BTDISERO2201 | Hyperscale Windows Server              | 2   | 4        | Active            | 1          | 28              | Started    | UC1      | 10.122.16.13 |
-| 11894           | VA1BTDIJMB02    | JMB Windows 2012                       | 2   | 16       | Active            | 1          | 28              | Stopped    | VA1      | 10.125.39.22 |
-| 11894           | VA1BTDISVMT101  | Test Server                            | 2   | 4        | Active            | 1          | 38              | Stopped    | VA1      | 10.125.39.15 |
-| 11894           | VA1BTDISVMT201  | Test Server 2                          | 2   | 16       | Active            | 1          | 27              | Stopped    | VA1      | 10.125.39.19 |
-| 11894           | VA1BTDITSDEMO01 | tsdemo                                 | 0   | 0        | Active            | 1          | 38              | None       | VA1      |              |
-| 17569           | CA3BTDIAPI01    |  API VM                                | 2   | 8        | Active            | 1          | 38              | Started    | CA3      | 10.100.75.12 |
-| 17569           | CA3BTDIKLEBAN01 | hadoop test                            | 1   | 2        | Active            | 1          | 30              | Stopped    | CA3      | 10.100.42.12 |
-| 20093           | VA1BTDIJMB01    | Redhat 6                               | 2   | 4        | Active            | 1          | 38              | Started    | VA1      | 10.125.39.13 |
-| 20220           | WA1BTDISQL06    | SQL Server                             | 4   | 15       | Active            | 1          | 5               | Paused     | WA1      | 10.80.146.18 |
-| 20220           | WA1BTDITSDEMO02 | Tyce Demo Server 2                     | 2   | 16       | Active            | 1          | 27              | Started    | WA1      | 10.80.148.13 |
-| 22279           | NY1BTDIWEB0101  | web app server                         | 2   | 4        | Active            | 1          | 28              | Started    | NY1      | 10.70.171.12 |
-| 22279           | NY1BTDIWEB0201  | Windows web server                     | 2   | 4        | Active            | 1          | 28              | Stopped    | NY1      | 10.70.171.14 |
-| 25730           | GB3BTDIJRDEMO01 | r @gmail.com                           | 11  | 99       | Active            | 1          | 38              | Stopped    | GB3      | 10.105.33.12 |
-| 27513           | IL1BTDIDC03     |                                        | 1   | 2        | Active            | 1          | 5               | Started    | IL1      | 10.90.61.13  |
-| 29770           | NY1BTDISERDEV01 | development environment                | 2   | 4        | Active            | 1          | 28              | Started    | NY1      | 10.70.239.12 |
-| 29770           | NY1BTDISERDEV02 | dev server                             | 2   | 4        | Active            | 1          | 28              | Started    | NY1      | 10.70.239.13 |
-| 31544           | IL1BTDIDC04     | Domain Controller                      | 1   | 2        | Active            | 1          | 5               | Started    | IL1      | 10.90.61.16  |
-| 32360           | IL1BTDIWEB104   |                                        | 1   | 2        | Active            | 1          | 28              | Started    | IL1      | 10.90.61.14  |
-| 33537           | IL1BTDIWEB105   |                                        | 1   | 2        | Active            | 1          | 28              | Stopped    | IL1      | 10.90.61.17  |
-+-----------------+-----------------+----------------------------------------+-----+----------+-------------------+------------+-----------------+------------+----------+--------------+
+
+```python
 ```
 
 #### Get
 Retrieve details on one or more servers.  Example below queries for two servers.
-```
-> clc --config config.ini servers get --server IL1BTDIWEB10{4,5}
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Successfully retrieved server
-✔  Successfully retrieved server
-+-----------------+---------------+-------------+-----+----------+--------+------------------+------------+-----------------+------------+----------+-------------+
-| HardwareGroupID | Name          | Description | Cpu | MemoryGB | Status | TotalDiskSpaceGB | ServerType | OperatingSystem | PowerState | Location | IPAddress   |
-+-----------------+---------------+-------------+-----+----------+--------+------------------+------------+-----------------+------------+----------+-------------+
-| 32360           | IL1BTDIWEB104 |             | 1   | 2        | Active | 60               | 1          | 28              | Started    | IL1      | 10.90.61.14 |
-| 33537           | IL1BTDIWEB105 |             | 1   | 2        | Active | 60               | 1          | 28              | Stopped    | IL1      | 10.90.61.17 |
-+-----------------+---------------+-------------+-----+----------+--------+------------------+------------+-----------------+------------+----------+-------------+
+
+```python
 ```
 
 #### Get Credentials
 Retrieve administrative credentials for specified server(s).  Easily specify alternate output formats or limit to just the password column using the global formatting options.
-```
-> clc --config config.ini servers get-credentials --server IL1BTDIWEB104
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Server credentials retrieved
-+---------------+------------------+
-| Username      | Password         |
-+---------------+------------------+
-| administrator | dsalkjsd9rw9pROq |
-+---------------+------------------+
+
+```python
 ```
 
 #### Create
 Create new server. Depending on command line options the command can return immediately or can display build status in real-time.  When build completes returns server name.
-```
-> clc --config config.ini servers create --name CLITST --group 'Default Group' --description 'CLI Test' --template RHEL-6-64-TEMPLATE --backup-level Standard --cpu 1 --ram 1 --network vlan_946_10.80.146
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Groups successfully listed.
-✔  Server queued for creation
-✔  Submitted for processing
-✔  Execution Started - 0:00:27
-[################                ] 50/100 - 00:00:43
-```
-Output once server build completes
-```
-...
-✔  Execution Started - 0:00:27
-✔  Execution Complete - 0:01:45
-✔  Execution Complete - 0:02:12
-+-----------------+
-| Server          |
-+-----------------+
-| WA1BTDICLITST01 |
-+-----------------+
+
+```python
 ```
 
 #### List Disks
 List all disks associated with the servere also querying the guest for disk names and mount points.
-```
-> clc --config config.ini servers list-disks --server WA1BTDICLITST01
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  OK
-+--------+-----------+--------------+--------+
-| Name   | ScsiBusID | ScsiDeviceID | SizeGB |
-+--------+-----------+--------------+--------+
-| (swap) | 0         | 1            | 2      |
-| /      | 0         | 2            | 14     |
-| /boot  | 0         | 0            | 1      |
-+--------+-----------+--------------+--------+
+
+```python
 ```
 
 #### Misc Asynchronous server operations
@@ -438,7 +312,7 @@ complete execute asynchronously and return a job ID.
 ```
 
 ### Groups
-Usaage
+Usage
 ```
 > clc --config config.ini groups
 usage: clc groups [-h] {pause,create,list,poweron,archive,delete} ...
