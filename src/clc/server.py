@@ -35,7 +35,7 @@ class Server:
 
 
 	@staticmethod
-	def GetServers(alias,location,group,name_groups=False):
+	def GetServers(location,group,alias=None,name_groups=False):
 		"""Gets a deep list of all Servers for a given Hardware Group and its sub groups, or all Servers for a given location.
 
 		https://t3n.zendesk.com/entries/21735513-Get-All-Servers

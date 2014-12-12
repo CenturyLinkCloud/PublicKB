@@ -259,22 +259,109 @@ Each template has a unique Int ID.  Given a name get this ID.
 ```
 
 #### List
-List all servers in the specified location or if none specified the primary location associated with the provided API credentials.
+List all servers in the specified location.
 
 ```python
-
+>>> clc.Server.GetServers(location='WA1',group=None,alias=None)
+[{u'Cpu': 2,
+  u'CustomFields': [],
+  u'DateModified': u'/Date(1418190460000)/',
+  u'Description': u'App server',
+  u'DiskCount': 1,
+  u'DnsName': u'wa1btdisub01',
+  u'HardwareGroupID': 2487,
+  u'ID': -1,
+  u'IPAddress': u'10.80.146.36',
+  u'IPAddresses': [{u'Address': u'10.80.136.13', u'AddressType': u'RIP'},
+                   {u'Address': u'10.80.136.36', u'AddressType': u'RIP'},
+                   {u'Address': u'64.93.174.20', u'AddressType': u'MIP'}],
+  u'InMaintenanceMode': False,
+  u'IsHyperscale': False,
+  u'IsTemplate': False,
+  u'Location': u'WA1',
+  u'MemoryGB': 1,
+  u'ModifiedBy': u'JoeSmith@example.com',
+  u'Name': u'WA1BTDISUB01',
+  u'OperatingSystem': 6,
+  u'PowerState': u'Started',
+  u'ServerType': 2,
+  u'ServiceLevel': 2,
+  u'Status': u'Active',
+  u'TotalDiskSpaceGB': 16},
+ {u'Cpu': 1,
+  u'CustomFields': [{u'CustomFieldID': -1,
+                     u'ID': u'88e35072c1e14d479e09fa4f60a401f0',
+                     u'Name': u'Cost Center',
+                     u'Type': u'Text',
+                     u'Value': u'IT-DEV'},
+                    {u'CustomFieldID': -1,
+                     u'ID': u'ed02166d55bc4ee4857b7ce248962dca',
+                     u'Name': u'CMDB ID',
+                     u'Type': u'Text',
+                     u'Value': u'1100003'}],
+  u'DateModified': u'/Date(1410821481000)/',
+  u'Description': u'Web server',
+  u'DiskCount': 1,
+  u'DnsName': None,
+  u'HardwareGroupID': 3728,
+  u'ID': -1,
+  u'IPAddress': u'10.80.146.49',
+  u'IPAddresses': [{u'Address': u'72.42.151.159', u'AddressType': u'MIP'},
+                   {u'Address': u'10.80.136.49', u'AddressType': u'RIP'},
+                   {u'Address': u'10.80.136.50', u'AddressType': u'RIP'}],
+  u'InMaintenanceMode': False,
+  u'IsHyperscale': False,
+  u'IsTemplate': False,
+  u'Location': u'WA1',
+  u'MemoryGB': 4,
+  u'ModifiedBy': u'JoeSmith@example.com',
+  u'Name': u'WA1BTDISAML0101',
+  u'OperatingSystem': 5,
+  u'PowerState': u'Stopped',
+  u'ServerType': 1,
+  u'ServiceLevel': 2,
+  u'Status': u'Active',
+  u'TotalDiskSpaceGB': 50}]
 ```
 
 #### List All
 Perform a deep list of all servers in all locations.
 
 ```python
+>>> clc.Server.GetAllServers(alias=None)
+.
+. (same output as above)
+.
 ```
 
 #### Get
-Retrieve details on one or more servers.  Example below queries for two servers.
+Retrieve details on one or more servers.
 
 ```python
+>>> clc.Server.GetServerDetails(alias=None, servers=['UC1BTDISERO2201',])
+[{u'Cpu': 2,
+  u'CustomFields': [],
+  u'DateModified': u'/Date(1413312404000)/',
+  u'Description': u'Hyperscale Windows Server',
+  u'DiskCount': 1,
+  u'DnsName': u'uc1btdisero2201',
+  u'HardwareGroupID': 11703,
+  u'ID': -1,
+  u'IPAddress': u'10.121.16.13',
+  u'IPAddresses': [{u'Address': u'10.121.16.13', u'AddressType': u'RIP'}],
+  u'InMaintenanceMode': False,
+  u'IsHyperscale': True,
+  u'IsTemplate': False,
+  u'Location': u'UC1',
+  u'MemoryGB': 4,
+  u'ModifiedBy': u'JoeSmith@example.com',
+  u'Name': u'UC1BTDISERO2201',
+  u'OperatingSystem': 28,
+  u'PowerState': u'Started',
+  u'ServerType': 1,
+  u'ServiceLevel': 2,
+  u'Status': u'Active',
+  u'TotalDiskSpaceGB': 60}]
 ```
 
 #### Get Credentials
