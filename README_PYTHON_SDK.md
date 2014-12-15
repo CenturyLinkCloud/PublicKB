@@ -84,7 +84,6 @@ Retrieves a list of all cloud datacenter locations accessible by provided creden
  {u'Alias': u'CA3', u'Region': u'Canada'},
  {u'Alias': u'GB3', u'Region': u'Europe'}]
 ```
-```
 
 #### Get Account Details
 Retrieves  details from specific alias or credentials default alias if none is provided.
@@ -149,7 +148,8 @@ List all users associated with the specified alias.
 
 #### Create User
 Create new user account and return account details.  Alias is optional.
-```
+
+```python
 >>> clc.User.CreateUser(user="test12665",email="JoeSmith@example.com",first_name="Joe",last_name="Smith",roles=["ServerAdministrator",],alias="BTDI")
 {u'AccountAlias': u'BTDI',
  u'AllowSMS': False,
@@ -458,57 +458,46 @@ complete execute asynchronously and return a job ID.
 ```
 
 ### Groups
-Usage
-```
-> clc --config config.ini groups
-usage: clc groups [-h] {pause,create,list,poweron,archive,delete} ...
+
+#### Get Group ID
+Lookup unique Int group ID given name.
+
+```python
+>>> clc.Group.GetGroupID(group="Default Group",alias=None,location=None)
+5132
 ```
 
 #### List
-List all groups in the specified datacenter or if none specified the primary location associated with the provided API credentials.
+List all groups in the specified datacenter or if None specified the primary location associated with the provided API credentials.
 ```
-> clc --config config.ini groups list --location WA1
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Groups successfully listed.
-+-------+---------------------------+----------+---------------+
-| ID    | Name                      | ParentID | IsSystemGroup |
-+-------+---------------------------+----------+---------------+
-| 837   | WA1 Hardware              | 557      | True          |
-| 1003  | Production                | 837      | False         |
-| 1045  | Development               | 837      | False         |
-| 1798  | Archive                   | 837      | True          |
-| 1799  | Templates                 | 837      | True          |
-| 2486  | Intranet Applications     | 837      | False         |
-| 2487  | Web Services              | 1003     | False         |
-| 3111  | AW Review                 | 2486     | False         |
-| 3728  | RLS Group                 | 2486     | False         |
-| 4416  | Default Group             | 837      | False         |
-| 5476  | Corporate IT              | 3728     | False         |
-| 5477  | Marketing                 | 5476     | False         |
-| 5478  | Operations                | 5476     | False         |
-| 5479  | Public Websites           | 5476     | False         |
-| 5480  | R&D                       | 5476     | False         |
-| 5481  | Shared Infrastructure     | 5476     | False         |
-| 5482  | Sales                     | 5476     | False         |
-| 5483  | Extranet                  | 5476     | False         |
-| 5484  | Collaboration             | 5483     | False         |
-+-------+---------------------------+----------+---------------+
+>>> clc.Group.GetGroups(alias=None,location='WA1')
+[{u'ID': 837,
+  u'IsSystemGroup': True,
+  u'Name': u'WA1 Hardware',
+  u'ParentID': 557},
+ {u'ID': 1798, u'IsSystemGroup': True, u'Name': u'Archive', u'ParentID': 837},
+ {u'ID': 4416,
+  u'IsSystemGroup': False,
+  u'Name': u'Default Group',
+  u'ParentID': 837},
+ {u'ID': 33853,
+  u'IsSystemGroup': False,
+  u'Name': u'Test dev',
+  u'ParentID': 4416},
+ {u'ID': 1045,
+  u'IsSystemGroup': False,
+  u'Name': u'Development',
+  u'ParentID': 837}]
 ```
 
 #### Create
-Create new group rooted under the specified parent group or if none is specified will be a top-level group in the specified location.  Like all longer-running calls this can be executed asynchronously (as in example below) which returns immediately with a job ID or it can be executed in real time.
+Create new group rooted under the specified parent group or if None is specified will be a top-level group in the specified location.  
 ```
-> clc --config config.ini groups create --location WA1 --group 'CLI Test' --description 'CLI Test Group'
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Groups successfully listed.
-✔  Group successfully created.
-+-------+----------+----------+
-| ID    | Name     | ParentID |
-+-------+----------+----------+
-| 33725 | CLI Test | 837      |
-+-------+----------+----------+
+>>> clc.Group.Create(group="Test Group",parent="WA1 Hardware",description='sdk test',alias=None,location='WA1')
+{u'ID': 34051,
+ u'IsSystemGroup': False,
+ u'Name': u'Test Group',
+ u'ParentID': 837}
 ```
 
 #### Pause

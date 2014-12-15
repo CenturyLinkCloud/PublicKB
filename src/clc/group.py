@@ -12,7 +12,7 @@ import clc
 class Group:
 
 	@staticmethod
-	def GetGroupID(alias,location,group):
+	def GetGroupID(group,alias=None,location=None):
 		"""Given a group name return the unique group ID.
 
 		:param alias: short code for a particular account.  If none will use account's default alias
@@ -20,6 +20,7 @@ class Group:
 		:param group: group name
 		"""
 		if alias is None:  alias = clc.Account.GetAlias()
+		if location is None:  location = clc.Account.GetLocation()
 		r = Group.GetGroups(alias,location)
 		for row in r:
 			if row['Name'] == group:  return(row['ID'])
@@ -47,7 +48,7 @@ class Group:
 
 
 	@staticmethod
-	def GetGroups(alias,location):
+	def GetGroups(location=None,alias=None):
 		"""Return all of alias' groups in the given location.
 
 		https://t3n.zendesk.com/entries/20979826-Get-Groups
@@ -56,13 +57,14 @@ class Group:
 		:param location: datacenter where group resides
 		"""
 		if alias is None:  alias = clc.Account.GetAlias()
+		if location is None:  location = clc.Account.GetLocation()
 		r = clc.API.v1_call('post','Group/GetGroups',{'AccountAlias': alias, 'Location': location})
 		for group in r['HardwareGroups']:  clc._GROUP_MAPPING[group['ID']] = group['Name']
 		if int(r['StatusCode']) == 0:  return(r['HardwareGroups'])
 
 
 	@staticmethod
-	def Create(alias,location,parent,group,description=''):
+	def Create(group,parent=None,description='',alias=None,location=None):
 		"""Creates a new group
 
 		https://t3n.zendesk.com/entries/20979861-Create-Hardware-Group
@@ -73,8 +75,9 @@ class Group:
 		:param descrption: optional group description
 		"""
 		if alias is None:  alias = clc.Account.GetAlias()
+		if location is None:  location = clc.Account.GetLocation()
 		if description is None: description = ''
-		# TODO - if no parent then assume default group "%s Hardware" % (location)
+		if parent is None:  parent = "%s Hardware" % (location)
 
 		parents_id = Group.GetGroupID(alias,location,parent)
 
@@ -84,7 +87,7 @@ class Group:
 
 
 	@staticmethod
-	def Delete(alias,location,group):
+	def Delete(group,alias=None,location=None):
 		"""Deletes the Hardware Group along with all child groups and servers.
 
 		https://t3n.zendesk.com/entries/20999933-Delete-Hardware-Group
@@ -94,6 +97,7 @@ class Group:
 		:param group: group name
 		"""
 		if alias is None:  alias = clc.Account.GetAlias()
+		if location is None:  location = clc.Account.GetLocation()
 		groups_id = Group.GetGroupID(alias,location,group)
 		r = clc.API.v1_call('post','Group/DeleteHardwareGroup',{'AccountAlias': alias, 'ID': groups_id})
 		if int(r['StatusCode']) == 0:  return(r)
