@@ -87,6 +87,23 @@ class Group:
 
 
 	@staticmethod
+	def _GroupActions(action,group,alias,location):
+		"""Applies group level actions.
+
+		:param action: the server action url to exec against
+		:param group: group name
+		:param alias: short code for a particular account.  If none will use account's default alias
+		:param location: datacenter location.  If none will use account's default alias
+		"""
+		if alias is None:  alias = clc.Account.GetAlias()
+		if location is None:  location = clc.Account.GetLocation()
+		groups_id = Group.GetGroupID(alias,location,group)
+
+		r = clc.API.v1_call('post','Group/%sHardwareGroup' % (action), {'ID': groups_id, 'AccountAlias': alias })
+		return(r)
+
+
+	@staticmethod
 	def Delete(group,alias=None,location=None):
 		"""Deletes the Hardware Group along with all child groups and servers.
 
@@ -96,15 +113,11 @@ class Group:
 		:param location: datacenter where group resides
 		:param group: group name
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		if location is None:  location = clc.Account.GetLocation()
-		groups_id = Group.GetGroupID(alias,location,group)
-		r = clc.API.v1_call('post','Group/DeleteHardwareGroup',{'AccountAlias': alias, 'ID': groups_id})
-		if int(r['StatusCode']) == 0:  return(r)
+		return(Group._GroupActions("Delete",group,alias,location))
 
 
 	@staticmethod
-	def Pause(alias,location,group):
+	def Pause(group,alias=None,location=None):
 		"""Pauses the Hardware Group along with all child groups and servers.
 
 		https://t3n.zendesk.com/entries/20996052-Pause-Hardware-Group
@@ -113,14 +126,11 @@ class Group:
 		:param location: datacenter where group resides
 		:param group: group name
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		groups_id = Group.GetGroupID(alias,location,group)
-		r = clc.API.v1_call('post','Group/PauseHardwareGroup',{'AccountAlias': alias, 'ID': groups_id})
-		if int(r['StatusCode']) == 0:  return(r)
+		return(Group._GroupActions("Pause",group,alias,location))
 
 
 	@staticmethod
-	def Poweron(alias,location,group):
+	def Poweron(group,alias=None,location=None):
 		"""Powers on the Hardware Group along with all child groups and servers.
 
 		https://t3n.zendesk.com/entries/20996102-Power-On-Hardware-Group
@@ -129,14 +139,11 @@ class Group:
 		:param location: datacenter where group resides
 		:param group: group name
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		groups_id = Group.GetGroupID(alias,location,group)
-		r = clc.API.v1_call('post','Group/PoweronHardwareGroup',{'AccountAlias': alias, 'ID': groups_id})
-		if int(r['StatusCode']) == 0:  return(r)
+		return(Group._GroupActions("Poweron",group,alias,location))
 
 
 	@staticmethod
-	def Archive(alias,location,group):
+	def Archive(group,alias=None,location=None):
 		"""Archives the Hardware Group along with all child groups and servers.
 
 		https://t3n.zendesk.com/entries/21004506-Archive-Hardware-Group
@@ -145,10 +152,7 @@ class Group:
 		:param location: datacenter where group resides
 		:param group: group name
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		groups_id = Group.GetGroupID(alias,location,group)
-		r = clc.API.v1_call('post','Group/ArchiveHardwareGroup',{'AccountAlias': alias, 'ID': groups_id})
-		if int(r['StatusCode']) == 0:  return(r)
+		return(Group._GroupActions("Archive",group,alias,location))
 
 
 	# TODO - cannot find groups ID since not listed for archived groups

@@ -492,7 +492,8 @@ List all groups in the specified datacenter or if None specified the primary loc
 
 #### Create
 Create new group rooted under the specified parent group or if None is specified will be a top-level group in the specified location.  
-```
+
+```python
 >>> clc.Group.Create(group="Test Group",parent="WA1 Hardware",description='sdk test',alias=None,location='WA1')
 {u'ID': 34051,
  u'IsSystemGroup': False,
@@ -500,65 +501,34 @@ Create new group rooted under the specified parent group or if None is specified
  u'ParentID': 837}
 ```
 
-#### Pause
-Pause all servers in the specified group and its sub-groups.
-```
-> clc --async --config config.ini groups pause --location WA1 --group 'CLI Test'
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Groups successfully listed.
-✔  Group queued for pause
-+-----------+------------+------------------------+
-| RequestID | StatusCode | Message                |
-+-----------+------------+------------------------+
-| 122271    | 0          | Group queued for pause |
-+-----------+------------+------------------------+
+#### Misc Asynchronous group operations
+These asynchronous operations can be run on the specified group.  Currently implemented are:
+*pause, delete, archive, poweron*.  Rather than waiting for process to complete executes asynchronously 
+and returns a job ID.
+
+```python
+>>> clc.Group.Pause(group="Test Group",alias=None,location='WA1')
+{u'Message': u'Group queued for pause',
+ u'RequestID': 123909,
+ u'StatusCode': 0,
+ u'Success': True}
+>>> clc.Group.Poweron(group="Test Group",alias=None,location='WA1')
+{u'Message': u'Group queued for power on',
+ u'RequestID': 123910,
+ u'StatusCode': 0,
+ u'Success': True}
+>>> clc.Group.Archive(group="Test Group",alias=None,location='WA1')
+{u'Message': u'Group queued for archive',
+ u'RequestID': 123911,
+ u'StatusCode': 0,
+ u'Success': True}
+>>> clc.Group.Delete(group="Test Group",alias=None,location='WA1')
+{u'Message': u'Group successfully queued for deletion.',
+ u'RequestID': 123912,
+ u'StatusCode': 0,
+ u'Success': True}
 ```
 
-#### Poweron
-Power on all servers in the specified group and its sub-groups.
-```
-> clc --async --config config.ini groups poweron --location WA1 --group 'CLI Test'
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Groups successfully listed.
-✔  Group queued for power on
-+-----------+------------+---------------------------+
-| RequestID | StatusCode | Message                   |
-+-----------+------------+---------------------------+
-| 122270    | 0          | Group queued for power on |
-+-----------+------------+---------------------------+
-```
-
-#### Archive
-Archive all servers in specified group and sub-groups.
-```
-> clc --async --config config.ini groups archive --location WA1 --group 'CLI Test'
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Groups successfully listed.
-✔  Group queued for archive
-+-----------+------------+--------------------------+
-| RequestID | StatusCode | Message                  |
-+-----------+------------+--------------------------+
-| 122272    | 0          | Group queued for archive |
-+-----------+------------+--------------------------+
-```
-
-#### Delete
-Delete the specified group and all associated servers.
-```
-> clc --async --config config.ini groups delete --location WA1 --group 'CLI Test'
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Groups successfully listed.
-✔  Group successfully queued for deletion.
-+-----------+------------+-----------------------------------------+
-| RequestID | StatusCode | Message                                 |
-+-----------+------------+-----------------------------------------+
-| 122273    | 0          | Group successfully queued for deletion. |
-+-----------+------------+-----------------------------------------+
-```
 
 ### Billing
 Usage
