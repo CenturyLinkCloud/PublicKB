@@ -28,7 +28,7 @@ class Blueprint:
 
 
 	@staticmethod
-	def GetStatus(request_id,location,alias,silent=False):
+	def GetStatus(request_id,location=None,alias=None,silent=False):
 		"""Gets the status of the specified Blueprint deployment.
 
 		https://t3n.zendesk.com/entries/20561586-Get-Deployment-Status
@@ -38,6 +38,8 @@ class Blueprint:
 		:param location: datacenter where group resides
 		:param silent: disable status output when executed within CLI runtime
 		"""
+		if alias is None:  alias = clc.Account.GetAlias()
+		if location is None:  location = clc.Account.GetLocation()
 		r = clc.API.v1_call('post','Blueprint/GetBlueprintStatus',{'AccountAlias': alias, 'RequestID': request_id, 'LocationAlias': location },silent=silent)
 		if int(r['StatusCode']) == 0:  return(r)
 

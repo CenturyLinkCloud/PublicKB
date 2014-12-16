@@ -684,27 +684,92 @@ List items in the work queue.  Specify a type to filter the list (All, Pending, 
 
 ### Blueprints
 
+#### List Status of Currently Executing Blueprint
+Given a request ID get real-time status on blueprint deployment.  Throughout the deployment cycle data within the response will
+very as more is known (e.g. server names are unavailable until assigned shortly after execution begins).
+
+```python
+>>> clc.Blueprint.GetStatus(request_id=124091,location='WA1',alias='BTDI',silent=False)
+{u'CurrentStatus': u'NotStarted',
+ u'Description': u'Submitted for processing',
+ u'Message': u'Success',
+ u'PercentComplete': 0,
+ u'RequestID': 124091,
+ u'Servers': [],
+ u'StatusCode': 0,
+ u'StatusDate': u'/Date(1418757403520)/',
+ u'Step': u'0',
+ u'Success': True}
+
+>>> clc.Blueprint.GetStatus(request_id=124091,location='WA1',alias='BTDI',silent=False)
+{u'CurrentStatus': u'Executing',
+ u'Description': u'Execution Started',
+ u'Message': u'Success',
+ u'PercentComplete': 33,
+ u'RequestID': 124091,
+ u'Servers': [u'WA1BTDIKEITH01'],
+ u'StatusCode': 0,
+ u'StatusDate': u'/Date(1418757422287)/',
+ u'Step': u'1',
+ u'Success': True}
+
+>>> clc.Blueprint.GetStatus(request_id=124091,location='WA1',alias='BTDI',silent=False)
+{u'CurrentStatus': u'Failed',
+ u'Description': u'Error Building Blueprint',
+ u'Message': u'Success',
+ u'PercentComplete': 77,
+ u'RequestID': 124091,
+ u'Servers': [u'WA1BTDIKEITH01'],
+ u'StatusCode': 0,
+ u'StatusDate': u'/Date(1418757923657)/',
+ u'Step': u'0',
+ u'Success': True}
+```
+
 #### List System, Software, and Script Packages
 List all packages in inventory, optionally filtering by package classification (System, Script, Software) and visibility (Public, Private, Shared).
 
 ```python
+>>> clc.Blueprint.GetAllSystemPackages()
+[{u'Classification': 1,
+  u'ID': 2,
+  u'Name': u'Add Disk',
+  'Visibility': 'Public'},
+ {u'Classification': 1,
+  u'ID': 5,
+  u'Name': u'Snapshot Server',
+  'Visibility': 'Public'}]
+
+>>> clc.Blueprint.GetAllScriptsPackages()
+
+>>> clc.Blueprint.GetAllSoftwarePackages()
 ```
 
 #### Package Upload
 Upload properly formatted package zip file using the ftp credentials provided in the command line or the configuration file.
 
 ```python
+>>> clc.Blueprint.PackageUpload('uploadtest.zip','ftp://user:passwd@ftpserver'))
+{}
 ```
 
 #### Listing Pending Packages
 List all packages which have been uploaded but not yet submitted for publishing.
 
 ```python
+>>> clc.Blueprint.GetPendingPackages()
+[{u'Classification': 0, u'ID': 0, u'Name': u'param2.zip'},
+ {u'Classification': 0, u'ID': 0, u'Name': u'uploadtest.zip'}]
 ```
 
 #### Package Publish
 Publish the specified package.  Specify clasification (Script, Software), visibility (Public, Private, Shared) and optionally one or more supported operating systems.  If no operating systems listed will allow selection of prefered OS.
 
 ```python
+>>> clc.Blueprint.PackagePublish(package='uploadtest.zip',classification='Script',visibility='Private',os=[30,])
+{u'Message': u'Success',
+ u'RequestID': 124094,
+ u'StatusCode': 0,
+ u'Success': True}
 ```
 
