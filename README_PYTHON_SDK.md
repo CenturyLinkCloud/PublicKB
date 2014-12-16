@@ -531,86 +531,79 @@ and returns a job ID.
 
 
 ### Billing
-Usage
-```
-> clc --async --config config.ini billing
-usage: clc billing [-h] {account-summary,group-estimate,server-estimate,group-summaries}  ...
-```
 
 #### Account Summary
 Return current billing summary for account.
-```
-clc --async --config config.ini billing account-summary
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  OK
-+----------------+--------------+-----------------+-------------+--------------+
-| OneTimeCharges | MonthToDate  | MonthlyEstimate | CurrentHour | PreviousHour |
-+----------------+--------------+-----------------+-------------+--------------+
-| 0              | 1207.2062446 | 4483.5507101    | 5.0020501   | 5.0020501    |
-+----------------+--------------+-----------------+-------------+--------------+
+
+```python
+>>> clc.Billing.GetAccountSummary(alias='BTDI')
+{u'CurrentHour': 4.4367719,
+ u'Message': u'OK',
+ u'MonthToDate': 2592.1229057,
+ u'MonthToDateTotal': 2592.1229057,
+ u'MonthlyEstimate': 4211.5525992,
+ u'OneTimeCharges': 0,
+ u'PreviousHour': 4.4367719,
+ u'StatusCode': 0,
+ u'Success': True}
 ```
 
 #### Group Summaries
-Return group-level billing summaries. Optionally specifiy a start and end date to filter the summation term.
-```
-> clc --async --config config.ini billing group-summaries  --date-start 2014-01-01
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Ok
-+-------------------------+---------------+-----------------+-------------+-------------+
-| GroupName               | LocationAlias | MonthlyEstimate | MonthToDate | CurrentHour |
-+-------------------------+---------------+-----------------+-------------+-------------+
-| Corporate IT            | WA1           | 0.09            | 0.09        | 0.0         |
-| DAF Groups              | WA1           | 45.56           | 45.56       | 0.12263     |
-| Default Group           | CA1           | 160.93          | 160.93      | 0.63197     |
-| Default Group           | GB1           | 1119.64         | 1119.64     | 0.0         |
-| Default Group           | UC1           | 4.33            | 4.33        | 0.0         |
-| Default Group           | UT1           | 186.97          | 186.97      | 0.0         |
-| Default Group           | VA1           | 17.5            | 17.5        | 0.0         |
-| Default Group           | WA1           | 941.47          | 941.47      | 0.17279     |
-| Demo                    | CA1           | 881.05          | 881.05      | 0.99856     |
-| Demo                    | CA2           | 1675.73         | 1675.73     | 0.5484      |
-| Development             | WA1           | 402.84          | 402.84      | 0.05672     |
-| Exchange                | CA2           | 77.88           | 77.88       | 0.0         |
-| HYPERSCALE              | NY1           | 1.47            | 1.47        | 0.0         |
-| Highly Available System | CA1           | 88.14           | 88.14       | 0.0         |
-| Highly Available System | CA2           | 25.72           | 25.72       | 0.0         |
-| VM Perf Test            | NY1           | 320.55          | 320.55      | 0.0         |
-| Web Applications        | WA1           | 340.46          | 340.46      | 0.1768      |
-| Web Services            | WA1           | 408.04          | 408.04      | 0.0         |
-| tr-test                 | CA2           | 2.21            | 2.21        | 0.04336     |
-+-------------------------+---------------+-----------------+-------------+-------------+
+Return group-level billing summaries. Optionally specifiy a start and end date (YYYY-MM-DD) to filter the summation term.
+If None specified returns summary beginning with first day of current month ending on the current date.
+
+```python
+>>> clc.Billing.GetGroupSummaries(alias='BTDI',date_start='2014-01-01',date_end=None)
+[{u'CurrentHour': 0.1038,
+  u'GroupID': 4416,
+  u'GroupName': u'Default Group',
+  u'LocationAlias': u'WA1',
+  u'MonthToDate': 941.47,
+  u'MonthlyEstimate': 941.47,
+  u'ServerTotals': [{u'CurrentHour': 0.0,
+                     u'MonthToDate': 302.15,
+                     u'MonthlyEstimate': 302.15,
+                     u'ServerName': u'WA1BTDITEST11'}]},
+ {u'CurrentHour': 0.401,
+  u'GroupID': 1003,
+  u'GroupName': u'Production',
+  u'LocationAlias': u'VA1',
+  u'MonthToDate': 3147.62,
+  u'MonthlyEstimate': 3147.62,
+  u'ServerTotals': [{u'CurrentHour': 0.0,
+                     u'MonthToDate': 866.0,
+                     u'MonthlyEstimate': 866.0,
+                     u'ServerName': u'VA1BTDIAPITST58'}]}]
 ```
 
 #### Group Estimate
 Group-level estimate of current run rate for specified group.
-```
-> clc --async --config config.ini billing group-estimate --group 'Default Group'
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Groups successfully listed.
-✔  OK
-+-------------+--------------+-----------------+-------------+
-| MonthToDate | PreviousHour | MonthlyEstimate | CurrentHour |
-+-------------+--------------+-----------------+-------------+
-| 2.54        | 0            | 21.26           | 0.02857     |
-+-------------+--------------+-----------------+-------------+
+
+```python
+>>> clc.Billing.GetGroupEstimate(group='Default Group',alias='BTDI',location='WA1')
+{u'CurrentHour': 0.00357,
+ u'Message': u'OK',
+ u'MonthToDate': 6.58,
+ u'MonthlyEstimate': 7.88,
+ u'PreviousHour': 0,
+ u'StatusCode': 0,
+ u'Success': True}
 ```
 
 #### Server Estimate
 Server-level estimate of current run rate for specified server.
+
+```python
+>>> clc.Billing.GetServerEstimate(server='IL1BTDIWEB104',alias='BTDI')
+{u'CurrentHour': 0.0926,
+ u'Message': u'OK',
+ u'MonthToDate': 35.1,
+ u'MonthlyEstimate': 68.89,
+ u'PreviousHour': 0,
+ u'StatusCode': 0,
+ u'Success': True}
 ```
-> clc --config config.ini billing server-estimate --server IL1BTDIWEB104
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  OK
-+-------------+--------------+-----------------+-------------+
-| MonthToDate | PreviousHour | MonthlyEstimate | CurrentHour |
-+-------------+--------------+-----------------+-------------+
-| 8.33        | 0            | 68.89           | 0.0926      |
-+-------------+--------------+-----------------+-------------+
-```
+
 
 ### Networks
 Usage:
