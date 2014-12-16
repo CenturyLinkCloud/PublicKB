@@ -606,214 +606,105 @@ Server-level estimate of current run rate for specified server.
 
 
 ### Networks
-Usage:
-```
-> clc --config config.ini networks
-usage: clc networks [-h] {list,get} ...
-```
 
 #### List
-List networks associated with the specified location or if none is specified will be a top-level group in the specified location.
-```
-> clc --config config.ini networks list --location WA1
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Networks successfully queried.
-+--------------------+------------------------------------+-------------+
-| Name               | Description                        | Gateway     |
-+--------------------+------------------------------------+-------------+
-| vlan_946_10.80.146 | Web server network (946_10.80.146) | 10.80.146.1 |
-| vlan_948_10.80.148 | vlan_948_10.80.148                 | 10.80.148.1 |
-+--------------------+------------------------------------+-------------+
+
+List networks associated with the specified location or if None is specified will be a top-level group in the specified location.
+```python
+>>> clc.Network.GetNetworks(alias='BTDI')
+[{u'AccountAlias': u'BTDI',
+  u'Description': u'Web server network (946_10.80.144)',
+  u'Gateway': u'10.80.144.1',
+  u'Location': u'WA1',
+  u'Name': u'vlan_946_10.80.144'},
+ {u'AccountAlias': u'BTDI',
+  u'Description': u'vlan_948_10.80.146',
+  u'Gateway': u'10.80.146.1',
+  u'Location': u'WA1',
+  u'Name': u'vlan_948_10.80.146'}]
 ```
 
 #### Get
 Retrieve IP allocation summary for specied network.
-```
-> clc --config config.ini networks get --location WA1 --network vlan_946_10.80.146
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Network details successfully queried.
-+----------------+-------------+-----------+-----------------+
-| Address        | AddressType | IsClaimed | ServerName      |
-+----------------+-------------+-----------+-----------------+
-| 10.80.146.100  | RIP         | False     | None            |
-| 10.80.146.101  | RIP         | False     | None            |
-| 10.80.146.102  | RIP         | False     | None            |
-| 10.80.146.103  | RIP         | False     | None            |
-...
-| 64.94.114.20   | MIP         | True      | WA1BTDISUB01    |
-| 66.150.160.42  | MIP         | True      | WA1BTDIJLVB01   |
-| 66.150.174.154 | MIP         | True      | WA1BTDIJLVB01   |
-| 66.150.174.237 | VIP         | True      | None            |
-| 66.150.174.35  | VIP         | True      | None            |
-| 70.42.161.159  | MIP         | True      | WA1BTDISAML0101 |
-| 70.42.161.165  | MIP         | True      | WA1BTDIJLVB01   |
-+----------------+-------------+-----------+-----------------+
+
+```python
+>>> pprint.pprint(clc.Network.GetNetworkDetails(alias='BTDI',network='vlan_948_10.80.148'))
+[{u'Address': u'66.150.174.123',
+  u'AddressType': u'MIP',
+  u'IsClaimed': True,
+  u'ServerName': u'WA1BTDITSDEMO02'},
+ {u'Address': u'10.80.146.12',
+  u'AddressType': u'RIP',
+  u'IsClaimed': True,
+  u'ServerName': u'WA1BTDIUBUNTU02'},
+ .
+ .
+ .
+ {u'Address': u'10.80.146.228',
+  u'AddressType': u'RIP',
+  u'IsClaimed': False,
+  u'ServerName': None},
+ {u'Address': u'10.80.146.229',
+  u'AddressType': u'RIP',
+  u'IsClaimed': False,
+  u'ServerName': None}]
 ```
 
 ### Queue
-Usage:
-```
-> clc --config config.ini queue
-usage: clc queue [-h] {list} ...
-```
 
 #### List
-List items in the work queue.  Specify a type to filter the list.
-```
-> clc --config config.ini queue list --type Pending
-✔  Logged into v1 API
-✔  1 Queue requests were found for your account
-+-----------+-----------------------------+--------------+---------------+------------+-----------------+
-| RequestID | RequestTitle                | ProgressDesc | CurrentStatus | StepNumber | PercentComplete |
-+-----------+-----------------------------+--------------+---------------+------------+-----------------+
-| 15567     | WA1BTDIDB03 (via Blueprint) | Run Sysprep  | Executing     | 10         | 45              |
-+-----------+-----------------------------+--------------+---------------+------------+-----------------+
+List items in the work queue.  Specify a type to filter the list (All, Pending, Complete, or Error)
+
+```python
+>>> clc.Queue.List(type='Error')
+[{u'CurrentStatus': u'Failed',
+  u'PercentComplete': 50,
+  u'ProgressDesc': u'Unexpected error while processing the request.',
+  u'RequestID': 37847,
+  u'RequestTitle': u"Delete cross data center firewall policy '290' between 10.80.146.0/24 and 10.91.124.0/24.",
+  u'StatusDate': u'/Date(1417239472590)/',
+  u'StepNumber': 1},
+ {u'CurrentStatus': u'Failed',
+  u'PercentComplete': 0,
+  u'ProgressDesc': u'ERROR: Power On Server',
+  u'RequestID': 20327,
+  u'RequestTitle': u'Power On Server: WA1BTDIDJB101',
+  u'StatusDate': u'/Date(1326494970980)/',
+  u'StepNumber': 1}]
+
+>>> clc.Queue.List(type='Pending')
+[{u'CurrentStatus': u'Executing',
+  u'PercentComplete': 45,
+  u'ProgressDesc': u'Run Sysprep',
+  u'RequestID': 15567,
+  u'RequestTitle': u'WA1BTDIDB03 (via Blueprint)',
+  u'StatusDate': u'/Date(1314169350723)/',
+  u'StepNumber': 10}]
 ```
 
 ### Blueprints
-Usage:
-```
-> clc --config config.ini blueprints
-usage: clc blueprints [-h] {list-system,list-software,list,package-upload,package-publish,list-pending,list-scripts} ...
-```
-
 
 #### List System, Software, and Script Packages
 List all packages in inventory, optionally filtering by package classification (System, Script, Software) and visibility (Public, Private, Shared).
+
+```python
 ```
-> clc --config config.ini blueprints list-system
-✔  Logged into v1 API
-✔  Success
-✔  Success
-✔  Success
-+-------+-----------------------+------------+
-| ID    | Name                  | Visibility |
-+-------+-----------------------+------------+
-| 2     | Add Disk              | Public     |
-| 3     | Add IP Address        | Public     |
-| 4     | Add Public IP Address | Public     |
-| 5     | Snapshot Server       | Public     |
-| 6     | Reboot Server         | Public     |
-| 10210 | Revert Snapshot       | Public     |
-| 10211 | Delete Snapshot       | Public     |
-| 10468 | Add Raw Disk          | Public     |
-+-------+-----------------------+------------+
-```
+
 #### Package Upload
 Upload properly formatted package zip file using the ftp credentials provided in the command line or the configuration file.
-```
-> clc --config config.ini blueprints package-upload --package /home/resark/t/uploadtest.zip \
-           --ftp 'ftp://username:password@FTP-CA1.tier3.com'
-✔  Blueprint package uploadtest.zip Uploaded
+
+```python
 ```
 
 #### Listing Pending Packages
 List all packages which have been uploaded but not yet submitted for publishing.
-```
-> clc --config config.ini blueprints list-pending
-✔  Logged into v1 API
-✔  Success
-+-----------------+
-| Name            |
-+-----------------+
-| uploadtest.zip  |
-+-----------------+
+
+```python
 ```
 
 #### Package Publish
 Publish the specified package.  Specify clasification (Script, Software), visibility (Public, Private, Shared) and optionally one or more supported operating systems.  If no operating systems listed will allow selection of prefered OS.
-```
->  clc --config config.ini blueprints package-publish --type Script --visibility Private --package uploadtest.zip
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  Successfully retrieved templates
-✔  Selected operating system IDs: 25 38
-✔  Success
-+-----------+------------+---------+
-| RequestID | StatusCode | Message |
-+-----------+------------+---------+
-| 14097     | 0          | Success |
-+-----------+------------+---------+
-```
 
-### Global Options
-
-#### --async
-All long running operations return a work ID from the API rather than an immediate result.  Using the --async option ends CLI execution once the request has been successfully submitted and returns this work ID.  Default behavior is synchronous where the CLI will wait for the submitted job to complete and display any applicable results before terminating.  Where supported this is animated with a progress bar.
-
-#### --format {json,table,text,csv}
-The fault output format uses hunan readable tables.  If the number of columns is too wide for the console screen this moves to a one key per for format as demonstrated below.
-```
-> clc --config config.ini users get --user test345
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  User successfully located.
-
-  ******************* 1. ********************
-               UserName:  test345
-           MobileNumber:  None
-               AllowSMS:  False
-           SAMLUserName:  None
-                 Status:  Active
-                  Roles:  []
-              FirstName:  dave
-                  Title:  None
-               LastName:  b
-           OfficeNumber:  None
-              FaxNumber:  None
-             TimeZoneID:  Pacific Standard Time
-           AccountAlias:  BTDI
-           EmailAddress:  test@example.com
-  AlternateEmailAddress:  None
-  
-> clc --cols UserName AccountAlias --config config.ini users get --user test345
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  User successfully located.
-+----------+--------------+
-| UserName | AccountAlias |
-+----------+--------------+
-| test345  | BTDI         |
-+----------+--------------+
-```
-
-JSON, plain text, and CSV options are also available.
-```
-> clc --cols UserName AccountAlias --format json --config config.ini users get --user test345
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  User successfully located.
-['UserName', 'AccountAlias']
-[{u'UserName': u'test345', u'AccountAlias': u'BTDI'}]
-
-> clc --cols UserName AccountAlias --format text --config config.ini users get --user test345
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  User successfully located.
-test345	BTDI
-
-> clc --cols UserName AccountAlias --format csv --config config.ini users get --user test345
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  User successfully located.
-UserName,AccountAlias
-test345,BTDI
-111
-```
-
-#### -cols [COL [COL ...]] - Include only specific columns in the output
-By default almost all columns reoturned by the API are included in the response.  Use this option to filter the columns that are displayed.
-```
-> clc --cols UserName AccountAlias --config config.ini users get --user test345
-✔  Logged into v1 API
-✔  Accounts successfully queried.
-✔  User successfully located.
-+----------+--------------+
-| UserName | AccountAlias |
-+----------+--------------+
-| test345  | BTDI         |
-+----------+--------------+
+```python
 ```
 
