@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: clc-sdk
+Version: 1.0
+Summary: CenturyLink Cloud SDK and CLI
+Home-page: https://github.com/CenturyLinkCloud/clc-python-sdk
+Author: Keith Resar
+Author-email: Keith.Resar@CenturyLinkCloud.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: CenturyLink Cloud SDK CLI
+Platform: UNKNOWN
