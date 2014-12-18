@@ -1,3 +1,0 @@
-[console_scripts]
-clc = clc.cli:main
-
