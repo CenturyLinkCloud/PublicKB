@@ -31,6 +31,8 @@ is provided the SDK will automatically select the appropriate version of the API
 
 ### Accounts
 
+[Account pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.account.html)
+
 #### Default Alias and Location
 Each API token is associated with a specific account alias and each alias has a primary datacenter location.
 Get the default alias and location with these calls.  These calls are often made within the SDK itself in
@@ -108,6 +110,8 @@ Retrieves  details from specific alias or credentials default alias if none is p
 ```
 
 ### Users
+
+[User pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.user.html)
 
 #### List Users
 List all users associated with the specified alias.
@@ -225,6 +229,8 @@ None
 ```
 
 ### Servers
+
+[Server pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.server.html)
 
 #### Templates
 List all templates available from the specified location or if Nnone specified the primary location associated with the provided API credentials.  These include system templates (available globally) and customer created templates (available in the location where they were created).
@@ -459,6 +465,8 @@ complete execute asynchronously and return a job ID.
 
 ### Groups
 
+[Groups pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.group.html)
+
 #### Get Group ID
 Lookup unique Int group ID given name.
 
@@ -531,6 +539,8 @@ and returns a job ID.
 
 
 ### Billing
+
+[Billing pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.billing.html)
 
 #### Account Summary
 Return current billing summary for account.
@@ -606,6 +616,8 @@ Server-level estimate of current run rate for specified server.
 
 
 ### Networks
+
+[Network pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.network.html)
 
 #### List
 
@@ -683,6 +695,8 @@ List items in the work queue.  Specify a type to filter the list (All, Pending, 
 ```
 
 ### Blueprints
+
+[Blueprint pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.blueprint.html)
 
 #### List Status of Currently Executing Blueprint
 Given a request ID get real-time status on blueprint deployment.  Throughout the deployment cycle data within the response will
