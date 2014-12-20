@@ -1,3 +1,12 @@
+---
+title: Configuring System Notification Emails on the CenturyLink Cloud Platform
+author: Joe Smith
+tags:
+  - four
+  - five
+date: 7-10-2014
+---
+
 ##Configuring System Notification Emails on the CenturyLink Cloud Platform
 
 ####Description (goal/purpose)

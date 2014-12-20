@@ -1,3 +1,12 @@
+---
+title: Supported Browsers for the CenturyLink Cloud Control Portal
+author: Joe Smith
+tags:
+  - four
+  - five
+date: 7-10-2014
+---
+
 # Supported Browsers for the CenturyLink Cloud Control Portal
 
 The CenturyLink Cloud Control Portal is designed to work consistently across all major web browsers. We officially support:

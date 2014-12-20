@@ -1,3 +1,12 @@
+---
+title: Cloud Server Instance Size and Performance
+author: Joe Smith
+tags:
+  - four
+  - five
+date: 7-10-2014
+---
+
 ##Cloud Server Instance Size and Performance
 The CenturyLink Cloud Platform does not offer predefined "instance types" but rather, lets users provision servers with any combination of resources they want. The platform is designed to deliver predictable performance for each machine regardless of size and data center. Costs are incurred hourly and based on the amount of CPU, memory and storage resources allocated.
 

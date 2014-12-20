@@ -1,13 +1,43 @@
-#CenturyLink Cloud Quick Start GuideThis document describes how to utilize the basic functions of the CenturyLink Cloud (CLC).
-**This document include an overview of the Control Portal as well as instructions on how to:**
-* Deploy Windows and Linux-based servers* Manage servers
-* Connect existing systems to CenturyLink Cloud* Manage users within the Control Portal
-**Overview of the Control Portal**
-The Control Portal ([https://control.tier3.com](https://control.tier3.com)) is a web-based graphical interface for managing CenturyLink Cloud(CLC) services. Once you login, your account’s Dashboard page will be displayed – which includes:
-* A billing summary* List of available CLC data centers and any of your corresponding resource metrics associated to each datacenter* Network bandwidth utilization* List of Upcoming Events your organization has pending (e.g., server reboot scheduling)* An activity log of recent actions completed within your account on the platformScrolling back to the top of the Dashboard is a black bar that contains (from left to right):* Your user ID’s Profile page. NOTE: If you should ever contact our NOC they will ask you to verify youridentity by providing your unique PIN number that is listed within the Profile this page* The “?” will display options to: search are very extensive knowledge base articles, email our NOC, submita feature request, and/or chat with our NOC* The search window provides customers the ability to search for virtual machines and/or associatedmetadata about systems provisioned within your account.
-Beneath the black bar you will see a green bar, and hovering your mouse over this bar will display following services:
-￼￼{EMBEDDED IMAGES}
-* **Servers.** Provision and manage virtual machines (VMs). Create alerts, autoscale policies, and anti-affinity pools.
+---
+title: CenturyLink Cloud Quick Start Guide
+author: Joe Smith
+tags:
+  - four
+  - five
+date: 7-10-2014
+---
+
+#CenturyLink Cloud Quick Start Guide
+This document describes how to utilize the basic functions of the CenturyLink Cloud (CLC).
+
+**This document include an overview of the Control Portal as well as instructions on how to:**
+* Deploy Windows and Linux-based servers
+* Manage servers
+* Connect existing systems to CenturyLink Cloud
+* Manage users within the Control Portal
+
+**Overview of the Control Portal**
+
+The Control Portal ([https://control.tier3.com](https://control.tier3.com)) is a web-based graphical interface for managing CenturyLink Cloud
+(CLC) services. Once you login, your account’s Dashboard page will be displayed – which includes:
+
+* A billing summary
+* List of available CLC data centers and any of your corresponding resource metrics associated to each data
+center
+* Network bandwidth utilization
+* List of Upcoming Events your organization has pending (e.g., server reboot scheduling)
+* An activity log of recent actions completed within your account on the platform
+Scrolling back to the top of the Dashboard is a black bar that contains (from left to right):
+* Your user ID’s Profile page. NOTE: If you should ever contact our NOC they will ask you to verify your
+identity by providing your unique PIN number that is listed within the Profile this page
+* The “?” will display options to: search are very extensive knowledge base articles, email our NOC, submit
+a feature request, and/or chat with our NOC
+* The search window provides customers the ability to search for virtual machines and/or associated
+metadata about systems provisioned within your account.
+
+Beneath the black bar you will see a green bar, and hovering your mouse over this bar will display following services:
+￼￼{EMBEDDED IMAGES}
+* **Servers.** Provision and manage virtual machines (VMs). Create alerts, autoscale policies, and anti-affinity pools.
 * **Blueprints.** Create, edit, and run Blueprints, CenturyLink Cloud’s orchestration engine. Blueprints allow users to combine virtual machine configurations, infrastructure tasks, scripts, and software packages into environments that can then be quickly deployed. Simple and complex applications alike can be deployed with the click of a button after the Blueprint is created.
 * **Network.** Access the platform’s self-service networking capabilities, including:
 	* Manage VLANs configured for your account
