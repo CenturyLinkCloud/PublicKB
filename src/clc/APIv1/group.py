@@ -58,7 +58,7 @@ class Group:
 		"""
 		if alias is None:  alias = clc.Account.GetAlias()
 		if location is None:  location = clc.Account.GetLocation()
-		r = clc.API.v1_call('post','Group/GetGroups',{'AccountAlias': alias, 'Location': location})
+		r = clc.v1.API.v1_call('post','Group/GetGroups',{'AccountAlias': alias, 'Location': location})
 		for group in r['HardwareGroups']:  clc._GROUP_MAPPING[group['ID']] = group['Name']
 		if int(r['StatusCode']) == 0:  return(r['HardwareGroups'])
 
@@ -81,7 +81,7 @@ class Group:
 
 		parents_id = Group.GetGroupID(alias,location,parent)
 
-		r = clc.API.v1_call('post','Group/CreateHardwareGroup',
+		r = clc.v1.API.v1_call('post','Group/CreateHardwareGroup',
 		                    {'AccountAlias': alias, 'ParentID': parents_id, 'Name': group, 'Description': description })
 		if int(r['StatusCode']) == 0:  return(r['Group'])
 
@@ -99,7 +99,7 @@ class Group:
 		if location is None:  location = clc.Account.GetLocation()
 		groups_id = Group.GetGroupID(alias,location,group)
 
-		r = clc.API.v1_call('post','Group/%sHardwareGroup' % (action), {'ID': groups_id, 'AccountAlias': alias })
+		r = clc.v1.API.v1_call('post','Group/%sHardwareGroup' % (action), {'ID': groups_id, 'AccountAlias': alias })
 		return(r)
 
 
@@ -160,7 +160,7 @@ class Group:
 	#def Restore(alias,location,group):
 	#	if alias is None:  alias = clc.Account.GetAlias()
 	#	groups_id = Group.GetGroupID(alias,location,group)
-	#	r = clc.API.v1_call('post','Group/RestoreHardwareGroup',{'AccountAlias': alias, 'ID': groups_id})
+	#	r = clc.v1.API.v1_call('post','Group/RestoreHardwareGroup',{'AccountAlias': alias, 'ID': groups_id})
 	#	if int(r['StatusCode']) == 0:  return(r)
 
 

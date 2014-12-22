@@ -22,7 +22,7 @@ class Queue:
 
 		:param type: list items in the queue filtered by status (All, Pending, Complete, Error)
 		"""
-		r = clc.API.v1_call('post','Queue/ListQueueRequests',{'ItemStatusType': Queue.item_status_type_map[type] })
+		r = clc.v1.API.v1_call('post','Queue/ListQueueRequests',{'ItemStatusType': Queue.item_status_type_map[type] })
 		if int(r['StatusCode']) == 0:  return(r['Requests'])
 
 
@@ -35,7 +35,7 @@ class Queue:
 		:param request_id: the Request ID returned by any of the operations which Queues an async request to perform any given task
 		:param silent: optionally disable all status messages when run in CLI mode
 		"""
-		r = clc.API.v1_call('post','Queue/GetRequestStatus',{'RequestID': request_id},silent=silent)
+		r = clc.v1.API.v1_call('post','Queue/GetRequestStatus',{'RequestID': request_id},silent=silent)
 		if int(r['StatusCode']) == 0:  return(r['RequestDetails'])
 
 

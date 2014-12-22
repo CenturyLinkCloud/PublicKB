@@ -34,7 +34,7 @@ class API():
 			raise(clc.APIV2NotEnabled)
 			
 		r = requests.post("%s%s" % (clc.defaults.ENDPOINT_URL_V2,"/authentication/login"), 
-						  data={'username': clc.V2_API_USERNAME, 'password': clc.V2_API_PASSWD},
+						  data={'username': clc.v2.V2_API_USERNAME, 'password': clc.v2.V2_API_PASSWD},
 						  headers={'content-type': 'application/json'},
 						  verify=API._ResourcePath('clc/cacert.pem'))
 

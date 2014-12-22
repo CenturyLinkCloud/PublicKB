@@ -23,7 +23,7 @@ class Blueprint:
 
 	#@staticmethod
 	#def List(type='All'):
-	#	r = clc.API.v1_call('post','Queue/ListQueueRequests',{'ItemStatusType': Queue.item_status_type_map[type] })
+	#	r = clc.v1.API.v1_call('post','Queue/ListQueueRequests',{'ItemStatusType': Queue.item_status_type_map[type] })
 	#	if int(r['StatusCode']) == 0:  return(r['Requests'])
 
 
@@ -40,7 +40,7 @@ class Blueprint:
 		"""
 		if alias is None:  alias = clc.Account.GetAlias()
 		if location is None:  location = clc.Account.GetLocation()
-		r = clc.API.v1_call('post','Blueprint/GetBlueprintStatus',{'AccountAlias': alias, 'RequestID': request_id, 'LocationAlias': location },silent=silent)
+		r = clc.v1.API.v1_call('post','Blueprint/GetBlueprintStatus',{'AccountAlias': alias, 'RequestID': request_id, 'LocationAlias': location },silent=silent)
 		if int(r['StatusCode']) == 0:  return(r)
 
 
@@ -53,7 +53,7 @@ class Blueprint:
 		:param classification: package type filter (System, Script, Software)
 		:param visibility: package visibility filter (Public, Private, Shared)
 		"""
-		r = clc.API.v1_call('post','Blueprint/GetPackages',
+		r = clc.v1.API.v1_call('post','Blueprint/GetPackages',
 							{'Classification': Blueprint.classification_stoi[classification],'Visibility': Blueprint.visibility_stoi[visibility]})
 		if int(r['StatusCode']) == 0:  return(r['Packages'])
 
@@ -96,7 +96,7 @@ class Blueprint:
 	@staticmethod
 	def GetPendingPackages():
 		"""Returns list of packages pending publishing."""
-		r = clc.API.v1_call('post','Blueprint/GetPendingPackages',{})
+		r = clc.v1.API.v1_call('post','Blueprint/GetPendingPackages',{})
 		if int(r['StatusCode']) == 0:  return(r['Packages'])
 
 
@@ -147,7 +147,7 @@ class Blueprint:
 		:param visibility: package visibility filter (Public, Private, Shared)
 		:param os: list of ints containing Operating System template IDs
 		"""
-		r = clc.API.v1_call('post','Blueprint/PublishPackage',
+		r = clc.v1.API.v1_call('post','Blueprint/PublishPackage',
 							{'Classification': Blueprint.classification_stoi[classification], 'Name': package, 'OperatingSystems': os, 
 							 'Visibility': Blueprint.visibility_stoi[visibility]})
 		if int(r['StatusCode']) == 0:  return(r)

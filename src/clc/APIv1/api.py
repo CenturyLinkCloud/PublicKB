@@ -31,12 +31,12 @@ class API():
 	def _Login():
 		if not clc.v1.V1_API_KEY or not clc.v1.V1_API_PASSWD:
 			clc.v1.output.Status('ERROR',3,'V1 API key and password not provided')
-			raise(clc.APIV1NotEnabled)
+			raise(clc.v1.APIV1NotEnabled)
 
 		clc._LOGINS += 1
 
 		r = requests.post("%s%s" % (clc.defaults.ENDPOINT_URL_V1,"/Auth/logon"),
-						  params={'APIKey': clc.V1_API_KEY, 'Password': clc.V1_API_PASSWD},
+						  params={'APIKey': clc.v1.V1_API_KEY, 'Password': clc.v1.V1_API_PASSWD},
 						  verify=API._ResourcePath('clc/cacert.pem'))
 
 		try:
@@ -87,7 +87,7 @@ class API():
 			elif int(r.json()['StatusCode']) == 100 and recursion_cnt<2:  
 				# Not logged in - this is a transient failure
 				clc._LOGIN_COOKIE_V1 = False
-				return(clc.API.v1_call(method,url,payload,silent,hide_errors,recursion_cnt+1))
+				return(clc.v1.API.v1_call(method,url,payload,silent,hide_errors,recursion_cnt+1))
 			elif int(r.json()['StatusCode']) == 100:  
 				# Not logged in - this keeps recurring - bail
 				raise clc.AccountLoginException(r.json()['Message'])
