@@ -43,6 +43,8 @@ args = False
 _LOGIN_COOKIE_V1 = False
 _LOGIN_TOKEN_V2 = False
 
+_V1_ENABLED = False
+_V2_ENABLED = False
 _LOGINS = 0
 _BLUEPRINT_FTP_URL = False
 
@@ -51,6 +53,10 @@ _GROUP_MAPPING = {}
 LOCATIONS = ['CA1','CA2','CA3','DE1','GB1','GB3','IL1','NY1','UC1','UT1','VA1','WA1']	# point in time snapshot - exec Account.GetLocations for current
 
 class CLCException(Exception):
+	pass
+class APIV1NotEnabled(CLCException):
+	pass
+class APIV2NotEnabled(CLCException):
 	pass
 class AccountDoesNotExistException(CLCException):
 	pass
@@ -71,6 +77,8 @@ def SetCredentialsV1(api_key,api_passwd):
 	"""Establish API key and password associated with APIv1 commands."""
 	global V1_API_KEY
 	global V1_API_PASSWD
+	global _V1_ENABLED
+	_V1_ENABLED = True
 	V1_API_KEY = api_key
 	V1_API_PASSWD = api_passwd
 
@@ -79,6 +87,8 @@ def SetCredentialsV2(api_username,api_passwd):
 	"""Establish API username and password associated with APIv2 commands."""
 	global V2_API_USERNAME
 	global V2_API_PASSWD
+	global V2_ENABLED 
+	_V2_ENABLED = True
 	V2_API_USERNAME = api_username
 	V2_API_PASSWD = api_passwd
 

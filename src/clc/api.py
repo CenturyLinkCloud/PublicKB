@@ -29,6 +29,7 @@ class API():
 
 	@staticmethod
 	def _Login_v2():
+		if not clc._V2_ENABLED:  raise(clc.APIV2NotEnabled)
 		if not clc.V2_API_USERNAME or not clc.V2_API_PASSWD:
 			clc.output.Status('ERROR',3,'V2 API username and password not provided')
 			raise(Exception("V2 API username and password not provided"))
@@ -49,6 +50,7 @@ class API():
 
 	@staticmethod
 	def _Login_v1():
+		if not clc._V1_ENABLED:  raise(clc.APIV1NotEnabled)
 		if not clc.V1_API_KEY or not clc.V1_API_PASSWD:
 			clc.output.Status('ERROR',3,'V1 API key and password not provided')
 			raise(Exception("V1 API key and password not provided"))
