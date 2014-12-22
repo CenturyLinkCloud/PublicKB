@@ -23,9 +23,9 @@ is provided the SDK will automatically select the appropriate version of the API
 
 ```python
 >>> import clc
->>> clc.SetCredentialsV1("api_key","api_password")
+>>> clc.v1.SetCredentialsV1("api_key","api_password")
 
->>> clc.SetCredentialsV2("test@example.com","control_portal_password")
+>>> clc.v2.SetCredentialsV2("test@example.com","control_portal_password")
 ```
 
 
