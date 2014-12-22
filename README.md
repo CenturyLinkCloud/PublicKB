@@ -5,7 +5,7 @@ This repository contains a ***Python SDK*** and a command line iinterface **CLI*
 ## Contents
 
 * [Installing](#installing)
-* [Python SDK Programming Guide](README_PYTHON_SDK.md) and [SDK API Reference](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.html)
+* [Python APIV1 SDK Programming Guide](README_PYTHON_APIV2_SDK.md), [Python APIV2 SDK Programming Guide](README_PYTHON_APIV1_SDK.md), and [SDK API Reference](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.html)
 * [CLI](README_CLI.md)
 
 

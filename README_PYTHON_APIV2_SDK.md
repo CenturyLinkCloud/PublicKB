@@ -1,6 +1,6 @@
-# CenturyLink Cloud CLI and Python SDK
+# CenturyLink Cloud APIV2 Python SDK
 
-This repository contains a Python SDK and a command line CLI (based on the SDK) to interact with the ***CenturyLink Cloud*** API.  At present this aligns most closely to [V1](https://t3n.zendesk.com/categories/20012068-API-v1-0) of the CenturyLink Cloud API though efforts are in process to merge [V2](https://t3n.zendesk.com/categories/20067994-API-v2-0-Beta-) API as it nears full release.
+This repository contains a Python SDK to interact with the ***CenturyLink Cloud*** API.  The SDK documented at this page aligns to the to API [V2](https://t3n.zendesk.com/categories/20067994-API-v2-0-Beta-).  
 
 ## Contents
 
@@ -17,15 +17,11 @@ This repository contains a Python SDK and a command line CLI (based on the SDK) 
 
 
 ### Authentication
-All API calls require authentication.  Depending on the API calls being made you will need to login using either V1, V2, or both V1/V2 credentials.
-Most most calls currently leverage V1 credentials.  Where the same capability exists with either V1 or V2 API and only one set of credentials
-is provided the SDK will automatically select the appropriate version of the API to call.
+All API calls require authentication using your API V1 credentials. 
 
 ```python
 >>> import clc
->>> clc.v1.SetCredentialsV1("api_key","api_password")
-
->>> clc.v2.SetCredentialsV2("test@example.com","control_portal_password")
+>>> clc.v2.SetCredentials("username","password")
 ```
 
 
@@ -39,9 +35,9 @@ Get the default alias and location with these calls.  These calls are often made
 functions where alias and location are optional.
 
 ```python
->>> clc.Account.GetAlias()
+>>> clc.v1.Account.GetAlias()
 u'BTDI'
->>> clc.Account.GetLocation()
+>>> clc.v1.Account.GetLocation()
 u'WA1'
 ```
 
@@ -51,7 +47,7 @@ The first result is the root account within the list followed by all other accou
 can nbe determined by reviewing the ParentAlias field associated with each result set.
 
 ```python
->>> clc.Account.GetAccounts(alias="BTDI")
+>>> clc.v1.Account.GetAccounts(alias="BTDI")
 [{u'AccountAlias': u'BTDI',
   u'BusinessName': u'CLC Solutions Demo',
   u'IsActive': True,
@@ -72,7 +68,7 @@ can nbe determined by reviewing the ParentAlias field associated with each resul
 #### Locations
 Retrieves a list of all cloud datacenter locations accessible by provided credentials.
 ```python
->>> clc.Account.GetLocations()
+>>> clc.v1.Account.GetLocations()
 [{u'Alias': u'WA1', u'Region': u'US West'},
  {u'Alias': u'UT1', u'Region': u'US Central'},
  {u'Alias': u'IL1', u'Region': u'US Central'},
@@ -91,7 +87,7 @@ Retrieves a list of all cloud datacenter locations accessible by provided creden
 Retrieves  details from specific alias or credentials default alias if none is provided.
 
 ```python
->>> clc.Account.GetAccountDetails(alias="BTDI")
+>>> clc.v1.Account.GetAccountDetails(alias="BTDI")
 {u'AccountAlias': u'BTDI',
  u'Address1': u'110 110th Ave NE',
  u'Address2': u'Ste 520',
@@ -154,7 +150,7 @@ List all users associated with the specified alias.
 Create new user account and return account details.  Alias is optional.
 
 ```python
->>> clc.User.CreateUser(user="test12665",email="JoeSmith@example.com",first_name="Joe",last_name="Smith",roles=["ServerAdministrator",],alias="BTDI")
+>>> clc.v1.User.CreateUser(user="test12665",email="JoeSmith@example.com",first_name="Joe",last_name="Smith",roles=["ServerAdministrator",],alias="BTDI")
 {u'AccountAlias': u'BTDI',
  u'AllowSMS': False,
  u'AlternateEmailAddress': None,
@@ -176,7 +172,7 @@ Create new user account and return account details.  Alias is optional.
 Update existing account and return details
 
 ```python
->>> clc.User.UpdateUser(user="test12665",email="JennySmith@example.com",first_name="Jenny",last_name="Smith",roles=["ServerAdministrator",],alias="BTDI")
+>>> clc.v1.User.UpdateUser(user="test12665",email="JennySmith@example.com",first_name="Jenny",last_name="Smith",roles=["ServerAdministrator",],alias="BTDI")
 {u'AccountAlias': u'BTDI',
  u'AllowSMS': False,
  u'AlternateEmailAddress': None,
@@ -198,7 +194,7 @@ Update existing account and return details
 Return user details
 
 ```python
->>> clc.User.GetUserDetails("joesmith")
+>>> clc.v1.User.GetUserDetails("joesmith")
 {u'AccountAlias': u'BTDI',
  u'AllowSMS': False,
  u'AlternateEmailAddress': None,
@@ -236,7 +232,7 @@ None
 List all templates available from the specified location or if Nnone specified the primary location associated with the provided API credentials.  These include system templates (available globally) and customer created templates (available in the location where they were created).
 
 ```python
->>> clc.Server.GetTemplates(alias=None,location=None)
+>>> clc.v1.Server.GetTemplates(alias=None,location=None)
 [{u'Cpu': 0,
   u'Description': u'CentOS 5 | 32-bit',
   u'DiskCount': 3,
@@ -260,7 +256,7 @@ List all templates available from the specified location or if Nnone specified t
 Each template has a unique Int ID.  Given a name get this ID.
 
 ```python
->>> clc.Server.GetTemplateID(alias=None, location=None, name='WIN2012DTC-64')
+>>> clc.v1.Server.GetTemplateID(alias=None, location=None, name='WIN2012DTC-64')
 27
 ```
 
@@ -268,7 +264,7 @@ Each template has a unique Int ID.  Given a name get this ID.
 List all servers in the specified location.
 
 ```python
->>> clc.Server.GetServers(location='WA1',group=None,alias=None)
+>>> clc.v1.Server.GetServers(location='WA1',group=None,alias=None)
 [{u'Cpu': 2,
   u'CustomFields': [],
   u'DateModified': u'/Date(1418190460000)/',
@@ -334,7 +330,7 @@ List all servers in the specified location.
 Perform a deep list of all servers in all locations.
 
 ```python
->>> clc.Server.GetAllServers(alias=None)
+>>> clc.v1.Server.GetAllServers(alias=None)
 .
 . (same output as above)
 .
@@ -344,7 +340,7 @@ Perform a deep list of all servers in all locations.
 Retrieve details on one or more servers.
 
 ```python
->>> clc.Server.GetServerDetails(alias=None, servers=['UC1BTDISERO2201',])
+>>> clc.v1.Server.GetServerDetails(alias=None, servers=['UC1BTDISERO2201',])
 [{u'Cpu': 2,
   u'CustomFields': [],
   u'DateModified': u'/Date(1413312404000)/',
@@ -386,7 +382,7 @@ Retrieve administrative credentials for specified server(s).
 Create new server. This is an asynchronous activity so a RequestID is returned which can be used to follow progress.
 
 ```python
->>> clc.Server.Create(alias=None,location='WA1',name='TSTSER',template='CENTOS-5-32-TEMPLATE',cpu=1,ram=1,backup_level='Standard',
+>>> clc.v1.Server.Create(alias=None,location='WA1',name='TSTSER',template='CENTOS-5-32-TEMPLATE',cpu=1,ram=1,backup_level='Standard',
                       group='Default Group', network='vlan_948_10.80.148',description='Test server',password='')
 {u'Message': u'Server queued for creation',
  u'RequestID': 123586,
@@ -398,7 +394,7 @@ Create new server. This is an asynchronous activity so a RequestID is returned w
 List all disks associated with the servere also querying the guest for disk names and mount points.
 
 ```python
->>> clc.Server.GetDisks(server='UC1BTDISERO2201',alias=None,guest_names=True)
+>>> clc.v1.Server.GetDisks(server='UC1BTDISERO2201',alias=None,guest_names=True)
 [{u'Name': u'C:\\', u'ScsiBusID': u'0', u'ScsiDeviceID': u'0', u'SizeGB': 60}]
 ```
 
@@ -408,55 +404,55 @@ These asynchronous operations can be run on one more more servers.  Currently im
 complete execute asynchronously and return a job ID.
 
 ```python
->>> clc.Server.Snapshot(servers=['WA1BTDITSTSER01',],alias=None)
+>>> clc.v1.Server.Snapshot(servers=['WA1BTDITSTSER01',],alias=None)
 [{u'Message': u'Server queued for snapshot',
   u'RequestID': 123587,
   u'StatusCode': 0,
   u'Success': True}]
 
->>> clc.Server.Poweroff(servers=['WA1BTDITSTSER01',],alias=None)
+>>> clc.v1.Server.Poweroff(servers=['WA1BTDITSTSER01',],alias=None)
 [{u'Message': u'Server queued for power off',
   u'RequestID': 123588,
   u'StatusCode': 0,
   u'Success': True}]
 
->>> clc.Server.Poweron(servers=['WA1BTDITSTSER01',],alias=None)
+>>> clc.v1.Server.Poweron(servers=['WA1BTDITSTSER01',],alias=None)
 [{u'Message': u'Group queued for power on',
   u'RequestID': 123589,
   u'StatusCode': 0,
   u'Success': True}]
 
->>> clc.Server.Reset(servers=['WA1BTDITSTSER01',],alias=None)
+>>> clc.v1.Server.Reset(servers=['WA1BTDITSTSER01',],alias=None)
 [{u'Message': u'Server queued for reset',
   u'RequestID': 123590,
   u'StatusCode': 0,
   u'Success': True}]
 
->>> clc.Server.Reboot(servers=['WA1BTDITSTSER01',],alias=None)
+>>> clc.v1.Server.Reboot(servers=['WA1BTDITSTSER01',],alias=None)
 [{u'Message': u'Server queued for reboot',
   u'RequestID': 123591,
   u'StatusCode': 0,
   u'Success': True}]
 
->>> clc.Server.Shutdown(servers=['WA1BTDITSTSER01',],alias=None)
+>>> clc.v1.Server.Shutdown(servers=['WA1BTDITSTSER01',],alias=None)
 [{u'Message': u'Server queued for shutdown',
   u'RequestID': 123592,
   u'StatusCode': 0,
   u'Success': True}]
 
->>> clc.Server.Pause(servers=['WA1BTDITSTSER01',],alias=None)
+>>> clc.v1.Server.Pause(servers=['WA1BTDITSTSER01',],alias=None)
 [{u'Message': u'Server queued for pause',
   u'RequestID': 123593,
   u'StatusCode': 0,
   u'Success': True}]
 
->>> clc.Server.Archive(servers=['WA1BTDITSTSER01',],alias=None)
+>>> clc.v1.Server.Archive(servers=['WA1BTDITSTSER01',],alias=None)
 [{u'Message': u'Server queued for archive',
   u'RequestID': 123595,
   u'StatusCode': 0,
   u'Success': True}]
 
->>> clc.Server.Delete(servers=['WA1BTDITSTSER01',],alias=None)
+>>> clc.v1.Server.Delete(servers=['WA1BTDITSTSER01',],alias=None)
 [{u'Message': u'Server queued for deletion',
   u'RequestID': 123594,
   u'StatusCode': 0,
@@ -471,14 +467,14 @@ complete execute asynchronously and return a job ID.
 Lookup unique Int group ID given name.
 
 ```python
->>> clc.Group.GetGroupID(group="Default Group",alias=None,location=None)
+>>> clc.v1.Group.GetGroupID(group="Default Group",alias=None,location=None)
 5132
 ```
 
 #### List
 List all groups in the specified datacenter or if None specified the primary location associated with the provided API credentials.
 ```
->>> clc.Group.GetGroups(alias=None,location='WA1')
+>>> clc.v1.Group.GetGroups(alias=None,location='WA1')
 [{u'ID': 837,
   u'IsSystemGroup': True,
   u'Name': u'WA1 Hardware',
@@ -502,7 +498,7 @@ List all groups in the specified datacenter or if None specified the primary loc
 Create new group rooted under the specified parent group or if None is specified will be a top-level group in the specified location.  
 
 ```python
->>> clc.Group.Create(group="Test Group",parent="WA1 Hardware",description='sdk test',alias=None,location='WA1')
+>>> clc.v1.Group.Create(group="Test Group",parent="WA1 Hardware",description='sdk test',alias=None,location='WA1')
 {u'ID': 34051,
  u'IsSystemGroup': False,
  u'Name': u'Test Group',
@@ -515,22 +511,22 @@ These asynchronous operations can be run on the specified group.  Currently impl
 and returns a job ID.
 
 ```python
->>> clc.Group.Pause(group="Test Group",alias=None,location='WA1')
+>>> clc.v1.Group.Pause(group="Test Group",alias=None,location='WA1')
 {u'Message': u'Group queued for pause',
  u'RequestID': 123909,
  u'StatusCode': 0,
  u'Success': True}
->>> clc.Group.Poweron(group="Test Group",alias=None,location='WA1')
+>>> clc.v1.Group.Poweron(group="Test Group",alias=None,location='WA1')
 {u'Message': u'Group queued for power on',
  u'RequestID': 123910,
  u'StatusCode': 0,
  u'Success': True}
->>> clc.Group.Archive(group="Test Group",alias=None,location='WA1')
+>>> clc.v1.Group.Archive(group="Test Group",alias=None,location='WA1')
 {u'Message': u'Group queued for archive',
  u'RequestID': 123911,
  u'StatusCode': 0,
  u'Success': True}
->>> clc.Group.Delete(group="Test Group",alias=None,location='WA1')
+>>> clc.v1.Group.Delete(group="Test Group",alias=None,location='WA1')
 {u'Message': u'Group successfully queued for deletion.',
  u'RequestID': 123912,
  u'StatusCode': 0,
@@ -546,7 +542,7 @@ and returns a job ID.
 Return current billing summary for account.
 
 ```python
->>> clc.Billing.GetAccountSummary(alias='BTDI')
+>>> clc.v1.Billing.GetAccountSummary(alias='BTDI')
 {u'CurrentHour': 4.4367719,
  u'Message': u'OK',
  u'MonthToDate': 2592.1229057,
@@ -563,7 +559,7 @@ Return group-level billing summaries. Optionally specifiy a start and end date (
 If None specified returns summary beginning with first day of current month ending on the current date.
 
 ```python
->>> clc.Billing.GetGroupSummaries(alias='BTDI',date_start='2014-01-01',date_end=None)
+>>> clc.v1.Billing.GetGroupSummaries(alias='BTDI',date_start='2014-01-01',date_end=None)
 [{u'CurrentHour': 0.1038,
   u'GroupID': 4416,
   u'GroupName': u'Default Group',
@@ -590,7 +586,7 @@ If None specified returns summary beginning with first day of current month endi
 Group-level estimate of current run rate for specified group.
 
 ```python
->>> clc.Billing.GetGroupEstimate(group='Default Group',alias='BTDI',location='WA1')
+>>> clc.v1.Billing.GetGroupEstimate(group='Default Group',alias='BTDI',location='WA1')
 {u'CurrentHour': 0.00357,
  u'Message': u'OK',
  u'MonthToDate': 6.58,
@@ -604,7 +600,7 @@ Group-level estimate of current run rate for specified group.
 Server-level estimate of current run rate for specified server.
 
 ```python
->>> clc.Billing.GetServerEstimate(server='IL1BTDIWEB104',alias='BTDI')
+>>> clc.v1.Billing.GetServerEstimate(server='IL1BTDIWEB104',alias='BTDI')
 {u'CurrentHour': 0.0926,
  u'Message': u'OK',
  u'MonthToDate': 35.1,
@@ -623,7 +619,7 @@ Server-level estimate of current run rate for specified server.
 
 List networks associated with the specified location or if None is specified will be a top-level group in the specified location.
 ```python
->>> clc.Network.GetNetworks(alias='BTDI')
+>>> clc.v1.Network.GetNetworks(alias='BTDI')
 [{u'AccountAlias': u'BTDI',
   u'Description': u'Web server network (946_10.80.144)',
   u'Gateway': u'10.80.144.1',
@@ -668,7 +664,7 @@ Retrieve IP allocation summary for specied network.
 List items in the work queue.  Specify a type to filter the list (All, Pending, Complete, or Error)
 
 ```python
->>> clc.Queue.List(type='Error')
+>>> clc.v1.Queue.List(type='Error')
 [{u'CurrentStatus': u'Failed',
   u'PercentComplete': 50,
   u'ProgressDesc': u'Unexpected error while processing the request.',
@@ -684,7 +680,7 @@ List items in the work queue.  Specify a type to filter the list (All, Pending, 
   u'StatusDate': u'/Date(1326494970980)/',
   u'StepNumber': 1}]
 
->>> clc.Queue.List(type='Pending')
+>>> clc.v1.Queue.List(type='Pending')
 [{u'CurrentStatus': u'Executing',
   u'PercentComplete': 45,
   u'ProgressDesc': u'Run Sysprep',
@@ -703,7 +699,7 @@ Given a request ID get real-time status on blueprint deployment.  Throughout the
 very as more is known (e.g. server names are unavailable until assigned shortly after execution begins).
 
 ```python
->>> clc.Blueprint.GetStatus(request_id=124091,location='WA1',alias='BTDI',silent=False)
+>>> clc.v1.Blueprint.GetStatus(request_id=124091,location='WA1',alias='BTDI',silent=False)
 {u'CurrentStatus': u'NotStarted',
  u'Description': u'Submitted for processing',
  u'Message': u'Success',
@@ -715,7 +711,7 @@ very as more is known (e.g. server names are unavailable until assigned shortly 
  u'Step': u'0',
  u'Success': True}
 
->>> clc.Blueprint.GetStatus(request_id=124091,location='WA1',alias='BTDI',silent=False)
+>>> clc.v1.Blueprint.GetStatus(request_id=124091,location='WA1',alias='BTDI',silent=False)
 {u'CurrentStatus': u'Executing',
  u'Description': u'Execution Started',
  u'Message': u'Success',
@@ -727,7 +723,7 @@ very as more is known (e.g. server names are unavailable until assigned shortly 
  u'Step': u'1',
  u'Success': True}
 
->>> clc.Blueprint.GetStatus(request_id=124091,location='WA1',alias='BTDI',silent=False)
+>>> clc.v1.Blueprint.GetStatus(request_id=124091,location='WA1',alias='BTDI',silent=False)
 {u'CurrentStatus': u'Failed',
  u'Description': u'Error Building Blueprint',
  u'Message': u'Success',
@@ -744,7 +740,7 @@ very as more is known (e.g. server names are unavailable until assigned shortly 
 List all packages in inventory, optionally filtering by package classification (System, Script, Software) and visibility (Public, Private, Shared).
 
 ```python
->>> clc.Blueprint.GetAllSystemPackages()
+>>> clc.v1.Blueprint.GetAllSystemPackages()
 [{u'Classification': 1,
   u'ID': 2,
   u'Name': u'Add Disk',
@@ -754,16 +750,16 @@ List all packages in inventory, optionally filtering by package classification (
   u'Name': u'Snapshot Server',
   'Visibility': 'Public'}]
 
->>> clc.Blueprint.GetAllScriptsPackages()
+>>> clc.v1.Blueprint.GetAllScriptsPackages()
 
->>> clc.Blueprint.GetAllSoftwarePackages()
+>>> clc.v1.Blueprint.GetAllSoftwarePackages()
 ```
 
 #### Package Upload
 Upload properly formatted package zip file using the ftp credentials provided in the command line or the configuration file.
 
 ```python
->>> clc.Blueprint.PackageUpload('uploadtest.zip','ftp://user:passwd@ftpserver'))
+>>> clc.v1.Blueprint.PackageUpload('uploadtest.zip','ftp://user:passwd@ftpserver'))
 {}
 ```
 
@@ -771,7 +767,7 @@ Upload properly formatted package zip file using the ftp credentials provided in
 List all packages which have been uploaded but not yet submitted for publishing.
 
 ```python
->>> clc.Blueprint.GetPendingPackages()
+>>> clc.v1.Blueprint.GetPendingPackages()
 [{u'Classification': 0, u'ID': 0, u'Name': u'param2.zip'},
  {u'Classification': 0, u'ID': 0, u'Name': u'uploadtest.zip'}]
 ```
@@ -780,7 +776,7 @@ List all packages which have been uploaded but not yet submitted for publishing.
 Publish the specified package.  Specify clasification (Script, Software), visibility (Public, Private, Shared) and optionally one or more supported operating systems.  If no operating systems listed will allow selection of prefered OS.
 
 ```python
->>> clc.Blueprint.PackagePublish(package='uploadtest.zip',classification='Script',visibility='Private',os=[30,])
+>>> clc.v1.Blueprint.PackagePublish(package='uploadtest.zip',classification='Script',visibility='Private',os=[30,])
 {u'Message': u'Success',
  u'RequestID': 124094,
  u'StatusCode': 0,

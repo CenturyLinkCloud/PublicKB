@@ -25,7 +25,7 @@ _V2_ENABLED = False
 _LOGINS = 0
 _BLUEPRINT_FTP_URL = False
 
-def SetCredentialsV2(api_username,api_passwd):
+def SetCredentials(api_username,api_passwd):
 	"""Establish API username and password associated with APIv2 commands."""
 	global V2_API_USERNAME
 	global V2_API_PASSWD
