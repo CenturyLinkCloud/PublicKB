@@ -22,8 +22,8 @@ class Billing:
 		:param location: datacenter where group resides
 		:param group: group name
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		if location is None:  location = clc.Account.GetLocation()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
+		if location is None:  location = clc.v1.Account.GetLocation()
 		groups_id = clc.Group.GetGroupID(alias,location,group)
 
 		r = clc.v1.API.Call('post','Billing/GetGroupEstimate',{'AccountAlias': alias, 'HardwareGroupID': groups_id})
@@ -43,7 +43,7 @@ class Billing:
 		:param date_start: YYYY-MM-DD string for start date.  If None defaults to start of current month
 		:param date_end: YYYY-MM-DD string for end date.  If None defaults to current day of current month
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
 		payload = {'AccountAlias': alias}
 		if date_start is not None:  payload['StartDate'] = date_start
 		if date_end is not None:  payload['EndDate'] = date_end
@@ -62,7 +62,7 @@ class Billing:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param server: name of server to query
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
 		r = clc.v1.API.Call('post','Billing/GetServerEstimate',{'AccountAlias': alias, 'ServerName': server})
 		if int(r['StatusCode']) == 0:  
 			return(r)
@@ -76,7 +76,7 @@ class Billing:
 
 		:param alias: short code for a particular account.  If none will use account's default alias
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
 		r = clc.v1.API.Call('post','Billing/GetAccountSummary',{'AccountAlias': alias})
 		if int(r['StatusCode']) == 0:  
 			return(r)

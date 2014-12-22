@@ -19,8 +19,8 @@ class Group:
 		:param location: datacenter where group resides
 		:param group: group name
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		if location is None:  location = clc.Account.GetLocation()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
+		if location is None:  location = clc.v1.Account.GetLocation()
 		r = Group.GetGroups(alias,location)
 		for row in r:
 			if row['Name'] == group:  return(row['ID'])
@@ -56,8 +56,8 @@ class Group:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param location: datacenter where group resides
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		if location is None:  location = clc.Account.GetLocation()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
+		if location is None:  location = clc.v1.Account.GetLocation()
 		r = clc.v1.API.Call('post','Group/GetGroups',{'AccountAlias': alias, 'Location': location})
 		for group in r['HardwareGroups']:  clc._GROUP_MAPPING[group['ID']] = group['Name']
 		if int(r['StatusCode']) == 0:  return(r['HardwareGroups'])
@@ -74,8 +74,8 @@ class Group:
 		:param parent: groups can be nested - name of parent group.  If None will be a toplevel group in the datacenter
 		:param descrption: optional group description
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		if location is None:  location = clc.Account.GetLocation()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
+		if location is None:  location = clc.v1.Account.GetLocation()
 		if description is None: description = ''
 		if parent is None:  parent = "%s Hardware" % (location)
 
@@ -95,8 +95,8 @@ class Group:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param location: datacenter location.  If none will use account's default alias
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		if location is None:  location = clc.Account.GetLocation()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
+		if location is None:  location = clc.v1.Account.GetLocation()
 		groups_id = Group.GetGroupID(alias,location,group)
 
 		r = clc.v1.API.Call('post','Group/%sHardwareGroup' % (action), {'ID': groups_id, 'AccountAlias': alias })
@@ -158,7 +158,7 @@ class Group:
 	# TODO - cannot find groups ID since not listed for archived groups
 	#@staticmethod
 	#def Restore(alias,location,group):
-	#	if alias is None:  alias = clc.Account.GetAlias()
+	#	if alias is None:  alias = clc.v1.Account.GetAlias()
 	#	groups_id = Group.GetGroupID(alias,location,group)
 	#	r = clc.v1.API.Call('post','Group/RestoreHardwareGroup',{'AccountAlias': alias, 'ID': groups_id})
 	#	if int(r['StatusCode']) == 0:  return(r)

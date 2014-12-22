@@ -33,7 +33,7 @@ class User:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param user: user name, which is typically an email address
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
 		r = clc.v1.API.Call('post','User/GetUserDetails',{'AccountAlias': alias, 'UserName': user })
 		if int(r['StatusCode']) == 0:  
 			r['UserDetails']['Roles'] = User._UserRoleList_itos(r['UserDetails']['Roles'])
@@ -48,7 +48,7 @@ class User:
 
 		:param alias: short code for a particular account.  If none will use account's default alias
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
 		r = clc.v1.API.Call('post','User/GetUsers',{'AccountAlias': alias})
 		if int(r['StatusCode']) == 0:  
 			return(r['Users'])
@@ -101,7 +101,7 @@ class User:
 		:param roles: list of roles (ServerAdministrator, BillingManager, DNSManager, AccountAdministrator,  AccountViewer, NetworkManager, SecurityManager, ServerOperator)
 		:param alias: short code for a particular account.  If none will use account's default alias
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
 		payload = {'AccountAlias': alias, 'Roles': [] }
 		if user is not None:  payload['UserName'] = user
 		if email is not None:  payload['EmailAddress'] = email
@@ -129,7 +129,7 @@ class User:
 		:param last_name: surname
 		:param roles: list of roles (ServerAdministrator, BillingManager, DNSManager, AccountAdministrator,  AccountViewer, NetworkManager, SecurityManager, ServerOperator)
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
 		payload = {'AccountAlias': alias, 'Roles': [] }
 		if user is not None:  payload['UserName'] = user
 		if email is not None:  payload['EmailAddress'] = email

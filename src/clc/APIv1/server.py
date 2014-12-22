@@ -24,7 +24,7 @@ class Server:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param server: name of server to queury
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
 
 		results = []
 		for server in servers:
@@ -44,7 +44,7 @@ class Server:
 		:param location: datacenter where group resides
 		:param group: group name
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
 		payload = {'AccountAlias': alias }
 		if group:  payload['HardwareGroupID'] = clc.Group.GetGroupID(alias,location,group)
 		else:  payload['Location'] = location
@@ -64,9 +64,9 @@ class Server:
 
 		:param alias: short code for a particular account.  If none will use account's default alias
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
 		servers = []
-		clc.Account.GetLocations()
+		clc.v1.Account.GetLocations()
 		for location in clc.LOCATIONS:
 			try:
 				r = clc.v1.API.Call('post','Server/GetAllServers', {'AccountAlias': alias, 'Location': location }, hide_errors=[5,] )
@@ -86,8 +86,8 @@ class Server:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param location: datacenter where group resides
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		if location is None:  location = clc.Account.GetLocation()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
+		if location is None:  location = clc.v1.Account.GetLocation()
 
 		r = clc.v1.API.Call('post','Server/ListAvailableServerTemplates', { 'AccountAlias': alias, 'Location': location } )
 		return(r['Templates'])
@@ -101,8 +101,8 @@ class Server:
 		:param location: datacenter where group resides
 		:param name: template name
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		if location is None:  location = clc.Account.GetLocation()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
+		if location is None:  location = clc.v1.Account.GetLocation()
 
 		r = Server.GetTemplates(alias,location)
 		for row in r:
@@ -131,8 +131,8 @@ class Server:
 		:param description: optional description for the server.  If None the server name will be used.
 		:param password: optional administrator password.  If None the system will generate one
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		if location is None:  location = clc.Account.GetLocation()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
+		if location is None:  location = clc.v1.Account.GetLocation()
 		if re.match("^\d+$",group):  groups_id = group
 		else:  groups_id = clc.Group.GetGroupID(alias,location,group)
 
@@ -151,7 +151,7 @@ class Server:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param servers: list of server names
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
 		results = []
 		for server in servers:
 			r = clc.v1.API.Call('post','Server/%sServer' % (action), {'AccountAlias': alias, 'Name': server })
@@ -276,7 +276,7 @@ class Server:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param servers: list of server names
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
 		results = []
 		for server in servers:
 			r = clc.v1.API.Call('post','Server/GetServerCredentials', {'AccountAlias': alias, 'Name': server })
@@ -294,7 +294,7 @@ class Server:
 		:param server: server name
 		:param guest_names: query guest disk names and mount points
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
 
 		r = clc.v1.API.Call('post','Server/ListDisks', { 'AccountAlias': alias, 'Name': server, 'QueryGuestDiskNames': guest_names } )
 		return(r['Disks'])

@@ -78,23 +78,23 @@ class API():
 				return(r.json())
 			elif int(r.json()['StatusCode']) == 2:  
 				# Account is deleted
-				#raise clc.AccountDeletedException(r.json()['Message'])
+				#raise clc.v1.Account.eletedException(r.json()['Message'])
 				if clc.args and not silent:  clc.v1.output.Status('ERROR',3,'%s' % (r.json()['Message']))
 				raise Exception(r.json()['Message'])
 			elif int(r.json()['StatusCode']) == 5:  
 				# Account or datacenter does not exist
-				raise clc.AccountDoesNotExistException(r.json()['Message'])
+				raise clc.v1.Account.oesNotExistException(r.json()['Message'])
 			elif int(r.json()['StatusCode']) == 100 and recursion_cnt<2:  
 				# Not logged in - this is a transient failure
 				clc._LOGIN_COOKIE_V1 = False
 				return(clc.v1.API.Call(method,url,payload,silent,hide_errors,recursion_cnt+1))
 			elif int(r.json()['StatusCode']) == 100:  
 				# Not logged in - this keeps recurring - bail
-				raise clc.AccountLoginException(r.json()['Message'])
+				raise clc.v1.Account.oginException(r.json()['Message'])
 			else:
 				if clc.args and (not hide_errors or not silent):  clc.v1.output.Status('ERROR',3,'Error calling %s.   Status code %s.  %s' % (url,r.json()['StatusCode'],r.json()['Message']))
 				raise Exception('Error calling %s.   Status code %s.  %s' % (url,r.json()['StatusCode'],r.json()['Message']))
-		#except clc.AccountDeletedException, clc.AccountLoginException:
+		#except clc.v1.Account.eletedException, clc.v1.Account.oginException:
 		except clc.CLCException:
 			raise
 		except:

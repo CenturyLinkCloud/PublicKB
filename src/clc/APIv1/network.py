@@ -20,8 +20,8 @@ class Network:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param location: datacenter where group resides.  If none will use account's primary datacenter
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		if location is None:  location = clc.Account.GetLocation()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
+		if location is None:  location = clc.v1.Account.GetLocation()
 		r = clc.v1.API.Call('post','Network/GetAccountNetworks', { 'AccountAlias': alias, 'Location': location })
 		if int(r['StatusCode']) == 0:  return(r['Networks'])
 
@@ -36,15 +36,15 @@ class Network:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param location: datacenter where group resides.  If none will use account's primary datacenter
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		if location is None:  location = clc.Account.GetLocation()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
+		if location is None:  location = clc.v1.Account.GetLocation()
 		r = clc.v1.API.Call('post','Network/GetNetworkDetails', { 'AccountAlias': alias, 'Location': location, 'Name': network })
 		if int(r['StatusCode']) == 0:  return(r['NetworkDetails']['IPAddresses'])
 
 
 	#@staticmethod
 	#def Create(alias,location,parent,group,description=''):
-	##	if alias is None:  alias = clc.Account.GetAlias()
+	##	if alias is None:  alias = clc.v1.Account.GetAlias()
 	#	if description is None: description = ''
 	#	# TODO - if no parent then assume default group "%s Hardware" % (locaiton)
 

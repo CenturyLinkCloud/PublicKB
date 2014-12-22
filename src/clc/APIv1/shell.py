@@ -724,10 +724,10 @@ class ExecCommand():
 	#	if clc.args.args.alias:  alias = clc.args.args.alias
 	#	if clc.args.args.location:  location = clc.args.args.location
 	#	if not alias:
-	#		self.Exec('clc.Account.GetAlias','',supress_output=True)
+	#		self.Exec('clc.v1.Account.GetAlias','',supress_output=True)
 	#		alias = clc.ALIAS
 	#	if not location:
-	#		self.Exec('clc.Account.GetAlias','',supress_output=True)
+	#		self.Exec('clc.v1.Account.GetAlias','',supress_output=True)
 	#		location = clc.LOCATION
 	#	self.Exec('clc.Group.Restore', 
 	#	          { 'alias': alias, 'location': location, 'group': clc.args.args.group },
@@ -867,9 +867,9 @@ class ExecCommand():
 			elif not supress_output and clc.args.args.format == 'csv':  print clc.v1.output.Csv(r,cols)
 
 			return(r)
-		except clc.AccountDeletedException:
+		except clc.v1.Account.eletedException:
 			clc.v1.output.Status('ERROR',2,'Unable to process, account in deleted state')
-		except clc.AccountLoginException:
+		except clc.v1.Account.oginException:
 			clc.v1.output.Status('ERROR',2,'Transient login error.  Please retry')
 
 

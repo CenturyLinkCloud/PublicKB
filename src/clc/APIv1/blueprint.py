@@ -38,8 +38,8 @@ class Blueprint:
 		:param location: datacenter where group resides
 		:param silent: disable status output when executed within CLI runtime
 		"""
-		if alias is None:  alias = clc.Account.GetAlias()
-		if location is None:  location = clc.Account.GetLocation()
+		if alias is None:  alias = clc.v1.Account.GetAlias()
+		if location is None:  location = clc.v1.Account.GetLocation()
 		r = clc.v1.API.Call('post','Blueprint/GetBlueprintStatus',{'AccountAlias': alias, 'RequestID': request_id, 'LocationAlias': location },silent=silent)
 		if int(r['StatusCode']) == 0:  return(r)
 
