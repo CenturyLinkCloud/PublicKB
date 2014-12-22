@@ -28,11 +28,10 @@ class API():
 
 
 	@staticmethod
-	def _Login_v1():
-		if not clc._V1_ENABLED:  raise(clc.APIV1NotEnabled)
-		if not clc.V1_API_KEY or not clc.V1_API_PASSWD:
+	def _Login():
+		if not clc.v1.V1_API_KEY or not clc.v1.V1_API_PASSWD:
 			clc.output.Status('ERROR',3,'V1 API key and password not provided')
-			raise(Exception("V1 API key and password not provided"))
+			raise(clc.APIV1NotEnabled)
 
 		clc._LOGINS += 1
 
@@ -53,7 +52,7 @@ class API():
 
 
 	@staticmethod
-	def v1_call(method,url,payload,silent=False,hide_errors=[],recursion_cnt=0):
+	def Call(method,url,payload,silent=False,hide_errors=[],recursion_cnt=0):
 		"""Execute v1 API call.
 
 		:param url: URL paths associated with the API call
@@ -63,7 +62,7 @@ class API():
 
 		:returns: decoded API json result
 		"""
-		if not clc._LOGIN_COOKIE_V1:  clc.API._Login_v1()
+		if not clc.v1._LOGIN_COOKIE_V1:  API._Login()
 
 		r = requests.request(method,"%s%s/JSON" % (clc.defaults.ENDPOINT_URL_V1,url), 
 		                     params=payload, 

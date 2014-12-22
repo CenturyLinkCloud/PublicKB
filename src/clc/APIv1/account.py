@@ -43,7 +43,7 @@ class Account:
 	@staticmethod
 	def GetLocations():
 		"""Return all cloud locations available to the calling alias."""
-		r = clc.API.v1_call('post','Account/GetLocations',{})
+		r = clc.v1.API.Call('post','Account/GetLocations',{})
 		if r['Success'] != True: 
 			if clc.args:  clc.output.Status('ERROR',3,'Error calling %s.   Status code %s.  %s' % ('Account/GetLocations',r['StatusCode'],r['Message']))
 			raise Exception('Error calling %s.   Status code %s.  %s' % ('Account/GetLocations',r['StatusCode'],r['Message']))
