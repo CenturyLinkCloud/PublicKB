@@ -32,10 +32,8 @@ V1_API_KEY = False
 V1_API_PASSWD = False
 
 
-args = False
 
 _LOGIN_COOKIE_V1 = False
-_LOGIN_TOKEN_V2 = False
 
 _V1_ENABLED = False
 _LOGINS = 0

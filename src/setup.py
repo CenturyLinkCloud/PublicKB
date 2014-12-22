@@ -9,14 +9,14 @@ from setuptools import setup, find_packages
 
 setup(
 	name = "clc-sdk",
-	version = "1.0",
+	version = "1.1",
 	packages = find_packages("."),
 
 	install_requires = ['prettytable','clint','argparse','requests'],
 
 	entry_points = {
 		'console_scripts': [
-			'clc  = clc.cli:main',
+			'clc  = clc.v1.cli:main',
 		],
 	},
 
