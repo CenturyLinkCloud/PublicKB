@@ -16,17 +16,18 @@ API Documentaton v2: https://t3n.zendesk.com/categories/20067994-API-v2-0-Beta-
 
 """
 
-from clc.shell import Args, ExecCommand
-from clc.account_v1 import Account as v1.Account
-from clc.user import User as v1.User
-from clc.group import Group as v1.Group
-from clc.server import Server as v1.Server
-from clc.network import Network as v1.Network
-from clc.billing import Billing as v1.Billing
-from clc.queue import Queue as v1.Queue
-from clc.blueprint import Blueprint as v1.Blueprint
-from clc.api_v1 import API as APIv1
-from clc.api_v2 import API as APIv2
+import APIv1 as v1
+#from clc.APIv1.shell import Args, ExecCommand
+#from clc.APIv1.account import Account as v1.Account
+#from clc.user import User as v1.User
+#from clc.group import Group as v1.Group
+#from clc.server import Server as v1.Server
+#from clc.network import Network as v1.Network
+#from clc.billing import Billing as v1.Billing
+#from clc.queue import Queue as v1.Queue
+#from clc.blueprint import Blueprint as v1.Blueprint
+#from clc.api_v1 import API as APIv1
+#from clc.api_v2 import API as APIv2
 import defaults
 
 
