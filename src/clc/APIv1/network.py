@@ -22,7 +22,7 @@ class Network:
 		"""
 		if alias is None:  alias = clc.Account.GetAlias()
 		if location is None:  location = clc.Account.GetLocation()
-		r = clc.v1.API.v1_call('post','Network/GetAccountNetworks', { 'AccountAlias': alias, 'Location': location })
+		r = clc.v1.API.Call('post','Network/GetAccountNetworks', { 'AccountAlias': alias, 'Location': location })
 		if int(r['StatusCode']) == 0:  return(r['Networks'])
 
 
@@ -38,7 +38,7 @@ class Network:
 		"""
 		if alias is None:  alias = clc.Account.GetAlias()
 		if location is None:  location = clc.Account.GetLocation()
-		r = clc.v1.API.v1_call('post','Network/GetNetworkDetails', { 'AccountAlias': alias, 'Location': location, 'Name': network })
+		r = clc.v1.API.Call('post','Network/GetNetworkDetails', { 'AccountAlias': alias, 'Location': location, 'Name': network })
 		if int(r['StatusCode']) == 0:  return(r['NetworkDetails']['IPAddresses'])
 
 
@@ -50,7 +50,7 @@ class Network:
 
 	#	parents_id = Group.GetGroupID(alias,location,parent)
 
-	#	r = clc.v1.API.v1_call('post','Group/CreateHardwareGroup',
+	#	r = clc.v1.API.Call('post','Group/CreateHardwareGroup',
 	#	                    {'AccountAlias': alias, 'ParentID': parents_id, 'Name': group, 'Description': description })
 	#	if int(r['StatusCode']) == 0:  return(r['Group'])
 

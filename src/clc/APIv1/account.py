@@ -31,7 +31,7 @@ class Account:
 	def GetAccountDetails(alias=None):
 		"""Return account details dict associated with the provided alias."""
 		if not alias:  alias = Account.GetAlias()
-		r = clc.v1.API.v1_call('post','Account/GetAccountDetails',{'AccountAlias': alias})
+		r = clc.v1.API.Call('post','Account/GetAccountDetails',{'AccountAlias': alias})
 		if r['Success'] != True: 
 			if clc.args:  clc.v1.output.Status('ERROR',3,'Error calling %s.   Status code %s.  %s' % ('Account/GetAccountDetails',r['StatusCode'],r['Message']))
 			raise Exception('Error calling %s.   Status code %s.  %s' % ('Account/GetAccountDetails',r['StatusCode'],r['Message']))
@@ -57,7 +57,7 @@ class Account:
 		"""Return account inventory dict containing all subaccounts for the given alias.  If None search from default alias."""
 		if alias is not None:  payload = {'AccountAlias': alias}
 		else:  payload = {}
-		r = clc.v1.API.v1_call('post','Account/GetAccounts',payload)
+		r = clc.v1.API.Call('post','Account/GetAccounts',payload)
 		if int(r['StatusCode']) == 0:  
 			# Assume first response is always the original account.  Not sure if this is reliable
 			if not clc.ALIAS:  clc.ALIAS = r['Accounts'][0]['AccountAlias']

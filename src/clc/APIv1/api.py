@@ -87,7 +87,7 @@ class API():
 			elif int(r.json()['StatusCode']) == 100 and recursion_cnt<2:  
 				# Not logged in - this is a transient failure
 				clc._LOGIN_COOKIE_V1 = False
-				return(clc.v1.API.v1_call(method,url,payload,silent,hide_errors,recursion_cnt+1))
+				return(clc.v1.API.Call(method,url,payload,silent,hide_errors,recursion_cnt+1))
 			elif int(r.json()['StatusCode']) == 100:  
 				# Not logged in - this keeps recurring - bail
 				raise clc.AccountLoginException(r.json()['Message'])

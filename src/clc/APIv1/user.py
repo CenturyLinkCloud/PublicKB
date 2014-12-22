@@ -34,7 +34,7 @@ class User:
 		:param user: user name, which is typically an email address
 		"""
 		if alias is None:  alias = clc.Account.GetAlias()
-		r = clc.v1.API.v1_call('post','User/GetUserDetails',{'AccountAlias': alias, 'UserName': user })
+		r = clc.v1.API.Call('post','User/GetUserDetails',{'AccountAlias': alias, 'UserName': user })
 		if int(r['StatusCode']) == 0:  
 			r['UserDetails']['Roles'] = User._UserRoleList_itos(r['UserDetails']['Roles'])
 			return(r['UserDetails'])
@@ -49,7 +49,7 @@ class User:
 		:param alias: short code for a particular account.  If none will use account's default alias
 		"""
 		if alias is None:  alias = clc.Account.GetAlias()
-		r = clc.v1.API.v1_call('post','User/GetUsers',{'AccountAlias': alias})
+		r = clc.v1.API.Call('post','User/GetUsers',{'AccountAlias': alias})
 		if int(r['StatusCode']) == 0:  
 			return(r['Users'])
 
@@ -62,7 +62,7 @@ class User:
 
 		:param user: user name, which is typically an email address
 		"""
-		r = clc.v1.API.v1_call('post','User/DeleteUser',{'UserName': user})
+		r = clc.v1.API.Call('post','User/DeleteUser',{'UserName': user})
 
 
 	@staticmethod
@@ -73,7 +73,7 @@ class User:
 
 		:param user: user name, which is typically an email address
 		"""
-		r = clc.v1.API.v1_call('post','User/SuspendUser',{'UserName': user})
+		r = clc.v1.API.Call('post','User/SuspendUser',{'UserName': user})
 
 
 	@staticmethod
@@ -84,7 +84,7 @@ class User:
 
 		:param user: user name, which is typically an email address
 		"""
-		r = clc.v1.API.v1_call('post','User/UnsuspendUser',{'UserName': user})
+		r = clc.v1.API.Call('post','User/UnsuspendUser',{'UserName': user})
 
 
 	# TODO refactor payload validation/building
@@ -109,7 +109,7 @@ class User:
 		if last_name is not None:  payload['LastName'] = last_name
 		if roles is not None:
 			for role in roles:  payload['Roles'].append(User.user_role_stoi[role])
-		r = clc.v1.API.v1_call('post','User/CreateUser',payload)
+		r = clc.v1.API.Call('post','User/CreateUser',payload)
 		if int(r['StatusCode']) == 0:  
 			r['UserDetails']['Roles'] = User._UserRoleList_itos(r['UserDetails']['Roles'])
 			return(r['UserDetails'])
@@ -137,7 +137,7 @@ class User:
 		if last_name is not None:  payload['LastName'] = last_name
 		if roles is not None:
 			for role in roles:  payload['Roles'].append(User.user_role_stoi[role])
-		r = clc.v1.API.v1_call('post','User/UpdateUser',payload)
+		r = clc.v1.API.Call('post','User/UpdateUser',payload)
 		if int(r['StatusCode']) == 0:  
 			r['UserDetails']['Roles'] = User._UserRoleList_itos(r['UserDetails']['Roles'])
 			return(r['UserDetails'])

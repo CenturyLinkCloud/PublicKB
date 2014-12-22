@@ -28,7 +28,7 @@ class Server:
 
 		results = []
 		for server in servers:
-			r = clc.v1.API.v1_call('post','Server/GetServer', {'AccountAlias': alias, 'Name': server })
+			r = clc.v1.API.Call('post','Server/GetServer', {'AccountAlias': alias, 'Name': server })
 			if int(r['StatusCode']) == 0:  results.append(r['Server'])
 
 		return(results)
@@ -50,7 +50,7 @@ class Server:
 		else:  payload['Location'] = location
 
 		try:
-			r = clc.v1.API.v1_call('post','Server/GetAllServers', payload)
+			r = clc.v1.API.Call('post','Server/GetAllServers', payload)
 			if name_groups:  r['Servers'] = clc.Group.NameGroups(r['Servers'],'HardwareGroupID')
 			if int(r['StatusCode']) == 0:  return(r['Servers'])
 		except Exception as e:
@@ -69,7 +69,7 @@ class Server:
 		clc.Account.GetLocations()
 		for location in clc.LOCATIONS:
 			try:
-				r = clc.v1.API.v1_call('post','Server/GetAllServers', {'AccountAlias': alias, 'Location': location }, hide_errors=[5,] )
+				r = clc.v1.API.Call('post','Server/GetAllServers', {'AccountAlias': alias, 'Location': location }, hide_errors=[5,] )
 				if name_groups:  r['Servers'] = clc.Group.NameGroups(r['Servers'],'HardwareGroupID')
 				if int(r['StatusCode']) == 0:  servers += r['Servers']
 			except:
@@ -89,7 +89,7 @@ class Server:
 		if alias is None:  alias = clc.Account.GetAlias()
 		if location is None:  location = clc.Account.GetLocation()
 
-		r = clc.v1.API.v1_call('post','Server/ListAvailableServerTemplates', { 'AccountAlias': alias, 'Location': location } )
+		r = clc.v1.API.Call('post','Server/ListAvailableServerTemplates', { 'AccountAlias': alias, 'Location': location } )
 		return(r['Templates'])
 
 
@@ -136,7 +136,7 @@ class Server:
 		if re.match("^\d+$",group):  groups_id = group
 		else:  groups_id = clc.Group.GetGroupID(alias,location,group)
 
-		r = clc.v1.API.v1_call('post','Server/CreateServer', 
+		r = clc.v1.API.Call('post','Server/CreateServer', 
 		                    { 'AccountAlias': alias, 'LocationAlias': location, 'Description': description, 'Template': template,
 							  'Alias': name, 'HardwareGroupID': groups_id, 'ServerType': 1, 'ServiceLevel': Server.backup_level_stoi[backup_level], 
 							  'Cpu': cpu, 'MemoryGB': ram, 'ExtraDriveGB': 0, 'Network': network, 'Password': password })
@@ -154,7 +154,7 @@ class Server:
 		if alias is None:  alias = clc.Account.GetAlias()
 		results = []
 		for server in servers:
-			r = clc.v1.API.v1_call('post','Server/%sServer' % (action), {'AccountAlias': alias, 'Name': server })
+			r = clc.v1.API.Call('post','Server/%sServer' % (action), {'AccountAlias': alias, 'Name': server })
 			if int(r['StatusCode']) == 0:  results.append(r)
 		return(results)
 
@@ -279,7 +279,7 @@ class Server:
 		if alias is None:  alias = clc.Account.GetAlias()
 		results = []
 		for server in servers:
-			r = clc.v1.API.v1_call('post','Server/GetServerCredentials', {'AccountAlias': alias, 'Name': server })
+			r = clc.v1.API.Call('post','Server/GetServerCredentials', {'AccountAlias': alias, 'Name': server })
 			if int(r['StatusCode']) == 0:  results.append(r)
 		return(results)
 
@@ -296,7 +296,7 @@ class Server:
 		"""
 		if alias is None:  alias = clc.Account.GetAlias()
 
-		r = clc.v1.API.v1_call('post','Server/ListDisks', { 'AccountAlias': alias, 'Name': server, 'QueryGuestDiskNames': guest_names } )
+		r = clc.v1.API.Call('post','Server/ListDisks', { 'AccountAlias': alias, 'Name': server, 'QueryGuestDiskNames': guest_names } )
 		return(r['Disks'])
 
 
