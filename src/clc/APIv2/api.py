@@ -29,10 +29,9 @@ class API():
 
 	@staticmethod
 	def _Login_v2():
-		if not clc._V2_ENABLED:  raise(clc.APIV2NotEnabled)
 		if not clc.V2_API_USERNAME or not clc.V2_API_PASSWD:
-			clc.output.Status('ERROR',3,'V2 API username and password not provided')
-			raise(Exception("V2 API username and password not provided"))
+			clc.v1.output.Status('ERROR',3,'V2 API username and password not provided')
+			raise(clc.APIV2NotEnabled)
 			
 		r = requests.post("%s%s" % (clc.defaults.ENDPOINT_URL_V2,"/authentication/login"), 
 						  data={'username': clc.V2_API_USERNAME, 'password': clc.V2_API_PASSWD},
@@ -66,13 +65,13 @@ class API():
 
 		try:
 			if int(r.json()['StatusCode']) == 0:  
-				if clc.args:  clc.output.Status('SUCCESS',2,'%s' % (r.json()['Message']))
+				if clc.args:  clc.v1.output.Status('SUCCESS',2,'%s' % (r.json()['Message']))
 				return(r.json())
 			else:
-				if clc.args:  clc.output.Status('ERROR',3,'Error calling %s.   Status code %s.  %s' % (url,r.json()['StatusCode'],r.json()['Message']))
+				if clc.args:  clc.v1.output.Status('ERROR',3,'Error calling %s.   Status code %s.  %s' % (url,r.json()['StatusCode'],r.json()['Message']))
 				raise(Exception("Error calling %s.   Status code %s.  %s" % (url,r.json()['StatusCode'],r.json()['Message'])))
 		except:
 			raise
-			if clc.args:  clc.output.Status('ERROR',3,'Error calling %s.  Server response %s' % (url,r.status_code))
+			if clc.args:  clc.v1.output.Status('ERROR',3,'Error calling %s.  Server response %s' % (url,r.status_code))
 
 
