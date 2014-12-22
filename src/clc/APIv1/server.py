@@ -108,7 +108,7 @@ class Server:
 		for row in r:
 			if row['Name'].lower() == name.lower():  return(row['OperatingSystem'])
 		else:
-			if clc.args:  clc.output.Status("ERROR",3,"Template %s not found in account %s datacenter %s" % (name,alias,location))
+			if clc.args:  clc.v1.output.Status("ERROR",3,"Template %s not found in account %s datacenter %s" % (name,alias,location))
 			raise Exception("Template not found")
 
 

@@ -30,7 +30,7 @@ class API():
 	@staticmethod
 	def _Login():
 		if not clc.v1.V1_API_KEY or not clc.v1.V1_API_PASSWD:
-			clc.output.Status('ERROR',3,'V1 API key and password not provided')
+			clc.v1.output.Status('ERROR',3,'V1 API key and password not provided')
 			raise(clc.APIV1NotEnabled)
 
 		clc._LOGINS += 1
@@ -42,13 +42,13 @@ class API():
 		try:
 			resp = xml.etree.ElementTree.fromstring(r.text)
 			if resp.attrib['StatusCode'] == '0':
-				if clc.args:  clc.output.Status('SUCCESS',1,'Logged into v1 API')
+				if clc.args:  clc.v1.output.Status('SUCCESS',1,'Logged into v1 API')
 				clc._LOGIN_COOKIE_V1 = r.cookies
 			else:
-				if clc.args:  clc.output.Status('ERROR',3,'Error logging into v1 API.  %s' % resp.attrib['Message'])
+				if clc.args:  clc.v1.output.Status('ERROR',3,'Error logging into v1 API.  %s' % resp.attrib['Message'])
 				raise(Exception("Error logging into V1 API.  Status code %s. %s" % (resp.attrib['StatusCode'],resp.attrib['Message'])))
 		except:
-			if clc.args:  clc.output.Status('ERROR',3,'Error logging into v1 API.  Server response %s' % (r.status_code))
+			if clc.args:  clc.v1.output.Status('ERROR',3,'Error logging into v1 API.  Server response %s' % (r.status_code))
 
 
 	@staticmethod
@@ -72,14 +72,14 @@ class API():
 
 		try:
 			if int(r.json()['StatusCode']) == 0:  
-				if clc.args and not silent:  clc.output.Status('SUCCESS',2,'%s' % (r.json()['Message']))
+				if clc.args and not silent:  clc.v1.output.Status('SUCCESS',2,'%s' % (r.json()['Message']))
 				return(r.json())
 			elif int(r.json()['StatusCode']) in hide_errors:
 				return(r.json())
 			elif int(r.json()['StatusCode']) == 2:  
 				# Account is deleted
 				#raise clc.AccountDeletedException(r.json()['Message'])
-				if clc.args and not silent:  clc.output.Status('ERROR',3,'%s' % (r.json()['Message']))
+				if clc.args and not silent:  clc.v1.output.Status('ERROR',3,'%s' % (r.json()['Message']))
 				raise Exception(r.json()['Message'])
 			elif int(r.json()['StatusCode']) == 5:  
 				# Account or datacenter does not exist
@@ -92,13 +92,13 @@ class API():
 				# Not logged in - this keeps recurring - bail
 				raise clc.AccountLoginException(r.json()['Message'])
 			else:
-				if clc.args and (not hide_errors or not silent):  clc.output.Status('ERROR',3,'Error calling %s.   Status code %s.  %s' % (url,r.json()['StatusCode'],r.json()['Message']))
+				if clc.args and (not hide_errors or not silent):  clc.v1.output.Status('ERROR',3,'Error calling %s.   Status code %s.  %s' % (url,r.json()['StatusCode'],r.json()['Message']))
 				raise Exception('Error calling %s.   Status code %s.  %s' % (url,r.json()['StatusCode'],r.json()['Message']))
 		#except clc.AccountDeletedException, clc.AccountLoginException:
 		except clc.CLCException:
 			raise
 		except:
-			if clc.args and (not hide_errors or not silent):  clc.output.Status('ERROR',3,'Error calling %s.  Server response %s' % (url,r.status_code))
+			if clc.args and (not hide_errors or not silent):  clc.v1.output.Status('ERROR',3,'Error calling %s.  Server response %s' % (url,r.status_code))
 			#print "Request:  %s %s  params=%s" % (method,"%s%s/JSON" % (clc.defaults.ENDPOINT_URL_V1,url),payload)
 			#print "Response: %s" % (r.text)
 			#print r.url

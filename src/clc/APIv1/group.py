@@ -25,7 +25,7 @@ class Group:
 		for row in r:
 			if row['Name'] == group:  return(row['ID'])
 		else:
-			if clc.args:  clc.output.Status("ERROR",3,"Group %s not found in account %s datacenter %s" % (group,alias,location))
+			if clc.args:  clc.v1.output.Status("ERROR",3,"Group %s not found in account %s datacenter %s" % (group,alias,location))
 			raise Exception("Group not found")
 
 
@@ -43,7 +43,7 @@ class Group:
 			except:
 				pass
 			new_data_arr.append(data)
-		if clc.args:  clc.output.Status("ERROR",2,"Group name conversion not yet implemented")
+		if clc.args:  clc.v1.output.Status("ERROR",2,"Group name conversion not yet implemented")
 		return(new_data_arr)
 
 

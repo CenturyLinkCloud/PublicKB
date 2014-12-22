@@ -113,12 +113,12 @@ class Blueprint:
 		o = urlparse.urlparse(ftp_url)
 		# Very weak URL checking
 		if o.scheme.lower() != "ftp":  
-			clc.output.Status('ERROR',2,'Invalid FTP URL')
+			clc.v1.output.Status('ERROR',2,'Invalid FTP URL')
 			return
 
 		# Confirm file exists 
 		if not os.path.isfile(package):
-			clc.output.Status('ERROR',2,'Package file (%s) not found' % (package))
+			clc.v1.output.Status('ERROR',2,'Package file (%s) not found' % (package))
 			return
 
 		m = re.search("(?P<user>.+?):(?P<passwd>.+?)@(?P<host>.+)",o.netloc)
@@ -129,9 +129,9 @@ class Blueprint:
 			ftp.storbinary("STOR %s" % (filename),file)
 			file.close()
 			ftp.quit()
-			clc.output.Status('SUCCESS',2,'Blueprint package %s Uploaded' % (filename))
+			clc.v1.output.Status('SUCCESS',2,'Blueprint package %s Uploaded' % (filename))
 		except Exception as e:
-			clc.output.Status('ERROR',2,'FTP error %s: %s' % (ftp_url,str(e)))
+			clc.v1.output.Status('ERROR',2,'FTP error %s: %s' % (ftp_url,str(e)))
 
 		return({})
 
@@ -247,7 +247,7 @@ class Blueprint:
 		ids = []
 		for l in dict(linux_lst.items()+windows_lst.items()).values():
 			if l['selected'] and 'OperatingSystem' in l:  ids.append(str(l['OperatingSystem']))
-		clc.output.Status('SUCCESS',2,'Selected operating system IDs: %s' % (" ".join(ids)))
+		clc.v1.output.Status('SUCCESS',2,'Selected operating system IDs: %s' % (" ".join(ids)))
 
 		return(Blueprint.PackagePublish(package,type,visibility,ids))
 

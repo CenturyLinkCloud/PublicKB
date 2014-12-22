@@ -33,7 +33,7 @@ class Account:
 		if not alias:  alias = Account.GetAlias()
 		r = clc.API.v1_call('post','Account/GetAccountDetails',{'AccountAlias': alias})
 		if r['Success'] != True: 
-			if clc.args:  clc.output.Status('ERROR',3,'Error calling %s.   Status code %s.  %s' % ('Account/GetAccountDetails',r['StatusCode'],r['Message']))
+			if clc.args:  clc.v1.output.Status('ERROR',3,'Error calling %s.   Status code %s.  %s' % ('Account/GetAccountDetails',r['StatusCode'],r['Message']))
 			raise Exception('Error calling %s.   Status code %s.  %s' % ('Account/GetAccountDetails',r['StatusCode'],r['Message']))
 		elif int(r['StatusCode']) == 0:  
 			r['AccountDetails']['Status'] = Account.account_status_itos[r['AccountDetails']['Status']]
@@ -45,7 +45,7 @@ class Account:
 		"""Return all cloud locations available to the calling alias."""
 		r = clc.v1.API.Call('post','Account/GetLocations',{})
 		if r['Success'] != True: 
-			if clc.args:  clc.output.Status('ERROR',3,'Error calling %s.   Status code %s.  %s' % ('Account/GetLocations',r['StatusCode'],r['Message']))
+			if clc.args:  clc.v1.output.Status('ERROR',3,'Error calling %s.   Status code %s.  %s' % ('Account/GetLocations',r['StatusCode'],r['Message']))
 			raise Exception('Error calling %s.   Status code %s.  %s' % ('Account/GetLocations',r['StatusCode'],r['Message']))
 		elif int(r['StatusCode']) == 0:  
 			clc.LOCATIONS = [x['Alias'] for x in r['Locations']]
