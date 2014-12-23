@@ -867,9 +867,9 @@ class ExecCommand():
 			elif not supress_output and clc.args.args.format == 'csv':  print clc.v1.output.Csv(r,cols)
 
 			return(r)
-		except clc.v1.Account.eletedException:
+		except clc.AccountDeletedException:
 			clc.v1.output.Status('ERROR',2,'Unable to process, account in deleted state')
-		except clc.v1.Account.oginException:
+		except clc.AccountLoginException:
 			clc.v1.output.Status('ERROR',2,'Transient login error.  Please retry')
 
 

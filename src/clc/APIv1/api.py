@@ -83,14 +83,14 @@ class API():
 				raise Exception(r.json()['Message'])
 			elif int(r.json()['StatusCode']) == 5:  
 				# Account or datacenter does not exist
-				raise clc.v1.Account.oesNotExistException(r.json()['Message'])
+				raise clc.v1.AccountDoesNotExistException(r.json()['Message'])
 			elif int(r.json()['StatusCode']) == 100 and recursion_cnt<2:  
 				# Not logged in - this is a transient failure
 				clc._LOGIN_COOKIE_V1 = False
 				return(clc.v1.API.Call(method,url,payload,silent,hide_errors,recursion_cnt+1))
 			elif int(r.json()['StatusCode']) == 100:  
 				# Not logged in - this keeps recurring - bail
-				raise clc.v1.Account.oginException(r.json()['Message'])
+				raise clc.v1.AccountLoginException(r.json()['Message'])
 			else:
 				if clc.args and (not hide_errors or not silent):  clc.v1.output.Status('ERROR',3,'Error calling %s.   Status code %s.  %s' % (url,r.json()['StatusCode'],r.json()['Message']))
 				raise Exception('Error calling %s.   Status code %s.  %s' % (url,r.json()['StatusCode'],r.json()['Message']))

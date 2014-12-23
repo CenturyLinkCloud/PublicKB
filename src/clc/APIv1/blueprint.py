@@ -110,18 +110,18 @@ class Blueprint:
 		:param package: path to zip file containing package.manifest and supporting scripts
 		:param ftp_url: ftp URL including credentials of the form ftp://user:password@hostname
 		"""
-		o = urlparse.urlparse(ftp_url)
+		#o = urlparse.urlparse(ftp_url)
 		# Very weak URL checking
-		if o.scheme.lower() != "ftp":  
-			clc.v1.output.Status('ERROR',2,'Invalid FTP URL')
-			return
+		#if o.scheme.lower() != "ftp":  
+		#	clc.v1.output.Status('ERROR',2,'Invalid FTP URL')
+		#	return
 
 		# Confirm file exists 
 		if not os.path.isfile(package):
 			clc.v1.output.Status('ERROR',2,'Package file (%s) not found' % (package))
 			return
 
-		m = re.search("(?P<user>.+?):(?P<passwd>.+?)@(?P<host>.+)",o.netloc)
+		m = re.search("ftp://(?P<user>.+?):(?P<passwd>.+?)@(?P<host>.+)",ftp_url)
 		try:
 			ftp = ftplib.FTP(m.group('host'),m.group('user'),m.group('passwd'))
 			file = open(package,'rb')   
