@@ -16,6 +16,10 @@ API Documentaton v2: https://t3n.zendesk.com/categories/20067994-API-v2-0-Beta-
 
 """
 
+from clc.APIv2.account import Account
+from clc.APIv2.datacenter import Datacenter
+from clc.APIv2.api import API
+
 
 ####### module/object vars #######
 V2_API_USERNAME = False

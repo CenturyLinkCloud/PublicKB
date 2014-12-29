@@ -28,19 +28,24 @@ class API():
 
 
 	@staticmethod
-	def _Login_v2():
-		if not clc.V2_API_USERNAME or not clc.V2_API_PASSWD:
+	def _Login():
+		"""Login to retrieve bearer token and set default accoutn and location aliases.
+
+		>>> clc.v2.Account.GetAlias()
+		u'BTDI'
+		"""
+		if not clc.v2.V2_API_USERNAME or not clc.v2.V2_API_PASSWD:
 			clc.v1.output.Status('ERROR',3,'V2 API username and password not provided')
 			raise(clc.APIV2NotEnabled)
 			
-		r = requests.post("%s%s" % (clc.defaults.ENDPOINT_URL_V2,"/authentication/login"), 
-						  data={'username': clc.v2.V2_API_USERNAME, 'password': clc.v2.V2_API_PASSWD},
-						  headers={'content-type': 'application/json'},
+		r = requests.post("%s%s" % (clc.defaults.ENDPOINT_URL_V2,"authentication/login"), 
+						  data={"username": clc.v2.V2_API_USERNAME, "password": clc.v2.V2_API_PASSWD},
 						  verify=API._ResourcePath('clc/cacert.pem'))
 
 		if r.status_code == 200:
 			clc.LOGIN_TOKEN_V2 = r.json()['bearerToken']
 			clc.ALIAS = r.json()['accountAlias']
+			clc.LOCATION = r.json()['locationAlias']
 		elif r.status_code == 400:
 			raise(Exception("Invalid V2 API login.  %s" % (r.json()['message'])))
 		else:
@@ -48,7 +53,7 @@ class API():
 
 
 	@staticmethod
-	def v2_call(method,url,payload):
+	def Call(method,url,payload):
 		"""Execute v2 API call.
 
 		:param url: URL paths associated with the API call
@@ -56,7 +61,7 @@ class API():
 
 		:returns: decoded API json result
 		"""
-		if not clc._LOGIN_TOKEN_V2:  clc.API._Login_v2()
+		if not clc._LOGIN_TOKEN_V2:  clc.API._Login()
 
 		r = requests.request(method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url), 
 		                     params=payload, 
