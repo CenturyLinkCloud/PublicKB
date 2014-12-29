@@ -1,7 +1,7 @@
 #/bin/bash
 
-pydoc -w clc clc.{account,api,billing,blueprint,cli,group,network,output,queue,server,shell,user}
+pydoc -w clc clc.APIv1.{account,api,billing,blueprint,cli,group,network,output,queue,server,shell,user}
 perl -p -i -e "s/keithresar//g" *html
 
-echo git checkout gh-pages
-echo mv *html ../src/
+echo "Manual step  > git checkout gh-pages"
+echo "Manual step  > mv *html ../src/"
