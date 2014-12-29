@@ -132,7 +132,7 @@ def RequestQueueProgress(request_id):
 		p.show(request_details['PercentComplete'])
 		if request_details['CurrentStatus'] in ('Succeeded','Failed'): break
 		time.sleep(2)
-		request_details = clc.Queue.GetStatus(request_id,silent=True)
+		request_details = clc.v1.Queue.GetStatus(request_id,silent=True)
 	p.done()
 	if request_details['CurrentStatus'] == 'Succeeded':  Status('SUCCESS',1,"%s - %s" % (request_details['RequestTitle'],request_details['ProgressDesc']))
 	elif request_details['CurrentStatus'] == 'Failed':  Status('ERROR',3,"%s - %s" % (request_details['RequestTitle'],request_details['ProgressDesc']))
@@ -141,7 +141,7 @@ def RequestQueueProgress(request_id):
 def RequestBlueprintProgress(request_id,location,alias,quiet=False):
 	time_start = time.time()
 	time_task_start = time_start
-	request_details = clc.Blueprint.GetStatus(request_id,location,alias,silent=True)
+	request_details = clc.v1.Blueprint.GetStatus(request_id,location,alias,silent=True)
 	description = request_details['Description']
 	Status('SUCCESS',1,request_details['Description'])
 	if not quiet:  p = progress.Bar(expected_size=100)
@@ -154,7 +154,7 @@ def RequestBlueprintProgress(request_id,location,alias,quiet=False):
 		if not quiet:  p.show(request_details['PercentComplete'])
 		if request_details['CurrentStatus'] in ('Succeeded','Failed'): break
 		time.sleep(2)
-		request_details = clc.Blueprint.GetStatus(request_id,location,alias,silent=True)
+		request_details = clc.v1.Blueprint.GetStatus(request_id,location,alias,silent=True)
 	#p.done()
 	if not quiet:  sys.stdout.write("\033[K")	# clear line
 	duration_secs = int(time.time()-time_start)

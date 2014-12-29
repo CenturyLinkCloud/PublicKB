@@ -113,7 +113,7 @@ Retrieves  details from specific alias or credentials default alias if none is p
 List all users associated with the specified alias.
 
 ```python
->>> pprint.pprint(clc.User.GetUsers(alias="BTDI"))
+>>> clc.User.GetUsers(alias="BTDI")
 [{u'AccountAlias': u'BTDI',
   u'AllowSMS': True,
   u'AlternateEmailAddress': None,
@@ -216,11 +216,11 @@ Return user details
 Account status modifications return no results.
 
 ```python
->>> pprint.pprint(clc.User.SuspendUser("test12665"))
+>>> clc.User.SuspendUser("test12665")
 None
->>> pprint.pprint(clc.User.UnsuspendUser("test12665"))
+>>> clc.User.UnsuspendUser("test12665")
 None
->>> pprint.pprint(clc.User.DeleteUser("test12665"))
+>>> clc.User.DeleteUser("test12665")
 None
 ```
 
@@ -370,7 +370,7 @@ Retrieve details on one or more servers.
 Retrieve administrative credentials for specified server(s). 
 
 ```python
->>> pprint.pprint(clc.Server.GetCredentials(servers=['WA1BTDITSTSER01',],alias=None))
+>>> clc.Server.GetCredentials(servers=['WA1BTDITSTSER01',],alias=None)
 [{u'Message': u'Server credentials retrieved',
   u'Password': u'#A$zids90djvRhH)',
   u'StatusCode': 0,
@@ -636,7 +636,7 @@ List networks associated with the specified location or if None is specified wil
 Retrieve IP allocation summary for specied network.
 
 ```python
->>> pprint.pprint(clc.Network.GetNetworkDetails(alias='BTDI',network='vlan_948_10.80.148'))
+>>> clc.Network.GetNetworkDetails(alias='BTDI',network='vlan_948_10.80.148')
 [{u'Address': u'66.150.174.123',
   u'AddressType': u'MIP',
   u'IsClaimed': True,

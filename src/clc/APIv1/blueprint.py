@@ -220,7 +220,7 @@ class Blueprint:
 		# fetch OS list
 		linux_lst = {'L': {'selected': False, 'Description': 'All Linux'}}
 		windows_lst = {'W': {'selected': False, 'Description': 'All Windows'}}
-		for r in clc.Server.GetTemplates():
+		for r in clc.v1.Server.GetTemplates():
 			r['selected'] = False
 			if re.search("Windows",r['Description']):  windows_lst[str(r['OperatingSystem'])] = r
 			elif re.search("CentOS|RedHat|Ubuntu",r['Description']):  linux_lst[str(r['OperatingSystem'])] = r

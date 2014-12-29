@@ -46,12 +46,12 @@ class Server:
 		"""
 		if alias is None:  alias = clc.v1.Account.GetAlias()
 		payload = {'AccountAlias': alias }
-		if group:  payload['HardwareGroupID'] = clc.Group.GetGroupID(alias,location,group)
+		if group:  payload['HardwareGroupID'] = clc.v1.Group.GetGroupID(alias,location,group)
 		else:  payload['Location'] = location
 
 		try:
 			r = clc.v1.API.Call('post','Server/GetAllServers', payload)
-			if name_groups:  r['Servers'] = clc.Group.NameGroups(r['Servers'],'HardwareGroupID')
+			if name_groups:  r['Servers'] = clc.v1.Group.NameGroups(r['Servers'],'HardwareGroupID')
 			if int(r['StatusCode']) == 0:  return(r['Servers'])
 		except Exception as e:
 			if str(e)=="Hardware does not exist for location":  return([])
@@ -70,7 +70,7 @@ class Server:
 		for location in clc.LOCATIONS:
 			try:
 				r = clc.v1.API.Call('post','Server/GetAllServers', {'AccountAlias': alias, 'Location': location }, hide_errors=[5,] )
-				if name_groups:  r['Servers'] = clc.Group.NameGroups(r['Servers'],'HardwareGroupID')
+				if name_groups:  r['Servers'] = clc.v1.Group.NameGroups(r['Servers'],'HardwareGroupID')
 				if int(r['StatusCode']) == 0:  servers += r['Servers']
 			except:
 				pass
@@ -134,7 +134,7 @@ class Server:
 		if alias is None:  alias = clc.v1.Account.GetAlias()
 		if location is None:  location = clc.v1.Account.GetLocation()
 		if re.match("^\d+$",group):  groups_id = group
-		else:  groups_id = clc.Group.GetGroupID(alias,location,group)
+		else:  groups_id = clc.v1.Group.GetGroupID(alias,location,group)
 
 		r = clc.v1.API.Call('post','Server/CreateServer', 
 		                    { 'AccountAlias': alias, 'LocationAlias': location, 'Description': description, 'Template': template,
