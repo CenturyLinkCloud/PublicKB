@@ -62,17 +62,28 @@ class AntiAffinity(object):
 
 		self.id = id
 
-		if not alias:  alias = clc.v2.Account.GetAlias()
+		if alias:  self.alias = alias
+		if alias:  self.alias = clc.v2.Account.GetAlias()
 
 		if name:
 			self.name = name
 			self.location = location
 			self.servers = servers
 		else:
-			r = clc.v2.API.Call('GET','antiAffinityPolicies/%s/%s' % (alias,self.id),{})
+			r = clc.v2.API.Call('GET','antiAffinityPolicies/%s/%s' % (self.alias,self.id),{})
 			self.name = r['name']
 			self.location = r['location']
 			self.servers = [obj['id'] for obj in r['links'] if obj['rel'] == "server"]
+
+
+	def Update(self,name):
+		"""Change the policy's name.
+
+		https://t3n.zendesk.com/entries/45066480-Update-Anti-Affinity-Policy
+
+		"""
+		r = clc.v2.API.Call('PUT','antiAffinityPolicies/%s/%s' % (self.alias,self.id),{'name': name})
+		self.name = name
 
 
 	def __str__(self):

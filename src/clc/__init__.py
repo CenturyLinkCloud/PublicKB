@@ -58,4 +58,6 @@ class AccountLoginException(CLCException):
     pass
 class InvalidAPIResponseException(CLCException):
     pass
+class APIFailedResponse(CLCException):
+    pass
 

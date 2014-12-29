@@ -64,9 +64,13 @@ class API():
 		                     params=payload, 
 							 verify=API._ResourcePath('clc/cacert.pem'))
 
-		try:
-			return(r.json())
-		except:
-			raise(clc.InvalidAPIResponseException)
+		if r.status_code==200:
+			try:
+				return(r.json())
+			except:
+				raise(clc.InvalidAPIResponseException)
+		else:
+			print r.text
+			raise(clc.APIFailedResponse)
 
 
