@@ -9,8 +9,6 @@ API v2 - https://t3n.zendesk.com/forums/21645944-Account
 # TODO - Delete Anti-Affinity Policy
 # TODO - Update Anti-Affinity Policy
 # TODO - Create Anti-Affinity Policy
-# TODO - Get Anti-Affinity Policies.  Convenience functions to filter by location
-# TODO - Get Anti-Affinity Policy
 
 
 import clc
@@ -49,8 +47,32 @@ class AntiAffinity(object):
 		return(AntiAffinity.GetAll(alias=alias,location=location))
 
 
-	def __init__(self,id,name=None,location=None,servers=None):
-		pass
+	def __init__(self,id,alias=None,name=None,location=None,servers=None):
+		"""Create AntiAffinity object.
+
+		If parameters are populated then create object location.  
+		Else if only id is supplied issue a Get Policy call
+
+		https://t3n.zendesk.com/entries/44658344-Get-Anti-Affinity-Policy
+
+		>>> clc.v2.AntiAffinity(id="f5b5e523ed8e4604842ec417d5502510")
+		<clc.APIv2.anti_affinity.AntiAffinity object at 0x104753690>
+
+		"""
+
+		self.id = id
+
+		if not alias:  alias = clc.v2.Account.GetAlias()
+
+		if name:
+			self.name = name
+			self.location = location
+			self.servers = servers
+		else:
+			r = clc.v2.API.Call('GET','antiAffinityPolicies/%s/%s' % (alias,self.id),{})
+			self.name = r['name']
+			self.location = r['location']
+			self.servers = [obj['id'] for obj in r['links'] if obj['rel'] == "server"]
 
 
 	def __str__(self):
