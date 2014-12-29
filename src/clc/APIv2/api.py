@@ -64,13 +64,17 @@ class API():
 		                     params=payload, 
 							 verify=API._ResourcePath('clc/cacert.pem'))
 
-		if r.status_code==200:
+		if r.status_code>=200 and r.status_code<300:
 			try:
 				return(r.json())
 			except:
-				raise(clc.InvalidAPIResponseException)
+				return({})
 		else:
-			print r.text
-			raise(clc.APIFailedResponse)
+			try:
+				raise(clc.APIFailedResponse("Response code %s.  %s. %s %s" % (r.status_code,r.json()['message'],method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url))))
+			except clc.APIFailedResponse:
+				pass
+			except:
+				raise(clc.APIFailedResponse("Response code %s. %s. %s %s" % (r.status_code,r.text,method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url))))
 
 

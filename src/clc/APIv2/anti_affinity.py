@@ -6,9 +6,9 @@ These Anti-affinity related functions generally align one-for-one with published
 API v2 - https://t3n.zendesk.com/forums/21645944-Account
 """
 
-# TODO - Delete Anti-Affinity Policy
-# TODO - Update Anti-Affinity Policy
-# TODO - Create Anti-Affinity Policy
+# TODO - Update Anti-Affinity Policy - returning 500 error
+# TODO - Create Anti-Affinity Policy - returning 400 error
+# TODO - Return servers object
 
 
 import clc
@@ -44,7 +44,27 @@ class AntiAffinity(object):
 		[<clc.APIv2.anti_affinity.AntiAffinity object at 0x105eeded0>]
 
 		"""
+		if not location:  location = clc.v2.Account.GetLocation()
+
 		return(AntiAffinity.GetAll(alias=alias,location=location))
+
+
+	@staticmethod
+	def Create(name,alias=None,location=None):  
+		"""Gets a list of anti-affinity policies within a given account.
+
+		https://t3n.zendesk.com/entries/45042770-Create-Anti-Affinity-Policy
+
+		*TODO* Currently returning 400 error:
+		clc.APIFailedResponse: Response code 400. . POST https://api.tier3.com/v2/antiAffinityPolicies/BTDI
+
+		"""
+
+		if not alias:  alias = clc.v2.Account.GetAlias()
+		if not location:  location = clc.v2.Account.GetLocation()
+
+		r = clc.v2.API.Call('POST','antiAffinityPolicies/%s' % alias,{'name': name, 'location': location})
+		return(AntiAffinity(id=r['id'],name=r['name'],location=r['location'],servers=[]))
 
 
 	def __init__(self,id,alias=None,name=None,location=None,servers=None):
@@ -63,7 +83,7 @@ class AntiAffinity(object):
 		self.id = id
 
 		if alias:  self.alias = alias
-		if alias:  self.alias = clc.v2.Account.GetAlias()
+		else:  self.alias = clc.v2.Account.GetAlias()
 
 		if name:
 			self.name = name
@@ -81,9 +101,23 @@ class AntiAffinity(object):
 
 		https://t3n.zendesk.com/entries/45066480-Update-Anti-Affinity-Policy
 
+		*TODO* - currently returning 500 error
+
 		"""
+
 		r = clc.v2.API.Call('PUT','antiAffinityPolicies/%s/%s' % (self.alias,self.id),{'name': name})
 		self.name = name
+
+
+	def Delete(self):
+		"""Delete policy
+
+		https://t3n.zendesk.com/entries/45044330-Delete-Anti-Affinity-Policy
+
+		>>> a = clc.v2.AntiAffinity.GetLocation("WA1")[0]
+		>>> a.Delete()
+		"""
+		r = clc.v2.API.Call('DELETE','antiAffinityPolicies/%s/%s' % (self.alias,self.id),{})
 
 
 	def __str__(self):
