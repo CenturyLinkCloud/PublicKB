@@ -29,11 +29,7 @@ class API():
 
 	@staticmethod
 	def _Login():
-		"""Login to retrieve bearer token and set default accoutn and location aliases.
-
-		>>> clc.v2.Account.GetAlias()
-		u'BTDI'
-		"""
+		"""Login to retrieve bearer token and set default accoutn and location aliases."""
 		if not clc.v2.V2_API_USERNAME or not clc.v2.V2_API_PASSWD:
 			clc.v1.output.Status('ERROR',3,'V2 API username and password not provided')
 			raise(clc.APIV2NotEnabled)
@@ -43,7 +39,7 @@ class API():
 						  verify=API._ResourcePath('clc/cacert.pem'))
 
 		if r.status_code == 200:
-			clc.LOGIN_TOKEN_V2 = r.json()['bearerToken']
+			clc._LOGIN_TOKEN_V2 = r.json()['bearerToken']
 			clc.ALIAS = r.json()['accountAlias']
 			clc.LOCATION = r.json()['locationAlias']
 		elif r.status_code == 400:
@@ -61,22 +57,16 @@ class API():
 
 		:returns: decoded API json result
 		"""
-		if not clc._LOGIN_TOKEN_V2:  clc.API._Login()
+		if not clc._LOGIN_TOKEN_V2:  API._Login()
 
 		r = requests.request(method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url), 
+							 headers={'content-type': 'application/json', 'Authorization': "Bearer %s" % clc._LOGIN_TOKEN_V2},
 		                     params=payload, 
-							 headers={'content-type': 'application/json', 'Bearer': clc._LOGIN_TOKEN_V2},
 							 verify=API._ResourcePath('clc/cacert.pem'))
 
 		try:
-			if int(r.json()['StatusCode']) == 0:  
-				if clc.args:  clc.v1.output.Status('SUCCESS',2,'%s' % (r.json()['Message']))
-				return(r.json())
-			else:
-				if clc.args:  clc.v1.output.Status('ERROR',3,'Error calling %s.   Status code %s.  %s' % (url,r.json()['StatusCode'],r.json()['Message']))
-				raise(Exception("Error calling %s.   Status code %s.  %s" % (url,r.json()['StatusCode'],r.json()['Message'])))
+			return(r.json())
 		except:
-			raise
-			if clc.args:  clc.v1.output.Status('ERROR',3,'Error calling %s.  Server response %s' % (url,r.status_code))
+			raise(clc.InvalidAPIResponseException)
 
 
