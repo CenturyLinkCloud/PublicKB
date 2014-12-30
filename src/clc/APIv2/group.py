@@ -4,6 +4,16 @@ Group related functions.
 These group related functions generally align one-for-one with published API calls categorized in the account category
 
 API v2 - https://t3n.zendesk.com/forums/21013480-Groups
+
+Group object variables:
+
+	group.id
+	group.name
+	group.description
+	group.type
+	group.status
+	group.serverCount
+
 """
 
 # TODO - Get Group Billing Details
@@ -15,23 +25,10 @@ import json
 import clc
 
 class Group(object):
-"""Group object.
-
-Class variables:
-
-	group.id
-	group.name
-	group.description
-	group.type
-	group.status
-	group.serverCount
-
-"""
 
 	@staticmethod
 	def GetAll(root_group_id,alias=None):  
 		"""Gets a list of groups within a given account.
-
 
 		"""
 
