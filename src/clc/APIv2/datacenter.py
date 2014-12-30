@@ -56,7 +56,7 @@ class Datacenter:
 
 
 	def Groups(self):
-		return(clc.v2.Group.GetAll(xxx))
+		return(clc.v2.Group.GetAll(root_group_id=self.root_group_id,alias=self.alias))
 
 
 	def __str__(self):

@@ -17,13 +17,16 @@ import clc
 class Group(object):
 
 	@staticmethod
-	def GetAll(alias=None,location=None):  
+	def GetAll(root_group_id,alias=None):  
 		"""Gets a list of groups within a given account.
 
-		*TODO* API not yet documented
 
 		"""
-		raise(Exception("Not implemented"))
+
+		if alias:  self.alias = alias
+		else:  self.alias = clc.v2.Account.GetAlias()
+
+		r = clc.v2.API.Call('GET','groups/%s/%s' % (self.alias,self.id),{})
 
 
 	@staticmethod
