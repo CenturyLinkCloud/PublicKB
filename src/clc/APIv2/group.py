@@ -6,15 +6,27 @@ These group related functions generally align one-for-one with published API cal
 API v2 - https://t3n.zendesk.com/forums/21013480-Groups
 """
 
-# TODO - Get Group
 # TODO - Get Group Billing Details
 # TODO - Get Group Monitoring Statistics
+# TODO - find group - recursively search to find and return specific group
 
-# TODO - GetLocation ignoring: computelimits, networklimits, horizontalAutoscalePolicyMapping, scheduledActivities
 
+import json
 import clc
 
 class Group(object):
+"""Group object.
+
+Class variables:
+
+	group.id
+	group.name
+	group.description
+	group.type
+	group.status
+	group.serverCount
+
+"""
 
 	@staticmethod
 	def GetAll(root_group_id,alias=None):  
@@ -23,12 +35,11 @@ class Group(object):
 
 		"""
 
-		if alias:  self.alias = alias
-		else:  self.alias = clc.v2.Account.GetAlias()
+		if not alias:  alias = clc.v2.Account.GetAlias()
 
 		groups = []
-		for r in clc.v2.API.Call('GET','groups/%s/%s' % (self.alias,root_group_id),{})['groups']:
-			groups.append(Group(id=r['id'],alias=alias,json_defn=r))
+		for r in clc.v2.API.Call('GET','groups/%s/%s' % (alias,root_group_id),{})['groups']:
+			groups.append(Group(id=r['id'],alias=alias,group_obj=r))
 		
 		return(groups)
 
@@ -43,7 +54,7 @@ class Group(object):
 		raise(Exception("Not implemented"))
 
 
-	def __init__(self,id,alias=None,json_defn=None):
+	def __init__(self,id,alias=None,group_obj=None):
 		"""Create Group object.
 
 		If parameters are populated then create object location.  
@@ -57,8 +68,13 @@ class Group(object):
 		if alias:  self.alias = alias
 		else:  self.alias = clc.v2.Account.GetAlias()
 
-		if not json_defn:  json_defn = clc.v2.API.Call('GET','groups/%s/%s' % (self.alias,self.id),{})
-		self.data = json.loads(json_defn)
+		if group_obj:  self.data = group_obj
+		else:  self.data = json.loads(clc.v2.API.Call('GET','groups/%s/%s' % (self.alias,self.id),{}))
+
+
+	def __getattr__(self,var):
+		if var in self.data:  return(self.data[var])
+		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,var)))
 
 
 	def Update(self):
