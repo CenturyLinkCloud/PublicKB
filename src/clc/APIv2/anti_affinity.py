@@ -51,7 +51,7 @@ class AntiAffinity(object):
 
 	@staticmethod
 	def Create(name,alias=None,location=None):  
-		"""Gets a list of anti-affinity policies within a given account.
+		"""Creates a new anti-affinity policy within a given account.
 
 		https://t3n.zendesk.com/entries/45042770-Create-Anti-Affinity-Policy
 
