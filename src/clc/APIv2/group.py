@@ -25,28 +25,6 @@ class Group(object):
 		"""
 		raise(Exception("Not implemented"))
 
-	
-	@staticmethod
-	def GetLocation(location=None,alias=None):
-		"""Returns a list of groups within a specific location.
-
-		https://t3n.zendesk.com/entries/31026420-Get-Data-Center-Group
-
-		"""
-
-		if not alias:  alias = clc.v2.Account.GetAlias()
-		if not location:  location = clc.v2.Account.GetLocation()
-
-		groups = []
-		for r in clc.v2.API.Call('GET','datacenters/%s/%s' % (alias,location),{'GroupLinks': 'true'})['links']:
-			if r['rel'] != 'group':  continue
-			groups.append(Group(id=r['id'],name=r['name'],alias=alias,location=location))
-			import pprint
-			pprint.pprint(r)
-
-		return(groups)
-
-
 
 	@staticmethod
 	def Create(name,alias=None,location=None):  
