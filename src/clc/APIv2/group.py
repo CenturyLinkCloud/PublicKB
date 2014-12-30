@@ -26,7 +26,11 @@ class Group(object):
 		if alias:  self.alias = alias
 		else:  self.alias = clc.v2.Account.GetAlias()
 
-		r = clc.v2.API.Call('GET','groups/%s/%s' % (self.alias,self.id),{})
+		groups = []
+		for r in clc.v2.API.Call('GET','groups/%s/%s' % (self.alias,root_group_id),{})['groups']:
+			groups.append(Group(id=r['id'],alias=alias,json_defn=r))
+		
+		return(groups)
 
 
 	@staticmethod
@@ -39,16 +43,12 @@ class Group(object):
 		raise(Exception("Not implemented"))
 
 
-	def __init__(self,id,alias=None,name=None,location=None):
+	def __init__(self,id,alias=None,json_defn=None):
 		"""Create Group object.
 
 		If parameters are populated then create object location.  
 		Else if only id is supplied issue a Get Policy call
 
-		https://t3n.zendesk.com/entries/44658344-Get-Anti-Affinity-Policy
-
-		>>> clc.v2.AntiAffinity(id="f5b5e523ed8e4604842ec417d5502510")
-		<clc.APIv2.anti_affinity.AntiAffinity object at 0x104753690>
 
 		"""
 
@@ -56,19 +56,9 @@ class Group(object):
 
 		if alias:  self.alias = alias
 		else:  self.alias = clc.v2.Account.GetAlias()
-		if location:  self.location = location
-		else:  self.location = clc.v2.Account.GetLocation()
 
-		if name:
-			self.name = name
-			self.location = location
-			#self.servers = servers
-		else:
-			pass
-			#r = clc.v2.API.Call('GET','antiAffinityPolicies/%s/%s' % (self.alias,self.id),{})
-			#self.name = r['name']
-			#self.location = r['location']
-			#self.servers = [obj['id'] for obj in r['links'] if obj['rel'] == "server"]
+		if not json_defn:  json_defn = clc.v2.API.Call('GET','groups/%s/%s' % (self.alias,self.id),{})
+		self.data = json.loads(json_defn)
 
 
 	def Update(self):
@@ -90,5 +80,5 @@ class Group(object):
 
 
 	def __str__(self):
-		pass
+		return(self.data['name'])
 
