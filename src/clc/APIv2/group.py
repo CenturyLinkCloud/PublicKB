@@ -10,6 +10,7 @@ API v2 - https://t3n.zendesk.com/forums/21013480-Groups
 # TODO - Get Group Billing Details
 # TODO - Get Group Monitoring Statistics
 
+# TODO - GetLocation ignoring: computelimits, networklimits, horizontalAutoscalePolicyMapping, scheduledActivities
 
 import clc
 
@@ -29,10 +30,22 @@ class Group(object):
 	def GetLocation(location=None,alias=None):
 		"""Returns a list of groups within a specific location.
 
-		*TODO* API not yet documented
+		https://t3n.zendesk.com/entries/31026420-Get-Data-Center-Group
 
 		"""
-		raise(Exception("Not implemented"))
+
+		if not alias:  alias = clc.v2.Account.GetAlias()
+		if not location:  location = clc.v2.Account.GetLocation()
+
+		groups = []
+		for r in clc.v2.API.Call('GET','datacenters/%s/%s' % (alias,location),{'GroupLinks': 'true'})['links']:
+			if r['rel'] != 'group':  continue
+			groups.append(Group(id=r['id'],name=r['name'],alias=alias,location=location))
+			import pprint
+			pprint.pprint(r)
+
+		return(groups)
+
 
 
 	@staticmethod
@@ -45,7 +58,7 @@ class Group(object):
 		raise(Exception("Not implemented"))
 
 
-	def __init__(self,id,alias=None,name=None,location=None,servers=None):
+	def __init__(self,id,alias=None,name=None,location=None):
 		"""Create Group object.
 
 		If parameters are populated then create object location.  
@@ -62,16 +75,19 @@ class Group(object):
 
 		if alias:  self.alias = alias
 		else:  self.alias = clc.v2.Account.GetAlias()
+		if location:  self.location = location
+		else:  self.location = clc.v2.Account.GetLocation()
 
 		if name:
 			self.name = name
 			self.location = location
-			self.servers = servers
+			#self.servers = servers
 		else:
-			r = clc.v2.API.Call('GET','antiAffinityPolicies/%s/%s' % (self.alias,self.id),{})
-			self.name = r['name']
-			self.location = r['location']
-			self.servers = [obj['id'] for obj in r['links'] if obj['rel'] == "server"]
+			pass
+			#r = clc.v2.API.Call('GET','antiAffinityPolicies/%s/%s' % (self.alias,self.id),{})
+			#self.name = r['name']
+			#self.location = r['location']
+			#self.servers = [obj['id'] for obj in r['links'] if obj['rel'] == "server"]
 
 
 	def Update(self):

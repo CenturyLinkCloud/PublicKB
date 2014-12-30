@@ -64,6 +64,8 @@ class API():
 		                     params=payload, 
 							 verify=API._ResourcePath('clc/cacert.pem'))
 
+		#print r.status_code
+		#print r.text
 		if r.status_code>=200 and r.status_code<300:
 			try:
 				return(r.json())
