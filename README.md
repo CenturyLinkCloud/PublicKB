@@ -1,6 +1,6 @@
 # CenturyLink Cloud CLI and Python SDK
 
-This repository contains a ***Python SDK*** and a command line iinterface **CLI** (based on the SDK) to interact with the ***[CenturyLink Cloud](http://www.centurylinkcloud.com)*** API.  At present this aligns most closely to [V1](https://t3n.zendesk.com/categories/20012068-API-v1-0) of the CenturyLink Cloud API though efforts are in process to merge [V2](https://t3n.zendesk.com/categories/20067994-API-v2-0-Beta-) API as it nears full release.
+This repository contains a *Python SDK* and a command line interface *CLI* (based on the SDK) to interact with the *[CenturyLink Cloud](http://www.centurylinkcloud.com)* API.  At present this aligns most closely to [V1](https://t3n.zendesk.com/categories/20012068-API-v1-0) of the CenturyLink Cloud API though efforts are in process to merge [V2](https://t3n.zendesk.com/categories/20067994-API-v2-0-Beta-) API as it nears full release.
 
 ## Contents
 
@@ -11,7 +11,7 @@ This repository contains a ***Python SDK*** and a command line iinterface **CLI*
 
 ## Installing
 
-### Via Pyhthon's pip
+### Via Python's pip
 Cross-platform installation is available via pypi.  Requires *Python 2.7* - this is not currently compatible with Python 3.
 If you have pip already installed the following command will get you running:
 ```

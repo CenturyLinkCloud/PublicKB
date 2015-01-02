@@ -19,6 +19,8 @@ Group object variables:
 # TODO - Get Group Billing Details
 # TODO - Get Group Monitoring Statistics
 # TODO - find group - recursively search to find and return specific group
+# TODO - async operations need to return a work queue class item for further followup
+# TODO - utility class to rewrite timestamps as unixtime
 
 
 import json
@@ -48,6 +50,8 @@ class Group(object):
 		*TODO* API not yet documented
 
 		"""
+		if  not alias:  alias = clc.v2.Account.GetAlias()
+
 		raise(Exception("Not implemented"))
 
 
@@ -57,6 +61,8 @@ class Group(object):
 		If parameters are populated then create object location.  
 		Else if only id is supplied issue a Get Policy call
 
+		>>> clc.v2.Group(id="wa1-1798")
+		<clc.APIv2.group.Group object at 0x109188b90>
 
 		"""
 
@@ -66,7 +72,7 @@ class Group(object):
 		else:  self.alias = clc.v2.Account.GetAlias()
 
 		if group_obj:  self.data = group_obj
-		else:  self.data = json.loads(clc.v2.API.Call('GET','groups/%s/%s' % (self.alias,self.id),{}))
+		else:  self.data = clc.v2.API.Call('GET','groups/%s/%s' % (self.alias,self.id),{})
 
 
 	def __getattr__(self,var):
@@ -84,12 +90,9 @@ class Group(object):
 
 
 	def Delete(self):
-		"""Delete group
-
-		*TODO* API not yet documented
-
-		"""
-		raise(Exception("Not implemented"))
+		"""Delete group."""
+		#status = {u'href': u'/v2/operations/btdi/status/wa1-126437', u'id': u'wa1-126437', u'rel': u'status'}
+		status = clc.v2.API.Call('DELETE','groups/%s/%s' % (self.alias,self.id),{})
 
 
 	def __str__(self):
