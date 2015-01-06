@@ -62,6 +62,24 @@ class Account:
 		else:  self.alias = clc.v2.Account.GetAlias()
 
 		self.data = clc.v2.API.Call('GET','accounts/%s' % (self.alias),{})
+		import pprint
+		pprint.pprint(self.data)
+
+
+	def ParentAccount(self):
+		"""Return the parent account object or None if at the root level for provided credentials.
+
+		# sub-account
+		>>> clc.v2.Account(alias='KRAP').ParentAccount()
+		<clc.APIv2.account.Account instance at 0x10b77ab90>
+
+		# trying to reach above root level
+		>>> clc.v2.Account(alias='KRAP').ParentAccount().ParentAccount()
+		None
+		"""
+
+		return(Account(alias=self.data['parentAlias']))
+
 
 	def __getattr__(self,var):
 		if var in self.data:  return(self.data[var])
