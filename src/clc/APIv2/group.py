@@ -23,6 +23,7 @@ Group object variables:
 # TODO - find group - recursively search to find and return specific group
 # TODO - async operations need to return a work queue class item for further followup
 # TODO - utility class to rewrite timestamps as unixtime
+# TODO - server power actions - these take a list of server names which we know
 
 
 import json

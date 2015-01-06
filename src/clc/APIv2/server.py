@@ -46,6 +46,7 @@ Server object variables:
 # TODO - Reset Server
 # TODO - Power On Server
 # TODO - Power Off Server
+# TODO - remove constructor server_obj if not used
 
 import json
 import clc
