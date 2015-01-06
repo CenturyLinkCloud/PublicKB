@@ -88,8 +88,7 @@ class API():
 
 		if debug:  
 			API._DebugRequest(request=requests.Request(method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url),data=payload,
-			                                           headers={'content-type': 'application/json', 
-													            'Authorization': "Bearer %s" % clc._LOGIN_TOKEN_V2}).prepare(),
+			                                           headers={'Authorization': "Bearer %s" % clc._LOGIN_TOKEN_V2}).prepare(),
 			                  response=r)
 
 		if r.status_code>=200 and r.status_code<300:

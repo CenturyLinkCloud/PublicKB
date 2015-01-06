@@ -36,13 +36,14 @@ class Requests(object):
 		else:  self.alias = clc.v2.Account.GetAlias()
 
 		self.requests = []
+		print requests_lst
 		for r in requests_lst:
 			if 'server' in r:  
 				context_key = "server"
 				context_val = r['server']
 			else:  raise(Exception("Unknown context"))
 
-			if not r['isQueued']:  raise(clc.CLCException("%s '%s' not added to queue: %s" % (context_val,context_key,r['errorMessage'])))
+			if not r['isQueued']:  raise(clc.CLCException("%s '%s' not added to queue: %s" % (context_key,context_val,r['errorMessage'])))
 
 			self.requests.append(Request(id,alias=self.alias,request_obj={'context_key': context_key, 'context_val': context_val}))
 
@@ -61,19 +62,18 @@ class Request(object):
 
 		self.time_created = time.time()
 		self.time_executed = None
-		self.time_complete = None
+		self.time_completed = None
 
 		if alias:  self.alias = alias
 		else:  self.alias = clc.v2.Account.GetAlias()
 
-		if server_obj:  self.data = server_obj
+		if request_obj:  self.data = request_obj
 		else:  self.data = {'context_key': None, 'context_val': None}
 		self.data = dict({'status': None}.items() + self.data.items())
 
 
 	def __getattr__(self,var):
 		if var in self.data:  return(self.data[var])
-		elif var in self.data['details']:  return(self.data[var])
 		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,var)))
 
 
@@ -93,8 +93,9 @@ class Request(object):
 		poll_freq option is in seconds
 
 		"""
-		while not self.time_completed
+		while not self.time_completed:
 			status = self.Status()
+			print status
 			if status == 'executing':
 				if not self.time_executed:  self.time_executed = time.time()
 			elif status == 'succeeded': 
@@ -103,6 +104,8 @@ class Request(object):
 				# TODO - need to ID best reaction for resumed status (e.g. manual intervention)
 				self.time_completed = time.time()
 				raise(clc.CLCException("%s %s execution %s" % (self.context_key,self.context_val,status)))
+
+			sys.sleep(poll_freq)
 
 
 	def Server(self):

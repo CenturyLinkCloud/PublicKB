@@ -128,9 +128,7 @@ class Server(object):
 
 	
 	def _Operation(self,operation):
-		data = clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),{'serverIds': self.id})
-		import pprint
-		pprint.pprint(data)
+		return(clc.v2.Requests(clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),{'serverIds': self.id},debug=True)))
 
 
 	def Pause(self):  return(self._Operation('pause'))
@@ -146,10 +144,8 @@ class Server(object):
 
 		"""
 
-		data = clc.v2.API.Call('POST','operations/%s/servers/createSnapshot' % (self.alias),
-		                       {'serverIds': self.id, 'snapshotExpirationDays': expiration_days},debug=True)
-		import pprint
-		pprint.pprint(data)
+		return(clc.v2.Requests(clc.v2.API.Call('POST','operations/%s/servers/createSnapshot' % (self.alias),
+		                                       {'serverIds': self.id, 'snapshotExpirationDays': expiration_days})))
 
 
 #	def Create(self,name,description=None):  
