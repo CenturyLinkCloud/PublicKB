@@ -1,57 +1,21 @@
 """
-Server related functions.  
+Queue related functions.  
 
-These server related functions generally align one-for-one with published API calls categorized in the account category
+These queue related functions generally align one-for-one with published API calls categorized in the queue category
 
-API v2 - https://t3n.zendesk.com/forums/21613150-Servers
+API v2 - https://t3n.zendesk.com/forums/21772620-Queue
 
 Server object variables:
 
-	server.id
-	server.description
-	server.cpu
-	server.memoryMB
-	server.powerState
-	server.storageGB
-	server.groupId
-	server.isTemplate
-	server.locationId
-	server.name
-	server.os
-	server.osType
-	server.status
-	server.type
-	server.storageType
-	server.inMaintenanceMode
 
 """
 
-# TODO - details: ipaddresses, alertpolicies, customfields, snapshots
-# TODO - links - billing, statistics, activites, public IPs, alert policies, anti-affinit, autoscale, credentials, ip address
-# TODO - changeInfo
-# TODO - Update Public IP Address
-# TODO - Pause Server
-# TODO - Delete Server
-# TODO - Remove Public IP Address
-# TODO - Get Public IP Address
-# TODO - Add Public IP Address
-# TODO - Execute Package
-# TODO - Set Maintenance Mode
-# TODO - Start Maintenance Mode
-# TODO - Stop Maintenance Mode
-# TODO - Create Server
-# TODO - Create Snapshot
-# TODO - Shut Down Server
-# TODO - Reboot Server
-# TODO - Reset Server
-# TODO - Power On Server
-# TODO - Power Off Server
-# TODO - remove constructor server_obj if not used
+# TODO - implement wait until
 
 import json
 import clc
 
-class Server(object):
+class Queue(object):
 
 #	@staticmethod
 #	def GetAll(root_group_id,alias=None):  

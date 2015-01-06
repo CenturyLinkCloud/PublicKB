@@ -75,10 +75,16 @@ class API():
 		"""
 		if not clc._LOGIN_TOKEN_V2:  API._Login()
 
-		r = requests.request(method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url), 
-							 headers={'Authorization': "Bearer %s" % clc._LOGIN_TOKEN_V2},
-		                     data=payload, 
-							 verify=API._ResourcePath('clc/cacert.pem'))
+		if method=="GET":
+			r = requests.request(method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url), 
+								 headers={'Authorization': "Bearer %s" % clc._LOGIN_TOKEN_V2},
+			                     params=payload, 
+								 verify=API._ResourcePath('clc/cacert.pem'))
+		else:
+			r = requests.request(method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url), 
+								 headers={'Authorization': "Bearer %s" % clc._LOGIN_TOKEN_V2},
+			                     data=payload, 
+								 verify=API._ResourcePath('clc/cacert.pem'))
 
 		if debug:  
 			API._DebugRequest(request=requests.Request(method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url),data=payload,

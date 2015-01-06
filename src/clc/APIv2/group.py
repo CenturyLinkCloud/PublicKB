@@ -87,8 +87,8 @@ class Group(object):
 
 		if not description:  description = name
 
-		#clc.v2.API.Call('POST','groups/%s' % (self.alias),{'name': name, 'description': description, 'parentGroupId': self.id},debug=True)
-		raise(Exception("Not implemented"))
+		r = Group(clc.v2.API.Call('POST','groups/%s' % (self.alias),{'name': name, 'description': description, 'parentGroupId': self.id})
+		return(Group(id=r['id'],alias=self.alias,group_obj=r))
 
 
 	def Update(self):
