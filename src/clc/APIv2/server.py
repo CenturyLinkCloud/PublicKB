@@ -126,6 +126,18 @@ class Server(object):
 
 		return(clc.v2.Group(id=self.groupId,alias=self.alias))
 
+	
+	def _Operation(self,operation):
+		#data = clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),{'serverIds': [self.id,]},debug=True)
+		#data = clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),{'serverIds': self.id},debug=True)
+		#data = clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),[self.id,],debug=True)
+		data = clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),{'serverIds': [self.id,'null']},debug=True)
+		import pprint
+		pprint.pprint(data)
+
+
+	def Pause(self):  return(self._Operation('pause'))
+
 
 #	def Create(self,name,description=None):  
 #		"""Creates a new group
