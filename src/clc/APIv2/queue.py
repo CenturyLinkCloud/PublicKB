@@ -10,9 +10,8 @@ Server object variables:
 
 """
 
-# TODO - implement wait until
 
-import json
+import sys
 import clc
 
 
@@ -86,7 +85,12 @@ class Request(object):
 		If status is 'succeeded' return
 		Else raise exception
 
+		poll_freq option is in seconds
+
 		"""
+		status = self.Status()
+		if status == 'executing' or status == 'notStarted':   -- loop
+		else:  raise(clc.CLCException("%s %s execution %s" % (self.context_key,self.context_val,status)))
 
 
 	def Server(self):
