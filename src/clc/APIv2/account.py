@@ -25,8 +25,6 @@ Account object variables:
 # TODO - change account
 # TODO - delete account
 # TODO - list subaccounts
-# TODO - get primary datacenter
-# TODO - get parent account
 
 import clc
 
@@ -62,8 +60,6 @@ class Account:
 		else:  self.alias = clc.v2.Account.GetAlias()
 
 		self.data = clc.v2.API.Call('GET','accounts/%s' % (self.alias),{})
-		import pprint
-		pprint.pprint(self.data)
 
 
 	def ParentAccount(self):
@@ -79,6 +75,19 @@ class Account:
 		"""
 
 		return(Account(alias=self.data['parentAlias']))
+
+
+	def PrimaryDatacenter(self):
+		"""Returns the primary datacenter object associated with the account.
+
+		>>> clc.v2.Account(alias='BTDI').PrimaryDatacenter()
+		<clc.APIv2.datacenter.Datacenter instance at 0x10a45ce18>
+		>>> print _
+		WA1
+
+		"""
+
+		return(clc.v2.Datacenter(alias=self.alias,location=self.data['primaryDataCenter']))
 
 
 	def __getattr__(self,var):
