@@ -43,11 +43,7 @@ class Requests(object):
 
 			if not r['isQueued']:  raise(clc.CLCException("%s '%s' not added to queue: %s" % (context_val,context_key,r['errorMessage'])))
 
-			self.requests.append(Request(id,alias=self.alias,request_obj={'status': r['
-		if server_obj:  self.data = server_obj
-		else:  self.data = clc.v2.API.Call('GET','servers/%s/%s' % (self.alias,self.id),{})
-		#import pprint
-		#pprint.pprint(self.data)
+			self.requests.append(Request(id,alias=self.alias,request_obj={'context_key': context_key, 'context_val': context_val}))
 
 
 
