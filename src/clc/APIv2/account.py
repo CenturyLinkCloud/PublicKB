@@ -96,7 +96,7 @@ class Account:
 
 
 	def __str__(self):
-		return(self.data['name'])
+		return(self.data['accountAlias'])
 
 
 

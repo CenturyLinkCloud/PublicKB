@@ -85,7 +85,11 @@ class Server(object):
 	def Account(self):
 		"""Return account object for account containing this server.
 
-
+		>>> clc.v2.Server("CA3BTDICNTRLM01").Account()
+		<clc.APIv2.account.Account instance at 0x108789878>
+		>>> print _
+		BTDI
+		
 		"""
 
 		return(clc.v2.Account(alias=self.alias))

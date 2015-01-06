@@ -106,7 +106,14 @@ class Group(object):
 	
 
 	def Account(self):
-		"""Return account object."""
+		"""Return account object.
+
+		>>> clc.v2.Group(alias="BTDI",id="wa1-837").Account()
+		<clc.APIv2.account.Account instance at 0x108789878>
+		>>> print _
+		BTDI
+		
+		"""
 
 		return(clc.v2.Account(alias=self.alias))
 
