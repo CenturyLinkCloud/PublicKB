@@ -7,12 +7,17 @@ API v2 - https://t3n.zendesk.com/forums/21613150-Servers
 
 Server object variables:
 
-	#group.id
-	#group.name
-	#group.description
-	#group.type
-	#group.status
-	#group.serverCount
+	server.id
+	server.description
+	server.groupId
+	server.isTemplate
+	server.locationId
+	server.name
+	server.os
+	server.osType
+	server.status
+	server.type
+	server.storageType
 
 """
 
@@ -57,11 +62,26 @@ class Server(object):
 
 		if server_obj:  self.data = server_obj
 		else:  self.data = clc.v2.API.Call('GET','servers/%s/%s' % (self.alias,self.id),{})
+		import pprint
+		pprint.pprint(self.data)
 
 
 	def __getattr__(self,var):
 		if var in self.data:  return(self.data[var])
 		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,var)))
+
+
+	def Group(self):
+		"""Return group object for group containing this server.
+
+		>>> clc.v2.Server("CA3BTDICNTRLM01").Group()
+		<clc.APIv2.group.Group object at 0x10b07b7d0>
+		>>> print _
+		Ansible Managed Servers
+
+		"""
+
+		return(clc.v2.Group(id=self.groupId,alias=self.alias))
 
 
 #	def Create(self,name,description=None):  
