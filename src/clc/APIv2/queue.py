@@ -23,7 +23,7 @@ class Queue(object):
 
 class Requests(object):
 
-	def __init__(self,requests_ls,alias=None):
+	def __init__(self,requests_lst,alias=None):
 		"""Create Requests object.
 
 		Treats one or more requests as an atomic unit.
@@ -35,6 +35,15 @@ class Requests(object):
 		if alias:  self.alias = alias
 		else:  self.alias = clc.v2.Account.GetAlias()
 
+		self.requests = []
+		for r in requests_lst:
+			if 'server' in r:  
+				context_key = "server"
+				context_val = r['server']
+
+			if not r['isQueued']:  raise(clc.CLCException("%s '%s' not added to queue: %s" % (context_val,context_key,r['errorMessage'])))
+
+			self.requests.append(Request(id,alias=self.alias,request_obj={'status': r['
 		if server_obj:  self.data = server_obj
 		else:  self.data = clc.v2.API.Call('GET','servers/%s/%s' % (self.alias,self.id),{})
 		#import pprint
@@ -44,7 +53,7 @@ class Requests(object):
 
 class Request(object):
 
-	def __init__(self,id,alias=None,server_obj=None):
+	def __init__(self,id,alias=None,request_obj=None):
 		"""Create Queue object.
 
 		https://t3n.zendesk.com/entries/32859214-Get-Server
