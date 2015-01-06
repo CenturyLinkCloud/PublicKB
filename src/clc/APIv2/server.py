@@ -128,15 +128,19 @@ class Server(object):
 
 	
 	def _Operation(self,operation):
-		#data = clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),{'serverIds': [self.id,]},debug=True)
-		#data = clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),{'serverIds': self.id},debug=True)
-		#data = clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),[self.id,],debug=True)
-		data = clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),{'serverIds': [self.id]},debug=True)
+		data = clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),{'serverIds': self.id})
 		import pprint
 		pprint.pprint(data)
 
 
 	def Pause(self):  return(self._Operation('pause'))
+	def ShutDown(self):  return(self._Operation('shutDown'))
+	def Reboot(self):  return(self._Operation('reboot'))
+	def Reset(self):  return(self._Operation('reset'))
+	def PowerOn(self):  return(self._Operation('powerOn'))
+	def PowerOff(self):  return(self._Operation('powerOff'))
+
+	#def Delete(self):  return(self._Operation('pause'))
 
 
 	def Snapshot(self,expiration_days=7):
@@ -145,7 +149,7 @@ class Server(object):
 		"""
 
 		data = clc.v2.API.Call('POST','operations/%s/servers/createSnapshot' % (self.alias),
-		                       {'serverIds': [self.id,'xx'], 'snapshotExpirationDays': expiration_days},debug=True)
+		                       {'serverIds': self.id, 'snapshotExpirationDays': expiration_days},debug=True)
 		import pprint
 		pprint.pprint(data)
 
@@ -173,7 +177,9 @@ class Server(object):
 #
 #
 #	def Delete(self):
-#		"""Delete group."""
+#		"""Delete server.
+#		
+#		"""
 #		#status = {u'href': u'/v2/operations/btdi/status/wa1-126437', u'id': u'wa1-126437', u'rel': u'status'}
 #		status = clc.v2.API.Call('DELETE','groups/%s/%s' % (self.alias,self.id),{})
 
