@@ -11,6 +11,7 @@ Server object variables:
 """
 
 
+import time
 import sys
 import clc
 
@@ -58,6 +59,10 @@ class Request(object):
 
 		self.id = id
 
+		self.time_created = time.time()
+		self.time_executed = None
+		self.time_complete = None
+
 		if alias:  self.alias = alias
 		else:  self.alias = clc.v2.Account.GetAlias()
 
@@ -89,7 +94,10 @@ class Request(object):
 
 		"""
 		status = self.Status()
-		if status == 'executing' or status == 'notStarted':   -- loop
+		#if status == 'executing' or status == 'notStarted':   -- loop
+		if status == 'executing':
+			if not self.time_executed:  self.time_executed = time.time()
+			.or status == 'notStarted':   -- loop
 		else:  raise(clc.CLCException("%s %s execution %s" % (self.context_key,self.context_val,status)))
 
 
