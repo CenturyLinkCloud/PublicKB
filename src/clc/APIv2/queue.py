@@ -40,6 +40,7 @@ class Requests(object):
 			if 'server' in r:  
 				context_key = "server"
 				context_val = r['server']
+			else:  raise(Exception("Unknown context"))
 
 			if not r['isQueued']:  raise(clc.CLCException("%s '%s' not added to queue: %s" % (context_val,context_key,r['errorMessage'])))
 
