@@ -93,12 +93,16 @@ class Request(object):
 		poll_freq option is in seconds
 
 		"""
-		status = self.Status()
-		#if status == 'executing' or status == 'notStarted':   -- loop
-		if status == 'executing':
-			if not self.time_executed:  self.time_executed = time.time()
-			.or status == 'notStarted':   -- loop
-		else:  raise(clc.CLCException("%s %s execution %s" % (self.context_key,self.context_val,status)))
+		while not self.time_completed
+			status = self.Status()
+			if status == 'executing':
+				if not self.time_executed:  self.time_executed = time.time()
+			elif status == 'succeeded': 
+				self.time_completed = time.time()
+			elif status in ("failed", "resumed" or "unknown"): 
+				# TODO - need to ID best reaction for resumed status (e.g. manual intervention)
+				self.time_completed = time.time()
+				raise(clc.CLCException("%s %s execution %s" % (self.context_key,self.context_val,status)))
 
 
 	def Server(self):
