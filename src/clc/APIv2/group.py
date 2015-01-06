@@ -16,6 +16,8 @@ Group object variables:
 
 """
 
+# TODO - Create group
+# TODO - Update group
 # TODO - Get Group Billing Details
 # TODO - Get Group Monitoring Statistics
 # TODO - find group - recursively search to find and return specific group
@@ -101,6 +103,12 @@ class Group(object):
 		"""Delete group."""
 		#status = {u'href': u'/v2/operations/btdi/status/wa1-126437', u'id': u'wa1-126437', u'rel': u'status'}
 		status = clc.v2.API.Call('DELETE','groups/%s/%s' % (self.alias,self.id),{})
+	
+
+	def Account(self):
+		"""Return account object."""
+
+		return(clc.v2.Account(alias=self.alias))
 
 
 	def __str__(self):
