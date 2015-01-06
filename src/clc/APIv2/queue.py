@@ -15,26 +15,37 @@ Server object variables:
 import json
 import clc
 
+
 class Queue(object):
-
-#	@staticmethod
-#	def GetAll(root_group_id,alias=None):  
-#		"""Gets a list of groups within a given account.
-#
-#		"""
-#
-#		if not alias:  alias = clc.v2.Account.GetAlias()
-#
-#		groups = []
-#		for r in clc.v2.API.Call('GET','groups/%s/%s' % (alias,root_group_id),{})['groups']:
-#			groups.append(Group(id=r['id'],alias=alias,server_obj=r))
-#		
-#		return(groups)
+	pass
 
 
+
+class Requests(object):
+
+	def __init__(self,requests_ls,alias=None):
+		"""Create Requests object.
+
+		Treats one or more requests as an atomic unit.
+		e.g. if performing a simulated group operation then succeed
+		or fail as a group
+
+		"""
+
+		if alias:  self.alias = alias
+		else:  self.alias = clc.v2.Account.GetAlias()
+
+		if server_obj:  self.data = server_obj
+		else:  self.data = clc.v2.API.Call('GET','servers/%s/%s' % (self.alias,self.id),{})
+		#import pprint
+		#pprint.pprint(self.data)
+
+
+
+class Request(object):
 
 	def __init__(self,id,alias=None,server_obj=None):
-		"""Create Server object.
+		"""Create Queue object.
 
 		https://t3n.zendesk.com/entries/32859214-Get-Server
 

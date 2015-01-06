@@ -87,7 +87,7 @@ class Group(object):
 
 		if not description:  description = name
 
-		r = Group(clc.v2.API.Call('POST','groups/%s' % (self.alias),{'name': name, 'description': description, 'parentGroupId': self.id})
+		r = clc.v2.API.Call('POST','groups/%s' % (self.alias),{'name': name, 'description': description, 'parentGroupId': self.id})
 		return(Group(id=r['id'],alias=self.alias,group_obj=r))
 
 

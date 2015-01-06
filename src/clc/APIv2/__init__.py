@@ -19,7 +19,7 @@ API Documentaton v2: https://t3n.zendesk.com/categories/20067994-API-v2-0-Beta-
 from clc.APIv2.account import Account
 from clc.APIv2.group import Group
 from clc.APIv2.server import Server
-from clc.APIv2.queue import Queue
+from clc.APIv2.queue import Queue, Request, Requests
 from clc.APIv2.anti_affinity import AntiAffinity
 from clc.APIv2.datacenter import Datacenter
 from clc.APIv2.api import API
