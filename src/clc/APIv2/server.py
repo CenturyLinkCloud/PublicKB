@@ -33,20 +33,20 @@ class Server(object):
 #
 #		groups = []
 #		for r in clc.v2.API.Call('GET','groups/%s/%s' % (alias,root_group_id),{})['groups']:
-#			groups.append(Group(id=r['id'],alias=alias,group_obj=r))
+#			groups.append(Group(id=r['id'],alias=alias,server_obj=r))
 #		
 #		return(groups)
 
 
 
-	def __init__(self,id,alias=None,group_obj=None):
+	def __init__(self,id,alias=None,server_obj=None):
 		"""Create Server object.
 
-		If parameters are populated then create object location.  
-		Else if only id is supplied issue a Get Policy call
+		#If parameters are populated then create object location.  
+		#Else if only id is supplied issue a Get Policy call
 
-		>>> clc.v2.Group(id="wa1-1798")
-		<clc.APIv2.group.Group object at 0x109188b90>
+		#>>> clc.v2.Group(id="wa1-1798")
+		#<clc.APIv2.group.Group object at 0x109188b90>
 
 		"""
 
@@ -55,8 +55,8 @@ class Server(object):
 		if alias:  self.alias = alias
 		else:  self.alias = clc.v2.Account.GetAlias()
 
-		if group_obj:  self.data = group_obj
-		else:  self.data = clc.v2.API.Call('GET','groups/%s/%s' % (self.alias,self.id),{})
+		if server_obj:  self.data = server_obj
+		else:  self.data = clc.v2.API.Call('GET','servers/%s/%s' % (self.alias,self.id),{})
 
 
 	def __getattr__(self,var):
