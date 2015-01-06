@@ -27,7 +27,25 @@ Server object variables:
 """
 
 # TODO - details: ipaddresses, alertpolicies, customfields, snapshots
-
+# TODO - links - billing, statistics, activites, public IPs, alert policies, anti-affinit, autoscale, credentials, ip address
+# TODO - changeInfo
+# TODO - Update Public IP Address
+# TODO - Pause Server
+# TODO - Delete Server
+# TODO - Remove Public IP Address
+# TODO - Get Public IP Address
+# TODO - Add Public IP Address
+# TODO - Execute Package
+# TODO - Set Maintenance Mode
+# TODO - Start Maintenance Mode
+# TODO - Stop Maintenance Mode
+# TODO - Create Server
+# TODO - Create Snapshot
+# TODO - Shut Down Server
+# TODO - Reboot Server
+# TODO - Reset Server
+# TODO - Power On Server
+# TODO - Power Off Server
 
 import json
 import clc
