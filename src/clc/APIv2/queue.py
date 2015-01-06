@@ -64,12 +64,29 @@ class Request(object):
 
 		if server_obj:  self.data = server_obj
 		else:  self.data = {'context_key': None, 'context_val': None}
+		self.data = dict({'status': None}.items() + self.data.items())
 
 
 	def __getattr__(self,var):
 		if var in self.data:  return(self.data[var])
 		elif var in self.data['details']:  return(self.data[var])
 		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,var)))
+
+
+	def Status(self,cached=False):
+		if not cached or not self.data['status']:  
+			self.data['status'] = clc.v2.API.Call('GET','/operations/%s/status/%s' % (self.alias,self.id),{},debug=True)
+		return(self.data['status'])
+		
+
+	def WaitUntilComplete(self,poll_freq=2):
+		"""Poll until status is completed.
+
+		If status is 'notStarted' or 'executing' continue polling.
+		If status is 'succeeded' return
+		Else raise exception
+
+		"""
 
 
 	def Server(self):
