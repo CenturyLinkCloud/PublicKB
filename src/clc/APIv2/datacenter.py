@@ -64,6 +64,18 @@ class Datacenter:
 			self.root_group_name = [obj['name'] for obj in r['links'] if obj['rel'] == "group"][0]
 
 
+	def RootGroup(self):
+		"""Returns group object for datacenter root group.
+
+		>>> wa1 = clc.v2.Datacenter.GetDatacenters()[0]
+		>>> wa1.Groups()
+		[<clc.APIv2.group.Group object at 0x10144f290>, <clc.APIv2.group.Group object at 0x10144f210>]
+
+		"""
+
+		return(clc.v2.Group(id=self.root_group_id,alias=self.alias))
+
+
 	def Groups(self):
 		"""Returns groups object rooted at this datacenter.
 

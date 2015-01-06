@@ -49,7 +49,7 @@ class API():
 
 
 	@staticmethod
-	def Call(method,url,payload):
+	def Call(method,url,payload,debug=False):
 		"""Execute v2 API call.
 
 		:param url: URL paths associated with the API call
@@ -64,8 +64,12 @@ class API():
 		                     params=payload, 
 							 verify=API._ResourcePath('clc/cacert.pem'))
 
-		#print r.status_code
-		#print r.text
+		if debug:
+			print "Request: %s %s%s" % (method,clc.defaults.ENDPOINT_URL_V2,url)
+			print "\tpayload=%s" % payload
+			print "Response: status_code: %s" % r.status_code
+			print r.text
+
 		if r.status_code>=200 and r.status_code<300:
 			try:
 				return(r.json())
