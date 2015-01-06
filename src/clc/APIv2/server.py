@@ -131,12 +131,23 @@ class Server(object):
 		#data = clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),{'serverIds': [self.id,]},debug=True)
 		#data = clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),{'serverIds': self.id},debug=True)
 		#data = clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),[self.id,],debug=True)
-		data = clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),{'serverIds': [self.id,'null']},debug=True)
+		data = clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),{'serverIds': [self.id]},debug=True)
 		import pprint
 		pprint.pprint(data)
 
 
 	def Pause(self):  return(self._Operation('pause'))
+
+
+	def Snapshot(self,expiration_days=7):
+		"""Take a Hypervisor level snapshot retained for between 1 and 10 days (7 is default).
+
+		"""
+
+		data = clc.v2.API.Call('POST','operations/%s/servers/createSnapshot' % (self.alias),
+		                       {'serverIds': [self.id,'xx'], 'snapshotExpirationDays': expiration_days},debug=True)
+		import pprint
+		pprint.pprint(data)
 
 
 #	def Create(self,name,description=None):  

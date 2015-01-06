@@ -28,6 +28,22 @@ class API():
 
 
 	@staticmethod
+	def _DebugRequest(request,response):
+		print('{}\n{}\n{}\n\n{}\n'.format(
+			'-----------REQUEST-----------',
+			request.method + ' ' + request.url,
+			'\n'.join('{}: {}'.format(k, v) for k, v in request.headers.items()),
+			request.body,
+		))
+
+		print('{}\n{}\n\n{}'.format(
+			'-----------RESPONSE-----------',
+			'status: ' + str(response.status_code),
+			response.text
+		))
+
+
+	@staticmethod
 	def _Login():
 		"""Login to retrieve bearer token and set default accoutn and location aliases."""
 		if not clc.v2.V2_API_USERNAME or not clc.v2.V2_API_PASSWD:
@@ -60,15 +76,15 @@ class API():
 		if not clc._LOGIN_TOKEN_V2:  API._Login()
 
 		r = requests.request(method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url), 
-							 headers={'content-type': 'application/json', 'Authorization': "Bearer %s" % clc._LOGIN_TOKEN_V2},
-		                     params=payload, 
+							 headers={'Authorization': "Bearer %s" % clc._LOGIN_TOKEN_V2},
+		                     data=payload, 
 							 verify=API._ResourcePath('clc/cacert.pem'))
 
-		if debug:
-			print "Request: %s %s%s" % (method,clc.defaults.ENDPOINT_URL_V2,url)
-			print "\tpayload=%s" % payload
-			print "Response: status_code: %s" % r.status_code
-			print r.text
+		if debug:  
+			API._DebugRequest(request=requests.Request(method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url),data=payload,
+			                                           headers={'content-type': 'application/json', 
+													            'Authorization': "Bearer %s" % clc._LOGIN_TOKEN_V2}).prepare(),
+			                  response=r)
 
 		if r.status_code>=200 and r.status_code<300:
 			try:
