@@ -9,6 +9,10 @@ Server object variables:
 
 	server.id
 	server.description
+	server.cpu
+	server.memoryMB
+	server.powerState
+	server.storageGB
 	server.groupId
 	server.isTemplate
 	server.locationId
@@ -18,9 +22,11 @@ Server object variables:
 	server.status
 	server.type
 	server.storageType
+	server.inMaintenanceMode
 
 """
 
+# TODO - details: ipaddresses, alertpolicies, customfields, snapshots
 
 
 import json
@@ -47,11 +53,15 @@ class Server(object):
 	def __init__(self,id,alias=None,server_obj=None):
 		"""Create Server object.
 
+		https://t3n.zendesk.com/entries/32859214-Get-Server
+
 		#If parameters are populated then create object location.  
 		#Else if only id is supplied issue a Get Policy call
 
-		#>>> clc.v2.Group(id="wa1-1798")
-		#<clc.APIv2.group.Group object at 0x109188b90>
+		>>> clc.v2.Server("CA3BTDICNTRLM01")
+		<clc.APIv2.server.Server object at 0x10c28fe50>
+		>>> print _
+		CA3BTDICNTRLM01
 
 		"""
 
@@ -62,13 +72,23 @@ class Server(object):
 
 		if server_obj:  self.data = server_obj
 		else:  self.data = clc.v2.API.Call('GET','servers/%s/%s' % (self.alias,self.id),{})
-		import pprint
-		pprint.pprint(self.data)
+		#import pprint
+		#pprint.pprint(self.data)
 
 
 	def __getattr__(self,var):
 		if var in self.data:  return(self.data[var])
+		elif var in self.data['details']:  return(self.data[var])
 		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,var)))
+
+
+	def Account(self):
+		"""Return account object for account containing this server.
+
+
+		"""
+
+		return(clc.v2.Account(alias=self.alias))
 
 
 	def Group(self):
