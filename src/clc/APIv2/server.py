@@ -153,6 +153,10 @@ class Server(object):
 	def PowerOff(self):  return(self._Operation('powerOff'))
 
 
+	def GetSnapshots(self):
+		return([obj['name'] for obj in self.data['details']['snapshots']])
+
+
 	def CreateSnapshot(self,delete_existing=True,expiration_days=7):
 		"""Take a Hypervisor level snapshot retained for between 1 and 10 days (7 is default).
 
@@ -161,7 +165,7 @@ class Server(object):
 
 		"""
 
-		if len(self.data['details']['snapshots']):  i
+		if len(self.data['details']['snapshots']):  
 			if delete_existing:  self.DeleteSnapshot()
 			else:  raise(clc.CLCException("Snapshot already exists cannot take another"))
 
@@ -169,7 +173,11 @@ class Server(object):
 		                                       {'serverIds': self.id, 'snapshotExpirationDays': expiration_days})))
 
 
-	def DeleteSnapshot(self,ids=[]):
+	def DeleteSnapshot(self,names=None):
+		if names is None:  names = self.GetSnapshots()
+
+		for name in names:
+			
 		print self.data['details']['snapshots']
 
 

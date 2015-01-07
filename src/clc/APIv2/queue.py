@@ -36,6 +36,9 @@ class Requests(object):
 		else:  self.alias = clc.v2.Account.GetAlias()
 
 		self.requests = []
+		self.error_requests = []
+		self.success_requests = []
+
 		for r in requests_lst:
 			if 'server' in r:  
 				context_key = "server"
@@ -61,6 +64,13 @@ class Requests(object):
 					raise(clc.CLCException("%s '%s' not added to queue: %s" % (context_key,context_val,r['errorMessage'])))
 
 
+	def __add__(self,obj):
+		if self.alias != obj.alias:  raise(ArithmeticError("Cannot add Requests operating on different aliases"))
+
+		return(Requests(obj.requests+obj.error_requests+obj.success_requests+
+		                self.requests+self.error_requests+self.success_requests,alias=self.alias))
+
+
 	def WaitUntilComplete(self,poll_freq=2):
 		"""Poll until all request objects have completed.
 
@@ -76,9 +86,6 @@ class Requests(object):
 		0
 
 		"""
-
-		self.error_requests = []
-		self.success_requests = []
 
 		while len(self.requests):
 			cur_requests = []
