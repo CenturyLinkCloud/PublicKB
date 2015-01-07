@@ -43,7 +43,9 @@ class Requests(object):
 			if 'server' in r:  
 				context_key = "server"
 				context_val = r['server']
-			else:  raise(Exception("Unknown context"))
+			else:  
+				context_key = "Unknown"
+				context_val = "Unknown"
 
 			if r['isQueued']:  
 				self.requests.append(Request(r['links'][0]['id'],alias=self.alias,request_obj={'context_key': context_key, 'context_val': context_val}))

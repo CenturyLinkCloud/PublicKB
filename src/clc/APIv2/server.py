@@ -166,7 +166,8 @@ class Server(object):
 		"""
 
 		if len(self.data['details']['snapshots']):  
-			if delete_existing:  self.DeleteSnapshot()
+			if delete_existing:  
+				if self.DeleteSnapshot().WaitUntilComplete():  raise(clc.CLCException("Error deleting snapshots"))
 			else:  raise(clc.CLCException("Snapshot already exists cannot take another"))
 
 		return(clc.v2.Requests(clc.v2.API.Call('POST','operations/%s/servers/createSnapshot' % (self.alias),
@@ -178,12 +179,23 @@ class Server(object):
 
 		requests_lst = []
 		for name in names:
-			name_links = [obj['links'] for obj in self.data['details']['snapshots'] if obj['name'==name]][0]
+			name_links = [obj['links'] for obj in self.data['details']['snapshots'] if obj['name']==name][0]
 			print name_links
-			d = clc.v2.Requests(clc.v2.API.Call('DELETE',[obj['href'] for obj in name_links if obj['rel']=='delete'][0],debug=True))
-			return(d)
+			requests_lst.append(clc.v2.Requests(clc.v2.API.Call('DELETE',[obj['href'] for obj in name_links if obj['rel']=='delete'][0],debug=True)))
 			
-		print self.data['details']['snapshots']
+		return(sum(requests_lst))
+
+
+	def DeleteSnapshot(self,names=None):
+		if names is None:  names = self.GetSnapshots()
+
+		requests_lst = []
+		for name in names:
+			name_links = [obj['links'] for obj in self.data['details']['snapshots'] if obj['name']==name][0]
+			print name_links
+			requests_lst.append(clc.v2.Requests(clc.v2.API.Call('DELETE',[obj['href'] for obj in name_links if obj['rel']=='delete'][0],debug=True)))
+			
+		return(sum(requests_lst))
 
 
 #	def Create(self,name,description=None):  
