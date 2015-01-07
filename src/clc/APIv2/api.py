@@ -101,12 +101,18 @@ class API():
 				return({})
 		else:
 			try:
-				raise(clc.APIFailedResponse("Response code %s.  %s. %s %s" % 
-				                            (r.status_code,r.json()['message'],method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url))))
+				e = clc.APIFailedResponse("Response code %s.  %s. %s %s" % 
+				                          (r.status_code,r.json()['message'],method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url)))
+				e.response_status_code = r.status_code
+				e.response_text = r.text
+				raise(e)
 			except clc.APIFailedResponse:
 				pass
 			except:
-				raise(clc.APIFailedResponse("Response code %s. %s. %s %s" % 
-				                            (r.status_code,r.text,method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url))))
+				e = clc.APIFailedResponse("Response code %s. %s. %s %s" % 
+				                         (r.status_code,r.text,method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url)))
+				e.response_status_code = r.status_code
+				e.response_text = r.text
+				raise(e)
 
 

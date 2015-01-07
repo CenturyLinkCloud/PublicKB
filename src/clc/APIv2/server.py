@@ -84,9 +84,11 @@ class Server(object):
 		else:  self.alias = clc.v2.Account.GetAlias()
 
 		if server_obj:  self.data = server_obj
-		else:  self.data = clc.v2.API.Call('GET','servers/%s/%s' % (self.alias,self.id),{})
-		#import pprint
-		#pprint.pprint(self.data)
+		else:  
+			try:
+				self.data = clc.v2.API.Call('GET','servers/%s/%s' % (self.alias,self.id),{})
+			except clc.APIFailedResponse as e:
+				if e.response_status_code==404:  raise(clc.CLCException("Server does not exist"))
 
 
 	def __getattr__(self,var):

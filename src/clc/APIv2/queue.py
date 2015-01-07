@@ -59,6 +59,32 @@ class Requests(object):
 			self.requests.append(Request(r['id'],alias=self.alias,request_obj={'context_key': context_key, 'context_val': context_val}))
 
 
+	def WaitUntilComplete(self,poll_freq=2):
+		"""Poll until all request objects have completed.
+
+		If status is 'notStarted' or 'executing' continue polling.
+		If status is 'succeeded' return
+		Else raise exception
+
+		poll_freq option is in seconds
+
+		"""
+
+		self.error_requests = []
+		self.success_requests = []
+
+		while len(self.requests):
+			cur_requests = []
+			for request in cur_requests:
+				status = request.Status()
+				if status in ('notStarted','executing','resumed'):  cur_requests.append(request)
+				elif status == 'succeeded':  self.success_requests.append(request)
+				elif status in ("failed", "unknown"): self.error_requests.append(request)
+
+			self.requests = cur_requests
+			sys.sleep(poll_freq)	# alternately - sleep for the delta between start time and 2s
+
+
 
 class Request(object):
 
@@ -106,7 +132,7 @@ class Request(object):
 		"""
 		while not self.time_completed:
 			status = self.Status()
-			print status
+			print "id=%s status=%s" % (self.id,status)
 			if status == 'executing':
 				if not self.time_executed:  self.time_executed = time.time()
 			elif status == 'succeeded': 
