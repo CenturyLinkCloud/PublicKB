@@ -75,6 +75,11 @@ class API():
 		"""
 		if not clc._LOGIN_TOKEN_V2:  API._Login()
 
+		# If executing refs provided in API they are abs paths,
+		# Else refs we build in the sdk are relative
+		if url[0]=='/':  "%s%s" % (clc.defaults.ENDPOINT_URL_V2,url)
+		else:  "%s/v2/%s" % (clc.defaults.ENDPOINT_URL_V2,url)
+
 		headers = {'Authorization': "Bearer %s" % clc._LOGIN_TOKEN_V2}
 		if type(payload) is str:  headers['content-type'] = "Application/json" # added for server ops with str payload
 

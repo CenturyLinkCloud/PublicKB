@@ -176,7 +176,12 @@ class Server(object):
 	def DeleteSnapshot(self,names=None):
 		if names is None:  names = self.GetSnapshots()
 
+		requests_lst = []
 		for name in names:
+			name_links = [obj['links'] for obj in self.data['details']['snapshots'] if obj['name'==name][0]
+			print name_links
+			d = clc.v2.Requests(clc.v2.API.Call('DELETE',[obj['href'] for obj in name_links if obj['rel']='delete'][0],debug=True))
+			return(d)
 			
 		print self.data['details']['snapshots']
 
