@@ -80,8 +80,7 @@ process. These tasks are performed after the server and its OS is deployed –op
 		* <u>execute script</u> - browse the Platform’s public and private library of scripts to be performed after the OS is installed.
 		* <u>Schedule a server lifespan</u> – schedule the virtual machine to be deleted at a defined period.
 
-	14. Select the Create upon completion
-server task – reboot, add disk, add IP address, snapshot server
+	14. Select the Create upon completion server task – reboot, add disk, add IP address, snapshot server
 install software – browse the Platform’s public and private software library and then select which software you wish to have installed. Note: Commercial software license fees may be apply.
 execute script - browse the Platform’s public and private library of scripts to be performed after the OS is installed.
 Schedule a server lifespan – schedule the virtual machine to be deleted at a defined period.
