@@ -26,11 +26,11 @@ Server object variables:
 
 """
 
+# TODO - Create Snapshot - if snapshot exists then remove otherwise snapshot will fail.  parameter to force removal if exists else raise exception
 # TODO - details: ipaddresses, alertpolicies, customfields, snapshots
 # TODO - links - billing, statistics, activites, public IPs, alert policies, anti-affinit, autoscale, credentials, ip address
 # TODO - changeInfo
 # TODO - Update Public IP Address
-# TODO - Pause Server
 # TODO - Delete Server
 # TODO - Remove Public IP Address
 # TODO - Get Public IP Address
@@ -40,12 +40,6 @@ Server object variables:
 # TODO - Start Maintenance Mode
 # TODO - Stop Maintenance Mode
 # TODO - Create Server
-# TODO - Create Snapshot
-# TODO - Shut Down Server
-# TODO - Reboot Server
-# TODO - Reset Server
-# TODO - Power On Server
-# TODO - Power Off Server
 # TODO - remove constructor server_obj if not used
 
 import json
@@ -128,7 +122,7 @@ class Server(object):
 
 	
 	def _Operation(self,operation):
-		return(clc.v2.Requests(clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),{'serverIds': self.id},debug=True)))
+		return(clc.v2.Requests(clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),'["%s"]' % self.id)))
 
 
 	def Pause(self):  return(self._Operation('pause'))

@@ -65,7 +65,7 @@ class API():
 
 
 	@staticmethod
-	def Call(method,url,payload,debug=False):
+	def Call(method,url,payload={},debug=False):
 		"""Execute v2 API call.
 
 		:param url: URL paths associated with the API call
@@ -75,14 +75,17 @@ class API():
 		"""
 		if not clc._LOGIN_TOKEN_V2:  API._Login()
 
+		headers = {'Authorization': "Bearer %s" % clc._LOGIN_TOKEN_V2}
+		if type(payload) is str:  headers['content-type'] = "Application/json" # added for server ops with str payload
+
 		if method=="GET":
 			r = requests.request(method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url), 
-								 headers={'Authorization': "Bearer %s" % clc._LOGIN_TOKEN_V2},
+								 headers=headers,
 			                     params=payload, 
 								 verify=API._ResourcePath('clc/cacert.pem'))
 		else:
 			r = requests.request(method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url), 
-								 headers={'Authorization': "Bearer %s" % clc._LOGIN_TOKEN_V2},
+								 headers=headers,
 			                     data=payload, 
 								 verify=API._ResourcePath('clc/cacert.pem'))
 
@@ -98,10 +101,12 @@ class API():
 				return({})
 		else:
 			try:
-				raise(clc.APIFailedResponse("Response code %s.  %s. %s %s" % (r.status_code,r.json()['message'],method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url))))
+				raise(clc.APIFailedResponse("Response code %s.  %s. %s %s" % 
+				                            (r.status_code,r.json()['message'],method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url))))
 			except clc.APIFailedResponse:
 				pass
 			except:
-				raise(clc.APIFailedResponse("Response code %s. %s. %s %s" % (r.status_code,r.text,method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url))))
+				raise(clc.APIFailedResponse("Response code %s. %s. %s %s" % 
+				                            (r.status_code,r.text,method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url))))
 
 

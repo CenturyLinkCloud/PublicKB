@@ -36,16 +36,26 @@ class Requests(object):
 		else:  self.alias = clc.v2.Account.GetAlias()
 
 		self.requests = []
-		print requests_lst
+		exception_lst = []
 		for r in requests_lst:
 			if 'server' in r:  
 				context_key = "server"
 				context_val = r['server']
 			else:  raise(Exception("Unknown context"))
 
-			if not r['isQueued']:  raise(clc.CLCException("%s '%s' not added to queue: %s" % (context_key,context_val,r['errorMessage'])))
+			if not r['isQueued']:  
+				# If we're dealing with a list of responses and we have an error with one I'm not sure how
+				# folks would expect this to behave.  If server is already in desired state thus the request
+				# fails that shouldn't be an exception.  If we're running against n tasks and just one has an
+				# issue we need a reasonable way to report on the error but also follow the remaining tasks.
+				#
+				# For no-op failures we just won't create an object and our queue wait time will be faster.
+				# For actual failures we'll wait until all tasks have reached a conclusion then .....
+				if r['errorMessage'] == "The server already in desired state.":  pass
+				else:
+					raise(clc.CLCException("%s '%s' not added to queue: %s" % (context_key,context_val,r['errorMessage'])))
 
-			self.requests.append(Request(id,alias=self.alias,request_obj={'context_key': context_key, 'context_val': context_val}))
+			self.requests.append(Request(r['id'],alias=self.alias,request_obj={'context_key': context_key, 'context_val': context_val}))
 
 
 
@@ -79,7 +89,7 @@ class Request(object):
 
 	def Status(self,cached=False):
 		if not cached or not self.data['status']:  
-			self.data['status'] = clc.v2.API.Call('GET','/operations/%s/status/%s' % (self.alias,self.id),{},debug=True)
+			self.data['status'] = clc.v2.API.Call('GET','operations/%s/status/%s' % (self.alias,self.id),{},debug=True)
 		return(self.data['status'])
 		
 
