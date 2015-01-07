@@ -26,8 +26,7 @@ Server object variables:
 
 """
 
-# TODO - Create Snapshot - if snapshot exists then remove otherwise snapshot will fail.  parameter to force removal if exists else raise exception
-# TODO - details: ipaddresses, alertpolicies, customfields, snapshots
+# TODO - details: ipaddresses, alertpolicies, customfields
 # TODO - links - billing, statistics, activites, public IPs, alert policies, anti-affinit, autoscale, credentials, ip address
 # TODO - changeInfo
 # TODO - Update Public IP Address
@@ -161,7 +160,10 @@ class Server(object):
 		"""Take a Hypervisor level snapshot retained for between 1 and 10 days (7 is default).
 
 		Currently only one snapshop may exist at a time, thus will delete snapshots if one already
-		exists before taking this snapshot.
+		exists before taking this snapshot.  Returns a Request object that can be waited on.
+
+		>>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT02').CreateSnapshot().WaitUntilComplete()
+		0
 
 		"""
 
@@ -175,27 +177,32 @@ class Server(object):
 
 
 	def DeleteSnapshot(self,names=None):
+		"""Removes an existing Hypervisor level snapshot.
+
+		Supply one or more snapshot names to delete them concurrently.
+		If no snapshot names are supplied will delete all existing snapshots.
+
+		>>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT02').DeleteSnapshot().WaitUntilComplete()
+		0
+
+		"""
+
 		if names is None:  names = self.GetSnapshots()
 
 		requests_lst = []
 		for name in names:
 			name_links = [obj['links'] for obj in self.data['details']['snapshots'] if obj['name']==name][0]
-			print name_links
 			requests_lst.append(clc.v2.Requests(clc.v2.API.Call('DELETE',[obj['href'] for obj in name_links if obj['rel']=='delete'][0],debug=True)))
 			
 		return(sum(requests_lst))
 
 
-	def DeleteSnapshot(self,names=None):
-		if names is None:  names = self.GetSnapshots()
+	def RestoreSnapshot(self,name=None):
+		if not len(self.data['details']['snapshots']):  raise(clc.CLCException("No snapshots exist"))
+		if name is None:  name = self.GetSnapshots()[0]
 
-		requests_lst = []
-		for name in names:
-			name_links = [obj['links'] for obj in self.data['details']['snapshots'] if obj['name']==name][0]
-			print name_links
-			requests_lst.append(clc.v2.Requests(clc.v2.API.Call('DELETE',[obj['href'] for obj in name_links if obj['rel']=='delete'][0],debug=True)))
-			
-		return(sum(requests_lst))
+		name_links = [obj['links'] for obj in self.data['details']['snapshots'] if obj['name']==name][0]
+		return(clc.v2.Requests(clc.v2.API.Call('GET',[obj['href'] for obj in name_links if obj['rel']=='restore'][0])))
 
 
 #	def Create(self,name,description=None):  
