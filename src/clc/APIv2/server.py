@@ -153,13 +153,24 @@ class Server(object):
 	def PowerOff(self):  return(self._Operation('powerOff'))
 
 
-	def Snapshot(self,expiration_days=7):
+	def CreateSnapshot(self,delete_existing=True,expiration_days=7):
 		"""Take a Hypervisor level snapshot retained for between 1 and 10 days (7 is default).
+
+		Currently only one snapshop may exist at a time, thus will delete snapshots if one already
+		exists before taking this snapshot.
 
 		"""
 
+		if len(self.data['details']['snapshots']):  i
+			if delete_existing:  self.DeleteSnapshot()
+			else:  raise(clc.CLCException("Snapshot already exists cannot take another"))
+
 		return(clc.v2.Requests(clc.v2.API.Call('POST','operations/%s/servers/createSnapshot' % (self.alias),
 		                                       {'serverIds': self.id, 'snapshotExpirationDays': expiration_days})))
+
+
+	def DeleteSnapshot(self,ids=[]):
+		print self.data['details']['snapshots']
 
 
 #	def Create(self,name,description=None):  
