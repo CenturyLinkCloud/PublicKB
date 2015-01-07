@@ -61,11 +61,6 @@ Below are a series of step-by-step instructions for completing the most common t
 	5. Choose the appropriate Storage Type (Standard or Premium) for the new virtual machine. The
 performance characteristics of VM storage are the same for Standard or Premium (see: [http://help.tier3.com/entries/21819996-Cloud-Server-Instance-Size-and-Performance](http://help.tier3.com/entries/21819996-Cloud-Server-Instance-Size-and-Performance)) – and only differ in backup data retention and DR/BC functionality (see: [http://help.tier3.com/entries/21861680-Tier-3-Backup-and-Recovery-Services](http://help.tier3.com/entries/21861680-Tier-3-Backup-and-Recovery-Services)). Lastly within the dropdown, if you are provisioning a server that has Hyperscale available within a data center you will see as an option to deploy such a system. Hyperscale server are optimized for NoSQL workloads, Hadoop, and other web-scale architectures.
 	6. Type in a root/administrator password in the fields provided.
-
-		Notes:
-
-		* **IMPORTANT:** In order to ensure the utmost security, this password should not be the same password as the user’s Control Portal password(s).
-		* You may also elect to leave the password field(s) blank, and the Platform will generate a password for you. Users may then view their passwords on the server’s property page within the Control Portal.
 	7. Select the Next button to proceed to Step 2.
 	8. Place the Virtual Machine in the appropriate network VLAN.
 	9. Utilize the DNS servers listed or change the IPs for specific DNS needs.
