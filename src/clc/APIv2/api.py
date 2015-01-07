@@ -104,6 +104,7 @@ class API():
 				e = clc.APIFailedResponse("Response code %s.  %s. %s %s" % 
 				                          (r.status_code,r.json()['message'],method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url)))
 				e.response_status_code = r.status_code
+				e.response_json = r.json()
 				e.response_text = r.text
 				raise(e)
 			except clc.APIFailedResponse:
@@ -112,6 +113,7 @@ class API():
 				e = clc.APIFailedResponse("Response code %s. %s. %s %s" % 
 				                         (r.status_code,r.text,method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url)))
 				e.response_status_code = r.status_code
+				e.response_json = {}	# or should this be None?
 				e.response_text = r.text
 				raise(e)
 

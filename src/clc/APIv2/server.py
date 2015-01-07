@@ -129,7 +129,20 @@ class Server(object):
 
 	
 	def _Operation(self,operation):
-		return(clc.v2.Requests(clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),'["%s"]' % self.id)))
+		"""Execute specified operations task against one or more servers.
+
+		Returns a clc.v2.Requests object.  If error due to server(s) already being in
+		the requested state this is not raised as an error at this level.
+		>>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT02').PowerOn().WaitUntilComplete()
+		0
+
+		"""
+
+		try:
+			return(clc.v2.Requests(clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),'["%s"]' % self.id),alias=self.alias))
+		except clc.APIFailedResponse as e:
+			# Most likely a queue add error presented as a 400.  Let Requests parse this
+			return(clc.v2.Requests(e.response_json,alias=self.alias))
 
 
 	def Pause(self):  return(self._Operation('pause'))

@@ -10,7 +10,7 @@ Server object variables:
 
 """
 
-# TODO - Do something with timing info from Request and Requests
+# TODO - Do something with timing info from Request and Requests?
 
 import time
 import clc
@@ -53,6 +53,8 @@ class Requests(object):
 				# For no-op failures we just won't create an object and our queue wait time will be faster.
 				# For actual failures we'll wait until all tasks have reached a conclusion then .....
 				if r['errorMessage'] == "The server already in desired state.":  pass
+				elif r['errorMessage'] == "The operation cannot be queued because the server cannot be found or it is not in a valid state.":
+					raise(Exception("do we pass on this or take action? %s" % r['errorMessage']))
 				else:
 					# TODO - need to ID other reasons for not queuing and known reasons don't raise out of the
 					#        entire process
@@ -69,6 +71,9 @@ class Requests(object):
 		poll_freq option is in seconds
 
 		Returns an Int the number of unsuccessful requests.  This behavior is subject to change.
+
+		>>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT02').PowerOn().WaitUntilComplete()
+		0
 
 		"""
 
