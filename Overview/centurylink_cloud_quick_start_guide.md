@@ -9,6 +9,7 @@ date: 7-10-2014
 ---
 
 #CenturyLink Cloud Quick Start Guide
+#CenturyLink Cloud Quick Start Guide
 This document describes how to utilize the basic functions of the CenturyLink Cloud (CLC).
 
 **This document include an overview of the Control Portal as well as instructions on how to:**
