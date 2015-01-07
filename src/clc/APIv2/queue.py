@@ -36,7 +36,6 @@ class Requests(object):
 		else:  self.alias = clc.v2.Account.GetAlias()
 
 		self.requests = []
-		exception_lst = []
 		for r in requests_lst:
 			if 'server' in r:  
 				context_key = "server"
@@ -53,6 +52,8 @@ class Requests(object):
 				# For actual failures we'll wait until all tasks have reached a conclusion then .....
 				if r['errorMessage'] == "The server already in desired state.":  pass
 				else:
+					# TODO - need to ID other reasons for not queuing and known reasons don't raise out of the
+					#        entire process
 					raise(clc.CLCException("%s '%s' not added to queue: %s" % (context_key,context_val,r['errorMessage'])))
 
 			self.requests.append(Request(r['id'],alias=self.alias,request_obj={'context_key': context_key, 'context_val': context_val}))
