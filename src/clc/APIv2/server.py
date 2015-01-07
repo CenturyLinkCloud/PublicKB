@@ -192,17 +192,27 @@ class Server(object):
 		requests_lst = []
 		for name in names:
 			name_links = [obj['links'] for obj in self.data['details']['snapshots'] if obj['name']==name][0]
-			requests_lst.append(clc.v2.Requests(clc.v2.API.Call('DELETE',[obj['href'] for obj in name_links if obj['rel']=='delete'][0],debug=True)))
+			requests_lst.append(clc.v2.Requests(clc.v2.API.Call('DELETE',[obj['href'] for obj in name_links if obj['rel']=='delete'][0])))
 			
 		return(sum(requests_lst))
 
 
 	def RestoreSnapshot(self,name=None):
+		"""Restores an existing Hypervisor level snapshot.
+
+		Supply snapshot name to restore
+		If no snapshot name is supplied will restore the first snapshot found
+
+		>>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT02').RestoreSnapshot().WaitUntilComplete()
+		0
+
+		"""
+
 		if not len(self.data['details']['snapshots']):  raise(clc.CLCException("No snapshots exist"))
 		if name is None:  name = self.GetSnapshots()[0]
 
 		name_links = [obj['links'] for obj in self.data['details']['snapshots'] if obj['name']==name][0]
-		return(clc.v2.Requests(clc.v2.API.Call('GET',[obj['href'] for obj in name_links if obj['rel']=='restore'][0])))
+		return(clc.v2.Requests(clc.v2.API.Call('POST',[obj['href'] for obj in name_links if obj['rel']=='restore'][0])))
 
 
 #	def Create(self,name,description=None):  

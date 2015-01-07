@@ -39,10 +39,11 @@ class Requests(object):
 		self.error_requests = []
 		self.success_requests = []
 
+		# Some requests_lst responses look different than others depending on the call (Create snapshot vs. delete snapshot)
+		# Add min-wrapper onto those missing it
+		if not isinstance(requests_lst,list): requests_lst = [{'isQueued': True, 'links': [requests_lst]}]
+
 		for r in requests_lst:
-			# Some requests_lst responses look different than others depending on the call (Create snapshot vs. delete snapshot)
-			# Add min-wrapper onto those missing it
-			if 'isQueued' not in r:  r = {'isQueued': True, 'links': [r]}
 
 			if 'server' in r:  
 				context_key = "server"
@@ -52,7 +53,6 @@ class Requests(object):
 				context_val = "Unknown"
 
 			if r['isQueued']:  
-				print r
 				self.requests.append(Request(r['links'][0]['id'],alias=self.alias,request_obj={'context_key': context_key, 'context_val': context_val}))
 			else:
 				# If we're dealing with a list of responses and we have an error with one I'm not sure how
