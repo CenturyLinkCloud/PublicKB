@@ -66,7 +66,7 @@ performance characteristics of VM storage are the same for Standard or Premium (
 	9. Utilize the DNS servers listed or change the IPs for specific DNS needs.
 	10. Select the desired number of virtual processors and RAM and operating system for the server.
 	
-		Notes:
+		* Notes:
 		* Please observe the hourly price changes as various resource attributes are
 modified. Also, please be advised that organizations can set server/Group resource limits to help manage costs – please see Control Portal Server Administration section below for more details.
 		* The hourly Platform fee includes the disk space for the operating system (see: [http://help.tier3.com/entries/21748870-Operating-System-Root-Drive-Size](http://help.tier3.com/entries/21748870-Operating-System-Root-Drive-Size)).
