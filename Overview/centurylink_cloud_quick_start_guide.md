@@ -1,6 +1,7 @@
 ---
 title: CenturyLink Cloud Quick Start Guide
 author: Joe Smith
+preview: This is a preview of the article
 tags:
   - four
   - five
