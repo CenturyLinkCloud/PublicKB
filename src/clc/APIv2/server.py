@@ -178,9 +178,9 @@ class Server(object):
 
 		requests_lst = []
 		for name in names:
-			name_links = [obj['links'] for obj in self.data['details']['snapshots'] if obj['name'==name][0]
+			name_links = [obj['links'] for obj in self.data['details']['snapshots'] if obj['name'==name]][0]
 			print name_links
-			d = clc.v2.Requests(clc.v2.API.Call('DELETE',[obj['href'] for obj in name_links if obj['rel']='delete'][0],debug=True))
+			d = clc.v2.Requests(clc.v2.API.Call('DELETE',[obj['href'] for obj in name_links if obj['rel']=='delete'][0],debug=True))
 			return(d)
 			
 		print self.data['details']['snapshots']

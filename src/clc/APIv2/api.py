@@ -50,7 +50,7 @@ class API():
 			clc.v1.output.Status('ERROR',3,'V2 API username and password not provided')
 			raise(clc.APIV2NotEnabled)
 			
-		r = requests.post("%s%s" % (clc.defaults.ENDPOINT_URL_V2,"authentication/login"), 
+		r = requests.post("%s/v2/%s" % (clc.defaults.ENDPOINT_URL_V2,"authentication/login"), 
 						  data={"username": clc.v2.V2_API_USERNAME, "password": clc.v2.V2_API_PASSWD},
 						  verify=API._ResourcePath('clc/cacert.pem'))
 
@@ -77,26 +77,25 @@ class API():
 
 		# If executing refs provided in API they are abs paths,
 		# Else refs we build in the sdk are relative
-		if url[0]=='/':  "%s%s" % (clc.defaults.ENDPOINT_URL_V2,url)
-		else:  "%s/v2/%s" % (clc.defaults.ENDPOINT_URL_V2,url)
+		if url[0]=='/':  fq_url = "%s%s" % (clc.defaults.ENDPOINT_URL_V2,url)
+		else:  fq_url = "%s/v2/%s" % (clc.defaults.ENDPOINT_URL_V2,url)
 
 		headers = {'Authorization': "Bearer %s" % clc._LOGIN_TOKEN_V2}
 		if type(payload) is str:  headers['content-type'] = "Application/json" # added for server ops with str payload
 
 		if method=="GET":
-			r = requests.request(method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url), 
+			r = requests.request(method,fq_url,
 								 headers=headers,
 			                     params=payload, 
 								 verify=API._ResourcePath('clc/cacert.pem'))
 		else:
-			r = requests.request(method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url), 
+			r = requests.request(method,fq_url,
 								 headers=headers,
 			                     data=payload, 
 								 verify=API._ResourcePath('clc/cacert.pem'))
 
 		if debug:  
-			API._DebugRequest(request=requests.Request(method,"%s%s" % (clc.defaults.ENDPOINT_URL_V2,url),data=payload,
-			                                           headers={'Authorization': "Bearer %s" % clc._LOGIN_TOKEN_V2}).prepare(),
+			API._DebugRequest(request=requests.Request(method,fq_url,data=payload,headers=headers).prepare(),
 			                  response=r)
 
 		if r.status_code>=200 and r.status_code<300:

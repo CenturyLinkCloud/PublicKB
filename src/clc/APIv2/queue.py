@@ -67,7 +67,7 @@ class Requests(object):
 	def __add__(self,obj):
 		if self.alias != obj.alias:  raise(ArithmeticError("Cannot add Requests operating on different aliases"))
 
-		new_obj = Requests(obj.requests+self.requests,alias=self.alias))
+		new_obj = Requests(obj.requests+self.requests,alias=self.alias)
 		new_obj.success_requests = obj.success_requests+self.success_requests
 		new_obj.error_requests = obj.error_requests+self.error_requests
 
