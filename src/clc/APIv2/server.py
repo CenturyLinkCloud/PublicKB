@@ -71,10 +71,15 @@ class Server(object):
 		#If parameters are populated then create object location.  
 		#Else if only id is supplied issue a Get Policy call
 
+		# successful creation
 		>>> clc.v2.Server("CA3BTDICNTRLM01")
 		<clc.APIv2.server.Server object at 0x10c28fe50>
 		>>> print _
 		CA3BTDICNTRLM01
+
+		# error.  API returns 404 when server does not exist, we raise exception
+		>>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT01')
+		clc.CLCException: Server does not exist
 
 		"""
 

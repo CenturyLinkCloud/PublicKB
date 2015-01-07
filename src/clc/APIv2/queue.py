@@ -10,9 +10,9 @@ Server object variables:
 
 """
 
+# TODO - Do something with timing info from Request and Requests
 
 import time
-import sys
 import clc
 
 
@@ -42,7 +42,9 @@ class Requests(object):
 				context_val = r['server']
 			else:  raise(Exception("Unknown context"))
 
-			if not r['isQueued']:  
+			if r['isQueued']:  
+				self.requests.append(Request(r['links'][0]['id'],alias=self.alias,request_obj={'context_key': context_key, 'context_val': context_val}))
+			else:
 				# If we're dealing with a list of responses and we have an error with one I'm not sure how
 				# folks would expect this to behave.  If server is already in desired state thus the request
 				# fails that shouldn't be an exception.  If we're running against n tasks and just one has an
@@ -56,17 +58,17 @@ class Requests(object):
 					#        entire process
 					raise(clc.CLCException("%s '%s' not added to queue: %s" % (context_key,context_val,r['errorMessage'])))
 
-			self.requests.append(Request(r['id'],alias=self.alias,request_obj={'context_key': context_key, 'context_val': context_val}))
-
 
 	def WaitUntilComplete(self,poll_freq=2):
 		"""Poll until all request objects have completed.
 
 		If status is 'notStarted' or 'executing' continue polling.
-		If status is 'succeeded' return
-		Else raise exception
+		If status is 'succeeded' then success
+		Else log as error
 
 		poll_freq option is in seconds
+
+		Returns an Int the number of unsuccessful requests.  This behavior is subject to change.
 
 		"""
 
@@ -75,14 +77,18 @@ class Requests(object):
 
 		while len(self.requests):
 			cur_requests = []
-			for request in cur_requests:
+			for request in self.requests:
 				status = request.Status()
 				if status in ('notStarted','executing','resumed'):  cur_requests.append(request)
 				elif status == 'succeeded':  self.success_requests.append(request)
 				elif status in ("failed", "unknown"): self.error_requests.append(request)
 
 			self.requests = cur_requests
-			sys.sleep(poll_freq)	# alternately - sleep for the delta between start time and 2s
+			time.sleep(poll_freq)	# alternately - sleep for the delta between start time and 2s
+
+		# Is this the best approach?  Non-zero indicates some error.  Exception seems the wrong approach for
+		# a partial failure
+		return(len(self.error_requests))
 
 
 
@@ -116,7 +122,7 @@ class Request(object):
 
 	def Status(self,cached=False):
 		if not cached or not self.data['status']:  
-			self.data['status'] = clc.v2.API.Call('GET','operations/%s/status/%s' % (self.alias,self.id),{},debug=True)
+			self.data['status'] = clc.v2.API.Call('GET','operations/%s/status/%s' % (self.alias,self.id),{})['status']
 		return(self.data['status'])
 		
 
@@ -132,7 +138,6 @@ class Request(object):
 		"""
 		while not self.time_completed:
 			status = self.Status()
-			print "id=%s status=%s" % (self.id,status)
 			if status == 'executing':
 				if not self.time_executed:  self.time_executed = time.time()
 			elif status == 'succeeded': 
@@ -142,7 +147,7 @@ class Request(object):
 				self.time_completed = time.time()
 				raise(clc.CLCException("%s %s execution %s" % (self.context_key,self.context_val,status)))
 
-			sys.sleep(poll_freq)
+			time.sleep(poll_freq)
 
 
 	def Server(self):
