@@ -264,6 +264,7 @@ class Server(object):
 		* - any DNS settings from self aren't propogated to clone since they are unknown at system level and
 		    the clone process will touch them
 		* - no change to the disk layout we will clone all
+		* - clone will not replicate managed OS setting from self so this must be explicitly set
 
 		# Show get NW
 		# Show get tpl
@@ -281,18 +282,18 @@ class Server(object):
 		if not storage_type:  storage_type = self.storage_type
 		if not type:  type = self.type
 		if not custom_fields and len(self.custom_fields): custom_fields = self.custom_fields
+		if not description:  description = self.description
+		# TODO - #if not cpu_autoscale_policy_id:  cpu_autoscale_policy_id = 
+		# TODO - #if not anti_affinity_policy_id:  anti_affinity_policy_id =
 
 		# TODO - need to get network_id of self
 
 		requests_lst = []
-			
-		#for i in range(1,count):
-		#	requests_lst.append(Server.CreateServer( \
-		#	            self,name=None,cpu=None,memory=None,group_id=None,network_id=None,alias=None,password=None,ip_address=None,
-        #                storage_type="standard",type="standard",primary_dns=None,secondary_dns=None,
-        #                additional_disks=None,custom_fields=None,ttl=None,managed_os=False,description=None,
-        #                source_server_password=None,cpu_autoscale_policy_id=None,anti_affinity_policy_id=None,
-        #                packages=[]
+		for i in range(1,count):
+			requests_lst.append(Server.Create( \
+			            self,name,cpu,memory,group_id,network_id,alias,password,ip_address,storage_type,
+						type,primary_dns,secondary_dns,additional_disks,custom_fields,ttl,managed_os,description,
+                        source_server_password,cpu_autoscale_policy_id,anti_affinity_policy_id,packages=[]))
 
 		return(sum(requests_lst))
 
