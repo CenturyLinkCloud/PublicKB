@@ -263,6 +263,7 @@ class Server(object):
 		    there is no way to for a system generated password with this pattern since we cannot leave as None
 		* - any DNS settings from self aren't propogated to clone since they are unknown at system level and
 		    the clone process will touch them
+		* - no change to the disk layout we will clone all
 
 		# Show get NW
 		# Show get tpl
@@ -275,12 +276,11 @@ class Server(object):
 		if not memory:  cpu = self.memory
 		if not group_id:  group_id = self.group_id
 		if not alias:  alias = self.alias
-		if not source_server_password: source_server_password = self.Credentials['password']
+		if not source_server_password: source_server_password = self.Credentials()['password']
 		if not password: password = source_server_password	# is this the expected behavior?
 		if not storage_type:  storage_type = self.storage_type
 		if not type:  type = self.type
-		#if not custom_fields and:  type = self.type
-		print self.custom_fields
+		if not custom_fields and len(self.custom_fields): custom_fields = self.custom_fields
 
 		# TODO - need to get network_id of self
 
