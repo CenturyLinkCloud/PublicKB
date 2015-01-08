@@ -27,7 +27,7 @@ Server object variables:
 """
 
 # TODO - details: ipaddresses, alertpolicies, customfields
-# TODO - links - billing, statistics, activites, public IPs, alert policies, anti-affinit, autoscale, credentials, ip address
+# TODO - links - billing, statistics, activites, public IPs, alert policies, anti-affinit, autoscale, ip address
 # TODO - changeInfo
 # TODO - Update Public IP Address
 # TODO - Remove Public IP Address
@@ -114,6 +114,10 @@ class Server(object):
 		return(clc.v2.Group(id=self.groupId,alias=self.alias))
 
 	
+	def Credentials(self):
+		return(clc.v2.API.Call('GET','servers/%s/%s/credentials' % (self.alias,self.name)))
+
+
 	def _Operation(self,operation):
 		"""Execute specified operations task against one or more servers.
 
@@ -251,6 +255,8 @@ class Server(object):
 
 		* - network_id is currently a required parameter.  This will change to optional once APIs are available to
 		    return the network id of self.
+		* - if no password is supplied will reuse the password of self.  Is this the expected behavior?  Take note
+		    there is no way to for a system generated password with this pattern since we cannot leave as None
 
 		# Show get NW
 		# Show get tpl
@@ -263,6 +269,8 @@ class Server(object):
 		if not memory:  cpu = self.memory
 		if not group_id:  group_id = self.group_id
 		if not alias:  alias = self.alias
+		if not source_server_password: source_server_password = self.Credentials['password']
+		if not password: password = source_server_password	# is this the expected behavior?
 
 		# TODO - need to get network_id of self
 
