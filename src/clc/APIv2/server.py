@@ -10,19 +10,19 @@ Server object variables:
 	server.id
 	server.description
 	server.cpu
-	server.memoryMB
-	server.powerState
-	server.storageGB
-	server.groupId
-	server.isTemplate
-	server.locationId
+	server.power_state
+	server.memory
+	server.storage
+	server.group_id
+	server.is_template
+	server.location_id
 	server.name
 	server.os
-	server.osType
+	server.os_type
 	server.status
 	server.type
-	server.storageType
-	server.inMaintenanceMode
+	server.storage_type
+	server.in_maintenance_mode
 
 """
 
@@ -39,6 +39,7 @@ Server object variables:
 # TODO - create server capture and resolve alias via uuid
 # TODO - Clone server method - clones selve as a new server
 
+import re
 import json
 import clc
 
@@ -79,9 +80,12 @@ class Server(object):
 
 
 	def __getattr__(self,var):
-		if var in self.data:  return(self.data[var])
-		elif var in self.data['details']:  return(self.data[var])
-		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,var)))
+		if var in ('memory','storage'):  key = key+'GB'
+		else:  key = re.sub("_(.)",lambda pat: pat.group(1).upper(),var)
+
+		if key in self.data:  return(self.data[key])
+		elif key in self.data['details']:  return(self.data[key])
+		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,key)))
 
 
 	def Account(self):
@@ -234,6 +238,45 @@ class Server(object):
 							 'sourceServerPassword': source_server_password, 'cpu': cpu, 'cpuAutoscalePolicyId': cpu_autoscale_policy_id,
 							 'memoryGB': memory, 'type': type, 'storageType': storage_type, 'antiAffinityPolicyId': anti_affinity_policy_id,
 							 'customFields': custom_fields, 'additionalDisks': additional_disks, 'ttl': ttl, 'packages': packages}))))
+
+
+	def Clone(self,network_id,name=None,cpu=None,memory=None,group_id=None,alias=None,password=None,ip_address=None,
+	          storage_type="standard",type="standard",primary_dns=None,secondary_dns=None,
+			  additional_disks=None,custom_fields=None,ttl=None,managed_os=False,description=None,
+			  source_server_password=None,cpu_autoscale_policy_id=None,anti_affinity_policy_id=None,
+			  packages=[],count=1):  
+		"""Creates one or more clones of existing server.
+
+		https://t3n.zendesk.com/entries/59565550-Create-Server
+
+		* - network_id is currently a required parameter.  This will change to optional once APIs are available to
+		    return the network id of self.
+
+		# Show get NW
+		# Show get tpl
+
+		"""
+
+		if not name:  name = re.search("%s(.+)\d{2}$" % self.alias,self.name).group(1)
+		if not description and self.description:  description = self.description
+		if not cpu:  cpu = self.cpu
+		if not memory:  cpu = self.memory
+		if not group_id:  group_id = self.groupId
+
+		# TODO - need to get network_id of self
+
+		requests_lst = []
+			
+		#for i in range(1,count):
+		#	requests_lst.append(Server.CreateServer( \
+		#	            self,name=None,cpu=None,memory=None,group_id=None,network_id=None,alias=None,password=None,ip_address=None,
+        #                storage_type="standard",type="standard",primary_dns=None,secondary_dns=None,
+        #                additional_disks=None,custom_fields=None,ttl=None,managed_os=False,description=None,
+        #                source_server_password=None,cpu_autoscale_policy_id=None,anti_affinity_policy_id=None,
+        #                packages=[]
+
+		return(sum(requests_lst))
+
 
 #	def Update(self):
 #		"""Update group
