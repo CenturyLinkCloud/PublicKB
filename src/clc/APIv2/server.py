@@ -40,6 +40,7 @@ Server object variables:
 # TODO - Clone server method - clones selve as a new server
 
 import re
+import math
 import json
 import clc
 
@@ -78,13 +79,16 @@ class Server(object):
 			except clc.APIFailedResponse as e:
 				if e.response_status_code==404:  raise(clc.CLCException("Server does not exist"))
 
+		# API call switches between GB and MB.  Change to all references are in GB and we drop the units
+		self.data['details']['memoryGB'] = int(math.floor(self.data['details']['memoryMB']/1024))
+
 
 	def __getattr__(self,var):
-		if var in ('memory','storage'):  key = key+'GB'
+		if var in ('memory','storage'):  key = var+'GB'
 		else:  key = re.sub("_(.)",lambda pat: pat.group(1).upper(),var)
 
 		if key in self.data:  return(self.data[key])
-		elif key in self.data['details']:  return(self.data[key])
+		elif key in self.data['details']:  return(self.data['details'][key])
 		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,key)))
 
 
@@ -257,6 +261,8 @@ class Server(object):
 		    return the network id of self.
 		* - if no password is supplied will reuse the password of self.  Is this the expected behavior?  Take note
 		    there is no way to for a system generated password with this pattern since we cannot leave as None
+		* - any DNS settings from self aren't propogated to clone since they are unknown at system level and
+		    the clone process will touch them
 
 		# Show get NW
 		# Show get tpl
@@ -271,6 +277,10 @@ class Server(object):
 		if not alias:  alias = self.alias
 		if not source_server_password: source_server_password = self.Credentials['password']
 		if not password: password = source_server_password	# is this the expected behavior?
+		if not storage_type:  storage_type = self.storage_type
+		if not type:  type = self.type
+		#if not custom_fields and:  type = self.type
+		print self.custom_fields
 
 		# TODO - need to get network_id of self
 
