@@ -24,26 +24,31 @@ Server object variables:
 	server.storage_type
 	server.in_maintenance_mode
 
-variables available but access subject to change with future releases:
+Server object variables available but access subject to change with future releases:
 
 	server.custom_fields
 	server.change_info
 	server.alert_policies
+	server.ip_addresses
 
 """
 
-# TODO - details: ipaddresses
-# TODO - links - billing, statistics, activites, public IPs, autoscale, ip address
+# v1:
+# TODO - links - autoscale
+# TODO - Link to Public IP class
+# TODO - Scheduled activities
+# TODO - Server pricing (/v2/billing/btdi/serverPricing/wa1btdiapi207) returns array with static hourly pricing
+
+# v2:
 # TODO - AntiAffinity policy - need API spec put call 400 
+# TODO - Statistics - need API spec get call 500
+# TODO - Billing (server, group, account) - need API spec
 # TODO - Change Server (Update) - need API spec
-# TODO - Update Public IP Address
-# TODO - Remove Public IP Address
-# TODO - Get Public IP Address
-# TODO - Add Public IP Address
 # TODO - remove constructor server_obj if not used
 # TODO - Implement Servers class to support operations on multiple servers.  Group ops can line into this directly.
 # TODO - create server capture and resolve alias via uuid
 # TODO - create a packages class.  Pass in for execute package, create, and clone
+# TODO - Capabilities query - returns reservedDrivePaths, addingCpuRequiresReboot, addingMemoryRequiresReboot
 
 import re
 import math
