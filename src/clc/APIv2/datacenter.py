@@ -98,11 +98,17 @@ class Datacenter:
 
 
 	def Networks(self):
-		return(clc.v2.Networks(self._DeploymentCapabilities()['deployableNetworks']))
+		return(clc.v2.Templates(self._DeploymentCapabilities()['templates']))
 
 
 	def Templates(self):
 		pass
+
+
+    def __getattr__(self,var):
+        if hasattr(self,var):  return(getattr(self,var))
+		elif var in ("supportsPremiumStorage","supportsSharedLoadBalancer"):  return(self._DeploymentCapabilities()[var]
+        else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,var)))
 
 
 	def __str__(self):
