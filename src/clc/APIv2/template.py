@@ -39,12 +39,7 @@ class Templates(object):
 class Template(object):
 
 	def __init__(self,id,alias=None,template_obj=None):
-		"""Create Template object.
-
-		>>> clc.v2.Group(id="wa1-1798")
-		<clc.APIv2.group.Group object at 0x109188b90>
-
-		"""
+		"""Create Template object."""
 
 		self.id = id
 		self.type = type

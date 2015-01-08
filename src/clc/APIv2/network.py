@@ -45,12 +45,7 @@ class Networks(object):
 class Network(object):
 
 	def __init__(self,id,alias=None,network_obj=None):
-		"""Create Network object.
-
-		>>> clc.v2.Group(id="wa1-1798")
-		<clc.APIv2.group.Group object at 0x109188b90>
-
-		"""
+		"""Create Network object."""
 
 		self.id = id
 		self.type = type
