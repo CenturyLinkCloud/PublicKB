@@ -23,21 +23,22 @@ Server object variables:
 	server.type
 	server.storage_type
 	server.in_maintenance_mode
+	server.custom_fields
+	server.change_info
 
 """
 
-# TODO - details: ipaddresses, alertpolicies, customfields
+# TODO - details: ipaddresses, alertpolicies 
 # TODO - links - billing, statistics, activites, public IPs, alert policies, anti-affinit, autoscale, ip address
-# TODO - changeInfo
+# TODO - Change Server (Update) - need API spec
 # TODO - Update Public IP Address
 # TODO - Remove Public IP Address
 # TODO - Get Public IP Address
 # TODO - Add Public IP Address
-# TODO - Create Server
 # TODO - remove constructor server_obj if not used
-# TODO - implement Servers class to support operations on multiple servers.  Group ops can line into this directly.
+# TODO - Implement Servers class to support operations on multiple servers.  Group ops can line into this directly.
 # TODO - create server capture and resolve alias via uuid
-# TODO - Clone server method - clones selve as a new server
+# TODO - create a packages class.  Pass in for execute package, create, and clone
 
 import re
 import math
@@ -266,8 +267,9 @@ class Server(object):
 		* - no change to the disk layout we will clone all
 		* - clone will not replicate managed OS setting from self so this must be explicitly set
 
-		# Show get NW
-		# Show get tpl
+		>>> d = clc.v2.Datacenter()
+		>>> clc.v2.Server(alias='BTDI',id='WA1BTDIAPI207').Clone(network_id=d.Networks().networks[0].id,count=2)
+		0
 
 		"""
 
@@ -302,15 +304,20 @@ class Server(object):
 		return(sum(requests_lst))
 
 
-#	def Update(self):
-#		"""Update group
-#
-#		*TODO* API not yet documented
-#
-#		"""
-#		raise(Exception("Not implemented"))
-#
-#
+	def Update(self):
+		"""Update group
+
+		*TODO* API not yet documented
+
+		"""
+
+		#return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.alias,self.id),
+		#         json.dumps({'description': 'new'}),debug=True)))
+
+		raise(Exception("Not implemented"))
+
+
+
 	def Delete(self):
 		"""Delete server.
 

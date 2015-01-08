@@ -11,6 +11,7 @@ Server object variables:
 """
 
 # TODO - Do something with timing info from Request and Requests?
+# TODO - implement promises for queued servers. {"server":"api2","isQueued":true,"links":[{"rel":"status","href":"/v2/operations/btdi/status/wa1-127329","id":"wa1-127329"},{"rel":"self","href":"/v2/servers/BTDI/bdef3ca4227a45a6a43a59a87ebec81e?uuid=True","id":"bdef3ca4227a45a6a43a59a87ebec81e","verbs":["GET"]}]}
 
 import time
 import clc
