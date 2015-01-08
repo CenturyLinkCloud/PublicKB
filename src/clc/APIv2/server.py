@@ -30,14 +30,9 @@ Server object variables:
 # TODO - links - billing, statistics, activites, public IPs, alert policies, anti-affinit, autoscale, credentials, ip address
 # TODO - changeInfo
 # TODO - Update Public IP Address
-# TODO - Delete Server
 # TODO - Remove Public IP Address
 # TODO - Get Public IP Address
 # TODO - Add Public IP Address
-# TODO - Execute Package
-# TODO - Set Maintenance Mode
-# TODO - Start Maintenance Mode
-# TODO - Stop Maintenance Mode
 # TODO - Create Server
 # TODO - remove constructor server_obj if not used
 # TODO - implement Servers class to support operations on multiple servers.  Group ops can line into this directly.
@@ -202,19 +197,26 @@ class Server(object):
 		return(clc.v2.Requests(clc.v2.API.Call('POST',[obj['href'] for obj in name_links if obj['rel']=='restore'][0])))
 
 
-#	def Create(self,name,description=None):  
-#		"""Creates a new group
-#
-#		*TODO* 
-#
-#		"""
-#
-#		if not description:  description = name
-#
-#		#clc.v2.API.Call('POST','groups/%s' % (self.alias),{'name': name, 'description': description, 'parentGroupId': self.id},debug=True)
-#		raise(Exception("Not implemented"))
-#
-#
+	@staticmethod
+	def Create(self,name,cpu,memoryGB,template,group_id,network_id,password="",ip_address="",primaryDns="8.8.8.8",secondaryDns="8.8.4.4",storage_type="standard",type="standard",isManagedOS=False,description=None):  
+		"""Creates a new server.
+
+		https://t3n.zendesk.com/entries/59565550-Create-Server
+
+		# Show get NW
+		# Show get tpl
+
+		"""
+
+		if not description:  description = name
+		if type.lower() not in ("standard","hyperscale"):  raise(clc.CLCException("Invalid type"))
+		if storage_type.lower() not in ("standard","premium"):  raise(clc.CLCException("Invalid storage_type"))
+		if storage_type.lower() == "premium" and type.lower() == "hyperscale":  raise(clc.CLCException("Invalid type/storage_type combo"))
+
+		#clc.v2.API.Call('POST','groups/%s' % (self.alias),{'name': name, 'description': description, 'parentGroupId': self.id},debug=True)
+		raise(Exception("Not implemented"))
+
+
 #	def Update(self):
 #		"""Update group
 #
