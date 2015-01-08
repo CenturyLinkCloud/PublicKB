@@ -32,7 +32,7 @@ variables available but access subject to change with future releases:
 
 """
 
-# TODO - details: ipaddresses, alertpolicies 
+# TODO - details: ipaddresses
 # TODO - links - billing, statistics, activites, public IPs, autoscale, ip address
 # TODO - AntiAffinity policy - need API spec put call 400 
 # TODO - Change Server (Update) - need API spec
@@ -124,6 +124,10 @@ class Server(object):
 		return(clc.v2.Group(id=self.groupId,alias=self.alias))
 
 	
+	def Alerts(self):
+		return(clc.v2.Alerts(self.alert_policies))
+
+
 	def Credentials(self):
 		return(clc.v2.API.Call('GET','servers/%s/%s/credentials' % (self.alias,self.name)))
 

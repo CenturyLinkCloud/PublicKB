@@ -24,6 +24,7 @@ Group object variables:
 # TODO - utility class to rewrite timestamps as unixtime
 # TODO - server power actions - these take a list of server names which we know
 # TODO - horizontalAutoscalePolicyMapping, scheduledActivities, upcomingScheduledActivities
+# TODO - Implement Groups class as a collection of groups?
 
 
 import json
