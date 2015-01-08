@@ -31,7 +31,6 @@ class Templates(object):
 
 		for template in self.templates:
 			if template.id == key:  return(template)
-			if template.name == key:  return(template)
 
 
 class Template(object):
@@ -40,10 +39,12 @@ class Template(object):
 		"""Create Template object."""
 
 		self.id = id
-		self.name = template_obj['name']
+		self.data = template_obj
 
-		if alias:  self.alias = alias
-		else:  self.alias = clc.v2.Account.GetAlias()
+
+	def __getattr__(self,var):
+		if var in self.data:  return(self.data[var])
+		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,var)))
 
 
 	def __str__(self):
