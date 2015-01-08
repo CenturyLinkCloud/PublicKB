@@ -74,6 +74,7 @@ class Requests(object):
 
 
 	def __add__(self,obj):
+		if type(obj) is int:  return(self)	# we get this with a sum() call - ignore the first argument
 		if self.alias != obj.alias:  raise(ArithmeticError("Cannot add Requests operating on different aliases"))
 
 		new_obj = Requests(obj.requests+self.requests,alias=self.alias)
@@ -81,6 +82,9 @@ class Requests(object):
 		new_obj.error_requests = obj.error_requests+self.error_requests
 
 		return(new_obj)
+
+
+	def __radd__(self,obj):  return(self.__add__(obj))
 
 
 	def WaitUntilComplete(self,poll_freq=2):

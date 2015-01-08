@@ -239,8 +239,7 @@ class Server(object):
 		# TODO - validate antiaffinity policy id set only with type=hyperscale
 		# TODO - parse ttl from seconds to "2014-12-17T01:17:17Z" format
 
-		print "xxx"
-		return(clc.v2.Requests(r = clc.v2.API.Call('POST','servers/%s' % (alias),
+		return(clc.v2.Requests(clc.v2.API.Call('POST','servers/%s' % (alias),
 		         json.dumps({'name': name, 'description': description, 'groupId': group_id, 'sourceServerId': template,
 							 'isManagedOS': managed_os, 'primaryDNS': primary_dns, 'secondaryDNS': secondary_dns, 
 							 'networkId': network_id, 'ipAddress': ip_address, 'password': password,
@@ -301,14 +300,8 @@ class Server(object):
 						anti_affinity_policy_id=anti_affinity_policy_id,packages=packages,
 						template=self.id))
 
-			#requests_lst.append(Server.Create( \
-			#            name,cpu,memory,self.name,group_id,network_id,self.alias,
-			#			password,ip_address,storage_type,type,
-			#			primary_dns,secondary_dns,additional_disks,
-			#			custom_fields,ttl,managed_os,description,
-            #            source_server_password,cpu_autoscale_policy_id,
-			#			anti_affinity_policy_id,packages))
-
+		print requests_lst
+		print sum(requests_lst).requests
 		return(sum(requests_lst))
 
 
