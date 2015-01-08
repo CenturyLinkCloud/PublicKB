@@ -4,6 +4,14 @@ Anti-affinity related functions.
 These Anti-affinity related functions generally align one-for-one with published API calls categorized in the account category
 
 API v2 - https://t3n.zendesk.com/forums/21645944-Account
+
+Antiaffinity object variables:
+
+	antiaffinity.id
+	antiaffinity.name
+	antiaffinity.location
+	antiaffinity.servers
+
 """
 
 # TODO - Update Anti-Affinity Policy - returning 500 error

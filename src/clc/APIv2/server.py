@@ -23,13 +23,18 @@ Server object variables:
 	server.type
 	server.storage_type
 	server.in_maintenance_mode
+
+variables available but access subject to change with future releases:
+
 	server.custom_fields
 	server.change_info
+	server.alert_policies
 
 """
 
 # TODO - details: ipaddresses, alertpolicies 
-# TODO - links - billing, statistics, activites, public IPs, alert policies, anti-affinit, autoscale, ip address
+# TODO - links - billing, statistics, activites, public IPs, autoscale, ip address
+# TODO - AntiAffinity policy - need API spec put call 400 
 # TODO - Change Server (Update) - need API spec
 # TODO - Update Public IP Address
 # TODO - Remove Public IP Address
