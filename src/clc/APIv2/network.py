@@ -17,7 +17,6 @@ Network object variables:
 
 # TODO - create, change, delete NW (need API)
 # TODO - get network details (IP range, vlan, etc)
-# TODO - find NW by name,id
 # TODO - filter NW by alias?
 
 
@@ -46,7 +45,7 @@ class Networks(object):
 class Network(object):
 
 	def __init__(self,id,alias=None,network_obj=None):
-		"""Create Nework object.
+		"""Create Network object.
 
 		>>> clc.v2.Group(id="wa1-1798")
 		<clc.APIv2.group.Group object at 0x109188b90>
