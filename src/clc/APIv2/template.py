@@ -11,8 +11,8 @@ Template object variables:
 """
 
 
-
 import clc
+
 
 class Templates(object):
 
@@ -31,6 +31,19 @@ class Templates(object):
 
 		for template in self.templates:
 			if template.id == key:  return(template)
+
+
+	def Search(self,key):
+		"""Search template list by providing partial name, ID, or other key.
+
+		"""
+
+		results = []
+		for template in self.templates:
+			if template.id.lower().find(key.lower()) != -1:  results.append(template)
+			elif template.name.lower().find(key.lower()) != -1:  results.append(template)
+
+		return(results)
 
 
 class Template(object):

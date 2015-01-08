@@ -5,6 +5,8 @@ These network related functions generally align one-for-one with published API c
 
 Networks object variables:
 
+	networks.networks - list of all n etworks
+
 Network object variables:
 
 	network.name

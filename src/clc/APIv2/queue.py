@@ -54,7 +54,8 @@ class Requests(object):
 				context_val = "Unknown"
 
 			if r['isQueued']:  
-				self.requests.append(Request(r['links'][0]['id'],alias=self.alias,request_obj={'context_key': context_key, 'context_val': context_val}))
+				self.requests.append(Request([obj['id'] for obj in r['links'] if obj['rel']=='status'][0],
+				                             alias=self.alias,request_obj={'context_key': context_key, 'context_val': context_val}))
 			else:
 				# If we're dealing with a list of responses and we have an error with one I'm not sure how
 				# folks would expect this to behave.  If server is already in desired state thus the request
