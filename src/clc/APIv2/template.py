@@ -6,9 +6,7 @@ Templates object variables:
 Template object variables:
 
 	template.name
-	template.id
-	template.type
-	template.alias
+	template.id (alias of name)
 
 """
 
@@ -21,7 +19,7 @@ class Templates(object):
 	def __init__(self,templates_lst):
 		self.templates = []
 		for template in templates_lst:
-			self.templates.append(Template(id=template['templateId'],alias=template['accountID'],template_obj=template))
+			self.templates.append(Template(id=template['name'],template_obj=template))
 
 
 	def Get(self,key):
@@ -38,11 +36,10 @@ class Templates(object):
 
 class Template(object):
 
-	def __init__(self,id,alias=None,template_obj=None):
+	def __init__(self,id,template_obj=None):
 		"""Create Template object."""
 
 		self.id = id
-		self.type = type
 		self.name = template_obj['name']
 
 		if alias:  self.alias = alias
