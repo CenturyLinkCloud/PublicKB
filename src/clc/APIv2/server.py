@@ -46,21 +46,6 @@ import clc
 
 class Server(object):
 
-#	@staticmethod
-#	def GetAll(root_group_id,alias=None):  
-#		"""Gets a list of groups within a given account.
-#
-#		"""
-#
-#		if not alias:  alias = clc.v2.Account.GetAlias()
-#
-#		groups = []
-#		for r in clc.v2.API.Call('GET','groups/%s/%s' % (alias,root_group_id),{})['groups']:
-#			groups.append(Group(id=r['id'],alias=alias,server_obj=r))
-#		
-#		return(groups)
-
-
 
 	def __init__(self,id,alias=None,server_obj=None):
 		"""Create Server object.
@@ -150,6 +135,8 @@ class Server(object):
 	def Reset(self):  return(self._Operation('reset'))
 	def PowerOn(self):  return(self._Operation('powerOn'))
 	def PowerOff(self):  return(self._Operation('powerOff'))
+	def StartMaintenance(self):  return(self._Operation('startMaintenance'))
+	def StopMaintenance(self):  return(self._Operation('stopMaintenance'))
 
 
 	def GetSnapshots(self):
@@ -237,12 +224,13 @@ class Server(object):
 #		raise(Exception("Not implemented"))
 #
 #
-#	def Delete(self):
-#		"""Delete server.
-#		
-#		"""
-#		#status = {u'href': u'/v2/operations/btdi/status/wa1-126437', u'id': u'wa1-126437', u'rel': u'status'}
-#		status = clc.v2.API.Call('DELETE','groups/%s/%s' % (self.alias,self.id),{})
+	def Delete(self):
+		"""Delete server.
+
+		https://t3n.zendesk.com/entries/59220824-Delete-Server
+		
+		"""
+		return(clc.v2.Requests(clc.v2.API.Call('DELETE','servers/%s/%s' % (self.alias,self.id))))
 
 
 	def __str__(self):

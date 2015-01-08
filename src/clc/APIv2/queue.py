@@ -41,7 +41,8 @@ class Requests(object):
 
 		# Some requests_lst responses look different than others depending on the call (Create snapshot vs. delete snapshot)
 		# Add min-wrapper onto those missing it
-		if not isinstance(requests_lst,list): requests_lst = [{'isQueued': True, 'links': [requests_lst]}]
+		if 'isQueued' in requests_lst:  requests_lst = [requests_lst]
+		elif 'href' in requests_lst: requests_lst = [{'isQueued': True, 'links': [requests_lst]}]
 
 		for r in requests_lst:
 

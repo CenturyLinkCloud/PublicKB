@@ -16,7 +16,6 @@ Group object variables:
 
 """
 
-# TODO - Create group
 # TODO - Update group
 # TODO - Get Group Billing Details
 # TODO - Get Group Monitoring Statistics
@@ -75,13 +74,10 @@ class Group(object):
 	def Create(self,name,description=None):  
 		"""Creates a new group
 
-		*TODO* API not yet documented
-
 		>>> clc.v2.Datacenter(location="WA1").RootGroup().Create("Test3","Description3")
-		Request: https://api.tier3.com/v2/groups/BTDI
-		payload={'parentGroupId': u'wa1-837', 'name': 'Test3', 'description': 'Description3'}
-		Response: status_code: 400
-		{"message":"The 'name' property is required."}
+		<clc.APIv2.group.Group object at 0x10cc76c90>
+		>>> print _
+		Test5
 
 		"""
 
@@ -101,9 +97,16 @@ class Group(object):
 
 
 	def Delete(self):
-		"""Delete group."""
-		#status = {u'href': u'/v2/operations/btdi/status/wa1-126437', u'id': u'wa1-126437', u'rel': u'status'}
-		status = clc.v2.API.Call('DELETE','groups/%s/%s' % (self.alias,self.id),{})
+		"""Delete group.
+		
+		>>> clc.v2.Group("wa1-4416").Create(name="Test6")
+		<clc.APIv2.group.Group object at 0x1041937d0>
+		>>> clc.v2.Group(_.id).Delete().WaitUntilComplete()
+		0
+
+		"""
+
+		return(clc.v2.Requests(clc.v2.API.Call('DELETE','groups/%s/%s' % (self.alias,self.id),{})))
 	
 
 	def Account(self):
