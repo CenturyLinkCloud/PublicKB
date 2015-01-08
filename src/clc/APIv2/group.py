@@ -1,7 +1,7 @@
 """
 Group related functions.  
 
-These group related functions generally align one-for-one with published API calls categorized in the account category
+These group related functions generally align one-for-one with published API calls categorized in the group category
 
 API v2 - https://t3n.zendesk.com/forums/21013480-Groups
 
@@ -23,6 +23,7 @@ Group object variables:
 # TODO - async operations need to return a work queue class item for further followup
 # TODO - utility class to rewrite timestamps as unixtime
 # TODO - server power actions - these take a list of server names which we know
+# TODO - horizontalAutoscalePolicyMapping, scheduledActivities, upcomingScheduledActivities
 
 
 import json

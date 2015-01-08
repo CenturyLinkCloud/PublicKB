@@ -88,6 +88,20 @@ class Datacenter:
 		return(clc.v2.Group.GetAll(root_group_id=self.root_group_id,alias=self.alias))
 
 
+	def _DeploymentCapabilities(self,cached=True):
+		if not self.deployment_capabilities or not cached:  return(self.deployment_capabilities)
+			self.deployment_capabilities = clc.v2.API.Call('GET','datacenters/%s/%s/deploymentCapabilities' % (self.alias,self.location))
+
+		if self.deployment_capabilities and cached:  return(self.deployment_capabilities)
+
+
+	def Networks(self):
+		return(clc.v2.Networks(self._DeploymentCapabilities()['deployableNetworks']))
+
+
+	def Templates(self):
+
+
 	def __str__(self):
 		return(self.location)
 
