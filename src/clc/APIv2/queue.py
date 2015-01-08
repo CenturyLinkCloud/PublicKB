@@ -77,7 +77,8 @@ class Requests(object):
 		if type(obj) is int:  return(self)	# we get this with a sum() call - ignore the first argument
 		if self.alias != obj.alias:  raise(ArithmeticError("Cannot add Requests operating on different aliases"))
 
-		new_obj = Requests(obj.requests+self.requests,alias=self.alias)
+		new_obj = Requests([],alias=self.alias)
+		new_obj.requests = obj.requests+self.requests
 		new_obj.success_requests = obj.success_requests+self.success_requests
 		new_obj.error_requests = obj.error_requests+self.error_requests
 

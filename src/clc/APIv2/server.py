@@ -245,7 +245,7 @@ class Server(object):
 							 'networkId': network_id, 'ipAddress': ip_address, 'password': password,
 							 'sourceServerPassword': source_server_password, 'cpu': cpu, 'cpuAutoscalePolicyId': cpu_autoscale_policy_id,
 							 'memoryGB': memory, 'type': type, 'storageType': storage_type, 'antiAffinityPolicyId': anti_affinity_policy_id,
-							 'customFields': custom_fields, 'additionalDisks': additional_disks, 'ttl': ttl, 'packages': packages}),debug=True)))
+							 'customFields': custom_fields, 'additionalDisks': additional_disks, 'ttl': ttl, 'packages': packages}))))
 
 
 	def Clone(self,network_id,name=None,cpu=None,memory=None,group_id=None,alias=None,password=None,ip_address=None,
@@ -286,8 +286,7 @@ class Server(object):
 		if not description:  description = self.description
 		# TODO - #if not cpu_autoscale_policy_id:  cpu_autoscale_policy_id = 
 		# TODO - #if not anti_affinity_policy_id:  anti_affinity_policy_id =
-
-		# TODO - need to get network_id of self
+		# TODO - need to get network_id of self, not currently exposed via API :(
 
 		requests_lst = []
 		for i in range(0,count):
@@ -300,8 +299,6 @@ class Server(object):
 						anti_affinity_policy_id=anti_affinity_policy_id,packages=packages,
 						template=self.id))
 
-		print requests_lst
-		print sum(requests_lst).requests
 		return(sum(requests_lst))
 
 
