@@ -40,6 +40,7 @@ Server object variables:
 # TODO - Stop Maintenance Mode
 # TODO - Create Server
 # TODO - remove constructor server_obj if not used
+# TODO - implement Servers class to support operations on multiple servers.  Group ops can line into this directly.
 
 import json
 import clc
@@ -143,24 +144,23 @@ class Server(object):
 		return([obj['name'] for obj in self.data['details']['snapshots']])
 
 
-	def CreateSnapshot(self,delete_existing=True,expiration_days=7):
-		"""Take a Hypervisor level snapshot retained for between 1 and 10 days (7 is default).
+	def ExecutePackage(self,package_id,parameters={}):
+		"""Execute an existing Bluerprint package on the server.
 
-		Currently only one snapshop may exist at a time, thus will delete snapshots if one already
-		exists before taking this snapshot.  Returns a Request object that can be waited on.
+		https://t3n.zendesk.com/entries/59727040-Execute-Package
 
-		>>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT02').CreateSnapshot().WaitUntilComplete()
+		Requires package ID, currently only available by browsing control and browsing
+		for the package itself.  The UUID parameter is the package ID we need.
+
+		>>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT06'). \
+		           ExecutePackage(package_id="77ab3844-579d-4c8d-8955-c69a94a2ba1a",parameters={}). \
+				   WaitUntilComplete()
 		0
 
 		"""
 
-		if len(self.data['details']['snapshots']):  
-			if delete_existing:  
-				if self.DeleteSnapshot().WaitUntilComplete():  raise(clc.CLCException("Error deleting snapshots"))
-			else:  raise(clc.CLCException("Snapshot already exists cannot take another"))
-
-		return(clc.v2.Requests(clc.v2.API.Call('POST','operations/%s/servers/createSnapshot' % (self.alias),
-		                                       {'serverIds': self.id, 'snapshotExpirationDays': expiration_days})))
+		return(clc.v2.Requests(clc.v2.API.Call('POST','operations/%s/servers/executePackage' % (self.alias),
+		                                       json.dumps({'servers': [self.id], 'package': {'packageId': package_id, 'parameters': parameters}}))))
 
 
 	def DeleteSnapshot(self,names=None):
