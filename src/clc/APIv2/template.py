@@ -1,11 +1,9 @@
 """
-Network related functions.  
+Template related functions.  
 
-These network related functions generally align one-for-one with published API calls categorized in the network category
+Templates object variables:
 
-Networks object variables:
-
-Network object variables:
+Template object variables:
 
 	network.name
 	network.id
@@ -23,12 +21,12 @@ Network object variables:
 
 import clc
 
-class Networks(object):
+class Templates(object):
 
 	def __init__(self,networks_lst):
 		self.networks = []
 		for network in networks_lst:
-			self.networks.append(Network(id=network['networkId'],alias=network['accountID'],network_obj=network))
+			self.networks.append(Template(id=network['networkId'],alias=network['accountID'],network_obj=network))
 
 
 	def Get(self,key):
@@ -43,7 +41,7 @@ class Networks(object):
 			if network.name == key:  return(network)
 
 
-class Network(object):
+class Template(object):
 
 	def __init__(self,id,alias=None,network_obj=None):
 		"""Create Nework object.

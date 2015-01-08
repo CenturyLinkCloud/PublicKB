@@ -7,13 +7,14 @@ API v2 - https://t3n.zendesk.com/forums/21613140-Datacenters
 
 Datacenter object variables:
 
-	datacenter.id
+	datacenter.id (alias for location)
 	datacenter.name
 	datacenter.location
+	datacenter.supportsPremiumStorage
+	datacenter.supportsSharedLoadBalancer
 
 """
 
-# TODO Get Data Center Deployment Capabilities
 # TODO - init link to billing, statistics, scheduled activities
 
 import clc
@@ -65,6 +66,8 @@ class Datacenter:
 			self.root_group_id = [obj['id'] for obj in r['links'] if obj['rel'] == "group"][0]
 			self.root_group_name = [obj['name'] for obj in r['links'] if obj['rel'] == "group"][0]
 
+		self.id = self.location
+
 
 	def RootGroup(self):
 		"""Returns group object for datacenter root group.
@@ -98,17 +101,16 @@ class Datacenter:
 
 
 	def Networks(self):
-		return(clc.v2.Templates(self._DeploymentCapabilities()['templates']))
+		return(clc.v2.Networks(self._DeploymentCapabilities()['deployableNetworks']))
 
 
 	def Templates(self):
-		pass
+		return(clc.v2.Templates(self._DeploymentCapabilities()['templates']))
 
 
-    def __getattr__(self,var):
-        if hasattr(self,var):  return(getattr(self,var))
-		elif var in ("supportsPremiumStorage","supportsSharedLoadBalancer"):  return(self._DeploymentCapabilities()[var]
-        else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,var)))
+	def __getattr__(self,var):
+		if var in ("supportsPremiumStorage","supportsSharedLoadBalancer"):  return(self._DeploymentCapabilities()[var])
+		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,var)))
 
 
 	def __str__(self):

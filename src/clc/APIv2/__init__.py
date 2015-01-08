@@ -20,6 +20,7 @@ from clc.APIv2.account import Account
 from clc.APIv2.group import Group
 from clc.APIv2.server import Server
 from clc.APIv2.network import Networks, Network
+from clc.APIv2.template import Templates, Template
 from clc.APIv2.queue import Queue, Request, Requests
 from clc.APIv2.anti_affinity import AntiAffinity
 from clc.APIv2.datacenter import Datacenter
