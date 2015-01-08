@@ -275,7 +275,7 @@ class Server(object):
 		if not name:  name = re.search("%s(.+)\d{2}$" % self.alias,self.name).group(1)
 		if not description and self.description:  description = self.description
 		if not cpu:  cpu = self.cpu
-		if not memory:  cpu = self.memory
+		if not memory:  memory = self.memory
 		if not group_id:  group_id = self.group_id
 		if not alias:  alias = self.alias
 		if not source_server_password: source_server_password = self.Credentials()['password']
@@ -298,7 +298,16 @@ class Server(object):
 						primary_dns=primary_dns,secondary_dns=secondary_dns,additional_disks=additional_disks,
 						custom_fields=custom_fields,ttl=ttl,managed_os=managed_os,description=description,
                         source_server_password=source_server_password,cpu_autoscale_policy_id=cpu_autoscale_policy_id,
-						anti_affinity_policy_id=anti_affinity_policy_id,packages=packages))
+						anti_affinity_policy_id=anti_affinity_policy_id,packages=packages,
+						template=self.id))
+
+			#requests_lst.append(Server.Create( \
+			#            name,cpu,memory,self.name,group_id,network_id,self.alias,
+			#			password,ip_address,storage_type,type,
+			#			primary_dns,secondary_dns,additional_disks,
+			#			custom_fields,ttl,managed_os,description,
+            #            source_server_password,cpu_autoscale_policy_id,
+			#			anti_affinity_policy_id,packages))
 
 		return(sum(requests_lst))
 
