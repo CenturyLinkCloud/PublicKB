@@ -239,17 +239,18 @@ class Server(object):
 		# TODO - validate antiaffinity policy id set only with type=hyperscale
 		# TODO - parse ttl from seconds to "2014-12-17T01:17:17Z" format
 
+		print "xxx"
 		return(clc.v2.Requests(r = clc.v2.API.Call('POST','servers/%s' % (alias),
 		         json.dumps({'name': name, 'description': description, 'groupId': group_id, 'sourceServerId': template,
 							 'isManagedOS': managed_os, 'primaryDNS': primary_dns, 'secondaryDNS': secondary_dns, 
 							 'networkId': network_id, 'ipAddress': ip_address, 'password': password,
 							 'sourceServerPassword': source_server_password, 'cpu': cpu, 'cpuAutoscalePolicyId': cpu_autoscale_policy_id,
 							 'memoryGB': memory, 'type': type, 'storageType': storage_type, 'antiAffinityPolicyId': anti_affinity_policy_id,
-							 'customFields': custom_fields, 'additionalDisks': additional_disks, 'ttl': ttl, 'packages': packages}))))
+							 'customFields': custom_fields, 'additionalDisks': additional_disks, 'ttl': ttl, 'packages': packages}),debug=True)))
 
 
 	def Clone(self,network_id,name=None,cpu=None,memory=None,group_id=None,alias=None,password=None,ip_address=None,
-	          storage_type="standard",type="standard",primary_dns=None,secondary_dns=None,
+	          storage_type=None,type=None,primary_dns=None,secondary_dns=None,
 			  additional_disks=None,custom_fields=None,ttl=None,managed_os=False,description=None,
 			  source_server_password=None,cpu_autoscale_policy_id=None,anti_affinity_policy_id=None,
 			  packages=[],count=1):  
@@ -281,6 +282,7 @@ class Server(object):
 		if not password: password = source_server_password	# is this the expected behavior?
 		if not storage_type:  storage_type = self.storage_type
 		if not type:  type = self.type
+		if not storage_type:  storage_type = self.storage_type
 		if not custom_fields and len(self.custom_fields): custom_fields = self.custom_fields
 		if not description:  description = self.description
 		# TODO - #if not cpu_autoscale_policy_id:  cpu_autoscale_policy_id = 
@@ -289,11 +291,14 @@ class Server(object):
 		# TODO - need to get network_id of self
 
 		requests_lst = []
-		for i in range(1,count):
+		for i in range(0,count):
 			requests_lst.append(Server.Create( \
-			            self,name,cpu,memory,group_id,network_id,alias,password,ip_address,storage_type,
-						type,primary_dns,secondary_dns,additional_disks,custom_fields,ttl,managed_os,description,
-                        source_server_password,cpu_autoscale_policy_id,anti_affinity_policy_id,packages=[]))
+			            name=name,cpu=cpu,memory=memory,group_id=group_id,network_id=network_id,alias=self.alias,
+						password=password,ip_address=ip_address,storage_type=storage_type,type=type,
+						primary_dns=primary_dns,secondary_dns=secondary_dns,additional_disks=additional_disks,
+						custom_fields=custom_fields,ttl=ttl,managed_os=managed_os,description=description,
+                        source_server_password=source_server_password,cpu_autoscale_policy_id=cpu_autoscale_policy_id,
+						anti_affinity_policy_id=anti_affinity_policy_id,packages=packages))
 
 		return(sum(requests_lst))
 
