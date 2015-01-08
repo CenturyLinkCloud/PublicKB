@@ -261,7 +261,8 @@ class Server(object):
 		if not description and self.description:  description = self.description
 		if not cpu:  cpu = self.cpu
 		if not memory:  cpu = self.memory
-		if not group_id:  group_id = self.groupId
+		if not group_id:  group_id = self.group_id
+		if not alias:  alias = self.alias
 
 		# TODO - need to get network_id of self
 
