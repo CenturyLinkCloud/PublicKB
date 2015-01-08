@@ -37,6 +37,7 @@ Server object variables:
 # TODO - remove constructor server_obj if not used
 # TODO - implement Servers class to support operations on multiple servers.  Group ops can line into this directly.
 # TODO - create server capture and resolve alias via uuid
+# TODO - Clone server method - clones selve as a new server
 
 import json
 import clc
@@ -199,9 +200,11 @@ class Server(object):
 
 
 	@staticmethod
-	def Create(self,name,cpu,memory,template,group_id,network_id,password="",ip_address="",
-	           primaryDns="8.8.8.8",secondaryDns="8.8.4.4",storage_type="standard",type="standard",
-			   additional_disks=[],custom_fields=[],ttl="",managed_os=False,description=None):  
+	def Create(name,cpu,memory,template,group_id,network_id,alias=None,password=None,ip_address=None,
+	           storage_type="standard",type="standard",primary_dns=None,secondary_dns=None,
+			   additional_disks=[],custom_fields=[],ttl=None,managed_os=False,description=None,
+			   source_server_password=None,cpu_autoscale_policy_id=None,anti_affinity_policy_id=None,
+			   packages=[]):  
 		"""Creates a new server.
 
 		https://t3n.zendesk.com/entries/59565550-Create-Server
@@ -211,6 +214,8 @@ class Server(object):
 
 		"""
 
+		if not alias:  alias = clc.v2.Account.GetAlias()
+
 		if not description:  description = name
 		if type.lower() not in ("standard","hyperscale"):  raise(clc.CLCException("Invalid type"))
 		if storage_type.lower() not in ("standard","premium"):  raise(clc.CLCException("Invalid storage_type"))
@@ -219,11 +224,16 @@ class Server(object):
 		# TODO - validate template exists
 		# TODO - validate additional_disks as a list of dicts with a path, sizeGB, and type (partitioned,raw) keys
 		# TODO - validate addition_disks path not in template reserved paths
+		# TODO - validate antiaffinity policy id set only with type=hyperscale
 		# TODO - parse ttl from seconds to "2014-12-17T01:17:17Z" format
 
-		#clc.v2.API.Call('POST','groups/%s' % (self.alias),{'name': name, 'description': description, 'parentGroupId': self.id},debug=True)
-		raise(Exception("Not implemented"))
-
+		return(clc.v2.Requests(r = clc.v2.API.Call('POST','servers/%s' % (alias),
+		         json.dumps({'name': name, 'description': description, 'groupId': group_id, 'sourceServerId': template,
+							 'isManagedOS': managed_os, 'primaryDNS': primary_dns, 'secondaryDNS': secondary_dns, 
+							 'networkId': network_id, 'ipAddress': ip_address, 'password': password,
+							 'sourceServerPassword': source_server_password, 'cpu': cpu, 'cpuAutoscalePolicyId': cpu_autoscale_policy_id,
+							 'memoryGB': memory, 'type': type, 'storageType': storage_type, 'antiAffinityPolicyId': anti_affinity_policy_id,
+							 'customFields': custom_fields, 'additionalDisks': additional_disks, 'ttl': ttl, 'packages': packages}))))
 
 #	def Update(self):
 #		"""Update group
