@@ -14,15 +14,34 @@ Network object variables:
 
 """
 
+
+# TODO - create, change, delete NW (need API)
+# TODO - get network details (IP range, vlan, etc)
+# TODO - find NW by name,id
+# TODO - filter NW by alias?
+
+
 import clc
 
 class Networks(object):
 
 	def __init__(self,networks_lst):
 		self.networks = []
-		for network in networks:
-			self.network.append(Network(network))
+		for network in networks_lst:
+			print network
+			self.networks.append(Network(id=network['networkId'],alias=network['accountID'],network_obj=network))
 
+
+	def Get(self,key):
+		"""Get network by providing name, ID, or other unique key.
+
+		If key is not unique and finds multiple matches only the first
+		will be returned
+		"""
+
+		for network in self.networks:
+			if network.id == key:  return(network)
+			if network.name == key:  return(network)
 
 
 class Network(object):
@@ -36,19 +55,13 @@ class Network(object):
 		"""
 
 		self.id = id
+		self.type = type
+		self.name = network_obj['name']
 
 		if alias:  self.alias = alias
 		else:  self.alias = clc.v2.Account.GetAlias()
 
-		if group_obj:  self.data = group_obj
-		else:  self.data = clc.v2.API.Call('GET','groups/%s/%s' % (self.alias,self.id),{})
-
-
-	def __getattr__(self,var):
-		if var in self.data:  return(self.data[var])
-		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,var)))
-
 
 	def __str__(self):
-		return(self.data['id'])
+		return(self.id)
 

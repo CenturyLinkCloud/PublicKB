@@ -47,6 +47,8 @@ class Datacenter:
 
 		"""
 
+		self.deployment_capabilities = None
+
 		if alias:  self.alias = alias
 		else:  self.alias = clc.v2.Account.GetAlias()
 		if location:  self.location = location
@@ -89,7 +91,7 @@ class Datacenter:
 
 
 	def _DeploymentCapabilities(self,cached=True):
-		if not self.deployment_capabilities or not cached:  return(self.deployment_capabilities)
+		if not self.deployment_capabilities or not cached:  
 			self.deployment_capabilities = clc.v2.API.Call('GET','datacenters/%s/%s/deploymentCapabilities' % (self.alias,self.location))
 
 		if self.deployment_capabilities and cached:  return(self.deployment_capabilities)
@@ -100,6 +102,7 @@ class Datacenter:
 
 
 	def Templates(self):
+		pass
 
 
 	def __str__(self):
