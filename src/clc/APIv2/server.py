@@ -198,7 +198,9 @@ class Server(object):
 
 
 	@staticmethod
-	def Create(self,name,cpu,memoryGB,template,group_id,network_id,password="",ip_address="",primaryDns="8.8.8.8",secondaryDns="8.8.4.4",storage_type="standard",type="standard",isManagedOS=False,description=None):  
+	def Create(self,name,cpu,memoryGB,template,group_id,network_id,password="",ip_address="",
+	           primaryDns="8.8.8.8",secondaryDns="8.8.4.4",storage_type="standard",type="standard",
+			   additional_disks=[],custom_fields=[],ttl="",isManagedOS=False,description=None):  
 		"""Creates a new server.
 
 		https://t3n.zendesk.com/entries/59565550-Create-Server
@@ -212,6 +214,9 @@ class Server(object):
 		if type.lower() not in ("standard","hyperscale"):  raise(clc.CLCException("Invalid type"))
 		if storage_type.lower() not in ("standard","premium"):  raise(clc.CLCException("Invalid storage_type"))
 		if storage_type.lower() == "premium" and type.lower() == "hyperscale":  raise(clc.CLCException("Invalid type/storage_type combo"))
+		# TODO - validate custom_fields as a list of dicts with an id and a value key
+		# TODO - validate additional_disks as a list of dicts with a path, sizeGB, and type (partitioned,raw) keys
+		# TODO - parse ttl from seconds to "2014-12-17T01:17:17Z" format
 
 		#clc.v2.API.Call('POST','groups/%s' % (self.alias),{'name': name, 'description': description, 'parentGroupId': self.id},debug=True)
 		raise(Exception("Not implemented"))
