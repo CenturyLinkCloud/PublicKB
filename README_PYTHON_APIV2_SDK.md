@@ -49,19 +49,30 @@ clc.v2.Server.Create(name="api2",cpu=1,memory=1,
 
 ```
 
-Now let us do some more advanced work covering a software development lifecycle:
+Now let us do some more advanced work covering a software development lifecycle.  
+Our testing team has reports of problems in the VA1 production site:
 
 ```python
 
-# Problem reported in Prod - duplicate environment for further testing
+# Get VA1 datacenter and all servers in the VA1 group
+va1 = clc.v2.Datacenter("VA1")
+va1_prod_servers = va1.Groups().Get("Production").Servers()
 
+# Create a test group and clone production so we can QA bug 1234
+va1_qa_group = va1.RootGroup().Create("QA-1234")
+for server in va1_prod_servers.servers:
+    server.Clone(group_id=va1_qa_group.id,network_id=va1.Networks().networks[0].id)
 
-# 
 
 # Take snapshot of prod before deploying code
-
+va1_prod_servers.CreateSnapshot().WaitUntilComplete()
 
 # Deploy updated application via Blueprint package
+va1_prod_servers.ExecutePackage(package_id="77ab3844-579d-4c8d-8955-c69a94a2ba1a",parameters={}). \
+              WaitUntilComplete()
+
+# Cleanup test environment
+va1_qa_group.Delete().WaitUntilComplete()
 
 
 ```

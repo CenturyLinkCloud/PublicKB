@@ -392,7 +392,7 @@ class Server(object):
 			requests_lst.append(Server.Create( \
 			            name=name,cpu=cpu,memory=memory,group_id=group_id,network_id=network_id,alias=self.alias,
 						password=password,ip_address=ip_address,storage_type=storage_type,type=type,
-						primary_dns=primary_dns,secondary_dns=secondary_dns,additional_disks=additional_disks,
+						primary_dns=primary_dns,secondary_dns=secondary_dns,
 						custom_fields=custom_fields,ttl=ttl,managed_os=managed_os,description=description,
                         source_server_password=source_server_password,cpu_autoscale_policy_id=cpu_autoscale_policy_id,
 						anti_affinity_policy_id=anti_affinity_policy_id,packages=packages,

@@ -87,11 +87,10 @@ class Datacenter:
 
 		>>> wa1 = clc.v2.Datacenter.GetDatacenters()[0]
 		>>> wa1.Groups()
-		[<clc.APIv2.group.Group object at 0x10144f290>, <clc.APIv2.group.Group object at 0x10144f210>]
+		<clc.APIv2.group.Groups object at 0x10144f290>
 
 		"""
 
-		#return(clc.v2.Groups(clc.v2.Group.GetAll(root_group_id=self.root_group_id,alias=self.alias))
 		return(self.RootGroup().Subgroups())
 
 
