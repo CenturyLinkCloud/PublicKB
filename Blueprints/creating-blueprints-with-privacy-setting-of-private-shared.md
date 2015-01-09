@@ -2,7 +2,12 @@
   "title": "Creating Blueprints with Privacy Setting of Private Shared",
   "date": "10-14-2014",
   "author": "Richard Seroter",
-  "attachments": [],
+  "attachments": [
+    {
+      "title": "Attached File"
+      "link": "/lp/resources/Balancing Agility Cost and Control.pdf"
+    }
+  ],
   "related_products": [ 
     {
       "title": "Hyperscale Server",
