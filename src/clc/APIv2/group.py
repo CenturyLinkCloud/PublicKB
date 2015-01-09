@@ -103,6 +103,9 @@ class Group(object):
 	def GetAll(root_group_id,alias=None):  
 		"""Gets a list of groups within a given account.
 
+		>>> clc.v2.Group.GetAll("wa1-4416")
+		[<clc.APIv2.group.Group object at 0x1065b0190>, <clc.APIv2.group.Group object at 0x1065b0dd0>]
+
 		"""
 
 		if not alias:  alias = clc.v2.Account.GetAlias()
@@ -142,10 +145,24 @@ class Group(object):
 
 
 	def Subgroups(self):
+		"""Returns a Groups object containing all child groups.
+
+		>>> clc.v2.Group("wa1-4416").Subgroups()
+		<clc.APIv2.group.Groups object at 0x105fa27d0>
+
+		"""
+
 		return(Groups(alias=self.alias,groups_lst=self.data['groups']))
 
 
 	def Servers(self):
+		"""Returns a Servers object containing all servers within the group.
+
+		>>> clc.v2.Group("wa1-4416").Subgroups()
+		<clc.APIv2.group.Groups object at 0x105fa27d0>
+
+		"""
+
 		return(clc.v2.Servers(alias=self.alias,servers_lst=[obj['id'] for obj in self.data['links'] if obj['rel']=='server']))
 
 

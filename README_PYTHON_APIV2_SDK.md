@@ -269,12 +269,12 @@ Object variables available but access subject to change with future releases:
 * group.change_info
 
 
-### clc.v2.Group.Groups(groups_lst,alias=None)
+### clc.v2.Groups(groups_lst,alias=None)
 `Groups` object constructor.  If no alias is provided will use the default associated with the API
 credentials in use.  `groups_lst` is a list of group objects retrieved from API.  Usually no need to call this constructor directly.
 
 
-### clc.v2.Group.Groups.Get(key)
+### clc.v2.Groups.Get(key)
 Returns a `Group` object matching the provided key.  Match is against name, ID, or description.
 If key is not unique and finds multiple matches only the first will be returned
 
@@ -284,7 +284,7 @@ If key is not unique and finds multiple matches only the first will be returned
 ```
 
 
-### clc.v2.Group.Groups.Search(key)
+### clc.v2.Groups.Search(key)
 Returns a list of `Group` objects with partial matches to the provided key.  Match is against name, ID, or description.
 
 ```python
@@ -293,6 +293,71 @@ Returns a list of `Group` objects with partial matches to the provided key.  Mat
 ```
 
 
+### clc.v2.Group.GetAll(root_group_id,alias=None) (static)
+Given a group ID and optional alias returns a list of `Group` objects associated with that group.
+
+*Subject to deprecation in future release.*
+
+```python
+>>> clc.v2.Group.GetAll("wa1-4416")
+[<clc.APIv2.group.Group object at 0x1065b0190>, <clc.APIv2.group.Group object at 0x1065b0dd0>]
+```
+
+
+### clc.v2.Group(id,alias=None,group_obj=None)
+Create a new `Group` object.  If alias is not provided will use default value associated with the account.
+If `group_obj` is not provided will perform and API query to get group definition.  `group_obj` is a list of
+group definitions from the API and is not generally used by user functions.
+
+```python
+>> clc.v2.Group(id="wa1-1798")
+<clc.APIv2.group.Group object at 0x109188b90>
+```
+
+
+### clc.v2.Create()
+Creates a new group and returns a `Group` object.
+
+```python
+>>> clc.v2.Datacenter(location="WA1").RootGroup().Create("Test3","Description3")
+<clc.APIv2.group.Group object at 0x10cc76c90>
+>>> print _
+Test5
+```
+
+
+### clc.v2.Delete()
+Deletes group.  Returns a `Requests` object.
+
+```python
+>>> clc.v2.Group("wa1-4416").Create(name="Test6")
+<clc.APIv2.group.Group object at 0x1041937d0>
+>>> clc.v2.Group(_.id).Delete().WaitUntilComplete()
+0
+```
+
+
+### clc.v2.Subgroups()
+Returns a `Groups` object containing all child groups.
+
+```python
+>>> clc.v2.Group("wa1-4416").Subgroups()
+<clc.APIv2.group.Groups object at 0x105fa27d0>
+```
+
+
+
+### clc.v2.Servers()
+Returns a `Servers` object containing all servers within the group.
+
+```python
+>>> clc.v2.Group("wa1-4416").Servers()
+<clc.APIv2.server.Servers object at 0x1065b0f10>
+```
+
+
+
+### clc.v2.Account()
 
 
 
