@@ -24,7 +24,7 @@ First some basic stuff:
 ```python
 
 # Set credentials.  These are the same credentials used to login to the web UI (https://control.tier3.com)
-clc.v2.SetCredentials("keith.resar.demo","2d3gkCKDWaW45eqS")
+clc.v2.SetCredentials("username","password")
 
 # Get Account Detail
 account = clc.v2.Account()
@@ -78,9 +78,25 @@ va1_qa_group.Delete().WaitUntilComplete()
 ```
 
 No need to block on queued actions before supplying additional requests.  Build out one of every
-template in our catalog, wait for completion, then tear the environment down.
+template in our catalog and wait for completion.
 
 ```python
+
+# Create group to hold all new servers
+catalog_group = va1.RootGroup().Create("Build Entire Catalog")
+
+# Build each server, keeping track of its build ID
+# Set a 2 hour TTL so these servers do not hang around
+requests = []
+for template in va1.Templates().templates:
+    requests.append(clc.v2.Server.Create(name="CAT",cpu=2,memory=4,ttl=7200,
+                                         group_id=catalog_group.id,
+                                         template=template.id,
+                                         network_id=va1.Networks().networks[0].id))
+
+# Wait for all parallel builds to complete
+sum(requests).WaitUntilComplete()
+
 ```
 
 
