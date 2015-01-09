@@ -62,7 +62,39 @@ import clc
 
 
 class Servers(object):
-	pass
+
+	def __init__(self,servers_lst,alias=None):
+		"""Container class for one or more servers.
+
+		Behaves differently than the other container classes like Groups where the *_lst
+		parameter can fully define the object.  All we have is the server name on construction.
+		We will lazily create server objects as needed since each requires a seperate API call.
+
+		"""
+
+		if alias:  self.alias = alias
+		else:  self.alias = clc.v2.Account.GetAlias()
+
+		self.servers_lst = servers_lst
+
+
+	def Servers(self,cached=True):
+		"""Returns list of server objects, populates if necessary."""
+
+		self.servers = []
+		for server in servers_lst:
+			self.servers.append(Server(id=server['id'],alias=self.alias,server_obj=server))
+
+
+	def __getattr__(self,var):
+		if key == 'servers':  
+			# load list if not exist
+			# return list
+			return(self.data[key])
+		elif key in self.data['details']:  return(self.data['details'][key])
+		elif key in ("reservedDrivePaths", "addingCpuRequiresReboot", "addingMemoryRequiresReboot"):  return(self._Capabilities()[key])
+		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,key)))
+
 
 
 

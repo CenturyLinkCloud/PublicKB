@@ -27,7 +27,6 @@ Group object variables available but access subject to change with future releas
 
 # vCur:
 # TODO - servers: {u'href': u'/v2/servers/btdi/wa1btdiubuntu02', u'id': u'WA1BTDIUBUNTU02', u'rel': u'server'}
-# TODO - groups - depp list of all subgroups
 
 # vNest:
 # TODO - Update group
@@ -41,6 +40,7 @@ Group object variables available but access subject to change with future releas
 # TODO - horizontalAutoscalePolicyMapping, scheduledActivities, upcomingScheduledActivities
 # TODO - Implement Groups class as a collection of groups?
 # TODO - archiveGroupAction
+# TODO - Groups search by customfields
 
 
 import re
@@ -134,6 +134,10 @@ class Group(object):
 
 	def Subgroups(self):
 		return(Groups(alias=self.alias,groups_lst=self.data['groups']))
+
+
+	def Servers(self):
+		return(clc.v2.Servers(alias=self.alias,servers_lst=[obj['id'] for obj in self.data['links'] if obj['rel']=='server']))
 
 
 	def Create(self,name,description=None):  
