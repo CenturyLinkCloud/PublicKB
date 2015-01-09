@@ -55,6 +55,10 @@ class Account:
 
 	def __init__(self,alias=None):
 		"""Create account object.
+
+		>>> clc.v2.Account()
+		<clc.APIv2.account.Account instance at 0x1065a2e60>
+
 		"""
 
 		if alias:  self.alias = alias
