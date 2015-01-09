@@ -16,6 +16,7 @@ Datacenter object variables:
 """
 
 # TODO - init link to billing, statistics, scheduled activities
+# TODO - accounts link?
 
 import re
 import clc

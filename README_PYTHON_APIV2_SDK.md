@@ -112,6 +112,21 @@ Login itself is made lazily when the first API call requiring credentials is iss
 
 [Account pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.account.html)
 
+### Class variables
+
+* account.account_alias (synonym for account.alias)
+* account.address_line1
+* account.address_line2
+* account.business_name
+* account.city
+* account.state_province
+* account.postal_code
+* account.telephone
+* account.country
+* account.status
+* account.primary_data_center
+* account.isManaged
+
 ### clc.v2.Account.GetAlias() (static)
 Return specified alias or if None the alias associated with the provided credentials.
 
@@ -164,6 +179,15 @@ WA1
 ## Datacenter
 
 [Datacenter pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.datacenter.html)
+
+### Class variables
+
+* datacenter.id (alias for location)
+* datacenter.name
+* datacenter.location
+* datacenter.supports_premium_storage
+* datacenter.supports_shared_load_balancer
+
 
 ### clc.v2.Datacenter.Datacenters(alias=None) (static)
 Return all cloud locations available to the calling alias.
@@ -227,6 +251,22 @@ Returns a `Templates` object associated with the datacenter.
 ## Group
 
 [Group pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.group.html)
+
+### Class variables
+
+* datacenter.id (alias for location)
+* datacenter.name
+* datacenter.location
+* datacenter.supports_premium_storage
+* datacenter.supports_shared_load_balancer
+
+
+
+
+
+
+
+
 
 
 
