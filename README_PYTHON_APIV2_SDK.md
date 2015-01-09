@@ -269,9 +269,28 @@ Object variables available but access subject to change with future releases:
 * group.change_info
 
 
-### clc.v2.Group.Groups
+### clc.v2.Group.Groups(groups_lst,alias=None)
+`Groups` object constructor.  If no alias is provided will use the default associated with the API
+credentials in use.  `groups_lst` is a list of group objects retrieved from API.  Usually no need to call this constructor directly.
 
 
+### clc.v2.Group.Groups.Get(key)
+Returns a `Group` object matching the provided key.  Match is against name, ID, or description.
+If key is not unique and finds multiple matches only the first will be returned
+
+```python
+>>> clc.v2.Datacenter().Groups().Get("Default Group")
+<clc.APIv2.group.Group object at 0x1065e5250>
+```
+
+
+### clc.v2.Group.Groups.Search(key)
+Returns a list of `Group` objects with partial matches to the provided key.  Match is against name, ID, or description.
+
+```python
+>>> clc.v2.Datacenter().Groups().Get("Default Group")
+<clc.APIv2.group.Group object at 0x1065e5250>
+```
 
 
 

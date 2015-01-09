@@ -65,6 +65,10 @@ class Groups(object):
 
 		If key is not unique and finds multiple matches only the first
 		will be returned
+
+		>>> clc.v2.Datacenter().Groups().Get("Default Group")
+		<clc.APIv2.group.Group object at 0x1065e5250>
+
 		"""
 
 		for group in self.groups:
@@ -77,6 +81,9 @@ class Groups(object):
 
 	def Search(self,key):
 		"""Search group list by providing partial name, ID, description or other key.
+
+		>>> clc.v2.Datacenter().Groups().Search("Default Group")
+		[<clc.APIv2.group.Group object at 0x1065b0f50>, <clc.APIv2.group.Group object at 0x1065b0d10>]
 
 		"""
 
