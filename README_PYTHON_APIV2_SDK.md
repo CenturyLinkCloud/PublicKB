@@ -346,7 +346,6 @@ Returns a `Groups` object containing all child groups.
 ```
 
 
-
 ### clc.v2.Servers()
 Returns a `Servers` object containing all servers within the group.
 
@@ -356,10 +355,15 @@ Returns a `Servers` object containing all servers within the group.
 ```
 
 
-
 ### clc.v2.Account()
+Returns the `Account` object that owns this group.
 
-
+```python
+>>> clc.v2.Group(alias="BTDI",id="wa1-837").Account()
+<clc.APIv2.account.Account instance at 0x108789878>
+>>> print _
+BTDI
+```
 
 
 
