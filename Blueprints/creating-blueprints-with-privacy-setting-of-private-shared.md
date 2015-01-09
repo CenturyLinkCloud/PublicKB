@@ -1,5 +1,5 @@
 {{{
-  "title": "Creating Blueprints with Privacy Setting of "Private Shared"",
+  "title": 'Creating Blueprints with Privacy Setting of "Private Shared"',
   "date": "10-14-2014",
   "author": "Richard Seroter",
   "attachments": []
