@@ -18,7 +18,7 @@ API Documentaton v2: https://t3n.zendesk.com/categories/20067994-API-v2-0-Beta-
 
 from clc.APIv2.account import Account
 from clc.APIv2.group import Group
-from clc.APIv2.server import Server
+from clc.APIv2.server import Servers, Server
 from clc.APIv2.network import Networks, Network
 from clc.APIv2.template import Templates, Template
 from clc.APIv2.alert import Alerts, Alert

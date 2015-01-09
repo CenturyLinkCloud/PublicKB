@@ -81,18 +81,16 @@ class Servers(object):
 	def Servers(self,cached=True):
 		"""Returns list of server objects, populates if necessary."""
 
-		self.servers = []
-		for server in servers_lst:
-			self.servers.append(Server(id=server['id'],alias=self.alias,server_obj=server))
+		if not hasattr(self,'_servers') or not cached:
+			self._servers = []
+			for server in self.servers_lst:
+				self._servers.append(Server(id=server,alias=self.alias))
+
+		return(self._servers)
 
 
-	def __getattr__(self,var):
-		if key == 'servers':  
-			# load list if not exist
-			# return list
-			return(self.data[key])
-		elif key in self.data['details']:  return(self.data['details'][key])
-		elif key in ("reservedDrivePaths", "addingCpuRequiresReboot", "addingMemoryRequiresReboot"):  return(self._Capabilities()[key])
+	def __getattr__(self,key):
+		if key == 'servers':  return(self.Servers())
 		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,key)))
 
 

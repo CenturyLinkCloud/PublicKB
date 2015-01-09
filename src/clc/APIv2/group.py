@@ -26,9 +26,8 @@ Group object variables available but access subject to change with future releas
 """
 
 # vCur:
-# TODO - servers: {u'href': u'/v2/servers/btdi/wa1btdiubuntu02', u'id': u'WA1BTDIUBUNTU02', u'rel': u'server'}
 
-# vNest:
+# vNext:
 # TODO - Update group
 # TODO - Get Group Billing Details
 # TODO - Statistics - Pending API spec error 500
@@ -41,6 +40,7 @@ Group object variables available but access subject to change with future releas
 # TODO - Implement Groups class as a collection of groups?
 # TODO - archiveGroupAction
 # TODO - Groups search by customfields
+# TODO - Update Get in templates, etc. to raise error on failure
 
 
 import re
@@ -67,10 +67,12 @@ class Groups(object):
 		will be returned
 		"""
 
-		for group in self.templates:
-			if group.id == key:  return(template)
-			if group.name == key:  return(template)
-			if group.description == key:  return(template)
+		for group in self.groups:
+			if group.id.lower() == key.lower():  return(group)
+			elif group.name.lower() == key.lower():  return(group)
+			elif group.description.lower() == key.lower():  return(group)
+
+		raise(clc.CLCException("Group not found"))	# No Match
 
 
 	def Search(self,key):
@@ -79,10 +81,10 @@ class Groups(object):
 		"""
 
 		results = []
-		for group in self.templates:
-			if group.id.lower().find(key.lower()) != -1:  results.append(template)
-			elif group.name.lower().find(key.lower()) != -1:  results.append(template)
-			elif group.description.lower().find(key.lower()) != -1:  results.append(template)
+		for group in self.groups:
+			if group.id.lower().find(key.lower()) != -1:  results.append(group)
+			elif group.name.lower().find(key.lower()) != -1:  results.append(group)
+			elif group.description.lower().find(key.lower()) != -1:  results.append(group)
 
 		return(results)
 
