@@ -23,31 +23,40 @@ First some basic stuff:
 
 ```python
 
-import clc
-
 # Set credentials.  These are the same credentials used to login to the web UI (https://control.tier3.com)
-clc.v2.SetCredentials("username","password")
-
+clc.v2.SetCredentials("keith.resar.demo","2d3gkCKDWaW45eqS")
 
 # Get Account Detail
-
+account = clc.v2.Account()
+print "%s\n%s\n%s\n%s, %s %s" % (account.business_name,
+                                 account.address_line1,
+                                 account.address_line2,
+                                 account.city,
+                                 account.state_province,
+                                 account.postal_code)
 
 # Get detail on default datacenter
+datacenter = account.PrimaryDatacenter()  # also available directly as clc.v2.Datacenter()
 
+# Get group by name
+default_group = datacenter.Groups().Get("Default Group")
 
-# Search for group by name
-
-
-# Create new server
+# Create new server and block until complete
+clc.v2.Server.Create(name="api2",cpu=1,memory=1,
+                     group_id=default_group.id,
+                     template=datacenter.Templates().Search("centos-6-64")[0].id,
+                     network_id=datacenter.Networks().networks[0].id).WaitUntilComplete()
 
 ```
 
-Now let us do some more advanced work:
+Now let us do some more advanced work covering a software development lifecycle:
 
 ```python
 
 # Problem reported in Prod - duplicate environment for further testing
 
+
+# 
 
 # Take snapshot of prod before deploying code
 
@@ -57,7 +66,11 @@ Now let us do some more advanced work:
 
 ```
 
+No need to block on queued actions before supplying additional requests.  Build out one of every
+template in our catalog, wait for completion, then tear the environment down.
 
+```python
+```
 
 
 

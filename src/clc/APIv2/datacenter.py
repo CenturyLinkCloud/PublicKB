@@ -91,7 +91,8 @@ class Datacenter:
 
 		"""
 
-		return(clc.v2.Group.GetAll(root_group_id=self.root_group_id,alias=self.alias))
+		#return(clc.v2.Groups(clc.v2.Group.GetAll(root_group_id=self.root_group_id,alias=self.alias))
+		return(self.RootGroup().Subgroups())
 
 
 	def _DeploymentCapabilities(self,cached=True):

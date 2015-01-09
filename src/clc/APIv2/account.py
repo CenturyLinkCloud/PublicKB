@@ -7,17 +7,17 @@ API v2 - https://t3n.zendesk.com/forums/21645944-Account
 
 Account object variables:
 
-	account.accountAlias (synonym for account.alias)
-	account.addressLine1
-	account.addressLine2
-	account.businessName
+	account.account_alias (synonym for account.alias)
+	account.address_line1
+	account.address_line2
+	account.business_name
 	account.city
-	account.stateProvince
-	account.postalCode
+	account.state_province
+	account.postal_code
 	account.telephone
 	account.country
 	account.status
-	account.primaryDataCenter
+	account.primary_data_center
 	account.isManaged
 
 """
@@ -26,6 +26,7 @@ Account object variables:
 # TODO - delete account
 # TODO - list subaccounts
 
+import re
 import clc
 
 class Account:
@@ -91,8 +92,11 @@ class Account:
 
 
 	def __getattr__(self,var):
-		if var in self.data:  return(self.data[var])
-		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,var)))
+		if var == "primary_datacenter":  key = "primaryDataCenter"
+		else:  key = re.sub("_(.)",lambda pat: pat.group(1).upper(),var)
+
+		if key in self.data:  return(self.data[key])
+		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,key)))
 
 
 	def __str__(self):
