@@ -149,7 +149,15 @@ Returns None if already at top-level account.
 <clc.APIv2.account.Account instance at 0x1065a2e60>
 ```
 
+### clc.v2.PrimaryDatacenter()
+Returns `Datacenter` object associated with the primary datacetner.
 
+```python
+>>> clc.v2.Account(alias='BTDI').PrimaryDatacenter()
+<clc.APIv2.datacenter.Datacenter instance at 0x10a45ce18>
+>>> print _
+WA1
+```
 
 ## Group
 
