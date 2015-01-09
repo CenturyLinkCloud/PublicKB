@@ -2,7 +2,19 @@
   "title": "Creating Blueprints with Privacy Setting of Private Shared",
   "date": "10-14-2014",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "related_products": [ 
+    {
+      "title": "Hyperscale Server"
+      "description": "Lightning-quick servers in the public cloud with 100% flash storage. Breakthrough performance for data and web scale architectures."
+      "link": "/hyperscale"
+    },
+    {
+      "title": "Private Cloud"
+      "description": "Our stack, isolated and dedicated to you. Deploy in over 55 CenturyLink locations around the world."
+      "link": "/private-cloud"
+    }
+  ]
 }}}
 
 <p><strong>Description:</strong>
