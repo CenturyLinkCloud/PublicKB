@@ -26,6 +26,5 @@
   <li>You will get an acknowledgement that we have received your request.&nbsp; Requests are reviewed by our Service Tasks team daily.</li>
   <li>From there, we work with you and your team to ensure the task is completed as requested.&nbsp; Updates on progress are provided via our ticketing system.</li>
 </ol>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
+

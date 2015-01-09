@@ -9,4 +9,3 @@
 <p>
   <iframe src="//player.vimeo.com/video/95152571" width="500" height="312" frameborder="0"></iframe>
 </p>
-<p>&nbsp;</p>

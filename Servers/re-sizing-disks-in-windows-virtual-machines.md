@@ -7,13 +7,13 @@
 
 <h3>Description (goal/purpose)</h3>
 <p>When a disk is provisioned to your server in control, occasionally you will get this warning "Manual intervention required". This indicates that manual intervention is required to complete the process of expanding your disk.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><strong>Audience</strong>
 </p>
 <ul>
   <li>CenturyLink Cloud Users</li>
 </ul>
-<p>&nbsp;</p>
+
 <h3>Prerequisites</h3>
 <ul>
   <li>Access to CenturyLink Control Portal: https://control.tier3.com</li>
@@ -28,7 +28,7 @@
 <p>3. &nbsp;Right click Disk Management, and click Rescan Disks.&nbsp;</p>
 <p>4. &nbsp;In&nbsp;the details pane, right-click the volume that you want, and then click&nbsp;<strong>Extend Volume</strong>.</p>
 <p>5. &nbsp;Follow the instructions in the Extend Volume Wizard to extend the partition.</p>
-<p>&nbsp;</p>
+
 <p><strong>Windows Server 2003</strong>
 </p>
 <p>&nbsp; &nbsp; &nbsp;If you are attempting to grow an Windows 2003 system partition (generally "C:\"), the partition will not be automatically re-sized to reflect the newly added space. You can verify this by examining the disk under "<strong>Disk Management</strong>"

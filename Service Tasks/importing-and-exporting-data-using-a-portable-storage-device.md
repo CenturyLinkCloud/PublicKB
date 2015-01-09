@@ -9,8 +9,8 @@
 <p>CenturyLink Cloud supports importing and exporting data through portable storage devices into our data centers. &nbsp;This article provides an overview of this billable service. &nbsp;Billable charge details can be found here: &nbsp;http://www.centurylinkcloud.com/products/support/service-tasks.
   &nbsp;&nbsp;</p>
 <p>Service Task prioritization: &nbsp;https://t3n.zendesk.com/entries/21651149-Ticket-Prioritization-Matrix</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
+
 <h3>Audience</h3>
 <ul>
   <li>CenturyLink Cloud Customers</li>
@@ -36,7 +36,7 @@
 <h3>Detailed Steps</h3>
 <p><strong>Requesting an Import</strong>
 </p>
-<p>&nbsp;</p>
+
 <ul>
   <li>Create a Ticket through the Centurylink Cloud Ticketing system</li>
   <ul>
@@ -57,10 +57,10 @@
   <li>Our team will update the ticket for this request as we progress with the work</li>
   <li>Once the data is copied and the request is completed, Centurylink Cloud will wipe the portable data drive and ship the device back to the address noted in the request, via the pre-paid return shipping method provided.</li>
 </ul>
-<p>&nbsp;</p>
+
 <p><strong>Requesting an Export&nbsp;</strong>
 </p>
-<p>&nbsp;</p>
+
 <ul>
   <li>Create a Ticket though the Centurylink Cloud Ticketing system</li>
   <ul>
@@ -99,4 +99,3 @@
     <li>CenturyLink Cloud is not responsible for the loss or damage of the device, please ensure that you have a back up of your data.</li>
   </ul>
 </ul>
-<p>&nbsp;</p>

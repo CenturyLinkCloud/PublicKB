@@ -19,7 +19,7 @@
 <h3>Detailed Information</h3>
 <p>The scripting environment used for the Command execution mode can run PowerShell scripts as well.&nbsp; However, PowerShell executes as it's own process within the environment and the environment will continue to wait (essentially hanging) unless you
   start the PowerShell script in the specific way outlined below.</p>
-<p>&nbsp;</p>
+
 <p><em>***Please note, this&nbsp;post is provided for informational purposes only and&nbsp;that changes like this have NOT been extensively tested against&nbsp;existing PowerShell scripts or various types of PowerShell Command Outputs. ***</em>
 </p>
 <p>Make the following changes to your package manifest:</p>
@@ -27,4 +27,3 @@
 </p>
 <p><em>&lt;Command&gt;cmd /c "echo . | powershell ./install.ps1" ${Arg}&lt;/Command&gt;</em>
 </p>
-<p>&nbsp;</p>

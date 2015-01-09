@@ -13,12 +13,11 @@
 <p>2.&nbsp;Fill out the appropriate details, as shown below.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/uTdbFfjWX4bZnF2IeG0xVGqFT/?name=Screen+Shot+2014-06-19+at+1.54.46+PM.png" alt="Screen_Shot_2014-06-19_at_1.54.46_PM.png" />
 </p>
-<p>&nbsp;</p>
+
 <p>3. Click next, and then verify that the information is correct.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/FTwAOi5yuja5DsEP8Scb3xyS9/?name=Child-Verify.jpg" alt="Child-Verify.jpg" />
 </p>
-<p>&nbsp;</p>
+
 <p>4.&nbsp;Once verified, please click on the deploy blueprint button. You will be presented with the deployment details along with an email stating the Blueprint has been queued.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/c5pOtXGVNHprMzE2GGrSbbuPw/?name=Queue_Child.jpg" alt="Queue_Child.jpg" />
 </p>
-<p>&nbsp;</p>

@@ -93,4 +93,3 @@
     <li>You will then be redirected to the Queue page to see the status of the running task. When it is completed, log on to one of the servers to confirm the file exists and has the data as expected.</li>
   </ol>
 </ol>
-<p>&nbsp;</p>

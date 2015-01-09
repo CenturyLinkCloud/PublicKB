@@ -22,9 +22,8 @@
 <p>Click the “+ Schedule Task” button to begin adding a new task. Select the appropriate action and desired time (i.e. Create or Delete Snapshot). Click save, and a snapshot of your group will be taken at the desired time.</p>
 <p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/pjk0gvin9hbc0ka/?name=sn4.png" alt="sn4.png" />
 </p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
+
+
+
+

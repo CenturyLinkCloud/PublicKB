@@ -161,7 +161,7 @@ Monitors for Microsoft SQL Server Service
       </td>
       <td>
         <p>15 Min</p>
-        <p>&nbsp;</p>
+        
       </td>
     </tr>
   </tbody>
@@ -226,7 +226,7 @@ Monitors for Microsoft SQL Database Mirroring
     </tr>
   </tbody>
 </table>
-<p>&nbsp;</p>
+
 Monitors for Microsoft SQL Server Analysis Services
 <table>
   <tbody>
@@ -402,5 +402,4 @@ Monitors for Microsoft SQL Server Reporting Services
     </tr>
   </tbody>
 </table>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+

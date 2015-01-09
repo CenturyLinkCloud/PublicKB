@@ -77,7 +77,7 @@
 </ul>
 <p><img src="https://t3n.zendesk.com/attachments/token/23gQG2zXrcfIpYWPx6DAQ2SmN/?name=08.png" alt="08.png" />
 </p>
-<p>&nbsp;</p>
+
 <p><strong>5. Time to Live</strong>
 </p>
 <ul>

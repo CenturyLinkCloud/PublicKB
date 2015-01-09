@@ -28,5 +28,5 @@
   </ol>
 </div>
 <div>
-  <p>&nbsp;</p>
+  
 </div>

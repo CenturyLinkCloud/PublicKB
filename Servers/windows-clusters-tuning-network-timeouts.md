@@ -17,6 +17,6 @@
   value of 1 second to 2 seconds. This can be set to a maximum of 4 seconds. Also recommended is to change the CrossSubnetThreshold from the default of 5 heartbeats to 20 heartbeats. This can be set to a maximum of 120 heartbeats. These settings will
   configure the cluster to allow 40 seconds of missed communication before a node tries to take over the services.</p>
 <p>All 4 of these settings can be made to a cluster if some servers are on the same subnet and other servers are on a different subnet.</p>
-<p>&nbsp;</p>
+
 <p>For additional information on the subject, please refer to the following blog post.</p>
 <p>http://blogs.msdn.com/b/clustering/archive/2012/11/21/10370765.aspx</p>

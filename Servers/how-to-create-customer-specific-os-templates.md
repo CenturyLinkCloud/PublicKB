@@ -42,7 +42,7 @@
 <p>6. &nbsp;Once the Convert to Template job is complete customers can test the deployment of the new template by using the Create Server function. &nbsp;The Template Description defined previously should be visible in the Operating System pull down menu.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/VOpySqoalxhPyEIxLvwTa22v9/?name=03.png" alt="03.png" />
 </p>
-<p>&nbsp;</p>
+
 <h3>FAQ</h3>
 <p><strong>Question</strong>: &nbsp;I've created a custom template in Data Center A, but when I try to create a VM from template in Data Center B its not showing?</p>
 <p><em><strong>Answer: &nbsp;Customer created templates do not replicate to all data centers out of the box today. &nbsp;If you need templates copied to other data centers please create a support ticket. &nbsp;Feature sets for global template replication are coming soon.</strong></em>

@@ -10,7 +10,7 @@
 <p>To access or change your PIN, login to the Control Portal. Once you have logged in, click the "<strong>Profile" </strong>icon (the "person" icon)&nbsp;and select “<strong>Profile</strong>”:</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/lozlvaryvluko45/?name=profile.JPG" alt="profile.JPG" />
 </p>
-<p>&nbsp;</p>
+
 <p>Your PIN will be displayed on the following screen:&nbsp;</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/rtG4U4GYrbRZPA0Da61qnLC7k/?name=pin.png" alt="pin.png" />
 </p>

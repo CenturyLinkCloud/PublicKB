@@ -14,7 +14,7 @@
 </p>
 <p><em><img src="https://t3n.zendesk.com/attachments/token/igx4zrd8DJt6tERYiOu0CqUGt/?name=Overview.jpg" alt="Overview.jpg" /></em>
 </p>
-<p>&nbsp;</p>
+
 <p>2. Use any SSH version 2 compatible client. (SSH, Putty, Secure CRT, WS_FTP).</p>
 <p>3. Direct your SSH client to connect to the host server IP that was provided to you by CenturyLink Cloud Control.&nbsp; This IP is a CLC private network IP. &nbsp;<strong>You should NEVER manage your virtual server through a public IP address but rather, always use a secure tunnel such as a client VPN or site to site VPN connection.</strong>
 </p>
@@ -24,7 +24,7 @@
 <pre>New password: <strong>********</strong></pre>
 <pre>Retype new password: <strong>********</strong></pre>
 <pre>passwd: all authentication tokens updated successfully.</pre>
-<p>&nbsp;</p>
+
 <p>5. Change your password right away, constructing your new password in a manner meaningful to you, but also secure. &nbsp;Please follow the password guidelines that are recommended below.</p>
 <p>Linux password strength is handled by a custom <em>PAM(8)</em> configuration that enforces the following policy:</p>
 <ul>
@@ -75,4 +75,3 @@
 <pre>Trying 216.64.212.85...</pre>
 <pre>Connected to 216.64.212.85. Escape character is '^]'.</pre>
 <pre>SSH-2.0-OpenSSH_5.3</pre>
-<p>&nbsp;</p>

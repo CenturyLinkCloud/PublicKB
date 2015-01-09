@@ -32,7 +32,7 @@
 <p><strong>**NOTE** The server now has the Managed Apache software installed and activated.</strong>
 </p>
 <h3><strong>&nbsp;FREQUENTLY ASKED QUESTIONS</strong></h3>
-<p>&nbsp;</p>
+
 <p><strong>Q: How is the CenturyLink Cloud for Managed Apache Tomcat priced? </strong>
 </p>
 <p>A: CenturyLink Cloud Web Software for Apache is priced by the VM, billed hourly.</p>

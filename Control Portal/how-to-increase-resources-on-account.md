@@ -30,10 +30,9 @@
 </ul>
 <p>3. Please let them know that you have reached your resource limitations.&nbsp;</p>
 <p>4. The engineer will validate your identity and then increase your limit.&nbsp;</p>
-<p>&nbsp;</p>
 <p><strong>Once the Engineer has increased the resources on your account, you will need to take these steps in order to apply them to the correct data-center.&nbsp;</strong>
 </p>
-<p>In Control</p>
+<p><strong>In Control</strong></p>
 <ol>
   <li>Go to Servers&nbsp;</li>
   <li>Select the proper Data-Center that you need the additional resources</li>
@@ -41,5 +40,3 @@
   <li>Scroll down to Resource Limits</li>
   <li>Increase the limit of the specific Resource</li>
 </ol>
-<p>&nbsp;</p>
-<p>&nbsp;</p>

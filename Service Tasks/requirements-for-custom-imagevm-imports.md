@@ -10,7 +10,7 @@
   will most likely not work.&nbsp;This machine will not be able to be cloned, archived, or used as a template, and in most cases you will only be able to add a public IP to existing internal IPs without manual intervention. Drive expansions will most
   likely not complete successfully, at least not without manual intervention.</p>
 <p><strong>Case 2</strong>:&nbsp; We can import the image and prep it to have full control site support.&nbsp; In most case with specialized appliances we will not be able to do this as they are too custom for us to support.</p>
-<p>&nbsp;</p>
+
 <p><strong>In order to have full control site functionality the following conditions must be met:</strong>
 </p>
 <p>1. The machine must be one of our supported operating systems.</p>
@@ -29,6 +29,5 @@
 <p>12. We must be able to install VMware tools on the machine.</p>
 <p>&nbsp;13.&nbsp;Windows machines cannot be domain joined (breaks clones)</p>
 <p>Meeting these requirements is not always a guarantee that we will be able to have full control site support (or even import the machine at all), however missing any of them is a guarantee that we will not be able to give the image full functionality.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
+

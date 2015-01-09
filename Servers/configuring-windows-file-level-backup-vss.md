@@ -19,7 +19,7 @@
 <p>By default, VSS is disabled. Click the “Enable” button to begin- an information dialog box will appear, to continue enabling VSS, select the “Yes” option. It is important to heed the warning presented by Microsoft, echoing the use cases outlined in this
   introduction of this article: <strong>“The default settings are not appropriate for servers that have high I/O load. For heavily used servers, you should manually configure shadow copies and place the storage area on a volume that will not be shadow copied”. &nbsp;</strong>Again,
   if you require a backup solution for a high-performance server, The CenturyLink Cloud's Solution Architects can assist you in designing an appropriate backup solution.</p>
-<p>&nbsp;</p>
+
 <p>Once you have clicked “Yes”, you will see a time stamp noting the first successful shadow copy. By clicking the “Settings” button, you can configure both the storage limits as well as the snapshot schedule- the default configuration does not have a storage
   limit and takes snapshots at 7:00A.M and 12:00P.M.</p>
 <p>To set a storage limit, select the “Use Limit” radio button and input an integer value for the size limit (in megabytes). You can use the “Details” button if you would like to specify a separate volume for VSS snapshot storage. In this example, we limit
@@ -34,7 +34,7 @@
   </a>
 </p>
 <p>If you would like to change the snapshot frequency, click the “Advanced” button, and check the “Repeat Task” check-box. In this example, we will take VSS snapshots every 15 minutes during business hours:</p>
-<p>&nbsp;</p>
+
 <p>
   <a><img src="https://t3n.zendesk.com/attachments/token/60d0swlbxmh4gtq/?name=vss4.PNG" alt="vss4.PNG" />
   </a>

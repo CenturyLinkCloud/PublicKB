@@ -8,7 +8,7 @@
 <h3>Description (goal/purpose)</h3>
 <p>Tier 3 supports the ability to add additional disks to Linux machines.&nbsp; This automated task can fail for various reasons requiring manual intervention on the customer machine in order to complete.&nbsp; These are the manual steps required to detect
   and mount a new disk.</p>
-<p>&nbsp;</p>
+
 <h3>Audience</h3>
 <ul>
   <li>NOC Engineers,&nbsp;Customers</li>
@@ -87,7 +87,7 @@
     <br /><strong><em>df -h</em></strong>
   </li>
 </ol>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
+
 <div>&nbsp;</div>
 <div>&nbsp;</div>

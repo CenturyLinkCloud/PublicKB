@@ -10,10 +10,10 @@
 <p>#1 - Deploy a Remote Desktop Gateway (RD Gateway). RD Gateways utilize the Remote Desktop Protocol over HTTPS to establish a secure, encrypted connection between remote users on the Internet and customer's Windows servers. For steps to deploy this service,
   please see:
   <br />http://technet.microsoft.com/en-us/library/dd983949</p>
-<p>&nbsp;</p>
+
 <p>#2 - Ensure you are utilizing strong passwords. Most RDP compromises are due to weak passwords. See the following URL to test the strength of your password(s):
   <br />https://www.microsoft.com/security/pc-security/password-checker.aspx</p>
-<p>&nbsp;</p>
+
 <p>#3 - Restrict users who can log in using RDP</p>
 <p>
   <br />#4 - Keep your systems updated with the latest patches.</p>

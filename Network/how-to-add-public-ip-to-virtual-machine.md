@@ -43,7 +43,7 @@ How To: &nbsp;Add Public IP to a Virtual Machine&nbsp;
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/RKl4J0cEhefRQ9bEP59SQKOnv/?name=03.png" alt="03.png" />
 </p>
-<p>&nbsp;</p>
+
 <h3>Edit or Delete Public IP on a Virtual Machine</h3>
 <p>1. &nbsp;Open the Servers GUI in the Control Portal</p>
 <p>2. &nbsp;Navigate to the Virtual Machine you wish to edit or delete the public IP, select the public IP in Server Info portion of the GUI</p>
@@ -58,4 +58,3 @@ How To: &nbsp;Add Public IP to a Virtual Machine&nbsp;
   removes the public IP in the GUI or API</p>
 <p>2. &nbsp;How are customers billed for public IP addresses? &nbsp;&nbsp;</p>
 <p>Answer: &nbsp;Customers are billed a nominal fee per public IP on a monthly basis. &nbsp;Public IP's are not an hourly billing service and as such using a public IP even for an hour will result in a nominal charge for the public IP address. &nbsp;</p>
-<p>&nbsp;</p>

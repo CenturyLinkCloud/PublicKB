@@ -32,4 +32,3 @@
   In this example, we look at the performance counters for the apt-get command. For detailed instructions on verbiage, please see the man page <a href="http://manpages.ubuntu.com/manpages/lucid/man1/perf-stat.1.html">here</a>.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/nzrvaxynbo9pdyo/?name=perf+stat.PNG" alt="perf_stat.PNG" />
 </p>
-<p>&nbsp;</p>

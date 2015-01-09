@@ -13,5 +13,4 @@
 <p>3. The decision - and subsequent discussion - are tracked on the original thread to close the loop (either via ticket or UserVoice item).</p>
 <p>4. The status of "accepted" items is not systematically available. &nbsp;This is due to the fluid, agile nature of our development cycle. &nbsp;Note that a backlog of accepted items is regularly reviewed and prioritized.</p>
 <p>5. Release notes with new capabilities are published after every development cycle.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+

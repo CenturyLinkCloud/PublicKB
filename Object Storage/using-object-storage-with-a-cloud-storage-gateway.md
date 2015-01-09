@@ -40,11 +40,10 @@ Using Object Storage with a Cloud Storage Gateway
 </ul>
 <p><img src="https://t3n.zendesk.com/attachments/token/1awhhwleoylupqf/?name=cloud+providers+03.png" alt="cloud_providers_03.png" />
 </p>
-<p>&nbsp;</p>
+
 <h3>Configuring TwinStrata CloudArray</h3>
 <p>Customers should consult best practices and installation guides from TwinStrata to finalize the configuration of the TwinStrata Cloud Array appliance. &nbsp;This includes, but is not limited to, Cache, Provisioning Policies and NAS or iSCSI services.
   &nbsp;</p>
-<p>&nbsp;</p>
+
 <p><strong>Last Updated WED, 06 FEB 2014, 15:00 PM EST</strong>
 </p>
-<p>&nbsp;</p>

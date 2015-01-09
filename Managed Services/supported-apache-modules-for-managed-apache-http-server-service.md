@@ -131,7 +131,7 @@ Apache Modules
         <p>mod_allowmethods</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -169,7 +169,7 @@ Apache Modules
         <p>mod_auth_form</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -207,7 +207,7 @@ Apache Modules
         <p>mod_authn_dbd</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -258,7 +258,7 @@ Apache Modules
         <p>mod_authn_socache</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -426,7 +426,7 @@ Apache Modules
         <p>mod_cache_disk</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -776,7 +776,7 @@ Apache Modules
         <p>mod_heartbeat</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -788,7 +788,7 @@ Apache Modules
         <p>mod_heartmonitor</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -865,7 +865,7 @@ Apache Modules
         <p>mod_lbmethod_bybusyness</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -877,7 +877,7 @@ Apache Modules
         <p>mod_lbmethod_byrequests</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -889,7 +889,7 @@ Apache Modules
         <p>mod_lbmethod_bytraffic</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -901,7 +901,7 @@ Apache Modules
         <p>mod_lbmethod_heartbeat</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -939,7 +939,7 @@ Apache Modules
         <p>mod_log_debug</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1159,7 +1159,7 @@ Apache Modules
         <p>mod_proxy_express</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1171,7 +1171,7 @@ Apache Modules
         <p>mod_proxy_fcgi</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1183,7 +1183,7 @@ Apache Modules
         <p>mod_proxy_fdpass</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1208,7 +1208,7 @@ Apache Modules
         <p>mod_proxy_html</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1259,7 +1259,7 @@ Apache Modules
         <p>mod_ratelimit</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1271,7 +1271,7 @@ Apache Modules
         <p>mod_reflector</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1283,7 +1283,7 @@ Apache Modules
         <p>mod_remoteip</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1308,7 +1308,7 @@ Apache Modules
         <p>mod_request</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1333,7 +1333,7 @@ Apache Modules
         <p>mod_sed</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1345,7 +1345,7 @@ Apache Modules
         <p>mod_session</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1357,7 +1357,7 @@ Apache Modules
         <p>mod_session_cookie</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1369,7 +1369,7 @@ Apache Modules
         <p>mod_session_dbd</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1394,7 +1394,7 @@ Apache Modules
         <p>mod_slotmem_plain</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1406,7 +1406,7 @@ Apache Modules
         <p>mod_slotmem_shm</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1431,7 +1431,7 @@ Apache Modules
         <p>mod_socache_dbm</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1443,7 +1443,7 @@ Apache Modules
         <p>mod_socache_memcache</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1455,7 +1455,7 @@ Apache Modules
         <p>mod_socache_shmcb</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1610,7 +1610,7 @@ Apache Modules
         <p>mod_watchdog</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>
@@ -1622,7 +1622,7 @@ Apache Modules
         <p>mod_xml2enc</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p><strong>X</strong>

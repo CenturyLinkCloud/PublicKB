@@ -18,7 +18,7 @@
 </div>
 <p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/jqcjpihqeytaf1g/?name=LB+traffic+Public.jpg" alt="LB_traffic_Public.jpg" />
 </p>
-<p>&nbsp;</p>
+
 <p><strong>Definitions in regards to this article</strong>:
   <br />VIP - The IP used for the Virtual Server. A VIP includes both an IP and a port. Separate VIP's are required for multiple ports used with the same IP.
   <br />Internal VIP - A VIP on a dedicated Load Balancer. This will always be an internal IP

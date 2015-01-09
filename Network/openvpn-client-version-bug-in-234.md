@@ -12,7 +12,7 @@ Impact
 <p>&nbsp;&nbsp;</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/Vwt21hq3g9dp2UVNrzPTrfdlL/?name=Process.png" alt="Process.png" />
 </p>
-<p>&nbsp;</p>
+
 <p>&nbsp;Attempting to end the task in Task Manager or to kill the process via command line fails. The only effective method in which to end the process is via a reboot of the client machine.</p>
 <p>&nbsp;Our recommendation at this time is to use OpenVPN 2.3.2. It&nbsp;has not been observed to suffer the connection issue described for 2.3.4, and is immune to the Heartbleed vulnerability. There is no need to uninstall 2.3.4 first, as during the install
   process any other version previously installed will be removed.&nbsp;</p>
@@ -33,7 +33,7 @@ Impact
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'C:\Program Files\openvpn\bin\openvpn.exe' –version</p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="https://t3n.zendesk.com/attachments/token/dNpUJZUr3w3AWVWJVIIE3iy8I/?name=version_cli.png" alt="version_cli.png" />
 </p>
-<p>&nbsp;</p>
+
 <p><strong>To change your version to 2.3.2:</strong>
 </p>
 <p><strong>&nbsp; Note: </strong>This does not require a reboot unless you're running version 2.3.4 and the OpenVPN Dameon process is already in a hung state.</p>
@@ -53,7 +53,7 @@ Impact
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1. This will automatically remove any previously installed versions and install 2.3.2</p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://t3n.zendesk.com/attachments/token/bzLGlvyNhCsovu0wIqW2gd3SU/?name=wizardpath.JPG" alt="wizardpath.JPG" />
 </p>
-<p>&nbsp;</p>
+
 <p>&nbsp;7. Click 'Next' when finished &nbsp;</p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp;<img src="https://t3n.zendesk.com/attachments/token/kI90vpZAHQr8hrfrn7D836oxI/?name=wizard4.JPG" alt="wizard4.JPG" />
 </p>
@@ -61,6 +61,5 @@ Impact
 <p>&nbsp; 8. Click 'Finish'&nbsp;</p>
 <p>&nbsp; &nbsp; &nbsp;&nbsp;<img src="https://t3n.zendesk.com/attachments/token/tzRTqgLhAKUFQoxQFBgh02VbV/?name=wizard5.JPG" alt="wizard5.JPG" />
 </p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
+

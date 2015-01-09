@@ -5,9 +5,9 @@
   "attachments": []
 }}}
 
-<p>&nbsp;</p>
+
 <p>You can recover deleted email items using Outlook Web Access(OWA).&nbsp; This provides an easy way for end users to retrieve deleted emails or contacts without involving their IT department.</p>
-<p>&nbsp;</p>
+
 <p>Steps for Recovering:</p>
 <ol>
   <li>Log into OWA.&nbsp; If you need assistance getting logged in please reference this article: Connecting to and Using OWA #link#</li>

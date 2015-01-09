@@ -154,19 +154,19 @@
   <a name="3"></a>
 </p>
 <h3>I am getting a "TLS" error</h3>
-<p>&nbsp;</p>
+
 <p><strong>TLS Error: TLS key negotiation failed to occur within 60 seconds (check your network connectivity)</strong>
 </p>
-<p>&nbsp;</p>
+
 <p><strong>TLS Error: TLS handshake failed</strong>
 </p>
-<p>&nbsp;</p>
+
 <p><strong>TCP/UDP: Closing socket</strong>
 </p>
-<p>&nbsp;</p>
+
 <p><strong>SIGUSR1[soft,tls-error] received, process restarting</strong>
 </p>
-<p>&nbsp;</p>
+
 <div>
   <p><strong>Restart pause, 2 second(s)”</strong>
   </p>
@@ -174,9 +174,9 @@
   <p><strong>Wed Nov 10 14:41:44 2010 us=378000 UDPv4 link remote: 64.94.142.10: (Your OpenVPN port)</strong>
   </p>
 </div>
-<p>&nbsp;</p>
+
 <p>If you see the above error message in your OpenVPN log, it can mean a couple of things:</p>
-<p>&nbsp;</p>
+
 <ol>
   <li>You have reached your max concurrent sessions available for your OpenVPN connection.&nbsp; Go to: <a href="https://control.tier3.com/Net/Vpn">https://control.tier3.com/Net/Vpn</a> and select Edit VPN Settings.&nbsp; Increase the Max connections and
     try again.</li>
@@ -192,29 +192,29 @@
   <li>You can find your OpenVPN port by going to your Program Files(x86)/OpenVPN/config/VpnName and opening your VpnName.ovpn file with notepad or a similar editor. &nbsp;The proto = protocol (tcp or udp), and the last number on the remote line is the port
     it uses) &nbsp;Example UDP 1194</li>
 </ul>
-<p>&nbsp;</p>
+
 <p>
   <a name="4"></a>
 </p>
 <h3>It says my credentials are not correct</h3>
-<p>&nbsp;</p>
+
 <p>Invalid Username/Password:</p>
-<p>&nbsp;</p>
+
 <p>Some users authenticate their OpenVPN with Active Directory(LDAP).&nbsp; You disable/enable this on the “edit vpn settings” button at: <a href="https://control.tier3.com/Net/Vpn">https://control.tier3.com/Net/Vpn</a>
 </p>
-<p>&nbsp;</p>
+
 <p>If you have authentication enabled and you are unable to connect with your username/password, you will see this in your OpenVPN log:</p>
-<p>&nbsp;</p>
+
 <p>“<strong>Wed Nov 10 15:14:56 2010 us=515000 SIGUSR1[soft,auth-failure] received, process restarting</strong>
 </p>
-<p>&nbsp;</p>
+
 <p><strong>Wed Nov 10 15:14:56 2010 us=515000 Restart pause, 2 second(s)”</strong>
 </p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
+
+
 <p>You need to verify with Tier 3 or your Administrator that you are using the right credentials.&nbsp; Your account must also be a member of: ManagedVPN</p>
-<p>&nbsp;</p>
+
 <p>
   <a name="5"></a>
 </p>

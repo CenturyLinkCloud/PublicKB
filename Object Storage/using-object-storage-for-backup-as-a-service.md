@@ -133,7 +133,7 @@ Using Object Storage for Backup as a Service
 <p>Customers should review backup logs for details on failure events. &nbsp;</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/cidzwqnx1w4upss/?name=39.png" alt="39.png" />
 </p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
+
 <p><em><strong>Last Updated THURS, 21 NOV 2013, 18:05 PM EST</strong></em>
 </p>

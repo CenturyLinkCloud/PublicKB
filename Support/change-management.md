@@ -7,7 +7,7 @@
 
 <p>All changes performed by CenturyLink Cloud&nbsp;will be done in compliance with the following criteria:</p>
 <p>All of the change types listed below can be performed as an emergency change where maintenance needs to be performed immediately.&nbsp; In these abnormal situations, no customer notification in required.</p>
-<p>&nbsp;</p>
+
 <table>
   <tbody>
     <tr>
@@ -42,7 +42,7 @@
       <td>
         <p>This category covers maintenance where CenturyLink Cloud&nbsp;cannot remove or migrate the live customer data from the system but it is expected that the maintenance will have no customer impact. An example of this is upgrading the redundant controllers
           on storage units that allow hot upgrading. It is highly recommended to migrate as much live customer data off of the hardware/service that is about to undergo maintenance.</p>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
         <p>(48 hours in advance) Customers, Partners, and CenturyLink Cloud&nbsp;will be notified via email.&nbsp; This list will be derived from control.</p>

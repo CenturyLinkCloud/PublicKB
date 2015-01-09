@@ -37,8 +37,8 @@
     <li>If we do not have access to the server, the team will open a ticket in the Tier 3 ticketing system will all of the account administrators of that server on the ticket. &nbsp;The customer will be asked to investigate the issue.</li>
     <li>In extreme cases where the security&nbsp;incident&nbsp;is impacting other customers or Internet users, DDoS attack, the team will take steps to mitigate the&nbsp;situation.</li>
   </ol>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
+  
+  
+  
 </div>
 <div>&nbsp;</div>

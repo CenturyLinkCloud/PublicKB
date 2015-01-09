@@ -49,4 +49,3 @@
 <p>Fill in your feature idea here then click ‘submit idea’:</p>
 <p>&nbsp;<img alt />
 </p>
-<p>&nbsp;</p>

@@ -84,4 +84,3 @@
 <p><strong>Q: &nbsp;Do daily backups occur regardless of the VM's operating state? &nbsp;(running, stopped, paused, archived)<br /></strong>
 </p>
 <p>VMs in running, stopped or paused states receive daily backups. VMs in the archived state do not receive daily backups.&nbsp;</p>
-<p>&nbsp;</p>

@@ -5,7 +5,7 @@
   "attachments": []
 }}}
 
-Using Vertical and Horizontal Autoscale Together
+<p><strong>Using Vertical and Horizontal Autoscale Together</strong></p>
 <p>Although it is not generally recommended to use vertical and horizontal Autoscale in conjunction with each other as it could result in some unpredictable behavior, if users are thoughtful about how they set both policies up, it is possible to use them
   together in a constructive way.</p>
 <p><strong>Different Autoscale Methods Per Application Tier</strong>
@@ -22,7 +22,7 @@ Using Vertical and Horizontal Autoscale Together
   not bring the average utilization within the group high enough to warrant a scale <em>out</em> event. However, it may still be appropriate to scale <em>up</em> the resources on that single server.</p>
 <p>In another case, users may choose to set a low threshold time for the vertical autoscale policy (say 5 minutes) and a longer threshold time (say 15 minutes) for the horizontal autoscale policy in an attempt to scale up problematic servers first before
   scaling out. In this example, consider different cool down times as well as part of both vertical and horizontal scaling evaluation.&nbsp;</p>
-Using Horizontal Autoscale to Maintain Minimum Server Count
+<p><strong>Using Horizontal Autoscale to Maintain Minimum Server Count</p></strong>
 <p>One nice effect of using a horizontal autoscale policy with a group is that users can set a minimum number of servers to stay on within the group. Even if users are not interested in autoscaling up very much (or at all), they can use a horizontal autoscale
   policy to ensure that at least a certain number of servers are always kept on within the group. For example, if a user wanted to keep all four servers in the group powered on at all times, they could create a horizontal autoscale policy that has a minimum
   server number set to four, and apply that policy to the group. With only four servers in the group, the policy would never be able to scale up, but if any of the servers were powered off for any reason, the autoscale policy would take care of powering

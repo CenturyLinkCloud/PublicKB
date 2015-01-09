@@ -42,7 +42,7 @@
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/n4WW6nTJuU4UEG71YFaR0oyyi/?name=06.png" alt="06.png" />
 </p>
-<p>&nbsp;</p>
+
 <p>Choose a load balancer persistence type. The choices include "standard" or "sticky." The standard option employs no persistence and is best for stateless web applications. If an application does require server-based state, then choose the sticky option.
   The sticky choice uses source IP + destination IP address-based persistence to tie users to the target server.&nbsp;</p>
 <p><strong>How do the load balancer method and persistence work together?&nbsp;</strong>If you choose round robin or least connection along with <strong>standard</strong> persistence, then requests are routed without any concern for where the last user's
@@ -53,7 +53,7 @@
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/wpLlbtlmdfCgRetQV89D6aRnh/?name=07.png" alt="07.png" />
 </p>
-<p>&nbsp;</p>
+
 <p>Add a line item for each server that is included in this load balancing pool. Include the server's&nbsp;<strong>private&nbsp;</strong><strong>IP</strong> address (visible from the server overview page) and the port that is serving the content. To add
   a server to the pool, but not have it respond to requests yet, set its "enabled" status to "off."
   <br />
@@ -61,7 +61,7 @@
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/3xkVQ2JpuljDq9BPhL0nrQ0jf/?name=08.png" alt="08.png" />
 </p>
-<p>&nbsp;</p>
+
 <p>5. &nbsp;Click the "save" button to commit this configuration to the device. View the configuration overview that shows the VIP, name, description, and pool settings.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/9YtA5y6vwWMfovdRTeHAVXfjj/?name=09.png" alt="09.png" />
 </p>
@@ -71,6 +71,6 @@
 <h3>FAQ's</h3>
 <p>Q: &nbsp;What algorithm does Sticky use?</p>
 <p>A: &nbsp;The sticky option uses source IP + destination IP address-based persistence to tie users to the target server</p>
-<p>&nbsp;</p>
+
 <p>Q: &nbsp;What is the sticky time-out value?</p>
 <p>A: &nbsp;The Time-out value is 2 minutes</p>

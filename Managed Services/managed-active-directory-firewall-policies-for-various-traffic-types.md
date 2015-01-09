@@ -35,10 +35,10 @@ Active Directory Replication Traffic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
         <p>ALL</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
     </tr>
     <tr>
@@ -270,10 +270,10 @@ Active Directory Replication Traffic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
         <p>ALL</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
     </tr>
     <tr>
@@ -449,10 +449,10 @@ Active Directory Replication Traffic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
         <p>ALL</p>
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
       <td>
-        <p>&nbsp;</p>
+        
       </td>
     </tr>
     <tr>

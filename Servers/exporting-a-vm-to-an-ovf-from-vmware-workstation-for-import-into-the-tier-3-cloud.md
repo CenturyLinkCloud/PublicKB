@@ -24,7 +24,7 @@
   <br />.<img src="https://t3n.zendesk.com/attachments/token/vosgvxtvv8qe6qo/?name=checksum.PNG" alt="checksum.PNG" />
 </p>
 <p><strong>5.</strong> Upload the archive to the provided FTP location for import.</p>
-<p>&nbsp;</p>
+
 <p>Additionally, the same procedure can be performed with <a href="http://www.vmware.com/support/developer/ovf/" target="_blank">OVF Tool</a>. Once the OVF tool is downloaded, launch a command prompt or terminal window in the appropriate location. While
   the OVF tool can perform advanced configuration commands, the simplest operation is:</p>
 <pre> ovftool &lt;source&gt; &lt;destination&gt;</pre>

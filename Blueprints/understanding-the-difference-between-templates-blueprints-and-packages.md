@@ -15,7 +15,7 @@
 </p>
 <p><strong>Image 1 &nbsp;- converting a single server to a template</strong>
 </p>
-<p>&nbsp;</p>
+
 <p><strong>Blueprints</strong>
 </p>
 <p>A Blueprint is a saved workflow that can be defined and re-played at any time on the platform. &nbsp;During the Blueprint design process, customers do not incur billable costs. &nbsp;Customers are simply creating a workflow plan that orders steps across
@@ -32,17 +32,17 @@
 </p>
 <p><strong>Image 3 - Single click deploy with built in costing model</strong>
 </p>
-<p>&nbsp;</p>
+
 <p><strong>Packages</strong>
 </p>
 <p>Packages are invoked software which customizes a Server Template. &nbsp;Packages come in two types: Software Packages and Script Packages, each can be called from within a Blueprint or applied directly to the Server via the Control interfaces such as
   the Create Server screen or the Group Management screen.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://t3n.zendesk.com/attachments/token/FddSwzCTXoE04CCqNQ02OZa9S/?name=scripts.png" alt="scripts.png" />
 </p>
 <p><strong>Image 4 - Script packages can be applied to Blueprints, new server builds or a group of existing servers</strong>
 </p>
-<p>&nbsp;</p>
+
 <p><strong>Summary</strong>
 </p>
 <ul>

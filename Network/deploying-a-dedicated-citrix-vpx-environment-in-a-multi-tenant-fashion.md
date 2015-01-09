@@ -181,7 +181,7 @@
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/S9dNjYhCAMhmDsZUp9sH21bBU/?name=44.png" alt="44.png" />
 </p>
-<p>&nbsp;</p>
+
 <h3>Add Public IP to VIP for External Access</h3>
 <p>Finally, as this use case is a public facing website we will use the <a href="https://t3n.zendesk.com/entries/49195400-How-To-Add-Public-IP-to-Virtual-Machine" target="_blank">Add Public IP</a> function of Control to perform a 1 to 1 NAT public IP to
   the VIP (Virtual Server) created previously on 10.100.97.103. &nbsp;</p>

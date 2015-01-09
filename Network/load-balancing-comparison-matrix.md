@@ -23,7 +23,6 @@
 </p>
 <p><a href="https://t3n.zendesk.com/entries/27216280-Dedicated-Load-Balancer-Basic-Management" target="_blank">Dedicated Load Balancing Management</a>
 </p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
+
+

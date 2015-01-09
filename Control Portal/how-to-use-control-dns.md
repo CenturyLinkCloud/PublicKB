@@ -15,7 +15,7 @@
 <p>Must have Account Admin permissions</p>
 <p>In order for this DNS zone to be utilized, you must update your Name Server records with your Domain Registrar. &nbsp;See&nbsp;<a href="#ComRef">Name Servers</a>
 </p>
-<p>&nbsp;</p>
+
 <h3>Creating a DNS Zone</h3>
 <p>Navigate to Domains -&gt; DNS. &nbsp;</p>
 <p>Click “new dns zone”.&nbsp; Fill out the below information.</p>
@@ -26,29 +26,28 @@
 <p>Google Apps- Leave blank unless you use this.</p>
 <p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/g6pf6kex9y6y6n7/?name=CreateZone.png" alt="CreateZone.png" />
 </p>
-<p>&nbsp;</p>
+
 <p>Wait approximately 30 seconds for the zone to create.&nbsp; Hit F5 to refresh your browser and the domain will appear.&nbsp; Click on your domain to start configuring it.</p>
-<p>&nbsp;</p>
+
 <h3>Creating Records</h3>
 <p>To add your first record, click DNS Tasks and select Add New Record.&nbsp; Below are a few examples.</p>
 <p>Creating an A record:</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/abxiu0k0skztrz3/?name=CreateA.png" alt="CreateA.png" />
 </p>
-<p>&nbsp;</p>
+
 <p>Hitting ok will create an A record.&nbsp; This would direct any traffic to <a href="ftp://ftp.mydnszone9.com/">ftp.mydnszone9.com</a> to 5.5.5.5</p>
 <p>Creating a CNAME record:</p>
 <p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/5vdqo5wz0sqzzfq/?name=CreateCNAME.png" alt="CreateCNAME.png" />
 </p>
 <p>Hitting ok will create a CNAME record. &nbsp;</p>
-<p>&nbsp;</p>
+
 <p><strong>Deleting records</strong>
 </p>
 <p>You can delete a record by hitting the Red X on the right side to delete it permanently.&nbsp; You will get a confirmation prompt before the Delete takes place.&nbsp; This applies to individual records and entire zones.</p>
-<p>&nbsp;</p>
+
 <h3><a name="ComRef"></a>Name Servers</h3>
 <p>When you are viewing a DNS zone in Control, you will notice the “Name Server Records” at the top right.&nbsp; These are the records that need to be configured with your domain registrar so that DNS requests are sent to the correct location. &nbsp;</p>
-<p>&nbsp;</p>
+
 <h3>Notes</h3>
 <p>Updating DNS records can take up to 24 hours to propagate throughout the internet.&nbsp; Some providers and ISP’s are much faster than others, but at most it should only take 24 hours.</p>
 <p>At the bottom of the DNS page there is a Notes section.&nbsp; This will log any changes made by users.&nbsp; You can also select “New note” to leave an informational note to other users in your environment.</p>
-<p>&nbsp;</p>

@@ -125,7 +125,7 @@
   <li>Contact Cloudmine via <a href="https://cloudmine.me/contact/">contact page one their website</a>
   </li>
 </ul>
-<p>&nbsp;</p>
+
 <strong>Frequently Asked Questions</strong>
 <p>Where do I obtain my&nbsp;CloudMine&nbsp;License?</p>
 <ul>

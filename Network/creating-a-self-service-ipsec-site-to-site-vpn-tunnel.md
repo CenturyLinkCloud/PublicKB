@@ -80,7 +80,7 @@
 </ul>
 <p><img src="https://t3n.zendesk.com/attachments/token/ufpxph5fmzyhe5o/?name=ipsec+image+07.jpg" alt="ipsec_image_07.jpg" />
 </p>
-<p>&nbsp;</p>
+
 <h3><strong>Standard Troubleshooting</strong></h3>
 <div>Our configuration will be established based on the parameters in the Control Portal self-service interface. If you need to open a ticket reporting trouble establishing a tunnel, please also start a continuous ping with traffic interesting to the VPN configuration.
   We can validate our configuration and supply any&nbsp;relevant&nbsp;log messages indicating the source of the problem.</div>
@@ -116,4 +116,3 @@
   </ul>
 </ul>
 <h3>&nbsp;</h3>
-<p>&nbsp;</p>

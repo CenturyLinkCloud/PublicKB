@@ -24,5 +24,4 @@
 </p>
 <p><a href="http://support.citrix.com/article/CTX109350" target="_self">Apache 1.3 or 2.0</a>
 </p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+

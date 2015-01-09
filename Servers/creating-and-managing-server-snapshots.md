@@ -18,7 +18,7 @@
   delete or revert operations of the snapshot will take. If left active for an extended period of time snapshots also have the potential to completely fill the storage the machine is housed on causing many additional problems. &nbsp;&nbsp;In order to
   avoid these performance issues snapshots should not be kept active longer than 10 days.&nbsp; <strong>Any snapshot active longer than 10 days WILL be removed without notice as part of our maintenance process.</strong>
 </p>
-<p>&nbsp;</p>
+
 <h3><strong>Create a snapshot of an existing server</strong></h3>
 <ul>
   <li>Navigate to the <strong>Action,&nbsp;Snapshot&nbsp;</strong>button on the <em><strong>server</strong> </em>details page.</li>

@@ -5,26 +5,26 @@
   "attachments": []
 }}}
 
-Description
+<p><strong>Description</strong></p>
 <p>When using a horizontal Autoscale policy on a group,&nbsp;it is very important to ensure that all the servers within the group are the same, meaning that they are kept in sync from a software and configuration perspective. This is generally true for any
   group of servers that sit behind a load balancer since traffic can be routed to any of the servers at any time. In the case of servers in a horizontal Autoscale group, it can also be potentially challenging to perform the necessary actions to keep the
   servers up to date because they may be powered on or off automatically at any time by an autoscale event trigger.&nbsp;This article will discuss some suggested best practices around how to manage servers within a horizontal Autoscale group.</p>
-Audience
+<p><strong>Audience</strong></p>
 <ul>
   <li>CenturyLink Cloud customers</li>
 </ul>
-Prerequisites
+<p><strong>Prerequisites</strong></p>
 <ul>
   <li>Must be logged into the system</li>
   <li>Must have a group with horizontal Autoscale policy applied</li>
 </ul>
-Using a Staging Area
+<p><strong>Using a Staging Area</strong></p>
 <p>Since servers in a horizontal Autoscale group can be automatically powered on and off due to an autoscale event occurring, you will see in the scenarios below that it can be helpful to have a staging area to keep servers in temporarily in order to keep
   them out of a horizontal autoscale group so you may perform actions on them or get them ready to add to the autoscale group without risk of them being powered off. Though you may also choose to use maintenance mode to achieve similar results in certain
   cases, having a staging area group is still recommended practice so you have complete control over which servers are part of the autoscale group and when.</p>
 <p>You can create a staging group anywhere, but the best place is as a nested group right underneath the horizontal autoscale group itself. The autoscale policy will only affect servers that live directly under the group on which the policy has been applied,
   so any servers under a group that is within the autoscale policy group are unaffected. This makes it a great place to create a group to act as a safe staging area but is still closely related to the autoscale group.</p>
-Adding New Servers to Group
+<p><strong>Adding New Servers to Group</strong></p>
 <p>If you would like to increase the number of available servers that can be powered on for autoscaling out, you just need to add servers to the horizontal autoscale group. As indicated above, though, you want to make sure that they have the same configuration
   as the other servers that already exist in the group. Instead of creating servers from scratch and manually updating them with the necessary software and configuration, there are two recommended approaches:</p>
 <ul>
@@ -35,7 +35,7 @@ Adding New Servers to Group
     you will not have to keep a server in the staging area, but if you want to make changes to the template, you'll have to first convert it back to a server, perform your changes, and then convert it back to a template.&nbsp;(You can read more about
     templates in the knowledge base article about <a href="https://t3n.zendesk.com/entries/22353625-How-To-Create-Customer-Specific-OS-Templates" target="_blank">how to use templates</a>.)</li>
 </ul>
-Updating Software/Configuration on Existing Servers in Group
+<p><strong>Updating Software/Configuration on Existing Servers in Group</strong></p>
 <p>Depending on the kind of update(s) required, there are two options for updating servers in a horizontal autoscale group:</p>
 <ul>
   <li><strong>Replace existing servers with new updated servers.&nbsp;</strong>This is the preferred method for updating servers in a horizontal autoscale group. Follow the steps above for "Adding New Servers to Group" in order to create new servers, and
@@ -65,10 +65,9 @@ Updating Software/Configuration on Existing Servers in Group
     <li>Repeat first five steps for each server in the group.&nbsp;</li>
   </ol>
 </ol>
-Removing Servers from Group
+<p><strong>Removing Servers from Group</strong></p>
 <p>Removing servers from a horizontal autoscale group should require no additional action other than a regular delete server. The load balancer will not route traffic to that IP address anymore as it will be unreachable, and within five minutes, the load
   balancer pool should be updated to remove the address altogether.</p>
 <p>One thing to note here, though, is that the platform will not prevent you from deleting so many servers from the autoscale group that you are left with less than then minimum number of servers you've defined in the autoscale policy. In this case, the
   policy will ensure that all servers in the group are powered on, but will not <em>create</em>&nbsp;any additional servers. You will see a warning if you actively go to the group settings where the horizontal autoscale policy is applied, but no notifications
   will be sent or otherwise displayed.</p>
-<p>&nbsp;</p>

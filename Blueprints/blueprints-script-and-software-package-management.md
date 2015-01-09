@@ -336,7 +336,7 @@ Package Format
       </td>
       <td>
         <p>No</p>
-        <p>&nbsp;</p>
+        
       </td>
     </tr>
     <tr>
@@ -584,7 +584,7 @@ Package Format
     </tr>
   </tbody>
 </table>
-<p>&nbsp;</p>
+
 &lt;Execution&gt; Element
 <p>Defines how the Package should be executed.</p>
 <pre>&lt;Metadata&gt;<br />&nbsp; &lt;Mode&gt;<br />&nbsp; &lt;Command&gt;<br />&lt;/Manifest&gt;</pre>
@@ -641,7 +641,7 @@ Package Format
               <td>
                 <p>Windows Only</p>
                 <p>Executes the package via Remote PowerShell as the local administrator.</p>
-                <p>&nbsp;</p>
+                
                 <p><em>Note: ‘Negotiate’ Authentication mode is used when establishing the remote connection.</em>
                 </p>
               </td>

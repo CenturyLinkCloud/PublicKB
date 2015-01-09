@@ -49,7 +49,7 @@
   <li>Refresh your packages and install by entering the command: <strong>apt-get update &amp;&amp; apt-get install s3cmd</strong>
   </li>
 </ol>
-<p>&nbsp;</p>
+
 <h5>Once S3CMD has been installed, it must be configured to use Tier 3’s Object Storage:</h5>
 <ol>
   <ol>
@@ -72,7 +72,7 @@
 <pre>host_base = ca.tier3.io
 
 host_bucket = %(bucket)s.ca.tier3.io</pre>
-<p>&nbsp;</p>
+
 <p>Alternatively, you can modify and save the following file and then specify s3cmd to use it by entering the command <strong>s3cmd&nbsp;–c /path/to/config file</strong>
 </p>
 <p><strong>Sample configuration file, bolded items must be edited:</strong>
@@ -166,8 +166,8 @@ verbosity = WARNING
 </p>
 <p>Download/Retrieve a file <strong>s3cmd&nbsp;get s3://my-new-bucket-name/testfile.xml testfile_modified.xml&nbsp;</strong>
 </p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
+
+
+
 <p>Look for the second article in this series which will discuss using advanced S3cmd features such as rsync and encryption!</p>

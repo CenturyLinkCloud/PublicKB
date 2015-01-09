@@ -17,7 +17,7 @@
 </ul>
 <h3>Tier 3 status updates</h3>
 <p>The Tier 3 support and operations staff will provide updates in the open ticket regarding the issue. &nbsp;Ticket updates will be done in accordance with the ticket priority. &nbsp;More information about the ticket priority can be found here: &nbsp;https://t3n.zendesk.com/entries/21651149-Ticket-Prioritization-Matrix</p>
-<p>&nbsp;</p>
+
 <h3>Q &amp; A</h3>
 <div>
   <div><strong>Q</strong>&nbsp;- I want to be called via phone for updates</div>
@@ -38,7 +38,7 @@
     <div><strong>A</strong>&nbsp;- Please contact your Account Manager and they will engage the appropriate Operations and Support Management to address your concerns.</div>
   </div>
 </div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
+
 <div>&nbsp;</div>
 <div>&nbsp;</div>

@@ -16,7 +16,7 @@
 <p>1. To access your server via Remote Desktop using your <strong><em>Local Account</em></strong> user name and password for your Remote Desktop session. &nbsp;Access your server password in the CenturyLink Cloud Control by choosing the ‘<em>click to authenticate</em>’
   link illustrated below<em>.&nbsp;&nbsp; Note:&nbsp; If you have obtained your Shared Domain credentials or created a Dedicated Domain, you may use the appropriate domain user name and password.&nbsp; Your Local Account, Shared Domain, or Dedicated Domain user names and passwords are different from your CenturyLink Cloud Control user name and password.</em>
 </p>
-<p>&nbsp;</p>
+
 <p><img src="https://t3n.zendesk.com/attachments/token/6tfHYCovnaybmZj7pDxCakmxX/?name=Screen+Shot+2014-06-19+at+10.56.00+AM.png" alt="Screen_Shot_2014-06-19_at_10.56.00_AM.png" />
   <br />&nbsp;
   <br />2 Ensure that you have started a VPN session (either client VPN, or through a persistent VPN connection). <strong>Do NOT manage your servers via public IP address!.</strong>

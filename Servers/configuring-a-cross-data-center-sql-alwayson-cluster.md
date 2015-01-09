@@ -26,7 +26,7 @@
 </p>
 <p>In this example, we will enable communication across the entire subnet range (CIDR /24). Cross data center firewall policies allow communication across all ports, so if your security policies require restricting access to a certain group of hosts, choose
   your network segment carefully. Likewise, if you require only certain ports to be open, they must be secured on the host OS layer (though intra-data center policies allow for the specification of ports or a port range).</p>
-<p>&nbsp;</p>
+
 <p>
   <a><img src="https://t3n.zendesk.com/attachments/token/feqgcmpomihd1yh/?name=SQLAlwaysOn2FW3.JPG" alt="SQLAlwaysOn2FW3.JPG" />
   </a>
@@ -43,12 +43,12 @@
 </p>
 <p>Click “Run All Tests”. It is expected for some tests to fail or pass with warnings. View the report and troubleshoot any issues that may prevent the cluster formation. After validation,&nbsp;proceed to create the cluster and&nbsp;virtual IP addresses.
   Once the cluster is created, you should see all nodes present and online:</p>
-<p>&nbsp;</p>
+
 <p>&nbsp;
   <a><img src="https://t3n.zendesk.com/attachments/token/0xkuqiyrow8jyn9/?name=SQLAlwaysOnClusterNodes.JPG" alt="SQLAlwaysOnClusterNodes.JPG" />
   </a>
 </p>
-<p>&nbsp;</p>
+
 <p>We will then configure the quorum settings. Right click the cluster name, go to “More Actions” and select “Configure Cluster Quorum Settings”.</p>
 <p>
   <a><img src="https://t3n.zendesk.com/attachments/token/wwi6qxauy3opxga/?name=SQLAlwaysOnQuorum.jpg" alt="SQLAlwaysOnQuorum.jpg" />
@@ -93,7 +93,7 @@
   <a><img src="https://t3n.zendesk.com/attachments/token/0uqazicr8g8dxfd/?name=SQLNamedPipes.JPG" alt="SQLNamedPipes.JPG" />
   </a>
 </p>
-<p>&nbsp;</p>
+
 <p>
   <a><img src="https://t3n.zendesk.com/attachments/token/abwcduheeerv6rz/?name=SQLReplicas.JPG" alt="SQLReplicas.JPG" />
   </a>

@@ -34,7 +34,7 @@
   </li>
   <li>Finish the Blueprint Designer wizard and submit the blueprint for publishing.</li>
 </ul>
-<p>&nbsp;</p>
+
 <p><strong>1b. Create blueprint with multiple servers, software added as part of each server configuration.</strong>
 </p>
 <ul>
@@ -55,7 +55,7 @@
   </li>
   <li>Complete the blueprint and submit it for publishing.</li>
 </ul>
-<p>&nbsp;</p>
+
 <p><strong>2. Deploy blueprint and set unique software package settings</strong>
 </p>
 <ul>

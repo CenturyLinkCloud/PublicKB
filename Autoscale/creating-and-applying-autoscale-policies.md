@@ -5,7 +5,7 @@
   "attachments": []
 }}}
 
-Description
+<p><strong>Description</strong></p>
 <p>The CenturyLink Cloud platform now supports both&nbsp;<a href="#vertical">vertical Autoscale</a>&nbsp;of CPU capacity for servers as well as&nbsp;<a href="#horizontal">horizontal Autoscale</a>&nbsp;of servers. This makes it possible to scale servers up
   and down (vertical) or out and in (horizontal) based on utilization, ensuring optimal deployment of resources for cloud environments under a variety of conditions. How does Autoscale work? For vertical Autoscale, servers that exceed a user-defined CPU
   utilization threshold will instantly scale up, and servers that go below a user-defined CPU utilization threshold will scale down (and reboot) during a user-defined window. In the case of horizontal Autoscale, groups of servers that exceed a user-defined
@@ -15,11 +15,11 @@ Description
 <p><img src="https://t3n.zendesk.com/attachments/token/xjic66bscl4hjrt/?name=autoscale-cpu02.png" alt="autoscale-cpu02.png" />
 </p>
 <p>This KB article describes all of the steps for creating, applying, and testing both vertical and horizontal Autoscale policies.</p>
-Audience
+<p><strong>Audience</strong></p>
 <ul>
   <li>CenturyLink Cloud customers (operations staff)</li>
 </ul>
-Prerequisites
+<p><strong>Prerequisites</strong></p>
 <ul>
   <li>Must be logged into the system</li>
   <li>Must have a running server to apply an Autoscale policy to</li>
@@ -27,7 +27,7 @@ Prerequisites
 <p>
   <a name="vertical"></a>
 </p>
-Vertical Autoscale
+<p><strong>Vertical Autoscale</strong></p>
 <h3>Detailed Steps</h3>
 <ol>
   <li>Navigate to the&nbsp;<strong>Servers</strong>&nbsp;menu item and choose&nbsp;<strong>Policies</strong>&nbsp;from the menu. This takes you to the page where you can create and manage new policies that can later be applied to servers.
@@ -98,8 +98,8 @@ Vertical Autoscale
 <p>
   <a name="horizontal"></a>
 </p>
-Horizontal Autoscale
-<h3>Detailed Steps</h3>
+<h3>Horizontal Autoscale</h3>
+<p><strong>Detailed Steps</strong></p>
 <ol>
   <li>Navigate to the&nbsp;<strong>Servers</strong>&nbsp;menu item and choose&nbsp;<strong>Policies</strong>&nbsp;from the menu. This takes you to the place to create and manage new policies that can later be applied to servers.
     <br /><img src="https://t3n.zendesk.com/attachments/token/NpjrhxhaizUyBxI8cWcBHgiyG/?name=policies-menu.png" alt="policies-menu.png" />

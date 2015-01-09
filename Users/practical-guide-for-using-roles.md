@@ -22,10 +22,10 @@
 <p>Finally, there will of course be some Account Administrators who have access to perform all functions within the context of the account, and there may also be a few users who have specialized functions like accountants who manage billing (Billing Manager)
   or domain name managers who may be separate from a networking team (DNS Manager).</p>
 <p>Below is a pie chart detailing one suggested breakdown of roles for an organization that generally follows these principles.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://t3n.zendesk.com/attachments/token/1CrBboPTscvDSlam9n4ntpls3/?name=roles-breakdown-pie-chart.png" alt="roles-breakdown-pie-chart.png" />
 </p>
-<p>&nbsp;</p>
+
 <h3>Example Use Case</h3>
 <p>In this example, we will use a fictional organization called <em>Q Industries </em>headquartered in Chicago&nbsp;with 7,000 employees across the US at sites in Seattle, DC, and New York. They have been piloting the cloud in their internal IT organization,
   but are now planning on using it to manage applications in three more of their business units: Human Resources, Marketing, and Customer Relations.&nbsp;</p>

@@ -25,4 +25,3 @@
   want to see this dialog every time you mount an image, set the "Manage drive letters automatically" checkbox.&nbsp;A new virtual drive will appear among all other drives in the "computer" folder:</p>
 <p>4.&nbsp;You can use the virtual drive the same way as you would use a "real" optical disc - browse its contents, open files, start programs.&nbsp;Once you are done with the image, right-click on the virtual drive and select "Eject".&nbsp;You can alternatively
   unmount the image by double-clicking at the image file again.</p>
-<p>&nbsp;</p>

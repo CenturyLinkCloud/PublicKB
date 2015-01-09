@@ -6,7 +6,7 @@
 }}}
 
 <strong>How to configure MX Records</strong>
-<p>&nbsp;</p>
+
 <p>MX records (Mail Exchanger Records) are used to tell the internet how to route email to your Exchange server or Spam filter.&nbsp; Most email environments use an external Spam filter that will guarantee 100% uptime and no email loss by using multiple
   MX records.&nbsp; The Spam filter will filter out unwanted messages and then route the email to your mail server.&nbsp;</p>
 <p>MX records are configured in DNS.&nbsp; To configure MX records using the Control portal follow these steps:</p>
@@ -31,11 +31,11 @@
 <p>Mail sent to @mydnszone9.com would lookup MX record and find the above record.&nbsp; It would then route MX (Mail) traffic to mydnszone9.com.s7a1.psmtp.com which is a Postini address.&nbsp; When Postini receives it they will check it for viruses, spoofed
   information, known Spam threats, as well as run the message itself through a rigorous Spam detection process.&nbsp; This whole process takes less than 5 seconds.&nbsp; Once complete, the email will be forwarded to your mail server.&nbsp; Your mail server
   should be configured to ONLY receive email from Postini’s range of IP’s.&nbsp; Otherwise spammers could send mail directly to your servers and bypass Postini.</p>
-<p>&nbsp;</p>
+
 <p>See this additional article for assistance configuring DNS:</p>
 <p>&nbsp;<a href="http://help.tier3.com/entries/21429398-how-to-use-control-dns">How to use Control DNS</a>
 </p>
-<p>&nbsp;</p>
+
 <p>How to verify your MX records are correct from a Windows computer:</p>
 <ol>
   <li>Launch a command prompt.</li>
@@ -46,4 +46,3 @@
 <p>This should output your MX records that you entered at Domains -&gt; DNS.&nbsp; They will look like this:</p>
 <p>Non-authoritative answer:</p>
 <p>Mydnszone9.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MX preference = 10, mail exchanger = mydnszone9.com.s7b2.psmtp.com</p>
-<p>&nbsp;</p>

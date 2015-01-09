@@ -134,7 +134,7 @@
   <li>Contact Vital View via&nbsp;<a href="https://cloudmine.me/contact/">contact page one their website</a>
   </li>
 </ul>
-<p>&nbsp;</p>
+
 <strong>Frequently Asked Questions</strong>
 <p>Where do I obtain my&nbsp;Vital View License?</p>
 <ul>

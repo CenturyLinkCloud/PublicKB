@@ -69,7 +69,7 @@
     </p>
   </li>
 </ol>
-<p>&nbsp;</p>
+
 <h4>Manage Object Storage Permissions</h4>
 <ul>
   <li>View the details for an individual bucket.</li>
@@ -90,5 +90,4 @@
     </p>
   </li>
 </ul>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+

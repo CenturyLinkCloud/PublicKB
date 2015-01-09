@@ -45,9 +45,9 @@
 </ol>
 <p><img src="https://t3n.zendesk.com/attachments/token/rmi96fsg1g5cx2x/?name=ServiceGroup1-70.png" alt="ServiceGroup1-70.png" />
 </p>
-<p>&nbsp;</p>
+
 <h3>&nbsp;Create Virtual Servers</h3>
-<p>&nbsp;</p>
+
 <ol>
   <li>Expand the menu Load Balancing, select Virtual Servers, and click Add.&nbsp;(Version 10.1 and later this is within Traffic Management)</li>
   <li>Input a descriptive name, select the correct protocol, and input the IP address of the VIP. &nbsp;Note: For dedicated Load Balancers the VIP will always be an internal IP. &nbsp;This internal IP can be used internally or over a vpn, or a public NAT

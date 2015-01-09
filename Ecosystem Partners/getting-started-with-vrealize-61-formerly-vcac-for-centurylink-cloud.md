@@ -106,7 +106,7 @@
 <p><strong>A: </strong>Yes, the vRealize Blueprint lets the designer choose the available actions.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/fOcnoUnraPbTkbDdXbBPbmZAI/?name=vRealize_8.png" alt="vRealize_8.png" />
 </p>
-<p>&nbsp;</p>
+
 <p><strong>Q: How do customers provision new machines?</strong>
 </p>
 <p><strong>A: </strong>Once a Blueprint is created and published in vRealize, users can access them via a Service Catalog. At deploy time, the user may have some choices about the size and storage of a server.</p>

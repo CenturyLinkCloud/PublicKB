@@ -13,16 +13,16 @@
 </ol>
 <p>If you meet both the requirements then you will just need to get logged in and follow the steps below:</p>
 <p>From the&nbsp;<a href="https://control.tier3.com/">dashboard page</a>, click on <strong>Servers</strong>&nbsp;link in the main navigation menu.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://t3n.zendesk.com/attachments/token/CTySCeoKef2l3ep8IsXwVqPoP/?name=Screen+Shot+2014-10-16+at+11.01.28+AM.png" alt="Screen_Shot_2014-10-16_at_11.01.28_AM.png" />
 </p>
-<p>&nbsp;</p>
+
 <p>This will take you to the Servers page, which lists the servers in your environment. Select the server who's administrator password you wish to change then click on the "settings" button.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/GW8PgekfbySURoDbb1tCjIy8T/?name=Screen+Shot+2014-10-16+at+11.03.10+AM.png" alt="Screen_Shot_2014-10-16_at_11.03.10_AM.png" />
 </p>
-<p>&nbsp;</p>
+
 <p>This takes you to the Server Settings page where you can change the server admin/root password. Click on the "password" field. &nbsp;You must enter the old admin/root password in order to change to a new password.</p>
 <p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/ShEf6tn51ulDzWeYgXCFb5jjO/?name=Screen+Shot+2014-10-16+at+11.04.38+AM.png" alt="Screen_Shot_2014-10-16_at_11.04.38_AM.png" />
 </p>
-<p>&nbsp;</p>
+
 <p>Press the save button to save your changes and apply your new password.</p>

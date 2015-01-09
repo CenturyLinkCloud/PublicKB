@@ -36,4 +36,3 @@
     <li>You should now be able to retrieve your Exchange mail on your Windows 7 Phone</li>
   </ol>
 </div>
-<p>&nbsp;</p>

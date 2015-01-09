@@ -71,4 +71,3 @@ Deploy Microsoft SQL Server using CenturyLink Cloud Blueprint
 <p>5. &nbsp;Confirm the virtual machine(s), features and select Deploy Blueprint</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/skfISBior0Hg7nwnsYrqMEjOj/?name=06.png" alt="06.png" />
 </p>
-<p>&nbsp;</p>

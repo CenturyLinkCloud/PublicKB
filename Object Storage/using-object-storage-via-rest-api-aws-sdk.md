@@ -256,7 +256,7 @@ using (var client2 = new HttpClient())
     <br /><img src="https://t3n.zendesk.com/attachments/token/bkeyeatvpms07td/?name=kb-objectstorage.gif" alt="kb-objectstorage.gif" />
   </li>
 </ol>
-<p>&nbsp;</p>
+
 <h3>Using Amazon SDK for .NET to Interact with Object Storage</h3>
 <p>The Amazon Web Services team created and maintain a set of SDKs for developers to use when interacting with their cloud platform. Because CenturyLink Cloud Object Storage is S3-compatible, developers can reuse these existing SDKs when interacting with
   Object Storage. An SDK is typically MUCH easier to work with than a raw API as much of the complexity is hidden.&nbsp;&nbsp;<strong>Note that the&nbsp;<a href="https://github.com/Tier3/Examples/tree/master/ObjectStorage/Tier3.ObjectStorageViaAPI.DotNet" target="_blank">source code for this sample application</a>&nbsp;can be downloaded from GitHub.</strong>
@@ -342,7 +342,7 @@ foreach (S3Object obj in objResp.S3Objects)
     <br /><img src="https://t3n.zendesk.com/attachments/token/gbflxnbusallb3r/?name=kb-objectstorage2.gif" alt="kb-objectstorage2.gif" />
   </li>
 </ol>
-<p>&nbsp;</p>
+
 <h3>Using the Amazon SDK for Node.js to Interact with Object Storage</h3>
 <p>Node.js is a popular platform for building high-performing JavaScript-friendly applications. Amazon Web Services also ships an SDK for Node.js, and that SDK works perfectly with CenturyLink Cloud Object Storage.&nbsp;&nbsp;<strong>Note that the&nbsp;<a href="https://github.com/Tier3/Examples/tree/master/ObjectStorage/Tier3.ObjectStorageViaApi.Node" target="_blank">source code for this sample application</a>&nbsp;can be downloaded from GitHub.</strong>
 </p>
@@ -423,4 +423,3 @@ exports.index = function(req, res){
     <br /><img src="https://t3n.zendesk.com/attachments/token/dxgm0jeqv4sio02/?name=objectstorage-api05.png" alt="objectstorage-api05.png" />
   </li>
 </ol>
-<p>&nbsp;</p>

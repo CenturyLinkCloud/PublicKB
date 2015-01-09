@@ -75,7 +75,7 @@ Using a Software-Defined Virtual NAS/SAN on CenturyLink Cloud
 </ul>
 <p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/WMcQ523BCP8rmfJOSH2HAF5m6/?name=08.png" alt="08.png" /><img src="https://t3n.zendesk.com/attachments/token/uhDPrDHGodnohoDn8djHGxTJo/?name=09.png" alt="09.png" />
 </p>
-<p>&nbsp;</p>
+
 <p>&nbsp;7. &nbsp;Once completed the SoftNAS StorageCenter should show the volumes/LUNs you've created.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/R4OkVbxVxrZAIImKMIYnrdSUe/?name=11.png" alt="11.png" />
 </p>

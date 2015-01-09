@@ -24,7 +24,7 @@
   </li>
   <li>Partner Tier: Silver</li>
 </ul>
-<p>&nbsp;</p>
+
 <strong>Description</strong>
 <p>CenturyLink has integrated the OSSEC HIDS solution in to the CenturyLink Cloud platform to enable customers to perform self-service installation of an OSSEC manager and HIDS agents on Windows or Linux servers. The purpose of this KB article is to help
   the reader take advantage of this integration to achieve rapid time-to-value for this HIDS solution.</p>
@@ -32,15 +32,15 @@
   operating systems, including Linux, OpenBSD, FreeBSD, Mac OS X, Solaris and Windows. OSSEC has a centralized, cross-platform architecture allowing multiple systems to be easily monitored and managed.&nbsp;</p>
 <p>As a Silver-certified member of the&nbsp;<a href="https://t3n.zendesk.com/entries/58187134-CenturyLink-Cloud-Ecosystem-Program-Guide-">CenturyLink Cloud Ecosystem Program</a>, the only thing which CenturyLink Cloud certifies is that the Partner technology
   deploys successfully to the CenturyLink Cloud. We provide complementary knowledge-base articles to get the customer started but all support is available directly from the existing OSSEC community and not CenturyLink.</p>
-<p>&nbsp;</p>
+
 <strong>Audience</strong>
 <ul>
   <li>CenturyLink Cloud Users</li>
 </ul>
-<p>&nbsp;</p>
+
 <strong>Impact</strong>
 <p>After reading this article, the user should feel comfortable getting started installing OSSEC managers and agents on CenturyLink Cloud.</p>
-<p>&nbsp;</p>
+
 <strong>Prerequisite</strong>&nbsp;
 <ul>
   <li>Access to the CenturyLink Cloud platform as an authorized user.</li>
@@ -107,7 +107,7 @@
     </tr>
   </tbody>
 </table>
-<p>&nbsp;</p>
+
 <p><strong>OSSEC Agent Installation on Linux and Windows</strong>
 </p>
 <p>CenturyLink has developed a script package that installs and configures an OSSEC Agent on an existing Linux or Windows server. &nbsp;This can be installed&nbsp;<a href="https://t3n.zendesk.com/entries/21807618-Using-Group-Tasks-to-Install-Software-and-Run-Scripts-on-Groups">Using Group Tasks to Install Software and Run Scripts on Groups</a>.</p>
@@ -169,11 +169,11 @@
     </tr>
   </tbody>
 </table>
-<p>&nbsp;</p>
+
 <strong>Pricing</strong>
 <p>The costs listed above in Steps 1 and 2 are for the infrastructure only.</p>
 <p>OSSEC is Open Source community owned software with no associated cost to acquire.</p>
-<p>&nbsp;</p>
+
 <strong>Frequently Asked Questions</strong>
 <p>Where do I get my OSSEC&nbsp;License?</p>
 <ul>

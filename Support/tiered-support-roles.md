@@ -37,7 +37,7 @@
     <li>Follow the Incident Management Procedures</li>
     <li>If no solution can be found, they will escalate to the next level</li>
   </ol>
-  <p>&nbsp;</p>
+  
   <h3>Level 3 Support</h3>
   <ol>
     <li>Takes over the responsibility to resolve the issue from the previous levels.</li>
@@ -45,7 +45,7 @@
     <li>The responsibility of this level is to gather data, identify, classify the issue in accordance with the Standard Operation Procedures defined in the KB&nbsp;</li>
     <li>Follow the Incident Management Procedures</li>
   </ol>
-  <p>&nbsp;</p>
+  
   <h3>Level 4 Support</h3>
   <ol>
     <li>Third party support organizations</li>

@@ -42,7 +42,7 @@
     <br /><img src="https://t3n.zendesk.com/attachments/token/wuomd0w4oeegq8j/?name=psblueprint01.png" alt="psblueprint01.png" />
   </li>
 </ul>
-<p>&nbsp;</p>
+
 <p><strong>2. Create Private Blueprint from Parent Account</strong>
 </p>
 <ul>
@@ -60,7 +60,7 @@
     <br /><img src="https://t3n.zendesk.com/attachments/token/hqsgkwjvp7zsuqh/?name=psblueprint06.png" alt="psblueprint06.png" />
   </li>
 </ul>
-<p>&nbsp;</p>
+
 <p><strong>3. Attempt to Locate this Blueprint From a Sub Account</strong>
 </p>
 <ul>
@@ -72,7 +72,7 @@
   </li>
   <li>The blueprint was not found because the Privacy Setting of “Private” prevented the blueprint from being visible to any other account, including sub accounts.</li>
 </ul>
-<p>&nbsp;</p>
+
 <p><strong>4. Switch Blueprint’s Privacy Setting to Private Shared</strong>
 </p>
 <ul>
@@ -87,7 +87,7 @@
     <br /><img src="https://t3n.zendesk.com/attachments/token/mp5plrzxrvhkzgi/?name=psblueprint12.png" alt="psblueprint12.png" />
   </li>
 </ul>
-<p>&nbsp;</p>
+
 <p><strong>5. Access Private Shared Blueprint from Sub Account</strong>
 </p>
 <ul>

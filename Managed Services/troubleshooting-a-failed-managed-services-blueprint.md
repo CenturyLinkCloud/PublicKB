@@ -10,12 +10,12 @@
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/U8DbQ8GQAPbqUUC5iz66CKzfe/?name=Menu.png" alt="Menu.png" />
 </p>
-<p>&nbsp;</p>
+
 <p><strong>2. Select Queue beneath Blueprints</strong>
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/9H29B48xmszIFEY7lO1hpGiK4/?name=Queue.png" alt="Queue.png" />
 </p>
-<p>&nbsp;</p>
+
 <p><strong>3. On the Deployment Queue page, click the pull-down list and select the correct data center.</strong>
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/HGRaSjuSNpR79phiQH7UVmJOx/?name=Context.png" alt="Context.png" />
@@ -31,7 +31,7 @@
 <p><img src="https://t3n.zendesk.com/attachments/token/AS0hlgmJ5GDtwjovfrorTGZ1z/?name=Details.png" alt="Details.png" />&nbsp;</p>
 <p><strong>7. If the issue occurs while running a CLC Blueprint for a Managed Application and the Blueprint fails again after Resuming:&nbsp;</strong>
 </p>
-<p>&nbsp;</p>
+
 <ul>
   <li>If the Blueprint failed at either the step of “Validate Blueprint” or “Reserve Blueprint” call Support at 1-888-638-6771 and notify us about the ≈step the Blueprint failed (such as “Install Managed MS SQL”) and approximate dates and times when you attempted
     to resume it.</li>

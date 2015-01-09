@@ -40,4 +40,3 @@
   </ol>
 </ol>
 <p>For detailed answers or deployment assistance, please contact CenturyLink Cloud Support.</p>
-<p>&nbsp;</p>
