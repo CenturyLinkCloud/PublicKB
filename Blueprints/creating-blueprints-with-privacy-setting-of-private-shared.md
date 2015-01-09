@@ -5,7 +5,8 @@
   "attachments": [
     {
       "title": "Attached File",
-      "link": "/lp/resources/Balancing Agility Cost and Control.pdf"
+      "name": "Balancing Agility Cost and Control.pdf",
+      "description": "This is a descsription of the attached file."
     }
   ],
   "related_products": [ 
