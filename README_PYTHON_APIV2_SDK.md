@@ -112,6 +112,21 @@ Login itself is made lazily when the first API call requiring credentials is iss
 
 [Account pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.account.html)
 
+### GetAlias() (static)
+Return specified alias or if None the alias associated with the provided credentials.
+
+```python
+>>> clc.v2.Account.GetAlias()
+u'BTDI'
+```
+
+### GetLocation() (static)
+Return specified location or if None the default location associated with the provided credentials and alias.
+
+```python
+>>> clc.v2.Account.GetLocation()
+u'WA1'
+```
 
 
 ## Group
