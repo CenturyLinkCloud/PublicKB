@@ -4,7 +4,7 @@
   "author": "Richard Seroter",
   "attachments": [
     {
-      "title": "Attached File"
+      "title": "Attached File",
       "link": "/lp/resources/Balancing Agility Cost and Control.pdf"
     }
   ],
