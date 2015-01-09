@@ -38,7 +38,6 @@ Server object variables available but access subject to change with future relea
 
 # vCur:
 # TODO - Link to Public IP class
-# TODO - Implement Servers class to support operations on multiple servers.  Group ops can link into this directly.
 
 # vNext:
 # TODO - cpuAutoscalePolicy - need API spec 404
@@ -53,6 +52,7 @@ Server object variables available but access subject to change with future relea
 # TODO - create a packages class.  Pass in for execute package, create, and clone
 # TODO - remove constructor server_obj if not used
 # TODO - Servers search by custom field
+# TODO - Servers.CreateSnapshot, Servers.Delete
 
 import re
 import math
@@ -93,6 +93,31 @@ class Servers(object):
 		if key == 'servers':  return(self.Servers())
 		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,key)))
 
+
+	def _Operation(self,operation):
+		"""Execute specified operations task against one or more servers.
+
+		Returns a clc.v2.Requests object.  If error due to server(s) already being in
+		the requested state this is not raised as an error at this level.
+
+		"""
+
+		try:
+			return(clc.v2.Requests(clc.v2.API.Call('POST','operations/%s/servers/%s' % (self.alias,operation),
+			                                       json.dumps(self.servers_lst)),alias=self.alias))
+		except clc.APIFailedResponse as e:
+			# Most likely a queue add error presented as a 400.  Let Requests parse this
+			return(clc.v2.Requests(e.response_json,alias=self.alias))
+
+
+	def Pause(self):  return(self._Operation('pause'))
+	def ShutDown(self):  return(self._Operation('shutDown'))
+	def Reboot(self):  return(self._Operation('reboot'))
+	def Reset(self):  return(self._Operation('reset'))
+	def PowerOn(self):  return(self._Operation('powerOn'))
+	def PowerOff(self):  return(self._Operation('powerOff'))
+	def StartMaintenance(self):  return(self._Operation('startMaintenance'))
+	def StopMaintenance(self):  return(self._Operation('stopMaintenance'))
 
 
 
