@@ -158,8 +158,8 @@ class Group(object):
 	def Servers(self):
 		"""Returns a Servers object containing all servers within the group.
 
-		>>> clc.v2.Group("wa1-4416").Subgroups()
-		<clc.APIv2.group.Groups object at 0x105fa27d0>
+		>>> clc.v2.Group("wa1-4416").Servers()
+		<clc.APIv2.server.Servers object at 0x1065b0f10>
 
 		"""
 

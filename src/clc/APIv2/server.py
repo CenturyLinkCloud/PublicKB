@@ -70,6 +70,9 @@ class Servers(object):
 		parameter can fully define the object.  All we have is the server name on construction.
 		We will lazily create server objects as needed since each requires a seperate API call.
 
+		>>> clc.v2.Servers(["NY1BTDIPHYP0101","NY1BTDIWEB0101"])
+		<clc.APIv2.server.Servers object at 0x105fa27d0>
+
 		"""
 
 		if alias:  self.alias = alias
@@ -79,7 +82,14 @@ class Servers(object):
 
 
 	def Servers(self,cached=True):
-		"""Returns list of server objects, populates if necessary."""
+		"""Returns list of server objects, populates if necessary.
+		
+		>>> clc.v2.Servers(["NY1BTDIPHYP0101","NY1BTDIWEB0101"]).Servers()
+		[<clc.APIv2.server.Server object at 0x1065b0d50>, <clc.APIv2.server.Server object at 0x1065b0e50>]
+		>>> print _[0]
+		NY1BTDIPHYP0101
+
+		"""
 
 		if not hasattr(self,'_servers') or not cached:
 			self._servers = []
@@ -99,6 +109,11 @@ class Servers(object):
 
 		Returns a clc.v2.Requests object.  If error due to server(s) already being in
 		the requested state this is not raised as an error at this level.
+
+		>>> clc.v2.Servers(["NY1BTDIPHYP0101","NY1BTDIWEB0101"]).Pause()
+		<clc.APIv2.queue.Requests object at 0x105fea7d0>
+		>>> _.WaitUntilComplete()
+		0
 
 		"""
 

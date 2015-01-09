@@ -250,6 +250,7 @@ Returns a `Templates` object associated with the datacenter.
 
 ## Group
 
+[Groups pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.groups.html)
 [Group pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.group.html)
 
 ### Class variables
@@ -369,19 +370,86 @@ BTDI
 
 ## Server
 
+[Servers pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.servers.html)
 [Server pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.server.html)
+
+
+### Class variables
+
+Object variables:
+
+    server.id
+    server.description
+    server.cpu
+    server.power_state
+    server.memory
+    server.storage
+    server.group_id
+    server.is_template
+    server.location_id
+    server.name
+    server.os
+    server.os_type
+    server.status
+    server.type
+    server.storage_type
+    server.in_maintenance_mode
+    server.reserved_drive_paths
+    server.adding_cpu_requires_reboot
+    server.adding_memory_requires_reboot
+
+Object variables available but access subject to change with future releases:
+
+    server.custom_fields
+    server.change_info
+    server.alert_policies
+    server.ip_addresses
+
+
+### clc.v2.Servers(servers_lst,alias=None)
+`Servers` object constructor.  If no alias is provided will use the default associated with the API
+credentials in use.  `servers_lst` is a list of server names. 
+
+Note this behaves differently than the other container classes like Groups where the *_lst
+parameter can fully define the object.  All we have is the server name on construction.
+We will lazily create server objects as needed since each requires a seperate API call.
+
+```python
+>>> clc.v2.Servers(["NY1BTDIPHYP0101","NY1BTDIWEB0101"])
+<clc.APIv2.server.Servers object at 0x105fa27d0>
+```
+
+
+### clc.v2.Servers.Servers(cached=True)
+Returns a list of `Server` objects.  If cached is set to True then the servers
+list will not be refreshed if it has already been called in this instance.  
+
+Note that building this list may be time intensive as each server currently requires a seperate
+API call.
+
+```python
+>>> clc.v2.Servers(["NY1BTDIPHYP0101","NY1BTDIWEB0101"]).Servers()
+[<clc.APIv2.server.Server object at 0x1065b0d50>, <clc.APIv2.server.Server object at 0x1065b0e50>]
+>>> print _[0]
+NY1BTDIPHYP0101
+```
+
+### Operations: clc.v2.Servers.Pause(), ShutDown, Reboot, Reset, PowerOn, PowerOff, StartMaintenance, StopMaintenance
+All above operations methods behave in the same manner.  They apply the operation command to all
+servers in the object.  All are asynchronous methods so they return a `Requests` object.
+
+```python
+>>> clc.v2.Servers(["NY1BTDIPHYP0101","NY1BTDIWEB0101"]).Pause()
+<clc.APIv2.queue.Requests object at 0x105fea7d0>
+>>> _.WaitUntilComplete()
+0
+```
 
 
 
 ## Queue
 
 [Queue pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.queue.html)
-
-
-
-## Datacenter
-
-[Datacenter pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.datacenter.html)
 
 
 
