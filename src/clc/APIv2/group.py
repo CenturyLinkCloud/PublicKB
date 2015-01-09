@@ -5,6 +5,10 @@ These group related functions generally align one-for-one with published API cal
 
 API v2 - https://t3n.zendesk.com/forums/21013480-Groups
 
+Groups object variables:
+	
+	groups.alias
+
 Group object variables:
 
 	group.id
@@ -45,6 +49,39 @@ import clc
 
 
 class Groups(object):
+
+	def __init__(self,groups_lst,alias=None):
+
+		if alias:  self.alias = alias
+		else:  self.alias = clc.v2.Account.GetAlias()
+
+		self.groups = []
+		for group in groups_lst:
+			self.groups.append(Group(id=group['id'],alias=self.alias,group_obj=group))
+
+
+	def Get(self,key):
+		"""Get template by providing name, ID, or other unique key.
+
+		If key is not unique and finds multiple matches only the first
+		will be returned
+		"""
+
+		for template in self.templates:
+			if template.id == key:  return(template)
+
+
+	def Search(self,key):
+		"""Search template list by providing partial name, ID, or other key.
+
+		"""
+
+		results = []
+		for template in self.templates:
+			if template.id.lower().find(key.lower()) != -1:  results.append(template)
+			elif template.name.lower().find(key.lower()) != -1:  results.append(template)
+
+		return(results)
 
 
 
@@ -90,6 +127,10 @@ class Group(object):
 
 		if key in self.data:  return(self.data[key])
 		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,key)))
+
+
+	def Subgroups(self):
+		return(Groups(alias=self.alias,groups_lst=self.data['groups']))
 
 
 	def Create(self,name,description=None):  
