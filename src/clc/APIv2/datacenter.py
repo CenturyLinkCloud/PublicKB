@@ -10,13 +10,14 @@ Datacenter object variables:
 	datacenter.id (alias for location)
 	datacenter.name
 	datacenter.location
-	datacenter.supportsPremiumStorage
-	datacenter.supportsSharedLoadBalancer
+	datacenter.supports_premium_storage
+	datacenter.supports_shared_load_balancer
 
 """
 
 # TODO - init link to billing, statistics, scheduled activities
 
+import re
 import clc
 
 class Datacenter:
@@ -97,7 +98,7 @@ class Datacenter:
 		if not self.deployment_capabilities or not cached:  
 			self.deployment_capabilities = clc.v2.API.Call('GET','datacenters/%s/%s/deploymentCapabilities' % (self.alias,self.location))
 
-		if self.deployment_capabilities and cached:  return(self.deployment_capabilities)
+		return(self.deployment_capabilities)
 
 
 	def Networks(self):
@@ -109,7 +110,9 @@ class Datacenter:
 
 
 	def __getattr__(self,var):
-		if var in ("supportsPremiumStorage","supportsSharedLoadBalancer"):  return(self._DeploymentCapabilities()[var])
+		key = re.sub("_(.)",lambda pat: pat.group(1).upper(),var)
+
+		if key in ("supportsPremiumStorage","supportsSharedLoadBalancer"):  return(self._DeploymentCapabilities()[key])
 		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,var)))
 
 

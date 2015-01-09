@@ -23,6 +23,9 @@ Server object variables:
 	server.type
 	server.storage_type
 	server.in_maintenance_mode
+	server.reserved_drive_paths
+	server.adding_cpu_requires_reboot
+	server.adding_memory_requires_reboot
 
 Server object variables available but access subject to change with future releases:
 
@@ -33,22 +36,23 @@ Server object variables available but access subject to change with future relea
 
 """
 
-# v1:
-# TODO - links - autoscale
+# vCur:
+# TODO - Format time from unixtime
 # TODO - Link to Public IP class
 # TODO - Scheduled activities
-# TODO - Server pricing (/v2/billing/btdi/serverPricing/wa1btdiapi207) returns array with static hourly pricing
+# TODO - Implement Servers class to support operations on multiple servers.  Group ops can line into this directly.
+# TODO - create server capture and resolve alias via uuid
 
-# v2:
+# vNext:
+# TODO - cpuAutoscalePolicy - need API spec 404
 # TODO - AntiAffinity policy - need API spec put call 400 
 # TODO - Statistics - need API spec get call 500
 # TODO - Billing (server, group, account) - need API spec
+# TODO - Server pricing (/v2/billing/btdi/serverPricing/wa1btdiapi207) returns array with static hourly pricing
 # TODO - Change Server (Update) - need API spec
-# TODO - remove constructor server_obj if not used
-# TODO - Implement Servers class to support operations on multiple servers.  Group ops can line into this directly.
-# TODO - create server capture and resolve alias via uuid
+# TODO - Validation tasks with Server.Create
 # TODO - create a packages class.  Pass in for execute package, create, and clone
-# TODO - Capabilities query - returns reservedDrivePaths, addingCpuRequiresReboot, addingMemoryRequiresReboot
+# TODO - remove constructor server_obj if not used
 
 import re
 import math
@@ -79,6 +83,7 @@ class Server(object):
 		"""
 
 		self.id = id
+		self.capabilities = None
 
 		if alias:  self.alias = alias
 		else:  self.alias = clc.v2.Account.GetAlias()
@@ -94,12 +99,20 @@ class Server(object):
 		self.data['details']['memoryGB'] = int(math.floor(self.data['details']['memoryMB']/1024))
 
 
+	def _Capabilities(self,cached=True):
+		if not self.capabilities or not cached:
+			self.capabilities = clc.v2.API.Call('GET','servers/%s/%s/capabilities' % (self.alias,self.name))
+
+		return(self.capabilities)
+
+
 	def __getattr__(self,var):
 		if var in ('memory','storage'):  key = var+'GB'
 		else:  key = re.sub("_(.)",lambda pat: pat.group(1).upper(),var)
 
 		if key in self.data:  return(self.data[key])
 		elif key in self.data['details']:  return(self.data['details'][key])
+		elif key in ("reservedDrivePaths", "addingCpuRequiresReboot", "addingMemoryRequiresReboot"):  return(self._Capabilities()[key])
 		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,key)))
 
 
@@ -236,8 +249,13 @@ class Server(object):
 
 		https://t3n.zendesk.com/entries/59565550-Create-Server
 
-		# Show get NW
-		# Show get tpl
+		Set ttl as number of seconds before server is to be terminated.
+
+		>>> d = clc.v2.Datacenter()
+		>>> clc.v2.Server.Create(name="api2",cpu=1,memory=1,group_id="wa1-4416",
+	                             template=d.Templates().Search("centos-6-64")[0].id,
+						         network_id=d.Networks().networks[0].id).WaitUntilComplete()
+		0
 
 		"""
 
@@ -265,12 +283,14 @@ class Server(object):
 
 	def Clone(self,network_id,name=None,cpu=None,memory=None,group_id=None,alias=None,password=None,ip_address=None,
 	          storage_type=None,type=None,primary_dns=None,secondary_dns=None,
-			  additional_disks=None,custom_fields=None,ttl=None,managed_os=False,description=None,
+			  custom_fields=None,ttl=None,managed_os=False,description=None,
 			  source_server_password=None,cpu_autoscale_policy_id=None,anti_affinity_policy_id=None,
 			  packages=[],count=1):  
 		"""Creates one or more clones of existing server.
 
 		https://t3n.zendesk.com/entries/59565550-Create-Server
+
+		Set ttl as number of seconds before server is to be terminated.
 
 		* - network_id is currently a required parameter.  This will change to optional once APIs are available to
 		    return the network id of self.
