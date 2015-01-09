@@ -224,12 +224,6 @@ Returns a `Templates` object associated with the datacenter.
 
 
 
-
-
-
-
-
-
 ## Group
 
 [Group pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.group.html)
