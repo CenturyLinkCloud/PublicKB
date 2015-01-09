@@ -23,6 +23,7 @@ Group object variables available but access subject to change with future releas
 
 # vCur:
 # TODO - servers: {u'href': u'/v2/servers/btdi/wa1btdiubuntu02', u'id': u'WA1BTDIUBUNTU02', u'rel': u'server'}
+# TODO - groups - depp list of all subgroups
 
 # vNest:
 # TODO - Update group
@@ -42,6 +43,11 @@ import re
 import json
 import clc
 
+
+class Groups(object):
+
+
+
 class Group(object):
 
 	@staticmethod
@@ -57,7 +63,6 @@ class Group(object):
 			groups.append(Group(id=r['id'],alias=alias,group_obj=r))
 		
 		return(groups)
-
 
 
 	def __init__(self,id,alias=None,group_obj=None):
