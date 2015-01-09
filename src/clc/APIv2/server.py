@@ -37,11 +37,9 @@ Server object variables available but access subject to change with future relea
 """
 
 # vCur:
-# TODO - Format time from unixtime
 # TODO - Link to Public IP class
 # TODO - Scheduled activities
-# TODO - Implement Servers class to support operations on multiple servers.  Group ops can line into this directly.
-# TODO - create server capture and resolve alias via uuid
+# TODO - Implement Servers class to support operations on multiple servers.  Group ops can link into this directly.
 
 # vNext:
 # TODO - cpuAutoscalePolicy - need API spec 404
@@ -51,12 +49,14 @@ Server object variables available but access subject to change with future relea
 # TODO - Server pricing (/v2/billing/btdi/serverPricing/wa1btdiapi207) returns array with static hourly pricing
 # TODO - Change Server (Update) - need API spec
 # TODO - Validation tasks with Server.Create
+# TODO - create server capture and resolve alias via uuid
 # TODO - create a packages class.  Pass in for execute package, create, and clone
 # TODO - remove constructor server_obj if not used
 
 import re
 import math
 import json
+import time
 import clc
 
 class Server(object):
@@ -249,7 +249,7 @@ class Server(object):
 
 		https://t3n.zendesk.com/entries/59565550-Create-Server
 
-		Set ttl as number of seconds before server is to be terminated.
+		Set ttl as number of seconds before server is to be terminated.  Must be >3600
 
 		>>> d = clc.v2.Datacenter()
 		>>> clc.v2.Server.Create(name="api2",cpu=1,memory=1,group_id="wa1-4416",
@@ -265,12 +265,13 @@ class Server(object):
 		if type.lower() not in ("standard","hyperscale"):  raise(clc.CLCException("Invalid type"))
 		if storage_type.lower() not in ("standard","premium"):  raise(clc.CLCException("Invalid storage_type"))
 		if storage_type.lower() == "premium" and type.lower() == "hyperscale":  raise(clc.CLCException("Invalid type/storage_type combo"))
+		if ttl and ttl<=3600: raise(clc.CLCException("ttl must be greater than 3600 seconds"))
+		if ttl: ttl = clc.v2.time_utils.SecondsToZuluTS(int(time.time())+ttl)
 		# TODO - validate custom_fields as a list of dicts with an id and a value key
 		# TODO - validate template exists
 		# TODO - validate additional_disks as a list of dicts with a path, sizeGB, and type (partitioned,raw) keys
 		# TODO - validate addition_disks path not in template reserved paths
 		# TODO - validate antiaffinity policy id set only with type=hyperscale
-		# TODO - parse ttl from seconds to "2014-12-17T01:17:17Z" format
 
 		return(clc.v2.Requests(clc.v2.API.Call('POST','servers/%s' % (alias),
 		         json.dumps({'name': name, 'description': description, 'groupId': group_id, 'sourceServerId': template,
