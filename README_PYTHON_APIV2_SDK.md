@@ -4,20 +4,70 @@ This repository contains a Python SDK to interact with the ***CenturyLink Cloud*
 
 ## Contents
 
-* [Accounts](#accounts) - Account level activities: [list](#listing-accounts), 
-* [Users](#users) - User level activities (list, create, modify)
-* [Servers](#servers) - Server level activities (list, create, modify)
-* [Groups](#groups) - Group level activities (list, create, modify)
-* [Billing](#billing) - Billing activities
-* [Networks](#networks) - Network activities
-* [Queue](#queue) - Work queue
-* [Blueprints](#blueprints) - Blueprints
-* [Global Options](#global-options) - Formatting and execution options
+* [Quick Start](#quick-start)
+
+#* [Accounts](#accounts) - Account level activities: [list](#listing-accounts), 
+#* [Users](#users) - User level activities (list, create, modify)
+#* [Servers](#servers) - Server level activities (list, create, modify)
+#* [Groups](#groups) - Group level activities (list, create, modify)
+#* [Billing](#billing) - Billing activities
+#* [Networks](#networks) - Network activities
+#* [Queue](#queue) - Work queue
+#* [Blueprints](#blueprints) - Blueprints
+#* [Global Options](#global-options) - Formatting and execution options
+
+
+## Quick Start
+
+First some basic stuff:
+
+```python
+
+import clc
+
+# Set credentials.  These are the same credentials used to login to the web UI (https://control.tier3.com)
+clc.v2.SetCredentials("username","password")
+
+
+# Get Account Detail
+
+
+# Get detail on default datacenter
+
+
+# Search for group by name
+
+
+# Create new server
+
+```
+
+Now let us do some more advanced work:
+
+```python
+
+# Problem reported in Prod - duplicate environment for further testing
+
+
+# Take snapshot of prod before deploying code
+
+
+# Deploy updated application via Blueprint package
+
+
+```
+
+
+
+
+
+
 
 
 
 ### Authentication
 All API calls require authentication using your API V1 credentials. 
+Login itself is made lazily when the first API call requiring credentials is issued.
 
 ```python
 >>> import clc
