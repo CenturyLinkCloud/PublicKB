@@ -159,9 +159,62 @@ Returns `Datacenter` object associated with the primary datacetner.
 WA1
 ```
 
+
+
+## Datacenter
+
+[Datacenter pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.datacenter.html)
+
+### clc.v2.Datacenter.Datacenters(alias=None) (static)
+Return all cloud locations available to the calling alias.
+
+```python
+>>> clc.v2.Datacenter.Datacenters(alias=None)
+[<clc.APIv2.datacenter.Datacenter instance at 0x101462fc8>, <clc.APIv2.datacenter.Datacenter instance at 0x101464320>]
+```
+
+### clc.v2.Datacenter(location=None,name=None,alias=None)
+Create new `Datacenter` object associated with supplied location and alias.  If neither are provided
+use the default values associated with the supplied credentials.
+
+```python
+>>> clc.v2.Datacenter()
+<clc.APIv2.datacenter.Datacenter instance at 0x1065a2fc8>
+>>> print _
+WA1
+```
+
+
+### clc.v2.Datacenter.RootGroup()
+Returns `Group` object for datacenter root group.
+
+```python
+>>> clc.v2.Datacenter().RootGroup()
+<clc.APIv2.group.Group object at 0x105feacd0>
+>>> print _
+WA1 Hardware
+```
+
+
+### clc.v2.Datacenter.Groups()
+Returns `Groups` object for datacenter root group.
+
+```python
+>>> wa1 = clc.v2.Datacenter.Datacenters()[0]
+>>> wa1.Groups()
+<clc.APIv2.group.Groups object at 0x10144f290>
+```
+
+
+
+
+
+
 ## Group
 
 [Group pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.group.html)
+
+
 
 
 

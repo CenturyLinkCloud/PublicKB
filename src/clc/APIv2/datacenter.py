@@ -23,10 +23,10 @@ import clc
 class Datacenter:
 
 	@staticmethod
-	def GetDatacenters(alias=None):
+	def Datacenters(alias=None):
 		"""Return all cloud locations available to the calling alias.
 
-		>>> clc.v2.Datacenter.GetDatacenters(alias=None)
+		>>> clc.v2.Datacenter.Datacenters(alias=None)
 		[<clc.APIv2.datacenter.Datacenter instance at 0x101462fc8>, <clc.APIv2.datacenter.Datacenter instance at 0x101464320>]
 
 		"""
@@ -73,7 +73,7 @@ class Datacenter:
 	def RootGroup(self):
 		"""Returns group object for datacenter root group.
 
-		>>> wa1 = clc.v2.Datacenter.GetDatacenters()[0]
+		>>> wa1 = clc.v2.Datacenter.Datacenters()[0]
 		>>> wa1.Groups()
 		[<clc.APIv2.group.Group object at 0x10144f290>, <clc.APIv2.group.Group object at 0x10144f210>]
 
@@ -85,7 +85,7 @@ class Datacenter:
 	def Groups(self):
 		"""Returns groups object rooted at this datacenter.
 
-		>>> wa1 = clc.v2.Datacenter.GetDatacenters()[0]
+		>>> wa1 = clc.v2.Datacenter.Datacenters()[0]
 		>>> wa1.Groups()
 		<clc.APIv2.group.Groups object at 0x10144f290>
 
