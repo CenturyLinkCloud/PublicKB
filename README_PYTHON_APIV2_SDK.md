@@ -9,8 +9,8 @@ will follow suit.
 * [Authentication](#authentication)
 * [Account](#account) - Account level activities
 * [Datacenter](#datacenter) - View and interact with geographic specific datacenter components
-* [Group](#group) - Logical organization around assets by group which can contain sub-groups or servers
-* [Server](#server) - Cloud servers
+* [Group](#group) - `Groups` and `Group` classes.  Logical organization around assets by group which can contain sub-groups or servers
+* [Server](#server) - `Servers` and `Server` classes.  Cloud servers
 * [Queue](#queue) - Interface to work queue for async operations
 
 
@@ -254,15 +254,22 @@ Returns a `Templates` object associated with the datacenter.
 
 ### Class variables
 
-* datacenter.id (alias for location)
-* datacenter.name
-* datacenter.location
-* datacenter.supports_premium_storage
-* datacenter.supports_shared_load_balancer
+Object variables:
+
+* group.id
+* group.name
+* group.description
+* group.type
+* group.status
+* group.server_count
+
+Object variables available but access subject to change with future releases:
+
+* group.custom_fields
+* group.change_info
 
 
-
-
+### clc.v2.Group.Groups
 
 
 
