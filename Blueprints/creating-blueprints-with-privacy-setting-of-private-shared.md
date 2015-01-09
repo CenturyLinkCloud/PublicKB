@@ -4,9 +4,9 @@
   "author": "Richard Seroter",
   "attachments": [
     {
-      "title": "Attached File",
-      "name": "Balancing Agility Cost and Control.pdf",
-      "description": "This is a descsription of the attached file."
+      "file_name": "Attached File",
+      "url": "/knowledge-base/attachments/Balancing Agility Cost and Control.pdf",
+      "type": ""
     }
   ],
   "related_products": [ 
