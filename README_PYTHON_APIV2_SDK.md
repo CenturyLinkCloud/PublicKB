@@ -200,10 +200,30 @@ WA1 Hardware
 Returns `Groups` object for datacenter root group.
 
 ```python
->>> wa1 = clc.v2.Datacenter.Datacenters()[0]
->>> wa1.Groups()
-<clc.APIv2.group.Groups object at 0x10144f290>
+>>> clc.v2.Datacenter().Groups()
+<clc.APIv2.group.Groups object at 0x1065abc50>
 ```
+
+
+### clc.v2.Datacenter.Networks()
+Returns a `Networks` object associated with the datacenter.
+
+```python
+>>> clc.v2.Datacenter().Networks()
+<clc.APIv2.network.Networks object at 0x105fea7d0>
+```
+
+
+### clc.v2.Datacenter.Templates()
+Returns a `Templates` object associated with the datacenter.
+
+```python
+>>> clc.v2.Datacenter().Templates()
+<clc.APIv2.template.Templates object at 0x1065abc90>
+```
+
+
+
 
 
 

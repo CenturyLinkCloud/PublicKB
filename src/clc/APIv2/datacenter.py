@@ -73,9 +73,10 @@ class Datacenter:
 	def RootGroup(self):
 		"""Returns group object for datacenter root group.
 
-		>>> wa1 = clc.v2.Datacenter.Datacenters()[0]
-		>>> wa1.Groups()
-		[<clc.APIv2.group.Group object at 0x10144f290>, <clc.APIv2.group.Group object at 0x10144f210>]
+		>>> clc.v2.Datacenter().RootGroup()
+		<clc.APIv2.group.Group object at 0x105feacd0>
+		>>> print _
+		WA1 Hardware
 
 		"""
 
