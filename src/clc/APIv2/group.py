@@ -61,25 +61,28 @@ class Groups(object):
 
 
 	def Get(self,key):
-		"""Get template by providing name, ID, or other unique key.
+		"""Get group by providing name, ID, description or other unique key.
 
 		If key is not unique and finds multiple matches only the first
 		will be returned
 		"""
 
-		for template in self.templates:
-			if template.id == key:  return(template)
+		for group in self.templates:
+			if group.id == key:  return(template)
+			if group.name == key:  return(template)
+			if group.description == key:  return(template)
 
 
 	def Search(self,key):
-		"""Search template list by providing partial name, ID, or other key.
+		"""Search group list by providing partial name, ID, description or other key.
 
 		"""
 
 		results = []
-		for template in self.templates:
-			if template.id.lower().find(key.lower()) != -1:  results.append(template)
-			elif template.name.lower().find(key.lower()) != -1:  results.append(template)
+		for group in self.templates:
+			if group.id.lower().find(key.lower()) != -1:  results.append(template)
+			elif group.name.lower().find(key.lower()) != -1:  results.append(template)
+			elif group.description.lower().find(key.lower()) != -1:  results.append(template)
 
 		return(results)
 

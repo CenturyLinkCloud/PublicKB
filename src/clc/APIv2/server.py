@@ -52,6 +52,7 @@ Server object variables available but access subject to change with future relea
 # TODO - Scheduled activities
 # TODO - create a packages class.  Pass in for execute package, create, and clone
 # TODO - remove constructor server_obj if not used
+# TODO - Servers search by custom field
 
 import re
 import math
