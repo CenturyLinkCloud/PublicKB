@@ -12,21 +12,33 @@ Group object variables:
 	group.description
 	group.type
 	group.status
-	group.serverCount
+	group.server_count
+
+Group object variables available but access subject to change with future releases:
+
+	group.custom_fields
+	group.change_info
 
 """
 
+# vCur:
+# TODO - servers: {u'href': u'/v2/servers/btdi/wa1btdiubuntu02', u'id': u'WA1BTDIUBUNTU02', u'rel': u'server'}
+
+# vNest:
 # TODO - Update group
 # TODO - Get Group Billing Details
-# TODO - Get Group Monitoring Statistics
+# TODO - Statistics - Pending API spec error 500
+# TODO - Links: scheduledActivities, upcomingScheduledActivities, horizontalAutoscalePolicyMapping, defaults
 # TODO - find group - recursively search to find and return specific group
 # TODO - async operations need to return a work queue class item for further followup
-# TODO - utility class to rewrite timestamps as unixtime
+# TODO - use utility class to rewrite timestamps as unixtime
 # TODO - server power actions - these take a list of server names which we know
 # TODO - horizontalAutoscalePolicyMapping, scheduledActivities, upcomingScheduledActivities
 # TODO - Implement Groups class as a collection of groups?
+# TODO - archiveGroupAction
 
 
+import re
 import json
 import clc
 
@@ -69,8 +81,10 @@ class Group(object):
 
 
 	def __getattr__(self,var):
-		if var in self.data:  return(self.data[var])
-		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,var)))
+		key = re.sub("_(.)",lambda pat: pat.group(1).upper(),var)
+
+		if key in self.data:  return(self.data[key])
+		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,key)))
 
 
 	def Create(self,name,description=None):  

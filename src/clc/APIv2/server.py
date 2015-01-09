@@ -38,7 +38,6 @@ Server object variables available but access subject to change with future relea
 
 # vCur:
 # TODO - Link to Public IP class
-# TODO - Scheduled activities
 # TODO - Implement Servers class to support operations on multiple servers.  Group ops can link into this directly.
 
 # vNext:
@@ -50,6 +49,7 @@ Server object variables available but access subject to change with future relea
 # TODO - Change Server (Update) - need API spec
 # TODO - Validation tasks with Server.Create
 # TODO - create server capture and resolve alias via uuid
+# TODO - Scheduled activities
 # TODO - create a packages class.  Pass in for execute package, create, and clone
 # TODO - remove constructor server_obj if not used
 
@@ -58,6 +58,12 @@ import math
 import json
 import time
 import clc
+
+
+class Servers(object):
+	pass
+
+
 
 class Server(object):
 
