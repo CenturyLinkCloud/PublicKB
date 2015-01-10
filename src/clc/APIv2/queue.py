@@ -7,6 +7,10 @@ API v2 - https://t3n.zendesk.com/forums/21772620-Queue
 
 Server object variables:
 
+	requests.requests
+	requests.error_requests
+	requests.success_requests
+
 
 """
 

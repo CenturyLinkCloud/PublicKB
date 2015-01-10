@@ -11,7 +11,7 @@ will follow suit.
 * [Datacenter](#datacenter) - View and interact with geographic specific datacenter components
 * [Group](#group) - `Groups` and `Group` classes.  Logical organization around assets by group which can contain sub-groups or servers
 * [Server](#server) - `Servers` and `Server` classes.  Cloud servers
-* [Queue](#queue) - Interface to work queue for async operations
+* [Request](#request) - `Requests` and `Request` classes.  Interface to work queue for async operations
 
 
 ## Quick Start
@@ -608,9 +608,70 @@ Ansible Managed Servers
 
 
 
-## Queue
+## Request
 
-[Queue pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.queue.html)
+[Requests pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.requests.html)
+[Request pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.request.html)
 
+
+### Class variables
+
+Object variables:
+
+* requests.requests
+* requests.error_requests
+* requests.success_requests
+
+* request.id
+* request.alias
+* request.time_created
+* request.time_executed
+* request.time_completed
+
+### clc.v2.Requests(requests_lst,alias=None):
+Create `Requests` object.
+
+
+### clc.v2.Requests.WaitUntilComplete(poll_freq=2):
+Block until all `Request` objects have completed. 
+
+If status is 'notStarted' or 'executing' continue polling.
+If status is 'succeeded' then success
+Else log as error
+
+poll_freq option is in seconds
+
+Returns an Int the number of unsuccessful requests.  This behavior is subject to change.
+`requests.successs_requests` and `requests.error_requests` are lists containing `Request`
+objects in a completed state.
+
+```python
+>>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT02').PowerOn().WaitUntilComplete()
+0
+```
+
+
+### clc.v2.Request(id,alias=None,request_obj=None)
+Create a `Request` object.
+
+
+### clc.v2.Request.Status(cached=False)
+Return the current status for an existing request.  If `cached` is set to True and an existing
+status is known then no API call will be made to refresh the status.
+
+
+### clc.v2.Request.WaitUntilComplete(poll_freq=2):
+Poll until status is completed.
+
+If status is 'notStarted' or 'executing' continue polling.
+If status is 'succeeded' return
+Else raise exception
+
+poll_freq option is in seconds
+
+As status option changes the following class variables are populated:
+* request.time_created
+* request.time_executed
+* request.time_completed
 
 
