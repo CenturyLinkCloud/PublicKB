@@ -18,7 +18,7 @@ Account object variables:
 	account.country
 	account.status
 	account.primary_data_center
-	account.isManaged
+	account.is_managed
 
 """
 

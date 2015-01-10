@@ -125,7 +125,7 @@ Login itself is made lazily when the first API call requiring credentials is iss
 * account.country
 * account.status
 * account.primary_data_center
-* account.isManaged
+* account.is_managed
 
 ### clc.v2.Account.GetAlias() (static)
 Return specified alias or if None the alias associated with the provided credentials.
@@ -250,7 +250,6 @@ Returns a `Templates` object associated with the datacenter.
 
 ## Group
 
-[Groups pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.groups.html)
 [Group pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.group.html)
 
 ### Class variables
@@ -316,7 +315,7 @@ group definitions from the API and is not generally used by user functions.
 ```
 
 
-### clc.v2.Group.Create()
+### clc.v2.Group.Create(name,description=None)
 Creates a new group and returns a `Group` object.
 
 ```python
@@ -370,7 +369,6 @@ BTDI
 
 ## Server
 
-[Servers pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.servers.html)
 [Server pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.server.html)
 
 
@@ -610,7 +608,6 @@ Ansible Managed Servers
 
 ## Request
 
-[Requests pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.requests.html)
 [Request pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.request.html)
 
 
