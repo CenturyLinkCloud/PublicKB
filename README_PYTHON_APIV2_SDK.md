@@ -447,6 +447,20 @@ servers in the object.  All are asynchronous methods so they return a `Requests`
 ```
 
 
+### clc.v2.Server.Create(name,cpu,memory,template,group_id,network_id,alias=None,password=None,ip_address=None, storage_type="standard",type="standard",primary_dns=None,secondary_dns=None, additional_disks=[],custom_fields=[],ttl=None,managed_os=False,description=None, source_server_password=None,cpu_autoscale_policy_id=None,anti_affinity_policy_id=None, packages=[]) (static)
+Creates a new server.  See also class method to clone server.
+
+Set ttl as number of seconds before server is to be terminated.  Must be >3600
+
+```python
+>>> d = clc.v2.Datacenter()
+>>> clc.v2.Server.Create(name="api2",cpu=1,memory=1,group_id="wa1-4416",
+                         template=d.Templates().Search("centos-6-64")[0].id,
+                         network_id=d.Networks().networks[0].id).WaitUntilComplete()
+0
+```
+
+
 ### clc.v2.Server(id,alias=None,server_obj=None):
 Create new `Server` object.  If `alias` is None then the alias associated with supplied credentials
 is used.  `server_obj` is an API object containing server definitions - is is not typically called by
@@ -464,37 +478,6 @@ CA3BTDICNTRLM01
 # error.  API returns 404 when server does not exist, we raise exception
 >>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT01')
 clc.CLCException: Server does not exist
-```
-
-
-### clc.v2.Server.Account()
-Returns the `Account` object that owns this server.
-
-```python
->>> clc.v2.Server("CA3BTDICNTRLM01").Account()
-<clc.APIv2.account.Account instance at 0x108789878>
->>> print _
-BTDI
-```
-
-
-### clc.v2.Server.Group()
-Returns the `Group` object that owns this server.
-
-```python
->>> clc.v2.Server("CA3BTDICNTRLM01").Group()
-<clc.APIv2.group.Group object at 0x10b07b7d0>
->>> print _
-Ansible Managed Servers
-```
-
-
-### clc.v2.Server.Alerts()
-Returns an `Alerts` object containing all alerts mapped to this server.
-
-```python
->>> clc.v2.Server("NY1BTDIPHYP0101").Alerts()
-<clc.APIv2.alert.Alerts object at 0x1065b0150>
 ```
 
 
@@ -551,6 +534,76 @@ If no snapshot names are supplied will delete all existing snapshots.
 ```python
 >>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT02').DeleteSnapshot().WaitUntilComplete()
 0
+```
+
+
+### clc.v2.Server.Alerts()
+Returns an `Alerts` object containing all alerts mapped to this server.
+
+```python
+>>> clc.v2.Server("NY1BTDIPHYP0101").Alerts()
+<clc.APIv2.alert.Alerts object at 0x1065b0150>
+```
+
+
+### clc.v2.Server.RestoreSnapshot(name=None)
+Restores an existing Hypervisor level snapshot.
+
+Supply snapshot name to restore
+If no snapshot name is supplied will restore the first snapshot found
+
+```python
+>>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT02').RestoreSnapshot().WaitUntilComplete()
+0
+```
+
+
+### clc.v2.Server.Delete()
+Deletes the server.
+
+```python
+>>> clc.v2.Server("WA1BTDIAPI219").Delete().WaitUntilComplete()
+0
+```
+
+
+### clc.v2.Server.Clone(network_id,name=None,cpu=None,memory=None,group_id=None,alias=None,password=None,ip_address=None, storage_type=None,type=None,primary_dns=None,secondary_dns=None, custom_fields=None,ttl=None,managed_os=False,description=None, source_server_password=None,cpu_autoscale_policy_id=None,anti_affinity_policy_id=None, packages=[],count=1):
+Creates one or more clones of existing server.
+
+Set ttl as number of seconds before server is to be terminated.
+
+* network_id is currently a required parameter.  This will change to optional once APIs are available to return the network id of self.
+* if no password is supplied will reuse the password of self.  Is this the expected behavior?  Take note there is no way to for a system generated password with this pattern since we cannot leave as None
+* any DNS settings from self are not propogated to clone since they are unknown at system level and the clone process will touch them
+* no change to the disk layout we will clone all
+* clone will not replicate managed OS setting from self so this must be explicitly set
+
+```python
+>>> d = clc.v2.Datacenter()
+>>> clc.v2.Server(alias='BTDI',id='WA1BTDIAPI207').Clone(network_id=d.Networks().networks[0].id,count=2)
+0
+```
+
+
+### clc.v2.Server.Account()
+Returns the `Account` object that owns this server.
+
+```python
+>>> clc.v2.Server("CA3BTDICNTRLM01").Account()
+<clc.APIv2.account.Account instance at 0x108789878>
+>>> print _
+BTDI
+```
+
+
+### clc.v2.Server.Group()
+Returns the `Group` object that owns this server.
+
+```python
+>>> clc.v2.Server("CA3BTDICNTRLM01").Group()
+<clc.APIv2.group.Group object at 0x10b07b7d0>
+>>> print _
+Ansible Managed Servers
 ```
 
 

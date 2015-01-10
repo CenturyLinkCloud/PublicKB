@@ -289,6 +289,8 @@ class Server(object):
 	def GetSnapshots(self):
 		"""Returns list of all snapshot names.
 
+		>>> clc.v2.Server("WA1BTDIAPI219").GetSnapshots()
+		[u'2015-01-10.02:10:38']
 		"""
 
 		return([obj['name'] for obj in self.data['details']['snapshots']])
@@ -471,6 +473,9 @@ class Server(object):
 		"""Delete server.
 
 		https://t3n.zendesk.com/entries/59220824-Delete-Server
+
+		>>> clc.v2.Server("WA1BTDIAPI219").Delete().WaitUntilComplete()
+		0
 		
 		"""
 		return(clc.v2.Requests(clc.v2.API.Call('DELETE','servers/%s/%s' % (self.alias,self.id))))
