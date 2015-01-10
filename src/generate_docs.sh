@@ -6,4 +6,4 @@ pydoc -w clc \
 perl -p -i -e "s/keithresar//g" *html
 
 echo "Manual step  > git checkout gh-pages"
-echo "Manual step  > mv *html ../sdoc/"
+echo "Manual step  > mv *html ../doc/"
