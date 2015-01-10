@@ -316,7 +316,7 @@ group definitions from the API and is not generally used by user functions.
 ```
 
 
-### clc.v2.Create()
+### clc.v2.Group.Create()
 Creates a new group and returns a `Group` object.
 
 ```python
@@ -327,7 +327,7 @@ Test5
 ```
 
 
-### clc.v2.Delete()
+### clc.v2.Group.Delete()
 Deletes group.  Returns a `Requests` object.
 
 ```python
@@ -338,7 +338,7 @@ Deletes group.  Returns a `Requests` object.
 ```
 
 
-### clc.v2.Subgroups()
+### clc.v2.Group.Subgroups()
 Returns a `Groups` object containing all child groups.
 
 ```python
@@ -347,7 +347,7 @@ Returns a `Groups` object containing all child groups.
 ```
 
 
-### clc.v2.Servers()
+### clc.v2.Group.Servers()
 Returns a `Servers` object containing all servers within the group.
 
 ```python
@@ -356,7 +356,7 @@ Returns a `Servers` object containing all servers within the group.
 ```
 
 
-### clc.v2.Account()
+### clc.v2.Group.Account()
 Returns the `Account` object that owns this group.
 
 ```python
@@ -434,6 +434,7 @@ API call.
 NY1BTDIPHYP0101
 ```
 
+
 ### Operations: clc.v2.Servers.Pause(), ShutDown, Reboot, Reset, PowerOn, PowerOff, StartMaintenance, StopMaintenance
 All above operations methods behave in the same manner.  They apply the operation command to all
 servers in the object.  All are asynchronous methods so they return a `Requests` object.
@@ -445,8 +446,112 @@ servers in the object.  All are asynchronous methods so they return a `Requests`
 0
 ```
 
-### TODO --> document entire Server class
 
+### clc.v2.Server(id,alias=None,server_obj=None):
+Create new `Server` object.  If `alias` is None then the alias associated with supplied credentials
+is used.  `server_obj` is an API object containing server definitions - is is not typically called by
+end user code.
+
+***Note the `server_obj` parameter may be deprecated in future versions***
+
+```python
+# successful creation
+>>> clc.v2.Server("CA3BTDICNTRLM01")
+<clc.APIv2.server.Server object at 0x10c28fe50>
+>>> print _
+CA3BTDICNTRLM01
+
+# error.  API returns 404 when server does not exist, we raise exception
+>>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT01')
+clc.CLCException: Server does not exist
+```
+
+
+### clc.v2.Server.Account()
+Returns the `Account` object that owns this server.
+
+```python
+>>> clc.v2.Server("CA3BTDICNTRLM01").Account()
+<clc.APIv2.account.Account instance at 0x108789878>
+>>> print _
+BTDI
+```
+
+
+### clc.v2.Server.Group()
+Returns the `Group` object that owns this server.
+
+```python
+>>> clc.v2.Server("CA3BTDICNTRLM01").Group()
+<clc.APIv2.group.Group object at 0x10b07b7d0>
+>>> print _
+Ansible Managed Servers
+```
+
+
+### clc.v2.Server.Alerts()
+Returns an `Alerts` object containing all alerts mapped to this server.
+
+```python
+>>> clc.v2.Server("NY1BTDIPHYP0101").Alerts()
+<clc.APIv2.alert.Alerts object at 0x1065b0150>
+```
+
+
+### clc.v2.Server.Credentials()
+Returns the administrative credentials for this server.
+
+```python
+>>> clc.v2.Server("NY1BTDIPHYP0101").Credentials()
+{u'userName': u'administrator', u'password': u'dszkjh498s^'}
+```
+
+
+### Operations: clc.v2.Server.Pause(), ShutDown, Reboot, Reset, PowerOn, PowerOff, StartMaintenance, StopMaintenance
+All above operations methods behave in the same manner.  They apply the operation command to the server
+All are asynchronous methods so they return a `Requests` object.  Execute specified operations task against the server.
+
+***Note if API indicates error due to server(s) already being in the requested state this is not raised as 
+an error at this level.
+
+```python
+>>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT02').PowerOn().WaitUntilComplete()
+0
+```
+
+
+### clc.v2.Server.GetSnapshots()
+Returns a list of all existing Hypervisor level snapshots associated with this server.
+
+```python
+>>> clc.v2.Server("WA1BTDIAPI219").GetSnapshots()
+[u'2015-01-10.02:10:38']
+```
+
+
+### clc.v2.Server.CreateSnapshot(delete_existing=True,expiration_days=7)
+Take a Hypervisor level snapshot retained for between 1 and 10 days (7 is default).
+Currently only one snapshop may exist at a time, thus will delete snapshots if one already
+exists before taking this snapshot.
+
+```python
+>>> clc.v2.Server("WA1BTDIAPI219").CreateSnapshot(2)
+<clc.APIv2.queue.Requests object at 0x10d106cd0>
+>>> _.WaitUntilComplete()
+0
+```
+
+
+### clc.v2.Server.DeleteSnapshots(names=None)
+Removes existing Hypervisor level snapshots.
+
+Supply one or more snapshot names to delete them concurrently.
+If no snapshot names are supplied will delete all existing snapshots.
+
+```python
+>>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT02').DeleteSnapshot().WaitUntilComplete()
+0
+```
 
 
 

@@ -220,10 +220,23 @@ class Server(object):
 
 	
 	def Alerts(self):
+		"""Returns an Alerts object containing all alerts mapped to this server.
+
+		>>> clc.v2.Server("NY1BTDIPHYP0101").Alerts()
+		<clc.APIv2.alert.Alerts object at 0x1065b0150>
+		"""
+
 		return(clc.v2.Alerts(self.alert_policies))
 
 
 	def Credentials(self):
+		"""Returns the administrative credentials for this server.
+
+		>>> clc.v2.Server("NY1BTDIPHYP0101").Credentials()
+		{u'userName': u'administrator', u'password': u'dszkjh498s^'}
+
+		"""
+
 		return(clc.v2.API.Call('GET','servers/%s/%s/credentials' % (self.alias,self.name)))
 
 
@@ -254,10 +267,6 @@ class Server(object):
 	def StopMaintenance(self):  return(self._Operation('stopMaintenance'))
 
 
-	def GetSnapshots(self):
-		return([obj['name'] for obj in self.data['details']['snapshots']])
-
-
 	def ExecutePackage(self,package_id,parameters={}):
 		"""Execute an existing Bluerprint package on the server.
 
@@ -275,6 +284,34 @@ class Server(object):
 
 		return(clc.v2.Requests(clc.v2.API.Call('POST','operations/%s/servers/executePackage' % (self.alias),
 		                                       json.dumps({'servers': [self.id], 'package': {'packageId': package_id, 'parameters': parameters}}))))
+
+
+	def GetSnapshots(self):
+		"""Returns list of all snapshot names.
+
+		"""
+
+		return([obj['name'] for obj in self.data['details']['snapshots']])
+
+
+	def CreateSnapshot(self,delete_existing=True,expiration_days=7):
+		"""Take a Hypervisor level snapshot retained for between 1 and 10 days (7 is default).
+		Currently only one snapshop may exist at a time, thus will delete snapshots if one already
+		exists before taking this snapshot.
+
+		>>> clc.v2.Server("WA1BTDIAPI219").CreateSnapshot(2)
+		<clc.APIv2.queue.Requests object at 0x10d106cd0>
+		>>> _.WaitUntilComplete()
+		0
+
+		"""
+
+		if len(self.data['details']['snapshots']):  
+			if delete_existing:  self.DeleteSnapshot()
+			else:  raise(clc.CLCException("Snapshot already exists cannot take another"))
+
+		return(clc.v2.Requests(clc.v2.API.Call('POST','operations/%s/servers/createSnapshot' % (self.alias),
+											   {'serverIds': self.id, 'snapshotExpirationDays': expiration_days})))
 
 
 	def DeleteSnapshot(self,names=None):
