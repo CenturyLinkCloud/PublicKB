@@ -17,7 +17,7 @@ API Documentaton v2: https://t3n.zendesk.com/categories/20067994-API-v2-0-Beta-
 """
 
 import APIv1 as v1
-import APIv1 as v2
+import APIv2 as v2
 import defaults
 
 
@@ -56,4 +56,8 @@ class AccountDeletedException(CLCException):
 	pass
 class AccountLoginException(CLCException):
     pass
+class InvalidAPIResponseException(CLCException):
+    pass
+class APIFailedResponse(CLCException):
+	pass
 
