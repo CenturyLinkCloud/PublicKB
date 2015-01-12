@@ -24,7 +24,7 @@
       "file_name":"Install Windows 2012 Active Directory Domain Services.zip"
     },
     {
-      "url":"/knowledge-base/attachments/Perform Active Directory Domain Join on Windows",
+      "url":"/knowledge-base/attachments/Perform Active Directory Domain Join on Windows.zip",
       "type":"application/zip",
       "file_name":"Perform Active Directory Domain Join on Windows.zip"
     }
