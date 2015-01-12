@@ -134,7 +134,7 @@ class Group(object):
 		else:  self.alias = clc.v2.Account.GetAlias()
 
 		if group_obj:  self.data = group_obj
-		else:  self.data = clc.v2.API.Call('GET','groups/%s/%s' % (self.alias,self.id),{})
+		else:  self.data = clc.v2.API.Call('GET','groups/%s/%s' % (self.alias,self.id))
 
 
 	def __getattr__(self,var):
@@ -143,6 +143,23 @@ class Group(object):
 		if key in self.data:  return(self.data[key])
 		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,key)))
 
+
+	def Defaults(self,key):
+		"""Returns default configurations for resources deployed to this group.
+
+		If specified key is not defined returns None.
+
+		# {"cpu":{"inherited":false},"memoryGB":{"inherited":false},"networkId":{"inherited":false},
+		# "primaryDns":{"value":"172.17.1.26","inherited":true},"secondaryDns":{"value":"172.17.1.27","inherited":true},
+		# "templateName":{"value":"WIN2012DTC-64","inherited":false}}
+		"""
+
+		if not hasattr(self,'defaults'):  self.defaults = clc.v2.API.Call('GET','groups/%s/%s/defaults' % (self.alias,self.id))
+		try:
+			return(self.defaults[key]['value'])
+		except:
+			return(None)
+		
 
 	def Subgroups(self):
 		"""Returns a Groups object containing all child groups.

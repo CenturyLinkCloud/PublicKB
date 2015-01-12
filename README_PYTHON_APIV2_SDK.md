@@ -420,6 +420,16 @@ Deletes group.  Returns a `Requests` object.
 ```
 
 
+### clc.v2.Group.Defaults
+```python
+clc.v2.Group.Defaults( key )
+```
+
+Returns default configurations for resources deployed to this group.
+
+If specified key is not defined returns None.
+
+
 ### clc.v2.Group.Subgroups
 ```python
 clc.v2.Group.Subgroups()
@@ -549,6 +559,7 @@ Object variables:
     server.reserved_drive_paths
     server.adding_cpu_requires_reboot
     server.adding_memory_requires_reboot
+	server.dirty - whether changes have been made to the cloud server but not reflected in server object
 
 Object variables available but access subject to change with future releases:
 
@@ -634,6 +645,18 @@ an error at this level.
 ```python
 >>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT02').PowerOn().WaitUntilComplete()
 0
+```
+
+
+### clc.v2.Server.Refresh
+```python
+clc.v2.Server.Refresh()
+```
+
+Reloads the server object to synchronize with cloud representation.
+
+```python
+>>> clc.v2.Server("CA3BTDICNTRLM01").Refresh()
 ```
 
 

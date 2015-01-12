@@ -38,13 +38,11 @@ Server object variables available but access subject to change with future relea
 """
 
 # vCur:
-# TODO - Change Server (Update) - need API spec
-# TODO - Refresh - of object is dirty refresh object definition
-# TODO - Create - laod defaults from group and apply to create if no cpu/remory supplied
 # TODO - Link to Public IP class
 # TODO - document refresh, server.dirty, change*
 
 # vNext:
+# TODO - Change Server (Update) - need API spec
 # TODO - cpuAutoscalePolicy - need API spec 404
 # TODO - AntiAffinity policy - need API spec put call 400 
 # TODO - Statistics - need API spec get call 500
@@ -397,9 +395,12 @@ class Server(object):
 		if not alias:  alias = clc.v2.Account.GetAlias()
 
 		if not cpu or not memory:
-			group = clc.v2.Group(groups_id=groups_id,alias=alias)
-			if not cpu:  cpu = None
-			if not memory:  memory = None
+			group = clc.v2.Group(id=group_id,alias=alias)
+			if not cpu and group.Defaults("cpu"):  cpu = group.Defaults("cpu")
+			elif not cpu:  raise(clc.CLCException("No default CPU defined"))
+
+			if not memory and group.Defaults("memory"):  memory = group.Defaults("memory")
+			elif not memory:  raise(clc.CLCException("No default Memory defined"))
 		if not description:  description = name
 		if type.lower() not in ("standard","hyperscale"):  raise(clc.CLCException("Invalid type"))
 		if storage_type.lower() not in ("standard","premium"):  raise(clc.CLCException("Invalid storage_type"))
@@ -492,20 +493,20 @@ class Server(object):
 
 
 
-	def _Change(self,op="set",key,value):
-		"""Change existing server object.
-
-		"""
-
-		self.dirty = True
-		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.alias,self.id),
-		                       {'op': op, 'member': key, 'value': value},debug=True)))
-
-		
-	def SetCPU(self,value):  return(self._Change(key="cpu","value"=value))
-	def SetMemory(self,value):  return(self._Change(key="memory","value"=value))
-	def SetDescription(self,value):  return(self._Change(key="description","value"=value))
-	def SetGroup(self,group_id):  return(self._Change(key="description","value"=group_id))
+#	def _Change(self,key,value,op="set"):
+#		"""Change existing server object.
+#
+#		"""
+#
+#		self.dirty = True
+#		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.alias,self.id),
+#		                       json.dumps({'op': op, 'member': key, 'value': value}),debug=True)))
+#
+#		
+#	def SetCPU(self,value):  return(self._Change(key="cpu",value=value))
+#	def SetMemory(self,value):  return(self._Change(key="memory",value=value))
+#	def SetDescription(self,value):  return(self._Change(key="description",value=value))
+#	def SetGroup(self,group_id):  return(self._Change(key="description",value=group_id))
 
 
 	def Delete(self):
