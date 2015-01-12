@@ -98,6 +98,11 @@ sum(requests).WaitUntilComplete()
 
 ## Authentication
 
+### clc.v2.SetCredentials
+```python
+clc.v2.SetCredentials( username, password )
+```
+
 All API calls require authentication using your API V2 credentials. 
 Login itself is made lazily when the first API call requiring credentials is issued.
 
@@ -127,7 +132,11 @@ Login itself is made lazily when the first API call requiring credentials is iss
 * account.primary_data_center
 * account.is_managed
 
-### clc.v2.Account.GetAlias() (static)
+### clc.v2.Account.GetAlias (static)
+```python
+clc.v2.Account.GetAlias()
+```
+
 Return specified alias or if None the alias associated with the provided credentials.
 
 
@@ -137,7 +146,11 @@ u'BTDI'
 ```
 
 
-### clc.v2.Account.GetLocation() (static)
+### clc.v2.Account.GetLocation (static)
+```python
+clc.v2.Account.GetLocation()
+```
+
 Return specified location or if None the default location associated with the provided credentials and alias.
 
 ```python
@@ -146,7 +159,11 @@ u'WA1'
 ```
 
 
-### clc.v2.Account(alias=None)
+### clc.v2.Account
+```python
+clc.v2.Account.GetAccount( alias = None )
+```
+
 Create `Account` object associated with provided alias (or default alias if none provided).
 
 ```python
@@ -155,7 +172,11 @@ Create `Account` object associated with provided alias (or default alias if none
 ```
 
 
-### clc.v2.ParentAccount()
+### clc.v2.ParentAccount
+```python
+clc.v2.Account.ParentAccount()
+```
+
 Return `Account` object associated with the parent of the current account.
 Returns None if already at top-level account.
 
@@ -164,7 +185,11 @@ Returns None if already at top-level account.
 <clc.APIv2.account.Account instance at 0x1065a2e60>
 ```
 
-### clc.v2.PrimaryDatacenter()
+### clc.v2.PrimaryDatacenter
+```python
+clc.v2.Account.PrimaryDatacenter()
+```
+
 Returns `Datacenter` object associated with the primary datacetner.
 
 ```python
@@ -189,7 +214,11 @@ WA1
 * datacenter.supports_shared_load_balancer
 
 
-### clc.v2.Datacenter.Datacenters(alias=None) (static)
+### clc.v2.Datacenter.Datacenters
+```python
+clc.v2.Datacenter.Datacenters ( alias = None)
+```
+
 Return all cloud locations available to the calling alias.
 
 ```python
