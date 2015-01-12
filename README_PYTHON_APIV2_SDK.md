@@ -9,9 +9,9 @@ will follow suit.
 * [Authentication](#authentication)
 * [Account](#account) - Account level activities
 * [Datacenter](#datacenter) - View and interact with geographic specific datacenter components
-* [Group](#group) - `Groups` and `Group` classes.  Logical organization around assets by group which can contain sub-groups or servers
-* [Server](#server) - `Servers` and `Server` classes.  Cloud servers
-* [Request](#request) - `Requests` and `Request` classes.  Interface to work queue for async operations
+* [Groups](#groups) and [Group](#group) - `Groups` and `Group` classes.  Logical organization around assets by group which can contain sub-groups or servers
+* [Servers](#servers) and [Server](#server) - `Servers` and `Server` classes.  Cloud servers
+* [Requests](#requests) and [Request](#request) - `Requests` and `Request` classes.  Interface to work queue for async operations
 
 
 ## Quick Start
@@ -248,25 +248,9 @@ Returns a `Templates` object associated with the datacenter.
 
 
 
-## Group
+## Groups
 
-[Group pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.group.html)
-
-### Class variables
-
-Object variables:
-
-* group.id
-* group.name
-* group.description
-* group.type
-* group.status
-* group.server_count
-
-Object variables available but access subject to change with future releases:
-
-* group.custom_fields
-* group.change_info
+[Groups pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.group.html)
 
 
 ### clc.v2.Groups(groups_lst,alias=None)
@@ -291,6 +275,28 @@ Returns a list of `Group` objects with partial matches to the provided key.  Mat
 >>> clc.v2.Datacenter().Groups().Get("Default Group")
 <clc.APIv2.group.Group object at 0x1065e5250>
 ```
+
+
+
+## Group
+
+[Group pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.group.html)
+
+### Class variables
+
+Object variables:
+
+* group.id
+* group.name
+* group.description
+* group.type
+* group.status
+* group.server_count
+
+Object variables available but access subject to change with future releases:
+
+* group.custom_fields
+* group.change_info
 
 
 ### clc.v2.Group.GetAll(root_group_id,alias=None) (static)
@@ -367,41 +373,9 @@ BTDI
 
 
 
-## Server
+## Servers
 
-[Server pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.server.html)
-
-
-### Class variables
-
-Object variables:
-
-    server.id
-    server.description
-    server.cpu
-    server.power_state
-    server.memory
-    server.storage
-    server.group_id
-    server.is_template
-    server.location_id
-    server.name
-    server.os
-    server.os_type
-    server.status
-    server.type
-    server.storage_type
-    server.in_maintenance_mode
-    server.reserved_drive_paths
-    server.adding_cpu_requires_reboot
-    server.adding_memory_requires_reboot
-
-Object variables available but access subject to change with future releases:
-
-    server.custom_fields
-    server.change_info
-    server.alert_policies
-    server.ip_addresses
+[Servers pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.server.html)
 
 
 ### clc.v2.Servers(servers_lst,alias=None)
@@ -443,6 +417,44 @@ servers in the object.  All are asynchronous methods so they return a `Requests`
 >>> _.WaitUntilComplete()
 0
 ```
+
+
+
+## Server
+
+[Server pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.server.html)
+
+
+### Class variables
+
+Object variables:
+
+    server.id
+    server.description
+    server.cpu
+    server.power_state
+    server.memory
+    server.storage
+    server.group_id
+    server.is_template
+    server.location_id
+    server.name
+    server.os
+    server.os_type
+    server.status
+    server.type
+    server.storage_type
+    server.in_maintenance_mode
+    server.reserved_drive_paths
+    server.adding_cpu_requires_reboot
+    server.adding_memory_requires_reboot
+
+Object variables available but access subject to change with future releases:
+
+    server.custom_fields
+    server.change_info
+    server.alert_policies
+    server.ip_addresses
 
 
 ### clc.v2.Server.Create(name,cpu,memory,template,group_id,network_id,alias=None,password=None,ip_address=None, storage_type="standard",type="standard",primary_dns=None,secondary_dns=None, additional_disks=[],custom_fields=[],ttl=None,managed_os=False,description=None, source_server_password=None,cpu_autoscale_policy_id=None,anti_affinity_policy_id=None, packages=[]) (static)
@@ -608,7 +620,7 @@ Ansible Managed Servers
 
 ## Request
 
-[Request pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.request.html)
+[Requests pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.request.html)
 
 
 ### Class variables
@@ -618,12 +630,6 @@ Object variables:
 * requests.requests
 * requests.error_requests
 * requests.success_requests
-
-* request.id
-* request.alias
-* request.time_created
-* request.time_executed
-* request.time_completed
 
 ### clc.v2.Requests(requests_lst,alias=None):
 Create `Requests` object.
@@ -646,6 +652,22 @@ objects in a completed state.
 >>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT02').PowerOn().WaitUntilComplete()
 0
 ```
+
+
+## Request
+
+[Request pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.request.html)
+
+
+### Class variables
+
+Object variables:
+
+* request.id
+* request.alias
+* request.time_created
+* request.time_executed
+* request.time_completed
 
 
 ### clc.v2.Request(id,alias=None,request_obj=None)
