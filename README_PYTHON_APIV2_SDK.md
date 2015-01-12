@@ -161,7 +161,7 @@ u'WA1'
 
 ### clc.v2.Account
 ```python
-clc.v2.Account.GetAccount( alias = None )
+clc.v2.Account.GetAccount( alias=None )
 ```
 
 Create `Account` object associated with provided alias (or default alias if none provided).
@@ -216,7 +216,7 @@ WA1
 
 ### clc.v2.Datacenter.Datacenters
 ```python
-clc.v2.Datacenter.Datacenters ( alias = None)
+clc.v2.Datacenter.Datacenters ( alias=None)
 ```
 
 Return all cloud locations available to the calling alias.
@@ -226,7 +226,11 @@ Return all cloud locations available to the calling alias.
 [<clc.APIv2.datacenter.Datacenter instance at 0x101462fc8>, <clc.APIv2.datacenter.Datacenter instance at 0x101464320>]
 ```
 
-### clc.v2.Datacenter(location=None,name=None,alias=None)
+### clc.v2.Datacenter
+```python
+clc.v2.Datacenter( location=None, name=None, alias=None)
+```
+
 Create new `Datacenter` object associated with supplied location and alias.  If neither are provided
 use the default values associated with the supplied credentials.
 
@@ -238,7 +242,11 @@ WA1
 ```
 
 
-### clc.v2.Datacenter.RootGroup()
+### clc.v2.Datacenter.RootGroup
+```python
+clc.v2.RootGroup()
+```
+
 Returns `Group` object for datacenter root group.
 
 ```python
@@ -249,7 +257,11 @@ WA1 Hardware
 ```
 
 
-### clc.v2.Datacenter.Groups()
+### clc.v2.Datacenter.Groups
+```python
+clc.v2.Groups()
+```
+
 Returns `Groups` object for datacenter root group.
 
 ```python
@@ -258,7 +270,11 @@ Returns `Groups` object for datacenter root group.
 ```
 
 
-### clc.v2.Datacenter.Networks()
+### clc.v2.Datacenter.Networks
+```python
+clc.v2.Networks()
+```
+
 Returns a `Networks` object associated with the datacenter.
 
 ```python
@@ -267,7 +283,11 @@ Returns a `Networks` object associated with the datacenter.
 ```
 
 
-### clc.v2.Datacenter.Templates()
+### clc.v2.Datacenter.Templates
+```python
+clc.v2.Templates()
+```
+
 Returns a `Templates` object associated with the datacenter.
 
 ```python
@@ -282,12 +302,20 @@ Returns a `Templates` object associated with the datacenter.
 [Groups pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.group.html)
 
 
-### clc.v2.Groups(groups_lst,alias=None)
+### clc.v2.Groups
+```python
+clc.v2.Groups( groups_lst, alias=None )
+```
+
 `Groups` object constructor.  If no alias is provided will use the default associated with the API
 credentials in use.  `groups_lst` is a list of group objects retrieved from API.  Usually no need to call this constructor directly.
 
 
-### clc.v2.Groups.Get(key)
+### clc.v2.Groups.Get
+```python
+clc.v2.Groups.Get( key )
+```
+
 Returns a `Group` object matching the provided key.  Match is against name, ID, or description.
 If key is not unique and finds multiple matches only the first will be returned
 
@@ -297,7 +325,11 @@ If key is not unique and finds multiple matches only the first will be returned
 ```
 
 
-### clc.v2.Groups.Search(key)
+### clc.v2.Groups.Search
+```python
+clc.v2.Groups.Search( key )
+```
+
 Returns a list of `Group` objects with partial matches to the provided key.  Match is against name, ID, or description.
 
 ```python
@@ -328,7 +360,11 @@ Object variables available but access subject to change with future releases:
 * group.change_info
 
 
-### clc.v2.Group.GetAll(root_group_id,alias=None) (static)
+### clc.v2.Group.GetAll (static)
+```python
+clc.v2.Group.GetAll( root_group_id, alias=None )
+```
+
 Given a group ID and optional alias returns a list of `Group` objects associated with that group.
 
 *Subject to deprecation in future release.*
@@ -339,7 +375,11 @@ Given a group ID and optional alias returns a list of `Group` objects associated
 ```
 
 
-### clc.v2.Group(id,alias=None,group_obj=None)
+### clc.v2.Group
+```python
+clc.v2.Group( id, alias=None, group_obj=None )
+```
+
 Create a new `Group` object.  If alias is not provided will use default value associated with the account.
 If `group_obj` is not provided will perform and API query to get group definition.  `group_obj` is a list of
 group definitions from the API and is not generally used by user functions.
@@ -350,7 +390,11 @@ group definitions from the API and is not generally used by user functions.
 ```
 
 
-### clc.v2.Group.Create(name,description=None)
+### clc.v2.Group.Create
+```python
+clc.v2.Group( name, description=None )
+```
+
 Creates a new group and returns a `Group` object.
 
 ```python
@@ -361,7 +405,11 @@ Test5
 ```
 
 
-### clc.v2.Group.Delete()
+### clc.v2.Group.Delete
+```python
+clc.v2.Group.Delete()
+```
+
 Deletes group.  Returns a `Requests` object.
 
 ```python
@@ -372,7 +420,11 @@ Deletes group.  Returns a `Requests` object.
 ```
 
 
-### clc.v2.Group.Subgroups()
+### clc.v2.Group.Subgroups
+```python
+clc.v2.Group.Subgroups()
+```
+
 Returns a `Groups` object containing all child groups.
 
 ```python
@@ -381,7 +433,11 @@ Returns a `Groups` object containing all child groups.
 ```
 
 
-### clc.v2.Group.Servers()
+### clc.v2.Group.Servers
+```python
+clc.v2.Group.Servers()
+```
+
 Returns a `Servers` object containing all servers within the group.
 
 ```python
@@ -390,7 +446,11 @@ Returns a `Servers` object containing all servers within the group.
 ```
 
 
-### clc.v2.Group.Account()
+### clc.v2.Group.Account
+```python
+clc.v2.Group.Account()
+```
+
 Returns the `Account` object that owns this group.
 
 ```python
@@ -407,7 +467,11 @@ BTDI
 [Servers pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.server.html)
 
 
-### clc.v2.Servers(servers_lst,alias=None)
+### clc.v2.Servers
+```python
+clc.v2.Servers( servers_lst, alias=None )
+```
+
 `Servers` object constructor.  If no alias is provided will use the default associated with the API
 credentials in use.  `servers_lst` is a list of server names. 
 
@@ -421,7 +485,11 @@ We will lazily create server objects as needed since each requires a seperate AP
 ```
 
 
-### clc.v2.Servers.Servers(cached=True)
+### clc.v2.Servers.Servers
+```python
+clc.v2.Servers( cached=True )
+```
+
 Returns a list of `Server` objects.  If cached is set to True then the servers
 list will not be refreshed if it has already been called in this instance.  
 
@@ -436,7 +504,11 @@ NY1BTDIPHYP0101
 ```
 
 
-### Operations: clc.v2.Servers.Pause(), ShutDown, Reboot, Reset, PowerOn, PowerOff, StartMaintenance, StopMaintenance
+### Operations: clc.v2.Servers.Pause, ShutDown, Reboot, Reset, PowerOn, PowerOff, StartMaintenance, StopMaintenance
+```python
+clc.v2.Pause()
+```
+
 All above operations methods behave in the same manner.  They apply the operation command to all
 servers in the object.  All are asynchronous methods so they return a `Requests` object.
 
@@ -500,7 +572,11 @@ Set ttl as number of seconds before server is to be terminated.  Must be >3600
 ```
 
 
-### clc.v2.Server(id,alias=None,server_obj=None):
+### clc.v2.Server
+```python
+clc.v2.Server( id, alias=None, server_obj=None )
+```
+
 Create new `Server` object.  If `alias` is None then the alias associated with supplied credentials
 is used.  `server_obj` is an API object containing server definitions - is is not typically called by
 end user code.
@@ -520,7 +596,11 @@ clc.CLCException: Server does not exist
 ```
 
 
-### clc.v2.Server.Credentials()
+### clc.v2.Server.Credentials
+```python
+clc.v2.Server.Credentials()
+```
+
 Returns the administrative credentials for this server.
 
 ```python
@@ -529,7 +609,11 @@ Returns the administrative credentials for this server.
 ```
 
 
-### Operations: clc.v2.Server.Pause(), ShutDown, Reboot, Reset, PowerOn, PowerOff, StartMaintenance, StopMaintenance
+### Operations: clc.v2.Server.Pause, ShutDown, Reboot, Reset, PowerOn, PowerOff, StartMaintenance, StopMaintenance
+```python
+clc.v2.Server.Pause()
+```
+
 All above operations methods behave in the same manner.  They apply the operation command to the server
 All are asynchronous methods so they return a `Requests` object.  Execute specified operations task against the server.
 
@@ -542,7 +626,11 @@ an error at this level.
 ```
 
 
-### clc.v2.Server.GetSnapshots()
+### clc.v2.Server.GetSnapshots
+```python
+clc.v2.Server.GetSnapshots()
+```
+
 Returns a list of all existing Hypervisor level snapshots associated with this server.
 
 ```python
