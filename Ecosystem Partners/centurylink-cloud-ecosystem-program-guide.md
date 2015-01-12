@@ -6,11 +6,11 @@
 }}}
 
 <p>Updated: January 5, 2015</p>
-Description
+<p><strong>Description</strong></p>
 <p>This Cloud Ecosystem Program Guide is designed to outline the process expectations for technology companies seeking to integrate their products and services with CenturyLink Cloud.&nbsp; This article superceds the static document most recently titled
   “Ecosystem Partner Program Guide CLEAN FINAL v2.1 7-14-14.pdf” which had been circulated to partners during Q2 and Q3 of 2014. &nbsp;Partners who enter this program and meet the certification requirements will be eligible to have their deployable technology
   listed in the CenturyLink Cloud Marketplace launching in early 2015.</p>
-Audience
+<p><strong>Audience</strong></p>
 <ul>
   <li>
     <p>CenturyLink Cloud Ecosystem Applicant, Candidate and Member firms</p>
@@ -22,16 +22,16 @@ Audience
     <p>CenturyLink Employees</p>
   </li>
 </ul>
-CenturyLink Cloud Ecosystem Program
+<p><strong>CenturyLink Cloud Ecosystem Program</strong></p>
 <p>The CenturyLink Cloud Ecosystem Program is designed to provide additional value within CenturyLink’s enterprise cloud computing platform through partnerships with innovative cloud technology and service providers.&nbsp; By integrating their technology
   into CenturyLink Cloud, technology partners can take advantage of a differentiated, digital route-to-market: presented as part of a enterprise-grade automation platform which powers one of the largest pools of IT infrastructure in the world.</p>
 <p>This document explains the process for onboarding technology into the CenturyLink Cloud Ecosystem Program, and how progressively successful outcomes can be achieved in partnership with CenturyLink.</p>
-Joining The Cloud Ecosystem Program
+<p><strong>Joining The Cloud Ecosystem Program</strong></p>
 <p><img src="https://t3n.zendesk.com/attachments/token/9FA1i0HcOlAPVD1XZfLgLRRsI/?name=ecosystem_process.png" alt="ecosystem_process.png" />
 </p>
 <p>Entry into the Ecosystem Program consists of two primary steps:&nbsp; Application and Certification.&nbsp; Once a potential technology is identified, the company is classified as an Applicant.&nbsp; Once the company becomes a Customer of CenturyLink Cloud
   and the Cloud Ecosystem Agreement is signed, the Applicant is referred to as a Candidate.&nbsp; Once the solution is certified, the Candidate becomes a Member.</p>
-Application
+<p><strong>Application</strong></p>
 <p>Applications to the Program will be reviewed as they are received by the CenturyLink Cloud Development Center with consideration given to the following items:</p>
 <ul>
   <li>The value proposition and/or financial benefit the feature provides to clients.</li>
@@ -43,7 +43,7 @@ Application
   <li>Being a CenturyLink Cloud customer in good standing</li>
 </ul>
 <p>Applicants selected to move forward will have access to the Cloud Ecosystem Program Agreement for acceptance.&nbsp; At this point, the Customer’s account would be configured as an Ecosystem Program Candidate.&nbsp;</p>
-Certification
+<p><strong>Certification</strong></p>
 <p>To ensure Candidate solutions deliver both business value and trouble-free use, CenturyLink requires each Candidate successfully pass a certification process.&nbsp; This includes validation that:</p>
 <ul>
   <li>The solution performs as advertised and described in the application</li>
@@ -57,7 +57,7 @@ Certification
   or by signing a Master Service Agreement with CenturyLink.</p>
 <p>Please note the member technology must function with the standard CenturyLink Cloud feature set as no feature development on the part of the CenturyLink Cloud Development Center will be performed to enable a Candidate through the process.&nbsp; During
   this development period and throughout the term of the Program, the Member will be provided access, on a limited basis, to CenturyLink Cloud Integration Engineers as needed for detailed technology questions and roadmap exploration.</p>
-Documentation
+<p><strong>Documentation</strong></p>
 <p>Two types of KnowledgeBase articles should be created for all Ecosystem Member technologies: focused on Public end-users and Internal cloud support personnel.</p>
 <p>Public Articles should be used to practically guide end-users through deploying the technology upon CenturyLink Cloud.&nbsp; The documentation should be intuitive and provide step-by-step guidance in such a way that all skill levels can use the solution.&nbsp;
   These should be accessible online through the CenturyLink Cloud <a href="http://help.tier3.com">knowledgebase</a> (KB).&nbsp; The primary goal of Public KB articles is to ensure customer success: <em>what should the user know about how to take advantage of this technology integration with CenturyLink Cloud</em>?&nbsp;</p>
@@ -69,11 +69,11 @@ Documentation
   connections, a testing account will need to be provided to the assigned CenturyLink Cloud Ecosystem Integrator along with all applicable documentation.&nbsp; For software-based solutions, a copy of the software will need to be loaded into the Blueprint
   Engine along with all applicable documentation.&nbsp; For successful validation, CenturyLink Cloud Ecosystem Integrators should be able to use the provided documentation to completely build and validate all features through our standard platform without
   the need for support outside of any unexpected issues.</p>
-Progression
+<p><strong>Progression</strong></p>
 <p>CenturyLink anticipates further definition of progressive levels of membership, with deeper integration between Member technologies and the Managed Services offered by CenturyLink Technology Solutions.&nbsp; Entitlements of the Cloud Ecosystem Program
   levels will include:</p>
 <ul>
-  <li>Silver:</li>
+  <li><p><strong>Silver:</strong></p></li>
   <ul>
     <li>Certified integration</li>
     <li>Public access for all CenturyLink Cloud customers</li>
@@ -83,7 +83,7 @@ Progression
     <li>Promotion on the CenturyLink Cloud website</li>
     <li>Notifications of interest from CenturyLink Cloud customers</li>
   </ul>
-  <li>Gold</li>
+  <li><p><strong>Gold</strong></p></li>
   <ul>
     <li>All benefits of Silver</li>
     <li>+$5k additional integration credit for demonstrations and promotion</li>
@@ -92,7 +92,7 @@ Progression
     <li>Training for CenturyLink sales and solutions consulting</li>
     <li>Preferred positioning on the CenturyLink Cloud website</li>
   </ul>
-  <li>Platinum</li>
+  <li><p><strong>Platinum</strong></p></li>
   <ul>
     <li>All benefits of Gold</li>
     <li>+8k additional integration credit for demonstrations, selling, proofs-of concept and trials</li>
@@ -100,10 +100,10 @@ Progression
     <li>Development of a management practice within CenturyLink Technology Solutions</li>
   </ul>
 </ul>
-Membership Responsibilities: Silver Certified Members
+<p><strong>Membership Responsibilities: Silver Certified Members</strong></p>
 <p>After successful certification, the Silver Certified Member will be notified of acceptance at which time the CenturyLink Cloud team will begin planning evangelism and communication efforts around the new successful integration.&nbsp; Cloud Ecosystem Members
   will be responsible for (and benefit from) a number of on-boarding and ongoing activities, as outlined below:</p>
-<p>On-boarding Activities:</p>
+<p><strong>On-boarding Activities:</strong></p>
 <p>Sales and Marketing:&nbsp;</p>
 <ul>
   <li>Member shall, within proper usage guidelines and approvals, contribute co-branded sales collateral for use by both CenturyLink and Member sales organizations.&nbsp;</li>
@@ -134,11 +134,11 @@ Membership Responsibilities: Silver Certified Members
       may upgrade their level of support at any time. Professional-level of support can be requested via a NOC ticket and Enterprise-level support can be upgraded by requesting a quote for a Dedicated Service Engineer.</p>
   </li>
 </ul>
-Membership Responsibilities: Gold Certified Members
+<p><strong>Membership Responsibilities: Gold Certified Members</strong></p>
 <p>The Gold Certification level is still being finalized and this Program Guide will be updated at a later date.</p>
 Membership Responsibilities: Platinum Certified Members
 <p>The Platinum Certification level is still being finalized and this Program Guide will be updated at a later date.</p>
-Renewal
+<p><strong>Renewal</strong></p>
 <p>In an effort to ensure the Program participant pool is adequately sized and delivering tangible value to our customers, evaluation of each solution at the renewal point of the respective Member’s term is necessary.&nbsp;</p>
 <p>At the end of the term, both parties will evaluate the program and the Member’s value brought to the program during the participation period.&nbsp; If the anticipated business value has proven out, continues to be relevant, and both parties agree, the
   program will renew for an additional term.&nbsp; If the business value has not been demonstrated, CenturyLink will discuss the future direction of the relationship at that time.</p>

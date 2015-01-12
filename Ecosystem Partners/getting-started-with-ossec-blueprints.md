@@ -170,11 +170,11 @@
   </tbody>
 </table>
 
-<strong>Pricing</strong>
+<p><strong>Pricing</strong></p>
 <p>The costs listed above in Steps 1 and 2 are for the infrastructure only.</p>
 <p>OSSEC is Open Source community owned software with no associated cost to acquire.</p>
 
-<strong>Frequently Asked Questions</strong>
+<p><strong>Frequently Asked Questions</strong></p>
 <p>Where do I get my OSSEC&nbsp;License?</p>
 <ul>
   <li>OSSEC is Open Source community owned software with no associated cost to acquire.</li>

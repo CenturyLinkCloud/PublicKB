@@ -25,7 +25,8 @@
     <br /><strong>A</strong> - We see the "predictive analysis" engine as core IP of the cloud platform and therefore do not share any of the details. In addition, we are an agile shop and therefore in the spirit of agile, we are constantly improving the engine
     in order to ensure that we have better accuracy and also support the new features being added to the Cloud.</p>
   <p>
-    <br /><strong>Q</strong> - I have a large project that I would like to move to your cloud, how do I ensure that you have the capacity.
+  </p>
+  <strong>Q</strong> - I have a large project that I would like to move to your cloud, how do I ensure that you have the capacity.
     <br /><strong>A</strong> - As part of the cloud capacity plan, we always have a large amount of headroom to handle customers expansions however if you would like to reduce risk and ensure that it is on our radar, please contact your account managers so
     that they can notify us.</p>
   <p><strong>Q</strong> - I would like to see your capacity numbers and help you plan to handle my workload.

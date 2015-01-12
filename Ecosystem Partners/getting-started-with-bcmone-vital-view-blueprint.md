@@ -112,11 +112,11 @@
       </li>
     </ul>
   </ul>
-  <li>Access The Vital View dashboard Interface</li>
+  <li><em>Access The Vital View dashboard Interface</em></li>
   <ul>
     <li>The Vital View web interface is accessible via https on port 443 of the server’s public or private IP address.&nbsp;Go ahead and navigate to the dashboard now. &nbsp;Ignore the warning about SSL certificate and continue.</li>
     <ul>
-      <li><a href="http://123.45.67.89:8080/">https://</a>IPADDRESS/vitalview/check_mk/login.py&nbsp;</li>
+      <li>https://IPADDRESS/vitalview/check_mk/login.py&nbsp;</li>
       <li>
         <p>Mobile Devices can access the service by connecting to the Public IP address on the VitalView server &nbsp;</p>
       </li>
@@ -125,8 +125,8 @@
     </li>
   </ul>
 </ol>
-&nbsp;
-<strong>Pricing</strong>
+
+<p><strong>Pricing</strong></p>
 <p>The costs listed above in Steps 1 and 2 are for the CenturyLink Cloud infrastructure only. &nbsp;There are no Vital View license costs or additional fees bundled in.</p>
 <p>After deploying this Blueprint, the user can secure entitlements to the Vital View technology by using the following steps:</p>
 <ul>
@@ -135,7 +135,7 @@
   </li>
 </ul>
 
-<strong>Frequently Asked Questions</strong>
+<p><strong>Frequently Asked Questions</strong></p>
 <p>Where do I obtain my&nbsp;Vital View License?</p>
 <ul>
   <li>Contact BCMOne Vital View via telephone: (855) 543-2000</li>

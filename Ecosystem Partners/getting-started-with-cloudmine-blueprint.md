@@ -5,7 +5,6 @@
   "attachments": []
 }}}
 
-<p>Updated: December 2, 2014</p>
 <p><strong>Partner Profile</strong>
 </p>
 <ul>
@@ -103,7 +102,7 @@
     </li>
     <li>After a couple seconds, the script should complete. You are now ready to use CloudMine!</li>
   </ul>
-  <li>Access The CloudMine Interface</li>
+  <li><em>Access The CloudMine Interface</em></li>
   <ul>
     <li>The CloudMine web interface is accessible on port 8080 of the server’s public IP address (eg. http://123.45.67.89:8080). Go ahead and navigate to the dashboard now.</li>
     <li>Create An Account - Once you’ve loaded the web interface, go ahead and click the orange “Sign up for a new account” button and enter a name, email and password. Your email address will be the account name for future logins. Once you create the account,
@@ -116,8 +115,7 @@
     </li>
   </ul>
 </ol>
-&nbsp;
-<strong>Pricing</strong>
+<p><strong>Pricing</strong></p>
 <p>The costs listed above in Steps 1 and 2 are for the CenturyLink Cloud infrastructure only. &nbsp;There are no CloudMine license costs or additional fees bundled in.</p>
 <p>After deploying this Blueprint, the user can secure entitlements to the CloudMine technology by using the following steps:</p>
 <ul>
@@ -126,7 +124,7 @@
   </li>
 </ul>
 
-<strong>Frequently Asked Questions</strong>
+<p><strong>Frequently Asked Questions</strong></p>
 <p>Where do I obtain my&nbsp;CloudMine&nbsp;License?</p>
 <ul>
   <li>Contact CloudMine via telephone: (855) 662-7722</li>
