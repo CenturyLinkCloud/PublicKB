@@ -639,7 +639,11 @@ Returns a list of all existing Hypervisor level snapshots associated with this s
 ```
 
 
-### clc.v2.Server.CreateSnapshot(delete_existing=True,expiration_days=7)
+### clc.v2.Server.CreateSnapshot
+```python
+clc.v2.Server.CreateSnapshot( delete_existing=True, expiration_days=7 )
+```
+
 Take a Hypervisor level snapshot retained for between 1 and 10 days (7 is default).
 Currently only one snapshop may exist at a time, thus will delete snapshots if one already
 exists before taking this snapshot.
@@ -652,7 +656,11 @@ exists before taking this snapshot.
 ```
 
 
-### clc.v2.Server.DeleteSnapshots(names=None)
+### clc.v2.Server.DeleteSnapshots
+```python
+clc.v2.Server.CreateSnapshot( names=None )
+```
+
 Removes existing Hypervisor level snapshots.
 
 Supply one or more snapshot names to delete them concurrently.
@@ -664,7 +672,11 @@ If no snapshot names are supplied will delete all existing snapshots.
 ```
 
 
-### clc.v2.Server.Alerts()
+### clc.v2.Server.Alerts
+```python
+clc.v2.Server.Alerts()
+```
+
 Returns an `Alerts` object containing all alerts mapped to this server.
 
 ```python
@@ -673,7 +685,11 @@ Returns an `Alerts` object containing all alerts mapped to this server.
 ```
 
 
-### clc.v2.Server.RestoreSnapshot(name=None)
+### clc.v2.Server.RestoreSnapshot
+```python
+clc.v2.Server.RestoreSnapshots( name=None)
+```
+
 Restores an existing Hypervisor level snapshot.
 
 Supply snapshot name to restore
@@ -685,7 +701,11 @@ If no snapshot name is supplied will restore the first snapshot found
 ```
 
 
-### clc.v2.Server.Delete()
+### clc.v2.Server.Delete
+```python
+clc.v2.Server.Delete()
+```
+
 Deletes the server.
 
 ```python
@@ -694,8 +714,16 @@ Deletes the server.
 ```
 
 
-### clc.v2.Server.Clone(network_id,name=None,cpu=None,memory=None,group_id=None,alias=None,password=None,ip_address=None, storage_type=None,type=None,primary_dns=None,secondary_dns=None, custom_fields=None,ttl=None,managed_os=False,description=None, source_server_password=None,cpu_autoscale_policy_id=None,anti_affinity_policy_id=None, packages=[],count=1):
+### clc.v2.Server.Clone
 Creates one or more clones of existing server.
+```python
+clc.v2.Server.Clone( network_id, name=None, cpu=None, memory=None ,group_id=None,
+                     alias=None, password=None, ip_address=None, storage_type=None,
+					 type=None, primary_dns=None, secondary_dns=None, custom_fields=None,
+					 ttl=None, managed_os=False, description=None, source_server_password=None,
+					 cpu_autoscale_policy_id=None, anti_affinity_policy_id=None, packages=[], count=1)
+```
+
 
 Set ttl as number of seconds before server is to be terminated.
 
@@ -712,7 +740,11 @@ Set ttl as number of seconds before server is to be terminated.
 ```
 
 
-### clc.v2.Server.Account()
+### clc.v2.Server.Account
+```python
+clc.v2.Server.Account()
+```
+
 Returns the `Account` object that owns this server.
 
 ```python
@@ -723,7 +755,11 @@ BTDI
 ```
 
 
-### clc.v2.Server.Group()
+### clc.v2.Server.Group
+```python
+clc.v2.Server.Group()
+```
+
 Returns the `Group` object that owns this server.
 
 ```python
@@ -748,11 +784,19 @@ Object variables:
 * requests.error_requests
 * requests.success_requests
 
-### clc.v2.Requests(requests_lst,alias=None):
+### clc.v2.Requests
+```python
+clc.v2.Requests( requests_lst, alias=None )
+```
+
 Create `Requests` object.
 
 
 ### clc.v2.Requests.WaitUntilComplete(poll_freq=2):
+```python
+clc.v2.Requests.WaitUntilComplete( poll_freq=2 )
+```
+
 Block until all `Request` objects have completed. 
 
 If status is 'notStarted' or 'executing' continue polling.
@@ -788,15 +832,28 @@ Object variables:
 
 
 ### clc.v2.Request(id,alias=None,request_obj=None)
+```python
+clc.v2.Request( id, alias=None, request_obj=None )
+```
+
 Create a `Request` object.
 
 
-### clc.v2.Request.Status(cached=False)
+### clc.v2.Request.Status
+```python
+clc.v2.Request.Status( cached=False
+```
+
 Return the current status for an existing request.  If `cached` is set to True and an existing
 status is known then no API call will be made to refresh the status.
 
 
-### clc.v2.Request.WaitUntilComplete(poll_freq=2):
+### clc.v2.Request.WaitUntilComplete
+```python
+clc.v2.Request.WaitUntilComplete( poll_freq=2 )
+```
+
+Create a `Request` object.
 Poll until status is completed.
 
 If status is 'notStarted' or 'executing' continue polling.
