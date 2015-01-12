@@ -26,6 +26,7 @@ Server object variables:
 	server.reserved_drive_paths
 	server.adding_cpu_requires_reboot
 	server.adding_memory_requires_reboot
+	server.dirty - bool indicating whether server object is different than cloud object
 
 Server object variables available but access subject to change with future releases:
 
@@ -37,7 +38,11 @@ Server object variables available but access subject to change with future relea
 """
 
 # vCur:
+# TODO - Change Server (Update) - need API spec
+# TODO - Refresh - of object is dirty refresh object definition
+# TODO - Create - laod defaults from group and apply to create if no cpu/remory supplied
 # TODO - Link to Public IP class
+# TODO - document refresh, server.dirty, change*
 
 # vNext:
 # TODO - cpuAutoscalePolicy - need API spec 404
@@ -45,7 +50,6 @@ Server object variables available but access subject to change with future relea
 # TODO - Statistics - need API spec get call 500
 # TODO - Billing (server, group, account) - need API spec
 # TODO - Server pricing (/v2/billing/btdi/serverPricing/wa1btdiapi207) returns array with static hourly pricing
-# TODO - Change Server (Update) - need API spec
 # TODO - Validation tasks with Server.Create
 # TODO - create server capture and resolve alias via uuid
 # TODO - Scheduled activities
@@ -161,6 +165,7 @@ class Server(object):
 
 		self.id = id
 		self.capabilities = None
+		self.dirty = False
 
 		if alias:  self.alias = alias
 		else:  self.alias = clc.v2.Account.GetAlias()
@@ -168,12 +173,23 @@ class Server(object):
 		if server_obj:  self.data = server_obj
 		else:  
 			try:
-				self.data = clc.v2.API.Call('GET','servers/%s/%s' % (self.alias,self.id),{})
+				self.Refresh()
 			except clc.APIFailedResponse as e:
 				if e.response_status_code==404:  raise(clc.CLCException("Server does not exist"))
 
 		# API call switches between GB and MB.  Change to all references are in GB and we drop the units
 		self.data['details']['memoryGB'] = int(math.floor(self.data['details']['memoryMB']/1024))
+
+
+	def Refresh(self):
+		"""Reloads the server object to synchronize with cloud representation.
+
+		>>> clc.v2.Server("CA3BTDICNTRLM01").Refresh()
+
+		"""
+
+		self.dirty = False
+		self.data = clc.v2.API.Call('GET','servers/%s/%s' % (self.alias,self.id),{})
 
 
 	def _Capabilities(self,cached=True):
@@ -474,6 +490,22 @@ class Server(object):
 
 		raise(Exception("Not implemented"))
 
+
+
+	def _Change(self,op="set",key,value):
+		"""Change existing server object.
+
+		"""
+
+		self.dirty = True
+		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.alias,self.id),
+		                       {'op': op, 'member': key, 'value': value},debug=True)))
+
+		
+	def SetCPU(self,value):  return(self._Change(key="cpu","value"=value))
+	def SetMemory(self,value):  return(self._Change(key="memory","value"=value))
+	def SetDescription(self,value):  return(self._Change(key="description","value"=value))
+	def SetGroup(self,group_id):  return(self._Change(key="description","value"=group_id))
 
 
 	def Delete(self):
