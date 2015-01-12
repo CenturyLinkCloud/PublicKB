@@ -558,8 +558,19 @@ Object variables available but access subject to change with future releases:
     server.ip_addresses
 
 
-### clc.v2.Server.Create(name,cpu,memory,template,group_id,network_id,alias=None,password=None,ip_address=None, storage_type="standard",type="standard",primary_dns=None,secondary_dns=None, additional_disks=[],custom_fields=[],ttl=None,managed_os=False,description=None, source_server_password=None,cpu_autoscale_policy_id=None,anti_affinity_policy_id=None, packages=[]) (static)
+### clc.v2.Server.Create (Static)
+```python
+clc.v2.Server.Create(name, template, group_id, network_id, cpu=None, memory=None, alias=None,
+                     password=None, ip_address=None, storage_type="standard", type="standard",
+					 primary_dns=None, secondary_dns=None, additional_disks=[], custom_fields=[],
+					 ttl=None, managed_os=False, description=None, source_server_password=None,
+					 cpu_autoscale_policy_id=None, anti_affinity_policy_id=None, packages=[])
+```
+
 Creates a new server.  See also class method to clone server.
+
+`cpu` and `memory` are optional and if not provided we pull from the default server size values associated with
+the provided `group_id`.
 
 Set ttl as number of seconds before server is to be terminated.  Must be >3600
 
@@ -717,7 +728,7 @@ Deletes the server.
 ### clc.v2.Server.Clone
 Creates one or more clones of existing server.
 ```python
-clc.v2.Server.Clone( network_id, name=None, cpu=None, memory=None ,group_id=None,
+clc.v2.Server.Clone( network_id, group_id, name=None, cpu=None, memory=None,
                      alias=None, password=None, ip_address=None, storage_type=None,
 					 type=None, primary_dns=None, secondary_dns=None, custom_fields=None,
 					 ttl=None, managed_os=False, description=None, source_server_password=None,
