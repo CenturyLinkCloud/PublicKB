@@ -23,6 +23,8 @@
 </p>
 <p><strong><img src="https://t3n.zendesk.com/attachments/token/I7QPdgngoVsy0n4GPSJFMEZ56/?name=subalias.png" alt="subalias.png" /></strong>
 </p>
+<p><strong><img src="../../images/subalias.png" alt="subalias.png" /></strong>
+</p>
 <p>Change parent account if desired, such as in the case that you wish for this account to be a sub account of a sub account.</p>
 <p>&nbsp;Fill in appropriate Business name, etc.</p>
 <p>&nbsp;Input an Account Alias of your choice. This is a string of 2-4 alphanumeric characters which is used to identify your account and relate servers to that account by naming convention. They are globally unique so there are no duplicate aliases allowed.
