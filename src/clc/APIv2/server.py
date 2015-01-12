@@ -356,7 +356,7 @@ class Server(object):
 
 
 	@staticmethod
-	def Create(name,cpu,memory,template,group_id,network_id,alias=None,password=None,ip_address=None,
+	def Create(name,template,group_id,network_id,cpu=None,memory=None,alias=None,password=None,ip_address=None,
 	           storage_type="standard",type="standard",primary_dns=None,secondary_dns=None,
 			   additional_disks=[],custom_fields=[],ttl=None,managed_os=False,description=None,
 			   source_server_password=None,cpu_autoscale_policy_id=None,anti_affinity_policy_id=None,
@@ -364,6 +364,9 @@ class Server(object):
 		"""Creates a new server.
 
 		https://t3n.zendesk.com/entries/59565550-Create-Server
+
+		cpu and memory are optional and if not provided we pull from the default server size values associated with
+		the provided group_id.
 
 		Set ttl as number of seconds before server is to be terminated.  Must be >3600
 
@@ -377,6 +380,10 @@ class Server(object):
 
 		if not alias:  alias = clc.v2.Account.GetAlias()
 
+		if not cpu or not memory:
+			group = clc.v2.Group(groups_id=groups_id,alias=alias)
+			if not cpu:  cpu = None
+			if not memory:  memory = None
 		if not description:  description = name
 		if type.lower() not in ("standard","hyperscale"):  raise(clc.CLCException("Invalid type"))
 		if storage_type.lower() not in ("standard","premium"):  raise(clc.CLCException("Invalid storage_type"))
