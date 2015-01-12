@@ -2,7 +2,33 @@
   "title": "Building Windows 2012 Script Packages",
   "date": "1-7-2015",
   "author": "Chris Little",
-  "attachments": [{"url":"https://t3n.zendesk.com/attachments/token/61FAoIEeODNAClYaw4Vf9cXa9/?name=Install+FTP+%28IIS%29.zip","type":"application/zip","file_name":"Install FTP (IIS).zip"},{"url":"https://t3n.zendesk.com/attachments/token/vJJffO0mxmZCAUUXItsyj1ZJf/?name=Install+File+Services.zip","type":"application/zip","file_name":"Install File Services.zip"},{"url":"https://t3n.zendesk.com/attachments/token/hp2sEhnaqWUSQwkrbTE44b5Oo/?name=Install+IIS+%28Web+Server%29.zip","type":"application/zip","file_name":"Install IIS (Web Server).zip"},{"url":"https://t3n.zendesk.com/attachments/token/K8rIHZbpx9CKwWCVMbVS4NZqv/?name=Install+Windows+2012+Active+Directory+Domain+Services.zip","type":"application/zip","file_name":"Install Windows 2012 Active Directory Domain Services.zip"},{"url":"https://t3n.zendesk.com/attachments/token/jb1R6ODPxj8i8YKhc58SxQpKg/?name=Perform+Active+Directory+Domain+Join+on+Windows.zip","type":"application/zip","file_name":"Perform Active Directory Domain Join on Windows.zip"}]
+  "attachments": [
+    {
+      "url":"/knowledge-base/attachments/Install FTP (IIS).zip",
+      "type":"application/zip",
+      "file_name":"Install FTP (IIS).zip"
+    },
+    {
+      "url":"/knowledge-base/attachments/Install File Services.zip",
+      "type":"application/zip",
+      "file_name":"Install File Services.zip"
+    },
+    {
+      "url":"/knowledge-base/attachments/Install IIS (Web Server).zip",
+      "type":"application/zip",
+      "file_name":"Install IIS (Web Server).zip"
+    },
+    {
+      "url":"/knowledge-base/attachments/Install Windows 2012 Active Directory Domain Services.zip",
+      "type":"application/zip",
+      "file_name":"Install Windows 2012 Active Directory Domain Services.zip"
+    },
+    {
+      "url":"/knowledge-base/attachments/Perform Active Directory Domain Join on Windows",
+      "type":"application/zip",
+      "file_name":"Perform Active Directory Domain Join on Windows.zip"
+    }
+  ]
 }}}
 
 Building Windows 2012 Script Packages

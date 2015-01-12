@@ -2,7 +2,13 @@
   "title": "Automated Application Deployment to Multiple Servers",
   "date": "10-8-2014",
   "author": "Bryan Friedman",
-  "attachments": [{"url":"https://t3n.zendesk.com/attachments/token/DKH2UpNYni9uEqvvZlTl0xsun/?name=package.zip","type":"application/zip","file_name":"package.zip"}]
+  "attachments": [
+    {
+      "url": "/knowledge-base/attachments/DKH2UpNYni9uEqvvZlTl0xsun-package.zip",
+      "type": "application/zip",
+      "file_name": "package.zip"
+    }
+  ]
 }}}
 
 <h3>Description</h3>

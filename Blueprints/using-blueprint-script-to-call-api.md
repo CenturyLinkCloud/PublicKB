@@ -2,7 +2,13 @@
   "title": "Using Blueprint Script to Call API",
   "date": "10-8-2014",
   "author": "Bryan Friedman",
-  "attachments": [{"url":"https://t3n.zendesk.com/attachments/token/nPGy5LUM95cCvDR1YzdfjMUPL/?name=package.zip","type":"application/zip","file_name":"package.zip"}]
+  "attachments": [
+    {
+      "url":"nPGy5LUM95cCvDR1YzdfjMUPL-package.zip",
+      "type":"application/zip",
+      "file_name":"package.zip"
+    }
+  ]
 }}}
 
 <h3>Description</h3>

@@ -6,7 +6,7 @@
     {
       "file_name": "Attached File",
       "url": "/knowledge-base/attachments/Balancing Agility Cost and Control.pdf",
-      "type": ""
+      "type": "application/pdf"
     }
   ],
   "related_products": [ 
