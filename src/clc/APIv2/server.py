@@ -41,7 +41,6 @@ Server object variables available but access subject to change with future relea
 # TODO - Link to Public IP class
 
 # vNext:
-# TODO - Change Server (Update) - need API spec
 # TODO - Restore archived server - need API spec
 # TODO - cpuAutoscalePolicy - need API spec 404
 # TODO - AntiAffinity policy - need API spec put call 400 

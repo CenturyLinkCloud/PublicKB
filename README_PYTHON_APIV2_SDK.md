@@ -659,6 +659,21 @@ Change one attribute about a server.
 ```
 
 
+### clc.v3.Server.SetPassword
+```python
+clc.v2.Server.SetPassword( password )
+```
+Request change of password.
+
+The API request requires supplying the current password.  For this we issue a call
+to retrieve the credentials so note there will be an activity log for retrieving the
+credentials associated with any SetPassword entry
+
+```python
+>>> clc.v2.Server("WA1BTDICHANGE01").SetPassword("newpassword")
+```
+
+
 ### Operations: clc.v2.Server.Pause, ShutDown, Reboot, Reset, PowerOn, PowerOff, Archive, StartMaintenance, StopMaintenance
 ```python
 clc.v2.Server.Pause()
