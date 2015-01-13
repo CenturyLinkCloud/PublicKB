@@ -27,7 +27,7 @@ If you do not have pip (the Python package manager) installed a quickstart insta
 > curl https://bootstrap.pypa.io/get-pip.py | sudo python
 ```
 
-### Windows pre-package executable
+### Windows pre-packaged executable
 The CLI is available as a prepackaged single-file Windows executable and the most recent compiled version is always available [here](https://github.com/CenturyLinkCloud/clc-python-sdk/raw/master/src/dist/clc-cli.exe).
 Note also that all examples below will need to be modified since the Windows command line executable is *clc-cli* (to eliminate conflict with the a 
 standard installed PS commandlet.
