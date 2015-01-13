@@ -631,7 +631,7 @@ Returns the administrative credentials for this server.
 ```
 
 
-### clc.v3.Server.Change
+### clc.v2.Server.Change
 ```python
 Change( cpu=None, memory=None, description=None, group_id=None ):
 ```
@@ -644,6 +644,18 @@ each of these changes requires a seperate API call.  Some API calls are synchron
 
 ```python
 >>> clc.v2.Server("WA1BTDICHANGE01").Change(cpu=1,memory=3,description="new description",group_id="new-id").WaitUntilComplete()
+```
+
+
+### clc.v2.Server.SetCPU, SetMemory, SetDescription, SetGroup
+```python
+clc.v2.Server.SetCPU( value )
+```
+
+Change one attribute about a server.
+
+```python
+>>> clc.v2.Server("WA1BTDICHANGE01").SetCPU(1)
 ```
 
 
