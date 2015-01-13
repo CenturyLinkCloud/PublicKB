@@ -127,6 +127,7 @@ class Servers(object):
 			return(clc.v2.Requests(e.response_json,alias=self.alias))
 
 
+	def Archive(self):  return(self._Operation('archive'))
 	def Pause(self):  return(self._Operation('pause'))
 	def ShutDown(self):  return(self._Operation('shutDown'))
 	def Reboot(self):  return(self._Operation('reboot'))
@@ -271,6 +272,7 @@ class Server(object):
 			return(clc.v2.Requests(e.response_json,alias=self.alias))
 
 
+	def Archive(self):  return(self._Operation('archive'))
 	def Pause(self):  return(self._Operation('pause'))
 	def ShutDown(self):  return(self._Operation('shutDown'))
 	def Reboot(self):  return(self._Operation('reboot'))

@@ -514,7 +514,7 @@ NY1BTDIPHYP0101
 ```
 
 
-### Operations: clc.v2.Servers.Pause, ShutDown, Reboot, Reset, PowerOn, PowerOff, StartMaintenance, StopMaintenance
+### Operations: clc.v2.Servers.Pause, ShutDown, Reboot, Reset, PowerOn, PowerOff, Archive, StartMaintenance, StopMaintenance
 ```python
 clc.v2.Pause()
 ```
@@ -631,7 +631,7 @@ Returns the administrative credentials for this server.
 ```
 
 
-### Operations: clc.v2.Server.Pause, ShutDown, Reboot, Reset, PowerOn, PowerOff, StartMaintenance, StopMaintenance
+### Operations: clc.v2.Server.Pause, ShutDown, Reboot, Reset, PowerOn, PowerOff, Archive, StartMaintenance, StopMaintenance
 ```python
 clc.v2.Server.Pause()
 ```
