@@ -2,12 +2,13 @@
   "title": "FTP Users in Control Portal",
   "date": "7-9-2014",
   "author": "Bryan Friedman",
-  "attachments": []
+  "attachments": [],
+  "overview": "<p>The CenturyLink Cloud Control Portal allows for the creation of FTP users. These FTP users are intended to be used <em>only for the uploading of custom script and software packages</em> to be run as part of a Blueprint or directly on a server or group
+  of servers. The FTP users created in Control Portal <em>should never be used for uploading VM images for import.</em> This article should clear up any confusion around what the FTP users service is used for and the process for using it.</p>",
+  "isContentMarkdown": false
 }}}
 
-<h3>Description</h3>
-<p>The CenturyLink Cloud Control Portal allows for the creation of FTP users. These FTP users are intended to be used <em>only for the uploading of custom script and software packages</em> to be run as part of a Blueprint or directly on a server or group
-  of servers. The FTP users created in Control Portal <em>should never be used for uploading VM images for import.</em> This article should clear up any confusion around what the FTP users service is used for and the process for using it.</p>
+
 <h3>Audience</h3>
 <ul>
   <li>CenturyLink Cloud customers</li>
