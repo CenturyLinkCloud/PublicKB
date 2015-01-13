@@ -631,6 +631,22 @@ Returns the administrative credentials for this server.
 ```
 
 
+### clc.v3.Server.Change
+```python
+Change( cpu=None, memory=None, description=None, group_id=None ):
+```
+Change existing server object.
+
+One more more fields can be set and method will return with a requests
+object for all queued activities.  This is a convenience function - all
+each of these changes requires a seperate API call.  Some API calls are synchronous
+(e.g. changing group ID or password) while others are async.
+
+```python
+>>> clc.v2.Server("WA1BTDICHANGE01").Change(cpu=1,memory=3,description="new description",group_id="new-id").WaitUntilComplete()
+```
+
+
 ### Operations: clc.v2.Server.Pause, ShutDown, Reboot, Reset, PowerOn, PowerOff, Archive, StartMaintenance, StopMaintenance
 ```python
 clc.v2.Server.Pause()

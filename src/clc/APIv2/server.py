@@ -522,7 +522,7 @@ class Server(object):
 
 		return(sum(requests))
 
-		
+
 	def SetCPU(self,value):  return(self.Change(cpu=value))
 	def SetMemory(self,value):  return(self.Change(memory=value))
 	def SetDescription(self,value):  return(self.Change(description=value))
@@ -535,11 +535,16 @@ class Server(object):
 		The API request requires supplying the current password.  For this we issue a call
 		to retrieve the credentials so note there will be an activity log for retrieving the
 		credentials associated with any SetPassword entry
+
+		>>> s.SetPassword("newpassword")
+
 		"""
 
-		#requests.append(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.alias,self.id), 
-		#                                                json.dumps([{"op": "set", "member": key, "value": locals()[key]}]),debug=True)))
-		#return(self._Change(key="password",value=password))
+		# 0: {op: "set", member: "password", value: {current: " r`5Mun/vT:qZ]2?z", password: "Savvis123!"}}
+		if self.state != "active":  raise(clc.CLCException("Server must be powered on to change password"))
+
+		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.alias,self.id), 
+		                                       json.dumps([{"op": "set", "member": "password", "value": {"current": self.Credentials()['password'], "password": password}}]),debug=True)))
 
 
 	def Delete(self):
