@@ -293,10 +293,10 @@ class Server(object):
 
 		# {u'href': u'/v2/servers/btdi/wa1btdichange01/restore',
 		# u'rel': u'restore'},
+		#if status !== "archived": pass
 
 		"""
 
-		if status !== "archived": pass
 
 
 	def ExecutePackage(self,package_id,parameters={}):
@@ -497,34 +497,49 @@ class Server(object):
 		return(sum(requests_lst))
 
 
-	def Update(self):
-		"""Update group
+	def Change(self,cpu=None,memory=None,description=None,group_id=None):
+		"""Change existing server object.
 
-		*TODO* API not yet documented
+		One more more fields can be set and method will return with a requests
+		object for all queued activities.  This is a convenience function - all
+		each of these changes requires a seperate API call.  Some API calls are synchronous
+		(e.g. changing group ID or password) while others are async.
 
 		"""
 
-		#return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.alias,self.id),
-		#         json.dumps({'description': 'new'}),debug=True)))
+		if group_id:  groupId = group_id
+		else:  groupId = None
 
-		raise(Exception("Not implemented"))
+		payloads = []
+		requests = []
+
+		for key in ("cpu","memory","description","groupId"):
+			if key:  
+				requests.append(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.alias,self.id), 
+				                                                json.dumps([{"op": "set", "member": key, "value": locals()[key]}]),debug=True)))
+
+		if len(requests):  self.dirty = True
+
+		return(sum(requests))
+
+		
+	def SetCPU(self,value):  return(self._Change(key="cpu",value=value))
+	def SetMemory(self,value):  return(self._Change(key="memory",value=value))
+	def SetDescription(self,value):  return(self._Change(key="description",value=value))
+	def SetGroup(self,group_id):  return(self._Change(key="group",value=group_id))
 
 
+	def SetPassword(self,password):  
+		"""Request change of password.
 
-#	def _Change(self,key,value,op="set"):
-#		"""Change existing server object.
-#
-#		"""
-#
-#		self.dirty = True
-#		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.alias,self.id),
-#		                       json.dumps({'op': op, 'member': key, 'value': value}),debug=True)))
-#
-#		
-#	def SetCPU(self,value):  return(self._Change(key="cpu",value=value))
-#	def SetMemory(self,value):  return(self._Change(key="memory",value=value))
-#	def SetDescription(self,value):  return(self._Change(key="description",value=value))
-#	def SetGroup(self,group_id):  return(self._Change(key="description",value=group_id))
+		The API request requires supplying the current password.  For this we issue a call
+		to retrieve the credentials so note there will be an activity log for retrieving the
+		credentials associated with any SetPassword entry
+		"""
+
+		#requests.append(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.alias,self.id), 
+		#                                                json.dumps([{"op": "set", "member": key, "value": locals()[key]}]),debug=True)))
+		#return(self._Change(key="password",value=password))
 
 
 	def Delete(self):
