@@ -516,17 +516,17 @@ class Server(object):
 		for key in ("cpu","memory","description","groupId"):
 			if key:  
 				requests.append(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.alias,self.id), 
-				                                                json.dumps([{"op": "set", "member": key, "value": locals()[key]}]),debug=True)))
+				                                                json.dumps([{"op": "set", "member": key, "value": locals()[key]}]))))
 
 		if len(requests):  self.dirty = True
 
 		return(sum(requests))
 
 		
-	def SetCPU(self,value):  return(self._Change(key="cpu",value=value))
-	def SetMemory(self,value):  return(self._Change(key="memory",value=value))
-	def SetDescription(self,value):  return(self._Change(key="description",value=value))
-	def SetGroup(self,group_id):  return(self._Change(key="group",value=group_id))
+	def SetCPU(self,value):  return(self.Change(cpu=value))
+	def SetMemory(self,value):  return(self.Change(memory=value))
+	def SetDescription(self,value):  return(self.Change(description=value))
+	def SetGroup(self,group_id):  return(self.Change(group_id=group_id))
 
 
 	def SetPassword(self,password):  
