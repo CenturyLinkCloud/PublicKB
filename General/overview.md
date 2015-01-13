@@ -5,8 +5,13 @@
   "attachments": [],
   "related-products" : [],
   "preview" : "",
-  "overview": "CenturyLink Cloud accounts start with a pre-defined resource (CPU/memory/storage) limit per data center. As customers grow their cloud usage, it's common to request an increase in resource limits.   Note that only paying customers will have their resource limits increased unless executive approval is given."
+  "overview": "CenturyLink Cloud accounts start with a pre-defined resource (CPU/memory/storage) limit per data center. As customers grow their cloud usage, it's common to request an increase in resource limits.   Note that only paying customers will have their resource limits increased unless executive approval is given.",
+  "contentIsMarkdown": true
 }}}
 
-### CONTENT
+### Detailed Steps
+
+1. Error Message
+
+- You get an error in the upper right hand corner of Control indicating lack of resources (CPU, Memory, Storage) when you are building a new machine. 
   
