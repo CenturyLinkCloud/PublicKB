@@ -15,8 +15,7 @@
 
       You get an error in the upper right hand corner of Control indicating lack of resources (CPU, Memory, Storage) when you are building a new machine.
 
-      1.    Test 1
+      1.    Error Message
 
-              __This is some content__
-              More content
+            You get an error in the upper right hand corner of Control indicating lack of resources (CPU, Memory, Storage) when you are building a new machine.
   
