@@ -10,8 +10,8 @@
 }}}
 
 ### Detailed Steps
+    
+1.    Error Message
 
-1. Error Message
-
-- You get an error in the upper right hand corner of Control indicating lack of resources (CPU, Memory, Storage) when you are building a new machine. 
+      You get an error in the upper right hand corner of Control indicating lack of resources (CPU, Memory, Storage) when you are building a new machine. 
   
