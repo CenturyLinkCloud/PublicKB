@@ -19,7 +19,7 @@ Server object variables:
 	server.name
 	server.os
 	server.os_type
-	server.status
+	server.status - active, archived
 	server.type
 	server.storage_type
 	server.in_maintenance_mode
@@ -39,10 +39,10 @@ Server object variables available but access subject to change with future relea
 
 # vCur:
 # TODO - Link to Public IP class
-# TODO - document refresh, server.dirty, change*
 
 # vNext:
 # TODO - Change Server (Update) - need API spec
+# TODO - Restore archived server - need API spec
 # TODO - cpuAutoscalePolicy - need API spec 404
 # TODO - AntiAffinity policy - need API spec put call 400 
 # TODO - Statistics - need API spec get call 500
@@ -176,9 +176,6 @@ class Server(object):
 			except clc.APIFailedResponse as e:
 				if e.response_status_code==404:  raise(clc.CLCException("Server does not exist"))
 
-		# API call switches between GB and MB.  Change to all references are in GB and we drop the units
-		self.data['details']['memoryGB'] = int(math.floor(self.data['details']['memoryMB']/1024))
-
 
 	def Refresh(self):
 		"""Reloads the server object to synchronize with cloud representation.
@@ -189,6 +186,12 @@ class Server(object):
 
 		self.dirty = False
 		self.data = clc.v2.API.Call('GET','servers/%s/%s' % (self.alias,self.id),{})
+
+		try:
+			# API call switches between GB and MB.  Change to all references are in GB and we drop the units
+			self.data['details']['memoryGB'] = int(math.floor(self.data['details']['memoryMB']/1024))
+		except:
+			pass
 
 
 	def _Capabilities(self,cached=True):
@@ -281,6 +284,19 @@ class Server(object):
 	def PowerOff(self):  return(self._Operation('powerOff'))
 	def StartMaintenance(self):  return(self._Operation('startMaintenance'))
 	def StopMaintenance(self):  return(self._Operation('stopMaintenance'))
+
+
+	def Restore(self):
+		"""Restore archived server to running state.
+
+		If server is already running returns with no change.
+
+		# {u'href': u'/v2/servers/btdi/wa1btdichange01/restore',
+		# u'rel': u'restore'},
+
+		"""
+
+		if status !== "archived": pass
 
 
 	def ExecutePackage(self,package_id,parameters={}):
