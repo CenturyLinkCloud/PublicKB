@@ -5,7 +5,10 @@
   "attachments": [],
   "related-products" : [],
   "preview" : "",
-  "overview": "# Overview"
+  "overview": "
+    ### Overview
+    this is the overview.
+  "
 }}}
 
 # CONTENT
