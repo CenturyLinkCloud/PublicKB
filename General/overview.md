@@ -11,11 +11,3 @@
 
 ### Detailed Steps
     
-1. Error Message
-2. Contact Support
-*   Hello
-  1. Item 1
-  2. Item 2
-  *  Hello
-  *  __Hello__
-  
