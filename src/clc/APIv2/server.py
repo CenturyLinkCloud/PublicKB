@@ -35,9 +35,10 @@ Server object variables:
 Server object variables available but access subject to change with future releases:
 
 	server.custom_fields
-	server.change_info
+	server.partitions
 	server.alert_policies
 	server.ip_addresses
+	server.managed_apps
 
 """
 
@@ -248,6 +249,17 @@ class Server(object):
 		return(clc.v2.Group(id=self.groupId,alias=self.alias))
 
 	
+	def Disks(self):
+		"""Return disks object associated with server.
+
+		"""
+
+		if not self.disks:  self.disks = clc.v2.Disks(server=self,self.data['details']['disks'])
+		
+		return(self.disks)
+
+
+
 	def Alerts(self):
 		"""Returns an Alerts object containing all alerts mapped to this server.
 
