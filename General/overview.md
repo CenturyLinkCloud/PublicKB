@@ -56,7 +56,7 @@
 
     5.  Increase the limit of the specific Resource
 
-### Examnple Organizational Role Breakdown
+### Example Organizational Role Breakdown
 
 + 
 
