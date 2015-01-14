@@ -21,14 +21,14 @@
 </div>
 
 ### Table of Contents
-  * <span class="toc-anchor">[Steps - Numbered - Nested](#chapter-1)</span>
-  * [Basic Numbered List](#chapter-2)
-  * [Basic List](#chapter-3)
-  * [Note](#chapter-4)
-  * [Alert](#chapter-5)
+  * <span class="toc-anchor">[Steps - Numbered - Nested](#anchor-1)</span>
+  * <span class="toc-anchor">[Basic Numbered List](#anchor-2))</span>
+  * <span class="toc-anchor">[Basic List](#anchor-3))</span>
+  * <span class="toc-anchor">[Note](#anchor-4))</span>
+  * <span class="toc-anchor">[Alert](#anchor-5))</span>
 
 <!-- STEPS MODULE - NESTED CONTENT-->
-### Detailed Steps <a id="chapter-1" class="kb-toc-anchor"></a>
+### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
     
 1.  Error Message
 
@@ -64,7 +64,7 @@
 
     5.  Increase the limit of the specific Resource
 
-### Basic Numbered List Module with Title <a id="chapter-2"></a>
+### Basic Numbered List Module with Title <a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>
 
 + 
 
@@ -74,7 +74,7 @@
 
   3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
-### Basic List Module with Title <a id="chapter-3"></a>
+### Basic List Module with Title <a id="anchor-3" class="kb-toc-anchor" href="#anchor-3"></a>
 
 + 
 
@@ -85,6 +85,7 @@
   -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
 <div class="kb-post-note" id="chapter-4">
+  <a id="anchor-4" class="kb-toc-anchor" href="#anchor-4"></a>
   <h3>Note</h3>
   <p>
     CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
@@ -94,6 +95,7 @@
 CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
 
 <div class="kb-post-alert" id="chapter-5">
+  <a id="anchor-5" class="kb-toc-anchor" href="#anchor-5"></a>
   <h3>Alert</h3>
   <p>
     CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
