@@ -6,8 +6,6 @@
   "contentIsHTML": true
 }}}
 
-<p><strong>Last updated: &nbsp;Thu 11/06/2014 10:50 PST<br /></strong>
-</p>
 <h3>Description</h3>
 <p>Control Portal permissions are controlled by adding users to one or more roles. Roles are simply a collection of actions that a user is allowed to perform for areas within the Control Portal. &nbsp;You can configure roles for a user by going to Control
   Portal &gt; Account &gt; Permissions and following the steps below.</p>
