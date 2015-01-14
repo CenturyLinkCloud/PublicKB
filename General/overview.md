@@ -47,11 +47,11 @@
 
 paragraph
 
-<table>
-  <tr>
-    <td>Foo</td>
-  </tr>
-</table>
+  <table>
+    <tr>
+      <td>Foo</td>
+    </tr>
+  </table>
 
 paragraph
 
