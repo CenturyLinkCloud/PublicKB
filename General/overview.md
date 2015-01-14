@@ -45,30 +45,12 @@
 
     5.  Increase the limit of the specific Resource
 
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+<table>
+  <tr>
+    <td>Foo</td>
+  </tr>
+</table>
 
-
-<div class="highlight"><pre><span class="nx">grunt</span><span class="p">.</span><span class="nx">initConfig</span><span class="p">({</span>
-  <span class="nx">assemble</span><span class="o">:</span> <span class="p">{</span>
-    <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
-      <span class="nx">assets</span><span class="o">:</span> <span class="s1">'docs/assets'</span><span class="p">,</span>
-      <span class="nx">data</span><span class="o">:</span> <span class="s1">'src/data/*.{json,yml}'</span><span class="p">,</span>
-      <span class="nx">helpers</span><span class="o">:</span> <span class="s1">'src/custom-helpers.js'</span><span class="p">,</span>
-      <span class="nx">partials</span><span class="o">:</span> <span class="p">[</span><span class="s1">'src/partials/**/*.{hbs,md}'</span><span class="p">]</span>
-    <span class="p">},</span>
-    <span class="nx">pages</span><span class="o">:</span> <span class="p">{</span>
-      <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
-        <span class="nx">layout</span><span class="o">:</span> <span class="s1">'default.hbs'</span>
-      <span class="p">},</span>
-      <span class="nx">files</span><span class="o">:</span> <span class="p">{</span>
-        <span class="s1">'./'</span><span class="o">:</span> <span class="p">[</span><span class="s1">'src/templates/pages/index.hbs'</span><span class="p">]</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-<span class="p">};</span>
 
 
   
