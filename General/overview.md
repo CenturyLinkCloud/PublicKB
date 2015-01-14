@@ -69,7 +69,6 @@
   3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
 <!-- BASIC LIST MODULE WITH NO TITLE-->
-
 +
 
   -   16 vCPU, with at least 2GHZz per vCPU
