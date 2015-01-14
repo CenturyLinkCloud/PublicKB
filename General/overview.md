@@ -79,9 +79,7 @@
 
 <table>
   <th>
-    <td>test</td>
-    <td>test</td>
-    <td>test</td>
+    dfdf
   </th>
   <tr>
     <td>test</td>
