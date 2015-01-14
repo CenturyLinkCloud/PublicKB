@@ -1,12 +1,12 @@
 """
-Template related functions.  
+Disk related functions.  
 
-Templates object variables:
+Disks object variables:
 
-Template object variables:
+Disk object variables:
 
-	template.name
-	template.id (alias of name)
+	disk.name
+	disk.id (alias of name)
 
 """
 
@@ -14,45 +14,47 @@ Template object variables:
 import clc
 
 
-class Templates(object):
+class Disks(object):
 
-	def __init__(self,templates_lst):
-		self.templates = []
-		for template in templates_lst:
-			self.templates.append(Template(id=template['name'],template_obj=template))
+	def __init__(self,disks_lst):
+		self.disks = []
+		for disk in disks_lst:
+			self.disks.append(Disk(id=disk['id'],disk_obj=disk))
 
 
 	def Get(self,key):
-		"""Get template by providing name, ID, or other unique key.
+		"""Get disk by providing mount point or ID
 
 		If key is not unique and finds multiple matches only the first
 		will be returned
 		"""
 
-		for template in self.templates:
-			if template.id == key:  return(template)
+		for disk in self.disks:
+			if disk.id == key:  return(disk)
+			elif key in disk.partition_paths:  return(disk)
 
 
 	def Search(self,key):
-		"""Search template list by providing partial name, ID, or other key.
+		"""Search disk list by providing partial mount point or ID
 
 		"""
 
 		results = []
-		for template in self.templates:
-			if template.id.lower().find(key.lower()) != -1:  results.append(template)
-			elif template.name.lower().find(key.lower()) != -1:  results.append(template)
+		for disk in self.disks:
+			if disk.id.lower().find(key.lower()) != -1:  results.append(disk)
+			elif disk.name.lower().find(key.lower()) != -1:  results.append(disk)
 
 		return(results)
 
 
-class Template(object):
+class Disk(object):
 
-	def __init__(self,id,template_obj=None):
-		"""Create Template object."""
+	#{u'id': u'0:0', u'partitionPaths': [], u'sizeGB': 1}
+	def __init__(self,id,disk_obj=None):
+		"""Create Disk object."""
 
 		self.id = id
-		self.data = template_obj
+		self.data = disk_obj
 
 
 	def __getattr__(self,var):
