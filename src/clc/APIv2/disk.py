@@ -86,6 +86,24 @@ class Disk(object):
 
 
 	def Delete(self):
+		"""Delete disk.  
+
+		This request will error if disk is protected and cannot be removed (e.g. a system disk)
+
+		>>> clc.v2.Server("WA1BTDIX01").Disks().disks[2].Delete().WaitUntilComplete()
+		0
+
+		"""
+
+		disk_set = [{'diskId': o.id, 'sizeGB': o.size} for o in self.parent.disks if o!=self]
+		parent.disks = [o for o in self.parent.disks if o!=self]
+		self.size = size
+		self.parent.server.dirty = True
+		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.parent.server.alias,self.parent.server.id),
+		                                       json.dumps([{"op": "set", "member": "disks", "value": disk_set}]),debug=True)))
+
+
+	def Delete(self):
 		requests.append(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.alias,self.server),json.dumps([{"op": "set", "member": key, "value": locals()[key]}]))))
 
 
