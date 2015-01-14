@@ -9,7 +9,9 @@
   "contentIsHTML": false
 }}}
 
-  <div class="class">
+<div class="class">
+  <p>custom class</p>
+</div>
 
 ### Detailed Steps
     
@@ -48,4 +50,3 @@
     5.  Increase the limit of the specific Resource
 
 
-  </div>
