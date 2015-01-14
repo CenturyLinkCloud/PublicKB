@@ -172,6 +172,7 @@ class Server(object):
 
 		self.id = id
 		self.capabilities = None
+		self.disks = None
 		self.dirty = False
 
 		if alias:  self.alias = alias
@@ -254,7 +255,7 @@ class Server(object):
 
 		"""
 
-		if not self.disks:  self.disks = clc.v2.Disks(server=self,self.data['details']['disks'])
+		if not self.disks:  self.disks = clc.v2.Disks(server=self,disks_lst=self.data['details']['disks'])
 		
 		return(self.disks)
 

@@ -10,9 +10,9 @@ Disk object variables:
 	disk.size - disk size in GB
 
 """
-	#{u'id': u'0:0', u'partitionPaths': [], u'sizeGB': 1}
 
 
+import json
 import clc
 
 
@@ -58,8 +58,7 @@ class Disk(object):
 		"""Create Disk object."""
 
 		self.id = id
-		self.server = server
-		self.alias = alias
+		self.parent = parent
 		self.size = disk_obj['sizeGB']
 		self.data = disk_obj
 
@@ -74,13 +73,20 @@ class Disk(object):
 		if size>1024:  raise(clc.CLCException("Cannot grow disk beyond 1024GB"))
 		if size<=self.size:  raise(clc.CLCException("New size must exceed current disk size"))
 
-		#0: {op: "set", member: "disks",…}
-		#value: [{diskId: "0:0", sizeGB: 1, type: "raw"}, {diskId: "0:1", sizeGB: 2, type: "raw"},…]
+
+		disk_set = [{'diskId': o.id, 'sizeGB': o.size} for o in self.parent.disks if o!=self]
+		print "cds=%s" % disk_set
+		self.size = size
+		disk_set.append({'diskId': self.id, 'sizeGB': self.size})
+		print "nds=%s" % disk_set
+		# 0: {op: "set", member: "disks",}
+		#value: [{diskId: "0:0", sizeGB: 1, type: "raw"}, {diskId: "0:1", sizeGB: 2, type: "raw"},]
 		#	0: {diskId: "0:0", sizeGB: 1, type: "raw"}
 		#	1: {diskId: "0:1", sizeGB: 2, type: "raw"}
 		#	2: {diskId: "0:2", sizeGB: 272, type: "raw"}
-		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.alias,self.server),
-		                                       json.dumps([{"op": "set", "member": "disks", "value": [{'diskId': self.id, 'sizeGB': size}]}]))))
+		self.parent.server.dirty = True
+		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.parent.server.alias,self.parent.server.id),
+		                                       json.dumps([{"op": "set", "member": "disks", "value": disk_set}]),debug=True)))
 
 
 	def Delete(self):
