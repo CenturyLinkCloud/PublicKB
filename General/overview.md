@@ -20,8 +20,15 @@
   </div>
 </div>
 
+# Table of Contents
+  * [Steps - Numbered - Nested](#chapter-1)
+  * [Basic Numbered List](#chapter-2)
+  * [Basic List](#chapter-3)
+  * [Note](#chapter-4)
+  * [Alert](#chapter-5)
+
 <!-- STEPS MODULE - NESTED CONTENT-->
-### Detailed Steps
+### Detailed Steps <a id="chapter-1"></a>
     
 1.  Error Message
 
@@ -57,7 +64,7 @@
 
     5.  Increase the limit of the specific Resource
 
-### Basic Numbered List Module with Title
+### Basic Numbered List Module with Title <a id="chapter-2"></a>
 
 + 
 
@@ -67,7 +74,7 @@
 
   3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
-### Basic List Module with Title
+### Basic List Module with Title <a id="chapter-3"></a>
 
 + 
 
@@ -77,7 +84,7 @@
 
   -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
-<div class="kb-post-note">
+<div class="kb-post-note" id="chapter-4">
   <h3>Note</h3>
   <p>
     CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
@@ -86,7 +93,7 @@
 
 CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
 
-<div class="kb-post-alert">
+<div class="kb-post-alert" id="chapter-5">
   <h3>Alert</h3>
   <p>
     CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
