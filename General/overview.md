@@ -57,8 +57,7 @@
 
     5.  Increase the limit of the specific Resource
 
-<!-- BASIC NUMBERED LIST MODULE WITH TITLE-->
-### Example Organizational Role Breakdown
+### Basic Numbered List Module with Title
 
 + 
 
@@ -68,8 +67,7 @@
 
   3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
-<!-- BASIC LIST MODULE WITH TITLE-->
-### Example Organizational Role Breakdown
+### Basic List Module with Title
 
 + 
 
@@ -78,6 +76,19 @@
   -  128 GB Memory
 
   -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+
+<table>
+  <th>
+    <td>test</td>
+    <td>test</td>
+    <td>test</td>
+  </th>
+  <tr>
+    <td>test</td>
+    <td>test</td>
+    <td>test</td>
+  </tr>
+</table>
 
 
 
