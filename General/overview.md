@@ -84,6 +84,8 @@
   </p>
 </div>
 
+CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
+
 <div class="kb-post-alert">
   <h3>Alert</h3>
   <p>
