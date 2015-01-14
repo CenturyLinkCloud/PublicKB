@@ -8,6 +8,7 @@
   "contentIsHTML": false
 }}}
 
+<!-- OVERVIEW MODULE - NESTED AUDIENCE MODULE-->
 <div class="kb-post-overview">
   <h3>Overview</h3>
   <p>CenturyLink Cloud accounts start with a pre-defined resource (CPU/memory/storage) limit per data center. As customers grow their cloud usage, it's common to request an increase in resource limits.   Note that only paying customers will have their resource limits increased unless executive approval is given.</p>
@@ -19,7 +20,7 @@
   </div>
 </div>
 
-
+<!-- STEPS MODULE - NESTED CONTENT-->
 ### Detailed Steps
     
 1.  Error Message
@@ -56,6 +57,7 @@
 
     5.  Increase the limit of the specific Resource
 
+<!-- BASIC NUMBERED LIST MODULE WITH TITLE-->
 ### Example Organizational Role Breakdown
 
 + 
@@ -65,5 +67,15 @@
   2.  128 GB Memory
 
   3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+
+<!-- BASIC LIST MODULE WITH NO TITLE-->
++ 
+
+  -  16 vCPU, with at least 2GHZz per vCPU
+
+  -  128 GB Memory
+
+  -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+
 
 
