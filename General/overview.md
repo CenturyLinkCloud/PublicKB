@@ -9,6 +9,8 @@
   "contentIsHTML": false
 }}}
 
+<div class="class">
+
 ### Detailed Steps
     
 1.  Error Message
@@ -46,4 +48,4 @@
     5.  Increase the limit of the specific Resource
 
 
-  
+</div>
