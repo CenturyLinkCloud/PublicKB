@@ -79,12 +79,16 @@
 
 <div class="kb-post-note">
   <h3>Note</h3>
-  <p></p>
+  <p>
+    CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
+  </p>
 </div>
 
 <div class="kb-post-alert">
   <h3>Alert</h3>
-  <p></p>
+  <p>
+    CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
+  </p>
 </div>
 
 <table>
