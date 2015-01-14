@@ -738,6 +738,20 @@ Reloads the server object to synchronize with cloud representation.
 ```
 
 
+### clc.v2.Server.Disks
+```python
+clc.v2.Server.Disks()
+```
+
+Returns a `Disks` object representing all the disks associated with this server.
+See the [disks](#disks) section for details on interacting with these objects.
+
+```python
+>>> clc.v2.Server("CA3BTDICNTRLM01").Disks()
+<clc.APIv2.disk.Disks object at 0x10feea190>
+```
+
+
 ### clc.v2.Server.GetSnapshots
 ```python
 clc.v2.Server.GetSnapshots()

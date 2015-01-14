@@ -12,6 +12,8 @@ Disk object variables:
 """
 
 
+import re
+import time
 import json
 import clc
 
@@ -56,6 +58,22 @@ class Disks(object):
 
 		This request will error if disk is protected and cannot be removed (e.g. a system disk)
 
+		Note the Disks object will need to be rebuilt to get the ID for the new disk if future
+		actions will be executed on it.  Calling clc.v2.Server.Refresh if accessed through server
+		object will accomplish this.
+
+		We use a temporary disk placeholder - if the disk add fails this will not be reflected in
+		the temporary placeholder.  Again recommendation to call clc.v2.Server.Refresh after the
+		work has completed.
+
+
+		# Partitioned disk
+		>>> clc.v2.Server("WA1BTDIX01").Disks().Add(size=20,path=None,type="raw").WaitUntilComplete()
+		0
+
+		# Raw disk
+		>>> clc.v2.Server("WA1BTDIX01").Disks().Add(size=20,path=None,type="raw").WaitUntilComplete()
+		0
 
 		"""
 
@@ -63,12 +81,14 @@ class Disks(object):
 		# TODO - Raise exception if too many disks
 		# TODO - Raise exception if too much total size (4TB standard, 1TB HS)
 
-		disk_set = [{'diskId': o.id, 'sizeGB': o.size} for o in self.parent.disks if o!=self]
-		parent.disks = [o for o in self.parent.disks if o!=self]
+		disk_set = [{'diskId': o.id, 'sizeGB': o.size} for o in self.disks]
+		disk_set.append({'sizeGB': size, 'type': type, 'path': path})
+		self.disks.append(Disk(id=int(time.time()),parent=self,disk_obj={'sizeGB': size,'partitionPaths': [path]}))
+
 		self.size = size
-		self.parent.server.dirty = True
-		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.parent.server.alias,self.parent.server.id),
-		                                       json.dumps([{"op": "set", "member": "disks", "value": disk_set}]),debug=True)))
+		self.server.dirty = True
+		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.server.alias,self.server.id),
+		                                       json.dumps([{"op": "set", "member": "disks", "value": disk_set}]))))
 
 
 
@@ -117,15 +137,10 @@ class Disk(object):
 		"""
 
 		disk_set = [{'diskId': o.id, 'sizeGB': o.size} for o in self.parent.disks if o!=self]
-		parent.disks = [o for o in self.parent.disks if o!=self]
-		self.size = size
+		self.parent.disks = [o for o in self.parent.disks if o!=self]
 		self.parent.server.dirty = True
 		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.parent.server.alias,self.parent.server.id),
-		                                       json.dumps([{"op": "set", "member": "disks", "value": disk_set}]),debug=True)))
-
-
-	def Delete(self):
-		requests.append(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.alias,self.server),json.dumps([{"op": "set", "member": key, "value": locals()[key]}]))))
+		                                       json.dumps([{"op": "set", "member": "disks", "value": disk_set}]))))
 
 
 	def __getattr__(self,var):
