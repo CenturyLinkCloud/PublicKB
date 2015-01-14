@@ -2,7 +2,8 @@
   "title": "Monitors for Managed Microsoft SQL Server Service",
   "date": "10-14-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>The following tables detail the monitors supported for the Managed MS SQL service on CenturyLink Cloud:</p>

@@ -2,7 +2,8 @@
   "title": "Backup and Recovery ",
   "date": "8-5-2014",
   "author": "Dana Bowlin",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>This article has been moved to a new KB:</h3>

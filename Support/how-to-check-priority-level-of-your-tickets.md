@@ -2,7 +2,8 @@
   "title": "How to check priority level of your tickets",
   "date": "11-12-2014",
   "author": "James Morris",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description (goal/purpose)</h3>

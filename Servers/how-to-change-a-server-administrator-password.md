@@ -2,7 +2,8 @@
   "title": "How to change a server administrator password",
   "date": "1-4-2015",
   "author": "Nathan Young",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>This can be done quite easily through the&nbsp;<a href="https://control.tier3.com/">Tier 3 Control Portal</a>.&nbsp; There are a couple of pre-requisites that you will need to be able to perform this task:</p>

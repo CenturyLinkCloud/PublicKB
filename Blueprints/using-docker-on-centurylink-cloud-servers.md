@@ -2,7 +2,8 @@
   "title": "Using Docker on CenturyLink Cloud Servers",
   "date": "10-14-2014",
   "author": "Bryan Friedman",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description</h3>

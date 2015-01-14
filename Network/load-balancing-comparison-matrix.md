@@ -2,7 +2,8 @@
   "title": "Load Balancing Comparison Matrix",
   "date": "10-22-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description</h3>

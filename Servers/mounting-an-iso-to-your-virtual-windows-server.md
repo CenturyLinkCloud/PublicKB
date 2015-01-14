@@ -2,7 +2,8 @@
   "title": "Mounting an .ISO to your virtual Windows server",
   "date": "12-31-2014",
   "author": "Roham Ghashghai",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description (goal/purpose)</h3>

@@ -2,7 +2,8 @@
   "title": "How to Recover Deleted Email from OWA",
   "date": "5-9-2012",
   "author": "Russ Malloy",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 

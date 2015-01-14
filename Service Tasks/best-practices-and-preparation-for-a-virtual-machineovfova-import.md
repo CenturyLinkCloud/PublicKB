@@ -2,7 +2,8 @@
   "title": "Best Practices and Preparation for a Virtual Machine/OVF/OVA Import",
   "date": "10-13-2014",
   "author": "Jake Malmad",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>The CenturyLink Cloud Professional Services team imports images of existing physical or virtual servers directly onto the Platform, generally for compatibility/performance testing, benchmarking, or as part of an overall cloud migration strategy. There

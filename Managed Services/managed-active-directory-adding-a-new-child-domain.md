@@ -2,7 +2,8 @@
   "title": "Managed Active Directory - Adding a New Child Domain",
   "date": "10-14-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>As your Active Directory environment grows, you may need add new "child" domains. &nbsp;<strong>NOTE: Before you can deploy a new child, you need to have Managed Active Directory and Managed Windows server in place. &nbsp;<strong>Also, please ensure that two or more Domain Controllers have been built in your deployment, as this is a necessary component for servers to be added into your Domain. If this is not possible, all server builds will be added into the shared Active Directory Domain.</strong></strong>

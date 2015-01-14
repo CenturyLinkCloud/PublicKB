@@ -2,7 +2,8 @@
   "title": "Getting Started with Managed MySQL",
   "date": "10-14-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>MySQL&nbsp;is an open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL).</p>

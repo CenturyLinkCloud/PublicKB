@@ -2,7 +2,8 @@
   "title": "Monitors that are supported",
   "date": "10-16-2014",
   "author": "jw@tier3.com",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Here is the current list of supported types of monitoring on our system:</p>

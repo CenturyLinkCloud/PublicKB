@@ -2,7 +2,8 @@
   "title": "How To: Clone a Virtual Machine OS Instance",
   "date": "7-28-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Overview</h3>

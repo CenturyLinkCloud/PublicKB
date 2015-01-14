@@ -2,7 +2,8 @@
   "title": "Troubleshooting a Failed Managed Services Blueprint",
   "date": "10-24-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>If a Managed Services Blueprint does not complete as expected, please follow these steps to expedite troubleshooting.</p>

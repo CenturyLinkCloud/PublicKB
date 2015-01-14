@@ -2,7 +2,8 @@
   "title": "Using Object Storage from the Control Portal",
   "date": "1-7-2015",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description</h3>

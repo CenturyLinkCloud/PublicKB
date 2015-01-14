@@ -2,7 +2,8 @@
   "title": "Getting Started With OSSEC Blueprints",
   "date": "1-5-2015",
   "author": "Keith Resar",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Partner Profile</strong>

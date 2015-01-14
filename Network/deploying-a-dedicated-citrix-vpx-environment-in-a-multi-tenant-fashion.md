@@ -2,7 +2,8 @@
   "title": "Deploying a Dedicated Citrix VPX Environment in a Multi-tenant Fashion",
   "date": "12-27-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Deploying a Dedicated Citrix VPX Environment in a Multi-tenant Fashion</h3>

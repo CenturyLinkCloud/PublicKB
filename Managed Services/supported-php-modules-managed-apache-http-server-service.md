@@ -2,7 +2,8 @@
   "title": "Supported PHP Modules - Managed Apache HTTP Server Service",
   "date": "10-14-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>The follow table details the supported PHP modules for the Managed Apache HTTP Server Service:</p>

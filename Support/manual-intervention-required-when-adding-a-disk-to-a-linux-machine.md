@@ -2,7 +2,8 @@
   "title": "Manual intervention required when adding a disk to a Linux machine",
   "date": "11-12-2014",
   "author": "James Morris",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description (goal/purpose)</h3>

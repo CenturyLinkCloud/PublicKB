@@ -2,7 +2,8 @@
   "title": "How to change your Email password via OWA",
   "date": "5-9-2012",
   "author": "Russ Malloy",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>You can change your Email password by logging into OWA and following these few steps.</p>

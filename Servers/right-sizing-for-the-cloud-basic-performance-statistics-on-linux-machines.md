@@ -2,7 +2,8 @@
   "title": "Right-sizing For the Cloud: Basic Performance Statistics on Linux Machines",
   "date": "2-20-2013",
   "author": "Jake Malmad",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Description: </strong>Right-sizing For the Cloud: Basic Performance Statistics on Linux Machines</p>

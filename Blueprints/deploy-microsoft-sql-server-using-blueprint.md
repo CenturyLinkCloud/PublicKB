@@ -2,7 +2,8 @@
   "title": "Deploy Microsoft SQL Server using Blueprint",
   "date": "12-5-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 Deploy Microsoft SQL Server using CenturyLink Cloud Blueprint

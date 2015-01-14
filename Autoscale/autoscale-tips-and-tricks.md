@@ -2,7 +2,8 @@
   "title": "Autoscale Tips and Tricks",
   "date": "10-13-2014",
   "author": "Bryan Friedman",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Using Vertical and Horizontal Autoscale Together</strong></p>

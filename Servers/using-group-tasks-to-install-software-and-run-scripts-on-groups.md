@@ -2,7 +2,8 @@
   "title": "Using Group Tasks to Install Software and Run Scripts on Groups",
   "date": "10-14-2014",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong><strong>Last updated: &nbsp;Thu 10/8/2014 11:24 PST</strong></strong>

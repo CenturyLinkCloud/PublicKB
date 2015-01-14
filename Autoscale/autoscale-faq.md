@@ -2,7 +2,8 @@
   "title": "Autoscale FAQ",
   "date": "12-22-2014",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3><strong>Description</strong></h3>

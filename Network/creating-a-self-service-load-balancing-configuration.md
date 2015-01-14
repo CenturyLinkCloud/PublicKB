@@ -2,7 +2,8 @@
   "title": "Creating a Self-Service Load Balancing Configuration",
   "date": "12-2-2014",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description</h3>

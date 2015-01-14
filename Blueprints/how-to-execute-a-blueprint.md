@@ -2,7 +2,8 @@
   "title": "How to execute a Blueprint",
   "date": "7-1-2014",
   "author": "Shantu Roy",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>&nbsp;Description:</h3>

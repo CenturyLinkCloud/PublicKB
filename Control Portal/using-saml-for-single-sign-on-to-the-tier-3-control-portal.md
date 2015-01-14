@@ -2,7 +2,8 @@
   "title": "Using SAML for Single-Sign-On to the Tier 3 Control Portal",
   "date": "10-13-2014",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Description:</strong>

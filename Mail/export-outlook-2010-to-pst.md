@@ -2,7 +2,8 @@
   "title": "Export Outlook 2010 to PST",
   "date": "8-23-2011",
   "author": "Mark Turpin",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>In Outlook, go to File &gt; Options &gt; Advanced</p>

@@ -2,7 +2,8 @@
   "title": "Change Management",
   "date": "11-12-2014",
   "author": "Gavin McMurdo",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>All changes performed by CenturyLink Cloud&nbsp;will be done in compliance with the following criteria:</p>

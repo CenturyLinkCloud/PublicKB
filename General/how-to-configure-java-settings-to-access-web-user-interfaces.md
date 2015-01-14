@@ -2,7 +2,8 @@
   "title": "How to configure Java settings to access web user interfaces",
   "date": "12-15-2014",
   "author": "Lisa Macke",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description</h3>

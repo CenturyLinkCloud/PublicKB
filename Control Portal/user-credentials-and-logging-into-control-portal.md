@@ -2,7 +2,8 @@
   "title": "User Credentials and Logging into Control Portal",
   "date": "7-9-2014",
   "author": "Bryan Friedman",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description</h3>

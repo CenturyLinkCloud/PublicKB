@@ -2,7 +2,8 @@
   "title": "Getting Started With CloudMine - Blueprint",
   "date": "12-4-2014",
   "author": "David Shacochis",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Partner Profile</strong>

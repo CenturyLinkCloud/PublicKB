@@ -2,7 +2,8 @@
   "title": "Cloud Hardware / Infrastructure / Architecture",
   "date": "11-25-2014",
   "author": "Gavin McMurdo",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>One of the benefits of the cloud is that customer do not have to worry about the hardware/ architecture layer that is underneath the platform. &nbsp;This being said, we do understand that customer are very interested in what hardware is being used and

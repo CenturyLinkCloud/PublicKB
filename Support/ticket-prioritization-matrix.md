@@ -2,7 +2,8 @@
   "title": "Ticket Prioritization Matrix",
   "date": "11-12-2014",
   "author": "Gavin McMurdo",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Tickets are assigned a priority and worked in order of descending priority.&nbsp; The priority designation indicates the level, extent and impact on the customer. &nbsp;Once assigned, the priority level is used to determine the resources allocated for

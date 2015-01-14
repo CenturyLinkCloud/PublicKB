@@ -2,7 +2,8 @@
   "title": "Monitors for Managed Microsoft Active Directory Service",
   "date": "10-14-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>The following table details the monitors that are enabled for the Managed Microsoft Active Directory Service on CenturyLink Cloud:</p>

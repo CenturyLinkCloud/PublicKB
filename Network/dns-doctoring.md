@@ -2,7 +2,8 @@
   "title": "DNS Doctoring",
   "date": "10-23-2014",
   "author": "James Morris",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>As NAT'd public IPs on Centurylink Cloud are not accessible from within the same datacenter we do doctor internal DNS requests to allow machines to still communicate when using public DNS names. Any DNS lookups on external DNS servers that return a NAT

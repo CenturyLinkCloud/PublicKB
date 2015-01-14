@@ -2,7 +2,8 @@
   "title": "Changing IP address on a CenturyLink Cloud hosted machines",
   "date": "5-6-2014",
   "author": "Joon Park",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <strong>SCOPE</strong>

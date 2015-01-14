@@ -2,7 +2,8 @@
   "title": "Configuring Windows File-level Backup (VSS)",
   "date": "7-23-2014",
   "author": "Jake Malmad",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Microsoft's Volume Shadow Copy Service (VSS) is a framework which allows for&nbsp;backup operations to be performed without interrupting operations&nbsp;and generally does not cause perceivable performance degradation. While there are limitations and

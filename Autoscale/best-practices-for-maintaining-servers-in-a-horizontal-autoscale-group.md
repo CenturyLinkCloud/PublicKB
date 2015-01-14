@@ -2,7 +2,8 @@
   "title": "Best Practices for Maintaining Servers in a Horizontal Autoscale Group",
   "date": "10-13-2014",
   "author": "Bryan Friedman",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Description</strong></p>

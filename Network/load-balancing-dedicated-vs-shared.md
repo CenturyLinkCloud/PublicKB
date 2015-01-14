@@ -2,7 +2,8 @@
   "title": "Load Balancing - Dedicated vs Shared",
   "date": "8-6-2013",
   "author": "Russ Malloy",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <div>

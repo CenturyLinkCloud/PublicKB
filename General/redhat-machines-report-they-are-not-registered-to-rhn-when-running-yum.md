@@ -2,7 +2,8 @@
   "title": "Redhat machines report they are not registered to RHN when running 'yum'",
   "date": "11-25-2014",
   "author": "James Morris",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>When running 'yum' on a Redhat machine deployed on CenturyLink Cloud you may receive the message</p>

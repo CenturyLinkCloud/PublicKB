@@ -2,7 +2,8 @@
   "title": "How to Enable Web Site Redirect",
   "date": "7-30-2012",
   "author": "jw@tier3.com",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Site Redirect enables the ability to do a HTTP based redirect of a web site domain name to any URL such as http://www.foo.com redirect to http://www.bar.com/happy.html. You can enable this using the portal by doing the following steps:</p>

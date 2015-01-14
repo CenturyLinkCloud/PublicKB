@@ -2,7 +2,8 @@
   "title": "Role Permissions Matrix",
   "date": "11-6-2014",
   "author": "Bryan Friedman",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <table>

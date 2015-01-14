@@ -13,7 +13,8 @@
       "type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document",
       "file_name":"Letter of Authorization_Template.docx"
     }
-  ]
+  ],
+  "contentIsHTML": true
 }}}
 
 <p>Updated 9/15/14</p>

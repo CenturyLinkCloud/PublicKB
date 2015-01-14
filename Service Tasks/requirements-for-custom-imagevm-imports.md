@@ -2,7 +2,8 @@
   "title": "Requirements for custom image/VM imports",
   "date": "10-13-2014",
   "author": "James Morris",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Importing custom images/appliances for customers can be done in two ways.&nbsp; In both cases the files delivered to us from the customer should be in OVF (Open Virtualization Format) preferably in an OVA (Archive).</p>

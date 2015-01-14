@@ -2,7 +2,8 @@
   "title": "How To Configure Client VPN",
   "date": "12-23-2014",
   "author": "jw@tier3.com",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Overview</h3>

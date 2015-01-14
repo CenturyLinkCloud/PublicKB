@@ -2,7 +2,8 @@
   "title": "Using the Help Desk Web UI",
   "date": "11-12-2014",
   "author": "Bryan Dreyer",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description (goal/purpose)</h3>

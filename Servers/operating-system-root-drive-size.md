@@ -2,7 +2,8 @@
   "title": "Operating System Root Drive Size",
   "date": "12-17-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Description: The list below details the Root storage sizes of the Virtual Operating Systems provisioned on the CenturyLink Cloud platform.&nbsp;</strong>

@@ -2,7 +2,8 @@
   "title": "Creating a New Enterprise Cloud Server",
   "date": "11-13-2014",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Description:</strong>

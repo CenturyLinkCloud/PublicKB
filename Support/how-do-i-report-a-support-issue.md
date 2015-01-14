@@ -2,7 +2,8 @@
   "title": "How do I report a support issue?",
   "date": "12-6-2014",
   "author": "Gavin McMurdo",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description (goal/purpose)</h3>

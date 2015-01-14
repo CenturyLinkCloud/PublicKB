@@ -2,7 +2,8 @@
   "title": "OpenVPN client version bug in 2.3.4",
   "date": "9-17-2014",
   "author": "Jon McClary",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <strong>Description:</strong>

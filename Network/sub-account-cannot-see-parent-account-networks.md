@@ -2,7 +2,8 @@
   "title": "Sub account cannot see Parent account networks",
   "date": "3-6-2014",
   "author": "Sam Penhallow",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3><strong>Description (goal/purpose)</strong></h3>

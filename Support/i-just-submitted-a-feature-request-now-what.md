@@ -2,7 +2,8 @@
   "title": "I just submitted a feature request.  Now what?",
   "date": "11-25-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>We encourage submissions on feature requests from customers either through our email alias (features@tier3.com) or via our interactive portal (<a href="http://centurylinkcloud.uservoice.com/">http://centurylinkcloud.uservoice.com</a>). &nbsp;More detail

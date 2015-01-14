@@ -2,7 +2,8 @@
   "title": "Managed Red Hat - Connecting to Your Server with SSH",
   "date": "10-17-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>This document provides guidance for working with your CenturyLink-managed Red Hat Enterprise Linux Operating System.</p>

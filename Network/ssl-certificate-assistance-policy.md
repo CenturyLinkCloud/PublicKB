@@ -2,7 +2,8 @@
   "title": "SSL Certificate Assistance Policy",
   "date": "3-1-2013",
   "author": "jw@tier3.com",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>SSL is regularly used to secure traffic across the Internet.&nbsp;Customers planning to use SSL certificates in their Tier 3 environment are responsible for acquiring and managing their own certificates. However, Tier 3 is ready to assist you in a number

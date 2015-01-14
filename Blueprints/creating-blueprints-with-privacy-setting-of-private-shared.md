@@ -20,7 +20,8 @@
       "description": "Our stack, isolated and dedicated to you. Deploy in over 55 CenturyLink locations around the world.",
       "link": "/private-cloud"
     }
-  ]
+  ],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Description:</strong>

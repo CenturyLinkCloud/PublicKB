@@ -2,7 +2,8 @@
   "title": "Add a Signature to Outlook",
   "date": "8-22-2011",
   "author": "Mark Turpin",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Add a Signature to Outlook</strong>

@@ -8,7 +8,8 @@
       "type": "application/zip",
       "file_name": "package.zip"
     }
-  ]
+  ],
+  "contentIsHTML": true
 }}}
 
 <h3>Description</h3>

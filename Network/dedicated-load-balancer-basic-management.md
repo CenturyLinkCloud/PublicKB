@@ -2,7 +2,8 @@
   "title": "Dedicated Load Balancer Basic Management",
   "date": "12-15-2014",
   "author": "Russ Malloy",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description&nbsp;</h3>

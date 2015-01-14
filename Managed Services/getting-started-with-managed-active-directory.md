@@ -2,7 +2,8 @@
   "title": "Getting Started with Managed Active Directory",
   "date": "10-14-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Here's how to get started with Managed Active Directory in CenturyLink Cloud. &nbsp;<strong>NOTE: Before you can deploy Managed Active Directory, you must create a Managed Windows server. &nbsp;</strong><strong>Also, please ensure that two or more Domain Controllers have been built in your deployment, as this is a necessary component for servers to be added into your Domain. If this is not possible, all server builds will be added into the shared Active Directory Domain.</strong>

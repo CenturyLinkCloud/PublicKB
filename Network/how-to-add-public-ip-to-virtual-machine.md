@@ -2,7 +2,8 @@
   "title": "How To:  Add Public IP to Virtual Machine",
   "date": "11-5-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 How To: &nbsp;Add Public IP to a Virtual Machine&nbsp;

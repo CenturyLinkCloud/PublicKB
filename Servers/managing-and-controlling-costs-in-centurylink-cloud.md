@@ -2,7 +2,8 @@
   "title": "Managing and Controlling Costs in CenturyLink Cloud",
   "date": "10-9-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Overview</h3>

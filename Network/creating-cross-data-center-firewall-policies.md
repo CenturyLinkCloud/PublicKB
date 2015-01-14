@@ -2,7 +2,8 @@
   "title": "Creating Cross Data Center Firewall Policies",
   "date": "1-7-2015",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Creating Cross Data Center Firewall Policies</h3>

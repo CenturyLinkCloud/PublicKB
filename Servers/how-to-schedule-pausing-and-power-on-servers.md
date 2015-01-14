@@ -2,7 +2,8 @@
   "title": "How to Schedule Pausing and Power On Servers",
   "date": "9-4-2012",
   "author": "jw@tier3.com",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Scheduling servers to be <em><strong>paused</strong></em> and <em><strong>power on (un-pausing)</strong></em> is done at the group level under servers located <a href="https://control.tier3.com/Servers">here</a>. Follow the following steps:</p>

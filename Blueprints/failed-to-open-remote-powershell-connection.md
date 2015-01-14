@@ -2,7 +2,8 @@
   "title": "Failed to open Remote PowerShell connection",
   "date": "4-7-2014",
   "author": "Bryan Dreyer",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description (goal/purpose)</h3>

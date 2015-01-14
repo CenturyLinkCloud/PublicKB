@@ -2,7 +2,8 @@
   "title": "Group Level Patch Management",
   "date": "3-18-2013",
   "author": "Shantu Roy",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Description:</p>

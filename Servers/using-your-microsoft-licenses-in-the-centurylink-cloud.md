@@ -2,7 +2,8 @@
   "title": "Using Your Microsoft Licenses in the CenturyLink Cloud",
   "date": "12-19-2014",
   "author": "Jake Malmad",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>CenturyLink Cloud provides SPLA licensing as a means of delivering cost-effective, utility computing. Customers may apply Microsoft or Red Hat enterprise licenses to their Virtual Machines and are billed the corresponding amount as long as the machine

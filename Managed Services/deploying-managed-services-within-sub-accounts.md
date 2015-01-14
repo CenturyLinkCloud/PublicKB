@@ -2,7 +2,8 @@
   "title": "Deploying Managed Services within Sub-Accounts",
   "date": "10-24-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>For many customers, the ability to create and maintain sub-accounts with within your primary CenturyLink Cloud Control account is one of the appeals of our platform.&nbsp; It is important to note, however, that if you plan to create VMs with Managed Services

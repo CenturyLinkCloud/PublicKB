@@ -2,7 +2,8 @@
   "title": "Capacity in the Cloud",
   "date": "11-25-2014",
   "author": "Gavin McMurdo",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description (goal/purpose)</h3>

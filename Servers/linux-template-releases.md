@@ -2,7 +2,8 @@
   "title": "Linux Template Releases",
   "date": "12-17-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description</h3>

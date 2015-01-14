@@ -2,7 +2,8 @@
   "title": "Managed Operating System - Frequently Asked Questions",
   "date": "12-2-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Here are a few frequently asked questions for our managed OS service:</p>

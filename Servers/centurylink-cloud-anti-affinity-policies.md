@@ -2,7 +2,8 @@
   "title": "CenturyLink Cloud Anti-Affinity Policies",
   "date": "9-15-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 CenturyLink Cloud Anti-Affinity Policies

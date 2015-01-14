@@ -2,7 +2,8 @@
   "title": "Setup Android on Hosted Exchange",
   "date": "8-24-2011",
   "author": "Mark Turpin",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>From Applications on your phone, launch Email or Mail</p>

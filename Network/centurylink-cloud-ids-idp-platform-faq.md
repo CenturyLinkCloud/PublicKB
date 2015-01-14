@@ -2,7 +2,8 @@
   "title": "CenturyLink Cloud IDS / IDP Platform FAQ",
   "date": "6-29-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3><strong>Question:</strong>&nbsp; What technology is used for the CenturyLink Cloud IDS/IDP services?</h3>

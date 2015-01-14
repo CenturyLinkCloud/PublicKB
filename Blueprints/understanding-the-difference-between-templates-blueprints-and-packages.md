@@ -2,7 +2,8 @@
   "title": "Understanding the difference between Templates, Blueprints and Packages",
   "date": "12-4-2014",
   "author": "Eric Schubert",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Update: November 18, 2014 by David Shacochis</p>

@@ -2,7 +2,8 @@
   "title": "June 2014 Bandwidth Model Change FAQ",
   "date": "9-2-2014",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>CenturyLink Cloud recently announced a change to the bandwidth billing model and a corresponding price drop. The questions and answers below describe the change and its impact.</p>

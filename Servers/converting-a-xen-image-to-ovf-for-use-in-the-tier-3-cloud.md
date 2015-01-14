@@ -2,7 +2,8 @@
   "title": "Converting a Xen Image to OVF for use in the Tier 3 cloud",
   "date": "5-28-2013",
   "author": "Jake Malmad",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>The .OVF (Open Virtualization Format) standard is an open-source, secure, and portable format compatible across nearly all hypervisors (VMware, Hyper-V, Xen, VirtualBox, etc.). Tier 3 recommends converting all virtual servers to OVF format prior to delivering

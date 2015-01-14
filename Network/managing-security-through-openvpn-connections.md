@@ -2,7 +2,8 @@
   "title": "Managing security through OpenVPN connections",
   "date": "8-28-2013",
   "author": "James Morris",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>OpenVPN itself does not do port limiting or any sort of security differentiation between certificates. It is simply a network bridge for its clients,&nbsp;because&nbsp;of this security has to be managed at the server and firewall levels. &nbsp;</p>

@@ -2,7 +2,8 @@
   "title": "Manually expanding file system on Linux machines",
   "date": "11-29-2014",
   "author": "James Morris",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Expanding File system on Linux machines</p>

@@ -2,7 +2,8 @@
   "title": "Managed Active Directory - Firewall Policies for Various Traffic Types",
   "date": "10-14-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>The following tables show details to help you configure firewalls related to traffic from Active Directory.</p>

@@ -2,7 +2,8 @@
   "title": "Set up Windows 7 Phone on Hosted Exchange",
   "date": "7-23-2012",
   "author": "Dana Bowlin",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <div>

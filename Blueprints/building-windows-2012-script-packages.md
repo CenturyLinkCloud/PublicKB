@@ -28,7 +28,8 @@
       "type":"application/zip",
       "file_name":"Perform Active Directory Domain Join on Windows.zip"
     }
-  ]
+  ],
+  "contentIsHTML": true
 }}}
 
 Building Windows 2012 Script Packages

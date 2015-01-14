@@ -2,7 +2,8 @@
   "title": "Setup Out-of-Office (OOO) Replies",
   "date": "8-22-2011",
   "author": "Mark Turpin",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>In Outlook, go to File &gt; Info &gt; Automatic Replies (Out of Office) on the right pane.</p>

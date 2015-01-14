@@ -2,7 +2,8 @@
   "title": "Monitors for Managed MySQL Service",
   "date": "10-14-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>The following table details the monitors supported for the Managed MySQL service on CenturyLink Cloud:</p>

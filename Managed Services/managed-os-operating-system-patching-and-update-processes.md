@@ -2,7 +2,8 @@
   "title": "Managed OS - Operating System Patching & Update Processes",
   "date": "11-25-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 Overview

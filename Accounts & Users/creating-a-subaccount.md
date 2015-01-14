@@ -2,7 +2,8 @@
   "title": "Creating a subaccount",
   "date": "11-5-2014",
   "author": "Jon McClary",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <strong>Sub Account creation</strong>

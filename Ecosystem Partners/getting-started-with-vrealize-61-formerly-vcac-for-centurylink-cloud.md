@@ -2,7 +2,8 @@
   "title": "Getting Started with vRealize 6.1 (formerly vCAC) for CenturyLink Cloud",
   "date": "12-16-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><em>Updated 17 Dec 2014 by David Shacochis</em></p>

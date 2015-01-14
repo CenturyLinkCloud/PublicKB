@@ -2,7 +2,8 @@
   "title": "Creating and Applying Autoscale Policies",
   "date": "12-22-2014",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Description</strong></p>

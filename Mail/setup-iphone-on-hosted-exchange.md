@@ -2,7 +2,8 @@
   "title": "Setup iPhone on Hosted Exchange",
   "date": "8-24-2011",
   "author": "Mark Turpin",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Launch settings</p>

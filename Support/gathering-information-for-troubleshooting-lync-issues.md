@@ -2,7 +2,8 @@
   "title": "Gathering Information for Troubleshooting Lync Issues",
   "date": "11-12-2014",
   "author": "Eric Schubert",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Description (goal/purpose)</strong>

@@ -2,7 +2,8 @@
   "title": "Building CoreOS Server Cluster on the CenturyLink Cloud",
   "date": "10-14-2014",
   "author": "Bryan Friedman",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 Overview

@@ -2,7 +2,8 @@
   "title": "How do I escalate a ticket?",
   "date": "11-12-2014",
   "author": "Gavin McMurdo",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description (goal/purpose)</h3>

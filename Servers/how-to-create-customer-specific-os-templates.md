@@ -2,7 +2,8 @@
   "title": "How To:  Create Customer Specific OS Templates",
   "date": "9-2-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Overview</h3>

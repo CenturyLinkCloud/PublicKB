@@ -2,7 +2,8 @@
   "title": "CenturyLink Cloud Network Load Balancing Health Check Services",
   "date": "10-31-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 CenturyLink Cloud Platform Load Balancing Health Check Services

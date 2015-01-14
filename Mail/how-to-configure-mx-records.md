@@ -2,7 +2,8 @@
   "title": "How to configure MX Records",
   "date": "5-9-2012",
   "author": "Russ Malloy",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <strong>How to configure MX Records</strong>

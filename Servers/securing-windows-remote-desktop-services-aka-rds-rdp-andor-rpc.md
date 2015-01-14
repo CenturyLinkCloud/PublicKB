@@ -2,7 +2,8 @@
   "title": "Securing Windows Remote Desktop Services (aka RDS, RDP, and/or RPC)",
   "date": "12-30-2013",
   "author": "Dave Burkhardt",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Due to many security vulnerabilities with the Windows Remote Desktop Service, it is not recommend this remote service is allowed to communicate directly to the public Internet, and customers should utilize the multiple secure connectivity options Tier

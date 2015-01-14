@@ -2,7 +2,8 @@
   "title": "How To:  View Source IP in Web Server Logs when using Load Balancing",
   "date": "11-24-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Audience</h3>

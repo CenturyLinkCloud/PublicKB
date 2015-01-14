@@ -2,7 +2,8 @@
   "title": "Using Object Storage for Backup as a Service",
   "date": "1-7-2015",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 Using Object Storage for Backup as a Service

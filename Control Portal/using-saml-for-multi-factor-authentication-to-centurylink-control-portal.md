@@ -2,7 +2,8 @@
   "title": "Using SAML for Multi-Factor Authentication to CenturyLink Control Portal",
   "date": "10-13-2014",
   "author": "Bryan Friedman",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <strong>Description</strong>

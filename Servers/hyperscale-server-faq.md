@@ -2,7 +2,8 @@
   "title": "Hyperscale Server FAQ",
   "date": "9-15-2014",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3><strong>Description</strong></h3>

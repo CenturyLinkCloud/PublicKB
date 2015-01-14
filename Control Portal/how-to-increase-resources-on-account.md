@@ -2,7 +2,8 @@
   "title": "How To: Increase resources on account",
   "date": "11-22-2014",
   "author": "Aaron Lemoine",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description&nbsp;</h3>

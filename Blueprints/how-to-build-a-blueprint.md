@@ -2,7 +2,8 @@
   "title": "How to build a Blueprint",
   "date": "12-2-2014",
   "author": "Shantu Roy",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Updated: December 2nd, 2014 by Keith Resar</p>

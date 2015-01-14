@@ -2,7 +2,8 @@
   "title": "Using MSDN License in the Tier 3 Cloud",
   "date": "11-13-2013",
   "author": "Jake Malmad",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Tier 3 provides SPLA licensing as a means of delivering cost-effective, utility computing. Customers may apply Microsoft or Red Hat enterprise licenses to their Virtual Machines and are billed the corresponding amount as long as the machine is in a live

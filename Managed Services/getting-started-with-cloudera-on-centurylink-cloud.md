@@ -2,7 +2,8 @@
   "title": "Getting Started with Cloudera on CenturyLink Cloud",
   "date": "10-30-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Cloudera Hadoop combines Apache Hadoop with a number of other open source projects to create a single, massively scalable system where you can unite storage with an array of powerful processing and analytic frameworks.</p>

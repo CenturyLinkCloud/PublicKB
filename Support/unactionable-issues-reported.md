@@ -2,7 +2,8 @@
   "title": "Unactionable Issues Reported",
   "date": "11-12-2014",
   "author": "Gavin McMurdo",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description (goal/purpose)</h3>

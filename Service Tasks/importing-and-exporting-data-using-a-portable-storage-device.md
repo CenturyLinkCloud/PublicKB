@@ -2,7 +2,8 @@
   "title": "Importing and Exporting data using a portable storage device",
   "date": "8-1-2014",
   "author": "Dana Bowlin",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description (goal/purpose)</h3>

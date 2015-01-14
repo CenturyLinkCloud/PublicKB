@@ -2,7 +2,8 @@
   "title": "Connecting Data Center Networks Through Firewall Policies",
   "date": "12-12-2012",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Description:</strong>

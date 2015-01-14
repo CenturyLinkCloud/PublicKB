@@ -2,7 +2,8 @@
   "title": "SMTP Relay Services (Simple)",
   "date": "12-2-2014",
   "author": "jw@tier3.com",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>SMTP Relay Services (Simple)</strong>

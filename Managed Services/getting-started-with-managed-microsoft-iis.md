@@ -2,7 +2,8 @@
   "title": "Getting Started with Managed Microsoft IIS",
   "date": "10-14-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Internet Information Services (IIS) for Windows&reg; Server is a flexible, secure and manageable Web server for hosting anything on the Web. From media streaming to web applications, IIS's scalable and open architecture is ready to handle the most demanding

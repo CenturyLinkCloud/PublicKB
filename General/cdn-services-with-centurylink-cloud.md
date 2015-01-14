@@ -2,7 +2,8 @@
   "title": "CDN services with CenturyLink Cloud",
   "date": "11-25-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Customers may deploy CDN, using one of CenturyLink’s CDN partners.&nbsp; To inquire about CDN services, please send an email to: <a href="mailto:CDNRequests@savvis.com">CDNRequests@savvis.com</a>.</p>

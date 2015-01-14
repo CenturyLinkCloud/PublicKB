@@ -2,7 +2,8 @@
   "title": "How do I submit a feature request?",
   "date": "1-6-2015",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Description (goal/purpose)</strong>

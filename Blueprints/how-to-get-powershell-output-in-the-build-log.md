@@ -2,7 +2,8 @@
   "title": "How to Get PowerShell Output in the Build Log",
   "date": "11-11-2014",
   "author": "Bryan Dreyer",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description (goal/purpose)</h3>

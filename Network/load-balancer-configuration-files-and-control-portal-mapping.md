@@ -2,7 +2,8 @@
   "title": "Load Balancer Configuration Files and Control Portal Mapping",
   "date": "11-4-2013",
   "author": "Jake Malmad",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <div>Tier 3’s self-service Load Balancer provides an intuitive interface for the management and provisioning of Load Balancer groups and policies. In migrating from the previous version of our shared Load Balancer, you may find yourself presented with a configuration

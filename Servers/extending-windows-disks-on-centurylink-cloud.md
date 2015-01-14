@@ -2,7 +2,8 @@
   "title": "Extending Windows Disks on CenturyLink Cloud",
   "date": "10-30-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3><strong>Overview</strong></h3>

@@ -2,7 +2,8 @@
   "title": "VPN Client Connection Troubleshooting",
   "date": "4-3-2014",
   "author": "jw@tier3.com",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Here are some of the common issues and resolution:</p>

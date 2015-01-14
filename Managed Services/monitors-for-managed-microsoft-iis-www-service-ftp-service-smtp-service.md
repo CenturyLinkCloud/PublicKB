@@ -2,7 +2,8 @@
   "title": "Monitors for Managed Microsoft IIS - WWW Service, FTP Service, SMTP Service",
   "date": "10-14-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>The following tables detail the monitors support for the Managed Microsoft IIS WWW, FTP, and SMTP Services.</p>

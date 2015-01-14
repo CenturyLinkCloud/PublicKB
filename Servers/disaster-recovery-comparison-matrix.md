@@ -2,7 +2,8 @@
   "title": "Disaster Recovery Comparison Matrix",
   "date": "12-31-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Overview</h3>

@@ -2,7 +2,8 @@
   "title": "Getting Support for Your Cloud Servers",
   "date": "11-12-2014",
   "author": "Gavin McMurdo",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Overview</h3>

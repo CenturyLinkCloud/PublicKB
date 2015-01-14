@@ -2,7 +2,8 @@
   "title": "Support for LVM on Linux machines",
   "date": "8-25-2014",
   "author": "James Morris",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>All of CenturyLink's Linux templates use a partitionless configuration for the root drive and, by default, all additional drives added through the Control Portal.&nbsp;Though it does not apply for physical servers, this partitionless concept has some

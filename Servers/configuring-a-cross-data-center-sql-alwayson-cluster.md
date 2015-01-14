@@ -2,7 +2,8 @@
   "title": "Configuring a Cross Data Center SQL AlwaysOn Cluster",
   "date": "3-11-2014",
   "author": "Jake Malmad",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>SQL 2012 Enterprise Edition’s AlwaysOn Availability Groups brings high availability and disaster recovery to an entirely new level for the product- gone are the days of relying on log shipping and physical clustering! With Tier 3’s Global Data Center

@@ -2,7 +2,8 @@
   "title": "Configure Two Factor Authentication",
   "date": "8-11-2014",
   "author": "jw@tier3.com",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Creating two factor authentication is very easy to do with Client VPN Service. Here are the steps to take when needing to configure it:</p>

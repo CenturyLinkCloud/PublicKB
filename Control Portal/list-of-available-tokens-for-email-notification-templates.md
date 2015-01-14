@@ -2,7 +2,8 @@
   "title": "List of Available Tokens for Email Notification Templates",
   "date": "2-21-2013",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description (goal/purpose)</h3>

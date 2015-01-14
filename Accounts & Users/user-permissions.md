@@ -2,7 +2,8 @@
   "title": "User Permissions",
   "date": "11-6-2014",
   "author": "Troy Schneringer",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Last updated: &nbsp;Thu 11/06/2014 10:50 PST<br /></strong>

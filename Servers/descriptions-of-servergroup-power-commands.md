@@ -2,7 +2,8 @@
   "title": "Descriptions of Server/Group Power Commands",
   "date": "3-5-2013",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description</h3>

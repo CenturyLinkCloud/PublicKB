@@ -2,7 +2,8 @@
   "title": "Adding Disks to Linux Virtual Machines",
   "date": "6-17-2014",
   "author": "Luke Bakken",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 Description:

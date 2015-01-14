@@ -2,7 +2,8 @@
   "title": "Add a User Friendly Name to VLANs",
   "date": "11-25-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 Add a User Friendly Name to VLANs

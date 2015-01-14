@@ -2,7 +2,8 @@
   "title": "Getting Started with Managed Apache",
   "date": "10-14-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>CenturyLink Cloud Web server application offers a reliable, high-performance, and secure vehicle for delivery HTTP content to end users. &nbsp;Here's how to create a managed Apache environment in CenturyLink Cloud.</p>

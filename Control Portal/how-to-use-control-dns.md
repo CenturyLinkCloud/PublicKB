@@ -2,7 +2,8 @@
   "title": "How to use Control DNS",
   "date": "10-13-2014",
   "author": "Russ Malloy",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description&nbsp;</h3>

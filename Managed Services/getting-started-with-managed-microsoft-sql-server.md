@@ -2,7 +2,8 @@
   "title": "Getting Started with Managed Microsoft SQL Server",
   "date": "11-10-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>The Microsoft SQL Server (MS-SQL) database is a comprehensive and integrated data management and analysis software application that enables the reliable management of mission-critical information.&nbsp;</p>

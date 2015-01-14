@@ -2,7 +2,8 @@
   "title": "Steps to Install a Headless GNOME GUI Desktop on Ubuntu Server and Then Remote Control Server Desktop with TightVNC",
   "date": "11-22-2013",
   "author": "Dave Burkhardt",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>The following instructions provide a detailed step-by-step instructions for Tier 3’s customers who wish to provision a GUI desktop on their Ubuntu servers, and then run a remote desktop application (TightVNC) to control the desktop.

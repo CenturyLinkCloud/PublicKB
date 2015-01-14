@@ -2,7 +2,8 @@
   "title": "Moving Servers Between Groups",
   "date": "8-5-2014",
   "author": "Bryan Friedman",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description</h3>

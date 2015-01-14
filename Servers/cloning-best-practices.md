@@ -2,7 +2,8 @@
   "title": "Cloning - Best Practices",
   "date": "11-15-2013",
   "author": "Jake Malmad",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>The Tier 3 platform provides a rich interface for management of your virtual environment. When designing a virtual environment, one will often require consistency across all virtual machines- in the patch level, configuration, or installed applications,

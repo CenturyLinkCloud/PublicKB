@@ -2,7 +2,8 @@
   "title": "Network Access Options for Connecting to Centurylink Cloud's Platform",
   "date": "8-28-2014",
   "author": "Dave Burkhardt",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Network Access Options for Connecting to CenturyLink Cloud's Platform</strong>

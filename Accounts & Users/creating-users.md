@@ -2,7 +2,8 @@
   "title": "Creating Users",
   "date": "10-16-2014",
   "author": "Troy Schneringer",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Users can be configured for both the Control Portal and the API.</p>

@@ -2,7 +2,8 @@
   "title": "Group Snapshots",
   "date": "5-22-2013",
   "author": "Jake Malmad",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>There are a myriad of uses for Virtual Machine snapshots, common use cases include&nbsp;pre/post-patching roll back and protection, or&nbsp;reverting&nbsp;machine changes&nbsp;to a preserved state in a demo environment. This article will illustrate two

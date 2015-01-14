@@ -2,7 +2,8 @@
   "title": "Practical Guide for Using Roles",
   "date": "12-15-2014",
   "author": "Bryan Friedman",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description</h3>

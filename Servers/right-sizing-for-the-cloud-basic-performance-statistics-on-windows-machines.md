@@ -2,7 +2,8 @@
   "title": "Right-sizing For the Cloud: Basic Performance Statistics on Windows Machines",
   "date": "4-9-2013",
   "author": "Jake Malmad",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>One of the benefits of the Tier 3 platform is the elasticity of resource allocation; our utility based model allows customers to pay only for the required compute resources, unlike the physical model wherein one is sizing for the maximum possible required

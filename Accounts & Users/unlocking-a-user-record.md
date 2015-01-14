@@ -2,7 +2,8 @@
   "title": "Unlocking a User Record",
   "date": "10-13-2014",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description</h3>

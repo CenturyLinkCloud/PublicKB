@@ -2,7 +2,8 @@
   "title": "CenturyLink Cloud Ecosystem Program Guide",
   "date": "1-5-2015",
   "author": "David Shacochis",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Updated: January 5, 2015</p>

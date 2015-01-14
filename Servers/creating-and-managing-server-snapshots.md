@@ -2,7 +2,8 @@
   "title": "Creating and Managing Server Snapshots",
   "date": "10-10-2014",
   "author": "James Morris",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <blockquote>

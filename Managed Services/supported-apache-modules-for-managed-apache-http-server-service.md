@@ -2,7 +2,8 @@
   "title": "Supported Apache Modules for Managed Apache HTTP Server Service",
   "date": "10-14-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>The following table details the supported Apache modules for the Managed Apache HTTP Server Service.</p>

@@ -2,7 +2,8 @@
   "title": "Creating a Scheduled Task",
   "date": "7-28-2014",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Description:</strong>

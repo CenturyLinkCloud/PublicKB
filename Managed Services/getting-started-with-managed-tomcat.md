@@ -2,7 +2,8 @@
   "title": "Getting Started with Managed Tomcat",
   "date": "10-14-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Apache Tomcat is an open source software implementation of the Java Servlet and JavaServer Pages technologies. As a collaboration of best-of-breed developers from around the world, Apache Tomcat has rapidly become one of the leading Web servers. &nbsp;Here's

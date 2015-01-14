@@ -2,7 +2,8 @@
   "title": "Resizing Disks in Linux Virtual Machines",
   "date": "7-24-2014",
   "author": "Luke Bakken",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 Description:

@@ -2,7 +2,8 @@
   "title": "Using Postlayer as an end user",
   "date": "9-20-2013",
   "author": "Russ Malloy",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>What is PostLayer?</p>

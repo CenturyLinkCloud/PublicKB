@@ -2,7 +2,8 @@
   "title": "OpenVPN License Questions",
   "date": "7-17-2013",
   "author": "Kelly Malloy",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>There are several "different" OpenVPN products available.&nbsp; Some of them use completely free open source libraries and other do use some commercial libraries.&nbsp; Tier 3 uses software under this license:</p>

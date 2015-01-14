@@ -2,7 +2,8 @@
   "title": "Add Multiple Instances of a Software Package to a Blueprint",
   "date": "8-2-2012",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Description:</strong>

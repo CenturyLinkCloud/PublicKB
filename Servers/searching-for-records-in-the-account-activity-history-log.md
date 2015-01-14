@@ -2,7 +2,8 @@
   "title": "Searching for Records in the Account Activity History Log",
   "date": "12-14-2012",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Description:</strong>

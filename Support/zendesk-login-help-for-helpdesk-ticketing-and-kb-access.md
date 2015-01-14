@@ -2,7 +2,8 @@
   "title": "Zendesk Login Help for Helpdesk ticketing and KB access",
   "date": "11-12-2014",
   "author": "Jon McClary",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>&nbsp;Description (goal/purpose)</strong>

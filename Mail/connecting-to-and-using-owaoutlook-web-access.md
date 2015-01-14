@@ -2,7 +2,8 @@
   "title": "Connecting to and using OWA(Outlook Web Access)",
   "date": "5-9-2012",
   "author": "Russ Malloy",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>You must know a couple of things before you get started:</p>

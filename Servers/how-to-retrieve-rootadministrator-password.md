@@ -2,7 +2,8 @@
   "title": "How to retrieve Root/Administrator password",
   "date": "8-7-2013",
   "author": "Russ Malloy",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Retrieving the Administrator or Root password can be done quickly through the Control Portal. &nbsp;Navigate to the server by going to Servers, selecting the correct group, and click on the server. &nbsp;At the top right click the box: "Admin Server Password,

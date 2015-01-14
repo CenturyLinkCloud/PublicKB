@@ -2,7 +2,8 @@
   "title": "Recover deleted items in Outlook 2007/2010",
   "date": "8-16-2012",
   "author": "Mark Turpin",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Outlook has the ability to recover deleted items from a mailbox.</p>

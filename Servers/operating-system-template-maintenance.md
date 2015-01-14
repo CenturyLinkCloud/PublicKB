@@ -2,7 +2,8 @@
   "title": "Operating System Template Maintenance",
   "date": "1-10-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description&nbsp;</h3>

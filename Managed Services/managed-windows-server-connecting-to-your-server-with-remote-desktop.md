@@ -2,7 +2,8 @@
   "title": "Managed Windows Server - Connecting to Your Server with Remote Desktop",
   "date": "10-17-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>This document provides guidance for working with your CenturyLink-managed Windows Server Operating System.</p>

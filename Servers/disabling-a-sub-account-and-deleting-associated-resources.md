@@ -2,7 +2,8 @@
   "title": "Disabling a sub account and deleting associated resources",
   "date": "11-4-2013",
   "author": "Ade Miller",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>The<a href="https://t3n.zendesk.com/entries/22511724-Cloud-Platform-Release-Notes-October-23-2013" target="_self"> October 23rd 2013 release</a> of the Cloud Platform supports users removing networks and servers associated with the sub account prior to

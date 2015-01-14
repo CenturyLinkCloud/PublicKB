@@ -2,7 +2,8 @@
   "title": "Safehaven for CenturyLink Cloud - Video of Test Failover",
   "date": "5-13-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>For users who desire backup from on-premise environments to the CenturyLink Cloud, we offer Safehaven from Data Gardens. &nbsp;This video details how to conduct a test failover to the CenturyLink Cloud from an on-premise data center.</p>

@@ -2,7 +2,8 @@
   "title": "Connect to Multiple OpenVPN Instances",
   "date": "2-13-2014",
   "author": "Russ Malloy",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h4>Description</h4>

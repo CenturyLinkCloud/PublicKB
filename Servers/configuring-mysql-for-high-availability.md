@@ -2,10 +2,11 @@
   "title": "Configuring MySQL for High Availability",
   "date": "10-2-2014",
   "author": "Bryan Friedman",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
-Description
+<p><strong>Description</strong></p>
 <p>Simple scalability and easy elasticity are key benefits of any cloud environment, and along with features like self-service load balancer configurations and autoscaling, CenturyLink Cloud enables users to easily deploy applications with high-availability
   architectures. While this is especially true for most web applications, the database tier, particularly when it is a traditional relational database like MySQL, can often become the performance bottleneck or the single point of failure for many workloads
   because it can sometimes be a challenge to scale it out. While a vertical autoscale can help handle peak usage for performance, it doesn't cut it when you're looking for high availability from your relational database.&nbsp;</p>

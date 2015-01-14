@@ -2,7 +2,8 @@
   "title": "Blueprints Script and Software Package Management",
   "date": "12-18-2014",
   "author": "jw@tier3.com",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Last updated: &nbsp;Thu 10/2/2014 11:24 PST</strong>

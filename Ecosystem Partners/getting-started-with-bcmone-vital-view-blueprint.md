@@ -2,7 +2,8 @@
   "title": "Getting Started with BCMOne Vital View - Blueprint",
   "date": "1-5-2015",
   "author": "Bob Stolzberg",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Partner Profile</strong>

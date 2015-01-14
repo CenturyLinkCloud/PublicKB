@@ -2,7 +2,8 @@
   "title": "Monitors for Managed Apache HTTPd Server",
   "date": "10-14-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>The table below lists the supported monitors for the Managed Apache HTTPd Server service.</p>

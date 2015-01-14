@@ -2,7 +2,8 @@
   "title": "Creating a Self-Service IPsec (Site-to-Site) VPN Tunnel",
   "date": "11-5-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description</h3>

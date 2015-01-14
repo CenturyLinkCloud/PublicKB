@@ -2,7 +2,8 @@
   "title": "Getting Started with Managed SSL certificates",
   "date": "11-10-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Centurylink Cloud SSL certificates provide website information security.&nbsp; SSL certificates address the core requirements for effectively securing the communication between a web server and the customers interacting through it.</p>

@@ -2,7 +2,8 @@
   "title": "PIN Authentication for Support Requests",
   "date": "1-5-2015",
   "author": "Jake Malmad",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>When submitting a support request, CenturyLink Cloud requires that the user supply a pre-defined, unique&nbsp;PIN number as a secondary means of authentication. This measure is designed to add an additional layer of security to prevent account impersonation

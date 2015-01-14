@@ -2,7 +2,8 @@
   "title": "What can you expect from Tier 3 on a Security Issue",
   "date": "11-12-2014",
   "author": "Gavin McMurdo",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description (goal/purpose)</h3>

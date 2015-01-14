@@ -2,7 +2,8 @@
   "title": "Re-sizing Disks in Windows Virtual Machines",
   "date": "12-24-2014",
   "author": "Aaron Lemoine",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description (goal/purpose)</h3>

@@ -2,7 +2,8 @@
   "title": "Requesting a public DNS PTR record",
   "date": "11-12-2014",
   "author": "Jon McClary",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p><strong>Description:</strong>

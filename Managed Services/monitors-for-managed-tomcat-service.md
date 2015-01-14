@@ -2,7 +2,8 @@
   "title": "Monitors for Managed Tomcat Service",
   "date": "10-14-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>The following table details the monitors enabled for the Managed Apache Tomcat service on CenturyLink Cloud:</p>

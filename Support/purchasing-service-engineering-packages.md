@@ -2,7 +2,8 @@
   "title": "Purchasing Service Engineering Packages",
   "date": "11-12-2014",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Service Engineering is available in 20, 40, 60, 80, 160 and multiples of 160-hour blocks per month. Customers interested in “Enterprise” support must purchase at least 160 hours per month of Service Engineering.</p>

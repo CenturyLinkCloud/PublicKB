@@ -2,7 +2,8 @@
   "title": "Exporting a VM to an OVF from VMware Workstation for Import into the Tier 3 Cloud",
   "date": "4-16-2013",
   "author": "Jake Malmad",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description:</h3>

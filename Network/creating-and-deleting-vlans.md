@@ -2,7 +2,8 @@
   "title": "Creating and Deleting VLANs",
   "date": "7-3-2014",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description</h3>

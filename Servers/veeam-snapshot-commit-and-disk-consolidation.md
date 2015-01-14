@@ -2,7 +2,8 @@
   "title": "Veeam Snapshot Commit & Disk Consolidation",
   "date": "12-9-2014",
   "author": "Kelly Malloy",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Currently the CenturyLink Cloud platform utilizes the snapshot management functionality of VMWare Vsphere.&nbsp; More information on exactly what this process is, and how it works can be found at this URL:</p>

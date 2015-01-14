@@ -2,7 +2,8 @@
   "title": "Exchange Mailbox Server Memory Usage",
   "date": "1-14-2013",
   "author": "Mark Turpin",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>You may notice that your Exchange mailbox server[s] have maxed out available memory (85%+). &nbsp;It is completely normal for this to happen. &nbsp;The Exchange process store.exe will show most of the available memory allocated to it in task manager.

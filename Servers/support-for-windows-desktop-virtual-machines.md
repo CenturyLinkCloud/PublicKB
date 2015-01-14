@@ -2,7 +2,8 @@
   "title": "Support for Windows Desktop Virtual Machines",
   "date": "7-24-2014",
   "author": "Bryan Thompson",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Many customers ask if they can provision a Windows Desktop Virtual Machines (Windows XP, 7, 8, 8.1) to run on the CenturyLink Cloud platform. &nbsp;At this time, Windows Desktop OS may not be provided under an SPLA (Service Provider Licensing Agreement).

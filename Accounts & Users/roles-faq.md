@@ -2,7 +2,8 @@
   "title": "Roles FAQ",
   "date": "11-6-2014",
   "author": "Bryan Friedman",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3><strong>Description</strong></h3>

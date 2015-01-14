@@ -2,7 +2,8 @@
   "title": "Latency Testing for CenturyLink Cloud Data Center Nodes",
   "date": "6-13-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Customers who wish to test latency to CenturyLink Cloud Data Center Nodes globally can leverage the following information:</h3>

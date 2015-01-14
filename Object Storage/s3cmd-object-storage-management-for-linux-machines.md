@@ -2,7 +2,8 @@
   "title": "S3CMD - Object Storage Management for Linux Machines",
   "date": "10-27-2014",
   "author": "Jake Malmad",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>S3CMD is a Linux utility that can be used to interact and manage your <a href="http://www.tier3.com/products/object-storage" target="_blank">Tier 3 Object Storage</a> buckets. While S3CMD is included in many package managers, it is best to manually configure

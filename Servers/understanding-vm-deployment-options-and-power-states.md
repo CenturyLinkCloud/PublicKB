@@ -2,7 +2,8 @@
   "title": "Understanding VM Deployment Options and Power States",
   "date": "1-5-2015",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 Understanding VM Deployment Options and Power States

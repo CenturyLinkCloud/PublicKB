@@ -2,7 +2,8 @@
   "title": "Requesting Service Tasks on CenturyLink Cloud",
   "date": "10-13-2014",
   "author": "Dana Bowlin",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3>Description (goal/purpose)</h3>

@@ -2,7 +2,8 @@
   "title": "Using Object Storage with a Cloud Storage Gateway",
   "date": "1-7-2015",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 Using Object Storage with a Cloud Storage Gateway

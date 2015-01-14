@@ -2,7 +2,8 @@
   "title": "Self Service Load Balancing FAQ",
   "date": "8-12-2013",
   "author": "jw@tier3.com",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 Self Service Load Balancing FAQ

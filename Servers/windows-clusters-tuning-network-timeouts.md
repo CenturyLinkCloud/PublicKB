@@ -2,7 +2,8 @@
   "title": "Windows Clusters Tuning Network Timeouts",
   "date": "12-4-2014",
   "author": "Thomas Duffy",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <p>Since Windows 2008, Windows Server Failover Clustering has experienced premature fail overs when left with a default configuration.&nbsp;By default Microsoft configures the cluster for the most aggressive recovery situation. This needs to be changed within

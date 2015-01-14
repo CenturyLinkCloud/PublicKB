@@ -2,7 +2,8 @@
   "title": "Using a Software-Defined Virtual NAS/SAN on CenturyLink Cloud",
   "date": "11-23-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 Using a Software-Defined Virtual NAS/SAN on CenturyLink Cloud

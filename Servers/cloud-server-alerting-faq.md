@@ -2,7 +2,8 @@
   "title": "Cloud Server Alerting FAQ",
   "date": "11-4-2014",
   "author": "Richard Seroter",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": true
 }}}
 
 <h3><strong>Description</strong></h3>
