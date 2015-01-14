@@ -58,15 +58,6 @@ class Disks(object):
 
 		This request will error if disk is protected and cannot be removed (e.g. a system disk)
 
-		Note the Disks object will need to be rebuilt to get the ID for the new disk if future
-		actions will be executed on it.  Calling clc.v2.Server.Refresh if accessed through server
-		object will accomplish this.
-
-		We use a temporary disk placeholder - if the disk add fails this will not be reflected in
-		the temporary placeholder.  Again recommendation to call clc.v2.Server.Refresh after the
-		work has completed.
-
-
 		# Partitioned disk
 		>>> clc.v2.Server("WA1BTDIX01").Disks().Add(size=20,path=None,type="raw").WaitUntilComplete()
 		0
