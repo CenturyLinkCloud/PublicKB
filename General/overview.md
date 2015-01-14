@@ -45,7 +45,7 @@
 
     5.  Increase the limit of the specific Resource
 
-paragraph
+paragraph <span>this is a span</span>
 
   <table>
     <tr>
