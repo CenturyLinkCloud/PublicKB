@@ -26,6 +26,10 @@ Server object variables:
 	server.reserved_drive_paths
 	server.adding_cpu_requires_reboot
 	server.adding_memory_requires_reboot
+	server.created_by
+	server.created_date - POSIX time
+	server.modified_by
+	server.modified_date - POSIX time
 	server.dirty - bool indicating whether server object is different than cloud object
 
 Server object variables available but access subject to change with future releases:
@@ -187,6 +191,9 @@ class Server(object):
 		self.data = clc.v2.API.Call('GET','servers/%s/%s' % (self.alias,self.id),{})
 
 		try:
+			self.data['changeInfo']['createdDate'] = clc.v2.time_utils.ZuluTSToSeconds(self.data['changeInfo']['createdDate'])
+			self.data['changeInfo']['modifiedDate'] = clc.v2.time_utils.ZuluTSToSeconds(self.data['changeInfo']['modifiedDate'])
+
 			# API call switches between GB and MB.  Change to all references are in GB and we drop the units
 			self.data['details']['memoryGB'] = int(math.floor(self.data['details']['memoryMB']/1024))
 		except:
@@ -206,6 +213,7 @@ class Server(object):
 
 		if key in self.data:  return(self.data[key])
 		elif key in self.data['details']:  return(self.data['details'][key])
+		elif key in self.data['changeInfo']:  return(self.data['changeInfo'][key])
 		elif key in ("reservedDrivePaths", "addingCpuRequiresReboot", "addingMemoryRequiresReboot"):  return(self._Capabilities()[key])
 		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,key)))
 

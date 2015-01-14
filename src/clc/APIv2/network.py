@@ -17,8 +17,8 @@ Network object variables:
 """
 
 
-# TODO - create, change, delete NW (need API)
-# TODO - get network details (IP range, vlan, etc)
+# TODO - create, change, delete NW  - pending API spec
+# TODO - get network details (IP range, vlan, etc) - pending API spec
 # TODO - filter NW by alias?
 
 

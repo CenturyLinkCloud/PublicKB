@@ -17,11 +17,15 @@ Group object variables:
 	group.type
 	group.status
 	group.server_count
+	group.created_by
+	group.created_date - POSIX time
+	group.modified_by
+	group.modified_date - POSIX time
+	group.dirty - bool indicating whether server object is different than cloud object
 
 Group object variables available but access subject to change with future releases:
 
 	group.custom_fields
-	group.change_info
 
 """
 
@@ -34,10 +38,8 @@ Group object variables available but access subject to change with future releas
 # TODO - Links: scheduledActivities, upcomingScheduledActivities, horizontalAutoscalePolicyMapping, defaults
 # TODO - find group - recursively search to find and return specific group
 # TODO - async operations need to return a work queue class item for further followup
-# TODO - use utility class to rewrite timestamps as unixtime
 # TODO - server power actions - these take a list of server names which we know
 # TODO - horizontalAutoscalePolicyMapping, scheduledActivities, upcomingScheduledActivities
-# TODO - Implement Groups class as a collection of groups?
 # TODO - archiveGroupAction
 # TODO - Groups search by customfields
 # TODO - Update Get in templates, etc. to raise error on failure
@@ -134,14 +136,29 @@ class Group(object):
 		else:  self.alias = clc.v2.Account.GetAlias()
 
 		if group_obj:  self.data = group_obj
-		else:  self.data = clc.v2.API.Call('GET','groups/%s/%s' % (self.alias,self.id))
+		else:  self.Refresh()
 
 
 	def __getattr__(self,var):
 		key = re.sub("_(.)",lambda pat: pat.group(1).upper(),var)
 
 		if key in self.data:  return(self.data[key])
+		elif key in self.data['changeInfo']:  return(self.data['changeInfo'][key])
 		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,key)))
+
+
+	def Refresh(self):
+		"""Reloads the group object to synchronize with cloud representation.
+		
+		>>> clc.v2.Group("wa-1234").Refresh()
+		
+		"""
+
+		self.dirty = False
+		self.data = clc.v2.API.Call('GET','groups/%s/%s' % (self.alias,self.id))
+
+		self.data['changeInfo']['createdDate'] = clc.v2.time_utils.ZuluTSToSeconds(self.data['changeInfo']['createdDate'])
+		self.data['changeInfo']['modifiedDate'] = clc.v2.time_utils.ZuluTSToSeconds(self.data['changeInfo']['modifiedDate'])
 
 
 	def Defaults(self,key):
@@ -181,6 +198,17 @@ class Group(object):
 		"""
 
 		return(clc.v2.Servers(alias=self.alias,servers_lst=[obj['id'] for obj in self.data['links'] if obj['rel']=='server']))
+
+
+	def Archive(self):  return(self.Servers().Archive())
+	def Pause(self):  return(self.Servers().Pause())
+	def ShutDown(self):  return(self.Servers().ShutDown())
+	def Reboot(self):  return(self.Servers().Reboot())
+	def Reset(self):  return(self.Servers().Reset())
+	def PowerOn(self):  return(self.Servers().PowerOn())
+	def PowerOff(self):  return(self.Servers().PowerOff())
+	def StartMaintenance(self):  return(self.Servers().StartMaintenance())
+	def StopMaintenance(self):  return(self.Servers().StopMaintenance())
 
 
 	def Create(self,name,description=None):  

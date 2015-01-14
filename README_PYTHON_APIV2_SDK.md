@@ -353,11 +353,15 @@ Object variables:
 * group.type
 * group.status
 * group.server_count
+* group.created_by
+* group.created_date
+* group.modified_by
+* group.modified_date
+* group.dirty - bool indicating whether server object is different than cloud object
 
 Object variables available but access subject to change with future releases:
 
 * group.custom_fields
-* group.change_info
 
 
 ### clc.v2.Group.GetAll (static)
@@ -405,6 +409,18 @@ Test5
 ```
 
 
+### clc.v2.Group.Refresh
+```python
+clc.v2.Group.Refresh()
+```
+
+Reloads the group object to synchronize with cloud representation.
+
+```python
+>>> clc.v2.Group("wa-123").Refresh()
+```
+
+
 ### clc.v2.Group.Delete
 ```python
 clc.v2.Group.Delete()
@@ -416,6 +432,22 @@ Deletes group.  Returns a `Requests` object.
 >>> clc.v2.Group("wa1-4416").Create(name="Test6")
 <clc.APIv2.group.Group object at 0x1041937d0>
 >>> clc.v2.Group(_.id).Delete().WaitUntilComplete()
+0
+```
+
+
+### Operations: clc.v2.Group.Pause, ShutDown, Reboot, Reset, PowerOn, PowerOff, Archive, StartMaintenance, StopMaintenance
+```python
+clc.v2.Group.Pause()
+```
+
+All above operations methods behave in the same manner.  They apply the operation command to all
+servers in the object.  All are asynchronous methods so they return a `Requests` object.
+
+```python
+>>> clc.v2.Group("wa-123").Pause()
+<clc.APIv2.queue.Requests object at 0x105fea7d0>
+>>> _.WaitUntilComplete()
 0
 ```
 
@@ -516,7 +548,7 @@ NY1BTDIPHYP0101
 
 ### Operations: clc.v2.Servers.Pause, ShutDown, Reboot, Reset, PowerOn, PowerOff, Archive, StartMaintenance, StopMaintenance
 ```python
-clc.v2.Pause()
+clc.v2.Servers.Pause()
 ```
 
 All above operations methods behave in the same manner.  They apply the operation command to all
@@ -540,33 +572,36 @@ servers in the object.  All are asynchronous methods so they return a `Requests`
 
 Object variables:
 
-    server.id
-    server.description
-    server.cpu
-    server.power_state
-    server.memory
-    server.storage
-    server.group_id
-    server.is_template
-    server.location_id
-    server.name
-    server.os
-    server.os_type
-    server.status
-    server.type
-    server.storage_type
-    server.in_maintenance_mode
-    server.reserved_drive_paths
-    server.adding_cpu_requires_reboot
-    server.adding_memory_requires_reboot
-	server.dirty - whether changes have been made to the cloud server but not reflected in server object
+* server.id
+* server.description
+* server.cpu
+* server.power_state
+* server.memory
+* server.storage
+* server.group_id
+* server.is_template
+* server.location_id
+* server.name
+* server.os
+* server.os_type
+* server.status
+* server.type
+* server.storage_type
+* server.in_maintenance_mode
+* server.reserved_drive_paths
+* server.adding_cpu_requires_reboot
+* server.adding_memory_requires_reboot
+* server.created_by
+* server.created_date
+* server.modified_by
+* server.modified_date
+* server.dirty - whether changes have been made to the cloud server but not reflected in server object
 
 Object variables available but access subject to change with future releases:
 
-    server.custom_fields
-    server.change_info
-    server.alert_policies
-    server.ip_addresses
+* server.custom_fields
+* server.alert_policies
+* server.ip_addresses
 
 
 ### clc.v2.Server.Create (Static)
