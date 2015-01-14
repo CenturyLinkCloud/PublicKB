@@ -51,6 +51,26 @@ class Disks(object):
 		return(results)
 
 
+	def Add(self,size,path=None,type="partitioned"):
+		"""Add new disk.
+
+		This request will error if disk is protected and cannot be removed (e.g. a system disk)
+
+
+		"""
+
+		if type=="partitioned" and not path:  raise(clc.CLCException("Must specify path to mount new disk"))
+		# TODO - Raise exception if too many disks
+		# TODO - Raise exception if too much total size (4TB standard, 1TB HS)
+
+		disk_set = [{'diskId': o.id, 'sizeGB': o.size} for o in self.parent.disks if o!=self]
+		parent.disks = [o for o in self.parent.disks if o!=self]
+		self.size = size
+		self.parent.server.dirty = True
+		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.parent.server.alias,self.parent.server.id),
+		                                       json.dumps([{"op": "set", "member": "disks", "value": disk_set}]),debug=True)))
+
+
 
 class Disk(object):
 
@@ -75,6 +95,7 @@ class Disk(object):
 
 		if size>1024:  raise(clc.CLCException("Cannot grow disk beyond 1024GB"))
 		if size<=self.size:  raise(clc.CLCException("New size must exceed current disk size"))
+		# TODO - Raise exception if too much total size (4TB standard, 1TB HS)
 
 
 		disk_set = [{'diskId': o.id, 'sizeGB': o.size} for o in self.parent.disks if o!=self]
@@ -82,7 +103,7 @@ class Disk(object):
 		disk_set.append({'diskId': self.id, 'sizeGB': self.size})
 		self.parent.server.dirty = True
 		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.parent.server.alias,self.parent.server.id),
-		                                       json.dumps([{"op": "set", "member": "disks", "value": disk_set}]),debug=True)))
+		                                       json.dumps([{"op": "set", "member": "disks", "value": disk_set}]))))
 
 
 	def Delete(self):
