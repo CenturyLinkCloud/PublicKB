@@ -45,11 +45,15 @@
 
     5.  Increase the limit of the specific Resource
 
+paragraph
+
 <table>
   <tr>
     <td>Foo</td>
   </tr>
 </table>
+
+paragraph
 
 
 
