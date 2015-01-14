@@ -77,6 +77,16 @@
 
   -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
+<div class="kb-post-note">
+  <h3>Note</h3>
+  <p></p>
+</div>
+
+<div class="kb-post-alert">
+  <h3>Alert</h3>
+  <p></p>
+</div>
+
 <table>
   <th>
     dfdf
