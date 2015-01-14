@@ -21,7 +21,7 @@
 </div>
 
 ### Table of Contents
-  * <span>[Steps - Numbered - Nested](#chapter-1)</span>
+  * <span class="toc-anchor">[Steps - Numbered - Nested](#chapter-1)</span>
   * [Basic Numbered List](#chapter-2)
   * [Basic List](#chapter-3)
   * [Note](#chapter-4)
