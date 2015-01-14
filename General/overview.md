@@ -21,7 +21,7 @@
 </div>
 
 ### Table of Contents
-  * [Steps - Numbered - Nested](#chapter-1)
+  * [<span>Steps - Numbered - Nested</span>](#chapter-1)
   * [Basic Numbered List](#chapter-2)
   * [Basic List](#chapter-3)
   * [Note](#chapter-4)
