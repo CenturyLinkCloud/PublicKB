@@ -11,6 +11,7 @@ will follow suit.
 * [Datacenter](#datacenter) - View and interact with geographic specific datacenter components
 * [Groups](#groups) and [Group](#group) - `Groups` and `Group` classes.  Logical organization around assets by group which can contain sub-groups or servers
 * [Servers](#servers) and [Server](#server) - `Servers` and `Server` classes.  Cloud servers
+* [Disks](#disks) and [Disk](#disk) - `Disks` and `Disk` classes.  Cloud server related disk classes.
 * [Requests](#requests) and [Request](#request) - `Requests` and `Request` classes.  Interface to work queue for async operations
 
 
