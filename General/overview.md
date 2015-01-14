@@ -56,4 +56,12 @@
 
     5.  Increase the limit of the specific Resource
 
+### Examnple Organizational Role Breakdown
+
+1.  16 vCPU, with at least 2GHZz per vCPU
+
+2. 128 GB Memory
+
+3. 4 TB total VM storage (up to 4 drives of 1 TB apiece)
+
 
