@@ -253,6 +253,9 @@ class Server(object):
 	def Disks(self):
 		"""Return disks object associated with server.
 
+		>>> clc.v2.Server("WA1BTDIX01").Disks()
+		<clc.APIv2.disk.Disks object at 0x10feea190>
+
 		"""
 
 		if not self.disks:  self.disks = clc.v2.Disks(server=self,disks_lst=self.data['details']['disks'])

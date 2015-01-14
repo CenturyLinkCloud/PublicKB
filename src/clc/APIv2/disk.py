@@ -68,6 +68,9 @@ class Disk(object):
 
 		Size must be less than 1024 and must be greater than the current size.
 
+		>>> clc.v2.Server("WA1BTDIX01").Disks().disks[2].Grow(30).WaitUntilComplete()
+		0
+
 		"""
 
 		if size>1024:  raise(clc.CLCException("Cannot grow disk beyond 1024GB"))
@@ -75,15 +78,8 @@ class Disk(object):
 
 
 		disk_set = [{'diskId': o.id, 'sizeGB': o.size} for o in self.parent.disks if o!=self]
-		print "cds=%s" % disk_set
 		self.size = size
 		disk_set.append({'diskId': self.id, 'sizeGB': self.size})
-		print "nds=%s" % disk_set
-		# 0: {op: "set", member: "disks",}
-		#value: [{diskId: "0:0", sizeGB: 1, type: "raw"}, {diskId: "0:1", sizeGB: 2, type: "raw"},]
-		#	0: {diskId: "0:0", sizeGB: 1, type: "raw"}
-		#	1: {diskId: "0:1", sizeGB: 2, type: "raw"}
-		#	2: {diskId: "0:2", sizeGB: 272, type: "raw"}
 		self.parent.server.dirty = True
 		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.parent.server.alias,self.parent.server.id),
 		                                       json.dumps([{"op": "set", "member": "disks", "value": disk_set}]),debug=True)))
