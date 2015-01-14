@@ -42,6 +42,10 @@ Server object variables available but access subject to change with future relea
 """
 
 # vCur:
+# TODO - disks
+# TODO - add disk
+# TODO - grow disk
+# TODO - delete disk
 # TODO - Link to Public IP class
 
 # vNext:
