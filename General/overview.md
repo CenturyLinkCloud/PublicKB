@@ -28,7 +28,7 @@
   * [Alert](#chapter-5)
 
 <!-- STEPS MODULE - NESTED CONTENT-->
-### Detailed Steps <a id="chapter-1"></a>
+### Detailed Steps <a id="chapter-1" class="kb-toc-anchor"></a>
     
 1.  Error Message
 
