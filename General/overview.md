@@ -45,14 +45,12 @@
 
     5.  Increase the limit of the specific Resource
 
-``` markdown
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-```
-``` xml
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+
+
 <div class="highlight"><pre><span class="nx">grunt</span><span class="p">.</span><span class="nx">initConfig</span><span class="p">({</span>
   <span class="nx">assemble</span><span class="o">:</span> <span class="p">{</span>
     <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
@@ -71,7 +69,6 @@
     <span class="p">}</span>
   <span class="p">}</span>
 <span class="p">};</span>
-</pre></div>
-```
+
 
   
