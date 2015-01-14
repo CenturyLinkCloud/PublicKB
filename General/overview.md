@@ -45,15 +45,18 @@
 
     5.  Increase the limit of the specific Resource
 
-paragraph <span>this is a span</span>
 
-  <table>
-    <tr>
-      <td>Foo</td>
-    </tr>
-  </table>
+This is a regular paragraph
 
-paragraph
+
+<table>
+  <tr>
+    <td>Foo</td>
+  </tr>
+</table>
+
+
+This is a regular paragraph
 
 
 
