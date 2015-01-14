@@ -897,6 +897,161 @@ Ansible Managed Servers
 
 
 
+
+## Disks
+
+[Disks pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.disk.html)
+
+
+### clc.v2.Disks
+```python
+clc.v2.Disks( server, disks_lst )
+```
+
+Create `Disks` object.  This is typically only called from the `Server` object.
+`Server` is a server object.
+
+
+### clc.v2.Disks.Add
+```python
+clc.v2.Disks.Add(self,size,path=None,type="partitioned"):
+```
+
+Add new disk.
+
+This request will error if disk is protected and cannot be removed (e.g. a system disk)
+
+Note the Disks object will need to be rebuilt to get the ID for the new disk if future
+actions will be executed on it.  Calling clc.v2.Server.Refresh if accessed through server
+object will accomplish this.
+
+We use a temporary disk placeholder - if the disk add fails this will not be reflected in
+the temporary placeholder.  Again recommendation to call clc.v2.Server.Refresh after the
+work has completed.
+
+
+```python
+# Partitioned disk
+>>> clc.v2.Server("WA1BTDIX01").Disks().Add(size=20,path=None,type="raw").WaitUntilComplete()
+0
+
+# Raw disk
+>>> clc.v2.Server("WA1BTDIX01").Disks().Add(size=20,path=None,type="raw").WaitUntilComplete()
+0
+```
+
+
+### clc.v2.Disks.Get
+```python
+clc.v2.Disks.Get( key ):
+```
+
+Get disk by providing mount point or ID.
+
+If key is not unique and finds multiple matches only the first will be returned
+
+
+### clc.v2.Disks.Search
+```python
+clc.v2.Disks.Get( search ):
+```
+
+Search disk list by partial mount point or ID
+
+
+### clc.v2.Disks.Grow
+```python
+clc.v2.Disk.Grow( size )
+```
+
+Grow disk to the newly specified size.
+
+Size must be less than 1024 and must be greater than the current size.
+
+```python
+>>> clc.v2.Server("WA1BTDIX01").Disks().disks[2].Grow(30).WaitUntilComplete()
+0
+```
+
+
+
+## Disk
+
+[Disk pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.disk.html)
+
+
+### Class variables
+
+Object variables:
+
+* disk.id
+* disk.partition_paths - list of mounts paths
+* disk.size - disk size in GB
+
+
+### clc.v2.Disk
+```python
+clc.v2.Disk( id, parent, disk_obj=None )
+```
+
+Create `Disk` object.  This is typically only called from the `Disks` object.
+
+
+### clc.v2.Disk.Grow
+```python
+clc.v2.Disk.Grow( size )
+```
+
+Grow disk to the newly specified size.
+
+Size must be less than 1024 and must be greater than the current size.
+
+```python
+>>> clc.v2.Server("WA1BTDIX01").Disks().disks[2].Grow(30).WaitUntilComplete()
+0
+```
+
+
+### clc.v2.Disk.Delete
+```python
+clc.v2.Disk.Delete()
+```
+
+This request will error if disk is protected and cannot be removed (e.g. a system disk)
+
+```python
+>>> clc.v2.Server("WA1BTDIX01").Disks().disks[2].Delete().WaitUntilComplete()
+0
+```
+
+
+
+## Request
+
+[Request pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.request.html)
+
+
+### Class variables
+
+Object variables:
+
+* request.id
+* request.alias
+* request.time_created
+* request.time_executed
+* request.time_completed
+
+
+### clc.v2.Request(id,alias=None,request_obj=None)
+```python
+clc.v2.Request( id, alias=None, request_obj=None )
+```
+
+Create a `Request` object.
+
+
+
+
 ## Request
 
 [Requests pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.request.html)
