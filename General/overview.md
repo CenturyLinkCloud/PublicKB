@@ -58,6 +58,8 @@
 
 ### Examnple Organizational Role Breakdown
 
++ 
+
   1.  16 vCPU, with at least 2GHZz per vCPU
 
   2.  128 GB Memory
