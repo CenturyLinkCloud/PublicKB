@@ -20,7 +20,7 @@
   </div>
 </div>
 
-# Table of Contents
+### Table of Contents
   * [Steps - Numbered - Nested](#chapter-1)
   * [Basic Numbered List](#chapter-2)
   * [Basic List](#chapter-3)
