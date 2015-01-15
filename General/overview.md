@@ -51,6 +51,7 @@
   * <span class="kb-toc-link">[Alert](#anchor-5)</span>
 
 
+<pre>
 ```
 ### Table of Contents
   * <span class="kb-toc-link">[Steps - Numbered - Nested](#anchor-1)</span>
@@ -59,6 +60,7 @@
   * <span class="kb-toc-link">[Note](#anchor-4)</span>
   * <span class="kb-toc-link">[Alert](#anchor-5)</span>
 ```
+</pre>
 
 
 <!-- STEPS MODULE - NESTED CONTENT-->
