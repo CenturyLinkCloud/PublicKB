@@ -87,22 +87,18 @@
     </div>
 
 ### Table of Contents
-  * <span class="kb-toc-link">[Steps - Numbered - Nested](#anchor-1)</span>
-  * <span class="kb-toc-link">[Basic Numbered List](#anchor-2)</span>
-  * <span class="kb-toc-link">[Basic List](#anchor-3)</span>
-  * <span class="kb-toc-link">[Note](#anchor-4)</span>
-  * <span class="kb-toc-link">[Alert](#anchor-5)</span>
+* <span class="kb-toc-link">[Steps - Numbered - Nested](#anchor-1)</span>
+* <span class="kb-toc-link">[Basic Numbered List](#anchor-2)</span>
+* <span class="kb-toc-link">[Basic List](#anchor-3)</span>
+* <span class="kb-toc-link">[Note](#anchor-4)</span>
+* <span class="kb-toc-link">[Alert](#anchor-5)</span>
 
-<pre>
-<code>
-### Table of Contents
-  * <span class="kb-toc-link">[Steps - Numbered - Nested](#anchor-1)</span>
-  * <span class="kb-toc-link">[Basic Numbered List](#anchor-2)</span>
-  * <span class="kb-toc-link">[Basic List](#anchor-3)</span>
-  * <span class="kb-toc-link">[Note](#anchor-4)</span>
-  * <span class="kb-toc-link">[Alert](#anchor-5)</span>
-</code>
-</pre>
+    ### Table of Contents
+    * <span class="kb-toc-link">[Steps - Numbered - Nested](#anchor-1)</span>
+    * <span class="kb-toc-link">[Basic Numbered List](#anchor-2)</span>
+    * <span class="kb-toc-link">[Basic List](#anchor-3)</span>
+    * <span class="kb-toc-link">[Note](#anchor-4)</span>
+    * <span class="kb-toc-link">[Alert](#anchor-5)</span>
 
     <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
 
