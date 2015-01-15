@@ -3,8 +3,8 @@
   "date": "01-13-2015",
   "author": "Kevin Bleich",
   "attachments": [],
-  "related-products" : [],
-  "related-questions": [
+  "related_products" : [],
+  "related_questions": [
     {
       "question": "What's new in the server alerting service?",
       "answer": "The CLC team updated multiple aspects of the service. Previously, users configured monitors for each server and viewed a reports tab to track performance. Now, you create CPU/memory/storate alert policies, apply them to servers, and consume alerts in 3 key ways. Alerts can be sent via email, webhook, or through visual indicators in the updated Servers user interface."
