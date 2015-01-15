@@ -45,7 +45,7 @@
       "date": "01-13-2015",
       "author": "Kevin Bleich",
       "attachments": [],
-      "related_products" : [],
+      "related\_products" : [],
       "related_questions": [
         {
           "question": "What's new in the server alerting service?",
