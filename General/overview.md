@@ -102,7 +102,7 @@
   </p>
 </div>
 
-CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
+CenturyLink Cloud currently offers eight roles that are avaialable to assign users to <code>http://api.tier3.com/[inline]/[code]/[snippet]</code>. A brief description of each role is available on the User Permissions page, and the complete list of actions.
 
 <div class="kb-post-alert" id="chapter-5">
   <a id="anchor-5" class="kb-toc-anchor" href="#anchor-5"></a>
