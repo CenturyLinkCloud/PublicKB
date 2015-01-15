@@ -18,7 +18,7 @@
   "contentIsHTML": false
 }}}
 
-<a class="show-markdown">Show Markdown</a>
+<a class="show-markdown closed" href="#">Show Markdown</a>
 
 <pre>
 <code>
