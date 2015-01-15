@@ -139,6 +139,7 @@
 
     5.  Increase the limit of the specific Resource
 
+# MARKDOWN
 <!-- BREAK -->
     ### Detailed Steps
         
@@ -175,7 +176,7 @@
         4.  Scroll down to __Resource Limits__
 
         5.  Increase the limit of the specific Resource
-    
+
 <!-- BREAK -->
 ### Basic Numbered List Module with Title <a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>
 
