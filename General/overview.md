@@ -36,10 +36,10 @@
 }}}
 
 <div>
-  <a class="show-markdown closed" href="#" data-toggle="collapse" data-target="#collapseMe" data-closed-text="Show Config Data" data-open-text="Hide Congif Data">Show Config Data</a>
+  <a class="show-markdown" href="#" data-toggle="collapse" data-target="#collapseMe">Show/Hide Article Config Data</a>
 </div>
 
-<pre class="collapse in" id="collapseMe">
+<pre class="collapse" id="collapseMe">
 <code>
 \{{{
   "title": "Overview Test Article",
