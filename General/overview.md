@@ -332,6 +332,8 @@ Anything indented 4 spaces (two tabs) in a markdown file will automatically gene
           "views/*"
         ]
 
+_The following sections are created automatically via the data structure added to the article data found at the top of this page_
+
 
     
 
