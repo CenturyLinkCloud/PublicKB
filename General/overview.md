@@ -173,7 +173,7 @@
 
 <!-- LIST - NUMBERED - MARKDOWN-->
 
-    ### Basic Numbered List Module with Title ```<a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>```
+    ### Basic Numbered List Module with Title <a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>
 
     + 
 
@@ -262,6 +262,10 @@ CenturyLink Cloud currently offers eight roles that are avaialable to assign use
     </div>
 
 <!-- CODE BLOCK - MARKDOWN - INDENT TWO SPACE -->
+
+### Code Block Example
+
+Anything indented 4 spaces will automattically generate a ```<pre><code></code></pre>``` around the content. For example, a piece of the gulpfile: <br>
 
     gulp.task "server", ->
       plugins.nodemon
