@@ -65,6 +65,7 @@
 "title": "Overview Test Article",
 ```
 
+<pre>
 ```
 "date": "01-13-2015",
 "author": "Kevin Bleich",
@@ -83,6 +84,7 @@
 "preview" : "",
 "contentIsHTML": false
 ```
+</pre>
 
 <!-- OVERVIEW MODULE - NESTED AUDIENCE MODULE-->
 <div class="kb-post-overview">
