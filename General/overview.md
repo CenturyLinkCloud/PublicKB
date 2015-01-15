@@ -74,41 +74,41 @@
 
     5.  Increase the limit of the specific Resource
 
-      ### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
-          
-      1.  Error Message
-
-          You get an error in the upper right hand corner of Control indicating lack of resources (CPU, Memory, Storage) when you are building a new machine. 
-
-      2.  Contact Support
+    ### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
         
-          Please contact support on Chat or by emailing noc@email.com
+    1.  Error Message
 
-          __To open a Chat with an engineer:__
+        You get an error in the upper right hand corner of Control indicating lack of resources (CPU, Memory, Storage) when you are building a new machine. 
 
-          1.  Log into control
+    2.  Contact Support
+      
+        Please contact support on Chat or by emailing noc@email.com
 
-          2.  Go to menu and select __Info__
+        __To open a Chat with an engineer:__
 
-          3.  At the bottom of the page, click __Support Chat__
+        1.  Log into control
 
-      3.  Please let them know that you have reached your resource limitations.
+        2.  Go to menu and select __Info__
 
-      4.  The engineer will validate your identity and then increase your limit.
+        3.  At the bottom of the page, click __Support Chat__
 
-      5.  After the resources on your account have increased.
+    3.  Please let them know that you have reached your resource limitations.
 
-          __In Control:__
+    4.  The engineer will validate your identity and then increase your limit.
 
-          1.  Go to __Servers__
+    5.  After the resources on your account have increased.
 
-          2.  Select the proper Data-Center that you need the additional resources
+        __In Control:__
 
-          3.  Select __Settings__
+        1.  Go to __Servers__
 
-          4.  Scroll down to __Resource Limits__
+        2.  Select the proper Data-Center that you need the additional resources
 
-          5.  Increase the limit of the specific Resource
+        3.  Select __Settings__
+
+        4.  Scroll down to __Resource Limits__
+
+        5.  Increase the limit of the specific Resource
 
 ### Basic Numbered List Module with Title <a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>
 
