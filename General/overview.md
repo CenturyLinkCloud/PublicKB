@@ -39,6 +39,30 @@
   <a class="show-markdown closed" href="#" data-toggle="collapse" data-target="#collapseMe">Show Markdown</a>
 </div>
 
+<pre class="collapse" id="collapseMe">
+  <code>
+  \{{{
+    "title": "Overview Test Article",
+    "date": "01-13-2015",
+    "author": "Kevin Bleich",
+    "attachments": [],
+    "related\_products" : [],
+    "related_questions": [
+      {
+        "question": "What's new in the server alerting service?",
+        "answer": "The CLC team updated multiple aspects of the service. Previously, users configured monitors for each server and viewed a reports tab to track performance. Now, you create CPU/memory/storate alert policies, apply them to servers, and consume alerts in 3 key ways. Alerts can be sent via email, webhook, or through visual indicators in the updated Servers user interface."
+      },
+      {
+        "question": "How do I create alert policies in the Control Portal?",
+        "answer": "Visit the Alerts page using the main navigation menu, then choose create alert policy. Provide a name for the policy and a specific utilization threshold for CPU/memory/storage that should trigger an alert."
+      }
+    ],
+    "preview" : "",
+    "contentIsHTML": false
+  }}}
+  </code>
+</pre>
+
 <!-- OVERVIEW MODULE - NESTED AUDIENCE MODULE-->
 <div class="kb-post-overview">
   <h3>Overview</h3>
@@ -63,22 +87,24 @@
     </div>
 
 ### Table of Contents
-* <span class="kb-toc-link">[Steps - Numbered - Nested](#anchor-1)</span>
-* <span class="kb-toc-link">[Basic Numbered List](#anchor-2)</span>
-* <span class="kb-toc-link">[Basic List](#anchor-3)</span>
-* <span class="kb-toc-link">[Note](#anchor-4)</span>
-* <span class="kb-toc-link">[Alert](#anchor-5)</span>
+  * <span class="kb-toc-link">[Steps - Numbered - Nested](#anchor-1)</span>
+  * <span class="kb-toc-link">[Basic Numbered List](#anchor-2)</span>
+  * <span class="kb-toc-link">[Basic List](#anchor-3)</span>
+  * <span class="kb-toc-link">[Note](#anchor-4)</span>
+  * <span class="kb-toc-link">[Alert](#anchor-5)</span>
 
 <pre>
 <code>
-  ### Table of Contents
-    * <span class="kb-toc-link">[Steps - Numbered - Nested](#anchor-1)</span>
-    * <span class="kb-toc-link">[Basic Numbered List](#anchor-2)</span>
-    * <span class="kb-toc-link">[Basic List](#anchor-3)</span>
-    * <span class="kb-toc-link">[Note](#anchor-4)</span>
-    * <span class="kb-toc-link">[Alert](#anchor-5)</span>
+### Table of Contents
+  * <span class="kb-toc-link">[Steps - Numbered - Nested](#anchor-1)</span>
+  * <span class="kb-toc-link">[Basic Numbered List](#anchor-2)</span>
+  * <span class="kb-toc-link">[Basic List](#anchor-3)</span>
+  * <span class="kb-toc-link">[Note](#anchor-4)</span>
+  * <span class="kb-toc-link">[Alert](#anchor-5)</span>
 </code>
 </pre>
+
+    <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
 
 ### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
     
