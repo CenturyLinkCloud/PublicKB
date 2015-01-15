@@ -76,6 +76,7 @@
 
 <pre>
 <code>
+<span>
 ### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
     
 1.  Error Message
@@ -111,6 +112,7 @@
     4.  Scroll down to __Resource Limits__
 
     5.  Increase the limit of the specific Resource
+</span>
 </code>
 </pre>
 
