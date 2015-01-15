@@ -113,8 +113,25 @@ CenturyLink Cloud currently offers eight roles that are avaialable to assign use
 </div>
 
 <pre>
-``` html
-Sample text here...
+``` javascript
+grunt.initConfig({
+  assemble: {
+    options: {
+      assets: 'docs/assets',
+      data: 'src/data/*.{json,yml}',
+      helpers: 'src/custom-helpers.js',
+      partials: ['src/partials/**/*.{hbs,md}']
+    },
+    pages: {
+      options: {
+        layout: 'default.hbs'
+      },
+      files: {
+        './': ['src/templates/pages/index.hbs']
+      }
+    }
+  }
+};
 ```
 </pre>
 
