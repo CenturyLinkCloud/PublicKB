@@ -40,6 +40,7 @@
 </div>
 
 <pre class="collapse" id="collapseMe">
+  <code>
   \{{{
     "title": "Overview Test Article",
     "date": "01-13-2015",
@@ -59,6 +60,7 @@
     "preview" : "",
     "contentIsHTML": false
   }}}
+  </code>
 </pre>
 
 <!-- OVERVIEW MODULE - NESTED AUDIENCE MODULE-->
