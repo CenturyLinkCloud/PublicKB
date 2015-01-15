@@ -256,7 +256,7 @@ The above Table of Contents is a working example and all of the follwing section
 
 <!-- NOTE -->
 
-<div class="kb-post-note" id="chapter-4">
+<div class="kb-post-note">
   <a id="anchor-4" class="kb-toc-anchor" href="#anchor-4"></a>
   <h3>Note</h3>
   <p>
@@ -266,7 +266,7 @@ The above Table of Contents is a working example and all of the follwing section
 
 <!-- NOTE - HTML -->
 
-    <div class="kb-post-note" id="chapter-4">
+    <div class="kb-post-note">
       <a id="anchor-4" class="kb-toc-anchor" href="#anchor-4"></a>
       <h3>Note</h3>
       <p>
@@ -274,23 +274,9 @@ The above Table of Contents is a working example and all of the follwing section
       </p>
     </div>
 
-<!-- INLINE CODE SNIPPET -->
-
-
-CenturyLink Cloud currently offers eight roles that are avaialable to assign users to <code>http://api.tier3.com/[inline]/[code]/[snippet]</code>. A brief description of each role is available on the User Permissions page, and the complete list of actions.
-
-
-<!-- INLINE CODE SNIPPET- MARKDOWN/HTML -->
-
-    CenturyLink Cloud currently offers eight roles that are avaialable to assign users to <code>http://api.tier3.com/[inline]/[code]/[snippet]</code>. A brief description of each role is available on the User Permissions page, and the complete list of actions.
-
-    OR
-
-    CenturyLink Cloud currently offers eight roles that are avaialable to assign users to ```http://api.tier3.com/[inline]/[code]/[snippet]```. A brief description of each role is available on the User Permissions page, and the complete list of actions.
-
 <!-- ALERT -->
 
-<div class="kb-post-alert" id="chapter-5">
+<div class="kb-post-alert">
   <a id="anchor-5" class="kb-toc-anchor" href="#anchor-5"></a>
   <h3>Alert</h3>
   <p>
@@ -300,7 +286,7 @@ CenturyLink Cloud currently offers eight roles that are avaialable to assign use
 
 <!-- ALERT - HTML -->
 
-    <div class="kb-post-alert" id="chapter-5">
+    <div class="kb-post-alert">
       <a id="anchor-5" class="kb-toc-anchor" href="#anchor-5"></a>
       <h3>Alert</h3>
       <p>
@@ -308,9 +294,27 @@ CenturyLink Cloud currently offers eight roles that are avaialable to assign use
       </p>
     </div>
 
+
+<!-- INLINE CODE SNIPPET -->
+
+### Code Snippet Example <a id="anchor-6" class="kb-toc-anchor" href="#anchor-6"></a>
+
+CenturyLink Cloud currently offers eight roles that are avaialable to assign users to <code>http://api.tier3.com/[inline]/[code]/[snippet]</code>. A brief description of each role is available on the User Permissions page, and the complete list of actions.
+
+
+<!-- INLINE CODE SNIPPET- MARKDOWN/HTML -->
+
+    ### Code Snippet Example
+
+    CenturyLink Cloud currently offers eight roles that are avaialable to assign users to <code>http://api.tier3.com/[inline]/[code]/[snippet]</code>. A brief description of each role is available on the User Permissions page, and the complete list of actions.
+
+    OR
+
+    CenturyLink Cloud currently offers eight roles that are avaialable to assign users to ```http://api.tier3.com/[inline]/[code]/[snippet]```. A brief description of each role is available on the User Permissions page, and the complete list of actions.
+
 <!-- CODE BLOCK - MARKDOWN - INDENT TWO SPACE -->
 
-### Code Block Example
+### Code Block Example <a id="anchor-7" class="kb-toc-anchor" href="#anchor-7"></a>
 
 Anything indented 4 spaces (two tabs) in a markdown file will automatically generate a ```<pre><code></code></pre>``` around the content. For example, a piece of the gulpfile: <br>
 
