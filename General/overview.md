@@ -35,9 +35,9 @@
   "contentIsHTML": false
 }}}
 
-<!-- <div>
-  <a class="show-markdown closed" href="#" data-toggle="collapse" data-target="#collapseMe">Show Markdown</a>
-</div> -->
+<div>
+  <a class="show-markdown closed" href="#" data-toggle="collapse" data-target="#collapseMe" data-closed-text="Show Config Data" data-open-text="Hide Congif Data">Show Config Data</a>
+</div>
 
     \{{{
       "title": "Overview Test Article",
