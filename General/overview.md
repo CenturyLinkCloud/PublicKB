@@ -18,6 +18,8 @@
   "contentIsHTML": false
 }}}
 
+<a class="show-markdown">Show Markdown</a>
+
 <pre>
 <code>
 \{{{
