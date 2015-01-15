@@ -83,6 +83,12 @@
     * <span class="kb-toc-link">[Note](#anchor-4)</span>
     * <span class="kb-toc-link">[Alert](#anchor-5)</span>
 
+<!-- BREAK -->
+
+In order to add an anchor links to an element on the page, for example a heading, you need to add the following raw html anchor link with the specified class, which will engage the custom javascript written to scroll to that section. The following sections have anchor links on the headings like so:
+
+```### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>```
+
 <!-- STEPS - NESTED STEPS -->
 
 ### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
