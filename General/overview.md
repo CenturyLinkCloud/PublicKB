@@ -75,44 +75,43 @@
     5.  Increase the limit of the specific Resource
 
 
-## Emphasis
+    ### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
+        
+    1.  Error Message
 
-### Bold
-For emphasizing a snippet of text with a heavier font-weight.
+        You get an error in the upper right hand corner of Control indicating lack of resources (CPU, Memory, Storage) when you are building a new machine. 
 
-The following snippet of text is **rendered as bold text**.
+    2.  Contact Support
+      
+        Please contact support on Chat or by emailing noc@email.com
 
-``` markdown
-**rendered as bold text**
-```
-renders to:
+        __To open a Chat with an engineer:__
 
-**rendered as bold text**
+        1.  Log into control
 
-and this HTML
+        2.  Go to menu and select __Info__
 
-``` html
-<strong>rendered as bold text</strong>
-```
+        3.  At the bottom of the page, click __Support Chat__
 
-### Italics
-For emphasizing a snippet of text with italics.
+    3.  Please let them know that you have reached your resource limitations.
 
-The following snippet of text is _rendered as italicized text_.
+    4.  The engineer will validate your identity and then increase your limit.
 
-``` markdown
-_rendered as italicized text_
-```
+    5.  After the resources on your account have increased.
 
-renders to:
+        __In Control:__
 
-_rendered as italicized text_
+        1.  Go to __Servers__
 
-and this HTML:
+        2.  Select the proper Data-Center that you need the additional resources
 
-``` html
-<em>rendered as italicized text</em>
-```
+        3.  Select __Settings__
+
+        4.  Scroll down to __Resource Limits__
+
+        5.  Increase the limit of the specific Resource
+
+
 
 
 ### Basic Numbered List Module with Title <a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>
