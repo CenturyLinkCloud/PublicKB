@@ -225,17 +225,13 @@ CenturyLink Cloud currently offers eight roles that are avaialable to assign use
 </div>
 
 
-<pre>
-<code>
-<div class="kb-post-alert" id="chapter-5">
-  <a id="anchor-5" class="kb-toc-anchor" href="#anchor-5"></a>
-  <h3>Alert</h3>
-  <p>
-    CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
-  </p>
-</div>
-</code>
-</pre>
+    <div class="kb-post-alert" id="chapter-5">
+      <a id="anchor-5" class="kb-toc-anchor" href="#anchor-5"></a>
+      <h3>Alert</h3>
+      <p>
+        CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
+      </p>
+    </div>
 
 <!-- PRE/CODE BLOCK - Just indent twice-->
     gulp.task "server", ->
