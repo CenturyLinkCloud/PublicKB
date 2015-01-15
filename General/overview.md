@@ -61,7 +61,6 @@
     </code>
   </pre>
 
-<pre>
 ```
 "title": "Overview Test Article",
 "date": "01-13-2015",
@@ -81,7 +80,6 @@
 "preview" : "",
 "contentIsHTML": false
 ```
-</pre>
 
 <!-- OVERVIEW MODULE - NESTED AUDIENCE MODULE-->
 <div class="kb-post-overview">
