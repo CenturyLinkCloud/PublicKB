@@ -127,6 +127,9 @@ In order to add an anchor links to an element on the page, for example a heading
 
     ### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
 
+The above Table of Contents is a working example and all of the follwing section headings have the above anchor attached to them, but to keep things less cluttered, the markdown examples below do no include this in the print out.
+
+
 <!-- STEPS - NESTED STEPS -->
 
 ### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
