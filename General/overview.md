@@ -123,7 +123,7 @@
 
 <!-- STEPS - NESTED STEPS - MARKDOWN -->
 
-    ### Detailed Steps ```<a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>```
+    ### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
         
     1.  Error Message
 
@@ -229,7 +229,9 @@
 
 <!-- INLINE CODE SNIPPET -->
 
+
 CenturyLink Cloud currently offers eight roles that are avaialable to assign users to <code>http://api.tier3.com/[inline]/[code]/[snippet]</code>. A brief description of each role is available on the User Permissions page, and the complete list of actions.
+
 
 <!-- INLINE CODE SNIPPET- MARKDOWN/HTML -->
 
