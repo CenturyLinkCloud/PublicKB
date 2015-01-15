@@ -114,20 +114,20 @@ CenturyLink Cloud currently offers eight roles that are avaialable to assign use
 
 
 ``` javascript
-gulp.task "server", ->
-  plugins.nodemon
-    script: "server.js"
-    ext: "js,coffee",
-    ignore: [
-      "gulpfile.coffee",
-      "node_modules/*",
-      "source/*",
-      "test/*",
-      "public/*",
-      ".git/*",
-      "views/*"
-    ]
-```
+    gulp.task "server", ->
+      plugins.nodemon
+        script: "server.js"
+        ext: "js,coffee",
+        ignore: [
+          "gulpfile.coffee",
+          "node_modules/*",
+          "source/*",
+          "test/*",
+          "public/*",
+          ".git/*",
+          "views/*"
+        ]
+
 
 
 <!-- <table>
