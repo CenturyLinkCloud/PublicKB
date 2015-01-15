@@ -30,7 +30,6 @@
   </div>
 </div>
 
-
     <div class="kb-post-overview">
       <h3>Overview</h3>
       <p>CenturyLink Cloud accounts start with a pre-defined resource (CPU/memory/storage) limit per data center. As customers grow their cloud usage, it's common to request an increase in resource limits.   Note that only paying customers will have their resource limits increased unless executive approval is given.</p>
@@ -41,7 +40,6 @@
         </ul>
       </div>
     </div>
-
 
 ### Table of Contents
   * <span class="kb-toc-link">[Steps - Numbered - Nested](#anchor-1)</span>
@@ -61,7 +59,6 @@
   * <span class="kb-toc-link">[Alert](#anchor-5)</span>
 </code>
 </pre>
-
 
 <!-- STEPS MODULE - NESTED CONTENT-->
 ### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
@@ -140,7 +137,6 @@
 </code>
 </pre>
 
-
 ### Basic Numbered List Module with Title <a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>
 
 + 
@@ -150,7 +146,6 @@
   2.  128 GB Memory
 
   3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
-
 
 <pre>
 <code>
@@ -166,7 +161,6 @@
 </code>
 </pre>
 
-
 ### Basic List Module with Title <a id="anchor-3" class="kb-toc-anchor" href="#anchor-3"></a>
 
 + 
@@ -176,7 +170,6 @@
   -  128 GB Memory
 
   -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
-
 
 <pre>
 <code>
@@ -191,7 +184,6 @@
   -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 </code>
 </pre>
-
 
 <div class="kb-post-note" id="chapter-4">
   <a id="anchor-4" class="kb-toc-anchor" href="#anchor-4"></a>
@@ -211,10 +203,7 @@
 
 CenturyLink Cloud currently offers eight roles that are avaialable to assign users to <code>http://api.tier3.com/[inline]/[code]/[snippet]</code>. A brief description of each role is available on the User Permissions page, and the complete list of actions.
 
-
-
     CenturyLink Cloud currently offers eight roles that are avaialable to assign users to <code>http://api.tier3.com/[inline]/[code]/[snippet]</code>. A brief description of each role is available on the User Permissions page, and the complete list of actions.
-
 
 <div class="kb-post-alert" id="chapter-5">
   <a id="anchor-5" class="kb-toc-anchor" href="#anchor-5"></a>
@@ -223,7 +212,6 @@ CenturyLink Cloud currently offers eight roles that are avaialable to assign use
     CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
   </p>
 </div>
-
 
     <div class="kb-post-alert" id="chapter-5">
       <a id="anchor-5" class="kb-toc-anchor" href="#anchor-5"></a>
@@ -247,6 +235,27 @@ CenturyLink Cloud currently offers eight roles that are avaialable to assign use
           ".git/*",
           "views/*"
         ]
+
+### Example of Article data structure
+    {{{
+      "title": "Overview Test Article",
+      "date": "01-13-2015",
+      "author": "Kevin Bleich",
+      "attachments": [],
+      "related_products" : [],
+      "related_questions": [
+        {
+          "question": "What's new in the server alerting service?",
+          "answer": "The CLC team updated multiple aspects of the service. Previously, users configured monitors for each server and viewed a reports tab to track performance. Now, you create CPU/memory/storate alert policies, apply them to servers, and consume alerts in 3 key ways. Alerts can be sent via email, webhook, or through visual indicators in the updated Servers user interface."
+        },
+        {
+          "question": "How do I create alert policies in the Control Portal?",
+          "answer": "Visit the Alerts page using the main navigation menu, then choose create alert policy. Provide a name for the policy and a specific utilization threshold for CPU/memory/storage that should trigger an alert."
+        }
+      ],
+      "preview" : "",
+      "contentIsHTML": false
+    }}}
 
 
 
