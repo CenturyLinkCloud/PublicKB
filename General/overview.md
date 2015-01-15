@@ -342,7 +342,7 @@ Anything indented 4 spaces (two tabs) in a markdown file will automatically gene
 
 ### Notes on Additional Sections <a id="anchor-8" class="kb-toc-anchor" href="#anchor-8"></a>
 
-_The following sections, __Related Questions__ and __Attachments__, are created automatically via the data structure added to the article data found at the top of this page. The sidebar content, __Related Products__ also comes from this configuration data. However, the last section, __Related Topics__ is automatically generated and is simply the all the other articles in the same category as this one._
+_The following sections, __Related Questions__ and __Attachments__, are created automatically via the configuration data added to the article at the top of this page. The sidebar content, __Related Products__ also comes from this configuration data. However, the last section, __Related Topics__ is automatically generated and is simply the all the other articles in the same category as this one._
 
 
     
