@@ -256,7 +256,7 @@ CenturyLink Cloud currently offers eight roles that are avaialable to assign use
   ],
   "preview" : "",
   "contentIsHTML": false
-\}}}
+}}}
 </code>
 </pre>
 
