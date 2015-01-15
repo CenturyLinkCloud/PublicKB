@@ -39,8 +39,8 @@
   <a class="show-markdown closed" href="#" data-toggle="collapse" data-target="#collapseMe" data-closed-text="Show Config Data" data-open-text="Hide Congif Data">Show Config Data</a>
 </div>
 
-<pre class="collapse" id="#collapseMe">
-<code>
+  <pre class="collapse" id="collapseMe">
+  <code>
   \{{{
     "title": "Overview Test Article",
     "date": "01-13-2015",
@@ -77,8 +77,8 @@
     "preview" : "CenturyLink Cloud accounts start with a pre-defined resource (CPU/memory/storage) limit per data center. As customers grow their cloud usage, it's common to request an increase in resource limits.",
     "contentIsHTML": false
   }}}
-</code>
-</pre>
+  </code>
+  </pre>
 
 
 <!-- OVERVIEW -->
