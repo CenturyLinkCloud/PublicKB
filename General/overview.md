@@ -37,7 +37,7 @@
 
 <a class="show-markdown closed" href="#" data-toggle="collapse" data-target=".collapseMe">Show Markdown</a>
 
-<span class="collapseMe">
+<span class="collapse collapseMe">
 <pre>
 <code>
 \{{{
