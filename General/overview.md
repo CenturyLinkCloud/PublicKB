@@ -74,41 +74,43 @@
 
     5.  Increase the limit of the specific Resource
 
-    ### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
-        
-    1.  Error Message
+``` markdown
+### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
+    
+1.  Error Message
 
-        You get an error in the upper right hand corner of Control indicating lack of resources (CPU, Memory, Storage) when you are building a new machine. 
+    You get an error in the upper right hand corner of Control indicating lack of resources (CPU, Memory, Storage) when you are building a new machine. 
 
-    2.  Contact Support
-      
-        Please contact support on Chat or by emailing noc@email.com
+2.  Contact Support
+  
+    Please contact support on Chat or by emailing noc@email.com
 
-        __To open a Chat with an engineer:__
+    __To open a Chat with an engineer:__
 
-        1.  Log into control
+    1.  Log into control
 
-        2.  Go to menu and select __Info__
+    2.  Go to menu and select __Info__
 
-        3.  At the bottom of the page, click __Support Chat__
+    3.  At the bottom of the page, click __Support Chat__
 
-    3.  Please let them know that you have reached your resource limitations.
+3.  Please let them know that you have reached your resource limitations.
 
-    4.  The engineer will validate your identity and then increase your limit.
+4.  The engineer will validate your identity and then increase your limit.
 
-    5.  After the resources on your account have increased.
+5.  After the resources on your account have increased.
 
-        __In Control:__
+    __In Control:__
 
-        1.  Go to __Servers__
+    1.  Go to __Servers__
 
-        2.  Select the proper Data-Center that you need the additional resources
+    2.  Select the proper Data-Center that you need the additional resources
 
-        3.  Select __Settings__
+    3.  Select __Settings__
 
-        4.  Scroll down to __Resource Limits__
+    4.  Scroll down to __Resource Limits__
 
-        5.  Increase the limit of the specific Resource
+    5.  Increase the limit of the specific Resource
+```
 
 ### Basic Numbered List Module with Title <a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>
 
