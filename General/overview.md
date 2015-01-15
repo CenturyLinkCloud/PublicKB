@@ -87,7 +87,7 @@
 
 In order to add an anchor links to an element on the page, for example a heading, you need to add the following raw html anchor link with the specified class, which will engage the custom javascript written to scroll to that section. The following sections have anchor links on the headings like so:
 
-```### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>```
+    ### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
 
 <!-- STEPS - NESTED STEPS -->
 
@@ -271,7 +271,7 @@ CenturyLink Cloud currently offers eight roles that are avaialable to assign use
 
 ### Code Block Example
 
-Anything indented 4 spaces in a markdown file will automatically generate a ```<pre><code></code></pre>``` around the content. For example, a piece of the gulpfile: <br>
+Anything indented 4 spaces (two tabs) in a markdown file will automatically generate a ```<pre><code></code></pre>``` around the content. For example, a piece of the gulpfile: <br>
 
     gulp.task "server", ->
       plugins.nodemon
