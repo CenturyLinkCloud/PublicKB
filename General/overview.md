@@ -85,7 +85,7 @@
 
 <!-- STEPS - NESTED STEPS -->
 
-### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1">anchor</a>
+### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
     
 1.  Error Message
 
@@ -123,7 +123,7 @@
 
 <!-- STEPS - NESTED STEPS - MARKDOWN -->
 
-    ### Detailed Steps ```<a id="anchor-1" class="kb-toc-anchor" href="#anchor-1">anchor</a>```
+    ### Detailed Steps ```<a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>```
         
     1.  Error Message
 
