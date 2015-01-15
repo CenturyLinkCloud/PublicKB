@@ -61,7 +61,7 @@
     </code>
   </pre>
 
-<pre class="collapse" id="collapseMe">
+<pre>
 ```\{{{```
   ```"title": "Overview Test Article",```
   ```"date": "01-13-2015",```
