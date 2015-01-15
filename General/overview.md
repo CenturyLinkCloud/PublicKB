@@ -74,6 +74,7 @@
 
     5.  Increase the limit of the specific Resource
 
+<pre>
 ``` markdown
 ### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
     
@@ -111,6 +112,7 @@
 
     5.  Increase the limit of the specific Resource
 ```
+</pre>
 
 ### Basic Numbered List Module with Title <a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>
 
