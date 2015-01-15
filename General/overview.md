@@ -51,7 +51,7 @@
   * <span class="kb-toc-link">[Alert](#anchor-5)</span>
 
 
-``` markdown
+```
 ### Table of Contents
   * <span class="kb-toc-link">[Steps - Numbered - Nested](#anchor-1)</span>
   * <span class="kb-toc-link">[Basic Numbered List](#anchor-2)</span>
