@@ -37,8 +37,7 @@
 
 <a class="show-markdown closed" href="#" data-toggle="collapse" data-target="#collapseMe">Show Markdown</a>
 
-<span class="collapse" id="collapseMe">
-<pre>
+<pre class="collapse" id="collapseMe">
 <code>
 \{{{
   "title": "Overview Test Article",
@@ -61,8 +60,6 @@
 }}}
 </code>
 </pre>
-</span>
-
 
 <!-- OVERVIEW MODULE - NESTED AUDIENCE MODULE-->
 <div class="kb-post-overview">
@@ -94,7 +91,6 @@
   * <span class="kb-toc-link">[Note](#anchor-4)</span>
   * <span class="kb-toc-link">[Alert](#anchor-5)</span>
 
-
 <pre>
 <code>
 ### Table of Contents
@@ -108,7 +104,6 @@
 
     <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
 
-<!-- STEPS MODULE - NESTED CONTENT-->
 ### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
     
 1.  Error Message
@@ -269,7 +264,6 @@ CenturyLink Cloud currently offers eight roles that are avaialable to assign use
       </p>
     </div>
 
-<!-- PRE/CODE BLOCK - Just indent twice-->
     gulp.task "server", ->
       plugins.nodemon
         script: "server.js"
