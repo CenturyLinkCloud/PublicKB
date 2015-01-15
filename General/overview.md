@@ -35,33 +35,11 @@
   "contentIsHTML": false
 }}}
 
-<div>
+<!-- <div>
   <a class="show-markdown closed" href="#" data-toggle="collapse" data-target="#collapseMe">Show Markdown</a>
-</div>
+</div> -->
 
-<pre class="collapse" id="collapseMe">
-  <code>
-  \{{{
-    "title": "Overview Test Article",
-    "date": "01-13-2015",
-    "author": "Kevin Bleich",
-    "attachments": [],
-    "related\_products" : [],
-    "related_questions": [
-      {
-        "question": "What's new in the server alerting service?",
-        "answer": "The CLC team updated multiple aspects of the service. Previously, users configured monitors for each server and viewed a reports tab to track performance. Now, you create CPU/memory/storate alert policies, apply them to servers, and consume alerts in 3 key ways. Alerts can be sent via email, webhook, or through visual indicators in the updated Servers user interface."
-      },
-      {
-        "question": "How do I create alert policies in the Control Portal?",
-        "answer": "Visit the Alerts page using the main navigation menu, then choose create alert policy. Provide a name for the policy and a specific utilization threshold for CPU/memory/storage that should trigger an alert."
-      }
-    ],
-    "preview" : "",
-    "contentIsHTML": false
-  }}}
-  </code>
-</pre>
+<!-- OVERVIEW -->
 
 <div class="kb-post-overview">
   <h3>Overview</h3>
@@ -74,6 +52,8 @@
   </div>
 </div>
 
+<!-- OVERVIEW - HTML -->
+
     <div class="kb-post-overview">
       <h3>Overview</h3>
       <p>CenturyLink Cloud accounts start with a pre-defined resource (CPU/memory/storage) limit per data center. As customers grow their cloud usage, it's common to request an increase in resource limits.   Note that only paying customers will have their resource limits increased unless executive approval is given.</p>
@@ -85,6 +65,8 @@
       </div>
     </div>
 
+<!-- TOC -->
+
 ### Table of Contents
 * <span class="kb-toc-link">[Steps - Numbered - Nested](#anchor-1)</span>
 * <span class="kb-toc-link">[Basic Numbered List](#anchor-2)</span>
@@ -92,20 +74,18 @@
 * <span class="kb-toc-link">[Note](#anchor-4)</span>
 * <span class="kb-toc-link">[Alert](#anchor-5)</span>
 
-<!-- BREAK -->
-````
-### Table of Contents
-* <span class="kb-toc-link">[Steps - Numbered - Nested](#anchor-1)</span>
-* <span class="kb-toc-link">[Basic Numbered List](#anchor-2)</span>
-* <span class="kb-toc-link">[Basic List](#anchor-3)</span>
-* <span class="kb-toc-link">[Note](#anchor-4)</span>
-* <span class="kb-toc-link">[Alert](#anchor-5)</span>
-````
+<!-- TOC - MARKDOWN -->
 
-<!-- BREAK -->
-    <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
+    ### Table of Contents
+    * <span class="kb-toc-link">[Steps - Numbered - Nested](#anchor-1)</span>
+    * <span class="kb-toc-link">[Basic Numbered List](#anchor-2)</span>
+    * <span class="kb-toc-link">[Basic List](#anchor-3)</span>
+    * <span class="kb-toc-link">[Note](#anchor-4)</span>
+    * <span class="kb-toc-link">[Alert](#anchor-5)</span>
 
-### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
+<!-- STEPS - NESTED STEPS -->
+
+### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1">anchor</a>
     
 1.  Error Message
 
@@ -141,9 +121,9 @@
 
     5.  Increase the limit of the specific Resource
 
-# MARKDOWN
-<!-- BREAK -->
-    ### Detailed Steps
+<!-- STEPS - NESTED STEPS - MARKDOWN -->
+
+    ### Detailed Steps ```<a id="anchor-1" class="kb-toc-anchor" href="#anchor-1">anchor</a>```
         
     1.  Error Message
 
@@ -179,7 +159,8 @@
 
         5.  Increase the limit of the specific Resource
 
-<!-- BREAK -->
+<!-- LIST - NUMBERED -->
+
 ### Basic Numbered List Module with Title <a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>
 
 + 
@@ -190,19 +171,19 @@
 
   3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
-<pre>
-<code>
-### Basic Numbered List Module with Title <a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>
+<!-- LIST - NUMBERED - MARKDOWN-->
 
-+ 
+    ### Basic Numbered List Module with Title ```<a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>```
 
-  1.  16 vCPU, with at least 2GHZz per vCPU
+    + 
 
-  2.  128 GB Memory
+      1.  16 vCPU, with at least 2GHZz per vCPU
 
-  3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
-</code>
-</pre>
+      2.  128 GB Memory
+
+      3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+
+<!-- LIST - UNORDERED -->
 
 ### Basic List Module with Title <a id="anchor-3" class="kb-toc-anchor" href="#anchor-3"></a>
 
@@ -214,19 +195,19 @@
 
   -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
-<pre>
-<code>
-### Basic List Module with Title <a id="anchor-3" class="kb-toc-anchor" href="#anchor-3"></a>
+<!-- LIST - UNORDERED - MARKDOWN -->
 
-+ 
+    ### Basic List Module with Title <a id="anchor-3" class="kb-toc-anchor" href="#anchor-3"></a>
 
-  -  16 vCPU, with at least 2GHZz per vCPU
+    + 
 
-  -  128 GB Memory
+      -  16 vCPU, with at least 2GHZz per vCPU
 
-  -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
-</code>
-</pre>
+      -  128 GB Memory
+
+      -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+
+<!-- NOTE -->
 
 <div class="kb-post-note" id="chapter-4">
   <a id="anchor-4" class="kb-toc-anchor" href="#anchor-4"></a>
@@ -236,6 +217,8 @@
   </p>
 </div>
 
+<!-- NOTE - HTML -->
+
     <div class="kb-post-note" id="chapter-4">
       <a id="anchor-4" class="kb-toc-anchor" href="#anchor-4"></a>
       <h3>Note</h3>
@@ -244,9 +227,19 @@
       </p>
     </div>
 
+<!-- INLINE CODE SNIPPET -->
+
 CenturyLink Cloud currently offers eight roles that are avaialable to assign users to <code>http://api.tier3.com/[inline]/[code]/[snippet]</code>. A brief description of each role is available on the User Permissions page, and the complete list of actions.
 
+<!-- INLINE CODE SNIPPET- MARKDOWN/HTML -->
+
     CenturyLink Cloud currently offers eight roles that are avaialable to assign users to <code>http://api.tier3.com/[inline]/[code]/[snippet]</code>. A brief description of each role is available on the User Permissions page, and the complete list of actions.
+
+    OR
+
+    CenturyLink Cloud currently offers eight roles that are avaialable to assign users to ```http://api.tier3.com/[inline]/[code]/[snippet]```. A brief description of each role is available on the User Permissions page, and the complete list of actions.
+
+<!-- ALERT -->
 
 <div class="kb-post-alert" id="chapter-5">
   <a id="anchor-5" class="kb-toc-anchor" href="#anchor-5"></a>
@@ -256,6 +249,8 @@ CenturyLink Cloud currently offers eight roles that are avaialable to assign use
   </p>
 </div>
 
+<!-- ALERT - HTML -->
+
     <div class="kb-post-alert" id="chapter-5">
       <a id="anchor-5" class="kb-toc-anchor" href="#anchor-5"></a>
       <h3>Alert</h3>
@@ -263,6 +258,8 @@ CenturyLink Cloud currently offers eight roles that are avaialable to assign use
         CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
       </p>
     </div>
+
+<!-- CODE BLOCK - MARKDOWN - INDENT TWO SPACE -->
 
     gulp.task "server", ->
       plugins.nodemon
