@@ -265,7 +265,7 @@ CenturyLink Cloud currently offers eight roles that are avaialable to assign use
 
 ### Code Block Example
 
-Anything indented 4 spaces will automattically generate a ```<pre><code></code></pre>``` around the content. For example, a piece of the gulpfile: <br>
+Anything indented 4 spaces in a markdown file will automatically generate a ```<pre><code></code></pre>``` around the content. For example, a piece of the gulpfile: <br>
 
     gulp.task "server", ->
       plugins.nodemon
