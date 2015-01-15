@@ -106,33 +106,33 @@
 <!-- TOC -->
 
 ### Table of Contents
-* <span class="kb-toc-link">[Steps - Numbered - Nested](#anchor-1)</span>
-* <span class="kb-toc-link">[Basic Numbered List](#anchor-2)</span>
-* <span class="kb-toc-link">[Basic List](#anchor-3)</span>
+* <span class="kb-toc-link">[Steps with Nested Steps](#anchor-1)</span>
+* <span class="kb-toc-link">[List - Numbered](#anchor-2)</span>
+* <span class="kb-toc-link">[List - Unordered](#anchor-3)</span>
 * <span class="kb-toc-link">[Note](#anchor-4)</span>
 * <span class="kb-toc-link">[Alert](#anchor-5)</span>
 
 <!-- TOC - MARKDOWN -->
 
     ### Table of Contents
-    * <span class="kb-toc-link">[Steps - Numbered - Nested](#anchor-1)</span>
-    * <span class="kb-toc-link">[Basic Numbered List](#anchor-2)</span>
-    * <span class="kb-toc-link">[Basic List](#anchor-3)</span>
+    * <span class="kb-toc-link">[Steps with Nested Steps](#anchor-1)</span>
+    * <span class="kb-toc-link">[List - Numbered](#anchor-2)</span>
+    * <span class="kb-toc-link">[List - Unordered](#anchor-3)</span>
     * <span class="kb-toc-link">[Note](#anchor-4)</span>
-    * <span class="kb-toc-link">[Alert](#anchor-5)</span>
+    * <span class="kb-toc-link">[Alert](#anchor-5)</span>>
 
 <!-- BREAK -->
 
 In order to add an anchor links to an element on the page, for example a heading, you need to add the following raw html anchor link with the specified class, which will engage the custom javascript written to scroll to that section. The following sections have anchor links on the headings like so:
 
-    ### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
+    ### Steps with Nested Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
 
 The above Table of Contents is a working example and all of the follwing section headings have the above anchor attached to them, but to keep things less cluttered, the markdown examples below do no include this in the print out.
 
 
 <!-- STEPS - NESTED STEPS -->
 
-### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
+### Steps with Nested Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
     
 1.  Error Message
 
@@ -170,7 +170,7 @@ The above Table of Contents is a working example and all of the follwing section
 
 <!-- STEPS - NESTED STEPS - MARKDOWN -->
 
-    ### Detailed Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
+    ### Steps with Nested Steps
         
     1.  Error Message
 
@@ -208,7 +208,7 @@ The above Table of Contents is a working example and all of the follwing section
 
 <!-- LIST - NUMBERED -->
 
-### Basic Numbered List Module with Title <a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>
+### List - Numbered <a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>
 
 + 
 
@@ -220,7 +220,7 @@ The above Table of Contents is a working example and all of the follwing section
 
 <!-- LIST - NUMBERED - MARKDOWN-->
 
-    ### Basic Numbered List Module with Title <a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>
+    ### List - Numbered
 
     + 
 
@@ -232,7 +232,7 @@ The above Table of Contents is a working example and all of the follwing section
 
 <!-- LIST - UNORDERED -->
 
-### Basic List Module with Title <a id="anchor-3" class="kb-toc-anchor" href="#anchor-3"></a>
+### List - Unordered <a id="anchor-3" class="kb-toc-anchor" href="#anchor-3"></a>
 
 + 
 
@@ -244,7 +244,7 @@ The above Table of Contents is a working example and all of the follwing section
 
 <!-- LIST - UNORDERED - MARKDOWN -->
 
-    ### Basic List Module with Title <a id="anchor-3" class="kb-toc-anchor" href="#anchor-3"></a>
+    ### List - Unordered
 
     + 
 
