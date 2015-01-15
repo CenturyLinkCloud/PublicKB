@@ -124,7 +124,7 @@
 
 <pre>
 
-### Detailed Steps `<a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>`
+### Detailed Steps <code><a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a></code>
     
 1.  Error Message
 
