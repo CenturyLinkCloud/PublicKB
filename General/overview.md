@@ -123,7 +123,7 @@
     5.  Increase the limit of the specific Resource
 
 <pre>
-<code>
+
 ### Detailed Steps \<a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
     
 1.  Error Message
@@ -159,7 +159,7 @@
     4.  Scroll down to __Resource Limits__
 
     5.  Increase the limit of the specific Resource
-</code>
+
 </pre>
 
 ### Basic Numbered List Module with Title <a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>
