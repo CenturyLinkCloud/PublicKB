@@ -430,7 +430,7 @@ class ExecCommand():
 		elif clc.args.GetArgs().sub_command == 'list':  self.GetServers()
 		elif clc.args.GetArgs().sub_command == 'templates':  self.GetServerTemplates()
 		elif clc.args.GetArgs().sub_command == 'get':  self.GetServerDetails()
-		elif clc.args.GetArgs().sub_command == 'delete':  self.ServerActions("delete")
+		elif clc.args.GetArgs().sub_command == 'delete':  self.ServerActions("Delete")
 		elif clc.args.GetArgs().sub_command == 'archive':  self.ServerActions("Archive")
 		elif clc.args.GetArgs().sub_command == 'poweron':  self.ServerActions("Poweron")
 		elif clc.args.GetArgs().sub_command == 'poweroff':  self.ServerActions("Poweroff")
