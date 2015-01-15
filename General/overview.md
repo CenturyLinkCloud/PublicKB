@@ -119,7 +119,7 @@
 <!-- TOC - MARKDOWN -->
 
     ### Table of Contents
-    
+
     * <span class="kb-toc-link">[Steps with Nested Steps](#anchor-1)</span>
     * <span class="kb-toc-link">[List - Numbered](#anchor-2)</span>
     * <span class="kb-toc-link">[List - Unordered](#anchor-3)</span>
@@ -342,7 +342,7 @@ Anything indented 4 spaces (two tabs) in a markdown file will automatically gene
 
 ### Notes on Additional Sections <a id="anchor-8" class="kb-toc-anchor" href="#anchor-8"></a>
 
-_The following sections, Related Questions and Attachments, are created automatically via the data structure added to the article data found at the top of this page. The sidebar content, Related Products also comes from this configuration data. However, the last section, Related Topics is automatically generated and is simply the all the other articles in the same category as this one._
+_The following sections, __Related Questions__ and __Attachments__, are created automatically via the data structure added to the article data found at the top of this page. The sidebar content, __Related Products__ also comes from this configuration data. However, the last section, __Related Topics__ is automatically generated and is simply the all the other articles in the same category as this one._
 
 
     
