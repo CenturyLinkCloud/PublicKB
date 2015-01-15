@@ -112,8 +112,8 @@ CenturyLink Cloud currently offers eight roles that are avaialable to assign use
   </p>
 </div>
 
-<pre>
-```
+
+``` javascript
 gulp.task "server", ->
   plugins.nodemon
     script: "server.js"
@@ -128,7 +128,7 @@ gulp.task "server", ->
       "views/*"
     ]
 ```
-</pre>
+
 
 <!-- <table>
   <th>
