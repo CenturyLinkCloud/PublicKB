@@ -151,6 +151,22 @@
 
   3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
+
+<pre>
+<code>
+### Basic Numbered List Module with Title <a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>
+
++ 
+
+  1.  16 vCPU, with at least 2GHZz per vCPU
+
+  2.  128 GB Memory
+
+  3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+</code>
+</pre>
+
+
 ### Basic List Module with Title <a id="anchor-3" class="kb-toc-anchor" href="#anchor-3"></a>
 
 + 
@@ -161,6 +177,22 @@
 
   -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
+
+<pre>
+<code>
+### Basic List Module with Title <a id="anchor-3" class="kb-toc-anchor" href="#anchor-3"></a>
+
++ 
+
+  -  16 vCPU, with at least 2GHZz per vCPU
+
+  -  128 GB Memory
+
+  -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+</code>
+</pre>
+
+
 <div class="kb-post-note" id="chapter-4">
   <a id="anchor-4" class="kb-toc-anchor" href="#anchor-4"></a>
   <h3>Note</h3>
@@ -169,7 +201,23 @@
   </p>
 </div>
 
+    <div class="kb-post-note" id="chapter-4">
+      <a id="anchor-4" class="kb-toc-anchor" href="#anchor-4"></a>
+      <h3>Note</h3>
+      <p>
+        CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
+      </p>
+    </div>
+
 CenturyLink Cloud currently offers eight roles that are avaialable to assign users to <code>http://api.tier3.com/[inline]/[code]/[snippet]</code>. A brief description of each role is available on the User Permissions page, and the complete list of actions.
+
+
+<pre>
+<code>
+CenturyLink Cloud currently offers eight roles that are avaialable to assign users to <code>http://api.tier3.com/[inline]/[code]/[snippet]</code>. A brief description of each role is available on the User Permissions page, and the complete list of actions.
+</code>
+</pre>
+
 
 <div class="kb-post-alert" id="chapter-5">
   <a id="anchor-5" class="kb-toc-anchor" href="#anchor-5"></a>
@@ -178,6 +226,19 @@ CenturyLink Cloud currently offers eight roles that are avaialable to assign use
     CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
   </p>
 </div>
+
+
+<pre>
+<code>
+<div class="kb-post-alert" id="chapter-5">
+  <a id="anchor-5" class="kb-toc-anchor" href="#anchor-5"></a>
+  <h3>Alert</h3>
+  <p>
+    CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
+  </p>
+</div>
+</code>
+</pre>
 
 <!-- PRE/CODE BLOCK - Just indent twice-->
     gulp.task "server", ->
