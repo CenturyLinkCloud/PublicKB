@@ -63,7 +63,6 @@
   </code>
 </pre>
 
-<!-- OVERVIEW MODULE - NESTED AUDIENCE MODULE-->
 <div class="kb-post-overview">
   <h3>Overview</h3>
   <p>CenturyLink Cloud accounts start with a pre-defined resource (CPU/memory/storage) limit per data center. As customers grow their cloud usage, it's common to request an increase in resource limits.   Note that only paying customers will have their resource limits increased unless executive approval is given.</p>
@@ -93,14 +92,13 @@
 * <span class="kb-toc-link">[Note](#anchor-4)</span>
 * <span class="kb-toc-link">[Alert](#anchor-5)</span>
 
-
-        ### Table of Contents
-        * <span class="kb-toc-link">[Steps - Numbered - Nested](#anchor-1)</span>
-        * <span class="kb-toc-link">[Basic Numbered List](#anchor-2)</span>
-        * <span class="kb-toc-link">[Basic List](#anchor-3)</span>
-        * <span class="kb-toc-link">[Note](#anchor-4)</span>
-        * <span class="kb-toc-link">[Alert](#anchor-5)</span>
-
+<!-- BREAK -->
+  ### Table of Contents
+  * <span class="kb-toc-link">[Steps - Numbered - Nested](#anchor-1)</span>
+  * <span class="kb-toc-link">[Basic Numbered List](#anchor-2)</span>
+  * <span class="kb-toc-link">[Basic List](#anchor-3)</span>
+  * <span class="kb-toc-link">[Note](#anchor-4)</span>
+  * <span class="kb-toc-link">[Alert](#anchor-5)</span>
 
     <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
 
