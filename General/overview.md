@@ -35,9 +35,9 @@
   "contentIsHTML": false
 }}}
 
-<a class="show-markdown closed" href="#" data-toggle="collapse" data-target="#collapseExample">Show Markdown</a>
+<a class="show-markdown closed" href="#" data-toggle="collapse" data-target=".collapseMe">Show Markdown</a>
 
-<span>
+<span class="collapseMe">
 <pre>
 <code>
 \{{{
