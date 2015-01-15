@@ -106,20 +106,28 @@
 <!-- TOC -->
 
 ### Table of Contents
+
 * <span class="kb-toc-link">[Steps with Nested Steps](#anchor-1)</span>
 * <span class="kb-toc-link">[List - Numbered](#anchor-2)</span>
 * <span class="kb-toc-link">[List - Unordered](#anchor-3)</span>
 * <span class="kb-toc-link">[Note](#anchor-4)</span>
 * <span class="kb-toc-link">[Alert](#anchor-5)</span>
+* <span class="kb-toc-link">[Code Snippet Example](#anchor-6)</span>
+* <span class="kb-toc-link">[Code Block Example](#anchor-7)</span>
+* <span class="kb-toc-link">[Notes on Additional Sections](#anchor-8)</span>
 
 <!-- TOC - MARKDOWN -->
 
     ### Table of Contents
+    
     * <span class="kb-toc-link">[Steps with Nested Steps](#anchor-1)</span>
     * <span class="kb-toc-link">[List - Numbered](#anchor-2)</span>
     * <span class="kb-toc-link">[List - Unordered](#anchor-3)</span>
     * <span class="kb-toc-link">[Note](#anchor-4)</span>
-    * <span class="kb-toc-link">[Alert](#anchor-5)</span>>
+    * <span class="kb-toc-link">[Alert](#anchor-5)</span>
+    * <span class="kb-toc-link">[Code Snippet Example](#anchor-6)</span>
+    * <span class="kb-toc-link">[Code Block Example](#anchor-7)</span>
+    * <span class="kb-toc-link">[Notes on Additional Sections](#anchor-8)</span>
 
 <!-- BREAK -->
 
@@ -332,7 +340,9 @@ Anything indented 4 spaces (two tabs) in a markdown file will automatically gene
           "views/*"
         ]
 
-_The following sections are created automatically via the data structure added to the article data found at the top of this page_
+### Notes on Additional Sections <a id="anchor-8" class="kb-toc-anchor" href="#anchor-8"></a>
+
+_The following sections, Related Questions and Attachments, are created automatically via the data structure added to the article data found at the top of this page. The sidebar content, Related Products also comes from this configuration data. However, the last section, Related Topics is automatically generated and is simply the all the other articles in the same category as this one._
 
 
     
