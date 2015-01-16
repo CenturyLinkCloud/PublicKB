@@ -1,5 +1,5 @@
 {{{
-  "title": "Overview Test Article",
+  "title": "Overview Example Article",
   "date": "01-13-2015",
   "author": "Kevin Bleich",
   "attachments": [
@@ -42,7 +42,7 @@
 <pre class="collapse" id="collapseMe">
 <code>
 \{{{
-  "title": "Overview Test Article",
+  "title": "Overview Example Article",
   "date": "01-13-2015",
   "author": "Kevin Bleich",
   "attachments": [
