@@ -123,7 +123,7 @@
 
 <!-- TOC -->
 
-### Table of Contents
+## Table of Contents
 
 * <span class="kb-toc-link">[Steps with Nested Steps](#anchor-1)</span>
 * <span class="kb-toc-link">[List - Numbered](#anchor-2)</span>
@@ -136,7 +136,7 @@
 
 <!-- TOC - MARKDOWN -->
 
-    ### Table of Contents
+    ## Table of Contents
 
     * <span class="kb-toc-link">[Steps with Nested Steps](#anchor-1)</span>
     * <span class="kb-toc-link">[List - Numbered](#anchor-2)</span>
