@@ -280,6 +280,14 @@ The above Table of Contents is a working example and all of the follwing section
 
       -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
+### Images
+
+![CreateZone](https://t3n.zendesk.com/attachments/token/g6pf6kex9y6y6n7/?name=CreateZone.png")
+
+    ### Images
+
+    ![CreateZone](https://t3n.zendesk.com/attachments/token/g6pf6kex9y6y6n7/?name=CreateZone.png")
+
 <!-- NOTE -->
 
 <div class="kb-post-note">
