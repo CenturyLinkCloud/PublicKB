@@ -288,6 +288,112 @@ The above Table of Contents is a working example and all of the follwing section
 
     ![CreateZone](https://t3n.zendesk.com/attachments/token/g6pf6kex9y6y6n7/?name=CreateZone.png")
 
+### Tables
+
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <p><strong>Name</strong>
+        </p>
+      </td>
+      <td>
+        <p><strong>Description</strong>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>package.manifest</strong>
+        </p>
+      </td>
+      <td>
+        <p>Defines the metadata, parameter list and execution guidelines for the Package.&nbsp;</p>
+        <p>An Xml Schema (.xsd) is available to validate the package.manifest file before uploading.&nbsp;</p>
+        <p><em>This file is required in all Packages.</em>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>[executable]</strong>
+        </p>
+      </td>
+      <td>
+        <p>At least one executable file must be included in the Package.&nbsp; CenturyLink Cloud supports the following executable types:</p>
+        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Standard .exe</p>
+        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Command line scripts (anything that can be run from cmd.exe for Windows or the shell on Linux)</p>
+        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PowerShell scripts (.ps1 files)</p>
+        <p><em>* Note: The permissions of this file for Linux scripts must be set to be executable (chmod 755). In order to best achieve this, the file must be created and zipped on a Linux or Unix-based platform.</em>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>[resources]</strong>
+        </p>
+      </td>
+      <td>
+        <p>Any additional files that the main executable may require for proper execution.</p>
+        <p>The executable is run from the Package root folder, so any file/folders should be accessed relative to the root.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+    ### Tables
+
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <p><strong>Name</strong>
+            </p>
+          </td>
+          <td>
+            <p><strong>Description</strong>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><strong>package.manifest</strong>
+            </p>
+          </td>
+          <td>
+            <p>Defines the metadata, parameter list and execution guidelines for the Package.&nbsp;</p>
+            <p>An Xml Schema (.xsd) is available to validate the package.manifest file before uploading.&nbsp;</p>
+            <p><em>This file is required in all Packages.</em>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><strong>[executable]</strong>
+            </p>
+          </td>
+          <td>
+            <p>At least one executable file must be included in the Package.&nbsp; CenturyLink Cloud supports the following executable types:</p>
+            <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Standard .exe</p>
+            <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Command line scripts (anything that can be run from cmd.exe for Windows or the shell on Linux)</p>
+            <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PowerShell scripts (.ps1 files)</p>
+            <p><em>* Note: The permissions of this file for Linux scripts must be set to be executable (chmod 755). In order to best achieve this, the file must be created and zipped on a Linux or Unix-based platform.</em>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><strong>[resources]</strong>
+            </p>
+          </td>
+          <td>
+            <p>Any additional files that the main executable may require for proper execution.</p>
+            <p>The executable is run from the Package root folder, so any file/folders should be accessed relative to the root.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
 <!-- NOTE -->
 
 <div class="kb-post-note">
