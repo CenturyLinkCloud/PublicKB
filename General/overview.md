@@ -39,7 +39,7 @@
   <a class="show-markdown closed" href="#" data-toggle="collapse" data-target="#collapseMe">Show/Hide Article Config Data</a>
 </div>
 
-<pre class="collapse" id="collapseMe">
+<pre class="collapse" id="collapseMe" style="height:0;">
 <code>
 \{{{
   "title": "Overview Example Article",
