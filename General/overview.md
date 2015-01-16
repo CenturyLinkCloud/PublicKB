@@ -290,12 +290,6 @@ The above Table of Contents is a working example and all of the follwing section
 
 ### Tables
 
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
 <table>
   <tbody>
     <tr>
