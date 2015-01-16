@@ -85,7 +85,7 @@
 
 <div class="kb-post-overview">
   <h3>Overview</h3>
-  <p>CenturyLink Cloud accounts start with a pre-defined resource (CPU/memory/storage) limit per data center. As customers grow their cloud usage, it's common to request an increase in resource limits.   Note that only paying customers will have their resource limits increased unless executive approval is given.</p>
+  <p>The Overview section is of course optional but can be used to provide immediate context for the article. The <strong>Audience</strong> section is also optional.</p>
   <div class="kb-post-audience">
     <h3>Audience</h3>
     <ul>
@@ -98,13 +98,27 @@
 
     <div class="kb-post-overview">
       <h3>Overview</h3>
-      <p>CenturyLink Cloud accounts start with a pre-defined resource (CPU/memory/storage) limit per data center. As customers grow their cloud usage, it's common to request an increase in resource limits.   Note that only paying customers will have their resource limits increased unless executive approval is given.</p>
+      <p>The Overview section is of course optional but can be used to provide immediate context for the article. The <strong>Audience</strong> section is also optional.</p>
       <div class="kb-post-audience">
         <h3>Audience</h3>
         <ul>
           <li>Valued customer</li>
         </ul>
       </div>
+    </div>
+
+<!-- OVERVIEW -->
+
+<div class="kb-post-overview">
+  <h3>Overview</h3>
+  <p>The Overview section is of course optional but can be used to provide immediate context for the article. The <strong>Audience</strong> section is also optional.</p>
+</div>
+
+<!-- OVERVIEW - HTML -->
+
+    <div class="kb-post-overview">
+      <h3>Overview</h3>
+      <p>The Overview section is of course optional but can be used to provide immediate context for the article. The <strong>Audience</strong> section is also optional.</p>
     </div>
 
 <!-- TOC -->
