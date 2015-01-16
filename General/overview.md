@@ -286,7 +286,7 @@ The above Table of Contents is a working example and all of the follwing section
   <a id="anchor-4" class="kb-toc-anchor" href="#anchor-4"></a>
   <h3>Note</h3>
   <p>
-    CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
+    CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions. You will also see here how you can add a Table of Contents anchor link to the Note.
   </p>
 </div>
 
@@ -296,7 +296,7 @@ The above Table of Contents is a working example and all of the follwing section
       <a id="anchor-4" class="kb-toc-anchor" href="#anchor-4"></a>
       <h3>Note</h3>
       <p>
-        CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions.
+        CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions. You will also see here how you can add a Table of Contents anchor link to the Alert.
       </p>
     </div>
 
