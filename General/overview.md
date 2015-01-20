@@ -336,10 +336,13 @@ The above Table of Contents is a working example and all of the follwing section
         <p>The executable is run from the Package root folder, so any file/folders should be accessed relative to the root.</p>
       </td>
     </tr>
-    <tr>
-      <em>Note about the table</em>
-    </tr>
+    
   </tbody>
+  <tfoot>
+    <tr>
+      <td>Footer table note</td>
+    </tr>
+  </tfoot>
 </table>
 
     ### Tables
