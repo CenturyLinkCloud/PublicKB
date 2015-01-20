@@ -43,11 +43,8 @@ Server object variables available but access subject to change with future relea
 """
 
 # vCur:
-# TODO - disks
-# TODO - add disk
-# TODO - grow disk
-# TODO - delete disk
 # TODO - Link to Public IP class
+# TODO - Servers.CreateSnapshot, Servers.Delete
 
 # vNext:
 # TODO - Restore archived server - need API spec
@@ -62,7 +59,6 @@ Server object variables available but access subject to change with future relea
 # TODO - create a packages class.  Pass in for execute package, create, and clone
 # TODO - remove constructor server_obj if not used
 # TODO - Servers search by custom field
-# TODO - Servers.CreateSnapshot, Servers.Delete
 
 import re
 import math
@@ -262,6 +258,14 @@ class Server(object):
 		
 		return(self.disks)
 
+
+	def PublicIPs(self):
+		"""Returns PublicIPs object associated with the server.
+
+		"""
+		if not self.public_ips:  self.public_ips = clc.v2.PublicIPs(server=self,public_ips_lst=self.ip_addresses)
+
+		return(self.public_ips)
 
 
 	def Alerts(self):
