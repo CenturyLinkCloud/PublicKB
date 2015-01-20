@@ -346,7 +346,9 @@ The above Table of Contents is a working example and all of the follwing section
   </tbody>
   <tfoot>
     <tr>
-      <td>Footer table note</td>
+      <td>
+        <p><em>Footer table note</em></p>
+      </td>
     </tr>
   </tfoot>
 </table>
