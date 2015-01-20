@@ -84,12 +84,20 @@
 <!-- OVERVIEW -->
 
 <div class="kb-post-overview">
-  <h3>Overview</h3>
-  <p>The Overview section is of course optional but can be used to provide immediate context for the article. The <strong>Audience</strong> section is also optional.</p>
+  <h3>
+    Overview
+  </h3>
+  <p>
+    The Overview section is of course optional but can be used to provide immediate context for the article. The <strong>Audience</strong> section is also optional.
+  </p>
   <div class="kb-post-audience">
-    <h3>Audience</h3>
+    <h3>
+      Audience
+    </h3>
     <ul>
-      <li>Valued customer</li>
+      <li>
+        Valued customer
+      </li>
     </ul>
   </div>
 </div>
@@ -97,12 +105,20 @@
 <!-- OVERVIEW - HTML -->
 
     <div class="kb-post-overview">
-      <h3>Overview</h3>
-      <p>The Overview section is of course optional but can be used to provide immediate context for the article. The <strong>Audience</strong> section is also optional.</p>
+      <h3>
+        Overview
+      </h3>
+      <p>
+        The Overview section is of course optional but can be used to provide immediate context for the article. The <strong>Audience</strong> section is also optional.
+      </p>
       <div class="kb-post-audience">
-        <h3>Audience</h3>
+        <h3>
+          Audience
+        </h3>
         <ul>
-          <li>Valued customer</li>
+          <li>
+            Valued customer
+          </li>
         </ul>
       </div>
     </div>
@@ -110,15 +126,23 @@
 <!-- OVERVIEW -->
 
 <div class="kb-post-overview">
-  <h3>Overview</h3>
-  <p>The Overview section is of course optional but can be used to provide immediate context for the article. The <strong>Audience</strong> section is also optional.</p>
+  <h3>
+    Overview
+  </h3>
+  <p>
+    The Overview section is of course optional but can be used to provide immediate context for the article. The <strong>Audience</strong> section is also optional.
+  </p>
 </div>
 
 <!-- OVERVIEW - HTML -->
 
     <div class="kb-post-overview">
-      <h3>Overview</h3>
-      <p>The Overview section is of course optional but can be used to provide immediate context for the article. The <strong>Audience</strong> section is also optional.</p>
+      <h3>
+        Overview
+      </h3>
+      <p>
+        The Overview section is of course optional but can be used to provide immediate context for the article. The <strong>Audience</strong> section is also optional.
+      </p>
     </div>
 
 <!-- TOC -->
@@ -356,6 +380,13 @@ The above Table of Contents is a working example and all of the follwing section
     ### Tables
 
     <table>
+      <thead>
+        <tr>
+          <th>
+            Control Panel vs. 3rd Party Tools
+          </th>
+        </tr>
+      </thead>
       <tbody>
         <tr>
           <th>
@@ -397,7 +428,15 @@ The above Table of Contents is a working example and all of the follwing section
           </td>
         </tr>
       </tbody>
+      <tfoot>
+        <tr>
+          <td>
+            <p><em>Footer table note</em></p>
+          </td>
+        </tr>
+      </tfoot>
     </table>
+
 
 ### Video Embeds
 
@@ -411,7 +450,9 @@ TODO
 
 <div class="kb-post-note">
   <a id="anchor-4" class="kb-toc-anchor" href="#anchor-4"></a>
-  <h3>Note</h3>
+  <h3>
+    Note
+  </h3>
   <p>
     CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions. You will also see here how you can add a Table of Contents anchor link to the Note.
   </p>
@@ -421,7 +462,9 @@ TODO
 
     <div class="kb-post-note">
       <a id="anchor-4" class="kb-toc-anchor" href="#anchor-4"></a>
-      <h3>Note</h3>
+      <h3>
+        Note
+      </h3>
       <p>
         CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions. You will also see here how you can add a Table of Contents anchor link to the Note.
       </p>
@@ -431,7 +474,9 @@ TODO
 
 <div class="kb-post-alert">
   <a id="anchor-5" class="kb-toc-anchor" href="#anchor-5"></a>
-  <h3>Alert</h3>
+  <h3>
+    Alert
+  </h3>
   <p>
     CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions. You will also see here how you can add a Table of Contents anchor link to the Alert.
   </p>
@@ -441,7 +486,9 @@ TODO
 
     <div class="kb-post-alert">
       <a id="anchor-5" class="kb-toc-anchor" href="#anchor-5"></a>
-      <h3>Alert</h3>
+      <h3>
+        Alert
+      </h3>
       <p>
         CenturyLink Cloud currently offers eight roles that are avaialable to assign users to. A brief description of each role is available on the User Permissions page, and the complete list of actions. You will also see here how you can add a Table of Contents anchor link to the Alert.
       </p>
