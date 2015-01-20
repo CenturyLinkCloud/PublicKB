@@ -307,9 +307,7 @@ The above Table of Contents is a working example and all of the follwing section
 
       -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
-### Images
-
-<a id="anchor-images" class="kb-toc-anchor" href="#anchor-images"></a>
+### Images <a id="anchor-images" class="kb-toc-anchor" href="#anchor-images"></a>
 
 ![CreateZone](https://t3n.zendesk.com/attachments/token/g6pf6kex9y6y6n7/?name=CreateZone.png)
 
@@ -322,9 +320,7 @@ The above Table of Contents is a working example and all of the follwing section
     ![FTP Users Menu](https://t3n.zendesk.com/attachments/token/TBdfKe5e2A38fXpNqdMOubJHo/?name=ftp-users-menu.png)
     
 
-### Tables
-
-<a id="anchor-tables" class="kb-toc-anchor" href="#anchor-tables"></a>
+### Tables <a id="anchor-tables" class="kb-toc-anchor" href="#anchor-tables"></a>
 
 <table>
   <thead>
@@ -445,9 +441,8 @@ The above Table of Contents is a working example and all of the follwing section
     </table>
 
 
-### Video Embeds
+### Video Embeds <a id="anchor-videos" class="kb-toc-anchor" href="#anchor-videos"></a>
 
-<a id="anchor-videos" class="kb-toc-anchor" href="#anchor-videos"></a>
 <iframe src="//player.vimeo.com/video/103819184?byline=0&amp;portrait=0&amp;color=10bcff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
     ### Video Embeds
