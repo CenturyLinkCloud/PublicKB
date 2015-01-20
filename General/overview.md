@@ -337,7 +337,7 @@ The above Table of Contents is a working example and all of the follwing section
       </td>
     </tr>
     <tr>
-      <td class="centered italic">Note about the table</td>
+      <td class="centered"><em>Note about the table</em></td>
     </tr>
   </tbody>
 </table>
