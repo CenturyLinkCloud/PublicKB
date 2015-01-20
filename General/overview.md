@@ -440,7 +440,7 @@ The above Table of Contents is a working example and all of the follwing section
 
 ### Video Embeds
 
-TODO
+![Test Video](http://player.vimeo.com/video/63341663)
 
     ### Video Embeds
 
