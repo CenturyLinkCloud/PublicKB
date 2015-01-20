@@ -346,7 +346,9 @@ The above Table of Contents is a working example and all of the follwing section
         </p>
       </td>
       <td>
-        At least one executable file must be included in the Package.&nbsp; CenturyLink Cloud supports the following executable types:
+        <p>
+          At least one executable file must be included in the Package.&nbsp; CenturyLink Cloud supports the following executable types:
+        </p>
         <ul>
           <li>
             Standard .exe
