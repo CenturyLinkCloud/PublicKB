@@ -336,7 +336,9 @@ The above Table of Contents is a working example and all of the follwing section
         <p>The executable is run from the Package root folder, so any file/folders should be accessed relative to the root.</p>
       </td>
     </tr>
-
+    <tr>
+      <td class="centered italic">Note about the table</td>
+    </tr>
   </tbody>
 </table>
 
@@ -365,23 +367,20 @@ The above Table of Contents is a working example and all of the follwing section
         </tr>
         <tr>
           <td>
-            [executable]
+            [resources]
           </td>
           <td>
-            <p>At least one executable file must be included in the Package.&nbsp; CenturyLink Cloud supports the following executable types:</p>
-            <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Standard .exe</p>
-            <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Command line scripts (anything that can be run from cmd.exe for Windows or the shell on Linux)</p>
-            <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PowerShell scripts (.ps1 files)</p>
-            <p><em>* Note: The permissions of this file for Linux scripts must be set to be executable (chmod 755). In order to best achieve this, the file must be created and zipped on a Linux or Unix-based platform.</em>
+            <p>
+              At least one executable file must be included in the Package.&nbsp; CenturyLink Cloud supports the following executable types:
             </p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p><strong>[resources]</strong>
-            </p>
-          </td>
-          <td>
+            <ul>
+              <li>
+                Standard .exe
+              </li>
+              <li>
+                <p>Command line scripts (anything that can be run from cmd.exe for Windows or the shell on Linux)</p>
+              </li>
+            </ul>
             <p>Any additional files that the main executable may require for proper execution.</p>
             <p>The executable is run from the Package root folder, so any file/folders should be accessed relative to the root.</p>
           </td>
