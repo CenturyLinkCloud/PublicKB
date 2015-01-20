@@ -339,6 +339,27 @@ The above Table of Contents is a working example and all of the follwing section
         <p>The executable is run from the Package root folder, so any file/folders should be accessed relative to the root.</p>
       </td>
     </tr>
+
+    <tr>
+      <td>
+        <p><strong>[resources]</strong>
+        </p>
+      </td>
+      <td>
+        At least one executable file must be included in the Package.&nbsp; CenturyLink Cloud supports the following executable types:
+        <ul>
+          <li>
+            Standard .exe
+          </li>
+          <li>
+            <p>Command line scripts (anything that can be run from cmd.exe for Windows or the shell on Linux)</p>
+          </li>
+        </ul>
+        <p>Any additional files that the main executable may require for proper execution.</p>
+        <p>The executable is run from the Package root folder, so any file/folders should be accessed relative to the root.</p>
+      </td>
+    </tr>
+
   </tbody>
 </table>
 
