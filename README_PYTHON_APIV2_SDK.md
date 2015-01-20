@@ -899,6 +899,86 @@ Ansible Managed Servers
 
 
 
+## PublicIPs
+
+[PublicIPs pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.public_ips.html)
+
+
+### clc.v2.PublicIPs
+```python
+clc.v2.PublicIPs( server, public_ips_lst )
+```
+
+Create `PublicIPs` object.  This is typically only called from the `Server` object.
+`Server` is a server object.
+
+
+### TODO- clc.v2.PublicIPs.Add
+```python
+clc.v2.PublicIPs.Add(self,size,path=None,type="partitioned"):
+```
+
+Add new public IP.
+
+
+```python
+# Partitioned public IP
+>>> clc.v2.Server("WA1BTDIX01").PublicIPs().Add(size=20,path=None,type="raw").WaitUntilComplete()
+0
+
+# Raw public IP
+>>> clc.v2.Server("WA1BTDIX01").PublicIPs().Add(size=20,path=None,type="raw").WaitUntilComplete()
+0
+```
+
+
+### clc.v2.PublicIPs.Get
+```python
+clc.v2.PublicIPs.Get( key ):
+```
+
+Get public IP by providing internal or public IP.
+
+
+
+
+## PublicIP
+
+[PublicIP pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.public IP.html)
+
+
+### Class variables
+
+Object variables:
+
+* public_ip.id - alias of public
+* public_ip.public
+* public_ip.internal
+
+### clc.v2.PublicIP
+```python
+clc.v2.PublicIP( id, parent, public_ip_obj=None )
+```
+
+Create `PublicIP` object.  This is typically only called from the `PublicIPs` object.
+
+
+### clc.v2.PublicIP.Delete
+```python
+clc.v2.PublicIP.Delete()
+```
+
+This request will error if public IP is protected and cannot be removed (e.g. a system public IP)
+
+```python
+>>> clc.v2.Server("WA1BTDIX01").PublicIPs().public IPs[2].Delete().WaitUntilComplete()
+0
+```
+
+
+
+
+
 ## Disks
 
 [Disks pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.disk.html)
