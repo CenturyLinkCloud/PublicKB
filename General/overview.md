@@ -204,7 +204,7 @@ The above Table of Contents is a working example and all of the follwing section
 
     2.  Contact Support
       
-        Please contact support on Chat or by emailing noc@email.com
+        Please contact support on Chat or by emailing <noc@email.com>
 
         __To open a Chat with an engineer:__
 
