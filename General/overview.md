@@ -351,19 +351,16 @@ The above Table of Contents is a working example and all of the follwing section
     <table>
       <tbody>
         <tr>
-          <td>
-            <p><strong>Name</strong>
-            </p>
-          </td>
-          <td>
-            <p><strong>Description</strong>
-            </p>
-          </td>
+          <th>
+            Name
+          </th>
+          <th>
+            Description
+          </th>
         </tr>
         <tr>
           <td>
-            <p><strong>package.manifest</strong>
-            </p>
+            package.manifest
           </td>
           <td>
             <p>Defines the metadata, parameter list and execution guidelines for the Package.&nbsp;</p>
@@ -374,8 +371,7 @@ The above Table of Contents is a working example and all of the follwing section
         </tr>
         <tr>
           <td>
-            <p><strong>[executable]</strong>
-            </p>
+            [executable]
           </td>
           <td>
             <p>At least one executable file must be included in the Package.&nbsp; CenturyLink Cloud supports the following executable types:</p>
