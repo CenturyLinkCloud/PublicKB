@@ -152,6 +152,9 @@
 * <span class="kb-toc-link">[Steps with Nested Steps](#anchor-1)</span>
 * <span class="kb-toc-link">[List - Numbered](#anchor-2)</span>
 * <span class="kb-toc-link">[List - Unordered](#anchor-3)</span>
+* <span class="kb-toc-link">[Images](#anchor-images)</span>
+* <span class="kb-toc-link">[Tables](#anchor-tables)</span>
+* <span class="kb-toc-link">[Video Embeds](#anchor-videos)</span>
 * <span class="kb-toc-link">[Note](#anchor-4)</span>
 * <span class="kb-toc-link">[Alert](#anchor-5)</span>
 * <span class="kb-toc-link">[Code Snippet Example](#anchor-6)</span>
@@ -306,6 +309,8 @@ The above Table of Contents is a working example and all of the follwing section
 
 ### Images
 
+<a id="anchor-images" class="kb-toc-anchor" href="#anchor-images"></a>
+
 ![CreateZone](https://t3n.zendesk.com/attachments/token/g6pf6kex9y6y6n7/?name=CreateZone.png)
 
 ![FTP Users Menu](https://t3n.zendesk.com/attachments/token/TBdfKe5e2A38fXpNqdMOubJHo/?name=ftp-users-menu.png)
@@ -318,6 +323,8 @@ The above Table of Contents is a working example and all of the follwing section
     
 
 ### Tables
+
+<a id="anchor-tables" class="kb-toc-anchor" href="#anchor-tables"></a>
 
 <table>
   <thead>
@@ -440,11 +447,12 @@ The above Table of Contents is a working example and all of the follwing section
 
 ### Video Embeds
 
+<a id="anchor-videos" class="kb-toc-anchor" href="#anchor-videos"></a>
 <iframe src="//player.vimeo.com/video/103819184?byline=0&amp;portrait=0&amp;color=10bcff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
     ### Video Embeds
 
-    TODO
+    <iframe src="//player.vimeo.com/video/103819184?byline=0&amp;portrait=0&amp;color=10bcff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <!-- NOTE -->
 
