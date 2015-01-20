@@ -299,14 +299,19 @@ The above Table of Contents is a working example and all of the follwing section
   <thead>
     <tr>
       <th>
+        Control Panel vs. 3rd Party Tools
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>
         Name
       </th>
       <th>
         Description
       </th>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td>
         package.manifest
