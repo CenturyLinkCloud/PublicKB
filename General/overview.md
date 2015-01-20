@@ -296,7 +296,7 @@ The above Table of Contents is a working example and all of the follwing section
 ### Tables
 
 <table>
-  <tbody>
+  <thead>
     <tr>
       <th>
         Name
@@ -305,6 +305,8 @@ The above Table of Contents is a working example and all of the follwing section
         Description
       </th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>
         package.manifest
