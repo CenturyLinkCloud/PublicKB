@@ -43,7 +43,6 @@ Server object variables available but access subject to change with future relea
 """
 
 # vCur:
-# TODO - Link to Public IP class
 # TODO - Servers.CreateSnapshot, Servers.Delete
 
 # vNext:
@@ -169,6 +168,7 @@ class Server(object):
 		self.id = id
 		self.capabilities = None
 		self.disks = None
+		self.public_ips = None
 		self.dirty = False
 
 		if alias:  self.alias = alias
