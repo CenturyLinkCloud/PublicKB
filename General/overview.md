@@ -536,7 +536,7 @@ Anything indented 4 spaces (two tabs) in a markdown file will automatically gene
           "views/*"
         ]
 
-## Code Block - Gist Version <a id="anchor-gist" class="kb-toc-anchor" href="#anchor-gist"></a>
+### Code Block - Gist Version <a id="anchor-gist" class="kb-toc-anchor" href="#anchor-gist"></a>
 <script src="https://gist.github.com/dmak78/1a96093860555aa8485a.js"></script>
 
 ### Notes on Additional Sections <a id="anchor-8" class="kb-toc-anchor" href="#anchor-8"></a>
