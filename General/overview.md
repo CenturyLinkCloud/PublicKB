@@ -158,7 +158,7 @@
 * <span class="kb-toc-link">[Note](#anchor-4)</span>
 * <span class="kb-toc-link">[Alert](#anchor-5)</span>
 * <span class="kb-toc-link">[Code Snippet Example](#anchor-6)</span>
-* <span class="kb-toc-link">[Code Block Example - <code>](#anchor-7)</span>
+* <span class="kb-toc-link">[Code Block Example](#anchor-7)</span>
 * <span class="kb-toc-link">[Code Block Example - Gist](#anchor-gist)</span>
 * <span class="kb-toc-link">[Notes on Additional Sections](#anchor-8)</span>
 
