@@ -1,6 +1,6 @@
 {{{
-  "title": "Overview Example Article",
-  "date": "01-13-2015",
+  "title": "Knowledge Base Documentation",
+  "date": "01-18-2015",
   "author": "Kevin Bleich",
   "attachments": [
     {
