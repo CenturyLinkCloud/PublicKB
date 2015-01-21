@@ -158,7 +158,8 @@
 * <span class="kb-toc-link">[Note](#anchor-4)</span>
 * <span class="kb-toc-link">[Alert](#anchor-5)</span>
 * <span class="kb-toc-link">[Code Snippet Example](#anchor-6)</span>
-* <span class="kb-toc-link">[Code Block Example](#anchor-7)</span>
+* <span class="kb-toc-link">[Code Block Example - <code>](#anchor-7)</span>
+* <span class="kb-toc-link">[Code Block Example - Gist](#anchor-gist)</span>
 * <span class="kb-toc-link">[Notes on Additional Sections](#anchor-8)</span>
 
 <!-- TOC - MARKDOWN -->
@@ -534,6 +535,9 @@ Anything indented 4 spaces (two tabs) in a markdown file will automatically gene
           ".git/*",
           "views/*"
         ]
+
+## Code Block - Gist Version <a id="anchor-gist" class="kb-toc-anchor" href="#anchor-gist"></a>
+<script src="https://gist.github.com/mattfordham/7e830ac54377b9ffebb3.js"></script>
 
 ### Notes on Additional Sections <a id="anchor-8" class="kb-toc-anchor" href="#anchor-8"></a>
 
