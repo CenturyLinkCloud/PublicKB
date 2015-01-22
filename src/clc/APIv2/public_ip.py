@@ -85,7 +85,6 @@ class PublicIP(object):
 		self.internal = public_ip_obj['internal']
 		self.parent = parent
 		self.data = None
-		self.ports = []
 		self.source_restrictions = None
 
 
@@ -96,9 +95,11 @@ class PublicIP(object):
 			self.data = clc.v2.API.Call('GET','servers/%s/%s/publicIPAddresses/%s' % (self.parent.server.alias,self.parent.server.id,self.id))
 
 			# build ports
-			for port in self.data['ports']:  
+			self.data['_ports'] = self.data['ports']
+			self.data['ports'] = []
+			for port in self.data['_ports']:  
 				if 'portTo' in port:  self.ports.append(Port(port['protocol'],port['port'],port['portTo']))
-				else:  self.ports.append(Port(port['protocol'],port['port'],port['portTo']))
+				else:  self.ports.append(Port(port['protocol'],port['port']))
 
 			# build source restriction
 
@@ -118,8 +119,14 @@ class PublicIP(object):
 		return(clc.v2.Requests(clc.v2.API.Call('DELETE','servers/%s/%s/publicIPAddresses/%s' % (self.parent.server.alias,self.parent.server.id,self.id))))
 
 
-	def AddPort(self,protocol,port,port_to=None):
-		self.data['ports'].append(Port(protocol,port,port_to)
+	def AddPort(self,protocol,port,port_to=None):  
+		self.ports.append(Port(self,protocol,port,port_to))
+
+
+	def AddPorts(self,protocol,port,port_to=None):  
+		for port in ports:  
+			if 'port_to' in port:  self.AddPort(Port(port['protocol'],port['port'],port['port_to']))
+			else:  self.AddPort(Port(port['protocol'],port['port']))
 
 
 	#def SourceRestrictions(self):
@@ -127,7 +134,8 @@ class PublicIP(object):
 
 
 	def __getattr__(self,var):
-		key = re.sub("_(.)",lambda pat: pat.group(1).upper(),var)
+		if var[0] != "_": key = re.sub("_(.)",lambda pat: pat.group(1).upper(),var)
+		else:  key = var
 
 		if not self.data:  self._Load()
 
@@ -142,7 +150,8 @@ class PublicIP(object):
 
 class Port(object):
 
-	def __init__(self,protocol,port,port_to=None):
+	def __init__(self,public_ip,protocol,port,port_to=None):
+		self.public_ip = public_ip
 		self.protocol = protocol
 		self.port = port
 		self.port_to = port_to
