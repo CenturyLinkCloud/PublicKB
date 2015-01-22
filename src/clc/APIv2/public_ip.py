@@ -157,6 +157,11 @@ class Port(object):
 		self.port_to = port_to
 
 
+	def Delete(self):
+		self.public_ip.ports = [o for o in self.public_ip.ports if o!=self]
+		self.public_ip.Update()
+
+
 	def ToDict(self):
 		d = {'protocol': self.protocol,'port': self.port}
 		if self.port_to:  d['portTo'] = self.port_to
