@@ -10,6 +10,7 @@ PublicIP object variables:
 	public_ip.id - alias of public
 	public_ip.public
 	public_ip.internal
+	public_ip.ports - list of port/protocol dicts
 
 """
 
@@ -84,13 +85,24 @@ class PublicIP(object):
 		self.internal = public_ip_obj['internal']
 		self.parent = parent
 		self.data = None
-		self.ports = None
+		self.ports = []
 		self.source_restrictions = None
 
 
-	def _Load(self):
+	def _Load(self,cached=True):
 		"""Performs a full load of all PublicIP metadata."""
-		self.data = clc.v2.API.Call('GET','servers/%s/%s/publicIPAddresses/%s' % (self.parent.server.alias,self.parent.server.id,self.id))
+
+		if not self.data or not cached:  
+			self.data = clc.v2.API.Call('GET','servers/%s/%s/publicIPAddresses/%s' % (self.parent.server.alias,self.parent.server.id,self.id))
+
+			# build ports
+			for port in self.data['ports']:  
+				if 'portTo' in port:  self.ports.append(Port(port['protocol'],port['port'],port['portTo']))
+				else:  self.ports.append(Port(port['protocol'],port['port'],port['portTo']))
+
+			# build source restriction
+
+		return(self.data)
 
 
 	def Delete(self):
@@ -106,8 +118,8 @@ class PublicIP(object):
 		return(clc.v2.Requests(clc.v2.API.Call('DELETE','servers/%s/%s/publicIPAddresses/%s' % (self.parent.server.alias,self.parent.server.id,self.id))))
 
 
-	#def Ports(self):
-	#	if 
+	def AddPort(self,protocol,port,port_to=None):
+		self.data['ports'].append(Port(protocol,port,port_to)
 
 
 	#def SourceRestrictions(self):
@@ -117,10 +129,34 @@ class PublicIP(object):
 	def __getattr__(self,var):
 		key = re.sub("_(.)",lambda pat: pat.group(1).upper(),var)
 
+		if not self.data:  self._Load()
+
 		if key in self.data:  return(self.data[key])
 		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,key)))
 
 
 	def __str__(self):
 		return(self.id)
+
+
+
+class Port(object):
+
+	def __init__(self,protocol,port,port_to=None):
+		self.protocol = protocol
+		self.port = port
+		self.port_to = port_to
+
+
+	def ToDict(self):
+		d = {'protocol': self.protocol,'port': self.port}
+		if self.port_to:  d['portTo'] = self.port_to
+
+		return(d)
+
+
+	def __str__(self):
+		if self.port_to:  return("%s-%s/%s" % (self.port,self.port_to,self.protocol))
+		else:  return("%s/%s" % (self.port,self.protocol))
+
 
