@@ -12,6 +12,16 @@ PublicIP object variables:
 	public_ip.internal
 	public_ip.ports - list of port/protocol dicts
 
+Port object variables:
+
+	port.protocol
+	port.port
+	port.port_to
+
+Source Restriction object variables:
+
+	source_restriction.cidr
+
 """
 
 # vCur:

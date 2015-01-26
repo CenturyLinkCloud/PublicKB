@@ -12,7 +12,7 @@ will follow suit.
 * [Groups](#groups) and [Group](#group) - `Groups` and `Group` classes.  Logical organization around assets by group which can contain sub-groups or servers
 * [Servers](#servers) and [Server](#server) - `Servers` and `Server` classes.  Cloud servers
 * [Disks](#disks) and [Disk](#disk) - `Disks` and `Disk` classes.  Cloud server related disk classes.
-* [Public IPs](#publicips) and [Public IP](#publicip) - `PublicIPs` and `PublicIP` classes.  Cloud server related public IP classes.
+* [Public IPs](#public-ips) and [Public IP](#publicip) - `PublicIPs` and `PublicIP` classes.  Cloud server related public IP classes.
 * [Requests](#requests) and [Request](#request) - `Requests` and `Request` classes.  Interface to work queue for async operations
 
 
@@ -1031,7 +1031,7 @@ Create `PublicIPs` object.  This is typically only called from the `Server` obje
 
 ### clc.v2.PublicIPs.Add
 ```python
-clc.v2.PublicIPs.AddAdd( ports, source_restrictions=None, private_ip=None )
+clc.v2.PublicIPs.Add( ports, source_restrictions=None, private_ip=None )
 ```
 
 Add new public_ip.
@@ -1200,6 +1200,87 @@ Include a list of CIDR strings.
 ```python
 >>> clc.v2.Server("WA1BTDIX01").PublicIPs().public_ips[0]
                 .AddSourceRestrictions(cidrs=["132.200.20.1/32","132.200.20.100/32"]).WaitUntilComplete()
+0
+```
+
+
+
+
+## Port
+
+Representation of Public IP ports.
+
+[Port pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.public_ip.html)
+
+
+### Class variables
+
+Object variables:
+
+* port.protocol
+* port.port
+* port.port_to
+
+
+### clc.v2.Port
+```python
+clc.v2.Port( public_ip, protocol, port, port_to=None)
+```
+
+Create `Port` object.  This is typically only called from the `PublicIP` object.
+
+
+### clc.v2.Port.Delete
+```python
+clc.v2.Port.Delete()
+```
+
+Delete the port and commit changes to cloud.
+
+
+```python
+>>> clc.v2.Server("WA1BTDIX01").PublicIPs().public_ips[0].ports[0].Delete().WaitUntilComplete()
+0
+```
+
+
+
+
+
+
+
+## SourceRestriction
+
+Representation of Public IP source restrictions.
+
+[SourceRestriction pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.public_ip.html)
+
+
+### Class variables
+
+Object variables:
+
+* source_restriction.cidr
+
+
+### clc.v2.SourceRestriction
+```python
+clc.v2.SourceRestriction( cidr )
+```
+
+Create `SourceRestriction` object.  This is typically only called from the `PublicIP` object.
+
+
+### clc.v2.SourceRestriction.Delete
+```python
+clc.v2.SourceRestriction.Delete()
+```
+
+Delete the source retriction and commit changes to cloud.
+
+
+```python
+>>> clc.v2.Server("WA1BTDIX01").PublicIPs().public_ips[0].source_restrictions[0].Delete().WaitUntilComplete()
 0
 ```
 
