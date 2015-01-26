@@ -107,7 +107,6 @@ class PublicIP(object):
 		self.internal = public_ip_obj['internal']
 		self.parent = parent
 		self.data = None
-		self.source_restrictions = None
 
 
 	def _Load(self,cached=True):
@@ -146,7 +145,18 @@ class PublicIP(object):
 
 
 	def Update(self):
-		pass
+		"""Commit  current PublicIP definition to cloud.
+
+		Usually called by the class to commit changes to port and source restriction policies.
+
+		>>> clc.v2.Server("WA1BTDIX01").PublicIPs().public_ips[0].Update().WaitUntilComplete()
+		0
+
+		"""
+
+		return(clc.v2.Requests(clc.v2.API.Call('PUT','servers/%s/%s/publicIPAddresses/%s' % (self.parent.server.alias,self.parent.server.id,self.id),
+		                       json.dumps({'ports': [o.ToDict() for o in self.ports], 
+							               'sourceRestrictions': [o.ToDict() for o in self.source_restrictions] }),debug=True)))
 
 
 	def AddPort(self,protocol,port,port_to=None):  
@@ -188,10 +198,11 @@ class PublicIP(object):
 
 
 	def __getattr__(self,var):
-		if var[0] != "_": key = re.sub("_(.)",lambda pat: pat.group(1).upper(),var)
+		if var in ('source_restrictions',):  key = var
+		elif var[0] != "_": key = re.sub("_(.)",lambda pat: pat.group(1).upper(),var)
 		else:  key = var
 
-		if not self.data:  self._Load()
+		if not self.data: self._Load()
 
 		if key in self.data:  return(self.data[key])
 		else:  raise(AttributeError("'%s' instance has no attribute '%s'" % (self.__class__.__name__,key)))
