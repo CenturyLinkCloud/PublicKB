@@ -160,6 +160,18 @@ class PublicIP(object):
 
 
 	def AddPort(self,protocol,port,port_to=None):  
+		"""Add and commit a single port.
+
+		# Add single port
+		>>> clc.v2.Server("WA1BTDIX01").PublicIPs().public_ips[0].AddPort(protocol='TCP',port='22').WaitUntilComplete()
+		0
+
+		# Add port range 
+		>>> clc.v2.Server("WA1BTDIX01").PublicIPs().public_ips[0].AddPort(protocol='UDP',port='10000',port_to='15000').WaitUntilComplete()
+		0
+
+		"""
+
 		self.ports.append(Port(self,protocol,port,port_to))
 
 		return(self.Update())
@@ -169,6 +181,11 @@ class PublicIP(object):
 		"""Create one or more port access policies.
 
 		Include a list of dicts with protocol, port, and port_to (optional - for range) keys.
+
+		>>> clc.v2.Server("WA1BTDIX01").PublicIPs().public_ips[0]
+				.AddPorts([{'protocol': 'TCP', 'port': '80' },
+				           {'protocol': 'UDP', 'port': '10000', 'port_to': '15000'}]).WaitUntilComplete()
+		0
 
 		"""
 
