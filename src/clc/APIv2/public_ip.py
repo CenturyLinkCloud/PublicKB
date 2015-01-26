@@ -156,7 +156,7 @@ class PublicIP(object):
 
 		return(clc.v2.Requests(clc.v2.API.Call('PUT','servers/%s/%s/publicIPAddresses/%s' % (self.parent.server.alias,self.parent.server.id,self.id),
 		                       json.dumps({'ports': [o.ToDict() for o in self.ports], 
-							               'sourceRestrictions': [o.ToDict() for o in self.source_restrictions] }),debug=True)))
+							               'sourceRestrictions': [o.ToDict() for o in self.source_restrictions] }))))
 
 
 	def AddPort(self,protocol,port,port_to=None):  
@@ -252,8 +252,16 @@ class Port(object):
 
 
 	def Delete(self):
+		"""Delete this port and commit change to cloud.
+
+		>>> clc.v2.Server("WA1BTDIX01").PublicIPs().public_ips[0].ports[0].Delete().WaitUntilComplete()
+		0
+
+		"""
+
 		self.public_ip.ports = [o for o in self.public_ip.ports if o!=self]
-		self.public_ip.Update()
+
+		return(self.public_ip.Update())
 
 
 	def ToDict(self):
@@ -278,8 +286,16 @@ class SourceRestriction(object):
 
 
 	def Delete(self):
+		"""Delete this source restriction and commit change to cloud.
+
+		>>> clc.v2.Server("WA1BTDIX01").PublicIPs().public_ips[0].source_restrictions[0].Delete().WaitUntilComplete()
+		0
+
+		"""
+
 		self.public_ip.source_restrictions = [o for o in self.public_ip.source_restrictions if o!=self]
-		self.public_ip.Update()
+
+		return(self.public_ip.Update())
 
 
 	def ToDict(self):
@@ -289,6 +305,6 @@ class SourceRestriction(object):
 
 
 	def __str__(self):
-		return("%s-%s/%s" % (self.cidr))
+		return("%s" % (self.cidr))
 
 

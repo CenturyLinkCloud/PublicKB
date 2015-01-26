@@ -12,6 +12,7 @@ will follow suit.
 * [Groups](#groups) and [Group](#group) - `Groups` and `Group` classes.  Logical organization around assets by group which can contain sub-groups or servers
 * [Servers](#servers) and [Server](#server) - `Servers` and `Server` classes.  Cloud servers
 * [Disks](#disks) and [Disk](#disk) - `Disks` and `Disk` classes.  Cloud server related disk classes.
+* [PublicIPs](#publicips) and [PublicIP](#publicip) - `PublicIPs` and `PublicIP` classes.  Cloud server related public IP classes.
 * [Requests](#requests) and [Request](#request) - `Requests` and `Request` classes.  Interface to work queue for async operations
 
 
