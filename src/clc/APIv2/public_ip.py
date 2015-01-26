@@ -15,9 +15,6 @@ PublicIP object variables:
 """
 
 # vCur:
-# TODO - ports
-# TODO - sourcerestriction
-# TODO - Update public IP
 
 # vNext:
 # TODO - PublicIPs search by port and source restriction

@@ -900,79 +900,108 @@ Ansible Managed Servers
 
 
 
-## PublicIPs
-
-[PublicIPs pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.public_ips.html)
 
 
-### clc.v2.PublicIPs
+
+
+## Disks
+
+[Disks pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.disk.html)
+
+
+### clc.v2.Disks
 ```python
-clc.v2.PublicIPs( server, public_ips_lst )
+clc.v2.Disks( server, disks_lst )
 ```
 
-Create `PublicIPs` object.  This is typically only called from the `Server` object.
+Create `Disks` object.  This is typically only called from the `Server` object.
 `Server` is a server object.
 
 
-### TODO- clc.v2.PublicIPs.Add
+### clc.v2.Disks.Add
 ```python
-clc.v2.PublicIPs.Add(self,size,path=None,type="partitioned"):
+clc.v2.Disks.Add(self,size,path=None,type="partitioned"):
 ```
 
-Add new public IP.
+Add new disk.
 
 
 ```python
-# Partitioned public IP
->>> clc.v2.Server("WA1BTDIX01").PublicIPs().Add(size=20,path=None,type="raw").WaitUntilComplete()
+# Partitioned disk
+>>> clc.v2.Server("WA1BTDIX01").Disks().Add(size=20,path=None,type="raw").WaitUntilComplete()
 0
 
-# Raw public IP
->>> clc.v2.Server("WA1BTDIX01").PublicIPs().Add(size=20,path=None,type="raw").WaitUntilComplete()
+# Raw disk
+>>> clc.v2.Server("WA1BTDIX01").Disks().Add(size=20,path=None,type="raw").WaitUntilComplete()
 0
 ```
 
 
-### clc.v2.PublicIPs.Get
+### clc.v2.Disks.Get
 ```python
-clc.v2.PublicIPs.Get( key ):
+clc.v2.Disks.Get( key ):
 ```
 
-Get public IP by providing internal or public IP.
+Get disk by providing mount point or ID.
+
+If key is not unique and finds multiple matches only the first will be returned
+
+
+### clc.v2.Disks.Search
+```python
+clc.v2.Disks.Get( search ):
+```
+
+Search disk list by partial mount point or ID
 
 
 
+## Disk
 
-## PublicIP
-
-[PublicIP pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.public IP.html)
+[Disk pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.disk.html)
 
 
 ### Class variables
 
 Object variables:
 
-* public_ip.id - alias of public
-* public_ip.public
-* public_ip.internal
+* disk.id
+* disk.partition_paths - list of mounts paths
+* disk.size - disk size in GB
 
-### clc.v2.PublicIP
+
+### clc.v2.Disk
 ```python
-clc.v2.PublicIP( id, parent, public_ip_obj=None )
+clc.v2.Disk( id, parent, disk_obj=None )
 ```
 
-Create `PublicIP` object.  This is typically only called from the `PublicIPs` object.
+Create `Disk` object.  This is typically only called from the `Disks` object.
 
 
-### clc.v2.PublicIP.Delete
+### clc.v2.Disk.Grow
 ```python
-clc.v2.PublicIP.Delete()
+clc.v2.Disk.Grow( size )
 ```
 
-This request will error if public IP is protected and cannot be removed (e.g. a system public IP)
+Grow disk to the newly specified size.
+
+Size must be less than 1024 and must be greater than the current size.
 
 ```python
->>> clc.v2.Server("WA1BTDIX01").PublicIPs().public IPs[2].Delete().WaitUntilComplete()
+>>> clc.v2.Server("WA1BTDIX01").Disks().disks[2].Grow(30).WaitUntilComplete()
+0
+```
+
+
+### clc.v2.Disk.Delete
+```python
+clc.v2.Disk.Delete()
+```
+
+This request will error if disk is protected and cannot be removed (e.g. a system disk)
+
+```python
+>>> clc.v2.Server("WA1BTDIX01").Disks().disks[2].Delete().WaitUntilComplete()
 0
 ```
 
@@ -1056,6 +1085,8 @@ If key is not unique and finds multiple matches only the first will be returned
 
 
 
+
+
 ## PublicIP
 
 [PublicIP pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.public_ip.html)
@@ -1065,32 +1096,18 @@ If key is not unique and finds multiple matches only the first will be returned
 
 Object variables:
 
-* disk.id
-* disk.partition_paths - list of mounts paths
-* disk.size - disk size in GB
+* public_ip.id - alias of public
+* public_ip.public
+* public_ip.internal
+* public_ip.ports - list of port/protocol dicts
 
 
 ### clc.v2.PublicIP
 ```python
-clc.v2.PublicIP( id, parent, disk_obj=None )
+clc.v2.PublicIP( id, parent, public_ip_obj=None )
 ```
 
 Create `PublicIP` object.  This is typically only called from the `PublicIPs` object.
-
-
-### clc.v2.PublicIP.Grow
-```python
-clc.v2.PublicIP.Grow( size )
-```
-
-Grow disk to the newly specified size.
-
-Size must be less than 1024 and must be greater than the current size.
-
-```python
->>> clc.v2.Server("WA1BTDIX01").PublicIPs().disks[2].Grow(30).WaitUntilComplete()
-0
-```
 
 
 ### clc.v2.PublicIP.Delete
@@ -1098,117 +1115,95 @@ Size must be less than 1024 and must be greater than the current size.
 clc.v2.PublicIP.Delete()
 ```
 
-This request will error if disk is protected and cannot be removed (e.g. a system disk)
-
-```python
->>> clc.v2.Server("WA1BTDIX01").PublicIPs().disks[2].Delete().WaitUntilComplete()
-0
-```
-
-
-
-
-
-## PublicIPs
-
-[PublicIPs pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.disk.html)
-
-
-### clc.v2.PublicIPs
-```python
-clc.v2.PublicIPs( server, disks_lst )
-```
-
-Create `PublicIPs` object.  This is typically only called from the `Server` object.
-`Server` is a server object.
-
-
-### clc.v2.PublicIPs.Add
-```python
-clc.v2.PublicIPs.Add(self,size,path=None,type="partitioned"):
-```
-
-Add new disk.
-
-
-```python
-# Partitioned disk
->>> clc.v2.Server("WA1BTDIX01").PublicIPs().Add(size=20,path=None,type="raw").WaitUntilComplete()
-0
-
-# Raw disk
->>> clc.v2.Server("WA1BTDIX01").PublicIPs().Add(size=20,path=None,type="raw").WaitUntilComplete()
-0
-```
-
-
-### clc.v2.PublicIPs.Get
-```python
-clc.v2.PublicIPs.Get( key ):
-```
-
-Get disk by providing mount point or ID.
-
-If key is not unique and finds multiple matches only the first will be returned
-
-
-### clc.v2.PublicIPs.Search
-```python
-clc.v2.PublicIPs.Get( search ):
-```
-
-Search disk list by partial mount point or ID
-
-
-
-## PublicIP
-
-[PublicIP pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.disk.html)
-
-
-### Class variables
-
-Object variables:
-
-* disk.id
-* disk.partition_paths - list of mounts paths
-* disk.size - disk size in GB
-
-
-### clc.v2.PublicIP
-```python
-clc.v2.PublicIP( id, parent, disk_obj=None )
-```
-
-Create `PublicIP` object.  This is typically only called from the `PublicIPs` object.
-
-
-### clc.v2.PublicIP.Grow
-```python
-clc.v2.PublicIP.Grow( size )
-```
-
-Grow disk to the newly specified size.
-
-Size must be less than 1024 and must be greater than the current size.
-
-```python
->>> clc.v2.Server("WA1BTDIX01").PublicIPs().disks[2].Grow(30).WaitUntilComplete()
-0
-```
-
-
-### clc.v2.PublicIP.Delete
-```python
-clc.v2.PublicIP.Delete()
-```
+Delete the public IP.
 
 This request will error if disk is protected and cannot be removed (e.g. a system disk)
 
 ```python
->>> clc.v2.Server("WA1BTDIX01").PublicIPs().disks[2].Delete().WaitUntilComplete()
+>>> clc.v2.Server("WA1BTDIX01").PublicIPs().public_ips[0].Delete().WaitUntilComplete()
 0
 ```
+
+
+### clc.v2.PublicIP.Update
+```python
+clc.v2.PublicIP.Update()
+```
+
+Commits any changes to the `PublicIP` object.  This is usually called as a result of any changes to the
+ports and source restrictions and need not be called directly.
+
+```python
+>>> clc.v2.Server("WA1BTDIX01").PublicIPs().public_ips[0].Update().WaitUntilComplete()
+0
+```
+
+
+### clc.v2.PublicIP.AddPort
+```python
+clc.v2.PublicIP.AddPort( protocol, port, port_to=None )
+```
+
+Add and commit a single additional port.
+
+```python
+# Add single port
+>>> clc.v2.Server("WA1BTDIX01").PublicIPs().public_ips[0].AddPort(protocol='TCP',port='22').WaitUntilComplete()
+0
+
+# Add port range
+>>> clc.v2.Server("WA1BTDIX01").PublicIPs().public_ips[0].AddPort(protocol='UDP',port='10000',port_to='15000').WaitUntilComplete()
+0
+```
+
+
+### clc.v2.PublicIP.AddPort
+```python
+clc.v2.PublicIP.AddPorts( ports )
+```
+
+Create one or more port access policies.
+
+Include a list of dicts with protocol, port, and port_to (optional - for range) keys.
+
+```python
+>>> clc.v2.Server("WA1BTDIX01").PublicIPs().public_ips[0]
+                .AddPorts([{'protocol': 'TCP', 'port': '80' },
+                           {'protocol': 'UDP', 'port': '10000', 'port_to': '15000'}]).WaitUntilComplete()
+0
+```
+
+
+### clc.v2.PublicIP.AddSourceRestriction
+```python
+clc.v2.PublicIP.AddSourceRestriction( cidr )
+```
+
+Add and commit a single source IP restriction policy.
+
+```python
+>>> clc.v2.Server("WA1BTDIX01").PublicIPs().public_ips[0]
+                .AddSourceRestriction(cidr="132.200.20.1/32").WaitUntilComplete()
+0
+```
+
+
+### clc.v2.PublicIP.AddSourceRestrictions
+```python
+clc.v2.PublicIP.AddSourceRestrictions( cidrs )
+```
+
+Create one or more CIDR source restriction policies.
+
+Include a list of CIDR strings.
+
+```python
+>>> clc.v2.Server("WA1BTDIX01").PublicIPs().public_ips[0]
+                .AddSourceRestrictions(cidrs=["132.200.20.1/32","132.200.20.100/32"]).WaitUntilComplete()
+0
+```
+
+
 
 
 
