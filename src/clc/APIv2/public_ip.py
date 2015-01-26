@@ -119,10 +119,14 @@ class PublicIP(object):
 			self.data['_ports'] = self.data['ports']
 			self.data['ports'] = []
 			for port in self.data['_ports']:  
-				if 'portTo' in port:  self.ports.append(Port(port['protocol'],port['port'],port['portTo']))
-				else:  self.ports.append(Port(port['protocol'],port['port']))
+				if 'portTo' in port:  self.ports.append(Port(self,port['protocol'],port['port'],port['portTo']))
+				else:  self.ports.append(Port(self,port['protocol'],port['port']))
 
 			# build source restriction
+			self.data['_source_restrictions'] = self.data['sourceRestrictions']
+			self.data['source_restrictions'] = []
+			for source_restriction in self.data['_source_restrictions']:  
+				self.source_restrictions.append(SourceRestriction(self,source_restriction['cidr']))
 
 		return(self.data)
 
@@ -140,14 +144,48 @@ class PublicIP(object):
 		return(clc.v2.Requests(clc.v2.API.Call('DELETE','servers/%s/%s/publicIPAddresses/%s' % (self.parent.server.alias,self.parent.server.id,self.id))))
 
 
+	def Update(self):
+		pass
+
+
 	def AddPort(self,protocol,port,port_to=None):  
 		self.ports.append(Port(self,protocol,port,port_to))
 
+		return(self.Update())
 
-	def AddPorts(self,protocol,port,port_to=None):  
+
+	def AddPorts(self,ports):  
+		"""Create one or more port access policies.
+
+		Include a list of dicts with protocol, port, and port_to (optional - for range) keys.
+
+		"""
+
 		for port in ports:  
-			if 'port_to' in port:  self.AddPort(Port(port['protocol'],port['port'],port['port_to']))
-			else:  self.AddPort(Port(port['protocol'],port['port']))
+			if 'port_to' in port:  self.ports.append(Port(self,port['protocol'],port['port'],port['port_to']))
+			else:  self.ports.append(Port(self,port['protocol'],port['port']))
+
+		return(self.Update())
+
+
+	def AddSourceRestriction(self,cidr):  
+		self.source_restrictions.append(SourceRestriction(self,protocol,source_restriction,source_restriction_to))
+
+		return(self.Update())
+
+
+	def AddSourceRestrictions(self,cidrs):
+		"""Create one or more CIDR source restriction policies.
+
+		Include a list of CIDR strings.
+
+		"""
+
+		for source_restriction in source_restrictions:  
+			if 'source_restriction_to' in source_restriction:  self.source_restrictions.append(SourceRestriction(self,source_restriction['protocol'],source_restriction['source_restriction'],source_restriction['source_restriction_to']))
+			else:  self.source_restrictions.append(SourceRestriction(self,source_restriction['protocol'],source_restriction['source_restriction']))
+
+		return(self.Update())
 
 
 	#def SourceRestrictions(self):
@@ -193,5 +231,29 @@ class Port(object):
 	def __str__(self):
 		if self.port_to:  return("%s-%s/%s" % (self.port,self.port_to,self.protocol))
 		else:  return("%s/%s" % (self.port,self.protocol))
+
+
+
+
+class SourceRestriction(object):
+
+	def __init__(self,public_ip,cidr):
+		self.public_ip = public_ip
+		self.cidr = cidr
+
+
+	def Delete(self):
+		self.public_ip.source_restrictions = [o for o in self.public_ip.source_restrictions if o!=self]
+		self.public_ip.Update()
+
+
+	def ToDict(self):
+		d = {'cidr': self.cidr}
+
+		return(d)
+
+
+	def __str__(self):
+		return("%s-%s/%s" % (self.cidr))
 
 
