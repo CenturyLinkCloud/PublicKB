@@ -23,6 +23,7 @@ PublicIP object variables:
 # TODO - PublicIPs search by port and source restriction
 # TODO - Access PublicIPs by index - map directly to public_ips.public_ipds list
 # TODO - wait on request and ID/store assigned public IP
+# TODO - optional param to not call PublicIP.Update() with port/src changes so they can be batched
 
 
 import re
@@ -169,7 +170,7 @@ class PublicIP(object):
 
 
 	def AddSourceRestriction(self,cidr):  
-		self.source_restrictions.append(SourceRestriction(self,protocol,source_restriction,source_restriction_to))
+		self.source_restrictions.append(SourceRestriction(self,cidr))
 
 		return(self.Update())
 
@@ -181,15 +182,9 @@ class PublicIP(object):
 
 		"""
 
-		for source_restriction in source_restrictions:  
-			if 'source_restriction_to' in source_restriction:  self.source_restrictions.append(SourceRestriction(self,source_restriction['protocol'],source_restriction['source_restriction'],source_restriction['source_restriction_to']))
-			else:  self.source_restrictions.append(SourceRestriction(self,source_restriction['protocol'],source_restriction['source_restriction']))
+		for cidr in cidrs:  self.source_restrictions.append(SourceRestriction(self,cidr))
 
 		return(self.Update())
-
-
-	#def SourceRestrictions(self):
-	#	if 
 
 
 	def __getattr__(self,var):
