@@ -15,7 +15,6 @@ PublicIP object variables:
 """
 
 # vCur:
-# TODO - Add public IP
 # TODO - ports
 # TODO - sourcerestriction
 # TODO - Update public IP
@@ -37,7 +36,7 @@ class PublicIPs(object):
 		self.server = server
 		self.public_ips = []
 		for public_ip in public_ips_lst:
-			self.public_ips.append(PublicIP(id=public_ip['public'],parent=self,public_ip_obj=public_ip))
+			if 'public' in public_ip:  self.public_ips.append(PublicIP(id=public_ip['public'],parent=self,public_ip_obj=public_ip))
 
 
 	def Get(self,key):
@@ -48,31 +47,49 @@ class PublicIPs(object):
 			elif key == public_ip.internal:  return(public_ip)
 
 
-	def Add(self,size,path=None,type="partitioned"):
+	def Add(self,ports,source_restrictions=None,private_ip=None):
 		"""Add new public_ip.
 
-		This request will error if public_ip is protected and cannot be removed (e.g. a system public_ip)
+		Specify one or more ports using a list of dicts with the following keys:
 
-		# Partitioned public_ip
-		>>> clc.v2.Server("WA1BTDIX01").PublicIPs().Add(size=20,path=None,type="raw").WaitUntilComplete()
+			protocol - TCP, UDP, or ICMP
+			port - int 0-65534
+			port_to - (optional) if specifying a range of ports then the rqange end.  int 0-65534
+		
+		Optionally specify one or more source restrictions using a list of dicts with the following keys:
+
+			cidr - string with CIDR notation for the subnet (e.g. "132.200.20.0/24")
+
+		private_ip is the existing private IP address to NAT to (optional)
+
+		# New public IP with single port
+		>>> p = clc.v2.Server(alias='BTDI',id='WA1BTDIX03').PublicIPs()
+		>>> p.Add(ports=[{"protocol": "TCP","port":5}]).WaitUntilComplete()
 		0
 
-		# Raw public_ip
-		>>> clc.v2.Server("WA1BTDIX01").PublicIPs().Add(size=20,path=None,type="raw").WaitUntilComplete()
+		# New public IP with port range
+		>>> p.Add([{"protocol": "UDP","port":10,"port_to":50}]).WaitUntilComplete()
 		0
+
+		# Map existing private IP to single port
+		>>> p.Add(ports=[{"protocol": "TCP","port":22}],k
+		          source_restrictions=[{'cidr': "132.200.20.0/24"}],
+				  private_ip="10.80.148.13").WaitUntilComplete()
+		0
+
+		* Note this API is subject to revision to make ports and source restrictions access to parallel
+		  that used for accessors.
 
 		"""
 
-		if type=="partitioned" and not path:  raise(clc.CLCException("Must specify path to mount new public_ip"))
+		payload = {'ports': []}
+		for port in ports:
+			if 'port_to' in port:  payload['ports'].append({'protocol':port['protocol'], 'port':port['port'], 'portTo':port['port_to']})
+			else:  payload['ports'].append({'protocol':port['protocol'], 'port':port['port']})
+		if source_restrictions:  payload['sourceRestrictions'] = source_restrictions
+		if private_ip:  payload['internalIPAddress'] = private_ip
 
-		public_ip_set = [{'public_ipId': o.id, 'sizeGB': o.size} for o in self.public_ips]
-		public_ip_set.append({'sizeGB': size, 'type': type, 'path': path})
-		self.public_ips.append(PublicIP(id=int(time.time()),parent=self,public_ip_obj={'sizeGB': size,'partitionPaths': [path]}))
-
-		self.size = size
-		self.server.dirty = True
-		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.server.alias,self.server.id),
-		                                       json.dumps([{"op": "set", "member": "public_ips", "value": public_ip_set}]))))
+		return(clc.v2.Requests(clc.v2.API.Call('POST','servers/%s/%s/publicIPAddresses' % (self.server.alias,self.server.id),json.dumps(payload))))
 
 
 
