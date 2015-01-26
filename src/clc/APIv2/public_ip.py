@@ -197,6 +197,14 @@ class PublicIP(object):
 
 
 	def AddSourceRestriction(self,cidr):  
+		"""Add and commit a single source IP restriction policy.
+
+		>>> clc.v2.Server("WA1BTDIX01").PublicIPs().public_ips[0]
+				.AddSourceRestriction(cidr="132.200.20.1/32").WaitUntilComplete()
+		0
+
+		"""
+
 		self.source_restrictions.append(SourceRestriction(self,cidr))
 
 		return(self.Update())
@@ -206,6 +214,10 @@ class PublicIP(object):
 		"""Create one or more CIDR source restriction policies.
 
 		Include a list of CIDR strings.
+
+		>>> clc.v2.Server("WA1BTDIX01").PublicIPs().public_ips[0]
+				.AddSourceRestrictions(cidrs=["132.200.20.1/32","132.200.20.100/32"]).WaitUntilComplete()
+		0
 
 		"""
 
