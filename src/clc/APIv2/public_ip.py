@@ -22,6 +22,7 @@ PublicIP object variables:
 # vNext:
 # TODO - PublicIPs search by port and source restriction
 # TODO - Access PublicIPs by index - map directly to public_ips.public_ipds list
+# TODO - wait on request and ID/store assigned public IP
 
 
 import re
@@ -79,6 +80,9 @@ class PublicIPs(object):
 
 		* Note this API is subject to revision to make ports and source restrictions access to parallel
 		  that used for accessors.
+
+		* public_ips.public_ips will not be updated to reflect this addition. Recreate object after request completes
+		  to access new info including getting the IP itself
 
 		"""
 
