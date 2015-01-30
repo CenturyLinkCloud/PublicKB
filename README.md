@@ -53,11 +53,13 @@ To make any changes please submit a [pull request](https://help.github.com/artic
   ]
   ```
 
-`"file_name"` will be the human readable output of the file which will appear on the page
+  `"file_name"` will be the human readable output of the file which will appear on the page
 
-`"url"` needs to be set exactly like the above example, like so: `/knowledge-base/attachments/[file name]`
+  `"url"` needs to be set exactly like the above example, like so: 
+    
+    `/knowledge-base/attachments/[file name]`
 
-`"type"` is simply the MIME type of the file and is used to check which sort of icon to present on the front end.
+  `"type"` is simply the MIME type of the file and is used to check which sort of icon to present on the front end.
 
 
 - How Attachments are Handled
