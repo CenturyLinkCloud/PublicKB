@@ -5,21 +5,23 @@ Welcome to [CenturyLink Cloud](http://www.centurylinkcloud.com) knowledge base r
 
 ##How this Works
 
-* **Headers:** The system uses Jekyll _(like)_ headers to be able to list current information and also track things such as author, date created, modified, keywords, title, etc.
+<!-- * **Headers:** The system uses Jekyll _(like)_ headers to be able to list current information and also track things such as author, date created, modified, keywords, title, etc. -->
 
 ```code
----
-title: Blogging Like a Hacker
-author: Joe Smith
-keywords: cat, foo, bar, nice, crack, fun
-categories: Hyperscale, VMStandard
-permlink: /blogging-like-a-hacker
----
+{{{
+  "title": "ARTICLE TITLE",
+  "date": "01-15-2015",
+  "author": "Author Name",
+  "attachments": [],
+  "related-products" : [],
+  "preview" : "",
+  "contentIsHTML": false
+}}}
 ```
 
-* **Markdown:** It is also built using all markdown for the documents. For more information about markdown please use [Google](https://www.google.com/webhp?sourceid=chrome-instant&rlz=1C5CHFA_enUS503US504&ion=1&espv=2&ie=UTF-8#q=markdown%20syntax)
+<!-- * **Markdown:** It is also built using all markdown for the documents. For more information about markdown please use [Google](https://www.google.com/webhp?sourceid=chrome-instant&rlz=1C5CHFA_enUS503US504&ion=1&espv=2&ie=UTF-8#q=markdown%20syntax)
 
-* **Folder Structure:** folders are by products and should remain that way. If you want your document to be supported in multiple categories please use the headers to list all of the categories it is in. All image and assets should be located in the local product folder or in a folder next to the document. It should not be on the root of the directory structure. 
+* **Folder Structure:** folders are by products and should remain that way. If you want your document to be supported in multiple categories please use the headers to list all of the categories it is in. All image and assets should be located in the local product folder or in a folder next to the document. It should not be on the root of the directory structure.  -->
 
 
 
