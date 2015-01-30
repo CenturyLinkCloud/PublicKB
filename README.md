@@ -30,6 +30,28 @@ To make any changes please submit a [pull request](https://help.github.com/artic
 ##Setting Up a Test Environment
 
 
-
-
 ##FAQ
+- Specific Markdown
+- Specific Class and Modules
+
+- Images - when adding an image to an article, place the image file in the `images/` directory in the root of this repo. In the article itself, set the image source path like so: `/knowledge-base/images/[image file]`
+
+- Attachments - when adding an attachment to an article, place the file in the 'attachments/' directory at the root of this repo. In the article itself, add the file information to the front-matter data at the top of the article like so:
+
+  "attachments": [
+    {
+      "file_name": "Attached File",
+      "url": "/knowledge-base/attachments/Balancing Agility Cost and Control.pdf",
+      "type": "application/pdf"
+    }
+  ]
+
+`"file_name"` will be the human readable output of the file which will appear on the page
+`"url"` needs to be set exactly like the above example, like so: `/knowledge-base/attachments/[file name]`
+`"type"` is simply the MIME type of the file and is used to check which sort of icon to present on the front end.
+
+
+- How Attachments are Handled
+- Front Matter - Config Data
+- Category Landing page config
+- Anchors and TOC
