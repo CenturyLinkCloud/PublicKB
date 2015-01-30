@@ -42,70 +42,39 @@
 <pre class="collapse" id="collapseMe" style="height:0;">
 <code>\{{{
   "title": "Knowledge Base Documentation",
-
   "date": "01-18-2015",
-
   "author": "Kevin Bleich",
-
   "attachments": [
-
     {
-
       "file_name": "Attached File",
-
       "url": "/knowledge-base/attachments/Balancing Agility Cost and Control.pdf",
-
       "type": "application/pdf"
     }
-
   ],
-
   "related_products": [ 
-
     {
-
       "title": "Hyperscale Server",
-
       "description": "Lightning-quick servers in the public cloud with 100% flash storage. Breakthrough performance for data and web scale architectures.",
-
       "link": "/hyperscale"
-    
     },
-
     {
-
       "title": "Private Cloud",
-
       "description": "Our stack, isolated and dedicated to you. Deploy in over 55 CenturyLink locations around the world.",
-
       "link": "/private-cloud"
-    
     }
   ],
-
   "related_questions": [
     {
-
       "question": "What's new in the server alerting service?",
-
       "answer": "The CLC team updated multiple aspects of the service. Previously, users configured monitors for each server and viewed a reports tab to track performance. Now, you create CPU/memory/storate alert policies, apply them to servers, and consume alerts in 3 key ways. Alerts can be sent via email, webhook, or through visual indicators in the updated Servers user interface."
-    
     },
-
     {
-
       "question": "How do I create alert policies in the Control Portal?",
-
       "answer": "Visit the Alerts page using the main navigation menu, then choose create alert policy. Provide a name for the policy and a specific utilization threshold for CPU/memory/storage that should trigger an alert."
-    
     }
-    
   ],
-
   "preview" : "CenturyLink Cloud accounts start with a pre-defined resource (CPU/memory/storage) limit per data center. As customers grow their cloud usage, it's common to request an increase in resource limits.",
-
   "contentIsHTML": false
-
 }}}
 </code>
 </pre>
