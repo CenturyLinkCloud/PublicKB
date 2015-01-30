@@ -310,20 +310,14 @@ The above Table of Contents is a working example and all of the follwing section
 
 ### Images <a id="anchor-images" class="kb-toc-anchor" href="#anchor-images"></a>
 
-![Example](/knowledge-base/images/subalias.png)
+![KB Repo Image](/knowledge-base/images/subalias.png)
 
-![CreateZone](https://t3n.zendesk.com/attachments/token/g6pf6kex9y6y6n7/?name=CreateZone.png)
+  ![KB Repo Image](/knowledge-base/images/subalias.png)
 
-![FTP Users Menu](https://t3n.zendesk.com/attachments/token/TBdfKe5e2A38fXpNqdMOubJHo/?name=ftp-users-menu.png)
+![ZenDesk Legacy Image](https://t3n.zendesk.com/attachments/token/g6pf6kex9y6y6n7/?name=CreateZone.png)
 
-    ### Images
+  ![ZenDesk Legacy Image](https://t3n.zendesk.com/attachments/token/g6pf6kex9y6y6n7/?name=CreateZone.png)
 
-    ![Example](/knowledge-base/images/subalias.png)
-
-    ![CreateZone](https://t3n.zendesk.com/attachments/token/g6pf6kex9y6y6n7/?name=CreateZone.png)
-    
-    ![FTP Users Menu](https://t3n.zendesk.com/attachments/token/TBdfKe5e2A38fXpNqdMOubJHo/?name=ftp-users-menu.png)
-    
 
 ### Tables <a id="anchor-tables" class="kb-toc-anchor" href="#anchor-tables"></a>
 
