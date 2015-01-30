@@ -14,7 +14,7 @@ Welcome to [CenturyLink Cloud](http://www.centurylinkcloud.com) knowledge base r
   "author": "Author Name",
   "attachments": [],
   "related-products" : [],
-  "preview" : "",
+  "preview" : "This is for article preview text",
   "contentIsHTML": false
 }}}
 ```
