@@ -312,11 +312,11 @@ The above Table of Contents is a working example and all of the follwing section
 
 ![KB Repo Image](/knowledge-base/images/subalias.png)
 
-  ![KB Repo Image](/knowledge-base/images/subalias.png)
+    ![KB Repo Image](/knowledge-base/images/subalias.png)
 
 ![ZenDesk Legacy Image](https://t3n.zendesk.com/attachments/token/g6pf6kex9y6y6n7/?name=CreateZone.png)
 
-  ![ZenDesk Legacy Image](https://t3n.zendesk.com/attachments/token/g6pf6kex9y6y6n7/?name=CreateZone.png)
+    ![ZenDesk Legacy Image](https://t3n.zendesk.com/attachments/token/g6pf6kex9y6y6n7/?name=CreateZone.png)
 
 
 ### Tables <a id="anchor-tables" class="kb-toc-anchor" href="#anchor-tables"></a>
