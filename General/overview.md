@@ -310,6 +310,8 @@ The above Table of Contents is a working example and all of the follwing section
 
 ### Images <a id="anchor-images" class="kb-toc-anchor" href="#anchor-images"></a>
 
+![Example](/knowledge-base/images/subalias.png)
+
 ![CreateZone](https://t3n.zendesk.com/attachments/token/g6pf6kex9y6y6n7/?name=CreateZone.png)
 
 ![FTP Users Menu](https://t3n.zendesk.com/attachments/token/TBdfKe5e2A38fXpNqdMOubJHo/?name=ftp-users-menu.png)
