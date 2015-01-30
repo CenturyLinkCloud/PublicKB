@@ -57,7 +57,9 @@ To make any changes please submit a [pull request](https://help.github.com/artic
 
   `"url"` needs to be set exactly like the above example, like so: 
     
-      `/knowledge-base/attachments/[file name]`
+    ```
+    /knowledge-base/attachments/[file name]
+    ```
 
   `"type"` is simply the MIME type of the file and is used to check which sort of icon to present on the front end.
 
