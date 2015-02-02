@@ -101,19 +101,6 @@
   </div>
 </div>
 
-<span class="kb-post-overview">
-### Overview
-
-The Overview section is of course optional but can be used to provide immediate context for the article. The __Audience__ section is also optional.
-
-<span class="kb-post-audience">
-### Audience
-
-- Valued customer
-
-</span>
-</span>
-
 <!-- OVERVIEW - HTML -->
 
     <div class="kb-post-overview">
