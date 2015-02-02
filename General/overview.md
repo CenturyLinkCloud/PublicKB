@@ -101,6 +101,25 @@
   </div>
 </div>
 
+<span class="kb-post-overview">
+  <h3>
+    Overview
+  </h3>
+  <p>
+    The Overview section is of course optional but can be used to provide immediate context for the article. The <strong>Audience</strong> section is also optional.
+  </p>
+  <div class="kb-post-audience">
+    <h3>
+      Audience
+    </h3>
+    <ul>
+      <li>
+        Valued customer
+      </li>
+    </ul>
+  </div>
+</span>
+
 <!-- OVERVIEW - HTML -->
 
     <div class="kb-post-overview">
