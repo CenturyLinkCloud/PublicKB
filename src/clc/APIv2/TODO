@@ -1,4 +1,10 @@
-dd’l tasks:
+
+Rreate template:
+equest URL:https://control.tier3.com/api/tunnel/v2/servers/krap/ca1krapapi01/convertToTemplate
+{description: "test tpl", password: "foo", visibility: "private"}
+
+
+add’l tasks:
 
 
 
