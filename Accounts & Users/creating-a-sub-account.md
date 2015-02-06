@@ -1,22 +1,21 @@
 {{{
-  "title": "Creating a subaccount",
+  "title": "Creating a Sub Account",
   "date": "11-5-2014",
   "author": "Jon McClary",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-<h2>Sub Account Creation</h2>
 <p>CenturyLink Cloud supports the ability to create sub accounts, which fall under a parent account. Sub accounts have many advantages:</p>
 <p>They are hierarchal - user permissions flow down, not up nor sideways.</p>
 <p>They may be billed separately or to the parent account.&nbsp;</p>
 <p>They may share parent networks or have their own.</p>
 <p>Settings are inherited.</p>
 
-<h2>Audience</h2>
+###Audience
 Customers
 
-<h2>Creating a Sub Account</h2>
+###Creating a Sub Account</h2>
 <p>In CenturyLinkCloud’s Control Portal drop down menu, select Account &gt; Sub Accounts</p>
 <p>Click “+ create new account”</p>
 
@@ -77,13 +76,13 @@ Note that an account alias cannot be reused, even after deletion of the original
 <p>Menus are hidden to the sub account</p>
 <p>You can click any of these settings and toggle them between disabled (not visible) and enabled (visible and therefore editable)</p>
 
-##Adding Users/Permissions
-# To add new users to the subaccount:</p>
-# In the dropdown in the top left, select the subaccount for which you would like to add a user.
-# Go to account&gt;users and click “+ Create New User”.
-# Fill in required information.
-# Permissions can then be administered via the Account &gt; Permissions tab.
-# Note that user permissions are hierarchical so a user may access the account to which they are assigned, and that account’s sub accounts, but not a parent account nor any other sub account on the same level.
+###Adding Users/Permissions
+1. To add new users to the subaccount:</p>
+2. In the dropdown in the top left, select the subaccount for which you would like to add a user.
+3. Go to account&gt;users and click “+ Create New User”.
+4. Fill in required information.
+5. Permissions can then be administered via the Account &gt; Permissions tab.
+6. Note that user permissions are hierarchical so a user may access the account to which they are assigned, and that account’s sub accounts, but not a parent account nor any other sub account on the same level.
 
 
 <h2>FAQ</h2>
