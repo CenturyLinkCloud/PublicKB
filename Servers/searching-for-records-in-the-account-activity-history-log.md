@@ -8,7 +8,7 @@
 
 <p><strong>Description:</strong>
 </p>
-<p>All actions performed by users in the Tier 3 cloud are recorded. The Tier 3 Activity Account History log can be viewed on the Tier 3 Control Portal or exported to as a CSV file for further analysis. This log includes the activities performed by users
+<p>All actions performed by users in the CenturyLink Cloud are recorded. The Tier 3 Activity Account History log can be viewed on the Tier 3 Control Portal or exported to as a CSV file for further analysis. This log includes the activities performed by users
   within an account and any sub-accounts.</p>
 <p><strong>Steps:&nbsp;</strong>
 </p>

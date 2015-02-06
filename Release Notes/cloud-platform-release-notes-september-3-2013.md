@@ -23,7 +23,7 @@
 <ul>
   <li><strong>Role-based access improvements.&nbsp;</strong>Platform is maturing how role-based access controls work, and this sprint featured significant work at the foundational level. Customers can see a peek of this work in action by seeing that Server
     Administrators can now see public and private IP addresses (but cannot claim or release them).&nbsp;</li>
-  <li><strong>Improved credit card processing. </strong>We upgraded our underlying services to provide an&nbsp;even better customer experience and significantly reduce the opportunity for fraud in the Tier 3 cloud.</li>
+  <li><strong>Improved credit card processing. </strong>We upgraded our underlying services to provide an&nbsp;even better customer experience and significantly reduce the opportunity for fraud in the CenturyLink Cloud.</li>
   <li><strong>Hot add of server resources. </strong>Add CPU and memory to servers without a reboot. Applies to servers based on Windows Server 2012 Datacenter Edition, Red Hat Enterprise Linux 5/ 6, and Ubuntu 10/12 x64.&nbsp;<strong>Note that while RAM capacity is added instantly, some OSes require your manual intervention for the server to *see* the new RAM.</strong>
     <p><img src="https://t3n.zendesk.com/attachments/token/u0i1muxq1kk8zds/?name=release09_03_02.png" alt="release09_03_02.png" />
     </p>

@@ -1,5 +1,5 @@
 {{{
-  "title": "Exporting a VM to an OVF from VMware Workstation for Import into the Tier 3 Cloud",
+  "title": "Exporting a VM to an OVF from VMware Workstation for Import into the CenturyLink Cloud",
   "date": "4-16-2013",
   "author": "Jake Malmad",
   "attachments": [],
@@ -8,7 +8,7 @@
 
 <h3>Description:</h3>
 <p>OVF (<strong>Open Virtualization Format</strong>) is an open standard for packaging and distributing virtual machines or virtual appliances. The OVF standard is not proprietary, and thus cross-platform compatible regardless of hypervisor (VMware, Hyper-V,
-  Xen). This article details the steps associated with exporting a virtual machine from VMware Workstation for import into the Tier 3 cloud.</p>
+  Xen). This article details the steps associated with exporting a virtual machine from VMware Workstation for import into the CenturyLink Cloud.</p>
 <h3>Steps:</h3>
 <p><strong>1.</strong> Launch VMware Workstation. In the “Library” pane, select the machine you wish to export.</p>
 <blockquote>

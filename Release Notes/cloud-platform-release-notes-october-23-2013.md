@@ -9,7 +9,7 @@
 </p>
 <hr />
 <ul>
-  <li><strong>Cloud Webhooks (beta). </strong>This new feature -- the first of its kind in a public IaaS cloud -- lets customers subscribe to events that occur in the Tier 3 cloud. When an event occurs, a message is immediately sent to an HTTP endpoint specified
+  <li><strong>Cloud Webhooks (beta). </strong>This new feature -- the first of its kind in a public IaaS cloud -- lets customers subscribe to events that occur in the CenturyLink Cloud. When an event occurs, a message is immediately sent to an HTTP endpoint specified
     by the customer. Some details:
     <ul>
       <li>Webhooks exist for account, user, and server events.</li>
