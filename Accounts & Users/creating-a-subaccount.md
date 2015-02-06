@@ -3,24 +3,24 @@
   "date": "11-5-2014",
   "author": "Jon McClary",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
-##Sub Account Creation
+<h2>Sub Account Creation</h2>
 <p>CenturyLink Cloud supports the ability to create sub accounts, which fall under a parent account. Sub accounts have many advantages:</p>
 <p>They are hierarchal - user permissions flow down, not up nor sideways.</p>
 <p>They may be billed separately or to the parent account.&nbsp;</p>
 <p>They may share parent networks or have their own.</p>
 <p>Settings are inherited.</p>
 
-##Audience
+<h2>Audience</h2>
 Customers
 
-##Creating a Sub Account
+<h2>Creating a Sub Account</h2>
 <p>In CenturyLinkCloud’s Control Portal drop down menu, select Account &gt; Sub Accounts</p>
 <p>Click “+ create new account”</p>
 
-###Company Info
+<h3>Company Info</h3>
 </p>
 <p><strong><img src="https://t3n.zendesk.com/attachments/token/I7QPdgngoVsy0n4GPSJFMEZ56/?name=subalias.png" alt="subalias.png" /></strong>
 </p>
@@ -32,7 +32,7 @@ Customers
 Note that an account alias cannot be reused, even after deletion of the original account with that alias.</p>
 <p>Full Address and Phone fields are required.</p>
 
-###Company Info
+<h3>Company Info</h3>
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/szlTQ0FO2uO5x939fr3T82vGP/?name=subbilling.png" alt="sub-billing.png" />
 </p>
@@ -44,14 +44,14 @@ Note that an account alias cannot be reused, even after deletion of the original
   <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This allows for sub accounts to share networks with the parent account. If this is set to ‘NO’ then the sub account will receive unique IP ranges when deploying
   servers/networks.</p>
 
-###Settings:
+<h3>Settings</h3>
 <img src="https://t3n.zendesk.com/attachments/token/Nb2SEB7zot1oJD5LxDUvHOVZ6/?name=subsettings.png" alt="subsettings.png" />
 <p>All settings will be inherited from the parent. Toggle on to Yes any of the settings in this section will make that section visible in the sub account. The users in that sub account will then be able to override inherited settings. Leaving the sections
   set to off will hide the menu for that section in the sub account, preventing the settings from being overridden. In our example sub account users will be able to change the Account Logo and Account Color Scheme from what was inherited. All other menus
   will be hidden.</p>
 
 
-###Data Center
+<h2>Data Center</h3>
 
 <p><strong><img src="https://t3n.zendesk.com/attachments/token/TlQSi9xNdE4lGgtfQku8IL9R1/?name=subdatacenter.png" alt="subdatacenter.png" /></strong>
 </p>
@@ -86,7 +86,7 @@ Note that an account alias cannot be reused, even after deletion of the original
 # Note that user permissions are hierarchical so a user may access the account to which they are assigned, and that account’s sub accounts, but not a parent account nor any other sub account on the same level.
 
 
-##FAQ:
+<h2>FAQ</h2>
 <p>Q: I just created my subaccount. Why do I get a permission denied error when I try to access it?</p>
 <p>A: Allow a few minutes for the new account to fully replicate and try again.</p>
 
