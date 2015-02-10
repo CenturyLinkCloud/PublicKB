@@ -104,24 +104,24 @@
 <!-- OVERVIEW - HTML -->
 
 <pre>
-  <code>&lt;div class="kb-post-overview"&gt;</code>
-    <code>&lt;h3&gt;</code>
-      <code>Overview</code>
-    <code>&lt;/h3&gt;</code>
-    <code>&lt;p&gt;</code>
-      <code>The Overview section is of course optional but can be used to provide immediate context for the article. The &lt;strong&gt;Audience&lt;/strong&gt; section is also optional.</code>
-    <code>&lt;/p&gt;</code>
-    <code>&lt;div class="kb-post-audience"&gt;</code>
-      <code>&lt;h3&gt;</code>
-        <code>Audience</code>
-      <code>&lt;/h3&gt;</code>
-      <code>&lt;ul&gt;</code>
-        <code>&lt;li&gt;</code>
-          <code>Valued customer</code>
-        <code>&lt;/li&gt;</code>
-      <code>&lt;/ul&gt;</code>
-    <code>&lt;/div&gt;</code>
-  <code>&lt;/div&gt;</code>
+<code>  &lt;div class="kb-post-overview"&gt;</code>
+<code>    &lt;h3&gt;</code>
+<code>      Overview</code>
+<code>    &lt;/h3&gt;</code>
+<code>    &lt;p&gt;</code>
+<code>      The Overview section is of course optional but can be used to provide immediate context for the article. The &lt;strong&gt;Audience&lt;/strong&gt; section is also optional.</code>
+<code>    &lt;/p&gt;</code>
+<code>    &lt;div class="kb-post-audience"&gt;</code>
+<code>      &lt;h3&gt;</code>
+<code>        Audience</code>
+<code>      &lt;/h3&gt;</code>
+<code>      &lt;ul&gt;</code>
+<code>        &lt;li&gt;</code>
+<code>          Valued customer</code>
+<code>        &lt;/li&gt;</code>
+<code>      &lt;/ul&gt;</code>
+<code>    &lt;/div&gt;</code>
+<code>  &lt;/div&gt;</code>
 </pre>
 
 
