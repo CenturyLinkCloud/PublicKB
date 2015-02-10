@@ -6,19 +6,22 @@
   "contentIsHTML": true
 }}}
 
-<h3>Description</h3>
+<h2>Description</h2>
 <p>CenturyLink Cloud users are locked out of their account after 4 failed login attempts. To unlock the user, an Account Administrator must view the user's record in the Control Portal and choose to unlock the user. That Account Administrator may be someone
   in the customer account, or a NOC Engineer.</p>
-<h3>Audience</h3>
+
+<h2>Audience</h2>
 <ul>
   <li>Customer support staff</li>
   <li>CenturyLink Cloud NOC Engineers</li>
 </ul>
-<h3>Prerequisites</h3>
+
+<h2>Prerequisites</h2>
 <ul>
   <li>User unlocking the record must have Account Administrator privileges</li>
 </ul>
-<h3>Detailed Steps</h3>
+
+<h2>Detailed Steps</h2>
 <ol>
   <li>4 consecutive times, the user enters an incorrect password when logging into the Control Portal.</li>
   <li>The user receives a message that their user account is locked out.</li>

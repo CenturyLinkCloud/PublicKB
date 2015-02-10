@@ -15,11 +15,11 @@
 <p><img src="https://t3n.zendesk.com/attachments/token/lvelbw7wuayx1yb/?name=saml01.png" alt="saml01.png" />
 </p>
 <ol>
-  <li>The enterprise user of the Tier 3 cloud hits a URL that is dedicated to their account. The user is asked how they would like to log into the system and they choose SAML.</li>
+  <li>The enterprise user of the CenturyLink Cloud hits a URL that is dedicated to their account. The user is asked how they would like to log into the system and they choose SAML.</li>
   <li>The web application contacts the Tier 3 SAML service to initiate the SAML message exchange.</li>
   <li>The Tier 3 SP &nbsp;sends a digitally signed SAML authentication request to the enterprise IdP. This IdP takes the user's Kerberos token and validates them as a user on the enterprise network.&nbsp;</li>
-  <li>The IdP returns a signed (and optionally, encrypted) SAML authentication response message to the Tier 3 SP. This message includes a Name ID assertion and that value is matched to a User record in the Tier 3 cloud.</li>
-  <li>The user is logged into the Tier 3 cloud and operates under the roles and permissions assigned to their Tier 3 user account.</li>
+  <li>The IdP returns a signed (and optionally, encrypted) SAML authentication response message to the Tier 3 SP. This message includes a Name ID assertion and that value is matched to a User record in the CenturyLink Cloud.</li>
+  <li>The user is logged into the CenturyLink Cloud and operates under the roles and permissions assigned to their Tier 3 user account.</li>
 </ol>
 <p>The steps below walk through the process of building an entire SSO and SAML scenario based on Microsoft Active Directory Federation Services as the IdP proxy. If you already have an identity provider, you can skip to step #3 where trust is established
   between Tier 3 and the IdP.</p>
@@ -112,11 +112,11 @@
     <br /><img src="https://t3n.zendesk.com/attachments/token/ydfqxfzie9gc0hf/?name=saml32.png" alt="saml32.png" />
   </li>
 </ul>
-<div><strong>3. Create trust relationship with Tier 3 Cloud.</strong>
+<div><strong>3. Create trust relationship with CenturyLink Cloud.</strong>
 </div>
 <ul>
   <li>Prior to starting this step, <strong>contact the Tier 3 NOC to acquire the public certificate</strong> that validates the message coming from Tier 3.</li>
-  <li>In the ADFS 2.0 Management console (or whatever IdP service that's being used), create a new Relying Party Trust. This is where the settings from the Tier 3 cloud are added to the local IdP so that it recognizes the SAML authentication request and can
+  <li>In the ADFS 2.0 Management console (or whatever IdP service that's being used), create a new Relying Party Trust. This is where the settings from the CenturyLink Cloud are added to the local IdP so that it recognizes the SAML authentication request and can
     validate the inbound signature.
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/7wrwwf8wrpnankf/?name=saml18.png" alt="saml18.png" />

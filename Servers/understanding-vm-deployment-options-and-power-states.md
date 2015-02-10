@@ -63,7 +63,7 @@ Understanding VM Deployment Options and Power States
 <ul>
   <li>
     <p>Costs: In the pause state, a customer pays for storage consumed by the virtual machine and licensing costs. Compute and memory costs are not levied. &nbsp;For further details see&nbsp;<a href="https://t3n.zendesk.com/entries/23227276-Managing-and-Controlling-Costs-in-the-Tier-3-Cloud"
-      target="_blank">Managing and Controlling Costs in the Tier 3 Cloud</a>.</p>
+      target="_blank">Managing and Controlling Costs in the CenturyLink Cloud</a>.</p>
   </li>
   <li>Sample Use Case: &nbsp;A customer maintains a development and staging environment for their production workloads. &nbsp;This environment is only used during business hours 8 AM to 8 PM EST. &nbsp;The IT department, in order to save costs, creates a
     scheduled pause and power on event during off hours. &nbsp;This automated task eliminates CPU &amp; RAM fee's between the 8 PM and 8 AM EST time window for these environments.</li>
@@ -87,7 +87,7 @@ Understanding VM Deployment Options and Power States
 <ul>
   <li>
     <p>Costs: In the archive state, a customer pays only for the archival storage consumed by the virtual machine (at a reduced rate). Compute, memory and licensing costs are not levied. &nbsp;For further details see&nbsp;<a href="https://t3n.zendesk.com/entries/57443680-Managing-and-Controlling-Costs-in-CenturyLink-Cloud"
-      target="_blank">Managing and Controlling Costs in the Tier 3 Cloud</a>.</p>
+      target="_blank">Managing and Controlling Costs in the CenturyLink Cloud</a>.</p>
   </li>
   <li>Sample Use Case: &nbsp;The business department has a reporting server that pulls data on a monthly basis from a 3rd party and generates reports for business analysis. &nbsp;This virtual machine is only required for 2 days per month and otherwise is
     unused. &nbsp;To save costs, the IT department schedules the server to be placed in archive and brought out of archived for operation during just these 2 days of the month. &nbsp;</li>

@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p><strong>Last updated: &nbsp;Thu 10/2/2014 11:24 PST</strong>
+<p><strong>Last updated: &nbsp;2/3/2015 03:05 PST</strong>
 </p>
 Description
 <p>Software and script packages (henceforth referred to as "packages") are one way that Blueprint Designers can customize their environments.&nbsp; They can be configured to run scripts and executables or install software. The definition of a package is
@@ -544,6 +544,14 @@ Package Format
         <p>The account alias that this Blueprint is being deployed under.</p>
       </td>
     </tr>
+	<tr>
+		<td valign="top" width="174">
+		<p><strong>T3.Datacenter</strong></p>
+		</td>
+		<td valign="top" width="624">
+		<p>The data center that the Blueprint is being deployed in.</p>
+		</td>
+	</tr>
   </tbody>
 </table>
 <h3>&lt;Option&gt; Element</h3>

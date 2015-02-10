@@ -21,7 +21,7 @@
 </div>
 <div><strong>&nbsp;</strong>
 </div>
-<div>Connecting to the SMTP service is very easy as it is done via port 25 from inside the Tier 3 Cloud. Here are the settings:</div>
+<div>Connecting to the SMTP service is very easy as it is done via port 25 from inside the CenturyLink Cloud. Here are the settings:</div>
 <div>
   <ul>
     <li>SMTP Host: relay.t3mx.com</li>

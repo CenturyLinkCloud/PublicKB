@@ -20,7 +20,7 @@
 <h3>"A server in Tier 3's public cloud is being attacked"</h3>
 <ol>
   <li>Low-volume attack: The majority of attacks are throttled in order to avoid detection and to leverage a server exploit. &nbsp;As such this will not trigger any any alarm and therefore the Tier 3 Operations will not be aware of the attack.</li>
-  <li>High-volume attack (DDoS): &nbsp;These types of attacks are designed to overwhelm the capabilities of the server. &nbsp;If the volume of the attack is high enough, it will will be detected by the Tier 3 cloud controls and as the Tier 3 Operations staff
+  <li>High-volume attack (DDoS): &nbsp;These types of attacks are designed to overwhelm the capabilities of the server. &nbsp;If the volume of the attack is high enough, it will will be detected by the CenturyLink Cloud controls and as the Tier 3 Operations staff
     will initiate a Security incident. &nbsp;In the majority of cases, the #1 priority is to mitigate the attack and therefore it is possible that the mitigation might interrupt the operations of the server. &nbsp;e.g. black holing the server IP if it
     is being DDoS attacked. &nbsp;The Tier 3 Operations team will open a ticket with the server administrators defined in control.</li>
 </ol>

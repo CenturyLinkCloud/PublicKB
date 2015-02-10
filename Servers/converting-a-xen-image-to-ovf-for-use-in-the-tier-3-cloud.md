@@ -1,5 +1,5 @@
 {{{
-  "title": "Converting a Xen Image to OVF for use in the Tier 3 cloud",
+  "title": "Converting a Xen Image to OVF for use in the CenturyLink Cloud",
   "date": "5-28-2013",
   "author": "Jake Malmad",
   "attachments": [],
@@ -23,4 +23,4 @@
 <p>You will be presented with a summary screen, and upon clicking "Convert" the conversion process will begin.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/ihs2y9scaaa6qae/?name=x4.PNG" alt="x4.PNG" />
 </p>
-<p>Once you have converted the Virtual Machine, please contact your Account Executive or our Professional Services team to import the OVF/OVA in to the Tier 3 cloud.</p>
+<p>Once you have converted the Virtual Machine, please contact your Account Executive or our Professional Services team to import the OVF/OVA in to the CenturyLink Cloud.</p>

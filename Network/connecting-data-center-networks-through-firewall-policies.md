@@ -8,7 +8,7 @@
 
 <p><strong>Description:</strong>
 </p>
-<p>Tier 3 Cloud Platform users can now connect networks within a particular data center through the use of configurable firewall policies. This is useful when a customer has multiple vlans within a particular account, or has a range of sub-accounts with
+<p>CenturyLink Cloud Platform users can now connect networks within a particular data center through the use of configurable firewall policies. This is useful when a customer has multiple vlans within a particular account, or has a range of sub-accounts with
   their own vlans, and wants to selectively choose the traffic that can flow among them.</p>
 <p><strong>Steps:</strong>
 </p>

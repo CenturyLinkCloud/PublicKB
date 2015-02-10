@@ -23,9 +23,7 @@
 <p><strong>Detailed Steps</strong>
 </p>
 <ul>
-  <li><strong>Option 1</strong>:&nbsp; Request that the CenturyLink Cloud customer add you to the appropriate role.&nbsp; This is self-service for the customer.</li>
-  <li><strong>Option 2</strong>:&nbsp; Have the CenturyLink Cloud customer request you be added to the appropriate Role via the CenturyLink Cloud ticketing process.&nbsp; Make sure to include the specific Role(s) required.&nbsp; Ensure the CenturyLink Cloud
-    customer CC’s you on the request.&nbsp; Once the request is provided by the CenturyLink Cloud customer, permissions will be granted and the ticket will be processed per SLA.&nbsp;</li>
-  <li><strong>Option 3</strong>:&nbsp; Open a ticket via the CenturyLink Cloud ticketing process requesting you be added to the appropriate Role.&nbsp; This will require the CenturyLink Cloud customer to approve; please ensure they are CC’d on the ticket.&nbsp;
-    Make sure to include the specific Role(s) required.&nbsp; The CenturyLink Cloud NOC will request the approval.&nbsp; Once approval is given by the CenturyLink Cloud customer, permissions will be granted and the ticket will be processed per SLA.&nbsp;</li>
+  <li><strong>Option 1</strong>: Request that the CenturyLink Cloud customer add you to the appropriate role.  This is self-service for the customer.</li>
+  <li><strong>Option 2</strong>: Have the CenturyLink Cloud customer request you be added to the appropriate Role via the CenturyLink Cloud ticketing process. Make sure to include the specific Role(s) required.  Ensure the CenturyLink Cloud customer CC’s you on the request.  Once the request is provided by the CenturyLink Cloud customer, permissions will be granted and the ticket will be processed per SLA.</li>
+  <li><strong>Option 3</strong>: Open a ticket via the CenturyLink Cloud ticketing process requesting you be added to the appropriate Role.  This will require the CenturyLink Cloud customer to approve; please ensure they are CC’d on the ticket. Make sure to include the specific Role(s) required. The CenturyLink Cloud NOC will request the approval. Once approval is given by the CenturyLink Cloud customer, permissions will be granted and the ticket will be processed per SLA.</li>
 </ul>

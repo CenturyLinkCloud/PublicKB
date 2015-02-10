@@ -9,7 +9,7 @@
 </p>
 <hr />
 <ul>
-  <li><strong>Configure a complete reseller experience in the Tier 3 Control Portal.</strong> This release marks the end of an effort to deliver an offering for resellers who plan to create a private label experience based on the Tier 3 cloud. Customers who
+  <li><strong>Configure a complete reseller experience in the Tier 3 Control Portal.</strong> This release marks the end of an effort to deliver an offering for resellers who plan to create a private label experience based on the CenturyLink Cloud. Customers who
     sign up for the reseller program can configure unique values for the "support" email address, knowledge base location, feature request mailbox, legal information, privacy policy, and more. In addition, customers have the option of customizing email
     notifications related to everything from "welcome" messages to billing notices.</li>
   <li><strong>Cross data center firewall policies now available for customer self-service.</strong>The ability to connect globally distributed data centers via firewall policies was previously available only to Tier 3 system administrators. For more information
