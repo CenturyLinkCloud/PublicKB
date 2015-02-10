@@ -102,26 +102,26 @@
 </div>
 
 <!-- OVERVIEW - HTML -->
-<pre>
-<code><div class="kb-post-overview"></code>
-  <code><h3></code>
-    <code>Overview</code>
-  <code></h3></code>
-  <code><p></code>
-    <code>The Overview section is of course optional but can be used to provide immediate context for the article. The <strong>Audience</strong> section is also optional.</code>
-  <code></p></code>
-  <code><div class="kb-post-audience"></code>
-    <code><h3></code>
-      <code>Audience</code>
-    <code></h3></code>
-    <code><ul></code>
-      <code><li></code>
-        <code>Valued customer</code>
-      <code></li></code>
-    <code></ul></code>
-  <code></div></code>
-<code></div></code>
-</pre>
+
+  <div class="kb-post-overview">
+    <h3>
+      Overview
+    </h3>
+    <p>
+      The Overview section is of course optional but can be used to provide immediate context for the article. The <strong>Audience</strong> section is also optional.
+    </p>
+    <div class="kb-post-audience">
+      <h3>
+        Audience
+      </h3>
+      <ul>
+        <li>
+          Valued customer
+        </li>
+      </ul>
+    </div>
+  </div>
+
 
 <!-- OVERVIEW -->
 
