@@ -40,6 +40,10 @@
     <li>Singapore:&nbsp; +65 6591 8824</li>
   </ul>
 </ul>
+
+<p><strong>Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is there anything that I cannot do in the Control Portal with a managed VM?</strong></p>
+<p>A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A managed virtual machine cannot be cloned, archived, or converted to a template. Also, the "time to live" option is not available when creating a new managed server.</p>
+
 <p><strong>Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How do I log into my server?</strong>
 </p>
 <p>A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To access your managed VM, you will need your Local Account server name and password, unless you have created a Dedicated Active Directory Domain or are using a CenturyLink Shared Active Directory Domain.&nbsp;
