@@ -26,7 +26,8 @@
 </ul>
 
 <h2>API Users</h2>
-You can manage users for version 1 of the API on your account by going to the Control Portal &gt; Account &gt; API.
+
+<p>You can manage users for version 1 of the API on your account by going to the Control Portal &gt; Account &gt; API.</p>
 
 <ol>
   <li>Click on the "Create API User" button.</li>
