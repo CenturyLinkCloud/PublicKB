@@ -109,24 +109,24 @@
       <td>
       <pre>
         <code>
-          <div class="kb-post-overview">
-            <h3>
+          &lt;div class="kb-post-overview"&gt;
+            &lt;h3&gt;
               Overview
-            </h3>
-            <p>
-              The Overview section is of course optional but can be used to provide immediate context for the article. The <strong>Audience</strong> section is also optional.
-            </p>
-            <div class="kb-post-audience">
-              <h3>
+            &lt;/h3&gt;
+            &lt;p&gt;
+              The Overview section is of course optional but can be used to provide immediate context for the article. The &lt;strong&gt;Audience&lt;/strong&gt; section is also optional.
+            &lt;/p&gt;
+            &lt;div class="kb-post-audience"&gt;
+              &lt;h3&gt;
                 Audience
-              </h3>
-              <ul>
-                <li>
+              &lt;/h3&gt;
+              &lt;ul&gt;
+                &lt;li&gt;
                   Valued customer
-                </li>
-              </ul>
-            </div>
-          </div>
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
         </code>
       </pre>
     </td>
