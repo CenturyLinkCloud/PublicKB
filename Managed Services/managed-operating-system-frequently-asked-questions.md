@@ -42,7 +42,7 @@
 </ul>
 
 <p><strong>Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is there anything that I cannot do in the Control Portal with a managed VM?</strong></p>
-<p>A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A managed virtual machine cannot be cloned, archived, or converted to a template. Also, the "time to live" option is not available when creating a new managed server.</p>
+<p>A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A managed virtual machine cannot be cloned, archived, or converted to a template. Also, the "time to live" option is not available when creating a new managed server. At this time, you cannot create a managed server within a Cloud Blueprint.</p>
 
 <p><strong>Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How do I log into my server?</strong>
 </p>
