@@ -13,7 +13,7 @@
 </p>
 <h3>Overview</h3>
 <p>When using the CenturyLink Cloud platform load balancing services customers who want to view or analyze web server logs find that these logs, by default, only show the MIP (Mapped IP) of the load balancing device as the Source IP. &nbsp;With this out
-  of the box configuration web statistical analysis is impossible or not useful. &nbsp;</p>
+  of the box configuration web statistical analysis is impossible or not useful. </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/6xnphxpuztw5qkx/?name=logging+NLB.png" alt="logging_NLB.png" />
 </p>
 <h3>Solution</h3>

@@ -16,7 +16,7 @@
 </p>
 <p><strong>2. Click on the "Deploy Blueprint" button.</strong>
 </p>
-<p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/m1ncTXjaAyDpvPCd7wyrYgSnV/?name=BP_Overview.png" alt="BP_Overview.png" />&nbsp;</p>
+<p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/m1ncTXjaAyDpvPCd7wyrYgSnV/?name=BP_Overview.png" alt="BP_Overview.png" /></p>
 <p><strong>3. Fill out the appropriate details for the CLC Managed MS IIS Blueprint, and click "Next".</strong>
 </p>
 <p><strong>**NOTE** Please choose the same server for both the Installation and Registration of Managed MS IIS. &nbsp;The server must have Managed Windows installed, otherwise the Blueprint will fail.</strong>
@@ -27,7 +27,7 @@
 </p>
 <p><strong>5. Once verified, please click on the 'deploy blueprint' button. You will be presented with the deployment details along with an email stating the Blueprint has been queued.</strong>
 </p>
-<p><strong><img src="https://t3n.zendesk.com/attachments/token/etFmonl5WMmSvjZ0xwhXrZS1M/?name=Queue.jpg" alt="Queue.jpg" /></strong>&nbsp;</p>
+<p><strong><img src="https://t3n.zendesk.com/attachments/token/etFmonl5WMmSvjZ0xwhXrZS1M/?name=Queue.jpg" alt="Queue.jpg" /></strong></p>
 <p>&nbsp;You will receive an email that your Blueprint has been installed when the Blueprint is complete.</p>
 <p><strong>**NOTE** The server now has the Managed MS IIS software installed and activated.</strong>
 </p>
@@ -37,7 +37,7 @@
 <p>A: CenturyLink Cloud for Managed MS IIS&nbsp;is priced by the VM, billed hourly.</p>
 <p><strong>Q: Can the customer have multiple MS IIS Instances installed on the same server?</strong>
 </p>
-<p>A:&nbsp;No, MS IIS can only be installed once per server, but IIS is capable of hosting&nbsp;thousands of web sites per server.&nbsp;</p>
+<p>A:&nbsp;No, MS IIS can only be installed once per server, but IIS is capable of hosting&nbsp;thousands of web sites per server.</p>
 <p><strong>Q: What Versions of MS IIS does CenturyLink Cloud support?</strong>
 </p>
 <p>A:&nbsp;CenturyLink Cloud Supports Microsoft IIS 7.5 and&nbsp;Microsoft IIS 8.0.</p>

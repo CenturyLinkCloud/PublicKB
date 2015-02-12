@@ -17,4 +17,4 @@
   <br />The Drive Space monitor tests the total used storage on servers with VMware agent enabled.</p>
 <p><strong>Memory Usage</strong>
   <br />The Memory Usage monitor&nbsp;tests the total used RAM on servers with VMware agent enabled.</p>
-<p>See the <a href="https://t3n.zendesk.com/entries/27202824-Cloud-Server-Alerting-FAQ">Cloud Server Alerting FAQ </a>for details on configuring alerts associated with these monitors.&nbsp;</p>
+<p>See the <a href="https://t3n.zendesk.com/entries/27202824-Cloud-Server-Alerting-FAQ">Cloud Server Alerting FAQ </a>for details on configuring alerts associated with these monitors.</p>

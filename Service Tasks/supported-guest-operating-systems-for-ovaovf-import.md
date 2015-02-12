@@ -8,7 +8,7 @@
 
 Supported Guest Operating Systems for OVA/OVF Import
 <p>CenturyLink Cloud customers may wish to import OVA/OVF Guest Operating Systems to the platform via a <a href="http://www.centurylinkcloud.com/products/support/service-tasks" target="_blank">service task</a>. &nbsp;Customers frequently request a list of
-  the supported Guest Operating Systems the CenturyLink Cloud supports for Import and this KB is meant to address this query. &nbsp;</p>
+  the supported Guest Operating Systems the CenturyLink Cloud supports for Import and this KB is meant to address this query. </p>
 <h3>Prerequisites</h3>
 <ul>
   <li>A CenturyLink Cloud Account</li>

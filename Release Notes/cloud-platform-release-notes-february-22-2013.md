@@ -13,7 +13,7 @@
     Child accounts can restrict this list further, but cannot enable data centers that were disabled by a parent. Once these preferences are set, this impacts the data centers shown in the "data centers" drop down list across the Control Portal, and is
     reflected across operations performed on the site. These preferences are also applied by the API to prevent the creation of resources (servers, accounts, blueprints, etc) in non-preferred data centers.</li>
 </ul>
-<p>&nbsp;</p>
+<p></p>
 <p><strong>Minor Defects Fixed or Enhancements Added (5)</strong>
 </p>
 <hr />

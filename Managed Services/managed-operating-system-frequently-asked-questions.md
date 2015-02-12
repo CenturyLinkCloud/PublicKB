@@ -47,7 +47,7 @@
 <p><strong>Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How do I log into my server?</strong>
 </p>
 <p>A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To access your managed VM, you will need your Local Account server name and password, unless you have created a Dedicated Active Directory Domain or are using a CenturyLink Shared Active Directory Domain.&nbsp;
-  The Local Account user name is the full server name, and the password credential is available in your CenturyLink Cloud Control Portal using the “<em>click to authenticate</em>” link on the server overview page.&nbsp; <em>Please note that the user name and password for your Server is not the same user name and password for the Cloud Control Portal.</em>&nbsp;</p>
+  The Local Account user name is the full server name, and the password credential is available in your CenturyLink Cloud Control Portal using the “<em>click to authenticate</em>” link on the server overview page.&nbsp; <em>Please note that the user name and password for your Server is not the same user name and password for the Cloud Control Portal.</em></p>
 <p>Once you have obtained your password, you may access Windows environments using Remote Desktop and RHEL environments using SSH.&nbsp; For more detailed information about accessing your server for the first time, please see the articles for <a href="https://t3n.zendesk.com/entries/45603110-Managed-Windows-Server-Connecting-to-Your-Server-with-Remote-Desktop">Windows Server</a>  or <a href="https://t3n.zendesk.com/entries/45602910-Managed-Red-Hat-Connecting-to-Your-Server-with-SSH">RHEL</a>.<strong>&nbsp;</strong>
 </p>
 <p><strong>Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What should I do if I have trouble connecting via Remote Desktop?</strong>
@@ -83,11 +83,11 @@
 <p>A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The CenturyLink Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year.&nbsp; Simply call us at 1-888-638-6771.</p>
 <p><strong>Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How can I remove Managed Services from a VM?</strong>
 </p>
-<p>A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Currently, the only way to remove Managed Services from a VM once it has been deployed is to delete the VM and to create a new server that is unmanaged.&nbsp;</p>
+<p>A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Currently, the only way to remove Managed Services from a VM once it has been deployed is to delete the VM and to create a new server that is unmanaged.</p>
 <p><strong>Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How can I tell my <em>managed</em> VMs from my <em>unmanaged</em> VMs in the CenturyLink Cloud Control portal?</strong>
 </p>
 <p>A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Managed VMs will be noted with an asterisk (*) in front of the server name.&nbsp; For example, <em>*ILMHPELCTA04</em>.&nbsp; This notation is intended to make it easier to locate managed VMs from within
   a list of all Cloud VMs you have created.</p>
 <p>Q: &nbsp; &nbsp; &nbsp; &nbsp;<strong>My VM shows under construction&nbsp;in Control, but shows that the build has completed successfully?</strong>
 </p>
-<p>A: &nbsp; &nbsp; &nbsp; &nbsp;On Managed VMs, there are additional tasks that is being processed in the background in order to fully integrate into the Managed system, once this is complete Control will reflect it as active and manageable. &nbsp;</p>
+<p>A: &nbsp; &nbsp; &nbsp; &nbsp;On Managed VMs, there are additional tasks that is being processed in the background in order to fully integrate into the Managed system, once this is complete Control will reflect it as active and manageable. </p>

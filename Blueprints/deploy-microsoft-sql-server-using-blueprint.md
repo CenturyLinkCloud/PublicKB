@@ -53,7 +53,7 @@ Deploy Microsoft SQL Server using CenturyLink Cloud Blueprint
 <p><img src="https://t3n.zendesk.com/attachments/token/YaBFo9h4cW4ICQaAkNV2hRnOi/?name=03.png" alt="03.png" />
 </p>
 <p>4. &nbsp;Input the appropriate parameters based on the SQL server requirements for your application.&nbsp;Select the VM(s) in the Group you want to deploy SQL. Customers can choose an individual VM or multiple. &nbsp;(Quick Tip: Only supported Guest Operating
-  Systems will be shown)&nbsp;</p>
+  Systems will be shown)</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/M113cuQ4hcwotHyyXMsv25dYQ/?name=04.png" alt="04.png" />
 </p>
 <h3>Installing Microsoft SQL Server using Blueprints Library</h3>

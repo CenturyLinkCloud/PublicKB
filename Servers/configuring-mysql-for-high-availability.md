@@ -9,7 +9,7 @@
 <p><strong>Description</strong></p>
 <p>Simple scalability and easy elasticity are key benefits of any cloud environment, and along with features like self-service load balancer configurations and autoscaling, CenturyLink Cloud enables users to easily deploy applications with high-availability
   architectures. While this is especially true for most web applications, the database tier, particularly when it is a traditional relational database like MySQL, can often become the performance bottleneck or the single point of failure for many workloads
-  because it can sometimes be a challenge to scale it out. While a vertical autoscale can help handle peak usage for performance, it doesn't cut it when you're looking for high availability from your relational database.&nbsp;</p>
+  because it can sometimes be a challenge to scale it out. While a vertical autoscale can help handle peak usage for performance, it doesn't cut it when you're looking for high availability from your relational database.</p>
 <p><a href="http://dev.mysql.com/doc/refman/5.7/en/ha-overview.html" target="_blank">MySQL offers a number of high-availability configurations</a>, but perhaps the two most commonly implemented are <a href="#replication">Replication</a> and <a href="#clustering">Clustering</a>.
   In this article, we will explore both types of MySQL high-availability options and walkthrough the steps for deploying them on the CenturyLink Cloud.</p>
 <p>
@@ -27,7 +27,7 @@ Replication
 <h3>Steps to Configure MySQL <em>Replication</em> on CenturyLink Cloud</h3>
 <p>These steps describe the process to bring up one master and one slave, but you can repeat the steps to create the slave and deploy multiple ones if you wish. While there are many possible MySQL replication options (including the ability to replicate all
   databases, a specific database, or specific tables), the following outlines a good baseline to configure replication for a single database. You should consult the <a href="http://dev.mysql.com/doc/refman/5.7/en/replication.html" target="_blank">MySQL documentation</a>  for more details.</p>
-<p>In this example, we will use Ubuntu 12 servers, but with the exception of using a different package manager/installation in the first few steps, this MySQL configuration will work on any system that supports MySQL replication.&nbsp;</p>
+<p>In this example, we will use Ubuntu 12 servers, but with the exception of using a different package manager/installation in the first few steps, this MySQL configuration will work on any system that supports MySQL replication.</p>
 <div>
   <ol>
     <li><strong>Create Server (Master).</strong> Here we will use the Ubuntu 12 64-bit template.
@@ -127,7 +127,7 @@ Replication
     ndb_mgmd node being up). There are plenty of configuration options as well as <a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-limitations.html" target="_blank">some limitations</a> to using clustering, so the <a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html"
     target="_blank">MySQL documentation</a> can be consulted for more information.</p>
   <p>In this example, we will use RedHat Enterprise Linux 6 servers, but with the exception of using a different package manager/binary installation in the second step, this MySQL configuration will work on any system that supports MySQL clusters. (More
-    information in the <a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-installation.html" target="_blank">MySQL documentation</a>.)&nbsp;</p>
+    information in the <a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-installation.html" target="_blank">MySQL documentation</a>.)</p>
   <ol>
     <li><strong>Create Server (Management).</strong> Here we will use the RedHat Enterprise Linux 6 template.</li>
     <li><strong>Install MySQL cluster binary.</strong> This will become the "management node" (ndb_mgmd).

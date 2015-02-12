@@ -78,7 +78,7 @@
     <p>The platform uses the following VMware Options flags in the Snapshot</p>
   </li>
 </ul>
-<p>Memory: true; a dump of the internal state of the virtual machine is included in the snapshot.&nbsp;</p>
+<p>Memory: true; a dump of the internal state of the virtual machine is included in the snapshot.</p>
 <p>Quiesce: true; VMware Tools is used to quiesce the file system in the virtual machine. Quiescing a file system is a process of bringing the on-disk data of a physical or virtual computer into a state suitable for backups. This process might include such
   operations as flushing dirty buffers from the operating system's in-memory cache to disk, or other higher-level application-specific tasks</p>
 <div>

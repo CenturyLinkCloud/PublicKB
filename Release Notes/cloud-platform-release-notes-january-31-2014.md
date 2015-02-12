@@ -16,7 +16,7 @@
   <li><strong>Updated beta of Groups UI page in the Control Portal</strong>. We've released the latest beta of the redesign of the Groups page which makes it easier to manage servers across data centers, quickly see summary data for each Group, and perform
     quick actions against a Group.</li>
 </ul>
-<p>&nbsp;</p>
+<p></p>
 <p><strong>Minor Enhancements (3)</strong>
 </p>
 <ul>

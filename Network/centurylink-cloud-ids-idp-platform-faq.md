@@ -9,7 +9,7 @@
 <h3><strong>Question:</strong>&nbsp; What technology is used for the CenturyLink Cloud IDS/IDP services?</h3>
 <p><strong>Answer:</strong>&nbsp; CenturyLink Cloud&nbsp;has both IDS and IPS in place using features in our chosen edge firewall product (Juniper SRX) – this software component fulfills both the IDS (detection &amp; logging) and IPS (prevention) roles.</p>
 <h3><strong>Question:</strong>&nbsp; What type of traffic do the IDS/IDP services filter/log?</h3>
-<p><strong>Answer:</strong>&nbsp; The CenturyLink Cloud&nbsp;platform uses '”screens” to look for specific and common attack traffic.&nbsp; The complete list of supported “screens” can be found at <a href="https://www.juniper.net/techpubs/en_US/junos12.1x44/topics/reference/general/security-feature-attack-detection-prevention-support.html">https://www.juniper.net/techpubs/en_US/junos12.1x44/topics/reference/general/security-feature-attack-detection-prevention-support.html</a>&nbsp;</p>
+<p><strong>Answer:</strong>&nbsp; The CenturyLink Cloud&nbsp;platform uses '”screens” to look for specific and common attack traffic.&nbsp; The complete list of supported “screens” can be found at <a href="https://www.juniper.net/techpubs/en_US/junos12.1x44/topics/reference/general/security-feature-attack-detection-prevention-support.html">https://www.juniper.net/techpubs/en_US/junos12.1x44/topics/reference/general/security-feature-attack-detection-prevention-support.html</a></p>
 <h3><strong>Question:</strong>&nbsp; Can I receive reports and alerts for my specific environment from the IDS/IDP platform?</h3>
 <p><strong>Answer:</strong>&nbsp; Client specific reports and alerts are not available today</p>
 <h3><strong>Question:</strong>&nbsp; How frequently are the IDS/IDP “screens” updated?</h3>
@@ -23,4 +23,4 @@
 <p><strong>Answer:</strong>&nbsp; No, Clients looking for in depth deep content inspection should contact a CenturyLink Cloud&nbsp;sales resource to review add-on security products.</p>
 <h3>Question: &nbsp;What DDoS mitigation services are included in the CenturyLink Cloud&nbsp;platform?</h3>
 <p><strong>Answer:</strong>&nbsp; CenturyLink Cloud&nbsp;uses signature-based DDoS mitigation technology (Juniper Screens). With a signature-based approach, attacks are automatically dropped by the Juniper SRX cluster when an attack’s unique fingerprint
-  is identified, similar to how viruses are detected on PC’s using virus definition files.&nbsp;</p>
+  is identified, similar to how viruses are detected on PC’s using virus definition files.</p>

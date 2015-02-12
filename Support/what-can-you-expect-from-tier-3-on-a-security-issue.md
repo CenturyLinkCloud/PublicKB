@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description (goal/purpose)</h3>
-<p>This KB covers what behavior customers can expect from Tier 3 Operations in the case of a security incident. &nbsp;</p>
+<p>This KB covers what behavior customers can expect from Tier 3 Operations in the case of a security incident. </p>
 <h3>Audience</h3>
 <ul>
   <li>Tier 3 Customers</li>

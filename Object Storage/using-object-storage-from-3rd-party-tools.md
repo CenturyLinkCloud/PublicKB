@@ -32,7 +32,7 @@
   </li>
   <li>Back in Explorer for Amazon S3, click the <strong>File, S3 Compatible</strong> menu option in order to add the connection details for Object Storage.</li>
 </ul>
-<p><img src="https://t3n.zendesk.com/attachments/token/87ta5NWRhlj7cmk0WlGlC84vX/?name=01.png" alt="01.png" />&nbsp;</p>
+<p><img src="https://t3n.zendesk.com/attachments/token/87ta5NWRhlj7cmk0WlGlC84vX/?name=01.png" alt="01.png" /></p>
 <ul>
   <li>Enter a friendly name in the&nbsp;<strong>Display Name&nbsp;</strong>field (this does not correspond to any value in CenturyLink Cloud Object Storage), and populate the <strong>Service Point</strong>,&nbsp;<strong>Access Key ID&nbsp;</strong>and&nbsp;<strong>Secret Access Key</strong>    fields with the corresponding values from the Control Portal.
     <p><img src="https://t3n.zendesk.com/attachments/token/QqoxEfC8rImNPstoke3KDODmj/?name=03.png" alt="03.png" />

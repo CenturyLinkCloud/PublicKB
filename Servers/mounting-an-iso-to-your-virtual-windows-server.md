@@ -17,7 +17,7 @@
 </p>
 <h3>Prerequisites</h3>
 <p>Software to mount the .ISO.</p>
-<p>We recommend using a simple mounting tool called&nbsp;wincdemu this can be located here:&nbsp;http://wincdemu.sysprogs.org/download/ or you may use any software that you are familiar with.&nbsp;</p>
+<p>We recommend using a simple mounting tool called&nbsp;wincdemu this can be located here:&nbsp;http://wincdemu.sysprogs.org/download/ or you may use any software that you are familiar with.</p>
 <h3>Detailed Steps</h3>
 <p>1. First you will need to download the .iso you are wanting to mount. We do not recommend downloading .iso's from P2P networks or Torrent shares.</p>
 <p>2. Once the file is download you will need to install WINCDEMU (link is provided above).&nbsp;WinCDEmu driver binaries are signed, so that the 64-bit Windows will load them. However, they do not have the WHQL certificate, so Windows will ask you to confirm

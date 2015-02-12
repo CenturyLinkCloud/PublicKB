@@ -16,7 +16,7 @@
 </li>
 <li><strong>Managed Backup service.&nbsp;</strong>The CenturyLink Data Protect Backup solution is now included in the CenturyLink Cloud <strong>[Available to customers by Feb 13]&nbsp;</strong>. Customers can include the managed backup capabilities on new managed servers, or existing ones. Backup data is stored for two weeks both in the same data center as the virtual machine, and in a remote data center. For new servers, the option is available after selecting the "managed server" option:<br /><img src="https://t3n.zendesk.com/attachments/token/KWAbKUNLv7bDSkw3nz6ZaNyWe/?name=release02_03_15_05.gif" alt="release02_03_15_05.gif" /><br /><br /><br />For existing managed servers, the Managed Backup service can be enabled and disabled via the Server Details view.<br /><br /><img src="https://t3n.zendesk.com/attachments/token/N9lXMwqEyFN1jApitaTiyo6cq/?name=release02_03_15_04.gif" alt="release02_03_15_04.gif" /><br /><br />To learn more about Managed Backup, <a href="https://t3n.zendesk.com/entries/62310380-Managed-Backup-Frequently-Asked-Questions">check out new new FAQ</a>!</li>
 </ul>
-<p>&nbsp;</p>
+<p></p>
 <p><strong>Minor Enhancements (6)</strong></p>
 <div><hr /></div>
 <ul>
@@ -27,7 +27,7 @@
 <li><strong>CenturyLink administrator account removed from all virtual machines</strong>. In the past CenturyLink Cloud has used a local administrator account to perform activities on servers at the request of our customers. Moving forward, we've removed this&nbsp;account from all cloud servers. What this means for customers, is (a) all access to a cloud servers is done through customer-created accounts, and (b) if you forget your password (and do not have the server password synchronized with the Control Portal), the cloud team can no longer log in and reset it for you. Store those passwords carefully!</li>
 <li><strong>Default NIC changed on Windows 2008/2012 templates.&nbsp;</strong>In order to offer 10g connections on all Windows Servers, we've updated the default NIC on all Windows Server 2008 and Windows Server 2012 operating system templates to use the VMware VMXnet3 network adapter.</li>
 </ul>
-<p>&nbsp;</p>
+<p></p>
 <p><strong>Notifications (3)</strong></p>
 <div><hr /></div>
 <ul>

@@ -7,7 +7,7 @@
 }}}
 
 How To: &nbsp;Add Public IP to a Virtual Machine&nbsp;
-<p>CenturyLink Cloud customers may wish to add a public IP to specific virtual machines in their cloud environment to deliver services. &nbsp; Public IP's are delivered using a 1 to 1 NAT model. &nbsp;</p>
+<p>CenturyLink Cloud customers may wish to add a public IP to specific virtual machines in their cloud environment to deliver services. &nbsp; Public IP's are delivered using a 1 to 1 NAT model. </p>
 <h3>General Notes &amp; Best Practices</h3>
 <ul>
   <li>In its current iteration setting a source IP filter will secure all public ports, single ports or port ranges specified by the customer. &nbsp;Customers can leverage OS based firewall services if they wish to secure public services in a more granular
@@ -27,7 +27,7 @@ How To: &nbsp;Add Public IP to a Virtual Machine&nbsp;
 <p>2. &nbsp;Navigate to the Virtual Machine you wish to add a public IP, select Action, Add Public IP</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/pD4rAaJGHVHiZzXNabbgusnfs/?name=01.png" alt="01.png" />
 </p>
-<p>3. &nbsp;In the Add Public IP Address form customers should populate the appropriate fields that meet their business needs. &nbsp;The GUI allows customers to add multiple single port, port ranges and CIDR Source IP ranges. &nbsp;</p>
+<p>3. &nbsp;In the Add Public IP Address form customers should populate the appropriate fields that meet their business needs. &nbsp;The GUI allows customers to add multiple single port, port ranges and CIDR Source IP ranges. </p>
 <ul>
   <li>Internal IP Address: &nbsp;by default the GUI will present the private IP address of the virtual instance currently deployed. &nbsp;As the CenturyLink Cloud leverages a 1 to 1 NAT the public IP will be mapped to this private IP. &nbsp;It is important
     to note that should a customer require more than 1 public IP on a virtual machine the same process applies <em><strong>except </strong></em><strong>&nbsp;</strong>when visiting the GUI the internal IP address field will show '<em><strong>Add new IP</strong></em><strong> address</strong>."
@@ -57,5 +57,5 @@ How To: &nbsp;Add Public IP to a Virtual Machine&nbsp;
 <p>1. &nbsp;What happens to my Public IP if I use the pause, power off or archive services in CenturyLink Cloud?</p>
 <p>Answer: &nbsp;Public IP addresses are static and using any of these features does not remove the public IP services from the Virtual Machine. &nbsp;The only time a public IP is removed from a virtual machine is a) when the VM is deleted b) the customer
   removes the public IP in the GUI or API</p>
-<p>2. &nbsp;How are customers billed for public IP addresses? &nbsp;&nbsp;</p>
-<p>Answer: &nbsp;Customers are billed a nominal fee per public IP on a monthly basis. &nbsp;Public IP's are not an hourly billing service and as such using a public IP even for an hour will result in a nominal charge for the public IP address. &nbsp;</p>
+<p>2. &nbsp;How are customers billed for public IP addresses? &nbsp;</p>
+<p>Answer: &nbsp;Customers are billed a nominal fee per public IP on a monthly basis. &nbsp;Public IP's are not an hourly billing service and as such using a public IP even for an hour will result in a nominal charge for the public IP address. </p>

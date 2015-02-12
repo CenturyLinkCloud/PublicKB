@@ -8,7 +8,7 @@
 
 <p><strong>SMTP Relay Services (Simple)</strong>
 </p>
-<p>SMTP Relay can be used to do application level email relay without the need of managing your own SMTP server/service. The current offering is prices at $0.10 per 1000 emails sent via the service and billed at the account level.&nbsp;</p>
+<p>SMTP Relay can be used to do application level email relay without the need of managing your own SMTP server/service. The current offering is prices at $0.10 per 1000 emails sent via the service and billed at the account level.</p>
 <p>You can sign up for the service easily by going to the Contol Portal &gt; Services &gt; SMTP Relay. From here you can create an SMTP relay account by doing the following:</p>
 <ul>
   <li>Click the "Create SMTP Relay" button.</li>

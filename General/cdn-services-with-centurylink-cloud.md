@@ -57,7 +57,7 @@
   <li>HTTPS/RTMPe</li>
 </ul>
 <h4>Streaming ID (please specify)</h4>
-<p>Also known as Flash Media Server (FMS) application - a combination of lower case alphanumeric characters, maximum 10. No special characters with the exception of dash (-) to differentiate between different FMS applications.&nbsp;</p>
+<p>Also known as Flash Media Server (FMS) application - a combination of lower case alphanumeric characters, maximum 10. No special characters with the exception of dash (-) to differentiate between different FMS applications.</p>
 <h4>Supername (please specify)</h4>
 <p>Designated hostname used to direct traffic to the CDN. The Supername must be unique and be a valid hostname with at least two dots and may contain alphanumeric characters, dash and underscore.</p>
 <h4>Origin Server Type (choose one)</h4>

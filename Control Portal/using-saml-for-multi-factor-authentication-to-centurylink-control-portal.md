@@ -14,10 +14,10 @@
   in their pre-existing systems.</p>
 <p>For more details and how SAML works in general and how to specifically setup an ADFS IdP for use with Control Portal, refer to&nbsp;<a href="https://t3n.zendesk.com/entries/22636576-Using-SAML-for-Single-Sign-On-to-the-Tier-3-Control-Portal" target="_blank">Using SAML for Single-Sign-On</a>.
   In the example below, however, we will use a separate software-as-a-service vendor as the identity provider in order to also enforce multi-factor authentication. The following steps will walk through the process of configuring the IdP to add users,
-  enabling MFA and SAML, and configuring CenturyLink Control Portal's SAML settings to enforce the use of the IdP.&nbsp;</p>
+  enabling MFA and SAML, and configuring CenturyLink Control Portal's SAML settings to enforce the use of the IdP.</p>
 Steps
 <p>In this example, we will use the cloud-based identity and access management solution&nbsp;<a href="http://www.onelogin.com" target="_blank">OneLogin</a>&nbsp;as our identity provider since it is free to use as a demo, easy to setup, and supports both
-  SAML and MFA.&nbsp;Though we are using OneLogin in our example here, of course the principles will apply for any IdP with support for SAML and MFA. The steps below assume you have already <a href="http://www.onelogin.com/signup" target="_blank">signed up for a OneLogin account</a>  and are able to login to its administrator interface.&nbsp;</p>
+  SAML and MFA.&nbsp;Though we are using OneLogin in our example here, of course the principles will apply for any IdP with support for SAML and MFA. The steps below assume you have already <a href="http://www.onelogin.com/signup" target="_blank">signed up for a OneLogin account</a>  and are able to login to its administrator interface.</p>
 <h3>Configure IdP for SAML</h3>
 <ol>
   <li>In the CenturyLink Cloud Control Portal, from the Account Settings page, navigate to the "Users" tab and the "Authentication" sub-menu.</li>
@@ -40,7 +40,7 @@ Steps
   </li>
   <li>&nbsp;Click the "Save" button in the upper right hand corner to save the OneLogin configuration.</li>
 </ol>
-<p>There are a number of other settings that OneLogin supports or that may be supported by other IdPs,&nbsp;but this is the minimal configuration required on the OneLogin side for SAML authentication to work.&nbsp;</p>
+<p>There are a number of other settings that OneLogin supports or that may be supported by other IdPs,&nbsp;but this is the minimal configuration required on the OneLogin side for SAML authentication to work.</p>
 <h3>Configure Control Portal SAML Settings</h3>
 <ol>
   <li>While still in the OneLogin administrator interface, click on the "SSO" tab to view SAML configuration information required to plug in to the Control Portal settings. You should see a SAML 2.0 Endpoint and a X.509 Certificate. Both of these values are
@@ -71,7 +71,7 @@ Steps
 <p>There are a few different options for provisioning users to CenturyLink Cloud and no doubt the IdP you choose to use has a number of options as well. OneLogin supports both bulk user import from a flat file as well as an&nbsp;<a href="https://onelogin.zendesk.com/hc/en-us/articles/201175524-Users-API"
   target="_blank">API</a>&nbsp;for creating users. CenturyLink Cloud's API also provides the capability to programmatically create users. In this example, we will assume we already have a user in the Control Portal that we want to provision to OneLogin.
   You may have the opposite situation where you need to create users in Control that already exist in your IdP. Or you may not have users in either location. No matter how you choose to provision users, as you will see, the important thing is that the
-  SAML username in Control matches the SAML username in the IdP.&nbsp;</p>
+  SAML username in Control matches the SAML username in the IdP.</p>
 <ol>
   <li>In the Control Portal, from the "Users" page in Account Settings, click the user you will be provisioning to OneLogin. (If you need to create a new user, you can follow the instructions in <a href="https://t3n.zendesk.com/entries/21389606-Creating-Users"
     target="_self">Creating Users</a>.)

@@ -101,7 +101,7 @@
 <p>Turn off the in use swap volume</p>
 <p>&nbsp;swapoff –a</p>
 <p>Edit /etc/fstab and update the UUID for the swap mount point</p>
-<p>&nbsp;<img alt />&nbsp;</p>
+<p>&nbsp;<img alt /></p>
 <p><img alt />
 </p>
 <p><img alt />
@@ -138,7 +138,7 @@
 <p>DELETE THE PARTITION</p>
 <p>Command (m for help): d</p>
 <p>Selected partition 1</p>
-<p>Command (m for help):&nbsp;</p>
+<p>Command (m for help):</p>
 
 <p>RE-CREATE a NEW PARTITION AT THE EXACT SAME STARTING SECTOR AS THE OLD ONE</p>
 <p>n - creates new partition</p>

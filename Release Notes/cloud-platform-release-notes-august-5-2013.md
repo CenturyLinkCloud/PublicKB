@@ -21,7 +21,7 @@
     </p>
   </li>
 </ul>
-<p>&nbsp;</p>
+<p></p>
 <p><strong>Minor Enhancements (5)</strong>
 </p>
 <ul>

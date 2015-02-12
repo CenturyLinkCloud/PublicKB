@@ -9,10 +9,10 @@
 <h3>Overview</h3>
 <p>CenturyLink Cloud customers may choose to create their own baseline OS templates for deployment within the Control Portal. &nbsp;These templates may include customization, software packages, security templates or other components. &nbsp;Customers should
   take care to test and validate the packages or changes being applied to the OS instance function properly after the template process is complete. &nbsp;Customers are responsible for this validation and ongoing support of changes made to OS Templates.
-  &nbsp;</p>
+  </p>
 <h3>Important Notices</h3>
 <p><em><strong>DO NOT RUN THE CONVERT TO TEMPLATE FUNCTION ON A PRODUCTION/LIVE VIRTUAL SERVER</strong></em>. &nbsp;Customers should create a virtual instance with their specific configurations on a non-production virtual instance. &nbsp;The convert to template
-  function actually modifies and moves the virtual machine to the templates group. &nbsp;</p>
+  function actually modifies and moves the virtual machine to the templates group. </p>
 <p>Customers creating OS Templates for Windows Servers should carefully review the <a href="http://technet.microsoft.com/en-us/library/hh824835.aspx" target="_blank">Microsoft Sysprep for Server Roles technet article</a>. &nbsp;Sysprep is a component of
   creating an OS Template and as such certain OS Roles are not supported in both the template or clone process. &nbsp;<strong><em>For Windows Servers the CenturyLink Cloud Platform performs the sysprep function on behalf of customers when using the Convert To Template feature</em></strong>.</p>
 <h3>Steps</h3>
@@ -25,7 +25,7 @@
 </ol>
 <p><img src="https://t3n.zendesk.com/attachments/token/6MuREq25V2GX8MZ2ngH8hXHPO/?name=01.png" alt="01.png" />
 </p>
-<p>4. &nbsp;Using the convert to template user interface input details about the template you wish to create. &nbsp;</p>
+<p>4. &nbsp;Using the convert to template user interface input details about the template you wish to create. </p>
 <ul>
   <ul>
     <ul>
@@ -49,7 +49,7 @@
 <p><em><strong>Answer: &nbsp;Customer created templates do not replicate to all data centers out of the box today. &nbsp;If you need templates copied to other data centers please create a support ticket. &nbsp;Feature sets for global template replication are coming soon.</strong></em>
 </p>
 <p><strong>Question</strong>: &nbsp;What format should my virtual machine use if I choose to leverage the service task to import a VM as a template?</p>
-<p><em><strong>Answer: We recommends OVF format for importing; &nbsp;Additional formats or services are available by speaking to a sales Representative</strong></em>&nbsp;</p>
+<p><em><strong>Answer: We recommends OVF format for importing; &nbsp;Additional formats or services are available by speaking to a sales Representative</strong></em></p>
 <p><strong>Question</strong>: &nbsp;Is there a way to automatically import VM's as templates to the CenturyLink Cloud platform?</p>
 <p><em><strong>Answer: &nbsp;No, please contact a sales representative for import fees via service tasks</strong></em>
 </p>

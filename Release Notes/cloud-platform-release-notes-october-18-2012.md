@@ -15,7 +15,7 @@
   <li><strong>"Script" Tasks on Groups</strong>&nbsp;&nbsp;This new Task can be applied in blueprints and as part of Group-level actions. It supports the execution of user-entered script statements for Windows (PowerShell and Command) and Linux (SSH). This
     allows users to quickly and easily perform group-level activities such as turning off a service or enabling a firewall rule.</li>
 </ul>
-<p>&nbsp;</p>
+<p></p>
 <p><strong>Minor Defects Fixed or Enhancements Added (4)</strong>
 </p>
 <hr />

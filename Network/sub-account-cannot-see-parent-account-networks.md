@@ -7,7 +7,7 @@
 }}}
 
 <h3><strong>Description (goal/purpose)</strong></h3>
-<p>This KB details the necessary steps to to resolve when a customer creates a sub-account but is not able to utilize networks assigned to the parent account.&nbsp;</p>
+<p>This KB details the necessary steps to to resolve when a customer creates a sub-account but is not able to utilize networks assigned to the parent account.</p>
 <h3><strong><strong>Audience</strong></strong></h3>
 <ul>
   <li>Portal Users</li>

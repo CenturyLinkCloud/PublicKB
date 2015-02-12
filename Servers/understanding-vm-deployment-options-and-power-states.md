@@ -28,7 +28,7 @@ Understanding VM Deployment Options and Power States
     </p>
   </li>
   <li>
-    <p>Costs: &nbsp;As a &nbsp;virtual machine clone is a completely separate copy of a VM, it is billed per hour based on the resources assigned. &nbsp;</p>
+    <p>Costs: &nbsp;As a &nbsp;virtual machine clone is a completely separate copy of a VM, it is billed per hour based on the resources assigned. </p>
   </li>
   <li>Sample Use Case: &nbsp;IT department needs to reproduce and find a resolution to a software bug that is affecting their customers. &nbsp;In order to avoid changes and downtime to the production environment , a clone of the problem virtual machine is
     created allowing for further troubleshooting without customer impact. &nbsp;</li>
@@ -55,7 +55,7 @@ Understanding VM Deployment Options and Power States
   </li>
   <li>
     <p>How To: &nbsp;The Pause function is available at both the group or individual virtual machine details pane. &nbsp;Customers can leverage the built in scheduler to perform automated changes to power states against individual or groups of virtual machines.
-      &nbsp;</p>
+      </p>
   </li>
 </ul>
 <p><img src="https://t3n.zendesk.com/attachments/token/LaIWCmiv5gXqZKsLTKbtAJD3U/?name=01.png" alt="01.png" />

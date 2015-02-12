@@ -30,7 +30,7 @@
         <p>Non-disruptive</p>
       </td>
       <td>
-        <p>This category covers maintenance that is expected to have no customer impact. All live customer data MUST be migrated off the maintenance affected systems / devices before this change is done.&nbsp;</p>
+        <p>This category covers maintenance that is expected to have no customer impact. All live customer data MUST be migrated off the maintenance affected systems / devices before this change is done.</p>
       </td>
       <td>
         <p>No customer notification is required</p>

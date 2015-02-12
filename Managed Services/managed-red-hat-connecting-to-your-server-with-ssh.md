@@ -10,7 +10,7 @@
 <p>CenturyLink provides you overall management for your server OS, including access to the primary root user privileges for new user account creation, user deletion, application installation, and other administrative tasks.&nbsp; CenturyLink will also maintain
   root access which allows us to effectively monitor and maintain your server OS.</p>
 <h3><strong>Connecting to Your Server with SSH</strong></h3>
-<p>When your server was initially configured, a customer account was created for your use, and the root account was configured for you to initially access the machine for administrative purposes.&nbsp;&nbsp;&nbsp;</p>
+<p>When your server was initially configured, a customer account was created for your use, and the root account was configured for you to initially access the machine for administrative purposes.&nbsp;&nbsp;</p>
 <p>1. You will need the Admin (root) password for your initial SSH session. &nbsp;Access your server password in the CenturyLink Cloud Control by choosing the ‘<em>click to authenticate</em>’ link illustrated below in the red box, in the upper right corner<em>.&nbsp;&nbsp; Note:&nbsp; Your Admin user name and password are different from your CenturyLink Cloud Control user name and password.&nbsp; Also, this root account password should not be changed except from within this CenturyLink Cloud Control interface.</em>
 </p>
 <p><em><img src="https://t3n.zendesk.com/attachments/token/igx4zrd8DJt6tERYiOu0CqUGt/?name=Overview.jpg" alt="Overview.jpg" /></em>

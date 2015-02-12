@@ -38,7 +38,7 @@
     </p>
   </li>
 </ul>
-<p>&nbsp;</p>
+<p></p>
 <p><strong>Minor Enhancements/Fixes (3)</strong>
 </p>
 <ul>

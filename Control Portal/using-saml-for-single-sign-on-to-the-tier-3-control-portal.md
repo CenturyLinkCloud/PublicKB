@@ -9,7 +9,7 @@
 <p><strong>Description:</strong>
 </p>
 <p>Tier 3 supports the use of Security Assertion Markup Language (SAML) for exchanging user authentication data as XML between trusted parties. This industry standard protocol empowers our customers to use their <strong>own</strong> identity management system
-  for authenticating users of the Tier 3 Control Portal.&nbsp;</p>
+  for authenticating users of the Tier 3 Control Portal.</p>
 <p>SAML has three main parties: the user, the identity provider (IdP), and service provider (SP). The IdP is the repository that holds identity information. The SP is the party that wants to authenticate a particular user who is using an application.</p>
 <p>The SAML flow occurs as follows:</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/lvelbw7wuayx1yb/?name=saml01.png" alt="saml01.png" />

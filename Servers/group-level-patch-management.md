@@ -23,7 +23,7 @@
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/zuc7qhmwzlakpiu/?name=Screenshot_3_18_13_4_18_PM.png" alt="Screenshot_3_18_13_4_18_PM.png" />
 </p>
-<p>4. Execute update script&nbsp;</p>
+<p>4. Execute update script</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/ta1skwa1wcyehp4/?name=Screenshot_3_18_13_4_20_PM.png" alt="Screenshot_3_18_13_4_20_PM.png" />
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/2bkv5icsa5qp7lo/?name=Screenshot_3_18_13_4_22_PM.png" alt="Screenshot_3_18_13_4_22_PM.png" />

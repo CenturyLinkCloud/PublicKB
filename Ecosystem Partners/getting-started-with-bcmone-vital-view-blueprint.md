@@ -43,7 +43,7 @@
   </li>
 </ul>
 <strong>Detailed Steps</strong>
-<p>Follow these step by step instructions to get started with a single-server Vital View deployment. &nbsp;</p>
+<p>Follow these step by step instructions to get started with a single-server Vital View deployment. </p>
 <ol>
   <li><em>Locate the Blueprint in the Blueprint Library</em>.&nbsp;
     <ul>
@@ -119,7 +119,7 @@
     <ul>
       <li>https://IPADDRESS/vitalview/check_mk/login.py&nbsp;</li>
       <li>
-        <p>Mobile Devices can access the service by connecting to the Public IP address on the VitalView server &nbsp;</p>
+        <p>Mobile Devices can access the service by connecting to the Public IP address on the VitalView server </p>
       </li>
     </ul>
     <li>Create An Account - Once you’ve loaded the web interface, go ahead and create the account, you will automatically be logged in.<img src="https://t3n.zendesk.com/attachments/token/9pCReKVQehzAtw2vfyx90NiTA/?name=bc5.jpg" alt="bc5.jpg" />

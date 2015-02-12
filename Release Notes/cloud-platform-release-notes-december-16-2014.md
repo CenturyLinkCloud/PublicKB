@@ -23,7 +23,7 @@
     <br /><img src="https://t3n.zendesk.com/attachments/token/QTRU3uqc5MCkKMQrWxdTlCDqT/?name=managed-apps-list.png" alt="managed-apps-list.png" />
   </li>
 </ul>
-<p>&nbsp;</p>
+<p></p>
 <p><strong>Minor Enhancements (3)</strong>
 </p>
 <div>

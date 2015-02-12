@@ -8,7 +8,7 @@
 
 <p>CenturyLink Cloud supports the ability to create sub accounts, which fall under a parent account. Sub accounts have many advantages:</p>
 <p>They are hierarchal - user permissions flow down, not up nor sideways.</p>
-<p>They may be billed separately or to the parent account.&nbsp;</p>
+<p>They may be billed separately or to the parent account.</p>
 <p>They may share parent networks or have their own.</p>
 <p>Settings are inherited.</p>
 

@@ -17,7 +17,7 @@
 <h3><strong>Detailed Steps</strong></h3>
 <p><strong><br /></strong>1. &nbsp;<a href="https://t3n.zendesk.com/entries/21806469-Creating-and-Deleting-VLANs" target="_blank">Create network VLAN(s)</a>&nbsp;in each of the respective CenturyLink Cloud Data Centers.</p>
 <p>2. &nbsp;Validate the networks are in place in your CenturyLink Cloud account using the&nbsp;<strong>Networks&nbsp;</strong>menu item and selecting the appropriate Data Center. &nbsp;In the sample below, networks exists in both UC1 (Santa Clara) &amp;
-  DE1 (Germany). &nbsp;</p>
+  DE1 (Germany). </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/GyMTPFj5yNAuMs8gwXVUKExEZ/?name=01.png" alt="01.png" />
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/SMHQWeIGnCKI1DxPqO05vmMM1/?name=02.png" alt="02.png" />
@@ -43,10 +43,10 @@
 <p>7. &nbsp;Choose&nbsp;<strong>Set Remote Address(es). &nbsp;</strong>Select the appropriate network or CIDR IP range for the remote address(es). &nbsp;In this example, we are using the entire 10.110.226.0/24 network block for a remote address in DE1.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/OegJVdmynpVnbllAXveAinPOq/?name=08.png" alt="08.png" />
 </p>
-<p>8. &nbsp;Once complete, press the&nbsp;<strong>Save</strong>&nbsp;button. &nbsp;Your new Cross Data Center Rule will take &lt;60 seconds to process in the Queue. &nbsp;You can review its progress using the Queue Menu item. &nbsp;</p>
+<p>8. &nbsp;Once complete, press the&nbsp;<strong>Save</strong>&nbsp;button. &nbsp;Your new Cross Data Center Rule will take &lt;60 seconds to process in the Queue. &nbsp;You can review its progress using the Queue Menu item. </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/haES1hGoEFg4Zt8RznoVleB5x/?name=10.png" alt="10.png" />
 </p>
 <p>9. &nbsp;Confirm the Cross Data Center Firewall Policy is functional by performing another ICMP ping test between virtual instances located in the (2) networks in different Data Center nodes. &nbsp;In this example, we are able to ping a virtual instances
-  in Germany (DE1) from Santa Clara (UC1). &nbsp;</p>
+  in Germany (DE1) from Santa Clara (UC1). </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/AzjfOwBAWjigeEC82VMxAAPpU/?name=11.png" alt="11.png" />
 </p>

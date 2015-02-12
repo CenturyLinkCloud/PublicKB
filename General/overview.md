@@ -344,8 +344,8 @@ The above Table of Contents is a working example and all of the follwing section
         package.manifest
       </td>
       <td>
-        <p>Defines the metadata, parameter list and execution guidelines for the Package.&nbsp;</p>
-        <p>An Xml Schema (.xsd) is available to validate the package.manifest file before uploading.&nbsp;</p>
+        <p>Defines the metadata, parameter list and execution guidelines for the Package.</p>
+        <p>An Xml Schema (.xsd) is available to validate the package.manifest file before uploading.</p>
         <p><em>This file is required in all Packages.</em>
         </p>
       </td>
@@ -404,8 +404,8 @@ The above Table of Contents is a working example and all of the follwing section
             package.manifest
           </td>
           <td>
-            <p>Defines the metadata, parameter list and execution guidelines for the Package.&nbsp;</p>
-            <p>An Xml Schema (.xsd) is available to validate the package.manifest file before uploading.&nbsp;</p>
+            <p>Defines the metadata, parameter list and execution guidelines for the Package.</p>
+            <p>An Xml Schema (.xsd) is available to validate the package.manifest file before uploading.</p>
             <p><em>This file is required in all Packages.</em>
             </p>
           </td>

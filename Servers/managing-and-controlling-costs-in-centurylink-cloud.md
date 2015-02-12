@@ -23,7 +23,7 @@
 </ul>
 <h3>Pausing</h3>
 <p>Pausing is the act of suspending a virtual machine; virtual machines in a paused state are not billed for compute (RAM,CPU) usage- only storage consumption and licensing costs. Individual machines or entire groups can easily be paused through our Control
-  Portal. To do so, simply select the appropriate group and use the "pause" button located on the black control bar.&nbsp;</p>
+  Portal. To do so, simply select the appropriate group and use the "pause" button located on the black control bar.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/NOekI2cJUYt9Vcd0LTNM2r1rN/?name=01.png" alt="01.png" />
 </p>
 <p>Once you have selected the pause button, a selection box will appear which will allow you to choose one or all of the servers to be paused. Simple select the servers you wish to pause and select the "pause" button.</p>
@@ -45,7 +45,7 @@
 </p>
 <h3>Autoscale</h3>
 <p>The CenturyLink Cloud platform supports both vertical Autoscale of CPU capacity for servers as well as horizontal Autoscale of servers. This makes it possible to scale servers up and down (vertical) or out and in (horizontal) based on utilization, ensuring
-  optimal deployment of resources for cloud environments under a variety of conditions. &nbsp;</p>
+  optimal deployment of resources for cloud environments under a variety of conditions. </p>
 <p>For vertical Autoscale, servers that exceed a user-defined CPU utilization threshold will instantly scale up, and servers that go below a user-defined CPU utilization threshold will scale down (and reboot) during a user-defined window. In the case of
   horizontal Autoscale, groups of servers that exceed a user-defined CPU/RAM utilization threshold will scale out by powering on one or more additional servers in the group, and groups of servers that go below a user-defined CPU/RAM utilization threshold
   will scale in by powering off one or more servers in the group.</p>

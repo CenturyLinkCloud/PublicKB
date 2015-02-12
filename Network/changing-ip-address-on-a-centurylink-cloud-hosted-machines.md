@@ -11,7 +11,7 @@
 
 <strong>DESCRIPTION&nbsp;</strong>
 <p>At this time, there is no automated way of changing IP addresses via Control Portal.&nbsp; Even with careful planning there may be times when IP addresses will need to be modified.&nbsp; This is a 2 step process to coordinate the change with the Centurylink
-  Cloud Engineer.&nbsp;</p>
+  Cloud Engineer.</p>
 
 <strong>AUDIENCE</strong>
 <p>Centurylink Cloud Users</p>
@@ -55,7 +55,7 @@
     </ol>
   </ol>
 </ol>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2. &nbsp;Self-servicing the change on the server and allowing the Cloud engineer to perform the updates to Control.&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2. &nbsp;Self-servicing the change on the server and allowing the Cloud engineer to perform the updates to Control.</p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. &nbsp;Include the gathered information from step 1 and send mail to noc@tier3.com with subject line <strong>"IP change request (Control update only)"</strong>
 </p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2, &nbsp;Please obtain a valid free IP from the network page and configure on the server manually. <strong>CAUTION:</strong> &nbsp;<strong>&nbsp;This will only be applicable for IPs on the same subnet, changing the server IP address to a different network vlan will cause the server to go offline and requires a Cloud engineer to resolve!</strong>
@@ -64,6 +64,6 @@
 
 <ol>
   <li>
-    <p>Mail notification from the ticket will be sent to you upon completion of the task.&nbsp;&nbsp;</p>
+    <p>Mail notification from the ticket will be sent to you upon completion of the task.&nbsp;</p>
   </li>
 </ol>

@@ -45,7 +45,7 @@
 </p>
 
 <p>Choose a load balancer persistence type. The choices include "standard" or "sticky." The standard option employs no persistence and is best for stateless web applications. If an application does require server-based state, then choose the sticky option.
-  The sticky choice uses source IP + destination IP address-based persistence to tie users to the target server.&nbsp;</p>
+  The sticky choice uses source IP + destination IP address-based persistence to tie users to the target server.</p>
 <p><strong>How do the load balancer method and persistence work together?&nbsp;</strong>If you choose round robin or least connection along with <strong>standard</strong> persistence, then requests are routed without any concern for where the last user's
   request came from. If you choose round robin or least connection along with <strong>sticky</strong> persistence, then the FIRST request will be routed based on either round robin or least connection, and each subsequent request from that source IP address
   will return to the server that responded to the initial request.
@@ -67,8 +67,8 @@
 <p><img src="https://t3n.zendesk.com/attachments/token/9YtA5y6vwWMfovdRTeHAVXfjj/?name=09.png" alt="09.png" />
 </p>
 <p>
-  <br />6. &nbsp;Test the load balancer by deploying a web application on multiple servers and observing the configured behavior.&nbsp;</p>
-<p>&nbsp;&nbsp;</p>
+  <br />6. &nbsp;Test the load balancer by deploying a web application on multiple servers and observing the configured behavior.</p>
+<p>&nbsp;</p>
 <h3>FAQ's</h3>
 <p>Q: &nbsp;What algorithm does Sticky use?</p>
 <p>A: &nbsp;The sticky option uses source IP + destination IP address-based persistence to tie users to the target server</p>

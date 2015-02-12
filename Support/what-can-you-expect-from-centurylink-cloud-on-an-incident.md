@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description (goal/purpose)</h3>
-<p>This KB covers what behavior customers can expect from CenturyLink Cloud&nbsp;Operations in the case of a incident impacting production systems. &nbsp;</p>
+<p>This KB covers what behavior customers can expect from CenturyLink Cloud&nbsp;Operations in the case of a incident impacting production systems. </p>
 <h3>Audience</h3>
 <ul>
   <li>CenturyLink Cloud&nbsp;Customers</li>

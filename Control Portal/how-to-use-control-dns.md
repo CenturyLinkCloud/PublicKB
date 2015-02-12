@@ -18,7 +18,7 @@
 </p>
 
 <h3>Creating a DNS Zone</h3>
-<p>Navigate to Domains -&gt; DNS. &nbsp;</p>
+<p>Navigate to Domains -&gt; DNS. </p>
 <p>Click “new dns zone”.&nbsp; Fill out the below information.</p>
 <p>Zone: Input the name of the zone.&nbsp; Example: mydnszone9.com</p>
 <p>TTL: 1 hour (Leave as is or modify if needed)</p>
@@ -40,14 +40,14 @@
 <p>Creating a CNAME record:</p>
 <p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/5vdqo5wz0sqzzfq/?name=CreateCNAME.png" alt="CreateCNAME.png" />
 </p>
-<p>Hitting ok will create a CNAME record. &nbsp;</p>
+<p>Hitting ok will create a CNAME record. </p>
 
 <p><strong>Deleting records</strong>
 </p>
 <p>You can delete a record by hitting the Red X on the right side to delete it permanently.&nbsp; You will get a confirmation prompt before the Delete takes place.&nbsp; This applies to individual records and entire zones.</p>
 
 <h3><a name="ComRef"></a>Name Servers</h3>
-<p>When you are viewing a DNS zone in Control, you will notice the “Name Server Records” at the top right.&nbsp; These are the records that need to be configured with your domain registrar so that DNS requests are sent to the correct location. &nbsp;</p>
+<p>When you are viewing a DNS zone in Control, you will notice the “Name Server Records” at the top right.&nbsp; These are the records that need to be configured with your domain registrar so that DNS requests are sent to the correct location. </p>
 
 <h3>Notes</h3>
 <p>Updating DNS records can take up to 24 hours to propagate throughout the internet.&nbsp; Some providers and ISP’s are much faster than others, but at most it should only take 24 hours.</p>

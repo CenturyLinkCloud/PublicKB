@@ -8,7 +8,7 @@
 
 <h3>Description (goal/purpose)</h3>
 <p>CenturyLink Cloud supports importing and exporting data through portable storage devices into our data centers. &nbsp;This article provides an overview of this billable service. &nbsp;Billable charge details can be found here: &nbsp;http://www.centurylinkcloud.com/products/support/service-tasks.
-  &nbsp;&nbsp;</p>
+  &nbsp;</p>
 <p>Service Task prioritization: &nbsp;https://t3n.zendesk.com/entries/21651149-Ticket-Prioritization-Matrix</p>
 
 

@@ -167,7 +167,7 @@
     </tr>
     <tr>
       <td>
-        <p>Total Mem Usage %&nbsp;</p>
+        <p>Total Mem Usage %</p>
       </td>
       <td>
         <p>Monitors the total memory usage of all httpd processes versus total physical memory of the system.&nbsp; The threshold is configurable.&nbsp; The default threshold is &gt;50%.</p>

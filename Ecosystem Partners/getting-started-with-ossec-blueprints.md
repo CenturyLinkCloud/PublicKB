@@ -30,7 +30,7 @@
 <p>CenturyLink has integrated the OSSEC HIDS solution in to the CenturyLink Cloud platform to enable customers to perform self-service installation of an OSSEC manager and HIDS agents on Windows or Linux servers. The purpose of this KB article is to help
   the reader take advantage of this integration to achieve rapid time-to-value for this HIDS solution.</p>
 <p>OSSEC is a free, open-source host-based intrusion detection system (HIDS). It performs log analysis, integrity checking, Windows registry monitoring, rootkit detection, time-based alerting, and active response. It provides intrusion detection for most
-  operating systems, including Linux, OpenBSD, FreeBSD, Mac OS X, Solaris and Windows. OSSEC has a centralized, cross-platform architecture allowing multiple systems to be easily monitored and managed.&nbsp;</p>
+  operating systems, including Linux, OpenBSD, FreeBSD, Mac OS X, Solaris and Windows. OSSEC has a centralized, cross-platform architecture allowing multiple systems to be easily monitored and managed.</p>
 <p>As a Silver-certified member of the&nbsp;<a href="https://t3n.zendesk.com/entries/58187134-CenturyLink-Cloud-Ecosystem-Program-Guide-">CenturyLink Cloud Ecosystem Program</a>, the only thing which CenturyLink Cloud certifies is that the Partner technology
   deploys successfully to the CenturyLink Cloud. We provide complementary knowledge-base articles to get the customer started but all support is available directly from the existing OSSEC community and not CenturyLink.</p>
 
@@ -78,7 +78,7 @@
     </tr>
     <tr>
       <td>
-        <p>4. Provide optional information. &nbsp;&nbsp;</p>
+        <p>4. Provide optional information. &nbsp;</p>
         <p>Set "ossec id" to provide a unique cluster ID. &nbsp;This can be left blank in most deployments and should only be populated if there will be multiple OSSEC Managers on the local submit.</p>
         <p>"ossec key" is a security string which must be known to register the agent. &nbsp;This can be left blank in most deployments as the OSSEC Manager can only be access from other trusted hosts.</p>
       </td>
@@ -94,7 +94,7 @@
     </tr>
     <tr>
       <td>
-        <p>&nbsp;6. Select to execute package and watch deployment process. &nbsp;</p>
+        <p>&nbsp;6. Select to execute package and watch deployment process. </p>
       </td>
       <td>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/qQV4Qk213s8YFgGi8Kor42mjH/?name=Screen+Shot+2015-01-02+at+2.52.57+PM.png" alt="Screen_Shot_2015-01-02_at_2.52.57_PM.png" />
       </td>
@@ -116,7 +116,7 @@
   <tbody>
     <tr>
       <td>
-        <p>1. Enable bidirectional <strong>1514/UDP</strong> traffic between the manager server and the new agent. &nbsp;UDP is stateless so you'll need to add two rules - one for the manager as source and one for the agent as source&nbsp;</p>
+        <p>1. Enable bidirectional <strong>1514/UDP</strong> traffic between the manager server and the new agent. &nbsp;UDP is stateless so you'll need to add two rules - one for the manager as source and one for the agent as source</p>
       </td>
       <td>
         <p>&nbsp;<a href="https://t3n.zendesk.com/entries/22196842-Connecting-Data-Center-Networks-Through-Firewall-Policies">Connecting Data Center Networks Through Firewall Policies<img src="https://t3n.zendesk.com/attachments/token/XJtFMG2XbALYPpbTvCK78yYlU/?name=System-Security-Firewall-ON-icon.png" alt="System-Security-Firewall-ON-icon.png" /></a>
@@ -143,7 +143,7 @@
     </tr>
     <tr>
       <td>
-        <p>4. Provide optional information. &nbsp;&nbsp;</p>
+        <p>4. Provide optional information. &nbsp;</p>
         <p>Set "ossec id" and "ossec key" if they were specified as part of the OSSEC manager installation.</p>
         <p>Set "ossec manager" if your OSSEC Manager is located on another subnet. &nbsp;Otherwise this may be left blank and the agent will automatically discover the manager and begin the registration process.</p>
       </td>

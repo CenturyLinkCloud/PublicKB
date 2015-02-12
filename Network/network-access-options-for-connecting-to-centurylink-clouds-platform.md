@@ -11,7 +11,7 @@
 <p>The following document is intended to be a basic overview of the possible network connectivity options for connecting to the CenturyLink Cloud platform. In summary, CenturyLink Cloud’s customers can leverage four different access methods to systems on
   the CenturyLink Cloud platform: 1.) Client Based VPN Tunnels, 2.) IPSec Point-to-Point VPN Tunnels, 3.) Direct Access Connectivity (i.e., bypassing the public Internet)&nbsp;and/or 4.) Assigning a Public IP(s) to a Virtual Machine(s). Moreover, if the
   utmost network resiliency is required, customers can easily deploy a combination of these access methods in-conjunction with each other. The descriptions below provide more details regarding the aforementioned access methods, and also connectivity scenarios
-  for typical organizations.&nbsp;</p>
+  for typical organizations.</p>
 
 <p><strong>Client Based VPN Tunnels</strong>
 </p>

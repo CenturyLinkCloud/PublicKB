@@ -107,7 +107,7 @@
 </p>
 <p><strong>Q: Why doesn't horizontal Autoscale support provisioning and deprovisioning servers instead of just powering on and off existing ones?</strong>
 </p>
-<p>A: We are always continuing to explore options for how to improve features and increase performance. At this time, powering on and off servers is the most efficient way for the CenturyLink Cloud platform to scale in and out based on utilization thresholds.&nbsp;</p>
+<p>A: We are always continuing to explore options for how to improve features and increase performance. At this time, powering on and off servers is the most efficient way for the CenturyLink Cloud platform to scale in and out based on utilization thresholds.</p>
 
 <p><strong>Q: Do all the servers in my horizontal Autoscale group have to be identically configured?</strong>
 </p>
@@ -127,11 +127,11 @@
   to manually power on and off any servers in the group that you'd like. You may also wish to use the API to&nbsp;<a href="https://t3n.zendesk.com/entries/43668864-Power-On-Server">power on</a>&nbsp;and&nbsp;<a href="https://t3n.zendesk.com/entries/43669854-Power-Off-Server">power off</a>&nbsp;the
   servers if, for example, you have a separate monitoring process that can detect load as well. Additionally, you could also use&nbsp;<a href="https://t3n.zendesk.com/entries/22586501-Creating-a-Scheduled-Task">Scheduled Tasks</a>&nbsp;(on a server by
   server level) to turn servers on or off at a specific time when you know load is high or low, potentially scaling ahead of the Autoscale events. (In all of these cases, it is important to note that these servers may be powered off or on after being
-  manually started or stopped due to an Autoscale event triggering.) &nbsp;</p>
+  manually started or stopped due to an Autoscale event triggering.) </p>
 
 <p><strong>Q: What happens if I want to remove a horizontal Autoscale policy from my group?</strong>
 </p>
-<p>A: You are free to remove the policy at any time. What will happen is that everything stays in place (server power state, load balancer configuration), but the system no longer applies scaling rules based on aggregate usage.&nbsp;</p>
+<p>A: You are free to remove the policy at any time. What will happen is that everything stays in place (server power state, load balancer configuration), but the system no longer applies scaling rules based on aggregate usage.</p>
 
 <p><strong>Q: Can I use an existing load balancer pool for my group's horizontal Autoscale configuration?</strong>
 </p>

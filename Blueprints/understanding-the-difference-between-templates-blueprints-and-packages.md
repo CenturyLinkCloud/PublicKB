@@ -7,11 +7,11 @@
 }}}
 
 <p>Update: November 18, 2014 by David Shacochis</p>
-<p>This article can be helpful to differentiate between Templates, Blueprints and Packages - all critical elements of the CenturyLink Cloud orchestration system we collectively call the Blueprint Engine. &nbsp;&nbsp;</p>
+<p>This article can be helpful to differentiate between Templates, Blueprints and Packages - all critical elements of the CenturyLink Cloud orchestration system we collectively call the Blueprint Engine. &nbsp;</p>
 <p><strong>Templates</strong>
 </p>
 <p>A Template is the basic model from which each Server gets created. &nbsp;The platform has a number of <a href="https://t3n.zendesk.com/entries/23104781-Server-Template-Object">standard Templates</a> which are replicated to all Nodes, and in addition customers
-  can <a href="https://t3n.zendesk.com/entries/22353625-How-To-Create-Customer-Specific-OS-Templates">create their own custom templates</a>. &nbsp;</p>
+  can <a href="https://t3n.zendesk.com/entries/22353625-How-To-Create-Customer-Specific-OS-Templates">create their own custom templates</a>. </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/gyCrzsmLVmuCHhbcsibBpihgx/?name=template.png" alt="template.png" />
 </p>
 <p><strong>Image 1 &nbsp;- converting a single server to a template</strong>
@@ -21,7 +21,7 @@
 </p>
 <p>A Blueprint is a saved workflow that can be defined and re-played at any time on the platform. &nbsp;During the Blueprint design process, customers do not incur billable costs. &nbsp;Customers are simply creating a workflow plan that orders steps across
   three categories: (1) cloud provisioning tasks; (2) software package installs; (3) script package execution. Users can add and reorder steps to the workflow as needed. Customers can define incredibly complex environments and invoke them at any time
-  with single-click simplicity. The platform will also estimate the running costs of the Blueprint once deployed. &nbsp;</p>
+  with single-click simplicity. The platform will also estimate the running costs of the Blueprint once deployed. </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/dceDNDuViw5KezqPXesW2girn/?name=reordertasks.png" alt="reordertasks.png" />
 </p>
 <p><strong>Image 2 - Reorder tasks in the Blueprint designer</strong>

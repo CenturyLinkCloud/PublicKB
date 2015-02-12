@@ -14,7 +14,7 @@
 </p>
 <p><strong>2. Click on the "Deploy Blueprint" button.</strong>
 </p>
-<p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/VPcBGcrYCE170ILRDTGJHUFGr/?name=Deploy.jpg" alt="Deploy.jpg" />&nbsp;</p>
+<p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/VPcBGcrYCE170ILRDTGJHUFGr/?name=Deploy.jpg" alt="Deploy.jpg" /></p>
 <p><strong>3. Fill out the appropriate details for the CLC Managed Apache Tomcat Blueprint.</strong>
 </p>
 <p><strong>**NOTE** Please choose the same server for both the Installation and Registration of Managed Apache Tomcat. &nbsp;This server must have Managed Red Hat installed, otherwise the Blueprint will fail.</strong>
@@ -28,7 +28,7 @@
 </p>
 <p><strong>5. Once verified, please click on the 'deploy blueprint' button. You will be presented with the deployment details along with an email stating the Blueprint has been queued.</strong>
 </p>
-<p><strong><img src="https://t3n.zendesk.com/attachments/token/TnNBlrI0ceVHGNoZ5PeDxXnHP/?name=Queue.jpg" alt="Queue.jpg" /></strong>&nbsp;</p>
+<p><strong><img src="https://t3n.zendesk.com/attachments/token/TnNBlrI0ceVHGNoZ5PeDxXnHP/?name=Queue.jpg" alt="Queue.jpg" /></strong></p>
 <p>&nbsp;You will receive an email that your Blueprint has been installed when the Blueprint is complete.</p>
 <p><strong>**NOTE** The server now has the Managed Apache software installed and activated.</strong>
 </p>

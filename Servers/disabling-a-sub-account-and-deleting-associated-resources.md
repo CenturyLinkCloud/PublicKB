@@ -7,7 +7,7 @@
 }}}
 
 <p>The<a href="https://t3n.zendesk.com/entries/22511724-Cloud-Platform-Release-Notes-October-23-2013" target="_self"> October 23rd 2013 release</a> of the Cloud Platform supports users removing networks and servers associated with the sub account prior to
-  disabling the account.&nbsp;</p>
+  disabling the account.</p>
 <ol>
   <li>From the sub account dashboard select the SERVERS menu item.</li>
   <li>Delete all the servers associated with this account. From the account’s SERVERS menu remove the server group or servers within each group.</li>

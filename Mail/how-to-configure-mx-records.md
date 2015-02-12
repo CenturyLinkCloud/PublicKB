@@ -9,7 +9,7 @@
 <strong>How to configure MX Records</strong>
 
 <p>MX records (Mail Exchanger Records) are used to tell the internet how to route email to your Exchange server or Spam filter.&nbsp; Most email environments use an external Spam filter that will guarantee 100% uptime and no email loss by using multiple
-  MX records.&nbsp; The Spam filter will filter out unwanted messages and then route the email to your mail server.&nbsp;</p>
+  MX records.&nbsp; The Spam filter will filter out unwanted messages and then route the email to your mail server.</p>
 <p>MX records are configured in DNS.&nbsp; To configure MX records using the Control portal follow these steps:</p>
 <ol>
   <li>Navigate to Domains -&gt; DNS.&nbsp; Select the DNS zone that corresponds with your email domain</li>
@@ -26,7 +26,7 @@
 </p>
 <p>Additional information:</p>
 <p>MX records tell senders how to send email to your domain.&nbsp; When your domain is registered, it’s assigned several DNS records which enable systems on the Internet to be able to locate it.&nbsp; MX records are part of these records and are required
-  for email to flow to your mail server(s).&nbsp;</p>
+  for email to flow to your mail server(s).</p>
 <p>Example:</p>
 <p>MX record for mydnszone9.com = mydnszone9.com.s7a1.psmtp.com preference: 10</p>
 <p>Mail sent to @mydnszone9.com would lookup MX record and find the above record.&nbsp; It would then route MX (Mail) traffic to mydnszone9.com.s7a1.psmtp.com which is a Postini address.&nbsp; When Postini receives it they will check it for viruses, spoofed

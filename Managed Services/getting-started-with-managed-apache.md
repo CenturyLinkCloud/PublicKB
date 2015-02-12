@@ -14,7 +14,7 @@
 </p>
 <p><strong>2. Click on the "Deploy Blueprint" button.</strong>
 </p>
-<p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/xsz4c4mmuKqWPLKyMiCjpTyTF/?name=Deploy.jpg" alt="Deploy.jpg" />&nbsp;</p>
+<p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/xsz4c4mmuKqWPLKyMiCjpTyTF/?name=Deploy.jpg" alt="Deploy.jpg" /></p>
 <p><strong>3. Fill out the appropriate details for the CLC Managed Apache Httpd OpenSSL and Web Blueprint.</strong>
 </p>
 <p><strong>**NOTE** Please choose the same server for both the Installation and Registration of Managed Apache. &nbsp;This server must have Managed Red Hat installed, otherwise the Blueprint will fail.</strong>
@@ -28,7 +28,7 @@
 </p>
 <p><strong>5. Once verified, please click on the 'deploy blueprint' button. You will be presented with the deployment details along with an email stating the Blueprint has been queued.</strong>
 </p>
-<p><strong><img src="https://t3n.zendesk.com/attachments/token/m1TZIy6fdYQbHXNj8hFtICbw2/?name=Queue.jpg" alt="Queue.jpg" /></strong>&nbsp;</p>
+<p><strong><img src="https://t3n.zendesk.com/attachments/token/m1TZIy6fdYQbHXNj8hFtICbw2/?name=Queue.jpg" alt="Queue.jpg" /></strong></p>
 <p>&nbsp;You will receive an email that your Blueprint has been installed when the Blueprint is complete.</p>
 <p><strong>**NOTE** The server now has the Managed Apache software installed and activated.</strong>
 </p>
@@ -38,7 +38,7 @@
 <p>A: CenturyLink Cloud Web Software for Apache is priced by the VM, billed hourly.</p>
 <p><strong>Q: Can the customer have multiple Apache Instances installed on the same server? </strong>
 </p>
-<p>A:&nbsp;NO, Apache can only be installed once per server, but Apache is capable of hosting many web sites per server.&nbsp;</p>
+<p>A:&nbsp;NO, Apache can only be installed once per server, but Apache is capable of hosting many web sites per server.</p>
 <p><strong>Q: What Versions of Apache does CenturyLink Cloud support? </strong>
 </p>
 <p>A:&nbsp;CenturyLink Cloud Supports HTTPD-2.4 with PHP 5.5, HTTPD-2.4 with PHP 5.4, HTTPD-2.2 with PHP 5.3_Prefork, HTTPD-2.2 with PHP 5.3_Worker.</p>

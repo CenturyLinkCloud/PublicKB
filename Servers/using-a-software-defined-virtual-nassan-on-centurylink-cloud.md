@@ -14,10 +14,10 @@ Using a Software-Defined Virtual NAS/SAN on CenturyLink Cloud
 <h3>Supporting Information</h3>
 <p>CenturyLink Cloud provides no support for the SoftNAS&trade; virtual appliance.&nbsp; The goal of this KB is to provide a sample use case to deliver unified storage services within the parameters of the cloud platform. &nbsp;Customers are responsible
   for configuration and sizing of the virtual appliance resources according to the vendors best practices. &nbsp;There are a large number of configuration options/customization's not covered in this KB and customers should read the installation guides
-  provided by SoftNAS&trade;. &nbsp;</p>
+  provided by SoftNAS&trade;. </p>
 <h3>Security Notes</h3>
 <p>In this sample deployment no security services were put in place around access to either iSCSI block or filesystem (CIFS, NFS) services. &nbsp;SoftNAS&trade; and the CenturyLink Cloud provide a wide range of authentication and security components customers
-  can and should implement that are outside the scope of a basic functionality overview. &nbsp;</p>
+  can and should implement that are outside the scope of a basic functionality overview. </p>
 <h3>Prerequisites</h3>
 <ul>
   <li>A CenturyLink Cloud Account</li>
@@ -33,7 +33,7 @@ Using a Software-Defined Virtual NAS/SAN on CenturyLink Cloud
 <p>2. &nbsp;Once the RAW disks are added, login to the SoftNAS StorageCenter, select disk devices. &nbsp;The RAW disks added via Control should be present. &nbsp;Quick Tip: &nbsp;use the refresh button if disks don't show up immediately.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/d4pSont7RJBqUiCxQbOCDBGdK/?name=02.png" alt="02.png" />
 </p>
-<p>3. &nbsp;Select the Partition All button and confirm you wish to create partitions on all the devices. &nbsp;</p>
+<p>3. &nbsp;Select the Partition All button and confirm you wish to create partitions on all the devices. </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/oI56Y7R1zEh96nYcQnATzhnwm/?name=03.png" alt="03.png" />
 </p>
 <p>&nbsp;4. &nbsp;In the SoftNAS StorageCenter navigate to Storage Pools and select the create icon. &nbsp;Provide a friendly Pool name and choose an appropriate level of RAID you wish to use on this group of RAW disks. &nbsp;In this example, we leveraged
@@ -43,7 +43,7 @@ Using a Software-Defined Virtual NAS/SAN on CenturyLink Cloud
 <p><img src="https://t3n.zendesk.com/attachments/token/IeVWtKfwwueGpZpNw2HF99yGr/?name=05.png" alt="05.png" />
 </p>
 <p>5. &nbsp;If you plan to deliver iSCSI volumes you need to establish an create an iSCSI Target on the SoftNAS. &nbsp;Navigate to iSCSI Lun Targets in the SoftNAS StorageCenter and create a new target. &nbsp;the Default option 'Don't Create new LUN' is
-  adequate as these will be created later. &nbsp;</p>
+  adequate as these will be created later. </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/0MXxRdYOWjhr2063hWF2iOrAr/?name=07.5.png" alt="07.5.png" />
 </p>
 <p>6. &nbsp;In the SoftNAS StorageCenter navigate to Volumes and LUNs and select the create icon. &nbsp;The Create Volume dialog box allows you to choose the type of Volume/LUN you wish to deploy. &nbsp;Choices include CIFS, NFS &amp; iSCSI.</p>
@@ -62,7 +62,7 @@ Using a Software-Defined Virtual NAS/SAN on CenturyLink Cloud
 </ul>
 <p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/oVVG69HLoCUca5kn0Ad9G4dmX/?name=06.png" alt="06.png" /><img src="https://t3n.zendesk.com/attachments/token/CQdtxA17BiBtBWDPGrL529GTE/?name=07.png" alt="07.png" />
 </p>
-<p><strong>iSCSI Block Storage</strong>&nbsp;</p>
+<p><strong>iSCSI Block Storage</strong></p>
 <ul>
   <ul>
     <li>Provide a volume name</li>

@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description (goal/purpose)</h3>
-<p>When a disk is provisioned to your server in control, occasionally you will get this warning "Manual intervention required". This indicates that manual intervention is required to complete the process of expanding your disk.&nbsp;</p>
+<p>When a disk is provisioned to your server in control, occasionally you will get this warning "Manual intervention required". This indicates that manual intervention is required to complete the process of expanding your disk.</p>
 
 <p><strong>Audience</strong>
 </p>
@@ -26,7 +26,7 @@
 </p>
 <p>1. &nbsp;Log into the server</p>
 <p>2. &nbsp;Launch server manager, and expand Storage</p>
-<p>3. &nbsp;Right click Disk Management, and click Rescan Disks.&nbsp;</p>
+<p>3. &nbsp;Right click Disk Management, and click Rescan Disks.</p>
 <p>4. &nbsp;In&nbsp;the details pane, right-click the volume that you want, and then click&nbsp;<strong>Extend Volume</strong>.</p>
 <p>5. &nbsp;Follow the instructions in the Extend Volume Wizard to extend the partition.</p>
 

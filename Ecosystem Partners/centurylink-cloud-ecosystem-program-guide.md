@@ -43,7 +43,7 @@
   <li>Maturity and performance of the product and company.</li>
   <li>Being a CenturyLink Cloud customer in good standing</li>
 </ul>
-<p>Applicants selected to move forward will have access to the Cloud Ecosystem Program Agreement for acceptance.&nbsp; At this point, the Customer’s account would be configured as an Ecosystem Program Candidate.&nbsp;</p>
+<p>Applicants selected to move forward will have access to the Cloud Ecosystem Program Agreement for acceptance.&nbsp; At this point, the Customer’s account would be configured as an Ecosystem Program Candidate.</p>
 <p><strong>Certification</strong></p>
 <p>To ensure Candidate solutions deliver both business value and trouble-free use, CenturyLink requires each Candidate successfully pass a certification process.&nbsp; This includes validation that:</p>
 <ul>
@@ -61,7 +61,7 @@
 <p><strong>Documentation</strong></p>
 <p>Two types of KnowledgeBase articles should be created for all Ecosystem Member technologies: focused on Public end-users and Internal cloud support personnel.</p>
 <p>Public Articles should be used to practically guide end-users through deploying the technology upon CenturyLink Cloud.&nbsp; The documentation should be intuitive and provide step-by-step guidance in such a way that all skill levels can use the solution.&nbsp;
-  These should be accessible online through the CenturyLink Cloud <a href="http://help.tier3.com">knowledgebase</a> (KB).&nbsp; The primary goal of Public KB articles is to ensure customer success: <em>what should the user know about how to take advantage of this technology integration with CenturyLink Cloud</em>?&nbsp;</p>
+  These should be accessible online through the CenturyLink Cloud <a href="http://help.tier3.com">knowledgebase</a> (KB).&nbsp; The primary goal of Public KB articles is to ensure customer success: <em>what should the user know about how to take advantage of this technology integration with CenturyLink Cloud</em>?</p>
 <p>Internal Articles will be used to provide detailed information to the CenturyLink Cloud Support teams so they can appropriately handle operational questions from customers and users.&nbsp; The documentation should include any support expectations worked
   out during the certification process, and should always include contact information for the Member support organization.&nbsp; The Internal KB article should be more detailed than Public KB articles around how blueprints are designed, how tools are
   referenced, and how the Member technology works in production.&nbsp; The primary goal of these Internal KB articles is to ensure quality customer service: <em>what does the CenturyLink Cloud support team need to know to make sure that a customer gets supported correctly and routed to the appropriate Member support team?</em>
@@ -105,7 +105,7 @@
 <p>After successful certification, the Silver Certified Member will be notified of acceptance at which time the CenturyLink Cloud team will begin planning evangelism and communication efforts around the new successful integration.&nbsp; Cloud Ecosystem Members
   will be responsible for (and benefit from) a number of on-boarding and ongoing activities, as outlined below:</p>
 <p><strong>On-boarding Activities:</strong></p>
-<p>Sales and Marketing:&nbsp;</p>
+<p>Sales and Marketing:</p>
 <ul>
   <li>Member shall, within proper usage guidelines and approvals, contribute co-branded sales collateral for use by both CenturyLink and Member sales organizations.&nbsp;</li>
   <li>Member shall identify a use case to serve as the center-point of a content marketing strategy:
@@ -117,17 +117,17 @@
   <li>Member will be responsible for all sales and offer development for their technology</li>
   <li>Pending resource availability, the CenturyLink team will endeavor to participate in go-to-market events as requested, including but not limited to a mutually agreed upon press release.</li>
 </ul>
-<p>Training:&nbsp;</p>
+<p>Training:</p>
 <ul>
   <li>As the Member’s product changes or as needed and with reasonable notice, Member will be expected to update KnowledgeBase articles and support the recording of recorded training videos for CenturyLink’s customer base.</li>
   <li>Upon request, Member will provide supplementary technical training for the CenturyLink Cloud Support team.</li>
 </ul>
-<p>Account Management:&nbsp;</p>
+<p>Account Management:</p>
 <ul>
   <li>Member is responsible for all aspects of their client management.&nbsp;</li>
   <li>CenturyLink will not act on behalf of or interact directly with the client on matters related to the usage of the Member’s product.&nbsp;</li>
 </ul>
-<p>Support:&nbsp;</p>
+<p>Support:</p>
 <ul>
   <li>Members are responsible for providing 24x7 (email &amp; telephone) customer support for their product.</li>
   <li>
@@ -140,6 +140,6 @@
 Membership Responsibilities: Platinum Certified Members
 <p>The Platinum Certification level is still being finalized and this Program Guide will be updated at a later date.</p>
 <p><strong>Renewal</strong></p>
-<p>In an effort to ensure the Program participant pool is adequately sized and delivering tangible value to our customers, evaluation of each solution at the renewal point of the respective Member’s term is necessary.&nbsp;</p>
+<p>In an effort to ensure the Program participant pool is adequately sized and delivering tangible value to our customers, evaluation of each solution at the renewal point of the respective Member’s term is necessary.</p>
 <p>At the end of the term, both parties will evaluate the program and the Member’s value brought to the program during the participation period.&nbsp; If the anticipated business value has proven out, continues to be relevant, and both parties agree, the
   program will renew for an additional term.&nbsp; If the business value has not been demonstrated, CenturyLink will discuss the future direction of the relationship at that time.</p>

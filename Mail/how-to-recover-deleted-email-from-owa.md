@@ -21,4 +21,4 @@
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/bgdenhup0jdghje/?name=DeletedItems.png" alt="DeletedItems.png" />
 </p>
-<p>Using this useful feature you can restore Emails or contacts that were accidentally deleted through your Outlook client, phone or device.&nbsp; You can even recover items that were recently permanently deleted by using Shift+Delete.&nbsp;</p>
+<p>Using this useful feature you can restore Emails or contacts that were accidentally deleted through your Outlook client, phone or device.&nbsp; You can even recover items that were recently permanently deleted by using Shift+Delete.</p>

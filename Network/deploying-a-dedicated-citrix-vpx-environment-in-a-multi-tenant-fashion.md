@@ -10,7 +10,7 @@
 <p>While the CenturyLink Cloud platform provides a <a href="https://t3n.zendesk.com/entries/22110695-Creating-a-Self-Service-Load-Balancing-Configuration" target="_blank">self-service load balancing service</a> for public facing web applications there may
   be times in which this model does not meet a customers use case or technical requirements. &nbsp;CenturyLink Cloud customers can license Citrix VPX dedicated virtual load balancers on a monthly use basis. &nbsp;Internal IT personnel, partners, resellers
   and other ISV's may wish to deploy dedicated Citrix VPX load balancers for consumption across their application portfolio or client base in a multi-tennant fashion. &nbsp;Using the Citrix VPX platform in a multi-tenant fashion can avoid costs of deploying
-  devices for every application or customer and reduce administrative overhead. &nbsp;</p>
+  devices for every application or customer and reduce administrative overhead. </p>
 <h3>Use Case</h3>
 <p>This KB will provide a sample use case in which a highly available pair of Citrix VPX dedicated load balancers are deployed into multi-tier account hierarchy using CenturyLink Cloud Parent &amp; Sub-accounts. &nbsp;The end state will deliver load balancing
   services to a sub-account of the parent providing account isolation while delivering secure load balancing services.</p>
@@ -113,10 +113,10 @@
 </p>
 <p>Network: &nbsp;NLB_10.100.97.0/24</p>
 <p>Subnet Size: &nbsp;1</p>
-<p>Starting IP: &nbsp;&lt;RNAT IP of NLB Provided by Service Tasks&gt; &nbsp;In this sample, the RNAT IP is 10.100.97.101&nbsp;</p>
+<p>Starting IP: &nbsp;&lt;RNAT IP of NLB Provided by Service Tasks&gt; &nbsp;In this sample, the RNAT IP is 10.100.97.101</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/o5exOahqkQ9URyMIeBRsNeE3w/?name=06.png" alt="06.png" />
 </p>
-<p><strong>Add&nbsp;Destination Address</strong> &nbsp;</p>
+<p><strong>Add&nbsp;Destination Address</strong> </p>
 <p>Network: &nbsp;WEB_10.100.187.0/24</p>
 <p>Subnet Size: 1 (or use another size depending on # of web servers)</p>
 <p>Starting IP address: &nbsp;&lt;Private IP address of your Web Servers in Client A sub-account&gt; &nbsp;In this sample, our web servers are 10.100.187.12 &amp; 13.</p>
@@ -135,7 +135,7 @@
 </p>
 <h3>Configure Citrix VPX Load Balancers</h3>
 <p>We now need to configure the VPX load balancer(s) to deliver services to 'Client A' web servers. &nbsp;In this phase we will build service groups, virtual servers (VIP) and update the VPX routes to appropriately route traffic to the networks in 'Client
-  A' sub-account. &nbsp;<strong>NOTE: &nbsp;This is not meant to be an all encompassing guide to configuring a Citrix VPX but just a basic sample use case to balance (2) web servers over HTTP in another sub-account and network.</strong> &nbsp;</p>
+  A' sub-account. &nbsp;<strong>NOTE: &nbsp;This is not meant to be an all encompassing guide to configuring a Citrix VPX but just a basic sample use case to balance (2) web servers over HTTP in another sub-account and network.</strong> </p>
 <ul>
   <li><a href="https://t3n.zendesk.com/entries/27216280-Dedicated-Load-Balancer-Basic-Management" target="_blank">Use the Dedicated Load Balancer Basic Management KB</a> to configure a Service Group, Virtual Server and health checks for PING &amp; TCP. &nbsp;
     In this sample use case we built the following configuration using the admin interface (10.100.97.100):</li>
@@ -185,7 +185,7 @@
 
 <h3>Add Public IP to VIP for External Access</h3>
 <p>Finally, as this use case is a public facing website we will use the <a href="https://t3n.zendesk.com/entries/49195400-How-To-Add-Public-IP-to-Virtual-Machine" target="_blank">Add Public IP</a> function of Control to perform a 1 to 1 NAT public IP to
-  the VIP (Virtual Server) created previously on 10.100.97.103. &nbsp;</p>
+  the VIP (Virtual Server) created previously on 10.100.97.103. </p>
 <ul>
   <li>Navigate to the VPX in Control (TIP: if you have an HA pair the VIPs will be assigned to the primary VPX). &nbsp;Choose Add Public IP. &nbsp;Choose the VIP 10.100.97.103 (previously built in the VPX configuration). &nbsp;Lastly, we want to expose HTTP(80).</li>
 </ul>
@@ -199,6 +199,6 @@
 <ul>
   <li>Validate the (2) Virtual Web Servers for Client-A sub-account are delivering the Test Page created previously. &nbsp;Use the refresh button a few times to see the page is being delivered by a unique web server and the services are functional. &nbsp;</li>
 </ul>
-<p><img src="https://t3n.zendesk.com/attachments/token/TUOX5yKMphrCidcUsL9oWtWAP/?name=60.png" alt="60.png" />&nbsp;</p>
+<p><img src="https://t3n.zendesk.com/attachments/token/TUOX5yKMphrCidcUsL9oWtWAP/?name=60.png" alt="60.png" /></p>
 <p><img src="https://t3n.zendesk.com/attachments/token/AOgNNYegdbkoUnCX9Pg6Nr87k/?name=61.png" alt="61.png" />
 </p>

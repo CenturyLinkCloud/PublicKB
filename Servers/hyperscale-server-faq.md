@@ -38,7 +38,7 @@
 
 <p><strong>Q: Since these servers use local storage, how do I avoid application failure if underlying hardware fails?</strong>
 </p>
-<p>A: Anti-affinity policies make it possible to spread workloads across physical hosts. When a new server is created and references an anti-affinity policy, the CenturyLink Cloud platform makes sure that all the servers in that policy are distributed. &nbsp;</p>
+<p>A: Anti-affinity policies make it possible to spread workloads across physical hosts. When a new server is created and references an anti-affinity policy, the CenturyLink Cloud platform makes sure that all the servers in that policy are distributed. </p>
 
 <p><strong>Q: Will I see Hyperscale Servers called out separately on my invoice?</strong>
 </p>

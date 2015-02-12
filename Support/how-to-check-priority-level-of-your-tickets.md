@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description (goal/purpose)</h3>
-<p>Tier 3 uses Zendesk to manage support tickets.&nbsp;&nbsp;This KB shows you how to check the current priority level of your tickets.&nbsp;</p>
+<p>Tier 3 uses Zendesk to manage support tickets.&nbsp;&nbsp;This KB shows you how to check the current priority level of your tickets.</p>
 <h3>Audience</h3>
 <ul>
   <li>Customers</li>

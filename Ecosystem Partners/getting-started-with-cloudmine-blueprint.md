@@ -33,7 +33,7 @@
   <li>Access to the CenturyLink Cloud platform as an authorized user.</li>
 </ul>
 <strong>Detailed Steps</strong>
-<p>Follow these step by step instructions to get started with a single-server CloudMine deployment. &nbsp;</p>
+<p>Follow these step by step instructions to get started with a single-server CloudMine deployment. </p>
 <ol>
   <li><em>Locate the Blueprint in the Blueprint Library</em>.&nbsp;
     <ul>

@@ -32,7 +32,7 @@
   </li>
 </ol>
 
-<p>Once logged into OWA you have a fully functional Email application.&nbsp; You can send and receive email, view and modify your Calendar, Contacts, and Tasks.&nbsp;</p>
+<p>Once logged into OWA you have a fully functional Email application.&nbsp; You can send and receive email, view and modify your Calendar, Contacts, and Tasks.</p>
 <p>Reference the below articles for additional tasks that can be done via OWA.</p>
 
 <p><a href="http://help.tier3.com/entries/21415853-how-to-recover-deleted-email-from-owa">How to recover deleted email from owa</a>
