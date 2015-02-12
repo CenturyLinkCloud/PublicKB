@@ -10,7 +10,7 @@
 <p>Changing IP addresses</p>
 
 <strong>DESCRIPTION&nbsp;</strong>
-<p>At this time, there is no automated way of changing IP addresses via Control Portal.&nbsp; Even with careful planning there may be times when IP addresses will need to be modified.&nbsp; This is a 2 step process to coordinate the change with the Centurylink
+<p>At this time, there is no automated way of changing IP addresses via Control Portal. Even with careful planning there may be times when IP addresses will need to be modified. This is a 2 step process to coordinate the change with the Centurylink
   Cloud Engineer.</p>
 
 <strong>AUDIENCE</strong>
@@ -19,7 +19,7 @@
 <strong>PROCESS</strong>
 <ol>
   <li>
-    <p>Gather the necessary information for the change.&nbsp; This will include the following</p>
+    <p>Gather the necessary information for the change. This will include the following</p>
   </li>
   <ol>
     <li>
@@ -50,7 +50,7 @@
         <p>This mail will also include granting permission for the Cloud engineer to login to the server to make the necessary network configuration changes. </p>
       </li>
       <li>
-        <p>Any downtime requirements.&nbsp; This change does require the server to go offline for a short duration &lt; 1min </p>
+        <p>Any downtime requirements. This change does require the server to go offline for a short duration &lt; 1min </p>
       </li>
     </ol>
   </ol>

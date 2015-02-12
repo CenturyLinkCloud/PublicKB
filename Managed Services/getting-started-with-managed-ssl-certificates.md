@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>Centurylink Cloud SSL certificates provide website information security.&nbsp; SSL certificates address the core requirements for effectively securing the communication between a web server and the customers interacting through it.</p>
+<p>Centurylink Cloud SSL certificates provide website information security. SSL certificates address the core requirements for effectively securing the communication between a web server and the customers interacting through it.</p>
 <p>&nbsp;Here's how to procure a managed SSL certificate in CenturyLink Cloud. <strong>NOTE: Before you can acquire a Managed SSL certificate, you must create a sever with a Managed OS, either Managed Windows or Managed Red Hat.</strong>
 </p>
 <p><strong>1. Navigate to the Blueprints library, and search for SSL. Then, choose the right SSL Cert based on your preference, either Windows or Linux.</strong>

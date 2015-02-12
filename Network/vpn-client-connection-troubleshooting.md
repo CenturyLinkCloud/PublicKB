@@ -179,11 +179,11 @@
 <p>If you see the above error message in your OpenVPN log, it can mean a couple of things:</p>
 
 <ol>
-  <li>You have reached your max concurrent sessions available for your OpenVPN connection.&nbsp; Go to: <a href="https://control.tier3.com/Net/Vpn">https://control.tier3.com/Net/Vpn</a> and select Edit VPN Settings.&nbsp; Increase the Max connections and
+  <li>You have reached your max concurrent sessions available for your OpenVPN connection. Go to: <a href="https://control.tier3.com/Net/Vpn">https://control.tier3.com/Net/Vpn</a> and select Edit VPN Settings. Increase the Max connections and
     try again.</li>
-  <li>Your Windows Firewall is blocking the required port.&nbsp; Try to disable your firewall and connect again.&nbsp; If you don’t want to disable your firewall, you can open the required Inbound/Outbound ports. Your remote ports are unique.&nbsp;
+  <li>Your Windows Firewall is blocking the required port. Try to disable your firewall and connect again. If you don’t want to disable your firewall, you can open the required Inbound/Outbound ports. Your remote ports are unique.&nbsp;
     You will need to email <a href="mailto:noc@tier3.com">noc@tier3.com</a> and ask what ports your OpenVPN uses or see the bullet below.&nbsp;</li>
-  <li>Your physical Firewall is blocking the required port.&nbsp; (Firewall, Router, etc)&nbsp; Check with your network administrator.&nbsp;&nbsp; You can tell him/her this:&nbsp; “In order for OpenVPN to be able to connect to Tier 3, Outbound TCP and UDP
+  <li>Your physical Firewall is blocking the required port. (Firewall, Router, etc)&nbsp; Check with your network administrator.&nbsp;&nbsp; You can tell him/her this:&nbsp; “In order for OpenVPN to be able to connect to Tier 3, Outbound TCP and UDP
     port xyz to be opened(email&nbsp; <a href="mailto:noc@tier3.com">noc@tier3.com</a> for your OpenVPN port or see the bullet below)”
     <br />
     <br />
@@ -201,7 +201,7 @@
 
 <p>Invalid Username/Password:</p>
 
-<p>Some users authenticate their OpenVPN with Active Directory(LDAP).&nbsp; You disable/enable this on the “edit vpn settings” button at: <a href="https://control.tier3.com/Net/Vpn">https://control.tier3.com/Net/Vpn</a>
+<p>Some users authenticate their OpenVPN with Active Directory(LDAP). You disable/enable this on the “edit vpn settings” button at: <a href="https://control.tier3.com/Net/Vpn">https://control.tier3.com/Net/Vpn</a>
 </p>
 
 <p>If you have authentication enabled and you are unable to connect with your username/password, you will see this in your OpenVPN log:</p>
@@ -214,7 +214,7 @@
 
 
 
-<p>You need to verify with Tier 3 or your Administrator that you are using the right credentials.&nbsp; Your account must also be a member of: ManagedVPN</p>
+<p>You need to verify with Tier 3 or your Administrator that you are using the right credentials. Your account must also be a member of: ManagedVPN</p>
 
 <p>
   <a name="5"></a>

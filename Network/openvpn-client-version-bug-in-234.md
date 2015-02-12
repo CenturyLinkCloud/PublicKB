@@ -21,10 +21,10 @@ Impact
   <br /><strong>To verify your current version via Windows:</strong>
 </p>
 <p>
-  <br />1.&nbsp; &nbsp; Browse to C:\Program Files\OpenVPN\bin</p>
-<p>2.&nbsp; &nbsp; Right click on openvpn.exe</p>
-<p>3.&nbsp; &nbsp; Click ‘Properties’</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; 1.&nbsp; &nbsp; See version information:</p>
+  <br />1. &nbsp; Browse to C:\Program Files\OpenVPN\bin</p>
+<p>2. &nbsp; Right click on openvpn.exe</p>
+<p>3. &nbsp; Click ‘Properties’</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; 1. &nbsp; See version information:</p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://t3n.zendesk.com/attachments/token/o6C6NBssxDUJgPcWKrvGbu3Qz/?name=version_gui.png" alt="version_gui.png" />
 </p>
 <p>&nbsp; &nbsp; &nbsp;<strong>To verify version via CLI:</strong>

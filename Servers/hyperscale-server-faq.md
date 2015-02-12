@@ -17,10 +17,10 @@
 </p>
 <p>A: Five ways:</p>
 <ul>
-  <li><em>Storage.</em>&nbsp; Hyperscale storage is 100% SSD, instead of a mix of spindle/SSD.&nbsp; Consequently, users can expect different storage levels between Hyperscale and CenturyLink Cloud servers.</li>
-  <li><em>Backups.</em> Hyperscale servers do not include the automatic backup function found in CenturyLink Cloud Servers.&nbsp; This is largely because Hyperscale is designed for distributed apps that don’t typically deal with backups.</li>
+  <li><em>Storage.</em>&nbsp; Hyperscale storage is 100% SSD, instead of a mix of spindle/SSD. Consequently, users can expect different storage levels between Hyperscale and CenturyLink Cloud servers.</li>
+  <li><em>Backups.</em> Hyperscale servers do not include the automatic backup function found in CenturyLink Cloud Servers. This is largely because Hyperscale is designed for distributed apps that don’t typically deal with backups.</li>
   <li><em>Advanced Tasks. </em>Snapshots, Clone, Convert to Template and Archive features are not available on Hyperscale Instances</li>
-  <li><em>Geographies.</em>&nbsp; Hyperscale is only available in the NY1, IL1, CA3, GB3, UC1 &amp; VA1 datacenters, with new locations coming online quarterly.&nbsp; Cloud servers, in contrast, can be deployed across 12 federated data centers.&nbsp;</li>
+  <li><em>Geographies.</em>&nbsp; Hyperscale is only available in the NY1, IL1, CA3, GB3, UC1 &amp; VA1 datacenters, with new locations coming online quarterly. Cloud servers, in contrast, can be deployed across 12 federated data centers.&nbsp;</li>
   <li><em>API parity is unavailable for Hyperscale at launch. </em>Full API compatibility will be in place in coming releases.</li>
 </ul>
 
@@ -46,4 +46,4 @@
 
 <p><strong>Q: Can I use the v1 SOAP or HTTP API to interact with Hyperscale Servers?</strong>
 </p>
-<p>A: For now, just for some functions, for example, metadata about each Hyperscale server can be accessed via Group API calls.&nbsp; Full API parity will be achieved in the coming months.</p>
+<p>A: For now, just for some functions, for example, metadata about each Hyperscale server can be accessed via Group API calls. Full API parity will be achieved in the coming months.</p>

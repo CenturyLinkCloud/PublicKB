@@ -7,19 +7,19 @@
 }}}
 
 <p>This document provides guidance for working with your CenturyLink-managed Red Hat Enterprise Linux Operating System.</p>
-<p>CenturyLink provides you overall management for your server OS, including access to the primary root user privileges for new user account creation, user deletion, application installation, and other administrative tasks.&nbsp; CenturyLink will also maintain
+<p>CenturyLink provides you overall management for your server OS, including access to the primary root user privileges for new user account creation, user deletion, application installation, and other administrative tasks. CenturyLink will also maintain
   root access which allows us to effectively monitor and maintain your server OS.</p>
 <h3><strong>Connecting to Your Server with SSH</strong></h3>
 <p>When your server was initially configured, a customer account was created for your use, and the root account was configured for you to initially access the machine for administrative purposes.&nbsp;&nbsp;</p>
-<p>1. You will need the Admin (root) password for your initial SSH session. Access your server password in the CenturyLink Cloud Control by choosing the ‘<em>click to authenticate</em>’ link illustrated below in the red box, in the upper right corner<em>.&nbsp;&nbsp; Note:&nbsp; Your Admin user name and password are different from your CenturyLink Cloud Control user name and password.&nbsp; Also, this root account password should not be changed except from within this CenturyLink Cloud Control interface.</em>
+<p>1. You will need the Admin (root) password for your initial SSH session. Access your server password in the CenturyLink Cloud Control by choosing the ‘<em>click to authenticate</em>’ link illustrated below in the red box, in the upper right corner<em>.&nbsp;&nbsp; Note:&nbsp; Your Admin user name and password are different from your CenturyLink Cloud Control user name and password. Also, this root account password should not be changed except from within this CenturyLink Cloud Control interface.</em>
 </p>
 <p><em><img src="https://t3n.zendesk.com/attachments/token/igx4zrd8DJt6tERYiOu0CqUGt/?name=Overview.jpg" alt="Overview.jpg" /></em>
 </p>
 
 <p>2. Use any SSH version 2 compatible client. (SSH, Putty, Secure CRT, WS_FTP).</p>
-<p>3. Direct your SSH client to connect to the host server IP that was provided to you by CenturyLink Cloud Control.&nbsp; This IP is a CLC private network IP. <strong>You should NEVER manage your virtual server through a public IP address but rather, always use a secure tunnel such as a client VPN or site to site VPN connection.</strong>
+<p>3. Direct your SSH client to connect to the host server IP that was provided to you by CenturyLink Cloud Control. This IP is a CLC private network IP. <strong>You should NEVER manage your virtual server through a public IP address but rather, always use a secure tunnel such as a client VPN or site to site VPN connection.</strong>
 </p>
-<p>4. Once logged in, you should immediately set the password of your non-root management account.&nbsp; Run the command that's <strong>bolded below</strong> and note the resulting account name (shown below in<em> italics</em>) that you can use for your
+<p>4. Once logged in, you should immediately set the password of your non-root management account. Run the command that's <strong>bolded below</strong> and note the resulting account name (shown below in<em> italics</em>) that you can use for your
   regular server operations:</p>
 <pre># <strong>passwd $(getent passwd 5000 | cut -d: -f1)</strong><br />Changing password for user <em>clc_test</em>.</pre>
 <pre>New password: <strong>********</strong></pre>
@@ -54,7 +54,7 @@
 <h3><strong>Difficulty Connecting via SSH</strong></h3>
 <p>If you should have difficulty connecting via SSH, be sure that you are connecting from an IP address that has port 22 allowed on the CenturyLink inbound firewall. The firewall rule-set can be reviewed with CenturyLink Support.</p>
 <p>If you have a firewall at your location ensure port 22 is opened for outbound traffic. Additionally, confirm that your SSH client is configured to use port 22 (in all likelihood it is by default).</p>
-<p>If you are having problems connecting to your VM, please execute the following trouble-shooting steps (and save your output), prior to contacting Support.&nbsp; Saving your output data will help to expedite the trouble-shooting process.</p>
+<p>If you are having problems connecting to your VM, please execute the following trouble-shooting steps (and save your output), prior to contacting Support. Saving your output data will help to expedite the trouble-shooting process.</p>
 <p>1. Provide a <em>traceroute(8)</em> output from your source host to the CenturyLink server destination IP.</p>
 <ul>
   <li>Example from a UNIX or Linux source host:</li>

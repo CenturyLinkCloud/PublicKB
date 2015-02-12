@@ -29,7 +29,7 @@
   </ul>
 </ul>
 <strong>Description</strong>
-<p>Vital View has integrated their technology with the CenturyLink Cloud platform.&nbsp; The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this intelligent monitoring solution.</p>
+<p>Vital View has integrated their technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this intelligent monitoring solution.</p>
 <strong>Audience</strong>
 <ul>
   <li>CenturyLink Cloud Users</li>

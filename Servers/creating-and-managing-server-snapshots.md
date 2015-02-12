@@ -13,11 +13,11 @@
 </blockquote>
 <p><strong>Description:</strong>
 </p>
-<p>Snapshots are a feature of our platform that allow a machine to be quickly reverted back to a set point in time.&nbsp; This can be very useful for things such as short term testing of updates or configuration changes however due to the way that snapshots
-  operate they should not be kept active for&nbsp;extended periods of time .&nbsp; <strong>A snapshot is not a backup of a machine and should not be used as such! </strong>&nbsp;Snapshots do not contain a duplicate copy of the machines data rather they
+<p>Snapshots are a feature of our platform that allow a machine to be quickly reverted back to a set point in time. This can be very useful for things such as short term testing of updates or configuration changes however due to the way that snapshots
+  operate they should not be kept active for&nbsp;extended periods of time . <strong>A snapshot is not a backup of a machine and should not be used as such! </strong>&nbsp;Snapshots do not contain a duplicate copy of the machines data rather they
   operate more like a change log that starts from the point in time the snapshot is initiated. Due to the nature of their operation snapshots are in a constant state of growth from the time they are created and the larger a snapshot becomes the longer
   delete or revert operations of the snapshot will take. If left active for an extended period of time snapshots also have the potential to completely fill the storage the machine is housed on causing many additional problems. &nbsp;In order to
-  avoid these performance issues snapshots should not be kept active longer than 10 days.&nbsp; <strong>Any snapshot active longer than 10 days WILL be removed without notice as part of our maintenance process.</strong>
+  avoid these performance issues snapshots should not be kept active longer than 10 days. <strong>Any snapshot active longer than 10 days WILL be removed without notice as part of our maintenance process.</strong>
 </p>
 
 <h3><strong>Create a snapshot of an existing server</strong></h3>

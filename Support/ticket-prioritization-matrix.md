@@ -6,8 +6,8 @@
   "contentIsHTML": true
 }}}
 
-<p>Tickets are assigned a priority and worked in order of descending priority.&nbsp; The priority designation indicates the level, extent and impact on the customer. Once assigned, the priority level is used to determine the resources allocated for
-  resolving the ticket, timelines for resolution and escalation matrix. Customers may assign the priority to tickets they create.&nbsp; &nbsp;Each incoming ticket is triaged and the priority will be assigned according to the criteria defined below.</p>
+<p>Tickets are assigned a priority and worked in order of descending priority. The priority designation indicates the level, extent and impact on the customer. Once assigned, the priority level is used to determine the resources allocated for
+  resolving the ticket, timelines for resolution and escalation matrix. Customers may assign the priority to tickets they create. &nbsp;Each incoming ticket is triaged and the priority will be assigned according to the criteria defined below.</p>
 
 Developer Support (Free)
 <table>

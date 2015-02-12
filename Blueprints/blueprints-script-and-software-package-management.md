@@ -9,7 +9,7 @@
 <p><strong>Last updated: &nbsp;2/3/2015 03:05 PST</strong>
 </p>
 Description
-<p>Software and script packages (henceforth referred to as "packages") are one way that Blueprint Designers can customize their environments.&nbsp; They can be configured to run scripts and executables or install software. The definition of a package is
+<p>Software and script packages (henceforth referred to as "packages") are one way that Blueprint Designers can customize their environments. They can be configured to run scripts and executables or install software. The definition of a package is
   also responsible for generating the UI at Blueprint deployment time to gather the requisite set of parameters from the User.</p>
 Package Format
 <p>Packages must be .zip files and contain the following:</p>
@@ -43,7 +43,7 @@ Package Format
         </p>
       </td>
       <td>
-        <p>At least one executable file must be included in the Package.&nbsp; CenturyLink Cloud supports the following executable types:</p>
+        <p>At least one executable file must be included in the Package. CenturyLink Cloud supports the following executable types:</p>
         <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Standard .exe</p>
         <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Command line scripts (anything that can be run from cmd.exe for Windows or the shell on Linux)</p>
         <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PowerShell scripts (.ps1 files)</p>
@@ -259,7 +259,7 @@ Package Format
         </p>
       </td>
       <td>
-        <p>This is a variable name which you can refer to in the execution command for your package.&nbsp; Our recommendation is that you name your variables to include your Tier 3 account alias and your Package Name (e.g. T3.install-ad.DomainName) to ensure
+        <p>This is a variable name which you can refer to in the execution command for your package. Our recommendation is that you name your variables to include your CenturyLink Cloud account alias and your Package Name (e.g. T3.install-ad.DomainName) to ensure
           that you don’t encounter any name conflicts with other scripts you’ve included in a Blueprint.</p>
       </td>
       <td>
@@ -272,7 +272,7 @@ Package Format
         </p>
       </td>
       <td>
-        <p>Additional description to communicate the meaning/use of the Parameter.&nbsp; If specified this will be displayed below the input field on the Blueprint deployment form.</p>
+        <p>Additional description to communicate the meaning/use of the Parameter. If specified this will be displayed below the input field on the Blueprint deployment form.</p>
         <p><em>Ignored if Prompt = ‘none’</em>
         </p>
       </td>

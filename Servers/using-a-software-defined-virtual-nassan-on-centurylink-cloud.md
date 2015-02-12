@@ -12,7 +12,7 @@ Using a Software-Defined Virtual NAS/SAN on CenturyLink Cloud
   for database clusters. In this knowledge base we will be using a <a href="http://www.softnas.com/" target="_blank">SoftNAS</a>&trade;&nbsp; Virtual Appliance. <a href="http://www.softnas.com/" target="_blank">SoftNAS</a>&trade; is a software-defined
   unified NAS/SAN storage solution for businesses that need powerful, frictionless and agile storage.</p>
 <h3>Supporting Information</h3>
-<p>CenturyLink Cloud provides no support for the SoftNAS&trade; virtual appliance.&nbsp; The goal of this KB is to provide a sample use case to deliver unified storage services within the parameters of the cloud platform. Customers are responsible
+<p>CenturyLink Cloud provides no support for the SoftNAS&trade; virtual appliance. The goal of this KB is to provide a sample use case to deliver unified storage services within the parameters of the cloud platform. Customers are responsible
   for configuration and sizing of the virtual appliance resources according to the vendors best practices. There are a large number of configuration options/customization's not covered in this KB and customers should read the installation guides
   provided by SoftNAS&trade;. </p>
 <h3>Security Notes</h3>

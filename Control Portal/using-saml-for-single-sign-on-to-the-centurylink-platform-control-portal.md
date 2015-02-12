@@ -1,5 +1,5 @@
 {{{
-  "title": "Using SAML for Single-Sign-On to the Tier 3 Control Portal",
+  "title": "Using SAML for Single-Sign-On to the CenturyLink Platform Control Portal",
   "date": "10-13-2014",
   "author": "Richard Seroter",
   "attachments": [],

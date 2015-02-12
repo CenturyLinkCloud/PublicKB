@@ -16,4 +16,4 @@
 <p>Hit next</p>
 <p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/3wlqvjly6tyxviq/?name=androidemailsync.png" alt="androidemailsync.png" />
 </p>
-<p>ActiveSync will be successful if your email and password were entered correctly.&nbsp; If there are any errors, go back and double check your information and try again.</p>
+<p>ActiveSync will be successful if your email and password were entered correctly. If there are any errors, go back and double check your information and try again.</p>

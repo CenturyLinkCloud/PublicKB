@@ -10,14 +10,14 @@
 
 <p><strong>Preface:</strong>
 </p>
-<p>Unlike with Windows machines, expanding a drive on Linux machines may not be the exact same process every time.&nbsp; There are many different ways a file system can be setup on a Linux machine and attempting to use the wrong method to expand a file system
+<p>Unlike with Windows machines, expanding a drive on Linux machines may not be the exact same process every time. There are many different ways a file system can be setup on a Linux machine and attempting to use the wrong method to expand a file system
   could potentially result in COMPLETE DATA LOSS. Blindly following instructions to expand a drive without understanding what you are doing can be extremely dangerous, so please take every possible precaution and if you have any doubts do not proceed
-  any further.&nbsp; <strong>This should not be looked at as a step by step guide but rather as just providing the necessary information to accomplish this task</strong>.&nbsp; Historically our Linux templates have been configured in 1 of 2 ways, standard
-  partitioning and partition-less.&nbsp; This KB will only focus on those 2 scenarios and not cover things like LVM or any other custom partitioning that a customer may have implemented.</p>
+  any further. <strong>This should not be looked at as a step by step guide but rather as just providing the necessary information to accomplish this task</strong>. Historically our Linux templates have been configured in 1 of 2 ways, standard
+  partitioning and partition-less. This KB will only focus on those 2 scenarios and not cover things like LVM or any other custom partitioning that a customer may have implemented.</p>
 <p><strong>Part 1: Identify what you are working with</strong>
 </p>
 <p>*Assume for all examples we are looking to expand the&nbsp; “/” filesystem</p>
-<p>We first need to determine which drive &amp; partition we are working with.&nbsp; Running the mount command will show you where the root “/” file system is mounted.</p>
+<p>We first need to determine which drive &amp; partition we are working with. Running the mount command will show you where the root “/” file system is mounted.</p>
 <p>First on the older images with standard partitioning:</p>
 <p>&nbsp;<img alt />
 </p>
@@ -28,7 +28,7 @@
 <p>&nbsp;<img alt />
 </p>
 <p>In this example you see that “/” is mounted on “/dev/sdc” which translates to the 3rd drive “sdc” with no partitioning on it. </p>
-<p>Comparing the two outputs the difference you should be concerned with is if the mount point contains a specific partition or not “/dev/sda1” is a specific partition on a drive vs “/dev/sdc” directly on the drive itself (partition-less).&nbsp; This would
+<p>Comparing the two outputs the difference you should be concerned with is if the mount point contains a specific partition or not “/dev/sda1” is a specific partition on a drive vs “/dev/sdc” directly on the drive itself (partition-less). This would
   apply to all mount points not just root. If you do not see a partition number after the drive it is most likely partition-less.</p>
 <p>You can further confirm the existence or lack thereof by running an fdisk command:</p>
 <p>fdisk -l</p>
@@ -74,12 +74,12 @@
 <p><strong>Part 3 Moving and Expanding drives on older (Partitioned) images</strong>
 </p>
 <p>Expanding drives on machines where partitions exist can be quite a bit more complicated as it requires you to manually edit the partition table. To complicate things further, expanding the “/” partition will require a reboot of the machine and is also
-  usually blocked from expansion by another partition (usually swap) existing directly after it on the same drive.&nbsp; Looking at our older CentOS 6 image, that is the exact case.</p>
+  usually blocked from expansion by another partition (usually swap) existing directly after it on the same drive. Looking at our older CentOS 6 image, that is the exact case.</p>
 <p><img alt />
 </p>
 
-<p>Here you can see that we want to expand /dev/sda1 but /dev/sda2 exists directly after it on the drive, so we are blocked.&nbsp; The solution here is to add an additional drive, set that drive up as the new SWAP mount, remove the old SWAP partition, and
-  then proceed with writing a new partition table for /dev/sda1 and expanding the filesystem.&nbsp; If the root drive has already been expanded previously, SWAP would have already been moved, but in most cases we will need to move it.</p>
+<p>Here you can see that we want to expand /dev/sda1 but /dev/sda2 exists directly after it on the drive, so we are blocked. The solution here is to add an additional drive, set that drive up as the new SWAP mount, remove the old SWAP partition, and
+  then proceed with writing a new partition table for /dev/sda1 and expanding the filesystem. If the root drive has already been expanded previously, SWAP would have already been moved, but in most cases we will need to move it.</p>
 <p>STEP 1. Add a new 2GB drive to use for SWAP and expand the root drive to the desired size in VMware.</p>
 <p>*SNAPSHOT THE MACHINE</p>
 <p>Detect new drive by running</p>

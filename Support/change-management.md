@@ -7,7 +7,7 @@
 }}}
 
 <p>All changes performed by CenturyLink Cloud&nbsp;will be done in compliance with the following criteria:</p>
-<p>All of the change types listed below can be performed as an emergency change where maintenance needs to be performed immediately.&nbsp; In these abnormal situations, no customer notification in required.</p>
+<p>All of the change types listed below can be performed as an emergency change where maintenance needs to be performed immediately. In these abnormal situations, no customer notification in required.</p>
 
 <table>
   <tbody>
@@ -46,7 +46,7 @@
         
       </td>
       <td>
-        <p>(48 hours in advance) Customers, Partners, and CenturyLink Cloud&nbsp;will be notified via email.&nbsp; This list will be derived from control.</p>
+        <p>(48 hours in advance) Customers, Partners, and CenturyLink Cloud&nbsp;will be notified via email. This list will be derived from control.</p>
       </td>
     </tr>
     <tr>
@@ -57,7 +57,7 @@
         <p>This category covers maintenance where a change that is going to be made will cause a noticeable outage to the customers.</p>
       </td>
       <td>
-        <p>(96 hours in advance)&nbsp; Customers, Partners, and CenturyLink Cloud&nbsp;will be notified via email.&nbsp; This list will be derived from control.</p>
+        <p>(96 hours in advance)&nbsp; Customers, Partners, and CenturyLink Cloud&nbsp;will be notified via email. This list will be derived from control.</p>
       </td>
     </tr>
   </tbody>

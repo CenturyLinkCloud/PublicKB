@@ -27,7 +27,7 @@
     <br />
     <br />
   </li>
-  <li>Fill out information about company size, and a description that would help the user of the blueprint quickly understand the purpose of the blueprint.&nbsp; Lastly add in some information about the capabilities of the blueprint.&nbsp; All these items
+  <li>Fill out information about company size, and a description that would help the user of the blueprint quickly understand the purpose of the blueprint. Lastly add in some information about the capabilities of the blueprint. All these items
     help in searching for a blueprint later on.
     <br /><img src="https://t3n.zendesk.com/attachments/token/aHB8ZMcVEbFuOopLnKr4BrnSY/?name=Screen+Shot+2014-12-02+at+2.09.53+PM.png" alt="Screen_Shot_2014-12-02_at_2.09.53_PM.png" />
   </li>
@@ -36,7 +36,7 @@
 <div><strong>&nbsp;</strong>
 </div>
 <div><strong>3. Define Servers </strong>(optional)</div>
-<div>In this screen, define the servers that are needed to support the blueprint.&nbsp; Servers do NOT have to be defined as a blueprint could consist solely of configuration against an existing environment.</div>
+<div>In this screen, define the servers that are needed to support the blueprint. Servers do NOT have to be defined as a blueprint could consist solely of configuration against an existing environment.</div>
 <div>
   <ul>
     <li>Select "Add Server" option.
@@ -48,7 +48,7 @@
     <li>Lastly any additional task(s) can be assigned. The tasks include and not limited to adding disks, network interfaces or even public ip mappings in addition to rebooting servers.&nbsp;
       <br /><img src="https://t3n.zendesk.com/attachments/token/VX7qBbETYXhdeYqYL7Hrpx5le/?name=Screen+Shot+2014-12-02+at+2.15.47+PM.png" alt="Screen_Shot_2014-12-02_at_2.15.47_PM.png" />
     </li>
-    <li>Additional software and scripts can be installed as well; the selection can be from publicly available software packages all the way to private software packages that are unique to the customer.&nbsp; If any of the software packages require any parameters,
+    <li>Additional software and scripts can be installed as well; the selection can be from publicly available software packages all the way to private software packages that are unique to the customer. If any of the software packages require any parameters,
       you will be prompted to enter in values.In addition to software packages, scripts can also be run against the server. <img src="https://t3n.zendesk.com/attachments/token/WaFm6NAeFWw87X12iYpWooN7k/?name=Screen+Shot+2014-12-02+at+2.16.57+PM.png"
       alt="Screen_Shot_2014-12-02_at_2.16.57_PM.png" />
     </li>
@@ -62,7 +62,7 @@
   <div></div>
   <div><strong>4. Add an Existing Blueprint to this Blueprint</strong>
   </div>
-  <div>During this step the option is available to call other blueprint from the one being designed.&nbsp; This feature greatly helps in giving the ability to treat blueprints as components and be able to be put together in a highly customizable way.</div>
+  <div>During this step the option is available to call other blueprint from the one being designed. This feature greatly helps in giving the ability to treat blueprints as components and be able to be put together in a highly customizable way.</div>
   <div>
     <ul>
       <li>On the third step of the Blueprint Designer, choose the "Add Blueprint" button.
@@ -76,7 +76,7 @@
     </div>
     <div><strong>5. Publish the Blueprint</strong>
     </div>
-    <div>This step allows you to review the blueprint configuration and make any last minute changes before it is published with the associated privacy attributes.&nbsp; The publishing mechanism submits the blueprint for an automated review by the build system.&nbsp;
+    <div>This step allows you to review the blueprint configuration and make any last minute changes before it is published with the associated privacy attributes. The publishing mechanism submits the blueprint for an automated review by the build system.&nbsp;
       Any inconsistencies are flagged and the publishing processes will error out if exceptions are encountered.</div>
     <div><img src="https://t3n.zendesk.com/attachments/token/IdQTXrZERierunNjQWPtGjLZz/?name=Screen+Shot+2014-12-02+at+2.24.27+PM.png" alt="Screen_Shot_2014-12-02_at_2.24.27_PM.png" />
     </div>
@@ -85,7 +85,7 @@
     </div>
     <div><strong>6. Locate Published Blueprint</strong>
     </div>
-    <div>Upon successful publication process, the blueprint will show up on the main blueprint dashboard.&nbsp; This dashboard by default will show all of blueprints that are available to be deployed by the user in the specific account.&nbsp; Additionally,
+    <div>Upon successful publication process, the blueprint will show up on the main blueprint dashboard. This dashboard by default will show all of blueprints that are available to be deployed by the user in the specific account. Additionally,
       filtration criterion like author, size of company and operating system, can be applied to trim the displayed blueprints. These filterable components are on the right side of the screen.</div>
     <div><img src="https://t3n.zendesk.com/attachments/token/xNLLJRIY21vg5yEohMgkeYy22/?name=Screen+Shot+2014-12-02+at+2.25.56+PM.png" alt="Screen_Shot_2014-12-02_at_2.25.56_PM.png" />
     </div>
