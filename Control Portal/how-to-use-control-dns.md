@@ -14,7 +14,7 @@
 </ul>
 <h3>Prerequisites</h3>
 <p>Must have Account Admin permissions</p>
-<p>In order for this DNS zone to be utilized, you must update your Name Server records with your Domain Registrar. &nbsp;See&nbsp;<a href="#ComRef">Name Servers</a>
+<p>In order for this DNS zone to be utilized, you must update your Name Server records with your Domain Registrar. See&nbsp;<a href="#ComRef">Name Servers</a>
 </p>
 
 <h3>Creating a DNS Zone</h3>

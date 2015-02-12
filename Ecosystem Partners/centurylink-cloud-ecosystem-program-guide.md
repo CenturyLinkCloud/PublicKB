@@ -9,7 +9,7 @@
 <p>Updated: January 5, 2015</p>
 <p><strong>Description</strong></p>
 <p>This Cloud Ecosystem Program Guide is designed to outline the process expectations for technology companies seeking to integrate their products and services with CenturyLink Cloud.&nbsp; This article superceds the static document most recently titled
-  “Ecosystem Partner Program Guide CLEAN FINAL v2.1 7-14-14.pdf” which had been circulated to partners during Q2 and Q3 of 2014. &nbsp;Partners who enter this program and meet the certification requirements will be eligible to have their deployable technology
+  “Ecosystem Partner Program Guide CLEAN FINAL v2.1 7-14-14.pdf” which had been circulated to partners during Q2 and Q3 of 2014. Partners who enter this program and meet the certification requirements will be eligible to have their deployable technology
   listed in the CenturyLink Cloud Marketplace launching in early 2015.</p>
 <p><strong>Audience</strong></p>
 <ul>
@@ -131,7 +131,7 @@
 <ul>
   <li>Members are responsible for providing 24x7 (email &amp; telephone) customer support for their product.</li>
   <li>
-    <p>By default, all Members will receive support from CenturyLink at the 'Developer' support tier. &nbsp;Please see <a href="https://t3n.zendesk.com/entries/21651149-Ticket-Prioritization-Matrix">this matrix for support details</a>. &nbsp;Ecosystem Members
+    <p>By default, all Members will receive support from CenturyLink at the 'Developer' support tier. Please see <a href="https://t3n.zendesk.com/entries/21651149-Ticket-Prioritization-Matrix">this matrix for support details</a>. Ecosystem Members
       may upgrade their level of support at any time. Professional-level of support can be requested via a NOC ticket and Enterprise-level support can be upgraded by requesting a quote for a Dedicated Service Engineer.</p>
   </li>
 </ul>

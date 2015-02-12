@@ -117,7 +117,7 @@
   </ul>
 </ol>
 <p><strong>Pricing</strong></p>
-<p>The costs listed above in Steps 1 and 2 are for the CenturyLink Cloud infrastructure only. &nbsp;There are no CloudMine license costs or additional fees bundled in.</p>
+<p>The costs listed above in Steps 1 and 2 are for the CenturyLink Cloud infrastructure only. There are no CloudMine license costs or additional fees bundled in.</p>
 <p>After deploying this Blueprint, the user can secure entitlements to the CloudMine technology by using the following steps:</p>
 <ul>
   <li>Contact CloudMine via telephone: (855) 662-7722</li>

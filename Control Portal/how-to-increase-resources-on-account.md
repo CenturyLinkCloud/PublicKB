@@ -10,7 +10,7 @@
 <p>CenturyLink Cloud accounts start with a pre-defined resource (CPU/memory/storage) limit per data center. As customers grow their cloud usage, it's common to request an increase in resource limits.&nbsp; &nbsp;Note that only paying customers will have
   their resource limits increased unless executive approval is given.</p>
 <h3>&nbsp;Detailed Steps</h3>
-<p>1. &nbsp;You get an error in the upper right hand corner of Control indicating lack of resources (CPU, Memory, Storage) when you are building a new machine.</p>
+<p>1. You get an error in the upper right hand corner of Control indicating lack of resources (CPU, Memory, Storage) when you are building a new machine.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/lXSL4VPNW8yC7wRFVPzLhh5kE/?name=CPUExceeded.PNG" alt="CPUExceeded.PNG" />
 </p>
 <p>2. Please contact support on Chat or by emailing&nbsp;noc@t3n.zendesk.com</p>

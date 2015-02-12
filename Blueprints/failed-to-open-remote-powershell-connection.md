@@ -26,7 +26,7 @@
 <p>...</p>
 <p>[/STACKTRACE]</p>
 <h3>How to Resolve</h3>
-<p>While PowerShell based blueprints fail, command based blueprints will not. &nbsp;There is a public script package that contains the necessary commands properly configure WinRM. &nbsp;The package is called&nbsp;<em>Enable Powershell 2.0 Remoting</em>. From the g<em>roup tasks</em> dropdown on the Group information page you can choose to <em>execute script</em>, then find the script to execute, and apply it to the necessary machines.</p>
+<p>While PowerShell based blueprints fail, command based blueprints will not. There is a public script package that contains the necessary commands properly configure WinRM. The package is called&nbsp;<em>Enable Powershell 2.0 Remoting</em>. From the g<em>roup tasks</em> dropdown on the Group information page you can choose to <em>execute script</em>, then find the script to execute, and apply it to the necessary machines.</p>
 <h3>Detailed Steps</h3>
 <ol>
   <li>Navigate to the group details page that contains the server(s) you need to fix</li>

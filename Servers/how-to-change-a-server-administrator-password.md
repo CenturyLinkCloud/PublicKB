@@ -22,7 +22,7 @@
 <p><img src="https://t3n.zendesk.com/attachments/token/GW8PgekfbySURoDbb1tCjIy8T/?name=Screen+Shot+2014-10-16+at+11.03.10+AM.png" alt="Screen_Shot_2014-10-16_at_11.03.10_AM.png" />
 </p>
 
-<p>This takes you to the Server Settings page where you can change the server admin/root password. Click on the "password" field. &nbsp;You must enter the old admin/root password in order to change to a new password.</p>
+<p>This takes you to the Server Settings page where you can change the server admin/root password. Click on the "password" field. You must enter the old admin/root password in order to change to a new password.</p>
 <p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/ShEf6tn51ulDzWeYgXCFb5jjO/?name=Screen+Shot+2014-10-16+at+11.04.38+AM.png" alt="Screen_Shot_2014-10-16_at_11.04.38_AM.png" />
 </p>
 

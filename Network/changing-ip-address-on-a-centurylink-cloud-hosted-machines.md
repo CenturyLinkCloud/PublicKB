@@ -55,8 +55,8 @@
     </ol>
   </ol>
 </ol>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2. &nbsp;Self-servicing the change on the server and allowing the Cloud engineer to perform the updates to Control.</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. &nbsp;Include the gathered information from step 1 and send mail to noc@tier3.com with subject line <strong>"IP change request (Control update only)"</strong>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2. Self-servicing the change on the server and allowing the Cloud engineer to perform the updates to Control.</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. Include the gathered information from step 1 and send mail to noc@tier3.com with subject line <strong>"IP change request (Control update only)"</strong>
 </p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2, &nbsp;Please obtain a valid free IP from the network page and configure on the server manually. <strong>CAUTION:</strong> &nbsp;<strong>&nbsp;This will only be applicable for IPs on the same subnet, changing the server IP address to a different network vlan will cause the server to go offline and requires a Cloud engineer to resolve!</strong>
 </p>

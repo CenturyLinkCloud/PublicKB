@@ -18,17 +18,17 @@
   <li>Must have Account Administrator permissions on the platform</li>
 </ul>
 <h3>Detailed Steps</h3>
-<p>1. &nbsp;Locate the "Load Balancer" menu on the Services tab of the Control Portal.</p>
+<p>1. Locate the "Load Balancer" menu on the Services tab of the Control Portal.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/jFTfM26U2xv0P4TCAIYVPh9S6/?name=01.png" alt="01.png" />
 </p>
-<p>2. &nbsp;Select the appropriate Data Center.</p>
+<p>2. Select the appropriate Data Center.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/8LWLtzq0adgJ4GPLXphkQQ7AH/?name=02.png" alt="02.png" />
 </p>
-<p>3. &nbsp;Click the button labeled <strong>Create load balancer group</strong>. &nbsp;A "group" is comprised of a VIP (virtual IP) and a set of servers grouped by pools (i.e. access ports). &nbsp;Provide a friendly name and description for your new group
+<p>3. Click the button labeled <strong>Create load balancer group</strong>. A "group" is comprised of a VIP (virtual IP) and a set of servers grouped by pools (i.e. access ports). Provide a friendly name and description for your new group
   and select <strong>Create</strong>.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/i2D4Dx6rLxOAuQ0k80AjBqBua/?name=03.png" alt="03.png" />
 </p>
-<p>4. &nbsp;After clicking the "create" button the pool configuration dialog box will appear. &nbsp;<strong> TIP: &nbsp;The public VIP for this load balancer pool is present at the top next to the name you provided the configuration</strong>. &nbsp;Proceed
+<p>4. After clicking the "create" button the pool configuration dialog box will appear. <strong> TIP: &nbsp;The public VIP for this load balancer pool is present at the top next to the name you provided the configuration</strong>. Proceed
   to Configure your pools.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/I2jQbSa1No0BU5sC6S2wRV7LM/?name=04.png" alt="04.png" />
 </p>
@@ -63,11 +63,11 @@
 <p><img src="https://t3n.zendesk.com/attachments/token/3xkVQ2JpuljDq9BPhL0nrQ0jf/?name=08.png" alt="08.png" />
 </p>
 
-<p>5. &nbsp;Click the "save" button to commit this configuration to the device. View the configuration overview that shows the VIP, name, description, and pool settings.</p>
+<p>5. Click the "save" button to commit this configuration to the device. View the configuration overview that shows the VIP, name, description, and pool settings.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/9YtA5y6vwWMfovdRTeHAVXfjj/?name=09.png" alt="09.png" />
 </p>
 <p>
-  <br />6. &nbsp;Test the load balancer by deploying a web application on multiple servers and observing the configured behavior.</p>
+  <br />6. Test the load balancer by deploying a web application on multiple servers and observing the configured behavior.</p>
 <p>&nbsp;</p>
 <h3>FAQ's</h3>
 <p>Q: &nbsp;What algorithm does Sticky use?</p>

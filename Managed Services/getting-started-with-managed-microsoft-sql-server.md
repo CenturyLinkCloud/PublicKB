@@ -8,10 +8,10 @@
 
 <p>The Microsoft SQL Server (MS-SQL) database is a comprehensive and integrated data management and analysis software application that enables the reliable management of mission-critical information.</p>
 <p>Here's how to create a managed MS SQL environment in CenturyLink Cloud.</p>
-<p><strong>1.&nbsp;</strong>Search for the "MS SQL" in the Blueprint library. &nbsp;Then, click on the “CLC Managed MS SQL” Blueprint.</p>
+<p><strong>1.&nbsp;</strong>Search for the "MS SQL" in the Blueprint library. Then, click on the “CLC Managed MS SQL” Blueprint.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/PYtc3AftHQdmEpzapAaHmqt4Y/?name=Summary.jpg" alt="Summary.jpg" />
 </p>
-<p><strong>2.</strong> Click on the deploy blueprint button.&nbsp;<strong>NOTE: The costs included in the Blueprint do not include licenses fees, only managed services fees. &nbsp;Also, before you can deploy Managed MS SQL, you must create a Managed Windows server.</strong>
+<p><strong>2.</strong> Click on the deploy blueprint button.&nbsp;<strong>NOTE: The costs included in the Blueprint do not include licenses fees, only managed services fees. Also, before you can deploy Managed MS SQL, you must create a Managed Windows server.</strong>
 </p>
 <p><strong><img src="https://t3n.zendesk.com/attachments/token/Z7Kh5cXfh6uaeo87rmD4rYZ2u/?name=Detail.jpg" alt="Detail.jpg" /></strong>
 </p>

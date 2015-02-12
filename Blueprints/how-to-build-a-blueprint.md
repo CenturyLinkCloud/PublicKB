@@ -49,7 +49,7 @@
       <br /><img src="https://t3n.zendesk.com/attachments/token/VX7qBbETYXhdeYqYL7Hrpx5le/?name=Screen+Shot+2014-12-02+at+2.15.47+PM.png" alt="Screen_Shot_2014-12-02_at_2.15.47_PM.png" />
     </li>
     <li>Additional software and scripts can be installed as well; the selection can be from publicly available software packages all the way to private software packages that are unique to the customer.&nbsp; If any of the software packages require any parameters,
-      you will be prompted to enter in values.In addition to software packages, scripts can also be run against the server. &nbsp;<img src="https://t3n.zendesk.com/attachments/token/WaFm6NAeFWw87X12iYpWooN7k/?name=Screen+Shot+2014-12-02+at+2.16.57+PM.png"
+      you will be prompted to enter in values.In addition to software packages, scripts can also be run against the server. <img src="https://t3n.zendesk.com/attachments/token/WaFm6NAeFWw87X12iYpWooN7k/?name=Screen+Shot+2014-12-02+at+2.16.57+PM.png"
       alt="Screen_Shot_2014-12-02_at_2.16.57_PM.png" />
     </li>
     <li>Once all the software, tasks and scripts have been selected, they can be arranged to the required execution order.
@@ -68,7 +68,7 @@
       <li>On the third step of the Blueprint Designer, choose the "Add Blueprint" button.
         <br /><img src="https://t3n.zendesk.com/attachments/token/Mf07Cz4lA0q1qymCkDRDWLdaL/?name=Screen+Shot+2014-12-02+at+2.21.47+PM.png" alt="Screen_Shot_2014-12-02_at_2.21.47_PM.png" />
       </li>
-      <li>Select an existing blueprint nest into what you're currently creating. &nbsp;This modular design allows for easy re-use and nesting means no duplication definitions to maintain across your service catalog.
+      <li>Select an existing blueprint nest into what you're currently creating. This modular design allows for easy re-use and nesting means no duplication definitions to maintain across your service catalog.
         <br /><img src="https://t3n.zendesk.com/attachments/token/vVLVEuXFfd9UMdGXV70EWDCKw/?name=Screen+Shot+2014-12-02+at+2.22.42+PM.png" alt="Screen_Shot_2014-12-02_at_2.22.42_PM.png" />
       </li>
     </ul>
@@ -86,7 +86,7 @@
     <div><strong>6. Locate Published Blueprint</strong>
     </div>
     <div>Upon successful publication process, the blueprint will show up on the main blueprint dashboard.&nbsp; This dashboard by default will show all of blueprints that are available to be deployed by the user in the specific account.&nbsp; Additionally,
-      filtration criterion like author, size of company and operating system, can be applied to trim the displayed blueprints. &nbsp;These filterable components are on the right side of the screen.</div>
+      filtration criterion like author, size of company and operating system, can be applied to trim the displayed blueprints. These filterable components are on the right side of the screen.</div>
     <div><img src="https://t3n.zendesk.com/attachments/token/xNLLJRIY21vg5yEohMgkeYy22/?name=Screen+Shot+2014-12-02+at+2.25.56+PM.png" alt="Screen_Shot_2014-12-02_at_2.25.56_PM.png" />
     </div>
   </div>

@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>You may notice that your Exchange mailbox server[s] have maxed out available memory (85%+). &nbsp;It is completely normal for this to happen. &nbsp;The Exchange process store.exe will show most of the available memory allocated to it in task manager.
+<p>You may notice that your Exchange mailbox server[s] have maxed out available memory (85%+). It is completely normal for this to happen. The Exchange process store.exe will show most of the available memory allocated to it in task manager.
   &nbsp;This is in order to allocate as much data in memory address space as possible, so that each user experiences great performance in their Outlook clients.&nbsp;
   <br />
   <br />If another process should need the more memory, the Exchange store.exe process will released it as required. <strong>This is by design.</strong>

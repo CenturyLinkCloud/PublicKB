@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>One of the benefits of the cloud is that customer do not have to worry about the hardware/ architecture layer that is underneath the platform. &nbsp;This being said, we do understand that customer are very interested in what hardware is being used and
+<p>One of the benefits of the cloud is that customer do not have to worry about the hardware/ architecture layer that is underneath the platform. This being said, we do understand that customer are very interested in what hardware is being used and
   what the architecture looks like that supports the cloud infrastructure. </p>
 <h3>Audience</h3>
 <ul>
@@ -14,7 +14,7 @@
 </ul>
 <h3>The Architecture</h3>
 <ol>
-  <li>The cloud enables customers to achieve a level of agility that is normally not possible with traditional IT organizations. &nbsp;As such it is important that we are reviewing improving the architecture in order to leverage technology improvements. &nbsp;</li>
+  <li>The cloud enables customers to achieve a level of agility that is normally not possible with traditional IT organizations. As such it is important that we are reviewing improving the architecture in order to leverage technology improvements. </li>
   <li>The current architecture version that is being deployed is version 4.</li>
 </ol>
 <div>
@@ -32,13 +32,13 @@
 <div>A. In order to ensure that the customer server is receiving the best possible experience, the cloud platform as part of it's design does move&nbsp;servers to other hosts or storage.&nbsp;&nbsp;As such, it is not possible for customers to select the hardware
   that is powering the cloud.</div>
 <div></div>
-<div><em>Q. &nbsp;Can I connect my cloud servers to physical equipment located in other data centers?</em>
-  <br />A. &nbsp;If there is layer 3 IP connectivity, it is possible to connect to your equipment&nbsp;located&nbsp;in CenturyLink&nbsp;data centers. &nbsp;Please contact your account management team to enable this connectivity. &nbsp;</div>
+<div><em>Q. Can I connect my cloud servers to physical equipment located in other data centers?</em>
+  <br />A. If there is layer 3 IP connectivity, it is possible to connect to your equipment&nbsp;located&nbsp;in CenturyLink&nbsp;data centers. Please contact your account management team to enable this connectivity. </div>
 <div></div>
-<div><em>Q. &nbsp;Is it possible to be notified when the architecture is changed?</em>
+<div><em>Q. Is it possible to be notified when the architecture is changed?</em>
 </div>
-<div>A. &nbsp;Currently we do not provide this option.</div>
+<div>A. Currently we do not provide this option.</div>
 <div></div>
-<div><em>Q. &nbsp;If I would like the cloud to use hardware provided by a specific vendor, how do I achieve this?</em>
+<div><em>Q. If I would like the cloud to use hardware provided by a specific vendor, how do I achieve this?</em>
 </div>
-<div>A. &nbsp;We select our hardware on a best-of-breed principle.</div>
+<div>A. We select our hardware on a best-of-breed principle.</div>

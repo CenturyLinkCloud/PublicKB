@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description</h3>
-<p>CenturyLink Cloud offers customers a choice of shared or dedicated load balancing services delivered using Citrix Netscaler VPX devices. &nbsp;The matrix below provides a high level comparison of the two offerings allowing customers to make informed decisions
+<p>CenturyLink Cloud offers customers a choice of shared or dedicated load balancing services delivered using Citrix Netscaler VPX devices. The matrix below provides a high level comparison of the two offerings allowing customers to make informed decisions
   on their <strong>Layer 4</strong> load balancing solution.</p>
 <h3><img src="https://t3n.zendesk.com/attachments/token/v1eqBILwtFaY6yKzEYcvFsCiH/?name=load+balancing+chart.png" alt="load_balancing_chart.png" /></h3>
 <h3>Additional Details</h3>

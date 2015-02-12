@@ -29,8 +29,8 @@ Impact
 </p>
 <p>&nbsp; &nbsp; &nbsp;<strong>To verify version via CLI:</strong>
 </p>
-<p>&nbsp; &nbsp; &nbsp;1. &nbsp; &nbsp;Open Cmd
-  <br />&nbsp; &nbsp; &nbsp;2. &nbsp; &nbsp;Enter the following:</p>
+<p>&nbsp; &nbsp; &nbsp;1.  &nbsp;Open Cmd
+  <br />&nbsp; &nbsp; &nbsp;2.  &nbsp;Enter the following:</p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'C:\Program Files\openvpn\bin\openvpn.exe' –version</p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="https://t3n.zendesk.com/attachments/token/dNpUJZUr3w3AWVWJVIIE3iy8I/?name=version_cli.png" alt="version_cli.png" />
 </p>

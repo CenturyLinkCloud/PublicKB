@@ -35,7 +35,7 @@
 <div></div>
 <p><strong>Q: Do I need to replicate my data between data centers?</strong>
 </p>
-<p><strong>A</strong>: No. Objects uploaded to Object Storage are automatically replicated between data centers in a given region. &nbsp;Object Storage is accessed through a domain that is geo-aware and will route you to the closest data center that has
+<p><strong>A</strong>: No. Objects uploaded to Object Storage are automatically replicated between data centers in a given region. Object Storage is accessed through a domain that is geo-aware and will route you to the closest data center that has
   your data.</p>
 <div></div>
 <p><strong>Q: How available is my data within a given data center?</strong>

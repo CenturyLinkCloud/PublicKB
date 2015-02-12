@@ -8,9 +8,9 @@
 
 <p>Internet Information Services (IIS) for Windows&reg; Server is a flexible, secure and manageable Web server for hosting anything on the Web. From media streaming to web applications, IIS's scalable and open architecture is ready to handle the most demanding
   tasks. MS-IIS Web server application offers a reliable, high performance, and secure vehicle for delivering HTTP content to end users.</p>
-<p>&nbsp;Here's how to create a managed IIS environment in CenturyLink Cloud. &nbsp;<strong>NOTE: Before you can deploy Managed Microsoft IIS, you must create a Managed Windows server.</strong>
+<p>&nbsp;Here's how to create a managed IIS environment in CenturyLink Cloud. <strong>NOTE: Before you can deploy Managed Microsoft IIS, you must create a Managed Windows server.</strong>
 </p>
-<p><strong>1. Navigate to the Blueprints library, and search for IIS. &nbsp;Then, click on the “CLC Managed MS IIS” Blueprint.</strong>
+<p><strong>1. Navigate to the Blueprints library, and search for IIS. Then, click on the “CLC Managed MS IIS” Blueprint.</strong>
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/MK7x7CMCYckPkZWt5h8pB492m/?name=Blueprint.jpg" alt="Blueprint.jpg" />
 </p>
@@ -19,7 +19,7 @@
 <p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/m1ncTXjaAyDpvPCd7wyrYgSnV/?name=BP_Overview.png" alt="BP_Overview.png" /></p>
 <p><strong>3. Fill out the appropriate details for the CLC Managed MS IIS Blueprint, and click "Next".</strong>
 </p>
-<p><strong>**NOTE** Please choose the same server for both the Installation and Registration of Managed MS IIS. &nbsp;The server must have Managed Windows installed, otherwise the Blueprint will fail.</strong>
+<p><strong>**NOTE** Please choose the same server for both the Installation and Registration of Managed MS IIS. The server must have Managed Windows installed, otherwise the Blueprint will fail.</strong>
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/zMcSjJskKnthuD5Aus7CrpbWC/?name=Config.jpg" alt="Config.jpg" />
 </p>

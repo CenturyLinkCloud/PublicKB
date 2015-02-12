@@ -33,11 +33,11 @@
 }}}
 
 Building Windows 2012 Script Packages
-<p>In order to facilitate knowledge of the CenturyLink Cloud platform this article will provide sample scripts for use on Windows 2012 Virtual Machines. &nbsp;Detailed information on script and software package management can be found in <a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management"
+<p>In order to facilitate knowledge of the CenturyLink Cloud platform this article will provide sample scripts for use on Windows 2012 Virtual Machines. Detailed information on script and software package management can be found in <a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management"
   target="_blank">this KB</a>. </p>
 <h3>Important Tools</h3>
 <ul>
-  <li><a href="http://www.somacon.com/p113.php" target="_blank">GUID Generator</a>; &nbsp;Each package.manifest created and uploaded must contain a unique UUID. &nbsp;This tools provides a way to quickly generate a new one for each package built. &nbsp;<strong>Users must change the GUID on each package posted below</strong>.</li>
+  <li><a href="http://www.somacon.com/p113.php" target="_blank">GUID Generator</a>; &nbsp;Each package.manifest created and uploaded must contain a unique UUID. This tools provides a way to quickly generate a new one for each package built. <strong>Users must change the GUID on each package posted below</strong>.</li>
   <li><a href="http://geekswithblogs.net/Wchrabaszcz/archive/2013/09/04/how-to-install-windows-server-features-using-powershell--server.aspx" target="_blank">Windows 2012 Roles</a>&nbsp;</li>
 </ul>
 <h3>Support Information</h3>
@@ -108,7 +108,7 @@ Building Windows 2012 Script Packages
 <p>Import-Module ServerManager
   <br />Install-WindowsFeature -Name Web-Ftp-Server -IncludeManagementTools -IncludeAllSubFeature</p>
 <h3>Install Windows 2012 Domain Services &amp; Create new Forest</h3>
-<p>This sample package installs&nbsp;Active Directory Domain Services, DNS and promotes the VM to a Domain Controller. &nbsp;This script is designed to create the first DC in a new forest. </p>
+<p>This sample package installs&nbsp;Active Directory Domain Services, DNS and promotes the VM to a Domain Controller. This script is designed to create the first DC in a new forest. </p>
 <p><strong>package.manifest</strong>
 </p>
 <p>&lt;?xml version="1.0" encoding="utf-8"?&gt;
@@ -141,7 +141,7 @@ Building Windows 2012 Script Packages
 <p>$safepass = ConvertTo-SecureString -AsPlainText -String $pass -Force
   <br />Install-ADDSForest -DomainName $domainName -DomainMode Win2012 -ForestMode Win2012 -SafeModeAdministratorPassword $safepass -SysVolPath C:\Windows\SYSVOL -DatabasePath C:\Windows\NTDS -LogPath C:\Windows\NTDS -InstallDNS -Force</p>
 <h3>Perform Active Directory Domain Join on Windows</h3>
-<p>This sample package joins a virtual machine to Active Directory. &nbsp;Note: &nbsp;This is functional for Windows 2008 R2.</p>
+<p>This sample package joins a virtual machine to Active Directory. Note: &nbsp;This is functional for Windows 2008 R2.</p>
 <p><strong>package.manifest</strong>
 </p>
 <p>&lt;?xml version="1.0" encoding="utf-8"?&gt;

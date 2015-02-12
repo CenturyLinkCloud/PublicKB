@@ -16,7 +16,7 @@
 <ul>
   <li>Must have a username and password for https://t3n.zendesk.com</li>
   <ul>
-    <li>Note that the first time you submit a ticket via email, you will get a <em>Welcome</em> response asking you to register. &nbsp;If you don't register you can use the forgot password workflow to reset your password via email.</li>
+    <li>Note that the first time you submit a ticket via email, you will get a <em>Welcome</em> response asking you to register. If you don't register you can use the forgot password workflow to reset your password via email.</li>
   </ul>
 </ul>
 <h3>Additional Resources</h3>
@@ -29,7 +29,7 @@
 <p>From the menu across the top you can select to submit a request or check your existing requests.</p>
 <p><em>Submitting a new request</em>
 </p>
-<p>Submitting a request is fairly straight forward... simply enter the subject and description, then hit Submit. &nbsp;Note that you can also submit requests via email to noc@tier3.com.</p>
+<p>Submitting a request is fairly straight forward... simply enter the subject and description, then hit Submit. Note that you can also submit requests via email to noc@tier3.com.</p>
 <p><em>Checking on existing requests</em>
 </p>
 <p>From the "check your existing requests" section, click on the ticket you wish to see more information about.</p>

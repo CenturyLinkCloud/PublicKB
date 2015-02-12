@@ -18,7 +18,7 @@
   </a>
 </p>
 <p>By default, VSS is disabled. Click the “Enable” button to begin- an information dialog box will appear, to continue enabling VSS, select the “Yes” option. It is important to heed the warning presented by Microsoft, echoing the use cases outlined in this
-  introduction of this article: <strong>“The default settings are not appropriate for servers that have high I/O load. For heavily used servers, you should manually configure shadow copies and place the storage area on a volume that will not be shadow copied”. &nbsp;</strong>Again,
+  introduction of this article: <strong>“The default settings are not appropriate for servers that have high I/O load. For heavily used servers, you should manually configure shadow copies and place the storage area on a volume that will not be shadow copied”. </strong>Again,
   if you require a backup solution for a high-performance server, The CenturyLink Cloud's Solution Architects can assist you in designing an appropriate backup solution.</p>
 
 <p>Once you have clicked “Yes”, you will see a time stamp noting the first successful shadow copy. By clicking the “Settings” button, you can configure both the storage limits as well as the snapshot schedule- the default configuration does not have a storage

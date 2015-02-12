@@ -6,9 +6,9 @@
   "contentIsHTML": true
 }}}
 
-<p>Apache Tomcat is an open source software implementation of the Java Servlet and JavaServer Pages technologies. As a collaboration of best-of-breed developers from around the world, Apache Tomcat has rapidly become one of the leading Web servers. &nbsp;Here's
+<p>Apache Tomcat is an open source software implementation of the Java Servlet and JavaServer Pages technologies. As a collaboration of best-of-breed developers from around the world, Apache Tomcat has rapidly become one of the leading Web servers. Here's
   how to create a managed Tomcat environment in CenturyLink Cloud.</p>
-<p><strong>1. Click on the “CLC Managed Apache Tomcat” Blueprint. &nbsp;<strong>NOTE: Before you can deploy Managed Tomcat, you must create a Managed Red Hat server.</strong></strong>
+<p><strong>1. Click on the “CLC Managed Apache Tomcat” Blueprint. <strong>NOTE: Before you can deploy Managed Tomcat, you must create a Managed Red Hat server.</strong></strong>
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/0mnoFcduDqW2Q8csh3CG1CafP/?name=BP.jpg" alt="BP.jpg" />
 </p>
@@ -17,7 +17,7 @@
 <p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/VPcBGcrYCE170ILRDTGJHUFGr/?name=Deploy.jpg" alt="Deploy.jpg" /></p>
 <p><strong>3. Fill out the appropriate details for the CLC Managed Apache Tomcat Blueprint.</strong>
 </p>
-<p><strong>**NOTE** Please choose the same server for both the Installation and Registration of Managed Apache Tomcat. &nbsp;This server must have Managed Red Hat installed, otherwise the Blueprint will fail.</strong>
+<p><strong>**NOTE** Please choose the same server for both the Installation and Registration of Managed Apache Tomcat. This server must have Managed Red Hat installed, otherwise the Blueprint will fail.</strong>
 </p>
 <p>Ensure that the appropriate services that are included within Apache Tomcat are installed i.e., Tomcat v6, Tomcat v7</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/xNqSoYrP7HOmsMapUnJEMkL1l/?name=Step1.jpg" alt="Step1.jpg" />

@@ -181,7 +181,7 @@
 <ol>
   <li>You have reached your max concurrent sessions available for your OpenVPN connection.&nbsp; Go to: <a href="https://control.tier3.com/Net/Vpn">https://control.tier3.com/Net/Vpn</a> and select Edit VPN Settings.&nbsp; Increase the Max connections and
     try again.</li>
-  <li>Your Windows Firewall is blocking the required port.&nbsp; Try to disable your firewall and connect again.&nbsp; If you don’t want to disable your firewall, you can open the required Inbound/Outbound ports. &nbsp;Your remote ports are unique.&nbsp;
+  <li>Your Windows Firewall is blocking the required port.&nbsp; Try to disable your firewall and connect again.&nbsp; If you don’t want to disable your firewall, you can open the required Inbound/Outbound ports. Your remote ports are unique.&nbsp;
     You will need to email <a href="mailto:noc@tier3.com">noc@tier3.com</a> and ask what ports your OpenVPN uses or see the bullet below.&nbsp;</li>
   <li>Your physical Firewall is blocking the required port.&nbsp; (Firewall, Router, etc)&nbsp; Check with your network administrator.&nbsp;&nbsp; You can tell him/her this:&nbsp; “In order for OpenVPN to be able to connect to Tier 3, Outbound TCP and UDP
     port xyz to be opened(email&nbsp; <a href="mailto:noc@tier3.com">noc@tier3.com</a> for your OpenVPN port or see the bullet below)”
@@ -190,7 +190,7 @@
   </li>
 </ol>
 <ul>
-  <li>You can find your OpenVPN port by going to your Program Files(x86)/OpenVPN/config/VpnName and opening your VpnName.ovpn file with notepad or a similar editor. &nbsp;The proto = protocol (tcp or udp), and the last number on the remote line is the port
+  <li>You can find your OpenVPN port by going to your Program Files(x86)/OpenVPN/config/VpnName and opening your VpnName.ovpn file with notepad or a similar editor. The proto = protocol (tcp or udp), and the last number on the remote line is the port
     it uses) &nbsp;Example UDP 1194</li>
 </ul>
 

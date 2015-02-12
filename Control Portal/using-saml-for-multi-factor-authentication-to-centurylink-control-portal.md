@@ -77,7 +77,7 @@ Steps
     target="_self">Creating Users</a>.)
     <br /><img src="https://t3n.zendesk.com/attachments/token/rtsHZoBs57Vj4NcPFEzEZDPG8/?name=users-page.png" alt="users-page.png" />
   </li>
-  <li>On the User Profile page, take note of the e-mail address, first and last name. Most importantly, click on the "saml username (single sign on)" field and enter the <em>e-mail address</em> for this user. &nbsp;(The OneLogin SAML configuration uses e-mail
+  <li>On the User Profile page, take note of the e-mail address, first and last name. Most importantly, click on the "saml username (single sign on)" field and enter the <em>e-mail address</em> for this user. (The OneLogin SAML configuration uses e-mail
     as the default username. To keep this simple in this example, we will stick with this rather than set it to a custom value. In this case, it is also the same as the user name, which is a good practice for uniqueness.)
     <br /><img src="https://t3n.zendesk.com/attachments/token/uImFdvb0cV4Lfhlfu60BMtyWu/?name=user-info-page.png" alt="user-info-page.png" />
   </li>

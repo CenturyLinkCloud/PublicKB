@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>CenturyLink Cloud Web server application offers a reliable, high-performance, and secure vehicle for delivery HTTP content to end users. &nbsp;Here's how to create a managed Apache environment in CenturyLink Cloud.</p>
+<p>CenturyLink Cloud Web server application offers a reliable, high-performance, and secure vehicle for delivery HTTP content to end users. Here's how to create a managed Apache environment in CenturyLink Cloud.</p>
 <p><strong>1. Click on the “CLC Managed Apache Httpd OpenSSL and Web” Blueprint.&nbsp;<strong><strong>NOTE: Before you can deploy Managed Tomcat, you must create a Managed Red Hat server.</strong></strong>
   </strong>
 </p>
@@ -17,7 +17,7 @@
 <p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/xsz4c4mmuKqWPLKyMiCjpTyTF/?name=Deploy.jpg" alt="Deploy.jpg" /></p>
 <p><strong>3. Fill out the appropriate details for the CLC Managed Apache Httpd OpenSSL and Web Blueprint.</strong>
 </p>
-<p><strong>**NOTE** Please choose the same server for both the Installation and Registration of Managed Apache. &nbsp;This server must have Managed Red Hat installed, otherwise the Blueprint will fail.</strong>
+<p><strong>**NOTE** Please choose the same server for both the Installation and Registration of Managed Apache. This server must have Managed Red Hat installed, otherwise the Blueprint will fail.</strong>
 </p>
 <p>Ensure that the appropriate services that are included within&nbsp;Apache are installed i.e., HTTPD &amp; PHP version.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/uSEvjB9JpUULzyPazA0hyvTmm/?name=Step1.jpg" alt="Step1.jpg" />

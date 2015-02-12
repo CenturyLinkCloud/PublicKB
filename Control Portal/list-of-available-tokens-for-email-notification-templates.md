@@ -26,7 +26,7 @@
   <li><strong>Billing Receipt.&nbsp;</strong>
   </li>
   <ol>
-    <li><strong>payment amount. &nbsp;</strong>Amount charged to your account for the billing cycle.</li>
+    <li><strong>payment amount. </strong>Amount charged to your account for the billing cycle.</li>
     <li><strong>transaction code. </strong>Unique identifier for the payment transaction.</li>
     <li><strong>payment type. </strong>Indicates the payment type set for the account. Values include: Check, ACH, Credit Card.</li>
   </ol>

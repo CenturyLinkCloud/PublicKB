@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>The following Service personnel tasks and activities are included in the CSP’s tasks and activities, limited by the hours per month included in the package purchased by the customer. &nbsp;Services extend across all products and services in the CenturyLink
+<p>The following Service personnel tasks and activities are included in the CSP’s tasks and activities, limited by the hours per month included in the package purchased by the customer. Services extend across all products and services in the CenturyLink
   portfolio, not just CenturyLink Cloud.</p>
 <p><strong>Customer Relationship Management</strong>
 </p>

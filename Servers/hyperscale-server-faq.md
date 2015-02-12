@@ -19,7 +19,7 @@
 <ul>
   <li><em>Storage.</em>&nbsp; Hyperscale storage is 100% SSD, instead of a mix of spindle/SSD.&nbsp; Consequently, users can expect different storage levels between Hyperscale and CenturyLink Cloud servers.</li>
   <li><em>Backups.</em> Hyperscale servers do not include the automatic backup function found in CenturyLink Cloud Servers.&nbsp; This is largely because Hyperscale is designed for distributed apps that don’t typically deal with backups.</li>
-  <li><em>Advanced Tasks. &nbsp;</em>Snapshots, Clone, Convert to Template and Archive features are not available on Hyperscale Instances</li>
+  <li><em>Advanced Tasks. </em>Snapshots, Clone, Convert to Template and Archive features are not available on Hyperscale Instances</li>
   <li><em>Geographies.</em>&nbsp; Hyperscale is only available in the NY1, IL1, CA3, GB3, UC1 &amp; VA1 datacenters, with new locations coming online quarterly.&nbsp; Cloud servers, in contrast, can be deployed across 12 federated data centers.&nbsp;</li>
   <li><em>API parity is unavailable for Hyperscale at launch. </em>Full API compatibility will be in place in coming releases.</li>
 </ul>

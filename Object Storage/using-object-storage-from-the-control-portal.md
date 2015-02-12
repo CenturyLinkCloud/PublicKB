@@ -8,7 +8,7 @@
 
 <h3>Description</h3>
 <p>Tier 3 now has a robust, geo-distributed Object Storage service capable of storing any type of digital content. Perfect for data backups, media distribution, and file transfers, the Tier 3 Object Storage is Amazon S3-compatible and accessible from the
-  Tier 3 Control Portal or via API. &nbsp;<strong>This KB article explains how to interact with Object Storage from the Tier 3 Control Portal.</strong>
+  Tier 3 Control Portal or via API. <strong>This KB article explains how to interact with Object Storage from the Tier 3 Control Portal.</strong>
 </p>
 <h3>Audience</h3>
 <ul>
@@ -27,7 +27,7 @@
     </p>
   </li>
   <li>Click the&nbsp;<strong>create user</strong> button and enter the user's details. The <strong>name</strong> field should contain a friendly alphanumeric identifier for the user. Enter an&nbsp;<strong>email&nbsp;</strong>address for the user. Note that
-    this value must be unique across the platform and can't be reused. &nbsp;Additionally, this email can be a bogus and non-functional email. We don't use this email for anything except to assure uniqueness. &nbsp;You will not be contacted using this
+    this value must be unique across the platform and can't be reused. Additionally, this email can be a bogus and non-functional email. We don't use this email for anything except to assure uniqueness. You will not be contacted using this
     email. Finally, choose which Object Storage region to add this user to. Click&nbsp;<strong>save</strong>.
     <p><img src="https://t3n.zendesk.com/attachments/token/xpcaevihuzwhyji/?name=objectstorage-control03.png" alt="objectstorage-control03.png" />
     </p>

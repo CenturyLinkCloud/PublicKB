@@ -11,13 +11,13 @@
   root access which allows us to effectively monitor and maintain your server OS.</p>
 <h3><strong>Connecting to Your Server with SSH</strong></h3>
 <p>When your server was initially configured, a customer account was created for your use, and the root account was configured for you to initially access the machine for administrative purposes.&nbsp;&nbsp;</p>
-<p>1. You will need the Admin (root) password for your initial SSH session. &nbsp;Access your server password in the CenturyLink Cloud Control by choosing the ‘<em>click to authenticate</em>’ link illustrated below in the red box, in the upper right corner<em>.&nbsp;&nbsp; Note:&nbsp; Your Admin user name and password are different from your CenturyLink Cloud Control user name and password.&nbsp; Also, this root account password should not be changed except from within this CenturyLink Cloud Control interface.</em>
+<p>1. You will need the Admin (root) password for your initial SSH session. Access your server password in the CenturyLink Cloud Control by choosing the ‘<em>click to authenticate</em>’ link illustrated below in the red box, in the upper right corner<em>.&nbsp;&nbsp; Note:&nbsp; Your Admin user name and password are different from your CenturyLink Cloud Control user name and password.&nbsp; Also, this root account password should not be changed except from within this CenturyLink Cloud Control interface.</em>
 </p>
 <p><em><img src="https://t3n.zendesk.com/attachments/token/igx4zrd8DJt6tERYiOu0CqUGt/?name=Overview.jpg" alt="Overview.jpg" /></em>
 </p>
 
 <p>2. Use any SSH version 2 compatible client. (SSH, Putty, Secure CRT, WS_FTP).</p>
-<p>3. Direct your SSH client to connect to the host server IP that was provided to you by CenturyLink Cloud Control.&nbsp; This IP is a CLC private network IP. &nbsp;<strong>You should NEVER manage your virtual server through a public IP address but rather, always use a secure tunnel such as a client VPN or site to site VPN connection.</strong>
+<p>3. Direct your SSH client to connect to the host server IP that was provided to you by CenturyLink Cloud Control.&nbsp; This IP is a CLC private network IP. <strong>You should NEVER manage your virtual server through a public IP address but rather, always use a secure tunnel such as a client VPN or site to site VPN connection.</strong>
 </p>
 <p>4. Once logged in, you should immediately set the password of your non-root management account.&nbsp; Run the command that's <strong>bolded below</strong> and note the resulting account name (shown below in<em> italics</em>) that you can use for your
   regular server operations:</p>
@@ -26,7 +26,7 @@
 <pre>Retype new password: <strong>********</strong></pre>
 <pre>passwd: all authentication tokens updated successfully.</pre>
 
-<p>5. Change your password right away, constructing your new password in a manner meaningful to you, but also secure. &nbsp;Please follow the password guidelines that are recommended below.</p>
+<p>5. Change your password right away, constructing your new password in a manner meaningful to you, but also secure. Please follow the password guidelines that are recommended below.</p>
 <p>Linux password strength is handled by a custom <em>PAM(8)</em> configuration that enforces the following policy:</p>
 <ul>
   <li>Inclusion of at least three (3) characters from each of the following character classes:
