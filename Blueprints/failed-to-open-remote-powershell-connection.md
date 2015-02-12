@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description (goal/purpose)</h3>
-<p>Your Windows Server must be properly configured in order for PowerShell based blueprints to successfully run against it. &nbsp;Most images are already configured properly, however if you receive an error about failing to open the Remote PowerShell connection,
+<p>Your Windows Server must be properly configured in order for PowerShell based blueprints to successfully run against it. Most images are already configured properly, however if you receive an error about failing to open the Remote PowerShell connection,
   the following KB article may help you resolve the issue.</p>
 <h3>Audience</h3>
 <ul>
@@ -26,8 +26,7 @@
 <p>...</p>
 <p>[/STACKTRACE]</p>
 <h3>How to Resolve</h3>
-<p>While PowerShell based blueprints fail, command based blueprints will not. &nbsp;There is a public script package that contains the necessary commands properly configure WinRM. &nbsp;The package is called&nbsp;<em>Enable Powershell 2.0 Remoting</em>.
-  &nbsp;From the g<em>roup tasks</em> dropdown on the Group information page you can choose to <em>execute script,&nbsp;</em>then find the script to execute, and apply it to the necessary machines.</p>
+<p>While PowerShell based blueprints fail, command based blueprints will not. &nbsp;There is a public script package that contains the necessary commands properly configure WinRM. &nbsp;The package is called&nbsp;<em>Enable Powershell 2.0 Remoting</em>. From the g<em>roup tasks</em> dropdown on the Group information page you can choose to <em>execute script</em>, then find the script to execute, and apply it to the necessary machines.</p>
 <h3>Detailed Steps</h3>
 <ol>
   <li>Navigate to the group details page that contains the server(s) you need to fix</li>
