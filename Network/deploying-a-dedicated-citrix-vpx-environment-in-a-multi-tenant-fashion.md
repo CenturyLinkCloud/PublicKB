@@ -8,11 +8,11 @@
 
 <h3>Deploying a Dedicated Citrix VPX Environment in a Multi-tenant Fashion</h3>
 <p>While the CenturyLink Cloud platform provides a <a href="https://t3n.zendesk.com/entries/22110695-Creating-a-Self-Service-Load-Balancing-Configuration" target="_blank">self-service load balancing service</a> for public facing web applications there may
-  be times in which this model does not meet a customers use case or technical requirements. &nbsp;CenturyLink Cloud customers can license Citrix VPX dedicated virtual load balancers on a monthly use basis. &nbsp;Internal IT personnel, partners, resellers
-  and other ISV's may wish to deploy dedicated Citrix VPX load balancers for consumption across their application portfolio or client base in a multi-tennant fashion. &nbsp;Using the Citrix VPX platform in a multi-tenant fashion can avoid costs of deploying
-  devices for every application or customer and reduce administrative overhead. &nbsp;</p>
+  be times in which this model does not meet a customers use case or technical requirements. CenturyLink Cloud customers can license Citrix VPX dedicated virtual load balancers on a monthly use basis. Internal IT personnel, partners, resellers
+  and other ISV's may wish to deploy dedicated Citrix VPX load balancers for consumption across their application portfolio or client base in a multi-tennant fashion. Using the Citrix VPX platform in a multi-tenant fashion can avoid costs of deploying
+  devices for every application or customer and reduce administrative overhead. </p>
 <h3>Use Case</h3>
-<p>This KB will provide a sample use case in which a highly available pair of Citrix VPX dedicated load balancers are deployed into multi-tier account hierarchy using CenturyLink Cloud Parent &amp; Sub-accounts. &nbsp;The end state will deliver load balancing
+<p>This KB will provide a sample use case in which a highly available pair of Citrix VPX dedicated load balancers are deployed into multi-tier account hierarchy using CenturyLink Cloud Parent &amp; Sub-accounts. The end state will deliver load balancing
   services to a sub-account of the parent providing account isolation while delivering secure load balancing services.</p>
 <h3>Prerequisites</h3>
 <ul>
@@ -22,8 +22,8 @@
 </ul>
 <h3>Building a Parent &amp; Sub-Account Hierarchy</h3>
 <ul>
-  <li>Each CenturyLink Cloud client will receive an initial account, this is the Parent Account. &nbsp; This is the top level of a larger account&nbsp;hierarchy&nbsp;that can be created based on business needs. &nbsp;In this sample we will construct a simple
-    set of 'Client' sub-accounts to the parent to simulate delivery of services to various unique customers of an ISV using CenturyLink Cloud to deliver their own unique service portfolio. &nbsp;The Account Structure will be as follows:</li>
+  <li>Each CenturyLink Cloud client will receive an initial account, this is the Parent Account.  This is the top level of a larger account&nbsp;hierarchy&nbsp;that can be created based on business needs. In this sample we will construct a simple
+    set of 'Client' sub-accounts to the parent to simulate delivery of services to various unique customers of an ISV using CenturyLink Cloud to deliver their own unique service portfolio. The Account Structure will be as follows:</li>
 </ul>
 <p><img src="https://t3n.zendesk.com/attachments/token/eFb91tZdRgxU6ykxOSNBetgkY/?name=01.png" alt="01.png" />
 </p>
@@ -33,28 +33,28 @@
 </ul>
 <h3>&nbsp;Deploy the Dedicated Citrix VPX Appliances</h3>
 <ul>
-  <li><a href="https://t3n.zendesk.com/entries/21806469-Creating-and-Deleting-VLANs" target="_blank">Deploy a dedicated Network VLAN</a> in your parent account within the appropriate data center. &nbsp; Costs for VLANs can be found in our <a href="http://www.centurylinkcloud.com/estimator"
-    target="_blank">Online Estimator</a> or your CenturyLink Cloud MSA. &nbsp;Once this job completes we recommend you <a href="https://t3n.zendesk.com/entries/26388584-Add-a-User-Friendly-Name-to-VLANs" target="_blank">apply a friendly name to this VLAN</a>.
-    &nbsp;In the sample below in CA3 we have a network created and named NLB_10.100.97.0/24. &nbsp;<strong>TIP: &nbsp;We recommend the VPX reside in a dedicated VLAN which allows for maximum Firewall security control and scalability of VIPs.</strong>
+  <li><a href="https://t3n.zendesk.com/entries/21806469-Creating-and-Deleting-VLANs" target="_blank">Deploy a dedicated Network VLAN</a> in your parent account within the appropriate data center.  Costs for VLANs can be found in our <a href="http://www.centurylinkcloud.com/estimator"
+    target="_blank">Online Estimator</a> or your CenturyLink Cloud MSA. Once this job completes we recommend you <a href="https://t3n.zendesk.com/entries/26388584-Add-a-User-Friendly-Name-to-VLANs" target="_blank">apply a friendly name to this VLAN</a>.
+    &nbsp;In the sample below in CA3 we have a network created and named NLB_10.100.97.0/24. <strong>TIP: &nbsp;We recommend the VPX reside in a dedicated VLAN which allows for maximum Firewall security control and scalability of VIPs.</strong>
   </li>
 </ul>
 <p><img src="https://t3n.zendesk.com/attachments/token/jnNGDnyT5uv6MQuX5yT52LFxA/?name=02.png" alt="02.png" />
 </p>
 <ul>
-  <li>Request a <a href="http://www.centurylinkcloud.com/service-tasks" target="_blank">Service Task</a> to Deploy your Citrix VPX devices. &nbsp;Optionally, you can do single instance virtual appliances if high availability is not a requirement. &nbsp;(Tip:
-    <a href="https://t3n.zendesk.com/entries/37871764-Requesting-Service-Tasks-on-CenturyLink-Cloud" target="_blank">How to Request a Service Task</a>). &nbsp;Include the following in your request:</li>
+  <li>Request a <a href="http://www.centurylinkcloud.com/service-tasks" target="_blank">Service Task</a> to Deploy your Citrix VPX devices. Optionally, you can do single instance virtual appliances if high availability is not a requirement. (Tip:
+    <a href="https://t3n.zendesk.com/entries/37871764-Requesting-Service-Tasks-on-CenturyLink-Cloud" target="_blank">How to Request a Service Task</a>). Include the following in your request:</li>
   <ol>
-    <li>The Account alias of the Parent Account you wish to deploy the VPX(s) into. &nbsp;The alias is found on the Account, Info page</li>
+    <li>The Account alias of the Parent Account you wish to deploy the VPX(s) into. The alias is found on the Account, Info page</li>
     <li>The Data Center in which you which the VPX(s) to be deployed</li>
-    <li>The Network into which the VPX(s) should be deployed. &nbsp;In this example NLB_10.100.97.0/24 was leveraged as we want to deploy the appliances into a parent network.</li>
+    <li>The Network into which the VPX(s) should be deployed. In this example NLB_10.100.97.0/24 was leveraged as we want to deploy the appliances into a parent network.</li>
     <li>The Group you'd like the VPX(s) deployed into</li>
-    <li>Note how many VIP's you'd like reserved in the network for load balancing. &nbsp;The support team can later reserve more via a ticket. &nbsp;Generally, our team will reserve 10 VIPs out of the box unless stated otherwise. &nbsp;</li>
-    <li>Indicate which of the (4) dedicated load balancer types you wish to purchase. &nbsp;See&nbsp;<a href="http://www.centurylinkcloud.com/load-balancing" target="_blank">http://www.centurylinkcloud.com/load-balancing</a>
+    <li>Note how many VIP's you'd like reserved in the network for load balancing. The support team can later reserve more via a ticket. Generally, our team will reserve 10 VIPs out of the box unless stated otherwise. </li>
+    <li>Indicate which of the (4) dedicated load balancer types you wish to purchase. See&nbsp;<a href="http://www.centurylinkcloud.com/load-balancing" target="_blank">http://www.centurylinkcloud.com/load-balancing</a>
     </li>
     <li><a href="https://t3n.zendesk.com/entries/21714594-PIN-Authentication-for-Support-Requests" target="_blank">Provide your pin</a>
     </li>
   </ol>
-  <li>Once the Service Task team deploy's your VPX appliance(s) you will get a notification with details on your new devices. &nbsp;This list will include:</li>
+  <li>Once the Service Task team deploy's your VPX appliance(s) you will get a notification with details on your new devices. This list will include:</li>
   <ol>
     <li>The VM name of the VPX(s)</li>
     <li>The Management IP of the VPX(s): &nbsp;In this example the IP is 10.100.97.100</li>
@@ -67,17 +67,17 @@
 <p><img src="https://t3n.zendesk.com/attachments/token/OitSGuuLvfmVGYBvyDpRP1us6/?name=09.png" alt="09.png" />
 </p>
 <h3>Deploy Sub-Account Virtual Instances</h3>
-<p>With a sub-account named 'Client A' deployed under the Parent Account, its now time to deploy virtual instances you wish to load balance in this sub-account. &nbsp; In this example, we are going to deploy (2) Windows 2012 R2 Data Center Web Servers running
-  IIS. &nbsp;We will also build a test HTML page to show the load balancing services are functional at the end of configuration.</p>
+<p>With a sub-account named 'Client A' deployed under the Parent Account, its now time to deploy virtual instances you wish to load balance in this sub-account.  In this example, we are going to deploy (2) Windows 2012 R2 Data Center Web Servers running
+  IIS. We will also build a test HTML page to show the load balancing services are functional at the end of configuration.</p>
 <ul>
-  <li><a href="https://t3n.zendesk.com/entries/21806469-Creating-and-Deleting-VLANs" target="_blank">Deploy a Web VLAN</a>&nbsp;in the 'Client A' sub-account within the appropriate data center. &nbsp; Costs for VLANs can be found in our&nbsp;<a href="http://www.centurylinkcloud.com/estimator"
-    target="_blank">Online Estimator</a>&nbsp;or your CenturyLink Cloud MSA. &nbsp;Once this job completes we recommend you&nbsp;<a href="https://t3n.zendesk.com/entries/26388584-Add-a-User-Friendly-Name-to-VLANs" target="_blank">apply a friendly name to this VLAN</a>.
+  <li><a href="https://t3n.zendesk.com/entries/21806469-Creating-and-Deleting-VLANs" target="_blank">Deploy a Web VLAN</a>&nbsp;in the 'Client A' sub-account within the appropriate data center.  Costs for VLANs can be found in our&nbsp;<a href="http://www.centurylinkcloud.com/estimator"
+    target="_blank">Online Estimator</a>&nbsp;or your CenturyLink Cloud MSA. Once this job completes we recommend you&nbsp;<a href="https://t3n.zendesk.com/entries/26388584-Add-a-User-Friendly-Name-to-VLANs" target="_blank">apply a friendly name to this VLAN</a>.
     &nbsp;In this sample we used WEB_10.100.187.0/24.</li>
 </ul>
 <p><img src="https://t3n.zendesk.com/attachments/token/4q318KazByfKgo2IxOOcXJJVo/?name=04.png" alt="04.png" />
 </p>
 <ul>
-  <li><a href="https://t3n.zendesk.com/entries/22603877-Creating-a-New-Enterprise-Cloud-Server" target="_blank">Create (2) Windows 2012 R2 Data Center Virtual Servers</a>&nbsp;into a Group called Web Servers. &nbsp;These VM's should be placed in the WEB_10.100.187.0/24
+  <li><a href="https://t3n.zendesk.com/entries/22603877-Creating-a-New-Enterprise-Cloud-Server" target="_blank">Create (2) Windows 2012 R2 Data Center Virtual Servers</a>&nbsp;into a Group called Web Servers. These VM's should be placed in the WEB_10.100.187.0/24
     VLAN.</li>
 </ul>
 <p><img src="https://t3n.zendesk.com/attachments/token/o8FZbtjFWjYCHWsfHvKRXkCJD/?name=03.png" alt="03.png" />
@@ -89,7 +89,7 @@
 </ul>
 <p>(<strong>QUICK TIP</strong>: &nbsp;Save Time and build a blueprint to deploy (2) Web Servers into the Web VLAN and layer on the IIS 8 packages)</p>
 <ul>
-  <li>Use <a href="https://t3n.zendesk.com/entries/20914433-How-To-Configure-Client-VPN" target="_blank">Client VPN</a> to RDP into the (2) newly created Web Servers and create a test page named default.htm in the IIS root folder (C:\inetpub\wwwroot). &nbsp;Sample
+  <li>Use <a href="https://t3n.zendesk.com/entries/20914433-How-To-Configure-Client-VPN" target="_blank">Client VPN</a> to RDP into the (2) newly created Web Servers and create a test page named default.htm in the IIS root folder (C:\inetpub\wwwroot). Sample
     basic HTML code is below: &nbsp;</li>
 </ul>
 <p>Web Server #1 default.htm file:</p>
@@ -113,10 +113,10 @@
 </p>
 <p>Network: &nbsp;NLB_10.100.97.0/24</p>
 <p>Subnet Size: &nbsp;1</p>
-<p>Starting IP: &nbsp;&lt;RNAT IP of NLB Provided by Service Tasks&gt; &nbsp;In this sample, the RNAT IP is 10.100.97.101&nbsp;</p>
+<p>Starting IP: &nbsp;&lt;RNAT IP of NLB Provided by Service Tasks&gt; &nbsp;In this sample, the RNAT IP is 10.100.97.101</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/o5exOahqkQ9URyMIeBRsNeE3w/?name=06.png" alt="06.png" />
 </p>
-<p><strong>Add&nbsp;Destination Address</strong> &nbsp;</p>
+<p><strong>Add&nbsp;Destination Address</strong> </p>
 <p>Network: &nbsp;WEB_10.100.187.0/24</p>
 <p>Subnet Size: 1 (or use another size depending on # of web servers)</p>
 <p>Starting IP address: &nbsp;&lt;Private IP address of your Web Servers in Client A sub-account&gt; &nbsp;In this sample, our web servers are 10.100.187.12 &amp; 13.</p>
@@ -129,15 +129,15 @@
 <p><strong><img src="https://t3n.zendesk.com/attachments/token/rdrvqZ0wSRFDAplQt91CxDdk2/?name=08.png" alt="08.png" /></strong>
 </p>
 <ul>
-  <li>Validate your new Firewall Rule and save it. &nbsp;We now have a Firewall Rule in place permitting tcp/80 and PING from the VPX RNAT IP (in a parent account) to (2) Virtual Web Servers in the Client A sub-account.</li>
+  <li>Validate your new Firewall Rule and save it. We now have a Firewall Rule in place permitting tcp/80 and PING from the VPX RNAT IP (in a parent account) to (2) Virtual Web Servers in the Client A sub-account.</li>
 </ul>
 <p><img src="https://t3n.zendesk.com/attachments/token/y5rx2VVHZnW6Ip9A7MugA9ExH/?name=05.png" alt="05.png" />
 </p>
 <h3>Configure Citrix VPX Load Balancers</h3>
-<p>We now need to configure the VPX load balancer(s) to deliver services to 'Client A' web servers. &nbsp;In this phase we will build service groups, virtual servers (VIP) and update the VPX routes to appropriately route traffic to the networks in 'Client
-  A' sub-account. &nbsp;<strong>NOTE: &nbsp;This is not meant to be an all encompassing guide to configuring a Citrix VPX but just a basic sample use case to balance (2) web servers over HTTP in another sub-account and network.</strong> &nbsp;</p>
+<p>We now need to configure the VPX load balancer(s) to deliver services to 'Client A' web servers. In this phase we will build service groups, virtual servers (VIP) and update the VPX routes to appropriately route traffic to the networks in 'Client
+  A' sub-account. <strong>NOTE: &nbsp;This is not meant to be an all encompassing guide to configuring a Citrix VPX but just a basic sample use case to balance (2) web servers over HTTP in another sub-account and network.</strong> </p>
 <ul>
-  <li><a href="https://t3n.zendesk.com/entries/27216280-Dedicated-Load-Balancer-Basic-Management" target="_blank">Use the Dedicated Load Balancer Basic Management KB</a> to configure a Service Group, Virtual Server and health checks for PING &amp; TCP. &nbsp;
+  <li><a href="https://t3n.zendesk.com/entries/27216280-Dedicated-Load-Balancer-Basic-Management" target="_blank">Use the Dedicated Load Balancer Basic Management KB</a> to configure a Service Group, Virtual Server and health checks for PING &amp; TCP. 
     In this sample use case we built the following configuration using the admin interface (10.100.97.100):</li>
 </ul>
 <p><strong>Service Group</strong>
@@ -165,7 +165,7 @@
 <p><img src="https://t3n.zendesk.com/attachments/token/kAvOa1ywV8xf0QG6lp10uPLDo/?name=32.png" alt="32.png" />
 </p>
 <ul>
-  <li>Navigate to Network, Routes in the VPX management UI. &nbsp;Create a route to the 'Client A' sub-account WEB_10.100.187.0/24 VLAN. &nbsp;<strong>TIP</strong>: &nbsp;The gateway IP will be the same gateway IP as the existing route 0.0.0.0. &nbsp;In this
+  <li>Navigate to Network, Routes in the VPX management UI. Create a route to the 'Client A' sub-account WEB_10.100.187.0/24 VLAN. <strong>TIP</strong>: &nbsp;The gateway IP will be the same gateway IP as the existing route 0.0.0.0. In this
     use case we used the following configuration:</li>
 </ul>
 <p>Network: &nbsp;10.100.187.0</p>
@@ -185,20 +185,20 @@
 
 <h3>Add Public IP to VIP for External Access</h3>
 <p>Finally, as this use case is a public facing website we will use the <a href="https://t3n.zendesk.com/entries/49195400-How-To-Add-Public-IP-to-Virtual-Machine" target="_blank">Add Public IP</a> function of Control to perform a 1 to 1 NAT public IP to
-  the VIP (Virtual Server) created previously on 10.100.97.103. &nbsp;</p>
+  the VIP (Virtual Server) created previously on 10.100.97.103. </p>
 <ul>
-  <li>Navigate to the VPX in Control (TIP: if you have an HA pair the VIPs will be assigned to the primary VPX). &nbsp;Choose Add Public IP. &nbsp;Choose the VIP 10.100.97.103 (previously built in the VPX configuration). &nbsp;Lastly, we want to expose HTTP(80).</li>
+  <li>Navigate to the VPX in Control (TIP: if you have an HA pair the VIPs will be assigned to the primary VPX). Choose Add Public IP. Choose the VIP 10.100.97.103 (previously built in the VPX configuration). Lastly, we want to expose HTTP(80).</li>
 </ul>
 <p><img src="https://t3n.zendesk.com/attachments/token/ibXZgkLMARihUw3CacpN7rHyD/?name=50.png" alt="50.png" />
 </p>
 <ul>
-  <li>The Public IP for this new NAT can be found in the Servers Portion of the Control UI. &nbsp;In this example the Public IP is 206.152.32.226</li>
+  <li>The Public IP for this new NAT can be found in the Servers Portion of the Control UI. In this example the Public IP is 206.152.32.226</li>
 </ul>
 <p><img src="https://t3n.zendesk.com/attachments/token/O73UrfngTcsCRZbIY6S2HOxIB/?name=51.png" alt="51.png" />
 </p>
 <ul>
-  <li>Validate the (2) Virtual Web Servers for Client-A sub-account are delivering the Test Page created previously. &nbsp;Use the refresh button a few times to see the page is being delivered by a unique web server and the services are functional. &nbsp;</li>
+  <li>Validate the (2) Virtual Web Servers for Client-A sub-account are delivering the Test Page created previously. Use the refresh button a few times to see the page is being delivered by a unique web server and the services are functional. </li>
 </ul>
-<p><img src="https://t3n.zendesk.com/attachments/token/TUOX5yKMphrCidcUsL9oWtWAP/?name=60.png" alt="60.png" />&nbsp;</p>
+<p><img src="https://t3n.zendesk.com/attachments/token/TUOX5yKMphrCidcUsL9oWtWAP/?name=60.png" alt="60.png" /></p>
 <p><img src="https://t3n.zendesk.com/attachments/token/AOgNNYegdbkoUnCX9Pg6Nr87k/?name=61.png" alt="61.png" />
 </p>

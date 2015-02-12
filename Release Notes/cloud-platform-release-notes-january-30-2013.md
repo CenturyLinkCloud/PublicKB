@@ -15,7 +15,7 @@
   <li><strong>Cross data center firewall policies now available for customer self-service.</strong>The ability to connect globally distributed data centers via firewall policies was previously available only to Tier 3 system administrators. For more information
     on creating these firewall policies, see the KB article <a href="http://help.tier3.com/entries/22603797-creating-cross-data-center-firewall-policies">Creating Cross Data Center Firewall Policies</a>.</li>
 </ul>
-<p>&nbsp;</p>
+<p></p>
 <p><strong>Minor Defects Fixed or Enhancements Added (5)</strong>
 </p>
 <hr />

@@ -11,7 +11,7 @@
 <p>The following document is intended to be a basic overview of the possible network connectivity options for connecting to the CenturyLink Cloud platform. In summary, CenturyLink Cloud’s customers can leverage four different access methods to systems on
   the CenturyLink Cloud platform: 1.) Client Based VPN Tunnels, 2.) IPSec Point-to-Point VPN Tunnels, 3.) Direct Access Connectivity (i.e., bypassing the public Internet)&nbsp;and/or 4.) Assigning a Public IP(s) to a Virtual Machine(s). Moreover, if the
   utmost network resiliency is required, customers can easily deploy a combination of these access methods in-conjunction with each other. The descriptions below provide more details regarding the aforementioned access methods, and also connectivity scenarios
-  for typical organizations.&nbsp;</p>
+  for typical organizations.</p>
 
 <p><strong>Client Based VPN Tunnels</strong>
 </p>
@@ -42,17 +42,17 @@
 <ol>
   <li>
     <p>If a customer has multiple branch offices, they can centralize all of their connectivity by meshing together all of their offices with a MPLS network, and then also extending this MPLS network to the CenturyLink Cloud platform. These types of MPLS
-      <a href="http://www.centurylink.com/business/data/index.html">network services</a> can be purchased separately from CenturyLink, or from alternate network service providers.&nbsp; Enabling this type of architecture provides centralization of the
+      <a href="http://www.centurylink.com/business/data/index.html">network services</a> can be purchased separately from CenturyLink, or from alternate network service providers. Enabling this type of architecture provides centralization of the
       Internet access and the security policies, and can be enforced from the head office.</p>
   </li>
   <li>
     <p>Customers who reside in the same data centers as CenturyLink Cloud (please see the following URL for the complete list of CenturyLink Cloud's data center locations: <a href="https://t3n.zendesk.com/entries/23224937-CenturyLink-Cloud-Data-Center-Locations)%C2%A0can">https://t3n.zendesk.com/entries/23224937-CenturyLink-Cloud-Data-Cen...</a>      ) can leverage <a href="https://t3n.zendesk.com/entries/23232577-Intra-Data-Center-Cross-Connects-Options-with-Tier-3">Intra-Data Center Cross Connects</a> that will allow direct connectivity between the CenturyLink Cloud cage(s) and a customer’s
       infrastructure in that same facility. This direct connectivity will allow for fast, low-latency secure connections for the perfect combination of private and enterprise-grade public cloud for those enterprises who want to securely extend their network
-      into the cloud.&nbsp; These intra-facility cross-connects can be configured through the CenturyLink Cloud Help Desk. More details of that process can be found here:&nbsp;<a href="https://t3n.zendesk.com/entries/23232577-Intra-Data-Center-Cross-Connects-Options-with-Tier-3">https://t3n.zendesk.com/entries/23232577-Intra-Data-Center-Cross-Co...</a>
+      into the cloud. These intra-facility cross-connects can be configured through the CenturyLink Cloud Help Desk. More details of that process can be found here:&nbsp;<a href="https://t3n.zendesk.com/entries/23232577-Intra-Data-Center-Cross-Connects-Options-with-Tier-3">https://t3n.zendesk.com/entries/23232577-Intra-Data-Center-Cross-Co...</a>
     </p>
   </li>
   <li>
-    <p>Customers who have applications hosted in CenturyLink datacenters, running on the value-added service network known as the Hosted Area Network (HAN) also have the option of buying a managed link into the cloud that bypasses the Internet.&nbsp; This
+    <p>Customers who have applications hosted in CenturyLink datacenters, running on the value-added service network known as the Hosted Area Network (HAN) also have the option of buying a managed link into the cloud that bypasses the Internet. This
       product is known as Cloud Network Service (CNS) and it can be ordered by contacting your CenturyLink account executive.</p>
   </li>
 </ol>

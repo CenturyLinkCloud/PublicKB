@@ -13,9 +13,9 @@
 </ol>
 <p><img src="https://t3n.zendesk.com/attachments/token/3sMg1cSW0hsepMfFqBbddWqNz/?name=01.png" alt="01.png" />
 </p>
-<p>3. &nbsp; On the Cloud Servers line item, press the select button and choose CenturyLink Cloud Servers. &nbsp;Click Save.</p>
+<p>3.  On the Cloud Servers line item, press the select button and choose CenturyLink Cloud Servers. Click Save.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/Jso0uMARu3rQwE94jvD5Wd2Gj/?name=02.png" alt="02.png" />
 </p>
-<p>4. &nbsp;Select Start test to view results</p>
+<p>4. Select Start test to view results</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/oXCebK6NSB35NL1QdmX7naEbo/?name=03.png" alt="03.png" />
 </p>

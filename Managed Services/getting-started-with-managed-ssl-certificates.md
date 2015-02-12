@@ -6,15 +6,15 @@
   "contentIsHTML": true
 }}}
 
-<p>Centurylink Cloud SSL certificates provide website information security.&nbsp; SSL certificates address the core requirements for effectively securing the communication between a web server and the customers interacting through it.</p>
-<p>&nbsp;Here's how to procure a managed SSL certificate in CenturyLink Cloud. &nbsp;<strong>NOTE: Before you can acquire a Managed SSL certificate, you must create a sever with a Managed OS, either Managed Windows or Managed Red Hat.</strong>
+<p>Centurylink Cloud SSL certificates provide website information security. SSL certificates address the core requirements for effectively securing the communication between a web server and the customers interacting through it.</p>
+<p>&nbsp;Here's how to procure a managed SSL certificate in CenturyLink Cloud. <strong>NOTE: Before you can acquire a Managed SSL certificate, you must create a sever with a Managed OS, either Managed Windows or Managed Red Hat.</strong>
 </p>
-<p><strong>1. Navigate to the Blueprints library, and search for SSL. &nbsp;Then, choose the right SSL Cert based on your preference, either Windows or Linux.</strong>
+<p><strong>1. Navigate to the Blueprints library, and search for SSL. Then, choose the right SSL Cert based on your preference, either Windows or Linux.</strong>
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/Y7gAUHap4BipmvaUsfHO4aElb/?name=Search_Screen.jpg" alt="Search_Screen.jpg" />
 </p>
-<p><strong>2.&nbsp;Click on the SSL Blueprint that matches your OS and click on the “deploy blueprint” button shown below.</strong>&nbsp;</p>
-<p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/xQCYDJp1ViPuTIpV5n2mdExId/?name=Detail.jpg" alt="Detail.jpg" />&nbsp;</p>
+<p><strong>2.&nbsp;Click on the SSL Blueprint that matches your OS and click on the “deploy blueprint” button shown below.</strong></p>
+<p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/xQCYDJp1ViPuTIpV5n2mdExId/?name=Detail.jpg" alt="Detail.jpg" /></p>
 <p><strong>3.&nbsp;Once the Customize Blueprint window appears, proceed with any customizations necessary. You will be required to verify your Blueprint for accuracy. The URL must be registered a domain and all info must match the organizational contact listed. The City and State must be completely spelled out. (ex: Saint Louis Missouri), Country must be abbreviation. (ex: USA).</strong>
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/IM4c09Nu3kpaKHZ5ZvOdE2Ykh/?name=SSL_1.png" alt="SSL_1.png" />
@@ -27,7 +27,7 @@
 </p>
 <p><strong>5. Once verified, please click on the 'deploy blueprint' button. You will be presented with the deployment details along with an email stating the Blueprint has been queued.</strong>
 </p>
-<p><img src="https://t3n.zendesk.com/attachments/token/Hmfxv1Nnp5qPPkI7HjUXeYUdI/?name=Deploy.jpg" alt="Deploy.jpg" />&nbsp;</p>
+<p><img src="https://t3n.zendesk.com/attachments/token/Hmfxv1Nnp5qPPkI7HjUXeYUdI/?name=Deploy.jpg" alt="Deploy.jpg" /></p>
 <p>&nbsp;You will receive an email that your Blueprint has been installed when the Blueprint is complete.</p>
 <p><strong>FREQUENTLY ASKED QUESTIONS</strong>
 </p>

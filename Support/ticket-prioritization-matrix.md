@@ -6,8 +6,8 @@
   "contentIsHTML": true
 }}}
 
-<p>Tickets are assigned a priority and worked in order of descending priority.&nbsp; The priority designation indicates the level, extent and impact on the customer. &nbsp;Once assigned, the priority level is used to determine the resources allocated for
-  resolving the ticket, timelines for resolution and escalation matrix. &nbsp;Customers may assign the priority to tickets they create.&nbsp; &nbsp;Each incoming ticket is triaged and the priority will be assigned according to the criteria defined below.</p>
+<p>Tickets are assigned a priority and worked in order of descending priority. The priority designation indicates the level, extent and impact on the customer. Once assigned, the priority level is used to determine the resources allocated for
+  resolving the ticket, timelines for resolution and escalation matrix. Customers may assign the priority to tickets they create. &nbsp;Each incoming ticket is triaged and the priority will be assigned according to the criteria defined below.</p>
 
 Developer Support (Free)
 <table>
@@ -427,7 +427,7 @@ Developer Support (Free)
   <hr />
   <div>
     <p>[1] Existing agreement needs to be in place</p>
-    <p>[2] All technical details and resources need to be available in the ticket.&nbsp;</p>
+    <p>[2] All technical details and resources need to be available in the ticket.</p>
     <p>[3] Complexity of tasks will have a significant impact on the the resolution time. In most cases, the simple requests can be completed in much less time, normally 1 business day.</p>
     <p>[4] This response time is applicable when designated engineers are on shift</p>
     <p>[5] Service Task estimation and duties are performed during business hours, Monday through Friday, 9am-5pm Pacific Time.</p>
@@ -435,7 +435,7 @@ Developer Support (Free)
     
     <h3>Q&amp;A</h3>
     <p><strong>Q</strong>&nbsp;- I need a guarantee that a support request will be completed in less than the SLA time offered.</p>
-    <p><strong>A</strong>&nbsp;- You are welcome to escalate the request using our escalation procedures: &nbsp;<a href="http://help.tier3.com/entries/23626466-How-do-I-escalate-a-ticket-" target="_blank">http://help.tier3.com/entries/23626466-How-do-I-escalate-a-ticket-&nbsp;</a>&nbsp;&nbsp;</p>
+    <p><strong>A</strong>&nbsp;- You are welcome to escalate the request using our escalation procedures: &nbsp;<a href="http://help.tier3.com/entries/23626466-How-do-I-escalate-a-ticket-" target="_blank">http://help.tier3.com/entries/23626466-How-do-I-escalate-a-ticket-&nbsp;</a>&nbsp;</p>
     
     
     

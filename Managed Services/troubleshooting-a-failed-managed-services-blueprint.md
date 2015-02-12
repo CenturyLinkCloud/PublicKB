@@ -29,7 +29,7 @@
 </p>
 <p><strong>6. Click Resume to try to run the request from the point of failure.</strong>
 </p>
-<p><img src="https://t3n.zendesk.com/attachments/token/AS0hlgmJ5GDtwjovfrorTGZ1z/?name=Details.png" alt="Details.png" />&nbsp;</p>
+<p><img src="https://t3n.zendesk.com/attachments/token/AS0hlgmJ5GDtwjovfrorTGZ1z/?name=Details.png" alt="Details.png" /></p>
 <p><strong>7. If the issue occurs while running a CLC Blueprint for a Managed Application and the Blueprint fails again after Resuming:&nbsp;</strong>
 </p>
 

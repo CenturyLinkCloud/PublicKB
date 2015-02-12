@@ -59,11 +59,11 @@
 <ul>
   <li>Specify CPU, memory and storage allocation for the server. Provision up to <a href="https://t3n.zendesk.com/entries/21819996-Cloud-Server-Instance-Size-and-Performance" target="_blank">platform maximums</a>. These values can be changed by the user after
     provisioning the server.</li>
-  <li>Add storage disks to the server up to <a href="https://t3n.zendesk.com/entries/21819996-Cloud-Server-Instance-Size-and-Performance" target="_blank">platform maximums</a> based on server type. &nbsp;Storage disks can be expanded, added, and removed after
-    the server is built. &nbsp;Choosing a Partition results in a formatted disk in the operating system. &nbsp;Raw Disk provides an unformatted volume. &nbsp;</li>
+  <li>Add storage disks to the server up to <a href="https://t3n.zendesk.com/entries/21819996-Cloud-Server-Instance-Size-and-Performance" target="_blank">platform maximums</a> based on server type. Storage disks can be expanded, added, and removed after
+    the server is built. Choosing a Partition results in a formatted disk in the operating system. Raw Disk provides an unformatted volume. </li>
   <li>Select a <a href="https://t3n.zendesk.com/entries/22032834-Creating-and-Applying-Autoscale-Policies" target="_blank">CPU Autoscale Policy</a>&nbsp;making it possible to scale servers up and down based on utilization ensuring optimal deployment of resources
     for cloud environments under a variety of conditions</li>
-  <li>Select an appropriate <a href="https://t3n.zendesk.com/entries/21861680-CenturyLink-Cloud-Backup-and-Recovery-Services" target="_blank">backup level</a> for your new virtual machine. &nbsp;(<strong>Quick Tip</strong>: &nbsp;This is only available for
+  <li>Select an appropriate <a href="https://t3n.zendesk.com/entries/21861680-CenturyLink-Cloud-Backup-and-Recovery-Services" target="_blank">backup level</a> for your new virtual machine. (<strong>Quick Tip</strong>: &nbsp;This is only available for
     Standard Server Type)</li>
 </ul>
 <p><img src="https://t3n.zendesk.com/attachments/token/Jx5riABL8L9GajDwO14hzgQlK/?name=07.png" alt="07.png" />

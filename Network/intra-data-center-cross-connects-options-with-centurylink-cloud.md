@@ -18,7 +18,7 @@
 }}}
 
 <p>Updated 9/15/14</p>
-<p>This Knowledge Base and associated “Intra-Data Center Cross Connect Questionnaire“ (please see attached below) provides an overview for customers who are considering deploying an intra-data center cross connect. &nbsp;The labor for this deployment is
+<p>This Knowledge Base and associated “Intra-Data Center Cross Connect Questionnaire“ (please see attached below) provides an overview for customers who are considering deploying an intra-data center cross connect. The labor for this deployment is
   a service task, performed by platform engineers to specifications provided by the customer.</p>
 Cross Connects Description and Benefits
 <p>As noted in the Knowledge Base article entitled “Network Access Options for Connecting to CenturyLink Cloud’s Platform” (see: http://help.tier3.com/entries/20518933-network-access-options-for-c... ), CenturyLink Cloud offers multiple connectivity options

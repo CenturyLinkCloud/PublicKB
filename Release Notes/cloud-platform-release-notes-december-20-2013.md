@@ -20,7 +20,7 @@
     <a
     href="https://github.com/Tier3/bosh/wiki/Getting-Started" target="_blank">Getting Started Guide</a> for more info.</li>
 </ul>
-<p>&nbsp;</p>
+<p></p>
 <p><strong>Work in Progress (2)</strong>
 </p>
 <ul>

@@ -17,7 +17,7 @@
   <li><strong>API addition - Billing management features</strong>. Customers can use the Tier 3 API to view billing information through functions such as GetBillingSummary, GetBillingHistory, GetGroupEstimate, GetServerEstimate, GetGroupSummaries, GetServerHourlyCharges,
     and GetInvoiceDetails.</li>
 </ul>
-<p>&nbsp;</p>
+<p></p>
 <p><strong>Minor Defects Fixed or Enhancements Added (5)</strong>
 </p>
 <hr />

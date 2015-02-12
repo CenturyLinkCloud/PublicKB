@@ -32,12 +32,12 @@
   <a><img src="https://t3n.zendesk.com/attachments/token/feqgcmpomihd1yh/?name=SQLAlwaysOn2FW3.JPG" alt="SQLAlwaysOn2FW3.JPG" />
   </a>
 </p>
-<p>We repeat the same&nbsp;process&nbsp;for the remote address segment, and save the firewall policy.&nbsp;</p>
+<p>We repeat the same&nbsp;process&nbsp;for the remote address segment, and save the firewall policy.</p>
 <p>Once the servers have been created, we will need to install the <strong>Failover Clustering </strong>Role. This is done via the <strong>Add Roles</strong> function of <strong>Server Manager</strong>:</p>
 <p>
   <a><img src="https://t3n.zendesk.com/attachments/token/avdhocyhtusvtxk/?name=FailoverCluster1.JPG" alt="FailoverCluster1.JPG" />
-  </a>&nbsp;</p>
-<p>This action can also be batch-applied across an entire group via the “Execute Script” groups command. Open up the <strong>Failover Cluster Manager</strong>, select “Validate Cluster” and add all of your SQL server hostnames:&nbsp;</p>
+  </a></p>
+<p>This action can also be batch-applied across an entire group via the “Execute Script” groups command. Open up the <strong>Failover Cluster Manager</strong>, select “Validate Cluster” and add all of your SQL server hostnames:</p>
 <p>
   <a><img src="https://t3n.zendesk.com/attachments/token/anxigxpmphwiwtf/?name=FailoverValidation1.JPG" alt="FailoverValidation1.JPG" />
   </a>
@@ -56,7 +56,7 @@
   </a>
 </p>
 <p>Select “Node and File Share&nbsp;Majority” as we will be utilizing a file share rather than shared disk. Click “Next” and&nbsp;enter the path to the&nbsp;share&nbsp;to be used for the witness server.&nbsp;This share must reside on a different server than
-  the cluster nodes- in this instance,&nbsp;a share on the Domain Controller was previously created.&nbsp;</p>
+  the cluster nodes- in this instance,&nbsp;a share on the Domain Controller was previously created.</p>
 <p>
   <a><img src="https://t3n.zendesk.com/attachments/token/6cxhtsalqv0zmnt/?name=SQLAlwaysOnQuorumWitness.jpg" alt="SQLAlwaysOnQuorumWitness.jpg" />
   </a>
@@ -67,7 +67,7 @@
 </p>
 <p>
   <a><img src="https://t3n.zendesk.com/attachments/token/euqotd8xwhh8bbw/?name=SqlService.JPG" alt="SqlService.JPG" />
-  </a>&nbsp;</p>
+  </a></p>
 <p>Select the “AlwaysOn High Availability” tab and check the <strong>Enable</strong> box, and hit <strong>OK.</strong> The SQL Service will need to be restarted, which you can do by right clicking and selecting restart in the <strong>Configuration Manager.</strong>
 </p>
 <p>

@@ -18,7 +18,7 @@
   <li>Maximum Connection: 1Gbps&nbsp;</li>
 </ul>
 <h3>Getting Connected</h3>
-<p>Our platform is built to be very efficient with resources which means that the Client VPN service will <strong>not be activated</strong> until after you build your first server. So first step is to <strong>make sure you deploy a server to be able to have your VPN server activated</strong>.&nbsp;</p>
+<p>Our platform is built to be very efficient with resources which means that the Client VPN service will <strong>not be activated</strong> until after you build your first server. So first step is to <strong>make sure you deploy a server to be able to have your VPN server activated</strong>.</p>
 <p><em><strong>From the Control Panel go to: Network &gt; VPN to be able to download the certificate and configuration file.</strong></em>
 </p>
 <p>Windows XP:</p>

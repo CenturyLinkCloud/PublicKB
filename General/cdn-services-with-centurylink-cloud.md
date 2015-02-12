@@ -6,9 +6,9 @@
   "contentIsHTML": true
 }}}
 
-<p>Customers may deploy CDN, using one of CenturyLink’s CDN partners.&nbsp; To inquire about CDN services, please send an email to: <a href="mailto:CDNRequests@savvis.com">CDNRequests@savvis.com</a>.</p>
+<p>Customers may deploy CDN, using one of CenturyLink’s CDN partners. To inquire about CDN services, please send an email to: <a href="mailto:CDNRequests@savvis.com">CDNRequests@savvis.com</a>.</p>
 <p>Alternatively, you may contact your account representative.</p>
-<p>From there, you will be asked to fill out a configuration form with key details of your project.&nbsp; Examples of some of these requirements are listed below.</p>
+<p>From there, you will be asked to fill out a configuration form with key details of your project. Examples of some of these requirements are listed below.</p>
 <h3><strong>For a CDN Caching Property:</strong></h3>
 <h4>Implementation Style (choose one)</h4>
 <ul>
@@ -31,7 +31,7 @@
 </ul>
 <p>Supernames must be unique and be a valid hostname with at least two dots and may contain alphanumeric characters, dash and underscore.</p>
 <h4>Aliases (please specify)</h4>
-<p>Aliases are additional Supernames to reference the same content in cache; treated as synonyms of the primary Supername.&nbsp; Must be unique and follow the same rules as Supername.</p>
+<p>Aliases are additional Supernames to reference the same content in cache; treated as synonyms of the primary Supername. Must be unique and follow the same rules as Supername.</p>
 <h4>Origin Server Type (choose one)</h4>
 <ul>
   <li>Customer Origin (additional details required)</li>
@@ -57,7 +57,7 @@
   <li>HTTPS/RTMPe</li>
 </ul>
 <h4>Streaming ID (please specify)</h4>
-<p>Also known as Flash Media Server (FMS) application - a combination of lower case alphanumeric characters, maximum 10. No special characters with the exception of dash (-) to differentiate between different FMS applications.&nbsp;</p>
+<p>Also known as Flash Media Server (FMS) application - a combination of lower case alphanumeric characters, maximum 10. No special characters with the exception of dash (-) to differentiate between different FMS applications.</p>
 <h4>Supername (please specify)</h4>
 <p>Designated hostname used to direct traffic to the CDN. The Supername must be unique and be a valid hostname with at least two dots and may contain alphanumeric characters, dash and underscore.</p>
 <h4>Origin Server Type (choose one)</h4>

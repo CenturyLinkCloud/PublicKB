@@ -14,10 +14,10 @@
 </ul>
 <h3>High-level details &nbsp;</h3>
 <ol>
-  <li>As part of the Cloud Platform, we track a number of key metrics that we use as data inputs. &nbsp;Some of the metrics that we track are CPU, RAM, disk space allocated / used, &nbsp;IOPS, &nbsp;network throughput.</li>
+  <li>As part of the Cloud Platform, we track a number of key metrics that we use as data inputs. Some of the metrics that we track are CPU, RAM, disk space allocated / used, &nbsp;IOPS, &nbsp;network throughput.</li>
   <li>In addition to the data collected from the systems in production, we also collect softer data from our sales force, partners and customers that we are planning to perform large migrations or have special project needs.</li>
-  <li>All of these data inputs are collected and then processed using a predictive analytics engine to forecast what infrastructure equipment needs to be ordered, in what location and what timeframe it needs to be delivered by. &nbsp;</li>
-  <li>We have a high water mark of 70% that initiates a mandatory capacity expansion which ensures that we have a safety net. &nbsp;This ensures that hat we do not oversubscribe&nbsp;the optimal performance characteristics are maintained.</li>
+  <li>All of these data inputs are collected and then processed using a predictive analytics engine to forecast what infrastructure equipment needs to be ordered, in what location and what timeframe it needs to be delivered by. </li>
+  <li>We have a high water mark of 70% that initiates a mandatory capacity expansion which ensures that we have a safety net. This ensures that hat we do not oversubscribe&nbsp;the optimal performance characteristics are maintained.</li>
 </ol>
 <div></div>
 <h3>Q &amp; A</h3>

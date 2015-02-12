@@ -38,7 +38,7 @@
   <li><strong>Create Server with Custom Fields. </strong>Users who have custom fields defined to store additional metadata about servers can now save time by populating these values at server creation time. No more waiting for the server to finish provisioning
     in order to update this metadata.</li>
 </ul>
-<p>&nbsp;</p>
+<p></p>
 <p><strong>Minor Enhancements (6)</strong>
 </p>
 <div>

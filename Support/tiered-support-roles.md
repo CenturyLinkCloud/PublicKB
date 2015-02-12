@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description (goal/purpose)</h3>
-<p>In order to scale, the support organization makes use of a layered approach. &nbsp;Each layer has specific functions and this KB lays out out those functions as we see it in our DevOps model. &nbsp;It is commonly referred to as support tiers or level
+<p>In order to scale, the support organization makes use of a layered approach. Each layer has specific functions and this KB lays out out those functions as we see it in our DevOps model. It is commonly referred to as support tiers or level
   in ITIL.</p>
 <h3>Audience</h3>
 <ul>

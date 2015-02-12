@@ -8,7 +8,7 @@
 
 <p>MySQL&nbsp;is an open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL).</p>
 <p>Here's how to create a managed MySQL environment in CenturyLink Cloud.</p>
-<p><strong>1. </strong>Search for the "MySQL" in the Blueprint library. &nbsp;Then, click on the “CLC Managed Oracle MySQL Enterprise” Blueprint. After that, click on the deploy blueprint button.&nbsp;<strong><strong>NOTE: Before you can deploy Managed MySQL, you must create a Managed Red Hat server.</strong></strong>
+<p><strong>1. </strong>Search for the "MySQL" in the Blueprint library. Then, click on the “CLC Managed Oracle MySQL Enterprise” Blueprint. After that, click on the deploy blueprint button.&nbsp;<strong><strong>NOTE: Before you can deploy Managed MySQL, you must create a Managed Red Hat server.</strong></strong>
 </p>
 <p><strong><img src="https://t3n.zendesk.com/attachments/token/ipTUFXewdtsL8lJwQvDbHtuWG/?name=mysql.png" alt="mysql.png" /></strong>
 </p>
@@ -21,7 +21,7 @@
 <p><strong><img src="https://t3n.zendesk.com/attachments/token/20hdlgqVN5CIbTpogRYRkVo7j/?name=Verify.jpg" alt="Verify.jpg" />&nbsp;</strong>
 </p>
 <p><strong>4.&nbsp;</strong>Once verified, click on the 'deploy blueprint' button. You will be presented with the deployment details along with an email stating the Blueprint has been queued.</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/C5O8dw2OTDdSxFq9KkktJspvC/?name=Queue.png" alt="Queue.png" />&nbsp;</p>
+<p><img src="https://t3n.zendesk.com/attachments/token/C5O8dw2OTDdSxFq9KkktJspvC/?name=Queue.png" alt="Queue.png" /></p>
 <p>&nbsp;You will receive an email that your Blueprint has been installed when the Blueprint is complete.</p>
 <p><strong>**NOTE** The server now has the Managed Oracle MySQL Enterprise service.</strong>
 </p>

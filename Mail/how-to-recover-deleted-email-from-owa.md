@@ -7,11 +7,11 @@
 }}}
 
 
-<p>You can recover deleted email items using Outlook Web Access(OWA).&nbsp; This provides an easy way for end users to retrieve deleted emails or contacts without involving their IT department.</p>
+<p>You can recover deleted email items using Outlook Web Access(OWA). This provides an easy way for end users to retrieve deleted emails or contacts without involving their IT department.</p>
 
 <p>Steps for Recovering:</p>
 <ol>
-  <li>Log into OWA.&nbsp; If you need assistance getting logged in please reference this article: Connecting to and Using OWA #link#</li>
+  <li>Log into OWA. If you need assistance getting logged in please reference this article: Connecting to and Using OWA #link#</li>
   <li>Right click your Deleted Items folder and select “Recover Deleted Items”</li>
   <li>This will pop open a Recover Deleted Items window.</li>
   <li>Select the items you want to restore</li>
@@ -21,4 +21,4 @@
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/bgdenhup0jdghje/?name=DeletedItems.png" alt="DeletedItems.png" />
 </p>
-<p>Using this useful feature you can restore Emails or contacts that were accidentally deleted through your Outlook client, phone or device.&nbsp; You can even recover items that were recently permanently deleted by using Shift+Delete.&nbsp;</p>
+<p>Using this useful feature you can restore Emails or contacts that were accidentally deleted through your Outlook client, phone or device. You can even recover items that were recently permanently deleted by using Shift+Delete.</p>

@@ -7,7 +7,7 @@
 }}}
 
 <p>All changes performed by CenturyLink Cloud&nbsp;will be done in compliance with the following criteria:</p>
-<p>All of the change types listed below can be performed as an emergency change where maintenance needs to be performed immediately.&nbsp; In these abnormal situations, no customer notification in required.</p>
+<p>All of the change types listed below can be performed as an emergency change where maintenance needs to be performed immediately. In these abnormal situations, no customer notification in required.</p>
 
 <table>
   <tbody>
@@ -30,7 +30,7 @@
         <p>Non-disruptive</p>
       </td>
       <td>
-        <p>This category covers maintenance that is expected to have no customer impact. All live customer data MUST be migrated off the maintenance affected systems / devices before this change is done.&nbsp;</p>
+        <p>This category covers maintenance that is expected to have no customer impact. All live customer data MUST be migrated off the maintenance affected systems / devices before this change is done.</p>
       </td>
       <td>
         <p>No customer notification is required</p>
@@ -46,7 +46,7 @@
         
       </td>
       <td>
-        <p>(48 hours in advance) Customers, Partners, and CenturyLink Cloud&nbsp;will be notified via email.&nbsp; This list will be derived from control.</p>
+        <p>(48 hours in advance) Customers, Partners, and CenturyLink Cloud&nbsp;will be notified via email. This list will be derived from control.</p>
       </td>
     </tr>
     <tr>
@@ -57,7 +57,7 @@
         <p>This category covers maintenance where a change that is going to be made will cause a noticeable outage to the customers.</p>
       </td>
       <td>
-        <p>(96 hours in advance)&nbsp; Customers, Partners, and CenturyLink Cloud&nbsp;will be notified via email.&nbsp; This list will be derived from control.</p>
+        <p>(96 hours in advance)&nbsp; Customers, Partners, and CenturyLink Cloud&nbsp;will be notified via email. This list will be derived from control.</p>
       </td>
     </tr>
   </tbody>

@@ -30,7 +30,7 @@
   the Tier 3 Control Portal and are most widely used for general purpose environments (e.g. “Single Exchange Server”, “Primary Domain Controller”) that use default server templates. <strong>Private</strong> blueprints are only available for viewing or
   deployment by users within a given account. It makes sense to use this setting when building blueprints that have unique server templates or configurations that are specific to an organization or business unit. <strong>Private shared</strong> blueprints
   are those which are visible to users within a given account as well as any users in sub-accounts. Use this setting when creating blueprints that should be private to a specific organization (i.e. parent account) but are relevant to the sub-account holders
-  who may represent business units or customers.&nbsp;</p>
+  who may represent business units or customers.</p>
 <p><strong>Steps:</strong>
 </p>
 <p><strong>1. Ensure That Primary Account Has Sub-Accounts</strong>

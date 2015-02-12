@@ -21,7 +21,7 @@
 </ul>
 <h3>Detailed Steps</h3>
 <ol>
-  <li>Gather information about the issue that you experiencing. &nbsp;Examples of data that helps are:</li>
+  <li>Gather information about the issue that you experiencing. Examples of data that helps are:</li>
   <ol>
     <li>Production / Test / Development environments</li>
     <li>Time the issue started</li>
@@ -58,12 +58,12 @@
 <div>&nbsp;</div>
 <div></div>
 <h3>Q&amp;A</h3>
-<div>Q. &nbsp;I have an email thread with my sales team on this issue. &nbsp;Why is this not being worked?</div>
-<div>A. The CenturyLink Cloud support staff do not use email to provide support. &nbsp;All issues are tracked in the ZenDesk ticketing system.</div>
+<div>Q. I have an email thread with my sales team on this issue. Why is this not being worked?</div>
+<div>A. The CenturyLink Cloud support staff do not use email to provide support. All issues are tracked in the ZenDesk ticketing system.</div>
 <div></div>
-<div>Q. &nbsp;I have an old ticket, let's just reopen the ticket.</div>
-<div>A. &nbsp;When you reopen a ticket, it goes to the engineer that solved. &nbsp;Our engineers work shifts and therefore it is possible that engineer is off shift. &nbsp;In this case, the ticket update may never be seen for days because they are off.</div>
+<div>Q. I have an old ticket, let's just reopen the ticket.</div>
+<div>A. When you reopen a ticket, it goes to the engineer that solved. Our engineers work shifts and therefore it is possible that engineer is off shift. In this case, the ticket update may never be seen for days because they are off.</div>
 <div></div>
 <div>Q. How long do you wait before closing a ticket?</div>
-<div>A. After a ticket has been Solved, the automation will close the the ticket after 3 days. &nbsp;All subsequent communication to the closed ticket will create a new ticket at Low priority.</div>
+<div>A. After a ticket has been Solved, the automation will close the the ticket after 3 days. All subsequent communication to the closed ticket will create a new ticket at Low priority.</div>
 <div></div>

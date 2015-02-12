@@ -24,15 +24,15 @@
 <ol>
   <li>Public or Private computer:&nbsp;
     <ol>
-      <li>When public is chosen your session will time out much quicker.&nbsp; If you were to accidentally stay logged in at a public location, OWA will try and protect you if your session has been idle for a few minutes (this time-out is configured by Exchange
-        administrators).&nbsp; It is still recommended to log out when you are done.</li>
-      <li>When Private is chosen your session will stay active for a longer period of time.&nbsp; This is meant for home or personal laptop use where there is no risk of someone accessing your e-mail.</li>
-      <li>Light version of Outlook Web App.&nbsp; This is recommended if you are using slow internet or out of date browsers.&nbsp; Less bandwidth is used and many features are disabled</li>
+      <li>When public is chosen your session will time out much quicker. If you were to accidentally stay logged in at a public location, OWA will try and protect you if your session has been idle for a few minutes (this time-out is configured by Exchange
+        administrators). It is still recommended to log out when you are done.</li>
+      <li>When Private is chosen your session will stay active for a longer period of time. This is meant for home or personal laptop use where there is no risk of someone accessing your e-mail.</li>
+      <li>Light version of Outlook Web App. This is recommended if you are using slow internet or out of date browsers. Less bandwidth is used and many features are disabled</li>
     </ol>
   </li>
 </ol>
 
-<p>Once logged into OWA you have a fully functional Email application.&nbsp; You can send and receive email, view and modify your Calendar, Contacts, and Tasks.&nbsp;</p>
+<p>Once logged into OWA you have a fully functional Email application. You can send and receive email, view and modify your Calendar, Contacts, and Tasks.</p>
 <p>Reference the below articles for additional tasks that can be done via OWA.</p>
 
 <p><a href="http://help.tier3.com/entries/21415853-how-to-recover-deleted-email-from-owa">How to recover deleted email from owa</a>

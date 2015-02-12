@@ -133,7 +133,7 @@
   <br />Repeat steps b-k every time you need to reconnect to your GNOME desktop.
   <br />
   <br />Important Note: It is not recommended as a Linux administration best practice to utilize root, and individual user accounts should be provisioned when accessing/managing a systems. The instructions above were written in the simplest terms in mind, hence
-  why steps instructed to utilize the "root" users account.&nbsp; The steps below provide instructions for creating a user account, and then how to access the aforementioned GNOME GUI via TightVNC:
+  why steps instructed to utilize the "root" users account. The steps below provide instructions for creating a user account, and then how to access the aforementioned GNOME GUI via TightVNC:
   <br />1. Follow steps b-k to render a GNOME desktop
   <br />2. Select System, Administration, and then Users and Groups from the GNOME desktop
   <br />3. Type in a user name and select Ok

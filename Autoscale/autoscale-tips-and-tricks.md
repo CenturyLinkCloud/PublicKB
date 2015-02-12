@@ -22,17 +22,17 @@
   at the same time is vertically autoscaling up). However, there may be legitimate cases for setting up a horizontal autoscale group with vertical autoscale servers in it. If, for example, there is one server in the group that is getting pegged, it may
   not bring the average utilization within the group high enough to warrant a scale <em>out</em> event. However, it may still be appropriate to scale <em>up</em> the resources on that single server.</p>
 <p>In another case, users may choose to set a low threshold time for the vertical autoscale policy (say 5 minutes) and a longer threshold time (say 15 minutes) for the horizontal autoscale policy in an attempt to scale up problematic servers first before
-  scaling out. In this example, consider different cool down times as well as part of both vertical and horizontal scaling evaluation.&nbsp;</p>
+  scaling out. In this example, consider different cool down times as well as part of both vertical and horizontal scaling evaluation.</p>
 <p><strong>Using Horizontal Autoscale to Maintain Minimum Server Count</p></strong>
 <p>One nice effect of using a horizontal autoscale policy with a group is that users can set a minimum number of servers to stay on within the group. Even if users are not interested in autoscaling up very much (or at all), they can use a horizontal autoscale
   policy to ensure that at least a certain number of servers are always kept on within the group. For example, if a user wanted to keep all four servers in the group powered on at all times, they could create a horizontal autoscale policy that has a minimum
   server number set to four, and apply that policy to the group. With only four servers in the group, the policy would never be able to scale up, but if any of the servers were powered off for any reason, the autoscale policy would take care of powering
-  them back on automatically.&nbsp;</p>
+  them back on automatically.</p>
 <strong>Using Horizontal Autoscale Without a Load Balancer</strong>
 <p>Though horizontal autoscale may most often be used in conjunction with a load balancer, it is <em>not</em> <em>required</em> to select a load balancer group when applying a horizontal autoscale policy. Users have the option of selecting "None" instead
   of choosing a load balancer to associate with the group. This can be useful in cases where the servers act as distributed worker nodes, asynchronously responding to messages in a queue or actively polling for new files or database records.&nbsp;In a
   case like this, it still makes sense to autoscale the worker nodes horizontally, but there is no need to choose a load balancer to associate with the policy, allowing the group to just expand or contract the number of running servers without worrying
-  about routing traffic to them.&nbsp;</p>
+  about routing traffic to them.</p>
 <p>
   <a name="dedicated"></a>
 </p>
@@ -50,7 +50,7 @@
     until the server is powered off after a scale in event. (You may wish to set up additional monitors as well to ensure that a specific application or port is available before routing traffic to the server.)</li>
 </ol>
 <p>If you remove or add servers to the group, you will need to make sure to manually remove or add their IP addresses to the dedicated load balancer configuration to keep them in sync with the horizontal autoscale group as Control will not take care of this
-  like it would with the shared load balancer.&nbsp;</p>
+  like it would with the shared load balancer.</p>
 <p>You can also read more about&nbsp;<a href="https://t3n.zendesk.com/entries/21954199-Load-Balancing-Comparison-Matrix" target="_blank">Load Balancing Comparison</a> to&nbsp;see the difference between the two load balancer types and find links to resources
   about configuring them.</p>
 <strong>Schedule-Based Horizontal Autoscale</strong>

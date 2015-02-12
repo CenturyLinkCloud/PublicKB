@@ -17,7 +17,7 @@
 <h3><strong>Detailed Steps</strong></h3>
 <ol>
   <li>Close your preferred browser.</li>
-  <li>Make sure you have the latest version of Java installed. &nbsp;You can download the latest version here:&nbsp;<a href="http://www.java.com/en/download">http://www.java.com/en/download</a>
+  <li>Make sure you have the latest version of Java installed. You can download the latest version here:&nbsp;<a href="http://www.java.com/en/download">http://www.java.com/en/download</a>
   </li>
   <li>Launch the Java Control Panel by running “Configure Java” from your start menu</li>
   <li>On the General Tab under Temporary Internet Files click “Settings”</li>
@@ -25,7 +25,7 @@
     <br />
     <br /><strong><img src="https://t3n.zendesk.comhttps://t3n.zendesk.com/attachments/token/RtbGDYl4Hv2U5UwJNtwUVABkQ/?name=Java1.png" alt="Java1.png" /><br /><br /></strong>
   </li>
-  <li>Next go to the Security tab and change the slider to Medium. &nbsp;Please note that you are responsible for the security of your OS and computer.
+  <li>Next go to the Security tab and change the slider to Medium. Please note that you are responsible for the security of your OS and computer.
     <br />
     <br /><img src="https://t3n.zendesk.comhttps://t3n.zendesk.com/attachments/token/d5GBLPfcDrls0y3j3umRMGd37/?name=Java2.PNG" alt="Java2.PNG" />
     <br />
@@ -41,12 +41,12 @@
     </ol>
   </li>
   <li>Launch your web browser, and access the Web UI with the URL <a href="http://netscalerip/">http://</a>webui-ipaddress</li>
-  <li>Throughout your experience you will see Java security prompts. &nbsp;Please click Allow and Run in order to continue</li>
+  <li>Throughout your experience you will see Java security prompts. Please click Allow and Run in order to continue</li>
 </ol>
 <h3>Additional Notes</h3>
 <ul>
-  <li><strong>Chrome Users</strong>: You may need to modify some advanced settings in your browser settings as well. &nbsp;Launch the Chrome menu and go to Settings. &nbsp;Click on Advanced settings. &nbsp;Click on Content settings. &nbsp; Underneath JavaScript,
-    check "Allow all sites to run JavaScript". &nbsp;Scroll down a bit further to "Protected Content". &nbsp;Uncheck the box "Allow identifiers for protected content (computer restart may be required)" &nbsp;Press done and close all instances of browser.
+  <li><strong>Chrome Users</strong>: You may need to modify some advanced settings in your browser settings as well. Launch the Chrome menu and go to Settings. Click on Advanced settings. Click on Content settings.  Underneath JavaScript,
+    check "Allow all sites to run JavaScript". Scroll down a bit further to "Protected Content". Uncheck the box "Allow identifiers for protected content (computer restart may be required)" &nbsp;Press done and close all instances of browser.
     &nbsp;</li>
   <li>Recent Java updates have made the Netscaler GUI less reliable, if you are still having issues with the Netscaler GUI, it is recommended that you use the older version of the UI that tends to have less issues.</li>
   <ul>

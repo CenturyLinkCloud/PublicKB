@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description (goal/purpose)</h3>
-<p>This KB covers what behavior customers can expect from CenturyLink Cloud&nbsp;Operations in the case of a incident impacting production systems. &nbsp;</p>
+<p>This KB covers what behavior customers can expect from CenturyLink Cloud&nbsp;Operations in the case of a incident impacting production systems. </p>
 <h3>Audience</h3>
 <ul>
   <li>CenturyLink Cloud&nbsp;Customers</li>
@@ -15,12 +15,12 @@
 <h3>"Ticket updates"</h3>
 <ol>
   <li>All issues are worked in accordance with our prioritization matrix that can be found here: &nbsp;<a href="https://t3n.zendesk.com/entries/21651149-Ticket-Prioritization-Matrix" target="_blank">https://t3n.zendesk.com/entries/21651149-Ticket-Prioritization-Matrix</a>&nbsp;</li>
-  <li>Please ensure that the ticket is prioritized correctly. &nbsp;In the majority of cases, the tickets are incorrectly classified.</li>
+  <li>Please ensure that the ticket is prioritized correctly. In the majority of cases, the tickets are incorrectly classified.</li>
 </ol>
 <h3>"CenturyLink Cloud Expectations"</h3>
 <ol>
   <li>Please monitor the open ticket and respond to questions.</li>
-  <li>In our incident post mortems of tickets that do not get responded to, we find that the customer expects responses within seconds while they take hours to respond. &nbsp;When tickets are not responded to, our engineers move onto other items.</li>
+  <li>In our incident post mortems of tickets that do not get responded to, we find that the customer expects responses within seconds while they take hours to respond. When tickets are not responded to, our engineers move onto other items.</li>
 </ol>
 <div>
   <h3>"I have a conference bridge for you to join"</h3>

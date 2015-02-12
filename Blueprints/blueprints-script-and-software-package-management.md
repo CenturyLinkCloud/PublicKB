@@ -9,7 +9,7 @@
 <p><strong>Last updated: &nbsp;2/3/2015 03:05 PST</strong>
 </p>
 Description
-<p>Software and script packages (henceforth referred to as "packages") are one way that Blueprint Designers can customize their environments.&nbsp; They can be configured to run scripts and executables or install software. The definition of a package is
+<p>Software and script packages (henceforth referred to as "packages") are one way that Blueprint Designers can customize their environments. They can be configured to run scripts and executables or install software. The definition of a package is
   also responsible for generating the UI at Blueprint deployment time to gather the requisite set of parameters from the User.</p>
 Package Format
 <p>Packages must be .zip files and contain the following:</p>
@@ -31,8 +31,8 @@ Package Format
         </p>
       </td>
       <td>
-        <p>Defines the metadata, parameter list and execution guidelines for the Package.&nbsp;</p>
-        <p>An Xml Schema (.xsd) is available to validate the package.manifest file before uploading.&nbsp;</p>
+        <p>Defines the metadata, parameter list and execution guidelines for the Package.</p>
+        <p>An Xml Schema (.xsd) is available to validate the package.manifest file before uploading.</p>
         <p><em>This file is required in all Packages.</em>
         </p>
       </td>
@@ -43,7 +43,7 @@ Package Format
         </p>
       </td>
       <td>
-        <p>At least one executable file must be included in the Package.&nbsp; CenturyLink Cloud supports the following executable types:</p>
+        <p>At least one executable file must be included in the Package. CenturyLink Cloud supports the following executable types:</p>
         <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Standard .exe</p>
         <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Command line scripts (anything that can be run from cmd.exe for Windows or the shell on Linux)</p>
         <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PowerShell scripts (.ps1 files)</p>
@@ -166,14 +166,14 @@ Package Format
         </p>
       </td>
       <td>
-        <p>A detailed description of the Package.&nbsp;</p>
+        <p>A detailed description of the Package.</p>
         <p>This value is used to display information to designers who choose to add this Package to their Blueprint.</p>
       </td>
     </tr>
   </tbody>
 </table>
 &lt;Parameters&gt; Element
-<p>Defines the list of parameters required to execute the Package.&nbsp;</p>
+<p>Defines the list of parameters required to execute the Package.</p>
 <pre>&lt;Parameters&gt;<br />&nbsp; &lt;Parameter&gt;<br />&lt;/Parameters&gt;</pre>
 <h3>Parent Element</h3>
 <p>&lt;Manifest&gt;</p>
@@ -231,7 +231,7 @@ Package Format
         </p>
       </td>
       <td>
-        <p>Display name for the Parameter.&nbsp;</p>
+        <p>Display name for the Parameter.</p>
         <p><em>Ignored if Prompt = ‘none’.</em>
         </p>
       </td>
@@ -245,7 +245,7 @@ Package Format
         </p>
       </td>
       <td>
-        <p>The Parameter type.&nbsp;</p>
+        <p>The Parameter type.</p>
         <p><em>See below</em><em>&nbsp;for values</em>
         </p>
       </td>
@@ -259,8 +259,8 @@ Package Format
         </p>
       </td>
       <td>
-        <p>This is a variable name which you can refer to in the execution command for your package.&nbsp; Our recommendation is that you name your variables to include your Tier 3 account alias and your Package Name (e.g. T3.install-ad.DomainName) to ensure
-          that you don’t encounter any name conflicts with other scripts you’ve included in a Blueprint.&nbsp;</p>
+        <p>This is a variable name which you can refer to in the execution command for your package. Our recommendation is that you name your variables to include your CenturyLink Cloud account alias and your Package Name (e.g. T3.install-ad.DomainName) to ensure
+          that you don’t encounter any name conflicts with other scripts you’ve included in a Blueprint.</p>
       </td>
       <td>
         <p>Yes</p>
@@ -272,7 +272,7 @@ Package Format
         </p>
       </td>
       <td>
-        <p>Additional description to communicate the meaning/use of the Parameter.&nbsp; If specified this will be displayed below the input field on the Blueprint deployment form.&nbsp;</p>
+        <p>Additional description to communicate the meaning/use of the Parameter. If specified this will be displayed below the input field on the Blueprint deployment form.</p>
         <p><em>Ignored if Prompt = ‘none’</em>
         </p>
       </td>
@@ -317,7 +317,7 @@ Package Format
         </p>
       </td>
       <td>
-        <p>True to indicate that is Parameter is defined in multiple Packages but should only be prompted for once at Blueprint Deployment.&nbsp;</p>
+        <p>True to indicate that is Parameter is defined in multiple Packages but should only be prompted for once at Blueprint Deployment.</p>
         <p><em>Default = ‘false’<br />All reference to this Parameter in all Packages will have the same value.</em>
         </p>
       </td>
@@ -331,7 +331,7 @@ Package Format
         </p>
       </td>
       <td>
-        <p>A Regular Expression to validate user input for a String Parameter.&nbsp;</p>
+        <p>A Regular Expression to validate user input for a String Parameter.</p>
         <p><em>Ignored if Type != ‘String’</em>
         </p>
       </td>
@@ -406,7 +406,7 @@ Package Format
         </p>
       </td>
       <td>
-        <p>A list of values where one item must be selected.&nbsp;</p>
+        <p>A list of values where one item must be selected.</p>
         <p><em>1 or more&nbsp;</em><em>Option</em><em>&nbsp;elements must be defined.</em>
         </p>
       </td>
@@ -420,7 +420,7 @@ Package Format
         </p>
       </td>
       <td>
-        <p>A list of values where any number of items may be selected.&nbsp;</p>
+        <p>A list of values where any number of items may be selected.</p>
         <p><em>1 or more&nbsp;</em><em>Option</em><em>&nbsp;elements must be defined.</em>
         </p>
       </td>
@@ -474,7 +474,7 @@ Package Format
         </p>
       </td>
       <td>
-        <p>A generic string.&nbsp;</p>
+        <p>A generic string.</p>
         <p><em>If Regex is supplied, the value will be validated using the specified regular expression</em>
         </p>
       </td>

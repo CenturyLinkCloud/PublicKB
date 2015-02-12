@@ -38,4 +38,4 @@
   <br />Install Riak on Linux (1 of 2) [Base Install]
   <br />Install Riak on Linux (2 of 2) [Join Cluster]
   <br />Perform General Availability Update on RedHat-CentOS
-  <br />Perform General Availability Update on Ubuntu-Debian&nbsp;</p>
+  <br />Perform General Availability Update on Ubuntu-Debian</p>

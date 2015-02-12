@@ -8,7 +8,7 @@
 
 <h3>Description</h3>
 <p>CenturyLink Cloud now has a robust, geo-distributed Object Storage service capable of storing any type of digital content. Perfect for data backups, media distribution, and file transfers, the Object Storage is Amazon S3-compatible and accessible from
-  the Control Portal or via API. &nbsp;<strong>This KB article explains how to interact with Object Storage from 3rd party tools.</strong>
+  the Control Portal or via API. <strong>This KB article explains how to interact with Object Storage from 3rd party tools.</strong>
 </p>
 <h3>Audience</h3>
 <ul>
@@ -17,7 +17,7 @@
   <li>Developers</li>
 </ul>
 <h3>Using Explorer for Amazon S3&nbsp;on Windows</h3>
-<p>CenturyLink Cloud Object Storage is Amazon S3 compatible which means that a host of tools are readily available for maintaining buckets and interacting with bucket objects. &nbsp;<a href="http://www.cloudberrylab.com/" target="_blank">Explorer for Amazon S3</a>&nbsp;is
+<p>CenturyLink Cloud Object Storage is Amazon S3 compatible which means that a host of tools are readily available for maintaining buckets and interacting with bucket objects. <a href="http://www.cloudberrylab.com/" target="_blank">Explorer for Amazon S3</a>&nbsp;is
   a freeware product (that also has a paid version) that works with CenturyLink Cloud Object Storage.</p>
 <ul>
   <li><a href="http://www.cloudberrylab.com/free-amazon-s3-explorer-cloudfront-IAM.aspx" target="_blank">Download a copy of Explorer for S3</a> from their product website.</li>
@@ -32,14 +32,14 @@
   </li>
   <li>Back in Explorer for Amazon S3, click the <strong>File, S3 Compatible</strong> menu option in order to add the connection details for Object Storage.</li>
 </ul>
-<p><img src="https://t3n.zendesk.com/attachments/token/87ta5NWRhlj7cmk0WlGlC84vX/?name=01.png" alt="01.png" />&nbsp;</p>
+<p><img src="https://t3n.zendesk.com/attachments/token/87ta5NWRhlj7cmk0WlGlC84vX/?name=01.png" alt="01.png" /></p>
 <ul>
   <li>Enter a friendly name in the&nbsp;<strong>Display Name&nbsp;</strong>field (this does not correspond to any value in CenturyLink Cloud Object Storage), and populate the <strong>Service Point</strong>,&nbsp;<strong>Access Key ID&nbsp;</strong>and&nbsp;<strong>Secret Access Key</strong>    fields with the corresponding values from the Control Portal.
     <p><img src="https://t3n.zendesk.com/attachments/token/QqoxEfC8rImNPstoke3KDODmj/?name=03.png" alt="03.png" />
     </p>
   </li>
   <li>
-    <p>Return to the Explorer for Amazon S3 main window and change <strong>Source</strong> to the newly Created Storage Account. &nbsp;Using the drag and drop model of the software or use the Copy command to Upload data to Object Storage.</p>
+    <p>Return to the Explorer for Amazon S3 main window and change <strong>Source</strong> to the newly Created Storage Account. Using the drag and drop model of the software or use the Copy command to Upload data to Object Storage.</p>
   </li>
 </ul>
 <p><img src="https://t3n.zendesk.com/attachments/token/9BDZDWtOfEbqPvaJ64pHAvmI0/?name=05.png" alt="05.png" />

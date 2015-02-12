@@ -23,7 +23,7 @@
     <br /><img src="https://t3n.zendesk.com/attachments/token/NIHKPsn0RycWnckAkowV83eDR/?name=hyperscale-blueprint.png" alt="hyperscale-blueprint.png" />
   </li>
 </ul>
-<p>&nbsp;</p>
+<p></p>
 <p><strong>Minor Enhancements (2)</strong>
 </p>
 <ul>

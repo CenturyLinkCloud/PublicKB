@@ -140,7 +140,7 @@
   <li><strong>MonitoringManager: Error ensuring group hierarchy.</strong>&nbsp;&nbsp;Corrected problem in monitoring manager that prevented some users from loading the Monitors tab for certain server groups.</li>
   <li><strong>Blueprint: Details - When switching DC context from the BP details page, 404 error.</strong>&nbsp;&nbsp;Validated flow for users switching data center context from different pages within the Control Portal.</li>
   <li><strong>Queue: List page - timestamp should be converted to user's timezone.</strong>&nbsp;&nbsp;Converted UTC timestamps to the local user's timezone.</li>
-  <li><strong>Queue: multiple issues on queue list page related to account/status filters.&nbsp; </strong>Fixed problems where account filters were not defaulting to the current account and some items were only showing up after an auto-refresh.</li>
+  <li><strong>Queue: multiple issues on queue list page related to account/status filters. </strong>Fixed problems where account filters were not defaulting to the current account and some items were only showing up after an auto-refresh.</li>
   <li><strong>Servers: Group Details - IE 9 - Tiles do not have rounded corners.</strong> Formatting clean up.</li>
   <li><strong>Queue: Account filter list should be sorted by Business Name.</strong> Changed filtering to look at business name, not alias.</li>
   <li><strong>Blueprint: Error when deleting blueprint from remote DC.</strong> Fixed problem that occurred when deleting blueprints across data centers.</li>

@@ -29,7 +29,7 @@
   </ul>
 </ul>
 <strong>Description</strong>
-<p>Vital View has integrated their technology with the CenturyLink Cloud platform.&nbsp; The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this intelligent monitoring solution.</p>
+<p>Vital View has integrated their technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this intelligent monitoring solution.</p>
 <strong>Audience</strong>
 <ul>
   <li>CenturyLink Cloud Users</li>
@@ -43,7 +43,7 @@
   </li>
 </ul>
 <strong>Detailed Steps</strong>
-<p>Follow these step by step instructions to get started with a single-server Vital View deployment. &nbsp;</p>
+<p>Follow these step by step instructions to get started with a single-server Vital View deployment. </p>
 <ol>
   <li><em>Locate the Blueprint in the Blueprint Library</em>.&nbsp;
     <ul>
@@ -90,7 +90,7 @@
   <li><em>Deploy the Blueprint</em>.&nbsp;
     <ul>
       <li>Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.</li>
-      <li>This will kick off the blueprint deploy process and load a queue page to allow you to track the progress of the deployment. &nbsp;</li>
+      <li>This will kick off the blueprint deploy process and load a queue page to allow you to track the progress of the deployment. </li>
       <li>You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.</li>
       <li>Below is what a successful deployment looks like when completed.</li>
       <ul>
@@ -103,7 +103,7 @@
   <ul>
     <li>Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.&nbsp;</li>
     <li>
-      <p>Once the process has completed ­ you will need to determine the your IP address for the newly deployed host. If you navigate to the “Servers” panel and look for the IP addresses. Note the IP address, it will be required in future steps. &nbsp;See
+      <p>Once the process has completed ­ you will need to determine the your IP address for the newly deployed host. If you navigate to the “Servers” panel and look for the IP addresses. Note the IP address, it will be required in future steps. See
         the image below for help.</p>
     </li>
     <li><strong>Important</strong>: &nbsp;&nbsp;If you want to access Vital View from the internet you will need to manually add a Public IP address to the Vital View server via the CenturyLink Cloud control portal. To add a public IP please follow <a href="https://t3n.zendesk.com/entries/49195400-How-To-Add-Public-IP-to-Virtual-Machine">these instructions</a>.
@@ -115,11 +115,11 @@
   </ul>
   <li><em>Access The Vital View dashboard Interface</em></li>
   <ul>
-    <li>The Vital View web interface is accessible via https on port 443 of the server’s public or private IP address.&nbsp;Go ahead and navigate to the dashboard now. &nbsp;Ignore the warning about SSL certificate and continue.</li>
+    <li>The Vital View web interface is accessible via https on port 443 of the server’s public or private IP address.&nbsp;Go ahead and navigate to the dashboard now. Ignore the warning about SSL certificate and continue.</li>
     <ul>
       <li>https://IPADDRESS/vitalview/check_mk/login.py&nbsp;</li>
       <li>
-        <p>Mobile Devices can access the service by connecting to the Public IP address on the VitalView server &nbsp;</p>
+        <p>Mobile Devices can access the service by connecting to the Public IP address on the VitalView server </p>
       </li>
     </ul>
     <li>Create An Account - Once you’ve loaded the web interface, go ahead and create the account, you will automatically be logged in.<img src="https://t3n.zendesk.com/attachments/token/9pCReKVQehzAtw2vfyx90NiTA/?name=bc5.jpg" alt="bc5.jpg" />
@@ -128,7 +128,7 @@
 </ol>
 
 <p><strong>Pricing</strong></p>
-<p>The costs listed above in Steps 1 and 2 are for the CenturyLink Cloud infrastructure only. &nbsp;There are no Vital View license costs or additional fees bundled in.</p>
+<p>The costs listed above in Steps 1 and 2 are for the CenturyLink Cloud infrastructure only. There are no Vital View license costs or additional fees bundled in.</p>
 <p>After deploying this Blueprint, the user can secure entitlements to the Vital View technology by using the following steps:</p>
 <ul>
   <li>Contact BCMOne Vital View Support via telephone: (855) 662-7722</li>

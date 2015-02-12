@@ -23,7 +23,7 @@
     <br /><img src="https://t3n.zendesk.com/attachments/token/mUf0rdgE9eW53ElyzAYMVETzG/?name=ServerEditing.gif" alt="ServerEditing.gif" />
   </li>
 </ul>
-<p>&nbsp;</p>
+<p></p>
 <p><strong>Minor Enhancements (5)</strong>
 </p>
 <ul>

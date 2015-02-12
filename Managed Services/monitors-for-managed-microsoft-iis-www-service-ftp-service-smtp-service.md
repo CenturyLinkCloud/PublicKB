@@ -204,7 +204,7 @@ Monitors for Microsoft IIS FTP Service
     </tr>
     <tr>
       <td>
-        <p>FTP Bytes Received&nbsp;</p>
+        <p>FTP Bytes Received</p>
       </td>
       <td>
         <p>Alarms if the FTP Service is receiving more than x MB</p>
@@ -231,7 +231,7 @@ Monitors for Microsoft IIS FTP Service
     </tr>
     <tr>
       <td>
-        <p>SMTP Service&nbsp;</p>
+        <p>SMTP Service</p>
       </td>
       <td>
         <p>The IIS SMTP service is not running</p>

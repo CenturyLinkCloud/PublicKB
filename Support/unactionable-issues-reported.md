@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description (goal/purpose)</h3>
-<p>This KB contains some of the more humorous / unactionable issues that have been reported to the support organization. &nbsp;These are good examples of what not to put into a support ticket.</p>
+<p>This KB contains some of the more humorous / unactionable issues that have been reported to the support organization. These are good examples of what not to put into a support ticket.</p>
 <h3>Audience</h3>
 <ul>
   <li>All</li>
@@ -21,7 +21,7 @@
   <li>Help, my boss cannot get his email</li>
   <li>My server is down.</li>
   <li>We are experiencing that our sites are down</li>
-  <li>This is unacceptable, you cannot do maintenance. &nbsp;</li>
+  <li>This is unacceptable, you cannot do maintenance. </li>
 </ol>
 <div>
   <br />

@@ -12,7 +12,7 @@
 <p><img src="https://t3n.zendesk.com/attachments/token/lozlvaryvluko45/?name=profile.JPG" alt="profile.JPG" />
 </p>
 
-<p>Your PIN will be displayed on the following screen:&nbsp;</p>
+<p>Your PIN will be displayed on the following screen:</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/rtG4U4GYrbRZPA0Da61qnLC7k/?name=pin.png" alt="pin.png" />
 </p>
 <p>If you wish to manually set your PIN, highlight the PIN field and click. You can then enter a custom PIN (numeric, no alphabetic or special characters, 10 character limit)</p>

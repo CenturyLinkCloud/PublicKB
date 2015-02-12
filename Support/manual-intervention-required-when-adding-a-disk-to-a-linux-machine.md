@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description (goal/purpose)</h3>
-<p>Tier 3 supports the ability to add additional disks to Linux machines.&nbsp; This automated task can fail for various reasons requiring manual intervention on the customer machine in order to complete.&nbsp; These are the manual steps required to detect
+<p>Tier 3 supports the ability to add additional disks to Linux machines. This automated task can fail for various reasons requiring manual intervention on the customer machine in order to complete. These are the manual steps required to detect
   and mount a new disk.</p>
 
 <h3>Audience</h3>
@@ -29,7 +29,7 @@
     <br />
     <br /><em><strong>fdisk -l</strong></em>
     <br />
-    <br />This will show all current drives/ partitions on the machine.&nbsp; In most cases the newly added drive will not show up here as it has not yet been detected.
+    <br />This will show all current drives/ partitions on the machine. In most cases the newly added drive will not show up here as it has not yet been detected.
     <br />
     <br />
   </li>
@@ -48,7 +48,7 @@
     <br />
     <br /><em><strong>echo "- - -" &gt; /sys/class/scsi_host/host3/scan<br /></strong></em>
   </li>
-  <li>Run "fdisk -l" again and you should now see the new drive detected in the OS.&nbsp; Make a note of the device name (for this example we will assume /dev/sdd)</li>
+  <li>Run "fdisk -l" again and you should now see the new drive detected in the OS. Make a note of the device name (for this example we will assume /dev/sdd)</li>
   <li>The control site normally deploys partition-less file systems and as that is what the control site is compatible with we will do the same here (advanced users may create any partitioning they like however it may not be compatible with the control site)
     <br
     />The following command creates a new ext4 filesystem directly on the drive with no partitioning.

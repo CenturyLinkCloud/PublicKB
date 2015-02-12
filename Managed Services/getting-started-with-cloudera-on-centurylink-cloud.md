@@ -14,7 +14,7 @@
 </p>
 <p><strong>2. Click on the "Deploy Blueprint" button.</strong>
 </p>
-<p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/esjEXVwmqWjI7DHGSNtrAdGW1/?name=Cloudera_Article_2.png" alt="Cloudera_Article_2.png" />&nbsp;</p>
+<p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/esjEXVwmqWjI7DHGSNtrAdGW1/?name=Cloudera_Article_2.png" alt="Cloudera_Article_2.png" /></p>
 <p><strong>3.&nbsp;Fill out the appropriate details for the CLC Managed Cloudera Hadoop Blueprint.</strong>
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/Ob13N2J0Z800Hwp6MuXp0fDWt/?name=Cloudera_Article_3.png" alt="Cloudera_Article_3.png" />
@@ -25,7 +25,7 @@
 </p>
 <p><strong>5.&nbsp;Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.</strong>
 </p>
-<p><img src="https://t3n.zendesk.com/attachments/token/65hVJPzEIf7LYj6d8HFt4HygP/?name=Cloudera_Article_5.png" alt="Cloudera_Article_5.png" />&nbsp;</p>
+<p><img src="https://t3n.zendesk.com/attachments/token/65hVJPzEIf7LYj6d8HFt4HygP/?name=Cloudera_Article_5.png" alt="Cloudera_Article_5.png" /></p>
 <p>You will receive emails as each server is being built and then you will receive an additional email stating that the entire Cloudera cluster build is complete. Please do not use the servers until you have received this final email.</p>
 <p><strong>NOTE:</strong>&nbsp;The server now has the Cloudera Hadoop software installed and activated - your instances will be unmanaged or managed, based on the Blueprint deployed.</p>
 <p><strong>FREQUENTLY ASKED QUESTIONS</strong>

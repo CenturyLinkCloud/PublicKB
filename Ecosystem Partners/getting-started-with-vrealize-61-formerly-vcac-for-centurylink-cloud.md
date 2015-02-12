@@ -17,7 +17,7 @@
   <li>Auditing and logging of management activities</li>
   <li>Cross-environment visibility from a single user interface</li>
 </ul>
-<p>With its most recent release, VMware has built a vRealize “endpoint” to CenturyLink Cloud.&nbsp; This endpoint uses the CenturyLink Cloud API to provide basic creation and “day 2” management activities. Specifically vRealize offers the following capabilities
+<p>With its most recent release, VMware has built a vRealize “endpoint” to CenturyLink Cloud. This endpoint uses the CenturyLink Cloud API to provide basic creation and “day 2” management activities. Specifically vRealize offers the following capabilities
   for CenturyLink Cloud:</p>
 <ul>
   <li>
@@ -33,9 +33,9 @@
     <p><strong>Connect via RDP/SSH.</strong> Connect to servers via private IP address.</p>
   </li>
 </ul>
-<p>For CenturyLink customers who have built custom private clouds using VCE or hybrid solutions with vCloud air, vRealize provides a seamless integration point for extending deployments to the CenturyLink Cloud.&nbsp; Likewise, VMware customers looking to
+<p>For CenturyLink customers who have built custom private clouds using VCE or hybrid solutions with vCloud air, vRealize provides a seamless integration point for extending deployments to the CenturyLink Cloud. Likewise, VMware customers looking to
   extend their hybrid footprint into the CenturyLink Cloud can leverage vRealize to manage their CenturyLink Cloud virtual machines.</p>
-<p>The vRealize endpoint for CenturyLink Cloud was created by VMware.&nbsp; As such, VMware will perform all ongoing support related to the integration.&nbsp; vRealize has a plug-in architecture that supports 3rd party “<a href="http://www.vmware.com/files/pdf/vrealize/vmware-vrealize-operations-management-packs-wp-en.pdf">management packs</a>.”</p>
+<p>The vRealize endpoint for CenturyLink Cloud was created by VMware. As such, VMware will perform all ongoing support related to the integration. vRealize has a plug-in architecture that supports 3rd party “<a href="http://www.vmware.com/files/pdf/vrealize/vmware-vrealize-operations-management-packs-wp-en.pdf">management packs</a>.”</p>
 <p>To enable the CenturyLink Cloud endpoint within vRealize, please reach out to your VMware sales representative.</p>
 <h3>FAQs – vRealize Endpoint</h3>
 <p><strong>Q: What are the capabilities of the endpoint?</strong>

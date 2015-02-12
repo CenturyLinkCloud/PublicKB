@@ -7,8 +7,8 @@
 }}}
 
 Supported Guest Operating Systems for OVA/OVF Import
-<p>CenturyLink Cloud customers may wish to import OVA/OVF Guest Operating Systems to the platform via a <a href="http://www.centurylinkcloud.com/products/support/service-tasks" target="_blank">service task</a>. &nbsp;Customers frequently request a list of
-  the supported Guest Operating Systems the CenturyLink Cloud supports for Import and this KB is meant to address this query. &nbsp;</p>
+<p>CenturyLink Cloud customers may wish to import OVA/OVF Guest Operating Systems to the platform via a <a href="http://www.centurylinkcloud.com/products/support/service-tasks" target="_blank">service task</a>. Customers frequently request a list of
+  the supported Guest Operating Systems the CenturyLink Cloud supports for Import and this KB is meant to address this query. </p>
 <h3>Prerequisites</h3>
 <ul>
   <li>A CenturyLink Cloud Account</li>
@@ -16,7 +16,7 @@ Supported Guest Operating Systems for OVA/OVF Import
   </li>
 </ul>
 <h3>Exclusions</h3>
-<p>Industry packaged Virtual Appliances from vendors, including but not limited to, Citrix VPX, F5 VE, Twinstrata, should be vetted with CenturyLink Cloud Sales to validate compatibility. &nbsp;The support of these packaged virtual appliances are not the
+<p>Industry packaged Virtual Appliances from vendors, including but not limited to, Citrix VPX, F5 VE, Twinstrata, should be vetted with CenturyLink Cloud Sales to validate compatibility. The support of these packaged virtual appliances are not the
   focus of this KB.</p>
 <h3>Supported Operating Systems List</h3>
 <ul>

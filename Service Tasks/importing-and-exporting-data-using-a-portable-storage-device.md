@@ -7,8 +7,8 @@
 }}}
 
 <h3>Description (goal/purpose)</h3>
-<p>CenturyLink Cloud supports importing and exporting data through portable storage devices into our data centers. &nbsp;This article provides an overview of this billable service. &nbsp;Billable charge details can be found here: &nbsp;http://www.centurylinkcloud.com/products/support/service-tasks.
-  &nbsp;&nbsp;</p>
+<p>CenturyLink Cloud supports importing and exporting data through portable storage devices into our data centers. This article provides an overview of this billable service. Billable charge details can be found here: &nbsp;http://www.centurylinkcloud.com/products/support/service-tasks.
+  &nbsp;</p>
 <p>Service Task prioritization: &nbsp;https://t3n.zendesk.com/entries/21651149-Ticket-Prioritization-Matrix</p>
 
 
@@ -83,7 +83,7 @@
 <ul>
   <li>Will CenturyLink Cloud provide for shipping costs?</li>
   <ul>
-    <li>No, shipping costs will be the responsible of the customer. &nbsp;When Centurylink Cloud sends the device back, we will charge the cost of shipping to your account</li>
+    <li>No, shipping costs will be the responsible of the customer. When Centurylink Cloud sends the device back, we will charge the cost of shipping to your account</li>
   </ul>
   <li>Can I provide unencrypted data?</li>
   <ul>

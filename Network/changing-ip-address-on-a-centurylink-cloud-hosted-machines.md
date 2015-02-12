@@ -10,8 +10,8 @@
 <p>Changing IP addresses</p>
 
 <strong>DESCRIPTION&nbsp;</strong>
-<p>At this time, there is no automated way of changing IP addresses via Control Portal.&nbsp; Even with careful planning there may be times when IP addresses will need to be modified.&nbsp; This is a 2 step process to coordinate the change with the Centurylink
-  Cloud Engineer.&nbsp;</p>
+<p>At this time, there is no automated way of changing IP addresses via Control Portal. Even with careful planning there may be times when IP addresses will need to be modified. This is a 2 step process to coordinate the change with the Centurylink
+  Cloud Engineer.</p>
 
 <strong>AUDIENCE</strong>
 <p>Centurylink Cloud Users</p>
@@ -19,7 +19,7 @@
 <strong>PROCESS</strong>
 <ol>
   <li>
-    <p>Gather the necessary information for the change.&nbsp; This will include the following</p>
+    <p>Gather the necessary information for the change. This will include the following</p>
   </li>
   <ol>
     <li>
@@ -50,13 +50,13 @@
         <p>This mail will also include granting permission for the Cloud engineer to login to the server to make the necessary network configuration changes. </p>
       </li>
       <li>
-        <p>Any downtime requirements.&nbsp; This change does require the server to go offline for a short duration &lt; 1min </p>
+        <p>Any downtime requirements. This change does require the server to go offline for a short duration &lt; 1min </p>
       </li>
     </ol>
   </ol>
 </ol>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2. &nbsp;Self-servicing the change on the server and allowing the Cloud engineer to perform the updates to Control.&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. &nbsp;Include the gathered information from step 1 and send mail to noc@tier3.com with subject line <strong>"IP change request (Control update only)"</strong>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2. Self-servicing the change on the server and allowing the Cloud engineer to perform the updates to Control.</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. Include the gathered information from step 1 and send mail to noc@tier3.com with subject line <strong>"IP change request (Control update only)"</strong>
 </p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2, &nbsp;Please obtain a valid free IP from the network page and configure on the server manually. <strong>CAUTION:</strong> &nbsp;<strong>&nbsp;This will only be applicable for IPs on the same subnet, changing the server IP address to a different network vlan will cause the server to go offline and requires a Cloud engineer to resolve!</strong>
 </p>
@@ -64,6 +64,6 @@
 
 <ol>
   <li>
-    <p>Mail notification from the ticket will be sent to you upon completion of the task.&nbsp;&nbsp;</p>
+    <p>Mail notification from the ticket will be sent to you upon completion of the task.&nbsp;</p>
   </li>
 </ol>

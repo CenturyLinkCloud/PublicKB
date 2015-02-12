@@ -19,7 +19,7 @@
     any sub-account. For more details, view the Knowledge Base article called <a href="http://help.tier3.com/entries/22604623-searching-for-records-in-the-account-activity-history-log" target="_blank">"Searching for Records in the Account Activity History Log."</a>
   </li>
 </ul>
-<p>&nbsp;</p>
+<p></p>
 <p><strong>Minor Defects Fixed or Enhancements Added (8)</strong>
 </p>
 <hr />

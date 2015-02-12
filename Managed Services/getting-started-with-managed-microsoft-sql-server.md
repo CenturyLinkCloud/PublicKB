@@ -6,12 +6,12 @@
   "contentIsHTML": true
 }}}
 
-<p>The Microsoft SQL Server (MS-SQL) database is a comprehensive and integrated data management and analysis software application that enables the reliable management of mission-critical information.&nbsp;</p>
+<p>The Microsoft SQL Server (MS-SQL) database is a comprehensive and integrated data management and analysis software application that enables the reliable management of mission-critical information.</p>
 <p>Here's how to create a managed MS SQL environment in CenturyLink Cloud.</p>
-<p><strong>1.&nbsp;</strong>Search for the "MS SQL" in the Blueprint library. &nbsp;Then, click on the “CLC Managed MS SQL” Blueprint.&nbsp;</p>
+<p><strong>1.&nbsp;</strong>Search for the "MS SQL" in the Blueprint library. Then, click on the “CLC Managed MS SQL” Blueprint.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/PYtc3AftHQdmEpzapAaHmqt4Y/?name=Summary.jpg" alt="Summary.jpg" />
 </p>
-<p><strong>2.</strong> Click on the deploy blueprint button.&nbsp;<strong>NOTE: The costs included in the Blueprint do not include licenses fees, only managed services fees. &nbsp;Also, before you can deploy Managed MS SQL, you must create a Managed Windows server.</strong>
+<p><strong>2.</strong> Click on the deploy blueprint button.&nbsp;<strong>NOTE: The costs included in the Blueprint do not include licenses fees, only managed services fees. Also, before you can deploy Managed MS SQL, you must create a Managed Windows server.</strong>
 </p>
 <p><strong><img src="https://t3n.zendesk.com/attachments/token/Z7Kh5cXfh6uaeo87rmD4rYZ2u/?name=Detail.jpg" alt="Detail.jpg" /></strong>
 </p>
@@ -25,7 +25,7 @@
 <p><strong><img src="https://t3n.zendesk.com/attachments/token/48ejc3y2YQPrHJJpxU8dbfN0z/?name=Confirm.jpg" alt="Confirm.jpg" />&nbsp;</strong>
 </p>
 <p><strong>5.&nbsp;</strong>Once verified, click on the 'deploy blueprint' button. You will be presented with the deployment details along with an email stating the Blueprint has been queued.</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/mhc0FxUs2wo2h8OK8Vyp5ZgBH/?name=Queue.jpg" alt="Queue.jpg" />&nbsp;</p>
+<p><img src="https://t3n.zendesk.com/attachments/token/mhc0FxUs2wo2h8OK8Vyp5ZgBH/?name=Queue.jpg" alt="Queue.jpg" /></p>
 <p>&nbsp;You will receive an email that your Blueprint has been installed when the Blueprint is complete.</p>
 <p><strong>**NOTE** The server now has the Managed MS SQL software installed and activated.</strong>
 </p>
@@ -41,7 +41,7 @@
 <p>A: Microsoft SQL 2014; 2012; 2008 R2; 2008</p>
 <p><strong>Q: What Operating Systems are supported for Managed MS SQL? </strong>
 </p>
-<p>A: Managed Microsoft Windows 2008R2 and Windows 2012.&nbsp;</p>
+<p>A: Managed Microsoft Windows 2008R2 and Windows 2012.</p>
 <p><strong>Q: Can the customer provide their own MS SQL Licenses?</strong>
 </p>
 <p>A: Not at this time.</p>

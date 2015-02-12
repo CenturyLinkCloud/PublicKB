@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description</h3>
-<p>The CenturyLink Cloud provides Linux virtual machine templates as part of the Cloud Platform. &nbsp;Within this KB customers will find the current release details for the Linux templates deployed.</p>
+<p>The CenturyLink Cloud provides Linux virtual machine templates as part of the Cloud Platform. Within this KB customers will find the current release details for the Linux templates deployed.</p>
 <h3>Audience</h3>
 <ul>
   <li>Cloud Administrators</li>

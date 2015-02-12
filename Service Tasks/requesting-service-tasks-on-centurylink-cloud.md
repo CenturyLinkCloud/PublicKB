@@ -23,9 +23,9 @@
 </ul>
 <h3>Detailed Steps to Request a Service Task</h3>
 <ol>
-  <li>Send email to <a href="mailto:ServiceTasks@tier3.com">ServiceTasks@tier3.com</a>. &nbsp;This will automatically create a ticket for the Service Tasks team to review. &nbsp;</li>
-  <li>You will get an acknowledgement that we have received your request.&nbsp; Requests are reviewed by our Service Tasks team daily.</li>
-  <li>From there, we work with you and your team to ensure the task is completed as requested.&nbsp; Updates on progress are provided via our ticketing system.</li>
+  <li>Send email to <a href="mailto:ServiceTasks@tier3.com">ServiceTasks@tier3.com</a>. This will automatically create a ticket for the Service Tasks team to review. </li>
+  <li>You will get an acknowledgement that we have received your request. Requests are reviewed by our Service Tasks team daily.</li>
+  <li>From there, we work with you and your team to ensure the task is completed as requested. Updates on progress are provided via our ticketing system.</li>
 </ol>
 
 

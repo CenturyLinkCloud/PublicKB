@@ -27,7 +27,7 @@
         <p>Process Monitor</p>
       </td>
       <td>
-        <p>Verifies that Apache is running; if process is not running will automatically restart service.&nbsp; If this fails an alarm will be generated to Operations for resolution.</p>
+        <p>Verifies that Apache is running; if process is not running will automatically restart service. If this fails an alarm will be generated to Operations for resolution.</p>
       </td>
       <td>
         <p>1 Min</p>
@@ -38,7 +38,7 @@
         <p>Response Time</p>
       </td>
       <td>
-        <p>The amount of time it takes the Apache HTTPd server to respond to a simple request.&nbsp; The threshold is configurable.&nbsp; The default is greater than 2.00 seconds.</p>
+        <p>The amount of time it takes the Apache HTTPd server to respond to a simple request. The threshold is configurable. The default is greater than 2.00 seconds.</p>
       </td>
       <td>
         <p>5 Min</p>
@@ -126,7 +126,7 @@
         <p>Busy Workers %</p>
       </td>
       <td>
-        <p>Monitors the percentage of busy works versus max clients.&nbsp; The threshold is configurable.&nbsp; The default threshold is &gt;99%</p>
+        <p>Monitors the percentage of busy works versus max clients. The threshold is configurable. The default threshold is &gt;99%</p>
       </td>
       <td>
         <p>5 Min</p>
@@ -137,7 +137,7 @@
         <p>Clients in Keep Alive %</p>
       </td>
       <td>
-        <p>Monitors the percentage of clients in keep alive state versus max clients.&nbsp; The threshold is configurable.&nbsp; The default threshold is &gt;25%.</p>
+        <p>Monitors the percentage of clients in keep alive state versus max clients. The threshold is configurable. The default threshold is &gt;25%.</p>
       </td>
       <td>
         <p>5 Min</p>
@@ -148,7 +148,7 @@
         <p>Clients in DNS Lookup %</p>
       </td>
       <td>
-        <p>Monitors the percentage of clients in the dns lookup state versus max clients.&nbsp; The threshold is configurable.&nbsp; The default threshold is &gt;25%.</p>
+        <p>Monitors the percentage of clients in the dns lookup state versus max clients. The threshold is configurable. The default threshold is &gt;25%.</p>
       </td>
       <td>
         <p>5 Min</p>
@@ -159,7 +159,7 @@
         <p>Clients in Logging %</p>
       </td>
       <td>
-        <p>Monitors the percentage of clients in the logging state versus max clients.&nbsp; The threshold is configurable.&nbsp; The default threshold is &gt;80%.</p>
+        <p>Monitors the percentage of clients in the logging state versus max clients. The threshold is configurable. The default threshold is &gt;80%.</p>
       </td>
       <td>
         <p>5 Min</p>
@@ -167,10 +167,10 @@
     </tr>
     <tr>
       <td>
-        <p>Total Mem Usage %&nbsp;</p>
+        <p>Total Mem Usage %</p>
       </td>
       <td>
-        <p>Monitors the total memory usage of all httpd processes versus total physical memory of the system.&nbsp; The threshold is configurable.&nbsp; The default threshold is &gt;50%.</p>
+        <p>Monitors the total memory usage of all httpd processes versus total physical memory of the system. The threshold is configurable. The default threshold is &gt;50%.</p>
       </td>
       <td>
         <p>5 Min</p>
@@ -181,7 +181,7 @@
         <p>URL Monitor</p>
       </td>
       <td>
-        <p>Remote monitor, which traverses the Internet and performs a simple http request and alerts when the specified timeout is exceeded.&nbsp; The default timeout is 120 seconds.&nbsp; The threshold is configurable and can be managed through the SAVVIS
+        <p>Remote monitor, which traverses the Internet and performs a simple http request and alerts when the specified timeout is exceeded. The default timeout is 120 seconds. The threshold is configurable and can be managed through the SAVVIS
           Station Portal.</p>
       </td>
       <td>

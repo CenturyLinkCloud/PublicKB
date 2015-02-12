@@ -7,11 +7,11 @@
 }}}
 
 <h3>Description</h3>
-<p>CenturyLink Cloud offers customers a choice of shared or dedicated load balancing services delivered using Citrix Netscaler VPX devices. &nbsp;The matrix below provides a high level comparison of the two offerings allowing customers to make informed decisions
-  on their <strong>Layer 4</strong> load balancing solution.&nbsp;</p>
+<p>CenturyLink Cloud offers customers a choice of shared or dedicated load balancing services delivered using Citrix Netscaler VPX devices. The matrix below provides a high level comparison of the two offerings allowing customers to make informed decisions
+  on their <strong>Layer 4</strong> load balancing solution.</p>
 <h3><img src="https://t3n.zendesk.com/attachments/token/v1eqBILwtFaY6yKzEYcvFsCiH/?name=load+balancing+chart.png" alt="load_balancing_chart.png" /></h3>
 <h3>Additional Details</h3>
-<p>The links below provide additional details on the capabilities and features of the Citrix Netscaler VPX Platform. &nbsp;</p>
+<p>The links below provide additional details on the capabilities and features of the Citrix Netscaler VPX Platform. </p>
 <p><a href="http://help.tier3.com/entries/23688917-Load-Balancing-Dedicated-vs-Shared" target="_blank">Shared vs Dedicated Network Load Balancing Architecture Considerations</a>
 </p>
 <p><a href="http://www.citrix.com/products/netscaler-application-delivery-controller/features/platforms/vpx.html" target="_blank">Netscaler VPX Overview</a>
