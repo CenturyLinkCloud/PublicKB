@@ -1,6 +1,5 @@
 {{{
   "category_order": [
-    "Support",
     "Accounts & Users",
     "Autoscale",
     "Blueprints",
