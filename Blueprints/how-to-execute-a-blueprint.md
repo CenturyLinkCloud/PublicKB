@@ -19,11 +19,10 @@
     <br /><img src="https://t3n.zendesk.com/attachments/token/8qjdlxb9o5pniio/?name=blueprint-e-02.png" alt="blueprint-e-02.png" />
   </li>
 </ul>
-<div><strong>&nbsp;</strong>
-</div>
-<div><strong>2. Deploy the Blueprint</strong>
-</div>
-<div>
+<p><strong>&nbsp;</strong>
+</p>
+<p><strong>2. Deploy the Blueprint</strong>
+</p>
   <ul>
     <li>Click "Deploy Blueprint" on the selected blueprint.
       <br /><img src="https://t3n.zendesk.com/attachments/token/odmq6hrls4o7nwx/?name=blueprint-e-03.png" alt="blueprint-e-03.png" />
@@ -39,4 +38,3 @@
       <br /><img src="https://t3n.zendesk.com/attachments/token/zkfdaojypygmlw8/?name=blueprint-e-06.png" alt="blueprint-e-06.png" />
     </li>
   </ul>
-</div>
