@@ -49,24 +49,24 @@ Our support ticketing system, ZenDesk is where you can track all the updates to 
 3. After you Sign up, you will receive a welcome email from noc@tier3.com for verification. Click on the verification link and choose your password. Your account will be active right away. 
 
 
-###Iformation for Submitting the Ticket
+###Information for Submitting the Ticket
 
 Partners need to make sure they email the right email alias based on the urgency of the issue. You can use the ZenDesk for submitting tickets, the default priority for those tickets will be low. We recommend emailing. The following information needs to be provided while submitting a ticket:
 
-#	Partner Ticket Number (if tracked under a different number on your end)
-#	Customer Name and Alias
-#	External IP
-#	Root/Admin Password if CenturyLink Cloud (still referred as Tier3 account) to Login
-#	PIN (It is under Profile setting - details in section below)
-#	Server Name
-#	Your control.tier3.com Username and Pin Number
-#	Copy of the Error(s)
-#	Brief description of the problem
-#	Troubleshooting steps we have taken to verify/solve the problem
-#	Which Stack the Error/Server is on that is Having Issues
-#	Screenshot of Issue if Possible/Available
-#	Your Full Name on all Ticket Updates
-#	Email Address of Anyone That Needs to be cc’d. The best practise is to add your Account Rep at CenturyLink to this email
+*	Partner Ticket Number (if tracked under a different number on your end)
+*	Customer Name and Alias
+*	External IP
+*	Root/Admin Password if CenturyLink Cloud (still referred as Tier3 account) to Login
+*	PIN (It is under Profile setting - details in section below)
+*	Server Name
+*	Your control.tier3.com Username and Pin Number
+*	Copy of the Error(s)
+*	Brief description of the problem
+*	Troubleshooting steps we have taken to verify/solve the problem
+*	Which Stack the Error/Server is on that is Having Issues
+*	Screenshot of Issue if Possible/Available
+*	Your Full Name on all Ticket Updates
+*	Email Address of Anyone That Needs to be cc’d. The best practise is to add your Account Rep at CenturyLink to this email
 
 
 ###SLA for Support
@@ -271,10 +271,15 @@ Our team of network engineers has deep operational expertise to quickly and effi
 Our Support team is on call 24x7, and the engineers and Leads are on Shifts (Rotation). It is important to keep in mind that our Executives are notified for Urgent Issues. Please use Urgent and High Priority appropriately. Our support team will flag any abuse to this Priority and the user might not get the appropriate support in future, if it has been abused. They are on a 24x7 rotation.
 
 **Shift Engineers**: Triage the shared queue
+
 **Shift Leads**: Shift Leadership layer
+
 **Subject Matter Expert (SME)**: Engineers with specific skillsets (network, storage, platform, etc.)
+
 **Support Manager Layer**: Support Management Team
+
 **Executive Overhead**: The CenturyLink Cloud Executive Staff
+
 
 
 ###Security Issues
@@ -335,13 +340,10 @@ These steps sit inside the “Restoration Process” within the overall Incident
 The best practice for reducing escalation is by understanding the CenturyLink product and features very well. 
 Where to learn more about CenturyLink:
 
-**CenturyLink Cloud Website**
-http://www.centurylinkcloud.com/
+**CenturyLink Cloud Website**: http://www.centurylinkcloud.com/
 
-**CenturyLink Cloud Support Overview**
-http://www.centurylinkcloud.com/support
+**CenturyLink Cloud Support Overview**: http://www.centurylinkcloud.com/support
 
-**CenturyLink Cloud Blog**
-http://www.centurylinkcloud.com/blog
+**CenturyLink Cloud Blog**: http://www.centurylinkcloud.com/blog
 
 	 
