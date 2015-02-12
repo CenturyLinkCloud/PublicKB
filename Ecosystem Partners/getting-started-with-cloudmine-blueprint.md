@@ -3,10 +3,10 @@
   "date": "12-4-2014",
   "author": "David Shacochis",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
-<p><strong>Partner Profile</strong>
+###Partner Profile
 </p>
 <ul>
   <li>CloudMine - "Blend public cloud with private data to accelerate the next generation of enterprise mobility"</li>
@@ -20,22 +20,27 @@
     </ul>
   </li>
 </ul>
-<strong>Description</strong>
-<p>CloudMine&nbsp;has integrated their technology with the CenturyLink Cloud platform.&nbsp; The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Mobile Backend&nbsp;solution.</p>
-<strong>Audience</strong>
+
+####Description
+<p>CloudMine has integrated their technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Mobile Backend solution.</p>
+
+####Audience####
 <ul>
   <li>CenturyLink Cloud Users</li>
 </ul>
-<strong>Impact</strong>
+
+####Impact
 <p>After reading this article, the user should feel comfortable getting started using the partner technology on CenturyLink Cloud.</p>
-<strong>Prerequisite</strong>&nbsp;
+
+####Prerequisite
 <ul>
   <li>Access to the CenturyLink Cloud platform as an authorized user.</li>
 </ul>
-<strong>Detailed Steps</strong>
+
+###Detailed Steps
 <p>Follow these step by step instructions to get started with a single-server CloudMine deployment. </p>
 <ol>
-  <li><em>Locate the Blueprint in the Blueprint Library</em>.&nbsp;
+  <li><em>Locate the Blueprint in the Blueprint Library</em>.
     <ul>
       <li>Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.</li>
       <li>Search for “CloudMine” in the keyword search on the right side of the page.</li>
@@ -46,14 +51,14 @@
       </li>
     </ul>
   </li>
-  <li><em>Choose the Blueprint</em>.&nbsp;
+  <li><em>Choose the Blueprint</em>.
     <ul>
       <li>Click on the "Deploy Blueprint" button.</li>
       <li><img src="https://t3n.zendesk.com/attachments/token/7w7WQEjwMFz4HocjlmwncK5zD/?name=CM3.png" alt="CM3.png" />
       </li>
     </ul>
   </li>
-  <li><em>Configure the Blueprint</em>.&nbsp;
+  <li><em>Configure the Blueprint</em>.
     <ul>
       <li>Complete the information/fields required by the Blueprint wizard.</li>
       <li>On the first page, “Customize Blueprint”, ensure the following options are configured.</li>
@@ -68,25 +73,25 @@
       </li>
     </ul>
   </li>
-  <li><em>Review and Confirm the Blueprint</em>.&nbsp;
+  <li><em>Review and Confirm the Blueprint</em>.
     <ul>
       <li>Click “next: step 2”</li>
       <li>Verify your configuration details.</li>
     </ul>
   </li>
-  <li><em>Deploy the Blueprint</em>.&nbsp;
+  <li><em>Deploy the Blueprint</em>.
     <ul>
       <li>Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.</li>
       <li>This will kick off the blueprint deploy process and load a page to allow you to track the progress of the deployment. Generally, it will take 15 to 20 minutes to configure all of the components.</li>
     </ul>
   </li>
-  <li><em>Monitor the Activity Queue</em>.&nbsp;
+  <li><em>Monitor the Activity Queue</em>.
     <ul>
       <li>Monitor the Deployment Queue to view the progress of the blueprint.</li>
       <li>You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.</li>
     </ul>
   </li>
-  <li><em>Get Busy!</em>&nbsp;</li>
+  <li><em>Get Busy!</em></li>
   <ul>
     <li>Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.&nbsp;</li>
     <li>
@@ -125,16 +130,17 @@
   </li>
 </ul>
 
-<p><strong>Frequently Asked Questions</strong></p>
-<p>Where do I obtain my&nbsp;CloudMine&nbsp;License?</p>
+###Frequently Asked Questions
+
+<p>Where do I obtain my CloudMine License?</p>
 <ul>
   <li>Contact CloudMine via telephone: (855) 662-7722</li>
-  <li>Contact Cloudmine via&nbsp;<a href="https://cloudmine.me/contact/">contact page one their website</a>
+  <li>Contact Cloudmine via <a href="https://cloudmine.me/contact/">contact page one their website</a>
   </li>
 </ul>
-<p>&nbsp;Who should I contact for support?</p>
+<p>Who should I contact for support?</p>
 <ul>
-  <li>For issues related to deploying the&nbsp;CloudMine&nbsp;Blueprint on CenturyLink Cloud, please contact&nbsp;<a href="mailto:CenturyLinksupport@cloudmine.me">CenturyLinksupport@cloudmine.me</a>
+  <li>For issues related to deploying the CloudMine& Blueprint on CenturyLink Cloud, please contact <a href="mailto:CenturyLinksupport@cloudmine.me">CenturyLinksupport@cloudmine.me</a>
   </li>
-  <li>For issues related to cloud infrastructure (VM’s, network, etc), please open a ticket using the CenturyLink Cloud&nbsp;<a href="https://t3n.zendesk.com/entries/23610702-How-do-I-report-a-support-issue-">Support Process</a>.</li>
+  <li>For issues related to cloud infrastructure (VM’s, network, etc), please open a ticket using the CenturyLink Cloud <a href="https://t3n.zendesk.com/entries/23610702-How-do-I-report-a-support-issue-">Support Process</a>.</li>
 </ul>
