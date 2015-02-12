@@ -6,6 +6,27 @@
   "contentIsHTML": false
 }}}
 
+
+### Purpose
+
+Explain how to setup a Demo Account in CenturyLink Cloud.  
+
+### Benefits
+* Partners can use this account to perform demonstrations of CenturyLink Cloud for their customers.  
+
+### Intended Audience
+* Sales Engineers
+* Sales
+
+### What’s Included
+* Step-by-step process for how to setup a Demo Account.
+
+### Partner Action Items
+* Setup a Demo Account so you can perform demos for your customers.
+
+---
+
+
 ###Demo Account Setup for Partners on CenturyLink Cloud
 
 The setup process for creating a demo account takes about 2 hours. Let's get started.

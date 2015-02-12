@@ -6,6 +6,39 @@
   "contentIsHTML": false
 }}}
 
+### Purpose
+
+To explain:
+* What it means to ?White Label the Portal.?
+* Which brand elements and information can be white labeled in the portal.
+* Provide step-by-step instructions for white labeling the portal.
+
+
+### Benefits
+
+* Allows Partners to white label the CenturyLink Cloud as ?their own.?
+* Provides competitive point of differentiation to other public cloud offerings.
+* Reduces time and costs associated with developing your own cloud.
+
+### Audience
+
+* Marketing
+* Sales
+* Support 
+
+### What's Included
+
+* The specific brand elements and information that can be white labeled in the portal.
+* Step-by-step instructions for white labeling brand elements and information in the portal.
+
+
+### Partner Action Items
+
+Complete White Labeling the Portal including logos, colors, notifications and support elements and information.
+
+---
+
+
 ###What Is "White Labeling"?
 
 "White Labeling the Portal" simply means you can remove specific CenturyLink brand elements and information and replace them with you own:

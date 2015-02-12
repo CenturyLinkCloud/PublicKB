@@ -37,6 +37,8 @@ Explain
 * Understand the process for receiving billing data.
 * Send email alias of billing report recipient to Onboarding Manager.
 
+---
+
 ### The Basics of Pricing and Discounts
 
 #### Cloud Portal Pricing

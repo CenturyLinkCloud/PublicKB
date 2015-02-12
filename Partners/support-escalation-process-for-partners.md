@@ -6,6 +6,42 @@
   "contentIsHTML": false
 }}}
 
+
+### Purpose
+
+To explain:
+* Learn About CenturyLink CLoud Support
+* How Partner supports their customer- Expectation
+* How Partners submits and tracks tickets
+* Product resources
+
+### Benefits
+
+* Have a good understanding of CenturyLink Support
+* Effectively support Customers
+* Help Plan and Build Partner Support Team based on the criteria mentioned in the document
+
+### Audience
+
+* Partner Support Team
+
+### What's Included
+
+* CenturyLink Cloud Support Overview
+* Partner Support Overview
+* How to Escalate to CenturyLink
+* Product Resources
+
+### Partner Action Items
+
+* Make sure this information is distributed to support team
+* Create Support Email alias and share with Onboarding Manager
+* Setup account with Zendesk
+
+
+---
+
+
 ###Support Introduction
 
 CenturyLink Cloud’s comprehensive, secure, and global cloud platform is built for business &mdash; and we back it with business-class support options. Our reseller partner’s choose from the two different Support Tiers: **Professional** or **Enterprise**.
