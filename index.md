@@ -4,6 +4,7 @@
     "Accounts & Users",
     "Autoscale",
     "Blueprints",
+    "Service Tasks",
     "Control Portal",
     "Ecosystem Partners",
     "General",
@@ -15,7 +16,6 @@
     "Physical Servers",
     "Private Cloud",
     "Release Notes",
-    "Servers",
-    "Service Tasks"
+    "Servers"
   ] 
 }}}
