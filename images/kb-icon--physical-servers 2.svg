@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="68px" height="64px" viewBox="0 0 68 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Imported Layers</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="CLC_KB_Home_3v3c" sketch:type="MSArtboardGroup" transform="translate(-682.000000, -755.000000)">
+            <g id="Imported-Layers" sketch:type="MSLayerGroup" transform="translate(684.000000, 757.000000)">
+                <path d="M12.995,14.608 L51.508,14.608 L51.508,24.66 L12.995,24.66 L12.995,14.608 Z M12.995,28.959 L51.508,28.959 L51.508,39.011 L12.995,39.011 L12.995,28.959 Z M12.995,43.31 L51.508,43.31 L51.508,53.362 L12.995,53.362 L12.995,43.31 Z" id="Stroke-1" stroke="#009245" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M47.257,19.662 C47.257,20.589 46.506,21.341 45.579,21.341 C44.652,21.341 43.9,20.589 43.9,19.662 C43.9,18.735 44.652,17.983 45.579,17.983 C46.506,17.983 47.257,18.735 47.257,19.662 L47.257,19.662 Z M47.257,34.271 C47.257,35.198 46.506,35.949 45.579,35.949 C44.652,35.949 43.9,35.198 43.9,34.271 C43.9,33.343 44.652,32.592 45.579,32.592 C46.506,32.592 47.257,33.343 47.257,34.271 L47.257,34.271 Z M47.257,48.328 C47.257,49.255 46.506,50.007 45.579,50.007 C44.652,50.007 43.9,49.255 43.9,48.328 C43.9,47.401 44.652,46.649 45.579,46.649 C46.506,46.649 47.257,47.401 47.257,48.328 L47.257,48.328 Z" id="Stroke-2" stroke="#009245" stroke-width="2.5" sketch:type="MSShapeGroup"></path>
+                <path d="M34.543,58.793 C34.543,60.151 33.442,61.252 32.084,61.252 C30.726,61.252 29.626,60.151 29.626,58.793 C29.626,57.435 30.726,56.334 32.084,56.334 C33.442,56.334 34.543,57.435 34.543,58.793" id="Fill-3" fill="#009245" sketch:type="MSShapeGroup"></path>
+                <path d="M32.251,53.619 L32.251,58.851" id="Stroke-4" stroke="#009245" stroke-width="3" sketch:type="MSShapeGroup"></path>
+                <path d="M51.508,58.852 L12.932,58.852 M0.401,60.032 L0.401,15.094 L32.271,0.054 L63.841,15.094 L63.841,60.032" id="Stroke-5" stroke="#009245" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
