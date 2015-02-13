@@ -16,6 +16,6 @@
     "Private Cloud",
     "Release Notes",
     "Servers",
-    "Service Tasks",
+    "Service Tasks"
   ] 
 }}}
