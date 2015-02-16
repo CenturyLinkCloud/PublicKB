@@ -8,114 +8,177 @@
 
 ### Purpose
 
-To explain:
-* Partner benefits of customer onboarding to CenturyLink Cloud.
-* Recommended process for customer onboarding.
++
+
+  - Partner Resources available for Sales Support, Account Management, Product Information, Platform Support and Billing.  
+
 
 ### Benefits
 
-* Accelerates revenue by building a sense of urgency for implementation.
-* Improves customer adoption and satisfaction for CenturyLink Cloud. 
++ 
+
+  - Partners know the resources that are available and how to engage them  throughout the customer life cycle.
+  - Improves sales acceleration and customer satisfaction.
+
 
 ### Audience
 
-* Engineering
+- Sales
+- Sales Operations
+- Engineering 
+
 
 ### What's Included
 
-* Customer Onboarding – The Basics.
-* Goals, objectives and benefits of customer onboarding.
-* The roles and responsibilities for customer onboarding.
-* Detailed step-by-step process for onboarding customers.
+- Partner Resources – At a Glance.
+- The roles, responsibilities and contact information for each Partner Resource.
+
 
 ### Partner Action Items
 
-* Develop onboarding plan for your customer.
-* Complete customer onboarding. 
+- Understand the Partner Resources and capabilities available to support and close CenturyLink Cloud deals.
+- Insure your employees know how to contact each Partner Resource.
 
 
 ---
 
-### The Basics
 
-#### Definition
+## Definitions and Contact Information
 
-Onboarding is a process that we’ve developed to insure customers new to CenturyLink Cloud have an outstanding experience and a high degree of customer satisfaction.
+### Definition
 
-#### Why Onboard?
+**Sales Support*- is simply defined as transactional support needed to close a CenturyLink Cloud deal. CenturyLink provides reasonable assistance and access to technical resources to ensure deal closure. Sales Support resources includes the information, capabilities and team available for Partners to close CenturyLink Cloud deals.
 
-A clearly, defined onboarding process improves the speed of implementation, accelerates revenue, ensures deeper understanding of the platform and reduces work load on operations and sales teams.
+The Partner Resource Center (PRC) is your central point of contact for Sales Support. You can reach them at:
 
-#### Onboarding Recommendations
+- ccaclouddealdesk@centurylinkcloud.com
+- wmgclouddealdesk@centurylinkcloud.com
 
-We share our own best practices for customer onboarding so you can leverage them when you add new CenturyLink Cloud customers.
+## Partner Resource Center (PRC) Team
 
+### Partner Business Manager
 
-### Goals and Objectives
+Pre-sales Support
 
+- Support request processing
+- Trial requests
+- Business value proposition
+- Product inquiries
+- Suitability questions
+- Competitive intelligence
+- Feature overview and comparison guidance 
 
-### Services Overview
+### Partner Sales Engineer
 
-There are generally four models of onboarding - titled “QuickStart” – customers can select to buy.  Here’s a summary of each model
+Technical Sales Support
 
-**Quickstart Advanced (Default)**
+- Platform demonstrations
+- Soliciting technical requirements 
+- Product deep dives
+- Licensing questions
+- Proof-of-concept guidance
+- Technical licensing recommendations  
 
-Applicable to customers who need normal support over the first 30 days of their use of CenturyLink Cloud and/or would benefit from help building their environment.
+### Engagement Manager
 
-**QuickStart Express**
+Dedicated Lead and Escalation Point
 
-Applicable to either very small customers (<$1000 MRR) or a customer that is very technically capable and needs only a little help.
+Criteria Includes: 
 
-**QuickStart Express for Free**
-
-Should only be offered as an exception with valid justification and approval.
-
-**QuickStart Advanced & Advanced Services Statement of Work (SOW)**
-
-Applicable to customers who have requirements such as: onboardings that last more than 30 days, desire onsite workshops/training, require extended VM imports/builds.
-
-
-### Customer Onboarding Overview
-
-The QuickStart Onboarding process occurs in three phases – Kickoff, Implementation and Closure.  Each phase has a set of specific activities and outcomes.  During the course of a QuickStart, the onboarding Engineer will be the single point of contact during business hours.  If urgent questions come up after hours or platform issues, customers should to contact the NOC (noc@tier3.com).
-
-### Resource Requirements
-
-The CenturyLink Cloud QuickStart onboarding team includes a Project Manager and an Onboarding Engineer.
-
-* **Project Manager** coordinates initial meeting and is an escalation point if there are issues contacting the Onboarding Engineer.
-* **Onboarding Engineer** leads meetings and serves as the primary contact during CenturyLink Cloud onboarding.
-
-An overall Service Delivery Coordinator is involved only if other integrated services (e.g. Symphony DB, CNS) are purchased.
-
-QuickStart resources are available from 8-5 (PST) M-F, excluding holidays. 
-
-### Roles & Responsibilities
+- $10K Monthly recurring revenue (MRR)
+- Advanced technical complexity
+- Cross product solution
+- Advanced SPLA Licensing requirements
+- Requires CSA or Solutions Architect Team
+- Requires Service Task Execution
 
 
+## Sales Support Information Requests
 
-### Engagement Model
+More prep upfront means more deals closed, faster.
 
-#### Cadence
+Please have as much of the following information available when contacting the Partner Resource Center (PRC).  This includes the following:  
 
-* 5 formal WebEx meetings to be scheduled with the customer and QuickStart Team. 
-  * Kick-off – ½ hour meeting
-  * Product Deep-Dive – 1 hour meeting
-  * Implementation #1 – 1 hour meeting
-  * Implementation #2 – 1 hour meeting
-  * Closure – ½ hour meeting
-* Weekly check point via email or scheduled meetings are expected.
-* Ad hoc communication between the customer and onboarding team encouraged throughout the project.
-* QuickStart resources are available from 8-5 (PST) M-F, excluding holidays.
-* Any platform problems or urgent requests should be routed to noc@tier3.com. 
-* Checklist will be used to manage and track onboarding activities.
+- Customer information
+  - Company Name
+  - Contact Name
+  - email
+  - title
+  - address
+  - telephone number
+- Budget
+- System requirements
+- Environment:  Servers, Operating System(s), CPU, RAM, etc.
+- Deployment timing
+- Interest in running/operating a self-service IaaS platform.
+- Interest in pay per hour/use IaaS platform.
+- Industry specific compliance needs (HIPPA, PCI, etc).
+- Is the planned environment friendly to the public IaaS model? 
+  - Are the application vendors’ products supported?
+  - Are licensing terms for applications cloud friendly? (e.g., doesn’t require special engineering, dedicated servers, etc.)
+  - Runs on x86_x64 architectures? 
+
+
+## Account Management Role and Contact 
+
+Your CenturyLink Channel Manager is your primary contact for Account Management-related activities. These include: 
+
+- Event Support 
+- Sales Program Development 
+- Pipeline Management
+
+Contact your CenturyLink Channel Manager via email.
+
+## Platform Information Source and Contact
+
+The [CenturyLink Cloud website](
+www.centurylinkcloud.com) is an excellent source of information for platform-related questions including: 
+
+- Up-to-date product announcements
+- Knowledge Base (KB) 
+- CenturyLink Cloud Community
+- Frequently Asked Questions (FAQs)
+
+## Infrastructure Support Role and Contact
+
+The Network Operations Center (NOC) is available to support your infrastructure inquiries including the following:  
+
+- Infrastructure Support 
+- Incident Response
+- Service Tasks Requests
+
+Contact the Network Operations Center at noc@tier3.com.
+
+## Billing Inquiries and Contact
+
+Types of Inquiries:
+
+- Billing Inquiries
+- Billin Reports
+
+There are two teams who support billing inquiries:
+
+**For CCA Partners**
+
+Jinnie.schenk@savvis.com
+
+Phone:  443-219-3538
+
+
+**For WMG Partners**
+
+Wholesale.Billing@CenturyLink.com
+
+Phone: 1-888-496-7447
+
+
 
 ---
 
-### Action Items For Partners
+## Action Items For Partners
 
-* Understanding the roles and responsibilities for onboarding customers to CenturyLink Cloud.  
-* Select an onboarding model that best meets the needs of your customer. 
-* Get buy-in from customer on onboarding model.
-* Onboard customers using best practices to speed implementation and ensure customer satisfaction.
+- Familiarize yourself with the Partner Resources available to close CenturyLink Cloud deals.
+- Understand the information you should have about the customer and opportunity when contacting the Partner Resource Center (PRC).
+- Socialize Partner Resource information to your sales, operations and engineering teams to insure the best alignment of resources for your support needs.
+
 
