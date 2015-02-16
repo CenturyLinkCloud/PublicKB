@@ -10,7 +10,7 @@ Understanding VM Deployment Options and Power States
 <h3>Templates</h3>
 <ul>
   <li>Definition: &nbsp;A Virtual Machine template provides a standardized group of hardware and software settings that can be used repeatedly to create new virtual machines configured with those settings.</li>
-  <li>How To: <a href="https://t3n.zendesk.com/entries/22353625-How-To-Create-Customer-Specific-OS-Templates" target="_blank">https://t3n.zendesk.com/entries/22353625-How-To-Create-Customer-Specific-OS-Templates</a>
+  <li>How To: <a href="/how-to-create-customer-specific-os-templates/" target="_blank">How To Create A Customer Specific OS Template</a>
   </li>
   <li>Costs: Customer specific template storage is billed on a per GB basis as Standard Storage. Out of the box Virtual Machine templates in the Tier 3 platform do not incur a storage fee. </li>
   <li>Sample Use Case: &nbsp;ISV would like to build a virtual machine base template that includes the OS, software packages and security customization to improve speed of delivery to their client base. </li>
@@ -19,12 +19,12 @@ Understanding VM Deployment Options and Power States
 <ul>
   <li>
     <p>Definition: &nbsp;Cloning creates an independent, duplicate copy of an existing virtual machine which is nearly identical to the “source” virtual machine. The cloned machine retains the same hardware, operating system, application and configuration
-      items as the original virtual machine; however, certain items, such as the server’s security identifier, are changed during the process. For some further information around cloning, please see <a href="https://t3n.zendesk.com/entries/22622950-Cloning-Best-Practices"
-      target="_blank">https://t3n.zendesk.com/entries/22622950-Cloning-Best-Practices</a>
+      items as the original virtual machine; however, certain items, such as the server’s security identifier, are changed during the process. For some further information around cloning, please see <a href="/cloning-best-practices/"
+      target="_blank">Cloning Best Practices</a>
     </p>
   </li>
   <li>
-    <p>How To: <a href="https://t3n.zendesk.com/entries/22775929-How-To-Clone-a-Virtual-Machine-OS-Instance" target="_blank">https://t3n.zendesk.com/entries/22775929-How-To-Clone-a-Virtual-Machine-OS-Instance</a>
+    <p>How To: <a href="/how-to-clone-a-virtual-machine-os-instance/" target="_blank">How To Clone A Virtual Machine Instance</a>
     </p>
   </li>
   <li>
@@ -40,7 +40,7 @@ Understanding VM Deployment Options and Power States
       files that make up the virtual machine. This includes disks, memory, and other devices, such as virtual network interface cards.</p>
   </li>
   <li>
-    <p>How To: <a href="https://t3n.zendesk.com/entries/21381762-Creating-and-Managing-Server-Snapshots" target="_blank">https://t3n.zendesk.com/entries/21381762-Creating-and-Managing-Server-Snapshots</a>
+    <p>How To: <a href="/creating-and-managing-server-snapshots/" target="_blank">Creating & Managing Server Snapshots</a>
     </p>
   </li>
   <li>
@@ -62,8 +62,7 @@ Understanding VM Deployment Options and Power States
 </p>
 <ul>
   <li>
-    <p>Costs: In the pause state, a customer pays for storage consumed by the virtual machine and licensing costs. Compute and memory costs are not levied. For further details see&nbsp;<a href="https://t3n.zendesk.com/entries/23227276-Managing-and-Controlling-Costs-in-the-Tier-3-Cloud"
-      target="_blank">Managing and Controlling Costs in the CenturyLink Cloud</a>.</p>
+      <p>Costs: In the pause state, a customer pays for storage consumed by the virtual machine and licensing costs. Compute and memory costs are not levied. 
   </li>
   <li>Sample Use Case: &nbsp;A customer maintains a development and staging environment for their production workloads. This environment is only used during business hours 8 AM to 8 PM EST. The IT department, in order to save costs, creates a
     scheduled pause and power on event during off hours. This automated task eliminates CPU &amp; RAM fee's between the 8 PM and 8 AM EST time window for these environments.</li>
@@ -86,8 +85,7 @@ Understanding VM Deployment Options and Power States
 </p>
 <ul>
   <li>
-    <p>Costs: In the archive state, a customer pays only for the archival storage consumed by the virtual machine (at a reduced rate). Compute, memory and licensing costs are not levied. For further details see&nbsp;<a href="https://t3n.zendesk.com/entries/57443680-Managing-and-Controlling-Costs-in-CenturyLink-Cloud"
-      target="_blank">Managing and Controlling Costs in the CenturyLink Cloud</a>.</p>
+      <p>Costs: In the archive state, a customer pays only for the archival storage consumed by the virtual machine (at a reduced rate). Compute, memory and licensing costs are not levied.</p>
   </li>
   <li>Sample Use Case: &nbsp;The business department has a reporting server that pulls data on a monthly basis from a 3rd party and generates reports for business analysis. This virtual machine is only required for 2 days per month and otherwise is
     unused. To save costs, the IT department schedules the server to be placed in archive and brought out of archived for operation during just these 2 days of the month. </li>
