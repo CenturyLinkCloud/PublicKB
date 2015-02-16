@@ -289,7 +289,15 @@ The above Table of Contents is a working example and all of the follwing section
 
 ### List - Unordered <a id="anchor-3" class="kb-toc-anchor" href="#anchor-3"></a>
 
-+ 
+-  16 vCPU, with at least 2GHZz per vCPU
+
+-  128 GB Memory
+
+-  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+
+### List - Unordered <a id="anchor-3" class="kb-toc-anchor" href="#anchor-3"></a>
+  
++
 
   -  16 vCPU, with at least 2GHZz per vCPU
 
@@ -301,13 +309,11 @@ The above Table of Contents is a working example and all of the follwing section
 
     ### List - Unordered
 
-    + 
+    -  16 vCPU, with at least 2GHZz per vCPU
 
-      -  16 vCPU, with at least 2GHZz per vCPU
+    -  128 GB Memory
 
-      -  128 GB Memory
-
-      -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+    -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
 ### Images <a id="anchor-images" class="kb-toc-anchor" href="#anchor-images"></a>
 
