@@ -8,13 +8,17 @@
 
 ### Purpose
 
-- Partner Resources available for Sales Support, Account Management, Product Information, Platform Support and Billing.  
++
+
+  - Partner Resources available for Sales Support, Account Management, Product Information, Platform Support and Billing.  
 
 
 ### Benefits
 
-- Partners know the resources that are available and how to engage them  throughout the customer life cycle.
-- Improves sales acceleration and customer satisfaction.
++ 
+
+  - Partners know the resources that are available and how to engage them  throughout the customer life cycle.
+  - Improves sales acceleration and customer satisfaction.
 
 
 ### Audience
