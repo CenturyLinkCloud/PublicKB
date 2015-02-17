@@ -19,44 +19,43 @@
 <ol>
   <li>Use the Create Server Control Portal function to deploy a baseline operating system supported on the CenturyLink Cloud platform. Customers may elect to perform this task outside of the platform and wish to import into the Control Portal. CenturyLink
     Cloud provides <a href="http://www.centurylinkcloud.com/products/support/service-tasks" target="_blank">service tasks</a> to perform this import and customers should engage this group for fees. Preparation steps to import the VM can be found
-    <a href="http://help.tier3.com/entries/22209635-Best-Practices-and-Preperation-for-a-Virtual-Machine-OVF-OVA-Import" target="_blank">Here</a>.&nbsp;</li>
+    <a href="http://help.tier3.com/entries/22209635-Best-Practices-and-Preperation-for-a-Virtual-Machine-OVF-OVA-Import" target="_blank">Here</a>.</li>
   <li>Login to the newly created OS Instance and apply the customization or packages that should be part of the Template. We recommend after all changes are made a clean reboot of the OS prior to proceeding to step #3.</li>
   <li>Navigate to the Server Instance built in step #1 in the Control Portal. Select the Convert to Template button under the Action Menu.</li>
-</ol>
+
 <p><img src="https://t3n.zendesk.com/attachments/token/6MuREq25V2GX8MZ2ngH8hXHPO/?name=01.png" alt="01.png" />
 </p>
-<p>4. Using the convert to template user interface input details about the template you wish to create. </p>
+<li>Using the convert to template user interface input details about the template you wish to create. </li>
 <ul>
   <ul>
     <ul>
-      <li>Source Server Admin/Root Password: &nbsp; The administrative password for the source VM</li>
-      <li>Template Description: &nbsp;The description is how you will identify your template when creating new servers</li>
-      <li>Privacy Settings: &nbsp;Allows customers to define where the template is displayed. Customers with sub accounts can choose to permit access to this template using the Private Shared function.&nbsp;</li>
+      <li>Source Server Admin/Root Password:  The administrative password for the source VM</li>
+      <li>Template Description: The description is how you will identify your template when creating new servers</li>
+      <li>Privacy Settings: Allows customers to define where the template is displayed. Customers with sub accounts can choose to permit access to this template using the Private Shared function.</li>
     </ul>
   </ul>
 </ul>
 <p><img src="https://t3n.zendesk.com/attachments/token/jUfTHvR7WbWP4iifNVqEryLCp/?name=02.png" alt="02.png" />
 </p>
-<p>5. The Convert to Template task can be tracked via the Queue</p>
+<li>The Convert to Template task can be tracked via the Queue</li>
 <p><img src="https://t3n.zendesk.com/attachments/token/z3JiOR563C20cdbMPS9IbAW4U/?name=04.png" alt="04.png" />
 </p>
-<p>6. Once the Convert to Template job is complete customers can test the deployment of the new template by using the Create Server function. The Template Description defined previously should be visible in the Operating System pull down menu.</p>
+<li>Once the Convert to Template job is complete customers can test the deployment of the new template by using the Create Server function. The Template Description defined previously should be visible in the Operating System pull down menu.
 <p><img src="https://t3n.zendesk.com/attachments/token/VOpySqoalxhPyEIxLvwTa22v9/?name=03.png" alt="03.png" />
 </p>
 
+</ol>
 <h3>FAQ</h3>
-<p><strong>Question</strong>: &nbsp;I've created a custom template in Data Center A, but when I try to create a VM from template in Data Center B its not showing?</p>
-<p><em><strong>Answer: &nbsp;Customer created templates do not replicate to all data centers out of the box today. If you need templates copied to other data centers please create a support ticket. Feature sets for global template replication are coming soon.</strong></em>
+<p><strong>Question</strong>: I've created a custom template in Data Center A, but when I try to create a VM from template in Data Center B its not showing?</p>
+<p><em><strong>Answer: Customer created templates do not replicate to all data centers out of the box today. If you need templates copied to other data centers please create a support ticket. Feature sets for global template replication are coming soon.</strong></em>
 </p>
-<p><strong>Question</strong>: &nbsp;What format should my virtual machine use if I choose to leverage the service task to import a VM as a template?</p>
-<p><em><strong>Answer: We recommends OVF format for importing; &nbsp;Additional formats or services are available by speaking to a sales Representative</strong></em></p>
-<p><strong>Question</strong>: &nbsp;Is there a way to automatically import VM's as templates to the CenturyLink Cloud platform?</p>
-<p><em><strong>Answer: &nbsp;No, please contact a sales representative for import fees via service tasks</strong></em>
+<p><strong>Question</strong>: What format should my virtual machine use if I choose to leverage the service task to import a VM as a template?</p>
+<p><em><strong>Answer: We recommends OVF format for importing; Additional formats or services are available by speaking to a sales Representative</strong></em></p>
+<p><strong>Question</strong>: Is there a way to automatically import VM's as templates to the CenturyLink Cloud platform?</p>
+<p><em><strong>Answer: No, please contact a sales representative for import fees via service tasks</strong></em>
 </p>
-<p><strong>Question</strong>: &nbsp;What fees are associated with use of custom OS templates?</p>
-<p><em><strong>Answer: &nbsp;Templates are stored in a group called 'Templates' within the server groups area of Control. Template storage is billed on a per GB basis as Standard Storage. Rates are available from your Sales Representative. </strong></em>
+<p><strong>Question</strong>: What fees are associated with use of custom OS templates?</p>
+<p><em><strong>Answer: Templates are stored in a group called 'Templates' within the server groups area of Control. Template storage is billed on a per GB basis as Standard Storage. Rates are available from your Sales Representative. </strong></em>
 </p>
-<p><strong>&nbsp;</strong>
-</p>
-<p><strong>Last updated: &nbsp;TUES 07/31/2014 16:20 EST</strong>
+<p><strong>Last updated: TUES 07/31/2014 16:20 EST</strong>
 </p>
