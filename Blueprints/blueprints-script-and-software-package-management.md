@@ -718,10 +718,10 @@ Uploading and Publishing a Package
 <p>Once the package.manifest has been created, validated, and zipped with the all other required files, the following steps should be followed to get the package uploaded and published to the Control Portal.</p>
 <ol>
   <li>Login to control portal and navigate to the Scripts page.
-    <br /><img src="https://t3n.zendesk.comhttps://t3n.zendesk.com/attachments/token/FdNoAQoOZ8F0MMe6bf6hqhrmr/?name=2014-06-05-001-Scripts-Menu.png" alt="2014-06-05-001-Scripts-Menu.png" />
+    <br /><img src="https://t3n.zendesk.com/attachments/token/FdNoAQoOZ8F0MMe6bf6hqhrmr/?name=2014-06-05-001-Scripts-Menu.png" alt="2014-06-05-001-Scripts-Menu.png" />
   </li>
   <li>Click on the "+ new script" button.
-    <br /><img src="https://t3n.zendesk.comhttps://t3n.zendesk.com/attachments/token/Y64qwR01Xv7WFOyVOMdCNwnod/?name=2014-06-05-002-New-Script.png" alt="2014-06-05-002-New-Script.png" />
+    <br /><img src="https://t3n.zendesk.com/attachments/token/Y64qwR01Xv7WFOyVOMdCNwnod/?name=2014-06-05-002-New-Script.png" alt="2014-06-05-002-New-Script.png" />
   </li>
   <li>You will be presented with two options for uploading the package: Browser or FTP. For packages less than 4MB, you can easily upload directly through your web browser by choosing "Browser Upload". For packages larger than 4MB, they&nbsp;<em>must</em>&nbsp;be
     uploaded using the "FTP Upload" option, but this option is available for smaller packages as well. Selecting the "FTP Upload" option will create an FTP account and path and display&nbsp;the credentials and URL to use for uploading. (Note that you
@@ -731,10 +731,10 @@ Uploading and Publishing a Package
   </li>
   <li>If you chose "Browser Upload" you will see a prompt allowing you to browse for the file. Select the zip&nbsp;file that contains the package.manifest and supporting files and then click "upload script package" to upload it to the server. (If you chose
     the "FTP Upload" option, after uploading the package to the folder using an FTP client, click on the "Unpublished" tab and move on to step 5.)
-    <br /><img src="https://t3n.zendesk.comhttps://t3n.zendesk.com/attachments/token/9F4xt630rGFEPQaAt61PN6zM2/?name=2014-06-05-005-Upload-File.png" alt="2014-06-05-005-Upload-File.png" />
+    <br /><img src="https://t3n.zendesk.com/attachments/token/9F4xt630rGFEPQaAt61PN6zM2/?name=2014-06-05-005-Upload-File.png" alt="2014-06-05-005-Upload-File.png" />
   </li>
   <li>Now publish the package by clicking the "publish" button next to the package name in the list of unpublished packages.
-    <br /><img src="https://t3n.zendesk.comhttps://t3n.zendesk.com/attachments/token/eqjQciIOagcTeYTrw82IXZn9N/?name=2014-06-05-006-Publish.png" alt="2014-06-05-006-Publish.png" />
+    <br /><img src="https://t3n.zendesk.com/attachments/token/eqjQciIOagcTeYTrw82IXZn9N/?name=2014-06-05-006-Publish.png" alt="2014-06-05-006-Publish.png" />
   </li>
   <li>The publication process will then load and perform basic validation of the package. If successful, you will be presented with a form showing the contents of your Manifest as well as a sample UI form with the parameters that will be prompted for at deployment
     time. If everything looks right, click the "next" button to move on.</li>
@@ -743,11 +743,11 @@ Uploading and Publishing a Package
     packages are only visible to users in the account where it was created, Shared packages are visible to users in the&nbsp;account where it was created and all sub-accounts underneath, and Public packages are available to all accounts. (Please review&nbsp;
     <a
     href="https://t3n.zendesk.com/entries/56566304-Creating-Public-Blueprint-Packages" target="_blank">Creating Public Blueprint Packages&nbsp;</a>before publishing a public package.) Finally,&nbsp;click the "Publish" button to kick off the publishing process.
-      <br /><img src="https://t3n.zendesk.comhttps://t3n.zendesk.com/attachments/token/LsKG9gAFve8hsUfNSAcS2fHhK/?name=2014-06-05-008-Package-Details.png" alt="2014-06-05-008-Package-Details.png" />
+      <br /><img src="https://t3n.zendesk.com/attachments/token/LsKG9gAFve8hsUfNSAcS2fHhK/?name=2014-06-05-008-Package-Details.png" alt="2014-06-05-008-Package-Details.png" />
   </li>
   <li>The package is then queued for asynchronous publishing and the deploy time will depend upon the size of the package. Once the publish operation is complete, it will appear in the package library. (You can click the "Details Page" link to check the status
     of the publish.)
     <br />
-    <br /><img src="https://t3n.zendesk.comhttps://t3n.zendesk.com/attachments/token/Iq5kVEGptEhAvwMQCnI2NXnUu/?name=2014-06-05-009-Package-Done.png" alt="2014-06-05-009-Package-Done.png" />
+    <br /><img src="https://t3n.zendesk.com/attachments/token/Iq5kVEGptEhAvwMQCnI2NXnUu/?name=2014-06-05-009-Package-Done.png" alt="2014-06-05-009-Package-Done.png" />
   </li>
 </ol>
