@@ -151,17 +151,29 @@
 ## Table of Contents
 
 <a href="#anchor-1" data-scroll-to-anchor="100">Steps with Nested Steps</a>
+
 <a href="#anchor-2" data-scroll-to-anchor="100">List - Numbered</a>
+
 <a href="#anchor-3" data-scroll-to-anchor="100">List - Unordered</a>
+
 <a href="#anchor-images" data-scroll-to-anchor="100">Images</a>
+
 <a href="#anchor-tables" data-scroll-to-anchor="100">Tables</a>
+
 <a href="#anchor-videos" data-scroll-to-anchor="100">Video Embeds</a>
+
 <a href="#anchor-4" data-scroll-to-anchor="100">Note</a>
+
 <a href="#anchor-5" data-scroll-to-anchor="100">Alert</a>
+
 <a href="#anchor-6" data-scroll-to-anchor="100">Code Snippet Example</a>
+
 <a href="#anchor-7" data-scroll-to-anchor="100">Code Block Example</a>
+
 <a href="#anchor-gist" data-scroll-to-anchor="100">Code Block Example - Gist</a>
+
 <a href="#anchor-8" data-scroll-to-anchor="100">Notes on Additional Sections</a>
+
 
 <!-- TOC - MARKDOWN -->
 
