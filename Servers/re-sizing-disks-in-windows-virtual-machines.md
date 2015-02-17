@@ -3,7 +3,7 @@
   "date": "12-24-2014",
   "author": "Aaron Lemoine",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 <h3>Description (goal/purpose)</h3>
@@ -22,19 +22,19 @@
   <li>No server snapshots in place.</li>
 </ul>
 <h3>Detailed Steps</h3>
-<p><strong>Windows Server 2008 / 2012</strong>
-</p>
-<p>1. Log into the server</p>
-<p>2. Launch server manager, and expand Storage</p>
-<p>3. Right click Disk Management, and click Rescan Disks.</p>
-<p>4. In&nbsp;the details pane, right-click the volume that you want, and then click&nbsp;<strong>Extend Volume</strong>.</p>
-<p>5. Follow the instructions in the Extend Volume Wizard to extend the partition.</p>
+<p><strong>Windows Server 2008 / 2012</strong></p>
 
-<p><strong>Windows Server 2003</strong>
-</p>
-<p>&nbsp; &nbsp; &nbsp;If you are attempting to grow an Windows 2003 system partition (generally "C:\"), the partition will not be automatically re-sized to reflect the newly added space. You can verify this by examining the disk under "<strong>Disk Management</strong>"
+1. Log into the server
+2. Launch server manager, and expand Storage
+3. Right click Disk Management, and click Rescan Disks.
+4. In the details pane, right-click the volume that you want, and then click&nbsp;<strong>Extend Volume</strong>.
+5. Follow the instructions in the Extend Volume Wizard to extend the partition.
+
+<p><strong>Windows Server 2003</strong></p>
+
+<p>If you are attempting to grow an Windows 2003 system partition (generally "C:\"), the partition will not be automatically re-sized to reflect the newly added space. You can verify this by examining the disk under "<strong>Disk Management</strong>"
   (diskmgmt.msc).</p>
-<p>&nbsp; &nbsp; &nbsp;To grow the partition: Download<a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;ved=0CDMQFjAA&amp;url=http%3A%2F%2Fwww.dell.com%2Fsupport%2Fdrivers%2Fus%2Fen%2F19%2Fdriverdetails%3Fdriverid%3DR64398&amp;ei=dt0SUZ3cL8fZqQH9qIHQDw&amp;usg=AFQjCNEcFKhyIUlHmBdX2mjxyl3rA1mvPQ&amp;bvm=bv.41934586,d.aWM"
+<p>To grow the partition: Download<a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;ved=0CDMQFjAA&amp;url=http%3A%2F%2Fwww.dell.com%2Fsupport%2Fdrivers%2Fus%2Fen%2F19%2Fdriverdetails%3Fdriverid%3DR64398&amp;ei=dt0SUZ3cL8fZqQH9qIHQDw&amp;usg=AFQjCNEcFKhyIUlHmBdX2mjxyl3rA1mvPQ&amp;bvm=bv.41934586,d.aWM"
   target="_blank">&nbsp;ExtPart.exe from Dell</a>&nbsp;(many other free partition management software packages can be used, if preferred). ExtPart runs on &nbsp; &nbsp; &nbsp;both 32 and 64bit machines.</p>
 <ol>
   <li>Open up a command prompt and navigate to the extpart folder.</li>
