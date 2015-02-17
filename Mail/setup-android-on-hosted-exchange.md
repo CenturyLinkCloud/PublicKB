@@ -6,14 +6,16 @@
   "contentIsHTML": true
 }}}
 
-<p>From Applications on your phone, launch Email or Mail</p>
-<p>Setup Exchange ActiveSync account</p>
-<p>Domain\Username: Enter your email address (example:&nbsp; test.user@company.com)</p>
-<p>Enter your password</p>
-<p>Leave “Use secure connection” (or “Use SSL”) checked.</p>
-<p>Enter full email address</p>
-<p>Server: mail.hosted.ms</p>
-<p>Hit next</p>
-<p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/3wlqvjly6tyxviq/?name=androidemailsync.png" alt="androidemailsync.png" />
-</p>
+<h3>From Applications on your phone</h3>
+<ol>
+    <li>launch Email or Mail</li>
+    <li>Setup Exchange ActiveSync account</li>
+    <li>Domain\Username: Enter your email address (example: test.user@company.com)</li>
+    <li>Enter your password</li>
+    <li>Leave &quot;Use secure connection&quot; (or &quot;Use SSL&quot;) checked.</li>
+    <li>Enter full email address</li>
+    <li>Server: mail.hosted.ms</li>
+    <li>Hit next</li>
+</ol>
+<p><img src="https://t3n.zendesk.com/attachments/token/3wlqvjly6tyxviq/?name=androidemailsync.png" alt="androidemailsync.png" /></p>
 <p>ActiveSync will be successful if your email and password were entered correctly. If there are any errors, go back and double check your information and try again.</p>

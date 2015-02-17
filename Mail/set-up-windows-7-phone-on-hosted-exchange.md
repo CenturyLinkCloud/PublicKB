@@ -7,7 +7,8 @@
 }}}
 
 <div>
-  <strong>Set up Windows 7 Phone on Hosted Exchange</strong> Basic Setup
+  <p><strong>Set up Windows 7 Phone on Hosted Exchange</strong></p>
+  Basic Setup
   <ol>
     <li>From the start screen go to the App List</li>
     <li>Go To Settings</li>

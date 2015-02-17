@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<strong>How to configure MX Records</strong>
+<h3>How to configure MX Records</h3>
 
 <p>MX records (Mail Exchanger Records) are used to tell the internet how to route email to your Exchange server or Spam filter. Most email environments use an external Spam filter that will guarantee 100% uptime and no email loss by using multiple
   MX records. The Spam filter will filter out unwanted messages and then route the email to your mail server.</p>
@@ -24,20 +24,19 @@
 <p>Below is an example of a complete configuration using Postini.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/gijwpzamcxbkihx/?name=Complete.png" alt="Complete.png" />
 </p>
-<p>Additional information:</p>
+<h4>Additional information:</h4>
 <p>MX records tell senders how to send email to your domain. When your domain is registered, it’s assigned several DNS records which enable systems on the Internet to be able to locate it. MX records are part of these records and are required
   for email to flow to your mail server(s).</p>
-<p>Example:</p>
+<h4>Example:</h4>
 <p>MX record for mydnszone9.com = mydnszone9.com.s7a1.psmtp.com preference: 10</p>
 <p>Mail sent to @mydnszone9.com would lookup MX record and find the above record. It would then route MX (Mail) traffic to mydnszone9.com.s7a1.psmtp.com which is a Postini address. When Postini receives it they will check it for viruses, spoofed
   information, known Spam threats, as well as run the message itself through a rigorous Spam detection process. This whole process takes less than 5 seconds. Once complete, the email will be forwarded to your mail server. Your mail server
   should be configured to ONLY receive email from Postini’s range of IP’s. Otherwise spammers could send mail directly to your servers and bypass Postini.</p>
 
-<p>See this additional article for assistance configuring DNS:</p>
-<p>&nbsp;<a href="http://help.tier3.com/entries/21429398-how-to-use-control-dns">How to use Control DNS</a>
+<p>See this additional article for assistance configuring DNS: <a href="http://help.tier3.com/entries/21429398-how-to-use-control-dns">How to use Control DNS</a>
 </p>
 
-<p>How to verify your MX records are correct from a Windows computer:</p>
+<h4>How to verify your MX records are correct from a Windows computer:</h4>
 <ol>
   <li>Launch a command prompt.</li>
   <li>Type: nslookup (press enter)</li>
@@ -46,4 +45,4 @@
 </ol>
 <p>This should output your MX records that you entered at Domains -&gt; DNS. They will look like this:</p>
 <p>Non-authoritative answer:</p>
-<p>Mydnszone9.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MX preference = 10, mail exchanger = mydnszone9.com.s7b2.psmtp.com</p>
+<p>Mydnszone9.com MX preference = 10, mail exchanger = mydnszone9.com.s7b2.psmtp.com</p>

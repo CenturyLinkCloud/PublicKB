@@ -6,23 +6,23 @@
   "contentIsHTML": true
 }}}
 
-<p>You must know a couple of things before you get started:</p>
+<h3>You must know a couple of things before you get started:</h3>
 <ol>
   <li>Your OWA URL.</li>
   <li>Your username &amp; email address.</li>
   <li>Your Email password</li>
 </ol>
-<p>Examples:</p>
+<h4>Examples:</h4>
 <ol>
-  <li><a href="https://exchange.mycompany.com/owa">https://exchange.mycompany.com/owa</a>&nbsp; /owa is required in most cases</li>
-  <li>Mycompany\myusername&nbsp; - It can also be in form of your email address: me@domain.com</li>
+  <li></code><a href="https://exchange.mycompany.com/owa">https://exchange.mycompany.com/owa</a></code> /owa is required in most cases</li>
+  <li><code>Mycompany\myusername</code> - It can also be in form of your email address: me@domain.com</li>
 </ol>
 <p>Connect to your OWA website, and input your username and password. It will look like this:</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/hjqelb1kvoghczw/?name=LoginScreen.png" alt="LoginScreen.png" />
 </p>
 <p>On the login page there are a couple of optional selections you can make.</p>
 <ol>
-  <li>Public or Private computer:&nbsp;
+  <li>Public or Private computer:
     <ol>
       <li>When public is chosen your session will time out much quicker. If you were to accidentally stay logged in at a public location, OWA will try and protect you if your session has been idle for a few minutes (this time-out is configured by Exchange
         administrators). It is still recommended to log out when you are done.</li>
