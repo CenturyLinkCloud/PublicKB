@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description (goal/purpose)</h3>
-<p>Tier 3 supports the ability to add additional disks to Linux machines. This automated task can fail for various reasons requiring manual intervention on the customer machine in order to complete. These are the manual steps required to detect
+<p>CenturyLink Cloud supports the ability to add additional disks to Linux machines. This automated task can fail for various reasons requiring manual intervention on the customer machine in order to complete. These are the manual steps required to detect
   and mount a new disk.</p>
 
 <h3>Audience</h3>

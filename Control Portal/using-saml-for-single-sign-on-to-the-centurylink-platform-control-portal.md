@@ -8,33 +8,33 @@
 
 <p><strong>Description:</strong>
 </p>
-<p>Tier 3 supports the use of Security Assertion Markup Language (SAML) for exchanging user authentication data as XML between trusted parties. This industry standard protocol empowers our customers to use their <strong>own</strong> identity management system
-  for authenticating users of the Tier 3 Control Portal.</p>
+<p>CenturyLink Cloud supports the use of Security Assertion Markup Language (SAML) for exchanging user authentication data as XML between trusted parties. This industry standard protocol empowers our customers to use their <strong>own</strong> identity management system
+  for authenticating users of the CenturyLink Cloud Control Portal.</p>
 <p>SAML has three main parties: the user, the identity provider (IdP), and service provider (SP). The IdP is the repository that holds identity information. The SP is the party that wants to authenticate a particular user who is using an application.</p>
 <p>The SAML flow occurs as follows:</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/lvelbw7wuayx1yb/?name=saml01.png" alt="saml01.png" />
 </p>
 <ol>
   <li>The enterprise user of the CenturyLink Cloud hits a URL that is dedicated to their account. The user is asked how they would like to log into the system and they choose SAML.</li>
-  <li>The web application contacts the Tier 3 SAML service to initiate the SAML message exchange.</li>
-  <li>The Tier 3 SP &nbsp;sends a digitally signed SAML authentication request to the enterprise IdP. This IdP takes the user's Kerberos token and validates them as a user on the enterprise network.&nbsp;</li>
-  <li>The IdP returns a signed (and optionally, encrypted) SAML authentication response message to the Tier 3 SP. This message includes a Name ID assertion and that value is matched to a User record in the CenturyLink Cloud.</li>
-  <li>The user is logged into the CenturyLink Cloud and operates under the roles and permissions assigned to their Tier 3 user account.</li>
+  <li>The web application contacts the CenturyLink Cloud SAML service to initiate the SAML message exchange.</li>
+  <li>The CenturyLink Cloud SP &nbsp;sends a digitally signed SAML authentication request to the enterprise IdP. This IdP takes the user's Kerberos token and validates them as a user on the enterprise network.&nbsp;</li>
+  <li>The IdP returns a signed (and optionally, encrypted) SAML authentication response message to the CenturyLink Cloud SP. This message includes a Name ID assertion and that value is matched to a User record in the CenturyLink Cloud.</li>
+  <li>The user is logged into the CenturyLink Cloud and operates under the roles and permissions assigned to their CenturyLink Cloud user account.</li>
 </ol>
 <p>The steps below walk through the process of building an entire SSO and SAML scenario based on Microsoft Active Directory Federation Services as the IdP proxy. If you already have an identity provider, you can skip to step #3 where trust is established
-  between Tier 3 and the IdP.</p>
+  between CenturyLink Cloud and the IdP.</p>
 <p><strong>Steps:&nbsp;</strong>
 </p>
 <div><strong>1. Provision server to act as Identity Provider.</strong>
 </div>
 <ul>
-  <li>Log into the Tier 3 Control Portal and choose to create a new Blueprint. This takes you to the Blueprint Designer wizard.
+  <li>Log into the CenturyLink Cloud Control Portal and choose to create a new Blueprint. This takes you to the Blueprint Designer wizard.
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/ibkzd7s7a1eiawp/?name=saml02.png" alt="saml02.png" />
   </li>
   <li>Include a single (Windows Server 2008 or above) server to the Bluepriint and add packages to<strong> Install DNS</strong>,<strong> Install Active Directory</strong>, <strong>Reboot</strong>,<strong> Install IIS</strong>, and<strong> Add a Public IP</strong>.
     The DNS and Active Directory packages give us a custom domain to work with, and an identity directory for our user records. Microsoft Internet Information Services (IIS) provides a web application host for the Active Directory Federation Services
-    (ADFS) web services used later on. Finally, the public IP address exposes our server to the public internet where applications (like the Tier 3 Control Portal) can access it for a SAML exchange.
+    (ADFS) web services used later on. Finally, the public IP address exposes our server to the public internet where applications (like the CenturyLink Cloud Control Portal) can access it for a SAML exchange.
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/iwardtgt0md86ub/?name=saml03.png" alt="saml03.png" />
   </li>
@@ -47,7 +47,7 @@
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/s6a6babbwyz6cgt/?name=saml05.png" alt="saml05.png" />
   </li>
-  <li>Complete the deployment process and wait for the new server to be built by the Tier 3 Blueprint engine.
+  <li>Complete the deployment process and wait for the new server to be built by the CenturyLink Cloud Blueprint engine.
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/40kzokenuhefjg1/?name=saml06.png" alt="saml06.png" />
   </li>
@@ -59,7 +59,7 @@
 <div><strong>2. Install and configure Active Directory Federation Services.</strong>
 </div>
 <ul>
-  <li>Open client VPN software and connect to the Tier 3 network. Once authenticated, create a Remote Desktop session to the target server. In the Server Manager, confirm the installation of DNS, Active Directory, and IIS.
+  <li>Open client VPN software and connect to the CenturyLink Cloud network. Once authenticated, create a Remote Desktop session to the target server. In the Server Manager, confirm the installation of DNS, Active Directory, and IIS.
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/zw73lohdl71fyzf/?name=saml08.png" alt="saml08.png" />
   </li>
@@ -115,7 +115,7 @@
 <div><strong>3. Create trust relationship with CenturyLink Cloud.</strong>
 </div>
 <ul>
-  <li>Prior to starting this step, <strong>contact the Tier 3 NOC to acquire the public certificate</strong> that validates the message coming from Tier 3.</li>
+  <li>Prior to starting this step, <strong>contact the CenturyLink Cloud NOC to acquire the public certificate</strong> that validates the message coming from CenturyLink Cloud.</li>
   <li>In the ADFS 2.0 Management console (or whatever IdP service that's being used), create a new Relying Party Trust. This is where the settings from the CenturyLink Cloud are added to the local IdP so that it recognizes the SAML authentication request and can
     validate the inbound signature.
     <br />
@@ -125,13 +125,13 @@
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/jedsxww0yzokglp/?name=saml19.png" alt="saml19.png" />
   </li>
-  <li>Name the relying party something like "Tier 3 Control Portal." Select the ADFS 2.0 profile. When asked for the <strong>Relying party trust identifier</strong>, use the following value (while filling in your specific account alias):&nbsp;https://&lt;alias&gt;.tier3cloud.com/SAMLAuth.
+  <li>Name the relying party something like "CenturyLink Cloud Control Portal." Select the ADFS 2.0 profile. When asked for the <strong>Relying party trust identifier</strong>, use the following value (while filling in your specific account alias):&nbsp;https://&lt;alias&gt;.tier3cloud.com/SAMLAuth.
     <strong>Note that this value is case-sensitive!</strong>
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/mo3ipx4oyzordrf/?name=saml20.png" alt="saml20.png" />
   </li>
   <li>Finish the wizard, and plan on addition a pair of additional values later on. On the last wizard page, click the checkbox to <strong>Open the Edit Claims Rules dialog. </strong>Here is where we define which Active Directory values (claims) map to the
-    SAML attributes sent back to Tier 3.
+    SAML attributes sent back to CenturyLink Cloud.
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/7w8ioj6npdkntyx/?name=saml21.png" alt="saml21.png" />
   </li>
@@ -139,7 +139,7 @@
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/azv1hcjdnora6hm/?name=saml22.png" alt="saml22.png" />
   </li>
-  <li>After completing this wizard, go back to the Relying Party Trusts folder and open the new entry. Switch to the <strong>Signatures </strong>tab, and add the certificate provided to you by the Tier 3 NOC.
+  <li>After completing this wizard, go back to the Relying Party Trusts folder and open the new entry. Switch to the <strong>Signatures </strong>tab, and add the certificate provided to you by the CenturyLink Cloud NOC.
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/ockcfuosebhrmhn/?name=saml23.png" alt="saml23.png" />
   </li>
@@ -153,10 +153,10 @@
     <br />
   </li>
 </ul>
-<div><strong>4. Configure Tier 3 account with SAML settings.</strong>
+<div><strong>4. Configure CenturyLink Cloud account with SAML settings.</strong>
 </div>
 <ul>
-  <li>Log into the Tier 3 Control Portal and under <strong>Account</strong> menu, select the <strong>Users</strong> tab.
+  <li>Log into the CenturyLink Cloud Control Portal and under <strong>Account</strong> menu, select the <strong>Users</strong> tab.
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/sqeaotxl1baj1iv/?name=saml25.png" alt="saml25.png" />
   </li>
@@ -181,8 +181,8 @@
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/0v2wi4n4tbhauhu/?name=saml30.png" alt="saml30.png" />
   </li>
-  <li>Paste this value into the <strong>Signing Certificate Key</strong>&nbsp;field in the Tier 3 Control Portal. Click the <strong>Save </strong>button and switch back to the <strong>Users List </strong>view. Select the user that you want to perform SSO
-    with, and locate the <strong>SAML Username</strong>&nbsp;field. Since we chose above to use the Active Directory User Principal Name as the lookup value to the Tier 3 account, we must plug in the User Principal Name associated with this user.
+  <li>Paste this value into the <strong>Signing Certificate Key</strong>&nbsp;field in the CenturyLink Cloud Control Portal. Click the <strong>Save </strong>button and switch back to the <strong>Users List </strong>view. Select the user that you want to perform SSO
+    with, and locate the <strong>SAML Username</strong>&nbsp;field. Since we chose above to use the Active Directory User Principal Name as the lookup value to the CenturyLink Cloud account, we must plug in the User Principal Name associated with this user.
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/jr0rr0owlohzukf/?name=saml33.png" alt="saml33.png" />
   </li>
@@ -195,7 +195,7 @@
 </div>
 <ul>
   <li>Before testing, if you do not own the public domain name corresponding to the DNS name of your server, then your test will fail. To test successfully, change your local machine host file so that the browser translates the domain name to the public IP
-    address of the server. When the SAML request comes in to ADFS, it tries to match the SAML Destination ID (retrieved from the SAML configuration in your Tier 3 account) to the Federation Service name in the ADFS server.
+    address of the server. When the SAML request comes in to ADFS, it tries to match the SAML Destination ID (retrieved from the SAML configuration in your CenturyLink Cloud account) to the Federation Service name in the ADFS server.
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/fsrzrtbf05zjbnp/?name=saml34.png" alt="saml34.png" />
   </li>
@@ -204,7 +204,7 @@
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/tmjzodsx60r3uho/?name=saml35.png" alt="saml35.png" />
   </li>
-  <li>Go to a web browser and plug in&nbsp;https://&lt;alias&gt;.tier3cloud.com. Here you can sign in via Tier 3 username and password, or choose the <strong>Sign In Using SAML </strong>option. If you choose the latter, then the Tier 3 SAML service redirects
+  <li>Go to a web browser and plug in&nbsp;https://&lt;alias&gt;.tier3cloud.com. Here you can sign in via CenturyLink Cloud username and password, or choose the <strong>Sign In Using SAML </strong>option. If you choose the latter, then the CenturyLink Cloud SAML service redirects
     the browser to the URL specified in the account's <strong>SAML SSO URL</strong> setting.
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/c1papu1xttx1gae/?name=saml36.png" alt="saml36.png" />
@@ -284,7 +284,7 @@
 
 </pre>
   </li>
-  <li>If the SAML request is successfully processed by the ADFS server, then ADFS sends a SAML response that the Tier 3 Control Portal uses to log in the federated user.
+  <li>If the SAML request is successfully processed by the ADFS server, then ADFS sends a SAML response that the CenturyLink Cloud Control Portal uses to log in the federated user.
     <br />
     <br />
     <pre>&lt;samlp:Response ID="--ID--" 
@@ -393,7 +393,7 @@
 
 </pre>
   </li>
-  <li>The user experience when clicking that button is that the user is prompted for credentials (if the user is not hitting the website from within the domain itself) and once provided, the user is automatically logged into the Tier 3 portal. <strong>Because they used Single Sign On and SAML, they did NOT have to enter their Tier 3 account credentials, but rather, were able to use their regular network credentials.</strong>
+  <li>The user experience when clicking that button is that the user is prompted for credentials (if the user is not hitting the website from within the domain itself) and once provided, the user is automatically logged into the CenturyLink Cloud portal. <strong>Because they used Single Sign On and SAML, they did NOT have to enter their CenturyLink Cloud account credentials, but rather, were able to use their regular network credentials.</strong>
     <br
     />
     <br /><img src="https://t3n.zendesk.com/attachments/token/jkuvvwgrukqohgn/?name=saml37.png" alt="saml37.png" />

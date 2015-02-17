@@ -6,9 +6,9 @@
   "contentIsHTML": true
 }}}
 
-<p>S3CMD is a Linux utility that can be used to interact and manage your <a href="http://www.tier3.com/products/object-storage" target="_blank">Tier 3 Object Storage</a> buckets. While S3CMD is included in many package managers, it is best to manually configure
+<p>S3CMD is a Linux utility that can be used to interact and manage your <a href="http://www.tier3.com/products/object-storage" target="_blank">CenturyLink Cloud Object Storage</a> buckets. While S3CMD is included in many package managers, it is best to manually configure
   the official repository to ensure that you are using the latest version.</p>
-<p>First, you will need to create a user and object storage bucket from within the Tier 3 Control Portal:</p>
+<p>First, you will need to create a user and object storage bucket from within the CenturyLink Cloud Control Portal:</p>
 <ol>
   <li>Navigate to “Object Storage” under the “Services” tab of <a href="https://control.tier3.com/">https://control.tier3.com</a>
   </li>
@@ -51,11 +51,11 @@
   </li>
 </ol>
 
-<h5>Once S3CMD has been installed, it must be configured to use Tier 3’s Object Storage:</h5>
+<h5>Once S3CMD has been installed, it must be configured to use CenturyLink Cloud’s Object Storage:</h5>
 <ol>
   <ol>
     <li>S3CMD stores its settings in a configuration file. You can either run s3cmd&nbsp;–configure&nbsp;to launch an interactive&nbsp;configuration generation tool, or specify a&nbsp;pre-existing file.&nbsp;You will be prompted for both your Access Key&nbsp;and
-      your Secret Key, which can be found by clicking on the appropriate username in the Tier 3 Control Panel, under the Services-&gt; Object Storage Section.</li>
+      your Secret Key, which can be found by clicking on the appropriate username in the CenturyLink Cloud Control Panel, under the Services-&gt; Object Storage Section.</li>
     <li>
       <a><img src="https://t3n.zendesk.com/attachments/token/wzvex9kpccjeuge/?name=bucketsecret.JPG" alt="bucketsecret.JPG" />
       </a>
@@ -67,7 +67,7 @@
     <li>Select “Yes” when prompted to save your configuration file.</li>
     <li>The .s3cfg file will be created in your users home directory- open it with your favorite text editor, in this example we will use VIM. Enter the command: <strong>vi ~/.s3cfg</strong>
     </li>
-    <li>In the configuration file, change the following fields with the appropriate Tier 3 data center (in this example, we are using Canada- but an American data center would be us.tier3.io, UK would be uk.tier3.io, etc.)</li>
+    <li>In the configuration file, change the following fields with the appropriate CenturyLink Cloud data center (in this example, we are using Canada- but an American data center would be us.tier3.io, UK would be uk.tier3.io, etc.)</li>
   </ol>
 </ol>
 <pre>host_base = ca.tier3.io

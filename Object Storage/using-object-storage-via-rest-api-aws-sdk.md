@@ -390,7 +390,7 @@ exports.index = function(req, res){
 
         console.log(data.Buckets);
 
-        res.render('index', { title: 'Tier 3 Object Storage Bucket List', buckets: data.Buckets });
+        res.render('index', { title: 'CenturyLink Cloud Object Storage Bucket List', buckets: data.Buckets });
 
     });
 

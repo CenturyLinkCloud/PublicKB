@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description</h3>
-<p>Tier 3 users can issue power commands against individual servers or Groups of servers. For Groups, this makes it easy to quickly power off or reboot entire sets of servers with a single command. This KB article explains what each power command does to the underlying virtual machine.</p>
+<p>CenturyLink Cloud users can issue power commands against individual servers or Groups of servers. For Groups, this makes it easy to quickly power off or reboot entire sets of servers with a single command. This KB article explains what each power command does to the underlying virtual machine.</p>
 
 <p><img src="https://t3n.zendesk.com/attachments/token/8r7jklixbcoeraa/?name=power01.png" alt="power01.png" /> </p>
 

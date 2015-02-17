@@ -18,7 +18,7 @@
   <li>The current architecture version that is being deployed is version 4.</li>
 </ol>
 <div>
-  <h3>The Hardware</h3> Tier 3 has a best-of-breed policy and selects the hardware in accordingly. The hardware is EOL'd somewhere between 3 and 5 years depending on the failure rate, maintenance schedules and contractual obligations. current vendors include:
+  <h3>The Hardware</h3> CenturyLink Cloud has a best-of-breed policy and selects the hardware in accordingly. The hardware is EOL'd somewhere between 3 and 5 years depending on the failure rate, maintenance schedules and contractual obligations. current vendors include:
   <ol>
     <li>Host vendors: Dell, HP, Supermicro, and OEM whitebox</li>
     <li>Storage vendors: SolidFire, Nimble, NetApp, Dell Equalogic, OEM whitebox</li>

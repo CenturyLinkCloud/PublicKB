@@ -183,7 +183,7 @@
     try again.</li>
   <li>Your Windows Firewall is blocking the required port. Try to disable your firewall and connect again. If you don’t want to disable your firewall, you can open the required Inbound/Outbound ports. Your remote ports are unique.&nbsp;
     You will need to email <a href="mailto:noc@tier3.com">noc@tier3.com</a> and ask what ports your OpenVPN uses or see the bullet below.&nbsp;</li>
-  <li>Your physical Firewall is blocking the required port. (Firewall, Router, etc)&nbsp; Check with your network administrator.&nbsp;&nbsp; You can tell him/her this:&nbsp; “In order for OpenVPN to be able to connect to Tier 3, Outbound TCP and UDP
+  <li>Your physical Firewall is blocking the required port. (Firewall, Router, etc)&nbsp; Check with your network administrator.&nbsp;&nbsp; You can tell him/her this:&nbsp; “In order for OpenVPN to be able to connect to CenturyLink Cloud, Outbound TCP and UDP
     port xyz to be opened(email&nbsp; <a href="mailto:noc@tier3.com">noc@tier3.com</a> for your OpenVPN port or see the bullet below)”
     <br />
     <br />
@@ -214,7 +214,7 @@
 
 
 
-<p>You need to verify with Tier 3 or your Administrator that you are using the right credentials. Your account must also be a member of: ManagedVPN</p>
+<p>You need to verify with CenturyLink Cloud or your Administrator that you are using the right credentials. Your account must also be a member of: ManagedVPN</p>
 
 <p>
   <a name="5"></a>

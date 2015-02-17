@@ -6,15 +6,15 @@
   "contentIsHTML": true
 }}}
 
-<p>The following instructions provide a detailed step-by-step instructions for Tier 3’s customers who wish to provision a GUI desktop on their Ubuntu servers, and then run a remote desktop application (TightVNC) to control the desktop.</p>
-<p>Note: Installing any desktop GUI on a Linux server is generally not recommended since these desktop GUI applications can slightly impact the performance of the server. Hence, Tier 3 does not provision Linux GUI desktops by default. Although, administrators who are new to Linux operating systems may find using a desktop GUI (and the associated tools that is installed with the desktop) easier to use than a Linux command line interface.</p>
+<p>The following instructions provide a detailed step-by-step instructions for CenturyLink Cloud’s customers who wish to provision a GUI desktop on their Ubuntu servers, and then run a remote desktop application (TightVNC) to control the desktop.</p>
+<p>Note: Installing any desktop GUI on a Linux server is generally not recommended since these desktop GUI applications can slightly impact the performance of the server. Hence, CenturyLink Cloud does not provision Linux GUI desktops by default. Although, administrators who are new to Linux operating systems may find using a desktop GUI (and the associated tools that is installed with the desktop) easier to use than a Linux command line interface.</p>
 
 <h3>Steps to Install a Headless GNOME GUI Desktop on Ubuntu Server and Then Remote Control Server Desktop with TightVNC</h3>
 
 <ol>
-  <li>Create an Ubuntu server in Tier 3’s Control Portal (see Quick Start Guide for additional details - <a href="../../../entries/20533612-tier-3-quick-start-guide">http://help.tier3.com/entries/20533612-tier-3-quick-start-guide</a>)
+  <li>Create an Ubuntu server in CenturyLink Cloud’s Control Portal (see Quick Start Guide for additional details - <a href="../../../entries/20533612-tier-3-quick-start-guide">http://help.tier3.com/entries/20533612-tier-3-quick-start-guide</a>)
   </li>
-  <li>Establish an OpenVPN tunnel to your Tier 3 servers (see Quick Start Guide for details), and start an SSH client (The instructions below will utilize PuTTY, see the following URL to download: http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
+  <li>Establish an OpenVPN tunnel to your CenturyLink Cloud servers (see Quick Start Guide for details), and start an SSH client (The instructions below will utilize PuTTY, see the following URL to download: http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
   and enter IP address of server created in Step 1
   </li>
   <li>Type in the ID and password created in Step 1

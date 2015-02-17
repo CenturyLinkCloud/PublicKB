@@ -14,7 +14,7 @@
 <p><strong>Answer:</strong>&nbsp; Client specific reports and alerts are not available today</p>
 <h3><strong>Question:</strong>&nbsp; How frequently are the IDS/IDP “screens” updated?</h3>
 <p><strong>Answer:</strong>&nbsp; Bi-Annual</p>
-<h3><strong>Question:</strong>&nbsp; If a specific attack or event is detected in my environment what remediation and notification steps are taken by Tier 3?&nbsp;</h3>
+<h3><strong>Question:</strong>&nbsp; If a specific attack or event is detected in my environment what remediation and notification steps are taken by CenturyLink Cloud?&nbsp;</h3>
 <p><strong>Answer:</strong>&nbsp; The remediation activities for attacks or events vary greatly depending on the source, target, number of customers affected&nbsp;and type of exploit. CenturyLink Cloud resources will work closely with our customer
   base to take appropriate steps to resolve these events in a timely manner. This includes, but is not limited to, isolating a specific Virtual Machine to blocking IP addresses of attack sources.  &nbsp;Customers are encouraged to review the
   following KB: &nbsp;<a href="https://t3n.zendesk.com/entries/21918740-What-can-you-expect-from-Tier-3-on-a-Security-Issue" target="_blank">https://t3n.zendesk.com/entries/21918740-What-can-you-expect-from-Tier-3-on-a-Security-Issue</a>

@@ -7,11 +7,11 @@
 }}}
 
 <h3>Description</h3>
-<p>In order to build highly available web applications, Tier 3 customers can use a load balancer. While customers are free to set up a dedicated load balancer with the help of the Tier 3 NOC, customers can also use a shared load balancer that is managed
-  through the Tier 3 Control Portal. In this KB article, we walk through the shared load balancer and how to modify a pool of servers.</p>
+<p>In order to build highly available web applications, CenturyLink Cloud customers can use a load balancer. While customers are free to set up a dedicated load balancer with the help of the CenturyLink Cloud NOC, customers can also use a shared load balancer that is managed
+  through the CenturyLink Cloud Control Portal. In this KB article, we walk through the shared load balancer and how to modify a pool of servers.</p>
 <h3>Audience</h3>
 <ul>
-  <li>Tier 3 customers (Application developers, system administrators)</li>
+  <li>CenturyLink Cloud customers (Application developers, system administrators)</li>
 </ul>
 <h3>Prerequisites</h3>
 <ul>

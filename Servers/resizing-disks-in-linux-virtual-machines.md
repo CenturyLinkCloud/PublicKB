@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description</h3>
-<p>Server resource requirements change frequently as environments scale, with storage being the most often re-sized aspect of the environment. The Tier 3 control portal provides a self-service function to accommodate increased storage demands without any reboot necessary. Non-boot and swap disks on a Linux VM will automatically be expanded and have their file systems expanded to reflect expanded storage.</p>
+<p>Server resource requirements change frequently as environments scale, with storage being the most often re-sized aspect of the environment. The CenturyLink Cloud control portal provides a self-service function to accommodate increased storage demands without any reboot necessary. Non-boot and swap disks on a Linux VM will automatically be expanded and have their file systems expanded to reflect expanded storage.</p>
 
 <h3>Steps</h3>
 <ol>

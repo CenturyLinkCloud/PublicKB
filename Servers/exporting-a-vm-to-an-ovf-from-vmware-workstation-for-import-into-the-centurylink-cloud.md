@@ -25,7 +25,7 @@
 <p>A progress bar will be displayed showing the task completion.</p>
 </li>
 <li><p>To reduce file transfer time, and ensure file integrity, it is recommended to use an archival tool such as the open source 7zip to compress the OVF folder. Once the archive is created, it is advised calculate a checksum to ensure the
-  integrity of your files. This can be done in most archival programs, in 7zip, simply highlight the archive and go to “File” and selecting “Calculate Checksum”. The checksum value can provided to the Tier 3 NOC to ensure the integrity of the uploaded
+  integrity of your files. This can be done in most archival programs, in 7zip, simply highlight the archive and go to “File” and selecting “Calculate Checksum”. The checksum value can provided to the CenturyLink Cloud NOC to ensure the integrity of the uploaded
   archive.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/vosgvxtvv8qe6qo/?name=checksum.PNG" alt="checksum.PNG" />
 </p>

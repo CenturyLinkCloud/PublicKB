@@ -6,10 +6,10 @@
   "contentIsHTML": true
 }}}
 
-<p>The Tier 3 platform provides a rich interface for management of your virtual environment. When designing a virtual environment, one will often require consistency across all virtual machines- in the patch level, configuration, or installed applications,
-  among others. Tier 3 provides three means of automation and repeat-ability: Clones, Templates, and Blueprints. While all these technologies can be used to produce the same results, there are best practices for each use case. This is the first in a series
+<p>The CenturyLink Cloud platform provides a rich interface for management of your virtual environment. When designing a virtual environment, one will often require consistency across all virtual machines- in the patch level, configuration, or installed applications,
+  among others. CenturyLink Cloud provides three means of automation and repeat-ability: Clones, Templates, and Blueprints. While all these technologies can be used to produce the same results, there are best practices for each use case. This is the first in a series
   of articles which will illustrate said practices, focusing on cloning.</p>
-<p>Cloning a server takes an exact copy of an existing machine. The server is shutdown to ensure that there are no pending operations/information held in memory, and the server contents are copied. The Tier 3 clone server wizard will prompt you for the machine
+<p>Cloning a server takes an exact copy of an existing machine. The server is shutdown to ensure that there are no pending operations/information held in memory, and the server contents are copied. The CenturyLink Cloud clone server wizard will prompt you for the machine
   group, new name, and network settings. A cloned server is, for most purposes, an exact copy of the source; however, certain underlying settings are changed (UUID, MAC, SID, etc.). Cloning is an easy way to produce alternate copies of existing infrastructure-
   common use cases are migrating servers from “test” to “development” or adding another web server to an existing stack.</p>
 <p>It is important to understand the changes enacted by a clone job, to minimize complications. The most impactful changes are:</p>
