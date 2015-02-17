@@ -30,12 +30,8 @@
     <li>Password: (what is provided in your control portal)</li>
   </ul>
   <div>&nbsp;</div>
-  <div>You will also need to add SPF record as follows:&nbsp;<strong>v=spf1 ip4:66.150.160.0/24</strong>
-  </div>
-  <div><strong>&nbsp;</strong>
-  </div>
-  <div><strong>API's for SMTP Relay Provisioning:</strong>
-  </div>
+  <div>You will also need to add SPF record as follows:&nbsp;<strong>v=spf1 ip4:66.150.160.0/24</strong></div>
+  <div><strong>API's for SMTP Relay Provisioning:</strong></div>
   <div>&nbsp;</div>
   <div>Here are the links to the provisioning service for the SMTP Relay that can be used to manage SMTP relay accounts and get invalid addresses such as bounce backs:</div>
   <div>&nbsp;</div>
@@ -54,47 +50,30 @@
       <li><a href="http://help.tier3.com/entries/20345683-get-invalid-addresses">Get Invalid Addresses</a>&nbsp;</li>
     </ul>
   </div>
-  <div><strong>&nbsp;</strong>
-  </div>
-  <div><strong>RHEL Compatible Postfix Basic Setup</strong>
-  </div>
-  <div><strong><br /></strong>Install pre-reqs:</div>
+  <div><strong>RHEL Compatible Postfix Basic Setup</strong></div>
+  <div>Install pre-reqs:</div>
   <div>
     <pre> &gt; sudo yum install cyrus-sasl{,-plain}</pre>
   </div>
-  <div></div>
-  <div></div>
   <div>As root create the file /etc/postfix/smtp_sasl_password_maps with the following content (substituting your alias and password):</div>
-  <div></div>
   <div><strong><strong></strong></strong>
     <pre>relay.t3mx.com    <strong>$alias</strong>:<strong>$password</strong></pre>
     <div>
+      <div>Create a hash of your password map:</div>
       <div>
-        <br />Create a hash of your password map:</div>
-
-      <div></div>
-
-      <div><strong></strong>
         <pre>&gt; sudo postmap /etc/postfix/smtp_sasl_password_maps</pre>
-        <div>
-          <br />Add the following lines to your /etc/postfix/main.cf:</div>
+      </div>
+    </div>
+    <div>
+        <div>Add the following lines to your /etc/postfix/main.cf:</div>
         <div>
           <pre>smtp_sasl_auth_enable = yes<br />smtp_sasl_password_maps = hash:/etc/postfix/smtp_sasl_password_maps<br />smtp_sasl_security_options = noanonymous<br />relayhost = relay.t3mx.com</pre>
         </div>
-      </div>
     </div>
-    <div></div>
-    <div>Restart postfix and test:</div>
-    <div></div>
-    <div><strong><strong></strong></strong>
-      <pre>&gt; sudo /sbin/service postfix restart</pre>
+    <div>
+        <div>Restart postfix and test:</div>
+        <div>
+          <pre>&gt; sudo /sbin/service postfix restart</pre>
+        </div>
     </div>
-    <strong></strong>
-  </div>
-  <div><strong></strong>
-  </div>
-  <div><strong></strong>
-  </div>
-  <div><strong></strong>
-  </div>
 </div>
