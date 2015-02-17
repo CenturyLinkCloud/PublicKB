@@ -10,7 +10,7 @@ Understanding VM Deployment Options and Power States
 <h3>Templates</h3>
 <ul>
   <li>Definition: &nbsp;A Virtual Machine template provides a standardized group of hardware and software settings that can be used repeatedly to create new virtual machines configured with those settings.</li>
-  <li>How To: <a href="how-to-create-customer-specific-os-templates/" target="_blank">How To Create A Customer Specific OS Template</a>
+  <li>How To: <a href="../how-to-create-customer-specific-os-templates/">How To Create A Customer Specific OS Template</a>
   </li>
   <li>Costs: Customer specific template storage is billed on a per GB basis as Standard Storage. Out of the box Virtual Machine templates in the Tier 3 platform do not incur a storage fee. </li>
   <li>Sample Use Case: &nbsp;ISV would like to build a virtual machine base template that includes the OS, software packages and security customization to improve speed of delivery to their client base. </li>
