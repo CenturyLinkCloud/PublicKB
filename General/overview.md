@@ -150,31 +150,33 @@
 
 ## Table of Contents
 
-* <span class="kb-toc-link">[Steps with Nested Steps](#anchor-1)</span>
-* <span class="kb-toc-link">[List - Numbered](#anchor-2)</span>
-* <span class="kb-toc-link">[List - Unordered](#anchor-3)</span>
-* <span class="kb-toc-link">[Images](#anchor-images)</span>
-* <span class="kb-toc-link">[Tables](#anchor-tables)</span>
-* <span class="kb-toc-link">[Video Embeds](#anchor-videos)</span>
-* <span class="kb-toc-link">[Note](#anchor-4)</span>
-* <span class="kb-toc-link">[Alert](#anchor-5)</span>
-* <span class="kb-toc-link">[Code Snippet Example](#anchor-6)</span>
-* <span class="kb-toc-link">[Code Block Example](#anchor-7)</span>
-* <span class="kb-toc-link">[Code Block Example - Gist](#anchor-gist)</span>
-* <span class="kb-toc-link">[Notes on Additional Sections](#anchor-8)</span>
+<a href="#anchor-1" data-scroll-to-anchor="100">Steps with Nested Steps</a>
+<a href="#anchor-2" data-scroll-to-anchor="100">List - Numbered</a>
+<a href="#anchor-3" data-scroll-to-anchor="100">List - Unordered</a>
+<a href="#anchor-images" data-scroll-to-anchor="100">Images</a>
+<a href="#anchor-tables" data-scroll-to-anchor="100">Tables</a>
+<a href="#anchor-videos" data-scroll-to-anchor="100">Video Embeds</a>
+<a href="#anchor-4" data-scroll-to-anchor="100">Note</a>
+<a href="#anchor-5" data-scroll-to-anchor="100">Alert</a>
+<a href="#anchor-6" data-scroll-to-anchor="100">Code Snippet Example</a>
+<a href="#anchor-7" data-scroll-to-anchor="100">Code Block Example</a>
+<a href="#anchor-gist" data-scroll-to-anchor="100">Code Block Example - Gist</a>
+<a href="#anchor-8" data-scroll-to-anchor="100">Notes on Additional Sections</a>
 
 <!-- TOC - MARKDOWN -->
 
-    ## Table of Contents
-
-    * <span class="kb-toc-link">[Steps with Nested Steps](#anchor-1)</span>
-    * <span class="kb-toc-link">[List - Numbered](#anchor-2)</span>
-    * <span class="kb-toc-link">[List - Unordered](#anchor-3)</span>
-    * <span class="kb-toc-link">[Note](#anchor-4)</span>
-    * <span class="kb-toc-link">[Alert](#anchor-5)</span>
-    * <span class="kb-toc-link">[Code Snippet Example](#anchor-6)</span>
-    * <span class="kb-toc-link">[Code Block Example](#anchor-7)</span>
-    * <span class="kb-toc-link">[Notes on Additional Sections](#anchor-8)</span>
+    <a href="#anchor-1" data-scroll-to-anchor="100">Steps with Nested Steps</a>
+    <a href="#anchor-2" data-scroll-to-anchor="100">List - Numbered</a>
+    <a href="#anchor-3" data-scroll-to-anchor="100">List - Unordered</a>
+    <a href="#anchor-images" data-scroll-to-anchor="100">Images</a>
+    <a href="#anchor-tables" data-scroll-to-anchor="100">Tables</a>
+    <a href="#anchor-videos" data-scroll-to-anchor="100">Video Embeds</a>
+    <a href="#anchor-4" data-scroll-to-anchor="100">Note</a>
+    <a href="#anchor-5" data-scroll-to-anchor="100">Alert</a>
+    <a href="#anchor-6" data-scroll-to-anchor="100">Code Snippet Example</a>
+    <a href="#anchor-7" data-scroll-to-anchor="100">Code Block Example</a>
+    <a href="#anchor-gist" data-scroll-to-anchor="100">Code Block Example - Gist</a>
+    <a href="#anchor-8" data-scroll-to-anchor="100">Notes on Additional Sections</a>
 
 <!-- BREAK -->
 
