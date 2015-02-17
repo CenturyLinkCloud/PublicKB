@@ -7,15 +7,18 @@
 }}}
 
 <p>CenturyLink Cloud supports the ability to create sub accounts, which fall under a parent account. Sub accounts have many advantages:</p>
-<p>They are hierarchal - user permissions flow down, not up nor sideways.</p>
-<p>They may be billed separately or to the parent account.</p>
-<p>They may share parent networks or have their own.</p>
-<p>Settings are inherited.</p>
+
+* They are hierarchal - user permissions flow down, not up nor sideways.
+* They may be billed separately or to the parent account.
+* They may share parent networks or have their own.
+* Settings are inherited.
 
 ###Audience
 Customers
 
-###Creating a Sub Account</h2>
+###Creating a Sub Account
+
+
 <p>In CenturyLinkCloud’s Control Portal drop down menu, select Account &gt; Sub Accounts</p>
 <p>Click “+ create new account”</p>
 
@@ -40,7 +43,7 @@ Note that an account alias cannot be reused, even after deletion of the original
 <p>Bill to: Each sub account generates an invoice. You have the option of submitting the invoice to the parent account, or bill the sub account directly.</p>
 <p>Payment Type: Input the payment type for the sub account.</p>
 <p>Share Parent Networks:
-  <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This allows for sub accounts to share networks with the parent account. If this is set to ‘NO’ then the sub account will receive unique IP ranges when deploying
+This allows for sub accounts to share networks with the parent account. If this is set to ‘NO’ then the sub account will receive unique IP ranges when deploying
   servers/networks.</p>
 
 <h3>Settings</h3>
@@ -50,7 +53,7 @@ Note that an account alias cannot be reused, even after deletion of the original
   will be hidden.</p>
 
 
-<h2>Data Center</h3>
+<h3>Data Center</h3>
 
 <p><strong><img src="https://t3n.zendesk.com/attachments/token/TlQSi9xNdE4lGgtfQku8IL9R1/?name=subdatacenter.png" alt="subdatacenter.png" /></strong>
 </p>
@@ -85,13 +88,12 @@ Note that an account alias cannot be reused, even after deletion of the original
 6. Note that user permissions are hierarchical so a user may access the account to which they are assigned, and that account’s sub accounts, but not a parent account nor any other sub account on the same level.
 
 
-<h2>FAQ</h2>
-<p>Q: I just created my subaccount. Why do I get a permission denied error when I try to access it?</p>
-<p>A: Allow a few minutes for the new account to fully replicate and try again.</p>
+<h3>FAQ</h3>
+<p><strong>I just created my subaccount. Why do I get a permission denied error when I try to access it?</strong></p>
+<p>Allow a few minutes for the new account to fully replicate and try again.</p>
 
-<p>Q: I don’t need this subaccount any longer, how do I delete it?</p>
-<p>A: Account &gt; Info. Click on “Request to close” link at bottom right.</p>
+<p><strong>I don’t need this subaccount any longer, how do I delete it?</strong></p>
+<p>Account &gt; Info. Click on “Request to close” link at bottom right.</p>
 
-<p>Q: I disabled a subaccount, but still see it in my subaccounts list.</p>
-<p>A: A disabled subaccount still appears in the list, so you have the option to re-enable it. Entering the subaccount via the dropdown at the top left, and going to account&gt;info and clicking the “Request to close” link will start the process to remove
-  the account.</p>
+<p><strong>I disabled a subaccount, but still see it in my subaccounts list.</strong></p>
+<p>A disabled subaccount still appears in the list, so you have the option to re-enable it. Entering the subaccount via the dropdown at the top left, and going to account&gt;info and clicking the “Request to close” link will start the process to remove the account.</p>
