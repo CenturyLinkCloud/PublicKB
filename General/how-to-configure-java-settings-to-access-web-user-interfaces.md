@@ -23,11 +23,11 @@
   <li>On the General Tab under Temporary Internet Files click “Settings”</li>
   <li>Uncheck the box "Keep temporary files on my computer" and press OK
     <br />
-    <br /><strong><img src="https://t3n.zendesk.comhttps://t3n.zendesk.com/attachments/token/RtbGDYl4Hv2U5UwJNtwUVABkQ/?name=Java1.png" alt="Java1.png" /><br /><br /></strong>
+    <br /><strong><img src="https://t3n.zendesk.com/attachments/token/RtbGDYl4Hv2U5UwJNtwUVABkQ/?name=Java1.png" alt="Java1.png" /><br /><br /></strong>
   </li>
   <li>Next go to the Security tab and change the slider to Medium. Please note that you are responsible for the security of your OS and computer.
     <br />
-    <br /><img src="https://t3n.zendesk.comhttps://t3n.zendesk.com/attachments/token/d5GBLPfcDrls0y3j3umRMGd37/?name=Java2.PNG" alt="Java2.PNG" />
+    <br /><img src="https://t3n.zendesk.com/attachments/token/d5GBLPfcDrls0y3j3umRMGd37/?name=Java2.PNG" alt="Java2.PNG" />
     <br />
     <br />
   </li>

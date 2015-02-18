@@ -12,7 +12,7 @@ Understanding VM Deployment Options and Power States
   <li>Definition: &nbsp;A Virtual Machine template provides a standardized group of hardware and software settings that can be used repeatedly to create new virtual machines configured with those settings.</li>
   <li>How To: <a href="../servers/how-to-create-customer-specific-os-templates/">How To Create A Customer Specific OS Template</a>
   </li>
-  <li>Costs: Customer specific template storage is billed on a per GB basis as Standard Storage. Out of the box Virtual Machine templates in the Tier 3 platform do not incur a storage fee. </li>
+  <li>Costs: Customer specific template storage is billed on a per GB basis as Standard Storage. Out of the box Virtual Machine templates in the CenturyLink Cloud platform do not incur a storage fee. </li>
   <li>Sample Use Case: &nbsp;ISV would like to build a virtual machine base template that includes the OS, software packages and security customization to improve speed of delivery to their client base. </li>
 </ul>
 <h3>Clones</h3>
@@ -44,7 +44,7 @@ Understanding VM Deployment Options and Power States
     </p>
   </li>
   <li>
-    <p>Costs: &nbsp;Snapshots are included as part of the Tier 3 platform. Snapshots can be automatically created or deleted using the built in scheduler.</p>
+    <p>Costs: &nbsp;Snapshots are included as part of the CenturyLink Cloud platform. Snapshots can be automatically created or deleted using the built in scheduler.</p>
   </li>
   <li>Sample Use Case: &nbsp;IT Department is preparing for the monthly patch release cycle for their Windows servers. For rapid fallback group level snapshots are created against the production environment prior to application of patches. </li>
 </ul>

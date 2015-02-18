@@ -24,7 +24,7 @@
 <p><em>***Please note, this&nbsp;post is provided for informational purposes only and&nbsp;that changes like this have NOT been extensively tested against&nbsp;existing PowerShell scripts or various types of PowerShell Command Outputs. ***</em>
 </p>
 <p>Make the following changes to your package manifest:</p>
-<p><em>&lt;Mode&gt;Command&lt;/Mode&gt;</em>
-</p>
-<p><em>&lt;Command&gt;cmd /c "echo . | powershell ./install.ps1" ${Arg}&lt;/Command&gt;</em>
-</p>
+<code><pre>
+&lt;Mode&gt;Command&lt;/Mode&gt;</em>
+&lt;Command&gt;cmd /c "echo . | powershell ./install.ps1" ${Arg}&lt;/Command&gt;
+</code></pre>

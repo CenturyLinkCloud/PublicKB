@@ -7,18 +7,18 @@
 }}}
 
 <h3>Description (goal/purpose)</h3>
-<p>Tier 3 offers resellers a way to customize and personalize the CenturyLink Cloud to fit their needs. One way to do that is to modify the default email templates that are used by the Tier 3 system. Many of the email templates offer "tokens" which represent
+<p>CenturyLink Cloud offers resellers a way to customize and personalize the CenturyLink Cloud to fit their needs. One way to do that is to modify the default email templates that are used by the CenturyLink Cloud system. Many of the email templates offer "tokens" which represent
   information about the user (e.g. "username") or resource (e.g. "blueprint name") that the email applies to. In this KB article, we'll list each email template and which tokens are available.</p>
 <p>Note that to view the available tokens for a template, click inside the "message body" to switch from the Viewer interface to the Editable interface.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/xfqjfcfmzzxrmy4/?name=templates01.png" alt="templates01.png" />
 </p>
 <h3>Audience</h3>
 <ul>
-  <li>Tier 3 customers</li>
+  <li>CenturyLink Cloud customers</li>
 </ul>
 <h3>Pre-Requisites</h3>
 <ul>
-  <li>Account must be enabled for full customization. Contact the Tier 3 NOC to enable your account.</li>
+  <li>Account must be enabled for full customization. Contact the CenturyLink Cloud NOC to enable your account.</li>
 </ul>
 <h3>Template List</h3>
 <ol>

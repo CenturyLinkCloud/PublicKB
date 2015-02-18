@@ -9,10 +9,10 @@
 </p>
 <hr />
 <ul>
-  <li><strong>Self-service Firewall Policies for all customers.</strong> Administrators for a given Tier 3 account can now create and modify firewall policies for their network(s). For more information, check out Knowledge Base articles on <a href="http://help.tier3.com/entries/22196842-connecting-data-center-networks-through-firewall-policies"
+  <li><strong>Self-service Firewall Policies for all customers.</strong> Administrators for a given CenturyLink Cloud account can now create and modify firewall policies for their network(s). For more information, check out Knowledge Base articles on <a href="http://help.tier3.com/entries/22196842-connecting-data-center-networks-through-firewall-policies"
     target="_blank">"Connecting Data Center Networks Through Firewall Policies"</a> and <a href="http://help.tier3.com/entries/22210896-creating-bi-directional-firewall-policies" target="_blank">"Creating Bi-Directional Firewall Policies."</a>
   </li>
-  <li><strong>Cross Data Center Firewall Policies.</strong>Customers can now create sophisticated firewall policies that permit traffic between Tier 3 data centers. See the Knowledge Base article <a href="http://help.tier3.com/entries/22603797-creating-cross-data-center-firewall-policies"
+  <li><strong>Cross Data Center Firewall Policies.</strong>Customers can now create sophisticated firewall policies that permit traffic between CenturyLink Cloud data centers. See the Knowledge Base article <a href="http://help.tier3.com/entries/22603797-creating-cross-data-center-firewall-policies"
     target="_blank">"Creating Cross Data Center Firewall Policies"</a> for a complete walkthrough of the feature. <strong>[NOTE: This feature may not be available to all customers until 12/21/12]</strong>
   </li>
   <li><strong>Account activity history log. </strong>Up until now, the audit history for an account was a long, scrolling list of actions performed within a single account. Now, view, filter and export the activities performed by users within an account and

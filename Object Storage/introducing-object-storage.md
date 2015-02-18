@@ -7,8 +7,8 @@
 }}}
 
 <h3>Description</h3>
-<p>Tier 3 now has a robust, geo-distributed Object Storage service capable of storing any type of digital content. Perfect for data backups, media distribution, and file transfers, the Tier 3 Object Storage is Amazon S3-compatible and accessible from the
-  Tier 3 Control Portal or via API.</p>
+<p>CenturyLink Cloud now has a robust, geo-distributed Object Storage service capable of storing any type of digital content. Perfect for data backups, media distribution, and file transfers, the CenturyLink Cloud Object Storage is Amazon S3-compatible and accessible from the
+  CenturyLink Cloud Control Portal or via API.</p>
 <h3>Audience</h3>
 <ul>
   <li>All Users</li>
@@ -16,17 +16,17 @@
 <h3>FAQ</h3>
 <p><strong>Q: &nbsp;Is this software home-grown or is this based on a commercial product?</strong>
 </p>
-<p><strong>A:&nbsp;</strong>Tier 3 Object Storage is based on <a href="http://basho.com/riak-cloud-storage/" target="_blank">Riak CS Enterprise</a> from Basho and will be deployed across Tier 3 data centers.</p>
+<p><strong>A:&nbsp;</strong>CenturyLink Cloud Object Storage is based on <a href="http://basho.com/riak-cloud-storage/" target="_blank">Riak CS Enterprise</a> from Basho and will be deployed across CenturyLink Cloud data centers.</p>
 <div></div>
 <p><strong>Q: &nbsp;What are the key vocabulary terms for Object Storage?</strong>
 </p>
-<p><strong>A: </strong>Object storage is deployed in a series of "regions" which include data centers for each Tier 3 geography (US, Canada, Europe). Note that as of this time, Object Storage is only available in Canada.&nbsp;Object Storage uses "buckets"
+<p><strong>A: </strong>Object storage is deployed in a series of "regions" which include data centers for each CenturyLink Cloud geography (US, Canada, Europe). Note that as of this time, Object Storage is only available in Canada.&nbsp;Object Storage uses "buckets"
   to hold "objects." Buckets are flat (no hierarchy) and can contain an unlimited number of objects and unlimited amount of storage. "Access Control Lists" (ACLs) describe permissions to a bucket and the objects within it. Object Storage "users" are associated
   with a given region and have an "access key ID" and "secret access key" which act as the user's username and password for accessing storage.</p>
 <div></div>
-<p><strong>Q: &nbsp;How do Object Storage users relate to Tier 3 users?</strong>
+<p><strong>Q: &nbsp;How do Object Storage users relate to CenturyLink Cloud users?</strong>
 </p>
-<p><strong>A:&nbsp;</strong>Object Storage users are distinct from Tier 3 users, but all reside under Tier 3 accounts. A Tier 3 user may create multiple Object Storage users that have different access to their buckets. For example, you can create "application
+<p><strong>A:&nbsp;</strong>Object Storage users are distinct from CenturyLink Cloud users, but all reside under CenturyLink Cloud accounts. A CenturyLink Cloud user may create multiple Object Storage users that have different access to their buckets. For example, you can create "application
   users" that a web application uses to retrieve objects from buckets.</p>
 <div></div>
 <p><strong>Q: &nbsp;What kind of data belongs in Object Storage?</strong>
@@ -45,7 +45,7 @@
 <div></div>
 <p><strong>Q: How do I interact with Object Storage?</strong>
 </p>
-<p><strong>A:&nbsp;</strong>Bucket Administrators can use the Tier 3 Control Portal to create users, create buckets, and secure buckets. Object users and developers have their choice of numerous best-of-breed tools for interfacing with objects.</p>
+<p><strong>A:&nbsp;</strong>Bucket Administrators can use the CenturyLink Cloud Control Portal to create users, create buckets, and secure buckets. Object users and developers have their choice of numerous best-of-breed tools for interfacing with objects.</p>
 <div></div>
 <p><strong>Q: So what exact do I do in the Control Portal vs. 3rd party tools?</strong>
 </p>

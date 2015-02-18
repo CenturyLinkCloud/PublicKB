@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<div>Tier 3’s self-service Load Balancer provides an intuitive interface for the management and provisioning of Load Balancer groups and policies. In migrating from the previous version of our shared Load Balancer, you may find yourself presented with a configuration
+<div>CenturyLink Cloud’s self-service Load Balancer provides an intuitive interface for the management and provisioning of Load Balancer groups and policies. In migrating from the previous version of our shared Load Balancer, you may find yourself presented with a configuration
   file detailing the specifics of your deployment- translating these items may require some assistance, the aim of this article is to map the most common configuration items to the Control Portal policies and detail where they diverge.&nbsp;</div>
 <div></div>
 <div>The typical config file looks like this:</div>
@@ -61,5 +61,5 @@
 <div>Next, we add the IP addresses for the servers participating in the Load Balancer pool- in this instance, we will simply enter the IP addresses as they are listed in the configuration file.</div>
 <div></div>
 <div>Monitors and health checks are currently not user-configurable in the shared Load Balancer setup, this article will be amended to explain the available options when released. Should there be any further questions around Load Balancer configuration, please
-  contact the Tier 3 support team.</div>
+  contact the CenturyLink Cloud support team.</div>
 <div></div>

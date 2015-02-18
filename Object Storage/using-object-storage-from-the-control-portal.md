@@ -7,14 +7,14 @@
 }}}
 
 <h3>Description</h3>
-<p>Tier 3 now has a robust, geo-distributed Object Storage service capable of storing any type of digital content. Perfect for data backups, media distribution, and file transfers, the Tier 3 Object Storage is Amazon S3-compatible and accessible from the
-  Tier 3 Control Portal or via API. <strong>This KB article explains how to interact with Object Storage from the Tier 3 Control Portal.</strong>
+<p>CenturyLink Cloud now has a robust, geo-distributed Object Storage service capable of storing any type of digital content. Perfect for data backups, media distribution, and file transfers, the CenturyLink Cloud Object Storage is Amazon S3-compatible and accessible from the
+  CenturyLink Cloud Control Portal or via API. <strong>This KB article explains how to interact with Object Storage from the CenturyLink Cloud Control Portal.</strong>
 </p>
 <h3>Audience</h3>
 <ul>
   <li>Bucket Administrators</li>
 </ul>
-<h3>Actions Supported in the Tier 3 Control Portal</h3>
+<h3>Actions Supported in the CenturyLink Cloud Control Portal</h3>
 <p>Below, each action available in the Control Portal is explained and demonstrated.</p>
 <h4>Create Object Storage Users</h4>
 <ol>
@@ -60,7 +60,7 @@
     <p><img src="https://t3n.zendesk.com/attachments/token/qxax5zp3r4u8922/?name=objectstorage-control07.png" alt="objectstorage-control07.png" />
     </p>
   </li>
-  <li>View the list of all buckets created by all users in this Tier 3 account. Note that for each item in the list below, you can see the name of the bucket, the owner of the bucket (in the text below the bucket name), the region of the bucket, size of the
+  <li>View the list of all buckets created by all users in this CenturyLink Cloud account. Note that for each item in the list below, you can see the name of the bucket, the owner of the bucket (in the text below the bucket name), the region of the bucket, size of the
     bucket, and estimated cost of the bucket.
     <p><img src="https://t3n.zendesk.com/attachments/token/t0stb2nc9fxxyyn/?name=objectstorage-control08.png" alt="objectstorage-control08.png" />
     </p>
@@ -78,7 +78,7 @@
     <p><img src="https://t3n.zendesk.com/attachments/token/djembukgimufntu/?name=objectstorage-control10.png" alt="objectstorage-control10.png" />
     </p>
   </li>
-  <li>Click&nbsp;<strong>add grantee</strong> to update the Access Control List (ACL) for this bucket. This list shows all of the users in this Tier 3 account, and two built in groups,&nbsp;<strong>All Users&nbsp;</strong>and&nbsp;<strong>Authenticated Users</strong>.
+  <li>Click&nbsp;<strong>add grantee</strong> to update the Access Control List (ACL) for this bucket. This list shows all of the users in this CenturyLink Cloud account, and two built in groups,&nbsp;<strong>All Users&nbsp;</strong>and&nbsp;<strong>Authenticated Users</strong>.
     When you add&nbsp;<strong>All Users</strong> to a bucket -- and give it read permissions -- you are giving public Internet access to the bucket. If you add the&nbsp;<strong>Authenticated Users&nbsp;</strong>group to the bucket, then any Object Storage
     user can access the bucket.
     <p><img src="https://t3n.zendesk.com/attachments/token/ivmmb4xsodl5ynt/?name=objectstorage-control11.png" alt="objectstorage-control11.png" />

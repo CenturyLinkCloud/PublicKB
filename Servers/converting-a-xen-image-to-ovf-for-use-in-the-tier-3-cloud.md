@@ -6,8 +6,8 @@
   "contentIsHTML": true
 }}}
 
-<p>The .OVF (Open Virtualization Format) standard is an open-source, secure, and portable format compatible across nearly all hypervisors (VMware, Hyper-V, Xen, VirtualBox, etc.). Tier 3 recommends converting all virtual servers to OVF format prior to delivering
-  to Tier 3 for import into our platform.</p>
+<p>The .OVF (Open Virtualization Format) standard is an open-source, secure, and portable format compatible across nearly all hypervisors (VMware, Hyper-V, Xen, VirtualBox, etc.). CenturyLink Cloud recommends converting all virtual servers to OVF format prior to delivering
+  to CenturyLink Cloud for import into our platform.</p>
 <p>To convert a Citrix XenServer machine to OVF, begin by downloading <a href="http://www.citrix.com/downloads/xenserver/tools/conversion.html" target="_blank">XenServer Convert</a> (if converting multiple machines, it is recommended to install the Conversion
   Manager as well).</p>
 <p>After installing and launching XenConvert, you will be prompted to select your source and destination workloads. If you are converting a single machine, you should be running the conversion tool from within the guest OS. Select "OFV" as the destination

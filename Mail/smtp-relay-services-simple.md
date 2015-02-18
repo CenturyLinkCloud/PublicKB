@@ -14,7 +14,7 @@
   <li>Click the "Create SMTP Relay" button.</li>
   <li>It will create a user to be used on the service and will be listed with an alias, password, status such as:<img src="https://t3n.zendesk.com/attachments/token/govwacy5fnuzexs/?name=smtp-relay-user.png" alt="smtp-relay-user.png" />
   </li>
-  <li>Now you can connect to the SMTP relay service from your virtual servers at Tier 3.</li>
+  <li>Now you can connect to the SMTP relay service from your virtual servers at CenturyLink Cloud.</li>
 </ul>
 <div>&nbsp;</div>
 <div><strong>Connect to the SMTP Relay Service</strong>

@@ -38,7 +38,7 @@ Planning Your Cross Connect
   <br />•&nbsp;Pros:</p>
 <p>a. CLC manages the implementation of the cross connect with the data center provider.
   <br />b. The costs of the cross connect will come as part of the customer’s normal CLC monthly invoice.</p>
-<p>•&nbsp;Cons: Cost of the cross connect is ~20% more expensive, since Tier 3 adds an administrative processing fee on top of our data center providers fees.</p>
+<p>•&nbsp;Cons: Cost of the cross connect is ~20% more expensive, since CenturyLink Cloud adds an administrative processing fee on top of our data center providers fees.</p>
 <p>Regardless, if a customer chooses to purchase the cross connect on their own, there still will be a Professional Services fee that will include the following services:</p>
 <p>• Verify cross connect connectivity options with data center provider
   <br />• Process Letter of Authorization (LOA) data center provider
@@ -60,7 +60,7 @@ Ordering Cross Connects
 <p>• ALL data center providers require a Letter of Authorization (LoA) to install a cross connect. In summary, LoAs provide data center authorization to provision the cross connects- although the responsibility to create the LoA is dependent on who is ordering
   the cross connect (e.g., CLC or our customer):</p>
 <p>o If the <strong>customer purchases the cross connect</strong> from the data center provider, <strong>CLC will supply a LoA to the customer</strong>, and then the customer will need to submit it to the data center.
-  <br />o If <strong>the customer buys the cross connect from CLC</strong>, <strong>the customer will need to give CLC a LoA</strong> (customers who don’t have a LoA template, please see the LoA template listed below), and then the Tier 3 will submit the completed
+  <br />o If <strong>the customer buys the cross connect from CLC</strong>, <strong>the customer will need to give CLC a LoA</strong> (customers who don’t have a LoA template, please see the LoA template listed below), and then the CenturyLink Cloud will submit the completed
   LoA the data center provider.</p>
 <p>• Determine the circuit requirements. CLC's currently only offers Single Mode Fiber (SMF, 1310nm) 1Gbps (1000base-LX) or 10gbps (10G-LR) fiber. We can also support 1 Gbps copper if the cross connect is less than 100m in length. Additionally, as a few
   points of clarity <strong>we do not offer support for</strong>:</p>
@@ -70,6 +70,6 @@ Ordering Cross Connects
 <p>• Verify circuit hand-off will be native Ethernet hand-offs – e.g., no DS-3, SONET, OC3</p>
 <p>• Determine the preferred routing protocol (e.g., static, BGP, OSPF).</p>
 <p>• Will the cross connect be deployed within one of data centers/campuses listed at: http://help.tier3.com/entries/23224937-Tier-3-s-Data-Center-Locations</p>
-<p>• Determine if any specific IP address ranges are required for CLC. Note, CLC can generally only provide /24 networks for customers, but if a specific requirement is needed Tier 3 will evaluate such requests.</p>
-<p>Once the aforementioned is decided, the next steps are for CLC’s customers to complete the LoA (if Tier 3 is purchasing the cross connect on the customer’s behalf), the Intra-Data Center Cross Connect Questionnaire (please see the attached "XC_Questionnaire_2013222.pdf"
+<p>• Determine if any specific IP address ranges are required for CLC. Note, CLC can generally only provide /24 networks for customers, but if a specific requirement is needed CenturyLink Cloud will evaluate such requests.</p>
+<p>Once the aforementioned is decided, the next steps are for CLC’s customers to complete the LoA (if CenturyLink Cloud is purchasing the cross connect on the customer’s behalf), the Intra-Data Center Cross Connect Questionnaire (please see the attached "XC_Questionnaire_2013222.pdf"
   listed below), and authorize an agreement for any associated costs. Customers should expect a minimum of two week lead time to provision most cross connect deployments once all of the paperwork has been finalized.</p>
