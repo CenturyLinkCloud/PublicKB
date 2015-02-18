@@ -7,14 +7,14 @@
 }}}
 
 <h2>Description</h2>
-<p>The Managed Backup service can be configured on new or existing managed servers. For more information on what Managed Backup provides, review the <a href="https://t3n.zendesk.com/entries/62310380-Managed-Backup-Frequently-Asked-Questions" target="_blank">Managed Backup FAQ</a>. The steps below walk through how to configure Managed Backup in both scenarios.</p>
+<p>The Managed Backup service can be configured on new or existing managed servers. For more information on what Managed Backup provides, review the <a href="/knowledge-base/managed-services/managed-backup-frequently-asked-questions">Managed Backup FAQ</a>. The steps below walk through how to configure Managed Backup in both scenarios.</p>
 <h2>Steps</h2>
 <h3>New Server</h3>
 <ol>
-<li>Follow the <a href="https://t3n.zendesk.com/entries/22603877-Creating-a-New-Enterprise-Cloud-Server" target="_blank">basic steps for creating a new server</a>.<br /></li>
+<li>Follow the <a href="/knowledge-base/servers/creating-a-new-enterprise-cloud-server">basic steps for creating a new server</a>.<br /></li>
 <li>From the Create Server page, make sure to select a data center that supports both Managed Services and Managed Backup (an updated list is <a href="http://www.centurylinkcloud.com/managed-services" target="_blank">available here</a></li>
 <li>Click the Managed Server toggle to turn it on and then the option for Managed Backup will appear. Click this toggle as well to enable Managed Backup on the new server.<br /><br /><img src="https://t3n.zendesk.com/attachments/token/fPeVUSXJkB6p88aZh4unx4wvL/?name=create-managed-backup.jpg" alt="create-managed-backup.jpg" width="437" height="488" /><br /></li>
-<li>The list of operating systems will now be limited to only ones that are supported by both Managed Server and Managed Backup. Select the one you'd like to use for this server, <a href="https://t3n.zendesk.com/entries/22603877-Creating-a-New-Enterprise-Cloud-Server" target="_blank">complete the remaining requested fields</a> and click the "create server" button.</li>
+<li>The list of operating systems will now be limited to only ones that are supported by both Managed Server and Managed Backup. Select the one you'd like to use for this server, <a href="/knowledge-base/servers/creating-a-new-enterprise-cloud-server">complete the remaining requested fields</a> and click the "create server" button.</li>
 <li>Your server will now be provisioned with Managed Backup (and Managed OS) enabled.</li>
 </ol>
 <h3>Existing Server</h3>
