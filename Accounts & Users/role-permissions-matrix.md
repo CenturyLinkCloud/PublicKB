@@ -6,7 +6,10 @@
   "contentIsHTML": true
 }}}
 
-<table style="border-collapse: collapse; border: 1px solid white; padding: 2px 5px;">
+<div class="user_formatted header_section clearfix" style="
+    width: 50%;
+">
+        <table style="border-collapse: collapse; border: 1px solid white; padding: 2px 5px;">
 <thead>
 <tr><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
 </thead>
@@ -3012,7 +3015,7 @@
 </tr>
 </tbody>
 </table>
-
+      </div>
 <!-- <table class="table">
   <thead>
     <tr>
