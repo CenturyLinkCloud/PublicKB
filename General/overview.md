@@ -304,25 +304,21 @@ The `h1` and `h2` tags are reserved for the page that's hosting the kb article, 
 
 ### List - Numbered <a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>
 
-+
+1.  16 vCPU, with at least 2GHZz per vCPU
 
-  1.  16 vCPU, with at least 2GHZz per vCPU
+2.  128 GB Memory
 
-  2.  128 GB Memory
-
-  3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
 <!-- LIST - NUMBERED - MARKDOWN-->
 
     ### List - Numbered
 
-    +
+    1.  16 vCPU, with at least 2GHZz per vCPU
 
-      1.  16 vCPU, with at least 2GHZz per vCPU
+    2.  128 GB Memory
 
-      2.  128 GB Memory
-
-      3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+    3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
 <!-- LIST - UNORDERED -->
 
@@ -338,13 +334,11 @@ The `h1` and `h2` tags are reserved for the page that's hosting the kb article, 
 
     ### List - Unordered
 
-    +
+    -  16 vCPU, with at least 2GHZz per vCPU
 
-      -  16 vCPU, with at least 2GHZz per vCPU
+    -  128 GB Memory
 
-      -  128 GB Memory
-
-      -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+    -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
 ### Images <a id="anchor-images" class="kb-toc-anchor" href="#anchor-images"></a>
 
