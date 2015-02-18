@@ -54,6 +54,8 @@
   </ul>
 </ul>
 
+### Still Having Issues?
+
 If you are still having issues, it is most likely related to your Java version. If when you go to the JavaSecurity Tab and you only see High and Very High, you may need to downgrade Java versions.Note: these steps remove the latest Java security updates and features so perform at your own risk.
 
 Uninstall your current Java version.
