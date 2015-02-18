@@ -94,7 +94,7 @@ Monthly<br />Price per GB
 </tr>
 </tbody>
 </table>
-<p>* For information on how "average protected data utilization" is calculated, take a look at this [example of a two-month period](/knowledge-base/attachments/Avg Amount of Protected Data Example.xlsx).</p>
+<p>* For information on how "average protected data utilization" is calculated, take a look at this <a href="/knowledge-base/attachments/Avg Amount of Protected Data Example.xlsx">example of a two-month period.</a></p>
 
 <p><strong>Q: When do my scheduled backups run? What if I want my backups to run more frequently or on a different schedule?</strong></p>
 <p>A: Managed backups are scheduled to run daily. The time of the backup will be within 12 hours from the time of server creation (if a server was created at 8:05am, backup will run sometime before 8:05pm each day).If you would like to change this schedule, you may contact the CenturyLink Technology Solutions Client Service Center at 1-888-638-6771 and enter a request to customize the scheduled backup time for a particular server or set of servers.</p>
