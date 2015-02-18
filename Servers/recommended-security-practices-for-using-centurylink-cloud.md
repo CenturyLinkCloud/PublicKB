@@ -25,4 +25,4 @@
 <li>When building a new server or installing a new application onto a server, always run a patch update to install the latest operating system and application patches on the system.</li>
 <li>Regularly apply patch updates to operating systems and applications.</li>
 <li>If there is a business requirement such that you absolutely must open RDP or SSH to the public network, use the "restrict source traffic" feature to restrict the traffic to that port to authorized sources only. (See <a href="/knowledge-base/network/how-to-add-public-ip-to-virtual-machine">How to Add Public IP to Virtual Machine</a> for more details.)</li>
-</ol><img src="/attachments/token/PhlU324nfyCW2EOiwcaj5lkO2/?name=Capture.JPG" alt="Capture.JPG" width="865" height="340" /></div>
+</ol><img src="https://t3n.zendesk.com/attachments/token/PhlU324nfyCW2EOiwcaj5lkO2/?name=Capture.JPG" alt="Capture.JPG" width="865" height="340" />
