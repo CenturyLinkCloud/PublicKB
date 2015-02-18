@@ -6,18 +6,18 @@
   "contentIsHTML": true
 }}}
 
-<stlye>
+<style>
 
-  table.permission-matrix {
-    
-  }
+table.permission-matrix {
+  
+}
 
-  table.permission-matrix tr.row-header {
-    background: #00853f;
-    color: #FFF;
-  }
+table.permission-matrix tr.row-header {
+  background: #00853f;
+  color: #FFF;
+}
 
-</stlye>
+</style>
 
 <table class="table table--large permission-matrix">
   <thead>
