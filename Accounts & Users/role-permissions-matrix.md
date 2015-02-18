@@ -6,7 +6,3014 @@
   "contentIsHTML": true
 }}}
 
-<table class="table">
+<table style="border-collapse: collapse; border: 1px solid white; padding: 2px 5px;">
+<thead>
+<tr><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+</thead>
+<tbody>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Account Billing</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Change account company info</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Change payment method details</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View account company info</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View billing details</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View billing overview</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View billing usage history</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View payment method details</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Account Branding</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Change customer support settings for an account</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Change site branding title, logos, and color scheme</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Edit email templates and email signature</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View customer support settings for an account</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View email templates and email signature</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View site branding title, logos, and color scheme</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Account Management</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Change sub account settings</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Create a new sub account</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Re-enable a sub account</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Suspend a sub account</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View list of sub accounts</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View sub account settings</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Account Notification</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Change notification contacts</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View notification contacts</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Account Settings</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Add custom field associated with account</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Change account settings for site footers, default DNS</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Change custom field associated with account</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Delete custom field associated with account</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Disable a data center for an account</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Enable a data center for an account</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View account settings for site footers, default DNS</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View custom fields associated with account</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View list of preferred data centers</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Activity History</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Download Activity History as CSV file</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Search Activity History</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View Account Activity History by date, account</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Authentication</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Disable SAML authentication</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Enable SAML authentication</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Set SAML authentication details</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Blueprint Authoring</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Delete a blueprint</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Deploy a blueprint</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Design blueprint</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Duplicate a blueprint</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Edit a blueprint</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">List blueprints for an account</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Publish blueprint</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Review a blueprint in designer</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Search for blueprints</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View individual blueprint</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Write/edit a review for a blueprint</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Blueprint Packages</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Add FTP user for package upload</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Add script package</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Delete FTP user for package upload</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Delete script package</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Delete unpublished script package</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Download script package</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">List script packages</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">List unpublished script packages</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Publish script package</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Search script packages</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Search unpublished script packages</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Update script package</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View FTP users for package upload</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View individual script</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">DNS</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Add Google apps integration</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Add new DNS zone</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Add records to a DNS zone</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Delete DNS zone</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Delete record in DNS zone</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Search DNS zones</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View DNS records for a zone</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View DNS zones for an account</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Firewall</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Add cross-DC firewall policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Add intra-DC firewall policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Change cross-DC firewall policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Change intra-DC firewall policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Change intra-DC firewall policy order</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Delete cross-DC firewall policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Delete intra-DC firewall policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">List cross-DC firewall policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">List intra-DC firewall policies</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View firewall policy change log</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Group Actions</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Archive servers in a group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Delete a group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Execute scripts on servers in a group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Pause servers in a group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Power off servers in a group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Power on servers in a group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Put servers in the group into maintenance mode</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Reboot servers in a group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Reset servers in a group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Restore archived servers in a group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Snapshot servers in a group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Stop servers in a group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Take servers in the group out of maintenance mode</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Group Horizontal Autoscale</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Add horizontal autoscale policy to group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Change horizontal autoscale policy of a group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Remove horizontal autoscale policy from group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View horizontal autoscale policy applied to group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Group Schedules</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Change scheduled task</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Create scheduled task</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Delete scheduled task</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View group scheduled tasks</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Group</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Change DC CPU, RAM, Storage capacity limits</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Change DC default DNS, OS, CPU, RAM</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Change group default network, DNS, OS, CPU, RAM</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Change group name, description, parent</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Create a new Horizontal Autoscale group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Create a new server group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Get activity list for the servers in a group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View billing summary for a group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View DC capacity limits</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View group default network, DNS, OS, CPU, RAM</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View group details</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Load Balancer</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Add IP address/port to pool</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Add pool to load balancer group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Create load balancer group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Disable IP address/port in pool</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Edit load balancer group (name and description)</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Edit pool in load balancer group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Enable IP address/port in pool</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">List load balancer groups</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Remove IP address/port from pool</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Remove load balancer group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Remove pool from load balancer group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Login &amp; Dashboard</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">User login/logout</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View billing summary on dashboard</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View server groups for a data center</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Network</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Create network</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Delete network</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Edit network settings</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">List account networks</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">List IP addresses with server names</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View individual network details</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View public IP address details</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Object Storage</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Change bucket permissions</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Create bucket</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Create object storage user</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Delete bucket</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Delete object storage user</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">List buckets</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">List object storage users</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Reset object storage user secret key</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View bucket info and settings</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View object storage user information</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Policies</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Create Alert policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Create Horizontal Autoscale policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Create Hyperscale Anti-Affinity policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Create Vertical Autoscale policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Delete Alert policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Delete Horizontal Autoscale policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Delete Hyperscale Anti-Affinity policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Delete Vertical Autoscale policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Edit Alert policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Edit Horizontal Autoscale policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Edit Hyperscale Anti-Affinity policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Edit Vertical Autoscale policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View Alert policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View Horizontal Autoscale policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View Hyperscale Anti-Affinity policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View Vertical Autoscale policy</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Queue</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Resume item in the queue</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View individual queue item</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View list of queue items</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Server Actions</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Add a public IP address for a server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Clone a server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Delete a server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Execute scripts on a server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Pause a server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Put a server into maintenance mode</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Reboot a server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Remove public IP address for a server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Reset a server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Stop a server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Take a server out of maintenance mode</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Turn a server off</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Turn a server on</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Update public IP address for a server (change port or filtering)</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View a public IP address for a server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Server Alerts</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Add alert policy to server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Remove alert policy from server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View alert policies applied to server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Server Archiving</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Archive a server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Delete archived server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Restore archived server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View archived servers</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Server Schedules</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Change scheduled task</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Create scheduled task</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Delete scheduled task</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View server scheduled tasks</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Server Settings</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Add storage volumes</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Change amount of RAM</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Change anti-affinity policy for hyperscale server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Change custom field values</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Change number of vCPUs</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Change server description</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Change server group</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Change server password</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Change storage amount of existing volumes</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Remove anti-affinity policy for hyperscale server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Server Snapshots</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Create server snapshot</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Delete server snapshot</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Revert server to snapshot</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View server snapshots</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Server Templates</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Convert a server to a template</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Convert a template to a server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Create a server from a template</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Delete a server template</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View server templates</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Server Vertical Autoscale</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Add vertical autoscale policy to server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Change vertical autoscale policy of a server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Remove vertical autoscale policy from server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View vertical autoscale policy applied to server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Server</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Create a new hyperscale server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Create a new managed server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Create a new server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Create a new server with a lifespan</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Create a server with premium storage</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Import a server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">See cost estimate for a new server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Set anti-affinity policy of new hyperscale server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View anti-affinity policy for a hyperscale server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View billing summary for a server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View server activity history</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View server credentials</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View server details</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Site Redirect</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Change redirect</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Create new redirect</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Delete redirect</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View site redirects</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">SMTP</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Add SMTP relay alias</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Delete SMTP relay</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Disable SMTP relay</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View SMTP relays</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">User Management</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Change user details</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Create a user</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Create new API user</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Delete a user</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Delete API users</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Reset a user's password</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Search API users</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Search for account users</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Set a user's permissions</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Suspend a user</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Unlock a user</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View a list of account users</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View a user's permissions</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">View list of API users</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View user details</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">VPN</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Create client VPN certificate</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Create site-to-site VPN</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Delete client VPN certificate</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Delete site-to-site VPN</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Download client VPN certificate</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Edit client VPN settings</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Edit site-to-site VPN settings</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">List site-to-site VPNs and details</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Restart VPN server</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">See billing estimate for site-to-site VPN</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+<tr style="background: #DDDDDD;"><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px;">Capability</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Account Viewer</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Billing Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">DNS Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Network Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Security Manager</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Administrator</th><th style="background: #999999; color: #ffffff; border: 1px solid white; padding: 2px 5px; text-align: center;">Server Operator</th></tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px; background: #6495ED; color: #ffffff;" colspan="10"><strong style="color: #ffffff;">Webhooks</strong></td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Add webhook URL for events</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">Delete webhook URL for events</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="background: #DDDDDD;">
+<td style="border: 1px solid white; padding: 2px 5px;">Edit webhook URL for events</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid white; padding: 2px 5px;">View webhook URLs for events</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+<td style="border: 1px solid white; padding: 2px 5px; text-align: center;">x</td>
+</tr>
+</tbody>
+</table>
+
+<!-- <table class="table">
   <thead>
     <tr>
       <th>Capability</th>
@@ -3385,4 +6392,4 @@
       <td>x</td>
     </tr>
   </tbody>
-</table>
+</table> -->
