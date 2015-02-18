@@ -328,16 +328,6 @@ The `h1` and `h2` tags are reserved for the page that's hosting the kb article, 
 
 ### List - Unordered <a id="anchor-3" class="kb-toc-anchor" href="#anchor-3"></a>
 
-+
-
-  -  16 vCPU, with at least 2GHZz per vCPU
-
-  -  128 GB Memory
-
-  -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
-
-### List - Unordered <a id="anchor-3" class="kb-toc-anchor" href="#anchor-3"></a>
-
 -  16 vCPU, with at least 2GHZz per vCPU
 
 -  128 GB Memory
