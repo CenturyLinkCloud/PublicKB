@@ -151,19 +151,33 @@
 ## Table of Contents
 
 <a href="#anchor-typography" data-scroll-to-anchor="100">Typography</a>
+
 <a href="#anchor-steps" data-scroll-to-anchor="100">Steps with Nested Steps</a>
+
 <a href="#anchor-list-ordered" data-scroll-to-anchor="100">List - Ordered</a>
+
 <a href="#anchor-list-ordered-nested" data-scroll-to-anchor="100">List - Ordered with Nested Ordered </a>
+
 <a href="#anchor-list-unordered" data-scroll-to-anchor="100">List - Unordered</a>
+
 <a href="#anchor-images" data-scroll-to-anchor="100">Images</a>
+
 <a href="#anchor-tables" data-scroll-to-anchor="100">Tables</a>
+
 <a href="#anchor-videos" data-scroll-to-anchor="100">Video Embeds</a>
+
 <a href="#anchor-note" data-scroll-to-anchor="100">Note</a>
+
 <a href="#anchor-alert" data-scroll-to-anchor="100">Alert</a>
+
 <a href="#anchor-code" data-scroll-to-anchor="100">Code Snippet Example</a>
+
 <a href="#anchor-code-block" data-scroll-to-anchor="100">Code Block Example</a>
+
 <a href="#anchor-gist" data-scroll-to-anchor="100">Code Block Example - Gist</a>
+
 <a href="#anchor-additional-notes" data-scroll-to-anchor="100">Notes on Additional Sections</a>
+
 
 <!-- TOC - MARKDOWN -->
 
@@ -291,7 +305,7 @@ The `h1` and `h2` tags are reserved for the page that's hosting the kb article, 
 
 <!-- LIST - ORDERED -->
 
-### List - ORDERED <a id="anchor-list-ordered" class="kb-toc-anchor" href="#anchor-list-ordered"></a>
+### List - Ordered <a id="anchor-list-ordered" class="kb-toc-anchor" href="#anchor-list-ordered"></a>
 
 1.  16 vCPU, with at least 2GHZz per vCPU
 
@@ -311,7 +325,7 @@ The `h1` and `h2` tags are reserved for the page that's hosting the kb article, 
 
 <!-- LIST - ORDERED with NESTED ORDERED -->
 
-### List - ORDERED with NESTED ORDERED <a id="anchor-list-ordered-nested" class="kb-toc-anchor" href="#anchor-list-ordered-nested"></a>
+### List - Ordered with Nested Ordered <a id="anchor-list-ordered-nested" class="kb-toc-anchor" href="#anchor-list-ordered-nested"></a>
 
 1.  16 vCPU, with at least 2GHZz per vCPU
 
