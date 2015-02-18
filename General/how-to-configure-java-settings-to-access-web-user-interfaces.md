@@ -53,3 +53,13 @@
     <li>Log into the netscaler Web UI, then manually change the URL to: http://(netscalerip)/menu/guia</li>
   </ul>
 </ul>
+
+If you are still having issues, it is most likely related to your Java version. If when you go to the JavaSecurity Tab and you only see High and Very High, you may need to downgrade Java versions.Note: these steps remove the latest Java security updates and features so perform at your own risk.
+
+Uninstall your current Java version.
+
+Go to: http://www.oracle.com/technetwork/java/javase/downloads/java-archiv...
+
+And locate this file: jre-8u11-windows-i586.tar.gz (Windows x86.  Only use x64 if you are using an x64 browser)
+
+Download the file and install it.  This will restore the "Medium" security setting and should allow you to connect.
