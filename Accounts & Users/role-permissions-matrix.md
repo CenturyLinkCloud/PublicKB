@@ -7,7 +7,7 @@
 }}}
 
 <table class="table">
-<!--   <thead>
+  <thead>
     <tr>
       <th>Capability</th>
       <th>Account Administrator</th>
@@ -19,19 +19,8 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-  </thead> -->
+  </thead>
   <tbody>
-    <tr>
-      <td>Capability</td>
-      <td>Account Administrator</td>
-      <td>Account Viewer</td>
-      <td>Billing Manager</td>
-      <td>DNS Manager</td>
-      <td>Network Manager</td>
-      <td>Security Manager</td>
-      <td>Server Administrator</td>
-      <td>Server Operator</td>
-    </tr>
     <tr>
       <td colspan="9"><strong>Account Billing</strong>
       </td>
