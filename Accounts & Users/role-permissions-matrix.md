@@ -6,7 +6,20 @@
   "contentIsHTML": true
 }}}
 
-<table class="table">
+<stlye>
+
+table.permission-matrix {
+  
+}
+
+table.permission-matrix tr.row-header {
+  background: #00853f;
+  color: #FFF;
+}
+
+</stlye>
+
+<table class="table table--large permission-matrix">
   <thead>
     <tr>
       <th>Capability</th>
@@ -21,7 +34,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Account Billing</strong>
       </td>
     </tr>
