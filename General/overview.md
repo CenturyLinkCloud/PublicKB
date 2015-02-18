@@ -9,7 +9,7 @@
       "type": "application/pdf"
     }
   ],
-  "related_products": [ 
+  "related_products": [
     {
       "title": "Hyperscale Server",
       "description": "Lightning-quick servers in the public cloud with 100% flash storage. Breakthrough performance for data and web scale architectures.",
@@ -51,7 +51,7 @@
       "type": "application/pdf"
     }
   ],
-  "related_products": [ 
+  "related_products": [
     {
       "title": "Hyperscale Server",
       "description": "Lightning-quick servers in the public cloud with 100% flash storage. Breakthrough performance for data and web scale architectures.",
@@ -150,6 +150,8 @@
 
 ## Table of Contents
 
+<a href="#anchor-0" data-scroll-to-anchor="100">Typography</a>
+
 <a href="#anchor-1" data-scroll-to-anchor="100">Steps with Nested Steps</a>
 
 <a href="#anchor-2" data-scroll-to-anchor="100">List - Numbered</a>
@@ -177,6 +179,7 @@
 
 <!-- TOC - MARKDOWN -->
 
+    <a href="#anchor-0" data-scroll-to-anchor="100">Typography</a>
     <a href="#anchor-1" data-scroll-to-anchor="100">Steps with Nested Steps</a>
     <a href="#anchor-2" data-scroll-to-anchor="100">List - Numbered</a>
     <a href="#anchor-3" data-scroll-to-anchor="100">List - Unordered</a>
@@ -199,16 +202,38 @@ In order to add an anchor links to an element on the page, for example a heading
 The above Table of Contents is a working example and all of the follwing section headings have the above anchor attached to them, but to keep things less cluttered, the markdown examples below do no include this in the print out.
 
 
+<!-- TYPOGRAPHY -->
+
+### Typography <a id="anchor-0" class="kb-toc-anchor" href="#anchor-0"></a>
+
+The `h1` and `h2` tags are reserved for the page that's hosting the kb article, so headlines within the article itself start at `h3`.
+
+### H3 Headline
+
+#### H4 Headline
+
+##### H5 Headline
+
+<!-- TYPOGRAPHY - MARKDOWN -->
+
+    ### H3 Headline
+
+    #### H4 Headline
+
+    ##### H5 Headline
+
+
+
 <!-- STEPS - NESTED STEPS -->
 
 ### Steps with Nested Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
-    
+
 1.  Error Message
 
     You get an error in the upper right hand corner of Control indicating lack of resources (CPU, Memory, Storage) when you are building a new machine. 
 
 2.  Contact Support
-  
+
     Please contact support on Chat or by emailing <noc@email.com>
 
     __To open a Chat with an engineer:__
@@ -240,13 +265,13 @@ The above Table of Contents is a working example and all of the follwing section
 <!-- STEPS - NESTED STEPS - MARKDOWN -->
 
     ### Steps with Nested Steps
-        
+
     1.  Error Message
 
         You get an error in the upper right hand corner of Control indicating lack of resources (CPU, Memory, Storage) when you are building a new machine. 
 
     2.  Contact Support
-      
+
         Please contact support on Chat or by emailing <noc@email.com>
 
         __To open a Chat with an engineer:__
@@ -279,7 +304,7 @@ The above Table of Contents is a working example and all of the follwing section
 
 ### List - Numbered <a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>
 
-+ 
++
 
   1.  16 vCPU, with at least 2GHZz per vCPU
 
@@ -291,7 +316,7 @@ The above Table of Contents is a working example and all of the follwing section
 
     ### List - Numbered
 
-    + 
+    +
 
       1.  16 vCPU, with at least 2GHZz per vCPU
 
@@ -303,7 +328,7 @@ The above Table of Contents is a working example and all of the follwing section
 
 ### List - Unordered <a id="anchor-3" class="kb-toc-anchor" href="#anchor-3"></a>
 
-+ 
++
 
   -  16 vCPU, with at least 2GHZz per vCPU
 
@@ -323,7 +348,7 @@ The above Table of Contents is a working example and all of the follwing section
 
     ### List - Unordered
 
-    + 
+    +
 
       -  16 vCPU, with at least 2GHZz per vCPU
 
@@ -563,13 +588,3 @@ Anything indented 4 spaces (two tabs) in a markdown file will automatically gene
 ### Notes on Additional Sections <a id="anchor-8" class="kb-toc-anchor" href="#anchor-8"></a>
 
 _The following sections, __Related Questions__ and __Attachments__, are created automatically via the configuration data added to the article at the top of this page. The sidebar content, __Related Products__ also comes from this configuration data. However, the last section, __Related Topics__ is automatically generated and is simply the all the other articles in the same category as this one._
-
-
-    
-
-
-
-
-
-
-
