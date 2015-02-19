@@ -136,7 +136,7 @@
   <p>
     <a href="capacity-in-the-cloud.md">A relative link</a>
     <br>
-    <a href="../Email/add-a-signature-to-outlook.md">Another relative link</a>
+    <a href="../Mail/add-a-signature-to-outlook.md">Another relative link</a>
 </div>
 
 <!-- OVERVIEW - HTML -->
