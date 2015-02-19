@@ -54,6 +54,8 @@ White Labeling does not mean modifying or changing in any way functional content
 
 Go to the "Account" > "Settings" section. Then select "Site Branding."
 
+![Settings Link in CenturyLink Control Portal](../images/partner-whitelabel-settings.png)
+
 ####Change the Site Name
 
 Click and replace the "Control Portal" name with any name of your choosing. Users of your account will now see the new name at the top of every page in the Control Portal.
