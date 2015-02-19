@@ -1,5 +1,5 @@
 {{{
-  "title": "Understanding the difference between Templates, Blueprints and Packages",
+  "title": "Understanding the Difference Between Templates, Blueprints and Packages",
   "date": "12-4-2014",
   "author": "Eric Schubert",
   "attachments": [],
