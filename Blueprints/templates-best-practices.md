@@ -17,7 +17,7 @@ Blueprints are a saved and repeatable workflow that bundles components like Temp
 See also the KB articles on
 
 - [Blueprint Best Practices](blueprints-best-practices.md)
-- [Script Package Best Practices](script-package-best-practices.md)
+- [Packages Best Practices](packages-best-practices.md)
 - [Differentiating the Template, Package and Blueprint components](understanding-the-difference-between-templates-blueprints-and-packages.md)
 - [Best Practices and Preparation for a Virtual Machine/OVF/OVA Import ](../Service Tasks/best-practices-and-preparation-for-a-virtual-machineovfova-import.md)
 
