@@ -133,6 +133,10 @@
   <p>
     The Overview section is of course optional but can be used to provide immediate context for the article. The <strong>Audience</strong> section is also optional.
   </p>
+  <p>
+    <a href="capacity-in-the-cloud.md">A relative link</a>
+    <br>
+    <a href="../Email/add-a-signature-to-outlook.md">Another relative link</a>
 </div>
 
 <!-- OVERVIEW - HTML -->
