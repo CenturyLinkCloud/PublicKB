@@ -1,0 +1,43 @@
+{{{
+  "title": "Self-Service VM Import / OVF Requirements",
+  "date": "12-19-2014",
+  "author": "Jared Ruckle",
+  "attachments": [],
+  "contentIsHTML": false
+}}}
+
+
+With a new self-service VM import capability, users can now import OVFs from VMware environments into CenturyLink Cloud.
+
+However, some OVFs may still require significant “prep” work, depending on the state of the image.  Requirements for OVF images are listed below; please keep this in mind when prepping an image for import.
+
+### Your OVF Must Meet the Following Requirements to be Imported Successfully
+* File must be an OVF; OVAs are not supported
+* The VM must pass a “checksum” test to ensure there was no packet loss during the FTP transfer
+* Must be less than 1 TB in total size
+* Must not include a customized or specialized appliances
+* All disks should be SCSI (not IDE)
+* Must have a single NIC
+* Only a single image should be present; multiple images are not supported
+* Ping should not be blocked on the firewall
+* The VMware (vmx) version must be 8 or lower
+* The latest version of VMware tools must be installed (you will get the error message that reads "the guest operations agent is out of date" if your version is not correct)
+* The OVF must be exported from VMware; other hypervisors are not supported
+
+### Specific Requirements for Windows 2012 R2 DataCenter 64-bit / Windows 2008 R2 DataCenter 64-bit OVFs
+* The machine cannot be joined to a domain
+* RDP needs to be available on the image
+* RDP needs to be unblocked by Windows firewall
+
+### Specific Requirements for Red Hat 6 64-bit OVFs
+* Ensure SSH is enabled and not firewalled
+
+### Other Notes
+* In addition, the import function will enable the following capabilities if they are not available on your OVF image:
+* For Windows: PSEXEC must not be firewalled; PS Remoting is enabled; WinRM is enabled
+* For Red Hat: Ensure the root account’s shell is bash
+* Volume licensing is assumed for Windows OS; the license key is not modified by CenturyLink Cloud
+* Bring your own licensing is not supported
+* All OVF files will be stored in the FTP server located in your account's home data center
+* All OVF files will be deleted 5 days after initial import; please import your images soon after completion of the FTP transfer
+* Managed services are not available on imported VMs
