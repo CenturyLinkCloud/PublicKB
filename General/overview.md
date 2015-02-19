@@ -333,9 +333,9 @@ The above Table of Contents is a working example and all of the follwing section
 
 ### Images <a id="anchor-images" class="kb-toc-anchor" href="#anchor-images"></a>
 
-![KB Repo Image](/knowledge-base/images/subalias.png)
+![KB Repo Image](../images/subalias.png)
 
-    ![KB Repo Image](/knowledge-base/images/subalias.png)
+    ![KB Repo Image](../images/subalias.png)
 
 ![ZenDesk Legacy Image](https://t3n.zendesk.com/attachments/token/g6pf6kex9y6y6n7/?name=CreateZone.png)
 
