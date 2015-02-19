@@ -30,7 +30,6 @@ The wizard screen is divided into four primary components.  See details on each 
 Access the [Blueprint Package Manifest Builder Wizard](http://centurylinkcloud.github.io/Ecosystem/BlueprintManifestBuilder/) and follow these steps to successfully create your package.
 
 
-
 1. Package Foundational Definition
 Inside the green panel define package level attributes.
 ![](../images/blueprint-package-manifest-wizard-2.png)
