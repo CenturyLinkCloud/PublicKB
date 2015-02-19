@@ -9,7 +9,7 @@
       "type": "application/pdf"
     }
   ],
-  "related_products": [ 
+  "related_products": [
     {
       "title": "Hyperscale Server",
       "description": "Lightning-quick servers in the public cloud with 100% flash storage. Breakthrough performance for data and web scale architectures.",
@@ -51,7 +51,7 @@
       "type": "application/pdf"
     }
   ],
-  "related_products": [ 
+  "related_products": [
     {
       "title": "Hyperscale Server",
       "description": "Lightning-quick servers in the public cloud with 100% flash storage. Breakthrough performance for data and web scale architectures.",
@@ -150,11 +150,15 @@
 
 ## Table of Contents
 
-<a href="#anchor-1" data-scroll-to-anchor="100">Steps with Nested Steps</a>
+<a href="#anchor-typography" data-scroll-to-anchor="100">Typography</a>
 
-<a href="#anchor-2" data-scroll-to-anchor="100">List - Numbered</a>
+<a href="#anchor-steps" data-scroll-to-anchor="100">Steps with Nested Steps</a>
 
-<a href="#anchor-3" data-scroll-to-anchor="100">List - Unordered</a>
+<a href="#anchor-list-ordered" data-scroll-to-anchor="100">List - Ordered</a>
+
+<a href="#anchor-list-ordered-nested" data-scroll-to-anchor="100">List - Ordered with Nested Ordered </a>
+
+<a href="#anchor-list-unordered" data-scroll-to-anchor="100">List - Unordered</a>
 
 <a href="#anchor-images" data-scroll-to-anchor="100">Images</a>
 
@@ -162,53 +166,77 @@
 
 <a href="#anchor-videos" data-scroll-to-anchor="100">Video Embeds</a>
 
-<a href="#anchor-4" data-scroll-to-anchor="100">Note</a>
+<a href="#anchor-note" data-scroll-to-anchor="100">Note</a>
 
-<a href="#anchor-5" data-scroll-to-anchor="100">Alert</a>
+<a href="#anchor-alert" data-scroll-to-anchor="100">Alert</a>
 
-<a href="#anchor-6" data-scroll-to-anchor="100">Code Snippet Example</a>
+<a href="#anchor-code" data-scroll-to-anchor="100">Code Snippet Example</a>
 
-<a href="#anchor-7" data-scroll-to-anchor="100">Code Block Example</a>
+<a href="#anchor-code-block" data-scroll-to-anchor="100">Code Block Example</a>
 
 <a href="#anchor-gist" data-scroll-to-anchor="100">Code Block Example - Gist</a>
 
-<a href="#anchor-8" data-scroll-to-anchor="100">Notes on Additional Sections</a>
+<a href="#anchor-additional-notes" data-scroll-to-anchor="100">Notes on Additional Sections</a>
 
 
 <!-- TOC - MARKDOWN -->
 
-    <a href="#anchor-1" data-scroll-to-anchor="100">Steps with Nested Steps</a>
-    <a href="#anchor-2" data-scroll-to-anchor="100">List - Numbered</a>
-    <a href="#anchor-3" data-scroll-to-anchor="100">List - Unordered</a>
+    <a href="#anchor-typography" data-scroll-to-anchor="100">Typography</a>
+    <a href="#anchor-steps" data-scroll-to-anchor="100">Steps with Nested Steps</a>
+    <a href="#anchor-list-ordered" data-scroll-to-anchor="100">List - Ordered</a>
+    <a href="#anchor-list-ordered-nested" data-scroll-to-anchor="100">List - Ordered with Nested Ordered </a>
+    <a href="#anchor-list-unordered" data-scroll-to-anchor="100">List - Unordered</a>
     <a href="#anchor-images" data-scroll-to-anchor="100">Images</a>
     <a href="#anchor-tables" data-scroll-to-anchor="100">Tables</a>
     <a href="#anchor-videos" data-scroll-to-anchor="100">Video Embeds</a>
-    <a href="#anchor-4" data-scroll-to-anchor="100">Note</a>
-    <a href="#anchor-5" data-scroll-to-anchor="100">Alert</a>
-    <a href="#anchor-6" data-scroll-to-anchor="100">Code Snippet Example</a>
-    <a href="#anchor-7" data-scroll-to-anchor="100">Code Block Example</a>
+    <a href="#anchor-note" data-scroll-to-anchor="100">Note</a>
+    <a href="#anchor-alert" data-scroll-to-anchor="100">Alert</a>
+    <a href="#anchor-code" data-scroll-to-anchor="100">Code Snippet Example</a>
+    <a href="#anchor-code-block" data-scroll-to-anchor="100">Code Block Example</a>
     <a href="#anchor-gist" data-scroll-to-anchor="100">Code Block Example - Gist</a>
-    <a href="#anchor-8" data-scroll-to-anchor="100">Notes on Additional Sections</a>
+    <a href="#anchor-additional-notes" data-scroll-to-anchor="100">Notes on Additional Sections</a>
 
 <!-- BREAK -->
 
 In order to add an anchor links to an element on the page, for example a heading, you need to add the following raw html anchor link with the specified class, which will engage the custom javascript written to scroll to that section. The following sections have anchor links on the headings like so:
 
-    ### Steps with Nested Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
+    ### Steps with Nested Steps <a id="anchor-steps" class="kb-toc-anchor" href="#anchor-steps"></a>
 
 The above Table of Contents is a working example and all of the follwing section headings have the above anchor attached to them, but to keep things less cluttered, the markdown examples below do no include this in the print out.
 
 
+<!-- TYPOGRAPHY -->
+
+### Typography <a id="anchor-typography" class="kb-toc-anchor" href="#anchor-typography"></a>
+
+The `h1` and `h2` tags are reserved for the page that's hosting the kb article, so headlines within the article itself start at `h3`.
+
+### H3 Headline
+
+#### H4 Headline
+
+##### H5 Headline
+
+<!-- TYPOGRAPHY - MARKDOWN -->
+
+    ### H3 Headline
+
+    #### H4 Headline
+
+    ##### H5 Headline
+
+
+
 <!-- STEPS - NESTED STEPS -->
 
-### Steps with Nested Steps <a id="anchor-1" class="kb-toc-anchor" href="#anchor-1"></a>
-    
+### Steps with Nested Steps <a id="anchor-steps" class="kb-toc-anchor" href="#anchor-steps"></a>
+
 1.  Error Message
 
     You get an error in the upper right hand corner of Control indicating lack of resources (CPU, Memory, Storage) when you are building a new machine. 
 
 2.  Contact Support
-  
+
     Please contact support on Chat or by emailing <noc@email.com>
 
     __To open a Chat with an engineer:__
@@ -240,13 +268,13 @@ The above Table of Contents is a working example and all of the follwing section
 <!-- STEPS - NESTED STEPS - MARKDOWN -->
 
     ### Steps with Nested Steps
-        
+
     1.  Error Message
 
         You get an error in the upper right hand corner of Control indicating lack of resources (CPU, Memory, Storage) when you are building a new machine. 
 
     2.  Contact Support
-      
+
         Please contact support on Chat or by emailing <noc@email.com>
 
         __To open a Chat with an engineer:__
@@ -275,11 +303,31 @@ The above Table of Contents is a working example and all of the follwing section
 
         5.  Increase the limit of the specific Resource
 
-<!-- LIST - NUMBERED -->
+<!-- LIST - ORDERED -->
 
-### List - Numbered <a id="anchor-2" class="kb-toc-anchor" href="#anchor-2"></a>
+### List - Ordered <a id="anchor-list-ordered" class="kb-toc-anchor" href="#anchor-list-ordered"></a>
 
-+ 
+1.  16 vCPU, with at least 2GHZz per vCPU
+
+2.  128 GB Memory
+
+3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+
+<!-- LIST - ORDERED - MARKDOWN-->
+
+    ### List - Numbered
+
+    1.  16 vCPU, with at least 2GHZz per vCPU
+
+    2.  128 GB Memory
+
+    3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+
+<!-- LIST - ORDERED with NESTED ORDERED -->
+
+### List - Ordered with Nested Ordered <a id="anchor-list-ordered-nested" class="kb-toc-anchor" href="#anchor-list-ordered-nested"></a>
+
+1.  16 vCPU, with at least 2GHZz per vCPU
 
   1.  16 vCPU, with at least 2GHZz per vCPU
 
@@ -287,11 +335,21 @@ The above Table of Contents is a working example and all of the follwing section
 
   3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
+2.  128 GB Memory
+
+  1.  16 vCPU, with at least 2GHZz per vCPU
+
+  2.  128 GB Memory
+
+  3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+
+3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+
 <!-- LIST - NUMBERED - MARKDOWN-->
 
-    ### List - Numbered
+    ### List - ORDERED with NESTED ORDERED
 
-    + 
+    1.  16 vCPU, with at least 2GHZz per vCPU
 
       1.  16 vCPU, with at least 2GHZz per vCPU
 
@@ -299,19 +357,19 @@ The above Table of Contents is a working example and all of the follwing section
 
       3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
+    2.  128 GB Memory
+
+      1.  16 vCPU, with at least 2GHZz per vCPU
+
+      2.  128 GB Memory
+
+      3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+
+    3.  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+
 <!-- LIST - UNORDERED -->
 
-### List - Unordered <a id="anchor-3" class="kb-toc-anchor" href="#anchor-3"></a>
-
-+ 
-
-  -  16 vCPU, with at least 2GHZz per vCPU
-
-  -  128 GB Memory
-
-  -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
-
-### List - Unordered <a id="anchor-3" class="kb-toc-anchor" href="#anchor-3"></a>
+### List - Unordered <a id="anchor-list-unordered" class="kb-toc-anchor" href="#anchor-list-unordered"></a>
 
 -  16 vCPU, with at least 2GHZz per vCPU
 
@@ -323,13 +381,11 @@ The above Table of Contents is a working example and all of the follwing section
 
     ### List - Unordered
 
-    + 
+    -  16 vCPU, with at least 2GHZz per vCPU
 
-      -  16 vCPU, with at least 2GHZz per vCPU
+    -  128 GB Memory
 
-      -  128 GB Memory
-
-      -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
+    -  4 TB total VM storage (up to 4 drives of 1 TB apiece)
 
 ### Images <a id="anchor-images" class="kb-toc-anchor" href="#anchor-images"></a>
 
@@ -474,7 +530,7 @@ The above Table of Contents is a working example and all of the follwing section
 <!-- NOTE -->
 
 <div class="kb-post-note">
-  <a id="anchor-4" class="kb-toc-anchor" href="#anchor-4"></a>
+  <a id="anchor-note" class="kb-toc-anchor" href="#anchor-note"></a>
   <h3>
     Note
   </h3>
@@ -498,7 +554,7 @@ The above Table of Contents is a working example and all of the follwing section
 <!-- ALERT -->
 
 <div class="kb-post-alert">
-  <a id="anchor-5" class="kb-toc-anchor" href="#anchor-5"></a>
+  <a id="anchor-alert" class="kb-toc-anchor" href="#anchor-alert"></a>
   <h3>
     Alert
   </h3>
@@ -510,7 +566,7 @@ The above Table of Contents is a working example and all of the follwing section
 <!-- ALERT - HTML -->
 
     <div class="kb-post-alert">
-      <a id="anchor-5" class="kb-toc-anchor" href="#anchor-5"></a>
+      <a id="anchor-alert" class="kb-toc-anchor" href="#anchor-alert"></a>
       <h3>
         Alert
       </h3>
@@ -522,7 +578,7 @@ The above Table of Contents is a working example and all of the follwing section
 
 <!-- INLINE CODE SNIPPET -->
 
-### Code Snippet Example <a id="anchor-6" class="kb-toc-anchor" href="#anchor-6"></a>
+### Code Snippet Example <a id="anchor-code" class="kb-toc-anchor" href="#anchor-code"></a>
 
 CenturyLink Cloud currently offers eight roles that are avaialable to assign users to <code>http://api.tier3.com/[inline]/[code]/[snippet]</code>. A brief description of each role is available on the User Permissions page, and the complete list of actions.
 
@@ -539,7 +595,7 @@ CenturyLink Cloud currently offers eight roles that are avaialable to assign use
 
 <!-- CODE BLOCK - MARKDOWN - INDENT TWO SPACE -->
 
-### Code Block Example <a id="anchor-7" class="kb-toc-anchor" href="#anchor-7"></a>
+### Code Block Example <a id="anchor-code-block" class="kb-toc-anchor" href="#anchor-code-block"></a>
 
 Anything indented 4 spaces (two tabs) in a markdown file will automatically generate a ```<pre><code></code></pre>``` around the content. For example, a piece of the gulpfile: <br>
 
@@ -560,16 +616,6 @@ Anything indented 4 spaces (two tabs) in a markdown file will automatically gene
 ### Code Block - Gist Version <a id="anchor-gist" class="kb-toc-anchor" href="#anchor-gist"></a>
 <script src="https://gist.github.com/dmak78/1a96093860555aa8485a.js"></script>
 
-### Notes on Additional Sections <a id="anchor-8" class="kb-toc-anchor" href="#anchor-8"></a>
+### Notes on Additional Sections <a id="anchor-additional-steps" class="kb-toc-anchor" href="#anchor-additional-steps"></a>
 
 _The following sections, __Related Questions__ and __Attachments__, are created automatically via the configuration data added to the article at the top of this page. The sidebar content, __Related Products__ also comes from this configuration data. However, the last section, __Related Topics__ is automatically generated and is simply the all the other articles in the same category as this one._
-
-
-    
-
-
-
-
-
-
-

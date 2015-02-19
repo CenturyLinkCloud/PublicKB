@@ -6,9 +6,9 @@
   "contentIsHTML": true
 }}}
 
-<table class="table">
+<table class="table table--large permission-matrix">
   <thead>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -21,7 +21,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Account Billing</strong>
       </td>
     </tr>
@@ -102,7 +102,7 @@
       <td></td>
       <td></td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -113,7 +113,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Account Branding</strong>
       </td>
     </tr>
@@ -183,7 +183,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -194,7 +194,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Account Management</strong>
       </td>
     </tr>
@@ -264,7 +264,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -275,7 +275,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Account Notification</strong>
       </td>
     </tr>
@@ -301,7 +301,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -312,7 +312,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Account Settings</strong>
       </td>
     </tr>
@@ -415,7 +415,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -426,7 +426,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Activity History</strong>
       </td>
     </tr>
@@ -463,7 +463,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -474,7 +474,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Authentication</strong>
       </td>
     </tr>
@@ -511,7 +511,7 @@
       <td></td>
       <td></td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -522,7 +522,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Blueprint Authoring</strong>
       </td>
     </tr>
@@ -647,7 +647,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -658,7 +658,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Blueprint Packages</strong>
       </td>
     </tr>
@@ -816,7 +816,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -827,7 +827,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>DNS</strong>
       </td>
     </tr>
@@ -919,7 +919,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -930,7 +930,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Firewall</strong>
       </td>
     </tr>
@@ -1044,7 +1044,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -1055,7 +1055,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Group Actions</strong>
       </td>
     </tr>
@@ -1202,7 +1202,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -1213,7 +1213,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Group Horizontal Autoscale</strong>
       </td>
     </tr>
@@ -1261,7 +1261,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -1272,7 +1272,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Group Schedules</strong>
       </td>
     </tr>
@@ -1320,7 +1320,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -1331,7 +1331,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Group</strong>
       </td>
     </tr>
@@ -1456,7 +1456,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -1467,7 +1467,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Load Balancer</strong>
       </td>
     </tr>
@@ -1592,7 +1592,7 @@
       <td>x</td>
       <td></td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -1603,7 +1603,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Login &amp; Dashboard</strong>
       </td>
     </tr>
@@ -1640,7 +1640,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -1651,7 +1651,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Network</strong>
       </td>
     </tr>
@@ -1732,7 +1732,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -1743,7 +1743,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Object Storage</strong>
       </td>
     </tr>
@@ -1857,7 +1857,7 @@
       <td></td>
       <td></td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -1868,7 +1868,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Policies</strong>
       </td>
     </tr>
@@ -2096,7 +2096,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -2107,7 +2107,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Server Actions</strong>
       </td>
     </tr>
@@ -2276,7 +2276,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -2287,7 +2287,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Server Alerts</strong>
       </td>
     </tr>
@@ -2324,7 +2324,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -2335,7 +2335,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Server Archiving</strong>
       </td>
     </tr>
@@ -2383,7 +2383,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -2394,7 +2394,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Server Schedules</strong>
       </td>
     </tr>
@@ -2442,7 +2442,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -2453,7 +2453,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Server Settings</strong>
       </td>
     </tr>
@@ -2567,7 +2567,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -2578,7 +2578,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Server Snapshots</strong>
       </td>
     </tr>
@@ -2626,7 +2626,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -2637,7 +2637,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Server Templates</strong>
       </td>
     </tr>
@@ -2696,7 +2696,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -2707,7 +2707,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Server Vertical Autoscale</strong>
       </td>
     </tr>
@@ -2755,7 +2755,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -2766,7 +2766,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Server</strong>
       </td>
     </tr>
@@ -2902,7 +2902,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -2913,7 +2913,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Site Redirect</strong>
       </td>
     </tr>
@@ -2961,7 +2961,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -2972,7 +2972,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>SMTP</strong>
       </td>
     </tr>
@@ -3020,7 +3020,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -3031,7 +3031,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>User Management</strong>
       </td>
     </tr>
@@ -3200,7 +3200,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -3211,7 +3211,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>VPN</strong>
       </td>
     </tr>
@@ -3325,7 +3325,7 @@
       <td>x</td>
       <td>x</td>
     </tr>
-    <tr>
+    <tr class="section-header">
       <th>Capability</th>
       <th>Account Administrator</th>
       <th>Account Viewer</th>
@@ -3336,7 +3336,7 @@
       <th>Server Administrator</th>
       <th>Server Operator</th>
     </tr>
-    <tr>
+    <tr class="row-header">
       <td colspan="9"><strong>Webhooks</strong>
       </td>
     </tr>

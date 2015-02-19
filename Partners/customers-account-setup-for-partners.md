@@ -16,7 +16,6 @@
 Ensures account setup is done correctly.
 Ensures account permissions are used correctly.
 
-
 ### Audience
 
 Sales
