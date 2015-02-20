@@ -13,8 +13,6 @@
     "Network",
     "Object Storage",
     "Partners",
-    "Physical Servers",
-    "Private Cloud",
     "Release Notes",
     "Servers"
   ] 
