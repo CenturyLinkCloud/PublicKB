@@ -39,7 +39,7 @@ To make any changes please submit a [pull request](https://help.github.com/artic
 - Images - when adding an image to an article, place the image file in the `images/` directory in the root of this repo. In the article itself, set the image source path like so: 
 
   ```
-  /knowledge-base/images/[image file]
+  ../images/[image file]
   ```
 
 
@@ -49,7 +49,7 @@ To make any changes please submit a [pull request](https://help.github.com/artic
   "attachments": [
     {
       "file_name": "Attached File",
-      "url": "/knowledge-base/attachments/Balancing Agility Cost and Control.pdf",
+      "url": "../attachments/Balancing Agility Cost and Control.pdf",
       "type": "application/pdf"
     }
   ]
@@ -60,7 +60,7 @@ To make any changes please submit a [pull request](https://help.github.com/artic
   `"url"` needs to be set exactly like the above example, like so: 
     
     ```
-    /knowledge-base/attachments/[file name]
+    ../attachments/[file name]
     ```
 
   `"type"` is simply the MIME type of the file and is used to check which sort of icon to present on the front end.
