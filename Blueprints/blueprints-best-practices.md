@@ -20,7 +20,7 @@ When deploying new servers as part of a Blueprint make careful consideration of 
 
 ### When to use Packages versus Blueprints
 
-Simple Blueprints can be build that include only a package with no other components.  Comparing the two deployment steps side by side we see the following experiences:
+Simple Blueprints can be built that include only a package with no other components.  Comparing the two deployment steps side by side we see the following experiences:
 
 #### Packages
 
@@ -49,6 +49,9 @@ If you only need to define a "master" server - see the [Master and Slave Node Bl
 
 #### Adding to Existing Environment
 If you are adding capacity to an existing environment the most common pattern is a drop down where you can select an existing asset which the new server is able register with.
+
+#### Caching Package Parameters
+The parameter types and other metadata is embedded within the Blueprint definition.  Changes to parameter names, types, etc. in an included package will not be reflected until the blueprint is edited and republished.
 
 #### Advanced Needs
 If your state needs are more advanced, such as requiring key exchange, automated registering of new assets, self-discovery, etc. we recommend investigating the bpbroker toolset which was specifically created to support this workflow.
