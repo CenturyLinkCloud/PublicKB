@@ -3,6 +3,8 @@ Public Knowledge Base
 
 Welcome to [CenturyLink Cloud](http://www.centurylinkcloud.com) knowledge base repository. This is the source of information on all of our products and services available today. Please follow the guidelines below to contribute or make changes.
 
+Example Article: https://github.com/CenturyLinkCloud/PublicKB/blob/master/General/overview.md
+
 ##How this Works
 
 <!-- * **Headers:** The system uses Jekyll _(like)_ headers to be able to list current information and also track things such as author, date created, modified, keywords, title, etc. -->
