@@ -6,11 +6,9 @@
   "contentIsHTML": true
 }}}
 
-<p>Updated: January 5, 2015</p>
+<p>Updated: February 17, 2015</p>
 <p><strong>Description</strong></p>
-<p>This Cloud Ecosystem Program Guide is designed to outline the process expectations for technology companies seeking to integrate their products and services with CenturyLink Cloud. This article superceds the static document most recently titled
-  “Ecosystem Partner Program Guide CLEAN FINAL v2.1 7-14-14.pdf” which had been circulated to partners during Q2 and Q3 of 2014. Partners who enter this program and meet the certification requirements will be eligible to have their deployable technology
-  listed in the CenturyLink Cloud Marketplace launching in early 2015.</p>
+<p>This Cloud Ecosystem Program Guide is designed to outline the process expectations for technology companies seeking to integrate their products and services with CenturyLink Cloud.  Partners who enter this program and meet the certification requirements will be eligible to have their deployable technology listed in the CenturyLink Cloud Marketplace launching in early 2015.  To express interest in joining the program, prospective partners can visit the CenturyLink Cloud <a href="http://www.centurylinkcloudcom/marketplace/program">Market Place Providers Program</a> web page or send email to <a href="mailto://ecosystem@centurylinkcloud.com">ecosystem@centurylinkcloud.com</a>.</p>
 <p><strong>Audience</strong></p>
 <ul>
   <li>
@@ -61,7 +59,7 @@
 <p><strong>Documentation</strong></p>
 <p>Two types of KnowledgeBase articles should be created for all Ecosystem Member technologies: focused on Public end-users and Internal cloud support personnel.</p>
 <p>Public Articles should be used to practically guide end-users through deploying the technology upon CenturyLink Cloud. The documentation should be intuitive and provide step-by-step guidance in such a way that all skill levels can use the solution.&nbsp;
-  These should be accessible online through the CenturyLink Cloud <a href="http://help.tier3.com">knowledgebase</a> (KB). The primary goal of Public KB articles is to ensure customer success: <em>what should the user know about how to take advantage of this technology integration with CenturyLink Cloud</em>?</p>
+  These should be accessible online through the CenturyLink Cloud <a href="http://www.centurylinkcloudcom/knowledge-base">knowledgebase</a> (KB). The primary goal of Public KB articles is to ensure customer success: <em>what should the user know about how to take advantage of this technology integration with CenturyLink Cloud</em>?</p>
 <p>Internal Articles will be used to provide detailed information to the CenturyLink Cloud Support teams so they can appropriately handle operational questions from customers and users. The documentation should include any support expectations worked
   out during the certification process, and should always include contact information for the Member support organization. The Internal KB article should be more detailed than Public KB articles around how blueprints are designed, how tools are
   referenced, and how the Member technology works in production. The primary goal of these Internal KB articles is to ensure quality customer service: <em>what does the CenturyLink Cloud support team need to know to make sure that a customer gets supported correctly and routed to the appropriate Member support team?</em>
@@ -143,3 +141,5 @@ Membership Responsibilities: Platinum Certified Members
 <p>In an effort to ensure the Program participant pool is adequately sized and delivering tangible value to our customers, evaluation of each solution at the renewal point of the respective Member’s term is necessary.</p>
 <p>At the end of the term, both parties will evaluate the program and the Member’s value brought to the program during the participation period. If the anticipated business value has proven out, continues to be relevant, and both parties agree, the
   program will renew for an additional term. If the business value has not been demonstrated, CenturyLink will discuss the future direction of the relationship at that time.</p>
+<p>NOTE: This article superceds the static document most recently titled
+  “Ecosystem Partner Program Guide CLEAN FINAL v2.1 7-14-14.pdf” which had been circulated to partners during Q2 and Q3 of 2014.</p>
