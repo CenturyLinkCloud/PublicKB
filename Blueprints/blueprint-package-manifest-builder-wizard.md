@@ -31,9 +31,9 @@ Access the [Blueprint Package Manifest Builder Wizard](http://centurylinkcloud.g
 
 
 1. Package Foundational Definition
-Inside the green panel define package level attributes.
+  Inside the green panel define package level attributes.
 
-![](../images/blueprint-package-manifest-wizard-2.png)
+  ![](../images/blueprint-package-manifest-wizard-2.png)
 
 * Package name (need not be unique)
   * Description
@@ -45,31 +45,31 @@ Inside the green panel define package level attributes.
 
 2. Parameter Widget Inventory
 
-![](../images/blueprint-package-manifest-wizard-3.png)
+  ![](../images/blueprint-package-manifest-wizard-3.png)
 
 Select from a dozen different widget types to collect the information your scripts need during design and deploy time.
 To use these widgets drag them into the center column.  More detail on each widget is available after adding them into your package project.
 
 3. Customizing Parameters
 
-![](../images/blueprint-package-manifest-wizard-4.png)
+  ![](../images/blueprint-package-manifest-wizard-4.png)
 
-Once a parameter is added into the package project you can expand the widget for more details on the parameter itself and to further configure its behavior. All parameters must have a name at minimum.  Expand the menu at the top-left to delete or clone an existing parameter
+  Once a parameter is added into the package project you can expand the widget for more details on the parameter itself and to further configure its behavior. All parameters must have a name at minimum.  Expand the menu at the top-left to delete or clone an existing parameter
 
 4. Export package.manifest
 
-![](../images/blueprint-package-manifest-wizard-5.png)
+  ![](../images/blueprint-package-manifest-wizard-5.png)
 
-Click the "Export package.manifest" button to save a copy of the package.manifest. This file includes all the package foundational definitions and parameter configurations.
+  Click the "Export package.manifest" button to save a copy of the package.manifest. This file includes all the package foundational definitions and parameter configurations.
 
 5. Export Bash Script Template
 
-![](../images/blueprint-package-manifest-wizard-6.png)
+  ![](../images/blueprint-package-manifest-wizard-6.png)
 
-Click the "Export Bash Template" button to access a bash shell script template customized to use the parameters defined in your project.
+  Click the "Export Bash Template" button to access a bash shell script template customized to use the parameters defined in your project.
 
 6. Export PowerShell Script Template
 
-![](../images/blueprint-package-manifest-wizard-7.png)
+  ![](../images/blueprint-package-manifest-wizard-7.png)
 
-Click the "Export PowerShell Template" button to access a PowerShell shell script template customized to use the parameters defined in your project.
+  Click the "Export PowerShell Template" button to access a PowerShell shell script template customized to use the parameters defined in your project.
