@@ -8,7 +8,11 @@
 
 Blueprints are a saved and repeatable workflow that bundles components like Templates, Packages, and other Blueprints together. Blueprints should adhere to the following best practices for increased maintainability and a consistent user deployment experience.
 
-See also the KB articles on [Template best practices]() and [Script Package best practices](). Visit our KB primer [differentiating the Template, Package, and Blueprint]() components if needed.
+See also the KB articles on
+
+- [Blueprint Best Practices](templates-best-practices.md)
+- [Packages Best Practices](packages-best-practices.md)
+- [Differentiating the Template, Package and Blueprint components](understanding-the-difference-between-templates-blueprints-and-packages.md)
 
 ### Workflow Components to Consider
 
