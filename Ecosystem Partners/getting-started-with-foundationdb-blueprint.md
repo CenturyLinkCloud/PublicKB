@@ -66,7 +66,7 @@ CenturyLink Cloud Users
 
   Click either of the items at right to access that Blueprint directly.
 
-  ![](foundationdb_images/foundation-1.png) ![](foundationdb_images/foundation-2.png)
+  [![](foundationdb_images/foundation-1.png)](https://control.tier3.com/blueprints/browser/details/2002) [![](foundationdb_images/foundation-2.png)](https://control.tier3.com/blueprints/browser/details/2089)
 
   Alternately, starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “FoundationDB” in the keyword search on the right side of the page.
 
@@ -169,13 +169,13 @@ CenturyLink Cloud Users
 
 10. **Getting started with FoundationDB - Key-Value Store**
 
-  ![](foundationdb_images/kv_getting_started.png)
+  [![](foundationdb_images/kv_getting_started.png)](https://foundationdb.com/key-value-store/documentation/index.html)
 
   Click the link at right to get started with using the Foundation DB application.
 
 11. **Getting started with FoundationDB - SQL Layer**
 
-  ![](foundationdb_images/sql_getting_started.png)
+  [![](foundationdb_images/sql_getting_started.png)](https://foundationdb.com/layers/sql/documentation/index.html)
 
   Click the link at right to get started with using the Foundation DB application.
 
@@ -210,7 +210,7 @@ Paid Silver, Gold, and Platinum support plans are available from https://foundat
 
 **How do I learn more about the application?**
 
-![](foundationdb_images/kv_getting_started.png)
+[![](foundationdb_images/kv_getting_started.png)](https://foundationdb.com/key-value-store/documentation/index.html)
 
 [FoundationDB](https://foundationdb.com/key-value-store/documentation/index.html) has a massive store of [documentation](https://foundationdb.com/key-value-store/documentation/index.html) to help you get started and tutorials to make you successful.
 
