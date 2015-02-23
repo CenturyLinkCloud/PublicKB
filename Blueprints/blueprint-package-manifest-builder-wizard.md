@@ -1,6 +1,6 @@
 {{{
   "title": "Blueprint Package Manifest Builder Wizard",
-  "date": "2-5-2015",
+  "date": "2-23-2015",
   "author": "Keith Resar",
   "attachments": [],
   "contentIsHTML": false
@@ -32,27 +32,44 @@ Access the [Blueprint Package Manifest Builder Wizard](http://centurylinkcloud.g
 
 1. Package Foundational Definition
 Inside the green panel define package level attributes.
+
 ![](../images/blueprint-package-manifest-wizard-2.png)
-  * Package name (need not be unique)
+
+* Package name (need not be unique)
   * Description
   * Execution mode (update to match SSH or Linux or another option for Windows)
 
   A number of advanced options are also exposed.
   * UUID is a unique ID associated with your package.  A new one is automatically generated for you when the page loads.  Take note that if you are updating an existing package the UUID is typically re-used
-  * Command is the actual executable or script associated with your package.  Any parameters selected in the next step will be appended to this command line during actual execution (e.g. if you have a String parameter defined called "email" then the command is automatically re-written to "install.sh '${email}'" when exporting the manifest).
+  * Command is the actual executable or script associated with your package.  Any parameters selected in the next step will be appended to this command line during actual execution (e.g. if you have a String parameter defined called "email" then the command is automatically re-written to `install.sh '${email}'` when exporting the manifest).
+
 2. Parameter Widget Inventory
+
 ![](../images/blueprint-package-manifest-wizard-3.png)
+
 Select from a dozen different widget types to collect the information your scripts need during design and deploy time.
 To use these widgets drag them into the center column.  More detail on each widget is available after adding them into your package project.
+
 3. Customizing Parameters
+
 ![](../images/blueprint-package-manifest-wizard-4.png)
+
 Once a parameter is added into the package project you can expand the widget for more details on the parameter itself and to further configure its behavior. All parameters must have a name at minimum.  Expand the menu at the top-left to delete or clone an existing parameter
+
 4. Export package.manifest
+
 ![](../images/blueprint-package-manifest-wizard-5.png)
+
 Click the "Export package.manifest" button to save a copy of the package.manifest. This file includes all the package foundational definitions and parameter configurations.
+
 5. Export Bash Script Template
+
 ![](../images/blueprint-package-manifest-wizard-6.png)
+
 Click the "Export Bash Template" button to access a bash shell script template customized to use the parameters defined in your project.
+
 6. Export PowerShell Script Template
+
 ![](../images/blueprint-package-manifest-wizard-7.png)
+
 Click the "Export PowerShell Template" button to access a PowerShell shell script template customized to use the parameters defined in your project.
