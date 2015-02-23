@@ -12,7 +12,7 @@ After reading this article, the user should feel comfortable getting started usi
 
 ### Partner Profile
 
-<img src="foundationdb_images/Foundation-db-logo.png" style="border:0;float:right;">
+<img src="../images/foundationdb/Foundation-db-logo.png" style="border:0;float:right;">
 
 FoundationDB – “A multi-model database for all of your needs.”
 
@@ -39,10 +39,10 @@ CenturyLink Cloud Users
 <table>
   <tr>
     <th>
-	  <h1><a style="color: #0f6bb4;" href="https://foundationdb.com/key-value-store"><img style="vertical-align: middle;" src="foundationdb_images/kv_store_icon.png" width="48" height="45">Key-Value Store</a></h1>
+	  <h1><a style="color: #0f6bb4;" href="https://foundationdb.com/key-value-store"><img style="vertical-align: middle;" src="../images/foundationdb/kv_store_icon.png" width="48" height="45">Key-Value Store</a></h1>
 	</th>
     <th>
-	  <h1 style="padding-left: 90px;"><img style="vertical-align: middle;" src="foundationdb_images/sql_layer_icon.png" width="48" height="44"><a style="color: #6bac4d;" href="https://foundationdb.com/layers/sql">SQL Layer</a></h1>
+	  <h1 style="padding-left: 90px;"><img style="vertical-align: middle;" src="../images/foundationdb/sql_layer_icon.png" width="48" height="44"><a style="color: #6bac4d;" href="https://foundationdb.com/layers/sql">SQL Layer</a></h1>
 	</th>
   </tr>
 
@@ -66,7 +66,7 @@ CenturyLink Cloud Users
 
   Click either of the items at right to access that Blueprint directly.
 
-  [![](foundationdb_images/foundation-1.png)](https://control.tier3.com/blueprints/browser/details/2002) [![](foundationdb_images/foundation-2.png)](https://control.tier3.com/blueprints/browser/details/2089)
+  [![](../images/foundationdb/foundation-1.png)](https://control.tier3.com/blueprints/browser/details/2002) [![](../images/foundationdb/foundation-2.png)](https://control.tier3.com/blueprints/browser/details/2089)
 
   Alternately, starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “FoundationDB” in the keyword search on the right side of the page.
 
@@ -77,7 +77,7 @@ CenturyLink Cloud Users
 
 4. **Set Optional Parameters**
 
-  ![](foundationdb_images/foundation-3.png)
+  ![](../images/foundationdb/foundation-3.png)
 
   Password/Confirm Password (This is the root password for the server. Keep this in a secure place).
 
@@ -101,7 +101,7 @@ CenturyLink Cloud Users
 
 8. **Validate Foundation DB Core Installation**
 
-  ![](foundationdb_images/foundation-4.png)
+  ![](../images/foundationdb/foundation-4.png)
 
   Login to your master server and execute the fdbcli tool.  If your display looks similar to the image at right your database is ready to use.
 
@@ -151,7 +151,7 @@ CenturyLink Cloud Users
 
 9. **Validate SQL Layer Installation (optional)**
 
-  ![](foundationdb_images/foundation-5.png)
+  ![](../images/foundationdb/foundation-5.png)
 
   Login to your SQL server and execute the 'fdbsqlcli' tool.  Execute the command `SELECT VERSION();` and verify a response similar to the image at right.
 
@@ -159,23 +159,23 @@ CenturyLink Cloud Users
   [root@VA1KRAPSQL101 ~]# fdbsqlcli
   fdbsql (driver 2.0, layer 2.0.2)
   root=> SELECT VERSION();
-           _SQL_COL_1
-		   -----------------------------
-		    FoundationDB 2.0.2 +1059266
+         _SQL_COL_1
+		 -----------------------------
+		  FoundationDB 2.0.2 +1059266
 			(1 row)
 
-			root=>
+  root=>
   ```
 
 10. **Getting started with FoundationDB - Key-Value Store**
 
-  [![](foundationdb_images/kv_getting_started.png)](https://foundationdb.com/key-value-store/documentation/index.html)
+  [![](../images/foundationdb/kv_getting_started.png)](https://foundationdb.com/key-value-store/documentation/index.html)
 
   Click the link at right to get started with using the Foundation DB application.
 
 11. **Getting started with FoundationDB - SQL Layer**
 
-  [![](foundationdb_images/sql_getting_started.png)](https://foundationdb.com/layers/sql/documentation/index.html)
+  [![](../images/foundationdb/sql_getting_started.png)](https://foundationdb.com/layers/sql/documentation/index.html)
 
   Click the link at right to get started with using the Foundation DB application.
 
@@ -183,7 +183,7 @@ CenturyLink Cloud Users
 
   Servers are built using private IPs only with access with client or IPSEC VPN.  For access from the Internet at large add a public IP to your master server.
 
-  <a href="../Network/how-to-add-public-ip-to-virtual-machine/"><img src="foundationdb_images/fw_icon.png"></a>
+  <a href="../Network/how-to-add-public-ip-to-virtual-machine/"><img src="../images/foundationdb/fw_icon.png"></a>
 
 
 ### Pricing
@@ -210,7 +210,7 @@ Paid Silver, Gold, and Platinum support plans are available from https://foundat
 
 **How do I learn more about the application?**
 
-[![](foundationdb_images/kv_getting_started.png)](https://foundationdb.com/key-value-store/documentation/index.html)
+[![](../images/foundationdb/kv_getting_started.png)](https://foundationdb.com/key-value-store/documentation/index.html)
 
 [FoundationDB](https://foundationdb.com/key-value-store/documentation/index.html) has a massive store of [documentation](https://foundationdb.com/key-value-store/documentation/index.html) to help you get started and tutorials to make you successful.
 
