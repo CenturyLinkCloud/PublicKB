@@ -12,6 +12,8 @@ After reading this article, the user should feel comfortable getting started usi
 
 ### Partner Profile
 
+<img src="foundationdb_images/Foundation-db-logo.png" style="border:0;float:right;">
+
 FoundationDB – “A multi-model database for all of your needs.”
 
 http://www.foundationdb.com
@@ -34,21 +36,29 @@ CenturyLink Cloud Users
 
 ### Deploy in Two Flavors
 
-#### [Key-Value Store](https://foundationdb.com/key-value-store)
+<table>
+  <tr>
+    <th>
+	  <h1><a style="color: #0f6bb4;" href="https://foundationdb.com/key-value-store"><img style="vertical-align: middle;" src="foundationdb_images/kv_store_icon.png" width="48" height="45">Key-Value Store</a></h1>
+	</th>
+    <th>
+	  <h1 style="padding-left: 90px;"><img style="vertical-align: middle;" src="foundationdb_images/sql_layer_icon.png" width="48" height="44"><a style="color: #6bac4d;" href="https://foundationdb.com/layers/sql">SQL Layer</a></h1>
+	</th>
+  </tr>
 
-The Key-Value Store is a database that combines scalability, fault-tolerance, and high performance with incredibly powerful multi-key ACID transactions.
+  <tr>
+    <td>
+      <p>The Key-Value Store is a database that combines scalability, fault-tolerance, and high performance with incredibly powerful multi-key ACID transactions.</p>
 
-This deploys on CenturyLink Cloud with the following configuration:
+      <p>This deploys on CenturyLink Cloud with the following configuration: FoundationDB key-value store version 3.0.4, deployed as a 3-node, 6-process cluster with the SSD storage engine and double redundancy.</p>
+    </td>
+    <td>
+      <p>The SQL Layer is an ANSI SQL engine that stores its data in the Key-Value Store, inheriting its incredible properties. It is best suited for operational (OLTP) applications with high concurrency.</p>
 
-FoundationDB key-value store version 3.0.4, deployed as a 3-node, 6-process cluster with the SSD storage engine and double redundancy.
-
-#### [SQL Layer](https://foundationdb.com/layers/sql)
-
-The SQL Layer is an ANSI SQL engine that stores its data in the Key-Value Store, inheriting its incredible properties. It is best suited for operational (OLTP) applications with high concurrency.
-
-This deploys on CenturyLink Cloud with the following configuration:
-
-FoundationDB 3.0.4 (3-node, 6-process cluster) with a single instance of the SQL Layer on a dedicated node.
+      <p>This deploys on CenturyLink Cloud with the following configuration: FoundationDB 3.0.4 (3-node, 6-process cluster) with a single instance of the SQL Layer on a dedicated node.</p>
+    </td>
+  </tr>
+</table>
 
 ### Steps
 
@@ -56,7 +66,7 @@ FoundationDB 3.0.4 (3-node, 6-process cluster) with a single instance of the SQL
 
   Click either of the items at right to access that Blueprint directly.
 
-  ![](../images/foundation-1.png) ![](../images/foundation-2.png)
+  ![](foundationdb_images/foundation-1.png) ![](foundationdb_images/foundation-2.png)
 
   Alternately, starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “FoundationDB” in the keyword search on the right side of the page.
 
@@ -67,7 +77,7 @@ FoundationDB 3.0.4 (3-node, 6-process cluster) with a single instance of the SQL
 
 4. **Set Optional Parameters**
 
-  ![](../images/foundation-3.png)
+  ![](foundationdb_images/foundation-3.png)
 
   Password/Confirm Password (This is the root password for the server. Keep this in a secure place).
 
@@ -91,27 +101,89 @@ FoundationDB 3.0.4 (3-node, 6-process cluster) with a single instance of the SQL
 
 8. **Validate Foundation DB Core Installation**
 
-  ![](../images/foundation-4.png)
+  ![](foundationdb_images/foundation-4.png)
 
   Login to your master server and execute the fdbcli tool.  If your display looks similar to the image at right your database is ready to use.
 
+  ```
+  [root@VA1KRAPFDB101 ~]# fdbcli
+  Using cluster file `/etc/foundationdb/fdb.cluster'.
+  
+  The database is available.
+  
+  Welcome to the fdbcli. For help, type `help'.
+  fdb> status
+  
+  Using cluster file `/etc/foundationdb/fdb.cluster'.
+  
+  Configuration:
+    Redundancy mode        - double
+    Storage engine         - ssd
+    License                - See foundationdb.com/license
+    Coordinators           - 1
+  
+  Cluster:
+    FoundationDB processes - 6
+    Machines               - 3
+    Memory availability    - 4.5 GB per process on machine with least available
+    Fault Tolerance        - 0 machines
+    Server time            - Mon Feb 23 17:00:42 2015
+  
+  Data:
+    Replication health     - Healthy
+    Moving data            - 0.000 GB
+    Sum of key-value sizes - 0 MB
+    Disk space used        - 0 MB
+  
+  Operating space:
+    Storage server         - 19.7 GB free on most full server
+    Log server             - 19.7 GB free on most full server
+  
+  Workload:
+    Read rate              - 10 Hz
+    Write rate             - 1 Hz
+    Transactions started   - 4 Hz
+    Transactions committed - 1 Hz
+    Conflict rate          - 0 Hz
+  
+  Client time: Mon Feb 23 17:00:42 2015
+  ```
+
 9. **Validate SQL Layer Installation (optional)**
 
-  ![](../images/foundation-5.png)
+  ![](foundationdb_images/foundation-5.png)
 
-  Login to your SQL server and execute the 'fdbsqlcli' tool.  Execute a command like 'SELECT VERSION();' and verify a response similar to the image at right.
+  Login to your SQL server and execute the 'fdbsqlcli' tool.  Execute the command `SELECT VERSION();` and verify a response similar to the image at right.
+
+  ```
+  [root@VA1KRAPSQL101 ~]# fdbsqlcli
+  fdbsql (driver 2.0, layer 2.0.2)
+  root=> SELECT VERSION();
+           _SQL_COL_1
+		   -----------------------------
+		    FoundationDB 2.0.2 +1059266
+			(1 row)
+
+			root=>
+  ```
 
 10. **Getting started with FoundationDB - Key-Value Store**
+
+  ![](foundationdb_images/kv_getting_started.png)
 
   Click the link at right to get started with using the Foundation DB application.
 
 11. **Getting started with FoundationDB - SQL Layer**
+
+  ![](foundationdb_images/sql_getting_started.png)
 
   Click the link at right to get started with using the Foundation DB application.
 
 12. **Enable public access (optional)**
 
   Servers are built using private IPs only with access with client or IPSEC VPN.  For access from the Internet at large add a public IP to your master server.
+
+  <a href="../Network/how-to-add-public-ip-to-virtual-machine/"><img src="foundationdb_images/fw_icon.png"></a>
 
 
 ### Pricing
@@ -138,4 +210,8 @@ Paid Silver, Gold, and Platinum support plans are available from https://foundat
 
 **How do I learn more about the application?**
 
+![](foundationdb_images/kv_getting_started.png)
+
 [FoundationDB](https://foundationdb.com/key-value-store/documentation/index.html) has a massive store of [documentation](https://foundationdb.com/key-value-store/documentation/index.html) to help you get started and tutorials to make you successful.
+
+
