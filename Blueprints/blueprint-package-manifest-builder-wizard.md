@@ -41,7 +41,8 @@ Inside the green panel define package level attributes.
   * UUID is a unique ID associated with your package.  A new one is automatically generated for you when the page loads.  Take note that if you are updating an existing package the UUID is typically re-used
   * Command is the actual executable or script associated with your package.  Any parameters selected in the next step will be appended to this command line during actual execution (e.g. if you have a String parameter defined called "email" then the command is automatically re-written to "install.sh '${email}'" when exporting the manifest).
 2. Parameter Widget Inventory
-![](../images/blueprint-package-manifest-wizard-3.png)
+<img src="../images/blueprint-package-manifest-wizard-3.png" style="border:0;max-width:400px;">
+
 Select from a dozen different widget types to collect the information your scripts need during design and deploy time.
 To use these widgets drag them into the center column.  More detail on each widget is available after adding them into your package project.
 3. Customizing Parameters
@@ -55,4 +56,4 @@ Click the "Export package.manifest" button to save a copy of the package.manifes
 Click the "Export Bash Template" button to access a bash shell script template customized to use the parameters defined in your project.
 6. Export PowerShell Script Template
 ![](../images/blueprint-package-manifest-wizard-7.png)
-Click the "Export Bash Template" button to access a bash shell script template customized to use the parameters defined in your project.
+Click the "Export PowerShell Template" button to access a PowerShell shell script template customized to use the parameters defined in your project.
