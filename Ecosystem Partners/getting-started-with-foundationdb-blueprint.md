@@ -183,7 +183,7 @@ CenturyLink Cloud Users
 
   Servers are built using private IPs only with access with client or IPSEC VPN.  For access from the Internet at large add a public IP to your master server.
 
-  <a href="../Network/how-to-add-public-ip-to-virtual-machine/"><img src="../images/foundationdb/fw_icon.png"></a>
+  <a href="../network/how-to-add-public-ip-to-virtual-machine/"><img src="../images/foundationdb/fw_icon.png"></a>
 
 
 ### Pricing

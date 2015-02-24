@@ -7,7 +7,7 @@
 }}}
 
 ### Partner Profile
-Acumatica - cloud accounting software and cloud ERP software for your small to midsize business that helps you unlock your business potential [www.Acumatica.com](www.Acumatica.com)
+Acumatica - cloud accounting software and cloud ERP software for your small to midsize business that helps you unlock your business potential [www.Acumatica.com](http://www.Acumatica.com)
 
 #### Acumatica Support
 Please use the contact page on the Acumatica website
