@@ -1,24 +1,24 @@
 {{{
-  "title": "Getting Started with Alfresco Community - Blueprint",
+  "title": "Getting Started with Alfresco - Blueprint",
   "date": "2-24-2015",
   "author": "Bob Stolzberg",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-![logo](http://upload.wikimedia.org/wikipedia/commons/a/a7/Bitnami_logo_2013.png)
-###Partner Profile
+![logo](http://www.alfresco.com/sites/www/themes/alfrescodotcom/img/logo.svg)
 
-Bitnami - Bitnami is a library of popular server applications and development environments that can be installed with one click, either in your laptop, in a virtual machine or hosted in the cloud. We take care of compiling and configuring the applications and all of their dependencies (third-party libraries, language runtimes, databases) so they work out-of-the-box. The resulting packaged software (a 'stack') is then made available as a Blueprint on the CenturyLink Cloud. These Bitnami application packages provide a consistent, secure and optimized end-user experience when deploying any app, on any platform.
-http://www.Bitnami.com
+###Technology Profile
+
+Alfresco was founded in 2005 by John Newton who, many years earlier, cofounded Documentum, one of the pioneers of document management. Alfresco Community is an enterprise-ready, Java-based platform used for document management, records management, image management and more. Features include versioning, Lucene-powered search, federated servers, clustering, roles-based permissions and more. You’ll be in good company with Alfresco; other users include NASA, KLM, Merck and Ricoh.
 
 ### Description
 
-Bitnami has integrated their technology stacks with the CenturyLink Cloud platform and produced several Blueprints to install and configure the software with a few clicks.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Bitnami solution.
+Alfresco Community Edition provides a standards-compliant content repository. It includes granular access control, support for social networks, and an embedded workflow engine that integrates with business processes. federated servers, clustering, roles-based permissions and support for mobile clients. Other features (only available in the Enterprise Edition) include an integrated administration console, storage policies, clustering and additional database support.
 
-Alfresco Community is an enterprise-ready, Java-based platform used for document management, records management, image management and more. Features include versioning, Lucene-powered search, federated servers, clustering, roles-based permissions and more. 
+Alfresco Community is an enterprise-ready, Java-based platform used for document management, records management, image management and more. Features include versioning, Lucene-powered search, federated servers, clustering, roles-based permissions and more.
 
-For more information, please view https://bitnami.com/stack/alfresco
+For more information, please view http://www.alfresco.com
 
 ### Audience
 CenturyLink Cloud Users
@@ -68,8 +68,8 @@ After reading this article, the user should feel comfortable getting started usi
   16. JDBC Database Username, e.g. admin
   17. JDBC Database User Password
   18. Start Alfresco Community after install, e.g. Yes
-  
-  
+
+
 4. Review and Confirm the Blueprint.
   1. Click “next: step 2”
   2. Verify your configuration details.
@@ -93,6 +93,8 @@ After your Blueprint deploys successfully, please follow these instructions to a
 ### Pricing
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  There are no Bitnami license costs or additional fees bundled in.
 
+### About Bitnami
+CenturyLink Cloud works with Bitnami to provide open source software integrations to its customers.  Bitnami is a library of popular server applications and development environments that can be installed with one click, either in your laptop, in a virtual machine or hosted in the cloud. Bitnami takes care of compiling and configuring the applications and all of their dependencies (third-party libraries, language runtimes, databases) so they work out-of-the-box. The resulting packaged software (a 'stack') is then made available as native installers, virtual machines and cloud images. These Bitnami application packages provide a consistent, secure and optimized end-user experience when deploying any app, on any platform.
 
 ### Frequently Asked Questions
 
