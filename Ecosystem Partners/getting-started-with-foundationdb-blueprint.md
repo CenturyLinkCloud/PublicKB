@@ -66,7 +66,8 @@ CenturyLink Cloud Users
 
   Click either of the items at right to access that Blueprint directly.
 
-  [![](../images/foundationdb/foundation-1.png)](https://control.tier3.com/blueprints/browser/details/2002) [![](../images/foundationdb/foundation-2.png)](https://control.tier3.com/blueprints/browser/details/2089)
+  [![](../images/foundationdb/foundation-1.png)](https://control.tier3.com/blueprints/browser/details/2002) 
+  [![](../images/foundationdb/foundation-2.png)](https://control.tier3.com/blueprints/browser/details/2089)
 
   Alternately, starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “FoundationDB” in the keyword search on the right side of the page.
 
@@ -183,7 +184,9 @@ CenturyLink Cloud Users
 
   Servers are built using private IPs only with access with client or IPSEC VPN.  For access from the Internet at large add a public IP to your master server.
 
-  <a href="../network/how-to-add-public-ip-to-virtual-machine/"><img src="../images/foundationdb/fw_icon.png"></a>
+  <a href="../network/how-to-add-public-ip-to-virtual-machine/">
+    <img src="../images/foundationdb/fw_icon.png">
+  </a>
 
 
 ### Pricing
