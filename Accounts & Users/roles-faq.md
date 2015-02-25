@@ -9,8 +9,8 @@
 <h3><strong>Description</strong></h3>
 <p>CenturyLink Cloud uses role-based access control (RBAC) for restricting system access for specific areas of the platform to authorized users only. There are currently eight roles available to choose from with varying degrees of access. These roles
   were designed to align with job functions that are generally found in most organizations.</p>
-<p>This FAQ addresses many commonly asked questions about roles. For more information about how these roles may best be used in the context of your organization, see the KB article titled <a href="https://t3n.zendesk.com/entries/58057320-Practical-Guide-for-Using-Roles"
-  target="_blank">Practical Guide for Using Roles</a>.</p>
+<p>This FAQ addresses many commonly asked questions about roles. For more information about how these roles may best be used in the context of your organization, see the KB article titled <a href="../Accounts & Users/practical-guide-for-using-roles.md">Practical Guide for Using Roles</a>.</p>
+
 <h3><strong>General</strong></h3>
 <p><strong>Q: <strong>What roles are available and ho</strong>w do I change a user's role?</strong>
 </p>
