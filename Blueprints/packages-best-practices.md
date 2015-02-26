@@ -29,3 +29,10 @@ Mitigate this by:
 ### Changes to Existing Package Parameters
 
 If your package is part of a Blueprint and the parameters change this will not be reflected in the Blueprint itself until the Blueprint has been opened for editing then resaved.
+
+### Adding Rich (HMTL) Hints to Parameters
+
+Parameter hints can include embedded HTML.  Use to support links or line-breaks to achieve an optimal layout.
+
+Any <'s and >'s must be escaped to pass through the XML linter.
+
