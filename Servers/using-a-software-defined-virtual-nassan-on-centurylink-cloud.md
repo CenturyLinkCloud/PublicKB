@@ -7,7 +7,7 @@
 }}}
 
 Using a Software-Defined Virtual NAS/SAN on CenturyLink Cloud
-<p>Customers looking to operate CIFS, NFS or iSCSI services within the cloud platform can import software-defined virtual appliances via a <a href="http://www.centurylinkcloud.com/products/support/service-tasks" target="_blank">service task</a>. By using a <strong>qualified</strong> unified storage virtual appliance customers can deliver NAS based storage services to virtual instances, pool disks to exceed 1 TB disk limits imposed by the cloud platform or deliver legacy shared-storage iSCSI volumes for database clusters. In this knowledge base we will be using a <a href="http://www.softnas.com/" target="_blank">SoftNAS</a>&trade;&nbsp; Virtual Appliance. <a href="http://www.softnas.com/" target="_blank">SoftNAS</a>&trade; is a software-defined unified NAS/SAN storage solution for businesses that need powerful, frictionless and agile storage.</p>
+<p>Customers looking to operate CIFS, NFS or iSCSI services within the cloud platform can import software-defined virtual appliances via a <a href="http://www.centurylinkcloud.com/products/support/service-tasks">service task</a>. By using a <strong>qualified</strong> unified storage virtual appliance customers can deliver NAS based storage services to virtual instances, pool disks to exceed 1 TB disk limits imposed by the cloud platform or deliver legacy shared-storage iSCSI volumes for database clusters. In this knowledge base we will be using a <a href="http://www.softnas.com/">SoftNAS</a>&trade;&nbsp; Virtual Appliance. <a href="http://www.softnas.com/">SoftNAS</a>&trade; is a software-defined unified NAS/SAN storage solution for businesses that need powerful, frictionless and agile storage.</p>
 <h3>Supporting Information</h3>
 <p>CenturyLink Cloud provides no support for the SoftNAS&trade; virtual appliance. The goal of this KB is to provide a sample use case to deliver unified storage services within the parameters of the cloud platform. Customers are responsible for configuration and sizing of the virtual appliance resources according to the vendors best practices. There are a large number of configuration options/customization's not covered in this KB and customers should read the installation guides provided by SoftNAS&trade;. </p>
 <h3>Security Notes</h3>
@@ -16,12 +16,12 @@ Using a Software-Defined Virtual NAS/SAN on CenturyLink Cloud
 <h3>Prerequisites</h3>
 
 * A CenturyLink Cloud Account
-*<a href="http://www.centurylinkcloud.com/products/support/service-tasks" target="_blank">Service Task for OVF Import</a>
-* <a href="https://www.softnas.com/wp/purchase/" target="_blank">A licensed copy of SoftNAS&trade;</a>
+*<a href="http://www.centurylinkcloud.com/products/support/service-tasks">Service Task for OVF Import</a>
+* <a href="https://www.softnas.com/wp/purchase/">A licensed copy of SoftNAS&trade;</a>
 
 <h3>Basic Configuration of the Virtual Appliance</h3>
 
-1. Once your SoftNAS virtual appliance is provisioned to the appropriate account via Service Task, login to Control, navigate to the Virtual Appliance, choose edit storage. Provision the appropriate number of RAW disks you wish to pool together into a larger storage pool. In this sample we've chosen to add 4 x 1 TB RAW Disks. NOTE: &nbsp;Understanding the <a href="https://t3n.zendesk.com/entries/21819996-Cloud-Server-Instance-Size-and-Performance" target="_blank">platform maximums</a> by VM type is important. We recommend you import your Virtual Appliance as a Standard VM type if you wish to use up to the 4 TB Maximum.
+1. Once your SoftNAS virtual appliance is provisioned to the appropriate account via Service Task, login to Control, navigate to the Virtual Appliance, choose edit storage. Provision the appropriate number of RAW disks you wish to pool together into a larger storage pool. In this sample we've chosen to add 4 x 1 TB RAW Disks. NOTE: &nbsp;Understanding the <a href="https://t3n.zendesk.com/entries/21819996-Cloud-Server-Instance-Size-and-Performance">platform maximums</a> by VM type is important. We recommend you import your Virtual Appliance as a Standard VM type if you wish to use up to the 4 TB Maximum.
 <img src="https://t3n.zendesk.com/attachments/token/0ZsPgqKIA4veBnI7cAzmrFaLF/?name=01.png" alt="01.png" />
 2. Once the RAW disks are added, login to the SoftNAS StorageCenter, select disk devices. The RAW disks added via Control should be present. Quick Tip: &nbsp;use the refresh button if disks don't show up immediately.</p>
 <img src="https://t3n.zendesk.com/attachments/token/d4pSont7RJBqUiCxQbOCDBGdK/?name=02.png" alt="02.png" />

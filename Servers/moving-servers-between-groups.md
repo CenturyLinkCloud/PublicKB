@@ -22,7 +22,7 @@
   </li>
   <li><p>Now, from the list of groups, select which group you would like to move the server into and then click "save".</p>
     <p><img src="https://t3n.zendesk.com/attachments/token/pUOv7hYG71JobeRn24Zt2CRlR/?name=server-settings-select-group.png" alt="server-settings-select-group.png" /></p>
-    <p><em>Note: You can only move servers to groups within the same data center that the server is in. Also, you cannot move servers into the Archive or Templates groups, as these are special groups used for archiving and templates. For more information, read about <a href="https://t3n.zendesk.com/entries/23112825-Understanding-VM-Deployment-Options-and-Power-States#archive" target="_blank">archiving</a>&nbsp;and <a href="https://t3n.zendesk.com/entries/22353625-How-To-Create-Customer-Specific-OS-Templates" target="_blank">custom templates</a>.</em></p>
+    <p><em>Note: You can only move servers to groups within the same data center that the server is in. Also, you cannot move servers into the Archive or Templates groups, as these are special groups used for archiving and templates. For more information, read about <a href="https://t3n.zendesk.com/entries/23112825-Understanding-VM-Deployment-Options-and-Power-States#archive">archiving</a>&nbsp;and <a href="https://t3n.zendesk.com/entries/22353625-How-To-Create-Customer-Specific-OS-Templates">custom templates</a>.</em></p>
   </li>
   <li><p>The page should refresh after a few seconds and show the server is now in the group you selected.</p>
     <p><img src="https://t3n.zendesk.com/attachments/token/1tanzf8XDCeqk7rLrNT5hhZzI/?name=server-moved.png" alt="server-moved.png" /></p>

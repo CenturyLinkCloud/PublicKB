@@ -34,11 +34,11 @@
 
 Building Windows 2012 Script Packages
 <p>In order to facilitate knowledge of the CenturyLink Cloud platform this article will provide sample scripts for use on Windows 2012 Virtual Machines. Detailed information on script and software package management can be found in <a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management"
-  target="_blank">this KB</a>. </p>
+ >this KB</a>. </p>
 <h3>Important Tools</h3>
 <ul>
-  <li><a href="http://www.somacon.com/p113.php" target="_blank">GUID Generator</a>; &nbsp;Each package.manifest created and uploaded must contain a unique UUID. This tools provides a way to quickly generate a new one for each package built. <strong>Users must change the GUID on each package posted below</strong>.</li>
-  <li><a href="http://geekswithblogs.net/Wchrabaszcz/archive/2013/09/04/how-to-install-windows-server-features-using-powershell--server.aspx" target="_blank">Windows 2012 Roles</a>&nbsp;</li>
+  <li><a href="http://www.somacon.com/p113.php">GUID Generator</a>; &nbsp;Each package.manifest created and uploaded must contain a unique UUID. This tools provides a way to quickly generate a new one for each package built. <strong>Users must change the GUID on each package posted below</strong>.</li>
+  <li><a href="http://geekswithblogs.net/Wchrabaszcz/archive/2013/09/04/how-to-install-windows-server-features-using-powershell--server.aspx">Windows 2012 Roles</a>&nbsp;</li>
 </ul>
 <h3>Support Information</h3>
 <p>Customers are responsible for building, testing and managing private or privateshared Script blueprints in their environment. </p>

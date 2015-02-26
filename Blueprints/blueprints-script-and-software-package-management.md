@@ -725,7 +725,7 @@ Uploading and Publishing a Package
   </li>
   <li>You will be presented with two options for uploading the package: Browser or FTP. For packages less than 4MB, you can easily upload directly through your web browser by choosing "Browser Upload". For packages larger than 4MB, they&nbsp;<em>must</em>&nbsp;be
     uploaded using the "FTP Upload" option, but this option is available for smaller packages as well. Selecting the "FTP Upload" option will create an FTP account and path and display&nbsp;the credentials and URL to use for uploading. (Note that you
-    may <a href="https://t3n.zendesk.com/entries/48444870-FTP-Users-in-Control-Portal" target="_blank">create your own FTP users </a>for this purpose. Packages must be placed in the root folder as indicated by the display. Once uploaded, Package zip files
+    may <a href="https://t3n.zendesk.com/entries/48444870-FTP-Users-in-Control-Portal">create your own FTP users </a>for this purpose. Packages must be placed in the root folder as indicated by the display. Once uploaded, Package zip files
     will appear in the Unpublished list.)&nbsp;
     <br /><img src="https://t3n.zendesk.com/attachments/token/vZL2ScXnas3NX4f1pBkhFIHlO/?name=upload-package.png" alt="upload-package.png" />
   </li>
@@ -742,7 +742,7 @@ Uploading and Publishing a Package
     System flavor (Linux or Windows) followed by checking the box next to the specific versions of the OS that the package supports (i.e. Windows 2003 or 2008, Ubuntu vs. Redhat, etc.). The last step is to select the visibility of the package.&nbsp;Private
     packages are only visible to users in the account where it was created, Shared packages are visible to users in the&nbsp;account where it was created and all sub-accounts underneath, and Public packages are available to all accounts. (Please review&nbsp;
     <a
-    href="https://t3n.zendesk.com/entries/56566304-Creating-Public-Blueprint-Packages" target="_blank">Creating Public Blueprint Packages&nbsp;</a>before publishing a public package.) Finally,&nbsp;click the "Publish" button to kick off the publishing process.
+    href="https://t3n.zendesk.com/entries/56566304-Creating-Public-Blueprint-Packages">Creating Public Blueprint Packages&nbsp;</a>before publishing a public package.) Finally,&nbsp;click the "Publish" button to kick off the publishing process.
       <br /><img src="https://t3n.zendesk.com/attachments/token/LsKG9gAFve8hsUfNSAcS2fHhK/?name=2014-06-05-008-Package-Details.png" alt="2014-06-05-008-Package-Details.png" />
   </li>
   <li>The package is then queued for asynchronous publishing and the deploy time will depend upon the size of the package. Once the publish operation is complete, it will appear in the package library. (You can click the "Details Page" link to check the status

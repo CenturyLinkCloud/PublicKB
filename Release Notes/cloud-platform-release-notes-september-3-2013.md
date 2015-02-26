@@ -11,8 +11,8 @@
 <ul>
   <li><strong>Vertical Autoscale.&nbsp;</strong>Customers can now view, create, edit, apply and delete CPU Autoscale policies for cloud servers. User-defined ranges specify the maximum and minimum number of CPUs allowed for a server, and the user-defined
     thresholds identify at which utilization values the servers should scale up -- and scale down -- its CPU assignment. Autoscale policies can be applied to servers based on Windows Server 2012 Datacenter Edition, Red Hat Enterprise Linux 5/6, and Ubuntu
-    10/12 x64. Please see additional KB articles "<a href="http://help.tier3.com/entries/22032834-Creating-and-Applying-Autoscale-Policies" target="_blank">Creating and applying Autoscale policies</a>" and "<a href="http://help.tier3.com/entries/22326345-Autoscale-FAQ"
-    target="_blank">Autoscale FAQs</a>" for more information about this exciting feature.
+    10/12 x64. Please see additional KB articles "<a href="http://help.tier3.com/entries/22032834-Creating-and-Applying-Autoscale-Policies">Creating and applying Autoscale policies</a>" and "<a href="http://help.tier3.com/entries/22326345-Autoscale-FAQ"
+   >Autoscale FAQs</a>" for more information about this exciting feature.
     <p><img src="https://t3n.zendesk.com/attachments/token/5g8rvnyfr3ch0g6/?name=release09_03_01.png" alt="release09_03_01.png" />
     </p>
   </li>
@@ -31,5 +31,5 @@
   <li><strong>Retired Windows Server 2012 Standard Edition template.&nbsp;</strong>We have retired the Windows Server 2012 Standard template and ask all customers to use the powerful Windows Server 2012 Data Center Edition template. There is no price difference
     for users of the other Windows Server 2012 editions.&nbsp;</li>
 </ul>
-<p><strong>For a demo of these features, please visit:&nbsp;<a href="http://www.slideshare.net/Tier3Cloud/tier-3-september-release-2013" target="_blank">http://www.slideshare.net/Tier3Cloud/tier-3-september-release-2013</a><a href="http://www.slideshare.net/Tier3Cloud/tier-3-august-2013-release-webcast" target="_blank"><br /></a></strong>
+<p><strong>For a demo of these features, please visit:&nbsp;<a href="http://www.slideshare.net/Tier3Cloud/tier-3-september-release-2013">http://www.slideshare.net/Tier3Cloud/tier-3-september-release-2013</a><a href="http://www.slideshare.net/Tier3Cloud/tier-3-august-2013-release-webcast"><br /></a></strong>
 </p>

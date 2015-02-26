@@ -8,7 +8,7 @@
 
 <div>
   <ul>
-    <li>Shared Load Balancers are now <a href="http://help.tier3.com/entries/22110695-Creating-a-Self-Service-Load-Balancing-Configuration" target="_blank">configurable in a self-service fashion</a>.</li>
+    <li>Shared Load Balancers are now <a href="http://help.tier3.com/entries/22110695-Creating-a-Self-Service-Load-Balancing-Configuration">configurable in a self-service fashion</a>.</li>
     <li>Customers can log in directly to their Dedicated Load Balancers.</li>
     <li>With the Shared Load Balancers the External IP sits directly on the Load Balancer.</li>
     <li>With a Dedicated Load Balancer the VIP is an internal IP. In order to provide external access a MIP/NAT must be added to the firewall which points to the internal VIP.</li>

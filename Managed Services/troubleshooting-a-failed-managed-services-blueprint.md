@@ -70,4 +70,4 @@
 </ul>
 <p><strong>NEED ADDITIONAL ASSISTANCE?</strong>
 </p>
-<p>Refer to this related KB, "<a href="https://t3n.zendesk.com/entries/46770424-Deploying-Managed-Services-within-Sub-Accounts" target="_blank">Deploying Managed Services with Sub-accounts</a>."</p>
+<p>Refer to this related KB, "<a href="https://t3n.zendesk.com/entries/46770424-Deploying-Managed-Services-within-Sub-Accounts">Deploying Managed Services with Sub-accounts</a>."</p>

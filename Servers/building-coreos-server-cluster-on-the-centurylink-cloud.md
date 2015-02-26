@@ -7,10 +7,10 @@
 }}}
 
 Overview
-<p><a href="https://coreos.com/" target="_blank">CoreOS</a>&nbsp;is a lightweight Linux-based operating system that is designed to run&nbsp;<a href="https://www.docker.io/" target="_blank">Docker</a>&nbsp;containers. CoreOS is not currently supported natively
+<p><a href="https://coreos.com/">CoreOS</a>&nbsp;is a lightweight Linux-based operating system that is designed to run&nbsp;<a href="https://www.docker.io/">Docker</a>&nbsp;containers. CoreOS is not currently supported natively
   as a VM template within the CenturyLink Cloud Control Portal, however it can be installed by using a self-managed PXE/DHCP Server and a dedicated network. This is easy to set up using the blueprints that have been created to help with the provisioning
   of a CoreOS cluster.</p>
-<p><em>Note: These same instructions can be followed to setup a Panamax server in CenturyLink Cloud. Instead of the "CoreOS Server" blueprint, just use the "CoreOS Server with Panamax" blueprint below and all other steps are the same. For more information, you can reference the <a href="https://github.com/CenturyLinkLabs/panamax-ui/wiki/Installing-Panamax#centurylink-cloud" target="_blank">installation instructions on the Panamax support site</a>.</em>
+<p><em>Note: These same instructions can be followed to setup a Panamax server in CenturyLink Cloud. Instead of the "CoreOS Server" blueprint, just use the "CoreOS Server with Panamax" blueprint below and all other steps are the same. For more information, you can reference the <a href="https://github.com/CenturyLinkLabs/panamax-ui/wiki/Installing-Panamax#centurylink-cloud">installation instructions on the Panamax support site</a>.</em>
 </p>
 Basic Instructions
 <p>The basic steps are as follows, with further details below.</p>
@@ -98,7 +98,7 @@ Detailed Steps
       </li>
       <li>Optionally, you may provide the full string of a public key to be used for logging into the CoreOS server over SSH in the "SSH Public Key" field. If you do not provide a value here, you will have to access the CoreOS server by first using SSH to
         login to the DHCP server using the password provided when deploying that server, and then using SSH from there to login to the CoreOS server. (For information about how to generate an SSH key pair, you can follow the instructions <a href="http://git-scm.com/book/en/Git-on-the-Server-Generating-Your-SSH-Public-Key"
-        target="_blank">here</a>.)</li>
+       >here</a>.)</li>
     </ul>
     <img src="https://t3n.zendesk.com/attachments/token/iKZpCmjII9uDEDeIC8Vgcq5zR/?name=deploy-coreos.jpg" alt="deploy-coreos.jpg" />
     <br />

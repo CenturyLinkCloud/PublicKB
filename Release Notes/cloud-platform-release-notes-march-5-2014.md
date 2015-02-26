@@ -20,7 +20,7 @@
     <br /><img src="https://t3n.zendesk.com/attachments/token/lxcf6m00fil0dah/?name=release03_05_14_02.png" alt="release03_05_14_02.png" />
   </li>
   <li><strong>Alert Policies.&nbsp;</strong>Users can now define centrally-managed alert policies for CPU, memory, disk, and network. These policies are applied to your virtual servers and leverage a reliable engine for storing monitoring information and
-    sending alerts when policies are violated. Read more in the <a href="https://t3n.zendesk.com/entries/27202824-Cloud-Server-Alerting-FAQ" target="_blank">new FAQ about the alert service</a>.
+    sending alerts when policies are violated. Read more in the <a href="https://t3n.zendesk.com/entries/27202824-Cloud-Server-Alerting-FAQ">new FAQ about the alert service</a>.
     <br /><img src="https://t3n.zendesk.com/attachments/token/dmrajk0kdgeebjr/?name=release03_05_14_03.png" alt="release03_05_14_03.png" />
   </li>
   <li><strong>Monitoring webhook.&nbsp;</strong>Send monitoring alerts from the CenturyLink Cloud to a destination of your choosing using the new monitoring webhook.

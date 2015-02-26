@@ -53,5 +53,5 @@
 </p>
 <ul>
   <li><strong>New public script &amp; software naming convention &amp; lifecycle process. </strong>The dozens of publicly available Blueprints and scripts have adopted a more intuitive naming structure and mature lifecycle process. More information
-    on this is <a href="https://t3n.zendesk.com/entries/56566304-Creating-Public-Blueprint-Packages" target="_blank">available on this KB here</a>.</li>
+    on this is <a href="https://t3n.zendesk.com/entries/56566304-Creating-Public-Blueprint-Packages">available on this KB here</a>.</li>
 </ul>

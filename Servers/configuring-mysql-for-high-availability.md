@@ -10,23 +10,23 @@
 <p>Simple scalability and easy elasticity are key benefits of any cloud environment, and along with features like self-service load balancer configurations and autoscaling, CenturyLink Cloud enables users to easily deploy applications with high-availability
   architectures. While this is especially true for most web applications, the database tier, particularly when it is a traditional relational database like MySQL, can often become the performance bottleneck or the single point of failure for many workloads
   because it can sometimes be a challenge to scale it out. While a vertical autoscale can help handle peak usage for performance, it doesn't cut it when you're looking for high availability from your relational database.</p>
-<p><a href="http://dev.mysql.com/doc/refman/5.7/en/ha-overview.html" target="_blank">MySQL offers a number of high-availability configurations</a>, but perhaps the two most commonly implemented are <a href="#replication">Replication</a> and <a href="#clustering">Clustering</a>.
+<p><a href="http://dev.mysql.com/doc/refman/5.7/en/ha-overview.html">MySQL offers a number of high-availability configurations</a>, but perhaps the two most commonly implemented are <a href="#replication">Replication</a> and <a href="#clustering">Clustering</a>.
   In this article, we will explore both types of MySQL high-availability options and walkthrough the steps for deploying them on the CenturyLink Cloud.</p>
 <p>
   <a name="replication"></a>
 </p>
 Replication
-<p><a href="http://dev.mysql.com/doc/refman/5.7/en/replication.html" target="_blank">MySQL Replication</a>&nbsp;allows for data to be asynchronously copied from a "master" database to one or more "slave" database servers automatically as data in the master
-  is updated. This means you can read data from any slave database server, but should only ever write to the master. There are many potential <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions.html" target="_blank">solutions</a> that
-  can take advantage of this type of configuration. Perhaps you want to use the slaves as <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-backups.html" target="_blank">database backups</a>, distribute some data to more <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-partitioning.html"
+<p><a href="http://dev.mysql.com/doc/refman/5.7/en/replication.html">MySQL Replication</a>&nbsp;allows for data to be asynchronously copied from a "master" database to one or more "slave" database servers automatically as data in the master
+  is updated. This means you can read data from any slave database server, but should only ever write to the master. There are many potential <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions.html">solutions</a> that
+  can take advantage of this type of configuration. Perhaps you want to use the slaves as <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-backups.html">database backups</a>, distribute some data to more <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-partitioning.html"
   target="_self">geographically desirable locations</a> for certain user queries, or even use them as the connection points for read-only analytics applications so as not to affect performance of the master (be careful though, too many slaves can result
-  in <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-performance.html" target="_blank">performance degradation</a> of the master). In the case of a failover situation, if your master goes down, you can (manually) <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-switch.html"
-  target="_blank">turn any slave into the master</a> and have the system back up in less time than it might take to rebuild from backups. And, of course, you may simply want to use them to <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-scaleout.html"
-  target="_blank">scale out </a>your environment and spread your load across multiple servers as you might do on the web tier as well (remember though, the app can read from any slave, but it must always write to the master). Whatever the scenario you
+  in <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-performance.html">performance degradation</a> of the master). In the case of a failover situation, if your master goes down, you can (manually) <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-switch.html"
+ >turn any slave into the master</a> and have the system back up in less time than it might take to rebuild from backups. And, of course, you may simply want to use them to <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-scaleout.html"
+ >scale out </a>your environment and spread your load across multiple servers as you might do on the web tier as well (remember though, the app can read from any slave, but it must always write to the master). Whatever the scenario you
   plan to use replication for, the below steps will walk you through getting MySQL master and slave instances up and running on the CenturyLink Cloud.</p>
 <h3>Steps to Configure MySQL <em>Replication</em> on CenturyLink Cloud</h3>
 <p>These steps describe the process to bring up one master and one slave, but you can repeat the steps to create the slave and deploy multiple ones if you wish. While there are many possible MySQL replication options (including the ability to replicate all
-  databases, a specific database, or specific tables), the following outlines a good baseline to configure replication for a single database. You should consult the <a href="http://dev.mysql.com/doc/refman/5.7/en/replication.html" target="_blank">MySQL documentation</a>  for more details.</p>
+  databases, a specific database, or specific tables), the following outlines a good baseline to configure replication for a single database. You should consult the <a href="http://dev.mysql.com/doc/refman/5.7/en/replication.html">MySQL documentation</a>  for more details.</p>
 <p>In this example, we will use Ubuntu 12 servers, but with the exception of using a different package manager/installation in the first few steps, this MySQL configuration will work on any system that supports MySQL replication.</p>
 <div>
   <ol>
@@ -35,7 +35,7 @@ Replication
       />
     </li>
     <li><strong>Install MySQL.</strong> This will become the "master" server.
-      <br />We will use the following script to install the MySQL package using Ubuntu's package manager. You could also create a <a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management" target="_blank">blueprint script</a>      to do this, but since we are only installing on one server for now, we will logon to the server and run the commands manually.
+      <br />We will use the following script to install the MySQL package using Ubuntu's package manager. You could also create a <a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management">blueprint script</a>      to do this, but since we are only installing on one server for now, we will logon to the server and run the commands manually.
       <pre>apt-get update<br />apt-get -y install mysql-server mysql-client</pre>
       <p>During the installation, you will be prompted to enter a password for the MySQL admin user, which you should not leave blank.</p>
     </li>
@@ -116,7 +116,7 @@ Replication
   </ol>
   <a name="clustering"></a>
   Cluster
-  <p><a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-overview.html" target="_blank">MySQL Clustering</a> provides an option that is designed not to have any single point of failure. It enables clustering utilizing a shared-nothing architecture,
+  <p><a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-overview.html">MySQL Clustering</a> provides an option that is designed not to have any single point of failure. It enables clustering utilizing a shared-nothing architecture,
     meaning it works well with minimally specced hardware, each with its own memory and disk. MySQL Cluster combines the standard MySQL server with an in-memory clustered storage engine called NDB (Network DataBase), and so it sometimes referred to as
     an NDB cluster.&nbsp;A MySQL Cluster consists of multiple nodes of different types,&nbsp;including MySQL servers (for access to NDB data), data nodes (for storage of the data), and one or more management servers. All data in an NDB cluster&nbsp;is
     stored in the data nodes and the tables are directly accessible from all other SQL nodes in the cluster. This differs from the replication methodology in that there is no master-slave relationship - all data nodes contain copies of the data, but you
@@ -124,15 +124,15 @@ Replication
   <h3>Steps to Configure MySQL <em>Cluster</em> on CenturyLink Cloud</h3>
   <p>These steps describe the process to bring up one management (ndb_mgmd) node, one SQL (mysqld) node, and two data (ndbd) nodes. This is the absolute minimum required number of servers for a cluster to work. It is highly recommended to create multiple
     SQL nodes (following the same steps listed below for the SQL node), and additional data nodes as needed, and it is even possible to set up multiple management nodes (though this is less critical since a cluster can function for some time without the
-    ndb_mgmd node being up). There are plenty of configuration options as well as <a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-limitations.html" target="_blank">some limitations</a> to using clustering, so the <a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html"
-    target="_blank">MySQL documentation</a> can be consulted for more information.</p>
+    ndb_mgmd node being up). There are plenty of configuration options as well as <a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-limitations.html">some limitations</a> to using clustering, so the <a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html"
+   >MySQL documentation</a> can be consulted for more information.</p>
   <p>In this example, we will use RedHat Enterprise Linux 6 servers, but with the exception of using a different package manager/binary installation in the second step, this MySQL configuration will work on any system that supports MySQL clusters. (More
-    information in the <a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-installation.html" target="_blank">MySQL documentation</a>.)</p>
+    information in the <a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-installation.html">MySQL documentation</a>.)</p>
   <ol>
     <li><strong>Create Server (Management).</strong> Here we will use the RedHat Enterprise Linux 6 template.</li>
     <li><strong>Install MySQL cluster binary.</strong> This will become the "management node" (ndb_mgmd).
       <br />For clustered versions of MySQL, unfortunately we cannot use the regular binaries that come from our public Linux package manager libraries, so we'll have to download the binary from Oracle's site and then copy it on to our server for installation.
-      We can find the binaries available at&nbsp;<a href="http://dev.mysql.com/downloads/cluster/" target="_blank">http://dev.mysql.com/downloads/cluster/</a>&nbsp;where for this example we will select and download the&nbsp;<em>MySQL-Cluster-server-gpl-7.3.6-2.el6.x86_64.rpm</em>      package for Red Hat Linux. (For instructions on other operating systems, refer to the <a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-installation.html" target="_blank">MySQL manual</a>.) Once downloaded, we can use <code>scp</code>      (or another file transfer tool) to copy the file onto the server.
+      We can find the binaries available at&nbsp;<a href="http://dev.mysql.com/downloads/cluster/">http://dev.mysql.com/downloads/cluster/</a>&nbsp;where for this example we will select and download the&nbsp;<em>MySQL-Cluster-server-gpl-7.3.6-2.el6.x86_64.rpm</em>      package for Red Hat Linux. (For instructions on other operating systems, refer to the <a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-installation.html">MySQL manual</a>.) Once downloaded, we can use <code>scp</code>      (or another file transfer tool) to copy the file onto the server.
       <br /><img src="https://t3n.zendesk.com/attachments/token/491wL9Gleycg9Y7teloVDzm0M/?name=scp-mysql-binary.png" alt="scp-mysql-binary.png" />
       <br />
       <br />Once it's there, we'll login to the server with SSH, change to the directory where it's located, and run the following commands to get it installed. The first command ensures we won't have any version conflicts, and the second command installs the
@@ -255,7 +255,7 @@ hostname=10.71.9.15             # Hostname or IP address
                                 # specified for this node for various
 
                                 # purposes such as running ndb_restore)</pre> (These are the minimum settings required for the cluster to work. For more options, you may consult the <a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-config-file.html"
-      target="_blank">MySQL documentation</a>.) Once this file is saved, we're ready to startup the cluster.</li>
+     >MySQL documentation</a>.) Once this file is saved, we're ready to startup the cluster.</li>
     <li><strong>Startup the Cluster.&nbsp;</strong>Order matters here, so follow these steps closely.</li>
     <ol>
       <li><strong>Start the management node.<br /></strong>Logon to the management node server and&nbsp;issue the following command to start the management node process:
@@ -283,5 +283,5 @@ hostname=10.71.9.15             # Hostname or IP address
     <li><em>(Optional)</em>&nbsp;Repeat above steps as needed to set up additional nodes of any type.</li>
   </ol>
   <p>Finally, if you want to get really fancy, you can even combine the above methods and use Cluster Replication to replicate a master cluster to slave clusters. Consult the <a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-replication.html"
-    target="_blank">MySQL manual</a> for more on this.</p>
+   >MySQL manual</a> for more on this.</p>
 </div>

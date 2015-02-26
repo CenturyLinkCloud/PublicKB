@@ -13,13 +13,13 @@
 <h3>Important Notices</h3>
 <p><em><strong>DO NOT RUN THE CONVERT TO TEMPLATE FUNCTION ON A PRODUCTION/LIVE VIRTUAL SERVER</strong></em>. Customers should create a virtual instance with their specific configurations on a non-production virtual instance. The convert to template
   function actually modifies and moves the virtual machine to the templates group. </p>
-<p>Customers creating OS Templates for Windows Servers should carefully review the <a href="http://technet.microsoft.com/en-us/library/hh824835.aspx" target="_blank">Microsoft Sysprep for Server Roles technet article</a>. Sysprep is a component of
+<p>Customers creating OS Templates for Windows Servers should carefully review the <a href="http://technet.microsoft.com/en-us/library/hh824835.aspx">Microsoft Sysprep for Server Roles technet article</a>. Sysprep is a component of
   creating an OS Template and as such certain OS Roles are not supported in both the template or clone process. <strong><em>For Windows Servers the CenturyLink Cloud Platform performs the sysprep function on behalf of customers when using the Convert To Template feature</em></strong>.</p>
 <h3>Steps</h3>
 <ol>
   <li>Use the Create Server Control Portal function to deploy a baseline operating system supported on the CenturyLink Cloud platform. Customers may elect to perform this task outside of the platform and wish to import into the Control Portal. CenturyLink
-    Cloud provides <a href="http://www.centurylinkcloud.com/products/support/service-tasks" target="_blank">service tasks</a> to perform this import and customers should engage this group for fees. Preparation steps to import the VM can be found
-    <a href="http://help.tier3.com/entries/22209635-Best-Practices-and-Preperation-for-a-Virtual-Machine-OVF-OVA-Import" target="_blank">Here</a>.</li>
+    Cloud provides <a href="http://www.centurylinkcloud.com/products/support/service-tasks">service tasks</a> to perform this import and customers should engage this group for fees. Preparation steps to import the VM can be found
+    <a href="http://help.tier3.com/entries/22209635-Best-Practices-and-Preperation-for-a-Virtual-Machine-OVF-OVA-Import">Here</a>.</li>
   <li>Login to the newly created OS Instance and apply the customization or packages that should be part of the Template. We recommend after all changes are made a clean reboot of the OS prior to proceeding to step #3.</li>
   <li>Navigate to the Server Instance built in step #1 in the Control Portal. Select the Convert to Template button under the Action Menu.</li>
 

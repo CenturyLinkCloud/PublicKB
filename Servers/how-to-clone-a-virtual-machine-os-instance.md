@@ -10,7 +10,7 @@
 <p>A clone is a copy of an existing virtual machine. When the cloning operation is complete, the clone is a separate virtual machine. The resulting clone is an independent copy of a virtual machine and shares nothing with the source virtual machine
   after the cloning operation. Ongoing operation of a clone is entirely separate from the source virtual machine.</p>
 <h3>Important Notices</h3>
-<p>Customers using the clone function for Windows Servers should carefully review the <a href="http://technet.microsoft.com/en-us/library/hh824835.aspx" target="_blank">Microsoft Sysprep for Server Roles technet article</a>. Sysprep is a component
+<p>Customers using the clone function for Windows Servers should carefully review the <a href="http://technet.microsoft.com/en-us/library/hh824835.aspx">Microsoft Sysprep for Server Roles technet article</a>. Sysprep is a component
   of creating a clone and as such certain OS Roles are not supported in the clone process. </p>
 <p>The source server is shutdown to ensure that there are no pending operations/information held in memory, and the server contents are copied to the destination virtual machine</p>
 

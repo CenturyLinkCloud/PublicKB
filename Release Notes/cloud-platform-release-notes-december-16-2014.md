@@ -31,8 +31,8 @@
 </div>
 <ul>
   <li><strong>Red Hat 7 support.&nbsp;</strong>CenturyLink Cloud now supports&nbsp;Red Hat 7 as an OS template for servers. Customers can now create and deploy 64-bit Red Hat Enterprise Linux 7 virtual instances to all data centers. Among other things, this
-    latest version of RedHat has native support for Docker. Check out&nbsp;<a href="https://access.redhat.com/sites/default/files/pages/attachments/rhel_whatsnewrhel7beta_techoverview_.pdf" target="_blank">what else is new in version 7</a>&nbsp;and read
-    the <a href="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.0_Release_Notes/" target="_blank">Red Hat 7 Release Notes</a>&nbsp;for more information.
+    latest version of RedHat has native support for Docker. Check out&nbsp;<a href="https://access.redhat.com/sites/default/files/pages/attachments/rhel_whatsnewrhel7beta_techoverview_.pdf">what else is new in version 7</a>&nbsp;and read
+    the <a href="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.0_Release_Notes/">Red Hat 7 Release Notes</a>&nbsp;for more information.
     <br /><img src="https://t3n.zendesk.com/attachments/token/3njshOW7fRrpnLRAWEIp1rLeJ/?name=rhel7-os.png" alt="rhel7-os.png" />
     <br />
     <br />

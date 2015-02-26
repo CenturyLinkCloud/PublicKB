@@ -25,7 +25,7 @@
   <li><strong>FTP Support in all data centers.&nbsp;</strong>Every CenturyLink Cloud data center now has FTP support for users who wish to upload software packages to their blueprint library.</li>
   <li><strong>Async firewall updates</strong>. The new CenturyLink Cloud firewall policy engine now runs asynchronously so that the user can proceed to other tasks while their firewall policies are taking effect.</li>
   <li><strong>Web Fabric upgrade. </strong>The current Iron Foundry fork was incorporated into the CenturyLink Cloud Web Fabric, bringing with it updated versions of Node.js, PostgreSQL, MongoDB and Java. See <a href="http://blog.ironfoundry.org/2012/10/ironfoundry-me-environment-now-running-latest-iron-foundry-bits/"
-    target="_blank">this post on the Iron Foundry blog</a> for more details.</li>
+   >this post on the Iron Foundry blog</a> for more details.</li>
   <li><strong>Update Firewall Policy UI to simplify custom port range definition</strong>. Instead of having the user view two windows to define a custom port range for a firewall policy, we've simplified the UI to address standard and custom ports all in
     one window.</li>
   <li><strong>Friendly naming of data centers.</strong>&nbsp;In the Control Portal, users no longer see names like "WA1" and "GB1", but rather, see more informative names that identify the city and country of the data center.</li>

@@ -8,7 +8,7 @@
 
 <p>CenturyLink Cloud provides SPLA licensing as a means of delivering cost-effective, utility computing. Customers may apply Microsoft or Red Hat enterprise licenses to their Virtual Machines and are billed the corresponding amount as long as the machine is in a live
   state. Customers who archive their servers do not pay for licensing until the Virtual Machine is placed back into production- archiving servers is a great way to manage costs while retaining operational agility.&nbsp;You may have seen <a href="https://t3n.zendesk.com/entries/23228148-Using-Your-Windows-Licenses-in-the-Tier-3-Cloud"
-  target="_blank">this</a> article on using your Enterprise Agreement Licenses (as long as you have a valid Software Assurance policy) in the CenturyLink Cloud.</p>
+ >this</a> article on using your Enterprise Agreement Licenses (as long as you have a valid Software Assurance policy) in the CenturyLink Cloud.</p>
 <p>Recently, Microsoft amended its MSDN (Microsoft Developer Network) package license terms to enable use of said licenses in either their Azure cloud or on third party clouds- such as CenturyLink Cloud.</p>
 <p>Please note that this right does not extend to either any server or desktop Operating System- they must, as with the EA "License Mobility" Program, be purchased through the cloud vendor. The following is an excerpt directly from Microsoft's announcement
   page for this program:</p>

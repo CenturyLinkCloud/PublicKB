@@ -91,7 +91,7 @@
 <h3><strong>Non-standard configurations</strong></h3>
 <p>If you require any additional assistance beyond the options available in self-service, that would fall into the "non-standard" configuration category.</p>
 <p>We define non-standard configurations as anything deviating from the above process, or utilizing configuration options specifically listed as out-of-scope. These configurations need to be addressed as a <a href="http://www.centurylinkcloud.com/products/support/service-tasks"
-  target="_blank"><strong>service task</strong></a> engagement. Contact your account manager with any questions.</p>
+ ><strong>service task</strong></a> engagement. Contact your account manager with any questions.</p>
 <p>Common reasons for non-standard VPN tunnels include:</p>
 <ul>
   <li>Requesting an engineer to perform a live turn-up with you on a conference call</li>

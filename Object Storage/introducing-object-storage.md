@@ -16,7 +16,7 @@
 <h3>FAQ</h3>
 <p><strong>Q: &nbsp;Is this software home-grown or is this based on a commercial product?</strong>
 </p>
-<p><strong>A:&nbsp;</strong>CenturyLink Cloud Object Storage is based on <a href="http://basho.com/riak-cloud-storage/" target="_blank">Riak CS Enterprise</a> from Basho and will be deployed across CenturyLink Cloud data centers.</p>
+<p><strong>A:&nbsp;</strong>CenturyLink Cloud Object Storage is based on <a href="http://basho.com/riak-cloud-storage/">Riak CS Enterprise</a> from Basho and will be deployed across CenturyLink Cloud data centers.</p>
 <div></div>
 <p><strong>Q: &nbsp;What are the key vocabulary terms for Object Storage?</strong>
 </p>

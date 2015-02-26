@@ -32,7 +32,7 @@ Deploy Microsoft SQL Server using CenturyLink Cloud Blueprint
   </ul>
 </ul>
 <h3>Exceptions</h3>
-<p><em>This KB does not apply to <a href="http://www.centurylinkcloud.com/managed-services/ms-sql" target="_blank">Managed Microsoft SQL</a> Customers</em>
+<p><em>This KB does not apply to <a href="http://www.centurylinkcloud.com/managed-services/ms-sql">Managed Microsoft SQL</a> Customers</em>
 </p>
 <h3>General Notes</h3>
 <p>The following are quick tips/notes based on past experiences with customers leveraging this blueprint</p>

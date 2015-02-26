@@ -11,16 +11,16 @@ Using Object Storage with a Cloud Storage Gateway
   APIs such as SOAP or REST to block-based storage protocols such as iSCSI or file-based interfaces such as NFS or CIFS. Unlike the cloud storage services which they complement, cloud storage gateways use standard network protocols which integrate
   with existing applications. Cloud storage gateways can also serve as intermediaries to multiple cloud storage providers. Some cloud storage gateways also include additional storage features such as backup and recovery, caching, compression, encryption,
   storage de-duplication and provisioning.</p>
-<p>There are many Cloud Storage Gateway appliances on the market today. In this knowledge base we will focus on&nbsp;<a href="http://www.twinstrata.com/" target="_blank">TwinStrata</a>. The TwinStrata CloudArray&nbsp;provides customers various
+<p>There are many Cloud Storage Gateway appliances on the market today. In this knowledge base we will focus on&nbsp;<a href="http://www.twinstrata.com/">TwinStrata</a>. The TwinStrata CloudArray&nbsp;provides customers various
   delivery models for the CloudArray product and Cloud Storage. Customers should validate with their Cloud Storage Gateway provider the support of an S3 compatible Object Storage. </p>
 <h3>Supporting Information</h3>
-<p>Information and details around the CenturyLink Cloud Object Storage can be found in our&nbsp;<a href="https://t3n.zendesk.com/forums/20789095-Object-Storage" target="_blank"><strong>Knowledge base</strong></a>. It is also important to note that
+<p>Information and details around the CenturyLink Cloud Object Storage can be found in our&nbsp;<a href="https://t3n.zendesk.com/forums/20789095-Object-Storage"><strong>Knowledge base</strong></a>. It is also important to note that
   CenturyLink Cloud provides no support for any 3rd party Cloud Storage Gateways. We are simply providing cloud based storage for use with these Cloud Storage Gateways.  </p>
 <h3>Prerequisites</h3>
 <ul>
   <li>A CenturyLink Cloud Account</li>
   <li>TwinStrata CloudArray Virtual or Physical Appliance Base Configuration</li>
-  <li>An object storage user is created in the CenturyLink Cloud Control Portal. <a href="https://t3n.zendesk.com/entries/21648384-Using-Object-Storage-from-the-Control-Portal" target="_blank">See this KB</a>
+  <li>An object storage user is created in the CenturyLink Cloud Control Portal. <a href="https://t3n.zendesk.com/entries/21648384-Using-Object-Storage-from-the-Control-Portal">See this KB</a>
   </li>
   <li>The Cloud Storage Gateway has internet access ports as defined by the TwinStrata Installation Documentation.</li>
 </ul>

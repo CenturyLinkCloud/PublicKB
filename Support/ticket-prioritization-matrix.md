@@ -61,7 +61,7 @@ Developer Support (Free)
       </td>
       <td>
         <ul>
-          <li><a href="mailto:noc@t3n.zendesk.com" target="_blank">noc@t3n.zendesk.com</a>&nbsp;&nbsp;</li>
+          <li><a href="mailto:noc@t3n.zendesk.com">noc@t3n.zendesk.com</a>&nbsp;&nbsp;</li>
         </ul>
       </td>
       <td>
@@ -133,7 +133,7 @@ Developer Support (Free)
         </td>
         <td>
           <ul>
-            <li><a href="mailto:urgent@t3n.zendesk.com" target="_blank">urgent@t3n.zendesk.com</a>
+            <li><a href="mailto:urgent@t3n.zendesk.com">urgent@t3n.zendesk.com</a>
             </li>
           </ul>
         </td>
@@ -173,7 +173,7 @@ Developer Support (Free)
         </td>
         <td>
           <ul>
-            <li><a href="mailto:high@t3n.zendesk.com" target="_blank">high@t3n.zendesk.com</a>
+            <li><a href="mailto:high@t3n.zendesk.com">high@t3n.zendesk.com</a>
             </li>
           </ul>
         </td>
@@ -435,7 +435,7 @@ Developer Support (Free)
     
     <h3>Q&amp;A</h3>
     <p><strong>Q</strong>&nbsp;- I need a guarantee that a support request will be completed in less than the SLA time offered.</p>
-    <p><strong>A</strong>&nbsp;- You are welcome to escalate the request using our escalation procedures: &nbsp;<a href="http://help.tier3.com/entries/23626466-How-do-I-escalate-a-ticket-" target="_blank">http://help.tier3.com/entries/23626466-How-do-I-escalate-a-ticket-&nbsp;</a>&nbsp;</p>
+    <p><strong>A</strong>&nbsp;- You are welcome to escalate the request using our escalation procedures: &nbsp;<a href="http://help.tier3.com/entries/23626466-How-do-I-escalate-a-ticket-">http://help.tier3.com/entries/23626466-How-do-I-escalate-a-ticket-&nbsp;</a>&nbsp;</p>
     
     
     

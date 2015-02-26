@@ -15,5 +15,5 @@
 
 
 <p>More information on this topic can be found here:</p>
-<p><a href="http://www.juniper.net/techpubs/en_US/junos12.1/topics/concept/dns-alg-nat-doctoring-overview.html" target="_blank">http://www.juniper.net/techpubs/en_US/junos12.1/topics/concept/dns-alg-nat-doctoring-overview.html</a>
+<p><a href="http://www.juniper.net/techpubs/en_US/junos12.1/topics/concept/dns-alg-nat-doctoring-overview.html">http://www.juniper.net/techpubs/en_US/junos12.1/topics/concept/dns-alg-nat-doctoring-overview.html</a>
 </p>

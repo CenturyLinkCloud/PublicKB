@@ -53,7 +53,7 @@
   <li>Create a new blueprint with the Privacy Setting set to <strong>Private</strong>.
     <br /><img src="https://t3n.zendesk.com/attachments/token/j4vhu54k9pdk43s/?name=psblueprint04.png" alt="psblueprint04.png" />
   </li>
-  <li>Finish building the blueprint (see KB article <a href="http://help.tier3.com/entries/21690282-how-to-build-a-blueprint" target="_blank">How to build a Blueprint</a> for full details on completing a blueprint) and submit it for publishing.</li>
+  <li>Finish building the blueprint (see KB article <a href="http://help.tier3.com/entries/21690282-how-to-build-a-blueprint">How to build a Blueprint</a> for full details on completing a blueprint) and submit it for publishing.</li>
   <li>While staying within the parent account, navigate to the “All Blueprints” page by clicking the "Blueprints” item in the navigation menu.
     <br /><img src="https://t3n.zendesk.com/attachments/token/fw0hvnwczmtprbf/?name=psblueprint05.png" alt="psblueprint05.png" />
   </li>

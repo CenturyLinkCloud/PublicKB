@@ -8,7 +8,7 @@
 
 ###Description
 
-CenturyLink Cloud users are locked out of their account after 4 failed login attempts. To unlock the user, an Account Administrator must view the user's record in the Control Portal and choose to unlock the user. That Account Administrator may be someonein the customer account, or a NOC Engineer.
+CenturyLink Cloud users are locked out of their account after 4 failed login attempts. To unlock the user, an Account Administrator must view the user's record in the Control Portal and choose to unlock the user. That Account Administrator may be someone in the customer account, or a NOC Engineer.
 
 ###Prerequisites
 
@@ -22,5 +22,5 @@ CenturyLink Cloud users are locked out of their account after 4 failed login att
 * The Account Administrator unchecks the "Is Locked" checkbox. If the user contacts the CenturyLink Cloud NOC, then the user's password will also be reset as part of the unlock procedure.
 
 <img src="https://t3n.zendesk.com/attachments/token/tijhhyyefvxvjpd/?name=user-lockout.png" alt="user-lockout.png" />
-  
+
 The user is now able to log into the Control Portal.

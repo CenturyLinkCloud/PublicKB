@@ -62,8 +62,8 @@
         <br
         /><img src="https://t3n.zendesk.com/attachments/token/k8ujnbnc78uls8c/?name=firewalloverview11.png" alt="firewalloverview11.png" />
       </li>
-      <li>When these settings are saved, the firewall policy shows the source address in <a href="http://en.wikipedia.org/wiki/CIDR_notation" target="_blank">Classless Inter-Domain Routing (CIDR) notation</a>&nbsp;(see an <a href="http://technet.microsoft.com/en-us/library/cc958832.aspx"
-        target="_blank">additional explanation of CIDR here</a>).
+      <li>When these settings are saved, the firewall policy shows the source address in <a href="http://en.wikipedia.org/wiki/CIDR_notation">Classless Inter-Domain Routing (CIDR) notation</a>&nbsp;(see an <a href="http://technet.microsoft.com/en-us/library/cc958832.aspx"
+       >additional explanation of CIDR here</a>).
         <br /><img src="https://t3n.zendesk.com/attachments/token/46jc6gtxktmmsc1/?name=firewalloverview12.png" alt="firewalloverview12.png" />
       </li>
       <li>Next, choose the <strong>add destination address</strong>&nbsp;button and select a network and IP range that will satisfy the needs of the firewall policy.

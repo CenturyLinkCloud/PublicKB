@@ -13,7 +13,7 @@
 <ul>
   <li><strong>New Role-Based Access Control Services.&nbsp;</strong>CenturyLink Cloud has launched an upgraded user security model that cascades throughout the UI and v2 API. These 8 roles map to unique personas within an organization and help customers apply
     a least-privilege approach to their cloud environment. A user can be part of multiple roles, and the Control Portal user interface recognizes which role(s) a customer has and adjusts accordingly. For a deep dive description of the permissions assigned
-    to each role, view the <a href="https://t3n.zendesk.com/entries/57974910-Role-Permissions-Matrix" target="_blank">Permission Matrix KB</a>. Also, review the <a href="https://t3n.zendesk.com/entries/57600424-Roles-FAQ" target="_blank">Roles FAQ</a>    and <a href="https://t3n.zendesk.com/entries/58057670-Roles-Migration-Guide" target="_blank">migration guide</a> for more details. Below is a brief description of each role:</li>
+    to each role, view the <a href="https://t3n.zendesk.com/entries/57974910-Role-Permissions-Matrix">Permission Matrix KB</a>. Also, review the <a href="https://t3n.zendesk.com/entries/57600424-Roles-FAQ">Roles FAQ</a>    and <a href="https://t3n.zendesk.com/entries/58057670-Roles-Migration-Guide">migration guide</a> for more details. Below is a brief description of each role:</li>
   <ul>
     <li><strong>Account Administrator</strong> can perform any provisioning and management tasks available in the cloud platform.&nbsp;
       <br /><img src="https://t3n.zendesk.com/attachments/token/Iqi4kDC1ck7t58vqxpyIbyLWZ/?name=release11_12_14_01.png" alt="release11_12_14_01.png" />
@@ -62,7 +62,7 @@
   <li><strong>Global Search index changed.</strong> The Global Search has been further tuned, and we have temporarily removed the following items from the results: group name, group description, VLAN name, public IP addresses, blueprint name, blueprint package
     name.</li>
   <li><strong>Payment details available via v1 API</strong>. The v1 API was updated to return the payment details on the new GetResponsibleBillingAccount&nbsp;call.</li>
-  <li><strong>Create users with new roles via v1 API.</strong> Customers who currently provision users automatically via the v1 API <a href="https://t3n.zendesk.com/entries/22441967-CreateUser" target="_blank">can set values related to the newly released roles</a>.</li>
+  <li><strong>Create users with new roles via v1 API.</strong> Customers who currently provision users automatically via the v1 API <a href="https://t3n.zendesk.com/entries/22441967-CreateUser">can set values related to the newly released roles</a>.</li>
   <li><strong>Get public IP from server details page only.&nbsp;</strong>We've retired the "add public IP" button from the "IP Addresses" page and now have a consolidated place to set and manage public IP addresses. Visit the details page for a given server
     and easily set and change public IP address settings.</li>
 </ul>

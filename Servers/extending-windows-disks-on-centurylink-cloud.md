@@ -8,7 +8,7 @@
 
 <h3><strong>Overview</strong></h3>
 <p>The CenturyLink Cloud platform provides a simple, self-service action to extend existing Windows Disks as storage utilization grows on Virtual Servers. By leveraging the Control Portal automation customers can easily, via a single click, expand
-  disk sizes up to the <a href="https://t3n.zendesk.com/entries/21819996-Cloud-Server-Instance-Size-and-Performance" target="_blank">platform maximums</a>.</p>
+  disk sizes up to the <a href="https://t3n.zendesk.com/entries/21819996-Cloud-Server-Instance-Size-and-Performance">platform maximums</a>.</p>
 <h3>Audience</h3>
 <ul>
   <li>CenturyLink Cloud Users</li>

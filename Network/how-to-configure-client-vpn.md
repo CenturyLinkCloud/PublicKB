@@ -12,9 +12,9 @@
 <p>The initial configuration just requires a certificate to be downloaded and used when connecting to the vpn service but you can also do two-factor authentication where it requires a user name and password which below there is a configuration guide on this.
   To learn more about ways to connect such as persistent vpn connections, direct connections please go <a href="http://help.tier3.com/entries/20518933-network-access-options-for-connecting-to-tier-3-s-platform">here</a>.</p>
 <h3>Current Limitations</h3>
-<p>There are only a few limitations on this service as it is based on the <a href="http://www.openvpn.net" target="_blank">OpenVPN</a> project.</p>
+<p>There are only a few limitations on this service as it is based on the <a href="http://www.openvpn.net">OpenVPN</a> project.</p>
 <ul>
-  <li>Maximum Concurrent Users: 19 (if you need more than that please use <a href="http://www.centurylinkcloud.com/products/support/service-tasks" target="_blank">service tasks</a>)</li>
+  <li>Maximum Concurrent Users: 19 (if you need more than that please use <a href="http://www.centurylinkcloud.com/products/support/service-tasks">service tasks</a>)</li>
   <li>Maximum Connection: 1Gbps&nbsp;</li>
 </ul>
 <h3>Getting Connected</h3>
@@ -23,7 +23,7 @@
 </p>
 <p>Windows XP:</p>
 <ol>
-  <li>Download the OpenVPN client&nbsp;<a href="http://openvpn.net/index.php/open-source/downloads.html" target="_blank">here</a>. (We recommend 2.3.2 for Windows Users)</li>
+  <li>Download the OpenVPN client&nbsp;<a href="http://openvpn.net/index.php/open-source/downloads.html">here</a>. (We recommend 2.3.2 for Windows Users)</li>
   <li>Accept all the defaults during installation.</li>
   <li>After installing the client, download the certificate from the VPN page and extract the .ZIP file into the ‘config’ subdirectory under your client install location (generally C:\Program Files\OpenVPN).</li>
   <li>Start the OpenVPN GUI. This will place an icon in the notification area, right click it and choose connect.</li>
@@ -45,7 +45,7 @@
 <div>Apple OS X:</div>
 <div>
   <ol>
-    <li>Download the OpenVPN client&nbsp;<a href="http://code.google.com/p/tunnelblick/" target="_blank">here</a>&nbsp;(Tunnelblick_3.0b28.dmg).</li>
+    <li>Download the OpenVPN client&nbsp;<a href="http://code.google.com/p/tunnelblick/">here</a>&nbsp;(Tunnelblick_3.0b28.dmg).</li>
     <li>Accept all the defaults during installation.</li>
     <li>After installing the client, download the certificate from the VPN page and extract the .ZIP file.</li>
     <li>Run Tunnelblick - it will give you two options, select "Open Configuration Folder".</li>

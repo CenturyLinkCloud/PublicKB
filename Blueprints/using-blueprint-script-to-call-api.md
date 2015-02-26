@@ -28,13 +28,13 @@
       <pre># Names of value keys to get from JSON responses<br />TOKENKEY="bearerToken"<br />DCKEY="locationId"<br /><br /># Build JSON for authorization request<br />AUTHJSON="{\"username\":\"$USERNAME\",\"password\":\"$PASSWORD\"}"<br /><br /># Store URLs for API requests<br />BASEURL="https://api.tier3.com/v2"<br />AUTHURL="$BASEURL/authentication/login"<br />GETSRVURL="$BASEURL/servers/$ACCOUNT/$SERVERID"</pre>
     </li>
     <li>Additionally, the script will need to parse the JSON string that is returned from the API calls. Here is a very simple example of a function that will find a specific key and return the value in a JSON string. Feel free to use your favorite JSON parsing
-      method that is supported in shell scripts (i.e. python or <a href="https://github.com/micha/jsawk" target="_blank">jsawk</a>). (Though limited, this example sticks with standard Linux commands like <code>sed</code>, <code>awk</code>, and <code>grep</code>,
+      method that is supported in shell scripts (i.e. python or <a href="https://github.com/micha/jsawk">jsawk</a>). (Though limited, this example sticks with standard Linux commands like <code>sed</code>, <code>awk</code>, and <code>grep</code>,
       so no additional libraries are required.)
       <br />
       <pre># Simple helper function to parse JSON response ($1) and return value for given key ($2)<br />jsonGetVal() {<br />    echo $1 | sed 's/[{}]//g' | awk -v k="text" '{n=split($0,a,","); for (i=1; i&lt;=n; i++) print a[i]}' |<br />       sed 's/\"//g' | grep $2 | awk 'BEGIN { FS = ":" } ; {print $2}'<br />}</pre>
     </li>
     <li>Then the script makes three sequential calls to the API using <code>curl</code> and the parameters and variables initialized above along with the JSON parsing. The first call is to authenticate, the second will get the data center ID, and the third
-      one is for getting the data center name. (For more details on using the API in general, refer to the&nbsp;<a href="https://t3n.zendesk.com/categories/20067994-API-v2-0" target="_blank">API v2 Knowledge Base</a>.)
+      one is for getting the data center name. (For more details on using the API in general, refer to the&nbsp;<a href="https://t3n.zendesk.com/categories/20067994-API-v2-0">API v2 Knowledge Base</a>.)
       <br />
       <pre># Call to authentication API to get token<br />AUTHRESP=`curl -s -H "Content-Type: application/json" -d $AUTHJSON $AUTHURL`<br />TOKEN=`jsonGetVal $AUTHRESP $TOKENKEY`<br /><br /># Call to server API to get data center id for given server id<br />SRVRESP=`curl -s -H "Authorization: Bearer $TOKEN" $GETSRVURL`<br />DCID=`jsonGetVal "$SRVRESP" $DCKEY`<br /><br /># Call to DC API to get data center name for given ID<br />GETDCURL="$BASEURL/datacenters/$ACCOUNT/$DCID"<br />DCRESP=`curl -s -H "Authorization: Bearer $TOKEN" $GETDCURL`<br />DCNAME=`jsonGetVal "$DCRESP" name`</pre>
     </li>
@@ -43,7 +43,7 @@
       <pre># Write information to given file name<br />echo -e "$DCID\n$DCNAME" &gt; $FILENAME</pre>
     </li>
   </ol>
-  <li><strong>Create&nbsp;the script package.</strong> (For details on creating script packages in general, refer to the article&nbsp;<a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management" target="_blank">Blueprints Script and Software Package Management</a>.)</li>
+  <li><strong>Create&nbsp;the script package.</strong> (For details on creating script packages in general, refer to the article&nbsp;<a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management">Blueprints Script and Software Package Management</a>.)</li>
   <ol>
     <li>Save the script from Step 1 as <code>install.sh</code>.</li>
     <li>Now, create the package manifest XML with all the information needed to upload the script to the control portal. This file contains the name and description of the package, along with the parameters needed and the command to execute. The five parameters
@@ -55,7 +55,7 @@
     <li><p>Save this file as <code>package.manifest</code>.</li>
     <li><p>Create a ZIP file that contains the two files just created (<code>package.manifest</code> and <code>install.sh</code>) at the top level (not nested in a folder). Save this ZIP file as <code>package.zip</code>.</li>
   </ol>
-  <li><p><strong>Upload the script to the control portal.&nbsp;</strong>(For details on creating script packages in general, refer to the article<a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management" target="_blank">Blueprints Script and Software Package Management</a>.)</li>
+  <li><p><strong>Upload the script to the control portal.&nbsp;</strong>(For details on creating script packages in general, refer to the article<a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management">Blueprints Script and Software Package Management</a>.)</li>
   <ol>
     <li><p>Login to control portal and navigate to the Scripts page.
     <p><img src="https://t3n.zendesk.com/attachments/token/FdNoAQoOZ8F0MMe6bf6hqhrmr/?name=2014-06-05-001-Scripts-Menu.png" alt="2014-06-05-001-Scripts-Menu.png" />

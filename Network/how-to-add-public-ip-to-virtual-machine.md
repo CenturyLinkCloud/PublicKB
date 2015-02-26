@@ -15,9 +15,9 @@ How To: &nbsp;Add Public IP to a Virtual Machine&nbsp;
   <li>Customers are encouraged to leverage the source IP filter unless delivering completely open public internet services to their user community. </li>
   <li>Customers should avoid opening RDP or SSH to their virtual machines to the public internet. As such the following are recommended access methods.</li>
   <ol>
-    <li>Use the free OpenVPN client included in every CenturyLink Cloud Account. Refer to&nbsp;<a href="https://t3n.zendesk.com/entries/20914433-How-To-Configure-Client-VPN" target="_blank">https://t3n.zendesk.com/entries/20914433-How-To-Configure-Client-VPN</a>.
+    <li>Use the free OpenVPN client included in every CenturyLink Cloud Account. Refer to&nbsp;<a href="https://t3n.zendesk.com/entries/20914433-How-To-Configure-Client-VPN">https://t3n.zendesk.com/entries/20914433-How-To-Configure-Client-VPN</a>.
       &nbsp;This is the ideal solution for individuals who are mobile and not in fixed office or data center locations.</li>
-    <li>Build an IPSEC VPN Tunnel from a remote office or data center location. Refer to&nbsp;<a href="https://t3n.zendesk.com/entries/21808029-Creating-a-Self-Service-IPsec-Site-to-Site-VPN-Tunnel" target="_blank">https://t3n.zendesk.com/entries/21808029-Creating-a-Self-Service-IPsec-Site-to-Site-VPN-Tunnel</a>.
+    <li>Build an IPSEC VPN Tunnel from a remote office or data center location. Refer to&nbsp;<a href="https://t3n.zendesk.com/entries/21808029-Creating-a-Self-Service-IPsec-Site-to-Site-VPN-Tunnel">https://t3n.zendesk.com/entries/21808029-Creating-a-Self-Service-IPsec-Site-to-Site-VPN-Tunnel</a>.
       &nbsp;IPSEC VPN tunnels are best for remote access to Cloud Virtual Machines when administrators are in centralized offices or data centers. </li>
     <li>If either of the previous options are not feasible customers should at a minimum use the source IP filter service on the public IP and pair that with local OS firewall policies within the guest VM. </li>
   </ol>
@@ -37,7 +37,7 @@ How To: &nbsp;Add Public IP to a Virtual Machine&nbsp;
   <li>Port Range: &nbsp;A specific range of TCP or UDP ports for an application service</li>
   <li>Restrict Traffic to Source IP: &nbsp;A flag that allows customers to input a source IP filter on the public IP. If this is <em><strong>not</strong> </em>enabled any ports defined will be accessible by anyone on the public internet. </li>
   <li>Source IP (CIDR): &nbsp;The list(s) of source IP or IP Ranges, in CIDR format, a customer wishes to permit access to the defined TCP or UDP ports. All other traffic will be blocked. Please see&nbsp;<a href="http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing"
-    target="_blank">http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing</a>&nbsp;or&nbsp;<a href="http://www.ipaddressguide.com/cidr" target="_blank">http://www.ipaddressguide.com/cidr&nbsp;</a>for more details on proper format of CIDR ranges
+   >http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing</a>&nbsp;or&nbsp;<a href="http://www.ipaddressguide.com/cidr">http://www.ipaddressguide.com/cidr&nbsp;</a>for more details on proper format of CIDR ranges
     in the interface.</li>
 </ul>
 <p><img src="https://t3n.zendesk.com/attachments/token/5Knyvmz71io1cpLJElYHBaXjL/?name=02.png" alt="02.png" />

@@ -14,7 +14,7 @@
   <li>Must have active Software Assurance (SA) coverage.</li>
 </ol>
 
-<p>Microsoft License Mobility through Software Assurance only applies to eligible products listed in the Product Use Rights (PUR) list. The PUR list is updated frequently and can be viewed <a href="http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=1" target="_blank">here</a>.</p>
+<p>Microsoft License Mobility through Software Assurance only applies to eligible products listed in the Product Use Rights (PUR) list. The PUR list is updated frequently and can be viewed <a href="http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=1">here</a>.</p>
 
 <p>Dynamics ERP products, while they are not available through Microsoft Volume Licensing and are not licensed online, have mobility rules that allow for similar use as License Mobility through Software Assurance when deploying in shared environments.</p>
 

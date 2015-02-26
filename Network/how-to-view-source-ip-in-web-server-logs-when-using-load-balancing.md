@@ -21,7 +21,7 @@
   platforms on how to configure Source IP logging.</p>
 <p><a href="http://support.citrix.com/article/CTX119347" target="_self">Microsoft Windows 2003</a>
 </p>
-<p><a href="http://support.citrix.com/article/CTX125526" target="_blank">Microsoft Windows 2008 or Windows 2008 R2 (IIS 7 or 7.5)</a>
+<p><a href="http://support.citrix.com/article/CTX125526">Microsoft Windows 2008 or Windows 2008 R2 (IIS 7 or 7.5)</a>
 </p>
 <p><a href="http://support.citrix.com/article/CTX109350" target="_self">Apache 1.3 or 2.0</a>
 </p>

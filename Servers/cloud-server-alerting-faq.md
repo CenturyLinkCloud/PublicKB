@@ -53,7 +53,7 @@
 
 <p><strong>Q: How do alert webhooks work?</strong>
 </p>
-<p>A: <a href="https://t3n.zendesk.com/entries/22916235-Webhooks-FAQ" target="_blank">Webhooks </a>are a powerful way to build a more event-driven relationship with your cloud environment. Users of webhooks can integrate internal systems with the resources
+<p>A: <a href="https://t3n.zendesk.com/entries/22916235-Webhooks-FAQ">Webhooks </a>are a powerful way to build a more event-driven relationship with your cloud environment. Users of webhooks can integrate internal systems with the resources
   running in the cloud. Alerts are now available as webhooks! Whenever an alert fires, the CenturyLink Cloud platform sends out a JSON-encoded message to a web address specified by the user. These JSON messages include the name of alert, account name,
   server name, and threshold violation details. Users can choose to also receive webhook events for alerts raised in any sub accounts.
   <br /><img src="https://t3n.zendesk.com/attachments/token/jtiu0cckldrrzll/?name=monitoringfaq05.png" alt="monitoringfaq05.png" />

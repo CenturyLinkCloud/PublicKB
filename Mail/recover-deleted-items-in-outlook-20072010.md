@@ -9,7 +9,7 @@
 <p>Outlook has the ability to recover deleted items from a mailbox.</p>
 <p><strong>Outlook 2007</strong>
 </p>
-<p><a href="http://onlineitpro.com/?p=361" target="_blank">http://onlineitpro.com/?p=361</a>
+<p><a href="http://onlineitpro.com/?p=361">http://onlineitpro.com/?p=361</a>
 </p>
 <p>Make sure you have Outlook 2007 open. On the main menu click “Tools” and click the “Recover Deleted Items” option.</p>
 
@@ -18,7 +18,7 @@
 <p>All emails that you have selected will be put back in the original folder that you deleted them from. So if you deleted the item straight from your Inbox, the email will be put back in your Inbox.</p>
 <p><strong>Outlook 2010</strong>
 </p>
-<p><a href="http://office.microsoft.com/en-us/outlook-help/recover-deleted-items-HA010355039.aspx" target="_blank">http://office.microsoft.com/en-us/outlook-help/recover-deleted-items-HA010355039.aspx</a>
+<p><a href="http://office.microsoft.com/en-us/outlook-help/recover-deleted-items-HA010355039.aspx">http://office.microsoft.com/en-us/outlook-help/recover-deleted-items-HA010355039.aspx</a>
 </p>
 <p>
   <a name="BMbacktotop"></a>Microsoft Outlook, when used with a <a href="http://office.microsoft.com/en-us/outlook-help/redir/HA010354969.aspx?CTT=5&amp;origin=HA010355039">Microsoft Exchange Server account</a>, enables you to recover some deleted items, even after the <code>Deleted Items</code>  folder is emptied.</p>

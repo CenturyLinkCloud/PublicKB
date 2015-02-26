@@ -14,4 +14,4 @@
   given Parent or Sub-account level.</p>
 <p><strong>NEED ADDITIONAL ASSISTANCE?</strong>
 </p>
-<p>Refer to this related KB, "<a href="https://t3n.zendesk.com/entries/46750410-Troubleshooting-a-Failed-Managed-Services-Blueprint" target="_blank">Troubleshooting a Failed Managed Services Blueprint</a>."</p>
+<p>Refer to this related KB, "<a href="https://t3n.zendesk.com/entries/46750410-Troubleshooting-a-Failed-Managed-Services-Blueprint">Troubleshooting a Failed Managed Services Blueprint</a>."</p>

@@ -12,7 +12,7 @@
   possible. </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/6LRpNimlnpjc7GumfnWeoLA5x/?name=DR+chart+v9.png" alt="DR_chart_v9.png" />
 </p>
-<p><em><strong>&nbsp;(1)Refer to&nbsp;<a href="http://www.centurylinkcloud.com/service-tasks" target="_blank">CenturyLinkCloud.com</a> for service task overview and costs for DR Testing of VM Instances on premium storage</strong></em>
+<p><em><strong>&nbsp;(1)Refer to&nbsp;<a href="http://www.centurylinkcloud.com/service-tasks">CenturyLinkCloud.com</a> for service task overview and costs for DR Testing of VM Instances on premium storage</strong></em>
 </p>
 <h3><em><strong><br /></strong></em><strong>Exclusions</strong></h3>
 <p>There are a number of components that would not be part of a premium storage DR strategy. Exclusions include Custom Templates, Archived Virtual Machines, IPSEC VPN Tunnels, Alert Policies, Metadata (server settings, activity history, statistics)</p>

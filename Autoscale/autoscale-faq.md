@@ -9,7 +9,7 @@
 <h3><strong>Description</strong></h3>
 <p>CenturyLink Cloud supports both vertical and horizontal autoscale policies that allow for the automatic scaling of resources&nbsp;based on user-defined thresholds. Based on these thresholds, vertical autoscale policies will add and remove CPU allocation
   to and from a given server, whereas horizontal autoscale policies power on and off instances within a (load balanced) group of servers.</p>
-<p>This FAQ addresses commonly asked questions about the service. For a walkthrough of this service, see the KB article called <a href="https://t3n.zendesk.com/entries/22032834-Creating-and-Applying-Autoscale-Policies" target="_blank">Creating and Applying Autoscale Policies</a>.</p>
+<p>This FAQ addresses commonly asked questions about the service. For a walkthrough of this service, see the KB article called <a href="https://t3n.zendesk.com/entries/22032834-Creating-and-Applying-Autoscale-Policies">Creating and Applying Autoscale Policies</a>.</p>
 <h3><strong>General</strong></h3>
 <p><strong>Q: Why would I assign Autoscale policies to a server?</strong>
 </p>

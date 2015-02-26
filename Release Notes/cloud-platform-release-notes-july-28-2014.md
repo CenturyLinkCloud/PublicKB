@@ -34,7 +34,7 @@
     enable managed services with just one click, the ease of a cloud utility, and pay-by-the hour billing. Currently, the available managed services are Microsoft Windows Server (2008 and 2012), Red Hat Enterprise Linux 6.5, Active Directory, Apache HTTP
     Server, Microsoft IIS, MS SQL, MySQL, and Tomcat, with more rolling out in the coming months.&nbsp;The configuration, monitoring, and ongoing administration as well as the provisioning of each of these services is also automated via our Blueprints
     orchestration engine. Managed services are available in Sterling and Santa Clara data centers only at this time, with additional sites online in the coming months. Read more about managed services on our <a href="http://www.centurylinkcloud.com/managed-services"
-    target="_blank">web site</a> and in our <a href="https://t3n.zendesk.com/categories/20074004-Managed-Services" target="_blank">Knowledge Base</a>.
+   >web site</a> and in our <a href="https://t3n.zendesk.com/categories/20074004-Managed-Services">Knowledge Base</a>.
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/5bBJQEkZAT4zzRmRIs8bEfEBv/?name=create-managed-server.png" alt="create-managed-server.png" />
     <br />
@@ -61,6 +61,6 @@
     This will ensure that all monitoring&nbsp;of the server or group of servers is turned off for the maintenance tasks to be performed. Webhooks are still enabled and will be triggered when a server is put into or taken out of maintenance mode.</li>
   <li><strong>60GB Sizing for Windows Servers.&nbsp;</strong>The disk size for servers provisioned with Windows 2008 or 2012 Server templates have been set to a consistent size and have been increased to 60GB. This was due to customers running into
     build failures caused by the drives not having sufficient space to run a number of blueprints.</li>
-  <li><strong>New CoreOS Blueprint.&nbsp;</strong>Blueprints have been created for deploying CoreOS servers. Follow the <a href="https://t3n.zendesk.com/entries/47064274-Building-CoreOS-Server-Cluster-on-the-CenturyLink-Cloud" target="_blank">KB article on building CoreOS servers on CenturyLink Cloud</a>&nbsp;to
+  <li><strong>New CoreOS Blueprint.&nbsp;</strong>Blueprints have been created for deploying CoreOS servers. Follow the <a href="https://t3n.zendesk.com/entries/47064274-Building-CoreOS-Server-Cluster-on-the-CenturyLink-Cloud">KB article on building CoreOS servers on CenturyLink Cloud</a>&nbsp;to
     see how they are used.</li>
 </ul>

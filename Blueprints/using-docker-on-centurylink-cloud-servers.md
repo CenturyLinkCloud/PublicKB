@@ -7,14 +7,14 @@
 }}}
 
 <h3>Description</h3>
-<p><a href="http://www.docker.com" target="_blank">Docker</a> is open-source software for Linux that is used to deploy of applications inside software containers by providing an additional layer of abstraction of operating system–level virtualization. CenturyLink
-  Cloud supports Docker on two traditional Linux distributions as well as on the newer, lightweight <a href="http://www.coreos.com" target="_blank">CoreOS</a> that is used specifically for deploying applications in Docker containers.&nbsp;CenturyLink
-  Cloud also supports <a href="http://www.panamax.io" target="_blank">Panamax</a>, a web-based tool that makes it easy to deploy complex Docker applications through a drag-and-drop interface. (Read about <a href="https://t3n.zendesk.com/forums/20510978-Drafts/entries/%20https://t3n.zendesk.com/entries/47064274-Building-CoreOS-Server-Cluster-on-the-CenturyLink-Cloud"
-  target="_blank">installing CoreOS or Panamax on CenturyLink Cloud</a>.)</p>
+<p><a href="http://www.docker.com">Docker</a> is open-source software for Linux that is used to deploy of applications inside software containers by providing an additional layer of abstraction of operating system–level virtualization. CenturyLink
+  Cloud supports Docker on two traditional Linux distributions as well as on the newer, lightweight <a href="http://www.coreos.com">CoreOS</a> that is used specifically for deploying applications in Docker containers.&nbsp;CenturyLink
+  Cloud also supports <a href="http://www.panamax.io">Panamax</a>, a web-based tool that makes it easy to deploy complex Docker applications through a drag-and-drop interface. (Read about <a href="https://t3n.zendesk.com/forums/20510978-Drafts/entries/%20https://t3n.zendesk.com/entries/47064274-Building-CoreOS-Server-Cluster-on-the-CenturyLink-Cloud"
+ >installing CoreOS or Panamax on CenturyLink Cloud</a>.)</p>
 <h3>Steps</h3>
 <p>The quickest way to get a single Linux server up and running with Docker is to use one of the provided Blueprints, either "Install Docker on CentOS" or "Install Docker on Ubuntu". Clicking on either of these blueprints and then clicking "deploy blueprint"
   will provision a server and install Docker for you. This process is outlined below. Alternatively, you could also provision your own Ubuntu 14 or CentOS 6 server and follow the steps for <a href="https://t3n.zendesk.com/entries/21807618-Using-Group-Tasks-to-Install-Software-and-Run-Scripts-on-Groups"
-  target="_blank">executing a package on a server</a>, selecting&nbsp;the "Install Docker on Ubuntu" or "Install Docker on CentOS" package depending on your server type.</p>
+ >executing a package on a server</a>, selecting&nbsp;the "Install Docker on Ubuntu" or "Install Docker on CentOS" package depending on your server type.</p>
 <p>The steps provided below will work with either Ubuntu 14 or CentOS 6 versions of Linux. The example below shows Ubuntu 14, but the process is the same for CentOS 6. (Just replace the package or Blueprint name with "CentOS" instead of "Ubuntu".)</p>
 <ol>
   <li>In the Control Portal, navigate to the Blueprints Library and search for "docker" to find the two available Blueprints.

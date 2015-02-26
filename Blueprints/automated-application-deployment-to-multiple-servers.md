@@ -47,7 +47,7 @@ elif [ "$ACTION" = "pull" ] ; then
 fi</pre>
     </li>
   </ol>
-  <li><strong>Create&nbsp;the script package.</strong>&nbsp;(For details on creating script packages in general, refer to the article&nbsp;<a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management" target="_blank">Blueprints Script and Software Package Management</a>.)</li>
+  <li><strong>Create&nbsp;the script package.</strong>&nbsp;(For details on creating script packages in general, refer to the article&nbsp;<a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management">Blueprints Script and Software Package Management</a>.)</li>
   <ol>
     <li>Save the script from Step 1 as&nbsp;<code>install.sh</code>.</li>
     <li>Now, create the package manifest XML with all the information needed to upload the script to the control portal. This file contains the name and description of the package, along with the parameters needed and the command to execute. The three parameters
@@ -101,7 +101,7 @@ fi</pre>
     <li>Save this file as&nbsp;<code>package.manifest</code>.</li>
     <li>Create a ZIP file that contains the two files just created (<code>package.manifest</code>&nbsp;and&nbsp;<code>install.sh</code>) at the top level (not nested in a folder). Save this ZIP file as&nbsp;<code>package.zip</code>.</li>
   </ol>
-  <li><strong>Upload the script to the control portal.&nbsp;</strong>(For details on creating script packages in general, refer to the article&nbsp;<a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management" target="_blank">Blueprints Script and Software Package Management</a>.)</li>
+  <li><strong>Upload the script to the control portal.&nbsp;</strong>(For details on creating script packages in general, refer to the article&nbsp;<a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management">Blueprints Script and Software Package Management</a>.)</li>
   <ol>
     <li>Login to control portal and navigate to the Scripts page.
       <br /><img src="https://t3n.zendesk.com/attachments/token/FdNoAQoOZ8F0MMe6bf6hqhrmr/?name=2014-06-05-001-Scripts-Menu.png" alt="2014-06-05-001-Scripts-Menu.png" />

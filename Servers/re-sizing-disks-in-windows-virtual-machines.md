@@ -35,7 +35,7 @@
 <p>If you are attempting to grow an Windows 2003 system partition (generally "C:\"), the partition will not be automatically re-sized to reflect the newly added space. You can verify this by examining the disk under "<strong>Disk Management</strong>"
   (diskmgmt.msc).</p>
 <p>To grow the partition: Download<a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;ved=0CDMQFjAA&amp;url=http%3A%2F%2Fwww.dell.com%2Fsupport%2Fdrivers%2Fus%2Fen%2F19%2Fdriverdetails%3Fdriverid%3DR64398&amp;ei=dt0SUZ3cL8fZqQH9qIHQDw&amp;usg=AFQjCNEcFKhyIUlHmBdX2mjxyl3rA1mvPQ&amp;bvm=bv.41934586,d.aWM"
-  target="_blank">&nbsp;ExtPart.exe from Dell</a>&nbsp;(many other free partition management software packages can be used, if preferred). ExtPart runs on &nbsp; &nbsp; &nbsp;both 32 and 64bit machines.</p>
+ >&nbsp;ExtPart.exe from Dell</a>&nbsp;(many other free partition management software packages can be used, if preferred). ExtPart runs on &nbsp; &nbsp; &nbsp;both 32 and 64bit machines.</p>
 <ol>
   <li>Open up a command prompt and navigate to the extpart folder.</li>
   <li>Type "<strong>extpart.exe</strong>"</li>

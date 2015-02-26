@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>S3CMD is a Linux utility that can be used to interact and manage your <a href="http://www.tier3.com/products/object-storage" target="_blank">CenturyLink Cloud Object Storage</a> buckets. While S3CMD is included in many package managers, it is best to manually configure
+<p>S3CMD is a Linux utility that can be used to interact and manage your <a href="http://www.tier3.com/products/object-storage">CenturyLink Cloud Object Storage</a> buckets. While S3CMD is included in many package managers, it is best to manually configure
   the official repository to ensure that you are using the latest version.</p>
 <p>First, you will need to create a user and object storage bucket from within the CenturyLink Cloud Control Portal:</p>
 <ol>

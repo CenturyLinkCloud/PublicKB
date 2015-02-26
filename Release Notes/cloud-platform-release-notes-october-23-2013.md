@@ -32,7 +32,7 @@
       See the <a href="https://t3n.zendesk.com/categories/20067994-API-v2-0">KB articles about the new Groups API</a> for more details on how to securely interact with each resource.</li>
   </ul>
   <li><strong>Updated Site Navigation. </strong>A Control Portal redesign is underway, with the first phase being a refresh of the site navigation. The individual menu lists are gone and replaced by a single menu that contains all the site actions. The topmost
-    navigation also includes a simplified set of actions. For more about the thinking behind this change, see the blog post <a href="http://www.tier3.com/blog/full/tier-3-setting-the-bar-control-portal-ui-evolution-under-way" target="_blank">CenturyLink Cloud Setting the Bar: Control Portal UI Evolution Under Way</a>.&nbsp;Note
+    navigation also includes a simplified set of actions. For more about the thinking behind this change, see the blog post <a href="http://www.tier3.com/blog/full/tier-3-setting-the-bar-control-portal-ui-evolution-under-way">CenturyLink Cloud Setting the Bar: Control Portal UI Evolution Under Way</a>.&nbsp;Note
     that all users will have a "first run" experience that walks them through the new UI when they next log in.
     <p><img src="https://t3n.zendesk.com/attachments/token/y5o5oiqz2st90qw/?name=ControlNav2.gif" alt="ControlNav2.gif" />
     </p>
@@ -46,5 +46,5 @@
   <li><strong>Load Balancer Supports IPs in Parent Network.&nbsp;</strong>Sub accounts can share the network of their parent accounts. The self-service load balancer now supports creating a pool with account servers that reside on the parent network.</li>
   <li><strong>Bandwidth Graph Updated. </strong>The bandwidth graph on the CenturyLink Cloud Dashboard has been updated with the correct units. Instead of showing bytes transferred for a given day, the graph shows the Mb/s consumed.</li>
 </ul>
-<p>&nbsp;<strong>For a demo of these features, please visit:&nbsp;<a href="http://www.slideshare.net/Tier3Cloud/tier-3-october-2013-release-webcast-recording" target="_blank">http://www.slideshare.net/Tier3Cloud/tier-3-october-2013-release-webcast-recording</a></strong>
+<p>&nbsp;<strong>For a demo of these features, please visit:&nbsp;<a href="http://www.slideshare.net/Tier3Cloud/tier-3-october-2013-release-webcast-recording">http://www.slideshare.net/Tier3Cloud/tier-3-october-2013-release-webcast-recording</a></strong>
 </p>

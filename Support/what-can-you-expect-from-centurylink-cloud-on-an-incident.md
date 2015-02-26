@@ -14,7 +14,7 @@
 </ul>
 <h3>"Ticket updates"</h3>
 <ol>
-  <li>All issues are worked in accordance with our prioritization matrix that can be found here: &nbsp;<a href="https://t3n.zendesk.com/entries/21651149-Ticket-Prioritization-Matrix" target="_blank">https://t3n.zendesk.com/entries/21651149-Ticket-Prioritization-Matrix</a>&nbsp;</li>
+  <li>All issues are worked in accordance with our prioritization matrix that can be found here: &nbsp;<a href="https://t3n.zendesk.com/entries/21651149-Ticket-Prioritization-Matrix">https://t3n.zendesk.com/entries/21651149-Ticket-Prioritization-Matrix</a>&nbsp;</li>
   <li>Please ensure that the ticket is prioritized correctly. In the majority of cases, the tickets are incorrectly classified.</li>
 </ol>
 <h3>"CenturyLink Cloud Expectations"</h3>

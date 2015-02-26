@@ -44,18 +44,18 @@
   <li>Create a horizontal autoscale policy.</li>
   <li>Associate the policy to the group that has the servers you wish to autoscale. Select "none" for the Load Balancer option so it will not be associated with any shared load balancer configuration.</li>
   <li>Take note of the IP address for every server in the horizontal autoscale group, whether it is powered on or off.</li>
-  <li>Login to the dedicated load balancer's web-based management page and follow the instructions for <a href="https://t3n.zendesk.com/entries/27216280-Dedicated-Load-Balancer-Basic-Management" target="_blank">Dedicated Load Balancer Basic Management</a>&nbsp;to
+  <li>Login to the dedicated load balancer's web-based management page and follow the instructions for <a href="https://t3n.zendesk.com/entries/27216280-Dedicated-Load-Balancer-Basic-Management">Dedicated Load Balancer Basic Management</a>&nbsp;to
     add each of the server's IP addresses to the configuration.</li>
   <li>As long as you have "ping" and "tcp" monitors setup as described in the management article, no traffic will be routed to servers that are powered off. When the group scales out and powers on a server, traffic will begin routing to it from the load balancer
     until the server is powered off after a scale in event. (You may wish to set up additional monitors as well to ensure that a specific application or port is available before routing traffic to the server.)</li>
 </ol>
 <p>If you remove or add servers to the group, you will need to make sure to manually remove or add their IP addresses to the dedicated load balancer configuration to keep them in sync with the horizontal autoscale group as Control will not take care of this
   like it would with the shared load balancer.</p>
-<p>You can also read more about&nbsp;<a href="https://t3n.zendesk.com/entries/21954199-Load-Balancing-Comparison-Matrix" target="_blank">Load Balancing Comparison</a> to&nbsp;see the difference between the two load balancer types and find links to resources
+<p>You can also read more about&nbsp;<a href="https://t3n.zendesk.com/entries/21954199-Load-Balancing-Comparison-Matrix">Load Balancing Comparison</a> to&nbsp;see the difference between the two load balancer types and find links to resources
   about configuring them.</p>
 <strong>Schedule-Based Horizontal Autoscale</strong>
 <p>Horizontal autoscale policies are configured to be triggered using utilization thresholds for both memory and CPU. There may be cases, however, where rather than scaling in or out due to usage, users would like to scale in or out on a schedule based on
   knowledge of an application's usage patterns. For example, maybe the servers are hosting a timesheet system that is overwhelmed twice a month by employees entering the hours they've worked. Rather than deploying more resources than are needed for non-peak
   usage or dealing with bimonthly slow performance, users can create&nbsp;scheduled tasks to power on servers at a specific point each day/week/month to increase application capacity, and then use another schedule task to power servers back down when
   the predictable spike is over. This sort of elasticity is exactly what the cloud is good at and it helps you deliver an optimized application that delights users while keeping costs down. You can read more about scheduled tasks in the <a href="https://t3n.zendesk.com/entries/22586501-Creating-a-Scheduled-Task"
-  target="_blank">KB article about creating schedule tasks</a>.</p>
+ >KB article about creating schedule tasks</a>.</p>

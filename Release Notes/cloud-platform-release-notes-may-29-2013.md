@@ -44,4 +44,4 @@
     off/shutdown), add public IP, release public IP, create snapshot, delete snapshot, revert snapshot, archive, restore from archive, add custom field value, delete custom field value, install software, deploy package, run script, set maintenance mode,
     change RAM, change CPU, change storage.</li>
 </ul>
-<p><strong>For a demo of these features, please visit:</strong> <a href="http://www.slideshare.net/Tier3Cloud/new-product-releasemay2013final" target="_blank">http://www.slideshare.net/Tier3Cloud/new-product-releasemay2013final</a>.</p>
+<p><strong>For a demo of these features, please visit:</strong> <a href="http://www.slideshare.net/Tier3Cloud/new-product-releasemay2013final">http://www.slideshare.net/Tier3Cloud/new-product-releasemay2013final</a>.</p>

@@ -7,17 +7,17 @@
 }}}
 
 <strong>Description</strong>
-<p>As described in&nbsp;<a href="https://t3n.zendesk.com/entries/22636576-Using-SAML-for-Single-Sign-On-to-the-Tier-3-Control-Portal" target="_blank">Using SAML for Single-Sign-On</a>, CenturyLink Cloud&nbsp;supports the use of Security Assertion Markup
+<p>As described in&nbsp;<a href="https://t3n.zendesk.com/entries/22636576-Using-SAML-for-Single-Sign-On-to-the-Tier-3-Control-Portal">Using SAML for Single-Sign-On</a>, CenturyLink Cloud&nbsp;supports the use of Security Assertion Markup
   Language (SAML) for exchanging user authentication data as XML between trusted parties. This industry standard protocol empowers customers to use their&nbsp;<strong>own</strong>&nbsp;SAML-supported identity management system for authenticating users
   of the CenturyLink Control Portal. Now, with the addition of the&nbsp;Require SAML for Login&nbsp;option provided by Control Portal, customers can <em>force</em> users to authenticate through their identity providers to enable additional identity management
   features like multi-factor authentication (MFA) and user provisioning. This way, the CenturyLink Cloud platform can provide flexible, standards-based capabilities while allowing&nbsp;an organization to keep&nbsp;the nuts-and-bolts of their IdM configurations
   in their pre-existing systems.</p>
-<p>For more details and how SAML works in general and how to specifically setup an ADFS IdP for use with Control Portal, refer to&nbsp;<a href="https://t3n.zendesk.com/entries/22636576-Using-SAML-for-Single-Sign-On-to-the-Tier-3-Control-Portal" target="_blank">Using SAML for Single-Sign-On</a>.
+<p>For more details and how SAML works in general and how to specifically setup an ADFS IdP for use with Control Portal, refer to&nbsp;<a href="https://t3n.zendesk.com/entries/22636576-Using-SAML-for-Single-Sign-On-to-the-Tier-3-Control-Portal">Using SAML for Single-Sign-On</a>.
   In the example below, however, we will use a separate software-as-a-service vendor as the identity provider in order to also enforce multi-factor authentication. The following steps will walk through the process of configuring the IdP to add users,
   enabling MFA and SAML, and configuring CenturyLink Control Portal's SAML settings to enforce the use of the IdP.</p>
 Steps
-<p>In this example, we will use the cloud-based identity and access management solution&nbsp;<a href="http://www.onelogin.com" target="_blank">OneLogin</a>&nbsp;as our identity provider since it is free to use as a demo, easy to setup, and supports both
-  SAML and MFA.&nbsp;Though we are using OneLogin in our example here, of course the principles will apply for any IdP with support for SAML and MFA. The steps below assume you have already <a href="http://www.onelogin.com/signup" target="_blank">signed up for a OneLogin account</a>  and are able to login to its administrator interface.</p>
+<p>In this example, we will use the cloud-based identity and access management solution&nbsp;<a href="http://www.onelogin.com">OneLogin</a>&nbsp;as our identity provider since it is free to use as a demo, easy to setup, and supports both
+  SAML and MFA.&nbsp;Though we are using OneLogin in our example here, of course the principles will apply for any IdP with support for SAML and MFA. The steps below assume you have already <a href="http://www.onelogin.com/signup">signed up for a OneLogin account</a>  and are able to login to its administrator interface.</p>
 <h3>Configure IdP for SAML</h3>
 <ol>
   <li>In the CenturyLink Cloud Control Portal, from the Account Settings page, navigate to the "Users" tab and the "Authentication" sub-menu.</li>
@@ -69,7 +69,7 @@ Steps
 <p>All that's left is to provision users in the IdP and associate them with users in Control Portal.</p>
 <h3>Provision User(s)</h3>
 <p>There are a few different options for provisioning users to CenturyLink Cloud and no doubt the IdP you choose to use has a number of options as well. OneLogin supports both bulk user import from a flat file as well as an&nbsp;<a href="https://onelogin.zendesk.com/hc/en-us/articles/201175524-Users-API"
-  target="_blank">API</a>&nbsp;for creating users. CenturyLink Cloud's API also provides the capability to programmatically create users. In this example, we will assume we already have a user in the Control Portal that we want to provision to OneLogin.
+ >API</a>&nbsp;for creating users. CenturyLink Cloud's API also provides the capability to programmatically create users. In this example, we will assume we already have a user in the Control Portal that we want to provision to OneLogin.
   You may have the opposite situation where you need to create users in Control that already exist in your IdP. Or you may not have users in either location. No matter how you choose to provision users, as you will see, the important thing is that the
   SAML username in Control matches the SAML username in the IdP.</p>
 <ol>

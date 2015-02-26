@@ -146,7 +146,7 @@
     <br />
   </li>
   <li>Note: You will need to have a load balancer group created and a pool configured in order to move on to the next step. Please follow the instructions for&nbsp;<a href="https://t3n.zendesk.com/entries/22111185-Modifying-a-Self-Service-Load-Balancing-Configuration"
-    target="_blank">creating and configuring a load balancer</a>&nbsp;before moving on to the next step. Ideally, you should configure the load balancer with all the IP addresses (and ports) of the servers in the group you plan on applying the autoscale
+   >creating and configuring a load balancer</a>&nbsp;before moving on to the next step. Ideally, you should configure the load balancer with all the IP addresses (and ports) of the servers in the group you plan on applying the autoscale
     policy to. If you don't do this, the autoscale policy will take care of it for you, but it could take up to five minutes before the load balancer configuration is updated after the autoscale policy is applied to the group. Once you have a load balancer
     group and pool created and ready to use, continue on to the next steps.
     <br />

@@ -14,11 +14,11 @@
 </ul>
 <h3>Reference Material</h3>
 <ul>
-  <li><a href="https://t3n.zendesk.com/entries/23112825-Understanding-VM-Deployment-Options-and-Power-States" target="_blank">Understanding VM Deployment Options &amp; Power States</a>
+  <li><a href="https://t3n.zendesk.com/entries/23112825-Understanding-VM-Deployment-Options-and-Power-States">Understanding VM Deployment Options &amp; Power States</a>
   </li>
-  <li><a href="https://t3n.zendesk.com/entries/22586501-Creating-a-Scheduled-Task" target="_blank">Creating a Scheduled Task</a>
+  <li><a href="https://t3n.zendesk.com/entries/22586501-Creating-a-Scheduled-Task">Creating a Scheduled Task</a>
   </li>
-  <li><a href="https://t3n.zendesk.com/entries/22032834-Creating-and-Applying-Autoscale-Policies" target="_blank">Creating &amp; Applying Autoscale Policies</a>
+  <li><a href="https://t3n.zendesk.com/entries/22032834-Creating-and-Applying-Autoscale-Policies">Creating &amp; Applying Autoscale Policies</a>
   </li>
 </ul>
 <h3>Pausing</h3>

@@ -17,10 +17,10 @@
   <li>Developers</li>
 </ul>
 <h3>Using Explorer for Amazon S3&nbsp;on Windows</h3>
-<p>CenturyLink Cloud Object Storage is Amazon S3 compatible which means that a host of tools are readily available for maintaining buckets and interacting with bucket objects. <a href="http://www.cloudberrylab.com/" target="_blank">Explorer for Amazon S3</a>&nbsp;is
+<p>CenturyLink Cloud Object Storage is Amazon S3 compatible which means that a host of tools are readily available for maintaining buckets and interacting with bucket objects. <a href="http://www.cloudberrylab.com/">Explorer for Amazon S3</a>&nbsp;is
   a freeware product (that also has a paid version) that works with CenturyLink Cloud Object Storage.</p>
 <ul>
-  <li><a href="http://www.cloudberrylab.com/free-amazon-s3-explorer-cloudfront-IAM.aspx" target="_blank">Download a copy of Explorer for S3</a> from their product website.</li>
+  <li><a href="http://www.cloudberrylab.com/free-amazon-s3-explorer-cloudfront-IAM.aspx">Download a copy of Explorer for S3</a> from their product website.</li>
   <li>Install Explorer for Amazon S3 and run the program.
     <p><img src="https://t3n.zendesk.com/attachments/token/hk3EDH82esD9JlHc0XaJ1tCI6/?name=01.png" alt="01.png" />
     </p>

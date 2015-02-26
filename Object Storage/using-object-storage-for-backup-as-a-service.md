@@ -8,17 +8,17 @@
 
 Using Object Storage for Backup as a Service
 <p>CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storage for backup and recovery of file systems or applications. As Object Storage is consumable by any customer in a public fashion, applications or servers can be located
-  within the CenturyLink Cloud or on premise. There are various industry backup tools that support object storage as a repository for data. In this knowledge base we will focus on <a href="http://www.cloudberrylab.com/" target="_blank">Cloudberry Lab</a>.
-  &nbsp;The <a href="http://www.cloudberrylab.com/amazon-s3-enterprise-backup.aspx" target="_blank">Cloudberry Lab Backup Enterprise Edition</a> software provides for backup of Microsoft Windows Server File Systems, Microsoft SQL and Microsoft Exchange
+  within the CenturyLink Cloud or on premise. There are various industry backup tools that support object storage as a repository for data. In this knowledge base we will focus on <a href="http://www.cloudberrylab.com/">Cloudberry Lab</a>.
+  &nbsp;The <a href="http://www.cloudberrylab.com/amazon-s3-enterprise-backup.aspx">Cloudberry Lab Backup Enterprise Edition</a> software provides for backup of Microsoft Windows Server File Systems, Microsoft SQL and Microsoft Exchange
   data.</p>
 <h3>Supporting Information</h3>
-<p>Information and details around the CenturyLink Cloud Object Storage can be found in our <a href="https://t3n.zendesk.com/forums/20789095-Object-Storage" target="_blank"><strong>Knowledge base</strong></a>. It is also important to note that CenturyLink
+<p>Information and details around the CenturyLink Cloud Object Storage can be found in our <a href="https://t3n.zendesk.com/forums/20789095-Object-Storage"><strong>Knowledge base</strong></a>. It is also important to note that CenturyLink
   Cloud provides no support for any 3rd party backup software tools. We are simply providing cloud based storage onto which backup software can store data. </p>
 <h3>Prerequisites</h3>
 <ul>
   <li>A CenturyLink Cloud Account</li>
   <li>Cloudberry Backup software is installed</li>
-  <li>An object storage user and bucket for backups is created in the CenturyLink Cloud Control Portal. <a href="https://t3n.zendesk.com/entries/21648384-Using-Object-Storage-from-the-Control-Portal" target="_blank">See this KB</a>
+  <li>An object storage user and bucket for backups is created in the CenturyLink Cloud Control Portal. <a href="https://t3n.zendesk.com/entries/21648384-Using-Object-Storage-from-the-Control-Portal">See this KB</a>
   </li>
   <li>The source VM or Server has internet access</li>
 </ul>
@@ -27,7 +27,7 @@ Using Object Storage for Backup as a Service
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/cvqc4wrmr9fq7wx/?name=02.png" alt="02.png" />
 </p>
-<p>2. Populate the S3 Compatible Account information with your CenturyLink Cloud Object Storage Access Key, Secret Key, Service Point and bucket name. <strong>&nbsp;<a href="https://t3n.zendesk.com/entries/21648384-Using-Object-Storage-from-the-Control-Portal" target="_blank">Details can be found in this KB</a></strong>.
+<p>2. Populate the S3 Compatible Account information with your CenturyLink Cloud Object Storage Access Key, Secret Key, Service Point and bucket name. <strong>&nbsp;<a href="https://t3n.zendesk.com/entries/21648384-Using-Object-Storage-from-the-Control-Portal">Details can be found in this KB</a></strong>.
   &nbsp;Currently, Object storage is only delivered out of Canada. <strong>The Service Point for Canada is ca.tier3.io</strong>
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/l14ygwoyqczxsrz/?name=03.png" alt="03.png" />

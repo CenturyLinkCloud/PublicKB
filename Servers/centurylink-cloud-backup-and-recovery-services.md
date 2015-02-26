@@ -14,7 +14,7 @@
 </p>
 <ul>
   <li>5 Days of rolling backups, retained within the local data center</li>
-  <li>14 Days of rolling backups, with copies stored locally and at a secondary regional data center. Data Center pairings can be found in the <a href="https://t3n.zendesk.com/entries/22023314-Disaster-Recovery-Comparison-Matrix" target="_blank">DR Matrix</a>.&nbsp;</li>
+  <li>14 Days of rolling backups, with copies stored locally and at a secondary regional data center. Data Center pairings can be found in the <a href="https://t3n.zendesk.com/entries/22023314-Disaster-Recovery-Comparison-Matrix">DR Matrix</a>.&nbsp;</li>
 </ul>
 <p><img src="https://t3n.zendesk.com/attachments/token/WfLAlIfI5SnFrTHRjUgXD6teQ/?name=backup-levels.png" alt="backup-levels.png" />
 </p>
@@ -30,7 +30,7 @@
   more frequent file server backups or customized retention policies can leverage Object Storage.</p>
 <h4>Object Storage&nbsp;</h4>
 <p>For clients who are interested in custom data retention policies (length, frequency) over and above the included platform features customers can implement backup services powered by Object Storage. Using 3rd party backup software customers can store
-  data on the CenturyLink Cloud Geo-redundant Object Storage platform. Refer to <a href="https://t3n.zendesk.com/entries/23372615-Using-Object-Storage-for-Backup-as-a-Service" target="_blank">https://t3n.zendesk.com/entries/23372615-Using-Object-Storage-for-Backup-as-a-Service</a></p>
+  data on the CenturyLink Cloud Geo-redundant Object Storage platform. Refer to <a href="https://t3n.zendesk.com/entries/23372615-Using-Object-Storage-for-Backup-as-a-Service">https://t3n.zendesk.com/entries/23372615-Using-Object-Storage-for-Backup-as-a-Service</a></p>
 <h3>Database Backup &amp; Recovery Services</h3>
 <p>Virtual Machine backups included in the platform do not allow for a crash consistent database backups due to the nature of their design (in flight transactions etc). CenturyLink Cloud clients can implement two methods to achieve crash consistent
   database backups on the platform.  </p>
@@ -40,12 +40,12 @@
     backup products available that can also be leveraged in this fashion. </li>
   <li>For Microsoft SQL environments clients can elect to implement 3rd party backup software backed by Object Storage. These tools typically allow for hot backups using VSS of SQL server transaction logs and databases to a centralized repository. Clients
     can control the frequency of database backups (including logs) and can achieve very aggressive recovery point objectives (RPO) and recovery time objectives (RTO) for their mission critical SQL database services. Refer to&nbsp;<a href="https://t3n.zendesk.com/entries/23372615-Using-Object-Storage-for-Backup-as-a-Service"
-    target="_blank">https://t3n.zendesk.com/entries/23372615-Using-Object-Storage-for-Backup-as-a-Service</a>
+   >https://t3n.zendesk.com/entries/23372615-Using-Object-Storage-for-Backup-as-a-Service</a>
   </li>
 </ul>
 <h3>Microsoft Exchange Backup &amp; Recovery Services</h3>
 <p>To safely backup and restore Microsoft Exchange mailbox data CenturyLink Cloud recommends implementation of an Object Storage solution. Using 3rd party backup clients allows for complete recovery of message/mailbox (Exchange) data. Clients
-  are free to determine their retention periods and frequency for Microsoft application data. Refer to&nbsp;<a href="https://t3n.zendesk.com/entries/23372615-Using-Object-Storage-for-Backup-as-a-Service" target="_blank">https://t3n.zendesk.com/entries/23372615-Using-Object-Storage-for-Backup-as-a-Service</a>
+  are free to determine their retention periods and frequency for Microsoft application data. Refer to&nbsp;<a href="https://t3n.zendesk.com/entries/23372615-Using-Object-Storage-for-Backup-as-a-Service">https://t3n.zendesk.com/entries/23372615-Using-Object-Storage-for-Backup-as-a-Service</a>
 </p>
 <p><em>* The use of Object Storage is not meant to replace application high availability features such as Exchange DAG</em>
 </p>

@@ -31,10 +31,10 @@
 <ul>
   <li><strong>Cloning.&nbsp;</strong>You may wish to keep a server in the staging area that has all the software and configurations you need for all servers in your autoscale group. When you want to add new servers to the autoscale group, just clone this
     server and put the new server in the autoscale group. The benefit here is that you can use this source server in the staging area when performing any changes so you only need to apply updates to a single server, as described in the next section.&nbsp;(You
-    can read more about cloning in the knowledge base article about <a href="https://t3n.zendesk.com/entries/22775929-How-To-Clone-a-Virtual-Machine-OS-Instance" target="_blank">how to clone servers</a>.)</li>
+    can read more about cloning in the knowledge base article about <a href="https://t3n.zendesk.com/entries/22775929-How-To-Clone-a-Virtual-Machine-OS-Instance">how to clone servers</a>.)</li>
   <li><strong>Template.&nbsp;</strong>Instead of keeping a powered-on server in the staging area, you may choose to convert it to a template so that you can create servers using this custom template instead of one of the pre-configured OS ones. In this case,
     you will not have to keep a server in the staging area, but if you want to make changes to the template, you'll have to first convert it back to a server, perform your changes, and then convert it back to a template.&nbsp;(You can read more about
-    templates in the knowledge base article about <a href="https://t3n.zendesk.com/entries/22353625-How-To-Create-Customer-Specific-OS-Templates" target="_blank">how to use templates</a>.)</li>
+    templates in the knowledge base article about <a href="https://t3n.zendesk.com/entries/22353625-How-To-Create-Customer-Specific-OS-Templates">how to use templates</a>.)</li>
 </ul>
 <p><strong>Updating Software/Configuration on Existing Servers in Group</strong></p>
 <p>Depending on the kind of update(s) required, there are two options for updating servers in a horizontal autoscale group:</p>
@@ -53,13 +53,13 @@
     </ul>
   </ol>
   <li><strong>Update servers in place.</strong>&nbsp;This method is generally not preferred unless you have a small number of servers in a group, the updates to be made are relatively minor (small changes, easily repeatable, fast-running), and/or if you absolutely
-    must maintain the private IP addresses for the servers. If you choose this method, be sure to read about using Blueprints scripts for <a href="https://t3n.zendesk.com/entries/51704354-Automated-Application-Deployment-to-Multiple-Servers" target="_blank">Automated Application Deployment to Multiple Servers</a>    as one approach for an easy, repeatable, and automated process.</li>
+    must maintain the private IP addresses for the servers. If you choose this method, be sure to read about using Blueprints scripts for <a href="https://t3n.zendesk.com/entries/51704354-Automated-Application-Deployment-to-Multiple-Servers">Automated Application Deployment to Multiple Servers</a>    as one approach for an easy, repeatable, and automated process.</li>
 </ul>
 <ol>
   <ol>
     <li>Put server in maintenance mode. This step prevents the server from being powered off by a scale in event while you are patching it. (Alternatively, you could also move the server into a staging area group.)&nbsp;</li>
     <li>Remove server IP from load balancer pool. (This will happen automatically within five minutes after completing step 1, but if you can't wait that long, you may remove it manually.)</li>
-    <li>Update/patch the server as required (and restart if needed). (See&nbsp;<a href="https://t3n.zendesk.com/entries/51704354-Automated-Application-Deployment-to-Multiple-Servers" target="_blank">Automated Application Deployment to Multiple Servers</a>&nbsp;for
+    <li>Update/patch the server as required (and restart if needed). (See&nbsp;<a href="https://t3n.zendesk.com/entries/51704354-Automated-Application-Deployment-to-Multiple-Servers">Automated Application Deployment to Multiple Servers</a>&nbsp;for
       one approach to scripting this process.)</li>
     <li>Take server out of maintenance mode to re-enable being powered off/on by autoscale events. (Alternatively, you could move the server back in to the autoscale group from a staging area group if that's the method that was used.)</li>
     <li>Add server IP back to load balancer pool. (This will happen automatically within five minutes after completing step 4, but if you can't wait that long, you may add it manually.)</li>

@@ -86,7 +86,7 @@
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/bownmh9yfwndaau/?name=saml13.png" alt="saml13.png" />
   </li>
-  <li>For users working with Windows Server 2008 or Windows Serve 2008 R2, <a href="http://www.microsoft.com/en-us/download/details.aspx?id=10909" target="_blank">download ADFS 2.0 from the Microsoft website</a>. Windows Server 2012 comes with ADFS pre-installed.
+  <li>For users working with Windows Server 2008 or Windows Serve 2008 R2, <a href="http://www.microsoft.com/en-us/download/details.aspx?id=10909">download ADFS 2.0 from the Microsoft website</a>. Windows Server 2012 comes with ADFS pre-installed.
     Run the ADFS Setup Wizard.
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/tyfztrw28p8vry5/?name=saml14.png" alt="saml14.png" />
