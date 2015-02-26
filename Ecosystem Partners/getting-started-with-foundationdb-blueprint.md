@@ -39,10 +39,10 @@ CenturyLink Cloud Users
 <table>
   <tr>
     <th>
-	  <h1><a style="color: #0f6bb4;" href="https://foundationdb.com/key-value-store"><img style="vertical-align: middle;" src="../images/foundationdb/kv_store_icon.png" width="48" height="45">Key-Value Store</a></h1>
+	  <h1><a style="color: #0f6bb4;" href="https://foundationdb.com/key-value-store"><img style="border:0;vertical-align: middle;with:48;" src="../images/foundationdb/kv_store_icon.png" width="48" height="45">Key-Value Store</a></h1>
 	</th>
     <th>
-	  <h1 style="padding-left: 90px;"><img style="vertical-align: middle;" src="../images/foundationdb/sql_layer_icon.png" width="48" height="44"><a style="color: #6bac4d;" href="https://foundationdb.com/layers/sql">SQL Layer</a></h1>
+	  <h1 style="padding-left: 90px;"><img style="border:0;vertical-align: middle;with:48;" src="../images/foundationdb/sql_layer_icon.png" width="48" height="44"><a style="color: #6bac4d;" href="https://foundationdb.com/layers/sql">SQL Layer</a></h1>
 	</th>
   </tr>
 
@@ -102,8 +102,6 @@ CenturyLink Cloud Users
 
 8. **Validate Foundation DB Core Installation**
 
-  ![](../images/foundationdb/foundation-4.png)
-
   Login to your master server and execute the fdbcli tool.  If your display looks similar to the image at right your database is ready to use.
 
   ```
@@ -152,8 +150,6 @@ CenturyLink Cloud Users
 
 9. **Validate SQL Layer Installation (optional)**
 
-  ![](../images/foundationdb/foundation-5.png)
-
   Login to your SQL server and execute the 'fdbsqlcli' tool.  Execute the command `SELECT VERSION();` and verify a response similar to the image at right.
 
   ```
@@ -185,7 +181,7 @@ CenturyLink Cloud Users
   Servers are built using private IPs only with access with client or IPSEC VPN.  For access from the Internet at large add a public IP to your master server.
 
   <a href="../network/how-to-add-public-ip-to-virtual-machine/">
-    <img src="../images/foundationdb/fw_icon.png">
+    <img style="border:0;width:50pxsrc="../images/foundationdb/fw_icon.png">
   </a>
 
 
