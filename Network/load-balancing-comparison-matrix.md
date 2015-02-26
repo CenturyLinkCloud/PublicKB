@@ -24,6 +24,7 @@
 </p>
 <p><a href="https://t3n.zendesk.com/entries/27216280-Dedicated-Load-Balancer-Basic-Management">Dedicated Load Balancing Management</a>
 </p>
+<p><a href="http://support.citrix.com/article/ctx118716" target="_blank">System Limits for a NetScaler Appliance</a>
 
 
 
