@@ -38,14 +38,28 @@ To make any changes please submit a [pull request](https://help.github.com/artic
 - Specific Markdown
 - Specific Class and Modules
 
-- Images - when adding an image to an article, place the image file in the `images/` directory in the root of this repo. In the article itself, set the image source path like so: 
+### Links
+
+Links to other articles in the PublicKB repo should follow this format:
+
+  ```
+  [Link Text](../category/kb-article-name.md)
+  
+  so like this:
+  [Packages Best Practices](../Blueprints/packages-best-practices.md)
+  ```
+
+### Images
+
+When adding an image to an article, place the image file in the `images/` directory in the root of this repo. In the article itself, set the image source path like so: 
 
   ```
   ../images/[image file]
   ```
 
+### Attachments
 
-- Attachments - when adding an attachment to an article, place the file in the 'attachments/' directory at the root of this repo. In the article itself, add the file information to the front-matter data at the top of the article like so:
+When adding an attachment to an article, place the file in the 'attachments/' directory at the root of this repo. In the article itself, add the file information to the front-matter data at the top of the article like so:
 
   ```
   "attachments": [
