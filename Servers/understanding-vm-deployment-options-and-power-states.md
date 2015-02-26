@@ -62,7 +62,7 @@ Understanding VM Deployment Options and Power States
 </p>
 <ul>
   <li>
-      <p>Costs: In the pause state, a customer pays for storage consumed by the virtual machine and licensing costs. Compute and memory costs are not levied. 
+      <p>Costs: In the pause state, a customer pays for storage consumed by the virtual machine and licensing costs. Compute and memory costs are not levied. Managed Services costs are Levied in a pause state.
   </li>
   <li>Sample Use Case: &nbsp;A customer maintains a development and staging environment for their production workloads. This environment is only used during business hours 8 AM to 8 PM EST. The IT department, in order to save costs, creates a
     scheduled pause and power on event during off hours. This automated task eliminates CPU &amp; RAM fee's between the 8 PM and 8 AM EST time window for these environments.</li>
@@ -85,7 +85,7 @@ Understanding VM Deployment Options and Power States
 </p>
 <ul>
   <li>
-      <p>Costs: In the archive state, a customer pays only for the archival storage consumed by the virtual machine (at a reduced rate). Compute, memory and licensing costs are not levied.</p>
+      <p>Costs: In the archive state, a customer pays only for the archival storage consumed by the virtual machine (at a reduced rate). Compute, memory and licensing costs are not levied.  Managed Servers cannot leverage the Archive Feature.</p>
   </li>
   <li>Sample Use Case: &nbsp;The business department has a reporting server that pulls data on a monthly basis from a 3rd party and generates reports for business analysis. This virtual machine is only required for 2 days per month and otherwise is
     unused. To save costs, the IT department schedules the server to be placed in archive and brought out of archived for operation during just these 2 days of the month. </li>
