@@ -19,6 +19,7 @@ However, some OVFs may still require significant “prep” work, depending on t
 * All disks should be SCSI (not IDE)
 * Must have a single NIC
 * Only a single image should be present; multiple images are not supported
+* The OVF file name must not include a "."
 * Ping should not be blocked on the firewall
 * The VMware (vmx) version must be 8 or lower
 * The latest version of VMware tools must be installed (you will get the error message that reads "the guest operations agent is out of date" if your version is not correct)
