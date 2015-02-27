@@ -7,6 +7,7 @@
 }}}
 
 <p>Service Engineering is available in 20, 40, 60, 80, 160 and multiples of 160-hour blocks per month. Customers interested in “Enterprise” support must purchase at least 160 hours per month of Service Engineering.</p>
+<p>Customers can purchase 20, 40, 60 and 80 hours of time on a month-to-month basis.  A one-year commitment is required for 160 hours (or greater) of monthly service time.</p>
 <p>In addition, the graduated Standard Professional or Enterprise support uplift fees apply. Service Engineering is not available to customers who choose the Developer level of support. Service Engineering hours must be used on a monthly basis and
   unused time does not rollover to the following month.</p>
 <p>In the event a customer requires hours in addition to the block of hours purchased, an hourly Service Engineering fee will be applied for hours used beyond the monthly block.  Customers who purchase Service Engineering in less than 160 hour blocks can
