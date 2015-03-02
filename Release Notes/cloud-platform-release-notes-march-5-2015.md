@@ -2,7 +2,7 @@
   "title": "Cloud Platform - Release Notes: March 5, 2015",
   "date": "3-5-2015",
   "author": "Jared Ruckle",
-  "attachments": []
+  "attachments": [],
   "contentIsHTML": false
 }}}
 
