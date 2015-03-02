@@ -14,7 +14,7 @@
 
 ###Minor Enhancements (5)</strong>
 
-* **New Domains.** The default CenturyLink Cloud domain as been updated to https://console.ctl.io.  The URL for SAML users has also been updated to https://[accountalias].cloudportal.io (where account alias is your four-letter account identifier). The legacy domains will continue to operate for 90 days.
+* **New Domains.** The default CenturyLink Cloud domain as been updated to https://control.ctl.io.  The URL for SAML users has also been updated to https://[accountalias].cloudportal.io (where account alias is your four-letter account identifier). The legacy domains will continue to operate for 90 days.
 
 * **Subdomains featuring Account Alias.** Along with the new domains listed above, custom subdomains based on account alias are now available, in the form of https://[accountalias].cloudportal.io. Use the Site Branding capabilities (under the Account tab) to update logo that appears on the bottom of the page. This furthers the "white label" capabilities of the platform.
 
