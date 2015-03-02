@@ -2,6 +2,7 @@
   "title": "Cloud Platform - Release Notes: March 5, 2015",
   "date": "3-5-2015",
   "author": "Jared Ruckle",
+  "contentIsHTML": false,
   "attachments": []
 }}}
 
@@ -22,9 +23,9 @@
 <ul>
 <li><strong>New Domains.</strong> The default CenturyLink Cloud domain as been updated to https://console.ctl.io.  The URL for SAML users has also been updated to https://[accountalias].cloudportal.io (where account alias is your four-letter account identifier). The legacy domains will continue to operate for 90 days.</li>
 <li><strong>Subdomains featuring Account Alias.</strong> Along with the new domains listed above, custom subdomains based on account alias are now available, in the form of https://[accountalias].cloudportal.io. Use the Site Branding capabilities (under the Account tab) to update logo that appears on the bottom of the page. This furthers the "white label" capabilities of the platform.</li>
-<li><strong>Support for Custom Price Lists & Displays.</strong> Administrators who want to show a custom price for services in the Control Portal can now do so. Contact CenturyLink Cloud to learn more. NOTE: Customized prices must be higher than <a href="../pricing.html">CenturyLink Cloud list pricing</a>, to avoid billing confusion.</li>
+<li><strong>Support for Custom Price Lists & Displays.</strong> Administrators who want to show a custom price for services in the Control Portal can now do so. Contact CenturyLink Cloud to learn more.</li>
 <li><strong>Cloud Network Services in DE1.</strong> CenturyLink Cloud deployments in DE1 can now be connected to other environments using Cloud Network Services.  This capability delivers private, secure, and high-speed connectivity between traditional and cloud environments.</li>
-<li><strong>MS SQL Server 2014.</strong> Deploy MS SQL 2014 Web, Standard & Enterprise Editions on CenturyLink Cloud via Blueprints.  These SQL instaces are unmanaged; licensing is handled under CenturyLink's SPLA relationship with Microsoft.
+<li><strong>MS SQL Server 2014.</strong> Deploy MS SQL 2014 Web, Standard & Enterprise Editions on CenturyLink Cloud via Blueprints.  These SQL instances are unmanaged; licensing is handled under CenturyLink's SPLA relationship with Microsoft.
 </li>
 </ul>
 <p></p>
