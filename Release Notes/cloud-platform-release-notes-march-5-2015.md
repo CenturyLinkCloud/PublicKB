@@ -33,7 +33,7 @@
 * **CenturyLinkCloud.com is now multi-language.** Browse http://www.centurylinkcloud.com in multiple languages, including German, Japanese, English (UK), English (Canada), and Canadian French. To change the language, simply navigate to the bottom right of any page on the site.
 
 ![Multi-language Site](../images/multilanguage-website-01.png)
-* **New Knowledge Base.** The CenturyLink Cloud [Knowledge Base](../knowledge-base) has been re-designed to be even easier to use. These enhancements include improved organization, layout, and search capabilities.
+* **New Knowledge Base.** The CenturyLink Cloud [Knowledge Base](http://www.centurylinkcloud.com/knowledge-base) has been re-designed to be even easier to use. These enhancements include improved organization, layout, and search capabilities.
 
 ![Online Knowledge Base](../images/knowledge-base-online-01.png)
 
