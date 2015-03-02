@@ -5,33 +5,71 @@
   "attachments": []
 }}}
 
-<p><strong>New Features (2)</strong>
+<p><strong>New Features (1)</strong>
 </p>
 <div>
   <hr />
 </div>
 <ul>
-<li><strong><strong>Self-service Virtual Machine import.</strong></strong>&nbsp;Customers can now import their existing Windows Server 2008R2, Windows Server 2012 / R2, and Red Hat Enterprise Linux 6 virtual servers into the CenturyLink Cloud. Servers can be uploaded into any cloud data center if they <a href="https://t3n.zendesk.com/entries/60156724-Self-Service-VM-Import-OVF-Requirements">meet a series of prerequisites</a>. The customer can choose the account, group, server type (standard or Hyperscale), storage level, and VLAN for the server.&nbsp;<strong><br /></strong>
-<p><img src="https://t3n.zendesk.com/attachments/token/VbmsTcFXJJXEUBoMw4kgouG7H/?name=release02_03_15_06.png" alt="release02_03_15_06.png" /><br /><br >For a more detailed walkthrough of the import process, <a href="https://t3n.zendesk.com/entries/61959224-Using-Self-Service-VM-Import">please review this KB article</a>.</p>
+<li><strong>Service Catalog.</strong> Selected platform services can now be exposed to chosen subaccounts (as well as child subaccounts). This new capability is ideal for the phased rollout of new features to certain subaccounts. The service catalog currently includes: load balancers, premium backup, and public IP addresses for servers.
+<p>
+![Service Catalog](../images/service-catalog-01.png)
 </li>
-<li><strong>Managed Backup service.&nbsp;</strong>The CenturyLink Data Protect Backup solution is now included in the CenturyLink Cloud <strong>[Available to customers by Feb 13]&nbsp;</strong>. Customers can include the managed backup capabilities on new managed servers, or existing ones. Backup data is stored for two weeks both in the same data center as the virtual machine, and in a remote data center. For new servers, the option is available after selecting the "managed server" option:<br /><img src="https://t3n.zendesk.com/attachments/token/KWAbKUNLv7bDSkw3nz6ZaNyWe/?name=release02_03_15_05.gif" alt="release02_03_15_05.gif" /><br /><br /><br />For existing managed servers, the Managed Backup service can be enabled and disabled via the Server Details view.<br /><br /><img src="https://t3n.zendesk.com/attachments/token/N9lXMwqEyFN1jApitaTiyo6cq/?name=release02_03_15_04.gif" alt="release02_03_15_04.gif" /><br /><br />To learn more about Managed Backup, <a href="https://t3n.zendesk.com/entries/62310380-Managed-Backup-Frequently-Asked-Questions">check out new new FAQ</a>!</li>
 </ul>
 <p></p>
-<p><strong>Minor Enhancements (6)</strong></p>
+<p><strong>Minor Enhancements (5)</strong></p>
 <div><hr /></div>
 <ul>
-<li><strong>Autoscale for Red Hat Enterprise Linux 7.&nbsp;</strong>RHEL servers now support vertical CPU autoscale policies for simple, automated scale up and scale down based on utilization.</li>
-<li><strong>Cost of managed servers included in running Group/Server estimates.</strong>&nbsp;Taking advantage of managed operating systems or managed applications? Associated hourly charges are now included in both the Group overview estimates, and per-server estimates.</li>
-<li><strong>Site to site VPN to single data center endpoint. </strong>Site to site VPN configurations now prevent more than one configuration to the same VPN endpoint in a data center. Please contact the NOC if you'd like to set up a new VPN tunnel to an existing endpoint.</li>
-<li><strong>Private Cloud isolation in Control Portal. </strong>CenturyLink Private Cloud was launched in 2014 and customers are now going live. The Control Portal (and API) will only show a private cloud data center to the relevant customer.</li>
-<li><strong>CenturyLink administrator account removed from all virtual machines</strong>. In the past CenturyLink Cloud has used a local administrator account to perform activities on servers at the request of our customers. Moving forward, we've removed this&nbsp;account from all cloud servers. What this means for customers, is (a) all access to a cloud servers is done through customer-created accounts, and (b) if you forget your password (and do not have the server password synchronized with the Control Portal), the cloud team can no longer log in and reset it for you. Store those passwords carefully!</li>
-<li><strong>Default NIC changed on Windows 2008/2012 templates.&nbsp;</strong>In order to offer 10g connections on all Windows Servers, we've updated the default NIC on all Windows Server 2008 and Windows Server 2012 operating system templates to use the VMware VMXnet3 network adapter.</li>
+<li><strong>New Domains.</strong> The default CenturyLink Cloud domain as been updated to https://console.ctl.io.  The URL for SAML users has also been updated to https://[accountalias].cloudportal.io (where account alias is your four-letter account identifier).</li>
+<li><strong>Subdomains featuring Account Alias.</strong> Along with the new domains listed above, custom subdomains based on account alias are now available, in the form of https://[accountalias].cloudportal.io. Use the Site Branding capabilities (under the Account tab) to update logo that appears on the bottom of the page. This furthers the "white label" capabilities of the platform.</li>
+<li><strong>Support for Custom Price Lists & Displays.</strong> Administrators who want to show a custom price for services in the Control Portal can now do so. Contact CenturyLink Cloud to learn more. NOTE: Customized prices must be higher than <a href="../pricing.html">CenturyLink Cloud list pricing</a>, to avoid billing confusion.</li>
+<li><strong>Cloud Network Services in DE1.</strong> CenturyLink Cloud deployments in DE1 can now be connected to other environments using Cloud Network Services.  This capability delivers private, secure, and high-speed connectivity between traditional and cloud environments.</li>
+<li><strong>MS SQL Server 2014.</strong> Deploy MS SQL 2014 Web, Standard & Enterprise Editions on CenturyLink Cloud via Blueprints.  These SQL instaces are unmanaged; licensing is handled under CenturyLink's SPLA relationship with Microsoft.
+</li>
 </ul>
 <p></p>
-<p><strong>Notifications (3)</strong></p>
+<p><strong>Online Tools (3)</strong></p>
 <div><hr /></div>
 <ul>
-<li><strong>OS template retirement. </strong>CenturyLink Cloud has established an operating system template retirement rhythm in order to offer the most supported, feature-rich servers for you in the cloud. Please <a href="https://t3n.zendesk.com/entries/61762904-Operating-System-Retirement-Notice-Feb-3-2015">read the following notice for details</a>, but the first templates are <strong>scheduled for retirement in 120 days</strong>: Windows Server 2003, CentOS 5 &amp; 6 <strong>32 bit,&nbsp;</strong>Ubuntu 10, and Windows Server 2008&nbsp;<strong>32-bit</strong>. What does "retirement" mean? <a href="https://t3n.zendesk.com/entries/62177360-Operating-System-Template-Retirement-Policy">Check out this KB article for more details</a>.</li>
-<li><strong>API v1 changes to Group ID value. </strong>The "GroupID" value used by the v1 API (see <a href="https://t3n.zendesk.com/entries/20979826-Get-Groups">GetGroups</a>, for example) is changing. A new field, called GroupUUID, is being added to the API payload (in THIS release), and it represents a globally unique identify for a group. <strong>For 90 days</strong>, existing groups will get back both the original Group ID and the new UUID. After 90 days, new groups will *only* have a UUID assigned and API requests that accept a Group ID will only accept the UUID value.</li>
-<li><strong>API v2 changes to Group ID value<span class="copyonly"></span></strong><span>. The group ID value is changing from an integer to a long string. In the next software release, the legacy group ID is no longer available in the v2 endpoints, and the group id field returns the new value only.</span></li>
+<li><strong>Cloud Cost Estimator now open source.</strong> Understand and model cloud costs in more depth by viewing and modifying the code behind the <a href="/estimator">CenturyLink Cloud Cost Estimator</a>. Details are available in this <a href="/blog/post/cloud-services-estimator-now-open-source">blog post</a>, and the Github repo can be found <a href="https://github.com/CenturyLinkCloud/PriceEstimator">here</a>.
+</li>
+<li><strong>Map of CenturyLink data centers and services.</strong> View CenturyLink's portfolio of capabilities by data center using an <a href="/data-centersonline">interactive map</a>.  The tool supports multiple layers of filtering, as well as standard online map controls.
+<p>
+![Online Map of Services & Locations](../images/datacenter-capabilities-map-01.png)
+</li>
+
+</li>
+<li><strong>CenturyLinkCloud.com is now multi-language.</strong> Browse http://www.centurylinkcloud.com in multiple languages, including German, Japanese, English (UK), English (Canada), and Canadian French. Change the language, simply navigate to the bottom right of any page on the site.
+<p>
+![Multi-language Site](../images/multilanguage-website-01.png)
+</li>
+<li><strong>New Knowledge Base.</strong> The CenturyLink Cloud <a href="/knowledge-base">Knowledge Base</a> has been re-designed to be even easier to use. These enhancements include improved organization, layout, and search capabilities.
+<p>
+![Online Knowledge Base](../images/knowledge-base-online-01.png)
+</li>
+</ul>
+<p><strong>Documentation (1)</strong></p>
+<div><hr /></div>
+<ul>
+<li><strong>Expanded API documentation.</strong> New knowledge base articles for CenturyLink Cloud's V2 have been added <a href="/api-docs/v2/">here</a>.  New actions covered include <a href="/api-docs/v2#servers-set-server-disks">Set Server Disks</a>, <a href="/api-docs/v2#servers-set-server-cpumemory">Set Server CPU/Memory</a>, and <a href="/api-docs/v2#servers-set-server-credentials">Set Server Credentials</a>, among others.
+</li>
+</ul>
+<p></p>
+<p><strong>Ecosystem - New Blueprints (4)</strong></p>
+<div><hr/></div>
+<ul>
+<li><strong>FoundationDB</strong> – Next generation database engine that combines the advantages of modern NoSQL databases with the power and reliability of ACID transactions.<br>
+http://www.centurylinkcloud.com/knowledge-base/ecosystem-partners/getting-started-with-foundationdb-blueprint/</li>
+
+<li><strong>Dynatrace</strong> – Application Performance Monitoring (APM) software for today's most challenging web, cloud, mobile, enterprise and Big Data applications worldwide.<br>
+http://www.centurylinkcloud.com/knowledge-base/ecosystem-partners/getting-started-with-dynatrace-blueprints/</li>
+
+<li><strong>Datastax</strong></li> - Enterprise–grade Cassandra solution, enabling customer big data analytics workloads.<br>
+http://www.centurylinkcloud.com/knowledge-base/ecosystem-partners/getting-started-with-datastax-blueprint/</li>
+
+<li><strong>Acumatica</strong></li> - Cloud–based accounting and ERP software for the small to midsize business looking to streamline management processes and unlock business potential.<br>
+http://www.centurylinkcloud.com/knowledge-base/ecosystem-partners/getting-started-with-acumatica-erp-blueprint/</li>
+
+<li><strong>Centerity</strong></li> – Enhanced monitoring solution providing server metrics and a complete business intelligence layer across  server assets in the CenturyLink Cloud.<br>
+http://www.centurylinkcloud.com/knowledge-base/ecosystem-partners/getting-started-with-centerity-blueprints/</li>
 </ul>
