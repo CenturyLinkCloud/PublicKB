@@ -20,7 +20,7 @@
 <p><strong>Minor Enhancements (5)</strong></p>
 <div><hr /></div>
 <ul>
-<li><strong>New Domains.</strong> The default CenturyLink Cloud domain as been updated to https://console.ctl.io.  The URL for SAML users has also been updated to https://[accountalias].cloudportal.io (where account alias is your four-letter account identifier).</li>
+<li><strong>New Domains.</strong> The default CenturyLink Cloud domain as been updated to https://console.ctl.io.  The URL for SAML users has also been updated to https://[accountalias].cloudportal.io (where account alias is your four-letter account identifier). The legacy domains will continue to operate for 90 days.</li>
 <li><strong>Subdomains featuring Account Alias.</strong> Along with the new domains listed above, custom subdomains based on account alias are now available, in the form of https://[accountalias].cloudportal.io. Use the Site Branding capabilities (under the Account tab) to update logo that appears on the bottom of the page. This furthers the "white label" capabilities of the platform.</li>
 <li><strong>Support for Custom Price Lists & Displays.</strong> Administrators who want to show a custom price for services in the Control Portal can now do so. Contact CenturyLink Cloud to learn more. NOTE: Customized prices must be higher than <a href="../pricing.html">CenturyLink Cloud list pricing</a>, to avoid billing confusion.</li>
 <li><strong>Cloud Network Services in DE1.</strong> CenturyLink Cloud deployments in DE1 can now be connected to other environments using Cloud Network Services.  This capability delivers private, secure, and high-speed connectivity between traditional and cloud environments.</li>
@@ -39,7 +39,7 @@
 </li>
 
 </li>
-<li><strong>CenturyLinkCloud.com is now multi-language.</strong> Browse http://www.centurylinkcloud.com in multiple languages, including German, Japanese, English (UK), English (Canada), and Canadian French. Change the language, simply navigate to the bottom right of any page on the site.
+<li><strong>CenturyLinkCloud.com is now multi-language.</strong> Browse http://www.centurylinkcloud.com in multiple languages, including German, Japanese, English (UK), English (Canada), and Canadian French. To change the language, simply navigate to the bottom right of any page on the site.
 <p>
 ![Multi-language Site](../images/multilanguage-website-01.png)
 </li>
