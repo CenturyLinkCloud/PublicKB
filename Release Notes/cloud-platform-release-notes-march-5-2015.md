@@ -41,7 +41,7 @@
 ###Documentation (1)
 * **Expanded API documentation.** New knowledge base articles for CenturyLink Cloud's V2 have been added [here](www.centurylinkcloud.com/api-docs/v2/).  New actions covered include [Set Server Disks](www.centurylinkcloud.com/api-docs/v2#servers-set-server-disks), [Set Server CPU/Memory](www.centurylinkcloud.com/api-docs/v2#ervers-set-server-cpumemory), and [Set Server Credentials](www.centurylinkcloud.com/api-docs/v2#servers-set-server-credentials), among others.
 
-###Ecosystem - New Blueprints (4)
+###Ecosystem - New Blueprints (5)
 
 * **FoundationDB** – Next generation database engine that combines the advantages of modern NoSQL databases with the power and reliability of ACID transactions. [Learn More](www.centurylinkcloud.com/knowledge-base/ecosystem-partners/getting-started-with-foundationdb-blueprint)
 
