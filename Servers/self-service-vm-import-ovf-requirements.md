@@ -37,7 +37,7 @@ However, some OVFs may still require significant “prep” work, depending on t
 * In addition, the import function will enable the following capabilities if they are not available on your OVF image:
 * For Windows: PSEXEC must not be firewalled; PS Remoting is enabled; WinRM is enabled
 * For Red Hat: Ensure the root account’s shell is bash
-* Volume licensing is assumed for Windows OS; the license key is not modified by CenturyLink Cloud
+* We assume that Windows OS OVFs are properly licensed under Volume Licensing; upon successful import, the OVF is then licensed using CenturyLink's SPLA agreement with Microsoft. No changes are made to the license key during import.
 * Bring your own licensing is not supported
 * All OVF files will be stored in the FTP server located in your account's home data center
 * All OVF files will be deleted 5 days after initial import; please import your images soon after completion of the FTP transfer
