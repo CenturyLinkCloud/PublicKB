@@ -87,15 +87,13 @@ Single button deploy of a new cluster including a master host, a standby master 
 
 3. **Set Required parameters.**
 
-  ![](../images/pivotal_greenplum/deploy_cluster_parameters.png)
-
-  * **EULA** - Click to accept the software end user license agreement
-  * **Cluster ID ** - set unique identifier for all hosts in this Greenplum cluster.  This is used to help other hosts find and join into the cluster
-  * **Email Address** - Email address to receive build notification and Greenplum access information
+  TODO
 
 4. **Set Optional Parameters**
 
-  Password/Confirm Password (This is the root password for the server. Keep this in a secure place).  It is also used to identify the `gpadmin` user for console and Web Control Center access.
+  ![](../images/pivotal_greenplum/.png)
+
+  Password/Confirm Password (This is the root password for the server. Keep this in a secure place).
 
   Set DNS to “Manually Specify” and use “8.8.8.8” (or any other public DNS server of your choice).
 
@@ -107,15 +105,15 @@ Single button deploy of a new cluster including a master host, a standby master 
 
 6. **Deploy the Blueprint**
 
-  Once verified, click on the `deploy blueprint` button. You will see the deployment details stating the Blueprint is queued for execution.
+  Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details stating the Blueprint is queued for execution.
 
-  This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within 15 to 20 minutes.
+  This will kick off the blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within 15 to 20 minutes.
 
 7. **Deployment Complete**
 
   Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.
 
-  ![](../images/pivotal_greenplum/deploy_cluster_complete_email.png)
+  *TODO insert screencap*
 
 8. **Web Command Center** (optional)
 
@@ -125,29 +123,10 @@ Single button deploy of a new cluster including a master host, a standby master 
 
 8. **Demo Application** (optional)
 
-  If you elected to install the optional demo application you may access the database from the master server.  Follow the [Pivot Greenplum demo lab](https://github.com/pivotalsoftware/pivotal-samples/tree/master/Labs) to quickly get up to speed on the Greenplum platform.  Authenticate using the `gpadmin` user and your administrative credentials
+  If you elected to install the optional demo application you may access the database from the master server.  Follow the [Pivot Greenplum demo lab](#) to quickly get up to speed on the Greenplum platform.  Authenticate using the `gpadmin` user and your administrative credentials
 
   ```
-  [gpadmin@localhost ~]$ psql default
-  psql (8.2.15)
-  Type "help" for help.
-
-  default=# \dt retail_demo.*
-                          List of relations
-     Schema    |          Name          | Type  |  Owner  |   Storage
-  -------------+------------------------+-------+---------+-------------
-   retail_demo | categories_dim         | table | gpadmin | append only
-   retail_demo | customer_addresses_dim | table | gpadmin | append only
-   retail_demo | customers_dim          | table | gpadmin | append only
-   retail_demo | date_dim               | table | gpadmin | append only
-   retail_demo | email_addresses_dim    | table | gpadmin | append only
-   retail_demo | order_lineitems        | table | gpadmin | append only
-   retail_demo | orders                 | table | gpadmin | append only
-   retail_demo | payment_methods        | table | gpadmin | append only
-   retail_demo | products_dim           | table | gpadmin | append only
-  (9 rows)
-
-  default=#
+  TODO - insert demo app
   ```
 
 12. **Enable public access** (optional)
@@ -158,6 +137,20 @@ Single button deploy of a new cluster including a master host, a standby master 
     <img style="border:0;width:50pxsrc="../images/foundationdb/fw_icon.png">
     Adding a public IP to your virtual machine
   </a>
+
+
+---
+
+
+### Expanding an Existing Cluster
+
+
+#### Steps
+
+
+----
+
+
 
 
 
