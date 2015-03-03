@@ -32,7 +32,16 @@ If your package is part of a Blueprint and the parameters change this will not b
 
 ### Adding Rich (HMTL) Hints to Parameters
 
-Parameter hints can include embedded HTML.  Use to support links or line-breaks to achieve an optimal layout.
+Parameter hints can include embedded HTML.  Use to support links or line-breaks to achieve an optimal layout.  The most common pattern is for embedding href links like show shown below for a EULA.
+
+![](../images/blueprints-best-practices-1.png)
 
 Any <'s and >'s must be escaped to pass through the XML linter.
 
+Note that embedded HTML is not respected in ad-hoc execute package on server screen.
+
+### Parameter visibility
+
+Global parameters are shown towards the top of the wizard before any platform-level parameters (such as server password, group, etc.).  Keeping all of your package parameters with a global scope keeps them in the same location.
+
+Script specific parameters are relegated to the bottom of the page and if not required may be missed.
