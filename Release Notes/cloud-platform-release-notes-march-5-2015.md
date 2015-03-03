@@ -23,7 +23,7 @@
 * **Cloud Network Services in DE1.** CenturyLink Cloud deployments in DE1 can now be connected to other environments using Cloud Network Services.  This capability delivers private, secure, and high-speed connectivity between traditional and cloud environments.
 * **MS SQL Server 2014.** Deploy MS SQL 2014 Web, Standard & Enterprise Editions on CenturyLink Cloud via Blueprints.  These SQL instances are unmanaged; licensing is handled under CenturyLink's SPLA relationship with Microsoft.
 
-###Online Tools (3)
+###Online Tools (4)
 
 * **Cloud Cost Estimator now open source.** Understand and model cloud costs in more depth by viewing and modifying the code behind the [CenturyLink Cloud Cost Estimator](http://www.centurylinkcloud.com/estimator). Details are available in this [blog post](http://www.centurylinkcloud.com/blog/post/cloud-services-estimator-now-open-source), and the Github repo can be found [here](http://www.github.com/CenturyLinkCloud/PriceEstimator).
 * **Map of CenturyLink data centers and services.** View CenturyLink's portfolio of capabilities by data center using an [interactive map](http://www.centurylinkcloud.com/data-centers) online.  The tool supports multiple layers of filtering, as well as standard online map controls.
