@@ -45,82 +45,19 @@ Single button deploy of an arbitrary sized Pivotal Greenplum cluster.
 
 #### Steps
 
-1. 
+1. **Review creating a new Blueprint using referencing the [How to build a blueprint KB]()/blueprints/how-to-build-a-blueprint/) if necessary**
 
-1. **Identify your current cluster installation posture**
+  * (Wizard step 1) Complete as normal
+  * (Wizard step 2) Do not add any servers in this step
 
-  Capture the following information about the cluster you wish to expand:
+2. **(Wizard step 3) Add new cluster Blueprint**
 
-  * Server type - standard cloud server or Hyperscale
-  * Server sizing - small or large (in terms of CPU/RAM)
-  * Mirroring - whether mirroring is enabled on your existing cluster
-  * Cluster ID - the identifier given when deploying your cluster
+  Add a single new cluster to the Blueprint and any number of additional nodes.  Take note that if deploying your cluster in a mirrored configuration then an even number of nodes must be added.
 
-  For even performance your new node should match all existing nodes in terms of type and sizing.
+  ![](../images/pivotal_greenplum/customize_blueprint.png)
 
-2. **Locate the Blueprint in the Blueprint Library**
+3. **Save Blueprint**
 
-  Based on the information captured in (1) above select the appropriate deployment card to continue.  Note that clusters with mirroring enabled must have nodes deployed in pairs.
-
-  [![](../images/pivotal_greenplum/.png)](#)
-  [![](../images/pivotal_greenplum/.png)](#)
-
-  Alternately, starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “Pivotal Greenplum” in the keyword search on the right side of the page.
-
-3. **Click the Deploy Blueprint button.**
-
-4. **Set Required parameters.**
-
-  ![](../images/pivotal_greenplum/deploy_add_node_parameters.png)
-
-  * **EULA** - Click to accept the software end user license agreement
-  * **Cluster ID ** - set unique identifier already used for this Greenplum cluster.  This is used to help other hosts find and join into the cluster
-  * **Email Address** - Email address to receive build notification and Greenplum access information
-
-5. **Set Optional Parameters**
-
-  Password/Confirm Password (This is the root password for the server. Keep this in a secure place).  It is also used to identify the `gpadmin` user for console and Web Control Center access.
-
-  Set DNS to “Manually Specify” and use “8.8.8.8” (or any other public DNS server of your choice).
-
-  Optionally set the server name prefix.
-
-  The default values are fine for every other option.
-
-6. **Review and Confirm the Blueprint**
-
-7. **Deploy the Blueprint**
-
-  Once verified, click on the `deploy blueprint` button. You will see the deployment details stating the Blueprint is queued for execution.
-
-  This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within 15 to 20 minutes.
-
-8. **Deployment Complete**
-
-  Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.
-
-  ![](../images/pivotal_greenplum/deploy_add_node_complete_email.png)
 
 
 ### Frequently Asked Questions
-
-**Restarting cluster expansions**
-
-From the master host execute the following commands to remove all CenturyLink specific items used to maintain state as part of a cluster deployment.  After removing these files another Blueprint deployment can be safely executed.
-
-```
-# rm -rf ~gpadmin/{.expand_in_process.lck,.expand_hostlist,add_node_*}
-```
-
-There may also be Greenplum specific commands that need to be executed to cleanup.  These will be indicated in the error log files.
-
-**Error message "Unable to locate master"**
-
-There are several scenarios where this error message may appear:
-
-  * Your cluster ID does not match the ID used for the initial cluster deployment.  If you're unable to locate this ID you may obtain it manually by finding the `greenplum-master-$CLUSTER_ID` field in the file `/usr/local/bpbroker/etc/bpbroker.json`
-  * The new node and existing cluster are on different networks.  Resolve this by deploying your new nodes on the same network
-  * The `bpbroker` service may not be running on the master host.  Execute the following command on the master host to start this:
-  ```
-  # /sbin/service brbroker restart
-  ```
