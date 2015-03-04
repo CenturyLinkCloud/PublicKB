@@ -36,7 +36,7 @@ http://pivotal.io/big-data/pivotal-greenplum-database
 
 ### Description
 
-Pivotal has integrated their Greenplum technology with the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this FoundationDB solution.
+Pivotal has integrated their Greenplum technology with the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Greenplum solution.
 
 Greenplum incorporates key performance capabilities, flexible data analytics, enterprise grade robustness, seamless integration with analytics stacks and a database management framework focused on reducing total cost of ownership.
 
@@ -121,7 +121,7 @@ Single button deploy of a new cluster including a master host, a standby master 
 
   If you elected to install the optional web command center you may access it via http on port 20800.  Authenticate using the `gpadmin` user and your administrative credentials
 
-  *TODO insert screencap*
+  ![](../images/pivotal_greenplum/web_command_center.png)
 
 8. **Demo Application** (optional)
 
