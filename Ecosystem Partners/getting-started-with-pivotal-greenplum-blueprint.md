@@ -31,7 +31,7 @@ http://pivotal.io/big-data/pivotal-greenplum-database
 
 |Cloud Alias   	|Sales Contact   	|
 |:-	|:-	|
-|GOGO   	|centurylinkcloud-sales@pivotal.com   	|
+|GOGO   	|centurylinkcloud-sales@pivotal.io   	|
 
 
 ### Description
@@ -48,20 +48,9 @@ CenturyLink Cloud Users
 ### Deployment Packages
 
 
-*option a*
-
-|   |   |
-|:- |:- |
-|[![](../images/pivotal_greenplum/test_cluster_blueprint_placeholder.png)](#) <p>[![](../images/pivotal_greenplum/test_cluster_blueprint_placeholder.png)](#)  |<p>[Deploy a New Cluster](#deploying-a-new-cluster)<p>Deploy a minimal cluster sized for testing.<p>When you're ready, deploy a production capable cluster using the same pattern.<p>See [Deploying a new cluster](#deploying-a-new-cluster) to get started.   	|
-|[![](../images/pivotal_greenplum/test_node_blueprint_placeholder.png)](#) <p>[![](../images/pivotal_greenplum/test_node_blueprint_placeholder.png)](#)   |<p>[Expand an Existing Cluster](#expanding-an-existing-cluster)<p>Grow existing clusters to their optimal size from day zero or to accommodate growth over time.<p>We'll cleanly add capacity and leave any application disrupting work to you.<p>See [Expanding an existing cluster](#expanding-an-existing-cluster) to get started.  |
-
-
-*option b*
-
-|[Deploy a New Cluster](#deploying-a-new-cluster)   	|[Expand an Existing Cluster](#expanding-an-existing-cluster)   	|
+|[Deploy a New Cluster](#deploying-a-new-cluster)   	|[Expand an Existing Cluster](/howto-pivotal-greenplum-expand-cluster/)   	|
 |:-	|:-	|
-|[![](../images/pivotal_greenplum/test_cluster_blueprint_placeholder.png)](#) <p>[![](../images/pivotal_greenplum/test_cluster_blueprint_placeholder.png)](#)     	|[![](../images/pivotal_greenplum/test_node_blueprint_placeholder.png)](#) <p>[![](../images/pivotal_greenplum/test_node_blueprint_placeholder.png)](#)  |
-|<p>Deploy a minimal cluster sized for testing.<p>When you're ready, deploy a production capable cluster using the same pattern.<p>See [Deploying a new cluster](#deploying-a-new-cluster) to get started.   	|<p>Grow existing clusters to their optimal size from day zero or to accommodate growth over time.<p>We'll cleanly add capacity and leave any application disrupting work to you.<p>See [Expanding an existing cluster](#expanding-an-existing-cluster) to get started.   	|
+|<p>Deploy a minimal cluster sized for testing.<p>When you're ready, deploy a production capable cluster using the same pattern.<p>See [Deploying a new cluster](#deploying-a-new-cluster) to get started.  If you're looking for a single-button deploy of clusters with more nodes see our guide on [Creating larger cluster Blueprints](/howto-pivotal-greenplum-larger-clusters/)   	|<p>Grow existing clusters to their optimal size from day zero or to accommodate growth over time.<p>We'll cleanly add capacity and leave any application disrupting work to you.<p>See [Expanding an existing cluster](/howto-pivotal-greenplum-expand-cluster/) to get started.   	|
 
 
 
@@ -167,20 +156,22 @@ The costs listed above in the above steps are for the infrastructure only.
 
 After deploying this Blueprint, you may secure entitlements to the technology using the following steps:
 
-Email: centurylinkcloud-sales@pivotal.com
+ * Email: centurylinkcloud-sales@pivotal.com
 
 ### Frequently Asked Questions
 
 **Where do I obtain my license?**
 
-*TODO*
+*More to come soon*
 
 **Who should I contact for support?**
 
 * For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../Support/how-do-i-report-a-support-issue.md).
-* For issues related to deploying the Pivotal Greenplum Blueprints and application operation on CenturyLink Cloud and you have a paid license, please contact centurylinkcloud-sales@pivotal.com or follow your existing Pivotal support process if known.
+* For issues related to deploying the Pivotal Greenplum Blueprints and application operation on CenturyLink Cloud and you have a paid license, please contact centurylinkcloud-sales@pivotal.io or follow your existing Pivotal support process if known.
 
 
 **How do I learn more about the application?**
 
-*TODO insert screenshots and links*
+View Pivotal's [Getting Started](http://gpdb.docs.pivotal.io/gpdb-434.html) guide and other documentation from the Pivotal documentation hub.
+
+![](../images/pivotal_greenplum/getting_started_pdf.png)
