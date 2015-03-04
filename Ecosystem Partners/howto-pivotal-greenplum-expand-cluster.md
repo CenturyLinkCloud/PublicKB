@@ -38,25 +38,6 @@ Greenplum incorporates key performance capabilities, flexible data analytics, en
 
 CenturyLink Cloud Users who have already [deployed a Pivotal Greenplum cluster](/getting-started-with-pivotal-greenplum-blueprint/) and need to add capacity.
 
-### Deployment Packages
-
-
-*option a*
-
-|   |   |
-|:- |:- |
-|[![](../images/pivotal_greenplum/test_cluster_blueprint_placeholder.png)](#) <p>[![](../images/pivotal_greenplum/test_cluster_blueprint_placeholder.png)](#)  |<p>[Deploy a New Cluster](#deploying-a-new-cluster)<p>Deploy a minimal cluster sized for testing.<p>When you're ready, deploy a production capable cluster using the same pattern.<p>See [Deploying a new cluster](#deploying-a-new-cluster) to get started.   	|
-|[![](../images/pivotal_greenplum/test_node_blueprint_placeholder.png)](#) <p>[![](../images/pivotal_greenplum/test_node_blueprint_placeholder.png)](#)   |<p>[Expand an Existing Cluster](#expanding-an-existing-cluster)<p>Grow existing clusters to their optimal size from day zero or to accommodate growth over time.<p>We'll cleanly add capacity and leave any application disrupting work to you.<p>See [Expanding an existing cluster](#expanding-an-existing-cluster) to get started.  |
-
-
-*option b*
-
-|[Deploy a New Cluster](#deploying-a-new-cluster)   	|[Expand an Existing Cluster](#expanding-an-existing-cluster)   	|
-|:-	|:-	|
-|[![](../images/pivotal_greenplum/test_cluster_blueprint_placeholder.png)](#) <p>[![](../images/pivotal_greenplum/test_cluster_blueprint_placeholder.png)](#)     	|[![](../images/pivotal_greenplum/test_node_blueprint_placeholder.png)](#) <p>[![](../images/pivotal_greenplum/test_node_blueprint_placeholder.png)](#)  |
-|<p>Deploy a minimal cluster sized for testing.<p>When you're ready, deploy a production capable cluster using the same pattern.<p>See [Deploying a new cluster](#deploying-a-new-cluster) to get started.   	|<p>Grow existing clusters to their optimal size from day zero or to accommodate growth over time.<p>We'll cleanly add capacity and leave any application disrupting work to you.<p>See [Expanding an existing cluster](#expanding-an-existing-cluster) to get started.   	|
-
-
 
 ### Expanding an Existing Cluster
 
