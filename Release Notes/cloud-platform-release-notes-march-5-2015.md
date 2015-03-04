@@ -53,3 +53,10 @@
 * **Acumatica** - Cloud–based accounting and ERP software for the small to midsize business looking to streamline management processes and unlock business potential. [Learn More](../Ecosystem Partners/getting-started-with-acumatica-erp-blueprint.md)
 
 * **Centerity** – Enhanced monitoring solution providing server metrics and a complete business intelligence layer across  server assets in the CenturyLink Cloud. [Learn More](../Ecosystem Partners/getting-started-with-centerity-blueprints.md)
+
+###Open Source Contributions
+Panamax enhancements from CenturyLink Labs - Selected highlights include: 
+* [Golang-builder](http://www.centurylinklabs.com/small-docker-images-for-go-apps/) - creates a slim image from any Go project, dramatically reducing its file size compared to other methods.
+* [Marathon Adapter 0.1.0  and PMX-Agent-Installer 0.1.3](http://www.centurylinklabs.com/deploy-to-a-mesosphere-cluster-with-the-panamax-marathon-adapter/) – enable deployments of Apache Mesos and Mesosphere DCOS clusters with Panamax.
+* [Panamax API/UI v0.2.12](http://www.centurylinklabs.com/automated-deployment-endpoint-creation-with-panamax/) – Panamax now supports automated cluster deployments on CenturyLink Cloud and AWS via Kubernetes and Dray. Each cluster includes the appropriate orchestrator, as well as the Panamax Agent/Adapter.
+Full release notes from CenturyLink Labs are available [here](https://github.com/CenturyLinkLabs/panamax-ui/wiki/Release-Notes)
