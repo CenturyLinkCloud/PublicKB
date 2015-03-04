@@ -102,7 +102,7 @@ Single button deploy of a new cluster including a master host, a standby master 
 
 7. **Deployment Complete**
 
-  Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.
+  Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.  If you do not receive an email like the one shown below your cluster may have had a deployment error - review the *Blueprint Build Log* to look for error messages.
 
   ![](../images/pivotal_greenplum/deploy_cluster_complete_email.png)
 

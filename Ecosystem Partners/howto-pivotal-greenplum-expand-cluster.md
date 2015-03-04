@@ -115,7 +115,7 @@ Single button deploy of an additional node to an existing cluster.  These are ar
 
 8. **Deployment Complete**
 
-  Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.
+  Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.  If you do not receive an email like the one shown below your cluster may have had a deployment error - review the *Blueprint Build Log* to look for error messages.
 
   ![](../images/pivotal_greenplum/deploy_add_node_complete_email.png)
 
