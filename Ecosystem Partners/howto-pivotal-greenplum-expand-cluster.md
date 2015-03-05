@@ -1,5 +1,5 @@
 {{{
-  "title": "How to Add Nodes and Expand a Pivotal Greenplum Cluster - Blueprint",
+  "title": "How to Add Nodes and Expand an Existing Pivotal Greenplum Cluster - Blueprint",
   "date": "3-2-2015",
   "author": "Keith Resar",
   "attachments": [],
@@ -36,7 +36,7 @@ Greenplum incorporates key performance capabilities, flexible data analytics, en
 
 ### Audience
 
-CenturyLink Cloud Users who have already [deployed a Pivotal Greenplum cluster](/getting-started-with-pivotal-greenplum-blueprint/) and need to add capacity.
+CenturyLink Cloud Users who have already [deployed a Pivotal Greenplum cluster](../getting-started-with-pivotal-greenplum-blueprint/) and need to add capacity.
 
 
 ### Expanding an Existing Cluster
@@ -61,7 +61,7 @@ Single button deploy of an additional node to an existing cluster.  These are ar
 
   Based on the information captured in (1) above select the appropriate Blueprint card to continue.  Note that clusters with mirroring enabled must have nodes deployed in pairs.
 
-  ![](../images/pivotal_greenplum/node_blueprint_tiles.png)
+  <img src="../images/pivotal_greenplum/node_blueprint_tiles.png" style="border:0;">
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “Pivotal Greenplum” in the keyword search on the right side of the page.
 
@@ -69,7 +69,7 @@ Single button deploy of an additional node to an existing cluster.  These are ar
 
 4. **Set Required parameters.**
 
-  ![](../images/pivotal_greenplum/deploy_add_node_parameters.png)
+  <img src="../images/pivotal_greenplum/deploy_add_node_parameters.png" style="border:0;">
 
   * **EULA** - Click to accept the software end user license agreement
   * **Cluster ID ** - set unique identifier already used for this Greenplum cluster.  This is used to help other hosts find and join into the cluster
@@ -77,7 +77,7 @@ Single button deploy of an additional node to an existing cluster.  These are ar
 
 5. **Set Optional Parameters**
 
-  Password/Confirm Password (This is the root password for the server. Keep this in a secure place).  It is also used to identify the `gpadmin` user for console and Web Control Center access.
+  Password/Confirm Password (This is the root password for the server. Keep this in a secure place). 
 
   Set DNS to “Manually Specify” and use “8.8.8.8” (or any other public DNS server of your choice).
 
@@ -97,7 +97,7 @@ Single button deploy of an additional node to an existing cluster.  These are ar
 
   Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.  If you do not receive an email like the one shown below your cluster may have had a deployment error - review the *Blueprint Build Log* to look for error messages.
 
-  ![](../images/pivotal_greenplum/deploy_add_node_complete_email.png)
+  <img src="../images/pivotal_greenplum/deploy_add_node_complete_email.png" style="border:0;width:70%;">
 
 
 ### Frequently Asked Questions

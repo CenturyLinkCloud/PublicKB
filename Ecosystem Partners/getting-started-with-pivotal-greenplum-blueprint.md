@@ -48,9 +48,9 @@ CenturyLink Cloud Users
 ### Deployment Packages
 
 
-|[Deploy a New Cluster](#deploying-a-new-cluster)   	|[Expand an Existing Cluster](/howto-pivotal-greenplum-expand-cluster/)   	|
+|[Deploy a New Cluster](#deploying-a-new-cluster)   	|[Expand an Existing Cluster](../howto-pivotal-greenplum-expand-cluster/)   	|
 |:-	|:-	|
-|<p>Deploy a minimal cluster sized for testing.<p>When you're ready, deploy a production capable cluster using the same pattern.<p>See [Deploying a new cluster](#deploying-a-new-cluster) to get started.  If you're looking for a single-button deploy of clusters with more nodes see our guide on [Creating larger cluster Blueprints](/howto-pivotal-greenplum-larger-clusters/)   	|<p>Grow existing clusters to their optimal size from day zero or to accommodate growth over time.<p>We'll cleanly add capacity and leave any application disrupting work to you.<p>See [Expanding an existing cluster](/howto-pivotal-greenplum-expand-cluster/) to get started.   	|
+|<p>Deploy a minimal cluster sized for testing.<p>When you're ready, deploy a production capable cluster using the same pattern.<p>See [Deploying a new cluster](#deploying-a-new-cluster) to get started.  If you're looking for a single-button deploy of clusters with more nodes see our guide on [Creating larger cluster Blueprints](/howto-pivotal-greenplum-larger-clusters/)   	|<p>Grow existing clusters to their optimal size from day zero or to accommodate growth over time.<p>We'll cleanly add capacity and leave any application disrupting work to you.<p>See [Expanding an existing cluster](../howto-pivotal-greenplum-expand-cluster/) to get started.   	|
 
 
 
@@ -65,7 +65,7 @@ Single button deploy of a new cluster including a master host, a standby master 
 
   Determine whether you will be building a test cluster with small nodes or a production cluster whose nodes that have increased CPU and RAM available.
 
-  [![](../images/pivotal_greenplum/cluster_blueprint_tiles.png)](#)
+  <img src="../images/pivotal_greenplum/cluster_blueprint_tiles.png" style="border:0;">
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “Pivotal Greenplum” in the keyword search on the right side of the page.
 
@@ -73,7 +73,7 @@ Single button deploy of a new cluster including a master host, a standby master 
 
 3. **Set Required parameters.**
 
-  ![](../images/pivotal_greenplum/deploy_cluster_parameters.png)
+  <img src="../images/pivotal_greenplum/deploy_cluster_parameters.png" style="border:0;">
 
   * **EULA** - Click to accept the software end user license agreement
   * **Cluster ID ** - set unique identifier for all hosts in this Greenplum cluster.  This is used to help other hosts find and join into the cluster
@@ -83,7 +83,7 @@ Single button deploy of a new cluster including a master host, a standby master 
 
 4. **Set Optional Parameters**
 
-  Password/Confirm Password (This is the root password for the server. Keep this in a secure place).  It is also used to identify the `gpadmin` user for console and Web Control Center access.
+  Password/Confirm Password (This is the root password for the server. Keep this in a secure place).  It is also used to identify the `gpadmin` user for Web Control Center access.
 
   Set DNS to “Manually Specify” and use “8.8.8.8” (or any other public DNS server of your choice).
 
@@ -103,13 +103,13 @@ Single button deploy of a new cluster including a master host, a standby master 
 
   Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.  If you do not receive an email like the one shown below your cluster may have had a deployment error - review the *Blueprint Build Log* to look for error messages.
 
-  ![](../images/pivotal_greenplum/deploy_cluster_complete_email.png)
+  <img src="../images/pivotal_greenplum/deploy_cluster_complete_email.png" style="border:0;width:70%;">
 
 8. **Web Command Center** (optional)
 
   If you elected to install the optional web command center you may access it via http on port 20800.  Authenticate using the `gpadmin` user and your administrative credentials
 
-  ![](../images/pivotal_greenplum/web_command_center.png)
+  <img src="../images/pivotal_greenplum/web_command_center.png" style="border:0;">
 
 8. **Demo Application** (optional)
 
@@ -143,7 +143,7 @@ Single button deploy of a new cluster including a master host, a standby master 
   Servers are built using private IPs only with access with client or IPSEC VPN.  For access from the Internet at large add a public IP to your master server.
 
   <a href="../network/how-to-add-public-ip-to-virtual-machine/">
-    <img style="border:0;width:50pxsrc="../images/foundationdb/fw_icon.png">
+    <img style="border:0;width:50px;" src="../images/foundationdb/fw_icon.png">
     Adding a public IP to your virtual machine
   </a>
 
