@@ -3,8 +3,6 @@ CenturyLink Cloud Knowledge Base
 
 Welcome to the [CenturyLink Cloud](http://www.centurylinkcloud.com) knowledge base repository. This is the source of information on all of our products and services available today. Please follow the guidelines below to contribute or make changes.
 
-Example Article: https://github.com/CenturyLinkCloud/PublicKB/blob/master/General/overview.md
-
 ##Overview
 
 The repository is organized by category, and each folder represents a category. Within each category folder are markdown (.md) files that represent an individual knowledge base article.
