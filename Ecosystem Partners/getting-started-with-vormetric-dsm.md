@@ -59,14 +59,14 @@ This deployment process for Partner Templates currently requires manual interact
 ![port.jpg](https://t3n.zendesk.com/attachments/token/1Ufw0JjIWW8XfASYLh4x3Irl9/?name=port.jpg)
 
 ### Detailed Steps to Deploy Vormetric DSM
-Follow these step by step instructions to deploy a Vormetric DSM in to your CenturyLink Cloud account:  
+Vormetric DSM deploys in a virtual appliance model, as a CenturyLink Cloud *Partner Template*.  Follow these step by step instructions to deploy a Vormetric DSM in to your CenturyLink Cloud account:  
 1. Open a service task request ticket via email to ServiceTasks@Tier3.com with the following details.  You will need to edit some of the information below.
 
 ----
-TO: ServiceTasks@Tier3.com
-
+>TO: ServiceTasks@Tier3.com
+>
 EMAIL SUBJECT:   Ecosystem Partner Template Import Request
-
+>
 CLC Support Team,
 Please create a ticket to import the Ecosystem Partner Template image  referenced below to my CenturyLink Cloud Account:
 - Import CenturyLink Ecosystem Partner Source Image: Vormetric DSM
@@ -75,14 +75,16 @@ Please create a ticket to import the Ecosystem Partner Template image  reference
 - Server Name to import image as: ##########
 - VLAN in the account to add the Server to: ########
 - Additional Notes or work to be done: None
-
+>
 Please let me know if you have any questions or issues. Kindly send me a reply once the work has been completed and let us know the IP address of the server where this technology has been deployed.
-
-Thank you very much, 
-
+>
+Thank you very much,
+>
 Your_Name_Here
 
 -----
+
+If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@centurylinkcloud.com](mailto:features@centurylinkcloud.com)
 
 ### Pricing
 The costs associated with this deployment is $195/hr for the CenturyLink Cloud Service Tasks.  There are no Vormetric license costs or additional fees bundled in.  Service Task Fees are available here: http://www.centurylinkcloud.com/service-tasks#Pricing
@@ -90,7 +92,7 @@ The costs associated with this deployment is $195/hr for the CenturyLink Cloud S
 ### Frequently Asked Questions
 Frequently Asked Questions:
 - #### Where do I obtain my Vormetric License or entitlements?
-- Existing CenturyLink Enterprise Customers can contact their Account Representative for help obtaining a Vormetric license, or contact Vormetric directly: 
+- Existing CenturyLink Enterprise Customers can contact their Account Representative for help obtaining a Vormetric license, or contact Vormetric directly:
 -   Contact Vormetric Support via telephone: (877) 267-3247
 -   Contact Vormetric via their website: http://www.Vormetric.com
 -   Email Sales via support@vormetric.com
