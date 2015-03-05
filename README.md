@@ -67,15 +67,15 @@ The top of each .md file contains metadata about the knowledge base article itse
     ]
     ```
 
-    `"file_name"` will be the human readable output of the file which will appear on the page
+  `"file_name"` will be the human readable output of the file which will appear on the page
 
-    `"url"` needs to be set exactly like the above example, like so:
+  `"url"` needs to be set exactly like the above example, like so:
 
-      ```
-      ../attachments/[file name]
-      ```
+    ```
+    ../attachments/[file name]
+    ```
 
-    `"type"` is simply the MIME type of the file and is used to check which sort of icon to present on the front end.
+  `"type"` is simply the MIME type of the file and is used to check which sort of icon to present on the front end.
 
 4. Commit your change(s) locally to your branch.
 
