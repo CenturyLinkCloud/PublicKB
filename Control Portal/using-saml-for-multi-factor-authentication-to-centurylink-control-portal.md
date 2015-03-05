@@ -43,7 +43,7 @@ There are a number of other settings that OneLogin supports or that may be suppo
 ###Configure Control Portal SAML Settings
 
 1. While still in the OneLogin administrator interface, click on the "SSO" tab to view SAML configuration information required to plug in to the Control Portal settings. You should see a SAML 2.0 Endpoint and a X.509 Certificate. Both of these values are required to configure SAML in CenturyLink Cloud Control Portal.<br>
-![Login SAML Info](../images/onelogin-SAML-info.png)
+![Login SAML Info](../images/onelogin-saml-info.png)
 2. Back in the Control Portal Authentication settings page, check the "Require SAML for Login" option and the "Apply to all Sub Accounts" options. This will require SAML login only for this account and all sub accounts. Next, enter the SAML 2.0 Endpoint URL provided in the previous step into the "SSO IdP URL (required)" field and copy and paste the certificate value from OneLogin page into the "Signing Certificate Key" field in Control Portal. Optionally, you can configure the "SLO IdP URL" as well. Click "Save" to apply the SAML settings to control.<br>
 ![SAML Settings Filled In](../images/saml-settings-filled-in.png)
 
