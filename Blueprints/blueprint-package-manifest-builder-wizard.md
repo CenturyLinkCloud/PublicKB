@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-Take advantage of our web-based Blueprint Package Manifest Builder Wizard to:
+Take advantage of our web-based [Blueprint Package Manifest Builder Wizard](http://centurylinkcloud.github.io/Ecosystem/BlueprintManifestBuilder/) to:
 
 * Discover the user and system generated data collector widgets
 * Create a functional package.manifest file
@@ -18,7 +18,7 @@ For a more in-depth review of how to manually create a Blueprint Package or to r
 
 The wizard screen is divided into four primary components.  See details on each in the Wizard Usage section of this article.
 
-![](../images/blueprint-package-manifest-wizard-1.png)
+[![](../images/blueprint-package-manifest-wizard-1.png)](http://centurylinkcloud.github.io/Ecosystem/BlueprintManifestBuilder/)
 
 1. Package Foundational Definition.  Define package-level attributes such as names and identifiers
 2. User and System Parameter widgets.  Drag and drop one or more of these into section 3 as you build your package design.
