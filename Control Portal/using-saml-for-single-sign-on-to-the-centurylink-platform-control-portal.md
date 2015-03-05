@@ -3,7 +3,7 @@
   "date": "UPDATED WITH SIGNING CERTIFICATE 3-5-2015",
   "author": "Richard Seroter",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": no
 }}}
 
 ###Description
@@ -11,12 +11,19 @@ CenturyLink Cloud supports the use of Security Assertion Markup Language (SAML) 
 
 SAML has three main parties: the user, the identity provider (IdP), and service provider (SP). The IdP is the repository that holds identity information. The SP is the party that wants to authenticate a particular user who is using an application.
 
-The SAML flow occurs as follows:<br>
+The SAML flow occurs as shown below.
 ![SAML Flow](../images/saml01.png)
+
+Specific steps in this flow are:
+
 1. The enterprise user of the CenturyLink Cloud hits a URL that is dedicated to their account. The user is asked how they would like to log into the system and they choose SAML.
+
 2. The web application contacts the CenturyLink Cloud SAML service to initiate the SAML message exchange.
+
 3. The CenturyLink Cloud SP sends a digitally signed SAML authentication request to the enterprise IdP. This IdP takes the user's Kerberos token and validates them as a user on the enterprise network.
+
 4. The IdP returns a signed (and optionally, encrypted) SAML authentication response message to the CenturyLink Cloud SP. This message includes a Name ID assertion and that value is matched to a User record in the CenturyLink Cloud.
+
 5. The user is logged into the CenturyLink Cloud and operates under the roles and permissions assigned to their CenturyLink Cloud user account.
 
 The steps below walk through the process of building an entire SSO and SAML scenario based on Microsoft Active Directory Federation Services as the IdP proxy. If you already have an identity provider, you can skip to step 3 where trust is established between CenturyLink Cloud and the IdP.
@@ -36,17 +43,17 @@ The steps below walk through the process of building an entire SSO and SAML scen
 * On the "Customize Blueprint" step of the deployment wizard, the user is asked to provide deploy-time build parameters such as the server password, host network, and Active Directory domain name. Note a few key values: first, the **Primary DNS** value *must be equal to the name of the server being created*. Recall that we already added DNS services to the server itself, so THIS is the domain that the new server should use for resolution. The **Domain Name** parameter typically contains the full name of the domain (including a suffix such as ".com") while the Net BIOS Name omits the suffix.
 ![Server Build](../images/saml05.png)
 
-* Complete the deployment process and wait for the new server to be built by the CenturyLink Cloud Blueprint engine.
+* Complete the deployment process and wait for the new server to be built by the CenturyLink Cloud Blueprint engine.<br>
 ![Blueprint Queue](../images/saml06.png)
 
 * Locate the server in the designated group and confirm its DNS value and public IP address.
 ![Confirm Server Details](../images/saml07.png)
 
 **2. Install and configure Active Directory Federation Services.**
-* Open client VPN software and connect to the CenturyLink Cloud network. Once authenticated, create a Remote Desktop session to the target server. In the Server Manager, confirm the installation of DNS, Active Directory, and IIS.
+* Open client VPN software and connect to the CenturyLink Cloud network. Once authenticated, create a Remote Desktop session to the target server. In the Server Manager, confirm the installation of DNS, Active Directory, and IIS.<br>
 ![Server Manager](../images/saml08.png)
 
-* In order to issue certificates easily from this server, install the **Certificate Services** role on the server. Choose the **Certificate Authority** role, select **Enterprise CA**, set this to a **Root CA**, and create a new private key. Finish the wizard.
+* In order to issue certificates easily from this server, install the **Certificate Services** role on the server. Choose the **Certificate Authority** role, select **Enterprise CA**, set this to a **Root CA**, and create a new private key. Finish the wizard.<br>
 ![Certificate Services](../images/saml09.png)
 
 * Open the IIS Manager, click the host name, and locate the **Server Certificates** feature.<br>
@@ -135,7 +142,7 @@ The steps below walk through the process of building an entire SSO and SAML scen
 * If the values do not match, then ADFS will return an exception. In order to test this scenario without registering and owning the corresponding public domain name, navigate to your local machine's host file (C:\Windows\System32\Drivers\etc\hosts) and add an entry that maps the public IP address of the server to the DNS name of the server.<br>
 ![hosts.txt](../images/saml35.png)
 
-* Go to a web browser and plug in <code>https://alias.cloudportal.io</code>. Here you can sign in via CenturyLink Cloud username and password, or choose the **Sign In Using SAML** option. If you choose the latter, then the CenturyLink Cloud SAML service redirects the browser to the URL specified in the account's **SAML SSO URL** setting.
+* Go to a web browser and plug in <code>https://alias.cloudportal.io</code>. Here you can sign in via CenturyLink Cloud username and password, or choose the **Sign In Using SAML** option. If you choose the latter, then the CenturyLink Cloud SAML service redirects the browser to the URL specified in the account's **SAML SSO URL** setting.<br>
 ![Sign In Page](../images/saml36.png)
 
 * Clicking the **Sign In Using SAML** results in the following message being sent to the ADFS (or any IdP) service.
