@@ -6,16 +6,16 @@
   "contentIsHTML": true
 }}}
 
-<p>Update: November 18, 2014 by David Shacochis</p>
 <p>This article can be helpful to differentiate between Templates, Blueprints and Packages - all critical elements of the CenturyLink Cloud orchestration system we collectively call the Blueprint Engine. </p>
 <p><strong>Templates</strong>
 </p>
-<p>A Template is the basic model from which each Server gets created. The platform has a number of <a href="https://t3n.zendesk.com/entries/23104781-Server-Template-Object">standard Templates</a> which are replicated to all Nodes, and in addition customers
-  can <a href="https://t3n.zendesk.com/entries/22353625-How-To-Create-Customer-Specific-OS-Templates">create their own custom templates</a>. </p>
+<p>A Template is the basic model from which each Server gets created. The platform has a number of <a href="https://t3n.zendesk.com/entries/23104781-Server-Template-Object">Global Templates</a> which are replicated to all Nodes, and in addition customers
+  can <a href="https://t3n.zendesk.com/entries/22353625-How-To-Create-Customer-Specific-OS-Templates">create their own Custom Templates</a>. </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/gyCrzsmLVmuCHhbcsibBpihgx/?name=template.png" alt="template.png" />
 </p>
 <p><strong>Image 1 &nbsp;- converting a single server to a template</strong>
 </p>
+In Q1 of 2015, CenturyLink Cloud began supporting a **Partner Template** model which allows Cloud Marketplace Providers to provide  virtual appliances for implementation via service task.
 
 <p><strong>Blueprints</strong>
 </p>
