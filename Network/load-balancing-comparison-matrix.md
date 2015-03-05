@@ -12,7 +12,7 @@
 <h3><img src="https://t3n.zendesk.com/attachments/token/v1eqBILwtFaY6yKzEYcvFsCiH/?name=load+balancing+chart.png" alt="load_balancing_chart.png" /></h3>
 <h3>Additional Details</h3>
 <p>The links below provide additional details on the capabilities and features of the Citrix Netscaler VPX Platform. </p>
-<p><a href="http://help.tier3.com/entries/23688917-Load-Balancing-Dedicated-vs-Shared">Shared vs Dedicated Network Load Balancing Architecture Considerations</a>
+<p><a href="http://www.centurylinkcloud.com/knowledge-base/network/load-balancing-dedicated-vs-shared">Shared vs Dedicated Network Load Balancing Architecture Considerations</a>
 </p>
 <p><a href="http://www.citrix.com/products/netscaler-application-delivery-controller/features/platforms/vpx.html">Netscaler VPX Overview</a>
 </p>
@@ -20,10 +20,11 @@
 </p>
 <p><a href="http://support.citrix.com/proddocs/topic/netscaler-load-balancing-93/ns-lb-customizing-lbalgorithms-wrapper-con.html">Netscaler Load Balancing Algorithms</a>
 </p>
-<p><a href="http://help.tier3.com/entries/22110695-Creating-a-Self-Service-Load-Balancing-Configuration">How To: &nbsp;Configure Shared Load Balancing Services via Self-Service</a>
+<p><a href="http://www.centurylinkcloud.com/knowledge-base/network/creating-a-self-service-load-balancing-configuration">How To: Configure Shared Load Balancing Services via Self-Service</a>
 </p>
-<p><a href="https://t3n.zendesk.com/entries/27216280-Dedicated-Load-Balancer-Basic-Management">Dedicated Load Balancing Management</a>
+<p><a href="http://www.centurylinkcloud.com/knowledge-base/network/dedicated-load-balancer-basic-management">Dedicated Load Balancing Management</a>
 </p>
-
+<p><a href="http://support.citrix.com/article/ctx118716">System Limits for a NetScaler Appliance</a>
+</p>
 
 

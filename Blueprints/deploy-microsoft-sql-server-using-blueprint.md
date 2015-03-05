@@ -1,6 +1,6 @@
 {{{
   "title": "Deploy Microsoft SQL Server using Blueprint",
-  "date": "12-5-2014",
+  "date": "3-4-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": true
@@ -29,6 +29,9 @@ Deploy Microsoft SQL Server using CenturyLink Cloud Blueprint
     <li>SQL Server 2012 Web Edition</li>
     <li>SQL Server 2012 Standard Edition</li>
     <li>SQL Server 2012 Enterprise Edition</li>
+    <li>SQL Server 2014 Web Edition</li>
+    <li>SQL Server 2014 Standard Edition</li>
+    <li>SQL Server 2014 Enterprise Edition</li>
   </ul>
 </ul>
 <h3>Exceptions</h3>

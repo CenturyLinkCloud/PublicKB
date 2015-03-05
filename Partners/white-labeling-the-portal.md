@@ -9,14 +9,14 @@
 ### Purpose
 
 To explain:
-* What it means to ?White Label the Portal.?
+* What it means to "White Label the Portal."
 * Which brand elements and information can be white labeled in the portal.
 * Provide step-by-step instructions for white labeling the portal.
 
 
 ### Benefits
 
-* Allows Partners to white label the CenturyLink Cloud as ?their own.?
+* Allows Partners to white label the CenturyLink Cloud as "their own."
 * Provides competitive point of differentiation to other public cloud offerings.
 * Reduces time and costs associated with developing your own cloud.
 
@@ -159,7 +159,7 @@ To customize the content of your outbound email notifications, do the following:
 When White Labeling the Portal, it may be necessary to change the Customer Support links to reflect all details of an organization's support structure.
 
 1. Go to "Account" > "Settings" and then select "Customer Support"
-2. Customize Customer Support Links. The following support links need to be changed to reflect all details of an organization?s support structure: 
+2. Customize Customer Support Links. The following support links need to be changed to reflect all details of an organization's support structure: 
   * Footer Support Email
   * Footer Support Phone
   * Customer Support Panel
@@ -174,7 +174,7 @@ When White Labeling the Portal, it may be necessary to change the Customer Suppo
 
 ####Customize Legal and Privacy Information and Links
 
-Legal and Privacy Information needs to be updated to reflect the organization?s legal or privacy policies. These links can also be left blank in order to not appear on the site.
+Legal and Privacy Information needs to be updated to reflect the organization's legal or privacy policies. These links can also be left blank in order to not appear on the site.
 
 To change Legal Info and Privacy Policy, do the following:
 1. Go to Account > Settings and select "Customer Support"
