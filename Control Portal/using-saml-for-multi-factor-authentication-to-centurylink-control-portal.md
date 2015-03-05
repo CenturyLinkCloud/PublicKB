@@ -3,7 +3,7 @@
   "date": "UPDATED WITH SIGNING CERTIFICATE 3-5-2015",
   "author": "Bryan Friedman",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 ###Description
