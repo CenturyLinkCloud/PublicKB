@@ -21,7 +21,7 @@
 * **Support for Custom Price Lists & Displays.** Administrators who want to show a custom price for services in the Control Portal can now do so. Contact CenturyLink Cloud to learn more.
 
 * **Cloud Network Services in DE1.** CenturyLink Cloud deployments in DE1 can now be connected to other environments using Cloud Network Services.  This capability delivers private, secure, and high-speed connectivity between traditional and cloud environments.
- 
+
 * **MS SQL Server 2014.** Deploy MS SQL 2014 Web, Standard & Enterprise Editions on CenturyLink Cloud via Blueprints.  These SQL instances are unmanaged; licensing is handled under CenturyLink's SPLA relationship with Microsoft.
 
 ###Online Tools (4)
@@ -40,29 +40,29 @@
 ![Online Knowledge Base](../images/knowledge-base-online-01.png)
 
 ###Documentation (1)
-* **Expanded API documentation.** New knowledge base articles for CenturyLink Cloud's V2 API have been added [here](http://www.centurylinkcloud.com/api-docs/v2/).  New actions covered include [Set Server Disks](http://www.centurylinkcloud.com/api-docs/v2/#servers-set-server-disks), [Set Server CPU/Memory](http://www.centurylinkcloud.com/api-docs/v2/#servers-set-server-cpumemory), and [Set Server Credentials](http://www.centurylinkcloud.com/api-docs/v2/#servers-set-server-credentials), among others.
+* [**Expanded API documentation**](http://www.centurylinkcloud.com/api-docs/v2/) - New knowledge base articles for CenturyLink Cloud's V2 API have been added [here](http://www.centurylinkcloud.com/api-docs/v2/). New actions covered include [Set Server Disks](http://www.centurylinkcloud.com/api-docs/v2/#servers-set-server-disks), [Set Server CPU/Memory](http://www.centurylinkcloud.com/api-docs/v2/#servers-set-server-cpumemory), and [Set Server Credentials](http://www.centurylinkcloud.com/api-docs/v2/#servers-set-server-credentials), among others.
 
 ###Ecosystem - New Blueprints (5)
 
-* **FoundationDB** – Next generation database engine that combines the advantages of modern NoSQL databases with the power and reliability of ACID transactions. [Learn More](../Ecosystem Partners/getting-started-with-foundationdb-blueprint.md)
+* [**FoundationDB**](../Ecosystem Partners/getting-started-with-foundationdb-blueprint.md) – Next generation database engine that combines the advantages of modern NoSQL databases with the power and reliability of ACID transactions.
 
-* **Dynatrace** – Application Performance Monitoring (APM) software for today's most challenging web, cloud, mobile, enterprise and Big Data applications worldwide.
-[Learn More](../Ecosystem Partners/getting-started-with-dynatrace-blueprints.md)
+* [**Dynatrace**](../Ecosystem Partners/getting-started-with-dynatrace-blueprints.md) – Application Performance Monitoring (APM) software for today's most challenging web, cloud, mobile, enterprise and Big Data applications worldwide.
 
-* **Datastax** - Enterprise–grade Cassandra solution, enabling customer big data analytics workloads.
-[Learn More](../Ecosystem Partners/getting-started-with-datastax-blueprint.md)
 
-* **Acumatica** - Cloud–based accounting and ERP software for the small to midsize business looking to streamline management processes and unlock business potential. [Learn More](../Ecosystem Partners/getting-started-with-acumatica-erp-blueprint.md)
+* [**Datastax**](../Ecosystem Partners/getting-started-with-datastax-blueprint.md) - Enterprise–grade Cassandra solution, enabling customer big data analytics workloads.
 
-* **Centerity** – Enhanced monitoring solution providing server metrics and a complete business intelligence layer across  server assets in the CenturyLink Cloud. [Learn More](../Ecosystem Partners/getting-started-with-centerity-blueprints.md)
+
+* [**Acumatica**](../Ecosystem Partners/getting-started-with-acumatica-erp-blueprint.md) - Cloud–based accounting and ERP software for the small to midsize business looking to streamline management processes and unlock business potential.
+
+* [**Centerity**](../Ecosystem Partners/getting-started-with-centerity-blueprints.md) – Enhanced monitoring solution providing server metrics and a complete business intelligence layer across  server assets in the CenturyLink Cloud.
 
 ###Open Source Contributions
-Panamax enhancements from CenturyLink Labs - Selected highlights include: 
+Panamax enhancements from CenturyLink Labs - Selected highlights include:
 
-* [Golang-builder](http://www.centurylinklabs.com/small-docker-images-for-go-apps/) - creates a slim image from any Go project, dramatically reducing its file size compared to other methods.
+* [**Golang-builder**](http://www.centurylinklabs.com/small-docker-images-for-go-apps/) - creates a slim image from any Go project, dramatically reducing its file size compared to other methods.
 
-* [Marathon Adapter 0.1.0  and PMX-Agent-Installer 0.1.3](http://www.centurylinklabs.com/deploy-to-a-mesosphere-cluster-with-the-panamax-marathon-adapter/) – enable deployments of Apache Mesos and Mesosphere DCOS clusters with Panamax.
+* [**Marathon Adapter 0.1.0  and PMX-Agent-Installer 0.1.3**](http://www.centurylinklabs.com/deploy-to-a-mesosphere-cluster-with-the-panamax-marathon-adapter/) – enable deployments of Apache Mesos and Mesosphere DCOS clusters with Panamax.
 
-* [Panamax API/UI v0.2.12](http://www.centurylinklabs.com/automated-deployment-endpoint-creation-with-panamax/) – Panamax now supports automated cluster deployments on CenturyLink Cloud and AWS via Kubernetes and Dray. Each cluster includes the appropriate orchestrator, as well as the Panamax Agent/Adapter.
+* [**Panamax API/UI v0.2.12**](http://www.centurylinklabs.com/automated-deployment-endpoint-creation-with-panamax/) – Panamax now supports automated cluster deployments on CenturyLink Cloud and AWS via Kubernetes and Dray. Each cluster includes the appropriate orchestrator, as well as the Panamax Agent/Adapter.
 
 Full release notes from CenturyLink Labs are available [here](https://github.com/CenturyLinkLabs/panamax-ui/wiki/Release-Notes)
