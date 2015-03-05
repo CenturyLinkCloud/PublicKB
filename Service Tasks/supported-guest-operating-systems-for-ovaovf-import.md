@@ -21,13 +21,7 @@ Supported Guest Operating Systems for OVA/OVF Import
 <h3>Supported Operating Systems List</h3>
 <ul>
   <li>
-    <p>CentOS 5 | 32-bit</p>
-  </li>
-  <li>
     <p>CentOS 5 | 64-bit</p>
-  </li>
-  <li>
-    <p>CentOS 6 | 32-bit</p>
   </li>
   <li>
     <p>CentOS 6 | 64-bit</p>
@@ -46,27 +40,9 @@ Supported Guest Operating Systems for OVA/OVF Import
   </li>
   <li>RedHat Enterprise Linux 7 | 64-bit</li>
   <li>
-    <p>Ubuntu 10 LTS | 32-bit</p>
-  </li>
-  <li>
-    <p>Ubuntu 10 LTS | 64-bit</p>
-  </li>
-  <li>
     <p>Ubuntu 12 LTS | 64-bit</p>
   </li>
   <li>Ubuntu 14 LTS | 64-bit</li>
-  <li>
-    <p>Windows 2003 Enterprise | 32-bit</p>
-  </li>
-  <li>
-    <p>Windows 2003 Enterprise | 64-bit</p>
-  </li>
-  <li>
-    <p>Windows 2003 Standard | 32-bit</p>
-  </li>
-  <li>
-    <p>Windows 2003 Standard | 64-bit</p>
-  </li>
   <li>
     <p>Windows 2008 R2 Enterprise | 64-bit</p>
   </li>
