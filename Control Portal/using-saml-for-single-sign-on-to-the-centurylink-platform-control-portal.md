@@ -184,73 +184,39 @@ The steps below walk through the process of building an entire SSO and SAML scen
 
 ```
 <samlp:AuthnRequest
-
 	ID="--ID--"
-
 	Version="2.0"
-
 	IssueInstant="2012-12-06T21:30:41.385Z"
-
 	Destination="https://tier3samldemo.com/adfs/ls/"
-
 	ForceAuthn="false"
-
 	IsPassive="false"
-
 	ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-
 	AssertionConsumerServiceURL="https://ALIAS.cloudportal.io/SAMLAuth/Post"
-
 	xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol">
-
 	<saml:Issuer xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">https://ALIAS.cloudportal.io/SAMLAuth</saml:Issuer>
-
 	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
-
 	  <SignedInfo>
-
 		<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
-
 		<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
-
 		  <Reference URI="URI">
-
 		   <Transforms>
-
 		      <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
-
 		      <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
-
 			<InclusiveNamespaces PrefixList="#default samlp saml ds xs xsi" xmlns="http://www.w3.org/2001/10/xml-exc-14n#"/>
-
 		      </Transform>
-
 		    </Transforms>
-
 		    <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-
 		    <DigestValue>VALUE</DigestValue>
-
 		  </Reference>
-
 	  </SignedInfo>
-
   	<SignatureValue>VALUE</SignatureValue>
-
 	<KeyInfo>
-
 	   <X509Data>
-
 	     <X509Certificate>CERTIFICATE</X509Certificate>
-
 	   </X509Data>
-
         </KeyInfo>
-
         </Signature>
-
 	<samlp:NameIDPolicy AllowCreate="true" />
-
 </samlp:AuthnRequest>
 ```
 
