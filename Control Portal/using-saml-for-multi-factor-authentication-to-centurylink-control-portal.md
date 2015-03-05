@@ -28,13 +28,13 @@ Though we are using OneLogin in our example here, of course the principles will 
 2. Click the "SAML 2.0 Authentication" checkbox to show all the available settings. For now, just take note of the "Relying Party Assertion Consumer Service URL" listed there. It should be in the format of <code>https://{account-alias}.cloudportal.io/SAMLAuth/Post</code>. (Highlighted in the screenshot below.)
 ![SAML Settings Blank](../images/saml-settings-blank.png)
 3. Now login to the OneLogin end-user dashboard.
-4. From the "Apps" menu, select "Add Apps".</br>
+4. From the "Apps" menu, select "Add Apps".
 ![OneLogin Add App](../images/onelogin-add-app.png)
-5. In the search field, type "onelogin saml" and select the first app that shows up. It should be called "OneLogin SAML Test (IdP)".<br>
+5. In the search field, type "onelogin saml" and select the first app that shows up. It should be called "OneLogin SAML Test (IdP)".
 ![OneLogin SAML Test](../images/onelogin-saml-test.png)
 6. Rename this app to "CenturyLink Cloud Control Portal" and click the "Save" button.
 ![OneLogin SAML Test](../images/onelogin-app-rename.png)
-7. Now, on the "Configuration" tab, enter the URL you copied from Step 2 in the section above into the "SAML Consumer URL" field. Optionally, you may provide other values in the additional fields if you know them. (You will find the Single Logout URL also available on the Control Portal page from Step 2 above.)<br>
+7. Now, on the "Configuration" tab, enter the URL you copied from Step 2 in the section above into the "SAML Consumer URL" field. Optionally, you may provide other values in the additional fields if you know them. (You will find the Single Logout URL also available on the Control Portal page from Step 2 above.)
 ![OneLogin SAML Test](../images/onelogin-saml-url.png)
 8. Click the "Save" button in the upper right hand corner to save the OneLogin configuration.
 
@@ -42,9 +42,9 @@ There are a number of other settings that OneLogin supports or that may be suppo
 
 ###Configure Control Portal SAML Settings
 
-1. While still in the OneLogin administrator interface, click on the "SSO" tab to view SAML configuration information required to plug in to the Control Portal settings. You should see a SAML 2.0 Endpoint and a X.509 Certificate. Both of these values are required to configure SAML in CenturyLink Cloud Control Portal.<br>
+1. While still in the OneLogin administrator interface, click on the "SSO" tab to view SAML configuration information required to plug in to the Control Portal settings. You should see a SAML 2.0 Endpoint and a X.509 Certificate. Both of these values are required to configure SAML in CenturyLink Cloud Control Portal.
 ![Login SAML Info](../images/onelogin-saml-info.png)
-2. Back in the Control Portal Authentication settings page, check the "Require SAML for Login" option and the "Apply to all Sub Accounts" options. This will require SAML login only for this account and all sub accounts. Next, enter the SAML 2.0 Endpoint URL provided in the previous step into the "SSO IdP URL (required)" field and copy and paste the certificate value from OneLogin page into the "Signing Certificate Key" field in Control Portal. Optionally, you can configure the "SLO IdP URL" as well. Click "Save" to apply the SAML settings to control.<br>
+2. Back in the Control Portal Authentication settings page, check the "Require SAML for Login" option and the "Apply to all Sub Accounts" options. This will require SAML login only for this account and all sub accounts. Next, enter the SAML 2.0 Endpoint URL provided in the previous step into the "SSO IdP URL (required)" field and copy and paste the certificate value from OneLogin page into the "Signing Certificate Key" field in Control Portal. Optionally, you can configure the "SLO IdP URL" as well. Click "Save" to apply the SAML settings to control.
 ![SAML Settings Filled In](../images/saml-settings-filled-in.png)
 
 At this point, SAML is configured on both ends. All that's left is to enable MFA and begin provisioning users.
@@ -56,7 +56,6 @@ At this point, SAML is configured on both ends. All that's left is to enable MFA
 2. To complete the setup, we need to define and apply a policy that requires users to authenticate with MFA. Select "Policies" from the "Settings" menu and click on the "Default policy" to edit. (We could create a new policy to apply only to our set of Control Portal users if we are using OneLogin with multiple applications. Here, we will keep things simple and apply a single policy for all users and apps.)
 3. On the MFA tab, click the "OTP Auth Required" and "Google Authenticator" checkboxes. To keep things simple, we'll keep the setting to require OTP for all users at every login, but this can be adjusted as desired. Click "Save".
 ![MFA Policy](../images/mfa-policy.png)
-
 All that's left is to provision users in the IdP and associate them with users in Control Portal.
 
 ###Provision User(s)
@@ -67,26 +66,24 @@ You may have the opposite situation where you need to create users in Control th
 
 1. In the Control Portal, from the "Users" page in Account Settings, click the user you will be provisioning to OneLogin. (If you need to create a new user in Control, you can follow the instructions in [Creating Users](../Accounts & Users/creating-users.md )
 ![Users Page](../images/users-page.png)
-
-2. On the User Profile page, take note of the e-mail address, first and last name. Most importantly, click on the "saml username (single sign on)" field and enter the *e-mail address* for this user. (The OneLogin SAML configuration uses e-mail as the default username. To keep this simple in this example, we will stick with this rather than set it to a custom value. In this case, it is also the same as the user name, which is a good practice for uniqueness.)<br>
+2. On the User Profile page, take note of the e-mail address, first and last name. Most importantly, click on the "saml username (single sign on)" field and enter the *e-mail address* for this user. The OneLogin SAML configuration uses e-mail as the default username. To keep this example simple, we will stick with this rather than set it to a custom value. Here, it is also the same as the user name, which is a good practice for uniqueness.
 ![User Info Page](../images/user-info-page.png)
 3. Back in the OneLogin configuration, navigate to "Users -> All Users" from the menu and click the "New User" button to create a new user. Enter the first name, last name, and e-mail address you took note of in Step 3. All of these fields are required and as noted above, the e-mail address must match the value entered into the SAML username field in Control. You may also fill in other fields as desired. Click "Save User".
 ![OneLogin Users](../images/onelogin-user.png)
 4. Now we have to give the user access to the Control Portal SAML application. On the "Applications" tab for the user, click the "+" sign to add a new app. Select "CenturyLink Cloud Control Portal" and click "continue" then enter the user's e-mail address and click "save".
-![OneLogin User App](../images/onelogin-user-application.png)<br>
-![OneLogin User App](../images/onelogin-user.png)<br>
-![OneLogin App User](../images/onelogin-app-user.png)<br>
-
-5. Next, from the "More Actions" menu, select "Send Invitation" to send an e-mail to the user to set up a password and MFA token for the first time. This will begin the provisioning process.<br>
-![Send Invitation](../images/send-invitation.png)<br>
-![Send Invite Dialog](../images/send-invite-dialog.png)<br>
-
+![OneLogin User App](../images/onelogin-user-application.png)
+![OneLogin User App](../images/onelogin-user.png)
+![OneLogin App User](../images/onelogin-app-user.png)
+5. Select  "Send Invitation" from the "More Actions" menu. This sends an e-mail to the user, initiating provisioning.
+![Send Invitation](../images/send-invitation.png)
+![Send Invite Dialog](../images/send-invite-dialog.png)
 6. The user receives an e-mail with a link to set their password. When they follow the link, they will set their password and then, in this case since we are using Google Authenticator, will be presented with a QR code to scan using the Google Authenticator app to setup a token and be given a security code to enter. Once this is done, the user enters the security code and clicks "log in". This will activate the user's MFA token for use.
 ![OneLogin-QR-Scan](../images/onelogin-qr-scan.png)
 
 ###Putting It All Together
 
 Now that all the configuration is complete, users must login to Control Portal using their OneLogin credentials.
+
 1. From a browser, go to your SAML Login page. This is the root of the highlighted URL from the very second step above, in the format <code>https://{account-alias}.cloudportal.io</code>. (In this example, it's https://bry2.cloudportal.io.) If you have the "Require SAML for Login" setting turned on as described above, this should ultimately result in you being redirected to the OneLogin login screen.
 2. Login using the username, password, and Google Authenticator security code. You should be directed back to the Control Portal and logged in as that user. You can use the logout link as well if you have set the logout URLs appropriately.
 
