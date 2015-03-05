@@ -90,7 +90,7 @@ Now that all the configuration is complete, users must login to Control Portal u
 1. From a browser, go to your SAML Login page. This is the root of the highlighted URL from the very second step above, in the format <code>https://{account-alias}.cloudportal.io</code>. (In this example, it's https://bry2.cloudportal.io.) If you have the "Require SAML for Login" setting turned on as described above, this should ultimately result in you being redirected to the OneLogin login screen.
 2. Login using the username, password, and Google Authenticator security code. You should be directed back to the Control Portal and logged in as that user. You can use the logout link as well if you have set the logout URLs appropriately.
 
-Note that the "Require SAML for Login" setting will force this user to login this way whether they access the SAML-specific login page as described in Step 1 or the primary control URL (http://console.ctl.io). If the primary URL is used, when logging in using the regular login screen, after entering the username (and any value for password), the user will be redirected to the SAML login page as described above.
+Note that the "Require SAML for Login" setting will force this user to login this way whether they access the SAML-specific login page as described in Step 1 or the primary control URL (https://console.ctl.io). If the primary URL is used, when logging in using the regular login screen, after entering the username (and any value for password), the user will be redirected to the SAML login page as described above.
 
 ###Updated Signing Certificate (March 2015)
 
