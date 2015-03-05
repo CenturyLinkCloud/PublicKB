@@ -81,6 +81,6 @@ The top of each .md file contains metadata about the knowledge base article itse
 
 5. Push or sync your commit(s) to the remote repository on Github.
 
-6. Create a [pull request](https://help.github.com/articles/creating-a-pull-request) to merge your changes into the `master` branch. Once a pull request is accepted, it will be live on CenturyLinkCloud.com after the next release to production.
+6. Create a [pull request](https://help.github.com/articles/creating-a-pull-request) to merge your changes into the `master` branch. 
 
 7. CenturyLink Cloud Platform Team reviews your pull request. If accepted, it will be added to the [Knowledge Base on CenturyLinkCloud.com](http://www.centurylinkcloud.com/knowledge-base).
