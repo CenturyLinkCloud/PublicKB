@@ -59,12 +59,11 @@ Single button deploy of an additional node to an existing cluster.  These are ar
 
 2. **Locate the Blueprint in the Blueprint Library**
 
-  Based on the information captured in (1) above select the appropriate deployment card to continue.  Note that clusters with mirroring enabled must have nodes deployed in pairs.
+  Based on the information captured in (1) above select the appropriate Blueprint card to continue.  Note that clusters with mirroring enabled must have nodes deployed in pairs.
 
-  [![](../images/pivotal_greenplum/.png)](#)
-  [![](../images/pivotal_greenplum/.png)](#)
+  ![](../images/pivotal_greenplum/node_blueprint_tiles.png)
 
-  Alternately, starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “Pivotal Greenplum” in the keyword search on the right side of the page.
+  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “Pivotal Greenplum” in the keyword search on the right side of the page.
 
 3. **Click the Deploy Blueprint button.**
 

@@ -63,14 +63,11 @@ Single button deploy of a new cluster including a master host, a standby master 
 
 1. **Locate the Blueprint in the Blueprint Library**
 
-  Determine whether you will be building a test cluster with small nodes or a production cluster whose nodes have increased CPU and RAM available.
+  Determine whether you will be building a test cluster with small nodes or a production cluster whose nodes that have increased CPU and RAM available.
 
-  Click one of the deployment cards below to begin.
+  [![](../images/pivotal_greenplum/cluster_blueprint_tiles.png)](#)
 
-  [![](../images/pivotal_greenplum/.png)](#)
-  [![](../images/pivotal_greenplum/.png)](#)
-
-  Alternately, starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “Pivotal Greenplum” in the keyword search on the right side of the page.
+  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “Pivotal Greenplum” in the keyword search on the right side of the page.
 
 2. **Click the Deploy Blueprint button.**
 
@@ -81,6 +78,8 @@ Single button deploy of a new cluster including a master host, a standby master 
   * **EULA** - Click to accept the software end user license agreement
   * **Cluster ID ** - set unique identifier for all hosts in this Greenplum cluster.  This is used to help other hosts find and join into the cluster
   * **Email Address** - Email address to receive build notification and Greenplum access information
+  * **gpadmin Password** - Password used for `gpadmin` user in the web Command Center (ssh login directly via gpadmin is not enabled by default)
+
 
 4. **Set Optional Parameters**
 
@@ -175,3 +174,15 @@ After deploying this Blueprint, you may secure entitlements to the technology us
 View Pivotal's [Getting Started](http://gpdb.docs.pivotal.io/gpdb-434.html) guide and other documentation from the Pivotal documentation hub.
 
 ![](../images/pivotal_greenplum/getting_started_pdf.png)
+
+
+**How do I login to my cluster for the first time?**
+
+Access your new Pivotal Greenplum cluster via ssh as the root user whose password you supplied at create time.  
+
+Best practices are to create non-administrative user access.  This can be done by creating another user or by configuring the gpadmin user for remote access.  This can be done by executing the following commands:
+
+```
+# chsh gpadmin bash
+# passwd gpadmin
+```
