@@ -258,107 +258,56 @@ The steps below walk through the process of building an entire SSO and SAML scen
 
 ```
 <samlp:Response ID="--ID--"
-
 	Version="2.0"
-
 	IssueInstant="2012-12-06T22:22:35.344Z"
-
 	Destination="https://ALIAS.cloudportal.io/SAMLAuth/Post"
-
 	Consent="urn:oasis:names:tc:SAML:2.0:consent:unspecified"
-
 	InResponseTo="ID" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol">
-
 	<Issuer xmlns="urn:oasis:names:tc:SAML:2.0:assertion">http://tier3samldemo.com/adfs/services/trust</Issuer>
-
 	<samlp:Status>
-
 	  <samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success" />
-
 	</samlp:Status>
-
 	<Assertion ID="ID" IssueInstant="2012-12-06T22:22:35.303Z" Version="2.0" xmlns="urn:oasis:names:tc:SAML:2.0:assertion">
-
 	<Issuer>http://tier3samldemo.com/adfs/services/trust</Issuer>
-
 	   <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-
 	     <ds:SignedInfo>
-
 		<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
-
 		<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
-
 		<ds:Reference URI="URI">
-
 		   <ds:Transforms>
-
 		     <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
-
 		     <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
-
 		   </ds:Transforms>
-
 		   <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-
 		   <ds:DigestValue>VALUE</ds:DigestValue>
-
 		</ds:Reference>
-
 		</ds:SignedInfo>
-
 		  <ds:SignatureValue>VALUE</ds:SignatureValue>
-
 		  <KeyInfo mlns="http://www.w3.org/2000/09/xmldsig#">
-
 		    <ds:X509Data>
-
 		      <ds:X509Certificate>CERTIFICATE</ds:X509Certificate>
-
 		    </ds:X509Data>
-
 		  </KeyInfo>
-
 	    </ds:Signature>
-
 	    <Subject>
-
 		<NameID>rseroter@tier3samldemo.com</NameID>
-
 	 	<SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
-
 		<SubjectConfirmation Data InResponseTo="ID"
-
 			NotOnOrAfter="2012-12-06T22:27:35.346Z"
-
 			Recipient="https://ALIAS.cloudportal.io/SAMLAuth/Post" />
-
 		</SubjectConfirmation>
-
 	     </Subject>
-
 	     <Conditions NotBefore="2012-12-06T22:22:34.417Z" NotOnOrAfter="2012-1206T23:22:34.417Z">
-
 		<AudienceRestriction>
-
 		  <Audience>https://ALIAS.cloudportal.io/SAMLAuth</Audience>
-
 		</AudienceRestriction>
-
 	     </Conditions>
-
 	     <AuthnStatement AuthnInstant="2012-12-06T22:22:33.401Z" SessionIndex="ID">
-
 		<AuthnContext>
-
 		  <AuthnContextClassRef>urn:federation:authentication:windows</AuthnContextClassRef>
-
 		</AuthnContext>
-
 	     </AuthnStatement>
-
 	  </Assertion>
-
 </samlp:Response>
 
 ```
