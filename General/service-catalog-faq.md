@@ -79,6 +79,3 @@ A: New services that are added to the Service Catalog will default to "available
 The Service Catalog also offers a secondary setting that allows Account Administrators to make a service automatically available or unavailable to new sub accounts. This allows for control over that service for sub accounts that have not yet been created.
 
 See Getting Started with the Service Catalog (link to “Getting Started with the Service Catalog”) for more information on how to best leverage the new sub account default setting.
-
-###Related Topics
-[Getting Started with the Service Catalog](LINK)
