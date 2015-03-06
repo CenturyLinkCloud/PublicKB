@@ -23,10 +23,10 @@
 * **Cloud Network Services in DE1.** CenturyLink Cloud deployments in DE1 can now be connected to other environments using Cloud Network Services.  This capability delivers private, secure, and high-speed connectivity between traditional and cloud environments.
 
 * **MS SQL Server 2014.** Deploy MS SQL 2014 Web, Standard & Enterprise Editions on CenturyLink Cloud via Blueprints.  These SQL instances are unmanaged; licensing is handled under CenturyLink's SPLA relationship with Microsoft.
- 
-* **New Left-Hand Navigation Control.** Two new icons appear in the left-hand side of the Control Portal interface: the **+** icon allows for faster creation of new servers and groups; clicking the **infrastructure** icon exposes the familiar tree view to view and manage existing resources.
 
-![Left-Hand Navigation](../images/left-hand-nav-01.png)
+* **New Left Navigation Control.** Two new icons appear in the left-hand side of the Control Portal interface: the **+** icon presents a new path for the creation of servers and groups; clicking the **infrastructure** icon exposes the familiar 'tree view' for the management of existing resources.
+
+![Left Navigation](../images/left-nav-01.png)
 
 ###Online Tools (4)
 
