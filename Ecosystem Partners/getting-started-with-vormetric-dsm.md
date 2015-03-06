@@ -90,14 +90,13 @@ If you are interested in seeing this type of Partner Template deployment as an a
 The costs associated with this deployment is $195/hr for the CenturyLink Cloud Service Tasks.  There are no Vormetric license costs or additional fees bundled in.  Service Task Fees are available here: http://www.centurylinkcloud.com/service-tasks#Pricing
 
 ### Frequently Asked Questions
-Frequently Asked Questions:
-- #### Where do I obtain my Vormetric License or entitlements?
-- Existing CenturyLink Enterprise Customers can contact their Account Representative for help obtaining a Vormetric license, or contact Vormetric directly:
+
+#### Where do I obtain my Vormetric License or entitlements?
+Existing CenturyLink Enterprise Customers can contact their Account Representative for help obtaining a Vormetric license, or contact Vormetric directly:
 -   Contact Vormetric Support via telephone: (877) 267-3247
 -   Contact Vormetric via their website: http://www.Vormetric.com
 -   Email Sales via support@vormetric.com
 
-
-- #### Who should I contact for support?
+#### Who should I contact for support?
 * For issues related to deploying the Centerity Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the Centerity Support Website TBD
 * For issues related to cloud infrastructure (VM’s, network, etc), please open a ticket using the CenturyLink Cloud Support Process.
