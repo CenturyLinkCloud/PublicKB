@@ -12,7 +12,7 @@
 
 ![Service Catalog](../images/service-catalog-01.png)
 
-###Minor Enhancements (5)
+###Minor Enhancements (6)
 
 * **New Domains.** Effective March 5, the default CenturyLink Cloud domain will be updated to control.ctl.io.  The URL for SAML users has also been updated to https://[`account-alias`].cloudportal.io (where `account-alias` is your four-letter account identifier). The legacy domains will continue to operate for 90 days.
 
@@ -23,6 +23,10 @@
 * **Cloud Network Services in DE1.** CenturyLink Cloud deployments in DE1 can now be connected to other environments using Cloud Network Services.  This capability delivers private, secure, and high-speed connectivity between traditional and cloud environments.
 
 * **MS SQL Server 2014.** Deploy MS SQL 2014 Web, Standard & Enterprise Editions on CenturyLink Cloud via Blueprints.  These SQL instances are unmanaged; licensing is handled under CenturyLink's SPLA relationship with Microsoft.
+ 
+* **New Left-Hand Navigation Control.** Two new icons appear in the left-hand side of the Control Portal interface: the **+** icon allows for faster creation of new servers and groups; clicking the **infrastructure** icon exposes the familiar tree view to view and manage existing resources.
+
+![Left-Hand Navigation](../images/left-hand-nav-01.png)
 
 ###Online Tools (4)
 
