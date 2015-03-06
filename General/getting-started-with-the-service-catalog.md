@@ -52,7 +52,7 @@ Set “Can Use” for your own account to OFF, and “Submit Changes.”
 ![service catalog can use off](../images/service-catalog-can-use-off.png)
 
 
-Note that it is not currently possible to disable a feature at the parent account level but also have it enabled for sub accounts.
+*Note that it is not currently possible to disable a feature at the parent account level but also have it enabled for sub accounts.*
 
 But what if you want your own account’s users to have access to the service, and you want to restrict both the visibility and the access to your sub accounts?
 
@@ -82,4 +82,4 @@ It is important to note that if certain services are in use and “can use” is
 
 This is scenario is avoidable if Account Administrators remain aware of the possibility and take measures to avoid it, such as conducting a usage audit before disabling a service. Further, this does not apply to all services; only some are at risk of entering this undesirable state because of the nature of the service. Presently, the following services should be carefully audited before they are disabled:
 
-  ####Load Balancer
+#####Load Balancer
