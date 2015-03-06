@@ -1,30 +1,21 @@
 {{{
   "title": "Getting Started With OSSEC Blueprints",
-  "date": "1-5-2015",
+  "date": "3-6-2015",
   "author": "Keith Resar",
   "attachments": [],
   "contentIsHTML": true
 }}}
 
-<p><strong>Partner Profile</strong>
-</p>
-<p>
-  <a href="http://www.ossec.net/"><img src="http://www.ossec.net/wp-content/uploads/2012/06/ossec-hids.png" alt />
-  </a>
-</p>
-<ul>
-  <li>OSSEC - Open Source SECurity</li>
-  <li><a href="http://www.ossec.net/">http://www.ossec.net/</a>
-  </li>
-  <li>Customer Support:
-    <ul>
-      <li><a href="http://www.ossec.net/?page_id=21">OSSEC Community Site</a>
-      </li>
-      <li>Paid Support from Trend Micro</li>
-    </ul>
-  </li>
-  <li>Partner Tier: Silver</li>
-</ul>
+### Partner Profile
+
+<a href="http://www.ossec.net/"><img src="http://www.ossec.net/wp-content/uploads/2012/06/ossec-hids.png" style="border:0;float:right;margin:1em;"/></a>
+
+ * OSSEC - Open Source SECurity
+ * <a href="http://www.ossec.net/">http://www.ossec.net/</a>
+ * Customer Support:
+  * <a href="http://www.ossec.net/?page_id=21">OSSEC Community Site</a>
+  * Paid Support from Trend Micro
+  * Partner Tier: Silver
 
 <strong>Description</strong>
 <p>CenturyLink has integrated the OSSEC HIDS solution in to the CenturyLink Cloud platform to enable customers to perform self-service installation of an OSSEC manager and HIDS agents on Windows or Linux servers. The purpose of this KB article is to help
@@ -119,7 +110,7 @@
         <p>1. Enable bidirectional <strong>1514/UDP</strong> traffic between the manager server and the new agent. UDP is stateless so you'll need to add two rules - one for the manager as source and one for the agent as source</p>
       </td>
       <td>
-        <p>&nbsp;<a href="https://t3n.zendesk.com/entries/22196842-Connecting-Data-Center-Networks-Through-Firewall-Policies">Connecting Data Center Networks Through Firewall Policies<img src="https://t3n.zendesk.com/attachments/token/XJtFMG2XbALYPpbTvCK78yYlU/?name=System-Security-Firewall-ON-icon.png" alt="System-Security-Firewall-ON-icon.png" /></a>
+        <p>&nbsp;<a href="https://t3n.zendesk.com/entries/22196842-Connecting-Data-Center-Networks-Through-Firewall-Policies">Connecting Data Center Networks Through Firewall Policies></a>
         </p>
       </td>
     </tr>
@@ -171,17 +162,20 @@
   </tbody>
 </table>
 
-<p><strong>Pricing</strong></p>
-<p>The costs listed above in Steps 1 and 2 are for the infrastructure only.</p>
-<p>OSSEC is Open Source community owned software with no associated cost to acquire.</p>
+### Pricing
 
-<p><strong>Frequently Asked Questions</strong></p>
-<p>Where do I get my OSSEC&nbsp;License?</p>
-<ul>
-  <li>OSSEC is Open Source community owned software with no associated cost to acquire.</li>
-</ul>
-<p>&nbsp;Who should I contact for support?</p>
-<ul>
-  <li>OSSEC is packaged and provided by CenturyLink as a courtesy to ease startup time. All support for this Open Source software is provided by the community. Please start at&nbsp;http://www.ossec.net/</li>
-  <li>For issues related to cloud infrastructure, please open a ticket using the CenturyLink Cloud&nbsp;<a href="https://t3n.zendesk.com/entries/23610702-How-do-I-report-a-support-issue-">Support Process</a>.</li>
-</ul>
+The costs listed above in Steps 1 and 2 are for the infrastructure only.
+
+OSSEC is Open Source community owned software with no associated cost to acquire.
+
+### Frequently Asked Questions
+
+**Where do I get my OSSEC&nbsp;License?**
+
+OSSEC is Open Source community owned software with no associated cost to acquire.
+
+**Who should I contact for support?**
+
+OSSEC is packaged and provided by CenturyLink as a courtesy to ease startup time. All support for this Open Source software is provided by the community. Please start at http://www.ossec.net/
+
+For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).

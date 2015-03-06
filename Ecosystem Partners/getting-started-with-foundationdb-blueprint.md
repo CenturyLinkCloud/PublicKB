@@ -204,7 +204,7 @@ Paid Silver, Gold, and Platinum support plans are available from https://foundat
 
 **Who should I contact for support?**
 
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../Support/how-do-i-report-a-support-issue.md).
+* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
 * For issues related to deploying the FoundationDB Blueprints and application operation on CenturyLink Cloud and you have a paid license, please contact centurylinkcloud-sales@foundationdb.com or follow your existing FoundationDB support process if known.
 * For issues related to deploying the FoundationDB Blueprints and application operation on CenturyLink Cloud and you do not have a paid license, [sign up for access to the support community](https://foundationdb.com/get).
 
