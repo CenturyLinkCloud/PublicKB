@@ -19,7 +19,7 @@
 
 <h3>Q &amp; A</h3>
 
-<p><strong>I would like yo know more about your "predictive analysis" engine so that I can use it in company. How do I get more details about it?</strong>
+<p><strong>I would like to know more about your "predictive analysis" engine so that I can use it in company. How do I get more details about it?</strong>
 <p>We see the "predictive analysis" engine as core IP of the cloud platform and therefore do not share any of the details. In addition, we are an agile shop and therefore in the spirit of agile, we are constantly improving the engine
 in order to ensure that we have better accuracy and also support the new features being added to the Cloud.</p>
 <p><strong>I have a large project that I would like to move to your cloud, how do I ensure that you have the capacity?</strong>
