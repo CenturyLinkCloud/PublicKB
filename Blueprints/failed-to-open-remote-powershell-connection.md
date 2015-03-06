@@ -19,12 +19,17 @@
 </ul>
 <h3>Additional Information</h3>
 <p>The full error message in your failed blueprint may look something like the following:</p>
-<p>[Error] Could not run package: System.ApplicationException: Failed to open Remote PowerShell connection after %time% seconds ---&gt; System.Management.Automation.Remoting.PSRemotingTransportException: Connecting to remote server %serverIP% failed with
+
+```
+[Error] Could not run package: System.ApplicationException: Failed to open Remote PowerShell connection after %time% seconds ---&gt; System.Management.Automation.Remoting.PSRemotingTransportException: Connecting to remote server %serverIP% failed with
   the following error message : WinRM cannot complete the operation. Verify that the specified computer name is valid, that the computer is accessible over the network, and that a firewall exception for the WinRM service is enabled and allows access from
-  this computer. By default, the WinRM firewall exception for public profiles limits access to remote computers within the same local subnet. For more information, see the about_Remote_Troubleshooting Help topic.</p>
-<p>[STACK TRACE]</p>
-<p>...</p>
-<p>[/STACKTRACE]</p>
+  this computer. By default, the WinRM firewall exception for public profiles limits access to remote computers within the same local subnet. For more information, see the about_Remote_Troubleshooting Help topic.
+  
+[STACK TRACE]
+...
+[/STACKTRACE]
+```
+
 <h3>How to Resolve</h3>
 <p>While PowerShell based blueprints fail, command based blueprints will not. There is a public script package that contains the necessary commands properly configure WinRM. The package is called&nbsp;<em>Enable Powershell 2.0 Remoting</em>. From the g<em>roup tasks</em> dropdown on the Group information page you can choose to <em>execute script</em>, then find the script to execute, and apply it to the necessary machines.</p>
 <h3>Detailed Steps</h3>
