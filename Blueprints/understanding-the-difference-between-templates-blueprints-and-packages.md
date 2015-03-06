@@ -1,6 +1,6 @@
 {{{
   "title": "Understanding the Difference Between Templates, Blueprints and Packages",
-  "date": "3-5-2015",
+  "date": "3-6-2015",
   "author": "Keith Resar",
   "attachments": [],
   "contentIsHTML": false
@@ -13,11 +13,12 @@ This article can be helpful to differentiate between Templates, Blueprints and P
 
 ### Templates
 
-A Template is the basic model from which each Server gets created. The platform has a number of standard Templates which are replicated to all Nodes, and in addition customers
-may [create their own custom templates](../servers/how-to-create-customer-specific-os-templates/).
+A Template is the basic model from which each Server gets created. The platform has a number of **Global Templates** which are replicated to all Nodes, and in addition customers
+may [create their own **Custom Templates**](../servers/how-to-create-customer-specific-os-templates/).
 
 <img src="../images/understanding-the-difference-between-templates-blueprints-and-packages-3.png" style="border:0;">
 
+[Marketplace Providers](http://www.centurylinkcloud.com/marketplace/program) can also submit their technology as a **Partner Template** which can be used as the basic model for a virtual appliance deployment.  Creating servers from Partner Templates is in an early beta release but can be invoked by customers using [Service Tasks](http://www.centurylinkcloud.com/service-tasks).
 
 ### Blueprints
 
