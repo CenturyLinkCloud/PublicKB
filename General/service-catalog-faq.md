@@ -62,7 +62,7 @@ Suggestions for additional services that should be added to the Service Catalog 
 A: Yes. It’s possible to turn a service off for sub accounts, and to make that service invisible to the Account Administrators of those accounts. A parent can set access to service use (“can use”) and the visibility to Account Administrators (“in service catalog”) independently, and on a sub account by sub account basis. See the below screen shot for a visualization of how this works.
 
 
-INSERT IMAGE HERE --> Sub Account Checkboxes
+![sub account checkboxes](../images/sub-account-checkboxes.png)
 
 
 **Q: Can a sub account make changes to settings made by their parent account?**
