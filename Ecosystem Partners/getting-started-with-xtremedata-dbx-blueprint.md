@@ -58,7 +58,7 @@ Single button deploy of a new cluster including a master host, a standby master 
 
 3. **Set Required parameters.**
 
-  <img src="../images/xtremedata/dbx_deploy_parameters.png" style="margin-left:1em;max-width:400px;">
+  <img src="../images/xtremedata/dbx_deploy_parameters.png" style="margin-left:1em;max-width:450px;">
 
   * **Head Server** - Select the first option `DBXHD`
   * **Cluster Name** - set unique identifier for all hosts in this cluster

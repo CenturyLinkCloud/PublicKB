@@ -73,12 +73,11 @@ Single button deploy of a new cluster including a master host, a standby master 
 
 3. **Set Required parameters.**
 
-  <img src="../images/pivotal_greenplum/deploy_cluster_parameters.png" style="border:0;">
+  <img src="../images/pivotal_greenplum/deploy_cluster_parameters.png" style="max-width:450px;">
 
   * **EULA** - Click to accept the software end user license agreement
   * **Cluster ID ** - Set unique identifier for all hosts in this Greenplum cluster.  This is used to help other hosts find and join into the cluster
   * **Email Address** - Email address to receive build notification and Greenplum access information
-  * **gpadmin Password** - Password used for `gpadmin` user in the web Command Center (ssh login directly via gpadmin is not enabled by default)
 
 
 4. **Set Optional Parameters**
