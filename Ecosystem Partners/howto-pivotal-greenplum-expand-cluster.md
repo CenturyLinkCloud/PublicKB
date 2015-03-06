@@ -24,7 +24,7 @@ http://pivotal.io/big-data/pivotal-greenplum-database
 
 |Cloud Alias   	|Sales Contact   	|
 |:-	|:-	|
-|GOGO   	|centurylinkcloud-sales@pivotal.com   	|
+|GOGO   	|sales-clc@pivotal.io   	|
 
 
 ### Description
