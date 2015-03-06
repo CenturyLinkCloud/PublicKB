@@ -30,7 +30,7 @@ Here are a few specific examples of scenarios where the Service Catalog might be
 
 A: Access to services is best established on a set-it-and-forget-it-basis – it is not advisable to use the Service Catalog to repeatedly toggle services on and off. Access to a service should only be turned off when an Account Administrator is confident that the service is not already being consumed by an account.
 
-**Q: What [roles](http://www.centurylinkcloud.com/knowledge-base/accounts-&-users/roles-faq/) can access the Service Catalog?**
+**Q: What [roles](../Accounts & Users/roles-faq.md) can access the Service Catalog?**
 
 A: Only Account Administrators have permission to view the Service Catalog and enable or disable services.
 
@@ -53,7 +53,7 @@ If you are using a service and it becomes unavailable, contact your account admi
 
 **Q: The service I want to control is not listed in the Service Catalog. How can I restrict access to it?**
 
-A: There are many ways to limit the services that users can or can’t see. User [roles](http://www.centurylinkcloud.com/knowledge-base/accounts-&-users/roles-faq/) restrict access to specific areas of the cloud platform, and therefore restrict access to specific services and functionality. Additionally, some services are not available in certain datacenters, which effectively precludes users from having access to them.
+A: There are many ways to limit the services that users can or can’t see. User [roles](../Accounts & Users/roles-faq.md) restrict access to specific areas of the cloud platform, and therefore restrict access to specific services and functionality. Additionally, some services are not available in certain datacenters, which effectively precludes users from having access to them.
 
 Suggestions for additional services that should be added to the Service Catalog are enthusiastically welcomed. Send your input to features@centurylinkcloud.com or to the CenturyLink UserVoice forum. (See http://www.centurylinkcloud.com/knowledge-base/support/how-do-i-submit-a-feature-request/ for more details on submitting feature requests via UserVoice.)
 
@@ -81,5 +81,4 @@ The Service Catalog also offers a secondary setting that allows Account Administ
 See Getting Started with the Service Catalog (link to “Getting Started with the Service Catalog”) for more information on how to best leverage the new sub account default setting.
 
 ###Related Topics
-[Getting Started with the Service Catalog](http://www.centurylinkcloud.com/knowledge-base/accounts-&-users/roles-faq/
-http://www.centurylinkcloud.com/knowledge-base/support/how-do-i-submit-a-feature-request/)
+[Getting Started with the Service Catalog](LINK)
