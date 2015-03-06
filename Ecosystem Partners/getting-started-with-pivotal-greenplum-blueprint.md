@@ -50,7 +50,7 @@ CenturyLink Cloud Users
 
 |[Deploy a New Cluster](#deploying-a-new-cluster)   	|[Expand an Existing Cluster](../howto-pivotal-greenplum-expand-cluster/)   	|
 |:-	|:-	|
-|<p>Deploy a minimal cluster sized for testing.<p>When you're ready, deploy a production capable cluster using the same pattern.<p>See [Deploying a new cluster](#deploying-a-new-cluster) to get started.  If you're looking for a single-button deploy of clusters with more nodes see our guide on [Creating larger cluster Blueprints](/howto-pivotal-greenplum-larger-clusters/)   	|<p>Grow existing clusters to their optimal size from day zero or to accommodate growth over time.<p>We'll cleanly add capacity and leave any application disrupting work to you.<p>See [Expanding an existing cluster](../howto-pivotal-greenplum-expand-cluster/) to get started.   	|
+|<p>Deploy a minimal cluster sized for testing.<p>When you're ready, deploy a production capable cluster using the same pattern.<p>See [Deploying a new cluster](#deploying-a-new-cluster) to get started.  If you're looking for a single-button deploy of clusters with more nodes see our guide on [Creating larger cluster Blueprints](../howto-pivotal-greenplum-larger-clusters/)   	|<p>Grow existing clusters to their optimal size from day zero or to accommodate growth over time.<p>We'll cleanly add capacity and leave any application disrupting work to you.<p>See [Expanding an existing cluster](../howto-pivotal-greenplum-expand-cluster/) to get started.   	|
 
 
 
@@ -63,7 +63,7 @@ Single button deploy of a new cluster including a master host, a standby master 
 
 1. **Locate the Blueprint in the Blueprint Library**
 
-  Determine whether you will be building a test cluster with small nodes or a production cluster whose nodes that have increased CPU and RAM available.
+  Determine whether you will be building a test cluster with small nodes or a production cluster whose nodes are configured with increased CPU and RAM.
 
   <img src="../images/pivotal_greenplum/cluster_blueprint_tiles.png" style="border:0;">
 
@@ -76,7 +76,7 @@ Single button deploy of a new cluster including a master host, a standby master 
   <img src="../images/pivotal_greenplum/deploy_cluster_parameters.png" style="border:0;">
 
   * **EULA** - Click to accept the software end user license agreement
-  * **Cluster ID ** - set unique identifier for all hosts in this Greenplum cluster.  This is used to help other hosts find and join into the cluster
+  * **Cluster ID ** - Set unique identifier for all hosts in this Greenplum cluster.  This is used to help other hosts find and join into the cluster
   * **Email Address** - Email address to receive build notification and Greenplum access information
   * **gpadmin Password** - Password used for `gpadmin` user in the web Command Center (ssh login directly via gpadmin is not enabled by default)
 
@@ -101,7 +101,7 @@ Single button deploy of a new cluster including a master host, a standby master 
 
 7. **Deployment Complete**
 
-  Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.  If you do not receive an email like the one shown below your cluster may have had a deployment error - review the *Blueprint Build Log* to look for error messages.
+  Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.  If you do not receive an email like the one shown below your cluster may have had a deployment error - review the *Blueprint Build Log* to for error messages.
 
   <img src="../images/pivotal_greenplum/deploy_cluster_complete_email.png" style="border:0;width:70%;">
 
@@ -142,8 +142,8 @@ Single button deploy of a new cluster including a master host, a standby master 
 
   Servers are built using private IPs only with access with client or IPSEC VPN.  For access from the Internet at large add a public IP to your master server.
 
-  <a href="../network/how-to-add-public-ip-to-virtual-machine/">
-    <img style="border:0;width:50px;" src="../images/foundationdb/fw_icon.png">
+  <a href="../../network/how-to-add-public-ip-to-virtual-machine/">
+    <img style="border:0;width:50px;vertical-align:middle;" src="../images/shared_assets/fw_icon.png">
     Adding a public IP to your virtual machine
   </a>
 
@@ -173,7 +173,7 @@ After deploying this Blueprint, you may secure entitlements to the technology us
 
 View Pivotal's [Getting Started](http://gpdb.docs.pivotal.io/gpdb-434.html) guide and other documentation from the Pivotal documentation hub.
 
-![](../images/pivotal_greenplum/getting_started_pdf.png)
+<img src="../images/pivotal_greenplum/getting_started_pdf.png" style="max-height: 300px;margin-left:1em;">
 
 
 **How do I login to my cluster for the first time?**

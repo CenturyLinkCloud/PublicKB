@@ -54,7 +54,7 @@ Single button deploy of an arbitrary sized Pivotal Greenplum cluster.
 
   Add a single new cluster to the Blueprint and any number of additional nodes.  Take note that if deploying your cluster in a mirrored configuration then an even number of nodes must be added.
 
-  <img src="../images/pivotal_greenplum/customize_blueprint.png" style="border:0;">
+  <img src="../images/pivotal_greenplum/customize_blueprint.png" style="">
 
 3. **Save Blueprint**
 
