@@ -40,32 +40,27 @@ After reading this article, the user should feel comfortable getting started usi
 
 ### Install Bitnami Node.js on Linux Blueprint
 1. Locate the Bitnami Node.js Blueprint
-  1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-  2. Search for “Node.js” in the keyword search on the right side of the page.
-  3. Locate the 'Install Bitnami Node.js on Linux' Blueprint
-
+  + Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+  + Search for “Node.js” in the keyword search on the right side of the page.
+  + Locate the 'Install Bitnami Node.js on Linux' Blueprint
 2. Choose and Deploy the Blueprint. Click the “Install Bitnami Node.js on Linux” Blueprint.
-
 3. Configure the Blueprint. Complete the information below:
-  1. Execute on Server: Select a Linux x64 server to deploy the Blueprint on.
-  3. Apache Web Server Port, e.g. 80
-  4. SSL Web Service Port, eg. 443
-  5. Web Server Domain, e.g. 127.0.0.1 or Example.com
-  6. Redis Server Port, e.g. 6379
-  7. Start Node.js after install?, e.g. Yes
-
+  + Execute on Server: Select a Linux x64 server to deploy the Blueprint on.
+  + Apache Web Server Port, e.g. 80
+  + SSL Web Service Port, eg. 443
+  + Web Server Domain, e.g. 127.0.0.1 or Example.com
+  + Redis Server Port, e.g. 6379
+  + Start Node.js after install?, e.g. Yes
 4. Review and Confirm the Blueprint.
-  1. Click “next: step 2”
-  2. Verify your configuration details.
-
+  + Click “next: step 2”
+  + Verify your configuration details.
 5. Deploy the Blueprint.
-  1. Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
-  2. This will kick off the blueprint deploy process and load a page to allow you to track the progress of the deployment.
-
+  + Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
+  + This will kick off the blueprint deploy process and load a page to allow you to track the progress of the deployment.
 6. Monitor the Activity Queue.
-  * Monitor the Deployment Queue to view the progress of the blueprint.
-  * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
-  * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
+  + Monitor the Deployment Queue to view the progress of the blueprint.
+  + You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+  + Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
 
 ### Access your Node.js server
