@@ -17,7 +17,7 @@ TODO:
 
 ### Overview
 
-After reading this article, the user should feel comfortable getting started using the partner technology on CenturyLink Cloud.
+After reading this article, the reader should feel comfortable deploying the Pivotal Greenplum database on CenturyLink Cloud.
 
 ### Partner Profile
 
@@ -56,7 +56,7 @@ CenturyLink Cloud Users
 
 ### Deploying a New Cluster
 
-Single button deploy of a new cluster including a master host, a standby master for failover, and two nodes.  These are architected for deployment on both on standard cloud servers and Hyperscale servers.  1TB data space and two segments are available on each node.
+You can achieve a single-button deployment of a new cluster including a master host, a standby master for failover, and two nodes, using CenturyLink Cloud Blueprints.  These are architected for deployment on both on standard cloud servers and Hyperscale servers.  1TB data space and two segments are available on each node.
 
 #### Steps
 
@@ -160,7 +160,7 @@ After deploying this Blueprint, you may secure entitlements to the technology us
 
 **Where do I obtain my license?**
 
-*More to come soon*
+Contact your Pivotal account manager or inquire via email to [centurylinkcloud-sales@pivotal.io](mailto:centurylinkcloud-sales@pivotal.io)
 
 **Who should I contact for support?**
 
