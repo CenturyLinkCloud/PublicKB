@@ -25,7 +25,9 @@ The top of each .md file contains metadata about the knowledge base article itse
 
 ##How to Make Additions or Changes
 
-1. Clone the https://github.com/CenturyLinkCloud/PublicKB repository.
+1. [Fork](https://guides.github.com/activities/forking/) the https://github.com/CenturyLinkCloud/PublicKB repository. This will produce a personal copy of this repo.
+
+2. Then Clone the repo to your desktop.
 
 2. **Anything in the `master` branch is always deployable.** Create a [new branch](https://github.com/blog/1377-create-and-delete-branches) from `master`. Your branch name should be descriptive (e.g., `january-release-notes`, `anti-affinity-policy-faq`) so that others have an idea of what the branch is for.
 
@@ -82,6 +84,5 @@ The top of each .md file contains metadata about the knowledge base article itse
 
   * [Create a pull request using Github for Windows](https://github.com/blog/1969-create-pull-requests-in-github-for-windows)
   * [Create a pull request using Github for Mac](https://github.com/blog/1946-create-pull-requests-with-github-for-mac)
-
 
 7. CenturyLink Cloud Platform Team reviews your pull request. If accepted, it will be added to the [Knowledge Base on CenturyLinkCloud.com](http://www.centurylinkcloud.com/knowledge-base).
