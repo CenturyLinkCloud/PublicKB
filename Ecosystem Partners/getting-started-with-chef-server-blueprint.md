@@ -7,7 +7,8 @@
 "contentIsHTML": false
 }}}
 
-![logo.jpg](http://s3.amazonaws.com/opscode-corpsite/assets/121/pic-chef-logo.png)
+
+<img src="http://s3.amazonaws.com/opscode-corpsite/assets/121/pic-chef-logo.png" style="border:0;float:right;" height="100">
 
 ### Description
 
@@ -100,104 +101,91 @@ Qualified Domain Name and can resolve
 
 ### Deploy Chef Server on CenturyLink Cloud
 1. Locate the Install Chef Server on Linux Blueprint
-
-1. Starting from the CenturyLink Control Panel, navigate to the
+  + Starting from the CenturyLink Control Panel, navigate to the
 Blueprints Library.
-2. Search for “Chef” in the keyword search on the right side of the
+  + Search for “Chef” in the keyword search on the right side of the
 page.
-3. Locate the 'Install Chef Server on Linux' Blueprint
-
-2. Choose and Deploy the Blueprint
-
-3. Configure the Blueprint with information below:
-
-* Build Server Details:
-1. Root Password
-2. Server Group
-3. Network / VLAN to put the server on
-4. Set the Primary DNS to use 8.8.8.8
-5. Set the Secondary DNS to use 4.2.2.2
-6. Service Level = Standard
-
-* Install Chef Server on linux Details:
-1. This Servers Fully Qualified Domain Name, e.g.
+  + Locate the 'Install Chef Server on Linux' Blueprint
+  + Choose and Deploy the Blueprint
+1. Configure the Blueprint with information below:
+ + Build Server Details: Root Password & Server Group
+ + Network / VLAN to put the server on
+ + Set the Primary DNS to use 8.8.8.8
+ + Set the Secondary DNS to use 4.2.2.2
+ + Service Level = Standard
+1. Install Chef Server on linux Details:
+  + This Servers Fully Qualified Domain Name, e.g.
 chef.projectx.centurylinkcloud.com or chef.domain.com
 (NOTE: This is a really important step!  Once the server has been
 created and you obtain the Public IP, you will need to create a DNS A
 Record so the new Chef server has a Fully Qualified Domain Name and can
 resolve a forward DNS lookup requests based on the FQDN you specify
 here.)
-
-* Configure Chef Server on Linux Details:
-1. Chef User Name  [Example: chefadmin]
-2. Chef User Real Name [Example: Chef Admin]
-3. Chef User's Email [Example: chefadmin@chef.io]
-4. Chef User's Password
-5. Path to save Chef User's Key [Absolute path to save users key to,
+1. Configure Chef Server on Linux Details:
+  + Chef User Name  [Example: chefadmin]
+  + Chef User Real Name [Example: Chef Admin]
+ + Chef User's Email [Example: chefadmin@chef.io]
+ + Chef User's Password
+ + Path to save Chef User's Key [Absolute path to save users key to,
 Example = /root/chefadmin-key.pem]
-6. Organization Short Name [Organization name must be in all lower
+  + Organization Short Name [Organization name must be in all lower
 case without space. Example = chef]
-7. Organization Full Name [Example = Chef Software, Inc.]
-8. Path to save Chef Organization Key [Absolute path to save
+  + Organization Full Name [Example = Chef Software, Inc.]
+  + Path to save Chef Organization Key [Absolute path to save
 organization key to, Example = /root/chef-organization-key.pem]
-9. Install Chef Features: [Default = Select Everything]
-* Chef Manage
-* Chef Push Jobs
-* Chef Replication
-* Chef Reporting
-10. Click the Next: Step 2 button
-
-4. Review and Confirm the Blueprint
-* Verify your configuration details
-* Click “Deploy Blueprint" button
-
-5. Monitor the Activity Queue.
-* Monitor the Deployment Queue to view the progress of the
-blueprint.
-* You can access the queue at any time by clicking the Queue link
+1. Install Chef Features: [Default = Select Everything]
+  + Chef Manage
+  + Chef Push Jobs
+  + Chef Replication
+  + Chef Reporting
+1. Click the Next: Step 2 button
+1. Review and Confirm the Blueprint
+  + Verify your configuration details
+  + Click “Deploy Blueprint" button
+1. Monitor the Activity Queue.
+  + Monitor the Deployment Queue to view the progress of the blueprint.
+  + You can access the queue at any time by clicking the Queue link
 under the Blueprints menu on the main navigation drop-down.
-* Once the Blueprint completes successfully, you will receive an
+1. Once the Blueprint completes successfully, you will receive an
 email stating that the blueprint build is complete. Please do not login
 to the Chef server until you have received this email notification.
-* You can create a DNS record at this point.  You can obtain the
+1. You can create a DNS record at this point.  You can obtain the
 Public IP of the VM from the Blueprint Build Log.  You can also obtain
 the Public IP from the Control portal by navigating to the new Chef
 server once the server build process is complete.
-
-6. Create a Fully Qualified Domain Name for your Chef server
-* Create a DNS record for your Chef Server so that it has a Fully
+1. Create a Fully Qualified Domain Name for your Chef server:
+  + Create a DNS record for your Chef Server so that it has a Fully
 Qualified Domain Name and can resolve with a forward lookup, e.g.
 nslookup chef.domain.com.  If you don't have a domain or can't manage
 DNS for your existing domain, you can create DNS zones and records on
 CenturyLinkCloud.com through the Control portal.
-* If you have an existing domain and can manage DNS, follow these
+1. If you have an existing domain and can manage DNS, follow these
 instructions to create a FQDN for your Chef server:
-- Create a new A Record and use the information below:
-- Sepcify the Short Name of the server, e.g. chef
-- Specify the Public IP of the CenturyLink Cloud VM
-* If you don't have an existing domain or can't manage DNS for an
+  + Create a new A Record and use the information below:
+  + Sepcify the Short Name of the server, e.g. chef
+  + Specify the Public IP of the CenturyLink Cloud VM
+1. If you don't have an existing domain or can't manage DNS for an
 existing one, follow these instructions to create a FQDN for your Chef
 server on the CenturyLinkCloud.com domain
-1.  Click on the DNS link in the Control portal main dropdown
-2.  Click the Add New Zone button
-3.  Provide the following details:
-* Zone - Provide the full name of the zone you want to use.
+  +  Click on the DNS link in the Control portal main dropdown
+  +  Click the Add New Zone button
+  +  Provide the following details:
+  + Zone - Provide the full name of the zone you want to use.
 Include ".CenturyLinkCloud.com" domain in your Zone name! Example:
 projectx.CenturyLinkCloud.com
-* TTL - Select the dropdown and adjust your TTL. Example = 1 Day
-* Email - Your Email Address
-* Click OK Button when complete
-
-1. Click on the zone you would like to create the Chef server entries
+  + TTL - Select the dropdown and adjust your TTL. Example = 1 Day
+  + Email - Your Email Address
+  + Click OK Button when complete
+  + Click on the zone you would like to create the Chef server entries
 under
-2. Click the Add Record button
-3. On the New Record window that pops up, provide the following
+  + Click the Add Record button
+  + On the New Record window that pops up, provide the following
 details:
-* Type - Select A
-* Name - Provide a short name for your server.  This short name will
+  + Type - Select A
+  + Name - Provide a short name for your server.  This short name will
 precede the Zone. Example: chef  (In this example, the FQDN will now
 resolve as chef.projectx.centurylinkcloud.com)
-* Address - Provide the Public IP address of your Chef Server.  You
+  + Address - Provide the Public IP address of your Chef Server.  You
 can obtain the Public IP address from the Control portal by navigating
 to the Chef server.
 
