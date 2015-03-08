@@ -19,12 +19,12 @@ Understanding VM Deployment Options and Power States
 <ul>
   <li>
     <p>Definition: &nbsp;Cloning creates an independent, duplicate copy of an existing virtual machine which is nearly identical to the “source” virtual machine. The cloned machine retains the same hardware, operating system, application and configuration
-      items as the original virtual machine; however, certain items, such as the server’s security identifier, are changed during the process. For some further information around cloning, please see <a href="/cloning-best-practices/"
+      items as the original virtual machine; however, certain items, such as the server’s security identifier, are changed during the process. For some further information around cloning, please see <a href="../cloning-best-practices/"
      >Cloning Best Practices</a>
     </p>
   </li>
   <li>
-    <p>How To: <a href="/how-to-clone-a-virtual-machine-os-instance/">How To Clone A Virtual Machine Instance</a>
+    <p>How To: <a href="/knowledge-base/servers/cloning-best-practices/how-to-clone-a-virtual-machine-os-instance/">How To Clone A Virtual Machine Instance</a>
     </p>
   </li>
   <li>
