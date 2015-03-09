@@ -10,7 +10,7 @@ Understanding VM Deployment Options and Power States
 <h3>Templates</h3>
 <ul>
   <li>Definition: &nbsp;A Virtual Machine template provides a standardized group of hardware and software settings that can be used repeatedly to create new virtual machines configured with those settings.</li>
-  <li>How To: <a href="../servers/how-to-create-customer-specific-os-templates/">How To Create A Customer Specific OS Template</a>
+  <li>How To: <a href="../servers/how-to-create-customer-specific-os-templates.md/">How To Create A Customer Specific OS Template</a>
   </li>
   <li>Costs: Customer specific template storage is billed on a per GB basis as Standard Storage. Out of the box Virtual Machine templates in the CenturyLink Cloud platform do not incur a storage fee. </li>
   <li>Sample Use Case: &nbsp;ISV would like to build a virtual machine base template that includes the OS, software packages and security customization to improve speed of delivery to their client base. </li>
@@ -24,7 +24,7 @@ Understanding VM Deployment Options and Power States
     </p>
   </li>
   <li>
-    <p>How To: <a href="/knowledge-base/servers/cloning-best-practices/how-to-clone-a-virtual-machine-os-instance/">How To Clone A Virtual Machine Instance</a>
+    <p>How To: <a href="../servers/cloning-best-practices/how-to-clone-a-virtual-machine-os-instance.md/">How To Clone A Virtual Machine Instance</a>
     </p>
   </li>
   <li>
@@ -40,7 +40,7 @@ Understanding VM Deployment Options and Power States
       files that make up the virtual machine. This includes disks, memory, and other devices, such as virtual network interface cards.</p>
   </li>
   <li>
-    <p>How To: <a href="/creating-and-managing-server-snapshots/">Creating & Managing Server Snapshots</a>
+    <p>How To: <a href="../servers/creating-and-managing-server-snapshots.md/">Creating & Managing Server Snapshots</a>
     </p>
   </li>
   <li>

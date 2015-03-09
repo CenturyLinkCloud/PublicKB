@@ -34,9 +34,9 @@
 <ol>
   <ol>
     <li><a href="http://www.centurylinkcloud.com/products/management/groups">Group membership</a>&nbsp;</li>
-    <li><a href="http://www.centurylinkcloud.com/managed-services/operating-systems">Managed Server</a>
+    <li><a href="http://www.centurylinkcloud.com/managed-services/operating-system">Managed Server</a>
     </li>
-    <li><a href="http://www.centurylinkcloud.com/products/compute/servers">Standard </a>or <a href="http://www.centurylinkcloud.com/products/compute/hyperscale">Hyperscale</a>&nbsp;Server Type</li>
+    <li><a href="http://www.centurylinkcloud.com/servers">Standard </a>or <a href="http://www.centurylinkcloud.com/products/compute/hyperscale">Hyperscale</a>&nbsp;Server Type</li>
   </ol>
 </ol>
 <p><img src="https://t3n.zendesk.com/attachments/token/Ij5TseHU3xH1OVaAxqAny7Y9h/?name=04.png" alt="04.png" />
