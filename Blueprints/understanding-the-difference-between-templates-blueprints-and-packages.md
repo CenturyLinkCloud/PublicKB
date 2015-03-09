@@ -14,7 +14,7 @@ This article can be helpful to differentiate between Templates, Blueprints and P
 ### Templates
 
 A Template is the basic model from which each Server gets created. The platform has a number of **Global Templates** which are replicated to all Nodes, and in addition customers
-may [create their own **Custom Templates**](../servers/how-to-create-customer-specific-os-templates.md).
+may [create their own **Custom Templates**](../Servers/how-to-create-customer-specific-os-templates.md).
 
 <img src="../images/understanding-the-difference-between-templates-blueprints-and-packages-3.png" style="border:0;">
 
