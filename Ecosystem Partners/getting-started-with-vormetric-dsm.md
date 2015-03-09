@@ -92,7 +92,7 @@ Your_Name_Here
 If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@centurylinkcloud.com](mailto:features@centurylinkcloud.com)
 
 ### Pricing
-The costs associated with this deployment is $195/hr for the CenturyLink Cloud Service Tasks.  There are no Vormetric license costs or additional fees bundled in.  Service Task Fees are available here: http://www.centurylinkcloud.com/service-tasks#Pricing
+The costs associated with this deployment is $390 one-time fee for the CenturyLink Cloud Service Tasks.  There are no Vormetric license costs or additional fees bundled in.  Service Task Fees are available here: http://www.centurylinkcloud.com/service-tasks
 
 ### Frequently Asked Questions
 
