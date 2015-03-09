@@ -53,10 +53,15 @@ This deployment process for Partner Templates currently requires manual interact
 ### Postrequisite
 - If you want to access your Vormetric DSM over the internet, please perform the following tasks once your Vormetric DSM has been deployed to your account:
 1. Adding an external ip-address to an existing or new CenturyLink server
-![ip.jpg](https://t3n.zendesk.com/attachments/token/kObGC9P2IjP1ate0NexwFNiXz/?name=ip.jpg)
 
-2. Allow incoming traffic for port 5666 to an existing or new server
-![port.jpg](https://t3n.zendesk.com/attachments/token/1Ufw0JjIWW8XfASYLh4x3Irl9/?name=port.jpg)
+    ![ip.jpg](https://t3n.zendesk.com/attachments/token/kObGC9P2IjP1ate0NexwFNiXz/?name=ip.jpg)
+
+2. Allow incoming traffic for the following ports
+- TCP Ports: 22, 443, 5696, 7024, 8080, 8443, 8444, 8445, 50000
+- UDP Ports: 123, 161, 7025
+- ICMP: All
+
+    ![port.jpg](https://t3n.zendesk.com/attachments/token/1Ufw0JjIWW8XfASYLh4x3Irl9/?name=port.jpg)
 
 ### Detailed Steps to Deploy Vormetric DSM
 Vormetric DSM deploys in a virtual appliance model, as a CenturyLink Cloud *Partner Template*.  Follow these step by step instructions to deploy a Vormetric DSM in to your CenturyLink Cloud account:  
@@ -98,5 +103,5 @@ Existing CenturyLink Enterprise Customers can contact their Account Representati
 -   Email Sales via support@vormetric.com
 
 #### Who should I contact for support?
-* For issues related to deploying the Centerity Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the Centerity Support Website TBD
+* For issues related to deploying the Centerity Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the Centerity Support Website: http://www.Vormetric.com
 * For issues related to cloud infrastructure (VM’s, network, etc), please open a ticket using the CenturyLink Cloud Support Process.
