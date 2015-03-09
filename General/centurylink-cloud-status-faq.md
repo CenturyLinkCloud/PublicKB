@@ -6,8 +6,6 @@
   "contentIsHTML": false
 }}}
 
-###CenturyLink Cloud Status FAQ
-
 **Q: What is CenturyLink Cloud Status?**
 
 A: It is a portal that allows users to gain insight into the health of the cloud platform, stay in tune with service incidents, and learn about upcoming maintenance.
