@@ -43,6 +43,9 @@
 
 ![Online Knowledge Base](../images/knowledge-base-online-01.png)
 
+###Managed Services (1)
+* **Managed Backup available in UC1.** Newly created servers in UC1 can now have data protected with the [managed backup service](http://www.centurylinkcloud.com/managed-services/backup). More details on the service are [here](../Managed Services/managed-backup-frequently-asked-questions.md)
+
 ###Documentation (1)
 * [**Expanded API documentation**](http://www.centurylinkcloud.com/api-docs/v2/) - New knowledge base articles for CenturyLink Cloud's V2 API have been added [here](http://www.centurylinkcloud.com/api-docs/v2/). New actions covered include [Set Server Disks](http://www.centurylinkcloud.com/api-docs/v2/#servers-set-server-disks), [Set Server CPU/Memory](http://www.centurylinkcloud.com/api-docs/v2/#servers-set-server-cpumemory), and [Set Server Credentials](http://www.centurylinkcloud.com/api-docs/v2/#servers-set-server-credentials), among others.
 
