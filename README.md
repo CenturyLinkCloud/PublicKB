@@ -42,6 +42,7 @@ The top of each .md file contains metadata about the knowledge base article itse
 
     so like this (folder names are case-sensitive):
     [Packages Best Practices](../Blueprints/packages-best-practices.md)
+    [Using SAML for Single-Sign-On](../Control Portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md )
     ```
 
   ### Images
