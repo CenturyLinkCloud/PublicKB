@@ -24,11 +24,11 @@ Understanding VM Deployment Options and Power States
     </p>
   </li>
   <li>
-    <p>How To: <a href="../servers/cloning-best-practices/how-to-clone-a-virtual-machine-os-instance.md/">How To Clone A Virtual Machine Instance</a>
+    <p>How To: <a href="../Servers/cloning-best-practices/how-to-clone-a-virtual-machine-os-instance.md/">How To Clone A Virtual Machine Instance</a>
     </p>
   </li>
   <li>
-    <p>Costs: &nbsp;As a &nbsp;virtual machine clone is a completely separate copy of a VM, it is billed per hour based on the resources assigned. </p>
+    <p>Costs: As a virtual machine clone is a completely separate copy of a VM, it is billed per hour based on the resources assigned. </p>
   </li>
   <li>Sample Use Case: &nbsp;IT department needs to reproduce and find a resolution to a software bug that is affecting their customers. In order to avoid changes and downtime to the production environment , a clone of the problem virtual machine is
     created allowing for further troubleshooting without customer impact. </li>
@@ -40,7 +40,7 @@ Understanding VM Deployment Options and Power States
       files that make up the virtual machine. This includes disks, memory, and other devices, such as virtual network interface cards.</p>
   </li>
   <li>
-    <p>How To: <a href="../servers/creating-and-managing-server-snapshots.md/">Creating & Managing Server Snapshots</a>
+    <p>How To: <a href="../Servers/creating-and-managing-server-snapshots.md/">Creating & Managing Server Snapshots</a>
     </p>
   </li>
   <li>
