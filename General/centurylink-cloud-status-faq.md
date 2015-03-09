@@ -24,9 +24,9 @@ A: This feature will provide a self-service mechanism for staying current on clo
 
 A: You can get updates through CenturyLink Cloud Status in two ways:
 
-1.	Go to http://status.ctl.io/ at any time to see an overview of the present health of the cloud and information regarding scheduled maintenance. In the event of an outage, users can get real-time status updates here too.
+1. Go to http://status.ctl.io/ at any time to see an overview of the present health of the cloud and information regarding scheduled maintenance. In the event of an outage, users can get real-time status updates here too.
 
-2.	Users will be automatically enrolled in an email notification program. You will receive an email alerting you of your enrollment. Information about planned maintenance and outages will be sent out to the email addresses provided by users when they provision an account on the CenturyLink Cloud platform.
+2. Users will be automatically enrolled in an email notification program. You will receive an email alerting you of your enrollment. Information about planned maintenance and outages will be sent out to the email addresses provided by users when they provision an account on the CenturyLink Cloud platform.
 
 **Q: I don’t want to receive automated email updates. How do I opt out?**
 
