@@ -40,7 +40,7 @@ The top of each .md file contains metadata about the knowledge base article itse
     ```
     [Link Text](../category/kb-article-name.md)
 
-    so like this:
+    so like this (folder names are case-sensitive):
     [Packages Best Practices](../Blueprints/packages-best-practices.md)
     ```
 
