@@ -20,7 +20,7 @@ If for some reason your machine is not able to download packages from our RHUI s
 
 You also have the option to bring your own RHN Subscriptions.  If you you choose to use your own RHN Subscriptions, you will need to remove your RHEL machines from our RHUI repositories first before adding your own subscriptions.
 
-####Remove RHUI Entitlement
+#####Remove RHUI Entitlement
 
 yum erase RHEL(version)-(Data Center)T3N*
 
