@@ -90,4 +90,4 @@ your_name_here
 ### Frequently Asked Questions
 
 #### What are the costs associated with importing a virtual appliance?
-Importing a virtual appliance provided by a Cloud Ecosystem Partner is treated in the same way we would treat any custom image import, as a billable service task.  The cost is $195/hr with a 2 hour minimum, making it $390 total.  This expense will be added to the partners bill and is eligible to be paid for by the monthly credit provided by the CenturyLink Cloud Ecosystem Program.
+Importing a virtual appliance provided by a Cloud Ecosystem Partner aligns with how a customer would import a custom image and is considered a billable service task.  The cost for the Service Task is $195/hr with a 2 hour minimum, making it $390 total.  Additional support required would be $195/hr.  More information on Service Task Fees is available here: http://www.centurylinkcloud.com/service-tasks#Pricing
