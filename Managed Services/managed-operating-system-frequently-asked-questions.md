@@ -46,7 +46,7 @@
 
 <p><strong>Q: How do I log into my server?</strong>
 </p>
-<p>A: To access your managed VM, you will need your Local Account server name and password, unless you have created a Dedicated Active Directory Domain or are using a CenturyLink Shared Active Directory Domain.
+<p>A: To access your managed VM, you will need your Local Account server name and password, unless you have created a Managed Active Directory Domain or are using a CenturyLink Shared Active Directory Domain.
   The Local Account user name is the full server name, and the password credential is available in your CenturyLink Cloud Control Portal using the “<em>click to authenticate</em>” link on the server overview page. <em>Please note that the user name and password for your Server is not the same user name and password for the Cloud Control Portal.</em></p>
 <p>Once you have obtained your password, you may access Windows environments using Remote Desktop and RHEL environments using SSH. For more detailed information about accessing your server for the first time, please see the articles for <a href="https://t3n.zendesk.com/entries/45603110-Managed-Windows-Server-Connecting-to-Your-Server-with-Remote-Desktop">Windows Server</a>  or <a href="https://t3n.zendesk.com/entries/45602910-Managed-Red-Hat-Connecting-to-Your-Server-with-SSH">RHEL</a>.<strong></strong>
 </p>
@@ -91,3 +91,7 @@
 <p>Q:    <strong>My VM shows under constructionin Control, but shows that the build has completed successfully?</strong>
 </p>
 <p>A:    On Managed VMs, there are additional tasks that is being processed in the background in order to fully integrate into the Managed system, once this is complete Control will reflect it as active and manageable. </p>
+
+<p><strong>Q: Can I join Managed Servers to my own domain?</strong>
+</p>
+<p>A: Yes, customers may elect to join a Managed Server to their own domain instead of the CenturyLink Shared Active Directory Domain.  In order to join Managed Servers to a <em>dedicated</em> customer domain a user must deploy <a href="http://www.centurylinkcloud.com/knowledge-base/managed-services/getting-started-with-managed-active-directory">Managed Active Directory</a> in the CenturyLink Cloud.</p>
