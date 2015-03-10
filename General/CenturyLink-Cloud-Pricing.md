@@ -1,5 +1,4 @@
 {{{ "title": "CenturyLink Cloud Pricing", "date": "3-10-2015", "author": "Chris Kleban", "attachments": [], "contentIsHTML": false }}}
-
 This page provides a quick reference on where you can found pricing information for our various cloud products. 
 
 Q: Where can I find how much your cloud products cost?
