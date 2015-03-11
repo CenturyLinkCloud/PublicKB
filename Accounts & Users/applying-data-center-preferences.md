@@ -12,7 +12,7 @@ CenturyLink Cloud customers can choose which data centers to make available to t
 
 ###Audience
 
-- [Account administrators and security managers](/knowledge-base/accounts/accounts-&-users/role-permissions-matrix/)
+- [Account administrators and security managers](/knowledge-base/accounts-&-users/role-permissions-matrix/)
 
 ###Detailed Steps
 
