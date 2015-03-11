@@ -12,8 +12,7 @@
 <h3>Steps to Install a Headless GNOME GUI Desktop on Ubuntu Server and Then Remote Control Server Desktop with TightVNC</h3>
 
 <ol>
-  <li>Create an Ubuntu server in CenturyLink Cloud’s Control Portal (see Quick Start Guide for additional details - <a href="../../../entries/20533612-tier-3-quick-start-guide">http://help.tier3.com/entries/20533612-tier-3-quick-start-guide</a>)
-  </li>
+  <li>Create an Ubuntu server in CenturyLink Cloud’s Control Portal</li>
   <li>Establish an OpenVPN tunnel to your CenturyLink Cloud servers (see Quick Start Guide for details), and start an SSH client (The instructions below will utilize PuTTY, see the following URL to download: http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
   and enter IP address of server created in Step 1
   </li>

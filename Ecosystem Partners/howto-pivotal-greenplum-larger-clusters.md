@@ -36,7 +36,7 @@ Greenplum incorporates key performance capabilities, flexible data analytics, en
 
 ### Audience
 
-CenturyLink Cloud Users who will need to repeatedly deploy a Pivotal Greenplum cluster larger than that described in the [deploying a Pivotal Greenplum cluster](../getting-started-with-pivotal-greenplum-blueprint/) document.  If this will be a one time build then adding additional nodes using the expansion Blueprint may be easier.
+CenturyLink Cloud Users who will need to repeatedly deploy a Pivotal Greenplum cluster larger than that described in the [deploying a Pivotal Greenplum cluster](getting-started-with-pivotal-greenplum-blueprint/) document.  If this will be a one time build then adding additional nodes using the expansion Blueprint may be easier.
 
 
 ### Creating a custom Blueprint
@@ -45,7 +45,7 @@ Single button deploy of an arbitrary sized Pivotal Greenplum cluster.
 
 #### Steps
 
-1. **Review creating a new Blueprint** referencing the [How to build a blueprint KB](../blueprints/how-to-build-a-blueprint/) if necessary
+1. **Review creating a new Blueprint** referencing the [How to build a blueprint KB](../Blueprints/how-to-build-a-blueprint/) if necessary
 
   * (Wizard step 1) Complete as normal
   * (Wizard step 2) Do not add any servers in this step
@@ -57,7 +57,3 @@ Single button deploy of an arbitrary sized Pivotal Greenplum cluster.
   <img src="../images/pivotal_greenplum/customize_blueprint.png" style="">
 
 3. **Save Blueprint**
-
-
-
-### Frequently Asked Questions

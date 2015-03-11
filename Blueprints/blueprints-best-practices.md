@@ -10,7 +10,7 @@ Blueprints are a saved and repeatable workflow that bundles components like Temp
 
 See also the KB articles on
 
-- [Blueprint Best Practices](templates-best-practices.md)
+- [Templates Best Practices](templates-best-practices.md)
 - [Packages Best Practices](packages-best-practices.md)
 - [Differentiating the Template, Package and Blueprint components](understanding-the-difference-between-templates-blueprints-and-packages.md)
 

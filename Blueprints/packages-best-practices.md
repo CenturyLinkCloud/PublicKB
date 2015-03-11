@@ -18,7 +18,7 @@ Related:
 
 ### Adhere to published Package maximums
 
-See the published [Package maximums and limits](blueprint-package-and-template-maximum-limits). While there are no size limitations note that the maximum execution time for a package is five minutes.  This means large network transfers may exceed this limit and should be redesigned.
+See the published [Package maximums and limits](blueprint-package-and-template-maximum-limits.md). While there are no size limitations note that the maximum execution time for a package is five minutes.  This means large network transfers may exceed this limit and should be redesigned.
 
 Mitigate this by:
 
