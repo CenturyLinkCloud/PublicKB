@@ -9,8 +9,8 @@
 Understanding VM Deployment Options and Power States
 <h3>Templates</h3>
 <ul>
-  <li>Definition: &nbsp;A Virtual Machine template provides a standardized group of hardware and software settings that can be used repeatedly to create new virtual machines configured with those settings.</li>
-  <li>How To: <a href="../Servers/how-to-create-customer-specific-os-templates.md/">How To Create A Customer Specific OS Template</a>
+  <li>Definition: A Virtual Machine template provides a standardized group of hardware and software settings that can be used repeatedly to create new virtual machines configured with those settings.</li>
+  <li>How To: <a href="how-to-create-customer-specific-os-templates.md/">How To Create A Customer Specific OS Template</a>
   </li>
   <li>Costs: Customer specific template storage is billed on a per GB basis as Standard Storage. Out of the box Virtual Machine templates in the CenturyLink Cloud platform do not incur a storage fee. </li>
   <li>Sample Use Case: ISV would like to build a virtual machine base template that includes the OS, software packages and security customization to improve speed of delivery to their client base. </li>
@@ -19,12 +19,12 @@ Understanding VM Deployment Options and Power States
 <ul>
   <li>
     <p>Definition: Cloning creates an independent, duplicate copy of an existing virtual machine which is nearly identical to the “source” virtual machine. The cloned machine retains the same hardware, operating system, application and configuration
-      items as the original virtual machine; however, certain items, such as the server’s security identifier, are changed during the process. For some further information around cloning, please see <a href="../Servers/cloning-best-practices.md"
+      items as the original virtual machine; however, certain items, such as the server’s security identifier, are changed during the process. For some further information around cloning, please see <a href="cloning-best-practices.md"
      >Cloning Best Practices</a>
     </p>
   </li>
   <li>
-    <p>How To: <a href="../Servers/cloning-best-practices/how-to-clone-a-virtual-machine-os-instance.md/">How To Clone A Virtual Machine Instance</a>
+    <p>How To: <a href="how-to-clone-a-virtual-machine-os-instance.md/">How To Clone A Virtual Machine Instance</a>
     </p>
   </li>
   <li>
@@ -40,7 +40,7 @@ Understanding VM Deployment Options and Power States
       files that make up the virtual machine. This includes disks, memory, and other devices, such as virtual network interface cards.</p>
   </li>
   <li>
-    <p>How To: <a href="../Servers/creating-and-managing-server-snapshots.md/">Creating & Managing Server Snapshots</a>
+    <p>How To: <a href="creating-and-managing-server-snapshots.md/">Creating & Managing Server Snapshots</a>
     </p>
   </li>
   <li>
@@ -64,9 +64,9 @@ Understanding VM Deployment Options and Power States
   <li>
       <p>Costs: In the pause state, a customer pays for storage consumed by the virtual machine and licensing costs. Compute and memory costs are not levied. Managed Services costs are Levied in a pause state.
   </li>
-  <li>Sample Use Case: &nbsp;A customer maintains a development and staging environment for their production workloads. This environment is only used during business hours 8 AM to 8 PM EST. The IT department, in order to save costs, creates a
+  <li>Sample Use Case: A customer maintains a development and staging environment for their production workloads. This environment is only used during business hours 8 AM to 8 PM EST. The IT department, in order to save costs, creates a
     scheduled pause and power on event during off hours. This automated task eliminates CPU &amp; RAM fee's between the 8 PM and 8 AM EST time window for these environments.</li>
-  <li><strong>NOTE: &nbsp;Customers who use the Power Off or Stop OS function receive the same cost benefits detailed above</strong>
+  <li><strong>NOTE: Customers who use the Power Off or Stop OS function receive the same cost benefits detailed above</strong>
   </li>
 </ul>
 <p>
