@@ -33,14 +33,30 @@ The top of each .md file contains metadata about the knowledge base article itse
 
 3. Once your branch has been created, make your changes (add, edit, delete) your knowledge base article in your favorite Markdown editor (we like [Atom](https://atom.io/)).
 
-  ### Links
+  ### Links (KB article to KB article)
 
-  Links to other articles in the PublicKB repo should follow this format:
+  Links to articles in the **same** kb category should follow this format:
+
+    ```
+    [Link Text](kb-article-name.md)
+    ```
+    
+    so like this:
+    
+    ```
+    [Packages Best Practices](packages-best-practices.md)
+    [Using SAML for Single-Sign-On](using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md )
+    ```
+
+  Links to articles in a **different** kb category should follow this format:
 
     ```
     [Link Text](../category/kb-article-name.md)
-
+    ```
+    
     so like this (folder names are case-sensitive):
+    
+    ```
     [Packages Best Practices](../Blueprints/packages-best-practices.md)
     [Using SAML for Single-Sign-On](../Control Portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md )
     ```

@@ -39,11 +39,11 @@ CenturyLink Cloud Users
 <table>
   <tr>
     <th>
-	  <h1><a style="color: #0f6bb4;" href="https://foundationdb.com/key-value-store"><img style="border:0;vertical-align: middle;with:48;" src="../images/foundationdb/kv_store_icon.png" width="48" height="45">Key-Value Store</a></h1>
-	</th>
+      <h1><a style="color: #0f6bb4;" href="https://foundationdb.com/key-value-store"><img style="border:0;vertical-align: middle;with:48;" src="../images/foundationdb/kv_store_icon.png" width="48" height="45">Key-Value Store</a></h1>
+    </th>
     <th>
-	  <h1 style="padding-left: 90px;"><img style="border:0;vertical-align: middle;with:48;" src="../images/foundationdb/sql_layer_icon.png" width="48" height="44"><a style="color: #6bac4d;" href="https://foundationdb.com/layers/sql">SQL Layer</a></h1>
-	</th>
+      <h1 style="padding-left: 90px;"><img style="border:0;vertical-align: middle;with:48;" src="../images/foundationdb/sql_layer_icon.png" width="48" height="44"><a style="color: #6bac4d;" href="https://foundationdb.com/layers/sql">SQL Layer</a></h1>
+    </th>
   </tr>
 
   <tr>
@@ -66,7 +66,7 @@ CenturyLink Cloud Users
 
   Click either of the items at right to access that Blueprint directly.
 
-  [![](../images/foundationdb/foundation-1.png)](https://control.tier3.com/blueprints/browser/details/2002) 
+  [![](../images/foundationdb/foundation-1.png)](https://control.tier3.com/blueprints/browser/details/2002)
   [![](../images/foundationdb/foundation-2.png)](https://control.tier3.com/blueprints/browser/details/2089)
 
   Alternately, starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “FoundationDB” in the keyword search on the right side of the page.
@@ -107,44 +107,44 @@ CenturyLink Cloud Users
   ```
   [root@VA1KRAPFDB101 ~]# fdbcli
   Using cluster file `/etc/foundationdb/fdb.cluster'.
-  
+
   The database is available.
-  
+
   Welcome to the fdbcli. For help, type `help'.
   fdb> status
-  
+
   Using cluster file `/etc/foundationdb/fdb.cluster'.
-  
+
   Configuration:
     Redundancy mode        - double
     Storage engine         - ssd
     License                - See foundationdb.com/license
     Coordinators           - 1
-  
+
   Cluster:
     FoundationDB processes - 6
     Machines               - 3
     Memory availability    - 4.5 GB per process on machine with least available
     Fault Tolerance        - 0 machines
     Server time            - Mon Feb 23 17:00:42 2015
-  
+
   Data:
     Replication health     - Healthy
     Moving data            - 0.000 GB
     Sum of key-value sizes - 0 MB
     Disk space used        - 0 MB
-  
+
   Operating space:
     Storage server         - 19.7 GB free on most full server
     Log server             - 19.7 GB free on most full server
-  
+
   Workload:
     Read rate              - 10 Hz
     Write rate             - 1 Hz
     Transactions started   - 4 Hz
     Transactions committed - 1 Hz
     Conflict rate          - 0 Hz
-  
+
   Client time: Mon Feb 23 17:00:42 2015
   ```
 
@@ -157,9 +157,9 @@ CenturyLink Cloud Users
   fdbsql (driver 2.0, layer 2.0.2)
   root=> SELECT VERSION();
          _SQL_COL_1
-		 -----------------------------
-		  FoundationDB 2.0.2 +1059266
-			(1 row)
+         -----------------------------
+          FoundationDB 2.0.2 +1059266
+            (1 row)
 
   root=>
   ```
@@ -180,10 +180,9 @@ CenturyLink Cloud Users
 
   Servers are built using private IPs only with access with client or IPSEC VPN.  For access from the Internet at large add a public IP to your master server.
 
-  <a href="../../network/how-to-add-public-ip-to-virtual-machine/">
+
     <img style="border:0;width:50px;vertical-align:middle;" src="../images/shared_assets/fw_icon.png">
-    Adding a public IP to your virtual machine
-  </a>
+    [Adding a public IP to your virtual machine](../Network/how-to-add-public-ip-to-virtual-machine.md)
 
 
 ### Pricing
@@ -204,7 +203,7 @@ Paid Silver, Gold, and Platinum support plans are available from https://foundat
 
 **Who should I contact for support?**
 
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../Support/how-do-i-report-a-support-issue.md).
 * For issues related to deploying the FoundationDB Blueprints and application operation on CenturyLink Cloud and you have a paid license, please contact centurylinkcloud-sales@foundationdb.com or follow your existing FoundationDB support process if known.
 * For issues related to deploying the FoundationDB Blueprints and application operation on CenturyLink Cloud and you do not have a paid license, [sign up for access to the support community](https://foundationdb.com/get).
 
@@ -213,5 +212,3 @@ Paid Silver, Gold, and Platinum support plans are available from https://foundat
 [![](../images/foundationdb/kv_getting_started.png)](https://foundationdb.com/key-value-store/documentation/index.html)
 
 [FoundationDB](https://foundationdb.com/key-value-store/documentation/index.html) has a massive store of [documentation](https://foundationdb.com/key-value-store/documentation/index.html) to help you get started and tutorials to make you successful.
-
-
