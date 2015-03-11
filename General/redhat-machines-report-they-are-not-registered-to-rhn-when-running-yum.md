@@ -3,7 +3,7 @@
   "date": "11-25-2014",
   "author": "James Morris",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 ###Red Hat Update Infrastructure
