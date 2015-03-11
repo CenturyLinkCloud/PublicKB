@@ -3,19 +3,18 @@
   "date": "1-5-2015",
   "author": "Chris Little",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
-Understanding VM Deployment Options and Power States
 <h3>Templates</h3>
-<ul>
-  <li>Definition: A Virtual Machine template provides a standardized group of hardware and software settings that can be used repeatedly to create new virtual machines configured with those settings.</li>
-  <li>How To: <a href="how-to-create-customer-specific-os-templates.md/">How To Create A Customer Specific OS Template</a>
-  </li>
-  <li>Costs: Customer specific template storage is billed on a per GB basis as Standard Storage. Out of the box Virtual Machine templates in the CenturyLink Cloud platform do not incur a storage fee. </li>
-  <li>Sample Use Case: ISV would like to build a virtual machine base template that includes the OS, software packages and security customization to improve speed of delivery to their client base. </li>
-</ul>
-<h3>Clones</h3>
+
+- Definition: A Virtual Machine template provides a standardized group of hardware and software settings that can be used repeatedly to create new virtual machines configured with those settings.</li>
+- [How To Create A Customer Specific OS Template](how-to-create-customer-specific-os-templates.md)
+- Costs: Customer specific template storage is billed on a per GB basis as Standard Storage. Out of the box Virtual Machine templates in the CenturyLink Cloud platform do not incur a storage fee. </li>
+- Sample Use Case: ISV would like to build a virtual machine base template that includes the OS, software packages and security customization to improve speed of delivery to their client base. </li>
+
+### Clones
+
 <ul>
   <li>
     <p>Definition: Cloning creates an independent, duplicate copy of an existing virtual machine which is nearly identical to the “source” virtual machine. The cloned machine retains the same hardware, operating system, application and configuration
