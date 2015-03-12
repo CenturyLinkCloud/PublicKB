@@ -30,7 +30,7 @@
 
 ### Steps
 
-1. Please review the Ticket Prioritization Matrix so that you understand what priority your ticket should be.</li>
+1. Please review the Ticket Prioritization Matrix so that you understand what priority your ticket should be.
 2. Email escalation@t3n.zendesk.com with the following information:
 
   **Subject:** ESCALATION: Ticket - &lt;your ticket number&gt;
@@ -44,7 +44,7 @@
 
 **Is this capability available 24x7?**
 
-Yes, while the management team that responds to these requests is based on the USA West Coast, they do respond to escalations within 15 minutes. **The exception is an escalation for Service Tasks, which are only acknowledged from 7am-7pmPT**.
+Yes, while the management team that responds to these requests is based on the USA West Coast, they do respond to escalations within 15 minutes. *The exception is an escalation for Service Tasks, which are only acknowledged from 7am-7pmPT*.
 
 **What criteria are used to evaluate a Service Request escalation request?**
 
