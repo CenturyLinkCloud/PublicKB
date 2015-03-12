@@ -33,9 +33,11 @@
 1. Please review the Ticket Prioritization Matrix so that you understand what priority your ticket should be.
 2. Email escalation@t3n.zendesk.com with the following information:
 
-  **Subject:** ESCALATION: Ticket - &lt;your ticket number&gt;
+  ```
+  Subject: ESCALATION: Ticket - <your ticket number>
 
-  **Message Body:** Your message and a brief explanation of why you are escalating the ticket.
+  Body: Your message and a brief explanation of why you are escalating the ticket.
+  ```
 
 3. A ticket will be created in our system for your escalation and it will be automatically escalated to the CenturyLink Cloud operations management.
 
