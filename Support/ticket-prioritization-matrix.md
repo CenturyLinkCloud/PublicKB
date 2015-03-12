@@ -10,9 +10,8 @@ Tickets are assigned a priority and worked in order of descending priority. The 
 
 ### Developer Support (Free)
 
-<table>
-    <thead>
-        <tr>
+<table class="table table--large permission-matrix">
+<thead><tr class="section-header">
             <th>Priority</th>
             <th>Description</th>
             <th>First Response</th>
@@ -54,9 +53,9 @@ Ticket Escalation Mechanism - Requires a support contract
 ------------
 
 ### Professional Support
-  <table>
-  <thead>
-      <tr>
+
+<table class="table table--large permission-matrix">
+<thead><tr class="section-header">
           <th>Priority</th>
           <th>Description</th>
           <th>First Response</th>
@@ -183,9 +182,8 @@ Ticket Escalation Mechanism - Requires a support contract
 
 ### Enterprise Support
 
-<table>
-<thead>
-    <tr>
+<table class="table table--large permission-matrix">
+<thead><tr class="section-header">
         <th>Priority</th>
         <th>Description</th>
         <th>First Response</th>
@@ -252,9 +250,8 @@ Ticket Escalation Mechanism - Requires a support contract
 
 ### Service Tasks
 
-<table>
-<thead>
-    <tr>
+<table class="table table--large permission-matrix">
+<thead><tr class="section-header">
         <th>Priority</th>
         <th>Description</th>
         <th>First Response</th>
