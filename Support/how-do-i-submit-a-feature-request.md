@@ -9,7 +9,7 @@
 <p><strong>Description (goal/purpose)</strong>
 </p>
 <p>CenturyLink Cloud releases software updates every month and we're focused on delivering customer-driven innovation. How can you submit ideas for new features? CLC offers a few primary channels for customers and partners to use. This KB article outlines
-  the preferred mechanisms.&nbsp;<strong>How do you check the status of a request after you've submitted it?&nbsp;</strong>Check out [this KB for more information](i-just-submitted-a-feature-request-now-what.md).</p>
+  the preferred mechanisms.&nbsp;<strong>How do you check the status of a request after you've submitted it?&nbsp;</strong>Check out <a href="i-just-submitted-a-feature-request-now-what.md">this KB for more information</a>.</p>
 <p><strong>Audience</strong>
 </p>
 <ul>
