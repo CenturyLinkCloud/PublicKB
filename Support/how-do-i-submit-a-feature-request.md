@@ -9,7 +9,7 @@
 <p><strong>Description (goal/purpose)</strong>
 </p>
 <p>CenturyLink Cloud releases software updates every month and we're focused on delivering customer-driven innovation. How can you submit ideas for new features? CLC offers a few primary channels for customers and partners to use. This KB article outlines
-  the preferred mechanisms.&nbsp;<strong>How do you check the status of a request after you've submitted it?&nbsp;</strong>Check out <a href="https://t3n.zendesk.com/entries/59284254-I-just-submitted-a-feature-request-Now-what-">this KB for more information</a>.</p>
+  the preferred mechanisms.&nbsp;<strong>How do you check the status of a request after you've submitted it?&nbsp;</strong>Check out [this KB for more information](i-just-submitted-a-feature-request-now-what.md).</p>
 <p><strong>Audience</strong>
 </p>
 <ul>
@@ -21,13 +21,13 @@
 </ul>
 <ul>
   <li>
-    <p>If you choose to participate in our UserVoice forum, customers and partners must first be invited. Send an invitation request to <a href="mailto:features@tier3.com">features@tier3.com</a> to get started.</p>
+    <p>If you choose to participate in our UserVoice forum, customers and partners must first be invited. Send an invitation request to <a href="mailto:features@ctl.io">features@ctl.io</a> to get started.</p>
     <p><strong>Detailed Steps (Features Queue)</strong>
     </p>
   </li>
 </ul>
 <ol>
-  <li>Write up a feature request and email it to <a href="mailto:features@tier3.com">features@tier3.com</a>. Provide as many details as you can so that we can accurately evaluate your request.</li>
+  <li>Write up a feature request and email it to <a href="mailto:features@ctl.io">features@ctl.io</a>. Provide as many details as you can so that we can accurately evaluate your request.</li>
   <li>Feature requests are evaluated every two weeks and if accepted, are added to the product backlog. Those who submit features will receive email notifications when the feature request has been evaluated.</li>
 </ol>
 <p><strong>Detailed Steps (UserVoice)</strong>
