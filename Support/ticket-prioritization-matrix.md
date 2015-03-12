@@ -115,7 +115,6 @@ Ticket Escalation Mechanism - Requires a support contract
           30 minutes
         </td>
         <td>
-
           <ul>
             <li>Updates to all impacted customers and company-all hourly</li>
             <li>Status page updated</li>
