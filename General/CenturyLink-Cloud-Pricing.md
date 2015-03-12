@@ -3,11 +3,11 @@ This page provides a quick reference on where you can find pricing information f
 
 **Q: Where can I find how much your cloud products cost?**
 
-A: You can find pricing information for all our cloud products on this single web page. 
+A: You can find pricing information for all our cloud products on this single web page: http://www.centurylinkcloud.com/pricing
 
 **Q: Is there a way to estimate what my desired cloud usage would cost me per month?**
 
-A: Yes, you can use our awesomely simple cost estimator tool.
+A: Yes, you can use our awesomely simple cost estimator: http://www.centurylinkcloud.com/estimator
 
 **Q: Is there a way to estimate what my actual monthly bill would be, based on my currently in-use cloud capacity?**
 
