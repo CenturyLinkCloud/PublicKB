@@ -66,8 +66,9 @@ CenturyLink Cloud includes an operation to add a public IP address to any server
  * Inbound requests to the public IP will always function as expected
  * Egress traffic sourcing from the server will **not** come from the new public IP address.  Egress traffic will appear to source from the public IP associated with the primary server IP address (this can only be configured via the control portal).  If no public IP is associated with the primary server IP address then the traffic will be NATed behind a shared public IP address associated with a number of hosts in the datacenter.
 
- | Scenario  | Ingress Public IP | Egress Public IP  |
- |--- |---  | --- |
- | Default Deployment - No public IP, single default private IP | - | Shared public IP |
+
+| Scenaro   	| Ingress Public IP  	| Egress Public IP  	|
+|---	|---	|---	|
+| Default Deployment - No public IP, single default private IP  	| -   	| Shared public IP  	|
  | Add public IP from control - Server has one private IP and a static NAT to the primary private IP | Static NAT to private IP address | Static NAT to private IP address |
  | Add public IP from Blueprint - Server has two private IPs and a static NAT to the secondary IP | Static NAT to secondary private IP address | Shared public IP |
