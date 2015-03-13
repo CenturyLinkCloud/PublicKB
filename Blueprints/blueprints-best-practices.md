@@ -48,26 +48,26 @@ Considerations:
 
 If your deployment workflow involves multiple servers, such as deploying a new cluster, some mechanism external to Blueprints is needed to facilitate connection and initiation activities across the different servers.  Common patterns for resolving this:
 
-#### Deploying a "cluster"
+### Deploying a "cluster"
 If you only need to define a "master" server - see the [Master and Slave Node Blueprint Example Package](https://github.com/CenturyLinkCloud/Ecosystem/tree/master/Blueprints/Reference%20Templates/Master%20and%20Slave%20Node%20Blueprint%20Example%20Package%20-%20Linux) on Github.  In this pattern the "master" is selected by the deploying user at deploy time from a drop down menu. Make careful use of the "Global" variable type as referenced in [Blueprints Script and Software Package Management](blueprints-script-and-software-package-management.md).
 
-#### Adding to Existing Environment
+### Adding to Existing Environment
 If you are adding capacity to an existing environment the most common pattern is a drop down where you can select an existing asset which the new server is able register with.
 
-#### Caching Package Parameters
+### Caching Package Parameters
 The parameter types and other metadata is embedded within the Blueprint definition.  Changes to parameter names, types, etc. in an included package will not be reflected until the blueprint is edited and republished.
 
-#### Advanced Needs
+### Advanced Needs
 If your state needs are more advanced, such as requiring key exchange, automated registering of new assets, self-discovery, etc. we recommend investigating the bpbroker toolset which was specifically created to support this workflow.
 
-#### Adding a Public IP Address
+### Adding a Public IP Address
 CenturyLink Cloud includes an operation to add a public IP address to any server as part of the Blueprint deployment.  Take note that this operation adds both an additional private IP address then NATs a new public IP to the server.
 
  * Inbound requests to the public IP will always function as expected
  * Egress traffic sourcing from the server will **not** come from the new public IP address.  Egress traffic will appear to source from the public IP associated with the primary server IP address (this can only be configured via the control portal).  If no public IP is associated with the primary server IP address then the traffic will be NATed behind a shared public IP address associated with a number of hosts in the datacenter.
 
 
-| Scenaro   	| Ingress Public IP  	| Egress Public IP  	|
+| Scenario   	| Ingress Public IP  	| Egress Public IP  	|
 |---	|---	|---	|
 | Default Deployment - No public IP, single default private IP  	| -   	| Shared public IP  	|
  | Add public IP from control - Server has one private IP and a static NAT to the primary private IP | Static NAT to private IP address | Static NAT to private IP address |
