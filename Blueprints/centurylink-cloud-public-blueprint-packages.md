@@ -3,7 +3,7 @@
   "date": "10-14-2014",
   "author": "Bryan Friedman",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 ### Description
