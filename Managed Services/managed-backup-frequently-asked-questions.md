@@ -1,6 +1,6 @@
 {{{
   "title": "Managed Backup - Frequently Asked Questions",
-  "date": "01-22-2015",
+  "date": "03-13-2015",
   "author": "Bryan Friedman",
   "attachments": [
     {
@@ -119,3 +119,12 @@ Monthly<br />Price per GB
 
 <p><strong>Q: Who do I contact if I have trouble with or questions about Managed Backup on my VM?</strong></p>
 <p>A: The CenturyLink Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at 1-888-638-6771.</p>
+
+<p><strong>Q: Is there a customer accessible API which allows for turning on/off backups, configuring backups, and triggering restores?</strong></p>
+<p>A: This feature is not available currently.</p>
+
+<p><strong>Q: As a customer can I leverage Microsoft Volume Shadow Copy Service (VSS)?</strong></p>
+<p>A: The Master server in the DPB infrastructure is already configured to support this. There is no need to configure the backup agent on the VM. However, VSS must be configured appropriately on the Operating System.</p>
+
+<p><strong>Q: As a customer can I request on-demand backups out of the normal scheduled jobs?</strong></p>
+<p>A: This is possible via a request to Support.  The backup will have the standard product feature of 2 weeks retention at the local data center and a simultaneous copy at the secondary data center.</p>
