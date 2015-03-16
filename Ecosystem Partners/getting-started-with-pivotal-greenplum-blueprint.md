@@ -6,13 +6,6 @@
   "contentIsHTML": false
 }}}
 
-<!--
-
-TODO:
-* Customer support email address
-
--->
-
 
 
 ### Overview
