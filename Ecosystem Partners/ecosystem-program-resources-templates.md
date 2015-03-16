@@ -9,23 +9,19 @@
 
 CenturyLink [Ecosystem Program Partner Members](centurylink-cloud-ecosystem-program-guide.md) gain access to a bevy of [resources](ecosystem-program-resources.md) that make integrations easy.
 
-Using the CenturyLink Cloud API partners and customers can query and engage with cloud assets including servers, accounts, billing, etc.
+Creating Server Templates on CenturyLink Cloud enables customers to deploy bit-for-bit replicas of your software as a virtual appliance.
 
 ### Core Documentation
 
-Direct API documentation is available from the API Overview pages.  This covers the:
+Reference the following key pages from the CenturyLink Cloud [Knowledge Base](/knowledge-base):
 
-* [Legacy v1 API](http://www.centurylinkcloud.com/api-docs/v1)
-* [Current v2 API](http://www.centurylinkcloud.com/api-docs/v2)
+* [How To Publish a Partner Template from a Virtual Appliance](How To Publish a Partner Template from a Virtual Appliance.md)
+* [Requirements for custom image/VM imports](../../service-tasks/service-tasks/requirements-for-custom-imagevm-imports/) (case 1)
+* [Best Practices and Preparation for a Virtual Machine/OVF/OVA Import](../../service-tasks/best-practices-and-preparation-for-a-virtual-machineovfova-import/)
+* [Collection of Templates Best Practices](../../blueprints/templates-best-practices/)
 
-### SDKs
 
-A variety of language specific SDKs exist to easy integration efforts.
-
-* [Python SDK](http://www.centurylinkcloud.com/api-docs/v1)
-* *More currently under development*
 
 ### Contributed Resources
 
-* [API Example Scripts](https://github.com/CenturyLinkCloud/Ecosystem/tree/master/API)
-* [Python SDK example scripts](https://github.com/CenturyLinkCloud/clc-python-sdk/tree/master/examples)
+*More to come*

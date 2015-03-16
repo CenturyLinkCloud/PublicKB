@@ -9,23 +9,21 @@
 
 CenturyLink [Ecosystem Program Partner Members](centurylink-cloud-ecosystem-program-guide.md) gain access to a bevy of [resources](ecosystem-program-resources.md) that make integrations easy.
 
-Using the CenturyLink Cloud API partners and customers can query and engage with cloud assets including servers, accounts, billing, etc.
+Integrating with the CenturyLink Cloud Blueprints orchestration engine enables customers to deploy your software on their existing servers or to create the workflow for a complex multi-server/multi-service solution suite.  This integration format provides a unified deployment experience for users and is the preferred integration method when available.
 
 ### Core Documentation
 
-Direct API documentation is available from the API Overview pages.  This covers the:
+Reference the following key pages from the CenturyLink Cloud [Knowledge Base](/knowledge-base):
 
-* [Legacy v1 API](http://www.centurylinkcloud.com/api-docs/v1)
-* [Current v2 API](http://www.centurylinkcloud.com/api-docs/v2)
+* [Blueprints Category](../../blueprints/) in the Knowledge Base
+* Best Practices in [Packages](../../blueprints/packages-best-practices/) and [Blueprints](../../blueprints/blueprints-best-practices/)
+* [Package and Blueprint maximums](../../blueprints/blueprint-package-and-template-maximum-limits/)
+* [Naming conventions for Public Packages and Blueprints](../../blueprints/creating-public-blueprint-packages/)
+* [How to Build a Blueprint](../../blueprints/how-to-build-a-blueprint/)
 
-### SDKs
-
-A variety of language specific SDKs exist to easy integration efforts.
-
-* [Python SDK](http://www.centurylinkcloud.com/api-docs/v1)
-* *More currently under development*
 
 ### Contributed Resources
 
-* [API Example Scripts](https://github.com/CenturyLinkCloud/Ecosystem/tree/master/API)
-* [Python SDK example scripts](https://github.com/CenturyLinkCloud/clc-python-sdk/tree/master/examples)
+* [Blueprint Package Manifest Builder Wizard](http://centurylinkcloud.github.io/Ecosystem/BlueprintManifestBuilder/) ([KB Instructions for use](../../blueprints/blueprint-package-manifest-builder-wizard/))
+* [CenturyLink Cloud Ecosystem Github Repo](https://github.com/CenturyLinkCloud/Ecosystem/tree/master/Blueprints) containing reference patterns, support tools, and the actual packages used in some of our public Blueprints
+* [Blueprint Broker](https://github.com/CenturyLinkCloud/Ecosystem/blob/master/Blueprints/Blueprint%20Broker/README.md) is a cross-platform toolset that includes a discovery service, encrypted key-value store to maintain state, and a mailer tool enabling high-impact post-deployment communication
