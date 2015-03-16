@@ -23,7 +23,7 @@ Below is a list of public packages that have been made available on the CenturyL
 - Install IIS 8 on Windows
 - Install SQL 2012 Client Connectivity Tools on Windows
 - [Install SQL Server on Windows](deploy-microsoft-sql-server-using-blueprint.md)
-- Perform Active Directory Domain Join on Windows
+- [Perform Active Directory Domain Join on Windows](perform-active-directory-domain-join-on-windows.md)
 - Perform PowerShell Remoting Enablement on Windows
 
 ### Linux Packages
