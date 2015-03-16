@@ -30,10 +30,10 @@ class API():
 
 	@staticmethod
 	def DisableSSLVerify():
-		# Disable SSL endpoint verification.
-		#
-		# This also disable certification error warnings within log messages with scope extended
-		# to all usages of the requests module.
+		""" Disable SSL endpoint verification.
+		
+		 This also disable certification error warnings within log messages with scope extended
+		 to all usages of the requests module."""
 
 		clc._SSL_VERIFY = False
 		try:
