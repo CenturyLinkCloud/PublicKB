@@ -186,7 +186,10 @@ class Request(object):
 
 	def Server(self):
 		"""Return server associated with this request."""
-		if self.context_key == 'server':  return(clc.v2.Server(id=self.context_val,alias=self.alias))
+		if self.context_key == 'newserver':
+			server_id = clc.v2.API.Call('GET', self.context_val)['id']
+			return(clc.v2.Server(id=server_id,alias=self.alias))
+		elif self.context_key == 'server':  return(clc.v2.Server(id=self.context_val,alias=self.alias))
 		else:  raise(clc.CLCException("%s object not server" % self.context_key))
 
 
