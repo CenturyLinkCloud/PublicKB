@@ -32,6 +32,8 @@ LOCATION = False
 
 args = False
 
+_SSL_VERIFY = True
+
 _LOGIN_COOKIE_V1 = False
 _LOGIN_TOKEN_V2 = False
 

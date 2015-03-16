@@ -20,11 +20,26 @@ class API():
 	#
 	@staticmethod
 	def _ResourcePath(relative):
-		if os.path.isfile(os.path.join(getattr(sys, '_MEIPASS', os.path.abspath(".")),relative)):
+		if not clc._SSL_VERIFY:  return(clc._SSL_VERIFY)
+		elif os.path.isfile(os.path.join(getattr(sys, '_MEIPASS', os.path.abspath(".")),relative)):
 			# Pyinstall packaged windows file
 			return(os.path.join(getattr(sys, '_MEIPASS', os.path.abspath(".")),relative))
 		else:
 			return(True)
+
+
+	@staticmethod
+	def DisableSSLVerify():
+		# Disable SSL endpoint verification.
+		#
+		# This also disable certification error warnings within log messages with scope extended
+		# to all usages of the requests module.
+
+		clc._SSL_VERIFY = False
+		try:
+			requests.packages.urllib3.disable_warnings()
+		except:
+			pass
 
 
 	@staticmethod
@@ -81,7 +96,7 @@ class API():
 		else:  fq_url = "%s/v2/%s" % (clc.defaults.ENDPOINT_URL_V2,url)
 
 		headers = {'Authorization': "Bearer %s" % clc._LOGIN_TOKEN_V2}
-		if type(payload) is str:  headers['content-type'] = "Application/json" # added for server ops with str payload
+		if isinstance(payload, basestring):  headers['content-type'] = "Application/json" # added for server ops with str payload
 
 		if method=="GET":
 			r = requests.request(method,fq_url,

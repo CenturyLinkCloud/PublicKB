@@ -148,7 +148,7 @@ class Server(object):
 	def __init__(self,id,alias=None,server_obj=None):
 		"""Create Server object.
 
-		https://t3n.zendesk.com/entries/32859214-Get-Server
+		http://www.centurylinkcloud.com/api-docs/v2#servers-get-server
 
 		#If parameters are populated then create object location.  
 		#Else if only id is supplied issue a Get Policy call

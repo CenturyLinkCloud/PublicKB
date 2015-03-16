@@ -11,7 +11,7 @@ of commands against the CenturyLink Cloud API in a platform independent manner.
 CenturyLink Cloud: http://www.CenturyLinkCloud.com
 Package Github page: https://github.com/CenturyLinkCloud/clc-python-sdk
 
-API Documentaton v1: https://t3n.zendesk.com/categories/20012068-API-v1-0
+API Documentaton v1: http://www.centurylinkcloud.com/api-docs/v1/
 
 """
 
@@ -28,11 +28,6 @@ from clc.APIv1.api import API
 
 
 ####### module/object vars #######
-V1_API_KEY = False
-V1_API_PASSWD = False
-
-
-
 _LOGIN_COOKIE_V1 = False
 
 _V1_ENABLED = False

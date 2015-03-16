@@ -14,6 +14,7 @@ will follow suit.
 * [Disks](#disks) and [Disk](#disk) - `Disks` and `Disk` classes.  Cloud server related disk classes.
 * [Public IPs](#public-ips) and [Public IP](#publicip) - `PublicIPs` and `PublicIP` classes.  Cloud server related public IP classes.
 * [Requests](#requests) and [Request](#request) - `Requests` and `Request` classes.  Interface to work queue for async operations
+* [API](#api) - `API` class.  Internals to set API behavior
 
 
 ## Quick Start
@@ -1409,5 +1410,31 @@ As status option changes the following class variables are populated:
 * request.time_created
 * request.time_executed
 * request.time_completed
+
+
+
+## API
+
+[API pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.api.html)
+
+
+### Class variables
+
+Object variables:
+
+* request.id
+* request.alias
+* request.time_created
+* request.time_executed
+* request.time_completed
+
+
+### clc.v2.DisableSSLVerify()
+```python
+clc.v2.API.DisableSSLVerify( )
+```
+
+Disable SSL endpoint verification.
+This also disable certification error warnings within log messages with scope extended to all usages of the requests module.
 
 
