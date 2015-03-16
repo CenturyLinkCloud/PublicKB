@@ -33,7 +33,7 @@ After reading this article, the user should feel comfortable getting started usi
 
 	![ip.jpg](https://t3n.zendesk.com/attachments/token/kObGC9P2IjP1ate0NexwFNiXz/?name=ip.jpg)
 
-- Allow incoming traffic for ports to an existing server by managing Firewall rules.  Fore more information, vie this link: http://www.centurylinkcloud.com/knowledge-base/network/creating-cross-data-center-firewall-policies/
+- Allow incoming traffic for ports to an existing server by managing Firewall rules.  Fore more information, view this link: http://www.centurylinkcloud.com/knowledge-base/network/creating-cross-data-center-firewall-policies/
 
 	![port.jpg](https://t3n.zendesk.com/attachments/token/1Ufw0JjIWW8XfASYLh4x3Irl9/?name=port.jpg)
 
