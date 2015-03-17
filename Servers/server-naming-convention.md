@@ -13,7 +13,7 @@ All CenturyLink Cloud servers follow a standard naming convention that incorpora
 * **Datacenter**: 3 character alphanumeric code associated with the cloud datacenter.  Always two letters and one number. (system defined)
 * **Account Alias**: 2 to 4 letter alphanumeric code associated with the account that owns the server.  Account owner selects the account alias when creating the account and afterwards this is immutable.
 * **Name**: 1 to 6 character alphanumeric code associated with the server itself.  User selects this when deploying the server.  If deploying a Blueprint a default value will be provided.
-* **Incrementor**: 2 character numeric code (up to 99) beginning with 01 and incrementing each time a server with this naming prefix is deployed to guarantee a globally unique naming key within the cloud portal. (system defined)
+* **Incrementor**: 2 character numeric code (up to 99) beginning with 01 and incrementing each time a server with this naming prefix is deployed to guarantee a globally unique naming key within the cloud portal. This extends to three or characters (non-zero padded) beginning with the 100th instance.  (system defined)
 
 ###Example
 
