@@ -755,6 +755,25 @@ See the [disks](#disks) section for details on interacting with these objects.
 ```
 
 
+### clc.v2.Server.ExecutePackage
+```python
+clc.v2.Server.ExecutePackage( package_id, parameters={} )
+```
+
+Execute an existing Blueprint package on the server.
+
+Requires package ID, currently only available by browsing control and browsing
+for the package itself.  The UUID parameter is the package ID we need.
+
+
+```python
+>>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT06'). \
+           ExecutePackage(package_id="77ab3844-579d-4c8d-8955-c69a94a2ba1a",parameters={}). \
+           WaitUntilComplete()
+0
+```
+
+
 ### clc.v2.Server.GetSnapshots
 ```python
 clc.v2.Server.GetSnapshots()
@@ -1416,17 +1435,6 @@ As status option changes the following class variables are populated:
 ## API
 
 [API pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.api.html)
-
-
-### Class variables
-
-Object variables:
-
-* request.id
-* request.alias
-* request.time_created
-* request.time_executed
-* request.time_completed
 
 
 ### clc.v2.DisableSSLVerify()
