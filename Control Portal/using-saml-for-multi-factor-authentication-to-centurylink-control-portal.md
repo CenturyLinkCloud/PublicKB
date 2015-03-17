@@ -12,7 +12,7 @@ As described in [Using SAML for Single-Sign-On](../Control Portal/using-saml-for
 
 Now, with the addition of the **Require SAML for Login** option provided by Control Portal, customers can *force* users to authenticate through their identity providers to enable additional identity management features like multi-factor authentication (MFA) and user provisioning. This way, the CenturyLink Cloud platform can provide flexible, standards-based capabilities while allowing an organization to keep the nuts-and-bolts of their IdM configurations in their pre-existing systems.
 
-For more details and how SAML works in general and how to specifically setup an ADFS IdP for use with Control Portal, refer to [Using SAML for Single-Sign-On](using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md ).
+For more details and how SAML works in general and how to specifically setup an ADFS IdP for use with Control Portal, refer to [Using SAML for Single-Sign-On](../Control Portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md ).
 
 In the example below, however, we will use a separate software-as-a-service vendor as the identity provider in order to also enforce multi-factor authentication. The following steps will walk through the process of configuring the IdP to add users, enabling MFA and SAML, and configuring CenturyLink Control Portal's SAML settings to enforce the use of the IdP.
 

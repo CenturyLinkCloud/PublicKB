@@ -19,7 +19,7 @@ Customers frequently request information on the Disaster Recovery and Business C
 |Network Failover<sup>2</sup>|Yes, only when disaster event is declared by CenturyLink Cloud|Not required, network failover is addressed architecturally as redundant instances deployed in multiple data centers for data replication & rapid activation.
 |Declaration of Disaster|CenturyLink Cloud|Customer
 
-1.  **Refer to [CenturyLinkCloud.com](www.centurylinkcloud.com) for service task overview and costs for DR Testing of VM Instances on premium storage**
+1.  **Refer to [CenturyLinkCloud.com](http://www.centurylinkcloud.com) for service task overview and costs for DR Testing of VM Instances on premium storage**
 2.  **includes public IP, Private IP, VLAN, Firewall Rules**
 
 ### Exclusions

@@ -179,4 +179,4 @@ OSSEC is Open Source community owned software with no associated cost to acquire
 
 OSSEC is packaged and provided by CenturyLink as a courtesy to ease startup time. All support for this Open Source software is provided by the community. Please start at http://www.ossec.net/
 
-For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../Support/how-do-i-report-a-support-issue.md).
