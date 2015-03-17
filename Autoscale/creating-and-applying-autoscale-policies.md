@@ -64,7 +64,7 @@
     <br /><img src="https://t3n.zendesk.com/attachments/token/z6p39slkxo9ip68/?name=autoscale-cpu08.png" alt="autoscale-cpu08.png" />
   </li>
   <li>Vertical Autoscale policies can be added to&nbsp;existing&nbsp;servers or during the server creation process. These steps will show how to apply to an existing server (but similar steps below are followed after setting the "cpu autoscale" option to
-    "on" when creating a server.) Locate a Windows Server 2012 Datacenter Edition, Red Hat Enterprise Linux 5 or 6, or Ubuntu 10/12/14 x64 server to apply a vertical Autoscale policy to. (If you attempt to add a vertical Autoscale policy to a server that
+    "on" when creating a server.) Locate a Windows Server 2012 Datacenter Edition, Red Hat Enterprise Linux 5/6/7, or Ubuntu 10/12/14 x64 server to apply a vertical Autoscale policy to. (If you attempt to add a vertical Autoscale policy to a server that
     isn't based on one of the previously mentioned OSes, you will see no option available to do so. Bug in platform right now - new UI does not do this.) From the server settings page, mouseover the CPU utilization chart and click the&nbsp;<strong>EDIT&nbsp;</strong>button
     that appears.
     <br /><img src="https://t3n.zendesk.com/attachments/token/sWaYmXMfqqetZCtDvi1fVcqAL/?name=autoscale-server-settings.png" alt="autoscale-server-settings.png" />
