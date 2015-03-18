@@ -7,19 +7,19 @@
 }}}
 
 
-CenturyLink [Ecosystem Program Partner Members](centurylink-cloud-ecosystem-program-guide.md) gain access to a bevy of [resources](ecosystem-program-resources.md) that make integrations easy.
+CenturyLink [Ecosystem Program Partner Members](../Ecosystem Partners/centurylink-cloud-ecosystem-program-guide.md) gain access to a bevy of [resources](../Ecosystem Partners/ecosystem-program-resources.md) that make integrations easy.
 
 Integrating with the CenturyLink Cloud Blueprints orchestration engine enables customers to deploy your software on their existing servers or to create the workflow for a complex multi-server/multi-service solution suite.  This integration format provides a unified deployment experience for users and is the preferred integration method when available.
 
 ### Core Documentation
 
-Reference the following key pages from the CenturyLink Cloud [Knowledge Base](/knowledge-base):
+Reference the following key pages from the CenturyLink Cloud [Knowledge Base](http://www.centurylinkcloud.com/knowledge-base):
 
-* [Blueprints Category](../blueprints/) in the Knowledge Base
-* Best Practices in [Packages](../blueprints/packages-best-practices/) and [Blueprints](../blueprints/blueprints-best-practices/)
-* [Package and Blueprint maximums](../blueprints/blueprint-package-and-template-maximum-limits/)
-* [Naming conventions for Public Packages and Blueprints](../blueprints/creating-public-blueprint-packages/)
-* [How to Build a Blueprint](../blueprints/how-to-build-a-blueprint/)
+* [Blueprints Category](../Blueprints/) in the Knowledge Base
+* Best Practices in [Packages](../Blueprints/packages-best-practices.md) and [Blueprints](../Blueprints/blueprints-best-practices.md)
+* [Package and Blueprint maximums](../Blueprints/blueprint-package-and-template-maximum-limits.md)
+* [Naming conventions for Public Packages and Blueprints](../Blueprints/creating-public-blueprint-packages.md)
+* [How to Build a Blueprint](../Blueprints/how-to-build-a-blueprint.md)
 
 
 ### Contributed Resources
