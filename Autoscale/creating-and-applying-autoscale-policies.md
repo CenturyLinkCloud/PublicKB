@@ -140,21 +140,21 @@ This KB article describes all of the steps for creating, applying, and testing b
 
   <img src="../images/createautoscale-h-policy-details.png" alt="h-policy-details.png" />
 
-12. To test your policy, start by creating a significant amount of load on the powered on servers in the group in order to exceed the upper threshold for a sustained period of time. In the example below, see that only two of four servers are currently powered on and we are using the <strong>stress</strong> tool in Linux to simulate very high CPU utilization on the servers.
+13. To test your policy, start by creating a significant amount of load on the powered on servers in the group in order to exceed the upper threshold for a sustained period of time. In the example below, see that only two of four servers are currently powered on and we are using the <strong>stress</strong> tool in Linux to simulate very high CPU utilization on the servers.
 
   <img src="../images/createautoscale-two-powered-on.png" alt="two-powered-on.png" /><img src="../images/createautoscale-linux-stress-top.png" alt="linux-stress-top.png"
     />
 
-13. After the threshold period has passed, note that there is an additional server in the group that is now powered on and an entry was added to the activity history. The activity history entry shows the average utilization amount that triggered the Autoscale and which servers were affected.
+14. After the threshold period has passed, note that there is an additional server in the group that is now powered on and an entry was added to the activity history. The activity history entry shows the average utilization amount that triggered the Autoscale and which servers were affected.
 
   <img src="../images/createautoscale-three-servers-powered-on.png" alt="three-servers-powered-on.png" />
 
   <img src="../images/createautoscale-activity-log-h-scale-event.png"
     alt="activity-log-h-scale-event.png" />
-14. After the peak usage has dropped below the lower threshold, wait until the cool down period has passed, and watch for a scale in to occur.
+15. After the peak usage has dropped below the lower threshold, wait until the cool down period has passed, and watch for a scale in to occur.
 
   <img src="../images/createautoscale-two-powered-on.png" alt="two-powered-on.png" />
 
   <img src="../images/createautoscale-activity-log-h-scale-in-event.png" alt="activity-log-h-scale-in-event.png" />
 
-15. Autoscale policies can be changed at any time and those changes are instantly reflected on the related servers. In addition, at any point you can remove the policy from a group, and all the servers will remain in the group and in the load balancer pool, but none will be powered on/off automatically.
+16. Autoscale policies can be changed at any time and those changes are instantly reflected on the related servers. In addition, at any point you can remove the policy from a group, and all the servers will remain in the group and in the load balancer pool, but none will be powered on/off automatically.
