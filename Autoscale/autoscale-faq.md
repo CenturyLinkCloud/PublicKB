@@ -24,11 +24,7 @@ Vertical autoscaling (scaling up/down) adds (or removes) CPUs to (or from) an ex
 
 **When should I use horizontal Autoscale vs. vertical Autoscale?**
 
-Many enterprise workloads can see an increase in performance just by adding capacity to existing servers without the need for additional servers. This is often the case if the workload is purely CPU-constrained and not I/O bound. For
-  these types of workloads, vertical autoscale may prove to be enough. If you find that your workload has very large spikes that require bigger bursts than vertical Autoscale may be able to provide, horizontal Autoscale is definitely a powerful option
-  as well. You can always start out using vertical Autoscale, and later change to using a horizontal Autoscale policy instead if you determine that it isn't enough for you. Or, if you know your workload causes your servers to become I/O bound, you
-  may want to use horizontal Autoscale from the start. Also, horizontal Autoscale relies on load balancers to scale the workload. If you have a workload that doesn't scale out well this way (i.e. database servers), vertical Autoscale is the better bet.
-  Conversely, the web tier is a great candidate for horizontal Autoscale as it scales out behind a load balancer well.
+Many enterprise workloads can see an increase in performance just by adding capacity to existing servers without the need for additional servers. This is often the case if the workload is purely CPU-constrained and not I/O bound. For these types of workloads, vertical autoscale may prove to be enough. If you find that your workload has very large spikes that require bigger bursts than vertical Autoscale may be able to provide, horizontal Autoscale is definitely a powerful option as well. You can always start out using vertical Autoscale, and later change to using a horizontal Autoscale policy instead if you determine that it isn't enough for you. Or, if you know your workload causes your servers to become I/O bound, you may want to use horizontal Autoscale from the start. Also, horizontal Autoscale relies on load balancers to scale the workload. If you have a workload that doesn't scale out well this way (i.e. database servers), vertical Autoscale is the better bet. Conversely, the web tier is a great candidate for horizontal Autoscale as it scales out behind a load balancer well.
 
 **Can I use both vertical and horizontal Autoscale on the same server(s)?**
 
@@ -36,13 +32,11 @@ Though it is not explicitly disabled by the platform, it is not recommended that
 
 **What Operating Systems support Autoscale?**
 
-Vertical Autoscale can be applied to any server type that supports a "hot add" of CPU resources without a reboot. Those OSes include: Windows Server 2012 Datacenter Edition, Red Hat Enterprise Linux 5 or 6, and Ubuntu 10, 12 or 14 x64. Horizontal Autoscale
-  is applied at the group level and will work with any server types within that group.
+Vertical Autoscale can be applied to any server type that supports a "hot add" of CPU resources without a reboot. Those OSes include: Windows Server 2012 Datacenter Edition, Red Hat Enterprise Linux 5 or 6, and Ubuntu 10, 12 or 14 x64. Horizontal Autoscale is applied at the group level and will work with any server types within that group.
 
 **How often are you sampling the virtual machine for utilization data points?**
 
-While the minimum threshold period for an Autoscale policy is 5 minutes, the CenturyLink Cloud platform collects data points far more frequently for each server. In fact, each 5 minute threshold period contains hundreds of data points. This ensures
-  that your server scales because of an overall utilization trend, not just an isolated spike in utilization over a few seconds.
+While the minimum threshold period for an Autoscale policy is 5 minutes, the CenturyLink Cloud platform collects data points far more frequently for each server. In fact, each 5 minute threshold period contains hundreds of data points. This ensures that your server scales because of an overall utilization trend, not just an isolated spike in utilization over a few seconds.
 
 **How soon do changes to Autoscale policies take effect on any servers that use it?**
 

@@ -15,7 +15,6 @@
  * Customer Support:
    * [OSSEC Comunity Site](http://www.ossec.net/?page_id=21)
    * Paid Support from Trend Micro
-   * Partner Tier: Silver
 
 ### Description
 CenturyLink has integrated the OSSEC HIDS solution in to the CenturyLink Cloud platform to enable customers to perform self-service installation of an OSSEC manager and HIDS agents on Windows or Linux servers. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this HIDS solution.
@@ -171,7 +170,7 @@ OSSEC is Open Source community owned software with no associated cost to acquire
 
 ### Frequently Asked Questions
 
-**Where do I get my OSSEC&nbsp;License?**
+**Where do I get my OSSEC License?**
 
 OSSEC is Open Source community owned software with no associated cost to acquire.
 
@@ -179,4 +178,4 @@ OSSEC is Open Source community owned software with no associated cost to acquire
 
 OSSEC is packaged and provided by CenturyLink as a courtesy to ease startup time. All support for this Open Source software is provided by the community. Please start at http://www.ossec.net/
 
-For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../Support/how-do-i-report-a-support-issue.md).
+For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
