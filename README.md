@@ -35,20 +35,7 @@ The top of each .md file contains metadata about the knowledge base article itse
 
   ### Links (KB article to KB article)
 
-  Links to articles in the **same** kb category should follow this format:
-
-    ```
-    [Link Text](kb-article-name.md)
-    ```
-    
-    so like this:
-    
-    ```
-    [Packages Best Practices](packages-best-practices.md)
-    [Using SAML for Single-Sign-On](using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md )
-    ```
-
-  Links to articles in a **different** kb category should follow this format:
+  Links to articles should follow this format:
 
     ```
     [Link Text](../category/kb-article-name.md)
