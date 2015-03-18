@@ -3,7 +3,7 @@
   "date": "10-13-2014",
   "author": "Bryan Friedman",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 <p><strong>Using Vertical and Horizontal Autoscale Together</strong></p>
@@ -12,8 +12,8 @@
 <p><strong>Different Autoscale Methods Per Application Tier</strong>
 </p>
 <p>One of the nicest things about having both horizontal and vertical options is that some workloads scale out better (horizontal), while others scale up easier (vertical). For example, a user may have a single instance database that will not be helped by
-  adding additional servers behind a load balancer. All the data for the database in this situation lives on the single server and scaling out horizontally is not an option. Even if the database has multiple&nbsp;server configurations, each server will
-  likely require a lot of resources allocated.&nbsp;For the database tier of this application, users may want to configure a vertical autoscale policy to add capacity as load increases, and scale back down when load levels drop.</p>
+  adding additional servers behind a load balancer. All the data for the database in this situation lives on the single server and scaling out horizontally is not an option. Even if the database has multiple server configurations, each server will
+  likely require a lot of resources allocated. For the database tier of this application, users may want to configure a vertical autoscale policy to add capacity as load increases, and scale back down when load levels drop.</p>
 <p>Servers in the web tier of the same application, though, are probably better scaled by having additional servers behind a load balancer, so it would make more sense to apply a horizontal autoscale policy to this group of web servers. (Make sure to leave
   servers that should not be horizontally autoscaled out of the group that the policy is applied to.)</p>
 <p><strong>Vertical Autoscale Within a Horizontal Autoscale Group</strong>
@@ -30,7 +30,7 @@
   them back on automatically.</p>
 <strong>Using Horizontal Autoscale Without a Load Balancer</strong>
 <p>Though horizontal autoscale may most often be used in conjunction with a load balancer, it is <em>not</em> <em>required</em> to select a load balancer group when applying a horizontal autoscale policy. Users have the option of selecting "None" instead
-  of choosing a load balancer to associate with the group. This can be useful in cases where the servers act as distributed worker nodes, asynchronously responding to messages in a queue or actively polling for new files or database records.&nbsp;In a
+  of choosing a load balancer to associate with the group. This can be useful in cases where the servers act as distributed worker nodes, asynchronously responding to messages in a queue or actively polling for new files or database records. In a
   case like this, it still makes sense to autoscale the worker nodes horizontally, but there is no need to choose a load balancer to associate with the policy, allowing the group to just expand or contract the number of running servers without worrying
   about routing traffic to them.</p>
 <p>
@@ -44,18 +44,13 @@
   <li>Create a horizontal autoscale policy.</li>
   <li>Associate the policy to the group that has the servers you wish to autoscale. Select "none" for the Load Balancer option so it will not be associated with any shared load balancer configuration.</li>
   <li>Take note of the IP address for every server in the horizontal autoscale group, whether it is powered on or off.</li>
-  <li>Login to the dedicated load balancer's web-based management page and follow the instructions for <a href="https://t3n.zendesk.com/entries/27216280-Dedicated-Load-Balancer-Basic-Management">Dedicated Load Balancer Basic Management</a>&nbsp;to
+  <li>Login to the dedicated load balancer's web-based management page and follow the instructions for [Dedicated Load Balancer Basic Management](../Network/dedicated-load-balancer-basic-management.md) to
     add each of the server's IP addresses to the configuration.</li>
   <li>As long as you have "ping" and "tcp" monitors setup as described in the management article, no traffic will be routed to servers that are powered off. When the group scales out and powers on a server, traffic will begin routing to it from the load balancer
     until the server is powered off after a scale in event. (You may wish to set up additional monitors as well to ensure that a specific application or port is available before routing traffic to the server.)</li>
 </ol>
 <p>If you remove or add servers to the group, you will need to make sure to manually remove or add their IP addresses to the dedicated load balancer configuration to keep them in sync with the horizontal autoscale group as Control will not take care of this
   like it would with the shared load balancer.</p>
-<p>You can also read more about&nbsp;<a href="https://t3n.zendesk.com/entries/21954199-Load-Balancing-Comparison-Matrix">Load Balancing Comparison</a> to&nbsp;see the difference between the two load balancer types and find links to resources
-  about configuring them.</p>
+<p>You can also read more about [Load Balancing Comparison](../Network/load-balancing-comparison-matrix.md) to see the difference between the two load balancer types and find links to resources about configuring them.</p>
 <strong>Schedule-Based Horizontal Autoscale</strong>
-<p>Horizontal autoscale policies are configured to be triggered using utilization thresholds for both memory and CPU. There may be cases, however, where rather than scaling in or out due to usage, users would like to scale in or out on a schedule based on
-  knowledge of an application's usage patterns. For example, maybe the servers are hosting a timesheet system that is overwhelmed twice a month by employees entering the hours they've worked. Rather than deploying more resources than are needed for non-peak
-  usage or dealing with bimonthly slow performance, users can create&nbsp;scheduled tasks to power on servers at a specific point each day/week/month to increase application capacity, and then use another schedule task to power servers back down when
-  the predictable spike is over. This sort of elasticity is exactly what the cloud is good at and it helps you deliver an optimized application that delights users while keeping costs down. You can read more about scheduled tasks in the <a href="https://t3n.zendesk.com/entries/22586501-Creating-a-Scheduled-Task"
- >KB article about creating schedule tasks</a>.</p>
+<p>Horizontal autoscale policies are configured to be triggered using utilization thresholds for both memory and CPU. There may be cases, however, where rather than scaling in or out due to usage, users would like to scale in or out on a schedule based on knowledge of an application's usage patterns. For example, maybe the servers are hosting a timesheet system that is overwhelmed twice a month by employees entering the hours they've worked. Rather than deploying more resources than are needed for non-peak usage or dealing with bimonthly slow performance, users can create scheduled tasks to power on servers at a specific point each day/week/month to increase application capacity, and then use another schedule task to power servers back down when the predictable spike is over. This sort of elasticity is exactly what the cloud is good at and it helps you deliver an optimized application that delights users while keeping costs down. You can read more about [Scheduled Tasks](../Servers/creating-a-scheduled-task.md).</p>
