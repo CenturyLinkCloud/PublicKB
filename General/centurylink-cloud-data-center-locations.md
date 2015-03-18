@@ -1,12 +1,12 @@
 {{{
   "title": "CenturyLink Cloud Data Center Locations",
-  "date": "2-22-2013",
+  "date": "3-17-2015",
   "author": "Dave Burkhardt",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-Some important details about our locations are listed below. You can also refer to http://www.centurylinkcloud.com/cloud-platform/data-centers for the latest information on our data center locations.
+Some important details about our locations are listed below. You can also refer to http://www.centurylinkcloud.com/data-centers for the latest information on our data center locations.
 
 <table>
   <thead>
@@ -116,6 +116,12 @@ Some important details about our locations are listed below. You can also refer 
       <td>Larchenstrasse 110
       65933 Frankfurt/ Griesheim</td>
       <td><a href="http://www.equinix.com/en_US/locations/germany/frankfurt-data-centers/">provider details</a></td>
+    </tr>
+    <tr>
+      <td>APAC (Singapore) - SG1</td>
+      <td></td>
+      <td>9 Tai Seng Drive #05-04 Singapore 535227</td>
+      <td></td>
     </tr>
   </tbody>
 </table>
