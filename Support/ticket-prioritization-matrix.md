@@ -176,7 +176,7 @@ Ticket Escalation Mechanism - Requires a support contract
     </tbody>
   </table>
 
-[Escalation Mechanism](how-do-i-escalate-a-ticket.md)
+[Escalation Mechanism](../Support/how-do-i-escalate-a-ticket.md)
 
 ---------------
 
@@ -244,7 +244,7 @@ Ticket Escalation Mechanism - Requires a support contract
 </tbody>
 </table>
 
-[Escalation Mechanism](how-do-i-escalate-a-ticket.md)
+[Escalation Mechanism](../Support/how-do-i-escalate-a-ticket.md)
 
 -----------------------
 
@@ -288,7 +288,7 @@ Ticket Escalation Mechanism - Requires a support contract
 </tbody>
 </table>
 
-[Escalation Mechanism](how-do-i-escalate-a-ticket.md)
+[Escalation Mechanism](../Support/how-do-i-escalate-a-ticket.md)
 
 [1] Existing agreement needs to be in place
 
@@ -305,4 +305,4 @@ Ticket Escalation Mechanism - Requires a support contract
 
 **Q: I need a guarantee that a support request will be completed in less than the SLA time offered.**
 
-A: You are welcome to escalate the request using our [escalation procedures](how-do-i-escalate-a-ticket.md)
+A: You are welcome to escalate the request using our [escalation procedures](../Support/how-do-i-escalate-a-ticket.md)

@@ -22,7 +22,7 @@
 
 - Please DO NOT forward a previous ticket to this mechanism because the automation will add your email to that ticket.
 - Ticket number of the ticket that describes the issue in detail.
-- Please review the [Ticket Prioritization Matrix](ticket-prioritization-matrix.md)
+- Please review the [Ticket Prioritization Matrix](../Support/ticket-prioritization-matrix.md)
 - Please ensure that this issue being escalated requires escalation. The majority of the escalation team reside in Seattle and please be aware of the time when you escalate.
 - Please have someone available to respond to any information request from CenturyLink Cloud. The majority of the time, these requests will be made via the original ticket. Not having someone available could delay the resolution of the issue
     and defeats the purpose of the escalation mechanism.

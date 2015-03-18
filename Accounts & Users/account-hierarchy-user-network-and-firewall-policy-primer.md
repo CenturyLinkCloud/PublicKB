@@ -20,7 +20,7 @@ Visualize an account structure like the following:
 
 ### User Permissions in Subaccounts
 
-User permissions flow down to all children below the sub account where they're created.  The [permission](practical-guide-for-using-roles.md) roles associated with users are effective in all of these subaccounts.
+User permissions flow down to all children below the sub account where they're created.  The [permission](../Accounts & Users/practical-guide-for-using-roles.md) roles associated with users are effective in all of these subaccounts.
 
 ![User permissions ins sub accounts](../images/account-hierarchy-2.png)
 
