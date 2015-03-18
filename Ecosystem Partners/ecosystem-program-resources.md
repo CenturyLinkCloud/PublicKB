@@ -14,7 +14,7 @@ CenturyLink [Ecosystem Program Partner Members](centurylink-cloud-ecosystem-prog
 
 ### Technical Integration
 
-Integration and marketplace access is divided into three discrete channels ([Understanding the differences between Templates, Blueprints, and Pacages](../../blueprints/understanding-the-difference-between-templates-blueprints-and-packages/))
+Integration and marketplace access is divided into three discrete channels ([Understanding the differences between Templates, Blueprints, and Packages](../../blueprints/understanding-the-difference-between-templates-blueprints-and-packages/))
 
 | [Templates](ecosystem-program-resources-templates.md)  | [Blueprints](ecosystem-program-resources-blueprints.md) | [API](ecosystem-program-resources-api.md) | [Add-Ons](ecosystem-program-resources-addons.md) |
 |:-:	|:-:	| :-: |
