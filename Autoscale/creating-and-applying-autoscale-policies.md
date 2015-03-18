@@ -97,107 +97,64 @@ This KB article describes all of the steps for creating, applying, and testing b
 
 ### Horizontal Autoscale
 
-<ol>
-  <li>Navigate to the <strong>Servers</strong> menu item and choose <strong>Policies</strong> from the menu. This takes you to the place to create and manage new policies that can later be applied to servers.
-    <br /><img src="../images/createautoscale-policies-menu.png" alt="policies-menu.png" />
-  </li>
-  <li>On the left side of the screen you will see a number of policy types that you are able to define. Click <strong>Horizontal Autoscale </strong>to display the area where you can manage all horizontal Autoscale policies.
-    <br /><img src="../images/createautoscale-h-autoscale-settings.png" alt="h-autoscale-settings.png" />
-  </li>
-  <li>Click <strong>Create Horizontal Autoscale Policy</strong> to create the policy. First, define the general policy characteristics. Provide a friendly name for the policy. Enter the <strong>Minimum Servers</strong> which defines
-    the minimum number of for the servers to remain on at all times. The maximum number is determined by the number of provisioned servers with the group that the policy is applied to. Choose which <strong>metrics</strong> to include in the
-    threshold, CPU and/or memory. This will determine what metrics the threshold can be set on when defining the scale out and scale in triggers.
-    <br />
-    <br /><img src="../images/createautoscale-new-h-scale-general.png" alt="new-h-scale-general.png" />
-    <br />
-    <br />
-  </li>
-  <li>Set the policy's scale out characteristics. First, set the <strong>Scale Out Increment </strong>which lets you choose how many servers to turn on (1, 2, 4) during a particular scaling event. The next values define the upper limit of utilization.
-    You will see percentage fields for each of the metrics you set (<strong>CPU</strong> and/or <strong>RAM</strong>) and if you selected both, you will have the <strong>operator</strong> option to select whether both thresholds must
+1. Navigate to the <strong>Servers</strong> menu item and choose <strong>Policies</strong> from the menu. This takes you to the place to create and manage new policies that can later be applied to servers.
+
+  <img src="../images/createautoscale-policies-menu.png" alt="policies-menu.png" />
+2. On the left side of the screen you will see a number of policy types that you are able to define. Click **Horizontal Autoscale** to display the area where you can manage all horizontal Autoscale policies.
+
+  <img src="../images/createautoscale-h-autoscale-settings.png" alt="h-autoscale-settings.png" />
+3. Click <strong>Create Horizontal Autoscale Policy</strong> to create the policy. First, define the general policy characteristics. Provide a friendly name for the policy. Enter the <strong>Minimum Servers</strong> which defines the minimum number of for the servers to remain on at all times. The maximum number is determined by the number of provisioned servers with the group that the policy is applied to. Choose which <strong>metrics</strong> to include in the threshold, CPU and/or memory. This will determine what metrics the threshold can be set on when defining the scale out and scale in triggers.
+
+  <img src="../images/createautoscale-new-h-scale-general.png" alt="new-h-scale-general.png" />
+4. Set the policy's scale out characteristics. First, set the **Scale Out Increment** which lets you choose how many servers to turn on (1, 2, 4) during a particular scaling event. The next values define the upper limit of utilization. You will see percentage fields for each of the metrics you set (<strong>CPU</strong> and/or <strong>RAM</strong>) and if you selected both, you will have the <strong>operator</strong> option to select whether both thresholds must
     be reached or just one of them. <strong>When a server is at the upper limit as defined for a single threshold period, a scale out event occurs (unless it occurs within a cool down period).</strong>
-    <br />
-    <br /><img src="../images/createautoscale-new-h-scale-out.png" alt="new-h-scale-out.png" />
-    <br />
-    <br />
-  </li>
-  <li>Set the policy's scale in characteristics. First, set the <strong>Scale In Decrement </strong>which lets you choose how many servers to turn off (1, 2, 4) during a particular scaling event. The next values define the lower limit of utilization.
-    You will see percentage fields for each of the metrics you set (<strong>CPU</strong> and/or <strong>RAM</strong>) and if you selected both, you will have the <strong>operator</strong> option to select whether both thresholds must
-    be reached or just one of them.  <strong>When a server is at the lower limit as defined for a single threshold period within the scale down window, a scale down event occurs. <br /><br /><img src="../images/createautoscale-new-h-scale-in.png" alt="new-h-scale-in.png" /></strong>
-    <br
+
+  <img src="../images/createautoscale-new-h-scale-out.png" alt="new-h-scale-out.png" />
+5. Set the policy's scale in characteristics. First, set the <strong>Scale In Decrement </strong>which lets you choose how many servers to turn off (1, 2, 4) during a particular scaling event. The next values define the lower limit of utilization. You will see percentage fields for each of the metrics you set (<strong>CPU</strong> and/or <strong>RAM</strong>) and if you selected both, you will have the <strong>operator</strong> option to select whether both thresholds must be reached or just one of them.  <strong>When a server is at the lower limit as defined for a single threshold period within the scale down window, a scale down event occurs.
+
+  <img src="../images/createautoscale-new-h-scale-in.png" alt="new-h-scale-in.png" /></strong>
+6. Set the <strong>Threshold Period </strong>(5 minutes, 10 minutes, 15 minutes, 30 minutes) which defines how long a server must be at the minimum or maximum usage before an Autoscale action occurs. If a server is likely to have temporary spikes that don't warrant a scaling event, choose a longer period. Identify the <strong>Cool Down Period</strong> (15 minutes, 20 minutes, 30 minutes) which tells the Autoscale engine how long to wait after performing one Autoscale event before considering another. This setting helps prevent a rapid fire set of Autoscale events before the server has a chance to recognize the positive effects from the initial scale event.
+
+  <img src="../images/createautoscale-new-h-scale-timing.png" alt="new-h-scale-timing.png" />
+7. Click <strong>Save Policy</strong> to complete the creation of the policy and see that your policy is now part of the list of horizontal Autoscale policies.
+
+  <img src="../images/createautoscale-new-h-scale-list.png" alt="new-h-scale-list.png" />
+
+8. Note: You will need to have a load balancer group created and a pool configured in order to move on to the next step. Please follow the instructions for [creating and configuring a load balancer](../Network/modifying-a-self-service-load-balancing-configuration.md) before moving on to the next step. Ideally, you should configure the load balancer with all the IP addresses (and ports) of the servers in the group you plan on applying the autoscale policy to. If you don't do this, the autoscale policy will take care of it for you, but it could take up to five minutes before the load balancer configuration is updated after the autoscale policy is applied to the group. Once you have a load balancer group and pool created and ready to use, continue on to the next steps.
+
+9. Horizontal Autoscale policies are added to existing server groups and not during the group creation process. Go to the Group Settings page for the group where you want to apply an Autoscale policy. (This group should have at least two identically configured servers in it. See the Autoscale FAQ for more information on how to manage horizontal Autoscale groups of servers.)
+
+  <img src="../images/createautoscale-group-settings.png" alt="group-settings.png" />
+
+10. Select the <strong>Horizontal Autoscale </strong>tab and click <strong>select a horizontal autoscale policy</strong> to show the available policies to select.
+
+  <img src="../images/createautoscale-apply-h-scale-link.png" alt="apply-h-scale-link.png" />
+
+11. Select the name of the policy you created in the above steps and choose the load balancer you created in step 8 along with the port on the servers that the load balancer should route traffic to (or optionally select "none" if you do not need load balancing). Click <strong>save policy</strong> to apply the policy immediately.
+
+  <img src="../images/createautoscale-apply-h-scale.png" alt="apply-h-scale.png" />
+
+  You may want to read the Autoscale FAQ for more information on how the load balancer options here are used and other additional information.
+
+12. Now you will see the details of your policy listed to show you that it has been applied to the group.
+
+  <img src="../images/createautoscale-h-policy-details.png" alt="h-policy-details.png" />
+
+12. To test your policy, start by creating a significant amount of load on the powered on servers in the group in order to exceed the upper threshold for a sustained period of time. In the example below, see that only two of four servers are currently powered on and we are using the <strong>stress</strong> tool in Linux to simulate very high CPU utilization on the servers.
+
+  <img src="../images/createautoscale-two-powered-on.png" alt="two-powered-on.png" /><img src="../images/createautoscale-linux-stress-top.png" alt="linux-stress-top.png"
     />
-    <br />
-  </li>
-  <li>Set the <strong>Threshold Period </strong>(5 minutes, 10 minutes, 15 minutes, 30 minutes) which defines how long a server must be at the minimum or maximum usage before an Autoscale action occurs. If a server is likely to have temporary spikes
-    that don't warrant a scaling event, choose a longer period. Identify the <strong>Cool Down Period</strong> (15 minutes, 20 minutes, 30 minutes) which tells the Autoscale engine how long to wait after performing one Autoscale event before
-    considering another. This setting helps prevent a rapid fire set of Autoscale events before the server has a chance to recognize the positive effects from the initial scale event.
-    <br />
-    <br /><img src="../images/createautoscale-new-h-scale-timing.png" alt="new-h-scale-timing.png" />
-    <br />
-    <br />
-  </li>
-  <li>Click <strong>Save Policy</strong> to complete the creation of the policy and see that your policy is now part of the list of horizontal Autoscale policies.
-    <br />
-    <br /><img src="../images/createautoscale-new-h-scale-list.png" alt="new-h-scale-list.png" />
-    <br />
-    <br />
-  </li>
-  <li>Note: You will need to have a load balancer group created and a pool configured in order to move on to the next step. Please follow the instructions for [creating and configuring a load balancer](../Network/modifying-a-self-service-load-balancing-configuration.md) before moving on to the next step. Ideally, you should configure the load balancer with all the IP addresses (and ports) of the servers in the group you plan on applying the autoscale
-    policy to. If you don't do this, the autoscale policy will take care of it for you, but it could take up to five minutes before the load balancer configuration is updated after the autoscale policy is applied to the group. Once you have a load balancer
-    group and pool created and ready to use, continue on to the next steps.
-    <br />
-    <br />
-  </li>
-  <li>Horizontal Autoscale policies are added to existing server groups and not during the group creation process. Go to the Group Settings page for the group where you want to apply an Autoscale policy. (This group should have at least two
-    identically configured servers in it. See the Autoscale FAQ for more information on how to manage horizontal Autoscale groups of servers.)
-    <br />
-    <br /><img src="../images/createautoscale-group-settings.png" alt="group-settings.png" />
-    <br />
-    <br />
-  </li>
-  <li>Select the <strong>Horizontal Autoscale </strong>tab and click <strong>select a horizontal autoscale policy</strong> to show the available policies to select.
-    <br />
-    <br /><img src="../images/createautoscale-apply-h-scale-link.png" alt="apply-h-scale-link.png" />
-  </li>
-  <li>Select the name of the policy you created in the above steps and choose the load balancer you created in step 8 along with the port on the servers that the load balancer should route traffic to (or optionally select "none" if you do not need load balancing).
-    Click <strong>save policy</strong> to apply the policy immediately.
-    <br />
-    <br /><img src="../images/createautoscale-apply-h-scale.png" alt="apply-h-scale.png" />
-    <br />
-    <br />You may want to read the Autoscale FAQ for more information on how the load balancer options here are used and other additional information.
-    <br />
-    <br />
-  </li>
-  <li>Now you will see the details of your policy listed to show you that it has been applied to the group.
-    <br />
-    <br /><img src="../images/createautoscale-h-policy-details.png" alt="h-policy-details.png" />
-    <br />
-    <br />
-  </li>
-  <li>To test your policy, start by creating a significant amount of load on the powered on servers in the group in order to exceed the upper threshold for a sustained period of time. In the example below, see that only two of four servers are currently powered
-    on and we are using the <strong>stress</strong> tool in Linux to simulate very high CPU utilization on the servers.
-    <br />
-    <br /><img src="../images/createautoscale-two-powered-on.png" alt="two-powered-on.png" /><img src="../images/createautoscale-linux-stress-top.png" alt="linux-stress-top.png"
-    />
-    <br />
-    <br />
-  </li>
-  <li>After the threshold period has passed, note that there is an additional server in the group that is now powered on and an entry was added to the activity history. The activity history entry shows the average utilization amount that triggered the Autoscale
-    and which servers were affected.
-    <br />
-    <br /><img src="../images/createautoscale-three-servers-powered-on.png" alt="three-servers-powered-on.png" />
-    <img src="../images/createautoscale-activity-log-h-scale-event.png"
+
+13. After the threshold period has passed, note that there is an additional server in the group that is now powered on and an entry was added to the activity history. The activity history entry shows the average utilization amount that triggered the Autoscale and which servers were affected.
+
+  <img src="../images/createautoscale-three-servers-powered-on.png" alt="three-servers-powered-on.png" />
+
+  <img src="../images/createautoscale-activity-log-h-scale-event.png"
     alt="activity-log-h-scale-event.png" />
-    <br />
-    <br />
-  </li>
-  <li>After the peak usage has dropped below the lower threshold, wait until the cool down period has passed, and watch for a scale in to occur.
-    <br />
-    <br /><img src="../images/createautoscale-two-powered-on.png" alt="two-powered-on.png" />
-    <img src="../images/createautoscale-activity-log-h-scale-in-event.png"
-    alt="activity-log-h-scale-in-event.png" />
-    <br />
-    <br />
-  </li>
-  <li>Autoscale policies can be changed at any time and those changes are instantly reflected on the related servers. In addition, at any point you can remove the policy from a group, and all the servers will remain in the group and in the load balancer pool,
-    but none will be powered on/off automatically.</li>
-</ol>
+14. After the peak usage has dropped below the lower threshold, wait until the cool down period has passed, and watch for a scale in to occur.
+
+  <img src="../images/createautoscale-two-powered-on.png" alt="two-powered-on.png" />
+
+  <img src="../images/createautoscale-activity-log-h-scale-in-event.png" alt="activity-log-h-scale-in-event.png" />
+
+15. Autoscale policies can be changed at any time and those changes are instantly reflected on the related servers. In addition, at any point you can remove the policy from a group, and all the servers will remain in the group and in the load balancer pool, but none will be powered on/off automatically.
