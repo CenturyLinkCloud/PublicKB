@@ -19,7 +19,7 @@ For some scenarios, you may want more than one private IP associated with a clou
 ![Data Center Menu](../images/2015-03-19_moreprivateip-02.png "Data Center Menu")
 1. Because we are going to run this Blueprint against an existing server, there is no need to explicitly **add** a server to this Blueprint. Click the **next: tasks & order** button.
 1. Click the gray **add task** button to pop up a window that lists public, private, and shared software/script packages.
-1. Find the public package named **Add IP Address" and select it. Click the **add** button.
+1. Find the public package named **Add IP Address** and select it. Click the **add** button.
 ![Data Center Menu](../images/2015-03-19_moreprivateip-03.png "Data Center Menu")
 1. On the Blueprint designer, see the automatic prompt to choose which server to run this **Add IP Address** task on. Because we want this to be reusable for any server, choose the **Select During Deployment** option from the dropdown list and click the **add task** button.
 
