@@ -25,7 +25,7 @@ Vormetric has integrated their Data Security Manager (DSM) technology with the C
 
 The Vormetric Data Security Manager is a data security appliance which enables centralizes policy control and key management for data-at-rest-encryption, privileged user access control and security intelligence across an organization.
 
-![dsm.png](http://www.vormetric.com/sites/default/files/vormetric-data-security-manager-2014-0617.png)
+![DSM topology Diagram](http://www.vormetric.com/sites/default/files/vormetric-data-security-manager-2014-0617.png)
 
 For more information including whitepapers and data sheets, please view the DSM product information on Vormetric's website: http://www.vormetric.com/products/data-security-manager
 
@@ -54,14 +54,14 @@ This deployment process for Partner Templates currently requires manual interact
 - If you want to access your Vormetric DSM over the internet, please perform the following tasks once your Vormetric DSM has been deployed to your account:
 1. Adding an external ip-address to an existing or new CenturyLink server
 
-    ![ip.jpg](https://t3n.zendesk.com/attachments/token/kObGC9P2IjP1ate0NexwFNiXz/?name=ip.jpg)
+    ![Add Public IP](https://t3n.zendesk.com/attachments/token/kObGC9P2IjP1ate0NexwFNiXz/?name=ip.jpg)
 
 2. Allow incoming traffic for the following ports
 - TCP Ports: 22, 443, 5696, 7024, 8080, 8443, 8444, 8445, 50000
 - UDP Ports: 123, 161, 7025
 - ICMP: All
 
-    ![port.jpg](https://t3n.zendesk.com/attachments/token/1Ufw0JjIWW8XfASYLh4x3Irl9/?name=port.jpg)
+    ![Open Firewall Port](https://t3n.zendesk.com/attachments/token/1Ufw0JjIWW8XfASYLh4x3Irl9/?name=port.jpg)
 
 ### Detailed Steps to Deploy Vormetric DSM
 Vormetric DSM deploys in a virtual appliance model, as a CenturyLink Cloud *Partner Template*.  Follow these step by step instructions to deploy a Vormetric DSM in to your CenturyLink Cloud account:  
@@ -92,7 +92,7 @@ Your_Name_Here
 If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@centurylinkcloud.com](mailto:features@centurylinkcloud.com)
 
 ### Pricing
-The costs associated with this deployment is $390 one-time fee in accordance with the CenturyLink Cloud Service Tasks.  There are no Vormetric license costs or additional fees bundled in.  Service Task Fees information is available here: http://www.centurylinkcloud.com/service-tasks
+There are no Vormetric license costs or additional fees bundled in.  The cost to deploy the Vormetric DSM Partner Template will be billed as a Service Task.  More information about Service Tasks and fees are available here: http://www.centurylinkcloud.com/service-tasks
 
 ### Frequently Asked Questions
 
@@ -103,5 +103,5 @@ Existing CenturyLink Enterprise Customers can contact their Account Representati
 -   Email Sales via support@vormetric.com
 
 #### Who should I contact for support?
-* For issues related to deploying the Centerity Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the Centerity Support Website: http://www.Vormetric.com
+* For issues regarding the Vormetric DSM virtual appliance, please contact Vormetric via their Support Website: http://www.Vormetric.com
 * For issues related to cloud infrastructure (VM’s, network, etc), please open a ticket using the CenturyLink Cloud Support Process.
