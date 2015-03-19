@@ -15,7 +15,7 @@ Integrating with the CenturyLink Cloud Blueprints orchestration engine enables c
 
 Reference the following key pages from the CenturyLink Cloud [Knowledge Base](http://www.centurylinkcloud.com/knowledge-base):
 
-* [Blueprints Category](../Blueprints/) in the Knowledge Base
+* [Blueprints Category](../../Blueprints/) in the Knowledge Base
 * Best Practices in [Packages](../Blueprints/packages-best-practices.md) and [Blueprints](../Blueprints/blueprints-best-practices.md)
 * [Package and Blueprint maximums](../Blueprints/blueprint-package-and-template-maximum-limits.md)
 * [Naming conventions for Public Packages and Blueprints](../Blueprints/creating-public-blueprint-packages.md)
@@ -24,6 +24,6 @@ Reference the following key pages from the CenturyLink Cloud [Knowledge Base](ht
 
 ### Contributed Resources
 
-* [Blueprint Package Manifest Builder Wizard](http://centurylinkcloud.github.io/Ecosystem/BlueprintManifestBuilder/) ([KB Instructions for use](../blueprints/blueprint-package-manifest-builder-wizard/))
+* [Blueprint Package Manifest Builder Wizard](http://centurylinkcloud.github.io/Ecosystem/BlueprintManifestBuilder/) ([KB Instructions for use](../Blueprints/blueprint-package-manifest-builder-wizard.md))
 * [CenturyLink Cloud Ecosystem Github Repo](https://github.com/CenturyLinkCloud/Ecosystem/tree/master/Blueprints) containing reference patterns, support tools, and the actual packages used in some of our public Blueprints
 * [Blueprint Broker](https://github.com/CenturyLinkCloud/Ecosystem/blob/master/Blueprints/Blueprint%20Broker/README.md) is a cross-platform toolset that includes a discovery service, encrypted key-value store to maintain state, and a mailer tool enabling high-impact post-deployment communication

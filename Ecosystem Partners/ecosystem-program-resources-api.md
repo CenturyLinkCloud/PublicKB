@@ -22,7 +22,7 @@ Direct API documentation is available from the API Overview pages.  This covers 
 
 A variety of language specific SDKs exist to easy integration efforts.
 
-* [Python SDK](http://www.centurylinkcloud.com/api-docs/v1)
+* [Python SDK](https://github.com/CenturyLinkCloud/clc-python-sdk)
 * *More currently under development*
 
 ### Contributed Resources
