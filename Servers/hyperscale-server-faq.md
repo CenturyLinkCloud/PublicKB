@@ -1,13 +1,13 @@
 {{{
   "title": "Hyperscale Server FAQ",
-  "date": "9-15-2014",
+  "date": "03-19-2015",
   "author": "Richard Seroter",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 ### Description
-The CenturyLink Cloud now offers **Hyperscale Servers** with premium performance targeted at big data jobs and distributed systems.</p>
+The CenturyLink Cloud now offers **Hyperscale Servers** with premium performance targeted at big data jobs and distributed systems.
 
 **Q: What are the maximum resource limits of a Hyperscale Server?**
 
@@ -15,12 +15,12 @@ A: Today, Hyperscale servers can use up to 16 vCPUs, 128GB of memory, and 1 TB o
 
 **Q: How does a Hyperscale Server differ from a "regular" one?**
 
-A: Five ways:
+A: Hyperscale Virtual Servers differ from Standard Virtual Servers in 5 ways:
 
-  - _Storage._ Hyperscale storage is 100% SSD, instead of a mix of spindle/SSD. Consequently, users can expect different storage levels between Hyperscale and CenturyLink Cloud servers.
-  - _Backups._ Hyperscale servers do not include the automatic backup function found in CenturyLink Cloud Servers. This is largely because Hyperscale is designed for distributed apps that don’t typically deal with backups.
-  - _Advanced Tasks._ Snapshots, Clone, Convert to Template and Archive features are not available on Hyperscale Instances
-  - _Geographies._ Hyperscale is only available in the NY1, IL1, CA3, GB3, UC1 & VA1 datacenters, with new locations coming online quarterly. Cloud servers, in contrast, can be deployed across 12 federated data centers.
+* Storage: Hyperscale storage is 100% SSD, instead of a mix of spindle/SSD. Consequently, users can expect different storage levels between Hyperscale and CenturyLink Cloud servers.
+* Backups: Hyperscale servers do not include the automatic backup function found in CenturyLink Cloud Servers. This is largely because Hyperscale is designed for distributed apps that don’t typically deal with backups.
+* Advanced Tasks: Snapshots, Clone, Convert to Template and Archive features are not available on Hyperscale Instances.
+* Geographies: Hyperscale is only available in the SG1, NY1, IL1, CA3, GB3, UC1 & VA1 datacenters, with new locations coming online quarterly. Cloud servers, in contrast, can be deployed across 13 federated data centers
 
 **Q: Can I interact with and manage Hyperscale Servers the same as with regular servers?**
 
