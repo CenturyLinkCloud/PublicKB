@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started with XtremeData dbX - Blueprint",
   "date": "3-6-2015",
-  "author": "Keith Resar",
+  "author": "<a href="https://twitter.com/KeithResar">@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -32,6 +32,10 @@ http://www.xtremedata.com/
 XtremeData has integrated their dbX technology with the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this XtremeData solution.
 
 XtremeData delivers high performance, full-featured ANSI SQL database engine designed for performance at all scales, up to 100s of terabytes. ANSI SQL. Simple to deploy, simple to administer, simple to scale up. Any data schema any data location.
+
+Learn more from our discussion with Ravi Chandran, XtremeData's CTO:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1LO2TIOvJGw" frameborder="0" allowfullscreen style="margin-left:1em;"></iframe>
 
 
 ### Audience
