@@ -22,7 +22,7 @@
 <p><strong>Q: How do I create a Managed VM?</strong>
 </p>
 <p>A: From the Control Portal menu, select “Create Server.” You will then be prompted to select the data center, group membership, and other VM properties. Select a data center that supports managed services
-  (an updated list is <a href="http://www.centurylinkcloud.com/managed-services">available here</a>), and then click the “managed server” element to “Yes.” The operating system drop-down menu will then automatically show available options.
+  (an updated list is <a href="http://www.centurylinkcloud.com/data-centers/">available here</a>), and then click the “managed server” element to “Yes.” The operating system drop-down menu will then automatically show available options.
   Choose your version, and then proceed with the remainder of the server creation process.</p>
 <p><strong>Q: What if I don’t see an option for Managed OS in the CenturyLink Cloud Control Panel?</strong>
 </p>
