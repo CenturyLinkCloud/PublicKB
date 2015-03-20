@@ -36,7 +36,7 @@ Greenplum incorporates key performance capabilities, flexible data analytics, en
 
 ### Audience
 
-CenturyLink Cloud Users who will need to repeatedly deploy a Pivotal Greenplum cluster larger than that described in the [deploying a Pivotal Greenplum cluster](getting-started-with-pivotal-greenplum-blueprint/) document.  If this will be a one time build then adding additional nodes using the expansion Blueprint may be easier.
+CenturyLink Cloud Users who will need to repeatedly deploy a Pivotal Greenplum cluster larger than that described in the [deploying a Pivotal Greenplum cluster](getting-started-with-pivotal-greenplum-blueprint.md) document.  If this will be a one time build then adding additional nodes using the expansion Blueprint may be easier.
 
 
 ### Creating a custom Blueprint
