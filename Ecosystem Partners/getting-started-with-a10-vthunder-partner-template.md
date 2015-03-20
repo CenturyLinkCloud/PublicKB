@@ -74,7 +74,7 @@ Please import the Ecosystem Partner Template image file referenced below to my C
 - Data Center to import image to: ###
 - Server Name to import image as: ##########
 - VLAN in the account to add the Server to: ########
-- # of VIP's you'd like reserved in the network for load balancing.  (The support team can reserve more later via a ticket.  CLC Support team will reserve 10 VIPs unless stated otherwise.)
+- Number of VIP's you'd like reserved in the network for load balancing.  (The support team can reserve more later via a ticket.  CLC Support team will reserve 10 VIPs unless stated otherwise.)
 
 Additional Information to add Partner Template to Network:
 - Please reference the A10 documentation and follow the steps below; 
