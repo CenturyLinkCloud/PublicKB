@@ -3,8 +3,7 @@ Group related functions.
 
 These group related functions generally align one-for-one with published API calls categorized in the group category
 
-API v1 - https://t3n.zendesk.com/forums/20568588-Group
-API v2 - https://t3n.zendesk.com/forums/21013480-Groups
+API v1 - http://www.centurylinkcloud.com/api-docs/v2/#groups
 """
 
 import clc
@@ -21,7 +20,7 @@ class Group:
 		"""
 		if alias is None:  alias = clc.v1.Account.GetAlias()
 		if location is None:  location = clc.v1.Account.GetLocation()
-		r = Group.GetGroups(alias,location)
+		r = Group.GetGroups(location,alias)
 		for row in r:
 			if row['Name'] == group:  return(row['ID'])
 		else:
@@ -51,7 +50,7 @@ class Group:
 	def GetGroups(location=None,alias=None):
 		"""Return all of alias' groups in the given location.
 
-		https://t3n.zendesk.com/entries/20979826-Get-Groups
+		http://www.centurylinkcloud.com/api-docs/v2/#groups-get-group
 
 		:param alias: short code for a particular account.  If none will use account's default alias
 		:param location: datacenter where group resides
@@ -79,7 +78,7 @@ class Group:
 		if description is None: description = ''
 		if parent is None:  parent = "%s Hardware" % (location)
 
-		parents_id = Group.GetGroupID(alias,location,parent)
+		parents_id = Group.GetGroupID(parent,alias,location)
 
 		r = clc.v1.API.Call('post','Group/CreateHardwareGroup',
 		                    {'AccountAlias': alias, 'ParentID': parents_id, 'Name': group, 'Description': description })
@@ -97,7 +96,7 @@ class Group:
 		"""
 		if alias is None:  alias = clc.v1.Account.GetAlias()
 		if location is None:  location = clc.v1.Account.GetLocation()
-		groups_id = Group.GetGroupID(alias,location,group)
+		groups_id = Group.GetGroupID(group,alias,location)
 
 		r = clc.v1.API.Call('post','Group/%sHardwareGroup' % (action), {'ID': groups_id, 'AccountAlias': alias })
 		return(r)
