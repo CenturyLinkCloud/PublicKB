@@ -83,7 +83,7 @@
 <p>A: The CenturyLink Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at 1-888-638-6771.</p>
 <p><strong>Q: How can I remove Managed Services from a VM?</strong>
 </p>
-<p>A: Currently, the only way to remove Managed Services from a VM once it has been deployed is to delete the VM and to create a new server that is unmanaged.</p>
+<p>A: Currently, the only way to remove Managed Services from a VM once it has been deployed is to delete the VM and to create a new server that is unmanaged. This process should be followed for managed operating systems as well as for managed applications.</p>
 <p><strong>Q: How can I tell my <em>managed</em> VMs from my <em>unmanaged</em> VMs in the CenturyLink Cloud Control portal?</strong>
 </p>
 <p>A: Managed VMs will be noted with an asterisk (*) in front of the server name. For example, <em>*ILMHPELCTA04</em>. This notation is intended to make it easier to locate managed VMs from within
