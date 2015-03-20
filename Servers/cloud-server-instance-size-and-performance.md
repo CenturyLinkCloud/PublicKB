@@ -1,6 +1,6 @@
 {{{
   "title": "Cloud Server Instance Size and Performance",
-  "date": "8-6-2012",
+  "date": "1-5-2015",
   "author": "Richard Seroter",
   "attachments": [],
   "contentIsHTML": false
