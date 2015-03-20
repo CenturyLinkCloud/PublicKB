@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started with XtremeData dbX - Blueprint",
   "date": "3-6-2015",
-  "author": "<a href="https://twitter.com/KeithResar">@KeithResar</a>",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
