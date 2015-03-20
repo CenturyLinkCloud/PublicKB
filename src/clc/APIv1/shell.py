@@ -166,6 +166,13 @@ class Args:
 		parser_server_pause.add_argument('--alias', help='Operate on specific account alias')
 		parser_server_pause.add_argument('--server', nargs='*', required=True, metavar='NAME', help='Server name')
 
+		## Convert to template
+		parser_server_converttotemplate = parser_sp4.add_parser('convert-to-template', help='Convert server to template')
+		parser_server_converttotemplate.add_argument('--alias', help='Operate on specific account alias')
+		parser_server_converttotemplate.add_argument('--server', required=True, metavar='NAME', help='Source server name')
+		parser_server_converttotemplate.add_argument('--template', required=True, metavar='NAME', help='Target template name')
+		parser_server_converttotemplate.add_argument('--password', required=False, metavar='PASSWORD', help='Source server password')
+
 		## Get Credentials
 		parser_server_get_credentials = parser_sp4.add_parser('get-credentials', help='Get server administrator login credentials')
 		parser_server_get_credentials.add_argument('--alias', help='Operate on specific account alias')
@@ -439,6 +446,7 @@ class ExecCommand():
 		elif clc.args.GetArgs().sub_command == 'snapshot':  self.ServerActions("Snapshot")
 		elif clc.args.GetArgs().sub_command == 'pause':  self.ServerActions("Pause")
 		elif clc.args.GetArgs().sub_command == 'create':  self.CreateServer()
+		elif clc.args.GetArgs().sub_command == 'convert-to-template':  self.ConvertToTemplate()
 		elif clc.args.GetArgs().sub_command == 'get-credentials':  self.GetServerCredentials()
 		elif clc.args.GetArgs().sub_command == 'list-disks':  self.GetServerDisks()
 
@@ -671,6 +679,13 @@ class ExecCommand():
 	def ServerActions(self,action):
 		clc.args.args.async = True  # Force async - we can't current deal with multiple queued objects
 		r = self.Exec('clc.v1.Server.%s' % (action), { 'alias': self._GetAlias(), 'servers': clc.args.GetArgs().server },
+		              cols=['RequestID','StatusCode','Message'])
+
+
+	def ConvertToTemplate(self):
+		r = self.Exec('clc.v1.Server.ConvertToTemplate', 
+		              { 'alias': self._GetAlias(), 'server': clc.args.GetArgs().server, 
+					    'template': clc.args.GetArgs().template, 'password': clc.args.GetArgs().password },
 		              cols=['RequestID','StatusCode','Message'])
 
 

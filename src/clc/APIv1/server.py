@@ -3,8 +3,7 @@ Server related functions.
 
 These server related functions generally align one-for-one with published API calls categorized in the server category
 
-API v1 - https://t3n.zendesk.com/forums/20578872-Server
-API v2 - https://t3n.zendesk.com/forums/21613150-Servers
+API v1 - http://www.centurylinkcloud.com/api-docs/v1/#server
 """
 
 import re
@@ -141,6 +140,26 @@ class Server:
 							  'Alias': name, 'HardwareGroupID': groups_id, 'ServerType': 1, 'ServiceLevel': Server.backup_level_stoi[backup_level], 
 							  'Cpu': cpu, 'MemoryGB': ram, 'ExtraDriveGB': 0, 'Network': network, 'Password': password })
 		if int(r['StatusCode']) == 0:  return(r)
+
+
+	@staticmethod
+	def ConvertToTemplate(server,template,password=None,alias=None):
+		"""Converts an existing server into a template.
+
+		http://www.centurylinkcloud.com/api-docs/v1/#server-convert-server-to-template
+
+		:param server: source server to convert
+		:param template: name of destination template
+		:param password: source server password (optional - will lookup password if None)
+		:param alias: short code for a particular account.  If none will use account's default alias
+		"""
+		if alias is None:  alias = clc.v1.Account.GetAlias()
+		if password is None:  password = clc.v1.Server.GetCredentials([server,],alias)[0]['Password']
+
+		r = clc.v1.API.Call('post','Server/ConvertServerToTemplate', 
+		                    { 'AccountAlias': alias, 'Name': server, 'Password': password, 'TemplateAlias': template })
+		return(r)
+
 
 
 	@staticmethod

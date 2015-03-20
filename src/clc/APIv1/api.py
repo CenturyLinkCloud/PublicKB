@@ -20,11 +20,28 @@ class API():
 	#
 	@staticmethod
 	def _ResourcePath(relative):
+		if not clc._SSL_VERIFY:  return(clc._SSL_VERIFY)
 		if os.path.isfile(os.path.join(getattr(sys, '_MEIPASS', os.path.abspath(".")),relative)):
 			# Pyinstall packaged windows file
 			return(os.path.join(getattr(sys, '_MEIPASS', os.path.abspath(".")),relative))
 		else:
 			return(True)
+
+
+	@staticmethod
+	def _DebugRequest(request,response):
+		print('{}\n{}\n{}\n\n{}\n'.format(
+			'-----------REQUEST-----------',
+			request.method + ' ' + request.url,
+			'\n'.join('{}: {}'.format(k, v) for k, v in request.headers.items()),
+			request.body,
+		))
+
+		print('{}\n{}\n\n{}'.format(
+			'-----------RESPONSE-----------',
+			'status: ' + str(response.status_code),
+			response.text
+		))
 
 
 	@staticmethod
@@ -52,7 +69,7 @@ class API():
 
 
 	@staticmethod
-	def Call(method,url,payload,silent=False,hide_errors=[],recursion_cnt=0):
+	def Call(method,url,payload,silent=False,hide_errors=[],recursion_cnt=0,debug=False):
 		"""Execute v1 API call.
 
 		:param url: URL paths associated with the API call
@@ -62,13 +79,17 @@ class API():
 
 		:returns: decoded API json result
 		"""
-		if not clc.v1._LOGIN_COOKIE_V1:  API._Login()
+		if not clc._LOGIN_COOKIE_V1:  API._Login()
 
 		r = requests.request(method,"%s%s/JSON" % (clc.defaults.ENDPOINT_URL_V1,url), 
-		                     params=payload, 
+							 params=payload, 
 							 headers={'content-type': 'application/json'},
-		                     cookies=clc._LOGIN_COOKIE_V1,
+							 cookies=clc._LOGIN_COOKIE_V1,
 							 verify=API._ResourcePath('clc/cacert.pem'))
+
+		if debug:
+			API._DebugRequest(request=requests.Request(method,"%s%s/JSON" % (clc.defaults.ENDPOINT_URL_V1,url),
+                              data=payload,headers={}).prepare(),response=r)
 
 		try:
 			if int(r.json()['StatusCode']) == 0:  

@@ -465,6 +465,34 @@ Output once server build completes
 +-----------------+
 ```
 
+#### Convert to Template
+Convert an existing server to a template.  Depending on command line options the command can return immediately or can display build status in real-time.
+
+```
+> clc --config config.ini servers convert-to-template --server CA1KRAPTPL02 --template test3
+✔  Reading /Users/keithresar/.clc
+✔  Logged into v1 API
+✔  Server credentials retrieved
+✔  Server queued for conversion
+✔  Accounts successfully queried.
+✔  Submitted for processing
+[################                ] 50/100 - 00:00:43
+```
+
+Output once server build completes
+
+```
+...
+✔  Execution Started - 0:00:27
+✔  Execution Complete - 0:01:45
+✔  Execution Complete - 0:02:12
++-----------------+
+| Server          |
++-----------------+
+| CA1KRAPTPL02    |
++-----------------+
+```
+
 #### List Disks
 List all disks associated with the servere also querying the guest for disk names and mount points.
 ```

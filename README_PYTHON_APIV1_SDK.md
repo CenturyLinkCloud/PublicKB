@@ -390,6 +390,17 @@ Create new server. This is an asynchronous activity so a RequestID is returned w
  u'Success': True}
 ```
 
+#### Convert to Template
+Convert existing server to a template.  This is an asynchronous activity so a RequestID is returned which can be used to follow progress.
+
+```python
+>>> clc.v1.Server.ConvertToTemplate(server="CA1KRAPTPL03",template="test3",alias="KRAP")
+{u'Message': u'Server queued for conversion',
+ u'RequestID': 21998,
+ u'StatusCode': 0,
+ u'Success': True}
+```
+
 #### List Disks
 List all disks associated with the servere also querying the guest for disk names and mount points.
 
