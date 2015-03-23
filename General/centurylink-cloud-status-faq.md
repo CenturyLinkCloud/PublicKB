@@ -32,8 +32,10 @@ A: Each alert email has a “Manage Subscription” link at the end. Following t
 * Include or exclude certain datacenters (e.g. WA1)
 * Include or exclude certain services (e.g. Object Storage)
 * Opt out of notifications for all services and datacenters
+ 
+**To opt out of all notifications, users must manually uncheck all the boxes on the Manage Subscription page, and click the Save Subscription button at the end of the Components list.** 
 
-_Please note:  there is an “unsubscribe” link at the bottom of the subscription portal. We do not presently advise users to select this option. At this point in time, unsubscribe elections will be immediately overwritten and you will resume receiving notifications the following day. We are actively working on fixing this bug._
+_Please note:  there is an “unsubscribe” link at the bottom of the Manage Subscription page. We do not presently advise users to select this option. At this point in time, unsubscribe elections will be immediately overwritten and you will resume receiving notifications the following day. We are actively working on fixing this bug._
 
 **Q: This sounds great! Is there an API or Webhook available so that I can build my own tools around it?**
 
