@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with White Labeling",
-  "date": "3-20-2015",
+  "date": "3-23-2015",
   "author": "Jared Ruckle",
   "attachments": [],
   "contentIsHTML": false
