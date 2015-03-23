@@ -17,7 +17,7 @@ This knowledge base article will guide a customer through the process of deployi
 
 In the sample below in CA3 we have a network created and named NLB_10.100.97.0/24.
 
-![Dedicated Load Balancing VLAN Image](img src="../images/deploy-a-dedicated-citrix-VPX-appliance-01.png")
+![Dedicated Load Balancing VLAN Image](../images/deploy-a-dedicated-citrix-VPX-appliance-01.png)
 
 ### Request a Service Task
 [Create a formal request to the Service Task team.](../Service Tasks/requesting-service-tasks-on-centurylink-cloud.md)
@@ -44,7 +44,7 @@ Once the Service Task team deploy's your VPX appliance(s) you will get a notific
 
 Citrix VPX Appliances will be shown in Control
 
-![Dedicated Load Balancer in Server Groups UI](img src="../images/deploy-a-dedicated-citrix-VPX-appliance-02.png")
+![Dedicated Load Balancer in Server Groups UI](../images/deploy-a-dedicated-citrix-VPX-appliance-02.png)
 
 ### Additional Information
 
