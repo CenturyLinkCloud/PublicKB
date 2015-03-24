@@ -67,7 +67,7 @@ The GemFire Blueprint is designed to be successfully deployed on an existing ser
   <img src="../images/pivotal_gemfire/deploy_parameters.png" style="max-width:450px;">
 
   * **EULA** - Click to accept the software end user license agreement
-  * **Email Address** - Email address to receive build notification and Greenplum access information
+  * **Email Address** - Email address to receive build notification and GemFire access information
   * **Start Locator and Server** - Start an initial locator and server on this host.  Skip this if you'd prefer to create your own configuration
 
   <img src="../images/pivotal_gemfire/deploy_parameters_server.png" style="max-width:450px;">
