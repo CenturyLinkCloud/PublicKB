@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started with Pivotal GemFire - Blueprint",
   "date": "3-17-2015",
-  "author": "Keith Resar",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>"",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -46,7 +46,7 @@ The GemFire Blueprint is designed to be successfully deployed on an existing ser
 #### Steps
 
 
-1. **Deploy or Identify and Existing Server**
+1. **Deploy or Identify an Existing Server**
 
   Identify the server targeted for GemFire installation.  Pivotal requires the server be CentOS or RHEL 5, 6, or 7.
 
