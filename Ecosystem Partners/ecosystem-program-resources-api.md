@@ -1,7 +1,7 @@
 {{{
   "title": "Ecosystem Program Partner Resource Guide - API",
   "date": "3-16-2015",
-  "author": "Keith Resar",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>"",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -20,7 +20,7 @@ Direct API documentation is available from the API Overview pages.  This covers 
 
 ### SDKs
 
-A variety of language specific SDKs exist to easy integration efforts.
+A variety of language specific SDKs exist to ease integration efforts.
 
 * [Python SDK](https://github.com/CenturyLinkCloud/clc-python-sdk)
 * *More currently under development*
