@@ -1,15 +1,26 @@
 {{{
-  "title": "Security Scanning",
-  "date": "7-17-2014",
-  "author": "Dave Burkhardt",
+  "title": "Nessus Security Vulnerability Scanning",
+  "date": "03-25-2015",
+  "author": "Chris Little",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
-<p>Centurylink Cloud leverages Nessus' comprehensive enterprise-class management services to determine the security vulnerabilities of all systems provisioned across our platform. This document summarizes the Nessus scans Centurylink Cloud&nbsp;utilizes,
-  when requested by the customer, for scans. Costs for this Nessus scanning services can be found @&nbsp;<a href="http://www.centurylinkcloud.com/products/support/service-tasks">http://www.centurylinkcloud.com/products/support/service-tasks</a>
-</p>
+### Overview
+Centurylink Cloud customers can leverage Nessus Security Vulnerability scanning services via [Service Task](http://www.centurylinkcloud.com/service-tasks) to discover security vulnerabilities on Cloud Virtual Machines provisioned across the platform.
 
-<p>The following contains a list of&nbsp;security vulnerabilities scanned for:</p>
-<p><a href="http://www.tenable.com/plugins/index.php?view=all">http://www.tenable.com/plugins/index.php?view=all</a>
-</p>
+### How To Request a Nessus Security Vulnerability Scan
+Customers should request a [Service Task](../Service Tasks/requesting-service-tasks-on-centurylink-cloud.md) for [Nessus Security Vulnerability Scanning](http://www.centurylinkcloud.com/service-tasks/#nessus). In the request customers should supply the following information:
+
+* Customer Alias & [Pin](../Support/pin-authentication-for-support-requests.md)
+* Time (including time zone) you wish the scan to run
+* The list of Virtual Servers & IP addresses (public, private or both) you want scanned
+
+### Best Practices
+It is recommended Nessus Security Vulnerability Scan's are performed during non-peak business hours to reduce impact on services.
+
+### Vulnerability Listing
+A [complete listing of the security vulnerabilities](http://www.tenable.com/plugins/index.php?view=all) can be found on the Tenable Network Security website.
+
+### Sample Reports
+Customers can [view sample reports](http://www.tenable.com/products/nessus/sample-reports) on the Tenable Network Security website.
