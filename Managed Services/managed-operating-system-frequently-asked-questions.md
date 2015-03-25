@@ -80,7 +80,7 @@
 </ul>
 <p><strong>Q: Who do I contact if I have trouble with my Managed VM?</strong>
 </p>
-<p>A: The CenturyLink Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at 1-888-638-6771.</p>
+<p>A: The CenturyLink Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at 1-888-638-6771, or send email to request@savvis.com for Managed OS issues. If there is an outage, email can be sent to incident@savvis.com.</p>
 <p><strong>Q: How can I remove Managed Services from a VM?</strong>
 </p>
 <p>A: Currently, the only way to remove Managed Services from a VM once it has been deployed is to delete the VM and to create a new server that is unmanaged. This process should be followed for managed operating systems as well as for managed applications.</p>
