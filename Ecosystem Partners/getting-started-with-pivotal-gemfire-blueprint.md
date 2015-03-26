@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started with Pivotal GemFire - Blueprint",
   "date": "3-17-2015",
-  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>"",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
