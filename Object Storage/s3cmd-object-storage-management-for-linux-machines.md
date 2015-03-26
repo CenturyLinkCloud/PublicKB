@@ -19,9 +19,9 @@
 </ul>
 
 <h4><a name="install">Installing S3CMD</a></h4>
-<p>Before you can use S3CMD, you'll need to make sure it is installed. At the command line, enter the following: <tt>which s3cmd</tt>. If this command gives  no output, then you do not have S3CMD installed and need to add it. </p>
+<p>Before you can use S3CMD, you'll need to make sure it is installed. At the command line, enter the following: <tt>which s3cmd</tt> . If this command gives  no output, then you do not have S3CMD installed and need to add it. </p>
 
-<p>The simplest way to add it is to use the package manager for your version of Linux, probably either. While S3CMD is included in many package managers, it is best to manually configure
+<p>The simplest way to add it is to use the package manager for your version of Linux, probably either <tt>yum</tt> or <tt>apt</tt>. While S3CMD is included in many package managers, it is best to manually configure
   the official repository to ensure that you are using the latest version.
  
 <p><strong>To add the repository to a CentOS or RHEL machine</strong> (note, both instructions assume you are running as root- you will need to add “sudo” where appropriate if not logged in as root):</p>
@@ -52,7 +52,7 @@
   </li>
 </ol>
 
-<h4><a name="configuring">Configuring S3CMD</a>
+<h4><a name="configure">Configuring S3CMD</a>
 <h5>Once S3CMD has been installed, it must be configured to use CenturyLink Cloud’s Object Storage:</h5>
 <ol>
   <ol>
