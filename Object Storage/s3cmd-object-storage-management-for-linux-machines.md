@@ -9,7 +9,7 @@
 <p>S3CMD is a Linux command line utility that can be used to interact with and manage your <a href="http://www.tier3.com/products/object-storage">CenturyLink Cloud Object Storage</a> buckets and data, Access Control Lists (ACLs), and associated metadata. S3CMD is an advanced tool to be used for accessing object storage, so care should be taken.</p>
 
 <ul>
-	<li><href="#install">Installing S3CMD</a>
+	<li><a href="#install">Installing S3CMD</a>
 	</li>
 	<li><a href="#configure">Configuring S3CMD for CenturyLink Object Storage</a>
 	</li>
