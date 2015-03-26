@@ -36,7 +36,7 @@ Greenplum incorporates key performance capabilities, flexible data analytics, en
 
 ### Audience
 
-CenturyLink Cloud Users who have already [deployed a Pivotal Greenplum cluster](../getting-started-with-pivotal-greenplum-blueprint/) and need to add capacity.
+CenturyLink Cloud Users who have already [deployed a Pivotal Greenplum cluster](../Ecosystem Partners/getting-started-with-pivotal-greenplum-blueprint.md) and need to add capacity.
 
 
 ### Expanding an Existing Cluster
