@@ -16,6 +16,8 @@
 	<li>
 		<a href="#usage">Using S3CMD</a>
 	</li>
+	<li>
+	<a href="#version">Special note about S3CMD versions</a>
 </ul>
 
 <h4><a name="install">Installing S3CMD</a></h4>
@@ -52,11 +54,11 @@
   </li>
 </ol>
 
-<h4><a name="configure">Configuring S3CMD</a>
-<h5>Once S3CMD has been installed, it must be configured to use CenturyLink Cloud’s Object Storage:</h5>
+<h4><a name="configure">Configuring S3CMD</a></h4>
+Once S3CMD has been installed, it must be configured to use CenturyLink Cloud’s Object Storage.
 <ol>
   <ol>
-    <li>S3CMD stores its settings in a configuration file. You can either run <tt>s3cmd&nbsp;–configure&nbsp;</tt> to launch an interactive&nbsp;configuration generation tool, or specify a&nbsp;pre-existing file.&nbsp;You will need both your Access Key&nbsp;and
+    <li>S3CMD stores its settings in a configuration file. You can either run <tt>s3cmd&nbsp;–configure&nbsp;</tt> to launch an interactive&nbsp;configuration generation tool, or specify a pre-existing file. You will need both your Access Key and
       your Secret Key, which can be found by clicking on the appropriate username in the CenturyLink Cloud Control Panel, under the Services-&gt; Object Storage Section.</li>
     <li>
       <a><img src="https://t3n.zendesk.com/attachments/token/wzvex9kpccjeuge/?name=bucketsecret.JPG" alt="bucketsecret.JPG" />
@@ -76,7 +78,7 @@
 
 host_bucket = %(bucket)s.ca.tier3.io</pre>
 
-<p>Alternatively, you can modify and save the following file and then specify s3cmd to use it by entering the command <strong>s3cmd&nbsp;–c /path/to/config file</strong>
+<p>Alternatively, you can modify and save the following file and then specify s3cmd to use it by entering the command <tt>s3cmd&nbsp;–c /path/to/config file</tt>
 </p>
 <p><strong>Sample configuration file, bolded items must be edited:</strong>
 </p>
@@ -185,7 +187,10 @@ verbosity = WARNING
 </p>
 <p>Download/Retrieve a file <strong>s3cmd&nbsp;get s3://my-new-bucket-name/testfile.xml testfile_modified.xml&nbsp;</strong>
 </p>
+<h4><a name="version">Special note about S3CMD versions</a>
+S3CMD is an active open-source project, and as such is frequently updated. Depending on the version of S3CMD you installed, the default authentication strategy may have changed. Using the incorrect authentication strategy will result in <strong>403 Non Authorized</strong> errors for some requests to object storage. You can tell which version of S3CMD you have by running the command <tt>s3cmd --version</tt> and inspecting the output. If the version is before <strong>1.5.0</strong> then s3cmd will operate correctly. 
 
+If your version is <strong>1.5.0</strong> or newer, then there are two ways to make this work correctly again. The first is to provide the <tt>--signature-v2</tt> argument to S3CMD, for example like <tt>s3cmd --signature-v2 ls</tt>. The argument tells S3CMD to revert to the original authentication strategy. The more permanent change is to add <tt>signature_v2 = True</tt> to the bottom of your .s3cfg file. That will force S3CMD to use the original authentication strategy every time the command is run.
 
 
 
