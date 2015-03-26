@@ -56,7 +56,7 @@
 <h5>Once S3CMD has been installed, it must be configured to use CenturyLink Cloud’s Object Storage:</h5>
 <ol>
   <ol>
-    <li>S3CMD stores its settings in a configuration file. You can either run s3cmd&nbsp;–configure&nbsp;to launch an interactive&nbsp;configuration generation tool, or specify a&nbsp;pre-existing file.&nbsp;You will be prompted for both your Access Key&nbsp;and
+    <li>S3CMD stores its settings in a configuration file. You can either run <tt>s3cmd&nbsp;–configure&nbsp;</tt> to launch an interactive&nbsp;configuration generation tool, or specify a&nbsp;pre-existing file.&nbsp;You will need both your Access Key&nbsp;and
       your Secret Key, which can be found by clicking on the appropriate username in the CenturyLink Cloud Control Panel, under the Services-&gt; Object Storage Section.</li>
     <li>
       <a><img src="https://t3n.zendesk.com/attachments/token/wzvex9kpccjeuge/?name=bucketsecret.JPG" alt="bucketsecret.JPG" />
@@ -67,7 +67,7 @@
     <li>Select “Yes” for HTTPS unless explicitly directed otherwise.</li>
     <li>You will then be asked to test your settings- select NO as it WILL fail.</li>
     <li>Select “Yes” when prompted to save your configuration file.</li>
-    <li>The .s3cfg file will be created in your users home directory- open it with your favorite text editor, in this example we will use VIM. Enter the command: <strong>vi ~/.s3cfg</strong>
+    <li>The .s3cfg file will be created in your users home directory- open it with your favorite text editor, in this example we will use <tt>vi</tt>. Enter the command: <strong>vi ~/.s3cfg</strong>
     </li>
     <li>In the configuration file, change the following fields with the appropriate CenturyLink Cloud data center (in this example, we are using Canada- but an American data center would be us.tier3.io, UK would be uk.tier3.io, etc.)</li>
   </ol>
@@ -175,7 +175,7 @@ verbosity = WARNING
   </a>
 </p>
 </pre>
-<h5>Using S3CMD:</h5>
+<h4><a name="usage">Using S3CMD</a></h4>
 <p>Now that S3cmd has been configured, you can issue normal commands and interact with your storage. Run S3cmd&nbsp;–-man for a full list of commands.</p>
 <p>Make a bucket with <code><strong>s3cmd mb s3://my-new-bucket-name</strong></code>
 </p>
