@@ -1,28 +1,29 @@
 {{{
   "title": "S3CMD - Object Storage Management for Linux Machines",
-  "date": "10-27-2014",
-  "author": "Jake Malmad",
+  "date": "03-25-2015",
+  "author": "Brian Button",
   "attachments": [],
   "contentIsHTML": true
 }}}
 
-<p>S3CMD is a Linux utility that can be used to interact and manage your <a href="http://www.tier3.com/products/object-storage">CenturyLink Cloud Object Storage</a> buckets. While S3CMD is included in many package managers, it is best to manually configure
-  the official repository to ensure that you are using the latest version.</p>
-<p>First, you will need to create a user and object storage bucket from within the CenturyLink Cloud Control Portal:</p>
-<ol>
-  <li>Navigate to “Object Storage” under the “Services” tab of <a href="https://control.tier3.com/">https://control.tier3.com</a>
-  </li>
-  <li>Click “Create User” and fill out the required fields.
-    <a><img src="https://t3n.zendesk.com/attachments/token/9hcvz1o9trzgsjt/?name=bucketusercreation.JPG" alt="bucketusercreation.JPG" />
-    </a>
-  </li>
-  <li>Switch to the “Buckets” tab and click “Create Bucket”. Enter the bucket name and select the owner from the drop-down menu. If you need to add additional users or modify the permissions, you can click on the buck et name after it has been generated to
-    make said modifications.</li>
-</ol>
-<p>
-  <a><img src="https://t3n.zendesk.com/attachments/token/mo4fnodxuvhzhpk/?name=bucketcreation.JPG" alt="bucketcreation.JPG" />
-  </a>
-</p>
+<p>S3CMD is a Linux command line utility that can be used to interact with and manage your <a href="http://www.tier3.com/products/object-storage">CenturyLink Cloud Object Storage</a> buckets and data, Access Control Lists (ACLs), and associated metadata. S3CMD is an advanced tool to be used for accessing object storage, so care should be taken.</p>
+
+<ul>
+	<li><href="#install">Installing S3CMD</a>
+	</li>
+	<li><a href="#configure">Configuring S3CMD for CenturyLink Object Storage</a>
+	</li>
+	<li>
+		<a href="#usage">Using S3CMD</a>
+	</li>
+</ul>
+
+<h4><a name="install">Installing S3CMD</a></h4>
+<p>Before you can use S3CMD, you'll need to make sure it is installed. At the command line, enter the following: <tt>which s3cmd</tt>. If this command gives  no output, then you do not have S3CMD installed and need to add it. </p>
+
+<p>The simplest way to add it is to use the package manager for your version of Linux, probably either. While S3CMD is included in many package managers, it is best to manually configure
+  the official repository to ensure that you are using the latest version.
+ 
 <p><strong>To add the repository to a CentOS or RHEL machine</strong> (note, both instructions assume you are running as root- you will need to add “sudo” where appropriate if not logged in as root):</p>
 <ol>
   <li>Install wget if not already installed by entering the command: <strong>yum install wget&nbsp;–y</strong>
@@ -51,6 +52,7 @@
   </li>
 </ol>
 
+<h4><a name="configuring">Configuring S3CMD</a>
 <h5>Once S3CMD has been installed, it must be configured to use CenturyLink Cloud’s Object Storage:</h5>
 <ol>
   <ol>
@@ -155,7 +157,23 @@ urlencoding_mode = normal
 <strong>use_https = False</strong>
 
 verbosity = WARNING
+</pre>
 
+<p>To begin using S3CMD, you'll need have an object storage user and a bucket, which you can create through the CenturyLink Cloud Control Portal: </p>
+<ol>
+  <li>Navigate to “Object Storage” under the “Services” tab of <a href="https://control.tier3.com/">https://control.tier3.com</a>
+  </li>
+  <li>Click “Create User” and fill out the required fields.
+    <a><img src="https://t3n.zendesk.com/attachments/token/9hcvz1o9trzgsjt/?name=bucketusercreation.JPG" alt="bucketusercreation.JPG" />
+    </a>
+  </li>
+  <li>Switch to the “Buckets” tab and click “Create Bucket”. Enter the bucket name and select the owner from the drop-down menu. If you need to add additional users or modify the permissions, you can click on the buck et name after it has been generated to
+    make said modifications.</li>
+</ol>
+<p>
+  <a><img src="https://t3n.zendesk.com/attachments/token/mo4fnodxuvhzhpk/?name=bucketcreation.JPG" alt="bucketcreation.JPG" />
+  </a>
+</p>
 </pre>
 <h5>Using S3CMD:</h5>
 <p>Now that S3cmd has been configured, you can issue normal commands and interact with your storage. Run S3cmd&nbsp;–-man for a full list of commands.</p>
