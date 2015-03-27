@@ -193,7 +193,69 @@ Ticket Escalation Mechanism - Requires a support contract
     </tr>
 </thead>
 <tbody>
-
+<tr>
+  <td>
+    <strong>Urgent</strong>
+  </td>
+  <td>
+    <ul>
+      <li>Any critical element of the CenturyLink Cloud Platform service is unavailable</li>
+      <li>All or a major portion of servers hosted on the CenturyLink Cloud platform are down</li>
+      <li>All or a major portion of CenturyLink Cloud supported Managed Services down[1]</li>
+      <li>Security Breach</li>
+    </ul>
+  </td>
+  <td>
+    15 minutes
+  </td>
+  <td>
+    <ul>
+      <li>Updates to all impacted customers and company-all every 30 minutes</li>
+      <li>Status page updated</li>
+      <li>CenturyLink Cloud - Dedicated Internal Whiteboard</li>
+      <li>Customer facing &amp; CenturyLink Cloud - Ticket Entry</li>
+      <li>cloud-pulse whiteboard updates</li>
+    </ul>
+  </td>
+  <td>
+    <a href="mailto:urgent@t3n.zendesk.com">urgent@t3n.zendesk.com</a>
+  </td>
+  <td>
+    4 hours
+  </td>
+</tr>
+<tr>
+  <td>
+    <p><strong>High</strong>
+    </p>
+  </td>
+  <td>
+    <ul>
+      <li>Any non-critical element of the service is unavailable</li>
+      <li>Less than 50% of the servers hosted on the CenturyLink Cloud platform are down</li>
+      <li>Components or elements of CenturyLink Cloud supported Managed Services down[1]</li>
+      <li>Significant performance degradation</li>
+      <li>Security Incident</li>
+    </ul>
+  </td>
+  <td>
+    30 minutes
+  </td>
+  <td>
+    <ul>
+      <li>Updates to all impacted customers and company-all hourly</li>
+      <li>Status page updated</li>
+      <li>CenturyLink Cloud - Dedicated Internal Whiteboard</li>
+      <li>Ticket Entry</li>
+    </ul>
+  </td>
+  <td>
+    <a href="mailto:high@t3n.zendesk.com">high@t3n.zendesk.com</a>
+  </td>
+  <td>
+    8 hours
+  </td>
+</tr>
 <tr>
 <td>
   <p><strong>Normal</strong>
