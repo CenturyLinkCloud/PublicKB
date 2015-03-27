@@ -9,18 +9,18 @@
 <p>S3CMD is a Linux command line utility that can be used to interact with and manage your <a href="/object-storage">CenturyLink Cloud Object Storage</a> buckets and data, Access Control Lists (ACLs), and associated metadata. S3CMD is an advanced tool to be used for accessing object storage, so care should be taken.</p>
 
 <ul>
-	<li><a href="#install">Installing S3CMD</a>
+	<li class="scroll-to-link"><a href="#install">Installing S3CMD</a>
 	</li>
-	<li><a href="#configure">Configuring S3CMD for CenturyLink Object Storage</a>
+	<li class="scroll-to-link"><a href="#configure">Configuring S3CMD for CenturyLink Object Storage</a>
 	</li>
-	<li>
+	<li class="scroll-to-link">
 		<a href="#usage">Using S3CMD</a>
 	</li>
-	<li>
+	<li class="scroll-to-link">
 	<a href="#version">Special note about S3CMD versions</a>
 </ul>
 
-<h4><a name="install">Installing S3CMD</a></h4>
+<h4><a id="install">Installing S3CMD</a></h4>
 <p>Before you can use S3CMD, you'll need to make sure it is installed. At the command line, enter the following: <strong>which s3cmd</strong> . If this command gives  no output, then you do not have S3CMD installed and need to add it. </p>
 
 <p>The simplest way to add it is to use the package manager for your version of Linux, probably either <strong>yum</strong> or <strong>apt</strong>. While S3CMD is included in many package managers, it is best to manually configure
@@ -54,7 +54,7 @@
   </li>
 </ol>
 
-<h4><a name="configure">Configuring S3CMD</a></h4>
+<h4><a id="configure">Configuring S3CMD</a></h4>
 Once S3CMD has been installed, it must be configured to use CenturyLink Cloud’s Object Storage.
 <ol>
   <ol>
@@ -177,7 +177,7 @@ verbosity = WARNING
   </a>
 </p>
 </pre>
-<h4><a name="usage">Using S3CMD</a></h4>
+<h4><a id="usage">Using S3CMD</a></h4>
 <p>Now that S3cmd has been configured, you can issue normal commands and interact with your storage. Run S3cmd&nbsp;–-man for a full list of commands.</p>
 <p>Make a bucket with <code><strong>s3cmd mb s3://my-new-bucket-name</strong></code>
 </p>
@@ -187,7 +187,7 @@ verbosity = WARNING
 </p>
 <p>Download/Retrieve a file <strong>s3cmd&nbsp;get s3://my-new-bucket-name/testfile.xml testfile_modified.xml&nbsp;</strong>
 </p>
-<h4><a name="version">Special note about S3CMD versions</a></h4>	
+<h4><a id="version">Special note about S3CMD versions</a></h4>	
 <p>
 S3CMD is an active open-source project, and as such is frequently updated. Depending on the version of S3CMD you installed, the default authentication strategy may have changed. Using the incorrect authentication strategy will result in <strong>403 Not Authorized</strong> errors for some requests to object storage. You can tell which version of S3CMD you have by running the command <strong>s3cmd --version</strong> and inspecting the output. If the version is before <strong>1.5.0</strong> then s3cmd will operate correctly. 
 </p>
