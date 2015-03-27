@@ -47,7 +47,7 @@
   </li>
   <li>Import the signing key by entering the command: <strong>wget -O - -q http://s3tools.org/repo/deb-all/stable/s3tools.key | apt-key add -</strong>
   </li>
-  <li>Add the repository by entering the command: <strong><strong>wget -O/etc/apt/sources.list.d/s3tools.list&nbsp;</strong><a href="http://s3tools.org/repo/deb-all/stable/s3tools.list"><strong>http://s3tools.org/repo/deb-all/stable/s3tools.list</strong></a>
+  <li>Add the repository by entering the command: <strong><strong>wget -O /etc/apt/sources.list.d/s3tools.list&nbsp;</strong><a href="http://s3tools.org/repo/deb-all/stable/s3tools.list"><strong>http://s3tools.org/repo/deb-all/stable/s3tools.list</strong></a>
     </strong>
   </li>
   <li>Refresh your packages and install by entering the command: <strong>apt-get update &amp;&amp; apt-get install s3cmd</strong>
@@ -163,7 +163,7 @@ verbosity = WARNING
 
 <p>To begin using S3CMD, you'll need have an object storage user and a bucket, which you can create through the CenturyLink Cloud Control Portal: </p>
 <ol>
-  <li>Navigate to “Object Storage” under the “Services” tab of <a href="https://control.tier3.com/">https://control.tier3.com</a>
+  <li>Navigate to “Object Storage” under the “Services” tab of <a href="https://control.ctl.io/">https://control.ctl.io</a>
   </li>
   <li>Click “Create User” and fill out the required fields.
     <a><img src="https://t3n.zendesk.com/attachments/token/9hcvz1o9trzgsjt/?name=bucketusercreation.JPG" alt="bucketusercreation.JPG" />
