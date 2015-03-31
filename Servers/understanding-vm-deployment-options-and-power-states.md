@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-<h3>Templates</h3>
+### Templates
 
 **Definition:** A Virtual Machine template provides a standardized group of hardware and software settings that can be used repeatedly to create new virtual machines configured with those settings.
 
@@ -42,7 +42,7 @@
 
 **How To:** The Pause function is available at both the group or individual virtual machine details pane. Customers can leverage the built in scheduler to perform automated changes to power states against individual or groups of virtual machines.
 
-<img src="https://t3n.zendesk.com/attachments/token/LaIWCmiv5gXqZKsLTKbtAJD3U/?name=01.png" alt="01.png" />
+![](https://t3n.zendesk.com/attachments/token/LaIWCmiv5gXqZKsLTKbtAJD3U/?name=01.png)
 
 **Costs:** In the pause state, a customer pays for storage consumed by the virtual machine and licensing costs. Compute and memory costs are not levied. Managed Services costs are Levied in a pause state.
 
@@ -56,10 +56,10 @@
 
 **How to:** The Archive function is available in the individual virtual machine details pane. Customers can leverage the built in scheduler to automate migrate of virtual machine in or out of archive.
 
-<img src="https://t3n.zendesk.com/attachments/token/CEst2oMljyDImt4Pa4JtIQQTD/?name=02.png" alt="02.png" />
+![](https://t3n.zendesk.com/attachments/token/CEst2oMljyDImt4Pa4JtIQQTD/?name=02.png")
 
-**Costs:** In the archive state, a customer pays only for the archival storage consumed by the virtual machine (at a reduced rate). Compute, memory and licensing costs are not levied.  Managed Servers cannot leverage the Archive Feature.</p>
+**Costs:** In the archive state, a customer pays only for the archival storage consumed by the virtual machine (at a reduced rate). Compute, memory and licensing costs are not levied.  Managed Servers cannot leverage the Archive Feature.
 
-**Sample Use Case:** The business department has a reporting server that pulls data on a monthly basis from a 3rd party and generates reports for business analysis. This virtual machine is only required for 2 days per month and otherwise is unused. To save costs, the IT department schedules the server to be placed in archive and brought out of archived for operation during just these 2 days of the month. </li>
+**Sample Use Case:** The business department has a reporting server that pulls data on a monthly basis from a 3rd party and generates reports for business analysis. This virtual machine is only required for 2 days per month and otherwise is unused. To save costs, the IT department schedules the server to be placed in archive and brought out of archived for operation during just these 2 days of the month.
 
 **Note:** Archived servers are not backed up daily. Rather, a single copy of it is stored. To restore a VM in which you have archived, simply unarchive it.
