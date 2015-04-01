@@ -29,7 +29,7 @@ In order to properly process your request to deploy Citrix VPX device(s) custome
 * The Server Group you'd like the VPX(s) deployed into
 * The number of VIP's you'd like reserved in the network for load balancing. The support team can later reserve more via a ticket. Generally, our team will reserve 10 VIPs out of the box unless stated otherwise.
 * [Indicate which of the (4) dedicated load balancer types you wish to purchase.](http://www.centurylinkcloud.com/load-balancing/#Pricing)
-* Indicate the Quantity of devices you wish to purchase.  **If you require Highly Availabile Load Balancers 2 units must be purchased.**
+* Indicate the Quantity of devices you wish to purchase.  **If you require Highly Available Load Balancers 2 units must be purchased.**
 * [Provide your pin](../Support/pin-authentication-for-support-requests.md)
 
 ### Accessing the VPX Appliance(s)
