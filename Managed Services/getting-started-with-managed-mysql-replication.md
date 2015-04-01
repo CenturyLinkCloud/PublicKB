@@ -16,9 +16,9 @@
 <p><img src="https://t3n.zendesk.com/attachments/token/in7xbmGdaHMfvdoUTHtT9QBWp/?name=My_SQL_1.png" alt="My_SQL_1.png" /></p>
 <p>2. Fill out the appropriate details for the Blueprint</p>
 <ul>
-<li>Password for MASTER server MySQL account (1<sup style="background-color: initial;">st</sup>&nbsp;Master, in the example below 101)</li>
+<li>Password for MASTER server MySQL account (1<sup style="background-color: initial;">st</sup>&nbsp;Master, in the example below 101). <B>NOTE: This should be the password used when MySQL was configured and can be found at /root/.mysqlclc</b></li>
 <li>Slave Server Host Name - This is the 1st Slave Server (In the example below 102 is the slave) or the name of the 2<sup style="background-color: initial;">nd</sup>&nbsp;Master</li>
-<li>Password for SLAVE server MySQL account (in the example below 102)</li>
+<li>Password for SLAVE server MySQL account (in the example below 102) <b>NOTE: This should be the password used when MySQL was configured and can be found at /root/.mysqlclc</b></li>
 <li>Install Managed MySQL Master Master Replication - Execute on Server - Choose the 1st Master (in the example below 101)</li>
 <li>Install Managed MySQL Master Master Replication - Execute on Server - Choose the 1st Master (in the example below 101)</li>
 <li>Register Managed MySQL Replication - Execute on Server - Choose the 1st Master (in the example below 101)</li>
