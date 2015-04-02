@@ -10,7 +10,7 @@
 
 * **Support for Custom Price Lists & Displays.** *Plus API and Invoicing.* Administrators who want to show a custom price for services in the Control Portal can now do so. Contact CenturyLink Cloud to learn more. *If you have specialized pricing, you now have an API to call it, and the ability to run an invoice reflecting this pricing.*
 
-* **Load Balancer APIs.** The creation and management of load balancer pools is now available via self-service API. All capabilities available for shared load balancing in the Control Portal - including create, configure, and delete - can now be done via API. *Link to documentation about load balancer APIs? Is this available? If so, we should link to it*
+* **Shared Load Balancer APIs.** The creation and management of load balancer pools is now available via self-service API. All capabilities available for shared load balancing in the Control Portal - including create, configure, and delete - can now be done via API. *Link to documentation about load balancer APIs will be added after release*
 
 ###Minor Enhancements (2)
 
