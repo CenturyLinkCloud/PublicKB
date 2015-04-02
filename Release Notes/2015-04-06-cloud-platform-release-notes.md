@@ -30,22 +30,21 @@
 
 * **CenturyLink Cloud Status.** This is a portal that allows users to gain insight into the health of the cloud platform, stay in tune with service incidents, and learn about upcoming maintenance. The site address is: http://status.ctl.io (a "Status" link also appears in the footer of centurylinkcloud.com). In addition, maintenance and outage notifications will no longer come from communications@centurylinkcloud.com, instead they will come from noc@ctl.io. More information about this service can be found [here](../General/centurylink-cloud-status-faq.md).
 
-![centurylink-status](../images/centurylink-status.png)
+  ![centurylink-status](../images/centurylink-status.png)
 
-* **Activate site.** We updated the sign up experience on centurylinkcloud.com to reduce potential fraud, simplify user flow, and make it easier to make improvements. Please note that the old activate URL is still online, but will eventually redirect to the new sign up process.
+* **Account Activation.** The sign up experience on www.centurylinkcloud.com has been updated to reduce potential fraud, simplify user flow, and make it easier to make improvements. The old activate url redirects to the new sign up experience.
 
 * **Data center-specific Pricing Catalog and Cloud Price Estimator.** With the rollout of the new Singapore datacenter, we’ve introduced region-specific pricing. To ensure transparency, we’ve updated our price catalog and estimator tool with a data center-specific dropdown list. Users can adjust their view to clearly see the pricing for the data center they are most interested in.
 
-Data Center can be selected when using the estimator:
+  Data Center can be selected when using the estimator:
 
-![Pricing Example 01](../images/pricing-example-01.png)
+  ![Pricing Example 01](../images/pricing-example-01.png)
 
-Or it can be selected when viewing the Pricing Catalog:
+  Or it can be selected when viewing the Pricing Catalog:
 
-![Pricing Example 02](../images/pricing-example-02.png)
+  ![Pricing Example 02](../images/pricing-example-02.png)
 
 
-![Pricing Example 02](../images/pricing-example-02.png)
 ###Managed Services (1)
 
 * **Managed Backup available in GB3.** Newly created servers in GB3 can now have data protected with the [Managed Backup Service](https://www.centurylinkcloud.com/managed-services/backup/). More details on the service are [here](../Managed Services/managed-backup-frequently-asked-questions.md/).
