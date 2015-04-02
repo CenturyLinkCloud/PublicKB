@@ -26,7 +26,7 @@ Once object storage has been configured, you must edit your base  WordPress *wp-
 
 <img src="../images/persisting-wordpress-files_1.png" alt="persisting-wordpress-files_1.png" />
 
-**3. In the upper right-hand corner, click the pencil icon to *Edit the file.* **
+3. In the upper right-hand corner, click the pencil icon to Edit the file.
 
 <img src="../images/persisting-wordpress-files_2.png" alt="persisting-wordpress-files_2.png" />
 
