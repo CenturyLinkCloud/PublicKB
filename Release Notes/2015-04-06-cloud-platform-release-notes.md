@@ -10,31 +10,25 @@
 
 * **Support for Custom Price Lists & Displays.** *Plus API and Invoicing.* Administrators who want to show a custom price for services in the Control Portal can now do so. Contact CenturyLink Cloud to learn more. *If you have specialized pricing, you now have an API to call it, and the ability to run an invoice reflecting this pricing.*
 
-* **Load Balancer APIs.** We created APIs that allow you to manage Load Balancer groups. This includes create, configure, and delete - anything that you can do with Load Balancing in Control, you can now do via API.
+* **Load Balancer APIs.** The creation and management of load balancer pools is now available via self-service API. All capabilities available for shared load balancing in the Control Portal - including create, configure, and delete - can now be done via API. *Link to documentation about load balancer APIs? Is this available? If so, we should link to it*
 
-###Minor Enhancements (1)
+###Minor Enhancements (2)
 
-* **Managed OS billing on powered off servers.** Managed OS will not be billed when a server is powered off.
+* **No charge for Managed OS services when servers are powered off.** Virtual machines with a managed OS will NOT incur hourly managed OS fees when the server is powered off. Charges will re-start after the VM is powered back on.
+* **CenturyLink Cloud Status.** A new portal - [status.ctl.io](http://status.ctl.io) - includes real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Accordingly, maintenance and outage notifications will no longer come from communications@centurylinkcloud.com; instead they will come from noc@ctl.io. More information about this service can be found [here](../General/centurylink-cloud-status-faq/).
+
+![centurylink-status](../images/centurylink-status.png)
 
 ###Notifications (1)
 
-* **OS Retirement.** Full retirement of the following operating systems is complete: Windows Server 2003, CentOS 5 & 6 **32 bit**, Ubuntu 10, FreeBSD, and Windows Server 2008 **32-bit**. Users can no longer install these OS on new virtual machines. For more information about this initiative, please, see this [Knowledge Base article](../Servers/operating-system-retirement-notice-feb-3-2015.md/). What does "retirement" mean? You can get more details [here](../Servers/operating-system-template-retirement-policy.md/).
+* **OS Retirement.** The following operating systems have been removed from the "Create Server" experience in the Control Portal and via API: Windows Server 2003, CentOS 5 & 6 **32 bit**, Ubuntu 10, FreeBSD, and Windows Server 2008 **32-bit**. The next phase of retirement for these operating systems will be completed in 60 days. For more information about this, please, see this [Knowledge Base article](../Servers/operating-system-retirement-notice-feb-3-2015.md/). What does "retirement" mean? You can get more details [here](../Servers/operating-system-template-retirement-policy.md/).
 
-###Online Tools (3)
 
-* **CenturyLink Cloud Status.** This is a portal that allows users to gain insight into the health of the cloud platform, stay in tune with service incidents, and learn about upcoming maintenance. The site address is: http://status.ctl.io (a "Status" link also appears in the footer of centurylinkcloud.com). In addition, maintenance and outage notifications will no longer come from communications@centurylinkcloud.com, instead they will come from noc@ctl.io. More information about this service can be found [here](../General/centurylink-cloud-status-faq/).
+###Online Tools (2)
 
-* **OS Retirement.** Full retirement of the following operating systems is complete: Windows Server 2003, CentOS 5 & 6 **32 bit**, Ubuntu 10, FreeBSD, and Windows Server 2008 **32-bit**. Users can no longer install these OS on new virtual machines. For more information about this initiative, please, see this [Knowledge Base article](../Servers/operating-system-retirement-notice-feb-3-2015.md). What does "retirement" mean? You can get more details [here](../Servers/operating-system-template-retirement-policy.md).
+* **Account Activation.** The "activate" experience on [activate.centurylinkcloud.com](https://activate.centurylinkcloud.com) has been enhanced with two-factor authentication and a simplified user flow.
 
-###Online Tools (3)
-
-* **CenturyLink Cloud Status.** This is a portal that allows users to gain insight into the health of the cloud platform, stay in tune with service incidents, and learn about upcoming maintenance. The site address is: http://status.ctl.io (a "Status" link also appears in the footer of centurylinkcloud.com). In addition, maintenance and outage notifications will no longer come from communications@centurylinkcloud.com, instead they will come from noc@ctl.io. More information about this service can be found [here](../General/centurylink-cloud-status-faq.md).
-
-  ![centurylink-status](../images/centurylink-status.png)
-
-* **Account Activation.** The sign up experience on www.centurylinkcloud.com has been updated to reduce potential fraud, simplify user flow, and make it easier to make improvements. The old activate url redirects to the new sign up experience.
-
-* **Data center-specific Pricing Catalog and Cloud Price Estimator.** With the rollout of the new Singapore datacenter, we’ve introduced region-specific pricing. To ensure transparency, we’ve updated our price catalog and estimator tool with a data center-specific dropdown list. Users can adjust their view to clearly see the pricing for the data center they are most interested in.
+* **Data center-specific Pricing Catalog and Cloud Price Estimator.** Region-specific pricing is now reflected in these tools. Simply select a data center using the drop-down, and prices will update automatically.
 
   Data Center can be selected when using the estimator:
 
@@ -47,7 +41,7 @@
 
 ###Managed Services (1)
 
-* **Managed Backup available in GB3.** Newly created servers in GB3 can now have data protected with the [Managed Backup Service](https://www.centurylinkcloud.com/managed-services/backup/). More details on the service are [here](../Managed Services/managed-backup-frequently-asked-questions.md/).
+* **Managed Backup now available in GB3.** Newly created servers in GB3 can now have data protected with the [Managed Backup Service](https://www.centurylinkcloud.com/managed-services/backup/). More details on the service are [here](../Managed Services/managed-backup-frequently-asked-questions.md/).
 
 ###Ecosystem: New Blueprints (5)
 
@@ -61,7 +55,7 @@
 
 * [**Opscode Chef**](../Ecosystem Partners/getting-started-with-chef-server-blueprint.md/) - Chef turns infrastructure into code, allowing users to automate how they build, deploy, and manage cloud-based infrastructure using the same software development practices as they use for their primary codebase. CenturyLink has integrated Chef Server in to a Blueprint that will automatically install and configure Chef Standalone Server on Red Hat Enterprise Linux.
 
-###Open Source Contributions (6)
+###Open Source Contributions (4)
 Selected highlights include:
 
 * **Panamax UI v0.2.15** - Added support for Docker Private Repositories and Private Registries behind Basic Auth and Certificates of Authority. Users can now provide an absolute URL path to access images on private registries/repositories. Notification added to Registry management page for secure/insecure registry support. Wiki available [here]( https://github.com/CenturyLinkLabs/panamax-ui).
