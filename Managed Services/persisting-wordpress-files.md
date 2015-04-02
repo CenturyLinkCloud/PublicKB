@@ -46,7 +46,7 @@ In this section you will see three replaceable variables:
 
 <img src="../images/persisting-wordpress-files_4.png" alt="persisting-wordpress-files_4.png" />
 
-**5. Once you have updated the file, browse to the bottom of the screen, input a reason for the changes, and click "Commit changes" **
+**5. Once you have updated the file, browse to the bottom of the screen, input a reason for the changes, and click "Commit changes"**
 
 <img src="../images/persisting-wordpress-files_5.png" alt="persisting-wordpress-files_5.png" />
 
