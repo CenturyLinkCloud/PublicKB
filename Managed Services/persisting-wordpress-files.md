@@ -30,7 +30,7 @@ Once object storage has been configured, you must edit your base  WordPress *wp-
 
 <img src="../images/persisting-wordpress-files_2.png" alt="persisting-wordpress-files_2.png" />
 
-4. Find the section of the file labeled *"CenturyLink Object Storage Customer Variables"*
+**4. Find the section of the file labeled "CenturyLink Object Storage Customer Variables"**
 
 In this section you will see three replaceable variables:
 
