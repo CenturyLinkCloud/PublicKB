@@ -48,4 +48,8 @@
 <p><strong>Q: What Versions of Oracle MySQL Replication are supported?</strong></p>
 <p>A: CenturyLink Cloud Supports&nbsp;MySQL v5.5, MySQL 5.6.</p>
 <p><strong>Q: What operating systems are supported for Managed Oracle MySQL Replication?</strong></p>
-<p>A: Managed Red Hat 6</p>
+<p>A: Managed Red Hat 6
+</p>
+<p><strong>Q: Can *un-managed* MySQL Replication Services be converted to *Managed* (or vice versa)?</strong>
+</p>
+<p>A: This capability is not available at this time.</p>
