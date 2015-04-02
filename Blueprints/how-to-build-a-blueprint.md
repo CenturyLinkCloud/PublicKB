@@ -55,9 +55,7 @@
     </li>
     <li>Click the "Apply" button.</li>
   </ul>
-  <div><strong><img src="../images/Screen-Shot-2014-12-02-at-21857-PM.png" alt="Screen_Shot_2014-12-02_at_2.18.57_PM.png" /></strong>
-  </div>
-  <div></div>
+  
   <div><strong>4. Add an Existing Blueprint to this Blueprint</strong>
   </div>
   <div>During this step the option is available to call other blueprint from the one being designed. This feature greatly helps in giving the ability to treat blueprints as components and be able to be put together in a highly customizable way.</div>
