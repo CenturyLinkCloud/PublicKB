@@ -5,10 +5,10 @@
   "attachments": [],
   "contentIsHTML": true
 }}}
-<p>
+
 <h3>Persisting Wordpress Files</h3>
 
-<p>CenturyLink Cloud WordPress sites utilize Object Storage for persistent WordPress content files such as images and file attachments.  In order to utilize persistent storage you must first manually configure Centurylink Cloud Object Storage using the following link:</p>
+CenturyLink Cloud WordPress sites utilize Object Storage for persistent WordPress content files such as images and file attachments.  In order to utilize persistent storage you must first manually configure Centurylink Cloud Object Storage using the following link:
 
 [Using object storage from the control portal](../Object Storage/using-object-storage-from-the-control-portal.md)
 
@@ -26,12 +26,13 @@ Once object storage has been configured, you must edit your base  WordPress *wp-
 
 <img src="../images/persisting-wordpress-files_1.png" alt="persisting-wordpress-files_1.png" />
 
-**3. In the upper right-hand corner, click the pencil icon to *Edit the file* **
+**3. In the upper right-hand corner, click the pencil icon to *Edit the file.* **
 
 <img src="../images/persisting-wordpress-files_2.png" alt="persisting-wordpress-files_2.png" />
 
 **4. Find the section of the file labeled *"CenturyLink Object Storage Customer Variables"* **
-<p>In this section you will see three replaceable variables:</p>
+
+In this section you will see three replaceable variables:
 
 1. customer_access_key
 2. customer_secret_access_key
@@ -39,7 +40,7 @@ Once object storage has been configured, you must edit your base  WordPress *wp-
 
 **NOTE: These are variables you will have obtained when configuring your [*CenturyLink Cloud Object Storage.*](../Object Storage/using-object-storage-from-the-control-portal.md) **
 
-<img src="../images/persisting-wordpress-files_3.png" alt="persisting-wordpress-files_3.png" /></strong></p>
+<img src="../images/persisting-wordpress-files_3.png" alt="persisting-wordpress-files_3.png" />
 
 *The following example shows the variables replaced:*
 
