@@ -18,25 +18,25 @@ Exchange 2013 requires an Active Directory environment.  AD can easily be automa
 
 Our design for a basic Exchange 2013 DR/HA environment will involve 3 datacenters and 3 servers.  For example, UT1 is our primary/active Exchange datacenter; IL1 is our secondary/passive Exchange datacenter, and NY1 will hold the file share witness (FSW) for the Exchange Database Availability Group (DAG).
 
-(../images/deploy-ha-exchange-on-clc-1.png)
+![Archictecture Diagram](../images/deploy-ha-exchange-on-clc-1.png)
 
 ### CLC Server Creation
 
 Create an Exchange server in UT1 & another in IL1 with the [CLC create server wizard](../servers/creating-a-new-enterprise-cloud-server.md).  Since both servers will host the Client Access and Mailbox roles, you will want to start them with at least 2CPU/16GB of RAM each.  Join both servers to Active Directory.  Create the 3rd server in NY1 for the FSW – this can be done with minimal resources, such as 1CPU/2GB of RAM, and should also be domain joined.
 
-(../images/deploy-ha-exchange-on-clc-2.png)
+![Server Menu](../images/deploy-ha-exchange-on-clc-2.png)
 
 Note – if these are the first servers in a datacenter for your account, then a /24 network will automatically be provisioned as part of the server creation process.
 
-(../images/deploy-ha-exchange-on-clc-3.png)
+![Network Menu](../images/deploy-ha-exchange-on-clc-3.png)
 
 ### CLC Firewall Policies
 
 Each server will need to be able to communicate with the subnet that the other two servers are on.  In this example, we will [create Cross Datacenter firewall policies](../network/creating-cross-data-center-firewall-policies.md) that open up each /24 subnet to each other.
 
-(../images/deploy-ha-exchange-on-clc-4.png)
+![Network Menu](../images/deploy-ha-exchange-on-clc-4.png)
 
-(../images/deploy-ha-exchange-on-clc-5.png)
+![Network Menu](../images/deploy-ha-exchange-on-clc-5.png)
 
 The end result should have a firewall policy for the following:
 
@@ -44,7 +44,7 @@ The end result should have a firewall policy for the following:
 * UT1 subnet <> NY1 subnet
 * IL1 subnet <> NY1 subnet
 
-(../images/deploy-ha-exchange-on-clc-6.png)
+![Network Menu](../images/deploy-ha-exchange-on-clc-6.png)
 
 ### Exchange Installation
 
@@ -60,15 +60,15 @@ Install Exchange 2013 on both servers in UT1/IL1 using the [setup wizard](https:
 
 Both Exchange servers will need to [add two public IP’s](../network/how-to-add-public-ip-to-virtual-machine.md) each.
 
-(../images/deploy-ha-exchange-on-clc-7.png)
+![Public IP Menu](../images/deploy-ha-exchange-on-clc-7.png)
 
 One public IP will be used for IIS traffic (OWA, ActiveSync, ECP, etc) and will require ports 80/443 open.  This public IP can use the existing private IP (10.92.231.12 in this instance).  80 & 443 are standard public ports that have a checkbox.
 
-(../images/deploy-ha-exchange-on-clc-8.png)
+![Public IP Menu](../images/deploy-ha-exchange-on-clc-8.png)
 
 The second public IP will be used for mail flow.  This will require you to use the internal ip address dropdown and select Add New IP Address; this will add a second internal IP (such as 10.92.231.13).  Next, you will need to select custom port and add TCP 25 for SMTP.  Finally, click the grey button next to restrict source traffic and add the public subnets your email is coming from. For example, mail flow from an anti-spam cloud (such as Postini) will require port 25 open with a source IP restriction to lock down to the IP’s delivering mail.
 
-(../images/deploy-ha-exchange-on-clc-9.png)
+![Public IP Menu](../images/deploy-ha-exchange-on-clc-9.png)
 
 ### Create and Configure the Exchange DAG
 
@@ -85,7 +85,7 @@ Add-WindowsFeature FS-FileServer
 
 At this point the FSW server is ready for the DAG to be created.  As a pre-requisite for the DAG, we will need to claim the internal cluster IP’s for each datacenter by requesting a NOC ticket (You can open a ticket by simply sending an email to noc@ctl.io).  We need both IP’s to be marked as claimed in the portal so they will be unavailable for newly provisioned servers (as provision servers will use the next available IP).  Below is an example of a claimed IP which we will use for the IL1 portion of the DAG:
 
-(../images/deploy-ha-exchange-on-clc-10.png)
+![IP Addresses Menu](../images/deploy-ha-exchange-on-clc-10.png)
 
 To create the Exchange DAG and then add both mailbox servers to it, we can use the Exchange Management Shell to execute the following (example):
 
