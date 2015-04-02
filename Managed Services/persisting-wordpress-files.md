@@ -26,7 +26,7 @@ Once object storage has been configured, you must edit your base  WordPress *wp-
 
 <img src="../images/persisting-wordpress-files_1.png" alt="persisting-wordpress-files_1.png" />
 
-**3. In the upper right-hand corner, click the pencil icon to "Edit the file"**
+**3. In the upper right-hand corner, click the pencil icon to _Edit the file_**
 
 <img src="../images/persisting-wordpress-files_2.png" alt="persisting-wordpress-files_2.png" />
 
@@ -56,7 +56,7 @@ _The following example shows the variables replaced:_
 
 <img src="../images/persisting-wordpress-files_6.png" alt="persisting-wordpress-files_6.png" />
 
-**8. Select _S3 and Cloudfront_ **
+**8. Select S3 and Cloudfront**
 
 <img src="../images/persisting-wordpress-files_7.png" alt="persisting-wordpress-files_7.png" />
 
