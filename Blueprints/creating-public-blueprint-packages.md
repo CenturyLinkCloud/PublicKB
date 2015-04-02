@@ -8,8 +8,8 @@
 
 <h3>Description</h3>
 <p>CenturyLink Cloud offers users the ability to create&nbsp;packages as a way to consistently run specific scripts or executables on one or more servers. These packages also provide the user with a method of defining a given set of parameters that allow
-  for the gathering of information at deployment time so that it may be passed to the script to be used during the execution. (Read about <a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management">Blueprints Script and Software Package Management</a>  for more information on how to create packages in general.) These scripts can be <a href="https://t3n.zendesk.com/entries/56566574-Executing-Packages-on-Servers">executed directly against one or more servers</a>, or they may be included
-  as <a href="https://t3n.zendesk.com/entries/21682201-How-to-execute-a-Blueprint">tasks that are run as part of a Blueprint definition</a>.</p>
+  for the gathering of information at deployment time so that it may be passed to the script to be used during the execution. (Read about <a href="../Blueprints/blueprints-script-and-software-package-management.md">Blueprints Script and Software Package Management</a>  for more information on how to create packages in general.) These scripts can be executed directly against one or more servers, or they may be included
+  as <a href="../Blueprints/how-to-execute-a-blueprint.md">tasks that are run as part of a Blueprint definition</a>.</p>
 <p>These packages are very often specific to a function that may only be applicable to a particular set of users. As such, packages are generally created in the context of a single account and marked as either Private (only visible to users in the account
   where it was created) or Private Shared (visible to users in the account where it was created and all sub-accounts underneath it).&nbsp;However, if a package is created that could be useful for other users and accounts, it may be published as a Public
   package so all users are able to utilize it. In this case, there are some additional considerations to be addressed and steps to be followed.</p>
@@ -49,7 +49,7 @@
 </ol>
 <h3>How to Publish a Public Package</h3>
 <ol>
-  <li>After creating the package and taking all of the above considerations into account, follow the instructions outlined in the article about <a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management#uploading"
+  <li>After creating the package and taking all of the above considerations into account, follow the instructions outlined in the article about <a href="../Blueprints/blueprints-script-and-software-package-management.md"
    >Blueprint Script and Software Package Management&nbsp;</a>to publish the package. For the final step, be sure to select "Public" as the visibility choice.&nbsp;After a package is published with public visibility, it is put into a "pending"
     state and must be approved by a CenturyLink Cloud Administrator before it is available for public use. (Users in the account where it was created will still be able to use it in existing Blueprints while it is in a pending state.)</li>
   <li>Send an e-mail to <a href="mailto:ecosystem@centurylinkcloud.com">ecosystem@centurylinkcloud.com</a>&nbsp;with the subject of "Package Approval" and be sure to include your account alias, the name of the package in the request, and a brief description
