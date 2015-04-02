@@ -128,3 +128,8 @@ Monthly<br />Price per GB
 
 <p><strong>Q: As a customer can I request on-demand backups out of the normal scheduled jobs?</strong></p>
 <p>A: This is possible via a request to Support.  The backup will have the standard product feature of 2 weeks retention at the local data center and a simultaneous copy at the secondary data center.</p>
+
+<p><strong>Q: Is hot backup offered in Managed Backup for (a) databases and for (b) Exchange? What options/suggestions are available?</strong></p>
+<p>A: Hot backup is not offered in Managed Backup.  Managed Backup is for file/folder level backups and restores.</p>
+For SQL, Mysql , Oracle and other databases, a suggested method is to put the data to a file/folder for inclusion in the backups.<p>
+To safely backup and restore Microsoft Exchange mailbox data CenturyLink Cloud customers must implementation and operate their own solution.  Using 3rd party backup clients allows customers to perform recovery of message/mailbox (Exchange) data, define retention periods and backup frequency.  Customers can speak to a CenturyLink Cloud sales representative for guidance.
