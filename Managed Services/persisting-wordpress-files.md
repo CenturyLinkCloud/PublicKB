@@ -40,11 +40,7 @@ In this section you will see three replaceable variables:
 
 **NOTE: These are variables you will have obtained when configuring your [*CenturyLink Cloud Object Storage.*](../Object Storage/using-object-storage-from-the-control-portal.md) **
 
-<<<<<<< HEAD
 <img src="../images/persisting-wordpress-files_3.png" alt="persisting-wordpress-files_3.png" />
-=======
-<img src="../images/persisting-wordpress-files_3.png" alt="persisting-wordpress-files_3.png" /></p>
->>>>>>> origin/wordpress-kb-articles
 
 *The following example shows the variables replaced:*
 
