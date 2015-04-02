@@ -83,6 +83,6 @@ _The following example shows the variables replaced:_
 
 <img src="../images/persisting-wordpress-files_8.png" alt="persisting-wordpress-files_8.png" />
 
-**9. Once settings are verified, click *Save Changes* to commit configuration changes.**
+**10. Once settings are verified, click *Save Changes* to commit configuration changes.**
 
 <img src="../images/persisting-wordpress-files_9.png" alt="persisting-wordpress-files_9.png" />
