@@ -38,7 +38,7 @@ In this section you will see three replaceable variables:
 2. customer_secret_access_key
 3. customer_bucket
 
-**NOTE: These are variables you will have obtained when configuring your [_CenturyLink Cloud Object Storage._](../Object Storage/using-object-storage-from-the-control-portal.md) **
+**NOTE: These are variables you will have obtained when configuring your [CenturyLink Cloud Object Storage.](../Object Storage/using-object-storage-from-the-control-portal.md)**
 
 <img src="../images/persisting-wordpress-files_3.png" alt="persisting-wordpress-files_3.png" />
 
