@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Managed Microsoft IIS",
-  "date": "10-14-2014",
+  "date": "4-2-2015",
   "author": "Jared Ruckle",
   "attachments": [],
   "contentIsHTML": true
@@ -43,4 +43,8 @@
 <p>A:&nbsp;CenturyLink Cloud Supports Microsoft IIS 7.5 and&nbsp;Microsoft IIS 8.0.</p>
 <p><strong>Q: What operating systems are supported for Managed MS IIS?</strong>
 </p>
-<p>A: Managed Windows 2008, Managed Windows 2012.</p>
+<p>A: Managed Windows 2008, Managed Windows 2012.
+</p>
+<p><strong>Q: Can *un-managed* Microsoft IIS services be converted to *Managed* (or vice versa)?</strong>
+</p>
+<p>A: This capability is not available at this time.</p>

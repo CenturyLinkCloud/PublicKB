@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Managed Microsoft SQL Server",
-  "date": "11-10-2014",
+  "date": "4-2-2015",
   "author": "Jared Ruckle",
   "attachments": [],
   "contentIsHTML": true
@@ -47,4 +47,8 @@
 <p>A: Not at this time.</p>
 <p><strong>Q: &nbsp;How are licensing costs incurred?</strong>
 </p>
-<p>A: &nbsp;SQL licenses costs are calculated separate from the managed SQL hourly costs based on the edition and # of CPUs on the virtual machine.</p>
+<p>A: &nbsp;SQL licenses costs are calculated separate from the managed SQL hourly costs based on the edition and # of CPUs on the virtual machine.
+</p>
+<p><strong>Q: Can *un-managed* Microsoft SQL Instances be converted to *Managed* (or vice versa)?</strong>
+</p>
+<p>A: This capability is not available at this time.</p>

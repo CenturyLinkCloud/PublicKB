@@ -35,4 +35,8 @@
 <p>A: CenturyLink Cloud Supports Managed Windows 2008 R2 &amp; 2012</p>
 <p><strong>Q: Does the Operating System Edition affect the supported version of Managed Active Directory? </strong>
 </p>
-<p>A: No.</p>
+<p>A: No.
+</p>
+<p><strong>Q: Can *un-managed* Microsoft Active Directory be converted to *Managed* (or vice versa)?</strong>
+</p>
+<p>A: This capability is not available at this time.</p>

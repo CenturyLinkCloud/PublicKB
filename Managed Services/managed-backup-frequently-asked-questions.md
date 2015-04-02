@@ -32,7 +32,7 @@
 </ul>
 
 <p><strong>Q: What's the difference between Managed Backup and Premium Storage?</strong></p>
-<p>A: Both options provide a two-week retention period and offsite backups. But Managed Backup also offers the ability for customers to work with the managed backup support team to customize retention policies and backup schedules. There are options for including – or excluding - specific files/folders from a backup policy. Premium Storage simply provides nightly VM snapshots, making it difficult to restore selected files or folders, while Managed Backup performs full and incremental backups on a nightly basis and can be turned on and off as needed. Managed Backup also encrypts the backup data at rest.</p>
+<p>A: Both options provide a two-week retention period and offsite backups. But Managed Backup also offers the ability for customers to work with the managed backup support team to customize retention policies and backup schedules. There are options for including – or excluding - specific files/folders from a backup policy. Premium Storage simply provides nightly VM backups, making it difficult to restore selected files or folders, while Managed Backup performs full and incremental backups on a nightly basis and can be turned on and off as needed. Managed Backup also encrypts the backup data at rest.</p>
 <p>Users are likely best served by choosing <em>either</em> Managed Backup <em>or</em> Premium Storage.For Hyperscale servers, Managed Backup is recommended.</p>
 
 <p><strong><strong>Q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How much does the Managed Backup service cost? Why is the cost not included in the estimates shown in Control Portal?</strong></strong></p>
@@ -128,3 +128,8 @@ Monthly<br />Price per GB
 
 <p><strong>Q: As a customer can I request on-demand backups out of the normal scheduled jobs?</strong></p>
 <p>A: This is possible via a request to Support.  The backup will have the standard product feature of 2 weeks retention at the local data center and a simultaneous copy at the secondary data center.</p>
+
+<p><strong>Q: Is hot backup offered in Managed Backup for (a) databases and for (b) Exchange? What options/suggestions are available?</strong></p>
+<p>A: Hot backup is not offered in Managed Backup.  Managed Backup is for file/folder level backups and restores.</p>
+For SQL, Mysql , Oracle and other databases, a suggested method is to put the data to a file/folder for inclusion in the backups.<p>
+To safely backup and restore Microsoft Exchange mailbox data CenturyLink Cloud customers must implementation and operate their own solution.  Using 3rd party backup clients allows customers to perform recovery of message/mailbox (Exchange) data, define retention periods and backup frequency.  Customers can speak to a CenturyLink Cloud sales representative for guidance.

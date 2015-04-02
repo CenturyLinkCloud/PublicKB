@@ -44,4 +44,8 @@
 <p>A: The Blueprints come in 1 and 4 server configurations. You can use the “Add Node” Blueprint to scale the cluster to meet your needs.</p>
 <p><strong>Q: Can the customer provide their own Cloudera Hadoop License?</strong>
 </p>
-<p>A: Not at this time.</p>
+<p>A: Not at this time.
+</p>
+<p><strong>Q: Can *un-managed* Cloudera Hadoop Environment be converted to *Managed* (or vice versa)?</strong>
+</p>
+<p>A: This capability is not available at this time.</p>

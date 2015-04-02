@@ -45,4 +45,8 @@
 <p>A: CenturyLink Cloud Supports Tomcat V6, Tomcat v7.</p>
 <p><strong>Q: What operating systems are supported for Managed Apache? </strong>
 </p>
-<p>A: Managed Red Hat.</p>
+<p>A: Managed Red Hat.
+</p>
+<p><strong>Q: Can *un-managed* Tomcat Services be converted to *Managed* (or vice versa)?</strong>
+</p>
+<p>A: This capability is not available at this time.</p>

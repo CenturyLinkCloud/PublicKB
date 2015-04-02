@@ -44,4 +44,8 @@
 <p>A:&nbsp;CenturyLink Cloud Supports HTTPD-2.4 with PHP 5.5, HTTPD-2.4 with PHP 5.4, HTTPD-2.2 with PHP 5.3_Prefork, HTTPD-2.2 with PHP 5.3_Worker.</p>
 <p><strong>Q: What operating systems are supported for Managed Apache? </strong>
 </p>
-<p>A: Managed Red Hat.</p>
+<p>A: Managed Red Hat.
+</p>
+<p><strong>Q: Can *un-managed* Apache Web Services be converted to *Managed* (or vice versa)?</strong>
+</p>
+<p>A: This capability is not available at this time.</p>
