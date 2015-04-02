@@ -38,15 +38,15 @@ In this section you will see three replaceable variables:
 2. customer_secret_access_key
 3. customer_bucket
 
-**NOTE: These are variables you will have obtained when configuring your [*CenturyLink Cloud Object Storage.*](../Object Storage/using-object-storage-from-the-control-portal.md) **
+**NOTE: These are variables you will have obtained when configuring your [_CenturyLink Cloud Object Storage._](../Object Storage/using-object-storage-from-the-control-portal.md) **
 
 <img src="../images/persisting-wordpress-files_3.png" alt="persisting-wordpress-files_3.png" />
 
-*The following example shows the variables replaced:*
+_The following example shows the variables replaced:_
 
 <img src="../images/persisting-wordpress-files_4.png" alt="persisting-wordpress-files_4.png" />
 
-**5. Once you have updated the file, browse to the bottom of the screen, input a reason for the changes, and click "Commit changes"**
+**5. Once you have updated the file, browse to the bottom of the screen, input a reason for the changes, and click _Commit changes_**
 
 <img src="../images/persisting-wordpress-files_5.png" alt="persisting-wordpress-files_5.png" />
 
@@ -56,7 +56,7 @@ In this section you will see three replaceable variables:
 
 <img src="../images/persisting-wordpress-files_6.png" alt="persisting-wordpress-files_6.png" />
 
-**8. Select *S3 and Cloudfront* **
+**8. Select _S3 and Cloudfront_ **
 
 <img src="../images/persisting-wordpress-files_7.png" alt="persisting-wordpress-files_7.png" />
 
