@@ -26,7 +26,7 @@ Once object storage has been configured, you must edit your base  WordPress *wp-
 
 <img src="../images/persisting-wordpress-files_1.png" alt="persisting-wordpress-files_1.png" />
 
-**3. In the upper right-hand corner, click the pencil icon to Edit the file.**
+**3. In the upper right-hand corner, click the pencil icon to "Edit the file"**
 
 <img src="../images/persisting-wordpress-files_2.png" alt="persisting-wordpress-files_2.png" />
 
@@ -46,7 +46,7 @@ In this section you will see three replaceable variables:
 
 <img src="../images/persisting-wordpress-files_4.png" alt="persisting-wordpress-files_4.png" />
 
-**5. Once you have updated the file, browse to the bottom of the screen, input a reason for the changes, and click *Commit changes.* **
+**5. Once you have updated the file, browse to the bottom of the screen, input a reason for the changes, and click "Commit changes" **
 
 <img src="../images/persisting-wordpress-files_5.png" alt="persisting-wordpress-files_5.png" />
 
