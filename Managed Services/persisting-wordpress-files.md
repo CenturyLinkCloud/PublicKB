@@ -39,7 +39,7 @@ Once object storage has been configured, you must edit your base  WordPress *wp-
 
 **NOTE: These are variables you will have obtained when configuring your [*CenturyLink Cloud Object Storage.*](../Object Storage/using-object-storage-from-the-control-portal.md) **
 
-<img src="../images/persisting-wordpress-files_3.png" alt="persisting-wordpress-files_3.png" /></strong></p>
+<img src="../images/persisting-wordpress-files_3.png" alt="persisting-wordpress-files_3.png" /></p>
 
 *The following example shows the variables replaced:*
 
