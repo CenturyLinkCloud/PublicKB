@@ -6,16 +6,23 @@
   "contentIsHTML": false
 }}}
 
-###New Features (2)
+###New Features (1)
 
-* **Shared Load Balancer APIs.** The creation and management of load balancer pools is now available via self-service API. All capabilities available for shared load balancing in the Control Portal - including create, configure, and delete - can now be done via API. *Link to documentation about load balancer APIs will be added after release*
+* **Shared Load Balancer APIs.** The creation and management of load balancer pools is now available via self-service API. All capabilities available for shared load balancing in the Control Portal - including create, configure, and delete - can now be done via API. *Link to documentation about load balancer APIs will be added after release.*
 
-###Minor Enhancements (2)
+###Minor Enhancements (5)
 
 * **No charge for Managed OS services when servers are powered off.** Virtual machines with a managed OS will NOT incur hourly managed OS fees when the server is powered off. Charges will re-start after the VM is powered back on.
+
 * **CenturyLink Cloud Status.** A new portal - [status.ctl.io](http://status.ctl.io) - includes real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Accordingly, maintenance and outage notifications will no longer come from communications@centurylinkcloud.com; instead they will come from noc@ctl.io. More information about this service can be found [here](../General/centurylink-cloud-status-faq/).
 
 ![centurylink-status](../images/centurylink-status.png)
+
+* **Account Service Level now retrievable by API.** *Account.ServiceLevel*, a v1 API, can now be used to retrieve an account's support level, in addition to other billing data.
+
+* **Usage History "download CSV" button returns.** By popular demand, the button that allows a user to download a CSV file containing details of an account's usage history has been reenabled. Navigate to Account/Billing/Usage History, then select the month for which detail is desired. The "download CSV" button is back at the top of the screen!
+
+* **Service Level Defaults to "Developer."** For all accounts created via the Activate site, the service level will be automatically set to Developer.
 
 ###Notifications (1)
 
@@ -51,7 +58,7 @@
 
 * [**Pivotal Greenplum**](../Ecosystem Partners/getting-started-with-pivotal-greenplum-blueprint.md/) - Enterprise-grade analytical data warehouse featuring in-database compression technology. Powerful and rapid analytics on very large volumes of data. Shared-nothing architecture that automates parallel processing of data and queries.
 
-* [**Opscode Chef**](../Ecosystem Partners/getting-started-with-chef-server-blueprint.md/) - Chef turns infrastructure into code, allowing users to automate how they build, deploy, and manage cloud-based infrastructure using the same software development practices as they use for their primary codebase. CenturyLink has integrated Chef Server in to a Blueprint that will automatically install and configure Chef Standalone Server on Red Hat Enterprise Linux.
+* [**Chef**](../Ecosystem Partners/getting-started-with-chef-server-blueprint.md/) - Chef turns infrastructure into code, allowing users to automate how they build, deploy, and manage cloud-based infrastructure using the same software development practices as they use for their primary codebase. CenturyLink has integrated Chef Server in to a Blueprint that will automatically install and configure Chef Standalone Server on Red Hat Enterprise Linux.
 
 ###Open Source Contributions (4)
 Selected highlights include:
