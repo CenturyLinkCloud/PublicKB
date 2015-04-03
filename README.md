@@ -23,6 +23,8 @@ The top of each .md file contains metadata about the knowledge base article itse
 }}}
 ```
 
+`contentIsHTML` Generally this should be set to `false`. Only when a document is written entirely in HTML syntax should this be set to true.
+
 ##How to Make Additions or Changes
 
 1. [Fork](https://guides.github.com/activities/forking/) the https://github.com/CenturyLinkCloud/PublicKB repository. This will produce a personal copy of this repo.
