@@ -8,7 +8,7 @@
 
 ###New Features (1)
 
-* **Shared Load Balancer APIs.** The creation and management of load balancer pools is now available via self-service API. All capabilities available for shared load balancing in the Control Portal - including create, configure, and delete - can now be done via API. *Link to documentation about load balancer APIs will be added after release.*
+* **Shared Load Balancer APIs.** The creation and management of load balancer pools is now available via self-service API. All capabilities available for shared load balancing in the Control Portal - including create, configure, and delete - can now be done via API. *Link to load balancer API documentation coming soon.*
 
 ###Minor Enhancements (5)
 
