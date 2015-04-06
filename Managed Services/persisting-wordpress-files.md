@@ -3,7 +3,7 @@
   "date": "04-02-2015",
   "author": "Bill Burge",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 <h3>Persisting Wordpress Files</h3>
