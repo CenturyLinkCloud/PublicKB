@@ -52,15 +52,27 @@ _The following example shows the variables replaced:_
 
 **6. Login to your CenturyLink Cloud WordPress Blog Dashboard utilizing the password supplied during setup.**
 
-**7. Expand AWS in the left column.**
+**7. Expand Plugins in the left column.**
 
 ![alt text](../images/persisting-wordpress-files_6.png "persisting-wordpress-files_6.png")
 
-**8. Select S3 and Cloudfront**
+**8. Click Activate next to the Amazon Web Services plugin.**
 
 ![alt text](../images/persisting-wordpress-files_7.png "persisting-wordpress-files_7.png")
 
-**9. Ensure the following settings are configured:**
+**9. Click Activate next to the Amazon S3 and CloudFront plugin.
+
+![alt text](../images/persisting-wordpress-files_8.png "persisting-wordpress-files_8.png")
+
+**10. Expand AWS in the left column.**
+
+![alt text](../images/persisting-wordpress-files_9.png "persisting-wordpress-files_9.png")
+
+**11. Select S3 and Cloudfront**
+
+![alt text](../images/persisting-wordpress-files_10.png "persisting-wordpress-files_10.png")
+
+**12. Ensure the following settings are configured:**
 
 **S3 Settings**
 * Ensure the bucket you created is selected in the drop down
@@ -81,8 +93,8 @@ _The following example shows the variables replaced:_
 
 *The following example is correctly configured:*
 
-![alt text](../images/persisting-wordpress-files_8.png "persisting-wordpress-files_8.png")
+![alt text](../images/persisting-wordpress-files_11.png "persisting-wordpress-files_11.png")
 
-**10. Once settings are verified, click *Save Changes* to commit configuration changes.**
+**13. Once settings are verified, click *Save Changes* to commit configuration changes.**
 
-![alt text](../images/persisting-wordpress-files_9.png "persisting-wordpress-files_9.png")
+![alt text](../images/persisting-wordpress-files_12.png "persisting-wordpress-files_12.png")
