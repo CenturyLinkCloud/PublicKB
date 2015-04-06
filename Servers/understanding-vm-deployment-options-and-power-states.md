@@ -72,4 +72,4 @@
 
 **Sample Use Case:** The business department has a reporting server that pulls data on a monthly basis from a 3rd party and generates reports for business analysis. This virtual machine is only required for 2 days per month and otherwise is unused. To save costs, the IT department schedules the server to be placed in archive and brought out of archived for operation during just these 2 days of the month.
 
-**Note:** Archived servers are not backed up daily. Rather, a single copy of it is stored. To restore a VM in which you have archived, simply unarchive it.
+**Note:** Archived servers are not backed up or replicated (for premium storage customers) daily. Rather, only a single copy of the server exists. To restore a VM in which you have archived, simply unarchive it.
