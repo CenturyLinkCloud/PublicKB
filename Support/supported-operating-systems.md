@@ -31,11 +31,11 @@ All supported operating systems have a "template" in CenturyLink Cloud that is c
 
 ### Can I build custom templates?
 
-Yes - the only requirement is that each custom template needs to "map" to a supported OS template. For best practices, read this article: ["How To: Create Customer Specific OS Templates"](../servers/how-to-create-customer-specific-os-templates.md)
+Yes - the only requirement is that each custom template needs to "map" to a supported OS template. For best practices, read this article: ["How To: Create Customer Specific OS Templates"](../Servers/how-to-create-customer-specific-os-templates.md)
 
 ### What is your operating system retirement policy?
 
-This is listed [here](../servers/operating-system-template-retirement-policy.md).
+This is listed [here](../Servers/operating-system-template-retirement-policy.md).
 
 ### I'd like to deploy an operating system that is not supported. What are my options?
 
