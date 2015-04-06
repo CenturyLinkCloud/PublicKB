@@ -8,7 +8,7 @@
 
 ###New Features (1)
 
-* **Shared Load Balancer APIs.** The creation and management of load balancer pools is now available via self-service API. All capabilities available for shared load balancing in the Control Portal - including create, configure, and delete - can now be done via API. *Link to load balancer API documentation coming soon.*
+* **Shared Load Balancer APIs.** The creation and management of load balancer pools is now available via self-service API. All the capabilities that are available for shared load balancing in the Control Portal - including create, configure, and delete - can now be done via API. Documentation can be found [here](https://www.centurylinkcloud.com/api-docs/v2/#shared-load-balancers).
 
 ###Minor Enhancements (6)
 
