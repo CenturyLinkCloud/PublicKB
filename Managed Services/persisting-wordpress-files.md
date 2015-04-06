@@ -24,11 +24,11 @@ Once object storage has been configured, you must edit your base  WordPress *wp-
 
 **2. Browse to the GitHub repository associated with your WordPress blog and open wp-config.php**
 
-<img src="../images/persisting-wordpress-files_1.png" alt="persisting-wordpress-files_1.png" />
+![alt text](../images/persisting-wordpress-files_1.png "persisting-wordpress-files_1.png")
 
 **3. In the upper right-hand corner, click the pencil icon to _Edit the file_**
 
-<img src="../images/persisting-wordpress-files_2.png" alt="persisting-wordpress-files_2.png" />
+![alt text](../images/persisting-wordpress-files_2.png "persisting-wordpress-files_2.png")
 
 **4. Find the section of the file labeled _CenturyLink Object Storage Customer Variables_**
 
@@ -40,25 +40,25 @@ In this section you will see three replaceable variables:
 
 **NOTE: These are variables you will have obtained when configuring your [CenturyLink Cloud Object Storage.](../Object Storage/using-object-storage-from-the-control-portal.md)**
 
-<img src="../images/persisting-wordpress-files_3.png" alt="persisting-wordpress-files_3.png" />
+![alt text](../images/persisting-wordpress-files_3.png "persisting-wordpress-files_3.png")
 
 _The following example shows the variables replaced:_
 
-<img src="../images/persisting-wordpress-files_4.png" alt="persisting-wordpress-files_4.png" />
+![alt text](../images/persisting-wordpress-files_4.png "persisting-wordpress-files_4.png")
 
 **5. Once you have updated the file, browse to the bottom of the screen, input a reason for the changes, and click _Commit changes_**
 
-<img src="../images/persisting-wordpress-files_5.png" alt="persisting-wordpress-files_5.png" />
+![alt text](../images/persisting-wordpress-files_5.png "persisting-wordpress-files_5.png")
 
 **6. Login to your CenturyLink Cloud WordPress Blog Dashboard utilizing the password supplied during setup.**
 
 **7. Expand AWS in the left column.**
 
-<img src="../images/persisting-wordpress-files_6.png" alt="persisting-wordpress-files_6.png" />
+![alt text](../images/persisting-wordpress-files_6.png "persisting-wordpress-files_6.png")
 
 **8. Select S3 and Cloudfront**
 
-<img src="../images/persisting-wordpress-files_7.png" alt="persisting-wordpress-files_7.png" />
+![alt text](../images/persisting-wordpress-files_7.png "persisting-wordpress-files_7.png")
 
 **9. Ensure the following settings are configured:**
 
@@ -81,8 +81,8 @@ _The following example shows the variables replaced:_
 
 *The following example is correctly configured:*
 
-<img src="../images/persisting-wordpress-files_8.png" alt="persisting-wordpress-files_8.png" />
+![alt text](../images/persisting-wordpress-files_8.png "persisting-wordpress-files_8.png")
 
 **10. Once settings are verified, click *Save Changes* to commit configuration changes.**
 
-<img src="../images/persisting-wordpress-files_9.png" alt="persisting-wordpress-files_9.png" />
+![alt text](../images/persisting-wordpress-files_9.png "persisting-wordpress-files_9.png")
