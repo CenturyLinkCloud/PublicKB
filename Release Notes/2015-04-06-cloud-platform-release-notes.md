@@ -1,4 +1,4 @@
-{{{
+  {{{
   "title": "Cloud Platform - Release Notes: April 6, 2015",
   "date": "4-6-2015",
   "author": "Mary Cadera",
@@ -10,7 +10,9 @@
 
 * **Shared Load Balancer APIs.** The creation and management of load balancer pools is now available via self-service API. All capabilities available for shared load balancing in the Control Portal - including create, configure, and delete - can now be done via API. *Link to load balancer API documentation coming soon.*
 
-###Minor Enhancements (5)
+###Minor Enhancements (6)
+
+* **Price Decreases on selected services.** Prices have been lowered for both Managed SQL and Cloudera.
 
 * **No charge for Managed OS services when servers are powered off.** Virtual machines with a managed OS will NOT incur hourly managed OS fees when the server is powered off. Charges will re-start after the VM is powered back on.
 
