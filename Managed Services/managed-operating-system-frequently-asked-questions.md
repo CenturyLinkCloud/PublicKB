@@ -1,6 +1,6 @@
 {{{
   "title": "Managed Operating System - Frequently Asked Questions",
-  "date": "3-23-2015",
+  "date": "4-7-2015",
   "author": "Jared Ruckle",
   "attachments": [],
   "contentIsHTML": true
@@ -100,6 +100,6 @@ After creating a managed VM, the VM will be 'Under Construction' while backgroun
 </p>
 <p>A: This capability is not available at this time.
 </p>
-<p><strong>Q: What Anti-Virus is provided and how often is it updated?</strong>
+<p><strong>Q: What Anti-Virus is provided for Windows Servers and how often is it updated?</strong>
 </p>
-<p>A: McAfee is leveraged on Managed Servers and is updated daily.</p>
+<p>A: McAfee is leveraged on Managed Windows Servers and is updated daily.</p>
