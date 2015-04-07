@@ -9,7 +9,8 @@
 <p><strong>Introduction</strong></p>
 
 <p>Message queuing services do play an increasingly important role in allowing companies to create elastic, cross platform/cross application, asynchronous processing architectures. One of the popular choices for message queuing is RabbitMQ, it is a Advanced Message Queuing Protocol (AMPQ) compliant, well documented and has a broad user base.</p>
-<p>The steps below are describing how to build operational highly available redundant RabbitMQ cluster, which will be composed from three servers. The assumption is that clustered servers are residing within the same Data Center due to the fact, that RabbitMQ replication across WAN will conflict with a <a href="http://en.wikipedia.org/wiki/CAP_theorem">CAP Theorem</a>  given the nature of Messaging Queues.</p>
+<p>The steps below are describing how to build operational highly available redundant RabbitMQ cluster, which will be composed from three servers. The assumption is that clustered servers are residing within a same Data Center. 
+	RabbitMQ replication across WAN will work on a technical level, however, will conflict with the consistency principle states in <a href="http://en.wikipedia.org/wiki/CAP_theorem">CAP Theorem</a>.</p>
 
 <p>Upon RabbitMQ cluster installation a testing method will be presented as well.</p>
 
@@ -69,7 +70,7 @@ To begin cluster configuration we will stop RabbitMQ on all three servers with:
 /etc/init.d/rabbitmq-server stop
 </pre>
 
-Ensure service is stopped properly with:
+Ensure service is stopped properly by examining output from the command - no services should be listed:
 
 <pre>
 ps aux | grep '[r]abbitmq-server'
@@ -112,6 +113,15 @@ Cluster status of node rabbit@queue3 ...
 
 ...done.
 </pre>
+
+<li><strong>HA policy</strong>
+
+Finaly, to synck all the queues accross all the nodes we need to run:
+
+<pre>
+rabbitmqctl set_policy ha-all "" '{"ha-mode":"all","ha-sync-mode":"automatic"}'
+</pre>
+
 </ol>
 Our cluster has been successfully created.
 
@@ -239,5 +249,5 @@ My_First_Queue 0
 ...done.
 </pre>
 
-To learn more about configuration options and feature you can consult RabbitMQ manual (http://www.rabbitmq.com/documentation.html).
+To learn more about configuration options and feature you can consult <a href="http://www.rabbitmq.com/documentation.html">RabbitMQ manual</a>.
 </div>
