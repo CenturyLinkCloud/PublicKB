@@ -38,7 +38,7 @@
 <p>A: CenturyLink Cloud Managed Cloudera Hadoop is priced by [the instance, billed hourly].</p>
 <p><strong>Q: What Versions of Cloudera Hadoop does CenturyLink Cloud support?</strong>
 </p>
-<p>A: CDH5 Express (unmanaged), CDH5 Basic (managed), CDH5 Basic + HBase (managed).</p>
+<p>A: CDH5 Express (unmanaged), CDH5 Basic (managed), CDH5 Basic + HBase (managed), CDH5 Enterprise Data Hub (managed).</p>
 <p><strong>Q: What cluster options are available on CenturyLink Cloud?</strong>
 </p>
 <p>A: The Blueprints come in 1 and 4 server configurations. You can use the “Add Node” Blueprint to scale the cluster to meet your needs.</p>
