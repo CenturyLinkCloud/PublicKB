@@ -1,6 +1,6 @@
 {{{
   "title": "Load Balancing Comparison Matrix",
-  "date": "3-26-2015",
+  "date": "4-7-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -20,7 +20,7 @@ CenturyLink Cloud offers customers a choice of shared or dedicated load balancin
 |Load Balancing Algorithms|Round Robin<p>Least Connection|[Citrix Complete Listing](http://support.citrix.com/proddocs/topic/netscaler-load-balancing-93/ns-lb-customizing-lbalgorithms-wrapper-con.html)
 |Costing Model|per VIP (NLB Group)|Per Device: VPX-200 or VPX-1000 available in both Standard or Enterprise Edition
 |Responsibility for Support and Management|CenturyLink Cloud|Customer via CLI or Web based UI
-|Performance|HTTP throughput: 1 Gbps<p>SSL encrypted throughput: Up to 1 Gbps<p>HTTP compression throughput: Up to .75 Gbps<p>SSL VPN/ICA Proxy Users: Up to 1500<p>New SSL requests/second: Up to 750<p>**Performance is shared among all clients**|HTTP throughput: 200 Mbps or 1 Gbps<p>SSL encrypted throughput: Up to 1 Gbps<p>HTTP compression throughput: Up to .75 Gbps<p>SSL VPN/ICA Proxy Concurrent Users: Up to 1500<p>New SSL requests/second: Up to 750
+|Performance|HTTP throughput: 1 Gbps<p>HTTP compression throughput: Up to .75 Gbps<p>**Performance is shared among all clients**|HTTP throughput: 200 Mbps or 1 Gbps<p>SSL encrypted throughput: Up to 1 Gbps<p>HTTP compression throughput: Up to .75 Gbps<p>SSL VPN/ICA Proxy Concurrent Users: Up to 1500<p>New SSL requests/second: Up to 750
 |SSL Offloading|No|Yes, Customer Configured
 |Health Checks|Yes, TCP & PING|Yes, Customer Configured
 
