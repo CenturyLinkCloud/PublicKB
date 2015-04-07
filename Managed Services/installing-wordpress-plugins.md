@@ -35,6 +35,7 @@ In this example we will be installing _Akismet_.
 ![](../images/installing-wordpress-plugins_4.png "installing-wordpress-plugins_4.png")
 
 You will end up with the following...
+
 ![](../images/installing-wordpress-plugins_5.png "installing-wordpress-plugins_5.png")
 
 **6. In the GitHub Client you will now see _Uncommitted Changes_**
