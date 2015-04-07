@@ -452,7 +452,7 @@ class Server(object):
 			elif not memory:  raise(clc.CLCException("No default Memory defined"))
 		if not description:  description = name
                 if type.lower() == "standard" and storage_type.lower() not in ("standard","premium"):  raise(clc.CLCException("Invalid storage_type"))
-                if type.lower() == "hyperscale" and storage_type.lower() != "hyperscale"  raise(clc.CLCException("Invalid type/storage_type combo"))
+                if type.lower() == "hyperscale" and storage_type.lower() != "hyperscale":  raise(clc.CLCException("Invalid type/storage_type combo"))
 		if ttl and ttl<=3600: raise(clc.CLCException("ttl must be greater than 3600 seconds"))
 		if ttl: ttl = clc.v2.time_utils.SecondsToZuluTS(int(time.time())+ttl)
 		# TODO - validate custom_fields as a list of dicts with an id and a value key
