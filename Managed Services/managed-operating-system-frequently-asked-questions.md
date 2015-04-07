@@ -96,6 +96,10 @@ After creating a managed VM, the VM will be 'Under Construction' while backgroun
 </p>
 <p>A: Yes, customers may elect to join a Managed Server to their own domain instead of the CenturyLink Shared Active Directory Domain.  In order to join Managed Servers to a <em>dedicated</em> customer domain a user must deploy <a href="http://www.centurylinkcloud.com/knowledge-base/managed-services/getting-started-with-managed-active-directory">Managed Active Directory</a> in the CenturyLink Cloud.
 </p>
-<p><strong>Q: Can *un-managed* Servers be converted to *Managed* (or vice versa)?</strong>
+<p><strong>Q: Can <i>un-managed</i> Servers be converted to <i>Managed</i> (or vice versa)?</strong>
 </p>
-<p>A: This capability is not available at this time.</p>
+<p>A: This capability is not available at this time.
+</p>
+<p><strong>Q: What Anti-Virus is provided and how often is it updated?</strong>
+</p>
+<p>A: McAfee is leveraged on Managed Servers and is updated daily.</p>
