@@ -8,7 +8,7 @@
 
 ### Overview
 
-Customers frequently request information on the Disaster Recovery and Business Continuity services offered by CenturyLink Cloud. The Matrix below provides a quick, high level guide to the services available as part of our platform or via customization.  **In order to quality for Platform DR services a customer must deploy their virtual instances on Premium Storage**. Customers should be aware that any combination of these options, per application or per virtual instance, are possible.
+Customers frequently request information on the Disaster Recovery and Business Continuity services offered by CenturyLink Cloud. The Matrix below provides a quick, high level guide to the services available as part of our platform or via customization.  **In order to qualify for Platform DR services a customer must deploy their virtual instances on Premium Storage**. Customers should be aware that any combination of these options, per application or per virtual instance, are possible.
 
 |**Feature**   	|**Platform DR**   	|**Build-to Spec DR**
 |:-	|:-	|:-	|
