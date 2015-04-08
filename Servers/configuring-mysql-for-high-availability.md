@@ -7,15 +7,19 @@
 }}}
 
 <p><strong>Description</strong></p>
+
 <p>Simple scalability and easy elasticity are key benefits of any cloud environment, and along with features like self-service load balancer configurations and autoscaling, CenturyLink Cloud enables users to easily deploy applications with high-availability
   architectures. While this is especially true for most web applications, the database tier, particularly when it is a traditional relational database like MySQL, can often become the performance bottleneck or the single point of failure for many workloads
   because it can sometimes be a challenge to scale it out. While a vertical autoscale can help handle peak usage for performance, it doesn't cut it when you're looking for high availability from your relational database.</p>
+
 <p><a href="http://dev.mysql.com/doc/refman/5.7/en/ha-overview.html">MySQL offers a number of high-availability configurations</a>, but perhaps the two most commonly implemented are <a href="#replication">Replication</a> and <a href="#clustering">Clustering</a>.
   In this article, we will explore both types of MySQL high-availability options and walkthrough the steps for deploying them on the CenturyLink Cloud.</p>
+
 <p>
   <a name="replication"></a>
 </p>
 Replication
+
 <p><a href="http://dev.mysql.com/doc/refman/5.7/en/replication.html">MySQL Replication</a>&nbsp;allows for data to be asynchronously copied from a "master" database to one or more "slave" database servers automatically as data in the master
   is updated. This means you can read data from any slave database server, but should only ever write to the master. There are many potential <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions.html">solutions</a> that
   can take advantage of this type of configuration. Perhaps you want to use the slaves as <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-backups.html">database backups</a>, distribute some data to more <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-partitioning.html"
@@ -24,10 +28,13 @@ Replication
  >turn any slave into the master</a> and have the system back up in less time than it might take to rebuild from backups. And, of course, you may simply want to use them to <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-scaleout.html"
  >scale out </a>your environment and spread your load across multiple servers as you might do on the web tier as well (remember though, the app can read from any slave, but it must always write to the master). Whatever the scenario you
   plan to use replication for, the below steps will walk you through getting MySQL master and slave instances up and running on the CenturyLink Cloud.</p>
+
 <h3>Steps to Configure MySQL <em>Replication</em> on CenturyLink Cloud</h3>
+
 <p>These steps describe the process to bring up one master and one slave, but you can repeat the steps to create the slave and deploy multiple ones if you wish. While there are many possible MySQL replication options (including the ability to replicate all
   databases, a specific database, or specific tables), the following outlines a good baseline to configure replication for a single database. You should consult the <a href="http://dev.mysql.com/doc/refman/5.7/en/replication.html">MySQL documentation</a>  for more details.</p>
 <p>In this example, we will use Ubuntu 12 servers, but with the exception of using a different package manager/installation in the first few steps, this MySQL configuration will work on any system that supports MySQL replication.</p>
+
 <div>
   <ol>
     <li><strong>Create Server (Master).</strong> Here we will use the Ubuntu 12 64-bit template.

@@ -10,7 +10,7 @@
 
 ### Overview
 
-After reading this article, the reader should feel comfortable deploying the MopngoDB database on CenturyLink Cloud.
+After reading this article, the reader should feel comfortable deploying the MongoDB database on CenturyLink Cloud.
 
 ### Partner Profile
 
@@ -27,9 +27,9 @@ http://www.mongodb.org/
 
 ### Description
 
-MongoDB has integrated their database technology with the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this solution.
+MongoDB database technology has been integrated for automated deployment on the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this solution.
 
-MongoDB is a cross-platform NoSQL document-oriented database. Structure is JSON-like making integration of data in certain types of applications easier and faster.
+MongoDB is a cross-platform NoSQL document-oriented database. Its structure is JSON-like, making integration of data in certain types of applications easier and faster.
 
 
 ### Audience

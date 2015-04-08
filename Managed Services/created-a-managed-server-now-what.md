@@ -3,7 +3,7 @@
   "date": "4-1-2015",
   "author": "Jared Ruckle",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 ##Creating a managed server is easy.
 From the Control Portal menu, select “Create Server.” Then, select the data center, group membership, and other VM properties. Make sure to select a data center that supports managed services, and then click the “managed server” element to “Yes.” The operating system drop-down menu will automatically refresh to show available options. Choose your desired OS, then proceed with the remainder of the server creation process.

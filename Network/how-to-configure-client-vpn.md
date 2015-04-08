@@ -35,10 +35,10 @@ In order to maximize resource efficiency on the platform, the Client VPN service
 **Windows**
 
 1. Download the [OpenVPN client](http://openvpn.net/index.php/open-source/downloads.html). (We recommend 2.3.2+ for Windows users.)
-2. Find the downloaded executable file and double click to start the installation. (Windows 7 users will need to right click and choose to "Run as Administrator.")
+2. Find the downloaded executable file and double click to start the installation. (Windows 7 and up users will need to right click and choose to "Run as Administrator.")
 3. Accept all the defaults during installation.
-4. After installing the client, extract the ZIP file you downloaded from Control Portal (as described above) into the `config` subdirectory under your client install location (generally `C:\Program Files\OpenVPN\config` for Windows XP or `C:\Program Files (x86)\OpenVPN\config` for Windows 7).
-6. Start the OpenVPN GUI client. (Windows 7 users will need to right click and choose to "Run as Administrator.") This will place an icon in the notification area. Right click this icon and select "Connect".
+4. After installing the client, extract the ZIP file you downloaded from Control Portal (as described above) into the `config` subdirectory under your client install location (generally `C:\Program Files\OpenVPN\config` for Windows XP or `C:\Program Files (x86)\OpenVPN\config` for Windows 7 and up).
+6. Start the OpenVPN GUI client. (Windows 7 and up  users will need to right click and choose to "Run as Administrator.") This will place an icon in the notification area. Right click this icon and select "Connect".
 
 **Apple OS X**
 
