@@ -51,8 +51,6 @@
 
 ###Ecosystem - New Blueprints (5)
 
-* [**FoundationDB**](../Ecosystem Partners/getting-started-with-foundationdb-blueprint.md) – Next generation database engine that combines the advantages of modern NoSQL databases with the power and reliability of ACID transactions.
-
 * [**Dynatrace**](../Ecosystem Partners/getting-started-with-dynatrace-blueprints.md) – Application Performance Monitoring (APM) software for today's most challenging web, cloud, mobile, enterprise and Big Data applications worldwide.
 
 
