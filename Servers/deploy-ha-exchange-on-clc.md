@@ -1,6 +1,6 @@
 {{{
   "title": "Deploy HA Exchange on CenturyLink Cloud",
-  "date": "4-2-2015",
+  "date": "3-31-2015",
   "author": "Mark Turpin",
   "attachments": [],
   "contentIsHTML": false
