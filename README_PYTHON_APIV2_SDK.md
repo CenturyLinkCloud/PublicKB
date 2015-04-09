@@ -1308,34 +1308,7 @@ Delete the source retriction and commit changes to cloud.
 
 
 
-
-## Request
-
-[Request pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.request.html)
-
-
-### Class variables
-
-Object variables:
-
-* request.id
-* request.alias
-* request.time_created
-* request.time_executed
-* request.time_completed
-
-
-### clc.v2.Request(id,alias=None,request_obj=None)
-```python
-clc.v2.Request( id, alias=None, request_obj=None )
-```
-
-Create a `Request` object.
-
-
-
-
-## Request
+## Requests
 
 [Requests pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.request.html)
 
@@ -1377,6 +1350,7 @@ objects in a completed state.
 >>> clc.v2.Server(alias='BTDI',id='WA1BTDIKRT02').PowerOn().WaitUntilComplete()
 0
 ```
+
 
 
 ## Request
