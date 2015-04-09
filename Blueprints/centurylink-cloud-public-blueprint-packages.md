@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Public Blueprint Packages",
-  "date": "03-15-2015",
+  "date": "04-9-2015",
   "author": "Bryan Friedman",
   "attachments": [],
   "contentIsHTML": false
@@ -19,8 +19,8 @@ Below is a list of public packages that have been made available on the CenturyL
 - Install Active Directory on Windows 2008 (1 of 2) [Primary Node]
 - Install Active Directory on Windows 2008 (2 of 2) [Secondary Node]
 - Install File and iSCSI Services on Windows
-- Install IIS 7.5 on Windows
-- Install IIS 8 on Windows
+- [Install IIS 7.5 on Windows](../Blueprints/Install-IIS-on-Windows.md)
+- [Install IIS 8 on Windows](../Blueprints/Install-IIS-on-Windows.md)
 - Install SQL 2012 Client Connectivity Tools on Windows
 - [Install SQL Server on Windows](../Blueprints/deploy-microsoft-sql-server-using-blueprint.md)
 - [Perform Active Directory Domain Join on Windows](../Blueprints/perform-active-directory-domain-join-on-windows.md)
