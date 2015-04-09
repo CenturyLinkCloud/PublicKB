@@ -25,7 +25,7 @@ CenturyLink Cloud offers customers a choice of shared or dedicated load balancin
 |Health Checks|Yes, TCP & PING|Yes, Customer Configured
 
 1. **Customers can optionally pay for an upgrade from a single VPX to an HA pair using a service task**
-2. **Customers can optionally pay for in place upgrades of VPX-200 Devices to a higher performance VPX-1000 using a service task**
+2. **Customers can optionally pay for in place upgrades of VPX-200 Devices to a higher performance VPX-1000, including the edition, using a service task**
 
 ### Additional Details
 The links below provide additional details on the capabilities and features of the Citrix Netscaler VPX Platform.
