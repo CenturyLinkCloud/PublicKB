@@ -17,6 +17,7 @@ Server object variables:
 # TODO - Do something with timing info from Request and Requests?
 # TODO - implement promises for queued servers. {"server":"api2","isQueued":true,"links":[{"rel":"status","href":"/v2/operations/btdi/status/wa1-127329","id":"wa1-127329"},{"rel":"self","href":"/v2/servers/BTDI/bdef3ca4227a45a6a43a59a87ebec81e?uuid=True","id":"bdef3ca4227a45a6a43a59a87ebec81e","verbs":["GET"]}]}
 
+import re
 import time
 import clc
 
@@ -51,7 +52,14 @@ class Requests(object):
 
 		for r in requests_lst:
 
-			if 'server' in r:  
+			if 'server' in r and len(r['server'])<6:  
+				# Hopefully this captures only new server builds, TODO find a better way to ID these
+				for link in r['links']:
+					if re.search("/v2/servers/",link['href']):
+						context_key = "newserver"
+						context_val = link['href']
+						break
+			elif 'server' in r:  
 				context_key = "server"
 				context_val = r['server']
 			else:  
@@ -185,11 +193,23 @@ class Request(object):
 
 
 	def Server(self):
-		"""Return server associated with this request."""
+		"""Return server associated with this request.
+
+		>>> d = clc.v2.Datacenter()
+		>>> q = clc.v2.Server.Create(name="api2",cpu=1,memory=1,group_id=d.Groups().Get("Default Group").id,template=d.Templates().Search("centos-6-64")[0].id,network_id=d.Networks().networks[0].id,ttl=4000)
+		>>> q.WaitUntilComplete()
+		0
+		>>> q.success_requests[0].Server()
+		<clc.APIv2.server.Server object at 0x1095a8390>
+		>>> print _
+		VA1BTDIAPI214
+		
+		"""
 		if self.context_key == 'newserver':
 			server_id = clc.v2.API.Call('GET', self.context_val)['id']
 			return(clc.v2.Server(id=server_id,alias=self.alias))
-		elif self.context_key == 'server':  return(clc.v2.Server(id=self.context_val,alias=self.alias))
+		elif self.context_key == 'server':  
+			return(clc.v2.Server(id=self.context_val,alias=self.alias))
 		else:  raise(clc.CLCException("%s object not server" % self.context_key))
 
 

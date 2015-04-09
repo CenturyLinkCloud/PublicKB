@@ -1405,7 +1405,7 @@ Create a `Request` object.
 
 ### clc.v2.Request.Status
 ```python
-clc.v2.Request.Status( cached=False
+clc.v2.Request.Status( cached=False )
 ```
 
 Return the current status for an existing request.  If `cached` is set to True and an existing
@@ -1430,6 +1430,29 @@ As status option changes the following class variables are populated:
 * request.time_created
 * request.time_executed
 * request.time_completed
+
+
+### clc.v2.Request.Server
+```python
+clc.v2.Request.Server()
+```
+
+Return the `Server` object associated with a given request.  If the request created a new server via `Server.Create` or `Server.Clone` this will return
+the newly created server object.  Note that for new server builds this must be called after the server build completes.
+
+
+```python
+>>> d = clc.v2.Datacenter()
+>>> q = clc.v2.Server.Create(name="api2",cpu=1,memory=1,group_id=d.Groups().Get("Default Group").id,
+                             template=d.Templates().Search("centos-6-64")[0].id,
+							 network_id=d.Networks().networks[0].id,ttl=4000)
+>>> q.WaitUntilComplete()
+0
+>>> q.success_requests[0].Server()
+<clc.APIv2.server.Server object at 0x1095a8390>
+>>> print _
+VA1BTDIAPI214
+```
 
 
 
