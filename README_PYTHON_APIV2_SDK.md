@@ -625,7 +625,8 @@ Set ttl as number of seconds before server is to be terminated.  Must be >3600
 
 ```python
 >>> d = clc.v2.Datacenter()
->>> clc.v2.Server.Create(name="api2",cpu=1,memory=1,group_id="wa1-4416",
+>>> clc.v2.Server.Create(name="api2",cpu=1,memory=1,
+                         group_id=d.Groups().Get("Default Group").id,
                          template=d.Templates().Search("centos-6-64")[0].id,
                          network_id=d.Networks().networks[0].id).WaitUntilComplete()
 0
