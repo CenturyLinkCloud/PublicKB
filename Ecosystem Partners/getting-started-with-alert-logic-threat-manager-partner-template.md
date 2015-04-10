@@ -115,5 +115,5 @@ Frequently Asked Questions:
 -   Email Sales via support@alertlogic.com
 
 - #### Who should I contact for support?
-* For issues related to deploying the Centerity Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the Alert Logic Support Website: http://www.AlertLogic.com
+* For issues related to Licensing, Accessing or Configuring the deployed software, please visit the Alert Logic Support Website: http://www.AlertLogic.com
 * For issues related to cloud infrastructure (VM’s, network, etc), please open a ticket using the CenturyLink Cloud Support Process.
