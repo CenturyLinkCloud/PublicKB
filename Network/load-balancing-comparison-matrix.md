@@ -12,7 +12,7 @@ CenturyLink Cloud offers customers a choice of shared or dedicated load balancin
 
 ### Comparison Matrix
 
-|**Feature**|**Shared**|**Dedicated**
+**Feature**|**Shared**|**Dedicated**
 ------------|----------|-------------
 Control Self-Service|Yes|No
 Availability|Highly Available Pair|Single Instance or Highly Available pair options available<sup>1</sup>
