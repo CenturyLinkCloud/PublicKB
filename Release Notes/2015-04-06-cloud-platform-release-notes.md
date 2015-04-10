@@ -16,7 +16,7 @@
 
 * **No charge for Managed OS services when servers are powered off.** Virtual machines with a managed OS will NOT incur hourly managed OS fees when the server is powered off. Charges will re-start after the VM is powered back on.
 
-* **CenturyLink Cloud Status.** A new portal - [status.ctl.io](http://status.ctl.io) - includes real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Accordingly, maintenance and outage notifications will no longer come from communications@centurylinkcloud.com; instead they will come from noc@ctl.io. More information about this service can be found [here](../General/centurylink-cloud-status-faq/).
+* **CenturyLink Cloud Status.** A new portal - [status.ctl.io](http://status.ctl.io) - includes real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Accordingly, maintenance and outage notifications will no longer come from communications@centurylinkcloud.com; instead they will come from noc@ctl.io. More information about this service can be found [here](../General/centurylink-cloud-status-faq.md).
 
 ![centurylink-status](../images/centurylink-status.png)
 
@@ -28,7 +28,7 @@
 
 ###Notifications (1)
 
-* **OS Retirement.** The following operating systems have been removed from the "Create Server" experience in the Control Portal and via API: Windows Server 2003, CentOS 5 & 6 **32 bit**, Ubuntu 10, FreeBSD, and Windows Server 2008 **32-bit**. The next phase of retirement for these operating systems will be completed in 60 days. For more information about this, please, see this [Knowledge Base article](../Servers/operating-system-retirement-notice-feb-3-2015/). What does "retirement" mean? You can get more details [here](../Servers/operating-system-template-retirement-policy/).
+* **OS Retirement.** The following operating systems have been removed from the "Create Server" experience in the Control Portal and via API: Windows Server 2003, CentOS 5 & 6 **32 bit**, Ubuntu 10, FreeBSD, and Windows Server 2008 **32-bit**. The next phase of retirement for these operating systems will be completed in 60 days. For more information about this, please, see this [Knowledge Base article](../Servers/operating-system-retirement-notice-feb-3-2015.md). What does "retirement" mean? You can get more details [here](../Servers/operating-system-template-retirement-policy.md).
 
 
 ###Online Tools (2)
@@ -48,19 +48,19 @@
 
 ###Managed Services (1)
 
-* **Managed Backup now available in GB3.** Newly created servers in GB3 can now have data protected with the [Managed Backup Service](https://www.centurylinkcloud.com/managed-services/backup/). More details on the service are [here](../Managed Services/managed-backup-frequently-asked-questions/).
+* **Managed Backup now available in GB3.** Newly created servers in GB3 can now have data protected with the [Managed Backup Service](https://www.centurylinkcloud.com/managed-services/backup/). More details on the service are [here](../Managed Services/managed-backup-frequently-asked-questions.md).
 
 ###Ecosystem: New Blueprints (5)
 
-* [**Orchestrate**](../Ecosystem Partners/getting-started-with-orchestrate-blueprint/) - Online database web service designed to support modern cloud-based application development. Includes support for search, time-ordered events, geospatial or graph queries with a performant REST API. CenturyLink helps customers get started with a sample application that signs up for Orchestrate and allows customers to begin working with the Orchestrate API.
+* [**Orchestrate**](../Ecosystem Partners/getting-started-with-orchestrate-blueprint.md) - Online database web service designed to support modern cloud-based application development. Includes support for search, time-ordered events, geospatial or graph queries with a performant REST API. CenturyLink helps customers get started with a sample application that signs up for Orchestrate and allows customers to begin working with the Orchestrate API.
 
-* [**XtremeData**](../Ecosystem Partners/getting-started-with-xtremedata-dbx-blueprint/) - High performance, full-featured ANSI SQL database engine designed for performance at scale, up to hundreds of terabytes. Simple to deploy, simple to administer, simple to scale up using CenturyLink Cloud Blueprints.
+* [**XtremeData**](../Ecosystem Partners/getting-started-with-xtremedata-dbx-blueprint.md) - High performance, full-featured ANSI SQL database engine designed for performance at scale, up to hundreds of terabytes. Simple to deploy, simple to administer, simple to scale up using CenturyLink Cloud Blueprints.
 
-* [**Pivotal Gemfire**](../Ecosystem Partners/getting-started-with-pivotal-gemfire-blueprint/) - An in-memory distributed database for low-latency, high-scale custom applications. GemFire provides in-memory access for all operational data spread across hundreds of nodes with a “shared nothing” architecture.
+* [**Pivotal Gemfire**](../Ecosystem Partners/getting-started-with-pivotal-gemfire-blueprint.md) - An in-memory distributed database for low-latency, high-scale custom applications. GemFire provides in-memory access for all operational data spread across hundreds of nodes with a “shared nothing” architecture.
 
-* [**Pivotal Greenplum**](../Ecosystem Partners/getting-started-with-pivotal-greenplum-blueprint/) - Enterprise-grade analytical data warehouse featuring in-database compression technology. Powerful and rapid analytics on very large volumes of data. Shared-nothing architecture that automates parallel processing of data and queries.
+* [**Pivotal Greenplum**](../Ecosystem Partners/getting-started-with-pivotal-greenplum-blueprint.md) - Enterprise-grade analytical data warehouse featuring in-database compression technology. Powerful and rapid analytics on very large volumes of data. Shared-nothing architecture that automates parallel processing of data and queries.
 
-* [**Chef**](../Ecosystem Partners/getting-started-with-chef-server-blueprint/) - Chef turns infrastructure into code, allowing users to automate how they build, deploy, and manage cloud-based infrastructure using the same software development practices as they use for their primary codebase. CenturyLink has integrated Chef Server in to a Blueprint that will automatically install and configure Chef Standalone Server on Red Hat Enterprise Linux.
+* [**Chef**](../Ecosystem Partners/getting-started-with-chef-server-blueprint.md) - Chef turns infrastructure into code, allowing users to automate how they build, deploy, and manage cloud-based infrastructure using the same software development practices as they use for their primary codebase. CenturyLink has integrated Chef Server in to a Blueprint that will automatically install and configure Chef Standalone Server on Red Hat Enterprise Linux.
 
 ###Open Source Contributions (4)
 Selected highlights include:
