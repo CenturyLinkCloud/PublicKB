@@ -12,8 +12,8 @@ CenturyLink Cloud offers customers a choice of shared or dedicated load balancin
 
 ### Comparison Matrix
 
-|**Feature**   	|**Shared**   	|**Dedicated**
-|:-	|:-	|:-	|
+|**Feature**|**Shared**|**Dedicated**
+|:-|:-|:-|
 |Control Self-Service|Yes|No
 |Availability|Highly Available Pair|Single Instance or Highly Available pair options available<sup>1</sup>
 |Load Balancing VIP Ports|TCP/80 & TCP/443|Any
@@ -22,7 +22,7 @@ CenturyLink Cloud offers customers a choice of shared or dedicated load balancin
 |Responsibility for Support and Management|CenturyLink Cloud|Customer via CLI or Web based UI
 |Performance|HTTP throughput: 1 Gbps<p>HTTP compression throughput: Up to .75 Gbps<p>**Performance is shared among all clients**|HTTP throughput: 200 Mbps or 1 Gbps<p>SSL encrypted throughput: Up to 1 Gbps<p>HTTP compression throughput: Up to .75 Gbps<p>SSL VPN/ICA Proxy Concurrent Users: Up to 1500<p>New SSL requests/second: Up to 750
 |SSL Offloading|No|Yes, Customer Configured
-|Health Checks|Yes, TCP & PING|Yes, Customer Configured
+|Health Checks|Yes, TCP and PING|Yes, Customer Configured
 
 1. **Customers can optionally pay for an upgrade from a single VPX to an HA pair using a service task**
 2. **Customers can optionally pay for in place upgrades of VPX-200 Devices to a higher performance VPX-1000, including the edition, using a service task**
