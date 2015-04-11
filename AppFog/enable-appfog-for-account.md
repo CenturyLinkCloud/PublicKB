@@ -29,7 +29,7 @@ AppFog supports the followng common application runtimes: Java, Node.js, PHP, Py
 
 *NOTE: The following steps will only work for customers with CenturyLink Control Portal accounts enabled for the Limited Beta program.*
 
-Go to https://control.ctl.io, login, and see “AppFog" listed in the drop down navigation bar:
+Go to https://control.ctl.io, login, and you should see “AppFog" listed in the drop down navigation bar:
 
 ![AppFog in Dropdown Navigation](../images/appfogv2/appfog-in-dropdown-nav.png)
 
