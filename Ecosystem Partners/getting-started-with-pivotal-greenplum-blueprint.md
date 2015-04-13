@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started with Pivotal Greenplum - Blueprint",
   "date": "3-2-2015",
-  "author": "Keith Resar",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
