@@ -13,7 +13,6 @@ Below is a list of public packages that have been made available on the CenturyL
 ### Windows Packages
 
 - Install .NET Framework 4.5 on Windows
-- Install Active Directory Domain Services on Windows 2012
 - [Install Active Directory on Windows 2012 (1 of 2) \[Primary Node\]](../Blueprints/deploy-microsoft-windows-2012-active-directory-domain-services.md)
 - [Install Active Directory on Windows 2012 (2 of 2) \[Secondary Node\]](../Blueprints/deploy-microsoft-windows-2012-active-directory-domain-services.md)
 - Install Active Directory on Windows 2008 (1 of 2) [Primary Node]
