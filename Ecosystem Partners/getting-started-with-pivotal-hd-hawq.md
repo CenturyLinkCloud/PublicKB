@@ -48,37 +48,28 @@ You can achieve a single-button deployment of a new cluster including an Ambari 
 #### Steps
 
 
-1. **Deploy or Identify an Existing Server**
-
-  Identify the server targeted for GemFire installation.  Pivotal requires the server be CentOS or RHEL 5, 6, or 7.
-
-  See the [Creating a new enterprise cloud server](../../servers/creating-a-new-enterprise-cloud-server/) KB for more information on completing this step.
-
-2. **Locate the Blueprint in the Blueprint Library**
+1. **Locate the Blueprint in the Blueprint Library**
 
   Determine whether you will be building a test cluster with small nodes or a production cluster whose nodes are configured with increased CPU and RAM.
 
-  <img src="../images/pivotal_gemfire/gemfire_blueprint_tile.png" style="border:0;max-width:250px;">
+  <img src="../images/pivotal_hdhawq/cluster_blueprint_tiles.png" style="border:0;">
 
-  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “Pivotal GemFire in the keyword search on the right side of the page.
+  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "Pivotal HAWQ" in the keyword search on the right side of the page.
 
-3. **Click the Deploy Blueprint button.**
+2. **Click the Deploy Blueprint button.**
 
-4. **Set Required parameters.**
+3. **Set Required parameters.**
 
-  <img src="../images/pivotal_gemfire/deploy_parameters.png" style="max-width:450px;">
+  <img src="../images/pivotal_hdhawq/deploy_cluster_parameters.png" style="max-width:450px;">
 
   * **EULA** - Click to accept the software end user license agreement
-  * **Email Address** - Email address to receive build notification and GemFire access information
-  * **Start Locator and Server** - Start an initial locator and server on this host.  Skip this if you'd prefer to create your own configuration
+  * **Cluster ID ** - Set unique identifier for all hosts in this Greenplum cluster.  This is used to help other hosts find and join into the cluster
+  * **Email Address** - Email address to receive build notification and HD+HAWQ access information
 
-  <img src="../images/pivotal_gemfire/deploy_parameters_server.png" style="max-width:450px;">
 
-  * **Execute on Server** - Select the server on which to execute the Blueprint
+4. **Set Optional Parameters**
 
-5. **Set Optional Parameters**
-
-  Password/Confirm Password (This is the root password for the server. Keep this in a secure place).  It is also used to identify the `gemfire` user for Web Control Center access.
+  Password/Confirm Password (This is the root password for the server. Keep this in a secure place).  It is also used to identify the `gpadmin` user for Web Control Center access.
 
   Set DNS to “Manually Specify” and use “8.8.8.8” (or any other public DNS server of your choice).
 
@@ -86,43 +77,32 @@ You can achieve a single-button deployment of a new cluster including an Ambari 
 
   The default values are fine for every other option.
 
-6. **Review and Confirm the Blueprint**
+5. **Review and Confirm the Blueprint**
 
-7. **Deploy the Blueprint**
+6. **Deploy the Blueprint**
 
   Once verified, click on the `deploy blueprint` button. You will see the deployment details stating the Blueprint is queued for execution.
 
-  This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within five minutes.
+  This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within 50 to 75 minutes.
 
-8. **Deployment Complete**
+7. **Deployment Complete**
 
   Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.  If you do not receive an email like the one shown below your cluster may have had a deployment error - review the *Blueprint Build Log* to for error messages.
 
-  <img src="../images/pivotal_gemfire/deploy_complete_email.png" style="border:0;width:70%;">
+  <img src="../images/pivotal_hdhawq/deploy_cluster_complete_email.png" style="border:0;width:70%;">
 
-9. **Pulse Web Tool** (optional)
+8. **Ambari Dashboard**
 
-  If you elected start the initial locator and server then you will also have immediate acess to the Pulse web tool via http on port 7070.  Authenticate using the `admin`/`admin` credentials
+  If you elected to install the optional web command center you may access it via http on port 20800.  Authenticate using the `gpadmin` user and your administrative credentials
 
-  <img src="../images/pivotal_gemfire/web_pulse.png" style="border:0;">
+  <img src="../images/pivotal_hdhawq/ambari_dashboard.png" style="border:0;">
 
-10. **gfsh Access** (optional)
+8. **Demo Application** (optional)
 
-  Access the server with the user `gemfire` and your administrative credentials.  The environment has been configured so you can execute `gfsh` immediately.  New to GemFire? Review [Pivotal GemFire in 15 minutes or Less](http://gemfire.docs.pivotal.io/latest/userguide/index.html#getting_started/15_minute_quickstart_gfsh.html) to get started.
+  **TODO TODO**
+  If you elected to install the optional demo application you may access the database from the master server.  Follow the [Pivot Greenplum demo lab](https://github.com/pivotalsoftware/pivotal-samples/tree/master/Labs) to quickly get up to speed on the Greenplum platform.  Authenticate using the `gpadmin` user and your administrative credentials
 
-  ```
-  [gemfire@localhost ~]$ gfsh
-    _________________________     __
-       / _____/ ______/ ______/ /____/ /
-         / /  __/ /___  /_____  / _____  /
-          / /__/ / ____/  _____/ / /    / /
-          /______/_/      /______/_/    /_/    v8.1.0
-
-  Monitor and Manage GemFire
-  gfsh>
-  ```
-
-11. **Enable public access** (optional)
+12. **Enable public access** (optional)
 
   Servers are built using private IPs only with access with client or IPSEC VPN.  For access from the Internet at large add a public IP to your master server.
 
@@ -153,11 +133,41 @@ Contact your Pivotal account manager or inquire via email to [centurylinkcloud-s
 * For issues related to interacting with a GemFire cluster review the [Pivotal KB](https://support.pivotal.io/hc/en-us/categories/200072748-Pivotal-GemFire-Knowledge-Base)
 * For issues related to deploying the Pivotal GemFire Blueprints and application operation on CenturyLink Cloud and you have a paid license, please contact sales-clc@pivotal.io or follow your existing Pivotal support process if known.
 
-
 **How do I learn more about the application?**
 
-View [Pivotal GemFire in 15 minutes or Less](http://gemfire.docs.pivotal.io/latest/userguide/index.html#getting_started/15_minute_quickstart_gfsh.html) to get started.
+**TODO TODO**
+View Pivotal's [Getting Started](http://gpdb.docs.pivotal.io/gpdb-434.html) guide and other documentation from the Pivotal documentation hub.
+
+<img src="../images/pivotal_hdhawq/getting_started_pdf.png" style="max-height: 300px;margin-left:1em;">
+
 
 **How do I login to my cluster for the first time?**
 
-Access your new Pivotal GemFire cluster via ssh as the `gemfire` user using the server default administrative credentials.
+Access your new Pivotal HD+HAWQ cluster via ssh as the root user whose password you supplied at create time.  
+
+You may access the Ambari dashboard using the default credentials of admin/admin.
+
+
+**What applications are contained in the default installation?**
+
+6-node and 10-node cluster configurations are available via pre-configured Ambari Blueprints.  
+
+[6-node Blueprint](https://github.com/dbbaskette/phd3-hawq-aws/blob/master/6-node-blueprint.json):
+
+|Name | Cardinality  | Components  |
+|:-:|---|:-:|
+| Gateway | 1  | Ambari, Nagios, Zookeeper, Oozie.  (This is the Ambari server)  |
+| Master 1 | 1  | Namenode, PXF, Zookeeper  |
+| Master 2 | 1  | Secondary Namenode, PXF, Zookeeper, History Server, HDFS, HIVE, YARN, Ganglia Server |
+| Slave | 4  | Node Manager, Data node, PXF, HAWQ, Ganglia |
+
+[10-node Blueprint](https://github.com/dbbaskette/phd3-hawq-aws/blob/master/10-node-blueprint.json):
+
+|Name | Cardinality  | Components  |
+|:-:|---|:-:|
+| Gateway | 1  | Ambari, Nagios, Zookeeper, Oozie.  (This is the Ambari server)  |
+| Master 1 | 1  | Namenode, PXF, Zookeeper, Ganglia Server, HDFS, YARN  |
+| Master 2 | 1  | Secondary Namenode, PXF, HAWQ Master, Zookeeper, History Server, HDFS, YARN, Ganglia  |
+| Master 3 | 1  | Resource Manager, APP Timeline Server, HAWQ Standby, Zookeeper, Ganglia  |
+| Master 4 | 1  | Zookeeper Server, Hive Server, Hive Metastore, Mysql Server, HCAT, Ganglia  |
+| Slave | 5  | Node Manager, Data node, PXF, HAWQ, Ganglia |
