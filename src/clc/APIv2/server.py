@@ -426,7 +426,7 @@ class Server(object):
 			   packages=[]):  
 		"""Creates a new server.
 
-		https://t3n.zendesk.com/entries/59565550-Create-Server
+		https://www.centurylinkcloud.com/api-docs/v2/#servers-create-server
 
 		cpu and memory are optional and if not provided we pull from the default server size values associated with
 		the provided group_id.
@@ -478,7 +478,7 @@ class Server(object):
 			  packages=[],count=1):  
 		"""Creates one or more clones of existing server.
 
-		https://t3n.zendesk.com/entries/59565550-Create-Server
+		https://www.centurylinkcloud.com/api-docs/v2/#servers-create-server
 
 		Set ttl as number of seconds before server is to be terminated.
 
@@ -498,7 +498,7 @@ class Server(object):
 		"""
 
 		if not name:  name = re.search("%s(.+)\d{2}$" % self.alias,self.name).group(1)
-		if not description and self.description:  description = self.description
+		#if not description and self.description:  description = self.description
 		if not cpu:  cpu = self.cpu
 		if not memory:  memory = self.memory
 		if not group_id:  group_id = self.group_id
@@ -514,6 +514,37 @@ class Server(object):
 		# TODO - #if not anti_affinity_policy_id:  anti_affinity_policy_id =
 		# TODO - need to get network_id of self, not currently exposed via API :(
 
+		requests_lst = []
+		for i in range(0,count):
+			requests_lst.append(Server.Create( \
+			            name=name,cpu=cpu,memory=memory,group_id=group_id,network_id=network_id,alias=self.alias,
+						password=password,ip_address=ip_address,storage_type=storage_type,type=type,
+						primary_dns=primary_dns,secondary_dns=secondary_dns,
+						custom_fields=custom_fields,ttl=ttl,managed_os=managed_os,description=description,
+                        source_server_password=source_server_password,cpu_autoscale_policy_id=cpu_autoscale_policy_id,
+						anti_affinity_policy_id=anti_affinity_policy_id,packages=packages,
+						template=self.id))
+
+		return(sum(requests_lst))
+
+
+	# https://control.tier3.com/api/tunnel/v2/servers/krap/ca1krapapi01/convertToTemplate
+	# {description: "test tpl", password: "foo", visibility: "private"}
+	def ConvertToTemplate(self,description,visibility,password=None):
+		"""Converts an existing server to a template.
+
+		* - if no password is supplied will fetch stored credentials
+
+		>>> d = clc.v2.Datacenter()
+		>>> clc.v2.Server(alias='BTDI',id='WA1BTDIAPI207').ConvertToTemplate(xxxxxxx)
+		0
+
+		"""
+
+		if not description and self.description:  description = self.description
+		if not password: password = source_server_password	# is this the expected behavior?
+
+		# TODO - request info below
 		requests_lst = []
 		for i in range(0,count):
 			requests_lst.append(Server.Create( \
