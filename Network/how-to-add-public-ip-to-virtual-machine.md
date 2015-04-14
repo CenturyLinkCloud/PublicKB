@@ -2,7 +2,7 @@
   "title": "How To: Add Public IP to Virtual Machine",
   "date": "4-9-2014",
   "author": "Chris Little",
-  "attachments": []
+  "attachments": [],
   "contentIsHTML": false
 }}}
 
