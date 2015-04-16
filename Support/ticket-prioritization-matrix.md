@@ -1,7 +1,7 @@
 {{{
   "title": "Ticket Prioritization Matrix",
-  "date": "11-12-2014",
-  "author": "Gavin McMurdo",
+  "date": "4-16-2015",
+  "author": "Justin Lentz",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -64,7 +64,7 @@ Each incoming ticket is triaged and the priority evaluated according to the crit
             <td>Internal use only</td>
             <td>15 minutes</td>
             <td>
-                Ticket entry updated every half hour
+                <p>Ticket entry updated every half hour</p>
                 <p>Status page updated</p>
                 <p>Communication to impacted customers every half hour</p>
                 <p>Incident Report sent to impacted customers</p></td>
@@ -74,12 +74,12 @@ Each incoming ticket is triaged and the priority evaluated according to the crit
         <tr>
             <td><strong>High</strong></td>
             <td>
-                Any element of the service is unavailable
+                <p>Any element of the service is unavailable</p>
                 <p>Any hosted server is offline or non-functional due to conditions beyond customer control</p>
                 <p>Measurable performance degradation in any given datacenter</p></td>
             <td>30 minutes</td>
             <td>
-                Ticket entry updated hourly
+                <p>Ticket entry updated hourly</p>
                 <p>Incident Report may be requested by the customer for a minimum 3 hr service engagement charge</p></td>
             <td>high@ctl.io</td>
             <td>8 hours</td>
