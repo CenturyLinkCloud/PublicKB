@@ -246,7 +246,7 @@ class Group(object):
 
 		"""
 
-		return(clc.v2.Requests(clc.v2.API.Call('DELETE','groups/%s/%s' % (self.alias,self.id),{})))
+		return(clc.v2.Requests(clc.v2.API.Call('DELETE','groups/%s/%s' % (self.alias,self.id),{}),alias=self.alias))
 	
 
 	def Account(self):

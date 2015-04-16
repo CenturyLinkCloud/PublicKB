@@ -79,7 +79,8 @@ class Disks(object):
 		self.size = size
 		self.server.dirty = True
 		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.server.alias,self.server.id),
-		                                       json.dumps([{"op": "set", "member": "disks", "value": disk_set}]))))
+		                                       json.dumps([{"op": "set", "member": "disks", "value": disk_set}])),
+							   alias=self.server.alias))
 
 
 
@@ -114,7 +115,8 @@ class Disk(object):
 		disk_set.append({'diskId': self.id, 'sizeGB': self.size})
 		self.parent.server.dirty = True
 		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.parent.server.alias,self.parent.server.id),
-		                                       json.dumps([{"op": "set", "member": "disks", "value": disk_set}]))))
+		                                       json.dumps([{"op": "set", "member": "disks", "value": disk_set}])),
+							   alias=self.parent.server.alias))
 
 
 	def Delete(self):
@@ -131,7 +133,8 @@ class Disk(object):
 		self.parent.disks = [o for o in self.parent.disks if o!=self]
 		self.parent.server.dirty = True
 		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.parent.server.alias,self.parent.server.id),
-		                                       json.dumps([{"op": "set", "member": "disks", "value": disk_set}]))))
+		                                       json.dumps([{"op": "set", "member": "disks", "value": disk_set}])),
+							   alias=self.parent.server.alias))
 
 
 	def __getattr__(self,var):

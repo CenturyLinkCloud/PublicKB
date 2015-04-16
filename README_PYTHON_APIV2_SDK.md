@@ -670,6 +670,19 @@ Returns the administrative credentials for this server.
 ```
 
 
+### clc.v2.Server.ConvertToTemplate
+```python
+clc.v2.Server.ConvertToTemplate( description, visibiity=None, password=None ):
+```
+Converts existing server to a template.
+
+visibility is one of private or shared.
+
+```python
+>>> clc.v2.Server("WA1BTDICHANGE01").ConvertToTemplate(visibility='private',description='foo',password=None).WaitUntilComplete()
+```
+
+
 ### clc.v2.Server.Change
 ```python
 clc.v2.Server.Change( cpu=None, memory=None, description=None, group_id=None ):

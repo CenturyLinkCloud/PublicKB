@@ -346,7 +346,8 @@ class Server(object):
 		"""
 
 		return(clc.v2.Requests(clc.v2.API.Call('POST','operations/%s/servers/executePackage' % (self.alias),
-		                                       json.dumps({'servers': [self.id], 'package': {'packageId': package_id, 'parameters': parameters}}))))
+		                                       json.dumps({'servers': [self.id], 'package': {'packageId': package_id, 'parameters': parameters}})),
+							   alias=self.alias))
 
 
 	def GetSnapshots(self):
@@ -376,7 +377,8 @@ class Server(object):
 			else:  raise(clc.CLCException("Snapshot already exists cannot take another"))
 
 		return(clc.v2.Requests(clc.v2.API.Call('POST','operations/%s/servers/createSnapshot' % (self.alias),
-											   {'serverIds': self.id, 'snapshotExpirationDays': expiration_days})))
+											   {'serverIds': self.id, 'snapshotExpirationDays': expiration_days}),
+							   alias=self.alias))
 
 
 	def DeleteSnapshot(self,names=None):
@@ -395,7 +397,7 @@ class Server(object):
 		requests_lst = []
 		for name in names:
 			name_links = [obj['links'] for obj in self.data['details']['snapshots'] if obj['name']==name][0]
-			requests_lst.append(clc.v2.Requests(clc.v2.API.Call('DELETE',[obj['href'] for obj in name_links if obj['rel']=='delete'][0])))
+			requests_lst.append(clc.v2.Requests(clc.v2.API.Call('DELETE',[obj['href'] for obj in name_links if obj['rel']=='delete'][0]),alias=self.alias))
 			
 		return(sum(requests_lst))
 
@@ -415,7 +417,7 @@ class Server(object):
 		if name is None:  name = self.GetSnapshots()[0]
 
 		name_links = [obj['links'] for obj in self.data['details']['snapshots'] if obj['name']==name][0]
-		return(clc.v2.Requests(clc.v2.API.Call('POST',[obj['href'] for obj in name_links if obj['rel']=='restore'][0])))
+		return(clc.v2.Requests(clc.v2.API.Call('POST',[obj['href'] for obj in name_links if obj['rel']=='restore'][0]),alias=self.alias))
 
 
 	@staticmethod
@@ -468,7 +470,8 @@ class Server(object):
 							 'networkId': network_id, 'ipAddress': ip_address, 'password': password,
 							 'sourceServerPassword': source_server_password, 'cpu': cpu, 'cpuAutoscalePolicyId': cpu_autoscale_policy_id,
 							 'memoryGB': memory, 'type': type, 'storageType': storage_type, 'antiAffinityPolicyId': anti_affinity_policy_id,
-							 'customFields': custom_fields, 'additionalDisks': additional_disks, 'ttl': ttl, 'packages': packages}))))
+							 'customFields': custom_fields, 'additionalDisks': additional_disks, 'ttl': ttl, 'packages': packages})),
+				 alias=alias))
 
 
 	def Clone(self,network_id,name=None,cpu=None,memory=None,group_id=None,alias=None,password=None,ip_address=None,
@@ -528,35 +531,26 @@ class Server(object):
 		return(sum(requests_lst))
 
 
-	# https://control.tier3.com/api/tunnel/v2/servers/krap/ca1krapapi01/convertToTemplate
-	# {description: "test tpl", password: "foo", visibility: "private"}
-	def ConvertToTemplate(self,description,visibility,password=None):
-		"""Converts an existing server to a template.
 
-		* - if no password is supplied will fetch stored credentials
+	def ConvertToTemplate(self,visibility,description=None,password=None):
+		"""Converts existing server to a template.
+
+		visibility is one of private or shared.
 
 		>>> d = clc.v2.Datacenter()
-		>>> clc.v2.Server(alias='BTDI',id='WA1BTDIAPI207').ConvertToTemplate(xxxxxxx)
+		>>> clc.v2.Server(alias='BTDI',id='WA1BTDIAPI207').ConvertToTemplate("private","my template")
 		0
 
 		"""
 
-		if not description and self.description:  description = self.description
-		if not password: password = source_server_password	# is this the expected behavior?
+		if visibility not in ('private','shared'):  raise(clc.CLCException("Invalid visibility - must be private or shared"))
+		if not password: password = self.Credentials()['password']
+		if not description:  description = self.description
 
-		# TODO - request info below
-		requests_lst = []
-		for i in range(0,count):
-			requests_lst.append(Server.Create( \
-			            name=name,cpu=cpu,memory=memory,group_id=group_id,network_id=network_id,alias=self.alias,
-						password=password,ip_address=ip_address,storage_type=storage_type,type=type,
-						primary_dns=primary_dns,secondary_dns=secondary_dns,
-						custom_fields=custom_fields,ttl=ttl,managed_os=managed_os,description=description,
-                        source_server_password=source_server_password,cpu_autoscale_policy_id=cpu_autoscale_policy_id,
-						anti_affinity_policy_id=anti_affinity_policy_id,packages=packages,
-						template=self.id))
+		return(clc.v2.Requests(clc.v2.API.Call('POST','servers/%s/%s/convertToTemplate' % (self.alias,self.id),
+											   json.dumps({"description": description, "visibility": visibility, "password": password})),
+							   alias=self.alias))
 
-		return(sum(requests_lst))
 
 
 	def Change(self,cpu=None,memory=None,description=None,group_id=None):
@@ -578,7 +572,8 @@ class Server(object):
 		for key in ("cpu","memory","description","groupId"):
 			if key:  
 				requests.append(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.alias,self.id), 
-				                                                json.dumps([{"op": "set", "member": key, "value": locals()[key]}]))))
+				                                                json.dumps([{"op": "set", "member": key, "value": locals()[key]}])),
+								alias=self.alias))
 
 		if len(requests):  self.dirty = True
 
@@ -606,7 +601,8 @@ class Server(object):
 		if self.state != "active":  raise(clc.CLCException("Server must be powered on to change password"))
 
 		return(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.alias,self.id), 
-		                                       json.dumps([{"op": "set", "member": "password", "value": {"current": self.Credentials()['password'], "password": password}}]),debug=True)))
+		                                       json.dumps([{"op": "set", "member": "password", "value": {"current": self.Credentials()['password'], "password": password}}])),
+							   alias=self.alias))
 
 
 	def Delete(self):
@@ -618,7 +614,7 @@ class Server(object):
 		0
 		
 		"""
-		return(clc.v2.Requests(clc.v2.API.Call('DELETE','servers/%s/%s' % (self.alias,self.id))))
+		return(clc.v2.Requests(clc.v2.API.Call('DELETE','servers/%s/%s' % (self.alias,self.id)),alias=self.alias))
 
 
 	def __str__(self):
