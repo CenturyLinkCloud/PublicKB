@@ -1,6 +1,6 @@
 {{{
   "title": "Load Balancing Comparison Matrix",
-  "date": "4-7-2015",
+  "date": "4-16-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -30,6 +30,7 @@ Health Checks|Yes, TCP and PING|Yes, Customer Configured
 ### Additional Details
 The links below provide additional details on the capabilities and features of the Citrix Netscaler VPX Platform.
 
+* [Deploy a Dedicated Citrix VPX Appliance using Service Task](../Service Tasks/deploy-a-dedicated-citrix-vpx-appliance.md)
 * [Shared vs Dedicated Network Load Balancing Architecture Considerations](../Network/load-balancing-dedicated-vs-shared.md)
 * [Netscaler VPX Overview](http://www.citrix.com/products/netscaler-application-delivery-controller/features/platforms/vpx.html)
 * [Netscaler Editions](http://www.citrix.com/products/netscaler-application-delivery-controller/features/editions.html)
