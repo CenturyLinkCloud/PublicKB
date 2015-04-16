@@ -672,7 +672,7 @@ Returns the administrative credentials for this server.
 
 ### clc.v2.Server.ConvertToTemplate
 ```python
-clc.v2.Server.ConvertToTemplate( description, visibiity=None, password=None ):
+clc.v2.Server.ConvertToTemplate( description, visibility=None, password=None ):
 ```
 Converts existing server to a template.
 
