@@ -43,11 +43,11 @@
 
 **Is this capability available 24x7?**
 
-Yes, while the management team that responds to these requests is based on the USA West Coast, they do respond to escalations within 15 minutes. *The exception is an escalation for Service Tasks, which are only acknowledged from 7am-7pmPT*.
+Yes, while the management team that responds to these requests is based on the US West Coast, they do respond to escalations within 15 minutes. *The exception is an escalation for Service Tasks, which are only acknowledged from 7am-7pm Pacific*.
 
 **What criteria are used to evaluate a Service Request escalation request?**
 
-The members of the escalation team are members of the CenturyLink Cloud Support Management team. They will review the age of the original ticket, clarity of information in the original ticket, scope, skill level and time of day of the request.
+The members of the escalation team are members of the CenturyLink Cloud Support Management team. They will review the age of the original ticket, clarity of information in the original ticket, scope, skill level, and time of day of the request.
 
 **Will I be charged for escalating a ticket?**
 
