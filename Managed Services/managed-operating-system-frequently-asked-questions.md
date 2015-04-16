@@ -98,7 +98,7 @@ After creating a managed VM, the VM will be 'Under Construction' while backgroun
 </p>
 <p><strong>Q: Can <i>un-managed</i> Servers be converted to <i>Managed</i> (or vice versa)?</strong>
 </p>
-<p>A: This capability is not available at this time.
+<p>A: Servers <b>can</b> be converted from unmanaged to managed by executing the "Managed RHEL for CPI" (for Red Hat servers) or "Managed WIN for CPI" (for Windows servers) Blueprints in the library. Customers <b>cannot</b> go from a managed server to an unmanaged server.
 </p>
 <p><strong>Q: What Anti-Virus is provided for Windows Servers and how often is it updated?</strong>
 </p>
