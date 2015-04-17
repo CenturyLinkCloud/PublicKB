@@ -19,7 +19,7 @@ Currently, this article is to support customers in the Limited Beta program.
 
 # Adding a Team Member
 
-Many software development efforts involve a team or teams that need access to the deployment platform. To add team members to AppFog they must have existing user credentials created for them on the Control Portal account. Please go to [this article](/articles/todo) for creating user credentials in your account.
+Many software development efforts involve a team or teams that need access to the deployment platform. To add team members to AppFog they must have existing user credentials created for them on the Control Portal account. Please go to [this article](../Accounts & Users/create-users.md) for creating user credentials in your account.
 
 To add a member to AppFog, you must have the AppFog Admin role level permissions. If you have these permissions set for your account, go to the Members tab on the US East region and follow these steps:
 
