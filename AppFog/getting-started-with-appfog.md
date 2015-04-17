@@ -21,7 +21,7 @@ Currently, this article is to support customers in the Limited Beta program.
 
 AppFog is a public Platform-as-a-Service (PaaS) that makes deploying scalable, robust, high performing [cloud-ready applications](http://12factor.net) fast and easy for developers. AppFog enables developers to focus on writing great applications without having to worry about managing the underlying infrastructure. The result is increased agility and productivity, more efficient use of resources, and a simplified deployment and management experience.
 
-<img src="../images/appfogv2/appfog-vs-traditional.png" style="width: 400px; background-color: #000000;" alt="Work on code, not infrastructure" title="Work on code, not infrastructure"/>
+![Work on code, not infrastructure](../images/appfogv2/appfog-vs-traditional.png)
 
 AppFog supports the followng common application runtimes: Java, Node.js, PHP, Python, Go, Ruby, and Static Websites. Integrating with services such as databases, messaging middleware, load balancing, monitoring and more are easily provisioned through the AppFog Marketplace.
 
