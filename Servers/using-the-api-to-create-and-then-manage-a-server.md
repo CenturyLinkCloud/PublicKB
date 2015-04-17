@@ -1,5 +1,5 @@
 {{{
-  "title": "Using the API to Create and then Manage a Server",
+  "title": "Using the API to Create and Configure a Server",
   "date": "4-15-2015",
   "author": "Bryan Friedman",
   "attachments": [],
@@ -14,7 +14,7 @@ For more details about the specific API functions used below, you may reference 
 
 ### Steps
 
-We will use the BTDI account alias for all the calls below and will build our server in the WA1 data center. As shown below, all HTTP requests must include the `Content-Type` header set to `application/json`.
+We will use ALIAS as the account alias for all the calls below and will build our server in the WA1 data center. As shown below, all HTTP requests must include the `Content-Type` header set to `application/json`.
 
 #### 1. Authentication
 
@@ -34,7 +34,7 @@ We get a response that includes the `bearerToken`:
 
     {
       "userName": "demouser1",
-      "accountAlias": "BTDI",
+      "accountAlias": "ALIAS",
       "locationAlias": "WA1",
       "roles": [
         "AccountAdmin"
@@ -52,7 +52,7 @@ More information can be found in the [Authentication Overview API Documentation]
 
 We first need to gather some details that will be required to create a new server. Most of this information is available via the deployment capabilities API call which can be retrieved using the following request:
 
-    GET https://api.ctl.io/v2/datacenters/BTDI/WA1/deploymentCapabilities
+    GET https://api.ctl.io/v2/datacenters/ALIAS/WA1/deploymentCapabilities
     Content-Type: application/json
     Authorization: Bearer VGCVlA1JK5WLEXicGVujiJblEIApnIJhicZcNZG1MjvJI5IQXJime3tzQYOYHjLuX2NiZLiJvTRi2JOXdcbkX46UWzmIZnJIzpM6JjpmJDB.iX91ML6IzhdX62cekloAB6uJUOjjoi1xClUOBXZmXJxciUzdje2MJM96VM1Mk4NOXubYIXbbiwf06E1YQbeEsKIy1HdizndJWyJVs4XCGiwpTdlyiRXkGrikopi0I5pI.6RYzOrI2lj4bYZsJzeWXGCRNpyXjIbbJLcJL3ckH4CjbisZnZJYMiiIYgD1plIa9JUXuFUG4iymCQV2JXiJluZiziRJYk0b1VJhIRc3M13ihOe
 
@@ -70,7 +70,7 @@ The response should be similar to the following (but may also include additional
           "name": "My Network",
           "networkId": "a933432bd1234e84b6c4fa329e48cb8b",
           "type": "private",
-          "accountID": "BTDI"
+          "accountID": "ALIAS"
         }
       ],
       "templates": [
@@ -97,7 +97,7 @@ The response should be similar to the following (but may also include additional
 
 Next we need to decide which group to create our server in and retrieve the UUID to pass to the create server method. To get a list of available groups, we first retrieve the root group for the given account and data center using the following request (note the `groupLinks=true` query parameter that is required in this case):
 
-    GET https://api.ctl.io/v2/datacenters/BTDI/WA1?groupLinks=true
+    GET https://api.ctl.io/v2/datacenters/ALIAS/WA1?groupLinks=true
     Content-Type: application/json
     Authorization: Bearer VGCVlA1JK5WLEXicGVujiJblEIApnIJhicZcNZG1MjvJI5IQXJime3tzQYOYHjLuX2NiZLiJvTRi2JOXdcbkX46UWzmIZnJIzpM6JjpmJDB.iX91ML6IzhdX62cekloAB6uJUOjjoi1xClUOBXZmXJxciUzdje2MJM96VM1Mk4NOXubYIXbbiwf06E1YQbeEsKIy1HdizndJWyJVs4XCGiwpTdlyiRXkGrikopi0I5pI.6RYzOrI2lj4bYZsJzeWXGCRNpyXjIbbJLcJL3ckH4CjbisZnZJYMiiIYgD1plIa9JUXuFUG4iymCQV2JXiJluZiziRJYk0b1VJhIRc3M13ihOe
 
@@ -111,21 +111,21 @@ We get back a number of links to other resources related to this data center (no
       "links": [
       {
         "rel": "self",
-        "href": "/v2/datacenters/btdi/wa1"
+        "href": "/v2/datacenters/ALIAS/wa1"
       },
       {
         "rel": "deploymentCapabilities",
-        "href": "/v2/datacenters/btdi/wa1/deploymentCapabilities"
+        "href": "/v2/datacenters/ALIAS/wa1/deploymentCapabilities"
       },
       {
         "rel": "group",
-        "href": "/v2/groups/btdi/890312348ddfe311b05f00505682315a",
+        "href": "/v2/groups/ALIAS/890312348ddfe311b05f00505682315a",
         "id": "890312348ddfe311b05f00505682315a",
         "name": "WA1 Hardware"
       },
       {
         "rel": "createServer",
-        "href": "/v2/servers/btdi",
+        "href": "/v2/servers/ALIAS",
         "verbs": [
           "POST"
         ]
@@ -134,7 +134,7 @@ We get back a number of links to other resources related to this data center (no
 
 Now we can use this UUID to get the list of groups for this account in this data center. The request is as follows:
 
-    GET https://api.ctl.io/v2/groups/BTDI/890312348ddfe311b05f00505682315a
+    GET https://api.ctl.io/v2/groups/ALIAS/890312348ddfe311b05f00505682315a
     Content-Type: application/json
     Authorization: Bearer VGCVlA1JK5WLEXicGVujiJblEIApnIJhicZcNZG1MjvJI5IQXJime3tzQYOYHjLuX2NiZLiJvTRi2JOXdcbkX46UWzmIZnJIzpM6JjpmJDB.iX91ML6IzhdX62cekloAB6uJUOjjoi1xClUOBXZmXJxciUzdje2MJM96VM1Mk4NOXubYIXbbiwf06E1YQbeEsKIy1HdizndJWyJVs4XCGiwpTdlyiRXkGrikopi0I5pI.6RYzOrI2lj4bYZsJzeWXGCRNpyXjIbbJLcJL3ckH4CjbisZnZJYMiiIYgD1plIa9JUXuFUG4iymCQV2JXiJluZiziRJYk0b1VJhIRc3M13ihOe
 
@@ -202,7 +202,7 @@ For more details about the links referenced above and other link types, see the 
 
 To create a server we use the following request. Notice in the JSON payload we are using the `groupId` from our previous call to the groups endpoint as well as the `sourceServerId` (the desired template name) and `networkId` we chose from the deployment capabilities call above. We also include all of the other required parameters as outlined in the [Create Server API Documentation](https://www.centurylinkcloud.com/api-docs/v2/#servers-create-server).
 
-    POST https://api.ctl.io/v2/servers/BTDI
+    POST https://api.ctl.io/v2/servers/ALIAS
     Content-Type: application/json
     Authorization: Bearer VGCVlA1JK5WLEXicGVujiJblEIApnIJhicZcNZG1MjvJI5IQXJime3tzQYOYHjLuX2NiZLiJvTRi2JOXdcbkX46UWzmIZnJIzpM6JjpmJDB.iX91ML6IzhdX62cekloAB6uJUOjjoi1xClUOBXZmXJxciUzdje2MJM96VM1Mk4NOXubYIXbbiwf06E1YQbeEsKIy1HdizndJWyJVs4XCGiwpTdlyiRXkGrikopi0I5pI.6RYzOrI2lj4bYZsJzeWXGCRNpyXjIbbJLcJL3ckH4CjbisZnZJYMiiIYgD1plIa9JUXuFUG4iymCQV2JXiJluZiziRJYk0b1VJhIRc3M13ihOe
 
@@ -230,12 +230,12 @@ We get back the following response. Notice the HTTP status is a `202 ACCEPTED`. 
       "links": [
         {
           "rel": "status",
-          "href": "/v2/operations/BTDI/status/wa1-123456",
+          "href": "/v2/operations/ALIAS/status/wa1-123456",
           "id": "wa1-123456"
         },
         {
           "rel": "self",
-          "href": "/v2/servers/BTDI/43f5f0becea84694b1d340d399571234?uuid=True",
+          "href": "/v2/servers/ALIAS/43f5f0becea84694b1d340d399571234?uuid=True",
           "id": "43f5f0becea84694b1d340d399571234",
           "verbs": [
             "GET"
@@ -248,7 +248,7 @@ We get back the following response. Notice the HTTP status is a `202 ACCEPTED`. 
 
 Since the server build is an asynchronous process, we use the status link from the response above to query the status of the job.
 
-    GET https://api.ctl.io/v2/operations/BTDI/status/wa1-123456
+    GET https://api.ctl.io/v2/operations/ALIAS/status/wa1-123456
     Content-Type: application/json
     Authorization: Bearer VGCVlA1JK5WLEXicGVujiJblEIApnIJhicZcNZG1MjvJI5IQXJime3tzQYOYHjLuX2NiZLiJvTRi2JOXdcbkX46UWzmIZnJIzpM6JjpmJDB.iX91ML6IzhdX62cekloAB6uJUOjjoi1xClUOBXZmXJxciUzdje2MJM96VM1Mk4NOXubYIXbbiwf06E1YQbeEsKIy1HdizndJWyJVs4XCGiwpTdlyiRXkGrikopi0I5pI.6RYzOrI2lj4bYZsJzeWXGCRNpyXjIbbJLcJL3ckH4CjbisZnZJYMiiIYgD1plIa9JUXuFUG4iymCQV2JXiJluZiziRJYk0b1VJhIRc3M13ihOe
 
@@ -264,7 +264,7 @@ In most cases, the status should continue to be polled until the `succeeded` sta
 
 Regardless of the build status, we can query the server directly using the server link returned in the create server response above. Make sure to include the `uuid=True` query parameter to let the API know we are referencing the server using the UUID instead of the alias.
 
-    GET https://api.ctl.io/v2/servers/BTDI/43f5f0becea84694b1d340d399571234?uuid=True
+    GET https://api.ctl.io/v2/servers/ALIAS/43f5f0becea84694b1d340d399571234?uuid=True
     Content-Type: application/json
     Authorization: Bearer VGCVlA1JK5WLEXicGVujiJblEIApnIJhicZcNZG1MjvJI5IQXJime3tzQYOYHjLuX2NiZLiJvTRi2JOXdcbkX46UWzmIZnJIzpM6JjpmJDB.iX91ML6IzhdX62cekloAB6uJUOjjoi1xClUOBXZmXJxciUzdje2MJM96VM1Mk4NOXubYIXbbiwf06E1YQbeEsKIy1HdizndJWyJVs4XCGiwpTdlyiRXkGrikopi0I5pI.6RYzOrI2lj4bYZsJzeWXGCRNpyXjIbbJLcJL3ckH4CjbisZnZJYMiiIYgD1plIa9JUXuFUG4iymCQV2JXiJluZiziRJYk0b1VJhIRc3M13ihOe
 
@@ -273,8 +273,8 @@ The response provides the details of the server in its current state. Notice the
     200 OK
 
     {
-        "id": "wa1btdiweb01",
-        "name": "WA1BTDIWEB01",
+        "id": "wa1ALIASweb01",
+        "name": "WA1ALIASWEB01",
         "description": "My web server",
         "groupId": "890312348ddfe311b05f00505682315a",
         "isTemplate": false,
@@ -293,8 +293,8 @@ A few minutes later (after the job status is `succeeded`) we call the same metho
     200 OK
 
     {
-        "id": "wa1btdiweb01",
-        "name": "WA1BTDIWEB01",
+        "id": "wa1ALIASweb01",
+        "name": "WA1ALIASWEB01",
         "description": "My web server",
         "groupId": "890312348ddfe311b05f00505682315a",
         "isTemplate": false,
@@ -349,7 +349,7 @@ Now we are ready to interact with the server as needed.
 
 First, we will update the server description using the following request. (We are using the server name in the URI now since it is known from the previous call, but we could continue to use the UUID if we wanted to however we would have to add the `uuid=True` query parameter as we did above.)
 
-    PATCH https://api.ctl.io/v2/servers/BTDI/wa1btdiweb01
+    PATCH https://api.ctl.io/v2/servers/ALIAS/wa1ALIASweb01
     Content-Type: application/json
     Authorization: Bearer VGCVlA1JK5WLEXicGVujiJblEIApnIJhicZcNZG1MjvJI5IQXJime3tzQYOYHjLuX2NiZLiJvTRi2JOXdcbkX46UWzmIZnJIzpM6JjpmJDB.iX91ML6IzhdX62cekloAB6uJUOjjoi1xClUOBXZmXJxciUzdje2MJM96VM1Mk4NOXubYIXbbiwf06E1YQbeEsKIy1HdizndJWyJVs4XCGiwpTdlyiRXkGrikopi0I5pI.6RYzOrI2lj4bYZsJzeWXGCRNpyXjIbbJLcJL3ckH4CjbisZnZJYMiiIYgD1plIa9JUXuFUG4iymCQV2JXiJluZiziRJYk0b1VJhIRc3M13ihOe
 
@@ -369,11 +369,11 @@ For more information on updating properties of a server, see the [API Documentat
 
 Finally, we will restart the server using this request:
 
-    POST https://api.ctl.io/v2/operations/BTDI/servers/reboot
+    POST https://api.ctl.io/v2/operations/ALIAS/servers/reboot
     Content-Type: application/json
     Authorization: Bearer VGCVlA1JK5WLEXicGVujiJblEIApnIJhicZcNZG1MjvJI5IQXJime3tzQYOYHjLuX2NiZLiJvTRi2JOXdcbkX46UWzmIZnJIzpM6JjpmJDB.iX91ML6IzhdX62cekloAB6uJUOjjoi1xClUOBXZmXJxciUzdje2MJM96VM1Mk4NOXubYIXbbiwf06E1YQbeEsKIy1HdizndJWyJVs4XCGiwpTdlyiRXkGrikopi0I5pI.6RYzOrI2lj4bYZsJzeWXGCRNpyXjIbbJLcJL3ckH4CjbisZnZJYMiiIYgD1plIa9JUXuFUG4iymCQV2JXiJluZiziRJYk0b1VJhIRc3M13ihOe
 
-    [ "wa1btdiweb01" ]
+    [ "wa1ALIASweb01" ]
 
 Once again, this is an asynchronous job so we get back a link to the status endpoint:
 
@@ -386,7 +386,7 @@ Once again, this is an asynchronous job so we get back a link to the status endp
             "links": [
                 {
                     "rel": "status",
-                    "href": "/v2/operations/BTDI/status/wa1-123458",
+                    "href": "/v2/operations/ALIAS/status/wa1-123458",
                     "id": "wa1-146517"
                 }
             ]
@@ -395,7 +395,7 @@ Once again, this is an asynchronous job so we get back a link to the status endp
 
 We query the status using the link provided:
 
-    GET https://api.ctl.io/v2/operations/BTDI/status/wa1-123458
+    GET https://api.ctl.io/v2/operations/ALIAS/status/wa1-123458
     Content-Type: application/json
     Authorization: Bearer VGCVlA1JK5WLEXicGVujiJblEIApnIJhicZcNZG1MjvJI5IQXJime3tzQYOYHjLuX2NiZLiJvTRi2JOXdcbkX46UWzmIZnJIzpM6JjpmJDB.iX91ML6IzhdX62cekloAB6uJUOjjoi1xClUOBXZmXJxciUzdje2MJM96VM1Mk4NOXubYIXbbiwf06E1YQbeEsKIy1HdizndJWyJVs4XCGiwpTdlyiRXkGrikopi0I5pI.6RYzOrI2lj4bYZsJzeWXGCRNpyXjIbbJLcJL3ckH4CjbisZnZJYMiiIYgD1plIa9JUXuFUG4iymCQV2JXiJluZiziRJYk0b1VJhIRc3M13ihOe
 
