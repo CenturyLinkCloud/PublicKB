@@ -11,7 +11,7 @@
 
 Customers may wish to enable [Managed Operating System Services](//www.centurylinkcloud.com/managed-services/operating-system/) on virtual machines already deployed in an **unmanaged** state to offload critical IT functions.  In order to facilitate this process the CenturyLink Cloud platform provides an automated [Blueprint](//www.centurylinkcloud.com/blueprints/) to convert unmanaged virtual machines into a managed operating system.
 
-### Notes and Exceptions
+### Important Information
 * Conversion from **Managed** to **Unmanaged** Operating System Services is not currently a supported feature.
 * It is advised that customers perform the conversion during a maintenance window due to potential impact on running services.
 
