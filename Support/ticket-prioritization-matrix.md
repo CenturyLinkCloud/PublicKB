@@ -95,6 +95,8 @@ Each incoming ticket is triaged and the priority evaluated according to the crit
     </tbody>
 </table>
 
+### Service Tasks
+
 <table class="table table--large permission-matrix">
     <thead>
         <tr class="section-header">
