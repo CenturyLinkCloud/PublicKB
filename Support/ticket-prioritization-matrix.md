@@ -60,18 +60,6 @@ Each incoming ticket is triaged and the priority evaluated according to the crit
     </thead>
     <tbody>
         <tr>
-            <td><strong>Urgent</strong></td>
-            <td>Internal use only</td>
-            <td>15 minutes</td>
-            <td>
-                <p>Ticket entry updated every half hour</p>
-                <p>Status page updated</p>
-                <p>Communication to impacted customers every half hour</p>
-                <p>Incident Report sent to impacted customers</p></td>
-            <td>not customer set</td>
-            <td>4 hours</td>
-        </tr>
-        <tr>
             <td><strong>High</strong></td>
             <td>
                 <p>Any element of the service is unavailable</p>
