@@ -55,10 +55,9 @@ After executing the steps in this Getting Started document, the users will have 
 ### Postrequisite
 - If you want to access your Cohesive Networks VNS3 virtual appliance from the internet, please perform the following tasks once your VNS3 virtual appliance has been deployed to your account and has been configured:
 
-1. Adding an Public IP address to an existing or new CenturyLink server
-![Add Public IP](https://t3n.zendesk.com/attachments/token/kObGC9P2IjP1ate0NexwFNiXz/?name=ip.jpg)
+1. [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal 
 
-2. If required, allow incoming traffic for the admin port.  Warning: Please make sure your VNS3 appliance firewall rules are properly configured to only allow specific source traffic.  If you do not configure source traffic rules you risk exposing your VNS3 appliance admin port to the entire internet.  Note: When accessing your CohesiveFT VNS3 virtual appliance for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
+2. If required, [allow incoming traffic for the admin port](../Network/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Servers Public IP in Control Portal.  Warning: Please make sure your VNS3 appliance firewall rules are properly configured to only allow specific source traffic.  If you do not configure source traffic rules you risk exposing your VNS3 appliance admin port to the entire internet.  Note: When accessing your CohesiveFT VNS3 virtual appliance for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
 ![Admin Port Firewall Ports](https://cohesive.net/wp-content/uploads/2015/03/CohesiveNetworks_CL_port8000.png)
 
 ### Detailed Steps to Deploy Cohesive Networks VNS3 Partner Template
@@ -97,7 +96,7 @@ Thank you very much, Your_Name_Here
 
 -----
 
-### Acessing and Configuring your Cohesive Networks VNS3 virtual appliance
+### Accessing and Configuring your Cohesive Networks VNS3 virtual appliance
 Once the Service Task team deploys your Cohesive Networks VNS3 virtual appliance, you will get an email notification with details on your new devices.  Follow these instructions to access and configure your VNS3 virtual appliance:
 
 1. Connect to your CenturyLink Cloud environment via Client VPN by starting or initiating your VPN client.
