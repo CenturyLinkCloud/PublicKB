@@ -46,8 +46,7 @@ Alert Logic has provided a Virtual Appliance - called a Partner Template - that 
 ### Postrequisite
 - If you want to access your Alert Logic Threat Manager over the internet, please perform the following tasks once your Alert Logic Threat Manager has been deployed to your account:
 
-1. Add a Public IP to your server
-![Add Public IP](https://t3n.zendesk.com/attachments/token/kObGC9P2IjP1ate0NexwFNiXz/?name=ip.jpg)
+1. [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control
 2. Allow incoming traffic for port 80 and 443 to access the Alert Logic Web Console
 
 ### Detailed Steps to Deploy Alert Logic Threat Manager Partner Template
