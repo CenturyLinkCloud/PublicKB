@@ -27,3 +27,13 @@ Reference the following key pages from the CenturyLink Cloud [Knowledge Base](ht
 * [Blueprint Package Manifest Builder Wizard](http://centurylinkcloud.github.io/Ecosystem/BlueprintManifestBuilder/) ([KB Instructions for use](../Blueprints/blueprint-package-manifest-builder-wizard.md))
 * [CenturyLink Cloud Ecosystem Github Repo](https://github.com/CenturyLinkCloud/Ecosystem/tree/master/Blueprints) containing reference patterns, support tools, and the actual packages used in some of our public Blueprints
 * [Blueprint Broker](https://github.com/CenturyLinkCloud/Ecosystem/blob/master/Blueprints/Blueprint%20Broker/README.md) is a cross-platform toolset that includes a discovery service, encrypted key-value store to maintain state, and a mailer tool enabling high-impact post-deployment communication
+
+
+### Blueprint QA Process Requirements
+
+Before a Blueprint can be publicly published it must pass a CenturyLink led QA process which includes testing for the following:
+
+* Naming adheres to the [Naming conventions for Public Packages and Blueprints](../Blueprints/creating-public-blueprint-packages.md) style guide.
+* Any new servers deployed as part of the Blueprint must be be fully patched before release.  Blueprint packages exist for Linux and Windows to support this.
+* Allocates public IP address only if public access is required.  Default access mechanism is via private IP.
+* QA analyst can deploy without errors
