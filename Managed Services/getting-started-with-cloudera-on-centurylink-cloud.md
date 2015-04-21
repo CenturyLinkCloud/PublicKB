@@ -3,7 +3,7 @@
   "date": "04-21-2015",
   "author": "Tim Baumgartner",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 <p>Cloudera Hadoop combines Apache Hadoop with a number of other open source projects to create a single, massively scalable system where you can unite storage with an array of powerful processing and analytic frameworks.</p>
