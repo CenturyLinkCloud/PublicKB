@@ -100,7 +100,7 @@ The GemFire Blueprint is designed to be successfully deployed on an existing ser
 
 9. **Pulse Web Tool** (optional)
 
-  If you elected start the initial locator and server then you will also have immediate acess to the Pulse web tool via http on port 7070.  Authenticate using the `admin`/`admin` credentials
+  If you elected start the initial locator and server then you will also have immediate access to the Pulse web tool via http on port 7070.  Authenticate using the `admin`/`admin` credentials
 
   <img src="../images/pivotal_gemfire/web_pulse.png" style="border:0;">
 
