@@ -13,55 +13,55 @@ This article will walkthrough the creation of a Failover Cluster in preperation 
 
 1. Create two identical servers using "Windows 2012 R2 Datacenter Edition". If additional paritions are to be added to the server (logs, DB storage, etc.) then the same drive letters and disk sizes must be identical across all machines participating in the cluster. In the "Create Server" wizard, ensure that your Active Directory Domain Controller(s) IP address is used for the DNS server(s).
 
-1. Login to the first node, and click "Add Roles and Features". Click next twice until you get to the features selection, and check the "Failover Clustering" feature. When prompted "Click" add and finish the install wizard. Perform this process on all other nodes.
+2. Login to the first node, and click "Add Roles and Features". Click next twice until you get to the features selection, and check the "Failover Clustering" feature. When prompted "Click" add and finish the install wizard. Perform this process on all other nodes.
 
-1. On the primary node, click the "Start" button and run "Failover Cluster Manager"
+3. On the primary node, click the "Start" button and run "Failover Cluster Manager"
 
-1. Under the "Actions" section, click "Create a new cluster"
+4. Under the "Actions" section, click "Create a new cluster"
 
     ![New Cluster](../images/configuring-failover-clustering-for-a-sql-alwayson-availability-group-01.PNG)
 
-1. Click "Next". Note that the account you are using should be an Admin account on all node, or preferrably a Domain Admin account.
+5. Click "Next". Note that the account you are using should be an Admin account on all node, or preferrably a Domain Admin account.
 
-1. Browse and add the desired nodes to the cluster. Click "Next"
+6. Browse and add the desired nodes to the cluster. Click "Next"
 
-1. You will be presented with a validation warning. Select "Yes" to run the validation tests.
+7. You will be presented with a validation warning. Select "Yes" to run the validation tests.
 
     ![Validation Tests](../images/configuring-failover-clustering-for-a-sql-alwayson-availability-group-02.PNG)
 
-1. The validation tests should pass with warnings. Some warnings are expected (such as a single NIC being a point of failure), but the report should be viewed to make certain there are no major errors.
+8. The validation tests should pass with warnings. Some warnings are expected (such as a single NIC being a point of failure), but the report should be viewed to make certain there are no major errors.
 
-1. Enter a name and IP address for the cluster. Email the NOC and ask them to reserve an IP address for the cluster. Click "Next"
+9. Enter a name and IP address for the cluster. Email the NOC and ask them to reserve an IP address for the cluster. Click "Next"
 
     ![Cluster Name](../images/configuring-failover-clustering-for-a-sql-alwayson-availability-group-03.PNG)
 
-1. On the confirmation page, uncheck the "Add all eligable storage to the cluster". Click "Next"
+10. On the confirmation page, uncheck the "Add all eligable storage to the cluster". Click "Next"
 
     ![Confirmation](../images/configuring-failover-clustering-for-a-sql-alwayson-availability-group-04.PNG)
 
-1. Click "Next" and wait for the cluster to be configured. It should be successful, but present a warning about a witness server.
+11. Click "Next" and wait for the cluster to be configured. It should be successful, but present a warning about a witness server.
 
     ![Witness Warning](../images/configuring-failover-clustering-for-a-sql-alwayson-availability-group-05.PNG)
 
-1. Click "Finish".
+12. Click "Finish".
 
-1. Create a share on the server designated to be the "File Share Witness" server. Add the appropriate read/write permissions, especially including the cluster AD object (ClusterName$).
+13. Create a share on the server designated to be the "File Share Witness" server. Add the appropriate read/write permissions, especially including the cluster AD object (ClusterName$).
 
-1. In "Failover Cluster Manager", right-click the cluster name, go to "More Actions" and select "Configure Cluster Quorum Settings"
+14. In "Failover Cluster Manager", right-click the cluster name, go to "More Actions" and select "Configure Cluster Quorum Settings"
 
-1. Choose "Select the Quorum Witness" and click "Next"
+15. Choose "Select the Quorum Witness" and click "Next"
 
     ![Select Witness](../images/configuring-failover-clustering-for-a-sql-alwayson-availability-group-06.PNG)
 
-1. Select "Configure a File Share Witness"
+16. Select "Configure a File Share Witness"
 
     ![FSW](../images/configuring-failover-clustering-for-a-sql-alwayson-availability-group-07.PNG)
 
-1. Browse to the previously created "File Share Witness" path.
+17. Browse to the previously created "File Share Witness" path.
 
     ![FSW Path](../images/configuring-failover-clustering-for-a-sql-alwayson-availability-group-08.PNG)
 
-1. Click "Next" through the confirmation and configuration. Click "Finish". Now, we viewing the cluster, we should see the health of all nodes (online) as well as the FSW:
+18. Click "Next" through the confirmation and configuration. Click "Finish". Now, we viewing the cluster, we should see the health of all nodes (online) as well as the FSW:
     ![FSW Health](../images/configuring-failover-clustering-for-a-sql-alwayson-availability-group-09.PNG)
 
-1. Now that the cluster has been created, we can proceed to configuring SQL
+19. Now that the cluster has been created, we can proceed to configuring SQL

@@ -14,7 +14,7 @@ It is common knowledge that the default SQL instance uses port 1433. However, wh
 
     ![Query](../images/determine-the-ports-used-by-a-sql-instance-01.png)
 
-1. The output should appear with the ports listed:
+2. The output should appear with the ports listed:
 
     ![Query Result](../images/determine-the-ports-used-by-a-sql-instance-02.png)
 
@@ -25,10 +25,10 @@ It is common knowledge that the default SQL instance uses port 1433. However, wh
 
 1. Open "SQL Configuration Manager"
 
-1. Expand "SQL Server Network Configurations" and select "Protocols for "INSTANCE NAME"
+2. Expand "SQL Server Network Configurations" and select "Protocols for "INSTANCE NAME"
 
 1. In the right pane, right-click on "TCP/IP" and select "Properties".
 
-1. Choose the "IP Addresses" tab, and the port will be shown at the bottom:
+3. Choose the "IP Addresses" tab, and the port will be shown at the bottom:
 
     ![SQL PORT](../images/determine-the-ports-used-by-a-sql-instance-03.png)
