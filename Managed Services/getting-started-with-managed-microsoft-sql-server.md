@@ -48,12 +48,15 @@ The Microsoft SQL Server (MS-SQL) database is a comprehensive and integrated dat
 
 ![review blueprint parameters](../images/getting-started-with-managed-microsoft-sql-server-04.png)
 
-5. Use the queue to monitor job progress.  An email notification will be sent to the initiator of the blueprint upon completion.
+5. An email notification will be sent to the initiator of the blueprint for both queuing and completion.
 
 ```
-The server now has the Managed MS SQL software installed and activated
+Your request "CLC Managed MS SQL" has been queued.
 ```
-![managed ms sql job queue](../images/getting-started-with-managed-microsoft-sql-server-05.png)
+
+```
+Your request "CLC Managed MS SQL" has successfully completed.
+```
 
 ### Frequently Asked Questions
 
