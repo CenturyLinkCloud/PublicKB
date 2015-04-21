@@ -7,17 +7,17 @@
   "contentIsHTML": false
 }}}
 
-# IMPORTANT NOTE
+### IMPORTANT NOTE
 
 AppFog v2, the upcoming CenturyLink Cloud integrated public Platform-as-a-Service (PaaS), is not available to all customers at this time. We are current in a Limited Beta program with specific customers. AppFog v2 will be available in Open Beta later in 2015.
 
 The current AppFog service at [http://www.appfog.com/](http://www.appfog.com/) is still available and will continue to be in service even after AppFog v2 is made generally available. Please feel free to sign up for the current AppFog service [here](https://console.appfog.com/signup).
 
-# Audience
+### Audience
 
 Currently, this article is to support customers in the Limited Beta program.
 
-# AppFog Overview
+### AppFog Overview
 
 AppFog is a public Platform-as-a-Service (PaaS) that makes deploying scalable, robust, high performing [cloud-ready applications](http://12factor.net) fast and easy for developers. AppFog enables developers to focus on writing great applications without having to worry about managing the underlying infrastructure. The result is increased agility and productivity, more efficient use of resources, and a simplified deployment and management experience.
 
@@ -25,7 +25,7 @@ AppFog is a public Platform-as-a-Service (PaaS) that makes deploying scalable, r
 
 AppFog supports the followng common application runtimes: Java, Node.js, PHP, Python, Go, Ruby, and Static Websites. Integrating with services such as databases, messaging middleware, load balancing, monitoring and more are easily provisioned through the AppFog Marketplace.
 
-# Enable AppFog in Control Portal
+### Enable AppFog in Control Portal
 
 *NOTE: The following steps will only work for customers with CenturyLink Control Portal accounts enabled for the Limited Beta program.*
 

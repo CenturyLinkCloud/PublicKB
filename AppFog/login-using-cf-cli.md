@@ -7,21 +7,21 @@
   "contentIsHTML": false
 }}}
 
-# IMPORTANT NOTE
+### IMPORTANT NOTE
 
 AppFog v2, the upcoming CenturyLink Cloud integrated public Platform-as-a-Service (PaaS), is not available to all customers at this time. We are current in a Limited Beta program with specific customers. AppFog v2 will be available in Open Beta later in 2015.
 
 The current AppFog service at [http://www.appfog.com/](http://www.appfog.com/) is still available and will continue to be in service even after AppFog v2 is made generally available. Please feel free to sign up for the current AppFog service [here](https://console.appfog.com/signup).
 
-# Audience
+### Audience
 
 Currently, this article is to support customers in the Limited Beta program.
 
-# Overview
+### Overview
 
 In this article we will install the [Cloud Foundry Command Line Interface (CLI)](https://github.com/cloudfoundry/cli/) so that we can login to AppFog from the command line. Currently, AppFog only supports deployment of applications and provisioning services via the command line. This article will focus on authenticating to AppFog using your CenturyLink Control Portal credentials. Other articles will go into detail on how to use other Cloud Foundry CLI commands to interact with AppFog capabilities.
 
-# Install Cloud Foundry CLI
+### Install Cloud Foundry CLI
 
 Download the appropriate binary distribution of the Cloud Foundry CLI from [here](https://github.com/cloudfoundry/cli/blob/master/README.md#downloads). Install the downloaded binary distribution of Cloud Foundry CLI. To verify Cloud Foundry CLI is installed run the following command from a terminal shell:
 
@@ -30,7 +30,7 @@ $ cf -v
 cf version 6.10.0-b78bf10-2015-02-11T22:25:45+00:00
 ```
 
-# Login to AppFog
+### Login to AppFog
 
 Now that we have the Cloud Foundry CLI installed, lets login to AppFog. Go to the AppFog overview page in the Control Portal by navigation using the “AppFog" link listed in the drop down navigation bar:
 

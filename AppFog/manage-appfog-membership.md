@@ -7,17 +7,17 @@
   "contentIsHTML": false
 }}}
 
-# IMPORTANT NOTE
+### IMPORTANT NOTE
 
 AppFog v2, the upcoming CenturyLink Cloud integrated public Platform-as-a-Service (PaaS), is not available to all customers at this time. We are current in a Limited Beta program with specific customers. AppFog v2 will be available in Open Beta later in 2015.
 
 The current AppFog service at [http://www.appfog.com/](http://www.appfog.com/) is still available and will continue to be in service even after AppFog v2 is made generally available. Please feel free to sign up for the current AppFog service [here](https://console.appfog.com/signup).
 
-# Audience
+### Audience
 
 Currently, this article is to support customers in the Limited Beta program.
 
-# Adding a Team Member
+### Adding a Team Member
 
 Many software development efforts involve a team or teams that need access to the deployment platform. To add team members to AppFog they must have existing user credentials created for them on the Control Portal account. Please go to [this article](../Accounts & Users/creating-users.md) for creating user credentials in your account.
 
@@ -32,7 +32,7 @@ To add a member to AppFog, you must have the AppFog Admin role level permissions
 1. Click "add member" button
 1. They should now be a member of your AppFog organization
 
-# Setting a Member's Role
+### Setting a Member's Role
 
 To update a user's AppFog role level permissions, follow these steps:
 
