@@ -22,11 +22,11 @@
 <p><strong>4.&nbsp;Select your Cloudera Version and Components.</strong>
 <br/>The User name and Password you set here will be your login for Cloudera Manager, Hue and, if installed, Navigator.
 </p>
-<p><img src="../images/Cloudera/Cloudera_Article_4.png" alt="CLC Select Cloudera Components" />
+<p><img src="../images/Cloudera/Cloudera_Article_4.PNG" alt="CLC Select Cloudera Components" />
 </p>
 <p><strong>5.&nbsp;Verify your configuration details.</strong>
 </p>
-<p><img src="../images/Cloudera/Cloudera_Article_5.png" alt="CLC Verify Cloudera Configuration" />
+<p><img src="../images/Cloudera/Cloudera_Article_5.PNG" alt="CLC Verify Cloudera Configuration" />
 </p>
 <p><strong>6.&nbsp;Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.</strong>
 </p>
@@ -56,7 +56,7 @@
  <li>Sentry</li>
  <li>Solr</li>
  <li>Spark</li>
-<ul/>
+</ul>
 </p>
 <p><strong>Q: How do I access Cloudera Manager, Hue or Navigator?</strong>
 </p>
