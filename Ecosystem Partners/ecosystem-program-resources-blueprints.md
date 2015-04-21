@@ -31,9 +31,22 @@ Reference the following key pages from the CenturyLink Cloud [Knowledge Base](ht
 
 ### Blueprint QA Process Requirements
 
-Before a Blueprint can be publicly published it must pass a CenturyLink led QA process which includes testing for the following:
+Before a Blueprint can be publicly published it must pass a CenturyLink led QA process which reviews functionality, compliance, and documentation:
 
-* Naming adheres to the [Naming conventions for Public Packages and Blueprints](../Blueprints/creating-public-blueprint-packages.md) style guide.
+##### Functionality
+
+* QA analyst can deploy without errors.
+
+
+##### Compliance
+
 * Any new servers deployed as part of the Blueprint must be be fully patched before release.  Blueprint packages exist for Linux and Windows to support this.
 * Allocates public IP address only if public access is required.  Default access mechanism is via private IP.
-* QA analyst can deploy without errors
+* Some integrations may require reviews from Security, Commercial Compliance, or other subject matter experts
+
+
+##### Documentation
+
+* Naming adheres to the [Naming conventions for Public Packages and Blueprints](../Blueprints/creating-public-blueprint-packages.md) style guide.
+* [Knowedgebase](https://www.centurylinkcloud.com/knowledge-base/) article content provides the information necessary to successfully deploy and get started with the solution.
+* Deployment user experience in line with customer expectations
