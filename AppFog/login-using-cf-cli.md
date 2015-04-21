@@ -34,15 +34,15 @@ cf version 6.10.0-b78bf10-2015-02-11T22:25:45+00:00
 
 Now that we have the Cloud Foundry CLI installed, lets login to AppFog. Go to the AppFog overview page in the Control Portal by navigation using the “AppFog" link listed in the drop down navigation bar:
 
-![AppFog in Dropdown Navigation](../images/appfogv2/appfog-in-dropdown-nav.png)
+![AppFog in Dropdown Navigation](../images/appfog-in-dropdown-nav.png)
 
 Or you may also navigate to AppFog via the icon on the left-side vertical navigation bar:
 
-![AppFog icon in Vertical Navigation](../images/appfogv2/appfog-icon-nav.png)
+![AppFog icon in Vertical Navigation](../images/appfog-icon-nav.png)
 
 Now navigate to the "US East" AppFog region from the left-side navigation tree:
 
-![AppFog Organization Overview in US East Region](../images/appfogv2/appfog-org-overview.png)
+![AppFog Organization Overview in US East Region](../images/appfog-org-overview.png)
 
 Copy the full `cf login` shell command from the "Overview" tab. The command should look similar to:
 
@@ -52,10 +52,10 @@ cf login -a https://api.useast.appfog.ctl.io -o C007 -u csterling_demo
 
 Now paste the `cf login` command into a terminal shell and run it. You should be prompted for your CenturyLink Cloud Control Portal password.
 
-![AppFog Login Prompt](../images/appfogv2/cf-cli-login-prompt.png)
+![AppFog Login Prompt](../images/cf-cli-login-prompt.png)
 
 Please type in your password and hit enter. After successfully authenticating with your credentials, you should be prompted for which AppFog Space to target for application deployments:
 
-![AppFog Space Target Prompt](../images/appfogv2/cf-cli-space-prompt.png)
+![AppFog Space Target Prompt](../images/cf-cli-space-prompt.png)
 
 Choose Space number 1 "Dev" as shown in the image above. You are now logged in and ready to learn more about AppFog capabilities.

@@ -21,7 +21,7 @@ Currently, this article is to support customers in the Limited Beta program.
 
 AppFog is a public Platform-as-a-Service (PaaS) that makes deploying scalable, robust, high performing [cloud-ready applications](http://12factor.net) fast and easy for developers. AppFog enables developers to focus on writing great applications without having to worry about managing the underlying infrastructure. The result is increased agility and productivity, more efficient use of resources, and a simplified deployment and management experience.
 
-![Work on code, not infrastructure](../images/appfogv2/appfog-vs-traditional.png)
+![Work on code, not infrastructure](../images/appfog-vs-traditional.png)
 
 AppFog supports the followng common application runtimes: Java, Node.js, PHP, Python, Go, Ruby, and Static Websites. Integrating with services such as databases, messaging middleware, load balancing, monitoring and more are easily provisioned through the AppFog Marketplace.
 
@@ -31,16 +31,16 @@ AppFog supports the followng common application runtimes: Java, Node.js, PHP, Py
 
 Go to https://control.ctl.io, login, and you should see “AppFog" listed in the drop down navigation bar:
 
-![AppFog in Dropdown Navigation](../images/appfogv2/appfog-in-dropdown-nav.png)
+![AppFog in Dropdown Navigation](../images/appfog-in-dropdown-nav.png)
 
 You may also navigate to AppFog via the icon on the left-side vertical navigation bar:
 
-![AppFog icon in Vertical Navigation](../images/appfogv2/appfog-icon-nav.png)
+![AppFog icon in Vertical Navigation](../images/appfog-icon-nav.png)
 
 Navigate to AppFog using either navigation approach and now it is time to create an AppFog Organization unless someone else has done so for your Control Portal account. You will know that an AppFog Organization has been created for your account if there is no “create org” button and instead it looks something like the following:
 
-![AppFog Overview](../images/appfogv2/appfog-overview.png)
+![AppFog Overview](../images/appfog-overview.png)
 
 If the AppFog Organization has not been created for your account, then click the "create org" button:
 
-![AppFog Create Organization](../images/appfogv2/appfog-create-org.png)
+![AppFog Create Organization](../images/appfog-create-org.png)
