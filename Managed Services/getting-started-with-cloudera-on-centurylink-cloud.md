@@ -10,27 +10,27 @@
 <p>Here’s how to create a managed Cloudera Hadoop environment in CenturyLink Cloud.</p>
 <p><strong>1.&nbsp;Search for “Cloudera” in the Blueprints library. Then, click the version and cluster configuration Blueprint that suits your needs.</strong>
 </p>
-<p><img src="../images/Cloudera/Cloudera_Article_1.PNG" alt="CLC Search Cloudera Blueprint" />
+<p><img src="../images/Cloudera/Cloudera_Article_1.png" alt="CLC Search Cloudera Blueprint" />
 </p>
 <p><strong>2. Click on the "Deploy Blueprint" button.</strong>
 </p>
-<p><img src="../images/Cloudera/Cloudera_Article_2.PNG" alt="CLC Deploy Cloudera Blueprint" /></p>
+<p><img src="../images/Cloudera/Cloudera_Article_2.png" alt="CLC Deploy Cloudera Blueprint" /></p>
 <p><strong>3.&nbsp;Fill out the appropriate details for the CLC Managed Cloudera Hadoop Blueprint.</strong>
 </p>
-<p><img src="../images/Cloudera/Cloudera_Article_3.PNG" alt="CLC Build Cloudera Servers" />
+<p><img src="../images/Cloudera/Cloudera_Article_3.png" alt="CLC Build Cloudera Servers" />
 </p>
 <p><strong>4.&nbsp;Select your Cloudera Version and Components.</strong>
 <br/>The User name and Password you set here will be your login for Cloudera Manager, Hue and, if installed, Navigator.
 </p>
-<p><img src="../images/Cloudera/Cloudera_Article_4.PNG" alt="CLC Select Cloudera Components" />
+<p><img src="../images/Cloudera/Cloudera_Article_4.png" alt="CLC Select Cloudera Components" />
 </p>
 <p><strong>5.&nbsp;Verify your configuration details.</strong>
 </p>
-<p><img src="../images/Cloudera/Cloudera_Article_5.PNG" alt="CLC Verify Cloudera Configuration" />
+<p><img src="../images/Cloudera/Cloudera_Article_5.png" alt="CLC Verify Cloudera Configuration" />
 </p>
 <p><strong>6.&nbsp;Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.</strong>
 </p>
-<p><img src="../images/Cloudera/Cloudera_Article_6.PNG" alt="CLC Cloudera Blueprint Executing" /></p>
+<p><img src="../images/Cloudera/Cloudera_Article_6.png" alt="CLC Cloudera Blueprint Executing" /></p>
 <p>You will receive emails as each server is being built and then you will receive an additional email stating that the entire Cloudera cluster build is complete. Please do not use the servers until you have received this final email.</p>
 <p><strong>NOTE:</strong>&nbsp;The server now has the Cloudera Hadoop software installed and activated - your instances will be unmanaged or managed, based on the Blueprint deployed.</p>
 <p><strong>FREQUENTLY ASKED QUESTIONS</strong>
