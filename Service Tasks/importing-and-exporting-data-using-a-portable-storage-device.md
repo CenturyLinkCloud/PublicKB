@@ -39,9 +39,11 @@
 </p>
 
 <ul>
-  <li>Create a Ticket through the Centurylink Cloud Ticketing system</li>
+  <li>Create a Ticket through the Centurylink Cloud Ticketing system.</li>
+  <li>Centurylink Cloud will respond with a shipment recieving number.</li>
   <ul>
     <li>Indicate the datacenter where the portable device will be sent</li>
+    <li>Centurylink Cloud will respond to the ticket with a datacenter shippment recieivng number. This number must be included on your shipment</li>
     <li>Indicate the ship date and expected arrival date of the device</li>
     <li>Provide the password for the encryption only via the ticket</li>
     <li>Provide the location address to send the device after the data copy is completed</li>
@@ -53,7 +55,7 @@
 <p><strong>Import Process</strong>
 </p>
 <ul>
-  <li>Ship or deliver portable device to the datacenter - include the support ticket number (created in the Request steps above) on/with the package.</li>
+  <li>Ship or deliver portable device to the datacenter - include the shipment recieving number (created in the Request steps above) on/with the package.</li>
   <li>Our team will receive the device, connect the device to our network and begin the process to copy the data</li>
   <li>Our team will update the ticket for this request as we progress with the work</li>
   <li>Once the data is copied and the request is completed, Centurylink Cloud will wipe the portable data drive and ship the device back to the address noted in the request, via the pre-paid return shipping method provided.</li>
@@ -65,11 +67,12 @@
 <ul>
   <li>Create a Ticket though the Centurylink Cloud Ticketing system</li>
   <ul>
+   <li>Centurylink Cloud will respond to the ticket with a datacenter shippment recieivng number. This number must be included on your shipment</li>
     <li>Indicate the datacenter where the portable device will be sent</li>
     <li>Indicate when the portable device will be sent</li>
     <li>Provide tracking information for the shipment</li>
   </ul>
-  <li>Ship or&nbsp;deliver&nbsp;the portable device to the datacenter</li>
+  <li>Ship or&nbsp;deliver&nbsp;the portable device to the datacenter- include the shipment recieving number (created in the Request steps above) on/with the package.</li>
   <li>Your device will be received by the datacenter team
     <br />
   </li>
@@ -95,8 +98,11 @@
     <li>Data must come from the country in which the datacenter is located</li>
     <li>We will not ship data out of the country of origin</li>
   </ul>
+  <li>Storage</li>
+  <ul>
+    <li>Portable media devices that don't have an pending import/export tasks will be returned after 2-3 business days</li>
+      </ul>
   <li>Backups</li>
   <ul>
     <li>CenturyLink Cloud is not responsible for the loss or damage of the device, please ensure that you have a back up of your data.</li>
-  </ul>
 </ul>
