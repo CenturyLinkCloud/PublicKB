@@ -1,7 +1,7 @@
 {{{
   "title": "Managed Operating System - Frequently Asked Questions",
-  "date": "4-7-2015",
-  "author": "Jared Ruckle",
+  "date": "4-22-2015",
+  "author": "Jacob Kenner",
   "attachments": [],
   "contentIsHTML": true
 }}}
@@ -48,7 +48,7 @@ After creating a managed VM, the VM will be 'Under Construction' while backgroun
 </p>
 <p>A: To access your managed VM, you will need your Local Account server name and password, unless you have created a Managed Active Directory Domain or are using a CenturyLink Shared Active Directory Domain.
   The Local Account user name is the full server name, and the password credential is available in your CenturyLink Cloud Control Portal using the “<em>click to authenticate</em>” link on the server overview page. <em>Please note that the user name and password for your Server is not the same user name and password for the Cloud Control Portal.</em></p>
-<p>Once you have obtained your password, you may access Windows environments using Remote Desktop and RHEL environments using SSH. For more detailed information about accessing your server for the first time, please see the articles for <a href="https://t3n.zendesk.com/entries/45603110-Managed-Windows-Server-Connecting-to-Your-Server-with-Remote-Desktop">Windows Server</a>  or <a href="https://t3n.zendesk.com/entries/45602910-Managed-Red-Hat-Connecting-to-Your-Server-with-SSH">RHEL</a>.<strong></strong>
+<p>Once you have obtained your password, you may access Windows environments using Remote Desktop and RHEL environments using SSH. For more detailed information about accessing your server for the first time, please see the articles for <a href="https://www.centurylinkcloud.com/knowledge-base/managed-services/managed-windows-server-connecting-to-your-server-with-remote-desktop/">Windows Server</a>  or <a href="https://www.centurylinkcloud.com/knowledge-base/managed-services/managed-red-hat-connecting-to-your-server-with-ssh/">RHEL</a>.<strong></strong>
 </p>
 <p><strong>Q: What should I do if I have trouble connecting via Remote Desktop?</strong>
 </p>
@@ -94,7 +94,7 @@ After creating a managed VM, the VM will be 'Under Construction' while backgroun
 
 <p><strong>Q: Can I join Managed Servers to my own domain?</strong>
 </p>
-<p>A: Yes, customers may elect to join a Managed Server to their own domain instead of the CenturyLink Shared Active Directory Domain.  In order to join Managed Servers to a <em>dedicated</em> customer domain a user must deploy <a href="http://www.centurylinkcloud.com/knowledge-base/managed-services/getting-started-with-managed-active-directory">Managed Active Directory</a> in the CenturyLink Cloud.
+<p>A: Yes, customers may elect to join a Managed Server to their own domain instead of the CenturyLink Shared Active Directory Domain.  In order to join Managed Servers to a <em>dedicated</em> customer domain a user must deploy <a href="https://www.centurylinkcloud.com/knowledge-base/managed-services/getting-started-with-managed-active-directory">Managed Active Directory</a> in the CenturyLink Cloud.
 </p>
 <p><strong>Q: Can <i>un-managed</i> Servers be converted to <i>Managed</i> (or vice versa)?</strong>
 </p>
