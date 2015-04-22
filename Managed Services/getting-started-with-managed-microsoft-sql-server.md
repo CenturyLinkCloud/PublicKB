@@ -34,29 +34,29 @@ The Microsoft SQL Server (MS-SQL) database is a comprehensive and integrated dat
 
 1. Search for **MS SQL** in the Blueprint library. Then, click on the **CLC Managed MS SQL** Blueprint.
 
-![managed MS SQL blueprint](../images/getting-started-with-managed-microsoft-sql-server-01.png)
+  ![managed MS SQL blueprint](../images/getting-started-with-managed-microsoft-sql-server-01.png)
 
 2. Click on the deploy blueprint button.
 
-![deploy ms sql blueprint](../images/getting-started-with-managed-microsoft-sql-server-02.png)
+  ![deploy ms sql blueprint](../images/getting-started-with-managed-microsoft-sql-server-02.png)
 
 3. Select the appropriate virtual machine, editions, location to install, features and licensing you wish to implement.
 
-![input blueprint parameters](../images/getting-started-with-managed-microsoft-sql-server-03.png)
+  ![input blueprint parameters](../images/getting-started-with-managed-microsoft-sql-server-03.png)
 
 4. Review the blueprint parameters and select deploy blueprint.  
 
-![review blueprint parameters](../images/getting-started-with-managed-microsoft-sql-server-04.png)
+  ![review blueprint parameters](../images/getting-started-with-managed-microsoft-sql-server-04.png)
 
 5. An email notification will be sent to the initiator of the blueprint for both queuing and completion.
 
-```
-Your request "CLC Managed MS SQL" has been queued.
-```
+  ```
+  Your request "CLC Managed MS SQL" has been queued.
+  ```
 
-```
-Your request "CLC Managed MS SQL" has successfully completed.
-```
+  ```
+  Your request "CLC Managed MS SQL" has successfully completed.
+  ```
 
 ### Frequently Asked Questions
 
@@ -76,6 +76,6 @@ A: Not at this time.
 
 A: SQL licenses costs are calculated separate from the managed SQL hourly costs based on the edition and number of CPUs on the virtual machine.
 
-**Q: Can **un-managed** Microsoft SQL Instances be converted to **Managed** (or vice versa)?**
+**Q: Can un-managed Microsoft SQL Instances be converted to Managed (or vice versa)?**
 
 A: This capability is not available at this time.
