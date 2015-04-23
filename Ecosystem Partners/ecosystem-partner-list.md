@@ -7,10 +7,21 @@
 }}}
 
 
+<!-- Categories coming soon - add as partners matching them come onboard.
+
+### Cloud Storage
+### Data Protection
+### Analytics
+### Data Management
+### Development Toolchain
+### Analytics
+
+-->
+
 
 Quickly deploy and successfully use software and technology from any of our certified partners.
 
-### Network and Network Security
+### Network Management
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
@@ -20,7 +31,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Cohesive Networks VNS3](../Ecosystem Partners/getting-started-with-cohesiveft-vns3-partner-template.md)   	| Template    | Network security appliance    |
 
 
-### Technology Stacks
+### Development Frameworks
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
@@ -39,7 +50,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Vormetric](../Ecosystem Partners/getting-started-with-vormetric-dsm.md)   	| Template    | Data encryption and key management    |
 
 
-### Monitoring
+### Management and Monitoring
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
@@ -48,14 +59,14 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Dynatrace](../Ecosystem Partners/getting-started-with-dynatrace-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
 
 
-### Operating System Tools
+### Development Toolchain
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [Chef Server](../Ecosystem Partners/getting-started-with-chef-server-blueprint.md)   	| Blueprint    | Configuration management    |
 
 
-### Database Services and Big Data
+### Data Management
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
@@ -66,11 +77,17 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [XtremeData dbX](../Ecosystem Partners/getting-started-with-xtremedata-dbx-blueprint.md)   	| Blueprint    | On-Demand Big Data Analytics with real-time ingest    |
 
 
-### Business Software
+### Business Services
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [Acumatica](../Ecosystem Partners/getting-started-with-acumatica-erp-blueprint.md)   	| Blueprint    | Accounting and ERP    |
+
+
+### Media and Content
+
+|Vendor Software  	|Integration    | Description   	|
+|:-	|:-	|
 | [Drupal](../Ecosystem Partners/getting-started-with-drupal-blueprint.md)   	| Blueprint    | Content management system (CMS)    |
 | [Joomla](../Ecosystem Partners/getting-started-with-joomla-blueprint.md)   	| Blueprint    | Content management system (CMS)    |
 | [Magento](../Ecosystem Partners/getting-started-with-magento-blueprint.md)   	| Blueprint    | Ecommerce Shopping cart    |
