@@ -1,6 +1,6 @@
 {{{
   "title": "Self-Service VM Import / OVF Requirements",
-  "date": "12-19-2014",
+  "date": "4-24-2014",
   "author": "Jared Ruckle",
   "attachments": [],
   "contentIsHTML": false
@@ -17,6 +17,7 @@ However, some OVFs may still require significant “prep” work, depending on t
 * Must be less than 1 TB in total size
 * Must not include a customized or specialized appliances
 * All disks should be SCSI (not IDE)
+* Only one SCSI controller is allowed
 * Must have a single NIC
 * Only a single image should be present; multiple images are not supported
 * The OVF file name must not include a "."
