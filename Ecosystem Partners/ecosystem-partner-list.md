@@ -71,7 +71,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [DataStax Cassandra](../Ecosystem Partners/getting-started-with-datastax-blueprint.md)   	| Blueprint    | Distributed NoSQL database    |
-| [MongoDB](../Ecosystem Partners/getting-started-with-mongodb-blueprint)   	| Blueprint    | High performance document oriented NoSQL database    |
+| [MongoDB](../Ecosystem Partners/getting-started-with-mongodb-blueprint.md)   	| Blueprint    | High performance document oriented NoSQL database    |
 | [Pivotal GemFire](../Ecosystem Partners/getting-started-with-pivotal-gemfire-blueprint.md)   	| Blueprint    | In-memory distributed database for high scale custom applications    |
 | [Pivotal Greenplum](../Ecosystem Partners/getting-started-with-pivotal-greenplum-blueprint.md)   	| Blueprint    | Enterprise-grade analytical data warehouse    |
 | [XtremeData dbX](../Ecosystem Partners/getting-started-with-xtremedata-dbx-blueprint.md)   	| Blueprint    | On-Demand Big Data Analytics with real-time ingest    |
@@ -99,6 +99,3 @@ Quickly deploy and successfully use software and technology from any of our cert
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [Mojang Minecraft Server](../Ecosystem Partners/getting-started-with-minecraft-server-blueprint.md)   	| Blueprint    | Private Minecraft gaming server    |
-
-
-
