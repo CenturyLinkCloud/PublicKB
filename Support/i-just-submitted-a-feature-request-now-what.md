@@ -15,3 +15,6 @@
 <p>4. The status of "accepted" items is not systematically available. This is due to the fluid, agile nature of our development cycle. Note that a backlog of accepted items is regularly reviewed and prioritized.</p>
 <p>5. Release notes with new capabilities are published after every development cycle.</p>
 
+<p>Read more on CenturyLink Cloud and UserVoice [here](../Support/uservoice-frequently-asked-questions.md).</p>
+
+
