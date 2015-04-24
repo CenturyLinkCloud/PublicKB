@@ -14,6 +14,7 @@ More details on this process is available [here](../Support/how-do-i-submit-a-fe
 ###So what happens once ideas are submitted?
 
 Here's the process.
+
 1. Each item is reviewed by a cross-section of stakeholders, lead by our product ownership team.
 2. The item is either rejected or accepted. A decision is either reached immediately, or is postponed to allow for "community" feedback based on a larger external audience.
 3. The decision - and subsequent discussion - are tracked on the original thread to close the loop (either via ticket or UserVoice item).
