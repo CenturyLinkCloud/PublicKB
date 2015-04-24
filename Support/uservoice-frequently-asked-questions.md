@@ -12,7 +12,7 @@ CenturyLink Cloud's UserVoice site is an interactive channel. Here, customers ca
 
 ### How do I get access?
 
-Submit a ticket to [noc@ctl.io](mailto:noc@ctl.io) requesting access to UserVoice. The login page is available [here](http://centurylinkcloud.uservoice.com/forums/207923-feature-suggestions).
+Submit a ticket to [features@ctl.io](mailto:features@ctl.io) requesting access to UserVoice. The login page is available [here](http://centurylinkcloud.uservoice.com/forums/207923-feature-suggestions).
 
 ### Can I encourage others from my company to sign-up for UserVoice?
 Yes, there is no specific limit on number of users per company.
