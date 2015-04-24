@@ -25,11 +25,11 @@ They are regularly reviewed and triaged by a cross-functional team at CenturyLin
 
 Status of ideas are regularly updated as the product roadmap progresses. “Supporters” of a specific feature are automatically emailed with an update once status has changed.
 
-However, specific items that are included in a given sprint are not explicitly tracked. Release Notes that summarize enhancements are posted online [here](.)
+However, specific items that are included in a given sprint are not explicitly tracked. Release Notes that summarize enhancements are posted online [here](../Release Notes/)
 
 ### How do I submit a feature request?
 
-Refer to [this KB](https://www.centurylinkcloud.com/knowledge-base/support/how-do-i-submit-a-feature-request/).
+Refer to [this KB](../Support/how-do-i-submit-a-feature-request.md).
 
 ### I just submitted a feature request. So now what?
-Refer to [this KB](http://www.centurylinkcloud.com/knowledge-base/support/i-just-submitted-a-feature-request-now-what/).
+Refer to [this KB](../Support/i-just-submitted-a-feature-request-now-what.md).
