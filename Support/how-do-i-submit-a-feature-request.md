@@ -39,6 +39,8 @@
   <li>Create new feature requests, or vote and comment on existing ones.</li>
   <li>Track the progress of features through the pipeline and see when they are released.</li>
 </ol>
+<p>Read more on CenturyLink Cloud and UserVoice [here](../Support/uservoice-frequently-asked-questions.md).</p>
+
 <p><strong>Detailed Steps (Control Portal)</strong>
 </p>
 <p>&nbsp;Click the question mark in the top, right corner Control Portal:</p>
