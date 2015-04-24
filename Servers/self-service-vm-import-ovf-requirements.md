@@ -1,6 +1,6 @@
 {{{
   "title": "Self-Service VM Import / OVF Requirements",
-  "date": "4-24-2014",
+  "date": "4-24-2015",
   "author": "Jared Ruckle",
   "attachments": [],
   "contentIsHTML": false
@@ -22,7 +22,7 @@ However, some OVFs may still require significant “prep” work, depending on t
 * Only a single image should be present; multiple images are not supported
 * The OVF file name must not include a "."
 * Ping should not be blocked on the firewall
-* The VMware (vmx) version must be 8 or lower
+* The VMware hardware version (vmx) must be 8 or lower
 * The latest version of VMware tools must be installed (you will get the error message that reads "the guest operations agent is out of date" if your version is not correct)
 * The OVF must be exported from VMware; other hypervisors are not supported
 
