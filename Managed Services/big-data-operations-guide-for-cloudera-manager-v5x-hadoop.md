@@ -4,7 +4,7 @@
   "author": "Tim Baumgartner",
   "attachments": [
     {
-      "url":"../attachments/CenturyLink_Cloudera_Manager_Guide_11032014.pdf",
+      "url":"https://www.centurylinkcloud.com/knowledge-base/attachments/CenturyLink_Cloudera_Manager_Guide_11032014.pdf/",
       "type":"pdf",
       "file_name":"CenturyLink_Cloudera_Manager_Guide_11032014.pdf"
     }
