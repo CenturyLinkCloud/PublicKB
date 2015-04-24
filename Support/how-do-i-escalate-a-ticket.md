@@ -31,7 +31,7 @@
 ### Steps
 
 1. **Please review the Ticket Prioritization Matrix so that you understand what priority your ticket should be.**
-2. **Email escalation@t3n.zendesk.com with the following information:**
+2. **Email escalation@ctl.io with the following information:**
 
   Subject: ESCALATION: Ticket - <your ticket number>
 
