@@ -21,7 +21,7 @@ Yes, there is no specific limit on number of users per company.
 
 They are regularly reviewed and triaged by a cross-functional team at CenturyLink Cloud. There is no specific SLA for a decision, however. In general, we do like to see the community’s reaction and response to new suggestions.
 
-### I’d like to know what’s in the current sprint, or what’s in a specific future sprints. Will UserVoice tell me that?
+### I’d like to know what’s in the current sprint, or what’s in a future sprint. Will UserVoice tell me that?
 
 Status of ideas are regularly updated as the product roadmap progresses. “Supporters” of a specific feature are automatically emailed with an update once status has changed.
 

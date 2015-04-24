@@ -29,12 +29,12 @@ To get an invite to UserVoice:
 
 Read more on CenturyLink Cloud and UserVoice Read more on CenturyLink Cloud and UserVoice [here](../Support/uservoice-frequently-asked-questions.md).
 
-### Feature Requests via the Control Portal
+### Feature requests via the Control Portal
 
-* Click the question mark in the top, right corner Control Portal
+* Click the question mark in the upper-right corner of the Control Portal
 * Click “Submit Feature Idea"
 * Fill in your feature idea here then click ‘submit idea’
 
-### Checking status of a request after I've submitted it?
+### Checking status of a request after submission
 
 Check out [this KB](../Support/i-just-submitted-a-feature-request-now-what.md) for more information.
