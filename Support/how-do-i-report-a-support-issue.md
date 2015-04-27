@@ -50,8 +50,8 @@
   </ol>
   <li>Open a ticket and use the one line description as the ticket subject / title</li>
   <ol>
-    <li>You can open a ticket by simply sending an email to noc@tier3.com</li>
-    <li>You can also open a ticket by going to&nbsp;<a href="http://help.tier3.com/home">http://help.tier3.com/home</a>&nbsp;and clicking the "Submit a request" button</li>
+    <li>You can open a ticket by simply sending an email to noc@ctl.io</li>
+    <li>You can also open a ticket by going to&nbsp;<a href="https://www.centurylinkcloud.com/knowledge-base/">https://www.centurylinkcloud.com/knowledge-base/</a>&nbsp;and clicking the "Submit a request" button at the top of the page</li>
   </ol>
   <li>Capture the data collected in point into the ticket</li>
 </ol>
