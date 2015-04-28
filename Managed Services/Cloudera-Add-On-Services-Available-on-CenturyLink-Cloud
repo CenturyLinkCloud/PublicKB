@@ -29,7 +29,7 @@
 <u>[More Information on Navigator](http://www.cloudera.com/content/cloudera/en/products-and-services/cloudera-enterprise/cloudera-navigator.html)</u>
 </p>
 <p><strong>Sentry</strong></p>
-<p>A key part of compliance-ready security is controlling access to data. Apache Sentry (incubating) is a unified authorization mechanism so you can store sensitive data in Hadoop. Sentry is a fully integrated component of CDH and provides fine-grained authorization and role-based access control all through a single system. Sentry currently integrates with the open source SQL query frameworks, Apache Hive and Cloudera Impala, and the open source search engine, Cloudera Search, and can also extend to other computing engines within the Hadoop ecosystem. Sentry is a crucial part of compliance-ready security
+<p>A key part of compliance-ready security is controlling access to data. Apache Sentry (incubating) is a unified authorization mechanism so you can store sensitive data in Hadoop. Sentry is a fully integrated component of CDH and provides fine-grained authorization and role-based access control all through a single system. Sentry currently integrates with the open source SQL query frameworks, Apache Hive and Cloudera Impala, and the open source search engine, Cloudera Search, and can also extend to other computing engines within the Hadoop ecosystem. Sentry is a crucial part of compliance-ready security.
 <br>
 <u>[More Information on Sentry](http://www.cloudera.com/content/cloudera/en/products-and-services/cdh/sentry.html)</u>
 </p>
