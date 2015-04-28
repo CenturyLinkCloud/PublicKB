@@ -1,6 +1,6 @@
 {{{
   "title": "Ecosystem Partner List",
-  "date": "12-31-2016",
+  "date": "04-27-2016",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -40,7 +40,9 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Node.js](../Ecosystem Partners/getting-started-with-nodejs-blueprint.md)   	| Blueprint    | Node.js Javascript runtime    |
 | [LAMP](../Ecosystem Partners/getting-started-with-lamp-stack-blueprint.md)   	| Blueprint    | Linux, Apache, MariaDB/MySQL, and PHP/Perl/Python runtime    |
 | [Red Hat JBoss](../Ecosystem Partners/getting-started-with-jboss-blueprint.md)   	| Blueprint    | Java application server    |
-
+| [Apache HTTP Server](../Managed Services/getting-started-with-managed-apache.md)   	| Blueprint (Managed)   | Multi-purpose web server    |
+| [Microsoft Internet Information Services (IIS)](../Managed Services/getting-started-with-managed-microsoft-iis.md)   	| Blueprint (Managed)   | Web application server    |
+| [Apache Tomcat Server](../Managed Services/getting-started-with-managed-tomcat.md)   	| Blueprint (Managed)   | Web application server    |
 
 ### Security
 
@@ -75,14 +77,18 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Pivotal GemFire](../Ecosystem Partners/getting-started-with-pivotal-gemfire-blueprint.md)   	| Blueprint    | In-memory distributed database for high scale custom applications    |
 | [Pivotal Greenplum](../Ecosystem Partners/getting-started-with-pivotal-greenplum-blueprint.md)   	| Blueprint    | Enterprise-grade analytical data warehouse    |
 | [XtremeData dbX](../Ecosystem Partners/getting-started-with-xtremedata-dbx-blueprint.md)   	| Blueprint    | On-Demand Big Data Analytics with real-time ingest    |
-
+| [Microsoft SQL Server](../Managed Services/getting-started-with-managed-microsoft-sql-server.md)   	| Blueprint (Managed)   | Enterprise-grade relational database management system   |
+| [MySQL](../Managed Services/getting-started-with-managed-mysql.md)   	| Blueprint (Managed)   | Broadly adopted open source relational database management system   |
+| [CloudEra](../Managed Services/getting-started-with-cloudera-on-centurylink-cloud.md)   	| Blueprint (Managed)   | Industry-leading Hadoop implementation    |
 
 ### Business Services
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [Acumatica](../Ecosystem Partners/getting-started-with-acumatica-erp-blueprint.md)   	| Blueprint    | Accounting and ERP    |
-
+| [Microsoft Active Directory ](..Managed Services/getting-started-with-managed-active-directory.md)  	| Blueprint (Managed)   | Directory Service     |
+| [Red Hat Enterprise Linux](..Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
+| [Microsoft Windows Server ](..Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
 
 ### Media and Content
 
