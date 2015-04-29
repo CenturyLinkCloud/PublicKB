@@ -1,6 +1,6 @@
 {{{
-  "title": "Support Esacalation Process for Partners",
-  "date": "2-11-2015",
+  "title": "Support Escalation Process for Partners",
+  "date": "4-29-2015",
   "author": "",
   "attachments": [],
   "contentIsHTML": false
@@ -11,7 +11,7 @@
 
 To explain:
 * Learn About CenturyLink CLoud Support
-* How Partner supports their customer- Expectation
+* How Partners support their customer- Expectation
 * How Partners submits and tracks tickets
 * Product resources
 
@@ -25,12 +25,6 @@ To explain:
 
 * Partner Support Team
 
-### What's Included
-
-* CenturyLink Cloud Support Overview
-* Partner Support Overview
-* How to Escalate to CenturyLink
-* Product Resources
 
 ### Partner Action Items
 
@@ -46,7 +40,7 @@ To explain:
 
 CenturyLink Cloud’s comprehensive, secure, and global cloud platform is built for business &mdash; and we back it with business-class support options. Our reseller partner’s choose from the two different Support Tiers: **Professional** or **Enterprise**.
 
-###Support Boundry
+###Support Boundary
 
 The partner provides Tier 1 (need a definition of Tier 1 support) support to customers for all Cloud products that it resells. The following conditions apply to partner support services: 
 * The partner will include Tier 1 support contact information in all web sites and materials that describe support distributed to customers.
@@ -82,7 +76,7 @@ Our support ticketing system, ZenDesk is where you can track all the updates to 
 1. Log into https://t3n.zendesk.com
 2. Click on “Sign up” on the upper right hand side of the page and fill the form shown below. Please enter the email address you created for the support team. 
 **NOTE: CenturyLink will only recognize the email address associated with ZenDesk. Any support request from another email address will not be converted into a ticket. So please use the same email address for escalation.**
-3. After you Sign up, you will receive a welcome email from noc@tier3.com for verification. Click on the verification link and choose your password. Your account will be active right away. 
+3. After you Sign up, you will receive a welcome email from noc@ctl.io for verification. Click on the verification link and choose your password. Your account will be active right away. 
 
 
 ###Information for Submitting the Ticket
@@ -95,7 +89,7 @@ Partners need to make sure they email the right email alias based on the urgency
 *	Root/Admin Password if CenturyLink Cloud (still referred as Tier3 account) to Login
 *	PIN (It is under Profile setting - details in section below)
 *	Server Name
-*	Your control.tier3.com Username and Pin Number
+*	Your control.ctl.io Username and Pin Number
 *	Copy of the Error(s)
 *	Brief description of the problem
 *	Troubleshooting steps we have taken to verify/solve the problem
@@ -158,149 +152,17 @@ The following table describes list of operational support activities and request
   </tbody>
 </table>
 
-###Professional Support Priority Matrix
+###Ticket Prioritization Matrix
 
-Based on the priority the tickets can be sent to the following emails:
+Tickets are worked according to priority in the order in which they are received. The priority designation indicates the level, extent, and impact on the partner.
 
-<table>
-  <thead>
-    <tr>
-      <th>Priority</th>
-      <th>Description</th>
-      <th>First Response</th>
-      <th>Communication</th>
-      <th>Email to Create Ticket</th>
-      <th>Target Restoration SLA Time</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Low</td>
-      <td>Default Priority for tickets. Any new service request.</td>
-      <td>8 hours</td>
-      <td>Ticket entry updated every 2 days</td>
-      <td>noc@tier3.com</td>
-      <td>8 business days</td>
-    </tr>
-    <tr>
-      <td>Normal</td>
-      <td>Any new service request that is time sensitive </td>
-      <td>1 hour</td>
-      <td>Ticket entry updated daily</td>
-      <td>normal@tier3.com</td>
-      <td>5 buiness days</td>
-    </tr>
-    <tr>
-      <td>High</td>
-      <td>
-        * Any non-critical element of the service is unavailable
-        * Less than 50% of the servers hosted on the CenturyLink Cloud platform are down
-        * Components or elements of CenturyLink Cloud supported Managed Services down
-        * Significant performance degradation
-        * Security Incident
-      </td>
-      <td>30 minutes</td>
-      <td>
-        * Updates to all impacted customers and company-all hourly
-        * Status page updated
-        * CenturyLink Cloud - Dedicated Internal Whiteboard
-        * Ticket Entry
-      </td>
-      <td>high@tier3.com</td>
-      <td>8 hours</td>
-    </tr>
-    <tr>
-      <td>Urgent</td>
-      <td>
-        * Any critical element of the CenturyLink Cloud Platform service is unavailable
-        * All or a major portion of servers hosted on the CenturyLink Cloud platform are down
-        * All or a major portion of CenturyLink Cloud supported Managed Services down
-        * Security Breach
-      </td>
-      <td>15 minutes</td>
-      <td>
-        * Updates to all impacted customers and company-all every 30 minutes
-        * Status page updated
-        * CenturyLink Cloud - Dedicated Internal Whiteboard
-        * Customer facing & CenturyLink Cloud - Ticket Entry
-        * Cloud-pulse whiteboard updates
-      </td>
-      <td>urgent@tier3.com</td>
-      <td>4 hours</td>
-    </tr>
-  </tbody>
-</table>
-
-###Enterprise Support Priority Matrix
-
-<table>
-  <thead>
-    <tr>
-      <th>Priority</th>
-      <th>Description</th>
-      <th>First Response</th>
-      <th>Communication</th>
-      <th>Email to Create Ticket</th>
-      <th>Target Restoration SLA Time</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Low</td>
-      <td>Default Priority for tickets. Any new service request.</td>
-      <td>30  minutes</td>
-      <td>Ticket entry updated daily</td>
-      <td>[customerspecific]@t3n.zendesk.com</td>
-      <td>1 business day</td>
-    </tr>
-    <tr>
-      <td>Normal</td>
-      <td>Any new service request that is time sensitive </td>
-      <td>30  minutes</td>
-      <td>Ticket entry updated daily</td>
-      <td>[customerspecific]@t3n.zendesk.com</td>
-      <td>1 business day</td>
-    </tr>
-  </tbody>
-</table>
-
-Custom email account can be created for enterprise support. Please check with your onboarding manager for more information. 
-
-*	24x7
-*	Fully Automated
-*	Tickets automatically escalated according to priority
-*	On-call rotation
-
+[Learn More About Ticket Prioritization](https://www.centurylinkcloud.com/knowledge-base/support/ticket-prioritization-matrix/)
 
 ###Service Tasks
 
 Our team of network engineers has deep operational expertise to quickly and efficiently perform common platform activities. Just give us the details on your request – and within one business day, we'll reply with an estimate, along with a projected completion date for the task. Service task estimation and duties are performed during business hours, 9am-5pm Pacific Time.
 
-[Learn More About Service Tasks](http://www.centurylinkcloud.com/products/support/service-tasks)
-
-<table>
-  <thead>
-    <tr>
-      <th>Priority</th>
-      <th>Description</th>
-      <th>First Response</th>
-      <th>Communication</th>
-      <th>Email to Create Ticket</th>
-      <th>Availability</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Normal</td>
-      <td>Any new service task request</td>
-      <td> 24 hours after request</td>
-      <td>Ticket entry updated daily</td>
-      <td>[servicetasks@t3n.zendesk.com](mailto:servicetasks@t3n.zendesk.com)</td>
-      <td>Completed Monday through Friday during business hours, 9am-5pm Pacific Time</td>
-    </tr>
-  </tbody>
-</table>
-
+[Learn More About Service Tasks](https://www.centurylinkcloud.com/knowledge-base/service-tasks/#1)
 
 ###Support Team/Roles at CenturyLink Cloud
 
@@ -371,7 +233,13 @@ These steps sit inside the “Restoration Process” within the overall Incident
   </tbody>
 </table>
 
-	 
+###How to get access to CenturyLink Cloud Status updates?
+You can get updates through CenturyLink Cloud Status in two ways:
+1: Go to http://status.ctl.io/ at any time to see an overview of the present health of the cloud and information regarding scheduled maintenance. In the event of an outage, users can get real-time status updates here too.
+2: Users will be automatically enrolled in an email notification program. You will receive an email alerting you of your enrollment. Information about planned maintenance and outages will be sent out to the email addresses provided by users when they provision an account on the CenturyLink Cloud platform.
+
+[Learn More About CenturyLink Cloud Status](http://www.centurylinkcloud.com/knowledge-base/general/centurylink-cloud-status-faq/)
+
 ###Century Link Product Overview
 The best practice for reducing escalation is by understanding the CenturyLink product and features very well. 
 Where to learn more about CenturyLink:
