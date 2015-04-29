@@ -11,7 +11,7 @@ Editing your user profile is a straightforward process. Click the Profile icon i
 
 Once you're in the User Profile window, changing any of a user's profile settings is easy; simply select the field you wish to change. When selected, the field will turn light blue, and the field's data becomes editable. Update the data accordingly, and select the green "save" button once you are satisfied.
 
-User name, password, PIN, email address, and first and last name are required fields. Additional information can be provided optionally like title and phone numbers. Customers who have integrated CenturyLink Cloud with an authentication solution using Security Assertion Markup Language (SAML) may update their SAML username through their User Profile as well. More information about using SAML for single sign-on or multi-factor authentication can be found [here](../using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal) and [here](../using-saml-for-multi-factor-authentication-to-centurylink-control-portal).  
+User name, password, PIN, email address, and first and last name are required fields. Additional information can be provided optionally like title and phone numbers. Customers who have integrated CenturyLink Cloud with an authentication solution using Security Assertion Markup Language (SAML) may update their SAML username through their User Profile as well. Find out more information about using SAML for [single sign-on](../Control Portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md) or [multi-factor authentication](../Control Portal/using-saml-for-multi-factor-authentication-to-centurylink-control-portal.md).  
 
 ##Important Notes##
 
