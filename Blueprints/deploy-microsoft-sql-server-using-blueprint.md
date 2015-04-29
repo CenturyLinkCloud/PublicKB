@@ -31,9 +31,9 @@ CenturyLink Cloud customers can procure and deploy Microsoft SQL Server licensin
     * SQL Server 2014 Standard Edition
     * SQL Server 2014 Enterprise Edition
 * Validate the Hardware and Software Requirements for Installing SQL Server are met:
-    * [SQL Server 2008 R2](//msdn.microsoft.com/en-us/library/ms143506(v=sql.105).aspx)
-    * [SQL Server 2012](//msdn.microsoft.com/en-us/library/ms143506(v=sql.110).aspx)
-    * [SQL Server 2014](//msdn.microsoft.com/en-us/library/ms143506(v=sql.120).aspx)
+    * [SQL Server 2008 R2](//msdn.microsoft.com/en-us/library/ms143506%28v=sql.105%29.aspx)
+    * [SQL Server 2012](//msdn.microsoft.com/en-us/library/ms143506%28v=sql.110%29.aspx)
+    * [SQL Server 2014](//msdn.microsoft.com/en-us/library/ms143506%28v=sql.120%29.aspx)
 
 ### Exceptions
 
