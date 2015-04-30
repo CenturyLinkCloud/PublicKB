@@ -156,13 +156,13 @@ The following table describes list of operational support activities and request
 
 Tickets are worked according to priority in the order in which they are received. The priority designation indicates the level, extent, and impact on the partner.
 
-[Learn More About Ticket Prioritization](.../support/ticket-prioritization-matrix/)
+[Learn More About Ticket Prioritization](.../Support/ticket-prioritization-matrix.md)
 
 ###Service Tasks
 
 Our team of network engineers has deep operational expertise to quickly and efficiently perform common platform activities. Just give us the details on your request – and within one business day, we'll reply with an estimate, along with a projected completion date for the task. Service task estimation and duties are performed during business hours, 9am-5pm Pacific Time.
 
-[Learn More About Service Tasks](.../service-tasks/#1)
+[Learn More About Service Tasks](../Service-Tasks)
 
 ###Support Team/Roles at CenturyLink Cloud
 
@@ -238,7 +238,7 @@ You can get updates through CenturyLink Cloud Status in two ways:
 1: Go to http://status.ctl.io/ at any time to see an overview of the present health of the cloud and information regarding scheduled maintenance. In the event of an outage, users can get real-time status updates here too.
 2: Users will be automatically enrolled in an email notification program. You will receive an email alerting you of your enrollment. Information about planned maintenance and outages will be sent out to the email addresses provided by users when they provision an account on the CenturyLink Cloud platform.
 
-[Learn More About CenturyLink Cloud Status](.../general/centurylink-cloud-status-faq/)
+[Learn More About CenturyLink Cloud Status](../General/centurylink-cloud-status-faq.md)
 
 ###Century Link Product Overview
 The best practice for reducing escalation is by understanding the CenturyLink product and features very well. 
