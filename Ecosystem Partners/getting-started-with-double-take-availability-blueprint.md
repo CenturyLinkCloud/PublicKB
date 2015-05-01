@@ -6,8 +6,6 @@
 "contentIsHTML": false
 }}}
 
-
-**************PLEASE PROVIDE A LOGO OR UPDATE THE LINK TO ONE**************
 ![Vision Solutions logo](http://download.doubletake.com/_download/Documentation/VisionSolutionsOnline.gif)
 
 ###Partner Profile
