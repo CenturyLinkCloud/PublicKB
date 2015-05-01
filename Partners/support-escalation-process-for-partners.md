@@ -7,20 +7,6 @@
 }}}
 
 
-### Purpose
-
-To explain:
-* Learn About CenturyLink CLoud Support
-* How Partners support their customer- Expectation
-* How Partners submits and tracks tickets
-* Product resources
-
-### Benefits
-
-* Have a good understanding of CenturyLink Support
-* Effectively support Customers
-* Help Plan and Build Partner Support Team based on the criteria mentioned in the document
-
 ### Audience
 
 * Partner Support Team
@@ -42,22 +28,22 @@ CenturyLink Cloud’s comprehensive, secure, and global cloud platform is built 
 
 ###Support Boundary
 
-The partner provides Tier 1 (need a definition of Tier 1 support) support to customers for all Cloud products that it resells. The following conditions apply to partner support services: 
-* The partner will include Tier 1 support contact information in all web sites and materials that describe support distributed to customers.
+The partner provides Level 1 support to customers for all Cloud products that it resells. The following conditions apply to partner support services: 
+* The partner will include Level 1 support contact information in all web sites and materials that describe support distributed to customers.
 * The partner cannot list CenturyLink Cloud support contact information for end customers.
 
-####Definition of Tier 1 Support
+####Definition of Level 1 Support
 
-This is the initial support level responsible for basic customer issues. It is synonymous with first-line support, level 1 support, front-end support, support line 1, and various other headings denoting basic level technical support functions. The first job of a Tier I specialist is to gather the customer’s information and to determine the customer’s issue by analyzing the symptoms and figuring out the underlying problem. When analyzing the symptoms, it is important for the technician to identify what the customer is trying to accomplish so that time is not wasted on "attempting to solve a symptom instead of a problem."
+This is the initial support level responsible for basic customer issues. It is synonymous with first-line support, Tier 1 support, front-end support, support line 1, and various other headings denoting basic level technical support functions. The first job of a Level 1 specialist is to gather the customer’s information and to determine the customer’s issue by analyzing the symptoms and figuring out the underlying problem. When analyzing the symptoms, it is important for the technician to identify what the customer is trying to accomplish so that time is not wasted on "attempting to solve a symptom instead of a problem."
 
 This level should gather as much information as possible from the end user. The information could be computer system name, screen name or report name, error or warning message displayed on the screen, any logs files, screen shots, any data used by the end user or any sequence of steps used by the end user, etc. This information needs to be recorded into the issue tracking or issue logging system. This information is useful to analyze the symptoms to define the problem or issue.
 
 Once identification of the underlying problem is established, the specialist can begin sorting through the possible solutions available. Technical support specialists in this group typically handle straightforward and simple problems while "possibly using some kind of knowledge management tool." This includes troubleshooting methods such as verifying the issues, resolving username and password problems, making necessary update to the portal, verification of proper portal set up, and assistance with navigating around application menus. Personnel at this level have a basic to general understanding of the product or service and may not always contain the competency required for solving complex issues. Nevertheless, the goal for this group is to handle 70%-80% of the user problems before finding it necessary to escalate the issue to a higher level.
 
-CenturyLink Cloud will provide Tier 2 &3 support to partner under the following conditions:
+CenturyLink Cloud will provide higher level support to partner under the following conditions:
  
-*	Tier 2 & 3 support is provided in English only. 
-*	CenturyLink Cloud support team will escalate based on the severity of the issue, the support level and based on the Prioritization Matrix. 
+*	CenturyLink Cloud support is provided in English only. 
+*	CenturyLink Cloud support team will work on the tickets based on the severity of the issue and the support level. 
 
 ###Ticket Submission Process
 
@@ -81,7 +67,7 @@ Our support ticketing system, ZenDesk is where you can track all the updates to 
 
 ###Information for Submitting the Ticket
 
-Partners need to make sure they email the right email alias based on the urgency of the issue. You can use the ZenDesk for submitting tickets, the default priority for those tickets will be low. We recommend emailing. The following information needs to be provided while submitting a ticket:
+Partners need to make sure they email the right email alias based on the urgency of the issue. You can use the ZenDesk for submitting tickets, the default priority for those tickets will be normal. We recommend emailing. The following information needs to be provided while submitting a ticket:
 
 *	Partner Ticket Number (if tracked under a different number on your end)
 *	Customer Name and Alias
@@ -101,7 +87,7 @@ Partners need to make sure they email the right email alias based on the urgency
 
 ###SLA for Support
 
-Tickets are assigned a priority and worked in order of its severity level. This may be grammatically correct, but a bit confusing for us public school guys. The priority designation indicates the level, extent and impact on the customer. Once assigned, the priority level is used to determine the resources allocated for resolving the ticket, timelines for resolution and escalation matrix. Customers may assign the priority to tickets they create. Each incoming ticket is triaged and the priority will be assigned according to the criteria defined below.
+The priority designation indicates the level, extent and impact on the customer. Once assigned, the priority level is used to determine the resources allocated for resolving the ticket, timelines for resolution and escalation matrix. Customers may assign the priority to tickets they create. Each incoming ticket is triaged and the priority will be assigned according to the criteria defined below.
 
 
 ###Support and Service Management
