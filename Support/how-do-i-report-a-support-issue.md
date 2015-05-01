@@ -42,7 +42,7 @@ Pre-Requisites
 1. Open a ticket and use the one line description as the ticket subject / title
   * You can open a ticket by simply sending an email to [noc@ctl.io](mailto:noc@ctl.io)
   * You can also open a ticket by going to [https://www.centurylinkcloud.com/knowledge-base](https://www.centurylinkcloud.com/knowledge-base/) and clicking the "Submit a request" button at the top of the page
-1. Capture the data collected in point into the ticket
+1. Capture the data collected and add it to the body of the ticket
 
 ### FAQ
 
