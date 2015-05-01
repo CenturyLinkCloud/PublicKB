@@ -50,7 +50,7 @@ After executing the steps in this Getting Started document, the users will have 
 ### Postrequisite
 - If you want to access your VM with Double-Take over the internet, please perform the following tasks once you receive an email confirming you Blueprint completed successfully:
 
-1. If you need to connect to your server via the Internet, [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal. Alternatively, you can setup a VPN using OpenVPN or similar technology.
+1. If you need to connect to your server via the Internet, Add a [Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../Network/how-to-configure-client-vpn.md) or similar technology.
 
 2. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal.  Add the required Double-Take ports as documented in the [Users' Guide](http://download.doubletake.com/_download/Documentation/DocumentationLibrary.htm) for the respective platform.
 
