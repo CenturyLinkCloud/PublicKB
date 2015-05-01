@@ -22,7 +22,7 @@ Currently, this article is to support customers in the Limited Beta program.
 We currently support applications using the following application runtimes in AppFog by default:
 
 * Java
-* Node.js
+* [Node.js](deploy-nodejs-application.md)
 * Ruby
 * PHP
 * Python
