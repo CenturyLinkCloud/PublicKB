@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with AbanteCart - Blueprint",
-  "date": "05-01-2015",
+  "date": "05-02-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
