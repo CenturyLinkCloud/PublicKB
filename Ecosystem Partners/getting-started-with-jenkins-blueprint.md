@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Jenkins - Blueprint",
-  "date": "05-01-2015",
+  "date": "05-02-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -26,7 +26,7 @@ CenturyLink Cloud Users
 
 ### Deploying Jenkins on a New Server
 
-Jenkins is available as a <a href="">Blueprint</a> for deployment on a **new server**.
+Jenkins is available as a Blueprint for deployment on a **new server**.
 
 #### Steps
 
@@ -119,7 +119,7 @@ Jenkins is available as a <a href="">Blueprint</a> for deployment on a **new ser
 
 ### Deploying Jenkins on an existing server (alternate option)
 
-Jenkins is available as a <a href="">Blueprint Package</a> for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized <a href="">Blueprint Workflows</a> to repeatably deploy multiple stacks on the same machines
+Jenkins is available as a Blueprint Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on the same machines
 
 #### Steps
 
