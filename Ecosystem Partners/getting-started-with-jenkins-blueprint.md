@@ -42,10 +42,10 @@ Jenkins is available as a Blueprint for deployment on a **new server**.
   Set the following parameters in addition to those associated with your server itself (password, network, group, etc.:
 
   * **Service Password** - Provide service password 6 chars or more 
-  * **Tomcat server shutdown port** - Tomcat Shutdown Port Tomcat Shutdown Port
-  * **Apache server SSL port** 
+  * **Tomcat server shutdown port** - Tomcat Shutdown Port 8005
+  * **Apache server SSL port** 443
   * **Username** - Service Username 
-  * **Apache server port** 
+  * **Apache server port** 80
   * **User's name** - Users Name 
 
 5. **Review and Confirm the Blueprint**
@@ -98,10 +98,10 @@ Jenkins is available as a Blueprint Package for deployment on an existing server
   Set the following parameters:
 
   * **Service Password** - Provide service password 6 chars or more 
-  * **Tomcat server shutdown port** - Tomcat Shutdown Port Tomcat Shutdown Port
-  * **Apache server SSL port** 
+  * **Tomcat server shutdown port** - Tomcat Shutdown Port 8005
+  * **Apache server SSL port** 443
   * **Username** - Service Username 
-  * **Apache server port** 
+  * **Apache server port** 80
   * **User's name** - Users Name 
 
 4. **Deploy the Blueprint**
