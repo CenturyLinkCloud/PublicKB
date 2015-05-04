@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Jenkins - Blueprint",
-  "date": "05-01-2015",
+  "date": "05-04-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -26,7 +26,7 @@ CenturyLink Cloud Users
 
 ### Deploying Jenkins on a New Server
 
-Jenkins is available as a <a href="">Blueprint</a> for deployment on a **new server**.
+Jenkins is available as a Blueprint for deployment on a **new server**.
 
 #### Steps
 
@@ -35,63 +35,18 @@ Jenkins is available as a <a href="">Blueprint</a> for deployment on a **new ser
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for **Jenkins on linux_TITLE** in the keyword search on the right side of the page.
 
-  <!-- TODO - fake tile screenshot -->
-
 2. **Click the Deploy Blueprint button.**
 
 3. **Set Required parameters.**
 
   Set the following parameters in addition to those associated with your server itself (password, network, group, etc.:
 
-  <!-- TODO - replace with legacy blueprint UI html instead -->
-
-  <div style="margin:1em;color: #838383; background: #f2f2f2; margin:1em; padding: 1em; border:2px solid #e5e5e5;width:500px;">
-      <div style="padding: 1em;">
-    <label style="font-family: 'Open Sans', Helvetica, Arial, Sans-Serif; font-size:14px; margin: 7px 20px 7px 0; padding-top:7px;color:#333333; text-decoration:underline; text-transform:lowercase; float:left; width:160px;text-align:right;">Apache server SSL port</label>
-    <div style="float:left;margin-left:10px;">
-      <input style="padding:4px 6px;width:250px;height:34px;" type="text" value="443" disabled="disabled">
-      <div style="margin-top:10px; color:#999; font-size:13px; line-height:15px;"></div>
-    </div>
-    <br style="clear:both;">
-  </div>
-
-  <div style="padding: 1em;">
-    <label style="font-family: 'Open Sans', Helvetica, Arial, Sans-Serif; font-size:14px; margin: 7px 20px 7px 0; padding-top:7px;color:#333333; text-decoration:underline; text-transform:lowercase; float:left; width:160px;text-align:right;">Username</label>
-    <div style="float:left;margin-left:10px;">
-      <input style="padding:4px 6px;width:250px;height:34px;" type="text" value="" disabled="disabled">
-      <div style="margin-top:10px; color:#999; font-size:13px; line-height:15px;">Service Username</div>
-    </div>
-    <br style="clear:both;">
-  </div>
-
-  <div style="padding: 1em;">
-    <label style="font-family: 'Open Sans', Helvetica, Arial, Sans-Serif; font-size:14px; margin: 7px 20px 7px 0; padding-top:7px;color:#333333; text-decoration:underline; text-transform:lowercase; float:left; width:160px;text-align:right;">Apache server port</label>
-    <div style="float:left;margin-left:10px;">
-      <input style="padding:4px 6px;width:250px;height:34px;" type="text" value="80" disabled="disabled">
-      <div style="margin-top:10px; color:#999; font-size:13px; line-height:15px;"></div>
-    </div>
-    <br style="clear:both;">
-  </div>
-
-  <div style="padding: 1em;">
-    <label style="font-family: 'Open Sans', Helvetica, Arial, Sans-Serif; font-size:14px; margin: 7px 20px 7px 0; padding-top:7px;color:#333333; text-decoration:underline; text-transform:lowercase; float:left; width:160px;text-align:right;">User's name</label>
-    <div style="float:left;margin-left:10px;">
-      <input style="padding:4px 6px;width:250px;height:34px;" type="text" value="" disabled="disabled">
-      <div style="margin-top:10px; color:#999; font-size:13px; line-height:15px;">Users Name</div>
-    </div>
-    <br style="clear:both;">
-  </div>
-
-  <div style="padding: 1em;">
-    <label style="font-family: 'Open Sans', Helvetica, Arial, Sans-Serif; font-size:14px; margin: 7px 20px 7px 0; padding-top:7px;color:#333333; text-decoration:underline; text-transform:lowercase; float:left; width:160px;text-align:right;">Service Password</label>
-    <div style="float:left;margin-left:10px;">
-      <input style="padding:4px 6px;width:250px;height:34px;" type="text" value="***" disabled="disabled">
-      <div style="margin-top:10px; color:#999; font-size:13px; line-height:15px;">Provide service password 6 chars or more</div>
-    </div>
-    <br style="clear:both;">
-  </div>
-
-  </div>
+  * **Service Password** - Provide service password 6 chars or more
+  * **Tomcat server shutdown port** - Tomcat Shutdown Port.  Default '8005'
+  * **Apache server SSL port** - .  Default '443'
+  * **Username** - Service Username
+  * **Apache server port** - .  Default '80'
+  * **User's name** - Users Name
 
 5. **Review and Confirm the Blueprint**
 
@@ -119,7 +74,7 @@ Jenkins is available as a <a href="">Blueprint</a> for deployment on a **new ser
 
 ### Deploying Jenkins on an existing server (alternate option)
 
-Jenkins is available as a <a href="">Blueprint Package</a> for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized <a href="">Blueprint Workflows</a> to repeatably deploy multiple stacks on the same machines
+Jenkins is available as a Blueprint Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on the same machines
 
 #### Steps
 
@@ -142,53 +97,12 @@ Jenkins is available as a <a href="">Blueprint Package</a> for deployment on an 
 
   Set the following parameters:
 
-  <div style="margin:1em;color: #838383; background: #f2f2f2; margin:1em; padding: 1em; border:2px solid #e5e5e5;width:500px;">
-      <div style="padding: 1em;">
-    <label style="font-family: 'Open Sans', Helvetica, Arial, Sans-Serif; font-size:14px; margin: 7px 20px 7px 0; padding-top:7px;color:#333333; text-decoration:underline; text-transform:lowercase; float:left; width:160px;text-align:right;">Apache server SSL port</label>
-    <div style="float:left;margin-left:10px;">
-      <input style="padding:4px 6px;width:250px;height:34px;" type="text" value="443" disabled="disabled">
-      <div style="margin-top:10px; color:#999; font-size:13px; line-height:15px;"></div>
-    </div>
-    <br style="clear:both;">
-  </div>
-
-  <div style="padding: 1em;">
-    <label style="font-family: 'Open Sans', Helvetica, Arial, Sans-Serif; font-size:14px; margin: 7px 20px 7px 0; padding-top:7px;color:#333333; text-decoration:underline; text-transform:lowercase; float:left; width:160px;text-align:right;">Username</label>
-    <div style="float:left;margin-left:10px;">
-      <input style="padding:4px 6px;width:250px;height:34px;" type="text" value="" disabled="disabled">
-      <div style="margin-top:10px; color:#999; font-size:13px; line-height:15px;">Service Username</div>
-    </div>
-    <br style="clear:both;">
-  </div>
-
-  <div style="padding: 1em;">
-    <label style="font-family: 'Open Sans', Helvetica, Arial, Sans-Serif; font-size:14px; margin: 7px 20px 7px 0; padding-top:7px;color:#333333; text-decoration:underline; text-transform:lowercase; float:left; width:160px;text-align:right;">Apache server port</label>
-    <div style="float:left;margin-left:10px;">
-      <input style="padding:4px 6px;width:250px;height:34px;" type="text" value="80" disabled="disabled">
-      <div style="margin-top:10px; color:#999; font-size:13px; line-height:15px;"></div>
-    </div>
-    <br style="clear:both;">
-  </div>
-
-  <div style="padding: 1em;">
-    <label style="font-family: 'Open Sans', Helvetica, Arial, Sans-Serif; font-size:14px; margin: 7px 20px 7px 0; padding-top:7px;color:#333333; text-decoration:underline; text-transform:lowercase; float:left; width:160px;text-align:right;">User's name</label>
-    <div style="float:left;margin-left:10px;">
-      <input style="padding:4px 6px;width:250px;height:34px;" type="text" value="" disabled="disabled">
-      <div style="margin-top:10px; color:#999; font-size:13px; line-height:15px;">Users Name</div>
-    </div>
-    <br style="clear:both;">
-  </div>
-
-  <div style="padding: 1em;">
-    <label style="font-family: 'Open Sans', Helvetica, Arial, Sans-Serif; font-size:14px; margin: 7px 20px 7px 0; padding-top:7px;color:#333333; text-decoration:underline; text-transform:lowercase; float:left; width:160px;text-align:right;">Service Password</label>
-    <div style="float:left;margin-left:10px;">
-      <input style="padding:4px 6px;width:250px;height:34px;" type="text" value="***" disabled="disabled">
-      <div style="margin-top:10px; color:#999; font-size:13px; line-height:15px;">Provide service password 6 chars or more</div>
-    </div>
-    <br style="clear:both;">
-  </div>
-
-  </div>
+  * **Service Password** - Provide service password 6 chars or more
+  * **Tomcat server shutdown port** - Tomcat Shutdown Port.  Default '8005'
+  * **Apache server SSL port** - .  Default '443'
+  * **Username** - Service Username
+  * **Apache server port** - .  Default '80'
+  * **User's name** - Users Name
 
 4. **Deploy the Blueprint**
 
