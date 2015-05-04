@@ -2,6 +2,7 @@
   "category_order": [
     "Support",
     "Accounts & Users",
+    "AppFog",
     "Autoscale",
     "Blueprints",
     "Service Tasks",
@@ -15,5 +16,5 @@
     "Partners",
     "Release Notes",
     "Servers"
-  ] 
+  ]
 }}}

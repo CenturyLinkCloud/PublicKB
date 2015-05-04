@@ -49,11 +49,9 @@ A10 has provided a Virtual Appliance - called a Partner Template - that can be d
 ### Postrequisite
 - If you want to access your A10 vThunder Appliance over the internet, please perform the following tasks once your A10 vThunder Appliance has been deployed to your account:
 
-1. Adding an external ip-address to an existing or new CenturyLink server
-![Add Public IP](https://t3n.zendesk.com/attachments/token/kObGC9P2IjP1ate0NexwFNiXz/?name=ip.jpg)
+1. [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
 
-2. Allow incoming traffic for desired ports
-![Open Firewall Ports](https://t3n.zendesk.com/attachments/token/1Ufw0JjIWW8XfASYLh4x3Irl9/?name=port.jpg)
+2. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal
 
 ### Detailed Steps to Deploy A10 vThunder Appliance Partner Template
 Follow these step by step instructions to deploy a A10 vThunder Appliance in to your CenturyLink Cloud account:  
@@ -99,7 +97,7 @@ Thank you very much, Your_Name_Here
 
 -----
 
-### Acessing and Configuring your A10 vThunder Appliance
+### Accessing and Configuring your A10 vThunder Appliance
 Once the Service Task team deploy's your A10 vThunder Appliance, you will get a notification with details on your new devices.  This list will include:
 - The server name of the vThunder Appliance: IL1BOSTA10LB01 for example
 - The Management IP of the A10 vThunders(s):  In this example the IP is 10.100.97.100

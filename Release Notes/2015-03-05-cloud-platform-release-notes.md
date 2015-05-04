@@ -49,7 +49,7 @@
 ###Documentation (1)
 * [**Expanded API documentation**](http://www.centurylinkcloud.com/api-docs/v2/) - New knowledge base articles for CenturyLink Cloud's V2 API have been added [here](http://www.centurylinkcloud.com/api-docs/v2/). New actions covered include [Set Server Disks](http://www.centurylinkcloud.com/api-docs/v2/#servers-set-server-disks), [Set Server CPU/Memory](http://www.centurylinkcloud.com/api-docs/v2/#servers-set-server-cpumemory), and [Set Server Credentials](http://www.centurylinkcloud.com/api-docs/v2/#servers-set-server-credentials), among others.
 
-###Ecosystem - New Blueprints (5)
+###Ecosystem - New Blueprints (4)
 
 * [**Dynatrace**](../Ecosystem Partners/getting-started-with-dynatrace-blueprints.md) – Application Performance Monitoring (APM) software for today's most challenging web, cloud, mobile, enterprise and Big Data applications worldwide.
 

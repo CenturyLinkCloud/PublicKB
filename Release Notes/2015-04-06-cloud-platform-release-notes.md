@@ -46,10 +46,6 @@
   ![Pricing Example 02](../images/pricing-example-02.png)
 
 
-###Managed Services (1)
-
-* **Managed Backup now available in GB3.** Newly created servers in GB3 can now have data protected with the [Managed Backup Service](https://www.centurylinkcloud.com/managed-services/backup/). More details on the service are [here](../Managed Services/managed-backup-frequently-asked-questions.md).
-
 ###Ecosystem: New Blueprints (5)
 
 * [**Orchestrate**](../Ecosystem Partners/getting-started-with-orchestrate-blueprint.md) - Online database web service designed to support modern cloud-based application development. Includes support for search, time-ordered events, geospatial or graph queries with a performant REST API. CenturyLink helps customers get started with a sample application that signs up for Orchestrate and allows customers to begin working with the Orchestrate API.

@@ -109,7 +109,7 @@ Monthly<br />Price per GB
 <p>A:  In order to make sure you are using only the amount of backup storage that you need, you can configure an exclusions list to prevent certain paths on the server from being sent to backup. You can configure this list from theNetbackup Client agent on the server itself. For details, see<a href="/knowledge-base/managed-services/using-managed-backup-client">instructions on using the Netbackup Client</a>.<strong></strong>The CenturyLink Technology Solutions Client Service Center is also available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at 1-888-638-6771.</p>
 
 <p><strong>Q: What if I want my backups to be kept for longer than two weeks?</strong></p>
-<p>A:  If you would like to change the default two-week retention schedule for your backups, you may contact the CenturyLink Technology Solutions Client Service Center at 1-888-638-6771 and enter a request to customize the retention periodfor a particular server or set of servers.A few different retention periods are available to choose from.</p>
+<p>A:  If you would like to change the default two-week retention schedule for your backups, you may contact the CenturyLink Technology Solutions Client Service Center at 1-888-638-6771 and enter a request to customize the retention period for a particular server or set of servers. A few different retention periods are available to choose from.</p>
 
 <p><strong>Q: What should I do if I need a restore?</strong></p>
 <p>A: Contact the CenturyLink Technology Solutions Client Service Center at 1-888-638-6771.</p>

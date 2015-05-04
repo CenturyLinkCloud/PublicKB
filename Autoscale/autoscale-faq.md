@@ -120,7 +120,7 @@ If you choose to remove the load balancer from a group's horizontal Autoscale po
 
 **May I create managed servers in my horizontal Autoscale group?**
 
-Yes, managed servers may be included in a horizontal Autoscale group. Keep in mind that management fees will still apply for servers that are powered off.
+Yes, managed servers may be included in a horizontal Autoscale group. 
 
 **Do I have to use the load balancer as part of my horizontal Autoscale group?**
 

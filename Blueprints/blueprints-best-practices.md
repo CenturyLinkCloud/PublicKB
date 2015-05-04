@@ -10,17 +10,17 @@ Blueprints are a saved and repeatable workflow that bundles components like Temp
 
 See also the KB articles on
 
-- [Templates Best Practices](templates-best-practices.md)
-- [Packages Best Practices](packages-best-practices.md)
-- [Differentiating the Template, Package and Blueprint components](understanding-the-difference-between-templates-blueprints-and-packages.md)
+* [Templates Best Practices](templates-best-practices.md)
+* [Packages Best Practices](packages-best-practices.md)
+* [Differentiating the Template, Package and Blueprint components](understanding-the-difference-between-templates-blueprints-and-packages.md)
 
 ### Workflow Components to Consider
 
 When deploying new servers as part of a Blueprint make careful consideration of the following components:
 
-- Always patch servers to the latest patch level (include the Linux Update or Perform Windows Update)
-- If you have a demo mode or application available include a parameter to optionally install and configure as part of your Blueprint (as opposed to handling this out of band or of creating multiple Blueprints with largely matching functionality)
-- Attach public IP addresses only on services that will receive inbound Internet traffic.  Most customers access the cloud environment via secured private connectivity and don't see the public addresses.  If your Blueprint is an Internet connected service that should be accessible to the Internet at large then skip this step
+* Always patch servers to the latest patch level (include the Linux Update or Perform Windows Update)
+* If you have a demo mode or application available include a parameter to optionally install and configure as part of your Blueprint (as opposed to handling this out of band or of creating multiple Blueprints with largely matching functionality)
+* Attach public IP addresses only on services that will receive inbound Internet traffic.  Most customers access the cloud environment via secured private connectivity and don't see the public addresses.  If your Blueprint is an Internet connected service that should be accessible to the Internet at large then skip this step
 
 ### When to use Packages versus Blueprints
 

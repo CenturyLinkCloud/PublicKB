@@ -8,7 +8,7 @@
 
 <div class="kb-post-overview">
   <h3>Overview</h3>
-  <p>The CenturyLink Cloud Control Portal allows for the creation of FTP users. These FTP users are intended to be used <em>only for the uploading of custom script and software packages</em> to be run as part of a Blueprint or directly on a server or group of servers. The FTP users created in Control Portal <em>should never be used for uploading VM images for import.</em> This article should clear up any confusion around what the FTP users service is used for and the process for using it.</p>
+  <p>The CenturyLink Cloud Control Portal allows for the creation of FTP users. These FTP users are intended to be used <em>only for the uploading of custom script and software packages</em> to be run as part of a Blueprint or directly on a server or group of servers. The FTP users created in Control Portal may also be used for uploading VM images for import. This article should explain what the FTP users service is used for and the process for using it.</p>
 </div>
 
 <div class="kb-post-audience">
@@ -51,5 +51,5 @@
     <br /><img src="https://t3n.zendesk.com/attachments/token/ffuFBkYXpmxPgv7LmZGJqamCP/?name=unpublished-package.png" alt="unpublished-package.png" />
     <br />See <a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management">Blueprints Script Package Management</a>&nbsp;for more information on how to create and publish packages for upload.</li>
 </ol>
-<h3>Improper Usage</h3>
-<p>FTP users created inside of Control Portal from the FTP Users menu as shown above are given a small amount of storage exclusively for the use case just described. <em>This account should never be used for uploading OVF templates or VM images to import.</em>  There is a separate FTP server and process for doing that which you can read more about here:&nbsp;<a href="https://t3n.zendesk.com/entries/22209635-Best-Practices-and-Preparation-for-a-Virtual-Machine-OVF-OVA-Import">Best Practices and Preparation for a Virtual Machine/OVF/OVA Import</a>.</p>
+<h3>Additional Usage</h3>
+<p>The FTP account may also be used for uploading OVF templates or VM images to import.</p>
