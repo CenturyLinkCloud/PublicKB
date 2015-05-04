@@ -39,7 +39,7 @@ Jenkins is available as a Blueprint for deployment on a **new server**.
 
 3. **Set Required parameters.**
 
-  Set the following parameters in addition to those associated with your server itself (password, network, group, etc.:
+  Set the following parameters in addition to those associated with your server itself (password, network, group, etc.):
 
   * **Service Password** -  Provide service password 6 chars or more 
   * **Tomcat server shutdown port** -  Tomcat Shutdown Port default 8005
