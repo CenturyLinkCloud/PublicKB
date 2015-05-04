@@ -88,6 +88,6 @@ CenturyLink Cloud works with [Bitnami](http://www.bitnami.com) to provide open s
 
 ### Frequently Asked Questions
 
-- #### Who should I contact for support?
+#### Who should I contact for support?
 - For issues related to deploying the Bitnami Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [Bitnami Support website](http://www.bitnami.com/support)
 - For issues related to CenturyLink Cloud infrastructure (VM’s, network, etc), please open a CenturyLink Cloud Support ticket by emailing noc@ctl.io
