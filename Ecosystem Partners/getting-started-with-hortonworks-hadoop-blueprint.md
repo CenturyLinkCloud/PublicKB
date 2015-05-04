@@ -51,6 +51,7 @@ After reading this article, the user should feel comfortable getting Hortonworks
 1.	Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
 2.	This will kick off the blueprint deploy process and load a page to allow you to track the progress of the deployment.
 6.	Monitor the Activity Queue.
+
 * Monitor the Deployment Queue to view the progress of the blueprint.
 * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
 * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the Hortonworks Server until you have received this email notification.

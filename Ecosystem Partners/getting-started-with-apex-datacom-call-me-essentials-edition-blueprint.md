@@ -52,17 +52,16 @@ After reading this article, the user should feel comfortable getting started usi
 ### Deploy Apex Datacom Call Me Essentials Edition Blueprint
 Follow these step by step instructions to deploy a single server instance of Call Me Essentials Edition.
 
-Follow these step by step instructions to deploy a single server instance of Call Me Essentials Edition.
 1.	Locate the Blueprint in the Blueprint Library. 
 - Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-- [Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a1.png)
+- ![Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a1.png)
 - Search for “Call Me” in the keyword search on the right side of the Blueprints Library page as shown in the image below.
-- [Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a2.png)
+- ![Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a2.png)
 - Locate the Apex Call Me Essentials Edition Blueprint on the left side and click this.
 
 2.	Choose the Blueprint. 
 - Click on the "Deploy Blueprint" green button.
-- [Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a3.png)
+- ![Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a3.png)
 
 3.	Configure the Blueprint. 
 - Complete the info fields required by the Blueprint wizard. An image down below highlights the fields you must complete correctly.
@@ -75,13 +74,13 @@ Follow these step by step instructions to deploy a single server instance of Cal
 - Also enter a strong password that has a mix of letters, numbers and special characters. 
 - Be sure to keep the Call Me Web Login safely written down as you will need this login info to access the app later. 
 - If you are satisfied with you entries then click the “next step 2” green button at the bottom.
-- [Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a4.png)
+- ![Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a4.png)
 
 4.	Review and Confirm the Blueprint. 
 - You will come to a confirmation view of what your Blueprint looks like.
 - Verify your configuration details.
 - Then click the “deploy Blueprint” green button at the bottom.
-- [Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a5.png)
+- ![Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a5.png)
 
 5.	Blueprint Queued & Deployed. 
 - Having clicked the deploy Blueprint it will be submitted into a queue and you will be taken to a monitoring page where you can see the progress of each step the Blueprint goes through.  
@@ -90,14 +89,14 @@ Follow these step by step instructions to deploy a single server instance of Cal
 - Each step as it completes successfully will show a green circle indicator. Should you see a red circle indicator at any step you might be given a resume option which you should take. 
 - If the Blueprint is stuck at a red indicator you should open a ticket (possibly through chat if you have this option in your CLC account) to resume the Blueprint.
 - Most normally the Blueprint will complete properly. Below is what a successful deployment looks like when completed.
-- [Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a6.png)
+- ![Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a6.png)
 
 6.	Jump In! 
 - Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification. 
 - To get started you need to determine the Public IP that was automatically added for this server.
 - To get this Public IP go to your CLC account and locate the newly deployed server and select it so you have a detailed dashboard view of this server. On the right hand side look for your Public IP.  See the image below for an idea.   
 - IMPORTANT – do not add any additional IP addresses.
-- [Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a7.png)
+- ![Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a7.png)
 
 ### Access Apex Call Me Application
 Follow these steps to access and use the Call Me application
@@ -107,7 +106,7 @@ Follow these steps to access and use the Call Me application
 - http://YOUR_PUBLIC_IP/
 - This will bring you to the Call Me app web login screen as shown below. 
 - Enter the username and password you created earlier in the Blueprint Call Me Web Login section.   
-- [Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a8.png)
+- ![Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a8.png)
 
 2.	Complete Call Me Registration ASAP
 - Once you are logged in complete the Account Registration section immediately so Apex may contact you and work to coordinate the voice long distance integration.  
@@ -116,14 +115,14 @@ Follow these steps to access and use the Call Me application
 - Note: even if you have existing CenturyLink long distance service Apex will still need to contact and coordinate with you to ensure CenturyLink’s SIP gateway is configured to your new Call Me server Public IP.  
 - Once CenturyLink has processed the order as noted above, Apex will update their provisioning server and send you an email at the address given in your Registration.  
 - You will see that the VOIP Information section below is disabled and greyed out before you register.  
-- [Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a9.png)
+- ![Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a9.png)
 
 3.	Automatic Trial SIP Provisioned – Now Create An Agent 
 - Once you register you will see notifications showing that both the Registration completed and a Thank you message down below in the VOIP Information section.
 - Upon registering you are automatically setup with a temporary trial SIP service so you try Call Me without waiting for your production SIP IPLD to be provisioned. 
 
 - Click on the top left Agent menu link to go the Agent page. Image below shows where with the green arrow.
-- [Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a10.png)
+- ![Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a10.png)
 
 4.	Setup Your First Agent
 - On the Agent page you may setup Call Me for different departments or individuals in your company. You will need to define an “agent” for each such ring to phone number at your company. 
@@ -133,7 +132,7 @@ Follow these steps to access and use the Call Me application
 -  You will also enter their US or Canadian 10 digit phone number.
 - Be careful not create duplicate “Agent names”.  
 - Click the Add button in the New Agent form which will then show the new agent in a table on this page. 
-- [Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a11.png)
+- ![Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a11.png)
 
 5.	Get To The Widget Page & Select Agent
 - Once you have added your agents in the previous section, select the blue Widget Menu link on the left which will take you the Widget page as shown below. 
@@ -142,7 +141,7 @@ Follow these steps to access and use the Call Me application
 - Widgets you create may be downloaded and added your webpage(s). 
 - Widgets must run from a web server such as Apache or Windows IIS. 
 - To change a Call Me widget on your website, simply re-create it from fresh and merge back with your website.
-- [Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a12.png)
+- ![Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a12.png)
 
 6.	Customizing Your Widget 
 - You may customize the colors and look and feel of your widget to fit your web page design and company brand. 
@@ -151,7 +150,7 @@ Follow these steps to access and use the Call Me application
 - Click the plus (+) sign to maximize the other design panels to explore and modify corresponding items.
 - The color codes given are in hex and other items like width are shown in pixels.
 - Changes you make will be visible on the right Preview section. 
-- [Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a13.png)
+- ![Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a13.png)
 
 7.	Testing Your Widget 
 - Once you have customized the Widget design to your liking go to the Finalize Widget panel on the lower left. See the image below to find the items outlined in the following steps.
@@ -161,11 +160,11 @@ Follow these steps to access and use the Call Me application
 - Click the Call Me Back button to trigger the test call.  The system dial will the Agent phone number first and announce “you have a web visitor call”.  
 - After this the system will call the number you entered in the Make A Call widget and you will be connected to the agent so you may speak to them live. 
 - Be advised during the SIP Trial service you are limited to a total of 10 calls or up to 30 days from registration – whichever comes first. 
-- [Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a14.png)
+- ![Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a14.png)
 
 8.	Download Your Widget – Part One
 - Now that you have tested the widget you may download it. Simply go back on the left under the Finalize Widget panel and click the Download Widget button as shown in the following image where you see the cursor hand and yellow highlighted help text. 
-- [Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a15.png)
+- ![Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a15.png)
 
 9.	Download Your Widget – Part Two
 - A window will open that gives you a file to save to your PC. The screenshot below shows how this looks on a Windows PC.
@@ -174,7 +173,7 @@ Follow these steps to access and use the Call Me application
 - Extract the zip file and follow the directions in the readme.txt
 - In essence, you will give this zip file to your webmaster who will add the widget to your website following the information in the readme.txt
 - Note the widget code will not execute any calls by simply opening the html file and running that. You will need to place this code in a web server with a configured website as referenced earlier. 
-- [Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a16.png)
+- ![Apex Datacom Image](../images/ecosystem-apex-datacom-callme-a16.png)
 
 ### Pricing
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  There are no Apex Datacom license costs or additional fees bundled in.  However, after the free trial, if you want to use the service you will need to place an order through Apex Datacom for the CenturyLink SIP long distance.  
