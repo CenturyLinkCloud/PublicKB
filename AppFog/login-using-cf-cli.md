@@ -23,12 +23,14 @@ In this article we will install the [Cloud Foundry Command Line Interface (CLI)]
 
 # Install Cloud Foundry CLI
 
-Download the appropriate binary distribution of the Cloud Foundry CLI from [here](https://github.com/cloudfoundry/cli/blob/master/README.md#downloads). Install the downloaded binary distribution of Cloud Foundry CLI. To verify Cloud Foundry CLI is installed run the following command from a terminal shell:
+Download the appropriate [binary distribution of the Cloud Foundry CLI](https://github.com/cloudfoundry/cli/blob/master/README.md#downloads). Install the downloaded binary distribution of Cloud Foundry CLI. To verify Cloud Foundry CLI is installed run the following command from a terminal shell:
 
 ```
 $ cf -v
 cf version 6.10.0-b78bf10-2015-02-11T22:25:45+00:00
 ```
+
+**NOTE: The Ruby Gem based Cloud Foundry CLI is no longer supported and will not work with AppFog. Please make sure that you use the appropriate binary distribution from [https://github.com/cloudfoundry/cli/blob/master/README.md#downloads](https://github.com/cloudfoundry/cli/blob/master/README.md#downloads).**
 
 # Login to AppFog
 
