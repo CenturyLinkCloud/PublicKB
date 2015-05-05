@@ -11,7 +11,7 @@
 ### Description
 
 <img src="//d33np9n32j53g7.cloudfront.net/assets/stacks/djangostack/img/djangostack-stack-110x117-cbe7b4a228b90c6bb6f4b022744178eb.png" style="border:0;float:right;max-width:250px">
-
+ 
 After reading this article, the reader should feel comfortable deploying the Django stack by Bitnami.
 
 <a href="https://bitnami.com/" rel="no-follow">Bitnami</a> has integrated their <a href="https://bitnami.com/stack/django" rel="no-follow">Django stack</a> with the CenturyLink Cloud platform with a single-click deploy solution.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Django solution.
