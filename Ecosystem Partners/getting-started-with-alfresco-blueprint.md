@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Alfresco Community - Blueprint",
-  "date": "05-04-2015",
+  "date": "05-05-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -33,7 +33,7 @@ Alfresco Community is available as a Blueprint for deployment on a **new server*
 
 1. **Locate the Blueprint in the Blueprint Library**
 
-  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for **Alfresco Community on linux_TITLE** in the keyword search on the right side of the page.
+  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for **Alfresco Community on Linux** in the keyword search on the right side of the page.
 
 2. **Click the Deploy Blueprint button.**
 
@@ -63,7 +63,6 @@ Alfresco Community is available as a Blueprint for deployment on a **new server*
 
   Once the Blueprint has finished executing on your server you may access Alfresco Community by navigating to your server via http.
 
-
 8. **Enable public access** (optional)
 
   Servers are built using private IPs only with access with client or IPSEC VPN.  For inbound access from the Internet add a public IP to your master server.
@@ -88,13 +87,11 @@ Alfresco Community is available as a Blueprint Package for deployment on an exis
 
   See the [Creating a new enterprise cloud server](../../servers/creating-a-new-enterprise-cloud-server/) KB for more information on completing this step.
 
-
 2. ** Select to Execute the Package on a Server Group**
 
-  Packages can be executed on one more more servers in a group.  Search for the public script package named **Install Alfresco Community on linux_TITLE**.
+  Packages can be executed on one more more servers in a group.  Search for the public script package named **Install Alfresco Community on Linux**.
 
   See the [using group tasks to install scripts on groups](../../servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/) KB for more information on how to complete the next few steps.
-
 
 3. **Set Parameters**
 
@@ -119,7 +116,6 @@ Alfresco Community is available as a Blueprint Package for deployment on an exis
 5. **Deployment Complete**
 
   Once the Blueprint has finished executing on your server you may access Alfresco Community by navigating to your server via http.
-
 
 6. **Enable public access** (optional)
 
