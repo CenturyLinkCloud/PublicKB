@@ -31,7 +31,7 @@
  * **Buckets are now tied to regions.** When creating a new bucket, you must now specify the region that bucket belongs to. This can be done with a new drop-down menu that lists available regions.  Similarly, a new region column appears when viewing a list of your object storage buckets, displaying the region associated with a given bucket.
 
 
-* **Server Scheduler Role ** A new role in CenturyLink Cloud offers more flexibility for administrators. The Server Scheduler Role includes all the capabilities of the Account Viewer role, plus the ability to perform power ops as well as to create and manage schedule tasks on servers and Groups.
+* **Server Scheduler Role** A new role in CenturyLink Cloud offers more flexibility for administrators. The Server Scheduler Role includes all the capabilities of the Account Viewer role, plus the ability to perform power ops as well as to create and manage schedule tasks on servers and Groups.
 
 ###Online Tools (2)
 
