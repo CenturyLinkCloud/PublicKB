@@ -26,7 +26,6 @@ Explain how to setup a Demo Account in CenturyLink Cloud.
 
 ---
 
-
 ###Demo Account Setup for Partners on CenturyLink Cloud
 
 The setup process for creating a demo account takes about 2 hours. Let's get started.
@@ -42,9 +41,9 @@ The setup process for creating a demo account takes about 2 hours. Let's get sta
   5. 1 x (Standard) Windows 2012 IIS Web Server (Development Group)
   6. 1 x (Standard) Windows 2012 SQL Server (Development Group)
   The most efficient way to do this is by using blueprints: https://t3n.zendesk.com/forums/20199443-Blueprints
-  
+
   Alternatively, you can create server 1 by 1: https://t3n.zendesk.com/entries/22603877-Creating-a-New-Enterprise-Cloud-Server
-  
+
   I try to layer Active Directory, IIS, SQL, File etc via the blueprint.  Sample blueprints can be seen @ https://t3n.zendesk.com/entries/31749940-Building-Blueprints-To-Install-Windows-2012-Server-Roles
 5. Create Alert Policies for CPU/RAM/Disk and apply them to each of the VM’s build:  https://t3n.zendesk.com/entries/27202824-Cloud-Server-Alerting-FAQ
 6. Create a Vertical Autoscale Policy for Development, Production SQL & Production Infra VMs and apply the policy to those VMs:  https://t3n.zendesk.com/entries/22032834-Creating-and-Applying-Autoscale-Policies
