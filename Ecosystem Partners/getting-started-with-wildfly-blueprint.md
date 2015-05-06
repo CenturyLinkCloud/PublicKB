@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with WildFly - Blueprint",
-  "date": "05-04-2015",
+  "date": "05-05-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -11,7 +11,7 @@
 ### Description
 
 <img src="//d33np9n32j53g7.cloudfront.net/assets/stacks/wildfly/img/wildfly-stack-110x117-e2357a2e61beca79ff271fa70ba61797.png" style="border:0;float:right;max-width:250px">
-
+   
 After reading this article, the reader should feel comfortable deploying the WildFly stack by Bitnami.
 
 <a href="https://bitnami.com/" rel="no-follow">Bitnami</a> has integrated their <a href="https://bitnami.com/stack/wildfly" rel="no-follow">WildFly stack</a> with the CenturyLink Cloud platform with a single-click deploy solution.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this WildFly solution.
@@ -33,7 +33,7 @@ WildFly is available as a Blueprint for deployment on a **new server**.
 
 1. **Locate the Blueprint in the Blueprint Library**
 
-  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for **WildFly on linux_TITLE** in the keyword search on the right side of the page.
+  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for **WildFly on Linux** in the keyword search on the right side of the page.
 
 2. **Click the Deploy Blueprint button.**
 
@@ -50,7 +50,6 @@ WildFly is available as a Blueprint for deployment on a **new server**.
   * **Apache server port** - default 80
   * **Jboss server directory** -  WildFly directory default /wildfly
   * **JBoss server HTTPS port** -  HTTPS connector port default 8443
-  * **JBoss manager username** -  Username default manager
   * **Jboss server management https port** -  WildFly Management HTTPS port default 9443
 
 5. **Review and Confirm the Blueprint**
@@ -64,7 +63,6 @@ WildFly is available as a Blueprint for deployment on a **new server**.
 7. **Deployment Complete**
 
   Once the Blueprint has finished executing on your server you may access WildFly by navigating to your server via http.
-
 
 8. **Enable public access** (optional)
 
@@ -90,13 +88,11 @@ WildFly is available as a Blueprint Package for deployment on an existing server
 
   See the [Creating a new enterprise cloud server](../../servers/creating-a-new-enterprise-cloud-server/) KB for more information on completing this step.
 
-
 2. ** Select to Execute the Package on a Server Group**
 
-  Packages can be executed on one more more servers in a group.  Search for the public script package named **Install WildFly on linux_TITLE**.
+  Packages can be executed on one more more servers in a group.  Search for the public script package named **Install WildFly on Linux**.
 
   See the [using group tasks to install scripts on groups](../../servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/) KB for more information on how to complete the next few steps.
-
 
 3. **Set Parameters**
 
@@ -111,7 +107,6 @@ WildFly is available as a Blueprint Package for deployment on an existing server
   * **Apache server port** - default 80
   * **Jboss server directory** -  WildFly directory default /wildfly
   * **JBoss server HTTPS port** -  HTTPS connector port default 8443
-  * **JBoss manager username** -  Username default manager
   * **Jboss server management https port** -  WildFly Management HTTPS port default 9443
 
 4. **Deploy the Blueprint**
@@ -123,7 +118,6 @@ WildFly is available as a Blueprint Package for deployment on an existing server
 5. **Deployment Complete**
 
   Once the Blueprint has finished executing on your server you may access WildFly by navigating to your server via http.
-
 
 6. **Enable public access** (optional)
 

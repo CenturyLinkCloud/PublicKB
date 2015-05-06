@@ -1,5 +1,5 @@
 {{{
-  "title": "Getting Started with Drupal - Blueprint",
+  "title": "Getting Started with JBoss - Blueprint",
   "date": "05-05-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
@@ -10,13 +10,13 @@
 
 ### Description
 
-<img src="//d33np9n32j53g7.cloudfront.net/assets/stacks/drupal/img/drupal-stack-110x117-9083fe6b191b13f79863eff74d3ce382.png" style="border:0;float:right;max-width:250px">
+<img src="//d33np9n32j53g7.cloudfront.net/assets/stacks/jboss/img/jboss-stack-110x117-12361d85ff78442ab801caef8baf4d63.png" style="border:0;float:right;max-width:250px">
    
-After reading this article, the reader should feel comfortable deploying the Drupal stack by Bitnami.
+After reading this article, the reader should feel comfortable deploying the JBoss stack by Bitnami.
 
-<a href="https://bitnami.com/" rel="no-follow">Bitnami</a> has integrated their <a href="https://bitnami.com/stack/drupal" rel="no-follow">Drupal stack</a> with the CenturyLink Cloud platform with a single-click deploy solution.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Drupal solution.
+<a href="https://bitnami.com/" rel="no-follow">Bitnami</a> has integrated their <a href="https://bitnami.com/stack/jboss" rel="no-follow">JBoss stack</a> with the CenturyLink Cloud platform with a single-click deploy solution.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this JBoss solution.
 
-Drupal is one of the most versatile open source content management systems on the market. Over a thousand developers contributed to the code in the most recent version. Drupal is built for high performance and is scalable to many servers, has easy integration via REST, JSON, SOAP and other formats, and features a whopping 15,000 plugins to extend and customize the application for just about any type of website. You won't feel alone if you use Drupal; the hundreds of thousands of Drupal users around the world have built a very robust community with local meetups and global user conferences.
+JBoss Stack provides a complete development environment for JBoss that can be deployed in one click. It includes ready-to-run versions of Apache, JBoss, MySQL and Java and required dependencies.
 
 
 ### Audience
@@ -24,16 +24,16 @@ Drupal is one of the most versatile open source content management systems on th
 CenturyLink Cloud Users
 
 
-### Deploying Drupal on a New Server
+### Deploying JBoss on a New Server
 
-Drupal is available as a Blueprint for deployment on a **new server**.
+JBoss is available as a Blueprint for deployment on a **new server**.
 
 #### Steps
 
 
 1. **Locate the Blueprint in the Blueprint Library**
 
-  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for **Drupal on Linux** in the keyword search on the right side of the page.
+  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for **JBoss on Linux** in the keyword search on the right side of the page.
 
 2. **Click the Deploy Blueprint button.**
 
@@ -41,11 +41,16 @@ Drupal is available as a Blueprint for deployment on a **new server**.
 
   Set the following parameters in addition to those associated with your server itself (password, network, group, etc.):
 
-  * **Apache server SSL port** - default 443
-  * **Drupal blog name** -  Site name default My Site
-  * **Apache server port** - default 80
   * **Service Password** -  Provide service password 6 chars or more 
-  * **User's name** -  Users Name 
+  * **Jboss server AJP port** -  AJP connector port default 8009
+  * **Jboss server HTTP port** -  WildFly HTTP Connector Port default 8080
+  * **Apache server SSL port** - default 443
+  * **Jboss server management native port** -  WildFly Management Command Line Console port default 9999
+  * **Jboss server management http port** -  WildFly Management HTTP port default 9990
+  * **Apache server port** - default 80
+  * **Jboss server directory** -  WildFly directory default /wildfly
+  * **JBoss server HTTPS port** -  HTTPS connector port default 8443
+  * **Jboss server management https port** -  WildFly Management HTTPS port default 9443
 
 5. **Review and Confirm the Blueprint**
 
@@ -57,7 +62,7 @@ Drupal is available as a Blueprint for deployment on a **new server**.
 
 7. **Deployment Complete**
 
-  Once the Blueprint has finished executing on your server you may access Drupal by navigating to your server via http.
+  Once the Blueprint has finished executing on your server you may access JBoss by navigating to your server via http.
 
 8. **Enable public access** (optional)
 
@@ -70,22 +75,22 @@ Drupal is available as a Blueprint for deployment on a **new server**.
 
 
 
-### Deploying Drupal on an existing server (alternate option)
+### Deploying JBoss on an existing server (alternate option)
 
-Drupal is available as a Blueprint Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on the same machines
+JBoss is available as a Blueprint Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on the same machines
 
 #### Steps
 
 
 1. **Deploy or Identify an Existing Server**
 
-  Identify the server targeted for Drupal installation.  Operating sustem must be linux.
+  Identify the server targeted for JBoss installation.  Operating sustem must be linux.
 
   See the [Creating a new enterprise cloud server](../../servers/creating-a-new-enterprise-cloud-server/) KB for more information on completing this step.
 
 2. ** Select to Execute the Package on a Server Group**
 
-  Packages can be executed on one more more servers in a group.  Search for the public script package named **Install Drupal on Linux**.
+  Packages can be executed on one more more servers in a group.  Search for the public script package named **Install JBoss on Linux**.
 
   See the [using group tasks to install scripts on groups](../../servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/) KB for more information on how to complete the next few steps.
 
@@ -93,11 +98,16 @@ Drupal is available as a Blueprint Package for deployment on an existing server 
 
   Set the following parameters:
 
-  * **Apache server SSL port** - default 443
-  * **Drupal blog name** -  Site name default My Site
-  * **Apache server port** - default 80
   * **Service Password** -  Provide service password 6 chars or more 
-  * **User's name** -  Users Name 
+  * **Jboss server AJP port** -  AJP connector port default 8009
+  * **Jboss server HTTP port** -  WildFly HTTP Connector Port default 8080
+  * **Apache server SSL port** - default 443
+  * **Jboss server management native port** -  WildFly Management Command Line Console port default 9999
+  * **Jboss server management http port** -  WildFly Management HTTP port default 9990
+  * **Apache server port** - default 80
+  * **Jboss server directory** -  WildFly directory default /wildfly
+  * **JBoss server HTTPS port** -  HTTPS connector port default 8443
+  * **Jboss server management https port** -  WildFly Management HTTPS port default 9443
 
 4. **Deploy the Blueprint**
 
@@ -107,7 +117,7 @@ Drupal is available as a Blueprint Package for deployment on an existing server 
 
 5. **Deployment Complete**
 
-  Once the Blueprint has finished executing on your server you may access Drupal by navigating to your server via http.
+  Once the Blueprint has finished executing on your server you may access JBoss by navigating to your server via http.
 
 6. **Enable public access** (optional)
 
@@ -136,7 +146,7 @@ CenturyLink Cloud works with [Bitnami](http://www.bitnami.com) to provide open s
 * For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../Support/how-do-i-report-a-support-issue.md).
 * For issues related to deploying the Bitnami Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [Bitnami Support website](http://www.bitnami.com/support)
 
-**How do I access Drupal for the first time?**
+**How do I access JBoss for the first time?**
 
 Nearly all Bitnami stacks can be accessed and configured by navigating to your server with a web browser.
 
