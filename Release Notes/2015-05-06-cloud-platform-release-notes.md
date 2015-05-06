@@ -9,7 +9,8 @@
 ###New Features (3)
 
 * **Orchestrate.io.** This new database-as-a-service offering is available in four CenturyLink Cloud datacenters: VA1, UC1, GB3, and SG1. The service supports many popular client libraries like Node.js, Java, Ruby, Go, Python, .NET, PHP, and Erlang. Orchestrate can be integrated with other CenturyLink Cloud deployments via API. Sign-up for the service at [**dashboard.orchestrate.io**](https://dashboard.orchestrate.io/sessions/login). For more information on the Orchestrate service, please read [this blog post](https://www.centurylinkcloud.com/blog/post/centurylink-acquires-orchestrate/).
-![Orchestrate UI](../images/orchestrate-ui-ctl-cloud.png)
+
+  ![Orchestrate UI](../images/orchestrate-ui-ctl-cloud.png)
 
 * **Network APIs.** Networking functions are now available via self-service API. Specific capabilities include:
  * Get a list of available networks
@@ -20,7 +21,8 @@
  Review the documentation for [**APIs here**](https://www.centurylinkcloud.com/api-docs/v2/).
 
 * **AppFog v2 Limited Beta.** This new platform for creating and managing cloud-native applications is available as a Limited Beta.  Based on Cloud Foundry v2, the service makes it easier for developers to build and scale applications.  If you are interested in becoming a beta tester, please contact [**the AppFog team**](mailto:appfog-feedback@ctl.io).
-![AppFog Navigation UI](../images/appfog-icon-nav.png/)
+
+  ![AppFog Navigation UI](../images/appfog-icon-nav.png/)
 
 ###Minor Enhancements (3)
 
@@ -30,7 +32,6 @@
  * **Users are no longer tied to object storage regions.** they now exist across the management layer for this service. So the "region" drop-down has been removed from the object storage UI when creating users, and the region is no longer shown alongside users in the user list view.
  * **Buckets are now tied to regions.** When creating a new bucket, you must now specify the region that bucket belongs to. This can be done with a new drop-down menu that lists available regions.  Similarly, a new region column appears when viewing a list of your object storage buckets, displaying the region associated with a given bucket.
 
-
 * **Server Scheduler Role** A new role in CenturyLink Cloud offers more flexibility for administrators. The Server Scheduler Role includes all the capabilities of the Account Viewer role, plus the ability to perform power ops as well as to create and manage schedule tasks on servers and Groups.
 
 ###Online Tools (2)
@@ -38,7 +39,8 @@
 * **Microsoft SQL 2014 AlwaysOn Reference Architecture** Achieve high availability for MS SQL instances using [**these best practices**](https://www.centurylinkcloud.com/architecture/sql2014-alwayson/).
 
 * **Getting Started Guides** A [**library of tutorial videos**](https://www.centurylinkcloud.com/guides/) is now online. Each short clip shows how to perform a common activity in the Platform.
-![Getting Started](../images/getting-started-guide-01.png)
+
+  ![Getting Started](../images/getting-started-guide-01.png)
 
 ###Ecosystem: New Blueprints (5)
 
