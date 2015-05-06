@@ -8,7 +8,7 @@
 
 ###New Features (3)
 
-* **Orchestrate.io.** This new database-as-a-service offering is available in four CenturyLink Cloud datacenters: VA1, UC1, GB3, and SG1. The service supports many popular client libraries like Node.js, Java, Ruby, Go, Python, .NET, PHP, and Erlang. Orchestrate can be integrated with other CenturyLink Cloud deployments via API. Sign-up for the service at [**dashboard.orchestrate.io**](https://dashboard.orchestrate.io/sessions/login). For more information on the Orchestrate service, please read [this blog post](https://www.centurylinkcloud.com/blog/post/cen]turylink-acquires-orchestrate/).
+* **Orchestrate.io.** This new database-as-a-service offering is available in four CenturyLink Cloud datacenters: VA1, UC1, GB3, and SG1. The service supports many popular client libraries like Node.js, Java, Ruby, Go, Python, .NET, PHP, and Erlang. Orchestrate can be integrated with other CenturyLink Cloud deployments via API. Sign-up for the service at [**dashboard.orchestrate.io**](https://dashboard.orchestrate.io/sessions/login). For more information on the Orchestrate service, please read [this blog post](https://www.centurylinkcloud.com/blog/post/centurylink-acquires-orchestrate/).
 ![Orchestrate UI](../images/orchestrate-ui-ctl-cloud.png)
 
 * **Network APIs.** Networking functions are now available via self-service API. Specific capabilities include:
