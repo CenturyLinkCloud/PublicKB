@@ -56,13 +56,6 @@ Alert Logic has provided a Virtual Appliance - called a Partner Template - that 
 - Access to the CenturyLink Cloud platform as an authorized user.
 - Identify a Network VLAN you want the Alert Logic Web Security Manager to reside on
 
-### Postrequisite
-- If you want to access your Alert Logic Web Security Manager over the internet, please perform the following tasks once your Alert Logic Web Security Manager has been deployed to your account:
-
-1. [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control
-
-2. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for ports 80 and 443 to access the Alert Logic Web Console by clicking on the Servers Public IP through Control Portal
-
 ### Detailed Steps to Deploy Alert Logic Web Security Manager Partner Template
 Follow these step by step instructions to deploy a Alert Logic Web Security Manager in to your CenturyLink Cloud account:  
 
@@ -95,7 +88,8 @@ Additional Information to add Partner Template to Network:
 -   set gateway [xxx.xxx.xxx.xxx]
 -   show gateway 
 -   system ping 8.8.8.8
-- Navigate to http://<YOURVIRTUALAPPLIANCEIPADDRESS>:4849 in your web browser to confirm it is on the network
+- Add a Public IP to the server through Control
+- Configure the Public IP firewall rules to allow incoming traffic for TCP ports 80, 443 and 4849
 
 Please let me know if you have any questions or issues. Kindly send me a reply once the work has been completed and let us know the IP address of the Web Security Manager VM.
 
