@@ -8,7 +8,7 @@
 
 ![Mojang logo](https://bugs.mojang.com/secure/attachment/50315/cnJMfJh.png)
 ### Technology Profile
-Mojang is a Microsoft owned game developer studio based in Stockholm, Sweden. They develop a game called Minecraft.  Have you heard of it?
+Mojang is a Microsoft owned game developer studio based in Stockholm, Sweden. They develop a game called Minecraft.  
 
 Minecraft is a sandbox construction game where you can build anything you can imagine. Minecraft is a game about breaking and placing blocks. In "Survival Mode", people built structures to protect against nocturnal monsters, but also offers "Creative Mode" allowing players to work together to create wonderful, imaginative things.
 
