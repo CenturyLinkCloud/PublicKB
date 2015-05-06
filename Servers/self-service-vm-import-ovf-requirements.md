@@ -1,6 +1,6 @@
 {{{
   "title": "Self-Service VM Import / OVF Requirements",
-  "date": "4-24-2015",
+  "date": "5-6-2015",
   "author": "Jared Ruckle",
   "attachments": [],
   "contentIsHTML": false
@@ -28,6 +28,7 @@ However, some OVFs may still require significant “prep” work, depending on t
 
 ### Specific Requirements for Windows 2012 R2 DataCenter 64-bit / Windows 2008 R2 DataCenter 64-bit OVFs
 * The machine cannot be joined to a domain
+  * NOTE: Customers can join their virtual machine to a domain after the import process
 * RDP needs to be available on the image
 * RDP needs to be unblocked by Windows firewall
 
