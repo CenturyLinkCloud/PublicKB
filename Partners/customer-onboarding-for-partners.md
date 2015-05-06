@@ -14,11 +14,11 @@
 ### Benefits
 
 - Accelerates revenue by building a sense of urgency for implementation.
-- Improves customer adoption and satisfaction for CenturyLink Cloud. 
+- Improves customer adoption and satisfaction for CenturyLink Cloud.
 
 ### Audience
 
-- Engineering 
+- Engineering
 
 ### What's Included
 
@@ -30,9 +30,10 @@
 ### Partner Action Items
 
 - Develop onboarding plan for your customer.
-- Complete customer onboarding. 
+- Complete customer onboarding.
 
 ---
+
 
 ### Customer Onboarding
 
@@ -61,7 +62,7 @@ We share our own best practices for customer onboarding so you can leverage them
 * Drive up customer understanding and knowledge of the platform which will lead to less frustration from mistake in deployments
 
 
-### Services 
+### Services
 
 There are generally four models of onboarding - titled “QuickStart” – customers can select to buy.  Here’s a summary of each model:
 
@@ -101,14 +102,14 @@ The QuickStart Onboarding process occurs in three phases – Kickoff, Implementa
 #### Implementation (Week 1-4)
 
 * Customer Architecture Review
-* Environment Build-out   
+* Environment Build-out
 * Integrate Additional Services (optional)
 * Best Practices Consultation
 * Recurring Checkpoints
 
 #### Closure (Week 4)
 
-* Post Deployment Debrief 
+* Post Deployment Debrief
 * Ensure Goals are Achieved
 * Handoff to Support
 
@@ -207,7 +208,7 @@ QuickStart resources are available from 8-5 (PST) M-F, excluding holidays.
 
 ### Engagement Model Cadence
 
-* 5 formal WebEx meetings to be scheduled with the customer and QuickStart Team. 
+* 5 formal WebEx meetings to be scheduled with the customer and QuickStart Team.
   * Kick-off – ½ hour meeting
   * Product Deep-Dive – 1 hour meeting
   * Implementation #1 – 1 hour meeting
@@ -216,13 +217,13 @@ QuickStart resources are available from 8-5 (PST) M-F, excluding holidays.
 * Weekly check point via email or scheduled meetings are expected.
 * Ad hoc communication between the customer and onboarding team encouraged throughout the project.
 * QuickStart resources are available from 8-5 (PST) M-F, excluding holidays.
-* Any platform problems or urgent requests should be routed to noc@tier3.com. 
+* Any platform problems or urgent requests should be routed to noc@tier3.com.
 * Checklist will be used to manage and track onboarding activities.
 
 ### Engagment Items for Partners
 
 * Understanding the roles and responsibilities for onboarding customers to CenturyLink Cloud.  
-* Select an onboarding model that best meets the needs of your customer. 
+* Select an onboarding model that best meets the needs of your customer.
 * Get buy-in from customer on onboarding model.
 * Onboard customers using best practices to speed implementation and ensure customer satisfaction.
 
