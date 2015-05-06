@@ -1,7 +1,7 @@
 {{{
   "title": "Ecosystem Partner List",
   "date": "05-06-2016",
-  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>" &amp; "<a href='https://twitter.com/DaveShac'>@DaveShac</a>",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>&amp;<a href='https://twitter.com/DaveShac'>@DaveShac</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
