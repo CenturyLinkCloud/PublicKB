@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with DokuWiki - Blueprint",
-  "date": "05-04-2015",
+  "date": "05-06-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -10,8 +10,8 @@
 
 ### Description
 
-<img src="//d33np9n32j53g7.cloudfront.net/assets/stacks/dokuwiki/img/dokuwiki-stack-110x117-f736412b8bec4a8c501536749fe5b749.png" style="border:0;float:right;max-width:250px">
-
+<img alt="DokuWiki Logo" src="../images/bitnami_logos/dokuwiki-stack-110x117-f736412b8bec4a8c501536749fe5b749.png" style="border:0;float:right;max-width:250px">
+   
 After reading this article, the reader should feel comfortable deploying the DokuWiki stack by Bitnami.
 
 <a href="https://bitnami.com/" rel="no-follow">Bitnami</a> has integrated their <a href="https://bitnami.com/stack/dokuwiki" rel="no-follow">DokuWiki stack</a> with the CenturyLink Cloud platform with a single-click deploy solution.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this DokuWiki solution.
@@ -33,7 +33,7 @@ DokuWiki is available as a Blueprint for deployment on a **new server**.
 
 1. **Locate the Blueprint in the Blueprint Library**
 
-  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for **DokuWiki on linux_TITLE** in the keyword search on the right side of the page.
+  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for **DokuWiki on Linux** in the keyword search on the right side of the page.
 
 2. **Click the Deploy Blueprint button.**
 
@@ -41,12 +41,11 @@ DokuWiki is available as a Blueprint for deployment on a **new server**.
 
   Set the following parameters in addition to those associated with your server itself (password, network, group, etc.):
 
-  * **Service Password** -  Provide service password 6 chars or more 
   * **Apache server SSL port** - default 443
   * **dokuWiki name** -  Wiki name default Wiki
-  * **Username** -  Service Username 
   * **Apache server port** - default 80
   * **User's name** -  Users Name 
+  * **Service Password** -  Provide service password 6 chars or more 
 
 5. **Review and Confirm the Blueprint**
 
@@ -59,7 +58,6 @@ DokuWiki is available as a Blueprint for deployment on a **new server**.
 7. **Deployment Complete**
 
   Once the Blueprint has finished executing on your server you may access DokuWiki by navigating to your server via http.
-
 
 8. **Enable public access** (optional)
 
@@ -83,26 +81,23 @@ DokuWiki is available as a Blueprint Package for deployment on an existing serve
 
   Identify the server targeted for DokuWiki installation.  Operating sustem must be linux.
 
-  See the [Creating a new enterprise cloud server](../../servers/creating-a-new-enterprise-cloud-server/) KB for more information on completing this step.
+  See the [Creating a new enterprise cloud server](../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
+2. **Select to Execute the Package on a Server Group**
 
-2. ** Select to Execute the Package on a Server Group**
+  Packages can be executed on one more more servers in a group.  Search for the public script package named **Install DokuWiki on Linux**.
 
-  Packages can be executed on one more more servers in a group.  Search for the public script package named **Install DokuWiki on linux_TITLE**.
-
-  See the [using group tasks to install scripts on groups](../../servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/) KB for more information on how to complete the next few steps.
-
+  See the [using group tasks to install scripts on groups](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. **Set Parameters**
 
   Set the following parameters:
 
-  * **Service Password** -  Provide service password 6 chars or more 
   * **Apache server SSL port** - default 443
   * **dokuWiki name** -  Wiki name default Wiki
-  * **Username** -  Service Username 
   * **Apache server port** - default 80
   * **User's name** -  Users Name 
+  * **Service Password** -  Provide service password 6 chars or more 
 
 4. **Deploy the Blueprint**
 
@@ -113,7 +108,6 @@ DokuWiki is available as a Blueprint Package for deployment on an existing serve
 5. **Deployment Complete**
 
   Once the Blueprint has finished executing on your server you may access DokuWiki by navigating to your server via http.
-
 
 6. **Enable public access** (optional)
 

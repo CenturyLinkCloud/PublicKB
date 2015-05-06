@@ -1,5 +1,5 @@
 {{{
-  "title": "Getting Started with Django - Blueprint",
+  "title": "Getting Started with JBoss - Blueprint",
   "date": "05-06-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
@@ -10,13 +10,13 @@
 
 ### Description
 
-<img alt="Django Logo" src="../images/bitnami_logos/djangostack-stack-110x117-15bd62cb8538632d73d76b05db079fb9.png" style="border:0;float:right;max-width:250px">
+<img alt="JBoss Logo" src="../images/bitnami_logos/jboss-stack-110x117-12361d85ff78442ab801caef8baf4d63.png" style="border:0;float:right;max-width:250px">
    
-After reading this article, the reader should feel comfortable deploying the Django stack by Bitnami.
+After reading this article, the reader should feel comfortable deploying the JBoss stack by Bitnami.
 
-<a href="https://bitnami.com/" rel="no-follow">Bitnami</a> has integrated their <a href="https://bitnami.com/stack/django" rel="no-follow">Django stack</a> with the CenturyLink Cloud platform with a single-click deploy solution.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Django solution.
+<a href="https://bitnami.com/" rel="no-follow">Bitnami</a> has integrated their <a href="https://bitnami.com/stack/jboss" rel="no-follow">JBoss stack</a> with the CenturyLink Cloud platform with a single-click deploy solution.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this JBoss solution.
 
-Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Python is a dynamic object-oriented programming language that can be used for many kinds of software development. The Django Stack greatly simplifies the deployment of Django and its runtime dependencies and includes ready-to-run versions of Python, Django, MySQL and Apache.
+JBoss Stack provides a complete development environment for JBoss that can be deployed in one click. It includes ready-to-run versions of Apache, JBoss, MySQL and Java and required dependencies.
 
 
 ### Audience
@@ -24,16 +24,16 @@ Django is a high-level Python Web framework that encourages rapid development an
 CenturyLink Cloud Users
 
 
-### Deploying Django on a New Server
+### Deploying JBoss on a New Server
 
-Django is available as a Blueprint for deployment on a **new server**.
+JBoss is available as a Blueprint for deployment on a **new server**.
 
 #### Steps
 
 
 1. **Locate the Blueprint in the Blueprint Library**
 
-  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for **Django on Linux** in the keyword search on the right side of the page.
+  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for **JBoss on Linux** in the keyword search on the right side of the page.
 
 2. **Click the Deploy Blueprint button.**
 
@@ -42,12 +42,14 @@ Django is available as a Blueprint for deployment on a **new server**.
   Set the following parameters in addition to those associated with your server itself (password, network, group, etc.):
 
   * **Service Password** -  Provide service password 6 chars or more 
+  * **Jboss server AJP port** -  AJP connector port default 8009
+  * **Jboss server HTTP port** -  WildFly HTTP Connector Port default 8080
   * **Apache server SSL port** - default 443
-  * **Django project name** -  Project Name default Project
-  * **Postgres port** -  Database Server port default 5432
+  * **Jboss server management native port** -  WildFly Management Command Line Console port default 9999
+  * **Jboss server management http port** -  WildFly Management HTTP port default 9990
   * **Apache server port** - default 80
-  * **Subversion port** -  Subversion Server port default 3690
-  * **Django stack database** -  Name for Django stack database default mydb
+  * **JBoss server HTTPS port** -  HTTPS connector port default 8443
+  * **Jboss server management https port** -  WildFly Management HTTPS port default 9443
 
 5. **Review and Confirm the Blueprint**
 
@@ -59,7 +61,7 @@ Django is available as a Blueprint for deployment on a **new server**.
 
 7. **Deployment Complete**
 
-  Once the Blueprint has finished executing on your server you may access Django by navigating to your server via http.
+  Once the Blueprint has finished executing on your server you may access JBoss by navigating to your server via http.
 
 8. **Enable public access** (optional)
 
@@ -72,22 +74,22 @@ Django is available as a Blueprint for deployment on a **new server**.
 
 
 
-### Deploying Django on an existing server (alternate option)
+### Deploying JBoss on an existing server (alternate option)
 
-Django is available as a Blueprint Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on the same machines
+JBoss is available as a Blueprint Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on the same machines
 
 #### Steps
 
 
 1. **Deploy or Identify an Existing Server**
 
-  Identify the server targeted for Django installation.  Operating sustem must be linux.
+  Identify the server targeted for JBoss installation.  Operating sustem must be linux.
 
   See the [Creating a new enterprise cloud server](../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. **Select to Execute the Package on a Server Group**
 
-  Packages can be executed on one more more servers in a group.  Search for the public script package named **Install Django on Linux**.
+  Packages can be executed on one more more servers in a group.  Search for the public script package named **Install JBoss on Linux**.
 
   See the [using group tasks to install scripts on groups](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
@@ -96,12 +98,14 @@ Django is available as a Blueprint Package for deployment on an existing server 
   Set the following parameters:
 
   * **Service Password** -  Provide service password 6 chars or more 
+  * **Jboss server AJP port** -  AJP connector port default 8009
+  * **Jboss server HTTP port** -  WildFly HTTP Connector Port default 8080
   * **Apache server SSL port** - default 443
-  * **Django project name** -  Project Name default Project
-  * **Postgres port** -  Database Server port default 5432
+  * **Jboss server management native port** -  WildFly Management Command Line Console port default 9999
+  * **Jboss server management http port** -  WildFly Management HTTP port default 9990
   * **Apache server port** - default 80
-  * **Subversion port** -  Subversion Server port default 3690
-  * **Django stack database** -  Name for Django stack database default mydb
+  * **JBoss server HTTPS port** -  HTTPS connector port default 8443
+  * **Jboss server management https port** -  WildFly Management HTTPS port default 9443
 
 4. **Deploy the Blueprint**
 
@@ -111,7 +115,7 @@ Django is available as a Blueprint Package for deployment on an existing server 
 
 5. **Deployment Complete**
 
-  Once the Blueprint has finished executing on your server you may access Django by navigating to your server via http.
+  Once the Blueprint has finished executing on your server you may access JBoss by navigating to your server via http.
 
 6. **Enable public access** (optional)
 
@@ -140,7 +144,7 @@ CenturyLink Cloud works with [Bitnami](http://www.bitnami.com) to provide open s
 * For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../Support/how-do-i-report-a-support-issue.md).
 * For issues related to deploying the Bitnami Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [Bitnami Support website](http://www.bitnami.com/support)
 
-**How do I access Django for the first time?**
+**How do I access JBoss for the first time?**
 
 Nearly all Bitnami stacks can be accessed and configured by navigating to your server with a web browser.
 
