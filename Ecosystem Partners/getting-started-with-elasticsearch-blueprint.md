@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Elasticsearch - Blueprint",
-  "date": "05-04-2015",
+  "date": "05-06-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -10,8 +10,8 @@
 
 ### Description
 
-<img src="//d33np9n32j53g7.cloudfront.net/assets/stacks/elasticsearch/img/elasticsearch-stack-110x117-db915773197e7a591b504c89be3e772d.png" style="border:0;float:right;max-width:250px">
-
+<img alt="Elasticsearch Logo" src="../images/bitnami_logos/elasticsearch-stack-110x117-db915773197e7a591b504c89be3e772d.png" style="border:0;float:right;max-width:250px">
+   
 After reading this article, the reader should feel comfortable deploying the Elasticsearch stack by Bitnami.
 
 <a href="https://bitnami.com/" rel="no-follow">Bitnami</a> has integrated their <a href="https://bitnami.com/stack/elasticsearch" rel="no-follow">Elasticsearch stack</a> with the CenturyLink Cloud platform with a single-click deploy solution.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Elasticsearch solution.
@@ -33,7 +33,7 @@ Elasticsearch is available as a Blueprint for deployment on a **new server**.
 
 1. **Locate the Blueprint in the Blueprint Library**
 
-  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for **Elasticsearch on linux_TITLE** in the keyword search on the right side of the page.
+  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for **Elasticsearch on Linux** in the keyword search on the right side of the page.
 
 2. **Click the Deploy Blueprint button.**
 
@@ -59,7 +59,6 @@ Elasticsearch is available as a Blueprint for deployment on a **new server**.
 
   Once the Blueprint has finished executing on your server you may access Elasticsearch by navigating to your server via http.
 
-
 8. **Enable public access** (optional)
 
   Servers are built using private IPs only with access with client or IPSEC VPN.  For inbound access from the Internet add a public IP to your master server.
@@ -82,15 +81,13 @@ Elasticsearch is available as a Blueprint Package for deployment on an existing 
 
   Identify the server targeted for Elasticsearch installation.  Operating sustem must be linux.
 
-  See the [Creating a new enterprise cloud server](../../servers/creating-a-new-enterprise-cloud-server/) KB for more information on completing this step.
-
+  See the [Creating a new enterprise cloud server](../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. ** Select to Execute the Package on a Server Group**
 
-  Packages can be executed on one more more servers in a group.  Search for the public script package named **Install Elasticsearch on linux_TITLE**.
+  Packages can be executed on one more more servers in a group.  Search for the public script package named **Install Elasticsearch on Linux**.
 
-  See the [using group tasks to install scripts on groups](../../servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/) KB for more information on how to complete the next few steps.
-
+  See the [using group tasks to install scripts on groups](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. **Set Parameters**
 
@@ -111,7 +108,6 @@ Elasticsearch is available as a Blueprint Package for deployment on an existing 
 5. **Deployment Complete**
 
   Once the Blueprint has finished executing on your server you may access Elasticsearch by navigating to your server via http.
-
 
 6. **Enable public access** (optional)
 

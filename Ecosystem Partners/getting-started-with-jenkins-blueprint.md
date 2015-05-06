@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Jenkins - Blueprint",
-  "date": "05-04-2015",
+  "date": "05-06-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -10,13 +10,13 @@
 
 ### Description
 
-<img src="//d33np9n32j53g7.cloudfront.net/assets/stacks/jenkins/img/jenkins-stack-110x117-7ed1d23148c869ee6aa6831a71ad9588.png" style="border:0;float:right;max-width:250px">
-
+<img alt="Jenkins Logo" src="../images/bitnami_logos/jenkins-stack-110x117-7ed1d23148c869ee6aa6831a71ad9588.png" style="border:0;float:right;max-width:250px">
+   
 After reading this article, the reader should feel comfortable deploying the Jenkins stack by Bitnami.
 
 <a href="https://bitnami.com/" rel="no-follow">Bitnami</a> has integrated their <a href="https://bitnami.com/stack/jenkins" rel="no-follow">Jenkins stack</a> with the CenturyLink Cloud platform with a single-click deploy solution.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Jenkins solution.
 
-Ask a room of developers which CI system they’re using and there is a good chance that several, if not most, will say Jenkins. Not wanting to see their favorite CI subsumed by Oracle, Jenkins was spun out in 2011 as its own product. It’s widely recognized as the most feature-rich CI available with easy configuration, continuous delivery and continuous integration support, easily test, build and stage your app, and more. It supports multiple SCM tools including CVS, Subversion and Git. It can execute Apache Ant and Apache Maven-based projects as well as arbitrary scripts. Out of the box, the Bitnami Jenkins package includes Jenkins, Apache, Tomcat, and Git.
+Ask a room of developers which CI system they're using and there is a good chance that several, if not most, will say Jenkins. Not wanting to see their favorite CI subsumed by Oracle, Jenkins was spun out in 2011 as its own product. It's widely recognized as the most feature-rich CI available with easy configuration, continuous delivery and continuous integration support, easily test, build and stage your app, and more. It supports multiple SCM tools including CVS, Subversion and Git. It can execute Apache Ant and Apache Maven-based projects as well as arbitrary scripts. Out of the box, the Bitnami Jenkins package includes Jenkins, Apache, Tomcat, and Git.
 
 
 ### Audience
@@ -33,7 +33,7 @@ Jenkins is available as a Blueprint for deployment on a **new server**.
 
 1. **Locate the Blueprint in the Blueprint Library**
 
-  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for **Jenkins on linux_TITLE** in the keyword search on the right side of the page.
+  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for **Jenkins on Linux** in the keyword search on the right side of the page.
 
 2. **Click the Deploy Blueprint button.**
 
@@ -41,12 +41,11 @@ Jenkins is available as a Blueprint for deployment on a **new server**.
 
   Set the following parameters in addition to those associated with your server itself (password, network, group, etc.):
 
-  * **Service Password** -  Provide service password 6 chars or more 
   * **Tomcat server shutdown port** -  Tomcat Shutdown Port default 8005
   * **Apache server SSL port** - default 443
-  * **Username** -  Service Username 
   * **Apache server port** - default 80
   * **User's name** -  Users Name 
+  * **Service Password** -  Provide service password 6 chars or more 
 
 5. **Review and Confirm the Blueprint**
 
@@ -59,7 +58,6 @@ Jenkins is available as a Blueprint for deployment on a **new server**.
 7. **Deployment Complete**
 
   Once the Blueprint has finished executing on your server you may access Jenkins by navigating to your server via http.
-
 
 8. **Enable public access** (optional)
 
@@ -83,26 +81,23 @@ Jenkins is available as a Blueprint Package for deployment on an existing server
 
   Identify the server targeted for Jenkins installation.  Operating sustem must be linux.
 
-  See the [Creating a new enterprise cloud server](../../servers/creating-a-new-enterprise-cloud-server/) KB for more information on completing this step.
-
+  See the [Creating a new enterprise cloud server](../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. ** Select to Execute the Package on a Server Group**
 
-  Packages can be executed on one more more servers in a group.  Search for the public script package named **Install Jenkins on linux_TITLE**.
+  Packages can be executed on one more more servers in a group.  Search for the public script package named **Install Jenkins on Linux**.
 
-  See the [using group tasks to install scripts on groups](../../servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/) KB for more information on how to complete the next few steps.
-
+  See the [using group tasks to install scripts on groups](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. **Set Parameters**
 
   Set the following parameters:
 
-  * **Service Password** -  Provide service password 6 chars or more 
   * **Tomcat server shutdown port** -  Tomcat Shutdown Port default 8005
   * **Apache server SSL port** - default 443
-  * **Username** -  Service Username 
   * **Apache server port** - default 80
   * **User's name** -  Users Name 
+  * **Service Password** -  Provide service password 6 chars or more 
 
 4. **Deploy the Blueprint**
 
@@ -113,7 +108,6 @@ Jenkins is available as a Blueprint Package for deployment on an existing server
 5. **Deployment Complete**
 
   Once the Blueprint has finished executing on your server you may access Jenkins by navigating to your server via http.
-
 
 6. **Enable public access** (optional)
 
