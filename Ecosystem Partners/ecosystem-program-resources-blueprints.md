@@ -15,7 +15,7 @@ Integrating with the CenturyLink Cloud Blueprints orchestration engine enables c
 
 Reference the following key pages from the CenturyLink Cloud [Knowledge Base](http://www.centurylinkcloud.com/knowledge-base):
 
-* [Blueprints Category](../../blueprints/) in the Knowledge Base
+* [Blueprints Category](../Blueprints/) in the Knowledge Base
 * Best Practices in [Packages](../Blueprints/packages-best-practices.md) and [Blueprints](../Blueprints/blueprints-best-practices.md)
 * [Package and Blueprint maximums](../Blueprints/blueprint-package-and-template-maximum-limits.md)
 * [Naming conventions for Public Packages and Blueprints](../Blueprints/creating-public-blueprint-packages.md)
