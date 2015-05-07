@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-The CenturyLink Cloud Professional Services team imports images of existing physical or virtual servers directly onto the Platform, generally for compatibility/performance testing, benchmarking, or as part of an overall cloud migration strategy. There are additional knowledge base articles which outline the steps involved in exporting an existing virtual machine from various hypervisors (i.e. from <a href="http://help.tier3.com/entries/21642619-Converting-a-Xen-Image-to-OVF-for-use-in-the-Tier-3-cloud">Xen</a>, or <a href="http://help.tier3.com/entries/23260901-Exporting-a-VM-to-an-OVF-from-VMware-Workstation-for-Import-into-the-Tier-3-Cloud">VMware Workstation</a>), however, this article servers to outline the best practices suggested for a successful import.
+The CenturyLink Cloud Professional Services team imports images of existing physical or virtual servers directly onto the Platform, generally for compatibility/performance testing, benchmarking, or as part of an overall cloud migration strategy. There are additional knowledge base articles which outline the steps involved in exporting an existing virtual machine from various hypervisors, however, this article servers to outline the best practices suggested for a successful import.
 
 * Prepare the required documentation. The minimal information required for importing an OVF/OVA file is:
   * Desired name of the cloud Virtual Machine or Appliance
