@@ -1,6 +1,6 @@
 {{{
   "title": "Self-Service VM Import / OVF Requirements",
-  "date": "5-6-2015",
+  "date": "5-7-2015",
   "author": "Jared Ruckle",
   "attachments": [],
   "contentIsHTML": false
@@ -10,6 +10,11 @@
 With a new self-service VM import capability, users can now import OVFs from VMware environments into CenturyLink Cloud.
 
 However, some OVFs may still require significant “prep” work, depending on the state of the image.  Requirements for OVF images are listed below; please keep this in mind when prepping an image for import.
+
+### Supported Operating Systems for Self-Service Import
+* Red Hat Enterprise Linux 6 | 64bit
+* Windows 2008 R2 DataCenter Edition | 64bit
+* Windows 2012 R2 DataCenter Edition | 64bit
 
 ### Your OVF Must Meet the Following Requirements to be Imported Successfully
 * File must be an OVF; OVAs are not supported
