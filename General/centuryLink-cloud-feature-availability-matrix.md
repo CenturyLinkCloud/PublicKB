@@ -24,5 +24,6 @@ The CenturyLink Cloud provides a vast array of services for customers to consume
 [Managed Backup](//www.centurylinkcloud.com/managed-services/backup)|US West (Santa Clara) - UC1<p>US East (Sterling) - VA1
 [Cloud Network Services](//www.centurylinkcloud.com/blog/post/use-cloud-network-service-for-making-hybrid-cloud-a-reality)|US West (Seattle) - WA1<p>US West (Santa Clara) - UC1<p>US Central (Chicago) - IL1<p>US East (New York) - NY1<p>US East (Sterling) - VA1<p>Great Britain (Slough) - GB3<p>Canada (Toronto - Mississauga) - CA3<p>Germany (Frankfurt) - DE1<p>APAC (Singapore) - SG1
 [Object Storage](//www.centurylinkcloud.com/object-storage)|Canada Region<sup>1</sup>
+[Orchestrate](//orchestrate.io)|US West (Santa Clara) - UC1<p>US East (Sterling) - VA1<p>Great Britain (Slough) - GB3<p>APAC (Singapore) - SG1
 
 1.  **Object Storage is delivered from the Canadian Region but is accessible as a public service globally**
