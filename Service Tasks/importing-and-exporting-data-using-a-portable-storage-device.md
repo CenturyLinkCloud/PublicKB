@@ -95,6 +95,10 @@
     <li>Data must come from the country in which the datacenter is located</li>
     <li>We will not ship data out of the country of origin</li>
   </ul>
+  <li>What are the CenturyLink Cloud data centers located?</li>
+  <ul>
+    <li><a href=https://www.centurylinkcloud.com/data-centers/>Check out our Data Centers Location page</a> for detailed information about where you can find our datacenters</li>
+  </ul>
   <li>Backups</li>
   <ul>
     <li>CenturyLink Cloud is not responsible for the loss or damage of the device, please ensure that you have a back up of your data.</li>
