@@ -37,7 +37,7 @@ Once you have an application to deploy that is based on one of the supported app
 * Run the command `cf push [name of app]` to deploy it into AppFog (NOTE: [name of app] must be unique so be clever with name such as “theultimateapp-100”)
 * After the process has finished you should see something similar to the following:
 
-![Application Deployed Successfully](../images/appfogv2/appfog-app-deployed.png)
+![Application Deployed Successfully](../images/appfog-app-deployed.png)
 
 * Copy the URL from “urls” line and open that URL in a browser
 
