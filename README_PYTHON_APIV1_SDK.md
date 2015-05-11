@@ -486,23 +486,23 @@ Lookup unique Int group ID given name.
 List all groups in the specified datacenter or if None specified the primary location associated with the provided API credentials.
 ```
 >>> clc.v1.Group.GetGroups(alias=None,location='WA1')
-[{u'ID': 837,
+[{u'UUID': 837,
   u'IsSystemGroup': True,
   u'Name': u'WA1 Hardware',
-  u'ParentID': 557},
- {u'ID': 1798, u'IsSystemGroup': True, u'Name': u'Archive', u'ParentID': 837},
- {u'ID': 4416,
+  u'ParentUUID': 557},
+ {u'UUID': 1798, u'IsSystemGroup': True, u'Name': u'Archive', u'ParentUUID': 837},
+ {u'UUID': 4416,
   u'IsSystemGroup': False,
   u'Name': u'Default Group',
-  u'ParentID': 837},
- {u'ID': 33853,
+  u'ParentUUID': 837},
+ {u'UUID': 33853,
   u'IsSystemGroup': False,
   u'Name': u'Test dev',
-  u'ParentID': 4416},
- {u'ID': 1045,
+  u'ParentUUID': 4416},
+ {u'UUID': 1045,
   u'IsSystemGroup': False,
   u'Name': u'Development',
-  u'ParentID': 837}]
+  u'ParentUUID': 837}]
 ```
 
 #### Create
@@ -510,10 +510,10 @@ Create new group rooted under the specified parent group or if None is specified
 
 ```python
 >>> clc.v1.Group.Create(group="Test Group",parent="WA1 Hardware",description='sdk test',alias=None,location='WA1')
-{u'ID': 34051,
+{u'UUID': 34051,
  u'IsSystemGroup': False,
  u'Name': u'Test Group',
- u'ParentID': 837}
+ u'ParentUUID': 837}
 ```
 
 #### Misc Asynchronous group operations

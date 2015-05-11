@@ -45,7 +45,7 @@ class Server:
 		"""
 		if alias is None:  alias = clc.v1.Account.GetAlias()
 		payload = {'AccountAlias': alias }
-		if group:  payload['HardwareGroupUUID'] = clc.v1.Group.GetGroupUUID(alias,location,group)
+		if group:  payload['HardwareGroupUUID'] = clc.v1.Group.GetGroupUUID(group,alias,location)
 		else:  payload['Location'] = location
 
 		try:
@@ -132,12 +132,12 @@ class Server:
 		"""
 		if alias is None:  alias = clc.v1.Account.GetAlias()
 		if location is None:  location = clc.v1.Account.GetLocation()
-		if re.match("^\d+$",group):  groups_id = group
-		else:  groups_uuid = clc.v1.Group.GetGroupUUID(alias,location,group)
+		if re.match("^\d+$",group):  groups_uuid = group
+		else:  groups_uuid = clc.v1.Group.GetGroupUUID(group,alias,location)
 
 		r = clc.v1.API.Call('post','Server/CreateServer', 
 		                    { 'AccountAlias': alias, 'LocationAlias': location, 'Description': description, 'Template': template,
-							  'Alias': name, 'HardwareGroupUUID': groups_id, 'ServerType': 1, 'ServiceLevel': Server.backup_level_stoi[backup_level], 
+							  'Alias': name, 'HardwareGroupUUID': groups_uuid, 'ServerType': 1, 'ServiceLevel': Server.backup_level_stoi[backup_level], 
 							  'Cpu': cpu, 'MemoryGB': ram, 'ExtraDriveGB': 0, 'Network': network, 'Password': password })
 		if int(r['StatusCode']) == 0:  return(r)
 

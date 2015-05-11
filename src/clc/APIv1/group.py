@@ -57,7 +57,7 @@ class Group:
 		"""
 		if alias is None:  alias = clc.v1.Account.GetAlias()
 		if location is None:  location = clc.v1.Account.GetLocation()
-		r = clc.v1.API.Call('post','Group/GetGroups',{'AccountAlias': alias, 'Location': location},debug=True)
+		r = clc.v1.API.Call('post','Group/GetGroups',{'AccountAlias': alias, 'Location': location})
 		for group in r['HardwareGroups']:  clc._GROUP_MAPPING[group['UUID']] = group['Name']
 		if int(r['StatusCode']) == 0:  return(r['HardwareGroups'])
 
@@ -96,9 +96,9 @@ class Group:
 		"""
 		if alias is None:  alias = clc.v1.Account.GetAlias()
 		if location is None:  location = clc.v1.Account.GetLocation()
-		groups_id = Group.GetGroupUUID(group,alias,location)
+		groups_uuid = Group.GetGroupUUID(group,alias,location)
 
-		r = clc.v1.API.Call('post','Group/%sHardwareGroup' % (action), {'UUID': groups_id, 'AccountAlias': alias })
+		r = clc.v1.API.Call('post','Group/%sHardwareGroup' % (action), {'UUID': groups_uuid, 'AccountAlias': alias })
 		return(r)
 
 
