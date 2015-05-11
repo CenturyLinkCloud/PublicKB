@@ -711,7 +711,7 @@ class ExecCommand():
 	def GetAllServers(self):
 		if clc.args.args.alias:  alias = clc.args.args.alias
 		else:  alias = None
-		r = self.Exec('clc.Server.GetAllServers', { 'alias': alias, 'name_groups': clc.args.args.name_groups },
+		r = self.Exec('clc.v1.Server.GetAllServers', { 'alias': alias, 'name_groups': clc.args.args.name_groups },
 		              cols=['HardwareGroupUUID', 'Name', 'Description', 'Cpu','MemoryGB','Status','ServerType','OperatingSystem','PowerState','Location','IPAddress'])
 
 
