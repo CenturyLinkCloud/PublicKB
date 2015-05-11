@@ -11,7 +11,7 @@ import clc
 class Group:
 
 	@staticmethod
-	def GetGroupID(group,alias=None,location=None):
+	def GetGroupUUID(group,alias=None,location=None):
 		"""Given a group name return the unique group ID.
 
 		:param alias: short code for a particular account.  If none will use account's default alias
@@ -22,7 +22,7 @@ class Group:
 		if location is None:  location = clc.v1.Account.GetLocation()
 		r = Group.GetGroups(location,alias)
 		for row in r:
-			if row['Name'] == group:  return(row['ID'])
+			if row['Name'] == group:  return(row['UUID'])
 		else:
 			if clc.args:  clc.v1.output.Status("ERROR",3,"Group %s not found in account %s datacenter %s" % (group,alias,location))
 			raise Exception("Group not found")
@@ -57,8 +57,8 @@ class Group:
 		"""
 		if alias is None:  alias = clc.v1.Account.GetAlias()
 		if location is None:  location = clc.v1.Account.GetLocation()
-		r = clc.v1.API.Call('post','Group/GetGroups',{'AccountAlias': alias, 'Location': location})
-		for group in r['HardwareGroups']:  clc._GROUP_MAPPING[group['ID']] = group['Name']
+		r = clc.v1.API.Call('post','Group/GetGroups',{'AccountAlias': alias, 'Location': location},debug=True)
+		for group in r['HardwareGroups']:  clc._GROUP_MAPPING[group['UUID']] = group['Name']
 		if int(r['StatusCode']) == 0:  return(r['HardwareGroups'])
 
 
@@ -78,10 +78,10 @@ class Group:
 		if description is None: description = ''
 		if parent is None:  parent = "%s Hardware" % (location)
 
-		parents_id = Group.GetGroupID(parent,alias,location)
+		parents_uuid = Group.GetGroupUUID(parent,alias,location)
 
 		r = clc.v1.API.Call('post','Group/CreateHardwareGroup',
-		                    {'AccountAlias': alias, 'ParentID': parents_id, 'Name': group, 'Description': description })
+		                    {'AccountAlias': alias, 'ParentUUID': parents_uuid, 'Name': group, 'Description': description })
 		if int(r['StatusCode']) == 0:  return(r['Group'])
 
 
@@ -96,9 +96,9 @@ class Group:
 		"""
 		if alias is None:  alias = clc.v1.Account.GetAlias()
 		if location is None:  location = clc.v1.Account.GetLocation()
-		groups_id = Group.GetGroupID(group,alias,location)
+		groups_id = Group.GetGroupUUID(group,alias,location)
 
-		r = clc.v1.API.Call('post','Group/%sHardwareGroup' % (action), {'ID': groups_id, 'AccountAlias': alias })
+		r = clc.v1.API.Call('post','Group/%sHardwareGroup' % (action), {'UUID': groups_id, 'AccountAlias': alias })
 		return(r)
 
 

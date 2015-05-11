@@ -569,7 +569,7 @@ class ExecCommand():
 		if not location:
 			self.Exec('clc.v1.Account.GetAlias','',supress_output=True)
 			location = clc.LOCATION
-		self.Exec('clc.v1.Group.GetGroups', { 'alias': alias, 'location': location }, cols=['ID','Name','ParentID','IsSystemGroup'])
+		self.Exec('clc.v1.Group.GetGroups', { 'alias': alias, 'location': location }, cols=['UUID','Name','ParentUUID','IsSystemGroup'])
 
 
 	def CreateGroup(self):
@@ -588,7 +588,7 @@ class ExecCommand():
 		self.Exec('clc.v1.Group.Create', 
 		          { 'alias': alias, 'location': location, 'parent': parent, 'group': clc.args.args.group, 
 				    'description': clc.args.args.description }, 
-		          cols=['ID','Name','ParentID'])
+		          cols=['UUID','Name','ParentUUID'])
 
 
 	def DeleteGroup(self):
@@ -659,7 +659,7 @@ class ExecCommand():
 		if clc.args.args.alias:  alias = clc.args.args.alias
 		else:  alias = None
 		r = self.Exec('clc.v1.Server.GetServerDetails', { 'alias': alias, 'servers': clc.args.GetArgs().server },
-		              cols=['HardwareGroupID', 'Name', 'Description', 'Cpu','MemoryGB','Status','TotalDiskSpaceGB','ServerType','OperatingSystem','PowerState','Location','IPAddress'])
+		              cols=['HardwareGroupUUID', 'Name', 'Description', 'Cpu','MemoryGB','Status','TotalDiskSpaceGB','ServerType','OperatingSystem','PowerState','Location','IPAddress'])
 
 
 	def GetServerCredentials(self):
@@ -697,7 +697,7 @@ class ExecCommand():
 			self.Exec('clc.v1.Account.GetAlias','',supress_output=True)
 			location = clc.LOCATION
 		r = self.Exec('clc.v1.Server.GetServers', { 'alias': alias, 'location': location, 'group': clc.args.args.group, 'name_groups': clc.args.args.name_groups },
-		              cols=['HardwareGroupID', 'Name', 'Description', 'Cpu','MemoryGB','Status','ServerType','OperatingSystem','PowerState','Location','IPAddress'])
+		              cols=['HardwareGroupUUID', 'Name', 'Description', 'Cpu','MemoryGB','Status','ServerType','OperatingSystem','PowerState','Location','IPAddress'])
 
 
 	def GetServerTemplates(self):
@@ -712,7 +712,7 @@ class ExecCommand():
 		if clc.args.args.alias:  alias = clc.args.args.alias
 		else:  alias = None
 		r = self.Exec('clc.Server.GetAllServers', { 'alias': alias, 'name_groups': clc.args.args.name_groups },
-		              cols=['HardwareGroupID', 'Name', 'Description', 'Cpu','MemoryGB','Status','ServerType','OperatingSystem','PowerState','Location','IPAddress'])
+		              cols=['HardwareGroupUUID', 'Name', 'Description', 'Cpu','MemoryGB','Status','ServerType','OperatingSystem','PowerState','Location','IPAddress'])
 
 
 	def CreateServer(self):

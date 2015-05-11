@@ -45,12 +45,12 @@ class Server:
 		"""
 		if alias is None:  alias = clc.v1.Account.GetAlias()
 		payload = {'AccountAlias': alias }
-		if group:  payload['HardwareGroupID'] = clc.v1.Group.GetGroupID(alias,location,group)
+		if group:  payload['HardwareGroupUUID'] = clc.v1.Group.GetGroupUUID(alias,location,group)
 		else:  payload['Location'] = location
 
 		try:
 			r = clc.v1.API.Call('post','Server/GetAllServers', payload)
-			if name_groups:  r['Servers'] = clc.v1.Group.NameGroups(r['Servers'],'HardwareGroupID')
+			if name_groups:  r['Servers'] = clc.v1.Group.NameGroups(r['Servers'],'HardwareGroupUUID')
 			if int(r['StatusCode']) == 0:  return(r['Servers'])
 		except Exception as e:
 			if str(e)=="Hardware does not exist for location":  return([])
@@ -69,7 +69,7 @@ class Server:
 		for location in clc.LOCATIONS:
 			try:
 				r = clc.v1.API.Call('post','Server/GetAllServers', {'AccountAlias': alias, 'Location': location }, hide_errors=[5,] )
-				if name_groups:  r['Servers'] = clc.v1.Group.NameGroups(r['Servers'],'HardwareGroupID')
+				if name_groups:  r['Servers'] = clc.v1.Group.NameGroups(r['Servers'],'HardwareGroupUUID')
 				if int(r['StatusCode']) == 0:  servers += r['Servers']
 			except:
 				pass
@@ -116,7 +116,7 @@ class Server:
 	def Create(name,template,cpu,ram,backup_level,group,alias=None,location=None,network='',description='',password=''):
 		"""Gets the list of Templates available to the account and location.
 
-		https://t3n.zendesk.com/entries/21006677-Create-Server
+		https://www.centurylinkcloud.com/api-docs/v1/#server-create-server
 
 		:param alias: short code for a particular account.  If None will use account's default alias
 		:param location: datacenter where group resides.  If None will use account's default location
@@ -133,11 +133,11 @@ class Server:
 		if alias is None:  alias = clc.v1.Account.GetAlias()
 		if location is None:  location = clc.v1.Account.GetLocation()
 		if re.match("^\d+$",group):  groups_id = group
-		else:  groups_id = clc.v1.Group.GetGroupID(alias,location,group)
+		else:  groups_uuid = clc.v1.Group.GetGroupUUID(alias,location,group)
 
 		r = clc.v1.API.Call('post','Server/CreateServer', 
 		                    { 'AccountAlias': alias, 'LocationAlias': location, 'Description': description, 'Template': template,
-							  'Alias': name, 'HardwareGroupID': groups_id, 'ServerType': 1, 'ServiceLevel': Server.backup_level_stoi[backup_level], 
+							  'Alias': name, 'HardwareGroupUUID': groups_id, 'ServerType': 1, 'ServiceLevel': Server.backup_level_stoi[backup_level], 
 							  'Cpu': cpu, 'MemoryGB': ram, 'ExtraDriveGB': 0, 'Network': network, 'Password': password })
 		if int(r['StatusCode']) == 0:  return(r)
 
