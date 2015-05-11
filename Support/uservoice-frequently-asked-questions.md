@@ -25,8 +25,6 @@ They are regularly reviewed and triaged by a cross-functional team at CenturyLin
 
 Status of ideas are regularly updated as the product roadmap progresses. “Supporters” of a specific feature are automatically emailed with an update once status has changed.
 
-However, specific items that are included in a given sprint are not explicitly tracked. Release Notes that summarize enhancements are posted online [here](../Release Notes/)
-
 ### How do I submit a feature request?
 
 Refer to [this KB](../Support/how-do-i-submit-a-feature-request.md).
