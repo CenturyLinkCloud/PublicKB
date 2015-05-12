@@ -18,7 +18,7 @@ CenturyLink Cloud WordPress __does not__ offer long term local file system stora
 > #### Plugins and Themes
 Plugins and themes should be added to the git repository that comes with your CenturyLink Cloud WordPress site to ensure the changes are persisted long term.
 
-For more details on safely installing and storing custom content, see [Persistent Storage Configuration](../Managed Services/wordpress-known-limitations.md)
+For more details on safely installing and storing custom content, see [Persistent Storage Configuration](../Managed Services/persitent-storage-configuration.md)
 
 ### Custom SSL and https
 SSL and https are configured automatically when your CenturyLink Cloud WordPress site is installed. This configuration uses an SSL certificate issued to the infrastructure housing your site. There is currently no way to to replace the default certificates with custom SSL certificates .
