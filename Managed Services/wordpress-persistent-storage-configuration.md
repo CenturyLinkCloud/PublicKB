@@ -38,11 +38,11 @@ In this section you will see three replaceable variables:
 
 **NOTE: These are variables you will have obtained when configuring your [CenturyLink Cloud Object Storage.](../Object Storage/using-object-storage-from-the-control-portal.md)**
 
-![](../images/wp-persistent-storage_03.png "wp-persistent-storage_03.png")
+![](../images/wp-persistent-storage/wp-persistent-storage_03.png "wp-persistent-storage_03.png")
 
 _The following example shows the variables replaced:_
 
-![](../images/wp-persistent-storage_04.png "wp-persistent-storage_04.png")
+![](../images/wp-persistent-storage/wp-persistent-storage_04.png "wp-persistent-storage_04.png")
 
 5. Once you have updated the file, browse to the bottom of the screen, input a reason for the changes, and click _Commit changes_
 
