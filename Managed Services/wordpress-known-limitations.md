@@ -36,7 +36,12 @@ SSL and https are configured automatically when your CenturyLink Cloud WordPress
 
 Custom SSL is supported by adding a CDN to your site which will allow you to bring your own SSL certificates.
 
-While HTTPS is enabled by default on your site, HTTP is also enabled. Disabling traffic to your site via insecure channels is not supported via the core infrastructure, but can also be achieved by adding a CDN to your site that has the ability to redirect traffic from HTTP to HTTPS.
+While HTTPS is enabled by default on your site, HTTP is also enabled. Disabling traffic to your site can also be achieved in two ways. Either by:
+
+* changing the URL value in the WordPress admin console to https
+
+```settings -> general -> WordPress Address (URL)``` and ```settings -> general -> Site Address (URL)```
+* adding a CDN to your site that has the ability to redirect traffic from HTTP to HTTPS.
 
 ### <a name="plugins"></a>Plugins and themes through console
 As mentioned above, the recommended method of installing plugins and themes is via direct addition to the source code using Git. The plugin and theme area of the WordPress administrative site is disabled by default to discourage using this method for installation, as it will lead to eventual loss of the files added through the console.
