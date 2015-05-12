@@ -15,6 +15,7 @@ CenturyLink cloud WordPress is designed to minimize the management of a WordPres
 * [__Plugins and themes through console__](#plugins)
 * [__Dedicated IP addresses__](#ip-address)
 * [__PHP mail__](#mail)
+
 ---
 ### <a name="multisite"></a>WordPress Multisite
 WordPress Multisite allows a single WordPress installation to house a network of separate sites. This feature is *disabled* by default in CenturyLink Cloud WordPress, and __is not__ supported.
