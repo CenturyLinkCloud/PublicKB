@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Elasticsearch - Blueprint",
-  "date": "05-06-2015",
+  "date": "05-12-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
