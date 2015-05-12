@@ -32,9 +32,9 @@ Once object storage has been configured, you must edit your base  WordPress *wp-
 
 In this section you will see three replaceable variables:
 
-1. customer_access_key
-2. customer_secret_access_key
-3. customer_bucket
+  1. customer_access_key
+  2. customer_secret_access_key
+  3. customer_bucket
 
 **NOTE: These are variables you will have obtained when configuring your [CenturyLink Cloud Object Storage.](../Object Storage/using-object-storage-from-the-control-portal.md)**
 
