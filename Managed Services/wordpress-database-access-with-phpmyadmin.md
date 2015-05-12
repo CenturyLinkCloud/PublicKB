@@ -20,13 +20,13 @@ At times it is necessary to manage the database to resolve issues or add functio
 
 --
 
-**1. In a web browser navigtate to the phpMyAdmin URL provided by CenturyLink**
+1. In a web browser navigtate to the phpMyAdmin URL provided by CenturyLink
 
-**2. Input the phpMyAdmin User Name and Password and click Log In**
+2. Input the phpMyAdmin User Name and Password and click Log In
 
 ![](../images/wp_database_access_with_phpmyadmin/wp_php_login-01.png)
 
-**3. You will now have full access to phpMyAdmin** 
+3. You will now have full access to phpMyAdmin
 
 ![](../images/wp_database_access_with_phpmyadmin/wp_php_login-02.png)
 

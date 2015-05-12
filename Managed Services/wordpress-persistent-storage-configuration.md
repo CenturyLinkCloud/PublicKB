@@ -18,17 +18,17 @@ Once object storage has been configured, you must edit your base  WordPress *wp-
 
 ---
 
-**1. Login to http://www.github.com using the GitHub username and password provided to CenturyLink during your WordPress installation.**
+1. Login to http://www.github.com using the GitHub username and password provided to CenturyLink during your WordPress installation.
 
-**2. Browse to the GitHub repository associated with your WordPress blog and open wp-config.php**
+2. Browse to the GitHub repository associated with your WordPress blog and open wp-config.php
 
 ![](../images/wp-persistent-storage/wp-persistent-storage_01.png "wp-persistent-storage_01.png")
 
-**3. In the upper right-hand corner, click the pencil icon to _Edit the file_**
+3. In the upper right-hand corner, click the pencil icon to _Edit the file_
 
 ![](../images/wp-persistent-storage/wp-persistent-storage_02.png "wp-persistent-storage_02.png")
 
-**4. Find the section of the file labeled _CenturyLink Object Storage Customer Variables_**
+4. Find the section of the file labeled _CenturyLink Object Storage Customer Variables_
 
 In this section you will see three replaceable variables:
 
@@ -44,33 +44,33 @@ _The following example shows the variables replaced:_
 
 ![](../images/wp-persistent-storage_04.png "wp-persistent-storage_04.png")
 
-**5. Once you have updated the file, browse to the bottom of the screen, input a reason for the changes, and click _Commit changes_**
+5. Once you have updated the file, browse to the bottom of the screen, input a reason for the changes, and click _Commit changes_
 
 ![](../images/wp-persistent-storage/wp-persistent-storage_05.png "wp-persistent-storage_05.png")
 
-**6. Login to your CenturyLink Cloud WordPress Blog Dashboard utilizing the password supplied during setup.**
+6. Login to your CenturyLink Cloud WordPress Blog Dashboard utilizing the password supplied during setup.
 
-**7. Expand Plugins in the left column.**
+7. Expand Plugins in the left column.
 
 ![](../images/wp-persistent-storage/wp-persistent-storage_06.png "wp-persistent-storage_06.png")
 
-**8. Click Activate next to the Amazon Web Services plugin.**
+8. Click Activate next to the Amazon Web Services plugin.
 
 ![](../images/wp-persistent-storage/wp-persistent-storage_07.png "wp-persistent-storage_07.png")
 
-**9. Click Activate next to the Amazon S3 and CloudFront plugin.
+9. Click Activate next to the Amazon S3 and CloudFront plugin.
 
 ![alt text](../images/wp-persistent-storage/wp-persistent-storage_08.png "wp-persistent-storage_08.png")
 
-**10. Expand AWS in the left column.**
+10. Expand AWS in the left column.
 
 ![](../images/wp-persistent-storage/wp-persistent-storage_09.png "wp-persistent-storage_09.png")
 
-**11. Select S3 and Cloudfront**
+11. Select S3 and Cloudfront
 
 ![](../images/wp-persistent-storage/wp-persistent-storage_10.png "wp-persistent-storage_10.png")
 
-**12. Ensure the following settings are configured and click Save Changes**
+12. Ensure the following settings are configured and click Save Changes
 
 S3 Settings:
 
@@ -96,7 +96,6 @@ Plugin Settings:
 
 ![](../images/wp-persistent-storage/wp-persistent-storage_11.png "wp-persistent-storage_11.png")
 
-**13. Object storage is now configure.**
+13. Object storage is now configure.
 
 Any attachments uploaded to WordPress will now be stored in your CenturyLink Object Storage Bucket.
-
