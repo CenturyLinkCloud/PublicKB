@@ -28,7 +28,7 @@ CenturyLink Cloud Users
 
 AbanteCart is available as a Blueprint for deployment on a **new server**.
 
-#### Steps
+#### Steps to Deploy Blueprint
 
 
 1. **Locate the Blueprint in the Blueprint Library**
