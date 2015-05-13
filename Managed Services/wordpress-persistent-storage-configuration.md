@@ -72,8 +72,8 @@ In this section you will see three replaceable variables:
 
   CloudFront Settings:
 
-  * Domain Name - **ca.tier3.io/yourbucketname**
-  * Implement object versioning by appending a timestamp to the S3 file path - **UNCHECKED**
+* Domain Name - **ca.tier3.io/yourbucketname**
+* Implement object versioning by appending a timestamp to the S3 file path - **UNCHECKED**
 
   Plugin Settings:
 
