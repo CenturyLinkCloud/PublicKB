@@ -25,9 +25,9 @@ Once object storage has been configured, you must edit your base  WordPress *wp-
 4. Find the section of the file labeled _CenturyLink Object Storage Customer Variables_
 In this section you will see three replaceable variables:
 
-  1. customer_access_key
-  2. customer_secret_access_key
-  3. customer_bucket
+  * customer_access_key
+  * customer_secret_access_key
+  * customer_bucket
 
   **NOTE: These are variables you will have obtained when configuring your [CenturyLink Cloud Object Storage.](../Object Storage/using-object-storage-from-the-control-portal.md)**
   ![](../images/wp-persistent-storage/wp-persistent-storage_03.png "wp-persistent-storage_03.png")
@@ -72,8 +72,8 @@ In this section you will see three replaceable variables:
 
   CloudFront Settings:
 
-* Domain Name - **ca.tier3.io/yourbucketname**
-* Implement object versioning by appending a timestamp to the S3 file path - **UNCHECKED**
+  * Domain Name - **ca.tier3.io/yourbucketname**
+  * Implement object versioning by appending a timestamp to the S3 file path - **UNCHECKED**
 
   Plugin Settings:
 
