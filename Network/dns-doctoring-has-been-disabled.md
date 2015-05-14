@@ -3,7 +3,7 @@
   "date": "05-14-2015",
   "author": "Russ Malloy",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 DNS Doctoring was disabled on 5/13 at ~6 PM PST.  This means that we no longer modify DNS packets that come in or out of the edge firewall.
