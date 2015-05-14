@@ -25,7 +25,7 @@ Now with DNS doctoring disabled, if WEB01 tried to access Acme.app.com, the fire
 <p>The easiest workaround is to utilize a host file locally on the VM's where the DNS name needs to resolve locally.  There are a lot of resources available on the web with instructions for modifying your hosts file, but here are some basic instructions.</p>  
 <p>For Windows:From Start -> Run or from within an explorer window in Server 2012, type "notepad c:\windows\system32\drivers\etc\hosts"
 At the bottom of the file, add a line including the internal IP , hit tab, and then input the DNS name that you want to resolve to the internal IP instead of the external IP</p>
-<p>For Linux:Use ssh to login to your linux server.  Edit the /etc/hosts file with an editor such as vi, pico or emacs.  At the bottom of the file, add a line including the internal (private) IP, hit tab, and then input the DNS name that you want to resolve to the internal (private) IP instead of the external (public) IP.</p>
+<p>For Linux:Use ssh to login to your linux server.  Edit the /etc/hosts file with an editor such as vi, pico or emacs.  At the bottom of the file, add a line including the internal (private) IP, hit tab, and then input the DNS name that you want to resolve to the internal (private) IP instead of the external (public) IP. Save the /etc/hosts file.</p>
 
 <p>A more robust and scalable solution is to host a local DNS server and point your servers to use that.</p> 
 
