@@ -67,3 +67,7 @@ A: You can [push plugins and themes to your WordPress site using your git reposi
 **Q: How do I send email (such as password resets) with my WordPress Site?**
 
 A: You must [configure SMTP for your WordPress site](../Managed Services/wordpress-SMTP-Configuration.md "How to access MySQL with phpMyAdmin") in order to send email.
+
+**Q: Can I configure my own domain with CenturyLink Cloud WordPress as a Service?**
+
+A: You can [configure your own domain name](wordpress-custom-domain-configuration.md "WordPress Custom Domain Configuration") via the CenturyLink Cloud Portal.
