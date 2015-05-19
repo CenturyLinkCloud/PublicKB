@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-![Saratoga Data logo](http://saratogadata.com/wp-content/uploads/2014/01/logo_flumeSM.gif)
+![Saratoga Data logo](../images/ecosystem-saratoga-data-logo.png)
 
 ### Partner Profile
 - Saratoga Data Systems, Inc. - Securely and accurately move your distributed data at unprecedented speeds
@@ -26,6 +26,8 @@ Saratoga Data Systems has provided their Flume accelerated file transfer technol
 Saratoga Data Systems helps CenturyLink Cloud customers address the business challenge of secure and reliable transmission of data over challenged networks by providing fast reliable file transfer using the flume client server software - now available as part of the CenturyLink Cloud Blueprint Engine.
 
 ### Solution Overview
+![Saratoga Data Flume logo](../images/ecosystem-saratoga-data-flume-logo.png)
+
 Flume Network Optimization is a patented network protocol for transferring data that is unaffected by high latency and very resiliant in the face of errors and network interruption.
 
 The 'flume' command line interface program implements this protocol wrapped in robust file management technology.
@@ -114,4 +116,4 @@ Existing CenturyLink Enterprise Customers can contact their Account Representati
 
 #### Who should I contact for support?
 * For issues related to deploying the Blueprint, licensing, Accessing or using the Saratoga Data application, please visit the [Saratoga Data Support Website](http://www.SaratogaDataSystems.com/support)
-* For issues related to cloud infrastructure (VM’s, network, etc), or is you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing noc@ctl.io or [through the support website](https://t3n.zendesk.com/tickets/new) 
+* For issues related to cloud infrastructure (VM’s, network, etc), or is you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new) 
