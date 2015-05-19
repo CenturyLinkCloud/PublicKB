@@ -1,12 +1,12 @@
 {{{
-"title": "Getting Started with Double Take Availability - Blueprint",
-"date": "4-30-2015",
+"title": "Getting Started with Double Take - Blueprint",
+"date": "5-18-2015",
 "author": "Shaun Sellers and Bob Stolzberg",
 "attachments": [],
 "contentIsHTML": false
 }}}
 
-![Vision Solutions logo](http://download.doubletake.com/_download/Documentation/VisionSolutionsOnline.gif)
+![Vision Solutions Double Take logo](../images/ecosystem-double-take-logo.png)
 
 ###Partner Profile
 - Vision Solutions – Migrate, Protect & Recover... Anywhere
@@ -50,7 +50,14 @@ After executing the steps in this Getting Started document, the users will have 
 
 1. If you need to connect to your server via the Internet, Add a [Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../Network/how-to-configure-client-vpn.md) or similar technology.
 
-2. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal.  Add the required Double-Take ports as documented in the [Users' Guide](http://download.doubletake.com/_download/Documentation/DocumentationLibrary.htm) for the respective platform.
+2. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal.  Add the required Double-Take ports from the list or screen shot below or as documented in the [Users' Guide](http://download.doubletake.com/_download/Documentation/DocumentationLibrary.htm) for the respective platform.
+  - Open the following Public Ports by selecting the checkboxes:  RDP (3389) and PING
+  - Open the following 6x custom ports using these protocols by clicking on the Custom Port dropdown
+    * 6320 TCP and UDP (Note: This is 2 unique rules)
+    * 6325 TCP and UDP (Note: This is 2 unique rules)
+    * 6326 TCP and UDP (Note: This is 2 unique rules)
+
+  ![Double Take ports](../images/ecosystem-double-take-dtports.png)
 
 ### Install Double-Take Blueprint
 
