@@ -28,7 +28,7 @@ CenturyLink Cloud’s comprehensive, secure, and global cloud platform is built 
 
 ###Support Boundary
 
-The partner provides Level 1 support to customers for all Cloud products that it resells. The following conditions apply to partner support services: 
+The partner provides Level 1 support to customers for all Cloud products that it resells. The following conditions apply to partner support services:
 * The partner will include Level 1 support contact information in all web sites and materials that describe support distributed to customers.
 * The partner cannot list CenturyLink Cloud support contact information for end customers.
 
@@ -41,9 +41,9 @@ This level should gather as much information as possible from the end user. The 
 Once identification of the underlying problem is established, the specialist can begin sorting through the possible solutions available. Technical support specialists in this group typically handle straightforward and simple problems while "possibly using some kind of knowledge management tool." This includes troubleshooting methods such as verifying the issues, resolving username and password problems, making necessary update to the portal, verification of proper portal set up, and assistance with navigating around application menus. Personnel at this level have a basic to general understanding of the product or service and may not always contain the competency required for solving complex issues. Nevertheless, the goal for this group is to handle 70%-80% of the user problems before finding it necessary to escalate the issue to a higher level.
 
 CenturyLink Cloud will provide higher level support to partner under the following conditions:
- 
-*	CenturyLink Cloud support is provided in English only. 
-*	CenturyLink Cloud support team will work on the tickets based on the severity of the issue and the support level. 
+
+*	CenturyLink Cloud support is provided in English only.
+*	CenturyLink Cloud support team will work on the tickets based on the severity of the issue and the support level.
 
 ###Ticket Submission Process
 
@@ -51,18 +51,18 @@ The most efficient and effective way to contact the NOC team (CenturyLink Suppor
 
 ####Create Email Address
 
-Partner needs to create one email alias for all the support ticket requests. All support team members who will submit and review should have access to this mailbox. This will enable the team to track the status of the ticket. 
+Partner needs to create one email alias for all the support ticket requests. All support team members who will submit and review should have access to this mailbox. This will enable the team to track the status of the ticket.
 
-For example create xyz@yourcompany.com. This is an important step as this alias will be tied to our ticketing system (ZenDesk) when you email our support team. 
+For example create xyz@yourcompany.com. This is an important step as this alias will be tied to our ticketing system (ZenDesk) when you email our support team.
 
-####Create ZenDesk account (using the Email created for Support) 
+####Create ZenDesk account (using the Email created for Support)
 
-Our support ticketing system, ZenDesk is where you can track all the updates to your support tickets. After your email address for support please follow the following steps to set up the ZenDesk account. 
+Our support ticketing system, ZenDesk is where you can track all the updates to your support tickets. After your email address for support please follow the following steps to set up the ZenDesk account.
 
 1. Log into https://t3n.zendesk.com
-2. Click on “Sign up” on the upper right hand side of the page and fill the form shown below. Please enter the email address you created for the support team. 
+2. Click on “Sign up” on the upper right hand side of the page and fill the form shown below. Please enter the email address you created for the support team.
 **NOTE: CenturyLink will only recognize the email address associated with ZenDesk. Any support request from another email address will not be converted into a ticket. So please use the same email address for escalation.**
-3. After you Sign up, you will receive a welcome email from noc@ctl.io for verification. Click on the verification link and choose your password. Your account will be active right away. 
+3. After you Sign up, you will receive a welcome email from noc@ctl.io for verification. Click on the verification link and choose your password. Your account will be active right away.
 
 
 ###Information for Submitting the Ticket
@@ -94,7 +94,7 @@ The priority designation indicates the level, extent and impact on the customer.
 
 ####Support Options
 
-CenturyLink offers three support tiers for end user customers: Developer, Professional and Enterprise. Developer is designed strictly for non-critical developer environments, and is not an appropriate level of service for reseller partners. In order to provide required level of support for our channel partners, either Professional or Enterprise level support is required. The table below outlines the features and SLA’s of each offering support. 
+CenturyLink offers three support tiers for end user customers: Developer, Professional and Enterprise. Developer is designed strictly for non-critical developer environments, and is not an appropriate level of service for reseller partners. In order to provide required level of support for our channel partners, either Professional or Enterprise level support is required. The table below outlines the features and SLA’s of each offering support.
 
 
 The following table describes list of operational support activities and requests offered across CenturyLink Cloud support tiers that may arise for virtual machines (VMs) provisioned on the CenturyLink Cloud platform. Support Activities provided for Services and Systems Hosted on the CenturyLink Cloud Platform:
@@ -148,7 +148,7 @@ Tickets are worked according to priority in the order in which they are received
 
 Our team of network engineers has deep operational expertise to quickly and efficiently perform common platform activities. Just give us the details on your request – and within one business day, we'll reply with an estimate, along with a projected completion date for the task. Service task estimation and duties are performed during business hours, Monday to Friday, 9am-5pm Pacific Time.
 
-[Learn More About Service Tasks](../Service Tasks/)
+[Learn More About Service Tasks](../Service Tasks/#1)
 
 ###Support Team/Roles at CenturyLink Cloud
 
@@ -227,7 +227,7 @@ You can get updates through CenturyLink Cloud Status in two ways:
 [Learn More About CenturyLink Cloud Status](../General/centurylink-cloud-status-faq.md)
 
 ###Century Link Product Overview
-The best practice for reducing escalation is by understanding the CenturyLink product and features very well. 
+The best practice for reducing escalation is by understanding the CenturyLink product and features very well.
 Where to learn more about CenturyLink:
 
 **CenturyLink Cloud Website**: http://www.centurylinkcloud.com/
@@ -235,5 +235,3 @@ Where to learn more about CenturyLink:
 **CenturyLink Cloud Support Overview**: http://www.centurylinkcloud.com/support
 
 **CenturyLink Cloud Blog**: http://www.centurylinkcloud.com/blog
-
-	 
