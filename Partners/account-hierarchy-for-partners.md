@@ -90,10 +90,11 @@ When a Trial is converted to a regular, paying customer, the customer does not n
 
 _**Requesting a Customer Trial**_
 To request a trial, use the following process: 
-1.  Create a Customer Account in the Control Portal.
-2.	Request a Customer Trial via email to cloudpartnerhelp@centurylinkcloud.com
-3.	The Email Subject should read as follows:  “Request – Partner Name – Customer Alias”
-4.	In the body of the email, please include the following: 
+
+1. Create a Customer Account in the Control Portal.
+2. Request a Customer Trial via email to cloudpartnerhelp@centurylinkcloud.com
+3. The Email Subject should read as follows:  “Request – Partner Name – Customer Alias”
+4. In the body of the email, please include the following: 
 >+ Partner Name
 >+  Partner Contact
 >+  Partner Contact Email 
@@ -101,7 +102,7 @@ To request a trial, use the following process:
 >+  Customer Alias (Portal Alias)
 >+  Trial Start Date 
 
-5.You will get a confirmation email from the CenturyLink Cloud team confirming the trial has been setup for the customer. 
+5. You will get a confirmation email from the CenturyLink Cloud team confirming the trial has been setup for the customer. 
 
 _**Tips for Setting up Customer Trials**_
 
