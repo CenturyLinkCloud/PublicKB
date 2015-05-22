@@ -6,7 +6,6 @@
 "contentIsHTML": false
 }}}
 
-###Logo
 ![SoftNAS logo](https://www.softnas.com/wp/wp-content/uploads/2014/05/200x37.png)
 
 ### Partner Profile
@@ -15,8 +14,6 @@ SoftNAS, LLC is a leading storage software company that provides Simply Powerful
 SoftNAS is the #1 best-selling NAS in the cloud and believes that storage can be both powerful and frictionless, providing customers with the enterprise-grade, software-defined NAS storage required to safely and reliably operate business-critical IT systems and applications in the cloud.
 
 [http://www.softnas.com](http://www.softnas.com)
-
-### Contact SoftNAS
 
 #### SoftNAS Sales and Support:
 - Support Email: support@softnas.com
