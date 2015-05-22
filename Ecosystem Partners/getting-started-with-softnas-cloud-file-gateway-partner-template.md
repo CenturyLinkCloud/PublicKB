@@ -151,4 +151,4 @@ Existing CenturyLink Enterprise Customers can contact their Account Representati
 
 #### Who should I contact for support?
 * For issues related to accessing the SoftNAS partner template, setup of devices, volumes, pools or high availability, or for any licensing concerns, please visit the SoftNAS Support Website: [http://www.SoftNAS.com/support](http://www.SoftNAS.com/support)
-* For issues related to cloud infrastructure (VMÕs, network, etc), please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new)
+* For issues related to cloud infrastructure (VMs, network, etc), please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new)
