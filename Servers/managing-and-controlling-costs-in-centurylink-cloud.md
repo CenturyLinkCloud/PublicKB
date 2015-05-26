@@ -7,7 +7,7 @@
 }}}
 
 <h3>Overview</h3>
-<p>CenturyLink Cloud provides several tools to enable customers to maximize the benefits of cloud computing, this article will outline some of the controls available to minimize cost. These tools are: pausing, archiving, scheduled tasks and autoscale.</p>
+<p>CenturyLink Cloud provides several tools to enable customers to maximize the benefits of cloud computing, this article will outline some of the controls available to minimize cost. These tools are: pausing, archiving, scheduled tasks, autoscale policies, time-to-live server settings and dashboard estimates.</p>
 <h3>Audience</h3>
 <ul>
   <li>CenturyLink Cloud Customers</li>
@@ -52,3 +52,20 @@
 <p>Autoscale makes it possible for a server or group of servers to self-regulate and deliver only the capacity it needs at any given time. This offers users two benefits: cost savings, and a reduction in administrative overhead.</p>
 <p>Instead of requiring system administrators to closely monitor and scale servers based on changes in utilization, you can create policies that add and remove capacity automatically. This ensures that you don't have unnecessary CPUs allocated or additional
   servers powered on unless you need them.</p>
+
+<h3>Time to Live</h3>
+<p>When creating a new server, the CenturyLink Cloud Control user interface includes a quick and easy way to put a time limit on the duration of the server's existence.  By setting the "Time to Live" policy, users can be assured that their server will not accrue charges beyond a specific length of time.  This feature is especially helpful during demonstrations and illustrations of the platform's capability.</p>
+<img src="../images/time_to_live.png" style="border:0;">
+
+<h3>Estimation Engine</h3>
+<p>At the CenturyLink Cloud Dashboard and at various places within the CenturyLink Cloud Control interface, users are presented with an estimate of what their monthly charges will look like at the current rate of consumption.  This estimate is continually updated as the user considers different configuration options, and instant feedback is given when considering a change. This makes it easy for CenturyLink Cloud users to instantaneously understand the financial impact of any proposed infrastructure modification.  </p>
+<img src="../images/dashboard_cost.png" style="border:0;">
+
+<h3>Summary</h3>
+The CenturyLink Cloud platform includes numerous useful tools for helping users keep their costs below a budgeted threshold.
++ **Pausing** servers is a quick way to remove them from the CPU and RAM metering.
++ **Archiving** further reduces the cost of the cloud server by moving the device to a lower cost storage tier.
++ **Scheduled Tasks** allow users to define custom, time-oriented policies against which cost management actions can occur.
++ **Autoscale Policies** can be used to right-size infrastructure to match actual demand patterns with resource deployment.
++ **Time to Live** durations can be applied to servers with a known period of utility.
++ **Estimate Engine** is a continually running feature that prominently displays the cost impact each infrastructure element on an easy-to-understand, monthly forecasted basis.
