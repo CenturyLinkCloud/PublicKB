@@ -22,9 +22,9 @@ http://www.xtremedata.com/
 
 #####Customer Support
 
-|Cloud Alias   	|Sales Contact   	|
-|:-	|:-	|
-|XDTA   	|centurylinkcloud-sales@xtremedata.com   	|
+|Sales Contact      |
+|:- |
+|centurylinkcloud-sales@xtremedata.com       |
 
 
 ### Description

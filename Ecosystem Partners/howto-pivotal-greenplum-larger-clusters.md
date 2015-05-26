@@ -1,7 +1,7 @@
 {{{
   "title": "How to Create a Custom Sized Pivotal Greenplum Cluster Blueprint",
   "date": "3-2-2015",
-  "author": "Keith Resar",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -22,9 +22,9 @@ http://pivotal.io/big-data/pivotal-greenplum-database
 
 #####Customer Support
 
-|Cloud Alias   	|Sales Contact   	|
-|:-	|:-	|
-|GOGO   	|sales-clc@pivotal.io   	|
+|Sales Contact      |
+|:- |
+|sales-clc@pivotal.io       |
 
 
 ### Description

@@ -22,9 +22,9 @@ http://pivotal.io/big-data/pivotal-gemfire
 
 #####Customer Support
 
-|Cloud Alias   	|Sales Contact   	|
-|:-	|:-	|
-|GOGO   	|sales-clc@pivotal.io   	|
+|Sales Contact   	|
+|:-	|
+|sales-clc@pivotal.io   	|
 
 
 ### Description
