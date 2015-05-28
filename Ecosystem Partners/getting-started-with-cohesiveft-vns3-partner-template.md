@@ -7,6 +7,7 @@
 }}}
 
 ![Cohesive Networks logo](https://cohesive.net/wp-content/uploads/2015/01/cohesive-networks-logo.gif)
+
 ###Partner Profile
 Cohesive Networks is a cloud-native network and security company. Over 1,000 customer use our VNS3 network routing and security products to connect, integrate and secure their critical applications in any cloud. VNS3 is a family of award-winning software-only appliances available in public, private and hybrid clouds.
 
@@ -36,7 +37,7 @@ VNS3 is a networking and security virtual appliance that lets you extend network
 The Cohesive Networks VNS3 solution also provides a Docker subsystem that can run container based network application services such as proxy, reverse proxy, SSL/TLS termination, load balancing, content cache, network intrusion detection (NIDS) and web application firewall (WAF).
 
 ### Offer
-Cohesive Networks has provided a Virtual Appliance - called a Partner Template - that can be deployed to your CenturyLink Cloud account via a Service Task.  In order to purchase a license or entitlement, please contact Cohesive Networks Sales using the contact information above.
+Cohesive Networks has provided a Virtual Appliance - called a Partner Template - that can be deployed to your CenturyLink Cloud account via a Service Task.  CenturyLink will provide a credit for the Service Task costs associated with deploying the Cohesive Partner Template.  Please follow the process below to request credit. In order to purchase a license or entitlement, please contact Cohesive Networks Sales using the contact information above.  
 
 ### Audience
 CenturyLink Cloud Users
@@ -100,7 +101,7 @@ Thank you very much, Your_Name_Here
 Once the Service Task team deploys your Cohesive Networks VNS3 virtual appliance, you will get an email notification with details on your new devices.  Follow these instructions to access and configure your VNS3 virtual appliance:
 
 1. Connect to your CenturyLink Cloud environment via Client VPN by starting or initiating your VPN client.
-2. Log in to the VNS3 Web UI at https://<VNS3 PRIVATE IP>:8000   The Default username is vnscubed and default password is vnscubed
+2. Log in to the VNS3 Web UI at `https://<VNS3 PRIVATE IP>:8000`   The Default username is vnscubed and default password is vnscubed
 3. Reset your passwords and log in again
 4. From the left hand menu, select Upload License. Paste the encrypted VNS3 license received from Cohesive in the first field. Then click Submit.
 5. Either select a preconfigured subnet, or click the Custom Radio button to specify a custom subnet range. Once you complete this step, the VNS3 manager instance will reboot itself and will come up with your specified topology enabled and running.
@@ -111,16 +112,35 @@ Once the Service Task team deploys your Cohesive Networks VNS3 virtual appliance
 - For support on how to configure your Cohesive Networks VNS3 virtual appliance, please visit the Cohesive support website at https://cohesive.net/support/support-contacts/
 
 ### Pricing
-There are no Cohesive Networks VNS3 license costs or additional fees bundled in.  The cost to deploy the Cohesive Networks VNS3 Partner Template will be billed as a Service Task.  More information about Service Tasks and fees are available here: http://www.centurylinkcloud.com/service-tasks
+There are no Cohesive Networks VNS3 license costs included.  The cost to deploy the Cohesive Networks VNS3 Partner Template will be billed as a Service Task, but CenturyLink will provide a credit for those costs.  In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees are available here: http://www.centurylinkcloud.com/service-tasks
+
+#### Process to request credit for Service Task fee
+Follow this process to request credit on your account to re-imburse any expense to deploy the Partner Template
+
+1. Please copy and paste the email below and send it to [ecosystem@ctl.io](mailto:ecosystem@ctl.io)
+
+----
+
+TO: Ecosystem@CTL.io
+
+EMAIL SUBJECT:   Requesting Credit for Cohesive Partner Template Deployment
+
+CLC Ecosystem Team,
+
+I am requesting a credit be placed on my account to cover the fees associated with deploying the CovesiveFT Partner Template to my account.  My CenturyLink Cloud username or account alias the credit needs to be placed on is ######
+
+Thank you very much, your_name_here
+
+----
 
 ### Frequently Asked Questions
-Frequently Asked Questions:
-- #### Where do I obtain my Cohesive Networks VNS3 License or entitlements?
+
+#### Where do I obtain my Cohesive Networks VNS3 License or entitlements?
 - Contact Cohesive Networks directly to receive your license: sales@cohesive.net
 - Cohesive will send you an email with license and configuration and aministration guides. 
 - Existing CenturyLink Enterprise Customers can contact their Account Representative for additional help obtaining a Cohesive license. 
 
-- #### Who should I contact for support?
+#### Who should I contact for support?
 - For issues regarding the VNS3 virtual appliance, please contact Cohesive Networks Support:
 - Email Support - sales@cohesive.net    
 - Web Support - http://support.cohesive.net
