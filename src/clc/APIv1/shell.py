@@ -183,6 +183,13 @@ class Args:
 		parser_server_list_disks.add_argument('--alias', help='Operate on specific account alias')
 		parser_server_list_disks.add_argument('--server', nargs='*', required=True, metavar='NAME', help='Server name')
 
+		## Add Disk
+		parser_server_add_disk = parser_sp4.add_parser('add-disk', help='Add a disk to server')
+		parser_server_add_disk.add_argument('--server', required=True, help='Server name')
+		parser_server_add_disk.add_argument('--path', required=False, help='The disk''s path')
+		parser_server_add_disk.add_argument('--size', required=True, help='The disk''s size in gigabytes')
+		parser_server_add_disk.add_argument('--type', required=False, help='The disk type (partitioned)')
+
 
 		########## Group ###########
 		parser_group = parser_sp1.add_parser('groups', help='Group level activities (list, create, modify)')
@@ -449,6 +456,7 @@ class ExecCommand():
 		elif clc.args.GetArgs().sub_command == 'convert-to-template':  self.ConvertToTemplate()
 		elif clc.args.GetArgs().sub_command == 'get-credentials':  self.GetServerCredentials()
 		elif clc.args.GetArgs().sub_command == 'list-disks':  self.GetServerDisks()
+		elif clc.args.GetArgs().sub_command == 'add-disk':  self.AddServerDisk()
 
 
 	def Network(self):
@@ -674,6 +682,18 @@ class ExecCommand():
 		else:  alias = None
 		r = self.Exec('clc.v1.Server.GetDisks', { 'alias': alias, 'server': clc.args.GetArgs().server },
 		              cols=['Name', 'ScsiBusID', 'ScsiDeviceID', 'SizeGB' ])
+
+
+	def AddServerDisk(self):
+		if clc.args.args.server:  server = clc.args.args.server
+		else: server = None
+		if clc.args.args.size:  size = clc.args.args.size
+		else: size = None
+		if clc.args.args.path:  path = clc.args.args.path
+		else: path = None
+		if clc.args.args.type:  type = clc.args.args.type
+		else: type = None
+		clc.v2.Server(server).Disks().Add(size=size, path=path, type=type).WaitUntilComplete()
 
 
 	def ServerActions(self,action):

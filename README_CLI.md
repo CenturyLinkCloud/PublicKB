@@ -496,7 +496,7 @@ Output once server build completes
 ```
 
 #### List Disks
-List all disks associated with the servere also querying the guest for disk names and mount points.
+List all disks associated with the server also querying the guest for disk names and mount points.
 ```
 > clc --config config.ini servers list-disks --server WA1BTDICLITST01
 ✔  Logged into v1 API
@@ -509,6 +509,12 @@ List all disks associated with the servere also querying the guest for disk name
 | /      | 0         | 2            | 14     |
 | /boot  | 0         | 0            | 1      |
 +--------+-----------+--------------+--------+
+```
+
+#### Add Disk
+Add a disk to the server with a size in gigabytes. This service uses v2 API credentials.
+```
+> clc --config config.ini servers add-disk --server WA1BTDICLITST01 --size 10
 ```
 
 #### Misc Asynchronous server operations
