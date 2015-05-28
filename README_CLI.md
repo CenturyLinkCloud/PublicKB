@@ -37,7 +37,8 @@ usage: clc [-h] [--cols [COL [COL ...]]] [--config CONFIG]
 usage: clc [-h] [--cols [COL [COL ...]]] [--config CONFIG]
               [--v1-api-key KEY] [--v1-api-passwd PASSWORD]
               [--v2-api-username USERNAME] [--v2-api-passwd PASSWORD]
-              [--async] [--quiet] [--verbose] [--format {json,table,text,csv}]
+              [--async] [--quiet] [--verbose] [--alias]
+              [--format {json,table,text,csv}]
 
               {blueprints,users,billing,servers,queue,accounts,groups,networks}
               ...
@@ -61,6 +62,7 @@ optional arguments:
   --async               Return immediately after queueing long-running calls
   --quiet, -q           Supress status output (repeat up to 2 times)
   --verbose, -v         Increase verbosity
+  --alias               Limit results to a single Account Alias
   --format {json,table,text,csv}, -f {json,table,text,csv}
                         Output result format (table is default)
 
@@ -288,7 +290,7 @@ Return user details
 Usage
 ```
 > clc --config config.ini servers
-usage: clc servers [-h] 
+usage: clc servers [-h]
 	{get,list,list-all,templates,create,delete,archive,pause,poweron,poweroff,reset,shutdown,snapshot,get-credentials,list-disks} ...
 ```
 
@@ -511,7 +513,7 @@ List all disks associated with the servere also querying the guest for disk name
 
 #### Misc Asynchronous server operations
 These asynchronous operations can be run on one more more servers.  Currently implemented are:
-*pause, delete, archive, poweron, poweroff, reset, shutdown, snapshot*.  Rather than waiting for process to 
+*pause, delete, archive, poweron, poweroff, reset, shutdown, snapshot*.  Rather than waiting for process to
 complete execute asynchronously and return a job ID.
 ```
 > clc --async --config config.ini servers delete --server WA1BTDICLITST01
@@ -859,8 +861,34 @@ Publish the specified package.  Specify clasification (Script, Software), visibi
 #### --async
 All long running operations return a work ID from the API rather than an immediate result.  Using the --async option ends CLI execution once the request has been successfully submitted and returns this work ID.  Default behavior is synchronous where the CLI will wait for the submitted job to complete and display any applicable results before terminating.  Where supported this is animated with a progress bar.
 
+#### --alias
+Commands can be applied against a single Account Alias by invoking the --alias option.
+
+```
+> clc --config config.ini accounts get --alias ECO
+✔  Logged into v1 API
+✔  Account details successfully queried.
+
+  ******************* 1. ********************
+         AccountAlias:  ECO
+               Status:  4
+                 City:  Reston
+                  Fax:  None
+             Address1:  11208 Wedge Drive
+             Address2:  None
+  ShareParentNetworks:  False
+            Telephone:  7038761898
+              Country:  United States
+             Location:  UT1
+         BusinessName:  CenturyLink Cloud Ecosystem
+           PostalCode:  20190
+             TimeZone:  Central Standard Time
+        StateProvince:  VA
+          ParentAlias:  CTLC
+```
+
 #### --format {json,table,text,csv}
-The fault output format uses hunan readable tables.  If the number of columns is too wide for the console screen this moves to a one key per for format as demonstrated below.
+The default output format uses human readable tables.  If the number of columns is too wide for the console screen this moves to a one key per for format as demonstrated below.
 ```
 > clc --config config.ini users get --user test345
 ✔  Logged into v1 API
@@ -883,7 +911,7 @@ The fault output format uses hunan readable tables.  If the number of columns is
            AccountAlias:  BTDI
            EmailAddress:  test@example.com
   AlternateEmailAddress:  None
-  
+
 > clc --cols UserName AccountAlias --config config.ini users get --user test345
 ✔  Logged into v1 API
 ✔  Accounts successfully queried.
@@ -932,4 +960,3 @@ By default almost all columns reoturned by the API are included in the response.
 | test345  | BTDI         |
 +----------+--------------+
 ```
-
