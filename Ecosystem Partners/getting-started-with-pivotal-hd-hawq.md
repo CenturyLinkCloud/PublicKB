@@ -14,7 +14,7 @@ After reading this article, the reader should feel comfortable deploying the Piv
 
 ### Partner Profile
 
-<img src="../images/pivotal_hdhawq/product-pivotal-hd.png" style="border:0;float:right;">
+<img src="../images/pivotal_hdhawq/product-pivotal-hd.png" style="border:0;float:right;max-width: 150px;">
 
 Pivotal HD + HAWQ – “World’s Most Advanced Enterprise SQL on Hadoop Analytic Engine on the Leading Standards-Based Hadoop Distribution For Advanced Analytics”
 
@@ -52,7 +52,7 @@ You can achieve a single-button deployment of a new cluster, including an Ambari
 
   Determine whether you will be building a test cluster with small nodes or a production cluster whose nodes are configured with increased CPU and RAM.
 
-  <img src="../images/pivotal_hdhawq/cluster_blueprint_tiles.png" style="border:0;">
+  <img src="../images/pivotal_hdhawq/cluster_blueprint_tiles.png" style="border:0;max-width:250px;">
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "Pivotal HAWQ" in the keyword search on the right side of the page.
 
