@@ -83,7 +83,7 @@ There are multiple small changes to how the Add-on Engine manifest is configured
 
 #### Differences from Existing AppFog Add-on Manifest
 
-- `username`, `sso_salt`, `config_vars`, `sso_url`, `plans/price` and `plans/price_unit` are not valid attributes anymore
+- `username`, `sso_salt`, `config_vars`, `api/production/sso_url`, `api/test/sso_url`, `plans/price` and `plans/price_unit` are not valid attributes anymore
 - `api/production` and `api/test` must be a valid JSON objects each with a `base_url` attribute defined.
 - The top level attribute `test` is no longer valid outside of the `api` object
 
