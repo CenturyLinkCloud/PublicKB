@@ -65,7 +65,7 @@ There are multiple small changes to how the Add-on Engine manifest is configured
     "test": {
       "base_url": "https://localhost:8080/"
     },
-    "password": "G3nP@ssWd"
+    "password": "correcthorsebatterystaple"
   }
 }
 ```
@@ -139,11 +139,11 @@ The Partner API response can provide any number of variables. For instance, a My
 {
   "id": "1111-2222-333-44444"
   "hostname": "mysqlhost.partner.com",
-  "jdbcUrl": "jdbc:mysql://mysqlhost.partner.com:3306/db-abc123?user=G3nU$3r\u0026password=G3nP@ssWd",
+  "jdbcUrl": "jdbc:mysql://mysqlhost.partner.com:3306/db-abc123?user=G3nU$3r\u0026password=correcthorsebatterystaple",
   "name": "db-abc123",
-  "password": "G3nP@ssWd",
+  "password": "correcthorsebatterystaple",
   "port": 3306,
-  "uri": "mysql://G3nU$3r:G3nP@ssWd@mysqlhost.partner.com:3306/db-abc123?reconnect=true",
+  "uri": "mysql://G3nU$3r:correcthorsebatterystaple@mysqlhost.partner.com:3306/db-abc123?reconnect=true",
   "username": "G3nU$3r"
 }
 ```
