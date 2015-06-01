@@ -2,7 +2,18 @@
   "title": "How do i submit an Executive Briefing Request",
   "date": "02-10-2015",
   "author": "Dana Bowlin",
-  "attachments": [],
+  "attachments": [
+  {
+    "file_name": "Attached File",
+    "url": "../assets/EBCFormCustomerDirect.docx",
+    "type": "application/pdf"
+  },
+  {
+    "file_name": "Attached File",
+    "url": "../assets/EBCForm.docx",
+    "type": "application/pdf"
+  }
+  ],
   "contentIsHTML": false
 }}}
 
