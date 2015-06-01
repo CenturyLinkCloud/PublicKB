@@ -69,7 +69,7 @@ Ordering Cross Connects
   <br />o Desktop initiated Internet access</p>
 <p>• Verify circuit hand-off will be native Ethernet hand-offs – e.g., no DS-3, SONET, OC3</p>
 <p>• Determine the preferred routing protocol (e.g., static, BGP, OSPF).</p>
-<p>• Will the cross connect be deployed within one of data centers/campuses listed at: http://help.tier3.com/entries/23224937-Tier-3-s-Data-Center-Locations</p>
+<p>• Will the cross connect be deployed within one of data centers/campuses listed at: https://www.centurylinkcloud.com/data-centers/</p>
 <p>• Determine if any specific IP address ranges are required for CLC. Note, CLC can generally only provide /24 networks for customers, but if a specific requirement is needed CenturyLink Cloud will evaluate such requests.</p>
 <p>Once the aforementioned is decided, the next steps are for CLC’s customers to complete the LoA (if CenturyLink Cloud is purchasing the cross connect on the customer’s behalf), the Intra-Data Center Cross Connect Questionnaire (please see the attached "XC_Questionnaire_2013222.pdf"
   listed below), and authorize an agreement for any associated costs. Customers should expect a minimum of two week lead time to provision most cross connect deployments once all of the paperwork has been finalized.</p>
