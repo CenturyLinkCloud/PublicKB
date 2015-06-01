@@ -21,10 +21,10 @@
 <p>This Knowledge Base and associated “Intra-Data Center Cross Connect Questionnaire“ (please see attached below) provides an overview for customers who are considering deploying an intra-data center cross connect. The labor for this deployment is
   a service task, performed by platform engineers to specifications provided by the customer.</p>
 Cross Connects Description and Benefits
-<p>As noted in the Knowledge Base article entitled “Network Access Options for Connecting to CenturyLink Cloud’s Platform” (see: http://help.tier3.com/entries/20518933-network-access-options-for-c... ), CenturyLink Cloud offers multiple connectivity options
+<p>As noted in the Knowledge Base article entitled “Network Access Options for Connecting to CenturyLink Cloud’s Platform” (see: https://www.centurylinkcloud.com/knowledge-base/network/network-access-options-for-connecting-to-centurylink-clouds-platform/), CenturyLink Cloud offers multiple connectivity options
   for its customers to leverage when deciding how they will connect to their resources hosted on CenturyLink Cloud’s platform (e.g., VPN tunnels, CNS, Cross Connects, etc). That said, as a point of clarity, this knowledge base article specifically pertains
   to the deployment of cross connects that are described within the aforementioned URL.</p>
-<p>In summary, cross connects are directly connected network circuits between two physically isolated organizations within a data center provider’s facility. Currently, CenturyLink Cloud has presence within the data centers listed at the following URL: http://help.tier3.com/entries/23224937-Tier-3-s-Data-Center-Locations.
+<p>In summary, cross connects are directly connected network circuits between two physically isolated organizations within a data center provider’s facility. Currently, CenturyLink Cloud has presence within the data centers listed at the following URL: https://www.centurylinkcloud.com/data-centers/.
   This direct connectivity allows for fast, low-latency secure connections – a perfect combination for enterprises who want to securely extend their network into the cloud. While this process may differ slightly in each data center, this article describes
   the general options, decisions, etc. that need to be considered.</p>
 <p>Many of our data center providers are within in multiple building across their respective metropolitan areas, and therefore “campus cross connects” are also an option for customers to consider (e.g., Customer is in Equinix’s CH1 building and CenturyLink
