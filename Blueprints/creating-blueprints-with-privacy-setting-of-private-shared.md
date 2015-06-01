@@ -5,7 +5,7 @@
   "attachments": [
     {
       "file_name": "Attached File",
-      "url": "/knowledge-base/attachments/Balancing Agility Cost and Control.pdf",
+      "url": "../attachments/Balancing Agility Cost and Control.pdf",
       "type": "application/pdf"
     }
   ],

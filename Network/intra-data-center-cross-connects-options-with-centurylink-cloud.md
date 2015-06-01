@@ -4,12 +4,12 @@
   "author": "Dave Burkhardt",
   "attachments": [
     {
-      "url":"/knowledge-base/attachments/XC_Questionnaire_2013222.pdf",
+      "url":"../attachments/XC_Questionnaire_2013222.pdf",
       "type":"application/pdf",
       "file_name":"XC_Questionnaire_2013222.pdf"
     },
     {
-      "url":"/knowledge-base/attachments/Letter of Authorization_Template.docx",
+      "url":"../attachments/Letter of Authorization_Template.docx",
       "type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document",
       "file_name":"Letter of Authorization_Template.docx"
     }

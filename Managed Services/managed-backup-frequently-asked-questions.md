@@ -5,7 +5,7 @@
   "attachments": [
     {
       "file_name": "Average Amount of Protected Data Example",
-      "url": "/knowledge-base/attachments/Avg Amount of Protected Data Example.xlsx",
+      "url": "../attachments/Avg Amount of Protected Data Example.xlsx",
       "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
     }
   ],

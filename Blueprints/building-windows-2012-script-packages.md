@@ -4,27 +4,27 @@
   "author": "Chris Little",
   "attachments": [
     {
-      "url":"/knowledge-base/attachments/Install FTP (IIS).zip",
+      "url":"../attachments/Install FTP (IIS).zip",
       "type":"application/zip",
       "file_name":"Install FTP (IIS).zip"
     },
     {
-      "url":"/knowledge-base/attachments/Install File Services.zip",
+      "url":"../attachments/Install File Services.zip",
       "type":"application/zip",
       "file_name":"Install File Services.zip"
     },
     {
-      "url":"/knowledge-base/attachments/Install IIS (Web Server).zip",
+      "url":"../attachments/Install IIS (Web Server).zip",
       "type":"application/zip",
       "file_name":"Install IIS (Web Server).zip"
     },
     {
-      "url":"/knowledge-base/attachments/Install Windows 2012 Active Directory Domain Services.zip",
+      "url":"../attachments/Install Windows 2012 Active Directory Domain Services.zip",
       "type":"application/zip",
       "file_name":"Install Windows 2012 Active Directory Domain Services.zip"
     },
     {
-      "url":"/knowledge-base/attachments/Perform Active Directory Domain Join on Windows.zip",
+      "url":"../attachments/Perform Active Directory Domain Join on Windows.zip",
       "type":"application/zip",
       "file_name":"Perform Active Directory Domain Join on Windows.zip"
     }
