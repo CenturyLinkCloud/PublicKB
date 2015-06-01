@@ -1,15 +1,15 @@
 {{{
-  "title": "How do i submit an Executive Briefing Request",
+  "title": "How do I submit an Executive Briefing Request",
   "date": "02-10-2015",
   "author": "Dana Bowlin",
   "attachments": [
   {
-    "file_name": "Attached File",
+    "file_name": "Customer Direct Form",
     "url": "../assets/EBCFormCustomerDirect.docx",
     "type": "application/pdf"
   },
   {
-    "file_name": "Attached File",
+    "file_name": "EBC Form",
     "url": "../assets/EBCForm.docx",
     "type": "application/pdf"
   }
@@ -41,4 +41,4 @@ None
 
 ### Who can submit an Executive Briefing Request
 
-Anyone. Customers, Account Reps, Sales Execs, Senior Mgmt...etc
+Anyone. Customers, Account Reps, Sales Execs, Senior Management...etc
