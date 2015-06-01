@@ -5,13 +5,13 @@
   "attachments": [
   {
     "file_name": "Customer Direct Form",
-    "url": "../assets/EBCFormCustomerDirect.docx",
-    "type": "application/pdf"
+    "url": "../attachments/EBCFormCustomerDirect.docx",
+    "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
   },
   {
     "file_name": "EBC Form",
-    "url": "../assets/EBCForm.docx",
-    "type": "application/pdf"
+    "url": "../attachments/EBCForm.docx",
+    "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
   }
   ],
   "contentIsHTML": false
