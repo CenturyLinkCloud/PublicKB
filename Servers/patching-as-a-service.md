@@ -14,7 +14,7 @@ Table of Contents
 * [Support](#support)
 * [Execution Options](#execution-options)
 * [Option 1: Blueprint](#option-1-blueprint)
-* [Option 2: Group Action](#ption-2-group-action)
+* [Option 2: Group Action](#option-2-group-action)
 * [Option 3: API](#option-3-api)
 * [Summary of All Patches Deployed to a Server](#summary-of-all-patches-deployed-to-a-server)
 * [Detail of Patches Deployed in an Execution](#detail-of-patches-deployed-in-an-execution)
