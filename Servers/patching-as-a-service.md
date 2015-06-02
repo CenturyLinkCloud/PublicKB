@@ -8,16 +8,16 @@
 
 Table of Contents
 =================
-* [Overview](### Overview)
-* [Audience](### Audience)
-* [Prerequisites](### Prerequisites)
-* [Support](### Support)
-* [Execution Options](###Execution-Options)
-* [Option 1: Blueprint](#### Option-1:-Blueprint)
-* [Option 2: Group Action](#### Option-2:-Group Action)
-* [Option 3: API](#### Option-3:-API)
-* [Summary of All Patches Deployed to a Server](### Summary-of-All-Patches-Deployed-to-a-Server)
-* [Detail of Patches Deployed in an Execution](### Detail-of-Patches-Deployed-in-an-Execution)
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Support](#support)
+* [Execution Options](#execution-options)
+* [Option 1: Blueprint](#option-1-blueprint)
+* [Option 2: Group Action](#ption-2-group-action)
+* [Option 3: API](#option-3-api)
+* [Summary of All Patches Deployed to a Server](#summary-of-all-patches-deployed-to-a-server)
+* [Detail of Patches Deployed in an Execution](#detail-of-patches-deployed-in-an-execution)
 
 
 
@@ -39,7 +39,7 @@ CenturyLink Cloud Users
 
 ### Prerequisites
 
-* Servers with Operating Systems listed in the overview, above
+* Servers with Operating Systems listed in the Overview, above
 * Careful consideration of the impacts of applying all available patches to a server
 
 ### Support
@@ -47,17 +47,18 @@ CenturyLink Cloud Users
 This service has been tested for the scope identified within this article. Product improvement is important to us so our Product Team will be aware of issues related to this service, but no one will providing direct client support. If you have suggestions for improvement, please submit a feature request.
 
 ### Pricing
+
 This service is free of charge.
 
 ### Execution Options
 
-There are three ways to deploy the package, described below. It can be executed against one VM at a time with a Blueprint. To deploy against multiple servers, there are two more options. Control Portal's server group action functionality can execute against all VMs in a server group. Alternatively, an API request can deploy against all VMs a user is authorized to administer under a single alias.
+There are three ways to deploy the package, described below. With a Blueprint, the script package can be executed against one VM at a time. Control Portal's server group action functionality can execute against all VMs in a server group. An API request can deploy against all VMs a user is authorized to administer under a single alias.
 
 For any method you choose, the following table will assist you with data needed for execution.
 
 
 **Operating Systems** | **Public Script Package Name** | **Package ID**
- --- | ---
+ --- | --- | ---
  Windows 2012 and 2012R2 | Windows Update Scripts | 94bd395f-9b54-4693-94ae-4f3aa93fc239
 
 ### Option 1: Blueprint
@@ -98,7 +99,7 @@ The execution will continue even after the completion of the script so please le
 After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
 
 
-### **OPTION 2: Group Action**
+### Option 2: Group Action
 
 Control Portal's server group action functionality allows for execution of a script package against one or multiple servers in a server group.
 
@@ -188,7 +189,7 @@ Get  https://patching.useast.appfog.ctl.io/rest/servers/OSD/server/VA1OSDPATCH33
 
 ### Request
 
-####URI and Querystring Parameters
+#### URI and Querystring Parameters
 
 **Name** | **Type** | **Description**
 --- | --- | ---
