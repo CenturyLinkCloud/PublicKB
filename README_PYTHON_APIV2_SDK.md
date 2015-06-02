@@ -22,6 +22,7 @@ will follow suit.
 First some basic stuff:
 
 ```python
+import clc
 
 # Set credentials.  These are the same credentials used to login to the web UI (https://control.tier3.com)
 clc.v2.SetCredentials("username","password")
