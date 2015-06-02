@@ -7,16 +7,17 @@
 }}}
 
 ![Alert Logic Logo](http://www.ingaa.org/File.aspx?id=21717)
+
 ###Partner Profile
 Alert Logic, the leader in security and compliance solutions for the cloud, provides Security-as-a-Service for on-premises, cloud, and hybrid infrastructures, delivering deep security insight and continuous protection for customers at a lower cost than traditional security solutions. Fully managed by a team of experts, the Alert Logic Security-as-a-Service solution provides network, system and web application protection immediately, wherever your IT infrastructure resides. Alert Logic partners with the leading cloud platforms and hosting providers to protect over 3,000 organizations worldwide. Built for cloud scale, our patented platform stores petabytes of data, analyses over 450 million events and identifies over 60,000 security incidents each month, which are managed by our 24x7 Security Operations Center. Alert Logic, founded in 2002, is headquartered in Houston, Texas, with offices in Seattle, Cardiff and London. 
 
-http://www.AlertLogic.com
+[http://www.AlertLogic.com](http://www.AlertLogic.com)
 
 #### Contact AlertLogic
 #####Alert Logic Sales and Support:
-- Email Support - support@alertlogic.com
+- Email Support - [support@alertlogic.com](mailto:support@alertlogic.com)
 - Telephone Support - +1.877.484.8383
-- Sales and Marketing - support@alertlogic.com
+- Sales and Marketing - [sales@alertlogic.com](mailto:sales@alertlogic.com)
 
 ### Description
 Alert Logic has integrated their Web Security Manager technology with the CenturyLink Cloud platform, publishing their virtual appliance as a CenturyLink Cloud Partner Template.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this security solution.
@@ -44,7 +45,7 @@ As your websites are learned Web Security Manager gradually turns towards a posi
 For more information, view the product information on Alert Logic's website: https://www.alertlogic.com/products-services/web-security-manager/
 
 ### Offer
-Alert Logic is making their Web Security Manager available for CenturyLink Cloud Users to deploy to their account.  In order to purchase a license or entitlement, please contact sales@alertlogic.com
+Alert Logic has provided a Virtual Appliance - called a Partner Template - that can be deployed to your CenturyLink Cloud account via a Service Task.  Although Service Tasks are ordinarily billed to the end user account, CenturyLink will provide a refund for the Service Task costs associated with deploying the Partner Template.  Please follow the process below to request credit. In order to purchase a license or entitlement, please contact Alert Logic Sales using the contact information in this article.  
 
 ### Audience
 CenturyLink Cloud Users
@@ -103,7 +104,26 @@ Follow these steps to access your Alert Logic Web Security Manager:
 Contact Alert Logic at +1.877.484.8383
 
 ### Pricing
-The cost associated with this deployment is $195/hr for the CenturyLink Cloud Service Tasks.  There are no Alert Logic license costs or additional fees bundled in.  Service Task Fees are available here: http://www.centurylinkcloud.com/service-tasks#Pricing
+There are no Alert Logic license costs included.  The cost to deploy the Partner Template will be billed as a Service Task, but CenturyLink will provide a credit for those costs.  In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees are available here: [http://www.centurylinkcloud.com/service-tasks](http://www.centurylinkcloud.com/service-tasks)
+
+#### Process to request credit for Service Task fee
+Follow this process to request credit on your account to re-imburse any expense to deploy the Partner Template
+
+1. Please copy and paste the email below and send it to [ecosystem@ctl.io](mailto:ecosystem@ctl.io)
+
+----
+
+TO: Ecosystem@CTL.io
+
+EMAIL SUBJECT:   Requesting Credit for Partner Template Deployment
+
+CLC Ecosystem Team,
+
+I am requesting a credit be placed on my account to cover the fees associated with deploying the Alert Logic WSM Partner Template to my account under the Service Task deployed on MM/DD/YYYY.  My CenturyLink Cloud username or account alias the credit needs to be placed on is ######.
+
+Thank you very much, your_name_here
+
+----
 
 ### Frequently Asked Questions
 Frequently Asked Questions:
