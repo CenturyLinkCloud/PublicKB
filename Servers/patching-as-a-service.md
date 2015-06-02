@@ -10,14 +10,17 @@
 
 ### Description
 
-This document describes how to launch a blueprint for patching and how to collect information on patches deployed.
+This document describes how to launch a script package for patching and how to collect information on patches deployed.
 
-Operating Systems may be patched on CenturyLink Cloud via a blueprint. This service allows the user to patch a VM to the latest available patches provided by the OS vendor. The blueprint will kick off one or multiple attempts to apply patches, including a series of reboots. Reboots will cease and the execution will complete when there are no more patches to apply.
+ This service allows the user to patch a VM to the latest available patches provided by the OS vendor. The package will kick off one or multiple attempts to apply patches, including a series of reboots. Reboots will cease and the execution will complete when there are no more patches to apply.
 
-Currently, the Operating Systems that may be updated with this service are:
+Currently, the Operating Systems that may be updated with this service are show below:
 
 * Windows 2012
 * Windows 2012R2
+
+
+
 
 ### Audience:
 
@@ -28,46 +31,75 @@ CenturyLink Cloud Users
 This service has been tested for the scope identified within this article. Product improvement is important to us so our Product Team will be aware of issues related to this service, but no one will providing direct client support. If you have suggestions for improvement, please submit a feature request.
 
 ### Pricing
-This service is currently free of charge.
+This service is free of charge.
 
-# Blueprint
+# Executing Script Package
+
+There are thee ways to deploy the package, described below. It can be executed against one VM at a time with a Blueprint or multiple VMs in a server group either through Control Portal's action functionality, or via an API request.
 
 ### Steps:
 
 1\. **Maintenance Mode**
 
-  The process initiated by the Blueprint may include several, automated reboots, so please disable alerts by putting the VM in maintenance mode.
+  The process initiated by the script package may include several, automated reboots, so - regardless how you choose to execute the package - please disable alerts by putting the VM(s) in maintenance mode first.
 
-2\. **Locate the correct Blueprint in the Blueprint Library**
+2\. **Select an Option for Executing the Package**
 
-  For Windows 2012, and Windows 2012R2, locate and select “Windows Update Scripts.”
+| Operating Systems | Public Script Package Name | Package ID |
+| --- | --- |
+| Windows 2012 and 2012R2 | Windows Update Scripts | 94bd395f-9b54-4693-94ae-4f3aa93fc239 |
 
-![Windows Update Blueprint](../images/Patching/PatchaaS_WindowsUpdateHover.png)
 
-3\. **Click the Deploy Blueprint Button**
+  * **OPTION 1: Use a Blueprint:**
 
-4\. **Set Required Parameters**
+    * Locate and select "Windows Update Scripts" within the Blueprint Library.
 
-Select whether you want to run under the default server administrator or specify credentials.
-Select the server you want to patch from the drop down.
-Press the green “next step 2” button.
+    ![Blueprint Image](../images/Patching/PatchaaS_WindowsUpdateHover.png)  
+    
+    * Click the Deploy Blueprint Button
+    * Set required parameters (Select whether you want to run under the default server administrator or specify credentials. Select the server you want to patch from the drop down. Press the green “next step 2” button.)
+    * Review and Confirm the Blueprint
+    * Deploy the Blueprint (You will see the deployment details stating the Blueprint is queued for execution. This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment times may vary. Please wait for the build queue to update deployment status.)
 
-5\. **Review and Confirm the Blueprint**
 
-6\. **Deploy the Blueprint**
 
-Once verified, click on the “deploy blueprint” button. You will see the deployment details stating the Blueprint is queued for execution.
-This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment times may vary. Please wait for the build queue to update deployment status.
+  * **OPTION 2: Use the API to [Execute Package](https://www.centurylinkcloud.com/api-docs/v2/#server-actions-execute-package):**
 
-You should receive an email notifying you the server patching has begun.
+  Please reference [API Documentation about authentication](https://www.centurylinkcloud.com/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests. Use the package ID in the table above. There are currently no parameters to add. Below is a JSON example:
 
-7\. **Deployment Complete**
+  ```
+  {
+    "servers": [
+        "{servername1}", "{servername2}"
+    ],
+    "package": {
+        "packageId": "94644f15-a6c6-4db2-881a-bf645a56cbe0",
+        "parameters": {
 
-The execution will continue even after the completion of the blueprint so please leave your VM in maintenance mode until you receive an email informing you of completion.
+        }
+    }
+}
+```
 
-8\. **Execution Complete**
 
-<p>After the patching is complete you will receive an email that patching is complete. Please remove the VM from maintenance mode.</p>
+  * **OPTION 3: Use a Group Action:**
+
+  Navigate to the group and select "execute package" from the [action drop-down](https://www.centurylinkcloud.com/knowledge-base/servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/). The name of the package to search for is "Windows Update Scripts."
+
+
+
+
+
+  ![Patching_GroupAction](../images/Patching/PatchaaS_GroupAction.png)
+
+
+3\. **Deployment Complete**
+
+The execution will continue even after the completion of the script so please leave your VM in maintenance mode until you receive an email informing you of completion.
+
+4\. **Execution Complete**
+
+After the patching is complete you will receive an email that patching is complete. Please remove the VM from maintenance mode.
 
 
 # Summary of All Patches Deployed to a Server
@@ -86,14 +118,14 @@ Reference [API Documentation about authentication](https://www.centurylinkcloud.
 ### Structure
 
 ```
-Get  http://patching-dev.useast.appfog.ctl.io/rest/{accountalias}/server/{servername}/patch
+Get  https://patching.useast.appfog.ctl.io/rest/servers/{alias}/server/{server}/patch
 
 ```
 
 ### Example
 
 ```
-Get  http://patching-dev.useast.appfog.ctl.io/rest/osd/server/VA1OSDTEST01/patch
+Get  https://patching.useast.appfog.ctl.io/rest/servers/OSD/server/VA1OSDPATCH33/patch
 ```
 
 ## Request
@@ -132,13 +164,13 @@ Reference [API Documentation about authentication](https://www.centurylinkcloud.
 ### Structure
 
 ```
-Get https://patching-dev.useast.appfog.ctl.io/rest/{accountalias}/server/{servername}/patch/{execution_id}
+Get https://patching.useast.appfog.ctl.io/rest/servers/{alias}/server/{server}/patch/{execution_id}
 ```
 
 ### Example
 
 ```
-Get http://patching-dev.useast.appfog.ctl.io/rest/osd/server/VA1OSDTEST01/patch/VA1-123456
+Get https://patching.useast.appfog.ctl.io/rest/servers/OSD/server/VA1OSDPATCH33/patch/VA1-132457
 ```
 
 ## Request
