@@ -5,7 +5,7 @@ These queue related functions generally align one-for-one with published API cal
 
 API v2 - https://t3n.zendesk.com/forums/21772620-Queue
 
-Server object variables:
+Requests object variables:
 
 	requests.requests
 	requests.error_requests
@@ -15,7 +15,6 @@ Server object variables:
 """
 
 # TODO - Do something with timing info from Request and Requests?
-# TODO - implement promises for queued servers. {"server":"api2","isQueued":true,"links":[{"rel":"status","href":"/v2/operations/btdi/status/wa1-127329","id":"wa1-127329"},{"rel":"self","href":"/v2/servers/BTDI/bdef3ca4227a45a6a43a59a87ebec81e?uuid=True","id":"bdef3ca4227a45a6a43a59a87ebec81e","verbs":["GET"]}]}
 
 import re
 import time
@@ -47,7 +46,8 @@ class Requests(object):
 
 		# Some requests_lst responses look different than others depending on the call (Create snapshot vs. delete snapshot)
 		# Add min-wrapper onto those missing it
-		if 'isQueued' in requests_lst:  requests_lst = [requests_lst]
+		if requests_lst is None:  raise(Exception("Unexpected requests response"))
+		elif 'isQueued' in requests_lst:  requests_lst = [requests_lst]
 		elif 'href' in requests_lst: requests_lst = [{'isQueued': True, 'links': [requests_lst]}]
 
 		for r in requests_lst:
