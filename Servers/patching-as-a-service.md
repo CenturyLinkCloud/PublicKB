@@ -111,7 +111,7 @@ The process initiated by the script package may include several, automated reboo
 
 2\. **Execute Action**
 
-Navigate to the group and select "execute package" from the [action drop-down](..servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/). The name of the package to search for is "Windows Update Scripts."
+Navigate to the group and select "execute package" from the [action drop-down](../servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/). The name of the package to search for is "Windows Update Scripts."
 
 
 ![Patching_GroupAction](../images/Patching/PatchaaS_GroupAction.png)
