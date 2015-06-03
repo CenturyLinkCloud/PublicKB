@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Tomcat - Blueprint",
-  "date": "05-06-2015",
+  "date": "06-02-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -12,7 +12,7 @@
 
 <img alt="Tomcat Logo" src="../images/bitnami_logos/tomcatstack-stack-110x117-60652c75ad3866c8a78c4a29d71d0194.png" style="border:0;float:right;max-width:250px">
    
-After reading this article, the reader should feel comfortable deploying the Tomcat stack by Bitnami.
+After reading this article, the reader should feel comfortable deploying the Tomcat stack (version 7.0.61-0) by Bitnami.
 
 <a href="https://bitnami.com/" rel="no-follow">Bitnami</a> has integrated their <a href="https://bitnami.com/stack/tomcat" rel="no-follow">Tomcat stack</a> with the CenturyLink Cloud platform with a single-click deploy solution.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Tomcat solution.
 
