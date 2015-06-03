@@ -22,7 +22,7 @@ class Network:
 		"""
 		if alias is None:  alias = clc.v1.Account.GetAlias()
 		if location is None:  location = clc.v1.Account.GetLocation()
-		r = clc.v1.API.Call('post','Network/GetAccountNetworks', { 'AccountAlias': alias, 'Location': location })
+		r = clc.v1.API.Call('post','Network/GetAccountNetworks', { 'AccountAlias': alias, 'Location': location },debug=True)
 		if int(r['StatusCode']) == 0:  return(r['Networks'])
 
 
