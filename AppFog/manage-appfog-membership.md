@@ -4,7 +4,8 @@
   "author": "Chris Sterling",
   "attachments": [],
   "related-products" : [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 ### IMPORTANT NOTE
