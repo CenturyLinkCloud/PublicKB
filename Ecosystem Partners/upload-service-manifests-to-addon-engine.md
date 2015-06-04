@@ -142,7 +142,7 @@ All of the attributes and their values returned in the provision response body a
 
 After implementing an Add-on API and creating a manifest for a Partner service, the Service Manifest can be uploaded and tested using the `kiri` CLI. The `kiri` CLI binary release can be downloaded for a specific platform (Windows, Mac, and Linux) from this URL:
 
-[https://kiri.useast.appfog.ctl.io](https://kiri.useast.appfog.ctl.io)
+[https://kiri.ctl.io](https://kiri.ctl.io)
 
 Once you've downloaded the appropriate `kiri` CLI binary for your platform and placed it on your PATH environment variable, the next steps are to upload and test your Service Manifest.
 
