@@ -63,7 +63,7 @@ There are multiple small changes to how the Add-on Engine manifest is configured
       "base_url": "https://sudosandwich.io/"
     },
     "test": {
-      "base_url": "https://localhost:8080/"
+      "base_url": "https://staging.sudosandwich.io/"
     },
     "password": "correcthorsebatterystaple"
   }
@@ -114,6 +114,7 @@ POST [base_url]
   options: {}
 }
 ```
+
 Here is a description of each body attribute:
 
 | Attribute | Value                                              |
