@@ -19,7 +19,7 @@ All customer requests (e.g. support, service tasks, product questions) should be
 By default, anything that cannot be done via self-service or [Service Task](https://www.centurylinkcloud.com/service-tasks/) is categorized as a custom request.
 
 ### What is the evaluation process?
-Custom requests are sent to a queue monitored by CenturyLink Cloud management. An executive reviews each request and approves or rejects the request after careful consideration. The support engineer then communicates this information back to the customer.
+Custom requests are sent to a queue monitored by CenturyLink Cloud management. An executive reviews each request and approves or rejects the request after careful consideration (note that a custom request that was approved in the past MAY not get approved a second time). The support engineer then communicates this information back to the customer.
 
 ### How long does it take for a request to get evaluated?
 There is no SLA on custom requests, but all items are typically reviewed and acted upon within 72 hours.
