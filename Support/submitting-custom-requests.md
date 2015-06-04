@@ -16,7 +16,7 @@ We encourage customers to [submit feature requests](../Support/how-do-i-submit-a
 All customer requests (e.g. support, service tasks, product questions) should be sent to [noc@ctl.io](mailto:noc@ctl.io). If that request requires a custom configuration, the support engineer will route it for approval.
 
 ### What qualifies as a custom request?
-By default, anything that cannot be done via self-service is categorized as a custom request.
+By default, anything that cannot be done via self-service or [Service Task](https://www.centurylinkcloud.com/service-tasks/) is categorized as a custom request.
 
 ### What is the evaluation process?
 Custom requests are sent to a queue monitored by CenturyLink Cloud management. An executive reviews each request and approves or rejects the request after careful consideration. The support engineer then communicates this information back to the customer.
