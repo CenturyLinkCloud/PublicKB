@@ -1,9 +1,15 @@
 {{{
   "title": "Ecosystem Partner List",
+<<<<<<< HEAD
   "date": "05-06-2016",
   "author": "<a href='https://www.linkedin.com/in/bstolzberg'>Bob Stolzberg</a> <a href='https://twitter.com/KeithResar'>@KeithResar</a> &amp; <a href='https://twitter.com/DaveShac'>@DaveShac</a>",
+=======
+  "date": "05-06-2015",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a> &amp; <a href='https://twitter.com/DaveShac'>@DaveShac</a>",
+>>>>>>> master
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 

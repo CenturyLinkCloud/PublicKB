@@ -4,7 +4,8 @@
   "author": "Chris Sterling",
   "attachments": [],
   "related-products" : [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 ### IMPORTANT NOTE
@@ -27,7 +28,7 @@ Download the appropriate [binary distribution of the Cloud Foundry CLI](https://
 
 ```
 $ cf -v
-cf version 6.10.0-b78bf10-2015-02-11T22:25:45+00:00
+cf version 6.11.0-bba7fcf-2015-04-14T16:45:03+00:00
 ```
 
 **NOTE:** The Ruby Gem based Cloud Foundry CLI is no longer supported and will not work with AppFog. Please make sure that you use the appropriate binary distribution from:

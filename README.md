@@ -19,11 +19,18 @@ The top of each .md file contains metadata about the knowledge base article itse
   "author": "Author Name",
   "attachments": [],
   "related-products" : [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 ```
 
-`contentIsHTML` Generally this should be set to `false`. Only when a document is written entirely in HTML syntax should this be set to true.
+#### `contentIsHTML`
+
+Generally this should be set to `false`. Only when a document is written entirely in HTML syntax should this be set to true.
+
+#### `sticky` (optional)
+
+If you would like to pin a kb article so that it always appears at the top of it's category, set `"sticky":true`. By default, it's set to `false`.
 
 ##How to Make Additions or Changes
 
@@ -35,12 +42,17 @@ The top of each .md file contains metadata about the knowledge base article itse
 
 3. Once your branch has been created, make your changes (add, edit, delete) your knowledge base article in your favorite Markdown editor (we like [Atom](https://atom.io/)).
 
+  ### Sub-Categories
+  
+  Within the top level categories, addtional tags can be assigned to articles based on the name of the articles parent folder name. Keep in mind the need for an addtional level of folders when linking to images or other articles when authoring an article in a sub-category folder.
+
   ### Links (KB article to KB article)
 
   Links to articles should follow this format:
 
     ```
     [Link Text](../category/kb-article-name.md)
+    [Link Text](../category/sub-category/kb-article-name.md)
     ```
     
     so like this (folder names are case-sensitive):
@@ -55,7 +67,11 @@ The top of each .md file contains metadata about the knowledge base article itse
   When adding an image to an article, place the image file in the `images/` directory in the root of this repo. In the article itself, set the image source path like so:
 
     ```
+    /* Top Level Category Article */
     ../images/[image file]
+    
+    /* Sub-Category Article */
+    ../../images/[image file]
     ```
 
   ### Attachments

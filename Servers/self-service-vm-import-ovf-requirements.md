@@ -49,3 +49,4 @@ However, some OVFs may still require significant “prep” work, depending on t
 * All OVF files will be stored in the FTP server located in your account's home data center
 * All OVF files will be deleted 5 days after initial import; please import your images soon after completion of the FTP transfer
 * Managed services are not available on imported VMs
+* Import failures can be caused by conflicting settings on the OVF. To assist with troubleshooting a failured OVF, try to import the OVF back into the original virtualized environment and gather logs from this activity.

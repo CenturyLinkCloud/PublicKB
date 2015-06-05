@@ -153,20 +153,16 @@ All of the attributes and their values returned in the provision response body a
 The deprovision request has only been slightly modified. The current AppFog Add-ons expect the URL to be `[base_url]/phpfog/resources/:id`. The path `/phpfog/resources` is no longer needed for Add-on Engine integration. Here is an example request:
 
 ```
-DELETE [base_url]/:id
+DELETE [base_url]/:uuid
 ```
 
-The `:id` value is the unique identifier provided for the provisioned service instance in the provision response above. The expected successful response is still:
+The `:uuid` that we send is the `uuid` that Add-on Engine generates as unique service instance ID from original POST to provision the service instance. The expected successful response is still:
 
 ```
 200 ok
 ```
 
 ### Operational considerations for Add-ons
-
-#### Whitelist Domain for Access to Partner Provisioning API
-
-Make sure that the domain `addons.ctl.io` is whitelisted to make connections to your Partner Provisioning API.
 
 #### Create New API for Add-on Engine
 
