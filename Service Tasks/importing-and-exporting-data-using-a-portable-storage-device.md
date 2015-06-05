@@ -34,6 +34,10 @@
     <li>Limit 1 TB/drive</li>
   </ul>
 </ul>
+<h3>Device retention</h3>
+<ul>
+  <li>Portable devices will not be kept for more than 5 days after the transfer is completed. If arrangements have not been made to return the device. The device will be detached and destroyed</li>
+</ul>
 <h3>Detailed Steps</h3>
 <p><strong>Requesting an Import</strong>
 </p>
