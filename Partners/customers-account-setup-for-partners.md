@@ -1,37 +1,10 @@
 {{{
   "title": "Customer Account Setup for Partners",
-  "date": "2-11-2015",
+  "date": "6-5-2015",
   "author": "",
   "attachments": [],
   "contentIsHTML": false
 }}}
-
-### Purpose
-
-- Explain how Partners setup accounts for new customers in the port
-- Explain how to change settings, add users and set permissions for accounts in the portal.
-
-### Benefits
-
-Ensures account setup is done correctly.
-Ensures account permissions are used correctly.
-
-### Audience
-
-Sales
-Sales Operations
-
-### What's Included
-
-Account Setup – Getting Started.
-How to create an account for a new customer in the portal.
-How to modify settings, add users and set permissions for new accounts in the portal.
-
-### Partner Action Items
-
-Create accounts for new customers and change settings, add users and grant permissions as needed.
-
----
 
 ### Create an Account for a New Customer
 
@@ -81,8 +54,3 @@ User permissions are hierarchical so a user may access the account to which they
 2. Select a user from the dropdown menu and select the roles you wish to assign that user.
 3. Click ‘Save’ to commit changes.
 
-
-### Action Items
-
-- Create an account (i.e., Sub Account) when you have a new customer and add users and set permissions and admins, as needed.
-- Communicate to customers that once their account is setup, they can add users and assign permissions and admins, to meet their needs.
