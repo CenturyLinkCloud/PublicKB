@@ -30,7 +30,7 @@
   [**Review the documentation for APIs here.**](https://www.centurylinkcloud.com/api-docs/v2/)
 
 
-###Minor Enhancements (3)###
+###Minor Enhancements (4)###
 
 * __Database as a Service.__ Certified Managed MySQL now works with RHEL6 and 7. You can [read more about Managed MySQL in our KB](../Managed Services/getting-started-with-managed-mysql.md).
 
