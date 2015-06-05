@@ -154,10 +154,10 @@ All of the attributes and their values returned in the provision response body a
 The deprovision request has only been slightly modified. The current AppFog Add-ons expect the URL to be `[base_url]/phpfog/resources/:id`. The path `/phpfog/resources` is no longer needed for Add-on Engine integration. Here is an example request:
 
 ```
-DELETE [base_url]/:uuid
+DELETE [base_url]/:id
 ```
 
-The `:uuid` that we send is the `uuid` that Add-on Engine generates as unique service instance ID from original POST to provision the service instance. The expected successful response is still:
+The `:id` that we send is the `id` that was returned in the provision response for the service instance. The expected successful response is:
 
 ```
 200 ok
