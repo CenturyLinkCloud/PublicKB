@@ -157,7 +157,7 @@ The `:id` that we send is the `id` that was returned in the provision response f
 
 After implementing an Add-on API and creating a manifest for a Partner service, the Service Manifest can be uploaded and tested using the `kiri` CLI. The `kiri` CLI binary release can be downloaded for a specific platform (Windows, Mac, and Linux) from this URL:
 
-[https://kiri.ctl.io](https://kiri.ctl.io)
+[http://kiri.ctl.io](http://kiri.ctl.io)
 
 Once you've downloaded the appropriate `kiri` CLI binary for your platform and placed it on your PATH environment variable, the next steps are to upload and test your Service Manifest.
 
