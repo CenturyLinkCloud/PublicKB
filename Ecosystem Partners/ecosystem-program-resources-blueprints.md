@@ -1,7 +1,7 @@
 {{{
   "title": "Ecosystem Program Partner Resource Guide - Blueprints",
-  "date": "3-16-2015",
-  "author": "Keith Resar",
+  "date": "6-05-2015",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -24,9 +24,10 @@ Reference the following key pages from the CenturyLink Cloud [Knowledge Base](ht
 
 ### Contributed Resources
 
+* [bpformation](https://github.com/CenturyLinkCloud/bpformation) - CLI and Python SDK used for managing Blueprints and Packages.  Easily and repeatably import, export, and update using a json object file as the authoritative representation of your Blueprint in lieu of using the web-based control portal
 * [Blueprint Package Manifest Builder Wizard](http://centurylinkcloud.github.io/Ecosystem/BlueprintManifestBuilder/) ([KB Instructions for use](../Blueprints/blueprint-package-manifest-builder-wizard.md))
 * [CenturyLink Cloud Ecosystem Github Repo](https://github.com/CenturyLinkCloud/Ecosystem/tree/master/Blueprints) containing reference patterns, support tools, and the actual packages used in some of our public Blueprints
-* [Blueprint Broker](https://github.com/CenturyLinkCloud/Ecosystem/blob/master/Blueprints/Blueprint%20Broker/README.md) is a cross-platform toolset that includes a discovery service, encrypted key-value store to maintain state, and a mailer tool enabling high-impact post-deployment communication
+* [Blueprint Broker](https://github.com/CenturyLinkCloud/bpbroker) is a cross-platform toolset that includes a discovery service, encrypted key-value store to maintain state, and a mailer tool enabling high-impact post-deployment communication
 
 
 ### Blueprint QA Process Requirements

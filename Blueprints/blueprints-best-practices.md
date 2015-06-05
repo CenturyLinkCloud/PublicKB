@@ -58,7 +58,7 @@ If you are adding capacity to an existing environment the most common pattern is
 The parameter types and other metadata is embedded within the Blueprint definition.  Changes to parameter names, types, etc. in an included package will not be reflected until the blueprint is edited and republished.
 
 ### Advanced Needs
-If your state needs are more advanced, such as requiring key exchange, automated registering of new assets, self-discovery, etc. we recommend investigating the bpbroker toolset which was specifically created to support this workflow.
+If your state needs are more advanced, such as requiring key exchange, automated registering of new assets, self-discovery, etc. we recommend investigating the [bpbroker](https://github.com/CenturyLinkCloud/bpbroker) toolset which was specifically created to support this workflow.
 
 ### Adding a Public IP Address
 CenturyLink Cloud includes an operation to add a public IP address to any server as part of the Blueprint deployment.  Take note that this operation adds both an additional private IP address then NATs a new public IP to the server.
