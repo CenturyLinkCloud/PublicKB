@@ -1,5 +1,5 @@
 {{{
-  "title": "Add-ons: IronWorker",
+  "title": "Add-ons: Blitz",
   "date": "1-26-2015",
   "author": "Chris Sterling",
   "attachments": [],
