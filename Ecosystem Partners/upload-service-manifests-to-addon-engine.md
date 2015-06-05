@@ -121,7 +121,7 @@ The response from the `POST [base_url]` request should look similar to:
 }
 ```
 
-The provision response must include an `id` value that represents the service instnace unique identifier from the Partner's side. The Partner API response can provide any number of additional variables. For instance, a MySQL service might provide a response like:
+The provision response must include an `id` value that represents the service instance unique identifier from the Partner's side. The Partner API response can provide any number of additional variables. For instance, a MySQL service might provide a response like:
 
 ```
 {
@@ -140,7 +140,7 @@ All of the attributes and their values returned in the provision response body a
 
 #### Deprovision API Endpoint
 
-The deprovision API endpoint using the same `[base_url]` as the provision API endpoint except that is called with the HTTP DELETE verb. Here is an example request:
+The deprovision API endpoint uses the same `[base_url]` as the provision API endpoint except that it is called with the HTTP DELETE verb. Here is an example request:
 
 ```
 DELETE [base_url]/:id
@@ -149,7 +149,7 @@ DELETE [base_url]/:id
 The `:id` that we send is the `id` that was returned in the provision response for the service instance. The expected successful response is:
 
 ```
-200 ok
+200 OK
 ```
 
 
