@@ -37,8 +37,11 @@ _BLUEPRINT_FTP_URL = False
 _GROUP_MAPPING = {}
 
 # Disable warnings
-import requests
-requests.packages.urllib3.disable_warnings()
+try:
+	import requests
+	requests.packages.urllib3.disable_warnings()
+except:
+	pass
 
 
 class output:
