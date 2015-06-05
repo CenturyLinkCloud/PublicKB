@@ -44,9 +44,11 @@
 
 * __Blueprint Formation.__ Take our new blueprint formation tool for a spin. [This GitHub repository](https://github.com/CenturyLinkCloud/bpformation) contains a command line interface to interact with the CenturyLink Cloud Blueprints packaging and workflow services.
 
-###Notifications (1)###
+###Notifications (2)###
 
 * __New Domains.__ Effective March 5, the default CenturyLink Cloud domain was updated to control.ctl.io. The URL for SAML users has also been updated to https://[`account-alias`].cloudportal.io (where `account-alias` is your four-letter account identifier). __Please update any code that leverages the CenturyLink Cloud API to ensure that it uses the supported endpoint.__ The legacy domains will continue to operate until July 15.
+
+* __AppFog Limited Beta.__ Beta access for AppFog continues to be available. Based on Cloud Foundry v2, this new platform for applications makes it easier for developers to build and scale cloud-native applications. To sign-up, visit [the AppFog product page](https://www.centurylinkcloud.com/appfog/).
 
 
 ###Ecosystem: New Blueprints (5)###
