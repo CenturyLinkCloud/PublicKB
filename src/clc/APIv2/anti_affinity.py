@@ -36,10 +36,14 @@ class AntiAffinity(object):
 		if not alias:  alias = clc.v2.Account.GetAlias()
 
 		policies = []
-		for r in clc.v2.API.Call('GET','antiAffinityPolicies/%s' % alias,{}):
-			if location and r['location'].lower()!=location.lower():  continue
-			servers = [obj['id'] for obj in r['links'] if obj['rel'] == "server"]
-			policies.append(AntiAffinity(id=r['id'],name=r['name'],location=r['location'],servers=servers))
+		policy_resp = clc.v2.API.Call('GET','antiAffinityPolicies/%s' % alias,{})
+		for k in policy_resp:
+			r_val = policy_resp[k]
+			for r in r_val:
+				if r.get('location'):
+					if location and r['location'].lower()!=location.lower():  continue
+					servers = [obj['id'] for obj in r['links'] if obj['rel'] == "server"]
+					policies.append(AntiAffinity(id=r['id'],name=r['name'],location=r['location'],servers=servers))
 
 		return(policies)
 
