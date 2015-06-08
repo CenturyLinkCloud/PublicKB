@@ -36,7 +36,7 @@
 
 * __UI improvements.__ The Control Portal continues to get easier on the eye. We've made some light improvements to the UI that we think you'll appreciate.
 
-* __CenturyLink Cloud Status.__ [status.ctl.io](http://status.ctl.io/) provides real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Email notifications surrounding Compute, Network, and Storage are now based on what servers an account has in a specific data center, allowing our customers to get the information they need - and only the informtaion that they need.
+* __CenturyLink Cloud Status.__ [status.ctl.io](http://status.ctl.io/) provides real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Email notifications surrounding Compute, Network, and Storage are now based on what servers an account has in a specific data center, allowing our customers to get the information they need - and only the information that they need.
 
   Our KB has more [information about the CenturyLink Cloud Status service.](../General/centurylink-cloud-status-faq.md)
   
