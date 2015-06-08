@@ -13,7 +13,7 @@ CenturyLink Cloud offers a robust, self-service cloud environment for building a
 We encourage customers to [submit feature requests](../Support/how-do-i-submit-a-feature-request.md) for new capabilities, but in the meantime, there is an option to request a non-standard configuration for review.
 
 #### How should custom requests be submitted?
-All customer requests (e.g. support, service tasks, product questions) should be sent to [noc@ctl.io](mailto:noc@ctl.io). If that request requires a custom configuration, the support engineer will route it for approval.
+All customer requests (e.g. support, service tasks, product questions) should be sent to [help@ctl.io](mailto:help@ctl.io). If that request requires a custom configuration, the support engineer will route it for approval.
 
 #### What qualifies as a custom request?
 By default, anything that cannot be done via self-service or [Service Task](https://www.centurylinkcloud.com/service-tasks/) is categorized as a custom request.
