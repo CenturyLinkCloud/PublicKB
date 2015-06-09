@@ -116,8 +116,10 @@ The response from the `POST [base_url]` request should look similar to:
 ```
 {
   "id": [Partner unique identifier for service instance provisioned],
-  "[VARIABLES]": [variables to be provided to service instance consumer],
-  ...
+  "config": {
+    "[VARIABLES]": [variables to be provided to service instance consumer],
+    ...
+  }
 }
 ```
 
@@ -125,18 +127,20 @@ The provision response must include an `id` value that represents the service in
 
 ```
 {
-  "id": "1111-2222-333-44444"
-  "hostname": "mysqlhost.partner.com",
-  "jdbcUrl": "jdbc:mysql://mysqlhost.partner.com:3306/db-abc123?user=G3nU$3r\u0026password=correcthorsebatterystaple",
-  "name": "db-abc123",
-  "password": "correcthorsebatterystaple",
-  "port": 3306,
-  "uri": "mysql://G3nU$3r:correcthorsebatterystaple@mysqlhost.partner.com:3306/db-abc123?reconnect=true",
-  "username": "G3nU$3r"
+  "id": "1111-2222-333-44444",
+  "config": {
+    "HOSTNAME": "mysqlhost.partner.com",
+    "JDBC_URL": "jdbc:mysql://mysqlhost.partner.com:3306/db-abc123?user=G3nU$3r\u0026password=correcthorsebatterystaple",
+    "DBNAME": "db-abc123",
+    "PASSWORD": "correcthorsebatterystaple",
+    "PORT": 3306,
+    "MYSQL_URL": "mysql://G3nU$3r:correcthorsebatterystaple@mysqlhost.partner.com:3306/db-abc123?reconnect=true",
+    "USERNAME": "G3nU$3r"
+  }
 }
 ```
 
-All of the attributes and their values returned in the provision response body are then provided to the consumer of the service instance.
+All of the attributes and their values returned in the provision response body's `config` block are then provided to the consumer of the service instance.
 
 #### Deprovision API Endpoint
 
