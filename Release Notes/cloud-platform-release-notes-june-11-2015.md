@@ -14,7 +14,7 @@
 
 * __Patching as a Service.__ Now available for free to all CenturyLink customers using Windows 2012. Our customers can patch their Windows 2012 servers through blueprints or 'execute package' on demand via the Control Portal or API. The service provides the capability to patch servers, know when the patching started and finished as well as list of all patches applied. __You can learn more about Patching as a Service in our KB soon!__
 
-* __Orchestrate.__ Our multi-modal managed datatabse service, [Orchestrate](https://www.centurylinkcloud.com/blog/post/centurylink-acquires-orchestrate/), gives developers a single API for key-value, geospatial, graph, and timeseries data. And it just keeps getting better and better! Check out the new functionality delivered this month:
+* __Orchestrate.__ Our multi-modal managed datatabse service, [Orchestrate](https://www.centurylinkcloud.com/blog/post/centurylink-acquires-orchestrate/), gives developers a single API for key-value, geospatial, graph, and timeseries data. And it just keeps getting better and better! Check out the new functionality delivered this month, focused on usability and exposing API features:
 
   * New dashboard query form. Explore the full glory of Orchestrate's API with the newly updated dashboard UI.
   * New bulk write API.  Write up to 250 documents, events, and graph relations in one request.
@@ -27,7 +27,7 @@
   * Get an intra-DC firewall policy list
   * Update an intra-DC firewall policy
 
-  [**Review the documentation for APIs here.**](https://www.centurylinkcloud.com/api-docs/v2/)
+  [**Review the documentation for APIs here.**](https://www.centurylinkcloud.com/api-docs/v2/#firewall-policies)
 
 
 ###Minor Enhancements (4)###
