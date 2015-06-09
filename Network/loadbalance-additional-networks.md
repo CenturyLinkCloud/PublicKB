@@ -19,18 +19,21 @@ Dedicated Load Balancers offer the capability of load balancing traffic destined
 
 ### Steps
 
-* Log into your dedicated load balancer RNAT IP (typically ends with .101)
-* Expand System > Network and click on Routes
-* Select the RNAT tab
-* Select the Action drop down menu, and select Configure RNAT
-* Add the network and subnet mask
+1. Log into your dedicated load balancer RNAT IP (typically ends with .101)
+2. Expand System > Network and click on Routes
+3. Select the RNAT tab
+4. Select the Action drop down menu, and select Configure RNAT
+5. Add the network and subnet mask
 
 Example:  10.10.10.0 for network, 255.255.255.0 for netmask
+
 ![LB Menu](../images/loadbalance-additional-networks-1.png)
 
-After you have completed adding networks the RNAT page will display the networks (including the network the dedicated LB's were provisioned on):
+6. After you have completed adding networks the RNAT page will display the networks (including the network the dedicated LB's were provisioned on):
+
 ![LB Menu](../images/loadbalance-additional-networks-2.png)
 
 ### Notes
 
-This example was performed on Netscaler VPX version 10.5
+* This example was performed on Netscaler VPX version 10.5
+* Please review the [Load Balancing Comparison Matrix](../network/load-balancing-comparison-matrix.md) the review the capabilities of dedicated vs shared load balancers
