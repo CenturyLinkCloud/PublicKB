@@ -1,5 +1,5 @@
 {{{
-  "title": "Upload Serice Manifests to Add-on Engine",
+  "title": "Upload Service Manifests to Add-on Engine",
   "date": "06-04-2015",
   "author": "Chris Sterling",
   "attachments": [],
@@ -21,7 +21,7 @@ Provides an additional channel for Partner services through the CenturyLink Clou
  
 ### What's Included
 
-- How to create a Serice Manifest
+- How to create a Service Manifest
 - How to use `kiri` CLI to upload Service Manifest
 - How to test service provisioning using `kiri` CLI
 - How Service Manifests are published to Add-ons marketplace
@@ -170,7 +170,7 @@ Once you've downloaded the appropriate `kiri` CLI binary for your platform and p
 The `kiri` CLI must be authenticated to a target Add-on Marketplace server using valid CenturyLink Cloud Control Portal credentials.
 
 ```
-$ kiri login myusername --authendpoint https://addon.ctl.io
+$ kiri login myusername --authendpoint https://api.ctl.io
 ```
 
 Once authenticated you can now upload and test Service Manifests located in your CenturyLink Cloud Control account. This ensures that one Partner is not able to see another Partner's Service Manifests.
