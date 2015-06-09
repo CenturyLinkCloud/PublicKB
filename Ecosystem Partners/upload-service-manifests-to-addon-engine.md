@@ -127,8 +127,8 @@ The provision response must include an `id` value that represents the service in
 
 ```
 {
+  "id": "1111-2222-333-44444",
   "config": {
-    "id": "1111-2222-333-44444"
     "hostname": "mysqlhost.partner.com",
     "jdbcUrl": "jdbc:mysql://mysqlhost.partner.com:3306/db-abc123?user=G3nU$3r\u0026password=correcthorsebatterystaple",
     "name": "db-abc123",
@@ -140,7 +140,7 @@ The provision response must include an `id` value that represents the service in
 }
 ```
 
-All of the attributes and their values returned in the provision response body are then provided to the consumer of the service instance.
+All of the attributes and their values returned in the provision response body's `config` block are then provided to the consumer of the service instance.
 
 #### Deprovision API Endpoint
 
