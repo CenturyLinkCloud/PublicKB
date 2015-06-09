@@ -1,6 +1,6 @@
 {{{
   "title": "Ecosystem Partner List",
-  "date": "05-06-2016",
+  "date": "06-09-2015",
   "author": "<a href='https://www.linkedin.com/in/bstolzberg'>Bob Stolzberg</a> <a href='https://twitter.com/KeithResar'>@KeithResar</a> &amp; <a href='https://twitter.com/DaveShac'>@DaveShac</a>",
   "attachments": [],
   "contentIsHTML": false,
@@ -94,6 +94,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [MySQL](../Managed Services/getting-started-with-managed-mysql.md)   	| Blueprint (Managed)   | Broadly adopted open source relational database management system   |
 | [Pivotal GemFire](../Ecosystem Partners/getting-started-with-pivotal-gemfire-blueprint.md)   	| Blueprint    | In-memory distributed database for high scale custom applications    |
 | [Pivotal Greenplum](../Ecosystem Partners/getting-started-with-pivotal-greenplum-blueprint.md)   	| Blueprint    | Enterprise-grade analytical data warehouse    |
+| [Pivotal HD + HAWQ](../Ecosystem Partners/getting-started-with-pivotal-hd-hawq.md)   	| Blueprint    | Enterprise-grade Hadoop cluster    |
 | [Saratoga Data Flume](../Ecosystem Partners/getting-started-with-saratoga-data-flume-blueprint.md)   	| Blueprint    | File transfer acceleration software    |
 | [XtremeData dbX](../Ecosystem Partners/getting-started-with-xtremedata-dbx-blueprint.md)   	| Blueprint    | On-Demand Big Data Analytics with real-time ingest    |
 
