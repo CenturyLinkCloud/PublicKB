@@ -3,7 +3,8 @@
   "date": "5-1-2015",
   "author": "",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 ### Description
