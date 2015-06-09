@@ -4,7 +4,7 @@
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
-  "sticky": false
+  "sticky": true
 }}}
 
 The CenturyLink Cloud Platform provides clients with various integrated and custom solutions to protect and rapidly recovery data.
