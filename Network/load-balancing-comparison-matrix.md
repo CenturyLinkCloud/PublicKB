@@ -3,7 +3,8 @@
   "date": "4-24-2015",
   "author": "Chris Little",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 ### Overview
