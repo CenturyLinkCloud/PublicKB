@@ -1,6 +1,6 @@
 {{{
-  "title": "Deploying Your First Application with AppFog, A Step by Step Guide",
-  "date": "06-9-2015",
+  "title": "Using Windows to Deploy Your First Application to AppFog, A Step by Step Guide",
+  "date": "06-10-2015",
   "author": "Kelly Malloy",
   "attachments": [],
   "related-products" : [],
@@ -13,7 +13,7 @@ AppFog is CenturyLink’s scalable, robust, high performing multi-tenant Platfor
 
 ### Prerequisites
 
-We have found that use of the word PaaS creates significant confusion with many customers. For this reason throughout this guide we have used the term “Cloud Native Application Platform”.  The guide assumes that the reader has no experience with Cloud Foundry and does not understand what it means to push an application to a Cloud Native Application Platform.  This guide requires the AppFog functionality to be enabled on your CenturyLink Cloud Platform account.  Later in this guide more detail will be provided on determining this setting.  This guide will use an application created and published by a third party named “spring-music” in order to demonstrate the functionality of Cloud Foundry.  The application is published on GiHhub and instructions for obtaining this application will be provided when required.
+We have found that the word PaaS has different meanings to customers as various cloud providers have different implementations. For this reason throughout this guide we have used the term “Cloud Native Application Platform”.  The guide assumes that the reader has no experience with Cloud Foundry and does not understand what it means to push an application to a Cloud Native Application Platform.  This guide requires the AppFog functionality to be enabled on your CenturyLink Cloud Platform account.  Later in this guide more detail will be provided on determining this setting.  This guide will use an application created and published by a third party named “spring-music” in order to demonstrate the functionality of Cloud Foundry.  The application is published on GiHhub and instructions for obtaining this application will be provided when required.
 
 ### Steps
 
