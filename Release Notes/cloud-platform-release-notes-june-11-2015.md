@@ -82,4 +82,10 @@ Even though our global cloud platform is able to scale to various enterprise wor
 
 ###Bug Fixes (1)###
 
-* __Roles: Server Scheduler.__ A user with this role can schedule a power op, but they cannot perform a power op from server details. Now, when a user confirms the action, the user is redirected to the queue request and the request is processed
+* __Roles: Server Scheduler.__ A user with this role can schedule a power op, but they cannot perform a power op from server details. Now, when a user confirms the action, the user is redirected to the queue request and the request is processed.
+
+* __Intra DC Firewall Additions.__ This experimental API has been updated with improved error messaging. When a user attempts to use this process to create a cross DC firewall, a 400 error is provided. The page loads faster too!
+
+* __Billing for Monthly Recurring Charges.__ We have made updates to ensure that previously omitted additional charges for services such as Dedicated Load Balancers and Cross Connects are included on monthly invoices.
+
+* __OVF Import Timeout.__ Importing cross DC OVF files can sometimes take more than 60 minutes. To ease any pain around this, timeouts have been increased from 60 minutes to 120 minutes. 
