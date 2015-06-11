@@ -25,13 +25,13 @@ Dedicated Load Balancers offer the capability of load balancing traffic destined
 4. Select the Action drop down menu, and select Configure RNAT
 5. Add the network and subnet mask
 
-Example:  10.10.10.0 for network, 255.255.255.0 for netmask
+  Example:  10.10.10.0 for network, 255.255.255.0 for netmask
 
-![LB Menu](../images/loadbalance-additional-networks-1.png)
+  ![LB Menu](../images/loadbalance-additional-networks-1.png)
 
 6. After you have completed adding networks the RNAT page will display the networks (including the network the dedicated LB's were provisioned on):
 
-![LB Menu](../images/loadbalance-additional-networks-2.png)
+  ![LB Menu](../images/loadbalance-additional-networks-2.png)
 
 ### Notes
 
