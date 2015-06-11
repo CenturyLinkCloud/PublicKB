@@ -6,8 +6,8 @@
   "contentIsHTML": false
 }}}
 
-Table of Contents
-=================
+###Table of Contents
+
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
@@ -18,7 +18,6 @@ Table of Contents
 * [Option 3: API](#option-3-api)
 * [Summary of All Patches Deployed to a Server](#summary-of-all-patches-deployed-to-a-server)
 * [Detail of Patches Deployed in an Execution](#detail-of-patches-deployed-in-an-execution)
-
 
 
 ### Overview
