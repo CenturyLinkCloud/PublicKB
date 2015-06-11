@@ -41,6 +41,7 @@ CenturyLink Cloud Users
 
 * Servers with Operating Systems listed in the Overview, above
 * Careful consideration of the impacts of applying all available patches to a server
+* It is recommended that you log into Control with a user account at the same account level as the servers you intend to patch so that you can get email notifications. You may be in a parent account and run patching on sub-account, but you will not receive email notifications.
 
 ### Support
 
@@ -61,42 +62,43 @@ For any method you choose, the following table will assist you with data needed 
  --- | --- | ---
  Windows 2012 and 2012R2 | Windows Update Scripts | 94bd395f-9b54-4693-94ae-4f3aa93fc239
 
+
 ### Option 1: Blueprint
 
 Using a Blueprint, you can deploy patches against a single server through Control Portal.
 
 #### Steps
 
-1\. **Maintenance Mode**
+1\. Maintenance Mode
 
 The process initiated by the script package may include several, automated reboots, so - regardless how you choose to execute the package - please disable alerts by putting the server(s) in maintenance mode first.
 
-2\. **Select the Blueprint**
+2\. Select the Blueprint
 
 Locate and select "Windows Update Scripts" within the Blueprint Library
 
-![Blueprint Image](../images/Patching/PatchaaS_WindowsUpdateHover.png)
+![Blueprint Image](../images/Patching/PatchaaS_WindowsUpdateHoverProd.png)
 
 
-3\. **Click the Deploy Blueprint Button**
+3\. Click the Deploy Blueprint Button
 
-4\. **Set required parameters**
+4\. Set required parameters
 
 Select whether you want to run under the default server administrator or specify credentials. Select the server you want to patch from the drop down. Press the green “next step 2” button.
 
-5\. **Review and Confirm the Blueprint**
+5\. Review and Confirm the Blueprint
 
-6\. **Deploy the Blueprint**
+6\. Deploy the Blueprint
 
 You will see the deployment details stating the Blueprint is queued for execution. This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment times may vary. Please wait for the build queue to update deployment status.
 
-7\. **Deployment Complete**
+7\. Deployment Complete
 
 The execution will continue even after the completion of the script so please leave your server in maintenance mode until you receive an email informing you of completion.
 
-8\. **Execution Complete**
+8\. Execution Complete
 
-After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
+If you followed the prerequisites mentioned above, after the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
 
 
 ### Option 2: Group Action
@@ -105,24 +107,24 @@ Control Portal's server group action functionality allows for execution of a scr
 
 #### Steps
 
-1\. **Maintenance Mode**
+1\. Maintenance Mode
 
 The process initiated by the script package may include several, automated reboots, so - regardless how you choose to execute the package - please disable alerts by putting the server(s) in maintenance mode first.
 
-2\. **Execute Action**
+2\. Execute Action
 
 Navigate to the group and select "execute package" from the [action drop-down](../servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) . The name of the package to search for is "Windows Update Scripts."
 
 
 ![Patching_GroupAction](../images/Patching/PatchaaS_GroupAction.png)
 
-3\. **Deployment Complete**
+3\. Deployment Complete
 
   The execution will continue even after the completion of the script so please leave your server in maintenance mode until you receive an email informing you of completion.
 
-4\. **Execution Complete**
+4\. Execution Complete
 
-  After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
+  If you followed the pre-requisites mentioned above, after the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
 
 ### Option 3: API
 
@@ -130,11 +132,11 @@ An API request can deploy against all VMs a user is authorized to administer und
 
 #### Steps
 
-1\. **Maintenance Mode**
+1\. Maintenance Mode
 
 The process initiated by the script package may include several, automated reboots, so - regardless how you choose to execute the package - please disable alerts by putting the server(s) in maintenance mode first.
 
-2\. **Execute Package**
+2\. Execute Package
 
 Please reference [API Documentation about authentication](https://www.centurylinkcloud.com/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests. Review the [Execute Package](https://www.centurylinkcloud.com/api-docs/v2/#server-actions-execute-package) to determine how to proceed. There are currently no parameters to add. Below is a JSON example:
 
@@ -153,9 +155,9 @@ Please reference [API Documentation about authentication](https://www.centurylin
 }
 ```
 
-3\. **Execution Complete**
+3\. Execution Complete
 
-  After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
+If you followed the prerequisites mentioned above, after the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
 
 
 
