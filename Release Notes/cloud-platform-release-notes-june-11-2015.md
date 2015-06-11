@@ -80,7 +80,7 @@ Even though our global cloud platform is able to scale to various enterprise wor
   * [ImageLayers.io](http://www.imagelayers.io/) v1.0.2: Support for Mobile views, social sharing buttons and ability to select specific tag for badging images. Learn more on the [ImageLayers wiki](https://github.com/CenturyLinkLabs/imagelayers-graph).
   * [Panamax](http://www.panamax.io/) (v0.6.3) now supports cAdvisor 0.13.0 and CoreOS 647.2.0.
 
-###Bug Fixes (1)###
+###Bug Fixes (4)###
 
 * __Roles: Server Scheduler.__ A user with this role can schedule a power op, but they cannot perform a power op from server details. Now, when a user confirms the action, the user is redirected to the queue request and the request is processed.
 
