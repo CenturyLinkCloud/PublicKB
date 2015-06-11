@@ -9,11 +9,11 @@
 
 ### Overview
 
-AppFog is CenturyLink’s scalable, robust, high performing multi-tenant Platform-as-a-Service (Paas) platform.  This product has been updated with several powerful new features including automatic cross datacenter provisioning and replication.  This important new features creates a high level of application availability that can allow applications to stay online during a datacenter failure event.
+This guide provides step by step instructions to deploy an application to AppFog using a Windows client.  
 
 ### Prerequisites
 
-We have found that the word PaaS has different meanings to customers as various cloud providers have different implementations. For this reason throughout this guide we have used the term “Cloud Native Application Platform”.  The guide assumes that the reader has no experience with Cloud Foundry and does not understand what it means to push an application to a Cloud Native Application Platform.  This guide requires the AppFog functionality to be enabled on your CenturyLink Cloud Platform account.  Later in this guide more detail will be provided on determining this setting.  This guide will use an application created and published by a third party named “spring-music” in order to demonstrate the functionality of Cloud Foundry.  The application is published on GiHhub and instructions for obtaining this application will be provided when required.
+The guide assumes that the reader has no experience with Cloud Foundry and does not understand what it means to push an application to a cloud native application platform.  This guide requires the AppFog functionality to be enabled on your CenturyLink Cloud Platform account.  Later in this guide more detail will be provided on determining this setting.  This guide will use an application created and published by a third party named “spring-music” in order to demonstrate the functionality of Cloud Foundry.  The application is published on GiHhub and instructions for obtaining this application will be provided when required.
 
 ### Steps
 
@@ -81,4 +81,4 @@ Once the application has been pushed to the API Endpoint you can issue the comma
 
 ![Pushing Application ](../images/Deploying-Your-First-Application-to-AppFog-Step-By-Step-11.png)
 
-That completes the process for publishing your first application to CenturyLink Cloud, Cloud Native Application Platform!  This powerful platform allows for quick deployments that are easily scalable and provide the application availability that many organizations require.
+That completes the process for publishing your first application to CenturyLink Cloud Appfog platform!  This powerful platform allows for quick deployments that are easily scalable and provide the application availability that many organizations require.
