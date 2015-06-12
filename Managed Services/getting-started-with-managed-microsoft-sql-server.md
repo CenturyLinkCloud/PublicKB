@@ -64,6 +64,10 @@ The Microsoft SQL Server (MS-SQL) database is a comprehensive and integrated dat
 
 A: CenturyLink Cloud Managed MS SQL is priced by the instance, billed hourly.
 
+**Q: How do I request MSSQL Mirroring or MSSQL AlwaysOn Configuration?**
+
+A: MSSQL Mirroring and MSSQL AlwaysOn configurations are available as a service task request to the CenturyLink Cloud helpdesk.  After provisioning your MSSQL instances, you can request configuration of either service by simply opening a ticket with noc@ctl.io.  Configuration of the services are billed at a rate of $195/hr.  
+
 **Q: Can the customer have multiple MS SQL instances installed on the same server?**
 
 A: Not at this time.
