@@ -11,9 +11,9 @@
 <ul>
 <li><a href="#installation">Installation</a>
 <ul>
-<li><a href="/hc/en-us/articles/203968793" target="_blank">Linux</a></li>
-<li><a href="/hc/en-us/articles/204333728" target="_blank">Mac OS X</a></li>
-<li><a href="/hc/en-us/articles/205027897" target="_blank">Windows</a></li>
+<li><a href="/installing-the-af-cli-tool-on-linux/" target="_blank">Linux</a></li>
+<li><a href="/installing-the-af-cli-tool-on-mac-os-x/" target="_blank">Mac OS X</a></li>
+<li><a href="/installing-the-af-cli-tool-on-windows/" target="_blank">Windows</a></li>
 </ul>
 </li>
 <li><a href="#usage">Usage</a></li>

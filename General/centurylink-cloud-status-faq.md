@@ -10,10 +10,6 @@
 
 A: It is a portal that allows users to gain insight into the health of the cloud platform, stay in tune with service incidents, and learn about upcoming maintenance.
 
-**Q: When is this service being released?**
-
-A: CenturyLink Cloud Status will be available starting on March 10th, 2015.
-
 **Q: What does this mean for users of the CenturyLink Cloud platform?**
 
 A: This feature will provide a self-service mechanism for staying current on cloud system status, incident progress, and upcoming maintenance activities. After the release date, maintenance and outage emails will stop coming from communications@centurylinkcloud.com. All notifications will come from CenturyLink Cloud Notification at noc@ctl.io.
