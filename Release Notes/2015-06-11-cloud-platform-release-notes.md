@@ -10,7 +10,7 @@
 
 * __Managed OS.__ Clients can leverage our deep expertise in infrastructure and application management and offload critical IT functions for important applications. Managed servers are regularly patched and monitored, so the risks from viruses and other threats are reduced. __Managed OS are now available in three new locations: Singapore (SG1), Toronto (CA3), and Chicago (IL1).__
 
-  Managed OS continue to be available in Virginia (VA1), and Santa Clara (UC1).
+  Managed OS continue to be available in Virginia (VA1), Santa Clara (UC1) and London (GB3).
 
 * __Patching as a Service.__ Now available for free to all CenturyLink customers using Windows 2012. Our customers can patch their Windows 2012 servers through blueprints or 'execute package' on demand via the Control Portal or API. The service provides the capability to patch servers, know when the patching started and finished as well as list of all patches applied. __You can learn more about Patching as a Service in our KB soon!__
 
@@ -30,7 +30,7 @@
   [**Review the documentation for APIs here.**](https://www.centurylinkcloud.com/api-docs/v2/#firewall-policies)
 
 
-###Minor Enhancements (4)###
+###Minor Enhancements (3###
 
 * __Database as a Service.__ Certified Managed MySQL now works with RHEL6 and 7. You can [read more about Managed MySQL in our KB](../Managed Services/getting-started-with-managed-mysql.md).
 
@@ -39,8 +39,7 @@
 * __CenturyLink Cloud Status.__ [status.ctl.io](http://status.ctl.io/) provides real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Notifications surrounding Compute, Network, and Storage are now based on what servers an account has in a specific data center, allowing our customers to get the information they need - and only the information that they need.
 
   Our KB has more [information about the CenturyLink Cloud Status service.](../General/centurylink-cloud-status-faq.md)
-  
-* __Managed Backup.__ Managed Backup is once again available in our GB3 data center.
+
 
 ###Online Tools (1)###
 
