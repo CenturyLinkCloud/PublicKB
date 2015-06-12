@@ -119,7 +119,7 @@ POST [base_url]
 {
   uuid: [Add-on Engine generated service instance ID],
   plan: [plan ID from partner manifest],
-  region: 'us-east',
+  region: 'useast',
   options: {}
 }
 ```

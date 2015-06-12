@@ -105,7 +105,7 @@ POST [base_url]
 {
   uuid: [Add-on Marketplace generated service instance ID],
   plan: [plan ID from Partner Service Manifest],
-  region: 'us-east',
+  region: 'useast',
   options: {}
 }
 ```
