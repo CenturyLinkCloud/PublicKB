@@ -209,6 +209,6 @@ $ kiri test deprovision sudosandwich 1234567890
 
 ### Add-on publishing process
 
-Once a service manifest is uploaded to Add-on Marketplace server and the test provisioning is working as expected, please submit a ticket to publish the service by sending email to support@ctl.io. To help direct your ticket to our team, please put `[ADDON]` into subject of email.
+Once a service manifest is uploaded to Add-on Marketplace server and the test provisioning is working as expected, please submit a ticket to publish the service by sending email to <a href="mailto:support@ctl.io">support@ctl.io</a>. To help direct your ticket to our team, please put `[ADDON]` into subject of email.
 
 Our typical process will be to enable the Add-on for your Partner CenturyLink Cloud account on AppFog so you can run a production test with a deployed application. If that works as expected then we'll publish it officially to the Add-on Marketplace.
