@@ -22,6 +22,7 @@ Provides an additional channel for Partner services through the CenturyLink Clou
 
 - Changes to Add-on service manifests
 - Changes to Add-on Partner provisioning API
+- Add-on publishing process
 - Operational considerations for Add-ons
 
 ### Partner Action Items
@@ -59,11 +60,15 @@ There are multiple small changes to how the Add-on Engine manifest is configured
     }
   ],
   "api": {
+    "config_vars": ["MYSANDWICH"],
+    "sso_salt": "STATISTICALLY.SIGNIFICANT",
     "production": {
-      "base_url": "https://sudosandwich.io/"
+      "base_url": "https://api.sudosandwich.io/",
+      "sso_url": "https://dashboard.sudosandwich.io/"
     },
     "test": {
-      "base_url": "https://staging.sudosandwich.io/"
+      "base_url": "https://api.staging.sudosandwich.io/",
+      "sso_url": "https://dashboard.staging.sudosandwich.io/"
     },
     "password": "correcthorsebatterystaple"
   }
@@ -74,8 +79,12 @@ There are multiple small changes to how the Add-on Engine manifest is configured
 
 - `id` - The add-on id. All lowercase, no spaces or punctuation. This must be a unique name for your service. Also used as username in HTTP Basic Auth requests to partner provisioning API endpoints.
 - `name` - The friendly, short description of your service. Best if kept under 80 characters.
+- `api/config_vars` - An array of attribute names to pull from provision response and expose to consumers of the service instance such as URL and credentials. We recommend these are UPPER_CASE formatted.
+- `api/sso_salt` - Single sign-on salt for connecting with service instance service instance management partner site.
 - `api/production/base_url` - The production URL of the provisioning service API endpoint.
+- `api/production/sso_url` - The production URL to send service consumers to manage service instances on partner site.
 - `api/test/base_url` - The test URL of the provisioning service API endpoint used for local development testing.
+- `api/test/sso_url` - The test URL to send service consumers to manage service instances on partner site.
 - `api/password` - The password used by Add-on Engine to authenticate against the partner provisioning API endpoints via HTTP Basic Auth.
 - `plans/id` - The unique identifier for the plan that will be be sent to the partner provision API endpoint.
 - `plans/name` - The display name of the plan that will be offered as a version of the service.
@@ -129,27 +138,31 @@ The response from the `POST [base_url]` request should look similar to:
 ```
 {
   "id": [Partner unique identifier for service instance provisioned],
-  "[VARIABLES]": [variables to be provided to service instance consumer],
-  ...
+  "config": {
+    "[VARIABLES]": [variables to be provided to service instance consumer],
+    ...
+  }
 }
 ```
 
-The Partner API response can provide any number of variables. For instance, a MySQL service might provide a response like:
+The provision response must include an `id` value that represents the service instance unique identifier from the Partner's side. The Partner API response can provide any number of additional variables. For instance, a MySQL service might provide a response like:
 
 ```
 {
-  "id": "1111-2222-333-44444"
-  "hostname": "mysqlhost.partner.com",
-  "jdbcUrl": "jdbc:mysql://mysqlhost.partner.com:3306/db-abc123?user=G3nU$3r\u0026password=correcthorsebatterystaple",
-  "name": "db-abc123",
-  "password": "correcthorsebatterystaple",
-  "port": 3306,
-  "uri": "mysql://G3nU$3r:correcthorsebatterystaple@mysqlhost.partner.com:3306/db-abc123?reconnect=true",
-  "username": "G3nU$3r"
+  "id": "1111-2222-333-44444",
+  "config": {
+    "HOSTNAME": "mysqlhost.partner.com",
+    "JDBC_URL": "jdbc:mysql://mysqlhost.partner.com:3306/db-abc123?user=G3nU$3r\u0026password=correcthorsebatterystaple",
+    "DBNAME": "db-abc123",
+    "PASSWORD": "correcthorsebatterystaple",
+    "PORT": 3306,
+    "MYSQL_URL": "mysql://G3nU$3r:correcthorsebatterystaple@mysqlhost.partner.com:3306/db-abc123?reconnect=true",
+    "USERNAME": "G3nU$3r"
+  }
 }
 ```
 
-All of the attributes and their values returned in the provision response body are then provided to the consumer of the service instance.
+All of the attributes and their values returned in the provision response body's `config` block are then provided to the consumer of the service instance.
 
 The deprovision request has only been slightly modified. The current AppFog Add-ons expect the URL to be `[base_url]/phpfog/resources/:id`. The path `/phpfog/resources` is no longer needed for Add-on Engine integration. Here is an example request:
 

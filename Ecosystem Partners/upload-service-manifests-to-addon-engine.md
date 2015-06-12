@@ -58,11 +58,15 @@ The CenturyLink Cloud Add-on Service Manifest describes how to provision service
     }
   ],
   "api": {
+    "config_vars": ["MYSANDWICH"],
+    "sso_salt": "STATISTICALLY.SIGNIFICANT",
     "production": {
-      "base_url": "https://sudosandwich.io/"
+      "base_url": "https://api.sudosandwich.io/",
+      "sso_url": "https://dashboard.sudosandwich.io/"
     },
     "test": {
-      "base_url": "https://staging.sudosandwich.io/"
+      "base_url": "https://api.staging.sudosandwich.io/",
+      "sso_url": "https://dashboard.staging.sudosandwich.io/"
     },
     "password": "correcthorsebatterystaple"
   }
@@ -73,8 +77,12 @@ The CenturyLink Cloud Add-on Service Manifest describes how to provision service
 
 - `id` - The add-on id. All lowercase, no spaces or punctuation. This must be a unique name for your service. Also used as username in HTTP Basic Auth requests to partner provisioning API endpoints.
 - `name` - The friendly, short description of your service. Best if kept under 80 characters.
+- `api/config_vars` - An array of attribute names to pull from provision response and expose to consumers of the service instance such as URL and credentials. We recommend these are UPPER_CASE formatted.
+- `api/sso_salt` - Single sign-on salt for connecting with service instance service instance management partner site.
 - `api/production/base_url` - The production URL of the provisioning service API endpoint.
+- `api/production/sso_url` - The production URL to send service consumers to manage service instances on partner site.
 - `api/test/base_url` - The test URL of the provisioning service API endpoint used for local development testing.
+- `api/test/sso_url` - The test URL to send service consumers to manage service instances on partner site.
 - `api/password` - The password used by Add-on Engine to authenticate against the partner provisioning API endpoints via HTTP Basic Auth.
 - `plans/id` - The unique identifier for the plan that will be be sent to the partner provision API endpoint.
 - `plans/name` - The display name of the plan that will be offered as a version of the service.
@@ -198,3 +206,9 @@ This provisions an instance of the `sudosandwich` service with a fake instance I
 ```
 $ kiri test deprovision sudosandwich 1234567890
 ```
+
+### Add-on publishing process
+
+Once a service manifest is uploaded to Add-on Marketplace server and the test provisioning is working as expected, please submit a ticket to publish the service by sending email to support@ctl.io. To help direct your ticket to our team, please put `[ADDON]` into subject of email.
+
+Our typical process will be to enable the Add-on for your Partner CenturyLink Cloud account on AppFog so you can run a production test with a deployed application. If that works as expected then we'll publish it officially to the Add-on Marketplace.
