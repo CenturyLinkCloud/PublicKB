@@ -38,10 +38,8 @@ You may also navigate to AppFog via the icon on the left-side vertical navigatio
 
 ![AppFog icon in Vertical Navigation](../images/appfog-icon-nav.png)
 
-Navigate to AppFog using either navigation approach and now it is time to create an AppFog Organization unless someone else has done so for your Control Portal account. You will know that an AppFog Organization has been created for your account if there is no “create org” button and instead it looks something like the following:
+Navigate to AppFog using either navigation approach and now it is time to enable deployment to AppFog regions, US East and/or US West. Each region has its own "add region" button to enable it in your AppFog:
 
 ![AppFog Overview](../images/appfog-overview.png)
 
-If the AppFog Organization has not been created for your account, then click the "create org" button:
-
-![AppFog Create Organization](../images/appfog-create-org.png)
+If the region has already been enabled then there the region will be a link to the region overview page and no "add region" button will be displayed on the region row.
