@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>We recommend using version 2.1 or older as some users have reported issues with Ruby 2.2 compiling.</p>
+<p>We recommend using version 2.0 or older as some users have reported issues with Ruby 2.2 compiling.</p>
 <pre><code>$ gem install af
 </code></pre>
 <ul>
