@@ -57,7 +57,7 @@ Before a Blueprint can be publicly published it must pass a CenturyLink led QA p
 ### Ongoing Blueprints QA
 
 CenturyLink customers trust that all services available as part of the [Marketplace Provider Program](https://www.centurylinkcloud.com/marketplace/program/) 
-will deploy and function as expected.  To that end CenturyLink executed an ongoing testing service that validates successful deployment and operation
-of all public Blueprints on a regular basis.
+will deploy and function as expected.  To that end CenturyLink maintains quality throughout the Marketplace by executring an ongoing testing service 
+that validates successful deployment and operation of all public Blueprints on a regular basis.
 
 
