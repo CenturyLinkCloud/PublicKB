@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started With OSSEC Blueprints",
-  "date": "3-6-2015",
-  "author": "Keith Resar",
+  "date": "6-17-2015",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -21,7 +21,7 @@ CenturyLink has integrated the OSSEC HIDS solution in to the CenturyLink Cloud p
 
 OSSEC is a free, open-source host-based intrusion detection system (HIDS). It performs log analysis, integrity checking, Windows registry monitoring, rootkit detection, time-based alerting, and active response. It provides intrusion detection for most operating systems, including Linux, OpenBSD, FreeBSD, Mac OS X, Solaris and Windows. OSSEC has a centralized, cross-platform architecture allowing multiple systems to be easily monitored and managed.
 
-As a Silver-certified member of the [CenturyLink Cloud Ecosystem Program](../Ecosystem Partners/centurylink-cloud-ecosystem-program-guide.md), the only thing which CenturyLink Cloud certifies is that the Partner technology deploys successfully to the CenturyLink Cloud. We provide complementary knowledge-base articles to get the customer started but all support is available directly from the existing OSSEC community and not CenturyLink.
+As a Silver-certified member of the [CenturyLink Cloud Ecosystem Program](../Ecosystem Partners/Partner Integration Resources/centurylink-cloud-ecosystem-program-guide.md), the only thing which CenturyLink Cloud certifies is that the Partner technology deploys successfully to the CenturyLink Cloud. We provide complementary knowledge-base articles to get the customer started but all support is available directly from the existing OSSEC community and not CenturyLink.
 
 ### Audience
  * CenturyLink Cloud Users

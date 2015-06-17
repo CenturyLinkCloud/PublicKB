@@ -1,5 +1,5 @@
 {{{
-  "title": "Migrating an AppFog Add-on to V2 for Partners",
+  "title": "How to Migrate an AppFog Add-on to V2",
   "date": "5-28-2015",
   "author": "Chris Sterling",
   "attachments": [],
