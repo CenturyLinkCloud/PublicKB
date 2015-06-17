@@ -1,6 +1,6 @@
 {{{
   "title": "Ecosystem Program Partner Resource Guide - API",
-  "date": "3-16-2015",
+  "date": "6-17-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false

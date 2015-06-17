@@ -15,17 +15,17 @@ Integrating with the CenturyLink Cloud Blueprints orchestration engine enables c
 
 Reference the following key pages from the CenturyLink Cloud [Knowledge Base](http://www.centurylinkcloud.com/knowledge-base):
 
-* [Blueprints Category](../Blueprints/) in the Knowledge Base
-* Best Practices in [Packages](../Blueprints/packages-best-practices.md) and [Blueprints](../Blueprints/blueprints-best-practices.md)
-* [Package and Blueprint maximums](../Blueprints/blueprint-package-and-template-maximum-limits.md)
-* [Naming conventions for Public Packages and Blueprints](../Blueprints/creating-public-blueprint-packages.md)
-* [How to Build a Blueprint](../Blueprints/how-to-build-a-blueprint.md)
+* [Blueprints Category](../../Blueprints/) in the Knowledge Base
+* Best Practices in [Packages](../../Blueprints/packages-best-practices.md) and [Blueprints](../../Blueprints/blueprints-best-practices.md)
+* [Package and Blueprint maximums](../../Blueprints/blueprint-package-and-template-maximum-limits.md)
+* [Naming conventions for Public Packages and Blueprints](../../Blueprints/creating-public-blueprint-packages.md)
+* [How to Build a Blueprint](../../Blueprints/how-to-build-a-blueprint.md)
 
 
 ### Contributed Resources
 
 * [bpformation](https://github.com/CenturyLinkCloud/bpformation) - CLI and Python SDK used for managing Blueprints and Packages.  Easily and repeatably import, export, and update using a json object file as the authoritative representation of your Blueprint in lieu of using the web-based control portal
-* [Blueprint Package Manifest Builder Wizard](http://centurylinkcloud.github.io/blueprint-package-manifest-builder/) ([KB Instructions for use](../Blueprints/blueprint-package-manifest-builder-wizard.md))
+* [Blueprint Package Manifest Builder Wizard](http://centurylinkcloud.github.io/blueprint-package-manifest-builder/) ([KB Instructions for use](../../Blueprints/blueprint-package-manifest-builder-wizard.md))
 * [CenturyLink Cloud Ecosystem Github Repo](https://github.com/CenturyLinkCloud/Ecosystem/tree/master/Blueprints) containing reference patterns, support tools, and the actual packages used in some of our public Blueprints
 * [Blueprint Broker](https://github.com/CenturyLinkCloud/bpbroker) is a cross-platform toolset that includes a discovery service, encrypted key-value store to maintain state, and a mailer tool enabling high-impact post-deployment communication
 
@@ -49,7 +49,7 @@ Before a Blueprint can be publicly published it must pass a CenturyLink led QA p
 
 ##### Documentation
 
-* Naming adheres to the [Naming conventions for Public Packages and Blueprints](../Blueprints/creating-public-blueprint-packages.md) style guide.
+* Naming adheres to the [Naming conventions for Public Packages and Blueprints](../../Blueprints/creating-public-blueprint-packages.md) style guide.
 * [Knowedgebase](https://www.centurylinkcloud.com/knowledge-base/) article content provides the information necessary to successfully deploy and get started with the solution.  Links to more in-depth general documentation or CenturyLink Cloud specific language is encouraged.
 * Documentation supports deployment experience
 
