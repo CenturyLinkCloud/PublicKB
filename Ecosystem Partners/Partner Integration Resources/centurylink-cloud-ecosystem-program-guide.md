@@ -1,7 +1,7 @@
 {{{
   "title": "CenturyLink Cloud Ecosystem Program Guide",
-  "date": "1-5-2015",
-  "author": "David Shacochis",
+  "date": "6-19-2015",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": true
 }}}
@@ -26,7 +26,7 @@
   into CenturyLink Cloud, technology partners can take advantage of a differentiated, digital route-to-market: presented as part of a enterprise-grade automation platform which powers one of the largest pools of IT infrastructure in the world.</p>
 <p>This document explains the process for onboarding technology into the CenturyLink Cloud Ecosystem Program, and how progressively successful outcomes can be achieved in partnership with CenturyLink.</p>
 <p><strong>Joining The Cloud Ecosystem Program</strong></p>
-<p><img src="https://t3n.zendesk.com/attachments/token/9FA1i0HcOlAPVD1XZfLgLRRsI/?name=ecosystem_process.png" alt="ecosystem_process.png" />
+<p><img src="/knowledge-base/images/centurylink-cloud-ecosystem-program-guide-ecosystem_process.png" alt="ecosystem_process.png" />
 </p>
 <p>Entry into the Ecosystem Program consists of two primary steps:&nbsp; Application and Certification. Once a potential technology is identified, the company is classified as an Applicant. Once the company becomes a Customer of CenturyLink Cloud
   and the Cloud Ecosystem Agreement is signed, the Applicant is referred to as a Candidate. Once the solution is certified, the Candidate becomes a Member.</p>
@@ -129,7 +129,7 @@
 <ul>
   <li>Members are responsible for providing 24x7 (email &amp; telephone) customer support for their product.</li>
   <li>
-    <p>By default, all Members will receive support from CenturyLink at the 'Developer' support tier. Please see <a href="https://t3n.zendesk.com/entries/21651149-Ticket-Prioritization-Matrix">this matrix for support details</a>. Ecosystem Members
+    <p>By default, all Members will receive support from CenturyLink at the 'Developer' support tier. Please see <a href="../../support/ticket-prioritization-matrix/">this matrix for support details</a>. Ecosystem Members
       may upgrade their level of support at any time. Professional-level of support can be requested via a NOC ticket and Enterprise-level support can be upgraded by requesting a quote for a Dedicated Service Engineer.</p>
   </li>
 </ul>
