@@ -35,11 +35,9 @@ Quickly deploy and successfully use software and technology from any of our cert
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
-| [AbanteCart](../Ecosystem Partners/getting-started-with-abantecart-blueprint.md)   	| Blueprint   | E-commerce platform    |
 | [Apache HTTP Server](../Managed Services/getting-started-with-managed-apache.md)   	| Blueprint (Managed)   | Multi-purpose web server    |
 | [Apache Tomcat Server](../Managed Services/getting-started-with-managed-tomcat.md)   	| Blueprint (Managed)   | Web application server    |
 | [CloudMine](../Ecosystem Partners/getting-started-with-cloudmine-blueprint.md)   	| Blueprint    | Mobile backend    |
-| [JBoss](../Ecosystem Partners/getting-started-with-jboss-blueprint.md)   	| Blueprint    | Enterprise Java Server    |
 | [LAMP](../Ecosystem Partners/getting-started-with-lamp-stack-blueprint.md)   	| Blueprint    | Linux, Apache, MariaDB/MySQL, and PHP/Perl/Python bundle    |
 | [Magento](../Ecosystem Partners/getting-started-with-magento-blueprint.md)   	| Blueprint    | Ecommerce Shopping cart    |
 | [Microsoft Internet Information Services (IIS)](../Managed Services/getting-started-with-managed-microsoft-iis.md)   	| Blueprint (Managed)   | Web application server    |
