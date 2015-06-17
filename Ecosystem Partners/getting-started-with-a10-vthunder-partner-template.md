@@ -7,6 +7,7 @@
 }}}
 
 ![logo](http://www.a10networks.com/images/logo_s.png)
+
 ###Partner Profile
 A10 Networks - An industry leader in data security and cloud security solutions. 
 
@@ -14,17 +15,16 @@ http://www.A10Networks.com
 
 #### Contact A10
 #####A10 Sales and Support:
-- Email Support - support@a10networks.com
-- Web Support - http://www.a10networks.com/support/
+- Email Support - [support@a10networks.com](mailto:support@a10networks.com)
+- Web Support - [http://www.a10networks.com/support/](http://www.a10networks.com/support/)
 - Telephone Support - For US Support please call(888) 822-7210.  For  international support please call (408) 325-8676
-- US Sales and Marketing - For US Sales please contact pwidman@a10networks.com or call (770) 289-7245
-- International Sales and Marketing - For International Sales please contact sales@a10networks.com or call (408)-325-8616
+- US Sales and Marketing - For US Sales please contact [pwidman@a10networks.com](mailto:pwidman@a10networks.com) or call (770) 289-7245
+- International Sales and Marketing - For International Sales please contact [sales@a10networks.com](mailto:sales@a10networks.com) or call (408)-325-8616
 
 ### Description
-
 A10 has pioneered a new generation of application networking technologies. Our solutions enable enterprises, service providers, Web giants and government organizations to accelerate, secure and optimize the performance of their data center applications and networks. Our Advanced Core Operating System (ACOS®) platform is designed to deliver substantially greater performance and security relative to prior generation application networking products. Our software-based ACOS architecture provides the flexibility that enables us to expand our business with additional products to solve a growing array of networking and security challenges across cloud computing and mobility. A10 Networks has a portfolio of application-layer networking products that assure user-to-application connectivity is available, accelerated and secure. 
 
-http://www.a10networks.com
+[http://www.a10networks.com](http://www.a10networks.com)
 
 ### Solution Overview
 A10 has integrated their vThunder virtual appliance with the CenturyLink Cloud to provide users with maximum flexibility. vThunder virtual appliances are available for both application delivery controller (ADC) and carrier grade networking (CGN) product lines. With vThunder virtual appliances you gain a flexible and easy-to-deploy appliance featuring advanced services for any enterprises, web giant or service provider, on demand.
@@ -34,7 +34,7 @@ The vThunder ADC provides advanced L4-7 ADC services (including security) and se
 For more information, view the product information on A10's website: http://www.a10networks.com/products/vThunder.php
 
 ### Offer
-A10 is making their vThunder Appliance available for CenturyLink Cloud Users to deploy to their account.  In order to purchase a license or entitlement, please contact A10 Sales using the contact information above.
+A10 has provided a Virtual Appliance - called a Partner Template - that can be deployed to your CenturyLink Cloud account via a Service Task.  Although Service Tasks are ordinarily billed to the end user account, CenturyLink will provide a refund for the Service Task costs associated with deploying the Partner Template.  Please follow the process below to request credit. In order to purchase a license or entitlement, please contact A10 Sales using the contact information in this article.  
 
 ### Audience
 CenturyLink Cloud Users
@@ -111,18 +111,38 @@ Once the Service Task team deploy's your A10 vThunder Appliance, you will get a 
 - For additional information on how to configure your A10 vThunder Appliance, please visit the support website at http:///www.A10Networks.com/support/
 
 ### Pricing
-There are no A10 license costs or additional fees bundled in.  The cost to deploy the A10 vThunder Partner Template will be billed as a Service Task.  More information about Service Tasks and fees are available here: http://www.centurylinkcloud.com/service-tasks
+There are no A10 license costs included.  The cost to deploy the Partner Template will be billed as a Service Task, but CenturyLink will provide a credit for those costs.  In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees are available here: [http://www.centurylinkcloud.com/service-tasks](http://www.centurylinkcloud.com/service-tasks)
+
+
+#### Process to request credit for Service Task fee
+Follow this process to request credit on your account to re-imburse any expense to deploy the Partner Template
+
+1. Please copy and paste the email below and send it to [ecosystem@ctl.io](mailto:ecosystem@ctl.io)
+
+----
+
+TO: Ecosystem@CTL.io
+
+EMAIL SUBJECT:   Requesting Credit for Partner Template Deployment
+
+CLC Ecosystem Team,
+
+I am requesting a credit be placed on my account to cover the fees associated with deploying the A10 vThunder Partner Template to my account under the Service Task deployed on MM/DD/YYYY.  My CenturyLink Cloud username or account alias the credit needs to be placed on is ######.
+
+Thank you very much, your_name_here
+
+----
 
 ### Frequently Asked Questions
 Frequently Asked Questions:
 - #### Where do I obtain my A10 License or entitlements?
 - You can contact A10 directly using the information below.  Existing CenturyLink Enterprise Customers can contact their Account Representative for help obtaining a A10 license.
--   US Sales and Marketing - For US Sales please contact pwidman@a10networks.com or call (770) 289-7245
--   International Sales and Marketing - For International Sales please contact sales@a10networks.com or call (408)-325-8616
+-   US Sales and Marketing - For US Sales please contact [pwidman@a10networks.com](mailto:pwidman@a10networks.com) or call (770) 289-7245
+-   International Sales and Marketing - For International Sales please contact [sales@a10networks.com](mailto:sales@a10networks.com) or call (408)-325-8616
 
 - #### Who should I contact for support?
 - For issues regarding the vThunder appliance, please contact A10 Networks Support:
--   Web http://www.a10networks.com/support/
--   Email support@a10networks.com
+-   Web - [http://www.a10networks.com/support/](http://www.a10networks.com/support/)
+-   Email [support@a10networks.com](mailto:support@a10networks.com)
 -   Telephone: (888) 822-7210 or or international (408) 325-8676
-- For issues related to cloud infrastructure (VM’s, network, etc), please open a ticket using the CenturyLink Cloud Support Process.
+- For issues related to cloud infrastructure (VMs, network, etc), please open a ticket using the CenturyLink Cloud Support Process.
