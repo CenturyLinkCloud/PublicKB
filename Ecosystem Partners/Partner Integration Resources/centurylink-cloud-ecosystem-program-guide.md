@@ -3,6 +3,7 @@
   "date": "6-19-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
+  "stickyt": true,
   "contentIsHTML": true
 }}}
 

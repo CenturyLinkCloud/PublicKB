@@ -3,6 +3,7 @@
   "date": "3-16-2015",
   "author": "Keith Resar",
   "attachments": [],
+  "sticky": true,
   "contentIsHTML": false
 }}}
 
