@@ -1,6 +1,6 @@
 {{{
   "title": "Ecosystem Program Partner Resource Guide - Blueprints",
-  "date": "6-09-2015",
+  "date": "6-17-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -52,4 +52,12 @@ Before a Blueprint can be publicly published it must pass a CenturyLink led QA p
 * Naming adheres to the [Naming conventions for Public Packages and Blueprints](../Blueprints/creating-public-blueprint-packages.md) style guide.
 * [Knowedgebase](https://www.centurylinkcloud.com/knowledge-base/) article content provides the information necessary to successfully deploy and get started with the solution.  Links to more in-depth general documentation or CenturyLink Cloud specific language is encouraged.
 * Documentation supports deployment experience
+
+
+### Ongoing Blueprints QA
+
+CenturyLink customers trust that all services available as part of the [Marketplace Provider Program](https://www.centurylinkcloud.com/marketplace/program/) 
+will deploy and function as expected.  To that end CenturyLink executed an ongoing testing service that validates successful deployment and operation
+of all public Blueprints on a regular basis.
+
 
