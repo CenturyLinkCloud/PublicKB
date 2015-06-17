@@ -98,6 +98,17 @@ If you would like to pin a kb article so that it always appears at the top of it
 
   `"type"` is simply the MIME type of the file and is used to check which sort of icon to present on the front end.
 
+  ### Tables
+  
+  Tables in articles should follow this format:
+  
+  ```
+  **Bold Text**|**Bold Text**|**Bold Text**
+  -------------|-------------|-------------
+  TEXT COLUMN A|TEXT COLUMN B|TEXT COLUMN C
+  TEXT COLUMN A|TEXT COLUMN B|TEXT COLUMN C
+  ```
+  
 4. Commit your change(s) locally to your branch.
 
 5. Push or sync your commit(s) to the remote repository on Github.
