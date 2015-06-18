@@ -26,8 +26,14 @@ This document describes how to launch a script package for patching and how to c
 
 This service allows the user to patch a VM to the latest available patches provided by the OS vendor. It does not discriminate patches based on patch severity or any other vendor categorization. The package will kick off one or multiple attempts to apply patches, including a series of reboots. Reboots will cease and the execution will complete when there are no more patches to apply.
 
+
 Currently, the Operating Systems that may be updated with this service are show below:
 
+* CentOS 5
+* CentOS 6
+* Red Hat Enterprise Linux 6
+* Red Hat Enterprise Linux 5
+* Red Hat Enterprise Linux 7
 * Windows 2012
 * Windows 2012R2
 
@@ -38,9 +44,14 @@ CenturyLink Cloud Users
 
 ### Prerequisites
 
+* A sales agreement for CenturyLink Cloud with CenturyLink (not Tier3)
 * Servers with Operating Systems listed in the Overview, above
 * Careful consideration of the impacts of applying all available patches to a server
-* It is recommended that you log into Control with a user account at the same account level as the servers you intend to patch so that you can get email notifications. You may be in a parent account and run patching on sub-account, but you will not receive email notifications.
+* A correct user. It is recommended that you log into Control with a user account at the same account level as the servers you intend to patch so that you can get email notifications. You may be in a parent account and run patching on sub-account, but you will not receive email notifications.
+
+### Exceptions
+
+* Red Hat Enterprise Linux and CentOS: This service will exclude some updates. It will exclude kernel patches and nss packages.
 
 ### Support
 
@@ -57,9 +68,10 @@ There are three ways to deploy the package, described below. With a Blueprint, t
 For any method you choose, the following table will assist you with data needed for execution.
 
 
-**Operating Systems** | **Public Script Package Name** | **Package ID**
- --- | --- | ---
- Windows 2012 and 2012R2 | Windows Update Scripts | 94bd395f-9b54-4693-94ae-4f3aa93fc239
+**Operating Systems** | **Blueprint Name** | **Script Package Name** | **Package ID**
+ --- | --- | --- | ---
+ Windows 2012 and 2012R2 | Windows Update Scripts | Windows Update Scripts | 94bd395f-9b54-4693-94ae-4f3aa93fc239
+ Red Hat Enterprise Linux 5, 6, and 7 OR CentOS 5 and 6 | Yum Update Script | Yum Update | 5d743f04-a9ce-4174-a7c8-52df93c47c08
 
 
 ### Option 1: Blueprint
@@ -74,9 +86,12 @@ The process initiated by the script package may include several, automated reboo
 
 2\. Select the Blueprint
 
-Locate and select "Windows Update Scripts" within the Blueprint Library
+Locate and select the appropriate Blueprint within the Blueprint Library. See the table above for the name of the Blueprint.
 
-![Blueprint Image](../images/Patching/PatchaaS_WindowsUpdateHoverProd.png)
+![Windows Update Scripts Blueprint Image](../images/Patching/PatchaaS_WindowsUpdateHoverProd.png)
+
+![YUM Update Script Blueprint Image](../images/Patching/PatchaaS_YumUpdateBP.png)
+
 
 
 3\. Click the Deploy Blueprint Button
@@ -112,10 +127,13 @@ The process initiated by the script package may include several, automated reboo
 
 2\. Execute Action
 
-Navigate to the group and select "execute package" from the [action drop-down](../servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) . The name of the package to search for is "Windows Update Scripts."
+Navigate to the group and select "execute package" from the [action drop-down](../servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) . The name of the package to search for is in the table above.
 
 
-![Patching_GroupAction](../images/Patching/PatchaaS_GroupAction.png)
+![Patching_GroupActionWindows](../images/Patching/PatchaaS_GroupAction.png)
+
+![Patching_GroupActionYum](../images/Patching/PatchaaS_GroupActionYum.png)
+
 
 3\. Deployment Complete
 
@@ -206,8 +224,8 @@ accountalias | string | Short code for a particular account
 start_time | date/Time | Either the start time of the entire execution (which contains all initiations) or a particular initiation.
 end_time |  date/Time | Either the end time of the entire execution (which contains all initiations) or a particular initiation.
 init_messages | complex | Shows the quantity of initiations
-init_begin_message | string | "Invoking SUS API"
-init_end_mesasge | string | identifies how many updates were installed and the URLS of the patches
+init_begin_message | string | "Invoking SUS API" or "Invoking yum check-update"
+init_end_mesasge | string | identifies how many updates were installed and the URLS (for Windows) or names of the patches/updates
 
 ### Detail of Patches Deployed in an Execution
 
@@ -257,6 +275,6 @@ Duration | string | The minutes and seconds between the start and end time.
 begin_message | string | "Update Process BEGIN"
 end_message | string | "Updating Complete"
 patches | Number | Quantity of patches installed
-patch_begin_message | string | Identifies the Software or OS updated and the reference number (KB#######) for that particular update
-patch_end_message | string | Result code from the vendor, defining the possible results of an install. https://msdn.microsoft.com/en-us/library/windows/desktop/aa387095(v=vs.85).aspx
+patch_begin_message | string | Identifies the Software or OS updated and the reference number (if Windows, KB#######) for that particular update
+patch_end_message | string | Result code established by Microsoft, defining the possible results of an install. These same codes will be used for other Operating Systems as well. https://msdn.microsoft.com/en-us/library/windows/desktop/aa387095(v=vs.85).aspx
 status | string | for an individual patch, could be pending, completed, or failed
