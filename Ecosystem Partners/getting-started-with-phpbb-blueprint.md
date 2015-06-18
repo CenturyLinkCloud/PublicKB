@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with phpBB - Blueprint",
-  "date": "05-06-2015",
+  "date": "06-18-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -12,7 +12,7 @@
 
 <img alt="phpBB Logo" src="../images/bitnami_logos/phpbb-stack-110x117-c5c8752aa11d4c6fa4fc9bf5057e8f42.png" style="border:0;float:right;max-width:250px">
    
-After reading this article, the reader should feel comfortable deploying the phpBB stack by Bitnami.
+After reading this article, the reader should feel comfortable deploying the phpBB stack (version 3.1.4-0) by Bitnami.
 
 <a href="https://bitnami.com/" rel="no-follow">Bitnami</a> has integrated their <a href="https://bitnami.com/stack/phpbb" rel="no-follow">phpBB stack</a> with the CenturyLink Cloud platform with a single-click deploy solution.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this phpBB solution.
 
@@ -47,7 +47,6 @@ phpBB is available as a Blueprint for deployment on a **new server**.
   * **Apache server port** - default 80
   * **User's name** -  Users Name 
   * **phpBB forum description** -  Forum Description default A _little_ text to describe your forum
-  * **Site** -  Hostname default 127.0.0.1
 
 5. **Review and Confirm the Blueprint**
 
@@ -101,7 +100,6 @@ phpBB is available as a Blueprint Package for deployment on an existing server b
   * **Apache server port** - default 80
   * **User's name** -  Users Name 
   * **phpBB forum description** -  Forum Description default A _little_ text to describe your forum
-  * **Site** -  Hostname default 127.0.0.1
 
 4. **Deploy the Blueprint**
 
