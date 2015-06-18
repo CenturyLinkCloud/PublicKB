@@ -164,7 +164,11 @@ class Request(object):
 
 	def Status(self,cached=False):
 		if not cached or not self.data['status']:  
-			self.data['status'] = clc.v2.API.Call('GET','operations/%s/status/%s' % (self.alias,self.id),{})['status']
+			try:
+				self.data['status'] = clc.v2.API.Call('GET','operations/%s/status/%s' % (self.alias,self.id),{})['status']
+			except clc.APIFailedResponse as e:
+				if e.response_status_code == 500:  pass
+				else:  raise(e)
 		return(self.data['status'])
 		
 
