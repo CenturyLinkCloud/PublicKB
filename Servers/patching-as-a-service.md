@@ -27,6 +27,7 @@ This document describes how to launch a script package for patching and how to c
 
 This service allows the user to patch a VM to the latest available patches provided by the OS vendor. It does not discriminate patches based on patch severity or any other vendor categorization. The package will kick off one or multiple attempts to apply patches, including a series of reboots. Reboots will cease and the execution will complete when there are no more patches to apply.
 
+
 Currently, the Operating Systems that may be updated with this service are show below:
 
 * CentOS 5
@@ -48,6 +49,10 @@ CenturyLink Cloud Users
 * Servers with Operating Systems listed in the Overview, above
 * Careful consideration of the impacts of applying all available patches to a server
 * A correct user. It is recommended that you log into Control with a user account at the same account level as the servers you intend to patch so that you can get email notifications. You may be in a parent account and run patching on sub-account, but you will not receive email notifications.
+
+### Exceptions
+
+* Red Hat Enterprise Linux and CentOS: This service will exclude some updates. It will exclude kernel patches and nss packages.
 
 ### Support
 
