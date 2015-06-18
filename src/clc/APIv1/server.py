@@ -132,7 +132,7 @@ class Server:
 		"""
 		if alias is None:  alias = clc.v1.Account.GetAlias()
 		if location is None:  location = clc.v1.Account.GetLocation()
-		if re.match("^\d+$",group):  groups_uuid = group
+		if re.match("([a-zA-Z0-9]){32}",group.replace("-","")):  groups_uuid = group
 		else:  groups_uuid = clc.v1.Group.GetGroupUUID(group,alias,location)
 
 		r = clc.v1.API.Call('post','Server/CreateServer', 
