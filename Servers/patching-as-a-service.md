@@ -65,7 +65,7 @@ For any method you choose, the following table will assist you with data needed 
 
 
 **Operating Systems** | **Blueprint Name** | **Script Package Name** | **Package ID**
- --- | --- | ---
+ --- | --- | --- | ---
  Windows 2012 and 2012R2 | Windows Update Scripts | Windows Update Scripts | 94bd395f-9b54-4693-94ae-4f3aa93fc239
  Red Hat Enterprise Linux 5, 6, and 7 OR CentOS 5 and 6 | Yum Update Script | Yum Update | 5d743f04-a9ce-4174-a7c8-52df93c47c08
 
@@ -272,5 +272,5 @@ begin_message | string | "Update Process BEGIN"
 end_message | string | "Updating Complete"
 patches | Number | Quantity of patches installed
 patch_begin_message | string | Identifies the Software or OS updated and the reference number (if Windows, KB#######) for that particular update
-patch_end_message | string | Result code established by Microsoft, defining the possible results of an install. These same codes will be used for other Operating Systems as well. https://msdn.microsoft.com/en-us/library/windows/desktop/aa387095(v=vs.85).aspx 
+patch_end_message | string | Result code established by Microsoft, defining the possible results of an install. These same codes will be used for other Operating Systems as well. https://msdn.microsoft.com/en-us/library/windows/desktop/aa387095(v=vs.85).aspx
 status | string | for an individual patch, could be pending, completed, or failed
