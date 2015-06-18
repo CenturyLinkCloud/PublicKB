@@ -62,6 +62,12 @@ If you would like to pin a kb article so that it always appears at the top of it
     [Using SAML for Single-Sign-On](../Control Portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md )
     ```
 
+  Links to external sites should follow this format:
+  
+    ```
+    [Managed Microsoft SQL](//www.centurylinkcloud.com/managed-services/ms-sql)
+    ```
+
   ### Images
 
   When adding an image to an article, place the image file in the `images/` directory in the root of this repo. In the article itself, set the image source path like so:
