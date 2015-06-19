@@ -47,7 +47,7 @@ CenturyLink Cloud Users
 * A sales agreement for CenturyLink Cloud with CenturyLink (not Tier3)
 * Servers with Operating Systems listed in the Overview, above
 * Careful consideration of the impacts of applying all available patches to a server
-* A correct user. It is recommended that you log into Control with a user account at the same account level as the servers you intend to patch so that you can get email notifications. You may be in a parent account and run patching on sub-account, but you will not receive email notifications.
+
 
 ### Exceptions
 
@@ -112,7 +112,7 @@ The execution will continue even after the completion of the script so please le
 
 8\. Execution Complete
 
-If you followed the prerequisites mentioned above, after the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
+After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
 
 
 ### Option 2: Group Action
@@ -141,7 +141,7 @@ Navigate to the group and select "execute package" from the [action drop-down](.
 
 4\. Execution Complete
 
-  If you followed the pre-requisites mentioned above, after the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
+After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
 
 ### Option 3: API
 
@@ -174,7 +174,7 @@ Please reference [API Documentation about authentication](https://www.centurylin
 
 3\. Execution Complete
 
-If you followed the prerequisites mentioned above, after the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
+After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
 
 
 
