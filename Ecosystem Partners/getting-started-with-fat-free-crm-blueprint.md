@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Fat Free CRM - Blueprint",
-  "date": "05-14-2015",
+  "date": "06-19-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false

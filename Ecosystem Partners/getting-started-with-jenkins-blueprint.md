@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Jenkins - Blueprint",
-  "date": "05-06-2015",
+  "date": "06-19-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -12,7 +12,7 @@
 
 <img alt="Jenkins Logo" src="../images/bitnami_logos/jenkins-stack-110x117-7ed1d23148c869ee6aa6831a71ad9588.png" style="border:0;float:right;max-width:250px">
    
-After reading this article, the reader should feel comfortable deploying the Jenkins stack by Bitnami.
+After reading this article, the reader should feel comfortable deploying the Jenkins stack (version 1.613-0) by Bitnami.
 
 <a href="https://bitnami.com/" rel="no-follow">Bitnami</a> has integrated their <a href="https://bitnami.com/stack/jenkins" rel="no-follow">Jenkins stack</a> with the CenturyLink Cloud platform with a single-click deploy solution.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Jenkins solution.
 
@@ -44,8 +44,8 @@ Jenkins is available as a Blueprint for deployment on a **new server**.
   * **Tomcat server shutdown port** -  Tomcat Shutdown Port default 8005
   * **Apache server SSL port** - default 443
   * **Apache server port** - default 80
-  * **User's name** -  Users Name 
   * **Service Password** -  Provide service password 6 chars or more 
+  * **User's name** -  Users Name 
 
 5. **Review and Confirm the Blueprint**
 
@@ -96,8 +96,8 @@ Jenkins is available as a Blueprint Package for deployment on an existing server
   * **Tomcat server shutdown port** -  Tomcat Shutdown Port default 8005
   * **Apache server SSL port** - default 443
   * **Apache server port** - default 80
-  * **User's name** -  Users Name 
   * **Service Password** -  Provide service password 6 chars or more 
+  * **User's name** -  Users Name 
 
 4. **Deploy the Blueprint**
 

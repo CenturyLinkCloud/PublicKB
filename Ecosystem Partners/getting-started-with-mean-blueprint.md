@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with MEAN - Blueprint",
-  "date": "05-06-2015",
+  "date": "06-19-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -12,7 +12,7 @@
 
 <img alt="MEAN Logo" src="../images/bitnami_logos/meanstack-stack-110x117-23ab1c049a3ef163444d94177053d3cf.png" style="border:0;float:right;max-width:250px">
    
-After reading this article, the reader should feel comfortable deploying the MEAN stack by Bitnami.
+After reading this article, the reader should feel comfortable deploying the MEAN stack (version 3.0.2-0) by Bitnami.
 
 <a href="https://bitnami.com/" rel="no-follow">Bitnami</a> has integrated their <a href="https://bitnami.com/stack/mean" rel="no-follow">MEAN stack</a> with the CenturyLink Cloud platform with a single-click deploy solution.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this MEAN solution.
 
@@ -41,10 +41,10 @@ MEAN is available as a Blueprint for deployment on a **new server**.
 
   Set the following parameters in addition to those associated with your server itself (password, network, group, etc.):
 
-  * **MongoDB Port** -  MongoDB Server port default 27017
-  * **Apache server port** - default 80
-  * **Service Password** -  Provide service password 6 chars or more 
   * **Apache server SSL port** - default 443
+  * **Apache server port** - default 80
+  * **MongoDB Port** -  MongoDB Server port default 27017
+  * **Service Password** -  Provide service password 6 chars or more 
 
 5. **Review and Confirm the Blueprint**
 
@@ -92,10 +92,10 @@ MEAN is available as a Blueprint Package for deployment on an existing server ba
 
   Set the following parameters:
 
-  * **MongoDB Port** -  MongoDB Server port default 27017
-  * **Apache server port** - default 80
-  * **Service Password** -  Provide service password 6 chars or more 
   * **Apache server SSL port** - default 443
+  * **Apache server port** - default 80
+  * **MongoDB Port** -  MongoDB Server port default 27017
+  * **Service Password** -  Provide service password 6 chars or more 
 
 4. **Deploy the Blueprint**
 

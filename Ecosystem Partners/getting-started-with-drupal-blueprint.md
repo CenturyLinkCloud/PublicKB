@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Drupal - Blueprint",
-  "date": "05-06-2015",
+  "date": "06-19-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -12,7 +12,7 @@
 
 <img alt="Drupal Logo" src="../images/bitnami_logos/drupal-stack-110x117-9083fe6b191b13f79863eff74d3ce382.png" style="border:0;float:right;max-width:250px">
    
-After reading this article, the reader should feel comfortable deploying the Drupal stack by Bitnami.
+After reading this article, the reader should feel comfortable deploying the Drupal stack (version 7.37-0) by Bitnami.
 
 <a href="https://bitnami.com/" rel="no-follow">Bitnami</a> has integrated their <a href="https://bitnami.com/stack/drupal" rel="no-follow">Drupal stack</a> with the CenturyLink Cloud platform with a single-click deploy solution.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Drupal solution.
 
