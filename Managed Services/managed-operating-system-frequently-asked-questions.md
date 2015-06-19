@@ -21,7 +21,9 @@ CenturyLink’s Managed OS service helps you spend less time on the IT tasks tha
 
 **How do I create a Managed VM?**
 
-From the Control Portal menu, select “Create Server.”  Then, select the data center, group membership, and other VM properties.  Select a data center that supports managed services, and then click the “managed server” element to “Yes.” The operating system drop-down menu will automatically show available options. Choose your version, and then proceed with the remainder of the server creation process.
+For starters, you need to identify a data center that supports managed operating systems. In the [data centers](//https://www.centurylinkcloud.com/data-centers/) page, find the filter in the Cloud category called Public Cloud Managed OS.
+
+From the Control Portal menu, select “Create Server.”  Then, select the data center, group membership, and other VM properties.  Select the data center that supports managed services and then click the “managed server” element to “Yes.” The operating system drop-down menu will automatically show available options. Choose your version, and then proceed with the remainder of the server creation process.
 
 After creating a managed VM, the VM will be 'Under Construction' while background processes are completed. You will not have access to the server during that time; you will receive a notification via email once the operation has completed. Please allow up to a 30 minutes. If there are any issues beyond that time, contact us via email <a href="mailto:request@centurylink.com">request@centurylink.com</a> or by phone at the following numbers. In the US: 888.638.6771; UK: +44.118.322.6100; Singapore: +65.6305.8099. Please do not email the CenturyLink Cloud NOC or raise the issue via chat - faster responses to inquiries will come from the email address and support numbers above.
 
@@ -92,7 +94,7 @@ Managed VMs will be noted with an asterisk (*) in front of the server name. For 
 
 **My VM shows under construction in Control, but shows that the build has completed successfully?**
 
-On Managed VMs, there are additional tasks that is being processed in the background in order to fully integrate into the Managed system, once this is complete Control will reflect it as active and manageable. 
+On Managed VMs, there are additional tasks that is being processed in the background in order to fully integrate into the Managed system, once this is complete Control will reflect it as active and manageable.
 
 **Can I join Managed Servers to my own domain?**
 
