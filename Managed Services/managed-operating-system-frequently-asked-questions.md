@@ -21,7 +21,7 @@ CenturyLink’s Managed OS service helps you spend less time on the IT tasks tha
 
 **How do I create a Managed VM?**
 
-For starters, you need to identify a data center that supports managed operating systems. In the [data centers](//https://www.centurylinkcloud.com/data-centers/) page, find the filter in the Cloud category called Public Cloud Managed OS.
+For starters, you need to identify a data center that supports managed operating systems. In the [data centers](//www.centurylinkcloud.com/data-centers/) page, find the filter in the Cloud category called Public Cloud Managed OS.
 
 From the Control Portal menu, select “Create Server.”  Then, select the data center, group membership, and other VM properties.  Select the data center that supports managed services and then click the “managed server” element to “Yes.” The operating system drop-down menu will automatically show available options. Choose your version, and then proceed with the remainder of the server creation process.
 
