@@ -82,7 +82,7 @@ Files can be transferred by simply drag and drop in Windows Explorer from your r
 
 **Who do I contact if I have trouble with my Managed VM?**
 
-The CenturyLink Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at 1-888-638-6771, or send email to request@savvis.com for Managed OS issues. If there is an outage, email can be sent to incident@savvis.com.
+The CenturyLink Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at 1-888-638-6771, or send email to request@centurylink.com for Managed OS issues. If there is an incident, email can be sent to incident@centurylink.com.
 
 **How can I remove Managed Services from a VM?**
 
