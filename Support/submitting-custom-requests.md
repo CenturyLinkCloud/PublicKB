@@ -8,7 +8,7 @@
 }}}
 
 ### Overview
-CenturyLink Cloud offers a robust, self-service cloud environment for building and maintaining complex infrastructure topologies. There are times, however, when native functionality doesn't provide the desired result. In come cases, CenturyLink will approve a custom configuration. We aim to delight every customer in whatever way we can, and thus offer this option. However,  the CenturyLink Cloud team is extremely selective about approving non-standard configurations because they introduce the possibility for human error and may cause side effects with system automation.
+CenturyLink Cloud offers a robust, self-service cloud environment for building and maintaining complex infrastructure topologies. There are times, however, when native functionality doesn't provide the desired result. In some cases, CenturyLink will approve a custom configuration. We aim to delight every customer in whatever way we can, and thus offer this option. However,  the CenturyLink Cloud team is extremely selective about approving non-standard configurations because they introduce the possibility for human error and may cause side effects with system automation.
 
 We encourage customers to [submit feature requests](../Support/how-do-i-submit-a-feature-request.md) for new capabilities, but in the meantime, there is an option to request a non-standard configuration for review.
 
