@@ -53,9 +53,9 @@ CenturyLink Cloud Users
   Alternately, starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “Orchestrate” in the keyword search on the right side of the page.
 
 2. **Click the Deploy Blueprint button.**
+
 3. **Set Required parameters.**
 
-  Select "FD1" in the drop down if not pre-populated - this will be your master server.
 4. **Set optional parameters**
 
   ![](../images/orchestrate-3.png)
