@@ -52,9 +52,12 @@ class API():
 
 		clc._LOGINS += 1
 
-		r = requests.post("%s%s" % (clc.defaults.ENDPOINT_URL_V1,"/Auth/logon"),
-						  params={'APIKey': clc.v1.V1_API_KEY, 'Password': clc.v1.V1_API_PASSWD},
-						  verify=API._ResourcePath('clc/cacert.pem'))
+		session = clc._REQUESTS_SESSION
+
+		r = session.request("POST",
+                            "%s%s" % (clc.defaults.ENDPOINT_URL_V1,"/Auth/logon"),
+                            params={'APIKey': clc.v1.V1_API_KEY, 'Password': clc.v1.V1_API_PASSWD},
+                            verify=API._ResourcePath('clc/cacert.pem'))
 
 		try:
 			resp = xml.etree.ElementTree.fromstring(r.text)
@@ -66,6 +69,7 @@ class API():
 				raise(Exception("Error logging into V1 API.  Status code %s. %s" % (resp.attrib['StatusCode'],resp.attrib['Message'])))
 		except:
 			if clc.args:  clc.v1.output.Status('ERROR',3,'Error logging into v1 API.  Server response %s' % (r.status_code))
+
 
 
 	@staticmethod
@@ -81,11 +85,13 @@ class API():
 		"""
 		if not clc._LOGIN_COOKIE_V1:  API._Login()
 
-		r = requests.request(method,"%s%s/JSON" % (clc.defaults.ENDPOINT_URL_V1,url), 
-							 params=payload, 
-							 headers={'content-type': 'application/json'},
-							 cookies=clc._LOGIN_COOKIE_V1,
-							 verify=API._ResourcePath('clc/cacert.pem'))
+		session = clc._REQUESTS_SESSION
+		session.headers.update({'content-type': 'application/json'})
+
+		r = session.request(method,"%s%s/JSON" % (clc.defaults.ENDPOINT_URL_V1,url),
+                             params=payload,
+                             cookies=clc._LOGIN_COOKIE_V1,
+                             verify=API._ResourcePath('clc/cacert.pem'))
 
 		if debug:
 			API._DebugRequest(request=requests.Request(method,"%s%s/JSON" % (clc.defaults.ENDPOINT_URL_V1,url),
