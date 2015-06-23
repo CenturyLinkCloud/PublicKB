@@ -47,6 +47,7 @@ CenturyLink Cloud Users
 * A sales agreement for CenturyLink Cloud with CenturyLink (not Tier3)
 * Servers with Operating Systems listed in the Overview, above
 * Careful consideration of the impacts of applying all available patches to a server
+* Targeted server(s) must be able to access the internet
 
 
 ### Exceptions
