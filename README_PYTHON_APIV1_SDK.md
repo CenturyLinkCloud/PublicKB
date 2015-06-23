@@ -24,6 +24,21 @@ All API calls require authentication using your API V1 credentials.
 >>> clc.v1.SetCredentials("api_key","api_password")
 ```
 
+### Custom Http Settings
+Custom http settings can be provided to the SDK through an optional requests session object.  Once provided, this
+session is stored by the SDK and used for all API requests. Requests sessions can be used to specify proxies or to 
+provide site-specific http headers:
+
+```python
+>>> import requests
+>>> ses = requests.Session()
+>>> ses.proxies = {
+  "http": "http://10.10.1.10:3128",
+  "https": "http://10.10.1.10:1080",
+}
+>>> ses.headers.update({"X-PROXY-AUTH": "12345abcdef"})
+>>> clc.SetRequestsSession(ses)
+```
 
 ### Accounts
 
