@@ -103,9 +103,10 @@ Here is an example of the Add-on Engine provision request:
 ```
 POST [base_url]
 {
+  callback_url: "https://addons.ctl.io/vendor/8e6d510f-0df0-421e-b93f-05d5337fc26d"
   uuid: [Add-on Marketplace generated service instance ID],
   plan: [plan ID from Partner Service Manifest],
-  region: 'useast',
+  region: "useast",
   options: {}
 }
 ```
@@ -205,6 +206,63 @@ This provisions an instance of the `sudosandwich` service with a fake instance I
 
 ```
 $ kiri test deprovision sudosandwich 1234567890
+```
+
+#### Callback
+
+The provision post request includes a callback url. This url is protected via basic auth using your addonid:password, and will provide the same info as the provisioning call 
+as well as the accountId of the provisioned service.
+
+Example calling this:
+```
+curl -u sudosandwich:correcthorsebatterystaple https://addons.ctl.io/vendor/apps/8e6d510f-0df0-421e-b93f-05d5337fc26d
+```
+
+Response:
+```
+{
+  "id": "8e6d510f-0df0-421e-b93f-05d5337fc26d",
+  "account_id": "ORG",
+  "callback_url": "https://addons.ctl.io/vendor/apps/8e6d510f-0df0-421e-b93f-05d5337fc26d",
+  "resource": {
+    "uuid": "8e6d510f-0df0-421e-b93f-05d5337fc26d"
+  },
+  "config": {
+    "MYSANDWICH": "Vegetarian club"
+  },
+  "region": "uswest"
+}
+```
+
+This endpoint also support listing all the provisioned apps by excluding the id:
+```
+curl -u sudosandwich:correcthorsebatterystaple https://addons.ctl.io/vendor/apps/
+```
+
+Response:
+```
+[
+  {
+    "id": "8e6d510f-0df0-421e-b93f-05d5337fc26d",
+    "account_id": "ORG",
+    "plan": "free",
+    "provider_id": "1111-2222-333-44444",
+    "callback_url": "https://addons.ctl.io/vendor/apps/8e6d510f-0df0-421e-b93f-05d5337fc26d",
+    "resource": {
+      "uuid": "8e6d510f-0df0-421e-b93f-05d5337fc26d"
+    }
+  },
+  {
+    "id": "e94fbf7e-2b35-4546-aded-0715dba01d92",
+    "account_id": "ORG",
+    "plan": "free",
+    "provider_id": "1111-2222-333-55555",
+    "callback_url": "https://addons.ctl.io/vendor/apps/e94fbf7e-2b35-4546-aded-0715dba01d92",
+    "resource": {
+      "uuid": "e94fbf7e-2b35-4546-aded-0715dba01d92"
+    }
+  },
+]
 ```
 
 ### Add-on publishing process
