@@ -1,53 +1,97 @@
 {{{
-  "title": "WordPress Clone/Push to GitLab",
+  "title": "Updating Your CenturyLink WordPress Site with Git",
   "date": "06-23-2015",
-  "author": "Gregory McWilliams",
+  "author": ["Gregory McWilliams", "Matt Wittmann"],
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-**NOTE:** This KB articles purpose is to guide you through the process of cloning from and pushing changes to GitLab. It assumes that you have already created a WordPress site through the WordPress Control Portal and have access to your GitLab repository. If you haven’t done that yet you can head over [here](https://github.com/EasiGregory/PublicKB/blob/master/Managed%20Services/getting-started-with-managed-wordpress.md "Getting Started with Managed WordPress").
+Updating Your CenturyLink WordPress Site with Git
+=================================================
 
-  - You have created a WordPress site
+When you need to make changes to your CenturyLink WordPress as a Service site, git is the way to go. CenturyLink
+provides you with a copy of your WordPress site's source code on our own secure, private
+[GitLab servers](https://git.wordpress.ctl.io/). The general process is to clone your repository from our GitLab
+hosting, make your changes in the local repository, commit your changes in git, and finally push your commits
+back up the remote repository on our GitLab hosting. We take care of things from there to make sure your changes
+are live in the next few minutes.
 
-  - You have your CLC username and password
+Prerequisites
+-------------
 
-How to clone/push from GitLab
-===
+- You have already successfully created your WordPress site with CenturyLink's WordPress as a Service.
+- You will log in to our GitLab hosting with the CLC username you used when you created the site.
+- You have the site's WordPress administrative password, which is also your GitLab password.
 
-1. First we need to head out to GitLab and login using the CLC Control portal username of the user that created the site along with the WordPress admin password that they provided on creation. CLC users other than the one that created the site will not be able to view/edit the repository.
+When You Should Do This
+-----------------------
 
-  ![](../images/wp_clone_push_gitlab/GitLabLoginPage.png "GitLabLoginPage.png")
+- You want to install or update a WordPress plug-in or theme.
+- You need to customize the WordPress core.
+- You are [migrating](wordpress-site-migration-to-centurylink-cloud.md) an existing WordPress site to CenturyLink's
+  WordPress as a Service.
 
-  Once you're logged in, select the project you would like to clone from within the UI.
+Don't do this if you are just posting new content (text, images, video) to your WordPress site. Please review
+our documentation on [persistent object storage](wordpress-persistent-storage-configuration.md) for creating
+multimedia content.
 
-  ![](../images/wp_clone_push_gitlab/GitLabAccountDetails.png "GitLabAccountDetails.png")
+Cloning from GitLab
+-------------------
 
-2. Now we need to clone the repository to your local machine; currently we only support users going with the HTTPS solution for now.
+1. Head out to [GitLab servers](https://git.wordpress.ctl.io/) and log in using the CenturyLink Cloud username of the
+   user who created the site along with the WordPress administrative password provided on site creation. CLC users other
+   than the one who created the site are not be able to view or edit the repository in GitLab.
 
-  ![](../images/wp_clone_push_gitlab/CloneLinks.png "CloneLinks.png")
+   ![](../images/wp_clone_push_gitlab/GitLabLoginPage.png "GitLabLoginPage.png")
 
-3. Now type the command to clone the repo:
+   Once you're logged in, select the project you would like to clone. The GitLab project's name is the same as the
+   WordPress site name provided on site creation.
 
-    *git clone URL*
+   ![](../images/wp_clone_push_gitlab/GitLabAccountDetails.png "GitLabAccountDetails.png")
+2. Generally, the best way to make changes is to edit files on your own machine. To do this, clone the repository to
+   your local machine using the HTTPS option. SSH is not supported.
 
-  - The repositories hosted in GitLab are private, and you will be prompted to enter your username and password for the repo. You now have a clean clone of the repository and are free to make changes as you see fit.
+   ![](../images/wp_clone_push_gitlab/CloneLinks.png "CloneLinks.png")
+   The command to clone the repository is:
 
-4. Once the changes you desired are made we now need to add those changes for git to commit. This will stage the changed files for the commit. We can do this by entering the command:
+       git clone $REPOSITORY_HTTPS_URL
+   Note that repositories hosted in our GitLab hosting are private, so you will be prompted to enter the appropriate
+   username and password.
+3. You now have a clean clone of the repository and are free to make changes as you see fit.
 
-  *git add NAMEOFCHANGEDFILE*
+Please see the [git documentation](http://git-scm.com/docs/git-clone) for more details on the git clone command.
 
-  Or if you want to add all changes:
+Pushing Your Changes Back to CenturyLink
+----------------------------------------
 
-  *git add .*
+In git, changes to a repository are said to be staged, ready for commit. Staged changes can then be committed with
+a user-friendly message noting what has changed. One or more commits can be pushed to a remote repository, and new
+commits from the remote repository can in turn be pulled back down to the local repository. The git documentation
+provides further detail on [recording changes](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
+and then [pushing them to a remote repository](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes#Pushing-to-Your-Remotes).
 
-5. Now that we have our changed files added, we can now commit and push our changes back up to our GitLab repository. First we start by committing our changes and a message to let others know what we have changed:
+A basic flow is as follows:
 
-  *git –m “Your message letting others know what actions you performed.” commit*
+1. Once you have made your changes, stage them for commit with the following the command:
 
-6. We now can push those changes up to our GitLab repo by entering in the command:
+       git add $NAME_OF_CHANGED_FILE
+   Or if you want to add all changes:
 
-  *git push origin master*
+       git add .
+2. Once changes have been staged, you are ready to commit:
 
-===
-**Voila! You have now cloned the repository down from Gitlab, made changes, added those changes, committed and pushed those changes back up to GitLab. Your site will now be updated with the newly acquired changes. Great work!**
+       git commit –m "Enter a message describing what you've changed here."
+3. Now can push your commit back to our GitLab repository with the following command:
+
+       git push origin master
+4. From here, our GitLab hosting lets the CenturyLink WordPress service know that you have made a change. The
+   service will pull down your changes from the repository to update your live site! Please note that **only**
+   commits pushed to the `master` branch will update your live site.
+
+That's It!
+----------
+
+Voilà ! You have now learned how to clone a repository from GitLab, commit your changes to git, and push them back up to
+a remote git repository.
+
+**Great work!**
