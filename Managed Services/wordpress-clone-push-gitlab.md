@@ -52,9 +52,11 @@ Cloning from GitLab
    your local machine using the HTTPS option. SSH is not supported.
 
    ![](../images/wp_clone_push_gitlab/CloneLinks.png "CloneLinks.png")
+
    The command to clone the repository is:
 
        git clone $REPOSITORY_HTTPS_URL
+
    Note that repositories hosted in our GitLab hosting are private, so you will be prompted to enter the appropriate
    username and password.
 3. You now have a clean clone of the repository and are free to make changes as you see fit.
@@ -75,6 +77,7 @@ A basic flow is as follows:
 1. Once you have made your changes, stage them for commit with the following the command:
 
        git add $NAME_OF_CHANGED_FILE
+
    Or if you want to add all changes:
 
        git add .
