@@ -13,6 +13,8 @@
   "sticky": true
 }}}
 
-### CenturyLink Cloud Visio Stencils
-
+### Overview
 The CenturyLink Cloud team is making available Visio Stencils to facilitate customer and partners ability to create robust diagrams of their cloud services running on our platform technology.
+
+### Requirements
+* Microsoft Visio 2013
