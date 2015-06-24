@@ -570,7 +570,7 @@ class Server(object):
 		requests = []
 
 		for key in ("cpu","memory","description","groupId"):
-			if key:  
+			if locals()[key]:  
 				requests.append(clc.v2.Requests(clc.v2.API.Call('PATCH','servers/%s/%s' % (self.alias,self.id), 
 				                                                json.dumps([{"op": "set", "member": key, "value": locals()[key]}])),
 								alias=self.alias))

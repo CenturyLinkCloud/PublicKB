@@ -95,7 +95,7 @@ class API():
 
 		if debug:
 			API._DebugRequest(request=requests.Request(method,"%s%s/JSON" % (clc.defaults.ENDPOINT_URL_V1,url),
-                              data=payload,headers={}).prepare(),response=r)
+                              data=payload,headers=session.headers).prepare(),response=r)
 
 		try:
 			if int(r.json()['StatusCode']) == 0:  

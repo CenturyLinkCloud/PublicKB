@@ -115,7 +115,7 @@ class API():
 								 verify=API._ResourcePath('clc/cacert.pem'))
 
 		if debug:  
-			API._DebugRequest(request=requests.Request(method,fq_url,data=payload,headers=headers).prepare(),
+			API._DebugRequest(request=requests.Request(method,fq_url,data=payload,headers=session.headers).prepare(),
 			                  response=r)
 
 		if r.status_code>=200 and r.status_code<300:
