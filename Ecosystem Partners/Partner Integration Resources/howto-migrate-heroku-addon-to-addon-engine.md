@@ -41,7 +41,7 @@ There are changes to be made to the Partner manifest and provisioning API to int
 
 ### Changes to Add-on service manifests
 
-There are multiple small changes to how the Add-on Engine manifest is configured compared to Heroku Add-on manifests. Here is an example Add-on Engine manifest:
+The manifest for an Add-on Engine marketplace service contains most of the Heroku manifest attibutes and follows the same behavior from integration perspective:
 
 
 #### Example Add-on Engine Manifest
@@ -88,27 +88,33 @@ There are multiple small changes to how the Add-on Engine manifest is configured
 - `plans/name` - The display name of the plan that will be offered as a version of the service.
 - `plans/description` - The friendly, short description of the plan that will be offered as a version of the service.
 
-#### Differences from a Heroku Add-on Manifest
+### Unsupported Heroku Manifest Attributes
 
-- `username`, `sso_salt`, `config_vars`, `api/production/sso_url`, `api/test/sso_url`, `plans/price` and `plans/price_unit` are not valid attributes 
-- `api/production` and `api/test` must be a valid JSON objects each with a `base_url` attribute defined.
-- The top level attribute `test` is not valid outside of the `api` object
+Currently, the Add-on service manifest does not support the following optional Heroku manifest attributes:
+
+- `api/config_vars_prefix`
+- `api/requires`
+- `api/test`
 
 ### Differences in the Add-on Partner provisioning API
 
 There are some differences in the provisioning request and response body expectations to support integration with the Add-on Engine. In the example provisioning request for the current Heroku Add-ons, it shows a POST like the following:
 
 ```
-POST [base_url]/phpfog/resources
+POST [base_url]/heroku/resources
 {
-  "customer_id":"user@email.com",
-  "plan":"free",
-  "callback_url":"https://path_to_resource",
-  "options":{}
+  "heroku_id": "app1234@heroku.com",
+  "plan": "basic",
+  "region": "amazon-web-services::us-east-1",
+  "callback_url": "https://api.heroku.com/vendor/apps/app1234@heroku.com",
+  "log_input_url": "https://token:t.01234567-89ab-cdef-0123-456789abcdef@1.us.logplex.io/logs",
+  "logplex_token": "t.01234567-89ab-cdef-0123-456789abcdef",
+  "options": {},
+  "uuid": "01234567-89ab-cdef-0123-456789abcdef"
 }
 ```
 
-There are a few assumptions in this provisioning request. First, the `customer_id` is assumed to be a single user's email address. The Add-on Engine does not send a customer unique identifier in the request since service provisioning is made for an account that may have many members. Also, there is no concept of `callback_url` at this time in the Add-on Engine. This `callback_url` was provided as a way for partners to update a service instance's data after provisioning has occured. This is useful for instances such as security issues in the partner's platform that results in updating the credentials for all service instances. Add-on Engine will be looking at an approach for providing this capability in the future.
+The `heroku_id` is assumed to be a single user's email address. The Add-on Engine does not send a customer unique identifier in the request since service provisioning is made for an account that may have many members.
 
 Here is an example of the Add-on Engine provision request:
 
@@ -117,19 +123,21 @@ POST [base_url]
 {
   uuid: [Add-on Engine generated service instance ID],
   plan: [plan ID from partner manifest],
-  region: 'useast',
+  callback_url: "https://addons.ctl.io/vendor/[uuid]"
+  region: "useast",
   options: {}
 }
 ```
 
 Here is a description of each body attribute:
 
-| Attribute | Value                                              |
-| --------- | -----------------                                  |
-| `uuid`    | Add-on Engine generated unique service instance ID |
-| `plan`    | Plan ID from Partner defined manifest              |
-| `region`  | Region that service is being provisioned for       |
-| `options` | Currently not populated from Add-on Engine.        |
+| Attribute      | Value                                                |
+| ---------      | -----------------                                    |
+| `uuid`         | Add-on Engine generated unique service instance ID   |
+| `plan`         | Plan ID from Partner defined manifest                |
+| `callback_url` | URL partner can use to access creator's Account info |
+| `region`       | Region that service is being provisioned for         |
+| `options`      | Currently not populated from Add-on Engine.          |
 
 The response from the `POST [base_url]` request should look similar to:
 
@@ -160,7 +168,7 @@ The provision response must include an `id` value that represents the service in
 }
 ```
 
-All of the attributes and their values returned in the provision response body's `config` block are then provided to the consumer of the service instance.
+Only the `config` fields that were defined in the Add-on service manifest `config_vars`  and their values returned in the provision response body's `config` block are then provided to the consumer of the service instance.
 
 The deprovision request is slightly different. The Heroku Add-ons expect the URL to be `[base_url]/phpfog/resources/:id`. The path `/phpfog/resources` is not needed for Add-on Engine integration. Here is an example request:
 
@@ -173,4 +181,3 @@ The `:id` that we send is the `id` that was returned in the provision response f
 ```
 200 ok
 ```
-
