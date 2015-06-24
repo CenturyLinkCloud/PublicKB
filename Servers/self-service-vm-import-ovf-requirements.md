@@ -1,6 +1,6 @@
 {{{
   "title": "Self-Service VM Import / OVF Requirements",
-  "date": "5-7-2015",
+  "date": "6-24-2015",
   "author": "Jared Ruckle",
   "attachments": [],
   "contentIsHTML": false
@@ -24,7 +24,7 @@ However, some OVFs may still require significant “prep” work, depending on t
 * All disks should be SCSI (not IDE)
 * Only one SCSI controller is allowed
 * Must have a single NIC
-* Only a single image should be present; multiple images are not supported
+* Only a single image should be present; multiple images (for example a vApp) are not supported.  Refer to the [Open Virtualization Format White Paper](http://www.dmtf.org/sites/default/files/standards/documents/DSP2017_2.0.0.pdf) for more information.
 * The OVF file name must not include a "."
 * Ping should not be blocked on the firewall
 * The VMware hardware version (vmx) must be 8 or lower
