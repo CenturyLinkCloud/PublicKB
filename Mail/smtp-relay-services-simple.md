@@ -39,7 +39,7 @@ You will also need to add SPF record as follows: **v=spf1 ip4:66.150.160.0/24**
 
 ### RHEL Compatible Postfix Basic Setup
 
-Install pre-reqs:</div>
+Install pre-reqs:
 
 ```> sudo yum install cyrus-sasl{,-plain}```
 
@@ -55,7 +55,7 @@ Create a hash of your password map:
 ```> sudo postmap /etc/postfix/smtp_sasl_password_maps```
 
 
-Add the following lines to your /etc/postfix/main.cf:</div>
+Add the following lines to your /etc/postfix/main.cf:
 
 ```
 smtp_sasl_auth_enable = yes<br />smtp_sasl_password_maps = hash:/etc/postfix/smtp_sasl_password_maps<br />smtp_sasl_security_options = noanonymous<br />relayhost = relay.t3mx.com</pre>
