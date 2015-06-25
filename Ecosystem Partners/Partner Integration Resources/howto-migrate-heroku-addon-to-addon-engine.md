@@ -170,7 +170,7 @@ The provision response must include an `id` value that represents the service in
 
 Only the `config` fields that were defined in the Add-on service manifest `config_vars`  and their values returned in the provision response body's `config` block are then provided to the consumer of the service instance.
 
-The deprovision request is slightly different. The Heroku Add-ons expect the URL to be `[base_url]/phpfog/resources/:id`. The path `/phpfog/resources` is not needed for Add-on Engine integration. Here is an example request:
+The deprovision request is slightly different. The Heroku Add-ons expect the URL to be `[base_url]/heroku/resources/:id`. The path `/heroku/resources` is not needed for Add-on Engine integration. Here is an example request:
 
 ```
 DELETE [base_url]/:id
