@@ -22,7 +22,7 @@ Core functions include:
 * **View Alerts.** See alerts for VMs in real-time; adjust resources to mitigate potential issues.
 * **View Status.** See real-time operational status of CenturyLink Cloud nodes as well as notifications for planned maintenance via status.io.
 
-![Mobile Control Dashboard](../images/mobile-dashboard.png/)
+![Mobile Control Dashboard](../images/mobile-dashboard.png)
 
 ###Frequently Asked Questions
 
