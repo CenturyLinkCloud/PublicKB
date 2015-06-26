@@ -10,6 +10,10 @@
 
 View and manage your CenturyLink Cloud deployments from iOS and Android devices.
 
+[![iOS Download Link](../images/apple-download.png)](https://itunes.apple.com/us/app/centurylink-cloud-control/id1002279793) [![Google Play Download Link](../images/google-download.png)](https://play.google.com/store/apps/details?id=com.centurylink.cloud.droid)
+
+![Mobile Control Dashboard](../images/mobile-dashboard.png)
+
 ###Supported Features
 
 Core functions include:
@@ -21,8 +25,6 @@ Core functions include:
 * **Groups.** View Groups of servers across all data centers, including read-only access to settings and other details.
 * **View Alerts.** See alerts for VMs in real-time; adjust resources to mitigate potential issues.
 * **View Status.** See real-time operational status of CenturyLink Cloud nodes as well as notifications for planned maintenance via status.io.
-
-![Mobile Control Dashboard](../images/mobile-dashboard.png)
 
 ###Frequently Asked Questions
 
