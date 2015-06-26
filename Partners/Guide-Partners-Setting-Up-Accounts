@@ -120,3 +120,8 @@ _**End of Trial: Customer cancels use of CenturyLink Cloud**_
 If the customer does not convert to a paying customer, you need to email the CenturyLink Cloud Team - cloudpartnerhelp@centurylinkcloud.com informing them of the customer’s decision to not become a paying customer and ask for closing the account.  You need to close the account before the end of the trial date (in this case, 05/6/15), otherwise you will be billed for that customer’s usage, beginning 5/7/15.
 The customer account will be removed from the portal by CenturyCloud Team after the request is made.
 
+## Service Catalog
+The Service Catalog allows Account Administrators to enable or disable certain cloud platform services for users of the account. It also allows certain services to be enabled or disabled for individual sub accounts.
+
+[Learn More About how to use Service Catalog](../General/getting-started-with-the-service-catalog.md)
+[Service Catalog FAQ](../General/service-catalog-faq.md)
