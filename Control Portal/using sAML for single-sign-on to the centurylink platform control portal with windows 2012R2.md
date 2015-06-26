@@ -37,20 +37,22 @@ All steps in this guide require Domain Administrator permissions in Active Direc
 **Steps**
 
 **1. Provision server to act as Identity Provider.**
+
 Log into the CenturyLink Cloud Control Portal and choose to create a new Blueprint. This takes you to the Blueprint Designer wizard.
 
 ![Blueprint Menu](../images/ADFS SAML 02.png)
-Step 1 Using Blueprint Designer you have several choices for versioning, privacy settings, etc.  In this step you can choose the settings that are appropriate for your intended use.  There is one required field, Description.  Populate with a description that is accurate for your use.
 
-Step 2 Add a single Windows 2012R2 server to the Blueprint.  Name the server and accept the sizing defaults.  In this example we have used server name DE1CCTSADFS301.  Under Add Server Tasks, choose execute script.  Add Install Active Directory on Windows 2012 (1 of 2) [Primary Node].  Under Run Task choose Reboot Server.  Under execute script, choose Install IIS 8 on Windows.  Click add in this windows after the choices have been made.  Under Run Task choose Add Public IP.  Select the option for HTTPS which uses port 443 for communication.  Click Add Global Tasks. Click next, tasks & order
+Step 1- Using Blueprint Designer you have several choices for versioning, privacy settings, etc.  In this step you can choose the settings that are appropriate for your intended use.  There is one required field, Description.  Populate with a description that is accurate for your use.
 
-The Active Directory packages give us a custom domain to work with, and an identity directory for our user records. Microsoft Internet Information Services (IIS) provides a web application host for the Active Directory Federation Services (ADFS) web services used later on.
+Step 2- Add a single Windows 2012R2 server to the Blueprint.  Name the server and accept the sizing defaults.  In this example we have used server name DE1CCTSADFS301.  Under Add Server Tasks, choose execute script.  Add Install Active Directory on Windows 2012 (1 of 2) [Primary Node].  Under Run Task, choose Reboot Server.  Under execute script, choose Install IIS 8 on Windows.  Click add in this window after the choices have been made.  Under Run Task choose Add Public IP.  Select the option for HTTPS which uses port 443 for communication.  Click Add Global Tasks. Click next, tasks & order
+
+The Active Directory packages give us a custom domain to work with, and an identity directory for our user records. Microsoft Internet Information Services (IIS) provides a web application host for the Active Directory Federation Services (ADFS) web services used later in this configuration guide.
 
 ![Blueprint Designer](../images/ADFS SAML 03.png)
 
-Step 3 No steps required.  Click next, review
+Step 3- No steps required.  Click next, review
 
-Step 4 Click "submit for publishing"
+Step 4- Click "submit for publishing"
 
 Once the Blueprint has been published select the Blueprint you created from the Blueprint Library.  Click the Deploy Blueprint button to initiate the provisioning process.
 
@@ -69,7 +71,8 @@ Locate the server that has been deployed in the Control Panel.  View the Server 
 ![Confirm Server Details](../images/ADFS SAML 07.png)
 
 **2. Install and configure Active Directory Federation Services.**
-Use the OpenVPN client software or Tunnelblick client software to connect to the CenturyLink Cloud network. Once authenticated, create a Remote Desktop session to the your server using the private IP address recorded above. In the Server Manager, confirm the installation of DNS, Active Directory, and IIS.
+
+Use the OpenVPN client software or Tunnelblick client software to connect to the CenturyLink Cloud network. Once connected, create a Remote Desktop session to your server using the private IP address recorded above. In the Server Manager, confirm the installation of DNS, Active Directory, and IIS.
 
 ![Confirm Roles](../images/ADFS SAML 08.png)
 
@@ -81,7 +84,7 @@ When the role installation has been completed additional configuration will now 
 
 ![Configure Certificate Services](../images/ADFS SAML 10.png)
 
-Open the IIS Manager, click the host name, and locate the **Server Certificates** feature.
+Open IIS Manager, click the host name, and locate the **Server Certificates** feature.
 
 ![Server Certificates](../images/ADFS SAML 11.png)
 
@@ -89,7 +92,7 @@ Double-click the **Server Certificates** icon and select the option on the right
 
 ![Create Certificate](../images/ADFS SAML 12.png)
 
-On the next page of the wizard, choose the Certificate Authority and set a friendly name of the certificate.  It is useful to set a friendly name that corresponds with information that will help an administrator easily identify basics about this certificate, especially if an organization has numerous certificates. Click Finish.
+On the next page of the wizard, choose the Certificate Authority and set a friendly name for the certificate.  It is useful to set a friendly name that corresponds with information that will help an administrator easily identify basics about this certificate, especially if an organization has numerous certificates. Click Finish.
 
 ![Friendly Name](../images/ADFS SAML 13.png)
 
@@ -112,6 +115,7 @@ Ensure the option "Create the first federation server in a federation server far
 ![ADFS Configuration](../images/ADFS SAML 17.png)
 
 **3. Create trust relationship with CenturyLink Cloud.**
+
 Launch AD FS console from Administrative Tools.  Expand Trust Relationships, right click on Relying Party Trusts and select Add Relying Party Trust.  This part of the configuration uses a public certificate from CenturyLink Cloud for the local IdP so the system recognizes the SAML authentication request in order to validate the inbound signature.
 
 ![Add Party Trust](../images/ADFS SAML 18.png)
@@ -183,6 +187,7 @@ Switch to the **Endpoints** tab and add a **SAML Assertion Consumer** with a **P
 Switch to the **Advanced** tab, change the **Secure Hash Algorithm** to **SHA-1**. Click Ok.
 
 **4. Configure CenturyLink Cloud account with SAML settings.**
+
 Log into the CenturyLink Cloud Control Portal and under **Account** menu, select the **Users** tab. Switch to the **Authentication** sub-section and check the box labeled **SAML Authentication**. This opens up a series of configuration settings.
 
 ![SAML Config](../images/ADFS SAML 25.png)
@@ -214,6 +219,7 @@ Paste this string of text into the **Signing Certificate Key** field in the Cent
 ![Sign In Page](../images/ADFS SAML 31.png)
 
 The user experience when clicking the Sign In Using SAML button is that the user is prompted for credentials (if the user is not hitting the website from within the domain itself) and once provided, the user is automatically logged into the CenturyLink Cloud portal. **Because they used Single Sign On and SAML, they did NOT have to enter their CenturyLink Cloud account credentials, but rather, were able to use their regular network credentials.  In this example we logged in with User Principal Name kellytest@ccts.dom that we created earlier in this guide.**
+
 
 **Additional Information**
 If you do not own the public domain name corresponding to the DNS name of your server, then your testing will fail. To test successfully, change your local machine host file so that the browser translates the domain name to the public IP address of the server. When the SAML request comes in to ADFS, it tries to match the SAML Destination ID (retrieved from the SAML configuration in your CenturyLink Cloud account) to the Federation Service name in the ADFS server.  If the values do not match, then ADFS will return an exception. In order to test this scenario without registering and owning the corresponding public domain name, navigate to your local machine's host file (C:\Windows\System32\Drivers\etc\hosts) and add an entry that maps the public IP address of the server to the DNS name of the server.
