@@ -1,4 +1,10 @@
-{{{ "title": "Partner's Requesting Customer Trial ", "date": "6-25-2015", "author": "", "attachments": [], "contentIsHTML": false }}}
+{{{ 
+  "title": "Partner's Requesting Customer Trial ",
+  "date": "6-25-2015",
+  "author": "",
+  "attachments": [],
+  "contentIsHTML": false
+}}}
 
 Overview
 CenturyLink’s Cloud delivers some of the highest performing Infrastructure in the industry (Source: Cloud Harmony Report). 
@@ -28,25 +34,25 @@ Experience CenturyLink Cloud via a 30-Day Free Trial today and receive:
 
 You will get a confirmation email from CenturyLink Cloud Trial Team confirming the Trial. 
 
-## Emails from CenturyLink and Partner Actions
+### Emails from CenturyLink and Partner Actions
 
-### T-7days 
+#### T-7days 
 CenturyLink Cloud Team Email letting you know that the customer trial will be expire in 7 days and we will begin billing you (partner) for that customer.
 **Partner Action:** It is a good time for the partner to check with the customer about the trial and to help them decide if they want to become a loyal customer.
 
-### End of Trial
+#### End of Trial
 CenturyLink Cloud Team Email letting you know that the customer trial has expired and we will begin billing the you (partner) for that customer (if we didn’t hear back from the partner on
 cancellation)
 
 **Partner Action:** Update CenturyLink Cloud Trial Team about customer’s decision of becoming
 a monthly billable customer or if they decided to discontinue their service. If we do not hear back from (you) partner by the end of the trial, we begin billing the partner for that customer.
 
-## Action Items (for Partners)
-### Pre Trial Phase:
+### Action Items (for Partners)
+#### Pre Trial Phase:
 * Set up Customer account in Control Portal.
 * Partner requests Trial via email cloudpartnerhelp@centurylink.com with the information mentioned above.
 
-### Trial Phase:
+#### Trial Phase:
 * Partner to check with the customer on their decision on whether or not they want to continue the service and be a billable customer for the partner. 
 * Partner needs to inform the CenturyLink Trial team about the customer decision are ready to be billing customer from the following month or if they want to cancel their Trial service
 _(If we do not hear back from (you) partner by the end of the trial, we begin billing the partner on a monthly basis for that customer)._
