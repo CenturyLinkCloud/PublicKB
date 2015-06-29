@@ -12,7 +12,7 @@
 
 CenturyLink Bare Metal servers introduce the ability to provision and manage physical machines from the CenturyLink Cloud platform in a self-service, on-demand, and highly automated fashion.
 
-This FAQ addresses commonly asked questions about the service. For further information on this service and how it compares to virtual servers, see [Server Comparison Matrix](Servers/server-comparison-matrix.md).
+This FAQ addresses commonly asked questions about the service. For further information on this service and how it compares to virtual servers, see [Server Comparison Matrix](https://github.com/CenturyLinkCloud/PublicKB/blob/72d50c3b84f831fe6653e5dc791f6ac52a2fd9d6/Servers/server-comparison-matrix.md).
 
 
 
@@ -27,7 +27,7 @@ This FAQ addresses commonly asked questions about the service. For further infor
 
 **Can I increase or decrease CPU, memory or storage resources on Bare Metal servers?**
 
-No. The CPU, memory and storage are static resources on each individual Bare Metal server and can not be changed once a particular configuration has been selected.
+No, the CPU, memory and storage are static resources on each individual Bare Metal server and can not be changed once a particular configuration has been selected.
 
 **What are the self-service actions available to me through the Control portal for Bare Metal servers?**
 
@@ -41,6 +41,8 @@ Any applications not well-suited to virtualization whether it be performance or 
 
 **Since these servers use local storage, how do I avoid application failure if underlying hardware fails?**
 
+It is your responsibility to maintain any data recovery or restoration process that may be necessary in the case of a critical hardware failure.
+
 **How is hardware support and replacement handled for Bare Metal servers?**
 
 **What are the security features available for Bare Metal servers?**
@@ -51,9 +53,19 @@ Any applications not well-suited to virtualization whether it be performance or 
 
 **Is there a term commit option available for Bare Metal servers?**
 
+Yes, customers may work with their respective Sales representative to make use of the existing Cloud Term Commit process for Bare Metal servers in the same way they would for CenturyLink Cloud virtual servers.
+
 **May I have console or iLO access to my Bare Metal server?**
 
+No, there are a select few management capabilities available through the Control portal including power operations and the ability to reset the server. No additional iLO or console access is included with the service.
+
+**Can I change the administrator/root password of my server through Control or the API?**
+
+No, the password can only be set at the time of server creation. If you would like to change the password on the server, you may do so through the OS, but the “show credentials” link in the Control portal will no longer display accurate credentials.
+
 **Where are Bare Metal servers available geographically?**
+
+Bare Metal servers are available in our VA1 (Virginia, US) and GB3 (Slough, UK) data centers.
 
 **What should I do if my Bare Metal server becomes unresponsive?**
 
@@ -61,8 +73,16 @@ Any applications not well-suited to virtualization whether it be performance or 
 
 **Do I still get billed for a Bare Metal server that is turned off?**
 
+Yes, Bare Metal servers are dedicated to you once they have been provisioned and will continue to bill the normal hourly rate regardless of the state of the server.  Under certain circumstances, if a server has become unavailable to the point where it has exceeded the SLA for availability, credits may be applicable for the lost server time.
+
 **Can I customize my storage configuration on a Bare Metal server?**
+
+No, the storage configurations provisioned for Bare Metal servers are all either RAID 1 or RAID 5 depending on the server configuration type and tampering with that configuration could result in loss of management access to the server or breach of your service agreement.
 
 **Can I bring my own OS image?**
 
+No, the available Operating Systems include Windows 2012 R2, RHEL6 and CentOS. Eventually, the ability to bring your image may become a supported feature in the future.
+
 **Can I use my own licensing for the OS?**
+
+No, the licensing is factored into the cost of the Bare Metal server where applicable and can not be separated from the service.  Eventually, the ability to bring your own license may become a supported feature in the future.
