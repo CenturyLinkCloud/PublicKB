@@ -41,9 +41,9 @@ CenturyLink Cloud Users
 ### Deployment Packages
 
 
-|[Deploy a New Cluster](#deploying-a-new-cluster)   	|[Expand an Existing Cluster](../Ecosystem Partners/howto-pivotal-greenplum-expand-cluster.md)   	|
+|[Deploy a New Cluster](#deploying-a-new-cluster)   	|[Expand an Existing Cluster](../../Ecosystem Partners/howto-pivotal-greenplum-expand-cluster.md)   	|
 |:-	|:-	|
-|<p>Deploy a minimal cluster sized for testing.<p>When you're ready, deploy a production capable cluster using the same pattern.<p>See [Deploying a new cluster](#deploying-a-new-cluster) to get started.  If you're looking for a single-button deploy of clusters with more nodes see our guide on [Creating larger cluster Blueprints](../Ecosystem Partners/howto-pivotal-greenplum-larger-clusters.md)   	|<p>Grow existing clusters to their optimal size from day zero or to accommodate growth over time.<p>We'll cleanly add capacity and leave any application disrupting work to you.<p>See [Expanding an existing cluster](../Ecosystem Partners/howto-pivotal-greenplum-expand-cluster.md) to get started.   	|
+|<p>Deploy a minimal cluster sized for testing.<p>When you're ready, deploy a production capable cluster using the same pattern.<p>See [Deploying a new cluster](#deploying-a-new-cluster) to get started.  If you're looking for a single-button deploy of clusters with more nodes see our guide on [Creating larger cluster Blueprints](../../Ecosystem Partners/howto-pivotal-greenplum-larger-clusters.md)   	|<p>Grow existing clusters to their optimal size from day zero or to accommodate growth over time.<p>We'll cleanly add capacity and leave any application disrupting work to you.<p>See [Expanding an existing cluster](../../Ecosystem Partners/howto-pivotal-greenplum-expand-cluster.md) to get started.   	|
 
 
 
@@ -157,7 +157,7 @@ Contact your Pivotal account manager or inquire via email to [centurylinkcloud-s
 
 **Who should I contact for support?**
 
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../Support/how-do-i-report-a-support-issue.md).
+* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
 * For issues related to interacting with a Greenplum cluster review the [Pivotal KB](https://support.pivotal.io/hc/en-us/categories/200072608)
 * For issues related to deploying the Pivotal Greenplum Blueprints and application operation on CenturyLink Cloud and you have a paid license, please contact sales-clc@pivotal.io or follow your existing Pivotal support process if known.
 

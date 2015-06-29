@@ -128,7 +128,7 @@ After deploying this Blueprint, you may secure entitlements to the technology us
 
 **Who should I contact for support?**
 
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../Support/how-do-i-report-a-support-issue.md).
+* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
 * For issues related to deploying the XtremeData dbX Blueprints and application operation on CenturyLink Cloud and you have a paid license, please contact centurylinkcloud-sales@xtremedata.com or follow your existing XtremeData support process if known.
 
 

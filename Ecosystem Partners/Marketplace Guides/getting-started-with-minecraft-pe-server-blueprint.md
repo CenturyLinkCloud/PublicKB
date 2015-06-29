@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-![Mojang logo](../images/ecosystem-mojang-logo.png)
+![Mojang logo](../../images/ecosystem-mojang-logo.png)
 ### Technology Profile
 Mojang is a Microsoft owned game developer studio based in Stockholm, Sweden. They develop a game called Minecraft.  
 
@@ -37,17 +37,17 @@ After reading this article, the user should feel comfortable getting started dep
 ### Prerequisite
 - Access to the CenturyLink Cloud platform as an authorized user.
 - Confirm you are using Minecraft Personal Edition client
-  ![Minecraft PE Client Image](../images/ecosystem-minecraft-pe-server-1.png)
+  ![Minecraft PE Client Image](../../images/ecosystem-minecraft-pe-server-1.png)
 
 ### Install Minecraft PE Server on Linux Blueprint
 1. Locate the Mojang Minecraft PE Server Blueprint
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
   2. Search for “Minecraft PE” in the keyword search on the right side of the page.
   3. Locate the 'Install Minecraft PE Server on Linux' Blueprint
-  ![Locate Minecraft PE Blueprint Image](../images/ecosystem-minecraft-pe-server-10.png)
+  ![Locate Minecraft PE Blueprint Image](../../images/ecosystem-minecraft-pe-server-10.png)
 
 2. Choose and Deploy the Blueprint. Click the “Install Minecraft PE Server on Linux” Blueprint.
-  ![Deploy Minecraft PE Blueprint Image](../images/ecosystem-minecraft-pe-server-8.png)
+  ![Deploy Minecraft PE Blueprint Image](../../images/ecosystem-minecraft-pe-server-8.png)
 
 3. Configure the Blueprint with the following Minecraft specific information:
   1. Server Name - Server Name, e.g. CLCMC
@@ -55,7 +55,7 @@ After reading this article, the user should feel comfortable getting started dep
   3. Game Mode - Creative or Survival mode
   4. minecraftpe user's password - Set a secure password for the minecraftpe user that runs the server software.
   5. Finally, Click the `Next: Step 2` button at the bottom of the Blueprint
-  ![Configure Minecraft PE Blueprint Image](../images/ecosystem-minecraft-pe-server-11.png)
+  ![Configure Minecraft PE Blueprint Image](../../images/ecosystem-minecraft-pe-server-11.png)
 
 4. Review, Confirm and Deploy the Blueprint.
   1. Verify your configuration details.
@@ -65,13 +65,13 @@ After reading this article, the user should feel comfortable getting started dep
   * Monitor the Deployment Queue to view the progress of the blueprint.
   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the Minecraft Server until you have received this email notification.
-  ![Minecraft PE Blueprint Queue Image](../images/ecosystem-minecraft-pe-server-9.png)
+  ![Minecraft PE Blueprint Queue Image](../../images/ecosystem-minecraft-pe-server-9.png)
 
 ### Postrequisites
 1. Add a Public IP to your VM and open 2x Firewall Ports: Port 19132 for TCP and UDP.
   1. Browse to the new VM and click on the Add Public IP button
   2. When the firewall rule dialog opens, Add two (2x) single-port boxes: configure one for TCP on port 19132 and the other UDP on port 19132.  
-  ![Minecraft PE Firewall Rules Image](../images/ecosystem-minecraft-pe-server-7.png)
+  ![Minecraft PE Firewall Rules Image](../../images/ecosystem-minecraft-pe-server-7.png)
   3. Click the "Add Public IP address button".  When the Add Public IP task completes you should be able to connect to your new server from your Minecraft PE client (iPhone or iPad) via the public IP.  Please view the instructions below to learn how to access the server for gameplay from your Minecraft PE client.
 
 2. Optional: Customize and configure your Minecraft PE Server by editing the server.properties file in /home/minecraftpe
@@ -83,25 +83,25 @@ Please follow the instructions below to access the Minecraft server for gameplay
 After you've added a Public IP to your server and opened the proper firewall holes, follow these instructions in order to play on the server.  
 
 1. Start by adding your CenturyLink Minecraft PE server to your client.  From the main screen, click on the Play button
-  ![Click Play Button Image](../images/ecosystem-minecraft-pe-server-1.png)
+  ![Click Play Button Image](../../images/ecosystem-minecraft-pe-server-1.png)
 
 2. Click the Edit button on the top right of the screen
-  ![Click Edit Button Image](../images/ecosystem-minecraft-pe-server-2.png)
+  ![Click Edit Button Image](../../images/ecosystem-minecraft-pe-server-2.png)
 
 3. Click the External button on the top right of the screen
-  ![Click External Button Image](../images/ecosystem-minecraft-pe-server-3.png)
+  ![Click External Button Image](../../images/ecosystem-minecraft-pe-server-3.png)
 
 4. Configure your server information within the client:
   * Enter a Server Name in the first field.
   * Enter your public IP address in your second field.
   * Click the Add Server button once your information has been typed in.
-  ![Configure Server Image](../images/ecosystem-minecraft-pe-server-4.png)
+  ![Configure Server Image](../../images/ecosystem-minecraft-pe-server-4.png)
 
 5. Click on your server to start playing
-  ![Click Server Image](../images/ecosystem-minecraft-pe-server-5.png)
+  ![Click Server Image](../../images/ecosystem-minecraft-pe-server-5.png)
 
 6. The game should connect to your server and you can begin playing immediately.
-  ![You Connected Image](../images/ecosystem-minecraft-pe-server-6.png)
+  ![You Connected Image](../../images/ecosystem-minecraft-pe-server-6.png)
 
   * If you cannot connect, make sure you entered the Public IP address correctly and ensure the 2x firewall ports are open on the Public IP.
 

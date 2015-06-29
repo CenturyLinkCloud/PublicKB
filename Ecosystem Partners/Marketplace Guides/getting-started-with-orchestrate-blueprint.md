@@ -14,7 +14,7 @@ This article will demonstrate how to create a new Orchestrate account and deploy
 
 ### Partner Profile
 
-![Orchestrate.io](../images/orchestrate-0.gif)
+![Orchestrate.io](../../images/orchestrate-0.gif)
 
 Orchestrate – “A complete database service with the NoSQL queries you need”
 
@@ -46,7 +46,7 @@ CenturyLink Cloud Users
 
 1. **Locate the Blueprint in the Blueprint Library.**
 
-  ![Orchestrate.io](../images/orchestrate-1.png)
+  ![Orchestrate.io](../../images/orchestrate-1.png)
 
   Click either of the items at right to access that Blueprint directly.
 
@@ -58,7 +58,7 @@ CenturyLink Cloud Users
 
 4. **Set optional parameters**
 
-  ![](../images/orchestrate-3.png)
+  ![](../../images/orchestrate-3.png)
 
   Password/Confirm Password (This is the root password for the server. Keep this in a secure place).
 
@@ -77,7 +77,7 @@ CenturyLink Cloud Users
 
 7. **Orchestrate Account Provisioned**
 
-  ![](../images/orchestrate-4.png)
+  ![](../../images/orchestrate-4.png)
 
   During the Blueprint execution your email address will be used to create a new Orchestrate account.  Open this and click to verify your email address.
 
@@ -85,7 +85,7 @@ CenturyLink Cloud Users
 
 8. **Demonstration Provisioning Completed**
 
-  ![](../images/orchestrate-5.png)
+  ![](../../images/orchestrate-5.png)
 
   You will receive another email once the data processing and synchronization activities have completed successfully.  
 
@@ -93,13 +93,13 @@ CenturyLink Cloud Users
 
 9. **Explore the Marvel Universe with Orchestrate and CenturyLink Cloud**
 
-  ![](../images/orchestrate-6.jpg)
+  ![](../../images/orchestrate-6.jpg)
 
   Once provisioning has completed click the provided link to access your environment.  This is a demonstration of accessing Orchestrate's technology using a CenturyLink Cloud hosted service.
 
 10. **Beyond the Demo**
 
-  ![](../images/orchestrate-7.png)
+  ![](../../images/orchestrate-7.png)
 
   Orchestrate is far more than what we're able to show with this brief demonstration.  [Access Orchestrate dev resources](https://orchestrate.io/docs) and explore all that Orchestrate has to offer.  You've already got an account, so get coding!
 
@@ -120,7 +120,7 @@ See pricing detail above.
 
 **Who should I contact for support?**
 
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../Support/how-do-i-report-a-support-issue.md).
+* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
 * For issues related to deploying the Orchestrate Blueprints and application operation on CenturyLink Cloud and you have a paid license, please contact centurylinkcloud-sales@orchestrate.io or follow your existing Orchestrate support process if known.
 * For issues related to deploying the Orchestrate Blueprints and application operation on CenturyLink Cloud and you do not have a paid license, review [Orchestrate's Dev Resources](https://orchestrate.io/docs).
 

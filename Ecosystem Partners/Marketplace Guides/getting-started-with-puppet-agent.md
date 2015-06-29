@@ -98,5 +98,5 @@ This is a release of the Puppet Community Edition.  For Enterprise deployments o
 
 **Who should I contact for support?**
 
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../Support/how-do-i-report-a-support-issue.md).
+* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
 * For all Puppet related issues direct questions towards the Puppet user community.

@@ -85,13 +85,13 @@ Alfresco Community is available as a Blueprint Package for deployment on an exis
 
   Identify the server targeted for Alfresco Community installation.  Operating sustem must be linux.
 
-  See the [Creating a new enterprise cloud server](../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
+  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. **Select to Execute the Package on a Server Group**
 
   Packages can be executed on one more more servers in a group.  Search for the public script package named **Install Alfresco Community on Linux**.
 
-  See the [using group tasks to install scripts on groups](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
+  See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. **Set Parameters**
 
@@ -141,7 +141,7 @@ CenturyLink Cloud works with [Bitnami](http://www.bitnami.com) to provide open s
 
 **Who should I contact for support?**
 
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../Support/how-do-i-report-a-support-issue.md).
+* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
 * For issues related to deploying the Bitnami Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [Bitnami Support website](http://www.bitnami.com/support)
 
 **How do I access Alfresco Community for the first time?**

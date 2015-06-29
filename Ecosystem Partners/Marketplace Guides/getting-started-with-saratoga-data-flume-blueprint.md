@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-![Saratoga Data logo](../images/ecosystem-saratoga-data-logo.png)
+![Saratoga Data logo](../../images/ecosystem-saratoga-data-logo.png)
 
 ### Partner Profile
 - Saratoga Data Systems, Inc. - Securely and accurately move your distributed data at unprecedented speeds
@@ -26,7 +26,7 @@ Saratoga Data Systems has provided their Flume accelerated file transfer technol
 Saratoga Data Systems helps CenturyLink Cloud customers address the business challenge of secure and reliable transmission of data over challenged networks by providing fast reliable file transfer using the flume client server software - now available as part of the CenturyLink Cloud Blueprint Engine.
 
 ### Solution Overview
-![Saratoga Data Flume logo](../images/ecosystem-saratoga-data-flume-logo.png)
+![Saratoga Data Flume logo](../../images/ecosystem-saratoga-data-flume-logo.png)
 
 Flume Network Optimization is a patented network protocol for transferring data that is unaffected by high latency and very resiliant in the face of errors and network interruption.
 
@@ -65,9 +65,9 @@ After executing the steps in this Getting Started document, the users will have 
 ### Postrequisite
 - If you want to access your VM over the internet, please perform the following tasks once you receive an email confirming you Blueprint completed successfully:
 
-1. If you need to connect to your server via the Internet, Add a [Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../Network/how-to-configure-client-vpn.md) or similar technology.
+1. If you need to connect to your server via the Internet, Add a [Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/how-to-configure-client-vpn.md) or similar technology.
 
-2. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal. The ports used by 'flume' are controlled by a configuration file /etc/flume/ports but the standard ports to open are:
+2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal. The ports used by 'flume' are controlled by a configuration file /etc/flume/ports but the standard ports to open are:
 * TCP 22, 2354-2454
 * UDP 2355-2454
 

@@ -59,7 +59,7 @@ Have a suggestion for other software to include within the CenturyLink Cloud Blu
 **Who should I contact for support?**
 
 * For issues related to cloud infrastructure, please open a ticket using the 
-  [CenturyLink Cloud Support Process](../Support/how-do-i-report-a-support-issue.md).
+  [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
 
 * For issues relating to the *bpformation* tool itself review the [Github site](https://github.com/CenturyLinkCloud/bpformation) and log 
   [Issues](https://github.com/CenturyLinkCloud/bpformation/issues) as needed.

@@ -21,7 +21,7 @@ CenturyLink has integrated the OSSEC HIDS solution in to the CenturyLink Cloud p
 
 OSSEC is a free, open-source host-based intrusion detection system (HIDS). It performs log analysis, integrity checking, Windows registry monitoring, rootkit detection, time-based alerting, and active response. It provides intrusion detection for most operating systems, including Linux, OpenBSD, FreeBSD, Mac OS X, Solaris and Windows. OSSEC has a centralized, cross-platform architecture allowing multiple systems to be easily monitored and managed.
 
-As a Silver-certified member of the [CenturyLink Cloud Ecosystem Program](../Ecosystem Partners/Partner Integration Resources/centurylink-cloud-ecosystem-program-guide.md), the only thing which CenturyLink Cloud certifies is that the Partner technology deploys successfully to the CenturyLink Cloud. We provide complementary knowledge-base articles to get the customer started but all support is available directly from the existing OSSEC community and not CenturyLink.
+As a Silver-certified member of the [CenturyLink Cloud Ecosystem Program](../../Ecosystem Partners/Partner Integration Resources/centurylink-cloud-ecosystem-program-guide.md), the only thing which CenturyLink Cloud certifies is that the Partner technology deploys successfully to the CenturyLink Cloud. We provide complementary knowledge-base articles to get the customer started but all support is available directly from the existing OSSEC community and not CenturyLink.
 
 ### Audience
  * CenturyLink Cloud Users
@@ -40,7 +40,7 @@ Follow these step by step instructions to install OSSEC.
 
 #### OSSEC Manager Installation on Linu x
 
-CenturyLink has developed a script package that installs and configures an OSSEC Manager on an existing Linux server (we recommend CentOS or RHEL). This can be installed [Using Group Tasks to Install Software and Run Scripts on Groups](../../servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/).
+CenturyLink has developed a script package that installs and configures an OSSEC Manager on an existing Linux server (we recommend CentOS or RHEL). This can be installed [Using Group Tasks to Install Software and Run Scripts on Groups](../../../servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/).
 
 <table>
   <tbody>
@@ -101,7 +101,7 @@ CenturyLink has developed a script package that installs and configures an OSSEC
 
 #### OSSEC Agent Installation on Linux and Windows
 
-CenturyLink has developed a script package that installs and configures an OSSEC Agent on an existing Linux server (we recommend CentOS or RHEL). This can be installed [Using Group Tasks to Install Software and Run Scripts on Groups](../../servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/).
+CenturyLink has developed a script package that installs and configures an OSSEC Agent on an existing Linux server (we recommend CentOS or RHEL). This can be installed [Using Group Tasks to Install Software and Run Scripts on Groups](../../../servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/).
 
 <table>
   <tbody>
@@ -178,4 +178,4 @@ OSSEC is Open Source community owned software with no associated cost to acquire
 
 OSSEC is packaged and provided by CenturyLink as a courtesy to ease startup time. All support for this Open Source software is provided by the community. Please start at http://www.ossec.net/
 
-For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../Support/how-do-i-report-a-support-issue.md).
+For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).

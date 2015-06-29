@@ -28,9 +28,9 @@ After reading this article, the user should feel comfortable getting started usi
 ### Postrequisite
 - If you want to access your application over the internet, please perform the following tasks after you receive an email notifying you that the Blueprint completed successfully:
 
-1. If you need to connect to your server via the Internet, [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
+1. If you need to connect to your server via the Internet, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
 
-2. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
+2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
 
   * The default ports to access the application are: 80, 443
 
@@ -75,11 +75,11 @@ Coppermine Stack is available as a Script Package for deployment on an existing 
 
 #### Steps to deploy Coppermine to an existing server
 1. **Deploy or Identify an Existing Server**
-Identify the server targeted for Coppermine installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
+Identify the server targeted for Coppermine installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. **Select to Execute the Package on a Server Group**
   1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Bitnami Coppermine on Linux**.
-  2. See the [using group tasks to install scripts on groups](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
+  2. See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. **Configure the Coppermine Parameters**
 Set the following application parameters:
@@ -107,7 +107,7 @@ After your Blueprint deploys successfully, please follow these instructions to a
   1. Check email to obtain Server Name and IP Address Login information
   2. To start using Coppermine, connect to your servers Public or Private IP using a web browser, http://YOUR_IP, as illustrated below:
 
-    - ![Coppermine Page](../images/ecosystem-bitnami-coppermine.png)
+    - ![Coppermine Page](../../images/ecosystem-bitnami-coppermine.png)
 
 ### Pricing
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  There are no Bitnami license costs or additional fees bundled in.

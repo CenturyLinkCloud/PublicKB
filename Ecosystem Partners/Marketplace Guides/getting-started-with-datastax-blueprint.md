@@ -54,18 +54,18 @@ Follow these step by step instructions to get started with DataStax Blueprint de
 
 2. Choose the DataStax Blueprint. Click on the "Deploy Blueprint" button.
 
-  ![DataStax Enterprise Additional DC Blueprint](../images/datastax-1.jpg)
+  ![DataStax Enterprise Additional DC Blueprint](../../images/datastax-1.jpg)
 
 3. Configure the Blueprint.
 
   Complete the information/fields required by the Blueprint wizard.
 
-  ![Configure the DataStax Enterprise Additional DC Blueprint](../images/datastax-2.jpg)
+  ![Configure the DataStax Enterprise Additional DC Blueprint](../../images/datastax-2.jpg)
 
   On the first page, “Customize Blueprint”, ensure the following options are configured.
 Password/Confirm Password (This is the root password for the servers. Keep this in a secure place).
 
-![Configure the DataStax Enterprise Additional DC Blueprint](../images/datastax-3.jpg)
+![Configure the DataStax Enterprise Additional DC Blueprint](../../images/datastax-3.jpg)
 
   Optionally set the server name prefix by adding numbers after each server name
 
@@ -73,7 +73,7 @@ Password/Confirm Password (This is the root password for the servers. Keep this 
 
 4. Review and Confirm the Blueprint.
 
-![Review the blueprint](../images/datastax-4.jpg)
+![Review the blueprint](../../images/datastax-4.jpg)
 
 5. Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution. This will kick off the blueprint deploy process and load a queue page to allow you to track the progress of the deployment. You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
 6. Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
@@ -97,4 +97,4 @@ Data Stax Support Website
 **Who should I contact for support?**
 
 For issues related to deploying the DataStax Blueprint on CenturyLink Cloud, please contact  support@datastax.com
-For issues related to cloud infrastructure (VM’s, network, etc), please open a ticket using the [CenturyLink Cloud Support Process](../Support/how-do-i-report-a-support-issue.md).
+For issues related to cloud infrastructure (VM’s, network, etc), please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).

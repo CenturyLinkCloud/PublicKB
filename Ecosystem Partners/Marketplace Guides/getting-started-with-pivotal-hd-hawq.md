@@ -207,7 +207,7 @@ Contact your Pivotal account manager or inquire via email to [centurylinkcloud-s
 
 **Who should I contact for support?**
 
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../Support/how-do-i-report-a-support-issue.md).
+* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
 * For issues related to interacting with an HD + HAWQ cluster review the [Pivotal KB](https://support.pivotal.io/hc/en-us/categories/200072578-Pivotal-HD-Knowledge-Base)
 * For issues related to deploying the Pivotal HD + HAWQ Blueprints and application operation on CenturyLink Cloud and you have a paid license, please contact sales-clc@pivotal.io or follow your existing Pivotal support process if known.
 

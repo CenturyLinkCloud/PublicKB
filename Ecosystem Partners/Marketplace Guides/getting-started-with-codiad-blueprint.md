@@ -27,8 +27,8 @@ After reading this article, the user should feel comfortable getting started usi
 
 ### Postrequisite
 To access your application from a computer outside the CenturyLink Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
-  1. [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
-  2. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
+  1. [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
+  2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
     * The default ports to access the application are: 80, 443
 
 ### Deploying the Codiad Blueprint on a New Server
@@ -88,7 +88,7 @@ Codiad is available as a Script Package for deployment on an existing server bas
   1. Identify the server targeted for Codiad installation.  The Operating system must be supported by the Script Package.  The server must be a server within your CenturyLink Cloud account.
 2. **Select to Execute the Package on a Server Group**
   1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Codiad on Linux**.
-  2. See the [using group tasks to install scripts on groups](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
+  2. See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. **Configure the Parameters**
 Set the following application parameters:
