@@ -33,7 +33,9 @@ No. The CPU, memory and storage are static resources on each individual Bare Met
 
 Through the Control portal you are able to power the Bare Metal server on or off and perform a server reset.
 
-**What are the best workloads for this new server class?**
+**What are the best suited workloads for this new server class?**
+
+Any applications not well-suited to virtualization whether it be performance or licensing restrictions related, database and application workloads where consistent performance is critical, grid or HPC (High Performance Computing), data analytics, caching and indexing.
 
 **How do I connect my Bare Metal servers over the network to my CenturyLink Cloud virtual servers?**
 
