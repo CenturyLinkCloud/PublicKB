@@ -18,6 +18,8 @@ bpformation is used to help you gain access to a command line interface CLI that
 
 https://github.com/CenturyLinkCloud/bpformation
 
+<img src="/knowledge-base/images/bpformation/bpformation-animation.gif" style="border:0">
+
 
 ### Audience
 
