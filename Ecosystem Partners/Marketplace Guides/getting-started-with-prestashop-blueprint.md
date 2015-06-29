@@ -10,7 +10,7 @@
 
 ### Description
 
-<img alt="PrestaShop Logo" src="../images/bitnami_logos/prestashop-stack-110x117-2dd0c3620625b4f07badbf556115287b.png" style="border:0;float:right;max-width:250px">
+<img alt="PrestaShop Logo" src="/knowledge-base/images/bitnami_logos/prestashop-stack-110x117-2dd0c3620625b4f07badbf556115287b.png" style="border:0;float:right;max-width:250px">
    
 After reading this article, the reader should feel comfortable deploying the PrestaShop stack (version 1.6.0.14-0) by Bitnami.
 
@@ -63,7 +63,7 @@ PrestaShop is available as a Blueprint for deployment on a **new server**.
   Servers are built using private IPs only with access with client or IPSEC VPN.  For inbound access from the Internet add a public IP to your master server.
 
   <a href="../../network/how-to-add-public-ip-to-virtual-machine/">
-    <img style="border:0;width:50px;vertical-align:middle;" src="../images/shared_assets/fw_icon.png">
+    <img style="border:0;width:50px;vertical-align:middle;" src="/knowledge-base/images/shared_assets/fw_icon.png">
     Adding a public IP to your virtual machine
   </a>
 
@@ -112,7 +112,7 @@ PrestaShop is available as a Blueprint Package for deployment on an existing ser
   Servers are built using private IPs only with access with client or IPSEC VPN.  For inbound access from the Internet add a public IP to your master server.
 
   <a href="../../network/how-to-add-public-ip-to-virtual-machine/">
-    <img style="border:0;width:50px;vertical-align:middle;" src="../images/shared_assets/fw_icon.png">
+    <img style="border:0;width:50px;vertical-align:middle;" src="/knowledge-base/images/shared_assets/fw_icon.png">
     Adding a public IP to your virtual machine
   </a>
 

@@ -28,7 +28,7 @@ CenturyLink Cloud Users
 
 1. **Locate the Blueprint in the Blueprint Library**
 
-  <img src="../images/bpformation/blueprint_tiles.png" style="border:0;max-width:250px">
+  <img src="/knowledge-base/images/bpformation/blueprint_tiles.png" style="border:0;max-width:250px">
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “bpformation” in the keyword search on the right side of the page.
 

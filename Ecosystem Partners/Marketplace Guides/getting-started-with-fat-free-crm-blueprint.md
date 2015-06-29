@@ -10,7 +10,7 @@
 
 ### Description
 
-<img alt="Fat Free CRM Logo" src="../images/bitnami_logos/fatfreecrm-stack-110x117-52657c946bb486d671a9a881e216957c.png" style="border:0;float:right;max-width:250px">
+<img alt="Fat Free CRM Logo" src="/knowledge-base/images/bitnami_logos/fatfreecrm-stack-110x117-52657c946bb486d671a9a881e216957c.png" style="border:0;float:right;max-width:250px">
    
 After reading this article, the reader should feel comfortable deploying the Fat Free CRM stack (version 0.13.6-1) by Bitnami.
 
@@ -63,7 +63,7 @@ Fat Free CRM is available as a Blueprint for deployment on a **new server**.
   Servers are built using private IPs only with access with client or IPSEC VPN.  For inbound access from the Internet add a public IP to your master server.
 
   <a href="../../network/how-to-add-public-ip-to-virtual-machine/">
-    <img style="border:0;width:50px;vertical-align:middle;" src="../images/shared_assets/fw_icon.png">
+    <img style="border:0;width:50px;vertical-align:middle;" src="/knowledge-base/images/shared_assets/fw_icon.png">
     Adding a public IP to your virtual machine
   </a>
 
@@ -112,7 +112,7 @@ Fat Free CRM is available as a Blueprint Package for deployment on an existing s
   Servers are built using private IPs only with access with client or IPSEC VPN.  For inbound access from the Internet add a public IP to your master server.
 
   <a href="../../network/how-to-add-public-ip-to-virtual-machine/">
-    <img style="border:0;width:50px;vertical-align:middle;" src="../images/shared_assets/fw_icon.png">
+    <img style="border:0;width:50px;vertical-align:middle;" src="/knowledge-base/images/shared_assets/fw_icon.png">
     Adding a public IP to your virtual machine
   </a>
 
