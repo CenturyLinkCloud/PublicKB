@@ -1,0 +1,66 @@
+{{{
+  "title": "Bare Metal FAQ",
+  "date": "06-29-2015",
+  "author": "Bryan O'Neal",
+  "attachments": [],
+  "related-products": [CenturyLink Cloud, Foundation Hosting],
+  "contentIsHTML": false,
+  "sticky": false
+}}}
+
+### Description
+
+CenturyLink Bare Metal servers introduce the ability to provision and manage physical machines from the CenturyLink Cloud platform in a self-service, on-demand, and highly automated fashion.
+
+This FAQ addresses commonly asked questions about the service. For further information on this service and how it compares to virtual servers, see [Server Comparison Matrix](Servers/server-comparison-matrix.md).
+
+
+
+**What are the available configurations for Bare Metal servers?**
+
+* 4 cores (3.6GHz E3), 16 GB RAM, 10Gb NIC
+  Storage is 2x1TB 7200 RAID 1 (1TB usable)
+* 12 cores (2.4GHz 2x6 E5), 64 GB RAM, dual 10Gb NIC
+  Storage is 4x2TB 7200 RAID 5 (5.7TB usable)
+* 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC
+  Storage is 6x2TB 7200 RAID 5 (9.5TB usable)
+
+**Can I increase or decrease CPU, memory or storage resources on Bare Metal servers?**
+
+No. The CPU, memory and storage are static resources on each individual Bare Metal server and can not be changed once a particular configuration has been selected.
+
+**What are the self-service actions available to me through the Control portal for Bare Metal servers?**
+
+Through the Control portal you are able to power the Bare Metal server on or off and perform a server reset.
+
+**What are the best workloads for this new server class?**
+
+**How do I connect my Bare Metal servers over the network to my CenturyLink Cloud virtual servers?**
+
+**Since these servers use local storage, how do I avoid application failure if underlying hardware fails?**
+
+**How is hardware support and replacement handled for Bare Metal servers?**
+
+**What are the security features available for Bare Metal servers?**
+
+**What should I do if I do not see the configuration of CPU/Memory/Storage I want?**
+
+**What features do Bare Metal servers share with CenturyLink Cloud virtual servers?**
+
+**Is there a term commit option available for Bare Metal servers?**
+
+**May I have console or iLO access to my Bare Metal server?**
+
+**Where are Bare Metal servers available geographically?**
+
+**What should I do if my Bare Metal server becomes unresponsive?**
+
+**How is data destruction handled in the cases of hard drive failure/replacement and/or server relinquishment for Bare Metal servers?**
+
+**Do I still get billed for a Bare Metal server that is turned off?**
+
+**Can I customize my storage configuration on a Bare Metal server?**
+
+**Can I bring my own OS image?**
+
+**Can I use my own licensing for the OS?**
