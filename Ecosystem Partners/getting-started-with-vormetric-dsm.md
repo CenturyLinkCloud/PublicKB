@@ -95,7 +95,7 @@ Your_Name_Here
 
 -----
 
-### Accessing and Configuring your Cavirin partner template
+### Accessing and Configuring your Vormetric partner template
 Follow these steps to access and configure your Vormetric partner template once you receive an email from Service Tasks confirming the partner template has been deployed to your account.
 
 1. Connect to your DSM's IP address provided by support via SSH and login as cliadmin / Vormetric123$
