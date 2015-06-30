@@ -31,7 +31,7 @@ No, the CPU, memory and storage are static resources on each individual Bare Met
 
 **What are the self-service actions available to me through the Control portal for Bare Metal servers?**
 
-Through the Control portal you are able to power the Bare Metal server on or off, place it in maintenance mode and perform a server reset.
+Through the Control portal you are able to power the Bare Metal server on or off and perform a server reset.
 
 **What are the best suited workloads for this new server class?**
 
@@ -95,7 +95,7 @@ No, the storage configurations provisioned for Bare Metal servers are all either
 
 **Can I bring my own OS image?**
 
-No, the available Operating Systems include Windows 2012 R2, RHEL6 and CentOS. Eventually, the ability to bring your image may become a supported feature in the future.
+No, the available Operating Systems include Windows 2012 R2, RHEL6 and CentOS. Eventually, the ability to bring your own image may become a supported feature in the future.
 
 **Can I use my own licensing for the OS?**
 
