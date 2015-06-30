@@ -12,7 +12,7 @@ View and manage your CenturyLink Cloud deployments from iOS and Android devices.
 
 [![iOS Download Link](../images/apple-download.png)](https://itunes.apple.com/us/app/centurylink-cloud-control/id1002279793) [![Google Play Download Link](../images/google-download.png)](https://play.google.com/store/apps/details?id=com.centurylink.cloud.droid)
 
-![Mobile Control Dashboard](../images/mobile-app-dashboard.png)
+<iframe src="https://player.vimeo.com/video/132252037" width="420" height="746" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ###Supported Features
 
