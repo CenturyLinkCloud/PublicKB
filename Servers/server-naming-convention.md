@@ -1,7 +1,7 @@
 {{{
   "title": "Server Naming Convention",
-  "date": "1-2-2015",
-  "author": "Keith Resar",
+  "date": "6-30-2015",
+  "author": "Mark Turpin",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -20,5 +20,6 @@ All CenturyLink Cloud servers follow a standard naming convention that incorpora
 ![Example name](https://t3n.zendesk.com/attachments/token/wqzYkzdmcv7H9hsaV1Shj7puD/?name=Screen+Shot+2015-01-22+at+7.57.03+AM.png)
 
 ###Considerations
-The name associated with a server in the control portal need not match the actual server name at the OS, internal DNS, or external DNS levels.  On initial deployment the server's OS name and control portal name match.
-When servers are moved between datacenters as a Service Task they are renamed to match the new geography
+* The name associated with a server in the control portal need not match the actual server name at the OS, internal DNS, or external DNS levels.  On initial deployment the server's OS name and control portal name match.
+* When servers are moved between datacenters as a Service Task they are renamed to match the new geography
+* Once a server is deleted in the control portal, that server name cannot be reused.  If a new server is deployed with the same name (and in the same account and datacenter), the control portal will increment to the next numeric code.  For example, UC1BTDISRVR02 is created and then deleted; the next server will become UC1BTDISRVR03.
