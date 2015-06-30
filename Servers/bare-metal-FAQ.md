@@ -27,11 +27,11 @@ This FAQ addresses commonly asked questions about the service. For further infor
 
 **Can I increase or decrease CPU, memory or storage resources on Bare Metal servers?**
 
-No, the CPU, memory and storage are static resources on each individual Bare Metal server and can not be changed once a particular configuration has been selected.
+No, the CPU, memory and storage are static resources on each individual Bare Metal server and can not be changed once a particular configuration has been provisioned.
 
 **What are the self-service actions available to me through the Control portal for Bare Metal servers?**
 
-Through the Control portal you are able to power the Bare Metal server on or off and perform a server reset.
+Through the Control portal you are able to power the Bare Metal server on or off, place it in maintenance mode and perform a server reset.
 
 **What are the best suited workloads for this new server class?**
 
@@ -39,17 +39,27 @@ Any applications not well-suited to virtualization whether it be performance or 
 
 **How do I connect my Bare Metal servers over the network to my CenturyLink Cloud virtual servers?**
 
+Bare Metal servers share the same network as CenturyLink Cloud virtual servers so it's as easy as creating and connecting networks amongst your virtual servers.  For more information on Network features of CenturyLink Cloud platform, reference the [Network Section](https://www.centurylinkcloud.com/knowledge-base/network/#1) of our knowledge base.
+
 **Since these servers use local storage, how do I avoid application failure if underlying hardware fails?**
 
 It is your responsibility to maintain any data recovery or restoration process that may be necessary in the case of a critical hardware failure.
 
 **How is hardware support and replacement handled for Bare Metal servers?**
 
+CenturyLink is responsible for all hardware replacement for Bare Metal servers.  We monitor the Bare Metal servers underlying hardware using agentless SNMP monitoring via iLO.  If an incident is detected a ticket for investigation is automatically generated and the customer is notified.  The hardware will be replaced within 3 business days.  In the case where a server becomes completely unavailable the process to replace the server will begin immediately with consent from the customer.
+
 **What are the security features available for Bare Metal servers?**
+
+The same CenturyLink Cloud platform firewall policies available for virtual servers are available for Bare Metal servers.  NOT SURE ON THIS ONE...
 
 **What should I do if I do not see the configuration of CPU/Memory/Storage I want?**
 
+We've initially launched with a limited number of Bare Metal server configuration types and fully expect to expand upon the number of types and quantity available of each based on your feedback.  The server configuration screen will provide an up to date indication of our available server types.  If you do not see a configuration type there that suits your needs, please submit a [Feature Request](https://www.centurylinkcloud.com/knowledge-base/support/how-do-i-submit-a-feature-request/) including a brief explanation of your use case and the need for a particular configuration of resources.
+
 **What features do Bare Metal servers share with CenturyLink Cloud virtual servers?**
+
+While there are multiple in common between the two, there are several features available on virtual servers within CenturyLink Cloud that do not apply to Bare Metal servers.  Please see the [Server Comparison Matrix](placeholder) for more detail.
 
 **Is there a term commit option available for Bare Metal servers?**
 
@@ -69,7 +79,11 @@ Bare Metal servers are available in our VA1 (Virginia, US) and GB3 (Slough, UK) 
 
 **What should I do if my Bare Metal server becomes unresponsive?**
 
+Contact our Customer Care group to report the incident.  If a ticket has not already been automatically generated, they will create one for you and begin investigation.
+
 **How is data destruction handled in the cases of hard drive failure/replacement and/or server relinquishment for Bare Metal servers?**
+
+All local storage associated with Bare Metal servers is fully encrypted.  As such, destruction is not necessary to protect sensitive data.  All disks are zeroed out as part of our routine rediscovery process for servers that have been decommissioned.
 
 **Do I still get billed for a Bare Metal server that is turned off?**
 
