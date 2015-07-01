@@ -51,15 +51,15 @@
 
 ###Ecosystem - New Blueprints (4)
 
-* [**Dynatrace**](...Ecosystem Partners/getting-started-with-dynatrace-blueprints.md) – Application Performance Monitoring (APM) software for today's most challenging web, cloud, mobile, enterprise and Big Data applications worldwide.
+* [**Dynatrace**](../Ecosystem Partners/getting-started-with-dynatrace-blueprints.md) – Application Performance Monitoring (APM) software for today's most challenging web, cloud, mobile, enterprise and Big Data applications worldwide.
 
 
-* [**Datastax**](...Ecosystem Partners/getting-started-with-datastax-blueprint.md) - Enterprise–grade Cassandra solution, enabling customer big data analytics workloads.
+* [**Datastax**](../Ecosystem Partners/getting-started-with-datastax-blueprint.md) - Enterprise–grade Cassandra solution, enabling customer big data analytics workloads.
 
 
-* [**Acumatica**](...Ecosystem Partners/getting-started-with-acumatica-erp-blueprint.md) - Cloud–based accounting and ERP software for the small to midsize business looking to streamline management processes and unlock business potential.
+* [**Acumatica**](../Ecosystem Partners/getting-started-with-acumatica-erp-blueprint.md) - Cloud–based accounting and ERP software for the small to midsize business looking to streamline management processes and unlock business potential.
 
-* [**Centerity**](...Ecosystem Partners/getting-started-with-centerity-blueprints.md) – Enhanced monitoring solution providing server metrics and a complete business intelligence layer across  server assets in the CenturyLink Cloud.
+* [**Centerity**](../Ecosystem Partners/getting-started-with-centerity-blueprints.md) – Enhanced monitoring solution providing server metrics and a complete business intelligence layer across  server assets in the CenturyLink Cloud.
 
 ###Open Source Contributions
 Panamax enhancements from CenturyLink Labs - Selected highlights include:

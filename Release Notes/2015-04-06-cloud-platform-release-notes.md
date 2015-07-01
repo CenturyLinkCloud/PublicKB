@@ -48,15 +48,15 @@
 
 ###Ecosystem: New Blueprints (5)
 
-* [**Orchestrate**](...Ecosystem Partners/getting-started-with-orchestrate-blueprint.md) - Online database web service designed to support modern cloud-based application development. Includes support for search, time-ordered events, geospatial or graph queries with a performant REST API. CenturyLink helps customers get started with a sample application that signs up for Orchestrate and allows customers to begin working with the Orchestrate API.
+* [**Orchestrate**](../Ecosystem Partners/getting-started-with-orchestrate-blueprint.md) - Online database web service designed to support modern cloud-based application development. Includes support for search, time-ordered events, geospatial or graph queries with a performant REST API. CenturyLink helps customers get started with a sample application that signs up for Orchestrate and allows customers to begin working with the Orchestrate API.
 
-* [**XtremeData**](...Ecosystem Partners/getting-started-with-xtremedata-dbx-blueprint.md) - High performance, full-featured ANSI SQL database engine designed for performance at scale, up to hundreds of terabytes. Simple to deploy, simple to administer, simple to scale up using CenturyLink Cloud Blueprints.
+* [**XtremeData**](../Ecosystem Partners/getting-started-with-xtremedata-dbx-blueprint.md) - High performance, full-featured ANSI SQL database engine designed for performance at scale, up to hundreds of terabytes. Simple to deploy, simple to administer, simple to scale up using CenturyLink Cloud Blueprints.
 
-* [**Pivotal Gemfire**](...Ecosystem Partners/getting-started-with-pivotal-gemfire-blueprint.md) - An in-memory distributed database for low-latency, high-scale custom applications. GemFire provides in-memory access for all operational data spread across hundreds of nodes with a “shared nothing” architecture.
+* [**Pivotal Gemfire**](../Ecosystem Partners/getting-started-with-pivotal-gemfire-blueprint.md) - An in-memory distributed database for low-latency, high-scale custom applications. GemFire provides in-memory access for all operational data spread across hundreds of nodes with a “shared nothing” architecture.
 
-* [**Pivotal Greenplum**](...Ecosystem Partners/getting-started-with-pivotal-greenplum-blueprint.md) - Enterprise-grade analytical data warehouse featuring in-database compression technology. Powerful and rapid analytics on very large volumes of data. Shared-nothing architecture that automates parallel processing of data and queries.
+* [**Pivotal Greenplum**](../Ecosystem Partners/getting-started-with-pivotal-greenplum-blueprint.md) - Enterprise-grade analytical data warehouse featuring in-database compression technology. Powerful and rapid analytics on very large volumes of data. Shared-nothing architecture that automates parallel processing of data and queries.
 
-* [**Chef**](...Ecosystem Partners/getting-started-with-chef-server-blueprint.md) - Chef turns infrastructure into code, allowing users to automate how they build, deploy, and manage cloud-based infrastructure using the same software development practices as they use for their primary codebase. CenturyLink has integrated Chef Server in to a Blueprint that will automatically install and configure Chef Standalone Server on Red Hat Enterprise Linux.
+* [**Chef**](../Ecosystem Partners/getting-started-with-chef-server-blueprint.md) - Chef turns infrastructure into code, allowing users to automate how they build, deploy, and manage cloud-based infrastructure using the same software development practices as they use for their primary codebase. CenturyLink has integrated Chef Server in to a Blueprint that will automatically install and configure Chef Standalone Server on Red Hat Enterprise Linux.
 
 ###Open Source Contributions (4)
 Selected highlights include:
