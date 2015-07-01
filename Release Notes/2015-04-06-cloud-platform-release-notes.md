@@ -18,7 +18,7 @@
 
 * **CenturyLink Cloud Status.** A new portal - [status.ctl.io](http:./status.ctl.io) - includes real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Accordingly, maintenance and outage notifications will no longer come from communications@centurylinkcloud.com; instead they will come from noc@ctl.io. More information about this service can be found [here](../General/centurylink-cloud-status-faq.md).
 
-![centurylink-status](...images/centurylink-status.png)
+![centurylink-status](../images/centurylink-status.png)
 
 * **Account Service Level now retrievable by API.** *Account.ServiceLevel*, a v1 API, can now be used to retrieve an account's support level, in addition to other billing data.
 
