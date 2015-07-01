@@ -44,17 +44,17 @@ Log into the CenturyLink Cloud Control Portal and choose to create a new Bluepri
 
 Step 1- Using Blueprint Designer you have several choices for versioning, privacy settings, etc.  In this step you can choose the settings that are appropriate for your intended use.  There is one required field, Description.  Populate with a description that is accurate for your use.
 
-Step 2- Add a single Windows 2012R2 server to the Blueprint.  Name the server and accept the sizing defaults.  In this example we have used server name DE1CCTSADFS301.  Under Add Server Tasks, choose execute script.  Add Install Active Directory on Windows 2012 (1 of 2) [Primary Node].  Under Run Task, choose Reboot Server.  Under execute script, choose Install IIS 8 on Windows.  Click add in this window after the choices have been made.  Under Run Task choose Add Public IP.  Select the option for HTTPS which uses port 443 for communication.  Click Add Global Tasks. Click next, tasks & order
+Step 2- Add a single Windows 2012R2 server to the Blueprint (you may have to scroll down to see this option).  Name the server and accept the sizing defaults.  In this example we have used server name DE1CCTSADFS301.  Within the "Add Server Tasks" section, choose "execute script".  Add "Install Active Directory on Windows 2012 (1 of 2) [Primary Node]".  Under "run task", choose "Reboot Server".  Under "execute script", choose "Install IIS 8 on Windows".  Under "run task" choose "Add Public IP".  Select the option for "HTTPS" which uses port 443 for communication. Click "Add Global Tasks". IMPORTANT: Click the "+add" button in this window after the choices have been made. Then, click "next, tasks & order".
 
 The Active Directory packages give us a custom domain to work with, and an identity directory for our user records. Microsoft Internet Information Services (IIS) provides a web application host for the Active Directory Federation Services (ADFS) web services used later in this configuration guide.
 
 ![Blueprint Designer](../images/ADFS SAML 03.png)
 
-Step 3- No steps required.  Click next, review
+Step 3- No steps required.  Click "next, review"
 
-Step 4- Click "submit for publishing"
+Step 4- Click "submit for publishing"  Note: Blueprint may take up to 15 mins to create.
 
-Once the Blueprint has been published select the Blueprint you created from the Blueprint Library.  Click the Deploy Blueprint button to initiate the provisioning process.
+Once the Blueprint has been published, navigate to the Blueprint Library, use the "Refine Results" column to find your Blueprint, and select your Blueprint by clicking on it.  Click the "Deploy Blueprint" button to initiate the provisioning process.
 
 ![Deploy Blueprint](../images/ADFS SAML 04.png)
 
@@ -62,7 +62,7 @@ On the "Customize Blueprint" step of the deployment wizard, the user is asked to
 
 ![Server Build](../images/ADFS SAML 05.png)
 
-Complete the deployment process and wait for the new server to be built by the CenturyLink Cloud Blueprint engine.
+After clicking "Next: Step 2" you will be taken to the "review blueprint" page. Once you have confirmed your choices, complete the deployment process by clicking "deploy blueprint", and wait for the new server to be built by the CenturyLink Cloud Blueprint engine. It may take up to 20 minutes and you can monitor progress in the queue.
 
 ![Blueprint Queue](../images/ADFS SAML 06.png)
 
