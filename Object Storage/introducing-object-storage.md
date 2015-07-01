@@ -108,12 +108,12 @@
       <td>x&nbsp;</td>
     </tr>
     <tr>
-      <td>&nbsp;View bucket object ACLs (permissions)</td>
+      <td>&nbsp;View object ACLs (permissions)</td>
       <td>&nbsp;</td>
       <td>x&nbsp;</td>
     </tr>
     <tr>
-      <td>&nbsp;Set bucket ACLs (permissions)&nbsp;</td>
+      <td>&nbsp;Set object ACLs (permissions)&nbsp;</td>
       <td>&nbsp;</td>
       <td>x&nbsp;</td>
     </tr>
