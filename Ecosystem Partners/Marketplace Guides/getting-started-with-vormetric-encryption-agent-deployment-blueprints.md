@@ -56,12 +56,12 @@ Follow these step by step instructions to deploy the Vormetric Agent to an exist
   2. Search for “Vormetric” in the keyword search on the right side of the Blueprints Library page as shown in the image below.
   3. Locate the Vormetric "Install Vormetric Data Security Transparent Encryption Agent on Linux"
 
-  [Vormetric Image](../../images/ecosystem-vormetric-agent-1.png)
+  ![Vormetric Image](../../images/ecosystem-vormetric-agent-1.png)
 
 2. **Choose and Deploy the Blueprint. Click the “Install Vormetric Data Security Transparent Encryption Agent on Linux” Blueprint.**
 - Click on the "Deploy Blueprint" green button.
 
-  [Vormetric Image](../../images/ecosystem-vormetric-agent-2.png)
+  ![Vormetric Image](../../images/ecosystem-vormetric-agent-2.png)
 
 3. **Configure the Blueprint** 
 Complete the information below:
@@ -71,13 +71,13 @@ Complete the information below:
   3. Do you want to enable hardware association? Default = No
   4. Would you like to use /dev/random to generate random numbers?  Default = No
 
-  [Vormetric Image](../../images/ecosystem-vormetric-agent-3.png)
+  ![Vormetric Image](../../images/ecosystem-vormetric-agent-3.png)
 
 4. **Review and Confirm the Blueprint**
 1. Click “next: step 2”
 2. Verify your configuration details.
 
-  [Vormetric Image](../../images/ecosystem-vormetric-agent-4.png)
+  ![Vormetric Image](../../images/ecosystem-vormetric-agent-4.png)
 
 5. **Deploy the Blueprint**
 1. Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
