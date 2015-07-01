@@ -39,11 +39,11 @@
 
   Data Center can be selected when using the estimator:
 
-  ![Pricing Example 01](...images/pricing-example-01.png)
+  ![Pricing Example 01](../images/pricing-example-01.png)
 
   Or it can be selected when viewing the Pricing Catalog:
 
-  ![Pricing Example 02](...images/pricing-example-02.png)
+  ![Pricing Example 02](../images/pricing-example-02.png)
 
 
 ###Ecosystem: New Blueprints (5)
