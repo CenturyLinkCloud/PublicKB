@@ -52,6 +52,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 |:-	|:-	|
 | [Alert Logic Web Security Manager](../Ecosystem Partners/Marketplace Guides/getting-started-with-alert-logic-web-security-manager-partner-template.md)   	| Template    | Web security manager appliance    |
 | [Alert Logic Threat Manager](../Ecosystem Partners/Marketplace Guides/getting-started-with-alert-logic-threat-manager-partner-template.md)   	| Template    | Threat manager appliance    |
+| [Cavirin Automated Risk Analysis Platform](../Ecosystem Partners/Marketplace Guides/ggetting-started-with-cavirin-automated-risk-analysis-platform-partner-template.md)   	| Template    | Governance and compliance appliance    |
 | [OSSEC](../Ecosystem Partners/Marketplace Guides/getting-started-with-ossec-blueprints.md)   	| Template    | HIDS    |
 | [Vormetric](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-dsm.md)   	| Template    | Data encryption and key management    |
 | [Vormetric](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-encryption-agent-deployment-blueprints.md)   	| Blueprint    | Data encryption and key management    |
