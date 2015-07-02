@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-![logo](../../images/Ecosystem-Cavirin-ARAP_logo_full color_200px.png)
+![logo](../../../images/Ecosystem-Cavirin-ARAP_logo_full color_200px.png)
 
 ###Partner Profile
 Cavirin - Delivering Continuous Audit and Operational Compliance to the Cloud
