@@ -42,7 +42,8 @@ There could be a few causes:
 	* Hong Kong: +852 3079 4461
 	* Singapore: +65 6591 8824
 
-Is there anything that I cannot do in the Control Portal with a managed VM?
+**Is there anything that I cannot do in the Control Portal with a managed VM?**
+
 A managed virtual machine cannot be cloned, archived, or converted to a template. Also, the "time to live" option is not available when creating a new managed server. At this time, you cannot create a managed server within a Cloud Blueprint.
 
 **How do I log into my server?**
