@@ -25,7 +25,7 @@ Some functions within the Control Portal and associated APIs are only applicable
   <td>Maintenance Mode</td>
   <td>x</td>
   <td>x</td>
-  <td>x</td>
+  <td> </td>
 </tr>
 <tr>
   <td>Off</td>
