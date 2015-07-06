@@ -1,9 +1,10 @@
 {{{
   "title": "Understanding the Difference Between Templates, Blueprints and Packages",
-  "date": "3-6-2015",
-  "author": "Keith Resar",
+  "date": "7-6-2015",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 This article can be helpful to differentiate between Templates, Blueprints and Packages - all critical elements of the CenturyLink Cloud orchestration system we collectively call the Blueprint Engine.
