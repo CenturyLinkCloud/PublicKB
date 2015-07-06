@@ -17,7 +17,7 @@ For more information, visit [http://www.Vormetric.com](http://www.Vormetric.com)
 ##### Vormetric Sales and Support:
 - 24x7 Email Support - [support@vormetric.com](mailto:support@vormetric.com)
 - 24x7 Telephone Support - (877) 267-3247
-- Sales and Marketing - [centurylinkcloud@vormetric.com](mailto:centurylinkcloud@vormetric.com)
+- Sales and Marketing - [centurylink@vormetric.com](mailto:centurylink@vormetric.com)
 
 ### Description
 Vormetric has integrated their Data Security Manager (DSM) technology with the CenturyLink Cloud platform, publishing their virtual appliance as a CenturyLink Cloud Partner Template.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this encryption solution.
@@ -129,7 +129,7 @@ Thank you very much, your_name_here
 Existing CenturyLink Enterprise Customers can contact their Account Representative for help obtaining a Vormetric license, or contact Vormetric directly:
 -   Contact Vormetric Support via telephone: (877) 267-3247
 -   Contact Vormetric via their website: [http://www.Vormetric.com](http://www.Vormetric.com)
--   Email Sales via [centurylinkcloud@vormetric.com](mailto:centurylinkcloud@vormetric.com)
+-   Email Sales via [centurylinkvormetric.com](mailto:centurylink@vormetric.com)
 
 #### Who should I contact for support?
 * For issues regarding the Vormetric DSM virtual appliance, please contact Vormetric via their Support Website: [http://www.Vormetric.com](http://www.Vormetric.com)
