@@ -1,21 +1,20 @@
 {{{
-  "title": "Getting Started with Django Stack - Blueprint",
+  "title": "Getting Started with LAPP Stack - Blueprint",
   "date": "06-30-2015",
   "author": "Bitnami",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-![Django Stack logo](https://bitnami.com/assets/stacks/djangostack/img/djangostack-stack-220x234.png)
+![LAPP Stack logo](https://bitnami.com/assets/stacks/lappstack/img/lappstack-stack-220x234.png)
 
 ### Technology Profile
-Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Python is a dynamic object-oriented programming language that can be used for many kinds of software development. The CenturyLink Cloud Django Blueprint greatly simplifies the deployment of Django and its runtime dependencies and includes ready-to-run versions of Python, Django, MySQL and Apache.
+LAPP Stack provides a complete, fully-integrated and ready to run LAPP development environment. In addition to PHP, PostgreSQL and Apache, it includes FastCGI, OpenSSL, phpPgAdmin, ModSecurity, SQLite, Varnish, ImageMagick, xDebug, Xcache, OpenLDAP, ModSecurity, Memcache, OAuth, PEAR, PECL, APC, GD, cURL and other components and the following frameworks: [Zend Framework](https://wiki.bitnami.com/Components/PHP_Frameworks/Zend_Framework), [Symfony](https://wiki.bitnami.com/Components/PHP_Frameworks/Symfony), [CodeIgniter](https://wiki.bitnami.com/Components/PHP_Frameworks/CodeIgniter), [CakePHP](https://wiki.bitnami.com/Components/PHP_Frameworks/CakePHP), [Smarty](https://wiki.bitnami.com/Components/PHP_Frameworks/Smarty), [Laravel](https://wiki.bitnami.com/Components/PHP_Frameworks/Laravel). 
 
 ### Description
-This CenturyLink Blueprint provides a click-through solution to install and configure Django Stack on the Linux platform.
+This CenturyLink Blueprint provides a click-through solution to install and configure LAPP Stack on the Linux platform.
 
-For more information, please visit [http://www.djangoproject.com/](http://www.djangoproject.com/)
-
+For more information, please visit [http://php.net](http://php.net)
 
 ### Audience
 CenturyLink Cloud Users
@@ -34,25 +33,26 @@ After reading this article, the user should feel comfortable getting started usi
 2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
   * The default ports to access the application are: 80, 443
 
-### Deploying Django Stack on a New Server
-Django Stack is available as a Blueprint for deployment on a new server.
+### Deploying LAPP Stack on a New Server
+LAPP Stack is available as a Blueprint for deployment on a new server.
 
 #### Steps to deploy to an existing server Blueprint
-1. **Locate the Django Stack Stack Blueprint**
+1. **Locate the LAPP Stack Stack Blueprint**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-  2. Search for “Django Stack” in the keyword search on the right side of the page.
-  3. Locate the 'Install Django Stack on Linux' Blueprint
+  2. Search for “LAPP Stack” in the keyword search on the right side of the page.
+  3. Locate the 'Install LAPP Stack on Linux' Blueprint
 
-2. **Choose and Deploy the Blueprint. Click the “Install Django Stack on Linux” Blueprint.**
+2. **Choose and Deploy the Blueprint. Click the “Install LAPP Stack on Linux” Blueprint.**
 
 3. **Configure the Blueprint** 
 Complete the information below:
 
   1. Execute on Server: Select a Linux x64 server to deploy the Blueprint on.
-  2. MySQL Server root password
-  3. PostgreSQL postgres user password
-  4. Apache Web Server Port, e.g. 80
-  5. MySQL Server port, e.g. 3306
+  2. Apache Web Server Port, e.g. 80
+  3. SSL Port, e.g. 443
+  4. Web Server domain, e.g. 127.0.0.1
+  5. Database Server port, e.g. 5432
+  6. PostgreSQL postgres user password
 
 4. **Review and Confirm the Blueprint**
   1. Click “next: step 2”
@@ -67,24 +67,25 @@ Complete the information below:
   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-### Deploy Django Stack to an existing server (alternate option)
-Django Stack Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
+### Deploy LAPP Stack to an existing server (alternate option)
+LAPP Stack Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
 #### Steps to deploy to an existing server
 1. **Deploy or Identify an Existing Server**
-Identify the server targeted for Django Stack installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
+Identify the server targeted for LAPP Stack installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. **Select to Execute the Package on a Server Group**
-  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Django Stack on Linux**.
+  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install LAPP Stack on Linux**.
   2. See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. **Configure the Parameters**
 Set the following application parameters:
 
-* **MySQL Server root password**
-* **PostgreSQL postgres user password**
 * **Apache Web Server Port** - default 80
-* **MySQL Server port** - default 3306
+* **SSL Port** - default 443
+* **Web Server domain** - default 127.0.0.1
+* **Database Server port** - default 5432
+* **PostgreSQL postgres user password**
 
 4. **Deploy the Script Package**
 Once verified, click on the `execute package` button. This will kick off the deployment process and load a page where you can track the progress. Deployment will typically complete within a few minutes.
@@ -94,7 +95,7 @@ Once verified, click on the `execute package` button. This will kick off the dep
   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-### Access your Django Stack server
+### Access your LAPP Stack server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
 
   1. Check email to obtain Server Name and IP Address Login information
