@@ -51,7 +51,7 @@ CenturyLink is responsible for all hardware replacement for Bare Metal servers. 
 
 **What are the security features available for Bare Metal servers?**
 
-The same CenturyLink Cloud platform firewall policies available for virtual servers are available for Bare Metal servers.  NOT SURE ON THIS ONE..
+The same CenturyLink Cloud platform firewall policies available for virtual servers are available for Bare Metal servers.  NOT SURE ON THIS ONE...
 
 **What should I do if I do not see the configuration of CPU/Memory/Storage I want?**
 
