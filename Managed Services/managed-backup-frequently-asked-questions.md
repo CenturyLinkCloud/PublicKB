@@ -6,7 +6,7 @@
     {
       "file_name": "Average Amount of Protected Data Example",
       "url": "../attachments/Avg Amount of Protected Data Example.xlsx",
-      "type": "application/msexcel"
+      "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
     }
   ],
   "contentIsHTML": false,

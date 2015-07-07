@@ -103,9 +103,9 @@ Here is an example of the Add-on Engine provision request:
 ```
 POST [base_url]
 {
-  callback_url: "https://addons.ctl.io/vendor/8e6d510f-0df0-421e-b93f-05d5337fc26d"
-  uuid: [Add-on Marketplace generated service instance ID],
-  plan: [plan ID from Partner Service Manifest],
+  uuid: [Add-on Engine generated service instance ID],
+  plan: [plan ID from partner manifest],
+  callback_url: "https://addons.ctl.io/vendor/[uuid]"
   region: "useast",
   options: {}
 }
@@ -113,12 +113,13 @@ POST [base_url]
 
 Here is a description of each body attribute:
 
-| Attribute | Value                                                   |
-| --------- | -----------------                                       |
-| `uuid`    | Add-on Marketplace generated unique service instance ID |
-| `plan`    | Plan ID from Partner defined Service Manifest           |
-| `region`  | Region that service is being provisioned for            |
-| `options` | Currently not populated from Add-on Marketplace.        |
+| Attribute      | Value                                                |
+| ---------      | -----------------                                    |
+| `uuid`         | Add-on Engine generated unique service instance ID   |
+| `plan`         | Plan ID from Partner defined manifest                |
+| `callback_url` | URL partner can use to access creator's Account info |
+| `region`       | Region that service is being provisioned for         |
+| `options`      | Currently not populated from Add-on Engine.          |
 
 The response from the `POST [base_url]` request should look similar to:
 

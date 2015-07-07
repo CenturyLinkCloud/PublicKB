@@ -92,7 +92,7 @@ There are multiple small changes to how the Add-on Engine manifest is configured
 
 #### Differences from Existing AppFog Add-on Manifest
 
-- `username`, `sso_salt`, `config_vars`, `api/production/sso_url`, `api/test/sso_url`, `plans/price` and `plans/price_unit` are not valid attributes anymore
+- `plans/price` and `plans/price_unit` are not valid attributes anymore
 - `api/production` and `api/test` must be a valid JSON objects each with a `base_url` attribute defined.
 - The top level attribute `test` is no longer valid outside of the `api` object
 
@@ -110,7 +110,7 @@ POST [base_url]/phpfog/resources
 }
 ```
 
-There are a few assumptions in this provisioning request. First, the `customer_id` is assumed to be a single user's email address. The Add-on Engine does not send a customer unique identifier in the request since service provisioning is made for an account that may have many members. Also, there is no concept of `callback_url` at this time in the Add-on Engine. This `callback_url` was provided as a way for partners to update a service instance's data after provisioning has occured. This is useful for instances such as security issues in the partner's platform that results in updating the credentials for all service instances. Add-on Engine will be looking at an approach for providing this capability in the future.
+There are a few assumptions in this provisioning request. First, the `customer_id` is assumed to be a single user's email address. The Add-on Engine does not send a customer unique identifier in the request since service provisioning is made for an account that may have many members.
 
 Here is an example of the Add-on Engine provision request:
 
@@ -119,19 +119,21 @@ POST [base_url]
 {
   uuid: [Add-on Engine generated service instance ID],
   plan: [plan ID from partner manifest],
-  region: 'useast',
+  callback_url: "https://addons.ctl.io/vendor/[uuid]"
+  region: "useast",
   options: {}
 }
 ```
 
 Here is a description of each body attribute:
 
-| Attribute | Value                                              |
-| --------- | -----------------                                  |
-| `uuid`    | Add-on Engine generated unique service instance ID |
-| `plan`    | Plan ID from Partner defined manifest              |
-| `region`  | Region that service is being provisioned for       |
-| `options` | Currently not populated from Add-on Engine.        |
+| Attribute      | Value                                                |
+| ---------      | -----------------                                    |
+| `uuid`         | Add-on Engine generated unique service instance ID   |
+| `plan`         | Plan ID from Partner defined manifest                |
+| `callback_url` | URL partner can use to access creator's Account info |
+| `region`       | Region that service is being provisioned for         |
+| `options`      | Currently not populated from Add-on Engine.          |
 
 The response from the `POST [base_url]` request should look similar to:
 

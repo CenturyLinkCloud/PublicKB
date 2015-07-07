@@ -43,7 +43,7 @@ If you would like to pin a kb article so that it always appears at the top of it
 3. Once your branch has been created, make your changes (add, edit, delete) your knowledge base article in your favorite Markdown editor (we like [Atom](https://atom.io/)).
 
   ### Sub-Categories
-  
+
   Within the top level categories, addtional tags can be assigned to articles based on the name of the articles parent folder name. Keep in mind the need for an addtional level of folders when linking to images or other articles when authoring an article in a sub-category folder.
 
   ### Links (KB article to KB article)
@@ -54,16 +54,16 @@ If you would like to pin a kb article so that it always appears at the top of it
     [Link Text](../category/kb-article-name.md)
     [Link Text](../category/sub-category/kb-article-name.md)
     ```
-    
+
     so like this (folder names are case-sensitive):
-    
+
     ```
     [Packages Best Practices](../Blueprints/packages-best-practices.md)
     [Using SAML for Single-Sign-On](../Control Portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md )
     ```
 
   Links to external sites should follow this format:
-  
+
     ```
     [Managed Microsoft SQL](//www.centurylinkcloud.com/managed-services/ms-sql)
     ```
@@ -75,10 +75,12 @@ If you would like to pin a kb article so that it always appears at the top of it
     ```
     /* Top Level Category Article */
     ../images/[image file]
-    
+
     /* Sub-Category Article */
     ../../images/[image file]
     ```
+
+  Be sure the file name does not include any spaces.
 
   ### Attachments
 
@@ -96,6 +98,8 @@ If you would like to pin a kb article so that it always appears at the top of it
 
   `"file_name"` will be the human readable output of the file which will appear on the page
 
+  Be sure the file name does not include any spaces.
+
   `"url"` needs to be set exactly like the above example, like so:
 
     ```
@@ -105,16 +109,16 @@ If you would like to pin a kb article so that it always appears at the top of it
   `"type"` is simply the MIME type of the file and is used to check which sort of icon to present on the front end.
 
   ### Tables
-  
+
   Tables in articles should follow this format:
-  
+
   ```
   **Bold Text**|**Bold Text**|**Bold Text**
   -------------|-------------|-------------
   TEXT COLUMN A|TEXT COLUMN B|TEXT COLUMN C
   TEXT COLUMN A|TEXT COLUMN B|TEXT COLUMN C
   ```
-  
+
 4. Commit your change(s) locally to your branch.
 
 5. Push or sync your commit(s) to the remote repository on Github.

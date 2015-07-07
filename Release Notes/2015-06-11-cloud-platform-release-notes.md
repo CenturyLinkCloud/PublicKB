@@ -12,14 +12,14 @@
 
   Managed OS continue to be available in Virginia (VA1), Santa Clara (UC1) and London (GB3).
 
-* __Patching as a Service.__ Now available for free to all CenturyLink customers using Windows 2012. Our customers can patch their Windows 2012 servers through blueprints or 'execute package' on demand via the Control Portal or API. The service provides the capability to patch servers, know when the patching started and finished as well as list of all patches applied. [You can learn more about Patching as a Service in our KB.](../Servers/patching-as-a-service.md)
+* __Patching as a Service.__ Now available for free to all CenturyLink customers using Windows 2012. Our customers can patch their Windows 2012 servers through blueprints or 'execute package' on demand via the Control Portal or API. The service provides the capability to patch servers, know when the patching started and finished as well as list of all patches applied. [You can learn more about Patching as a Service in our KB.](...Servers/patching-as-a-service.md)
 
-* __Orchestrate.__ Our multi-modal managed datatabse service, [Orchestrate](https://www.centurylinkcloud.com/blog/post/centurylink-acquires-orchestrate/), gives developers a single API for key-value, geospatial, graph, and timeseries data. And it just keeps getting better and better! Check out the new functionality delivered this month, focused on usability and exposing API features:
+* __Orchestrate.__ Our multi-modal managed datatabse service, [Orchestrate](https:./www.centurylinkcloud.com/blog/post/centurylink-acquires-orchestrate/), gives developers a single API for key-value, geospatial, graph, and timeseries data. And it just keeps getting better and better! Check out the new functionality delivered this month, focused on usability and exposing API features:
 
   * New dashboard query form. Explore the full glory of Orchestrate's API with the newly updated dashboard UI.
   * New bulk write API.  Write up to 250 documents, events, and graph relations in one request.
 
-  Read more about [how you can get started with Orchestrate](https://orchestrate.io/docs).
+  Read more about [how you can get started with Orchestrate](https:./orchestrate.io/docs).
 
 * __Network APIs.__ Networking functions are now available via self-service API. Specific capabilities include:
   * Create an intra-DC firewall
@@ -27,29 +27,29 @@
   * Get an intra-DC firewall policy list
   * Update an intra-DC firewall policy
 
-  [**Review the documentation for APIs here.**](https://www.centurylinkcloud.com/api-docs/v2/#firewall-policies)
+  [**Review the documentation for APIs here.**](https:./www.centurylinkcloud.com/api-docs/v2/#firewall-policies)
 
 
 ###Minor Enhancements (3)###
 
-* __Database as a Service.__ Certified Managed MySQL now works with RHEL6 and 7. You can [read more about Managed MySQL in our KB](../Managed Services/getting-started-with-managed-mysql.md).
+* __Database as a Service.__ Certified Managed MySQL now works with RHEL6 and 7. You can [read more about Managed MySQL in our KB](...Managed Services/getting-started-with-managed-mysql.md).
 
 * __UI improvements.__ The Control Portal continues to get easier on the eye. We've made some light improvements to the UI that we think you'll appreciate.
 
-* __CenturyLink Cloud Status.__ [status.ctl.io](http://status.ctl.io/) provides real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Notifications surrounding Compute, Network, and Storage are now based on what servers an account has in a specific data center, allowing our customers to get the information they need - and only the information that they need.
+* __CenturyLink Cloud Status.__ [status.ctl.io](http:./status.ctl.io/) provides real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Notifications surrounding Compute, Network, and Storage are now based on what servers an account has in a specific data center, allowing our customers to get the information they need - and only the information that they need.
 
-  Our KB has more [information about the CenturyLink Cloud Status service.](../General/centurylink-cloud-status-faq.md)
+  Our KB has more [information about the CenturyLink Cloud Status service.](...General/centurylink-cloud-status-faq.md)
 
 
 ###Online Tools (1)###
 
-* __Blueprint Formation.__ Take our new blueprint formation tool for a spin. [This GitHub repository](https://github.com/CenturyLinkCloud/bpformation) contains a command line interface to interact with the CenturyLink Cloud Blueprints packaging and workflow services.
+* __Blueprint Formation.__ Take our new blueprint formation tool for a spin. [This GitHub repository](https:./github.com/CenturyLinkCloud/bpformation) contains a command line interface to interact with the CenturyLink Cloud Blueprints packaging and workflow services.
 
 ###Notifications (2)###
 
-* __New Domains.__ Effective March 5, the default CenturyLink Cloud domain was updated to control.ctl.io. The URL for SAML users has also been updated to https://[`account-alias`].cloudportal.io (where `account-alias` is your four-letter account identifier). __Please update any code that leverages the CenturyLink Cloud API to ensure that it uses the supported endpoint.__ The legacy domains will continue to operate until July 15.
+* __New Domains.__ Effective March 5, the default CenturyLink Cloud domain was updated to control.ctl.io. The URL for SAML users has also been updated to https:./[`account-alias`].cloudportal.io (where `account-alias` is your four-letter account identifier). __Please update any code that leverages the CenturyLink Cloud API to ensure that it uses the supported endpoint.__ The legacy domains will continue to operate until July 15.
 
-* __AppFog Limited Beta.__ Beta access for AppFog continues to be available. Based on Cloud Foundry v2, this new platform for applications makes it easier for developers to build and scale cloud-native applications. To sign-up, visit [the AppFog product page](https://www.centurylinkcloud.com/appfog/).
+* __AppFog Limited Beta.__ Beta access for AppFog continues to be available. Based on Cloud Foundry v2, this new platform for applications makes it easier for developers to build and scale cloud-native applications. To sign-up, visit [the AppFog product page](https:./www.centurylinkcloud.com/appfog/).
 
 
 ###Ecosystem: New Blueprints (5)###
@@ -72,12 +72,12 @@ Even though our global cloud platform is able to scale to various enterprise wor
 
 ###Open Source Contributions (2)###
 
-* [__Lorry.io.__](https://imagelayers.io/) Lorry.io is a CenturyLink Labs open-source project for creating, validating and sharing Docker Compose YAML files. Docker-compose.yml files are used to define and run complex applications with Docker and Docker Compose. Lorry.io can also import Panamax templates and convert them into docker-compose.yml files. For more information, [read this blog post](http://www.centurylinklabs.com/lorry-io-pathway-to-docker-composable-apps/) and [browse the wiki here](https://github.com/CenturyLinkLabs/lorry).
+* [__Lorry.io.__](https:./imagelayers.io/) Lorry.io is a CenturyLink Labs open-source project for creating, validating and sharing Docker Compose YAML files. Docker-compose.yml files are used to define and run complex applications with Docker and Docker Compose. Lorry.io can also import Panamax templates and convert them into docker-compose.yml files. For more information, [read this blog post](http://www.centurylinklabs.com/lorry-io-pathway-to-docker-composable-apps/) and [browse the wiki here](https://github.com/CenturyLinkLabs/lorry).
 
 * **Updates:**
 
-  * [ImageLayers.io](http://www.imagelayers.io/) v1.0.2: Support for Mobile views, social sharing buttons and ability to select specific tag for badging images. Learn more on the [ImageLayers wiki](https://github.com/CenturyLinkLabs/imagelayers-graph).
-  * [Panamax](http://www.panamax.io/) (v0.6.3) now supports cAdvisor 0.13.0 and CoreOS 647.2.0.
+  * [ImageLayers.io](http:./www.imagelayers.io/) v1.0.2: Support for Mobile views, social sharing buttons and ability to select specific tag for badging images. Learn more on the [ImageLayers wiki](https://github.com/CenturyLinkLabs/imagelayers-graph).
+  * [Panamax](http:./www.panamax.io/) (v0.6.3) now supports cAdvisor 0.13.0 and CoreOS 647.2.0.
 
 ###Bug Fixes (4)###
 
