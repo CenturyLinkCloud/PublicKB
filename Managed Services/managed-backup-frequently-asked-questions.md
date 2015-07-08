@@ -1,6 +1,6 @@
 {{{
   "title": "Managed Backup - Frequently Asked Questions",
-  "date": "6-12-2015",
+  "date": "7-8-2015",
   "author": "Bryan Friedman",
   "attachments": [
     {
@@ -119,6 +119,7 @@ A: The table below provides the offsite vault locations:
 
 **CenturyLink Cloud Location**|**Offsite Vault Location**
 ------------------------------|--------------------------
-US West (Santa Clara) - UC1|[CenturyLink CH3](//www.centurylinktechnology.com/data-centers/north-america/chicago)
-US East (Sterling) - VA1|[CenturyLink DL2](//www.centurylinktechnology.com/data-centers/north-america/dallas)
-Great Britain (Slough) - GB3|[CenturyLink LO6](//www.centurylinktechnology.com/data-centers/europe/london)
+US West (Santa Clara) - UC1|[CenturyLink CH3](//www.centurylink.com/business/enterprise/colocation/data-centers/united-states/illinois/chicago.html)
+US East (Sterling) - VA1|[CenturyLink DL2](//www.centurylink.com/business/enterprise/colocation/data-centers/united-states/texas/dallas.html)
+Great Britain (Slough) - GB3|[CenturyLink LO6](//www.centurylink.com/business/enterprise/colocation/data-centers/united-kingdom/london.html)
+APAC (Singapore) - SG1|[CenturyLink SG8](//www.centurylink.com/business/enterprise/colocation/data-centers/singapore.html)

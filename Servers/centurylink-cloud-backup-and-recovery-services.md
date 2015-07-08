@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Backup and Recovery Services",
-  "date": "6-8-2015",
+  "date": "7-8-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -8,6 +8,9 @@
 }}}
 
 The CenturyLink Cloud Platform provides clients with various integrated and custom solutions to protect and rapidly recovery data.
+
+### Exclusions
+* Managed Backup Customers
 
 ### Standard Server Backup &amp; Recovery Services
 All **Standard** Servers in the CenturyLink Cloud platform include a nightly file system backup of the Operating System's running state. These nightly backups start around 8pm (local server time) but are staggered to minimize impact on load. The backups will be retained based on choice during VM provisioning. **These backups are not application aware and as such do not provide transactional consistency. Refer to the Database and Exchange portions of this KB for options to meet this need.**

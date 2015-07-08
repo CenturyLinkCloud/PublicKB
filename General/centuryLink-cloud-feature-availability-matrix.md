@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Feature Availability Matrix",
-  "date": "6-19-2015",
+  "date": "7-8-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -21,7 +21,7 @@ The CenturyLink Cloud provides a vast array of services for customers to consume
 [Hyperscale Computing](//www.centurylinkcloud.com/hyperscale)|US West (Santa Clara) - UC1<p>US Central (Chicago) - IL1<p>US East (New York) - NY1<p>US East (Sterling) - VA1<p>Great Britain (Slough) - GB3<p>Canada (Toronto - Mississauga) - CA3<p>APAC (Singapore) - SG1
 [Managed Operating System Services](//www.centurylinkcloud.com/managed-services/operating-system)|US West (Santa Clara) - UC1<p>US East (Sterling) - VA1<p>US Central (Chicago) - IL1<p>Great Britain (Slough) - GB3<p>Canada (Toronto - Mississauga) - CA3<p>APAC (Singapore) - SG1
 [Managed Applications](//www.centurylinkcloud.com/managed-services)|US West (Santa Clara) - UC1<p>US East (Sterling) - VA1<p>US Central (Chicago) - IL1<p>Great Britain (Slough) - GB3<p>Canada (Toronto - Mississauga) - CA3<p>APAC (Singapore) - SG1
-[Managed Backup](//www.centurylinkcloud.com/managed-services/backup)|US West (Santa Clara) - UC1<p>US East (Sterling) - VA1<p>Great Britain (Slough) - GB3
+[Managed Backup](//www.centurylinkcloud.com/managed-services/backup)|US West (Santa Clara) - UC1<p>US East (Sterling) - VA1<p>Great Britain (Slough) - GB3<p>APAC (Singapore) - SG1
 [Cloud Network Services](//www.centurylinkcloud.com/blog/post/use-cloud-network-service-for-making-hybrid-cloud-a-reality)|US West (Seattle) - WA1<p>US West (Santa Clara) - UC1<p>US Central (Chicago) - IL1<p>US East (New York) - NY1<p>US East (Sterling) - VA1<p>Great Britain (Slough) - GB3<p>Canada (Toronto - Mississauga) - CA3<p>Germany (Frankfurt) - DE1<p>APAC (Singapore) - SG1
 [Object Storage](//www.centurylinkcloud.com/object-storage)|Canada Region<sup>1</sup>
 [Orchestrate](//orchestrate.io)|US West (Santa Clara) - UC1<p>US East (Sterling) - VA1<p>Great Britain (Slough) - GB3<p>APAC (Singapore) - SG1
