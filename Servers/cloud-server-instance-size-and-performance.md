@@ -1,13 +1,13 @@
 {{{
-  "title": "Cloud Server Instance Size and Performance",
-  "date": "4-24-2015",
+  "title": "Cloud Virtual Server Instance Size and Performance",
+  "date": "7-8-2015",
   "author": "Richard Seroter",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
 }}}
 
-The CenturyLink Cloud Platform does not offer predefined "instance types" but rather, lets users provision servers with any combination of resources they want. The platform is designed to deliver predictable performance for each machine regardless of size and data center. Costs are incurred hourly and based on the amount of CPU, memory and storage resources allocated.
+The CenturyLink Cloud Platform does not offer predefined virtual "instance types" but rather, lets users provision virtual servers with any combination of resources they want. The platform is designed to deliver predictable performance for each machine regardless of size and data center. Costs are incurred hourly and based on the amount of CPU, memory and storage resources allocated.
 
 ### Maximum Resources (Standard)
 
