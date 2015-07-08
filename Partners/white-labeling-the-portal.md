@@ -104,6 +104,5 @@ To change the the TRUSTe Certified Logo, do the following:
 2. Use the image editor, and click on the insert image icon (3rd from the right) to insert your image. Recommended image size is 142 pixels wide by 45 pixels high.
 
 Other Useful White Labeling Article:
-**White Labeling Cloud Services Estimator:**https://www.centurylinkcloud.com/blog/post/cloud-services-estimator-now-open-source/
-**Make Our Cloud Your Own:**https://www.centurylinkcloud.com/blog/post/take-control-channel-partners-and-enterprise-customers-can-make-our-cloud-their-own/
-
+[Learn More About White Labeling Cloud Services Estimator](https://www.centurylinkcloud.com/blog/post/cloud-services-estimator-now-open-source/)
+[Learn More About White Labeling KB and How To Make Your Own Cloud](https://www.centurylinkcloud.com/blog/post/take-control-channel-partners-and-enterprise-customers-can-make-our-cloud-their-own/)
