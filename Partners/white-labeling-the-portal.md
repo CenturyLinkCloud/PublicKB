@@ -105,4 +105,5 @@ To change the the TRUSTe Certified Logo, do the following:
 
 Other Useful White Labeling Article:
 [Learn More About White Labeling Cloud Services Estimator](https://www.centurylinkcloud.com/blog/post/cloud-services-estimator-now-open-source/)
+
 [Learn More About White Labeling KB and How To Make Your Own Cloud](https://www.centurylinkcloud.com/blog/post/take-control-channel-partners-and-enterprise-customers-can-make-our-cloud-their-own/)
