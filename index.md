@@ -15,6 +15,7 @@
     "Object Storage",
     "Partners",
     "Release Notes",
-    "Servers"
+    "Servers",
+    "Wordpress"
   ]
 }}}
