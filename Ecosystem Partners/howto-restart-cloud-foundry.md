@@ -1,4 +1,13 @@
-# Restarting Cloud Foundry
+{{{
+  "title": "Restarting Cloud Foundry w/ BOSH",
+  "date": "07-06-2015",
+  "author": "Tommy Hughes",
+  "attachments": [],
+  "related-products" : [],
+  "contentIsHTML": false,
+  "sticky": true
+}}}
+# Restarting Cloud Foundry w/ BOSH
     This KB assumes:
         - You have a fully functional Cloud Foundry (CF) stack.
         - Access via bosh cli to the BOSH Director.
