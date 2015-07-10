@@ -12,6 +12,7 @@ will follow suit.
 * [Groups](#groups) and [Group](#group) - `Groups` and `Group` classes.  Logical organization around assets by group which can contain sub-groups or servers
 * [Servers](#servers) and [Server](#server) - `Servers` and `Server` classes.  Cloud servers
 * [Disks](#disks) and [Disk](#disk) - `Disks` and `Disk` classes.  Cloud server related disk classes.
+* [Networks](#networks) and [Network](#network) - `Networks` and `Network` classes
 * [Public IPs](#public-ips) and [Public IP](#publicip) - `PublicIPs` and `PublicIP` classes.  Cloud server related public IP classes.
 * [Requests](#requests) and [Request](#request) - `Requests` and `Request` classes.  Interface to work queue for async operations
 * [API](#api) - `API` class.  Internals to set API behavior
@@ -1054,6 +1055,94 @@ This request will error if disk is protected and cannot be removed (e.g. a syste
 0
 ```
 
+
+
+## Networks
+
+[Networks pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.network.html)
+
+
+### Class variables
+
+Object variables:
+
+* networks.networks - list of network objects
+
+### clc.v2.Networks
+```python
+clc.v2.Networks( alias=None, location=None, networks_lst=None )
+```
+
+```python
+>>> clc.v2.Networks(location="CA1").networks[0].gateway
+'10.50.14.1'
+```
+
+Create `Networks` object.  Provide `alias` and `location` to build networks list for a specific datacenter.
+Calling for using `networks_lst` is typically only initiated from the `clc.v2.Datacenter.Networks` call.
+
+
+### clc.v2.Networks.Get
+
+```python
+clc.v2.Networks.Get( key )
+```
+
+```python
+>>> clc.v2.Networks(location="CA1").Get("f58148729bd94b02ae8b652f5c5feba4")
+
+```
+
+Return the `Network` object matching supplied key, matches on one of name or id.
+
+
+
+## Network
+
+[Network pydocs output](http://centurylinkcloud.github.io/clc-python-sdk/doc/clc.APIv2.network.html)
+
+
+### Class variables
+
+Object variables:
+
+* network.name
+* network.id
+* network.type
+* network.alias
+* network.vlan
+* network.netmask
+* network.cidr
+* network.type
+* network.gateway
+* network.description
+
+
+### clc.v2.Network
+```python
+clc.v2.Network( id, alias=None, network_obj=None )
+```
+
+```python
+'tbd'
+```
+
+Create `Network` object.  Provide `alias` and `netowrk_object` to build networks list for a specific datacenter.
+This is nearly always initated from a `clc.v2.Networks` constructor call.
+
+
+### clc.v2.Networks.Get
+
+```python
+clc.v2.Networks.Get( key )
+```
+
+```python
+>>> clc.v2.Networks(location="CA1").Get("f58148729bd94b02ae8b652f5c5feba4")
+
+```
+
+Return the `Network` object matching supplied key, matches on one of name or id.
 
 
 
