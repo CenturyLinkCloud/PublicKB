@@ -104,3 +104,32 @@ last uploaded: Wed Jun 3 01:41:07 UTC 2015
 Once the application has successfully started then you can go to the given URL route provided as the value for `urls` in the console log. The example URL route above is `spring-music-inconstant-ivyberry.useast.appfog.ctl.io`. Take this URL and go to a browser to see the running application.
 
 <img src="../images/2015-06-03-spring-music-browser.png"/>
+
+### Add Session Persistence to your Java application
+ - Automatically persist your session data to a redis service and keep your session alive in the event any individual Java instance crashes.
+
+```shell
+$ cf create-service p-redis shared-vm session-replication
+Creating service session-replication in org DEMO / space Dev as demo_user...
+OK
+
+$ cf bind-service spring-music session-replication
+Binding service session-replication to app spring-music in org DEMO / space Dev as demo_user...
+OK
+TIP: Use 'cf restage' to ensure your env variable changes take effect
+
+$ cf services
+Getting services in org DEMO / space Dev as demo_user...
+OK
+name                   service         plan           bound apps       last operation
+session-replication    p-redis         shared-vm      spring-music     create succeeded
+
+$ cf restage spring-music
+-----> Downloading Tomcat Redis Store 1.2.0_RELEASE from https://download.run.pivotal.io/redis-store/redis-store-1.2.0_RELEASE.jar (found in cache)
+       Adding Redis-based Session Replication
+       
+$ cf logs spring-music --recent | grep -i com.gopivotal.manager.redis.RedisStore
+OUT [CONTAINER] com.gopivotal.manager.redis.RedisStore  INFO  Sessions will be persisted to Redis using a com.gopivotal.manager.redis.RedisStore
+OUT [CONTAINER] com.gopivotal.manager.redis.RedisStore  INFO  Connecting to Redis Server at redis://10.x.x.x:xxxxx/0
+OUT [CONTAINER] com.gopivotal.manager.redis.RedisStore  INFO  Connection to Redis Server successful
+```
