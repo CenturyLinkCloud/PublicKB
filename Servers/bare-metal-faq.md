@@ -27,7 +27,7 @@ This FAQ addresses commonly asked questions about the service. For further infor
 
 **Can I increase or decrease CPU, memory or storage resources on Bare Metal servers?**
 
-No, the CPU, memory and storage are static resources on each individual Bare Metal server and can not be changed once a particular configuration has been provisioned.
+No, the CPU, memory and storage are static resources on each individual Bare Metal server and can not be changed once a particular configuration has been provisioned. The best available path for adjusting the resource configuration is to provision a new server with the desired configuration and plan to migrate any data as necessary.
 
 **What are the self-service actions available to me through the Control portal for Bare Metal servers?**
 
