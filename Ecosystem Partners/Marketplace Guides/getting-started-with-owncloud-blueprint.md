@@ -33,6 +33,16 @@ After reading this article, the user should feel comfortable getting started usi
 2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
   * The default ports to access the application are: 80, 443
 
+- After adding a public IP for OwnCloud perform the following actions:
+  - Run /opt/bitnami/apps/owncloud/bnconfig --machine_hostname *publicIP_for_VM* using SSH or the Execute Package feature in Control
+  - Edit the httpd-prefix.conf file in /opt/bitnami/apps/owncloud/conf as follows:
+    ```
+    DocumentRoot "/opt/bitnami/apps/owncloud/htdocs"
+    # Alias /owncloud/ "/opt/bitnami/apps/owncloud/htdocs/"
+    # Alias /owncloud "/opt/bitnami/apps/owncloud/htdocs"
+    ```
+  - Restart Apache using *sudo  /opt/bitnami/ctlscript.sh restart apache*
+
 ### Deploying ownCloud on a New Server
 ownCloud is available as a Blueprint for deployment on a new server.
 
@@ -44,7 +54,7 @@ ownCloud is available as a Blueprint for deployment on a new server.
 
 2. **Choose and Deploy the Blueprint. Click the “Install ownCloud on Linux” Blueprint.**
 
-3. **Configure the Blueprint** 
+3. **Configure the Blueprint**
 Complete the information below:
 
   1. Execute on Server: Select a Linux x64 server to deploy the Blueprint on.
