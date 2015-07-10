@@ -14,6 +14,11 @@ Customers may wish to enable [Managed Operating System Services](//www.centuryli
 ### Important Information
 * Conversion from **Managed** to **Unmanaged** Operating System Services is not currently a supported feature.
 * It is advised that customers perform the conversion during a maintenance window due to potential impact on running services.
+* It is recommended to create a snapshot of the VM before running the management process
+* Normally, a single CPI Blueprint will take between ten and thirty minutes to complete. However, this can be influenced by jobs in the  queue
+* By design, we do not put existing, unmanaged servers "Under Construction" while this Blueprint runs. So users may easily get the impression they have access to the servers after the Blueprint has completed, however the management process is actually still running in the background. Please do not access the VM until the user who initiated the Blueprint receives an email notification that the process for that VM has completed successfully.
+* To preconfigure network access, prior to making an unmanaged VM Managed, please be sure at least one [new, managed server](../managed-services/created-a-managed-server-now-what.md) has been created in the desired VLAN/Network.
+
 
 ### Compatibility Matrix
 The table below provides a matrix of the supported locations and Operating Systems for conversion.
