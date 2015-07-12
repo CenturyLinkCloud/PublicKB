@@ -31,7 +31,7 @@ This article will walkthrough the creation of a Failover Cluster in preperation 
 
 8. The validation tests should pass with warnings. Some warnings are expected (such as a single NIC being a point of failure), but the report should be viewed to make certain there are no major errors.
 
-9. Enter a name and IP address for the cluster. Email the NOC and ask them to reserve an IP address for the cluster. Click "Next"
+9. Enter a name and IP address for the cluster. Email the NOC and ask them to reserve an IP address for the cluster. Also, please let us know which SQL server (you can pick one) you would like it reserved for. Click "Next"
 
     ![Cluster Name](../images/configuring-failover-clustering-for-a-sql-alwayson-availability-group-03.PNG)
 
