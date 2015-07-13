@@ -19,11 +19,11 @@ This FAQ addresses commonly asked questions about the service. For further infor
 **What are the available configurations for Bare Metal servers?**
 
 * 4 cores (3.6GHz E3), 16 GB RAM, 10Gb NIC
-  * Storage is 2x1TB 7200 RAID 1 (1TB usable)
+  * Storage is 2x1TB 7200 RAID 1 (0.91TB usable)
 * 12 cores (2.4GHz 2x6 E5), 64 GB RAM, dual 10Gb NIC
-  * Storage is 4x2TB 7200 RAID 5 (5.7TB usable)
+  * Storage is 4x2TB 7200 RAID 5 (5.46TB usable)
 * 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC
-  * Storage is 6x2TB 7200 RAID 5 (9.5TB usable)
+  * Storage is 6x2TB 7200 RAID 5 (9.09TB usable)
 
 **Can I increase or decrease CPU, memory or storage resources on Bare Metal servers?**
 
@@ -31,7 +31,7 @@ No, the CPU, memory and storage are static resources on each individual Bare Met
 
 **What are the self-service actions available to me through the Control portal for Bare Metal servers?**
 
-Through the Control portal you are able to power the Bare Metal server on or off and perform a server reset.  
+Through the Control portal you are able to power the Bare Metal server on or off, perform a server reset and add a single public IP.  
 
 **What are the best suited workloads for this new server class?**
 
