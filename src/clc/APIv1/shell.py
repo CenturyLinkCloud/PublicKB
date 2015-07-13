@@ -151,6 +151,13 @@ class Args:
 		parser_server_reset.add_argument('--alias', help='Operate on specific account alias')
 		parser_server_reset.add_argument('--server', nargs='*', required=True, metavar='NAME', help='Server name')
 
+		## Restore
+		parser_server_restore = parser_sp4.add_parser('restore', help='Restore archived server')
+		parser_server_restore.add_argument('--server', nargs='*', required=True, metavar='NAME', help='Server name')
+		parser_server_restore.add_argument('--group', required=True, metavar='NAME', help='Group Name or group ID')
+		parser_server_restore.add_argument('--alias', required=False, help=argparse.SUPPRESS)
+		parser_server_restore.add_argument('--location', required=False, metavar='LOCATION', help=argparse.SUPPRESS)
+
 		## Shutdown
 		parser_server_shutdown = parser_sp4.add_parser('shutdown', help='Shutdown one or more servers')
 		parser_server_shutdown.add_argument('--alias', help='Operate on specific account alias')
@@ -449,6 +456,7 @@ class ExecCommand():
 		elif clc.args.GetArgs().sub_command == 'poweron':  self.ServerActions("Poweron")
 		elif clc.args.GetArgs().sub_command == 'poweroff':  self.ServerActions("Poweroff")
 		elif clc.args.GetArgs().sub_command == 'reset':  self.ServerActions("Reset")
+		elif clc.args.GetArgs().sub_command == 'restore':  self.RestoreServer()
 		elif clc.args.GetArgs().sub_command == 'shutdown':  self.ServerActions("Shutdown")
 		elif clc.args.GetArgs().sub_command == 'snapshot':  self.ServerActions("Snapshot")
 		elif clc.args.GetArgs().sub_command == 'pause':  self.ServerActions("Pause")
@@ -750,6 +758,22 @@ class ExecCommand():
 		              { 'alias': alias, 'location': location, 'group': clc.args.args.group, 'name': clc.args.args.name, 'template': clc.args.args.template,
 					    'backup_level': clc.args.args.backup_level, 'cpu': clc.args.args.cpu, 'ram': clc.args.args.ram, 
 						'network': clc.args.args.network, 'password': clc.args.args.password, 'description': clc.args.args.description, },
+		              cols=['RequestID','StatusCode','Message'])
+
+
+	def RestoreServer(self):
+		alias = None
+		location = None
+		if clc.args.args.alias:  alias = clc.args.args.alias
+		if clc.args.args.location:  location = clc.args.args.location
+		if not alias:
+			self.Exec('clc.v1.Account.GetAlias','',supress_output=True)
+			alias = clc.ALIAS
+		if not location:
+			self.Exec('clc.v1.Account.GetAlias','',supress_output=True)
+			location = clc.LOCATION
+		r = self.Exec('clc.v1.Server.RestoreServer', 
+		              { 'alias': alias, 'location': location, 'group': clc.args.args.group, 'server': clc.args.GetArgs().server },
 		              cols=['RequestID','StatusCode','Message'])
 
 
