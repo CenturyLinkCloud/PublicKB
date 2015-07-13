@@ -39,11 +39,11 @@ Any applications not well-suited to virtualization whether it be performance or 
 
 **How do I connect my Bare Metal servers over the network to my CenturyLink Cloud virtual servers?**
 
-Bare Metal servers share the same network as CenturyLink Cloud virtual servers so it's as easy as creating and connecting networks amongst your virtual servers.  For more information on Network features of CenturyLink Cloud platform, reference the [Network Section](https://www.centurylinkcloud.com/knowledge-base/network/#1) of our knowledge base.
+Bare Metal servers share the same network as CenturyLink Cloud virtual servers so it's as easy as creating and connecting networks amongst all your server types.  For more information on Network features of CenturyLink Cloud platform, reference the [Network Section](https://www.centurylinkcloud.com/knowledge-base/network/#1) of our knowledge base.
 
 **Since these servers use local storage, how do I avoid application failure if underlying hardware fails?**
 
-It is your responsibility to maintain any data recovery or restoration process that may be necessary in the case of a critical hardware failure. An integrated backup solution will be available at some point but is not for the initial launch of Bare Metal servers.
+It is your responsibility to maintain any data recovery or restoration process that may be necessary in the case of a critical hardware failure. An integrated backup solution will be available at some point but is not currently.
 
 **How is hardware support and replacement handled for Bare Metal servers?**
 
