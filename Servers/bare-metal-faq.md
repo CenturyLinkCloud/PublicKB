@@ -75,7 +75,7 @@ No, the password can only be set at the time of server creation. If you would li
 
 **Where are Bare Metal servers available geographically?**
 
-Bare Metal servers are available in our VA1 (Virginia, US) and GB3 (Slough, UK) data centers.
+Bare Metal servers availability can be viewed on the [CenturyLink Cloud data centers page](https://www.centurylinkcloud.com/data-centers/#/filters/Bare%20Metal).
 
 **What should I do if my Bare Metal server becomes unresponsive?**
 
@@ -83,7 +83,7 @@ Contact our Customer Care group to report the incident.  If a ticket has not alr
 
 **How is data destruction handled in the cases of hard drive failure/replacement and/or server relinquishment for Bare Metal servers?**
 
-All local storage associated with Bare Metal servers is fully encrypted.  As such, destruction is not necessary to protect sensitive data.  All disks are zeroed out as part of our routine rediscovery process for servers that have been decommissioned.
+All local storage associated with Bare Metal servers is fully encrypted.  As such, destruction is not necessary to protect sensitive data.  Data is rendered unrecoverable as part of our routine rediscovery and provisioning process for servers that have been decommissioned.
 
 **Do I still get billed for a Bare Metal server that is turned off?**
 
