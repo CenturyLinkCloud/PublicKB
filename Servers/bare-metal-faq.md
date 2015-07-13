@@ -31,7 +31,7 @@ No, the CPU, memory and storage are static resources on each individual Bare Met
 
 **What are the self-service actions available to me through the Control portal for Bare Metal servers?**
 
-Through the Control portal you are able to power the Bare Metal server on or off and perform a server reset.
+Through the Control portal you are able to power the Bare Metal server on or off and perform a server reset.  
 
 **What are the best suited workloads for this new server class?**
 
@@ -43,7 +43,7 @@ Bare Metal servers share the same network as CenturyLink Cloud virtual servers s
 
 **Since these servers use local storage, how do I avoid application failure if underlying hardware fails?**
 
-It is your responsibility to maintain any data recovery or restoration process that may be necessary in the case of a critical hardware failure.
+It is your responsibility to maintain any data recovery or restoration process that may be necessary in the case of a critical hardware failure. An integrated backup solution will be available at some point but is not for the initial launch of Bare Metal servers.
 
 **How is hardware support and replacement handled for Bare Metal servers?**
 
@@ -55,7 +55,7 @@ The same CenturyLink Cloud platform firewall policies available for virtual serv
 
 **What should I do if I do not see the configuration of CPU/Memory/Storage I want?**
 
-We've initially launched with a limited number of Bare Metal server configuration types and fully expect to expand upon the number of types and quantity available of each based on your feedback.  The server configuration screen will provide an up to date indication of our available server types.  If you do not see a configuration type there that suits your needs, please submit a [Feature Request](https://www.centurylinkcloud.com/knowledge-base/support/how-do-i-submit-a-feature-request/) including a brief explanation of your use case and the need for a particular configuration of resources.
+We've initially launched with a limited number of Bare Metal server configuration types and fully expect to expand upon the number of types and quantity available of each based on customer feedback.  The server configuration screen will provide an up to date indication of our available server types.  If you do not see a configuration type there that suits your needs, please submit a [Feature Request](https://www.centurylinkcloud.com/knowledge-base/support/how-do-i-submit-a-feature-request/) including a brief explanation of your use case and the need for a particular configuration of resources.
 
 **What features do Bare Metal servers share with CenturyLink Cloud virtual servers?**
 
