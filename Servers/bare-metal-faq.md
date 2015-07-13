@@ -47,7 +47,7 @@ It is your responsibility to maintain any data recovery or restoration process t
 
 **How is hardware support and replacement handled for Bare Metal servers?**
 
-CenturyLink is responsible for all hardware replacement for Bare Metal servers.  We monitor the Bare Metal servers underlying hardware using agentless SNMP monitoring via iLO.  If an incident is detected a ticket for investigation is automatically generated and the customer is notified.  The hardware will be replaced within 3 business days.  In the case where a server becomes completely unavailable the process to replace the server will begin immediately with consent from the customer.
+CenturyLink is responsible for all hardware replacement for Bare Metal servers.  We monitor the Bare Metal servers underlying hardware using agentless SNMP monitoring via iLO.  If an incident is detected a ticket for investigation is automatically generated and the customer is notified. In the case where a server becomes completely unavailable the process to replace the server will begin immediately with consent from the customer. For additional service level details please reference the Bare Metal servers SLA on the [SLA page](https://www.centurylinkcloud.com/legal/sla/).
 
 **What are the security features available for Bare Metal servers?**
 
