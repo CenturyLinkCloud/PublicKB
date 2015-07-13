@@ -95,7 +95,7 @@ No, the storage configurations provisioned for Bare Metal servers are all either
 
 **Can I bring my own OS image?**
 
-No, the available Operating Systems include Windows 2012 R2, RHEL6 and CentOS. Eventually, the ability to bring your own image may become a supported feature in the future.
+No, the available Operating Systems include Windows 2012 R2, RHEL6 and CentOS. In the very near future there will be additional Linux and Windows variations available. Eventually, the ability to bring your own image may become a supported feature in the future.
 
 **Can I use my own licensing for the OS?**
 
