@@ -91,7 +91,7 @@ Yes, Bare Metal servers are dedicated to you once they have been provisioned and
 
 **Can I customize my storage configuration on a Bare Metal server?**
 
-No, the storage configurations provisioned for Bare Metal servers are all either RAID 1 or RAID 5 depending on the server configuration type and tampering with that configuration could result in loss of management access to the server or breach of your service agreement.
+No, the storage configurations provisioned for Bare Metal servers are all either RAID 1 or RAID 5 depending on the server configuration type and tampering with that configuration could result in loss of management access which could disrupt support.
 
 **Can I bring my own OS image?**
 
