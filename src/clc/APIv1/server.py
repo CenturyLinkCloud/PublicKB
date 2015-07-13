@@ -163,6 +163,28 @@ class Server:
 
 
 	@staticmethod
+	def RestoreServer(server,group,alias=None,location=None):
+		"""Restores an archived server.
+
+		https://www.centurylinkcloud.com/api-docs/v1/#restoreserver
+
+		:param server: archived server to restore
+		:param group: name of group or group ID for server to belong to
+		:param alias: short code for a particular account.  If None will use account's default alias
+		:param location: datacenter where group resides.  If None will use account's default location
+		"""
+		if alias is None:  alias = clc.v1.Account.GetAlias()
+		if location is None:  location = clc.v1.Account.GetLocation()
+		if re.match("([a-zA-Z0-9]){32}",group.replace("-","")):  groups_uuid = group
+		else:  groups_uuid = clc.v1.Group.GetGroupUUID(group,alias,location)
+
+		r = clc.v1.API.Call('post','Server/RestoreServer', 
+		                    { 'AccountAlias': alias, 'Name': server, 'HardwareGroupUUID': groups_uuid })
+		if int(r['StatusCode']) == 0:  return(r)
+
+
+
+	@staticmethod
 	def _ServerActions(action,alias,servers):
 		"""Archives the specified servers.
 
@@ -176,6 +198,7 @@ class Server:
 			r = clc.v1.API.Call('post','Server/%sServer' % (action), {'AccountAlias': alias, 'Name': server })
 			if int(r['StatusCode']) == 0:  results.append(r)
 		return(results)
+
 
 
 	@staticmethod
