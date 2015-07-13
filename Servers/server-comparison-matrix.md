@@ -107,7 +107,7 @@ Some functions within the Control Portal and associated APIs are only applicable
   <td>Scheduled Tasks</td>
   <td>x</td>
   <td>x</td>
-  <td>x * </td>
+  <td></td>
 </tr>
 <tr>
   <td>Snapshot</td>
@@ -201,5 +201,3 @@ Some functions within the Control Portal and associated APIs are only applicable
 </tr>
 
 </table>
-
-* Only supports the Power On, Delete
