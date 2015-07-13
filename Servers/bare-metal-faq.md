@@ -67,7 +67,7 @@ Yes, customers may work with their respective Sales representative to make use o
 
 **May I have console or iLO access to my Bare Metal server?**
 
-No, there are a select few management capabilities available through the Control portal including power operations and the ability to reset the server. No additional iLO or console access is included with the service.
+No, there are a select number of management capabilities available through the Control portal including power operations and the ability to reset the server. No additional iLO or console access is included with the service.
 
 **Can I change the administrator/root password of my server through Control or the API?**
 
@@ -79,7 +79,7 @@ Bare Metal servers availability can be viewed on the [CenturyLink Cloud data cen
 
 **What should I do if my Bare Metal server becomes unresponsive?**
 
-Contact our Customer Care group to report the incident.  If a ticket has not already been automatically generated, they will create one for you and begin investigation.
+Contact our Customer Care group by submitting a support request using the link at the top right side of this site.  If a ticket has not already been automatically generated, they will respond to your request and begin investigation.
 
 **How is data destruction handled in the cases of hard drive failure/replacement and/or server relinquishment for Bare Metal servers?**
 
