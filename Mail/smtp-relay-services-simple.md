@@ -46,8 +46,7 @@ Install pre-reqs:
 As root create the file `/etc/postfix/smtp_sasl_password_maps` with the following content (substituting your alias and password)
 
 ```
-relay.t3mx.com
-$alias: $password
+relay.t3mx.com $alias:$password
 ```
 
 Create a hash of your password map:
@@ -58,9 +57,12 @@ Create a hash of your password map:
 Add the following lines to your /etc/postfix/main.cf:
 
 ```
-smtp_sasl_auth_enable = yes<br />smtp_sasl_password_maps = hash:/etc/postfix/smtp_sasl_password_maps<br />smtp_sasl_security_options = noanonymous<br />relayhost = relay.t3mx.com</pre>
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = hash:/etc/postfix/smtp_sasl_password_maps
+smtp_sasl_security_options = noanonymous
+relayhost = relay.t3mx.com
 ```
 
-Restart postfix and test
+Reload postfix and test
 
-```> sudo /sbin/service postfix restart```
+```> sudo /sbin/service postfix reload```
