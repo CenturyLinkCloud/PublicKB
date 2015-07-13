@@ -153,9 +153,9 @@ class Args:
 
 		## Restore
 		parser_server_restore = parser_sp4.add_parser('restore', help='Restore archived server')
-		parser_server_restore.add_argument('--server', nargs='*', required=True, metavar='NAME', help='Server name')
-		parser_server_restore.add_argument('--group', required=True, metavar='NAME', help='Group Name or group ID')
-		parser_server_restore.add_argument('--alias', required=False, help=argparse.SUPPRESS)
+		parser_server_restore.add_argument('--server', required=True, metavar='NAME', help='Archived server name')
+		parser_server_restore.add_argument('--group', required=True, metavar='NAME', help='Group Name or ID to restore server to')
+		parser_server_restore.add_argument('--alias', required=False, help='Operate on specific account alias')
 		parser_server_restore.add_argument('--location', required=False, metavar='LOCATION', help=argparse.SUPPRESS)
 
 		## Shutdown
