@@ -19,19 +19,19 @@ This FAQ addresses commonly asked questions about the service. For further infor
 **What are the available configurations for Bare Metal servers?**
 
 * 4 cores (3.6GHz E3), 16 GB RAM, 10Gb NIC
-  * Storage is 2x1TB 7200 RAID 1 (1TB usable)
+  * Storage is 2x1TB 7200 RAID 1 (0.91TB usable)
 * 12 cores (2.4GHz 2x6 E5), 64 GB RAM, dual 10Gb NIC
-  * Storage is 4x2TB 7200 RAID 5 (5.7TB usable)
+  * Storage is 4x2TB 7200 RAID 5 (5.46TB usable)
 * 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC
-  * Storage is 6x2TB 7200 RAID 5 (9.5TB usable)
+  * Storage is 6x2TB 7200 RAID 5 (9.09TB usable)
 
 **Can I increase or decrease CPU, memory or storage resources on Bare Metal servers?**
 
-No, the CPU, memory and storage are static resources on each individual Bare Metal server and can not be changed once a particular configuration has been provisioned.
+No, the CPU, memory and storage are static resources on each individual Bare Metal server and can not be changed once a particular configuration has been provisioned. The best available path for adjusting the resource configuration is to provision a new server with the desired configuration and plan to migrate any data as necessary.
 
 **What are the self-service actions available to me through the Control portal for Bare Metal servers?**
 
-Through the Control portal you are able to power the Bare Metal server on or off and perform a server reset.
+Through the Control portal you are able to power the Bare Metal server on or off, perform a server reset and add a single public IP.  
 
 **What are the best suited workloads for this new server class?**
 
@@ -39,23 +39,23 @@ Any applications not well-suited to virtualization whether it be performance or 
 
 **How do I connect my Bare Metal servers over the network to my CenturyLink Cloud virtual servers?**
 
-Bare Metal servers share the same network as CenturyLink Cloud virtual servers so it's as easy as creating and connecting networks amongst your virtual servers.  For more information on Network features of CenturyLink Cloud platform, reference the [Network Section](https://www.centurylinkcloud.com/knowledge-base/network/#1) of our knowledge base.
+Bare Metal servers share the same network as CenturyLink Cloud virtual servers so it's as easy as creating and connecting networks amongst all your server types.  For more information on Network features of CenturyLink Cloud platform, reference the [Network Section](https://www.centurylinkcloud.com/knowledge-base/network/#1) of our knowledge base.
 
 **Since these servers use local storage, how do I avoid application failure if underlying hardware fails?**
 
-It is your responsibility to maintain any data recovery or restoration process that may be necessary in the case of a critical hardware failure.
+It is your responsibility to maintain any data recovery or restoration process that may be necessary in the case of a critical hardware failure. An integrated backup solution will be available at some point but is not currently.
 
 **How is hardware support and replacement handled for Bare Metal servers?**
 
-CenturyLink is responsible for all hardware replacement for Bare Metal servers.  We monitor the Bare Metal servers underlying hardware using agentless SNMP monitoring via iLO.  If an incident is detected a ticket for investigation is automatically generated and the customer is notified.  The hardware will be replaced within 3 business days.  In the case where a server becomes completely unavailable the process to replace the server will begin immediately with consent from the customer.
+CenturyLink is responsible for all hardware replacement for Bare Metal servers.  We monitor the Bare Metal servers underlying hardware using agentless SNMP monitoring via iLO.  If an incident is detected a ticket for investigation is automatically generated and the customer is notified. In the case where a server becomes completely unavailable the process to replace the server will begin immediately with consent from the customer. For additional service level details please reference the Bare Metal servers SLA on the [SLA page](https://www.centurylinkcloud.com/legal/sla/).
 
 **What are the security features available for Bare Metal servers?**
 
-The same CenturyLink Cloud platform firewall policies available for virtual servers are available for Bare Metal servers.  NOT SURE ON THIS ONE..
+Bare Metal servers can be incorporated in the same firewall policies currently available with other CenturyLink Cloud server types. All Bare Metal servers are also provisioned with fully encrypted local storage for the protection of customer data.
 
 **What should I do if I do not see the configuration of CPU/Memory/Storage I want?**
 
-We've initially launched with a limited number of Bare Metal server configuration types and fully expect to expand upon the number of types and quantity available of each based on your feedback.  The server configuration screen will provide an up to date indication of our available server types.  If you do not see a configuration type there that suits your needs, please submit a [Feature Request](https://www.centurylinkcloud.com/knowledge-base/support/how-do-i-submit-a-feature-request/) including a brief explanation of your use case and the need for a particular configuration of resources.
+We've initially launched with a limited number of Bare Metal server configuration types and fully expect to expand upon the number of types and quantity available of each based on customer feedback.  The server configuration screen will provide an up to date indication of our available server types.  If you do not see a configuration type there that suits your needs, please submit a [Feature Request](https://www.centurylinkcloud.com/knowledge-base/support/how-do-i-submit-a-feature-request/) including a brief explanation of your use case and the need for a particular configuration of resources.
 
 **What features do Bare Metal servers share with CenturyLink Cloud virtual servers?**
 
@@ -67,7 +67,7 @@ Yes, customers may work with their respective Sales representative to make use o
 
 **May I have console or iLO access to my Bare Metal server?**
 
-No, there are a select few management capabilities available through the Control portal including power operations and the ability to reset the server. No additional iLO or console access is included with the service.
+No, there are a select number of management capabilities available through the Control portal including power operations and the ability to reset the server. No additional iLO or console access is included with the service.
 
 **Can I change the administrator/root password of my server through Control or the API?**
 
@@ -75,15 +75,15 @@ No, the password can only be set at the time of server creation. If you would li
 
 **Where are Bare Metal servers available geographically?**
 
-Bare Metal servers are available in our VA1 (Virginia, US) and GB3 (Slough, UK) data centers.
+Bare Metal servers availability can be viewed on the [CenturyLink Cloud data centers page](https://www.centurylinkcloud.com/data-centers/#/filters/Bare%20Metal).
 
 **What should I do if my Bare Metal server becomes unresponsive?**
 
-Contact our Customer Care group to report the incident.  If a ticket has not already been automatically generated, they will create one for you and begin investigation.
+Contact our Customer Care group by submitting a support request using the link at the top right side of this site.  If a ticket has not already been automatically generated, they will respond to your request and begin investigation.
 
 **How is data destruction handled in the cases of hard drive failure/replacement and/or server relinquishment for Bare Metal servers?**
 
-All local storage associated with Bare Metal servers is fully encrypted.  As such, destruction is not necessary to protect sensitive data.  All disks are zeroed out as part of our routine rediscovery process for servers that have been decommissioned.
+All local storage associated with Bare Metal servers is fully encrypted.  As such, destruction is not necessary to protect sensitive data.  Data is rendered unrecoverable as part of our routine rediscovery and provisioning process for servers that have been decommissioned.
 
 **Do I still get billed for a Bare Metal server that is turned off?**
 
@@ -91,12 +91,12 @@ Yes, Bare Metal servers are dedicated to you once they have been provisioned and
 
 **Can I customize my storage configuration on a Bare Metal server?**
 
-No, the storage configurations provisioned for Bare Metal servers are all either RAID 1 or RAID 5 depending on the server configuration type and tampering with that configuration could result in loss of management access to the server or breach of your service agreement.
+No, the storage configurations provisioned for Bare Metal servers are all either RAID 1 or RAID 5 depending on the server configuration type and tampering with that configuration could result in loss of management access which could disrupt support.
 
 **Can I bring my own OS image?**
 
-No, the available Operating Systems include Windows 2012 R2, RHEL6 and CentOS. Eventually, the ability to bring your own image may become a supported feature in the future.
+No, the available Operating Systems include Windows 2012 R2, RHEL6 and CentOS. In the future there will be additional Linux and Windows variations available. If there is a particular OS image you would like to see incorporated please [submit a feature request](https://www.centurylinkcloud.com/knowledge-base/support/how-do-i-submit-a-feature-request/).
 
 **Can I use my own licensing for the OS?**
 
-No, the licensing is factored into the cost of the Bare Metal server where applicable and can not be separated from the service.  Eventually, the ability to bring your own license may become a supported feature in the future.
+No, the licensing is factored into the cost of the Bare Metal server where applicable and can not be separated from the service.  If you would be interested in using your own OS licensing with Bare Metal servers, please let us know in a [feature request](https://www.centurylinkcloud.com/knowledge-base/support/how-do-i-submit-a-feature-request/).
