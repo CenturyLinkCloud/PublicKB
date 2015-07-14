@@ -1,7 +1,7 @@
 {{{
   "title": "Ecosystem Partner List",
   "date": "06-09-2015",
-  "author": "ecosystem@ctl.io"
+  "author": "ecosystem@ctl.io",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
