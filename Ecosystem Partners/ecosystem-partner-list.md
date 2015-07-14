@@ -1,7 +1,7 @@
 {{{
   "title": "Ecosystem Partner List",
   "date": "06-09-2015",
-  "author": "<a href='https://www.linkedin.com/in/bstolzberg'>Bob Stolzberg</a> <a href='https://twitter.com/KeithResar'>@KeithResar</a> &amp; <a href='https://twitter.com/DaveShac'>@DaveShac</a>",
+  "author": "ecosystem@ctl.io"
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
@@ -10,12 +10,7 @@
 
 <!-- Categories coming soon - add as partners matching them come onboard.
 
-### Cloud Storage
-### Data Protection
-### Analytics
-### Data Management
-### Development Toolchain
-### Analytics
+### TBD
 
 -->
 
@@ -65,7 +60,6 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [BCMOne VitalView](../Ecosystem Partners/Marketplace Guides/getting-started-with-bcmone-vital-view-blueprint.md)   	| Blueprint    | Network monitoring and management    |
 | [Centerity](../Ecosystem Partners/Marketplace Guides/getting-started-with-centerity-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
 | [Chef Server](../Ecosystem Partners/Marketplace Guides/getting-started-with-chef-server-blueprint.md)   	| Blueprint    | Configuration management    |
-| [Double Take](../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-availability-blueprint.md)   	| Blueprint    | Data replication    |
 | [Dynatrace](../Ecosystem Partners/Marketplace Guides/getting-started-with-dynatrace-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
 
 
@@ -94,8 +88,18 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Pivotal GemFire](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-gemfire-blueprint.md)   	| Blueprint    | In-memory distributed database for high scale custom applications    |
 | [Pivotal Greenplum](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-greenplum-blueprint.md)   	| Blueprint    | Enterprise-grade analytical data warehouse    |
 | [Pivotal HD + HAWQ](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-hd-hawq.md)   	| Blueprint    | Enterprise-grade Hadoop cluster    |
-| [Saratoga Data Flume](../Ecosystem Partners/Marketplace Guides/getting-started-with-saratoga-data-flume-blueprint.md)   	| Blueprint    | File transfer acceleration software    |
 | [XtremeData dbX](../Ecosystem Partners/Marketplace Guides/getting-started-with-xtremedata-dbx-blueprint.md)   	| Blueprint    | On-Demand Big Data Analytics with real-time ingest    |
+
+### Analytics & Log Management
+| [ElasticSearch](../Ecosystem Partners/Marketplace Guides/getting-started-with-elasticsearch-blueprint.md)   	| Blueprint    | Search Server    |
+| [Piwik](../Ecosystem Partners/Marketplace Guides/getting-started-with-piwik-blueprint.md)   	| Blueprint    | Web Analytics   |
+
+### Cloud Storage
+| [SoftNAS](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md)   	| Template    | NAS and Cloud Storage Gateway   |
+
+### Data Protection
+| [Double Take](../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-availability-blueprint.md)   	| Blueprint    | Data replication    |
+| [Saratoga Data Flume](../Ecosystem Partners/Marketplace Guides/getting-started-with-saratoga-data-flume-blueprint.md)   	| Blueprint    | File transfer acceleration software    |
 
 ### Business Services
 
@@ -131,7 +135,6 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [DocuWiki](../Ecosystem Partners/Marketplace Guides/getting-started-with-dokuwiki-blueprint.md)   	| Blueprint    | Knowledge management system    |
 | [Joomla](../Ecosystem Partners/Marketplace Guides/getting-started-with-joomla-blueprint.md)   	| Blueprint    | Content management system (CMS)    |
 | [ownCloud](../Ecosystem Partners/Marketplace Guides/getting-started-with-owncloud-blueprint.md)   	| Blueprint    | File sync & share   |
-| [SoftNAS](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md)   	| Template    | NAS and Cloud Storage Gateway   |
 | [Wordpress](../Ecosystem Partners/Marketplace Guides/getting-started-with-wordPress-blueprint.md)   	| Blueprint    | Web publishing platform   |
 
 ### Other
