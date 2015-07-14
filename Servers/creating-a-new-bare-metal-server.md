@@ -10,11 +10,9 @@ Creating a bare metal server on CenturyLink Cloud follows a similar flow as [cre
 
 ### Steps
 
-1. To start the "Create Server" Process, you may either select **Create Server** from the **Servers** section of the navigation menu, or you may use the **+** icon on the left side of the **Servers** area and choose **+ Server** to bring up the **Create Server** page.
+1. To start the "Create Server" Process, use the **+** icon on the left side of the **Servers** area and choose **+ Server** to bring up the **Create Server** page.
 
   ![Create a New Bare Metal Server](../images/baremetal-create-1.png)
-
-  ![Create a New Bare Metal Server](../images/baremetal-create-2.png)
 
 2. Just like for any server you create, you will first need to select the **data center** to deploy it to and a **group** to put the server in. Then, select the **Bare Metal** option (if it is available in the data center you selected).
 
