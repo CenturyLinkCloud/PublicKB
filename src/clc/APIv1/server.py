@@ -161,9 +161,8 @@ class Server:
 		return(r)
 
 
-
 	@staticmethod
-	def RestoreServer(server,group,alias=None,location=None):
+	def RestoreServer(server,group,alias,location):
 		"""Restores an archived server.
 
 		https://www.centurylinkcloud.com/api-docs/v1/#restoreserver
