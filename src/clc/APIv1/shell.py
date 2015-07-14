@@ -156,7 +156,8 @@ class Args:
 		parser_server_restore.add_argument('--server', required=True, metavar='NAME', help='Archived server name')
 		parser_server_restore.add_argument('--group', required=True, metavar='NAME', help='Group Name or ID to restore server to')
 		parser_server_restore.add_argument('--alias', required=False, help='Operate on specific account alias')
-		parser_server_restore.add_argument('--location', required=False, metavar='LOCATION', help=argparse.SUPPRESS)
+#		parser_server_restore.add_argument('--location', required=False, metavar='LOCATION', help=argparse.SUPPRESS)
+		parser_server_restore.add_argument('--location', required=False, metavar='LOCATION', help='Operate on specific datacenter')
 
 		## Shutdown
 		parser_server_shutdown = parser_sp4.add_parser('shutdown', help='Shutdown one or more servers')
@@ -762,10 +763,10 @@ class ExecCommand():
 
 
 	def RestoreServer(self):
-		alias = None
-		location = None
 		if clc.args.args.alias:  alias = clc.args.args.alias
+		else:  alias = None
 		if clc.args.args.location:  location = clc.args.args.location
+		else:  location = None
 		if not alias:
 			self.Exec('clc.v1.Account.GetAlias','',supress_output=True)
 			alias = clc.ALIAS
