@@ -495,6 +495,27 @@ Output once server build completes
 +-----------------+
 ```
 
+#### Restore Archived Server
+Convert an archived server back into a running server.
+
+```
+> clc --config config.ini servers restore --server --group --location --alias
+```
+
+Output once server build completes
+
+```
+...
+✔  Execution Started - 0:00:27
+✔  Execution Complete - 0:01:45
+✔  Execution Complete - 0:02:12
++-----------------+
+| Server          |
++-----------------+
+| CA1KRAPTPL02    |
++-----------------+
+```
+
 #### List Disks
 List all disks associated with the server also querying the guest for disk names and mount points.
 ```

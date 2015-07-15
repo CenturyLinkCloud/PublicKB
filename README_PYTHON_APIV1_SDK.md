@@ -275,6 +275,14 @@ Each template has a unique Int ID.  Given a name get this ID.
 27
 ```
 
+#### Restore Archived Server
+Restore archived server into a live server.
+
+```python
+>>> clc.v1.Server.RestoreServer(server, group, alias, location)
+..
+```
+
 #### List
 List all servers in the specified location.
 
