@@ -33,9 +33,9 @@ None
 
 **Ways to submit an Executive Briefing Request**
 
-* Completed the Executive Briefing Request Form (this is attached to the bottom of the KB)
-* EBCForm.docx, can be used for Centurylink Sales Team
-* EBCFormCustomerDirect.docx can be used for any customer to request an Executive Brief
+* Complete the Executive Briefing Request Form (this is attached to the bottom of the KB)
+* EBC Form can be used for Centurylink Sales Team
+* Customer Direct Form can be used for any customer to request an Executive Brief
 * Email EBC@ctl.io the completed form
 
 
