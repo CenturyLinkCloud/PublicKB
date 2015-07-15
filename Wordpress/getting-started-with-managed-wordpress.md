@@ -18,7 +18,7 @@ CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-
  
 ###Configuring a New WordPress Site
 
-1. Browse to the [CenturyLink Cloud WordPress Site Creation Login](wpaas-dashboard.useast.appfog.ctl.io "CenturyLink Cloud WordPress Site Creation Login")
+1. Browse to the [CenturyLink Cloud WordPress Site Creation Login](https://wordpress.ctl.io "CenturyLink Cloud WordPress Site Creation Login")
 
   ![](../images/wp_getting_started/wp_getting_started_1.png)
 
@@ -26,11 +26,11 @@ CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-
 
   ![](../images/wp_getting_started/wp_getting_started_2.png)
 
-3. Click Create
+3. Click Create Site
 
   ![](../images/wp_getting_started/wp_getting_started_3.png)
 
-4. Chose a Plan, input the Name for your site and your GitHub username, and click Create
+4. Chose a Plan, input the Name for your site and your preferred password, and click Create
 
   ![](../images/wp_getting_started/wp_getting_started_4.png)
 
@@ -41,6 +41,14 @@ CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-
 6. You will also receive an email from CenturyLink Cloud with limited site details.
 
   ![](../images/wp_getting_started/wp_getting_started_6.png)
+
+7. You will also receive an email from CenturyLink WordPress's Git Repository asking for confirmation. Click Confirm your account.
+
+  ![](../images/wp_getting_started/wp_getting_started_7.png)
+
+8. This will take you to your WordPress site's repository
+
+	  ![](../images/wp_getting_started/wp_getting_started_8.png)
   
 ###Frequently Asked Questions
 
@@ -70,4 +78,4 @@ A: You must [configure SMTP for your WordPress site](../Managed Services/wordpre
 
 **Q: Can I configure my own domain with CenturyLink Cloud WordPress as a Service?**
 
-A: You can [configure your own domain name](wordpress-custom-domain-configuration.md "WordPress Custom Domain Configuration") via the CenturyLink Cloud Portal.
+A: You can [configure your own domain name](wordpress-custom-domain-configuration.md "WordPress Custom Domain Configuration") via the CenturyLink Cloud Portal.chrom
