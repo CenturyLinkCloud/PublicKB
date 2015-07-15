@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Feature Availability Matrix",
-  "date": "7-8-2015",
+  "date": "7-16-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -19,6 +19,8 @@ The CenturyLink Cloud provides a vast array of services for customers to consume
 **Feature**|**Availability**
 -----------|----------------
 [Hyperscale Computing](//www.centurylinkcloud.com/hyperscale)|US West (Santa Clara) - UC1<p>US Central (Chicago) - IL1<p>US East (New York) - NY1<p>US East (Sterling) - VA1<p>Great Britain (Slough) - GB3<p>Canada (Toronto - Mississauga) - CA3<p>APAC (Singapore) - SG1
+[Bare Metal](//www.centurylinkcloud.com/bare-metal)|US East (Sterling) - VA1
+[AppFog](//www.centurylinkcloud.com/appfog)|US East<sup>1</sup><p>US West<sup>1</sup>
 [Managed Operating System Services](//www.centurylinkcloud.com/managed-services/operating-system)|US West (Santa Clara) - UC1<p>US East (Sterling) - VA1<p>US Central (Chicago) - IL1<p>Great Britain (Slough) - GB3<p>Canada (Toronto - Mississauga) - CA3<p>APAC (Singapore) - SG1
 [Managed Applications](//www.centurylinkcloud.com/managed-services)|US West (Santa Clara) - UC1<p>US East (Sterling) - VA1<p>US Central (Chicago) - IL1<p>Great Britain (Slough) - GB3<p>Canada (Toronto - Mississauga) - CA3<p>APAC (Singapore) - SG1
 [Managed Backup](//www.centurylinkcloud.com/managed-services/backup)|US West (Santa Clara) - UC1<p>US East (Sterling) - VA1<p>Great Britain (Slough) - GB3<p>APAC (Singapore) - SG1
@@ -26,4 +28,4 @@ The CenturyLink Cloud provides a vast array of services for customers to consume
 [Object Storage](//www.centurylinkcloud.com/object-storage)|Canada Region<sup>1</sup>
 [Orchestrate](//orchestrate.io)|US West (Santa Clara) - UC1<p>US East (Sterling) - VA1<p>Great Britain (Slough) - GB3<p>APAC (Singapore) - SG1
 
-1.  **Object Storage is delivered from the Canadian Region but is accessible as a public service globally**
+1.  **Service is delivered by Region but is accessible as a public service globally**
