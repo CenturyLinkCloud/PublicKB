@@ -10,7 +10,7 @@
 
 ### Audience
 
-Currently, this article is to support customers in the Limited Beta program.
+Application developers
 
 ### Overview
 
