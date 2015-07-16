@@ -16,6 +16,6 @@
     "Partners",
     "Release Notes",
     "Servers",
-    "Wordpress"
+    "WordPress"
   ]
 }}}
