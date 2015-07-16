@@ -14,7 +14,6 @@ CenturyLink Bare Metal servers introduce the ability to provision and manage phy
 This FAQ addresses commonly asked questions about the service. For further information on this service and how it compares to virtual servers, see [Server Comparison Matrix](../Servers/server-comparison-matrix.md).
 
 
-
 **What are the available configurations for Bare Metal servers?**
 
 * 4 cores (3.6GHz E3), 16 GB RAM, 10Gb NIC
@@ -27,6 +26,10 @@ This FAQ addresses commonly asked questions about the service. For further infor
 **Why don't I see the option to provision a Bare Metal server type?**
 
 There are a couple reasons you might not see the option for Bare Metal servers.  First, check your data center and the current [availability for Bare Metal servers](https://www.centurylinkcloud.com/data-centers/#/filters/Bare%20Metal).  Bare Metal servers are not available in all data centers. If you are in a data center where Bare Metal servers should be available, contact Customer Care to have them check to see if Bare Metal servers need to be enabled for your account.
+
+**Why am I seeing an error saying "limit exceeded" for CPU, memory, or storage when I try to provision a Bare Metal server?**
+
+All accounts start with a pre-defined resource (CPU/memory/storage) limit per data center. Bare Metal server resources are included as part of these limits. If you've reached the limits for your account, you may contact Customer Care to [request an increase on your resource limits](../Control Portal/how-to-increase-resources-on-account.md).
 
 **Can I increase or decrease CPU, memory or storage resources on Bare Metal servers?**
 
