@@ -26,7 +26,7 @@ This FAQ addresses commonly asked questions about the service. For further infor
 
 **Why don't I see the option to provision a Bare Metal server type?**
 
-There are a couple reasons you might not see the option for Bare Metal servers.  First, check your data center and the current availability for Bare Metal servers.  Bare Metal servers are not available in all data centers. If you are in a data center where Bare Metal servers should be available, contact Customer Care to have them check to see if Bare Metal servers need to be enabled for your account.
+There are a couple reasons you might not see the option for Bare Metal servers.  First, check your data center and the current [availability for Bare Metal servers](https://www.centurylinkcloud.com/data-centers/#/filters/Bare%20Metal).  Bare Metal servers are not available in all data centers. If you are in a data center where Bare Metal servers should be available, contact Customer Care to have them check to see if Bare Metal servers need to be enabled for your account.
 
 **Can I increase or decrease CPU, memory or storage resources on Bare Metal servers?**
 
@@ -62,7 +62,7 @@ We've initially launched with a limited number of Bare Metal server configuratio
 
 **What features do Bare Metal servers share with CenturyLink Cloud virtual servers?**
 
-While there are multiple in common between the two, there are several features available on virtual servers within CenturyLink Cloud that do not apply to Bare Metal servers.  Please see the [Server Comparison Matrix](placeholder) for more detail.
+While there are multiple in common between the two, there are several features available on virtual servers within CenturyLink Cloud that do not apply to Bare Metal servers.  Please see the [Server Comparison Matrix](../Servers/server-comparison-matrix.md) for more detail.
 
 **Is there a term commit option available for Bare Metal servers?**
 
