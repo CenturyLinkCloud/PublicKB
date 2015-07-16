@@ -11,7 +11,7 @@
 
 CenturyLink Bare Metal servers introduce the ability to provision and manage physical machines from the CenturyLink Cloud platform in a self-service, on-demand, and highly automated fashion.
 
-This FAQ addresses commonly asked questions about the service. For further information on this service and how it compares to virtual servers, see [Server Comparison Matrix](https://github.com/CenturyLinkCloud/PublicKB/blob/72d50c3b84f831fe6653e5dc791f6ac52a2fd9d6/Servers/server-comparison-matrix.md).
+This FAQ addresses commonly asked questions about the service. For further information on this service and how it compares to virtual servers, see [Server Comparison Matrix](../Servers/server-comparison-matrix.md).
 
 
 
