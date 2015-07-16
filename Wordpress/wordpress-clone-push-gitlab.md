@@ -1,10 +1,12 @@
 {{{
   "title": "Updating Your CenturyLink WordPress Site with Git",
-  "date": "06-23-2015",
+  "date": "07-16-2015",
   "author": ["Gregory McWilliams", "Matt Wittmann"],
   "attachments": [],
   "contentIsHTML": false
 }}}
+
+### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Aggreement.
 
 Updating Your CenturyLink WordPress Site with Git
 =================================================

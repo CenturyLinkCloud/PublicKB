@@ -1,10 +1,12 @@
 {{{
   "title": "Wordpress Known Limitations",
-  "date": "05-12-2015",
+  "date": "07-15-2015",
   "author": "Jordan Mahaney",
   "attachments": [],
   "contentIsHTML": false
 }}}
+
+### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Aggreement.
 ## Known Platform Limitations for CenturyLink Cloud WordPress
 CenturyLink cloud WordPress is designed to minimize the management of a WordPress site by abstracting away many of the typical installation and maintenance tasks. The platform is cloud native, so there are several use cases that work differently than a traditional hosted WordPress site or may be completely unavailable.
 

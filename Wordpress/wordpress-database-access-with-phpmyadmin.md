@@ -1,10 +1,12 @@
 {{{
   "title": "Wordpress Database Access with phpMyAdmin",
-  "date": "05-04-2015",
+  "date": "07-15-2015",
   "author": "Bill Burge",
   "attachments": [],
   "contentIsHTML": false
 }}}
+
+### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Aggreement.--
 
 WordPress uses a MySQL relational database for storing and retrieving content like posts, pages, image paths and comments as well as user login information.
 

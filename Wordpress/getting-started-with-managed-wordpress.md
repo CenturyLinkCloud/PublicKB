@@ -1,11 +1,12 @@
 {{{
   "title": "Getting Started with WordPress as a Service",
-  "date": "07-15-2015",
+  "date": "07-16-2015",
   "author": "Bill Burge",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
+### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Aggreement.
 ###Overview
 
 [WordPress](http://www.wordpress.org "WordPress.org") is a free open-source blogging tool and content management system (CMS) based on PHP and MySQL.
