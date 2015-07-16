@@ -191,7 +191,7 @@ Some functions within the Control Portal and associated APIs are only applicable
   <td>Show Credentials</td>
   <td>x</td>
   <td>x</td>
-  <td> </td>
+  <td>x</td>
 </tr>
 <tr>
   <td>Update Password</td>
