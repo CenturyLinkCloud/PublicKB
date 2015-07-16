@@ -17,14 +17,10 @@ Our modules operate seamlessly with Ansible as a bolt-on extension.  The project
 Modules support the following capabilities:
 
 •	Inventory/Dynamic-Inventory.  This allows a user to focus primarily on the intent of their Playbook, without managing a list of servers within their account.
-•	Create an Anti-Affinity Policy for Hyperscale servers.
-•	Delete an Anti-Affinity Policy.
-•	Create a group within an account.  Groups help organize resources within the account hierarchy.
-•	Delete a group within an account.
-•	Create a shared load balancer.
-•	Delete a shared load balancer.
-•	Create and manage a server or a group of server resources.
-•	Delete a server or a group of server resources from an account.
+•	Create and delete an Anti-Affinity Policy for Hyperscale servers.
+•	Create and delete a group within an account.  Groups help organize resources within the account hierarchy.
+•	Create and delete a shared load balancer.
+•	Create, manage and delete a server or a group of server resources.
 •	Modify the resources currently allocated to a server.  For example, CPU and/or memory.
 •	Create and delete a single Hyperscale server or multiple HyperScale servers.
 •	Invoke a package against a server.  The package must be an existing package within the CenturyLink Cloud Platform.
