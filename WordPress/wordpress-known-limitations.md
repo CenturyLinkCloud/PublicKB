@@ -31,7 +31,7 @@ CenturyLink Cloud WordPress __does not__ offer long term local file system stora
 > #### Plugins and Themes
 Plugins and themes should be added to the git repository that comes with your CenturyLink Cloud WordPress site to ensure the changes are persisted long term.
 
-For more details on safely installing and storing custom content, see [Persistent Storage Configuration](../Managed Services/persitent-storage-configuration.md)
+For more details on safely installing and storing custom content, see [Persistent Storage Configuration](wordpress-persistent-storage-configuration.md)
 
 ### <a name="ssl"></a>Custom SSL and HTTPS
 SSL and https are configured automatically when your CenturyLink Cloud WordPress site is installed. This configuration uses an SSL certificate issued to the infrastructure housing your site. There is currently no way to to replace the default certificates with custom SSL certificates .
@@ -54,4 +54,4 @@ CenturyLink Cloud WordPress sites do not have dedicated IP Addresses. Dedicated 
 ### <a name="mail"></a>PHP mail
 The default PHP mail functionality is disabled in CenturyLink Cloud WordPress and cannot be enabled on the underlying infrastructure. We understand working e-mail is a crucial part of the WordPress forgot password functionality, so your WordPress site will come with a pre-installed plugin enabling use of e-mail service providers.
 
-For more details on email configuration, see [SMTP Configuration](../Managed Services/wordpress-SMTP-Configuration.md)
+For more details on email configuration, see [SMTP Configuration](wordpress-SMTP-Configuration.md)

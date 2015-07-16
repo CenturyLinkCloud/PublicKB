@@ -55,27 +55,27 @@ CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-
 
 **Q: What are the differences between a standard WordPress install and a CenturyLink Cloud WordPress install?**
 
-A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge base article for known WordPress Limitaions](../Managed Services/wordpress-known-limitations.md "knowledge base article for known WordPress Limitaions").
+A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge base article for known WordPress Limitaions](wordpress-known-limitations.md "knowledge base article for known WordPress Limitaions").
 
 **Q: How do I migrate my existing WordPress Site to CenturyLink WordPress as a Service?**
 
-A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge base article for manually migrating a WordPress site to CenturyLink Cloud](../Managed Services/wordpress-site-migration-to-centurylink-cloud.md "knowledge base article for manually migrating a WordPress site to CenturyLink Cloud").
+A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge base article for manually migrating a WordPress site to CenturyLink Cloud](wordpress-site-migration-to-centurylink-cloud.md "knowledge base article for manually migrating a WordPress site to CenturyLink Cloud").
 
 **Q: Can I have persistent storage with CenturyLink Cloud WordPress as a Service?**
 
-A: WordPress persistent storage must be [configured  with CenturyLink Cloud Object Storage](../Managed Services/wordpress-persistent-storage-configuration.md "How to Configure WordPress Persistent Storage").
+A: WordPress persistent storage must be [configured  with CenturyLink Cloud Object Storage](wordpress-persistent-storage-configuration.md "How to Configure WordPress Persistent Storage").
 
 **Q: How do I access the MySQL database for my WordPress Site?**
 
-A: You can [access your WordPress database using phpMyAdmin](../Managed Services/wordpress-database-access-with-phpmyadmin.md "How to access MySQL with phpMyAdmin").
+A: You can [access your WordPress database using phpMyAdmin](wordpress-database-access-with-phpmyadmin.md "How to access MySQL with phpMyAdmin").
 
 **Q: How do I install plugins and themes to my WordPress Site?**
 
-A: You can [push plugins and themes to your WordPress site using your git repository](../Managed Services/wordpress-plugin-installation.md "How to access MySQL with phpMyAdmin").
+A: You can [push plugins and themes to your WordPress site using your git repository](wordpress-plugin-installation.md "How to access MySQL with phpMyAdmin").
 
 **Q: How do I send email (such as password resets) with my WordPress Site?**
 
-A: You must [configure SMTP for your WordPress site](../Managed Services/wordpress-SMTP-Configuration.md "How to access MySQL with phpMyAdmin") in order to send email.
+A: You must [configure SMTP for your WordPress site](wordpress-SMTP-Configuration.md "How to access MySQL with phpMyAdmin") in order to send email.
 
 **Q: Can I configure my own domain with CenturyLink Cloud WordPress as a Service?**
 
