@@ -41,21 +41,21 @@ In order to activate a plugin you will need to download a WordPress Plugin and u
 
   ![](../images/wp_plugin_installation/wp_plugin_installation_04.png "wp_plugin_installation_04.png")
 
-6. Inside your repo, at the command line, running **_git status_** will now show you uncommited changes.
+6. Inside your repo, at the command line, running `git status` will now show you uncommited changes.
 
   ![](../images/wp_plugin_installation/wp_plugin_installation_05.png "wp_plugin_installation_05.png")
 
-7. Commit your changes using the **_git add_** command.
+7. Commit your changes using the `git add` command.
 
   _In this example we will run git add * to add all files to the repo_
 
   ![](../images/wp_plugin_installation/wp_plugin_installation_06.png "wp_plugin_installation_06.png")
 
-8. Running **_git status_** will show new files to commit.
+8. Running `git status` will show new files to commit.
 
   ![](../images/wp_plugin_installation/wp_plugin_installation_07.png "wp_plugin_installation_07.png")
 
-9. Run **_git commit_** to commit files.
+9. Run `git commit` to commit files.
 
   ![](../images/wp_plugin_installation/wp_plugin_installation_08.png "wp_plugin_installation_08.png")
 
@@ -67,7 +67,7 @@ In order to activate a plugin you will need to download a WordPress Plugin and u
 
   ![](../images/wp_plugin_installation/wp_plugin_installation_10.png "wp_plugin_installation_10.png")
   
-12. Run **_git push_** to push changes back to your Git Repository and force a restart of your WordPress site.
+12. Run `git push` to push changes back to your Git Repository and force a restart of your WordPress site.
 
   ![](../images/wp_plugin_installation/wp_plugin_installation_11.png "wp_plugin_installation_11.png")
 

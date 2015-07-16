@@ -18,7 +18,7 @@ There are multiple methods that could be used to export and import an existing W
 * Working knowledge of MySQL
 * Working knowledge of PHPMyAdmin
 * Working knowledge of Git.
-* Working knowledge of how to [Install WordPress Plugins to CenturyLink Cloud WordPress](../Managed Services/wordpress-plugin-installation.md "WordPress Plugin Installation on CenturyLink Cloud")
+* Working knowledge of how to [Install WordPress Plugins to CenturyLink Cloud WordPress](wordpress-plugin-installation.md "WordPress Plugin Installation on CenturyLink Cloud")
 * Working knowledge of how to [Create a CenturyLink Object Storage Bucket](../Object Storage/using-object-storage-from-the-control-portal.md)
 
 --
