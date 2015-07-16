@@ -16,7 +16,7 @@ There are multiple methods that could be used to export and import an existing W
 * Working knowledge of basic WordPress functionality
 * Working knowledge of MySQL
 * Working knowledge of PHPMyAdmin
-* Working knowledge of GitHub.
+* Working knowledge of Git.
 * Working knowledge of how to [Install WordPress Plugins to CenturyLink Cloud WordPress](../Managed Services/wordpress-plugin-installation.md "WordPress Plugin Installation on CenturyLink Cloud")
 * Working knowledge of how to [Create a CenturyLink Object Storage Bucket](../Object Storage/using-object-storage-from-the-control-portal.md)
 
@@ -57,11 +57,11 @@ There are multiple methods that could be used to export and import an existing W
 ![](../images/wp_site_migration/wp_site_migration_05.png)
 
 
-## GitHub Changes:
+## CenturyLink Git Changes:
 
-**1. Clone your CenturyLink GitHub repository to your desktop**
-**2. Copy your wp-content/themes and wp-content/plugins into your GitHub repository (do not remove the Amazon plugins)**
-**3. Sync your GitHub repository (this will force a restart of your CenturyLink WordPress Site)**
+**1. Clone your CenturyLink Git repository to your desktop**
+**2. Copy your wp-content/themes and wp-content/plugins into your CenturyLink Git repository (do not remove the Amazon plugins)**
+**3. Sync your Git repository (this will force a restart of your CenturyLink WordPress Site)**
 
 ## CenturyLink WordPress Site**1. Login to your WordPress site and activate All-in-One WP Migration**
 **2. Open All-in-One WP Migration**

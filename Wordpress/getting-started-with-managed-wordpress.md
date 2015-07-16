@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with WordPress as a Service",
-  "date": "04-30-2015",
+  "date": "07-15-2015",
   "author": "Bill Burge",
   "attachments": [],
   "contentIsHTML": false
