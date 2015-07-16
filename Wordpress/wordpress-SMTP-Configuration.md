@@ -1,10 +1,11 @@
 {{{
   "title": "Wordpress SMTP Configuration",
-  "date": "04-29-2015",
+  "date": "07-15-2015",
   "author": "Bill Burge",
   "attachments": [],
   "contentIsHTML": false
 }}}
+### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Aggreement.--
 
 Out of the box, WordPress sends email using the [PHP mail()](http://php.net/manual/en/function.mail.php "PHP mail ()") function. This function is unauthenticated and, for this reason, CenturyLink Cloud WordPress does not allow this functionality and does not include an alternate SMTP relay.  In order to send WordPress user emails, like password resets, you will first need to configure a SMTP server using one of the many freely available plugins found on [WordPress.org](https://wordpress.org/plugins/ "WordPress.org")
 
