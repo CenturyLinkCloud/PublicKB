@@ -24,9 +24,9 @@ This FAQ addresses commonly asked questions about the service. For further infor
 * 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC
   * Storage is 6x2TB 7200 RAID 5 (9.09TB usable)
 
-  **Why don't I see the option to provision a Bare Metal server type?**
+**Why don't I see the option to provision a Bare Metal server type?**
 
-  There are a couple reasons you might not see the option for Bare Metal servers.  First, check your data center and the current availability for Bare Metal servers.  Bare Metal servers are not available in all data centers. If you are in a data center where Bare Metal servers should be available, contact Customer Care to have them check to see if Bare Metal servers need to be enabled for your account.
+There are a couple reasons you might not see the option for Bare Metal servers.  First, check your data center and the current availability for Bare Metal servers.  Bare Metal servers are not available in all data centers. If you are in a data center where Bare Metal servers should be available, contact Customer Care to have them check to see if Bare Metal servers need to be enabled for your account.
 
 **Can I increase or decrease CPU, memory or storage resources on Bare Metal servers?**
 
