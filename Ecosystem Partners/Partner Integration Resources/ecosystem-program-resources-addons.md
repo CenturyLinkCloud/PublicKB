@@ -15,8 +15,8 @@ AppFog V2 is currently in beta.  Prospective partners with questions should cont
 
 ### Core Documentation
 
-  * [Become an AddOn partner](https://www.centurylinkcloud.com/knowledge-base/appfog/legacy-version-1/become-an-add-on-partner/)
-  * [Migrate a V1 AppFog service to V2](https://www.centurylinkcloud.com/knowledge-base/ecosystem-partners/partner-integration-resources/howto-migrate-appfog-addon-to-addon-engine/)
-  * [Migrate a Heroku service to AppFog](https://www.centurylinkcloud.com/knowledge-base/ecosystem-partners/partner-integration-resources/howto-migrate-heroku-addon-to-addon-engine/)
-  * [Upload your service manifest to AppFog AddOn Engine](https://www.centurylinkcloud.com/knowledge-base/ecosystem-partners/upload-service-manifests-to-addon-engine/)
+  * [Become an AddOn partner](../appfog/legacy-version-1/become-an-add-on-partner/)
+  * [Migrate a V1 AppFog service to V2]( ../ecosystem-partners/partner-integration-resources/howto-migrate-appfog-addon-to-addon-engine/)
+  * [Migrate a Heroku service to AppFog](../ecosystem-partners/partner-integration-resources/howto-migrate-heroku-addon-to-addon-engine/)
+  * [Upload your service manifest to AppFog AddOn Engine](../ecosystem-partners/upload-service-manifests-to-addon-engine/)
 
