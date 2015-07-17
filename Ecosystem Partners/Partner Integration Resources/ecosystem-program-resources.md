@@ -1,7 +1,7 @@
 {{{
   "title": "Ecosystem Program Partner Resource Guide",
-  "date": "6-19-2015",
-  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
+  "date": "7-17-2015",
+  "author": "<a href='https://twitter.com/daveshac'>@daveshac</a>",
   "attachments": [],
   "sticky": true,
   "contentIsHTML": false
@@ -11,17 +11,13 @@
 
 ### Overview
 
-CenturyLink [Ecosystem Program Partner Members](../ecosystem-partners/centurylink-cloud-ecosystem-program-guide.md) gain access to a bevy of resources that make integrations easy and minimize time to successful customer adoption.  Leverage the assets below to make use of the investments CenturyLink has already made on your behalf so you can minimize your engineering and marketing learning curve.
+CenturyLink [Ecosystem Program Partner Members](../centurylink-cloud-ecosystem-program-guide.md) gain access to a bevy of resources that make integrations easy and minimize time to successful customer adoption.  Leverage the assets below to make use of the investments CenturyLink has already made on your behalf so you can minimize your engineering and marketing learning curve.
 
 ### Technical Integration
 
-Integration and marketplace access is divided into three discrete channels ([Understanding the differences between Templates, Blueprints, and Packages](../blueprints/understanding-the-difference-between-templates-blueprints-and-packages/))
+Integration of 3rd party technology with CenturyLink Cloud can be achieved by leveraging one of our automation methods.  Follow the links below to
+
 
 | [Templates](../ecosystem-program-resources-templates.md)  | [Blueprints](../ecosystem-program-resources-blueprints.md) | [API](../ecosystem-program-resources-api.md) | [Add-Ons](../ecosystem-program-resources-addons.md) |
-|:-:	|:-:	| :-: |
-| <center>[<img src="/knowledge-base/images/ecosystem_program_resources/tasks_00853f_64.png" style="border:0;">](../ecosystem-partners/ecosystem-program-resources-templates.md)<br>Supporting virtual appliances</center>| <center>[<img src="/knowledge-base/images/ecosystem_program_resources/cubes_00853f_64.png" style="border:0;">](../ecosystem-partners/ecosystem-program-resources-blueprints.md)<br>Applying your software to customer assets</center>| <center>[<img src="/knowledge-base/images/ecosystem_program_resources/cogs_00853f_64.png" style="border:0;">](../ecosystem-partners/ecosystem-program-resources-api.md)<br>Programatic access to cloud services</center> | <center>[<img src="/knowledge-base/images/ecosystem_program_resources/cloud-download_575757_64.png" style="border:0;">](../ecosystem-partners/ecosystem-program-resources-addons.md)<br>*Coming soon*</center> |
-
-
-### Evangelism
-
-*Coming soon.*
+|:-:	|:-:	| :-: | :-: |
+| <a href="../ecosystem-program-resources-templates.md"> <img src="../../images/kb-icon--blueprints.svg" height="75" /><br>  Supporting virtual appliances | <a href="../ecosystem-program-resources-blueprints.md"> <img src="../../images/kb-icon--paper.svg" height="75" /><br> Applying your software to customer assets| <a href="../ecosystem-program-resources-api.md"> <img src="../../images/kb-icon--api.svg" height="75" /><br> Programatic access to cloud services | <a href="../ecosystem-program-resources-addons.md"> <img src="../../images/kb-icon--partners.svg" height="75" /><br>  Web service integration <br> (Now in beta release) |
