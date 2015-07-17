@@ -62,8 +62,8 @@ SimpleInvoices is available as a Blueprint for deployment on a **new server**.
 
   Servers are built using private IPs only with access with client or IPSEC VPN.  For inbound access from the Internet add a public IP to your master server.
 
-  <a href="../../Network/how-to-add-public-ip-to-virtual-machine/">
-    <img style="border:0;width:50px;vertical-align:middle;" src="../../images/shared_assets/fw_icon.png">
+  <a href="../../../network/how-to-add-public-ip-to-virtual-machine/">
+    <img style="border:0;width:50px;vertical-align:middle;" src="/knowledge-base/images/shared_assets/fw_icon.png">
     Adding a public IP to your virtual machine
   </a>
 
@@ -111,8 +111,8 @@ SimpleInvoices is available as a Blueprint Package for deployment on an existing
 
   Servers are built using private IPs only with access with client or IPSEC VPN.  For inbound access from the Internet add a public IP to your master server.
 
-  <a href="../../Network/how-to-add-public-ip-to-virtual-machine/">
-    <img style="border:0;width:50px;vertical-align:middle;" src="../../images/shared_assets/fw_icon.png">
+  <a href="../../../network/how-to-add-public-ip-to-virtual-machine/">
+    <img style="border:0;width:50px;vertical-align:middle;" src="/knowledge-base/images/shared_assets/fw_icon.png">
     Adding a public IP to your virtual machine
   </a>
 
