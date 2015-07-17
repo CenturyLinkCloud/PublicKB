@@ -1,12 +1,12 @@
 {{{
   "title": "WordPress Persistent Storage Configuration",
-  "date": "07-15-2015",
+  "date": "07-17-2015",
   "author": "Bill Burge",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Aggreement.--
+### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.## Overview
 
 CenturyLink Cloud WordPress sites utilize Object Storage for persistent WordPress content files such as images and file attachments.  In order to utilize persistent storage you must first have a CenturyLink Cloud manually configure Centurylink Cloud Object Storage using the following link:
 
@@ -15,6 +15,8 @@ CenturyLink Cloud WordPress sites utilize Object Storage for persistent WordPres
 Once object storage has been configured, you must edit your base WordPress *wp-config.php* file in your [CenturyLink Git Repository](https://git.wordpress.ctl.io "CenturyLink Git") to integrate your Wordpress site with your object storage account.  
 
 **Note: There are many methods to edit and commit this file. This knowledgebase covers editing the file in your localling cloned git repository.**
+
+## Persistent Storage Configuration
 
 1. [Clone your WordPress Git Repo](wordpress-clone-push-gitlab.md "Clone your WordPress Git Repo")
 
