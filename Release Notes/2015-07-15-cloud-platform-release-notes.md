@@ -29,7 +29,7 @@ Check out the [Product Page](//www.centurylinkcloud.com/appfog) and [AppFog sect
 
 ### Enhancements (9)###
 
-* __"Price sheet" user interface.__ Transparency matters. CenturyLink Cloud is a leader in price visibility, and we've extended this further by showing the per SKU costs that apply to any given account. This shows you exactly what you pay for any particular aspect of cloud. Log in and go to directly to  (https://control.ctl.io/pricingcatalog)[https://control.ctl.io/pricingcatalog] to quickly review the price you pay for cloud services!  
+* __"Price sheet" user interface.__ Transparency matters. CenturyLink Cloud is a leader in price visibility, and we've extended this further by showing the per SKU costs that apply to any given account. This shows you exactly what you pay for any particular aspect of cloud. Log in and go to directly to  [https://control.ctl.io/pricingcatalog](https://control.ctl.io/pricingcatalog) to quickly review the price you pay for cloud services!  
 ![custompricing](../images/2015-07-15_releasenotes6.png)
 
 * __SafeHaven 3.1.__ The latest version of SafeHaven &#151; the disaster recovery service from CenturyLink &#151; is available! It includes new capabilities around local cache in the production data center, supports resizing of protection groups and checkpoint groups, and a refresh of the console and administration wizards.
