@@ -6,7 +6,12 @@
   "contentIsHTML": false
 }}}
 
-### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.
+### IMPORTANT NOTE
+
+CenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
+
+During the Limited Beta there is no production Service Level Agreement.
+
 ## Overview
 
 [WordPress](http://www.wordpress.org "WordPress.org") is a free open-source blogging tool and content management system (CMS) based on PHP and MySQL.
@@ -79,4 +84,4 @@ A: You must [configure SMTP for your WordPress site](wordpress-SMTP-Configuratio
 
 **Q: Can I configure my own domain with CenturyLink Cloud WordPress as a Service?**
 
-A: You can [configure your own domain name](wordpress-custom-domain-configuration.md "WordPress Custom Domain Configuration") via the CenturyLink Cloud Portal.chrom
+A: You can [configure your own domain name](wordpress-custom-domain-configuration.md) via the CenturyLink Cloud Portal.chrom
