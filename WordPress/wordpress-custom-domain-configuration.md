@@ -6,8 +6,10 @@
   "contentIsHTML": false
 }}}
 
-### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.
+### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.## Overview
 CenturyLink Cloud WordPress supports custom domain name configuration after [setting up a new site](getting-started-with-managed-wordpress.md "Getting Started with Managed WordPress").
+
+## WordPress Custom Domain Configuration
 
 1. Browse to [wordpress.ctl.io](https://wordpress.ctl.io), login with your CenturyLink Cloud User Name and Password and click Login
 
