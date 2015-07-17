@@ -1,7 +1,7 @@
 {{{
   "title": "WordPress Site Updates with Git",
   "date": "07-17-2015",
-  "author": "Gregory McWilliams", "Matt Wittmann", "Bill Burge",
+  "author": "Gregory McWilliams, Matt Wittmann, Bill Burge"
   "attachments": [],
   "contentIsHTML": false
 }}}
