@@ -15,7 +15,7 @@ There is currently no automated method for migrating an existing WordPress site 
 * Working knowledge of MySQL
 * Working knowledge of PHPMyAdmin
 * Working knowledge of Git.
-* Working knowledge of how to [Install WordPress Plugins to CenturyLink Cloud WordPress](wordpress-plugin-installation.md "WordPress Plugin Installation on CenturyLink Cloud")
+* Working knowledge of how to [Install WordPress Plugins to CenturyLink Cloud WordPress](wordpress-plugin-installation.md)
 * Working knowledge of how to [Create a CenturyLink Object Storage Bucket](../Object Storage/using-object-storage-from-the-control-portal.md)
 
 ### Prerequisites:
@@ -23,7 +23,7 @@ There is currently no automated method for migrating an existing WordPress site 
 1.	An existing WordPress site2.	The prefix of your WordPress database tables on your existing WordPress site. (you can get these via phpmyadmin if you do not know)3.	A CenturyLink WordPress site4.	The prefix of your CenturyLink WordPress database tables
 5. A CenturyLink Object Storage bucket including the access key id and secret access key
 
-## On the source WordPress site:1. Install and activate [All-In-One WP Migration](https://wordpress.org/plugins/all-in-one-wp-migration/ "All-In-One WP Migration Plugin")
+## On the source WordPress site:1. Install and activate [All-In-One WP Migration](https://wordpress.org/plugins/all-in-one-wp-migration/)
 
 2. Open All-in-One WP Migration
 

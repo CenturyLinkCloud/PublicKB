@@ -12,17 +12,17 @@ CenturyLink Cloud WordPress sites utilize Object Storage for persistent WordPres
 
 [Using object storage from the control portal](../Object Storage/using-object-storage-from-the-control-portal.md)
 
-Once object storage has been configured, you must edit your base WordPress *wp-config.php* file in your [CenturyLink Git Repository](https://git.wordpress.ctl.io "CenturyLink Git") to integrate your Wordpress site with your object storage account.  
+Once object storage has been configured, you must edit your base WordPress *wp-config.php* file in your [CenturyLink Git Repository](https://git.wordpress.ctl.io) to integrate your Wordpress site with your object storage account.  
 
 **Note: There are many methods to edit and commit this file. This knowledgebase covers editing the file in your localling cloned git repository.**
 
 ## Persistent Storage Configuration
 
-1. [Clone your WordPress Git Repo](wordpress-clone-push-gitlab.md "Clone your WordPress Git Repo")
+1. [Clone your WordPress Git Repo](wordpress-clone-push-gitlab.md)
 
 2. Browse to the locally cloned git repository associated with the WordPress site to be updated and open wp-config.php in a text editor.
 
-  ![](../images/wp-persistent-storage/wp-persistent-storage_21.png "wp-persistent-storage_21.png")
+  ![](../images/wp-persistent-storage/wp-persistent-storage_21.png)
 
 3. Find the section of the file labeled _CenturyLink Object Storage Customer Variables_
 
@@ -34,63 +34,63 @@ Once object storage has been configured, you must edit your base WordPress *wp-c
 
   **NOTE: These are variables you will have obtained when configuring your [CenturyLink Cloud Object Storage.](../Object Storage/using-object-storage-from-the-control-portal.md)**
   
-  ![](../images/wp-persistent-storage/wp-persistent-storage_22.png "wp-persistent-storage_22.png")
+  ![](../images/wp-persistent-storage/wp-persistent-storage_22.png)
 
 4. Replace the variables and save the file.
 
   *The following example shows the variables replaced:*
   
-  ![](../images/wp-persistent-storage/wp-persistent-storage_23.png "wp-persistent-storage_23.png")
+  ![](../images/wp-persistent-storage/wp-persistent-storage_23.png)
 
 5. Inside your repo, at the command line, running `git status` will now show you uncommited changes.
 
-  ![](../images/wp-persistent-storage/wp-persistent-storage_24.png "wp-persistent-storage_24.png")
+  ![](../images/wp-persistent-storage/wp-persistent-storage_24.png)
 
 6. Commit your changes using the `git add` command.
 
   _In this example we will run git add * to add all files to the repo_
 
-  ![](../images/wp-persistent-storage/wp-persistent-storage_25.png "wp-persistent-storage_25.png")
+  ![](../images/wp-persistent-storage/wp-persistent-storage_25.png)
 
 7. Running `git status` will show new files to commit.
 
-  ![](../images/wp-persistent-storage/wp-persistent-storage_26.png "wp-persistent-storage_26.png")
+  ![](../images/wp-persistent-storage/wp-persistent-storage_26.png)
 
 8. Run `git commit` to commit files.
 
-  ![](../images/wp-persistent-storage/wp-persistent-storage_27.png "wp-persistent-storage_27.png")
+  ![](../images/wp-persistent-storage/wp-persistent-storage_27.png)
 
 9. An editor will open. Insert a comment and save the file.
 
-  ![](../images/wp-persistent-storage/wp-persistent-storage_28.png "wp-persistent-storage_28.png")
+  ![](../images/wp-persistent-storage/wp-persistent-storage_28.png)
 
 10. The CLI will then output file creation.
 
-  ![](../images/wp-persistent-storage/wp-persistent-storage_29.png "wp-persistent-storage_29.png")
+  ![](../images/wp-persistent-storage/wp-persistent-storage_29.png)
   
 11. Run `git push` to push changes back to your Git Repository and force a restart of your WordPress site.
 
-  ![](../images/wp-persistent-storage/wp-persistent-storage_30.png "wp-persistent-storage_30.png")
+  ![](../images/wp-persistent-storage/wp-persistent-storage_30.png)
 
 12. Login to your WordPress site and expand Plugins in the left column.
 
-  ![](../images/wp-persistent-storage/wp-persistent-storage_31.png "wp-persistent-storage_31.png")
+  ![](../images/wp-persistent-storage/wp-persistent-storage_31.png)
 
 8. Click Activate next to the Amazon Web Services plugin.
 
-  ![](../images/wp-persistent-storage/wp-persistent-storage_32.png "wp-persistent-storage_32.png")
+  ![](../images/wp-persistent-storage/wp-persistent-storage_32.png)
 
 9. Click Activate next to the Amazon S3 and CloudFront plugin.
 
-  ![](../images/wp-persistent-storage/wp-persistent-storage_33.png "wp-persistent-storage_33.png")
+  ![](../images/wp-persistent-storage/wp-persistent-storage_33.png)
 
 10. Expand AWS in the left column.
 
-  ![](../images/wp-persistent-storage/wp-persistent-storage_34.png "wp-persistent-storage_34.png")
+  ![](../images/wp-persistent-storage/wp-persistent-storage_34.png)
 
 11. Select S3 and Cloudfront
 
-  ![](../images/wp-persistent-storage/wp-persistent-storage_35.png "wp-persistent-storage_35.png")
+  ![](../images/wp-persistent-storage/wp-persistent-storage_35.png)
 
 12. Ensure the following settings are configured and click Save Changes
 
@@ -116,7 +116,7 @@ Once object storage has been configured, you must edit your base WordPress *wp-c
 
   *The following example is correctly configured:*
 
-  ![](../images/wp-persistent-storage/wp-persistent-storage_36.png "wp-persistent-storage_36.png")
+  ![](../images/wp-persistent-storage/wp-persistent-storage_36.png)
 
 13. Object storage is now configure.
 

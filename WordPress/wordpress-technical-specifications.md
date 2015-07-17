@@ -34,7 +34,7 @@ _future product_
   
 ##Disallowed Services
 
-**phpmail()** is unauthenticated and not allowed on CenturyLink Cloud WordPress as a service.  [SMTP can be configured using a plugin](wordpress-SMTP-Configuration.md "blah") to send mail from within WordPress.
+**phpmail()** is unauthenticated and not allowed on CenturyLink Cloud WordPress as a service.  [SMTP can be configured using a plugin](wordpress-SMTP-Configuration.md) to send mail from within WordPress.
 
 
 ##Disallowed php functions

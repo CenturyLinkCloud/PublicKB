@@ -43,15 +43,15 @@ multimedia content.
 
  *CLC users other than the one who created the site are not be able to view or edit the repository in git.*
 
-   ![](../images/wp_site_updates_with_git/wp-site-updates-with-git_01.png "wp-site-updates-with-git_01.png")
+   ![](../images/wp_site_updates_with_git/wp-site-updates-with-git_01.png)
 
 2. Once you are logged in, select the project you would like to clone. The git project's name is the same as the WordPress site name provided on site creation.
 
-   ![](../images/wp_site_updates_with_git/wp-site-updates-with-git_02.png "wp-site-updates-with-git_02.png")
+   ![](../images/wp_site_updates_with_git/wp-site-updates-with-git_02.png)
    
 3. Generally, the best way to make changes is to edit files on your own machine. To do this, clone the repository to your local machine using the HTTPS option. SSH is not supported.
 
-   ![](../images/wp_site_updates_with_git/wp-site-updates-with-git_03.png "wp-site-updates-with-git_03.png")
+   ![](../images/wp_site_updates_with_git/wp-site-updates-with-git_03.png)
    
    The command to clone the repository is:
 

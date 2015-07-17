@@ -1,5 +1,5 @@
 {{{
-  "title": "Wordpress Known Limitations",
+  "title": "WordPress Known Limitations",
   "date": "07-17-2015",
   "author": "Jordan Mahaney, Bill Burge"
   "attachments": [],
