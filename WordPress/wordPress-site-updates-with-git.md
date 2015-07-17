@@ -36,30 +36,32 @@ multimedia content.
 
 ## Cloning from git
 
-1. Head out to [git servers](https://git.wordpress.ctl.io/) and log in using the CenturyLink Cloud username of the
-   user who created the site along with the WordPress administrative password provided on site creation. CLC users other
-   than the one who created the site are not be able to view or edit the repository in git.
+1. Browse to [git.wordpress.ctl.io](https://git.wordpress.ctl.io/) and log in using the following:
 
-   ![](../images/wp_clone_push_git/GitLoginPage.png "gitLoginPage.png")
+  - **Username:** CenturyLink Cloud username of the user who created the site 
+  - **Password:** WordPress administrative password provided on site creation 
 
-   Once you're logged in, select the project you would like to clone. The git project's name is the same as the
-   WordPress site name provided on site creation.
+ *CLC users other than the one who created the site are not be able to view or edit the repository in git.*
 
-   ![](../images/wp_clone_push_git/GitAccountDetails.png "gitAccountDetails.png")
-2. Generally, the best way to make changes is to edit files on your own machine. To do this, clone the repository to
-   your local machine using the HTTPS option. SSH is not supported.
+   ![](../images/wp_site_updates_with_git/wp-site-updates-with-git_01.png "wp-site-updates-with-git_01.png")
 
-   ![](../images/wp_clone_push_git/CloneLinks.png "CloneLinks.png")
+2. Once you are logged in, select the project you would like to clone. The git project's name is the same as the WordPress site name provided on site creation.
 
+   ![](../images/wp_site_updates_with_git/wp-site-updates-with-git_02.png "wp-site-updates-with-git_02.png")
+   
+3. Generally, the best way to make changes is to edit files on your own machine. To do this, clone the repository to your local machine using the HTTPS option. SSH is not supported.
+
+   ![](../images/wp_site_updates_with_git/wp-site-updates-with-git_03.png "wp-site-updates-with-git_03.png")
+   
    The command to clone the repository is:
 
-       git clone $REPOSITORY_HTTPS_URL
+       `git clone $REPOSITORY_HTTPS_URL`
 
-   Note that repositories hosted in our git hosting are private, so you will be prompted to enter the appropriate
-   username and password.
-3. You now have a clean clone of the repository and are free to make changes as you see fit.
+   Note that repositories hosted in our git hosting are private, so you will be prompted to enter the appropriate username and password.
+   
+4. You now have a clean clone of the repository and are free to make changes as you see fit.
 
-Please see the [git documentation](http://git-scm.com/docs/git-clone) for more details on the git clone command.
+  Please see the [git documentation](http://git-scm.com/docs/git-clone) for more details on the git clone command.
 
 ## Pushing Your Changes Back to CenturyLink
 
@@ -73,20 +75,20 @@ and then [pushing them to a remote repository](https://git-scm.com/book/en/v2/Gi
 
 1. Once you have made your changes, stage them for commit with the following the command:
 
-       git add $NAME_OF_CHANGED_FILE
+  `git add $NAME_OF_CHANGED_FILE`
 
    Or if you want to add all changes:
 
-       git add .
+  `git add .`
+       
 2. Once changes have been staged, you are ready to commit:
 
-       git commit –m "Enter a message describing what you've changed here."
+  `git commit –m "Enter a message describing what you've changed here."`
 3. Now can push your commit back to our git repository with the following command:
 
-       git push origin master
-4. From here, our git hosting lets the CenturyLink WordPress service know that you have made a change. The
-   service will pull down your changes from the repository to update your live site! Please note that **only**
-   commits pushed to the `master` branch will update your live site.
+  `git push origin master`
+       
+4. From here, our git hosting lets the CenturyLink WordPress service know that you have made a change. The service will pull down your changes from the repository to update your live site! Please note that **only** commits pushed to the *master* branch will update your live site.
 
 ## That's It!
 
