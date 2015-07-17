@@ -36,9 +36,9 @@
 
 ###Online Tools (2)
 
-* **Microsoft SQL 2014 AlwaysOn Reference Architecture** Achieve high availability for MS SQL instances using [**these best practices**](https:./www.centurylinkcloud.com/architecture/sql2014-alwayson/).
+* **Microsoft SQL 2014 AlwaysOn Reference Architecture** Achieve high availability for MS SQL instances using [**these best practices**](/architecture/sql2014-alwayson/).
 
-* **Getting Started Guides** A [**library of tutorial videos**](https:./www.centurylinkcloud.com/guides/) is now online. Each short clip shows how to perform a common activity in the Platform.
+* **Getting Started Guides** A [**library of tutorial videos**](/guides/) is now online. Each short clip shows how to perform a common activity in the Platform.
 
   ![Getting Started](../images/getting-started-guide-01.png)
 
