@@ -1,12 +1,12 @@
 {{{
   "title": "WordPress Plugin Installation",
-  "date": "07-15-2015",
+  "date": "07-17-2015",
   "author": "Bill Burge",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Aggreement.--
+### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.## Overview
 
 CenturyLink Cloud WordPress sites use Git to deploy new WordPress code including new plugins.
 
@@ -33,7 +33,7 @@ In order to activate a plugin you will need to download a WordPress Plugin and u
 
   _In this example we will be installing Akismet_.
 
-5. Locate the local folder the plugin was downloaded to and copy it into the plugins folder of your cloned GitHub repository.
+5. Locate the local folder the plugin was downloaded to and copy it into the plugins folder of your cloned Git repository.
 
   ![](../images/wp_plugin_installation/wp_plugin_installation_03.png "wp_plugin_installation_03.png")
 
@@ -79,4 +79,4 @@ In order to activate a plugin you will need to download a WordPress Plugin and u
 
   ![](../images/wp_plugin_installation/wp_plugin_installation_13.png "wp_plugin_installation_13.png")
 
-14. Your plugin is now installed.
+15. Your plugin is now installed.
