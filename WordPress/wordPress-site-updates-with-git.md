@@ -1,12 +1,16 @@
 {{{
   "title": "WordPress Site Updates with Git",
   "date": "07-17-2015",
-  "author": "Gregory McWilliams, Matt Wittmann, Bill Burge"
+  "author": "Gregory McWilliams, Matt Wittmann, Bill Burge",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.
+### IMPORTANT NOTE
+
+CenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
+
+During the Limited Beta there is no production Service Level Agreement.
 
 ## Overview
 
