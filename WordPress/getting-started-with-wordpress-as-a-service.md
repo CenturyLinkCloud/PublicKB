@@ -1,23 +1,23 @@
 {{{
   "title": "Getting Started with WordPress as a Service",
-  "date": "07-16-2015",
+  "date": "07-17-2015",
   "author": "Bill Burge",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Aggreement.
-###Overview
+### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.
+## Overview
 
 [WordPress](http://www.wordpress.org "WordPress.org") is a free open-source blogging tool and content management system (CMS) based on PHP and MySQL.
 
 CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-based WordPress installation for enterprise level customers.
 
-###Prerequisites
+### Prerequisites
 
 * Access to the CenturyLink Cloud platform as an authorized user.
  
-###Configuring a New WordPress Site
+## Configuring a New WordPress Site
 
 1. Browse to the [CenturyLink Cloud WordPress Site Creation Login](https://wordpress.ctl.io "CenturyLink Cloud WordPress Site Creation Login")
 
@@ -51,7 +51,7 @@ CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-
 
 	  ![](../images/wp_getting_started/wp_getting_started_8.png)
   
-###Frequently Asked Questions
+## Frequently Asked Questions
 
 **Q: What are the differences between a standard WordPress install and a CenturyLink Cloud WordPress install?**
 
