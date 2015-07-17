@@ -12,17 +12,17 @@
 ![bare-metal](../images/2015-07-15_releasenotes1.png)  
 As you choose the machine size (up to 20 cores and 128 GB of memory) and Operating System (options include: CentOS 6, Red Hat Enterprise Linux 6, Windows Server 2012 R2), the Control Portal gives you a cost estimate.  
 ![bare-metal](../images/2015-07-15_releasenotes2.png)  
-The service is available today in Sterling, VA (VA1) and will soon be online in Slough, UK (GB3). Please see our [Product Page](//www.centurylinkcloud.com/bare-metal/) for more details, and [Knowledge Base for articles](../Servers/bare-metal-faq.md) on how to use Bare Metal today.
+The service is available today in Sterling, VA (VA1) and will soon be online in Slough, UK (GB3). Please see our [Product Page](//www.ctl.io/bare-metal/) for more details, and [Knowledge Base for articles](../Servers/bare-metal-faq.md) on how to use Bare Metal today.
 
 * __AppFog v2.__ Deploy and manage web applications easier with the new, Control Portal-integrated AppFog service based on the open source Cloud Foundry (v2) project. Deploy web applications to a multiple regions and host them in a managed fabric that supports Java, Ruby, Node.js, Go, Python and PHP. Available now in the US-East and US-West region, AppFog offers a scalable runtime for cloud-native applications at only $0.04 per GB hour.  
 ![appfog](../images/2015-07-15_releasenotes3.png)  
-Check out the [Product Page](//www.centurylinkcloud.com/appfog) and [AppFog section of the Knowledge Base](//www.centurylinkcloud.com/knowledge-base/appfog/#1) for everything you need to know to get started!
+Check out the [Product Page](//www.ctl.io/appfog) and [AppFog section of the Knowledge Base](//www.ctl.io/knowledge-base/appfog/#1) for everything you need to know to get started!
 
 
-* __WordPress-as-a-Service (Beta).__ WordPress powers tens of millions of websites worldwide, but it can be challenging to set up and maintain yourself. CenturyLink is delivering WordPress-as-a-Service where you can rapidly create sites, map to custom domains, and store configuration information in a provided Git account. WordPress-as-a-Service is available for free in our Virginia data center during beta. Check out our [Product Page](//www.centurylinkcloud.com/wordpress) and [these KB articles](../Wordpress/getting-started-with-managed-wordpress.md) for further details on signing up and using the service!  
+* __WordPress-as-a-Service (Beta).__ WordPress powers tens of millions of websites worldwide, but it can be challenging to set up and maintain yourself. CenturyLink is delivering WordPress-as-a-Service where you can rapidly create sites, map to custom domains, and store configuration information in a provided Git account. WordPress-as-a-Service is available for free in our Virginia data center during beta. Check out our [Product Page](//www.ctl.io/wordpress) and [these KB articles](../Wordpress/getting-started-with-managed-wordpress.md) for further details on signing up and using the service!  
 ![wordpress](../images/2015-07-15_releasenotes4.png)
 
-* __Mobile applications for cloud management.__ Manage your CenturyLink Cloud environment on the go using the new iOS and Android application. Log into your account, view servers, change server sizes, view alerts, and more! Read [this KB article](//www.centurylinkcloud.com/knowledge-base/general/mobile-app-overview-faq/) for more details.  
+* __Mobile applications for cloud management.__ Manage your CenturyLink Cloud environment on the go using the new iOS and Android application. Log into your account, view servers, change server sizes, view alerts, and more! Read [this KB article](//www.ctl.io/knowledge-base/general/mobile-app-overview-faq/) for more details.  
 ![mobile](../images/2015-07-15_releasenotes5.png)
 
 * __SDK for .NET and Java.__ Are you a .NET or Java developer who is integrating cloud infrastructure capabilities into your apps? Now you can use our open source [.NET SDK](//github.com/CenturyLinkCloud/clc-net-sdk) or [Java SDK](//github.com/CenturyLinkCloud/clc-java-sdk) to easily consume the CenturyLink Cloud API in a straightforward way.

@@ -12,7 +12,7 @@ CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storag
 [Cloudberry Backup Enterprise Edition](http://www.cloudberrylab.com/enterprise-cloud-backup-software.aspx) permits backup of Microsoft Windows Server File Systems, Microsoft SQL and Microsoft Exchange data.
 
 ### Supporting Information
-* Information and details around the CenturyLink Cloud Object Storage services can be found in our [Knowledge Base.](//www.centurylinkcloud.com/knowledge-base/object-storage)
+* Information and details around the CenturyLink Cloud Object Storage services can be found in our [Knowledge Base.](//www.ctl.io/knowledge-base/object-storage)
 * It is also important to note that CenturyLink Cloud provides no support for any 3rd party backup software tools. We are simply providing cloud based storage onto which backup software can store data.
 
 ### Prerequisites

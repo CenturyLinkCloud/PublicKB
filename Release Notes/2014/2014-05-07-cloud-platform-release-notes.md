@@ -27,7 +27,7 @@
 <p><strong>Minor Enhancements (5)</strong>
 </p>
 <ul>
-  <li><strong>Support plan settings visible in the Control Portal.&nbsp;</strong>Starting May 1st, CenturyLink Cloud <a href="http://www.centurylinkcloud.com/products/support/options">offers 3 support tiers</a> with varying SLAs. Customers
+  <li><strong>Support plan settings visible in the Control Portal.&nbsp;</strong>Starting May 1st, CenturyLink Cloud <a href="http://www.ctl.io/products/support/options">offers 3 support tiers</a> with varying SLAs. Customers
     can see their chosen tier by viewing their Account Settings.
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/DN05FBH5ahuo4IxwqngaQF6tk/?name=release05_07_14_01.png" alt="release05_07_14_01.png" />

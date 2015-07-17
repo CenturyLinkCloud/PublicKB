@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description</h3>
-<p><a href="http://www.centurylinkcloud.com/object-storage">CenturyLink Cloud&nbsp;3 Object Storage</a> is an ideal repository for unstructured data ranging from media files to database backups. The Object Storage service is Amazon S3 compatible
+<p><a href="http://www.ctl.io/object-storage">CenturyLink Cloud&nbsp;3 Object Storage</a> is an ideal repository for unstructured data ranging from media files to database backups. The Object Storage service is Amazon S3 compatible
   which means that code and tools that work with Amazon S3 should work seamlessly with CenturyLink Cloud Object Storage. In this KB article, we'll show you how to use the raw REST API and the AWS SDK (for .NET and Node.js) to interact with Object Storage.</p>
 <h3>Audience</h3>
 <ul>

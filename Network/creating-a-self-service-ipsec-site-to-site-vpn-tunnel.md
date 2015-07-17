@@ -90,7 +90,7 @@
   Unfortunately due to the variety of devices and technologies, we cannot be responsible for the end-to-end VPN configuration</div>
 <h3><strong>Non-standard configurations</strong></h3>
 <p>If you require any additional assistance beyond the options available in self-service, that would fall into the "non-standard" configuration category.</p>
-<p>We define non-standard configurations as anything deviating from the above process, or utilizing configuration options specifically listed as out-of-scope. These configurations need to be addressed as a <a href="http://www.centurylinkcloud.com/products/support/service-tasks"
+<p>We define non-standard configurations as anything deviating from the above process, or utilizing configuration options specifically listed as out-of-scope. These configurations need to be addressed as a <a href="http://www.ctl.io/products/support/service-tasks"
  ><strong>service task</strong></a> engagement. Contact your account manager with any questions.</p>
 <p>Common reasons for non-standard VPN tunnels include:</p>
 <ul>

@@ -230,8 +230,8 @@ You can get updates through CenturyLink Cloud Status in two ways:
 The best practice for reducing escalation is by understanding the CenturyLink product and features very well.
 Where to learn more about CenturyLink:
 
-**CenturyLink Cloud Website**: http://www.centurylinkcloud.com/
+**CenturyLink Cloud Website**: http://www.ctl.io/
 
-**CenturyLink Cloud Support Overview**: http://www.centurylinkcloud.com/support
+**CenturyLink Cloud Support Overview**: http://www.ctl.io/support
 
-**CenturyLink Cloud Blog**: http://www.centurylinkcloud.com/blog
+**CenturyLink Cloud Blog**: http://www.ctl.io/blog

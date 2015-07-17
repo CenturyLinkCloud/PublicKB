@@ -156,7 +156,7 @@ The process initiated by the script package may include several, automated reboo
 
 2\. Execute Package
 
-Please reference [API Documentation about authentication](https://www.centurylinkcloud.com/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests. Review the [Execute Package](https://www.centurylinkcloud.com/api-docs/v2/#server-actions-execute-package) to determine how to proceed. There are currently no parameters to add. Below is a JSON example:
+Please reference [API Documentation about authentication](https://www.ctl.io/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests. Review the [Execute Package](https://www.ctl.io/api-docs/v2/#server-actions-execute-package) to determine how to proceed. There are currently no parameters to add. Below is a JSON example:
 
 
   ```
@@ -190,7 +190,7 @@ A history of all executions against your server is available for your review. Th
 
 #### Authentication
 
-Reference [API Documentation about authentication](https://www.centurylinkcloud.com/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests.
+Reference [API Documentation about authentication](https://www.ctl.io/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests.
 
 ### URL
 
@@ -236,7 +236,7 @@ Details on all attempted patches for a single execution against a server are ava
 
 #### Authentication
 
-Reference [API Documentation about authentication](https://www.centurylinkcloud.com/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests.
+Reference [API Documentation about authentication](https://www.ctl.io/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests.
 
 ### URL
 

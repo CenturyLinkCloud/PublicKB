@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description (goal/purpose)</h3>
-<p>CenturyLink Cloud supports importing and exporting data through portable storage devices into our data centers. This article provides an overview of this billable service. Billable charge details can be found here: &nbsp;http://www.centurylinkcloud.com/products/support/service-tasks.
+<p>CenturyLink Cloud supports importing and exporting data through portable storage devices into our data centers. This article provides an overview of this billable service. Billable charge details can be found here: &nbsp;http://www.ctl.io/products/support/service-tasks.
   &nbsp;</p>
 <p>Service Task prioritization: &nbsp;https://t3n.zendesk.com/entries/21651149-Ticket-Prioritization-Matrix</p>
 
@@ -101,7 +101,7 @@
   </ul>
   <li>What are the CenturyLink Cloud data centers located?</li>
   <ul>
-    <li><a href=https://www.centurylinkcloud.com/data-centers/>Check out our Data Centers Location page</a> for detailed information about where you can find our datacenters</li>
+    <li><a href=https://www.ctl.io/data-centers/>Check out our Data Centers Location page</a> for detailed information about where you can find our datacenters</li>
   </ul>
   <li>Backups</li>
   <ul>

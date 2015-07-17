@@ -158,7 +158,7 @@ Starting tunnel to exampleapp1-mysql on port 10000.
 2: mysql
 Which client would you like to start?: 1
 </pre>
-<p>Check out our <a href=" https://www.centurylinkcloud.com/knowledge-base/appfog/legacy-version-1/service-database-content-management-tunneling/">doc on tunneling</a> for more info.</p>
+<p>Check out our <a href=" https://www.ctl.io/knowledge-base/appfog/legacy-version-1/service-database-content-management-tunneling/">doc on tunneling</a> for more info.</p>
 <h4>Import</h4>
 <p>At this point, you can access your AppFog MySQL server as if it's a local MySQL instance.</p>
 <pre>mysql --protocol=TCP --host=localhost --port=10000 --user=uaLDy9EhhvMLq --password=p5Odjf6E5O7uW dc1aaa897343f4eb1aed047ec7c86f19f

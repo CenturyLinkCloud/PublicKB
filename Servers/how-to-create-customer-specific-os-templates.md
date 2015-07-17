@@ -17,7 +17,7 @@ Customers creating OS Templates for Windows Servers should carefully review the 
 
 ### Steps
 
-1. Use the [Create Server](creating-a-new-enterprise-cloud-server.md) Control Portal function to deploy a baseline operating system supported on the CenturyLink Cloud platform. Alternatively, customers can elect to import a server template in the form of an OVF file. If the image to import meets the [requirements for self-service VM import](self-service-vm-import-ovf-requirements.md), this can be done by following the steps outlined in [Using Self-Service VM Import](using-self-service-vm-import.md). Otherwise, CenturyLink Cloud provides [service tasks](http://www.centurylinkcloud.com/products/support/service-tasks) to perform custom imports and customers can engage this group for fees.
+1. Use the [Create Server](creating-a-new-enterprise-cloud-server.md) Control Portal function to deploy a baseline operating system supported on the CenturyLink Cloud platform. Alternatively, customers can elect to import a server template in the form of an OVF file. If the image to import meets the [requirements for self-service VM import](self-service-vm-import-ovf-requirements.md), this can be done by following the steps outlined in [Using Self-Service VM Import](using-self-service-vm-import.md). Otherwise, CenturyLink Cloud provides [service tasks](http://www.ctl.io/products/support/service-tasks) to perform custom imports and customers can engage this group for fees.
 
 2. Login to the newly created OS Instance and apply the customization or packages that should be part of the Template. We recommend after all changes are made a clean reboot of the OS prior to proceeding to step #3.
 
