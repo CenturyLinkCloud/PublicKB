@@ -13,7 +13,7 @@ Integrating with the CenturyLink Cloud Blueprints orchestration engine enables c
 
 ### Core Documentation
 
-Reference the following key pages from the CenturyLink Cloud [Knowledge Base](http://www.centurylinkcloud.com/knowledge-base):
+Reference the following key pages from the CenturyLink Cloud [Knowledge Base](http://www.ctl.io/knowledge-base):
 
 * [Blueprints Category](../../../Blueprints/) in the Knowledge Base
 * Best Practices in [Packages](../../Blueprints/packages-best-practices.md) and [Blueprints](../../Blueprints/blueprints-best-practices.md)
@@ -50,14 +50,14 @@ Before a Blueprint can be publicly published it must pass a CenturyLink led QA p
 ##### Documentation
 
 * Naming adheres to the [Naming conventions for Public Packages and Blueprints](../../Blueprints/creating-public-blueprint-packages.md) style guide.
-* [Knowedgebase](https://www.centurylinkcloud.com/knowledge-base/) article content provides the information necessary to successfully deploy and get started with the solution.  Links to more in-depth general documentation or CenturyLink Cloud specific language is encouraged.
+* [Knowedgebase](https://www.ctl.io/knowledge-base/) article content provides the information necessary to successfully deploy and get started with the solution.  Links to more in-depth general documentation or CenturyLink Cloud specific language is encouraged.
 * Documentation supports deployment experience
 
 
 ### Ongoing Blueprints QA
 
-CenturyLink customers trust that all services available as part of the [Marketplace Provider Program](https://www.centurylinkcloud.com/marketplace/program/) 
-will deploy and function as expected.  To that end CenturyLink maintains quality throughout the Marketplace by executring an ongoing testing service 
+CenturyLink customers trust that all services available as part of the [Marketplace Provider Program](https://www.ctl.io/marketplace/program/)
+will deploy and function as expected.  To that end CenturyLink maintains quality throughout the Marketplace by executring an ongoing testing service
 that validates successful deployment and operation of all public Blueprints on a regular basis.
 
 

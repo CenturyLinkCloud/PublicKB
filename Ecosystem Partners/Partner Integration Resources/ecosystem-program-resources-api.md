@@ -15,8 +15,8 @@ By using the CenturyLink Cloud API, partners and customers can query and engage 
 
 Direct API documentation is available from the API Overview pages.  This covers the:
 
-* [Legacy v1 API](http://www.centurylinkcloud.com/api-docs/v1)
-* [Current v2 API](http://www.centurylinkcloud.com/api-docs/v2)
+* [Legacy v1 API](http://www.ctl.io/api-docs/v1)
+* [Current v2 API](http://www.ctl.io/api-docs/v2)
 
 ### SDKs
 

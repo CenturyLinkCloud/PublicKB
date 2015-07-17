@@ -1,7 +1,7 @@
 CenturyLink Cloud Knowledge Base
 ========
 
-Welcome to the [CenturyLink Cloud](http://www.centurylinkcloud.com) knowledge base repository. This is the source of information on all of our products and services available today. Please follow the guidelines below to contribute or make changes.
+Welcome to the [CenturyLink Cloud](http://www.ctl.io) knowledge base repository. This is the source of information on all of our products and services available today. Please follow the guidelines below to contribute or make changes.
 
 If you are new to Git and Github, we highly recommend spending 5 minutes reading this great article on [Understanding the Github Flow](https://guides.github.com/introduction/flow/). This repo follows the Github Flow.
 
@@ -65,7 +65,7 @@ If you would like to pin a kb article so that it always appears at the top of it
   Links to external sites should follow this format:
 
     ```
-    [Managed Microsoft SQL](//www.centurylinkcloud.com/managed-services/ms-sql)
+    [Managed Microsoft SQL](//www.ctl.io/managed-services/ms-sql)
     ```
 
   ### Images
@@ -128,4 +128,4 @@ If you would like to pin a kb article so that it always appears at the top of it
   * [Create a pull request using Github for Windows](https://github.com/blog/1969-create-pull-requests-in-github-for-windows)
   * [Create a pull request using Github for Mac](https://github.com/blog/1946-create-pull-requests-with-github-for-mac)
 
-7. CenturyLink Cloud Platform Team reviews your pull request. If accepted, it will be added to the [Knowledge Base on CenturyLinkCloud.com](http://www.centurylinkcloud.com/knowledge-base).
+7. CenturyLink Cloud Platform Team reviews your pull request. If accepted, it will be added to the [Knowledge Base on CenturyLinkCloud.com](http://www.ctl.io/knowledge-base).

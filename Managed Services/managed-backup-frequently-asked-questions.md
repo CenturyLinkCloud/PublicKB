@@ -19,12 +19,12 @@ A: Managed Backup makes CenturyLink's backup solution available in the CenturyLi
 
 **Q: How do I create a VM that uses Managed Backup?**
 
-A: From the Control Portal menu, select “Create Server.” You will then be prompted to select the data center, group membership, and other VM properties. Select a data center that supports Managed Backup (an updated list is [available here](//www.centurylinkcloud.com/managed-services/backup/)), and then click the “managed server” element to “Yes.” Once this is selected, you will see the option for "managed backup" appear. Set this to yes, and the operating system drop-down menu will then automatically refresh to show available options. Choose your version, and then proceed with the remainder of the server creation process. You may also [review a more detailed walkthrough of enabling (and disabling) Managed Backup on a server](../Managed Services/enabling-and-disabling-managed-backup.md).
+A: From the Control Portal menu, select “Create Server.” You will then be prompted to select the data center, group membership, and other VM properties. Select a data center that supports Managed Backup (an updated list is [available here](//www.ctl.io/managed-services/backup/)), and then click the “managed server” element to “Yes.” Once this is selected, you will see the option for "managed backup" appear. Set this to yes, and the operating system drop-down menu will then automatically refresh to show available options. Choose your version, and then proceed with the remainder of the server creation process. You may also [review a more detailed walkthrough of enabling (and disabling) Managed Backup on a server](../Managed Services/enabling-and-disabling-managed-backup.md).
 
 **Q: What if I don’t see an option for Managed Backup in the CenturyLink Cloud Control Panel?**
 
 A: There could be a few causes:
-* Be sure you are creating the server in a data center that supports the managed backup service (an updated list is [available here](//www.centurylinkcloud.com/managed-services/backup/)).
+* Be sure you are creating the server in a data center that supports the managed backup service (an updated list is [available here](//www.ctl.io/managed-services/backup/)).
 * It is possible your company has not yet executed a Master Services Agreement (MSA) with CenturyLink Technology Solutions. To obtain a MSA – or if you believe you should already have one in place – please contact a CenturyLink Sales Representative toll free at:
     * United States: 1-855-287-2541
     * Canada: 1-877-387-3764

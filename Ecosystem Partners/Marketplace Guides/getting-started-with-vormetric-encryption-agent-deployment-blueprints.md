@@ -24,11 +24,11 @@ Vormetric has partnered with CenturyLink to deliver and certify the Vormetric da
 ### Description
 Vormetric has integrated their Encryption Agent technology with the CenturyLink Cloud platform by enabling users to install Vormetric agents via Blueprints.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this encryption solution.
 
-Together, Vormetric and CenturyLink deliver data-centric security services that encrypts sensitive customer data and centralizes encryption key management and policy control for data-at-rest encryption, privileged user access control and value security intelligence to meet customer’s business and compliance requirements.  
+Together, Vormetric and CenturyLink deliver data-centric security services that encrypts sensitive customer data and centralizes encryption key management and policy control for data-at-rest encryption, privileged user access control and value security intelligence to meet customer’s business and compliance requirements.
 
-The Data-centric Security-as-a-Service (DSaaS) solution enables IT organizations to efficiently deploy data-centric security across CenturyLink Partner Templates with the Vormetric Transparent Encryption SW agents and the Vormetric Data Security Manager products.  Now, IT security managers can define what files and folders are restricted, who is allowed to view the data, when access is allowed and what operations can be performed by the individual or group.  With the Vormetric data security solution, businesses now reduce their data breach risk, guard against unauthorized data access, meet executive data privacy business requirements and satisfy security compliance regulations that govern your market. 
+The Data-centric Security-as-a-Service (DSaaS) solution enables IT organizations to efficiently deploy data-centric security across CenturyLink Partner Templates with the Vormetric Transparent Encryption SW agents and the Vormetric Data Security Manager products.  Now, IT security managers can define what files and folders are restricted, who is allowed to view the data, when access is allowed and what operations can be performed by the individual or group.  With the Vormetric data security solution, businesses now reduce their data breach risk, guard against unauthorized data access, meet executive data privacy business requirements and satisfy security compliance regulations that govern your market.
 
-Below is a solution diagram illustrating the Data Security Manager (DSM) deployment options available from the [CenturyLink Cloud Partner Template](https://www.centurylinkcloud.com/knowledge-base/ecosystem-partners/getting-started-with-vormetric-dsm/).
+Below is a solution diagram illustrating the Data Security Manager (DSM) deployment options available from the [CenturyLink Cloud Partner Template](https://www.ctl.io/knowledge-base/ecosystem-partners/getting-started-with-vormetric-dsm/).
 
 ![DSM topology Diagram](http://www.vormetric.com/sites/default/files/vormetric-data-security-manager-2014-0617.png)
 
@@ -51,7 +51,7 @@ After reading this article, the user should feel comfortable getting started usi
 ### Deploy Vormetric Agent Installation Blueprint
 Follow these step by step instructions to deploy the Vormetric Agent to an existing server.
 
-1.	**Locate the Vormetric Blueprint in the Blueprint Library**
+1.    **Locate the Vormetric Blueprint in the Blueprint Library**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
   2. Search for “Vormetric” in the keyword search on the right side of the Blueprints Library page as shown in the image below.
   3. Locate the Vormetric "Install Vormetric Data Security Transparent Encryption Agent on Linux"
@@ -63,7 +63,7 @@ Follow these step by step instructions to deploy the Vormetric Agent to an exist
 
   ![Vormetric Image](../../images/ecosystem-vormetric-agent-2.png)
 
-3. **Configure the Blueprint** 
+3. **Configure the Blueprint**
 Complete the information below:
 
   1. Your primary DSM FQDN - Enter the fully qualified host name of the primary DSM, e.g. some.host.com
@@ -88,16 +88,16 @@ Complete the information below:
 * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
 * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-### Access and Configure the Vormetric Agent 
+### Access and Configure the Vormetric Agent
 Follow these steps to access and configure the Voretric Agent application
 
-1.	Access the Agent VM
+1.    Access the Agent VM
 - Connect via SSH to the target VM you deployed the Blueprint on
 - To validate the Vormetric Agent is properly installed and running, run the command `vmd -d`
 - To manually configure the Vormetric agent, please [follow the instructions on the Vormetric support website](http://www.Vormetric.com)
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  There are no Vormetric license costs or additional fees bundled in.    
+The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  There are no Vormetric license costs or additional fees bundled in.
 
 ### Frequently Asked Questions
 
@@ -109,7 +109,7 @@ Existing CenturyLink Enterprise Customers can contact their Account Representati
 
 #### Who should I contact for support?
 * For issues regarding the Vormetric DSM virtual appliance, please contact Vormetric via their Support Website: [http://www.Vormetric.com](http://www.Vormetric.com)
-* For issues related to cloud infrastructure (VM’s, network, etc), or is you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new) 
+* For issues related to cloud infrastructure (VM’s, network, etc), or is you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new)
 
 #### What is the performance impact of Vormetric encryption?
 Vormetric customers typically report no perceptible impact to the end-user experience. In almost every case, the impact of encryption overhead is minimal so IT teams can continue to meet their SLAs. In a benchmark conducted with Intel, Vormetric Transparent Encryption demonstrated under 2% performance overhead at 70% system utilization.

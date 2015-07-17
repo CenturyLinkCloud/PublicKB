@@ -30,12 +30,12 @@ You will also need to add SPF record as follows: **v=spf1 ip4:66.150.160.0/24**
 
  Here are the links to the provisioning service for the SMTP Relay that can be used to manage SMTP relay accounts and get invalid addresses such as bounce backs:
 
-- [Overview](http://www.centurylinkcloud.com/api-docs/v1#smtp-relay-smtp-relay-api-overview)
-- [Create Alias](http://www.centurylinkcloud.com/api-docs/v1#smtp-relay-createalias)
-- [List Aliases](http://www.centurylinkcloud.com/api-docs/v1#smtp-relay-listaliases)
-- [Disable Alias](http://www.centurylinkcloud.com/api-docs/v1#smtp-relay-disablealias)
-- [Remove Alias](http://www.centurylinkcloud.com/api-docs/v1#smtp-relay-removealias)
-- [Get Invalid Addresses](http://www.centurylinkcloud.com/api-docs/v1#smtp-relay-get-invalid-addresses)
+- [Overview](http://www.ctl.io/api-docs/v1#smtp-relay-smtp-relay-api-overview)
+- [Create Alias](http://www.ctl.io/api-docs/v1#smtp-relay-createalias)
+- [List Aliases](http://www.ctl.io/api-docs/v1#smtp-relay-listaliases)
+- [Disable Alias](http://www.ctl.io/api-docs/v1#smtp-relay-disablealias)
+- [Remove Alias](http://www.ctl.io/api-docs/v1#smtp-relay-removealias)
+- [Get Invalid Addresses](http://www.ctl.io/api-docs/v1#smtp-relay-get-invalid-addresses)
 
 ### RHEL Compatible Postfix Basic Setup
 

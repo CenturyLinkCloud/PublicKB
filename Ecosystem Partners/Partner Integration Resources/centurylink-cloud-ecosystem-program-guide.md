@@ -9,7 +9,7 @@
 
 <p>Updated: February 17, 2015</p>
 <p><strong>Description</strong></p>
-<p>This Cloud Ecosystem Program Guide is designed to outline the process expectations for technology companies seeking to integrate their products and services with CenturyLink Cloud.  Partners who enter this program and meet the certification requirements will be eligible to have their deployable technology listed in the CenturyLink Cloud Marketplace launching in early 2015.  To express interest in joining the program, prospective partners can visit the CenturyLink Cloud <a href="http://www.centurylinkcloud.com/marketplace/program">Market Place Providers Program</a> web page or send email to <a href="mailto:ecosystem@centurylinkcloud.com">ecosystem@centurylinkcloud.com</a>.</p>
+<p>This Cloud Ecosystem Program Guide is designed to outline the process expectations for technology companies seeking to integrate their products and services with CenturyLink Cloud.  Partners who enter this program and meet the certification requirements will be eligible to have their deployable technology listed in the CenturyLink Cloud Marketplace launching in early 2015.  To express interest in joining the program, prospective partners can visit the CenturyLink Cloud <a href="http://www.ctl.io/marketplace/program">Market Place Providers Program</a> web page or send email to <a href="mailto:ecosystem@centurylinkcloud.com">ecosystem@centurylinkcloud.com</a>.</p>
 <p><strong>Audience</strong></p>
 <ul>
   <li>
@@ -53,14 +53,14 @@
 </ul>
 <p>Candidates have up to three months to complete any integration needed, validate functionality and create the necessary documentation. During this period, CenturyLink Technology Solutions will provide the Candidate access to a fully functioning,
   production cloud environment with a $2,000 monthly credit limit to be used for automation testing. Once the technology integration has been certified, the Member will continue to have access to the same integration environment in order to ensure compatibility
-  with new Member features and versions. In order to continue receiving this ongoing integration benefit, Candidates will need to be a cloud customer in good standing, either through standard online terms and conditions found on CenturyLinkCloud.com
+  with new Member features and versions. In order to continue receiving this ongoing integration benefit, Candidates will need to be a cloud customer in good standing, either through standard online terms and conditions found on ctl.io
   or by signing a Master Service Agreement with CenturyLink.</p>
 <p>Please note the member technology must function with the standard CenturyLink Cloud feature set as no feature development on the part of the CenturyLink Cloud Development Center will be performed to enable a Candidate through the process. During
   this development period and throughout the term of the Program, the Member will be provided access, on a limited basis, to CenturyLink Cloud Integration Engineers as needed for detailed technology questions and roadmap exploration.</p>
 <p><strong>Documentation</strong></p>
 <p>Two types of KnowledgeBase articles should be created for all Ecosystem Member technologies: focused on Public end-users and Internal cloud support personnel.</p>
 <p>Public Articles should be used to practically guide end-users through deploying the technology upon CenturyLink Cloud. The documentation should be intuitive and provide step-by-step guidance in such a way that all skill levels can use the solution.&nbsp;
-  These should be accessible online through the CenturyLink Cloud <a href="http://www.centurylinkcloud.com/knowledge-base">knowledgebase</a> (KB). The primary goal of Public KB articles is to ensure customer success: <em>what should the user know about how to take advantage of this technology integration with CenturyLink Cloud</em>?</p>
+  These should be accessible online through the CenturyLink Cloud <a href="http://www.ctl.io/knowledge-base">knowledgebase</a> (KB). The primary goal of Public KB articles is to ensure customer success: <em>what should the user know about how to take advantage of this technology integration with CenturyLink Cloud</em>?</p>
 <p>Internal Articles will be used to provide detailed information to the CenturyLink Cloud Support teams so they can appropriately handle operational questions from customers and users. The documentation should include any support expectations worked
   out during the certification process, and should always include contact information for the Member support organization. The Internal KB article should be more detailed than Public KB articles around how blueprints are designed, how tools are
   referenced, and how the Member technology works in production. The primary goal of these Internal KB articles is to ensure quality customer service: <em>what does the CenturyLink Cloud support team need to know to make sure that a customer gets supported correctly and routed to the appropriate Member support team?</em>

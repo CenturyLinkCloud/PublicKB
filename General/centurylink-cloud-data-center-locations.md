@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-Some important details about our locations are listed below. You can also refer to http://www.centurylinkcloud.com/data-centers for the latest information on our data center locations.
+Some important details about our locations are listed below. You can also refer to http://www.ctl.io/data-centers for the latest information on our data center locations.
 
 <table>
   <thead>

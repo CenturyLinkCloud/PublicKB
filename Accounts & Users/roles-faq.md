@@ -28,7 +28,7 @@ A: Previously, CenturyLink Cloud offered a very small set of roles (called "area
 
 **Q: Can I change a user's role through the API?**
 
-A: Yes, users may be assigned roles through the v1 API using the [UpdateUser](http://www.centurylinkcloud.com/api-docs/v1#users-updateuser) method. API v2 does not yet support user or role management, but will eventually support it as well.
+A: Yes, users may be assigned roles through the v1 API using the [UpdateUser](http://www.ctl.io/api-docs/v1#users-updateuser) method. API v2 does not yet support user or role management, but will eventually support it as well.
 
 **Q: How long before a user's role changes take effect?**
 
@@ -44,7 +44,7 @@ A: Each role defines a unique and specific set of actions that a user may perfor
 
 **Q: Do these roles apply for API users?**
 
-A: The short answer is: yes for API v2, no for API v1. When using API v2, authentication is performed using Control Portal user credentials. In this case, the permissions for the roles assigned to the user authenticating against v2 will be respected. In the case of API v1, authentication is done using a separate set of API users (as described in the API v1 <a href="http://www.centurylinkcloud.com/api-docs/v1#authentication-authentication-overview">Authentication Overview</a>). These users effectively act as Account Administrators and do not have restricted access to any account resources.
+A: The short answer is: yes for API v2, no for API v1. When using API v2, authentication is performed using Control Portal user credentials. In this case, the permissions for the roles assigned to the user authenticating against v2 will be respected. In the case of API v1, authentication is done using a separate set of API users (as described in the API v1 <a href="http://www.ctl.io/api-docs/v1#authentication-authentication-overview">Authentication Overview</a>). These users effectively act as Account Administrators and do not have restricted access to any account resources.
 
 **Q: These roles don't exactly fit my security requirements. Do you support custom roles? What about entity-level permissions?**
 A: Custom roles are not currently supported, however the new underlying roles architecture may allow for this to be considered in the future. While entity-level permissions, or ACLs, are not explicitly available, the ability to control access at this level can be achieved by using parent and/or sibling accounts to separate resources. For more information on best practices around setting up an account hierarchy, you may reference the [Practical Guide for Using Roles](../Accounts & Users/practical-guide-for-using-roles.md).
