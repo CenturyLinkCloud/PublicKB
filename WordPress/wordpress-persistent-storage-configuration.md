@@ -1,6 +1,6 @@
 {{{
   "title": "WordPress Persistent Storage Configuration",
-  "date": "07-15-2015",
+  "date": "07-17-2015",
   "author": "Bill Burge",
   "attachments": [],
   "contentIsHTML": false

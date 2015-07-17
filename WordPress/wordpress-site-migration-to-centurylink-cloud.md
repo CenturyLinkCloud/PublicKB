@@ -1,15 +1,13 @@
 {{{
   "title": "WordPress Site Migration to CenturyLink Cloud",
-  "date": "04-30-2015",
+  "date": "07-17-2015",
   "author": "Bill Burge",
   "attachments": [],
   "contentIsHTML": false
 }}}
 ### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.## Overview:
 
-There is no automated method for migrating an existing WordPress site to CenturyLink Cloud's WordPress.
-
-There are multiple methods that could be used to export and import an existing WordPress site into a CenturyLink Cloud WordPress site. This is one tested method. 
+There is currently no automated method for migrating an existing WordPress site to CenturyLink Cloud's WordPress. There are multiple methods that could be used to export and import an existing WordPress site into a CenturyLink Cloud WordPress site. This is one tested method. 
 
 ### This migration path assumes the following:
 
