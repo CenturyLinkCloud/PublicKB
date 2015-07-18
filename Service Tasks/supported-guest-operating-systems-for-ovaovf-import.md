@@ -12,7 +12,7 @@ Supported Guest Operating Systems for OVA/OVF Import
 <h3>Prerequisites</h3>
 <ul>
   <li>A CenturyLink Cloud Account</li>
-  <li>Review the <a href="https://t3n.zendesk.com/entries/22209635-Best-Practices-and-Preparation-for-a-Virtual-Machine-OVF-OVA-Import">Best Practices and Preparation for an OVA/OVF Import</a>
+  <li>Review the <a href="https://www.centurylinkcloud.com/knowledge-base/service-tasks/best-practices-and-preparation-for-a-virtual-machineovfova-import/">Best Practices and Preparation for an OVA/OVF Import</a>
   </li>
 </ul>
 <h3>Exclusions</h3>
