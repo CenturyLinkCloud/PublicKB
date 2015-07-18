@@ -29,7 +29,7 @@ Customers creating OS Templates for Windows Servers should carefully review the 
 
   - Source Server Admin/Root Password:  The administrative password for the source VM
   - Template Description: The description is how you will identify your template when creating new servers
-  - Privacy Settings: Allows customers to define where the template is displayed. Customers with sub accounts can choose to permit access to this template using the Private Shared function.
+  - Publish Settings: Allows customers to define where the template is displayed. Customers with sub accounts can choose to permit access to this template using the Private Shared function.
 
   ![](https://t3n.zendesk.com/attachments/token/jUfTHvR7WbWP4iifNVqEryLCp/?name=02.png)
 
