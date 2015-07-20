@@ -55,9 +55,9 @@ If you are interested in seeing this type of Partner Template deployment as an a
 ### Postrequisite
 - If you want to access your Vormetric DSM over the internet, please perform the following tasks once your Vormetric DSM has been deployed to your account:
 
-1. [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
+1. [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
 
-2. If required, [allow incoming traffic for the admin port](../Network/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Servers Public IP in Control Portal.  Warning: Please make sure your firewall rules are properly configured to only allow specific source traffic.  If you do not configure source traffic rules you risk exposing your DSM to the entire internet.  Note: When accessing your DSM for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
+2. If required, [allow incoming traffic for the admin port](../../Network/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Servers Public IP in Control Portal.  Warning: Please make sure your firewall rules are properly configured to only allow specific source traffic.  If you do not configure source traffic rules you risk exposing your DSM to the entire internet.  Note: When accessing your DSM for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
 
 3. Allow incoming traffic for the following ports
   - TCP Ports: 22, 443, 5696, 7024, 8080, 8443, 8444, 8445, 50000
