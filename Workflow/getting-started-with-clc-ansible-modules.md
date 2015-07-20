@@ -2,7 +2,7 @@
   "title": "Getting Started with CLC Ansible Modules",
   "date": "07-15-2015",
   "author": "Benjamin Harristhal",
-  attachments": [],
+  "attachments": [],
   "contentIsHTML": false
 }}}
 
