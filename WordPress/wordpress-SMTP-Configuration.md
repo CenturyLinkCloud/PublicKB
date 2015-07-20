@@ -1,6 +1,6 @@
 {{{
   "title": "WordPress SMTP Configuration",
-  "date": "07-15-2015",
+  "date": "07-20-2015",
   "author": "Bill Burge",
   "attachments": [],
   "contentIsHTML": false
@@ -9,7 +9,9 @@
 
 Out of the box, WordPress sends email using the [PHP mail()](http://php.net/manual/en/function.mail.php) function. This function is unauthenticated and, for this reason, CenturyLink Cloud WordPress does not allow this functionality and does not include an alternate SMTP relay.  In order to send WordPress user emails, like password resets, you will first need to configure a SMTP server using one of the many freely available plugins found on [WordPress.org](https://wordpress.org/plugins/)
 
-[Postman SMTP Mailer](https://wordpress.org/plugins/postman-smtp/ "Postman SMTP Mailer") is one example capable of utilizing many freely available SMTP servers as well as your enterprise's own.
+As one example, [Postman SMTP Mailer](https://wordpress.org/plugins/postman-smtp/ "Postman SMTP Mailer") is capable of using many freely available SMTP servers as well as your enterprise's own. 
+
+**NOTE:** [Postman 1.5.13](https://downloads.wordpress.org/plugin/postman-smtp.1.5.13.zip) is the latest version of the plugin supported by CenturyLink WordPress.
 
 **In this example, Gmail will be used as the SMTP Relay and assumes the following:**
 
@@ -17,7 +19,7 @@ Out of the box, WordPress sends email using the [PHP mail()](http://php.net/manu
 2. Activation of the the [Less Secure Apps](https://www.google.com/settings/security/lesssecureapps) functionality of Gmail.
 3. A working knowledge of how to install WordPress plugins to a CenturyLink Cloud WordPress site following the Knowledgebase article for [WordPress Plugin Installation](wordpress-plugin-installation.md).
 
-## SMTP Plugin Configuration
+## Example SMTP Plugin Configuration
 
 1. Download and install [Postman SMTP Mailer](https://wordpress.org/plugins/postman-smtp/) to your WordPress site.
 
