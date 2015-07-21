@@ -42,17 +42,17 @@ Log into the CenturyLink Cloud Control Portal and choose to create a new Bluepri
 
 ![Blueprint Menu](../images/ADFS SAML 02.png)
 
-Step 1- Using Blueprint Designer you have several choices for versioning, privacy settings, etc.  In this step you can choose the settings that are appropriate for your intended use.  There is one required field, Description.  Populate with a description that is accurate for your use.
+1.  Using Blueprint Designer you have several choices for versioning, privacy settings, etc.  In this step you can choose the settings that are appropriate for your intended use.  There is one required field, Description.  Populate with a description that is accurate for your use.
 
-Step 2- Add a single Windows 2012 R2 server to the Blueprint (you may have to scroll down to see this option).  Name the server and accept the sizing defaults.  In this example we have used server name DE1CCTSADFS301.  Within the "Add Server Tasks" section, choose "execute script".  Add "Install Active Directory on Windows 2012 (1 of 2) [Primary Node]".  Under "run task", choose "Reboot Server".  Under "execute script", choose "Install IIS 8 on Windows".  Under "run task" choose "Add Public IP".  Select the option for "HTTPS" which uses port 443 for communication. Click "Add Global Tasks". IMPORTANT: Click the "+add" button in this window after the choices have been made. Then, click "next, tasks & order".
+2.  Add a single Windows 2012 R2 server to the Blueprint (you may have to scroll down to see this option).  Name the server and accept the sizing defaults.  In this example we have used server name DE1CCTSADFS301.  Within the "Add Server Tasks" section, choose "execute script".  Add "Install Active Directory on Windows 2012 (1 of 2) [Primary Node]".  Under "run task", choose "Reboot Server".  Under "execute script", choose "Install IIS 8 on Windows".  Under "run task" choose "Add Public IP".  Select the option for "HTTPS" which uses port 443 for communication. Click "Add Global Tasks". IMPORTANT: Click the "+add" button in this window after the choices have been made. Then, click "next, tasks & order".
 
 The Active Directory packages give us a custom domain to work with, and an identity directory for our user records. Microsoft Internet Information Services (IIS) provides a web application host for the Active Directory Federation Services (ADFS) web services used later in this configuration guide.
 
 ![Blueprint Designer](../images/ADFS SAML 03.png)
 
-Step 3- No steps required.  Click "next, review"
+3.  No steps required.  Click "next, review"
 
-Step 4- Click "submit for publishing"  Note: Blueprint may take up to 15 mins to create.
+4.  Click "submit for publishing"  Note: Blueprint may take up to 15 mins to create.
 
 Once the Blueprint has been published, navigate to the Blueprint Library, use the "Refine Results" column to find your Blueprint, and select your Blueprint by clicking on it.  Click the "Deploy Blueprint" button to initiate the provisioning process.
 
