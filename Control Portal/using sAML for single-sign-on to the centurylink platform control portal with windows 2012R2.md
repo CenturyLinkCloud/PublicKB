@@ -1,6 +1,6 @@
 {{{
   "title": "Using SAML for Single-Sign-On to the CenturyLink Platform Control Portal with Windows 2012R2",
-  "date": "6/25/2015",
+  "date": "7/21/2015",
   "author": "Kelly Malloy",
   "attachments": [],
   "contentIsHTML": false
