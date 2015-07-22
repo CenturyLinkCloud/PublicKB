@@ -50,7 +50,7 @@ A: The short answer is: yes for API v2, no for API v1. When using API v2, authen
 A: Custom roles are not currently supported, however the new underlying roles architecture may allow for this to be considered in the future. While entity-level permissions, or ACLs, are not explicitly available, the ability to control access at this level can be achieved by using parent and/or sibling accounts to separate resources. For more information on best practices around setting up an account hierarchy, you may reference the [Practical Guide for Using Roles](../Accounts & Users/practical-guide-for-using-roles.md).
 
 **Q: My organization doesn't have job titles that map to these role names. How do I apply these existing roles to my organization?**
-A: Some tips for applying this role model to your organization may be found in the <a href="../../accounts-&-users/practical-guide-for-using-roles.md">Practical Guide for Using Roles</a>. You may also get a better idea of the complete list of actions that each role can perform by reviewing the [Role Permissions Matrix](../Accounts & Users/role-permissions-matrix.md).
+A: Some tips for applying this role model to your organization may be found in the <a href="../../Accounts & Users/practical-guide-for-using-roles.md">Practical Guide for Using Roles</a>. You may also get a better idea of the complete list of actions that each role can perform by reviewing the [Role Permissions Matrix](../Accounts & Users/role-permissions-matrix.md).
 
 **Q: Some roles seem really similar to each other. When would I use one role as opposed to another?**
 
