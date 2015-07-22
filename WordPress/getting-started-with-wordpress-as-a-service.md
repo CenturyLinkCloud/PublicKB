@@ -21,7 +21,7 @@ CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-
 ### Prerequisites
 
 * Access to the CenturyLink Cloud platform as an authorized user.
- 
+
 ## Configuring a New WordPress Site
 
 1. Browse to the [CenturyLink Cloud WordPress Site Creation Login](https://wordpress.ctl.io "CenturyLink Cloud WordPress Site Creation Login")
@@ -54,8 +54,8 @@ CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-
 
 8. This will take you to your WordPress site's repository
 
-	  ![](../images/wp_getting_started/wp_getting_started_8.png)
-  
+      ![](../images/wp_getting_started/wp_getting_started_8.png)
+
 ## Frequently Asked Questions
 
 **Q: What are the differences between a standard WordPress install and a CenturyLink Cloud WordPress install?**
@@ -84,4 +84,4 @@ A: You must [configure SMTP for your WordPress site](wordpress-SMTP-Configuratio
 
 **Q: Can I configure my own domain with CenturyLink Cloud WordPress as a Service?**
 
-A: You can [configure your own domain name](wordpress-custom-domain-configuration.md) via the CenturyLink Cloud Portal.chrom
+A: You can [configure your own domain name](wordpress-custom-domain-configuration.md) via the CenturyLink Cloud Portal.

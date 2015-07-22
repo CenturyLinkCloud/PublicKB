@@ -10,7 +10,7 @@
 
 WordPress uses a MySQL relational database for storing and retrieving content like posts, pages, image paths and comments as well as user login information.
 
-At times it is necessary to manage the database to resolve issues or add functionality.  With your CenturyLink Cloud WordPress site this is achieved via the free php software tool, [phpMyAdmin](http://www.phpmyadmin.net "phpMyAdmin Homepage").
+At times it is necessary to manage the database to resolve issues or add functionality.  With your CenturyLink Cloud WordPress site this is achieved via the free php software tool, [phpMyAdmin](http://www.phpmyadmin.net).
 
 ### Prerequisites:
 
@@ -33,5 +33,5 @@ At times it is necessary to manage the database to resolve issues or add functio
 
 ## Additional Links:
 
-* [WordPress.org Database Description, Diagram, and Table Overview](https://codex.wordpress.org/Database_Description "WordPress.org Database Description, Diagram, and Table Overview")
-* [WordPress.org Database Code Reference (Functions, Hooks, classes, and methods)](https://developer.wordpress.org/reference "WordPress Database Description, Diagram, and Table Overview")
+* [WordPress.org Database Description, Diagram, and Table Overview](https://codex.wordpress.org/Database_Description)
+* [WordPress.org Database Code Reference (Functions, Hooks, classes, and methods)](https://developer.wordpress.org/reference)

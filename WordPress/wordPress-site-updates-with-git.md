@@ -1,16 +1,12 @@
 {{{
   "title": "WordPress Site Updates with Git",
   "date": "07-17-2015",
-  "author": "Gregory McWilliams, Matt Wittmann, Bill Burge",
+  "author": "Gregory McWilliams, Matt Wittmann, Bill Burge"
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-### IMPORTANT NOTE
-
-CenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
-
-During the Limited Beta there is no production Service Level Agreement.
+### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.
 
 ## Overview
 
@@ -42,27 +38,27 @@ multimedia content.
 
 1. Browse to [git.wordpress.ctl.io](https://git.wordpress.ctl.io/) and log in using the following:
 
-  - **Username:** CenturyLink Cloud username of the user who created the site 
-  - **Password:** WordPress administrative password provided on site creation 
+  - **Username:** CenturyLink Cloud username of the user who created the site
+  - **Password:** WordPress administrative password provided on site creation
 
  *CLC users other than the one who created the site are not be able to view or edit the repository in git.*
 
-   ![](../images/wp_site_updates_with_git/wp-site-updates-with-git_01.png "wp-site-updates-with-git_01.png")
+   ![](../images/wp_site_updates_with_git/wp-site-updates-with-git_01.png)
 
 2. Once you are logged in, select the project you would like to clone. The git project's name is the same as the WordPress site name provided on site creation.
 
-   ![](../images/wp_site_updates_with_git/wp-site-updates-with-git_02.png "wp-site-updates-with-git_02.png")
-   
+   ![](../images/wp_site_updates_with_git/wp-site-updates-with-git_02.png)
+
 3. Generally, the best way to make changes is to edit files on your own machine. To do this, clone the repository to your local machine using the HTTPS option. SSH is not supported.
 
-   ![](../images/wp_site_updates_with_git/wp-site-updates-with-git_03.png "wp-site-updates-with-git_03.png")
-   
+   ![](../images/wp_site_updates_with_git/wp-site-updates-with-git_03.png)
+
    The command to clone the repository is:
 
        `git clone $REPOSITORY_HTTPS_URL`
 
    Note that repositories hosted in our git hosting are private, so you will be prompted to enter the appropriate username and password.
-   
+
 4. You now have a clean clone of the repository and are free to make changes as you see fit.
 
   Please see the [git documentation](http://git-scm.com/docs/git-clone) for more details on the git clone command.
@@ -84,17 +80,16 @@ and then [pushing them to a remote repository](https://git-scm.com/book/en/v2/Gi
    Or if you want to add all changes:
 
   `git add .`
-       
+
 2. Once changes have been staged, you are ready to commit:
 
   `git commit –m "Enter a message describing what you've changed here."`
 3. Now can push your commit back to our git repository with the following command:
 
   `git push origin master`
-       
+
 4. From here, our git hosting lets the CenturyLink WordPress service know that you have made a change. The service will pull down your changes from the repository to update your live site! Please note that **only** commits pushed to the *master* branch will update your live site.
 
 ## That's It!
 
-Voilà ! You have now learned how to clone a repository from git, commit your changes to git, and push them back up to
-a remote git repository.
+Voilà ! You have now learned how to clone a repository from git, commit your changes to git, and push them back up to a remote git repository.

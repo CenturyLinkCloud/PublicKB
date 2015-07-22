@@ -23,11 +23,11 @@ In order to activate a plugin you will need to download a WordPress Plugin and u
 
 2. Open the wp-content folder.
 
-  ![](../images/wp_plugin_installation/wp_plugin_installation_01.png "wp_plugin_installation_01.png")
+  ![](../images/wp_plugin_installation/wp_plugin_installation_01.png)
 
 3. Open the plugins folder.
 
-  ![](../images/wp_plugin_installation/wp_plugin_installation_02.png "wp_plugin_installation_02.png")
+  ![](../images/wp_plugin_installation/wp_plugin_installation_02.png)
 
 4. Download the WordPress Plugin you want to install.
 
@@ -35,48 +35,48 @@ In order to activate a plugin you will need to download a WordPress Plugin and u
 
 5. Locate the local folder the plugin was downloaded to and copy it into the plugins folder of your cloned Git repository.
 
-  ![](../images/wp_plugin_installation/wp_plugin_installation_03.png "wp_plugin_installation_03.png")
+  ![](../images/wp_plugin_installation/wp_plugin_installation_03.png)
 
   You will end up with the following...
 
-  ![](../images/wp_plugin_installation/wp_plugin_installation_04.png "wp_plugin_installation_04.png")
+  ![](../images/wp_plugin_installation/wp_plugin_installation_04.png)
 
 6. Inside your repo, at the command line, running `git status` will now show you uncommited changes.
 
-  ![](../images/wp_plugin_installation/wp_plugin_installation_05.png "wp_plugin_installation_05.png")
+  ![](../images/wp_plugin_installation/wp_plugin_installation_05.png)
 
 7. Commit your changes using the `git add` command.
 
   _In this example we will run git add * to add all files to the repo_
 
-  ![](../images/wp_plugin_installation/wp_plugin_installation_06.png "wp_plugin_installation_06.png")
+  ![](../images/wp_plugin_installation/wp_plugin_installation_06.png)
 
 8. Running `git status` will show new files to commit.
 
-  ![](../images/wp_plugin_installation/wp_plugin_installation_07.png "wp_plugin_installation_07.png")
+  ![](../images/wp_plugin_installation/wp_plugin_installation_07.png)
 
 9. Run `git commit` to commit files.
 
-  ![](../images/wp_plugin_installation/wp_plugin_installation_08.png "wp_plugin_installation_08.png")
+  ![](../images/wp_plugin_installation/wp_plugin_installation_08.png)
 
 10. An editor will open. Insert a comment and save the file.
 
-  ![](../images/wp_plugin_installation/wp_plugin_installation_09.png "wp_plugin_installation_09.png")
+  ![](../images/wp_plugin_installation/wp_plugin_installation_09.png)
 
 11. The CLI will then output file creation.
 
-  ![](../images/wp_plugin_installation/wp_plugin_installation_10.png "wp_plugin_installation_10.png")
+  ![](../images/wp_plugin_installation/wp_plugin_installation_10.png)
   
 12. Run `git push` to push changes back to your Git Repository and force a restart of your WordPress site.
 
-  ![](../images/wp_plugin_installation/wp_plugin_installation_11.png "wp_plugin_installation_11.png")
+  ![](../images/wp_plugin_installation/wp_plugin_installation_11.png)
 
 13. In your WordPress installation expand _Plugins_.
 
-  ![](../images/wp_plugin_installation/wp_plugin_installation_12.png "wp_plugin_installation_12.png")
+  ![](../images/wp_plugin_installation/wp_plugin_installation_12.png)
 
 14. Next to your installed plugin click _Activate_
 
-  ![](../images/wp_plugin_installation/wp_plugin_installation_13.png "wp_plugin_installation_13.png")
+  ![](../images/wp_plugin_installation/wp_plugin_installation_13.png)
 
 15. Your plugin is now installed.
