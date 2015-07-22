@@ -32,7 +32,7 @@ Note – if these are the first servers in a datacenter for your account, then a
 
 ### CLC Firewall Policies
 
-Each server will need to be able to communicate with the subnet that the other two servers are on.  In this example, we will [create Cross Datacenter firewall policies](../network/creating-cross-data-center-firewall-policies.md) that open up each /24 subnet to each other.
+Each server will need to be able to communicate with the subnet that the other two servers are on.  In this example, we will [create Cross Datacenter firewall policies](../Network/creating-cross-data-center-firewall-policies.md) that open up each /24 subnet to each other.
 
 ![Network Menu](../images/deploy-ha-exchange-on-clc-4.png)
 
