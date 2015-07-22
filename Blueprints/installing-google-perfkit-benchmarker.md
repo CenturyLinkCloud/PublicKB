@@ -2,7 +2,8 @@
   "title": "Installing Google PerfKit Benchmarker",
   "date": "03-02-2015",
   "author": "Bryan Friedman",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": false
 }}}
 
 ### Overview
