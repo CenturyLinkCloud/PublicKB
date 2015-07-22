@@ -1,7 +1,7 @@
 {{{
   "title": "Ecosystem Program Partner Resource Guide",
-  "date": "7-17-2015",
-  "author": "<a href='https://twitter.com/daveshac'>@daveshac</a>",
+  "date": "7-21-2015",
+  "author": "Andrew Brunette</a>",
   "attachments": [],
   "sticky": true,
   "contentIsHTML": false
@@ -13,9 +13,10 @@ CenturyLink [Ecosystem Program Partner Members](../centurylink-cloud-ecosystem-p
 
 ### Technical Integration
 
-Integration of 3rd party technology with CenturyLink Cloud can be achieved by leveraging one of our automation methods.  Follow the links below to
+Integration of 3rd party technology with CenturyLink Cloud can be achieved by leveraging one of our automation methods.  Follow the links below to your specific interest.
 
 
-| [Templates](../ecosystem-program-resources-templates.md)  | [Blueprints](../ecosystem-program-resources-blueprints.md) | [API](../ecosystem-program-resources-api.md) | [Add-Ons](../ecosystem-program-resources-addons.md) |
-|:-:	|:-:	| :-: | :-: |
-| ![Template](../../images/kb-icon--blueprints.svg) [Supporting virtual appliances](../ecosystem-program-resources-templates.md) | ![Blueprints](../../images/kb-icon--paper.svg) [Applying your software to customer assets](../ecosystem-program-resources-blueprints.md)| ![API](../../images/kb-icon--api.svg) [Programatic access to cloud services](../ecosystem-program-resources-api.md) | ![Add-Ons](../../images/kb-icon--partners.svg) [Web service integration](../ecosystem-program-resources-addons.md) (Now in beta release) |
+|Templates|Blueprints|APIs|Add-Ons|
+|------|--------|---------|--------|
+| <a href="ecosystem-program-resources-templates.md"  alt="Templates" ><img src="../../images/kb-icon--blueprints.svg" align="Center" height =25 /> </a>|<a href="ecosystem-program-resources-blueprints.md"><img src="../../images/kb-icon--paper.svg" height=25 /></a> |<a href="ecosystem-program-resources-api.md"><img src="../../images/kb-icon--api.svg" height=25 /></a> | <a href="ecosystem-program-resources-addons.md"><img src="../../images/kb-icon--partners.svg" height=25 /></a> |
+|[Supporting virtual appliances](ecosystem-program-resources-templates.md) |[Applying your software to customer assets](ecosystem-program-resources-blueprints.md)|[Programmatic access to cloud services](ecosystem-program-resources-api.md) |[Web service integration](ecosystem-program-resources-addons.md)  |
