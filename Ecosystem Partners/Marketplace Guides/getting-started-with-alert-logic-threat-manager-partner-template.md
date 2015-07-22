@@ -46,9 +46,9 @@ Alert Logic has provided a Virtual Appliance - called a Partner Template - that 
 ### Postrequisite
 - If you want to access your Alert Logic Threat Manager over the internet, please perform the following tasks once your Alert Logic Threat Manager has been deployed to your account:
 
-1. [Add a Public IP](../../../network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control
+1. [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control
 
-2. [Allow incoming traffic](../../../network/how-to-add-public-ip-to-virtual-machine.md) for ports 80 and 443 to access the Alert Logic Web Console by clicking on the Servers Public IP through Control Portal
+2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for ports 80 and 443 to access the Alert Logic Web Console by clicking on the Servers Public IP through Control Portal
 
 ### Detailed Steps to Deploy Alert Logic Threat Manager Partner Template
 Follow these step by step instructions to deploy a Alert Logic Threat Manager in to your CenturyLink Cloud account:
