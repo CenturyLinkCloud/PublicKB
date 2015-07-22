@@ -1,5 +1,5 @@
 {{{
-  "title": "I just submitted a feature request.  Now what?",
+  "title": "I just submitted a feature request. Now what?",
   "date": "11-25-2014",
   "author": "Jared Ruckle",
   "attachments": [],
@@ -9,7 +9,7 @@
 ## Introduction
 We encourage submissions on feature requests from customers either through our [email alias](mailto:features@ctl.io) or via our [interactive portal](http://centurylinkcloud.uservoice.com/).
 
-More details on this process is available [here](../Support/how-do-i-submit-a-feature-request.md").
+More details on this process is available [here](../Support/how-do-i-submit-a-feature-request.md).
 
 ###So what happens once ideas are submitted?
 

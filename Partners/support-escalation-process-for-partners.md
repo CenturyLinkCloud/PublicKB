@@ -148,7 +148,7 @@ Tickets are worked according to priority in the order in which they are received
 
 Our team of network engineers has deep operational expertise to quickly and efficiently perform common platform activities. Just give us the details on your request – and within one business day, we'll reply with an estimate, along with a projected completion date for the task. Service task estimation and duties are performed during business hours, Monday to Friday, 9am-5pm Pacific Time.
 
-[Learn More About Service Tasks](../../Service Tasks/#1)
+[Learn More About Service Tasks](../Service Tasks)
 
 ###Support Team/Roles at CenturyLink Cloud
 
