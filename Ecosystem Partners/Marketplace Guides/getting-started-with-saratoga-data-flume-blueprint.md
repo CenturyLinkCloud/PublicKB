@@ -93,7 +93,7 @@ After executing the steps in this Getting Started document, the users will have 
 Access your Saratoga Data Flume server by connecting to the server via ssh to the public IP using root and the password created when deploying the blueprint.
 
 * The flume data transfer program is invoked using the command line.
-* For instruction on using Flume see the User Manual present on the newly created server. It is also available at [ftp://public.saratogadata.com/pub/sw/flume_2.3/Flume_2.3_User_Manual.pdf](ftp://public.saratogadata.com/pub/sw/flume_2.3/Flume_2.3_User_Manual.pdf) or [http://ca.saratogadata.com:888/download/flume/2.3/Flume_2.3_User_Manual.pdf](http://ca.saratogadata.com:888/download/flume/2.3/Flume_2.3_User_Manual.pdf)
+* For instruction on using Flume see the User Manual present on the newly created server. It is also available at [ftp://public.saratogadata.com/pub/sw/flume_2.3/Flume_2.3_User_Manual.pdf](ftp://public.saratogadata.com/pub/sw/flume_2.3/Flume_2.3_User_Manual.pdf)
 
 You can also access a simple 'man' page with:
 man flume
@@ -116,4 +116,4 @@ Existing CenturyLink Enterprise Customers can contact their Account Representati
 
 #### Who should I contact for support?
 * For issues related to deploying the Blueprint, licensing, Accessing or using the Saratoga Data application, please visit the [Saratoga Data Support Website](http://www.SaratogaDataSystems.com/support)
-* For issues related to cloud infrastructure (VM’s, network, etc), or is you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new) 
+* For issues related to cloud infrastructure (VM’s, network, etc), or is you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new)
