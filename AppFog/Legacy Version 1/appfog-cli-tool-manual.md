@@ -11,9 +11,9 @@
 <ul>
 <li><a href="#installation">Installation</a>
 <ul>
-<li><a href="/knowledge-base/appfog/legacy-version-1/installing-the-af-cli-tool-on-linux/">Linux</a></li>
-<li><a href="/knowledge-base/appfog/legacy-version-1/installing-the-af-cli-tool-on-mac-os-x/">Mac OS X</a></li>
-<li><a href="/knowledge-base/appfog/legacy-version-1/installing-the-af-cli-tool-on-windows/">Windows</a></li>
+<li><a href="installing-the-af-cli-tool-on-linux.md">Linux</a></li>
+<li><a href="installing-the-af-cli-tool-on-mac-os-x.md">Mac OS X</a></li>
+<li><a href="installing-the-af-cli-tool-on-windows.md">Windows</a></li>
 </ul>
 </li>
 <li><a href="#usage">Usage</a></li>

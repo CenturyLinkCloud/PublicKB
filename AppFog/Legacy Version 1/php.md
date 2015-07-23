@@ -42,7 +42,7 @@
 <p>You can connect your PHP app to AppFog services by using the <code>VCAP_SERVICES</code> environment variable, which becomes available to your app when you bind a service to it. You can access the variable in PHP like this:</p>
 <pre>getenv('VCAP_SERVICES')
 </pre>
-<p>For more information on this, check out our <a href="/services/overview">Services Overview</a> page.</p>
+
 <h2 id="custom">Custom PHP App</h2>
 <h3>Create the App</h3>
 <p>Create a directory for the app and change into it:</p>

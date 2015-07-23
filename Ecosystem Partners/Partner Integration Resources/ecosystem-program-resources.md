@@ -9,7 +9,7 @@
 
 ### Overview
 
-CenturyLink [Ecosystem Program Partner Members](../centurylink-cloud-ecosystem-program-guide.md) gain access to a bevy of resources that make integrations easy and minimize time to successful customer adoption.  Leverage the assets below to make use of the investments CenturyLink has already made on your behalf so you can minimize your engineering and marketing learning curve.
+CenturyLink [Ecosystem Program Partner Members](centurylink-cloud-ecosystem-program-guide.md) gain access to a bevy of resources that make integrations easy and minimize time to successful customer adoption.  Leverage the assets below to make use of the investments CenturyLink has already made on your behalf so you can minimize your engineering and marketing learning curve.
 
 ### Technical Integration
 

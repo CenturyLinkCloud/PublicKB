@@ -15,7 +15,7 @@
 </ul>
 <p>AppFog currently only offers one app server for Rails apps: Thin. If you're using Bundler, and nothing in your app's bundle requires Thin, VCAP cannot safely start your app using it. For Rails in such cases, it will fall back to running your app using '<code>rails server</code>', which uses WEBrick. For best performance and results, use Thin.</p>
 <h3 id="rails30">Rails 3.0</h3>
-<p>Ruby on Rails app deployments on AppFog automatically recognize MySQL. For other services, you'll need to access the <code>VCAP_SERVICES</code> environment variable. More on that in our <a href="/services">Services doc</a>.</p>
+<p>Ruby on Rails app deployments on AppFog automatically recognize MySQL. For other services, you'll need to access the <code>VCAP_SERVICES</code> environment variable. </p>
 <p>Make sure to use the correct version of the MySQL2 gem in your Gemfile:</p>
 <pre># If you use a different database in development, hide it from AppFog
 group :development do
@@ -70,7 +70,7 @@ $ bundle install
 <h3>Services</h3>
 <p>AppFog automatically creates and binds a new MySQL service with the Ruby on Rails jumpstart, and the app is <a href="#autoreconfig">automatically reconfigured</a> to connect to the service. For more information on services and how to connect to them manually, check out our docs on <a href="/services/overview">Services</a>.</p>
 <h3 id="rails-console">Rails Console</h3>
-<p>To use the Rails console with your database service, <a href="/services/tunneling">tunnel into the service</a>, and choose 'none' when it asks you which client to start:</p>
+<p>To use the Rails console with your database service, tunnel into the service, and choose 'none' when it asks you which client to start:</p>
 <pre>$ af tunnel ror-example-mysql
 Binding Service [ror-example-mysql]: OK
 Stopping Application 'caldecott-aws': OK

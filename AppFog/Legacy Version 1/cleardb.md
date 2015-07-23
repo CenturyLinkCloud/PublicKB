@@ -3,7 +3,7 @@
   "date": "1-26-2015",
   "author": "Chris Sterling",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 <h4>Intro</h4>
@@ -27,5 +27,5 @@ mysql_connect(
 <p>To access your ClearDB dashboard, simply click the "Manage" button under ClearDB from the "Add-ons" tab on your app console.</p>
 <h4>Additional Resources</h4>
 <p><a href="http://www.cleardb.com/developers">ClearDB Documentation</a></p>
-<p><a href="https://docs.appfog.com/services/mysql">MySQL AppFog Documentation</a></p>
+<p>[MySQL AppFog Documentation](mysql.md)</p>
 <p><a href="http://dev.mysql.com/doc/">MySQL Documentation</a></p>
