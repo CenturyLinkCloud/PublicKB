@@ -130,7 +130,7 @@
 <ul>
   <li>Members are responsible for providing 24x7 (email &amp; telephone) customer support for their product.</li>
   <li>
-    <p>By default, all Members will receive support from CenturyLink at the 'Developer' support tier. Please see <a href="../../support/ticket-prioritization-matrix/">this matrix for support details</a>. Ecosystem Members
+    <p>By default, all Members will receive support from CenturyLink at the 'Developer' support tier. Please see <a href="../../Support/ticket-prioritization-matrixmd">this matrix for support details</a>. Ecosystem Members
       may upgrade their level of support at any time. Professional-level of support can be requested via a NOC ticket and Enterprise-level support can be upgraded by requesting a quote for a Dedicated Service Engineer.</p>
   </li>
 </ul>

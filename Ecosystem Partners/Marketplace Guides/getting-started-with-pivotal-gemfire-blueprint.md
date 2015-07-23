@@ -50,7 +50,7 @@ The GemFire Blueprint is designed to be successfully deployed on an existing ser
 
   Identify the server targeted for GemFire installation.  Pivotal requires the server be CentOS or RHEL 5, 6, or 7.
 
-  See the [Creating a new enterprise cloud server](../../../servers/creating-a-new-enterprise-cloud-server/) KB for more information on completing this step.
+  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. **Locate the Blueprint in the Blueprint Library**
 

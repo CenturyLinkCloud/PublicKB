@@ -38,17 +38,17 @@ After reading this article, the user should feel comfortable getting started ins
 
 Follow these step by step instructions to install OSSEC.
 
-#### OSSEC Manager Installation on Linu x
+#### OSSEC Manager Installation on Linux
 
-CenturyLink has developed a script package that installs and configures an OSSEC Manager on an existing Linux server (we recommend CentOS or RHEL). This can be installed [Using Group Tasks to Install Software and Run Scripts on Groups](../../../servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/).
+CenturyLink has developed a script package that installs and configures an OSSEC Manager on an existing Linux server (we recommend CentOS or RHEL). This can be installed [Using Group Tasks to Install Software and Run Scripts on Groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md).
 
 <table>
   <tbody>
     <tr>
       <td>
-        <p>1.&nbsp;Navigate to a group of servers, hover over the "actions" menu and choose the “execute package” option as described in the&nbsp;<a href="https://t3n.zendesk.com/entries/21807618-Using-Group-Tasks-to-Install-Software-and-Run-Scripts-on-Groups">Using Group Tasks to Install Software and Run Scripts on Groups</a>&nbsp;KB</p>
+        <p>1.&nbsp;Navigate to a group of servers, hover over the "actions" menu and choose the “execute package” option as described in the [Using Group Tasks to Install Software and Run Scripts on Groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md)KB</p>
       </td>
-      <td>&nbsp;<a href="https://t3n.zendesk.com/entries/21807618-Using-Group-Tasks-to-Install-Software-and-Run-Scripts-on-Groups">Using Group Tasks to Install Software and Run Scripts on Groups</a>
+      <td>[Using Group Tasks to Install Software and Run Scripts on Groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md)
       </td>
     </tr>
     <tr>
