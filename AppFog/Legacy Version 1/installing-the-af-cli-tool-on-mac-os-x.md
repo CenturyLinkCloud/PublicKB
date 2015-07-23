@@ -26,14 +26,14 @@
 <p>Install Xcode 4.3 and the Xcode command line tools (use the <em>downloads</em> preference pane to download the command line tools).</p>
 </li>
 <li>
-<p>Install <a href="https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Installation.md#installation" target="_blank">Homebrew</a>.</p>
+<p>Install <a href="https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Installation.md#installation">Homebrew</a>.</p>
 </li>
 <li>
 <p>Install <em>libksba</em> with Homebrew.</p>
 <pre>$ brew install libksba</pre>
 </li>
 <li>
-<p>Install <a href="https://rvm.io/rvm/install/" target="_blank">RVM</a>.</p>
+<p>Install <a href="https://rvm.io/rvm/install/">RVM</a>.</p>
 </li>
 <li>
 <p>Install Ruby.</p>

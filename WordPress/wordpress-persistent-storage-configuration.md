@@ -18,7 +18,7 @@ Once object storage has been configured, you must edit your base WordPress *wp-c
 
 ## Persistent Storage Configuration
 
-1. [Clone your WordPress Git Repo](wordpress-clone-push-gitlab.md)
+1. Clone your WordPress Git Repo
 
 2. Browse to the locally cloned git repository associated with the WordPress site to be updated and open wp-config.php in a text editor.
 
@@ -33,13 +33,13 @@ Once object storage has been configured, you must edit your base WordPress *wp-c
   * customer_bucket
 
   **NOTE: These are variables you will have obtained when configuring your [CenturyLink Cloud Object Storage.](../Object Storage/using-object-storage-from-the-control-portal.md)**
-  
+
   ![](../images/wp-persistent-storage/wp-persistent-storage_22.png)
 
 4. Replace the variables and save the file.
 
   *The following example shows the variables replaced:*
-  
+
   ![](../images/wp-persistent-storage/wp-persistent-storage_23.png)
 
 5. Inside your repo, at the command line, running `git status` will now show you uncommited changes.
@@ -67,7 +67,7 @@ Once object storage has been configured, you must edit your base WordPress *wp-c
 10. The CLI will then output file creation.
 
   ![](../images/wp-persistent-storage/wp-persistent-storage_29.png)
-  
+
 11. Run `git push` to push changes back to your Git Repository and force a restart of your WordPress site.
 
   ![](../images/wp-persistent-storage/wp-persistent-storage_30.png)

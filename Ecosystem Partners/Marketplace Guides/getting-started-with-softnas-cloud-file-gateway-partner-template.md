@@ -170,7 +170,7 @@ Thank you very much, your_name_here
 
 #### Where do I obtain my SoftNAS License or entitlements?
 Existing CenturyLink Enterprise Customers can contact their Account Representative for help obtaining a SoftNAS license, or contact SoftNAS directly:
-- Contact SoftNAS Sales via Email: [sales@softnas.com](sales@softnas.com)
+- Contact SoftNAS Sales via Email: [sales@softnas.com](mailto:sales@softnas.com)
 - Contact SoftNAS Sales via Phone: 1-888-801-7524, Option 1
 
 #### Who should I contact for support?

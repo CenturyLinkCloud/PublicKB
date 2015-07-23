@@ -8,8 +8,8 @@
 
 <h4>The symptoms are this:</h4>
 <ul>
-<li>You can log into the <a href="HTTPS://console.appfog.com/">web console</a>.</li>
-<li>Your apps show on the <a href="HTTPS://console.appfog.com/#apps">APPS page</a>.</li>
+<li>You can log into the <a href="https://console.appfog.com/">web console</a>.</li>
+<li>Your apps show on the <a href="https://console.appfog.com/#apps">APPS page</a>.</li>
 <li>When you try to open the control panel for the any app, it presents the Error 504.</li>
 </ul>
 <hr />

@@ -34,7 +34,7 @@
 +---------+-------------+---------+
 </pre>
 <p>AppFog supports PHP with the <code>Apache Web Server 2.2.22</code> and <code>mod_php</code>. You can take a closer look at the PHP and Apache configurations for your runtime here:</p>
-<pre> <a href="http://php_info.aws.af.cm/" target="_blank">PHP 5.3</a>, <a href="http://php_info54.aws.af.cm/" target="_blank">PHP 5.4</a>, <a href="http://php_info55.aws.af.cm/" target="_blank">PHP 5.5</a>, <a href="http://php_info56.aws.af.cm/" target="_blank">PHP 5.6</a></pre>
+<pre> <a href="http://php_info.aws.af.cm/">PHP 5.3</a>, <a href="http://php_info54.aws.af.cm/">PHP 5.4</a>, <a href="http://php_info55.aws.af.cm/">PHP 5.5</a>, <a href="http://php_info56.aws.af.cm/">PHP 5.6</a></pre>
 <h2>Persistent Data Storage</h2>
 <p>AppFog does not yet have a persistent data storage system. This means that any files created or updated while the application is running are volatile and will be lost if the application is restarted or crashes. The only files that are persisted between application (re)starts are those that are uploaded with the <code>af push</code> or <code>af update</code> commands. The best practice for persisting files created while an application is running is to store them in a native AppFog database or external storage system like Amazon's S3 or ClearDB. You can find a tutorial on how to do that <a href="http://blog.appfog.com/how-to-use-amazon-s3-for-persistent-file-storage-on-appfog/">here</a>.  </p>
 <p>The <a href="http://12factor.net">12factor.net</a> website provides a helpful guide on how to build fault-tolerant, redundant cloud-based applications.</p>
@@ -42,7 +42,7 @@
 <p>You can connect your PHP app to AppFog services by using the <code>VCAP_SERVICES</code> environment variable, which becomes available to your app when you bind a service to it. You can access the variable in PHP like this:</p>
 <pre>getenv('VCAP_SERVICES')
 </pre>
-<p>For more information on this, check out our <a href="/services/overview">Services Overview</a> page.</p>
+
 <h2 id="custom">Custom PHP App</h2>
 <h3>Create the App</h3>
 <p>Create a directory for the app and change into it:</p>
@@ -82,8 +82,8 @@ Hello world!%
 </pre>
 <p>For more information on this topic, check out the following references:</p>
 <ul>
-<li><a href="http://php.net/manual/en/configuration.changes.php" target="_blank">How to change configuration settings</a></li>
-<li><a href="http://davidwalsh.name/php-values-htaccess" target="_blank">Set php.ini Values Using .htaccess</a></li>
+<li><a href="http://php.net/manual/en/configuration.changes.php">How to change configuration settings</a></li>
+<li><a href="http://davidwalsh.name/php-values-htaccess">Set php.ini Values Using .htaccess</a></li>
 </ul>
 <h3>Setting Values Using <code>ini_set()</code></h3>
 <p>Please consult the <a href="http://www.php.net/manual/en/function.ini-set.php">PHP manual on <code>ini_set()</code></a>.</p>

@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p><a href="http://www.statsmix.com/" target="_blank">StatsMix</a> makes it easy to track, chart, and share application and business metrics.</p>
+<p><a href="http://www.statsmix.com/">StatsMix</a> makes it easy to track, chart, and share application and business metrics.</p>
 <p>Use StatsMix to:</p>
 <ul>
 <li>Log every time a particular event happens (such as a user creating a new blog post)</li>
@@ -14,8 +14,8 @@
 <li>Share the charts with users inside and outside your organization</li>
 <li>Create and share custom dashboards that aggregate multiple metrics together
 <ul>
-<li><a href="http://www.statsmix.com/d/0e788d59208900e7e3bc" target="_blank">Example dashboard</a></li>
-<li><a href="http://www.statsmix.com/example-embedded" target="_blank">Example embedded dashboard</a></li>
+<li><a href="http://www.statsmix.com/d/0e788d59208900e7e3bc">Example dashboard</a></li>
+<li><a href="http://www.statsmix.com/example-embedded">Example embedded dashboard</a></li>
 </ul>
 </li>
 </ul>
@@ -26,8 +26,8 @@
 <li><a href="#rails">Rails</a></li>
 <li><a href="#php">PHP</a></li>
 </ul>
-<p>For other languages and frameworks, check out <a href="http://www.statsmix.com/developers/code_libraries" target="_blank">this page</a>.</p>
-<p>For the StatsMix API, go <a href="http://www.statsmix.com/developers" target="_blank">here</a>.</p>
+<p>For other languages and frameworks, check out <a href="http://www.statsmix.com/developers/code_libraries">this page</a>.</p>
+<p>For the StatsMix API, go <a href="http://www.statsmix.com/developers">here</a>.</p>
 <h1><a id="rails"></a>Rails</h1>
 <p>First, install the StatsMix gem:</p>
 <p>{: .prettyprint } $ gem install statsmix</p>
@@ -68,7 +68,7 @@
 <p>You can find the profile ID in StatsMix by creating a metric and looking at the API Details under Code Snippets in the Data &amp; API section. (It will also be in the URL as /<code>profiles/123/metrics/456</code> - in this case the profile id is 123.)</p>
 <h3>Limitations</h3>
 <p>If you hit a plan level limit (i.e. you go over the number of API requests available to your account), the API will return a 403 Forbidden error and an explanation.</p>
-<p>The number of API requests and profiles you can create is based on the type of account you have. For example, Standard plans are limited to 300,000 API requests per month. You can see the current options on StatsMix's <a href="http://www.statsmix.com/home/plans" target="_blank">pricing page</a>.</p>
+<p>The number of API requests and profiles you can create is based on the type of account you have. For example, Standard plans are limited to 300,000 API requests per month. You can see the current options on StatsMix's <a href="http://www.statsmix.com/home/plans">pricing page</a>.</p>
 <h3>Local Setup</h3>
 <p>When running StatsMix in development, you can tell StatsMix to either ignore calls to it altogether or funnel them all into a single test metric.</p>
 <p>For ignoring calls altogether, just put the following in a configuration file such as environment.rb or an initializer:</p>
@@ -105,8 +105,8 @@
 <p>Error: {$metric-&gt;error}</p>
 <p>"; } //view the xml response: echo $metric-&gt;get_response();</p>
 <h3>More Documentation</h3>
-<p>The StatsMix PHP Library supports all the methods documented <a href="http://www.statsmix.com/developers/documentation" target="_blank">here</a>.</p>
+<p>The StatsMix PHP Library supports all the methods documented <a href="http://www.statsmix.com/developers/documentation">here</a>.</p>
 <h3>Contributing to statsmix</h3>
-<p>Check out <a href="https://github.com/derekscruggs/PHP-library-for-StatsMix-API" target="_blank">this GitHub repo</a> to contribute.</p>
+<p>Check out <a href="https://github.com/derekscruggs/PHP-library-for-StatsMix-API">this GitHub repo</a> to contribute.</p>
 <h3>Copyright</h3>
-<p>Copyright © 2011 StatsMix, Inc. See <a href="https://www.statsmix.com/terms" target="_blank">Terms of Service</a> for further details.</p>
+<p>Copyright © 2011 StatsMix, Inc. See <a href="https://www.statsmix.com/terms">Terms of Service</a> for further details.</p>

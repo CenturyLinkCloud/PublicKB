@@ -27,4 +27,3 @@
 | php56   | PHP 5.6     | 5.6.1   |
 +---------+-------------+---------+
 </pre>
-<p><br /> Additional runtimes are planned, and your feedback helps us to prioritize our <a href="/hc/en-us/articles/203350887">feature roadmap</a>. Please visit <a href="http://feedback.appfog.com">http://feedback.appfog.com</a> to suggest or vote on platform enhancements and features.</p>

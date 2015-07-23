@@ -10,7 +10,7 @@
 <h2>Services</h2>
 <p>You can connect your PHP app to AppFog services by using the <code>VCAP_SERVICES</code> environment variable, which becomes available to your app when you bind a service to it. You can access the variable in PHP like this:</p>
 <pre>getenv('VCAP_SERVICES')</pre>
-<p>For more information on this, check out our <a href="/services/overview">Services Overview</a> page.</p>
+
 <h2 id="drupal">Drupal</h2>
 <p>The following is a step-by-step guide to deploying a Drupal app to AppFog.</p>
 <h3>Download Drupal</h3>
@@ -38,4 +38,4 @@ $databases['default']['default'] = array(
 <p>Point your browser to your app's install script, in this case drupal-example.aws.af.cm/install.php. That should take you through the rest of the install process.</p>
 <h2>Further Development</h2>
 <p>AppFog does not yet have a persistent data storage system, though we're working on it. This means that the file system is volatile and any changes made to the file system by the app will be lost on an app start, stop, or deploy.</p>
-<p>This means you should do any development that makes changes to the file system in a local development environment and then push those changes to AppFog using an <code>af update</code>. You can sync any database changes by <a href="/services/tunneling">tunneling</a>.</p>
+<p>This means you should do any development that makes changes to the file system in a local development environment and then push those changes to AppFog using an <code>af update</code>. You can sync any database changes by tunneling.</p>

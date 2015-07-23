@@ -68,7 +68,7 @@ A: Currently the following components are availabe and are pre-configured based 
 * Solr
 * Spark
 
-For a description of each component visit the [Cloudera Add-On Services Available on CenturyLink Cloud](Cloudera-Add-On-Services-Available-on-CenturyLink-Cloud.md) article.
+For a description of each component visit the [Cloudera Add-On Services Available on CenturyLink Cloud](cloudera-add-on-services-available-on-centurylink-cloud.md) article.
 
 **Q: How do I access Cloudera Manager, Hue or Navigator?**
 

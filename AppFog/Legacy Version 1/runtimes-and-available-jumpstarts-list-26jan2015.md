@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>Below is a list of our runtimes and jumpstarts. You can look up the current versions by using the <code>af runtimes</code> command with the <a href="/hc/en-us/articles/202264463" target="_blank">AF CLI tool</a> and by looking at our <a href="https://console.appfog.com/apps/new" target="_blank">jumpstarts</a>.</p>
+<p>Below is a list of our runtimes and jumpstarts. You can look up the current versions by using the <code>af runtimes</code> command with the <a href="appfog-cli-tool-manual.md">AF CLI tool</a> and by looking at our <a href="https://console.appfog.com/apps/new">jumpstarts</a>.</p>
 <center>
 <h4>RUNTIMES</h4>
 <table style="margin-left: auto; margin-right: auto;">

@@ -6,18 +6,18 @@
   "contentIsHTML": true
 }}}
 
-<p>S3CMD is a Linux command line utility that can be used to interact with and manage your <a href="/object-storage">CenturyLink Cloud Object Storage</a> buckets and data, Access Control Lists (ACLs), and associated metadata. S3CMD is an advanced tool to be used for accessing object storage, so care should be taken.</p>
+<p>S3CMD is a Linux command line utility that can be used to interact with and manage your <a href="../Object Storage">CenturyLink Cloud Object Storage</a> buckets and data, Access Control Lists (ACLs), and associated metadata. S3CMD is an advanced tool to be used for accessing object storage, so care should be taken.</p>
 
 <ul>
-	<li class="scroll-to-link"><a href="#install">Installing S3CMD</a>
-	</li>
-	<li class="scroll-to-link"><a href="#configure">Configuring S3CMD for CenturyLink Object Storage</a>
-	</li>
-	<li class="scroll-to-link">
-		<a href="#usage">Using S3CMD</a>
-	</li>
-	<li class="scroll-to-link">
-	<a href="#version">Special note about S3CMD versions</a>
+    <li class="scroll-to-link"><a href="#install">Installing S3CMD</a>
+    </li>
+    <li class="scroll-to-link"><a href="#configure">Configuring S3CMD for CenturyLink Object Storage</a>
+    </li>
+    <li class="scroll-to-link">
+        <a href="#usage">Using S3CMD</a>
+    </li>
+    <li class="scroll-to-link">
+    <a href="#version">Special note about S3CMD versions</a>
 </ul>
 
 <h4><a id="install">Installing S3CMD</a></h4>
@@ -25,7 +25,7 @@
 
 <p>The simplest way to add it is to use the package manager for your version of Linux, probably either <strong>yum</strong> or <strong>apt</strong>. While S3CMD is included in many package managers, it is best to manually configure
   the official repository to ensure that you are using the latest version.
- 
+
 <p><strong>To add the repository to a CentOS or RHEL machine</strong> (note, both instructions assume you are running as root - you will need to add “sudo” where appropriate if not logged in as root):</p>
 <ol>
   <li>Install wget if not already installed by entering the command: <strong>yum install wget&nbsp;–y</strong>
@@ -187,9 +187,9 @@ verbosity = WARNING
 </p>
 <p>Download/Retrieve a file <strong>s3cmd&nbsp;get s3://my-new-bucket-name/testfile.xml testfile_modified.xml&nbsp;</strong>
 </p>
-<h4><a id="version">Special note about S3CMD versions</a></h4>	
+<h4><a id="version">Special note about S3CMD versions</a></h4>
 <p>
-S3CMD is an active open-source project, and as such is frequently updated. Depending on the version of S3CMD you installed, the default authentication strategy may have changed. Using the incorrect authentication strategy will result in <strong>403 Not Authorized</strong> errors for some requests to object storage. You can tell which version of S3CMD you have by running the command <strong>s3cmd --version</strong> and inspecting the output. If the version is before <strong>1.5.0</strong> then s3cmd will operate correctly. 
+S3CMD is an active open-source project, and as such is frequently updated. Depending on the version of S3CMD you installed, the default authentication strategy may have changed. Using the incorrect authentication strategy will result in <strong>403 Not Authorized</strong> errors for some requests to object storage. You can tell which version of S3CMD you have by running the command <strong>s3cmd --version</strong> and inspecting the output. If the version is before <strong>1.5.0</strong> then s3cmd will operate correctly.
 </p>
 <p>
 If your version is <strong>1.5.0</strong> or newer, then there are two ways to make this work correctly again. The first is to provide the <strong>--signature-v2</strong> argument to S3CMD, for example like <strong>s3cmd --signature-v2 ls</strong>. The argument tells S3CMD to revert to the original authentication strategy. The more permanent change is to add <strong>signature_v2 = True</strong> to the bottom of your .s3cfg file. That will force S3CMD to use the original authentication strategy every time the command is run.

@@ -6,8 +6,8 @@
   "contentIsHTML": true
 }}}
 
-<p><a href="http://www.memcachier.com/" target="_blank">MemCachier</a> is an implementation of the <a href="http://memcached.org/" target="_blank">Memcache</a> in-memory key/value store used for caching data. It is a key technology in modern web apps for scaling and reducing server loads. The MemCachier add-on manages and scales clusters of memcache servers so you can focus on your app. Tell us how much memory you need and get started for free instantly. Add capacity later as you need it.</p>
-<p>The information below will quickly get you up and running with the MemCachier add-on for AppFog. For information on the benefits of MemCachier and how it works, please refer to the more extensive <a href="http://www.memcachier.com/documentation/memcache-user-guide/" target="_blank">User Guide</a>.</p>
+<p><a href="http://www.memcachier.com/">MemCachier</a> is an implementation of the <a href="http://memcached.org/">Memcache</a> in-memory key/value store used for caching data. It is a key technology in modern web apps for scaling and reducing server loads. The MemCachier add-on manages and scales clusters of memcache servers so you can focus on your app. Tell us how much memory you need and get started for free instantly. Add capacity later as you need it.</p>
+<p>The information below will quickly get you up and running with the MemCachier add-on for AppFog. For information on the benefits of MemCachier and how it works, please refer to the more extensive <a href="http://www.memcachier.com/documentation/memcache-user-guide/">User Guide</a>.</p>
 <h4>Install MemCachier</h4>
 <p>In the “Add-ons” tab in your app console click “Install” for the MemCachier add-on. That’s it!</p>
 <p>Next, set up your app to start using the cache. We have documentation for the following languages and frameworks:</p>
@@ -23,7 +23,7 @@
 </ul>
 <p>Your credentials may take up to three (3) minutes to be synced to our servers. You may see authentication errors if you start using the cache immediately.</p>
 <h3 id="ruby">Ruby</h3>
-<p>Start by adding the <a href="https://github.com/memcachier/memcachier-gem" target="_blank">memcachier</a> and <a href="http://github.com/mperham/dalli" target="_blank">dalli</a> gems to your <code>Gemfile</code>.</p>
+<p>Start by adding the <a href="https://github.com/memcachier/memcachier-gem">memcachier</a> and <a href="http://github.com/mperham/dalli">dalli</a> gems to your <code>Gemfile</code>.</p>
 <pre>gem 'memcachier'
 gem 'dalli'</pre>
 <p>Then bundle install:</p>
@@ -39,7 +39,7 @@ puts cache.get("foo")</pre>
                     {:username =&gt; ENV["MEMCACHIER_USERNAME"],
                      :password =&gt; ENV["MEMCACHIER_PASSWORD"]})</pre>
 <h3 id="rails">Rails</h3>
-<p>Start by adding the <a href="https://github.com/memcachier/memcachier-gem" target="_blank">memcachier</a> and <a href="http://github.com/mperham/dalli" target="_blank">dalli</a> gems to your <code>Gemfile</code>.</p>
+<p>Start by adding the <a href="https://github.com/memcachier/memcachier-gem">memcachier</a> and <a href="http://github.com/mperham/dalli">dalli</a> gems to your <code>Gemfile</code>.</p>
 <pre>gem 'memcachier'
 gem 'dalli'</pre>
 <p>Then bundle install:</p>
@@ -86,7 +86,7 @@ CACHES = {
 cache.set("foo", "bar")
 print cache.get("foo")</pre>
 <h3 id="php">PHP</h3>
-<p>Start by downloading the <a href="https://github.com/ronnywang/PHPMemcacheSASL" target="_blank">PHPMemcacheSASL</a> library. From here you can start writing cache code in your PHP app:</p>
+<p>Start by downloading the <a href="https://github.com/ronnywang/PHPMemcacheSASL">PHPMemcacheSASL</a> library. From here you can start writing cache code in your PHP app:</p>
 <pre>include('MemcacheSASL.php');
 $server_pieces = explode(':', getenv("MEMCACHIER_SERVERS"))
 $m = new MemcacheSASL;
@@ -95,10 +95,10 @@ $m-&gt;setSaslAuthData(getenv("MEMCACHIER_USERNAME"), getenv("MEMCACHIER_PASSWOR
 
 $m-&gt;add("foo", "bar");
 echo $m-&gt;get("foo");</pre>
-<p>Or, check out <a href="https://github.com/ceslami/PHPMemcacheSASL" target="_blank">this fork of PHPMemcacheSASL</a> modified specifically for use with AppFog, by AppFog user <a href="https://github.com/ceslami" target="_blank">ceslami</a>.</p>
-<p>The more common PHP memcache clients, <a href="http://www.php.net/manual/en/book.memcache.php" target="_blank">Memcache</a> and <a href="http://www.php.net/manual/en/book.memcached.php" target="_blank">Memcached</a>, don’t support SASL authentication at this time and can’t be used with MemCachier.</p>
+<p>Or, check out <a href="https://github.com/ceslami/PHPMemcacheSASL">this fork of PHPMemcacheSASL</a> modified specifically for use with AppFog, by AppFog user <a href="https://github.com/ceslami">ceslami</a>.</p>
+<p>The more common PHP memcache clients, <a href="http://www.php.net/manual/en/book.memcache.php">Memcache</a> and <a href="http://www.php.net/manual/en/book.memcached.php">Memcached</a>, don’t support SASL authentication at this time and can’t be used with MemCachier.</p>
 <h3 id="java">Java</h3>
-<p>For Java we recommend using the <a href="https://code.google.com/p/spymemcached/" target="_blank">SpyMemcached</a> client. We also recommend using the <a href="https://maven.apache.org/" target="_blank">Apache Maven</a> build manager for working with Java app. If you aren’t using <code>maven</code> and are instead using <a href="https://ant.apache.org/" target="_blank">Apache Ant</a> or your own build system, then simply add the <code>spymemcached</code> jar file as a dependency of your app.</p>
+<p>For Java we recommend using the <a href="https://code.google.com/p/spymemcached/">SpyMemcached</a> client. We also recommend using the <a href="https://maven.apache.org/">Apache Maven</a> build manager for working with Java app. If you aren’t using <code>maven</code> and are instead using <a href="https://ant.apache.org/">Apache Ant</a> or your own build system, then simply add the <code>spymemcached</code> jar file as a dependency of your app.</p>
 <p>For <code>maven</code> however, start by configuring it to have the proper <code>spymemcached</code> repository:</p>
 <pre>&lt;repository&gt;
   &lt;id&gt;spy&lt;/id&gt;
@@ -143,9 +143,9 @@ public class Foo {
     }
   }
 }</pre>
-<p>You may wish to look the <code>spymemcached</code> <a href="http://dustin.github.com/java-memcached-client/apidocs/" target="_blank">JavaDocs</a> or some more <a href="https://code.google.com/p/spymemcached/wiki/Examples" target="_blank">example code</a> to help in using MemCachier effectively.</p>
+<p>You may wish to look the <code>spymemcached</code> <a href="http://dustin.github.com/java-memcached-client/apidocs/">JavaDocs</a> or some more <a href="https://code.google.com/p/spymemcached/wiki/Examples">example code</a> to help in using MemCachier effectively.</p>
 <h3 id="libsupport">Library Support</h3>
-<p>MemCachier will work with any memcached binding that supports <a href="https://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer" target="_blank">SASL authentication</a> and the <a href="https://code.google.com/p/memcached/wiki/MemcacheBinaryProtocol" target="_blank">binary protocol</a>. We have tested MemCachier with the following language bindings, although the chances are good that other SASL binary protocol packages will also work.</p>
+<p>MemCachier will work with any memcached binding that supports <a href="https://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer">SASL authentication</a> and the <a href="https://code.google.com/p/memcached/wiki/MemcacheBinaryProtocol">binary protocol</a>. We have tested MemCachier with the following language bindings, although the chances are good that other SASL binary protocol packages will also work.</p>
 <table class="table table-bordered table-striped">
 <thead>
 <tr>
@@ -183,12 +183,12 @@ public class Foo {
 <h4>Mac OS X (with Homebrew)</h4>
 <pre>$ brew install memcached</pre>
 <h4>Windows</h4>
-<p>Please refer to <a href="http://www.codeforest.net/how-to-install-memcached-on-windows-machine" target="_blank">these instructions</a>.</p>
-<p>For further information and resources (such as the memcached source code) please refer to the <a href="http://memcached.org/" target="_blank">Memcache.org homepage</a>.</p>
+<p>Please refer to <a href="http://www.codeforest.net/how-to-install-memcached-on-windows-machine">these instructions</a>.</p>
+<p>For further information and resources (such as the memcached source code) please refer to the <a href="http://memcached.org/">Memcache.org homepage</a>.</p>
 <p>To run memcached simply execute the following command:</p>
 <pre>$ memcached -v</pre>
 <h3 id="upgrade">Upgrading and Downgrading</h3>
 <p>Changing your plan, either by upgrading or downgrading, requires no code changes. Your cache won’t be lost, either. Upgrading and downgrading Just Works™.</p>
 <h3 id="support">Support</h3>
-<p>You can submit all Memcachier support and runtime issues to <a href="/hc/en-us" target="_blank">AppFog Support</a> and any non-support related issues or product feedback to <a href="https://www.memcachier.com/contact" target="_blank">Contact Memcachier</a>.</p>
-<p>Memcachier reports issues related to service at <a href="http://status.memcachier.com/" target="_blank">Memcachier Status</a>.</p>
+<p>You can submit all Memcachier support and runtime issues to <a href="http://support.appfog.com">AppFog Support</a> and any non-support related issues or product feedback to <a href="https://www.memcachier.com/contact">Contact Memcachier</a>.</p>
+<p>Memcachier reports issues related to service at <a href="http://status.memcachier.com/">Memcachier Status</a>.</p>

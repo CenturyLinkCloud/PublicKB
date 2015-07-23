@@ -36,7 +36,7 @@ Greenplum incorporates key performance capabilities, flexible data analytics, en
 
 ### Audience
 
-CenturyLink Cloud Users who have already [deployed a Pivotal Greenplum cluster](../../Ecosystem Partners/getting-started-with-pivotal-greenplum-blueprint.md) and need to add capacity.
+CenturyLink Cloud Users who have already [deployed a Pivotal Greenplum cluster](../../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-greenplum-blueprint.md) and need to add capacity.
 
 
 ### Expanding an Existing Cluster
@@ -77,7 +77,7 @@ Single button deploy of an additional node to an existing cluster.  These are ar
 
 5. **Set Optional Parameters**
 
-  Password/Confirm Password (This is the root password for the server. Keep this in a secure place). 
+  Password/Confirm Password (This is the root password for the server. Keep this in a secure place).
 
   Set DNS to “Manually Specify” and use “8.8.8.8” (or any other public DNS server of your choice).
 

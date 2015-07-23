@@ -7,7 +7,7 @@
 }}}
 
 <p><a href="http://grails.org/">Grails</a> is a framework for rapidly developing web apps that can be deployed to any Java servlet container, such as Tomcat. Based on the dynamic language <a href="http://groovy.codehaus.org/">Groovy</a> and the <a href="http://www.springframework.org/">Spring</a> framework, it brings the paradigm of Convention over Configuration to the Java platform with the expressiveness of a Java-like dynamic language.</p>
-<p><strong>Note</strong>: Users that want to deploy their own <strong>Grails 2.4</strong> app should take a look at <a href="/hc/en-us/articles/203640118" target="_blank">this article</a>.</p>
+<p><strong>Note</strong>: Users that want to deploy their own <strong>Grails 2.4</strong> app should take a look at <a href="grails-building-and-deployment.md">this article</a>.</p>
 <p>This guide assumes that you already have Java and <a href="http://grails.org/Installation">Grails</a> installed and know how to build a simple Grails app. That’s all you need to start working with AppFog.</p>
 <ul>
 <li><a href="#grails-services">Services</a></li>
@@ -80,4 +80,4 @@ Staging Application 'grails-example': OK
 Starting Application 'grails-example': OK
 </pre>
 <h3 id="further-reading">Further Reading</h3>
-<p>For more information, check out <a href="http://docs.cloudfoundry.org/buildpacks/java/gsg-grails.html" target="_blank">Cloud Foundry's documentation on Grails</a>.</p>
+<p>For more information, check out <a href="http://docs.cloudfoundry.org/buildpacks/java/gsg-grails.html">Cloud Foundry's documentation on Grails</a>.</p>

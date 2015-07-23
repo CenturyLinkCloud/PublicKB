@@ -39,7 +39,7 @@
     }
 ?&gt;
 </pre>
-<p>You can find more information on using a MongoDB from a PHP app <a href="http://php.net/manual/en/class.mongodb.php" target="_blank">here</a>.</p>
+<p>You can find more information on using a MongoDB from a PHP app <a href="http://php.net/manual/en/class.mongodb.php">here</a>.</p>
 <h3>Compose Admin Panel</h3>
 <p>In the "Add-ons" tab in your app console, click on the "Manage" button for the compose add-on. This will take you to your Compose account where you can make configuration changes and upgrade your Compose account.</p>
-<p>For more information, please visit the <a href="https://docs.compose.io/getting-started/compose.html" target="_blank">compose documentation</a>.</p>
+<p>For more information, please visit the <a href="https://docs.compose.io/getting-started/compose.html">compose documentation</a>.</p>

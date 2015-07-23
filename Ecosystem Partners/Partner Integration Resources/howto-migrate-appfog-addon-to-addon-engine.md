@@ -17,7 +17,7 @@ Provides an additional channel for Partner services through the CenturyLink Clou
 ### Audience
 
 - AppFog Add-on Partners
- 
+
 ### What's Included
 
 - Changes to Add-on service manifests
@@ -35,9 +35,7 @@ Provides an additional channel for Partner services through the CenturyLink Clou
 
 ### Introduction
 
-Integrating your Partner service with the CenturyLink Add-on Engine marketplace is similar to the existing AppFog Add-on Partner integration approach. The current AppFog Add-on Partner documentation is located here:
-
-https://support.appfog.com/hc/en-us/articles/203350577-Become-an-Add-on-Partner
+Integrating your Partner service with the CenturyLink Add-on Engine marketplace is similar to the [existing AppFog Add-on Partner integration approach](../../AppFog/Legacy Version 1/become-an-add-on-partner.md).
 
 There are changes to be made to the Partner manifest and provisioning API to integrate with Add-on Engine. The following sections will describe the details around these needed changes.
 
