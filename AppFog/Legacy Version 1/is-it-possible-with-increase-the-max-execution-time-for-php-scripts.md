@@ -14,8 +14,8 @@
 <p><a href="http://php.net/manual/en/function.ini-set.php">http://php.net/manual/en/function.ini-set.php</a></p>
 <p>The runtime configuration applied for php apps on AppFog is available here.</p>
 <ul>
-<li><a href="http://php_info.aws.af.cm" target="_blank">PHP 5.3</a></li>
-<li><a href="http://php_info54.aws.af.cm/" target="_blank">PHP 5.4</a></li>
-<li><a href="http://php_info55.aws.af.cm/" target="_blank">PHP 5.5</a></li>
-<li><a href="http://php_info56.aws.af.cm/" target="_blank">PHP 5.6</a></li>
+<li><a href="http://php_info.aws.af.cm">PHP 5.3</a></li>
+<li><a href="http://php_info54.aws.af.cm/">PHP 5.4</a></li>
+<li><a href="http://php_info55.aws.af.cm/">PHP 5.5</a></li>
+<li><a href="http://php_info56.aws.af.cm/">PHP 5.6</a></li>
 </ul>

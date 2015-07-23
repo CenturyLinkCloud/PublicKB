@@ -17,7 +17,7 @@
 <li>Temporary mailbox storage</li>
 <li>Premium support</li>
 </ul>
-<p>If you need more than that, you can upgrade through Mailgun. Check out their pricing <a href="http://mailgun.net/pricing" target="_blank">here</a>.</p>
+<p>If you need more than that, you can upgrade through Mailgun. Check out their pricing <a href="http://mailgun.net/pricing">here</a>.</p>
 <h3>Using MailGun</h3>
-<p>To use Mailgun with your app check out the <a href="http://documentation.mailgun.net/quickstart.html" target="_blank">Quick Start Guide</a>.</p>
-<p>For more extensive documentation, see the <a href="http://documentation.mailgun.net/user_manual.html" target="_blank">User Manual</a>.</p>
+<p>To use Mailgun with your app check out the <a href="http://documentation.mailgun.net/quickstart.html">Quick Start Guide</a>.</p>
+<p>For more extensive documentation, see the <a href="http://documentation.mailgun.net/user_manual.html">User Manual</a>.</p>

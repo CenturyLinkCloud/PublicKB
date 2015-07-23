@@ -16,7 +16,7 @@
 </ul>
 </ul>
 <h3><a name="ruby"></a>Install Ruby</h3>
-<p>Download and install <a href="http://rubyinstaller.org/downloads/" target="_blank">Ruby Installer for Windows</a>.The installer already includes RubyGems. We recommend using version 2.1 or older as some users have reported issues with Ruby 2.2 compiling.</p>
+<p>Download and install <a href="http://rubyinstaller.org/downloads/">Ruby Installer for Windows</a>.The installer already includes RubyGems. We recommend using version 2.1 or older as some users have reported issues with Ruby 2.2 compiling.</p>
 <ul>
 <ul>
 <ol>
@@ -35,7 +35,7 @@
 </ul>
 </ul>
 <h3><a name="devkit"></a>Install the Development Kit</h3>
-<p>You will also need to download and install the <a href="http://rubyinstaller.org/downloads/" target="_blank">Development Kit</a>, be sure to install the proper version based on your version of Ruby. The steps below and further details can be found on the <a href="https://github.com/oneclick/rubyinstaller/wiki/Development-Kit">Development Kit wiki page</a>.</p>
+<p>You will also need to download and install the <a href="http://rubyinstaller.org/downloads/">Development Kit</a>, be sure to install the proper version based on your version of Ruby. The steps below and further details can be found on the <a href="https://github.com/oneclick/rubyinstaller/wiki/Development-Kit">Development Kit wiki page</a>.</p>
 <ul>
 <ul>
 <ol>

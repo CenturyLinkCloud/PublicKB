@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p><a href="https://logentries.com/" target="_blank">Logentries</a> provides Log Management and System Intelligence as a Service. Logentries is a simple and powerful solution for log management. It provides an easy to use interface so that you can quickly understand what is happening in your log data and ultimately your applications. Setup one of the client libraries below in a matter of minutes and start sending logs to Logentries from your AppFog application.</p>
+<p><a href="https://logentries.com/">Logentries</a> provides Log Management and System Intelligence as a Service. Logentries is a simple and powerful solution for log management. It provides an easy to use interface so that you can quickly understand what is happening in your log data and ultimately your applications. Setup one of the client libraries below in a matter of minutes and start sending logs to Logentries from your AppFog application.</p>
 <h3>Install Logentries</h3>
 <p>In the "Add-ons" tab on your app console click "Install" for the Logentries add-on. Then add the appropriate library below and you're done!</p>
 <p>Once Logentries has been added, you will notice a new enironment variable: <code>LOGENTRIES_TOKEN</code> in the <code>Env variables</code> tab on your app console, containing a Token UUID that is used by the client library to locate your logfile on Logentries.</p>
@@ -45,7 +45,7 @@ end</pre>
 <p>Lastly, write some log events:</p>
 <pre>logger.info("Hello Logentries, I'm an info message.")</pre>
 <h3 id="logentries-php">Using Logentries from PHP</h3>
-<p>Get the <a href="https://github.com/logentries/le_php/archive/master.zip" target="_blank">PHP library</a> from their Github repository.</p>
+<p>Get the <a href="https://github.com/logentries/le_php/archive/master.zip">PHP library</a> from their Github repository.</p>
 <p>Unzip it into your applications root directory.</p>
 <p>Enter this line at the top of a PHP file from which you wish to log (adjust if you unzipped elsewhere):</p>
 <pre>require dirname(__FILE__) . '/le_php-master/logentries.php';</pre>
@@ -78,10 +78,10 @@ var log = logentries.logger({
     &lt;/dependency&gt;
 &lt;/dependencies&gt;</pre>
 <h2>Manual Install</h2>
-<p>Download the plugin .jar file <a href="http://search.maven.org/#search|gav|1|g:&quot;com.logentries&quot; AND a:&quot;logentries-appender&quot;" target="_blank">here</a> and place it in your <code>WEB-INF/lib</code> folder.</p>
-<p>Then, if you don't already have it, download log4j from <a href="https://logging.apache.org/log4j/1.2/download.html" target="_blank">here</a> and place it in your <code>WEB-INF/lib</code> folder.</p>
+<p>Download the plugin .jar file <a href="http://search.maven.org/#search|gav|1|g:&quot;com.logentries&quot; AND a:&quot;logentries-appender&quot;">here</a> and place it in your <code>WEB-INF/lib</code> folder.</p>
+<p>Then, if you don't already have it, download log4j from <a href="https://logging.apache.org/log4j/1.2/download.html">here</a> and place it in your <code>WEB-INF/lib</code> folder.</p>
 <h2>Configuration</h2>
-<p>The last file you need is the log4j config which you can download <a href="https://raw.githubusercontent.com/logentries/le_java/master/configFiles/log4j.xml.example" target="_blank">here</a>. Be sure to place this on your classpath. A simple way to do this is to put it in your src folder.</p>
+<p>The last file you need is the log4j config which you can download <a href="https://raw.githubusercontent.com/logentries/le_java/master/configFiles/log4j.xml.example">here</a>. Be sure to place this on your classpath. A simple way to do this is to put it in your src folder.</p>
 <p>Lastly, write some log events, below is a sample Java class configured to use log4j.</p>
 <pre>import org.apache.log4j.*;
 
@@ -110,5 +110,5 @@ log.warning("Im quite important")</pre>
 <p>All Logentries support issues should be submitted to <a href="mailto:support@logentries.com">Logentries Support</a> or via the Logentries in-app Support widget in the left sidebar.</p>
 <h3>Additional resources</h3>
 <ul>
-<li><a href="http://logentries.com/doc/appfog" target="_blank">Logentries AppFog Documentation</a></li>
+<li><a href="http://logentries.com/doc/appfog">Logentries AppFog Documentation</a></li>
 </ul>

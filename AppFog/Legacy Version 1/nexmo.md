@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p><a href="http://nexmo.com/" target="_blank">Nexmo</a> is a cloud-based SMS API that lets you send and receive high volume of messages at wholesale rates.</p>
+<p><a href="http://nexmo.com/">Nexmo</a> is a cloud-based SMS API that lets you send and receive high volume of messages at wholesale rates.</p>
 <p>With Nexmo you can:</p>
 <ul>
 <li>Benefit from Nexmo's direct to carrier model that improves deliverability.</li>
@@ -16,4 +16,4 @@
 </ul>
 <h3>Install Nexmo</h3>
 <p>In the "Add-ons" tab in your app console click "Install" for the Nexmo add-on. That’s it!</p>
-<p>Check out <a href="https://docs.nexmo.com/" target="_blank">Nexmo's Documentation</a> to start using Nexmo with your AppFog app, and don't miss Nexmo's <a href="https://docs.nexmo.com/pre-built-libraries/" target="_blank">client libraries</a>.</p>
+<p>Check out <a href="https://docs.nexmo.com/">Nexmo's Documentation</a> to start using Nexmo with your AppFog app, and don't miss Nexmo's <a href="https://docs.nexmo.com/pre-built-libraries/">client libraries</a>.</p>
