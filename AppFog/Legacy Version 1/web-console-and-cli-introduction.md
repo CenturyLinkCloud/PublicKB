@@ -11,13 +11,10 @@
 <h4>1. Go to your <a href="https://console.appfog.com/login">Web Console</a>.</h4>
 <h4>2. Choose an <a href="https://console.appfog.com/apps/new">application</a>.</h4>
 <p>Take your pick from our App or Framework Jumpstarts.</p>
-<p><img src="/hc/en-us/article_attachments/200759888/apps-frameworks.png" alt="Available Frameworks" /></p>
 <h4>3. Choose an infrastructure.</h4>
 <p>Host your app on your choice of infrastructure vendor at your choice of locations.</p>
-<p><img src="/hc/en-us/article_attachments/201227703/Screenshot_from_2014-08-20_11_23_04.png" alt="" /></p>
 <h4>4. Choose your sub-domain.</h4>
 <p>You’ll be able to use a custom domain after you create your app.</p>
-<p><img src="/hc/en-us/article_attachments/200743136/subdomain.png" alt="Sub-Domain" /></p>
 <p>You’re done! Give us a couple of minutes to deploy your new app. Once you’re in the app console, hit the “Visit Live Site” button.</p>
 <h3 id="startonafcli">How to Use Jumpstarts with the AF CLI (AppFog Command Line Interface) Tool</h3>
 <p>If you haven’t already, <a href="http://console.appfog.com/signup">create an account</a>. And then <a href="appfog-cli-tool-manual.md">install our command line tool</a>.</p>

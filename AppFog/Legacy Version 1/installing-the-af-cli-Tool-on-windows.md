@@ -23,7 +23,7 @@
 <li>In the dialog box select the options to:</li>
 <ul>
 <li>"Add Ruby executeables to your PATH"</li>
-<li>"Associate .rb and .rbw files with this Ruby installation"<img src="/hc/en-us/article_attachments/201715198/ruby_install_checkbox.PNG" alt="" width="325" height="252" /></li>
+<li>"Associate .rb and .rbw files with this Ruby installation"</li>
 </ul>
 <li>Check to ensure Ruby is in your PATH:
 <pre>echo %PATH%<code> </code></pre>
@@ -69,7 +69,6 @@
 </ol>
 </ul>
 </ul>
-<p><img src="/hc/en-us/article_attachments/201699607/ruby_devkit_install_2.PNG" alt="" width="473" height="457" /></p>
 <h3><a name="af"></a>Install AF Gem</h3>
 <p>After installing Ruby and the DevKit, be sure you use the <strong>Ruby-enabled command prompt window</strong> when you later install and use <em>af</em>. You access this command prompt from the Windows Start menu (All Programs &gt; Ruby &gt; Start Command Prompt with Ruby) or by searching for Ruby Command Prompt.</p>
 <ul>
@@ -90,8 +89,6 @@
 </ul>
 </ul>
 </ul>
-<p><img src="/hc/en-us/article_attachments/201699637/ruby_install_af_edit__1_.png" alt="" width="635" height="348" /></p>
-<p>If desired we have a tutorial on <a href="how-to-manage-multiple-ruby-versions-on-windows.md">How To Manage Multiple Ruby Versions on Windows</a></p>
 <hr />
 <h3><a name="trouble"></a>Troubleshooting Tips</h3>
 <table>

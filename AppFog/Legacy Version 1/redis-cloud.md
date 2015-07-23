@@ -10,7 +10,7 @@
 <p>Note: Redis Cloud is currently only available on our AWS US-East infrastructure.</p>
 <h3>Install Redis Cloud</h3>
 <p>In the "Add-ons" tab on your app console click "Install" for the Redis Cloud add-on. That’s it!</p>
-<p>Once Redis Cloud has been added, you will notice a new enironment variable: <code>REDISCLOUD_URL</code> in the <code>Env variables</code> tab on your app console, containing the username, password, hostname and port of your first Redis Cloud database.</p>
+<p>Once Redis Cloud has been added, you will notice a new environment variable: <code>REDISCLOUD_URL</code> in the <code>Env variables</code> tab on your app console, containing the username, password, hostname and port of your first Redis Cloud database.</p>
 <p>Note: as database provisioning is carried out asynchronously, please wait until the creation and initialization of the database is complete. This process shouldn't take more than 60 seconds. You're ready to go when the "hostname" value in the <code>REDISCLOUD_URL</code> environment variable is different than your "localhost".</p>
 <p>Next, setup your app to start using the Redis Cloud add-on. In the following sections we have documented the interfaces with several languages and frameworks supported by AppFog.</p>
 <ul>
@@ -162,7 +162,7 @@ client.get('foo', function (err, reply) {
 <h3>Pricing</h3>
 <p>The Redis Cloud AppFog add-on is in beta phase and is currently offered for free.</p>
 <h3>Support</h3>
-<p>All Redis Cloud support and runtime issues should be submitted to <a href="/hc/en-us">AppFog Support</a>. You may <a href="https://redislabs.com/contact" target="_blank&quot;">Contact Redis Labs</a> with any non-support related issues or product feedback.</p>
+<p>All Redis Cloud support and runtime issues should be submitted to <a href="http://support.appfog.com">AppFog Support</a>. You may <a href="https://redislabs.com/contact" target="_blank&quot;">Contact Redis Labs</a> with any non-support related issues or product feedback.</p>
 <h3>Additional resources</h3>
 <ul>
 <li><a href="http://redis-cloud.com/redis/developers">Developers Resources</a></li>
