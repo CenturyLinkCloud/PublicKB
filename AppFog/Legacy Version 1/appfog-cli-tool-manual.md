@@ -357,4 +357,4 @@
 </tbody>
 </table>
 <h2 id="troubleshooting">Troubleshooting</h2>
-<p><a href="i-am-having-trouble-with-my-application.md">I am having trouble updating my application.</a><br /> <a href="push-pull-and-update-commands.md">Push, Pull, and Update Commands</a></p>
+<p><a href="i-am-having-trouble-updating-my-application.md">I am having trouble updating my application.</a><br /> <a href="push-pull-and-update-commands.md">Push, Pull, and Update Commands</a></p>

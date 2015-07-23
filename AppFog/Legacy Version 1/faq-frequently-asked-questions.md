@@ -8,7 +8,7 @@
 
 <p><span class="wysiwyg-font-size-large">FAQ - Frequently Asked Questions</span></p>
 <ul>
-<li><a href="what-s-the-difference-between-php-fog-and-appfog/">What's the difference between PHP Fog and AppFog?</a></li>
+<li><a href="what-s-the-difference-between-php-fog-and-appfog.md">What's the difference between PHP Fog and AppFog?</a></li>
 <li><a href="billing-process-overview.md">How does billing work?</a></li>
 <li><a href="scaling-your-application-on-paas.md">How can I update my app without downtime?</a></li>
 <li><a href="how-much-for-additional-bandwidth-exceeding-my-plan-limit.md">How much for additional bandwidth exceeding my plan limit?</a></li>

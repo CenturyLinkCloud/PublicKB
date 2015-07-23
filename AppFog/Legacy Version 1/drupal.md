@@ -38,4 +38,4 @@ $databases['default']['default'] = array(
 <p>Point your browser to your app's install script, in this case drupal-example.aws.af.cm/install.php. That should take you through the rest of the install process.</p>
 <h2>Further Development</h2>
 <p>AppFog does not yet have a persistent data storage system, though we're working on it. This means that the file system is volatile and any changes made to the file system by the app will be lost on an app start, stop, or deploy.</p>
-<p>This means you should do any development that makes changes to the file system in a local development environment and then push those changes to AppFog using an <code>af update</code>. You can sync any database changes by <a href="/services/tunneling">tunneling</a>.</p>
+<p>This means you should do any development that makes changes to the file system in a local development environment and then push those changes to AppFog using an <code>af update</code>. You can sync any database changes by tunneling.</p>

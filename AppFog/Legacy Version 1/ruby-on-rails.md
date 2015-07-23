@@ -109,7 +109,7 @@ host: 127.0.0.1
 <h2 id="rake-db-seed">rake db:seed</h2>
 <p>This assumes that you have your Rails app set up, and you have a MySQL service bound to it.</p>
 <h4>Tunnel to your bound MySQL service</h4>
-<p>Use the <a href="/services/tunneling">af tunnel</a> command to connect to the MySQL service that's bound to your Rails app. When prompted, enter '1' for no client.</p>
+<p>Use the af tunnel command to connect to the MySQL service that's bound to your Rails app. When prompted, enter '1' for no client.</p>
 <pre>$ af tunnel
 1: rails-mysql-example
 Which service to tunnel to?: 1
