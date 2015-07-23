@@ -20,7 +20,7 @@
 <p><img src="/hc/en-us/article_attachments/200743136/subdomain.png" alt="Sub-Domain" /></p>
 <p>You’re done! Give us a couple of minutes to deploy your new app. Once you’re in the app console, hit the “Visit Live Site” button.</p>
 <h3 id="startonafcli">How to Use Jumpstarts with the AF CLI (AppFog Command Line Interface) Tool</h3>
-<p>If you haven’t already, <a href="http://console.appfog.com/signup">create an account</a>. And then <a href="/getting-started/af-cli">install our command line tool</a>.</p>
+<p>If you haven’t already, <a href="http://console.appfog.com/signup">create an account</a>. And then <a href="appfog-cli-tool-manual.md">install our command line tool</a>.</p>
 <p>Below are instructions for quickly setting up your application using our AF CLI tool. Below that we're also providing a list of links to our source code for some example apps which you can use to set up test applications to get started:</p>
 <h4>1. Login</h4>
 <p><code>$ af login</code></p>

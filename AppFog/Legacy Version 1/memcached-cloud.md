@@ -161,7 +161,7 @@ echo $mc-&gt;get("foo");</pre>
 <p>Your first Memcached bucket is provisioned automatically upon launching the Memcached Cloud add-on. Its servers and credentials are maintained with the <code>MEMCACHEDCLOUD</code> env. vars. To add more buckets, simply access your Memcached Cloud console and click the <code>Add Bucket</code> button in the <code>MY BUCKETS &gt; Manage</code> page.</p>
 <p>Your new Memcached bucket's server and credentials will be displayed in the Memcached Cloud console.</p>
 <h2>Support</h2>
-<p>All Memcached Cloud support and runtime issues should be submitted to <a href="/hc/en-us">AppFog Support.</a></p>
+<p>All Memcached Cloud support and runtime issues should be submitted to <a href="http://support.appfog.com">AppFog Support.</a></p>
 <p>Any non-support related issues or product feedback is welcome via email at <a href="https://redislabs.com/contact">info@redislabs.com</a>.</p>
 <h2>Additional Resources</h2>
 <ul>

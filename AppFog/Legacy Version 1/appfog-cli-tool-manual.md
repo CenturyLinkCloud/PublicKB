@@ -13,7 +13,7 @@
 <ul>
 <li><a href="installing-the-af-cli-tool-on-linux.md">Linux</a></li>
 <li><a href="installing-the-af-cli-tool-on-mac-os-x.md">Mac OS X</a></li>
-<li><a href="installing-the-af-cli-tool-on-windows.md">Windows</a></li>
+<li><a href="installing-the-af-cli-Tool-on-windows.md">Windows</a></li>
 </ul>
 </li>
 <li><a href="#usage">Usage</a></li>
@@ -41,7 +41,7 @@
 <p>The gems can be installed manually, with Bundler, or alongside RVM. Click the link above for more detailed instructions.</p>
 <h3><a href="installing-the-af-cli-tool-on-mac-os-x.md">Mac OS X</a></h3>
 <p>Ostensibly, you should only have to use <code>gem install af</code> to install the gem on stock OS X. However, some users may need to use RVM to accomplish this. Please click on the link above for the detailed instructions.</p>
-<h3><a href="installing-the-af-cli-tool-on-windows.md">Windows</a></h3>
+<h3><a href="installing-the-af-cli-Tool-on-windows.md">Windows</a></h3>
 <p>There was a program created to handle the installation of Ruby. It comes with RubyGems built-in, with which you can install the <em>af</em> gem. Click the link above more detailed instructions.</p>
 <h2 id="usage">Usage</h2>
 <p>The AF Tool uses angle brackets <code>&lt;&gt;</code> for required input and square brackets <code>[]</code> for optional input.</p>

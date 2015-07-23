@@ -68,7 +68,7 @@ $ bundle install
 <pre>$ af push
 </pre>
 <h3>Services</h3>
-<p>AppFog automatically creates and binds a new MySQL service with the Ruby on Rails jumpstart, and the app is <a href="#autoreconfig">automatically reconfigured</a> to connect to the service. For more information on services and how to connect to them manually, check out our docs on <a href="/services/overview">Services</a>.</p>
+<p>AppFog automatically creates and binds a new MySQL service with the Ruby on Rails jumpstart, and the app is <a href="#autoreconfig">automatically reconfigured</a> to connect to the service. </p>
 <h3 id="rails-console">Rails Console</h3>
 <p>To use the Rails console with your database service, tunnel into the service, and choose 'none' when it asks you which client to start:</p>
 <pre>$ af tunnel ror-example-mysql

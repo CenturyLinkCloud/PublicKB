@@ -59,4 +59,4 @@ Starting Application: OK
 And you’re done! You can now visit your new WP app at http://my-first-app.aws.af.cm/ (or whichever url you chose).
 </code></pre>
 
-That’s all for now. You can learn more about af by running af help or asking a question at [support.appfog.com](support.appfog.com).
+That’s all for now. You can learn more about af by running af help or asking a question at [support.appfog.com](http://support.appfog.com).

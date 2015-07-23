@@ -13,7 +13,6 @@
 <p>Connect your PHP app to AppFog service instances by using the <code>VCAP_SERVICES</code> environment variable, which becomes available to your app when you bind a service to it. You can access the variable in PHP like this:</p>
 <pre>getenv('VCAP_SERVICES')
 </pre>
-<p>For more information on this, check out our <a href="/hc/en-us/sections/200463987-Services">Services Overview</a> page.</p>
 <h2 id="wordpress">WordPress</h2>
 <p>The following is a step-by-step guide to deploying a WordPress app to AppFog.</p>
 <h3>Download Wordpress</h3>

@@ -17,5 +17,5 @@
 <li><a href="why-does-my-app-return-a-410-removed-error.md">Why does my app return a 410 Removed error?</a></li>
 <li><a href="why-does-my-app-return-a-429-calm-down-error.md">Why does my app return a 429 Calm Down error?</a></li>
 <li><a href="why-does-my-app-return-a-509-bandwidth-exceeded-error.md">Why does my app return a 509 Bandwidth Exceeded error?</a></li>
-<li><a href="why-does-my-app-return-a-510-in-progress-error.md">Why does my app return a 510 In Progress error?</a></li>
+<li><a href="why-does-my-app-return-a-510-In-progress-error.md">Why does my app return a 510 In Progress error?</a></li>
 </ul>

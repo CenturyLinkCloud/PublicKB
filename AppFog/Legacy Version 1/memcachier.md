@@ -190,5 +190,5 @@ public class Foo {
 <h3 id="upgrade">Upgrading and Downgrading</h3>
 <p>Changing your plan, either by upgrading or downgrading, requires no code changes. Your cache won’t be lost, either. Upgrading and downgrading Just Works™.</p>
 <h3 id="support">Support</h3>
-<p>You can submit all Memcachier support and runtime issues to <a href="/hc/en-us">AppFog Support</a> and any non-support related issues or product feedback to <a href="https://www.memcachier.com/contact">Contact Memcachier</a>.</p>
+<p>You can submit all Memcachier support and runtime issues to <a href="http://support.appfog.com">AppFog Support</a> and any non-support related issues or product feedback to <a href="https://www.memcachier.com/contact">Contact Memcachier</a>.</p>
 <p>Memcachier reports issues related to service at <a href="http://status.memcachier.com/">Memcachier Status</a>.</p>
