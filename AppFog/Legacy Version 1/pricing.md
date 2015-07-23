@@ -6,4 +6,4 @@
   "contentIsHTML": true
 }}}
 
-<p>For information regarding out pricing structure, <a href="https://www.appfog.com/pricing/">please visit our website's pricing page</a> and take a look at our <a href="/hc/en-us/articles/202316896">Billing Process Overview</a> article.</p>
+<p>For information regarding out pricing structure, <a href="https://www.appfog.com/pricing/">please visit our website's pricing page</a> and take a look at our <a href="billing-process-overview.md">Billing Process Overview</a> article.</p>

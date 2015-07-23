@@ -91,7 +91,7 @@
 </ul>
 </ul>
 <p><img src="/hc/en-us/article_attachments/201699637/ruby_install_af_edit__1_.png" alt="" width="635" height="348" /></p>
-<p>If desired we have a tutorial on <a href="/hc/en-us/articles/204903018-How-To-Manage-Multiple-Ruby-Versions-in-Windows">How To Manage Multiple Ruby Versions on Windows</a></p>
+<p>If desired we have a tutorial on <a href="how-to-manage-multiple-ruby-versions-on-windows.md">How To Manage Multiple Ruby Versions on Windows</a></p>
 <hr />
 <h3><a name="trouble"></a>Troubleshooting Tips</h3>
 <table>

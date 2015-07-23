@@ -37,11 +37,11 @@
 <h2 id="installation">Installation</h2>
 <p>The <em>af</em> command line tool is written in Ruby and installed as a gem.</p>
 <p>We recommend using version 2.1 or older as some users have reported issues with Ruby 2.2 compiling.</p>
-<h3><a href="/hc/en-us/articles/203968793">Linux</a></h3>
+<h3><a href="installing-the-af-cli-tool-on-linux.md">Linux</a></h3>
 <p>The gems can be installed manually, with Bundler, or alongside RVM. Click the link above for more detailed instructions.</p>
-<h3><a href="/hc/en-us/articles/204333728">Mac OS X</a></h3>
+<h3><a href="installing-the-af-cli-tool-on-mac-os-x.md">Mac OS X</a></h3>
 <p>Ostensibly, you should only have to use <code>gem install af</code> to install the gem on stock OS X. However, some users may need to use RVM to accomplish this. Please click on the link above for the detailed instructions.</p>
-<h3><a href="/hc/en-us/articles/205027897">Windows</a></h3>
+<h3><a href="installing-the-af-cli-tool-on-windows.md">Windows</a></h3>
 <p>There was a program created to handle the installation of Ruby. It comes with RubyGems built-in, with which you can install the <em>af</em> gem. Click the link above more detailed instructions.</p>
 <h2 id="usage">Usage</h2>
 <p>The AF Tool uses angle brackets <code>&lt;&gt;</code> for required input and square brackets <code>[]</code> for optional input.</p>
@@ -73,7 +73,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="app-creation"><a href="/hc/en-us/articles/203271526">Creation</a></h3>
+<h3 id="app-creation"><a href="getting-started-overview.md">Creation</a></h3>
 <table class="table table-bordered table-striped">
 <tbody>
 <tr>
@@ -206,7 +206,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="app-env"><a href="/hc/en-us/articles/204724038">Environment</a></h3>
+<h3 id="app-env"><a href="environment-variables.md">Environment</a></h3>
 <table class="table table-bordered table-striped">
 <tbody>
 <tr>
@@ -357,4 +357,4 @@
 </tbody>
 </table>
 <h2 id="troubleshooting">Troubleshooting</h2>
-<p><a href="/hc/en-us/articles/203285833">I am having trouble updating my application.</a><br /> <a href="/hc/admin/articles/202264463-AppFog-CLI-Tool-Manual/&quot;/hc/en-us/articles/203271526">Push, Pull, and Update Commands</a></p>
+<p><a href="i-am-having-trouble-with-my-application.md">I am having trouble updating my application.</a><br /> <a href="push-pull-and-update-commands.md">Push, Pull, and Update Commands</a></p>

@@ -8,7 +8,7 @@
 
 <h2>Important Reminder</h2>
 <p>AppFog does not yet have a persistent data storage system, which is frequently updated by the native WordPress admin console when applying themes, uploading images, or adding modules. Any changes stored on the file system during runtime by WordPress will be lost on an app start, stop, or deploy. To ensure your WordPress website changes are persisted between (re)starts, the recommended best practice is to save file updates in a database or block storage solution.</p>
-<p>This means you should do any development that makes changes to the file system in a local development environment and then push those changes to AppFog using an <code>af update</code>. You can find a solutions tutorial about it in our <a href="/hc/en-us/articles/204232423-WordPress-and-AppFog">WordPress article</a>.</p>
+<p>This means you should do any development that makes changes to the file system in a local development environment and then push those changes to AppFog using an <code>af update</code>. You can find a solutions tutorial about it in our <a href="wordpress.md">WordPress article</a>.</p>
 <h2>Services</h2>
 <p>Connect your PHP app to AppFog service instances by using the <code>VCAP_SERVICES</code> environment variable, which becomes available to your app when you bind a service to it. You can access the variable in PHP like this:</p>
 <pre>getenv('VCAP_SERVICES')

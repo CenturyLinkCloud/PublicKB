@@ -42,13 +42,13 @@
 <p>Now you can customize your local WordPress install by adding new themes (the look and feel of your website) and plugins (third-party code extensions that provide your WordPress install with expanded functionality). Consult the latest WordPress documentation for more information on this.</p>
 <p>Once you have your local WordPress site running the way you wish it to on a live, public environment (e.g., on AppFog). make sure you have the latest version of, not only your WordPress core files, but of all themes and plugins you may have added. This can be done by directing your web browser to your local install's admin back-end at <code>/wp-admin/update-core.php</code>.</p>
 <p>Next, you should make a backup copy of your <em>wp-config.php</em> that's located in your root WordPress directory. You will need to do some modifications to it in the final step.</p>
-<p>You can more information on image hosting with WordPress on AppFog in our <a href="/hc/en-us/articles/203948926">Cloud Image Hosting for WordPress on AppFog</a> article.</p>
+<p>You can more information on image hosting with WordPress on AppFog in our <a href="cloud-image-hosting-for-wordpress-on-appfog.md">Cloud Image Hosting for WordPress on AppFog</a> article.</p>
 <hr />
 <h2 id="upload">Part Three: Deploy your WordPress Site to AppFog</h2>
 <p>Instructions on how to how to complete this task can be found on our support site via the links below. Remember to open the <em>wp-config.php</em> and modify the pieces of the code used to connect to the database with the <em>VCAP_SERVICES</em> environment variable.</p>
 <ul>
-<li>AppFog: <a href="/hc/en-us/articles/202264513">WordPress Deployment and Configuration</a></li>
-<li>AppFog: <a href="/hc/en-us/articles/202720798">Service/Database Content Management (Tunneling)</a></li>
+<li>AppFog: <a href="wordpress-deployment-and-configuration.md">WordPress Deployment and Configuration</a></li>
+<li>AppFog: <a href="service-database-content-management-tunneling.md">Service/Database Content Management (Tunneling)</a></li>
 </ul>
 <hr />
 <h2 id="keep_updated">Part Four: Stay Current with WordPress Updates</h2>
