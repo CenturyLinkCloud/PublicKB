@@ -31,4 +31,4 @@
     exit;
 ?&gt;</pre>
 <p>That's it! Now any email sent to your CloudMailin email address will forward to your app. You can always check to see what your CloudMailin email address is by going to the "Env. Variables" tab in your AppFog app console and looking for the <code>CLOUDMAILIN_FORWARD_ADDRESS</code>, or by logging in to CloudMailin directly.</p>
-<p>You can set up your custom domain emails to forward, too. You can find information on that <a href="http://docs.cloudmailin.com/receiving_email/forwarding_and_custom_domains/" target="_blank">here</a>.</p>
+<p>You can set up your custom domain emails to forward, too. You can find information on that <a href="http://docs.cloudmailin.com/receiving_email/forwarding_and_custom_domains/">here</a>.</p>

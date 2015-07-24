@@ -16,14 +16,14 @@
 </ul>
 </ul>
 <h3><a name="ruby"></a>Install Ruby</h3>
-<p>Download and install <a href="http://rubyinstaller.org/downloads/" target="_blank">Ruby Installer for Windows</a>.The installer already includes RubyGems. We recommend using version 2.1 or older as some users have reported issues with Ruby 2.2 compiling.</p>
+<p>Download and install <a href="http://rubyinstaller.org/downloads/">Ruby Installer for Windows</a>.The installer already includes RubyGems. We recommend using version 2.1 or older as some users have reported issues with Ruby 2.2 compiling.</p>
 <ul>
 <ul>
 <ol>
 <li>In the dialog box select the options to:</li>
 <ul>
 <li>"Add Ruby executeables to your PATH"</li>
-<li>"Associate .rb and .rbw files with this Ruby installation"<img src="/hc/en-us/article_attachments/201715198/ruby_install_checkbox.PNG" alt="" width="325" height="252" /></li>
+<li>"Associate .rb and .rbw files with this Ruby installation"</li>
 </ul>
 <li>Check to ensure Ruby is in your PATH:
 <pre>echo %PATH%<code> </code></pre>
@@ -35,7 +35,7 @@
 </ul>
 </ul>
 <h3><a name="devkit"></a>Install the Development Kit</h3>
-<p>You will also need to download and install the <a href="http://rubyinstaller.org/downloads/" target="_blank">Development Kit</a>, be sure to install the proper version based on your version of Ruby. The steps below and further details can be found on the <a href="https://github.com/oneclick/rubyinstaller/wiki/Development-Kit">Development Kit wiki page</a>.</p>
+<p>You will also need to download and install the <a href="http://rubyinstaller.org/downloads/">Development Kit</a>, be sure to install the proper version based on your version of Ruby. The steps below and further details can be found on the <a href="https://github.com/oneclick/rubyinstaller/wiki/Development-Kit">Development Kit wiki page</a>.</p>
 <ul>
 <ul>
 <ol>
@@ -69,7 +69,6 @@
 </ol>
 </ul>
 </ul>
-<p><img src="/hc/en-us/article_attachments/201699607/ruby_devkit_install_2.PNG" alt="" width="473" height="457" /></p>
 <h3><a name="af"></a>Install AF Gem</h3>
 <p>After installing Ruby and the DevKit, be sure you use the <strong>Ruby-enabled command prompt window</strong> when you later install and use <em>af</em>. You access this command prompt from the Windows Start menu (All Programs &gt; Ruby &gt; Start Command Prompt with Ruby) or by searching for Ruby Command Prompt.</p>
 <ul>
@@ -90,8 +89,6 @@
 </ul>
 </ul>
 </ul>
-<p><img src="/hc/en-us/article_attachments/201699637/ruby_install_af_edit__1_.png" alt="" width="635" height="348" /></p>
-<p>If desired we have a tutorial on <a href="/hc/en-us/articles/204903018-How-To-Manage-Multiple-Ruby-Versions-in-Windows">How To Manage Multiple Ruby Versions on Windows</a></p>
 <hr />
 <h3><a name="trouble"></a>Troubleshooting Tips</h3>
 <table>

@@ -45,7 +45,7 @@ Single button deploy of an arbitrary sized Pivotal Greenplum cluster.
 
 #### Steps
 
-1. **Review creating a new Blueprint** referencing the [How to build a blueprint KB](../../Blueprints/how-to-build-a-blueprint/) if necessary
+1. **Review creating a new Blueprint** referencing the [How to build a blueprint KB](../../Blueprints/how-to-build-a-blueprint.md) if necessary
 
   * (Wizard step 1) Complete as normal
   * (Wizard step 2) Do not add any servers in this step

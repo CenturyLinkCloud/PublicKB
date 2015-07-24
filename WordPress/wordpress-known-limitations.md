@@ -1,7 +1,7 @@
 {{{
   "title": "WordPress Known Limitations",
   "date": "07-20-2015",
-  "author": "Jordan Mahaney, Bill Burge"
+  "author": "Jordan Mahaney, Bill Burge",
   "attachments": [],
   "contentIsHTML": false
 }}}

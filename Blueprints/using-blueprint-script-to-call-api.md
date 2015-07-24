@@ -34,7 +34,7 @@
       <pre># Simple helper function to parse JSON response ($1) and return value for given key ($2)<br />jsonGetVal() {<br />    echo $1 | sed 's/[{}]//g' | awk -v k="text" '{n=split($0,a,","); for (i=1; i&lt;=n; i++) print a[i]}' |<br />       sed 's/\"//g' | grep $2 | awk 'BEGIN { FS = ":" } ; {print $2}'<br />}</pre>
     </li>
     <li>Then the script makes three sequential calls to the API using <code>curl</code> and the parameters and variables initialized above along with the JSON parsing. The first call is to authenticate, the second will get the data center ID, and the third
-      one is for getting the data center name. (For more details on using the API in general, refer to the&nbsp;<a href="//www.centurylinkcloud.com/api-docs/v2">API v2 Knowledge Base</a>.)
+      one is for getting the data center name. (For more details on using the API in general, refer to the&nbsp;<a href="//www.ctl.io/api-docs/v2">API v2 Knowledge Base</a>.)
       <br />
       <pre># Call to authentication API to get token<br />AUTHRESP=`curl -s -H "Content-Type: application/json" -d $AUTHJSON $AUTHURL`<br />TOKEN=`jsonGetVal $AUTHRESP $TOKENKEY`<br /><br /># Call to server API to get data center id for given server id<br />SRVRESP=`curl -s -H "Authorization: Bearer $TOKEN" $GETSRVURL`<br />DCID=`jsonGetVal "$SRVRESP" $DCKEY`<br /><br /># Call to DC API to get data center name for given ID<br />GETDCURL="$BASEURL/datacenters/$ACCOUNT/$DCID"<br />DCRESP=`curl -s -H "Authorization: Bearer $TOKEN" $GETDCURL`<br />DCNAME=`jsonGetVal "$DCRESP" name`</pre>
     </li>

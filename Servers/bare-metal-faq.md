@@ -25,7 +25,7 @@ This FAQ addresses commonly asked questions about the service. For further infor
 
 **Why don't I see the option to provision a Bare Metal server type?**
 
-There are a couple reasons you might not see the option for Bare Metal servers.  First, check your data center and the current [availability for Bare Metal servers](https://www.centurylinkcloud.com/data-centers/#/filters/Bare%20Metal).  Bare Metal servers are not available in all data centers. If you are in a data center where Bare Metal servers should be available, contact Customer Care to have them check to see if Bare Metal servers need to be enabled for your account.
+There are a couple reasons you might not see the option for Bare Metal servers.  First, check your data center and the current [availability for Bare Metal servers](https://www.ctl.io/data-centers/#/filters/Bare%20Metal).  Bare Metal servers are not available in all data centers. If you are in a data center where Bare Metal servers should be available, contact Customer Care to have them check to see if Bare Metal servers need to be enabled for your account.
 
 **Why am I seeing an error saying "limit exceeded" for CPU, memory, or storage when I try to provision a Bare Metal server?**
 
@@ -45,7 +45,7 @@ Any applications not well-suited to virtualization whether it be performance or 
 
 **How do I connect my Bare Metal servers over the network to my CenturyLink Cloud virtual servers?**
 
-Bare Metal servers share the same network as CenturyLink Cloud virtual servers so it's as easy as creating and connecting networks amongst all your server types.  For more information on Network features of CenturyLink Cloud platform, reference the [Network Section](https://www.centurylinkcloud.com/knowledge-base/network/#1) of our knowledge base.
+Bare Metal servers share the same network as CenturyLink Cloud virtual servers so it's as easy as creating and connecting networks amongst all your server types.  For more information on Network features of CenturyLink Cloud platform, reference the [Network Section](https://www.ctl.io/knowledge-base/network/#1) of our knowledge base.
 
 **Since these servers use local storage, how do I avoid application failure if underlying hardware fails?**
 
@@ -53,7 +53,7 @@ It is your responsibility to maintain any data recovery or restoration process t
 
 **How is hardware support and replacement handled for Bare Metal servers?**
 
-CenturyLink is responsible for all hardware replacement for Bare Metal servers.  We monitor the Bare Metal servers underlying hardware using agentless SNMP monitoring via iLO.  If an incident is detected a ticket for investigation is automatically generated and the customer is notified. In the case where a server becomes completely unavailable the process to replace the server will begin immediately with consent from the customer. For additional service level details please reference the Bare Metal servers SLA on the [SLA page](https://www.centurylinkcloud.com/legal/sla/).
+CenturyLink is responsible for all hardware replacement for Bare Metal servers.  We monitor the Bare Metal servers underlying hardware using agentless SNMP monitoring via iLO.  If an incident is detected a ticket for investigation is automatically generated and the customer is notified. In the case where a server becomes completely unavailable the process to replace the server will begin immediately with consent from the customer. For additional service level details please reference the Bare Metal servers SLA on the [SLA page](https://www.ctl.io/legal/sla/).
 
 **What are the security features available for Bare Metal servers?**
 
@@ -61,7 +61,7 @@ Bare Metal servers can be incorporated in the same firewall policies currently a
 
 **What should I do if I do not see the configuration of CPU/Memory/Storage I want?**
 
-We've initially launched with a limited number of Bare Metal server configuration types and fully expect to expand upon the number of types and quantity available of each based on customer feedback.  The server configuration screen will provide an up to date indication of our available server types.  If you do not see a configuration type there that suits your needs, please submit a [Feature Request](https://www.centurylinkcloud.com/knowledge-base/support/how-do-i-submit-a-feature-request/) including a brief explanation of your use case and the need for a particular configuration of resources.
+We've initially launched with a limited number of Bare Metal server configuration types and fully expect to expand upon the number of types and quantity available of each based on customer feedback.  The server configuration screen will provide an up to date indication of our available server types.  If you do not see a configuration type there that suits your needs, please submit a [Feature Request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/) including a brief explanation of your use case and the need for a particular configuration of resources.
 
 **What features do Bare Metal servers share with CenturyLink Cloud virtual servers?**
 
@@ -81,7 +81,7 @@ No, the password can only be set at the time of server creation. If you would li
 
 **Where are Bare Metal servers available geographically?**
 
-Bare Metal servers availability can be viewed on the [CenturyLink Cloud data centers page](https://www.centurylinkcloud.com/data-centers/#/filters/Bare%20Metal).
+Bare Metal servers availability can be viewed on the [CenturyLink Cloud data centers page](https://www.ctl.io/data-centers/#/filters/Bare%20Metal).
 
 **What should I do if my Bare Metal server becomes unresponsive?**
 
@@ -101,8 +101,8 @@ No, the storage configurations provisioned for Bare Metal servers are all either
 
 **Can I bring my own OS image?**
 
-No, the available Operating Systems include Windows 2012 R2, RHEL6 and CentOS. In the future there will be additional Linux and Windows variations available. If there is a particular OS image you would like to see incorporated please [submit a feature request](https://www.centurylinkcloud.com/knowledge-base/support/how-do-i-submit-a-feature-request/).
+No, the available Operating Systems include Windows 2012 R2, RHEL6 and CentOS. In the future there will be additional Linux and Windows variations available. If there is a particular OS image you would like to see incorporated please [submit a feature request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/).
 
 **Can I use my own licensing for the OS?**
 
-No, the licensing is factored into the cost of the Bare Metal server where applicable and can not be separated from the service.  If you would be interested in using your own OS licensing with Bare Metal servers, please let us know in a [feature request](https://www.centurylinkcloud.com/knowledge-base/support/how-do-i-submit-a-feature-request/).
+No, the licensing is factored into the cost of the Bare Metal server where applicable and can not be separated from the service.  If you would be interested in using your own OS licensing with Bare Metal servers, please let us know in a [feature request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/).

@@ -11,7 +11,7 @@ The Microsoft SQL Server (MS-SQL) database is a comprehensive and integrated dat
 
 ### Prerequisites
 * A CenturyLink Cloud Account
-* [Managed Operating System Services](//www.centurylinkcloud.com/managed-services/operating-system) on the Virtual Machine
+* [Managed Operating System Services](//www.ctl.io/managed-services/operating-system) on the Virtual Machine
 
 ### Supported Managed Operating Systems
 * Managed Microsoft Windows Server 2008 R2

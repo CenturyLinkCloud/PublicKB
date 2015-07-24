@@ -8,7 +8,7 @@
 
 ![logo](http://www.a10networks.com/images/logo_s.png)
 ###Partner Profile
-A10 Networks - An industry leader in data security and cloud security solutions. 
+A10 Networks - An industry leader in data security and cloud security solutions.
 
 http://www.A10Networks.com
 
@@ -22,7 +22,7 @@ http://www.A10Networks.com
 
 ### Description
 
-A10 has pioneered a new generation of application networking technologies. Our solutions enable enterprises, service providers, Web giants and government organizations to accelerate, secure and optimize the performance of their data center applications and networks. Our Advanced Core Operating System (ACOS®) platform is designed to deliver substantially greater performance and security relative to prior generation application networking products. Our software-based ACOS architecture provides the flexibility that enables us to expand our business with additional products to solve a growing array of networking and security challenges across cloud computing and mobility. A10 Networks has a portfolio of application-layer networking products that assure user-to-application connectivity is available, accelerated and secure. 
+A10 has pioneered a new generation of application networking technologies. Our solutions enable enterprises, service providers, Web giants and government organizations to accelerate, secure and optimize the performance of their data center applications and networks. Our Advanced Core Operating System (ACOS®) platform is designed to deliver substantially greater performance and security relative to prior generation application networking products. Our software-based ACOS architecture provides the flexibility that enables us to expand our business with additional products to solve a growing array of networking and security challenges across cloud computing and mobility. A10 Networks has a portfolio of application-layer networking products that assure user-to-application connectivity is available, accelerated and secure.
 
 http://www.a10networks.com
 
@@ -40,7 +40,7 @@ A10 is making their vThunder Appliance available for CenturyLink Cloud Users to 
 CenturyLink Cloud Users
 
 ### Impact
-A10 has provided a Virtual Appliance - called a Partner Template - that can be deployed to your CenturyLink Cloud account via a Service Task.  After reading this article, the user should feel comfortable deploying the A10 vThunder Appliance technology on CenturyLink Cloud.  
+A10 has provided a Virtual Appliance - called a Partner Template - that can be deployed to your CenturyLink Cloud account via a Service Task.  After reading this article, the user should feel comfortable deploying the A10 vThunder Appliance technology on CenturyLink Cloud.
 
 ### Prerequisite
 - Access to the CenturyLink Cloud platform as an authorized user.
@@ -49,12 +49,12 @@ A10 has provided a Virtual Appliance - called a Partner Template - that can be d
 ### Postrequisite
 - If you want to access your A10 vThunder Appliance over the internet, please perform the following tasks once your A10 vThunder Appliance has been deployed to your account:
 
-1. [Add a Public IP](../../../network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
+1. [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
 
-2. [Allow incoming traffic](../../../network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal
+2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal
 
 ### Detailed Steps to Deploy A10 vThunder Appliance Partner Template
-Follow these step by step instructions to deploy a A10 vThunder Appliance in to your CenturyLink Cloud account:  
+Follow these step by step instructions to deploy a A10 vThunder Appliance in to your CenturyLink Cloud account:
 
 - Open a service task request ticket via email to ServiceTasks@Tier3.com with the following details.  You will need to edit some of the information below.
 
@@ -62,7 +62,7 @@ Follow these step by step instructions to deploy a A10 vThunder Appliance in to 
 TO: ServiceTasks@Tier3.com
 
 EMAIL SUBJECT:   Custom Image Import Request for Ecosystem Partner Template
-    
+
 CLC Support Team,
 Please create a ticket to complete the following Service Task:
 
@@ -75,7 +75,7 @@ Please import the Ecosystem Partner Template image file referenced below to my C
 - Number of VIP's you'd like reserved in the network for load balancing.  (The support team can reserve more later via a ticket.  CLC Support team will reserve 10 VIPs unless stated otherwise.)
 
 Additional Information to add Partner Template to Network:
-- Please reference the A10 documentation and follow the steps below; 
+- Please reference the A10 documentation and follow the steps below;
 - During the initial install, the first interface will be used for both management and data. Please request "black hole" VLANs for interfaces 2 and 3 for the system to work correctly. This requirement will be removed in the future as vThunder is tailored for CenturyLink's Cloud.
 - Boot the server up and at the command prompt:
 - Login as:  admin / 10
@@ -83,7 +83,7 @@ Additional Information to add Partner Template to Network:
 - Enter ethernet 1 configuration area by running: "interface ethernet 1"
 - Assign an IP to ethernet 1 by running: "ip address <ip> <mask>"
 - Exit ethernet 1 configuration area by running: "exit"
-- Add a default route by running:	"ip route 0.0.0.0 /0 <gateway>"
+- Add a default route by running:    "ip route 0.0.0.0 /0 <gateway>"
 - Change the admin password by running: "admin admin password <password>"
 (Yes, there's 2 "admin", the first is the "admin" command, the 2nd is to configure the user admin)
 - Set the hostname by running: "hostname <hostname>"
@@ -111,7 +111,7 @@ Once the Service Task team deploy's your A10 vThunder Appliance, you will get a 
 - For additional information on how to configure your A10 vThunder Appliance, please visit the support website at http:///www.A10Networks.com/support/
 
 ### Pricing
-There are no A10 license costs or additional fees bundled in.  The cost to deploy the A10 vThunder Partner Template will be billed as a Service Task.  More information about Service Tasks and fees are available here: http://www.centurylinkcloud.com/service-tasks
+There are no A10 license costs or additional fees bundled in.  The cost to deploy the A10 vThunder Partner Template will be billed as a Service Task.  More information about Service Tasks and fees are available here: http://www.ctl.io/service-tasks
 
 ### Frequently Asked Questions
 Frequently Asked Questions:

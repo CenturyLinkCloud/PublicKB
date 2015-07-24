@@ -100,7 +100,7 @@ Contact your CenturyLink Channel Manager via email.
 
 ## Platform Information Source and Contact
 
-The [CenturyLink Cloud website](http://www.centurylinkcloud.com) is an excellent source of information for platform-related questions including: 
+The [CenturyLink Cloud website](http://www.ctl.io) is an excellent source of information for platform-related questions including: 
 
 - Up-to-date product announcements
 - Knowledge Base (KB) 

@@ -19,10 +19,10 @@
 <p>None</p>
 <h3>Detailed Steps</h3>
 <ol>
-<li>Do not open SSH (port 22) or RDP (port 3389) to the public network. Customers wishing to manage their servers over SSH and RDP should use the provided software-based VPN or other private connection option such as Direct Connect, IPSec VPN, etc. More information about the VPN can be found in our knowledge base <a href="/knowledge-base/network/how-to-configure-client-vpn">here</a></li>
+<li>Do not open SSH (port 22) or RDP (port 3389) to the public network. Customers wishing to manage their servers over SSH and RDP should use the provided software-based VPN or other private connection option such as Direct Connect, IPSec VPN, etc. More information about the VPN can be found in our knowledge base [here](../Network/how-to-configure-client-vpn.md)</li>
 <li>Always set strong administrator passwords that are at least 12 characters long, include at least one lowercase letter, uppercase letter, number, and special character, and do not include dictionary words, even using common substitutions like "@" instead of "a".</li>
 <li>When opening an application to the public network such as HTTP or HTTPS, only open the specific port(s) needed, do not open all ports, or large ranges of ports.</li>
 <li>When building a new server or installing a new application onto a server, always run a patch update to install the latest operating system and application patches on the system.</li>
 <li>Regularly apply patch updates to operating systems and applications.</li>
-<li>If there is a business requirement such that you absolutely must open RDP or SSH to the public network, use the "restrict source traffic" feature to restrict the traffic to that port to authorized sources only. (See <a href="/knowledge-base/network/how-to-add-public-ip-to-virtual-machine">How to Add Public IP to Virtual Machine</a> for more details.)</li>
+<li>If there is a business requirement such that you absolutely must open RDP or SSH to the public network, use the "restrict source traffic" feature to restrict the traffic to that port to authorized sources only. (See [How to Add Public IP to Virtual Machine](../Network/how-to-add-public-ip-to-virtual-machine.md) for more details.)</li>
 </ol><img src="https://t3n.zendesk.com/attachments/token/PhlU324nfyCW2EOiwcaj5lkO2/?name=Capture.JPG" alt="Capture.JPG" width="865" height="340" />

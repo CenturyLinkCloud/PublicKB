@@ -13,7 +13,6 @@
 <li>
 <p>Use <code>git clone https://github.com/appfog/af-java-tomcat7.git</code> to copy the code off of GitHub.</p>
 <p>Alternatively, you can create the app at the <a href="https://console.appfog.com/apps/new">web console</a> using Tomcat7+Servlet3 jumpstart and use <code>af pull</code> to save it locally.</p>
-<p>A document overviewing the app creation process can be found <a href="/hc/en-us/articles/202261263">here</a>.</p>
 </li>
 <li><a href="http://grails.org/doc/latest/guide/gettingStarted.html#requirements">Build your Grails 2.4 app separately.</a></li>
 <li>When you have your WAR file created, you'll need to remove all files underneath the Tomcat jumpstart's <code>webapps/ROOT</code> directory, copy the WAR file to that same <code>ROOT</code> directory, then deploy that app there.

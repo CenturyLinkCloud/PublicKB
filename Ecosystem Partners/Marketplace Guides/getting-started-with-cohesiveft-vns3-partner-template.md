@@ -27,7 +27,7 @@ Cohesive Networks has integrated their technology with the CenturyLink Cloud pla
 
 VNS3 lets you manage your cloud deployment with your data center resources as if running locally. A VNS3 network can be distributed across multiple public and private clouds to create one logical group of federated resource. VNS3 doesn't require new knowledge or training to implement, so you can integrate with existing network equipment.
 
-Technology from Cohesive Networks helps CenturyLink Cloud customers address the business challenge of secure connectivity by implementing numerous core network/security solutions in to one appliance.  
+Technology from Cohesive Networks helps CenturyLink Cloud customers address the business challenge of secure connectivity by implementing numerous core network/security solutions in to one appliance.
 
 Easily connect to your existing datacenter edges using industry standard IPsec and SSL VPN - now available as part of the CenturyLink Cloud Blueprint Engine.
 
@@ -37,7 +37,7 @@ VNS3 is a networking and security virtual appliance that lets you extend network
 The Cohesive Networks VNS3 solution also provides a Docker subsystem that can run container based network application services such as proxy, reverse proxy, SSL/TLS termination, load balancing, content cache, network intrusion detection (NIDS) and web application firewall (WAF).
 
 ### Offer
-Cohesive Networks has provided a Virtual Appliance - called a Partner Template - that can be deployed to your CenturyLink Cloud account via a Service Task.  Although Service Tasks are ordinarily billed to the end user account, CenturyLink will provide a refund for the Service Task costs associated with deploying the Cohesive Partner Template.  Please follow the process below to request credit. In order to purchase a license or entitlement, please contact Cohesive Networks Sales using the contact information above.  
+Cohesive Networks has provided a Virtual Appliance - called a Partner Template - that can be deployed to your CenturyLink Cloud account via a Service Task.  Although Service Tasks are ordinarily billed to the end user account, CenturyLink will provide a refund for the Service Task costs associated with deploying the Cohesive Partner Template.  Please follow the process below to request credit. In order to purchase a license or entitlement, please contact Cohesive Networks Sales using the contact information above.
 
 ### Audience
 CenturyLink Cloud Users
@@ -49,20 +49,20 @@ After executing the steps in this Getting Started document, the users will have 
 
 ### Prerequisite
 - Access to the CenturyLink Cloud platform as an authorized user.
-- Create a Network VLAN you want the Cohesive Networks VNS3 virtual appliance to reside on.  Creating a new VLAN follows best practices so users can secure the private VIPs with firewalls. Important:  Once you create a new VLAN, or if you use an existing VLAN, through the Control Portal navigate to Networks and then click on the specific VLAN you want to use.  Note down a free IP address, the network mask and the gateway address from the VLAN as these will be used when deploying the VNS3 manager appliance. 
+- Create a Network VLAN you want the Cohesive Networks VNS3 virtual appliance to reside on.  Creating a new VLAN follows best practices so users can secure the private VIPs with firewalls. Important:  Once you create a new VLAN, or if you use an existing VLAN, through the Control Portal navigate to Networks and then click on the specific VLAN you want to use.  Note down a free IP address, the network mask and the gateway address from the VLAN as these will be used when deploying the VNS3 manager appliance.
 - Configure a Client VPN so that you can securely connect to the VNS3 virtual appliance for configuration.  When accessing your CohesiveFT VNS3 virtual appliance for the first time, we recommend you connect to your CenturyLink Cloud environment via secure Client VPN.    For more information on configuring your Client VPN, please see the "how to configure client vpn" knowledge base article.
 - Ensure you have the proper firewall rule settings to allow VPN communication to the VLAN the VNS3 virtual appliance resides on.  For more information, see the "Creating cross data center firewall policies" knowledge base article.
 
 ### Postrequisite
 - If you want to access your Cohesive Networks VNS3 virtual appliance from the internet, please perform the following tasks once your VNS3 virtual appliance has been deployed to your account and has been configured:
 
-1. [Add a Public IP](../../../network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
+1. [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
 
-2. If required, [allow incoming traffic for the admin port](../../../network/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Servers Public IP in Control Portal.  Warning: Please make sure your VNS3 appliance firewall rules are properly configured to only allow specific source traffic.  If you do not configure source traffic rules you risk exposing your VNS3 appliance admin port to the entire internet.  Note: When accessing your CohesiveFT VNS3 virtual appliance for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
+2. If required, [allow incoming traffic for the admin port](../../Network/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Servers Public IP in Control Portal.  Warning: Please make sure your VNS3 appliance firewall rules are properly configured to only allow specific source traffic.  If you do not configure source traffic rules you risk exposing your VNS3 appliance admin port to the entire internet.  Note: When accessing your CohesiveFT VNS3 virtual appliance for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
 ![Admin Port Firewall Ports](https://cohesive.net/wp-content/uploads/2015/03/CohesiveNetworks_CL_port8000.png)
 
 ### Detailed Steps to Deploy Cohesive Networks VNS3 Partner Template
-Follow these step by step instructions to deploy a VNS3 virtual appliance in to your CenturyLink Cloud account:  
+Follow these step by step instructions to deploy a VNS3 virtual appliance in to your CenturyLink Cloud account:
 
 - Open a service task request ticket via email to ServiceTasks@Tier3.com with the following details.  You will need to edit some of the information below.
 
@@ -112,7 +112,7 @@ Once the Service Task team deploys your Cohesive Networks VNS3 virtual appliance
 - For support on how to configure your Cohesive Networks VNS3 virtual appliance, please visit the Cohesive support website at https://cohesive.net/support/support-contacts/
 
 ### Pricing
-There are no Cohesive Networks VNS3 license costs included.  The cost to deploy the Cohesive Networks VNS3 Partner Template will be billed as a Service Task, but CenturyLink will provide a credit for those costs.  In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees are available here: http://www.centurylinkcloud.com/service-tasks
+There are no Cohesive Networks VNS3 license costs included.  The cost to deploy the Cohesive Networks VNS3 Partner Template will be billed as a Service Task, but CenturyLink will provide a credit for those costs.  In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees are available here: http://www.ctl.io/service-tasks
 
 #### Process to request credit for Service Task fee
 Follow this process to request credit on your account to re-imburse any expense to deploy the Partner Template

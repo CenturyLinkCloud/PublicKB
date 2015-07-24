@@ -46,7 +46,7 @@
 <td>
 <pre>-H Proxy-User:sample@domain.tld</pre>
 </td>
-<td>This must contain the email address of the account with which you want to interact. This header is needed when making changes to a team account. You must be a <a href="/hc/en-us/articles/202315796">team member</a> of that account to accomplish this.</td>
+<td>This must contain the email address of the account with which you want to interact. This header is needed when making changes to a team account. You must be a <a href="teams.md">team member</a> of that account to accomplish this.</td>
 </tr>
 </tbody>
 </table>
@@ -81,15 +81,15 @@
 <td><a href="#user">USER</a></td>
 <td>
 <pre>{
-	"id":,
-	"email":"",
-	"plan":"",
-	"company":"",
-	"created_at":"",
-	"updated_at":"",
-	"uuid":"",
-	"deleted_at":"",
-	"admin":
+    "id":,
+    "email":"",
+    "plan":"",
+    "company":"",
+    "created_at":"",
+    "updated_at":"",
+    "uuid":"",
+    "deleted_at":"",
+    "admin":
 }</pre>
 </td>
 </tr>
@@ -97,23 +97,23 @@
 <td><a href="#service">SERVICE</a></td>
 <td>
 <pre>{
-	"name":"",
-	"type":"",
-	"vendor":"",
-	"provider":"",
-	"version":"",
-	"tier":"",
-	"properties":{},
-	"meta":{
-		"created":,
-		"updated":,
-		"tags":["","",""],
-		"version":
-	},
-	"infra":{
-		"provider":"",
-		"name":""
-	}
+    "name":"",
+    "type":"",
+    "vendor":"",
+    "provider":"",
+    "version":"",
+    "tier":"",
+    "properties":{},
+    "meta":{
+        "created":,
+        "updated":,
+        "tags":["","",""],
+        "version":
+    },
+    "infra":{
+        "provider":"",
+        "name":""
+    }
 }</pre>
 </td>
 </tr>
@@ -121,33 +121,33 @@
 <td><a href="#app">APP</a></td>
 <td>
 <pre>{
-	"name":"",
-	"staging":{
-		"model":"",
-		"stack":""
-	},
-	"uris":[],
-	"instances":,
-	"runningInstances":,
-	"resources":{
-		"memory":,
-		"disk":,
-		"fds":
-	},
-	"state":"",
-	"services":[],
-	"version":"",
-	"env":[],
-	"meta":{
-		"debug":,
-		"console":,
-		"version":,
-		"created":
-	},
-	"infra":{
-		"provider":"",
-		"name":""
-	}
+    "name":"",
+    "staging":{
+        "model":"",
+        "stack":""
+    },
+    "uris":[],
+    "instances":,
+    "runningInstances":,
+    "resources":{
+        "memory":,
+        "disk":,
+        "fds":
+    },
+    "state":"",
+    "services":[],
+    "version":"",
+    "env":[],
+    "meta":{
+        "debug":,
+        "console":,
+        "version":,
+        "created":
+    },
+    "infra":{
+        "provider":"",
+        "name":""
+    }
 }</pre>
 </td>
 </tr>
@@ -214,19 +214,19 @@
 <td><a href="#create_user">APP</a></td>
 <td>
 <pre>{
-	"name":"",
-	"staging":{
-		"framework":"",
-		"runtime":""
-	},
-	"uris":[],
-	"instances":,
-	"resources":{
-		"memory":
-	},
-	"infra":{
-		"provider":""
-	}
+    "name":"",
+    "staging":{
+        "framework":"",
+        "runtime":""
+    },
+    "uris":[],
+    "instances":,
+    "resources":{
+        "memory":
+    },
+    "infra":{
+        "provider":""
+    }
 }</pre>
 </td>
 </tr>
@@ -234,14 +234,14 @@
 <td><a href="#create_service">SERVICE</a></td>
 <td>
 <pre>{
-	"type":"",
-	"tier":"",
-	"vendor":"",
-	"version":"",
-	"infra":{
-		"provider":""
-	},
-	"name":""
+    "type":"",
+    "tier":"",
+    "vendor":"",
+    "version":"",
+    "infra":{
+        "provider":""
+    },
+    "name":""
 }</pre>
 </td>
 </tr>

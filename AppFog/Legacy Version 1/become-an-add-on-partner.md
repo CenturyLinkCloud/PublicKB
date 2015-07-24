@@ -27,7 +27,7 @@
 <li>Once the resource is provisioned, the partner makes a call to the callback URL, as specified in the initial provisioning call, and passes the new config parameters to be set.</li>
 <li>Once the config parameters are set, they are set as environment variables in the user's app and instructions are displayed to the user on how to perform the integration.</li>
 </ol>
-<p><img src="/hc/en-us/article_attachments/200812433/prov.workflow.jpeg" alt="Provisioning Workflow" /></p>
+
 <h3 id="callback">API Callback Spec</h3>
 <p>This is a method implemented by the AppFog services. It is used to update the configuration values for a given resource as provided by the add-on partner. The configuration parameters can be specified by the partner when the provisioning call is made by AppFog; however, if the call takes a while to process the partner can use this method to update those parameters later.</p>
 <p>PUT to path as defined in <code>callback_url</code> on provisioning call.</p>

@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-Joining [AppFog](http://www.centurylinkcloud.com/appfog) back in February became my first time working for a company using [Github](https://github.com/) [private repositories](https://github.com/pricing) for source control. My previous gig used [Bitbucket](https://bitbucket.org/) and [Mercurial](https://mercurial.selenic.com/), which we migrated to from self-hosted [SVN](http://subversion.apache.org/), which we migrated to from [SourceGear Vault](http://www.sourcegear.com/vault/), which we migrated to from [Visual Source Safe](https://msdn.microsoft.com/en-us/library/3h0544kx(v=vs.80).aspx)… etc. That’s how things go at a 12-year-old company, I guess. As a startup, AppFog can start off on the right foot and just use Github from the get-go. Yippee!
+Joining [AppFog](http://www.ctl.io/appfog) back in February became my first time working for a company using [Github](https://github.com/) [private repositories](https://github.com/pricing) for source control. My previous gig used [Bitbucket](https://bitbucket.org/) and [Mercurial](https://mercurial.selenic.com/), which we migrated to from self-hosted [SVN](http://subversion.apache.org/), which we migrated to from [SourceGear Vault](http://www.sourcegear.com/vault/), which we migrated to from [Visual Source Safe](https://msdn.microsoft.com/en-us/library/3h0544kx(v=vs.80).aspx)… etc. That’s how things go at a 12-year-old company, I guess. As a startup, AppFog can start off on the right foot and just use Github from the get-go. Yippee!
 
 I have used git and Github for a while in open source projects and know the typical workflow of forking and submitting pull requests. AppFog’s workflow is very similar. Here’s how we approach it.
 

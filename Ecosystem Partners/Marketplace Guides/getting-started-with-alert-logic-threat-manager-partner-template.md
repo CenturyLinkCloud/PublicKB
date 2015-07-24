@@ -8,7 +8,7 @@
 
 ![Alert Logic Logo](http://www.ingaa.org/File.aspx?id=21717)
 ###Partner Profile
-Alert Logic, the leader in security and compliance solutions for the cloud, provides Security-as-a-Service for on-premises, cloud, and hybrid infrastructures, delivering deep security insight and continuous protection for customers at a lower cost than traditional security solutions. Fully managed by a team of experts, the Alert Logic Security-as-a-Service solution provides network, system and web application protection immediately, wherever your IT infrastructure resides. Alert Logic partners with the leading cloud platforms and hosting providers to protect over 3,000 organizations worldwide. Built for cloud scale, our patented platform stores petabytes of data, analyses over 450 million events and identifies over 60,000 security incidents each month, which are managed by our 24x7 Security Operations Center. Alert Logic, founded in 2002, is headquartered in Houston, Texas, with offices in Seattle, Cardiff and London. 
+Alert Logic, the leader in security and compliance solutions for the cloud, provides Security-as-a-Service for on-premises, cloud, and hybrid infrastructures, delivering deep security insight and continuous protection for customers at a lower cost than traditional security solutions. Fully managed by a team of experts, the Alert Logic Security-as-a-Service solution provides network, system and web application protection immediately, wherever your IT infrastructure resides. Alert Logic partners with the leading cloud platforms and hosting providers to protect over 3,000 organizations worldwide. Built for cloud scale, our patented platform stores petabytes of data, analyses over 450 million events and identifies over 60,000 security incidents each month, which are managed by our 24x7 Security Operations Center. Alert Logic, founded in 2002, is headquartered in Houston, Texas, with offices in Seattle, Cardiff and London.
 
 http://www.AlertLogic.com
 
@@ -37,7 +37,7 @@ Alert Logic is making their Threat Manager available for CenturyLink Cloud Users
 CenturyLink Cloud Users
 
 ### Impact
-Alert Logic has provided a Virtual Appliance - called a Partner Template - that can be deployed to your CenturyLink Cloud account via a Service Task.  After reading this article, the user should feel comfortable deploying the Alert Logic Threat Manager technology on CenturyLink Cloud.  
+Alert Logic has provided a Virtual Appliance - called a Partner Template - that can be deployed to your CenturyLink Cloud account via a Service Task.  After reading this article, the user should feel comfortable deploying the Alert Logic Threat Manager technology on CenturyLink Cloud.
 
 ### Prerequisite
 - Access to the CenturyLink Cloud platform as an authorized user.
@@ -46,12 +46,12 @@ Alert Logic has provided a Virtual Appliance - called a Partner Template - that 
 ### Postrequisite
 - If you want to access your Alert Logic Threat Manager over the internet, please perform the following tasks once your Alert Logic Threat Manager has been deployed to your account:
 
-1. [Add a Public IP](../../../network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control
+1. [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control
 
-2. [Allow incoming traffic](../../../network/how-to-add-public-ip-to-virtual-machine.md) for ports 80 and 443 to access the Alert Logic Web Console by clicking on the Servers Public IP through Control Portal
+2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for ports 80 and 443 to access the Alert Logic Web Console by clicking on the Servers Public IP through Control Portal
 
 ### Detailed Steps to Deploy Alert Logic Threat Manager Partner Template
-Follow these step by step instructions to deploy a Alert Logic Threat Manager in to your CenturyLink Cloud account:  
+Follow these step by step instructions to deploy a Alert Logic Threat Manager in to your CenturyLink Cloud account:
 
 - Open a service task request ticket via email to ServiceTasks@Tier3.com with the following details.  You will need to edit some of the information below.
 
@@ -59,7 +59,7 @@ Follow these step by step instructions to deploy a Alert Logic Threat Manager in
 TO: ServiceTasks@Tier3.com
 
 EMAIL SUBJECT:   Custom Image Import Request for Ecosystem Partner Template
-    
+
 CLC Support Team,
 Please create a ticket to complete the following Service Task:
 
@@ -104,12 +104,12 @@ Follow these steps to access your Alert Logic Threat Manager:
 - For additional information on how to configure your Alert Logic Threat Manager, please visit the support website at http:///www.AlertLogic.com
 
 ### Pricing
-There are no Alert Logic license costs or additional fees bundled in. The cost to deploy the Alert Logic Threat Manager Partner Template will be billed as a Service Task. More information about Service Tasks and fees are available here: http://www.centurylinkcloud.com/service-tasks
+There are no Alert Logic license costs or additional fees bundled in. The cost to deploy the Alert Logic Threat Manager Partner Template will be billed as a Service Task. More information about Service Tasks and fees are available here: http://www.ctl.io/service-tasks
 
 ### Frequently Asked Questions
 Frequently Asked Questions:
 - #### Where do I obtain my Alert Logic License or entitlements?
-- Existing CenturyLink Enterprise Customers can contact their Account Representative for help obtaining a Alert Logic license, or contact Alert Logic directly: 
+- Existing CenturyLink Enterprise Customers can contact their Account Representative for help obtaining a Alert Logic license, or contact Alert Logic directly:
 -   Contact Alert Logic Support via telephone: +1.877.484.8383
 -   Contact Alert Logic via their website: http://www.AlertLogic.com
 -   Email Sales via support@alertlogic.com

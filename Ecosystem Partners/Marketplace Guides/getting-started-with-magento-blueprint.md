@@ -9,7 +9,7 @@
 ![logo](https://wiki.magento.com/download/attachments/2952491/MAGE2DOC?version=1&modificationDate=1378339878000&api=v2)
 
 ### Technology Profile
-Magento is one of the most popular open source ecommerce shopping cart systems. It is extremely flexible and has a huge variety of features to build just about any store. Features include SEO-readiness, multi-store support, marketing tools, deep analytics, catalog management, a robust shopping cart with support for multiple shipping addresses and more. The Magento project is backed by eBay, so you can be confident that it will be around for the long run, and it offers multiple editions, including small business and enterprise editions, to help grow with your business. Magento’s flexible, feature-rich open source and enterprise eCommerce solutions help you get the most from your online channel.  
+Magento is one of the most popular open source ecommerce shopping cart systems. It is extremely flexible and has a huge variety of features to build just about any store. Features include SEO-readiness, multi-store support, marketing tools, deep analytics, catalog management, a robust shopping cart with support for multiple shipping addresses and more. The Magento project is backed by eBay, so you can be confident that it will be around for the long run, and it offers multiple editions, including small business and enterprise editions, to help grow with your business. Magento’s flexible, feature-rich open source and enterprise eCommerce solutions help you get the most from your online channel.
 
 ### Description
 Magento Community Edition is the perfect solution if you're a developer or tech-savvy merchant that wants to explore the flexibility of the Magento eCommerce platform. You can modify—and even contribute to—the core code and engage with our passionate community for support and guidance.  This Blueprint will install and configure Magento 1.9.1.0-1 (64-bit) on Linux.
@@ -29,13 +29,13 @@ After reading this article, the user should feel comfortable getting started usi
 
 ### Postrequisite
 
-- If you need to connect to your server via internet, add a Public IP address to your server.  For more information view this link: http://www.centurylinkcloud.com/knowledge-base/network/how-to-add-public-ip-to-virtual-machine/
+- If you need to connect to your server via internet, add a Public IP address to your server.  For more information view this link: http://www.ctl.io/knowledge-base/network/how-to-add-public-ip-to-virtual-machine.md
 
-	![ip.jpg](https://t3n.zendesk.com/attachments/token/kObGC9P2IjP1ate0NexwFNiXz/?name=ip.jpg)
+    ![ip.jpg](https://t3n.zendesk.com/attachments/token/kObGC9P2IjP1ate0NexwFNiXz/?name=ip.jpg)
 
-- Allow incoming traffic for ports to an existing server by managing Firewall rules.  Fore more information, vie this link: http://www.centurylinkcloud.com/knowledge-base/network/creating-cross-data-center-firewall-policies/
+- Allow incoming traffic for ports to an existing server by managing Firewall rules.  Fore more information, vie this link: http://www.ctl.io/knowledge-base/network/creating-cross-data-center-firewall-policies/
 
-	![port.jpg](https://t3n.zendesk.com/attachments/token/1Ufw0JjIWW8XfASYLh4x3Irl9/?name=port.jpg)
+    ![port.jpg](https://t3n.zendesk.com/attachments/token/1Ufw0JjIWW8XfASYLh4x3Irl9/?name=port.jpg)
 
 
 ### Install Bitnami Magento on Linux Blueprint

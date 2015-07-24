@@ -6,11 +6,11 @@
   "contentIsHTML": true
 }}}
 
-<p><a href="http://redis-cloud.com" target="_blank">Redis Cloud</a> is a fully-managed service for running your Redis dataset. You can quickly and easily get your apps up and running with Redis Cloud on AppFog. You can then add as many Redis databases as you need (each running in a dedicated process, in a non-blocking manner) and increase or decrease the memory size of your plan without affecting your existing data. You can easily import an existing dataset to any of your Redis Cloud databases, from your AWS S3 account or from any other Redis server. Daily backups are performed automatically and in addition, you can backup your dataset manually at any given time.</p>
+<p><a href="http://redis-cloud.com">Redis Cloud</a> is a fully-managed service for running your Redis dataset. You can quickly and easily get your apps up and running with Redis Cloud on AppFog. You can then add as many Redis databases as you need (each running in a dedicated process, in a non-blocking manner) and increase or decrease the memory size of your plan without affecting your existing data. You can easily import an existing dataset to any of your Redis Cloud databases, from your AWS S3 account or from any other Redis server. Daily backups are performed automatically and in addition, you can backup your dataset manually at any given time.</p>
 <p>Note: Redis Cloud is currently only available on our AWS US-East infrastructure.</p>
 <h3>Install Redis Cloud</h3>
 <p>In the "Add-ons" tab on your app console click "Install" for the Redis Cloud add-on. That’s it!</p>
-<p>Once Redis Cloud has been added, you will notice a new enironment variable: <code>REDISCLOUD_URL</code> in the <code>Env variables</code> tab on your app console, containing the username, password, hostname and port of your first Redis Cloud database.</p>
+<p>Once Redis Cloud has been added, you will notice a new environment variable: <code>REDISCLOUD_URL</code> in the <code>Env variables</code> tab on your app console, containing the username, password, hostname and port of your first Redis Cloud database.</p>
 <p>Note: as database provisioning is carried out asynchronously, please wait until the creation and initialization of the database is complete. This process shouldn't take more than 60 seconds. You're ready to go when the "hostname" value in the <code>REDISCLOUD_URL</code> environment variable is different than your "localhost".</p>
 <p>Next, setup your app to start using the Redis Cloud add-on. In the following sections we have documented the interfaces with several languages and frameworks supported by AppFog.</p>
 <ul>
@@ -24,7 +24,7 @@
 <li><a href="#rediscloud-node">Node.js</a></li>
 </ul>
 <h3 id="rediscloud-ruby">Using Redis from Ruby</h3>
-<p>The <a href="https://github.com/redis/redis-rb" target="_blank">redis-rb</a> is a very stable and mature redis client and the easiest way to access Redis from Ruby.</p>
+<p>The <a href="https://github.com/redis/redis-rb">redis-rb</a> is a very stable and mature redis client and the easiest way to access Redis from Ruby.</p>
 <p>Install redis-rb:</p>
 <pre>$ gem install redis</pre>
 <h4 id="rediscloud-rails">Configuring Redis from Rails</h4>
@@ -54,7 +54,7 @@ end</pre>
 redis.get("foo")
 # =&gt; "bar"</pre>
 <h3 id="rediscloud-java">Using Redis from Java</h3>
-<p><a href="https://github.com/xetorthio/jedis" target="_blank">Jedis</a> is a blazingly small, sane and easy to use Redis java client. You can download the latest build from <a href="https://github.com/xetorthio/jedis/releases" target="_blank">github</a> or use it as a maven dependency:</p>
+<p><a href="https://github.com/xetorthio/jedis">Jedis</a> is a blazingly small, sane and easy to use Redis java client. You can download the latest build from <a href="https://github.com/xetorthio/jedis/releases">github</a> or use it as a maven dependency:</p>
 <pre>&lt;dependency&gt;
     &lt;groupId&gt;redis.clients&lt;/groupId&gt;
     &lt;artifactId&gt;jedis&lt;/artifactId&gt;
@@ -81,7 +81,7 @@ String value = jedis.get("foo");
 pool.returnResource(jedis);</pre>
 <p>(example taken from Jedis docs).</p>
 <h3 id="rediscloud-python">Using Redis from Python</h3>
-<p><a href="https://github.com/andymccurdy/redis-py" target="_blank">redis-py</a> is the most common client to access Redis from Python.</p>
+<p><a href="https://github.com/andymccurdy/redis-py">redis-py</a> is the most common client to access Redis from Python.</p>
 <p>Use pip to install it:</p>
 <pre>$ pip install redis</pre>
 <p>Configure connection to your Redis-Cloud service using <code>REDISCLOUD_URL</code> environment variable and the following code snippet:</p>
@@ -95,7 +95,7 @@ r = redis.Redis(host=url.hostname, port=url.port, password=url.password)</pre>
 True
 &gt;&gt;&gt; r.get('foo')
 'bar'</pre>
-<h4 id="rediscloud-django"><a href="https://github.com/sebleier/django-redis-cache" target="_blank">Django-redis-cache</a></h4>
+<h4 id="rediscloud-django"><a href="https://github.com/sebleier/django-redis-cache">Django-redis-cache</a></h4>
 <p>Redis can be used as the back-end cache for Django.</p>
 <p>To do so, install django-redis-cache:</p>
 <pre>$ pip install django-redis-cache</pre>
@@ -118,8 +118,8 @@ CACHES = {
 cache.set("foo", "bar")
 print cache.get("foo")</pre>
 <h3 id="rediscloud-php">Using Redis from PHP</h3>
-<p><a href="https://github.com/nrk/predis" target="_blank">Predis</a> is a flexible and feature-complete PHP client library for Redis.</p>
-<p>Instructions for installing the <a href="https://github.com/nrk/predis" target="_blank">Predis</a> library can be found <a href="https://github.com/nrk/predis#how-to-use-predis" target="_blank">here</a>.</p>
+<p><a href="https://github.com/nrk/predis">Predis</a> is a flexible and feature-complete PHP client library for Redis.</p>
+<p>Instructions for installing the <a href="https://github.com/nrk/predis">Predis</a> library can be found <a href="https://github.com/nrk/predis#how-to-use-predis">here</a>.</p>
 <p>Loading the library to your project should be straightforward:</p>
 <pre>&lt;?php
 // prepend a base path if Predis is not present in your "include_path".
@@ -135,7 +135,7 @@ Predis\Autoloader::register();</pre>
 <pre>$redis-&gt;set('foo', 'bar');
 $value = $redis-&gt;get('foo');</pre>
 <h3 id="rediscloud-node">Using Redis from Node.js</h3>
-<p><a href="https://github.com/mranney/node_redis" target="_blank">node_redis</a> is a complete Redis client for node.js.</p>
+<p><a href="https://github.com/mranney/node_redis">node_redis</a> is a complete Redis client for node.js.</p>
 <p>You can install it with:</p>
 <pre>$ npm install redis</pre>
 <p>Configure connection to your Redis-Cloud service using <code>REDISCLOUD_URL</code> environment variable and the following code snippet:</p>
@@ -162,9 +162,9 @@ client.get('foo', function (err, reply) {
 <h3>Pricing</h3>
 <p>The Redis Cloud AppFog add-on is in beta phase and is currently offered for free.</p>
 <h3>Support</h3>
-<p>All Redis Cloud support and runtime issues should be submitted to <a href="/hc/en-us" target="_blank">AppFog Support</a>. You may <a href="https://redislabs.com/contact" target="_blank&quot;">Contact Redis Labs</a> with any non-support related issues or product feedback.</p>
+<p>All Redis Cloud support and runtime issues should be submitted to <a href="http://support.appfog.com">AppFog Support</a>. You may <a href="https://redislabs.com/contact" target="_blank&quot;">Contact Redis Labs</a> with any non-support related issues or product feedback.</p>
 <h3>Additional resources</h3>
 <ul>
-<li><a href="http://redis-cloud.com/redis/developers" target="_blank">Developers Resources</a></li>
-<li><a href="http://redis.io/documentation" target="_blank">Redis Documentation</a></li>
+<li><a href="http://redis-cloud.com/redis/developers">Developers Resources</a></li>
+<li><a href="http://redis.io/documentation">Redis Documentation</a></li>
 </ul>

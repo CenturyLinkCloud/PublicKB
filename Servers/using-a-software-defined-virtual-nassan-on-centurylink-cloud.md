@@ -7,7 +7,7 @@
 }}}
 
 ### Using a Software-Defined Virtual NAS/SAN on CenturyLink Cloud
-Customers looking to operate CIFS, NFS or iSCSI services within the cloud platform can import software-defined virtual appliances via a [service task](//www.centurylinkcloud.com/products/support/service-tasks). By using a **qualified** unified storage virtual appliance customers can deliver NAS based storage services to virtual instances, pool disks to exceed 1 TB disk limits imposed by the cloud platform or deliver legacy shared-storage iSCSI volumes for database clusters. In this knowledge base we will be using a [SoftNAS](//www.softnas.com) Virtual Appliance. [SoftNAS](//www.softnas.com) is a software-defined unified NAS/SAN storage solution for businesses that need powerful, frictionless and agile storage.
+Customers looking to operate CIFS, NFS or iSCSI services within the cloud platform can import software-defined virtual appliances via a [service task](//www.ctl.io/products/support/service-tasks). By using a **qualified** unified storage virtual appliance customers can deliver NAS based storage services to virtual instances, pool disks to exceed 1 TB disk limits imposed by the cloud platform or deliver legacy shared-storage iSCSI volumes for database clusters. In this knowledge base we will be using a [SoftNAS](//www.softnas.com) Virtual Appliance. [SoftNAS](//www.softnas.com) is a software-defined unified NAS/SAN storage solution for businesses that need powerful, frictionless and agile storage.
 
 ### Supporting Information
 CenturyLink Cloud provides no support for the SoftNAS virtual appliance. The goal of this KB is to provide a sample use case to deliver unified storage services within the parameters of the cloud platform. Customers are responsible for configuration and sizing of the virtual appliance resources according to the vendors best practices. There are a large number of configuration options/customization's not covered in this KB and customers should read the installation guides provided by SoftNAS.
@@ -18,7 +18,7 @@ In this sample deployment no security services were put in place around access t
 ### Prerequisites
 
 * A CenturyLink Cloud Account
-* [Service Task for OVF Import](//www.centurylinkcloud.com/products/support/service-tasks)
+* [Service Task for OVF Import](//www.ctl.io/products/support/service-tasks)
 * [A licensed copy of SoftNAS](//www.softnas.com/wp/purchase)
 
 ### Basic Configuration of the Virtual Appliance

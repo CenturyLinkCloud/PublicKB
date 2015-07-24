@@ -19,7 +19,7 @@ In order to activate a plugin you will need to download a WordPress Plugin and u
 
 ##Deploying a WordPress Plugin Using the Git CLI
 
-1. [Clone your WordPress Git Repo](wordpress-clone-push-gitlab.md "Clone your WordPress Git Repo")
+1. Clone your WordPress Git Repo
 
 2. Open the wp-content folder.
 
@@ -66,7 +66,7 @@ In order to activate a plugin you will need to download a WordPress Plugin and u
 11. The CLI will then output file creation.
 
   ![](../images/wp_plugin_installation/wp_plugin_installation_10.png)
-  
+
 12. Run `git push` to push changes back to your Git Repository and force a restart of your WordPress site.
 
   ![](../images/wp_plugin_installation/wp_plugin_installation_11.png)

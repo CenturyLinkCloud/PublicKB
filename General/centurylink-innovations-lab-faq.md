@@ -24,11 +24,11 @@ To learn more about the projects produced by the Innovations Lab, please visit: 
 In addition to its open source software projects, the Lab makes much of its research available online through the following:
 - The [blog](http://www.centurylinklabs.com/blog/) has over 100 helpful posts on recommended development patterns, code and configuration examples, deployment best practices, and more, all focused on Docker and container-based systems.
 - Sign-up for the [weekly newsletter](http://www.centurylinklabs.com/) to receive useful insights and advice, industry news, interesting projects, and relevant job postings.
-- Helpful [tutorials]((http://www.centurylinklabs.com/tutorials/) provide real-world "How To" examples for configuring, deploying, and managing Docker applications and container-related technologies.
+- Helpful [tutorials](http://www.centurylinklabs.com/tutorials/) provide real-world "How To" examples for configuring, deploying, and managing Docker applications and container-related technologies.
 - Get the inside scoop on what all the fuss is about, industry trends, and interesting start-ups from [interviews](http://www.centurylinklabs.com/interviews/) with industry leaders, technologists and entrepreneurs, hosted by **Lucas Carlson**. These interviews are also available as [podcasts](http://www.centurylinklabs.com/podcasts/).
 
 #### What is the relationship between the CenturyLink Innovations Lab to the CenturyLink Cloud team?
-The Innovations Lab explores technologies and ideas not yet ready for Production usage, while the [CenturyLink Cloud](http://www.centurylinkcloud.com/) offers products, support and professional services teams to effectively service the demanding requirements of Production workloads.
+The Innovations Lab explores technologies and ideas not yet ready for Production usage, while the [CenturyLink Cloud](http://www.ctl.io/) offers products, support and professional services teams to effectively service the demanding requirements of Production workloads.
 
 #### How can I get support for the Lab's Open Source Software projects?
 Software from the Innovations Lab software is free, but comes without any guarantee or commercial support. For help, we recommend that you confirm you've carefully followed the instructions on the project's Github page (typically found in the "readme.md" file). If you are still experiencing issues, consider these options:

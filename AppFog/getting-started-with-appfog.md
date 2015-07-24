@@ -35,3 +35,11 @@ Navigate to AppFog using either navigation approach and now it is time to enable
 ![AppFog Overview](../images/appfog-overview.png)
 
 If the region has already been enabled then there the region will be a link to the region overview page and no "add region" button will be displayed on the region row.
+
+### Where to Go From Here?
+
+Now that you have AppFog enabled on your account you can manage membership to regions and spaces, login from terminal and deploy an application.
+
+* [Manage AppFog Region and Space Membership](manage-appfog-membership.md)
+* [Login to AppFog using Cloud Foundry CLI](login-using-cf-cli.md)
+* [Deploy an Application to AppFog](deploy-an-application.md)

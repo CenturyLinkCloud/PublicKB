@@ -6,20 +6,25 @@
   "contentIsHTML": false
 }}}
 
-### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.
+### IMPORTANT NOTE
+
+CenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
+
+During the Limited Beta there is no production Service Level Agreement.
+
 ## Overview
 
-[WordPress](http://www.wordpress.org) is a free open-source blogging tool and content management system (CMS) based on PHP and MySQL.
+[WordPress](http://www.wordpress.org "WordPress.org") is a free open-source blogging tool and content management system (CMS) based on PHP and MySQL.
 
 CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-based WordPress installation for enterprise level customers.
 
 ### Prerequisites
 
 * Access to the CenturyLink Cloud platform as an authorized user.
- 
+
 ## Configuring a New WordPress Site
 
-1. Browse to the [CenturyLink Cloud WordPress Site Creation Login](https://wordpress.ctl.io)
+1. Browse to the [CenturyLink Cloud WordPress Site Creation Login](https://wordpress.ctl.io "CenturyLink Cloud WordPress Site Creation Login")
 
   ![](../images/wp_getting_started/wp_getting_started_1.png)
 
@@ -49,34 +54,34 @@ CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-
 
 8. This will take you to your WordPress site's repository
 
-	  ![](../images/wp_getting_started/wp_getting_started_8.png)
-  
+      ![](../images/wp_getting_started/wp_getting_started_8.png)
+
 ## Frequently Asked Questions
 
 **Q: What are the differences between a standard WordPress install and a CenturyLink Cloud WordPress install?**
 
-A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge base article for known WordPress Limitaions](../WordPress/wordpress-known-limitations.md).
+A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge base article for known WordPress Limitaions](wordpress-known-limitations.md "knowledge base article for known WordPress Limitaions").
 
 **Q: How do I migrate my existing WordPress Site to CenturyLink WordPress as a Service?**
 
-A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge base article for manually migrating a WordPress site to CenturyLink Cloud](../WordPress/wordpress-site-migration-to-centurylink-cloud.md).
+A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge base article for manually migrating a WordPress site to CenturyLink Cloud](wordpress-site-migration-to-centurylink-cloud.md "knowledge base article for manually migrating a WordPress site to CenturyLink Cloud").
 
 **Q: Can I have persistent storage with CenturyLink Cloud WordPress as a Service?**
 
-A: WordPress persistent storage must be [configured  with CenturyLink Cloud Object Storage](../WordPress/wordpress-persistent-storage-configuration.md).
+A: WordPress persistent storage must be [configured  with CenturyLink Cloud Object Storage](wordpress-persistent-storage-configuration.md "How to Configure WordPress Persistent Storage").
 
 **Q: How do I access the MySQL database for my WordPress Site?**
 
-A: You can [access your WordPress database using phpMyAdmin](../WordPress/wordpress-database-access-with-phpmyadmin.md).
+A: You can [access your WordPress database using phpMyAdmin](wordpress-database-access-with-phpmyadmin.md "How to access MySQL with phpMyAdmin").
 
 **Q: How do I install plugins and themes to my WordPress Site?**
 
-A: You can [push plugins and themes to your WordPress site using your git repository](../WordPress/wordpress-plugin-installation.md).
+A: You can [push plugins and themes to your WordPress site using your git repository](wordpress-plugin-installation.md "How to access MySQL with phpMyAdmin").
 
 **Q: How do I send email (such as password resets) with my WordPress Site?**
 
-A: You must [configure SMTP for your WordPress site](../WordPress/wordpress-SMTP-Configuration.md) in order to send email.
+A: You must [configure SMTP for your WordPress site](wordpress-SMTP-Configuration.md "How to access MySQL with phpMyAdmin") in order to send email.
 
 **Q: Can I configure my own domain with CenturyLink Cloud WordPress as a Service?**
 
-A: You can [configure your own domain name](../WordPress/wordpress-custom-domain-configuration.md) via the CenturyLink Cloud Portal.chrom
+A: You can [configure your own domain name](wordpress-custom-domain-configuration.md) via the CenturyLink Cloud Portal.

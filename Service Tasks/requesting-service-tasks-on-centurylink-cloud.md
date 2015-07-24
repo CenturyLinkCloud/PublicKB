@@ -11,7 +11,7 @@
   date for the task. </p>
 <ul>
   <li>Service task estimation and duties are performed during business hours, Monday-Friday, 9am-5pm Pacific Time.</li>
-  <li>The types of tasks we can perform on your behalf are listed on our website here:&nbsp;<a href="http://www.centurylinkcloud.com/products/support/service-tasks">List of Service Tasks and Associated Costs</a>.</li>
+  <li>The types of tasks we can perform on your behalf are listed on our website here:&nbsp;<a href="http://www.ctl.io/products/support/service-tasks">List of Service Tasks and Associated Costs</a>.</li>
 </ul>
 <h3><strong>Audience</strong></h3>
 <ul>

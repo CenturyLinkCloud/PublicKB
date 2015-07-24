@@ -14,7 +14,7 @@
 
 * __Patching as a Service.__ Now available for free to all CenturyLink customers using Windows 2012. Our customers can patch their Windows 2012 servers through blueprints or 'execute package' on demand via the Control Portal or API. The service provides the capability to patch servers, know when the patching started and finished as well as list of all patches applied. [You can learn more about Patching as a Service in our KB.](../Servers/patching-as-a-service.md)
 
-* __Orchestrate.__ Our multi-modal managed datatabse service, [Orchestrate](https:./www.centurylinkcloud.com/blog/post/centurylink-acquires-orchestrate/), gives developers a single API for key-value, geospatial, graph, and timeseries data. And it just keeps getting better and better! Check out the new functionality delivered this month, focused on usability and exposing API features:
+* __Orchestrate.__ Our multi-modal managed datatabse service, [Orchestrate](https:./www.ctl.io/blog/post/centurylink-acquires-orchestrate/), gives developers a single API for key-value, geospatial, graph, and timeseries data. And it just keeps getting better and better! Check out the new functionality delivered this month, focused on usability and exposing API features:
 
   * New dashboard query form. Explore the full glory of Orchestrate's API with the newly updated dashboard UI.
   * New bulk write API.  Write up to 250 documents, events, and graph relations in one request.
@@ -27,7 +27,7 @@
   * Get an intra-DC firewall policy list
   * Update an intra-DC firewall policy
 
-  [**Review the documentation for APIs here.**](//www.centurylinkcloud.com/api-docs/v2/#firewall-policies)
+  [**Review the documentation for APIs here.**](//www.ctl.io/api-docs/v2/#firewall-policies)
 
 
 ###Minor Enhancements (3)###
@@ -49,7 +49,7 @@
 
 * __New Domains.__ Effective March 5, the default CenturyLink Cloud domain was updated to control.ctl.io. The URL for SAML users has also been updated to https:./[`account-alias`].cloudportal.io (where `account-alias` is your four-letter account identifier). __Please update any code that leverages the CenturyLink Cloud API to ensure that it uses the supported endpoint.__ The legacy domains will continue to operate until July 15.
 
-* __AppFog Limited Beta.__ Beta access for AppFog continues to be available. Based on Cloud Foundry v2, this new platform for applications makes it easier for developers to build and scale cloud-native applications. To sign-up, visit [the AppFog product page](//www.centurylinkcloud.com/appfog/).
+* __AppFog Limited Beta.__ Beta access for AppFog continues to be available. Based on Cloud Foundry v2, this new platform for applications makes it easier for developers to build and scale cloud-native applications. To sign-up, visit [the AppFog product page](//www.ctl.io/appfog/).
 
 
 ###Ecosystem: New Blueprints (5)###

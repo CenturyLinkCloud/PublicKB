@@ -14,9 +14,9 @@
 
 ### Reference Material
 
-+ [Understanding VM Deployment Options &amp; Power States](https://www.centurylinkcloud.com/knowledge-base/servers/understanding-vm-deployment-options-and-power-states/)
-+ [Creating a Scheduled Task](https://www.centurylinkcloud.com/knowledge-base/servers/creating-a-scheduled-task/)
-+ [Creating &amp; Applying Autoscale Policies](https://www.centurylinkcloud.com/knowledge-base/autoscale/creating-and-applying-autoscale-policies/)
++ [Understanding VM Deployment Options &amp; Power States](https://www.ctl.io/knowledge-base/servers/understanding-vm-deployment-options-and-power-states/)
++ [Creating a Scheduled Task](https://www.ctl.io/knowledge-base/servers/creating-a-scheduled-task/)
++ [Creating &amp; Applying Autoscale Policies](https://www.ctl.io/knowledge-base/autoscale/creating-and-applying-autoscale-policies/)
 
 ### Pausing
 Pausing is the act of suspending a virtual machine; virtual machines in a paused state are not billed for compute (RAM,CPU) usage- only storage consumption and licensing costs. Individual machines or entire groups can easily be paused through our Control

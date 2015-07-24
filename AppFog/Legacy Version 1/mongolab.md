@@ -40,6 +40,6 @@
     }
 ?&gt;
 </pre>
-<p>You can find more information on using a MongoDB from a PHP app <a href="http://php.net/manual/en/class.mongodb.php" target="_blank">here</a>.</p>
+<p>You can find more information on using a MongoDB from a PHP app <a href="http://php.net/manual/en/class.mongodb.php">here</a>.</p>
 <h3>MongoLab Admin Panel</h3>
 <p>In the "Add-ons" tab in your app console, click on the "Manage" button for the MongoLab add-on. This will take you to your MongoLab account where you can make configuration changes and upgrade your MongoLab account.</p>

@@ -23,7 +23,7 @@ By leveraging [CenturyLink Cloud Public Blueprints](../Blueprints/centurylink-cl
 
 ### EXCEPTIONS
 
-* Customers who wish to leverage Managed Services should use the [Managed Microsoft IIS blueprint.](../Managed Servers/getting-started-with-managed-microsoft-iis.md)
+* Customers who wish to leverage Managed Services should use the [Managed Microsoft IIS blueprint.](../Managed Services/getting-started-with-managed-microsoft-iis.md)
 
 ### Perform Install IIS on Windows using Group Tasks
 

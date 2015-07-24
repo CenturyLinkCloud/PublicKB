@@ -20,8 +20,8 @@ Customers frequently request information on the Disaster Recovery and Business C
 |Network Failover|No<sup>3</sup>|Not required, network failover is addressed architecturally as redundant instances deployed in multiple data centers for data replication and rapid activation.
 |Declaration of Disaster|CenturyLink Cloud|Customer
 
-1.  **RPO and RTO figures are objectives, not SLA's.  [Review CenturyLink Cloud SLA's](https://www.centurylinkcloud.com/legal/sla) for more information.**
-2.  **Refer to [CenturyLinkCloud.com](http://www.centurylinkcloud.com) for service task overview and costs for DR Testing of VM Instances on premium storage**
+1.  **RPO and RTO figures are objectives, not SLA's.  [Review CenturyLink Cloud SLA's](https://www.ctl.io/legal/sla) for more information.**
+2.  **Refer to [CenturyLinkCloud.com](http://www.ctl.io) for service task overview and costs for DR Testing of VM Instances on premium storage**
 3.  **includes virtual machine failover only**
 
 ### Exclusions

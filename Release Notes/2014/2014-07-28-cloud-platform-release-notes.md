@@ -33,7 +33,7 @@
   <li><strong>Managed Services. </strong>Combining&nbsp;CenturyLink’s expertise in both the cloud and managed services spaces, users (CenturyLink-managed customers only) will now see a "managed server" option&nbsp;when creating a server, allowing them to
     enable managed services with just one click, the ease of a cloud utility, and pay-by-the hour billing. Currently, the available managed services are Microsoft Windows Server (2008 and 2012), Red Hat Enterprise Linux 6.5, Active Directory, Apache HTTP
     Server, Microsoft IIS, MS SQL, MySQL, and Tomcat, with more rolling out in the coming months.&nbsp;The configuration, monitoring, and ongoing administration as well as the provisioning of each of these services is also automated via our Blueprints
-    orchestration engine. Managed services are available in Sterling and Santa Clara data centers only at this time, with additional sites online in the coming months. Read more about managed services on our <a href="http://www.centurylinkcloud.com/managed-services"
+    orchestration engine. Managed services are available in Sterling and Santa Clara data centers only at this time, with additional sites online in the coming months. Read more about managed services on our <a href="http://www.ctl.io/managed-services"
    >web site</a> and in our <a href="https://t3n.zendesk.com/categories/20074004-Managed-Services">Knowledge Base</a>.
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/5bBJQEkZAT4zzRmRIs8bEfEBv/?name=create-managed-server.png" alt="create-managed-server.png" />

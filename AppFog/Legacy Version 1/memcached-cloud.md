@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p><a href="http://redislabs.com/memcached-cloud" target="_blank">Memcached Cloud</a> is a fully-managed service that operates your Memcached in a reliable and fail-safe manner. Your dataset is constantly replicated, so if a node fails, an automatic failover mechanism guarantees that your data is served without interruption. Memcached Cloud provides various data persistence options as well as remote backups for disaster recovery purposes. You can quickly and easily get your apps up and running with Memcached Cloud through its add-on for AppFog, just tell us how much memory you need and start using your Memcached bucket instantly.</p>
+<p><a href="http://redislabs.com/memcached-cloud">Memcached Cloud</a> is a fully-managed service that operates your Memcached in a reliable and fail-safe manner. Your dataset is constantly replicated, so if a node fails, an automatic failover mechanism guarantees that your data is served without interruption. Memcached Cloud provides various data persistence options as well as remote backups for disaster recovery purposes. You can quickly and easily get your apps up and running with Memcached Cloud through its add-on for AppFog, just tell us how much memory you need and start using your Memcached bucket instantly.</p>
 <p>A Memcached bucket is created in seconds and from that moment on, all operations are fully automated. The service completely frees developers from dealing with nodes, clusters, server lists, scaling and failure recovery, while guaranteeing absolutely no data loss.</p>
 <h2>Getting Started</h2>
 <p>In the "Add-ons" tab on your app console click "Install" for the <code>Memcached Cloud</code> add-on. That's it!</p>
@@ -23,7 +23,7 @@
 <li><a href="#php">PHP</a></li>
 </ul>
 <h2><a id="ruby"></a>Using Memcached with Ruby</h2>
-<p><a href="https://github.com/mperham/dalli" target="_blank">Dalli</a> is a high performance, pure Ruby client for accessing Memcached servers that uses binary protocol.</p>
+<p><a href="https://github.com/mperham/dalli">Dalli</a> is a high performance, pure Ruby client for accessing Memcached servers that uses binary protocol.</p>
 <h3><a id="rails"></a>Configuring Memcached on Rails</h3>
 <p>To use Dalli with Rails 3.x, update your gems with:</p>
 <pre>:::ruby
@@ -53,7 +53,7 @@ $cache.set("foo", "bar")
 $cache.get("foo")
 # =&gt; "bar"</pre>
 <h2><a id="java"></a>Using Memcached with Java</h2>
-<p><a href="https://code.google.com/p/spymemcached/" target="_blank">spymemcached</a> is a simple, asynchronous, single-threaded Memcached client written in Java. You can download the latest build from: <a href="https://code.google.com/p/spymemcached/downloads/list" target="_blank">https://code.google.com/p/spymemcached/downloads/list</a>. If you are using <code>Maven</code>, start by adding the following repository:</p>
+<p><a href="https://code.google.com/p/spymemcached/">spymemcached</a> is a simple, asynchronous, single-threaded Memcached client written in Java. You can download the latest build from: <a href="https://code.google.com/p/spymemcached/downloads/list">https://code.google.com/p/spymemcached/downloads/list</a>. If you are using <code>Maven</code>, start by adding the following repository:</p>
 <pre>:::java
 &lt;repositories&gt;
     &lt;repository&gt;
@@ -94,7 +94,7 @@ try {
 mc.set("foo", 0, "bar");
 Object value = mc.get("foo");</pre>
 <h2><a id="python"></a>Using Memcached with Python</h2>
-<p><a href="https://github.com/jaysonsantos/python-binary-memcached" target="_blank">bmemcached</a> is a pure, thread safe, python module to access memcached via binary protocol.</p>
+<p><a href="https://github.com/jaysonsantos/python-binary-memcached">bmemcached</a> is a pure, thread safe, python module to access memcached via binary protocol.</p>
 <p>Use <code>pip</code> to install it:</p>
 <pre>:::term
 pip install python-binary-memcached</pre>
@@ -111,7 +111,7 @@ mc = bmemcached.Client(os.environ.get('MEMCACHEDCLOUD_URL').split(','), os.envir
 mc.set('foo', 'bar')
 print client.get('foo')</pre>
 <h3><a id="django"></a>Using Memcached with Django</h3>
-<p>Memcached Cloud can be used as a Django cache backend with <a href="https://github.com/jaysonsantos/django-bmemcached" target="_blank">django-bmemcached</a>.</p>
+<p>Memcached Cloud can be used as a Django cache backend with <a href="https://github.com/jaysonsantos/django-bmemcached">django-bmemcached</a>.</p>
 <p>To do so, install django-bmemcached:</p>
 <pre>:::term
 pip install django-bmemcached</pre>
@@ -137,7 +137,7 @@ from django.core.cache import cache
 cache.set("foo", "bar")
 print cache.get("foo")</pre>
 <h2><a id="php"></a>Using Memcached with PHP</h2>
-<p><a href="https://github.com/ronnywang/PHPMemcacheSASL" target="_blank">PHPMemcacheSASL</a> is a simple PHP class with SASL support.</p>
+<p><a href="https://github.com/ronnywang/PHPMemcacheSASL">PHPMemcacheSASL</a> is a simple PHP class with SASL support.</p>
 <p>Include the class in your project and configure a connection to your Memcached Cloud service using the <code>MEMCACHEDCLOUD``Env variables</code> and the following code snippet:</p>
 <pre>&lt;?php
 include('MemcacheSASL.php');
@@ -161,10 +161,10 @@ echo $mc-&gt;get("foo");</pre>
 <p>Your first Memcached bucket is provisioned automatically upon launching the Memcached Cloud add-on. Its servers and credentials are maintained with the <code>MEMCACHEDCLOUD</code> env. vars. To add more buckets, simply access your Memcached Cloud console and click the <code>Add Bucket</code> button in the <code>MY BUCKETS &gt; Manage</code> page.</p>
 <p>Your new Memcached bucket's server and credentials will be displayed in the Memcached Cloud console.</p>
 <h2>Support</h2>
-<p>All Memcached Cloud support and runtime issues should be submitted to <a href="/hc/en-us" target="_blank">AppFog Support.</a></p>
-<p>Any non-support related issues or product feedback is welcome via email at <a href="https://redislabs.com/contact" target="_blank">info@redislabs.com</a>.</p>
+<p>All Memcached Cloud support and runtime issues should be submitted to <a href="http://support.appfog.com">AppFog Support.</a></p>
+<p>Any non-support related issues or product feedback is welcome via email at <a href="https://redislabs.com/contact">info@redislabs.com</a>.</p>
 <h2>Additional Resources</h2>
 <ul>
-<li><a href="http://redislabs.com/php-memcached" target="_blank">Developers Resources</a></li>
-<li><a href="https://code.google.com/p/memcached/wiki/NewStart" target="_blank">Memcached Wiki</a></li>
+<li><a href="http://redislabs.com/php-memcached">Developers Resources</a></li>
+<li><a href="https://code.google.com/p/memcached/wiki/NewStart">Memcached Wiki</a></li>
 </ul>

@@ -18,7 +18,7 @@ SoftNAS is the #1 best-selling NAS in the cloud and believes that storage can be
 ### Contact SoftNAS
 #### SoftNAS Sales and Support:
 - Support Email: [support@softnas.com](mailto:support@softnas.com)
-- Support Phone: 1-888-801-7524, Option 4. 
+- Support Phone: 1-888-801-7524, Option 4.
 - Support Web: [https://www.softnas.com/wp/support/](https://www.softnas.com/wp/support/)
 - Sales Email: [sales@softnas.com](mailto:sales@softnas.com)
 - Sales Phone: 1-888-801-7524, Option 1
@@ -29,7 +29,7 @@ SoftNAS has integrated their Cloud File Gateway and NAS technology with the Cent
 For more information including whitepapers and data sheets, please view the product information and documentation on [SoftNAS website](https://www.softnas.com/wp/support/documentation/).
 
 ### Solution Overview
-SoftNAS Cloud is an enterprise-grade, full-featured cloud NAS filer and cloud storage gateway. Safely migrate business-critical applications to the CenturyLink Cloud without a physical storage appliance. Quick and easy to deploy, any IT professional can install and configure SoftNAS in minutes without specialized training. High-availability is included at no extra cost for CenturyLink Cloud users who deploy the two requisite instances. 
+SoftNAS Cloud is an enterprise-grade, full-featured cloud NAS filer and cloud storage gateway. Safely migrate business-critical applications to the CenturyLink Cloud without a physical storage appliance. Quick and easy to deploy, any IT professional can install and configure SoftNAS in minutes without specialized training. High-availability is included at no extra cost for CenturyLink Cloud users who deploy the two requisite instances.
 
 SoftNAS Cloud runs as a Linux-based, 64-bit CentOS redistribution guest OS, treated as a VM in a virtual server environment. In many use cases, storage devices are attached to the physical hardware layer, then presented to SoftNAS Cloud as a VM running Linux.
 
@@ -39,7 +39,7 @@ An Apache webserver provides robust, secure access along with Secure Shell (SSH)
 
 SoftNAS Cloud is packaged with a primary administration interface called SoftNAS StorageCenter, which provides commercial-grade storage administration and management functionalities for businesses of all sizes.
 
-#### Key Features: 
+#### Key Features:
 
 - NFS, CIFS and iSCSI support
 - Connects to popular Cloud Storage services
@@ -58,7 +58,7 @@ SoftNAS has provided a Virtual Appliance - called a Partner Template - that can 
 CenturyLink Cloud Users, Storage Administrators, IT Managers
 
 ### Impact
-After reading this article, the user should feel comfortable deploying the SoftNAS Cloud File Gateway technology on CenturyLink Cloud.  SoftNAS has provided a Virtual Appliance, what CenturyLink Cloud calls a Partner Template, that can be deployed to your CenturyLink Cloud account via a Service Task.  
+After reading this article, the user should feel comfortable deploying the SoftNAS Cloud File Gateway technology on CenturyLink Cloud.  SoftNAS has provided a Virtual Appliance, what CenturyLink Cloud calls a Partner Template, that can be deployed to your CenturyLink Cloud account via a Service Task.
 
 This deployment process for Partner Templates currently requires manual interaction via the Service Task process, but will be further automated in future releases of the CenturyLink Cloud Platform.
 
@@ -71,9 +71,9 @@ This deployment process for Partner Templates currently requires manual interact
 
 2. If you want to access your VM over the internet, please perform the following tasks once you receive an email confirming you Blueprint completed successfully:
 
-  1. Add a [Public IP](../../../network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/how-to-configure-client-vpn.md) or similar technology.
+  1. Add a [Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/how-to-configure-client-vpn.md) or similar technology.
 
-3. [Allow incoming traffic](../../../network/how-to-add-public-ip-to-virtual-machine.md) for ports below:
+3. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for ports below:
   - For administrative access and use, open the following ports:
     * TCP Ports: 443
     * UDP Ports: 1
@@ -95,8 +95,8 @@ This deployment process for Partner Templates currently requires manual interact
   - For iSCSI Sharing, open the following ports:
     * TCP 3260
 
-### Detailed Steps to Deploy SoftNAS partner template 
-SoftNAS deploys in a virtual appliance model, as a CenturyLink Cloud *Partner Template*.  Follow these step by step instructions to deploy a SoftNAS solution in to your CenturyLink Cloud account:  
+### Detailed Steps to Deploy SoftNAS partner template
+SoftNAS deploys in a virtual appliance model, as a CenturyLink Cloud *Partner Template*.  Follow these step by step instructions to deploy a SoftNAS solution in to your CenturyLink Cloud account:
 
 - Open a service task request ticket via email to ServiceTasks@Tier3.com with the following details.  You will need to edit some of the information below.
 
@@ -112,7 +112,7 @@ Please create a ticket to import the Ecosystem Partner Template image referenced
 - My CenturyLink Cloud Account Alias: #### your alias
 - Data Center to import image to: ### name of data center
 - Server Name to import image as: ########## A unique name for the server
-- VLAN in the account to add the Server to: ######## specify a VLAN 
+- VLAN in the account to add the Server to: ######## specify a VLAN
 
 - Additional Notes or work to be done: IMPORTANT: Please make sure that the private IP shows up in Control so that we can add a Public IP through the Portal later on if desired.
 
@@ -126,12 +126,12 @@ Your_Name_ and_ Contact_Info_Here
 
 If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@centurylinkcloud.com](mailto:features@centurylinkcloud.com)
 
-### Accessing and using your SoftNAS Cloud Gateway 
+### Accessing and using your SoftNAS Cloud Gateway
 1. Access your SoftNAS Gateway appliance by connecting to the server via web browser over https, e.g. https://youripaddress/
 
 2. Login to the SoftNAS web console with the username `softnas` and password `Pass4W0rd`
 
-3. Follow the on-screen instructions to accept the SoftNAS user agreements and proceed to using the service. Documentation is available within the application, as well as a helpful checklist to get started.  
+3. Follow the on-screen instructions to accept the SoftNAS user agreements and proceed to using the service. Documentation is available within the application, as well as a helpful checklist to get started.
 
 4. Add storage to the SoftNAS VM by using Control Portal
   1. Navigate to the SoftNAS server in the Control Portal
@@ -145,7 +145,7 @@ If you are interested in seeing this type of Partner Template deployment as an a
 For more information on how to use the SoftNAS solution, please visit: [http://www.softnas.com/support/](http://www.softnas.com/support/)
 
 ### Pricing
-There are no SoftNAS license costs included.  The cost to deploy the Partner Template will be billed as a Service Task, but CenturyLink will provide a credit for those costs.  In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees are available here: [http://www.centurylinkcloud.com/service-tasks](http://www.centurylinkcloud.com/service-tasks)
+There are no SoftNAS license costs included.  The cost to deploy the Partner Template will be billed as a Service Task, but CenturyLink will provide a credit for those costs.  In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees are available here: [http://www.ctl.io/service-tasks](http://www.ctl.io/service-tasks)
 
 #### Process to request credit for Service Task fee
 Follow this process to request credit on your account to re-imburse any expense to deploy the Partner Template
@@ -170,7 +170,7 @@ Thank you very much, your_name_here
 
 #### Where do I obtain my SoftNAS License or entitlements?
 Existing CenturyLink Enterprise Customers can contact their Account Representative for help obtaining a SoftNAS license, or contact SoftNAS directly:
-- Contact SoftNAS Sales via Email: [sales@softnas.com](sales@softnas.com)
+- Contact SoftNAS Sales via Email: [sales@softnas.com](mailto:sales@softnas.com)
 - Contact SoftNAS Sales via Phone: 1-888-801-7524, Option 1
 
 #### Who should I contact for support?

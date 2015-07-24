@@ -68,13 +68,13 @@ A: Currently the following components are availabe and are pre-configured based 
 * Solr
 * Spark
 
-For a description of each component visit the [Cloudera Add-On Services Available on CenturyLink Cloud](Cloudera-Add-On-Services-Available-on-CenturyLink-Cloud.md) article.
+For a description of each component visit the [Cloudera Add-On Services Available on CenturyLink Cloud](cloudera-add-on-services-available-on-centurylink-cloud.md) article.
 
 **Q: How do I access Cloudera Manager, Hue or Navigator?**
 
 A: Cloudera Manager, Hue or Navigator can be accessed on the first Node, port 7180 for Cloudera Manager, port 8888 for Hue and port 7187 for Navigator via an SSH port on a public IP or by using [VPN](../Network/how-to-configure-client-vpn.md).
 
-For a detailed guide of Cloudera Manager on CenturyLink Cloud, download the [CenturyLink Cloud Cloudera Manager Guide](https://www.centurylinkcloud.com/knowledge-base/attachments/CenturyLink_Cloudera_Manager_Guide_11032014.pdf/).
+For a detailed guide of Cloudera Manager on CenturyLink Cloud, download the [CenturyLink Cloud Cloudera Manager Guide](https://www.ctl.io/knowledge-base/attachments/CenturyLink_Cloudera_Manager_Guide_11032014.pdf/).
 
 **Q: What cluster options are available on CenturyLink Cloud?**
 

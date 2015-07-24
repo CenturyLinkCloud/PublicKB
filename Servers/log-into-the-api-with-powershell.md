@@ -19,7 +19,7 @@ CenturyLink Cloud customers can use PowerShell to log into the CenturyLink Cloud
 ### General Notes
 
 * Recommended to use PowerShell v4+ because PowerShell v3 Invoke-RestMethod has a bug with [accept headers](https://connect.microsoft.com/PowerShell/feedback/details/757249/invoke-restmethod-accept-header)
-* Tested on [API v1](https://www.centurylinkcloud.com/api-docs/v1/#authentication-logon)
+* Tested on [API v1](https://www.ctl.io/api-docs/v1/#authentication-logon)
 * API user and API password need to be entered into the script
 * Script can be used from anywhere - does not have to be on CenturyLink Cloud network
 

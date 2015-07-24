@@ -13,9 +13,9 @@ Creating Server Templates on CenturyLink Cloud enables customers to deploy bit-f
 
 ### Core Documentation
 
-Reference the following key pages from the CenturyLink Cloud [Knowledge Base](http://www.centurylinkcloud.com/knowledge-base/):
+Reference the following key pages from the CenturyLink Cloud [Knowledge Base](http://www.ctl.io/knowledge-base/):
 
-* [How To Publish a Partner Template from a Virtual Appliance](../howto-publish-a-partner-template-from-a-virtual-appliance.md)
+* [How To Publish a Partner Template from a Virtual Appliance](../Marketplace Guides/howto-publish-a-partner-template-from-a-virtual-appliance.md)
 * [Requirements for custom image/VM imports](../../Service Tasks/requirements-for-custom-imagevm-imports.md) (case 1)
 * [Best Practices and Preparation for a Virtual Machine/OVF/OVA Import](../../Service Tasks/best-practices-and-preparation-for-a-virtual-machineovfova-import.md)
 * [Collection of Templates Best Practices](../../Blueprints/templates-best-practices.md)

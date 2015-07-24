@@ -41,9 +41,9 @@ CenturyLink Cloud Users
 ### Deployment Packages
 
 
-|[Deploy a New Cluster](#deploying-a-new-cluster)   	|[Expand an Existing Cluster](../../Ecosystem Partners/howto-pivotal-greenplum-expand-cluster.md)   	|
+|[Deploy a New Cluster](#deploying-a-new-cluster)   	|[Expand an Existing Cluster](howto-pivotal-greenplum-expand-cluster.md)   	|
 |:-	|:-	|
-|<p>Deploy a minimal cluster sized for testing.<p>When you're ready, deploy a production capable cluster using the same pattern.<p>See [Deploying a new cluster](#deploying-a-new-cluster) to get started.  If you're looking for a single-button deploy of clusters with more nodes see our guide on [Creating larger cluster Blueprints](../../Ecosystem Partners/howto-pivotal-greenplum-larger-clusters.md)   	|<p>Grow existing clusters to their optimal size from day zero or to accommodate growth over time.<p>We'll cleanly add capacity and leave any application disrupting work to you.<p>See [Expanding an existing cluster](../../Ecosystem Partners/howto-pivotal-greenplum-expand-cluster.md) to get started.   	|
+|<p>Deploy a minimal cluster sized for testing.<p>When you're ready, deploy a production capable cluster using the same pattern.<p>See [Deploying a new cluster](#deploying-a-new-cluster) to get started.  If you're looking for a single-button deploy of clusters with more nodes see our guide on [Creating larger cluster Blueprints](howto-pivotal-greenplum-larger-clusters.md)   	|<p>Grow existing clusters to their optimal size from day zero or to accommodate growth over time.<p>We'll cleanly add capacity and leave any application disrupting work to you.<p>See [Expanding an existing cluster](howto-pivotal-greenplum-expand-cluster.md) to get started.   	|
 
 
 
@@ -134,8 +134,8 @@ You can achieve a single-button deployment of a new cluster including a master h
 
   Servers are built using private IPs only with access with client or IPSEC VPN.  For access from the Internet at large add a public IP to your master server.
 
-  <a href="../../../network/how-to-add-public-ip-to-virtual-machine/">
-    <img style="border:0;width:50px;vertical-align:middle;" src="/knowledge-base/images/shared_assets/fw_icon.png">
+  <a href="../../Network/how-to-add-public-ip-to-virtual-machine.md">
+    <img style="border:0;width:50px;vertical-align:middle;" src="../../images/shared_assets/fw_icon.png">
     Adding a public IP to your virtual machine
   </a>
 

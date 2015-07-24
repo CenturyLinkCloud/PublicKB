@@ -121,7 +121,6 @@ $ bundle install
 </pre>
 <h3 id="node">Node.js</h3>
 <p>Before you begin, make sure you have <a href="http://nodejs.org/">Node.js</a> and <a href="http://www.mongodb.org/">MongoDB</a> installed on your development computer.</p>
-<p>Check out our <a href="/languages/node">doc on deploying Node.js apps</a>.</p>
 <h4>Setup</h4>
 <p>Start <code>mongod</code> in your local environment:</p>
 <pre>$ mongod </pre>
@@ -190,7 +189,7 @@ var mongourl = generate_mongo_url(mongo);
 <p>Before you start, make sure:</p>
 <ul>
 <li>You have <a href="https://console.appfog.com/signup">an AppFog account</a>.</li>
-<li>The <a href="/getting-started/af-cli"><code>af</code> command line tool</a> is installed on your development computer.</li>
+<li>The <code>af</code> command line tool is installed on your development computer.</li>
 <li><a href="http://nodejs.org/">Node.js</a> is installed on your development computer.</li>
 <li><a href="http://www.mongodb.org/">MongoDB</a> is installed on your development computer.</li>
 </ul>

@@ -36,4 +36,4 @@ Dedicated Load Balancers offer the capability of load balancing traffic destined
 ### Notes
 
 * This example was performed on Netscaler VPX version 10.5
-* Please review the [Load Balancing Comparison Matrix](../network/load-balancing-comparison-matrix.md) the review the capabilities of dedicated vs shared load balancers
+* Please review the [Load Balancing Comparison Matrix](../Network/load-balancing-comparison-matrix.md) the review the capabilities of dedicated vs shared load balancers
