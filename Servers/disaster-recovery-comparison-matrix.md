@@ -1,10 +1,10 @@
 {{{
   "title": "Disaster Recovery Comparison Matrix",
-  "date": "4-7-2015",
+  "date": "6-25-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
-  "sticky": true
+  "sticky": false
 }}}
 
 ### Overview
@@ -25,4 +25,5 @@ Customers frequently request information on the Disaster Recovery and Business C
 3.  **includes virtual machine failover only**
 
 ### Exclusions
-There are a number of components that would not be part of a premium storage DR strategy. Exclusions include Custom Templates, Archived Virtual Machines, IPSEC VPN Tunnels, Alert Policies, Metadata (server settings, activity history, statistics).
+* There are a number of services and components that would not be included as part of the premium storage product set. Exclusions include Custom Templates, Archived Virtual Machines, IPSEC VPN Tunnels, Alert Policies, Metadata (server settings, activity history, statistics).
+* [Managed Services](//www.ctl.io/managed-services) are delivered from [select CenturyLink Cloud locations](//www.ctl.io/data-centers) and customers should carefully vet the use of premium storage. If Managed Services are required in the event of a DR event, premium storage may not be the optimal choice.
