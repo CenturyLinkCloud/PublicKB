@@ -15,7 +15,7 @@ CenturyLink Cloud supports the use of Security Assertion Markup Language (SAML) 
 SAML has three main parties: the user, the identity provider (IdP), and service provider (SP). The IdP is the repository that holds identity information. The SP is the party that wants to authenticate a particular user who is using an application.
 
 The SAML flow occurs as shown below.
-![SAML Flow](../images/saml01.png)
+![SAML Flow](../images/adfs_saml_2012_01.png)
 
 Specific steps in this flow are:
 
@@ -40,7 +40,7 @@ All steps in this guide require Domain Administrator permissions in Active Direc
 
 Log into the CenturyLink Cloud Control Portal and choose to create a new Blueprint. This takes you to the Blueprint Designer wizard.
 
-![Blueprint Menu](../images/ADFS SAML 02.png)
+![Blueprint Menu](../images/adfs_saml_2012_02.png)
 
 1.  Using Blueprint Designer you have several choices for versioning, privacy settings, etc.  In this step you can choose the settings that are appropriate for your intended use.  There is one required field, Description.  Populate with a description that is accurate for your use.
 
@@ -48,7 +48,7 @@ Log into the CenturyLink Cloud Control Portal and choose to create a new Bluepri
 
 The Active Directory packages give us a custom domain to work with, and an identity directory for our user records. Microsoft Internet Information Services (IIS) provides a web application host for the Active Directory Federation Services (ADFS) web services used later in this configuration guide.
 
-![Blueprint Designer](../images/ADFS SAML 03.png)
+![Blueprint Designer](../images/adfs_saml_2012_03.png)
 
 3.  No steps required.  Click "next, review"
 
@@ -56,87 +56,87 @@ The Active Directory packages give us a custom domain to work with, and an ident
 
 Once the Blueprint has been published, navigate to the Blueprint Library, use the "Refine Results" column to find your Blueprint, and select your Blueprint by clicking on it.  Click the "Deploy Blueprint" button to initiate the provisioning process.
 
-![Deploy Blueprint](../images/ADFS SAML 04.png)
+![Deploy Blueprint](../images/adfs_saml_2012_04.png)
 
 On the "Customize Blueprint" step of the deployment wizard, the user is asked to provide deploy-time build parameters such as the server password, host network, and Active Directory domain name. Note a few key values: first, the **Primary DNS** value *must be equal to the name of the server being created*. Recall that we already added DNS services to the server itself, so THIS is the domain that the new server should use for resolution. The **Domain Name** parameter typically contains the full name of the domain (including a suffix such as ".com") while the Net BIOS Name omits the suffix.
 
-![Server Build](../images/ADFS SAML 05.png)
+![Server Build](../images/adfs_saml_2012_05.png)
 
 After clicking "Next: Step 2" you will be taken to the "review blueprint" page. Once you have confirmed your choices, complete the deployment process by clicking "deploy blueprint", and wait for the new server to be built by the CenturyLink Cloud Blueprint engine. It may take up to 20 minutes and you can monitor progress in the queue.
 
-![Blueprint Queue](../images/ADFS SAML 06.png)
+![Blueprint Queue](../images/adfs_saml_2012_06.png)
 
 Locate the server that has been deployed in the Control Panel.  View the Server Info information to record the public and private IP addresses for your new server.
 
-![Confirm Server Details](../images/ADFS SAML 07.png)
+![Confirm Server Details](../images/adfs_saml_2012_07.png)
 
 **2. Install and configure Active Directory Federation Services.**
 
 Use the OpenVPN client software or Tunnelblick client software to connect to the CenturyLink Cloud network. Once connected, create a Remote Desktop session to your server using the private IP address recorded above. In the Server Manager, confirm the installation of DNS, Active Directory, and IIS.
 
-![Confirm Roles](../images/ADFS SAML 08.png)
+![Confirm Roles](../images/adfs_saml_2012_08.png)
 
 In order to issue certificates easily from this server, install the **Active Directory Certificate Services** role on the server. Accept the defaults for the remaining installation choices.  Click the Close button once complete.
 
-![Certificate Services](../images/ADFS SAML 09.png)
+![Certificate Services](../images/adfs_saml_2012_09.png)
 
 When the role installation has been completed additional configuration will now be required.  A link to the required configuration will be shown in Server Manager - AD CS.  Choose the Setup Type as Enterprise CA.  Choose the CA Type as Root CA.  Choose to create a new private key.  For Cryptography use the default provider and encryption settings as Key length 2048 and hash algorithm SHA1.  CA Name, Validity Period, and Certificate Database can use default settings.  Click the Configure button to complete.
 
-![Configure Certificate Services](../images/ADFS SAML 10.png)
+![Configure Certificate Services](../images/adfs_saml_2012_10.png)
 
 Open IIS Manager, click the host name, and locate the **Server Certificates** feature.
 
-![Server Certificates](../images/ADFS SAML 11.png)
+![Server Certificates](../images/adfs_saml_2012_11.png)
 
 Double-click the **Server Certificates** icon and select the option on the right to **Create Domain Certificate**. Use this wizard to complete all fields.  In this example we will be using a common name of clcsamldemo.falconinfosec.com.  The common name will need to match the external DNS A record you create for your servers public IP address.  In this example we have created an A record of clcsamldemo.falconinfosec.com mapping to external IP address 66.155.94.111 which we verified in the Server Info tab in the Control Panel.  Click Next.
 
-![Create Certificate](../images/ADFS SAML 12.png)
+![Create Certificate](../images/adfs_saml_2012_12.png)
 
 On the next page of the wizard, choose the Certificate Authority and set a friendly name for the certificate.  It is useful to set a friendly name that corresponds with information that will help an administrator easily identify basics about this certificate, especially if an organization has numerous certificates. Click Finish.
 
-![Friendly Name](../images/ADFS SAML 13.png)
+![Friendly Name](../images/adfs_saml_2012_13.png)
 
 Select the Default Web Site, Right click to Edit Bindings.  Click Add.  Select Type as https.  In the SSL certificate drop down box select the certificate previously created.  Click OK.  Click Close.
 
-![Add Site Binding](../images/ADFS SAML 14.png)
+![Add Site Binding](../images/adfs_saml_2012_14.png)
 
 Launch Active Directory Users and Computers and create a service account for ADFS.  This service account does not need special permissions, a normal user account is permitted.  In this example we have created an account named samldemo.  Create another account that will be used for authenticating a user against CenturyLink Cloud Control Portal.  In this example we have created an account named kellytest.  The full User Principal account name for this account is kellytest@ccts.dom.
 
 Windows 2012 has ADFS included.  Return to Server Manager to Add the Active Directory Federation Services Role.
 
-![Add ADFS Role](../images/ADFS SAML 15.png)
+![Add ADFS Role](../images/adfs_saml_2012_15.png)
 
 Once the role has been added select "Configure the federation service on this server."
 
-![Configuration Wizard](../images/ADFS SAML 16.png)
+![Configuration Wizard](../images/adfs_saml_2012_16.png)
 
 Ensure the option "Create the first federation server in a federation server farm" is selected, click Next.  Select the appropriate account with domain administrator permissions, click Next.  Select the correct SSL Certificate from the drop down box.  This will automatically populate the Federation Service Name.  Federation Service Display Name can be customized as desired.  In this example we choose clcsamldemo.  Click Next.  Choose the option "Use an existing domain user account or group Managed Service Account"  After selecting this select the service account created earlier.  Specify the correct account password, click Next.  Select "Create a database on this server using Windows Internal Database"  Click Next.  Review your summary, Click Next.  Click Configure.  Click Close
 
-![ADFS Configuration](../images/ADFS SAML 17.png)
+![ADFS Configuration](../images/adfs_saml_2012_17.png)
 
 **3. Create trust relationship with CenturyLink Cloud.**
 
 Launch AD FS console from Administrative Tools.  Expand Trust Relationships, right click on Relying Party Trusts and select Add Relying Party Trust.  This part of the configuration uses a public certificate from CenturyLink Cloud for the local IdP so the system recognizes the SAML authentication request in order to validate the inbound signature.
 
-![Add Party Trust](../images/ADFS SAML 18.png)
+![Add Party Trust](../images/adfs_saml_2012_18.png)
 
 Click Start.  Select the option "Enter data about the relying party manually".  Click Next.
 
-![Enter Data Manually](../images/ADFS SAML 19.png)
+![Enter Data Manually](../images/adfs_saml_2012_19.png)
 
 Enter a display name in order to easily identify this relying party, something like "CenturyLink Cloud Control Portal".  Click Next.  Select AD FS Profile, click Next. Click Next. Click Next.  At step Configure Identifiers enter the following value for "Relying party trust identifier", <code>https://alias.cloudportal.io/SAMLAuth</code>.  Substitute alias with your CenturyLink Cloud Control Portal alias.  In this example we will use ccts **Note that this value is case-sensitive!**  Click Add, click Next. Ensure Multi-factor is set to disabled, click Next.  Ensure Permit all users is selected, click Next.
 
-![Configure Identifiers](../images/ADFS SAML 20.png)
+![Configure Identifiers](../images/adfs_saml_2012_20.png)
 
 Finish the wizard.  On the last wizard page, click the checkbox to **Open the Edit Claims Rules dialog.** Here is where we define which Active Directory values (claims) map to the SAML attributes sent back to CenturyLink Cloud.
 
-![Select Rule Template](../images/ADFS SAML 21.png)
+![Select Rule Template](../images/adfs_saml_2012_21.png)
 
 Click Add Rule.  Ensure Send LDAP Attributes as Claims is selected, click Next
 
 Enter a Claim rule name such as Map UPN to Name ID.  Set the Attributes store to Active Directory. choose the **User-Principal-Name** as the **LDAP Attribute**, set the **Outgoing Claim Type** to **Name ID**.  Click Finish. Click Ok.
 
-![Configure Claim Rule](../images/ADFS SAML 22.png)
+![Configure Claim Rule](../images/adfs_saml_2012_22.png)
 
 Open Notepad and paste in the contents of this entire text string below, omitting no characters.
 
@@ -178,11 +178,11 @@ Save your notepad session with .cer extension.  In this example we are saving th
 
 Under AD FS Relying Party Trusts right click the Relying Party Trusts you just created, and choose Properties. Switch to the **Signatures** tab, and add the certificate you created above.
 
-![Properties](../images/ADFS SAML 23.png)
+![Properties](../images/adfs_saml_2012_23.png)
 
 Switch to the **Endpoints** tab and add a **SAML Assertion Consumer** with a **POST** binding and set the URL to <code>https://alias.cloudportal.io/SAMLAuth/Post</code>. Once again, this value is case-sensitive.  Substitute alias with your CenturyLink Cloud Control Portal alias.  In this example we will use ccts.  Click Ok.
 
-![Add Endpoint](../images/ADFS SAML 24.png)
+![Add Endpoint](../images/adfs_saml_2012_24.png)
 
 Switch to the **Advanced** tab, change the **Secure Hash Algorithm** to **SHA-1**. Click Ok.
 
@@ -190,33 +190,33 @@ Switch to the **Advanced** tab, change the **Secure Hash Algorithm** to **SHA-1*
 
 Log into the CenturyLink Cloud Control Portal and under **Account** menu, select the **Users** tab. Switch to the **Authentication** sub-section and check the box labeled **SAML Authentication**. This opens up a series of configuration settings.
 
-![SAML Config](../images/ADFS SAML 25.png)
+![SAML Config](../images/adfs_saml_2012_25.png)
 
 For the **SSO IdP URL**,set the ADFS service URL. This includes the full public domain name of the ADFS server. In this example we are using the URL https://clcsamldemo.falconinfosec.com/adfs/ls/  For the **SLO IdP URL** set the URL as indicated in the CenturyLink Cloud Control Portal.  The URL for this test account is https://ccts.cloudportal.io/SAMLAuth/LogoutPost
 
-![SAML SSO URL](../images/ADFS SAML 26.png)
+![SAML SSO URL](../images/adfs_saml_2012_26.png)
 
 The next required field is the **Signing Certificate Key**.  Return to the ADFS server, view the AD FS Management Console, and find the **Certificates** directory under the **Services** node. Notice the **Token-signing** certificate.
 
-![Token Signing](../images/ADFS SAML 27.png)
+![Token Signing](../images/adfs_saml_2012_27.png)
 
 Right click the certificate, choose View Certificate.  Switch to the **Details** tab and select **Copy to File**. Click Next Export a **Base-64 encoded X.509** certificate.  Click Next.
 
-![Export](../images/ADFS SAML 28.png)
+![Export](../images/adfs_saml_2012_28.png)
 
 Save the file to a known location on the file system. Open the file with a text editor and copy all of the text between the "Begin Certificate" and "End Certificate" indicators.
 
-![Cert](../images/ADFS SAML 29.png)
+![Cert](../images/adfs_saml_2012_29.png)
 
 Paste this string of text into the **Signing Certificate Key** field in the CenturyLink Cloud Control Portal. Click the **Save** button and switch back to the **Users List** view. Select the user that you want to perform SSO with, and locate the **SAML Username** field. Since we chose above to use the Active Directory User Principal Name as the lookup value to the CenturyLink Cloud account, we must plug in the User Principal Name associated with this user.  in the example the User Principal Name is kellytest@ccts.dom.  Click Save.
 
-![SAML User](../images/ADFS SAML 30.png)
+![SAML User](../images/adfs_saml_2012_30.png)
 
 **5. Exchange SAML messages to perform Single Sign On.**
 
  Go to a web browser and plug in <code>https://alias.cloudportal.io</code>. Here you can sign in via CenturyLink Cloud Portal username and password, or choose the **Sign In Using SAML** option. If you choose the latter, then the CenturyLink Cloud SAML service redirects the browser to the URL specified in the account's **SAML SSO URL** setting.
 
-![Sign In Page](../images/ADFS SAML 31.png)
+![Sign In Page](../images/adfs_saml_2012_31.png)
 
 The user experience when clicking the Sign In Using SAML button is that the user is prompted for credentials (if the user is not hitting the website from within the domain itself) and once provided, the user is automatically logged into the CenturyLink Cloud portal. **Because they used Single Sign On and SAML, they did NOT have to enter their CenturyLink Cloud account credentials, but rather, were able to use their regular network credentials.  In this example we logged in with User Principal Name kellytest@ccts.dom that we created earlier in this guide.**
 
