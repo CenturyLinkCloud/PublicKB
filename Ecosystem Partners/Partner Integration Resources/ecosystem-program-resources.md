@@ -18,5 +18,4 @@ Integration of 3rd party technology with CenturyLink Cloud can be achieved by le
 
 |Templates|Blueprints|APIs|Add-Ons|
 |------|--------|---------|--------|
-| <a href="ecosystem-program-resources-templates.md"  alt="Templates" ><img src="../../images/kb-icon--blueprints.svg" align="Center" height =25 /> </a>|<a href="ecosystem-program-resources-blueprints.md"><img src="../../images/kb-icon--paper.svg" height=25 /></a> |<a href="ecosystem-program-resources-api.md"><img src="../../images/kb-icon--api.svg" height=25 /></a> | <a href="ecosystem-program-resources-addons.md"><img src="../../images/kb-icon--partners.svg" height=25 /></a> |
 |[Supporting virtual appliances](ecosystem-program-resources-templates.md) |[Applying your software to customer assets](ecosystem-program-resources-blueprints.md)|[Programmatic access to cloud services](ecosystem-program-resources-api.md) |[Web service integration](ecosystem-program-resources-addons.md)  |
