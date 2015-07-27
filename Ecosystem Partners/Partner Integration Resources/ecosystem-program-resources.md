@@ -1,7 +1,7 @@
 {{{
   "title": "Ecosystem Program Partner Resource Guide",
-  "date": "7-17-2015",
-  "author": "<a href='https://twitter.com/daveshac'>@daveshac</a>",
+  "date": "7-27-2015",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "sticky": true,
   "contentIsHTML": false
@@ -18,4 +18,4 @@ Integration of 3rd party technology with CenturyLink Cloud can be achieved by le
 
 | [Templates](ecosystem-program-resources-templates.md)  | [Blueprints](ecosystem-program-resources-blueprints.md) | [API](ecosystem-program-resources-api.md) | [Add-Ons](ecosystem-program-resources-addons.md) |
 |:-:	|:-:	| :-: | :-: |
-| ![Template](../../images/kb-icon--blueprints.svg) [Supporting virtual appliances](ecosystem-program-resources-templates.md) | ![Blueprints](../../images/kb-icon--paper.svg) [Applying your software to customer assets](ecosystem-program-resources-blueprints.md)| ![API](../../images/kb-icon--api.svg) [Programatic access to cloud services](ecosystem-program-resources-api.md) | ![Add-Ons](../../images/kb-icon--partners.svg) [Web service integration](ecosystem-program-resources-addons.md) (Now in beta release) |
+| ![Template](../../../images/kb-icon--blueprints.svg) [Supporting virtual appliances](ecosystem-program-resources-templates.md) | ![Blueprints](../../../images/kb-icon--paper.svg) [Applying your software to customer assets](ecosystem-program-resources-blueprints.md)| ![API](../../../images/kb-icon--api.svg) [Programatic access to cloud services](ecosystem-program-resources-api.md) | ![Add-Ons](../../../images/kb-icon--partners.svg) [Web service integration](ecosystem-program-resources-addons.md) (Now in beta release) |
