@@ -68,7 +68,7 @@ A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge b
 
 **Q: Can I have persistent storage with CenturyLink Cloud WordPress as a Service?**
 
-A: WordPress persistent storage must be [configured  with CenturyLink Cloud Object Storage](/WordPress/wordpress persistent storage configuration.md "How to Configure WordPress Persistent Storage").
+A: WordPress persistent storage must be [configured  with CenturyLink Cloud Object Storage](/WordPress/wordpress-persistent-storage-configuration.md "How to Configure WordPress Persistent Storage").
 
 **Q: How do I access the MySQL database for my WordPress Site?**
 
