@@ -26,6 +26,6 @@
     is used when the SAML single sign-on process maps a user in the SAML Identity Provider to a user in the CenturyLink Cloud.</li>
   <li><strong>SAML users do not get prompted for credentials when viewing server password. </strong>Users who log into the Control Portal with their CenturyLink Cloud credentials are asked once again for their credentials when they attempt to view the password of a
     server on the Server Details page. Since SAML users do not have (or do not know) CenturyLink Cloud credentials, their request to view credentials is still logged for auditing purposes, but they are not asked to re-authenticate when viewing server passwords.</li>
-  <li><strong>Account API Update</strong>. Users can now use the API to enable a suspended account (http://help.tier3.com/entries/23131087-Enable-Account). This is the opposite of the Suspend Account operation (http://help.tier3.com/entries/22435018-SuspendAccount).
+  <li><strong>Account API Update</strong>. Users can now use the API to enable a suspended account (//www.ctl.io/api-docs/v1/#account-enable-account). This is the opposite of the Suspend Account operation (//www.ctl.io/api-docs/v1/#account-suspendaccount).
     When an account is re-enabled, the account's servers are not restarted by the system, but the VPN server is restarted automatically.</li>
 </ul>
