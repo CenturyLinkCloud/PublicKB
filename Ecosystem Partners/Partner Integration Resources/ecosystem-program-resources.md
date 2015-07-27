@@ -1,7 +1,7 @@
 {{{
   "title": "Ecosystem Program Partner Resource Guide",
   "date": "7-21-2015",
-  "author": "Andrew Brunette</a>",
+  "author": "Andrew Brunette",
   "attachments": [],
   "sticky": true,
   "contentIsHTML": false
