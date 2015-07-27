@@ -1,7 +1,7 @@
 {{{
   "title": "Upload Service Manifests to Add-on Engine",
-  "date": "06-04-2015",
-  "author": "Chris Sterling",
+  "date": "07-27-2015",
+  "author": "Andrew Brunette",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false
@@ -9,11 +9,11 @@
 
 ### Purpose
 
-To describe how Partners can add their services to the CenturyLink Cloud Add-ons Marketplace. The new Add-on Engine marketplace is made available to the NextGen AppFog users, as the first consumers, to provision and bind services to their applications.
+To describe how Partners can add their services to the CenturyLink Cloud Add-ons Marketplace. The new Add-on Engine marketplace is made available to the NextGen AppFog users, as the first consumers, to provision and bind services to their applications. This article informs the user on how to create a manifest and upload a manifest. 
 
 ### Benefits
 
-Provides an additional channel for Partner services through the CenturyLink Cloud Ecosystem
+Provides an additional channel for Partner services through the CenturyLink Cloud Ecosystem.
 
 ### Audience
 
@@ -22,17 +22,17 @@ Provides an additional channel for Partner services through the CenturyLink Clou
 ### What's Included
 
 - How to create a Service Manifest
-- How to use `kiri` CLI to upload Service Manifest
-- How to test service provisioning using `kiri` CLI
+- How to use the **kiri** CLI to upload Service Manifest
+- How to test service provisioning using **kiri** CLI
 - How Service Manifests are published to Add-ons marketplace
 
 ### Partner Action Items
 
 - Create Service Manifest
 - Create API to support provisioning Add-on
-- Download `kiri` CLI
-- Upload Service Manifest
-- Test Service provisioning using `kiri` CLI
+- Download **kiri** CLI
+- Upload Manifest
+- Test Service provisioning using **kiri** CLI
 
 ---
 
