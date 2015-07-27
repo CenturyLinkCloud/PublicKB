@@ -9,7 +9,7 @@
 <p>This lines out some details to how the <code>push</code>, <code>pull</code>, and <code>update</code> commands should work.</p>
 <h4>PUSH</h4>
 <h4><code>af push {app}</code></h4>
-<p>The command <code>push</code> ZIPs the content in the current directory and uploads it to the environment. For more information on the structure of a app, visit our <a href="/appfog/legacy%20version%201/application-configuration-using-manifest-files-and-afignore.md">Application Configuration</a> article. If you have a ZIP file located within this directory, it can cause the problems lined out in the <a href="application-configuration-using-manifest-files-and-afignore.md">ZIP Files</a> section of that article. An example for an application called <code>user-php</code> is below.</p>
+<p>The command <code>push</code> ZIPs the content in the current directory and uploads it to the environment. For more information on the structure of a app, visit our <a href="/appfog/legacy version 1/application-configuration-using-manifest-files-and-afignore.md">Application Configuration</a> article. If you have a ZIP file located within this directory, it can cause the problems lined out in the <a href="application-configuration-using-manifest-files-and-afignore.md">ZIP Files</a> section of that article. An example for an application called <code>user-php</code> is below.</p>
 <pre>user@localhost: ~/af/apps/my_test_php_app$ af push user-php
 Would you like to deploy from the current directory? [Yn]: y
 Detected a PHP Application, is this correct? [Yn]: y
