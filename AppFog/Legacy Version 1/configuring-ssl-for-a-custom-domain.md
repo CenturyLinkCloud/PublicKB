@@ -37,7 +37,7 @@
 <p>If you already have a certificate, skip down to <a href="#install">the next section on installation</a>.</p>
 <p>To get an SSL certificate from a Certificate Authority, you'll first need to generate an RSA private key and a Certificate Signing Request (CSR).</p>
 <h4>Generate a private key</h4>
-<p>You can use the <code><a href="https://www.openssl.org/source/" target="_blank">openssl</a></code> toolkit to generate an RSA private key and a CSR:</p>
+<p>You can use the <code><a href="https://www.openssl.org/source/">openssl</a></code> toolkit to generate an RSA private key and a CSR:</p>
 <pre>$ openssl genrsa -des3 -out server.key 2048</pre>
 <p>Note: the strength of your key is up to you (although some Certificate Authorities require a minimum bit depth). This command will create a 2048-bit key. Other values can be used. Refer to the <a href="http://www.openssl.org/docs/HOWTO/keys.txt">OpenSSL documentation</a> for more on this.</p>
 <p>You'll have to use a passphrase when you generate the key, but we'll remove it later.</p>

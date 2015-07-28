@@ -38,4 +38,4 @@ $msg = $ironmq-&gt;getMessage("my_queue");
 
 // Delete the message
 $ironmq-&gt;deleteMessage("my_queue", $message_id);</pre>
-<p>For more information please visit the <a href="http://dev.iron.io/mq/" target="_blank">IronMQ Reference Page.</a></p>
+<p>For more information please visit the <a href="http://dev.iron.io/mq/">IronMQ Reference Page.</a></p>

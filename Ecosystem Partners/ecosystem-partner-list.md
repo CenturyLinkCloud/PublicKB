@@ -98,7 +98,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [SoftNAS](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md)   	| Template    | NAS and Cloud Storage Gateway   |
 
 ### Data Protection
-| [Double Take](../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-availability-blueprint.md)   	| Blueprint    | Data replication    |
+| [Double Take](../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md)   	| Blueprint    | Data replication    |
 | [Saratoga Data Flume](../Ecosystem Partners/Marketplace Guides/getting-started-with-saratoga-data-flume-blueprint.md)   	| Blueprint    | File transfer acceleration software    |
 
 ### Business Services

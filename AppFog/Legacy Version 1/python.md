@@ -43,4 +43,4 @@
 <h2>Limitations</h2>
 <p>There is currently a known issue with Python apps that include many dependencies. We are working on a solution to this that should be available very soon.</p>
 <h2 id="services">Services</h2>
-<p>You can connect your Python app to AppFog services by using the <code>VCAP_SERVICES</code> environment variable, which becomes available to your app when you bind a service to it. For more information on this, check out our <a href="/services/overview">Services Overview</a> page.</p>
+<p>You can connect your Python app to AppFog services by using the <code>VCAP_SERVICES</code> environment variable, which becomes available to your app when you bind a service to it.</p>

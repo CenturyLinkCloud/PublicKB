@@ -31,7 +31,7 @@
 <p>We recommend using the <code>www.</code> subdomain as your canonical domain. Here's how to do that:</p>
 <h4>Redirect Your Root Domain</h4>
 <p>At your DNS host, set up a redirect (302) from your root domain (<code>yourdomain.com</code>) to <code>www.yourdomain.com</code>.</p>
-<p>This is a fairly standard tool that DNS services provide. If you don’t see an option for it at your domain host, contact their support services and they should be able to do that for you. If your DNS provider does not offer the redirect option it is possible to set up an A Record for your root domain. Please contact our <a href="/hc/en-us" target="_blank">Support</a> staff and they will provide an IP address. This is not our recommended configuration. <em>Please be aware that these IP addresses are subject to change without prior notice.</em></p>
+<p>This is a fairly standard tool that DNS services provide. If you don’t see an option for it at your domain host, contact their support services and they should be able to do that for you. If your DNS provider does not offer the redirect option it is possible to set up an A Record for your root domain. Please contact our <a href="mailto:noc@ctl.io">Support</a> staff and they will provide an IP address. This is not our recommended configuration. <em>Please be aware that these IP addresses are subject to change without prior notice.</em></p>
 <h4>Create a CNAME Alias</h4>
 <p>Depending on which infrastructure your app is running on, create a CNAME alias record for <code>www.yourdomain.com</code> to:</p>
 <p>CenturyLink Cloud (Santa Clara, CA):</p>

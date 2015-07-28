@@ -7,7 +7,7 @@
 }}}
 
 ###OVERVIEW
-This article will walkthrough the creation of a Failover Cluster in preperation for a SQL AlwaysOn Availability Group. It assumes that at least one Active Directory Domain Controller exists and is reachable over the network that your SQL servers are to reside on. Best practices are to create separate VLANs for the Active Directory and the SQL networks, so ensure that the appropriate firewall rules are in place to allow communication. This article assumes we are using the default SQL instance and port (1433), please note that additional instances may have different ports assigned to them. The companion article with the SQL Configuration steps can be found [here](../Servers/configuring-a-sql-alwayson-availability-group.md).
+This article will walkthrough the creation of a Failover Cluster in preperation for a SQL AlwaysOn Availability Group. It assumes that at least one Active Directory Domain Controller exists and is reachable over the network that your SQL servers are to reside on. Best practices are to create separate VLANs for the Active Directory and the SQL networks, so ensure that the appropriate firewall rules are in place to allow communication. This article assumes we are using the default SQL instance and port (1433), please note that additional instances may have different ports assigned to them. The companion article with the SQL Configuration steps can be found [here](../Servers/configuring-failover-clustering-for-a-sql-alwayson-availability-group.md).
 
 ###DETAILED WALKTHROUGH
 

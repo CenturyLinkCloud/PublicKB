@@ -17,4 +17,4 @@
 </ul>
 <h4>To workaround this issue, please clone your app to our CLC or AWS-East infrastructures.</h4>
 <pre>$ clone &lt;src-app-name&gt; &lt;dest-app-name&gt; &lt;infra&gt;</pre>
-<p>If you're having issues with <code>clone</code>, you can use the <code>pull</code> and <code>push</code> commands together.<br />You can find information on that in our <a href="/hc/en-us/articles/203271526-PUSH-PULL-and-UPDATE-Commands">PUSH, PULL and UPDATE Commands</a> document.</p>
+<p>If you're having issues with <code>clone</code>, you can use the <code>pull</code> and <code>push</code> commands together.<br />You can find information on that in our <a href="push-pull-and-update-commands.md">PUSH, PULL and UPDATE Commands</a> document.</p>

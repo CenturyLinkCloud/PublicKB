@@ -26,7 +26,7 @@ Together, Vormetric and CenturyLink deliver data-centric security services that 
 
 The Data-centric Security-as-a-Service (DSaaS) solution enables IT organizations to efficiently deploy data-centric security across CenturyLink Partner Templates with the Vormetric Transparent Encryption SW agents and the Vormetric Data Security Manager products.  Now, IT security managers can define what files and folders are restricted, who is allowed to view the data, when access is allowed and what operations can be performed by the individual or group.  With the Vormetric data security solution, businesses now reduce their data breach risk, guard against unauthorized data access, meet executive data privacy business requirements and satisfy security compliance regulations that govern your market.
 
-Below is a solution diagram illustrating the Data Security Manager (DSM) deployment options available using the DSM, and also include [getting-started-with-vormetric-encryption-agent-deployment-blueprints](Vormetric Agent integrations that can be automatically deployed via CenturyLink Cloud Blueprints).
+Below is a solution diagram illustrating the Data Security Manager (DSM) deployment options available using the DSM, and also include [Vormetric Agent integrations that can be automatically deployed via CenturyLink Cloud Blueprints](getting-started-with-vormetric-encryption-agent-deployment-blueprints.md).
 
 ![DSM topology Diagram](http://www.vormetric.com/sites/default/files/vormetric-data-security-manager-2014-0617.png)
 
@@ -55,9 +55,9 @@ If you are interested in seeing this type of Partner Template deployment as an a
 ### Postrequisite
 - If you want to access your Vormetric DSM over the internet, please perform the following tasks once your Vormetric DSM has been deployed to your account:
 
-1. [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
+1. [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
 
-2. If required, [allow incoming traffic for the admin port](../Network/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Servers Public IP in Control Portal.  Warning: Please make sure your firewall rules are properly configured to only allow specific source traffic.  If you do not configure source traffic rules you risk exposing your DSM to the entire internet.  Note: When accessing your DSM for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
+2. If required, [allow incoming traffic for the admin port](../../Network/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Servers Public IP in Control Portal.  Warning: Please make sure your firewall rules are properly configured to only allow specific source traffic.  If you do not configure source traffic rules you risk exposing your DSM to the entire internet.  Note: When accessing your DSM for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
 
 3. Allow incoming traffic for the following ports
   - TCP Ports: 22, 443, 5696, 7024, 8080, 8443, 8444, 8445, 50000

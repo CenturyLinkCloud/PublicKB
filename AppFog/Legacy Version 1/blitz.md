@@ -9,7 +9,7 @@
 <h3>Install IronWorker</h3>
 <p>In the "Add-ons" tab in your app console click "Install" for the IronWorker add-on. That's it!</p>
 <h3>Integrate IronWorker</h3>
-<p>Just copy <a href="https://github.com/iron-io/iron_worker_php/blob/master/IronWorker.class.php" target="_blank">IronWorker.class.php</a> and include it in your script:</p>
+<p>Just copy <a href="https://github.com/iron-io/iron_worker_php/blob/master/IronWorker.class.php">IronWorker.class.php</a> and include it in your script:</p>
 <pre>&lt;?php
 require_once "IronWorker.class.php"</pre>
 <h3>Create a Worker</h3>
@@ -51,8 +51,8 @@ echo $details-&gt;status; # prints 'queued', 'complete', 'error' etc.</pre>
 <h3>And More...</h3>
 <p>You can also pass payloads to your tasks, set progress status, logs, etc. For more information, check out some of these resources:</p>
 <ul>
-<li><a href="https://github.com/iron-io/iron_worker_php" target="_blank">IronWorker on GitHub</a></li>
-<li><a href="http://iron-io.github.com/iron_worker_php/" target="_blank">IronWorker PHP Reference Documentation</a></li>
-<li><a href="https://github.com/iron-io/iron_worker_php/wiki" target="_blank">IronWorker PHP Wiki</a></li>
-<li><a href="http://docs.iron.io/" target="_blank">Full Documentation on Iron.io</a></li>
+<li><a href="https://github.com/iron-io/iron_worker_php">IronWorker on GitHub</a></li>
+<li><a href="http://iron-io.github.com/iron_worker_php/">IronWorker PHP Reference Documentation</a></li>
+<li><a href="https://github.com/iron-io/iron_worker_php/wiki">IronWorker PHP Wiki</a></li>
+<li><a href="http://docs.iron.io/">Full Documentation on Iron.io</a></li>
 </ul>

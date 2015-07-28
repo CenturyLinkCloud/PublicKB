@@ -6,8 +6,7 @@
   "contentIsHTML": false
 }}}
 
-
-CenturyLink [Ecosystem Program Partner Members](../Ecosystem Partners/centurylink-cloud-ecosystem-program-guide.md) gain access to a bevy of [resources](../Ecosystem Partners/ecosystem-program-resources.md) that make integrations easy.
+CenturyLink [Ecosystem Program Partner Members](centurylink-cloud-ecosystem-program-guide.md) gain access to a bevy of [resources](ecosystem-program-resources.md) that make integrations easy.
 
 Integrating with the CenturyLink Cloud Blueprints orchestration engine enables customers to deploy your software on their existing servers or to create the workflow for a complex multi-server/multi-service solution suite.  This integration format provides a unified deployment experience for users and is the preferred integration method when available.
 
@@ -15,7 +14,7 @@ Integrating with the CenturyLink Cloud Blueprints orchestration engine enables c
 
 Reference the following key pages from the CenturyLink Cloud [Knowledge Base](http://www.ctl.io/knowledge-base):
 
-* [Blueprints Category](../../../Blueprints/) in the Knowledge Base
+* [Blueprints Category](../../Blueprints/) in the Knowledge Base
 * Best Practices in [Packages](../../Blueprints/packages-best-practices.md) and [Blueprints](../../Blueprints/blueprints-best-practices.md)
 * [Package and Blueprint maximums](../../Blueprints/blueprint-package-and-template-maximum-limits.md)
 * [Naming conventions for Public Packages and Blueprints](../../Blueprints/creating-public-blueprint-packages.md)
@@ -59,5 +58,3 @@ Before a Blueprint can be publicly published it must pass a CenturyLink led QA p
 CenturyLink customers trust that all services available as part of the [Marketplace Provider Program](https://www.ctl.io/marketplace/program/)
 will deploy and function as expected.  To that end CenturyLink maintains quality throughout the Marketplace by executring an ongoing testing service
 that validates successful deployment and operation of all public Blueprints on a regular basis.
-
-

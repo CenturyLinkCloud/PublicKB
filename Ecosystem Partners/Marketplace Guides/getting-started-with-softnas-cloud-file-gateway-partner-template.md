@@ -71,9 +71,9 @@ This deployment process for Partner Templates currently requires manual interact
 
 2. If you want to access your VM over the internet, please perform the following tasks once you receive an email confirming you Blueprint completed successfully:
 
-  1. Add a [Public IP](../../../network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/how-to-configure-client-vpn.md) or similar technology.
+  1. Add a [Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/how-to-configure-client-vpn.md) or similar technology.
 
-3. [Allow incoming traffic](../../../network/how-to-add-public-ip-to-virtual-machine.md) for ports below:
+3. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for ports below:
   - For administrative access and use, open the following ports:
     * TCP Ports: 443
     * UDP Ports: 1
@@ -170,7 +170,7 @@ Thank you very much, your_name_here
 
 #### Where do I obtain my SoftNAS License or entitlements?
 Existing CenturyLink Enterprise Customers can contact their Account Representative for help obtaining a SoftNAS license, or contact SoftNAS directly:
-- Contact SoftNAS Sales via Email: [sales@softnas.com](sales@softnas.com)
+- Contact SoftNAS Sales via Email: [sales@softnas.com](mailto:sales@softnas.com)
 - Contact SoftNAS Sales via Phone: 1-888-801-7524, Option 1
 
 #### Who should I contact for support?

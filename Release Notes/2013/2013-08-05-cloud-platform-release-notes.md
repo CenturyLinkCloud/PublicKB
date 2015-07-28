@@ -10,7 +10,7 @@
 <hr />
 <ul>
   <li><strong>Self-service Load Balancer.&nbsp;</strong>Customers can create, change, and delete load balancer configurations. Each configuration consists of a VIP, and pool of servers for a given port (80 and 443 at this time). Servers can be added or deleted
-    from a pool, or temporarily taken out of rotation. The cost for using the shared load balancer is $0.04 per hour, and <a href="http://help.tier3.com/entries/21823570-Tier-3-Bandwidth-Billing-Model">bandwidth charges</a> remain the
+    from a pool, or temporarily taken out of rotation. The cost for using the shared load balancer is $0.04 per hour, and bandwidth charges remain the
     same.
     <p><img src="https://t3n.zendesk.com/attachments/token/6nhavnhfgqq16wy/?name=release08-05_01.png" alt="release08-05_01.png" />
     </p>

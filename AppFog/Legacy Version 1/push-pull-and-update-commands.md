@@ -3,13 +3,13 @@
   "date": "1-24-2015",
   "author": "Chris Sterling",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 <p>This lines out some details to how the <code>push</code>, <code>pull</code>, and <code>update</code> commands should work.</p>
 <h4>PUSH</h4>
 <h4><code>af push {app}</code></h4>
-<p>The command <code>push</code> ZIPs the content in the current directory and uploads it to the environment. For more information on the structure of a app, visit our <a href="/hc/en-us/articles/202988176-Application-Configuration">Application Configuration</a> article. If you have a ZIP file located within this directory, it can cause the problems lined out in the <a href="/hc/en-us/articles/202988176-Application-Configuration#zip_files">ZIP Files</a> section of that article. An example for an application called <code>user-php</code> is below.</p>
+<p>The command <code>push</code> ZIPs the content in the current directory and uploads it to the environment. For more information on the structure of a app, visit our [Application Configuration](application-configuration-using-manifest-files-and-afignore.md) article. If you have a ZIP file located within this directory, it can cause the problems lined out in the [Application Configuration](ZIP files) section of that article. An example for an application called <code>user-php</code> is below.</p>
 <pre>user@localhost: ~/af/apps/my_test_php_app$ af push user-php
 Would you like to deploy from the current directory? [Yn]: y
 Detected a PHP Application, is this correct? [Yn]: y
@@ -44,7 +44,7 @@ user@localhost:~/af/apps/user-php$ ls
 index.php</pre>
 <h4>UPDATE</h4>
 <h4><code>af update {app}</code></h4>
-<p>The command <code>update</code> updates the specified application with the <strong>all</strong> content in your current directory. If you have a ZIP file located within this directory, it can cause the problems lined out in the <a href="/hc/en-us/articles/202988176-Application-Configuration#zip_files">ZIP Files</a> section of our Application Configuration article above. An example for an application called <code>user-php</code> is below.</p>
+<p>The command <code>update</code> updates the specified application with the <strong>all</strong> content in your current directory. If you have a ZIP file located within this directory, it can cause the problems lined out in the <a href="application-configuration-using-manifest-files-and-afignore.md">ZIP Files</a> section of our Application Configuration article above. An example for an application called <code>user-php</code> is below.</p>
 <pre>user@localhost:~/af/apps$ ls
 user-php  my_test_php_app
 user@localhost:~/af/apps$ cd user-php/

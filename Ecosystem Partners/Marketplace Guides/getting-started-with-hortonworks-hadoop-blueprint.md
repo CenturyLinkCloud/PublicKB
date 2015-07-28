@@ -33,9 +33,9 @@ After reading this article, the user should feel comfortable getting Hortonworks
 ### Postrequisite
 - If you want to access your VM with Hortonworks Hadoop over the internet, please perform the following tasks once you receive an email confirming you Blueprint completed successfully:
 
-1. If you need to connect to your server via the Internet, Add a [Public IP](../../../network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/how-to-configure-client-vpn.md) or similar technology.
+1. If you need to connect to your server via the Internet, Add a [Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/how-to-configure-client-vpn.md) or similar technology.
 
-2. [Allow incoming traffic](../../../network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal. Hortonworks listens on port 8080
+2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal. Hortonworks listens on port 8080
 
 ### Install Hortonworks on RHEL6 Blueprint
 1.	Locate the Hortonworks Install Blueprint

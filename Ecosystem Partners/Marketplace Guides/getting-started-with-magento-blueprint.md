@@ -29,7 +29,7 @@ After reading this article, the user should feel comfortable getting started usi
 
 ### Postrequisite
 
-- If you need to connect to your server via internet, add a Public IP address to your server.  For more information view this link: http://www.ctl.io/knowledge-base/network/how-to-add-public-ip-to-virtual-machine/
+- If you need to connect to your server via internet, add a Public IP address to your server.  For more information view this link: http://www.ctl.io/knowledge-base/network/how-to-add-public-ip-to-virtual-machine.md
 
     ![ip.jpg](https://t3n.zendesk.com/attachments/token/kObGC9P2IjP1ate0NexwFNiXz/?name=ip.jpg)
 

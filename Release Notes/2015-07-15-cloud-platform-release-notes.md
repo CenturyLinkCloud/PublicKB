@@ -51,6 +51,8 @@ Check out the [Product Page](//www.ctl.io/appfog) and [AppFog section of the Kno
 * __Control Portal "more actions" menu on servers and groups page.__ The Control Portal is constantly evolving to complement different screen sizes. On the group and server overview pages, the actions menu now adjusts to your screen size and puts items into a "more items" menu if your screen can't fit all the icons.  
 ![menu](../images/2015-07-15_releasenotes9.gif)
 
+###Online Tools (1)###
+* [__Cloud Dev Center.__](//www.ctl.io/developers) Developers now have a primary destination for all the info needed to build apps in the CenturyLink Cloud. Find links to developer tools, video tutorials, and a constant barrage of articles that show you how to deploy scalable, highly available apps in the cloud.
 
 ###Ecosystem: New Blueprints (5)###
 

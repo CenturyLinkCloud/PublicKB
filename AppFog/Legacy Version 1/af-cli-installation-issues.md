@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>Some users have been receiving an SSL certificate error when attempting to install the AF CLI tool. Please note that this error has nothing to do with us, but it rather has to do with an SSL certificate issue with <a href="/hc/admin/articles/202312273-AF-CLI-Installation-Issues/www.rubygems.org">RubyGems</a>. They are aware of it and are working on a resolution.</p>
+<p>Some users have been receiving an SSL certificate error when attempting to install the AF CLI tool. Please note that this error has nothing to do with us, but it rather has to do with an SSL certificate issue with <a href="af-cli-installation-issues.md">RubyGems</a>. They are aware of it and are working on a resolution.</p>
 <h4>Here are a few suggestions for how to work around it.</h4>
 <ol>
 <li>Try this first:<br />

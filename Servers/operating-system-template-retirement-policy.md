@@ -21,4 +21,4 @@ To this end, CenturyLink Cloud has established an OS retirement policy.  Details
 
 ### LIST OF NOTICES FOR RETIRED OPERATING SYSTEMS
 
-Feb 3, 2015 - [see article](../servers/operating-system-retirement-notice-feb-3-2015.md)
+Feb 3, 2015 - [see article](../Servers/operating-system-retirement-notice-feb-3-2015.md)
