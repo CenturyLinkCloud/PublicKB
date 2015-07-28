@@ -14,7 +14,7 @@ Apache Spark is available for install on a standalone CentOS 6 64-bit VM in Cent
 
 ***1. Navigate to the Blueprints Library and search for "spark".  Then choose the Apache Spark install Blueprint.***
 
-![Apache Spark Blueprint](../images/Cloudera/Spark1.png)
+![Apache Spark Blueprint](../images/Cloudera/Spark1.PNG)
 
 <br>
 
