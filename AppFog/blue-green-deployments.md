@@ -47,7 +47,7 @@ Since the updated application was given a separate name and mapped to a temporar
 
 *NOTE: As described in the previous section, `myapp-green` could be replaced with `myapp-[hash from source control]` so that this deployment is associated with a newer version of the project's source control repository.*
 
-### Put Update Application into Main Rotation
+### Put Updated Application into Main Rotation
 
 Now we can put the updated application into the main rotation by mapping the original route to it.
 
