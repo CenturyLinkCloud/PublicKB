@@ -63,7 +63,7 @@ This security solution complements our previous integration with Vormetric Secur
 * [__SoftNAS.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md)
 SoftNAS is one of the most popular storage technologies in the cloud.  This Partner Template, available via Service Task, provides CenturyLink customers with an enterprise-grade, software-defined, NAS storage gateway to safely and reliably operate their business-critical IT systems and storage folders inside CenturyLink Cloud.
 
-* [__Wordpress.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-wordpress-blueprint.md)
+* [__Wordpress.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-wordPress-blueprint.md)
 Web publishing is a common workload that can be achieved through a variety of cloud models.  One of the most popular tools for these weblog and content management use cases is Wordpress, which is open source and now easier than ever to deploy in CenturyLink Cloud.  Your content teams can be up and running on Wordpress 4.2 in minutes using the Blueprint automation that can either create a new server or install the software onto an existing machine.
 
 * [__Mojang Minecraft PE.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-minecraft-pe-server-blueprint.md)
@@ -87,4 +87,4 @@ Even though our global cloud platform is able to scale to various enterprise wor
 
 * __Billing for Monthly Recurring Charges.__ We have made updates to ensure that previously omitted additional charges for services such as Dedicated Load Balancers and Cross Connects are included on monthly invoices.
 
-* __OVF Import Timeout.__ Importing cross DC OVF files can sometimes take more than 60 minutes. To ease any pain around this, timeouts have been increased from 60 minutes to 120 minutes. 
+* __OVF Import Timeout.__ Importing cross DC OVF files can sometimes take more than 60 minutes. To ease any pain around this, timeouts have been increased from 60 minutes to 120 minutes.
