@@ -54,19 +54,19 @@
 
 ###Ecosystem: New Blueprints (5)###
 
-* [__Pivotal HD + HAWQ.__](../Ecosystem Partners/getting-started-with-pivotal-hd-hawq.md)
+* [__Pivotal HD + HAWQ.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-hd-hawq.md)
 This latest entry from Pivotal in our Cloud Marketplace provides the best of both worlds in the data management space - the scalability and flexibility of Hadoop with the structured query support of HAWQ.  This Open Data Platform (ODP) compliant solution contributes to a more standards-based implementation of the Hadoop File System (HDFS), which will over time help accelerate enterprise productivity around this cost-saving, scale-ready technology.
 
-* [__Vormetric.__](../Ecosystem Partners/getting-started-with-vormetric-encryption-agent-deployment-blueprints.md)
+* [__Vormetric.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-encryption-agent-deployment-blueprints.md)
 This security solution complements our previous integration with Vormetric Security Manager, allowing the deployment of encryption agents to various server endpoints on the CenturyLink Cloud.  With Vormetric, a single infrastructure and management environment protects data wherever it resides with file, volume and cloud storage encryption, tokenization with dynamic data masking, field-level application encryption, sophisticated access control policies, third party and integrated encryption key management.
 
-* [__SoftNAS.__](../Ecosystem Partners/getting-started-with-softnas-cloud-file-gateway-partner-template.md)
+* [__SoftNAS.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md)
 SoftNAS is one of the most popular storage technologies in the cloud.  This Partner Template, available via Service Task, provides CenturyLink customers with an enterprise-grade, software-defined, NAS storage gateway to safely and reliably operate their business-critical IT systems and storage folders inside CenturyLink Cloud.
 
-* [__Wordpress.__](../Ecosystem Partners/getting-started-with-wordpress-blueprint.md)
+* [__Wordpress.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-wordpress-blueprint.md)
 Web publishing is a common workload that can be achieved through a variety of cloud models.  One of the most popular tools for these weblog and content management use cases is Wordpress, which is open source and now easier than ever to deploy in CenturyLink Cloud.  Your content teams can be up and running on Wordpress 4.2 in minutes using the Blueprint automation that can either create a new server or install the software onto an existing machine.
 
-* [__Mojang Minecraft PE.__](../Ecosystem Partners/getting-started-with-minecraft-pe-server-blueprint.md)
+* [__Mojang Minecraft PE.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-minecraft-pe-server-blueprint.md)
 Even though our global cloud platform is able to scale to various enterprise workloads, it doesn’t mean we can’t use it to have a little bit of fun.  This blueprint rolls out a Mojang Minecraft Pocket Edition (PE) server that supports iOS and Android gameplay on various personal computing devices.  This solution is a great way to build a safe, customized gaming environment for the family while teaching young engineers how the cloud actually works.
 
 
