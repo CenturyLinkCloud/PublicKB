@@ -8,7 +8,7 @@
 
 ###New Features (3)
 
-* **Orchestrate.io.** This new database-as-a-service offering is available in four CenturyLink Cloud datacenters: VA1, UC1, GB3, and SG1. The service supports many popular client libraries like Node.js, Java, Ruby, Go, Python, .NET, PHP, and Erlang. Orchestrate can be integrated with other CenturyLink Cloud deployments via API. Sign-up for the service at [**dashboard.orchestrate.io**](https:./dashboard.orchestrate.io/sessions/login). For more information on the Orchestrate service, please read [this blog post](https://www.ctl.io/blog/post/centurylink-acquires-orchestrate/).
+* **Orchestrate.io.** This new database-as-a-service offering is available in four CenturyLink Cloud datacenters: VA1, UC1, GB3, and SG1. The service supports many popular client libraries like Node.js, Java, Ruby, Go, Python, .NET, PHP, and Erlang. Orchestrate can be integrated with other CenturyLink Cloud deployments via API. Sign-up for the service at [**dashboard.orchestrate.io**](https://dashboard.orchestrate.io/sessions/login). For more information on the Orchestrate service, please read [this blog post](https://www.ctl.io/blog/post/centurylink-acquires-orchestrate/).
 
   ![Orchestrate UI](../images/orchestrate-ui-ctl-cloud.png)
 
@@ -18,7 +18,7 @@
  * Update names of networks and their descriptions
  * Claim & release of networks
 
- Review the documentation for [**APIs here**](https:./www.ctl.io/api-docs/v2/).
+ Review the documentation for [**APIs here**](https://www.ctl.io/api-docs/v2/).
 
 * **AppFog v2 Limited Beta.** This new platform for creating and managing cloud-native applications is available as a Limited Beta.  Based on Cloud Foundry v2, the service makes it easier for developers to build and scale applications.  If you are interested in becoming a beta tester, please contact [**the AppFog team**](mailto:appfog-feedback@ctl.io).
 
@@ -58,8 +58,8 @@
 
 Selected highlights include:
 
- * **ImageLayers v0.1** – [ImageLayers.io](https:./imagelayers.io/) is a browser-based visualization tool for Docker Images and their layers. This utility helps developers understand composition of a Docker Image and any [commonalities between images](https://imagelayers.io/?images=java:latest,golang:latest,node:latest,python:latest,php:latest,ruby:latest). For more information, read [**this blog post**](http://www.centurylinklabs.com/imagelayers-io-docker-visualization-and-badges/) and browse [the wiki here](https://github.com/CenturyLinkLabs/imagelayers).
+ * **ImageLayers v0.1** – [ImageLayers.io](https://imagelayers.io/) is a browser-based visualization tool for Docker Images and their layers. This utility helps developers understand composition of a Docker Image and any [commonalities between images](https://imagelayers.io/?images=java:latest,golang:latest,node:latest,python:latest,php:latest,ruby:latest). For more information, read [**this blog post**](http://www.centurylinklabs.com/imagelayers-io-docker-visualization-and-badges/) and browse [the wiki here](https://github.com/CenturyLinkLabs/imagelayers).
 
- * **Total Cost of Ownership Tool** - Comparing clouds across providers can be difficult, due to differences in performance and the underlying capabilities of each vendor. This open source tool makes it easier to understand these subtleties and variations. complicate API now interacts with Fleet API v0.9.0 directly. [**View the repository on Github**](https:./github.com/CenturyLinkCloud/EstimatorTCO).
+ * **Total Cost of Ownership Tool** - Comparing clouds across providers can be difficult, due to differences in performance and the underlying capabilities of each vendor. This open source tool makes it easier to understand these subtleties and variations. complicate API now interacts with Fleet API v0.9.0 directly. [**View the repository on Github**](https://github.com/CenturyLinkCloud/EstimatorTCO).
 
 * **Panamax Installer v0.6.0** – Panamax CLI (pmxcli) is a command-line tool for managing deployments to Panamax Remote Agents. The Panamax CLI can be run alongside Panamax and its dependencies, or as a standalone. Learn more in [**this blog post**](http:./www.centurylinklabs.com/pmxcli-a-cli-for-panamax-remote-deployments/), or visit the [Panamax CLI wiki](https://github.com/CenturyLinkLabs/panamaxcli).

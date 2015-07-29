@@ -33,7 +33,7 @@
 
 ###Online Tools (2)
 
-* **Account Activation.** The "activate" experience on [activate.centurylinkcloud.com](https:./activate.centurylinkcloud.com) has been enhanced with two-factor authentication and a simplified user flow.
+* **Account Activation.** The "activate" experience on [activate.centurylinkcloud.com](https://activate.centurylinkcloud.com) has been enhanced with two-factor authentication and a simplified user flow.
 
 * **Data center-specific Pricing Catalog and Cloud Price Estimator.** Region-specific pricing is now reflected in these tools. Simply select a data center using the drop-down, and prices will update automatically.
 
@@ -67,4 +67,4 @@ Selected highlights include:
 
 * **Kubernetes Adapter v0.2.0 and PMX-Remote-Agent-Installer v0.1.4** - The Kubernetes adapter (re-written in Go for a smaller footprint), in combination with the Panamax remote deployment capability, enables multi-container deployments to a Kubernetes cluster and includes load-balancer support. Check out [this post](http:./www.centurylinklabs.com/deploying-to-kubernetes-with-panamax/) for more details or view the [readme](https://github.com/CenturyLinkLabs/panamax-kubernetes-adapter-go).
 
-* **Panamax API v0.3.0** - API now interacts with Fleet API v0.9.0 directly. [View the change log here](https:./github.com/CenturyLinkLabs/panamax-api/blob/master/CHANGELOG.md).
+* **Panamax API v0.3.0** - API now interacts with Fleet API v0.9.0 directly. [View the change log here](https://github.com/CenturyLinkLabs/panamax-api/blob/master/CHANGELOG.md).
