@@ -1,4 +1,4 @@
-{{{
+﻿{{{
   "title": "Managed Operating System - Frequently Asked Questions",
   "date": "4-22-2015",
   "author": "Jacob Kenner",
@@ -25,6 +25,8 @@ CenturyLink’s Managed OS service helps you spend less time on the IT tasks tha
 Customers pay for managed operating system and managed applications on an hourly basis. For managed OS, customers pay the management charge __whenever the server is powered on__. Licensing fees continue whether the server is powered on or off.
 
 For managed applications, customers pay the management charge __for as long as the managed application is on the server (whether the server is powered on or off)__.
+
+Please review the [cloud pricing catalog](//www.ctl.io/pricing/#/va1) for the billing type of each managed product!
 
 **How do I create a Managed VM?**
 
