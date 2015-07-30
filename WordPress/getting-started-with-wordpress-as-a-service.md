@@ -85,3 +85,11 @@ A: You must [configure SMTP for your WordPress site](wordpress-SMTP-Configuratio
 **Q: Can I configure my own domain with CenturyLink Cloud WordPress as a Service?**
 
 A: You can [configure your own domain name](wordpress-custom-domain-configuration.md) via the CenturyLink Cloud Portal.
+
+**Q: How do I update my WordPress site?**
+
+A: You [push your committed changes with git](wordPress-site-updates-with-git.md).
+
+**Q: How do I get a local development environment that's easy to work with?**
+
+A: [vagrant up](wordpress-local-development.md)!
