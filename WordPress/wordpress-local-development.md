@@ -6,9 +6,6 @@
   "contentIsHTML": false
 }}}
 
-Local Development with CenturyLink WordPress as a Service
-=========================================================
-
 IMPORTANT NOTE
 --------------
 
