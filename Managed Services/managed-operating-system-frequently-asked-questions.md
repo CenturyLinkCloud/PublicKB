@@ -26,7 +26,7 @@ Customers pay for managed operating system and managed applications on an hourly
 
 For managed applications, customers pay the management charge __for as long as the managed application is on the server (whether the server is powered on or off)__.
 
-Please review the [cloud pricing catalog](//www.ctl.io/pricing/#/va1) for the billing type of each managed product!
+Please review the [cloud pricing catalog](//www.ctl.io/pricing) for the billing type of each managed product!
 
 **How do I create a Managed VM?**
 
