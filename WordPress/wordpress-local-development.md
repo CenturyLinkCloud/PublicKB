@@ -56,6 +56,11 @@ from the local git repository. As changes are made, they will be immediately liv
 When you are satisfied with your changes, you may commit them and push them back up to CenturyLink's git
 hosting. Please review the [knowledge base article on git cloning and pushing](wordPress-site-updates-with-git.md).
 
+### Note
+
+Database and configuration changes (plug-in settings, content posts, etc.) are not synchronized with the live site and
+*vice versa*.
+
 WordPress Administration
 ------------------------
 
@@ -84,3 +89,7 @@ exit
 ```
 
 For more details, see the [MySQL documentation](https://dev.mysql.com/doc/refman/5.5/en/mysql.html).
+
+### Note
+
+Local database changes are not reflected on the live site and *vice versa*!
