@@ -1,9 +1,10 @@
-{{{
+﻿{{{
   "title": "Managed Operating System - Frequently Asked Questions",
   "date": "4-22-2015",
   "author": "Jacob Kenner",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 Here are a few frequently asked questions for our managed OS service.
@@ -18,6 +19,14 @@ CenturyLink’s Managed OS service helps you spend less time on the IT tasks tha
 * Change Management – We provide access to OS-level change data performed by CenturyLink staff, along with robust ITIL-based internal changed control.
 * Patch/Update Management – With support available for all critical and vendor-recommended patches, we ensure only OS vendor-recommended patches are installed.
 * Security – We secure the OS with industry-standard anti-virus protection, regular virus and malware signature updates, and additional OS-level hardening to mitigate risk.
+
+**How do I pay for a managed VM?**
+
+Customers pay for managed operating system and managed applications on an hourly basis. For managed OS, customers pay the management charge __whenever the server is powered on__. Licensing fees continue whether the server is powered on or off.
+
+For managed applications, customers pay the management charge __for as long as the managed application is on the server (whether the server is powered on or off)__.
+
+Please review the [cloud pricing catalog](//www.ctl.io/pricing/#/va1) for the billing type of each managed product!
 
 **How do I create a Managed VM?**
 
