@@ -16,9 +16,9 @@ After reading this article, the reader should feel comfortable deploying the Piv
 
 <img src="/knowledge-base/images/pivotal_pcf/product-pivotal-cf.png" style="border:0;float:right;max-width: 150px;">
 
-Pivotal HD + HAWQ – “World’s Most Advanced Enterprise SQL on Hadoop Analytic Engine on the Leading Standards-Based Hadoop Distribution For Advanced Analytics”
+Pivotal Cloud Foundry – “Streamline application development, deployment and operations on a centrally-managed Platform as a Service for public and private cloud.”
 
-http://pivotal.io/big-data/pivotal-hawq
+http://pivotal.io/platform-as-a-service/pivotal-cloud-foundry
 
 #####Customer Support
 
@@ -29,11 +29,11 @@ http://pivotal.io/big-data/pivotal-hawq
 
 ### Description
 
-Pivotal has integrated their HD and HAWQ technology with the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this HD+HAWQ solution.
+Pivotal has integrated their Cloud Foundry technology with the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Cloud Foundry solution.
 
-Pivotal HD is an enterprise-ready Hadoop distribution, optimized for analytics, providing the core Apache Hadoop features and Hadoop-related project features augmented by Pivotal’s value-added extensions and analytics support.
+<img src="/knowledge-base/images/pivotal_pcf/how_pcf_works.png" style="border:0;max-width:1140px;">
 
-Pivotal HAWQ natively supports various Hadoop file formats. Reduces extract, transform and load (ETL) processing and data movement, and directly contributes to lower cost of ownership of the data analytics solution. Pivotal HAWQ data federation capabilities are the most advanced in the industry. They enable enterprises to implement end-to-end data analytics initiatives, without having to execute major data transformation projects as a prerequisite.
+Cloud Foundry® is the result of collaborative industry efforts to build an open platform for next-generation software development. Over 40 members of the Cloud Foundry Foundation now contribute to the project, including VMware, EMC and GE. Pivotal’s commercial edition builds on the open source Cloud Foundry release with advanced features:
 
 
 ### Audience
@@ -213,6 +213,8 @@ access this tool:
 
 The PCF environment consistents of servers and persistent elastic block storage which both must be removed to eliminate all associated infrastructure
 charges.
+
+<img src="/knowledge-base/images/pivotal_pcf/ops_mgr_delete_install.png" style="border:0;width:70%;">
 
 * If you have a fully functioning PCF environment, from your Ops Manager dashboard click the *gear* icon the select *delete this installation*
 * If you never performed a deploy or you have already performed the above deletion process - you may safely delete the Ops Manager server or the entire group containing it
