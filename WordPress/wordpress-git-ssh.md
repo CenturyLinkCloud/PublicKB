@@ -78,9 +78,15 @@ Now your public key needs to be associated with your CenturyLink Git Hosting acc
 1. Log in to CenturyLink's Git Hosting and navigate to
    [the SSH keys on your account profile](https://git.wordpress.ctl.io/profile/keys).
 2. Click "Add SSH Key".
+
+   ![](../images/wp_git_ssh/addSshKey.png)
+
 3. Provide a title for your key. For example, you may choose to call it your Office Public Key or your Home Public Key.
 4. Copy the content of your public key file and paste it into the key field.
 5. Click "Add Key".
+
+   ![](../images/wp_git_ssh/sshKeyInfo.png)
+
 6. Test your set-up:
 
        ```
