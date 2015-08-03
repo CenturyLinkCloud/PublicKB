@@ -61,13 +61,13 @@ Generating a Public-Private Key Pair
 3. Have the content of the public key ready (the public key ends in the `.pub` suffix).
 
        ```
-       cat ~/.ssh/[your_key].pub
+       cat ~/.ssh/[your_key_file_name].pub
        ```
 
 4. Add your new key to the SSH Agent.
 
        ```
-       ssh-add ~/.ssh/[your_key]
+       ssh-add ~/.ssh/[your_key_file_name]
        ```
 
 Adding Your Public Key to Your Git Account
