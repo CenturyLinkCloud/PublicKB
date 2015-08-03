@@ -69,7 +69,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 |:-	|:-	|
 | [Artifactory](../Ecosystem Partners/Marketplace Guides/getting-started-with-artifactory-blueprint.md)   	| Blueprint    | Code collaboration repository    |
 | [Codiad](../Ecosystem Partners/Marketplace Guides/getting-started-with-codiad-blueprint.md)   	| Blueprint    | Development Framework    |
-| [GitLab](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-gitlab-blueprint.md)   	| Blueprint    | Code collaboration repository    |
+| [GitLab](../Ecosystem Partners/Marketplace Guides/getting-started-with-gitlab-blueprint.md)   	| Blueprint    | Code collaboration repository    |
 | [Jenkins](../Ecosystem Partners/Marketplace Guides/getting-started-with-jenkins-blueprint.md)   	| Blueprint    | Continuous integration system    |
 | [Squash](../Ecosystem Partners/Marketplace Guides/getting-started-with-squash-blueprint.md)   	| Blueprint    | Code Analysis    |
 

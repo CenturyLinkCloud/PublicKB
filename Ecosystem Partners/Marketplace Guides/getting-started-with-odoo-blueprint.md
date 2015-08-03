@@ -1,20 +1,21 @@
 {{{
-  "title": "Getting Started with Diaspora - Blueprint",
+  "title": "Getting Started with Odoo - Blueprint",
   "date": "07-30-2015",
   "author": "Bitnami and <a href='https://www.linkedin.com/in/bstolzberg'>Bob Stolzberg</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-![Diaspora logo](https://bitnami.com/assets/stacks/diaspora/img/diaspora-stack-220x234.png)
+![Odoo logo](https://bitnami.com/assets/stacks/odoo/img/odoo-stack-220x234.png)
 
 ### Technology Profile
-Diaspora is like having your own, private social network without the privacy and social concerns in large, public social networks. When you run Diaspora, you will create a "pod" which is part of the decentralized social network. Within Diaspora, you can determine what is visible to friends and family, and what can be seen publicly.
+
+OpenERP isn't just one application. It's hundreds. OpenERP is an enterprise resource platform from which you can manage all your business operations – from supply chain and project management, to accounting and HR. Out of the box, OpenERP includes messaging, sales CRM and reporting modules. Click the settings tab and you'll be presented with nearly 2000 other modules – bug tracking, project management, timesheets, MRP, recruiting, calendar, warehouse management, and much, much more – that can be deployed with one click.
 
 ### Description
-Through the CenturyLink Blueprint integration, the Diaspora Stack provides a click-through solution to install and configure Diaspora on the Linux platform.
+Through the CenturyLink Blueprint integration, the Odoo Stack provides a click-through solution to install and configure Odoo on the Linux platform.
 
-For more information, please visit [http://www.diasporafoundation.org/](http://www.diasporafoundation.org/)
+For more information, please visit [http://www.openerp.com/](http://www.openerp.com/)
 
 ### Audience
 CenturyLink Cloud Users
@@ -33,36 +34,32 @@ After reading this article, the user should feel comfortable getting started usi
 2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
   * The default ports to access the application are: 80, 443
 
-### Deploying Diaspora on a New Server
-Diaspora is available as a Blueprint for deployment on a new server.
+### Deploying Odoo on a New Server
+Odoo is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
-1. **Locate the Diaspora Stack Blueprint**
+1. **Locate the Odoo Stack Blueprint**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-  2. Search for “Diaspora” in the keyword search on the right side of the page.
-  3. Locate the 'Install Diaspora on Linux' Blueprint
+  2. Search for “Odoo” in the keyword search on the right side of the page.
+  3. Locate the 'Install Odoo on Linux' Blueprint
 
-2. **Choose and Deploy the Blueprint. Click the “Install Diaspora on Linux” Blueprint.**
+2. **Choose and Deploy the Blueprint. Click the “Install Odoo on Linux” Blueprint.**
 
 3. **Configure the Blueprint** 
 Complete the information below:
 
   1. Execute on Server: Select a Linux x64 server to deploy the Blueprint on.
-  2. Apache Web Server Port, e.g. 80
-  3. SSL Port, e.g. 443
-  4. Web Server domain, e.g. 127.0.0.1
-  5. MySQL Server port, e.g. 3306
-  6. Login, e.g. user
-  7. Your real name, e.g. User Name
-  8. Email Address, e.g. user@example.com
-  9. Password
-  10. Do you want to configure mail support?, e.g. 0
-  11. Default email provider:, e.g. custom
-  12. SMTP User
-  13. SMTP Password
-  14. SMTP Port, e.g. 587
-  15. SMTP Host
-  16. Secure connection, e.g. tls
+  2. PostgreSQL postgres user password
+  3. Apache Web Server Port, e.g. 80
+  4. Email Address, e.g. user@example.com
+  5. Password
+  6. Do you want to configure mail support?, e.g. 0
+  7. Default email provider:, e.g. custom
+  8. SMTP User
+  9. SMTP Password
+  10. SMTP Port, e.g. 587
+  11. SMTP Host
+  12. Secure connection, e.g. tls
 
 4. **Review and Confirm the Blueprint**
   1. Click “next: step 2”
@@ -77,26 +74,22 @@ Complete the information below:
   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-### Deploy Diaspora to an existing server (alternate option)
-Diaspora Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
+### Deploy Odoo to an existing server (alternate option)
+The Odoo Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
-#### Steps to deploy Diaspoa to an existing server
+#### Steps to deploy Odoo to an existing server
 1. **Deploy or Identify an Existing Server**
-Identify the server targeted for Diaspora installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
+Identify the server targeted for Odoo installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. **Select to Execute the Package on a Server Group**
-  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Diaspora on Linux**.
+  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Odoo on Linux**.
   2. See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. **Configure the Parameters**
 Set the following application parameters:
 
+* **PostgreSQL postgres user password**
 * **Apache Web Server Port** - default 80
-* **SSL Port** - default 443
-* **Web Server domain** - default 127.0.0.1
-* **MySQL Server port** - default 3306
-* **Login** - default user
-* **Your real name** - default User Name
 * **Email Address** - default user@example.com
 * **Password**
 * **Do you want to configure mail support?** - default 0
@@ -115,7 +108,7 @@ Once verified, click on the `execute package` button. This will kick off the dep
   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-### Access your Diaspora server
+### Access your Odoo server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
 
   1. Check email to obtain Server Name and IP Address Login information

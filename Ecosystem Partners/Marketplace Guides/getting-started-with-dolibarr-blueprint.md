@@ -1,20 +1,20 @@
 {{{
-  "title": "Getting Started with Diaspora - Blueprint",
+  "title": "Getting Started with Dolibarr - Blueprint",
   "date": "07-30-2015",
   "author": "Bitnami and <a href='https://www.linkedin.com/in/bstolzberg'>Bob Stolzberg</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-![Diaspora logo](https://bitnami.com/assets/stacks/diaspora/img/diaspora-stack-220x234.png)
+![Dolibarr logo](https://bitnami.com/assets/stacks/dolibarr/img/dolibarr-stack-220x234.png)
 
 ### Technology Profile
-Diaspora is like having your own, private social network without the privacy and social concerns in large, public social networks. When you run Diaspora, you will create a "pod" which is part of the decentralized social network. Within Diaspora, you can determine what is visible to friends and family, and what can be seen publicly.
+Dolibarr is an open source ERP and CRM that contains dozens of modules to support all aspects of your business. When you launch Dolibarr, you can configure it with as many or as few modules as required to support everything from supply chain and project management to accounting and human resources management.
 
 ### Description
-Through the CenturyLink Blueprint integration, the Diaspora Stack provides a click-through solution to install and configure Diaspora on the Linux platform.
+Through the CenturyLink Blueprint integration, the Dolibarr Stack provides a click-through solution to install and configure Dolibarr on the Linux platform.
 
-For more information, please visit [http://www.diasporafoundation.org/](http://www.diasporafoundation.org/)
+For more information, please visit [http://www.dolibarr.org](http://www.dolibarr.org)
 
 ### Audience
 CenturyLink Cloud Users
@@ -26,6 +26,7 @@ After reading this article, the user should feel comfortable getting started usi
 - Access to the CenturyLink Cloud platform as an authorized user.
 
 ### Postrequisite
+
 - If you want to access your application over the internet, please perform the following tasks after you receive an email notifying you that the Blueprint completed successfully:
 
 1. If you need to connect to your server via the Internet, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
@@ -33,16 +34,16 @@ After reading this article, the user should feel comfortable getting started usi
 2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
   * The default ports to access the application are: 80, 443
 
-### Deploying Diaspora on a New Server
-Diaspora is available as a Blueprint for deployment on a new server.
+### Deploying Dolibarr on a New Server
+Dolibarr is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
-1. **Locate the Diaspora Stack Blueprint**
+1. **Locate the Dolibarr Stack Blueprint**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-  2. Search for “Diaspora” in the keyword search on the right side of the page.
-  3. Locate the 'Install Diaspora on Linux' Blueprint
+  2. Search for “Dolibarr” in the keyword search on the right side of the page.
+  3. Locate the 'Install Dolibarr on Linux' Blueprint
 
-2. **Choose and Deploy the Blueprint. Click the “Install Diaspora on Linux” Blueprint.**
+2. **Choose and Deploy the Blueprint. Click the “Install Dolibarr on Linux” Blueprint.**
 
 3. **Configure the Blueprint** 
 Complete the information below:
@@ -53,16 +54,15 @@ Complete the information below:
   4. Web Server domain, e.g. 127.0.0.1
   5. MySQL Server port, e.g. 3306
   6. Login, e.g. user
-  7. Your real name, e.g. User Name
-  8. Email Address, e.g. user@example.com
-  9. Password
-  10. Do you want to configure mail support?, e.g. 0
-  11. Default email provider:, e.g. custom
-  12. SMTP User
-  13. SMTP Password
-  14. SMTP Port, e.g. 587
-  15. SMTP Host
-  16. Secure connection, e.g. tls
+  7. Email Address, e.g. user@example.com
+  8. Password
+  9. Do you want to configure mail support?, e.g. 0
+  10. Default email provider:, e.g. custom
+  11. SMTP User
+  12. SMTP Password
+  13. SMTP Port, e.g. 587
+  14. SMTP Host
+  15. Secure connection, e.g. tls
 
 4. **Review and Confirm the Blueprint**
   1. Click “next: step 2”
@@ -77,15 +77,15 @@ Complete the information below:
   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-### Deploy Diaspora to an existing server (alternate option)
-Diaspora Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
+### Deploy Dolibarr to an existing server (alternate option)
+The Dolibarr Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
-#### Steps to deploy Diaspoa to an existing server
+#### Steps to deploy Dolibarr to an existing server
 1. **Deploy or Identify an Existing Server**
-Identify the server targeted for Diaspora installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
+Identify the server targeted for Dolibarr installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. **Select to Execute the Package on a Server Group**
-  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Diaspora on Linux**.
+  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Dolibarr on Linux**.
   2. See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. **Configure the Parameters**
@@ -96,7 +96,6 @@ Set the following application parameters:
 * **Web Server domain** - default 127.0.0.1
 * **MySQL Server port** - default 3306
 * **Login** - default user
-* **Your real name** - default User Name
 * **Email Address** - default user@example.com
 * **Password**
 * **Do you want to configure mail support?** - default 0
@@ -115,7 +114,7 @@ Once verified, click on the `execute package` button. This will kick off the dep
   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-### Access your Diaspora server
+### Access your Dolibarr server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
 
   1. Check email to obtain Server Name and IP Address Login information

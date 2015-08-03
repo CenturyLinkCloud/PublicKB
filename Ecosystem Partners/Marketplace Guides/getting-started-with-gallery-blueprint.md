@@ -1,20 +1,20 @@
 {{{
-  "title": "Getting Started with Diaspora - Blueprint",
+  "title": "Getting Started with Gallery - Blueprint",
   "date": "07-30-2015",
   "author": "Bitnami and <a href='https://www.linkedin.com/in/bstolzberg'>Bob Stolzberg</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-![Diaspora logo](https://bitnami.com/assets/stacks/diaspora/img/diaspora-stack-220x234.png)
+![Gallery logo](https://bitnami.com/assets/stacks/gallery/img/gallery-stack-220x234.png)
 
 ### Technology Profile
-Diaspora is like having your own, private social network without the privacy and social concerns in large, public social networks. When you run Diaspora, you will create a "pod" which is part of the decentralized social network. Within Diaspora, you can determine what is visible to friends and family, and what can be seen publicly.
+Gallery is a photo management tool that can be easily integrated with a website. Features include multiple ways to organize and display photos, watermarking, tagging, search and more. There is now a mobile app for Gallery that allows you to manage your photos on the go.
 
 ### Description
-Through the CenturyLink Blueprint integration, the Diaspora Stack provides a click-through solution to install and configure Diaspora on the Linux platform.
+Through the CenturyLink Blueprint integration, the Gallery Stack provides a click-through solution to install and configure Gallery on the Linux platform.
 
-For more information, please visit [http://www.diasporafoundation.org/](http://www.diasporafoundation.org/)
+For more information, please visit [http://galleryproject.org/](http://galleryproject.org/)
 
 ### Audience
 CenturyLink Cloud Users
@@ -33,16 +33,16 @@ After reading this article, the user should feel comfortable getting started usi
 2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
   * The default ports to access the application are: 80, 443
 
-### Deploying Diaspora on a New Server
-Diaspora is available as a Blueprint for deployment on a new server.
+### Deploying Gallery on a New Server
+Gallery is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
-1. **Locate the Diaspora Stack Blueprint**
+1. **Locate the Gallery Stack Blueprint**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-  2. Search for “Diaspora” in the keyword search on the right side of the page.
-  3. Locate the 'Install Diaspora on Linux' Blueprint
+  2. Search for “Gallery” in the keyword search on the right side of the page.
+  3. Locate the 'Install Gallery on Linux' Blueprint
 
-2. **Choose and Deploy the Blueprint. Click the “Install Diaspora on Linux” Blueprint.**
+2. **Choose and Deploy the Blueprint. Click the “Install Gallery on Linux” Blueprint.**
 
 3. **Configure the Blueprint** 
 Complete the information below:
@@ -56,13 +56,6 @@ Complete the information below:
   7. Your real name, e.g. User Name
   8. Email Address, e.g. user@example.com
   9. Password
-  10. Do you want to configure mail support?, e.g. 0
-  11. Default email provider:, e.g. custom
-  12. SMTP User
-  13. SMTP Password
-  14. SMTP Port, e.g. 587
-  15. SMTP Host
-  16. Secure connection, e.g. tls
 
 4. **Review and Confirm the Blueprint**
   1. Click “next: step 2”
@@ -77,15 +70,15 @@ Complete the information below:
   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-### Deploy Diaspora to an existing server (alternate option)
-Diaspora Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
+### Deploy Gallery to an existing server (alternate option)
+The Gallery Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
-#### Steps to deploy Diaspoa to an existing server
+#### Steps to dploy Gallery to an existing server
 1. **Deploy or Identify an Existing Server**
-Identify the server targeted for Diaspora installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
+Identify the server targeted for Gallery installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. **Select to Execute the Package on a Server Group**
-  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Diaspora on Linux**.
+  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Gallery on Linux**.
   2. See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. **Configure the Parameters**
@@ -99,13 +92,6 @@ Set the following application parameters:
 * **Your real name** - default User Name
 * **Email Address** - default user@example.com
 * **Password**
-* **Do you want to configure mail support?** - default 0
-* **Default email provider:** - default custom
-* **SMTP User**
-* **SMTP Password**
-* **SMTP Port** - default 587
-* **SMTP Host**
-* **Secure connection** - default tls
 
 4. **Deploy the Script Package**
 Once verified, click on the `execute package` button. This will kick off the deployment process and load a page where you can track the progress. Deployment will typically complete within a few minutes.
@@ -115,7 +101,7 @@ Once verified, click on the `execute package` button. This will kick off the dep
   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-### Access your Diaspora server
+### Access your Gallery server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
 
   1. Check email to obtain Server Name and IP Address Login information
