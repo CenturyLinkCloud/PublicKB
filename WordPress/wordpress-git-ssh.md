@@ -1,7 +1,7 @@
 {{{
   "title": "Using Git with SSH",
   "date": "07-31-2015",
-  "author": "Matt Wittmann", "Greg McWilliams",
+  "author": "Matt Wittmann, Greg McWilliams",
   "attachments": [],
   "contentIsHTML": false
 }}}
