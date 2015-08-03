@@ -47,7 +47,7 @@ Flume can also optionally encrypt all communications using a selectable encrypti
 A unique feature of Flume among file transfer programs is the ability to be used in a UNIX "pipe". This means that source data can come via 'stdin' and/or output can be to 'stdout'. If either of these modes is used at the remote location, Flume allows specification of what program is to run there to either: push data to 'stdin' or pull data from 'stdout'. See the Flume User Manual for more information on this feature.
 
 ### Offer
-Saratoga Data is making their technology available for CenturyLink Cloud Users to deploy to their account.  Installation of the Flume Blueprint includes a license good for as much as two months (depending on the actual date of deployment). In order to purchase a license or entitlement, please contact [sales@saratogadata.com](mailto:sales@saratogadata.com)
+Saratoga Data is making their technology available for CenturyLink Cloud Users to deploy to their account.  Installation of the Flume Blueprint includes a license good for one month (depending on the actual date of deployment). In order to purchase a license or entitlement, please contact [sales@saratogadata.com](mailto:sales@saratogadata.com)
 
 ### Audience
 CenturyLink Cloud Users with high latency, challenged links, especially remote locations and via satellite-based connections.
