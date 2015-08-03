@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Pivotal HD + HAWQ - Blueprint",
-  "date": "5-27-2015",
+  "date": "8-3-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -10,7 +10,7 @@
 
 ### Overview
 
-After reading this article, the reader should feel comfortable deploying the Pivotal HD and HAWQyGemFire in-memory database on CenturyLink Cloud.
+After reading this article, the reader should feel comfortable deploying the Pivotal HD and HAWQ on CenturyLink Cloud.
 
 ### Partner Profile
 
