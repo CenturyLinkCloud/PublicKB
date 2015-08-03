@@ -21,6 +21,8 @@ Prerequisites
 2. You have [OpenSSH](http://www.openssh.com/) installed. To test this, type `ssh -v` at the command prompt.
 3. You have successfully created a WordPress site with
    [CenturyLink's WordPress as a Service](https://wordpress.ctl.io/).
+4. You have a basic comfort with a command prompt. All commands provided are meant to be entered into a Bash
+   shell or similar.
 
 Introduction
 ------------
@@ -40,6 +42,9 @@ Overview
 
 Generating a Public-Private Key Pair
 ------------------------------------
+
+**Note:** Windows users will need to start the Git Bash prompt included with [Msysgit](https://msysgit.github.io/) to
+follow these steps rather than using the standard Windows command prompt.
 
 1. Check whether you already have an appropriate public-private key pair to use. Look for a pair of files in your
    ~/.ssh directory—one suffixed with `.pub` and the other without. If you have an appropriate set of keys already,
@@ -64,7 +69,13 @@ Generating a Public-Private Key Pair
        cat ~/.ssh/[your_key_file_name].pub
        ```
 
-4. Add your new key to the SSH Agent.
+4. You may need to start the SSH Agent.
+
+       ```
+       eval "(ssh-agent -s)"
+       ```
+
+5. Add your new key to the SSH Agent.
 
        ```
        ssh-add ~/.ssh/[your_key_file_name]
