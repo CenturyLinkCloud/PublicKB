@@ -1,20 +1,20 @@
 {{{
-  "title": "Getting Started with WildFly - Blueprint",
+  "title": "Getting Started with Gallery - Blueprint",
   "date": "07-30-2015",
   "author": "Bitnami and <a href='https://www.linkedin.com/in/bstolzberg'>Bob Stolzberg</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-![WildFly logo](https://bitnami.com/assets/stacks/wildfly/img/wildfly-stack-220x234.png)
+![Gallery logo](https://bitnami.com/assets/stacks/gallery/img/gallery-stack-220x234.png)
 
 ### Technology Profile
-Welcome to the next-generation JBoss AS server, WildFly. Written in Java, WildFly is free and open source application server. Don't let it's agile and lightweight feel fool you: WildFly is a powerful beast that can run extremely fast with a full J2EE stack including Java EE7. This new Java release provides rich enterprise capabilities in frameworks that reduce technical burden and eliminate boiler plate. WildFly also supports the latest standards for REST based data access, including JAX-RS 2, and JSON-P. The WildFly stack includes ready-to-run versions of WildFly, Apache, MySQL, and Java, and required dependencies.
+Gallery is a photo management tool that can be easily integrated with a website. Features include multiple ways to organize and display photos, watermarking, tagging, search and more. There is now a mobile app for Gallery that allows you to manage your photos on the go.
 
 ### Description
-Through the CenturyLink Blueprint integration, the WildFly Stack provides a click-through solution to install and configure WildFly on the Linux platform.
+Through the CenturyLink Blueprint integration, the Gallery Stack provides a click-through solution to install and configure Gallery on the Linux platform.
 
-For more information, please visit [http://www.wildfly.org/](http://www.wildfly.org/)
+For more information, please visit [http://galleryproject.org/](http://galleryproject.org/)
 
 ### Audience
 CenturyLink Cloud Users
@@ -28,32 +28,34 @@ After reading this article, the user should feel comfortable getting started usi
 ### Postrequisite
 - If you want to access your application over the internet, please perform the following tasks after you receive an email notifying you that the Blueprint completed successfully:
 
-1. If you need to connect to your server via the Internet, [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
+1. If you need to connect to your server via the Internet, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
 
-2. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
+2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
   * The default ports to access the application are: 80, 443
 
-### Deploying WildFly on a New Server
-WildFly is available as a Blueprint for deployment on a new server.
+### Deploying Gallery on a New Server
+Gallery is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
-1. **Locate the WildFly Stack Blueprint**
+1. **Locate the Gallery Stack Blueprint**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-  2. Search for “WildFly” in the keyword search on the right side of the page.
-  3. Locate the 'Install WildFly on Linux' Blueprint
+  2. Search for “Gallery” in the keyword search on the right side of the page.
+  3. Locate the 'Install Gallery on Linux' Blueprint
 
-2. **Choose and Deploy the Blueprint. Click the “Install WildFly on Linux” Blueprint.**
+2. **Choose and Deploy the Blueprint. Click the “Install Gallery on Linux” Blueprint.**
 
 3. **Configure the Blueprint** 
 Complete the information below:
 
   1. Execute on Server: Select a Linux x64 server to deploy the Blueprint on.
-  2. Username, e.g. manager
-  3. Password
-  4. MySQL Server root password
-  5. Apache Web Server Port, e.g. 80
-  6. SSL Port, e.g. 443
-  7. MySQL Server port, e.g. 3306
+  2. Apache Web Server Port, e.g. 80
+  3. SSL Port, e.g. 443
+  4. Web Server domain, e.g. 127.0.0.1
+  5. MySQL Server port, e.g. 3306
+  6. Login, e.g. user
+  7. Your real name, e.g. User Name
+  8. Email Address, e.g. user@example.com
+  9. Password
 
 4. **Review and Confirm the Blueprint**
   1. Click “next: step 2”
@@ -68,26 +70,28 @@ Complete the information below:
   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-### Deploy WildFly to an existing server (alternate option)
-The WildFly Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
+### Deploy Gallery to an existing server (alternate option)
+The Gallery Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
-#### Steps to deploy WildFly to an existing server
+#### Steps to dploy Gallery to an existing server
 1. **Deploy or Identify an Existing Server**
-Identify the server targeted for WildFly installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
+Identify the server targeted for Gallery installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. **Select to Execute the Package on a Server Group**
-  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install WildFly on Linux**.
-  2. See the [using group tasks to install scripts on groups](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
+  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Gallery on Linux**.
+  2. See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. **Configure the Parameters**
 Set the following application parameters:
 
-* **Username** - default manager
-* **Password**
-* **MySQL Server root password**
 * **Apache Web Server Port** - default 80
 * **SSL Port** - default 443
+* **Web Server domain** - default 127.0.0.1
 * **MySQL Server port** - default 3306
+* **Login** - default user
+* **Your real name** - default User Name
+* **Email Address** - default user@example.com
+* **Password**
 
 4. **Deploy the Script Package**
 Once verified, click on the `execute package` button. This will kick off the deployment process and load a page where you can track the progress. Deployment will typically complete within a few minutes.
@@ -97,7 +101,7 @@ Once verified, click on the `execute package` button. This will kick off the dep
   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-### Access your WildFly server
+### Access your Gallery server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
 
   1. Check email to obtain Server Name and IP Address Login information

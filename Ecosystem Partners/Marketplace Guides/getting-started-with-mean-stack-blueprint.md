@@ -1,20 +1,20 @@
 {{{
-  "title": "Getting Started with Jenkins - Blueprint",
+  "title": "Getting Started with MEAN - Blueprint",
   "date": "07-30-2015",
   "author": "Bitnami and <a href='https://www.linkedin.com/in/bstolzberg'>Bob Stolzberg</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-![Jenkins logo](https://bitnami.com/assets/stacks/jenkins/img/jenkins-stack-220x234.png)
+![MEAN logo](https://bitnami.com/assets/stacks/meanstack/img/meanstack-stack-220x234.png)
 
 ### Technology Profile
-Ask a room of developers which CI system they're using and there is a good chance that several, if not most, will say Jenkins. Not wanting to see their favorite CI subsumed by Oracle, Jenkins was spun out in 2011 as its own product. It's widely recognized as the most feature-rich CI available with easy configuration, continuous delivery and continuous integration support, easily test, build and stage your app, and more. It supports multiple SCM tools including CVS, Subversion and Git. It can execute Apache Ant and Apache Maven-based projects as well as arbitrary scripts. Out of the box, the Jenkins Blueprint package includes Jenkins, Apache, Tomcat, and Git.
+The MEAN Stack provides a complete development environment for the leading noSQL database, MongoDB. It includes the latest stable release of MongoDB, Express, Angular, Node.js, Git, PHP and RockMongo.
 
 ### Description
-Through the CenturyLink Blueprint integration, the Jenkins Stack provides a click-through solution to install and configure Jenkins on the Linux platform.
+Through the CenturyLink Blueprint integration, the MEAN Stack provides a click-through solution to install and configure MEAN on the Linux platform.
 
-For more information, please visit [http://jenkins-ci.org/](http://jenkins-ci.org/)
+For more information, please visit [http://www.mongodb.org/](http://www.mongodb.org/)
 
 ### Audience
 CenturyLink Cloud Users
@@ -28,32 +28,27 @@ After reading this article, the user should feel comfortable getting started usi
 ### Postrequisite
 - If you want to access your application over the internet, please perform the following tasks after you receive an email notifying you that the Blueprint completed successfully:
 
-1. If you need to connect to your server via the Internet, [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
+1. If you need to connect to your server via the Internet, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
 
-2. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
+2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
   * The default ports to access the application are: 80, 443
 
-### Deploying Jenkins on a New Server
-Jenkins is available as a Blueprint for deployment on a new server.
+### Deploying MEAN on a New Server
+MEAN is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
-1. **Locate the Jenkins Stack Blueprint**
+1. **Locate the MEAN Stack Blueprint**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-  2. Search for “Jenkins” in the keyword search on the right side of the page.
-  3. Locate the 'Install Jenkins on Linux' Blueprint
+  2. Search for “MEAN” in the keyword search on the right side of the page.
+  3. Locate the 'Install MEAN on Linux' Blueprint
 
-2. **Choose and Deploy the Blueprint. Click the “Install Jenkins on Linux” Blueprint.**
+2. **Choose and Deploy the Blueprint. Click the “Install MEAN on Linux” Blueprint.**
 
 3. **Configure the Blueprint** 
 Complete the information below:
 
   1. Execute on Server: Select a Linux x64 server to deploy the Blueprint on.
-  2. Apache Web Server Port, e.g. 80
-  3. SSL Port, e.g. 443
-  4. Login, e.g. user
-  5. Your real name, e.g. User Name
-  6. Email Address, e.g. user@example.com
-  7. Password
+  2. MongoDB Server root password
 
 4. **Review and Confirm the Blueprint**
   1. Click “next: step 2”
@@ -68,26 +63,21 @@ Complete the information below:
   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-### Deploy Jenkins to an existing server (alternate option)
-Jenkins Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
+### Deploy MEAN to an existing server (alternate option)
+The MEAN Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
-#### Steps to deploy Jenkins to an existing server
+#### Steps to deploy MEAN to an existing server
 1. **Deploy or Identify an Existing Server**
-Identify the server targeted for Jenkins installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
+Identify the server targeted for MEAN installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. **Select to Execute the Package on a Server Group**
-  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Jenkins on Linux**.
-  2. See the [using group tasks to install scripts on groups](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
+  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install MEAN on Linux**.
+  2. See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. **Configure the Parameters**
 Set the following application parameters:
 
-* **Apache Web Server Port** - default 80
-* **SSL Port** - default 443
-* **Login** - default user
-* **Your real name** - default User Name
-* **Email Address** - default user@example.com
-* **Password**
+* **MongoDB Server root password**
 
 4. **Deploy the Script Package**
 Once verified, click on the `execute package` button. This will kick off the deployment process and load a page where you can track the progress. Deployment will typically complete within a few minutes.
@@ -97,7 +87,7 @@ Once verified, click on the `execute package` button. This will kick off the dep
   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-### Access your Jenkins server
+### Access your MEAN server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
 
   1. Check email to obtain Server Name and IP Address Login information

@@ -1,20 +1,20 @@
 {{{
-  "title": "Getting Started with Tomcat - Blueprint",
+"title": "Getting Started with DreamFactory - Blueprint",
   "date": "07-30-2015",
   "author": "Bitnami and <a href='https://www.linkedin.com/in/bstolzberg'>Bob Stolzberg</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-![Tomcat logo](https://bitnami.com/assets/stacks/tomcatstack/img/tomcatstack-stack-220x234.png)
+![DreamFactory logo](https://bitnami.com/assets/stacks/dreamfactory/img/dreamfactory-stack-220x234.png)
 
 ### Technology Profile
-Apache Tomcat is the most widely adopted application and web server in production today. Where WildFly is full JEE stack, Tomcat is a simpler servlet container and web server. Tomcat is lightweight and agile, simple to use and has a very large ecosystem of add-ons
+DreamFactory is an open source REST API platform for mobile enterprise application developers. DreamFactory enables developers to quickly connect any SQL or NoSQL database or File Storage system to any tablet, phone, or other device with a comprehensive palette of RESTful services. Additional capabilities include user management, roles and permissions, record-level access control, server-side scripting, filter string queries, and application hosting. DreamFactory generates Client SDKs for all major development environments, including jQuery, AngularJS, Sencha, iOS, Android, and Windows Phone.
 
 ### Description
-Through the CenturyLink Blueprint integration, the Tomcat Stack provides a click-through solution to install and configure Tomcat on the Linux platform.
+Through the CenturyLink Blueprint integration, the DreamFactory Stack provides a click-through solution to install and configure DreamFactory on the Linux platform.
 
-For more information, please visit [http://tomcat.apache.org/](http://tomcat.apache.org/)
+For more information, please visit [https://www.dreamfactory.com/](https://www.dreamfactory.com/)
 
 ### Audience
 CenturyLink Cloud Users
@@ -28,32 +28,34 @@ After reading this article, the user should feel comfortable getting started usi
 ### Postrequisite
 - If you want to access your application over the internet, please perform the following tasks after you receive an email notifying you that the Blueprint completed successfully:
 
-1. If you need to connect to your server via the Internet, [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
+1. If you need to connect to your server via the Internet, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
 
-2. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
+2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
   * The default ports to access the application are: 80, 443
 
-### Deploying Tomcat on a New Server
-Tomcat is available as a Blueprint for deployment on a new server.
+### Deploying DreamFactory on a New Server
+DreamFactory is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
-1. **Locate the Tomcat Stack Blueprint**
+1. **Locate the DreamFactory Stack Blueprint**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-  2. Search for “Tomcat” in the keyword search on the right side of the page.
-  3. Locate the 'Install Tomcat on Linux' Blueprint
+  2. Search for “DreamFactory” in the keyword search on the right side of the page.
+  3. Locate the 'Install DreamFactory on Linux' Blueprint
 
-2. **Choose and Deploy the Blueprint. Click the “Install Tomcat on Linux” Blueprint.**
+2. **Choose and Deploy the Blueprint. Click the “Install DreamFactory on Linux” Blueprint.**
 
 3. **Configure the Blueprint** 
 Complete the information below:
 
   1. Execute on Server: Select a Linux x64 server to deploy the Blueprint on.
-  2. Username, e.g. manager
-  3. Password
-  4. MySQL Server root password
-  5. Apache Web Server Port, e.g. 80
-  6. SSL Port, e.g. 443
+  2. First Name, e.g. UserName
+  3. Last Name, e.g. LastName
+  4. Apache Web Server Port, e.g. 80
+  5. SSL Port, e.g. 443
+  6. Web Server domain, e.g. 127.0.0.1
   7. MySQL Server port, e.g. 3306
+  8. Email Address, e.g. user@example.com
+  9. Password
 
 4. **Review and Confirm the Blueprint**
   1. Click “next: step 2”
@@ -68,26 +70,28 @@ Complete the information below:
   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-### Deploy Tomcat to an existing server (alternate option)
-The Tomcat Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
+### Deploy DreamFactory to an existing server (alternate option)
+The DreamFactory Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
-#### Steps to deploy Tomcat to an existing server
+#### Steps to deploy DreamFactory to an existing server
 1. **Deploy or Identify an Existing Server**
-Identify the server targeted for Tomcat installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
+Identify the server targeted for DreamFactory installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. **Select to Execute the Package on a Server Group**
-  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Tomcat on Linux**.
-  2. See the [using group tasks to install scripts on groups](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
+  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install DreamFactory on Linux**.
+  2. See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. **Configure the Parameters**
 Set the following application parameters:
 
-* **Username** - default manager
-* **Password**
-* **MySQL Server root password**
+* **First Name** - default UserName
+* **Last Name** - default LastName
 * **Apache Web Server Port** - default 80
 * **SSL Port** - default 443
+* **Web Server domain** - default 127.0.0.1
 * **MySQL Server port** - default 3306
+* **Email Address** - default user@example.com
+* **Password**
 
 4. **Deploy the Script Package**
 Once verified, click on the `execute package` button. This will kick off the deployment process and load a page where you can track the progress. Deployment will typically complete within a few minutes.
@@ -97,7 +101,7 @@ Once verified, click on the `execute package` button. This will kick off the dep
   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-### Access your Tomcat server
+### Access your DreamFactory server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
 
   1. Check email to obtain Server Name and IP Address Login information
