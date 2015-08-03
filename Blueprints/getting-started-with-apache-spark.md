@@ -8,7 +8,7 @@
 
 ##Overview
 
-Apache Spark is available for install on a standalone CentOS 6 64-bit VM in CenturyLink Cloud.
+Apache Spark is available for install on a standalone CentOS or RHEL VM in CenturyLink Cloud.
 
 <br>
 
@@ -18,7 +18,7 @@ Apache Spark is available for install on a standalone CentOS 6 64-bit VM in Cent
 
 <br>
 
-**2. After clicking to deploy your Blueprint, select the CentOS VM that you'd like to install Apache Spark onto.**
+**2. After clicking to deploy your Blueprint, select the VM that you'd like to install Apache Spark onto.**
 
 ![Apache Spark Server Selection](../images/Cloudera/Spark2.PNG)
 
