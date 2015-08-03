@@ -103,7 +103,7 @@ A: The Master server in the DPB infrastructure is already configured to support 
 
 **Q: As a customer can I request on-demand backups out of the normal scheduled jobs?**
 
-A: This is possible via a request to Support.  The backup will have the standard product feature of 2 weeks retention at the local data center and a simultaneous copy at the secondary data center.
+A: This is possible through a request to the Client Service Center at 1-888-638-6771.  The backup will have the standard product feature of 2 weeks retention at the local data center and a simultaneous copy at the secondary data center.
 
 **Q: Is hot backup offered in Managed Backup for (a) databases and for (b) Exchange? What options/suggestions are available?**
 
