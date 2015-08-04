@@ -14,7 +14,7 @@ After reading this article, the reader should feel comfortable deploying the Piv
 
 ### Partner Profile
 
-<img src="/knowledge-base/images/pivotal_pcf/product-pivotal-cf.png" style="border:0;float:right;max-width: 150px;">
+<img src="../../images/pivotal_pcf/product-pivotal-cf.png" style="border:0;float:right;max-width: 150px;">
 
 Pivotal Cloud Foundry – “Streamline application development, deployment and operations on a centrally-managed Platform as a Service for public and private cloud.”
 
@@ -31,7 +31,7 @@ http://pivotal.io/platform-as-a-service/pivotal-cloud-foundry
 
 Pivotal has integrated their Cloud Foundry technology with the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Cloud Foundry solution.
 
-<img src="/knowledge-base/images/pivotal_pcf/how_pcf_works.png" style="border:0;">
+<img src="../../images/pivotal_pcf/how_pcf_works.png" style="border:0;">
 
 Cloud Foundry® is the result of collaborative industry efforts to build an open platform for next-generation software development. Over 40 members of the Cloud Foundry Foundation now contribute to the project, including VMware, EMC and GE. Pivotal’s commercial edition builds on the open source Cloud Foundry release with advanced features:
 
@@ -65,19 +65,19 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
   * Create the group `OpenStack` and assign the network you've dedicated to PCF to this group
   * Create the group to hold your PCF environment and assign the network you've dedicated to PCF to this group
 
-  <img src="/knowledge-base/images/pivotal_pcf/creating_clc_groups.gif" style="">
+  <img src="../../images/pivotal_pcf/creating_clc_groups.gif" style="">
 
 2. **Locate the Blueprint in the Blueprint Library**
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "Pivotal Cloud Foundry" in the keyword search on the right side of the page.
 
-  <img src="/knowledge-base/images/pivotal_pcf/cluster_blueprint_tiles.png" style="border:0;max-width:250px;">
+  <img src="../../images/pivotal_pcf/cluster_blueprint_tiles.png" style="border:0;max-width:250px;">
 
 3. **Click the Deploy Blueprint button.**
 
 4. **Set Required parameters.**
 
-  <img src="/knowledge-base/images/pivotal_pcf/deploy_cluster_parameters.png" style="max-width:450px;">
+  <img src="../../images/pivotal_pcf/deploy_cluster_parameters.png" style="max-width:450px;">
 
   * **Email Address** - Email address to receive build notification and PCF access information
   * **Deploy PCF** - We will automatically configure Operations Director (which manages Micro BOSH) and Elastic Runtime.  We can stop post-configuration for you to update settings or perform the full deploy on your behalf.
@@ -102,13 +102,13 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
 
   This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within 50 to 75 minutes.  Take note that the Blueprint status may indicate deployment has completed but there will be a several minute delay until the cluster itself is ready for use as some backup install tasks may still be in process.
 
-  <img src="/knowledge-base/images/pivotal_pcf/ops_mgr_blueprint_install_progress.png" style="width:70%;">
+  <img src="../../images/pivotal_pcf/ops_mgr_blueprint_install_progress.png" style="width:70%;">
 
 8. **Deployment Complete**
 
   Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets within a few minutes.  If you do not receive an email like the one shown below you may have had a deployment error - review the *Blueprint Build Log* to for error messages.
 
-  <img src="/knowledge-base/images/pivotal_pcf/deploy_install_status1.png" style="border:1;margin-left:1em;width:70%;">
+  <img src="../../images/pivotal_pcf/deploy_install_status1.png" style="border:1;margin-left:1em;width:70%;">
 
   Depending on how many components you've chosen to install and configure you'll receive several additional emails with configuration status updates.
   Follow the instruction in these messages to properly access your Operations Manager tool and deploy a PCF environment.
@@ -119,13 +119,13 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
   new server (point your web browser to **https://yourhost**).  Authenticate  with the username `admin` and using the same password you assign for
   the root account on this server.
 
-  <img src="/knowledge-base/images/pivotal_pcf/ops_mgr_web_login.png" style="border:0;width:70%;">
+  <img src="../../images/pivotal_pcf/ops_mgr_web_login.png" style="border:0;width:70%;">
 
 10. **Validate Configuration**
 
   Navigate through the **Operations Director** and **Elastic Runtime** tiles to validate configuration.
 
-  <img src="/knowledge-base/images/pivotal_pcf/ops_mgr_dashboard.png" style="border:0;width:70%;">
+  <img src="../../images/pivotal_pcf/ops_mgr_dashboard.png" style="border:0;width:70%;">
 
 11. **Apply Changes**
 
@@ -133,11 +133,11 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
 
   Before long you should see the install status screen shown below to view deploy process details.
 
-  <img src="/knowledge-base/images/pivotal_pcf/ops_mgr_install_progress.png" style="border:0;width:70%;">
+  <img src="../../images/pivotal_pcf/ops_mgr_install_progress.png" style="border:0;width:70%;">
 
   Once all PCF components have deployed you will see the following screen.
 
-  <img src="/knowledge-base/images/pivotal_pcf/ops_mgr_install_complete.png" style="border:0;width:70%;">
+  <img src="../../images/pivotal_pcf/ops_mgr_install_complete.png" style="border:0;width:70%;">
 
 12. **Enable public access** (optional)
 
@@ -212,7 +212,7 @@ access this tool:
 The PCF environment consistents of servers and persistent elastic block storage which both must be removed to eliminate all associated infrastructure
 charges.
 
-<img src="/knowledge-base/images/pivotal_pcf/ops_mgr_delete_install.png" style="border:0;width:70%;">
+<img src="../../images/pivotal_pcf/ops_mgr_delete_install.png" style="border:0;width:70%;">
 
 * If you have a fully functioning PCF environment, from your Ops Manager dashboard click the **gear** icon the select **delete this installation** (picture above)
 * If you never performed a deploy or you have already performed the above deletion process - you may safely delete the Ops Manager server or the entire group containing it
