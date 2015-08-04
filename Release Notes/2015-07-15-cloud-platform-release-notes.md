@@ -53,7 +53,7 @@ Check out the [Product Page](//www.ctl.io/appfog) and [AppFog section of the Kno
 ###Online Tools (1)###
 * [__Cloud Dev Center.__](//www.ctl.io/developers) Developers now have a primary destination for all the info needed to build apps in the CenturyLink Cloud. Find links to developer tools, video tutorials, and a constant barrage of articles that show you how to deploy scalable, highly available apps in the cloud.
 
-###Ecosystem: New Blueprints (5)###
+###Ecosystem: New Blueprints (5)
 
 * [__Cavirin.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-cavirin-automated-risk-analysis-platform-partner-template.md)
 Delivering continuous IT audit and operational compliance isn't easy.  Cavirin's Automated Risk Analysis platform can help, available to deploy to your CenturyLink Cloud account via Service Task.  This technology provides a visual, effective way to constantly monitor your security posture against the profile most appropriate for your organization. Cavirin’s “Big Picture” view serves as a pass-fail “report card” that grades the security of your environment and lets you share the results with customers.  Cavirin continuously checks clouds, devices, and IPs against the policies you define and alerts you to changes and violations.
