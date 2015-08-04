@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-###New Features (5)
+### New Features (5)
 
 * __Bare Metal servers.__ Get the isolation and performance you need by building and managing physical machines in the CenturyLink Platform. Pay by-the-hour for modern hardware available in three different sizes with all three offering data encryption at rest. Build servers using the same UI and API available for virtual machines.  
 ![bare-metal](../images/2015-07-15_releasenotes1.png)  
@@ -17,7 +17,6 @@ The service is available today in Sterling, VA (VA1) and will soon be online in 
 * __AppFog v2.__ Deploy and manage web applications easier with the new, Control Portal-integrated AppFog service based on the open source Cloud Foundry (v2) project. Deploy web applications to a multiple regions and host them in a managed fabric that supports Java, Ruby, Node.js, Go, Python and PHP. Available now in the US-East and US-West region, AppFog offers a scalable runtime for cloud-native applications at only $0.04 per GB hour.  
 ![appfog](../images/2015-07-15_releasenotes3.png)  
 Check out the [Product Page](//www.ctl.io/appfog) and [AppFog section of the Knowledge Base](//www.ctl.io/knowledge-base/appfog/#1) for everything you need to know to get started!
-
 
 * __WordPress-as-a-Service (Beta).__ WordPress powers tens of millions of websites worldwide, but it can be challenging to set up and maintain yourself. CenturyLink is delivering WordPress-as-a-Service where you can rapidly create sites, map to custom domains, and store configuration information in a provided Git account. WordPress-as-a-Service is available for free in our Virginia data center during beta. Check out our [Product Page](//www.ctl.io/wordpress) and [these KB articles](../WordPress/getting-started-with-wordpress-as-a-service.md) for further details on signing up and using the service!  
 ![wordpress](../images/2015-07-15_releasenotes4.png)
@@ -71,7 +70,7 @@ Moodle (modular, object-oriented, dynamic, learning environment) is an open-sour
 * [__Redmine.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-redmine-blueprint.md)
 Redmine is an open-source, browser-based project management and issue tracking tool. It allows users to manage multiple projects and associated subprojects. It features per project wikis and forums, time tracking, and flexible role based access control. It includes a calendar and Gantt charts to aid visual representation of projects and their deadlines. Redmine integrates with various version control systems and includes a repository browser and diff viewer.  Use Redmine in minutes by creating a Redmine server using the CenturyLink Cloud Blueprint.
 
-###Open Source Contributions (5)###
+### Open Source Contributions (5)
 
 * [__Ansible Adapter for CenturyLink Cloud.__](//github.com/CenturyLinkCloud/clc-ansible-module) The CenturyLink Cloud Ansible Modules allow devops to utilize the popular provisioning tool Ansible to define and manage infrastructure resources on the CenturyLink Cloud platform. Among other capabilities, the adapter lets you pull server inventory, create policies, create and manage groups, create and manage servers, execute scripts packages against servers, and much more.
 
@@ -84,7 +83,7 @@ Redmine is an open-source, browser-based project management and issue tracking t
 * [__Panamax.io__](//panamax.io/) Deeper integration with ImageLayers.io and Lorry.io; added docker-compose.yml support: conversion API,
 export PMX file as Compose YAML, copy-to-clipboard and preview functionality. Check out the release notes for the [Panamax UI v2.20](//github.com/CenturyLinkLabs/panamax-ui/) and [Panamax API v0.3.3](//github.com/CenturyLinkLabs/panamax-api/) updates.
 
-###Bug Fixes (4)###
+### Bug Fixes (4)
 
 * __Operations that release IP address will get null reference exception.__ We've fixed a bug where some users would get an error when releasing a public IP.
 
