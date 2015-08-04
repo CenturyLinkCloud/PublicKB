@@ -1,6 +1,6 @@
 {{{
   "title": "Managed Backup - Frequently Asked Questions",
-  "date": "7-8-2015",
+  "date": "8-4-2015",
   "author": "Bryan Friedman",
   "attachments": [
     {
@@ -123,3 +123,4 @@ US West (Santa Clara) - UC1|[CenturyLink CH3](//www.centurylink.com/business/ent
 US East (Sterling) - VA1|[CenturyLink DL2](//www.centurylink.com/business/enterprise/colocation/data-centers/united-states/texas/dallas.html)
 Great Britain (Slough) - GB3|[CenturyLink LO6](//www.centurylink.com/business/enterprise/colocation/data-centers/united-kingdom/london.html)
 APAC (Singapore) - SG1|[CenturyLink SG8](//www.centurylink.com/business/enterprise/colocation/data-centers/singapore.html)
+US Central (Chicago) - IL1|[CenturyLink DL2](//www.centurylink.com/business/enterprise/colocation/data-centers/united-states/texas/dallas.html)
