@@ -26,7 +26,8 @@ Check out the [Product Page](//www.ctl.io/appfog) and [AppFog section of the Kno
 
 * __SDK for .NET and Java.__ Are you a .NET or Java developer who is integrating cloud infrastructure capabilities into your apps? Now you can use our open source [.NET SDK](//github.com/CenturyLinkCloud/clc-net-sdk) or [Java SDK](//github.com/CenturyLinkCloud/clc-java-sdk) to easily consume the CenturyLink Cloud API in a straightforward way.
 
-### Enhancements (9)###
+
+### Enhancements (9)
 
 * __"Price sheet" user interface.__ Transparency matters. CenturyLink Cloud is a leader in price visibility, and we've extended this further by showing the per SKU costs that apply to any given account. This shows you exactly what you pay for any particular aspect of cloud. Log in and go to directly to  [https://control.ctl.io/pricingcatalog](https://control.ctl.io/pricingcatalog) to quickly review the price you pay for cloud services!  
 ![custompricing](../images/2015-07-15_releasenotes6.png)
@@ -50,10 +51,13 @@ Check out the [Product Page](//www.ctl.io/appfog) and [AppFog section of the Kno
 * __Control Portal "more actions" menu on servers and groups page.__ The Control Portal is constantly evolving to complement different screen sizes. On the group and server overview pages, the actions menu now adjusts to your screen size and puts items into a "more items" menu if your screen can't fit all the icons.  
 ![menu](../images/2015-07-15_releasenotes9.gif)
 
-###Online Tools (1)###
+
+### Online Tools (1)
+
 * [__Cloud Dev Center.__](//www.ctl.io/developers) Developers now have a primary destination for all the info needed to build apps in the CenturyLink Cloud. Find links to developer tools, video tutorials, and a constant barrage of articles that show you how to deploy scalable, highly available apps in the cloud.
 
-###Ecosystem: New Blueprints (5)
+
+### Ecosystem: New Blueprints (5)
 
 * [__Cavirin.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-cavirin-automated-risk-analysis-platform-partner-template.md)
 Delivering continuous IT audit and operational compliance isn't easy.  Cavirin's Automated Risk Analysis platform can help, available to deploy to your CenturyLink Cloud account via Service Task.  This technology provides a visual, effective way to constantly monitor your security posture against the profile most appropriate for your organization. Cavirin’s “Big Picture” view serves as a pass-fail “report card” that grades the security of your environment and lets you share the results with customers.  Cavirin continuously checks clouds, devices, and IPs against the policies you define and alerts you to changes and violations.
