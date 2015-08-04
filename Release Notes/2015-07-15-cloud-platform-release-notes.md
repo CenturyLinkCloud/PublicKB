@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-###New Features (5)###
+###New Features (5)
 
 * __Bare Metal servers.__ Get the isolation and performance you need by building and managing physical machines in the CenturyLink Platform. Pay by-the-hour for modern hardware available in three different sizes with all three offering data encryption at rest. Build servers using the same UI and API available for virtual machines.  
 ![bare-metal](../images/2015-07-15_releasenotes1.png)  
