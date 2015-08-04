@@ -234,5 +234,5 @@ Should this split DNS be required implement the following:
 **What are some known limitations?**
 
 * Accounts requiring two-factor authentication cannoit successfully deploy PCF.  Create a new service account dedidicated to PCF.
-* PCF deployments can only be made to the accounts primary datacenter.
+* PCF deployments can only be made to the account's primary datacenter.
 
