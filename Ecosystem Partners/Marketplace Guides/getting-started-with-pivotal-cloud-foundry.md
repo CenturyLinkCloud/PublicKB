@@ -102,7 +102,7 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
 
   This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within 50 to 75 minutes.  Take note that the Blueprint status may indicate deployment has completed but there will be a several minute delay until the cluster itself is ready for use as some backup install tasks may still be in process.
 
-  <img src="../../images/pivotal_pcf/ops_mgr_blueprint_install_progress.png" style="width:70%;">
+  <img src="../../images/pivotal_pcf/ops_mgr_blueprint_install_progress.png" style="border:0;width:70%;">
 
 8. **Deployment Complete**
 
