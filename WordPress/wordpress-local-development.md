@@ -36,7 +36,13 @@ machine.
 Creating the Local Development Environment
 ------------------------------------------
 
-After the WordPress site's git repository has been cloned, change into its directory and run:
+After the WordPress site's git repository has been cloned, change into its directory.
+
+Optionally, the `.env.local` file may be changed to set values like WordPress keys and salts, the site name, etc.
+These parameters should be configured first if it is desired that they be customized. If these are changed after
+the first provisioning, the Vagrant box may first need to be destroyed and re-upped for changes to take effect.
+
+Next run:
 
 ```
 vagrant up
@@ -90,3 +96,15 @@ For more details, see the [MySQL documentation](https://dev.mysql.com/doc/refman
 ### Note
 
 Local database changes are not reflected on the live site and *vice versa*!
+
+Resetting the Local Environment
+-------------------------------
+
+The database content can be cleared and the .env.local fully reloaded by resetting the local environment. Changes
+relating to the file system, such as added plug-ins, will not be destroyed; such files will need to be
+deleted.
+
+```
+vagrant destroy
+vagrant up
+```
