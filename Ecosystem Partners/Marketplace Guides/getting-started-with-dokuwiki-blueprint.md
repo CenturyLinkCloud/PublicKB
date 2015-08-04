@@ -10,7 +10,7 @@
 
 ### Description
 
-<img alt="DokuWiki Logo" src="/knowledge-base/images/bitnami_logos/dokuwiki-stack-110x117-f736412b8bec4a8c501536749fe5b749.png" style="border:0;float:right;max-width:250px">
+<img alt="DokuWiki Logo" src="../../images/bitnami_logos/dokuwiki-stack-110x117-f736412b8bec4a8c501536749fe5b749.png" style="border:0;float:right;max-width:250px">
    
 After reading this article, the reader should feel comfortable deploying the DokuWiki stack by Bitnami.
 

@@ -27,7 +27,7 @@
   into CenturyLink Cloud, technology partners can take advantage of a differentiated, digital route-to-market: presented as part of a enterprise-grade automation platform which powers one of the largest pools of IT infrastructure in the world.</p>
 <p>This document explains the process for onboarding technology into the CenturyLink Cloud Ecosystem Program, and how progressively successful outcomes can be achieved in partnership with CenturyLink.</p>
 <p><strong>Joining The Cloud Ecosystem Program</strong></p>
-<p><img src="/knowledge-base/images/centurylink-cloud-ecosystem-program-guide-ecosystem_process.png" alt="ecosystem_process.png" />
+<p><img src="../../images/centurylink-cloud-ecosystem-program-guide-ecosystem_process.png" alt="ecosystem_process.png" />
 </p>
 <p>Entry into the Ecosystem Program consists of two primary steps:&nbsp; Application and Certification. Once a potential technology is identified, the company is classified as an Applicant. Once the company becomes a Customer of CenturyLink Cloud
   and the Cloud Ecosystem Agreement is signed, the Applicant is referred to as a Candidate. Once the solution is certified, the Candidate becomes a Member.</p>

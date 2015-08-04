@@ -10,7 +10,7 @@
 
 ### Description
 
-<img alt="Sharelock Logo" src="/knowledge-base/images/bitnami_logos/sharelock-stack-110x117-7649e5fa9082ecefee9787d114947658.png" style="border:0;float:right;max-width:250px">
+<img alt="Sharelock Logo" src="../../images/bitnami_logos/sharelock-stack-110x117-7649e5fa9082ecefee9787d114947658.png" style="border:0;float:right;max-width:250px">
    
 After reading this article, the reader should feel comfortable deploying the Sharelock stack (version 0.1.0pre-0) by Bitnami.
 

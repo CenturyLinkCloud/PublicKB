@@ -14,7 +14,7 @@ After reading this article, the reader should feel comfortable deploying the Piv
 
 ### Partner Profile
 
-<img src="/knowledge-base/images/pivotal_gemfire/product-pivotal-gemfire.png" style="border:0;float:right;">
+<img src="../../images/pivotal_gemfire/product-pivotal-gemfire.png" style="border:0;float:right;">
 
 Pivotal GemFire – “in-memory distributed database for high scale custom applications”
 
@@ -56,7 +56,7 @@ The GemFire Blueprint is designed to be successfully deployed on an existing ser
 
   Determine whether you will be building a test cluster with small nodes or a production cluster whose nodes are configured with increased CPU and RAM.
 
-  <img src="/knowledge-base/images/pivotal_gemfire/gemfire_blueprint_tile.png" style="border:0;max-width:250px;">
+  <img src="../../images/pivotal_gemfire/gemfire_blueprint_tile.png" style="border:0;max-width:250px;">
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “Pivotal GemFire in the keyword search on the right side of the page.
 
@@ -64,13 +64,13 @@ The GemFire Blueprint is designed to be successfully deployed on an existing ser
 
 4. **Set Required parameters.**
 
-  <img src="/knowledge-base/images/pivotal_gemfire/deploy_parameters.png" style="max-width:450px;">
+  <img src="../../images/pivotal_gemfire/deploy_parameters.png" style="max-width:450px;">
 
   * **EULA** - Click to accept the software end user license agreement
   * **Email Address** - Email address to receive build notification and GemFire access information
   * **Start Locator and Server** - Start an initial locator and server on this host.  Skip this if you'd prefer to create your own configuration
 
-  <img src="/knowledge-base/images/pivotal_gemfire/deploy_parameters_server.png" style="max-width:450px;">
+  <img src="../../images/pivotal_gemfire/deploy_parameters_server.png" style="max-width:450px;">
 
   * **Execute on Server** - Select the server on which to execute the Blueprint
 
@@ -96,13 +96,13 @@ The GemFire Blueprint is designed to be successfully deployed on an existing ser
 
   Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.  If you do not receive an email like the one shown below your cluster may have had a deployment error - review the *Blueprint Build Log* to for error messages.
 
-  <img src="/knowledge-base/images/pivotal_gemfire/deploy_complete_email.png" style="border:0;width:70%;">
+  <img src="../../images/pivotal_gemfire/deploy_complete_email.png" style="border:0;width:70%;">
 
 9. **Pulse Web Tool** (optional)
 
   If you elected start the initial locator and server then you will also have immediate access to the Pulse web tool via http on port 7070.  Authenticate using the `admin`/`admin` credentials
 
-  <img src="/knowledge-base/images/pivotal_gemfire/web_pulse.png" style="border:0;">
+  <img src="../../images/pivotal_gemfire/web_pulse.png" style="border:0;">
 
 10. **gfsh Access** (optional)
 

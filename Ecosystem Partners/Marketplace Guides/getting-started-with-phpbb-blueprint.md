@@ -10,7 +10,7 @@
 
 ### Description
 
-<img alt="phpBB Logo" src="/knowledge-base/images/bitnami_logos/phpbb-stack-110x117-c5c8752aa11d4c6fa4fc9bf5057e8f42.png" style="border:0;float:right;max-width:250px">
+<img alt="phpBB Logo" src="../../images/bitnami_logos/phpbb-stack-110x117-c5c8752aa11d4c6fa4fc9bf5057e8f42.png" style="border:0;float:right;max-width:250px">
    
 After reading this article, the reader should feel comfortable deploying the phpBB stack (version 3.1.4-0) by Bitnami.
 

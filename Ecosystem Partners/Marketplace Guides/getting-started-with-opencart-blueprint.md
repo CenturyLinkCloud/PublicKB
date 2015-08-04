@@ -10,7 +10,7 @@
 
 ### Description
 
-<img alt="OpenCart Logo" src="/knowledge-base/images/bitnami_logos/opencart-stack-110x117-9ae3ae01a5689c79ebb37a253f512cf9.png" style="border:0;float:right;max-width:250px">
+<img alt="OpenCart Logo" src="../../images/bitnami_logos/opencart-stack-110x117-9ae3ae01a5689c79ebb37a253f512cf9.png" style="border:0;float:right;max-width:250px">
    
 After reading this article, the reader should feel comfortable deploying the OpenCart stack (version 2.0.2.0-0) by Bitnami.
 
