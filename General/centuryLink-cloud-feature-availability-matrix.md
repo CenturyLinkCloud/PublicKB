@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Feature Availability Matrix",
-  "date": "7-16-2015",
+  "date": "8-3-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -19,7 +19,7 @@ The CenturyLink Cloud provides a vast array of services for customers to consume
 **Feature**|**Availability**
 -----------|----------------
 [Hyperscale Computing](//www.ctl.io/hyperscale)|US West (Santa Clara) - UC1<p>US Central (Chicago) - IL1<p>US East (New York) - NY1<p>US East (Sterling) - VA1<p>Great Britain (Slough) - GB3<p>Canada (Toronto - Mississauga) - CA3<p>APAC (Singapore) - SG1
-[Bare Metal](//www.ctl.io/bare-metal)|US East (Sterling) - VA1
+[Bare Metal](//www.ctl.io/bare-metal)|US East (Sterling) - VA1<p>Great Britain (Slough) - GB3
 [AppFog](//www.ctl.io/appfog)|US East<sup>1</sup><p>US West<sup>1</sup>
 [Managed Operating System Services](//www.ctl.io/managed-services/operating-system)|US West (Santa Clara) - UC1<p>US East (Sterling) - VA1<p>US Central (Chicago) - IL1<p>Great Britain (Slough) - GB3<p>Canada (Toronto - Mississauga) - CA3<p>APAC (Singapore) - SG1
 [Managed Applications](//www.ctl.io/managed-services)|US West (Santa Clara) - UC1<p>US East (Sterling) - VA1<p>US Central (Chicago) - IL1<p>Great Britain (Slough) - GB3<p>Canada (Toronto - Mississauga) - CA3<p>APAC (Singapore) - SG1
