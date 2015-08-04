@@ -108,13 +108,3 @@ deleted.
 vagrant destroy
 vagrant up
 ```
-
-Halting the Vagrant Box
------------------------
-
-If the Vagrant box is halted but not destroyed, it is necessary to re-provision the box and not just re-up it:
-
-```
-vagrant up
-vagrant provision
-```
