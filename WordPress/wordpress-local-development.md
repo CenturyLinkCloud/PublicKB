@@ -36,7 +36,12 @@ machine.
 Creating the Local Development Environment
 ------------------------------------------
 
-After the WordPress site's git repository has been cloned, change into its directory and run:
+After the WordPress site's git repository has been cloned, change into its directory.
+
+Optionally, the `.env.local` file may be changed to set values like WordPress keys and salts, the site name, etc.
+These parameters should be configured first if it is desired that they be customized.
+
+Next run:
 
 ```
 vagrant up
