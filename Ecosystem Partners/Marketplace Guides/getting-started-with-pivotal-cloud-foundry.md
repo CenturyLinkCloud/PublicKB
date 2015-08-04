@@ -49,6 +49,7 @@ You can achieve a single-button deployment of a new Cloud Foundry using CenturyL
 
 Pivotal Cloud Foundry is a complex piece of software.  Before installing please validate the following:
 
+* **Early Access Note** - This is an early access release.  Please log a ticket with noc@ctl.io for deployments before this goes GA
 * **control.ctl.io Service Account** - For production deployments we recommend creating a dedicated control.ctl.io user account as the credentials
   are used for all IaaS changes directed by BOSH.  Deploys cannot be done using accounts with requiring two-factor authentication.
 * **Dedicated Network** - Due to the size of typical PCF deploys and some IP address management concerns we require an entire VLAN be dedicated to this install.  PCF servers will reside on the top half of this class-C.
@@ -70,6 +71,9 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
 2. **Locate the Blueprint in the Blueprint Library**
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "Pivotal Cloud Foundry" in the keyword search on the right side of the page.
+
+  > Note for access to this Blueprint during this early access period
+  > # Email noc@ctl.io
 
   <img src="../../images/pivotal_pcf/cluster_blueprint_tiles.png" style="border:0;max-width:250px;">
 
@@ -102,7 +106,7 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
 
   This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within 50 to 75 minutes.  Take note that the Blueprint status may indicate deployment has completed but there will be a several minute delay until the cluster itself is ready for use as some backup install tasks may still be in process.
 
-  <img src="../../images/pivotal_pcf/ops_mgr_blueprint_install_progress.png" style="width:70%;">
+  <img src="../../images/pivotal_pcf/ops_mgr_blueprint_install_progress.png" style="border:0;width:70%;">
 
 8. **Deployment Complete**
 
