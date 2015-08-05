@@ -83,6 +83,10 @@ The top of each .md file contains metadata about the knowledge base article itse
 }}}
 ```
 
+#### `author`
+
+Please just use your name and do not link off to other version sites (twitter, linkedin, etc.)
+
 #### `contentIsHTML`
 
 Generally this should be set to `false`. Only when a document is written entirely in HTML syntax should this be set to true.
@@ -92,12 +96,11 @@ Generally this should be set to `false`. Only when a document is written entirel
 If you would like to pin a kb article so that it always appears at the top of it's category, set `"sticky":true`. By default, it's set to `false`.
 
 
-
-  ### Sub-Categories
+### Sub-Categories
 
   Within the top level categories, additional tags can be assigned to articles based on the name of the articles parent folder name. Keep in mind the need for an additional level of folders when linking to images or other articles when authoring an article in a sub-category folder.
 
-  ### Links (KB article to KB article)
+### Links (KB article to KB article)
 
   Links to articles should follow this format:
 
@@ -119,21 +122,20 @@ If you would like to pin a kb article so that it always appears at the top of it
     [Managed Microsoft SQL](//www.ctl.io/managed-services/ms-sql)
     ```
 
-  ### Images
+### Images
 
   When adding an image to an article, place the image file in the `images/` directory in the root of this repo. In the article itself, set the image source path like so:
 
     ```
     /* Top Level Category Article */
     ../images/[image file]
-
     /* Sub-Category Article */
     ../../images/[image file]
     ```
 
   Be sure the file name does not include any spaces.
 
-  ### Attachments
+### Attachments
 
   When adding an attachment to an article, place the file in the 'attachments/' directory at the root of this repo. In the article itself, add the file information to the front-matter data at the top of the article like so:
 
@@ -159,7 +161,7 @@ If you would like to pin a kb article so that it always appears at the top of it
 
   `"type"` is simply the MIME type of the file and is used to check which sort of icon to present on the front end.
 
-  ### Tables
+### Tables
 
   Tables in articles should follow this format:
 
