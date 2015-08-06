@@ -1,7 +1,6 @@
 ![Build Status of master branch](https://travis-ci.org/CenturyLinkCloud/PublicKB.svg?branch=master)
 
-#CenturyLink Cloud Knowledge Base
-========
+# CenturyLink Cloud Knowledge Base
 
 Welcome to the [CenturyLink Cloud](http://www.ctl.io) knowledge base repository. This is the source of information on all of our products and services available today. Please follow the guidelines below to contribute or make changes.
 
