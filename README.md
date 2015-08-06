@@ -78,7 +78,7 @@ _Note that the first time you wish to run the commit analyzer, you'll have to ru
 6. Click on Send pull request.
 7. Scroll down and click Merge pull request and finally Confirm merge. If your fork didn’t have any changes, you will be able to merge it automatically.
 
-**Via Terminal**
+**Via Terminal (Mac) or Command Prompt (Windows)**
 
 1. Open Terminal (for Mac users) or the command prompt (for Windows and Linux users).
 1. Change the current working directory to your local project.
