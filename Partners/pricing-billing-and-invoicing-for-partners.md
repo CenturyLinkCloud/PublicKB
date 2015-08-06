@@ -4,9 +4,9 @@
   "author": "",
   "attachments": [
     {
-      "url":"../attachments/partner-sample-billing-report.xlsx",
-      "type":"application/xlsx",
-      "file_name":"partner-sample-billing-report.xlsx"
+      "url":"../attachments/sample-end-user-report.csv",
+      "type":"application/csv",
+      "file_name":"sample-end-user-report.csv"
     }
   ],
   "contentIsHTML": false
@@ -56,6 +56,3 @@ If you want to charge a price higher than list price (because you are offering a
 
 **How It Works:** You can integrate with CenturyLink Cloud’s APIs to pull billing data automatically.
 **Resources:** Find out more about these capabilities at the following link: https://www.ctl.io/api-docs/v1/#billing
-
-
-
