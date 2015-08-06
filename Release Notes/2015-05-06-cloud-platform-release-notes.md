@@ -6,7 +6,8 @@
   "contentIsHTML": false
 }}}
 
-###New Features (3)
+
+### New Features (3)
 
 * **Orchestrate.io.** This new database-as-a-service offering is available in four CenturyLink Cloud datacenters: VA1, UC1, GB3, and SG1. The service supports many popular client libraries like Node.js, Java, Ruby, Go, Python, .NET, PHP, and Erlang. Orchestrate can be integrated with other CenturyLink Cloud deployments via API. Sign-up for the service at [**dashboard.orchestrate.io**](https://dashboard.orchestrate.io/sessions/login). For more information on the Orchestrate service, please read [this blog post](https://www.ctl.io/blog/post/centurylink-acquires-orchestrate/).
 
@@ -24,7 +25,8 @@
 
   ![AppFog Navigation UI](../images/appfog-icon-nav.png/)
 
-###Minor Enhancements (3)
+
+### Minor Enhancements (3)
 
 * **Cloud Network Services (CNS) available in NY1.** CenturyLink Cloud deployments in NY1 can now be connected to other environments using Cloud Network Services. This capability delivers private, secure, and high-speed connectivity between traditional and cloud environments.
 
@@ -34,7 +36,8 @@
 
 * **Server Scheduler Role** A new role in CenturyLink Cloud offers more flexibility for administrators. The Server Scheduler Role includes all the capabilities of the Account Viewer role, plus the ability to perform power ops as well as to create and manage schedule tasks on servers and Groups.
 
-###Online Tools (2)
+
+### Online Tools (2)
 
 * **Microsoft SQL 2014 AlwaysOn Reference Architecture** Achieve high availability for MS SQL instances using [**these best practices**](//www.ctl.io/architecture/sql2014-alwayson/).
 
@@ -42,7 +45,8 @@
 
   ![Getting Started](../images/getting-started-guide-01.png)
 
-###Ecosystem: New Blueprints (5)
+
+### Ecosystem: New Blueprints (5)
 
 * [**Cohesive Networks**](../Ecosystem Partners/Marketplace Guides/getting-started-with-cohesiveft-vns3-partner-template.md) - Technology from Cohesive Networks helps customers address the business challenge of secure connectivity and network management by implementing network and security functions in a virtualized model across disparate cloud networks and service providers.
 
@@ -54,7 +58,8 @@
 
 * [**Vision Solutions - DoubleTake**](../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md) - Best-of-breed technology helping customers address the business challenge of adopting cloud-based disaster recovery strategies and performing near-zero downtime migrations without risk across physical, virtual or cloud server platforms.
 
-###Open Source Contributions (3)
+
+### Open Source Contributions (3)
 
 Selected highlights include:
 
