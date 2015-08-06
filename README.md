@@ -18,6 +18,8 @@ The repository is organized by category, and each folder represents a category. 
 
 1. Then Clone the repo to your desktop.
 
+1. If you have an existing fork, make sure it's up to date with the latest version of the `master` branch to avoid conflicts. See the section on [how to merge the latest version of master into your fork](#merging-an-upstream-repository-into-your-fork).
+
 1. **Anything in the `master` branch is always deployable.** Create a [new branch](https://github.com/blog/1377-create-and-delete-branches) from `master`. Your branch name should be descriptive (e.g., `january-release-notes`, `anti-affinity-policy-faq`) so that others have an idea of what the branch is for.
 
 1. Once your branch has been created, make your changes (add, edit, delete) your knowledge base article in your favorite Markdown editor (we like [Atom](https://atom.io/)).
@@ -63,6 +65,35 @@ node lib/index.js
 ```
 
 _Note that the first time you wish to run the commit analyzer, you'll have to run `npm install` from the `lib` directory. This assumes you have [Node.js](http://nodejs.org) installed._
+
+### Merging an upstream repository into your fork
+
+**Via Github.com Website**
+
+1. Open your fork on GitHub.
+2. Click on Pull Requests.
+3. Click on New Pull Request. By default, GitHub will compare the original with your fork, and there shouldn’t be anything to compare if you didn’t make any changes.
+4. Click on switching the base. Now GitHub will compare your fork with the original, and you should see all the latest changes.
+5. Click on Click to create a pull request for this comparison and assign a predictable name to your pull request (e.g., Update from original).
+6. Click on Send pull request.
+7. Scroll down and click Merge pull request and finally Confirm merge. If your fork didn’t have any changes, you will be able to merge it automatically.
+
+**Via Terminal**
+
+1. Open Terminal (for Mac users) or the command prompt (for Windows and Linux users).
+1. Change the current working directory to your local project.
+1. Check out the branch you wish to merge to. Usually, you will merge into master.
+
+  `git checkout master`
+1. Pull the desired branch from the upstream repository. This method will retain the commit history without modification.
+
+  `git pull https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git BRANCH_NAME`
+1. If there are conflicts, resolve them. For more information, see "Resolving a merge conflict from the command line".
+1. Commit the merge.
+1. Review the changes and ensure they are satisfactory.
+1. Push the merge to your GitHub repository.
+
+  `git push origin master`
 
 ## KB Article Format
 
