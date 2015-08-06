@@ -6,6 +6,7 @@
     "Autoscale",
     "Blueprints",
     "Control Portal",
+    "Database",
     "Disaster Recovery",
     "Ecosystem Partners",
     "General",
