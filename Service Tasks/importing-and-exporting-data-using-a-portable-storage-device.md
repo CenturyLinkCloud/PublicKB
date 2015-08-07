@@ -38,6 +38,10 @@
 <ul>
   <li>Portable devices will not be kept for more than 5 days after the transfer is completed. If arrangements have not been made to return the device. The device will be detached and destroyed</li>
 </ul>
+<h3>Domain specific NTFS ACLs</h3>
+<ul>
+  <li>If you are using domain specific ACLs. You must grant the "everyone" group full permissions. Without these permissions we will not have acces to copy or wipe data.</li>
+</ul>
 <h3>Detailed Steps</h3>
 <p><strong>Requesting an Import</strong>
 </p>

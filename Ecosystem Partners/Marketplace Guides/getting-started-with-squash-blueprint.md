@@ -10,7 +10,7 @@
 
 ### Description
 
-<img alt="Squash Logo" src="/knowledge-base/images/bitnami_logos/squash-stack-110x117-5b60db1d6818e01245c978ea6f88c6e0.png" style="border:0;float:right;max-width:250px">
+<img alt="Squash Logo" src="../../images/bitnami_logos/squash-stack-110x117-5b60db1d6818e01245c978ea6f88c6e0.png" style="border:0;float:right;max-width:250px">
    
 After reading this article, the reader should feel comfortable deploying the Squash stack (version 20150210-1) by Bitnami.
 

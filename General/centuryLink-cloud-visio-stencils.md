@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Visio Stencils",
-  "date": "7-16-2015",
+  "date": "8-5-2015",
   "author": "Chris Little",
   "attachments": [
     {

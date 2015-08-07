@@ -10,7 +10,7 @@
 
 ### Description
 
-<img alt="SimpleInvoices Logo" src="/knowledge-base/images/bitnami_logos/simpleinvoices-stack-110x117-62035eb5e389c67479757b4ebf055485.png" style="border:0;float:right;max-width:250px">
+<img alt="SimpleInvoices Logo" src="../../images/bitnami_logos/simpleinvoices-stack-110x117-62035eb5e389c67479757b4ebf055485.png" style="border:0;float:right;max-width:250px">
    
 After reading this article, the reader should feel comfortable deploying the SimpleInvoices stack (version 2013.1.beta.8-0) by Bitnami.
 

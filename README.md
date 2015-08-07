@@ -1,7 +1,6 @@
 ![Build Status of master branch](https://travis-ci.org/CenturyLinkCloud/PublicKB.svg?branch=master)
 
-#CenturyLink Cloud Knowledge Base
-========
+# CenturyLink Cloud Knowledge Base
 
 Welcome to the [CenturyLink Cloud](http://www.ctl.io) knowledge base repository. This is the source of information on all of our products and services available today. Please follow the guidelines below to contribute or make changes.
 
@@ -17,6 +16,8 @@ The repository is organized by category, and each folder represents a category. 
 1. [Fork](https://guides.github.com/activities/forking/) the https://github.com/CenturyLinkCloud/PublicKB repository. This will produce a personal copy of this repo.
 
 1. Then Clone the repo to your desktop.
+
+1. If you have an existing fork, make sure it's up to date with the latest version of the `master` branch to avoid conflicts. See the section on [how to merge the latest version of master into your fork](#merging-an-upstream-repository-into-your-fork).
 
 1. **Anything in the `master` branch is always deployable.** Create a [new branch](https://github.com/blog/1377-create-and-delete-branches) from `master`. Your branch name should be descriptive (e.g., `january-release-notes`, `anti-affinity-policy-faq`) so that others have an idea of what the branch is for.
 
@@ -64,6 +65,35 @@ node lib/index.js
 
 _Note that the first time you wish to run the commit analyzer, you'll have to run `npm install` from the `lib` directory. This assumes you have [Node.js](http://nodejs.org) installed._
 
+### Merging an upstream repository into your fork
+
+**Via Github.com Website**
+
+1. Open your fork on GitHub.
+2. Click on Pull Requests.
+3. Click on New Pull Request. By default, GitHub will compare the original with your fork, and there shouldn’t be anything to compare if you didn’t make any changes.
+4. Click on switching the base. Now GitHub will compare your fork with the original, and you should see all the latest changes.
+5. Click on Click to create a pull request for this comparison and assign a predictable name to your pull request (e.g., Update from original).
+6. Click on Send pull request.
+7. Scroll down and click Merge pull request and finally Confirm merge. If your fork didn’t have any changes, you will be able to merge it automatically.
+
+**Via Terminal (Mac) or Command Prompt (Windows)**
+
+1. Open Terminal (for Mac users) or the command prompt (for Windows and Linux users).
+1. Change the current working directory to your local project.
+1. Check out the branch you wish to merge to. Usually, you will merge into master.
+
+  `git checkout master`
+1. Pull the desired branch from the upstream repository. This method will retain the commit history without modification.
+
+  `git pull https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git BRANCH_NAME`
+1. If there are conflicts, resolve them. For more information, see "Resolving a merge conflict from the command line".
+1. Commit the merge.
+1. Review the changes and ensure they are satisfactory.
+1. Push the merge to your GitHub repository.
+
+  `git push origin master`
+
 ## KB Article Format
 
 ### Front Matter
@@ -83,6 +113,10 @@ The top of each .md file contains metadata about the knowledge base article itse
 }}}
 ```
 
+#### `author`
+
+Please just use your name and do not link off to other version sites (twitter, linkedin, etc.)
+
 #### `contentIsHTML`
 
 Generally this should be set to `false`. Only when a document is written entirely in HTML syntax should this be set to true.
@@ -92,12 +126,11 @@ Generally this should be set to `false`. Only when a document is written entirel
 If you would like to pin a kb article so that it always appears at the top of it's category, set `"sticky":true`. By default, it's set to `false`.
 
 
-
-  ### Sub-Categories
+### Sub-Categories
 
   Within the top level categories, additional tags can be assigned to articles based on the name of the articles parent folder name. Keep in mind the need for an additional level of folders when linking to images or other articles when authoring an article in a sub-category folder.
 
-  ### Links (KB article to KB article)
+### Links (KB article to KB article)
 
   Links to articles should follow this format:
 
@@ -119,21 +152,20 @@ If you would like to pin a kb article so that it always appears at the top of it
     [Managed Microsoft SQL](//www.ctl.io/managed-services/ms-sql)
     ```
 
-  ### Images
+### Images
 
   When adding an image to an article, place the image file in the `images/` directory in the root of this repo. In the article itself, set the image source path like so:
 
     ```
     /* Top Level Category Article */
     ../images/[image file]
-
     /* Sub-Category Article */
     ../../images/[image file]
     ```
 
   Be sure the file name does not include any spaces.
 
-  ### Attachments
+### Attachments
 
   When adding an attachment to an article, place the file in the 'attachments/' directory at the root of this repo. In the article itself, add the file information to the front-matter data at the top of the article like so:
 
@@ -159,7 +191,7 @@ If you would like to pin a kb article so that it always appears at the top of it
 
   `"type"` is simply the MIME type of the file and is used to check which sort of icon to present on the front end.
 
-  ### Tables
+### Tables
 
   Tables in articles should follow this format:
 

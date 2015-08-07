@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-###New Features (5)###
+### New Features (5)
 
 * __Bare Metal servers.__ Get the isolation and performance you need by building and managing physical machines in the CenturyLink Platform. Pay by-the-hour for modern hardware available in three different sizes with all three offering data encryption at rest. Build servers using the same UI and API available for virtual machines.  
 ![bare-metal](../images/2015-07-15_releasenotes1.png)  
@@ -18,7 +18,6 @@ The service is available today in Sterling, VA (VA1) and will soon be online in 
 ![appfog](../images/2015-07-15_releasenotes3.png)  
 Check out the [Product Page](//www.ctl.io/appfog) and [AppFog section of the Knowledge Base](//www.ctl.io/knowledge-base/appfog/#1) for everything you need to know to get started!
 
-
 * __WordPress-as-a-Service (Beta).__ WordPress powers tens of millions of websites worldwide, but it can be challenging to set up and maintain yourself. CenturyLink is delivering WordPress-as-a-Service where you can rapidly create sites, map to custom domains, and store configuration information in a provided Git account. WordPress-as-a-Service is available for free in our Virginia data center during beta. Check out our [Product Page](//www.ctl.io/wordpress) and [these KB articles](../WordPress/getting-started-with-wordpress-as-a-service.md) for further details on signing up and using the service!  
 ![wordpress](../images/2015-07-15_releasenotes4.png)
 
@@ -27,7 +26,8 @@ Check out the [Product Page](//www.ctl.io/appfog) and [AppFog section of the Kno
 
 * __SDK for .NET and Java.__ Are you a .NET or Java developer who is integrating cloud infrastructure capabilities into your apps? Now you can use our open source [.NET SDK](//github.com/CenturyLinkCloud/clc-net-sdk) or [Java SDK](//github.com/CenturyLinkCloud/clc-java-sdk) to easily consume the CenturyLink Cloud API in a straightforward way.
 
-### Enhancements (9)###
+
+### Enhancements (9)
 
 * __"Price sheet" user interface.__ Transparency matters. CenturyLink Cloud is a leader in price visibility, and we've extended this further by showing the per SKU costs that apply to any given account. This shows you exactly what you pay for any particular aspect of cloud. Log in and go to directly to  [https://control.ctl.io/pricingcatalog](https://control.ctl.io/pricingcatalog) to quickly review the price you pay for cloud services!  
 ![custompricing](../images/2015-07-15_releasenotes6.png)
@@ -51,10 +51,13 @@ Check out the [Product Page](//www.ctl.io/appfog) and [AppFog section of the Kno
 * __Control Portal "more actions" menu on servers and groups page.__ The Control Portal is constantly evolving to complement different screen sizes. On the group and server overview pages, the actions menu now adjusts to your screen size and puts items into a "more items" menu if your screen can't fit all the icons.  
 ![menu](../images/2015-07-15_releasenotes9.gif)
 
-###Online Tools (1)###
+
+### Online Tools (1)
+
 * [__Cloud Dev Center.__](//www.ctl.io/developers) Developers now have a primary destination for all the info needed to build apps in the CenturyLink Cloud. Find links to developer tools, video tutorials, and a constant barrage of articles that show you how to deploy scalable, highly available apps in the cloud.
 
-###Ecosystem: New Blueprints (5)###
+
+### Ecosystem: New Blueprints (5)
 
 * [__Cavirin.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-cavirin-automated-risk-analysis-platform-partner-template.md)
 Delivering continuous IT audit and operational compliance isn't easy.  Cavirin's Automated Risk Analysis platform can help, available to deploy to your CenturyLink Cloud account via Service Task.  This technology provides a visual, effective way to constantly monitor your security posture against the profile most appropriate for your organization. Cavirin’s “Big Picture” view serves as a pass-fail “report card” that grades the security of your environment and lets you share the results with customers.  Cavirin continuously checks clouds, devices, and IPs against the policies you define and alerts you to changes and violations.
@@ -71,7 +74,7 @@ Moodle (modular, object-oriented, dynamic, learning environment) is an open-sour
 * [__Redmine.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-redmine-blueprint.md)
 Redmine is an open-source, browser-based project management and issue tracking tool. It allows users to manage multiple projects and associated subprojects. It features per project wikis and forums, time tracking, and flexible role based access control. It includes a calendar and Gantt charts to aid visual representation of projects and their deadlines. Redmine integrates with various version control systems and includes a repository browser and diff viewer.  Use Redmine in minutes by creating a Redmine server using the CenturyLink Cloud Blueprint.
 
-###Open Source Contributions (5)###
+### Open Source Contributions (5)
 
 * [__Ansible Adapter for CenturyLink Cloud.__](//github.com/CenturyLinkCloud/clc-ansible-module) The CenturyLink Cloud Ansible Modules allow devops to utilize the popular provisioning tool Ansible to define and manage infrastructure resources on the CenturyLink Cloud platform. Among other capabilities, the adapter lets you pull server inventory, create policies, create and manage groups, create and manage servers, execute scripts packages against servers, and much more.
 
@@ -84,7 +87,7 @@ Redmine is an open-source, browser-based project management and issue tracking t
 * [__Panamax.io__](//panamax.io/) Deeper integration with ImageLayers.io and Lorry.io; added docker-compose.yml support: conversion API,
 export PMX file as Compose YAML, copy-to-clipboard and preview functionality. Check out the release notes for the [Panamax UI v2.20](//github.com/CenturyLinkLabs/panamax-ui/) and [Panamax API v0.3.3](//github.com/CenturyLinkLabs/panamax-api/) updates.
 
-###Bug Fixes (4)###
+### Bug Fixes (4)
 
 * __Operations that release IP address will get null reference exception.__ We've fixed a bug where some users would get an error when releasing a public IP.
 
