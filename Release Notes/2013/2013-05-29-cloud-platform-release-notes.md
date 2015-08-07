@@ -21,7 +21,7 @@
 
     ![](../../images/release05-29_02.png)
 
-* **API supports un-suspending a user account.** CenturyLink Cloud API users can now suspend users and accounts, and unsuspend users and accounts programmatically.</li>
+* **API supports un-suspending a user account.** CenturyLink Cloud API users can now suspend users and accounts, and unsuspend users and accounts programmatically.
 
 * **Users can disable/enable sub-accounts from the Control Portal.** In the last release, we added the ability to view all accounts, whether enabled or disabled. In this release, we've made it possible to quickly change the status of an account to either disabled or enabled.
   ![](../../images/release05-29_04.gif)
@@ -31,4 +31,4 @@
 
 * **API supports date filter range to only retrieve servers that have changed in a certain time period.** In order to help customers better synchronize CenturyLink Cloud server changes with internal configuration management systems, we've added a new set of API operations that let users retrieve a list of servers that have changed since a certain date. The following server actions trigger a change to the server's "last updated" timestamp: power operations (pause/power on/reboot/reset/power off/shutdown), add public IP, release public IP, create snapshot, delete snapshot, revert snapshot, archive, restore from archive, add custom field value, delete custom field value, install software, deploy package, run script, set maintenance mode, change RAM, change CPU, change storage.
 
-For a demo of these features, please visit: <a href="http://www.slideshare.net/Tier3Cloud/new-product-releasemay2013final">http://www.slideshare.net/Tier3Cloud/new-product-releasemay2013final</a>.</p>
+For a demo of these features, please visit: [http://www.slideshare.net/Tier3Cloud/new-product-releasemay2013final](http://www.slideshare.net/Tier3Cloud/new-product-releasemay2013final)
