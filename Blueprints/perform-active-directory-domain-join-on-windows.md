@@ -21,11 +21,11 @@ By leveraging [CenturyLink Cloud Public Blueprints](centurylink-cloud-public-blu
     * Windows 2012 R2 Data Center 64-bit
 * A Windows 2008 or 2012 Active Directory Domain
 * TCP (Firewall) Connectivity between Domain Controller(s) and Target Virtual Machine(s)
-* vNIC Primary and Secondary DNS on Target Virtual Machine(s) is set to the Domain Controller(s) IP Addresses.  
+* vNIC Primary and Secondary DNS on Target Virtual Machine(s) is set to the Domain Controller(s) IP Addresses.
 
 ### EXCEPTIONS
 
-* [Managed Managed Operating System Services Customers](http://www.centurylinkcloud.com/managed-services/operating-system) should review the [Managed Operating System FAQ.](../Managed Services/managed-operating-system-frequently-asked-questions.md)  In order to join Managed Servers to a dedicated customer domain a user must deploy [Managed Active Directory](../Managed Services/getting-started-with-managed-active-directory.md) in the CenturyLink Cloud.
+* [Managed Managed Operating System Services Customers](http://www.ctl.io/managed-services/operating-system) should review the [Managed Operating System FAQ.](../Managed Services/managed-operating-system-frequently-asked-questions.md)  In order to join Managed Servers to a dedicated customer domain a user must deploy [Managed Active Directory](../Managed Services/getting-started-with-managed-active-directory.md) in the CenturyLink Cloud.
 * The Perform Active Directory Domain Join on Windows Script will not perform an automated reboot of the Windows Virtual Machine.  Customers are encouraged to reboot the VM at their convenience.
 
 ### Perform Active Directory Domain Join on Windows using Group Tasks

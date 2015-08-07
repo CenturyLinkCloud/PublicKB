@@ -1,11 +1,11 @@
 {{{
   "title": "Big Data Operations Guide for Cloudera Manager v5.x Hadoop ",
-  "date": "11-3-2014",
-  "author": "Jared Ruckle",
+  "date": "04-21-2015",
+  "author": "Tim Baumgartner",
   "attachments": [
     {
-      "url":"/knowledge-base/attachments/CenturyLink_Cloudera_Manager_Guide_11032014.zip",
-      "type":"application/pdf",
+      "url":"../attachments/CenturyLink_Cloudera_Manager_Guide_11032014.pdf/",
+      "type":"pdf",
       "file_name":"CenturyLink_Cloudera_Manager_Guide_11032014.pdf"
     }
   ],

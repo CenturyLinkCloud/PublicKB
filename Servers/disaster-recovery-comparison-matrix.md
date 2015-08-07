@@ -1,14 +1,15 @@
 {{{
   "title": "Disaster Recovery Comparison Matrix",
-  "date": "4-7-2015",
+  "date": "6-25-2015",
   "author": "Chris Little",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": false
 }}}
 
 ### Overview
 
-Customers frequently request information on the Disaster Recovery and Business Continuity services offered by CenturyLink Cloud. The Matrix below provides a quick, high level guide to the services available as part of our platform or via customization.  **In order to quality for Platform DR services a customer must deploy their virtual instances on Premium Storage**. Customers should be aware that any combination of these options, per application or per virtual instance, are possible.
+Customers frequently request information on the Disaster Recovery and Business Continuity services offered by CenturyLink Cloud. The Matrix below provides a quick, high level guide to the services available as part of our platform or via customization.  **In order to qualify for Platform DR services a customer must deploy their virtual instances on Premium Storage**. Customers should be aware that any combination of these options, per application or per virtual instance, are possible.
 
 |**Feature**   	|**Platform DR**   	|**Build-to Spec DR**
 |:-	|:-	|:-	|
@@ -19,9 +20,10 @@ Customers frequently request information on the Disaster Recovery and Business C
 |Network Failover|No<sup>3</sup>|Not required, network failover is addressed architecturally as redundant instances deployed in multiple data centers for data replication and rapid activation.
 |Declaration of Disaster|CenturyLink Cloud|Customer
 
-1.  **RPO and RTO figures are objectives, not SLA's.  [Review CenturyLink Cloud SLA's](https://www.centurylinkcloud.com/legal/sla) for more information.**
-2.  **Refer to [CenturyLinkCloud.com](http://www.centurylinkcloud.com) for service task overview and costs for DR Testing of VM Instances on premium storage**
+1.  **RPO and RTO figures are objectives, not SLA's.  [Review CenturyLink Cloud SLA's](https://www.ctl.io/legal/sla) for more information.**
+2.  **Refer to [CenturyLinkCloud.com](http://www.ctl.io) for service task overview and costs for DR Testing of VM Instances on premium storage**
 3.  **includes virtual machine failover only**
 
 ### Exclusions
-There are a number of components that would not be part of a premium storage DR strategy. Exclusions include Custom Templates, Archived Virtual Machines, IPSEC VPN Tunnels, Alert Policies, Metadata (server settings, activity history, statistics).
+* There are a number of services and components that would not be included as part of the premium storage product set. Exclusions include Custom Templates, Archived Virtual Machines, IPSEC VPN Tunnels, Alert Policies, Metadata (server settings, activity history, statistics).
+* [Managed Services](//www.ctl.io/managed-services) are delivered from [select CenturyLink Cloud locations](//www.ctl.io/data-centers) and customers should carefully vet the use of premium storage. If Managed Services are required in the event of a DR event, premium storage may not be the optimal choice.

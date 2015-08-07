@@ -1,0 +1,18 @@
+language: node_js
+
+# Following from http://stackoverflow.com/a/24600210/931934
+#
+# Handle git submodules yourself
+git:
+  submodules: false
+# Use sed to replace the SSH URL with the public URL, then initialize submodules
+before_install:
+node_js:
+  - '0.12'
+before_install:
+  - git submodule foreach 'git fetch && git fetch --tags'
+  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+  - git submodule update --init --recursive
+  - npm install -g npm@latest
+  - cd lib && npm install && ls
+script: node index.js

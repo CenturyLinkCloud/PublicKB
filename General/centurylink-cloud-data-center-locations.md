@@ -1,12 +1,12 @@
 {{{
   "title": "CenturyLink Cloud Data Center Locations",
-  "date": "3-17-2015",
-  "author": "Dave Burkhardt",
+  "date": "7-17-2015",
+  "author": "David Shacochis",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-Some important details about our locations are listed below. You can also refer to http://www.centurylinkcloud.com/data-centers for the latest information on our data center locations.
+Some important details about our locations are listed below. You can also refer to http://www.ctl.io/data-centers for the latest information on our data center locations.
 
 <table>
   <thead>
@@ -119,9 +119,9 @@ Some important details about our locations are listed below. You can also refer 
     </tr>
     <tr>
       <td>APAC (Singapore) - SG1</td>
-      <td></td>
+      <td>CenturyLink</td>
       <td>9 Tai Seng Drive #05-04 Singapore 535227</td>
-      <td></td>
+      <td><a href="http://www.centurylink.com/business/enterprise/colocation/data-centers/singapore.html">provider details</a></td>
     </tr>
   </tbody>
 </table>

@@ -4,12 +4,12 @@
   "author": "Dave Burkhardt",
   "attachments": [
     {
-      "url":"/knowledge-base/attachments/XC_Questionnaire_2013222.pdf",
+      "url":"../attachments/XC_Questionnaire_2013222.pdf",
       "type":"application/pdf",
       "file_name":"XC_Questionnaire_2013222.pdf"
     },
     {
-      "url":"/knowledge-base/attachments/Letter of Authorization_Template.docx",
+      "url":"../attachments/Letter of Authorization_Template.docx",
       "type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document",
       "file_name":"Letter of Authorization_Template.docx"
     }
@@ -21,10 +21,10 @@
 <p>This Knowledge Base and associated “Intra-Data Center Cross Connect Questionnaire“ (please see attached below) provides an overview for customers who are considering deploying an intra-data center cross connect. The labor for this deployment is
   a service task, performed by platform engineers to specifications provided by the customer.</p>
 Cross Connects Description and Benefits
-<p>As noted in the Knowledge Base article entitled “Network Access Options for Connecting to CenturyLink Cloud’s Platform” (see: http://help.tier3.com/entries/20518933-network-access-options-for-c... ), CenturyLink Cloud offers multiple connectivity options
+<p>As noted in the Knowledge Base article entitled “Network Access Options for Connecting to CenturyLink Cloud’s Platform” (see: https://www.ctl.io/knowledge-base/network/network-access-options-for-connecting-to-centurylink-clouds-platform/), CenturyLink Cloud offers multiple connectivity options
   for its customers to leverage when deciding how they will connect to their resources hosted on CenturyLink Cloud’s platform (e.g., VPN tunnels, CNS, Cross Connects, etc). That said, as a point of clarity, this knowledge base article specifically pertains
   to the deployment of cross connects that are described within the aforementioned URL.</p>
-<p>In summary, cross connects are directly connected network circuits between two physically isolated organizations within a data center provider’s facility. Currently, CenturyLink Cloud has presence within the data centers listed at the following URL: http://help.tier3.com/entries/23224937-Tier-3-s-Data-Center-Locations.
+<p>In summary, cross connects are directly connected network circuits between two physically isolated organizations within a data center provider’s facility. Currently, CenturyLink Cloud has presence within the data centers listed at the following URL: https://www.ctl.io/data-centers/.
   This direct connectivity allows for fast, low-latency secure connections – a perfect combination for enterprises who want to securely extend their network into the cloud. While this process may differ slightly in each data center, this article describes
   the general options, decisions, etc. that need to be considered.</p>
 <p>Many of our data center providers are within in multiple building across their respective metropolitan areas, and therefore “campus cross connects” are also an option for customers to consider (e.g., Customer is in Equinix’s CH1 building and CenturyLink
@@ -69,7 +69,7 @@ Ordering Cross Connects
   <br />o Desktop initiated Internet access</p>
 <p>• Verify circuit hand-off will be native Ethernet hand-offs – e.g., no DS-3, SONET, OC3</p>
 <p>• Determine the preferred routing protocol (e.g., static, BGP, OSPF).</p>
-<p>• Will the cross connect be deployed within one of data centers/campuses listed at: http://help.tier3.com/entries/23224937-Tier-3-s-Data-Center-Locations</p>
+<p>• Will the cross connect be deployed within one of data centers/campuses listed at: https://www.ctl.io/data-centers/</p>
 <p>• Determine if any specific IP address ranges are required for CLC. Note, CLC can generally only provide /24 networks for customers, but if a specific requirement is needed CenturyLink Cloud will evaluate such requests.</p>
 <p>Once the aforementioned is decided, the next steps are for CLC’s customers to complete the LoA (if CenturyLink Cloud is purchasing the cross connect on the customer’s behalf), the Intra-Data Center Cross Connect Questionnaire (please see the attached "XC_Questionnaire_2013222.pdf"
   listed below), and authorize an agreement for any associated costs. Customers should expect a minimum of two week lead time to provision most cross connect deployments once all of the paperwork has been finalized.</p>

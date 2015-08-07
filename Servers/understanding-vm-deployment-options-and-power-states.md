@@ -56,7 +56,7 @@
 
 ![shutdown function](../images/understanding-vm-deployment-options-and-power-states-03.png)
 
-**Costs:** In the shutdown/Power Off state, a customer pays for storage consumed by the virtual machine and licensing costs. Compute, memory and *Managed Services* costs are not levied.
+**Costs:** In the shutdown/Power Off state, a customer pays for storage consumed by the virtual machine and licensing costs. Compute, memory and *Managed OS* costs are not levied.
 
 **Sample Use Case:** A Managed Server customer maintains a development and staging environment for their production workloads. This environment is only used during business hours 8 AM to 8 PM EST. The IT department, in order to save costs, creates a scheduled shutdown event during off hours. This automated task eliminates CPU, RAM and Managed Server fee's between the 8 PM and 8 AM EST time window for these environments.
 

@@ -29,6 +29,6 @@ CenturyLink Cloud customers can choose which data centers to make available to t
 ![Dashboard](../images/2015-03-11_dcpreferences-5.png "Dashboard")
 1. A disabled data center (in this example, CA1) is also excluded from the **Create Server** page.
 ![Create Server](../images/2015-03-11_dcpreferences-6.png "Create Server")
-1. A disabled data center is also unavailable for any API operations that use a data center parameter (e.g. [Get Data Center List](http://www.centurylinkcloud.com/api-docs/v2#data-centers-get-data-center-list)).
+1. A disabled data center is also unavailable for any API operations that use a data center parameter (e.g. [Get Data Center List](http://www.ctl.io/api-docs/v2#data-centers-get-data-center-list)).
 
 > **NOTE** If you apply data center preferences to your account, than any **new** CenturyLink Cloud data centers will **NOT** automatically show up in the Control Portal for you. You will need to come into the Data Center preferences page and manually enable the new data center. This behavior is in place to respect your conscious choice to show specific data centers.

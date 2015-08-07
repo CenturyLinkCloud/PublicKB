@@ -1,12 +1,13 @@
 {{{
-  "title": "Cloud Server Instance Size and Performance",
-  "date": "4-7-2015",
+  "title": "Cloud Virtual Server Instance Size and Performance",
+  "date": "7-8-2015",
   "author": "Richard Seroter",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
-The CenturyLink Cloud Platform does not offer predefined "instance types" but rather, lets users provision servers with any combination of resources they want. The platform is designed to deliver predictable performance for each machine regardless of size and data center. Costs are incurred hourly and based on the amount of CPU, memory and storage resources allocated.
+The CenturyLink Cloud Platform does not offer predefined virtual "instance types" but rather, lets users provision virtual servers with any combination of resources they want. The platform is designed to deliver predictable performance for each machine regardless of size and data center. Costs are incurred hourly and based on the amount of CPU, memory and storage resources allocated.
 
 ### Maximum Resources (Standard)
 
@@ -34,7 +35,7 @@ Virtual Machine vNIC			  | 10 Gbps
 ----------------------------|-----------------
 Firewall (between VLANs)  	| up to 6 Gbps
 Firewall (external) 		  	| up to 2 Gbps
-Load Balancer						   	| 200 Mbps to 1 Gbps (based on unit size purchased)<br>SSL Offload: up to 750 new SSL requests/second
+Load Balancer						   	| 100 Mbps to 400 Mbps (based on unit size purchased)<br>SSL Offload: up to 750 new SSL requests/second
 VPN (client)							  | up to 20 Mbps<br>19 max concurrent connections (higher volumes available)
 VPN (IPSEC)                 | up to 1 Gbps
 Standard VM-based Storage   | 5ms latency<br>Minimum IOPS (2500), Maximum IOPS (20,000) with 4KB block size

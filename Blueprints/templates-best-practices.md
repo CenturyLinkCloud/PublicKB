@@ -10,7 +10,7 @@
 
 Templates are defined virtual images and are the basis from which new servers are build.  Templates should adhere to the following best practices.
 
-Blueprints are a saved and repeatable workflow that bundles components like Templates, Packages and other Blueprints together.  Blueprints should adhere to the following best practices for increase maintainability and a consistent user deployment experience.
+Blueprints are a saved and repeatable workflow that bundles components like Templates, Packages and other Blueprints together.  Blueprints should adhere to the following best practices for increased maintainability and a consistent user deployment experience.
 
 ### Additional References
 

@@ -9,7 +9,7 @@
 <p>We offer two options of MySQL Replication: Master/Master and Master/Slave.</p>
 <p>This will allow for a much higher level of fault tolerance and redundancy for your MySQL databases.&nbsp; Replication enables data from one MySQL database server (the Master) to be replicated to another MySQL database servers (the Slave).&nbsp; In the case of Master/Master both nodes will replicate their databases to each other so each acts as a Master for themselves and a Slave for the other Node and the reverse.</p>
 <h3>Prerequisites (for both Master/Master and Master/Slave)</h3>
-<p>1. Build two Managed RedHat Linux 6 servers</p>
+<p>1. Build two Managed RedHat Linux 6 servers, or two Managed RedHat Linux 7 servers</p>
 <p>2. Run CLC Managed Oracle MySQL Enterprise Blueprint on both hosts (<a style="background-color: initial;" href="https://t3n.zendesk.com/entries/45109574-Getting-Started-with-Managed-MySQL">https://t3n.zendesk.com/entries/45109574-Getting-Started-with-Managed-MySQL</a>)</p>
 <h3>Running the MySQL Master/Master Blueprint</h3>
 <p>1. Search for the <strong style="background-color: initial;">CLC Managed MySQL Master Master Replication</strong> Blueprint in the Blueprint library.&nbsp; Then, click the Blueprint and then click the deploy blueprint button</p>
@@ -48,7 +48,7 @@
 <p><strong>Q: What Versions of Oracle MySQL Replication are supported?</strong></p>
 <p>A: CenturyLink Cloud Supports&nbsp;MySQL v5.5, MySQL 5.6.</p>
 <p><strong>Q: What operating systems are supported for Managed Oracle MySQL Replication?</strong></p>
-<p>A: Managed Red Hat 6
+<p>A: Managed Red Hat 6 and Managed Red Hat 7.
 </p>
 <p><strong>Q: Can *un-managed* MySQL Replication Services be converted to *Managed* (or vice versa)?</strong>
 </p>

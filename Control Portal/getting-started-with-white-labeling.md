@@ -22,7 +22,7 @@ First, navigate to "Account" - > "Settings," then click "Site Branding."
 
 ###Updating the Site Name
 
-Click this section, and replace "Control Portal" with any name - this will usually be the name of your company or division. Make sure to click "Save" at the bottom of the page. After the change takes effect, users will see this name in the header as well as on the login page of your unique [subdomain that features an account alias](../release notes/2015-03-05-cloud-platform-release-notes.md).
+Click this section, and replace "Control Portal" with any name - this will usually be the name of your company or division. Make sure to click "Save" at the bottom of the page. After the change takes effect, users will see this name in the header as well as on the login page of your unique [subdomain that features an account alias](../Release Notes/2015-03-05-cloud-platform-release-notes.md).
 
 ###Customize the Control Portal Logo
 
@@ -36,7 +36,7 @@ This logo appears on the header of every page in the Control Portal. To change i
 
 ###Customize the 'Sign In Page' Logo
 
-This logo appears on the sign in page to the Control Portal for accounts using a [subdomain that features an account alias](../release notes/2015-03-05-cloud-platform-release-notes.md).
+This logo appears on the sign in page to the Control Portal for accounts using a [subdomain that features an account alias](../Release Notes/2015-03-05-cloud-platform-release-notes.md).
 
 1. Select the "change" button and choose a local file on your computer. The chosen file must be:
   * PNG, GIF or JPG format.
