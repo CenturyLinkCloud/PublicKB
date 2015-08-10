@@ -55,6 +55,8 @@
 
   This [continues our momentum](https://www.ctl.io/blog/post/centurylink-building-platform-momentum-with-cloudfoundry/) in the Cloud Foundry community, and complements our major enhancements to the [AppFog](https://www.ctl.io/appfog/) service.  Individual developers and work teams that want fast access to an elastic runtime environment can use our [AppFog](https://www.ctl.io/appfog/) service to get started quickly.  Enterprise architects and development managers who want a more customizable environment look to Pivotal as the market leader for elastic runtime and microservice architecture.  Since both offerings are based around Cloud Foundry - our users get the best of both worlds.
 
-### Open Source Contributions (1)
+### Open Source Contributions (2)
 
-* __[Zodiac: Easy Container Deployment & Rollback](https://github.com/CenturyLinkLabs/zodiac).__ Built with small teams and single developers in mind, Zodiac is designed to be lightweight and plug into the existing Docker tooling. Zodiac makes it easy to deploy and rollback containerized applications. To learn more, visit our [Zodiac repo on GitHub](https://github.com/CenturyLinkLabs/zodiac), and read the [blog post](https://labs.ctl.io/zodiac-easy-container-deployment-rollback/) about this initial release.
+* __[Zodiac](https://labs.ctl.io/zodiac-easy-container-deployment-rollback/)__ - We've launched Zodiac, a lightweight CLI tool for easy deployment and rollback of dockerized applications. Integrates with Docker tooling (Compose, Swarm). See wiki notes [here](https://github.com/CenturyLinkLabs/zodiac/).
+
+* __[Panamax.io](http://panamax.io/)__ - Added support for VirtualBox 5.0 and Vagrant 1.7.3+ to installer; UI integration with ImageLayers. Release notes here: [Panamax Installer v0.6.5](https://github.com/CenturyLinkLabs/panamax-coreos/blob/master/CHANGELOG.md#changelog) and [Panamax UI v0.2.21](https://github.com/CenturyLinkLabs/panamax-ui/blob/master/CHANGELOG.md#changelog)
