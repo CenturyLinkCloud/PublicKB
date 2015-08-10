@@ -25,7 +25,7 @@
 
 * __Invoicing API.__ Use a [modern API endpoint](https://www.ctl.io/api-docs/v2/) to retrieve cloud usage information for a given billing period. Supply an account alias and date, and pull back detailed information about your cloud invoice.
 
-* __Bare Metal servers available in Europe.__ Building upon last month's launch of [pay-as-you-go Bare Metal servers](https://www.ctl.io/bare-metal/) in Virginia, we've turned up the service in a London-area data center. Provision servers on demand for your workloads that demand the isolation and performance of physical machines.
+* __Bare Metal servers available in Europe.__ Building upon last month's launch of [pay-as-you-go Bare Metal servers](https://www.ctl.io/bare-metal/) in Virginia, we've turned up the service in a London-area data center. Provision servers for your workloads that require the isolation and performance of physical machines.
 
 * __Cloud managed backup available in IL1.__ Get more control of your cloud server data backups by deploying [cloud managed backup](https://www.ctl.io/managed-services/backup/), now available in our Chicago-area data center.
 
