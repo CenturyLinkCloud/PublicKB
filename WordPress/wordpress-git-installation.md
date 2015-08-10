@@ -22,9 +22,14 @@ Git 1.7.10 or newer is required for interacting with your CenturyLink WordPress 
 
 ## <a name="debian"></a>Linux - Debian/Ubuntu Git Installation
 
-At a terminal run the following command:
+1. Open a terminal
+2. Run the following command to update your apt repository
 
-`apt-get install git`
+  `apt-get update`
+
+3. Run the following command to install the latest version of git  
+
+  `apt-get install git`
 
 ## <a name="redhat"></a>Linux - Redhat/Fedora Git Installation
 
