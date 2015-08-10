@@ -13,7 +13,7 @@
   __NOTE: Two functions are not supported for VMs with additional NICS: "clone" and "convert to template.__
   ![multi-nic](../images/2015-08-11_releasenotes1.png)  
 
-* __Database as a Service: MySQL Limited Beta Release.__ Participants in our beta program will be able to subscribe to a MySQL-compatible DBaaS instance.  Users will instantly receive a connection to an active MySQL instance with a click of a button.  We offer the option to secure the connection using a provided self-signed certificate and will maintain daily backups, held locally for 7 days.  Visit our product page for more information and to sign up to become a beta user.  
+* __Database as a Service: MySQL Limited Beta Release.__ Beta program starts August 14th!  Participants in our beta program will be able to subscribe to a MySQL-compatible DBaaS instance through our User Interface or through AppFog.  Users will instantly receive a connection to an active MySQL instance with a click of a button.  We offer the option to secure the connection using a provided self-signed certificate and will maintain daily backups held locally for 7 days.  For more information, visit our product page on the CenturyLink Cloud website.   
 
 * __Custom Price Sheets ("Name Your Own Price")__ Account Administrators and Billing Managers can now configure custom price sheets for cloud services on a monthly basis. Use this capability for internal chargeback/showback scenarios. Resellers can also offer custom or promotional pricing for selected services. To access this feature, login and go directly to [https://control.ctl.io/createPricingAdjustment](https://control.ctl.io/createPricingAdjustment).  
   ![price-adjustments](../images/2015-08-11_releasenotes2.png)
