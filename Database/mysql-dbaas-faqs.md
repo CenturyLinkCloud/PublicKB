@@ -38,4 +38,4 @@ Currently, this article is to support customers in the Limited Beta program.  Ad
 </p>
 <p><strong>Q: I understand that CenturyLink is backing my data up daily.  How can I access my backups in order to restore? </strong>
 </p>
-<p>A: During our initial beta, you can send a request to [dbaas-support@ctl.io](dbaas-support@ctl.io) to request a restore from backup and we will work with you to restore your data.</p>
+<p>A: During our initial beta, you can send a request to <a href="mailto:dbaas-support@ctl.io">dbaas-support@ctl.io</a> to request a restore from backup and we will work with you to restore your data.</p>
