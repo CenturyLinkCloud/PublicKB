@@ -15,7 +15,7 @@ During the Limited Beta there is no production Service Level Agreement.
 
 #### Audience
 
-Currently, this article is to support customers in the Limited Beta program.  Additionally, the responses in this FAQ document are specific to using the service through our DBaaS user interface. 
+Currently, this article is to support customers in the Limited Beta program.  Additionally, the responses in this FAQ document are specific to using the service through our DBaaS user interface.
 
 
 ## FREQUENTLY ASKED QUESTIONS
@@ -34,7 +34,7 @@ Currently, this article is to support customers in the Limited Beta program.  Ad
 </p>
 <p><strong>Q: I understand that SSL Encryption options are available.  Will my data be encrypted in transit and/or at rest? </strong>
 </p>
-<p>A: Upon database subscription, you will be given the option to download a self-signed cert that can be consumed by your target application. When implemented, your database connection is encrypted as well as your data in transit.  Please see the KB article on [Connecting to MySQL DBaas Over SSL](../database/connecting-to-mysql-dbaas-over-ssl.md) for additional details.</p>
+<p>A: Upon database subscription, you will be given the option to download a self-signed cert that can be consumed by your target application. When implemented, your database connection is encrypted as well as your data in transit.  Please see the KB article on [Connecting to MySQL DBaas Over SSL](../Database/connecting-to-mysql-dbaas-over-ssl.md) for additional details.</p>
 </p>
 <p><strong>Q: I understand that CenturyLink is backing my data up daily.  How can I access my backups in order to restore? </strong>
 </p>

@@ -15,7 +15,7 @@ During the Limited Beta there is no production Service Level Agreement.
 
 #### Audience
 
-Currently, this article is to support customers in the Limited Beta program.  Additionally, the steps below are for customers using the DBaaS service through our Beta UI.  For instructions on how to use your cert in AppFog, please see [Connecting to MySQL DBaas Over SSL on AppFogv2](../database/connecting-to-mysql-dbaas-over-ssl-on-appfog.md).
+Currently, this article is to support customers in the Limited Beta program.  Additionally, the steps below are for customers using the DBaaS service through our Beta UI.  For instructions on how to use your cert in AppFog, please see [Connecting to MySQL DBaas Over SSL on AppFogv2](../Database/connecting-to-mysql-dbaas-over-ssl-on-appfog.md).
 
 ## Connecting over SSL-enabled Connection
 
