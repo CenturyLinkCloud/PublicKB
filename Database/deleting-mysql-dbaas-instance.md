@@ -4,8 +4,7 @@
   "author": "Christine Parr",
   "attachments": [],
   "related-products" : [],
-  "contentIsHTML": false,
-  "sticky": true
+  "contentIsHTML": false
 }}}
 
 #### IMPORTANT NOTE
@@ -15,7 +14,7 @@ During the Limited Beta there is no production Service Level Agreement.
 
 #### Audience
 
-Currently, this article is to support customers in the Limited Beta program.
+Currently, this article is to support customers in the Limited Beta program.  Additionally, these instructions are specific to deleting a subscription that was created through the DBaaS user interface.
 
 ## Overview
 
