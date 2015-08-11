@@ -27,6 +27,8 @@
 
 * __Bare Metal servers available in Europe.__ Building upon last month's launch of [pay-as-you-go Bare Metal servers](https://www.ctl.io/bare-metal/) in Virginia, we've turned up the service in a London-area data center. Provision servers for your workloads that require the isolation and performance of physical machines.
 
+* __Bare Metal servers now support Ubuntu 14.__ When [creating Bare Metal servers](https://www.ctl.io/knowledge-base/servers/creating-a-new-bare-metal-server), you can now select Ubuntu 14 as an operating system option in addition to the choices that are already supported (CentOS 6, Red Hat Enterprise Linux 6, and Windows Server 2012 R2 Standard). 
+
 * __Cloud managed backup available in IL1.__ Get more control of your cloud server data backups by deploying [cloud managed backup](https://www.ctl.io/managed-services/backup/), now available in our Chicago-area data center.
 
 * __WordPress Service: Zero Downtime Blue-Green Site Deployments.__ Now, when doing a [Git push to deploy](https://www.ctl.io/knowledge-base/wordpress/wordpress-site-updates-with-git/) updates to a WordPress site, our system will keep your existing site up and fully operational during the deployment.  Your site visitors may continue to use the existing site during the deployment.  When the deployment is complete, our system will seamlessly re-route traffic away from your original site to your newly updated site.
