@@ -1,14 +1,15 @@
 {{{
-  "title": "Account Hierarchy User, Network, and Firewall Policy Primer",
-  "date": "1-22-2015",
-  "author": "Keith Resar",
+  "title": "Account Hierarchy User, Network, Service Catalog, and Firewall Policy Primer",
+  "date": "6-16-2015",
+  "author": "Chris Little",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 ### Overview
 
-CenturyLink Cloud provides a secure multi-tenant platform by strictly segmenting customer accounts from each other.  This includes a strict separation between customer accounts including: cloud servers, networks, users, firewall policies, and all associated metadata.  The ability to create hard fenced accounts has been fully extended to customers through the introduction of [Sub Accounts](creating-a-sub-account.md).
+CenturyLink Cloud provides a secure multi-tenant platform by strictly segmenting customer accounts from each other.  This includes a strict separation between customer accounts including: cloud servers, networks, users, firewall policies, and all associated metadata.  The ability to create hard fenced accounts has been fully extended to customers through the introduction of [Sub Accounts](../Accounts & Users/creating-a-sub-account.md).
 
 ### Account and Subaccount Structure
 
@@ -20,7 +21,7 @@ Visualize an account structure like the following:
 
 ### User Permissions in Subaccounts
 
-User permissions flow down to all children below the sub account where they're created.  The [permission](practical-guide-for-using-roles.md) roles associated with users are effective in all of these subaccounts.
+User permissions flow down to all children below the sub account where they're created.  The [permission](../Accounts & Users/practical-guide-for-using-roles.md) roles associated with users are effective in all of these subaccounts.
 
 ![User permissions ins sub accounts](../images/account-hierarchy-2.png)
 
@@ -37,6 +38,12 @@ Parent accounts can control firewall policies associated with parent-child netwo
 ![Sub-Account to Sub-Account Firewall Policy](../images/account-hierarchy-4.png)
 
 ![Parent Account to Sub Account Firewall Policy](../images/account-hierarchy-5.png)
+
+### Service Catalog
+
+The [Service Catalog](../General/getting-started-with-the-service-catalog.md) allows Account Administrators to enable or disable certain cloud platform services for users of individual parent or sub accounts.
+
+![Service Catalog in account Hierarchy](../images/account-hierarchy-7.png)
 
 ### Accounts versus Groups
 

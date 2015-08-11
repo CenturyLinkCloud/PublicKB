@@ -23,7 +23,7 @@ Customers
 <p>Click “+ create new account”</p>
 
 <h3>Company Info</h3>
-<p><img src="https://t3n.zendesk.com/attachments/token/I7QPdgngoVsy0n4GPSJFMEZ56/?name=subalias.png" alt="subalias.png" /></p>
+<p><img src="../images/createsubaccount-subalias.png" alt="subalias.png" /></p>
 <p>Change parent account if desired, such as in the case that you wish for this account to be a sub account of a sub account.</p>
 <p>Fill in appropriate Business name, etc.</p>
 <p>Input an Account Alias of your choice. This is a string of 2-4 alphanumeric characters which is used to identify your account and relate servers to that account by naming convention. They are globally unique so there are no duplicate aliases allowed. This is a required field.
@@ -33,7 +33,7 @@ Note that an account alias cannot be reused, even after deletion of the original
 
 <h3>Company Info</h3>
 </p>
-<p><img src="https://t3n.zendesk.com/attachments/token/szlTQ0FO2uO5x939fr3T82vGP/?name=subbilling.png" alt="sub-billing.png" />
+<p><img src="../images/createsubaccount-subbilling.png" alt="sub-billing.png" />
 </p>
 <p>You may input a Default Primary DNS and a Default Secondary DNS IP address. This will be the DNS server value input into your IPv4 settings when building a server. You may select your own environment DNS servers, preferred public DNS servers, or the default datacenter DNS servers (172.17.1.26, 172.17.1.27) or leave it blank, in which case it will default to the aforementioned Datacenter DNS servers, which do allow for external DNS lookup.</p>
 <p>Bill to: Each sub account generates an invoice. You have the option of submitting the invoice to the parent account, or bill the sub account directly.</p>
@@ -41,13 +41,13 @@ Note that an account alias cannot be reused, even after deletion of the original
 <p>Share Parent Networks: This allows for sub accounts to share networks with the parent account. If this is set to ‘NO’ then the sub account will receive unique IP ranges when deploying servers/networks.</p>
 
 <h3>Settings</h3>
-<img src="https://t3n.zendesk.com/attachments/token/Nb2SEB7zot1oJD5LxDUvHOVZ6/?name=subsettings.png" alt="subsettings.png" />
+<img src="../images/createsubaccount-subsettings.png" alt="subsettings.png" />
 <p>All settings will be inherited from the parent. Toggle on to Yes any of the settings in this section will make that section visible in the sub account. The users in that sub account will then be able to override inherited settings. Leaving the sections set to off will hide the menu for that section in the sub account, preventing the settings from being overridden. In our example sub account users will be able to change the Account Logo and Account Color Scheme from what was inherited. All other menus will be hidden.</p>
 
 
 <h3>Data Center</h3>
 
-<p><img src="https://t3n.zendesk.com/attachments/token/TlQSi9xNdE4lGgtfQku8IL9R1/?name=subdatacenter.png" alt="subdatacenter.png" /></p>
+<p><img src="../images/createsubaccount-subdatacenter.png" alt="subdatacenter.png" /></p>
 
 <p>Select the datacenter which you wish the new account to be homed to. This does not limit your ability to build in any other datacenter. Your VPN server will be created here. You will not be able to hide the Primary datacenter. Your will not be able to change the primary datacenter.</p>
 
@@ -59,11 +59,11 @@ Note that an account alias cannot be reused, even after deletion of the original
 
 <p>After the sub account is created you can edit the settings. Any of these settings may be modified in the future by logging into parent account, then browsing to Account&gt;Subaccounts and click to select the subaccount for which you wish to edit
   settings. You will be sent to the “Sub Account Settings” page.</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/lChT4TKbVIOXmFJtYhYylmSuX/?name=subeditsettings.png" alt="subeditsettings.png" />
+<p><img src="../images/createsubaccount-subeditsettings.png" alt="subeditsettings.png" />
 </p>
 <p>edit settings from the parent account after the sub account has been created</p>
 
-<p><img src="https://t3n.zendesk.com/attachments/token/lOrxCqkMnmwUjwMQc6WaCFRIc/?name=subhiddenmenus.png" alt="subhiddenmenus.png" /></p>
+<p><img src="../images/createsubaccount-subhiddenmenus.png" alt="subhiddenmenus.png" /></p>
 <p>Menus are hidden to the sub account</p>
 <p>You can click any of these settings and toggle them between disabled (not visible) and enabled (visible and therefore editable)</p>
 

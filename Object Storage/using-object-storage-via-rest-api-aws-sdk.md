@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description</h3>
-<p><a href="http://www.centurylinkcloud.com/object-storage">CenturyLink Cloud&nbsp;3 Object Storage</a> is an ideal repository for unstructured data ranging from media files to database backups. The Object Storage service is Amazon S3 compatible
+<p><a href="http://www.ctl.io/object-storage">CenturyLink Cloud&nbsp;3 Object Storage</a> is an ideal repository for unstructured data ranging from media files to database backups. The Object Storage service is Amazon S3 compatible
   which means that code and tools that work with Amazon S3 should work seamlessly with CenturyLink Cloud Object Storage. In this KB article, we'll show you how to use the raw REST API and the AWS SDK (for .NET and Node.js) to interact with Object Storage.</p>
 <h3>Audience</h3>
 <ul>
@@ -15,7 +15,7 @@
 </ul>
 <h3>Prerequisites</h3>
 <ul>
-  <li>Have users and buckets created in Object Storage. See the KB article <a href="http://help.tier3.com/entries/21648384-Using-Object-Storage-from-the-Control-Portal">Using Object Storage from the Control Portal</a> for a walkthrough of
+  <li>Have users and buckets created in Object Storage. See the KB article <a href="using-object-storage-from-the-control-portal.md">Using Object Storage from the Control Portal</a> for a walkthrough of
     users and buckets.</li>
 </ul>
 <h3>Using the Object Storage REST API from .NET</h3>
@@ -35,11 +35,11 @@
   <li>Define a new "helper" function that can generate the <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html#ConstructingTheAuthenticationHeader">proper authentication header </a>that the service expects. The
     function below accepts values used to generate the authentication string, and is encoded and signed.
     <br />
-    <pre>/// 
+    <pre>///
 
 /// Helper function to generate the required authentication header for messages to S3 endpoint
 
-/// 
+///
 
 private static string GenerateApiAuthHeader(string verb, string timestamp, string contentType, string resource, string secret)
 
@@ -55,7 +55,7 @@ private static string GenerateApiAuthHeader(string verb, string timestamp, strin
 
             "x-amz-date:" + timestamp + "\n" +      //optionally, AMZ headers
 
-            resource;                               //resource    
+            resource;                               //resource
 
 
 
@@ -357,9 +357,9 @@ foreach (S3Object obj in objResp.S3Objects)
     <br />
     <pre>{
 
-   "accessKeyId": "KEYID", 
+   "accessKeyId": "KEYID",
 
-   "secretAccessKey": "SECRET", 
+   "secretAccessKey": "SECRET",
 
    "region":"Canada"
 

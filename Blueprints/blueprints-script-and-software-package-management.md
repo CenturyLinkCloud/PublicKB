@@ -1,12 +1,12 @@
 {{{
   "title": "Blueprints Script and Software Package Management",
   "date": "12-18-2014",
-  "author": "jw@tier3.com",
+  "author": "Trent Anderson",
   "attachments": [],
   "contentIsHTML": true
 }}}
 
-<p><strong>Last updated: &nbsp;2/3/2015 03:05 PST</strong>
+<p><strong>Last updated:  2/3/2015 03:05 PST</strong>
 </p>
 Description
 <p>Software and script packages (henceforth referred to as "packages") are one way that Blueprint Designers can customize their environments. They can be configured to run scripts and executables or install software. The definition of a package is
@@ -44,9 +44,9 @@ Package Format
       </td>
       <td>
         <p>At least one executable file must be included in the Package. CenturyLink Cloud supports the following executable types:</p>
-        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Standard .exe</p>
-        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Command line scripts (anything that can be run from cmd.exe for Windows or the shell on Linux)</p>
-        <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PowerShell scripts (.ps1 files)</p>
+        <p>-        Standard .exe</p>
+        <p>-        Command line scripts (anything that can be run from cmd.exe for Windows or the shell on Linux)</p>
+        <p>-        PowerShell scripts (.ps1 files)</p>
         <p><em>* Note: The permissions of this file for Linux scripts must be set to be executable (chmod 755). In order to best achieve this, the file must be created and zipped on a Linux or Unix-based platform.</em>
         </p>
       </td>
@@ -68,7 +68,7 @@ Package Format
 <p>This rest of this document will explain how to construct the package.manifest file and explain what information is available to the package at execution time.</p>
 &lt;Manifest&gt; Element
 <p>The root node for the package manifest.</p>
-<pre>&lt;Manifest&gt;<br />&nbsp; &lt;Metadata&gt;<br />&nbsp; &lt;Parameters&gt;<br />&nbsp; &lt;Execution&gt;<br />&lt;/Manifest&gt;</pre>
+<pre>&lt;Manifest&gt;<br />  &lt;Metadata&gt;<br />  &lt;Parameters&gt;<br />  &lt;Execution&gt;<br />&lt;/Manifest&gt;</pre>
 <h3>Parent Element</h3>
 <p>None.</p>
 <h3>Attributes</h3>
@@ -117,7 +117,7 @@ Package Format
 </table>
 &lt;Metadata&gt; Element
 <p>Provides descriptive information to uniquely identify the package, its contents and capabilities.</p>
-<pre>&lt;Metadata&gt;<br />&nbsp; &lt;UUID&gt;<br />&nbsp; &lt;Parameters&gt;<br />&nbsp; &lt;Name&gt;<br />&nbsp; &lt;Description&gt;<br />&lt;/Manifest&gt;</pre>
+<pre>&lt;Metadata&gt;<br />  &lt;UUID&gt;<br />  &lt;Parameters&gt;<br />  &lt;Name&gt;<br />  &lt;Description&gt;<br />&lt;/Manifest&gt;</pre>
 <h3>Parent Element</h3>
 <p>&lt;Manifest&gt;</p>
 <h3>Attributes</h3>
@@ -174,7 +174,7 @@ Package Format
 </table>
 &lt;Parameters&gt; Element
 <p>Defines the list of parameters required to execute the Package.</p>
-<pre>&lt;Parameters&gt;<br />&nbsp; &lt;Parameter&gt;<br />&lt;/Parameters&gt;</pre>
+<pre>&lt;Parameters&gt;<br />  &lt;Parameter&gt;<br />&lt;/Parameters&gt;</pre>
 <h3>Parent Element</h3>
 <p>&lt;Manifest&gt;</p>
 <h3>Attributes</h3>
@@ -198,14 +198,14 @@ Package Format
         </p>
       </td>
       <td>
-        <p>See&nbsp;&lt;Parameter&gt; Element.</p>
+        <p>See &lt;Parameter&gt; Element.</p>
       </td>
     </tr>
   </tbody>
 </table>
 <h3>&lt;Parameter&gt; Element</h3>
 <p>Defines how a Parameter will be presented in the UI.</p>
-<pre>&lt;Parameter Name= Type= Variable= Hint= Prompt= Global= Regex= &gt;<br />&nbsp; &lt;Option&gt;<br />&lt;/Parameter&gt;</pre>
+<pre>&lt;Parameter Name= Type= Variable= Hint= Prompt= Global= Regex= &gt;<br />  &lt;Option&gt;<br />&lt;/Parameter&gt;</pre>
 <h4>Parent Element</h4>
 <p>&lt;Parameters&gt;</p>
 <h4>Attributes</h4>
@@ -246,7 +246,7 @@ Package Format
       </td>
       <td>
         <p>The Parameter type.</p>
-        <p><em>See below</em><em>&nbsp;for values</em>
+        <p><em>See below</em><em> for values</em>
         </p>
       </td>
       <td>
@@ -337,7 +337,7 @@ Package Format
       </td>
       <td>
         <p>No</p>
-        
+
       </td>
     </tr>
     <tr>
@@ -407,7 +407,7 @@ Package Format
       </td>
       <td>
         <p>A list of values where one item must be selected.</p>
-        <p><em>1 or more&nbsp;</em><em>Option</em><em>&nbsp;elements must be defined.</em>
+        <p><em>1 or more </em><em>Option</em><em> elements must be defined.</em>
         </p>
       </td>
       <td>
@@ -421,7 +421,7 @@ Package Format
       </td>
       <td>
         <p>A list of values where any number of items may be selected.</p>
-        <p><em>1 or more&nbsp;</em><em>Option</em><em>&nbsp;elements must be defined.</em>
+        <p><em>1 or more </em><em>Option</em><em> elements must be defined.</em>
         </p>
       </td>
       <td>
@@ -544,14 +544,14 @@ Package Format
         <p>The account alias that this Blueprint is being deployed under.</p>
       </td>
     </tr>
-	<tr>
-		<td valign="top" width="174">
-		<p><strong>T3.Datacenter</strong></p>
-		</td>
-		<td valign="top" width="624">
-		<p>The data center that the Blueprint is being deployed in.</p>
-		</td>
-	</tr>
+    <tr>
+        <td valign="top" width="174">
+        <p><strong>T3.Datacenter</strong></p>
+        </td>
+        <td valign="top" width="624">
+        <p>The data center that the Blueprint is being deployed in.</p>
+        </td>
+    </tr>
   </tbody>
 </table>
 <h3>&lt;Option&gt; Element</h3>
@@ -596,7 +596,7 @@ Package Format
 
 &lt;Execution&gt; Element
 <p>Defines how the Package should be executed.</p>
-<pre>&lt;Metadata&gt;<br />&nbsp; &lt;Mode&gt;<br />&nbsp; &lt;Command&gt;<br />&lt;/Manifest&gt;</pre>
+<pre>&lt;Metadata&gt;<br />  &lt;Mode&gt;<br />  &lt;Command&gt;<br />&lt;/Manifest&gt;</pre>
 <h3>Parent Element</h3>
 <p>&lt;Manifest&gt;</p>
 <h3>Attributes</h3>
@@ -650,7 +650,7 @@ Package Format
               <td>
                 <p>Windows Only</p>
                 <p>Executes the package via Remote PowerShell as the local administrator.</p>
-                
+
                 <p><em>Note: ‘Negotiate’ Authentication mode is used when establishing the remote connection.</em>
                 </p>
               </td>
@@ -684,7 +684,7 @@ Package Format
         </p>
         <p>Example:</p>
         <p>/dir/my.cmd ${My.Custom.Value}</p>
-        <p>Executes the my.cmd file located in a sub folder called ‘dir’,&nbsp; replacing ${My.Custom.Value} with its runtime value.</p>
+        <p>Executes the my.cmd file located in a sub folder called ‘dir’,  replacing ${My.Custom.Value} with its runtime value.</p>
       </td>
     </tr>
     <tr>
@@ -718,36 +718,36 @@ Uploading and Publishing a Package
 <p>Once the package.manifest has been created, validated, and zipped with the all other required files, the following steps should be followed to get the package uploaded and published to the Control Portal.</p>
 <ol>
   <li>Login to control portal and navigate to the Scripts page.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/FdNoAQoOZ8F0MMe6bf6hqhrmr/?name=2014-06-05-001-Scripts-Menu.png" alt="2014-06-05-001-Scripts-Menu.png" />
+    <br /><img src="../images/2014-06-05-001-Scripts-Menu.png" alt="2014-06-05-001-Scripts-Menu.png" />
   </li>
   <li>Click on the "+ new script" button.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/Y64qwR01Xv7WFOyVOMdCNwnod/?name=2014-06-05-002-New-Script.png" alt="2014-06-05-002-New-Script.png" />
+    <br /><img src="../images/2014-06-05-002-New-Script.png" alt="2014-06-05-002-New-Script.png" />
   </li>
-  <li>You will be presented with two options for uploading the package: Browser or FTP. For packages less than 4MB, you can easily upload directly through your web browser by choosing "Browser Upload". For packages larger than 4MB, they&nbsp;<em>must</em>&nbsp;be
-    uploaded using the "FTP Upload" option, but this option is available for smaller packages as well. Selecting the "FTP Upload" option will create an FTP account and path and display&nbsp;the credentials and URL to use for uploading. (Note that you
-    may <a href="https://t3n.zendesk.com/entries/48444870-FTP-Users-in-Control-Portal">create your own FTP users </a>for this purpose. Packages must be placed in the root folder as indicated by the display. Once uploaded, Package zip files
-    will appear in the Unpublished list.)&nbsp;
-    <br /><img src="https://t3n.zendesk.com/attachments/token/vZL2ScXnas3NX4f1pBkhFIHlO/?name=upload-package.png" alt="upload-package.png" />
+  <li>You will be presented with two options for uploading the package: Browser or FTP. For packages less than 4MB, you can easily upload directly through your web browser by choosing "Browser Upload". For packages larger than 4MB, they <em>must</em> be
+    uploaded using the "FTP Upload" option, but this option is available for smaller packages as well. Selecting the "FTP Upload" option will create an FTP account and path and display the credentials and URL to use for uploading. (Note that you
+    may <a href="../Control Portal/ftp-users-in-control-portal.md">create your own FTP users </a>for this purpose. Packages must be placed in the root folder as indicated by the display. Once uploaded, Package zip files
+    will appear in the Unpublished list.)
+    <br /><img src="../images/upload-package.png" alt="upload-package.png" />
   </li>
-  <li>If you chose "Browser Upload" you will see a prompt allowing you to browse for the file. Select the zip&nbsp;file that contains the package.manifest and supporting files and then click "upload script package" to upload it to the server. (If you chose
+  <li>If you chose "Browser Upload" you will see a prompt allowing you to browse for the file. Select the zip file that contains the package.manifest and supporting files and then click "upload script package" to upload it to the server. (If you chose
     the "FTP Upload" option, after uploading the package to the folder using an FTP client, click on the "Unpublished" tab and move on to step 5.)
-    <br /><img src="https://t3n.zendesk.com/attachments/token/9F4xt630rGFEPQaAt61PN6zM2/?name=2014-06-05-005-Upload-File.png" alt="2014-06-05-005-Upload-File.png" />
+    <br /><img src="../images/2014-06-05-005-Upload-File.png" alt="2014-06-05-005-Upload-File.png" />
   </li>
   <li>Now publish the package by clicking the "publish" button next to the package name in the list of unpublished packages.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/eqjQciIOagcTeYTrw82IXZn9N/?name=2014-06-05-006-Publish.png" alt="2014-06-05-006-Publish.png" />
+    <br /><img src="../images/2014-06-05-006-Publish.png" alt="2014-06-05-006-Publish.png" />
   </li>
   <li>The publication process will then load and perform basic validation of the package. If successful, you will be presented with a form showing the contents of your Manifest as well as a sample UI form with the parameters that will be prompted for at deployment
     time. If everything looks right, click the "next" button to move on.</li>
   <li>You will be presented with a page where you can specify additional metadata for the package. First, choose to publish the package as a "Script" or "Software". (There is no functional difference here, just categorization.) Then choose the desired Operating
-    System flavor (Linux or Windows) followed by checking the box next to the specific versions of the OS that the package supports (i.e. Windows 2003 or 2008, Ubuntu vs. Redhat, etc.). The last step is to select the visibility of the package.&nbsp;Private
-    packages are only visible to users in the account where it was created, Shared packages are visible to users in the&nbsp;account where it was created and all sub-accounts underneath, and Public packages are available to all accounts. (Please review&nbsp;
+    System flavor (Linux or Windows) followed by checking the box next to the specific versions of the OS that the package supports (i.e. Windows 2003 or 2008, Ubuntu vs. Redhat, etc.). The last step is to select the visibility of the package. Private
+    packages are only visible to users in the account where it was created, Shared packages are visible to users in the account where it was created and all sub-accounts underneath, and Public packages are available to all accounts. (Please review
     <a
-    href="https://t3n.zendesk.com/entries/56566304-Creating-Public-Blueprint-Packages">Creating Public Blueprint Packages&nbsp;</a>before publishing a public package.) Finally,&nbsp;click the "Publish" button to kick off the publishing process.
-      <br /><img src="https://t3n.zendesk.com/attachments/token/LsKG9gAFve8hsUfNSAcS2fHhK/?name=2014-06-05-008-Package-Details.png" alt="2014-06-05-008-Package-Details.png" />
+    href="../Blueprints/creating-public-blueprint-packages.md">Creating Public Blueprint Packages </a>before publishing a public package.) Finally, click the "Publish" button to kick off the publishing process.
+      <br /><img src="../images/2014-06-05-008-Package-Details.png" alt="2014-06-05-008-Package-Details.png" />
   </li>
   <li>The package is then queued for asynchronous publishing and the deploy time will depend upon the size of the package. Once the publish operation is complete, it will appear in the package library. (You can click the "Details Page" link to check the status
     of the publish.)
     <br />
-    <br /><img src="https://t3n.zendesk.com/attachments/token/Iq5kVEGptEhAvwMQCnI2NXnUu/?name=2014-06-05-009-Package-Done.png" alt="2014-06-05-009-Package-Done.png" />
+    <br /><img src="../images/2014-06-05-009-Package-Done.png" alt="2014-06-05-009-Package-Done.png" />
   </li>
 </ol>

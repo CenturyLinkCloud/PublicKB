@@ -34,7 +34,7 @@
       <pre># Simple helper function to parse JSON response ($1) and return value for given key ($2)<br />jsonGetVal() {<br />    echo $1 | sed 's/[{}]//g' | awk -v k="text" '{n=split($0,a,","); for (i=1; i&lt;=n; i++) print a[i]}' |<br />       sed 's/\"//g' | grep $2 | awk 'BEGIN { FS = ":" } ; {print $2}'<br />}</pre>
     </li>
     <li>Then the script makes three sequential calls to the API using <code>curl</code> and the parameters and variables initialized above along with the JSON parsing. The first call is to authenticate, the second will get the data center ID, and the third
-      one is for getting the data center name. (For more details on using the API in general, refer to the&nbsp;<a href="https://t3n.zendesk.com/categories/20067994-API-v2-0">API v2 Knowledge Base</a>.)
+      one is for getting the data center name. (For more details on using the API in general, refer to the&nbsp;<a href="//www.ctl.io/api-docs/v2">API v2 Knowledge Base</a>.)
       <br />
       <pre># Call to authentication API to get token<br />AUTHRESP=`curl -s -H "Content-Type: application/json" -d $AUTHJSON $AUTHURL`<br />TOKEN=`jsonGetVal $AUTHRESP $TOKENKEY`<br /><br /># Call to server API to get data center id for given server id<br />SRVRESP=`curl -s -H "Authorization: Bearer $TOKEN" $GETSRVURL`<br />DCID=`jsonGetVal "$SRVRESP" $DCKEY`<br /><br /># Call to DC API to get data center name for given ID<br />GETDCURL="$BASEURL/datacenters/$ACCOUNT/$DCID"<br />DCRESP=`curl -s -H "Authorization: Bearer $TOKEN" $GETDCURL`<br />DCNAME=`jsonGetVal "$DCRESP" name`</pre>
     </li>
@@ -43,7 +43,7 @@
       <pre># Write information to given file name<br />echo -e "$DCID\n$DCNAME" &gt; $FILENAME</pre>
     </li>
   </ol>
-  <li><strong>Create&nbsp;the script package.</strong> (For details on creating script packages in general, refer to the article&nbsp;<a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management">Blueprints Script and Software Package Management</a>.)</li>
+  <li><strong>Create&nbsp;the script package.</strong> (For details on creating script packages in general, refer to the article&nbsp;<a href="../Blueprints/blueprints-script-and-software-package-management.md">Blueprints Script and Software Package Management</a>.)</li>
   <ol>
     <li>Save the script from Step 1 as <code>install.sh</code>.</li>
     <li>Now, create the package manifest XML with all the information needed to upload the script to the control portal. This file contains the name and description of the package, along with the parameters needed and the command to execute. The five parameters
@@ -55,39 +55,39 @@
     <li><p>Save this file as <code>package.manifest</code>.</li>
     <li><p>Create a ZIP file that contains the two files just created (<code>package.manifest</code> and <code>install.sh</code>) at the top level (not nested in a folder). Save this ZIP file as <code>package.zip</code>.</li>
   </ol>
-  <li><p><strong>Upload the script to the control portal.&nbsp;</strong>(For details on creating script packages in general, refer to the article<a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management">Blueprints Script and Software Package Management</a>.)</li>
+  <li><p><strong>Upload the script to the control portal.&nbsp;</strong>(For details on creating script packages in general, refer to the article<a href="../Blueprints/blueprints-script-and-software-package-management.md">Blueprints Script and Software Package Management</a>.)</li>
   <ol>
     <li><p>Login to control portal and navigate to the Scripts page.
-    <p><img src="https://t3n.zendesk.com/attachments/token/FdNoAQoOZ8F0MMe6bf6hqhrmr/?name=2014-06-05-001-Scripts-Menu.png" alt="2014-06-05-001-Scripts-Menu.png" />
+    <p><img src="../images/2014-06-05-001-Scripts-Menu.png" alt="2014-06-05-001-Scripts-Menu.png" />
     </li>
     <li><p>Click on the "+ new script" button.
-    <p><img src="https://t3n.zendesk.com/attachments/token/Y64qwR01Xv7WFOyVOMdCNwnod/?name=2014-06-05-002-New-Script.png" alt="2014-06-05-002-New-Script.png" />
+    <p><img src="../images/2014-06-05-002-New-Script.png" alt="2014-06-05-002-New-Script.png" />
     </li>
     <li><p>Choose "Browser Upload" and then upload the <code>package.zip</code> file.
-      <p><img src="https://t3n.zendesk.com/attachments/token/9F4xt630rGFEPQaAt61PN6zM2/?name=2014-06-05-005-Upload-File.png" alt="2014-06-05-005-Upload-File.png" />
+      <p><img src="../images/2014-06-05-005-Upload-File.png" alt="2014-06-05-005-Upload-File.png" />
     </li>
     <li><p>Now publish the package by clicking the "publish" button next to the package name in the list of unpublished packages.
-      <p><img src="https://t3n.zendesk.com/attachments/token/eqjQciIOagcTeYTrw82IXZn9N/?name=2014-06-05-006-Publish.png" alt="2014-06-05-006-Publish.png" />
+      <p><img src="../images/2014-06-05-006-Publish.png" alt="2014-06-05-006-Publish.png" />
     </li>
     <li><p>Click the "next" button on the displayed information page and then select the desired attributes for the package. In this example, select "Scripts", "Linux" (selecting all Linux flavors) and finally "Private". Then click the "Publish" button.
-      <p><img src="https://t3n.zendesk.com/attachments/token/LsKG9gAFve8hsUfNSAcS2fHhK/?name=2014-06-05-008-Package-Details.png" alt="2014-06-05-008-Package-Details.png" />
+      <p><img src="../images/2014-06-05-008-Package-Details.png" alt="2014-06-05-008-Package-Details.png" />
     </li>
     <li><p>The package is queued for publishing. Once the publish operation is complete, it is a usable script. (You can click the "Details Page" link to check the status of the publish.)
-      <p><img src="https://t3n.zendesk.com/attachments/token/Iq5kVEGptEhAvwMQCnI2NXnUu/?name=2014-06-05-009-Package-Done.png" alt="2014-06-05-009-Package-Done.png" />
+      <p><img src="../images/2014-06-05-009-Package-Done.png" alt="2014-06-05-009-Package-Done.png" />
     </li>
   </ol>
   <li><strong>Execute script on [multiple] server(s) within a group. </strong>(Alternatively, you could create a Blueprint and use this Script as the last task of the build procedure.)</li>
   <ol>
     <li><p>From the group page, select "execute package" from the actions menu.</p></li>
     <li><p>Select the Script you uploaded in the previous steps. It should be listed under "private scripts" as seen here:</p>
-      <p><img src="https://t3n.zendesk.com/attachments/token/BhzaYkEA2iumhH0kV5gkENXIf/?name=exec-pkg-write-dc.png" alt="exec-pkg-write-dc.png" /></p>
+      <p><img src="../images/exec-pkg-write-dc.png" alt="exec-pkg-write-dc.png" /></p>
     </li>
     <li>Now enter the values for the parameters that were defined as the prompts indicate. First, your Control Portal password, and then the path to write the file to. This example will use the path <code>/tmp/dc-info.txt</code>.
-      <p><img src="https://t3n.zendesk.com/attachments/token/ka5f9hDYJRZQAmUR25abPENe5/?name=write-dc-params.png" alt="write-dc-params.png" /></p>
+      <p><img src="../images/write-dc-params.png" alt="write-dc-params.png" /></p>
     </li>
     <li>
       <p>Finally, select the servers to execute the script on and click the "execute package" button.</p>
-      <p><img src="https://t3n.zendesk.com/attachments/token/UUye0wOpIj1SGzsGYWw4ODlFg/?name=exec-pkg-write-dc-select-servers.png" alt="exec-pkg-write-dc-select-servers.png" /></p>
+      <p><img src="../images/exec-pkg-write-dc-select-servers.png" alt="exec-pkg-write-dc-select-servers.png" /></p>
     </li>
     <li>You will then be redirected to the Queue page to see the status of the running task. When it is completed, log on to one of the servers to confirm the file exists and has the data as expected.</li>
   </ol>

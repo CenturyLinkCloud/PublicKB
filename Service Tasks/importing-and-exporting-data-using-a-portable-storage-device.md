@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description (goal/purpose)</h3>
-<p>CenturyLink Cloud supports importing and exporting data through portable storage devices into our data centers. This article provides an overview of this billable service. Billable charge details can be found here: &nbsp;http://www.centurylinkcloud.com/products/support/service-tasks.
+<p>CenturyLink Cloud supports importing and exporting data through portable storage devices into our data centers. This article provides an overview of this billable service. Billable charge details can be found here: &nbsp;http://www.ctl.io/products/support/service-tasks.
   &nbsp;</p>
 <p>Service Task prioritization: &nbsp;https://t3n.zendesk.com/entries/21651149-Ticket-Prioritization-Matrix</p>
 
@@ -33,6 +33,14 @@
     <li>USB 2.0 or above</li>
     <li>Limit 1 TB/drive</li>
   </ul>
+</ul>
+<h3>Device retention</h3>
+<ul>
+  <li>Portable devices will not be kept for more than 5 days after the transfer is completed. If arrangements have not been made to return the device. The device will be detached and destroyed</li>
+</ul>
+<h3>Domain specific NTFS ACLs</h3>
+<ul>
+  <li>If you are using domain specific ACLs. You must grant the "everyone" group full permissions. Without these permissions we will not have acces to copy or wipe data.</li>
 </ul>
 <h3>Detailed Steps</h3>
 <p><strong>Requesting an Import</strong>
@@ -94,6 +102,10 @@
   <ul>
     <li>Data must come from the country in which the datacenter is located</li>
     <li>We will not ship data out of the country of origin</li>
+  </ul>
+  <li>What are the CenturyLink Cloud data centers located?</li>
+  <ul>
+    <li><a href=https://www.ctl.io/data-centers/>Check out our Data Centers Location page</a> for detailed information about where you can find our datacenters</li>
   </ul>
   <li>Backups</li>
   <ul>

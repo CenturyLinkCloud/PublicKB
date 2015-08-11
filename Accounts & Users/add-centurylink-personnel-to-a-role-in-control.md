@@ -18,7 +18,7 @@
 <p><strong>Prerequisites</strong>
 </p>
 <ul>
-  <li>Must have a CenturyLink Control Portal account (https://control.tier3.com).</li>
+  <li>Must have a CenturyLink Control Portal account (https://control.ctl.io).</li>
 </ul>
 <p><strong>Detailed Steps</strong>
 </p>

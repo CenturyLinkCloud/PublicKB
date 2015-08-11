@@ -2,10 +2,12 @@
   "category_order": [
     "Support",
     "Accounts & Users",
+    "AppFog",
     "Autoscale",
     "Blueprints",
-    "Service Tasks",
     "Control Portal",
+    "Database",
+    "Disaster Recovery",
     "Ecosystem Partners",
     "General",
     "Mail",
@@ -14,6 +16,8 @@
     "Object Storage",
     "Partners",
     "Release Notes",
-    "Servers"
-  ] 
+    "Service Tasks",
+    "Servers",
+    "WordPress"
+  ]
 }}}

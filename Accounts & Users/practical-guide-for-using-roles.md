@@ -16,7 +16,7 @@
 <p>Finally, there will of course be some Account Administrators who have access to perform all functions within the context of the account, and there may also be a few users who have specialized functions like accountants who manage billing (Billing Manager) or domain name managers who may be separate from a networking team (DNS Manager).</p>
 <p>Below is a pie chart detailing one suggested breakdown of roles for an organization that generally follows these principles.</p>
 
-<p><img src="https://t3n.zendesk.com/attachments/token/1CrBboPTscvDSlam9n4ntpls3/?name=roles-breakdown-pie-chart.png" alt="roles-breakdown-pie-chart.png" />
+<p><img src="../images/practical-guide-roles-roles-breakdown-pie-chart.png" alt="roles-breakdown-pie-chart.png" />
 </p>
 
 <h3>Example Use Case</h3>
@@ -60,24 +60,24 @@
 <p>All of these things than can be controlled by setting up an account hierarchy appropriately. In this case, James and Michelle will use the QIND account as the parent account for all areas of the company, and will create sub accounts for each individual
   business unit. This way, users who are created in each sub account will only have access to the resources that exist there, but users in the parent account will have access in that context and be able to view/interact with all resources in the sub accounts
   as well. So the account hierarchy will look like this:</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/KIqYmBhOLpIx7Yyx8k1QvqiNP/?name=Q-acct-hierarchy.png" alt="Q-acct-hierarchy.png" />
+<p><img src="../images/practical-guide-roles-Q-acct-hierarchy.png" alt="Q-acct-hierarchy.png" />
 </p>
 <p>The steps below will walk through setting up one of these accounts to meet the requirements described above.</p>
 <ol>
   <li>From the Account page on the Sub Accounts tab, click the "create new account" button.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/mFxWpYk2aHf7BFc3VPOWkrDwY/?name=create-new-account.png" alt="create-new-account.png" />
+    <br /><img src="../images/practical-guide-roles-create-new-account.png" alt="create-new-account.png" />
   </li>
   <li>Enter the desired account name and alias (along with all the required address information and default DNS information if desired).
-    <br /><img src="https://t3n.zendesk.com/attachments/token/teKarCbtNEt8Gh5a8xFH0tl9q/?name=company-info.png" alt="company-info.png" />
+    <br /><img src="../images/practical-guide-roles-company-info.png" alt="company-info.png" />
     <br />
     <br />
   </li>
   <li>In this example, we specified that we want to bill the parent account and make the parent networks accessible, so we will set these options here as well, but they should be set per your specific use case:
-    <br /><img src="https://t3n.zendesk.com/attachments/token/NMmlGm1qJIljg54MdyzG9VoSs/?name=billing-info.png" alt="billing-info.png" />
+    <br /><img src="../images/practical-guide-roles-billing-info.png" alt="billing-info.png" />
   </li>
   <li>Finally, we specified above that we want to prevent sub account users from changing custom fields, e-mail templates, and branding information. The Settings area is where we determine this, so we will leave all account settings as disabled so the settings
     will not even show up for these sub account users. (These can also be enabled/disabled after the fact in the Sub Accounts settings tab.)
-    <br /><img src="https://t3n.zendesk.com/attachments/token/mg7VOtfuBfaVtYbZi2X3yvnwe/?name=account-settings.png" alt="account-settings.png" />
+    <br /><img src="../images/practical-guide-roles-account-settings.png" alt="account-settings.png" />
     <br />We could have decided to leave Data Center set to YES so that sub accounts can choose which DCs to allow servers to be deployed to, but here we've left it off as well. We can also change the primary DC if desired.</li>
   <li>Clicking the final "create" button will create the sub account with the settings specified. Users who should only have access to that account's resources should be created within the sub account itself, as described below.</li>
 </ol>

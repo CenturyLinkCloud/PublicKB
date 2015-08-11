@@ -5,11 +5,11 @@
   "attachments": [
     {
       "file_name": "Attached File",
-      "url": "/knowledge-base/attachments/Balancing Agility Cost and Control.pdf",
+      "url": "../attachments/Balancing Agility Cost and Control.pdf",
       "type": "application/pdf"
     }
   ],
-  "related_products": [ 
+  "related_products": [
     {
       "title": "Hyperscale Server",
       "description": "Lightning-quick servers in the public cloud with 100% flash storage. Breakthrough performance for data and web scale architectures.",
@@ -37,10 +37,10 @@
 </p>
 <ul>
   <li>View account details for the parent account and select the “Sub Accounts” option.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/wgmw3vxmqtromut/?name=psblueprint02.png" alt="psblueprint02.png" />
+    <br /><img src="../images/psblueprint02.png" alt="psblueprint02.png" />
   </li>
   <li>In the image above, clicking the name of the topmost account (which is the sub account) displays the sub account details, including a reference to the parent account.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/wuomd0w4oeegq8j/?name=psblueprint01.png" alt="psblueprint01.png" />
+    <br /><img src="../images/psblueprint01.png" alt="psblueprint01.png" />
   </li>
 </ul>
 
@@ -48,17 +48,17 @@
 </p>
 <ul>
   <li>Find the “Create Blueprint” link on the Control Portal navigation menu.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/ondbyattrhxkgjh/?name=psblueprint03.png" alt="psblueprint03.png" />
+    <br /><img src="../images/psblueprint03.png" alt="psblueprint03.png" />
   </li>
   <li>Create a new blueprint with the Privacy Setting set to <strong>Private</strong>.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/j4vhu54k9pdk43s/?name=psblueprint04.png" alt="psblueprint04.png" />
+    <br /><img src="../images/psblueprint04.png" alt="psblueprint04.png" />
   </li>
-  <li>Finish building the blueprint (see KB article <a href="http://help.tier3.com/entries/21690282-how-to-build-a-blueprint">How to build a Blueprint</a> for full details on completing a blueprint) and submit it for publishing.</li>
+  <li>Finish building the blueprint (see KB article <a href="../Blueprints/how-to-build-a-blueprint.md">How to build a Blueprint</a> for full details on completing a blueprint) and submit it for publishing.</li>
   <li>While staying within the parent account, navigate to the “All Blueprints” page by clicking the "Blueprints” item in the navigation menu.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/fw0hvnwczmtprbf/?name=psblueprint05.png" alt="psblueprint05.png" />
+    <br /><img src="../images/psblueprint05.png" alt="psblueprint05.png" />
   </li>
   <li>Search for and locate the just-created blueprint. In the screenshot below, note that the blueprint was successfully found by searching for a partial name.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/hqsgkwjvp7zsuqh/?name=psblueprint06.png" alt="psblueprint06.png" />
+    <br /><img src="../images/psblueprint06.png" alt="psblueprint06.png" />
   </li>
 </ul>
 
@@ -66,10 +66,10 @@
 </p>
 <ul>
   <li>Log into the Control Portal using the credentials of a user in a sub account of the parent that created the blueprint.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/92haznk2acltw80/?name=psblueprint07.png" alt="psblueprint07.png" />
+    <br /><img src="../images/psblueprint07.png" alt="psblueprint07.png" />
   </li>
   <li>Search for the blueprint created by the parent account. In the screenshot below, note that the blueprint was not found by searching for a partial name or searching the master list.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/aggescveqkymazy/?name=psblueprint09.png" alt="psblueprint09.png" />
+    <br /><img src="../images/psblueprint09.png" alt="psblueprint09.png" />
   </li>
   <li>The blueprint was not found because the Privacy Setting of “Private” prevented the blueprint from being visible to any other account, including sub accounts.</li>
 </ul>
@@ -79,13 +79,13 @@
 <ul>
   <li>Log into the Control Portal as a user in the parent account.</li>
   <li>Locate the recently created blueprint and select it for editing.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/tdkizt59irvekbh/?name=psblueprint11.png" alt="psblueprint11.png" />
+    <br /><img src="../images/psblueprint11.png" alt="psblueprint11.png" />
   </li>
   <li>On the first page of the Blueprint Designer, switch the Privacy Setting to <strong>Private Shared</strong>.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/bqtjeztfm6twccn/?name=psblueprint10.png" alt="psblueprint10.png" />
+    <br /><img src="../images/psblueprint10.png" alt="psblueprint10.png" />
   </li>
   <li>Save the blueprint by completing the Blueprint Designer wizard and republishing it. After publication, locate the blueprint and confirm that it has shared visibility.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/mp5plrzxrvhkzgi/?name=psblueprint12.png" alt="psblueprint12.png" />
+    <br /><img src="../images/psblueprint12.png" alt="psblueprint12.png" />
   </li>
 </ul>
 
@@ -93,10 +93,10 @@
 </p>
 <ul>
   <li>Log into Control Portal using a user that is part of the sub account.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/i1kjpoml35pwd09/?name=psblueprint07.png" alt="psblueprint07.png" />
+    <br /><img src="../images/psblueprint07.png" alt="psblueprint07.png" />
   </li>
   <li>Search for the blueprint created by the parent account. In the screenshot below, note that the blueprint was successfully found by searching for a partial name.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/p8apsuyqsa2ookz/?name=psblueprint13.png" alt="psblueprint13.png" />
+    <br /><img src="../images/psblueprint13.png" alt="psblueprint13.png" />
   </li>
   <li>This user in the sub account is now able to deploy this blueprint as they wish.</li>
 </ul>
