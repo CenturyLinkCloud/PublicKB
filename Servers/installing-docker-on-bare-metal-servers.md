@@ -7,11 +7,6 @@
       "file_name": "Install Docker on Bare Metal - RHEL/CentOS 6",
       "url": "../attachments/install-docker-centos6.sh",
       "type": "application/x-sh"
-    },
-    {
-      "file_name": "Install Docker on Bare Metal - Ubuntu",
-      "url": "../attachments/install-docker-ubuntu.sh",
-      "type": "application/x-sh"
     }
   ],
   "contentIsHTML": false
