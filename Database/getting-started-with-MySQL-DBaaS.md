@@ -36,7 +36,7 @@ Our MySQL Database-as-a-Service limited beta provides instant access to a single
 
 4.	Select datacenter from the drop-down menu, choose a plan, select your username and password for the database and enter a name for the database.  Click “Create Database”.  ![CreateDB](../images/dbaas-createdb-beta.png)
 
-5.  When created, you will be returned your database information including connection string and can choose to download your certificate at that time.
+5.  When created, you will be returned your database information including connection string and can choose to download your certificate at that time. ![DBInfo](../images/dbaas-returninfo-beta.png)
 
 6.  You can view a list of all your database subscriptions with connection string info on the "Database Instances" tab.  You can also download your certificate from this list at any time.  ![ListDB](../images/dbaas-dblist-beta.png)
 
