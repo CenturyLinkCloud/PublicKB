@@ -72,7 +72,7 @@ The WordPress administrative username is `wp-developer`, and the password is `pa
 MySQL
 -----
 
-You can use the MySQL command-line interface to work with your database:
+You can use the MySQL command-line interface to work with your database; the password should be `vagrant`:
 
 ```
 vagrant ssh

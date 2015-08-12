@@ -23,7 +23,7 @@
 
 ### Enhancements (8)
 
-* __Invoicing API.__ Use a [modern API endpoint](https://www.ctl.io/api-docs/v2/) to retrieve cloud usage information for a given billing period. Supply an account alias and date, and pull back detailed information about your cloud invoice.
+* __Invoicing API.__ Use a [modern API endpoint](https://www.ctl.io/api-docs/v2/#billing-get-invoice-data-for-an-account-alias) to retrieve cloud usage information for a given billing period. Supply an account alias and date, and pull back detailed information about your cloud invoice.
 
 * __Bare Metal servers available in Europe.__ Building upon last month's launch of [pay-as-you-go Bare Metal servers](https://www.ctl.io/bare-metal/) in Virginia, we've turned up the service in a London-area data center. Provision servers for your workloads that require the isolation and performance of physical machines.
 
