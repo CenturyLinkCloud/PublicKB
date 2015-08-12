@@ -85,7 +85,7 @@ In this sample deployment no security services were put in place around access t
 
 ### Example B: Configuration of the SoftNAS Virtual Appliance using S3 Compatible Object Storage
 
-1. Once your SoftNAS virtual appliance is provisioned to the appropriate account via Service Task, login to Control, navigate to the Virtual Appliance, choose edit storage. **Provision the appropriate size and number of virtual disks you wish to leverage for Block Cache File.** In this sample we've chosen to create a 500GB virtual disk for cache. You will be required to refresh the
+1. Once your SoftNAS virtual appliance is provisioned to the appropriate account via Service Task, login to Control, navigate to the Virtual Appliance, choose edit storage. **Provision the appropriate size and number of virtual disks you wish to leverage for Block Cache File.** In this sample we've chosen to create a 500GB virtual disk for cache.
 
     ![add block cache file disk in control](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-19.png)
 
