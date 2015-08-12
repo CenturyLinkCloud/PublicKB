@@ -32,7 +32,7 @@ Utilize the link below to set up a specific Slack channel to receive IPS Event N
 
 Setting up a WebHook will allow the IPS Event Notifications to be posted directly into your chosen Slack channel.
 
-1.)	Once your IPS Event Notifications Slack channel has been designated, you will need to click on the channel name drop-down and select “**Add a service Integration…**”
+1). Once your IPS Event Notifications Slack channel has been designated, you will need to click on the channel name drop-down and select “**Add a service Integration…**”
 
 ![Webhook URL.png](https://ucarecdn.com/1d3c452e-18a7-4bf2-a667-408cf75e4546/)
 
