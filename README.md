@@ -52,7 +52,7 @@ The repository is organized by category, and each folder represents a category. 
 
   **Content authors are responsible for making their pull requests pass the commit analyzer. Once they pass, pull requests will be merged.**
 
-1. CenturyLink Cloud Team reviews your pull request. If accepted, it will be added to the [Knowledge Base on CenturyLinkCloud.com](http://www.ctl.io/knowledge-base).
+1. CenturyLink Cloud Team reviews your pull request. If accepted, it will be added to the [Knowledge Base on ctl.iom](https://www.ctl.io/knowledge-base).
 
 
 #### Run the Commit Analyzer locally

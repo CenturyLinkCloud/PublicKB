@@ -46,7 +46,7 @@ Customers can access the Cavirin Help Center by going to [https://support.caviri
 
 This deployment process for Partner Templates currently requires manual interaction via the Service Task process, but will be further automated in future releases of the CenturyLink Cloud Platform.
 
-If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@centurylinkcloud.com](mailto:features@centurylinkcloud.com)
+If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@ctl.io](mailto:features@ctl.io)
 
 ### Prerequisite
 1.  Access to the CenturyLink Cloud platform as an authorized user.
