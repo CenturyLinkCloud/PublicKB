@@ -54,7 +54,7 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 <br>
 5. The Blueprint log will show each step taken and its status during provisioning.
 <br>
-![Blueprint Log](https://ucarecdn.com/ff47460f-26ce-416d-b891-55878a4663c6/)
+![Blueprint Status Log](../images/notificationupdate_rhel_logstatus.png)
 <br>
 6. An email notification will be sent to the initiator of the Blueprint for both queuing and completion.
 
