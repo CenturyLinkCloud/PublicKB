@@ -29,7 +29,7 @@ This Blueprint is for the actual installation and activation of the IPS service 
 <br>
 ![Control Portal](../images/gettingIPS_controlportal.png)
 <br>
-![CLC IPS Install for RHEL 64-bit 2.png](../images/gettingIPS_rhel_blueprintname.png) ![CLC IPS Install for RHEL 64-bit 2.png](../images/gettingIPS_windows_blueprintname.png)
+![Notification Update RHEL](../images/gettingIPS_rhel_blueprintname.png) ![Notification Update Windows](../images/gettingIPS_windows_blueprintname.png)
 <br>
 
 2. Click the **deploy blueprint** button.
@@ -41,14 +41,16 @@ This Blueprint is for the actual installation and activation of the IPS service 
 <br>
 ![Configure Notifications RHEL Fields](../images/gettingIPS_rhel_blueprintfields.png)
 <br>
+
 4. Review the Blueprint parameters and click **deploy Blueprint**.
 <br>
 ![Deploy Blueprint](../images/gettingIPS_rhel_deploy.png)
 <br>
 **Note:** The Blueprint displays each step taken and its status during provisioning.
 <br>
-![Status Log](../images/gettingIPS_rhel_logstatus.png)
+![Blueprint Status Log](../images/gettingIPS_rhel_logstatus.png)
 <br>
+
 5. An email notification is sent to the initiator of the Blueprint for both queuing and completion.
 
 **Frequently Asked Questions**
