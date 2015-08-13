@@ -34,25 +34,25 @@ Setting up a WebHook will allow the IPS Event Notifications to be posted directl
 
 1). Once your IPS Event Notifications Slack channel has been designated, you will need to click on the channel name drop-down and select “**Add a service Integration…**”
 
-![Webhook URL.png](https://ucarecdn.com/1d3c452e-18a7-4bf2-a667-408cf75e4546/)
+![Add a Service Integration](../images/slackforIPS_serviceintegration.png)
 
-2.)	Scroll to the bottom of the Integrations page and select "**Incoming WebHooks**”.
+2).	Scroll to the bottom of the Integrations page and select "**Incoming WebHooks**”.
 
-![DIY Integrations and Customizations.png](https://ucarecdn.com/96a2b388-7064-4817-a31c-7b44f7317d0c/)
+![Select Incoming Webhooks](../images/slackforIPS_incomingwebhooks.png)
 
-3.)	Now select the desired Slack Channel from the drop-down and click “**Add Incoming WebHooks Integration**”.
+3).	Now select the desired Slack Channel from the drop-down and click “**Add Incoming WebHooks Integration**”.
 
-![Incoming Webhooks.png](https://ucarecdn.com/42ceb036-7644-4d97-8645-447cac161c01/)
+![Add Incoming Webhooks Integration](../images/slackforIPS_addwebhooks.png)
 
-4.)	The system will generate a **Webhook URL**. Please copy and store this in a secure location. You will need this URL when setting up the Event Notifications.
+4).	The system will generate a **Webhook URL**. Please copy and store this in a secure location. You will need this URL when setting up the Event Notifications.
  
 (See *Next Steps*: **Configuring CLC IPS Notifications**)
 
-![Incoming Webhook URL.png](https://ucarecdn.com/59fbb939-a414-49f7-824a-7b31ebdc26d4/)
+![Webhook URL](../images/slackforIPS_webhookURL.png)
 
-5.)	Once completed, scroll down to the bottom of the page and select “**Save Settings**”.
+5).	Once completed, scroll down to the bottom of the page and select “**Save Settings**”.
 
-![Save Settings.png](https://ucarecdn.com/76d7e769-4cfd-4986-8ed0-43157d5c7341/)
+![Save Settings](../images/slackforIPS_savesettings.png)
 
 ### Next Steps
 
@@ -68,7 +68,7 @@ The below link provides an overview of WebHook options with Slack.
 
 Below is an example Slack Event Notification providing the pertinent details for an event that is triggered on a VM protected by IPS.
 
-![Example Slack Notification.png](https://ucarecdn.com/8c045cef-bcca-49ae-8da9-8e51fb31b4fa/)
+![Example Slack Notification](../images/slackforIPS_examplenotification.png)
 
 ### Slack’s Service Terms
 
