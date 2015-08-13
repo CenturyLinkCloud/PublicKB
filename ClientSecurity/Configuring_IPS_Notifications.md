@@ -38,7 +38,7 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 
 2. Click on the **deploy blueprint** button.
 
-  ![Configure Notifications RHEL.png](../images/notificationupdate_rhel_configure.png)
+  ![Configure Notifications RHEL](../images/notificationupdate_rhel_configure.png)
 
 3. Select the appropriate Virtual Machine to execute on.
 
@@ -60,17 +60,17 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 
 ## Frequently Asked Questions
 
-**Q:** What is a WebHook?
+**Q:** What is a WebHook?<br>
 **A:** WebHook is an HTTP callback: an HTTP Post that occurs when something happens.
 
-**Q:** Are there other formats or WebHooks available?
+**Q:** Are there other formats or WebHooks available?<br>
 **A:** Not at this time. If you would like to recommend another, please send request details to [features@cti.io](mailto:features@ctl.io).
 
-**Q:** Do you retain the data after the event notification is sent?
+**Q:** Do you retain the data after the event notification is sent?<br>
 **A:** Yes, we retain the data for 60 days.  If you need a longer data retention period, we are working on additional add-on functionality to store this data.  If you are interested, please send request details to [features@ctl.io](mailto:features@ctl.io).
 
-**Q:** Are you storing the full payload in another location?
+**Q:** Are you storing the full payload in another location?<br>
 **A:** Yes, we retain the data in another location for 60 days.
 
-**Q:** Do you support a text message or paging service?
+**Q:** Do you support a text message or paging service?<br>
 **A:** No, but we are happy to review any request sent to [features@ctl.io](mailto:features@ctl.io).
