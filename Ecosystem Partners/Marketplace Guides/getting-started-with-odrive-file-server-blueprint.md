@@ -11,6 +11,8 @@
 ### Partner Profile
 odrive combines all storage in one place for easy access, sharing and data protection. For instance, if you use Dropbox at home and Box at work, odrive lets you combine both into one folder with one login. odrive currently supports Dropbox, Box, Google Drive, Gmail, Amazon Cloud Drive, Microsoft OneDrive, Facebook, Instagram, FTP, SFTP, and WebDAV.
 
+Check out this [odrive video](https://vimeo.com/117538897) to learn more.
+
 [http://www.odrive.com](http://www.odrive.com)
 
 #### Contact odrive   
@@ -32,7 +34,7 @@ With the odrive file server (OFS), you can add a user and provision storage in s
 ### Offer 
 odrive is offering SFTP linking and the odrive File Server as part of a no charge program for Linux and Windows servers within CenturyLink’s Cloud. Through this unique offer, users will have access to SFTP linking and the odrive File Server services at no additional cost.  Please check with CenturyLink for any access charges that may apply to using its Cloud.  Please contact ODrive directly for offer and pricing details.
 
-All use of odrive software, documentation and services is governed by odrive’s Software License and Support Agreement or End User License Agreement (EULA) that can be reviewed at: https://www.odrive.com/terms/
+All use of odrive software, documentation and services is governed by odrive’s Software License and Support Agreement or End User License Agreement (EULA) that can be reviewed at: [https://www.odrive.com/terms/](https://www.odrive.com/terms/)
 
 ### Audience
 CenturyLink Cloud Users, Developers, IT Engineers, IT Administrators, File Sharing application users
@@ -109,22 +111,22 @@ After reading this article, the user should feel comfortable getting started usi
 
 ### Access odrive File Server
 After your Blueprint deploys successfully, please follow these instructions to access your odrive file server solution:
+
   1. Check email to obtain odrive File Server information and click on the link to load the server in Control Portal
+
   2. If you want to connect your odrive file server from the internet, Click the "Add Public IP" button and open Firewall ports 4433 and 4434
 
       ![odrive Image](../../images/ecosystem-odrive-0a.png)
 
-4. Connect to the following URL to begin using your ODrive File Server:  *https://<YOUR_OFS_SERVER_IP>:4433/*    Note: Chrome users will need to ignore the "Your connection is not private" warning from an Invalid SSL certificate  and Proceed to the website.
+  3. Connect to the following URL to begin using your ODrive File Server:  *https://<YOUR_OFS_SERVER_IP>:4433/*    Note: Chrome users will need to ignore the "Your connection is not private" warning from an Invalid SSL certificate  and Proceed to the website.
 
-  5. Accept the odrive terms of usage
+  4. Accept the odrive terms of usage
 
-      ![odrive Image](../../images/ecosystem-odrive-7.png)
-
-  6. Create a password for the admin user
+  5. Create a password for the admin user
 
       ![odrive Image](../../images/ecosystem-odrive-8.png)
 
-  7. Setup is complete!  To manage or admin the odrive file server, connect via VPN and then point your web browser to the private IP URL:  http://<YOUR_OFS_SERVER_IP>:4434/
+  6. Setup is complete!  To manage or admin the odrive file server, connect via VPN and then point your web browser to the private IP URL:  http://<YOUR_OFS_SERVER_IP>:4434/
 
       ![odrive Image](../../images/ecosystem-odrive-9.png)
 
@@ -160,4 +162,5 @@ odrive is free. Sign up at: [http://odrive.com](http://odrive.com)
 
 #### Who should I contact for support? 
 * For issues related to deploying the odrive Blueprint on CenturyLink Cloud or linking via SFTP, Licensing, Accessing or using the deployed software, please visit the odrive Support Forum: [https://www.odrive.com/forum/](https://www.odrive.com/forum/)
+
 * For issues related to cloud infrastructure (VM’s, network, etc), or is you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new) 

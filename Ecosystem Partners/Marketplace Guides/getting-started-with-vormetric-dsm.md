@@ -8,7 +8,7 @@
 
 ![logo](http://www.vormetric.com/sites/default/files/newsletter-images/vormetric-top-main-logo-2014-0109.jpg)
 
-###Partner Profile
+### Partner Profile
 Vormetric provides enterprise encryption and key management services that enable corporations to protect their data.  Vormetric addresses industry compliance mandates and government regulations globally by securing data in physical, virtual and cloud infrastructures, through Data Encryption, Key Management, Access Policies, Privileged User Control, and Security Intelligence.
 
 For more information, visit [http://www.Vormetric.com](http://www.Vormetric.com)
