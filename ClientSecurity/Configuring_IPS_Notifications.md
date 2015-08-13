@@ -32,32 +32,30 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 
 1. Search for **Configure Notifications** in the Blueprint library. Then, click on the desired Operating System blueprint to configure Notifications. 
 
-  ![Control Portal.png](https://ucarecdn.com/ed5616b2-5aec-4a96-8c81-b6084adf627a/) 
+  ![Control Portal](../images/notificationupdate_controlportal.png) 
 
-  ![CLC IPS - Configure.png](https://ucarecdn.com/87d87b6e-b3fc-461d-a271-3c678b231811/)
+  ![Notification Update RHEL](../images/notificationupdate_rhel_blueprintname.png) ![Notification Update Windows](notificationupdate_windows_blueprintname.png)
 
 2. Click on the **deploy blueprint** button.
 
-  ![CLC IPS Configure Notifications RHEL.png](https://ucarecdn.com/c160e297-276b-4d8d-b97a-40db3179b46a/)
+  ![Configure Notifications RHEL.png](../images/notificationupdate_rhel_configure.png)
 
 3. Select the appropriate Virtual Machine to execute on.
 
   * Enter and confirm User Password
   * Provide WebHook URL (See Utilizing SLACK for IPS Event Notifications)
-  * Input desired email address to receive notifications
   * Click **next: step 2.**
  
-  **Note:** Email functionality not available for Beta. The email will be stored and will start receiving       notifications in production or once the functionality is activated.
 <br>
-![Deploy CLC IPS - Configure Notifications - RHEL Blueprint.png](https://ucarecdn.com/1565b927-cd1b-4e80-9881-68be555585d4/)
+![Configure Notifications RHEL Fields](../images/notificationupdate_rhel_blueprintfields.png)
 
 4. Review the blueprint parameters and select **deploy blueprint**.
 <br>
-![deploy blueprint.png](https://ucarecdn.com/8fad25cb-28fd-42fd-bf22-8344a71bcc53/)
+![Deploy Blueprint](../images/notificationupdate_rhel_deploy.png)
 <br>
 5. The Blueprint log will show each step taken and its status during provisioning.
 <br>
-![deploy blueprint CLC IPS - Configure Notifications.png](https://ucarecdn.com/ff47460f-26ce-416d-b891-55878a4663c6/)
+![Blueprint Log](https://ucarecdn.com/ff47460f-26ce-416d-b891-55878a4663c6/)
 <br>
 6. An email notification will be sent to the initiator of the Blueprint for both queuing and completion.
 
