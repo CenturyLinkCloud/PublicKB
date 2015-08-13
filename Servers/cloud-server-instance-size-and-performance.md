@@ -36,10 +36,10 @@ Feature|Performance
 Virtual Machine vNIC        | up to 10 Gbps<sup>1</sup>
 Firewall (between VLANs)  	| up to 6 Gbps
 Firewall (external) 		  	| up to 2 Gbps
-Load Balancer						   	| 100 Mbps to 400 Mbps (based on unit size purchased)<p>SSL Offload: up to 750 new SSL requests/second
-VPN (client)							  | up to 20 Mbps<p>19 max concurrent connections (higher volumes available)
+Load Balancer						   	| 100 Mbps to 400 Mbps (based on unit size purchased)<br>SSL Offload: up to 750 new SSL requests/second
+VPN (client)							  | up to 20 Mbps<br>19 max concurrent connections (higher volumes available)
 VPN (IPSEC)                 | up to 1 Gbps
-Standard VM-based Storage   | 5ms latency<p>Minimum IOPS (2500), Maximum IOPS (20,000) with 4KB block size
+Standard VM-based Storage   | 5ms latency<br>Minimum IOPS (2500), Maximum IOPS (20,000) with 4KB block size
 Hyperscale VM-based Storage | Minimum of 15,000 IOPS
 
 <sup>1</sup>All Virtual Servers using our OS Templates are deployed with 10 Gbps vNICs
