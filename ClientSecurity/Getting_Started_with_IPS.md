@@ -7,7 +7,7 @@
 }}}
 
 # Getting Started with Intrusion Prevention System (IPS)
-_____________________________________________________________________________________________
+
 ## Overview
 The Platform CenturyLink IPS utilizes an Agent installed on your Virtual Machine (VM) that monitors the VM for suspicious activity. If suspicious activity is found, the Agent logs the activity, which it may block or stop, and reports the incident based on the IPS policy. There is a default policy associated with each VM that is automatically tuned based on the host operating system and installed applications.
 
