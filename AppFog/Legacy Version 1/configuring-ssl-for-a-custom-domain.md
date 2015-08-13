@@ -55,7 +55,8 @@ $ openssl rsa -in server.key.org -out server.key</pre>
 <p>On the "Upload Certificate Data" screen, click on the "Upload Your Certificate" button and navigate to your certificate file (<code>server.crt</code> if you followed the instructions above). AppFog will validate the certificate and display the certificate details.</p>
 <p>Next, click on the "Upload Your Private Key" button and navigate to your (decrypted) private key (<code>server.key</code> if you followed the instructions above). Similar to the certificate, AppFog will verify the key.</p>
 <p>Click "Upload Your Optional Intermediate Certificate" and select the intermediate certificate from your CA. Again, AppFog will display information about the intermediate certificate.</p>
-<p>You now have an SSL terminator that should look something like:</p>
+<p>Click "Continue". The console will hang with the message "Sending" and you can navigate from the page. Our current v1 platform procedure requires contacting support@appfog.com to complete the process.</p>
+<p>Once a support ticket is opened and your endpoint will be provsioned and will look something like:</p>
 <pre>af-ssl-term-0-000000000.us-east-1.elb.amazonaws.com</pre>
 <h4>Change your DNS</h4>
 <p>Now head over to your DNS host and update your app's CNAME alias to point at the SSL terminator you just created. That's it! Once your new DNS settings propagate, SSL will be enabled for your app.</p>
