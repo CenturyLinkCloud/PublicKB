@@ -1,3 +1,12 @@
+{{{
+  "title": "Configuring Intrustion Prevention System (IPS) Notifications",
+  "date": "08-11-2015",
+  "author": "Stephanie Wong",
+  "attachments": [],
+  "related-products" : [],
+  "contentIsHTML": false,
+  "sticky": false
+}}}
 # Configuring Intrusion Prevention System (IPS) Notifications
 
 ## Overview
@@ -7,34 +16,39 @@ The Platform CenturyLink IPS utilizes an Agent installed on your Virtual Machine
 The Blueprint allows a customer that has purchased the IPS service from Platform CenturyLink to modify how they would like to be notified regarding IPS security events. This Blueprint will only change notification settings for the server it is run against.
 
 ## Prerequisites
-•	A CenturyLink Cloud Account
-•	Managed or Unmanaged Operating System Services on the Virtual Machine, with the IPS Agent installed
-•	Slack channel & WebHook URL (See Utilizing SLACK for IPS Event Notifications)
+
+* A CenturyLink Cloud Account
+* Managed or Unmanaged Operating System Services on the Virtual Machine, with the IPS Agent installed
+* Slack channel & WebHook URL (See Utilizing SLACK for IPS Event Notifications)
 
 ## Supported Managed Operating Systems
-•	Red Hat Enterprise Linux 5 (64-bit only)
-•	Red Hat Enterprise Linux 6 (64-bit only)
-•	Microsoft Windows Server 2008 (64-bit only)
-•	Microsoft Windows Server 2012 (64-bit only)
+
+* Red Hat Enterprise Linux 5 (64-bit only)
+* Red Hat Enterprise Linux 6 (64-bit only)
+* Microsoft Windows Server 2008 (64-bit only)
+* Microsoft Windows Server 2012 (64-bit only)
 
 ## Installation Process
 
-1. Search for **Configure Notifications** in the Blueprint library. Then, click on the desired Operating System blueprint to configure Notifications.
+1. Search for **Configure Notifications** in the Blueprint library. Then, click on the desired Operating System blueprint to configure Notifications. 
 
-![Control Portal.png](https://ucarecdn.com/ed5616b2-5aec-4a96-8c81-b6084adf627a/)
-![CLC IPS - Configure.png](https://ucarecdn.com/87d87b6e-b3fc-461d-a271-3c678b231811/)
+  ![Control Portal.png](https://ucarecdn.com/ed5616b2-5aec-4a96-8c81-b6084adf627a/) 
+
+  ![CLC IPS - Configure.png](https://ucarecdn.com/87d87b6e-b3fc-461d-a271-3c678b231811/)
+
 2. Click on the **deploy blueprint** button.
 
-![CLC IPS Configure Notifications RHEL.png](https://ucarecdn.com/c160e297-276b-4d8d-b97a-40db3179b46a/)
-3. Select the appropriate Virtual Machine to execute on. 
-a. Enter and confirm User Password
-b. Provide WebHook URL (See Utilizing SLACK for IPS Event Notifications) 
-c. Input desired email address to receive notifications
-d. Click **next: step 2.**
+  ![CLC IPS Configure Notifications RHEL.png](https://ucarecdn.com/c160e297-276b-4d8d-b97a-40db3179b46a/)
 
-**Note:** Email functionality not available for Beta. The email will be stored and will start receiving notifications in production or once the functionality is activated.
+3. Select the appropriate Virtual Machine to execute on.
 
-![Deploy CLC IPS - Configure Notifications - RHEL Blueprint.png](https://ucarecdn.com/1565b927-cd1b-4e80-9881-68be555585d4/)
+  a. Enter and confirm User Password
+  b. Provide WebHook URL (See Utilizing SLACK for IPS Event Notifications) 
+  c. Input desired email address to receive notifications
+
+  **Note:** Email functionality not available for Beta. The email will be stored and will start receiving notifications in production or once the functionality is activated. ![Deploy CLC IPS - Configure Notifications - RHEL Blueprint.png](https://ucarecdn.com/1565b927-cd1b-4e80-9881-68be555585d4/)
+  4. Click **next: step 2.**
+
 4. Review the blueprint parameters and select **deploy blueprint**.
 
 ![deploy blueprint.png](https://ucarecdn.com/8fad25cb-28fd-42fd-bf22-8344a71bcc53/)
