@@ -55,7 +55,7 @@ This Blueprint is for the actual installation and activation of the IPS service 
 
 **Q:** How do I configure the notifications settings to send alerts to?
 
-**A:** Follow the process at on the Notifications KB.
+**A:** Follow the process on the Notifications KB.
 
 **Q:** Will you be adding support for additional Operating Systems?
 
