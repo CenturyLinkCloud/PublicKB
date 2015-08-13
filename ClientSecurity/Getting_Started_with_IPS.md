@@ -26,7 +26,6 @@ This Blueprint is for the actual installation and activation of the IPS service 
 ## Installation Process
 
 1. Search for **IPS** in the Blueprint Library. Then, click **CLC IPS Install for RHEL 64-bit**.
-
 ![CLC IPS Install for RHEL 64-bit.png](https://ucarecdn.com/328edab1-6325-4229-a146-bd1789ab38a7/)
 ![CLC IPS Install for RHEL 64-bit 2.png](https://ucarecdn.com/0b8bfd90-cad3-4b19-a576-faf7c800ce0b/)
 
