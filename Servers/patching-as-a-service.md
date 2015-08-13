@@ -71,11 +71,9 @@ For any method you choose, the following table will assist you with data needed 
 
 **Operating Systems** | **Blueprint Name** | **Script Package Name** | **Package ID**
  --- | --- | --- | ---
-<<<<<<< HEAD
- Windows 2012 and 2012R2 | Auto Patching Windows 2012 | Auto Patching Windows 2012 | 94bd395f-9b54-4693-94ae-4f3aa93fc239
-=======
- Windows 2012 and 2012R2 | Windows Update Scripts | Windows Update Scripts | 94bd395f-9b54-4693-94ae-4f3aa93fc239
->>>>>>> 4817eb59752647ca87c0be2a83cef557fa059705
+
+ Windows 2012 and 2012R2 | Auto Patching Windows 2012 | Auto Patching Windows 2012 | b229535c-a313-4a31-baf8-6aa71ff4b9ed
+ 
  Red Hat Enterprise Linux 5, 6, and 7 OR CentOS 5 and 6 | Auto Patching RHEL or CentOS | Auto Patching RHEL/CentOS | 5d743f04-a9ce-4174-a7c8-52df93c47c08
 
 
