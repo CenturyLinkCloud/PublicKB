@@ -42,19 +42,23 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 
 3. Select the appropriate Virtual Machine to execute on.
 
-  a. Enter and confirm User Password
-  b. Provide WebHook URL (See Utilizing SLACK for IPS Event Notifications) 
-  c. Input desired email address to receive notifications
-
-  **Note:** Email functionality not available for Beta. The email will be stored and will start receiving notifications in production or once the functionality is activated. ![Deploy CLC IPS - Configure Notifications - RHEL Blueprint.png](https://ucarecdn.com/1565b927-cd1b-4e80-9881-68be555585d4/)
-  4. Click **next: step 2.**
+  * Enter and confirm User Password
+  * Provide WebHook URL (See Utilizing SLACK for IPS Event Notifications)
+  * Input desired email address to receive notifications
+  * Click **next: step 2.**
+ 
+  **Note:** Email functionality not available for Beta. The email will be stored and will start receiving       notifications in production or once the functionality is activated.
+<br>
+![Deploy CLC IPS - Configure Notifications - RHEL Blueprint.png](https://ucarecdn.com/1565b927-cd1b-4e80-9881-68be555585d4/)
 
 4. Review the blueprint parameters and select **deploy blueprint**.
-
+<br>
 ![deploy blueprint.png](https://ucarecdn.com/8fad25cb-28fd-42fd-bf22-8344a71bcc53/)
+<br>
 5. The Blueprint log will show each step taken and its status during provisioning.
-
+<br>
 ![deploy blueprint CLC IPS - Configure Notifications.png](https://ucarecdn.com/ff47460f-26ce-416d-b891-55878a4663c6/)
+<br>
 6. An email notification will be sent to the initiator of the Blueprint for both queuing and completion.
 
 ## Frequently Asked Questions
