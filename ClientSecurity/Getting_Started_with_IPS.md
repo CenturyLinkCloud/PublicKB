@@ -25,7 +25,7 @@ This Blueprint is for the actual installation and activation of the IPS service 
 
 ## Installation Process
 
-1. Search for **IPS** in the Blueprint Library. Then, click **CLC IPS Install for RHEL 64-bit**.
+1. Search for **Intrustion Prevention** in the Blueprint Library. Then, click **Intrusion Prevention Install RHEL**.
 <br>
 ![Control Portal](../images/gettingIPS_controlportal.png)
 <br>
