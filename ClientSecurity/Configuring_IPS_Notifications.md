@@ -30,7 +30,7 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 
 ## Installation Process
 
-1. Search for **Configure Notifications** in the Blueprint library. Then, click on the desired Operating System blueprint to configure Notifications. 
+1. Search for **IPS Notification** in the Blueprint library. Then, click on the desired Operating System blueprint to configure Notifications. 
 
   ![Control Portal](../images/notificationupdate_controlportal.png) 
 
@@ -43,7 +43,7 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 3. Select the appropriate Virtual Machine to execute on.
 
   * Enter and confirm User Password
-  * Provide WebHook URL (See Utilizing SLACK for IPS Event Notifications)
+  * Provide WebHook URL (See "Utilizing SLACK for IPS Event Notifications")
   * Click **next: step 2.**
 <br>
 ![Configure Notifications RHEL Fields](../images/notificationupdate_rhel_blueprintfields.png)
