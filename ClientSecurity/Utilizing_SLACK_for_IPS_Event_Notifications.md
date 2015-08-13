@@ -32,27 +32,31 @@ Utilize the link below to set up a specific Slack channel to receive IPS Event N
 
 Setting up a WebHook will allow the IPS Event Notifications to be posted directly into your chosen Slack channel.
 
-1). Once your IPS Event Notifications Slack channel has been designated, you will need to click on the channel name drop-down and select “**Add a service Integration…**”
-
+1. Once your IPS Event Notifications Slack channel has been designated, you will need to click on the channel name drop-down and select “**Add a service Integration…**”
+<br>
 ![Add a Service Integration](../images/slackforIPS_serviceintegration.png)
+<br>
 
-2).	Scroll to the bottom of the Integrations page and select "**Incoming WebHooks**”.
-
+2. Scroll to the bottom of the Integrations page and select "**Incoming WebHooks**”.
+<br>
 ![Select Incoming Webhooks](../images/slackforIPS_incomingwebhooks.png)
+<br>
 
-3).	Now select the desired Slack Channel from the drop-down and click “**Add Incoming WebHooks Integration**”.
-
+3. Now select the desired Slack Channel from the drop-down and click “**Add Incoming WebHooks Integration**”.
+<br>
 ![Add Incoming Webhooks Integration](../images/slackforIPS_addwebhooks.png)
+<br>
 
-4).	The system will generate a **Webhook URL**. Please copy and store this in a secure location. You will need this URL when setting up the Event Notifications.
- 
-(See *Next Steps*: **Configuring CLC IPS Notifications**)
-
+4. The system will generate a **Webhook URL**. Please copy and store this in a secure location. You will need this URL when setting up the Event Notifications.
+  (See *Next Steps*: **Configuring CLC IPS Notifications**)
+<br>
 ![Webhook URL](../images/slackforIPS_webhookURL.png)
+<br>
 
-5).	Once completed, scroll down to the bottom of the page and select “**Save Settings**”.
-
+5. Once completed, scroll down to the bottom of the page and select “**Save Settings**”.
+<br>
 ![Save Settings](../images/slackforIPS_savesettings.png)
+<br>
 
 ## Next Steps
 
