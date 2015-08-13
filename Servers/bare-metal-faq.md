@@ -101,7 +101,7 @@ No, the storage configurations provisioned for Bare Metal servers are all either
 
 **Can I bring my own OS image?**
 
-No, the available Operating Systems include Windows 2012 R2, RHEL6 and CentOS. In the future there will be additional Linux and Windows variations available. If there is a particular OS image you would like to see incorporated please [submit a feature request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/).
+No, the available Operating Systems include Windows 2012 R2, RHEL6, CentOS 6, and Ubuntu 14. If there is a particular OS image you would like to see incorporated please [submit a feature request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/).
 
 **Can I use my own licensing for the OS?**
 
