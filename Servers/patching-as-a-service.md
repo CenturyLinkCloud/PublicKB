@@ -71,7 +71,9 @@ For any method you choose, the following table will assist you with data needed 
 
 **Operating Systems** | **Blueprint Name** | **Script Package Name** | **Package ID**
  --- | --- | --- | ---
- Windows 2012 and 2012R2 | Windows Update Scripts | Windows Update Scripts | 94bd395f-9b54-4693-94ae-4f3aa93fc239
+
+ Windows 2012 and 2012R2 | Auto Patching Windows 2012 | Auto Patching Windows 2012 | b229535c-a313-4a31-baf8-6aa71ff4b9ed
+ 
  Red Hat Enterprise Linux 5, 6, and 7 OR CentOS 5 and 6 | Auto Patching RHEL or CentOS | Auto Patching RHEL/CentOS | 5d743f04-a9ce-4174-a7c8-52df93c47c08
 
 
@@ -89,7 +91,7 @@ The process initiated by the script package may include several, automated reboo
 
 Locate and select the appropriate Blueprint within the Blueprint Library. See the table above for the name of the Blueprint.
 
-![Windows Update Scripts Blueprint Image](../images/Patching/PatchaaS_WindowsUpdateHoverProd.png)
+![Auto Patching Windows 2012 Blueprint Image](../images/Patching/PatchaaS_WindowsUpdateHoverProd.png)
 
 ![Auto Patching RHEL or CentOS Blueprint Image](../images/Patching/PatchaaS_YumUpdateBP.png)
 
