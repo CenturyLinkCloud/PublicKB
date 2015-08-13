@@ -1,5 +1,5 @@
 {{{
-  "title": "# Utilizing SLACK for IPS Event Notifications",
+  "title": "Utilizing SLACK for IPS Event Notifications",
   "date": "08-11-2015",
   "author": "Stephanie Wong",
   "attachments": [],
