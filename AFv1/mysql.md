@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>AppFog provides a MySQL service that's accessible to apps that are running on any of the supported runtimes and frameworks. It's also accessed using the <code>af tunnel</code> command.</p>
 <p>It is limited it its total in size based on your chosen subscription plan. When the limit is reached, writes to the database should start failing.</p>
 <table>

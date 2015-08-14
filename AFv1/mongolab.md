@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <h3>Install MongoLab</h3>
 <p>In the "Add-ons" tab in your app console click "Install" for the MongoLab add-on. That's it!</p>
 <h3>Connect to the Database</h3>

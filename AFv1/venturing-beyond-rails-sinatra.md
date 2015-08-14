@@ -6,6 +6,12 @@
   "contentIsHTML": false
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 **Starting Rails**
 
 So far, it’s been a pretty uneven go. Multiple times a day I’ve experienced (a) “a-ha!” moments in which something has become clear to me in a flash and after which I could no longer imagine not knowing what I came to know, and (b) moments in which I’ve felt like the whole enterprise of learning programming is simply beyond my ken.

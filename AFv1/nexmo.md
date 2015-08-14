@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p><a href="http://nexmo.com/">Nexmo</a> is a cloud-based SMS API that lets you send and receive high volume of messages at wholesale rates.</p>
 <p>With Nexmo you can:</p>
 <ul>

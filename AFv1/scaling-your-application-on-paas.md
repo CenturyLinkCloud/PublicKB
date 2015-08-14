@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 
 
 <p><strong>Overview</strong><br /> One of the key tenets of Cloud Computing is scalability. Whether discussing SaaS, PaaS, or IaaS, the Cloud allows applications to easily grow with user demand. While scaling in each type of Cloud has different considerations, in this post, we aim to focus primarily on PaaS. We'll be covering different types of scaling approaches, when to choose which, and how to test your scaling strategy. Let's jump right in.</p>

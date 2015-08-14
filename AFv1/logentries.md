@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p><a href="https://logentries.com/">Logentries</a> provides Log Management and System Intelligence as a Service. Logentries is a simple and powerful solution for log management. It provides an easy to use interface so that you can quickly understand what is happening in your log data and ultimately your applications. Setup one of the client libraries below in a matter of minutes and start sending logs to Logentries from your AppFog application.</p>
 <h3>Install Logentries</h3>
 <p>In the "Add-ons" tab on your app console click "Install" for the Logentries add-on. Then add the appropriate library below and you're done!</p>

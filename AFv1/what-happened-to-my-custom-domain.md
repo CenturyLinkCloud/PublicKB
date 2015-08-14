@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <ul>
 <li><a href="#whathappened">What Happened to My Custom Domain?</a></li>
 <li><a href="#whystill">Why Do Some Free Accounts Still Have Custom Domains and Some Do Not?</a></li>

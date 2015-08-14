@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <h2>Important Reminder</h2>
 <p>AppFog does not yet have a persistent data storage system, which is frequently updated by the native WordPress admin console when applying themes, uploading images, or adding modules. Any changes stored on the file system during runtime by WordPress will be lost on an app start, stop, or deploy. To ensure your WordPress website changes are persisted between (re)starts, the recommended best practice is to save file updates in a database or block storage solution.</p>
 <p>This means you should do any development that makes changes to the file system in a local development environment and then push those changes to AppFog using an <code>af update</code>. You can find a solutions tutorial about it in our <a href="wordpress.md">WordPress article</a>.</p>

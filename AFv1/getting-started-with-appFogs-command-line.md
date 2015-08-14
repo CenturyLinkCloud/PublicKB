@@ -6,6 +6,12 @@
   "contentIsHTML": false
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 [AppFog](http://www.ctl.io/appfog) provides a cloud-based hosting service for your favorite web application stack. You can get servers setup and ready for your code in under a minute using our command line tools or our web console–the choice is yours. Today, we’re going to walk through deploying a WordPress app using af, the command line interface to AppFog.
 
 To get started, you’re going to need a beta account and af. If we haven’t already let you into our private beta, add your email to our list at [appfog](http://www.ctl.io) and we’ll add you in no time!

@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>You can interact with your provisioned services interactively by using the <code>af tunnel</code> command. This deploys an app to your account called Caldecott, which is a <code>TCP</code> proxy over <code>HTTPS</code>. Caldecott creates a tunnel that connects a port on your local computer to the service in AppFog. The <code>af tunnel</code> command uploads the Caldecott app to your AppFog instance, sets up the tunneling, and offers to start a standard client on your computer to work with the service. This can be useful for managing your services as well as for debugging.</p>
 <ul>
 <li><a href="#prereqs">Prerequisites</a></li>

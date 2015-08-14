@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p><em> <strong>UPDATE</strong>: Finally! The new <code>af</code> gem no longer requires your system Ruby version to be between 1.8.7 and 1.9.3, and you no longer need to install the <code>caldecott</code> gem! This article has been updated to reflect this. </em></p>
 <hr />
 <p>This article describes how to install the CLI tool in Linux. There are also instructions for installing it using <a href="#bundler">Bundler</a> or <a href="#rvm">RVM</a>, if you'd prefer.</p>

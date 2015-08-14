@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <h3>Billing Cycle</h3>
 <p>Your billing cycle begins when you start your subscription. If you start your subscription on the fifth of the month, then your account will automatically renew on the fifth of each subsequent month at the same time of day.</p>
 <h3>Pricing Structure</h3>

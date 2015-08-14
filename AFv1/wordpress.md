@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>WordPress is the most-used content management systems on the internet today, accounting for an unbelievable 22.0% of the top 10 million websites, and on a total of over 60 million websites as of August 2013. Although when it was initially developed in 2003 to be a blogging platform, its ease of use, ability to add third-party plugins, and scalability has made it popular for nearly every use under the sun in the succeeding years.</p>
 <p>We at AppFog recognize the appeal of WordPress. The advantages of cloud computing and PaaS are numerous. However, due to the non-persistent filesystem, the ephemeral nature of uploaded media assets and files can be frustrating, especially in the case of having a WordPress hosted with AppFog. One can upload an image, a theme update, or a new plugin then that asset can be gone five minutes later.</p>
 <p>Rest assured, there are ways to run a working, up-to-date, and highly active WordPress install on AppFog! It involves these three steps.</p>

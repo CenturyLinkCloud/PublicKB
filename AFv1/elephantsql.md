@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p><a href="http://www.elephantsql.com">ElephantSQL</a> is a hosted <a href="http://www.postgresql.org">PostgreSQL</a> service. PostgreSQL is an advanced, fast, reliable and open source SQL server. ElephantSQL hosts PostgreSQL servers in EC2, close to where you're app is run, for lowest possible latency. Backup and disaster recovery is automatically enabled.</p>
 <h3>Install ElephantSQL</h3>
 <p>In the "Add-ons" tab in your app console click "Install" for the ElephantSQL add-on.</p>

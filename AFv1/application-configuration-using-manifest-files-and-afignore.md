@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>When creating an application on AppFog you may need to save settings that will be applied when it is deployed. The main configuration files that are applicable are the application manifest and .afignore.</p>
 <p><a href="#app_manifest">Application Manifest</a><br /> <a href="#create_manifest">Creating a Manifest</a><br /> <a href="#child_manifest">Child Manifests</a><br /> <a href="#symbol_res">Symbol Resolution</a><br /> <a href="#multi_manifest">Multi-App Manifests</a><br /> <a href="#zip_files">ZIP Files</a></p>
 <h3 id="app_manifest">Application Manifest</h3>

@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 
 <p>While you cannot use a custom php.ini there are some other things you can try.</p>
 <p>Using set_time_limit function will allow you to extend the execution time limit.</p>

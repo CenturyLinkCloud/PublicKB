@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 
 <p>In Platform-as-a-Service environments, developers have the choice of multiple database options: SQL vs. "<a href="http://en.wikipedia.org/wiki/NoSQL">NoSQL</a>," in-house vs. third party, and multi-tenant vs. single-tenant, often referred to as dedicated. In this post, we'll explore the differences between multi-tenant databases and dedicated databases, focusing on the pros and cons of each and attempting to address when each one is the right choice dependent on workload.</p>
 <p><strong>Multi-tenant databases</strong><br /> Multi-tenant databases are those in which multiple different user accounts share the same database resources and processing space. Almost every PaaS vendor has a multi-tenant DB option bundled with their service. Multi-tenant databases are a fine choice for general app testing (outside of performance tuning and capacity analsysis) and for very small applications with low database I/O needs.  Often included with the price of a PaaS, or very affordable, multi-tenant DBs solve the simple needs of simple and sometimes even more sophisticated applications.</p>

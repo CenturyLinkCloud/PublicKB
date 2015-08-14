@@ -6,6 +6,12 @@
   "contentIsHTML": false
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 You guys know me. You know that I talk a lot of things up in this space. I can’t help it. I’m a generally excitable person. But one thing I have never said is that I’m completely blown away by something. Well, now is that time. I am completely blown away by Ender.
 
 ###What problem does Ender solve?

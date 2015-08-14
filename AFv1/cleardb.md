@@ -6,6 +6,12 @@
   "contentIsHTML": false
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <h4>Intro</h4>
 <p><a href="https://www.cleardb.com">ClearDB</a> is a hosted <a href="http://www.mysql.com/">MySQL</a> service that allows you to create as large of a database as necessary for your application while having peace of mind that your data is safe, and fault tolerant.</p>
 <h4>Why use ClearDB</h4>

@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>AppFog currently only offers one app server for Sinatra apps: Thin. If you're using Bundler, and nothing in your app's bundle requires Thin, VCAP cannot safely start your app using it.</p>
 <p>To use AppFog services with Sinatra, you have to access the <code>VCAP_SERVICES</code> environment variable.</p>
 <p>AppFog autodetects your Sinatra app by searching for <code>require 'sinatra'</code> in the <code>*.rb</code> files. It then chooses that file as the main Sinatra app file.</p>

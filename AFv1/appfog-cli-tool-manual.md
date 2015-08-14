@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <h3>AF Tool</h3>
 <p>The <em>af</em> gem is based on CloudFoundry's <em>vmc</em> gem but includes features specific to AppFog and has the default target set to AppFog's service. Check out the <a href="https://github.com/appfog/af">GitHub repo</a>.</p>
 <ul>

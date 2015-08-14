@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 
 <p>An app stopping by itself generally indicates that it has crashed. When your app crashes, AppFog automatically attempts to re-spawn it, but only a limited number of times. If it continues to crash repeatedly, it will remain stopped. You can check your crashes with <code>af crashes</code>:</p>
 <pre><code>$ af crashes &lt;appname&gt;

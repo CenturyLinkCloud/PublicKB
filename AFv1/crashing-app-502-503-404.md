@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 
 <p>If your app is at less than 100% "Running" status or you're seeing the AppFog error page, it means one or more instances of your app have crashed. You can check this status with the following command:</p>
 <pre><code>$ af crashes &lt;appname&gt;

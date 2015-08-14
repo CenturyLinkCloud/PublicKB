@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p><a href="http://www.cloudamqp.com">CloudAMQP</a> is a hosted <a href="http://www.rabbitmq.com">RabbitMQ</a> service. RabbitMQ is a fast, reliable and standard compliant message queue server. CloudAMQP hosts RabbitMQ clusters, with high availability in EC2, close to where you're app is run, for lowest possible latency and message throughput.</p>
 <h3>Install CloudAMQP</h3>
 <p>In the "Add-ons" tab in your app console click "Install" for the CloudAMQP add-on.</p>

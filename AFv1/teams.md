@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>The Teams feature allows paid account owners to create Teams and give Team Members permission to manage applications on behalf of the Team Leader using the Command-line Tool.</p>
 <p><strong>NOTE: Team Members do not have acess to the Team Leader's account using the Web Console, but they can execute commands to manage apps and services in the Team Leader's account using the '<code>af</code>' command-line tool.</strong></p>
 <h3>Requirements:</h3>

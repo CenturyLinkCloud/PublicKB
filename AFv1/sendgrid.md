@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p><a href="https://sendgrid.com">SendGrid's</a> cloud-based email infrastructure relieves businesses of the cost and complexity of maintaining custom email systems. SendGrid provides reliable delivery, scalability and real-time analytics along with flexible APIs that make custom integration a breeze.</p>
 <h3>Install SendGrid</h3>
 <p>In the "Add-ons" tab on your app console click "Install" for the SendGrid add-on. That's it!</p>

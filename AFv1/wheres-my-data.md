@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>AppFog changed the resource thresholds for free plans on February 19, 2014: <a href="http://blog.appfog.com/changes-to-appfog-free-plans/">Please read more about that here</a>. As part of that change, free plan users now have a limit of two service bindings for their apps. The previous limit for service bindings was eight. If you are on a free plan and previously had more than two service bindings, please read the following to help you recover your data.</p>
 <h3>Recovering Data</h3>
 <p>In order to recover data from a service binding, you'll need to use the <code>af</code> command line tool to create a tunnel. Keep in mind, though, each tunnel you create consumes one of your two available service bindings and one of your two application slots. This means you can only access two services at any one time, whether through a tunnel or one of your running applications.</p>

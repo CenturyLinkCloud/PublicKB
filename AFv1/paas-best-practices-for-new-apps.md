@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 
 <p><strong>Overview<br /> </strong>Harnessing the power of the Cloud, specifically via a Platform-as-a-Service offering, can liberate developers from the painful overhead of infrastructure and hardware management. The added ease and reduced complexity of a PaaS solution does not come without a cost, however. Developers must ensure applications are "Cloud-ready" in their design. In this post, we explore some of the basic concepts behind building Cloud-ready apps and the best practices in doing so.</p>
 <p><strong>Best Practice #1: Design applications assuming your infrastructure will fail</strong><br /> One of the primary characteristics of Cloud application development is the inherent "pessimism" surrounding the design approach. Cloud developers architect apps counting on parts of their infrastructure, and even the application itself failing, and failing somewhat frequently. Hardware failures, power outages, networking issues, natural disasters, and an over-taxed app from heavy traffic, are all ways an application can fail. So while its human instinct to embrace positivity in most cases in life, best practices here deem us to think about and prepare for the worse.  As such, the applications Cloud developers create should be fault-tolerant and intelligently know how to re-generate themselves on fresh infrastructure. They should pick up where they left off when things break or go awry. These characteristics are often referred to as self-replicating and auto-healing technologies.</p>

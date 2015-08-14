@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p><a href="http://www.memcachier.com/">MemCachier</a> is an implementation of the <a href="http://memcached.org/">Memcache</a> in-memory key/value store used for caching data. It is a key technology in modern web apps for scaling and reducing server loads. The MemCachier add-on manages and scales clusters of memcache servers so you can focus on your app. Tell us how much memory you need and get started for free instantly. Add capacity later as you need it.</p>
 <p>The information below will quickly get you up and running with the MemCachier add-on for AppFog. For information on the benefits of MemCachier and how it works, please refer to the more extensive <a href="http://www.memcachier.com/documentation/memcache-user-guide/">User Guide</a>.</p>
 <h4>Install MemCachier</h4>

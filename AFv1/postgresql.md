@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>AppFog provides a PosgreSQL service that's accessible to apps that are running on any of the supported runtimes and frameworks.</p>
 <ul>
 <li><a href="#vcap">VCAP_SERVICES</a></li>

@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>AppFog allows you to execute scheduled tasks using a "background worker" (also referred to as a "standalone" or container-less application) in almost any language that AppFog supports.</p>
 <p>You may want to set one up to auto-scale your app depending on it's load, or dump logs at a certain time of day.</p>
 <p>This is an easy way to create a cron job that runs at a specific time each day and performs essential tasks.</p>

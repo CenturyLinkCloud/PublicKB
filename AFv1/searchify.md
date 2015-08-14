@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p><a href="http://www.searchify.com">Searchify</a> is an add-on that provides hosted full-text search.</p>
 <p>Searchify allows developers to easily add search to their applications, without having to deal with Solr or Lucene, and without the hassle of configuring and hosting your own search infrastructure. Searchify is fast. Most search queries will be answered in under 100 milliseconds. Searchify offers true real-time search, so documents added are immediately searchable. Searchify is a drop-in replacement for existing IndexTank users.</p>
 <p>Searchify has client libraries for <a href="http://www.searchify.com/documentation/php-client">PHP</a>, <a href="http://www.searchify.com/documentation/ruby-client">Ruby</a>, <a href="http://www.searchify.com/documentation/python-client">Python</a>, <a href="http://www.searchify.com/documentation/java-client">Java</a>, and others, all of which communicate with Searchify's <a href="http://www.searchify.com/documentation/api">REST API</a>.</p>

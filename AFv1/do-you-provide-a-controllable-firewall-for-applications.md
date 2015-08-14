@@ -6,5 +6,11 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>No.</p>
 <p>The firewall rules are controlled platform-wide. We do not provide a configurable firewall for our customers. There is no FTP or SSH access.</p>

@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>As stated before, non-persistent storage for uploadable media assets and files, which are desirable and often required of a solution like WordPress, can slow down your site-building efforts. Sure, you can upload updated versions of your WordPress app from your local machine and have the media stay permanently, but what if you're creating new content everyday? What if you just need to upload a new image or two? You may find that the aforementioned time consuming and ultimately counterintuitive method goes against the quick n' simple process of uploading images to the admin back-end.</p>
 <p>Luckily, there is a solution to this problem. AppFog customers can upload images to WordPress almost seamlessly the way the popular blog software has intended by making a once-time install process of one of two different plugins. One is by installing the Jetpack plugin and using its Photon module, and the other is by using the Cloudinary plugin. I have outlined the step-by-step install process for both of these below.</p>
 <hr />

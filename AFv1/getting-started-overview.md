@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>Here are all thing things you need to get up and running to experiment and develop content on the AppFog PaaS.</p>
 <h4>Sign Up for an Account</h4>
 <p>Before you get started, you will need to sign up for an account and select a Plan. Start by going to the <a href="https://console.appfog.com/signup">sign-up page</a> and filling out the requested information as completely as possible. Before you can start uploading any apps, you'll need to verify your account, a welcome email is sent to you with a verification link. Once signed in you can select a plan. You can find more information in our <a href="billing-process-overview.md">Billing</a> article.</p>

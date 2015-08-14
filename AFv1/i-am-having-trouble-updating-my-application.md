@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 
 <p>When using <code>af update</code> AppFog compares the existing app with the content you're uploading and makes the changes. When the app is large or has a large number of files users may experience 500 errors as the comparison takes too long. </p>
 <h3>Using --trace</h3>

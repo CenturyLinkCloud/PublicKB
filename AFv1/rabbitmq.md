@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p><a href="http://www.rabbitmq.com/">RabbitMQ</a> is a message broker that provides robust messaging services for your apps. With AppFog's RabbitMQ service, you get 10 MB of RAM and 6 concurrent connections per instance.</p>
 <ul>
 <li><a href="#rabbitmq-vcap">VCAP_SERVICES Environment Variable</a></li>

@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <h2 id="debugging">Custom Error Pages</h2>
 <p>The Custom Error Page feature enables an application or service to return a user-defined error page that matches the look and feel of your application, web site or service when a system-level error occurs.</p>
 <p>There are two types of errors that can be returned to service requests:</p>

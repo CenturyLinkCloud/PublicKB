@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>This tutorial based on the steps to install the AF CLI Tool on Windows 7 and 8. Be sure to install the proper 32 or 64 bit version of Ruby and the DevKit.</p>
 <ul>
 <ul>

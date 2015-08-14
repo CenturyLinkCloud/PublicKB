@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <ol>
 <li>
 <p>Send us the email address you want to associate with the “Destination” account. We will create a New account on the same plan type as your “Original” account.</p>

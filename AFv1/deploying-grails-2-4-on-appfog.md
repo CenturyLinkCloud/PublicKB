@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 
 <p>It involves some minor hacking around in order to use Grails 2.4 on AppFog, because the platform has Tomcat 6 running as default for our users. However, we recently added the ability to use Tomcat 7 and Servlet 3 together!</p>
 <p>You'll need to perform the following steps to get it up and running.</p>

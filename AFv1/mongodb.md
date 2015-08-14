@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>Connection Pool Memory Allocation (10MB maximum for MongoDB, Redis, and RabbitMQ Service Instances) Concurrent Connections (20 maximum for MongoDB, Redis and RabbitMQ) Total Database Storage (based on maximum available service instances) Storage per Database (maximum for MySQL or PostgreSQL service instances) Service Instances (maximum)</p>
 <table>
 <tbody>

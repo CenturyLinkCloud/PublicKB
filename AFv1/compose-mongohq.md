@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <h3>Install Compose</h3>
 <p>In the "Add-ons" tab in your app console click "Install" for the Compose add-on. That's it!</p>
 <p>Installing the Compose add-on automatically sets an environment variable for your app called <code>MONGOHQ_URL</code>. You can access this in your code with <code>getenv(["MONGOHQ_URL")</code>. This variable includes the full URI including the hostname, database path, username and password. It looks like this:</p>

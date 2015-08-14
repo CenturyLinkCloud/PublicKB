@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p><em>Note: If you see any errors on this page, please let us know at support@appfog.com</em></p>
 <p><a href="#manipulation">Existing Resources - Manipulating Them and Gathering Data</a> <br /> <a href="#creation">Creating New Resources</a></p>
 <ul>

@@ -6,5 +6,11 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>Q: I am new to PaaS web software development. How should I create my app? Where should I start? </p>
 <p>A: Check out <a href="http://12factor.net/">http://12factor.net/</a> It helps to explain the methodology of using PaaS and connecting mutiple services together to create a cloud web application. Using AppFog as a base and other services to beef up your app, we are confident that you can turn your idea into a realization.</p>

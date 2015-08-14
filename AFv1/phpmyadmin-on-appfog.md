@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p><a href="http://www.phpmyadmin.net/home_page/index.php">phpMyAdmin</a> is a free and popular software tool written in PHP that provides a web interface for administration of MySQL databases.</p>
 <p>AppFog's phpMyAdmin jumpstart is slightly modified to work better in AppFog's environment. Check out the GitHub repository <a href="https://github.com/appfog/af-php-myadmin">here</a>.</p>
 <h2>Install phpMyAdmin</h2>

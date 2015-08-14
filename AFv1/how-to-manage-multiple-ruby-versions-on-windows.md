@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>Windows users can install Uru to manage multiple versions of Ruby. The repository and more detailed instructions can be found here: <a href="https://bitbucket.org/jonforums/uru">https://bitbucket.org/jonforums/uru</a></p>
 <ol>
 <li>Windows 8.1 was used when creating this tutorial and uses the Chocolatey package manager which can be found at: <a href="https://chocolatey.org">https://chocolatey.org/</a></li>

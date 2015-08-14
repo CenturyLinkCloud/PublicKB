@@ -6,4 +6,10 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>For additional outbound bandwidth exceeding the plan allocation, the cost is $0.03 per GB. All inbound bandwidth is included at no extra charge.</p>

@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <h3>Install Mailgun</h3>
 <p>In the "Add-ons" tab in your app console click "Install" for the Mailgun add-on. That's it!</p>
 <h3 id="pricing-mailgun">Pricing</h3>

@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p><strong>Overview</strong><br /> Setting up a redundant, High Availability Platform-as-a-Service environment for your Cloud application can be a fairly straightforward proposition when you have the right plan in place. Let's review what you should consider when maximum uptime for your PaaS applications is paramount for your business.</p>
 <p><strong>A Common Misconception</strong><br /> Many folks assume that the Cloud, especially in Platform-as-a-Service form, solves all of their redundancy and scalability problems out of the box, without any user-intervention needed. This isn't the case and I'm here to break the bad news that no Cloud solution does this. So, where does your PaaS provider help you in your path towards HA and where do you need to step in to fill in the gaps?</p>
 <p>PaaS providers generally have their core infrastructure set up in a high-availability manner. Load-balancers, git-servers, storage servers, etc. are all designed with fail-over and redundancy in mind. PaaS service consoles and support systems also almost always created to stay online when things go wrong. This, however, leaves a few critical things out of the equation. A few questions to ask yourself might be: Is the application server(s) you are hosting on redundant by default? What about your database? Is it set up for auto-failover and replication? What if your PaaS provider has a total meltdown in their DC? Will your app still be alive?</p>

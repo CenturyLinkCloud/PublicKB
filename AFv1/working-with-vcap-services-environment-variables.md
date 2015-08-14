@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>When you provision and bind a service to your app, AppFog creates an environment variable called <code>VCAP_SERVICES</code>.</p>
 <p>This variable contains a JSON document with a list of all credentials and connection information for the bound services.</p>
 <p>Here's an example that of the environment variable for an app that has two MySQL database services bound to it:</p>

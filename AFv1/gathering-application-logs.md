@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 
 <p>Have you attempted to use <code>af logs #APPNAME</code> or <code>af restart #APPNAME --trace</code>?</p>
 <p>You can also use <code>af help logs</code> and <code>af help start</code> to get information on the syntax.</p>

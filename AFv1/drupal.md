@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>AppFog does not yet have a persistent data storage system, though we're working on it. This means that the file system is volatile and any data that needs to be persistent should be included in the code base (by making all changes in a local development environment) or offloaded to a database or an external storage system like Amazon's S3. You can find a tutorial on just how to do that <a href="http://blog.appfog.com/how-to-use-amazon-s3-for-persistent-file-storage-on-appfog/">here</a>.</p>
 <h2>Services</h2>
 <p>You can connect your PHP app to AppFog services by using the <code>VCAP_SERVICES</code> environment variable, which becomes available to your app when you bind a service to it. You can access the variable in PHP like this:</p>

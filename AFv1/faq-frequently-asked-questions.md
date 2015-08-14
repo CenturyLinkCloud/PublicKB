@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p><span class="wysiwyg-font-size-large">FAQ - Frequently Asked Questions</span></p>
 <ul>
 <li><a href="what-s-the-difference-between-php-fog-and-appfog.md">What's the difference between PHP Fog and AppFog?</a></li>

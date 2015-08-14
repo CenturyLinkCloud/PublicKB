@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <h4>Question:</h4>
 <p>I have signed up for a plan, but I've decided to discontinue my service. How can I cancel my subscription?</p>
 <h4>Solution:</h4>

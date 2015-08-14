@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <ul>
 <li><a href="#node-supported-versions">Supported Versions</a></li>
 <li><a href="#node-deployment">Deployment</a></li>

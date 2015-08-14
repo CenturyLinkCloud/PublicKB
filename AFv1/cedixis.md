@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <h3>Introduction to Cedexis</h3>
 <p>Improve application availability and performance using Cedexis Openmix data-driven global load balancing. For enterprises that join the Cedexis Radar community, the free Radar data feed (real time measurement of cloud availability and latency, as seen by 100s of millions of real end users each day) can be a primary source of cloud performance metrics.</p>
 <p>The Openmix service allows highly flexible load-balancing decisions to be made dynamically, based on a wide variety of real-time data-feeds (this could be data you provide). Configuration scripts can support such obvious methodologies as sending the user to the fastest provider, or as subtle and sophisticated as factoring in any thing you can collect or think of (Time of day, cost, contractual commitments, weighting servers, capacity, BTU power usage, Electricity cost etc.)</p>

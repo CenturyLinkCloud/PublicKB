@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 
 <p><strong>Overview:</strong><br /> A common misconception in the Cloud world is that the Cloud is only good for green field apps -- apps which are new and not shackled by the constraints of legacy design. While starting fresh oftentimes *can* be easier, it doesn't have to be the only option when considering migrating to the Cloud. Many brown-field apps, those which were created in a pre-Cloud era, often can and should be ported to the Cloud. In the following post, we aim to discuss some of the important theories and concepts for moving legacy apps to the Cloud.</p>
 <p>Most cloud apps are developed with elastic scaling, statelessness, and automation in mind. Let's look at how each of these characteristics are important when considering your app migration plan.</p>

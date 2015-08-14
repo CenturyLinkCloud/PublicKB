@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p><a href="http://redislabs.com/memcached-cloud">Memcached Cloud</a> is a fully-managed service that operates your Memcached in a reliable and fail-safe manner. Your dataset is constantly replicated, so if a node fails, an automatic failover mechanism guarantees that your data is served without interruption. Memcached Cloud provides various data persistence options as well as remote backups for disaster recovery purposes. You can quickly and easily get your apps up and running with Memcached Cloud through its add-on for AppFog, just tell us how much memory you need and start using your Memcached bucket instantly.</p>
 <p>A Memcached bucket is created in seconds and from that moment on, all operations are fully automated. The service completely frees developers from dealing with nodes, clusters, server lists, scaling and failure recovery, while guaranteeing absolutely no data loss.</p>
 <h2>Getting Started</h2>

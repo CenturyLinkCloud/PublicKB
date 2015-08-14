@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p><a href="http://www.statsmix.com/">StatsMix</a> makes it easy to track, chart, and share application and business metrics.</p>
 <p>Use StatsMix to:</p>
 <ul>

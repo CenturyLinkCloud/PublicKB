@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>Some users have been receiving an SSL certificate error when attempting to install the AF CLI tool. Please note that this error has nothing to do with us, but it rather has to do with an SSL certificate issue with <a href="af-cli-installation-issues.md">RubyGems</a>. They are aware of it and are working on a resolution.</p>
 <h4>Here are a few suggestions for how to work around it.</h4>
 <ol>

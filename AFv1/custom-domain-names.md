@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>AppFog allows you to associate a custom domain name with your application, so that when a user types <code>www.myamazingwebapp.com</code> into their browser's address bar, your web application is loaded.</p>
 <p>To do this, follow the steps below:</p>
 <ul>

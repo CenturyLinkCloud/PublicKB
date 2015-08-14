@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <ul>
 <li><a href="#rails30">Rails 3.0</a></li>
 <li><a href="#rails31">Rails 3.1</a></li>

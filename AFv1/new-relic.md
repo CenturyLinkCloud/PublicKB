@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>If you have seen the New Relic website, it says we they are partnered with AppFog. That is no longer the case.</p>
 <ul>
 <li><a href="http://newrelic.com/appfog">New Relic AppFog Page</a></li>

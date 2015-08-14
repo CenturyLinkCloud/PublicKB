@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <h1>The History of PaaS</h1>
 <p>By: Andrei Matei</p>
 <p><strong>The History of PaaS<br /> </strong>While Cloud Computing is now a well-entrenched term in the IT space, several of its components, specifically PaaS, or Platform-as-a-Service, have gained a significant amount of traction in just the last few years.<br /> <strong><br /> The Early Years<br /> </strong>Interestingly enough, one of the earliest forms of PaaS emerged all the way back in 2005, even before the launch of <a href="http://aws.amazon.com">Amazon Web Services</a>'s now cornerstone Infrastructure as a Service Offering, EC2, <a href="http://university.appfog.com/images/mosso.png">Mosso</a>, a product way ahead of its time, began as a side-project in one of the back corners of the <a href="http://www.rackspace.com">Rackspace</a> offices by two developers who understood that customers wanted scalability and one-click deployments without the limitations of shared hosting. More on the history of Mosso and the Rackspace Cloud here: <a href="http://www.rackspace.com/cloud/aboutus/story">http://www.rackspace.com/cloud/aboutus/story</a>.</p>

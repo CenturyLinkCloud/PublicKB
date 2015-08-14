@@ -6,6 +6,12 @@
   "contentIsHTML": false
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 JavaScript occasionally gets a bad rap as a programming language, but its usefulness if not indispensability for web developers of all stripes is difficult to deny. Yet another case in point: [raphael.js](http://raphaeljs.com/). This is a tool that lets you not only paint with JavaScript, but also to make interactive objects like [this](http://raphaeljs.com/curver.html).
 
 Now, [raphael.js](http://raphaeljs.com/) seems like something that many of us could live without. But it also strikes me as perfect if you’re working on a project that needs just a tiny bit of extra aesthetic pizzazz beyond what’s available in CSS, jQuery,et al. Even better, it’s an absolute breeze if you feel even remotely comfortable in JavaScript. To give one very basic example: you can use just one instance of JavaScript’s “for” function (typically used for iteration) to produce 30 circles with circumferences varying according to an equation (for example, making concentric circles separated by 5 pixels). The following code will get you 30 such circles emanating out from the center of a 500×500 pixel canvas:

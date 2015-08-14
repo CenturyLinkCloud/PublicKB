@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 
 <p>PaaS or Platform-as-a-Service is one of the three central types of Cloud Computing models, and sits neatly in-between IaaS (Infrastructure-as-a-Service) and SaaS (Software-as-a-Service). PaaS offerings allow businesses to take advantage of the scalability, agility, cost, and performance benefits of the cloud but without the management and administration overhead of infrastructure or OS-level configuration.</p>
 <p><strong>Common Characteristics of a PaaS</strong><br /> PaaS services generally have a core group of functionality and characteristics which differentiates them from other types of Cloud options. A few of these characteristics are:</p>

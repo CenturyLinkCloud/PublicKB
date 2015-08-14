@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>This lines out some details to how the <code>push</code>, <code>pull</code>, and <code>update</code> commands should work.</p>
 <h4>PUSH</h4>
 <h4><code>af push {app}</code></h4>

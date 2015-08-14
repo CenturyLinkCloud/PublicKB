@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>Below is a list of our runtimes and jumpstarts. You can look up the current versions by using the <code>af runtimes</code> command with the <a href="appfog-cli-tool-manual.md">AF CLI tool</a> and by looking at our <a href="https://console.appfog.com/apps/new">jumpstarts</a>.</p>
 <center>
 <h4>RUNTIMES</h4>

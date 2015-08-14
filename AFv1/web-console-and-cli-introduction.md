@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <h3 id="startonweb">How to Get Started Using the Web Console</h3>
 <p>If you haven’t already, <a href="http://console.appfog.com/signup">create an account</a>.</p>
 <h4>1. Go to your <a href="https://console.appfog.com/login">Web Console</a>.</h4>

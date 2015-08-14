@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>This occurs when an app is within an infrastructure that is currently blacklisted by Facebook.</p>
 <h4>Why did Facebook block certain IP’s?</h4>
 <ul>

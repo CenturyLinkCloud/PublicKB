@@ -6,6 +6,12 @@
   "contentIsHTML": true
 }}}
 
+### IMPORTANT
+
+This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal.
+
+### Documentation
+
 <p>The following is a step-by-step guide to writing and deploying a "hello world" Python Flask app:</p>
 <h3>Create the App</h3>
 <p>Create a directory for the app and change into it:</p>
