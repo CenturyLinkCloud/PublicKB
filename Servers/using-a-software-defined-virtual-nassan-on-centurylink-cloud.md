@@ -29,11 +29,11 @@ In this sample deployment no security services were put in place around access t
 
 ### Example A: Configuration of the SoftNAS Virtual Appliance using Virtual Disks
 
-1. Once your SoftNAS virtual appliance is provisioned to the appropriate account via Service Task, login to Control, navigate to the Virtual Appliance, choose edit storage. **Provision the appropriate number of RAW disks you wish to pool together into a larger storage pool.** In this sample we've chosen to add 4 x 1 TB RAW Disks. NOTE: Understanding the [platform maximums](../Servers/cloud-server-instance-size-and-performance.md) by VM type is important. We recommend you import your Virtual Appliance as a **Standard VM** type if you wish to use up to the 4 TB Maximum.
+1. Once your SoftNAS virtual appliance is provisioned to the appropriate account via Service Task, login to Control, navigate to the Virtual Appliance, choose edit storage. **Provision the appropriate number of disks you wish to pool together into a larger storage pool.** In this sample we've chosen to add 4 x 1 TB Disks. NOTE: Understanding the [platform maximums](../Servers/cloud-server-instance-size-and-performance.md) by VM type is important. We recommend you import your Virtual Appliance as a **Standard VM** type if you wish to use up to the 4 TB Maximum.
 
-    ![add raw disks](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-01.png)
+    ![add disks](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-01.png)
 
-2. Once the RAW disks are added, login to the SoftNAS StorageCenter, select disk devices. The RAW disks added via Control should be present. Quick Tip: use the refresh button if disks don't show up immediately.
+2. Once the disks are added, login to the SoftNAS StorageCenter, select disk devices. The disks added via Control should be present. Quick Tip: use the refresh button if disks don't show up immediately.
 
     ![StorageCenter disk devices](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-02.png)
 
@@ -41,7 +41,7 @@ In this sample deployment no security services were put in place around access t
 
     ![create partitions](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-03.png)
 
-4. In the SoftNAS StorageCenter navigate to Storage Pools and select the create icon. Provide a friendly Pool name and choose an appropriate level of RAID you wish to use on this group of RAW disks. In this example, we leveraged RAID0/striping, as all RAW storage disks provisioned in CenturyLink Cloud already have data protection capabilities in the infrastructure. Select create.
+4. In the SoftNAS StorageCenter navigate to Storage Pools and select the create icon. Provide a friendly Pool name and choose an appropriate level of RAID you wish to use on this group of disks. In this example, we leveraged RAID0/striping, as all storage disks provisioned in CenturyLink Cloud already have data protection capabilities in the infrastructure. Select create.
 
     ![create new storage pool](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-04.png)
 
