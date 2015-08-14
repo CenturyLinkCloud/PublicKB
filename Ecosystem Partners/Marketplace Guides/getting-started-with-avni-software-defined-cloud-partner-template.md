@@ -16,7 +16,7 @@ For more information, visit [http://www.avni.io](http://www.avni.io)
 #### Contact AVNI
 ##### Avni Sales and Support:
 - Email Support - [contact@avni.io](mailto:contact@avni.io)
-- Telephone Support - (650-224-2637
+- Telephone Support - (650) 224-2637
 - Web Support - [http://www.avni.io](http://www.avni.io)
 - Sales and Marketing - [contact@avni.io](mailto:contact@avni.io) or call (240) 375-9380
 
@@ -82,7 +82,6 @@ Please create a ticket to import the Ecosystem Partner Template image  reference
 - Data Center to import image to: ###
 - Server Name to import image as: ACAPP
 - VLAN in the account to add the Server to: ########
-- Additional Notes or work to be done: None
 
 Please let me know if you have any questions or issues. Kindly send me a reply once the work has been completed and let us know the IP address of the server where this technology has been deployed.
 
