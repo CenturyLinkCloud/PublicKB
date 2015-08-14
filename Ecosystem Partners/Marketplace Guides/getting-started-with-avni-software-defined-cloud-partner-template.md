@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-![logo](http://www.avni.io/media/photologue/photos/cache/Avni-Logo-Tagline-final-20150408_G7m1fR2_730.png)
+![logo](../../images/ecosystem-avni-software-defined-cloud-partner-template-logo.png)
 
 ### Partner Profile
 Avni – pioneer of Software Defined Cloud which simplifies production deployment of applications and network services in virtual clouds.
