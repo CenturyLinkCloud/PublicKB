@@ -1,6 +1,6 @@
 {{{
   "title": "Load Balancing Comparison Matrix",
-  "date": "4-24-2015",
+  "date": "8-18-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -19,9 +19,9 @@ Control Self-Service|Yes|No
 Availability|Highly Available Pair|Single Instance or Highly Available pair options available<sup>1</sup>
 Load Balancing VIP Ports|TCP/80 & TCP/443|Any
 Load Balancing Algorithms|Round Robin<p>Least Connection|[Citrix Complete Listing](http://support.citrix.com/proddocs/topic/netscaler-load-balancing-93/ns-lb-customizing-lbalgorithms-wrapper-con.html)
-Costing Model|per VIP (NLB Group)|Per Device: VPX-200 or VPX-1000 available in both Standard or Enterprise Edition<sup>2</sup>
+Costing Model|per VIP (NLB Group)|Per Device: VPX-200 or VPX-1000 available in Standard, Enterprise or Platinum Edition<sup>2</sup>
 Responsibility for Support and Management|CenturyLink Cloud|Customer via CLI or Web based UI
-Performance|HTTP throughput: up to 400 Mbps<p>**Performance is shared among all clients**|HTTP throughput: Up to 400 Mbps<p>SSL encrypted throughput: Up to 400 Mbps<p>HTTP compression throughput: Up to 350 Mbps<p>SSL VPN/ICA Proxy Concurrent Users: Up to 1500<p>New SSL requests/second: Up to 750
+Performance|HTTP throughput: up to 400 Mbps<br>**Performance is shared among all clients**|HTTP throughput: Up to 400 Mbps<br>SSL encrypted throughput: Up to 400 Mbps<br>HTTP compression throughput: Up to 350 Mbps<br>SSL VPN/ICA Proxy Concurrent Users: Up to 1500<br>New SSL requests/second: Up to 750
 SSL Offloading|No|Yes, Customer Configured
 Health Checks|Yes, TCP and PING|Yes, Customer Configured
 
