@@ -34,7 +34,7 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 
   ![Control Portal](../images/notificationupdate_controlportal.png) 
 
-  ![Notification Update RHEL](../images/notificationupdate_rhel_blueprintname.png) ![Notification Update Windows](notificationupdate_windows_blueprintname.png)
+  ![Notification Update RHEL](../images/notificationupdate_rhel_blueprintname.png) ![Notification Update Windows](../images/notificationupdate_windows_blueprintname.png)
 
 2. Click on the **deploy blueprint** button.
 
