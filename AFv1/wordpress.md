@@ -3,7 +3,7 @@
   "date": "1-25-2015",
   "author": "Chris Sterling",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 ### IMPORTANT
