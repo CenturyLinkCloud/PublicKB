@@ -30,13 +30,13 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 
 ## Installation Process
 
-1. Search for **IPS Notification** in the Blueprint library. Then, click on the desired Operating System blueprint to configure Notifications. 
+1. Search for **IPS Notification** in the Blueprint library. Then, click on the desired Operating System blueprint to configure Notifications.   
 
   ![Control Portal](../images/notificationupdate_controlportal.png) 
 
   ![Notification Update RHEL](../images/notificationupdate_rhel_blueprintname.png) ![Notification Update Windows](../images/notificationupdate_windows_blueprintname.png)
 
-2. Click on the **deploy blueprint** button.
+2. Click on the **deploy blueprint** button.   
 
   ![Configure Notifications RHEL](../images/notificationupdate_rhel_configure.png)
 
@@ -44,18 +44,18 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 
   * Enter and confirm User Password
   * Provide WebHook URL (See "Utilizing SLACK for IPS Event Notifications")
-  * Click **next: step 2.**
-<br>
-![Configure Notifications RHEL Fields](../images/notificationupdate_rhel_blueprintfields.png)
-<br>
-4. Review the blueprint parameters and select **deploy blueprint**.
-<br>
-![Deploy Blueprint](../images/notificationupdate_rhel_deploy.png)
-<br>
-5. The Blueprint log will show each step taken and its status during provisioning.
-<br>
-![Blueprint Status Log](../images/notificationupdate_rhel_logstatus.png)
-<br>
+  * Click **next: step 2.**   
+
+  ![Configure Notifications RHEL Fields](../images/notificationupdate_rhel_blueprintfields.png)
+
+4. Review the blueprint parameters and select **deploy blueprint**.   
+
+  ![Deploy Blueprint](../images/notificationupdate_rhel_deploy.png)
+
+5. The Blueprint log will show each step taken and its status during provisioning.   
+
+  ![Blueprint Status Log](../images/notificationupdate_rhel_logstatus.png)
+
 6. An email notification will be sent to the initiator of the Blueprint for both queuing and completion.
 
 ## Frequently Asked Questions
