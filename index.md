@@ -16,6 +16,7 @@
     "Object Storage",
     "Partners",
     "Release Notes",
+    "Security",
     "Service Tasks",
     "Servers",
     "WordPress"
