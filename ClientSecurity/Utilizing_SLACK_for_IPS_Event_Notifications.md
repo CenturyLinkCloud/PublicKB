@@ -32,31 +32,26 @@ Utilize the link below to set up a specific Slack channel to receive IPS Event N
 
 Setting up a WebHook will allow the IPS Event Notifications to be posted directly into your chosen Slack channel.
 
-1. Once your IPS Event Notifications Slack channel has been designated, you will need to click on the channel name drop-down and select **Add a service Integration…**.
-<br>
-![Add a Service Integration](../images/slackforIPS_serviceintegration.png)
-<br>
+1. Once your IPS Event Notifications Slack channel has been designated, you will need to click on the channel name drop-down and select **Add a service Integration…**.  
 
-2. Scroll to the bottom of the Integrations page and select **Incoming WebHooks**.
-<br>
-![Select Incoming Webhooks](../images/slackforIPS_incomingwebhooks.png)
-<br>
+  ![Add a Service Integration](../images/slackforIPS_serviceintegration.png)
 
-3. Now select the desired Slack Channel from the drop-down and click **Add Incoming WebHooks Integration**.
-<br>
-![Add Incoming Webhooks Integration](../images/slackforIPS_addwebhooks.png)
-<br>
+2. Scroll to the bottom of the Integrations page and select **Incoming WebHooks**.  
+
+  ![Select Incoming Webhooks](../images/slackforIPS_incomingwebhooks.png)
+
+3. Now select the desired Slack Channel from the drop-down and click **Add Incoming WebHooks Integration**.  
+
+  ![Add Incoming Webhooks Integration](../images/slackforIPS_addwebhooks.png)
 
 4. The system will generate a **Webhook URL**. Please copy and store this in a secure location. You will need this URL when setting up the Event Notifications.
-  (See *Next Steps*: **Configuring CLC IPS Notifications**)
-<br>
-![Webhook URL](../images/slackforIPS_webhookURL.png)
-<br>
+  (See *Next Steps*: **Configuring CLC IPS Notifications**)  
 
-5. Once completed, scroll down to the bottom of the page and select **Save Settings**.
-<br>
-![Save Settings](../images/slackforIPS_savesettings.png)
-<br>
+  ![Webhook URL](../images/slackforIPS_webhookURL.png)
+
+5. Once completed, scroll down to the bottom of the page and select **Save Settings**.  
+
+  ![Save Settings](../images/slackforIPS_savesettings.png)
 
 ## Next Steps
 
@@ -70,9 +65,9 @@ The below link provides an overview of WebHook options with Slack.
 
 ## Example Slack Notification
 
-Below is an example Slack Event Notification providing the pertinent details for an event that is triggered on a VM protected by IPS.
+Below is an example Slack Event Notification providing the pertinent details for an event that is triggered on a VM protected by IPS.  
 
-![Example Slack Notification](../images/slackforIPS_examplenotification.png)
+  ![Example Slack Notification](../images/slackforIPS_examplenotification.png)
 
 ## Slack’s Service Terms
 
@@ -81,8 +76,10 @@ Slack offers free and paid versions. Utilize the below link to review Slack’s 
 
 ## Frequently Asked Questions
 
-**Q:** Is Slack the only WebHook I can utilize?<br>
+**Q:** Is Slack the only WebHook I can utilize?
+
 **A:** Slack is currently the only WebHook we’ve tested and integrated with. If you would like to recommend another, please send request details to [features@ctl.io](mailto:features@ctl.io)
 
-**Q:** Do you provide long term storage of events and notifications?<br>
+**Q:** Do you provide long term storage of events and notifications?
+
 **A:** We retain 60 days’ worth of events and notifications. We are investigating additional features, such as an automated database for longer retention times. If you would like to be a beta tester or have interest in a feature for longer retention, please send request details to [features@ctl.io](mailto:features@ctl.io)
