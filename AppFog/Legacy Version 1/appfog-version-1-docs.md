@@ -51,7 +51,6 @@ This document is for users of AppFog v1. This document does not apply to the cur
 * [PostgreSQL](../../AFv1/postgresql.md)
 * [Redis](../../AFv1/redis.md)
 * [RabbitMQ](../../AFv1/rabbitmq.md)
-* [Sinatra](../../AFv1/sinatra.md)
 * [Service/Database Content Management (Tunneling)](../../AFv1/service-database-content-management-tunneling.md)
 * [phpMyAdmin on AppFog](../../AFv1/phpmyadmin-on-appfog.md)
 
