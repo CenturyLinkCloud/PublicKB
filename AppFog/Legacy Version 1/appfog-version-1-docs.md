@@ -96,7 +96,7 @@ This document is for users of AppFog v1. This document does not apply to the cur
 ### AppFog University
 
 * [SaaS vs. PaaS vs. IaaS](../../AFv1/saas-vs-paas-vs-iaas.md)
-* [Multi-tenant vs. Dedicated Databases](../../AFv1/saas-vs-paas-vs-iaas.md)
+* [Multi-tenant vs. Dedicated Databases](../../AFv1/multi-tenant-vs-dedicated-databases.md)
 * [PaaS Best Practices for New Apps](../../AFv1/paas-best-practices-for-new-apps.md)
 * [Scaling Your Application on PaaS](../../AFv1/scaling-your-application-on-paas.md)
 * [Setting up a Redundant Cloud PaaS Environment](../../AFv1/setting-up-a-redundant-cloud-paas-environment.md)
