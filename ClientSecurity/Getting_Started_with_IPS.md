@@ -6,24 +6,22 @@
   "contentIsHTML": false
 }}}
 
-# Getting Started with Intrusion Prevention System (IPS)
-
-## Overview
+### Overview
 The Platform CenturyLink IPS utilizes an Agent installed on your Virtual Machine (VM) that monitors the VM for suspicious activity. If suspicious activity is found, the Agent logs the activity, which it may block or stop, and reports the incident based on the IPS policy. There is a default policy associated with each VM that is automatically tuned based on the host operating system and installed applications.
 
 This Blueprint is for the actual installation and activation of the IPS service on the VM. Other Blueprints will be available for modifications to the installation.
 
-## Prerequisites
+### Prerequisites
 * A CenturyLink Cloud Account
 * Managed or Unmanaged Operating System Services on the Virtual Machine
 
-## Supported Managed Operating Systems
+### Supported Managed Operating Systems
 * Red Hat Enterprise Linux 5 (64-bit only)
 * Red Hat Enterprise Linux 6 (64-bit only)
 * Microsoft Windows Server 2008 (64-bit only)
 * Microsoft Windows Server 2012 (64-bit only)
 
-## Installation Process
+### Installation Process
 
 1. Search for **Intrustion Prevention** in the Blueprint Library. Then, click **Intrusion Prevention Install RHEL**.  
 
@@ -49,7 +47,7 @@ This Blueprint is for the actual installation and activation of the IPS service 
 
 5. An email notification is sent to the initiator of the Blueprint for both queuing and completion.
 
-**Frequently Asked Questions**
+###Frequently Asked Questions
 
 **Q:** Can I make modifications to my existing policy to further customize or tune it?
 
