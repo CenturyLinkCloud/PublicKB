@@ -8,27 +8,25 @@
   "sticky": false
 }}}
 
-# Utilizing SLACK for IPS Event Notifications 
-
-## Overview
+### Overview
 
 Slack is a team collaboration tool that offers persistent chat rooms organized by topic and also has private groups and direct messaging capabilities. Slack is available as long as you want and can be utilized with an unlimited number of people.
 
 Our Intrusion Prevention System (IPS) provides real-time event notifications that can be integrated with Slack messaging. Using the Slack integration for “Incoming WebHooks”, our IPS can be set up to send event details on the rule triggered, source and destination information to a Slack channel so it can be quickly reviewed by your team or archived for review at a later time.
 
-## Signing Up for Slack
+### Signing Up for Slack
 
 Utilize the link below to sign up and get started with Slack!
 
 [https://slack.zendesk.com/hc/en-us/articles/206480347-Getting-started-with-Slack](https://slack.zendesk.com/hc/en-us/articles/206480347-Getting-started-with-Slack)
 
-## Creating a Slack Channel
+### Creating a Slack Channel
 
 Utilize the link below to set up a specific Slack channel to receive IPS Event Notifications.
 
 [https://slack.zendesk.com/hc/en-us/articles/201402297-Creating-a-channel](https://slack.zendesk.com/hc/en-us/articles/201402297-Creating-a-channel)
 
-## Creating Webhook URL
+### Creating Webhook URL
 
 Setting up a WebHook will allow the IPS Event Notifications to be posted directly into your chosen Slack channel.
 
@@ -53,28 +51,28 @@ Setting up a WebHook will allow the IPS Event Notifications to be posted directl
 
   ![Save Settings](../images/slackforIPS_savesettings.png)
 
-## Next Steps
+### Next Steps
 
 See the "Configuring CLC IPS Notifications" KB
 
-## Incoming Webhooks Support
+### Incoming Webhooks Support
 
 The below link provides an overview of WebHook options with Slack.
 
 [https://api.slack.com/incoming-webhooks](https://api.slack.com/incoming-webhooks)
 
-## Example Slack Notification
+### Example Slack Notification
 
 Below is an example Slack Event Notification providing the pertinent details for an event that is triggered on a VM protected by IPS.  
 
   ![Example Slack Notification](../images/slackforIPS_examplenotification.png)
 
-## Slack’s Service Terms
+### Slack’s Service Terms
 
 Slack offers free and paid versions. Utilize the below link to review Slack’s Terms & Conditions.
 [https://slack.com/pricing](https://slack.com/pricing)
 
-## Frequently Asked Questions
+### Frequently Asked Questions
 
 **Q:** Is Slack the only WebHook I can utilize?
 
