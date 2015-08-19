@@ -38,7 +38,7 @@ In the application's package.json, there is an ability to [set the "scripts"](ht
 
 Now when you run `npm start` in the top-level application directory it will run `node app.js`. The Node.js buildpack automatically tries this default defined command when staging your application into AppFog.
 
-An alternative is the send the command that AppFog should execute to start your application [using the command line](http://docs.cloudfoundry.org/devguide/deploy-apps/app-startup.html) or [Cloud Foundry manifests](http://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html) approaches.
+An alternative is to send the command that AppFog should execute to start your application [using the command line](http://docs.cloudfoundry.org/devguide/deploy-apps/app-startup.html) or [Cloud Foundry manifests](http://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html) approaches.
 
 #### Start via Command Line
 

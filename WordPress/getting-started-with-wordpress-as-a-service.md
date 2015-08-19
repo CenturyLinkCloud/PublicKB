@@ -14,7 +14,7 @@ During the Limited Beta there is no production Service Level Agreement.
 
 ## Overview
 
-[WordPress](http://www.wordpress.org "WordPress.org") is a free open-source blogging tool and content management system (CMS) based on PHP and MySQL.
+[WordPress](http://www.wordpress.org) is a free open-source blogging tool and content management system (CMS) based on PHP and MySQL.
 
 CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-based WordPress installation for enterprise level customers.
 
@@ -24,7 +24,7 @@ CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-
 
 ## Configuring a New WordPress Site
 
-1. Browse to the [CenturyLink Cloud WordPress Site Creation Login](https://wordpress.ctl.io "CenturyLink Cloud WordPress Site Creation Login")
+1. Browse to the [CenturyLink Cloud WordPress Site Creation Login](https://wordpress.ctl.io)
 
   ![](../images/wp_getting_started/wp_getting_started_1.png)
 
@@ -54,34 +54,42 @@ CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-
 
 8. This will take you to your WordPress site's repository
 
-      ![](../images/wp_getting_started/wp_getting_started_8.png)
+  ![](../images/wp_getting_started/wp_getting_started_8.png)
 
 ## Frequently Asked Questions
 
 **Q: What are the differences between a standard WordPress install and a CenturyLink Cloud WordPress install?**
 
-A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge base article for known WordPress Limitaions](wordpress-known-limitations.md "knowledge base article for known WordPress Limitaions").
+A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge base article for known WordPress Limitaions](wordpress-known-limitations.md).
 
 **Q: How do I migrate my existing WordPress Site to CenturyLink WordPress as a Service?**
 
-A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge base article for manually migrating a WordPress site to CenturyLink Cloud](wordpress-site-migration-to-centurylink-cloud.md "knowledge base article for manually migrating a WordPress site to CenturyLink Cloud").
+A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge base article for manually migrating a WordPress site to CenturyLink Cloud](wordpress-site-migration-to-centurylink-cloud.md).
 
 **Q: Can I have persistent storage with CenturyLink Cloud WordPress as a Service?**
 
-A: WordPress persistent storage must be [configured  with CenturyLink Cloud Object Storage](/WordPress/wordpress persistent storage configuration.md "How to Configure WordPress Persistent Storage").
+A: WordPress persistent storage must be [configured  with CenturyLink Cloud Object Storage](wordpress-persistent-storage-configuration.md).
 
 **Q: How do I access the MySQL database for my WordPress Site?**
 
-A: You can [access your WordPress database using phpMyAdmin](wordpress-database-access-with-phpmyadmin.md "How to access MySQL with phpMyAdmin").
+A: You can [access your WordPress database using phpMyAdmin](wordpress-database-access-with-phpmyadmin.md).
 
 **Q: How do I install plugins and themes to my WordPress Site?**
 
-A: You can [push plugins and themes to your WordPress site using your git repository](wordpress-plugin-installation.md "How to access MySQL with phpMyAdmin").
+A: You can [push plugins and themes to your WordPress site using your git repository](wordpress-plugin-installation.md).
 
 **Q: How do I send email (such as password resets) with my WordPress Site?**
 
-A: You must [configure SMTP for your WordPress site](wordpress-SMTP-Configuration.md "How to access MySQL with phpMyAdmin") in order to send email.
+A: You must [configure SMTP for your WordPress site](wordpress-SMTP-Configuration.md) in order to send email.
 
 **Q: Can I configure my own domain with CenturyLink Cloud WordPress as a Service?**
 
 A: You can [configure your own domain name](wordpress-custom-domain-configuration.md) via the CenturyLink Cloud Portal.
+
+**Q: How do I update my WordPress site?**
+
+A: You [push your committed changes with git](wordPress-site-updates-with-git.md).
+
+**Q: How do I get a local development environment that's easy to work with?**
+
+A: [vagrant up](wordpress-local-development.md)!

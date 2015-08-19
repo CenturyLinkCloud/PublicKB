@@ -124,7 +124,7 @@ Your_Name_ and_ Contact_Info_Here
 
 -----
 
-If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@centurylinkcloud.com](mailto:features@centurylinkcloud.com)
+If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@ctl.io](mailto:features@ctl.io)
 
 ### Accessing and using your SoftNAS Cloud Gateway
 1. Access your SoftNAS Gateway appliance by connecting to the server via web browser over https, e.g. https://youripaddress/

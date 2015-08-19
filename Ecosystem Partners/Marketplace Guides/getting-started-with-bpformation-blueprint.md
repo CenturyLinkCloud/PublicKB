@@ -18,7 +18,7 @@ bpformation is used to help you gain access to a command line interface CLI that
 
 https://github.com/CenturyLinkCloud/bpformation
 
-<img src="/knowledge-base/images/bpformation/bpformation-animation.gif" style="border:0">
+<img src="../../images/bpformation/bpformation-animation.gif" style="border:0">
 
 
 ### Audience
@@ -30,7 +30,7 @@ CenturyLink Cloud Users
 
 1. **Locate the Blueprint in the Blueprint Library**
 
-  <img src="/knowledge-base/images/bpformation/blueprint_tiles.png" style="border:0;max-width:250px">
+  <img src="../../images/bpformation/blueprint_tiles.png" style="border:0;max-width:250px">
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “bpformation” in the keyword search on the right side of the page.
 
@@ -52,7 +52,7 @@ CenturyLink Cloud publishes a variety of packaged and certified community releas
 These certifications are limited to successful deployment of assets on cloud servers and do not extend onto ongoing software configuration, garauntees,
 or support.
 
-Have a suggestion for other software to include within the CenturyLink Cloud Blueprints Library?  Email ecosystem@CenturyLinkCloud.com.
+Have a suggestion for other software to include within the CenturyLink Cloud Blueprints Library?  Email ecosystem@ctl.io.
 
 
 ### Frequently Asked Questions

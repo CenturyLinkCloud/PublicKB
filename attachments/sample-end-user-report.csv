@@ -1,0 +1,6 @@
+Invoice Date,Period End,Account,Account Alias,Parent Account Alias,Root Parent Alias,Primary Data Center,PO Number,Account Status,Infrastructure Services,Software Licensing,Professional Services,Support,Total Amount (USD),Billing Currency,Billing Exchange Rate,Billing Amount
+7/1/2015,6/30/2015,Partner Demo,PDEM,PART,PART,CA3,,Active,0,0,0,0,0,CAD,1.0265809,0
+7/1/2015,6/30/2015,Customer 1,CST1,PART,PART,CA3,,Active,696.58,0,0,54.06,750.64,CAD,1.0265809,770.59
+7/1/2015,6/30/2015,Customer 2,CST2,PART,PART,CA3,,Active,96.19,0,0,9.62,105.81,CAD,1.0265809,108.62
+7/1/2015,6/30/2015,Customer 3,CST3,PART,PART,CA3,,Demo,0,0,0,0,0,CAD,1.0265809,0
+7/1/2015,6/30/2015,Customer 4,CST4,PART,PART,IL1,,Active,0,0,0,0,0,CAD,1.0265809,0

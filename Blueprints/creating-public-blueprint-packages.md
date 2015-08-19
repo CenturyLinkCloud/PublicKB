@@ -52,7 +52,7 @@
   <li>After creating the package and taking all of the above considerations into account, follow the instructions outlined in the article about <a href="../Blueprints/blueprints-script-and-software-package-management.md"
    >Blueprint Script and Software Package Management&nbsp;</a>to publish the package. For the final step, be sure to select "Public" as the visibility choice.&nbsp;After a package is published with public visibility, it is put into a "pending"
     state and must be approved by a CenturyLink Cloud Administrator before it is available for public use. (Users in the account where it was created will still be able to use it in existing Blueprints while it is in a pending state.)</li>
-  <li>Send an e-mail to <a href="mailto:ecosystem@centurylinkcloud.com">ecosystem@centurylinkcloud.com</a>&nbsp;with the subject of "Package Approval" and be sure to include your account alias, the name of the package in the request, and a brief description
+  <li>Send an e-mail to <a href="mailto:ecosystem@ctl.io">ecosystem@ctl.io</a>&nbsp;with the subject of "Package Approval" and be sure to include your account alias, the name of the package in the request, and a brief description
     of what it is and how to use it (if not clear from the package definition).</li>
   <li>After reviewing and testing the package, if there are no issues found, the package will be approved by a CenturyLink Cloud Administrator. Once approved, it will appear in the public packages library to be used on servers and in Blueprint definitions.</li>
 </ol>
