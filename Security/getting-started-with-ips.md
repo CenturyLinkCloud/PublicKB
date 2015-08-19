@@ -47,20 +47,20 @@ This Blueprint is for the actual installation and activation of the IPS service 
 
 5. An email notification is sent to the initiator of the Blueprint for both queuing and completion.
 
-###Frequently Asked Questions
+### Frequently Asked Questions
 
-**Q:** Can I make modifications to my existing policy to further customize or tune it?
+**Can I make modifications to my existing policy to further customize or tune it?**
 
-**A:** Not at this time, if you'd like to see this feature, please contact features@ctl.io.
+Not at this time, if you'd like to see this feature, please contact [features@ctl.io](mailto:features@ctl.io).
 
-**Q:** What does the IPS Product Provide?
+** What does the IPS Product Provide?**
 
-**A:** Platform CenturyLink’s IPS service helps ensure secure protection against your Virtual Machine (VM) from known intrusion patterns that hackers utilize. It also allows you to spend less time on the maintenance of your system, instead allowing you to focus on the tasks for your core business. We will do the patching and ensure that all agents have up-to-date signatures for possible attacks.
+Platform CenturyLink’s IPS service helps ensure secure protection against your Virtual Machine (VM) from known intrusion patterns that hackers utilize. It also allows you to spend less time on the maintenance of your system, instead allowing you to focus on the tasks for your core business. We will do the patching and ensure that all agents have up-to-date signatures for possible attacks.
 
-**Q:** How do I configure the notifications settings to send alerts to?
+** How do I configure the notifications settings to send alerts to?**
 
-**A:** Follow the process on the Notifications KB.
+Follow the process in the [Configuring IPS Notifications article](configuring-ips-notifications.md).
 
-**Q:** Will you be adding support for additional Operating Systems?
+**Will you be adding support for additional Operating Systems?**
 
-**A:** Yes, we are working on adding additional OSes. If you have a specific OS you would like to see supported, please contact features.ctl.io.
+Yes, we are working on adding additional OSes. If you have a specific OS you would like to see supported, please contact features.ctl.io.

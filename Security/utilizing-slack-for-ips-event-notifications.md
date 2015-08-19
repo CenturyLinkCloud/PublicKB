@@ -74,10 +74,10 @@ Slack offers free and paid versions. Utilize the below link to review Slack’s 
 
 ### Frequently Asked Questions
 
-**Q:** Is Slack the only WebHook I can utilize?
+**Is Slack the only WebHook I can utilize?**
 
-**A:** Slack is currently the only WebHook we’ve tested and integrated with. If you would like to recommend another, please send request details to [features@ctl.io](mailto:features@ctl.io)
+Slack is currently the only WebHook we’ve tested and integrated with. If you would like to recommend another, please send request details to [features@ctl.io](mailto:features@ctl.io)
 
-**Q:** Do you provide long term storage of events and notifications?
+**Do you provide long term storage of events and notifications?**
 
-**A:** We retain 60 days’ worth of events and notifications. We are investigating additional features, such as an automated database for longer retention times. If you would like to be a beta tester or have interest in a feature for longer retention, please send request details to [features@ctl.io](mailto:features@ctl.io)
+We retain 60 days’ worth of events and notifications. We are investigating additional features, such as an automated database for longer retention times. If you would like to be a beta tester or have interest in a feature for longer retention, please send request details to [features@ctl.io](mailto:features@ctl.io)

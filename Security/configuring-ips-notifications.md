@@ -29,13 +29,13 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 
 ### Installation Process
 
-1. Search for **IPS Notification** in the Blueprint library. Then, click on the desired Operating System blueprint to configure Notifications.   
+1. Search for **IPS Notification** in the Blueprint library. Then, click on the desired Operating System blueprint to configure Notifications.
 
-  ![Control Portal](../images/notificationupdate_controlportal.png) 
+  ![Control Portal](../images/notificationupdate_controlportal.png)
 
   ![Notification Update RHEL](../images/notificationupdate_rhel_blueprintname.png) ![Notification Update Windows](../images/notificationupdate_windows_blueprintname.png)
 
-2. Click on the **deploy blueprint** button.   
+2. Click on the **deploy blueprint** button.
 
   ![Configure Notifications RHEL](../images/notificationupdate_rhel_configure.png)
 
@@ -43,15 +43,15 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 
   * Enter and confirm User Password
   * Provide WebHook URL (See "Utilizing SLACK for IPS Event Notifications")
-  * Click **next: step 2.**   
+  * Click **next: step 2.**
 
   ![Configure Notifications RHEL Fields](../images/notificationupdate_rhel_blueprintfields.png)
 
-4. Review the blueprint parameters and select **deploy blueprint**.   
+4. Review the blueprint parameters and select **deploy blueprint**.
 
   ![Deploy Blueprint](../images/notificationupdate_rhel_deploy.png)
 
-5. The Blueprint log will show each step taken and its status during provisioning.   
+5. The Blueprint log will show each step taken and its status during provisioning.
 
   ![Blueprint Status Log](../images/notificationupdate_rhel_logstatus.png)
 
@@ -59,22 +59,22 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 
 ### Frequently Asked Questions
 
-**Q:** What is a WebHook?
+**What is a WebHook?**
 
-**A:** WebHook is an HTTP callback: an HTTP Post that occurs when something happens.
+WebHook is an HTTP callback: an HTTP Post that occurs when something happens.
 
-**Q:** Are there other formats or WebHooks available?
+**Are there other formats or WebHooks available?**
 
-**A:** Not at this time. If you would like to recommend another, please send request details to [features@cti.io](mailto:features@ctl.io).
+Not at this time. If you would like to recommend another, please send request details to [features@cti.io](mailto:features@ctl.io).
 
-**Q:** Do you retain the data after the event notification is sent?
+**Do you retain the data after the event notification is sent?**
 
-**A:** Yes, we retain the data for 60 days.  If you need a longer data retention period, we are working on additional add-on functionality to store this data.  If you are interested, please send request details to [features@ctl.io](mailto:features@ctl.io).
+Yes, we retain the data for 60 days.  If you need a longer data retention period, we are working on additional add-on functionality to store this data.  If you are interested, please send request details to [features@ctl.io](mailto:features@ctl.io).
 
-**Q:** Are you storing the full payload in another location?
+**Are you storing the full payload in another location?**
 
-**A:** Yes, we retain the data in another location for 60 days.
+Yes, we retain the data in another location for 60 days.
 
-**Q:** Do you support a text message or paging service?
+**Do you support a text message or paging service?**
 
-**A:** No, but we are happy to review any request sent to [features@ctl.io](mailto:features@ctl.io).
+No, but we are happy to review any request sent to [features@ctl.io](mailto:features@ctl.io).
