@@ -60,17 +60,22 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 
 ## Frequently Asked Questions
 
-**Q:** What is a WebHook?<br>
+**Q:** What is a WebHook?
+
 **A:** WebHook is an HTTP callback: an HTTP Post that occurs when something happens.
 
-**Q:** Are there other formats or WebHooks available?<br>
+**Q:** Are there other formats or WebHooks available?
+
 **A:** Not at this time. If you would like to recommend another, please send request details to [features@cti.io](mailto:features@ctl.io).
 
-**Q:** Do you retain the data after the event notification is sent?<br>
+**Q:** Do you retain the data after the event notification is sent?
+
 **A:** Yes, we retain the data for 60 days.  If you need a longer data retention period, we are working on additional add-on functionality to store this data.  If you are interested, please send request details to [features@ctl.io](mailto:features@ctl.io).
 
-**Q:** Are you storing the full payload in another location?<br>
+**Q:** Are you storing the full payload in another location?
+
 **A:** Yes, we retain the data in another location for 60 days.
 
-**Q:** Do you support a text message or paging service?<br>
+**Q:** Do you support a text message or paging service?
+
 **A:** No, but we are happy to review any request sent to [features@ctl.io](mailto:features@ctl.io).
