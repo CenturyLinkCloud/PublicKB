@@ -1,3 +1,11 @@
+{{{
+  "title": "Waratek AppSecurity- Blueprint",
+  "date": "08-20-2015",
+  "author": "Waratek - David Egan",
+  "attachments": [],
+  "contentIsHTML": false
+}}}
+
 ### ![](http://cdn.aws.waratek.com/wp-content/themes/waratek/images/logo.png)
 
 ### Technology Profile
