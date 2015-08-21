@@ -13,4 +13,4 @@ This document is for users of AppFog v1. This document does not apply to the cur
 ### Documentation
 
 
-<p>You can find more information under the Domain Names section of your app on the <a href="https://console.appfog.com/apps">Web Console</a> and on our <a href="custom-domain-names.md">Docs</a>. Let us know if you have any issues.</p>
+<p>You can find more information under the Domain Names section of your app on the <a href="https://console.appfog.com/#apps">Web Console</a> and on our <a href="custom-domain-names.md">Docs</a>. Let us know if you have any issues.</p>
