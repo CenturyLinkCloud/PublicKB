@@ -45,7 +45,7 @@ This document is for users of AppFog v1. This document does not apply to the cur
 <h4>Generate a private key</h4>
 <p>You can use the <code><a href="https://www.openssl.org/source/">openssl</a></code> toolkit to generate an RSA private key and a CSR:</p>
 <pre>$ openssl genrsa -des3 -out server.key 2048</pre>
-<p>Note: the strength of your key is up to you (although some Certificate Authorities require a minimum bit depth). This command will create a 2048-bit key. Other values can be used. Refer to the <a href="http://www.openssl.org/docs/HOWTO/keys.txt">OpenSSL documentation</a> for more on this.</p>
+<p>Note: the strength of your key is up to you (although some Certificate Authorities require a minimum bit depth). This command will create a 2048-bit key. Other values can be used. Refer to the <a href="https://www.digicert.com/csr-creation-apache.htm">OpenSSL documentation</a> for more on this.</p>
 <p>You'll have to use a passphrase when you generate the key, but we'll remove it later.</p>
 <h4>Generate a CSR</h4>
 <p>You can now use the private key you just made to generate a CSR:</p>
