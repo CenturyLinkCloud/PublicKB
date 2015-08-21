@@ -15,7 +15,7 @@ Customers looking to operate CIFS, NFS or iSCSI services within the cloud platfo
 * **Pool Storage**-Pool virtual disks and S3 Compatible Object Storage to create large block iSCSI or NAS volumes for virtual or bare metal servers.
 * **High Availability**-Create highly available storage services in any combination of on-premise, CenturyLink Cloud or other leading Cloud vendors.  
 
-In this knowledge base we will be our **ecosystem** [SoftNAS](//www.softnas.com) Virtual Appliance. [SoftNAS](//www.softnas.com) is a software-defined unified NAS/SAN storage solution for businesses that need powerful, frictionless and agile storage.
+In this knowledge base we will be using our **ecosystem** [SoftNAS](//www.softnas.com) Virtual Appliance. [SoftNAS](//www.softnas.com) is a software-defined unified NAS/SAN storage solution for businesses that need powerful, frictionless and agile storage.
 
 ### Security Notes
 In this sample deployment no security services were put in place around access to either iSCSI block or filesystem (CIFS, NFS) services. SoftNAS and the CenturyLink Cloud provide a wide range of authentication and security components customers can and should implement that are outside the scope of a basic functionality overview.
@@ -47,7 +47,7 @@ In this sample deployment no security services were put in place around access t
 
     ![storage pool created and online](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-05.png)
 
-5. If you plan to deliver iSCSI volumes you need to establish an create an iSCSI Target on the SoftNAS. Navigate to iSCSI Lun Targets in the SoftNAS StorageCenter and create a new target. the Default option 'Don't Create new LUN' is adequate as these will be created later.
+5. If you plan to deliver iSCSI volumes you need to establish an create an iSCSI Target on the SoftNAS. Navigate to iSCSI Lun Targets in the SoftNAS StorageCenter and create a new target. The Default option 'Don't Create new LUN' is adequate as these will be created later.
 
     ![create iscsi target](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-06.png)
 
@@ -60,7 +60,7 @@ In this sample deployment no security services were put in place around access t
     * You can choose to export this volume as NFS, CIFS or Both
     * Choose the storage provisioning options: Thin or Thick
     * Choose the storage optimization options: Compression and/or Deduplication
-    * Choose if you wish to leverage snapshots and their schedule.
+    * Choose if you wish to leverage snapshots and their schedule
 
     ![create NFS Volume](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-07.png)
 
@@ -72,7 +72,7 @@ In this sample deployment no security services were put in place around access t
     * Select Block Device (iSCSI LUN) &amp; Share as iSCSI LUN
     * Choose the storage provisioning options: Thin or Thick
     * Choose the storage optimization options: Compression and/or Deduplication
-    * Choose if you wish to leverage snapshots and their schedule.
+    * Choose if you wish to leverage snapshots and their schedule
     * Select the iSCSI LUN Target created in Step #5
 
     ![create iscsi volume](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-09.png)
@@ -112,7 +112,7 @@ In this sample deployment no security services were put in place around access t
 ### Connecting to NAS or Block Storage on Windows
 The examples below are just examples of using a Windows 2012 R2 Virtual Instance to mount a CIFS and iSCSI Volume. Customers should follow standard NFS mount procedures for Linux Instances.
   * If you are leveraging a centralized Active Directory DNS we recommend you add an (A) record so the SoftNAS can be resolved via name or IP.
-  * To map a CIFS share use the command line to execute (or Map Network Drive in the Desktop)
+  * To map a CIFS share use the command line to execute (or Map Network Drive in the Desktop).
 
       ```
         net use * \\nasip or name\share name. In this example the command was net use * \\softnas\cifs_share.
