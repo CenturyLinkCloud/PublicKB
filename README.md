@@ -179,7 +179,7 @@ KBs generally use heading level 3 (###) as the highest heading level in the arti
   The image reference within the article should look like this:
   
     ```
-    ![Image Description](../images/[file name])
+    ![Image Description](../images/[file-name])
     ```
  The image description should be short and relevant to the image.
  
@@ -190,7 +190,7 @@ KBs generally use heading level 3 (###) as the highest heading level in the arti
     ```
     1. [Text][at least two blank spaces after the text]
     [blank line]
-    [An indent, using tab or 4 blank spaces]![Image Description](../images/[file name])
+    [An indent, using tab or 4 blank spaces]![Image Description](../images/[file-name])
     [blank line]
     ```
 
