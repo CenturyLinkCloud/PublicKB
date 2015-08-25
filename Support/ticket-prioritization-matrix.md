@@ -76,9 +76,9 @@ Each incoming ticket is triaged and the priority evaluated according to the crit
             <td><strong>Normal</strong></td>
             <td>Any new service request</td>
             <td>1 hour</td>
-            <td>Updated every 8 hours</td>
+            <td>Updated every 8 hours <a href="#2">[2]</a></td>
             <td>normal@ctl.io</td>
-            <td>3 business days <a href="#2">[2]</a></td>
+            <td>3 business days <a href="#3">[3]</a></td>
         </tr>
     </tbody>
 </table>
@@ -92,7 +92,7 @@ Each incoming ticket is triaged and the priority evaluated according to the crit
             <th>Description</th>
             <th>First Response</th>
             <th>Communication</th>
-            <th>Availability <a href="#3">[3]</a></th>
+            <th>Availability <a href="#4">[4]</a></th>
             <th>Email to Create Ticket</th>
         </tr>
     </thead>
@@ -111,9 +111,11 @@ Each incoming ticket is triaged and the priority evaluated according to the crit
 
 <div id="1">[1] All technical details and resources need to be available in the ticket.</div>
 
-<div id="2">[2] Complexity of tasks will have a significant impact on the the resolution time. In most cases, the simple requests can be completed in much less time, normally 1 business day.</div>
+<div id="2">[2] First response for Developer Support is 8 hours.</div>
 
-<div id="3">[3] Service Task estimation and duties are performed during business hours, Monday through Friday, 9am-5pm Pacific Time.</div>
+<div id="3">[3] Complexity of tasks will have a significant impact on the the resolution time. In most cases, the simple requests can be completed in much less time, normally 1 business day.</div>
+
+<div id="4">[4] Service Task estimation and duties are performed during business hours, Monday through Friday, 9am-5pm Pacific Time.</div>
 
 
 ### FAQ
