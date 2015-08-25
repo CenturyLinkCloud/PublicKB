@@ -1,18 +1,12 @@
 {{{
   "title": "Ecosystem Partner List",
-  "date": "06-09-2015",
-  "author": "ecosystem@ctl.io",
+  "date": "08-25-2015",
+  "author": "CenturyLink Ecosystem",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
 }}}
 
-
-<!-- Categories coming soon - add as partners matching them come onboard.
-
-### TBD
-
--->
 
 
 Quickly deploy and successfully use software and technology from any of our certified partners.
@@ -72,6 +66,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Codiad](../Ecosystem Partners/Marketplace Guides/getting-started-with-codiad-blueprint.md)   	| Blueprint    | Development Framework    |
 | [GitLab](../Ecosystem Partners/Marketplace Guides/getting-started-with-gitlab-blueprint.md)   	| Blueprint    | Code collaboration repository    |
 | [Jenkins](../Ecosystem Partners/Marketplace Guides/getting-started-with-jenkins-blueprint.md)   	| Blueprint    | Continuous integration system    |
+| [Pivotal Cloud Foundry](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-cloud-foundry.md)   	| Blueprint    | Cloud Foundry PaaS    |
 | [Squash](../Ecosystem Partners/Marketplace Guides/getting-started-with-squash-blueprint.md)   	| Blueprint    | Code Analysis    |
 
 
@@ -92,13 +87,22 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [XtremeData dbX](../Ecosystem Partners/Marketplace Guides/getting-started-with-xtremedata-dbx-blueprint.md)   	| Blueprint    | On-Demand Big Data Analytics with real-time ingest    |
 
 ### Analytics & Log Management
+
+|Vendor Software  	|Integration    | Description   	|
+|:-	|:-	|
 | [ElasticSearch](../Ecosystem Partners/Marketplace Guides/getting-started-with-elasticsearch-blueprint.md)   	| Blueprint    | Search Server    |
 | [Piwik](../Ecosystem Partners/Marketplace Guides/getting-started-with-piwik-blueprint.md)   	| Blueprint    | Web Analytics   |
 
 ### Cloud Storage
+
+|Vendor Software  	|Integration    | Description   	|
+|:-	|:-	|
 | [SoftNAS](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md)   	| Template    | NAS and Cloud Storage Gateway   |
 
 ### Data Protection
+
+|Vendor Software  	|Integration    | Description   	|
+|:-	|:-	|
 | [Double Take](../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md)   	| Blueprint    | Data replication    |
 | [Saratoga Data Flume](../Ecosystem Partners/Marketplace Guides/getting-started-with-saratoga-data-flume-blueprint.md)   	| Blueprint    | File transfer acceleration software    |
 
