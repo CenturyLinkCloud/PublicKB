@@ -14,4 +14,4 @@ In November 2014, Microsoft amended its MSDN (Microsoft Developer Network) packa
 
 "Active MSDN subscribers can install and run the software included in their subscription for development and testing purposes in a **dedicated hosted environment** provided by a SPLA partner. Alternatively, they may deploy the MSDN software on Azure. Any current MSDN subscriber who has activated their subscription is licensed to run the MSDN software (except for Windows and Windows Server) on Microsoft Azure Virtual Machines."
 
-This information is subject to change. CenturyLink provides guidance on licenensing but ultimatly it is the responsibilty of the customer to ensure licensing compliance. Please consult your specific Microsoft license agreement or work with your Microsofot Licensing Representative for further clarification or updates.
+This information is subject to change. CenturyLink provides guidance on licensing but ultimately it is the responsibilty of the customer to ensure licensing compliance. Please consult your specific Microsoft license agreement or work with your Microsoft Licensing Representative for further clarification or updates.
