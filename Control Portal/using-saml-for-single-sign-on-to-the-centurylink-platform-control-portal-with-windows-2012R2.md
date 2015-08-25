@@ -9,7 +9,7 @@
 ### Overview
 The purpose of this guide is to provide step by step instructions for configuring Windows 2012 R2 with ADFS 3.0 to authenticate with CenturyLink Cloud SAML.  For simplicity sake, a single server will be used for directory services and certificate services.  Depending on your company's requirements you may choose to use multiple servers for the various roles and services that are required.  If you choose to segregate the roles and services this guide will still provide a useful instruction set for configuration guidelines.
 
-###Description
+### Description
 CenturyLink Cloud supports the use of Security Assertion Markup Language (SAML) for exchanging user authentication data as XML between trusted parties. This industry standard protocol empowers our customers to use their **own** identity management system for authenticating users of the CenturyLink Cloud Control Portal.
 
 SAML has three main parties: the user, the identity provider (IdP), and service provider (SP). The IdP is the repository that holds identity information. The SP is the party that wants to authenticate a particular user who is using an application.
@@ -31,7 +31,7 @@ Specific steps in this flow are:
 
 The steps below walk through the process of building an entire SSO and SAML scenario based on Microsoft Active Directory Federation Services as the IdP proxy. If you already have an identity provider, you can skip to step 3 where trust is established between CenturyLink Cloud and the IdP.
 
-###Prerequisites
+### Prerequisites
 All steps in this guide require Domain Administrator permissions in Active Directory.  This guide assumes you have the Account Administrator Role in the CenturyLink Cloud Control Panel.  This guide will use a valid public domain name and valid public DNS for name resolution needs. This guide will use private SSL certificates that are signed by the Certificate Authority that is created while following this guide.  Some organizations will prefer the use of third party trusted certificates.  This guide is still applicable except you will use your already requested and signed certificates from your trusted third party source.
 
 **Steps**

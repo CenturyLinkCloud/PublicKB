@@ -21,23 +21,23 @@
   </li>
 </ul>
 
-####Description
+### Description
 <p>CloudMine has integrated their technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Mobile Backend solution.</p>
 
-####Audience####
+### Audience
 <ul>
   <li>CenturyLink Cloud Users</li>
 </ul>
 
-####Impact
+### Impact
 <p>After reading this article, the user should feel comfortable getting started using the partner technology on CenturyLink Cloud.</p>
 
-####Prerequisite
+### Prerequisite
 <ul>
   <li>Access to the CenturyLink Cloud platform as an authorized user.</li>
 </ul>
 
-###Detailed Steps
+### Detailed Steps
 <p>Follow these step by step instructions to get started with a single-server CloudMine deployment. </p>
 <ol>
   <li><em>Locate the Blueprint in the Blueprint Library</em>.
@@ -130,7 +130,7 @@
   </li>
 </ul>
 
-###Frequently Asked Questions
+### Frequently Asked Questions
 
 <p>Where do I obtain my CloudMine License?</p>
 <ul>

@@ -24,9 +24,7 @@ Creating a bare metal server on CenturyLink Cloud follows a similar flow as [cre
 
   You should also notice the warning message that appears regarding no backups or storage redundancy. Bare Metal servers do not offer standard or premium backup options, so make sure you implement your own solution if you need backups for the server.
 
-4. Now, choose the operating system for this server. Bare Metal servers currently offer a subset of the OS options offered for virtual machines on CenturyLink Cloud: Windows 2012 R2 Standard, Red Hat 6, and CentOS 6.
-
-  ![Create a New Bare Metal Server](../images/baremetal-create-5.png)
+4. Now, choose the operating system for this server. Bare Metal servers currently offer a subset of the OS options offered for virtual machines on CenturyLink Cloud: Windows 2012 R2 Standard, Red Hat 6, CentOS 6, and Ubuntu 14.
 
 5. Next, you'll need to set the server name, description, and administrator password for this server, just as you do with any CenturyLink Cloud server. As usual, the name entered is part of a formatted name that is arranged as: **(data center name)** + **(account alias)** + **(user-provided server name)** + **(counter index)**. The administrator password will set the "Administrator" password in Windows or the "root" password in Linux.
 

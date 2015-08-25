@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-###Description
+### Description
 CenturyLink Cloud supports the use of Security Assertion Markup Language (SAML) for exchanging user authentication data as XML between trusted parties. This industry standard protocol empowers our customers to use their **own** identity management system for authenticating users of the CenturyLink Cloud Control Portal.
 
 SAML has three main parties: the user, the identity provider (IdP), and service provider (SP). The IdP is the repository that holds identity information. The SP is the party that wants to authenticate a particular user who is using an application.
@@ -184,39 +184,39 @@ The steps below walk through the process of building an entire SSO and SAML scen
 
 ```
 <samlp:AuthnRequest
-	ID="--ID--"
-	Version="2.0"
-	IssueInstant="2012-12-06T21:30:41.385Z"
-	Destination="https://tier3samldemo.com/adfs/ls/"
-	ForceAuthn="false"
-	IsPassive="false"
-	ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-	AssertionConsumerServiceURL="https://ALIAS.cloudportal.io/SAMLAuth/Post"
-	xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol">
-	<saml:Issuer xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">https://ALIAS.cloudportal.io/SAMLAuth</saml:Issuer>
-	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
-	  <SignedInfo>
-		<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
-		<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
-		  <Reference URI="URI">
-		   <Transforms>
-		      <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
-		      <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
-			<InclusiveNamespaces PrefixList="#default samlp saml ds xs xsi" xmlns="http://www.w3.org/2001/10/xml-exc-14n#"/>
-		      </Transform>
-		    </Transforms>
-		    <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-		    <DigestValue>VALUE</DigestValue>
-		  </Reference>
-	  </SignedInfo>
-  	<SignatureValue>VALUE</SignatureValue>
-	<KeyInfo>
-	   <X509Data>
-	     <X509Certificate>CERTIFICATE</X509Certificate>
-	   </X509Data>
+  ID="--ID--"
+  Version="2.0"
+  IssueInstant="2012-12-06T21:30:41.385Z"
+  Destination="https://tier3samldemo.com/adfs/ls/"
+  ForceAuthn="false"
+  IsPassive="false"
+  ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+  AssertionConsumerServiceURL="https://ALIAS.cloudportal.io/SAMLAuth/Post"
+  xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol">
+  <saml:Issuer xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">https://ALIAS.cloudportal.io/SAMLAuth</saml:Issuer>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+    <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+    <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="URI">
+       <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+          <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+      <InclusiveNamespaces PrefixList="#default samlp saml ds xs xsi" xmlns="http://www.w3.org/2001/10/xml-exc-14n#"/>
+          </Transform>
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>VALUE</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>VALUE</SignatureValue>
+  <KeyInfo>
+     <X509Data>
+       <X509Certificate>CERTIFICATE</X509Certificate>
+     </X509Data>
         </KeyInfo>
         </Signature>
-	<samlp:NameIDPolicy AllowCreate="true" />
+  <samlp:NameIDPolicy AllowCreate="true" />
 </samlp:AuthnRequest>
 ```
 
@@ -224,63 +224,63 @@ The steps below walk through the process of building an entire SSO and SAML scen
 
 ```
 <samlp:Response ID="--ID--"
-	Version="2.0"
-	IssueInstant="2012-12-06T22:22:35.344Z"
-	Destination="https://ALIAS.cloudportal.io/SAMLAuth/Post"
-	Consent="urn:oasis:names:tc:SAML:2.0:consent:unspecified"
-	InResponseTo="ID" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol">
-	<Issuer xmlns="urn:oasis:names:tc:SAML:2.0:assertion">http://tier3samldemo.com/adfs/services/trust</Issuer>
-	<samlp:Status>
-	  <samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success" />
-	</samlp:Status>
-	<Assertion ID="ID" IssueInstant="2012-12-06T22:22:35.303Z" Version="2.0" xmlns="urn:oasis:names:tc:SAML:2.0:assertion">
-	<Issuer>http://tier3samldemo.com/adfs/services/trust</Issuer>
-	   <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-	     <ds:SignedInfo>
-		<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
-		<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
-		<ds:Reference URI="URI">
-		   <ds:Transforms>
-		     <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
-		     <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
-		   </ds:Transforms>
-		   <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-		   <ds:DigestValue>VALUE</ds:DigestValue>
-		</ds:Reference>
-		</ds:SignedInfo>
-		  <ds:SignatureValue>VALUE</ds:SignatureValue>
-		  <KeyInfo mlns="http://www.w3.org/2000/09/xmldsig#">
-		    <ds:X509Data>
-		      <ds:X509Certificate>CERTIFICATE</ds:X509Certificate>
-		    </ds:X509Data>
-		  </KeyInfo>
-	    </ds:Signature>
-	    <Subject>
-		<NameID>rseroter@tier3samldemo.com</NameID>
-	 	<SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
-		<SubjectConfirmation Data InResponseTo="ID"
-			NotOnOrAfter="2012-12-06T22:27:35.346Z"
-			Recipient="https://ALIAS.cloudportal.io/SAMLAuth/Post" />
-		</SubjectConfirmation>
-	     </Subject>
-	     <Conditions NotBefore="2012-12-06T22:22:34.417Z" NotOnOrAfter="2012-1206T23:22:34.417Z">
-		<AudienceRestriction>
-		  <Audience>https://ALIAS.cloudportal.io/SAMLAuth</Audience>
-		</AudienceRestriction>
-	     </Conditions>
-	     <AuthnStatement AuthnInstant="2012-12-06T22:22:33.401Z" SessionIndex="ID">
-		<AuthnContext>
-		  <AuthnContextClassRef>urn:federation:authentication:windows</AuthnContextClassRef>
-		</AuthnContext>
-	     </AuthnStatement>
-	  </Assertion>
+  Version="2.0"
+  IssueInstant="2012-12-06T22:22:35.344Z"
+  Destination="https://ALIAS.cloudportal.io/SAMLAuth/Post"
+  Consent="urn:oasis:names:tc:SAML:2.0:consent:unspecified"
+  InResponseTo="ID" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol">
+  <Issuer xmlns="urn:oasis:names:tc:SAML:2.0:assertion">http://tier3samldemo.com/adfs/services/trust</Issuer>
+  <samlp:Status>
+    <samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success" />
+  </samlp:Status>
+  <Assertion ID="ID" IssueInstant="2012-12-06T22:22:35.303Z" Version="2.0" xmlns="urn:oasis:names:tc:SAML:2.0:assertion">
+  <Issuer>http://tier3samldemo.com/adfs/services/trust</Issuer>
+     <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+       <ds:SignedInfo>
+    <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+    <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+    <ds:Reference URI="URI">
+       <ds:Transforms>
+         <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+         <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+       </ds:Transforms>
+       <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+       <ds:DigestValue>VALUE</ds:DigestValue>
+    </ds:Reference>
+    </ds:SignedInfo>
+      <ds:SignatureValue>VALUE</ds:SignatureValue>
+      <KeyInfo mlns="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>CERTIFICATE</ds:X509Certificate>
+        </ds:X509Data>
+      </KeyInfo>
+      </ds:Signature>
+      <Subject>
+    <NameID>rseroter@tier3samldemo.com</NameID>
+     <SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+    <SubjectConfirmation Data InResponseTo="ID"
+      NotOnOrAfter="2012-12-06T22:27:35.346Z"
+      Recipient="https://ALIAS.cloudportal.io/SAMLAuth/Post" />
+    </SubjectConfirmation>
+       </Subject>
+       <Conditions NotBefore="2012-12-06T22:22:34.417Z" NotOnOrAfter="2012-1206T23:22:34.417Z">
+    <AudienceRestriction>
+      <Audience>https://ALIAS.cloudportal.io/SAMLAuth</Audience>
+    </AudienceRestriction>
+       </Conditions>
+       <AuthnStatement AuthnInstant="2012-12-06T22:22:33.401Z" SessionIndex="ID">
+    <AuthnContext>
+      <AuthnContextClassRef>urn:federation:authentication:windows</AuthnContextClassRef>
+    </AuthnContext>
+       </AuthnStatement>
+    </Assertion>
 </samlp:Response>
 
 ```
 
 * The user experience when clicking that button is that the user is prompted for credentials (if the user is not hitting the website from within the domain itself) and once provided, the user is automatically logged into the CenturyLink Cloud portal. **Because they used Single Sign On and SAML, they did NOT have to enter their CenturyLink Cloud account credentials, but rather, were able to use their regular network credentials.**
 
-###Updated Signing Certificate (March 2015)
+### Updated Signing Certificate (March 2015)
 
 Customers with an existing SAML configuration as of March 5 2015 will need to update their signing certificate for use with their IdP with the following text:
 
