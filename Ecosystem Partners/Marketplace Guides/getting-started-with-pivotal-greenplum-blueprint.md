@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Pivotal Greenplum - Blueprint",
-  "date": "3-2-2015",
+  "date": "8-24-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -10,7 +10,7 @@
 
 ### Overview
 
-After reading this article, the reader should feel comfortable deploying the Pivotal Greenplum database on CenturyLink Cloud.
+After reading this article, the reader should feel comfortable deploying the Pivotal Greenplum 4.3.5.3 database release on CenturyLink Cloud.
 
 ### Partner Profile
 
@@ -20,7 +20,7 @@ Pivotal Greenplum – “Best-in-class, enterprise-grade analytical data warehou
 
 http://pivotal.io/big-data/pivotal-greenplum-database
 
-#####Customer Support
+##### Customer Support
 
 |Sales Contact      |
 |:- |
