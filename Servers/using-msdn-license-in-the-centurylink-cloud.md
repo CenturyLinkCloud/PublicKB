@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-### Discription
+### Description
 
 MDSN Licensing Amended
 
