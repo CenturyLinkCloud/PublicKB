@@ -20,7 +20,7 @@ Pivotal Greenplum – “Best-in-class, enterprise-grade analytical data warehou
 
 http://pivotal.io/big-data/pivotal-greenplum-database
 
-#####Customer Support
+##### Customer Support
 
 |Sales Contact      |
 |:- |
