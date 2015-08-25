@@ -6,15 +6,15 @@
   "contentIsHTML": false
 }}}
 
-###Description
+### Description
 
 CenturyLink Cloud customers can choose which data centers to make available to the users of an account. **Changing these settings has implications on the user experience, and how new data centers are exposed to the account.** Read the steps below to learn how to enable/disable data centers, and the implications on the API.
 
-###Audience
+### Audience
 
 - [Account administrators and security managers](role-permissions-matrix.md)
 
-###Detailed Steps
+### Detailed Steps
 
 1. Log into the Control Portal
 1. From the top menu, locate the **Settings** option under the **Acount** section.

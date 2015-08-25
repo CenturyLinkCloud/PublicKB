@@ -14,7 +14,7 @@ After reading this article, the reader should feel comfortable deploying the Piv
 
 ### Partner Profile
 
-<img src="/knowledge-base/images/pivotal_greenplum/pivotal_greenplum_logo.png" style="border:0;float:right;">
+<img src="../../images/pivotal_greenplum/pivotal_greenplum_logo.png" style="border:0;float:right;">
 
 Pivotal Greenplum – “Best-in-class, enterprise-grade analytical data warehouse..”
 
@@ -58,7 +58,7 @@ You can achieve a single-button deployment of a new cluster including a master h
 
   Determine whether you will be building a test cluster with small nodes or a production cluster whose nodes are configured with increased CPU and RAM.
 
-  <img src="/knowledge-base/images/pivotal_greenplum/cluster_blueprint_tiles.png" style="border:0;">
+  <img src="../../images/pivotal_greenplum/cluster_blueprint_tiles.png" style="border:0;">
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “Pivotal Greenplum” in the keyword search on the right side of the page.
 
@@ -66,7 +66,7 @@ You can achieve a single-button deployment of a new cluster including a master h
 
 3. **Set Required parameters.**
 
-  <img src="/knowledge-base/images/pivotal_greenplum/deploy_cluster_parameters.png" style="max-width:450px;">
+  <img src="../../images/pivotal_greenplum/deploy_cluster_parameters.png" style="max-width:450px;">
 
   * **EULA** - Click to accept the software end user license agreement
   * **Cluster ID ** - Set unique identifier for all hosts in this Greenplum cluster.  This is used to help other hosts find and join into the cluster
@@ -95,13 +95,13 @@ You can achieve a single-button deployment of a new cluster including a master h
 
   Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.  If you do not receive an email like the one shown below your cluster may have had a deployment error - review the *Blueprint Build Log* to for error messages.
 
-  <img src="/knowledge-base/images/pivotal_greenplum/deploy_cluster_complete_email.png" style="border:0;width:70%;">
+  <img src="../../images/pivotal_greenplum/deploy_cluster_complete_email.png" style="border:0;width:70%;">
 
 8. **Web Command Center** (optional)
 
   If you elected to install the optional web command center you may access it via http on port 20800.  Authenticate using the `gpadmin` user and your administrative credentials
 
-  <img src="/knowledge-base/images/pivotal_greenplum/web_command_center.png" style="border:0;">
+  <img src="../../images/pivotal_greenplum/web_command_center.png" style="border:0;">
 
 8. **Demo Application** (optional)
 
@@ -166,7 +166,7 @@ Contact your Pivotal account manager or inquire via email to [centurylinkcloud-s
 
 View Pivotal's [Getting Started](http://gpdb.docs.pivotal.io/gpdb-434.html) guide and other documentation from the Pivotal documentation hub.
 
-<img src="/knowledge-base/images/pivotal_greenplum/getting_started_pdf.png" style="max-height: 300px;margin-left:1em;">
+<img src="../../images/pivotal_greenplum/getting_started_pdf.png" style="max-height: 300px;margin-left:1em;">
 
 
 **How do I login to my cluster for the first time?**

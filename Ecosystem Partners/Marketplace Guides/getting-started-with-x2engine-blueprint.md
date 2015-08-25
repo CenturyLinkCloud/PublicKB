@@ -10,7 +10,7 @@
 
 ### Description
 
-<img alt="X2Engine Sales CRM Logo" src="/knowledge-base/images/bitnami_logos/x2engine-stack-110x117-f2439ac26534398a07f9a32bcecd8cd8.png" style="border:0;float:right;max-width:250px">
+<img alt="X2Engine Sales CRM Logo" src="../../images/bitnami_logos/x2engine-stack-110x117-f2439ac26534398a07f9a32bcecd8cd8.png" style="border:0;float:right;max-width:250px">
    
 After reading this article, the reader should feel comfortable deploying the X2Engine Sales CRM stack (version 5.0.6-0) by Bitnami.
 

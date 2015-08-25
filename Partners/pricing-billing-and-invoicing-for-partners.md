@@ -4,9 +4,9 @@
   "author": "",
   "attachments": [
     {
-      "url":"../attachments/partner-sample-billing-report.xlsx",
-      "type":"application/xlsx",
-      "file_name":"partner-sample-billing-report.xlsx"
+      "url":"../attachments/sample-end-user-report.csv",
+      "type":"application/csv",
+      "file_name":"sample-end-user-report.csv"
     }
   ],
   "contentIsHTML": false
@@ -41,7 +41,7 @@ You can extend a discount at the time of invoice. Communicate to your customer t
 
 **Rates Higher Than List**
 
-If you want to charge a price higher than list price (because you are offering additional services), a manual process is used to reflect this in the portal.  Email noc@tier3.com to make this request.
+If you want to charge a price higher than list price (because you are offering additional services), a manual process is used to reflect this in the portal.  Email noc@ctl.io to make this request.
 
 ### Getting Billing Data and Reports
 
@@ -55,7 +55,4 @@ If you want to charge a price higher than list price (because you are offering a
 **Method 2: API Integration (Optional)**
 
 **How It Works:** You can integrate with CenturyLink Cloud’s APIs to pull billing data automatically.
-**Resources:** Find out more about these capabilities at the following link: https://t3n.zendesk.com/forums/20616692-Billing
-
-
-
+**Resources:** Find out more about these capabilities at the following link: https://www.ctl.io/api-docs/v1/#billing

@@ -5,8 +5,9 @@
     "AppFog",
     "Autoscale",
     "Blueprints",
-    "Service Tasks",
     "Control Portal",
+    "Database",
+    "Disaster Recovery",
     "Ecosystem Partners",
     "General",
     "Mail",
@@ -15,6 +16,8 @@
     "Object Storage",
     "Partners",
     "Release Notes",
+    "Security",
+    "Service Tasks",
     "Servers",
     "WordPress"
   ]

@@ -11,7 +11,7 @@
 <ul>
   <li><strong>Vertical Autoscale.&nbsp;</strong>Customers can now view, create, edit, apply and delete CPU Autoscale policies for cloud servers. User-defined ranges specify the maximum and minimum number of CPUs allowed for a server, and the user-defined
     thresholds identify at which utilization values the servers should scale up -- and scale down -- its CPU assignment. Autoscale policies can be applied to servers based on Windows Server 2012 Datacenter Edition, Red Hat Enterprise Linux 5/6, and Ubuntu
-    10/12 x64. Please see additional KB articles "<a href="http://help.tier3.com/entries/22032834-Creating-and-Applying-Autoscale-Policies">Creating and applying Autoscale policies</a>" and "<a href="http://help.tier3.com/entries/22326345-Autoscale-FAQ"
+    10/12 x64. Please see additional KB articles "<a href="../../Autoscale/creating-and-applying-autoscale-policies.md">Creating and applying Autoscale policies</a>" and "<a href="../Autoscale/autoscale-faq.md
    >Autoscale FAQs</a>" for more information about this exciting feature.
     <p><img src="https://t3n.zendesk.com/attachments/token/5g8rvnyfr3ch0g6/?name=release09_03_01.png" alt="release09_03_01.png" />
     </p>

@@ -24,7 +24,7 @@
 <p><strong>Minor Enhancements (7)</strong>
 </p>
 <ul>
-  <li><strong>"Create account" page adds country/state relationship. </strong>This page now resembles the centurylinkcloud.com signup page where choosing a Country value causes the State drop-down to show valid values for that country.
+  <li><strong>"Create account" page adds country/state relationship. </strong> This page now resembles the ctl.io signup page where choosing a Country value causes the State drop-down to show valid values for that country.
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/3MHTmO1WRtTfJqc5M2Tk8K9ZF/?name=release06_10_14_04.png" alt="release06_10_14_04.png" />
   </li>

@@ -10,10 +10,9 @@
 <hr />
 <ul>
   <li><strong>Blueprints: Allow Users to specify unique values for each instance of a task in a blueprint.</strong>&nbsp;Previously, if the same software/script/task was added to a blueprint multiple times, there was no way to specify unique parameters for
-    each instance. Now, users can provide specific parameters for every instance of a package. See&nbsp;<a href="http://help.tier3.com/entries/21776651-add-multiple-instances-of-a-software-package-to-a-blueprint">this CenturyLink Cloud Knowledge Base article</a>&nbsp;for
+    each instance. Now, users can provide specific parameters for every instance of a package. See <a href="../../Blueprints/add-multiple-instances-of-a-software-package-to-a-blueprint.md">this CenturyLink Cloud Knowledge Base article</a> for
     a detailed walkthrough.</li>
-  <li><strong>Blueprints: Run package on group.&nbsp;</strong>Adds a new way to select, configure and run software/script packages against all or any of the servers in a Group. See&nbsp;<a href="http://help.tier3.com/entries/21807618-using-group-tasks-to-install-software-and-run-scripts-on-groups"
-   >this CenturyLink Cloud Knowledge Base article</a>&nbsp;for a further description of this feature.</li>
+  <li><strong>Blueprints: Run package on group.&nbsp;</strong>Adds a new way to select, configure and run software/script packages against all or any of the servers in a Group. See&nbsp;<a href="../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md">this CenturyLink Cloud Knowledge Base article</a>&nbsp;for a further description of this feature.</li>
   <li><strong>Activity Log: Implement Show More.</strong>&nbsp;From the Control Portal dashboard, when the user views “Account Activity History” we now load a subset of data and allow the user to see further back in time.</li>
   <li><strong>Billing: Display Detailed information for a Group.</strong>&nbsp;CenturyLink Cloud bills are broken down by Group to help users view a more detailed cost breakdown. Now, the bills also show which servers are part of the Group that incurred charges.</li>
   <li><strong>Make it so that standard servers can go to 16GB ram in the Control Portal.&nbsp;</strong>Standard servers could only previously allocate 8 GB of RAM but now accept up to 16 GB of RAM.</li>

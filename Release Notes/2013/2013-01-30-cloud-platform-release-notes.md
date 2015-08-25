@@ -13,15 +13,15 @@
     sign up for the reseller program can configure unique values for the "support" email address, knowledge base location, feature request mailbox, legal information, privacy policy, and more. In addition, customers have the option of customizing email
     notifications related to everything from "welcome" messages to billing notices.</li>
   <li><strong>Cross data center firewall policies now available for customer self-service.</strong>The ability to connect globally distributed data centers via firewall policies was previously available only to CenturyLink Cloud system administrators. For more information
-    on creating these firewall policies, see the KB article <a href="http://help.tier3.com/entries/22603797-creating-cross-data-center-firewall-policies">Creating Cross Data Center Firewall Policies</a>.</li>
+    on creating these firewall policies, see the KB article <a href="../../Network/creating-cross-data-center-firewall-policies.md">Creating Cross Data Center Firewall Policies</a>.</li>
 </ul>
 <p></p>
 <p><strong>Minor Defects Fixed or Enhancements Added (5)</strong>
 </p>
 <hr />
 <ul>
-  <li><strong>Server, Group, and Network APIs extended to be cross-data center aware.</strong> The <a href="http://help.tier3.com/forums/20578872-server">API for CenturyLink Cloud Servers</a>, <a href="http://help.tier3.com/forums/20568588-group">API for CenturyLink Cloud Groups</a>,
-    and <a href="http://help.tier3.com/forums/20587856-network">API for CenturyLink Cloud Networking</a> now support each global CenturyLink Cloud data center and any sub-accounts of the active account.</li>
+  <li><strong>Server, Group, and Network APIs extended to be cross-data center aware.</strong> The <a href="//www.ctl.io/api-docs/v2#servers">API for CenturyLink Cloud Servers</a>, <a href="//www.ctl.io/api-docs/v2#groups">API for CenturyLink Cloud Groups</a>,
+    and <a href="//www.ctl.io/api-docs/v2#networks">API for CenturyLink Cloud Networking</a> now support each global CenturyLink Cloud data center and any sub-accounts of the active account.</li>
   <li><strong>Improved experience for choosing data center for new servers.</strong> Previously, when CenturyLink Cloud users created servers, they had to select the target data center twice. First via the breadcrumb at the top, and then in the "create server" form
     itself. Now, the "create server" form doesn't ask the user for the target data center, but rather uses the data center context set by the breadcrumb at the top of the page.</li>
   <li><strong>Resizing Linux storage drives results in the volume being automatically extended in the virtual machine.</strong> Now when you expand a (non-operating system) drive in a Linux virtual machine via the Control Portal, the system automatically
