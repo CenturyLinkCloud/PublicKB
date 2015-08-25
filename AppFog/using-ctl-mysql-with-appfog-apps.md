@@ -13,11 +13,11 @@ Application developers
 
 ### Overview
 
-This article will provide an overview of our [new CenturyLink MySQL Database-as-a-Service offering](/dbaas/) that is currently in beta and how it can be consumed by applications deployed to AppFog. We will use JavaScript with the [MySQL Node.js module](https://github.com/felixge/node-mysql/) to demonstrate using the CenturyLink MySQL service.
+This article will provide an overview of our [new CenturyLink MySQL Database-as-a-Service offering](https://www.ctl.io/dbaas/) that is currently in beta and how it can be consumed by applications deployed to AppFog. We will use JavaScript with the [MySQL Node.js module](https://github.com/felixge/node-mysql/) to demonstrate using the CenturyLink MySQL service.
 
 #### Warning - MySQL Service in Beta
 
-The [CenturyLink MySQL Database-as-a-Service](/dbaas/) recently went into beta and is currently included in the AppFog marketplace. You can find via the Cloud Foundry CLI by running the following command in a terminal window:
+The [CenturyLink MySQL Database-as-a-Service](https://www.ctl.io/dbaas/) recently went into beta and is currently included in the AppFog marketplace. You can find via the Cloud Foundry CLI by running the following command in a terminal window:
 
 ```
 $ cf marketplace
@@ -26,7 +26,7 @@ service       plans                description
 ctl_mysql     free                 CenturyLink's BETA MySQL DBaaS.  For development use only; not subject to SLAs.
 ```
 
-As the description mentions, the `ctl_mysql` service is in beta and is for development use only at this time. Although we have no guarantees of service availability yet our DBaaS team is focused on providing the best service possible as they gather feedback. Please go the [DBaaS product page](/dbaas/) to learn more.
+As the description mentions, the `ctl_mysql` service is in beta and is for development use only at this time. Although we have no guarantees of service availability yet our DBaaS team is focused on providing the best service possible as they gather feedback. Please go the [DBaaS product page](https://www.ctl.io/dbaas/) to learn more.
 
 ### Create a MySQL Service Instance
 
