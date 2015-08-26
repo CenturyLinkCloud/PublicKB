@@ -1,5 +1,5 @@
 {{{
-  "title": "Waratek AppSecurity- Blueprint",
+  "title": "Getting Started With Waratek AppSecurity",
   "date": "08-20-2015",
   "author": "Waratek - David Egan",
   "attachments": [],
