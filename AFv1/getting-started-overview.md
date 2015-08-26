@@ -14,7 +14,7 @@ This document is for users of AppFog v1. This document does not apply to the cur
 
 <p>Here are all thing things you need to get up and running to experiment and develop content on the AppFog PaaS.</p>
 <h4>Sign Up for an Account</h4>
-<p>We are no longer accepting new accounts on AppFog v1. CenturyLink Cloud’s Platform based on Cloud Foundry is moving to CenturyLinkCloud.com. You can signup for the next generation of AppFog on the <a href="www.ctl.io/appfog">Product Page</a></p>
+<p>We are no longer accepting new accounts on AppFog v1. CenturyLink Cloud’s Platform based on Cloud Foundry is moving to CenturyLinkCloud.com. You can signup for the next generation of AppFog on the <a href="https://www.ctl.io/appfog">Product Page</a></p>
 <h4>The AF CLI Tool</h4>
 <p>Now that you have signed up for an account and selected a plan, the next step is to install the tool you'll use to push, pull, and update applications and services on our platform. The AF CLI tool is a RubyGem that calls the API for all of these functions. To remotely connect your services you will also need to install another gem called Caldecott. Caldecott sets up tunneling to your services from local machine. Instructions and a more detailed overview can be found in our <a href="appfog-cli-tool-manual.md">AppFog CLI Tool Manual</a>.</p>
 <h4>Pushing an App</h4>
