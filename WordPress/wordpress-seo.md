@@ -44,7 +44,7 @@ After you have your site's URL's and Permalinks set up, the next thing Yoast rec
 
   ![Google Search Console - Verify Ownership](../images/wp_yoast_seo/wp_yoast_seo_3.png)
 
-3. Make sure you have cloned your site from CenturyLink's Git repository.  See our [KB article](../WordPress/wordpress-site-updates-with-git.md) for more information on how to do this.
+3. Make sure you have cloned your site from CenturyLink's Git repository.  See our [KB article](../WordPress/wordPress-site-updates-with-git.md) for more information on how to do this.
 
 4. Download the HTML verification file from Google into the root directory of your website.
 
@@ -74,7 +74,7 @@ You should be able to work through Sections 2, 3, and 4 of the Yoast tutorial on
 
 In both of these sections, Yoast refers to enabling functions like _Subscribe by Email_ that rely on an SMTP mail service like [Mail Chimp](http://mailchimp.com/).  If you choose to this, you'll need to install a SMTP mail plugin on your site.  
 
-See our [KB article](../WordPress/wordpress-smtp-configuration.md) for help setting up SMTP mail for WordPress on CenturyLink Cloud.
+See our [KB article](../WordPress/wordpress-SMTP-Configuration.md) for help setting up SMTP mail for WordPress on CenturyLink Cloud.
 
 ### Conclusion
 After completing the steps above, you should now be able to work thru the remaining sections of the Yoast SEO tutorial.
