@@ -21,7 +21,7 @@ The [Yoast SEO Plugin for WordPress](https://yoast.com/wordpress/plugins/seo/) i
 
 1. First you need to [download the plugin](https://yoast.com/wordpress/plugins/) from Yoast's website.  
 
-2. Then follow the steps in our [KB article for WordPress Plugin Installation](../wordpress/wordpress-plugin-installation/).  When you are done, you should have the plugin installed on your site, like this:
+2. Then follow the steps in our [KB article for WordPress Plugin Installation](../wordpress/wordpress-plugin-installation.md).  When you are done, you should have the plugin installed on your site, like this:
 
 ![Yoast SEO Plugin General Settings](../images/wp_yoast_seo/wp_yoast_seo_1.png)
 
@@ -31,7 +31,7 @@ Now that you have the plugin installed, go ahead and open the [Yoast SEO Tutoria
 
 1. In section 1.1.1 regarding Permalink Structure, Yoast refers to a separate article on [changing your permalink structure](https://yoast.com/change-wordpress-permalink-structure/) which includes instructions for adding "redirects" to your _.htaccess_ file.  Please note that this is not necessary on the CenturyLink WordPress platform, and in fact will not work.  Instead, simply [modify your permalink structure](https://codex.wordpress.org/Using_Permalinks) using the WordPress admin console.
 
-2. In section 1.1.2, Yoast discusses choosing between _WWW_ and _non-WWW_ domain names for your site.  The CenturyLink platform supports either one, but bear in mind that you must create a custom _vanity URL_.  See our [KB article](../wordpress/wordpress-custom-domain-configuration/) for assistance with setting up a custom domain name for your WordPress site.
+2. In section 1.1.2, Yoast discusses choosing between _WWW_ and _non-WWW_ domain names for your site.  The CenturyLink platform supports either one, but bear in mind that you must create a custom _vanity URL_.  See our [KB article](../wordpress/wordpress-custom-domain-configuration.md) for assistance with setting up a custom domain name for your WordPress site.
 
 ## Registering Your Domain with Google Webmaster Tools
 After you have your site's URL's and Permalinks set up, the next thing Yoast recommends to do is register your site with [Google's Webmaster Tools](https://www.google.com/webmasters/tools/home?hl=en).  You'll need a Google account in order to complete this process.
@@ -44,7 +44,7 @@ After you have your site's URL's and Permalinks set up, the next thing Yoast rec
 
   ![Google Search Console - Verify Ownership](../images/wp_yoast_seo/wp_yoast_seo_3.png)
 
-3. Make sure you have cloned your site from CenturyLink's Git repository.  See our [KB article](../wordpress/wordpress-site-updates-with-git/) for more information on how to do this.
+3. Make sure you have cloned your site from CenturyLink's Git repository.  See our [KB article](../wordpress/wordpress-site-updates-with-git.md) for more information on how to do this.
 
 4. Download the HTML verification file from Google into the root directory of your website.
 
@@ -74,7 +74,7 @@ You should be able to work through Sections 2, 3, and 4 of the Yoast tutorial on
 
 In both of these sections, Yoast refers to enabling functions like _Subscribe by Email_ that rely on an SMTP mail service like [Mail Chimp](http://mailchimp.com/).  If you choose to this, you'll need to install a SMTP mail plugin on your site.  
 
-See our [KB article](../wordpress/wordpress-smtp-configuration/) for help setting up SMTP mail for WordPress on CenturyLink Cloud.
+See our [KB article](../wordpress/wordpress-smtp-configuration.md) for help setting up SMTP mail for WordPress on CenturyLink Cloud.
 
 ## Conclusion
 After completing the steps above, you should now be able to work thru the remaining sections of the Yoast SEO tutorial.
