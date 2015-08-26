@@ -121,8 +121,8 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Live Helper Chat](../Ecosystem Partners/Marketplace Guides/getting-started-with-livehelperchat-blueprint.md)   	| Blueprint    | Live chat    |
 | [Microsoft Active Directory ](../Managed Services/getting-started-with-managed-active-directory.md)  	| Blueprint (Managed)   | Directory Service     |
 | [Microsoft Windows Server ](../Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
+| [NOALYSS](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-noalyss-blueprint.md)  	| Blueprint   | Dboule Entry Accounting (ERP)	|
 | [OpenCart](../Ecosystem Partners/Marketplace Guides/getting-started-with-opencart-blueprint.md)  	| Blueprint   | eCommerce platform     |
-| [phpBB](../Ecosystem Partners/Marketplace Guides/getting-started-with-phpbb-blueprint.md)  	| Blueprint   | User discussion forum     Portfolio Creation and Hosting [Red Hat Enterprise Linux](../Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
 | [Sharelock](../Ecosystem Partners/Marketplace Guides/getting-started-with-sharelock-blueprint.md)  	| Blueprint   | Information sharing     |
 | [Simple Invoices](../Ecosystem Partners/Marketplace Guides/getting-started-with-simpleinvoices-blueprint.md)  	| Blueprint   | Invoice software     |
 | [VDIWorks](../Ecosystem Partners/Marketplace Guides/getting-started-with-vdiworks-console.md)  	| Blueprint   | Virtual Desktop Management     |
@@ -146,7 +146,14 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [MODX](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-modx-blueprint.md)   	| Blueprint    | Content management system (CMS)    |
 | [MyBB](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-mybb-blueprint.md)   	| Blueprint    | Discussion Forum    |
 | [ownCloud](../Ecosystem Partners/Marketplace Guides/getting-started-with-owncloud-blueprint.md)   	| Blueprint    | File sync & share   |
+| [phpBB](../Ecosystem Partners/Marketplace Guides/getting-started-with-phpbb-blueprint.md)  	| Blueprint   | User discussion forum     Portfolio Creation and Hosting	|
 | [Wordpress](../Ecosystem Partners/Marketplace Guides/getting-started-with-wordPress-blueprint.md)   	| Blueprint    | Web publishing platform   |
+
+
+### Operating Systems
+|:-	|:-	|
+| [Red Hat Enterprise Linux](../Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
+
 
 ### Other
 
