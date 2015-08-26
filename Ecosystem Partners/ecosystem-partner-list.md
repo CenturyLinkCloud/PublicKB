@@ -66,7 +66,9 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Codiad](../Ecosystem Partners/Marketplace Guides/getting-started-with-codiad-blueprint.md)   	| Blueprint    | Development Framework    |
 | [GitLab](../Ecosystem Partners/Marketplace Guides/getting-started-with-gitlab-blueprint.md)   	| Blueprint    | Code collaboration repository    |
 | [Jenkins](../Ecosystem Partners/Marketplace Guides/getting-started-with-jenkins-blueprint.md)   	| Blueprint    | Continuous integration system    |
+| [Phabricator](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-phabricator-blueprint.md)   	| Blueprint    | Code Collaboration Suite    |
 | [Pivotal Cloud Foundry](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-cloud-foundry.md)   	| Blueprint    | Cloud Foundry PaaS    |
+| [Pootle](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-pootle-blueprint.md)   	| Blueprint    | Translation Management   |
 | [Squash](../Ecosystem Partners/Marketplace Guides/getting-started-with-squash-blueprint.md)   	| Blueprint    | Code Analysis    |
 
 
@@ -124,6 +126,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [NOALYSS](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-noalyss-blueprint.md)  	| Blueprint   | Dboule Entry Accounting (ERP)	|
 | [OpenCart](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-opencart-blueprint.md)  	| Blueprint   | eCommerce platform     |
 | [OpenProject](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-openproject-blueprint.md)  	| Blueprint   | Project Management     |
+| [OXID](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-oxid-blueprint.md)  	| Blueprint   | eCommerce platform     |
 | [Sharelock](../Ecosystem Partners/Marketplace Guides/getting-started-with-sharelock-blueprint.md)  	| Blueprint   | Information sharing     |
 | [Simple Invoices](../Ecosystem Partners/Marketplace Guides/getting-started-with-simpleinvoices-blueprint.md)  	| Blueprint   | Invoice software     |
 | [VDIWorks](../Ecosystem Partners/Marketplace Guides/getting-started-with-vdiworks-console.md)  	| Blueprint   | Virtual Desktop Management     |
@@ -150,7 +153,10 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Open Atrium](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-openatrium-blueprint.md)   	| Blueprint    | Forum and Knowledge Base   |
 | [OSQA](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-osqa-blueprint.md)   	| Blueprint    | Forum and Knowledge Base   |
 | [ownCloud](../Ecosystem Partners/Marketplace Guides/getting-started-with-owncloud-blueprint.md)   	| Blueprint    | File sync & share   |
-| [phpBB](../Ecosystem Partners/Marketplace Guides/getting-started-with-phpbb-blueprint.md)  	| Blueprint   | User discussion forum     Portfolio Creation and Hosting	|
+| [phpBB](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-phpbb-blueprint.md)  	| Blueprint   | User discussion forum	|
+| [phpList](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-phplist-blueprint.md)  	| Blueprint   | Email Marketing	|
+| [Pimcore](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-pimcore-blueprint.md)   	| Blueprint    | Content management system (CMS)   |
+| [Plone](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-plone-blueprint.md)   	| Blueprint    | Content management system (CMS)   |
 | [Wordpress](../Ecosystem Partners/Marketplace Guides/getting-started-with-wordPress-blueprint.md)   	| Blueprint    | Web publishing platform   |
 
 
