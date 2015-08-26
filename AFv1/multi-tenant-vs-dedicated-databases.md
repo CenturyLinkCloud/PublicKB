@@ -25,11 +25,12 @@ This document is for users of AppFog v1. This document does not apply to the cur
 </ol>
 <p><strong>Dedicated Databases<br /> </strong>Luckily, lots of options exist for dedicated databases with PaaS solutions. Some are integrated and built by the provider from scratch, some are re-branded solutions such as Amazon RDS, while others still are in the form of partnerships with 3rd parties.<br /> <strong><br /> </strong>The great thing about dedicated databases is that they resolve all of the issues noted above. Scalability is improved with the flexiblilty for muliple configurations for replication, etc. Performance can be vastly improved and the developer does not have to worry about concurrent connetion limits, etc. as with shared DBs. Dedicated DBs will also inherently fill more security requirements as they isolate each user from the next and don't contain a shared space.<br /> <strong><br /> </strong>Several of the more popular DB providers in the Cloud have been listed below. Each are worth checking out! Please let us know (link) who we've missed as well.</p>
 <ul>
-<li><a href="http://aws.amazon.com/rds/"><strong>Amazon RDS</strong></a> - Offering MySQL, Oracle, and SQL Server, starting at 2.5 cents per hour</li>
+<li><a href="https://orchestrate.io/"><strong>Orchestrate</strong></a> -High performance, high availability, NoSQL solution</li>
+<li><a href="https://www.ctl.io/dbaas/"><strong>CenturyLink MySQL</strong></a> -High performance, enterprise-hardened MySQL DBaaS</li>
+<li><a href="http://aws.amazon.com/rds/"><strong>Amazon RDS</strong></a> - Offering MySQL, Oracle, and SQL Server</li>
 <li><strong><a href="http://www.rackspace.com/cloud/public/databases/">Rackspace Cloud Databases</a></strong> - High-performance MySQL DB service</li>
-<li><a href="http://xeround.com"><strong>Xeround</strong></a> - High-availability MySQL DBaaS</li>
 <li><a href="https://mongolab.com/home"><strong>MongoLab</strong></a> - Mongo DB hosting, monitoring, support, replication, backups</li>
-<li><strong><a href="https://www.mongohq.com/">MongoHQ</a></strong> - Mongo DB hosting on Amazon and Joyent infrastructure</li>
+<li><strong><a href="https://www.compose.io/">Compose (MongoHQ)</a></strong> - Mongo DB hosting on Amazon and Joyent infrastructure</li>
 <li><a href="http://www.cleardb.com"><strong>ClearDB</strong></a> - Multi-master, replicated MySQL DBs on Amazon EC2 and Azure instances</li>
 </ul>
 <p>When developing your applications, the database component is often the most important part of the application. Planning, performance tuning, and optimization are all things you should spend a good amount of focus on.  Considering the shared vs. dedicated DB argument is an important part of your exploration and we hope this document has gotten you started.<br /> </p>
