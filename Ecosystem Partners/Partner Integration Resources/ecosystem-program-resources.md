@@ -19,3 +19,11 @@ Integration of 3rd party technology with CenturyLink Cloud can be achieved by le
 |Templates|Blueprints|APIs|Add-Ons|
 |------|--------|---------|--------|
 |[Supporting virtual appliances](ecosystem-program-resources-templates.md) |[Applying your software to customer assets](ecosystem-program-resources-blueprints.md)|[Programmatic access to cloud services](ecosystem-program-resources-api.md) |[Web service integration](ecosystem-program-resources-addons.md)  |
+
+### Integration support
+
+Get live support with any integration questions directly from our community of experts!
+
+[![Slack](../../images/ecosystem_program_resources/ctl-community-slack-screenshot.png)](http://ctl-community-slackin.useast.appfog.ctl.io/)
+
+<img src="">
