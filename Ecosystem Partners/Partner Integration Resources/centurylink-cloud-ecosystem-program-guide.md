@@ -9,7 +9,7 @@
 
 <p>Updated: February 17, 2015</p>
 <p><strong>Description</strong></p>
-<p>This Cloud Ecosystem Program Guide is designed to outline the process expectations for technology companies seeking to integrate their products and services with CenturyLink Cloud.  Partners who enter this program and meet the certification requirements will be eligible to have their deployable technology listed in the CenturyLink Cloud Marketplace launching in early 2015.  To express interest in joining the program, prospective partners can visit the CenturyLink Cloud <a href="http://www.ctl.io/marketplace/program">Market Place Providers Program</a> web page or send email to <a href="mailto:ecosystem@centurylinkcloud.com">ecosystem@centurylinkcloud.com</a>.</p>
+<p>This Cloud Ecosystem Program Guide is designed to outline the process expectations for technology companies seeking to integrate their products and services with CenturyLink Cloud.  Partners who enter this program and meet the certification requirements will be eligible to have their deployable technology listed in the CenturyLink Cloud Marketplace launching in early 2015.  To express interest in joining the program, prospective partners can visit the CenturyLink Cloud <a href="http://www.ctl.io/marketplace/program">Market Place Providers Program</a> web page or send email to <a href="mailto:ecosystem@ctl.io">ecosystem@ctl.io</a>.</p>
 <p><strong>Audience</strong></p>
 <ul>
   <li>

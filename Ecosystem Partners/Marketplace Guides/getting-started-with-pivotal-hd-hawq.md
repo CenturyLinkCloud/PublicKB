@@ -20,7 +20,7 @@ Pivotal HD + HAWQ – “World’s Most Advanced Enterprise SQL on Hadoop Analyt
 
 http://pivotal.io/big-data/pivotal-hawq
 
-#####Customer Support
+##### Customer Support
 
 |Sales Contact   	|
 |:-	|
