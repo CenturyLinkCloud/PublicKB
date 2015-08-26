@@ -21,7 +21,7 @@ The [Yoast SEO Plugin for WordPress](https://yoast.com/wordpress/plugins/seo/) i
 
 1. First you need to [download the plugin](https://yoast.com/wordpress/plugins/) from Yoast's website.  
 
-2. Then follow the steps in our [KB article for WordPress Plugin Installation](../wordpress/wordpress-plugin-installation.md).  When you are done, you should have the plugin installed on your site, like this:
+2. Then follow the steps in our [KB article for WordPress Plugin Installation](../WordPress/wordpress-plugin-installation.md).  When you are done, you should have the plugin installed on your site, like this:
 
 ![Yoast SEO Plugin General Settings](../images/wp_yoast_seo/wp_yoast_seo_1.png)
 
