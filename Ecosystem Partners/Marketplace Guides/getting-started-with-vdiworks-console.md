@@ -1,5 +1,5 @@
 {{{
-  "title": "VDIworks Virtual Desktop Platform - Blueprint",
+  "title": "Getting Started With VDIworks Console",
   "date": "08-10-2015",
   "author": "VDIworks",
   "attachments": [],

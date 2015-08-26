@@ -1,5 +1,5 @@
 {{{
-  "title": "VDIworks VDP Host Agent - Blueprint",
+  "title": "Getting Started With VDIworks VDP Host Agent",
   "date": "08-10-2015",
   "author": "VDIworks",
   "attachments": [],

@@ -75,8 +75,8 @@ Each incoming ticket is triaged and the priority evaluated according to the crit
         <tr>
             <td><strong>Normal</strong></td>
             <td>Any new service request</td>
-            <td>1 hour</td>
-            <td>Updated every 8 hours <a href="#2">[2]</a></td>
+            <td>1 hour <a href="#2">[2]</a></td>
+            <td>Updated every 8 hours</td>
             <td>normal@ctl.io</td>
             <td>3 business days <a href="#3">[3]</a></td>
         </tr>
