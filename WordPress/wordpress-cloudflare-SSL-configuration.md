@@ -5,7 +5,7 @@
   "attachments": [],
   "contentIsHTML": false
 }}}
-### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.## Overview:
+### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.### Overview:
 
 There are multiple methods that could be used to terminate SSL for an existing CenturyLink Cloud WordPress site. This method covers using CloudFlare CDN's SSL Termination.
 
