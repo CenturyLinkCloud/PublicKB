@@ -23,7 +23,7 @@ The [Yoast SEO Plugin for WordPress](https://yoast.com/wordpress/plugins/seo/) i
 
 2. Then follow the steps in our [KB article for WordPress Plugin Installation](../wordpress/wordpress-plugin-installation/).  When you are done, you should have the plugin installed on your site, like this:
 
-![](../images/wp_yoast_seo/wp_yoast_seo_1.png)
+![Yoast SEO Plugin General Settings](../images/wp_yoast_seo/wp_yoast_seo_1.png)
 
 ## Setting Up Your Site's URL(s) and Permalinks
 
@@ -38,11 +38,11 @@ After you have your site's URL's and Permalinks set up, the next thing Yoast rec
 
 1. Click the _Add A Property_ button, and enter the URL for your WordPress site:
 
-  ![](../images/wp_yoast_seo/wp_yoast_seo_2.png)
+  ![Google Search Console - Add a Property](../images/wp_yoast_seo/wp_yoast_seo_2.png)
 
 2. Next, you will be asked to verify ownership of the site.  Choose the recommended method, which is HTML file upload.
 
-  ![](../images/wp_yoast_seo/wp_yoast_seo_3.png)
+  ![Google Search Console - Verify Ownership](../images/wp_yoast_seo/wp_yoast_seo_3.png)
 
 3. Make sure you have cloned your site from CenturyLink's Git repository.  See our [KB article](../wordpress/wordpress-site-updates-with-git/) for more information on how to do this.
 
@@ -64,7 +64,7 @@ After you have your site's URL's and Permalinks set up, the next thing Yoast rec
 
 8. Now go back to Google Search Console, and click the Verify button.  Now your site is registered with Google.
 
-  ![](../images/wp_yoast_seo/wp_yoast_seo_4.png)
+  ![Google Search Console - Site Registered](../images/wp_yoast_seo/wp_yoast_seo_4.png)
 
 For additional help with Google's Webmaster Tools, we recommend reviewing the [Google SEO Starter Guide](http://static.googleusercontent.com/media/www.google.com/en//webmasters/docs/search-engine-optimization-starter-guide.pdf) and [Google Webmaster Guidelines](https://support.google.com/webmasters/answer/35769?hl=en&ref_topic=6002025).
 
