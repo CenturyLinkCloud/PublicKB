@@ -14,7 +14,7 @@
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami Noalyss Stack provides a click-through solution to install and configure Noalyss on the Linux platform.
+Through the CenturyLink Blueprint integration, Noalyss provides a click-through solution to install and configure Noalyss on the Linux platform.
 Formerly known as PhpCompta, NOALYSS is an ERP system that includes a double-entry accounting system adapted to Belgian and French accounting practices. Features include account monitoring, a shared calendar, stock management, tax returns, forecasting, electronic transmission of documents and more. Please note that the Noalyss Installer is in English, but the application itself is only in French.
 
 For more information, please visit http://www.phpcompta.org

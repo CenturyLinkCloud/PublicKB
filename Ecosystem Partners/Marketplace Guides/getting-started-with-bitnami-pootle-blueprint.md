@@ -14,7 +14,7 @@ Pootle is a "smart" translations management project. It remembers what you trans
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami Pootle Stack provides a click-through solution to install and configure Pootle on the Linux platform.
+Through the CenturyLink Blueprint integration, Pootle provides a click-through solution to install and configure Pootle on the Linux platform.
 
 For more information, please visit http://translate.sourceforge.net/wiki/pootle/index
 

@@ -14,7 +14,7 @@ Horde Groupware Webmail is a free, enterprise ready, browser based communication
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami Horde Groupware Webmail Stack provides a click-through solution to install and configure Horde Groupware Webmail on the Linux platform.
+Through the CenturyLink Blueprint integration, Horde Groupware Webmail provides a click-through solution to install and configure Horde Groupware Webmail on the Linux platform.
 
 For more information, please visit http://www.horde.org/apps/webmail
 

@@ -13,7 +13,7 @@
 OpenERP isn't just one application. It's hundreds. OpenERP is an enterprise resource platform from which you can manage all your business operations – from supply chain and project management, to accounting and HR. Out of the box, OpenERP includes messaging, sales CRM and reporting modules. Click the settings tab and you'll be presented with nearly 2000 other modules – bug tracking, project management, timesheets, MRP, recruiting, calendar, warehouse management, and much, much more – that can be deployed with one click.
 
 ### Description
-Through the CenturyLink Blueprint integration, the Odoo Stack provides a click-through solution to install and configure Odoo on the Linux platform.
+Through the CenturyLink Blueprint integration, the Odoo provides a click-through solution to install and configure Odoo on the Linux platform.
 
 For more information, please visit [http://www.openerp.com/](http://www.openerp.com/)
 

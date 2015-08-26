@@ -12,7 +12,7 @@
 eZ Publish is more than a CMS, it's a platform that allows you to create beautiful and custom experiences for your users. Create content, then optimize it for visitors. Features include role-based multi-user access, e-commerce functions and online community building.
 
 ### Description
-Through the CenturyLink Blueprint integration, the eZ Publish Stack provides a click-through solution to install and configure eZ Publish on the Linux platform.
+Through the CenturyLink Blueprint integration, the eZ Publish provides a click-through solution to install and configure eZ Publish on the Linux platform.
 
 For more information, please visit [http://ez.no/](http://ez.no/)
 

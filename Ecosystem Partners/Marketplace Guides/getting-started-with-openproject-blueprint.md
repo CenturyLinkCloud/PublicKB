@@ -14,7 +14,7 @@
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami OpenProject Stack provides a click-through solution to install and configure OpenProject on the Linux platform.
+Through the CenturyLink Blueprint integration, OpenProject provides a click-through solution to install and configure OpenProject on the Linux platform.
 OpenProject is free and open source software for project management with a wide set of features and plugins and an active international community.
 
 For more information, please visit https://www.openproject.org

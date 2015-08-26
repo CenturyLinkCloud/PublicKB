@@ -14,7 +14,7 @@
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami Pimcore Stack provides a click-through solution to install and configure Pimcore on the Linux platform.
+Through the CenturyLink Blueprint integration, Pimcore provides a click-through solution to install and configure Pimcore on the Linux platform.
 te outstanding digital experiences on the most flexible content management platform available. Manage and edit any type of digital content, for any device and channel in a 100% flexible and personalized way.
 
 For more information, please visit https://www.pimcore.org/

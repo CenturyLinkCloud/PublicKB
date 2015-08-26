@@ -14,7 +14,7 @@ As a flexible and modular platform with hundreds of plugins available and a vibr
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami MODX Stack provides a click-through solution to install and configure MODX on the Linux platform.
+Through the CenturyLink Blueprint integration, MODX provides a click-through solution to install and configure MODX on the Linux platform.
 
 For more information, please visit http://www.modx.com
 

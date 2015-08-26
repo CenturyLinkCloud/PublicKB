@@ -14,7 +14,7 @@
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami phpList Stack provides a click-through solution to install and configure phpList on the Linux platform.
+Through the CenturyLink Blueprint integration, phpList provides a click-through solution to install and configure phpList on the Linux platform.
 phpList is Open Source newsletter and email marketing software.
 
 

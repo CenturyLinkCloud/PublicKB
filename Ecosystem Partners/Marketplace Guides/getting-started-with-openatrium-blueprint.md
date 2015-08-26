@@ -14,7 +14,7 @@ Open Atrium is your one stop shop to building a truly scalable collaborative wor
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami Open Atrium Stack provides a click-through solution to install and configure Open Atrium on the Linux platform.
+Through the CenturyLink Blueprint integration, Open Atrium provides a click-through solution to install and configure Open Atrium on the Linux platform.
 
 For more information, please visit http://openatrium.com
 

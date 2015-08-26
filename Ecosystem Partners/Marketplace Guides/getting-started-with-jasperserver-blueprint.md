@@ -14,7 +14,7 @@ The JasperReports server can be used as a stand-alone or embedded reporting and 
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami JasperReports Stack provides a click-through solution to install and configure JasperReports on the Linux platform.
+Through the CenturyLink Blueprint integration, JasperReports provides a click-through solution to install and configure JasperReports on the Linux platform.
 
 For more information, please visit http://community.jaspersoft.com/project/jasperreports-server
 

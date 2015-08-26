@@ -14,7 +14,7 @@ If you need to build a community forum, try phpBB. First released in 2000, phpBB
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami phpBB Stack provides a click-through solution to install and configure phpBB on the Linux platform.
+Through the CenturyLink Blueprint integration, phpBB provides a click-through solution to install and configure phpBB on the Linux platform.
 
 For more information, please visit http://www.phpbb.com
 

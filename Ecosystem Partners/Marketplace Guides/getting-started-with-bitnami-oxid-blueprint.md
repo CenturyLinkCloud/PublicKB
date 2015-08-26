@@ -14,7 +14,7 @@ OXID eShop is a free open source ecommerce and shopping cart solution. Build a r
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami OXID eShop Stack provides a click-through solution to install and configure OXID eShop on the Linux platform.
+Through the CenturyLink Blueprint integration, OXID eShop provides a click-through solution to install and configure OXID eShop on the Linux platform.
 
 For more information, please visit www.oxid-esales.com
 

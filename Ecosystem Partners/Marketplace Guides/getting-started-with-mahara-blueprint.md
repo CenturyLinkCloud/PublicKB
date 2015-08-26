@@ -14,7 +14,7 @@
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami Mahara Stack provides a click-through solution to install and configure Mahara on the Linux platform.
+Through the CenturyLink Blueprint integration, Mahara provides a click-through solution to install and configure Mahara on the Linux platform.
 Mahara is a fully featured web application to build your electronic portfolio. You can create journals, upload files, embed social media resources from the web and collaborate with other users in groups.
 
 For more information, please visit http://www.mahara.org

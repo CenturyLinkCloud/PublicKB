@@ -14,7 +14,7 @@ ocPortal stands for online content portal. Or maybe online communications portal
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami ocPortal Stack provides a click-through solution to install and configure ocPortal on the Linux platform.
+Through the CenturyLink Blueprint integration, ocPortal provides a click-through solution to install and configure ocPortal on the Linux platform.
 
 For more information, please visit http://ocportal.com
 

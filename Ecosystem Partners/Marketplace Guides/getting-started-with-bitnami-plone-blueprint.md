@@ -14,7 +14,7 @@ Since 2001, the Plone CMS has been downloaded millions of times and helped build
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami Plone Stack provides a click-through solution to install and configure Plone on the Linux platform.
+Through the CenturyLink Blueprint integration, Plone provides a click-through solution to install and configure Plone on the Linux platform.
 
 For more information, please visit http://plone.org
 

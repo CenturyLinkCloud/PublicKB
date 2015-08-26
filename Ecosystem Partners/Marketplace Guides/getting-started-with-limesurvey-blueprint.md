@@ -14,7 +14,7 @@ Build and customize your own web-based surveys with LimeSurvey. LimeSurvey has l
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami LimeSurvey Stack provides a click-through solution to install and configure LimeSurvey on the Linux platform.
+Through the CenturyLink Blueprint integration, LimeSurvey provides a click-through solution to install and configure LimeSurvey on the Linux platform.
 
 For more information, please visit http://www.limesurvey.org
 

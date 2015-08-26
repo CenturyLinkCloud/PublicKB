@@ -14,7 +14,7 @@
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami MyBB Stack provides a click-through solution to install and configure MyBB on the Linux platform.
+Through the CenturyLink Blueprint integration, MyBB provides a click-through solution to install and configure MyBB on the Linux platform.
 MyBB is the free and open source, intuitive, extensible, and incredibly powerful forum software you've been looking for.
 With everything from forums to threads, posts to private messages, search to profiles, and reputation to warnings, MyBB features everything you need to run an efficient and captivating community. Through plugins and themes, you can extend MyBB's functionality to build your community exactly as you'd like it.
 

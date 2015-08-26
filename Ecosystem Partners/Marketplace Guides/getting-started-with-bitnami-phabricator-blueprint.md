@@ -14,7 +14,7 @@ Phabricator is a collection of open source web applications that help software c
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami Phabricator Stack provides a click-through solution to install and configure Phabricator on the Linux platform.
+Through the CenturyLink Blueprint integration, Phabricator provides a click-through solution to install and configure Phabricator on the Linux platform.
 
 For more information, please visit http://www.phabricator.org
 

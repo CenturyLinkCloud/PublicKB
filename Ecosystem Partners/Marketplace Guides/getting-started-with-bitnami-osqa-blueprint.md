@@ -14,7 +14,7 @@ OSQA is an acronym that sands for "open source question & answer." OSQA is a ver
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami OSQA Stack provides a click-through solution to install and configure OSQA on the Linux platform.
+Through the CenturyLink Blueprint integration, OSQA provides a click-through solution to install and configure OSQA on the Linux platform.
 
 For more information, please visit http://www.osqa.net
 
