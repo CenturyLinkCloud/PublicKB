@@ -19,7 +19,7 @@ There are multiple methods that could be used to terminate SSL for an existing C
 2. A Custom Fully Qualified Domain Name (FQDN) added to your WordPress Site.
 3. An existing [CloudFlare] (https://www.cloudflare.com/) account 
 4. Your customer site name must be configured for use with CloudFlare.
-## CloudFlare Settings SupportedFollowing the [Configure SSL on Cloud Flare] (https://support.cloudflare.com/hc/en-us/articles/204468848-How-do-I-access-or-change-any-of-my-SSL-settings-) Knowledge Base Article, these are the settings CenturyLink WordPress suports.
+### CloudFlare Settings SupportedFollowing the [Configure SSL on Cloud Flare] (https://support.cloudflare.com/hc/en-us/articles/204468848-How-do-I-access-or-change-any-of-my-SSL-settings-) Knowledge Base Article, these are the settings CenturyLink WordPress suports.
 
 * SSL (with SPDY)						= Full, FLexible, or Off (Strict is not currently supported)
 * HTTP Strict Transport Security (HSTS)
