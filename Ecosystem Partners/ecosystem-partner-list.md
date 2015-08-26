@@ -123,6 +123,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Microsoft Windows Server ](../Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
 | [NOALYSS](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-noalyss-blueprint.md)  	| Blueprint   | Dboule Entry Accounting (ERP)	|
 | [OpenCart](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-opencart-blueprint.md)  	| Blueprint   | eCommerce platform     |
+| [OpenProject](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-openproject-blueprint.md)  	| Blueprint   | Project Management     |
 | [Sharelock](../Ecosystem Partners/Marketplace Guides/getting-started-with-sharelock-blueprint.md)  	| Blueprint   | Information sharing     |
 | [Simple Invoices](../Ecosystem Partners/Marketplace Guides/getting-started-with-simpleinvoices-blueprint.md)  	| Blueprint   | Invoice software     |
 | [VDIWorks](../Ecosystem Partners/Marketplace Guides/getting-started-with-vdiworks-console.md)  	| Blueprint   | Virtual Desktop Management     |
@@ -139,7 +140,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [concrete5](../Ecosystem Partners/Marketplace Guides/getting-started-with-concrete5-blueprint.md)   	| Blueprint    Content management system (CMS)    |
 | [Coppermine](../Ecosystem Partners/Marketplace Guides/getting-started-with-coppermine-blueprint.md)   	| Blueprint    | Photo Gallery    |
 | [Drupal](../Ecosystem Partners/Marketplace Guides/getting-started-with-drupal-blueprint.md)   	| Blueprint    | Content management system (CMS)    |
-| [DocuWiki](../Ecosystem Partners/Marketplace Guides/getting-started-with-dokuwiki-blueprint.md)   	| Blueprint    | Knowledge management system    |
+| [DocuWiki](../Ecosystem Partners/Marketplace Guides/getting-started-with-dokuwiki-blueprint.md)   	| Blueprint    | Knowledge Management System    |
 | [Joomla](../Ecosystem Partners/Marketplace Guides/getting-started-with-joomla-blueprint.md)   	| Blueprint    | Content management system (CMS)    |
 | [LimeSurvey](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-limesurvey-blueprint.md)   	| Blueprint    | Web-based Surveys    |
 | [Mahara](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-mahara-blueprint.md)   	| Blueprint    | Portfolio Creation and Hosting    |
@@ -147,6 +148,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [MyBB](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-mybb-blueprint.md)   	| Blueprint    | Discussion Forum    |
 | [ocPortal](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-ocportal-blueprint.md)   	| Blueprint    | Content management system (CMS)   |
 | [Open Atrium](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-openatrium-blueprint.md)   	| Blueprint    | Forum and Knowledge Base   |
+| [OSQA](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-osqa-blueprint.md)   	| Blueprint    | Forum and Knowledge Base   |
 | [ownCloud](../Ecosystem Partners/Marketplace Guides/getting-started-with-owncloud-blueprint.md)   	| Blueprint    | File sync & share   |
 | [phpBB](../Ecosystem Partners/Marketplace Guides/getting-started-with-phpbb-blueprint.md)  	| Blueprint   | User discussion forum     Portfolio Creation and Hosting	|
 | [Wordpress](../Ecosystem Partners/Marketplace Guides/getting-started-with-wordPress-blueprint.md)   	| Blueprint    | Web publishing platform   |
