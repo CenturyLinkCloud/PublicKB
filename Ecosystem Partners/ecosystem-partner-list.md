@@ -1,6 +1,6 @@
 {{{
   "title": "Ecosystem Partner List",
-  "date": "08-25-2015",
+  "date": "08-26-2015",
   "author": "CenturyLink Ecosystem",
   "attachments": [],
   "contentIsHTML": false,
@@ -91,6 +91,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [ElasticSearch](../Ecosystem Partners/Marketplace Guides/getting-started-with-elasticsearch-blueprint.md)   	| Blueprint    | Search Server    |
+| [JasperReports](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-jasperserver-blueprint.md)   	| Blueprint    | BI Software Offering Web-based Reporting, Analytic Tools and Visualization, and Dashboarding    |
 | [Piwik](../Ecosystem Partners/Marketplace Guides/getting-started-with-piwik-blueprint.md)   	| Blueprint    | Web Analytics   |
 
 ### Cloud Storage
@@ -116,12 +117,12 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [CiviCRM](../Ecosystem Partners/Marketplace Guides/getting-started-with-civicrm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
 | [Diaspora](../Ecosystem Partners/Marketplace Guides/getting-started-with-diaspora-blueprint.md)   	| Blueprint    | Private social networking    |
 | [Fat Free CRM](../Ecosystem Partners/Marketplace Guides/getting-started-with-fat-free-crm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
+| [Horde Groupware Webmail](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-horde-blueprint.md)   	| Blueprint    | Mail, Calendar, Address Book, Tasks, and Notes Communication Suite    |
 | [Live Helper Chat](../Ecosystem Partners/Marketplace Guides/getting-started-with-livehelperchat-blueprint.md)   	| Blueprint    | Live chat    |
 | [Microsoft Active Directory ](../Managed Services/getting-started-with-managed-active-directory.md)  	| Blueprint (Managed)   | Directory Service     |
 | [Microsoft Windows Server ](../Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
 | [OpenCart](../Ecosystem Partners/Marketplace Guides/getting-started-with-opencart-blueprint.md)  	| Blueprint   | eCommerce platform     |
-| [phpBB](../Ecosystem Partners/Marketplace Guides/getting-started-with-phpbb-blueprint.md)  	| Blueprint   | User discussion forum     |
-| [Red Hat Enterprise Linux](../Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
+| [phpBB](../Ecosystem Partners/Marketplace Guides/getting-started-with-phpbb-blueprint.md)  	| Blueprint   | User discussion forum     Portfolio Creation and Hosting [Red Hat Enterprise Linux](../Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
 | [Sharelock](../Ecosystem Partners/Marketplace Guides/getting-started-with-sharelock-blueprint.md)  	| Blueprint   | Information sharing     |
 | [Simple Invoices](../Ecosystem Partners/Marketplace Guides/getting-started-with-simpleinvoices-blueprint.md)  	| Blueprint   | Invoice software     |
 | [VDIWorks](../Ecosystem Partners/Marketplace Guides/getting-started-with-vdiworks-console.md)  	| Blueprint   | Virtual Desktop Management     |
@@ -140,6 +141,10 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Drupal](../Ecosystem Partners/Marketplace Guides/getting-started-with-drupal-blueprint.md)   	| Blueprint    | Content management system (CMS)    |
 | [DocuWiki](../Ecosystem Partners/Marketplace Guides/getting-started-with-dokuwiki-blueprint.md)   	| Blueprint    | Knowledge management system    |
 | [Joomla](../Ecosystem Partners/Marketplace Guides/getting-started-with-joomla-blueprint.md)   	| Blueprint    | Content management system (CMS)    |
+| [LimeSurvey](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-limesurvey-blueprint.md)   	| Blueprint    | Web-based Surveys    |
+| [Mahara](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-mahara-blueprint.md)   	| Blueprint    | Portfolio Creation and Hosting    |
+| [MODX](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-modx-blueprint.md)   	| Blueprint    | Content management system (CMS)    |
+| [MyBB](../Ecosystem Partners/Marketplace Guides/getting-started-with-bitnami-mybb-blueprint.md)   	| Blueprint    | Discussion Forum    |
 | [ownCloud](../Ecosystem Partners/Marketplace Guides/getting-started-with-owncloud-blueprint.md)   	| Blueprint    | File sync & share   |
 | [Wordpress](../Ecosystem Partners/Marketplace Guides/getting-started-with-wordPress-blueprint.md)   	| Blueprint    | Web publishing platform   |
 
