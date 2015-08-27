@@ -14,6 +14,14 @@ This Blueprint is for the actual installation and activation of the IPS service 
 ### Prerequisites
 * A CenturyLink Cloud Account
 * Managed or Unmanaged Operating System Services on the Virtual Machine
+* One of the Supported Operating Systems listed below on the Virtual Machine
+* Add the following Firewall Rules to allow agent download, activation and management.
+
+  Installing Virtual Machine - dsm.client-security.ctl.io 443/tcp
+  
+  Installing Virtual Machine - activate.dsm.client-security.ctl.io 443/tcp
+  
+  Installing Virtual Machine - relay.dsm.client-security.ctl.io 443/tcp
 
 ### Supported Managed Operating Systems
 * Red Hat Enterprise Linux 5 (64-bit only)
@@ -47,17 +55,23 @@ This Blueprint is for the actual installation and activation of the IPS service 
 
 5. An email notification is sent to the initiator of the Blueprint for both queuing and completion.
 
+### Support
+
+If you need assistance, please send initial contact to [help@ctl.io](mailto:help@ctl.io).  You will receive an automated reply with step-by-step instructions on setting up a Zendesk user account.  The Zendesk account will allow for future engagements with customer service.
+
+Note: If you do not setup a Zendesk user account, support requests may get filtered as spam in the ticketing system.
+
 ### Frequently Asked Questions
 
 **Can I make modifications to my existing policy to further customize or tune it?**
 
 Not at this time, if you'd like to see this feature, please contact [features@ctl.io](mailto:features@ctl.io).
 
-** What does the IPS Product Provide?**
+**What does the IPS Product Provide?**
 
 Platform CenturyLink’s IPS service helps ensure secure protection against your Virtual Machine (VM) from known intrusion patterns that hackers utilize. It also allows you to spend less time on the maintenance of your system, instead allowing you to focus on the tasks for your core business. We will do the patching and ensure that all agents have up-to-date signatures for possible attacks.
 
-** How do I configure the notifications settings to send alerts to?**
+**How do I configure the notifications settings to send alerts to?**
 
 Follow the process in the [Configuring IPS Notifications article](configuring-ips-notifications.md).
 
