@@ -26,4 +26,3 @@ Get live support with any integration questions directly from our community of e
 
 [![Slack](../../images/ecosystem_program_resources/ctl-community-slack-screenshot.png)](http://ctl-community-slackin.useast.appfog.ctl.io/)
 
-<img src="">
