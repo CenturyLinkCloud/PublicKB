@@ -13,7 +13,7 @@ This document is for users of AppFog v1. This document does not apply to the cur
 ### Documentation
 
 <h3 id="startonweb">How to Get Started Using the Web Console</h3>
-<p>If you haven’t already, <a href="http://console.appfog.com/signup">create an account</a>.</p>
+<p>You must already have an AppFog v1 account. CenturyLink Cloud’s Platform based on Cloud Foundry is moving to CenturyLinkCloud.com. You can signup for the next generation of AppFog on the <a href="https://www.ctl.io/appfog">Product Page</a>.</p>
 <h4>1. Go to your <a href="https://console.appfog.com/login">Web Console</a>.</h4>
 <h4>2. Choose an <a href="https://console.appfog.com/apps/new">application</a>.</h4>
 <p>Take your pick from our App or Framework Jumpstarts.</p>
@@ -23,7 +23,7 @@ This document is for users of AppFog v1. This document does not apply to the cur
 <p>You’ll be able to use a custom domain after you create your app.</p>
 <p>You’re done! Give us a couple of minutes to deploy your new app. Once you’re in the app console, hit the “Visit Live Site” button.</p>
 <h3 id="startonafcli">How to Use Jumpstarts with the AF CLI (AppFog Command Line Interface) Tool</h3>
-<p>If you haven’t already, <a href="http://console.appfog.com/signup">create an account</a>. And then <a href="appfog-cli-tool-manual.md">install our command line tool</a>.</p>
+<p>If you haven’t already, <a href="appfog-cli-tool-manual.md">install our command line tool</a>.</p>
 <p>Below are instructions for quickly setting up your application using our AF CLI tool. Below that we're also providing a list of links to our source code for some example apps which you can use to set up test applications to get started:</p>
 <h4>1. Login</h4>
 <p><code>$ af login</code></p>
