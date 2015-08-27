@@ -54,7 +54,6 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
   are used for all IaaS changes directed by BOSH.  Deploys cannot be done using accounts with requiring two-factor authentication.
 * **Dedicated Network** - Due to the size of typical PCF deploys and some IP address management concerns we require an entire VLAN be dedicated to this install.  PCF servers will reside on the top half of this class-C.
 * **CPU, RAM, and Storage Resources** - A full PCF deploy requires at least 75CPU, 128GB RAM, and 1.25TB disk.  For a successful install your account resources must be sufficient to cover this.
-* **Deploy to Primary Datacenter** - PCF can only be deployed to your primary datacenter as part of this early access release.
 
 #### Steps
 

@@ -99,15 +99,16 @@ You can achieve a single-button deployment of a new cluster including a master h
 
 8. **Web Command Center** (optional)
 
-  If you elected to install the optional web command center you may access it via http on port 20800.  Authenticate using the `gpadmin` user and your administrative credentials
+  If you elected to install the optional web command center you may access it via http on port 20800.  Authenticate using the `gpmon` user and your administrative credentials
 
   <img src="../../images/pivotal_greenplum/web_command_center.png" style="border:0;">
 
 8. **Demo Application** (optional)
 
-  If you elected to install the optional demo application you may access the database from the master server.  Follow the [Pivot Greenplum demo lab](https://github.com/pivotalsoftware/pivotal-samples/tree/master/Labs) to quickly get up to speed on the Greenplum platform.  Authenticate using the `gpadmin` user and your administrative credentials
+  If you elected to install the optional demo application you may access the database from the master server.  Follow the [Pivotal Greenplum demo lab](https://github.com/pivotalsoftware/pivotal-samples/tree/master/Labs) to quickly get up to speed on the Greenplum platform.  ssh to your host as `root` then authenticate using the `gpadmin` user and your administrative credentials.
 
   ```
+  [root@localhost #]$ su - gpadmin
   [gpadmin@localhost ~]$ psql default
   psql (8.2.15)
   Type "help" for help.
