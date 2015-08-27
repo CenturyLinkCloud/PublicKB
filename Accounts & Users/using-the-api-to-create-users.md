@@ -9,13 +9,13 @@
 ### Description
 The CenturyLink Cloud API can be used to perform the same actions programmatically as you can from within the Control Portal. The below example shows how to create a user via the API.
 
-For more details about the specific API functions used below, you may reference the complete [API documentation](https://www.centurylinkcloud.com/api-docs/v1/).
+For more details about the specific API functions used below, you may reference the complete [API documentation](https://www.ctl.io/api-docs/v1/).
 
 ### Steps
 Creating a user requires two steps.  First, you must authenticate to the API (v1) using an account with appropriate permissions to create a user in the target account.  Second, create the account.
 
 #### 1. Prerequisites
-Prior to creating a user via the API, you must have an API user created.  You will need the API key and password.  You can find directions on how to do that [here](https://www.centurylinkcloud.com/knowledge-base/accounts-&-users/creating-users/).
+Prior to creating a user via the API, you must have an API user created.  You will need the API key and password.  You can find directions on how to do that [here](https://www.ctl.io/knowledge-base/accounts-&-users/creating-users/).
 
 #### 2. Authentication
 While there are multiple ways to authenticate, this example uses the REST method.  In PowerShell you can authenticate using this code:
@@ -30,7 +30,7 @@ Be sure to replace the API key and password in the string.  Once you authenticat
   StatusCode : 0
   ```
 #### 3. Create User
-The API for creating a user is available at [https://www.centurylinkcloud.com/api-docs/v1/#users-createuser](https://www.centurylinkcloud.com/api-docs/v1/#users-createuser).
+The API for creating a user is available at [https://www.ctl.io/api-docs/v1/#users-createuser](https://www.ctl.io/api-docs/v1/#users-createuser).
 
 At a minimum, you must specify UserName, AccountAlias, EmailAddress, FirstName, and LastName.  While it is not required, adding Roles at the same time is recommended.  A sample PowerShell call may look like this:
   ```

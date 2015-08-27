@@ -9,34 +9,8 @@
 ### Purpose
 
 - Partner Resources available for Sales Support, Account Management, Product Information, Platform Support and Billing.  
-
-
-### Benefits
-
 - Partners know the resources that are available and how to engage them  throughout the customer life cycle.
 - Improves sales acceleration and customer satisfaction.
-
-
-### Audience
-
-- Sales
-- Sales Operations
-- Engineering 
-
-
-### What's Included
-
-- Partner Resources – At a Glance.
-- The roles, responsibilities and contact information for each Partner Resource.
-
-
-### Partner Action Items
-
-- Understand the Partner Resources and capabilities available to support and close CenturyLink Cloud deals.
-- Insure your employees know how to contact each Partner Resource.
-
-
----
 
 
 ## Definitions and Contact Information
@@ -47,7 +21,7 @@
 
 The Partner Resource Center (PRC) is your central point of contact for Sales Support. You can reach them at:
 
-- cloudpartnerhelp@centurylinkcloud.com
+- cloudpartnerhelp@centurylink.com
 
 ## Partner Resource Center (PRC) Team
 
@@ -126,7 +100,7 @@ Contact your CenturyLink Channel Manager via email.
 
 ## Platform Information Source and Contact
 
-The [CenturyLink Cloud website](http://www.centurylinkcloud.com) is an excellent source of information for platform-related questions including: 
+The [CenturyLink Cloud website](http://www.ctl.io) is an excellent source of information for platform-related questions including: 
 
 - Up-to-date product announcements
 - Knowledge Base (KB) 

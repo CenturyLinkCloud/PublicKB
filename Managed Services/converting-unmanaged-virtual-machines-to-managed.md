@@ -7,13 +7,17 @@
 }}}
 
 ### Overview
-[CenturyLink Cloud Managed Operating System Services](//www.centurylinkcloud.com/managed-services/operating-system/) provide maintenance and management of your Windows & Red Hat cloud servers, 24x7.  For a flat hourly fee, our engineers will perform common administrative functions on your behalf. Don’t worry about applying the latest patches, updating servers with the latest anti-virus tools, or keeping servers compliant with corporate access policies - we’ll do it for you!
+[CenturyLink Cloud Managed Operating System Services](//www.ctl.io/managed-services/operating-system/) provide maintenance and management of your Windows & Red Hat cloud servers, 24x7.  For a flat hourly fee, our engineers will perform common administrative functions on your behalf. Don’t worry about applying the latest patches, updating servers with the latest anti-virus tools, or keeping servers compliant with corporate access policies - we’ll do it for you!
 
-Customers may wish to enable [Managed Operating System Services](//www.centurylinkcloud.com/managed-services/operating-system/) on virtual machines already deployed in an **unmanaged** state to offload critical IT functions.  In order to facilitate this process the CenturyLink Cloud platform provides an automated [Blueprint](//www.centurylinkcloud.com/blueprints/) to convert unmanaged virtual machines into a managed operating system.
+Customers may wish to enable [Managed Operating System Services](//www.ctl.io/managed-services/operating-system/) on virtual machines already deployed in an **unmanaged** state to offload critical IT functions.  In order to facilitate this process the CenturyLink Cloud platform provides an automated [Blueprint](//www.ctl.io/blueprints/) to convert unmanaged virtual machines into a managed operating system.
 
 ### Important Information
 * Conversion from **Managed** to **Unmanaged** Operating System Services is not currently a supported feature.
 * It is advised that customers perform the conversion during a maintenance window due to potential impact on running services.
+* It is recommended to create a snapshot of the VM before running the management process
+* Normally, a single CPI Blueprint will take between ten and thirty minutes to complete. However, this can be influenced by jobs in the  queue
+* To preconfigure network access, prior to making an unmanaged VM Managed, please be sure at least one [new, managed server](../Managed Services/created-a-managed-server-now-what.md) has been created in the desired VLAN/Network.
+
 
 ### Compatibility Matrix
 The table below provides a matrix of the supported locations and Operating Systems for conversion.
@@ -73,7 +77,7 @@ GB3 - Great Britain (Slough)<p>VA1 - US East (Sterling)<p>UC1 - US West (Santa C
     ![queue linux conversion](../images/converting-unmanaged-virtual-machines-to-managed-10.png)
 
 ### Validation
-Customers will receive a notification email once the virtual machine is successfully converted to Managed.  
+Customers will receive a notification email once the virtual machine is successfully converted to Managed.
 ```
 Your request "Managed server build VA1CCVARHEL01" has successfully completed.
 ```

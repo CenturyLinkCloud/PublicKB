@@ -1,6 +1,6 @@
 {{{
   "title": "Self-Service VM Import / OVF Requirements",
-  "date": "5-7-2015",
+  "date": "6-24-2015",
   "author": "Jared Ruckle",
   "attachments": [],
   "contentIsHTML": false
@@ -24,7 +24,7 @@ However, some OVFs may still require significant “prep” work, depending on t
 * All disks should be SCSI (not IDE)
 * Only one SCSI controller is allowed
 * Must have a single NIC
-* Only a single image should be present; multiple images are not supported
+* Only a single image should be present; multiple images (for example a vApp) are not supported.  Refer to the [Open Virtualization Format White Paper](http://www.dmtf.org/sites/default/files/standards/documents/DSP2017_2.0.0.pdf) for more information.
 * The OVF file name must not include a "."
 * Ping should not be blocked on the firewall
 * The VMware hardware version (vmx) must be 8 or lower
@@ -39,6 +39,7 @@ However, some OVFs may still require significant “prep” work, depending on t
 
 ### Specific Requirements for Red Hat 6 64-bit OVFs
 * Ensure SSH is enabled and not firewalled
+* Prior to uploading the OVF for import, delete the file 70-persistent-net.rules (rm /etc/udev/rules.d/70-persistent-net.rules)
 
 ### Other Notes
 * In addition, the import function will enable the following capabilities if they are not available on your OVF image:
@@ -49,3 +50,4 @@ However, some OVFs may still require significant “prep” work, depending on t
 * All OVF files will be stored in the FTP server located in your account's home data center
 * All OVF files will be deleted 5 days after initial import; please import your images soon after completion of the FTP transfer
 * Managed services are not available on imported VMs
+* Import failures can be caused by conflicting settings on the OVF. To assist with troubleshooting a failured OVF, try to import the OVF back into the original virtualized environment and gather logs from this activity.

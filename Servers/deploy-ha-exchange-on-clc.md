@@ -12,7 +12,7 @@ Exchange 2013 offers excellent high availability and disaster recovery for enter
 
 ### Prerequisites
 
-Exchange 2013 requires an Active Directory environment.  AD can easily be automated through the [CLC create server wizard](../servers/creating-a-new-enterprise-cloud-server.md) or through [deploying an AD blueprint](../blueprints/deploy-microsoft-windows-2012-active-directory-domain-services.md).  For the purpose of this article, an AD forest exists already, or has been deployed from a CLC blueprint.  A domain controller will be required in each datacenter (and minimal resources should suffice, depending on environment).  This article also assumes you have Domain Admin permissions (and Exchange Organization Admin).  Load balancers and additional mailbox servers could be added to this design for larger organizations.
+Exchange 2013 requires an Active Directory environment.  AD can easily be automated through the [CLC create server wizard](../Servers/creating-a-new-enterprise-cloud-server.md) or through [deploying an AD blueprint](../blueprints/deploy-microsoft-windows-2012-active-directory-domain-services.md).  For the purpose of this article, an AD forest exists already, or has been deployed from a CLC blueprint.  A domain controller will be required in each datacenter (and minimal resources should suffice, depending on environment).  This article also assumes you have Domain Admin permissions (and Exchange Organization Admin).  Load balancers and additional mailbox servers could be added to this design for larger organizations.
 
 ### Design
 
@@ -22,7 +22,7 @@ Our design for a basic Exchange 2013 DR/HA environment will involve 3 datacenter
 
 ### CLC Server Creation
 
-Create an Exchange server in UT1 & another in IL1 with the [CLC create server wizard](../servers/creating-a-new-enterprise-cloud-server.md).  Since both servers will host the Client Access and Mailbox roles, you will want to start them with at least 2CPU/16GB of RAM each.  Join both servers to Active Directory.  Create the 3rd server in NY1 for the FSW – this can be done with minimal resources, such as 1CPU/2GB of RAM, and should also be domain joined.
+Create an Exchange server in UT1 & another in IL1 with the [CLC create server wizard](../Servers/creating-a-new-enterprise-cloud-server.md).  Since both servers will host the Client Access and Mailbox roles, you will want to start them with at least 2CPU/16GB of RAM each.  Join both servers to Active Directory.  Create the 3rd server in NY1 for the FSW – this can be done with minimal resources, such as 1CPU/2GB of RAM, and should also be domain joined.
 
 ![Server Menu](../images/deploy-ha-exchange-on-clc-2.png)
 
@@ -32,7 +32,7 @@ Note – if these are the first servers in a datacenter for your account, then a
 
 ### CLC Firewall Policies
 
-Each server will need to be able to communicate with the subnet that the other two servers are on.  In this example, we will [create Cross Datacenter firewall policies](../network/creating-cross-data-center-firewall-policies.md) that open up each /24 subnet to each other.
+Each server will need to be able to communicate with the subnet that the other two servers are on.  In this example, we will [create Cross Datacenter firewall policies](../Network/creating-cross-data-center-firewall-policies.md) that open up each /24 subnet to each other.
 
 ![Network Menu](../images/deploy-ha-exchange-on-clc-4.png)
 
@@ -54,11 +54,11 @@ Install Exchange 2013 on both servers in UT1/IL1 using the [setup wizard](https:
 * A record for OWA
 * MX records, which could point to an Anti-Spam cloud
 
-[Request the NOC to add a PTR record](../support/requesting-a-public-dns-ptr-record.md):
+[Request the NOC to add a PTR record](../Support/requesting-a-public-dns-ptr-record.md):
 
 * Create two PTR records by entering the IP address of each server transmitting mail to the Internet and the FQDN (external CAS URL; IE, the A record for OWA).  The PTR record will provide a valid reverse lookup for spam checks when other email systems receive your email.
 
-Both Exchange servers will need to [add two public IP’s](../network/how-to-add-public-ip-to-virtual-machine.md) each.
+Both Exchange servers will need to [add two public IP’s](../Network/how-to-add-public-ip-to-virtual-machine.md) each.
 
 ![Public IP Menu](../images/deploy-ha-exchange-on-clc-7.png)
 

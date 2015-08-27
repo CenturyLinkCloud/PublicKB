@@ -4,24 +4,19 @@
   "author": "Chris Sterling",
   "attachments": [],
   "related-products" : [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
-
-### IMPORTANT NOTE
-
-AppFog v2, the upcoming CenturyLink Cloud integrated public Platform-as-a-Service (PaaS), is not available to all customers at this time. We are current in a Limited Beta program with specific customers. AppFog v2 will be available in Open Beta later in 2015.
-
-The current AppFog service at [http://www.appfog.com/](http://www.appfog.com/) is still available and will continue to be in service even after AppFog v2 is made generally available. Please feel free to sign up for the current AppFog service [here](https://console.appfog.com/signup).
 
 ### Audience
 
-Currently, this article is to support customers in the Limited Beta program.
+Application developers
 
-### Adding a Team Member
+### Adding an AppFog Member from Account
 
-Many software development efforts involve a team or teams that need access to the deployment platform. To add team members to AppFog they must have existing user credentials created for them on the Control Portal account. Please go to [this article](../Accounts & Users/creating-users.md) for creating user credentials in your account.
+Many software development efforts involve a team or teams that need access to the deployment platform. To add AppFog members they must have existing user credentials on the Control Portal Account. Please go to [this article](../Accounts & Users/creating-users.md) for creating user credentials in your Control Portal Account.
 
-To add a member to AppFog, you must have the AppFog Admin role level permissions. If you have these permissions set for your account, go to the Members tab on the US East region and follow these steps:
+To add a member to AppFog, you must have the AppFog Admin role level permissions. If you have these permissions set for your account, go to the Members tab of your chosen region (US East or US West) and follow these steps:
 
 1. Click the "invite member" button.
 1. Enter username of user's Control Portal credentials
@@ -32,7 +27,7 @@ To add a member to AppFog, you must have the AppFog Admin role level permissions
 1. Click "add member" button
 1. They should now be a member of your AppFog organization
 
-### Setting a Member's Role
+### Setting an AppFog Member's Role
 
 To update a user's AppFog role level permissions, follow these steps:
 
@@ -43,3 +38,13 @@ To update a user's AppFog role level permissions, follow these steps:
   * Auditor: Read-only access to org info and reports
 1. Click "apply" button
 1. Their permissions should now be updated on the row
+
+### Managing Space Membership
+
+Within each AppFog region (US East and US West) there are Spaces. A Space represents a container for managing Application deployments and service instances. Each Space can have its own membership. For instance, you could have specific members in a "Developer" Space that don't have access to manage the "Production" Space.
+
+To manage membership of a Space, click on a Space from the left-side navigation or from the Spaces grid on the region view. Adding a member and updating their role in the Space is the same as managing membership to an AppFog region except the names and description of the Space roles:
+
+* Space Manager: Can invite/manager users and view information about applications and service instances
+* Space Developer: Can deploy and manage applications and service instances
+* Space Auditor: Can view information about applications and service instances

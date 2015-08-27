@@ -1,9 +1,10 @@
-{{{
+﻿{{{
   "title": "Managed Operating System - Frequently Asked Questions",
   "date": "4-22-2015",
   "author": "Jacob Kenner",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 Here are a few frequently asked questions for our managed OS service.
@@ -19,11 +20,21 @@ CenturyLink’s Managed OS service helps you spend less time on the IT tasks tha
 * Patch/Update Management – With support available for all critical and vendor-recommended patches, we ensure only OS vendor-recommended patches are installed.
 * Security – We secure the OS with industry-standard anti-virus protection, regular virus and malware signature updates, and additional OS-level hardening to mitigate risk.
 
+**How do I pay for a managed VM?**
+
+Customers pay for managed operating system and managed applications on an hourly basis. For managed OS, customers pay the management charge __whenever the server is powered on__. Licensing fees continue whether the server is powered on or off.
+
+For managed applications, customers pay the management charge __for as long as the managed application is on the server (whether the server is powered on or off)__.
+
+Please review the [cloud pricing catalog](//www.ctl.io/pricing) for the billing type of each managed product!
+
 **How do I create a Managed VM?**
 
-From the Control Portal menu, select “Create Server.”  Then, select the data center, group membership, and other VM properties.  Select a data center that supports managed services, and then click the “managed server” element to “Yes.” The operating system drop-down menu will automatically show available options. Choose your version, and then proceed with the remainder of the server creation process.
+For starters, you need to identify a data center that supports managed operating systems. In the [data centers](//www.ctl.io/data-centers/) page, find the filter in the Cloud category called Public Cloud Managed OS.
 
-After creating a managed VM, the VM will be 'Under Construction' while background processes are completed. You will not have access to the server during that time; you will receive a notification via email once the operation has completed. Please allow up to a 30 minutes. If there are any issues beyond that time, contact us via email <a href="mailto:request@centurylink.com">request@centurylink.com</a> or by phone at the following numbers. In the US: 888.638.6771; UK: +44.118.322.6100; Singapore: +65.6305.8099. Please do not email the CenturyLink Cloud NOC or raise the issue via chat - faster responses to inquiries will come from the email address and support numbers above.
+From the Control Portal menu, select “Create Server.”  Then, select the data center, group membership, and other VM properties.  Select the data center that supports managed services and then click the “managed server” element to “Yes.” The operating system drop-down menu will automatically show available options. Choose your version, and then proceed with the remainder of the server creation process.
+
+After creating a managed VM, the VM will be 'Under Construction' while background processes are completed. You will not have access to the server during that time; you will receive a notification via email once the operation has completed in a few hours. If there are any issues beyond that time, contact us via email <a href="mailto:request@centurylink.com">request@centurylink.com</a> or by phone at the following numbers. In the US: 888.638.6771; UK: +44.118.322.6100; Singapore: +65.6305.8099. Please do not email the CenturyLink Cloud NOC or raise the issue via chat - faster responses to inquiries will come from the email address and support numbers above.
 
 
 **What if I don’t see an option for Managed OS in the CenturyLink Cloud Control Panel?**
@@ -33,14 +44,15 @@ There could be a few causes:
 * Be sure you are creating the server in a data center that supports managed services.
 * It is possible your company has not yet executed a Master Services Agreement (MSA) with CenturyLink Technology Solutions. To obtain a MSA – or if you believe you should already have one in place – please contact a CenturyLink Sales Representative toll free at:
 
-	* United States: 1-855-287-2541
-	* Canada: 1-877-387-3764
-	* Europe, Middle East &amp; Africa: +44 (0) 207 400 5600
-	* Japan: +81 3 5214 0180
-	* Hong Kong: +852 3079 4461
-	* Singapore: +65 6591 8824
+    * United States: 1-855-287-2541
+    * Canada: 1-877-387-3764
+    * Europe, Middle East &amp; Africa: +44 (0) 207 400 5600
+    * Japan: +81 3 5214 0180
+    * Hong Kong: +852 3079 4461
+    * Singapore: +65 6591 8824
 
-Is there anything that I cannot do in the Control Portal with a managed VM?
+**Is there anything that I cannot do in the Control Portal with a managed VM?**
+
 A managed virtual machine cannot be cloned, archived, or converted to a template. Also, the "time to live" option is not available when creating a new managed server. At this time, you cannot create a managed server within a Cloud Blueprint.
 
 **How do I log into my server?**
@@ -80,7 +92,7 @@ Files can be transferred by simply drag and drop in Windows Explorer from your r
 
 **Who do I contact if I have trouble with my Managed VM?**
 
-The CenturyLink Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at 1-888-638-6771, or send email to request@savvis.com for Managed OS issues. If there is an outage, email can be sent to incident@savvis.com.
+The CenturyLink Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at 1-888-638-6771, or send email to request@centurylink.com for Managed OS issues. If there is an incident, email can be sent to incident@centurylink.com.
 
 **How can I remove Managed Services from a VM?**
 
@@ -92,7 +104,7 @@ Managed VMs will be noted with an asterisk (*) in front of the server name. For 
 
 **My VM shows under construction in Control, but shows that the build has completed successfully?**
 
-On Managed VMs, there are additional tasks that is being processed in the background in order to fully integrate into the Managed system, once this is complete Control will reflect it as active and manageable. 
+On Managed VMs, there are additional tasks that is being processed in the background in order to fully integrate into the Managed system, once this is complete Control will reflect it as active and manageable.
 
 **Can I join Managed Servers to my own domain?**
 

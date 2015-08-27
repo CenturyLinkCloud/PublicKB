@@ -103,4 +103,8 @@ To change the the TRUSTe Certified Logo, do the following:
 1. Go to Account > Settings and select "Customer Support"
 2. Use the image editor, and click on the insert image icon (3rd from the right) to insert your image. Recommended image size is 142 pixels wide by 45 pixels high.
 
+#### Other Useful White Labeling Article:
 
+[Learn More About White Labeling Cloud Services Estimator](https://www.ctl.io/blog/post/cloud-services-estimator-now-open-source/)
+
+[Learn More About White Labeling KB and How To Make Your Own Cloud](https://www.ctl.io/blog/post/take-control-channel-partners-and-enterprise-customers-can-make-our-cloud-their-own/)
