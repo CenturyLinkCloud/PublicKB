@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Conexio Everywhere - Blueprint",
-  "date": "8-25-2015",
+  "date": "8-28-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
