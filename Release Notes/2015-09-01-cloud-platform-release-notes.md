@@ -32,12 +32,6 @@
 
 ### Enhancements (6)
 
-* __Orchestrate.__ Orchestrate, our CenturyLink Cloud Database offering, has upgraded aspects of its infrastructure:
-    + Upgraded Kafka to version 0.8.2.1
-    + Upgraded ElasticSearch to version 1.7.1
-    + Upgraded Java runtime to version 8
-    + Upgraded Hadoop to version 2.6.0
-
 * __SafeHaven.__ Along with new capabilities in our CenturyLink Cloud Disaster Recover product SafeHaven, there have also been some enhancements including:
     + Improved rsync script for Linux protection
     + Support protection of servers with multiple GPT (GUID Partition Table) disks
