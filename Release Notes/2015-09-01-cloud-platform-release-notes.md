@@ -18,13 +18,9 @@
   
   __Automation__ Added automation of LRA (Local Replication Agent), makestub and In2Out installation.
 
-* __Intrusion Prevention: Limited Beta.__ The Intrusion Prevention Beta has launched. Participants will be able to install instances of host-based Intrusion Prevention on their RHEL 5/6 (64 bit) or Window 2008/2012 (64-bit) virtual machines during the beta program. Our Intrusion Prevention will monitor and use data on the incoming and outgoing server traffic of your host to detect and block known vulnerabilities.
+* __Intrusion Prevention: Limited Beta.__ The Intrusion Prevention Beta has launched. Participants will be able to install instances of host-based Intrusion Prevention on their RHEL 5/6 (64 bit) or Window 2008/2012 (64-bit) virtual machines during the beta program. Our Intrusion Prevention will monitor and use data on the incoming and outgoing server traffic of your host to detect and block known vulnerabilities. For more information, visit our [product page on the CenturyLink Cloud website](https://www.ctl.io/intrusion-prevention-service/).
 
-For more information, visit our [product page on the CenturyLink Cloud website](https://www.ctl.io/intrusion-prevention-service/).
-
-* __MySQL-compatible Database-as-a-Service: Limited Beta.__ The MySQL-compatible database-as-a-service Beta has launched. Participants can access an active 1vCPU/1GB MySQL instance with the click of a button. Each free beta subscription includes up to 100MB of storage and up to 100 concurrent connections. We offer the option to secure the connection using a provided self-signed certificate and will maintain daily backups held locally for 7 days.  
-
-For more information and to sign up, visit our [product page on the CenturyLink Cloud website](https://www.ctl.io/dbaas/).
+* __MySQL-compatible Database-as-a-Service: Limited Beta.__ The MySQL-compatible database-as-a-service Beta has launched. Participants can access an active 1vCPU/1GB MySQL instance with the click of a button. Each free beta subscription includes up to 100MB of storage and up to 100 concurrent connections. We offer the option to secure the connection using a provided self-signed certificate and will maintain daily backups held locally for 7 days. For more information and to sign up, visit our [product page on the CenturyLink Cloud website](https://www.ctl.io/dbaas/).
 
 * __WordPress Limited Beta Updates.__ The WordPress Beta is continuing to evolve based on program participant feedback and production environment learnings. There have been a few updates noteworthy to discuss here:
 
@@ -37,37 +33,32 @@ For more information and to sign up, visit our [product page on the CenturyLink 
 ### Enhancements (6)
 
 * __Orchestrate.__ Orchestrate, our CenturyLink Cloud Database offering, has upgraded aspects of its infrastructure:
-
-    __Upgraded Kafka to version 0.8.2.1__
-    
-    __Upgraded ElasticSearch to version 1.7.1__
-    
-    __Upgraded Java runtime to version 8__
-    
-    __Upgraded Hadoop to version 2.6.0__
+    + Upgraded Kafka to version 0.8.2.1__
+    + Upgraded ElasticSearch to version 1.7.1__
+    + Upgraded Java runtime to version 8__
+    + Upgraded Hadoop to version 2.6.0__
 
 * __SafeHaven.__ Along with new capabilities in our CenturyLink Cloud Disaster Recover product SafeHaven, there have also been some enhancements including:
     + Improved rsync script for Linux protection
     + Support protection of servers with multiple GPT (GUID Partition Table) disks
     + Solved the zero sync issue after reboot
 
-* __Operating System Updates.__ The following operating systems were updated with the latest vendor recommended patches. These updates will keep these operating systems up to date with current capabilities and make servers less susceptible to security vulnerabilities.
-
-The operating systems updated are:
-- RHEL 6
-- Ubuntu 12
-- Ubuntu 14
-- Windows 2012 R2
+* __Operating System Updates.__ The following operating systems were updated with the latest vendor recommended patches. These updates will keep these operating systems up to date with current capabilities and make servers less susceptible to security vulnerabilities. The operating systems updated are:
+    + RHEL 6
+    + Ubuntu 12
+    + Ubuntu 14
+    + Windows 2012 R2
 
 * __Operating System Automated Patching.__ The Automated patching names have been updated so that they are more intuitive. The new Blueprint names are:
-- Auto Patching for RHEL and CentOS
-- Auto Patching for Windows 2012
+    + Auto Patching for RHEL and CentOS
+    + Auto Patching for Windows 2012
 
 * __Managed Hadoop.__ Moved away from managed servers being required to run Hadoop. This change improves the realiability of Managed Hadoop builds.
 
 * __Cloud Platform.__ The CenturyLink Cloud platform is releasing with some updates including:
 
   __Drive Extension Only Allowed When No Snapshots__ Control Portal no longer allows extending a drive when there is an existing snapshot.
+  
   __Set Your Own Price__ The additional capability for users with System Billing Manager privileges or above to edit a price adjustment has been added to Control Portal.
 
 ### Ecosystem: New Blueprints (?)
