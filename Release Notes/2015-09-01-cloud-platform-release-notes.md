@@ -11,8 +11,11 @@
 * __SafeHaven Cloud Disaster Recovery.__ Our [CenturyLink Cloud Disaster Recovery product SafeHaven](https://www.ctl.io/disaster-recovery/) released some new capabilities:
 
   __Local Protection Group Cache__ Added the ability for production sites to add a small cache and finish the sync of protection groups.
+  
   __Resize the checkpoint pool size__ Now able to resize the checkpoint pool size.
+  
   __Add/Remove Server__ Now can add and remove Servers from existing Protection Group.
+  
   __Automation__ Added automation of LRA (Local Replication Agent), makestub and In2Out installation.
 
 * __Intrusion Prevention: Limited Beta.__ The Intrusion Prevention Beta has launched. Participants will be able to install instances of host-based Intrusion Prevention on their RHEL 5/6 (64 bit) or Window 2008/2012 (64-bit) virtual machines during the beta program. Our Intrusion Prevention will monitor and use data on the incoming and outgoing server traffic of your host to detect and block known vulnerabilities.
@@ -26,21 +29,27 @@ For more information and to sign up, visit our [product page on the CenturyLink 
 * __WordPress Limited Beta Updates.__ The WordPress Beta is continuing to evolve based on program participant feedback and production environment learnings. There have been a few updates noteworthy to discuss here:
 
   __New default URLs for WordPress sites__ Newly created WordPress sites are now given the default domain of <customer site>.<region>.wordpress.ctl.io.  This replaces the former AppFog-based domain name. PHPMyAdmin URLs for newly created sites are now given the default domain of <customer site>-phpmyadmin.wordpress.ctl.io and are secured with HTTPS.
+  
   __Upgraded to WordPress 4.3 "Billie"__ WordPress 4.3 was released on August 18th. All new WordPress sites in the Beta program will include version 4.3.
+  
   __Servers upgraded to Nginx 1.9__ WordPress web servers have been upgraded to Nginx version 1.9. Additionally, the Vagrant server for local development has also been upgraded to Nginx version 1.9 to ensure Development and Production parity.
 
 ### Enhancements (6)
 
 * __Orchestrate.__ Orchestrate, our CenturyLink Cloud Database offering, has upgraded aspects of its infrastructure:
-- Upgraded Kafka to version 0.8.2.1
-- Upgraded ElasticSearch to version 1.7.1
-- Upgraded Java runtime to version 8
-- Upgraded Hadoop to version 2.6.0
+
+    __Upgraded Kafka to version 0.8.2.1__
+    
+    __Upgraded ElasticSearch to version 1.7.1__
+    
+    __Upgraded Java runtime to version 8__
+    
+    __Upgraded Hadoop to version 2.6.0__
 
 * __SafeHaven.__ Along with new capabilities in our CenturyLink Cloud Disaster Recover product SafeHaven, there have also been some enhancements including:
-- Improved rsync script for Linux protection
-- Support protection of servers with multiple GPT (GUID Partition Table) disks
-- Solved the zero sync issue after reboot
+    + Improved rsync script for Linux protection
+    + Support protection of servers with multiple GPT (GUID Partition Table) disks
+    + Solved the zero sync issue after reboot
 
 * __Operating System Updates.__ The following operating systems were updated with the latest vendor recommended patches. These updates will keep these operating systems up to date with current capabilities and make servers less susceptible to security vulnerabilities.
 
