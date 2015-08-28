@@ -18,7 +18,7 @@ By leveraging [CenturyLink Cloud Public Blueprints](centurylink-cloud-public-blu
     * Windows 2008 R2 Enterprise 64-bit
     * Windows 2008 R2 Datacenter 64-bit
     * Windows 2012 Datacenter 64-bit
-    * Windows 2012 R2 Data Center 64-bit
+    * Windows 2012 R2 Datacenter 64-bit
 * A Windows 2008 or 2012 Active Directory Domain
 * TCP (Firewall) Connectivity between Domain Controller(s) and Target Virtual Machine(s)
 * vNIC Primary and Secondary DNS on Target Virtual Machine(s) is set to the Domain Controller(s) IP Addresses.
