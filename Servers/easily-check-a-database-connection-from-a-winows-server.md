@@ -6,10 +6,10 @@
   "contentIsHTML": false
 }}}
 
-###OVERVIEW
+### OVERVIEW
 A common troubleshooting step in database backed applications is making certain that communication is possible from the web or application server directly to the database. This article outlines a fast and easy way to verify connectivity from a Windows Server to a Microsoft SQL database.
 
-###Detailed Steps
+### Detailed Steps
 1. Create a new text folder on the server by right click-> New -> "New Text Document". You may want to name it similar to the database to be tested, in this instance it is simply called "test.txt"
 
 2. Change the file extension to .udl. You may need to enable "Show File Extensions" in the view pane

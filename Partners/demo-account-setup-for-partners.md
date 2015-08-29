@@ -11,9 +11,9 @@
 
 This Document explains how to setup a Demo Account in CenturyLink Cloud. It also gives step-by-step process for how to setup a Demo Account. Partners can use this account to perform demonstrations of CenturyLink Cloud for their customers.  
 
-###Demo Account Setup for Partners on CenturyLink Cloud
+### Demo Account Setup for Partners on CenturyLink Cloud
 
-The setup process for creating a demo account takes about 2 hours. 
+The setup process for creating a demo account takes about 2 hours.
 
 1. Create a Hyperscale Anti-Affinity Policy (just the policy):  https://t3n.zendesk.com/entries/40070050-CenturyLink-Cloud-Anti-Affinity-Policies
 2. Rename the network that the OpenVPN services are deployed to OpenVPN Services xx.xx.xxx.x/24 (vlan address required)

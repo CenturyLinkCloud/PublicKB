@@ -67,7 +67,7 @@
 
 * [**Centerity**](../Ecosystem Partners/Marketplace Guides/getting-started-with-centerity-blueprints.md) – Enhanced monitoring solution providing server metrics and a complete business intelligence layer across  server assets in the CenturyLink Cloud.
 
-###Open Source Contributions
+### Open Source Contributions
 Panamax enhancements from CenturyLink Labs - Selected highlights include:
 
 * [**Golang-builder**](http://www.centurylinklabs.com/small-docker-images-for-go-apps/) - creates a slim image from any Go project, dramatically reducing its file size compared to other methods.
