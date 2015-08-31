@@ -33,7 +33,7 @@ Some of the items below only occur when the server is new. If the server already
 * Our monitoring agent is installed and configured. Heartbeat monitoring of the agent commences.
 * 10 GB data01 is added
 * Bash is configured (Not for CPI)
-* The Managed Server is disconnected from the standard [RedHat Update Infrastructure](../servers/redhat-machines-report-they-are-not-registered-to-rhn-when-running-yum.md) and registered with RedHat Network.
+* The Managed Server is disconnected from the standard [RedHat Update Infrastructure](../Servers/redhat-machines-report-they-are-not-registered-to-rhn-when-running-yum.md) and registered with RedHat Network.
 * Operationally expected patches are installed.
 * Basic OS standardization is performed, including setting the locale and clock. (Not for CPI)
 * The majority of network services in the RHEL build are disabled. A newly provisioned system will only have the following network services running: Secure Shell, SNMP agent, and NTP Protocol. By default, our Managed RHEL servers will synchronize NTP against managed infrastructure NTP servers, which are polling multiple internet stratum 1 time sources. It is also configured, by default, to deny querying from other servers or clients. (Not for CPI)
