@@ -48,6 +48,7 @@
 * __Operating System Automated Patching.__ The Automated patching names have been updated so that they are more intuitive. The new Blueprint names are:
     + Auto Patching for RHEL and CentOS
     + Auto Patching for Windows 2012
+    
     ![Automated Patching](../images/2015-09-01-auto-patching.png)
 
 * __Managed Hadoop.__ Moved away from managed servers being required to run Hadoop. This change improves the realiability of Managed Hadoop builds.
