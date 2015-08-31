@@ -19,7 +19,7 @@ This document is for users of AppFog v1. This document does not apply to the cur
 <p>A Team Member's account can be any of these types:</p>
 <ul>
 <li><strong>Free:</strong> Free accounts were grandfathered in on Feb 28, 2013 with the following resources: 512MB Ram, 10 app instances, and 2 service instances.</li>
-<li><strong>Verified Default:</strong> A verified default account can be created by completing the <a href="https://console.appfog.com/signup">sign-up</a> and verification process. A verified default account has 0 resources to deploy apps or services, but can manage apps and services on a Team Leader's account to which they have been invited.</li>
+<li><strong>Default:</strong> We are no longer accepting new accounts on AppFog v1. CenturyLink Cloud’s Platform based on Cloud Foundry is moving to CenturyLinkCloud.com. A default account can be created by contacting <a href="https://support.appfog.com/hc/en-us">Support</a>. A default account has 0 resources to deploy apps or services, but can manage apps and services on a Team Leader's account to which they have been invited.</li>
 <li><strong>Paid:</strong> Any account belonging to a Basic, Developer, Silver, Gold, or Platinum plan can also be a member of a team, although typically Team Leader accounts are composed of Team Members with Free or Verified Default accounts.</li>
 </ul>
 <p>The Team Leader has administrative control over the members of their team. Only the Team Leader can invite or remove team members. The Team management functions are listed below.</p>
@@ -32,4 +32,4 @@ This document is for users of AppFog v1. This document does not apply to the cur
 <p>Once you've accepted an invitation to a Team, you can interact with the apps on the Team account from the command line tool. Simply use the "<code>-u</code>" flag:</p>
 <pre>$ af -u team@appfog.com update example-app</pre>
 <p>This command simply does an "<code>af update</code>", but acts on the "team@appfog.com" account.</p>
-<p>You can also stop, start, and restart apps, add services, modify environment variables, etc. The only command Team members don't have access to is <code>af passwd</code>. To see the full list of commands, check out the <a href="https://docs.appfog.com/getting-started/af-cli">af cli doc</a>.</p>
+<p>You can also stop, start, and restart apps, add services, modify environment variables, etc. The only command Team members don't have access to is <code>af passwd</code>. To see the full list of commands, check out the <a href="getting-started-overview.md/">af cli doc</a>.</p>

@@ -14,7 +14,7 @@ Centerity - “Centerity Monitor is a Next-Gen, End-to-End IT Monitoring Platfor
 http://www.Centerity.com
 
 #### Contact Centerity
-#####Centerity Sales:
+##### Centerity Sales:
 info-us@centerity.com
 
 +1-339-225-7006

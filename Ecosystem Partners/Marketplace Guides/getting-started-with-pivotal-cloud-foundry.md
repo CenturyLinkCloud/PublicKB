@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Pivotal Cloud Foundry - Blueprint",
-  "date": "8-3-2015",
+  "date": "8-28-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -10,7 +10,7 @@
 
 ### Overview
 
-After reading this article, the reader should feel comfortable deploying the Pivotal Cloud Foundry (PCF) on CenturyLink Cloud.
+After reading this article, the reader should feel comfortable deploying the Pivotal Cloud Foundry (PCF) 1.5.3 on CenturyLink Cloud.
 
 ### Partner Profile
 
@@ -54,7 +54,6 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
   are used for all IaaS changes directed by BOSH.  Deploys cannot be done using accounts with requiring two-factor authentication.
 * **Dedicated Network** - Due to the size of typical PCF deploys and some IP address management concerns we require an entire VLAN be dedicated to this install.  PCF servers will reside on the top half of this class-C.
 * **CPU, RAM, and Storage Resources** - A full PCF deploy requires at least 75CPU, 128GB RAM, and 1.25TB disk.  For a successful install your account resources must be sufficient to cover this.
-* **Deploy to Primary Datacenter** - PCF can only be deployed to your primary datacenter as part of this early access release.
 
 #### Steps
 

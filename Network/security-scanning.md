@@ -39,3 +39,7 @@ A: Yes, if you wish to run a Credentialed Vulnerability Scan.  Customers have th
 **Q: What is the expected response time to schedule and receive my Vulnerability Scan?**
 
 A: Please refer to our [Ticket Prioritization Matrix](../Support/ticket-prioritization-matrix.md)
+
+**Q: Do I need to supply URLs?**
+
+A: No.  Only IP addresses (internal or external) are needed.
