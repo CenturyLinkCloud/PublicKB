@@ -18,6 +18,8 @@
   
   __Automation__ Added automation of LRA (Local Replication Agent), makestub and In2Out installation.
 
+  ![SafeHaven](../images/2015-09-01-safehaven-pg-localcache.png) 
+
 * __Intrusion Prevention: Limited Beta.__ The Intrusion Prevention Beta has launched. Participants will be able to install instances of host-based Intrusion Prevention on their RHEL 5/6 (64 bit) or Window 2008/2012 (64-bit) virtual machines during the beta program. Our Intrusion Prevention will monitor and use data on the incoming and outgoing server traffic of your host to detect and block known vulnerabilities. For more information, visit our [product page on the CenturyLink Cloud website](https://www.ctl.io/intrusion-prevention-service/).
 
 * __MySQL-compatible Database-as-a-Service: Limited Beta.__ The MySQL-compatible database-as-a-service Beta has launched. Participants can access an active 1vCPU/1GB MySQL instance with the click of a button. Each free beta subscription includes up to 100MB of storage and up to 100 concurrent connections. We offer the option to secure the connection using a provided self-signed certificate and will maintain daily backups held locally for 7 days. For more information and to sign up, visit our [product page on the CenturyLink Cloud website](https://www.ctl.io/dbaas/).
@@ -53,7 +55,8 @@
 
   __Drive Extension Only Allowed When No Snapshots__ Control Portal no longer allows extending a drive when there is an existing snapshot.
   
-  __Set Your Own Price__ The additional capability for users with System Billing Manager privileges or above to edit a price adjustment has been added to Control Portal.
+  __Set Your Own Price: Edit Price Adjustments__ The additional capability for users with System Billing Manager privileges or above to edit a price adjustment has been added to Control Portal.
+  ![Set Your Own Price - Edit Adjustments](../images/2015-09-01-syop-edit-adjustment.png)
 
 ### Ecosystem: New Blueprints (5)
 
