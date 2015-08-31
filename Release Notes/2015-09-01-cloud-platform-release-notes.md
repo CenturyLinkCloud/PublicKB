@@ -80,7 +80,7 @@
 
 ### Bug Fixes (5)
 
-* __Blueprint that builds server then adds public IP address can fail__ We fixed an issue where the asynchronous nature of blueprint server builds could cuase adding of public IP address to fail.
+* __Blueprint that builds server then adds public IP address can fail__ We fixed an issue where the asynchronous nature of blueprint server builds could cause adding of public IP address to fail.
 
 * __Delete all Account Servers does not delete 'Queued For Delete Servers'__ The delete all Account Servers not accounts for the queued for delete servers.
 
