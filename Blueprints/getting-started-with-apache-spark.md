@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-##Overview
+## Overview
 
 Apache Spark is available for install on a standalone CentOS or RHEL VM in CenturyLink Cloud.
 
@@ -36,9 +36,9 @@ Apache Spark is available for install on a standalone CentOS or RHEL VM in Centu
 
 <br>
 
-###Details
+### Details
 
-After the build is complete, your SPARK_HOME will be located at: 
+After the build is complete, your SPARK_HOME will be located at:
 >/usr/local/spark-1.4.1-bin-hadoop2.4
 
 For more information on how to use Apache Spark, you can go [HERE](http://spark.apache.org/docs/latest/quick-start.html).

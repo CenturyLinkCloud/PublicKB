@@ -12,7 +12,7 @@
 Gitorious is free open source software for collaborating on Git. Deploy Gitorious and host your own repositories, manage merge requests, and use the built-in issue tracker and wiki to manage your projects from start to finish. The Gitorious package includes Gitorious, Apache, ImageMagick, MySQL, Git, Ruby, Rails, and RubyGems.
 
 ### Description
-Through the CenturyLink Blueprint integration, the Gitorious Stack provides a click-through solution to install and configure Gitorious on the Linux platform.
+Through the CenturyLink Blueprint integration, the Gitorious provides a click-through solution to install and configure Gitorious on the Linux platform.
 
 For more information, please visit [http://gitorious.org/](http://gitorious.org/)
 

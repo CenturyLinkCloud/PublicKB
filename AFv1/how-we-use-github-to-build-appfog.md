@@ -37,7 +37,7 @@ git fetch upstream
 
 That’s the basic setup.
 
-##Modifying The Code
+## Modifying The Code
 
 Now that I’ve got my personal fork configured, I can do whatever I’d like to it without disturbing our pristine shared repository… but to keep things organized and clear, I’m not just going to start tweaking bits and committing to master. Instead, I’ll work entirely on topic branches, regardless of how small or large a change is.
 
@@ -45,7 +45,7 @@ The following steps detail how to create a branch, update the code, push changes
 
 First, I’ll bring the master up to date using that upstream remote I created.
 <pre><code>
-#switch to master
+# Switch to master
 git checkout master</code></pre>
 
 
@@ -54,7 +54,7 @@ git pull upstream master</code></pre>
 
 This will pull all recently-merged changes from the main appfog/af-python-django repository into my personal fork. Next, I’ll create the branch that I’m going to work on. The naming of the branches takes a special structured form.
 
-###Branch Names
+### Branch Names
 
 We break down the work we do into four distinct types of tasks: bugs, features, chores and hotfixes.
 
@@ -70,7 +70,7 @@ The branch name itself consists of the branch type, a brief underscore-separated
 
 Suppose I wanted to fix a bug where shared users aren’t able to login to the site. After creating the Github Issue, I would name the branch bug/shared_users_cant_login_123 where 123 is the issue number.
 
-###Creating the Topic Branch
+### Creating the Topic Branch
 
 To create the branch, run git checkout -b <branch name>, where <branch name> is the type/description/id name we just described. For example, using our hypothetical bug fix task from before, I’d run:
 
@@ -84,7 +84,7 @@ After that, use the GitHub web interface to select the branch from the Current B
 
 So, start to finish, here are the steps to get some work done…
 
-####STEPS TO WORK ON THE BRANCH
+#### STEPS TO WORK ON THE BRANCH
 1) Checkout master: <code>git checkout master</code>
 
 2) Pull in updates: <code>git fetch upstream</code>
@@ -103,7 +103,7 @@ So, start to finish, here are the steps to get some work done…
 
 9) From GitHub, select the branch from the Current Branch dropdown and issue a Pull Request
 
-###Pull Request Guidelines
+### Pull Request Guidelines
 
 There are some basic guidelines around creating pull-requests.
 
@@ -151,13 +151,13 @@ namespace :configs do
 end
 </code></pre>
 
-###Merging
+### Merging
 
 Once the pull request is made, it is now the responsibility of the merge master to accept or reject the changes. Being the merge master is a rotating responsibility which involves looking over the pull requests, reviewing the code, and possibly asking the developer to make additional changes, add more unit test, etc.––this is our opportunity to discuss the changes in detail and introduce some standards and process for code quality.
 
 When a pull-request is merged in, we’ll do that onto a special qa branch in the main repository. Here we can get all willy-nilly and try out the code, blow away the changes, or what have you. If everything looks good, then we merge from the change set in the qa branch that’s in a known-good state, finally, into the master branch on the main project. The qa branch is also the target that our continuous integration system watches, which, when updated kicks off our continuous delivery pipeline.
 
-###Conclusion
+### Conclusion
 
 At AppFog we make it a practice to continually review and improve our workflows when we’re working with GitHub (or any tools for that matter). We are always looking for ways to reduce complexity while still getting the same or even better results.
 

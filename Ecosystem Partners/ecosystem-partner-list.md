@@ -1,6 +1,6 @@
 {{{
   "title": "Ecosystem Partner List",
-  "date": "08-25-2015",
+  "date": "08-26-2015",
   "author": "CenturyLink Ecosystem",
   "attachments": [],
   "contentIsHTML": false,
@@ -66,7 +66,9 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Codiad](../Ecosystem Partners/Marketplace Guides/getting-started-with-codiad-blueprint.md)   	| Blueprint    | Development Framework    |
 | [GitLab](../Ecosystem Partners/Marketplace Guides/getting-started-with-gitlab-blueprint.md)   	| Blueprint    | Code collaboration repository    |
 | [Jenkins](../Ecosystem Partners/Marketplace Guides/getting-started-with-jenkins-blueprint.md)   	| Blueprint    | Continuous integration system    |
+| [Phabricator](../Ecosystem Partners/Marketplace Guides/getting-started-with-phabricator-blueprint.md)   	| Blueprint    | Code Collaboration Suite    |
 | [Pivotal Cloud Foundry](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-cloud-foundry.md)   	| Blueprint    | Cloud Foundry PaaS    |
+| [Pootle](../Ecosystem Partners/Marketplace Guides/getting-started-with-pootle-blueprint.md)   	| Blueprint    | Translation Management   |
 | [Squash](../Ecosystem Partners/Marketplace Guides/getting-started-with-squash-blueprint.md)   	| Blueprint    | Code Analysis    |
 
 
@@ -91,6 +93,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [ElasticSearch](../Ecosystem Partners/Marketplace Guides/getting-started-with-elasticsearch-blueprint.md)   	| Blueprint    | Search Server    |
+| [JasperReports](../Ecosystem Partners/Marketplace Guides/getting-started-with-jasperserver-blueprint.md)   	| Blueprint    | BI Software Offering Web-based Reporting, Analytic Tools and Visualization, and Dashboarding    |
 | [Piwik](../Ecosystem Partners/Marketplace Guides/getting-started-with-piwik-blueprint.md)   	| Blueprint    | Web Analytics   |
 
 ### Cloud Storage
@@ -116,12 +119,14 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [CiviCRM](../Ecosystem Partners/Marketplace Guides/getting-started-with-civicrm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
 | [Diaspora](../Ecosystem Partners/Marketplace Guides/getting-started-with-diaspora-blueprint.md)   	| Blueprint    | Private social networking    |
 | [Fat Free CRM](../Ecosystem Partners/Marketplace Guides/getting-started-with-fat-free-crm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
+| [Horde Groupware Webmail](../Ecosystem Partners/Marketplace Guides/getting-started-with-horde-blueprint.md)   	| Blueprint    | Mail, Calendar, Address Book, Tasks, and Notes Communication Suite    |
 | [Live Helper Chat](../Ecosystem Partners/Marketplace Guides/getting-started-with-livehelperchat-blueprint.md)   	| Blueprint    | Live chat    |
 | [Microsoft Active Directory ](../Managed Services/getting-started-with-managed-active-directory.md)  	| Blueprint (Managed)   | Directory Service     |
 | [Microsoft Windows Server ](../Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
+| [NOALYSS](../Ecosystem Partners/Marketplace Guides/getting-started-with-noalyss-blueprint.md)  	| Blueprint   | Dboule Entry Accounting (ERP)	|
 | [OpenCart](../Ecosystem Partners/Marketplace Guides/getting-started-with-opencart-blueprint.md)  	| Blueprint   | eCommerce platform     |
-| [phpBB](../Ecosystem Partners/Marketplace Guides/getting-started-with-phpbb-blueprint.md)  	| Blueprint   | User discussion forum     |
-| [Red Hat Enterprise Linux](../Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
+| [OpenProject](../Ecosystem Partners/Marketplace Guides/getting-started-with-openproject-blueprint.md)  	| Blueprint   | Project Management     |
+| [OXID](../Ecosystem Partners/Marketplace Guides/getting-started-with-oxid-blueprint.md)  	| Blueprint   | eCommerce platform     |
 | [Sharelock](../Ecosystem Partners/Marketplace Guides/getting-started-with-sharelock-blueprint.md)  	| Blueprint   | Information sharing     |
 | [Simple Invoices](../Ecosystem Partners/Marketplace Guides/getting-started-with-simpleinvoices-blueprint.md)  	| Blueprint   | Invoice software     |
 | [VDIWorks](../Ecosystem Partners/Marketplace Guides/getting-started-with-vdiworks-console.md)  	| Blueprint   | Virtual Desktop Management     |
@@ -138,10 +143,27 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [concrete5](../Ecosystem Partners/Marketplace Guides/getting-started-with-concrete5-blueprint.md)   	| Blueprint    Content management system (CMS)    |
 | [Coppermine](../Ecosystem Partners/Marketplace Guides/getting-started-with-coppermine-blueprint.md)   	| Blueprint    | Photo Gallery    |
 | [Drupal](../Ecosystem Partners/Marketplace Guides/getting-started-with-drupal-blueprint.md)   	| Blueprint    | Content management system (CMS)    |
-| [DocuWiki](../Ecosystem Partners/Marketplace Guides/getting-started-with-dokuwiki-blueprint.md)   	| Blueprint    | Knowledge management system    |
+| [DocuWiki](../Ecosystem Partners/Marketplace Guides/getting-started-with-dokuwiki-blueprint.md)   	| Blueprint    | Knowledge Management System    |
 | [Joomla](../Ecosystem Partners/Marketplace Guides/getting-started-with-joomla-blueprint.md)   	| Blueprint    | Content management system (CMS)    |
+| [LimeSurvey](../Ecosystem Partners/Marketplace Guides/getting-started-with-limesurvey-blueprint.md)   	| Blueprint    | Web-based Surveys    |
+| [Mahara](../Ecosystem Partners/Marketplace Guides/getting-started-with-mahara-blueprint.md)   	| Blueprint    | Portfolio Creation and Hosting    |
+| [MODX](../Ecosystem Partners/Marketplace Guides/getting-started-with-modx-blueprint.md)   	| Blueprint    | Content management system (CMS)    |
+| [MyBB](../Ecosystem Partners/Marketplace Guides/getting-started-with-mybb-blueprint.md)   	| Blueprint    | Discussion Forum    |
+| [ocPortal](../Ecosystem Partners/Marketplace Guides/getting-started-with-ocportal-blueprint.md)   	| Blueprint    | Content management system (CMS)   |
+| [Open Atrium](../Ecosystem Partners/Marketplace Guides/getting-started-with-openatrium-blueprint.md)   	| Blueprint    | Forum and Knowledge Base   |
+| [OSQA](../Ecosystem Partners/Marketplace Guides/getting-started-with-osqa-blueprint.md)   	| Blueprint    | Forum and Knowledge Base   |
 | [ownCloud](../Ecosystem Partners/Marketplace Guides/getting-started-with-owncloud-blueprint.md)   	| Blueprint    | File sync & share   |
+| [phpBB](../Ecosystem Partners/Marketplace Guides/getting-started-with-phpbb-blueprint.md)  	| Blueprint   | User discussion forum	|
+| [phpList](../Ecosystem Partners/Marketplace Guides/getting-started-with-phplist-blueprint.md)  	| Blueprint   | Email Marketing	|
+| [Pimcore](../Ecosystem Partners/Marketplace Guides/getting-started-with-pimcore-blueprint.md)   	| Blueprint    | Content management system (CMS)   |
+| [Plone](../Ecosystem Partners/Marketplace Guides/getting-started-with-plone-blueprint.md)   	| Blueprint    | Content management system (CMS)   |
 | [Wordpress](../Ecosystem Partners/Marketplace Guides/getting-started-with-wordPress-blueprint.md)   	| Blueprint    | Web publishing platform   |
+
+
+### Operating Systems
+|:-	|:-	|
+| [Red Hat Enterprise Linux](../Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
+
 
 ### Other
 
