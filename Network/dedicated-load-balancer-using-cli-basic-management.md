@@ -39,10 +39,10 @@ This KB will go over the basics of creating a Load Balancer VIP and Services whe
   add service VA1ACMEWEB02_http_80 VA1ACMEWEB02 http 80
   ```
 
-4. Next, we will create the Virtual Server.  We will use the website name and port in the name for ease of management.
+4. Next, we will create the Virtual Server.  We will use the website name and port in the name for ease of management.  The Virtual Server VIP comes from the pool of private IP's provisioned by the NOC during deployment of the HA pair.
 
   ```
-  add lb vserver www-prod-acme_80 http 10.10.10.115 80
+  add lb vserver www-prod-acme_80 http 10.10.10.104 80
   ```
 
 5. Now that we have the Virtual Server object created, we need to bind both services to it.
