@@ -48,15 +48,16 @@
 * __Operating System Automated Patching.__ The Automated patching names have been updated so that they are more intuitive. The new Blueprint names are:
     + Auto Patching for RHEL and CentOS
     + Auto Patching for Windows 2012
+    ![Automated Patching](../images/2015-09-01-auto-patching.png)
 
 * __Managed Hadoop.__ Moved away from managed servers being required to run Hadoop. This change improves the realiability of Managed Hadoop builds.
 
 * __Cloud Platform.__ The CenturyLink Cloud platform is releasing with some updates including:
 
-  __Drive Extension Only Allowed When No Snapshots__ Control Portal no longer allows extending a drive when there is an existing snapshot.
-  
-  __Set Your Own Price: Edit Price Adjustments__ The additional capability for users with System Billing Manager privileges or above to edit a price adjustment has been added to Control Portal.
-  ![Set Your Own Price - Edit Adjustments](../images/2015-09-01-syop-edit-adjustment.png)
+    __Drive Extension Only Allowed When No Snapshots__ Control Portal no longer allows extending a drive when there is an existing snapshot.
+
+    __Set Your Own Price: Edit Price Adjustments__ The additional capability for users with System Billing Manager privileges or above to edit a price adjustment has been added to Control Portal.
+    ![Set Your Own Price - Edit Adjustments](../images/2015-09-01-syop-edit-adjustment.png)
 
 ### Ecosystem: New Blueprints (5)
 
