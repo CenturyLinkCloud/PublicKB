@@ -1,26 +1,30 @@
 {{{
-  "title": "Getting Started with Dolibarr - Blueprint",
-  "date": "07-30-2015",
-  "author": "Bitnami and <a href='https://www.linkedin.com/in/bstolzberg'>Bob Stolzberg</a>",
+  "title": "Getting Started with Pootle - Blueprint",
+  "date": "08-31-2015",
+  "author": "Bitnami",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-![Dolibarr logo](https://bitnami.com/assets/stacks/dolibarr/img/dolibarr-stack-220x234.png)
+![Pootle logo](https://bitnami.com/assets/stacks/pootle/img/pootle-stack-220x234.png)
 
 ### Technology Profile
-Dolibarr is an open source ERP and CRM that contains dozens of modules to support all aspects of your business. When you launch Dolibarr, you can configure it with as many or as few modules as required to support everything from supply chain and project management to accounting and human resources management.
+
+Pootle is a "smart" translations management project. It remembers what you translated before to help you stay consistent in future translations. Built-in terminology suggestions ensure consistent translations. Pootle is designed to let your community do the work of translating, has basic analytics for understanding progress, and has format converters to convert content between a number of localization, translation and software formats.
 
 ### Description
-Through the CenturyLink Blueprint integration, the Dolibarr provides a click-through solution to install and configure Dolibarr on the Linux platform.
 
-For more information, please visit [http://www.dolibarr.org](http://www.dolibarr.org)
+Through the CenturyLink Blueprint integration, Pootle provides a click-through solution to install and configure Pootle on the Linux platform.
+
+For more information, please visit http://translate.sourceforge.net/wiki/pootle/index
+
 
 ### Audience
 CenturyLink Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the Blueprint technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the Bitnami Blueprint technology on CenturyLink Cloud.
+
 
 ### Prerequisite
 - Access to the CenturyLink Cloud platform as an authorized user.
@@ -34,35 +38,34 @@ After reading this article, the user should feel comfortable getting started usi
 2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
   * The default ports to access the application are: 80, 443
 
-### Deploying Dolibarr on a New Server
-Dolibarr is available as a Blueprint for deployment on a new server.
+### Deploying Pootle on a New Server
+Pootle is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
-1. **Locate the Dolibarr Stack Blueprint**
+1. **Locate the Bitnami Pootle Stack Blueprint**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-  2. Search for “Dolibarr” in the keyword search on the right side of the page.
-  3. Locate the 'Install Dolibarr on Linux' Blueprint
+  2. Search for “Pootle” in the keyword search on the right side of the page.
+  3. Locate the 'Install Bitnami Pootle on Linux' Blueprint
 
-2. **Choose and Deploy the Blueprint. Click the “Install Dolibarr on Linux” Blueprint.**
+2. **Choose and Deploy the Blueprint. Click the “Install Bitnami Pootle on Linux” Blueprint.**
 
 3. **Configure the Blueprint** 
 Complete the information below:
 
   1. Execute on Server: Select a Linux x64 server to deploy the Blueprint on.
   2. Apache Web Server Port, e.g. 80
-  3. SSL Port, e.g. 443
-  4. Web Server domain, e.g. 127.0.0.1
-  5. MySQL Server port, e.g. 3306
-  6. Login, e.g. user
-  7. Email Address, e.g. user@example.com
-  8. Password
-  9. Do you want to configure mail support?, e.g. 0
-  10. Default email provider:, e.g. custom
-  11. SMTP User
-  12. SMTP Password
-  13. SMTP Port, e.g. 587
-  14. SMTP Host
-  15. Secure connection, e.g. tls
+  3. Login, e.g. user
+  4. Your real name, e.g. User Name
+  5. Email Address, e.g. user@example.com
+  6. Password
+  7. Do you want to configure mail support?, e.g. 0
+  8. Default email provider:, e.g. custom
+  9. SMTP User
+  10. SMTP Password
+  11. SMTP Port, e.g. 587
+  12. SMTP Host
+  13. Secure connection, e.g. tls
+
 
 4. **Review and Confirm the Blueprint**
   1. Click “next: step 2”
@@ -77,25 +80,26 @@ Complete the information below:
   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-### Deploy Dolibarr to an existing server (alternate option)
-The Dolibarr Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
-#### Steps to deploy Dolibarr to an existing server
+### Deploy Pootle to an existing server (alternate option)
+
+Bitnami Pootle Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
+
+#### Steps
+
 1. **Deploy or Identify an Existing Server**
-Identify the server targeted for Dolibarr installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
+Identify the server targeted for Pootle installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. **Select to Execute the Package on a Server Group**
-  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Dolibarr on Linux**.
+  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Bitnami Pootle on Linux**.
   2. See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. **Configure the Parameters**
 Set the following application parameters:
 
 * **Apache Web Server Port** - default 80
-* **SSL Port** - default 443
-* **Web Server domain** - default 127.0.0.1
-* **MySQL Server port** - default 3306
 * **Login** - default user
+* **Your real name** - default User Name
 * **Email Address** - default user@example.com
 * **Password**
 * **Do you want to configure mail support?** - default 0
@@ -114,7 +118,8 @@ Once verified, click on the `execute package` button. This will kick off the dep
   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-### Access your Dolibarr server
+
+### Access your Pootle server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
 
   1. Check email to obtain Server Name and IP Address Login information

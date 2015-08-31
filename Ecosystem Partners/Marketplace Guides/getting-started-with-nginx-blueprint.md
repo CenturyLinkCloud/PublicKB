@@ -9,7 +9,7 @@
 ![Nginx Stack logo](https://bitnami.com/assets/stacks/nginxstack/img/nginxstack-stack-220x234.png)
 
 ### Technology Profile
-Nginx Stack provides a complete, fully-integrated and ready to run PHP, MySQL and Nginx development environment. In addition, it bundles phpMyAdmin, SQLite, ImageMagick, FastCGI, Memcache, GD, CURL, PEAR, PECL and other components. Also known as LEMP for Linux, WEMP for Windows and MEMP for OS X.
+Nginx provides a complete, fully-integrated and ready to run PHP, MySQL and Nginx development environment. In addition, it bundles phpMyAdmin, SQLite, ImageMagick, FastCGI, Memcache, GD, CURL, PEAR, PECL and other components. Also known as LEMP for Linux, WEMP for Windows and MEMP for OS X.
 
 ### Description
 This CenturyLink Blueprint provides a click-through solution to install and configure Nginx Stack on the Linux platform.

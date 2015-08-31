@@ -12,7 +12,7 @@
 Gallery is a photo management tool that can be easily integrated with a website. Features include multiple ways to organize and display photos, watermarking, tagging, search and more. There is now a mobile app for Gallery that allows you to manage your photos on the go.
 
 ### Description
-Through the CenturyLink Blueprint integration, the Gallery Stack provides a click-through solution to install and configure Gallery on the Linux platform.
+Through the CenturyLink Blueprint integration, the Gallery provides a click-through solution to install and configure Gallery on the Linux platform.
 
 For more information, please visit [http://galleryproject.org/](http://galleryproject.org/)
 
