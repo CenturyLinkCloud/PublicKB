@@ -11,7 +11,7 @@ We encourage submissions on feature requests from customers either through our [
 
 More details on this process is available [here](../Support/how-do-i-submit-a-feature-request.md).
 
-###So what happens once ideas are submitted?
+### So what happens once ideas are submitted?
 
 Here's the process.
 

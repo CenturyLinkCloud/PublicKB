@@ -6,15 +6,15 @@
   "contentIsHTML": false
 }}}
 
-###General
+### General
 
 The Service Catalog is accessible in the Control Portal by Account Administrators only. It can be found under the Account menu in the green navigation bar.
 
-###Settings
+### Settings
 
 There are two settings that an Account Administrator can choose for an account and its sub accounts: “Can Use” and “In Service Catalog.” These settings allow for restrictions on a user’s ability to access or view the availability of a particular service. “In Service Catalog” only applies to sub accounts. It can be adjusted for existing sub accounts, and can be set as a default for sub accounts that are created in the future.
 
-####*Can Use*
+#### *Can Use*
 This setting allows Account Administrators to determine whether or not account users “Can Use” the service. When this setting is toggled to ON, Account Administrators allow users (with the appropriate permissions) at that account level to have full access to the service. The service also defaults to being visible in the service catalog for all sub accounts.
 
 See Additional Settings, below, for more details on adjusting the “Can Use” settings for individual sub accounts.
@@ -30,7 +30,7 @@ When this setting is toggled to OFF, the Account Administrator of the new sub ac
 ![service catalog in service](../images/service-catalog-in-service.png)
 
 
-####*Additional Settings*
+#### *Additional Settings*
 The Account Administrator of a parent account can restrict visibility and access to services in the Service Catalog for its sub accounts on an account by account basis. The ability to use a service and the ability to see a service can also be set independently of one another. This is done by checking the “In Service Catalog” and “Can Use” boxes next to each sub account in the sub account list.
 
 Note that turning off the “In Service Catalog” option for a sub account automatically turns off “Can Use” for that sub account. The inverse is not true. For sub accounts, “Can Use” can be turned off, but “In Service Catalog” can remain on, if desired.
@@ -43,7 +43,7 @@ These settings can also be toggled across all sub accounts with a single click b
 ![service catalog all or none](../images/service-catalog-all-or-none.png)
 
 
-###Examples
+### Examples
 
 Say you want to turn off Premium Backup for your own account’s users and all your sub accounts. How would that look?
 
@@ -77,9 +77,9 @@ This is how the Create Server process looks to a user of an account with Premium
 ![service catalog example 2](../images/service-catalog-example-2.png)
 
 
-###IMPORTANT
+### IMPORTANT
 It is important to note that if certain services are in use and “can use” is toggled OFF, this service can get into a state where the ability to manage it is turned off, but the service is still running and consuming resources in the background. (This is because the Service Catalog manages access to a service, but it does not control the service itself.) This can lead to a situation where account users cannot control (or in some cases even see) a service, even though it is in use and incurring charges.
 
 This is scenario is avoidable if Account Administrators remain aware of the possibility and take measures to avoid it, such as conducting a usage audit before disabling a service. Further, this does not apply to all services; only some are at risk of entering this undesirable state because of the nature of the service. Presently, the following services should be carefully audited before they are disabled:
 
-#####Load Balancer
+* Load Balancer

@@ -20,7 +20,7 @@ Orchestrate – “A complete database service with the NoSQL queries you need�
 
 http://www.orchestrate.io
 
-####Customer Support
+#### Customer Support
 
 centurylinkcloud-sales@orchestrate.io
 
@@ -35,7 +35,7 @@ Orchestrate delivers a high performance, high availability, and massively scalab
 
 [Learn more about Orchestrate](https://orchestrate.io/features)
 
-###Audience
+### Audience
 
 CenturyLink Cloud Users
 

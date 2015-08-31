@@ -17,7 +17,7 @@ In order to activate a plugin you will need to download a WordPress Plugin and u
 * The Git CLI is installed
 * A working knowledge of Git usage
 
-##Deploying a WordPress Plugin Using the Git CLI
+## Deploying a WordPress Plugin Using the Git CLI
 
 1. Clone your WordPress Git Repo
 

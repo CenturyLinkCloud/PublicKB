@@ -6,11 +6,11 @@
   "contentIsHTML": false
 }}}
 
-##Overview
+## Overview
 
 Cloudera Hadoop combines Apache Hadoop with a number of other open source projects to create a single, massively scalable system where you can unite storage with an array of powerful processing and analytic frameworks.
 
-###Create a managed Cloudera Hadoop environment in CenturyLink Cloud.
+### Create a managed Cloudera Hadoop environment in CenturyLink Cloud.
 
 1\. Search for “Cloudera” in the Blueprints library. Then, click the version and cluster configuration Blueprint that suits your needs.
 
@@ -41,7 +41,7 @@ You will see the deployment details along with an email stating the Blueprint is
 You will receive emails as each server is being built and then you will receive an additional email stating that the entire Cloudera cluster build is complete. Please do not use the servers until you have received this final email.
 **NOTE:The server now has the Cloudera Hadoop software installed and activated - your instances will be unmanaged or managed, based on the Blueprint deployed.**
 
-###FREQUENTLY ASKED QUESTIONS
+### FREQUENTLY ASKED QUESTIONS
 
 **Q: How do I create more nodes?**
 
