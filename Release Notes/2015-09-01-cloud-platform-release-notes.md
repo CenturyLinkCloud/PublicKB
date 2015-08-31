@@ -55,9 +55,17 @@
   
   __Set Your Own Price__ The additional capability for users with System Billing Manager privileges or above to edit a price adjustment has been added to Control Portal.
 
-### Ecosystem: New Blueprints (?)
+### Ecosystem: New Blueprints (5)
 
+* __[Commvault](http://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-commvault-server/)__ Commvault has integrated their enterprise backup technology software, Simpana, with the CenturyLink Cloud. In addition to installing the software, the CenturyLink Cloud Blueprint deployment include Commvault configuration best practices.  If you need to address the business challenges of data growth, data protection, end user protection or need a file-level backup solution that uses de-dupe technology, check out Commvault.  The Blueprints make it easy to deploy to your environment.
 
+* __[Lagrange CloudMaestro](http://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-lagrange-systems-cloudmaestro/)__ CloudMaestro is an Application Delivery Controller delivered with a Software-as-a-Service control plane for exceptional performance and availability in cloud infrastructure.  Deploying the CloudMaestro Agent Blueprint on your existing server in the CenturyLink cloud enables CloudMaestro to monitor, alert, replace and scale your application in response to traffic or unforeseen downtime.
+
+* __[VDIworks](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-vdiworks-console/)__ CenturyLink Cloud has a certified virtual desktop solution! VDIworks is a provider of virtual desktop software focusing on Cloud Computing, Desktop-as-a-Service and Virtual Desktop Infrastructure (VDI).  VDIworks provides a comprehensive solution that encompasses server management, hypervisor management, virtual machine management, connection management and thin-client/desktop (endpoint) management in a single, easy to use application.  Users can create both a server and a console manager using CenturyLink Blueprints in minutes.
+
+* __[Waratek](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-waratek-appsecurity/)__ Defense-in-depth is important.  Waratek's AppSecurity provides a secure Java execution environment that traps attempts to hack applications using techniques such as SQL injection and buffer overflows at the Java Virtual Machine (JVM) level.  AppSecurity for Java from Waratek protects applications from sophisticated attacks without having to install network devices or make code changes. AppSecurity can be added to your environment in minutes using a CenturyLink Cloud blueprint.
+
+* __[Avni](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-avni-software-defined-cloud-partner-template/)__ Avni offers a compelling Software Defined Cloud management framework to automate the deployment of applications and network services to private, public or hybrid clouds. Avni easily orchestrates new or existing multi-tier applications, gathers metrics from application and network services, derives intelligent insights, and takes proactive actions to ensure availability, performance, and application/network SLA based on policy. Companies in retail, financial services and media industries rely on Avni’s platform to bring new services to market quickly.
 
 ### Open Source Contributions (2)
 
