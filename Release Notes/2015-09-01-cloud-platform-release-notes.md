@@ -13,7 +13,7 @@
     + __Local Protection Group Cache__ Added the ability for production sites to add a small cache and finish the sync of protection groups.
     + __Resize the checkpoint pool size__ Now able to resize the checkpoint pool size.
     + __Add/Remove Server__ Now can add and remove Servers from existing Protection Group.
-    + __Automation__ Added automation of LRA (Local Replication Agent), makestub and In2Out installation.
+    + __Automation__ Added automation of LRA (Local Replication Agent) and makestub.
 
     ![SafeHaven](../images/2015-09-01-safehaven-pg-localcache.png) 
 
