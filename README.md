@@ -78,11 +78,11 @@ If your fork and branch are behind by a number of commits (meaning there have be
 **Via Github.com Website**
 
 1. Open your fork (and branch) on GitHub.
-2. Click on the Pull Requests button (next to the Branch: drop down list).
-3. Click on New Pull Request. By default, GitHub will compare the Master branch of the Public KB with your fork and branch.
+2. Click on the Pull Requests button (next to the **Branch:** drop down list).
+3. Click on **New Pull Request**. By default, GitHub will compare the master branch of the CenturyLinkCloud/PublicKB with your fork and branch.
 **Note:** If you have not made any changes to your fork yet, there shouldn’t be anything to compare.
-4. Reverse the order of the repositories and branches in the Base: and Branch: drop down lists. Your repository and branch should come before the Public KB Master repository and branch. This allows GitHub to compare your fork with the Master. You should then see all the latest changes that have been made to the Master branch.
-5. Click on the Pull Request button to create a pull request for this comparison.
+4. Reverse the order of the repositories and branches in the **Base Fork:** and **Head Fork:** drop down lists. Your repository and branch should come before the CenturyLinkCloud/PublicKB master repository and branch. This allows GitHub to compare your fork with the Master. You should then see all the latest changes that have been made to the master branch.
+5. Click on the **Pull Request** button to create a pull request for this comparison.
   **Note:** You should assign a predictable name to your pull request (e.g., Update from original).
 6. Click on **Send Pull Request**.
 7. Scroll down and click **Merge Pull Request** and then **Confirm Merge**. If your fork didn’t have any changes, you will be able to merge it automatically.
