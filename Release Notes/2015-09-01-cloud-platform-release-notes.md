@@ -49,6 +49,8 @@
 
 * __Managed Hadoop.__ Minor changes have been made to improve the reliability of Managed Hadoop builds.
 
+* __Managed Backup.__ The service has been extended to our CA3 data center.
+
 * __Cloud Platform.__ The CenturyLink Cloud platform is releasing with some updates including:
 
     + __Drive Extensions Now Prohibited When A Snapshots Exists__ Control Portal no longer allows extending a drive when there is an existing snapshot.
