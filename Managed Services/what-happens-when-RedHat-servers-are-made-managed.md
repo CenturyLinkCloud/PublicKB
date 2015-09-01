@@ -6,21 +6,21 @@
   "contentIsHTML": false
 }}}
 
-## Overview
+### Overview
 This document provides an overview of steps taken when RHEL servers are prepared to be managed by CenturyLink.
 
-## Audience
+### Audience
 
 Users employed by companies that have agreed to terms with [CenturyLink Sales](http://www.centurylink.com/) for the CenturyLink Cloud product.
 
-## Prerequisites
+### Prerequisites
 * An understanding of the process for [making newly created servers managed](../Managed Services/created-a-managed-server-now-what.md) or for [converting pre-existing servers to managed](../Managed Services/converting-unmanaged-virtual-machines-to-managed.md)
 
 * Some idea of the benefits included with [managed servers](../Managed Services/managed-operating-system-frequently-asked-questions.md)
 
 * Grasp of Red Hat Enterprise Linux fundamentals
 
-## Important Information
+### Important Information
 
 The following is not meant to be a complete description of everything that happens when a VM is prepared for management, but to give users a better idea of configuration changes that might be necessary to manage their servers.
 

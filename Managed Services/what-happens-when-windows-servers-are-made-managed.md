@@ -6,21 +6,21 @@
   "contentIsHTML": false
 }}}
 
-## Overview
+### Overview
 This document provides an overview of steps taken when Windows servers are prepared to be managed by CenturyLink.
 
-## Audience
+### Audience
 
 Users employed by companies that have agreed to terms with [CenturyLink Sales](http://www.centurylink.com/) for the CenturyLink Cloud product.
 
-## Prerequisites
+### Prerequisites
 * An understanding of the process for [making newly created servers managed](../Managed Services/created-a-managed-server-now-what.md) or for [converting pre-existing servers to managed](../Managed Services/converting-unmanaged-virtual-machines-to-managed.md)
 
 * Some idea of the benefits included with [managed servers](../Managed Services/managed-operating-system-frequently-asked-questions.md)
 
 * Grasp of Windows Server fundamentals
 
-## Important Information
+### Important Information
 
 It is required that a Windows server reboot during the make managed process. If the server already exists and is being [converted](../Managed Services/converting-unmanaged-virtual-machines-to-managed.md) then the server should be placed in maintenance mode prior to running the blueprint and removed from maintenance mode once an email verifying copletion has been received.
 
