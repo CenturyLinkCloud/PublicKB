@@ -39,6 +39,7 @@
     + Ubuntu 12
     + Ubuntu 14
     + Windows 2012 R2
+    + Windows 2012 R2 Datacenter Edition
 
 * __New Naming Convention for Automated OS Patching.__ The automated patching names have been updated so that they are more intuitive. The new Blueprint names are:
     + Auto Patching for RHEL and CentOS
