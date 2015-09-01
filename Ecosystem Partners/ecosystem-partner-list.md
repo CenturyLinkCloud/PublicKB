@@ -161,6 +161,8 @@ Quickly deploy and successfully use software and technology from any of our cert
 
 
 ### Operating Systems
+
+|Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [Red Hat Enterprise Linux](../Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
 
