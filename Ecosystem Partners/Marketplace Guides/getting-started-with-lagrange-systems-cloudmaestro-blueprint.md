@@ -1,4 +1,4 @@
-﻿{{{
+{{{
 "title": "Getting Started with Lagrange Systems CloudMaestro Blueprint",
 "date": "8-31-2015",
 "author": "Bob Stolzberg",
@@ -95,7 +95,7 @@ After your Blueprint deploys successfully, please follow these instructions to a
 
   3. Define the new server as a Backend Server and click "add backend".
 
-    ![lagrange back end](../../images/ecosystem-lagrange-3)
+    ![lagrange back end](../../images/ecosystem-lagrange-3.png)
 
   4. Click Save for the Application.
 
