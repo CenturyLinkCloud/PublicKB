@@ -39,6 +39,7 @@
     + Ubuntu 12
     + Ubuntu 14
     + Windows 2012 R2
+    + Windows 2012 DC
 
 * __New Naming Convention for Automated OS Patching.__ The automated patching names have been updated so that they are more intuitive. The new Blueprint names are:
     + Auto Patching for RHEL and CentOS
@@ -47,6 +48,8 @@
     ![Automated Patching](../images/2015-09-01-auto-patching.png)
 
 * __Managed Hadoop.__ Minor changes have been made to improve the reliability of Managed Hadoop builds.
+
+* __Managed Backup.__ The service has been extended to our CA3 data center.
 
 * __Cloud Platform.__ The CenturyLink Cloud platform is releasing with some updates including:
 
