@@ -73,7 +73,7 @@ _Note that the first time you wish to run the commit analyzer, you'll have to ru
 
 ### Merging an upstream repository into your fork
 
-If your fork and branch are behind by a number of commits (meaning there have been a lot of changes made to the Master branch since you originally forked it), you may need to update your fork to reflect the latest changes. This involves sending a pull request that asks for all changes in the current Master branch to be merged into your fork and branch. This is the opposite of a pull request that you would normally send to merge your changes into the Public KB Master branch.
+If your fork and branch are behind by a number of commits (meaning there have been a lot of changes made to the Master branch since you originally forked it), you may need to update your fork to reflect the latest changes. This involves sending a pull request that asks for all changes in the current master branch to be merged into your fork and branch. This is the opposite of a pull request that you would normally send (which merges your changes into the CenturyLinkCloud/PublicKB master branch).
 
 **Via Github.com Website**
 
