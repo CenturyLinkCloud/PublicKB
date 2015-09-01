@@ -122,7 +122,6 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Horde Groupware Webmail](../Ecosystem Partners/Marketplace Guides/getting-started-with-horde-blueprint.md)   	| Blueprint    | Mail, Calendar, Address Book, Tasks, and Notes Communication Suite    |
 | [Live Helper Chat](../Ecosystem Partners/Marketplace Guides/getting-started-with-livehelperchat-blueprint.md)   	| Blueprint    | Live chat    |
 | [Microsoft Active Directory ](../Managed Services/getting-started-with-managed-active-directory.md)  	| Blueprint (Managed)   | Directory Service     |
-| [Microsoft Windows Server ](../Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
 | [NOALYSS](../Ecosystem Partners/Marketplace Guides/getting-started-with-noalyss-blueprint.md)  	| Blueprint   | Dboule Entry Accounting (ERP)	|
 | [OpenCart](../Ecosystem Partners/Marketplace Guides/getting-started-with-opencart-blueprint.md)  	| Blueprint   | eCommerce platform     |
 | [OpenProject](../Ecosystem Partners/Marketplace Guides/getting-started-with-openproject-blueprint.md)  	| Blueprint   | Project Management     |
@@ -140,7 +139,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Ametys](../Ecosystem Partners/Marketplace Guides/getting-started-with-ametys-blueprint.md)   	| Blueprint    | Content management system (CMS)    |
 | [Chyrp](../Ecosystem Partners/Marketplace Guides/getting-started-with-chyrp-blueprint.md)   	| Blueprint    | Web publishing platform    |
 | [CMS Made Simple](../Ecosystem Partners/Marketplace Guides/getting-started-with-cmsmadesimple-blueprint.md)   	| Blueprint    | Content management system (CMS)    |
-| [concrete5](../Ecosystem Partners/Marketplace Guides/getting-started-with-concrete5-blueprint.md)   	| Blueprint    Content management system (CMS)    |
+| [concrete5](../Ecosystem Partners/Marketplace Guides/getting-started-with-concrete5-blueprint.md)   	| Blueprint    | Content management system (CMS)    |
 | [Coppermine](../Ecosystem Partners/Marketplace Guides/getting-started-with-coppermine-blueprint.md)   	| Blueprint    | Photo Gallery    |
 | [Drupal](../Ecosystem Partners/Marketplace Guides/getting-started-with-drupal-blueprint.md)   	| Blueprint    | Content management system (CMS)    |
 | [DocuWiki](../Ecosystem Partners/Marketplace Guides/getting-started-with-dokuwiki-blueprint.md)   	| Blueprint    | Knowledge Management System    |
@@ -164,6 +163,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
+| [Microsoft Windows Server ](../Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
 | [Red Hat Enterprise Linux](../Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
 
 
