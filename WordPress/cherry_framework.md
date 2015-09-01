@@ -43,4 +43,4 @@ Cherry Framework comes with a robust amount of features and options that makes i
 
 
 ### Conclusion
-After completing the steps above, you should now be able to apply themes from Template Monster as well as use the rich featuresand options the framework has to offer.
+After completing the steps above, you should now be able to apply themes from Template Monster as well as use the rich features and options the framework has to offer.
