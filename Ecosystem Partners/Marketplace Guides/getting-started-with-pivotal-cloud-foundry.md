@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Pivotal Cloud Foundry - Blueprint",
-  "date": "8-28-2015",
+  "date": "9-1-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -10,7 +10,7 @@
 
 ### Overview
 
-After reading this article, the reader should feel comfortable deploying the Pivotal Cloud Foundry (PCF) 1.5.3 on CenturyLink Cloud.
+After reading this article, the reader should feel comfortable deploying the Pivotal Cloud Foundry (PCF) 1.5.5 on CenturyLink Cloud.
 
 ### Partner Profile
 
@@ -94,6 +94,8 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
   Set DNS to “Manually Specify” and use “8.8.8.8” (or any other public DNS server of your choice).
 
   Optionally set the server name prefix.
+
+  **Set the group to the value created in step (1).**
 
   The default values are fine for every other option.
 
