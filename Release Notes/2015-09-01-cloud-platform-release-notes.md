@@ -13,7 +13,7 @@
     + __Local Protection Group Cache__ Added the ability for production sites to add a small cache and finish the sync of protection groups.
     + __Resize the checkpoint pool size__ Now able to resize the checkpoint pool size.
     + __Add/Remove Server__ Now can add and remove Servers from existing Protection Group.
-    + __Automation__ Added automation of LRA (Local Replication Agent), makestub and In2Out installation.
+    + __Automation__ Added automation of LRA (Local Replication Agent) and makestub.
 
     ![SafeHaven](../images/2015-09-01-safehaven-pg-localcache.png) 
 
@@ -57,9 +57,9 @@
 
 ### Ecosystem: New Blueprints (5)
 
-* __[Commvault](http://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-commvault-server/)__ Commvault has integrated their enterprise backup technology software, Simpana, with the CenturyLink Cloud. In addition to installing the software, the CenturyLink Cloud Blueprint deployment include Commvault configuration best practices.  If you need to address the business challenges of data growth, data protection, end user protection or need a file-level backup solution that uses de-dupe technology, check out Commvault.  The Blueprints make it easy to deploy to your environment.
+* __[Commvault](https://staging.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-commvault-storage-blueprint/)__ Commvault has integrated their enterprise backup technology software, Simpana, with the CenturyLink Cloud. In addition to installing the software, the CenturyLink Cloud Blueprint deployment include Commvault configuration best practices.  If you need to address the business challenges of data growth, data protection, end user protection or need a file-level backup solution that uses de-dupe technology, check out Commvault.  The Blueprints make it easy to deploy to your environment.
 
-* __[Lagrange CloudMaestro](http://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-lagrange-systems-cloudmaestro/)__ CloudMaestro is an Application Delivery Controller delivered with a Software-as-a-Service control plane for exceptional performance and availability in cloud infrastructure.  Deploying the CloudMaestro Agent Blueprint on your existing server in the CenturyLink cloud enables CloudMaestro to monitor, alert, replace and scale your application in response to traffic or unforeseen downtime.
+* __[Lagrange CloudMaestro](https://staging.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-lagrange-systems-cloudmaestro-blueprint/)__ CloudMaestro is an Application Delivery Controller delivered with a Software-as-a-Service control plane for exceptional performance and availability in cloud infrastructure.  Deploying the CloudMaestro Agent Blueprint on your existing server in the CenturyLink cloud enables CloudMaestro to monitor, alert, replace and scale your application in response to traffic or unforeseen downtime.
 
 * __[VDIworks](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-vdiworks-console/)__ CenturyLink Cloud has a certified virtual desktop solution! VDIworks is a provider of virtual desktop software focusing on Cloud Computing, Desktop-as-a-Service and Virtual Desktop Infrastructure (VDI).  VDIworks provides a comprehensive solution that encompasses server management, hypervisor management, virtual machine management, connection management and thin-client/desktop (endpoint) management in a single, easy to use application.  Users can create both a server and a console manager using CenturyLink Blueprints in minutes.
 
