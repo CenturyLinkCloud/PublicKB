@@ -1,5 +1,5 @@
 {{{
-  "title": "Getting Started with Intrustion Prevention System (IPS)",
+  "title": "Getting Started with Intrusion Prevention System (IPS)",
   "date": "08-11-2015",
   "author": "Stephanie Wong",
   "attachments": [],
@@ -30,7 +30,7 @@ This Blueprint is for the actual installation and activation of the IPS service 
 
 ### Installation Process
 
-1. Search for **Intrustion Prevention** in the Blueprint Library. Then, click **Intrusion Prevention Install RHEL**.  
+1. Search for **Intrusion Prevention** in the Blueprint Library. Then, click **Intrusion Prevention Install RHEL**.  
 
   ![Control Portal](../images/gettingIPS_controlportal.png)
 
