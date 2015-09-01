@@ -95,6 +95,8 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
 
   Optionally set the server name prefix.
 
+  **Set the group to the value created in step (1).**
+
   The default values are fine for every other option.
 
 6. **Review and Confirm the Blueprint**
