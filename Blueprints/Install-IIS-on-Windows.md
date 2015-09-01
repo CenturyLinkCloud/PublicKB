@@ -19,7 +19,7 @@ By leveraging [CenturyLink Cloud Public Blueprints](../Blueprints/centurylink-cl
     * Windows 2008 R2 Datacenter 64-bit
 * Supported Windows Operating Systems for IIS 8:
     * Windows 2012 Datacenter 64-bit
-    * Windows 2012 R2 Data Center 64-bit
+    * Windows 2012 R2 Datacenter 64-bit
 
 ### EXCEPTIONS
 

@@ -6,6 +6,7 @@
     "Autoscale",
     "Blueprints",
     "Control Portal",
+    "Database",
     "Disaster Recovery",
     "Ecosystem Partners",
     "General",
@@ -15,6 +16,7 @@
     "Object Storage",
     "Partners",
     "Release Notes",
+    "Security",
     "Service Tasks",
     "Servers",
     "WordPress"

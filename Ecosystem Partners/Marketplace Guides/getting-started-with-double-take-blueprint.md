@@ -8,7 +8,7 @@
 
 ![Vision Solutions Double Take logo](../../images/ecosystem-double-take-logo.png)
 
-###Partner Profile
+### Partner Profile
 - Vision Solutions – Migrate, Protect & Recover... Anywhere
 - [www.visionsolutions.com](http://www.visionsolutions.com)
 
@@ -82,7 +82,7 @@ After executing the steps in this Getting Started document, the users will have 
 * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the Vision Solutions Server until you have received this email notification.
 
 ### Accessing your Vision Solutions appliance
-Double-Take is managed using the Double-Take Console which runs on a Windows instance with network access to both the Double-Take source and target servers.  The Double-Take console is installed as part of deploying the Double-Take for Windows Blueprint.  For OS level access, you can connect to Windows using RDP and Linux using SSH. 
+Double-Take is managed using the Double-Take Console which runs on a Windows instance with network access to both the Double-Take source and target servers.  The Double-Take console is installed as part of deploying the Double-Take for Windows Blueprint.  For OS level access, you can connect to Windows using RDP and Linux using SSH.
 
 ### Pricing
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  There are no Vision Solutions or Double Take license costs or additional fees bundled in. There are multiple  Double-Take licensee options designed to meet your specific solutinos and SLA needs. Please contact CenturyLinkInfo@visionsolutions.com for your appropriate licensing assistance.

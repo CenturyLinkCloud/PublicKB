@@ -10,7 +10,7 @@
 
 ### Description
 
-<img alt="GitLab Logo" src="/knowledge-base/images/bitnami_logos/gitlab-stack-110x117-6ab77fbd4c6d3b0453a520ece95300ca.png" style="border:0;float:right;max-width:250px">
+<img alt="GitLab Logo" src="../../images/bitnami_logos/gitlab-stack-110x117-6ab77fbd4c6d3b0453a520ece95300ca.png" style="border:0;float:right;max-width:250px">
    
 After reading this article, the reader should feel comfortable deploying the GitLab stack (version 7.10.1-0) by Bitnami.
 

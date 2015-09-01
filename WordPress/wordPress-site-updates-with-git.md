@@ -71,7 +71,7 @@ commits from the remote repository can in turn be pulled back down to the local 
 provides further detail on [recording changes](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
 and then [pushing them to a remote repository](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes#Pushing-to-Your-Remotes).
 
-###A basic flow is as follows:
+### A basic flow is as follows:
 
 1. Once you have made your changes, stage them for commit with the following the command:
 

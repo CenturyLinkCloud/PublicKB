@@ -3,7 +3,7 @@ This page provides a quick reference on where you can find pricing information f
 
 **Q: Where can I find how much your cloud products cost?**
 
-A: You can find pricing information for all our cloud products on this single web page: http://www.ctl.io/pricing
+A: You can find pricing information for all our cloud products on this single web page: http://www.ctl.io/pricing. If you have an existing account, you can log into the Conrol Portal and navigate to https://control.ctl.io/pricingcatalog to see your active price list.
 
 **Q: Is there a way to estimate what my desired cloud usage would cost me per month?**
 

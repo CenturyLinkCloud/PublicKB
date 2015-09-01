@@ -39,4 +39,4 @@ This is listed [here](../Servers/operating-system-template-retirement-policy.md)
 
 ### I'd like to deploy an operating system that is not supported. What are my options?
 
-We do not recommend that you deploy unsupported operating systems in the platform. CenturyLink Cloud SLAs will not apply to virtual machines running an *unsupported* OS. In addition, some features may not work on unsupported OSes. Your options are to request a new OS be supported using our [suggested feature process](mailto:features@centurylinkcloud.com), or to deploy the OS in a traditional hosting environment.
+We do not recommend that you deploy unsupported operating systems in the platform. CenturyLink Cloud SLAs will not apply to virtual machines running an *unsupported* OS. In addition, some features may not work on unsupported OSes. Your options are to request a new OS be supported using our [suggested feature process](mailto:features@ctl.io), or to deploy the OS in a traditional hosting environment.

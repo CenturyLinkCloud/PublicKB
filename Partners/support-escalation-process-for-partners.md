@@ -22,17 +22,17 @@
 ---
 
 
-###Support Introduction
+### Support Introduction
 
 CenturyLink Cloud’s comprehensive, secure, and global cloud platform is built for business &mdash; and we back it with business-class support options. Our reseller partner’s choose from the two different Support Tiers: **Professional** or **Enterprise**.
 
-###Support Boundary
+### Support Boundary
 
 The partner provides Level 1 support to customers for all Cloud products that it resells. The following conditions apply to partner support services:
 * The partner will include Level 1 support contact information in all web sites and materials that describe support distributed to customers.
 * The partner cannot list CenturyLink Cloud support contact information for end customers.
 
-####Definition of Level 1 Support
+#### Definition of Level 1 Support
 
 This is the initial support level responsible for basic customer issues. It is synonymous with first-line support, Tier 1 support, front-end support, support line 1, and various other headings denoting basic level technical support functions. The first job of a Level 1 specialist is to gather the customer’s information and to determine the customer’s issue by analyzing the symptoms and figuring out the underlying problem. When analyzing the symptoms, it is important for the technician to identify what the customer is trying to accomplish so that time is not wasted on "attempting to solve a symptom instead of a problem."
 
@@ -45,17 +45,17 @@ CenturyLink Cloud will provide higher level support to partner under the followi
 *	CenturyLink Cloud support is provided in English only.
 *	CenturyLink Cloud support team will work on the tickets based on the severity of the issue and the support level.
 
-###Ticket Submission Process
+### Ticket Submission Process
 
 The most efficient and effective way to contact the NOC team (CenturyLink Support) is to email or open ticket via portal.
 
-####Create Email Address
+#### Create Email Address
 
 Partner needs to create one email alias for all the support ticket requests. All support team members who will submit and review should have access to this mailbox. This will enable the team to track the status of the ticket.
 
 For example create xyz@yourcompany.com. This is an important step as this alias will be tied to our ticketing system (ZenDesk) when you email our support team.
 
-####Create ZenDesk account (using the Email created for Support)
+#### Create ZenDesk account (using the Email created for Support)
 
 Our support ticketing system, ZenDesk is where you can track all the updates to your support tickets. After your email address for support please follow the following steps to set up the ZenDesk account.
 
@@ -65,7 +65,7 @@ Our support ticketing system, ZenDesk is where you can track all the updates to 
 3. After you Sign up, you will receive a welcome email from noc@ctl.io for verification. Click on the verification link and choose your password. Your account will be active right away.
 
 
-###Information for Submitting the Ticket
+### Information for Submitting the Ticket
 
 Partners need to make sure they email the right email alias based on the urgency of the issue. You can use the ZenDesk for submitting tickets, the default priority for those tickets will be normal. We recommend emailing. The following information needs to be provided while submitting a ticket:
 
@@ -85,14 +85,14 @@ Partners need to make sure they email the right email alias based on the urgency
 *	Email Address of Anyone That Needs to be cc’d. The best practise is to add your Account Rep at CenturyLink to this email
 
 
-###SLA for Support
+### SLA for Support
 
 The priority designation indicates the level, extent and impact on the customer. Once assigned, the priority level is used to determine the resources allocated for resolving the ticket, timelines for resolution and escalation matrix. Customers may assign the priority to tickets they create. Each incoming ticket is triaged and the priority will be assigned according to the criteria defined below.
 
 
-###Support and Service Management
+### Support and Service Management
 
-####Support Options
+#### Support Options
 
 CenturyLink offers three support tiers for end user customers: Developer, Professional and Enterprise. Developer is designed strictly for non-critical developer environments, and is not an appropriate level of service for reseller partners. In order to provide required level of support for our channel partners, either Professional or Enterprise level support is required. The table below outlines the features and SLA’s of each offering support.
 
@@ -138,19 +138,19 @@ The following table describes list of operational support activities and request
   </tbody>
 </table>
 
-###Ticket Prioritization Matrix
+### Ticket Prioritization Matrix
 
 Tickets are worked according to priority in the order in which they are received. The priority designation indicates the level, extent, and impact on the partner.
 
 [Learn More About Ticket Prioritization](../Support/ticket-prioritization-matrix.md)
 
-###Service Tasks
+### Service Tasks
 
 Our team of network engineers has deep operational expertise to quickly and efficiently perform common platform activities. Just give us the details on your request – and within one business day, we'll reply with an estimate, along with a projected completion date for the task. Service task estimation and duties are performed during business hours, Monday to Friday, 9am-5pm Pacific Time.
 
 [Learn More About Service Tasks](../Service Tasks)
 
-###Support Team/Roles at CenturyLink Cloud
+### Support Team/Roles at CenturyLink Cloud
 
 Our Support team is on call 24x7, and the engineers and Leads are on Shifts (Rotation). It is important to keep in mind that our Executives are notified for Urgent Issues. Please use Urgent and High Priority appropriately. Our support team will flag any abuse to this Priority and the user might not get the appropriate support in future, if it has been abused. They are on a 24x7 rotation.
 
@@ -166,7 +166,7 @@ Our Support team is on call 24x7, and the engineers and Leads are on Shifts (Rot
 
 
 
-###Security Issues
+### Security Issues
 
 Security Incidents follow a standard Incident Process
 * If an incident is security related, security SMEs are engaged in the same manner as other SMEs
@@ -174,12 +174,12 @@ Security Incidents follow a standard Incident Process
 
 Incident Response team and coordinated with legal, marketing, and executive team.
 
-###Compromised Customer Machines/Abuse
+### Compromised Customer Machines/Abuse
 
 These steps sit inside the “Restoration Process” within the overall Incident Management process.
 
 
-###Security Escalation Email
+### Security Escalation Email
 
 *	24x7
 *	Fully Automated
@@ -219,14 +219,14 @@ These steps sit inside the “Restoration Process” within the overall Incident
   </tbody>
 </table>
 
-###How to get access to CenturyLink Cloud Status updates?
+### How to get access to CenturyLink Cloud Status updates?
 You can get updates through CenturyLink Cloud Status in two ways:
 1: Go to http://status.ctl.io/ at any time to see an overview of the present health of the cloud and information regarding scheduled maintenance. In the event of an outage, users can get real-time status updates here too.
 2: Users will be automatically enrolled in an email notification program. You will receive an email alerting you of your enrollment. Information about planned maintenance and outages will be sent out to the email addresses provided by users when they provision an account on the CenturyLink Cloud platform.
 
 [Learn More About CenturyLink Cloud Status](../General/centurylink-cloud-status-faq.md)
 
-###Century Link Product Overview
+### Century Link Product Overview
 The best practice for reducing escalation is by understanding the CenturyLink product and features very well.
 Where to learn more about CenturyLink:
 

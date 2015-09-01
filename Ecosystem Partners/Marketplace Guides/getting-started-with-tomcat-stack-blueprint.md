@@ -12,7 +12,7 @@
 Apache Tomcat is the most widely adopted application and web server in production today. Where WildFly is full JEE stack, Tomcat is a simpler servlet container and web server. Tomcat is lightweight and agile, simple to use and has a very large ecosystem of add-ons
 
 ### Description
-Through the CenturyLink Blueprint integration, the Tomcat Stack provides a click-through solution to install and configure Tomcat on the Linux platform.
+Through the CenturyLink Blueprint integration, the Tomcat provides a click-through solution to install and configure Tomcat on the Linux platform.
 
 For more information, please visit [http://tomcat.apache.org/](http://tomcat.apache.org/)
 
