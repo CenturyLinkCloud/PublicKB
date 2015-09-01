@@ -1,5 +1,5 @@
 {{{
-  "title": "Configuring Intrustion Prevention System (IPS) Notifications",
+  "title": "Configuring Intrusion Prevention System (IPS) Notifications",
   "date": "08-11-2015",
   "author": "Stephanie Wong",
   "attachments": [],
