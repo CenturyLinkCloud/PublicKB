@@ -12,7 +12,7 @@
 Fat Free CRM is an open source, Ruby on Rails customer relationship management platform (CRM).  Out of the box it features group collaboration, campaign and lead management, contact lists, and opportunity tracking.
 
 ### Description
-Through the CenturyLink Blueprint integration, the Fat Free CRM Stack provides a click-through solution to install and configure Fat Free CRM on the Linux platform.
+Through the CenturyLink Blueprint integration, the Fat Free CRM provides a click-through solution to install and configure Fat Free CRM on the Linux platform.
 
 For more information, please visit [http://www.fatfreecrm.com/](http://www.fatfreecrm.com/)
 

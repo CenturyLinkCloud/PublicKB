@@ -12,7 +12,7 @@
 Diaspora is like having your own, private social network without the privacy and social concerns in large, public social networks. When you run Diaspora, you will create a "pod" which is part of the decentralized social network. Within Diaspora, you can determine what is visible to friends and family, and what can be seen publicly.
 
 ### Description
-Through the CenturyLink Blueprint integration, the Diaspora Stack provides a click-through solution to install and configure Diaspora on the Linux platform.
+Through the CenturyLink Blueprint integration, the Diaspora provides a click-through solution to install and configure Diaspora on the Linux platform.
 
 For more information, please visit [http://www.diasporafoundation.org/](http://www.diasporafoundation.org/)
 
