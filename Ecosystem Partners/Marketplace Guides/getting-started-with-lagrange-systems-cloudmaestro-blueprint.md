@@ -83,7 +83,7 @@ Follow these step by step instructions to deploy the CloudMaestro Agent on your 
 
 ### Access your Lagrange CloudMaestro Server
 After your Blueprint deploys successfully, please follow these instructions to access your CloudMaestro Server solution:
-1. Check email to obtain Commvault Server information and click on the link to load the server in Control Portal
+1. Check email to obtain CloudMaestro Server information and click on the link to load the server in Control Portal
 2. Connect to the CloudMaestro console to register your new server.
   1. Click "Edit" on Application for the new server. 
 
