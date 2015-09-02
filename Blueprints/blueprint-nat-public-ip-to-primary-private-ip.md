@@ -10,7 +10,7 @@
 
 When designing Blueprints using the *Blueprint Designer* there is a temping task available called **add public ip address**.
 
-![Blueprint Designer](blueprint-nat-public-ip-to-primary-private-ip-1.png)
+![Blueprint Designer](../images/blueprint-nat-public-ip-to-primary-private-ip-1.png)
 
 When executing this task the following happens:
 
