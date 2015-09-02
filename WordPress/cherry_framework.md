@@ -1,6 +1,6 @@
 {{{
   "title": "How To Setup Cherry Framework for WordPress",
-  "date": "08-31-2015",
+  "date": "09-02-2015",
   "author": "Andy Watson",
   "attachments": [],
   "related-products" : [],
@@ -28,19 +28,17 @@ Cherry Framework comes with a robust amount of features and options that makes i
 
 1. First you will need to setup your [local developement environment] (https://www.ctl.io/knowledge-base/wordpress/wordpress-local-development/).
 
-2. Next is to [download and save the framework](http://www.cherryframework.com/) from the Cherry Framework website. 
+2. Next is to [download and save the framework](http://www.cherryframework.com/) from the Cherry Framework website for the local environment.
 
-![Cherry Framework Download](../images/wp_cherry_framework/cherry_download.png) 
+  ![Cherry Framework Download](../images/wp_cherry_framework/cherry_download.png) 
 
-3. Follow the instructions in Step 1 of the [quick start guide](http://www.templatemonster.com/help/quick-start-guide/wordpress-themes/master/index_en.html#cherryframework_installation) to install the the Framework.
+3. Follow the instructions in Step 1 of the [quick start guide](http://www.templatemonster.com/help/quick-start-guide/wordpress-themes/master/index_en.html#cherryframework_installation) to install the the framework for the local environment.
 
 4. Activate any plugins that are installed with the framework.
 
 5. Push the site [updates with Git](https://www.ctl.io/knowledge-base/wordpress/wordpress-site-updates-with-git/).
 
-6. Once the site updates have been made. The theme and plugins will need to be activated once again for your live site using the same steps as used in step 3 and 4.
-
-
+6. Once the site updates have been made. Login to wp-admin on your live site and activate the theme and plugins associated with the Cherry Framework.
 
 ### Conclusion
 After completing the steps above, you should now be able to apply themes from Template Monster as well as use the rich features and options the framework has to offer.
