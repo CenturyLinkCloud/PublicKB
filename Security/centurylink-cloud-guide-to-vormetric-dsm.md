@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to Vormetric DSM",
-  "date": "9-01-2015",
+  "date": "9-03-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -13,6 +13,7 @@
 * [Prerequisites](#Prerequisites)
 * [General Notes](#General-Notes)
 * [DNS Services](#DNS-Services)
+* [Network Connectivity](#Network-Connectivity)
 * [Data Security Manager Configuration](#Data-Security-Manager-Configuration)
 * [Account Hierarchy and VDS Domains](#Account-Hierarchy-and-VDS-Domains)
     * [Account Hierarchy Single VDS Domain](#Account-Hierarchy-Single-VDS-Domain)
@@ -23,9 +24,9 @@
     * [Creating Policies](#Creating-Policies)
     * [Creating Guardpoints](#Creating-Guardpoints)
 * [Encrypting Existing Data](#Encrypting-Existing-Data)
-* [Network Connectivity](#Network-Connectivity)
 * [High Availability](#High-Availability)
 * [DSM Automatic Backup](#DSM-Automatic-Backup)
+* [Server Backup and Recovery](#Server-Backup-and-Recovery)
 
 ### Vormetric DSM Overview
 Vormetric provides enterprise encryption and key management services that enable corporations to protect their data. Vormetric addresses industry compliance mandates and government regulations globally by securing data in physical, virtual and cloud infrastructures, through Data Encryption, Key Management, Access Policies, Privileged User Control, and Security Intelligence.  Customers should refer to our [Getting Started with Vormetric DSM](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-dsm.md) knowledge-base article for more information.  
@@ -40,6 +41,33 @@ Vormetric provides enterprise encryption and key management services that enable
 
 ### DNS Services
 DNS resolution is crucial to a successful implementation as all communications between the DSM and every agent and between the DSM and failover DSM units relies on DNS resolution. Ensure assigned hostnames and DNS records exists for DSMs and server systems in all associated DNS servers and that the fully qualified domain name for the DSM's and server systems are entered in the DSM units and servers systems during the Vormetric setup and/or configuration. **DNS names are case sensitive so it is imperative this is taken into account when registering hosts and configuring DNS services.**
+
+### Network Connectivity
+Customers are encouraged to place their DSM in a secure isolated vlan on the CenturyLink Cloud.  This provides maximum security and control of inbound and outbound TCP and UDP ports used in the delivery of encryption services.  
+
+![Network Overview](../images/centuryLink-cloud-guide-to-vormetric-DSM-03.png)
+
+The table below provides a map of the DSM and Host Agent TCP and UDP ports required for encryption services.
+
+**Source**|**Destination**|**Port**
+----------|---------------|--------
+DSM|DNS Server(s)|TCP/53<br>UDP/53
+DSM|Host Agents<sup>1</sup>|PING<br>TCP/7024
+Host Agents|DSM|PING<br>HTTP(8080)<br>TCP/8443<br>TCP/8444<br>TCP/8446<br>TCP/8447
+
+<sup>1</sup>*Windows Servers require an incoming firweall rule to permit TCP/7024 inbound.  You can apply this change to domain members or workgroup servers using a group policy.  Execute the following command (or use the Group Policy Editor) on the Domain Controller or workgroup server:*
+
+**Domain Member:**
+
+```
+New-NetFirewallRule -DisplayName “Vormetric DSM to Agent” -Direction Inbound –Protocol TCP –LocalPort 7024 -Action Allow –PolicyStore "FQDN\gpo_name"
+```
+
+**Workgroup Server:**
+
+```
+New-NetFirewallRule -DisplayName “Vormetric DSM to Agent" -Direction Inbound –Protocol TCP –LocalPort 7024 -Action Allow
+```
 
 ### Data Security Manager Configuration
 
@@ -363,33 +391,6 @@ VTE provides three encryption methods to encrypt existing data: the Copy, Restor
 
 5. Open access to the directory.
 
-### Network Connectivity
-Customers are encouraged to place their DSM in a secure isolated vlan on the CenturyLink Cloud.  This provides maximum security and control of inbound and outbound TCP and UDP ports used in the delivery of encryption services.  
-
-![Network Overview](../images/centuryLink-cloud-guide-to-vormetric-DSM-03.png)
-
-The table below provides a map of the DSM and Host Agent TCP and UDP ports required for encryption services.
-
-**Source**|**Destination**|**Port**
-----------|---------------|--------
-DSM|DNS Server(s)|TCP/53<br>UDP/53
-DSM|Host Agents<sup>1</sup>|PING<br>TCP/7024
-Host Agents|DSM|PING<br>HTTP(8080)<br>TCP/8443<br>TCP/8444<br>TCP/8446<br>TCP/8447
-
-<sup>1</sup>*Windows Servers require an incoming firweall rule to permit TCP/7024 inbound.  You can apply this change to domain members or workgroup servers using a group policy.  Execute the following command (or use the Group Policy Editor) on the Domain Controller or workgroup server:*
-
-**Domain Member:**
-
-```
-New-NetFirewallRule -DisplayName “Vormetric DSM to Agent” -Direction Inbound –Protocol TCP –LocalPort 7024 -Action Allow –PolicyStore "FQDN\gpo_name"
-```
-
-**Workgroup Server:**
-
-```
-New-NetFirewallRule -DisplayName “Vormetric DSM to Agent" -Direction Inbound –Protocol TCP –LocalPort 7024 -Action Allow
-```
-
 ### High Availability
 Clusters are a staple of any HA environment. DSM appliances are configured as primary appliances by default. This is not an issue in a standalone environment. However, in a clustered DSM environment, there can be only one primary DSM at a time. Additional DSMs added to that environment must be configured as failover appliances and receive their configuration from the primary. To make changes to the configuration, a Vormetric System Administrator connects to the primary server and edits the configuration. The changes then are replicated to the failover servers.
 
@@ -514,3 +515,34 @@ Set up the Automatic Backup feature to protect the configuration settings as wel
 4. After a successful backup, look in the specified Target Directory on the Target Host to see the backup files.
 
     ![automatic backup files list](../images/centuryLink-cloud-guide-to-vormetric-DSM-15.png)
+
+### Server Backup and Recovery
+CenturyLink Cloud customers, depending on their technical requirements, implement various backup and recovery solutions.  Both the backup and restoration of encrypted data sets are handled differently depending on the solution put in place.  
+
+**Backup Method**|**Approach**
+-----------------|------------
+[Standard Virtual Server](../Servers/centurylink-cloud-backup-and-recovery-services.md)|Standard Virtual Servers include either a 5 or 14 day daily virtual server backup of the entire instance. Using this service with encrypted data sets should be transparent during a backup or virtual server restore action as the entire virtual server is impacted.  Host agents will communicate with the Vormetric DSM and receive the same policy with key access even if you restore a virtual server to a previous state.  
+[Managed Backup](//www.ctl.io/managed-services/backup)|Managed Backup services leverage a client agent to backup and restore data to the server.  As such as part of policy creation a security rule must be put in place that **permits** the backup agent executable **read/write** to the Guardpoint.  Agent based backups are the only situation in which a security rule should permit read/write to a Guardpoint.  Its important to note that should you restore data, using the agent, to a location outside the Guardpoint policy configuration changes will be required in order to permit access to this new location and apply the encryption key. An example policy that includes a security rule for a backup agent can be seen below.
+[Ecosystem](../Ecosystem Partners/ecosystem-partner-list.md)|3rd Party Ecosystem partners such as [Commvault](../Ecosystem Partners/Marketplace Guides/getting-started-with-commvault-storage-blueprint.md) generally leverage client agents similar to Managed Backup services.  As such the rules and approach would mirror the process already detailed.
+[Snapshots](../Servers/creating-and-managing-server-snapshots.md)|While technically a snapshot is not a backup it does facilitate the restoration of an entire virtual server to a previous state.  Using this service with encrypted data sets should be transparent during a snapshot or revert snapshot action as the entire virtual server is impacted.  Host agents will communicate with the Vormetric DSM and receive the same policy with key access even if you revert a snapshot to a previous state.  
+
+**Example Unstructured Data Policy**
+
+**Policy**|**Resource**|**User**|**Process**|**Action**|**Effects**
+----------|------------|--------|-----------|----------|-----------
+**1**|&#42;|Trust_Set|&#42;|&#42;|Permit<br>Apply Key
+**2**|&#42;|&#42;|Backup_Set|Read/Write|Permit
+**3**|&#42;|&#42;|&#42;|&#42;|Deny<br>Audit
+
+Policy Summary:
+
+1. Only authorized Users/Groups have full read/write and automatic encrypt/decrypt access to the protected data.
+
+2. The Backup software (agent based) can read and write data files.  For example, for a Windows 2012 R2 on Managed Backup the Netbackup agent executables are as follows:
+  * C:\Program Files\VERITAS\NetBackup\bin\bpcd.exe
+  * C:\Program Files\VERITAS\NetBackup\bin\bpinetd.exe
+  * C:\Program Files\VERITAS\pdde\mtstrmd.exe
+  * C:\Program Files\VERITAS\NetBackup\bin\nbdisco.exe
+  * C:\Program Files\VERITAS\NetBackup\bin\vnetd.exe
+
+3. All other data requests to the protected data are denied and audited.
