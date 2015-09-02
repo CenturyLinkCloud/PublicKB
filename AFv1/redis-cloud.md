@@ -12,7 +12,7 @@ This document is for users of AppFog v1. This document does not apply to the cur
 
 ### Documentation
 
-<p><a href="http://redis-cloud.com">Redis Cloud</a> is a fully-managed service for running your Redis dataset. You can quickly and easily get your apps up and running with Redis Cloud on AppFog. You can then add as many Redis databases as you need (each running in a dedicated process, in a non-blocking manner) and increase or decrease the memory size of your plan without affecting your existing data. You can easily import an existing dataset to any of your Redis Cloud databases, from your AWS S3 account or from any other Redis server. Daily backups are performed automatically and in addition, you can backup your dataset manually at any given time.</p>
+<p><a href="https://redislabs.com/redis-cloud">Redis Cloud</a> is a fully-managed service for running your Redis dataset. You can quickly and easily get your apps up and running with Redis Cloud on AppFog. You can then add as many Redis databases as you need (each running in a dedicated process, in a non-blocking manner) and increase or decrease the memory size of your plan without affecting your existing data. You can easily import an existing dataset to any of your Redis Cloud databases, from your AWS S3 account or from any other Redis server. Daily backups are performed automatically and in addition, you can backup your dataset manually at any given time.</p>
 <p>Note: Redis Cloud is currently only available on our AWS US-East infrastructure.</p>
 <h3>Install Redis Cloud</h3>
 <p>In the "Add-ons" tab on your app console click "Install" for the Redis Cloud add-on. That’s it!</p>
@@ -141,7 +141,7 @@ Predis\Autoloader::register();</pre>
 <pre>$redis-&gt;set('foo', 'bar');
 $value = $redis-&gt;get('foo');</pre>
 <h3 id="rediscloud-node">Using Redis from Node.js</h3>
-<p><a href="https://github.com/mranney/node_redis">node_redis</a> is a complete Redis client for node.js.</p>
+<p><a href="https://github.com/NodeRedis/node_redis">node_redis</a> is a complete Redis client for node.js.</p>
 <p>You can install it with:</p>
 <pre>$ npm install redis</pre>
 <p>Configure connection to your Redis-Cloud service using <code>REDISCLOUD_URL</code> environment variable and the following code snippet:</p>
@@ -171,6 +171,6 @@ client.get('foo', function (err, reply) {
 <p>All Redis Cloud support and runtime issues should be submitted to <a href="http://support.appfog.com">AppFog Support</a>. You may <a href="https://redislabs.com/contact" target="_blank&quot;">Contact Redis Labs</a> with any non-support related issues or product feedback.</p>
 <h3>Additional resources</h3>
 <ul>
-<li><a href="http://redis-cloud.com/redis/developers">Developers Resources</a></li>
+<li><a href="https://redislabs.com/redis-howto">Developer's Resources</a></li>
 <li><a href="http://redis.io/documentation">Redis Documentation</a></li>
 </ul>
