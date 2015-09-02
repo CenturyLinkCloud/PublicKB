@@ -28,7 +28,7 @@ Below, each action available in the Control Portal is explained and demonstrated
 ![using-object-storage-from-the-control-portal-04](../images/using-object-storage-from-the-control-portal-04.png)  
 
 #### Reset Object Storage User Secret Key
-1. Navigate to the record for the chosen Object Storage user.
+1. Navigate to the record for the chosen Object Storage user.  
 
 2. Click the **reset secret key** button.  
 ![using-object-storage-from-the-control-portal-05](../images/using-object-storage-from-the-control-portal-05.png)  
@@ -49,12 +49,12 @@ Below, each action available in the Control Portal is explained and demonstrated
 ![using-object-storage-from-the-control-portal-09](../images/using-object-storage-from-the-control-portal-09.png)  
 
 #### Manage Object Storage Permissions
-1. View the details for an individual bucket.
+1. View the details for an individual bucket.  
 
 2. Click the **permissions** section to activate the **customize permissions** view.  
 ![using-object-storage-from-the-control-portal-10](../images/using-object-storage-from-the-control-portal-10.png)  
 
-3. Click **add grantee** to update the Access Control List (ACL) for this bucket. This list shows all of the users in this CenturyLink Cloud account, and two built in groups, **All Users** and **Authenticated Users**.  When you add **All Users** to a bucket -- and give it read permissions -- you are giving public Internet access to the bucket. If you add the **Authenticated Users** group to the bucket, then any Object Storage user can access the bucket.
+3. Click **add grantee** to update the Access Control List (ACL) for this bucket. This list shows all of the users in this CenturyLink Cloud account, and two built in groups, **All Users** and **Authenticated Users**.  When you add **All Users** to a bucket -- and give it read permissions -- you are giving public Internet access to the bucket. If you add the **Authenticated Users** group to the bucket, then any Object Storage user can access the bucket.  
 ![using-object-storage-from-the-control-portal-11](../images/using-object-storage-from-the-control-portal-11.png)  
 
 4. For any existing user, you can modify their permissions by selecting/de-selecting checkboxes associated with each permission. Note that the bucket owner always has full control. To delete the user from the grantee list, click the red "x" at the far right of the record. Changes made to a bucket are instantly committed. For instance, if you add **All Users** with read permissions, then the buckets (and contained objects) are immediately available to anyone. Likewise, if you use a 3rd party tool to manage Object Storage, changes to the grantee list are instantly visible in the Control Portal.  
