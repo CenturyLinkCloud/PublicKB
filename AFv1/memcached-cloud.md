@@ -66,7 +66,7 @@ $cache.get("foo")
       &lt;id&gt;spy&lt;/id&gt;
       &lt;name&gt;Spy Repository&lt;/name&gt;
       &lt;layout&gt;default&lt;/layout&gt;
-      &lt;url&gt;http://files.couchbase.com/maven2/&lt;/url&gt;
+      &lt;url&gt;http://files.couchbase.com/maven2/&lt;url&gt;
       &lt;snapshots&gt;
         &lt;enabled&gt;false&lt;/enabled&gt;
       &lt;/snapshots&gt;
