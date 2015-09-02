@@ -12,7 +12,9 @@ This document is for users of AppFog v1. This document does not apply to the cur
 
 ### Documentation
 
-<p><a href="https://sendgrid.com">SendGrid's</a> cloud-based email infrastructure relieves businesses of the cost and complexity of maintaining custom email systems. SendGrid provides reliable delivery, scalability and real-time analytics along with flexible APIs that make custom integration a breeze.</p>
+<p><a href="https://sendgrid.com">SendGrid</a> is no longer available as an Add-On. The following documentation is for users with an existing SendGrid Add-On account.</p>
+<p> Users who wish to use SendGrid can follow the documentation to intergrate a SendGrid account with AppFog. First create a <a href="https://sendgrid.com">SendGrid</a> account, then establish the SendGrid environment variables either through the Mission Control page of the web console or in the CLI using: <code>env-add &lt;appname&gt; &lt;variable[=]value&gt;</code></p>
+
 <h3>Install SendGrid</h3>
 <p>In the "Add-ons" tab on your app console click "Install" for the SendGrid add-on. That's it!</p>
 <p>Once SendGrid has been added, you will notice new environment variables: in the <code>Env variables</code> tab on your app console: <code>SENDGRID_USERNAME</code>, <code>SENDGRID_PASSWORD</code>, <code>SENDGRID_SMTP_HOST</code>.</p>
@@ -113,7 +115,7 @@ public class SimpleMail {
     }
 }</pre>
 <h3 id="sendgrid-php">PHP</h3>
-<p>You can use <a href="https://github.com/sendgrid/sendgrid-php">this</a> library to send emails through SendGrid using PHP. More information about the library can be found <a href="http://sendgrid.com/docs/Code_Examples/php.html">here</a>.</p>
+<p>You can use <a href="https://github.com/sendgrid/sendgrid-php">this</a> library to send emails through SendGrid using PHP. More information about the library can be found <a href="http://sendgrid.com/docs/Integrate/Code_Examples/php.html">here</a>.</p>
 <pre>include 'path/to/sendgrid-php/SendGrid_loader.php';
 $ sendgrid = new SendGrid(getenv('SENDGRID_USERNAME'), getenv('SENDGRID_PASSWORD'));
 $ mail = new SendGrid\Mail();
@@ -195,5 +197,5 @@ message.add_to("someone@example.com", "John Doe")</pre>
 <p>Additional resources are available at:</p>
 <ul>
 <li><a href="http://sendgrid.com/docs/Integrate/index.html">Integrate With SendGrid</a></li>
-<li><a href="http://sendgrid.com/docs/Code_Examples/index.html">Code Examples</a></li>
+<li><a href="http://sendgrid.com/docs/Integrate/Code_Examples/index.html">Code Examples</a></li>
 </ul>
