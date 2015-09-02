@@ -10,7 +10,7 @@
 
 When designing Blueprints using the *Blueprint Designer* there is a temping task available called **add public ip address**.
 
-![Blueprint Designer](../images/blueprint-nat-public-ip-to-primary-private-ip-1.png)
+<img alt="Blueprint Designer" src="../images/blueprint-nat-public-ip-to-primary-private-ip-1.png" style="max-width: 80%;">
 
 When executing this task the following happens:
 
@@ -40,3 +40,4 @@ Specify the ports to open as a *Design Time* parameter and use the following `po
 
 Specify multiple port/protocol tuples with space delimiters.
 
+<img alt="Blueprint Designer" src="../images/blueprint-nat-public-ip-to-primary-private-ip-2.png" style="max-width: 500px;">
