@@ -18,7 +18,7 @@ To access the HD Console, go to port 8150 of the managment node then sign in usi
 
 ![CLC Search Cloudera Blueprint](../images/Cloudera/hd_console_sign_in.png)
 
-###Resize you cluster
+###Resize cluster
 
 ######Remove Node
 Removing a node from your cluster will perform the appropriate actions within Cloudera to decommission and delete the node from your cluster while also deleting that node within CenturyLink Cloud.  Enter the number of nodes in the box (or use the spinner) to let us know how many nodes you would like **remaining** on your cluster and we will take care of the rest.  *Note: You cannot go below 4 nodes
