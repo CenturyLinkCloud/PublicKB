@@ -102,3 +102,4 @@ This document is for users of AppFog v1. This document does not apply to the cur
 * [Setting up a Redundant Cloud PaaS Environment](../../AFv1/setting-up-a-redundant-cloud-paas-environment.md)
 * [The History of PaaS](../../AFv1/the-history-of-paas.md)
 * [What is PaaS?](../../AFv1/what-is-paas.md)
+* [Migrating Legacy Apps to the Cloud with PaaS](../../AFv1/migrating-legacy-apps-to-the-cloud-with-paas.md)
