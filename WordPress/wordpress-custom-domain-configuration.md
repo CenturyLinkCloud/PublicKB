@@ -63,7 +63,7 @@ www.example.com.    CNAME   example.useast.wordpress.ctl.io.
    define('WP_HOME', getenv("SITEURL"));
    ```
 
-9. Replace both instances of `getenv("SITEURL)` with a URL using your new domain. For example:
+9. Replace both instances of `getenv("SITEURL")` with a URL using your new domain. For example:
 
    ```
    define('WP_SITEURL', "https://www.example.com");
