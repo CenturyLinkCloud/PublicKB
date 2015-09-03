@@ -60,7 +60,7 @@ A: Review the tips described in [VPN Client Connection Troubleshooting](../Netwo
 
 **Q: I have multiple sub accounts and want to be able to connect to each one's VPN individually. How can I do that?**
 
-A: By default, connecting to the VPN of a parent account will NOT provide access to the sub account networks as well. One option would be to [Connect Networks Across a Parent & Sub-Account Hierarchy](../Network/connecting-data-center-networks-through-firewall-polices.md).  This way, when you can log into OpenVPN on the parent account, you will be able to RDP/SSH to servers on the sub account network.  Another option would be to maintain multiple OpenVPN connections on your machine.  Please follow the steps describing how to [Connect to Multiple OpenVPN Instances](../Network/connect-to-multiple-openvpn-instances.md).
+A: By default, connecting to the VPN of a parent account will NOT provide access to the sub account networks as well. One option would be to [Connect Networks Across a Parent & Sub-Account Hierarchy](../Network/connecting-data-center-networks-through-firewall-policies.md).  This way, when you can log into OpenVPN on the parent account, you will be able to RDP/SSH to servers on the sub account network.  Another option would be to maintain multiple OpenVPN connections on your machine.  Please follow the steps describing how to [Connect to Multiple OpenVPN Instances](../Network/connect-to-multiple-openvpn-instances.md).
 
 **Q: Can I configure my VPN to require two-factor authentication?**
 
