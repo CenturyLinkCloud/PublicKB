@@ -6,8 +6,23 @@
   "contentIsHTML": false
 }}}
 
-### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.## Overview
+### IMPORTANT NOTE
+
+CenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
+
+During the Limited Beta there is no production Service Level Agreement.
+
+## Overview
 CenturyLink Cloud WordPress supports custom domain name configuration after [setting up a new site](getting-started-with-wordpress-as-a-service.md).
+
+## Prerequisite
+
+You have added a CNAME, ALIAS, or similar DNS record between your custom domain and your supplied WordPress site
+domain. For example, you could create a CNAME record like this:
+
+```
+www.example.com.    CNAME   example.useast.wordpress.ctl.io.
+```
 
 ## WordPress Custom Domain Configuration
 
@@ -39,24 +54,24 @@ CenturyLink Cloud WordPress supports custom domain name configuration after [set
 
   ![](../images/wp_custom_domain_configuration/wp_custom_domain_configuration_06.png)
 
-7. Login to your WordPress site using the CenturyLink Cloud provided URL and browse to Settings > General
+7. Follow the steps to [update your site using git](wordPress-site-updates-with-git.md). Specifically, you will
+   need to modify the file `wp-config.php`.
+8. Look for the lines:
 
-  ![](../images/wp_custom_domain_configuration/wp_custom_domain_configuration_07.png)
+   ```
+   define('WP_SITEURL', getenv("SITEURL"));
+   define('WP_HOME', getenv("SITEURL"));
+   ```
 
-8. Find the section with the following variables
-  * WordPress Address (URL)
-  * Site ADdress (URL)
+9. Replace both instances of `getenv("SITEURL)` with a URL using your new domain. For example:
 
-  ![](../images/wp_custom_domain_configuration/wp_custom_domain_configuration_08.png)
+   ```
+   define('WP_SITEURL', "https://www.example.com");
+   define('WP_HOME', "https://www.example.com");
+   ```
 
-9. Input your domain name
-
-  _in this example wordpress.centurylink.com_
-
-  ![](../images/wp_custom_domain_configuration/wp_custom_domain_configuration_09.png)
-
-10. Scroll to the bottom and click Save Changes
-
-  ![](../images/wp_custom_domain_configuration/wp_custom_domain_configuration_10.png)
-
+   Note that the `WP_SITEURL` variable defines the base URL used for the WordPress administration console, and
+   `WP_HOME` defines the base URL for the general, publicly accessible site.
+10. When you are ready, you can [commit and push](wordPress-site-updates-with-git.md) your change back up to CenturyLink
+    Git Hosting.
 11. Your site is now using your custom domain name.
