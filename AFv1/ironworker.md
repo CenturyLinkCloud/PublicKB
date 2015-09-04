@@ -15,7 +15,7 @@ This document is for users of AppFog v1. This document does not apply to the cur
 <h3>Install IronWorker</h3>
 <p>In the "Add-ons" tab in your app console click "Install" for the IronWorker add-on. That's it!</p>
 <h3>Integrate IronWorker</h3>
-<p>Just copy <a href="https://github.com/iron-io/iron_worker_php/blob/master/IronWorker.class.php">IronWorker.class.php</a> and include it in your script:</p>
+<p>Just copy <a href="https://github.com/iron-io/iron_core_php">IronCore.class.php</a> and include it in your script (an alternate option is to use Composer and use <a href="https://github.com/iron-io/iron_worker_php">iron_worker_php</a>)</p>
 <pre>&lt;?php
 require_once "IronWorker.class.php"</pre>
 <h3>Create a Worker</h3>
@@ -32,7 +32,7 @@ echo "Hello PHP World!\n";</pre>
 <h3>Upload Your Worker</h3>
 <p>Here's how to take the example above, zip it up, and upload it to IronWorker.</p>
 <pre>&lt;?php
-# Zip single file:
+// Zip single file:
 IronWorker::createZip(dirname(__FILE__), array('HelloWorld.php'), 'worker.zip', true);
 $res = $iw-&gt;postCode('HelloWorld.php', 'worker.zip', 'HelloWorld');</pre>
 <h3>Queue Your Worker</h3>
@@ -42,10 +42,10 @@ $task_id = $iw-&gt;postTask('HelloWorld');</pre>
 <h3>Schedule Your Worker</h3>
 <p>If you want to run your code more than once or run it in regular intervals, you can schedule it:</p>
 <pre>&lt;?php
-# 3 minutes from now
+// 3 minutes from now
 $start_at = time() + 3*60;
 
-# Run task every 2 minutes, repeat 10 times
+// Run task every 2 minutes, repeat 10 times
 $iw-&gt;postScheduleAdvanced('HelloWorld', array(), $start_at, 2*60, null, 10);</pre>
 <h3>Check the Status of Your Worker</h3>
 <p>Use the <code>getTaskDetails()</code> method.</p>
@@ -60,5 +60,5 @@ echo $details-&gt;status; # prints 'queued', 'complete', 'error' etc.</pre>
 <li><a href="https://github.com/iron-io/iron_worker_php">IronWorker on GitHub</a></li>
 <li><a href="http://iron-io.github.com/iron_worker_php/">IronWorker PHP Reference Documentation</a></li>
 <li><a href="https://github.com/iron-io/iron_worker_php/wiki">IronWorker PHP Wiki</a></li>
-<li><a href="http://docs.iron.io/">Full Documentation on Iron.io</a></li>
+<li><a href="http://dev.iron.io/worker/">Full Documentation on Iron.io</a></li>
 </ul>

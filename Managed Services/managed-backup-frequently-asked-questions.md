@@ -124,3 +124,4 @@ US East (Sterling) - VA1|[CenturyLink DL2](//www.centurylink.com/business/enterp
 Great Britain (Slough) - GB3|[CenturyLink LO6](//www.centurylink.com/business/enterprise/colocation/data-centers/united-kingdom/london.html)
 APAC (Singapore) - SG1|[CenturyLink SG8](//www.centurylink.com/business/enterprise/colocation/data-centers/singapore.html)
 US Central (Chicago) - IL1|[CenturyLink DL2](//www.centurylink.com/business/enterprise/colocation/data-centers/united-states/texas/dallas.html)
+Canada (Toronto - Mississauga) - CA3|[CenturyLink TR3](//www.centurylink.com/business/enterprise/resources/products/tr3-toronto-canada.html)

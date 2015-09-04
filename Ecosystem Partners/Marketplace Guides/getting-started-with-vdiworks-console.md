@@ -1,5 +1,5 @@
 {{{
-  "title": "Getting Started With VDIworks Console",
+  "title": "Getting Started With VDIworks Console Server",
   "date": "08-10-2015",
   "author": "VDIworks",
   "attachments": [],
@@ -44,9 +44,9 @@ VDP Console is available as a Blueprint for deployment on a new server.
 1. Locate and Select the VDIworks VDP CS Blueprint and Deploy
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
   2. Search for 'VDIworks VDP' in the keyword search on the right side of the page.
-  3. Locate the 'VDIworks VDP CS 351' Blueprint
+  3. Locate the 'VDIworks VDP Concole Server' Blueprint
 
-2. Choose and Deploy the Blueprint. Click the 'Install VDIworks VDP CS' Blueprint.
+2. Choose and Deploy the Blueprint. Click the 'Install VDIworks VDP Console Server' Blueprint.
 
 3. Configure the Blueprint.   Complete the information below:
 
@@ -62,7 +62,7 @@ VDP Console is available as a Blueprint for deployment on a new server.
   10. Select an SQL Version, e.g. 2008 r2 Standard
   11. Select SQL Features to be included
      * Database Engine Services
-     * SQL Server Replication
+     * Full Text Search
      * Analysis Services
      * Reporting Services
      * Management Tools

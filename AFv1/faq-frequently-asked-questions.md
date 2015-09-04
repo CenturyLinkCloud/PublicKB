@@ -16,9 +16,9 @@ This document is for users of AppFog v1. This document does not apply to the cur
 <ul>
 <li><a href="what-s-the-difference-between-php-fog-and-appfog.md">What's the difference between PHP Fog and AppFog?</a></li>
 <li><a href="billing-process-overview.md">How does billing work?</a></li>
-<li><a href="scaling-your-application-on-paas.md">How can I update my app without downtime?</a></li>
+<li><a href="how-can-i-update-my-app-without-downtime.md">How can I update my app without downtime?</a></li>
 <li><a href="how-much-for-additional-bandwidth-exceeding-my-plan-limit.md">How much for additional bandwidth exceeding my plan limit?</a></li>
-<li><a href="how-can-i-update-my-app-without-downtime.md">Does AppFog have a persistent file system?</a></li>
+<li><a href="does-appfog-have-a-persistent-file-system.md">Does AppFog have a persistent file system?</a></li>
 <li><a href="how-do-i-move-my-apps-and-data-to-another-account.md">How do I move my apps and data to another Account?</a></li>
 <li><a href="why-does-my-app-return-a-410-removed-error.md">Why does my app return a 410 Removed error?</a></li>
 <li><a href="why-does-my-app-return-a-429-calm-down-error.md">Why does my app return a 429 Calm Down error?</a></li>

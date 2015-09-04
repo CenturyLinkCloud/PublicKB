@@ -13,7 +13,7 @@
     + __Local Protection Group Cache__ Added the ability for production sites to add a small cache and finish the sync of protection groups.
     + __Resize the checkpoint pool size__ Now able to resize the checkpoint pool size.
     + __Add/Remove Server__ Now can add and remove Servers from existing Protection Group.
-    + __Automation__ Added automation of LRA (Local Replication Agent), makestub and In2Out installation.
+    + __Automation__ Added automation of LRA (Local Replication Agent) and makestub.
 
     ![SafeHaven](../images/2015-09-01-safehaven-pg-localcache.png) 
 
@@ -39,6 +39,7 @@
     + Ubuntu 12
     + Ubuntu 14
     + Windows 2012 R2
+    + Windows 2012 DC
 
 * __New Naming Convention for Automated OS Patching.__ The automated patching names have been updated so that they are more intuitive. The new Blueprint names are:
     + Auto Patching for RHEL and CentOS
@@ -47,6 +48,8 @@
     ![Automated Patching](../images/2015-09-01-auto-patching.png)
 
 * __Managed Hadoop.__ Minor changes have been made to improve the reliability of Managed Hadoop builds.
+
+* __Managed Backup.__ The service has been extended to our CA3 data center.
 
 * __Cloud Platform.__ The CenturyLink Cloud platform is releasing with some updates including:
 
@@ -57,15 +60,15 @@
 
 ### Ecosystem: New Blueprints (5)
 
-* __[Commvault](http://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-commvault-server/)__ Commvault has integrated their enterprise backup technology software, Simpana, with the CenturyLink Cloud. In addition to installing the software, the CenturyLink Cloud Blueprint deployment include Commvault configuration best practices.  If you need to address the business challenges of data growth, data protection, end user protection or need a file-level backup solution that uses de-dupe technology, check out Commvault.  The Blueprints make it easy to deploy to your environment.
+* __[Commvault](../Ecosystem Partners/Marketplace Guides/getting-started-with-commvault-storage-blueprint.md)__ Commvault has integrated their enterprise backup technology software, Simpana, with the CenturyLink Cloud. In addition to installing the software, the CenturyLink Cloud Blueprint deployment include Commvault configuration best practices.  If you need to address the business challenges of data growth, data protection, end user protection or need a file-level backup solution that uses de-dupe technology, check out Commvault.  The Blueprints make it easy to deploy to your environment.
 
-* __[Lagrange CloudMaestro](http://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-lagrange-systems-cloudmaestro/)__ CloudMaestro is an Application Delivery Controller delivered with a Software-as-a-Service control plane for exceptional performance and availability in cloud infrastructure.  Deploying the CloudMaestro Agent Blueprint on your existing server in the CenturyLink cloud enables CloudMaestro to monitor, alert, replace and scale your application in response to traffic or unforeseen downtime.
+* __[Lagrange CloudMaestro](../Ecosystem Partners/Marketplace Guides/getting-started-with-lagrange-systems-cloudmaestro-blueprint.md)__ CloudMaestro is an Application Delivery Controller delivered with a Softe-as-a-Service control plane for exceptional performance and availability in cloud infrastructure.  Deploying the CloudMaestro Agent Blueprint on your existing server in the CenturyLink cloud enables CloudMaestro to monitor, alert, replace and scale your application in response to traffic or unforeseen downtime.
 
-* __[VDIworks](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-vdiworks-console/)__ CenturyLink Cloud has a certified virtual desktop solution! VDIworks is a provider of virtual desktop software focusing on Cloud Computing, Desktop-as-a-Service and Virtual Desktop Infrastructure (VDI).  VDIworks provides a comprehensive solution that encompasses server management, hypervisor management, virtual machine management, connection management and thin-client/desktop (endpoint) management in a single, easy to use application.  Users can create both a server and a console manager using CenturyLink Blueprints in minutes.
+* __[VDIworks](../Ecosystem Partners/Marketplace Guides/getting-started-with-vdiworks-console.md)__ CenturyLink Cloud has a certified virtual desktop solution! VDIworks is a provider of virtual desktop software focusing on Cloud Computing, Desktop-as-a-Service and Virtual Desktop Infrastructure (VDI).  VDIworks provides a comprehensive solution that encompasses server management, hypervisor management, virtual machine management, connection management and thin-client/desktop (endpoint) management in a single, easy to use application.  Users can create both a server and a console manager using CenturyLink Blueprints in minutes.
 
-* __[Waratek](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-waratek-appsecurity/)__ Defense-in-depth is important.  Waratek's AppSecurity provides a secure Java execution environment that traps attempts to hack applications using techniques such as SQL injection and buffer overflows at the Java Virtual Machine (JVM) level.  AppSecurity for Java from Waratek protects applications from sophisticated attacks without having to install network devices or make code changes. AppSecurity can be added to your environment in minutes using a CenturyLink Cloud blueprint.
+* __[Waratek](../Ecosystem Partners/Marketplace Guides/getting-started-with-waratek-appsecurity.md)__ Defense-in-depth is important.  Waratek's AppSecurity provides a secure Java execution environment that traps attempts to hack applications using techniques such as SQL injection and buffer overflows at the Java Virtual Machine (JVM) level.  AppSecurity for Java from Waratek protects applications from sophisticated attacks without having to install network devices or make code changes. AppSecurity can be added to your environment in minutes using a CenturyLink Cloud blueprint.
 
-* __[Avni](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-avni-software-defined-cloud-partner-template/)__ Avni offers a compelling Software Defined Cloud management framework to automate the deployment of applications and network services to private, public or hybrid clouds. Avni easily orchestrates new or existing multi-tier applications, gathers metrics from application and network services, derives intelligent insights, and takes proactive actions to ensure availability, performance, and application/network SLA based on policy. Companies in retail, financial services and media industries rely on Avni’s platform to bring new services to market quickly.
+* __[Avni](../Ecosystem Partners/Marketplace Guides/getting-started-with-avni-software-defined-cloud-partner-template.md)__ Avni offers a compelling Software Defined Cloud management framework to automate the deployment of applications and network services to private, public or hybrid clouds. Avni easily orchestrates new or existing multi-tier applications, gathers metrics from application and network services, derives intelligent insights, and takes proactive actions to ensure availability, performance, and application/network SLA based on policy. Companies in retail, financial services and media industries rely on Avni’s platform to bring new services to market quickly.
 
 ### Open Source Contributions (2)
 

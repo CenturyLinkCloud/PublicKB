@@ -1,5 +1,5 @@
 {{{
-  "title": "Getting Started with Intrustion Prevention System (IPS)",
+  "title": "Getting Started with Intrusion Prevention System (IPS)",
   "date": "08-11-2015",
   "author": "Stephanie Wong",
   "attachments": [],
@@ -30,7 +30,7 @@ This Blueprint is for the actual installation and activation of the IPS service 
 
 ### Installation Process
 
-1. Search for **Intrustion Prevention** in the Blueprint Library. Then, click **Intrusion Prevention Install RHEL**.  
+1. Search for **Intrusion Prevention** in the Blueprint Library. Then, click **Intrusion Prevention Install RHEL**.  
 
   ![Control Portal](../images/gettingIPS_controlportal.png)
 
@@ -53,6 +53,10 @@ This Blueprint is for the actual installation and activation of the IPS service 
   ![Blueprint Status Log](../images/gettingIPS_rhel_logstatus.png)
 
 5. An email notification is sent to the initiator of the Blueprint for both queuing and completion.
+
+### Agent Billing & Deactivation
+
+Once the IPS Agent is installed on a VM, it will incur an hourly charge until the uninstall blueprint is executed successfully.  If a VM is to be decommissioned, the agent MUST be deactivated to avoid on-going charges.
 
 ### Support
 
@@ -77,3 +81,7 @@ Follow the process in the [Configuring IPS Notifications article](configuring-ip
 **Will you be adding support for additional Operating Systems?**
 
 Yes, we are working on adding additional OSes. If you have a specific OS you would like to see supported, please contact features.ctl.io.
+
+**If I decommission a Virtual Machine, do I need to uninstall the IPS agent?**
+
+Yes, you still need to uninstall the IPS agent to avoid unnecessary charges.  You can uninstall the agent via the uninstall IPS blueprint.
