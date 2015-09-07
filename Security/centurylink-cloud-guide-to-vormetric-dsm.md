@@ -55,9 +55,9 @@ DSM|DNS Server(s)|TCP/53<br>UDP/53
 DSM|Host Agents<sup>1</sup>|PING<br>TCP/7024
 Host Agents|DSM|PING<br>HTTP(8080)<br>TCP/8443<br>TCP/8444<br>TCP/8446<br>TCP/8447
 
-<sup>1</sup>*Windows Servers require an incoming firweall rule to permit TCP/7024 inbound.  You can apply this change to domain members or workgroup servers using a group policy.  Execute the following command (or use the Group Policy Editor) on the Domain Controller or workgroup server:*
+<sup>1</sup>*Windows Servers require an incoming firweall rule to permit TCP/7024 inbound.  You can apply this change to all domain members or specific workgroup servers using a group policy.  Execute the following command (or use the Group Policy Editor) on the Domain Controller or workgroup server:*
 
-**Domain Member:**
+**Domain Controller:**
 
 ```
 New-NetFirewallRule -DisplayName “Vormetric DSM to Agent” -Direction Inbound –Protocol TCP –LocalPort 7024 -Action Allow –PolicyStore "FQDN\gpo_name"
