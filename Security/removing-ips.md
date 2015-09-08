@@ -23,7 +23,8 @@ This Blueprint is for the removal and deactivation of the IPS service on the VM.
 * Microsoft Windows Server 2008 (64-bit only)
 * Microsoft Windows Server 2012 (64-bit only)
 
-### Uninstallation Process for Linux
+### Uninstallation Process
+
 1. Go into the **Blueprints Library**
 
   ![Control Portal](../images/client-security/gettingIPS_controlportal.png)

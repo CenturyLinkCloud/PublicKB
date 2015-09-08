@@ -30,21 +30,23 @@ This Blueprint is for the actual installation and activation of the IPS service 
 
 ### Installation Process
 
-1. Search for **Intrusion Prevention** in the Blueprint Library. Then, click **Intrusion Prevention Install RHEL**.  
+1. Go into the **Blueprints Library**
 
   ![Control Portal](../images/client-security/gettingIPS_controlportal.png)
 
-  ![Notification Update RHEL](../images/client-security/gettingIPS_rhel_blueprintname.png) ![Notification Update Windows](../images/client-security/gettingIPS_windows_blueprintname.png)
+2. Search for **Install Intrusion Prevention** in the Refine Results section. Then, click **Install Intrusion Prevention on Linux** or **Install Intrusion Prevention on Windows** .  
 
-2. Click the **deploy blueprint** button.  
+  ![Search Install Linux](../images/client-security/gettingIPS_rhel_blueprintname.png) ![Notification Update Windows](../images/client-security/gettingIPS_windows_blueprintname.png)
 
-  ![Configure Notifications RHEL](../images/client-security/gettingIPS_rhel_configure.png)
+3. Click the **deploy blueprint** button.  
 
-3. From the **Execute Server** drop down list, select the appropriate virtual machine.  Enter and confirm the User Password.  Click the **next: step 2** button.  
+  ![Configure Install Linux](../images/client-security/gettingIPS_rhel_configure.png)
+
+4. From the **Execute on Server** drop down list, select the appropriate virtual machine.  Enter and confirm the User Password.  Click the **next: step 2** button.  
 
   ![Configure Notifications RHEL Fields](../images/client-security/gettingIPS_rhel_blueprintfields.png)
 
-4. Review the Blueprint parameters and click **deploy Blueprint**.  
+5. Review the Blueprint parameters and click **deploy Blueprint**.  
 
   ![Deploy Blueprint](../images/client-security/gettingIPS_rhel_deploy.png)
 
@@ -52,11 +54,11 @@ This Blueprint is for the actual installation and activation of the IPS service 
 
   ![Blueprint Status Log](../images/client-security/gettingIPS_rhel_logstatus.png)
 
-5. An email notification is sent to the initiator of the Blueprint for both queuing and completion.
+6. An email notification is sent to the initiator of the Blueprint for both queuing and completion.
 
 ### Agent Billing & Deactivation
 
-Once the IPS Agent is installed on a VM, it will incur an hourly charge until the uninstall blueprint is executed successfully.  If a VM is to be decommissioned, the agent MUST be deactivated to avoid on-going charges.
+Once the IPS Agent is installed on a VM, it will incur an hourly charge until the uninstall blueprint is executed successfully.  **If a VM is to be decommissioned, the agent MUST be deactivated to avoid on-going charges.**
 
 ### Support
 
