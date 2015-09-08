@@ -32,25 +32,25 @@ This Blueprint is for the actual installation and activation of the IPS service 
 
 1. Search for **Intrusion Prevention** in the Blueprint Library. Then, click **Intrusion Prevention Install RHEL**.  
 
-  ![Control Portal](../images/gettingIPS_controlportal.png)
+  ![Control Portal](../images/client-security/gettingIPS_controlportal.png)
 
-  ![Notification Update RHEL](../images/gettingIPS_rhel_blueprintname.png) ![Notification Update Windows](../images/gettingIPS_windows_blueprintname.png)
+  ![Notification Update RHEL](../images/client-security/gettingIPS_rhel_blueprintname.png) ![Notification Update Windows](../images/client-security/gettingIPS_windows_blueprintname.png)
 
 2. Click the **deploy blueprint** button.  
 
-  ![Configure Notifications RHEL](../images/gettingIPS_rhel_configure.png)
+  ![Configure Notifications RHEL](../images/client-security/gettingIPS_rhel_configure.png)
 
 3. From the **Execute Server** drop down list, select the appropriate virtual machine.  Enter and confirm the User Password.  Click the **next: step 2** button.  
 
-  ![Configure Notifications RHEL Fields](../images/gettingIPS_rhel_blueprintfields.png)
+  ![Configure Notifications RHEL Fields](../images/client-security/gettingIPS_rhel_blueprintfields.png)
 
 4. Review the Blueprint parameters and click **deploy Blueprint**.  
 
-  ![Deploy Blueprint](../images/gettingIPS_rhel_deploy.png)
+  ![Deploy Blueprint](../images/client-security/gettingIPS_rhel_deploy.png)
 
   **Note:** The Blueprint displays each step taken and its status during provisioning.  
 
-  ![Blueprint Status Log](../images/gettingIPS_rhel_logstatus.png)
+  ![Blueprint Status Log](../images/client-security/gettingIPS_rhel_logstatus.png)
 
 5. An email notification is sent to the initiator of the Blueprint for both queuing and completion.
 
