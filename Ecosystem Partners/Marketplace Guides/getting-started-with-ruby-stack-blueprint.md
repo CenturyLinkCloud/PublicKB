@@ -9,7 +9,7 @@
 ![Ruby Stack logo](https://bitnami.com/assets/stacks/rubystack/img/rubystack-stack-220x234.png)
 
 ### Technology Profile
-Ruby Stack provides a complete, ready-to-run development environment for Ruby on Rails. It includes the latest stable release of Ruby, Rails, RVM, MySQL, SQLite, NGINX, Apache, Memcache and Varnish, Git and Subersion, Sphinx, PHP and phpMyAdmin. It also includes most popular gems for building Rails applications: Thin, RMagick, Rake, Mongrel, Passenger, Nokogiri and more. It also includes libraries such as OpenSSL, openLDAP, CURL, ImageMagick and more.
+Ruby provides a complete, ready-to-run development environment for Ruby on Rails. It includes the latest stable release of Ruby, Rails, RVM, MySQL, SQLite, NGINX, Apache, Memcache and Varnish, Git and Subersion, Sphinx, PHP and phpMyAdmin. It also includes most popular gems for building Rails applications: Thin, RMagick, Rake, Mongrel, Passenger, Nokogiri and more. It also includes libraries such as OpenSSL, openLDAP, CURL, ImageMagick and more.
 
 ### Description
 This CenturyLink Blueprint provides a click-through solution to install and configure Ruby Stack on the Linux platform.

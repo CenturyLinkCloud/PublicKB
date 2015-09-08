@@ -189,7 +189,7 @@ verbosity = WARNING
 </p>
 <h4><a id="version">Special note about S3CMD versions</a></h4>
 <p>
-S3CMD is an active open-source project, and as such is frequently updated. Depending on the version of S3CMD you installed, the default authentication strategy may have changed. Using the incorrect authentication strategy will result in <strong>403 Not Authorized</strong> errors for some requests to object storage. You can tell which version of S3CMD you have by running the command <strong>s3cmd --version</strong> and inspecting the output. If the version is before <strong>1.5.0</strong> then s3cmd will operate correctly.
+S3CMD is an active open-source project, and as such is frequently updated. Depending on the version of S3CMD you installed, the default authentication strategy may have changed. Using the incorrect authentication strategy will result in <strong>403 Not Authorized</strong> or <strong>S3 error: Access Denied</strong> errors for some requests to object storage. You can tell which version of S3CMD you have by running the command <strong>s3cmd --version</strong> and inspecting the output. If the version is before <strong>1.5.0</strong> then s3cmd will operate correctly.
 </p>
 <p>
 If your version is <strong>1.5.0</strong> or newer, then there are two ways to make this work correctly again. The first is to provide the <strong>--signature-v2</strong> argument to S3CMD, for example like <strong>s3cmd --signature-v2 ls</strong>. The argument tells S3CMD to revert to the original authentication strategy. The more permanent change is to add <strong>signature_v2 = True</strong> to the bottom of your .s3cfg file. That will force S3CMD to use the original authentication strategy every time the command is run.

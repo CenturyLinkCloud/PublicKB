@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Pivotal Cloud Foundry - Blueprint",
-  "date": "8-3-2015",
+  "date": "9-1-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -10,7 +10,7 @@
 
 ### Overview
 
-After reading this article, the reader should feel comfortable deploying the Pivotal Cloud Foundry (PCF) on CenturyLink Cloud.
+After reading this article, the reader should feel comfortable deploying the Pivotal Cloud Foundry (PCF) 1.5.5 on CenturyLink Cloud.
 
 ### Partner Profile
 
@@ -54,7 +54,6 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
   are used for all IaaS changes directed by BOSH.  Deploys cannot be done using accounts with requiring two-factor authentication.
 * **Dedicated Network** - Due to the size of typical PCF deploys and some IP address management concerns we require an entire VLAN be dedicated to this install.  PCF servers will reside on the top half of this class-C.
 * **CPU, RAM, and Storage Resources** - A full PCF deploy requires at least 75CPU, 128GB RAM, and 1.25TB disk.  For a successful install your account resources must be sufficient to cover this.
-* **Deploy to Primary Datacenter** - PCF can only be deployed to your primary datacenter as part of this early access release.
 
 #### Steps
 
@@ -95,6 +94,8 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
   Set DNS to “Manually Specify” and use “8.8.8.8” (or any other public DNS server of your choice).
 
   Optionally set the server name prefix.
+
+  **Set the group to the value created in step (1).**  (Your specific group - not the OpenStack one)
 
   The default values are fine for every other option.
 
@@ -235,8 +236,24 @@ Should this split DNS be required implement the following:
   by installing BIND on the Operations Manager host and pointing all DNS resolvers to this IP
 * Edit the public DNS so the FQDN resolves to the NATed public IP for the HA proxy (.128 by default)
 
+
+**IP Address Space for Larger Deployments**
+
+CenturyLink Cloud provides class-C /24 address space on each of its networks, and with the exception of a few IPs at the top and bottom end of the range 
+reserved for platform-level services, the entire subnet is available for use.  Some considerations:
+
+* By default the IP space is cut in half - Ops Manager and CF have access to 128 and above and all lower addresses are reserved for other use.  This is
+  implemented since both Ops Manager and CenturyLink Cloud believe they own IPAM responsibilities.
+* Ops Manager subdivides this network and reserves a portion for each tile's use - this includes steady-state assignments as well as those used only
+  during Errands testing.  In production this means the IP-range can quickly fill up even though there is actually space available
+* Gain IP space by deploying initially using the following approach:
+ * Set the *OpenStack* group's default network to network A.  This will move your Elastic Block Storage services onto a different network segment.
+ * Set the group containing your servers to network B.  Make sure network B is not your first network defined in your primary datacenter.
+ * Configure Ops Director to use from .12 all the way to .230.
+
+
 **What are some known limitations?**
 
 * Accounts requiring two-factor authentication cannoit successfully deploy PCF.  Create a new service account dedidicated to PCF.
-* PCF deployments can only be made to the account's primary datacenter.
+
 

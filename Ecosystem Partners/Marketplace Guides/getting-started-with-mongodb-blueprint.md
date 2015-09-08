@@ -20,7 +20,7 @@ MongoDB – “simple and elegant with the freedom to scale”
 
 http://www.mongodb.org/
 
-#####Customer Support
+##### Customer Support
 
 * [MongoDB Community Support ](http://www.mongodb.org/get-involved)
 

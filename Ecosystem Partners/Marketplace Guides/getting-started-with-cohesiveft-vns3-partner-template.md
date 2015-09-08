@@ -8,7 +8,7 @@
 
 ![Cohesive Networks logo](https://cohesive.net/wp-content/uploads/2015/01/cohesive-networks-logo.gif)
 
-###Partner Profile
+### Partner Profile
 Cohesive Networks is a cloud-native network and security company. Over 1,000 customer use our VNS3 network routing and security products to connect, integrate and secure their critical applications in any cloud. VNS3 is a family of award-winning software-only appliances available in public, private and hybrid clouds.
 
 Cohesive is a member of the Open Data Center Alliance (ODCA), a member of the Amazon Partner Network, an Amazon Marketplace Seller, Microsoft Azure certified, a Google Cloud Platform Authorized Technology Partner, certified HP Helion Ready, an IBM Business Partner and member of the CenturyLink Cloud Marketplace Program.
@@ -16,7 +16,7 @@ Cohesive is a member of the Open Data Center Alliance (ODCA), a member of the Am
 https://www.cohesive.net
 
 #### Contact Cohesive Networks
-#####Cohesive Networks Sales and Support:
+##### Cohesive Networks Sales and Support:
 - Sales and licensing - sales@cohesive.net
 - Email Support - support@cohesive.net
 - Web Support - http://support.cohesive.net
