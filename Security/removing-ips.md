@@ -1,9 +1,10 @@
 {{{
-  "title": "Getting Started with Intrusion Prevention System (IPS)",
+  "title": "Removing Intrusion Prevention System (IPS)",
   "date": "09-08-2015",
   "author": "Sean Robb",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": false
 }}}
 
 ### Overview

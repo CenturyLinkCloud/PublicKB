@@ -3,7 +3,8 @@
   "date": "08-11-2015",
   "author": "Stephanie Wong",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 ### Overview
