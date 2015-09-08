@@ -27,10 +27,10 @@ This guide provides a list of the Operating Systems and Control Portal actions t
 
 ### Actions That Affect Specific Operating System Templates
 
-**Action**|**Operating System(s)**
-----------|---------------------
-Change amount of RAM|CentOS 5<br>CentOS 6<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 12<br>Ubuntu 14<br>Windows Server 2008 R2<br>Windows Server 2012 **(Down Only)**<br>Windows Server 2012 R2 **(Down Only)**
-Change number of vCPUs|CentOS 5<br>CentOS 6 **(Down Only)**<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6 **(Down Only)**<br>RedHat Enterprise Linux 7 **(Down Only)**<br>Ubuntu 12 **(Down Only)**<br>Ubuntu 14 **(Down Only)**<br>Windows Server 2008 R2<br>Windows Server 2012 **(Down Only)**<br>Windows Server 2012 R2 **(Down Only)**
+**Action**|**Scale Up**|**Scale Down**
+----------|------------|--------------
+Change amount of RAM|CentOS 5<br>CentOS 6<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 12<br>Ubuntu 14<br>Windows Server 2008 R2|CentOS 5<br>CentOS 6<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 12<br>Ubuntu 14<br>Windows Server 2008 R2<br>Windows Server 2012<br>Windows Server 2012 R2
+Change number of vCPUs|CentOS 5<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>Windows Server 2008 R2|CentOS 5<br>CentOS 6<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 12<br>Ubuntu 14<br>Windows Server 2008 R2<br>Windows Server 2012<br>Windows Server 2012 R2
 
 ### Actions That Affect **ALL** Operating System Templates
 
