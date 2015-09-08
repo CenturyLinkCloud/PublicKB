@@ -30,7 +30,7 @@ This Blueprint is for the removal and deactivation of the IPS service on the VM.
 
   ![Control Portal](../images/client-security/gettingIPS_controlportal.png)
 
-2. Search for **Uninstall Intrusion Prevention** in the Refine Results section. Then, click **Uninstall Intrusion Prevention on Linux** or **Uninstall Intrusion Prevention on Windows** .  
+2. Search for **Uninstall Intrusion Prevention** in the Refine Results section. Then, click **Uninstall Intrusion Prevention on Linux**.
 
   ![Search Uninstall Linux](../images/client-security/removingIPS_linux_blueprintname.png)
 
