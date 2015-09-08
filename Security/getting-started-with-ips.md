@@ -31,11 +31,11 @@ This Blueprint is for the actual installation and activation of the IPS service 
 
 ### Installation Process
 
-1. Go into the **Blueprints Library**
+1. Go into the **Blueprints Library**.
 
   ![Control Portal](../images/client-security/gettingIPS_controlportal.png)
 
-2. Search for **Install Intrusion Prevention** in the Refine Results section. Then, click **Install Intrusion Prevention on Linux** or **Install Intrusion Prevention on Windows** .  
+2. Search for **Install Intrusion Prevention** in the Refine Results section. Then, click **Install Intrusion Prevention on Linux** or **Install Intrusion Prevention on Windows**.  
 
   ![Search Install Linux](../images/client-security/gettingIPS_rhel_blueprintname.png) ![Notification Update Windows](../images/client-security/gettingIPS_windows_blueprintname.png)
 
@@ -43,11 +43,11 @@ This Blueprint is for the actual installation and activation of the IPS service 
 
   ![Configure Install Linux](../images/client-security/gettingIPS_rhel_configure.png)
 
-4. From the **Execute on Server** drop down list, select the appropriate virtual machine.  Enter and confirm the User Password.  Click the **next: step 2** button.  
+4. From the **Execute on Server** drop down list, select the appropriate virtual machine. Enter and confirm the User Password.  Click the **next: step 2** button.  
 
   ![Configure Notifications RHEL Fields](../images/client-security/gettingIPS_rhel_blueprintfields.png)
 
-5. Review the Blueprint parameters and click **deploy Blueprint**.  
+5. Review the Blueprint parameters and click **deploy blueprint**.  
 
   ![Deploy Blueprint](../images/client-security/gettingIPS_rhel_deploy.png)
 
@@ -59,13 +59,15 @@ This Blueprint is for the actual installation and activation of the IPS service 
 
 ### Agent Billing & Deactivation
 
-Once the IPS Agent is installed on a VM, it will incur an hourly charge until the uninstall blueprint is executed successfully.  **If a VM is to be decommissioned, the agent MUST be deactivated to avoid on-going charges.**
+Once the IPS Agent is installed on a VM, it will incur an hourly charge until the uninstall blueprint is executed successfully.
+
+**Note:** If a VM is to be decommissioned, the agent MUST be deactivated to avoid on-going charges.
 
 ### Support
 
-If you need assistance, please send initial contact to [help@ctl.io](mailto:help@ctl.io).  You will receive an automated reply with step-by-step instructions on setting up a Zendesk user account.  The Zendesk account will allow for future engagements with customer service.
+If you need assistance, please send initial contact to [help@ctl.io](mailto:help@ctl.io). You will receive an automated reply with step-by-step instructions on setting up a Zendesk user account. The Zendesk account will allow for future engagements with customer service.
 
-Note: If you do not setup a Zendesk user account, support requests may get filtered as spam in the ticketing system.
+**Note:** If you do not setup a Zendesk user account, support requests may get filtered as spam in the ticketing system.
 
 ### Frequently Asked Questions
 
@@ -77,7 +79,7 @@ Not at this time, if you'd like to see this feature, please contact [features@ct
 
 Platform CenturyLink’s IPS service helps ensure secure protection against your Virtual Machine (VM) from known intrusion patterns that hackers utilize. It also allows you to spend less time on the maintenance of your system, instead allowing you to focus on the tasks for your core business. We will do the patching and ensure that all agents have up-to-date signatures for possible attacks.
 
-**How do I configure the notifications settings to send alerts to?**
+**How do I configure the notifications settings to send alerts?**
 
 Follow the process in the [Configuring IPS Notifications article](configuring-ips-notifications.md).
 
@@ -87,4 +89,4 @@ Yes, we are working on adding additional OSes. If you have a specific OS you wou
 
 **If I decommission a Virtual Machine, do I need to uninstall the IPS agent?**
 
-Yes, you still need to uninstall the IPS agent to avoid unnecessary charges.  You can uninstall the agent via the uninstall IPS blueprint.
+Yes, you still need to uninstall the IPS agent to avoid unnecessary charges. You can uninstall the agent via the uninstall IPS blueprint.
