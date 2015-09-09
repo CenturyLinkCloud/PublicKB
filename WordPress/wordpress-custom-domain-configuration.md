@@ -12,10 +12,10 @@ CenturyLink Cloud WordPress hosting is currently in a Limited Beta program with 
 
 During the Limited Beta there is no production Service Level Agreement.
 
-## Overview
+### Overview
 CenturyLink Cloud WordPress supports custom domain name configuration after [setting up a new site](getting-started-with-wordpress-as-a-service.md).
 
-## Prerequisite
+### Prerequisite
 
 You have added a CNAME, ALIAS, or similar DNS record between your custom domain and your supplied WordPress site
 domain. For example, you could create a CNAME record like this:
@@ -24,7 +24,7 @@ domain. For example, you could create a CNAME record like this:
 www.example.com.    CNAME   example.useast.wordpress.ctl.io.
 ```
 
-## WordPress Custom Domain Configuration
+### WordPress Custom Domain Configuration
 
 1. Browse to [wordpress.ctl.io](https://wordpress.ctl.io), login with your CenturyLink Cloud User Name and Password and click Login
 
