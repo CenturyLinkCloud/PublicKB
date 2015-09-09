@@ -1,6 +1,6 @@
 {{{
   "title": "Best Practices and Preparation for a Virtual Machine/OVF/OVA Import",
-  "date": "08-18-2015",
+  "date": "09-09-2015",
   "author": "Jake Malmad",
   "attachments": [],
   "contentIsHTML": false
@@ -19,7 +19,7 @@ The CenturyLink Cloud Service Task and Onboarding teams can import images of exi
   * Account and Group in the Control Portal that the Virtual Machine(s) will be registered in
   * VLAN or Network the Virtual Machine is to utilize
   * Type of Storage (Standard or Premium) to be used for the Virtual Machine(s)
-  * Validate the [Guest Operating System is supported on the CenturyLink Cloud for Import](https://www.centurylinkcloud.com/knowledge-base/service-tasks/supported-guest-operating-systems-for-ovaovf-import/)
+  * Validate the [Guest Operating System is supported on the CenturyLink Cloud for Import](../Service Taks/supported-guest-operating-systems-for-ovaovf-import.md)
 
 
 * If exporting multiple Virtual Machines or a collection of Virtual Machines (such as a vAPP), it is required to export each VM individually. Individual files provide greater flexibility and reduce the need for repeated uploads in the event of file corruption (re-uploading a single server vs. the entire collection). **vApp import is unsupported**.
@@ -38,6 +38,6 @@ The CenturyLink Cloud Service Task and Onboarding teams can import images of exi
 
 * Describe any dependencies, specific applications to be tested, or other non-standard configurations to be tested during import.
 
-* Please contact your Account Manager, Onboarding Engineer or email <noc@ctl.io> to initiate a Service Task for the image import(s).
+* Please contact your Account Manager, Onboarding Engineer or email [noc@ctl.io](mailto:noc@ctl.io) to initiate a Service Task for the image import(s).
 
 Following these best practices will ensure a prompt and successful deployment of your Virtual Machine or Appliance onto the CenturyLink Platform.
