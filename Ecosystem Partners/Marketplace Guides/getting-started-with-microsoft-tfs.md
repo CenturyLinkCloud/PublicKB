@@ -152,7 +152,7 @@ To access your TFS 2013 server from a computer outside the CenturyLink Cloud net
 
 The costs associated with this blueprint deployment include CenturyLink Cloud infrastructure usage.  
 
-Additional licensing costs will apply for Microsoft software, including TFS 2013 and SQL Server. If you deploy with SQL Server, charges will apply for SQL Server.  These will be shown in the indicated cost for the blueprint when you deploy it.  
+Additional licensing costs will apply for Microsoft software, including TFS 2013 and SQL Server. If you deploy with SQL Server, charges will apply for SQL Server. See the article [install SQL Server](../../Blueprints/deploy-microsoft-sql-server-using-blueprint/) for information on how to install SQL Server if you have any questions.  This blueprint is automatically run if you choose the blueprint, **Blueprint - Team Foundation Server 2013 with SQL Server**.  
 
 The TFS 2013 license is not included. You can choose to configure TFS 2013 on first use with a 90-day trial license, or you can enter your license key. A trial license can be upgraded to a full license at a later time by providing your license key. **You must obtain an appropriate license for TFS from Microsoft and enter the license key.  TFS is not purchased through installing this blueprint.**
 
