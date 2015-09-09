@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-###![](http://cdn.aws.waratek.com/wp-content/themes/waratek/images/logo.png)
+![](http://cdn.aws.waratek.com/wp-content/themes/waratek/images/logo.png)
 
 ### Technology Profile
 
