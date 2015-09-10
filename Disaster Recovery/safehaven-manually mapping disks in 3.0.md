@@ -28,3 +28,13 @@ In SafeHaven 3.0, you may find yourself having to manually map or resync disks. 
     2. dgsyncex.exe rescan
     3. dgsyncex.exe select disk 5
     4. dgsyncex.exe set rate 81920
+
+
+  Cleared disk maps can be done by running the "cleanalldiskpairs.bar" files under the SafeHaven tools menu or by removing the appropriate registery key:
+
+  HKLM->SYSTEM->CurrentControlSet->Services->DgRplct->PairList
+
+  Delete Pair X (first two keys after default are disk numbers)
+
+  ### WARNING
+  IMPROPERLY MAPPING DISKS HAVE THE POTENTIAL TO OVERWRITE PRODUCTION DISKS WITH THE CONTENS OF OTHER DISKS. ENSURE THAT YOUR DISK MAPPING HAS BEEN VALIDATED IN DISK MANAGER (diskmgmt.msdc) OR THAT THIS ACTION IS BEING SUPERVISED BY SAFEHAVEN ENGINEERING OR ONBOARDING ENGINEERING.
