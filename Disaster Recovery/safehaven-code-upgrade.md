@@ -58,8 +58,15 @@ NOTE: If the kernel version is later than 3.13.0-44-generic, downgrade it to 3.1
   10. cd /baseInstaller/scst/scst-3.0.0-Ubuntu1404# service scst restart
   11. Confirm scst is working by running “scstadmin –list_target”
 
+#### FINAL STEP:
+  1. Log in to the CMS, where you will be prompted to restart the services before successful login will occur.
+  2. Once in CMS, restart any stopped SRN services.
+  3. Verify release version by running "cat /var/syntropy" and "cat /var/utils_version" on each updated SRN and "cat /var/cms_version" on the CMS.
+
+  Final install Note- the same steps can be completed in a single command by running the same process and untarring the full kernel for the new release rather than running SBD/Syntropy especially. This will apply to minor releases, wherein bug fixes are more likely to be centered around either component (i.e. using https://www.dropbox.com/sh/b7nkdp0t6uga02k/AACDB_ZwEOLkVGjVkcPumHKSa/SafeHaven3.1.0-GA_full_kernel-3.13.0-44-generic_06-26-2015_bin.tar.gz?dl=0)
+
 RE-CONFIRM THE VERSION OF SYNTROPY AND SBD AGAIN
 NOTE: SRN REBOOT CAN HAVE A SERIOUS IMPACT ON THE CUSTOMER’S ENVIRONMENT SO IT IS STRONGLY RECOMMENDED TO PLEASE CONFIRM WITH THE DATAGARDENS TEAM BEFORE REBOOTING THE SRN’s (AT LEAST FOR NOW).
-NOTE: DO NOT USE THE DROPBOX LINKS MENTIONED IN THIS DOCUMENT
+NOTE: DO NOT USE THE DROPBOX LINKS MENTIONED IN THIS DOCUMENT, these are sample 3.0 links. Please check with the SafeHaven/Onboarding team prior to completing this action and do so under strict guidance (though taking a snapshot prior will mitigate any potential risk).
 
 IMPORTANT NOTE: it is very important that you run an update-grub command after upgrading/downloading kernels as the scstadmin services are tied to the kernal number and will not function properly if not updated and then rebooted.

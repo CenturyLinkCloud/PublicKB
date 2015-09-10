@@ -19,7 +19,7 @@ The CenturyLink Cloud Service Task and Onboarding teams can import images of exi
   * Account and Group in the Control Portal that the Virtual Machine(s) will be registered in
   * VLAN or Network the Virtual Machine is to utilize
   * Type of Storage (Standard or Premium) to be used for the Virtual Machine(s)
-  * Validate the [Guest Operating System is supported on the CenturyLink Cloud for Import](../Service Taks/supported-guest-operating-systems-for-ovaovf-import.md)
+  * Validate the [Guest Operating System is supported on the CenturyLink Cloud for Import](../Service Tasks/supported-guest-operating-systems-for-ovaovf-import.md)
 
 
 * If exporting multiple Virtual Machines or a collection of Virtual Machines (such as a vAPP), it is required to export each VM individually. Individual files provide greater flexibility and reduce the need for repeated uploads in the event of file corruption (re-uploading a single server vs. the entire collection). **vApp import is unsupported**.
