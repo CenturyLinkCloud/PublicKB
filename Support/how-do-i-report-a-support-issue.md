@@ -11,16 +11,23 @@
 
 What is the optimal way to report an issue to CenturyLink Cloud support and have an engineer work on it in the shortest possible time? Having this information available in the ticket helps reduce the time for CenturyLink Cloud engineers to triage the ticket and understand what the issue is.
 
-Audience
+### Audience
 
-* Valued Customers
+* CenturyLink Cloud Customers
 
-Pre-Requisites
+### Pre-Requisites
 
 * Have a definition of the issue that is being encountered including the count of servers / customers
 * Think of a good one line description of the issue
 * Account Alias / username 
 * [User PIN](../Support/pin-authentication-for-support-requests.md)
+
+### Exceptions
+[Managed Services](//www.ctl.io/managed-services) customers should use the data below to request support for Managed OS or Applications:
+
+**Phone**|**Email**
+---------|---------
+US: 888.638.6771<br>UK: +44.118.322.6100<br>Singapore: +65.6305.8099|request@centurylink.com
 
 ### Online Support
 
