@@ -40,6 +40,7 @@ However, some OVFs may still require significant “prep” work, depending on t
 ### Specific Requirements for Red Hat 6 64-bit OVFs
 * Ensure SSH is enabled and not firewalled
 * Prior to uploading the OVF for import, delete the file 70-persistent-net.rules (rm /etc/udev/rules.d/70-persistent-net.rules)
+* Create a blank file named 75-persistent-net-generator.rules. (touch /etc/udev/rules.d/75-persistent-net-generator.rules) to prevent the build of the persistent net rules file.
 
 ### Other Notes
 * In addition, the import function will enable the following capabilities if they are not available on your OVF image:

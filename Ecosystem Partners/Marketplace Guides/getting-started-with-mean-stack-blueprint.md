@@ -9,10 +9,10 @@
 ![MEAN logo](https://bitnami.com/assets/stacks/meanstack/img/meanstack-stack-220x234.png)
 
 ### Technology Profile
-The MEAN Stack provides a complete development environment for the leading noSQL database, MongoDB. It includes the latest stable release of MongoDB, Express, Angular, Node.js, Git, PHP and RockMongo.
+The MEAN provides a complete development environment for the leading noSQL database, MongoDB. It includes the latest stable release of MongoDB, Express, Angular, Node.js, Git, PHP and RockMongo.
 
 ### Description
-Through the CenturyLink Blueprint integration, the MEAN Stack provides a click-through solution to install and configure MEAN on the Linux platform.
+Through the CenturyLink Blueprint integration, the MEAN provides a click-through solution to install and configure MEAN on the Linux platform.
 
 For more information, please visit [http://www.mongodb.org/](http://www.mongodb.org/)
 

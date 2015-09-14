@@ -12,7 +12,7 @@
 Gradle is a build automation tool that builds upon the concepts of Apache Ant and Apache Maven and introduces a Groovy-based domain-specific language (DSL) instead of the more traditional XML form of declaring the project configuration. 
 
 ### Description
-Through the CenturyLink Blueprint integration, the Gradle Stack provides a click-through solution to install and configure Gradle on the Linux platform.
+Through the CenturyLink Blueprint integration, the Gradle provides a click-through solution to install and configure Gradle on the Linux platform.
 
 For more information, please visit [http://www.gradle.org/](http://www.gradle.org/)
 

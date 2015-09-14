@@ -12,7 +12,7 @@
 eXo Platform combines collaboration, calendering, content and document management and other productivity tools with social features to provide a complete enterprise intranet. Rich collaboration features such as forums, wikis, documents and calendars are smartly integrated around social networking, activity streams and workspaces. It is carefully designed be highly engaging for users. It is open source and highly customizable to adapt to your organizational needs.
 
 ### Description
-Through the CenturyLink Blueprint integration, the eXo Platform Stack provides a click-through solution to install and configure eXo Platform on the Linux platform.
+Through the CenturyLink Blueprint integration, the eXo Platform provides a click-through solution to install and configure eXo Platform on the Linux platform.
 
 For more information, please visit [http://www.exoplatform.com](http://www.exoplatform.com)
 

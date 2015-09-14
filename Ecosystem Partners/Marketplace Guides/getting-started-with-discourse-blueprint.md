@@ -12,7 +12,7 @@
 Discourse is the next-next-generation community forum platform. Discourse has a thoroughly modern design and is written in JavaScript. Page loads are very fast and new content is loaded as the user scrolls down the page. Discourse allows you to create categories, tag posts, manage notifications, create user profiles, and includes features to let communities govern themselves by voting out trolls and spammers. Discourse is built for mobile from the ground up and support high-res devices.
 
 ### Description
-Through the CenturyLink Blueprint integration, the Discourse Stack provides a click-through solution to install and configure Discourse on the Linux platform.
+Through the CenturyLink Blueprint integration, the Discourse provides a click-through solution to install and configure Discourse on the Linux platform.
 
 For more information, please visit [http://www.discourse.org/](http://www.discourse.org/)
 

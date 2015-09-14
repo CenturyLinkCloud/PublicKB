@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-###Partner Profile
+### Partner Profile
 </p>
 <ul>
   <li>CloudMine - "Blend public cloud with private data to accelerate the next generation of enterprise mobility"</li>

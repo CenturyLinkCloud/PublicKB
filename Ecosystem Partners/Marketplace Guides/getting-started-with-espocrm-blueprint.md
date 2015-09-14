@@ -12,7 +12,7 @@
 EspoCRM is a simple CRM system that helps you to manage your customer relationships. It is fully open sourced under the terms of the GPLv3, features responsive design and is lightning-fast. It can also be easily customized to meet your specific needs.
 
 ### Description
-Through the CenturyLink Blueprint integration, the EspoCRM Stack provides a click-through solution to install and configure EspoCRM on the Linux platform.
+Through the CenturyLink Blueprint integration, the EspoCRM provides a click-through solution to install and configure EspoCRM on the Linux platform.
 
 For more information, please visit [http://www.espocrm.com/](http://www.espocrm.com/)
 

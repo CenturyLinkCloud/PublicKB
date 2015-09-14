@@ -6,13 +6,13 @@
   "contentIsHTML": false
 }}}
 ### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.
-##Overview
+## Overview
 
 CenturyLink Cloud WordPress as a Service runs in the CenturyLink Cloud utilizing the latest stable WordPress release.  System Specifactions and limitations have been chosen to maximize uptime, fulfill business needs, and ensure the security of customer's sites.
 
-##System Specifications
+## System Specifications
 
-####Microsite Plan Specifications
+#### Microsite Plan Specifications
 
 * Server Specs
 
@@ -24,20 +24,20 @@ CenturyLink Cloud WordPress as a Service runs in the CenturyLink Cloud utilizing
   * MySQL
   * phpMyAdmin
 
-####Business Plan Specifications
+#### Business Plan Specifications
 
 _future product_
-  
-####Enterprise Plan Specifications
+
+#### Enterprise Plan Specifications
 
   _future product_
-  
-##Disallowed Services
+
+## Disallowed Services
 
 **phpmail()** is unauthenticated and not allowed on CenturyLink Cloud WordPress as a service.  [SMTP can be configured using a plugin](wordpress-SMTP-Configuration.md) to send mail from within WordPress.
 
 
-##Disallowed php functions
+## Disallowed php functions
 
 Many php Functions have been found to be WordPress security vulnerabilities, and these fucntions have been disabled for CenturyLink Cloud WordPress
 
