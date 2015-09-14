@@ -45,6 +45,7 @@ Next, you need to create a branch in Git for the changes we are about to make to
 3. Running the WordPress updater
 
 Click the _Please update now_ link in the Dashboard home page.
+
 ![Please update now](../images/wp_updating_core/wp_updating_core_4.png)
 
 In the WordPress Updates screen, click on the Update Now button.
@@ -75,9 +76,36 @@ Now, you should see the new commit in Git's log:
 
 ![git log](../images/wp_updating_core/wp_updating_core_7.png)
 
-
 8. Merge changes into master
+
+Your changes have been committed, but remember you are still in a development branch.  Now, we need to merge that branch back into the master branch for your site.  Run the following commands:
+
+`git checkout master`
+
+`git merge update-wp-core43`
+
+`git branch -d update-wp-core43`
 
 9. Push changes to origin/master to update site in production
 
+Now, push your newly updated _master_ branch to your CenturyLink git repository to update your Production site:
+
+`git push origin master`
+
 10. Test and verify in PROD
+
+Now you can login to your Production WordPress site, and verify that it was successfully updated to the new version of WordPress core.
+
+Occasionally, a WordPress core update may require updates to the database, and you may see a screen like this one:
+
+![Database Update Required](../images/wp_updating_core/wp_updating_core_8.png)
+
+Go ahead and click the _Update WordPress Database_ button.
+
+Once the Database Update is complete, you'll see the following screen, and can click the _Continue_ button.
+
+![Update Complete](../images/wp_updating_core/wp_updating_core_9.png)
+
+In the Dashboard Home screen, you'll find the WordPress version in the lower right corner.  Verify that it matches the core version you just updated to.
+
+![Dashboard Home](../images/wp_updating_core/wp_updating_core_10.png)
