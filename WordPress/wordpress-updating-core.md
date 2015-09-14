@@ -16,6 +16,8 @@ During the Limited Beta there is no production Service Level Agreement.
 
 ### Overview
 
+At the present time, CenturyLink does not provide automated updates or upgrades to WordPress sites.  This article will demonstrate the process for upgrading your site when WordPress issues a new security patch or major release.
+
 ### Update process
 
 1. Vagrant up
