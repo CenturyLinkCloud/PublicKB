@@ -16,8 +16,8 @@ CenturyLink Cloud has the capability for customers to report issues via the phon
 
 ### Prerequisites
 
-* Must have an account to access the ticketing&nbsp;system.</li>
-* Must be a valid customer</li>
+* Must have an account to access the ticketing&nbsp;system.
+* Must be a valid customer
 
 #### How to Create a Ticket
 
