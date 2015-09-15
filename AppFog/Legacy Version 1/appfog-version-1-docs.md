@@ -1,6 +1,6 @@
 {{{
   "title": "AppFog v1 Legacy Documentation",
-  "date": "09-14-2015",
+  "date": "09-8-2015",
   "author": "Chris Sterling",
   "attachments": [],
   "contentIsHTML": false
