@@ -64,10 +64,10 @@
 ### Open Source Contributions (4)
 Selected highlights include:
 
-* **Panamax UI v0.2.15** - Added support for Docker Private Repositories and Private Registries behind Basic Auth and Certificates of Authority. Users can now provide an absolute URL path to access images on private registries.repositories. Notification added to Registry management page for secure/insecure registry support. Wiki available [here]( https://github.com/CenturyLinkLabs/panamax-ui).
+* **Panamax UI v0.2.15** - Added support for Docker Private Repositories and Private Registries behind Basic Auth and Certificates of Authority. Users can now provide an absolute URL path to access images on private registries.repositories. Notification added to Registry management page for secure/insecure registry support. Wiki available [here](https://github.com/CenturyLinkLabs/panamax-ui).
 
-* **Dray v0.10.0** - A Docker Workflow Engine, essentially Unix pipes for Docker. [Dray](http:./dray.it) allows users to break a workflow into discrete steps, each handled by a separate container. Check out [this post](http://www.centurylinklabs.com/dray-docker-workflow-engine/) for more details or review the [project notes](https://github.com/CenturyLinkLabs/dray).
+* **Dray v0.10.0** - A Docker Workflow Engine, essentially Unix pipes for Docker. [Dray](http://dray.it) allows users to break a workflow into discrete steps, each handled by a separate container. Check out [this post](http://www.centurylinklabs.com/dray-docker-workflow-engine/) for more details or review the [project notes](https://github.com/CenturyLinkLabs/dray).
 
-* **Kubernetes Adapter v0.2.0 and PMX-Remote-Agent-Installer v0.1.4** - The Kubernetes adapter (re-written in Go for a smaller footprint), in combination with the Panamax remote deployment capability, enables multi-container deployments to a Kubernetes cluster and includes load-balancer support. Check out [this post](http:./www.centurylinklabs.com/deploying-to-kubernetes-with-panamax/) for more details or view the [readme](https://github.com/CenturyLinkLabs/panamax-kubernetes-adapter-go).
+* **Kubernetes Adapter v0.2.0 and PMX-Remote-Agent-Installer v0.1.4** - The Kubernetes adapter (re-written in Go for a smaller footprint), in combination with the Panamax remote deployment capability, enables multi-container deployments to a Kubernetes cluster and includes load-balancer support. Check out [this post](http://www.centurylinklabs.com/deploying-to-kubernetes-with-panamax/) for more details or view the [readme](https://github.com/CenturyLinkLabs/panamax-kubernetes-adapter-go).
 
 * **Panamax API v0.3.0** - API now interacts with Fleet API v0.9.0 directly. [View the change log here](https://github.com/CenturyLinkLabs/panamax-api/blob/master/CHANGELOG.md).
