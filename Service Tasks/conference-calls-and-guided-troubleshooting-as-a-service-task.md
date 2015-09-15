@@ -17,7 +17,7 @@ Our team of engineers has deep operational expertise to quickly and efficiently 
 * A clear goal defined for the troubleshooting/conference call
 
 ### Supported Conference Call Medium
-CenturyLink Cloud **only** supports troubleshooting and conference calls over phone bridges or through our support chat.
+CenturyLink Cloud **only** supports troubleshooting and conference calls over phone bridges.
 
 ### Supported Areas of Troubleshooting
 CenturyLink Cloud service task engineering supports troubleshooting of the infrastructure environment, as well as offering advice on networking and system configurations.  We do not support Operating System or Application level troubleshooting.
