@@ -16,7 +16,7 @@ CenturyLink’s Managed OS service helps you spend less time on the IT tasks tha
 * Access Management – We take responsibility for user policies, administration and password management enforcement.
 * Configuration Management – We confirm the initial install and basic functionality using an OS image built on vendor-recommended best-practices &amp; years of industry experience.
 * Change Management – We provide access to OS-level change data performed by CenturyLink staff, along with robust ITIL-based internal changed control.
-* Patch/Update Management – With support available for all critical and vendor-recommended patches, we ensure only OS vendor-recommended patches are installed.
+* Patch/Update Management – With support available for all critical and vendor-recommended patches, we ensure only OS vendor-recommended patches are installed. Please see the [patching article](../Managed Services/managed-os-operating-system-patching-and-update-processes.md) for more details.
 * Security – We secure the OS with industry-standard anti-virus protection, regular virus and malware signature updates, and additional OS-level hardening to mitigate risk.
 
 **How do I create a Managed VM?**
@@ -25,7 +25,9 @@ For starters, you need to identify a data center that supports managed operating
 
 From the Control Portal menu, select “Create Server.”  Then, select the data center, group membership, and other VM properties.  Select the data center that supports managed services and then click the “managed server” element to “Yes.” The operating system drop-down menu will automatically show available options. Choose your version, and then proceed with the remainder of the server creation process.
 
-After creating a managed VM, the VM will be 'Under Construction' while background processes are completed. You will not have access to the server during that time; you will receive a notification via email once the operation has completed. Please allow up to a 30 minutes. If there are any issues beyond that time, contact us via email <a href="mailto:request@centurylink.com">request@centurylink.com</a> or by phone at the following numbers. In the US: 888.638.6771; UK: +44.118.322.6100; Singapore: +65.6305.8099. Please do not email the CenturyLink Cloud NOC or raise the issue via chat - faster responses to inquiries will come from the email address and support numbers above.
+You may also [convert an existing VM into a managed one](../Managed Services/converting-unmanaged-virtual-machines-to-managed.md).
+
+After creating a VM for management or after deploying the blueprint to convert an existing VM to a managed one, the VM will be 'Under Construction' while background processes are completed. You will not have access to the server during that time; you will receive a notification via email once the operation has completed. Please allow up to a 60 minutes. If there are any issues beyond that time, contact us via email <a href="mailto:request@centurylink.com">request@centurylink.com</a> or by phone at the following numbers. In the US: 888.638.6771; UK: +44.118.322.6100; Singapore: +65.6305.8099. Please do not email the CenturyLink Cloud NOC or raise the issue via chat - faster responses to inquiries will come from the email address and support numbers above.
 
 
 **What if I don’t see an option for Managed OS in the CenturyLink Cloud Control Panel?**
@@ -61,9 +63,8 @@ If you connect and find that the system disconnects you immediately, you should 
 
 **How can I have my VM patched?**
 
-An important component of OS administration and management is keeping the system up-to-date. This includes keeping the system current with all patches to help prevent security compromises or operational reliability issues. CenturyLink will, from time to time, schedule the installation of system patches as deemed appropriate by our Solution Engineers. We will schedule the installation with you in advance. This will allow both parties to prepare for the patching, as well as provide ample time for discussion regarding the potential impact the patch may have on specific applications within your environment.
+An important component of OS administration and management is keeping the system up-to-date. Please see the [patching article](../Managed Services/managed-os-operating-system-patching-and-update-processes.md) for more details.
 
-In addition, you can request patching for your VM by contacting the Client Service Center at 1-888-638-6771 and choosing menu option 2.
 
 **How can I transfer files to my server using Remote Desktop?**
 
