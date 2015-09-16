@@ -8,19 +8,20 @@
 
 <div>
   <ul>
-    <li>Shared Load Balancers are now <a href="http://help.tier3.com/entries/22110695-Creating-a-Self-Service-Load-Balancing-Configuration">configurable in a self-service fashion</a>.</li>
+    <li>Shared Load Balancers are now <a href="creating-a-self-service-load-balancing-configuration.md">configurable in a self-service fashion</a>.</li>
     <li>Customers can log in directly to their Dedicated Load Balancers.</li>
     <li>With the Shared Load Balancers the External IP sits directly on the Load Balancer.</li>
-    <li>With a Dedicated Load Balancer the VIP is an internal IP. In order to provide external access a MIP/NAT must be added to the firewall which points to the internal VIP.</li>
+    <li>With a Dedicated Load Balancer, the VIP is an internal IP. In order to provide external access, a MIP/NAT must be added to the firewall, which will point to the internal VIP.</li>
     <li>If a customer wants to use a Load Balancer to access an internal VIP over their site to site VPN they must use a dedicated Load Balancer. It is not possible to access an internal VIP on the the Shared Load Balancer over a site to site VPN.</li>
     <li>All shared Load Balancers are in a High Availability pair. If either node goes down there will be no downtime. Dedicated Load Balancers can be put in a HA pair by request.</li>
     <li>MIP's are not accessible from within the datacenter. If you need to reach a public IP from both inside and outside the datacenter, you need to use the Shared Load Balancer.</li>
   </ul>
 </div>
-<p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/jqcjpihqeytaf1g/?name=LB+traffic+Public.jpg" alt="LB_traffic_Public.jpg" />
-</p>
 
 <p><strong>Definitions in regards to this article</strong>:
+  <br />VIP -  Virtual IP
+  <br />MIP -  Mapped IP
+  <br />NAT - Network Address Translation
   <br />VIP - The IP used for the Virtual Server. A VIP includes both an IP and a port. Separate VIP's are required for multiple ports used with the same IP.
   <br />Internal VIP - A VIP on a dedicated Load Balancer. This will always be an internal IP
   <br />External VIP - A VIP on a shared Load Balancer. This will always be an external IP and is accessible from outside of the datacenter or within

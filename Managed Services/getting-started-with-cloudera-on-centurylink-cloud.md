@@ -6,11 +6,11 @@
   "contentIsHTML": false
 }}}
 
-##Overview
+## Overview
 
 Cloudera Hadoop combines Apache Hadoop with a number of other open source projects to create a single, massively scalable system where you can unite storage with an array of powerful processing and analytic frameworks.
 
-###Create a managed Cloudera Hadoop environment in CenturyLink Cloud.
+### Create a managed Cloudera Hadoop environment in CenturyLink Cloud.
 
 1\. Search for “Cloudera” in the Blueprints library. Then, click the version and cluster configuration Blueprint that suits your needs.
 
@@ -41,7 +41,7 @@ You will see the deployment details along with an email stating the Blueprint is
 You will receive emails as each server is being built and then you will receive an additional email stating that the entire Cloudera cluster build is complete. Please do not use the servers until you have received this final email.
 **NOTE:The server now has the Cloudera Hadoop software installed and activated - your instances will be unmanaged or managed, based on the Blueprint deployed.**
 
-###FREQUENTLY ASKED QUESTIONS
+### FREQUENTLY ASKED QUESTIONS
 
 **Q: How do I create more nodes?**
 
@@ -68,13 +68,13 @@ A: Currently the following components are availabe and are pre-configured based 
 * Solr
 * Spark
 
-For a description of each component visit the [Cloudera Add-On Services Available on CenturyLink Cloud](Cloudera-Add-On-Services-Available-on-CenturyLink-Cloud.md) article.
+For a description of each component visit the [Cloudera Add-On Services Available on CenturyLink Cloud](cloudera-add-on-services-available-on-centurylink-cloud.md) article.
 
 **Q: How do I access Cloudera Manager, Hue or Navigator?**
 
 A: Cloudera Manager, Hue or Navigator can be accessed on the first Node, port 7180 for Cloudera Manager, port 8888 for Hue and port 7187 for Navigator via an SSH port on a public IP or by using [VPN](../Network/how-to-configure-client-vpn.md).
 
-For a detailed guide of Cloudera Manager on CenturyLink Cloud, download the [CenturyLink Cloud Cloudera Manager Guide](https://www.centurylinkcloud.com/knowledge-base/attachments/CenturyLink_Cloudera_Manager_Guide_11032014.pdf/).
+For a detailed guide of Cloudera Manager on CenturyLink Cloud, download the [CenturyLink Cloud Cloudera Manager Guide](../Managed Services/big-data-operations-guide-for-cloudera-manager-v5x-hadoop.md).
 
 **Q: What cluster options are available on CenturyLink Cloud?**
 

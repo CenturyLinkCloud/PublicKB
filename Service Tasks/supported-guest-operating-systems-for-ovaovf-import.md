@@ -1,61 +1,49 @@
 {{{
   "title": "Supported Guest Operating Systems for OVA/OVF Import",
-  "date": "12-17-2014",
-  "author": "Chris Little",
+  "date": "09-09-2015",
+  "author": "Jacob Malmad",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
-Supported Guest Operating Systems for OVA/OVF Import
-<p>CenturyLink Cloud customers may wish to import OVA/OVF Guest Operating Systems to the platform via a <a href="http://www.centurylinkcloud.com/products/support/service-tasks">service task</a>. Customers frequently request a list of
-  the supported Guest Operating Systems the CenturyLink Cloud supports for Import and this KB is meant to address this query. </p>
-<h3>Prerequisites</h3>
-<ul>
-  <li>A CenturyLink Cloud Account</li>
-  <li>Review the <a href="https://t3n.zendesk.com/entries/22209635-Best-Practices-and-Preparation-for-a-Virtual-Machine-OVF-OVA-Import">Best Practices and Preparation for an OVA/OVF Import</a>
-  </li>
-</ul>
-<h3>Exclusions</h3>
-<p>Industry packaged Virtual Appliances from vendors, including but not limited to, Citrix VPX, F5 VE, Twinstrata, should be vetted with CenturyLink Cloud Sales to validate compatibility. The support of these packaged virtual appliances are not the
-  focus of this KB.</p>
-<h3>Supported Operating Systems List</h3>
-<ul>
-  <li>
-    <p>CentOS 5 | 64-bit</p>
-  </li>
-  <li>
-    <p>CentOS 6 | 64-bit</p>
-  </li>
-  <li>
-    <p>Debian 6 | 64-bit</p>
-  </li>
-  <li>
-    <p>Debian 7 | 64-bit</p>
-  </li>
-  <li>
-    <p>RedHat Enterprise Linux 5 | 64-bit</p>
-  </li>
-  <li>
-    <p>RedHat Enterprise Linux 6 | 64-bit</p>
-  </li>
-  <li>RedHat Enterprise Linux 7 | 64-bit</li>
-  <li>
-    <p>Ubuntu 12 LTS | 64-bit</p>
-  </li>
-  <li>Ubuntu 14 LTS | 64-bit</li>
-  <li>
-    <p>Windows 2008 R2 Enterprise | 64-bit</p>
-  </li>
-  <li>
-    <p>Windows 2008 R2 Standard | 64-bit</p>
-  </li>
-  <li>
-    <p>Windows 2008 R2 Datacenter Edition | 64-bit</p>
-  </li>
-  <li>
-    <p>Windows 2012 Datacenter Edition | 64-bit</p>
-  </li>
-  <li>
-    <p>Windows 2012 R2 Datacenter Edition | 64-bit</p>
-  </li>
-</ul>
+### Overview
+CenturyLink Cloud customers may wish to import OVA/OVF Guest Operating Systems to the platform via a [Service Task](//www.ctl.io/products/support/service-tasks). Customers frequently request a list of the supported Guest Operating Systems the CenturyLink Cloud supports for Import and this KB is meant to address this query.
+
+It is recommended that customers leverage our [Self-Service OVF Import Capabilities](../Servers/self-service-vm-import-ovf-requirements.md) for Operating Systems supported by this functionality.
+
+### Prerequisites
+* A CenturyLink Cloud Account
+* Review the [Best Practices and Preparation for an OVA/OVF Import](../Service Tasks/best-practices-and-preparation-for-a-virtual-machineovfova-import.md) documentation.
+
+### Exclusions
+* Industry packaged Virtual Appliances from vendors, including but not limited to, Citrix VPX, F5 VE, SoftNAS, should be vetted with CenturyLink Cloud Sales to validate compatibility. Many Virtual Appliances are part of our ecosystem program and have been validated.  The support of these packaged virtual appliances are not the focus of this article.
+
+### Supported Operating Systems List
+* CentOS 5 | 64-bit
+* CentOS 6 | 64-bit
+* Debian 6 | 64-bit
+* Debian 7 | 64-bit
+* RedHat Enterprise Linux 5 | 64-bit
+* RedHat Enterprise Linux 6 | 64-bit
+* RedHat Enterprise Linux 7 | 64-bit
+* Ubuntu 12 LTS | 64-bit
+* Ubuntu 14 LTS | 64-bit
+* Windows 2008 R2 Enterprise | 64-bit
+* Windows 2008 R2 Standard | 64-bit
+* Windows 2008 R2 Datacenter Edition | 64-bit
+* Windows 2012 Datacenter Edition | 64-bit
+* Windows 2012 R2 Datacenter Edition | 64-bit
+
+### Frequently Asked Questions
+
+**Q: I run Xen, KVM, Hyper-V or other x86/x64 Virtualization Services.  Can I import images from these technologies into CenturyLink Cloud?**
+
+A: Customers must convert their virtual servers to an OVF format prior to import (manual or self-service) to the CenturyLink Cloud.  As long as the operating system is supported as shown above an import is possible once the VM is converted to OVF.  Customers are advised to review the [OVF requirements for import.](../Servers/self-service-vm-import-ovf-requirements.md)
+
+**Q: I run Intel IA64 or Oracle SPARC hardware platforms can I import a server based on this technology into CenturyLink Cloud?**
+
+A: No, hardware specific platforms that are not x86/x64 based cannot be imported, operated or deployed on CenturyLink Cloud
+
+**Q: I leverage [HPVM](//en.wikipedia.org/wiki/HP_Integrity_Virtual_Machines), [Solaris Containers](//en.wikipedia.org/wiki/Solaris_Containers), [IBM PowerVM](//en.wikipedia.org/wiki/PowerVM) or other Virtualization Services outside of the x86/x64 community.  Can I import these services into CenturyLink Cloud?**
+
+A: No, these other industry virtualization technologies cannot be leveraged on CenturyLink Cloud.

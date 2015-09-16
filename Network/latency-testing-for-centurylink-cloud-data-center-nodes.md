@@ -1,21 +1,25 @@
 {{{
   "title": "Latency Testing for CenturyLink Cloud Data Center Nodes",
-  "date": "6-13-2014",
+  "date": "7-15-2015",
   "author": "Chris Little",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
-<h3>Customers who wish to test latency to CenturyLink Cloud Data Center Nodes globally can leverage the following information:</h3>
-<ol>
-  <li>Navigate to&nbsp;https://cloudharmony.com/speedtest</li>
-  <li>Select Cloud Servers, Test Network Latency and select the regions you want to test.</li>
-</ol>
-<p><img src="https://t3n.zendesk.com/attachments/token/3sMg1cSW0hsepMfFqBbddWqNz/?name=01.png" alt="01.png" />
-</p>
-<p>3.  On the Cloud Servers line item, press the select button and choose CenturyLink Cloud Servers. Click Save.</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/Jso0uMARu3rQwE94jvD5Wd2Gj/?name=02.png" alt="02.png" />
-</p>
-<p>4. Select Start test to view results</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/oXCebK6NSB35NL1QdmX7naEbo/?name=03.png" alt="03.png" />
-</p>
+### Overview
+Customers who wish to test latency to CenturyLink Cloud Data Center Nodes globally can leverage [CloudHarmony's](//cloudharmony.com) cloud speed test.  
+
+### Steps
+1. Navigate to the [Cloud Harmony Cloud Speed Test](//cloudharmony.com/speedtest)
+
+2. Use the search term *CenturyLink Cloud* and select *CenturyLink Cloud Servers (13 Services)*.  
+
+    ![Select Cloud Speed Test](../images/latency-testing-for-CenturyLink-Cloud-data-center-nodes-01.png)
+
+3. Expand *Test Options* and select *Latency*.  Optionally, you can select *Downlink and Uplink* to get valuable data transfer metrics in the same test.  De-select the DNS field.  You may wish to change the Test Duration to fit your needs.  
+
+    ![Select Test Options](../images/latency-testing-for-CenturyLink-Cloud-data-center-nodes-02.png)
+
+4. Select the *Start* button to begin your test.  Results will be displayed for the defined tests.
+
+    ![Test Results](../images/latency-testing-for-CenturyLink-Cloud-data-center-nodes-03.png)

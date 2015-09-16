@@ -33,7 +33,7 @@
   information, known Spam threats, as well as run the message itself through a rigorous Spam detection process. This whole process takes less than 5 seconds. Once complete, the email will be forwarded to your mail server. Your mail server
   should be configured to ONLY receive email from Postini’s range of IP’s. Otherwise spammers could send mail directly to your servers and bypass Postini.</p>
 
-<p>See this additional article for assistance configuring DNS: <a href="http://help.tier3.com/entries/21429398-how-to-use-control-dns">How to use Control DNS</a>
+<p>See this additional article for assistance configuring DNS: <a href="../Control Portal/how-to-use-control-dns.md">How to use Control DNS</a>
 </p>
 
 <h4>How to verify your MX records are correct from a Windows computer:</h4>

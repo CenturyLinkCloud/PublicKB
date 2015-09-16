@@ -4,7 +4,7 @@
   "author": "Bryan Friedman",
   "attachments": [
     {
-      "url": "/knowledge-base/attachments/DKH2UpNYni9uEqvvZlTl0xsun-package.zip",
+      "url": "../attachments/DKH2UpNYni9uEqvvZlTl0xsun-package.zip",
       "type": "application/zip",
       "file_name": "package.zip"
     }

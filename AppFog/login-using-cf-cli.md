@@ -4,18 +4,13 @@
   "author": "Chris Sterling",
   "attachments": [],
   "related-products" : [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
-
-### IMPORTANT NOTE
-
-AppFog v2, the upcoming CenturyLink Cloud integrated public Platform-as-a-Service (PaaS), is not available to all customers at this time. We are current in a Limited Beta program with specific customers. AppFog v2 will be available in Open Beta later in 2015.
-
-The current AppFog service at [http://www.appfog.com/](http://www.appfog.com/) is still available and will continue to be in service even after AppFog v2 is made generally available. Please feel free to sign up for the current AppFog service [here](https://console.appfog.com/signup).
 
 ### Audience
 
-Currently, this article is to support customers in the Limited Beta program.
+Application developers
 
 ### Overview
 
@@ -23,12 +18,16 @@ In this article we will install the [Cloud Foundry Command Line Interface (CLI)]
 
 ### Install Cloud Foundry CLI
 
-Download the appropriate binary distribution of the Cloud Foundry CLI from [here](https://github.com/cloudfoundry/cli/blob/master/README.md#downloads). Install the downloaded binary distribution of Cloud Foundry CLI. To verify Cloud Foundry CLI is installed run the following command from a terminal shell:
+Download the appropriate [binary distribution of the Cloud Foundry CLI](https://github.com/cloudfoundry/cli/blob/master/README.md#downloads). Install the downloaded binary distribution of Cloud Foundry CLI. To verify Cloud Foundry CLI is installed run the following command from a terminal shell:
 
 ```
 $ cf -v
-cf version 6.10.0-b78bf10-2015-02-11T22:25:45+00:00
+cf version 6.11.0-bba7fcf-2015-04-14T16:45:03+00:00
 ```
+
+**NOTE:** The Ruby Gem based Cloud Foundry CLI is no longer supported and will not work with AppFog. Please make sure that you use the appropriate binary distribution from:
+
+[https://github.com/cloudfoundry/cli/blob/master/README.md#downloads](https://github.com/cloudfoundry/cli/blob/master/README.md#downloads)
 
 ### Login to AppFog
 

@@ -1,6 +1,6 @@
 {{{
   "title": "Partner Resources",
-  "date": "2-11-2015",
+  "date": "5-06-2015",
   "author": "",
   "attachments": [],
   "contentIsHTML": false
@@ -9,34 +9,8 @@
 ### Purpose
 
 - Partner Resources available for Sales Support, Account Management, Product Information, Platform Support and Billing.  
-
-
-### Benefits
-
 - Partners know the resources that are available and how to engage them  throughout the customer life cycle.
 - Improves sales acceleration and customer satisfaction.
-
-
-### Audience
-
-- Sales
-- Sales Operations
-- Engineering 
-
-
-### What's Included
-
-- Partner Resources – At a Glance.
-- The roles, responsibilities and contact information for each Partner Resource.
-
-
-### Partner Action Items
-
-- Understand the Partner Resources and capabilities available to support and close CenturyLink Cloud deals.
-- Insure your employees know how to contact each Partner Resource.
-
-
----
 
 
 ## Definitions and Contact Information
@@ -47,8 +21,7 @@
 
 The Partner Resource Center (PRC) is your central point of contact for Sales Support. You can reach them at:
 
-- ccaclouddealdesk@centurylinkcloud.com
-- wmgclouddealdesk@centurylinkcloud.com
+- cloudpartnerhelp@centurylink.com
 
 ## Partner Resource Center (PRC) Team
 
@@ -98,10 +71,10 @@ Please have as much of the following information available when contacting the P
 - Customer information
   - Company Name
   - Contact Name
-  - email
-  - title
-  - address
-  - telephone number
+  - Email
+  - Title
+  - Address
+  - Telephone number
 - Budget
 - System requirements
 - Environment:  Servers, Operating System(s), CPU, RAM, etc.
@@ -127,7 +100,7 @@ Contact your CenturyLink Channel Manager via email.
 
 ## Platform Information Source and Contact
 
-The [CenturyLink Cloud website](http://www.centurylinkcloud.com) is an excellent source of information for platform-related questions including: 
+The [CenturyLink Cloud website](http://www.ctl.io) is an excellent source of information for platform-related questions including: 
 
 - Up-to-date product announcements
 - Knowledge Base (KB) 
@@ -142,38 +115,13 @@ The Network Operations Center (NOC) is available to support your infrastructure 
 - Incident Response
 - Service Tasks Requests
 
-Contact the Network Operations Center at noc@tier3.com.
+Contact the Network Operations Center at noc@ctl.io.
 
 ## Billing Inquiries and Contact
 
 Types of Inquiries:
 
-- Billing Inquiries
-- Billin Reports
+- Billing Inquiries 
+- Billing Reports
 
-There are two teams who support billing inquiries:
-
-**For CCA Partners**
-
-Jinnie.schenk@savvis.com
-
-Phone:  443-219-3538
-
-
-**For WMG Partners**
-
-Wholesale.Billing@CenturyLink.com
-
-Phone: 1-888-496-7447
-
-
-
----
-
-## Action Items For Partners
-
-- Familiarize yourself with the Partner Resources available to close CenturyLink Cloud deals.
-- Understand the information you should have about the customer and opportunity when contacting the Partner Resource Center (PRC).
-- Socialize Partner Resource information to your sales, operations and engineering teams to insure the best alignment of resources for your support needs.
-
-
+Please refer to your CenturyLink bill for whom to contact with billing questions.

@@ -1,7 +1,7 @@
 {{{
   "title": "Packages Best Practices",
-  "date": "1-19-2015",
-  "author": "Keith Resar",
+  "date": "9-3-2015",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -24,8 +24,8 @@ See the published [Package maximums and limits](blueprint-package-and-template-m
 Mitigate this by:
 
 * Executing long-running tasks in the background so the primary task can exist.  
-* On Linux background tasks also need to close or redirect the stdout/stderr file descriptors (e.g. >/dev/null 2>&1).  
-* If errors are encountered send an email to notify
+* In Linux, background tasks also need to close or redirect the stdout/stderr file descriptors (e.g. `>/dev/null 2>&1`).  
+* If errors are encountered your package should send an email to notify
 
 
 ### Changes to Existing Package Parameters
@@ -43,4 +43,9 @@ Script specific parameters are relegated to the bottom of the page and if not re
 ### Packages and Blueprint Visibility
 
 Any packages that will be included in a Blueprint with a **Shared** or **Public** visiblity level must have the same visibility.  For example, Public Blueprints must reference only packages that are also public.
+
+
+### Software vs. Scripts
+
+CenturyLink Cloud includes the concepts of grouping packages into classes of either Software or Scripts.  **All new package deployments should be classified as Scripts** - we anticipate deprecating the Software class and many third party tools have been created to support Scripts rather than software.  There is zero functionality differentiation between the two classification types.
 
