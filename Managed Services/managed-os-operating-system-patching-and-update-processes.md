@@ -44,7 +44,7 @@ On a monthly basis, CenturyLink Cloud product engineers review all vendor-recomm
 
 ### Managed Server Updates
 
-As a part of making a server managed, more updates may automatically be applied to the server. Please review the articles regarding [RedHat](..Managed Services/what-happens-when-RedHat-servers-are-made-managed.md) and [Windows](..Managed Services/what-happens-when-windows-servers-are-made-managed.md) to gain a general understanding of when these updates may be applied.
+As a part of making a server managed, more updates may automatically be applied to the server. Please review the articles regarding [RedHat](../Managed Services/what-happens-when-RedHat-servers-are-made-managed.md) and [Windows](../Managed Services/what-happens-when-windows-servers-are-made-managed.md) to gain a general understanding of when these updates may be applied.
 
 ### Service Packs and Sub Releases
 
