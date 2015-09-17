@@ -16,7 +16,7 @@ IT Operations
 
 Some IT pros may be accustomed to managing environments with this capability. Here are a few ideas and strategies to help system administrators build and maintain environments without it.
  
-* **Follow proper change management for VM modifications as well as for the applications inside them.** Use [snapshots when a roll-back of VM “state” is desired](../Servers/creating-and-managing-server-snapshots.md). NOTE: this only works for VMs with less than 1 TB of storage.
+* **Follow proper change management for VM modifications as well as for the applications inside them.** Use [snapshots when a roll-back of VM “state” is desired](../Servers/creating-and-managing-server-snapshots.md). NOTE: this only works for VMs on standard storage, and those with less than 1 TB of storage.
 
 * **Virtual machines, by definition, are not indestructible.** Accordingly, build services and applications such that they can be easily deployed (and re-deployed) on new VMs. From there, admins can then place the new VM back into a service rotation. [Blueprints](../Blueprints/how-to-build-a-blueprint.md) are a great way to load software onto a single VM, or a group of them.
 
