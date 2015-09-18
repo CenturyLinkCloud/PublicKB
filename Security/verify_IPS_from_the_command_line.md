@@ -9,7 +9,7 @@
 }}}
 #### Overview
 
-Deploying IPS is an important part of a every security policy. However, IPS is often deployed deep within the network, possibly behind firewalls. Or perhaps you are installing IPS for the first time in a new environment. In either case, it's essential to verify that yous IPS is properly configured and will notify you an event has occurred. This document will cover the necessary steps to test your IPS and notification setup.
+Deploying IPS is an important part of a every security policy. However, understanding if the IPS is really functioning as expected is difficult. An IPS is often deployed deep within the network, possibly behind firewalls, making alerts infrequent. Or perhaps IPS is being installed for the first time in a new environment. In either case, it's essential to verify that your IPS is properly configured and will notify you an event has occurred. This document will cover the necessary steps to test your IPS and notification setup.
 
 #### Requirements
 
