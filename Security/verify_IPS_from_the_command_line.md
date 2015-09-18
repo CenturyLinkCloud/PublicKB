@@ -9,7 +9,7 @@
 }}}
 #### Overview
 
-Deploying IPS is an important part of a every security policy. However, IPS is often deployed deep within the network, possibly behind firewalls. Or perhaps you are installing IPS for the first time in a new environment. In either case, it's essential to verify that yous IPS is properly configured and will notify you an event has occurred. This document will cover the necessary steps to test your IPS and notification setup.
+Deploying IPS is an important part of a every security policy. However, understanding if the IPS is really functioning as expected is difficult. An IPS is often deployed deep within the network, possibly behind firewalls, making alerts infrequent. Or perhaps IPS is being installed for the first time in a new environment. In either case, it's essential to verify that your IPS is properly configured and will notify you an event has occurred. This document will cover the necessary steps to test your IPS and notification setup.
 
 #### Requirements
 
@@ -19,7 +19,7 @@ Deploying IPS is an important part of a every security policy. However, IPS is o
 
 #### Getting Started
 
-1. **Create a RequestBin.** Visit [requestb.in](http://requestb.in) and click "Create a RequestBin." Now we'll send a simple JSON POST to our endpoint to make sure it's working. You should use the [requestb.in](http://requestb.in) URL that was randomly generated for you in the HTTP request below.
+1. **Create a RequestBin.** For this example, we will use a free service to inspect HTTP requests from [requestb.in](http://requestb.in). RequestBins are short lived and should not be used for production data. To begin, visit [requestb.in](http://requestb.in) and click "Create a RequestBin." Now we'll send a simple JSON POST to our endpoint to make sure it's working. You should use the [requestb.in](http://requestb.in) URL that was randomly generated for you in the curl request below.
 
     ```
     $ curl -X POST -H 'Content-Type: application/json' http://requestb.in/1d95hxs1 -d '{ "json_key" : "json_value", "apples" : "5" }'
@@ -74,6 +74,7 @@ For this test you will need two hosts, one with IPS and a webserver installed an
     ```
     $ nc 10.136.70.20 80
     GET /../../../../etc/passwd HTTP/1.1
+    $
     ```
 
     This time after running netcat you should enter `GET /../../../../etc/passwd HTTP/1.1` followed by a newline.  You'll notice this time that you can't even enter the second newline that is required by HTTP to process your request. The connection has already been dropped by the IPS on the webserver. Because this looked like a [directory traversal attack](https://en.wikipedia.org/wiki/Directory_traversal_attack), the IPS disconnected you and your `GET` never made it to the web service.
