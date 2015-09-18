@@ -128,7 +128,6 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [OXID](../Ecosystem Partners/Marketplace Guides/getting-started-with-oxid-blueprint.md)  	| Blueprint   | eCommerce platform     |
 | [Sharelock](../Ecosystem Partners/Marketplace Guides/getting-started-with-sharelock-blueprint.md)  	| Blueprint   | Information sharing     |
 | [Simple Invoices](../Ecosystem Partners/Marketplace Guides/getting-started-with-simpleinvoices-blueprint.md)  	| Blueprint   | Invoice software     |
-| [VDIWorks](../Ecosystem Partners/Marketplace Guides/getting-started-with-vdiworks-console.md)  	| Blueprint   | Virtual Desktop Management     |
 | [X2 Engine](../Ecosystem Partners/Marketplace Guides/getting-started-with-x2engine-blueprint.md)  	| Blueprint   | Customer relationship manager (CRM)     |
 
 
