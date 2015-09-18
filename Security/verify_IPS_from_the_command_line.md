@@ -19,7 +19,7 @@ Deploying IPS is an important part of a every security policy. However, understa
 
 #### Getting Started
 
-1. **Create a RequestBin.** Visit [requestb.in](http://requestb.in) and click "Create a RequestBin." Now we'll send a simple JSON POST to our endpoint to make sure it's working. You should use the [requestb.in](http://requestb.in) URL that was randomly generated for you in the HTTP request below.
+1. **Create a RequestBin.** For this example, we will use a free service to inspect HTTP requests from [requestb.in](http://requestb.in). RequestBins are short lived and should not be used for production data. To begin, visit [requestb.in](http://requestb.in) and click "Create a RequestBin." Now we'll send a simple JSON POST to our endpoint to make sure it's working. You should use the [requestb.in](http://requestb.in) URL that was randomly generated for you in the curl request below.
 
     ```
     $ curl -X POST -H 'Content-Type: application/json' http://requestb.in/1d95hxs1 -d '{ "json_key" : "json_value", "apples" : "5" }'
