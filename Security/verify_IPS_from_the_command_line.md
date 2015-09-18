@@ -74,6 +74,7 @@ For this test you will need two hosts, one with IPS and a webserver installed an
     ```
     $ nc 10.136.70.20 80
     GET /../../../../etc/passwd HTTP/1.1
+    $
     ```
 
     This time after running netcat you should enter `GET /../../../../etc/passwd HTTP/1.1` followed by a newline.  You'll notice this time that you can't even enter the second newline that is required by HTTP to process your request. The connection has already been dropped by the IPS on the webserver. Because this looked like a [directory traversal attack](https://en.wikipedia.org/wiki/Directory_traversal_attack), the IPS disconnected you and your `GET` never made it to the web service.
