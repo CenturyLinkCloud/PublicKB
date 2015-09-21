@@ -23,8 +23,8 @@ Each free trial includes:
 * Up to $2,500 in usage or 30 days usage of the service (whichever comes first)
 * Free orientation from a CenturyLink Cloud solution architect
 * Email & phone support from the solution architect during the trial
-* Self-service access CenturyLink Cloud services, including cloud servers, block storage, load balancers, VLANs, [AppFog, based on Cloud Foundry](/appfog/), and much more
-* [Developer Support](/support/) - this can be upgraded after the trial period at anytime
+* Self-service access CenturyLink Cloud services, including cloud servers, block storage, load balancers, VLANs, [AppFog, based on Cloud Foundry](http://www.ctl.io/appfog/), and much more
+* [Developer Support](http://www.ctl.io/support/) - this can be upgraded after the trial period at anytime
 
 There are also some limits on rapid scale-up of resources; contact [help@ctl.io](mailto:help@ctl.io) or your solution architect for more details.
 
