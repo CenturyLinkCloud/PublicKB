@@ -75,23 +75,23 @@ Sets a destination for all IPS event notifications to be sent to. Calls to this 
 
 ##### URI Parameters
 
-|Name         |Type   |Description                                                    |REQ. |
-|-------------|-------|---------------------------------------------------------------|-----|
-|accountAlias |string |Short code for a particular account                            |Yes  |
-|serverName   |string |The name of the server that the destination should be set for. |Yes  |
+|**Name*      |**Type**|**Description**                                                |**REQ.**|
+|-------------|--------|---------------------------------------------------------------|--------|
+|accountAlias |string  |Short code for a particular account                            |Yes     |
+|serverName   |string  |The name of the server that the destination should be set for. |Yes     |
 
 ##### Content Properties
 
-|Name                     |Type   |Description                              |REQ. |
-|-------------------------|-------|-----------------------------------------|-----|
-|notificationDestinations |array  | List of Notification Destinations       |Yes  |       
+|**Name*                  |**Type**|**Description**                          |**REQ.**|
+|-------------------------|--------|-----------------------------------------|--------|
+|notificationDestinations |array   | List of Notification Destinations       |Yes     |       
 
 ##### Notification Destination Definition 
 
-|Name     |Type  |Description                                                       |REQ. |
-|---------|------|------------------------------------------------------------------|-----|
-|url      |string|The URL endpoint for notification.                                |Yes  |
-|typeCode |string|This is the type of destination. For Slack it should be WEBHOOK.  |Yes  |
+|**Name*  |**Type**|**Description**                                                   |**REQ.**|
+|---------|--------|------------------------------------------------------------------|--------|
+|url      |string  |The URL endpoint for notification.                                |Yes     |
+|typeCode |string  |This is the type of destination. For Slack it should be WEBHOOK.  |Yes     |
 
 
 ##### Example
