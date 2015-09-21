@@ -97,15 +97,10 @@ Sets a destination for all IPS event notifications to be sent to. Calls to this 
 ##### Example
 
 > '[
-
 >   {
-
 >     "url":"http://my.slack.webhook",
-
 >     "typeCode":"WEBHOOK"
-
 >   }
-
 > ]'
 
 
