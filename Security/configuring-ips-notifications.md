@@ -12,7 +12,9 @@
 
 The Platform CenturyLink IPS utilizes an Agent installed on your Virtual Machine (VM) that will monitor that VM for suspicious activity. If suspicious activity is found, the Agent will log it and may block or stop the activity, and will report it based on the IPS policy. There is a default policy associated to each VM that is automatically tuned based on the host operating system and installed applications.
 
-The Blueprint allows a customer that has purchased the IPS service from Platform CenturyLink to modify how they would like to be notified regarding IPS security events. This Blueprint will only change notification settings for the server it is run against.
+The Blueprint allows a customer that has purchased the IPS service from Platform CenturyLink to modify how they would like to be notified regarding IPS security events. This Blueprint will only change **Slack** notification settings for the server it is run against.
+
+Our API allows for a customer to set notification destinations for either **Slack** or **Sys Log**.  
 
 ### Prerequisites
 
@@ -83,23 +85,23 @@ Sets a destination for all IPS event notifications to be sent to. Calls to this 
 
 ##### URI Parameters
 
-| **Name**     | **Type** | **Description**                                                | **REQ.**|
-|-------------|--------|---------------------------------------------------------------|--------|
-|accountAlias |string  |Short code for a particular account                            |Yes     |
-|serverName   |string  |The name of the server that the destination should be set for. |Yes     |
+| **Name**     | **Type** | **Description**                                               | **REQ.**|
+|--------------|----------|---------------------------------------------------------------|---------|
+|accountAlias  |string    |Short code for a particular account                            |Yes      |
+|serverName    |string    |The name of the server that the destination should be set for. |Yes      |
 
 ##### Content Properties
 
-| **Name**                 | **Type** | **Description**                          | **REQ.** |
-|-------------------------|--------|-----------------------------------------|--------|
-|notificationDestinations |array   | List of Notification Destinations       |Yes     |       
+| **Name**                | **Type** | **Description**                      | **REQ.** |
+|-------------------------|----------|--------------------------------------|----------|
+|notificationDestinations |array     | List of Notification Destinations    |Yes       |       
 
 ##### Notification Destination Definition 
 
-| **Name** | **Type** | **Description**                                                   | **REQ.** |
-|---------|--------|------------------------------------------------------------------|--------|
-|url      |string  |The URL endpoint for notification.                                |Yes     |
-|typeCode |string  |This is the type of destination. For Slack it should be WEBHOOK.  |Yes     |
+| **Name** | **Type** | **Description**                                                            | **REQ.** |
+|----------|----------|----------------------------------------------------------------------------|----------|
+|url       |string    |The URL endpoint for notification.                                          |Yes       |
+|typeCode  |string    |This is the type of destination. For Slack it should be WEBHOOK or SYSLOG.  |Yes       |
 
 
 ##### Example
