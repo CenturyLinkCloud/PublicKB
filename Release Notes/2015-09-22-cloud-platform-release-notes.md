@@ -38,7 +38,7 @@
 * __MySQL Limited Beta__. This service has several new features available, including:
   * __Additional Instance Sizes__. Beta users can now select from four sizes: micro, small, medium, and large. The sizes range from 1 CPU / 1 GB RAM / 1 GB storage all the way to 4 CPU / 16 GB RAM / 256 GB storage.
   * __Backup location & encryption__. The daily backups that are part of the service are now de-coupled from their original VMs, and encrypted.
-  * __New default URL for sites.__ Newly created MySQL DBaaS sites are now given the default domain of `customer-specified-db-.datacenter.dbaas.ctl.io`.
+  * __New default URL for sites.__ Newly created MySQL DBaaS sites are now given the default domain of `[customer-specified-db].datacenter.dbaas.ctl.io`.
   * __New filters.__ The listing of your DB instances now allows you to filter based on status, specifically `active` and `terminated`.
 
   ![MySQL Filter Screen](../images/2015-09-22-MySQL_filter.png)
@@ -55,7 +55,7 @@
 
 * __Customers can now choose their "home" datacenter during free trials & online sign-up.__ New customers [signing up via the web](http://www.ctl.io/free-trial/) can now choose one of over 12 public cloud sites as their "home" location. Previously, each new account was assigned the VA1 location by default.
 
-### Ecosystem: Selected New Blueprints (5)
+### Ecosystem: Selected New Blueprints from the Bitnami Library (5)
 
 * __[Bitnami](https://bitnami.com/centurylink)__ Over the past few months, we’ve been working on integration between the Bitnami “stacks” library of open source software and our Blueprint orchestration.  This release we are excited to announce full integration [between the two libraries](https://www.ctl.io/knowledge-base/search/?q=bitnami+site%3Ahttps%3A%2F%2Fwww.ctl.io%2Fknowledge-base%2F), bringing the full power of Bitnami’s software automation to CenturyLink customers.  Although Bitnami’s software installation expertise can be applied to many different commercial products, their initial focus has been making open source software easier to install.  This allows CenturyLink users of varying skill levels the ability to solve business problems with open source software, such as:
 
