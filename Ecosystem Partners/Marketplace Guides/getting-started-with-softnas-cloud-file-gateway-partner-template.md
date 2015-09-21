@@ -1,6 +1,6 @@
 {{{
 "title": "Getting Started with SoftNAS Cloud File Gateway - Partner Template",
-"date": "5-31-2015",
+"date": "9-21-2015",
 "author": "Bob Stolzberg",
 "attachments": [],
 "contentIsHTML": false
@@ -40,7 +40,6 @@ An Apache webserver provides robust, secure access along with Secure Shell (SSH)
 SoftNAS Cloud is packaged with a primary administration interface called SoftNAS StorageCenter, which provides commercial-grade storage administration and management functionalities for businesses of all sizes.
 
 #### Key Features:
-
 - NFS, CIFS and iSCSI support
 - Connects to popular Cloud Storage services
 - 99.999% reliability with cross-zone high-availability with SNAP HA(tm)
@@ -65,6 +64,7 @@ This deployment process for Partner Templates currently requires manual interact
 ### Prerequisite
 - Access to the CenturyLink Cloud platform as an authorized user.
 - Identify a Network VLAN you want the SoftNAS instance/s to reside on
+- Do you want to deploy this in a high availability configuration?  Typically, most users _do not_ deploy a HA configuration, but if you want to there are a few things you should be aware of.  For starters, a SoftNAS HA configuration will consist of 3 SoftNAS appliances.  The primary and secondary will reside in separate data centers and the third will reside in the same data center as the primary.  For more information on SoftNAS high availaility architecture details, please contact [SoftNAS Support](mailto:support@softnas.com).
 
 ### Postrequisite
 1.  Make sure you add additional raw storage to the SoftNAS VM via the Control Portal as outlined in the Accessing and using your SoftNAS Cloud Gateway section of this article.
@@ -79,18 +79,15 @@ This deployment process for Partner Templates currently requires manual interact
     * UDP Ports: 1
     * ICMP: All
 
-
   - For CIFS Sharing, open the following ports:
     * TCP 137, 138, 139, 445
     * TCP 389 for Active Directory
     * TCP 445 for NetBIOS Post-Windows 2000 (CIFS)
     * TCP 901 for SWAT
 
-
   - For NFS Sharing, open the following ports:
     * TCP 111, 2010-2014, 2049
     * UDP 111, 2010-2014, 2049
-
 
   - For iSCSI Sharing, open the following ports:
     * TCP 3260
@@ -108,15 +105,17 @@ EMAIL SUBJECT:   Ecosystem Partner Template Import Request
 CLC Support Team,
 
 Please create a ticket to import the Ecosystem Partner Template image referenced below to my CenturyLink Cloud Account:
-- Import CenturyLink Ecosystem Partner Source Image: SoftNAS 3.3.1 OVA
+- Import CenturyLink Ecosystem Partner Source Image: SoftNAS OVA
 - My CenturyLink Cloud Account Alias: #### your alias
 - Data Center to import image to: ### name of data center
 - Server Name to import image as: ########## A unique name for the server
-- VLAN in the account to add the Server to: ######## specify a VLAN
+- VLAN in the account to add the [primary] server to: ######## specify a VLAN
+- Do you want High Availability (HA) configured?  Yes or No?  (Default is No)
+  - IF you want HA configured:
+  - What datacenter do you want the secondary SoftNAS appliance to reside in?  (It must be different than where the primary appliance resides.)
+  - What VLAN in the secondary data center do you want the Secondary appliance to reside on?
 
-- Additional Notes or work to be done: IMPORTANT: Please make sure that the private IP shows up in Control so that we can add a Public IP through the Portal later on if desired.
-
-Please let me know if you have any questions or issues. Kindly send me a reply once the work has been completed and let us know the IP address of the server where this technology has been deployed.
+Please let me know if you have any questions or issues. Kindly send me a reply once the work has been completed and let us know the IP address(es) where this technology has been deployed.
 
 Thank you very much,
 
