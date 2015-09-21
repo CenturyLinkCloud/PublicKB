@@ -27,7 +27,7 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 * Microsoft Windows Server 2008 (64-bit only)
 * Microsoft Windows Server 2012 (64-bit only)
 
-### Installation Process
+### Configuration Process via Blueprints
 
 1. Search for **IPS Notification** in the Blueprint library. Then, click on the desired Operating System blueprint to configure Notifications.
 
@@ -56,6 +56,53 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
   ![Blueprint Status Log](../images/notificationupdate_rhel_logstatus.png)
 
 6. An email notification will be sent to the initiator of the Blueprint for both queuing and completion.
+
+### Configuration Process via our API
+
+Sets a destination for all IPS event notifications to be sent to. Calls to this operation must include a token acquired from the authentication endpoint. See the Login API for information on acquiring this token.
+
+#### URL
+
+##### Structure
+
+>PUT http://api.client-security.ctl.io/ips/api/notifications/{accountAlias}/{serverName}
+
+##### Example
+
+>PUT http://api.client-security.ctl.io/ips/api/notification/ALIAS/VA1ALIASMYSVR01
+
+#### Request
+
+##### URI Parameters
+
+|Name         |Type   |Description                                                    |REQ. |
+|-------------|-------|---------------------------------------------------------------|-----|
+|accountAlias |string |Short code for a particular account                            |Yes  |
+|serverName   |string |The name of the server that the destination should be set for. |Yes  |
+
+##### Content Properties
+
+|Name                     |Type   |Description                              |REQ. |
+|-------------------------|-------|-----------------------------------------|-----|
+|notificationDestinations |array  | List of Notification Destinations       |Yes  |       
+
+##### Notification Destination Definition 
+
+|Name     |Type  |Description                                                       |REQ. |
+|---------|------|------------------------------------------------------------------|-----|
+|url      |string|The URL endpoint for notification.                                |Yes  |
+|typeCode |string|This is the type of destination. For Slack it should be WEBHOOK.  |Yes  |
+
+
+##### Example
+
+> [
+>   {
+>     "url":"http://my.slack.webhook",
+>     "typeCode":"WEBHOOK"
+>   }
+> ]
+
 
 ### Frequently Asked Questions
 
