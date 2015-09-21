@@ -33,7 +33,7 @@
     * The Storage Backing Device (SBD) now re-sends relevant metadata to the remote location during the Protection Group (PG) creation. This also improves the reliability of of ROW-COW PG creation.
     * Stability has improved when connecting to iSCSI targets, as well as when adding iSCSI database items during the on-boarding of Ubuntu 12.
 
-### Early Adopter Program Updates (2)
+### Early Adopter Program Updates (3)
 
 * __MySQL Limited Beta__. This service has several new features available, including:
   * __Additional Instance Sizes__. Beta users can now select from four sizes: micro, small, medium, and large. The sizes range from 1 CPU / 1 GB RAM / 1 GB storage all the way to 4 CPU / 16 GB RAM / 256 GB storage.
@@ -51,9 +51,20 @@
 
   For more information and to sign up for the beta, visit our [product page on the CenturyLink Cloud website](https://www.ctl.io/wordpress/).
 
+* __Intrusion Prevention Limited Beta.__ The Intrusion Prevention Beta service now supports additional Windows versions. Customers can now use IPS on the following Windows operating systems:
+  * Microsoft Windows Server 2008 Standard R2 (64-bit)
+  * Microsoft Windows Server 2008 Enterprise (64-bit)
+  * Microsoft Windows Server 2008 Enterprise R2 (64-bit)
+  * Microsoft Windows Server 2012 Datacenter (64-bit)
+  * Microsoft Windows Server 2008 Datacenter R2 (64-bit)
+  * Microsoft Windows Server 2012 Datacenter (64-bit)
+  * Microsoft Windows Server 2012 Datacenter R2 (64-bit)
+
+  For more information and to sign up for the beta, visit our [product page on the CenturyLink Cloud website](https://www.ctl.io/intrusion-prevention-service/).
+
 ### Online Tools (1)
 
-* __Customers can now choose their "home" datacenter during free trials & online sign-up.__ New customers [signing up via the web](http://www.ctl.io/free-trial/) can now choose one of over 12 public cloud sites as their "home" location. Previously, each new account was assigned the VA1 location by default.
+* __Customers can now choose their "home" datacenter during free trials & online sign-up.__ New customers [signing up via the web](http://www.ctl.io/free-trial/) can now choose one of several public cloud sites as their "home" location. Previously, each new account was assigned the VA1 location by default.
 
 ### Ecosystem: Selected New Blueprints from the Bitnami Library (5)
 
