@@ -1,7 +1,7 @@
 {{{
   "title": "Configuring Intrusion Prevention System (IPS) Notifications",
-  "date": "08-11-2015",
-  "author": "Stephanie Wong",
+  "date": "09-21-2015",
+  "author": "Sean Robb",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -24,8 +24,13 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 
 * Red Hat Enterprise Linux 5 (64-bit only)
 * Red Hat Enterprise Linux 6 (64-bit only)
-* Microsoft Windows Server 2008 (64-bit only)
-* Microsoft Windows Server 2012 (64-bit only)
+* Microsoft Windows Server 2008 Standard R2 (64-bit only)
+* Microsoft Windows Server 2008 Enterprise (64-bit only)
+* Microsoft Windows Server 2008 Enterprise R2 (64-bit only)
+* Microsoft Windows Server 2012 Datacenter (64-bit only)
+* Microsoft Windows Server 2008 Datacenter R2 (64-bit only)
+* Microsoft Windows Server 2012 Datacenter (64-bit only)
+* Microsoft Windows Server 2012 Datacenter R2 (64-bit only)
 
 ### Configuration Process via Blueprints
 
