@@ -18,6 +18,7 @@ This document is for users of AppFog v1. This document does not apply to the cur
 <li><a href="#tunneling">Tunneling</a></li>
 <li><a href="#3rd-party-tools">Third-party Tools</a></li>
 <li><a href="#more-info">More about the Tunnel Command</a></li>
+<li><a href="#backups">Backups</a></li>
 <li><a href="#errors">Errors</a></li>
 </ul>
 <h3 id="prereqs">Prerequisites</h3>
@@ -134,6 +135,9 @@ Press Ctrl-C to exit...
 <p>The "Default Schema" can be whatever you want, just like the "Connection Name".</p>
 <p>Click on "OK", and it will take you back to the main screen, where you can click on your newly formed connection under the "Open Connection to Start Querying" header. Double-click on the connection you just made and that's it!</p>
 <p>Once you're done, hit <code>Ctrl-C</code> to exit <code>af</code> and close the tunnel.</p>
+<h3 id="backups">Backups</h3>
+<p>You can create a cron job on your local machine that will run the af export-service command to make a backup of your service hosted on AppFog. The command provides a link that can be pulled down with wget or curl to your local machine.</p>
+<p>Database dumps and exports are subject to timeout issues around 100M. While the the command will run and provide a backup copy, it may not be all of your data. Third party GUIs are often useful for one time backups needs. For larger databases that require frequent exports we recommend using an external database. Before deleting a database on AppFog please ensure your backup contains all of your data.</p>
 <h3 id="more-info">More about the Tunnel Command</h3>
 <p>You can simply enter the <code>af tunnel</code> command and respond to the prompts to create a tunnel. The command allows you to select from a list of existing provisioned services, so you don't need to know the service's name ahead of time.</p>
 <p>The full syntax of the <code>af tunnel</code> command is:</p>

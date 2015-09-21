@@ -59,6 +59,7 @@ The repository is organized by category, and each folder represents a category. 
   **Note:** Content authors are responsible for making their pull requests pass the commit analyzer. Once they pass, pull requests will be merged.
 
 1. CenturyLink Cloud Team reviews your pull request. If accepted, it will be added to the [Knowledge Base on ctl.io](https://www.ctl.io/knowledge-base).
+2. In general Pull Requests are review once in the morning and once in the afternoon (Seattle Time). This is not a garantee but is generally the practice. So if there are no changes required your pull request is generally accepted within a day. However, if there are changes required then the time line depends on when the changes are addressed. So remember to keep an eye on your pull request for comments.
 
 
 #### Run the Commit Analyzer locally

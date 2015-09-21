@@ -95,7 +95,7 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
 
   Optionally set the server name prefix.
 
-  **Set the group to the value created in step (1).**
+  **Set the group to the value created in step (1).**  (Your specific group - not the OpenStack one)
 
   The default values are fine for every other option.
 
@@ -167,7 +167,7 @@ After deploying this Blueprint, you may secure entitlements to the technology us
 
 **Where do I obtain my license?**
 
-Contact your Pivotal account manager or inquire via email to [centurylinkcloud-sales@pivotal.io](mailto:centurylinkcloud-sales@pivotal.io)
+Contact your Pivotal account manager or inquire via email to [sales-clc@pivotal.io](mailto:sales-clc@pivotal.io)
 
 **Who should I contact for support?**
 
@@ -236,8 +236,24 @@ Should this split DNS be required implement the following:
   by installing BIND on the Operations Manager host and pointing all DNS resolvers to this IP
 * Edit the public DNS so the FQDN resolves to the NATed public IP for the HA proxy (.128 by default)
 
+
+**IP Address Space for Larger Deployments**
+
+CenturyLink Cloud provides class-C /24 address space on each of its networks, and with the exception of a few IPs at the top and bottom end of the range 
+reserved for platform-level services, the entire subnet is available for use.  Some considerations:
+
+* By default the IP space is cut in half - Ops Manager and CF have access to 128 and above and all lower addresses are reserved for other use.  This is
+  implemented since both Ops Manager and CenturyLink Cloud believe they own IPAM responsibilities.
+* Ops Manager subdivides this network and reserves a portion for each tile's use - this includes steady-state assignments as well as those used only
+  during Errands testing.  In production this means the IP-range can quickly fill up even though there is actually space available
+* Gain IP space by deploying initially using the following approach:
+ * Set the *OpenStack* group's default network to network A.  This will move your Elastic Block Storage services onto a different network segment.
+ * Set the group containing your servers to network B.  Make sure network B is not your first network defined in your primary datacenter.
+ * Configure Ops Director to use from .12 all the way to .230.
+
+
 **What are some known limitations?**
 
 * Accounts requiring two-factor authentication cannoit successfully deploy PCF.  Create a new service account dedidicated to PCF.
-* PCF deployments can only be made to the account's primary datacenter.
+
 
