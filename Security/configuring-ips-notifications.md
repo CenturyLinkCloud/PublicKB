@@ -59,7 +59,7 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 
 ### Configuration Process via our API
 
-Sets a destination for all IPS event notifications to be sent to. Calls to this operation must include a token acquired from the authentication endpoint. See the Login API for information on acquiring this token.
+Sets a destination for all IPS event notifications to be sent to. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
 #### URL
 
