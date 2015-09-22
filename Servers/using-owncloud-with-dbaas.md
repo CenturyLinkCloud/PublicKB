@@ -56,8 +56,10 @@ Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtua
 	- Note down the user name and the connection string from the setup ![DBaaS](../../images/owncloud/dbaas.png)
 
 #### Connect to the server via OpenVPN
+	1. Assume you have OpenVPN client setup for the CenturyLink Cloud account
+	2. if not, please refer to ![How To Configure Client VPN](../../network/how-to-configure-client-vpn.md)
 
-#### Steps to deploy to an existing server 
+#### Steps to deploy ownCloud to an existing server 
 	1. Download the ownCloud installation from ![ownCloud.org](https://owncloud.org/install/)
 	2. Look for the package for the installed OS, this example will use Ubuntu 14.x 
 	3. ownCloud supports CentOS, Debian, RHEL, Ubuntu and more (https://software.opensuse.org/download/package?project=isv:ownCloud:community&package=owncloud)
@@ -73,30 +75,32 @@ Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtua
 	
 }
 ```
-2. ** Enable SSL **
-In order to enable SSL, a certifcate is required.  Either a self signed certifcate or your own certificate can be used.  The following gives an example of self signed certificate with an expiration date of 365 days :
+** Enable SSL **
+In order to enable SSL, a certifcate is required.  Either a self signed certifcate or your own certificate can be used.  
+The following gives an example of self signed certificate with an expiration date of 365 days :
+	1. Create the certificate:
 
-```
-{
-	cd /etc/apache2
-	mkdir ssl
-	sudo openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -out /etc/apache2/ssl/server.crt -keyout /etc/apache2/ssl/server.key
-	sudo ln -s /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-enabled/000-default-ssl.conf
+		```
+		{
+			cd /etc/apache2
+			mkdir ssl
+			sudo openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -out /etc/apache2/ssl/server.crt -keyout /etc/apache2/ssl/server.key
+			sudo ln -s /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-enabled/000-default-ssl.conf
 
-}
-```
-	- Edit the following two parameters to reflect the location of the certificate:
+		}
+		```
+		- Edit the following two parameters to reflect the location of the certificate:
 		SSLCertificateFile    /etc/apache2/ssl/server.crt
 		SSLCertificateKeyFile /etc/apache2/ssl/server.key
 
-Enable SSL on the web server:
-```
-{
-	sudo a2enmod ssl
-	sudo a2ensite default-ssl
-	sudo service apache2 reload
-}
-```
+	2. Enable SSL on the web server:
+		```
+		{
+			sudo a2enmod ssl
+			sudo a2ensite default-ssl
+			sudo service apache2 reload
+		}
+		```
 
 3. **Configure ownCloud connection to CenturyLink MySQL DBaaS.**
 	1. If not already, connect to CenturyLink Cloud VPN 
@@ -144,8 +148,9 @@ Enable SSL on the web server:
 ### Pricing
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  There are no ownCloud license costs or additional fees bundled in.
 
-### About ownCloud
+### About ownCloud and Bitnami
 CenturyLink Cloud works with [Bitnami](http://www.bitnami.com) to provide open source software integrations to its customers.  Bitnami is a library of popular server applications and development environments that can be installed with one click, either in your laptop, in a virtual machine or hosted in the cloud. Bitnami takes care of compiling and configuring the applications and all of their dependencies (third-party libraries, language runtimes, databases) so they work out-of-the-box. The resulting packaged software (a 'stack') is then made available as native installers, virtual machines and cloud images. These Bitnami application packages provide a consistent, secure and optimized end-user experience when deploying any app, on any platform.
+
 
 ### Frequently Asked Questions
 
