@@ -105,9 +105,11 @@ The following gives an example of self signed certificate with an expiration dat
 3. **Configure ownCloud connection to CenturyLink MySQL DBaaS**
 	1. If not already, connect to [CenturyLink Cloud VPN](../network/how-to-configure-client-vpn.md)
 	2. Point the web browser to the private address of the ownCloud server
-	3. The ownCloud configuration page will appear                              ![configuration](../images/owncloud/owncloud-setup-first.png)
+	3. The ownCloud configuration page will appear
+	![configuration](../images/owncloud/owncloud-setup-first.png)
 	4. Click on Storage and Database, select MySQL
-	5. Using the information from DBaaS to complete the information, the format for the host is IP_Address:port (e.g. 192.168.1.1:45678)                                     ![ownCloud database input](../images/owncloud/owncloud-setup-2nd.png)
+	5. Using the information from DBaaS to complete the information, the format for the host is IP_Address:port (e.g. 192.168.1.1:45678)
+	![ownCloud database input](../images/owncloud/owncloud-setup-2nd.png)
 	6. Click "Finish Setup", the welcome page will display ![ownCloud Welcome](../images/owncloud/owncloud-welcome.png)
 	7. Download the certificate from Database as a Service to the ownCloud server to enable secure communication between the database and the ownCloud server.
 		- Add the following to section to the config.php file (defualt location: /var/www/owncloud/config/)
