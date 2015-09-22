@@ -16,7 +16,7 @@
 
 * __Cloud Platform.__ The CenturyLink Cloud platform updates include:
   * __Subaccounts in the Service Catalog__. Administrators now have the ability to create and view sub-accounts using the CenturyLink Cloud Service Catalog.
-  * __Reboot Message Upon Storage Removal.__ Users that remove a storage volume from a cloud server will now see a reboot required" message.
+  * __Reboot Message Upon Storage Removal.__ Users that remove a storage volume from a cloud server will now see a "reboot required" message.
   * __Set Your Own Price: Default Price Sheet.__ Users with System Billing Manager privileges (or above) can now create a "default" price sheet that can then be inherited by all sub-accounts.
 
 
@@ -79,6 +79,10 @@
     * __[Discourse](http://www.discourse.org)__ Discourse is the next-next-generation community forum platform, deployable via [CenturyLink Cloud Blueprint](../Ecosystem Partners/Marketplace Guides/getting-started-with-discourse-blueprint.md). Discourse has a thoroughly modern design and is written in JavaScript. Page loads are very fast and new content is loaded as the user scrolls down the page. Discourse allows CenturyLink users to create categories, tag posts, manage notifications, create user profiles, and includes features to let communities govern themselves by voting out trolls and spammers. Discourse is built for mobile from the ground up and support high-res devices.
 
     * __[phpBB](https://www.phpbb.com/)__ Forums are very popular on the internet and the majority are powered by phpBB, an open-source, flat-forum bulletin board software solution. Able to organize a small group of people or power an entire website user base, phpBB software allows customized, engaging experiences with any forum of users. CenturyLink Cloud users can [deploy the phpBB Blueprint](../Ecosystem Partners/Marketplace Guides/getting-started-with-phpbb-blueprint.md) to spin a new site up in minutes. Consider spinning up your own phpBB forum instead of a Facebook group.
+
+### Open Source Contributions (1)
+
+* __[Flatcar](https://labs.ctl.io/introducing-flatcar-tool-for-creating-docker-ready-rails-projects/)__ CenturyLink Labs recently released Flatcar, a CLI tool for generating a Docker-ready Rails development environment with data volume and persistent database support. This enables users to develop apps with their preferred IDEs and other dev tools, while including just the application code in the final container build. See [wiki notes](https://github.com/CenturyLinkLabs/flatcar) for more information.
 
 ### Selected Bug Fixes (3)
 
