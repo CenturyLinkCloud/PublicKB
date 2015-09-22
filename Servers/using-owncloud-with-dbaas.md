@@ -103,7 +103,7 @@ The following gives an example of self signed certificate with an expiration dat
 		```
 
 3. **Configure ownCloud connection to CenturyLink MySQL DBaaS.**
-	1. If not already, connect to CenturyLink Cloud VPN 
+	1. If not already, connect to [CenturyLink Cloud VPN](../network/how-to-configure-client-vpn.md)
 	2. Point the web browser to the private address of the ownCloud server
 	3. The ownCloud configuration page will appear.  ![configuration](../images/owncloud/owncloud-setup-first.png)
 	4. Click on Storage and Database, select MySQL
@@ -143,17 +143,17 @@ The following gives an example of self signed certificate with an expiration dat
 	}
 	```
 
-### Now, the ownCloud server is set up to consume Database as a Service, SMTP Relay and Object Storage, this will minimize the administration of the local environment and eliminate resource constraint.  
+6. Now, the ownCloud server is set up to consume Database as a Service, SMTP Relay and Object Storage, this will minimize the administration of the local environment and eliminate resource constraint.  
  
 ### Pricing
 The costs associated with this deployment are for the CenturyLink Cloud infrastructure only.  There are no ownCloud license costs or additional fees bundled in.
 
-### About ownCloud and Bitnami
-CenturyLink Cloud works with [Bitnami](http://www.bitnami.com) to provide open source software integrations to its customers.  Bitnami is a library of popular server applications and development environments that can be installed with one click, either in your laptop, in a virtual machine or hosted in the cloud. Bitnami takes care of compiling and configuring the applications and all of their dependencies (third-party libraries, language runtimes, databases) so they work out-of-the-box. The resulting packaged software (a 'stack') is then made available as native installers, virtual machines and cloud images. These Bitnami application packages provide a consistent, secure and optimized end-user experience when deploying any app, on any platform.
+### About ownCloud 
+[ownCloud](https://owncloud.org/history/) gives you universal access to your files through a web interface or WebDAV. It also provides a platform to easily view & sync your contacts, calendars and bookmarks across all your devices and enables basic editing right on the web. Installation has minimal server requirements, doesn’t need special permissions and is quick. ownCloud Server is extendable via a simple but powerful API for applications and plugins.
 
 
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to deploying the ownCloud on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [Bitnami Support website](http://www.bitnami.com/support)
+* For issues related to deploying the ownCloud on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [ownCloud Support website](https://owncloud.org/support/)
 * For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
