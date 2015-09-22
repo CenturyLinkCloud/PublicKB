@@ -62,7 +62,7 @@ Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtua
 2. if not, please refer to ![How To Configure Client VPN](../network/how-to-configure-client-vpn.md)
 
 #### Steps to deploy ownCloud to an existing server 
-1. Download the ownCloud installation from <p>![ownCloud.org](https://owncloud.org/install/)<p>
+1. Download the ownCloud installation from [ownCloud.org](https://owncloud.org/install/)
 2. Look for the package for the installed OS, this example will use Ubuntu 14.x 
 3. ownCloud supports CentOS, Debian, RHEL, Ubuntu and [more](https://software.opensuse.org/download/package?project=isv:ownCloud:community&package=owncloud)
 4. For Ubuntu 14.x, downdload the ownCloud package and add the repository key to apt (this key will updates periodically).
@@ -76,8 +76,8 @@ Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtua
 }
 ```
 2. **Enable SSL**
-In order to enable SSL, a certifcate is required.  Either a self signed certifcate or your own certificate can be used.  
-The following gives an example of self signed certificate with an expiration date of 365 days :
+ - In order to enable SSL, a certifcate is required.  Either a self signed certifcate or your own certificate can be used.  
+ - The following gives an example of self signed certificate with an expiration date of 365 days :
 	1. Create the certificate:
 
 		```
