@@ -12,7 +12,7 @@
 ownCloud is a personal productivity powerhouse. It gives you universal access to all your files, contacts, calendars and bookmarks across all of your devices. Unlike many of the shared repository services out there, with ownCloud, you have your own, private repo. However, just like the public repo companies, with ownCloud you can share your files with friends and co-workers. If you need it, ownCloud even integrates with other storage providers. Best of all, ownCloud is open source and free!
 
 ### Description
-This CenturyLink Cloud Blueprint provides a click-through solution to install and configure ownCloud on the Linux platform.
+This CenturyLink Cloud knowledge article provides a walkthrough to install and configure ownCloud on the Linux platform, customize ownCloud to utilize CenturyLink Cloud's DBaaS, SMTP Relay and Object Storage.
 
 For more information, please visit [http://owncloud.org](http://owncloud.org)
 
@@ -30,11 +30,11 @@ This article walks through an installation and customization of ownCloud package
 
 
 ### Postrequisite
-- If you want to access your application over the internet, please perform the following tasks after you receive an email notifying you that the Blueprint completed successfully:
+- If you want to access your application over the internet, please perform the following tasks after the server is deployed successfully:
 
-1. If you need to connect to your server via the Internet, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
+1. If you need to connect to your server via the Internet, [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
 
-2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
+2. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
   * The default ports to access the application are: 80, 443
 
 - After adding a public IP for OwnCloud perform the following actions:
@@ -50,14 +50,14 @@ This article walks through an installation and customization of ownCloud package
   - Click on "Add "IP address" as a trusted domain", it will redirect to the private IP address to create the necessary entries to the owncloud configuration file ![add trusted-domain](../images/owncloud/oc-trusted-domain-2.png)
 
 ### Deploying ownCloud on a New Server
-Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtual server](../../Servers/how-to-create-customer-specific-os-templates.md) or [Create a bare metal server to total isolation](../../Servers/creating-a-new-bare-metal-server.md)
+Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtual server](../Servers/how-to-create-customer-specific-os-templates.md) or [Create a bare metal server to total isolation](../../Servers/creating-a-new-bare-metal-server.md)
 
-### Create a MySQL instance on CenturyLink DBaaS, [Getting started with MySQL DBaaS](../../Database/getting-started-with-MySQL-DBaaS.md)
-	- Note down the user name and the connection string from the setup ![DBaaS](../../images/owncloud/dbaas.png)
+### Create a MySQL instance on CenturyLink DBaaS, [Getting started with MySQL DBaaS](../Database/getting-started-with-MySQL-DBaaS.md)
+	- Note down the user name and the connection string from the setup ![DBaaS](../images/owncloud/dbaas.png)
 
 #### Connect to the server via OpenVPN
 	1. Assume you have OpenVPN client setup for the CenturyLink Cloud account
-	2. if not, please refer to ![How To Configure Client VPN](../../network/how-to-configure-client-vpn.md)
+	2. if not, please refer to ![How To Configure Client VPN](../network/how-to-configure-client-vpn.md)
 
 #### Steps to deploy ownCloud to an existing server 
 	1. Download the ownCloud installation from ![ownCloud.org](https://owncloud.org/install/)
@@ -120,7 +120,7 @@ The following gives an example of self signed certificate with an expiration dat
 		```
 		
 4. **Configure ownCloud to utilize SMTP Relay**
-	1. Configure SMTP Relay [SMTP Relay](../../Mail/smtp-relay-services-simple.md)
+	1. Configure SMTP Relay [SMTP Relay](../Mail/smtp-relay-services-simple.md)
 	2. From the owncloud main page, select "Admin" from the user account drop down menu ![drop down menu](../images/owncloud/oc-drop)
 	3. Select "Mail Server" from the left pane ![Mail Server](../images/owncloud/mail-server.png)
 	4. Configurae the SMTP Relay user based on step one ![mail server config](../images/owncloud/oc-mail-relay-account.png)
@@ -146,7 +146,7 @@ The following gives an example of self signed certificate with an expiration dat
 ### Now, the ownCloud server is set up to consume Database as a Service, SMTP Relay and Object Storage, this will minimize the administration of the local environment and eliminate resource constraint.  
  
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  There are no ownCloud license costs or additional fees bundled in.
+The costs associated with this deployment are for the CenturyLink Cloud infrastructure only.  There are no ownCloud license costs or additional fees bundled in.
 
 ### About ownCloud and Bitnami
 CenturyLink Cloud works with [Bitnami](http://www.bitnami.com) to provide open source software integrations to its customers.  Bitnami is a library of popular server applications and development environments that can be installed with one click, either in your laptop, in a virtual machine or hosted in the cloud. Bitnami takes care of compiling and configuring the applications and all of their dependencies (third-party libraries, language runtimes, databases) so they work out-of-the-box. The resulting packaged software (a 'stack') is then made available as native installers, virtual machines and cloud images. These Bitnami application packages provide a consistent, secure and optimized end-user experience when deploying any app, on any platform.
