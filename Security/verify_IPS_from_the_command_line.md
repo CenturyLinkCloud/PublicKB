@@ -27,7 +27,7 @@ Deploying IPS is an important part of a every security policy. However, understa
 
 1. Reload the RequestBin page and you should see the JSON content that you posted in the previous step.
 
-  ![RequestBin Test](../images/security/ips-verify/requestb.in_test_with_curl.png)
+  ![RequestBin Test](../images/security/ips-verify/requestb_in_test_with_curl.png)
 
 #### Instructions for your IPS test
 
@@ -35,7 +35,7 @@ For this test you will need two hosts, one with IPS and a webserver installed an
 
 1. **IPS install.** IPS should already by installed on your host, if this is not the case please install IPS. For detailed instructions on installing CenturyLink Cloud IPS, please refer to [Getting Started with Intrusion Prevention System (IPS)](../Security/getting-started-with-ips.md).
 
-1. **Configure IPS notification.** You should enable IPS notifications on your host using the RequestBin URL that was generated in the previous section. For detailed instructions on setting up IPS notifications with Blueprints please refer to [Configuring Intrusion Prevention System (IPS) Notifications](../Security/configuring-ips-notifications.md). In the example below, I used http://requestb.in/1d95hxs1 as the Notification Incoming Webhook URL.
+1. **Configure IPS notification.** You should enable IPS notifications on your host using the RequestBin URL that was generated in the previous section. For detailed instructions on setting up IPS notifications with Blueprints please refer to [Configuring Intrusion Prevention System (IPS) Notifications](../Security/configuring-ips-notifications.md). For example, I used `http://requestb.in/1d95hxs1` as the Notification Incoming Webhook URL.
 
     ![Notification Destination](../images/security/ips-verify/deploy_notification_blueprint.png)
 
@@ -81,7 +81,7 @@ For this test you will need two hosts, one with IPS and a webserver installed an
 
 1. **Verify you got a notification.** Now if you switch back to your web browser and reload your RequestBin page, you should be able to see an IPS event. If you don't see your event, wait two minutes. This is the maximum time it should take to process your event and send to your webhook.
 
-  ![RequestBin with IPS event](../images/security/ips-verify/IPS_event_in_requestb.in_inspect.png)
+  ![RequestBin with IPS event](../images/security/ips-verify/IPS_event_in_requestb_in_inspect.png)
 
 #### Conclusion
 
