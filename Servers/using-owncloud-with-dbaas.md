@@ -24,9 +24,9 @@ This article walks through an installation and customization of ownCloud package
 
 
 ### Prerequisite
-- Access to the CenturyLink Cloud platform as an authorized user.
-- Access to CenturyLink Cloud Database as a Service as an authorized user.
-- Access to Object Storage if required, CenturyLink Cloud Object Storage can be used as primary storage for the Enterprise Edition
+- Access to the CenturyLink Cloud platform as an authorized user
+- Access to CenturyLink Cloud Database as a Service as an authorized user
+- Access to Object Storage if required, CenturyLink Cloud Object Storage can be used as primary storage for the Enterprise Edition of ownCloud
 
 
 ### Postrequisite
@@ -53,27 +53,26 @@ This article walks through an installation and customization of ownCloud package
 ### Deploying ownCloud on a New Server
 Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtual server](../Servers/how-to-create-customer-specific-os-templates.md) or [Create a bare metal server for total isolation](../../Servers/creating-a-new-bare-metal-server.md)
 
-### [Create a MySQL instance on CenturyLink DBaaS](../Database/getting-started-with-MySQL-DBaaS.md)
+#### [Create a MySQL instance on CenturyLink DBaaS](../Database/getting-started-with-MySQL-DBaaS.md)
 1. Note down the user name and the connection string from the setup ![DBaaS](../images/owncloud/dbaas.png)
+2. Download the certificate to configure secure connectivity to DBaaS
 
 #### Connect to the server via OpenVPN
 1. Assume you have OpenVPN client setup for the CenturyLink Cloud account
 2. if not, please refer to ![How To Configure Client VPN](../network/how-to-configure-client-vpn.md)
 
 #### Steps to deploy ownCloud to an existing server 
-	1. Download the ownCloud installation from ![ownCloud.org](https://owncloud.org/install/)
-	2. Look for the package for the installed OS, this example will use Ubuntu 14.x 
-	3. ownCloud supports CentOS, Debian, RHEL, Ubuntu and more (https://software.opensuse.org/download/package?project=isv:ownCloud:community&package=owncloud)
-	4. For Ubuntu 14.x, downdload the ownCloud package and add the repository key to apt (this key will updates periodically).
+1. Download the ownCloud installation from ![ownCloud.org](https://owncloud.org/install/)
+2. Look for the package for the installed OS, this example will use Ubuntu 14.x 
+3. ownCloud supports CentOS, Debian, RHEL, Ubuntu and more (https://software.opensuse.org/download/package?project=isv:ownCloud:community&package=owncloud)
+4. For Ubuntu 14.x, downdload the ownCloud package and add the repository key to apt (this key will updates periodically).
 ```
 {
 	wget http://download.opensuse.org/repositories/isv:ownCloud:community/xUbuntu_14.10/Release.key
 	sudo apt-key add - < Release.key  
 	sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/community/xUbuntu_14.10/ /' >> /etc/apt/sources.list.d/owncloud.list"
 	sudo apt-get update
-	sudo apt-get install owncloud
-
-	
+	sudo apt-get install owncloud	
 }
 ```
 2. **Enable SSL**
@@ -157,4 +156,4 @@ The costs associated with this deployment are for the CenturyLink Cloud infrastr
 
 #### Who should I contact for support?
 * For issues related to deploying the ownCloud on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [ownCloud Support website](https://owncloud.org/support/)
-* For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying any Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
