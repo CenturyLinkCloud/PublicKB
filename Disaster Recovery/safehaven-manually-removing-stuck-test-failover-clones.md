@@ -6,11 +6,11 @@
   "contentIsHTML": false
 }}}
 
-#### OVERVIEW:
+### Overview
 
 If there is corruption within a Protection Group (see companion article on determining corruption), or other issues within the cluster, occasionally a Test-Failover clone will fail and require manual cleanup. The following commands will walk you through removing the clone and protection group. They will need to be completely re-created once they have been removed, as a corrupt Protection Group is unusable.
 
-#### WALKTHROUGH:
+### Walkthrough
 
 1. Stop CMS and SRN services
   1. Log in CMS, run the following commands

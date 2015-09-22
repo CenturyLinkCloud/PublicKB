@@ -6,11 +6,11 @@
   "contentIsHTML": false
 }}}
 
-#### OVERVIEW:
+### Overview:
 
 This document covers the creation of a SafeHaven 3.0/3.1 base image. This base image, once complete, should be converted to template in both the Production and Disaster Recovery Data Centers so that the appropriate amount of SRN and CMS appliances can be deployed from the source template. The base-image template is the same for either SRN or CMS appliances, they are configured for their particular roles during the post-deployment run of the ClusterConfigurator.exe within the SafeHaven Executable bundle. **Please note that these links are valid for the current 3.1 GA release only, and may or may not reflect the most recent codebase.**
 
-#### TEMPLATE CREATION:
+### Template Creation:
 
   1. Build a 2 vCPU/4GB vRAM Ubuntu 14 image within the desired datacenters.
 
