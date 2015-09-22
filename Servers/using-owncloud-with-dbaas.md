@@ -106,7 +106,7 @@ The following gives an example of self signed certificate with an expiration dat
 	1. If not already, connect to [CenturyLink Cloud VPN](../network/how-to-configure-client-vpn.md)
 	2. Point the web browser to the private address of the ownCloud server
 	3. The ownCloud configuration page will appear
-	![configuration](../images/owncloud/owncloud-setup-first.png)
+	<p>![configuration](../images/owncloud/owncloud-setup-first.png)<p>
 	4. Click on Storage and Database, select MySQL
 	5. Using the information from DBaaS to complete the information, the format for the host is IP_Address:port (e.g. 192.168.1.1:45678)
 	![ownCloud database input](../images/owncloud/owncloud-setup-2nd.png)
