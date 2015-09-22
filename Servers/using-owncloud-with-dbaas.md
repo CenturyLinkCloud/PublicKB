@@ -54,11 +54,11 @@ This article walks through an installation and customization of ownCloud package
 Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtual server](../Servers/how-to-create-customer-specific-os-templates.md) or [Create a bare metal server for total isolation](../../Servers/creating-a-new-bare-metal-server.md)
 
 ### [Create a MySQL instance on CenturyLink DBaaS](../Database/getting-started-with-MySQL-DBaaS.md)
-	- Note down the user name and the connection string from the setup ![DBaaS](../images/owncloud/dbaas.png)
+1. Note down the user name and the connection string from the setup ![DBaaS](../images/owncloud/dbaas.png)
 
 #### Connect to the server via OpenVPN
-	1. Assume you have OpenVPN client setup for the CenturyLink Cloud account
-	2. if not, please refer to ![How To Configure Client VPN](../network/how-to-configure-client-vpn.md)
+1. Assume you have OpenVPN client setup for the CenturyLink Cloud account
+2. if not, please refer to ![How To Configure Client VPN](../network/how-to-configure-client-vpn.md)
 
 #### Steps to deploy ownCloud to an existing server 
 	1. Download the ownCloud installation from ![ownCloud.org](https://owncloud.org/install/)
@@ -122,10 +122,9 @@ The following gives an example of self signed certificate with an expiration dat
 		
 4. **Configure ownCloud to utilize SMTP Relay**
 	1. Configure SMTP Relay [SMTP Relay](../Mail/smtp-relay-services-simple.md)
-	2. From the owncloud main page, select "Admin" from the user account drop down menu 
-	![drop down menu](../images/owncloud/oc-drop)
+	2. From the owncloud main page, select "Admin" from the user account ![drop down menu](../images/owncloud/oc-drop)
 	3. Select "Mail Server" from the left pane ![Mail Server](../images/owncloud/mail-server.png)
-	4. Configurae the SMTP Relay user based on step one ![mail server config](../images/owncloud/oc-mail-relay-account.png)
+	4. Configurae the SMTP Relay user based on SMTP RElay information from the portal ![mail server config](../images/owncloud/oc-mail-relay-account.png)
 	5. Use the test function to verify the account information
 
 5. **Configure ownCloud to utilize Object storage rather than local storage**
