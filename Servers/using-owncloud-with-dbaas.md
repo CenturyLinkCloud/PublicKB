@@ -46,7 +46,7 @@ This article walks through an installation and customization of ownCloud package
     ```
   - Restart Apache using *sudo  service apache2 restart*
   - Access the server's public IP address using a web browser (with VPN still connected)
-  - ownCloud setup will prompt to add the new IP address as a "trusted domain" <p>![trusted domain](../images/owncloud/oc-trusted-domain.png)<p>
+  - ownCloud setup will prompt to add the new IP address as a "trusted domain" <p>![trusted domain](../images/owncloud/oc-trusted-domain.png)<p><p>![add trusted-domain](../images/owncloud/oc-trusted-domain-2.png)<p>
   - Click on "Add "IP address" as a trusted domain", it will redirect to the private IP address to create the necessary entries to the owncloud configuration file 
   <p>![add trusted-domain](../images/owncloud/oc-trusted-domain-2.png)<p>
 
