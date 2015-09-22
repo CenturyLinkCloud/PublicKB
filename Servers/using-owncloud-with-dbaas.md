@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-![ownCloud logo](https://owncloud.org/wp-content/themes/owncloudorgnew/assets/img/common/logo_owncloud.svg)
+![ownCloud logo](../images/owncloud/ownCloud-logo.png)
 
 ### Technology Profile
 ownCloud is a personal productivity powerhouse. It gives you universal access to all your files, contacts, calendars and bookmarks across all of your devices. Unlike many of the shared repository services out there, with ownCloud, you have your own, private repo. However, just like the public repo companies, with ownCloud you can share your files with friends and co-workers. If you need it, ownCloud even integrates with other storage providers. Best of all, ownCloud is open source and free!
@@ -46,15 +46,15 @@ This article walks through an installation and customization of ownCloud package
     ```
   - Restart Apache using *sudo  service apache2 restart*
   - Access the server's public IP address using a web browser (with VPN still connected)
-  - ownCloud setup will prompt to add the new IP address as a "trusted domain" ![trusted domain](../images/owncloud/oc-trusted-domain.png)
+  - ownCloud setup will prompt to add the new IP address as a "trusted domain" <p>![trusted domain](../images/owncloud/oc-trusted-domain.png)<p>
   - Click on "Add "IP address" as a trusted domain", it will redirect to the private IP address to create the necessary entries to the owncloud configuration file 
-  ![add trusted-domain](../images/owncloud/oc-trusted-domain-2.png)
+  <p>![add trusted-domain](../images/owncloud/oc-trusted-domain-2.png)<p>
 
 ### Deploying ownCloud on a New Server
 Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtual server](../Servers/how-to-create-customer-specific-os-templates.md) or [Create a bare metal server for total isolation](../../Servers/creating-a-new-bare-metal-server.md)
 
 #### [Create a MySQL instance on CenturyLink DBaaS](../Database/getting-started-with-MySQL-DBaaS.md)
-1. Note down the user name and the connection string from the setup ![DBaaS](../images/owncloud/dbaas.png)
+1. Note down the user name and the connection string from the setup <p>![DBaaS](../images/owncloud/dbaas.png)<p>
 2. Download the certificate to configure secure connectivity to DBaaS
 
 #### Connect to the server via OpenVPN
@@ -62,7 +62,7 @@ Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtua
 2. if not, please refer to ![How To Configure Client VPN](../network/how-to-configure-client-vpn.md)
 
 #### Steps to deploy ownCloud to an existing server 
-1. Download the ownCloud installation from ![ownCloud.org](https://owncloud.org/install/)
+1. Download the ownCloud installation from <p>![ownCloud.org](https://owncloud.org/install/)<p>
 2. Look for the package for the installed OS, this example will use Ubuntu 14.x 
 3. ownCloud supports CentOS, Debian, RHEL, Ubuntu and [more](https://software.opensuse.org/download/package?project=isv:ownCloud:community&package=owncloud)
 4. For Ubuntu 14.x, downdload the ownCloud package and add the repository key to apt (this key will updates periodically).
@@ -109,8 +109,8 @@ The following gives an example of self signed certificate with an expiration dat
 	<p>![configuration](../images/owncloud/owncloud-setup-first.png)<p>
 	4. Click on Storage and Database, select MySQL
 	5. Using the information from DBaaS to complete the information, the format for the host is IP_Address:port (e.g. 192.168.1.1:45678)
-	![ownCloud database input](../images/owncloud/owncloud-setup-2nd.png)
-	6. Click "Finish Setup", the welcome page will display ![ownCloud Welcome](../images/owncloud/owncloud-welcome.png)
+	<p>![ownCloud database input](../images/owncloud/owncloud-setup-2nd.png)<p>
+	6. Click "Finish Setup", the welcome page will display <p>![ownCloud Welcome](../images/owncloud/owncloud-welcome.png)<p>
 	7. Download the certificate from Database as a Service to the ownCloud server to enable secure communication between the database and the ownCloud server.
 		- Add the following to section to the config.php file (defualt location: /var/www/owncloud/config/)
 		```
@@ -124,12 +124,12 @@ The following gives an example of self signed certificate with an expiration dat
 4. **Configure ownCloud to utilize SMTP Relay**
 	1. Configure SMTP Relay [SMTP Relay](../Mail/smtp-relay-services-simple.md)
 	2. From the owncloud main page, select "Admin" from the user account ![drop down menu](../images/owncloud/oc-drop)
-	3. Select "Mail Server" from the left pane     ![Mail Server](../images/owncloud/mail-server.png)
-	4. Configurae the SMTP Relay user based on SMTP RElay information from the portal ![mail server config](../images/owncloud/oc-mail-relay-account.png)
+	3. Select "Mail Server" from the left pane     <p>![Mail Server](../images/owncloud/mail-server.png)<p>
+	4. Configurae the SMTP Relay user based on SMTP RElay information from the portal <p>![mail server config](../images/owncloud/oc-mail-relay-account.png)<p>
 	5. Use the test function to verify the account information
 
 5. **Configure ownCloud to utilize Object storage rather than local storage**
-	1. Depending on the version of ownCloud, the options of utilizing Object Storage are different, please see ![here](https://owncloud.com/owncloud-server-or-enterprise-edition/)
+	1. Depending on the version of ownCloud, the options of utilizing Object Storage are different, please see [here](https://owncloud.com/owncloud-server-or-enterprise-edition/)
 	2. ownCloud Server supports Local storage, GlusterFS/Red Hat Storage, OpenStack Swift as primary storage; Enterprise Edition supports additional primary storage with Amazon S3, Ceph S3
 	3. In order to utilize Object Storage for primary storage, edit config.php (default location: /var/www/owncloud/config/) with the Object Storage creditial, like the example below:
 	
