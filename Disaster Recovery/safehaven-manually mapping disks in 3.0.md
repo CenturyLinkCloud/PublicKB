@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-#### OVERVIEW
+### Overview
 
 In SafeHaven 3.0, you may find yourself having to manually map or resync disks. The procedure for doing as such is recommended below:
 
@@ -36,5 +36,5 @@ In SafeHaven 3.0, you may find yourself having to manually map or resync disks. 
 
   Delete Pair X (first two keys after default are disk numbers)
 
-  ### WARNING
+  ### Warning
   IMPROPERLY MAPPING DISKS HAVE THE POTENTIAL TO OVERWRITE PRODUCTION DISKS WITH THE CONTENTS OF OTHER DISKS. ENSURE THAT YOUR DISK MAPPING HAS BEEN VALIDATED IN DISK MANAGER (diskmgmt.msdc) OR THAT THIS ACTION IS BEING SUPERVISED BY SAFEHAVEN ENGINEERING OR ONBOARDING ENGINEERING.
