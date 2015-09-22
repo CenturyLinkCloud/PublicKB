@@ -47,12 +47,13 @@ This article walks through an installation and customization of ownCloud package
   - Restart Apache using *sudo  service apache2 restart*
   - Access the server's public IP address using a web browser (with VPN still connected)
   - ownCloud setup will prompt to add the new IP address as a "trusted domain" ![trusted domain](../images/owncloud/oc-trusted-domain.png)
-  - Click on "Add "IP address" as a trusted domain", it will redirect to the private IP address to create the necessary entries to the owncloud configuration file [add trusted-domain](../images/owncloud/oc-trusted-domain-2.png)
+  - Click on "Add "IP address" as a trusted domain", it will redirect to the private IP address to create the necessary entries to the owncloud configuration file 
+  [add trusted-domain](../images/owncloud/oc-trusted-domain-2.png)
 
 ### Deploying ownCloud on a New Server
-Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtual server](../Servers/how-to-create-customer-specific-os-templates.md) or [Create a bare metal server to total isolation](../../Servers/creating-a-new-bare-metal-server.md)
+Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtual server](../Servers/how-to-create-customer-specific-os-templates.md) or [Create a bare metal server for total isolation](../../Servers/creating-a-new-bare-metal-server.md)
 
-### Create a MySQL instance on CenturyLink DBaaS, [Getting started with MySQL DBaaS](../Database/getting-started-with-MySQL-DBaaS.md)
+### [Create a MySQL instance on CenturyLink DBaaS](../Database/getting-started-with-MySQL-DBaaS.md)
 	- Note down the user name and the connection string from the setup ![DBaaS](../images/owncloud/dbaas.png)
 
 #### Connect to the server via OpenVPN
