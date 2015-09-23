@@ -8,10 +8,6 @@
 
 
 
-### Overview
-
-After reading this article, the reader should feel comfortable deploying the Pivotal Cloud Foundry (PCF) 1.5.5 on CenturyLink Cloud.
-
 ### Technology Profile
 
 <img src="../../images/sureedge/sureline_logo.png" style="border:0;float:right;max-width: 150px;">
