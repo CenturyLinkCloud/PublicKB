@@ -14,7 +14,7 @@ All you need to run Tiny Tiny RSS is a web browser. It's that tiny. Tiny Tiny RS
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami Tiny Tiny RSS Stack provides a click-through solution to install and configure Tiny Tiny RSS on the Linux platform.
+Through the CenturyLink Blueprint integration, Tiny Tiny RSS provides a click-through solution to install and configure Tiny Tiny RSS on the Linux platform.
 
 For more information, please visit http://tt-rss.org/
 
@@ -23,7 +23,7 @@ For more information, please visit http://tt-rss.org/
 CenturyLink Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the Bitnami Blueprint technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the Blueprint technology on CenturyLink Cloud.
 
 
 ### Prerequisite
@@ -42,7 +42,7 @@ After reading this article, the user should feel comfortable getting started usi
 Tiny Tiny RSS is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
-1. **Locate the Bitnami Tiny Tiny RSS Stack Blueprint**
+1. **Locate the Bitnami Tiny Tiny RSS Blueprint**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
   2. Search for “Tiny Tiny RSS” in the keyword search on the right side of the page.
   3. Locate the 'Install Bitnami Tiny Tiny RSS on Linux' Blueprint
@@ -86,7 +86,7 @@ Complete the information below:
 
 ### Deploy Tiny Tiny RSS to an existing server (alternate option)
 
-Bitnami Tiny Tiny RSS Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
+Bitnami Tiny Tiny RSS is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
 #### Steps
 

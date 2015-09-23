@@ -14,7 +14,7 @@ Ready to take your personal productivity to the next level? If you're like a lot
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami Tracks Stack provides a click-through solution to install and configure Tracks on the Linux platform.
+Through the CenturyLink Blueprint integration, Tracks provides a click-through solution to install and configure Tracks on the Linux platform.
 
 For more information, please visit http://getontracks.org/
 
@@ -23,7 +23,7 @@ For more information, please visit http://getontracks.org/
 CenturyLink Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the Bitnami Blueprint technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the Blueprint technology on CenturyLink Cloud.
 
 
 ### Prerequisite
@@ -42,7 +42,7 @@ After reading this article, the user should feel comfortable getting started usi
 Tracks is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
-1. **Locate the Bitnami Tracks Stack Blueprint**
+1. **Locate the Bitnami Tracks Blueprint**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
   2. Search for “Tracks” in the keyword search on the right side of the page.
   3. Locate the 'Install Bitnami Tracks on Linux' Blueprint
@@ -78,7 +78,7 @@ Complete the information below:
 
 ### Deploy Tracks to an existing server (alternate option)
 
-Bitnami Tracks Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
+Bitnami Tracks is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
 #### Steps
 

@@ -14,7 +14,7 @@ The XOOPS CMS project has been around and pumping out great websites since 2003.
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami XOOPS Stack provides a click-through solution to install and configure XOOPS on the Linux platform.
+Through the CenturyLink Blueprint integration, XOOPS provides a click-through solution to install and configure XOOPS on the Linux platform.
 
 For more information, please visit http://xoops.org/
 
@@ -23,7 +23,7 @@ For more information, please visit http://xoops.org/
 CenturyLink Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the Bitnami Blueprint technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the Blueprint technology on CenturyLink Cloud.
 
 
 ### Prerequisite
@@ -42,7 +42,7 @@ After reading this article, the user should feel comfortable getting started usi
 XOOPS is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
-1. **Locate the Bitnami XOOPS Stack Blueprint**
+1. **Locate the Bitnami XOOPS Blueprint**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
   2. Search for “XOOPS” in the keyword search on the right side of the page.
   3. Locate the 'Install Bitnami XOOPS on Linux' Blueprint
@@ -86,7 +86,7 @@ Complete the information below:
 
 ### Deploy XOOPS to an existing server (alternate option)
 
-Bitnami XOOPS Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
+Bitnami XOOPS is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
 #### Steps
 

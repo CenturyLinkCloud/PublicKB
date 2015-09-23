@@ -14,7 +14,7 @@ People love social media on the one hand, but on the other, it's hard to keep up
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami ThinkUp Stack provides a click-through solution to install and configure ThinkUp on the Linux platform.
+Through the CenturyLink Blueprint integration, ThinkUp provides a click-through solution to install and configure ThinkUp on the Linux platform.
 
 For more information, please visit https://www.thinkup.com
 
@@ -23,7 +23,7 @@ For more information, please visit https://www.thinkup.com
 CenturyLink Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the Bitnami Blueprint technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the Blueprint technology on CenturyLink Cloud.
 
 
 ### Prerequisite
@@ -42,7 +42,7 @@ After reading this article, the user should feel comfortable getting started usi
 ThinkUp is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
-1. **Locate the Bitnami ThinkUp Stack Blueprint**
+1. **Locate the Bitnami ThinkUp Blueprint**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
   2. Search for “ThinkUp” in the keyword search on the right side of the page.
   3. Locate the 'Install Bitnami ThinkUp on Linux' Blueprint
@@ -87,7 +87,7 @@ Complete the information below:
 
 ### Deploy ThinkUp to an existing server (alternate option)
 
-Bitnami ThinkUp Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
+Bitnami ThinkUp is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
 #### Steps
 

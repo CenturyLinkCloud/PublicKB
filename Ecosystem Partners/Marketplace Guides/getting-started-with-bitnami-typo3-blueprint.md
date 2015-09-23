@@ -14,7 +14,7 @@ One of the granddaddies of CMS, TYPO 3, originally released in 1997, is a battle
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami TYPO3 Stack provides a click-through solution to install and configure TYPO3 on the Linux platform.
+Through the CenturyLink Blueprint integration, TYPO3 provides a click-through solution to install and configure TYPO3 on the Linux platform.
 
 For more information, please visit http://www.typo3.org
 
@@ -23,7 +23,7 @@ For more information, please visit http://www.typo3.org
 CenturyLink Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the Bitnami Blueprint technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the Blueprint technology on CenturyLink Cloud.
 
 
 ### Prerequisite
@@ -42,7 +42,7 @@ After reading this article, the user should feel comfortable getting started usi
 TYPO3 is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
-1. **Locate the Bitnami TYPO3 Stack Blueprint**
+1. **Locate the Bitnami TYPO3 Blueprint**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
   2. Search for “TYPO3” in the keyword search on the right side of the page.
   3. Locate the 'Install Bitnami TYPO3 on Linux' Blueprint
@@ -86,7 +86,7 @@ Complete the information below:
 
 ### Deploy TYPO3 to an existing server (alternate option)
 
-Bitnami TYPO3 Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
+Bitnami TYPO3 is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
 #### Steps
 

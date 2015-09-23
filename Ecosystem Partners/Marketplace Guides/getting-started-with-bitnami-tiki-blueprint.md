@@ -10,11 +10,11 @@
 
 ### Technology Profile
 
-Sure, Tiki Wiki is a wiki, but Tiki Wiki CMS groupware Stack is much more. The stack includes tools for creating robust knowledge bases, collaboration and project management, website and blog publishing, CRM helpdesk, e-learning and more. Tiki can be used to create many different kinds of web apps, sites, portals, intranets, or extranets. With so much power, we look forward to hearing what your team builds with the free Tiki Wiki package from Bitnami.
+Sure, Tiki Wiki is a wiki, but Tiki Wiki CMS groupware is much more. The stack includes tools for creating robust knowledge bases, collaboration and project management, website and blog publishing, CRM helpdesk, e-learning and more. Tiki can be used to create many different kinds of web apps, sites, portals, intranets, or extranets. With so much power, we look forward to hearing what your team builds with the free Tiki Wiki package from Bitnami.
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami Tiki Wiki CMS Groupware Stack provides a click-through solution to install and configure Tiki Wiki CMS Groupware on the Linux platform.
+Through the CenturyLink Blueprint integration, Tiki Wiki CMS Groupware provides a click-through solution to install and configure Tiki Wiki CMS Groupware on the Linux platform.
 
 For more information, please visit http://info.tiki.org
 
@@ -23,7 +23,7 @@ For more information, please visit http://info.tiki.org
 CenturyLink Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the Bitnami Blueprint technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the Blueprint technology on CenturyLink Cloud.
 
 
 ### Prerequisite
@@ -42,7 +42,7 @@ After reading this article, the user should feel comfortable getting started usi
 Tiki Wiki CMS Groupware is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
-1. **Locate the Bitnami Tiki Wiki CMS Groupware Stack Blueprint**
+1. **Locate the Bitnami Tiki Wiki CMS Groupware Blueprint**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
   2. Search for “Tiki Wiki CMS Groupware” in the keyword search on the right side of the page.
   3. Locate the 'Install Bitnami Tiki Wiki CMS Groupware on Linux' Blueprint
@@ -86,7 +86,7 @@ Complete the information below:
 
 ### Deploy Tiki Wiki CMS Groupware to an existing server (alternate option)
 
-Bitnami Tiki Wiki CMS Groupware Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
+Bitnami Tiki Wiki CMS Groupware is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
 #### Steps
 

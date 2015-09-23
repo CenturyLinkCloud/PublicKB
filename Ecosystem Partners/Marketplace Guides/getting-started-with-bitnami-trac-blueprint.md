@@ -14,7 +14,7 @@ It's time to stop using spreadsheets to manage the open requests and bugs in you
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami Trac Stack provides a click-through solution to install and configure Trac on the Linux platform.
+Through the CenturyLink Blueprint integration, Trac provides a click-through solution to install and configure Trac on the Linux platform.
 
 For more information, please visit http://trac.edgewall.org/
 
@@ -23,7 +23,7 @@ For more information, please visit http://trac.edgewall.org/
 CenturyLink Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the Bitnami Blueprint technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the Blueprint technology on CenturyLink Cloud.
 
 
 ### Prerequisite
@@ -42,7 +42,7 @@ After reading this article, the user should feel comfortable getting started usi
 Trac is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
-1. **Locate the Bitnami Trac Stack Blueprint**
+1. **Locate the Bitnami Trac Blueprint**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
   2. Search for “Trac” in the keyword search on the right side of the page.
   3. Locate the 'Install Bitnami Trac on Linux' Blueprint
@@ -76,7 +76,7 @@ Complete the information below:
 
 ### Deploy Trac to an existing server (alternate option)
 
-Bitnami Trac Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
+Bitnami Trac is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
 #### Steps
 

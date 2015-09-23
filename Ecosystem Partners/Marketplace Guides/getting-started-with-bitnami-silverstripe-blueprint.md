@@ -14,7 +14,7 @@
 
 ### Description
 
-Through the CenturyLink Blueprint integration, Bitnami SilverStripe Stack provides a click-through solution to install and configure SilverStripe on the Linux platform.
+Through the CenturyLink Blueprint integration, SilverStripe provides a click-through solution to install and configure SilverStripe on the Linux platform.
 
 For more information, please visit http://www.silverstripe.org
 
@@ -23,7 +23,7 @@ For more information, please visit http://www.silverstripe.org
 CenturyLink Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the Bitnami Blueprint technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the Blueprint technology on CenturyLink Cloud.
 
 
 ### Prerequisite
@@ -42,7 +42,7 @@ After reading this article, the user should feel comfortable getting started usi
 SilverStripe is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
-1. **Locate the Bitnami SilverStripe Stack Blueprint**
+1. **Locate the Bitnami SilverStripe Blueprint**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
   2. Search for “SilverStripe” in the keyword search on the right side of the page.
   3. Locate the 'Install Bitnami SilverStripe on Linux' Blueprint
@@ -79,7 +79,7 @@ Complete the information below:
 
 ### Deploy SilverStripe to an existing server (alternate option)
 
-Bitnami SilverStripe Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
+Bitnami SilverStripe is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
 #### Steps
 
