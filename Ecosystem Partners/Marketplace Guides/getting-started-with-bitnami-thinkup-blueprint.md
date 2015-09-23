@@ -33,9 +33,9 @@ After reading this article, the user should feel comfortable getting started usi
 
 - If you want to access your application over the internet, please perform the following tasks after you receive an email notifying you that the Blueprint completed successfully:
 
-1. If you need to connect to your server via the Internet, [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
+1. If you need to connect to your server via the Internet, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
 
-2. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
+2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
   * The default ports to access the application are: 80, 443
 
 ### Deploying ThinkUp on a New Server
@@ -50,7 +50,8 @@ ThinkUp is available as a Blueprint for deployment on a new server.
 2. **Choose and Deploy the Blueprint. Click the “Install Bitnami ThinkUp on Linux” Blueprint.**
 
 3. **Configure the Blueprint** 
-Complete the information below:
+
+ Complete the information below:
 
   1. Execute on Server: Select a Linux x64 server to deploy the Blueprint on.
   2. Password
@@ -92,11 +93,11 @@ Bitnami ThinkUp is available as a Script Package for deployment on an existing s
 #### Steps
 
 1. **Deploy or Identify an Existing Server**
-Identify the server targeted for ThinkUp installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
+Identify the server targeted for ThinkUp installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. **Select to Execute the Package on a Server Group**
   1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Bitnami ThinkUp on Linux**.
-  2. See the [using group tasks to install scripts on groups](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
+  2. See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. **Configure the Parameters**
 Set the following application parameters:
