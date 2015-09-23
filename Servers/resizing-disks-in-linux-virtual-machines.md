@@ -11,9 +11,7 @@ Server resource requirements change frequently as environments scale. Storage is
 ### Steps
 
 
-1. To modify storage allocations:
-
-Navigate to the server in the Control Portal, then click on it.
+To modify storage allocations, navigate to the server in the Control Portal, then click on it.
 
   ![Resizing disks in Linux Virtual Machines](../images/resizing-disks-in-linux-virtual-machines1.png)
 
@@ -31,6 +29,6 @@ The resize disk request will be submitted to the queue.
 
   ![Resizing disks in Linux Virtual Machines](../images/resizing-disks-in-linux-virtual-machines5.png)
 
- Once complete, you can test using the following commands:
+Once complete, you can test using the following commands:
 
   ![Resizing disks in Linux Virtual Machines](../images/resizing-disks-in-linux-virtual-machines6.png)
