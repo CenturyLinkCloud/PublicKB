@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with SimpleInvoices - Blueprint",
-  "date": "08-09-2015",
+  "date": "10-01-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false

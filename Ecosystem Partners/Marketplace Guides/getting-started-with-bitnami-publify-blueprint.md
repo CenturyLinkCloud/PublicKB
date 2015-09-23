@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Publify - Blueprint",
-  "date": "21-09-2015",
+  "date": "10-01-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
