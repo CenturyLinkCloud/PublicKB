@@ -6,14 +6,14 @@
 }}}
 
 ### Description
-Server resource requirements change frequently as environments scale, with storage being one of the most often re-sized aspects of the environment. The CenturyLink Cloud control portal provides a self-service function to accommodate increased storage demands without the need for a reboot. Non-boot and swap disks on a Linux VM will automatically be expanded and have their file systems expanded to reflect expanded storage.
+Server resource requirements change frequently as environments scale. Storage is one of the most dynamic elements, and is often resized as environments grow and change. The CenturyLink Cloud Control Portal provides a self-service function to accommodate increased storage demands _without_ the need for a reboot. Non-boot and swap disks on a Linux VM will automatically be expanded upon request. Further, their file systems grow to reflect expanded storage.
 
 ### Steps
 
 
 1. To modify storage allocations:
 
-Navigate to the server in Control, then click on it.
+Navigate to the server in the Control Portal, then click on it.
 
   ![Resizing disks in Linux Virtual Machines](../images/resizing-disks-in-linux-virtual-machines1.png)
 
