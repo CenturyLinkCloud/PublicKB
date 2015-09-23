@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started with ResourceSpace - Blueprint",
   "date": "21-09-2015",
-  "author": "Bitnami",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}

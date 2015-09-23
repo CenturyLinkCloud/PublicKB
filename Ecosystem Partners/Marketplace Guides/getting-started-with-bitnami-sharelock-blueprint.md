@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started with Sharelock - Blueprint",
   "date": "10-09-2015",
-  "author": "Bitnami",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}

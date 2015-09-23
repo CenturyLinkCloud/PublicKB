@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started with Tiki Wiki CMS Groupware - Blueprint",
   "date": "08-09-2015",
-  "author": "Bitnami",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
