@@ -17,4 +17,4 @@ This document is for users of AppFog v1. This document does not apply to the cur
 <p>Resources are uploaded, managed, and transformed using Cloudinary's easy-to-use APIs. Image upload, processing, and delivery are done on Cloudinary's servers and automatically scale for handling high load and bursts of traffic.</p>
 <h3>Install Cloudinary</h3>
 <p>In the "Add-ons" tab in your app console click "Install" for the Cloudinary add-on. That’s it!</p>
-<h3>Check out <a href="http://cloudinary.com/documentation/appfog_integration">Cloudinary's Documentation</a> to get started using Cloudinary with your AppFog app.</h3>
+<p>Check out <a href="http://cloudinary.com/documentation/appfog_integration">Cloudinary's Documentation</a> to get started using Cloudinary with your AppFog app.</p>

@@ -176,3 +176,6 @@ Existing CenturyLink Enterprise Customers can contact their Account Representati
 #### Who should I contact for support?
 * For issues related to accessing the SoftNAS partner template, setup of devices, volumes, pools or high availability, or for any licensing concerns, please visit the SoftNAS Support Website: [http://www.SoftNAS.com/support](http://www.SoftNAS.com/support)
 * For issues related to the initial deployment of the SoftNAS virtual appliance, cloud infrastructure (VMs, network, storage, etc), please open a ticket using the CenturyLink Cloud Support Process.
+
+#### What components are included in the SoftNAS licensing or entitlements?
+Customers are provided access to the SoftNAS virtual Appliance and support service for the software.  Clients are still responsible for CenturyLink Cloud infrastructure services (compute, memory, storage, support etc) on top of the SoftNAS Licensing and support services.  These are not bundled with SoftNAS services or products.  

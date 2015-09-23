@@ -3,24 +3,22 @@
   "date": "11-12-2014",
   "author": "Jared Ruckle",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
-<p>The following Service personnel tasks and activities are included in the TSE’s tasks and activities, limited by the hours per month included in the package purchased by the customer. Services extend across all products and services in the CenturyLink
-  portfolio, not just CenturyLink Cloud.</p>
-<p><strong>Technical Leadership</strong>
-</p>
-<ul>
-  <li>Technical Engineer at CenturyLink</li>
-  <li>Understand Customer’s technical environment and can implement changes</li>
-  <li>Representation at technical forums</li>
-  <li>Proactive recommendations for service optimization and enhancement</li>
-</ul>
-<p><strong>Configuration Management</strong>
-</p>
-<ul>
-  <li>Review Firewall policy changes for technical impact</li>
-  <li>Review Customer Infrastructure at technical workshops</li>
-  <li>Implement monitoring changes as recommended / required</li>
-  <li>Author Customer configuration documentation</li>
-</ul>
+
+The following Service personnel tasks and activities are included in the TSE’s tasks and activities, limited by the hours per month included in the package purchased by the customer. Services extend across all products and services in the CenturyLink portfolio, not just CenturyLink Cloud.
+
+### Technical Leadership
+
+* Technical Engineer at CenturyLink
+* Understand Customer’s technical environment and can implement changes
+* Representation at technical forums
+* Proactive recommendations for service optimization and enhancement
+
+### Configuration Management
+
+* Review Firewall policy changes for technical impact
+* Review Customer Infrastructure at technical workshops
+* Implement monitoring changes as recommended / required
+* Author Customer configuration documentation
