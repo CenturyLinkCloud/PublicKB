@@ -17,7 +17,7 @@ CenturyLink Cloud WordPress as a Service runs in the CenturyLink Cloud utilizing
 * Server Specs
 
   * Disk Space - 1GB
-  * RAM - 128MB
+  * RAM - 192MB
 
 * Software Specs
   * Nginx
