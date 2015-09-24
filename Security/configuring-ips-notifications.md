@@ -1,5 +1,5 @@
 {{{
-  "title": "Configuring Intrustion Prevention System (IPS) Notifications",
+  "title": "Configuring Intrusion Prevention System (IPS) Notifications",
   "date": "08-11-2015",
   "author": "Stephanie Wong",
   "attachments": [],
@@ -17,7 +17,7 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 ### Prerequisites
 
 * A CenturyLink Cloud Account
-* Managed or Unmanaged Operating System Services on the Virtual Machine, with the IPS Agent installed
+* Virtual Machine with CenturyLink Intrusion Prevention Agent installed
 * Slack channel & WebHook URL (See Utilizing SLACK for IPS Event Notifications)
 
 ### Supported Managed Operating Systems

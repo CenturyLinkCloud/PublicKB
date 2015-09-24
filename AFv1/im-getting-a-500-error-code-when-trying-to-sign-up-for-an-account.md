@@ -20,6 +20,6 @@ This document is for users of AppFog v1. This document does not apply to the cur
 <p>If you'd like, we can free up your email address so that you may sign up for a new plan. We provide free 30-day trials for our customers that sign up for most of our plans. If you have any questions, feel free email to our <a href="mailto:support@appfog.com">support team</a>.</p>
 </li>
 <li>
-<p>If you have cancelled your account recently, especially after the maintenance in early May removing inactive free accounts, your account has likely been deleted. All you need to do in this case is <a>submit a ticket</a> or send an email to <a href="mailto:support@appfog.com">our support team</a> to free up that email address so you may sign up for an account.</p>
+<p>If you have cancelled your account recently, especially after the maintenance in early May removing inactive free accounts, your account has likely been deleted. All you need to do in this case is <a href="https://support.appfog.com">submit a ticket</a> or send an email to <a href="mailto:support@appfog.com">our support team</a> to free up that email address so you may sign up for an account.</p>
 </li>
 </ol>

@@ -12,7 +12,7 @@
 DreamFactory is an open source REST API platform for mobile enterprise application developers. DreamFactory enables developers to quickly connect any SQL or NoSQL database or File Storage system to any tablet, phone, or other device with a comprehensive palette of RESTful services. Additional capabilities include user management, roles and permissions, record-level access control, server-side scripting, filter string queries, and application hosting. DreamFactory generates Client SDKs for all major development environments, including jQuery, AngularJS, Sencha, iOS, Android, and Windows Phone.
 
 ### Description
-Through the CenturyLink Blueprint integration, the DreamFactory Stack provides a click-through solution to install and configure DreamFactory on the Linux platform.
+Through the CenturyLink Blueprint integration, the DreamFactory provides a click-through solution to install and configure DreamFactory on the Linux platform.
 
 For more information, please visit [https://www.dreamfactory.com/](https://www.dreamfactory.com/)
 

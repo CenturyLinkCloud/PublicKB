@@ -67,7 +67,7 @@ Note that an account alias cannot be reused, even after deletion of the original
 <p>Menus are hidden to the sub account</p>
 <p>You can click any of these settings and toggle them between disabled (not visible) and enabled (visible and therefore editable)</p>
 
-###Adding Users/Permissions
+### Adding Users/Permissions
 1. To add new users to the subaccount
 2. In the dropdown in the top left, select the subaccount for which you would like to add a user.
 3. Go to account &gt; users and click “+ Create New User”.

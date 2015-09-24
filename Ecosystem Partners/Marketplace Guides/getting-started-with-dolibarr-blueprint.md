@@ -12,7 +12,7 @@
 Dolibarr is an open source ERP and CRM that contains dozens of modules to support all aspects of your business. When you launch Dolibarr, you can configure it with as many or as few modules as required to support everything from supply chain and project management to accounting and human resources management.
 
 ### Description
-Through the CenturyLink Blueprint integration, the Dolibarr Stack provides a click-through solution to install and configure Dolibarr on the Linux platform.
+Through the CenturyLink Blueprint integration, the Dolibarr provides a click-through solution to install and configure Dolibarr on the Linux platform.
 
 For more information, please visit [http://www.dolibarr.org](http://www.dolibarr.org)
 

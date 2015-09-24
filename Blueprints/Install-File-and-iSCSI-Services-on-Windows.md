@@ -15,7 +15,7 @@ By leveraging [CenturyLink Cloud Public Blueprints](../Blueprints/centurylink-cl
 * A CenturyLink Cloud Account
 * Supported Windows Operating Systems
     * Windows 2012 Datacenter 64-bit
-    * Windows 2012 R2 Data Center 64-bit
+    * Windows 2012 R2 Datacenter 64-bit
 
 ### Notes
 
@@ -35,7 +35,7 @@ By leveraging [CenturyLink Cloud Public Blueprints](../Blueprints/centurylink-cl
 
     ![Search for file](../images/Install-File-and-iSCSI-Services-on-Windows-03.png)
 
-4. Determine if you'd like iSCSI strorage services included with the File Server roles and the VM(s) in the Group you wish to have these features installed upon. Customers can choose an individual VM or multiple. (Quick Tip: Only supported Guest Operating Systems will be shown)
+4. Determine if you'd like iSCSI storage services included with the File Server roles and the VM(s) in the Group you wish to have these features installed upon. Customers can choose an individual VM or multiple. (Quick Tip: Only supported Guest Operating Systems will be shown)
 
     ![Select Features and Servers](../images/Install-File-and-iSCSI-Services-on-Windows-04.png)
 

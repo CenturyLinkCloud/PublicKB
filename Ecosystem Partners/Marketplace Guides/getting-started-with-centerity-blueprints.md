@@ -7,14 +7,14 @@
 }}}
 
 ![logo](https://t3n.zendesk.com/attachments/token/zUgWkY54GBtDgX74pYHZjfeUt/?name=Centrity-logo.jpg)
-###Partner Profile
+### Partner Profile
 
 Centerity - “Centerity Monitor is a Next-Gen, End-to-End IT Monitoring Platform for an organization’s entire IT monitoring needs.  Centerity Monitor provides business value and real-time analytics regarding the status, performance and availability of all IT assets whether in the cloud or on prem in complex, hybrid environments.  Centerity’s unique, unified platform, named a Gartner Cool Vendor in 2014, can serve the needs of both IT executives and administrators while providing a complete business intelligence layer across all IT assets via cross technical and functional domain impact and trend analysis"
 
 http://www.Centerity.com
 
 #### Contact Centerity
-#####Centerity Sales:
+##### Centerity Sales:
 info-us@centerity.com
 
 +1-339-225-7006

@@ -8,7 +8,7 @@
 
 ![logo](../../images/Ecosystem-Cavirin-ARAP_logo_full-color_200px.png)
 
-###Partner Profile
+### Partner Profile
 Cavirin - Delivering Continuous Audit and Operational Compliance to the Cloud
 
 For additional information about the company please visit [http://www.cavirin.com](http://www.cavirin.com)

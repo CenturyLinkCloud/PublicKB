@@ -18,7 +18,7 @@ CenturyLink Cloud customers can procure and deploy Microsoft SQL Server licensin
     * Windows 2008 R2 Enterprise 64-bit
     * Windows 2008 R2 Datacenter 64-bit
     * Windows 2012 Datacenter 64-bit
-    * Windows 2012 R2 Data Center 64-bit
+    * Windows 2012 R2 Datacenter 64-bit
 * ~15 GB Free Storage on C:\
 * The Supported SQL Server Editions via blueprint are as follows:
     * SQL Server 2008 R2 Web Edition
