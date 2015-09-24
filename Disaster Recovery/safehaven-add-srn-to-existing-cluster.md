@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-##### PREFACE:
+### Overview:
 This document will walk you through manually adding additional SRN appliances to a pre-existing cluster, and then pairing the SRNs with their DR replication partners within the Recovery Data Center. Note that SRNs can replicate to multiple other SRNs in different groups, vlans or data centers using the procedure below. This document covers the procedure for 3.0 and 3.1.
 
 ##### ADD NEW SRN’s TO A PRE-EXISTING CLUSTER IN 3.0
