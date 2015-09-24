@@ -94,7 +94,7 @@ CenturyLink Cloud Users
    ```
  * [Login to your existing Appcito account](http://cafe18stage.appcito.com/) or [sign up for a new one](http://cafe18stage.appcito.com/#signup)
  * Click on `My Account` then click on `Activate PEP`
-   ![Activate Pep]("../../images/appcito/activate_pep.png")
+   ![Activate Pep](../../images/appcito/activate_pep.png)
 
 
 ### Pricing
