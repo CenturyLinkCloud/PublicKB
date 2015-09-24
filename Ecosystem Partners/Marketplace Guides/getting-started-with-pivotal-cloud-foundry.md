@@ -241,3 +241,14 @@ Should this split DNS be required implement the following:
 * Accounts requiring two-factor authentication cannoit successfully deploy PCF.  Create a new service account dedidicated to PCF.
 * PCF deployments can only be made to the account's primary datacenter.
 
+**How can I get new stemcells?**
+
+Your install will be preloaded with the most current stemcells.  If you need some older stemcells that aren't preloaded or if you need something that's been released since your initial install you can download the stemcells from the links below.  Note these are slightly modified from what's available at network.pivotal.io.
+
+* [2989](http://ca.tier3.io/ateam-packages/stemcells/bosh-stemcell-2989-clc-ubuntu-trusty-go_agent.tgz)
+* [3012](http://ca.tier3.io/ateam-packages/stemcells/bosh-stemcell-3012-clc-ubuntu-trusty-go_agent.tgz)
+* [3026](http://ca.tier3.io/ateam-packages/stemcells/bosh-stemcell-3026-clc-ubuntu-trusty-go_agent.tgz)
+* [3062](http://ca.tier3.io/ateam-packages/stemcells/bosh-openstack-clc-ubuntu-trusty-go_agent_3062.tgz)
+
+
+
