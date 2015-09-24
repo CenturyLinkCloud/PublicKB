@@ -1,7 +1,7 @@
 {{{
   "title": "Removing Intrusion Prevention System (IPS)",
-  "date": "09-08-2015",
-  "author": "Sean Robb",
+  "date": "09-24-2015",
+  "author": "Stephanie Wong",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": false
