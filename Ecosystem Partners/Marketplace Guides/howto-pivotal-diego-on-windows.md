@@ -1,6 +1,6 @@
 {{{
   "title": "How to Install Pivotal CF Diego Beta for Windows - Blueprint",
-  "date": "9-2-2015",
+  "date": "9-25-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -47,7 +47,7 @@ CenturyLink Cloud Users who have already [deployed Pivotal Cloud Foundry](gettin
 
 1. **Login to your existing Operations Manager Instance**
 
-  Capture the information requested in the Deploying Diego Beta for Windows](http://docs.pivotal.io/pivotalcf/opsguide/deploying-diego.html) guide -
+  Capture the information requested in the [Deploying Diego Beta for Windows](http://docs.pivotal.io/pivotalcf/opsguide/deploying-diego.html) guide -
   The Blueprint executed in step (n) will need this data for successful deployment.
 
   * CONSUL_IPS
@@ -60,7 +60,7 @@ CenturyLink Cloud Users who have already [deployed Pivotal Cloud Foundry](gettin
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "Pivotal Cloud Foundry" in the keyword search on the right side of the page.
 
-  <img src="../../images/pivotal_greenplum/node_blueprint_tiles.png" style="border:0;">
+  <img src="../../images/pivotal_pcf/diego_blueprint_tiles.png" style="border:0;">
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “Pivotal Greenplum” in the keyword search on the right side of the page.
 
@@ -68,11 +68,10 @@ CenturyLink Cloud Users who have already [deployed Pivotal Cloud Foundry](gettin
 
 4. **Set Required parameters.**
 
-  <img src="../../images/pivotal_greenplum/deploy_add_node_parameters.png" style="border:0;">
+  <img src="../../images/pivotal_pcf/diego_cluster_parameters.png" style="border:0;">
 
-  * **EULA** - Click to accept the software end user license agreement
-  * **Cluster ID ** - set unique identifier already used for this Greenplum cluster.  This is used to help other hosts find and join into the cluster
-  * **Email Address** - Email address to receive build notification and Greenplum access information
+  * **Server Password** - Repeat the same password used for the server itself
+  * All other parameters - reference [Deploying Diego Beta for Windows](http://docs.pivotal.io/pivotalcf/opsguide/deploying-diego.html) guide for how to obtain values for the other parameters
 
 5. **Set Optional Parameters**
 
@@ -94,30 +93,8 @@ CenturyLink Cloud Users who have already [deployed Pivotal Cloud Foundry](gettin
 
 8. **Deployment Complete**
 
-  Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.  If you do not receive an email like the one shown below your cluster may have had a deployment error - review the *Blueprint Build Log* to look for error messages.
-
-  <img src="../../images/pivotal_greenplum/deploy_add_node_complete_email.png" style="border:0;width:70%;">
+  Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.  If you do not receive an email you may have had a deployment error - review the *Blueprint Build Log* to look for error messages.
 
 
 ### Frequently Asked Questions
 
-**Restarting cluster expansions**
-
-From the master host execute the following commands to remove all CenturyLink specific items used to maintain state as part of a cluster deployment.  After removing these files another Blueprint deployment can be safely executed.
-
-```
-# rm -rf ~gpadmin/{.expand_in_process.lck,.expand_hostlist,add_node_*}
-```
-
-There may also be Greenplum specific commands that need to be executed to cleanup.  These will be indicated in the error log files.
-
-**Error message "Unable to locate master"**
-
-There are several scenarios where this error message may appear:
-
-  * Your cluster ID does not match the ID used for the initial cluster deployment.  If you're unable to locate this ID you may obtain it manually by finding the `greenplum-master-$CLUSTER_ID` field in the file `/usr/local/bpbroker/etc/bpbroker.json`
-  * The new node and existing cluster are on different networks.  Resolve this by deploying your new nodes on the same network
-  * The `bpbroker` service may not be running on the master host.  Execute the following command on the master host to start this:
-  ```
-  # /sbin/service brbroker restart
-  ```
