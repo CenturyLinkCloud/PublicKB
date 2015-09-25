@@ -27,7 +27,7 @@ CenturyLink cloud WordPress is designed to minimize the management of a WordPres
 WordPress Multisite allows a single WordPress installation to house a network of separate sites. This feature is *disabled* by default in CenturyLink Cloud WordPress, and __is not__ supported.
 
 ## <a name="storage"></a>Local File Storage
-CenturyLink Cloud WordPress __does not__ offer long term local file system storage for media, plugins, or themes. Traditional WordPress hosting on physical or virtual machines save site content to the local disk by default, but in the Cloud environment we have configured your WordPress site to work differently.
+CenturyLink Cloud WordPress __does not__ offer long term local file system storage for media, plugins, or themes. Traditional WordPress hosting on physical or virtual machines save site content to the local disk by default.  In the Cloud environment we have configured your WordPress site to work differently.
 
 > #### Media Content
 > Your CenturyLink Cloud WordPress comes with a Cloud Storage plugin pre-installed. This is the preferred method of bypassing local file storage.
