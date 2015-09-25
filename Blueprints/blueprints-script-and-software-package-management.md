@@ -711,10 +711,38 @@ Package Format
     </tr>
   </tbody>
 </table>
+
+
+
+<p>
+  <a name="example"></a>
+  <h3>Example package.manifest</h3>
+  <pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;Manifest&gt;
+  &lt;Metadata&gt;
+    &lt;UUID&gt;d1672b23-6157-11e5-9d63-60030891ee48&lt;/UUID&gt;
+    &lt;Name&gt;Install Script with License Key&lt;/Name&gt;
+    &lt;Description&gt;Install script for your license based agent&lt;/Description&gt;
+  &lt;/Metadata&gt;
+  &lt;Parameters&gt;
+    &lt;Parameter Name="LicenseKey" Type="String" Variable="LicenseKey" Hint="License Key" Prompt="Build" Required="true"/&gt;
+  &lt;/Parameters&gt;
+  &lt;Execution&gt;
+    &lt;Mode&gt;Ssh&lt;/Mode&gt;
+    &lt;Command&gt;./install-agent.sh ${LicenseKey}&lt;/Command&gt;
+    &lt;Persistent&gt;false&lt;/Persistent&gt; 
+    &lt;RebootOnSuccess&gt;false&lt;/RebootOnSuccess&gt; 
+  &lt;/Execution&gt;
+&lt;/Manifest&gt;
+  </pre>
+</p>
+
+
 <p>
   <a name="uploading"></a>
 </p>
-Uploading and Publishing a Package
+<h1>Uploading and Publishing a Package</h1>
 <p>Once the package.manifest has been created, validated, and zipped with the all other required files, the following steps should be followed to get the package uploaded and published to the Control Portal.</p>
 <ol>
   <li>Login to control portal and navigate to the Scripts page.
