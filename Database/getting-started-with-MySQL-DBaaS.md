@@ -15,11 +15,15 @@ During the Limited Beta there is no production Service Level Agreement.
 
 #### Audience
 
-Currently, this article is to support customers in the Limited Beta program.  Additionally, these instructions are specific to provisioning service directly through the DBaas user interface.  
+Currently, this article is to support customers in the Limited Beta program.  Additionally, these instructions are specific to provisioning service directly through the DBaaS user interface.  
 
 ## Overview
 
-Our MySQL Database-as-a-Service limited beta provides instant access to a single MySQL-compatible database instance with SSL support, daily backups held locally for 7 days and basic monitoring.  The free beta is limited to a 1vCPU/1GB database instance with up to 100 MB storage and support for 100 concurrent connections in IL1 datacenter.
+Our MySQL Database-as-a-Service limited beta provides instant access to a single MySQL-compatible database instance with SSL support, daily backups held for 7 days and basic monitoring.  The free beta allows a user to choose from 4 different sized plans, as follows:
+
+**Micro**|**Small**|**Medium**|**Large**
+-----------|-----------|--------------|------------
+CPUs: 1 Core<br>Memory: 1 GB<br>Storage: 1 GB<br>Connections: 100|CPUs: 1 Core<br>Memory: 2 GB<br>Storage: 1 GB<br>Connections: 1200|CPUs: 2 Core<br>Memory: 6 GB<br>Storage: 64 GB<br>Connections: 3600|CPUs: 4 Core<br>Memory: 16 GB<br>Storage: 256 GB<br>Connections: 9600
 
 #### Prerequisites
 
@@ -36,9 +40,9 @@ Our MySQL Database-as-a-Service limited beta provides instant access to a single
 
 4.	Select datacenter from the drop-down menu, choose a plan, select your username and password for the database and enter a name for the database.  Click “Create Database”.  ![CreateDB](../images/dbaas-createdb-beta.png)
 
-5.  When created, you will be returned your database information including connection string and can choose to download your certificate at that time. ![ListDB](../images/dbaas-dblist-beta.png)
+5.  When created, you will be returned your database information including connection string and can choose to download your certificate at that time. ![DBDetails](../images/dbaas-dbdetails-beta.png)
 
-6.  You can view a list of all your database subscriptions with connection string info on the "Database Instances" tab.  You can also download your certificate from this list at any time.
+6.  You can view a list of all your database subscriptions with connection string info on the "Database Instances" tab.  From this screen, you can also download your certificate or delete your subscription and can filter on active or terminated instances.  ![ListDB](../images/dbaas-dblist-beta.png)
 
 7.  Use the provided connection string information to administer your MySQL instance using standard command line interface from your favorite MySQL client.
 
