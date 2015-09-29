@@ -24,6 +24,7 @@ Notes:
 * Any account appearing in the "Adjustments" list with a dash ("-") in the "Most Recent Account Specific Adjustment" column will use default pricing.
 
 Process:
+
 1. Navigate to https://control.ctl.io/pricingcatalog#/pricingCatalog
 2. Select "Default Pricing Catalog Adjustments" from the left navigation bar
 3. To create a new price adjustment, click the "create price adjustment" button

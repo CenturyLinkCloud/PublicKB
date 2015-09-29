@@ -23,6 +23,7 @@ Notes:
 * A price change will affect an entire month, there is no mid-month pricing at this time
 
 Process:
+
 1. Navigate to https://control.ctl.io/pricingcatalog#/pricingCatalog
 2. Select "Adjustments" from the left navigation bar
 3. From the account list, select the account you want to adjust by clicking on the account name (hint: for large account lists, use your browser's find functionality to quickly find the account)
