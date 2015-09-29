@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with SUREedge - Blueprint",
-  "date": "9-24-2015",
+  "date": "9-30-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -32,11 +32,10 @@ SUREedge technology allows CenturyLink customers to rapidly migrate workloads fr
 ### Description
 
 To use SUREedge for DR or onboarding to the Cloud, you must run an instance of SUREedge both on-prem and on-CenturyLink Cloud.   The on-prem instance provides the capability to capture and dedupe-replicate applications and data, while the on-cloud instance acts as the receiver, storage and recovery manager in the Cloud.
+To create the on-Cloud instance, use either of these two blueprints:
 
-To create the in on-Cloud instance, use either of these two blueprints:
-
-* SUREedge Migrator:  Use this for onboarding/migration to CenturyLink Cloud
-* SUREedge-DR:  Use this for DR CenturyLink Cloud
+* SUREedge Migrator:  Use this for onboarding/migration to CenturyLink Cloud.
+* SUREedge DR:  Use this for DR CenturyLink Cloud.
 
 To download and create the on-prem instance, go to [http://www.surelinesystems.com/centurylink/](http://www.surelinesystems.com/centurylink/)
 
@@ -61,8 +60,13 @@ After reading this article, the user should be able to:
 
 ### Prerequisites
 
-* Access to the CenturyLink Cloud platform as an authorized user
-* Resources for running the on-prem SUREedge instance
+* On-Prem:
+ * Resources on a VM infrastructure for running the on-prem SUREedge instance. Popular VM infrastructures, such as VMware, Hyper-V or KVM are supported.
+ * A Windows (Windows 8.x, Windows Server 2008 or later) VM running within the VM infrastructure described in Prerequisite 1.
+* On-CenturyLink Cloud:
+ * Access to the CenturyLink Cloud platform as an authorized user.
+ * A license for a Windows VM in CenturyLink Cloud.
+
 
 
 ### Postrequisites
@@ -108,6 +112,10 @@ There are two SUREedge blueprints available:
 
   The default values are fine for every other option.
 
+  *You should note the two hostnames you specified in step 2g, as well as the administrator password you specified in step 2h above. These 
+  will be needed later to log into and configure your SUREedge instances.*
+
+
 5. **Review and Confirm the Blueprint**
 
 6. **Deploy the Blueprint**
@@ -118,16 +126,43 @@ There are two SUREedge blueprints available:
 
   Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets within a few minutes.  If you do not receive an email like the one shown below you may have had a deployment error - review the *Blueprint Build Log* to for error messages.
 
-8. **Complete On-Premises SUREedge Component Installation**
+  You will see two VMs running, a Windows VM and a Linux VM.  The Windows VM is referred to as the `SUREedge-MC` and Linux VM as `SUREedge-Stor`.  
+  Login to [control.ctl.io](https://control.ctl.io) and find the public IP addresses of these two systems - you will need these later.
 
- * To download the software go to [http://www.surelinesystems.com/centurylink/](http://www.surelinesystems.com/centurylink/).
- * Login to the your account in Sureline or register if you are new.
- * Download the software.  (The software is installed as a VM on any popular VM infrastructure.)
+8. **Sizing** (optional)
+
+  Review the capacity planning guide available at http://www.surelinesystems.com/centurylink/ to help size the SUREedge instance correctly for your use case.
+
+
+9. **Complete On-Premises SUREedge Component Installation**
+
+ * Login to the Windows VM on which you intend to install the on-prem instance of the SUREedge-MC.
+ * Download the software from http://www.surelinesystems.com/centurylink/.  Login to your Sureline account, or register if you are new.
+ * Install the software.
+ * *Note the IP address of the Windows system where you installed the on-prem SUREedge-MC module and username and password during the installation. You will need these later to login to the application.*
  * NOTE:   
-  * Review the capacity planning guide to help size the SUREedge VM.
+  * Review the capacity planning guide to help size the SUREedge-Stor VM.
   * Your license file will be sent by email to you by Sureline team.
- * Once installed, the two instances of the SUREedge must be linked.
- * You can then add client systems, create plans for migration and DR and execute the plans.
+
+10. **Logging onto the on-prem instance and initiating Migration**
+
+ Use any browser (Firefox recommended) to connect to the IP address of the on-prem SUREedge-MC.  Login using the username and password you applied during the installation.
+
+ Your next step is to link the two instances of the SUREedge.  To do so:
+
+ * Click on Settings → Cloud or Remote → Remote
+ * Enter the Public IP/FQDN, username and password of the on-cloud SUREedge-Stor of that you noted earlier while creating the blueprint image.
+ You are now ready to add clients and start migration.  Refer to the user guide available at http://www.surelinesystems.com/resources/ on how to add clients, create plans, initiate migration, etc.
+
+11. **Logging onto the on-Cloud instance and Recovering **
+
+  Use any browser (Firefox recommended) to connect to the public IP address of the on-cloud SUREedge-MC instance. Login using the username and 
+  password you specified while deploying the blueprint.
+
+  You will be now able to recover systems that have been replicated to CenturyLink Cloud.  Refer to the user guide available at 
+  http://www.surelinesystems.com/resources/ on how to recover a system.
+
+
 
 
 ### Pricing
