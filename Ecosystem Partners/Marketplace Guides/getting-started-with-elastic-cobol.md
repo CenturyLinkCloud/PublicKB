@@ -30,16 +30,16 @@ After reading this article, the user should be able to start a server running El
 
 ### Prerequisite
 - Access to the CenturyLink Cloud platform as an authorized user.
-- An Elastic COBOL Developer license from Heirloom Computing. See [Heirloom Computing](http://PaaS.heirloomcomputing.com) for details.
+- An Elastic COBOL Developer license from Heirloom Computing. See [Heirloom Computing](http://heirloomcomputing.com) for details.
 
 ### Postrequisite
 To access your application from a computer outside the CenturyLink Cloud network over the public internet, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
 
   1. [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
   2. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for the remote desktop port by clicking on the Servers Public IP through Control Portal and configuring appropriately.
-    * The default ports to access the application are: 3389
+    * The default port to access the application through Microsoft Remote Desktop is: 3389
 
-Alternatively, you may also choose to add a VPN connection to your installation, and omit adding the IP address.  This will allow access with the machine bveing exposed to the external internet.  See: [Adding a VPN connection](../Network/how-to-configure-client-vpn.md)
+Alternatively, you may add a VPN connection to your installation, and omit adding the public IP address.  This will allow access with the machine being exposed to the external internet.  See: [Adding a VPN connection](../Network/how-to-configure-client-vpn.md)
 
 ### Deploying the Elastic COBOL Developer for Windows Blueprint
 
@@ -57,6 +57,7 @@ Alternatively, you may also choose to add a VPN connection to your installation,
   1. **Provide standard Blueprint details**
       1. Enter an Administrator password
       2. Provide group and network details
+      3. Select server type and service level.  A standard server will suffice
       3. Customize the server name as required
 
   2. **Provide Heirloom License details**
@@ -70,7 +71,7 @@ Alternatively, you may also choose to add a VPN connection to your installation,
 
 5. **Deploy the Blueprint**
   1. Once verified, click on the "deploy blueprint" button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
-  2. This will kick off the blueprint deploy process and load a page to allow you to track the progress of the deployment.
+  2. This will start the blueprint deploy process and load a deployment queue page to allow you to track the progress of the deployment.
 
 6. **Monitor the Activity Queue**
   1. Monitor the Deployment Queue to view the progress of the blueprint.
@@ -89,7 +90,7 @@ After your Blueprint deploys successfully, please follow these instructions to a
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  There are no license costs or additional fees bundled in. You will need a valid Elastic COBOL Developer license from Heirloom Computing.
 
 ### About Heirloom Computing
-CenturyLink Cloud works with [Heirloom Computing](http://www.heirloomcomputing.com) to provide patented compiler technology to automatically transform mainframe applications into highly-maintainable Java source-code, with 100% accuracy, while guaranteeing the preservation of existing business logic.
+[Heirloom Computing](http://heirloomcomputing.com) provides patented compiler technology to automatically transform mainframe applications into highly-maintainable Java source-code, with 100% accuracy, while guaranteeing the preservation of existing business logic.
 
 ### Frequently Asked Questions
 
