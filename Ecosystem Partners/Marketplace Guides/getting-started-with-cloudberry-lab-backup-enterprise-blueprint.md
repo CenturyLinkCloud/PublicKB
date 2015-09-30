@@ -110,7 +110,7 @@ Follow these step by step instructions to deploy Cloudberry Backup Enterprise Ed
 Follow these steps to access and use the CloudBerry software
 
 1.	Access the VM
-- Please, log in to your server using the VPN access [https://www.ctl.io/knowledge-base/network/how-to-configure-client-vpn/](VPN configuration instructions)
+- Please, log in to your server using the VPN Access.  For Help, [click this link for VPN configuration instructions](../../network/how-to-configure-client-vpn.md)
 
 2. Launch the software
 - You will see a Cloudberry Backup Enterprise Edition Icon on the desktop.  Double click it to launch.
