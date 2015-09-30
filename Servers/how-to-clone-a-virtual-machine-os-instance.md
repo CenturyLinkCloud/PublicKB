@@ -20,6 +20,8 @@ A clone is a copy of an existing virtual machine. When the cloning operation is 
 
 Customers using the clone function for Windows Servers should carefully review the [Microsoft Sysprep for Server Roles technet article](//technet.microsoft.com/en-us/library/hh824835.aspx). Sysprep is a component of creating a clone and as such certain OS Roles are not supported in the clone process.
 
+Additional attached disks from the source server are not automatically attached to the clone. If these disks are intended to be attached to the clone then this is a manual process on the guest operating system.
+
 Cloning is not supported from powered off servers. The source server must be powered on in order to clone as a new virtual machine.
 
 ### Steps
