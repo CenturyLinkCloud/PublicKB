@@ -62,7 +62,7 @@ Follow these step by step instructions to deploy Cloudberry Backup Enterprise Ed
   [CloudBerry Image](../../images/ecosystem-CloudBerry-1.png)
 
 2.	Search for the Blueprint.
-- To search for the Nexus Chameleon blueprint, type “Cloudberry Backup Enterprise for Desktop and Server” under “Refine Results” in the right panel and click the “Go” button.
+- To search for the blueprint, type “Cloudberry Backup Enterprise for Desktop and Server” under “Refine Results” in the right panel and click the “Go” button.
 
   [CloudBerry Image](../../images/ecosystem-CloudBerry-2.png)
 
