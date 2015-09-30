@@ -29,11 +29,11 @@ Process:
 3. From the account list, select the account you want to adjust by clicking on the account name (hint: for large account lists, use your browser's find functionality to quickly find the account)
 4. To create a new price adjustment, click the "create price adjustment" button
 5. Create a name for the adjustment (a detailed description, like "New contract pricing", or "September Special Pricing" is helpful here)
-6. Select an effective billing cycle. IMPORTANT: price changes will affect the entire month selected, there is no mid-month pricing at this time
+6. SSelect an effective billing cycle. Please note that price changes will affect the entire month selected, there is no mid-month pricing functionality at this time
 7. Select a product to adjust
 8. Select a location if desired, otherwise leave the location set to "default"
 
-  *Example: if you want to change list pricing for almost all data centers, but you have an additional set of special prices you'd like to create in a single data center, and that data center is CA2; use the "default" location to set your prices, and then create an additional set of special prices, with CA2 selected as the data center. This will create one set of prices for all data centers that are _not_ CA2 and a set of prices for CA2.*
+    *Example: if you want to change list pricing for almost all data centers, but you have a set of special prices you'd like to create in a single data center, and that data center is CA2; use the "default" location to set your prices, and then create an additional set of prices, with CA2 selected as the data center. This will create one set of prices for all data centers that are _not_ CA2 and a set of prices for CA2.*
 
 9. Enter the new product cost (the "current cost" will be displayed as a reference point - if there is a pricing adjustment already in place for this account and this product, you will see that adjusted price displayed).
 10. Click "add adjustment"
