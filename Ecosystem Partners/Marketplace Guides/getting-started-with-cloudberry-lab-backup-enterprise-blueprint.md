@@ -51,7 +51,7 @@ After executing the steps in this Getting Started document, the users will have 
 ### Prerequisite
 - Access to the CenturyLink Cloud platform as an authorized user.
 - Existing Windows Platform server to deploy to
-- Configure the VPN access to the virtual server as it is described [at this link](../../network/how-to-configure-client-vpn.md).
+- Configure the VPN access to the virtual server 
 
 ### Deploy CloudBerry Labs Cloud Storage Tools Blueprint
 Follow these step by step instructions to deploy Cloudberry Backup Enterprise Edition on your server and connect to you Centurylink Object Storage account. 
