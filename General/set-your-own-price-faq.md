@@ -19,7 +19,7 @@ The SYOP feature should be used by anyone who would like to set prices for their
 To access the SYOP functionality, navigate to https://control.ctl.io/pricingcatalog. Step-by-step instructions for [setting a default price sheet](../general/setting-default-prices-for-sub-accounts.md) and [setting a price sheet for a specific sub account](../general/setting-prices-for-sub-accounts.md) will be available in our Knowledge Base soon.
 
 ##### What prices can be adjusted?  
-Prices for all products appearing in the [online Pricing Catalog](https://www.ctl.io/pricing/) can be changed, with the sole exception of Support. Support fees are charged as a fixed percentage of a customer's entire bill, and cannot be adjusted via Set Your Own Price at this time.
+Prices for all products appearing in the [online Pricing Catalog](//www.ctl.io/pricing) can be changed, with the sole exception of Support. Support fees are charged as a fixed percentage of a customer's entire bill, and cannot be adjusted via Set Your Own Price at this time.
 
 ##### What roles have access to the SYOP feature?
 Users with the Billing Manager and Account Admin roles can access SYOP and make changes to prices.
