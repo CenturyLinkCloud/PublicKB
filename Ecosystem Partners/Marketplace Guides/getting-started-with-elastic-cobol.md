@@ -84,7 +84,7 @@ After your Blueprint deploys successfully, please follow these instructions to a
 
   1. Use a remote desktop client to connect to your server
   2. Log in using the Administrator account and the password you provided when customizing the Blueprint
-  3. Once you are on the Remote Desktop, use the Eclipse icon on the desktop to start Elastic COBOL Developer
+  3. Once you are on the Remote Desktop, use the Elastic COBOL icon on the desktop to start Elastic COBOL Developer
 
 ### Pricing
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  There are no license costs or additional fees bundled in. You will need a valid Elastic COBOL Developer license from Heirloom Computing.
