@@ -73,6 +73,9 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Railo](../Ecosystem Partners/Marketplace Guides/getting-started-with-railo-blueprint.md)   	| Blueprint    | CFML   |
 | [ReviewBoard](../Ecosystem Partners/Marketplace Guides/getting-started-with-reviewboard-blueprint.md)   	| Blueprint    | Code Collaboration Suite   |
 | [Squash](../Ecosystem Partners/Marketplace Guides/getting-started-with-squash-blueprint.md)   	| Blueprint    | Code Analysis    |
+| [TestLink](../Ecosystem Partners/Marketplace Guides/getting-started-with-testlink-blueprint.md)   	| Blueprint    | Test suite planning    |
+| [Trac](../Ecosystem Partners/Marketplace Guides/getting-started-with-trac-blueprint.md)   	| Blueprint    | Code Collaboration Suite   |
+| [Weblate](../Ecosystem Partners/Marketplace Guides/getting-started-with-weblate-blueprint.md)   	| Blueprint    | Translation Management   |
 
 
 ### Data Management
@@ -133,7 +136,10 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [RoundCube](../Ecosystem Partners/Marketplace Guides/getting-started-with-roundcube-blueprint.md)  	| Blueprint   | Webmail client     |
 | [Sharelock](../Ecosystem Partners/Marketplace Guides/getting-started-with-sharelock-blueprint.md)  	| Blueprint   | Information sharing     |
 | [Simple Invoices](../Ecosystem Partners/Marketplace Guides/getting-started-with-simpleinvoices-blueprint.md)  	| Blueprint   | Invoice software     |
+| [Spree](../Ecosystem Partners/Marketplace Guides/getting-started-with-spree-blueprint.md)  	| Blueprint   | eCommerce platform     |
+| [Tracks](../Ecosystem Partners/Marketplace Guides/getting-started-with-tracks-blueprint.md)  	| Blueprint   | GTD Group collaboration     |
 | [X2 Engine](../Ecosystem Partners/Marketplace Guides/getting-started-with-x2engine-blueprint.md)  	| Blueprint   | Customer relationship manager (CRM)     |
+| [Zurmo](../Ecosystem Partners/Marketplace Guides/getting-started-with-civicrm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
 
 
 ### Media and Content
@@ -167,7 +173,12 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Roller](../Ecosystem Partners/Marketplace Guides/getting-started-with-roller-blueprint.md)   	| Blueprint    | Blog publishing platform   |
 | [SilverStripe](../Ecosystem Partners/Marketplace Guides/getting-started-with-silverstripe-blueprint.md)   	| Blueprint    | Content management system (CMS)   |
 | [SiteCake](../Ecosystem Partners/Marketplace Guides/getting-started-with-sitecake-blueprint.md)   	| Blueprint    | Content management system (CMS)   |
+| [ThinkUp](../Ecosystem Partners/Marketplace Guides/getting-started-with-thinkup-blueprint.md)   	| Blueprint    | Social media aggregator   |
+| [Tiki Wiki](../Ecosystem Partners/Marketplace Guides/getting-started-with-tiki-blueprint.md)   	| Blueprint    | Content management system (CMS)   |
+| [Tiny Tiny RSS](../Ecosystem Partners/Marketplace Guides/getting-started-with-tinytinyrss-blueprint.md)   	| Blueprint    | RSS aggregator   |
+| [TYPO3](../Ecosystem Partners/Marketplace Guides/getting-started-with-typo3-blueprint.md)   	| Blueprint    | Content management system (CMS)   |
 | [Wordpress](../Ecosystem Partners/Marketplace Guides/getting-started-with-wordPress-blueprint.md)   	| Blueprint    | Web publishing platform   |
+| [XOOPS](../Ecosystem Partners/Marketplace Guides/getting-started-with-xoops-blueprint.md)   	| Blueprint    | Content management system (CMS)   |
 
 
 ### Operating Systems
