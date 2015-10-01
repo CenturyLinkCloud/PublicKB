@@ -51,7 +51,7 @@ CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-
 
   ![](../images/wp_getting_started/wp_getting_started_4.png)
 
-5. When created, you will then see the credentials for your WordPress site, and its associated phpMyAdmin and GitHub repository.
+5. When created, you will then see the credentials for your WordPress site and its associated and git repository.
 
   ![](../images/wp_getting_started/wp_getting_started_5.png)
 
@@ -79,7 +79,7 @@ A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge b
 
 **Q: How do I access the MySQL database for my WordPress Site?**
 
-A: You can [access your WordPress database using phpMyAdmin](wordpress-database-access-with-phpmyadmin.md).
+A: You can [access your WordPress database using external tools](wordpress-database-access-with-external-tools.md).
 
 **Q: How do I install plugins and themes to my WordPress Site?**
 

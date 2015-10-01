@@ -19,4 +19,6 @@ It is important to understand the changes enacted by a clone job, to minimize co
 
 - Guest operating systems for virtual machine clones may share computer names and static IP addresses with their original counterparts. Be sure to account for this prior to power-on.
 
+- Additional attached disks from the source server are not automatically attached to the clone. If these disks are intended to be attached to the clone then this is a manual process on the guest operating system.
+
 - The impact of cloning may vary between Operating Systems. For example, Server 2012 has features built-in to facilitate "cleaner" clones of Virtual Machines than earlier revisions.

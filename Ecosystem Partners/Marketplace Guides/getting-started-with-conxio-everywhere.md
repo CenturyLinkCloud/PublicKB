@@ -44,13 +44,6 @@ CenturyLink Cloud Users
 
 ### Deploying via Blueprint Packages
 
-Puppet agents are often best deployed as part of a new server build, especially when designed a standardized infrastructure service catalog.
-CenturyLink has made two packages available for inclusion in your own Blueprints:
-
-
-#### Steps
-
-
 1. **Locate the Blueprint in the Blueprint Library**
 
   <img src="../../images/conxio/blueprint_tile.png" style="border:0;max-width:250px">
