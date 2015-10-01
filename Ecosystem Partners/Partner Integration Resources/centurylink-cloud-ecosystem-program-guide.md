@@ -8,7 +8,7 @@
 }}}
 
 ### Description
-This CenturyLink Marketplace Provider Program Guide is designed to outline the process expectations for technology companies seeking to integrate their products and services with CenturyLink Cloud.  Partners who enter this program and meet the certification requirements will be eligible to have their deployable technology listed in the CenturyLink Cloud Marketplace.  To express interest in joining the program, prospective partners can visit the CenturyLink Cloud [Marketplace Provider Program](http://www.ctl.io/marketplace/program) web page or send email to [ecosystem@ctl.io](mailto:ecosystem@ctl.io).
+This CenturyLink Marketplace Provider Program Guide is designed to outline the process expectations for technology companies seeking to integrate their products and services with CenturyLink Cloud.  Partners who enter this program and meet the certification requirements will be eligible to have their deployable technology listed in the CenturyLink Cloud Marketplace.  To express interest in joining the program, prospective partners can visit the CenturyLink Cloud [Marketplace Provider Program](//www.ctl.io/marketplace/program) web page or send email to [ecosystem@ctl.io](mailto:ecosystem@ctl.io).
 
 ### Audience
 * CenturyLink Cloud Ecosystem Applicant, Candidate and Partner firms
@@ -47,13 +47,13 @@ To ensure Candidate solutions deliver both business value and trouble-free use, 
 + The solution integrates seamlessly with the CenturyLink Cloud Blueprint Engine in a manner that achieves automated time-to-value
 + The solution delivers the business value outlined in the application
 
-Candidates have up to three months to complete any integration needed, validate functionality and create the necessary documentation. During this period, CenturyLink Technology Solutions will provide the Candidate access to a fully functioning, production cloud environment with a 2,000 USD monthly usage credit to be used for automation testing. Once the technology integration has been certified, the Partner will continue to have access to the same integration environment with the same 2,000 USD monthly integration credit in order to ensure compatibility with new features and versions. In order to continue receiving this ongoing integration benefit, Candidates will need to be a cloud customer in good standing, through standard online terms and conditions found on [ctl.io/legal](https://www.ctl.io/legal).
+Candidates have up to three months to complete any integration needed, validate functionality and create the necessary documentation. During this period, CenturyLink Technology Solutions will provide the Candidate access to a fully functioning, production cloud environment with a 2,000 USD monthly usage credit to be used for automation testing. Once the technology integration has been certified, the Partner will continue to have access to the same integration environment with the same 2,000 USD monthly integration credit in order to ensure compatibility with new features and versions. In order to continue receiving this ongoing integration benefit, Candidates will need to be a cloud customer in good standing, through standard online terms and conditions found on [ctl.io/legal](//www.ctl.io/legal).
 
 Please note the Partner technology must function with the standard CenturyLink Cloud feature set as no feature development on the part of the CenturyLink Cloud Development Center will be performed to enable a Candidate through the process. During this development period and throughout the term of the Program, the Partner will be provided access, on a limited basis, to CenturyLink Cloud Integration Engineers as needed for detailed technology questions and roadmap exploration.
 
 ###Documentation
 
-Two types of [KnowledgeBase](www.ctl.io/knowledge-base) (KB) articles should be created for all Ecosystem Partner technologies: focused on Public end-users and Internal cloud support personnel.
+Two types of [KnowledgeBase](//www.ctl.io/knowledge-base) (KB) articles should be created for all Ecosystem Partner technologies: focused on Public end-users and Internal cloud support personnel.
 
 **Public Articles** should be used to practically guide end-users through deploying the technology upon CenturyLink Cloud. The documentation should be intuitive and provide step-by-step guidance in such a way that all skill levels can use the solution.  These should be accessible online through the CenturyLink Cloud knowledgebase (KB). The primary goal of Public KB articles is to ensure customer success: _what should the user know about how to take advantage of this technology integration with CenturyLink Cloud?_
 
@@ -132,6 +132,6 @@ After successful certification, the Certified Partner will be notified of accept
 **Renewal**
 In an effort to ensure the Program participant pool is adequately sized and delivering tangible value to our customers, evaluation of each solution at the renewal point of the respective Partner’s term is necessary.
 
-At the end of the term, both parties will evaluate the Program value during the participation period. If nothing is identified and communicated between parties it shall be assumed that the business value has proven sufficient, and the program will renew for an additional term. 
+At the end of the term, both parties will evaluate the Program value during the participation period. If nothing is identified and communicated between parties it shall be assumed that the business value has proven sufficient, and the program will renew for an additional term.
 
 **NOTE:** This article supercedes the static document most recently titled “Ecosystem Partner Program Guide CLEAN FINAL v2.1 7-14-14.pdf” which had been circulated to partners during Q2 and Q3 of 2014.

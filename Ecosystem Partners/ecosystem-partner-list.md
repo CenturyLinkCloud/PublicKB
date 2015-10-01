@@ -101,7 +101,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
-| [SoftNAS](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md)   	| Template    | NAS and Cloud Storage Gateway   |
+| [SoftNAS](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md)   	| Template    | NAS and Cloud Storage Gateway |
 
 ### Data Protection
 
@@ -109,6 +109,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 |:-	|:-	|
 | [Double Take](../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md)   	| Blueprint    | Data replication    |
 | [Saratoga Data Flume](../Ecosystem Partners/Marketplace Guides/getting-started-with-saratoga-data-flume-blueprint.md)   	| Blueprint    | File transfer acceleration software    |
+| [CommVault Simpana](../Ecosystem Partners/Marketplace Guides/getting-started-with-commvault-storage-blueprint.md) | Blueprint | Data Protection |
 
 ### Business Services
 
@@ -117,6 +118,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Acumatica](../Ecosystem Partners/Marketplace Guides/getting-started-with-acumatica-erp-blueprint.md)   	| Blueprint    | Accounting and ERP    |
 | [Akeneo](../Ecosystem Partners/Marketplace Guides/getting-started-with-akeneo-blueprint.md)   	| Blueprint    | Product Information Management    |
 | [Apex Datacom](../Ecosystem Partners/Marketplace Guides/getting-started-with-apex-datacom-call-me-essentials-edition-blueprint.md)   	| Blueprint    | "Call Me" Voice Widget    |
+| [Conxio](../Ecosystem Partners/Marketplace Guides/getting-started-with-conxio-everywhere.md)   	| Blueprint    | Secure Communications Platform |
 | [CiviCRM](../Ecosystem Partners/Marketplace Guides/getting-started-with-civicrm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
 | [Diaspora](../Ecosystem Partners/Marketplace Guides/getting-started-with-diaspora-blueprint.md)   	| Blueprint    | Private social networking    |
 | [Fat Free CRM](../Ecosystem Partners/Marketplace Guides/getting-started-with-fat-free-crm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
