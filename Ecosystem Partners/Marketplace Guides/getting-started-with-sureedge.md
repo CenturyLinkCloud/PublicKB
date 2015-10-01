@@ -115,7 +115,6 @@ There are two SUREedge blueprints available:
   *You should note the two hostnames you specified above, as well as the MC password. These 
   will be needed later to log into and configure your SUREedge instances.*
 
-
 5. **Review and Confirm the Blueprint**
 
 6. **Deploy the Blueprint**
@@ -132,7 +131,6 @@ There are two SUREedge blueprints available:
 8. **Sizing** (optional)
 
   Review the capacity planning guide available at http://www.surelinesystems.com/centurylink/ to help size the SUREedge instance correctly for your use case.
-
 
 9. **Complete On-Premises SUREedge Component Installation**
 
