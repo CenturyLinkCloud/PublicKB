@@ -27,6 +27,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Apache HTTP Server](../Managed Services/getting-started-with-managed-apache.md)   	| Blueprint (Managed)   | Multi-purpose web server    |
 | [Apache Tomcat Server](../Managed Services/getting-started-with-managed-tomcat.md)   	| Blueprint (Managed)   | Web application server    |
 | [CloudMine](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudmine-blueprint.md)   	| Blueprint    | Mobile backend    |
+| [Elastic COBOL Developer](../Ecosystem Partners/Marketplace Guides/getting-started-with-elastic-cobol.md)     | Blueprint | Legacy COBOL Code migration |
 | [LAMP](../Ecosystem Partners/Marketplace Guides/getting-started-with-lamp-stack-blueprint.md)   	| Blueprint    | Linux, Apache, MariaDB/MySQL, and PHP/Perl/Python bundle    |
 | [Magento](../Ecosystem Partners/Marketplace Guides/getting-started-with-magento-blueprint.md)   	| Blueprint    | Ecommerce Shopping cart    |
 | [Microsoft Internet Information Services (IIS)](../Managed Services/getting-started-with-managed-microsoft-iis.md)   	| Blueprint (Managed)   | Web application server    |
