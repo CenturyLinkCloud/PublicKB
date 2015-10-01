@@ -61,8 +61,8 @@ Follow these step by step instructions to deploy Zoomdata
 3.	Choose the Blueprint. 
 - There are three Zoomdata Blueprints are available for installations
 * Trial Server:  This minimum configuration is perfect for testing out Zoomdata for a 30 day trial
-* Production Server:  This configuration has been optimized for a production environment.  Please contact [sales@zoomdata.com](sales@zoomdata.com) to purchase a license.
-* Install Zoomdata Server on Linux: This configuration can be applied to any hardware configuration.  Please contact [sales@zoomdata.com](sales@zoomdata.com) to purchase a license.
+* Production Server:  This configuration has been optimized for a production environment.  Please contact [sales@zoomdata.com](mailto:sales@zoomdata.com) to purchase a license.
+* Install Zoomdata Server on Linux: This configuration can be applied to any hardware configuration.  Please contact [sales@zoomdata.com](mailto:sales@zoomdata.com) to purchase a license.
 
   [Zoomdata Image](../../images/ecosystem-zoomdata-2.png)
 
@@ -103,7 +103,7 @@ To take advantage of the 30 day free trial, select the Zoomdata Trial Version.
 ### Frequently Asked Questions
 
 #### Where do I get my Zoomdata License?
-* The Zoomdata on CenturyLink Cloud is provided in a bring-your-own-license model.  Please contact [sales@zoomdata.com](sales@zoomdata.com) to activate your Zoomdata license.
+* The Zoomdata on CenturyLink Cloud is provided in a bring-your-own-license model.  Please contact [sales@zoomdata.com](mailto:sales@zoomdata.com) to activate your Zoomdata license.
 
 #### Is there a tutorial available for Zoomdata?
 * Yes.  The [Zoomdata Quickstart Guide](http://docs.zoomdata.com/eap-roadmap) is a great overview of the capabilities of Zoomdata.
