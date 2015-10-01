@@ -15,6 +15,9 @@
 ### Description
 
 Through the CenturyLink Blueprint integration, SilverStripe provides a click-through solution to install and configure SilverStripe on the Linux platform.
+SilverStripe is the intuitive content management system and flexible framework loved by editors and developers alike. Equip your web teams to achieve outstanding results.  Try the CMS   Developer Tutorials Download SilverStripe CMS for yourself
+
+
 
 For more information, please visit http://www.silverstripe.org
 

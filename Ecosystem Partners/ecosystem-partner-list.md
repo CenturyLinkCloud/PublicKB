@@ -1,6 +1,6 @@
 {{{
   "title": "Ecosystem Partner List",
-  "date": "08-26-2015",
+  "date": "10-01-2015",
   "author": "CenturyLink Ecosystem",
   "attachments": [],
   "contentIsHTML": false,
@@ -70,6 +70,8 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Phabricator](../Ecosystem Partners/Marketplace Guides/getting-started-with-phabricator-blueprint.md)   	| Blueprint    | Code Collaboration Suite    |
 | [Pivotal Cloud Foundry](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-cloud-foundry.md)   	| Blueprint    | Cloud Foundry PaaS    |
 | [Pootle](../Ecosystem Partners/Marketplace Guides/getting-started-with-pootle-blueprint.md)   	| Blueprint    | Translation Management   |
+| [Railo](../Ecosystem Partners/Marketplace Guides/getting-started-with-railo-blueprint.md)   	| Blueprint    | CFML   |
+| [ReviewBoard](../Ecosystem Partners/Marketplace Guides/getting-started-with-reviewboard-blueprint.md)   	| Blueprint    | Code Collaboration Suite   |
 | [Squash](../Ecosystem Partners/Marketplace Guides/getting-started-with-squash-blueprint.md)   	| Blueprint    | Code Analysis    |
 
 
@@ -108,6 +110,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [Double Take](../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md)   	| Blueprint    | Data replication    |
+| [SUREedge](../Ecosystem Partners/Marketplace Guides/getting-started-with-sureedge.md)   	| Blueprint    | Application mobility for DR and BC    |
 | [Saratoga Data Flume](../Ecosystem Partners/Marketplace Guides/getting-started-with-saratoga-data-flume-blueprint.md)   	| Blueprint    | File transfer acceleration software    |
 
 ### Business Services
@@ -127,6 +130,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [OpenCart](../Ecosystem Partners/Marketplace Guides/getting-started-with-opencart-blueprint.md)  	| Blueprint   | eCommerce platform     |
 | [OpenProject](../Ecosystem Partners/Marketplace Guides/getting-started-with-openproject-blueprint.md)  	| Blueprint   | Project Management     |
 | [OXID](../Ecosystem Partners/Marketplace Guides/getting-started-with-oxid-blueprint.md)  	| Blueprint   | eCommerce platform     |
+| [RoundCube](../Ecosystem Partners/Marketplace Guides/getting-started-with-roundcube-blueprint.md)  	| Blueprint   | Webmail client     |
 | [Sharelock](../Ecosystem Partners/Marketplace Guides/getting-started-with-sharelock-blueprint.md)  	| Blueprint   | Information sharing     |
 | [Simple Invoices](../Ecosystem Partners/Marketplace Guides/getting-started-with-simpleinvoices-blueprint.md)  	| Blueprint   | Invoice software     |
 | [X2 Engine](../Ecosystem Partners/Marketplace Guides/getting-started-with-x2engine-blueprint.md)  	| Blueprint   | Customer relationship manager (CRM)     |
@@ -156,6 +160,13 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [phpList](../Ecosystem Partners/Marketplace Guides/getting-started-with-phplist-blueprint.md)  	| Blueprint   | Email Marketing	|
 | [Pimcore](../Ecosystem Partners/Marketplace Guides/getting-started-with-pimcore-blueprint.md)   	| Blueprint    | Content management system (CMS)   |
 | [Plone](../Ecosystem Partners/Marketplace Guides/getting-started-with-plone-blueprint.md)   	| Blueprint    | Content management system (CMS)   |
+| [Processwire](../Ecosystem Partners/Marketplace Guides/getting-started-with-processwire-blueprint.md)   	| Blueprint    | Content management system (CMS)   |
+| [Publify](../Ecosystem Partners/Marketplace Guides/getting-started-with-publify-blueprint.md)   	| Blueprint    | Blog publishing platform   |
+| [Refinery](../Ecosystem Partners/Marketplace Guides/getting-started-with-refinerycms-blueprint.md)   	| Blueprint    | Content management system (CMS)   |
+| [ResourceSpace](../Ecosystem Partners/Marketplace Guides/getting-started-with-resourcespace-blueprint.md)   	| Blueprint    | Digital asset management   |
+| [Roller](../Ecosystem Partners/Marketplace Guides/getting-started-with-roller-blueprint.md)   	| Blueprint    | Blog publishing platform   |
+| [SilverStripe](../Ecosystem Partners/Marketplace Guides/getting-started-with-silverstripe-blueprint.md)   	| Blueprint    | Content management system (CMS)   |
+| [SiteCake](../Ecosystem Partners/Marketplace Guides/getting-started-with-sitecake-blueprint.md)   	| Blueprint    | Content management system (CMS)   |
 | [Wordpress](../Ecosystem Partners/Marketplace Guides/getting-started-with-wordPress-blueprint.md)   	| Blueprint    | Web publishing platform   |
 
 

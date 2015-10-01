@@ -15,6 +15,7 @@
 ### Description
 
 Through the CenturyLink Blueprint integration, Railo provides a click-through solution to install and configure Railo on the Linux platform.
+Railop provides CFML is a tag-based Web scripting language supporting dynamic Web page creation and database access in a Web server environment. In the language, ColdFusion tags are embedded in HTML files.
 
 For more information, please visit http://www.getrailo.org/
 
