@@ -1,7 +1,7 @@
 {{{
   "title": "Self-Service VM Import / OVF Requirements",
-  "date": "6-24-2015",
-  "author": "Jared Ruckle",
+  "date": "10-1-2015",
+  "author": "Eric Schubert",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -47,7 +47,7 @@ However, some OVFs may still require significant “prep” work, depending on t
 * For Windows: PSEXEC must not be firewalled; PS Remoting is enabled; WinRM is enabled
 * For Red Hat: Ensure the root account’s shell is bash
 * We assume that Windows OS OVFs are properly licensed under Volume Licensing; upon successful import, the OVF is then licensed using CenturyLink's SPLA agreement with Microsoft. No changes are made to the license key during import.
-* Bring your own licensing is not supported
+* Bring your own licensing is not supported for neither Windows nor Red Hat.
 * All OVF files will be stored in the FTP server located in your account's home data center
 * All OVF files will be deleted 5 days after initial import; please import your images soon after completion of the FTP transfer
 * Managed services are not available on imported VMs
