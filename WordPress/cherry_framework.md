@@ -26,7 +26,7 @@ Cherry Framework comes with a robust amount of features and options that makes i
 
 ### Installing the Cherry Framework
 
-1. First you will need to setup your [local developement environment] (https://www.ctl.io/knowledge-base/wordpress/wordpress-local-development/).
+1. First you will need to setup your [local developement environment](https://www.ctl.io/knowledge-base/wordpress/wordpress-local-development/).
 
 2. Next is to [download and save the framework](http://www.cherryframework.com/) from the Cherry Framework website for the local environment.
 
