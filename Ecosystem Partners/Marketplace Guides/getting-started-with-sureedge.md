@@ -17,7 +17,7 @@ Sureline Systems Inc. is the provider of SUREedge, an Application Mobility Solut
 Sureline provides the technology and solution for:
 
 * **Onboarding/Migration to CenturyLink Cloud**
-* **Disaster Recovery to CenturyLink Cloud **
+* **Disaster Recovery to the CenturyLink Cloud**
 
 SUREedge technology allows CenturyLink customers to rapidly migrate workloads from any physical or virtual system(s) into the CenturyLink Cloud, or use the CenturyLink Cloud as a DR site.
 
@@ -76,7 +76,7 @@ After reading this article, the user should be able to:
 
 ### Deploying SUREedge
 
-You can achieve a single-button deployment of a new Cloud Foundry using CenturyLink Cloud Blueprints.  
+You can achieve a single-button deployment of a new SUREedge instance using CenturyLink Cloud Blueprints.  
 
 #### Deciding Which Blueprint to Use
 
@@ -90,7 +90,7 @@ There are two SUREedge blueprints available:
 1. **Locate the Blueprint in the Blueprint Library**
 
  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "SUREedge" in the keyword search on the right side of the page.
- Select either **Sureedge Migrator** or **SUREedge DR** depending on use case
+ Select either **SUREedge Migrator** or **SUREedge DR** depending on your desired functionality.
 
   <img src="../../images/sureedge/cluster_blueprint_tiles.png" style="border:0;max-width:250px;">
 
@@ -112,7 +112,7 @@ There are two SUREedge blueprints available:
 
   The default values are fine for every other option.
 
-  *You should note the two hostnames you specified in step 2g, as well as the administrator password you specified in step 2h above. These 
+  *You should note the two hostnames you specified above, as well as the MC password. These 
   will be needed later to log into and configure your SUREedge instances.*
 
 
@@ -124,7 +124,7 @@ There are two SUREedge blueprints available:
 
 7. **Deployment Complete**
 
-  Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets within a few minutes.  If you do not receive an email like the one shown below you may have had a deployment error - review the *Blueprint Build Log* to for error messages.
+  Once the Blueprint has deployed you will receive an email confirming the newly deployed assets within a few minutes.  If you do not receive an email you may have had a deployment error - check the *Blueprints Queue* or review the *Blueprint Build Log* to for error messages.
 
   You will see two VMs running, a Windows VM and a Linux VM.  The Windows VM is referred to as the `SUREedge-MC` and Linux VM as `SUREedge-Stor`.  
   Login to [control.ctl.io](https://control.ctl.io) and find the public IP addresses of these two systems - you will need these later.
