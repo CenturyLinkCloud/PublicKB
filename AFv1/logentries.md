@@ -54,7 +54,7 @@ end</pre>
 <p>Get the <a href="https://github.com/logentries/le_php/archive/master.zip">PHP library</a> from their Github repository.</p>
 <p>Unzip it into your applications root directory.</p>
 <p>Enter this line at the top of a PHP file from which you wish to log (adjust if you unzipped elsewhere):</p>
-<pre>require dirname(__FILE__) . '/le_php-master/logentries.php';</pre>
+<pre>require dirname(&#95;&#95;FILE&#95;&#95;) . '/le_php-master/logentries.php';</pre>
 <p>Lastly, write some log events:</p>
 <pre>$log-&gt;Info("Hello Logentries, I'm an info message");
 $log-&gt;Warn("Hey Logentries, I'm a warning");</pre>
