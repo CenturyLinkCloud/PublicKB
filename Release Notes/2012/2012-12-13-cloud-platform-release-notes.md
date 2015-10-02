@@ -9,7 +9,7 @@
 </p>
 <hr />
 <ul>
-  <li><strong>Self-service Firewall Policies for all customers.</strong> Administrators for a given CenturyLink Cloud account can now create and modify firewall policies for their network(s). For more information, check out Knowledge Base articles on <a href="../../Network/creating-cross-data-center-firewall-policies.md">"Connecting Data Center Networks Through Firewall Policies"</a> and <a href="../Networks/creating-bi-directional-firewall-policies.md">"Creating Bi-Directional Firewall Policies."</a>
+  <li><strong>Self-service Firewall Policies for all customers.</strong> Administrators for a given CenturyLink Cloud account can now create and modify firewall policies for their network(s). For more information, check out Knowledge Base articles on <a href="../../Network/creating-cross-data-center-firewall-policies.md">"Connecting Data Center Networks Through Firewall Policies"</a> and <a href="../../Network/creating-bi-directional-firewall-policies.md">"Creating Bi-Directional Firewall Policies."</a>
   </li>
   <li><strong>Cross Data Center Firewall Policies.</strong>Customers can now create sophisticated firewall policies that permit traffic between CenturyLink Cloud data centers. See the Knowledge Base article <a href="../../Network/creating-cross-data-center-firewall-policies.md"
    >"Creating Cross Data Center Firewall Policies"</a> for a complete walkthrough of the feature. <strong>[NOTE: This feature may not be available to all customers until 12/21/12]</strong>
