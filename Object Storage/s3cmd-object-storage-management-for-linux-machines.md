@@ -196,7 +196,7 @@ If your version is <strong>1.5.0</strong> or newer, then there are two ways to m
 </p>
 <h4><a id="speed">Slow Transfer Speed?</a></h4>
 <p>
-When uploading or downloading a large file, consider to put s3cmd in quiet mode (<strong>--no-progress</strong> option) to minimize the output to console (stdout), as stdout coudld potentially slow down the transfer process.
+When uploading or downloading a large file, consider to put s3cmd in quiet mode (<strong>--no-progress</strong> option) to minimize the output to console (stdout), as stdout could potentially slow down the transfer process.
 </p>
 </br>
 
