@@ -11,7 +11,7 @@
 <ol>
 <li>Deploy a Remote Desktop Gateway (RD Gateway). RD Gateways utilize the Remote Desktop Protocol over HTTPS to establish a secure, encrypted connection between remote users on the Internet and customer's Windows servers. For steps to deploy this service, please see: http://technet.microsoft.com/en-us/library/dd983949</li>
 
-<li>If any of the previous secure solutions are not feasible options for your organization, and you need to Remote Desktop to your systems over the public Internet, you should at least restrict access to the public IP addresses you assign to each system. You can do this by enabling the "Restrict Traffic to Source IP" option within the Control Portal's configure Public IP configuration screen. For a step-by-step instructions how to perform this traffic restriction, please see: https://www.centurylinkcloud.com/knowledge-base/network/how-to-add-public-ip-to-virtual-machine/</li>
+<li>If any of the previous secure solutions are not feasible options for your organization, and you need to Remote Desktop to your systems over the public Internet, you should at least restrict access to the public IP addresses you assign to each system. You can do this by enabling the "Restrict Traffic to Source IP" option within the Control Portal's configure Public IP configuration screen. For a step-by-step instructions how to perform this traffic restriction, please see: https://www.ctl.io/knowledge-base/network/how-to-add-public-ip-to-virtual-machine/</li>
 <li>Keep your systems updated with the latest patches.</li>
 </ol>
 

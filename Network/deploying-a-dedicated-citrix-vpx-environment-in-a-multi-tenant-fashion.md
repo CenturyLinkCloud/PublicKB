@@ -1,204 +1,153 @@
 {{{
   "title": "Deploying a Dedicated Citrix VPX Environment in a Multi-tenant Fashion",
-  "date": "12-27-2014",
+  "date": "4-20-2014",
   "author": "Chris Little",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
-<h3>Deploying a Dedicated Citrix VPX Environment in a Multi-tenant Fashion</h3>
-<p>While the CenturyLink Cloud platform provides a <a href="https://t3n.zendesk.com/entries/22110695-Creating-a-Self-Service-Load-Balancing-Configuration">self-service load balancing service</a> for public facing web applications there may
-  be times in which this model does not meet a customers use case or technical requirements. CenturyLink Cloud customers can license Citrix VPX dedicated virtual load balancers on a monthly use basis. Internal IT personnel, partners, resellers
-  and other ISV's may wish to deploy dedicated Citrix VPX load balancers for consumption across their application portfolio or client base in a multi-tennant fashion. Using the Citrix VPX platform in a multi-tenant fashion can avoid costs of deploying
-  devices for every application or customer and reduce administrative overhead. </p>
-<h3>Use Case</h3>
-<p>This KB will provide a sample use case in which a highly available pair of Citrix VPX dedicated load balancers are deployed into multi-tier account hierarchy using CenturyLink Cloud Parent &amp; Sub-accounts. The end state will deliver load balancing
-  services to a sub-account of the parent providing account isolation while delivering secure load balancing services.</p>
-<h3>Prerequisites</h3>
-<ul>
-  <li>A CenturyLink Cloud Account</li>
-  <li>Hands-On experience deploying Dedicated VPX Appliances and configuration</li>
-  <li>Hands-On experience working with Parent &amp; Sub-Account hierarchies&nbsp;and Firewall self-service&nbsp;</li>
-</ul>
-<h3>Building a Parent &amp; Sub-Account Hierarchy</h3>
-<ul>
-  <li>Each CenturyLink Cloud client will receive an initial account, this is the Parent Account.  This is the top level of a larger account&nbsp;hierarchy&nbsp;that can be created based on business needs. In this sample we will construct a simple
-    set of 'Client' sub-accounts to the parent to simulate delivery of services to various unique customers of an ISV using CenturyLink Cloud to deliver their own unique service portfolio. The Account Structure will be as follows:</li>
-</ul>
-<p><img src="https://t3n.zendesk.com/attachments/token/eFb91tZdRgxU6ykxOSNBetgkY/?name=01.png" alt="01.png" />
-</p>
-<ul>
-  <li><a href="https://t3n.zendesk.com/entries/34202514-Creating-a-subaccount">Steps to create a sub-account can be found in our knowledge base</a>.&nbsp;</li>
-  <li><a href="https://t3n.zendesk.com/entries/58057320-Practical-Guide-for-Using-Roles">A Practical Guide for Using Roles </a>can also be used to gain additional understanding of roles &amp; account hierarchies</li>
-</ul>
-<h3>&nbsp;Deploy the Dedicated Citrix VPX Appliances</h3>
-<ul>
-  <li><a href="https://t3n.zendesk.com/entries/21806469-Creating-and-Deleting-VLANs">Deploy a dedicated Network VLAN</a> in your parent account within the appropriate data center.  Costs for VLANs can be found in our <a href="http://www.centurylinkcloud.com/estimator"
-   >Online Estimator</a> or your CenturyLink Cloud MSA. Once this job completes we recommend you <a href="https://t3n.zendesk.com/entries/26388584-Add-a-User-Friendly-Name-to-VLANs">apply a friendly name to this VLAN</a>.
-    &nbsp;In the sample below in CA3 we have a network created and named NLB_10.100.97.0/24. <strong>TIP: &nbsp;We recommend the VPX reside in a dedicated VLAN which allows for maximum Firewall security control and scalability of VIPs.</strong>
-  </li>
-</ul>
-<p><img src="https://t3n.zendesk.com/attachments/token/jnNGDnyT5uv6MQuX5yT52LFxA/?name=02.png" alt="02.png" />
-</p>
-<ul>
-  <li>Request a <a href="http://www.centurylinkcloud.com/service-tasks">Service Task</a> to Deploy your Citrix VPX devices. Optionally, you can do single instance virtual appliances if high availability is not a requirement. (Tip:
-    <a href="https://t3n.zendesk.com/entries/37871764-Requesting-Service-Tasks-on-CenturyLink-Cloud">How to Request a Service Task</a>). Include the following in your request:</li>
-  <ol>
-    <li>The Account alias of the Parent Account you wish to deploy the VPX(s) into. The alias is found on the Account, Info page</li>
-    <li>The Data Center in which you which the VPX(s) to be deployed</li>
-    <li>The Network into which the VPX(s) should be deployed. In this example NLB_10.100.97.0/24 was leveraged as we want to deploy the appliances into a parent network.</li>
-    <li>The Group you'd like the VPX(s) deployed into</li>
-    <li>Note how many VIP's you'd like reserved in the network for load balancing. The support team can later reserve more via a ticket. Generally, our team will reserve 10 VIPs out of the box unless stated otherwise. </li>
-    <li>Indicate which of the (4) dedicated load balancer types you wish to purchase. See&nbsp;<a href="http://www.centurylinkcloud.com/load-balancing">http://www.centurylinkcloud.com/load-balancing</a>
-    </li>
-    <li><a href="https://t3n.zendesk.com/entries/21714594-PIN-Authentication-for-Support-Requests">Provide your pin</a>
-    </li>
-  </ol>
-  <li>Once the Service Task team deploy's your VPX appliance(s) you will get a notification with details on your new devices. This list will include:</li>
-  <ol>
-    <li>The VM name of the VPX(s)</li>
-    <li>The Management IP of the VPX(s): &nbsp;In this example the IP is 10.100.97.100</li>
-    <li>The RNAT IP of the VPX: &nbsp;In this example the RNAT IP is 10.100.97.101</li>
-    <li>Username &amp; Password to perform administration of your new appliances</li>
-    <li>The list of VIP's reserved for the VPX: &nbsp;In this example the reserved pool is 10.100.97.103-113</li>
-  </ol>
-  <li>Citrix VPX Appliances will be shown in Control</li>
-</ul>
-<p><img src="https://t3n.zendesk.com/attachments/token/OitSGuuLvfmVGYBvyDpRP1us6/?name=09.png" alt="09.png" />
-</p>
-<h3>Deploy Sub-Account Virtual Instances</h3>
-<p>With a sub-account named 'Client A' deployed under the Parent Account, its now time to deploy virtual instances you wish to load balance in this sub-account.  In this example, we are going to deploy (2) Windows 2012 R2 Data Center Web Servers running
-  IIS. We will also build a test HTML page to show the load balancing services are functional at the end of configuration.</p>
-<ul>
-  <li><a href="https://t3n.zendesk.com/entries/21806469-Creating-and-Deleting-VLANs">Deploy a Web VLAN</a>&nbsp;in the 'Client A' sub-account within the appropriate data center.  Costs for VLANs can be found in our&nbsp;<a href="http://www.centurylinkcloud.com/estimator"
-   >Online Estimator</a>&nbsp;or your CenturyLink Cloud MSA. Once this job completes we recommend you&nbsp;<a href="https://t3n.zendesk.com/entries/26388584-Add-a-User-Friendly-Name-to-VLANs">apply a friendly name to this VLAN</a>.
-    &nbsp;In this sample we used WEB_10.100.187.0/24.</li>
-</ul>
-<p><img src="https://t3n.zendesk.com/attachments/token/4q318KazByfKgo2IxOOcXJJVo/?name=04.png" alt="04.png" />
-</p>
-<ul>
-  <li><a href="https://t3n.zendesk.com/entries/22603877-Creating-a-New-Enterprise-Cloud-Server">Create (2) Windows 2012 R2 Data Center Virtual Servers</a>&nbsp;into a Group called Web Servers. These VM's should be placed in the WEB_10.100.187.0/24
-    VLAN.</li>
-</ul>
-<p><img src="https://t3n.zendesk.com/attachments/token/o8FZbtjFWjYCHWsfHvKRXkCJD/?name=03.png" alt="03.png" />
-</p>
-<ul>
-  <li>Install IIS using the <a href="https://t3n.zendesk.com/entries/21807618-Using-Group-Tasks-to-Install-Software-and-Run-Scripts-on-Groups">Execute Package</a> function and <a href="https://t3n.zendesk.com/entries/56566374-CenturyLink-Cloud-Public-Blueprint-Packages"
-   >CenturyLink Cloud's public IIS 8 script</a>
-  </li>
-</ul>
-<p>(<strong>QUICK TIP</strong>: &nbsp;Save Time and build a blueprint to deploy (2) Web Servers into the Web VLAN and layer on the IIS 8 packages)</p>
-<ul>
-  <li>Use <a href="https://t3n.zendesk.com/entries/20914433-How-To-Configure-Client-VPN">Client VPN</a> to RDP into the (2) newly created Web Servers and create a test page named default.htm in the IIS root folder (C:\inetpub\wwwroot). Sample
-    basic HTML code is below: &nbsp;</li>
-</ul>
-<p>Web Server #1 default.htm file:</p>
-<p>&lt;header&gt;Client A NLB&lt;/header&gt;
-  <br />&lt;body&gt;Client A NLB Node #1&lt;/body&gt;</p>
-<p>Web Server #2 default.htm file:</p>
-<p>&lt;header&gt;Client A NLB&lt;/header&gt;
-  <br />&lt;body&gt;Client A NLB Node #2&lt;/body&gt;</p>
-<ul>
-  <li>Validate the pages load locally on the Web Servers by accessing http://localhost</li>
-</ul>
-<h3>Configure Intra Data Center Firewall Policies</h3>
-<p>Next, we must configure the parent account firewall in which the VPX(s) reside (NLB_10.100.97.0/24) to permit the appropriate HTTP(s) traffic and VPX Service Group health checks into the network in which the (2) Web Servers reside (WEB_10.100.187.0/24).</p>
-<ul>
-  <li>Navigate to the Firewall portion of Control on the 'Parent' Account.&nbsp;</li>
-  <li>Select the Source Account to be the 'Parent' Account.</li>
-  <li>Select the Destination Account to be 'Client A' Sub-Account.</li>
-  <li>Add a Firewall Rule as follows</li>
-</ul>
-<p><strong>Add Source Address</strong>
-</p>
-<p>Network: &nbsp;NLB_10.100.97.0/24</p>
-<p>Subnet Size: &nbsp;1</p>
-<p>Starting IP: &nbsp;&lt;RNAT IP of NLB Provided by Service Tasks&gt; &nbsp;In this sample, the RNAT IP is 10.100.97.101</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/o5exOahqkQ9URyMIeBRsNeE3w/?name=06.png" alt="06.png" />
-</p>
-<p><strong>Add&nbsp;Destination Address</strong> </p>
-<p>Network: &nbsp;WEB_10.100.187.0/24</p>
-<p>Subnet Size: 1 (or use another size depending on # of web servers)</p>
-<p>Starting IP address: &nbsp;&lt;Private IP address of your Web Servers in Client A sub-account&gt; &nbsp;In this sample, our web servers are 10.100.187.12 &amp; 13.</p>
-<p>(<strong>Tip</strong>: &nbsp;select the add destination address a 2nd time in this sample to add 10.100.187.13 to the same firewall rule.</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/gm54lHUyF8PTRZPpHTrcDi5ox/?name=07.png" alt="07.png" />
-</p>
-<p><strong>Add Ports</strong>
-</p>
-<p>Select HTTP(80) and PING, &nbsp;Optionally select HTTPS(443) if you plan to implement SSL</p>
-<p><strong><img src="https://t3n.zendesk.com/attachments/token/rdrvqZ0wSRFDAplQt91CxDdk2/?name=08.png" alt="08.png" /></strong>
-</p>
-<ul>
-  <li>Validate your new Firewall Rule and save it. We now have a Firewall Rule in place permitting tcp/80 and PING from the VPX RNAT IP (in a parent account) to (2) Virtual Web Servers in the Client A sub-account.</li>
-</ul>
-<p><img src="https://t3n.zendesk.com/attachments/token/y5rx2VVHZnW6Ip9A7MugA9ExH/?name=05.png" alt="05.png" />
-</p>
-<h3>Configure Citrix VPX Load Balancers</h3>
-<p>We now need to configure the VPX load balancer(s) to deliver services to 'Client A' web servers. In this phase we will build service groups, virtual servers (VIP) and update the VPX routes to appropriately route traffic to the networks in 'Client
-  A' sub-account. <strong>NOTE: &nbsp;This is not meant to be an all encompassing guide to configuring a Citrix VPX but just a basic sample use case to balance (2) web servers over HTTP in another sub-account and network.</strong> </p>
-<ul>
-  <li><a href="https://t3n.zendesk.com/entries/27216280-Dedicated-Load-Balancer-Basic-Management">Use the Dedicated Load Balancer Basic Management KB</a> to configure a Service Group, Virtual Server and health checks for PING &amp; TCP. 
-    In this sample use case we built the following configuration using the admin interface (10.100.97.100):</li>
-</ul>
-<p><strong>Service Group</strong>
-</p>
-<p>Service Group Name: &nbsp;CLIENT_A</p>
-<p>IP Members: &nbsp;10.100.187.12 &amp; 10.100.187.13 on Port 80</p>
-<p>Monitors: &nbsp;TCP &amp; PING</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/cA9JDXtJr6NQA4pgZMvXnJy7t/?name=20.png" alt="20.png" />
-</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/d3htA7CIO4hbo8bTkvT31wJ8L/?name=21.png" alt="21.png" />
-</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/tmmVmRelqXoopOTQWqosjkFnD/?name=22.png" alt="22.png" />
-</p>
-<p><strong>Virtual Servers</strong>
-</p>
-<p>Virtual Server Name: &nbsp;CLIENT_A_PROD_WEBSITE</p>
-<p>IP Address: &nbsp;&lt;IP from the reserved list during the service task portion of process&gt; &nbsp;In this example we used 10.100.97.103 from the reserved pool of VIPs</p>
-<p>Service Groups: &nbsp;CLIENT_A</p>
-<p>LB Method: &nbsp;Least Connection</p>
-<p>Persistence: &nbsp;None</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/gesJ0VAHS5T2LqPGEMXpgON4g/?name=30.png" alt="30.png" />
-</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/uZW1n90PGkXTYi9jeiMNiKNlf/?name=31.png" alt="31.png" />
-</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/kAvOa1ywV8xf0QG6lp10uPLDo/?name=32.png" alt="32.png" />
-</p>
-<ul>
-  <li>Navigate to Network, Routes in the VPX management UI. Create a route to the 'Client A' sub-account WEB_10.100.187.0/24 VLAN. <strong>TIP</strong>: &nbsp;The gateway IP will be the same gateway IP as the existing route 0.0.0.0. In this
-    use case we used the following configuration:</li>
-</ul>
-<p>Network: &nbsp;10.100.187.0</p>
-<p>Netmask: 255.255.255.0</p>
-<p>Gateway: 10.100.97.1 (Gateway of the NLB_10.100.97.0/24 VLAN in which VPX Resides)</p>
-<p>RNAT IP: &nbsp;10.100.97.101</p>
-<p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/Ydb7TSt11bOasYDWJOFUWeWoT/?name=40.png" alt="40.png" />
-</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/LSzWrXWqNsC39dudyG3vxo4ys/?name=41.png" alt="41.png" />
-</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/yxQ0YCE4PcvQezzC1hWrXZhDe/?name=42.png" alt="42.png" />
-</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/WwuhC3wlcVopT4HQBJw7qVxQ4/?name=43.png" alt="43.png" />
-</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/S9dNjYhCAMhmDsZUp9sH21bBU/?name=44.png" alt="44.png" />
-</p>
+### Overview
+While the CenturyLink Cloud platform provides a [self-service load balancing service](../Network/creating-a-self-service-load-balancing-configuration.md) for public facing web applications there may be times in which this model does not meet a customers use case or technical requirements. CenturyLink Cloud customers can license Citrix VPX dedicated virtual load balancers on a monthly use basis. Internal IT personnel, partners, resellers and other ISV's may wish to deploy dedicated Citrix VPX load balancers for consumption across their application portfolio or client base in a multi-tennant fashion. Using the Citrix VPX platform in a multi-tenant fashion can avoid costs of deploying devices for every application or customer and reduce administrative overhead.
 
-<h3>Add Public IP to VIP for External Access</h3>
-<p>Finally, as this use case is a public facing website we will use the <a href="https://t3n.zendesk.com/entries/49195400-How-To-Add-Public-IP-to-Virtual-Machine">Add Public IP</a> function of Control to perform a 1 to 1 NAT public IP to
-  the VIP (Virtual Server) created previously on 10.100.97.103. </p>
-<ul>
-  <li>Navigate to the VPX in Control (TIP: if you have an HA pair the VIPs will be assigned to the primary VPX). Choose Add Public IP. Choose the VIP 10.100.97.103 (previously built in the VPX configuration). Lastly, we want to expose HTTP(80).</li>
-</ul>
-<p><img src="https://t3n.zendesk.com/attachments/token/ibXZgkLMARihUw3CacpN7rHyD/?name=50.png" alt="50.png" />
-</p>
-<ul>
-  <li>The Public IP for this new NAT can be found in the Servers Portion of the Control UI. In this example the Public IP is 206.152.32.226</li>
-</ul>
-<p><img src="https://t3n.zendesk.com/attachments/token/O73UrfngTcsCRZbIY6S2HOxIB/?name=51.png" alt="51.png" />
-</p>
-<ul>
-  <li>Validate the (2) Virtual Web Servers for Client-A sub-account are delivering the Test Page created previously. Use the refresh button a few times to see the page is being delivered by a unique web server and the services are functional. </li>
-</ul>
-<p><img src="https://t3n.zendesk.com/attachments/token/TUOX5yKMphrCidcUsL9oWtWAP/?name=60.png" alt="60.png" /></p>
-<p><img src="https://t3n.zendesk.com/attachments/token/AOgNNYegdbkoUnCX9Pg6Nr87k/?name=61.png" alt="61.png" />
-</p>
+### Use Case
+This KB will provide a sample use case in which a highly available pair of Citrix VPX dedicated load balancers are deployed into multi-tier account hierarchy using CenturyLink Cloud Parent and Sub-accounts. The end state will deliver load balancing services to a sub-account of the parent providing account isolation while delivering secure load balancing services.
+
+### Prerequisites
+* A CenturyLink Cloud Account
+* Hands-On experience deploying Dedicated VPX Appliances and configuration
+* Hands-On experience working with Parent-Sub-Account hierarchies and Firewall self-service
+
+### Building a Parent and Sub-Account Hierarchy
+Each CenturyLink Cloud client will receive an initial account, this is the Parent Account.  This is the top level of a larger account hierarchy that can be created based on business needs. In this sample we will construct a simple set of 'Client' sub-accounts to the parent to simulate delivery of services to various unique customers of an ISV using CenturyLink Cloud to deliver their own unique service portfolio. The Account Structure will be as follows:
+
+  ![account hierarchy tree](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-01.png)
+
+* [Creating a sub-account](../Accounts & Users/creating-a-sub-account.md)
+* [Account Hierarchy User, Network Firewall Policy Primer](../Accounts & Users/account-hierarchy-user-network-and-firewall-policy-primer.md)
+* [Practical guide for using roles](../Accounts & Users/practical-guide-for-using-roles.md)
+
+### Deploy the Dedicated Citrix VPX Appliances
+Follow the [Deploy a dedicated Citrix VPX Appliance](../Service Tasks/deploy-a-dedicated-citrix-vpx-appliance.md) knowledge base and for additional information refer to the [Load Balancing Comparison Matrix](../Network/load-balancing-comparison-matrix.md)
+
+For this use case the following information was used.
+* The Management IP of the VPX(s) is 10.100.97.100
+* The RNAT IP of the VPX is 10.100.97.101
+* The VIP's reserved for the VPX are 10.100.97.103 through 10.100.97.113
+
+### Deploy Sub-Account Virtual Instances
+With a sub-account named 'Client A' deployed under the Parent Account, its now time to deploy virtual instances you wish to load balance in this sub-account.  In this example, we are going to deploy (2) Windows 2012 R2 Data Center Web Servers running IIS. We will also build a test HTML page to show the load balancing services are functional at the end of configuration.
+1. [Deploy a Web VLAN](../Network/creating-and-deleting-vlans.md) in the 'Client A' sub-account within the appropriate data center. Costs for VLANs can be found in our [Pricing Catalog](//www.ctl.io/pricing) or your CenturyLink Cloud MSA. Once this job completes we recommend you [apply a friendly name to this VLAN.](../Network/add-a-user-friendly-name-to-vlans.md) In this sample we used **WEB_10.100.187.0/24**.
+
+    ![web vlan](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-04.png)
+
+2. [Create (2) Windows 2012 R2 Data Center Virtual Servers](../Servers/creating-a-new-enterprise-cloud-server.md) into a Group called Web Servers. These VM's should be placed in the WEB_10.100.187.0/24 VLAN.
+
+    ![windows servers in group](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-05.png)
+
+3. Install IIS using the [Install IIS for Windows blueprint](../Blueprints/Install-IIS-on-Windows.md)
+4. Use [Client VPN](../Network/how-to-configure-client-vpn.md) to RDP into the (2) newly created Web Servers and create a test page named **default.htm** in the IIS root folder (C:\inetpub\wwwroot). Sample basic HTML code is below:
+
+    **Web Server 1 default.htm file:**
+    ```
+    <header>Client A NLB</header>
+    <body>Client A NLB Node #1</body>
+    ```
+
+    **Web Server 2 default.htm file:**
+    ```
+    <header>Client A NLB</header>
+    <body>Client A NLB Node #2</body>
+    ```
+
+    Validate the pages load locally on the Web Servers
+
+### Configure Intra Data Center Firewall Policies
+Next, we must configure the parent account firewall in which the VPX(s) reside (NLB_10.100.97.0/24) to permit the appropriate HTTP(s) traffic and VPX Service Group health checks into the network in which the (2) Web Servers reside (WEB_10.100.187.0/24).
+
+1. Navigate to the Firewall portion of Control on the 'Parent' Account.
+    * Select the Source Account to be the 'Parent' Account.
+    * Select the Destination Account to be 'Client A' Sub-Account.
+
+2. Add a Firewall Rule as follows:
+    * Source Address network: NLB_10.100.97.0/24
+    * Subnet Size: 1
+    * Starting IP: RNAT IP of NLB Provided by the Service Task team.  As provided earlier the RNAT IP is 10.100.97.101  
+
+      ![source address](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-06.png)
+
+    * Destination Address Network: WEB_10.100.187.0/24
+    * Subnet Size: 1 (or use another size depending on the number of web servers)
+    * Starting IP: Private IP address of your web servers in Client A sub-account.  Our (2) web servers were issued 10.100.187.12 and 10.100.187.13 in this example.  
+
+      **TIP:  Select Add Destination Address a 2nd time to add both Web Server private IPs to the same rule**
+
+      ![destination address](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-07.png)
+
+    * Select HTTP(80) and PING.  Optionally select HTTPS(443) if you plan to implement SSL
+
+      ![tcp ports](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-08.png)
+
+3. Validate your new Firewall Rule and save it. We now have a Firewall Rule in place permitting tcp/80 and PING from the VPX RNAT IP (in a parent account) to (2) Virtual Web Servers in the Client A sub-account.
+
+    ![completed firewall rule](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-09.png)
+
+### Configure Citrix VPX Load Balancers
+We now need to configure the VPX load balancer(s) to deliver services to 'Client A' web servers. In this phase we will build service groups, virtual servers (VIP) and update the VPX routes to appropriately route traffic to the networks in 'Client A' sub-account. **NOTE:** This is not meant to be an all encompassing guide to configuring a Citrix VPX but just a basic sample use case to balance (2) web servers over HTTP in another sub-account and network.
+
+1. Create a Service Group
+    * Service Group Name: CLIENT_A
+    * IP Members: 10.100.187.12 and 10.100.187.13 on Port 80
+
+      ![new service group](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-10.png)
+
+    * Monitors: TCP and PING
+
+      ![service group monitors](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-11.png)
+
+      ![service group completed](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-12.png)
+
+2. Create a Virtual Server
+    * Virtual Server Name: CLIENT_A_PROD_WEBSITE
+    * IP Address: IP from the reserved VIP list during the setup of the Citrix VPX. We used 10.100.97.103 from the reserved pool in this example.
+    * Service Groups: CLIENT_A
+
+      ![virtual server service group](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-13.png)
+
+    * LB Method: Least Connection
+    * Persistence: None
+
+      ![virtual server persistence](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-14.png)
+
+      ![virtual server completed](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-15.png)
+
+3. Create a route to the 'Client A' sub-account WEB_10.100.187.0/24 VLAN.  Navigate to Network, Routes in the VPX management UI. **TIP:** The gateway IP will be the same gateway IP as the existing route 0.0.0.0. In this use case we used the following configuration:
+    * Network: 10.100.187.0
+    * Netmask: 255.255.255.0
+    * Gateway: 10.100.97.1 (Gateway of the NLB_10.100.97.0/24 VLAN in which VPX Resides)
+
+      ![create route on vpx](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-16.png)
+
+      ![route added](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-19.png)
+
+4. Configure RNAT on the newly created route using the RNAT IP 10.100.97.101  
+
+    ![select configure rnat](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-17.png)
+
+    ![add rnat ip address](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-18.png)
+
+### Add Public IP to VIP for External Access
+Finally, as this use case is a public facing website we will use the [Add Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) function of Control to perform a 1 to 1 NAT public IP to the VIP (Virtual Server) created previously on 10.100.97.103.
+
+1. Navigate to the VPX in Control (TIP: if you have an HA pair the VIPs will be assigned to the primary VPX). Choose Add Public IP, select the VIP 10.100.97.103 (the virtual server created previously) and finally select HTTP(80).
+
+    ![add public ip](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-21.png)
+
+2. The Public IP for this new NAT can be found in the Servers Portion of the Control UI. In this example the Public IP is 206.152.32.226.
+
+    ![public ip in control](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-22.png)
+
+3. Validate the (2) Virtual Web Servers for Client-A sub-account are delivering the Test Page created previously. Use the refresh button a few times to see the page is being delivered by a unique web server and the services are functional.
+
+    ![public ip in control](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-23.png)
+
+    ![public ip in control](../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-24.png)

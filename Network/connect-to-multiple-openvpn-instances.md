@@ -3,7 +3,7 @@
   "date": "2-13-2014",
   "author": "Russ Malloy",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 ### Description

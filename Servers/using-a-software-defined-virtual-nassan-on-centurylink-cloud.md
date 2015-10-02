@@ -1,66 +1,127 @@
 {{{
-  "title": "Using a Software-Defined Virtual NAS/SAN on CenturyLink Cloud",
-  "date": "11-23-2014",
+  "title": "Using a Software-Defined Virtual NAS-SAN on CenturyLink Cloud",
+  "date": "8-12-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-Using a Software-Defined Virtual NAS/SAN on CenturyLink Cloud
-<p>Customers looking to operate CIFS, NFS or iSCSI services within the cloud platform can import software-defined virtual appliances via a <a href="http://www.centurylinkcloud.com/products/support/service-tasks">service task</a>. By using a <strong>qualified</strong> unified storage virtual appliance customers can deliver NAS based storage services to virtual instances, pool disks to exceed 1 TB disk limits imposed by the cloud platform or deliver legacy shared-storage iSCSI volumes for database clusters. In this knowledge base we will be using a <a href="http://www.softnas.com/">SoftNAS</a>&trade;&nbsp; Virtual Appliance. <a href="http://www.softnas.com/">SoftNAS</a>&trade; is a software-defined unified NAS/SAN storage solution for businesses that need powerful, frictionless and agile storage.</p>
-<h3>Supporting Information</h3>
-<p>CenturyLink Cloud provides no support for the SoftNAS&trade; virtual appliance. The goal of this KB is to provide a sample use case to deliver unified storage services within the parameters of the cloud platform. Customers are responsible for configuration and sizing of the virtual appliance resources according to the vendors best practices. There are a large number of configuration options/customization's not covered in this KB and customers should read the installation guides provided by SoftNAS&trade;. </p>
-<h3>Security Notes</h3>
-<p>In this sample deployment no security services were put in place around access to either iSCSI block or filesystem (CIFS, NFS) services. SoftNAS&trade; and the CenturyLink Cloud provide a wide range of authentication and security components customers can and should implement that are outside the scope of a basic functionality overview. </p>
+### Using a Software-Defined Virtual NAS/SAN on CenturyLink Cloud
+Customers looking to operate CIFS, NFS or iSCSI services within the cloud platform can import software-defined virtual appliances via a [service task](//www.ctl.io/products/support/service-tasks). By using an **ecosystem** unified storage virtual appliance customers can deliver and implement various storage models.
 
-<h3>Prerequisites</h3>
+* **NAS Services**-Provide CIFS or NFS services to virtual or bare metal servers across the CenturyLink Cloud.  
+* **Bare Metal**-Deliver high performance storage via block iSCSI or NAS to augment local SATA storage or create shared iSCSI block storage LUNs for Oracle.
+* **Object Storage**-Leverage our S3 Compatible Object Storage services to scale beyond the platform limits of virtual or bare metal servers.
+* **Pool Storage**-Pool virtual disks and S3 Compatible Object Storage to create large block iSCSI or NAS volumes for virtual or bare metal servers.
+* **High Availability**-Create highly available storage services in any combination of on-premise, CenturyLink Cloud or other leading Cloud vendors.  
+
+In this knowledge base we will be using our **ecosystem** [SoftNAS](//www.softnas.com) Virtual Appliance. [SoftNAS](//www.softnas.com) is a software-defined unified NAS/SAN storage solution for businesses that need powerful, frictionless and agile storage.
+
+### Security Notes
+In this sample deployment no security services were put in place around access to either iSCSI block or filesystem (CIFS, NFS) services. SoftNAS and the CenturyLink Cloud provide a wide range of authentication and security components customers can and should implement that are outside the scope of a basic functionality overview.
+
+### Prerequisites
 
 * A CenturyLink Cloud Account
-*<a href="http://www.centurylinkcloud.com/products/support/service-tasks">Service Task for OVF Import</a>
-* <a href="https://www.softnas.com/wp/purchase/">A licensed copy of SoftNAS&trade;</a>
+* [Service Task for OVF Import](//www.ctl.io/products/support/service-tasks)
+* [A licensed copy of SoftNAS](//www.softnas.com/wp/purchase)
+* Refer to the [SoftNAS Getting Started Guide](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md) for details on how to procure and deploy the SoftNAS virtual appliance.
 
-<h3>Basic Configuration of the Virtual Appliance</h3>
+### Example A: Configuration of the SoftNAS Virtual Appliance using Virtual Disks
 
-1. Once your SoftNAS virtual appliance is provisioned to the appropriate account via Service Task, login to Control, navigate to the Virtual Appliance, choose edit storage. Provision the appropriate number of RAW disks you wish to pool together into a larger storage pool. In this sample we've chosen to add 4 x 1 TB RAW Disks. NOTE: &nbsp;Understanding the <a href="https://t3n.zendesk.com/entries/21819996-Cloud-Server-Instance-Size-and-Performance">platform maximums</a> by VM type is important. We recommend you import your Virtual Appliance as a Standard VM type if you wish to use up to the 4 TB Maximum.
-<img src="https://t3n.zendesk.com/attachments/token/0ZsPgqKIA4veBnI7cAzmrFaLF/?name=01.png" alt="01.png" />
-2. Once the RAW disks are added, login to the SoftNAS StorageCenter, select disk devices. The RAW disks added via Control should be present. Quick Tip: &nbsp;use the refresh button if disks don't show up immediately.</p>
-<img src="https://t3n.zendesk.com/attachments/token/d4pSont7RJBqUiCxQbOCDBGdK/?name=02.png" alt="02.png" />
+1. Once your SoftNAS virtual appliance is provisioned to the appropriate account via Service Task, login to Control, navigate to the Virtual Appliance, choose edit storage. **Provision the appropriate number of disks you wish to pool together into a larger storage pool.** In this sample we've chosen to add 4 x 1 TB Disks. NOTE: Understanding the [platform maximums](../Servers/cloud-server-instance-size-and-performance.md) by VM type is important. We recommend you import your Virtual Appliance as a **Standard VM** type if you wish to use up to the 4 TB Maximum.
+
+    ![add disks](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-01.png)
+
+2. Once the disks are added, login to the SoftNAS StorageCenter, select disk devices. The disks added via Control should be present. Quick Tip: use the refresh button if disks don't show up immediately.
+
+    ![StorageCenter disk devices](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-02.png)
+
 3. Select the Partition All button and confirm you wish to create partitions on all the devices.
-<img src="https://t3n.zendesk.com/attachments/token/oI56Y7R1zEh96nYcQnATzhnwm/?name=03.png" alt="03.png" />
-4. In the SoftNAS StorageCenter navigate to Storage Pools and select the create icon. Provide a friendly Pool name and choose an appropriate level of RAID you wish to use on this group of RAW disks. In this example, we leveraged RAID0, striping as all RAW storage disks provisioned in CenturyLink Cloud already have data protection capabilities in the infrastructure. Select create.
-<img src="https://t3n.zendesk.com/attachments/token/IgA5AaqpTL3WWJ3C08ZAkcNIz/?name=04.png" alt="04.png" />
-<img src="https://t3n.zendesk.com/attachments/token/IeVWtKfwwueGpZpNw2HF99yGr/?name=05.png" alt="05.png" />
-5. If you plan to deliver iSCSI volumes you need to establish an create an iSCSI Target on the SoftNAS. Navigate to iSCSI Lun Targets in the SoftNAS StorageCenter and create a new target. the Default option 'Don't Create new LUN' is adequate as these will be created later.
-<img src="https://t3n.zendesk.com/attachments/token/0MXxRdYOWjhr2063hWF2iOrAr/?name=07.5.png" alt="07.5.png" />
-6. In the SoftNAS StorageCenter navigate to Volumes and LUNs and select the create icon. The Create Volume dialog box allows you to choose the type of Volume/LUN you wish to deploy. Choices include CIFS, NFS &amp; iSCSI.
-<strong>NAS (CIFS or NFS)</strong>
-  * Provide a volume name
-  * Choose the storage pool previously provisioned
-  * Select Filesystem (NFS, CIFS)
-  * You can choose to export this volume as NFS, CIFS or Both
-  * Choose the storage provisioning options: Thin or Thick
-  * Choose the storage optimization options: Compression and/or Deduplication
-  * Choose if you wish to leverage snapshots and their schedule.
-<img src="https://t3n.zendesk.com/attachments/token/oVVG69HLoCUca5kn0Ad9G4dmX/?name=06.png" alt="06.png" />
-<img src="https://t3n.zendesk.com/attachments/token/CQdtxA17BiBtBWDPGrL529GTE/?name=07.png" alt="07.png" />
-<strong>iSCSI Block Storage</strong>
-* Provide a volume name
-* Choose the storage pool previously provisioned
-* Select Block Device (iSCSI LUN) &amp; Share as iSCSI LUN
-* Choose the storage provisioning options: Thin or Thick
-* Choose the storage optimization options: Compression and/or Deduplication
-* Choose if you wish to leverage snapshots and their schedule.
-* Select the iSCSI LUN Target created in Step #5
-<img src="https://t3n.zendesk.com/attachments/token/WMcQ523BCP8rmfJOSH2HAF5m6/?name=08.png" alt="08.png" />
-<img src="https://t3n.zendesk.com/attachments/token/uhDPrDHGodnohoDn8djHGxTJo/?name=09.png" alt="09.png" />
+
+    ![create partitions](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-03.png)
+
+4. In the SoftNAS StorageCenter navigate to Storage Pools and select the create icon. Provide a friendly Pool name and choose an appropriate level of RAID you wish to use on this group of disks. In this example, we leveraged RAID0/striping, as all storage disks provisioned in CenturyLink Cloud already have data protection capabilities in the infrastructure. Select create.
+
+    ![create new storage pool](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-04.png)
+
+    ![storage pool created and online](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-05.png)
+
+5. If you plan to deliver iSCSI volumes you need to establish an create an iSCSI Target on the SoftNAS. Navigate to iSCSI Lun Targets in the SoftNAS StorageCenter and create a new target. The Default option 'Don't Create new LUN' is adequate as these will be created later.
+
+    ![create iscsi target](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-06.png)
+
+6. In the SoftNAS StorageCenter navigate to Volumes and LUNs and select the create icon. The Create Volume dialog box allows you to choose the type of Volume/LUN you wish to deploy. Choices include CIFS, NFS and iSCSI.
+
+    ##### NAS (CIFS or NFS)
+    * Provide a volume name
+    * Choose the storage pool previously provisioned
+    * Select Filesystem (NFS, CIFS)
+    * You can choose to export this volume as NFS, CIFS or Both
+    * Choose the storage provisioning options: Thin or Thick
+    * Choose the storage optimization options: Compression and/or Deduplication
+    * Choose if you wish to leverage snapshots and their schedule
+
+    ![create NFS Volume](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-07.png)
+
+    ![set snapshot on NFS](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-08.png)
+
+    ##### iSCSI Block Storage
+    * Provide a volume name
+    * Choose the storage pool previously provisioned
+    * Select Block Device (iSCSI LUN) &amp; Share as iSCSI LUN
+    * Choose the storage provisioning options: Thin or Thick
+    * Choose the storage optimization options: Compression and/or Deduplication
+    * Choose if you wish to leverage snapshots and their schedule
+    * Select the iSCSI LUN Target created in Step #5
+
+    ![create iscsi volume](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-09.png)
+
+    ![set iscsi target](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-10.png)
+
 7. Once completed the SoftNAS StorageCenter should show the volumes/LUNs you've created.
-<img src="https://t3n.zendesk.com/attachments/token/R4OkVbxVxrZAIImKMIYnrdSUe/?name=11.png" alt="11.png" />
-###Connecting to NAS or Block Storage on Windows
+
+    ![volumes list in StorageCenter](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-11.png)
+
+### Example B: Configuration of the SoftNAS Virtual Appliance using S3 Compatible Object Storage
+
+1. Once your SoftNAS virtual appliance is provisioned to the appropriate account via Service Task, login to Control, navigate to the Virtual Appliance, choose edit storage. **Provision the appropriate size and number of virtual disks you wish to leverage for Block Cache File.** In this sample we've chosen to create a 500GB virtual disk for cache.
+
+    ![add block cache file disk in control](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-19.png)
+
+2. Once the disk(s) are added, login to the SoftNAS StorageCenter, select disk devices. The disks added via Control should be present. Quick Tip: use the refresh button if disks don't show up immediately.
+
+3. Select the Partition All button and confirm you wish to create partitions on all the devices.
+
+    ![create partitions on cache file disk](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-15.png)
+
+4. In the SoftNAS StorageCenter navigate to Storage, disk devices.  Select **Add Device,** choose **CenturyLink Object Storage,** and then 'Next.'
+
+    ![create new s3 disk](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-16.png)
+
+5. In the **Add CenturyLink Cloud Disk Extender** screen input your Object Storage Access Key ID, Secret Access Key, Endpoint and bucket naming information.  Select the Block Cache File Device previously created and set its cache size as well as Encryption Password (for maximum security).  Finally, set your Disk Size.  Refer to the [SoftNAS documentation](//www.softnas.com/docs/softnas/v3/html-reference-guide/) for additional details and maximum sizes.
+
+    ![add cloud disk extender](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-17.png)
+
+6. A disk device should now be available to assign to a Storage Pool.
+
+    ![disk available to assign to pool](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-18.png)
+
+7.  Provision Storage Pool(s) and volumes as shown in **Example A beginning with step 4.**
+
+### Connecting to NAS or Block Storage on Windows
 The examples below are just examples of using a Windows 2012 R2 Virtual Instance to mount a CIFS and iSCSI Volume. Customers should follow standard NFS mount procedures for Linux Instances.
   * If you are leveraging a centralized Active Directory DNS we recommend you add an (A) record so the SoftNAS can be resolved via name or IP.
-  * To map a CIFS share use the command line to execute (or Map Network Drive in the Desktop) net use * \\&lt;nasip or name&gt;\&lt;share name&gt;. In this example the command was net use * \\softnas\cifs_share.
-<img src="https://t3n.zendesk.com/attachments/token/rsxU1iVZFiVq1Zm9qdWHskBwy/?name=13.png" alt="13.png" />
-  * To mount an iSCSI block volume locate the iSCSI initiator (built into Windows 2012, download for 2008 R2) and input the IP address of the SoftNAS virtual appliance, select quickconnect. Select the volumes and devices tab and choose auto configure. Use the disk management tools in Windows to bring online, initialize and format the newly presented iSCSI LUN.
-<img src="https://t3n.zendesk.com/attachments/token/Ej2UatZKKxHwufg6a0xCjknlH/?name=14.png" alt="14.png" />
-<img src="https://t3n.zendesk.com/attachments/token/VS3faxlm2uGEToqVUTBLJ9N4t/?name=15.png" alt="15.png" />
+  * To map a CIFS share use the command line to execute (or Map Network Drive in the Desktop).
 
+      ```
+        net use * \\nasip or name\share name. In this example the command was net use * \\softnas\cifs_share.
+      ```
+
+    ![Windows UNC Share Mapped](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-12.png)
+
+  * To mount an iSCSI block volume locate the iSCSI initiator (built into Windows 2012, download for 2008 R2) and input the IP address of the SoftNAS virtual appliance, select quickconnect. Select the volumes and devices tab and choose auto configure. Use the disk management tools in Windows to bring online, initialize and format the newly presented iSCSI LUN.
+
+    ![iscsi initiator properties](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-13.png)
+
+    ![iscsi initiator volumes and devices](../images/using-a-software-defined-virtual-nassan-on-centurylink-cloud-14.png)

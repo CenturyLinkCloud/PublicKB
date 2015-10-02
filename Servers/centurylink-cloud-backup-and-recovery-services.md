@@ -1,18 +1,22 @@
 {{{
   "title": "CenturyLink Cloud Backup and Recovery Services",
-  "date": "1-5-2015",
+  "date": "09-21-2015",
   "author": "Chris Little",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 The CenturyLink Cloud Platform provides clients with various integrated and custom solutions to protect and rapidly recovery data.
+
+### Exclusions
+* Managed Backup Customers
 
 ### Standard Server Backup &amp; Recovery Services
 All **Standard** Servers in the CenturyLink Cloud platform include a nightly file system backup of the Operating System's running state. These nightly backups start around 8pm (local server time) but are staggered to minimize impact on load. The backups will be retained based on choice during VM provisioning. **These backups are not application aware and as such do not provide transactional consistency. Refer to the Database and Exchange portions of this KB for options to meet this need.**
 
 * Standard Backup: 5 Days of rolling backups, retained within the local data center
-* Premium Backup: 14 Days of rolling backups, with copies stored locally and at a secondary regional data center. Data Center pairings can be found in the [DR Matrix](../Servers/disaster-recovery-comparison-matrix.md).
+* Premium Backup: 14 Days of rolling backups, with copies stored locally and the two most recent copies replicated to a secondary data center. Data Center pairings can be found in the [DR Matrix](../Servers/disaster-recovery-comparison-matrix.md).
 
 ### File Server Backup &amp; Recovery Services
 
@@ -60,7 +64,7 @@ Clients who implement application backup services using Object Storage can perfo
 
 ### How to Request Data Restoration
 
-To request service please submit a ticket to the CenturyLink Cloud NOC via <a href="https://t3n.zendesk.com/tickets/new">https://t3n.zendesk.com/tickets/new</a>. Include the following information:
+To request service please submit a ticket to the CenturyLink Cloud NOC. Include the following information:
 
   * Customer Name
   * Server Name
@@ -88,6 +92,12 @@ Virtual Machine backups are encrypted using AES-128 or higher during transfer be
 
 The virtual machine will be removed from the system based on what type of retention period is selected. Data will be removed from the system on the 6th or 15th day depending on retention chosen.
 
+**Can a recently deleted VM be restored with the original name previously used in Control?**
+
+No, we are not able to restore the VM with its previous name in Control after it has been deleted.
+
 **Do daily backups occur regardless of the VM's operating state?  (running, stopped, paused, archived)**
 
 VMs in running, stopped or paused states receive daily backups. VMs in the archived state do not receive daily backups.
+
+
