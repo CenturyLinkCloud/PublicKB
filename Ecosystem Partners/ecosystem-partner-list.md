@@ -1,6 +1,6 @@
 {{{
   "title": "Ecosystem Partner List",
-  "date": "10-01-2015",
+  "date": "10-02-2015",
   "author": "CenturyLink Ecosystem",
   "attachments": [],
   "contentIsHTML": false,
@@ -116,6 +116,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Double Take](../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md)   	| Blueprint    | Data replication    |
 | [SUREedge](../Ecosystem Partners/Marketplace Guides/getting-started-with-sureedge.md)   	| Blueprint    | Application mobility for DR and BC    |
 | [Saratoga Data Flume](../Ecosystem Partners/Marketplace Guides/getting-started-with-saratoga-data-flume-blueprint.md)   	| Blueprint    | File transfer acceleration software    |
+| [CommVault Simpana](../Ecosystem Partners/Marketplace Guides/getting-started-with-commvault-storage-blueprint.md) | Blueprint | Data Protection |
 
 ### Business Services
 
@@ -125,6 +126,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Akeneo](../Ecosystem Partners/Marketplace Guides/getting-started-with-akeneo-blueprint.md)   	| Blueprint    | Product Information Management    |
 | [Apex Datacom](../Ecosystem Partners/Marketplace Guides/getting-started-with-apex-datacom-call-me-essentials-edition-blueprint.md)   	| Blueprint    | "Call Me" Voice Widget    |
 | [CiviCRM](../Ecosystem Partners/Marketplace Guides/getting-started-with-civicrm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
+| [Conxio](../Ecosystem Partners/Marketplace Guides/getting-started-with-conxio-everywhere.md)   	| Blueprint    | Secure Communications Platform |
 | [Diaspora](../Ecosystem Partners/Marketplace Guides/getting-started-with-diaspora-blueprint.md)   	| Blueprint    | Private social networking    |
 | [Fat Free CRM](../Ecosystem Partners/Marketplace Guides/getting-started-with-fat-free-crm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
 | [Horde Groupware Webmail](../Ecosystem Partners/Marketplace Guides/getting-started-with-horde-blueprint.md)   	| Blueprint    | Mail, Calendar, Address Book, Tasks, and Notes Communication Suite    |
