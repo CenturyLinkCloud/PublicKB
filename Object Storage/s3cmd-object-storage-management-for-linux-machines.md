@@ -1,6 +1,6 @@
 {{{
   "title": "S3CMD - Object Storage Management for Linux Machines",
-  "date": "03-25-2015",
+  "date": "10-02-2015",
   "author": "Brian Button",
   "attachments": [],
   "contentIsHTML": true
@@ -194,7 +194,7 @@ S3CMD is an active open-source project, and as such is frequently updated. Depen
 <p>
 If your version is <strong>1.5.0</strong> or newer, then there are two ways to make this work correctly again. The first is to provide the <strong>--signature-v2</strong> argument to S3CMD, for example like <strong>s3cmd --signature-v2 ls</strong>. The argument tells S3CMD to revert to the original authentication strategy. The more permanent change is to add <strong>signature_v2 = True</strong> to the bottom of your .s3cfg file. That will force S3CMD to use the original authentication strategy every time the command is run.
 </p>
-<h4><a id="speed">Slow Transfer Speed?</a></h4>
+<h4><a id="speed">Way to improve the transfer speed</a></h4>
 <p>
 When uploading or downloading a large file, consider to put s3cmd in quiet mode (<strong>--no-progress</strong> option) to minimize the output to console (stdout), as stdout could potentially slow down the transfer process.
 </p>
