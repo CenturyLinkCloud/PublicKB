@@ -18,6 +18,9 @@
     </li>
     <li class="scroll-to-link">
     <a href="#version">Special note about S3CMD versions</a>
+	<li class="scroll-to-link">
+		<a href="#speed">Way to improve the transfer speed</a>
+    </li>
 </ul>
 
 <h4><a id="install">Installing S3CMD</a></h4>
