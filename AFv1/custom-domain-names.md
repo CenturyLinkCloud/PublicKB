@@ -33,7 +33,7 @@ This document is for users of AppFog v1. This document does not apply to the cur
 <p>For example:</p>
 <pre>$ af map {appname} www.example.com</pre>
 <h3 id="custom-domain-dns">Update your DNS Records</h3>
-<blockquote><strong>Note: </strong>If you intend to use SSL with your site, <strong><em>STOP HERE</em></strong> and go check out our <a href="AFv1//configuring-ssl-for-a-custom-domain.md">SSL for Custom Domains</a> documentation. It includes information on the different DNS configuration needed for SSL Endpoint termination.</blockquote>
+<blockquote><strong>Note: </strong>If you intend to use SSL with your site, <strong><em>STOP HERE</em></strong> and go check out our <a href="../configuring-ssl-for-a-custom-domain.md">SSL for Custom Domains</a> documentation. It includes information on the different DNS configuration needed for SSL Endpoint termination.</blockquote>
 <p>We recommend using the <code>www.</code> subdomain as your canonical domain. Here's how to do that:</p>
 <h4>Redirect Your Root Domain</h4>
 <p>At your DNS host, set up a redirect (302) from your root domain (<code>yourdomain.com</code>) to <code>www.yourdomain.com</code>.</p>
