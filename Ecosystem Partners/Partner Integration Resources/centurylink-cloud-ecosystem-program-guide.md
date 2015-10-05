@@ -20,8 +20,9 @@ The CenturyLink Marketplace Provider Program is designed to provide additional v
 
 This document explains the process for onboarding technology into the CenturyLink Marketplace Provider Program, and how progressively successful outcomes can be achieved in partnership with CenturyLink.
 
-###Joining The Marketplace Provider Program
-[Process Logo](../../images/centurylink-cloud-ecosystem-program-guide-ecosystem_process.png)
+### Joining The Marketplace Provider Program
+
+![Process Logo](../../images/centurylink-cloud-ecosystem-program-guide-ecosystem_process.png)
 
 Entry into the Ecosystem Program consists of two primary steps: **Application** and **Certification**. Once a potential technology is identified, the company is classified as an Applicant. Once the company becomes a Customer of CenturyLink Cloud and the Cloud Ecosystem Agreement is signed, the Applicant is referred to as a Candidate. Once the solution is certified, the Candidate becomes a **Certified Partner**.
 
@@ -51,7 +52,7 @@ Candidates have up to three months to complete any integration needed, validate 
 
 Please note the Partner technology must function with the standard CenturyLink Cloud feature set as no feature development on the part of the CenturyLink Cloud Development Center will be performed to enable a Candidate through the process. During this development period and throughout the term of the Program, the Partner will be provided access, on a limited basis, to CenturyLink Cloud Integration Engineers as needed for detailed technology questions and roadmap exploration.
 
-###Documentation
+### Documentation
 
 Two types of [KnowledgeBase](//www.ctl.io/knowledge-base) (KB) articles should be created for all Ecosystem Partner technologies: focused on Public end-users and Internal cloud support personnel.
 
@@ -86,6 +87,7 @@ CenturyLink supports technology partners that invest their valuable time and res
 | Eligibility for Professional Services Development | Included |
 | Listing On CenturyLink Cloud Website | Included |
 
+
 | **Gold Tier "Evangelism" Phase (500-5,000 points)** | Progression |
 | --------------------------------------------------- | ----------- |
 | _Integration Credit_ | _$7,000/mo_ |
@@ -97,13 +99,14 @@ CenturyLink supports technology partners that invest their valuable time and res
 | Successful Customer Deployment (Each) | 75 points |
 | Preferred Placement On CenturyLink Cloud Website | Included |
 
+
 | **Platinum Tier "Evangelism" Phase** | Progression |
 | ------------------------------------ | ----------- |
 | _Integration Credit_ | _$15,000/mo_ |
 | Eligibility For Managed Services Development | Included |
 | Global account teaming and strategic sales alignment | Included |
 
-###Partnership Responsibilities
+### Partnership Responsibilities
 After successful certification, the Certified Partner will be notified of acceptance at which time the CenturyLink Platform Enablement team will begin planning evangelism and communication efforts around the new successful integration. Cloud Marketplace Provider Partners will be responsible for a number of tasks in order to remain certified and eligible:
 
 **Business Development**
