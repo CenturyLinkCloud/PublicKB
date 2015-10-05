@@ -32,4 +32,4 @@ This document is for users of AppFog v1. This document does not apply to the cur
 <p>Once you've accepted an invitation to a Team, you can interact with the apps on the Team account from the command line tool. Simply use the "<code>-u</code>" flag:</p>
 <pre>$ af -u team@appfog.com update example-app</pre>
 <p>This command simply does an "<code>af update</code>", but acts on the "team@appfog.com" account.</p>
-<p>You can also stop, start, and restart apps, add services, modify environment variables, etc. The only command Team members don't have access to is <code>af passwd</code>. To see the full list of commands, check out the <a href="getting-started-overview.md/">af cli doc</a>.</p>
+<p>You can also stop, start, and restart apps, add services, modify environment variables, etc. The only command Team members don't have access to is <code>af passwd</code>. To see the full list of commands, check out the <a href="./getting-started-overview.md/">af cli doc</a>.</p>
