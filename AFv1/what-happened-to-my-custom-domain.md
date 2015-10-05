@@ -30,4 +30,4 @@ This document is for users of AppFog v1. This document does not apply to the cur
 <li>Follow these instructions to [add your custom domains](custom-domain-names.md).</li>
 </ol>
 <h3 id="getsupport">What If I Need Additional Help?</h3>
-<p>If you have any questions, need assistance with the upgrade process, or need help getting your custom domains working again (after <a href="https://www.appfog.com/pricing/">upgrading</a>), and you've exhausted our documentation, please check out our <a href="/home">support options</a>.</p>
+<p>If you have any questions, need assistance with the upgrade process, or need help getting your custom domains working again (after <a href="https://www.appfog.com/pricing/">upgrading</a>), and you've exhausted our documentation, please check out our <a href="/support">support options</a>.</p>
