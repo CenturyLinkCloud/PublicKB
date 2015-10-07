@@ -59,7 +59,7 @@ Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtua
 
 #### Connect to the server via OpenVPN
 1. Assume you have OpenVPN client setup for the CenturyLink Cloud account
-2. if not, please refer to ![How To Configure Client VPN](../network/how-to-configure-client-vpn.md)
+2. If not, please refer to ![How To Configure Client VPN](../network/how-to-configure-client-vpn.md)
 
 #### Steps to deploy ownCloud to an existing server 
 1. Download the ownCloud installation from [ownCloud.org](https://owncloud.org/install/)
@@ -84,14 +84,18 @@ Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtua
 		{
 			cd /etc/apache2
 			mkdir ssl
-			sudo openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -out /etc/apache2/ssl/server.crt -keyout /etc/apache2/ssl/server.key
+			sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -out /etc/apache2/ssl/server.crt -keyout /etc/apache2/ssl/server.key
 			sudo ln -s /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-enabled/000-default-ssl.conf
 
 		}
 		```
 		- Edit the following two parameters to reflect the location of the certificate:
+		```
+		{
 		SSLCertificateFile    /etc/apache2/ssl/server.crt
 		SSLCertificateKeyFile /etc/apache2/ssl/server.key
+		}
+		```
 
 	2. Enable SSL on the web server:
 		```
@@ -107,7 +111,7 @@ Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtua
 	2. Point the web browser to the private address of the ownCloud server
 	3. The ownCloud configuration page will appear
 	<p>![configuration](../images/owncloud/owncloud-setup-first.png)<p>
-	4. Click on Storage and Database, select MySQL
+	4. Click on ***Storage and Database***, select ***MySQL***
 	5. Using the information from DBaaS to complete the information, the format for the host is IP_Address:port (e.g. 192.168.1.1:45678)
 	<p>![ownCloud database input](../images/owncloud/owncloud-setup-2nd.png)<p>
 	6. Click "Finish Setup", the welcome page will display <p>![ownCloud Welcome](../images/owncloud/owncloud-welcome.png)<p>
@@ -123,14 +127,14 @@ Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtua
 		
 4. **Configure ownCloud to utilize SMTP Relay**
 	1. Configure SMTP Relay [SMTP Relay](../Mail/smtp-relay-services-simple.md)
-	2. From the owncloud main page, select "Admin" from the user account ![drop down menu](../images/owncloud/oc-drop)
-	3. Select "Mail Server" from the left pane     <p>![Mail Server](../images/owncloud/mail-server.png)<p>
-	4. Configurae the SMTP Relay user based on SMTP RElay information from the portal <p>![mail server config](../images/owncloud/oc-mail-relay-account.png)<p>
+	2. From the owncloud main page, select ***Admin*** from the user account ![drop down menu](../images/owncloud/oc-drop-down.png)
+	3. Select ***Mail Server*** from the left pane     <p>![Mail Server](../images/owncloud/mail-server.png)<p>
+	4. Configurae the SMTP Relay user based on SMTP Relay information from the portal <p>![mail server config](../images/owncloud/oc-mail-relay-account.png)<p>
 	5. Use the test function to verify the account information
 
 5. **Configure ownCloud to utilize Object storage rather than local storage**
 	1. Depending on the version of ownCloud, the options of utilizing Object Storage are different, please see [here](https://owncloud.com/owncloud-server-or-enterprise-edition/)
-	2. ownCloud Server supports Local storage, GlusterFS/Red Hat Storage, OpenStack Swift as primary storage; Enterprise Edition supports additional primary storage with Amazon S3, Ceph S3
+	2. ownCloud Server supports Local storage, GlusterFS/Red Hat Storage, OpenStack Swift as primary storage; Enterprise Edition supports additional primary storage with S3 compatiable storage
 	3. In order to utilize Object Storage for primary storage, edit config.php (default location: /var/www/owncloud/config/) with the Object Storage creditial, like the example below:
 	
 	```
@@ -140,7 +144,7 @@ Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtua
         'key' => 'xxxxxxxxxxxxx',
         'secret' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
         'bucket' => 'owncloud',
-        'region' => 'ca.tier3.io'
+        'region' => 'canada.os.ctl.io'
 		
 	}
 	```
