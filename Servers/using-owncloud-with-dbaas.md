@@ -20,7 +20,7 @@ For more information, please visit [http://owncloud.org](http://owncloud.org)
 CenturyLink Cloud Users
 
 ### Impact
-After reading this article, the user can configure a customized ownCloud environment to utilize DBaaS, mail relay and Object storage (Enterprise edition) to minimize adminstriation for local resources
+After reading this article, the user can configure a customized ownCloud environment to utilize DBaaS, mail relay and Object storage (Enterprise edition) to minimize administration for local resources
 
 
 ### Prerequisite
@@ -54,10 +54,10 @@ After reading this article, the user can configure a customized ownCloud environ
   <p>![add trusted-domain](../images/owncloud/oc-trusted-domain-2.png)<p>
 
 ### Deploying ownCloud on a New Server
-Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtual server](../Servers/how-to-create-customer-specific-os-templates.md) or [Create a bare metal server for a private deployment](../../Servers/creating-a-new-bare-metal-server.md))
+Create a Linux server in CenturyLink Cloud using the following knowledge articles (For virtual server, [Create a virtual server](../Servers/how-to-create-customer-specific-os-templates.md) or [Create a bare metal server](../../Servers/creating-a-new-bare-metal-server.md) for a private deployment)
 
 #### Create a MySQL instance on CenturyLink DBaaS
-1. Using [Create a MySQL instance on CenturyLink DBaaS](../Database/getting-started-with-MySQL-DBaaS.md) knowledge article to create a database instance
+1. Use [Create a MySQL instance on CenturyLink DBaaS](../Database/getting-started-with-MySQL-DBaaS.md) knowledge article to create a database instance
 2. Note down the user name and the connection string from the setup <p>![DBaaS](../images/owncloud/dbaas.png)<p>
 3. Download the certificate to configure secure connectivity to DBaaS
 
@@ -69,7 +69,7 @@ Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtua
 1. Download the ownCloud installation from [ownCloud.org](https://owncloud.org/install/)
 2. Look for the package for the installed OS, this example will use Ubuntu 14.x 
 3. ownCloud supports CentOS, Debian, RHEL, Ubuntu and [more](https://software.opensuse.org/download/package?project=isv:ownCloud:community&package=owncloud)
-4. For Ubuntu 14.x, downdload the ownCloud package and add the repository key to apt (this key will updates periodically).
+4. For Ubuntu 14.x, download the ownCloud package and add the repository key to apt (this key will updates periodically).
 ```
 {
 	wget http://download.opensuse.org/repositories/isv:ownCloud:community/xUbuntu_14.10/Release.key
@@ -80,7 +80,7 @@ Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtua
 }
 ```
 2. **Enable SSL**
- - In order to enable SSL, a certifcate is required.  Either a self signed certifcate or your own certificate can be used.  
+ - In order to enable SSL, a certificate is required.  Either a self-signed certificate or your own certificate can be used.  
  - The following gives an example of self signed certificate with an expiration date of 365 days :
 	1. Create the certificate:
 
@@ -120,7 +120,7 @@ Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtua
 	<p>![ownCloud database input](../images/owncloud/owncloud-setup-2nd.png)<p>
 	6. Click "Finish Setup", the welcome page will display <p>![ownCloud Welcome](../images/owncloud/owncloud-welcome.png)<p>
 	7. Download the certificate from Database as a Service to the ownCloud server to enable secure communication between the database and the ownCloud server.
-		- Add the following to section to the config.php file (defualt location: /var/www/owncloud/config/)
+		- Add the following to section to the config.php file (default location: /var/www/owncloud/config/)
 		```
 		{   'dbdriveroptions' =>
 				array (
@@ -133,13 +133,13 @@ Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtua
 	1. Configure SMTP Relay [SMTP Relay](../Mail/smtp-relay-services-simple.md)
 	2. From the owncloud main page, select ***Admin*** from the user account <p>![drop down menu](../images/owncloud/oc-drop-down.png)<p>
 	3. Select ***Mail Server*** from the left pane     <p>![Mail Server](../images/owncloud/mail-server.png)<p>
-	4. Configurae the SMTP Relay user based on SMTP Relay information from the portal <p>![mail server config](../images/owncloud/oc-mail-relay-account.png)<p>
+	4. Configure the SMTP Relay user based on SMTP Relay information from the portal <p>![mail server config](../images/owncloud/oc-mail-relay-account.png)<p>
 	5. Use the test function to verify the account information
 
 5. **Configure ownCloud to utilize Object storage rather than local storage**
 	1. Depending on the version of ownCloud, the options of utilizing Object Storage are different, please see [here](https://owncloud.com/owncloud-server-or-enterprise-edition/)
-	2. ownCloud Server supports Local storage, GlusterFS/Red Hat Storage, OpenStack Swift as primary storage; Enterprise Edition supports additional primary storage with S3 compatiable storage
-	3. In order to utilize Object Storage for primary storage, edit config.php (default location: /var/www/owncloud/config/) with the Object Storage creditial, like the example below:
+	2. ownCloud Server supports Local storage, GlusterFS/Red Hat Storage, OpenStack Swift as primary storage; Enterprise Edition supports additional primary storage with S3 compatible storage
+	3. In order to utilize Object Storage for primary storage, edit config.php (default location: /var/www/owncloud/config/) with the Object Storage credential, like the example below:
 	
 	```
 	{	'objectstore' => array(
