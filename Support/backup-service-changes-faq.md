@@ -83,7 +83,7 @@ A policy is defined by the user, and includes:
 
 From there, users associate a policy with a server and then specify the target region for the backup. A user can have multiple policies in their account; policies can have one or more servers. Further servers can have more than one policy.
 
-### My requirements for governance may not be met by the Simple Backup Service. What are my options? Can I continue to use Standard and Premium storage indefinately?
+### My requirements for governance may not be met by the Simple Backup Service. What are my options? Can I continue to use Standard and Premium storage indefinitely?
 
 Standard and Premium Storage will not be available for continued use once they are retired from a data center; if you have questions about options, please contact us at [help@ctl.io](mailto:help@ctl.io).
 
