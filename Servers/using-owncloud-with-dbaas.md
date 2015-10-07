@@ -54,11 +54,12 @@ After reading this article, the user can configure a customized ownCloud environ
   <p>![add trusted-domain](../images/owncloud/oc-trusted-domain-2.png)<p>
 
 ### Deploying ownCloud on a New Server
-Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtual server](../Servers/how-to-create-customer-specific-os-templates.md) or [Create a bare metal server for total isolated deployment](../../Servers/creating-a-new-bare-metal-server.md))
+Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtual server](../Servers/how-to-create-customer-specific-os-templates.md) or [Create a bare metal server for a private deployment](../../Servers/creating-a-new-bare-metal-server.md))
 
-#### [Create a MySQL instance on CenturyLink DBaaS](../Database/getting-started-with-MySQL-DBaaS.md)
-1. Note down the user name and the connection string from the setup <p>![DBaaS](../images/owncloud/dbaas.png)<p>
-2. Download the certificate to configure secure connectivity to DBaaS
+#### Create a MySQL instance on CenturyLink DBaaS
+1. Using [Create a MySQL instance on CenturyLink DBaaS](../Database/getting-started-with-MySQL-DBaaS.md) knowledge article to create a database instance
+2. Note down the user name and the connection string from the setup <p>![DBaaS](../images/owncloud/dbaas.png)<p>
+3. Download the certificate to configure secure connectivity to DBaaS
 
 #### Connect to the server via OpenVPN
 1. Assume you have OpenVPN client setup for the CenturyLink Cloud account
