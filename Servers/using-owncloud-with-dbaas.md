@@ -20,7 +20,7 @@ For more information, please visit [http://owncloud.org](http://owncloud.org)
 CenturyLink Cloud Users
 
 ### Impact
-This article walks through an installation and customization of ownCloud package install for greater customization to utilize DBaaS, mail relay and Object storage (Enterprise edition) to minimize adminstriation for local resources
+After reading this article, the user can configure a customized ownCloud environment to utilize DBaaS, mail relay and Object storage (Enterprise edition) to minimize adminstriation for local resources
 
 
 ### Prerequisite
@@ -40,18 +40,21 @@ This article walks through an installation and customization of ownCloud package
 - After adding a public IP for OwnCloud perform the following actions:
   - Edit the web server configuration files in /etc/apache2/sites-enabled as follows:
     ```
+	{
     DocumentRoot "/var/www/owncloud/"
     # Alias /owncloud/ "/var/www/owncloud/"
     # Alias /owncloud "/var/www/owncloud"
+	}
     ```
   - Restart Apache using *sudo  service apache2 restart*
-  - Access the server's public IP address using a web browser (with VPN still connected)
-  - ownCloud setup will prompt to add the new IP address as a "trusted domain" <p>![trusted domain](../images/owncloud/oc-trusted-domain.png)<p><p>![add trusted-domain](../images/owncloud/oc-trusted-domain-2.png)<p>
-  - Click on "Add "IP address" as a trusted domain", it will redirect to the private IP address to create the necessary entries to the owncloud configuration file 
+  - (The following steps will enable management of ownCloud from the public IP address)
+		- Access the server's public IP address using a web browser (with VPN still connected)
+		- ownCloud setup will prompt to add the new IP address as a "trusted domain" <p>![trusted domain](../images/owncloud/oc-trusted-domain.png)<p>
+		- Click on "Add "IP address" as a trusted domain", it will redirect this request to the private IP address to create the necessary entries to the owncloud configuration file 
   <p>![add trusted-domain](../images/owncloud/oc-trusted-domain-2.png)<p>
 
 ### Deploying ownCloud on a New Server
-Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtual server](../Servers/how-to-create-customer-specific-os-templates.md) or [Create a bare metal server for total isolation](../../Servers/creating-a-new-bare-metal-server.md)
+Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtual server](../Servers/how-to-create-customer-specific-os-templates.md) or [Create a bare metal server for total isolated deployment](../../Servers/creating-a-new-bare-metal-server.md))
 
 #### [Create a MySQL instance on CenturyLink DBaaS](../Database/getting-started-with-MySQL-DBaaS.md)
 1. Note down the user name and the connection string from the setup <p>![DBaaS](../images/owncloud/dbaas.png)<p>
@@ -127,7 +130,7 @@ Create a Linux server in CenturyLink Cloud (For virtual server, [Create a virtua
 		
 4. **Configure ownCloud to utilize SMTP Relay**
 	1. Configure SMTP Relay [SMTP Relay](../Mail/smtp-relay-services-simple.md)
-	2. From the owncloud main page, select ***Admin*** from the user account ![drop down menu](../images/owncloud/oc-drop-down.png)
+	2. From the owncloud main page, select ***Admin*** from the user account <p>![drop down menu](../images/owncloud/oc-drop-down.png)<p>
 	3. Select ***Mail Server*** from the left pane     <p>![Mail Server](../images/owncloud/mail-server.png)<p>
 	4. Configurae the SMTP Relay user based on SMTP Relay information from the portal <p>![mail server config](../images/owncloud/oc-mail-relay-account.png)<p>
 	5. Use the test function to verify the account information
