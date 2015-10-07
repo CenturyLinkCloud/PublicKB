@@ -5,7 +5,12 @@
   "attachments": [],
   "contentIsHTML": false
 }}}
-### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.
+### IMPORTANT NOTE
+
+CenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
+
+During the Limited Beta there is no production Service Level Agreement.
+
 ## Overview
 
 CenturyLink Cloud WordPress as a Service runs in the CenturyLink Cloud utilizing the latest stable WordPress release.  System Specifactions and limitations have been chosen to maximize uptime, fulfill business needs, and ensure the security of customer's sites.
@@ -17,12 +22,11 @@ CenturyLink Cloud WordPress as a Service runs in the CenturyLink Cloud utilizing
 * Server Specs
 
   * Disk Space - 1GB
-  * RAM - 128MB
+  * RAM - 192MB
 
 * Software Specs
   * Nginx
   * MySQL
-  * phpMyAdmin
 
 #### Business Plan Specifications
 

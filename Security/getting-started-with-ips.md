@@ -3,7 +3,8 @@
   "date": "08-11-2015",
   "author": "Stephanie Wong",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 ### Overview
@@ -25,44 +26,55 @@ This Blueprint is for the actual installation and activation of the IPS service 
 ### Supported Managed Operating Systems
 * Red Hat Enterprise Linux 5 (64-bit only)
 * Red Hat Enterprise Linux 6 (64-bit only)
-* Microsoft Windows Server 2008 (64-bit only)
-* Microsoft Windows Server 2012 (64-bit only)
+* Microsoft Windows Server 2008 Standard R2 (64-bit only)
+* Microsoft Windows Server 2008 Enterprise (64-bit only)
+* Microsoft Windows Server 2008 Enterprise R2 (64-bit only)
+* Microsoft Windows Server 2008 Datacenter (64-bit only)
+* Microsoft Windows Server 2008 Datacenter R2 (64-bit only)
+* Microsoft Windows Server 2012 Datacenter (64-bit only)
+* Microsoft Windows Server 2012 Datacenter R2 (64-bit only)
+
+
 
 ### Installation Process
 
-1. Search for **Intrusion Prevention** in the Blueprint Library. Then, click **Intrusion Prevention Install RHEL**.  
+1. Go into the **Blueprints Library**.
 
-  ![Control Portal](../images/gettingIPS_controlportal.png)
+  ![Control Portal](../images/client-security/gettingIPS_controlportal.png)
 
-  ![Notification Update RHEL](../images/gettingIPS_rhel_blueprintname.png) ![Notification Update Windows](../images/gettingIPS_windows_blueprintname.png)
+2. Search for **Install Intrusion Prevention** in the Refine Results section. Then, click **Install Intrusion Prevention on Linux** or **Install Intrusion Prevention on Windows**.  
 
-2. Click the **deploy blueprint** button.  
+  ![Search Install Linux](../images/client-security/gettingIPS_rhel_blueprintname.png) ![Notification Update Windows](../images/client-security/gettingIPS_windows_blueprintname.png)
 
-  ![Configure Notifications RHEL](../images/gettingIPS_rhel_configure.png)
+3. Click the **deploy blueprint** button.  
 
-3. From the **Execute Server** drop down list, select the appropriate virtual machine.  Enter and confirm the User Password.  Click the **next: step 2** button.  
+  ![Configure Install Linux](../images/client-security/gettingIPS_rhel_configure.png)
 
-  ![Configure Notifications RHEL Fields](../images/gettingIPS_rhel_blueprintfields.png)
+4. From the **Execute on Server** drop down list, select the appropriate virtual machine. Enter and confirm the User Password.  Click the **next: step 2** button.  
 
-4. Review the Blueprint parameters and click **deploy Blueprint**.  
+  ![Configure Notifications RHEL Fields](../images/client-security/gettingIPS_rhel_blueprintfields.png)
 
-  ![Deploy Blueprint](../images/gettingIPS_rhel_deploy.png)
+5. Review the Blueprint parameters and click **deploy blueprint**.  
+
+  ![Deploy Blueprint](../images/client-security/gettingIPS_rhel_deploy.png)
 
   **Note:** The Blueprint displays each step taken and its status during provisioning.  
 
-  ![Blueprint Status Log](../images/gettingIPS_rhel_logstatus.png)
+  ![Blueprint Status Log](../images/client-security/gettingIPS_rhel_logstatus.png)
 
-5. An email notification is sent to the initiator of the Blueprint for both queuing and completion.
+6. An email notification is sent to the initiator of the Blueprint for both queuing and completion.
 
 ### Agent Billing & Deactivation
 
-Once the IPS Agent is installed on a VM, it will incur an hourly charge until the uninstall blueprint is executed successfully.  If a VM is to be decommissioned, the agent MUST be deactivated to avoid on-going charges.
+Once the IPS Agent is installed on a VM, it will incur an hourly charge until the uninstall blueprint is executed successfully.
+
+**Note:** If a VM is to be decommissioned, the agent MUST be deactivated to avoid on-going charges.
 
 ### Support
 
-If you need assistance, please send initial contact to [help@ctl.io](mailto:help@ctl.io).  You will receive an automated reply with step-by-step instructions on setting up a Zendesk user account.  The Zendesk account will allow for future engagements with customer service.
+If you need assistance, please send initial contact to [help@ctl.io](mailto:help@ctl.io). You will receive an automated reply with step-by-step instructions on setting up a Zendesk user account. The Zendesk account will allow for future engagements with customer service.
 
-Note: If you do not setup a Zendesk user account, support requests may get filtered as spam in the ticketing system.
+**Note:** If you do not setup a Zendesk user account, support requests may get filtered as spam in the ticketing system.
 
 ### Frequently Asked Questions
 
@@ -74,7 +86,7 @@ Not at this time, if you'd like to see this feature, please contact [features@ct
 
 Platform CenturyLink’s IPS service helps ensure secure protection against your Virtual Machine (VM) from known intrusion patterns that hackers utilize. It also allows you to spend less time on the maintenance of your system, instead allowing you to focus on the tasks for your core business. We will do the patching and ensure that all agents have up-to-date signatures for possible attacks.
 
-**How do I configure the notifications settings to send alerts to?**
+**How do I configure the notifications settings to send alerts?**
 
 Follow the process in the [Configuring IPS Notifications article](configuring-ips-notifications.md).
 
@@ -84,4 +96,4 @@ Yes, we are working on adding additional OSes. If you have a specific OS you wou
 
 **If I decommission a Virtual Machine, do I need to uninstall the IPS agent?**
 
-Yes, you still need to uninstall the IPS agent to avoid unnecessary charges.  You can uninstall the agent via the uninstall IPS blueprint.
+Yes, you still need to uninstall the IPS agent to avoid unnecessary charges. You can uninstall the agent via the uninstall IPS blueprint.

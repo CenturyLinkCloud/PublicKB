@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Backup and Recovery Services",
-  "date": "7-8-2015",
+  "date": "09-21-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -92,6 +92,12 @@ Virtual Machine backups are encrypted using AES-128 or higher during transfer be
 
 The virtual machine will be removed from the system based on what type of retention period is selected. Data will be removed from the system on the 6th or 15th day depending on retention chosen.
 
+**Can a recently deleted VM be restored with the original name previously used in Control?**
+
+No, we are not able to restore the VM with its previous name in Control after it has been deleted.
+
 **Do daily backups occur regardless of the VM's operating state?  (running, stopped, paused, archived)**
 
 VMs in running, stopped or paused states receive daily backups. VMs in the archived state do not receive daily backups.
+
+

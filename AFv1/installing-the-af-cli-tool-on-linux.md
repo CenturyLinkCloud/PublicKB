@@ -50,7 +50,7 @@ This document is for users of AppFog v1. This document does not apply to the cur
 <p>Note: I <em>did not</em> use <code>sudo</code> for this. That is best practice to prevent the need to use it when making CLI commands.</p>
 <h4>Step II: Activate RVM.</h4>
 <p>If you noticed during the installation of RVM, it said:</p>
-<blockquote>To start using RVM you need to run `source /home/af/.rvm/scripts/rvm`</blockquote>
+<pre><code>To start using RVM you need to run `source /home/af/.rvm/scripts/rvm`</pre></code>
 <p>So you will use the following in your current shell window.</p>
 <pre>source ~/.rvm/scripts/rvm</pre>
 <h4>Step III: Install the AF gem.</h4>

@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with WordPress as a Service",
-  "date": "07-17-2015",
+  "date": "09-16-2015",
   "author": "Bill Burge",
   "attachments": [],
   "contentIsHTML": false
@@ -21,6 +21,7 @@ CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-
 ### Prerequisites
 
 * Access to the CenturyLink Cloud platform as an authorized user.
+* [A CenturyLink Object Storage Access Key ID, Secret Access Key, and Bucket Name](wordpress-persistent-storage-configuration.md)
 
 ## Configuring a New WordPress Site
 
@@ -36,11 +37,21 @@ CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-
 
   ![](../images/wp_getting_started/wp_getting_started_3.png)
 
-4. Chose a Plan, input the Name for your site and your preferred password, and click Create
+4. Chose a Plan, input the following information, and click Create
+  
+  * __Name:__
+  * __Password:__
+  * __Repeat Password:__
+  
+  Attach object storage bucket.
+  
+  * __Access Key ID:__
+  * __Secret Access Key:__
+  * __Bucket Name:__
 
   ![](../images/wp_getting_started/wp_getting_started_4.png)
 
-5. When created, you will then see the credentials for your WordPress site, and its associated phpMyAdmin and GitHub repository.
+5. When created, you will then see the credentials for your WordPress site and its associated and git repository.
 
   ![](../images/wp_getting_started/wp_getting_started_5.png)
 
@@ -66,13 +77,9 @@ A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge b
 
 A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge base article for manually migrating a WordPress site to CenturyLink Cloud](wordpress-site-migration-to-centurylink-cloud.md).
 
-**Q: Can I have persistent storage with CenturyLink Cloud WordPress as a Service?**
-
-A: WordPress persistent storage must be [configured  with CenturyLink Cloud Object Storage](wordpress-persistent-storage-configuration.md).
-
 **Q: How do I access the MySQL database for my WordPress Site?**
 
-A: You can [access your WordPress database using phpMyAdmin](wordpress-database-access-with-phpmyadmin.md).
+A: You can [access your WordPress database using external tools](wordpress-database-access-with-external-tools.md).
 
 **Q: How do I install plugins and themes to my WordPress Site?**
 

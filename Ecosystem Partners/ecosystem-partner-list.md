@@ -1,6 +1,6 @@
 {{{
   "title": "Ecosystem Partner List",
-  "date": "08-26-2015",
+  "date": "09-29-2015",
   "author": "CenturyLink Ecosystem",
   "attachments": [],
   "contentIsHTML": false,
@@ -27,6 +27,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Apache HTTP Server](../Managed Services/getting-started-with-managed-apache.md)   	| Blueprint (Managed)   | Multi-purpose web server    |
 | [Apache Tomcat Server](../Managed Services/getting-started-with-managed-tomcat.md)   	| Blueprint (Managed)   | Web application server    |
 | [CloudMine](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudmine-blueprint.md)   	| Blueprint    | Mobile backend    |
+| [Elastic COBOL Developer](../Ecosystem Partners/Marketplace Guides/getting-started-with-elastic-cobol.md)     | Blueprint | Legacy COBOL Code migration |
 | [LAMP](../Ecosystem Partners/Marketplace Guides/getting-started-with-lamp-stack-blueprint.md)   	| Blueprint    | Linux, Apache, MariaDB/MySQL, and PHP/Perl/Python bundle    |
 | [Magento](../Ecosystem Partners/Marketplace Guides/getting-started-with-magento-blueprint.md)   	| Blueprint    | Ecommerce Shopping cart    |
 | [Microsoft Internet Information Services (IIS)](../Managed Services/getting-started-with-managed-microsoft-iis.md)   	| Blueprint (Managed)   | Web application server    |
@@ -66,6 +67,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Codiad](../Ecosystem Partners/Marketplace Guides/getting-started-with-codiad-blueprint.md)   	| Blueprint    | Development Framework    |
 | [GitLab](../Ecosystem Partners/Marketplace Guides/getting-started-with-gitlab-blueprint.md)   	| Blueprint    | Code collaboration repository    |
 | [Jenkins](../Ecosystem Partners/Marketplace Guides/getting-started-with-jenkins-blueprint.md)   	| Blueprint    | Continuous integration system    |
+| [Microsoft Team Foundation Server](..//Ecosystem Partners/Marketplace Guides/getting-started-with-microsoft-tfs.md)    | Blueprint     | Development team collaboration   |
 | [Phabricator](../Ecosystem Partners/Marketplace Guides/getting-started-with-phabricator-blueprint.md)   	| Blueprint    | Code Collaboration Suite    |
 | [Pivotal Cloud Foundry](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-cloud-foundry.md)   	| Blueprint    | Cloud Foundry PaaS    |
 | [Pootle](../Ecosystem Partners/Marketplace Guides/getting-started-with-pootle-blueprint.md)   	| Blueprint    | Translation Management   |
@@ -100,14 +102,16 @@ Quickly deploy and successfully use software and technology from any of our cert
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
-| [SoftNAS](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md)   	| Template    | NAS and Cloud Storage Gateway   |
+| [SoftNAS](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md)   	| Template    | NAS and Cloud Storage Gateway |
 
 ### Data Protection
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [Double Take](../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md)   	| Blueprint    | Data replication    |
+| [SUREedge](../Ecosystem Partners/Marketplace Guides/getting-started-with-sureedge.md)   	| Blueprint    | Application mobility for DR and BC    |
 | [Saratoga Data Flume](../Ecosystem Partners/Marketplace Guides/getting-started-with-saratoga-data-flume-blueprint.md)   	| Blueprint    | File transfer acceleration software    |
+| [CommVault Simpana](../Ecosystem Partners/Marketplace Guides/getting-started-with-commvault-storage-blueprint.md) | Blueprint | Data Protection |
 
 ### Business Services
 
@@ -116,6 +120,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Acumatica](../Ecosystem Partners/Marketplace Guides/getting-started-with-acumatica-erp-blueprint.md)   	| Blueprint    | Accounting and ERP    |
 | [Akeneo](../Ecosystem Partners/Marketplace Guides/getting-started-with-akeneo-blueprint.md)   	| Blueprint    | Product Information Management    |
 | [Apex Datacom](../Ecosystem Partners/Marketplace Guides/getting-started-with-apex-datacom-call-me-essentials-edition-blueprint.md)   	| Blueprint    | "Call Me" Voice Widget    |
+| [Conxio](../Ecosystem Partners/Marketplace Guides/getting-started-with-conxio-everywhere.md)   	| Blueprint    | Secure Communications Platform |
 | [CiviCRM](../Ecosystem Partners/Marketplace Guides/getting-started-with-civicrm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
 | [Diaspora](../Ecosystem Partners/Marketplace Guides/getting-started-with-diaspora-blueprint.md)   	| Blueprint    | Private social networking    |
 | [Fat Free CRM](../Ecosystem Partners/Marketplace Guides/getting-started-with-fat-free-crm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
@@ -128,7 +133,6 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [OXID](../Ecosystem Partners/Marketplace Guides/getting-started-with-oxid-blueprint.md)  	| Blueprint   | eCommerce platform     |
 | [Sharelock](../Ecosystem Partners/Marketplace Guides/getting-started-with-sharelock-blueprint.md)  	| Blueprint   | Information sharing     |
 | [Simple Invoices](../Ecosystem Partners/Marketplace Guides/getting-started-with-simpleinvoices-blueprint.md)  	| Blueprint   | Invoice software     |
-| [VDIWorks](../Ecosystem Partners/Marketplace Guides/getting-started-with-vdiworks-console.md)  	| Blueprint   | Virtual Desktop Management     |
 | [X2 Engine](../Ecosystem Partners/Marketplace Guides/getting-started-with-x2engine-blueprint.md)  	| Blueprint   | Customer relationship manager (CRM)     |
 
 
