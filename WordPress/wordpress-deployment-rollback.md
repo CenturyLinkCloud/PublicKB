@@ -15,7 +15,7 @@ During the Limited Beta there is no production Service Level Agreement.
 
 ### Overview
 
-Rollback is the complement to [site update with git](wordpress-site-updates-with-git.md).
+Rollback is the complement to [site update with git](wordPress-site-updates-with-git.md).
 It is important to []test plug-in and theme changes locally](wordpress-local-development.md)
 with Vagrant, but if a bad change has been pushed to the live site, it is possible
 to roll back without dealing with git commit history and reverts.
