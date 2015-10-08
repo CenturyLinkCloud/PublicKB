@@ -99,13 +99,13 @@ Not at first - restores will be done on the source VM. However, future improveme
 
 This chart is a helpful comparison:
 
-| Feature | Standard Block Storage (to be retired) | Premium Block Storage (to be retired) | Simple Backup Service |
+| Feature | Standard | Premium | Simple Backup Service |
 | --- | --- | --- | ---|
 | Block Storage | Included | Included | Purchased separately |
 | Required with each server | Default option | Optional upgrade | No, users opt-in only |
 | Backup Level | Snapshot | Snapshot | File-level |
 | Supports user-defined policies | No | No | Yes |
 | Retention Period | 5 days | 14 days | User-defined (1 day minimum) |
-| Location of Backups | Local DC | Secondary DC, location based on Primary DC | Choose from several options |
+| Location of Backups | Local DC | Secondary DC, based on Primary DC | Choose from several options |
 | Frequency of backup | Daily | Daily | User definable (minimum 1 hour) |
 | Restores | Upon request by CTL Cloud customer care | Upon request by CTL Cloud customer care | Self-service |
