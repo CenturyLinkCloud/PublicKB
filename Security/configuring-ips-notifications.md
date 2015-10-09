@@ -97,7 +97,7 @@ Sets a destination for all IPS event notifications to be sent to. Calls to this 
 |-----------|---------- |-----------------------------------------------------------------|-----------|
 |ipAddress  |String     |The IP address of customers syslog server                        |Yes        |
 |udpPort    |Integer    |The port the syslog is listening on                              |Yes        |
-|facility   |Integer    |This is an Integer, 16-23 for descriptions see below.             |Yes        |
+|facility   |Integer    |This is an Integer, 16-23, for descriptions see below.             |Yes        |
 
 Facility is to set the type of program logging messages. The options are 16-23 for descriptions follow the link: [https://en.wikipedia.org/wiki/Syslog](https://en.wikipedia.org/wiki/Syslog) 
 
