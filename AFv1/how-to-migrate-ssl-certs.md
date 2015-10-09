@@ -16,7 +16,8 @@ Before deleting any applications or services on AppFog v1 ensure you have local 
 
 ### AppFog SSL Support
 
-AppFog v2 does not provide user SSL endpoints as available on AppFog v1. If you need your SSL certificate please login to open a [Support Ticket](https://support.appfog.com) or email support@appfog.com. We are unable to provide your certificate key.
+AppFog v2 provides SSL for default domains, such as &lt;appname&gt;.useast.appfog.ctl.io. SSL endpoints for custom domains are not available on AppFog v2. If you need your SSL certificate please login to open a [Support Ticket](https://support.appfog.com) or email support@appfog.com. We are unable to provide your certificate key.
+
 
 For SSL support for a custom domain on AppFog v2 we recommend utilizing a service such as CloudFlare's Flexible SSL. CloudFlare's Flexible SSL will provide SSL support from the end user to their server, and endusers will see the SSL icon lock in their browser. When provisioning CloudFlare's Flexible SSL be sure to select "Flexible" under the SSL option, the default is "Full". Note, CloudFlare's Flexible SSL does not provide SSL support from the CloudFlare server to AppFog. CloudFlare's Full SSL product would require installation of your certificate on the AppFog server, which is not supported.
 
