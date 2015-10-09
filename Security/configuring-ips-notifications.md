@@ -100,23 +100,37 @@ Sets a destination for all IPS event notifications to be sent to. Calls to this 
 
 | **Name** | **Type** | **Description**                                                            | **REQ.** |
 |----------|----------|----------------------------------------------------------------------------|----------|
-|url       |string    |The URL endpoint for notification.                                          |Yes       |
-|typeCode  |string    |This is the type of destination. For Slack it should be WEBHOOK or SYSLOG.  |Yes       |
+|url       |string    |The URL endpoint for notification.                                          |No        |
+|typeCode  |string    |This is the type of destination. SYSLOG or WEBHOOK for a Slack format       |Yes       |
+|sysLogSettings|SysLogSettings|This contains all of the options for syslog                         |No        |
 
+##### SysLogSettings Definition
+| **Name**  | **Type**  | **Description**                                                 | **REQ.**  |
+|-----------|---------- |-----------------------------------------------------------------|-----------|
+|ipAddress  |String     |The IP address of customers syslog server                        |Yes        |
+|udpPort    |Integer    |The port the syslog is listening on                              |Yes        |
+|facility   |Integer    |This is an Integer 16-23 for descriptions see below.             |Yes        |
+
+Facility is to set the type of program logging messages. The options are 16-23 for descriptions follow the link: [https://en.wikipedia.org/wiki/Syslog](https://en.wikipedia.org/wiki/Syslog) 
 
 ##### Example
 
 >PUT http://api.client-security.ctl.io/ips/api/notification/ALIAS/VA1ALIASMYSVR01
 >
-> '[
->   {
->     "url":"http://my.slack.webhook",
->     "typeCode":"WEBHOOK"
->   }
-> ]'
-
-
-We use the Postman client when making rest calls.  Here is an
+>'[
+          {
+              "url": "http://my.slack.webhook",
+              "typeCode": "WEBHOOK"
+          },
+          {
+              "typCode": "SYSLOG",
+              "sysLogSettings": {
+                  "ipAddress": "12345",
+                  "udpPort": "8081",
+                  "facility": "16"
+              }
+          }
+      ]'
 
 ### Frequently Asked Questions
 
