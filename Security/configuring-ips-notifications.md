@@ -22,18 +22,6 @@ Our API allows for a customer to set notification destinations for either **Slac
 * Virtual Machine with CenturyLink Intrusion Prevention Agent installed
 * Slack channel & WebHook URL [(See Utilizing SLACK for IPS Event Notifications)](utilizing-slack-for-ips-event-notifications.md)
 
-### Supported Managed Operating Systems
-
-* Red Hat Enterprise Linux 5 (64-bit only)
-* Red Hat Enterprise Linux 6 (64-bit only)
-* Microsoft Windows Server 2008 Standard R2 (64-bit only)
-* Microsoft Windows Server 2008 Enterprise (64-bit only)
-* Microsoft Windows Server 2008 Enterprise R2 (64-bit only)
-* Microsoft Windows Server 2012 Datacenter (64-bit only)
-* Microsoft Windows Server 2008 Datacenter R2 (64-bit only)
-* Microsoft Windows Server 2012 Datacenter (64-bit only)
-* Microsoft Windows Server 2012 Datacenter R2 (64-bit only)
-
 ### Configuration Process via Blueprints
 
 1. Search for **IPS Notification** in the Blueprint library. Then, click on the desired Operating System blueprint to configure Notifications.
@@ -109,7 +97,7 @@ Sets a destination for all IPS event notifications to be sent to. Calls to this 
 |-----------|---------- |-----------------------------------------------------------------|-----------|
 |ipAddress  |String     |The IP address of customers syslog server                        |Yes        |
 |udpPort    |Integer    |The port the syslog is listening on                              |Yes        |
-|facility   |Integer    |This is an Integer 16-23 for descriptions see below.             |Yes        |
+|facility   |Integer    |This is an Integer, 16-23 for descriptions see below.             |Yes        |
 
 Facility is to set the type of program logging messages. The options are 16-23 for descriptions follow the link: [https://en.wikipedia.org/wiki/Syslog](https://en.wikipedia.org/wiki/Syslog) 
 
