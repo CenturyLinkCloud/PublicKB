@@ -48,7 +48,11 @@
 
 ### Early Adopter Program Updates (5)
 
-* __Ability to send IPS event data to a syslog server.__ The Intrusion Prevention Beta program is still in progress. Participants now have the ability to send their IPS event data to a syslog server. For more information on the IPS product or our Beta, [visit our product page on the CenturyLink Cloud website](https://www.ctl.io/intrusion-prevention-service/).
+* __Ability to send IPS event data to a syslog server.__ The Intrusion Prevention Beta program is still in progress. Participants now have the ability to send their IPS event data to a syslog server.
+
+  Updated documentation for setting notification destinations can be found at https://www.ctl.io/knowledge-base/security/configuring-ips-notifications/
+
+  For more information on the IPS product or our Beta, visit our [product page on the CenturyLink Cloud website](https://www.ctl.io/intrusion-prevention-service/).
 
 * __MySQL DBaaS:__
 
