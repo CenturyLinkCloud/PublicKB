@@ -40,7 +40,7 @@ AppFog v1 Add-Ons utilize environment variables for connecting to the third-part
 </pre>
 
 ###Import Environment Variables to AppFog v2
-* If you don't have your app deployed yet: [How to Migrtate an App](/how-to-migrate-an-application.md)
+* If you don't have your app deployed yet: [How to Migrtate an App](how-to-migrate-an-application.md)
 * Environment variables can be viewed or set in AppFog v2 with the following commands:
 <pre>$ cf env &lt;appname&gt;</pre>
 <pre>$ cf set-env &lt;appname&gt; &lt;variable&gt;  &lt;value&gt;</pre>
