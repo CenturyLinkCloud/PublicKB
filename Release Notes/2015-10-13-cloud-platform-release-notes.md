@@ -6,9 +6,13 @@
 "contentIsHTML": false
 }}}
 
-### New Features (6)
+### New Features (8)
 
-* __Default data center based off of user's account location (online channel only).__  A customer activating online at https://www.ctl.io will now be assigned a default data center based on their account geography.  They will retain the ability to override that default in the activation process.
+* __Promotional usage integrated with dashboards & usage estimates:__ Users that have signed up for CenturyLink Cloud services using a promotional code via [www.ctl.io](https://www.ctl.io) will now see that promotional usage captured on the Dashboard and in account usage estimate screens.
+
+    ![Promo codes](../images/2015-10-13_releasenotes8.png)
+
+* __Default data center based off of user's account location (online channel only).__  A customer activating online at [www.ctl.io](https://www.ctl.io) will now be assigned a default data center based on their account geography.  They will retain the ability to override that default in the activation process.
 
 * __Deploy apps directly from the Control Portal.__ Users can deploy apps to AppFog from the Control Portal. Provide a ZIP archive of your app, select how many instances, how much RAM you require, and click deploy app.
 
@@ -25,6 +29,9 @@
   * __Add properties to graph relations.__ Graph relations can now have properties. When creating or updating a graph relation, simply include a JSON object describing the relation. For more information, [visit our product page](https://orchestrate.io/docs/apiref#graph-put-with-value).
 
   * __Search and aggregate graph relations and their properties.__ Graph relation properties are now indexed for search. They can be searched for by including "@path.kind:relationship" in queries. These relations are also available for all types of aggregations.
+
+* __SDKs: Go & Node.js.__ SDK for Node.js and CLI for Go. Use these open-source tools to work with CenturyLink Cloud APIs more effectively. Get [the Node SDK here](https://github.com/CenturyLinkCloud/clc-node-sdk); the [CLI for Go is available here](https://github.com/CenturyLinkCloud/clc-go-cli).
+
 
 ### Enhancements (3)
 
@@ -72,11 +79,11 @@
 
 ### Ecosystem (3)
 
-* __ZoomData:__ Zoomdata enables business users to visually consume and interact with all their data in the modern enterprise. While specifically built for modern data sources -- including Cloudera -- Zoomdata also works with relational databases and popular cloud applications. Using patented Data Sharpening and Micro-query technologies, Zoomdata empowers business users to visually consume data in seconds, even across billions of rows of data. Zoomdata brings visual analytics to all business users -- not just data analysts -- via an intuitive user interface that can be [provisioned via blueprint on the CenturyLink platform today.](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-zoomdata-blueprint/)
+* __Zoomdata:__ Zoomdata enables business users to visually consume and interact with all their data in the modern enterprise. While specifically built for modern data sources -- including Cloudera -- Zoomdata also works with relational databases and popular cloud applications. Using patented Data Sharpening and Micro-query technologies, Zoomdata empowers business users to visually consume data in seconds, even across billions of rows of data. Zoomdata brings visual analytics to all business users -- not just data analysts -- via an intuitive user interface that can be [provisioned via blueprint on the CenturyLink platform today.](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-zoomdata-blueprint/)
 
-* __Heirloom Computing:__ Heirloom Computing helps business applications migrate their legacy mainframe applications into an enterprise-friendly Java model while preserving business logic, thereby reducing cost and providing integration with modern systems. Through patented advanced language transformation and open architecture, Heirloom software complies and translates COBOL to Java in one-step, eliminating complexity and risk without vendor lock-in. Java programmers on our platform are empowered to [get started with Heirloom via single-click blueprint,](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-elastic-cobol/) reducing their costly dependency on mainframe skill-sets.
+* __Heirloom Computing:__ Heirloom Computing helps business applications migrate their legacy mainframe applications into an enterprise-friendly Java model while preserving business logic, thereby reducing cost and providing integration with modern systems. Through patented advanced language transformation and open architecture, Heirloom software complies and translates COBOL to Java in one-step, eliminating complexity and risk without vendor lock-in. Java programmers on our platform are empowered to [get started with Heirloom via single-click blueprint](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-elastic-cobol/), reducing their costly dependency on mainframe skill-sets.
 
-* __Microsoft TFS:__ Team Foundation Server 2013 enables team rooms, comprehensive reporting, and dashboards that provide historical trending, full traceability, and real-time visibility into software quality. By automating the software delivery process, entire teams can collaborate across roles and track team actions and project artifacts such as requirements, tasks, bugs, source code, build results, and test results. [Get started with the TFS blueprint today.](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-microsoft-tfs/)
+* __Microsoft TFS:__ Team Foundation Server 2013 enables team rooms, comprehensive reporting, and dashboards that provide historical trending, full traceability, and real-time visibility into software quality. By automating the software delivery process, entire teams can collaborate across roles and track team actions and project artifacts such as requirements, tasks, bugs, source code, build results, and test results. [Get started with the TFS blueprint today](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-microsoft-tfs/).
 
 
 ### Open Source Contributions (1)
