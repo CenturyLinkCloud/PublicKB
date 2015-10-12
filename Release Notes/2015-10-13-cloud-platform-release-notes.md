@@ -6,7 +6,11 @@
 "contentIsHTML": false
 }}}
 
-### New Features (6)
+### New Features (7)
+
+* __Promotional usage integrated with dashboards & usage estimates:__ Users that have signed up for CenturyLink Cloud services using a promotional code via [www.ctl.io](www.ctl.io) will now see that promotional usage captured on the Dashboard and in account usage estimate screens.
+
+    ![Promo codes](../images/2015-10-13_releasenotes8.png)
 
 * __Default data center based off of user's account location (online channel only).__  A customer activating online at https://www.ctl.io will now be assigned a default data center based on their account geography.  They will retain the ability to override that default in the activation process.
 
