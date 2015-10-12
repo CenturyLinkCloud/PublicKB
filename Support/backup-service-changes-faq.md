@@ -83,11 +83,11 @@ A policy is defined by the user, and includes:
 
 From there, users associate a policy with a server and then specify the target region for the backup. A user can have multiple policies in their account; policies can have one or more servers. Further servers can have more than one policy.
 
-### My requirements for governance may not be met by the Simple Backup Service. What are my options? Can I continue to use Standard and Premium storage indefinately?
+### My requirements for governance may not be met by the Simple Backup Service. What are my options? Can I continue to use Standard and Premium storage indefinitely?
 
 Standard and Premium Storage will not be available for continued use once they are retired from a data center; if you have questions about options, please contact us at [help@ctl.io](mailto:help@ctl.io).
 
-### I have a requirement to do snapshots for my backup. Does Simple Backup Service snapshots? What options do I have?
+### I'd like to do snapshots on my VMs. Does Simple Backup Service perform snapshots? What options do I have?
 
 Simple Backup Service does not perform snapshots - it provides file and folder level backups and restores. However, you may continue to use the [snapshot capability in the Control Portal](../Servers/creating-and-managing-server-snapshots.md). If you have questions about options, please contact us at [help@ctl.io](mailto:help@ctl.io).
 
@@ -99,13 +99,13 @@ Not at first - restores will be done on the source VM. However, future improveme
 
 This chart is a helpful comparison:
 
-| Feature | Standard Block Storage (to be retired) | Premium Block Storage (to be retired) | Simple Backup Service |
+| Feature | Standard | Premium | Simple Backup Service |
 | --- | --- | --- | ---|
 | Block Storage | Included | Included | Purchased separately |
 | Required with each server | Default option | Optional upgrade | No, users opt-in only |
 | Backup Level | Snapshot | Snapshot | File-level |
 | Supports user-defined policies | No | No | Yes |
 | Retention Period | 5 days | 14 days | User-defined (1 day minimum) |
-| Location of Backups | Local DC | Secondary DC, location based on Primary DC | Choose from several options |
+| Location of Backups | Local DC | Secondary DC, based on Primary DC | Choose from several options |
 | Frequency of backup | Daily | Daily | User definable (minimum 1 hour) |
 | Restores | Upon request by CTL Cloud customer care | Upon request by CTL Cloud customer care | Self-service |
