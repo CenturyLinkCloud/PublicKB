@@ -30,7 +30,7 @@
 
   * __Search and aggregate graph relations and their properties.__ Graph relation properties are now indexed for search. They can be searched for by including "@path.kind:relationship" in queries. These relations are also available for all types of aggregations.
 
-* __SDKs: Go & Node.js.__ SDK for Node.js and CLI for Go. Use these open-source tools to work with CenturyLink Cloud APIs more effectively. Get the Node SDK [here](https://github.com/CenturyLinkCloud/clc-node-sdk); the CLI for Go is available [here](https://github.com/CenturyLinkCloud/clc-go-cli).
+* __SDKs: Go & Node.js.__ SDK for Node.js and CLI for Go. Use these open-source tools to work with CenturyLink Cloud APIs more effectively. Get [the Node SDK here](https://github.com/CenturyLinkCloud/clc-node-sdk); the [CLI for Go is available here](https://github.com/CenturyLinkCloud/clc-go-cli).
 
 
 ### Enhancements (3)
