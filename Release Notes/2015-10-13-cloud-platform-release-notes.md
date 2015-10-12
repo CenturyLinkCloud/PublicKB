@@ -8,11 +8,11 @@
 
 ### New Features (8)
 
-* __Promotional usage integrated with dashboards & usage estimates:__ Users that have signed up for CenturyLink Cloud services using a promotional code via [www.ctl.io](www.ctl.io) will now see that promotional usage captured on the Dashboard and in account usage estimate screens.
+* __Promotional usage integrated with dashboards & usage estimates:__ Users that have signed up for CenturyLink Cloud services using a promotional code via [www.ctl.io](https://www.ctl.io) will now see that promotional usage captured on the Dashboard and in account usage estimate screens.
 
     ![Promo codes](../images/2015-10-13_releasenotes8.png)
 
-* __Default data center based off of user's account location (online channel only).__  A customer activating online at [www.ctl.io](www.ctl.io) will now be assigned a default data center based on their account geography.  They will retain the ability to override that default in the activation process.
+* __Default data center based off of user's account location (online channel only).__  A customer activating online at [www.ctl.io](https://www.ctl.io) will now be assigned a default data center based on their account geography.  They will retain the ability to override that default in the activation process.
 
 * __Deploy apps directly from the Control Portal.__ Users can deploy apps to AppFog from the Control Portal. Provide a ZIP archive of your app, select how many instances, how much RAM you require, and click deploy app.
 
