@@ -26,7 +26,7 @@
 
   * __Search and aggregate graph relations and their properties.__ Graph relation properties are now indexed for search. They can be searched for by including "@path.kind:relationship" in queries. These relations are also available for all types of aggregations.
 
-### Enhancements (2)
+### Enhancements (3)
 
 * __Bare Metal servers now support Windows 2012 R2 Datacenter Edition.__ When creating Bare Metal servers, you can now select Windows Server 2012 R2 Datacenter as an operating system option, in addition to the choices that are already supported (CentOS 6, Red Hat Enterprise Linux 6, Windows Server 2012 R2 Standard, and Ubuntu 14).
 
@@ -84,5 +84,3 @@
 * __ScoutJS tool for searching/sorting NPM modules.__  Node developers have a new method to find the best modules using [Scout JS](http://scoutjs.com/), which combines GitHub and NPM data with an intelligent sorting algorithm. The [tool is open source](https://www.ctl.io/developers/blog/post/scoutjs-search-npm) and serves as an example Orchestrate and AppFog application.
 
   ![ScoutJS Tool](../images/2015-10-13_releasenotes5.png)
-
-### Selected Bug Fixes (=== TODO ===)
