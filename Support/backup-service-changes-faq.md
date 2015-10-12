@@ -87,7 +87,7 @@ From there, users associate a policy with a server and then specify the target r
 
 Standard and Premium Storage will not be available for continued use once they are retired from a data center; if you have questions about options, please contact us at [help@ctl.io](mailto:help@ctl.io).
 
-### I have a requirement to do snapshots for my backup. Does Simple Backup Service snapshots? What options do I have?
+### I'd like to do snapshots on my VMs. Does Simple Backup Service perform snapshots? What options do I have?
 
 Simple Backup Service does not perform snapshots - it provides file and folder level backups and restores. However, you may continue to use the [snapshot capability in the Control Portal](../Servers/creating-and-managing-server-snapshots.md). If you have questions about options, please contact us at [help@ctl.io](mailto:help@ctl.io).
 
