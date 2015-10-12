@@ -1,12 +1,12 @@
 {{{
-  "title": "Getting Started with SimpleInvoices - Blueprint",
+  "title": "Getting Started with Railo - Blueprint",
   "date": "10-01-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-![SimpleInvoices logo](https://bitnami.com/assets/stacks/simpleinvoices/img/simpleinvoices-stack-220x234.png)
+![Railo logo](https://bitnami.com/assets/stacks/railo/img/railo-stack-220x234.png)
 
 ### Technology Profile
 
@@ -14,9 +14,10 @@
 
 ### Description
 
-Through the CenturyLink Blueprint integration, SimpleInvoices provides a click-through solution to install and configure SimpleInvoices on the Linux platform.
+Through the CenturyLink Blueprint integration, Railo provides a click-through solution to install and configure Railo on the Linux platform.
+Railop provides CFML is a tag-based Web scripting language supporting dynamic Web page creation and database access in a Web server environment. In the language, ColdFusion tags are embedded in HTML files.
 
-For more information, please visit http://www.simpleinvoices.org
+For more information, please visit http://www.getrailo.org/
 
 
 ### Audience
@@ -38,16 +39,16 @@ After reading this article, the user should feel comfortable getting started usi
 2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
   * The default ports to access the application are: 80, 443
 
-### Deploying SimpleInvoices on a New Server
-SimpleInvoices is available as a Blueprint for deployment on a new server.
+### Deploying Railo on a New Server
+Railo is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
-1. **Locate the Bitnami SimpleInvoices Blueprint**
+1. **Locate the Bitnami Railo Blueprint**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-  2. Search for “SimpleInvoices” in the keyword search on the right side of the page.
-  3. Locate the 'Install Bitnami SimpleInvoices on Linux' Blueprint
+  2. Search for “Railo” in the keyword search on the right side of the page.
+  3. Locate the 'Install Bitnami Railo on Linux' Blueprint
 
-2. **Choose and Deploy the Blueprint. Click the “Install Bitnami SimpleInvoices on Linux” Blueprint.**
+2. **Choose and Deploy the Blueprint. Click the “Install Bitnami Railo on Linux” Blueprint.**
 
 3. **Configure the Blueprint** 
 
@@ -56,19 +57,15 @@ SimpleInvoices is available as a Blueprint for deployment on a new server.
   1. Execute on Server: Select a Linux x64 server to deploy the Blueprint on.
   2. Apache Web Server Port, e.g. 80
   3. SSL Port, e.g. 443
-  4. Web Server domain, e.g. 127.0.0.1
-  5. MySQL Server port, e.g. 3306
-  6. Login, e.g. user
-  7. Your real name, e.g. User Name
-  8. Email Address, e.g. user@example.com
-  9. Password
-  10. Do you want to configure mail support?, e.g. 0
-  11. Default email provider:, e.g. custom
-  12. SMTP User
-  13. SMTP Password
-  14. SMTP Port, e.g. 587
-  15. SMTP Host
-  16. Secure connection, e.g. tls
+  4. MySQL Server port, e.g. 3306
+  5. Password
+  6. Do you want to configure mail support?, e.g. 0
+  7. Default email provider:, e.g. custom
+  8. SMTP User
+  9. SMTP Password
+  10. SMTP Port, e.g. 587
+  11. SMTP Host
+  12. Secure connection, e.g. tls
 
 
 4. **Review and Confirm the Blueprint**
@@ -85,17 +82,17 @@ SimpleInvoices is available as a Blueprint for deployment on a new server.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
 
-### Deploy SimpleInvoices to an existing server (alternate option)
+### Deploy Railo to an existing server (alternate option)
 
-Bitnami SimpleInvoices is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
+Bitnami Railo is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
 #### Steps
 
 1. **Deploy or Identify an Existing Server**
-Identify the server targeted for SimpleInvoices installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
+Identify the server targeted for Railo installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. **Select to Execute the Package on a Server Group**
-  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Bitnami SimpleInvoices on Linux**.
+  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Bitnami Railo on Linux**.
   2. See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. **Configure the Parameters**
@@ -103,11 +100,7 @@ Set the following application parameters:
 
 * **Apache Web Server Port** - default 80
 * **SSL Port** - default 443
-* **Web Server domain** - default 127.0.0.1
 * **MySQL Server port** - default 3306
-* **Login** - default user
-* **Your real name** - default User Name
-* **Email Address** - default user@example.com
 * **Password**
 * **Do you want to configure mail support?** - default 0
 * **Default email provider:** - default custom
@@ -126,7 +119,7 @@ Once verified, click on the `execute package` button. This will kick off the dep
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
 
-### Access your SimpleInvoices server
+### Access your Railo server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
 
   1. Check email to obtain Server Name and IP Address Login information
