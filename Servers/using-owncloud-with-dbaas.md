@@ -53,7 +53,8 @@ After reading this article, the user can configure a customized ownCloud environ
 		- Click on "Add "IP address" as a trusted domain", it will redirect this request to the private IP address to create the necessary entries to the owncloud configuration file 
   <p>![add trusted-domain](../images/owncloud/oc-trusted-domain-2.png)<p>
 
-### Deploying ownCloud on a New Server (For Steps using Blueprint, please see [Getting Started with ownCloud Blueprint](..\Ecosystem Partners\Marketplace Guides\getting-started-with-owncloud-blueprint.md))
+### Deploying ownCloud on a New Server 
+###### (For Steps using Blueprint, please see [Getting Started with ownCloud Blueprint](..\""Ecosystem Partners""\""Marketplace Guides""\getting-started-with-owncloud-blueprint.md))
 Create a Linux server in CenturyLink Cloud using the following knowledge articles (For virtual server, [Create a virtual server](../Servers/how-to-create-customer-specific-os-templates.md) or [Create a bare metal server](../../Servers/creating-a-new-bare-metal-server.md) for a private deployment)
 **Blueprint ownCloud installation is located in /opt/bitnami directory
 
@@ -83,7 +84,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 2. **Enable SSL**
  - In order to enable SSL, a certificate is required.  Either a self-signed certificate or your own certificate can be used.  
  - The following gives an example of self signed certificate with an expiration date of 365 days :
-	1. Create the certificate (use /opt/bitnami instead of /etc for blueprint installation):
+	1. Create the certificate (***use /opt/bitnami instead of /etc for blueprint installation, detail steps are [here](https://wiki.bitnami.com/Applications/BitNami_ownCloud#How_to_enable_SSL.3f)***):
 
 		```
 		{
@@ -112,6 +113,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 		```
 
 3. **Configure ownCloud connection to CenturyLink MySQL DBaaS**
+##### To trigger the initial setup in the ownCloud Blueprint installation, move the config.php file from /opt/bitnami/apps/owncloud/htdocs/config directory to a new location (please [backup the data for restoration](https://wiki.bitnami.com/Applications/BitNami_ownCloud#How_to_create_a_full_backup_of_ownCloud.3f))
 	1. If not already, connect to [CenturyLink Cloud VPN](../network/how-to-configure-client-vpn.md)
 	2. Point the web browser to the private address of the ownCloud server
 	3. The ownCloud configuration page will appear
@@ -144,9 +146,9 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 	2. Login to ownCloud portal as Administrator
 	3. Select ***Apps*** from the top left drop down menu <p>![drop down menu](../images/owncloud/oc-app.png)<p>
 	4. Add ***External Storage Support*** from the ***Not enabled*** list  <p>![Not Enabled list](../images/owncloud/oc-app-notenabled.png)
-	5. From the owncloud main page, select ***Admin*** from the user account <p>![drop down menu](../images/owncloud/oc-drop-down.png)(../images/owncloud/oc-admin-exstorage.png)<p>
-	6. Configure ***External Storage***, ***Add Storage*** with "Amazon S3 and Compliant" and populate the fields using the credential from Step 1 and set permissions <p>![Obect Storage Prompt](../images/owncloud/oc-object-prompt.png)<p> <p>![Object Storage inputs](../images/ownlcoud/oc-object-clc.png)<p>
-	7.  Once completed, the Object Storage will be part of the storage locations under "Files" <p>![External Storage](../image/owncloud/oc-object-file.png)<p>
+	5. From the owncloud main page, select ***Admin*** from the user account <p>![drop down menu](../images/owncloud/oc-drop-down.png) [External Storage Admin](../images/owncloud/oc-admin-exstorage.png)<p>
+	6. Configure ***External Storage***, ***Add Storage*** with "Amazon S3 and Compliant" and populate the fields using the credential from Step 1 and set permissions <p>![Obect Storage Prompt](../images/owncloud/oc-object-prompt.png)<p> <p>![Object Storage inputs](../images/owncloud/oc-object-clc.png)<p>
+	7.  Once completed, the Object Storage will be part of the storage locations under "Files" <p>![External Storage](../images/owncloud/oc-object-file.png)<p>
 		
 * ****Steps to add Object Storage as local Storage****
 	1. [Access to CenturyLink Cloud storage](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) (S3 compatible) or any other object storage
