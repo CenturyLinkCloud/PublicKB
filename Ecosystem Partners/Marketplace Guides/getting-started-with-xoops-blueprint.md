@@ -1,22 +1,22 @@
 {{{
-  "title": "Getting Started with SimpleInvoices - Blueprint",
+  "title": "Getting Started with XOOPS - Blueprint",
   "date": "10-01-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-![SimpleInvoices logo](https://bitnami.com/assets/stacks/simpleinvoices/img/simpleinvoices-stack-220x234.png)
+![XOOPS logo](https://bitnami.com/assets/stacks/xoops/img/xoops-stack-220x234.png)
 
 ### Technology Profile
 
-
+The XOOPS CMS project has been around and pumping out great websites since 2003. It features module interface, roles-based permissions, multi-byte language support, personalization, optional mobile-optimized themes and nearly 500 plugins to extend and customize XOOPS.
 
 ### Description
 
-Through the CenturyLink Blueprint integration, SimpleInvoices provides a click-through solution to install and configure SimpleInvoices on the Linux platform.
+Through the CenturyLink Blueprint integration, XOOPS provides a click-through solution to install and configure XOOPS on the Linux platform.
 
-For more information, please visit http://www.simpleinvoices.org
+For more information, please visit http://xoops.org/
 
 
 ### Audience
@@ -38,16 +38,16 @@ After reading this article, the user should feel comfortable getting started usi
 2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
   * The default ports to access the application are: 80, 443
 
-### Deploying SimpleInvoices on a New Server
-SimpleInvoices is available as a Blueprint for deployment on a new server.
+### Deploying XOOPS on a New Server
+XOOPS is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
-1. **Locate the Bitnami SimpleInvoices Blueprint**
+1. **Locate the Bitnami XOOPS Blueprint**
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-  2. Search for “SimpleInvoices” in the keyword search on the right side of the page.
-  3. Locate the 'Install Bitnami SimpleInvoices on Linux' Blueprint
+  2. Search for “XOOPS” in the keyword search on the right side of the page.
+  3. Locate the 'Install Bitnami XOOPS on Linux' Blueprint
 
-2. **Choose and Deploy the Blueprint. Click the “Install Bitnami SimpleInvoices on Linux” Blueprint.**
+2. **Choose and Deploy the Blueprint. Click the “Install Bitnami XOOPS on Linux” Blueprint.**
 
 3. **Configure the Blueprint** 
 
@@ -85,17 +85,17 @@ SimpleInvoices is available as a Blueprint for deployment on a new server.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
 
-### Deploy SimpleInvoices to an existing server (alternate option)
+### Deploy XOOPS to an existing server (alternate option)
 
-Bitnami SimpleInvoices is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
+Bitnami XOOPS is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
 #### Steps
 
 1. **Deploy or Identify an Existing Server**
-Identify the server targeted for SimpleInvoices installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
+Identify the server targeted for XOOPS installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. **Select to Execute the Package on a Server Group**
-  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Bitnami SimpleInvoices on Linux**.
+  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Bitnami XOOPS on Linux**.
   2. See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. **Configure the Parameters**
@@ -126,7 +126,7 @@ Once verified, click on the `execute package` button. This will kick off the dep
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
 
-### Access your SimpleInvoices server
+### Access your XOOPS server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
 
   1. Check email to obtain Server Name and IP Address Login information

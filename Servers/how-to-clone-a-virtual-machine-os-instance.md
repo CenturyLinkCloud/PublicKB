@@ -15,6 +15,7 @@ A clone is a copy of an existing virtual machine. When the cloning operation is 
 ### Exclusions
 
 * Cloning is unsupported for customers who leverage virtual machines with the multi-vNIC feature
+* Source machines must not be domain joined.
 
 ### Important Notices
 
