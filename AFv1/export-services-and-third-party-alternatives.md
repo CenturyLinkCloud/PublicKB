@@ -46,14 +46,14 @@ At this time [Orchestrate](https://orchestrate.io/) and [MySQL](https://www.ctl.
 
 #### AppFog v2 Third Party Service Alternatives
 
-#####MySQL
+##### MySQL
 * [ClearDB](https://www.cleardb.com/)
 
-#####Mongo
+##### Mongo
 * [Compose (MongoDB)](https://www.compose.io/)
 * [MongoLab](https://mongolab.com/)
 
-#####PostgreSQL
+##### PostgreSQL
 * [ElephantSQL](http://www.elephantsql.com/)
 * [Compose](https://www.compose.io/)
 
