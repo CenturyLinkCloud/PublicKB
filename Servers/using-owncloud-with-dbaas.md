@@ -50,10 +50,10 @@ After reading this article, the user can configure a customized ownCloud environ
   - (The following steps will enable management of ownCloud from the public IP address)
 		- Access the server's public IP address using a web browser (with VPN still connected)
 		- ownCloud setup will prompt to add the new IP address as a "trusted domain" <p>![trusted domain](../images/owncloud/oc-trusted-domain.png)<p>
-		- Click on "Add "IP address" as a trusted domain", it will redirect this request to the private IP address to create the necessary entries to the owncloud configuration file 
+		- Click on "Add "IP address" as a trusted domain", it will redirect this request to the private IP address to create the necessary entries to the owncloud configuration file
   <p>![add trusted-domain](../images/owncloud/oc-trusted-domain-2.png)<p>
 
-### Deploying ownCloud on a New Server 
+### Deploying ownCloud on a New Server
 ###### (For Steps using Blueprint, please see [Getting Started with ownCloud Blueprint](..\""Ecosystem Partners""\""Marketplace Guides""\getting-started-with-owncloud-blueprint.md))
 Create a Linux server in CenturyLink Cloud using the following knowledge articles (For virtual server, [Create a virtual server](../Servers/how-to-create-customer-specific-os-templates.md) or [Create a bare metal server](../../Servers/creating-a-new-bare-metal-server.md) for a private deployment)
 **Blueprint ownCloud installation is located in /opt/bitnami directory
@@ -67,9 +67,9 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 1. Assume you have OpenVPN client setup for the CenturyLink Cloud account
 2. If not, please refer to ![How To Configure Client VPN](../network/how-to-configure-client-vpn.md)
 
-#### Steps to deploy ownCloud to an existing server 
+#### Steps to deploy ownCloud to an existing server
 1. Download the ownCloud installation from [ownCloud.org](https://owncloud.org/install/)
-2. Look for the package for the installed OS, this example will use Ubuntu 14.x 
+2. Look for the package for the installed OS, this example will use Ubuntu 14.x
 3. ownCloud supports CentOS, Debian, RHEL, Ubuntu and [more](https://software.opensuse.org/download/package?project=isv:ownCloud:community&package=owncloud)
 4. For Ubuntu 14.x, download the ownCloud package and add the repository key to apt (this key will updates periodically).
 ```
@@ -78,7 +78,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 	sudo apt-key add - < Release.key  
 	sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/community/xUbuntu_14.10/ /' >> /etc/apt/sources.list.d/owncloud.list"
 	sudo apt-get update
-	sudo apt-get install owncloud	
+	sudo apt-get install owncloud
 }
 ```
 2. **Enable SSL**
@@ -131,7 +131,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 				),
 		}
 		```
-		
+
 4. **Configure ownCloud to utilize SMTP Relay**
 	1. Configure SMTP Relay [SMTP Relay](../Mail/smtp-relay-services-simple.md)
 	2. From the owncloud main page, select ***Admin*** from the user account <p>![drop down menu](../images/owncloud/oc-drop-down.png)<p>
@@ -139,17 +139,32 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 	4. Configure the SMTP Relay user based on SMTP Relay information from the portal <p>![mail server config](../images/owncloud/oc-mail-relay-account.png)<p>
 	5. Use the test function to verify the account information
 
-5. **Configure ownCloud to utilize Object storage**
-    ###### ***There are two ways to utilize Object Storage in ownCloud, one is adding Object Storage as an external storage and the other is to utilize Object Storage as the primary storage for ownCloud***
-		**Steps to add Object Storage as external Storage**
-		1. [Access to CenturyLink Cloud storage](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) (S3 compatible) or any other object storage
-		2. Login to ownCloud portal as Administrator
-		3. Select ***Apps*** from the top left drop down menu <p>![drop down menu](../images/owncloud/oc-app.png)<p>
-		4. Enable ***External Storage Support*** from the ***Not enabled*** list  <p>![Not Enabled list](../images/owncloud/oc-app-notenabled.png)
-		5. From the owncloud main page, select ***Admin*** from the user account <p>![drop down menu](../images/owncloud/oc-drop-down.png) ![External Storage Admin](../images/owncloud/oc-admin-exstorage.png)<p>
-		6. Configure ***External Storage***, ***Add Storage*** with "Amazon S3 and Compliant" and populate the fields using the credential from Step 1 and set permissions <p>![Obect Storage Prompt](../images/owncloud/oc-object-prompt.png)<p> <p>![Object Storage inputs](../images/owncloud/oc-object-clc.png)<p>
-		7.  Once completed, the Object Storage will be part of the storage locations under "Files" <p>![External Storage](../images/owncloud/oc-object-file.png)<p>
-	
+5.**Configure ownCloud to utilize Object storage**
+  ###### ***There are two ways to utilize Object Storage in ownCloud, one is adding Object Storage as an external storage and the other is to utilize Object Storage as the primary storage for ownCloud***
+**Steps to add Object Storage as external Storage**
+  1. [Access to CenturyLink Cloud storage](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) (S3 compatible) or any other object storage
+	2. Login to ownCloud portal as Administrator
+	3. Select ***Apps*** from the top left drop down menu <p>![drop down menu](../images/owncloud/oc-app.png)<p>
+	4. Enable ***External Storage Support*** from the ***Not enabled*** list  <p>![Not Enabled list](../images/owncloud/oc-app-notenabled.png)
+	5. From the owncloud main page, select ***Admin*** from the user account <p>![drop down menu](../images/owncloud/oc-drop-down.png) ![External Storage Admin](../images/owncloud/oc-admin-exstorage.png)<p>
+	6. Configure ***External Storage***, ***Add Storage*** with "Amazon S3 and Compliant" and populate the fields using the credential from Step 1 and set permissions <p>![Obect Storage Prompt](../images/owncloud/oc-object-prompt.png)<p> <p>![Object Storage inputs](../images/owncloud/oc-object-clc.png)<p>
+	7.  Once completed, the Object Storage will be part of the storage locations under "Files" <p>![External Storage](../images/owncloud/oc-object-file.png)<p>
+
+  **Steps to add Object Storage as external Storage**
+	1. [Access to CenturyLink Cloud storage](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) (S3 compatible) or any other object storage
+	2. Login to ownCloud portal as Administrator
+	3. Select ***Apps*** from the top left drop down menu <p>![drop down menu](../images/owncloud/oc-app.png)<p>
+	4. Enable ***External Storage Support*** from the ***Not enabled*** list  <p>![Not Enabled list](../images/owncloud/oc-app-notenabled.png)
+	5. From the owncloud main page, select ***Admin*** from the user account <p>![drop down menu](../images/owncloud/oc-drop-down.png) ![External Storage Admin](../images/owncloud/oc-admin-exstorage.png)<p>
+	6. Configure ***External Storage***, ***Add Storage*** with "Amazon S3 and Compliant" and populate the fields using the credential from Step 1 and set permissions <p>![Obect Storage Prompt](../images/owncloud/oc-object-prompt.png)<p> <p>![Object Storage inputs](../images/owncloud/oc-object-clc.png)<p>
+	7.  Once completed, the Object Storage will be part of the storage locations under "Files" <p>![External Storage](../images/owncloud/oc-object-file.png)<p>
+
+ 	**Steps to add Object Storage as local Storage**
+	1. [Access to CenturyLink Cloud storage](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) (S3 compatible) or any other object storage
+	2. Depending on the version of ownCloud, the options of utilizing Object Storage are different, please see [here](https://owncloud.com/owncloud-server-or-enterprise-edition/)
+	3. ownCloud Server supports Local storage, GlusterFS/Red Hat Storage, OpenStack Swift as primary storage; Enterprise Edition supports additional primary storage with S3 compatible storage
+	4. In order to utilize Object Storage for primary storage, edit config.php (default location: /var/www/owncloud/config/) with the Object Storage credential, like the example below:
+
 		**Steps to add Object Storage as local Storage**
 		1. [Access to CenturyLink Cloud storage](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) (S3 compatible) or any other object storage
 		2. Depending on the version of ownCloud, the options of utilizing Object Storage are different, please see [here](https://owncloud.com/owncloud-server-or-enterprise-edition/)
@@ -163,17 +178,17 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 			'secret' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
 			'bucket' => 'owncloud',
 			'region' => 'canada.os.ctl.io'
-				), 
+				),
 			),
 		}
 		```
 
 6. Now, the ownCloud server is set up to consume Database as a Service, SMTP Relay and Object Storage, this will minimize the administration of the local environment and eliminate resource constraint.  
- 
+
 ### Pricing
 The costs associated with this deployment are for the CenturyLink Cloud infrastructure only.  There are no ownCloud license costs or additional fees bundled in.
 
-### About ownCloud 
+### About ownCloud
 [ownCloud](https://owncloud.org/history/) gives you universal access to your files through a web interface or WebDAV. It also provides a platform to easily view & sync your contacts, calendars and bookmarks across all your devices and enables basic editing right on the web. Installation has minimal server requirements, doesn’t need special permissions and is quick. ownCloud Server is extendable via a simple but powerful API for applications and plugins.
 
 
