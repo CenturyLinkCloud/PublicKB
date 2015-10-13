@@ -149,7 +149,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 	5. From the owncloud main page, select ***Admin*** from the user account <p>![drop down menu](../images/owncloud/oc-drop-down.png) ![External Storage Admin](../images/owncloud/oc-admin-exstorage.png)<p>
 	6. Configure ***External Storage***, ***Add Storage*** with "Amazon S3 and Compliant" and populate the fields using the credential from Step 1 and set permissions <p>![Obect Storage Prompt](../images/owncloud/oc-object-prompt.png)<p> <p>![Object Storage inputs](../images/owncloud/oc-object-clc.png)<p>
 	7.  Once completed, the Object Storage will be part of the storage locations under "Files" <p>![External Storage](../images/owncloud/oc-object-file.png)<p>
-		
+
  	**Steps to add Object Storage as local Storage**
 	1. [Access to CenturyLink Cloud storage](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) (S3 compatible) or any other object storage
 	2. Depending on the version of ownCloud, the options of utilizing Object Storage are different, please see [here](https://owncloud.com/owncloud-server-or-enterprise-edition/)
