@@ -100,3 +100,7 @@ A: You [push your committed changes with git](wordPress-site-updates-with-git.md
 **Q: How do I get a local development environment that's easy to work with?**
 
 A: [vagrant up](wordpress-local-development.md)!
+
+**Q: I accidentally pushed a bad commit to my CenturyLink Git Hosting repository!**
+
+A: You can [roll back](wordpress-deployment-rollback.md) a bad push.
