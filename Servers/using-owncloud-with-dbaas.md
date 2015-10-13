@@ -38,8 +38,8 @@ After reading this article, the user can configure a customized ownCloud environ
   * The default ports to access the application are: 80, 443
 
 - After adding a public IP for OwnCloud perform the following actions:
-  - Edit the web server configuration files in /etc/apache2/sites-enabled as follows:
-    ```
+	- Edit the web server configuration files in /etc/apache2/sites-enabled as follows:
+	```
 	{
     DocumentRoot "/var/www/owncloud/"
     # Alias /owncloud/ "/var/www/owncloud/"
@@ -84,7 +84,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 2. **Enable SSL**
  - In order to enable SSL, a certificate is required.  Either a self-signed certificate or your own certificate can be used.  
  - The following gives an example of self signed certificate with an expiration date of 365 days :
-	1. Create the certificate (***use /opt/bitnami instead of /etc for blueprint installation, detail steps are [here](https://wiki.bitnami.com/Applications/BitNami_ownCloud#How_to_enable_SSL.3f)***):
+	1. Create the certificate (***use /opt/bitnami instead of /etc for Blueprint installation, detail steps are [here](https://wiki.bitnami.com/Applications/BitNami_ownCloud#How_to_enable_SSL.3f)***):
 
 		```
 		{
@@ -112,7 +112,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 		}
 		```
 
-3. **Configure ownCloud connection to CenturyLink MySQL DBaaS**
+3. **Configure ownCloud connection to CenturyLink MySQL DBaaS (Beta)**
 ##### To trigger the initial setup in the ownCloud Blueprint installation, move the config.php file from /opt/bitnami/apps/owncloud/htdocs/config directory to a new location (please [backup the data for restoration](https://wiki.bitnami.com/Applications/BitNami_ownCloud#How_to_create_a_full_backup_of_ownCloud.3f))
 	1. If not already, connect to [CenturyLink Cloud VPN](../network/how-to-configure-client-vpn.md)
 	2. Point the web browser to the private address of the ownCloud server
@@ -145,8 +145,8 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
     1. [Access to CenturyLink Cloud storage](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) (S3 compatible) or any other object storage
 	2. Login to ownCloud portal as Administrator
 	3. Select ***Apps*** from the top left drop down menu <p>![drop down menu](../images/owncloud/oc-app.png)<p>
-	4. Add ***External Storage Support*** from the ***Not enabled*** list  <p>![Not Enabled list](../images/owncloud/oc-app-notenabled.png)
-	5. From the owncloud main page, select ***Admin*** from the user account <p>![drop down menu](../images/owncloud/oc-drop-down.png) [External Storage Admin](../images/owncloud/oc-admin-exstorage.png)<p>
+	4. Enable ***External Storage Support*** from the ***Not enabled*** list  <p>![Not Enabled list](../images/owncloud/oc-app-notenabled.png)
+	5. From the owncloud main page, select ***Admin*** from the user account <p>![drop down menu](../images/owncloud/oc-drop-down.png) ![External Storage Admin](../images/owncloud/oc-admin-exstorage.png)<p>
 	6. Configure ***External Storage***, ***Add Storage*** with "Amazon S3 and Compliant" and populate the fields using the credential from Step 1 and set permissions <p>![Obect Storage Prompt](../images/owncloud/oc-object-prompt.png)<p> <p>![Object Storage inputs](../images/owncloud/oc-object-clc.png)<p>
 	7.  Once completed, the Object Storage will be part of the storage locations under "Files" <p>![External Storage](../images/owncloud/oc-object-file.png)<p>
 		
