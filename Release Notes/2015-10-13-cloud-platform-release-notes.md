@@ -30,9 +30,6 @@
 
   * __Search and aggregate graph relations and their properties.__ Graph relation properties are now indexed for search. They can be searched for by including "@path.kind:relationship" in queries. These relations are also available for all types of aggregations.
 
-* __SDKs: Go & Node.js.__ SDK for Node.js and CLI for Go. Use these open-source tools to work with CenturyLink Cloud APIs more effectively. Get [the Node SDK here](https://github.com/CenturyLinkCloud/clc-node-sdk); the [CLI for Go is available here](https://github.com/CenturyLinkCloud/clc-go-cli).
-
-
 ### Enhancements (3)
 
 * __Bare Metal servers now support Windows 2012 R2 Datacenter Edition.__ When creating Bare Metal servers, you can now select Windows Server 2012 R2 Datacenter as an operating system option, in addition to the choices that are already supported (CentOS 6, Red Hat Enterprise Linux 6, Windows Server 2012 R2 Standard, and Ubuntu 14).
