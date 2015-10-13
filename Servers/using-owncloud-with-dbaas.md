@@ -140,7 +140,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 	5. Use the test function to verify the account information
 
 5.**Configure ownCloud to utilize Object storage**
-  ###### ***There are two ways to utilize Object Storage in ownCloud, one is adding Object Storage as an external storage and the other is to utilize Object Storage as the primary storage for ownCloud***
+###### ***There are two ways to utilize Object Storage in ownCloud, one is adding Object Storage as an external storage and the other is to utilize Object Storage as the primary storage for ownCloud***
   **Steps to add Object Storage as external Storage**
   1. [Access to CenturyLink Cloud storage](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) (S3 compatible) or any other object storage
   2. Login to ownCloud portal as Administrator
@@ -151,10 +151,10 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
   7.  Once completed, the Object Storage will be part of the storage locations under "Files" <p>![External Storage](../images/owncloud/oc-object-file.png)<p>
 
   **Steps to add Object Storage as local Storage**
-    1. [Access to CenturyLink Cloud storage](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) (S3 compatible) or any other object storage
-	  2. Depending on the version of ownCloud, the options of utilizing Object Storage are different, please see [here](https://owncloud.com/owncloud-server-or-enterprise-edition/)
-    3. ownCloud Server supports Local storage, GlusterFS/Red Hat Storage, OpenStack Swift as primary storage; Enterprise Edition supports additional primary storage with S3 compatible storage
-	  4. In order to utilize Object Storage for primary storage, edit config.php (default location: /var/www/owncloud/config/) with the Object Storage credential, like the example below:
+1. [Access to CenturyLink Cloud storage](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) (S3 compatible) or any other object storage
+2. Depending on the version of ownCloud, the options of utilizing Object Storage are different, please see [here](https://owncloud.com/owncloud-server-or-enterprise-edition/)
+3. ownCloud Server supports Local storage, GlusterFS/Red Hat Storage, OpenStack Swift as primary storage; Enterprise Edition supports additional primary storage with S3 compatible storage
+4. In order to utilize Object Storage for primary storage, edit config.php (default location: /var/www/owncloud/config/) with the Object Storage credential, like the example below:
 
 	 ```
 		{	'objectstore' => array(
