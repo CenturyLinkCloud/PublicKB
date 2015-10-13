@@ -139,7 +139,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 	4. Configure the SMTP Relay user based on SMTP Relay information from the portal <p>![mail server config](../images/owncloud/oc-mail-relay-account.png)<p>
 	5. Use the test function to verify the account information
 
-	5. **Configure ownCloud to utilize Object storage**
+5. **Configure ownCloud to utilize Object storage**
     ###### ***There are two ways to utilize Object Storage in ownCloud, one is adding Object Storage as an external storage and the other is to utilize Object Storage as the primary storage for ownCloud***
 *	 ****Steps to add Object Storage as external Storage****
 		1. [Access to CenturyLink Cloud storage](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) (S3 compatible) or any other object storage
