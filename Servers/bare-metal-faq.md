@@ -116,13 +116,19 @@ Both are capable of leveraging the Hyper-V role to provision VMs on the Bare Met
 The answers will differ depending on which Windows OSes you are trying to activate.  Guest VMs running Windows 2012 R2 will automatically activate using [AVMA (Automatic Virtual Machine Activation)](https://technet.microsoft.com/en-us/library/dn303421.aspx) using the host's Hypervisor. Guest VMs running Windows 2008 R2 can activate either using Multi-Activation Keys (MAKs) obtained from Microsoft, or by using the volume license keys available on [Microsoft's site](https://technet.microsoft.com/en-us/library/jj612867.aspx?f=255&MSPPError=-2147217396) along with the CenturyLink KMS host. To use our KMS you will need to manually specify the KMS host on the guest VM.
 
 1. You will need the VM to be on a CenturyLink Cloud customer VLAN to access our KMS host and the IP/port associated.
-  ```172.17.1.21:1688```
+  ```
+  172.17.1.21:1688
+  ```
 
 2. You can test TCP port by telnetting to the IP over the appropriate port.
-  ```telnet 172.17.1.21 1688 ```
+  ```
+  telnet 172.17.1.21 1688
+  ```
 
 3. To specify the KMS host, use the following command:
-  ```slmgr /skms 172.17.1.21:1688```
+  ```
+  slmgr /skms 172.17.1.21:1688
+  ```
 
 Windows VMs in a Hyper-V environment on Bare Metal servers should use IPs in the same VLAN as configured in the Control portal for the host Bare Metal server.  It is also recommended that IPs be higher in the range so VMs claiming from that same range will not encounter IP conflicts.  Additional IPs for guest VMs can be obtained by submitting a customer support request. For activation of older Windows OSes on guest VMs you will need to obtain your own MAKs and/or activation solution.
 
