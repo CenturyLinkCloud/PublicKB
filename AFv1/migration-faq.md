@@ -1,5 +1,5 @@
 {{{
-  "title": "Migrating FAQ",
+  "title": "AppFog v1 Retirement FAQ",
   "date": "10-13-2015",
   "author": "Ian Plosker",
   "attachments": [],
@@ -13,8 +13,6 @@
 This document is for users of AppFog v1 for migration to the next generation of AppFog that is located in CenturyLink Cloud Control Portal.
 
 Before deleting any applications or services on AppFog v1 ensure you have local copies. Once apps and services are deleted it is **permanent**. We will not be able to provide a backup.
-
-### AppFog Migration FAQ
 
 #### When will AppFog v1 be discontinued?
 
