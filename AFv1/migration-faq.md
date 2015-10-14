@@ -22,7 +22,7 @@ December 15, 2015 is the last day AppFog v1 will be supported; the service will 
 
 ####  Why is AppFog v2 replacing AppFog v1? 
 
-AppFog v1 was built on an older version of Cloud Foundry. There is no easy migration path between these versions. We decided that rather than carry AppFog v1's limitations to the new version of Cloud Foundry, we'd start over and work to build a platform for cloud-native apps that supports the latest and greatest CF features. Further, we are building a several new services to augment the core Cloud Foundry features. 
+AppFog v1 was built on an older version of Cloud Foundry. There is no easy migration path between these versions. We decided that rather than carry AppFog v1's limitations to the new version of Cloud Foundry, we'd start over and work to build a platform for cloud-native apps that supports the latest and greatest CF features. Further, we are building several new services to augment the core Cloud Foundry features. 
 
 #### How do I export my data from AppFog v1 services?
         
@@ -44,9 +44,9 @@ Any applications still running on AppFog v1 after Dec 16, 2015 will become unava
 
 There are many reasons to make the move to AppFog v2:
 
-- **Robust feature set to help developers.** Based on most recent stable versions of the open source Cloud Foundry platform
+- **Robust feature set to help developers**. Based on most recent stable versions of the open source Cloud Foundry platform
 - **Competitive pricing**. Only pay for what you use
-- **Integrated into the CenturyLink Cloud Control Portal,** Includes additional management features and easy access to other cloud services
+- **Integrated into the CenturyLink Cloud Control Portal**. Includes additional management features and easy access to other cloud services
 
 #### What services are supported on AppFog v2?
 
