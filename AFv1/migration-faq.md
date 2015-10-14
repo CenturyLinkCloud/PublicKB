@@ -16,10 +16,9 @@ Before deleting any applications or services on AppFog v1 ensure you have local 
 
 ### AppFog Migration FAQ
 
-
 #### When will AppFog v1 be discontinued?
 
-December 15, 2015 is the last day AppFog v1 will be supported; the service will discontinue on this date.
+December 15, 2015 is the last day AppFog v1 will be supported; the service will discontinue after this date.
 
 ####  Why is AppFog v2 replacing AppFog v1? 
 
@@ -41,22 +40,22 @@ We've created a [migration guide](https://www.ctl.io/knowledge-base/appfog/legac
         
 Any applications still running on AppFog v1 after Dec 16, 2015 will become unavailable when the service is shut down; it will not be recoverable. If you need help migrating your applications, please reach out at [support@appfog.com](mailto:support@appfog.com).
 
-#### Why should I move to AppFog v2 and not another platform? Is it cheaper than other platforms?
+#### Why should I move to AppFog v2 and not another platform?
 
 There are many reasons to make the move to AppFog v2:
 
-* Robust feature set to help developers...Based on most recent stable versions of the open source Cloud Foundry platform
-* Competitive pricing. nly pay for what you use and pay as you go
-* Integrated into the CenturyLink Cloud Control Portal...so it includes additional management features and easy access to other services 
+- **Robust feature set to help developers.** Based on most recent stable versions of the open source Cloud Foundry platform
+- **Competitive pricing**. Only pay for what you use
+- **Integrated into the CenturyLink Cloud Control Portal,** Includes additional management features and easy access to other cloud services
 
 #### What services are supported on AppFog v2?
 
 AppFog v2 includes native support for the following CenturyLink services: MySQL and Orchestrate. 
-        
+
 We believe the best services are those that are fully managed, easy to use, and require little user maintenance. As such, we plan to offer additional fully managed services both within CenturyLink Cloud and with partnerships to bring third party services to the AppFog v2 marketplace.
 
 #### What are the support options for AppFog v2?
-        
+
 CenturyLink Cloud provides a number of a la carte support options.  For more details visit: https://www.ctl.io/support/
 
 #### Why has AppFog v2 switched to usage-based pricing? 
