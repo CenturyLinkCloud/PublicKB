@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started with WordPress as a Service",
-  "date": "07-17-2015",
-  "author": "Bill Burge",
+  "date": "10-15-2015",
+  "author": "Bill Burge, Andy Watson",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -36,11 +36,11 @@ CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-
 
   ![](../images/wp_getting_started/wp_getting_started_3.png)
 
-4. Chose a Plan, input the Name for your site and your preferred password, and click Create
+4. Chose a plan, input the appropriate fields. Then click the create button. We have also added the ability to connect a previously created [object storage bucket](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) to your site for persistent storage.
 
   ![](../images/wp_getting_started/wp_getting_started_4.png)
 
-5. When created, you will then see the credentials for your WordPress site, and its associated phpMyAdmin and GitHub repository.
+5. When created, you will then see the credentials for your WordPress site, and its associated Git repository.
 
   ![](../images/wp_getting_started/wp_getting_started_5.png)
 
