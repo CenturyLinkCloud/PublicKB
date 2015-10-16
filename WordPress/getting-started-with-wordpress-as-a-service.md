@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started with WordPress as a Service",
-  "date": "09-16-2015",
-  "author": "Bill Burge",
+  "date": "10-15-2015",
+  "author": "Bill Burge, Andy Watson",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -21,7 +21,6 @@ CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-
 ### Prerequisites
 
 * Access to the CenturyLink Cloud platform as an authorized user.
-* [A CenturyLink Object Storage Access Key ID, Secret Access Key, and Bucket Name](wordpress-persistent-storage-configuration.md)
 
 ## Configuring a New WordPress Site
 
@@ -37,21 +36,11 @@ CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-
 
   ![](../images/wp_getting_started/wp_getting_started_3.png)
 
-4. Chose a Plan, input the following information, and click Create
-  
-  * __Name:__
-  * __Password:__
-  * __Repeat Password:__
-  
-  Attach object storage bucket.
-  
-  * __Access Key ID:__
-  * __Secret Access Key:__
-  * __Bucket Name:__
+4. Chose a plan, input the appropriate fields. Then click the create button. We have also added the ability to connect a previously created [object storage bucket](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) to your site for persistent storage.
 
   ![](../images/wp_getting_started/wp_getting_started_4.png)
 
-5. When created, you will then see the credentials for your WordPress site and its associated and git repository.
+5. When created, you will then see the credentials for your WordPress site, and its associated Git repository.
 
   ![](../images/wp_getting_started/wp_getting_started_5.png)
 
@@ -77,9 +66,13 @@ A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge b
 
 A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge base article for manually migrating a WordPress site to CenturyLink Cloud](wordpress-site-migration-to-centurylink-cloud.md).
 
+**Q: Can I have persistent storage with CenturyLink Cloud WordPress as a Service?**
+
+A: WordPress persistent storage must be [configured  with CenturyLink Cloud Object Storage](wordpress-persistent-storage-configuration.md).
+
 **Q: How do I access the MySQL database for my WordPress Site?**
 
-A: You can [access your WordPress database using external tools](wordpress-database-access-with-external-tools.md).
+A: You can [access your WordPress database using phpMyAdmin](wordpress-database-access-with-phpmyadmin.md).
 
 **Q: How do I install plugins and themes to my WordPress Site?**
 
@@ -100,7 +93,3 @@ A: You [push your committed changes with git](wordPress-site-updates-with-git.md
 **Q: How do I get a local development environment that's easy to work with?**
 
 A: [vagrant up](wordpress-local-development.md)!
-
-**Q: I accidentally pushed a bad commit to my CenturyLink Git Hosting repository!**
-
-A: You can [roll back](wordpress-deployment-rollback.md) a bad push.
