@@ -13,3 +13,5 @@ CenturyLink Cloud WordPress sites utilize Object Storage for persistent storage 
 Instructions on creating an object storage bucket can be found on the 
 [Using object storage from the control portal](../Object Storage/using-object-storage-from-the-control-portal.md) page.
 
+Once the object storage bucket has been created, the bucket can be applied during the [creation](https://www.ctl.io/knowledge-base/wordpress/getting-started-with-wordpress-as-a-service/) of your CenturyLink Cloud WordPress site.
+
