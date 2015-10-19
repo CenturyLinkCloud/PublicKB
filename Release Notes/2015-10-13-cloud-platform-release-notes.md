@@ -87,6 +87,6 @@
 
 ### Open Source Contributions (1)
 
-* __ScoutJS tool for searching/sorting NPM modules.__  Node developers have a new method to find the best modules using [Scout JS](http://scoutjs.com/), which combines GitHub and NPM data with an intelligent sorting algorithm. The [tool is open source](https://www.ctl.io/developers/blog/post/scoutjs-search-npm) and serves as an example Orchestrate and AppFog application.
+* __ScoutJS tool for searching/sorting NPM modules.__  Node developers have a new method to find the best modules using [Scout JS](http://scoutjs.com/), which combines GitHub and NPM data with an intelligent sorting algorithm. The [tool is open source](https://developers.ctl.io/developers/blog/post/scoutjs-search-npm) and serves as an example Orchestrate and AppFog application.
 
   ![ScoutJS Tool](../images/2015-10-13_releasenotes5.png)
