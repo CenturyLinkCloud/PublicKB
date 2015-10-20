@@ -158,7 +158,8 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 
 #### <a name="objectstorage"></a> Configure ownCloud to utilize Object Storage
 **There are two ways to utilize Object Storage in ownCloud, one is adding Object Storage as an external storage and the other is to utilize Object Storage as the primary storage for ownCloud**
- **Steps to add Object Storage as External storage**
+
+**Steps to add Object Storage as External storage**
  1. [Access to CenturyLink Cloud storage](../Object Storage/introducing-object-storage.md) (S3 compatible) or any other object storage
  2. Login to ownCloud portal as Administrator
  3. Select ***Apps*** from the top left drop down menu <br>![drop down menu](../images/owncloud/oc-app.png)<br>
@@ -168,7 +169,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
  7.  Once completed, the Object Storage will be part of the storage locations under "Files" <br>![External Storage](../images/owncloud/oc-object-file.png)<br>
 
 
- **Steps to add Object Storage as Local storage**
+**Steps to add Object Storage as Local storage**
  - [Access to CenturyLink Cloud storage](../Object Storage/introducing-object-storage.md) (S3 compatible) or any other object storage
  - Depending on the version of ownCloud, the options of utilizing Object Storage are different, please see [here](//owncloud.com/owncloud-server-or-enterprise-edition/)
  - ownCloud Server supports Local storage, GlusterFS/Red Hat Storage, OpenStack Swift as primary storage; Enterprise Edition supports additional primary storage with S3 compatible storage
