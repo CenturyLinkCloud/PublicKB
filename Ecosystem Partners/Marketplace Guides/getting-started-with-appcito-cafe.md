@@ -58,10 +58,10 @@ CenturyLink Cloud Users
 
 3. **Set Required parameters.**
 
-  <img src="../../images/appcito/deploy_parameters.png" style="max-width:450px;">
+  <img src="../../images/appcito/deploy_parameters.png">
 
-  * **Cluster Name** - TODO
-  * **Account Name** - TODO
+  * **Cluster Name**
+  * **Account Name**
   * **Control User Password** - The password associated with your control.ctl.io login
 
 4. **Set Optional Parameters**
