@@ -186,7 +186,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
      ),
    }
    ```
-Now, the ownCloud server is set up to consume Database as a Service, SMTP Relay and Object Storage, this will minimize the administration of the local environment and eliminate resource constraint.  
+Now, the ownCloud server is set up to consume Database as a Service, SMTP Relay and Object Storage, this will minimize the administration of the local environment and eliminate resource constraint on the server.  
 
 ### Pricing
 The costs associated with this deployment are for the CenturyLink Cloud infrastructure only.  There are no ownCloud license costs or additional fees bundled in.
