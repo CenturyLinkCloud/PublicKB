@@ -53,14 +53,15 @@ If you want to access your application over the internet, please perform the fol
 		- Click on "Add "IP address" as a trusted domain", it will redirect this request to the private IP address to create the necessary entries to the owncloud configuration file
   <br>![add trusted-domain](../images/owncloud/oc-trusted-domain-2.png)<br>
 
-#### [Deploying ownCloud on a New Server](#installserver)
-#### [Create a MySQL instance on CenturyLink DBaaS (Beta)](#createmysql)
-#### [Connect to the server via OpenVPN](#connectvpn)
-#### [Steps to deploy ownCloud to an existing server](#deployowncloud)
-#### [Enable SSL ](#enablessl)
-#### [Configure ownCloud connection to CenturyLink MySQL DBaaS (Beta)](#ownclouddbaas)
-#### [Configure ownCloud to utilize SMTP Relay](#smtprelay)
-#### [Configure ownCloud to utilize Object Storage](#objectstorage)
+### Contents
+- [Deploying ownCloud on a New Server](#installserver)
+- [Create a MySQL instance on CenturyLink DBaaS (Beta)](#createmysql)
+- [Connect to the server via OpenVPN](#connectvpn)
+- [Steps to deploy ownCloud to an existing server](#deployowncloud)
+- [Enable SSL ](#enablessl)
+- [Configure ownCloud connection to CenturyLink MySQL DBaaS (Beta)](#ownclouddbaas)
+- [Configure ownCloud to utilize SMTP Relay](#smtprelay)
+- [Configure ownCloud to utilize Object Storage](#objectstorage)
 
 #### <a name="installserver"></a> Deploying ownCloud on a New Servers
 **(For Steps using Blueprint, please see [Getting Started with ownCloud Blueprint](../Ecosystem Partners/Marketplace Guides/getting-started-with-owncloud-blueprint.md))**
