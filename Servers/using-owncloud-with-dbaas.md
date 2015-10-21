@@ -102,7 +102,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
   }
   ```
 
-#### Enable SSL
+** Enable SSL **
 - In order to enable SSL, a certificate is required.  Either a self-signed certificate or your own certificate can be used.  
  - The following gives an example of self signed certificate with an expiration date of 365 days :
 	1. Create the certificate (***use /opt/bitnami instead of /etc for Blueprint installation, detail steps are [here](//wiki.bitnami.com/Applications/BitNami_ownCloud#How_to_enable_SSL.3f)***):
@@ -189,7 +189,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 - Login to ownCloud portal as Administrator
 - Select ***Apps*** from the top left drop down menu
 
-    ![drop down menu](../images/owncloud/oc-app.png)
+  ![drop down menu](../images/owncloud/oc-app.png)
 
 - Enable ***External Storage Support*** from the ***Not enabled*** list
 
