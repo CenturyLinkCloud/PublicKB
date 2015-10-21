@@ -168,15 +168,15 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 1. Configure SMTP Relay [SMTP Relay](../Mail/smtp-relay-services-simple.md)
 2. From the owncloud main page, select ***Admin*** from the user account
 
-  ![drop down menu](../images/owncloud/oc-drop-down.png)
+    ![drop down menu](../images/owncloud/oc-drop-down.png)
 
 3. Select ***Mail Server*** from the left pane  
 
-  ![Mail Server](../images/owncloud/mail-server.png)
+    ![Mail Server](../images/owncloud/mail-server.png)
 
 4. Configure the SMTP Relay user based on SMTP Relay information from the portal
 
-  ![mail server config](../images/owncloud/oc-mail-relay-account.png)
+    ![mail server config](../images/owncloud/oc-mail-relay-account.png)
 
 5. Use the test function to verify the account information
 
@@ -189,29 +189,29 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 - Login to ownCloud portal as Administrator
 - Select ***Apps*** from the top left drop down menu
 
- ![drop down menu](../images/owncloud/oc-app.png)
+    ![drop down menu](../images/owncloud/oc-app.png)
 
 - Enable ***External Storage Support*** from the ***Not enabled*** list
 
- ![Not Enabled list](../images/owncloud/oc-app-notenabled.png)
+    ![Not Enabled list](../images/owncloud/oc-app-notenabled.png)
 
 - From the owncloud main page, select ***Admin*** from the user account
 
- ![drop down menu](../images/owncloud/oc-drop-down.png)
+    ![drop down menu](../images/owncloud/oc-drop-down.png)
 
- ![External Storage Admin](../images/owncloud/oc-admin-exstorage.png)
+    ![External Storage Admin](../images/owncloud/oc-admin-exstorage.png)
 
 - Configure ***External Storage***, ***Add Storage*** with "Amazon S3 and Compliant" and populate the fields using the credential from Step 1 and set permissions
 
- ![Object Storage Option](../images/owncloud/oc-object-options.png)
+    ![Object Storage Option](../images/owncloud/oc-object-options.png)
 
- ![Obect Storage Prompt](../images/owncloud/oc-object-prompt.png)
+    ![Object Storage Prompt](../images/owncloud/oc-object-prompt.png)
 
- ![Object Storage inputs](../images/owncloud/oc-object-clc.png)
+    ![Object Storage inputs](../images/owncloud/oc-object-clc.png)
 
 -  Once completed, the Object Storage will be part of the storage locations under "Files"
 
- ![External Storage](../images/owncloud/oc-object-file.png)
+    ![External Storage](../images/owncloud/oc-object-file.png)
 
 
 **Steps to add Object Storage as Local storage**
