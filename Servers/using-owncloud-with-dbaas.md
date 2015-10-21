@@ -141,13 +141,16 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 3. The ownCloud configuration page will appear
 
 	![configuration](../images/owncloud/owncloud-setup-first.png)
+
 4. Click on ***Storage and Database***, select ***MySQL***
 5. Using the information from DBaaS to complete the information, the format for the host is IP_Address:port (e.g. 192.168.1.1:45678)
 
 	![ownCloud database input](../images/owncloud/oc-setup-mysql.png)
+
 6. Click "Finish Setup", the welcome page will display
 
   ![ownCloud Welcome](../images/owncloud/owncloud-welcome.png)
+
 7. Download the certificate from Database as a Service to the ownCloud server to enable secure communication between the database and the ownCloud server.  Please refer to this [Connecting to MySQL DBaaS over SSL-enabled Connection](../database/connecting-to-mysql-dbaas-over-ssl.md) knowledge article.
 	- Add the following to section to the config.php file (default location: /var/www/owncloud/config/)
 
@@ -161,6 +164,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 
 
 ### <a name="smtprelay"></a> Configure ownCloud to utilize SMTP Relay
+
 1. Configure SMTP Relay [SMTP Relay](../Mail/smtp-relay-services-simple.md)
 2. From the owncloud main page, select ***Admin*** from the user account
 
@@ -181,24 +185,23 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 
 **Steps to add Object Storage as External storage**
 
-1. [Access to CenturyLink Cloud storage](../Object Storage/introducing-object-storage.md) (S3 compatible) or any other object storage
-2. Login to ownCloud portal as Administrator
-
-3. Select ***Apps*** from the top left drop down menu
+- [Access to CenturyLink Cloud storage](../Object Storage/introducing-object-storage.md) (S3 compatible) or any other object storage
+- Login to ownCloud portal as Administrator
+- Select ***Apps*** from the top left drop down menu
 
  ![drop down menu](../images/owncloud/oc-app.png)
 
-4. Enable ***External Storage Support*** from the ***Not enabled*** list
+- Enable ***External Storage Support*** from the ***Not enabled*** list
 
  ![Not Enabled list](../images/owncloud/oc-app-notenabled.png)
 
-5. From the owncloud main page, select ***Admin*** from the user account
+- From the owncloud main page, select ***Admin*** from the user account
 
  ![drop down menu](../images/owncloud/oc-drop-down.png)
 
  ![External Storage Admin](../images/owncloud/oc-admin-exstorage.png)
 
-6. Configure ***External Storage***, ***Add Storage*** with "Amazon S3 and Compliant" and populate the fields using the credential from Step 1 and set permissions
+- Configure ***External Storage***, ***Add Storage*** with "Amazon S3 and Compliant" and populate the fields using the credential from Step 1 and set permissions
 
  ![Object Storage Option](../images/owncloud/oc-object-options.png)
 
@@ -206,13 +209,14 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 
  ![Object Storage inputs](../images/owncloud/oc-object-clc.png)
 
-7.  Once completed, the Object Storage will be part of the storage locations under "Files"
+-  Once completed, the Object Storage will be part of the storage locations under "Files"
 
  ![External Storage](../images/owncloud/oc-object-file.png)
 
 
 **Steps to add Object Storage as Local storage**
  - [Access to CenturyLink Cloud storage](../Object Storage/introducing-object-storage.md) (S3 compatible) or any other object storage
+
  - Depending on the version of ownCloud, the options of utilizing Object Storage are different, please see [here](//owncloud.com/owncloud-server-or-enterprise-edition/)
  - ownCloud Server supports Local storage, GlusterFS/Red Hat Storage, OpenStack Swift as primary storage; Enterprise Edition supports additional primary storage with S3 compatible storage
  - In order to utilize Object Storage for primary storage, edit config.php (default location: /var/www/owncloud/config/) with the Object Storage credential, like the example below:
