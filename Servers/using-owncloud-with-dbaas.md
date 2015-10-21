@@ -221,8 +221,8 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
  - ownCloud Server supports Local storage, GlusterFS/Red Hat Storage, OpenStack Swift as primary storage; Enterprise Edition supports additional primary storage with S3 compatible storage
  - In order to utilize Object Storage for primary storage, edit config.php (default location: /var/www/owncloud/config/) with the Object Storage credential, like the example below:
 
-  ```
-   {	'objectstore' => array(
+    ```
+    {	'objectstore' => array(
      'class' => 'OCA\ObjectStore\S3',
      'arguments' => array(
      'key' => 'xxxxxxxxxxxxx',
@@ -231,8 +231,8 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
      'region' => 'canada.os.ctl.io'
        ),
      ),
-   }
-   ```
+    }
+    ```
 Now, the ownCloud server is set up to consume Database as a Service, SMTP Relay and Object Storage, this will minimize the administration of the local environment and eliminate resource constraint on the server.  
 
 ### Pricing
