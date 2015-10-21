@@ -8,6 +8,16 @@
 
 ![ownCloud logo](../images/owncloud/ownCloud-logo.png)
 
+### Contents
+- [Deploying ownCloud on a New Server](#installserver)
+- [Create a MySQL instance on CenturyLink DBaaS (Beta)](#createmysql)
+- [Connect to the server via OpenVPN](#connectvpn)
+- [Steps to deploy ownCloud to an existing server](#deployowncloud)
+- [Enable SSL ](#enablessl)
+- [Configure ownCloud connection to CenturyLink MySQL DBaaS (Beta)](#ownclouddbaas)
+- [Configure ownCloud to utilize SMTP Relay](#smtprelay)
+- [Configure ownCloud to utilize Object Storage](#objectstorage)
+
 ### Technology Profile
 ownCloud is a personal productivity powerhouse. It gives you universal access to all your files, contacts, calendars and bookmarks across all of your devices. Unlike many of the shared repository services out there, with ownCloud, you have your own, private repo. However, just like the public repo companies, with ownCloud you can share your files with friends and co-workers. If you need it, ownCloud even integrates with other storage providers. Best of all, ownCloud is open source and free!
 
@@ -49,21 +59,14 @@ If you want to access your application over the internet, please perform the fol
   - Restart Apache using *sudo  service apache2 restart*
   - (The following steps will enable management of ownCloud from the public IP address)
 		- Access the server's public IP address using a web browser (with VPN still connected)
-		- ownCloud setup will prompt to add the new IP address as a "trusted domain" <br>![trusted domain](../images/owncloud/oc-trusted-domain.png)<br>
+		- ownCloud setup will prompt to add the new IP address as a "trusted domain"
+    ![trusted domain](../images/owncloud/oc-trusted-domain.png)
 		- Click on "Add "IP address" as a trusted domain", it will redirect this request to the private IP address to create the necessary entries to the owncloud configuration file
-  <br>![add trusted-domain](../images/owncloud/oc-trusted-domain-2.png)<br>
+    ![add trusted-domain](../images/owncloud/oc-trusted-domain-2.png)
 
-### Contents
-- [Deploying ownCloud on a New Server](#installserver)
-- [Create a MySQL instance on CenturyLink DBaaS (Beta)](#createmysql)
-- [Connect to the server via OpenVPN](#connectvpn)
-- [Steps to deploy ownCloud to an existing server](#deployowncloud)
-- [Enable SSL ](#enablessl)
-- [Configure ownCloud connection to CenturyLink MySQL DBaaS (Beta)](#ownclouddbaas)
-- [Configure ownCloud to utilize SMTP Relay](#smtprelay)
-- [Configure ownCloud to utilize Object Storage](#objectstorage)
+### Procedure
 
-#### <a name="installserver"></a> Deploying ownCloud on a New Servers
+### <a name="installserver"></a> Deploying ownCloud on a New Servers
 **(For Steps using Blueprint, please see [Getting Started with ownCloud Blueprint](../Ecosystem Partners/Marketplace Guides/getting-started-with-owncloud-blueprint.md))**
 Create a Linux server in CenturyLink Cloud using the following knowledge articles:
 - For virtual server, [Create a virtual server](../Servers/how-to-create-customer-specific-os-templates.md)
@@ -73,29 +76,32 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 
 
 
-#### <a name="createmysql"></a> Create a MySQL instance on CenturyLink DBaaS (Beta)
+### <a name="createmysql"></a> Create a MySQL instance on CenturyLink DBaaS (Beta)
 1. Use [Create a MySQL instance on CenturyLink DBaaS](../Database/getting-started-with-MySQL-DBaaS.md) knowledge article to create a database instance
-2. Note down the user name and the connection string from the setup <br>![DBaaS](../images/owncloud/dbaas.png)<br>
+2. Note down the user name and the connection string from the setup
+
+  ![DBaaS](../images/owncloud/dbaas.png)
 3. Download the certificate to configure secure connectivity to DBaaS
 
-#### <a name="connectvpn"></a> Connect to the server via OpenVPN
+### <a name="connectvpn"></a> Connect to the server via OpenVPN
 - Assume you have OpenVPN client setup for the CenturyLink Cloud account
 - If not, please refer to [How To Configure Client VPN](../network/how-to-configure-client-vpn.md)
 
-#### <a name="deployowncloud"></a> Steps to deploy ownCloud to an existing server
+### <a name="deployowncloud"></a> Steps to deploy ownCloud to an existing server
 1. Download the ownCloud installation from [ownCloud.org](//owncloud.org/install/)
 2. Look for the package for the installed OS, this example will use Ubuntu 14.x
 3. ownCloud supports CentOS, Debian, RHEL, Ubuntu and [more](//software.opensuse.org/download/package?project=isv:ownCloud:community&package=owncloud)
 4. For Ubuntu 14.x, download the ownCloud package and add the repository key to apt (this key will updates periodically).
-```
-{
+
+  ```
+  {
 	wget http://download.opensuse.org/repositories/isv:ownCloud:community/xUbuntu_14.10/Release.key
 	sudo apt-key add - < Release.key  
 	sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/community/xUbuntu_14.10/ /' >> /etc/apt/sources.list.d/owncloud.list"
 	sudo apt-get update
 	sudo apt-get install owncloud
-}
-```
+  }
+  ```
 
 #### <a name="enablessl"></a> Enable SSL
 - In order to enable SSL, a certificate is required.  Either a self-signed certificate or your own certificate can be used.  
@@ -134,40 +140,66 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 1. If not already, connect to [CenturyLink Cloud VPN](../network/how-to-configure-client-vpn.md)
 2. Point the web browser to the private address of the ownCloud server
 3. The ownCloud configuration page will appear
-	<br>![configuration](../images/owncloud/owncloud-setup-first.png)<br>
+
+	![configuration](../images/owncloud/owncloud-setup-first.png)
 4. Click on ***Storage and Database***, select ***MySQL***
 5. Using the information from DBaaS to complete the information, the format for the host is IP_Address:port (e.g. 192.168.1.1:45678)
-	<br>![ownCloud database input](../images/owncloud/oc-setup-mysql.png)<br>
-6. Click "Finish Setup", the welcome page will display <br>![ownCloud Welcome](../images/owncloud/owncloud-welcome.png)<br>
-7. Download the certificate from Database as a Service to the ownCloud server to enable secure communication between the database and the ownCloud server.
-		- Add the following to section to the config.php file (default location: /var/www/owncloud/config/)
-		```
-		{   'dbdriveroptions' =>
+
+	![ownCloud database input](../images/owncloud/oc-setup-mysql.png)
+6. Click "Finish Setup", the welcome page will display
+
+  ![ownCloud Welcome](../images/owncloud/owncloud-welcome.png)
+7. Download the certificate from Database as a Service to the ownCloud server to enable secure communication between the database and the ownCloud server.  Please refer to this [Connecting to MySQL DBaaS over SSL-enabled Connection](../database/connecting-to-mysql-dbaas-over-ssl.md) knowledge article.
+	- Add the following to section to the config.php file (default location: /var/www/owncloud/config/)
+
+	   ```
+		  {   'dbdriveroptions' =>
 				array (
 				1009 => '/etc/mysql/ssl/ca-cert.pem',
 				),
-		}
-		```
+		    }
+		  ```
 
 
-#### <a name="smtprelay"></a> Configure ownCloud to utilize SMTP Relay
+### <a name="smtprelay"></a> Configure ownCloud to utilize SMTP Relay
 1. Configure SMTP Relay [SMTP Relay](../Mail/smtp-relay-services-simple.md)
-2. From the owncloud main page, select ***Admin*** from the user account <br>![drop down menu](../images/owncloud/oc-drop-down.png)<br>
-3. Select ***Mail Server*** from the left pane     <br>![Mail Server](../images/owncloud/mail-server.png)<br>
-4. Configure the SMTP Relay user based on SMTP Relay information from the portal <br>![mail server config](../images/owncloud/oc-mail-relay-account.png)<br>
+2. From the owncloud main page, select ***Admin*** from the user account
+
+  ![drop down menu](../images/owncloud/oc-drop-down.png)
+3. Select ***Mail Server*** from the left pane  
+
+  ![Mail Server](../images/owncloud/mail-server.png)
+4. Configure the SMTP Relay user based on SMTP Relay information from the portal
+
+  ![mail server config](../images/owncloud/oc-mail-relay-account.png)
 5. Use the test function to verify the account information
 
-#### <a name="objectstorage"></a> Configure ownCloud to utilize Object Storage
+### <a name="objectstorage"></a> Configure ownCloud to utilize Object Storage
 **There are two ways to utilize Object Storage in ownCloud, one is adding Object Storage as an external storage and the other is to utilize Object Storage as the primary storage for ownCloud**
 
 **Steps to add Object Storage as External storage**
  1. [Access to CenturyLink Cloud storage](../Object Storage/introducing-object-storage.md) (S3 compatible) or any other object storage
  2. Login to ownCloud portal as Administrator
- 3. Select ***Apps*** from the top left drop down menu <br>![drop down menu](../images/owncloud/oc-app.png)<br>
- 4. Enable ***External Storage Support*** from the ***Not enabled*** list  <br>![Not Enabled list](../images/owncloud/oc-app-notenabled.png)
- 5. From the owncloud main page, select ***Admin*** from the user account <br>![drop down menu](../images/owncloud/oc-drop-down.png) ![External Storage Admin](../images/owncloud/oc-admin-exstorage.png) <br>
- 6. Configure ***External Storage***, ***Add Storage*** with "Amazon S3 and Compliant" and populate the fields using the credential from Step 1 and set permissions <br>![Object Storage Option](../images/owncloud/oc-object-options.png)![Obect Storage Prompt](../images/owncloud/oc-object-prompt.png)<br> <br>![Object Storage inputs](../images/owncloud/oc-object-clc.png)<br>
- 7.  Once completed, the Object Storage will be part of the storage locations under "Files" <br>![External Storage](../images/owncloud/oc-object-file.png)<br>
+ 3. Select ***Apps*** from the top left drop down menu
+
+ ![drop down menu](../images/owncloud/oc-app.png)
+ 4. Enable ***External Storage Support*** from the ***Not enabled*** list
+
+ ![Not Enabled list](../images/owncloud/oc-app-notenabled.png)
+ 5. From the owncloud main page, select ***Admin*** from the user account
+
+ ![drop down menu](../images/owncloud/oc-drop-down.png)
+
+ ![External Storage Admin](../images/owncloud/oc-admin-exstorage.png)
+ 6. Configure ***External Storage***, ***Add Storage*** with "Amazon S3 and Compliant" and populate the fields using the credential from Step 1 and set permissions
+ ![Object Storage Option](../images/owncloud/oc-object-options.png)
+
+ ![Obect Storage Prompt](../images/owncloud/oc-object-prompt.png)
+
+ ![Object Storage inputs](../images/owncloud/oc-object-clc.png)
+ 7.  Once completed, the Object Storage will be part of the storage locations under "Files"
+
+ ![External Storage](../images/owncloud/oc-object-file.png)
 
 
 **Steps to add Object Storage as Local storage**
