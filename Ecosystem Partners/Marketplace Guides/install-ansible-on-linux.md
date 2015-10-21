@@ -18,9 +18,9 @@ Ansible’s main goals are simplicity and ease-of-use. It also has a strong focu
 
 We believe simplicity is relevant to all sizes of environments, so we design for busy users of all types: developers, sysadmins, release engineers, IT managers, and everyone in between. Ansible is appropriate for managing all environments, from small setups with a handful of instances to enterprise environments with many thousands of instances.
 
-Ansible manages machines in an agent-less manner. There is never a question of how to upgrade remote daemons or the problem of not being able to manage systems because daemons are uninstalled. Because OpenSSH is one of the most peer-reviewed open source components, security exposure is greatly reduced. Ansible is decentralized–it relies on your existing OS credentials to control access to remote machines. If needed, Ansible can easily connect with Kerberos, LDAP, and other centralized authentication management systems.
+Ansible manages machines in an agent-less manner. There is never a question of how to upgrade remote daemons or the problem of not being able to manage systems because daemons are uninstalled. Because OpenSSH is one of the most peer-reviewed open source components, security exposure is greatly reduced. Ansible is decentralized - it relies on your existing OS credentials to control access to remote machines. If needed, Ansible can easily connect with Kerberos, LDAP, and other centralized authentication management systems.
 
-For more information, please visit [Ansible.com](www.ansible.com)
+For more information, please visit [Ansible.com](http://www.ansible.com)
 
 ### Audience
 CenturyLink Cloud Users
@@ -34,8 +34,8 @@ After reading this article, the user should be able to install Ansible on an arb
 ### Postrequisite
 
 To access your application from a computer outside the CenturyLink Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
-  1. [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
-  2. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
+  1. [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
+  2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
     * The default ports to access the application are: 80, 443
 
 ### Deploying the <name of the blueprint> Blueprint
@@ -69,7 +69,7 @@ To access your application from a computer outside the CenturyLink Cloud network
   3. Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  There are no costs for using ansible, it is free software.
+The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  There are no costs for using ansible, it is free open source software.
 
 ### About Ansible
 Ansible is open source, python oriented automation software.  It is supported by Ansible.com, and a wide variety of web resources.  ##CenturyLink does not provide support for Ansible##
