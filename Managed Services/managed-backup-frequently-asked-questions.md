@@ -35,7 +35,7 @@ A: There could be a few causes:
 
 **Q: What's the difference between Managed Backup and Premium Storage?**
 
-A: Both options provide a two-week retention period and offsite backups. But Managed Backup also offers the ability for customers to work with the managed backup support team to customize retention policies and backup schedules. There are options for including – or excluding - specific files/folders from a backup policy. Premium Storage simply provides nightly VM backups, making it difficult to restore selected files or folders, while Managed Backup performs full and incremental backups on a nightly basis and can be turned on and off as needed. Managed Backup also encrypts the backup data at rest.
+A: Both options provide a two-week retention period and offsite backups. But Managed Backup also offers the ability for customers to work with the managed backup support team to customize retention policies and backup schedules. There are options for including – or excluding - specific files/folders from a backup policy. Premium Storage simply provides nightly VM backups, making it difficult to restore selected files or folders, while Managed Backup performs full and incremental backups on a nightly basis and can be turned on and off as needed. Managed Backup also encrypts the backup data at rest. Encryption is provided on the backup infrastructure servers after a backup has been performed; the encryption key in only avalible to our operations staff and the backup systems.
 
 Users are likely best served by choosing *either* Managed Backup *or* Premium Storage. For Hyperscale servers, Managed Backup is recommended.
 

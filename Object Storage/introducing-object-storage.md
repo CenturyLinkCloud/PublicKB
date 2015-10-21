@@ -15,7 +15,7 @@ CenturyLink Cloud now has a robust, geo-based Object Storage service capable of 
 ### FAQ
 **Q: Is this software home-grown or is this based on a commercial product?**
 
-A: CenturyLink Cloud Object Storage is based on [Riak CS Enterprise from Basho](//www.basho.com) and will be deployed across CenturyLink Cloud data centers.
+A: CenturyLink Cloud Object Storage is based on a popular software package with targeted extensions to optimize it for CenturyLink Cloud.
 
 **Q: What are the key vocabulary terms for Object Storage?**
 

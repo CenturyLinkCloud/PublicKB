@@ -1,5 +1,5 @@
 {{{
-  "title": "Getting Started with Elastic COBOL Developer for Windows - Blueprint",
+  "title": "Getting Started with Elastic COBOL by Heirloom Computing",
   "date": "09-28-2015",
   "author": "Heirloom Computing",
   "attachments": [],
@@ -12,7 +12,7 @@
 
 ### Technology Profile
 
-Heirloom Computing transforms enterprise applications automatically into Java with 100% guaranteed accuracy while preserving business logic, thereby reducing cost and providing integration with modern systems. Through patented advanced language transformation and open architecture, Heirloom software complies and translates COBOL to Java in one-step, eliminating complexity and risk without vendor lock-in. The industry-leading development and deployment technology is compatible with internal systems, private, public or hybrid clouds, and Heirloom’’s platform-as-a-service. Java programmers are empowered to own, manage and maintain mainframe applications, which reduce the dependency on mainframe skill-sets. Companies can now quickly and safely transforms their enterprise applications with ease and confidence.
+Heirloom Computing accurately transforms enterprise applications into Java while preserving business logic, thereby reducing cost and providing integration with modern systems. Through patented advanced language transformation and open architecture, Heirloom software complies and translates COBOL to Java in one-step, eliminating complexity and risk without vendor lock-in. The industry-leading development and deployment technology is compatible with internal systems, private, public or hybrid clouds, and Heirloom’s platform-as-a-service. Java programmers are empowered to own, manage and maintain mainframe applications, which reduce the dependency on mainframe skill-sets. Companies can now quickly and safely transforms their enterprise applications with ease and confidence.
 
 ### Description
 

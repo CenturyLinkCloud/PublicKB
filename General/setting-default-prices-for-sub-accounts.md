@@ -12,7 +12,7 @@
 
 CenturyLink Cloud offers customers a way to set custom prices for their sub accounts. We call this feature Set Your Own Price, or SYOP. Using this feature does not change the prices between a customer and CenturyLink Cloud; rather, it provides the customer the opportunity to adjust the prices seen by their sub accounts for that sub account's usage.
 
-##### These instructions will help users create a default price adjustment for all sub accounts in their heirarchy. Existing sub accounts that do not already have their own custom prices set will inherit the pricing. New sub accounts will inherit the default pricing too.
+**These instructions will help users create a default price adjustment for all sub accounts in their heirarchy. Existing sub accounts that do not already have their own custom prices set will inherit the pricing. New sub accounts will inherit the default pricing too.**
 
 Notes:
 
