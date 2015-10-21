@@ -14,7 +14,7 @@ In 2015 the RSA Conference’s Innovation Sandbox awarded Waratek the title of�
 
 * Email support – [support@waratek.com](mailto:support@waratek.com)
 
-* Support Site – support.waratek.com
+* Support Site – [https://support.waratek.com](https://support.waratek.com/). 
 
 * Sales and Marketing – [sales@waratek.com](mailto:sales@waratek.com)
 
