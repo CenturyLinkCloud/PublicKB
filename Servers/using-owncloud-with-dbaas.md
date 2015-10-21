@@ -180,30 +180,33 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 **There are two ways to utilize Object Storage in ownCloud, one is adding Object Storage as an external storage and the other is to utilize Object Storage as the primary storage for ownCloud**
 
 **Steps to add Object Storage as External storage**
- 1. [Access to CenturyLink Cloud storage](../Object Storage/introducing-object-storage.md) (S3 compatible) or any other object storage
 
- 2. Login to ownCloud portal as Administrator
- 
- 3. Select ***Apps*** from the top left drop down menu
+1. [Access to CenturyLink Cloud storage](../Object Storage/introducing-object-storage.md) (S3 compatible) or any other object storage
+2. Login to ownCloud portal as Administrator
+
+3. Select ***Apps*** from the top left drop down menu
 
  ![drop down menu](../images/owncloud/oc-app.png)
 
- 4. Enable ***External Storage Support*** from the ***Not enabled*** list
+4. Enable ***External Storage Support*** from the ***Not enabled*** list
 
  ![Not Enabled list](../images/owncloud/oc-app-notenabled.png)
 
- 5. From the owncloud main page, select ***Admin*** from the user account
+5. From the owncloud main page, select ***Admin*** from the user account
 
  ![drop down menu](../images/owncloud/oc-drop-down.png)
 
  ![External Storage Admin](../images/owncloud/oc-admin-exstorage.png)
- 6. Configure ***External Storage***, ***Add Storage*** with "Amazon S3 and Compliant" and populate the fields using the credential from Step 1 and set permissions
+
+6. Configure ***External Storage***, ***Add Storage*** with "Amazon S3 and Compliant" and populate the fields using the credential from Step 1 and set permissions
+
  ![Object Storage Option](../images/owncloud/oc-object-options.png)
 
  ![Obect Storage Prompt](../images/owncloud/oc-object-prompt.png)
 
  ![Object Storage inputs](../images/owncloud/oc-object-clc.png)
- 7.  Once completed, the Object Storage will be part of the storage locations under "Files"
+
+7.  Once completed, the Object Storage will be part of the storage locations under "Files"
 
  ![External Storage](../images/owncloud/oc-object-file.png)
 
