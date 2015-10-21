@@ -13,7 +13,6 @@
 - [Create a MySQL instance on CenturyLink DBaaS (Beta)](#createmysql)
 - [Connect to the server via OpenVPN](#connectvpn)
 - [Steps to deploy ownCloud to an existing server](#deployowncloud)
-- [Enable SSL ](#enablessl)
 - [Configure ownCloud connection to CenturyLink MySQL DBaaS (Beta)](#ownclouddbaas)
 - [Configure ownCloud to utilize SMTP Relay](#smtprelay)
 - [Configure ownCloud to utilize Object Storage](#objectstorage)
@@ -72,7 +71,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 - For virtual server, [Create a virtual server](../Servers/how-to-create-customer-specific-os-templates.md)
 - [Create a bare metal server](../../Servers/creating-a-new-bare-metal-server.md) for a private deployment
 
-**Blueprint ownCloud installation is located in /opt/bitnami directory**
+  **Blueprint ownCloud installation is located in /opt/bitnami directory**
 
 
 
@@ -103,7 +102,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
   }
   ```
 
-#### <a name="enablessl"></a> Enable SSL
+#### Enable SSL
 - In order to enable SSL, a certificate is required.  Either a self-signed certificate or your own certificate can be used.  
  - The following gives an example of self signed certificate with an expiration date of 365 days :
 	1. Create the certificate (***use /opt/bitnami instead of /etc for Blueprint installation, detail steps are [here](//wiki.bitnami.com/Applications/BitNami_ownCloud#How_to_enable_SSL.3f)***):
@@ -166,12 +165,15 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 2. From the owncloud main page, select ***Admin*** from the user account
 
   ![drop down menu](../images/owncloud/oc-drop-down.png)
+
 3. Select ***Mail Server*** from the left pane  
 
   ![Mail Server](../images/owncloud/mail-server.png)
+
 4. Configure the SMTP Relay user based on SMTP Relay information from the portal
 
   ![mail server config](../images/owncloud/oc-mail-relay-account.png)
+
 5. Use the test function to verify the account information
 
 ### <a name="objectstorage"></a> Configure ownCloud to utilize Object Storage
@@ -183,20 +185,24 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
  3. Select ***Apps*** from the top left drop down menu
 
  ![drop down menu](../images/owncloud/oc-app.png)
+
  4. Enable ***External Storage Support*** from the ***Not enabled*** list
 
  ![Not Enabled list](../images/owncloud/oc-app-notenabled.png)
+
  5. From the owncloud main page, select ***Admin*** from the user account
 
  ![drop down menu](../images/owncloud/oc-drop-down.png)
 
  ![External Storage Admin](../images/owncloud/oc-admin-exstorage.png)
+
  6. Configure ***External Storage***, ***Add Storage*** with "Amazon S3 and Compliant" and populate the fields using the credential from Step 1 and set permissions
  ![Object Storage Option](../images/owncloud/oc-object-options.png)
 
  ![Obect Storage Prompt](../images/owncloud/oc-object-prompt.png)
 
  ![Object Storage inputs](../images/owncloud/oc-object-clc.png)
+ 
  7.  Once completed, the Object Storage will be part of the storage locations under "Files"
 
  ![External Storage](../images/owncloud/oc-object-file.png)
