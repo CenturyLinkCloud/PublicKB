@@ -102,7 +102,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
   }
   ```
 
-** Enable SSL **
+**Enable SSL**
 - In order to enable SSL, a certificate is required.  Either a self-signed certificate or your own certificate can be used.  
  - The following gives an example of self signed certificate with an expiration date of 365 days :
 	1. Create the certificate (***use /opt/bitnami instead of /etc for Blueprint installation, detail steps are [here](//wiki.bitnami.com/Applications/BitNami_ownCloud#How_to_enable_SSL.3f)***):
@@ -168,15 +168,15 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 - Configure SMTP Relay [SMTP Relay](../Mail/smtp-relay-services-simple.md)
 - From the owncloud main page, select ***Admin*** from the user account
 
-  ![drop down menu](../images/owncloud/oc-drop-down.png)
+![drop down menu](../images/owncloud/oc-drop-down.png)
 
 - Select ***Mail Server*** from the left pane  
 
-  ![Mail Server](../images/owncloud/mail-server.png)
+![Mail Server](../images/owncloud/mail-server.png)
 
 - Configure the SMTP Relay user based on SMTP Relay information from the portal
 
-  ![mail server config](../images/owncloud/oc-mail-relay-account.png)
+![mail server config](../images/owncloud/oc-mail-relay-account.png)
 
 - Use the test function to verify the account information
 
