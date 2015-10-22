@@ -56,6 +56,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [BCMOne VitalView](../Ecosystem Partners/Marketplace Guides/getting-started-with-bcmone-vital-view-blueprint.md)   	| Blueprint    | Network monitoring and management    |
 | [Centerity](../Ecosystem Partners/Marketplace Guides/getting-started-with-centerity-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
 | [Chef Server](../Ecosystem Partners/Marketplace Guides/getting-started-with-chef-server-blueprint.md)   	| Blueprint    | Configuration management    |
+| [CloudBolt](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudbolt-appliance.md)   	| Appliance    | Multi-cloud management platform    |
 | [Dynatrace](../Ecosystem Partners/Marketplace Guides/getting-started-with-dynatrace-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
 
 
