@@ -69,7 +69,7 @@ If you want to access your application over the internet, please perform the fol
 **(For Steps using Blueprint, please see [Getting Started with ownCloud Blueprint](../Ecosystem Partners/Marketplace Guides/getting-started-with-owncloud-blueprint.md))**
 Create a Linux server in CenturyLink Cloud using the following knowledge articles:
 - For virtual server, [Create a virtual server](../Servers/how-to-create-customer-specific-os-templates.md)
-- [Create a bare metal server](../../Servers/creating-a-new-bare-metal-server.md) for a private deployment
+- [Create a bare metal server](../Servers/creating-a-new-bare-metal-server.md) for a private deployment
 
   **Blueprint ownCloud installation is located in /opt/bitnami directory**
 
@@ -84,7 +84,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 
 ### <a name="connectvpn"></a> Connect to the server via OpenVPN
 - Assume you have OpenVPN client setup for the CenturyLink Cloud account
-- If not, please refer to [How To Configure Client VPN](../network/how-to-configure-client-vpn.md)
+- If not, please refer to [How To Configure Client VPN](../Network/how-to-configure-client-vpn.md)
 
 ### <a name="deployowncloud"></a> Steps to deploy ownCloud to an existing server
 1. Download the ownCloud installation from [ownCloud.org](//owncloud.org/install/)
@@ -136,7 +136,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 
 #### <a name="ownclouddbaas"></a> Configure ownCloud connection to CenturyLink MySQL DBaaS (Beta)
 ##### To trigger the initial setup in the ownCloud Blueprint installation, move the config.php file from /opt/bitnami/apps/owncloud/htdocs/config directory to a new location (please [backup the data for restoration](//wiki.bitnami.com/Applications/BitNami_ownCloud#How_to_create_a_full_backup_of_ownCloud.3f))
-1. If not already, connect to [CenturyLink Cloud VPN](../network/how-to-configure-client-vpn.md)
+1. If not already, connect to [CenturyLink Cloud VPN](../Network/how-to-configure-client-vpn.md)
 2. Point the web browser to the private address of the ownCloud server
 3. The ownCloud configuration page will appear
 
@@ -151,7 +151,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 
   ![ownCloud Welcome](../images/owncloud/owncloud-welcome.png)
 
-7. Download the certificate from Database as a Service to the ownCloud server to enable secure communication between the database and the ownCloud server.  Please refer to this [Connecting to MySQL DBaaS over SSL-enabled Connection](../database/connecting-to-mysql-dbaas-over-ssl.md) knowledge article.
+7. Download the certificate from Database as a Service to the ownCloud server to enable secure communication between the database and the ownCloud server.  Please refer to this [Connecting to MySQL DBaaS over SSL-enabled Connection](../Database/connecting-to-mysql-dbaas-over-ssl.md) knowledge article.
 	- Add the following to section to the config.php file (default location: /var/www/owncloud/config/)
 
 	   ```
