@@ -3,24 +3,59 @@
   "date": "11-25-2014",
   "author": "Jared Ruckle",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
-<h3>Overview</h3>
-<p>CenturyLink provides reactive patching to managed customer operating systems. Patches and updates are available upon request to ensure that no patches are applied without customer knowledge and consent, effectively reducing risks to application
-  and data integrity.</p>
-<p>On a monthly basis, CenturyLink product engineers review all vendor-recommended patches made available by operating system software vendors. A subset of these patches and updates are identified by the OS vendor as <strong>Critical</strong> or <strong>Important</strong>  to installed operating systems, and this subset is tested and certified by CenturyLink. All certified and vendor-recommended patches are implemented with new server builds and made available for patching upon customer request for existing managed
-  servers.</p>
-<p>As part of our cloud service, CenturyLink will work with a designated customer representative to install requested certified patches according to available maintenance windows. Since CenturyLink is often not responsible for the customer’s entire
-  application tier, CenturyLink cannot be responsible for any adverse effects from patches that are installed at the request of the customer. Once requested patching has been applied, standardized reporting is available to each customer through
-  the CenturyLink customer web portal to indicate all patches successfully or unsuccessfully applied.</p>
-<h3>Service Packs and Sub Releases</h3>
-<p>All service packs are evaluated and tested thoroughly on the standard CenturyLink Cloud Managed Server configurations. Integration of the service pack, into the CenturyLink hardened standard operating system build, only occurs once testing has proven
-  its stability and performance benefits. All applicable new managed servers will be automatically configured with this new base build. CenturyLink intends to keep in production current level N-2 to the extent that the underlying vendor is
-  still providing patching and support. When underlying vendor support ceases to exist, CenturyLink&nbsp; will be liable for best effort service and patching up to the last available support structure.&nbsp;&nbsp; Existing production servers, if
-  requested by the customer, will be upgraded during maintenance windows that will be coordinated with the customer.</p>
-<h3>Anti-Virus Protection</h3>
-<p>Standard CenturyLink practice shall be that anti-virus software is provided automatically with each managed Microsoft Windows OS. CenturyLink uses third-party anti-virus software in conjunction with centralized management tools to maintain anti-virus
-  software updates, policy control and regular signature file updates per the policies defined at the AV vendor’s central management server. Anti-virus technology provides reasonable protection against malware, including viruses, spyware and trojans,
-  but such technology cannot guarantee the prevention of such malware. Should disruption or changes occur due to malware, CenturyLink will use commercially reasonable efforts to promptly remedy the situation after being notified of the problem, but CenturyLink
-  will not be responsible for any damages due to worms, phishing attacks, rootkits, trojan horses or other such malware, including infection of end-user devices or lost or corrupted data/messages.</p>
+### Overview
+
+CenturyLink provides reactive and self-service patching to servers with both standard and managed customer operating systems. For managed servers, patches and updates are available upon request to ensure no patches are applied without customer knowledge and consent, effectively reducing risks to application and data integrity. Data and/or reports are available you in different ways, depending on the solution used.
+
+
+### Group Policies
+
+If you extend your domain into CenturyLink Cloud as a managed domain then we will need to work with you to establish group policies to point your windows domain members to use our managed WSUS servers. Please contact the CenturyLink Client Service Center at 1-888-638-6771 and choose menu option 2. If you buy [managed Active Direcory](../Managed Services/getting-started-with-managed-active-directory.md) and it is provided by CenturyLink and not an extension of your domain, then we provide the group policy in our automation calls to provision the active directory.
+
+### Self-Service Patching
+
+Although the [Automated Patching](../Servers/patching-as-a-service.md) service is available for any server - whether managed or unmanaged - it is recommended that clients planning to update managed devices should work with the Client Service Center to schedule a maintenance activity for Standard, Managed Patching because it is included with managed servers.
+
+### Standard, Managed Patching
+
+Whether the process for scheduling patching maintenance actions is initiated by customers or CenturyLink, keeping the system up-to-date is an important component of OS administration and management. This includes discussion of potential impact on specific applications, communication strategies, health checks, suppression of monitoring alerts, and fallback planning.
+
+#### Customer Requesitioned Patching
+
+As part of our managed cloud service, CenturyLink will work with your designated contact to install patches in agreed-upon maintenance windows.  Please contact the CenturyLink Client Service Center at 1-888-638-6771 and choose menu option 2 to submit your request for a maintenance activity.
+
+Since CenturyLink is often not responsible for the customer’s entire application tier, CenturyLink cannot be responsible for any adverse effects from patches that are installed at the request of the customer.
+
+#### CenturyLink Requesitioned Patching
+
+This includes keeping the system current with all patches to help prevent security compromises or operational reliability issues. CenturyLink will, from time to time, schedule the installation of system patches as deemed appropriate by our Solution Engineers. We will schedule the installation with you in advance. This will allow both parties to prepare for the patching, as well as provide ample time for discussion.
+
+
+### Advanced Patching
+
+Customized Patch Policies (environment & server specific) are not included with CenturyLink Cloud Managed OS. Please contact your CenturyLink sales representative to set up a special engagement.
+
+### OS Updates
+
+On a monthly basis, CenturyLink Cloud product engineers review all vendor-recommended patches made available by operating system software vendors. A subset of these patches and updates are identified by the OS vendor as **Critical** or **Important** to installed operating systems. The most recent version of our OS is given these updates and is then re-certified by CenturyLink before it is made available to be implemented with new server builds.
+
+### Managed Server Updates
+
+As a part of making a server managed, more updates may automatically be applied to the server. Please review the articles regarding [RedHat](../Managed Services/what-happens-when-RedHat-servers-are-made-managed.md) and [Windows](../Managed Services/what-happens-when-windows-servers-are-made-managed.md) to gain a general understanding of when these updates may be applied.
+
+### Service Packs and Sub Releases
+
+All service packs are evaluated and tested thoroughly on the standard CenturyLink Cloud Server configurations. Integration of the service pack into the CenturyLink standard operating system build only occurs once testing has proven its stability and performance benefits. All applicable servers will be automatically configured with this new base build after it has completed certification.
+
+CenturyLink intends to keep in production current level N-2 to the extent that the underlying vendor is still providing patching and support. When underlying vendor support ceases to exist, CenturyLink  will be liable for best effort service and patching up to the last available support structure. Existing production servers, if requested by the customer, will be upgraded during maintenance windows that will be coordinated with the customer.
+
+### Anti-Virus Protection
+
+Standard CenturyLink practice shall be that anti-virus software is provided automatically with each managed Microsoft Windows OS. CenturyLink uses third-party anti-virus software in conjunction with centralized management tools to maintain anti-virus software updates, policy control and regular signature file updates per the policies defined at the AV vendor’s central management server. Anti-virus technology provides reasonable protection against malware, including viruses, spyware and trojans, but such technology cannot guarantee the prevention of such malware. Should disruption or changes occur due to malware, CenturyLink will use commercially reasonable efforts to promptly remedy the situation after being notified of the problem, but CenturyLink will not be responsible for any damages due to worms, phishing attacks, rootkits, trojan horses or other such malware, including infection of end-user devices or lost or corrupted data/messages.
+
+### SavvisStation Portal Functionality
+
+Some clients who use other CenturyLink products are likely familiar with SavvisStation Portal as a source for requesting and tracking maintenance activities for patching requests. However, SavvisStation portal is not integrated with CenturyLink Cloud. Clients should not expect to see data for CenturyLink Cloud products in SavvisStation portal.

@@ -10,7 +10,7 @@
 
 ### Overview
 
-CenturyLink Cloud customers may choose to create their own baseline OS templates for deployment within the Control Portal. These templates may include customization, software packages, security templates or other components. Customers should take care to test and validate the packages or changes being applied to the OS instance function properly after the template process is complete. Customers are responsible for this validation and ongoing support of changes made to OS Templates.
+CenturyLink Cloud customers may choose to create their own baseline OS templates for deployment within the Control Portal. These templates may include customization, software packages, security templates or other components. Customers should take care to test and validate the packages or changes being applied, to ensure that the OS instance functions properly after the template process is complete. Customers are responsible for this validation and ongoing support of changes made to OS Templates.
 
 ### Exclusions
 

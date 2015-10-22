@@ -194,7 +194,7 @@ var mongourl = generate_mongo_url(mongo);
 <h2 id="walkthrough">Node.js with MongoDB Walkthrough</h2>
 <p>Before you start, make sure:</p>
 <ul>
-<li>You have <a href="https://console.appfog.com/signup">an AppFog account</a>.</li>
+<li>You have an AppFog v1 account</a>.</li>
 <li>The <code>af</code> command line tool is installed on your development computer.</li>
 <li><a href="http://nodejs.org/">Node.js</a> is installed on your development computer.</li>
 <li><a href="http://www.mongodb.org/">MongoDB</a> is installed on your development computer.</li>
@@ -430,4 +430,3 @@ $db = $m-&gt;selectDB($db);
 </pre>
 <h3>Links</h3>
 <p>For another complete sample app for a Node.js app with MongoDB, check out <a href="https://github.com/appfog/af-node-sample-mongodb">our GitHub repo</a>.</p>
-<p>For more information, check out <a href="http://docs.cloudfoundry.com/services/mongodb/nodejs-mongodb.html">Cloud Foundry's documentation on MongoDB</a>.</p>

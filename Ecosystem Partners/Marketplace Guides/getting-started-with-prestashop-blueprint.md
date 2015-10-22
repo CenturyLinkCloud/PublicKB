@@ -12,7 +12,7 @@
 PrestaShop has perhaps the most unique and interesting out of the box experience of any ecommerce platform we've tried. From the moment you launch PrestaShop, you are greeted with a beautiful pre-built store – with products and all – that gives you a sense of the power and capabilities in PrestaShop. Deployed in over 100,000 stores around the world, PrestaShop features multi-store support, customizable URLs, multiple payment gateway options (including PayPal and Stripe), marketplace integration with Amazon, eBay, Facebook and more. Nearly 4,000 modules and themes are available from the PrestaShop marketplace so you can customize your site to your heart's content.
 
 ### Description
-Through the CenturyLink Blueprint integration, the PrestaShop Stack provides a click-through solution to install and configure PrestaShop on the Linux platform.
+Through the CenturyLink Blueprint integration, the PrestaShop provides a click-through solution to install and configure PrestaShop on the Linux platform.
 
 For more information, please visit [http://www.prestashop.com](http://www.prestashop.com)
 

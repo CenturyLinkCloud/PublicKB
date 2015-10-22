@@ -1,6 +1,6 @@
 {{{
   "title": "AppFog v1 Legacy Documentation",
-  "date": "09-14-2015",
+  "date": "09-8-2015",
   "author": "Chris Sterling",
   "attachments": [],
   "contentIsHTML": false
@@ -9,6 +9,15 @@
 ### IMPORTANT
 
 This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal. This page provides links to AppFog v1 specific documentation.
+
+### AppFog v1 to AppFog v2 Migration Guides
+
+* [Migrating an Application](../../AFv1/how-to-migrate-an-application.md)
+* [Migrating a Service](../../AFv1/export-services-and-third-party-alternatives.md)
+* [Migrating Environment Variables and Add-Ons](../../AFv1/migrating-environment-variables.md)
+* [Migrating a WordPress Application](../../AFv1/afv1-migrating-wordpress.md)
+* [Migrating SSL Support to AppFog v2](../../AFv1/how-to-migrate-ssl-certs.md)
+* [Migration FAQ](../../AFv1/migration-faq.md)
 
 ### Getting Started
 
@@ -102,3 +111,4 @@ This document is for users of AppFog v1. This document does not apply to the cur
 * [Setting up a Redundant Cloud PaaS Environment](../../AFv1/setting-up-a-redundant-cloud-paas-environment.md)
 * [The History of PaaS](../../AFv1/the-history-of-paas.md)
 * [What is PaaS?](../../AFv1/what-is-paas.md)
+* [Migrating Legacy Apps to the Cloud with PaaS](../../AFv1/migrating-legacy-apps-to-the-cloud-with-paas.md)

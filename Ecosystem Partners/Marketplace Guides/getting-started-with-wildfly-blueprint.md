@@ -12,7 +12,7 @@
 Welcome to the next-generation JBoss AS server, WildFly. Written in Java, WildFly is free and open source application server. Don't let it's agile and lightweight feel fool you: WildFly is a powerful beast that can run extremely fast with a full J2EE stack including Java EE7. This new Java release provides rich enterprise capabilities in frameworks that reduce technical burden and eliminate boiler plate. WildFly also supports the latest standards for REST based data access, including JAX-RS 2, and JSON-P. The WildFly stack includes ready-to-run versions of WildFly, Apache, MySQL, and Java, and required dependencies.
 
 ### Description
-Through the CenturyLink Blueprint integration, the WildFly Stack provides a click-through solution to install and configure WildFly on the Linux platform.
+Through the CenturyLink Blueprint integration, the WildFly provides a click-through solution to install and configure WildFly on the Linux platform.
 
 For more information, please visit [http://www.wildfly.org/](http://www.wildfly.org/)
 

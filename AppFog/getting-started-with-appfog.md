@@ -18,11 +18,11 @@ AppFog is a public Platform-as-a-Service (PaaS) that makes deploying scalable, r
 
 ![Work on code, not infrastructure](../images/appfog-vs-traditional.png)
 
-AppFog supports the followng common application runtimes: Java, Node.js, PHP, Python, Go, Ruby, and Static Websites. Integrating with services such as databases, messaging middleware, load balancing, monitoring and more are easily provisioned through the AppFog Marketplace.
+AppFog supports the following common application runtimes: Java, Node.js, PHP, Python, Go, Ruby, and Static Websites. Integrating with services such as databases, messaging middleware, load balancing, monitoring and more are easily provisioned through the AppFog Marketplace.
 
 ### Enable AppFog in Control Portal
 
-Go to https://control.ctl.io, login, and you should see “AppFog" listed in the drop down navigation bar:
+Go to https://control.ctl.io, login, and you will see “AppFog" listed in the drop down navigation bar:
 
 ![AppFog in Dropdown Navigation](../images/appfog-in-dropdown-nav.png)
 
@@ -30,15 +30,15 @@ You may also navigate to AppFog via the icon on the left-side vertical navigatio
 
 ![AppFog icon in Vertical Navigation](../images/appfog-icon-nav.png)
 
-Navigate to AppFog using either navigation approach and now it is time to enable deployment to AppFog regions, US East and/or US West. Each region has its own "add region" button to enable it in your AppFog:
+Navigate to AppFog using either navigation approach. Now it is time to enable deployment to AppFog regions, US East and/or US West. Each region has its own "add region" button to enable it in your AppFog:
 
 ![AppFog Overview](../images/appfog-overview.png)
 
-If the region has already been enabled then there the region will be a link to the region overview page and no "add region" button will be displayed on the region row.
+If the region has already been enabled then a link will appear to send you to the region overview page and no "add region" button will be displayed on the region row.
 
 ### Where to Go From Here?
 
-Now that you have AppFog enabled on your account you can manage membership to regions and spaces, login from terminal and deploy an application.
+Now that you have AppFog enabled on your account you can manage membership to regions and spaces, login from  terminal and deploy an application.
 
 * [Manage AppFog Region and Space Membership](manage-appfog-membership.md)
 * [Login to AppFog using Cloud Foundry CLI](login-using-cf-cli.md)

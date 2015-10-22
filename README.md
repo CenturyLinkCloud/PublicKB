@@ -2,7 +2,7 @@
 
 # CenturyLink Cloud Knowledge Base
 
-Welcome to the [CenturyLink Cloud](http://www.ctl.io) knowledge base repository. This is the source of information on all of our products and services available today. Please follow the guidelines below to contribute or make changes.
+Welcome to the [CenturyLink Cloud](http://www.ctl.io) knowledge base (KB) repository. This is the source of information on all of our products and services available today. Please follow the guidelines below to contribute or make changes.
 
 If you are new to Git and Github, we highly recommend spending 5 minutes reading this great article on [Understanding the Github Flow](https://guides.github.com/introduction/flow/). This repo follows the Github Flow.
 
@@ -17,19 +17,25 @@ The repository is organized by category, and each folder represents a category. 
 
 1. Then Clone the repo to your desktop.
 
+   **Note:** If you are using the Github web-based client instead of the desktop version, you will not need to clone this repo to your desktop.
+
 1. If you have an existing fork, make sure it's up to date with the latest version of the `master` branch to avoid conflicts. See the section on [how to merge the latest version of master into your fork](#merging-an-upstream-repository-into-your-fork).
 
 1. **Anything in the `master` branch is always deployable.** Create a [new branch](https://github.com/blog/1377-create-and-delete-branches) from `master`. Your branch name should be descriptive (e.g., `january-release-notes`, `anti-affinity-policy-faq`) so that others have an idea of what the branch is for.
 
-1. Once your branch has been created, make your changes (add, edit, delete) your knowledge base article in your favorite Markdown editor (we like [Atom](https://atom.io/)).
+1. Once your branch has been created, make your changes (add, edit, delete) to your KB article in your favorite Markdown editor (we like [Atom](https://atom.io/)).
 
 1. Commit your change(s) locally to your fork/branch.
 
 1. Push or sync your commit(s) to the remote repository on Github.
 
+   **Note:** If you are using the Github web-based client you will not have to sync your commits to the remote repository. Your changes will be added to the repository once you commit them to your fork/branch.
+
 1. Create a [pull request](https://help.github.com/articles/creating-a-pull-request) to merge your changes into the `master` branch.
   * [Create a pull request using Github for Windows](https://github.com/blog/1969-create-pull-requests-in-github-for-windows)
   * [Create a pull request using Github for Mac](https://github.com/blog/1946-create-pull-requests-with-github-for-mac)
+
+    **Note:** If you are uploading a KB and its associated images/attachments, it should all be part of one pull request. Do not upload the article and the images/attachments in separate pull requests.
 
 1. This repository contains a [commit analyzer](https://github.com/CenturyLinkCloud/KB-Commit-Analyzer) that runs against each file in the repository validating that the following are true:
 
@@ -47,12 +53,13 @@ The repository is organized by category, and each folder represents a category. 
 
   Pushing/syncing additional commits to your fork/branch will trigger the analyzer to re-check your changes.
 
-  A pull-request without errors will also look like this:
+  A pull-request without errors will look like this:
   ![commit analyzer failure](images/analyzer-success.png)
 
-  **Content authors are responsible for making their pull requests pass the commit analyzer. Once they pass, pull requests will be merged.**
+  **Note:** Content authors are responsible for making their pull requests pass the commit analyzer. Once they pass, pull requests will be merged.
 
-1. CenturyLink Cloud Team reviews your pull request. If accepted, it will be added to the [Knowledge Base on ctl.iom](https://www.ctl.io/knowledge-base).
+1. CenturyLink Cloud Team reviews your pull request. If accepted, it will be added to the [Knowledge Base on ctl.io](https://www.ctl.io/knowledge-base).
+2. In general Pull Requests are review once in the morning and once in the afternoon (Seattle Time). This is not a garantee but is generally the practice. So if there are no changes required your pull request is generally accepted within a day. However, if there are changes required then the time line depends on when the changes are addressed. So remember to keep an eye on your pull request for comments.
 
 
 #### Run the Commit Analyzer locally
@@ -67,15 +74,20 @@ _Note that the first time you wish to run the commit analyzer, you'll have to ru
 
 ### Merging an upstream repository into your fork
 
+If your fork and branch are behind by a number of commits (meaning there have been a lot of changes made to the master branch since you originally forked it), you may need to update your fork to reflect the latest changes. This involves sending a pull request that asks for all changes in the current master branch to be merged into your fork and branch. This is the opposite of a pull request that you would normally send (which merges your changes into the CenturyLinkCloud/PublicKB master branch).
+
 **Via Github.com Website**
 
-1. Open your fork on GitHub.
-2. Click on Pull Requests.
-3. Click on New Pull Request. By default, GitHub will compare the original with your fork, and there shouldn’t be anything to compare if you didn’t make any changes.
-4. Click on switching the base. Now GitHub will compare your fork with the original, and you should see all the latest changes.
-5. Click on Click to create a pull request for this comparison and assign a predictable name to your pull request (e.g., Update from original).
-6. Click on Send pull request.
-7. Scroll down and click Merge pull request and finally Confirm merge. If your fork didn’t have any changes, you will be able to merge it automatically.
+1. Open your fork (and branch) on GitHub.
+2. Click the **Pull Request** button (next to the **Branch:** drop down list).
+3. Click **New Pull Request**. By default, GitHub will compare the master branch of the CenturyLinkCloud/PublicKB with your fork and branch.  
+    **Note:** If you have not made any changes to your fork yet, there shouldn’t be anything to compare.
+4. Reverse the order of the repositories and branches in the **Base Fork:** and **Head Fork:** drop down lists. Your repository and branch should come before the CenturyLinkCloud/PublicKB master repository and branch. This allows GitHub to compare your fork with the master. You should then see all the latest changes that have been made to the master branch.
+5. Click the **Pull Request** button to create a pull request for this comparison.  
+    **Note:** You should assign a predictable name to your pull request (e.g., Update from original).
+6. Click on **Send Pull Request**.
+7. Scroll down and click **Merge Pull Request** and then **Confirm Merge**. If your fork didn’t have any changes, you will be able to merge it automatically.  
+    **Note:** You will not be able to merge your own pull request unless you have write access to the CenturyLink Cloud repository.
 
 **Via Terminal (Mac) or Command Prompt (Windows)**
 
@@ -99,7 +111,7 @@ _Note that the first time you wish to run the commit analyzer, you'll have to ru
 ### Front Matter
 
 
-The top of each .md file contains metadata about the knowledge base article itself. It is used to list things such as author, date created, modified, keywords, title, etc. It looks like this:
+The top of each .md file contains metadata about the knowledge base article itself. It is used to list things such as author, date created, modified, keywords, title, etc. It should look like this:
 
 ```code
 {{{
@@ -113,6 +125,8 @@ The top of each .md file contains metadata about the knowledge base article itse
 }}}
 ```
 
+**Note:** The article title that appears on the web page is pulled from the "title" section in the metadata. You should not include the title in the text of the .md file.
+
 #### `author`
 
 Please just use your name and do not link off to other version sites (twitter, linkedin, etc.)
@@ -123,8 +137,11 @@ Generally this should be set to `false`. Only when a document is written entirel
 
 #### `sticky` (optional)
 
-If you would like to pin a kb article so that it always appears at the top of it's category, set `"sticky":true`. By default, it's set to `false`.
+If you would like to pin a KB article so that it always appears at the top of its category, set `"sticky":true`. By default, it's set to `false`.
 
+### Headers
+
+KBs generally use heading level 3 (###) as the highest heading level in the article (for consistency).
 
 ### Sub-Categories
 
@@ -154,7 +171,7 @@ If you would like to pin a kb article so that it always appears at the top of it
 
 ### Images
 
-  When adding an image to an article, place the image file in the `images/` directory in the root of this repo. In the article itself, set the image source path like so:
+  When adding an image to an article, place the image file in the `images/` directory in the root of this repo. The images should not be referenced from outside links. In the article itself, set the image source path like so:
 
     ```
     /* Top Level Category Article */
@@ -164,6 +181,24 @@ If you would like to pin a kb article so that it always appears at the top of it
     ```
 
   Be sure the file name does not include any spaces.
+  
+  The image reference within the article should look like this:
+  
+    ```
+    ![Image Description](../images/[file-name])
+    ```
+ The image description should be short and relevant to the image.
+ 
+### Images within Ordered Lists
+ 
+ When referencing an image within an ordered list, the image should follow the format below. This keeps the image reference from breaking the numbering within the list.
+ 
+    ```
+    1. [Text][at least two blank spaces after the text]
+    [blank line]
+    [An indent, using tab or 4 blank spaces]![Image Description](../images/[file-name])
+    [blank line]
+    ```
 
 ### Attachments
 

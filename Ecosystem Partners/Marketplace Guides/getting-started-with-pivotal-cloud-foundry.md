@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Pivotal Cloud Foundry - Blueprint",
-  "date": "8-3-2015",
+  "date": "9-1-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -10,7 +10,7 @@
 
 ### Overview
 
-After reading this article, the reader should feel comfortable deploying the Pivotal Cloud Foundry (PCF) on CenturyLink Cloud.
+After reading this article, the reader should feel comfortable deploying Pivotal Cloud Foundry (PCF) on CenturyLink Cloud.
 
 ### Partner Profile
 
@@ -33,7 +33,7 @@ Pivotal has integrated their Cloud Foundry technology with the CenturyLink Cloud
 
 <img src="../../images/pivotal_pcf/how_pcf_works.png" style="border:0;">
 
-Cloud Foundry® is the result of collaborative industry efforts to build an open platform for next-generation software development. Over 40 members of the Cloud Foundry Foundation now contribute to the project, including VMware, EMC and GE. Pivotal’s commercial edition builds on the open source Cloud Foundry release with advanced features:
+Cloud Foundry® is the result of collaborative industry efforts to build an open platform for next-generation software development. Over 40 members of the Cloud Foundry Foundation now contribute to the project, including VMware, EMC and GE. Pivotal’s commercial edition builds on the open source Cloud Foundry release with advanced features.
 
 
 ### Audience
@@ -49,12 +49,10 @@ You can achieve a single-button deployment of a new Cloud Foundry using CenturyL
 
 Pivotal Cloud Foundry is a complex piece of software.  Before installing please validate the following:
 
-* **Early Access Note** - This is an early access release.  Please log a ticket with noc@ctl.io for deployments before this goes GA
 * **control.ctl.io Service Account** - For production deployments we recommend creating a dedicated control.ctl.io user account as the credentials
   are used for all IaaS changes directed by BOSH.  Deploys cannot be done using accounts with requiring two-factor authentication.
 * **Dedicated Network** - Due to the size of typical PCF deploys and some IP address management concerns we require an entire VLAN be dedicated to this install.  PCF servers will reside on the top half of this class-C.
 * **CPU, RAM, and Storage Resources** - A full PCF deploy requires at least 75CPU, 128GB RAM, and 1.25TB disk.  For a successful install your account resources must be sufficient to cover this.
-* **Deploy to Primary Datacenter** - PCF can only be deployed to your primary datacenter as part of this early access release.
 
 #### Steps
 
@@ -71,9 +69,6 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
 2. **Locate the Blueprint in the Blueprint Library**
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "Pivotal Cloud Foundry" in the keyword search on the right side of the page.
-
-  > Note for access to this Blueprint during this early access period
-  > # Email noc@ctl.io
 
   <img src="../../images/pivotal_pcf/cluster_blueprint_tiles.png" style="border:0;max-width:250px;">
 
@@ -96,6 +91,8 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
 
   Optionally set the server name prefix.
 
+  **Set the group to the value created in step (1).**  (Your specific group - not the OpenStack one)
+
   The default values are fine for every other option.
 
 6. **Review and Confirm the Blueprint**
@@ -110,7 +107,7 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
 
 8. **Deployment Complete**
 
-  Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets within a few minutes.  If you do not receive an email like the one shown below you may have had a deployment error - review the *Blueprint Build Log* to for error messages.
+  Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets within a few minutes.  If you do not receive an email like the one shown below you may have had a deployment error - review the *Blueprint Build Log* for error messages.
 
   <img src="../../images/pivotal_pcf/deploy_install_status1.png" style="border:1;margin-left:1em;width:70%;">
 
@@ -166,7 +163,7 @@ After deploying this Blueprint, you may secure entitlements to the technology us
 
 **Where do I obtain my license?**
 
-Contact your Pivotal account manager or inquire via email to [centurylinkcloud-sales@pivotal.io](mailto:centurylinkcloud-sales@pivotal.io)
+Contact your Pivotal account manager or inquire via email to [sales-clc@pivotal.io](mailto:sales-clc@pivotal.io)
 
 **Who should I contact for support?**
 
@@ -235,8 +232,35 @@ Should this split DNS be required implement the following:
   by installing BIND on the Operations Manager host and pointing all DNS resolvers to this IP
 * Edit the public DNS so the FQDN resolves to the NATed public IP for the HA proxy (.128 by default)
 
+
+**IP Address Space for Larger Deployments**
+
+CenturyLink Cloud provides class-C /24 address space on each of its networks, and with the exception of a few IPs at the top and bottom end of the range 
+reserved for platform-level services, the entire subnet is available for use.  Some considerations:
+
+* By default the IP space is cut in half - Ops Manager and CF have access to 128 and above and all lower addresses are reserved for other use.  This is
+  implemented since both Ops Manager and CenturyLink Cloud believe they own IPAM responsibilities.
+* Ops Manager subdivides this network and reserves a portion for each tile's use - this includes steady-state assignments as well as those used only
+  during Errands testing.  In production this means the IP-range can quickly fill up even though there is actually space available
+* Gain IP space by deploying initially using the following approach:
+ * Set the *OpenStack* group's default network to network A.  This will move your Elastic Block Storage services onto a different network segment.
+ * Set the group containing your servers to network B.  Make sure network B is not your first network defined in your primary datacenter.
+ * Configure Ops Director to use from .12 all the way to .230.
+
+
 **What are some known limitations?**
 
 * Accounts requiring two-factor authentication cannoit successfully deploy PCF.  Create a new service account dedidicated to PCF.
-* PCF deployments can only be made to the account's primary datacenter.
+
+
+**How can I get new stemcells?**
+
+Your install will be preloaded with the most current stemcells.  If you need some older stemcells that aren't preloaded or if you need something that's been released since your initial install you can download the stemcells from the links below.  Note these are slightly modified from what's available at network.pivotal.io.
+
+* [2989](http://ca.tier3.io/ateam-packages/stemcells/bosh-stemcell-2989-clc-ubuntu-trusty-go_agent.tgz)
+* [3012](http://ca.tier3.io/ateam-packages/stemcells/bosh-stemcell-3012-clc-ubuntu-trusty-go_agent.tgz)
+* [3026](http://ca.tier3.io/ateam-packages/stemcells/bosh-stemcell-3026-clc-ubuntu-trusty-go_agent.tgz)
+* [3062](http://ca.tier3.io/ateam-packages/stemcells/bosh-openstack-clc-ubuntu-trusty-go_agent_3062.tgz)
+
+
 

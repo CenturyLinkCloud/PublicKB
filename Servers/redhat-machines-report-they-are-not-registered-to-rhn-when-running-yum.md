@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-###Red Hat Update Infrastructure
+### Red Hat Update Infrastructure
 
 When running 'yum' on a RedHat Enterprise Linux (RHEL) machine deployed in the CenturyLink Cloud, you may receive the following message:
 
@@ -16,11 +16,11 @@ This message is normal and does not indicate any problem, as machines we deploy 
 
 If for some reason your machine is not able to download packages from our RHUI system, please contact our support team to investigate.
 
-###Bring Your Own Red Hat Network Subscription
+### Bring Your Own Red Hat Network Subscription
 
 You also have the option to bring your own RHN Subscriptions.  If you you choose to use your own RHN Subscriptions, you will need to remove your RHEL machines from our RHUI repositories first before adding your own subscriptions.
 
-#####Remove RHUI Entitlement
+##### Remove RHUI Entitlement
 
 yum erase RHEL(version)-(Data Center)T3N*
 

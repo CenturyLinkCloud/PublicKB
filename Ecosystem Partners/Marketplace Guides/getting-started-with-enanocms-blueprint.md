@@ -12,7 +12,7 @@
 EnanoCMS is a content management system built like a wiki. Or maybe it's a wiki trying to be a CMS? Either way, EnanoCMS may just be what you were looking for – a simple to use, simple to manage CMS. From the moment you login, you will see the striking resemblance to a wiki with the power of a CMS. Edit pages with wiki markdown, add commit notes, review history and rollback any changes on a page, or choose from a variety of plugins to add portals, forums, blogs and other features.
 
 ### Description
-Through the CenturyLink Blueprint integration, the EnanoCMS Stack provides a click-through solution to install and configure EnanoCMS on the Linux platform.
+Through the CenturyLink Blueprint integration, the EnanoCMS provides a click-through solution to install and configure EnanoCMS on the Linux platform.
 
 For more information, please visit [http://enanocms.org/](http://enanocms.org/)
 

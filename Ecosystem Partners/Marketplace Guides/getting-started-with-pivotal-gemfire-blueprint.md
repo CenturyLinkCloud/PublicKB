@@ -20,7 +20,7 @@ Pivotal GemFire – “in-memory distributed database for high scale custom appl
 
 http://pivotal.io/big-data/pivotal-gemfire
 
-#####Customer Support
+##### Customer Support
 
 |Sales Contact   	|
 |:-	|
@@ -143,7 +143,7 @@ After deploying this Blueprint, you may secure entitlements to the technology us
 
 **Where do I obtain my license?**
 
-Contact your Pivotal account manager or inquire via email to [centurylinkcloud-sales@pivotal.io](mailto:centurylinkcloud-sales@pivotal.io)
+Contact your Pivotal account manager or inquire via email to [sales-clc@pivotal.io](mailto:sales-clc@pivotal.io)
 
 **Who should I contact for support?**
 

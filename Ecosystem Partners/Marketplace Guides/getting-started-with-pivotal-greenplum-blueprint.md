@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Pivotal Greenplum - Blueprint",
-  "date": "3-2-2015",
+  "date": "8-24-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -10,7 +10,7 @@
 
 ### Overview
 
-After reading this article, the reader should feel comfortable deploying the Pivotal Greenplum database on CenturyLink Cloud.
+After reading this article, the reader should feel comfortable deploying the Pivotal Greenplum 4.3.5.3 database release on CenturyLink Cloud.
 
 ### Partner Profile
 
@@ -20,7 +20,7 @@ Pivotal Greenplum – “Best-in-class, enterprise-grade analytical data warehou
 
 http://pivotal.io/big-data/pivotal-greenplum-database
 
-#####Customer Support
+##### Customer Support
 
 |Sales Contact      |
 |:- |
@@ -99,15 +99,16 @@ You can achieve a single-button deployment of a new cluster including a master h
 
 8. **Web Command Center** (optional)
 
-  If you elected to install the optional web command center you may access it via http on port 20800.  Authenticate using the `gpadmin` user and your administrative credentials
+  If you elected to install the optional web command center you may access it via http on port 20800.  Authenticate using the `gpmon` user and your administrative credentials
 
   <img src="../../images/pivotal_greenplum/web_command_center.png" style="border:0;">
 
 8. **Demo Application** (optional)
 
-  If you elected to install the optional demo application you may access the database from the master server.  Follow the [Pivot Greenplum demo lab](https://github.com/pivotalsoftware/pivotal-samples/tree/master/Labs) to quickly get up to speed on the Greenplum platform.  Authenticate using the `gpadmin` user and your administrative credentials
+  If you elected to install the optional demo application you may access the database from the master server.  Follow the [Pivotal Greenplum demo lab](https://github.com/pivotalsoftware/pivotal-samples/tree/master/Labs) to quickly get up to speed on the Greenplum platform.  ssh to your host as `root` then authenticate using the `gpadmin` user and your administrative credentials.
 
   ```
+  [root@localhost #]$ su - gpadmin
   [gpadmin@localhost ~]$ psql default
   psql (8.2.15)
   Type "help" for help.
@@ -153,7 +154,7 @@ After deploying this Blueprint, you may secure entitlements to the technology us
 
 **Where do I obtain my license?**
 
-Contact your Pivotal account manager or inquire via email to [centurylinkcloud-sales@pivotal.io](mailto:centurylinkcloud-sales@pivotal.io)
+Contact your Pivotal account manager or inquire via email to [sales-clc@pivotal.io](mailto:sales-clc@pivotal.io)
 
 **Who should I contact for support?**
 

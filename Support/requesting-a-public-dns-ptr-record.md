@@ -17,11 +17,12 @@
 <p>Need to know the Public IP and DNS name of intended target</p>
 <p><strong>Detailed Steps:</strong>
 </p>
-<p>&nbsp;&nbsp;Send an email to noc@tier3.com.
-  <br />&nbsp; In the email, include the following:
-  <br />&nbsp;&nbsp;Specify that the request is for a PTR record creation.
-  <br />&nbsp; Company account information (account name or alias)
-  <br />&nbsp; IP address for which to create the record
-  <br />&nbsp; DNS name for the record to point to
-  <br />&nbsp;&nbsp;Datacenter which the target resides in (i.e. WA1 or UC1 or )</p>
+<p>&nbsp;&nbsp;Open a support ticket via the portal or by sending email to help@ctl.io.
+  <br />&nbsp; In the body, please include the following:
+  <br />&nbsp;&nbsp;- Specify that the request is for the creation of a PTR record.
+  <br />&nbsp; - Company account information (account name or account alias)
+  <br />&nbsp; - Server Name in Control 
+  <br />&nbsp; - Public IP address for the PTR record
+  <br />&nbsp; - DNS name of the server for the PTR record
+  <br />&nbsp;&nbsp; - Datacenter which the target resides in (i.e. WA1 or UC1 or )</p>
 <p>&nbsp;A ticket will be generated to track the request, and so that you will be apprised of updates as we process the request.</p>

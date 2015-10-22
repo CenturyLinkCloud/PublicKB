@@ -14,7 +14,7 @@ This document is for users of AppFog v1. This document does not apply to the cur
 
 You guys know me. You know that I talk a lot of things up in this space. I can’t help it. I’m a generally excitable person. But one thing I have never said is that I’m completely blown away by something. Well, now is that time. I am completely blown away by Ender.
 
-###What problem does Ender solve?
+### What problem does Ender solve?
 
 I’ll start with a common problem and explain the advantage of Ender that way. A project I’m working on now has the following at the bottom of the index.html file:
 
@@ -31,7 +31,7 @@ I’ll start with a common problem and explain the advantage of Ender that way. 
 
 This should look familiar to, well, all of you. Many of you have probably seen much worse. Whenever I’ve been confronted by things like this, I’ve always had an inkling that there had to be a Better Way That Just Works, and as far as I can tell, Ender has come along and provided that hotly sought-after Better Way.
 
-###So what is this Ender thing anyway?
+### So what is this Ender thing anyway?
 
 Ender is essentially a JavaScript build tool rooted in the command line. It enables you to compile a variety of JavaScript libraries into a single JS library labeled “ender.js.” That way, instead of having to insert a pile of script src tags into your HTML, you can get the job done with just one:
 
@@ -39,7 +39,7 @@ Ender is essentially a JavaScript build tool rooted in the command line. It enab
 
 BOOM. Done. And if you need a minified version, this is done automatically and put in the file <code>ender.min.js</code> in the same directory.
 
-###Cool! How do I use it?
+### Cool! How do I use it?
 
 Well, fortunately it’s about as simple a CLI tool as you’ll find out there. You install it via NPM–which has to be one of the best package managers on the planet–with a simple <code>sudo npm install -g ender</code> and then the whole experience is pretty seamless.
 
@@ -73,7 +73,7 @@ This strikes me as being a huge win for developers, and I firmly hope that build
 
 Other useful aspects of Ender include the ender info command, which gives you an actual dependency tree of the ender.js file that you have constructed up to that point, much like the tree command found in some *nix environments. There’s a lot more where that came from, and I suggest checking out the docs to have a more comprehensive look at what Ender has on offer.
 
-###This sounds too good to be true…
+### This sounds too good to be true…
 
 Now, Ender surely isn’t flawless. I’m sure that there are plenty of namespace issues that emerge when different libraries use the same function and/or variable names. This is something that should be very much on your radar when using Ender, and you should never assume that throwing together any set of libraries haphazardly will always work out unproblematically.
 
