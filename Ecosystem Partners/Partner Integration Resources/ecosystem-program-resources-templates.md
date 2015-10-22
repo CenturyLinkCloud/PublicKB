@@ -21,14 +21,14 @@ We have two deployment models available:
 
 Instant deploy through the CenturyLink bpimager tool is the ideal deployment mechanism for compatible appliances.  Work with an Ecosystem engineer to gain access to this Beta offering.
 
-Reference the following key pages from the CenturyLink Cloud [Knowledge Base](http://www.ctl.io/knowledge-base/):
+Reference the following key pages from the CenturyLink Cloud [Knowledge Base](https://www.ctl.io/knowledge-base/):
 
 * [Requirements for bpimager Appliances](bpimager-appliance-requirements.md)
 
 
 ### (Universal Deploy) Core Documentation
 
-Reference the following key pages from the CenturyLink Cloud [Knowledge Base](http://www.ctl.io/knowledge-base/):
+Reference the following key pages from the CenturyLink Cloud [Knowledge Base](https://www.ctl.io/knowledge-base/):
 
 * [How To Publish a Partner Template from a Virtual Appliance](../Marketplace Guides/howto-publish-a-partner-template-from-a-virtual-appliance.md)
 * [Requirements for custom image/VM imports](../../Service Tasks/requirements-for-custom-imagevm-imports.md) (case 1)

@@ -19,9 +19,9 @@ http://www.cloudbolt.io
 
 ##### Customer Support
 
-|Sales Contact   	| Support Contact	|
-|:-	|:-	|
-|sales@cloudbolt.com   	| support@cloudbolt.com	|
+| Sales Contact  | Support Contact  |
+|:- |:- |
+| sales@cloudbolt.com  | support@cloudbolt.com  |
 
 
 ### Description
