@@ -1,4 +1,10 @@
-{{{ "title":"Getting Started With Waratek Locker – Runtime Application Self Protection" "date":"10-21-2015" author": "David Egan", "attachments": [], "contentIsHTML": false }}}
+{{{ 
+"title":"Getting Started With Waratek Locker – Runtime Application Self Protection", 
+"date":"10-21-2015", 
+"author": "David Egan", 
+"attachments": [], 
+"contentIsHTML": false
+}}}
 
 ### ![](http://cdn.aws.waratek.com/wp-content/themes/waratek/images/logo.png)
 
