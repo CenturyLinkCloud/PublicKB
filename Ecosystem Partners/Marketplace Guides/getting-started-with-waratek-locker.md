@@ -132,12 +132,6 @@ Waratek Locker is available as a Blueprint for deployment on a new server.
 
 8. Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-**Pricing**
-
-Do we have to add this here? 
-
-The cost associated with this deployment is $195/hr for the CenturyLink Cloud Service Tasks. Contact Waratek for license costs. Service Task Fees are available here:[http://www.ctl.io/service-tasks#Pricing](http://www.ctl.io/service-tasks#Pricing)
-
 **Frequently Asked Questions**
 
 For more information about Locker, click on the following links: 
