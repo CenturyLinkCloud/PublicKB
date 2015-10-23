@@ -99,6 +99,10 @@ Yes, Bare Metal servers are dedicated to you once they have been provisioned and
 
 No, the storage configurations provisioned for Bare Metal servers are all either RAID 1 or RAID 5 depending on the server configuration type and tampering with that configuration could result in loss of management access which could disrupt support. Each server is provisioned with two partitions, one 300GB boot partition and a second partition for the remaining storage capacity for that particular configuration type.
 
+**Can I customize my network interface configuration on a Bare Metal server?**
+
+Yes, Bare Metal servers do support multiple vNIC configurations. Additional vNICs can be [added through the API](//www.ctl.io/api-docs/v2/#servers-add-secondary-network). It is not advised to make any other manual network configuration changes as they may be detrimental to associated support and automated provisioning services.
+
 **Can I bring my own OS image?**
 
 No, the available Operating Systems include Windows 2012 Standard Edition R2, Windows 2012 Datacenter Edition, RHEL6, CentOS 6, and Ubuntu 14. If there is a particular OS image you would like to see incorporated please [submit a feature request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/).
