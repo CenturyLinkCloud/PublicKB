@@ -1,6 +1,6 @@
 {{{
-  "title": "Getting Started with CloudBolt - Appliance",
-  "date": "10-22-2015",
+  "title": "Getting Started with OpenVPN AS - Appliance",
+  "date": "10-23-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -10,23 +10,21 @@
 
 ### Technology Profile
 
-<img src="../../images/cloudbolt/cloudbolt_logo.png" style="border:0;float:right;max-width: 150px;">
+<img src="../../images/openvpnas/openvpnas_logo.png" style="border:0;float:right;max-width: 150px;">
 
-CloudBolt Software provides a single platform for managing IT infrastructure, orchestration, and automation tools and enabling user self-service through an intuitive service catalog.
-
-http://www.cloudbolt.io
+https://openvpn.net/
 
 
 ##### Customer Support
 
-| Sales Contact  | Support Contact  |
-|:- |:- |
-| sales@cloudbolt.com  | support@cloudbolt.com  |
+| Sales Contact  |
+|:- |
+| sales@openvpn.net  |
 
 
 ### Description
 
-CloudBolt is an intuitive cloud management platform that delivers automated provisioning, unified IT management, chargeback/showback reporting, and interactive service catalogs for user self-service.  It integrates both new and existing virtualization and private cloud environments with public clouds, automation scripting tools, and domain‐specific technologies.
+OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments. OpenVPN Access Server supports a wide range of configurations, including secure and granular remote access to internal network and/ or private cloud network resources and applications with fine-grained access control.
 
 
 ### Audience
@@ -40,13 +38,13 @@ CenturyLink Cloud Users
 * control.ctl.io account with password authentication (two factor authentication not yet supported)
 
 
-### Steps to Deploy a New CloudBolt Appliance
+### Steps to Deploy a New Appliance
 
 1. **Locate the Blueprint in the Blueprint Library**
 
- Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "CloudBolt Appliance" in the keyword search on the right side of the page.
+ Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "OpenVPN AS Appliance" in the keyword search on the right side of the page.
 
-  <img src="../../images/cloudbolt/blueprint_tile.png" style="border:0;max-width:250px;">
+  <img src="../../images/openvpnas/blueprint_tile.png" style="border:0;max-width:250px;">
 
 2. **Click the Deploy Blueprint button.**
 
@@ -90,11 +88,8 @@ CenturyLink Cloud Users
 
 8. **Accessing Your Appliance**
 
-  Access your appliance by navigating to the server's private IP address with your web browser and uploading a license key
+  Access your appliance and finalize configuration by opening an ssh connection to your server and loging in as the `root` user with the password credentials supplied in step (4) above.
 
-  ![Provide License](../../images/cloudbolt/appliance_license_screenshot.png)
-
-  You’re now ready to integrate CenturyLink Cloud with your configuration managers, provisioning engines, and other tools to deploy systems and publish them in the CloudBolt Service Catalog.  Review CloudBolt's [Installation and configuration information is available](http://docs.cloudbolt.io/installation.html#complete-the-quick-setup-wizard) to begin using the service.
 
 ### Pricing
 
@@ -102,19 +97,20 @@ The costs listed above in the above steps are for the infrastructure only.
 
 After deploying this Blueprint, you may secure entitlements to the technology using the following steps:
 
- * Email: sales@cloudbolt.com
+ * Email: sales@openvpn.net
 
 Additional resources:
 
-* [CloudBolt Documentation](http://docs.cloudbolt.io/index.html)
+* [OpenVPN Appliance FAQ](https://openvpn.net/index.php/access-server/section-faq-openvpn-as/virtual-appliance.html)
+* [Appliance quick start guide](https://openvpn.net/index.php/access-server/section-faq-openvpn-as/virtual-appliance.html)
 
 ### Frequently Asked Questions
 
 **Where do I obtain my license?**
 
-Contact sales@cloudbolt.com.
+Contact sales@openvpn.net.
 
 **Who should I contact for support?**
 
-* For issues related to deploying CloudBolt email support@cloudbolt.com.
+* For issues related to deploying OpenVPN AS email sales@openvpn.net.
 * For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
