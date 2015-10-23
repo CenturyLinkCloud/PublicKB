@@ -52,7 +52,7 @@ CenturyLink Cloud Users
 
 3. **Set Required parameters.**
 
-  <img src="../../images/cloudbolt/deploy_parameters.png">
+  <img src="../../images/bpimager/deploy_parameters.png">
 
   * **Control User Password** - The password associated with your control.ctl.io login
 
@@ -78,11 +78,11 @@ CenturyLink Cloud Users
 
   <div style="float:left;width:45%;margin-left:1em;">
     *Email #1: Appliance deploy started*
-    <img src="../../images/cloudbolt/appliance_deploy_started.png" style="border:0;width:100%;">
+    <img src="../../images/bpimager/appliance_deploy_started.png" style="border:0;width:100%;">
   </div>
   <div style="float:right;width:45%;margin-right:1em;">
     *Email #2: Appliance deploy complete*
-    <img src="../../images/cloudbolt/appliance_deploy_complete.png" style="border:0;width:100%;">
+    <img src="../../images/bpimager/appliance_deploy_complete.png" style="border:0;width:100%;">
   </div>
   <br style="clear:both;">
 
