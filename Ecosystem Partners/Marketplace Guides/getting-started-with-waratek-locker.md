@@ -6,25 +6,25 @@
   "contentIsHTML": false
 }}}
 
-### ![Waratek Logo](http://cdn.aws.waratek.com/wp-content/themes/waratek/images/logo.png)
+![Waratek Logo](http://cdn.aws.waratek.com/wp-content/themes/waratek/images/logo.png)
 
-###Partner Profile
+### Partner Profile
 
 Waratek, a pioneer in Runtime Application Self Protection, secures applications from logic, network and vulnerability exploits without code changes, agents or hardware devices, placing security within your own control. This enables applications to be run on a public cloud while retaining a level of protection normally only available in the enterprise data center.
 
 In 2015 the RSA Conference’s Innovation Sandbox awarded Waratek the title of Most Innovative Company saying it was *an inventive solution to a ‘massive problem’.*
 
-###Contact Waratek
+### Contact Waratek
 
 **Waratek Sales and Support:**
 
-* Email support – [support@waratek.com](mailto:support@waratek.com)
+* [Email support](mailto:support@waratek.com)
 
-* Support Site – [https://support.waratek.com](https://support.waratek.com/). 
+* [Support Site](https://support.waratek.com/). 
 
-* Sales and Marketing – [sales@waratek.com](mailto:sales@waratek.com)
+* [Sales and Marketing](mailto:sales@waratek.com)
 
-###Description
+### Description
 
 Waratek has made their award winning Cloud Based Application Security solution, Locker, available on the CenturyLink Cloud platform, publishing their virtual appliance as a CenturyLink Cloud Partner Template. This KB article should help the reader understand why Runtime Application Self Protection has been described as the "Must Have Emerging Technology’ and why use of it can help you confidently move more of your applications to a cloud based environment.
 
@@ -32,7 +32,7 @@ Waratek Locker provides a secure container for your Java applications and enable
 
 For more information, please visit [http://www.waratek.com](http://www.waratek.com/). 
 
-###Solution Overview
+### Solution Overview
 
 Waratek Locker is a secure container for Java applications which provides [run-time application self-protection](http://www.waratek.com/runtime-application-self-protection/) ([RASP](http://www.waratek.com/runtime-application-self-protection/)) against [Advanced Persistent Threats](http://www.waratek.com/solutions/threat-forensics/) and [Zero Day attacks](http://www.waratek.com/solutions/zero-day-malware/). This enables applications to be run on a public cloud while retaining a level of protection normally only available in the enterprise data centre.
 
@@ -50,7 +50,7 @@ Applications are deployed in a secure Locker container and are governed by a sin
 
 For further information about Locker please visit: [www.waratek.com/locker](http://www.waratek.com/locker)
 
-###Technology Profile
+### Technology Profile
 
 Waratek Locker is a secure container, which includes an Oracle certified Java virtual machine (JVM) running a standard Apache Tomcat application server. When a Java application is deployed Locker's security technology monitors its runtime environment. When it detects real-time attacks, it is capable of controlling how the application executes and thus secures it from Advanced Persistent Threats (Advanced Persistent Threats). Furthermore, this award-winning and patented technology can detect and prevent malicious attacks without any code changes to an application. 
 
@@ -58,23 +58,23 @@ This CenturyLink Blueprint provides a simple install solution of Waratek Locker 
 
 It is also possible to use other application servers such as JBoss or Weblogic. (what else should be listed here?) Please contact Waratek to find out more. 
 
-###Audience
+### Audience
 
 CenturyLink Cloud Users desiring a secure Java environment.
 
-###Impact
+### Impact
 
 After reading this article, the user should be able to install Locker on a CenturyLink Cloud server.
 
-###Prerequisites
+### Prerequisites
 
 * Access to the CenturyLink Cloud platform as an authorized user.
 
-###Postrequisites
+### Postrequisites
 
 * None
 
-###Deploying Locker on a New Server
+### Deploying Locker on a New Server
 
 Waratek Locker is available as a Blueprint for deployment on a new server.
 
@@ -116,7 +116,7 @@ Waratek Locker is available as a Blueprint for deployment on a new server.
 
 * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-###Steps to deploy to an existing server
+### Steps to deploy to an existing server
 
 1. Deploy or Identify an existing server
 
@@ -134,19 +134,19 @@ Waratek Locker is available as a Blueprint for deployment on a new server.
 
 8. Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-###Frequently Asked Questions
+### Frequently Asked Questions
 
 For more information about Locker, click on the following links: 
 
-Locker User Guide ([http://www.waratek.com/resources/guides/locker/](http://www.waratek.com/resources/guides/locker/)) 
+Locker User Guide [http://www.waratek.com/resources/guides/locker/](http://www.waratek.com/resources/guides/locker/) 
 
-Locker FAQs ([http://www.waratek.com/resources/guides/locker/frequently-asked-questions/](http://www.waratek.com/resources/guides/locker/frequently-asked-questions/)) 
+Locker FAQs [http://www.waratek.com/resources/guides/locker/frequently-asked-questions/](http://www.waratek.com/resources/guides/locker/frequently-asked-questions/) 
 
-###Purchasing Waratek Locker License
+### Purchasing Waratek Locker License
 
 * The license provided is a trial to get a full license contact [our sales team](mailto:sales@waratek.com).
 
-###Who should I contact for support?
+### Who should I contact for support?
 
 * For issues related to deploying, configuring Waratek Locker please visit [Waratek Support](https://support.waratek.com/).
 
