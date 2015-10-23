@@ -21,7 +21,7 @@ http://www.cloudbolt.io
 
 | Sales Contact  | Support Contact  |
 |:- |:- |
-| sales@cloudbolt.com  | support@cloudbolt.com  |
+| sales@cloudbolt.io  | support@cloudbolt.io  |
 
 
 ### Description
@@ -102,7 +102,7 @@ The costs listed above in the above steps are for the infrastructure only.
 
 After deploying this Blueprint, you may secure entitlements to the technology using the following steps:
 
- * Email: sales@cloudbolt.com
+ * Email: sales@cloudbolt.io
 
 Additional resources:
 
@@ -112,9 +112,9 @@ Additional resources:
 
 **Where do I obtain my license?**
 
-Contact sales@cloudbolt.com.
+Contact sales@cloudbolt.io.
 
 **Who should I contact for support?**
 
-* For issues related to deploying CloudBolt email support@cloudbolt.com.
+* For issues related to deploying CloudBolt email support@cloudbolt.io.
 * For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
