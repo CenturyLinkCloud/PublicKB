@@ -34,7 +34,7 @@ Using Object Storage with a Cloud Storage Gateway
 </p>
 <p>3. Enter the details required to connect to the selected Cloud Provider. </p>
 <ul>
-  <li>Currently Object Storage is only available out of our Canada Region. <strong>The Node URL is ca.tier3.io</strong>
+  <li>Currently Object Storage is only available out of our Canada Region. <strong>The Node URL is canada.os.ctl.io</strong>
   </li>
   <li>Provide the&nbsp;<strong>access key id</strong> and&nbsp;<strong>secret access key&nbsp;</strong>for the user created in the prerequisites</li>
   <li>Encryption, Compression and SSL are recommended</li>

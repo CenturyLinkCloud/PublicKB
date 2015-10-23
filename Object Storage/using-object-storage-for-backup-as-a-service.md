@@ -1,15 +1,15 @@
 {{{
   "title": "Using Object Storage for Backup as a Service",
-  "date": "4-20-2015",
+  "date": "10-23-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
 ### Overview
-CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storage for backup and recovery of file systems or applications. As Object Storage is consumable by any customer in a public fashion, applications or servers can be located within the CenturyLink Cloud or on premise. There are various industry backup tools that support object storage as a repository for data. In this knowledge base we will focus on [Cloudberry Lab](http://www.cloudberrylab.com).
+CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storage for backup and recovery of file systems or applications. As Object Storage is consumable by any customer in a public fashion, applications or servers can be located within the CenturyLink Cloud or on premise. There are various industry backup tools that support object storage as a repository for data. In this knowledge base we will focus on [Cloudberry Lab](//www.cloudberrylab.com).
 
-[Cloudberry Backup Enterprise Edition](http://www.cloudberrylab.com/enterprise-cloud-backup-software.aspx) permits backup of Microsoft Windows Server File Systems, Microsoft SQL and Microsoft Exchange data.
+[Cloudberry Backup Enterprise Edition](//www.cloudberrylab.com/enterprise-cloud-backup-software.aspx) permits backup of Microsoft Windows Server File Systems, Microsoft SQL and Microsoft Exchange data.
 
 ### Supporting Information
 * Information and details around the CenturyLink Cloud Object Storage services can be found in our [Knowledge Base.](//www.ctl.io/knowledge-base/object-storage)
@@ -27,7 +27,7 @@ CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storag
     ![Select S3 compatible](../images/using-object-storage-for-backup-as-a-service-01.png)
 
 2. Populate the S3 Compatible Account information with your CenturyLink Cloud [Object Storage Access Key, Secret Key, Service Point and bucket name.](../Object Storage/using-object-storage-from-the-control-portal.md)
-    * The Service Point for Canada is **ca.tier3.io**
+    * The Service Point for Canada is **canada.os.ctl.io**
 
     ![S3 Compatible Account input](../images/using-object-storage-for-backup-as-a-service-02.png)
 
