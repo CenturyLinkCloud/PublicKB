@@ -1,6 +1,6 @@
 {{{
   "title": "Using Object Storage from 3rd Party Tools",
-  "date": "10-24-2015",
+  "date": "10-23-2015",
   "author": "Daniel Stephan",
   "attachments": [],
   "contentIsHTML": false
