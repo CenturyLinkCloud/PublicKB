@@ -7,8 +7,7 @@
 }}}
 
 <h3>Description</h3>
-<p>CenturyLink Cloud now has a robust, geo-distributed Object Storage service capable of storing any type of digital content. Perfect for data backups, media distribution, and file transfers, the Object Storage is Amazon S3-compatible and accessible from
-  the Control Portal or via API. CenturyLink Cloud Object Storage is Amazon S3 compatible, which means that a host of tools are readily available for maintaining buckets and interacting with bucket objects.</p>
+<p>CenturyLink Cloud now has a robust, geo-distributed Object Storage service capable of storing any type of digital content. Perfect for data backups, media distribution, and file transfers, the Object Storage is Amazon S3-compatible and accessible from the Control Portal or via API. CenturyLink Cloud Object Storage is Amazon S3 compatible, which means that a host of tools are readily available for maintaining buckets and interacting with bucket objects.
   </br>
   <strong>This KB article explains how to interact with Object Storage from 3rd party tools.</strong>
 </p>
@@ -93,7 +92,7 @@
     <p><img src="../images/cyberduck-bookmark-added.png" alt="15.png" />
     </p>
   </li>
-  <li>Permissions can be applied at both the bucket and object level. A user could have &#34;FULL ACCESS&#34; rights for the bucket (and thus be able to add and remove objects) but ONLY have &#34;READ&#34; rights to an individual object (and therefore couldn&#39;t update that object).
+  <li>Permissions can be applied at both the bucket and object level. A user could have &#34;FULL ACCESS&#34; rights for the bucket (and thus be able to add and remove objects) but only have &#34;READ&#34; rights to an individual object (and therefore couldn&#39;t update that object).
     <p><img src="../images/cyberduck-bucket-permissions.png" alt="16.png" />
     </p>
     </br>   
