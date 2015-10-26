@@ -85,7 +85,7 @@
     <p><img src="../images/cyberduck-established-connection.png" alt="11.png" />
     </p>
   </li>
-  <li>Now that CyberDuck is configured to quickly connect to your CenturyLink Cloud Object Storage account and access the stored buckets, you should bookmark the account for easy access. Click the Bookmark icon <img src="file:///Users/davidgardner/Desktop/cyberduck-bookmark-icon.png" alt="12.png" /> to navigate to the Bookmark page. 
+  <li>Now that CyberDuck is configured to quickly connect to your CenturyLink Cloud Object Storage account and access the stored buckets, you should bookmark the account for easy access. Click the Bookmark icon <img src="../images/cyberduck-bookmark-icon.png" alt="12.png" /> to navigate to the Bookmark page. 
     <p><img src="../images/cyberduck-bookmark-page.png" alt="13.png" />
     </p>
     </br>
