@@ -65,39 +65,39 @@
 <ol>
   <li><a href="https://update.cyberduck.io/Cyberduck-4.7.2.zip">Download a copy of CyberDuck for OS X</a> from the product website.</li>
   <li>Install CyberDuck and run the program. It looks like this when it starts up without any <strong>Connections</strong> (aka: Service Points or Servers) configured.
-    <p><img src="file:///Users/davidgardner/Desktop/cyberduck-new-install.png" alt="07.png" />
+    <p><img src="../images/cyberduck-new-install.png" alt="07.png" />
     </p>
   </li>
   <li>In the Control Portal, navigate to the Object Storage service and view the user record that you want to configure CyberDuck to use. Record the&nbsp;<strong>Access Key ID</strong>&nbsp;and the&nbsp;<strong>Secret Access Key</strong>&nbsp;for use in the tool.
-    <p><img src="file:///Users/davidgardner/Desktop/object-storage-user-record-edited.png" alt="08.png" />
+    <p><img src="../images/object-storage-user-record-edited.png" alt="08.png" />
     </p>
   </li>
   <li>Also you will need the &#34;Service Point&#34; (e.g. server name) where your bucket exists (or will exist). In the Control Portal, on the Object Storage bucket listing page, either create a new bucket, or click on an existing bucket. When the &#34;Bucket Info and Settings&#34; page is displayed, copy/save the portion of the&nbsp;<strong>bucket URL</strong>&nbsp;that follows the bucket name. In this example, my bucket&#39;s&nbsp;<strong>server name</strong>&nbsp;was: <strong>canada.os.ctl.io</strong>. 
-    <p><img src="file:///Users/davidgardner/Desktop/object-storage-bucket-info-and-settings.png" alt="09.png" />
+    <p><img src="../images/object-storage-bucket-info-and-settings.png" alt="09.png" />
     </p>
   </li>
   <li>Back in CyberDuck, click the <strong>Open Connection</strong> icon (upper left corner) in order to configure the connection details for your Object Storage bucket. Select &#34;S3 (Amazon Simple Storage)&#34; from the drop down. In the&nbsp;<strong>Server</strong>&nbsp;field, enter the name of the &#34;Service point&#34;. Leave Port field set to <strong>443</strong>. Populate the <strong>Username</strong> field with your&nbsp;<strong>Access Key ID</strong>&nbsp;and populate the&nbsp;<strong>Password</strong>&nbsp;field with your&nbsp;<strong>Secret Access key</strong>. 
-    <p><img src="file:///Users/davidgardner/Desktop/cyberduck-setup-connection.png" alt="10.png" />
+    <p><img src="../images/cyberduck-setup-connection.png" alt="10.png" />
     </p>
   </li>
   <li>
     <p>After you have configured the Object Storage connection, CyberDuck will list the available buckets at that &#34;Connection&#34;. You can double-click on a bucket to upload files or even drag-and-drop files into the bucket.</p>
-    <p><img src="file:///Users/davidgardner/Desktop/cyberduck-established-connection.png" alt="11.png" />
+    <p><img src="../images/cyberduck-established-connection.png" alt="11.png" />
     </p>
   </li>
   <li>Now that CyberDuck is configured to quickly connect to your CenturyLink Cloud Object Storage account and access the stored buckets, you should bookmark the account for easy access. Click the Bookmark icon <img src="file:///Users/davidgardner/Desktop/cyberduck-bookmark-icon.png" alt="12.png" /> to navigate to the Bookmark page. 
-    <p><img src="file:///Users/davidgardner/Desktop/cyberduck-bookmark-page.png" alt="13.png" />
+    <p><img src="../images/cyberduck-bookmark-page.png" alt="13.png" />
     </p>
     </br>
-    Click the Add Connection button <img src="file:///Users/davidgardner/Desktop/cyberduck-bookmark-page-add-connection-icon.png" alt="14.png" /> to add this Object Storage account to your Bookmarks. 
-    <p><img src="file:///Users/davidgardner/Desktop/cyberduck-bookmark-added.png" alt="15.png" />
+    Click the Add Connection button <img src="../images/cyberduck-bookmark-page-add-connection-icon.png" alt="14.png" /> to add this Object Storage account to your Bookmarks. 
+    <p><img src="../images/cyberduck-bookmark-added.png" alt="15.png" />
     </p>
   </li>
   <li>Permissions can be applied at both the bucket and object level. A user could have &#34;FULL ACCESS&#34; rights for the bucket (and thus be able to add and remove objects) but ONLY have &#34;READ&#34; rights to an individual object (and therefore couldn&#39;t update that object).
-    <p><img src="file:///Users/davidgardner/Desktop/cyberduck-bucket-permissions.png" alt="16.png" />
+    <p><img src="../images/cyberduck-bucket-permissions.png" alt="16.png" />
     </p>
     </br>   
-    <p><img src="file:///Users/davidgardner/Desktop/cyberduck-object-permissions.png" alt="17.png" />
+    <p><img src="../images/cyberduck-object-permissions.png" alt="17.png" />
     </p>
   </li>
 </ol>
