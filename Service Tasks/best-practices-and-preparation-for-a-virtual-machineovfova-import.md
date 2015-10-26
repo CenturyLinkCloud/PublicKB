@@ -18,7 +18,8 @@ The CenturyLink Cloud Service Task and Onboarding teams can import images of exi
   * Whether the imported VM is to be a [Managed OS](../Managed Services/managed-operating-system-frequently-asked-questions.md) instance.
   * Account and Group in the Control Portal that the Virtual Machine(s) will be registered in
   * VLAN or Network the Virtual Machine is to utilize
-  * Type of Storage (Standard or Premium) to be used for the Virtual Machine(s)
+  * Type of Virtual Server (Standard or Hyperscale)
+  * Type of Storage (Standard or Premium) to be used for the Virtual Machine(s).  Applies to Standard virtual server type only.
   * Validate the [Guest Operating System is supported on the CenturyLink Cloud for Import](../Service Tasks/supported-guest-operating-systems-for-ovaovf-import.md)
 
 

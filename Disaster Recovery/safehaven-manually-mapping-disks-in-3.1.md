@@ -1,5 +1,5 @@
 {{{
-  "title": "SafeHaven 3.0: Manually mapping disks",
+  "title": "SafeHaven 3.1: Manually mapping disks",
   "date": "9-25-2015",
   "author": "Jake Malmad",
   "attachments": [],
