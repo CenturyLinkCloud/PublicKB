@@ -14,6 +14,7 @@
 <li>A single request can be made to Customer Care without additional CenturyLink authorization if it doesn't exceed 50% of current resource limit</li>
 <li>After the first resource limit increase in a given 30 day period, each subsequent increase request will be subject to an internal review prior to approval</li>
 </p>
+</ul>
 <h3>&nbsp;Detailed Steps</h3>
 <p>1. You get an error in the upper right hand corner of Control indicating lack of resources (CPU, Memory, Storage) when you are building a new machine.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/lXSL4VPNW8yC7wRFVPzLhh5kE/?name=CPUExceeded.PNG" alt="CPUExceeded.PNG" />
