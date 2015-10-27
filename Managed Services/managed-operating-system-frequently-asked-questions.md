@@ -118,3 +118,7 @@ Servers **can** be converted from unmanaged to managed by executing the "Managed
 **What Anti-Virus is provided for Windows Servers and how often is it updated?**
 
 McAfee is leveraged on Managed Windows Servers and is updated daily.
+
+**How do I Set Get Anti-Virus on a Managed RedHat Server?**
+
+Anti-virus is not standard for Managed RHEL. Please contact your CenturyLink sales representative to set up a special engagement.
