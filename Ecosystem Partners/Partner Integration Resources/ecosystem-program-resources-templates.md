@@ -14,7 +14,7 @@ Creating Server Templates on CenturyLink Cloud enables customers to deploy bit-f
 We have two deployment models available:
 
 * **Instant Deploy**.  This looks and feels like a [Blueprint](ecosystem-program-resources-blueprints.md) permitting instant deploys for compatible appliances
-* **Univesal Deploy**.  Supports nearly any virtual appliance type including those that require console configuration on first boot.  These deploys are performed by CenturyLink operations staff as a Service Task and take longer to deploy.
+* **Universal Deploy**.  Supports nearly any virtual appliance type including those that require console configuration on first boot.  These deploys are performed by CenturyLink operations staff as a Service Task and take longer to deploy.
 
 
 ### (Instant Deploy) Core Documentation

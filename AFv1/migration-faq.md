@@ -18,6 +18,16 @@ Before deleting any applications or services on AppFog v1 ensure you have local 
 
 December 15, 2015 is the last day AppFog v1 will be supported; the service will discontinue after this date.
 
+#### What do I need to do?
+
+If you are currently using AppFog to host your applications, you need to migrate your applications by Dec 16, 2015 to AppFog v2 or another PaaS. 
+
+If you are no longer using AppFog, no action is needed.
+
+#### What happens if I need more time?
+
+Please reach out to support@appfog.com, if you need help migrating your applications to AppFog v2. We are confident that we can build a migration plan that will work for you.
+
 ####  Why is AppFog v2 replacing AppFog v1? 
 
 AppFog v1 was built on an older version of Cloud Foundry. There is no easy migration path between these versions. We decided that rather than carry AppFog v1's limitations to the new version of Cloud Foundry, we'd start over and work to build a platform for cloud-native apps that supports the latest and greatest CF features. Further, we are building several new services to augment the core Cloud Foundry features. 
@@ -79,3 +89,9 @@ Your discount will apply for one full year from the day you sign up as an AppFog
 #### What are the benefits of AppFog being integrated into the CenturyLink Cloud Control Portal?
 
 CenturyLink Cloud features one of the most sophisticated service infrastructures in the market, with a great interface and lots of options for managing complex workflow and third-party applications in the cloud. Integration into the CenturyLink Cloud Portal allows for quick and easy access to all other high performance cloud services.
+
+#### What do I do if I’m using PHP 5.3 or PHP 5.4?
+
+AppFog v2 supports PHP 5.4 and 5.5 out of the box.  The Cloud Foundry buildpack recently removed support for PHP 5.4, because it is no longer receiving updates and patches.  As PHP 5.3 and PHP 5.4 are out of support and no longer receiving updates, we recommend migrating PHP 5.3 and 5.4 applications to PHP 5.5. 
+
+If this is not possible, contact [support@appfog.com](mailto:support@appfog.com).  We've created a custom buildpack for PHP 5.3 that is available for users who cannot upgrade to an officially supported version of PHP.
