@@ -22,6 +22,6 @@ Users may export their app code either from the command line or the web console:
 
 ### Deploy an App on AppFog v2
 * Create a [CenturyLink Cloud](https://www.ctl.io) account if you do not already have one.
-* [Enable AppFog in the Control Portal](../AppFog/getting-started-with-appfog.md#enable-appfog-in-control-portal)
+* [Enable AppFog in the Control Portal](../AppFog/getting-started-with-appfog/#enable-appfog-in-control-portal)
 * [Install the Cloud Foundry CLI tool](../AppFog/login-using-cf-cli.md)
 * [Deploying an Application](../AppFog/deploy-an-application.md)
