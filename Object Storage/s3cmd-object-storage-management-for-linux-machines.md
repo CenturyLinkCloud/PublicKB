@@ -77,9 +77,9 @@ Once S3CMD has been installed, it must be configured to use CenturyLink Cloud’
     <li>In the configuration file, change the following fields with the appropriate CenturyLink Cloud data center (in this example, we are using Canada- but an American data center would be us.tier3.io, UK would be uk.tier3.io, etc.)</li>
   </ol>
 </ol>
-<pre>host_base = ca.tier3.io
+<pre>host_base = canada.os.ctl.io
 
-host_bucket = %(bucket)s.ca.tier3.io</pre>
+host_bucket = %(bucket)s.canada.os.ctl.io</pre>
 
 <p>Alternatively, you can modify and save the following file and then specify s3cmd to use it by entering the command <strong>s3cmd&nbsp;–c /path/to/config file</strong>
 </p>
@@ -123,9 +123,9 @@ gpg_encrypt = %(gpg_command)s -c --verbose --no-use-agent --batch --yes --passph
 
 guess_mime_type = True
 
-<strong>host_base = ca.tier3.io</strong>
+<strong>host_base = canada.os.ctl.io</strong>
 
-<strong>host_bucket = %(bucket)s.ca.tier3.io</strong>
+<strong>host_bucket = %(bucket)s.canada.os.ctl.io</strong>
 
 human_readable_sizes = False
 

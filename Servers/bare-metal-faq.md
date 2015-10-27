@@ -77,7 +77,7 @@ No, there are a select number of management capabilities available through the C
 
 **Can I change the administrator/root password of my server through Control or the API?**
 
-No, the password can only be set at the time of server creation. If you would like to change the password on the server, you may do so through the OS, but the “show credentials” link in the Control portal will no longer display accurate credentials.
+Yes, the password is set at the time of server creation and can be changed after the fact. The password should only be [changed through the Control portal](../Servers/how-to-change-a-server-administrator-password.md) or API.  Changing the password through the OS will cause the “show credentials” link in the Control portal to no longer display accurate credentials.
 
 **Where are Bare Metal servers available geographically?**
 
@@ -98,6 +98,10 @@ Yes, Bare Metal servers are dedicated to you once they have been provisioned and
 **Can I customize my storage configuration on a Bare Metal server?**
 
 No, the storage configurations provisioned for Bare Metal servers are all either RAID 1 or RAID 5 depending on the server configuration type and tampering with that configuration could result in loss of management access which could disrupt support. Each server is provisioned with two partitions, one 300GB boot partition and a second partition for the remaining storage capacity for that particular configuration type.
+
+**Can I customize my network interface configuration on a Bare Metal server?**
+
+Yes, Bare Metal servers do support multiple vNIC configurations. Additional vNICs can be [added through the API](//www.ctl.io/api-docs/v2/#servers-add-secondary-network). It is not advised to make any other manual network configuration changes as they may be detrimental to associated support and automated provisioning services.
 
 **Can I bring my own OS image?**
 
