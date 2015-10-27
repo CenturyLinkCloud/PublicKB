@@ -102,7 +102,6 @@ After deploying this Blueprint, you may secure entitlements to the technology us
 Additional resources:
 
 * [OpenVPN Appliance FAQ](https://openvpn.net/index.php/access-server/section-faq-openvpn-as/virtual-appliance.html)
-* [Appliance quick start guide](https://openvpn.net/index.php/access-server/section-faq-openvpn-as/virtual-appliance.html)
 
 ### Frequently Asked Questions
 
