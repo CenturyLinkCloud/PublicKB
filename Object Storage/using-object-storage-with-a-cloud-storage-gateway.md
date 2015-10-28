@@ -6,6 +6,7 @@
   "contentIsHTML": false
 }}}
 
+### Description
 CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storage with Cloud Storage Gateway appliances. A cloud storage gateway is a network appliance or server which resides at the customer premises and translates cloud storage APIs such as SOAP or REST to block-based storage protocols such as iSCSI or file-based interfaces such as NFS or CIFS. Unlike the cloud storage services which they complement, cloud storage gateways use standard network protocols which integrate with existing applications. Cloud storage gateways can also serve as intermediaries to multiple cloud storage providers. Some cloud storage gateways also include additional storage features such as backup and recovery, caching, compression, encryption, storage de-duplication and provisioning.
 
 There are many Cloud Storage Gateway appliances on the market today. In this knowledge base we will focus on [TwinStrata](http://www.twinstrata.com/). The TwinStrata CloudArray provides customers various delivery models for the CloudArray product and Cloud Storage. Customers should validate with their Cloud Storage Gateway provider the support of an S3 compatible Object Storage.
