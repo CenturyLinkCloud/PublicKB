@@ -1,16 +1,24 @@
+{{{
+  "title": "Getting Started With CA Unified Infrastructure Management on Windows (CA UIM)",
+  "date": "10-28-2015",
+  "author": "Ben Hill",
+  "attachments": [],
+  "contentIsHTML": false
+}}}
+
 ##Getting Started With CA Unified Infrastructure Management (CA UIM)
 
 ![](http://www.infotechgroup.com/wp-content/uploads/2014/08/CA-Technologies-logo.png)
 
 ###Tehnology Profile 
 
-CA Technologies (NASDAQ: CA) creates software that fuels transformation for companies and enables them to seize the opportunities of the application economy. Software is at the heart of every business, in every industry. From planning to development to management and security, CA is working with companies worldwide to change the way we live, transact and communicate. - See more at [www.ca.com](www.ca.com).
+CA Technologies (NASDAQ: CA) creates software that fuels transformation for companies and enables them to seize the opportunities of the application economy. Software is at the heart of every business, in every industry. From planning to development to management and security, CA is working with companies worldwide to change the way we live, transact and communicate. - See more at [www.ca.com](http://www.ca.com).
 
 ### Contact CA Technologies 
 - [Email & phone support](https://www.ca.com/us/contact/call-me.aspx)
 
 ###Description
-CA Technologies has integrated their _CA Unified Infrastructure Management_ (CA UIM) with the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this IT monitoring solution. solution. - See more at [CA Unified Infrastructure Management](www.ca.com/us/opscenter/ca-unified-infrastructure-management.aspx?intcmp=searchresultclick&resultnum=1).
+CA Technologies has integrated their _CA Unified Infrastructure Management_ (CA UIM) with the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this IT monitoring solution. solution. - See more at [CA Unified Infrastructure Management](http://www.ca.com/us/opscenter/ca-unified-infrastructure-management.aspx?intcmp=searchresultclick&resultnum=1).
 ###Audience 
 CenturyLink Cloud users looking to enhance the monitoring capabilities of their CenturyLink Cloud Environment.
 ###Impact 
@@ -57,8 +65,8 @@ For more information about UIM, click on the following links:
 
 
 ####Issues related to deploying UIM Blueprints on CenturyLink Cloud 
-- Contact [our sales team](sales@ca.com).
+- Contact [our sales team](mailto:sales@ca.com).
 
 ####Who should I contact for support?
 - For issues related to deploying the UIM Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [CA Support Website](http://www.ca.com/us/support.aspx?intcmp=headernav).
-- For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](noc@ctl.io) or through the [CenturyLink Cloud Support website](https://support.ctl.io/hc/en-us/requests/new).
+- For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or through the [CenturyLink Cloud Support website](https://support.ctl.io/hc/en-us/requests/new).
