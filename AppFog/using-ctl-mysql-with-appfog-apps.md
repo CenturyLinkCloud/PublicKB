@@ -1,6 +1,6 @@
 {{{
   "title": "Using CenturyLink MySQL with AppFog Applications",
-  "date": "08-24-2015",
+  "date": "10-23-2015",
   "author": "Chris Sterling",
   "attachments": [],
   "related-products" : [],
@@ -23,7 +23,7 @@ The [CenturyLink MySQL Database-as-a-Service](https://www.ctl.io/dbaas/) recentl
 $ cf marketplace
 ...
 service       plans                description   
-ctl_mysql     free                 CenturyLink's BETA MySQL DBaaS.  For development use only; not subject to SLAs.
+ctl_mysql     micro                CenturyLink's BETA MySQL DBaaS.  For development use only; not subject to SLAs.
 ```
 
 As the description mentions, the `ctl_mysql` service is in beta and is for development use only at this time. Although we have no guarantees of service availability yet our DBaaS team is focused on providing the best service possible as they gather feedback. Please go the [DBaaS product page](https://www.ctl.io/dbaas/) to learn more.
@@ -33,7 +33,7 @@ As the description mentions, the `ctl_mysql` service is in beta and is for devel
 To create a new CenturyLink MySQL service instance, we can use the Cloud Foundry CLI. In order to do this you must be [logged into an AppFog region](login-using-cf-cli.md). The following command will create a new CenturyLink MySQL service instance named `acmedb`:
 
 ```
-$ cf create-service ctl_mysql free acmedb
+$ cf create-service ctl_mysql micro acmedb
 ```
 
 The `cf create-service` command will provision a new MySQL instance that can later be bound to an application deployed to AppFog.
@@ -66,7 +66,7 @@ System-Provided:
     },
     "label": "ctl_mysql",
     "name": "acmedb",
-    "plan": "free",
+    "plan": "micro",
     "tags": []
    }
   ],
@@ -122,7 +122,7 @@ var connectionInfo = {
 if (process.env.VCAP_SERVICES) {
   var services = JSON.parse(process.env.VCAP_SERVICES);
   var ctlMysqlConfig = services["ctl_mysql"];
-  
+
   if (ctlMysqlConfig) {
     var node = ctlMysqlConfig[0];
     connectionInfo = {

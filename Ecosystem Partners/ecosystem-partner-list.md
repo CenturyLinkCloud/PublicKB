@@ -43,6 +43,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Alert Logic Web Security Manager](../Ecosystem Partners/Marketplace Guides/getting-started-with-alert-logic-web-security-manager-partner-template.md)   	| Template    | Web security manager appliance    |
 | [Alert Logic Threat Manager](../Ecosystem Partners/Marketplace Guides/getting-started-with-alert-logic-threat-manager-partner-template.md)   	| Template    | Threat manager appliance    |
 | [Cavirin Automated Risk Analysis Platform](../Ecosystem Partners/Marketplace Guides/getting-started-with-cavirin-automated-risk-analysis-platform-partner-template.md)   	| Template    | Governance and compliance appliance    |
+| [OpenVPN AS](../Ecosystem Partners/Marketplace Guides/getting-started-with-openvpnas-appliance.md)   	| Applinace    | Client VPN    |
 | [OSSEC](../Ecosystem Partners/Marketplace Guides/getting-started-with-ossec-blueprints.md)   	| Template    | HIDS    |
 | [Vormetric](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-dsm.md)   	| Template    | Data encryption and key management    |
 | [Vormetric](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-encryption-agent-deployment-blueprints.md)   	| Blueprint    | Data encryption and key management    |
@@ -56,6 +57,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [BCMOne VitalView](../Ecosystem Partners/Marketplace Guides/getting-started-with-bcmone-vital-view-blueprint.md)   	| Blueprint    | Network monitoring and management    |
 | [Centerity](../Ecosystem Partners/Marketplace Guides/getting-started-with-centerity-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
 | [Chef Server](../Ecosystem Partners/Marketplace Guides/getting-started-with-chef-server-blueprint.md)   	| Blueprint    | Configuration management    |
+| [CloudBolt](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudbolt-appliance.md)   	| Appliance    | Multi-cloud management platform    |
 | [Dynatrace](../Ecosystem Partners/Marketplace Guides/getting-started-with-dynatrace-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
 
 

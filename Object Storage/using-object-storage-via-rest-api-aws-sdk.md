@@ -92,7 +92,7 @@ private static string adminAccessSecret = System.Configuration.ConfigurationMana
     <br />
     <pre>//set up variables used by this method
 
-string s3Url = "https://ca.tier3.io/";
+string s3Url = "https://canada.os.ctl.io/";
 
 XDocument resultDoc = new XDocument();
 
@@ -177,7 +177,7 @@ string inputbucket = Console.ReadLine();
 
 //url updated to include the resource (bucket) value
 
-s3Url = "https://ca.tier3.io/" + inputbucket;
+s3Url = "https://canada.os.ctl.io/" + inputbucket;
 
 
 
@@ -277,7 +277,7 @@ AmazonS3Config config = new AmazonS3Config()
 
 {
 
-     ServiceURL = "ca.tier3.io"
+     ServiceURL = "canada.os.ctl.io"
 
 };
 
@@ -380,7 +380,7 @@ exports.index = function(req, res){
 
     AWS.config.loadFromPath('./credentials.json');
 
-    var s3 = new AWS.S3({endpoint:'https://ca.tier3.io'});
+    var s3 = new AWS.S3({endpoint:'https://canada.os.ctl.io'});
 
 
 
