@@ -18,12 +18,14 @@ Before deleting any applications or services on AppFog v1 ensure you have local 
 The AppFog v2 PHP buildpack default differs from AppFog v1 configuration. This article provides some options for customizing the configuration.  More documentaion on modifying the PHP buildpack can be found at https://github.com/cloudfoundry/php-buildpack/blob/master/docs/config.md.
 
 ### PHP Version
-The default PHP buildpack does not support PHP 5.3. AppFog developers are in the process of creating a custom buildpack to support PHP 5.3 on AppFog v2. At the time this article was published the buildpack was not yet available. The PHP buildpack default version is PHP 5.5. To use a different version create a `.bp-config/options.json` file in the application's root directory and use the following variable:
+The PHP buildpack defaults to version 5.5. To use a different version create a `.bp-config/options.json` file in the application's root directory and use the following variable: 
 ```
 {
 "PHP_VERSION" : "{PHP_56_LATEST}"
 }
 ```
+The default PHP buildpack does not support PHP 5.3, and soon will not support PHP 5.4. This is because both PHP versions are no longer supported. AppFog developers have created a custom buildpack to support PHP 5.3 and 5.4 on AppFog v2. To use PHP 5.3 or 5.4 specify the version as described above and include the custom buildpack when pushing your app:
+`cf push <appname> -b https://github.com/CenturyLinkCloud/php-buildpack#af_custom_php`
 
 ### .user.ini
 * Users can modify the default settings by adding a `.user.ini` file to their applicaiton root directory.
