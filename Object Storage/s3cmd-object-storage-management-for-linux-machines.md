@@ -33,7 +33,7 @@ The simplest way to add it is to use the package manager for your version of Lin
   * For CentOS/RHEL 6 enter the command “**wget [http://s3tools.org/repo/RHEL_6/s3tools.repo](http://s3tools.org/repo/RHEL_6/s3tools.repo)**” (without quotes)
 4. Enter the command: **yum install s3cmd -y**
 
-**To add the repository to a Ubuntu/Debian machine:**
+**To add the repository to a Ubuntu/Debian machine:**  
 1. Install wget if not already installed by entering the command: **apt-get install wget –y**  
 2. Import the signing key by entering the command: **wget -O - -q [http://s3tools.org/repo/deb-all/stable/s3tools.key](http://s3tools.org/repo/deb-all/stable/s3tools.key) | apt-key add -**  
 3. Add the repository by entering the command: **wget -O /etc/apt/sources.list.d/s3tools.list [http://s3tools.org/repo/deb-all/stable/s3tools.list](http://s3tools.org/repo/deb-all/stable/s3tools.list)**  
