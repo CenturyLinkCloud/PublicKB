@@ -12,12 +12,12 @@ CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storag
 There are many Cloud Storage Gateway appliances on the market today. In this knowledge base we will focus on [TwinStrata](http://www.twinstrata.com/). The TwinStrata CloudArray provides customers various delivery models for the CloudArray product and Cloud Storage. Customers should validate with their Cloud Storage Gateway provider the support of an S3 compatible Object Storage.
 
 ### Supporting Information
-Information and details around the CenturyLink Cloud Object Storage can be found in our **[Knowledge base](https://t3n.zendesk.com/forums/20789095-Object-Storage)**. It is also important to note that CenturyLink Cloud provides no support for any 3rd party Cloud Storage Gateways. We are simply providing cloud based storage for use with these Cloud Storage Gateways.
+Information and details around the CenturyLink Cloud Object Storage can be found in our **[Knowledge base](//www.ctl.io/knowledge-base/object-storage)**. It is also important to note that CenturyLink Cloud provides no support for any 3rd party Cloud Storage Gateways. We are simply providing cloud based storage for use with these Cloud Storage Gateways.
 
 ### Prerequisites
 * A CenturyLink Cloud Account
 * TwinStrata CloudArray Virtual or Physical Appliance Base Configuration
-* An object storage user is created in the CenturyLink Cloud Control Portal. <a href="https://t3n.zendesk.com/entries/21648384-Using-Object-Storage-from-the-Control-Portal">See this KB</a>
+* An object storage user is created in the CenturyLink Cloud Control Portal. [See this KB.](using-object-storage-from-the-control-portal.md)
 * The Cloud Storage Gateway has internet access ports as defined by the TwinStrata Installation Documentation.
 
 ### Configuring CenturyLink Cloud as a Cloud Provider
