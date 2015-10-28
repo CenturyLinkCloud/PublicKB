@@ -30,7 +30,7 @@ The simplest way to add it is to use the package manager for your version of Lin
 2. Enter the command: **cd /etc/yum.repos.d**
 3. Download the appropriate file for your distribution:
   * For CentOS/RHEL 5 enter the command “**wget [http://s3tools.org/repo/CentOS_5/s3tools.repo](http://s3tools.org/repo/RHEL_5/s3tools.repo)**” (without quotes)
-  * For CentOS/RHEL 6 enter the command “**wget [http://s3tools.org/repo/RHEL_6/s3tools.repo](http://s3tools.org/repo/RHEL_6/s3tools.repo**” (without quotes)
+  * For CentOS/RHEL 6 enter the command “**wget [http://s3tools.org/repo/RHEL_6/s3tools.repo](http://s3tools.org/repo/RHEL_6/s3tools.repo)**” (without quotes)
 4. Enter the command: **yum install s3cmd -y**
 
 **To add the repository to a Ubuntu/Debian machine:**
