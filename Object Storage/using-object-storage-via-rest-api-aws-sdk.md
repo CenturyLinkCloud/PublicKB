@@ -64,13 +64,13 @@ The CenturyLink Cloud Object Storage service offers an Amazon S3-compatible web 
 
         }
 
-        ```
+  ```
 
 5. Define variables to hold the authentication credentials for Object Storage. In the example below, these values are stored in the application's configuration file.
 
   ```
   private static string adminAccessKey = System.Configuration.ConfigurationManager.AppSettings["ObjectStorageKey"];
-
+  
   private static string adminAccessSecret = System.Configuration.ConfigurationManager.AppSettings["ObjectStorageSecret"];
   ```
 
