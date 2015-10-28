@@ -34,10 +34,10 @@ The simplest way to add it is to use the package manager for your version of Lin
 4. Enter the command: **yum install s3cmd -y**
 
 **To add the repository to a Ubuntu/Debian machine:**
-1. Install wget if not already installed by entering the command: **apt-get install wget –y**
-2. Import the signing key by entering the command: **wget -O - -q [http://s3tools.org/repo/deb-all/stable/s3tools.key](http://s3tools.org/repo/deb-all/stable/s3tools.key) | apt-key add -**
-3. Add the repository by entering the command: **wget -O /etc/apt/sources.list.d/s3tools.list [http://s3tools.org/repo/deb-all/stable/s3tools.list](http://s3tools.org/repo/deb-all/stable/s3tools.list)**
-4. Refresh your packages and install by entering the command: **apt-get update && apt-get install s3cmd**
+1. Install wget if not already installed by entering the command: **apt-get install wget –y**  
+2. Import the signing key by entering the command: **wget -O - -q [http://s3tools.org/repo/deb-all/stable/s3tools.key](http://s3tools.org/repo/deb-all/stable/s3tools.key) | apt-key add -**  
+3. Add the repository by entering the command: **wget -O /etc/apt/sources.list.d/s3tools.list [http://s3tools.org/repo/deb-all/stable/s3tools.list](http://s3tools.org/repo/deb-all/stable/s3tools.list)**  
+4. Refresh your packages and install by entering the command: **apt-get update && apt-get install s3cmd**  
 
 ### Configuring S3CMD
 Once S3CMD has been installed, it must be configured to use CenturyLink Cloud’s Object Storage.
