@@ -32,7 +32,7 @@ Though it is not explicitly disabled by the platform, it is not recommended that
 
 **What Operating Systems support Autoscale?**
 
-Vertical Autoscale can be applied to any server type that supports a "hot add" of CPU resources without a reboot. Those OSes include: Windows Server 2012 Datacenter Edition, Red Hat Enterprise Linux 5/6/7 x64, and Ubuntu 10/12/14 x64. Horizontal Autoscale is applied at the group level and will work with any server types within that group.
+Vertical Autoscale can be applied to any server type that supports a "hot add" of CPU resources without a reboot. Those OSes include: Windows Server 2012/2012 R2 Datacenter Edition, Red Hat Enterprise Linux 5/6/7 x64, and Ubuntu 12/14 x64. Horizontal Autoscale is applied at the group level and will work with any server types within that group.
 
 **How often are you sampling the virtual machine for utilization data points?**
 
