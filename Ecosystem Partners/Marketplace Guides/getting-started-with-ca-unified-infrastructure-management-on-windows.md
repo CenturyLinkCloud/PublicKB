@@ -19,6 +19,7 @@ CA Technologies (NASDAQ: CA) creates software that fuels transformation for comp
 
 ###Description
 CA Technologies has integrated their _CA Unified Infrastructure Management_ (CA UIM) with the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this IT monitoring solution. solution. - See more at [CA Unified Infrastructure Management](http://www.ca.com/us/opscenter/ca-unified-infrastructure-management.aspx?intcmp=searchresultclick&resultnum=1).
+
 ###Audience 
 CenturyLink Cloud users looking to enhance the monitoring capabilities of their CenturyLink Cloud Environment.
 ###Impact 
