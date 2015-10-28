@@ -20,6 +20,7 @@ CenturyLink Cloud Object Storage is Amazon S3 compatible which means that a host
 a freeware product (that also has a paid version) that works with CenturyLink Cloud Object Storage.
 
 * [Download a copy of Explorer for Amazon S3](http://www.cloudberrylab.com/free-amazon-s3-explorer-cloudfront-IAM.aspx) from their product website.
+
 * Install Explorer for Amazon S3 and run the program.  
 ![using-object-storage-from-3rd-party-tools-01](../images/using-object-storage-from-3rd-party-tools-01.png)
 
