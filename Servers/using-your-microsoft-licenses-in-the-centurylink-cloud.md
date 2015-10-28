@@ -21,6 +21,7 @@ Microsoft License Mobility through Software Assurance only applies to eligible p
 Customers must maintain eligible licenses on the Authorized Mobility Partner’s (CenturyLink Cloud) IaaS Platform for a minimum period of 90 days. After the 90-day period, you can move the licensed software back to your premise or to another Authorized Mobility Partner’s server farm.
 
 ### Exceptions
+
 * Customers leveraging [CenturyLink Managed Services](//www.ctl.io/managed-services/) are not eligible for license mobility as these packages include management and software as part of the solution offering.
 
 ### License Mobility verification process
