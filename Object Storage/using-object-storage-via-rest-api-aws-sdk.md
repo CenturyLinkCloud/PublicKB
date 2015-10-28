@@ -187,7 +187,7 @@ The CenturyLink Cloud Object Storage service offers an Amazon S3-compatible web 
 
   ```
 
-8. Run the application and first see that all Object Storage buckets are returned, and then ask for the contents of a single bucket.
+8. Run the application and first see that all Object Storage buckets are returned, and then ask for the contents of a single bucket.  
 ![using-object-storage-via-rest-api-aws-sdk-03](../images/using-object-storage-via-rest-api-aws-sdk-03.gif)
 
 ### Using Amazon SDK for .NET to Interact with Object Storage
@@ -246,7 +246,7 @@ The Amazon Web Services team created and maintain a set of SDKs for developers t
   }
   ```
 
-4. Run the application and see the list of buckets and then the list of objects in a selected bucket.
+4. Run the application and see the list of buckets and then the list of objects in a selected bucket.  
 ![using-object-storage-via-rest-api-aws-sdk-05](../images/using-object-storage-via-rest-api-aws-sdk-05.gif)
 
 ### Using the Amazon SDK for Node.js to Interact with Object Storage
