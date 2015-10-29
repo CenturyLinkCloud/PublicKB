@@ -19,7 +19,7 @@
     users and buckets.</li>
 </ul>
 <h3>Using the Object Storage REST API from .NET</h3>
-<p>The CenturyLink Cloud Object Storage service is based on Riak CS Enterprise, which offers an Amazon S3-compatible web services endpoint. The endpoint has the same authentication, resources, and payloads as defined in the <a href="http://docs.aws.amazon.com/AmazonS3/latest/API/APIRest.html"
+<p>The CenturyLink Cloud Object Storage service offers an Amazon S3-compatible web services endpoint. The endpoint has the same authentication, resources, and payloads as defined in the <a href="http://docs.aws.amazon.com/AmazonS3/latest/API/APIRest.html"
  >Amazon S3 documentation</a>. The steps below show how to consume Object Storage from a custom .NET application.&nbsp;<strong>Note that the <a href="https://github.com/Tier3/Examples/tree/master/ObjectStorage/Tier3.ObjectStorageViaAPI.DotNet">source code for this sample application</a> can be downloaded from GitHub.</strong>
 </p>
 <h4>Detailed Steps</h4>
