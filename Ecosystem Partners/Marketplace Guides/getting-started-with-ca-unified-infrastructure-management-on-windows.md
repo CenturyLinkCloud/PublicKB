@@ -6,31 +6,42 @@
   "contentIsHTML": false
 }}}
 
-##Getting Started With CA Unified Infrastructure Management (CA UIM)
 
 ![](http://www.infotechgroup.com/wp-content/uploads/2014/08/CA-Technologies-logo.png)
 
-###Tehnology Profile 
+### Technology Profile 
 
 CA Technologies (NASDAQ: CA) creates software that fuels transformation for companies and enables them to seize the opportunities of the application economy. Software is at the heart of every business, in every industry. From planning to development to management and security, CA is working with companies worldwide to change the way we live, transact and communicate. - See more at [www.ca.com](http://www.ca.com).
 
 ### Contact CA Technologies 
+
 - [Email & phone support](https://www.ca.com/us/contact/call-me.aspx)
 
-###Description
+### Description
+
 CA Technologies has integrated their _CA Unified Infrastructure Management_ (CA UIM) with the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this IT monitoring solution. solution. - See more at [CA Unified Infrastructure Management](http://www.ca.com/us/opscenter/ca-unified-infrastructure-management.aspx?intcmp=searchresultclick&resultnum=1).
 
-###Audience 
+### Audience 
+
 CenturyLink Cloud users looking to enhance the monitoring capabilities of their CenturyLink Cloud Environment.
-###Impact 
+
+### Impact 
+
 After reading this article, the user should be able to install UIM for Windows on a CenturyLink Cloud server.
-###Prerequisites 
+
+### Prerequisites 
+
 Access to the CenturyLink Cloud platform as an authorized user.
-###Postrequisites 
+
+### Postrequisites 
 None
-###Deploying UIM for Windows on a New Server
+
+### Deploying UIM for Windows on a New Server
+
 CA UIM is available as a Blueprint for deployment on a new server.
-####Steps to deploy to New Server Blueprint 
+
+#### Steps to deploy to New Server Blueprint 
+
   1. Locate the "Install 
   2. Click on the blueprint. Select "Deploy Blueprint" on the resulting screen
   3. Configure the Blueprint. Complete the information below:
@@ -45,7 +56,8 @@ CA UIM is available as a Blueprint for deployment on a new server.
   5. Deploy the Blueprint 
   6. Monitor the Deployment Queue to view the progress of the blueprint. You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   7. Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
-###Steps to deploy to an existing server 
+  
+### Steps to deploy to an existing server 
 
   1. Deploy or Identify an existing server
   2. Locate the "Install UIM on Existing Server" blueprint in the Blueprint Library
@@ -55,9 +67,9 @@ CA UIM is available as a Blueprint for deployment on a new server.
   6. Select "Deploy Blueprint"
   7. Monitor the Deployment Queue to view the progress of the blueprint. You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   8. Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
-####Demo Video 
+  
+#### Frequently Asked Questions 
 
-####Frequently Asked Questions 
 For more information about UIM, click on the following links:
 
 [Getting Started - CA Unified Infrastructure Management](https://wiki.ca.com/display/UIM83/Getting+Started)
@@ -65,9 +77,11 @@ For more information about UIM, click on the following links:
 [Demo Video - CA Unified Infrastructure Management Demo](http://www.ca.com/us/opscenter/ca-unified-infrastructure-management.aspx)
 
 
-####Issues related to deploying UIM Blueprints on CenturyLink Cloud 
+#### Issues related to deploying UIM Blueprints on CenturyLink Cloud
+ 
 - Contact [our sales team](mailto:sales@ca.com).
 
-####Who should I contact for support?
+#### Who should I contact for support?
+
 - For issues related to deploying the UIM Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [CA Support Website](http://www.ca.com/us/support.aspx?intcmp=headernav).
 - For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or through the [CenturyLink Cloud Support website](https://support.ctl.io/hc/en-us/requests/new).
