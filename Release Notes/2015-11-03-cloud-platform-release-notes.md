@@ -52,7 +52,7 @@
 
   Our goal was to make automation easy and accessible to everyone. From the most advanced users to those new to cloud computing, Runner makes it easy to create jobs and execute them regardless of your environment or provider.
 
-    ![Runner Web Diagram](../images/2015-11-03_runner-diagram-web-releasenotes.jpg)
+    <img src="../images/2015-11-03_runner-diagram-web-releasenotes.jpg" width="40%" alt="Runner Diagram"/>
 
   * __Runner Job Service.__ The Job Service is the primary component of the Runner product.  Users can create, modify, and execute jobs at anytime.  The Job Service accepts a payload the references a playbook to be used, whether that is using a public GitHub repository or private (GitHub credentials required), as well as other information like login or bearer token, environments, and so on.
 
