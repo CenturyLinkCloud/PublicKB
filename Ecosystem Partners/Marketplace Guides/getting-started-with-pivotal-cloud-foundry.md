@@ -10,7 +10,7 @@
 
 ### Overview
 
-After reading this article, the reader should feel comfortable deploying the Pivotal Cloud Foundry (PCF) 1.5.5 on CenturyLink Cloud.
+After reading this article, the reader should feel comfortable deploying Pivotal Cloud Foundry (PCF) on CenturyLink Cloud.
 
 ### Partner Profile
 
@@ -33,7 +33,7 @@ Pivotal has integrated their Cloud Foundry technology with the CenturyLink Cloud
 
 <img src="../../images/pivotal_pcf/how_pcf_works.png" style="border:0;">
 
-Cloud Foundry® is the result of collaborative industry efforts to build an open platform for next-generation software development. Over 40 members of the Cloud Foundry Foundation now contribute to the project, including VMware, EMC and GE. Pivotal’s commercial edition builds on the open source Cloud Foundry release with advanced features:
+Cloud Foundry® is the result of collaborative industry efforts to build an open platform for next-generation software development. Over 40 members of the Cloud Foundry Foundation now contribute to the project, including VMware, EMC and GE. Pivotal’s commercial edition builds on the open source Cloud Foundry release with advanced features.
 
 
 ### Audience
@@ -49,7 +49,6 @@ You can achieve a single-button deployment of a new Cloud Foundry using CenturyL
 
 Pivotal Cloud Foundry is a complex piece of software.  Before installing please validate the following:
 
-* **Early Access Note** - This is an early access release.  Please log a ticket with noc@ctl.io for deployments before this goes GA
 * **control.ctl.io Service Account** - For production deployments we recommend creating a dedicated control.ctl.io user account as the credentials
   are used for all IaaS changes directed by BOSH.  Deploys cannot be done using accounts with requiring two-factor authentication.
 * **Dedicated Network** - Due to the size of typical PCF deploys and some IP address management concerns we require an entire VLAN be dedicated to this install.  PCF servers will reside on the top half of this class-C.
@@ -70,9 +69,6 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
 2. **Locate the Blueprint in the Blueprint Library**
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "Pivotal Cloud Foundry" in the keyword search on the right side of the page.
-
-  > Note for access to this Blueprint during this early access period
-  > # Email noc@ctl.io
 
   <img src="../../images/pivotal_pcf/cluster_blueprint_tiles.png" style="border:0;max-width:250px;">
 
@@ -111,7 +107,7 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
 
 8. **Deployment Complete**
 
-  Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets within a few minutes.  If you do not receive an email like the one shown below you may have had a deployment error - review the *Blueprint Build Log* to for error messages.
+  Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets within a few minutes.  If you do not receive an email like the one shown below you may have had a deployment error - review the *Blueprint Build Log* for error messages.
 
   <img src="../../images/pivotal_pcf/deploy_install_status1.png" style="border:1;margin-left:1em;width:70%;">
 
@@ -255,5 +251,16 @@ reserved for platform-level services, the entire subnet is available for use.  S
 **What are some known limitations?**
 
 * Accounts requiring two-factor authentication cannoit successfully deploy PCF.  Create a new service account dedidicated to PCF.
+
+
+**How can I get new stemcells?**
+
+Your install will be preloaded with the most current stemcells.  If you need some older stemcells that aren't preloaded or if you need something that's been released since your initial install you can download the stemcells from the links below.  Note these are slightly modified from what's available at network.pivotal.io.
+
+* [2989](http://ca.tier3.io/ateam-packages/stemcells/bosh-stemcell-2989-clc-ubuntu-trusty-go_agent.tgz)
+* [3012](http://ca.tier3.io/ateam-packages/stemcells/bosh-stemcell-3012-clc-ubuntu-trusty-go_agent.tgz)
+* [3026](http://ca.tier3.io/ateam-packages/stemcells/bosh-stemcell-3026-clc-ubuntu-trusty-go_agent.tgz)
+* [3062](http://ca.tier3.io/ateam-packages/stemcells/bosh-openstack-clc-ubuntu-trusty-go_agent_3062.tgz)
+
 
 

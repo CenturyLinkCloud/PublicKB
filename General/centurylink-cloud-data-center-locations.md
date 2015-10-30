@@ -120,7 +120,7 @@ Some important details about our locations are listed below. You can also refer 
     <tr>
       <td>APAC (Singapore) - SG1</td>
       <td>CenturyLink</td>
-      <td>9 Tai Seng Drive #05-04 Singapore 535227</td>
+      <td>29A International Business Park Jurong East Singapore 609934</td>
       <td><a href="http://www.centurylink.com/business/enterprise/colocation/data-centers/singapore.html">provider details</a></td>
     </tr>
   </tbody>

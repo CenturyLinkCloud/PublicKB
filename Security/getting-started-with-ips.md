@@ -26,8 +26,15 @@ This Blueprint is for the actual installation and activation of the IPS service 
 ### Supported Managed Operating Systems
 * Red Hat Enterprise Linux 5 (64-bit only)
 * Red Hat Enterprise Linux 6 (64-bit only)
-* Microsoft Windows Server 2008 (64-bit only)
-* Microsoft Windows Server 2012 (64-bit only)
+* Microsoft Windows Server 2008 Standard R2 (64-bit only)
+* Microsoft Windows Server 2008 Enterprise (64-bit only)
+* Microsoft Windows Server 2008 Enterprise R2 (64-bit only)
+* Microsoft Windows Server 2008 Datacenter (64-bit only)
+* Microsoft Windows Server 2008 Datacenter R2 (64-bit only)
+* Microsoft Windows Server 2012 Datacenter (64-bit only)
+* Microsoft Windows Server 2012 Datacenter R2 (64-bit only)
+
+
 
 ### Installation Process
 

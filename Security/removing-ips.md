@@ -1,7 +1,7 @@
 {{{
   "title": "Removing Intrusion Prevention System (IPS)",
-  "date": "09-08-2015",
-  "author": "Sean Robb",
+  "date": "09-24-2015",
+  "author": "Stephanie Wong",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": false
@@ -15,14 +15,7 @@ This Blueprint is for the removal and deactivation of the IPS service on the VM.
 
 ### Prerequisites
 * A CenturyLink Cloud Account
-* One of the Supported Operating Systems listed below on the Virtual Machine
 * IPS currently running on the VM
-
-### Supported Managed Operating Systems
-* Red Hat Enterprise Linux 5 (64-bit only)
-* Red Hat Enterprise Linux 6 (64-bit only)
-* Microsoft Windows Server 2008 (64-bit only)
-* Microsoft Windows Server 2012 (64-bit only)
 
 ### Uninstallation Process
 

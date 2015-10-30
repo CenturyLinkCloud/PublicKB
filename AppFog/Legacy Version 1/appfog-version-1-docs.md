@@ -10,6 +10,18 @@
 
 This document is for users of AppFog v1. This document does not apply to the current AppFog service that is located in CenturyLink Cloud Control Portal. This page provides links to AppFog v1 specific documentation.
 
+### AppFog v1 to AppFog v2 Migration Guides
+
+* [Migrating an Application](../../AFv1/how-to-migrate-an-application.md)
+* [Migrating a Service](../../AFv1/export-services-and-third-party-alternatives.md)
+* [Migrating Environment Variables and Add-Ons](../../AFv1/migrating-environment-variables.md)
+* [Migrating a WordPress Application](../../AFv1/afv1-migrating-wordpress.md)
+* [Migrating SSL Support to AppFog v2](../../AFv1/how-to-migrate-ssl-certs.md)
+* [Importing Data to AppFog v2 MySQL Service](../../AFv1/importing-data-to-afv2-mysql.md)
+* [Migrating Teams to AppFog v2](../../AFv1/migrating-teams-to-afv2.md)
+* [Migrating a PHP Application to AppFog v2](../../AFv1/migrating-php-to-afv2.md)
+* [Migration FAQ](../../AFv1/migration-faq.md)
+
 ### Getting Started
 
 * [Getting Started Overview](../../AFv1/getting-started-overview.md)
