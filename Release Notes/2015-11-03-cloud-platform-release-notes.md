@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-### New Features (TODO)
+### New Features (6)
 
 * __Intrusion Prevention has been released for General Availability.__ The [Intrusion Prevention or IPS Product](https://www.ctl.io/intrusion-prevention-service/) is now available in all CenturyLink Cloud Data Centers, except for UC1.  
 
@@ -39,9 +39,31 @@
 
   * __"api.orchestrate.io" now directs requests automagically to the correct data center.__ Clients no longer need to be configured to connect to the appropriate data center. The "api.orchestrate.io" is now intelligent and will route your request to your Orchestrate app.
   
-[PLACEHOLDER for Runner]
+### Early Adopter Program Updates (6)
 
-### Enhancements (TODO)
+* __Runner Beta Launched.__ We are beta launching Runner on 11/2 to select customers.
+  
+  ![Runner Logo](../images/2015-11-03_runner-logo-releasenotes.png)
+
+  CenturyLink is excited to announce the upcoming launch of Runner, a product that enables teams, developers, and engineers to quickly provision, interact, and modify their environment in not only the CenturyLink Platform, but third-party clouds, as well as on-premise. Runner brings together state-based and massive parallel job execution, with multi-cloud and multi-data center execution. All within one powerful engine.
+
+  Our goal was to make automation easy and accessible to everyone. From the most advanced users to those new to the Cloud, Runner makes it easy to create jobs and execute them regardless of your environment or provider. It’s never been easier. Automation made simple.
+
+  * __Runner Job Service.__ The Job Service is the primary component of the Runner product.  Users can create, modify, and execute jobs at anytime.  The Job Service accepts a payload the references a playbook to be used, whether that is using a public GitHub repository or private (GitHub credentials required), as well as other information like login or bearer token, environments, etc.
+  
+  * __Runner SSH Service.__ The SSH Service allows for Key Pair management within CenturyLink Cloud.  Users can create, retrieve, deploy, and import Key Pairs, as well a remove or "undeploy."  The SSH Service is a valuable standalone service as well, as is not directly tied to the Job Service (but is only accessible via Runner end points).
+  
+  * __Runner VPN Service.__ The VPN Service allows users to create connection definitions to be used in parallel with jobs.  The VPN Service allows for the Job Service to access remote hosts and establish connections during job execution.
+  
+  * __Runner Status Service.__ The Status Service allows for users to retrieve the status of jobs they have executed.  This status will return the information of the latest update.  For completed jobs, this will return the entire history. The statuses are accessible via webhooks for real-time status reporting and updating.
+  
+  * __Runner Scheduling Service.__ The Schedule Service allows for users to schedule jobs, as well as run any endpoint, using cron expressions. The service accepts URLS and endpoints, so the service is not tightly coupled with job service, but does integrate seamlessly. The Service also allows for schedule modification, which includes discontinuing (deleting).
+
+* __MySQL Beta Configurable Database Subscriptions.__ DBaaS customers provisioning through our UI can now select the specific amount of CPU, RAM and Storage to fit their needs rather than being limited to pre-defined plans.  
+
+  *Note: AppFog users will continue to select pre-defined plans through the AppFog Add-On Engine marketplace.*
+
+### Enhancements (5)
 
 * __Object Storage - Performance Enhancements & New Pricing.__ The object storage service in Canada now offers improved performance and reliability, while continuing to provide the familiar S3 interface. Existing customers will automatically receive these new capabilities. More details are available on the [Object Storage product page](https://www.ctl.io/object-storage/), including new pricing, and the [knowledge base](https://www.ctl.io/knowledge-base/object-storage).
 
@@ -58,39 +80,6 @@
   
   * __Server Group Defaults.__ Sets the default settings to be used when building servers in a group.
     - https://www.ctl.io/api-docs/v2/#groups-set-group-defaults
-
-### Early Adopter Program Updates (3)
-
-* __MySQL Limited Beta__. This service has several new features available, including:
-  * __Additional Instance Sizes__. Beta users can now select from four sizes: micro, small, medium, and large. The sizes range from 1 CPU / 1 GB RAM / 1 GB storage all the way to 4 CPU / 16 GB RAM / 256 GB storage.
-  * __Backup location & encryption__. The daily backups that are part of the service are now de-coupled from their original VMs, and encrypted.
-  * __New default URL for sites.__ Newly created MySQL DBaaS sites are now given the default domain of `[customer-specified-db].datacenter.dbaas.ctl.io`.
-  * __New filters.__ The listing of your DB instances now allows you to filter based on status, specifically `active` and `terminated`.
-
-  ![MySQL Filter Screen](../images/2015-09-22-MySQL_filter.png)
-
-  For more information and to sign up for the beta, visit our [product page on the CenturyLink Cloud website](https://www.ctl.io/dbaas/).
-
-* __WordPress Limited Beta.__ The WordPress Beta is continuing to evolve based on program participant feedback and production environment learnings. A few of the recent enhancements:
-    + __Integration with CenturyLink Cloud object storage buckets.__ Users can now link CenturyLink Cloud object storage buckets to a WordPress site during site creation. This helps with persistent storage of image uploads, and other media files.
-    + __SMTP Email Support.__ Each new WordPress site now has SMTP email configured automatically to assist with administrative emails such as password resets, new accounts, and other emails sent from WordPress.
-
-  For more information and to sign up for the beta, visit our [product page on the CenturyLink Cloud website](https://www.ctl.io/wordpress/).
-
-* __Intrusion Prevention Limited Beta.__ The Intrusion Prevention Beta service now supports additional Windows versions. Customers can now use IPS on the following Windows operating systems:
-  * Microsoft Windows Server 2008 Standard R2 (64-bit)
-  * Microsoft Windows Server 2008 Enterprise (64-bit)
-  * Microsoft Windows Server 2008 Enterprise R2 (64-bit)
-  * Microsoft Windows Server 2012 Datacenter (64-bit)
-  * Microsoft Windows Server 2008 Datacenter R2 (64-bit)
-  * Microsoft Windows Server 2012 Datacenter (64-bit)
-  * Microsoft Windows Server 2012 Datacenter R2 (64-bit)
-
-  For more information and to sign up for the beta, visit our [product page on the CenturyLink Cloud website](https://www.ctl.io/intrusion-prevention-service/).
-
-### Online Tools (1)
-
-* __Customers can now choose their "home" datacenter during free trials & online sign-up.__ New customers [signing up via the web](http://www.ctl.io/free-trial/) can now choose one of several public cloud sites as their "home" location. Previously, each new account was assigned the VA1 location by default.
 
 ### Ecosystem: Selected New Blueprints from the Bitnami Library (5)
 
