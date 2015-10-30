@@ -87,7 +87,13 @@
 
 ### Ecosystem (TODO)
 
+### Open Source Contributions
 
+* __CLC-Ansible Cloud Module clc_server_snapshot.__ Ansible module for managing server snapshots in CenturyLink Cloud - (http://docs.ansible.com/ansible/clc_server_snapshot_module.html)
+
+* __CLC-Ansible Cloud Module: clc_alert_policy.__ Ansible module to manage alert policies in CenturyLink Cloud - (http://docs.ansible.com/ansible/clc_alert_policy_module.html)
+
+* __CLC-Ansible Cloud Module: clc_aa_policy.__ Ansible module to manage anti affinity policies in CenturyLink cloud -  (http://docs.ansible.com/ansible/clc_aa_policy_module.html)
 
 ### Announcements
 
@@ -99,3 +105,8 @@
 
 ### Selected Bug Fixes (TODO)
 
+* __CLC-Ansible Cloud Module Fixes and Enhancements.__ Bug fixes and minor enhancements: 
+  - Added RETURN doc string for all modules
+  - Fixed few typos
+  - Fixed a bug with clc_group module to return the right group dict
+  - Added the capability to create/update/delete bare metal servers with clc_server module
