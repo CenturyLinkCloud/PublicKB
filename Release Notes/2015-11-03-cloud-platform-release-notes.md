@@ -23,15 +23,15 @@
   
   * __Scale AppFog apps from Control__. AppFog apps can be scaled up or down from the control portal. Select the amount of memory, number of instance, and see a cost estimate for the change.
   
-  ![Scale AppFog Apps from Control Portal](../images/2015-11-03_scale-appfog-apps-releasenotes.png)
+    ![Scale AppFog Apps from Control Portal](../images/2015-11-03_scale-appfog-apps-releasenotes.png)
 
   * __Delete AppFog apps from Control.__ Easily delete defunct AppFog applications from the control portal.
   
-  ![Delete AppFog Apps from Control Portal](../images/2015-11-03_delete-appfog-apps-releasenotes.png)
+    ![Delete AppFog Apps from Control Portal](../images/2015-11-03_delete-appfog-apps-releasenotes.png)
 
   * __List all of an apps routes.__ All of an AppFog space's routes can now be displayed in the control portal.
   
-  ![List App Routes in Control Portal](../images/2015-11-03_list-app-routes-releasenotes.png)
+    ![List App Routes in Control Portal](../images/2015-11-03_list-app-routes-releasenotes.png)
 
 * __Orchestrate.__ [Orchestrate](https://www.orchestrate.io/) made the following improvements:
   
@@ -41,17 +41,17 @@
   
 ### Early Adopter Program Updates (2)
 
-![Runner Logo](../images/2015-11-03_runner-logo-releasenotes.png)
+  ![Runner Logo](../images/2015-11-03_runner-logo-releasenotes.png)
 
 * __Runner Beta Launched.__ We are beta launching Runner on 11/2 to select customers.  
   
   CenturyLink is excited to announce the upcoming launch of Runner, a product that enables teams, developers, and engineers to quickly provision, interact, and modify their environment in not only the CenturyLink Platform, but third-party clouds, as well as on-premise. Runner brings together state-based and massive parallel job execution, with multi-cloud and multi-data center execution. All within one powerful engine.
 
-  ![Runner Logo](../images/2015-11-03_runner-flowchart-abstract-releasenotes.jpg)
+    ![Runner Logo](../images/2015-11-03_runner-flowchart-abstract-releasenotes.jpg)
 
   Our goal was to make automation easy and accessible to everyone. From the most advanced users to those new to the Cloud, Runner makes it easy to create jobs and execute them regardless of your environment or provider. It’s never been easier. Automation made simple.
 
-  ![Runner Logo](../images/2015-11-03_runner-diagram-web-releasenotes.jpg)
+    ![Runner Logo](../images/2015-11-03_runner-diagram-web-releasenotes.jpg)
 
   * __Runner Job Service.__ The Job Service is the primary component of the Runner product.  Users can create, modify, and execute jobs at anytime.  The Job Service accepts a payload that references a playbook to be used, whether that is using a public GitHub repository or private (GitHub credentials required), as well as other information like login or bearer token, environments, etc.
   
