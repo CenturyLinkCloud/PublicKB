@@ -41,13 +41,17 @@
   
 ### Early Adopter Program Updates (6)
 
-* __Runner Beta Launched.__ We are beta launching Runner on 11/2 to select customers.
-  
-  ![Runner Logo](../images/2015-11-03_runner-logo-releasenotes.png)
+![Runner Logo](../images/2015-11-03_runner-logo-releasenotes.png)
 
+* __Runner Beta Launched.__ We are beta launching Runner on 11/2 to select customers.  
+  
   CenturyLink is excited to announce the upcoming launch of Runner, a product that enables teams, developers, and engineers to quickly provision, interact, and modify their environment in not only the CenturyLink Platform, but third-party clouds, as well as on-premise. Runner brings together state-based and massive parallel job execution, with multi-cloud and multi-data center execution. All within one powerful engine.
 
+  ![Runner Logo](../images/2015-11-03_runner-flowchart-abstract-releasenotes.png)
+
   Our goal was to make automation easy and accessible to everyone. From the most advanced users to those new to the Cloud, Runner makes it easy to create jobs and execute them regardless of your environment or provider. It’s never been easier. Automation made simple.
+
+  ![Runner Logo](../images/2015-11-03_runner-diagram-web-releasenotes.png)
 
   * __Runner Job Service.__ The Job Service is the primary component of the Runner product.  Users can create, modify, and execute jobs at anytime.  The Job Service accepts a payload the references a playbook to be used, whether that is using a public GitHub repository or private (GitHub credentials required), as well as other information like login or bearer token, environments, etc.
   
