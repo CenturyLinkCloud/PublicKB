@@ -44,7 +44,7 @@
 
 * __Runner Beta Launched.__ The Runner service is now available in beta to select customers. Details:
 
-  ![Runner Logo](../images/2015-11-03_runner-logo-releasenotes.png)
+  <img src="../images/2015-11-03_runner-logo-releasenotes.png" width="40%" alt="Runner Logo"/>
 
   Runner enables teams, developers, and engineers to quickly provision, manage, and modify their environment in not only the CenturyLink Cloud Platform, but other cloud services, as well as on-premise deployments. Runner brings together state-based and massive parallel job execution, with multi-cloud and multi-data center support, all in a single interface.
 
