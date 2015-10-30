@@ -41,10 +41,10 @@
   
 ### Early Adopter Program Updates (2)
 
-  ![Runner Logo](../images/2015-11-03_runner-logo-releasenotes.png)
-
 * __Runner Beta Launched.__ We are beta launching Runner on 11/2 to select customers.  
   
+  <img src="../images/2015-11-03_runner-logo-releasenotes.png" style="width: 50%;"/>
+
   CenturyLink is excited to announce the upcoming launch of Runner, a product that enables teams, developers, and engineers to quickly provision, interact, and modify their environment in not only the CenturyLink Platform, but third-party clouds, as well as on-premise. Runner brings together state-based and massive parallel job execution, with multi-cloud and multi-data center execution. All within one powerful engine.
 
     ![Runner Logo](../images/2015-11-03_runner-flowchart-abstract-releasenotes.jpg)
