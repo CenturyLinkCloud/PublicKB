@@ -8,7 +8,18 @@
 
 ### New Features (TODO)
 
-* __AppFog.__ The [AppFog](https://www.ctl.io/appfog/) team has been busy this release and are delivering a few new capabilities in the Control Portal:
+* __Intrusion Prevention has been released for General Availability.__ The [Intrusion Prevention or IPS Product](https://www.ctl.io/intrusion-prevention-service/) is now available in all CenturyLink Cloud Data Centers, except for UC1.  
+
+  The product installs the Trend Micro host-based IPS Agent to protect your host against known and unknown vulnerabilities on operating systems and over 100 applications.  The agent is automatically updated with protection against new vulnerabilities and automatically scans your host for newly installed applications every 24 hours.  Details on installing IPS and configuring your event notification destinations are available in the [Security section of our knowledge base](https://www.ctl.io/knowledge-base/security/#1).
+
+  Highlights of the Product:
+  * Installation of the Trend Micro IPS Agent, protecting against known and unknown vulnerabilities on operating systems and over 100 applications.  
+  * Ability to install via blueprint to CenturyLink Cloud servers
+  * Ability to send event notifications via WebHook and Email
+  * Ability to send event data to a syslog server
+  * Data retention of 90 days for all Event Data
+
+* __AppFog.__ [AppFog](https://www.ctl.io/appfog/) has added capabilities available from the CLI and API into the Control Portal UI:
   
   * __Scale AppFog apps from Control__. AppFog apps can be scaled up or down from the control portal. Select the amount of memory, number of instance, and see a cost estimate for the change.
   
@@ -22,26 +33,31 @@
   
   ![List App Routes in Control Portal](../images/2015-11-03_list-app-routes-releasenotes.png)
 
+* __Orchestrate.__ [Orchestrate](https://www.orchestrate.io/) made the following improvements:
+  
+  * __Cross collection search.__. Orchestrate's search can now query across collections in the same application. Simply provide a search query at the root endpoint, for example: `api.orchestrate.io/v0?query=*`.
+
+  * __"api.orchestrate.io" now directs requests automagically to the correct data center.__ Clients no longer need to be configured to connect to the appropriate data center. The "api.orchestrate.io" is now intelligent and will route your request to your Orchestrate app.
+  
+[PLACEHOLDER for Runner]
+
 ### Enhancements (TODO)
 
-* __Cloud Platform.__ The CenturyLink Cloud platform updates include:
-  * __Subaccounts in the Service Catalog__. Administrators now have the ability to create and view sub-accounts using the CenturyLink Cloud Service Catalog.
-  * __Reboot Message Upon Storage Removal.__ Users that remove a storage volume from a cloud server will now see a reboot required" message.
-  * __Set Your Own Price: Default Price Sheet.__ Users with System Billing Manager privileges (or above) can now create a "default" price sheet that can then be inherited by all sub-accounts.
+* __Object Storage - Performance Enhancements & New Pricing.__ The object storage service in Canada now offers improved performance and reliability, while continuing to provide the familiar S3 interface. Existing customers will automatically receive these new capabilities. More details are available on the [Object Storage product page](https://www.ctl.io/object-storage/), including new pricing, and the [knowledge base](https://www.ctl.io/knowledge-base/object-storage).
 
+* __Added Year to Activity History.__ The Cloud Control Portal now shows the year for each event in Activity History.
 
-* __Windows 2008 R2 OS Template Updates.__ The following templates were updated with the latest vendor recommended patches. These enhancements add functions and make servers less susceptible to security vulnerabilities. The updates are live for both Windows 2008 R2 Standard and Windows 2008 R2 DataCenter.
+* __Additional Server Group APIs.__ The following Cloud Server Group APIs have been added to our public API documentation:
 
-* __New Blueprint - Cloudera (Unmanaged).__ Cloudera Express can now be deployed via Blueprints. This version is unmanaged, and designed for users interested proof of concept deployments.
+  * __Server Group Horizontal Autoscale Policy__. Retrieve and set the details of a horizontal autoscale policy associated with a group. 
+    - https://www.ctl.io/api-docs/v2/#groups-get-group-horizontal-autoscale-policy
+    - https://www.ctl.io/api-docs/v2/#groups-set-group-horizontal-autoscale-policy
 
-* __Bare Metal.__ Administrative passwords for bare metal servers can now be updated from the Control Portal.
-
-* __Managed MySQL Version Upgrade.__ The Managed MySQL version on CenturyLink Cloud has been updated to version 5.6.24.
-
-
-* __SafeHaven.__ Stability enhancements were introduced:
-    * The Storage Backing Device (SBD) now re-sends relevant metadata to the remote location during the Protection Group (PG) creation. This also improves the reliability of of ROW-COW PG creation.
-    * Stability has improved when connecting to iSCSI targets, as well as when adding iSCSI database items during the on-boarding of Ubuntu 12.
+  * __Server Group Scheduled Activities.__ Gets the scheduled activities associated with a group.
+    - https://www.ctl.io/api-docs/v2/#groups-get-group-scheduled-activities
+  
+  * __Server Group Defaults.__ Sets the default settings to be used when building servers in a group.
+    - https://www.ctl.io/api-docs/v2/#groups-set-group-defaults
 
 ### Early Adopter Program Updates (3)
 
