@@ -54,7 +54,7 @@
 
     ![Runner Web Diagram](../images/2015-11-03_runner-diagram-web-releasenotes.jpg)
 
-  * __Runner Job Service.__ The Job Service is the primary component of the Runner product.  Users can create, modify, and execute jobs at anytime.  The Job Service accepts a payload the references a playbook [CONSIDER EXPLAINING PLAYBOOK] to be used, whether that is using a public GitHub repository or private (GitHub credentials required), as well as other information like login or bearer token, environments, and so on.
+  * __Runner Job Service.__ The Job Service is the primary component of the Runner product.  Users can create, modify, and execute jobs at anytime.  The Job Service accepts a payload the references a playbook to be used, whether that is using a public GitHub repository or private (GitHub credentials required), as well as other information like login or bearer token, environments, and so on.
 
   * __Runner SSH Service.__ The SSH Service supports Key Pair management within CenturyLink Cloud. Users can create, retrieve, deploy, and import Key Pairs, as well a remove or "undeploy." The SSH Service can be used as a standalone feature as well.
 
