@@ -10,7 +10,7 @@
 
 * __Intrusion Prevention now Generally Availabile.__ The [Intrusion Prevention Service (IPS)](https://www.ctl.io/intrusion-prevention-service/) is now available in all CenturyLink Cloud Data Centers, except for UC1.  
 
-  The product installs a Trend Micro Agent on a host machine to protect that host against known and unknown vulnerabilities to operating systems and over 100 applications. The IPS agent automatically scans the host for newly installed applications every 24 hours [DOES IT DO ANYTHING IF A NEW APP IS DETECTED? I DONT THINK JUST SCANNING FOR A NEW STUFF IS ALL THAT VALUABLE]. Further, agent is automatically updated with patches to protect against new vulnerabilities [DO YOU KNOW HOW OFTEN ITS UPDATED?].  Details on installing IPS and configuring your event notification destinations are available in the [Security section of our knowledge base](https://www.ctl.io/knowledge-base/security/#1).
+  The product installs a Trend Micro Agent on a host machine to protect that host against known and unknown vulnerabilities to operating systems and over 100 applications. The IPS agent automatically scans the host for newly installed applications every 24 hours. Further, agent is automatically updated with patches to protect against new vulnerabilities. Details on installing IPS and configuring your event notification destinations are available in the [Security section of our knowledge base](https://www.ctl.io/knowledge-base/security/#1).
 
   Other Service Highlights:
   * Automated installation, via Blueprints servers in CenturyLink Cloud
