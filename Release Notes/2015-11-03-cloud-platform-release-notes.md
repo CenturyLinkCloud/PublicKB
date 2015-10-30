@@ -87,7 +87,7 @@
 
 ### Ecosystem (TODO)
 
-### Open Source Contributions
+### Open Source Contributions (3)
 
 * __CLC-Ansible Cloud Module clc_server_snapshot.__ Ansible module for managing server snapshots in CenturyLink Cloud - (http://docs.ansible.com/ansible/clc_server_snapshot_module.html)
 
@@ -95,7 +95,7 @@
 
 * __CLC-Ansible Cloud Module: clc_aa_policy.__ Ansible module to manage anti affinity policies in CenturyLink cloud -  (http://docs.ansible.com/ansible/clc_aa_policy_module.html)
 
-### Announcements
+### Announcements (1)
 
 * __Retirement of IPMonitor Service.__ IPMonitor is a legacy tool used to monitor legacy Tier 3 managed servers. This service will be shut down on December 1, 2015 and servers will no longer be monitored with this service.
 
@@ -103,7 +103,7 @@
 
   Additional options include managed servers (https://www.ctl.io/knowledge-base/managed-services/managed-operating-system-frequently-asked-questions/) or any number of our powerful ecosystem options (https://www.ctl.io/knowledge-base/ecosystem-partners/ecosystem-partner-list/#management-and-monitoring).
 
-### Selected Bug Fixes (TODO)
+### Selected Bug Fixes (1)
 
 * __CLC-Ansible Cloud Module Fixes and Enhancements.__ Bug fixes and minor enhancements: 
   - Added RETURN doc string for all modules
