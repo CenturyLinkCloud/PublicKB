@@ -75,6 +75,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Pootle](../Ecosystem Partners/Marketplace Guides/getting-started-with-pootle-blueprint.md)   	| Blueprint    | Translation Management   |
 | [Railo](../Ecosystem Partners/Marketplace Guides/getting-started-with-railo-blueprint.md)   	| Blueprint    | CFML   |
 | [ReviewBoard](../Ecosystem Partners/Marketplace Guides/getting-started-with-reviewboard-blueprint.md)   	| Blueprint    | Code Collaboration Suite   |
+| [Rundeck](../Ecosystem Partners/Marketplace Guides/getting-started-with-rundeck-blueprint.md)   	| Blueprint    | Runbook automation   |
 | [Squash](../Ecosystem Partners/Marketplace Guides/getting-started-with-squash-blueprint.md)   	| Blueprint    | Code Analysis    |
 | [TestLink](../Ecosystem Partners/Marketplace Guides/getting-started-with-testlink-blueprint.md)   	| Blueprint    | Test suite planning    |
 | [Trac](../Ecosystem Partners/Marketplace Guides/getting-started-with-trac-blueprint.md)   	| Blueprint    | Code Collaboration Suite   |
