@@ -48,7 +48,7 @@
 
   Runner enables teams, developers, and engineers to quickly provision, manage, and modify their environment in not only the CenturyLink Cloud Platform, but other cloud services, as well as on-premise deployments. Runner brings together state-based and massive parallel job execution, with multi-cloud and multi-data center support, all in a single interface.
 
-    ![Runner Design Flowchart](../images/2015-11-03_runner-flowchart-abstract-releasenotes.jpg)
+    <img src="../images/2015-11-03_runner-flowchart-abstract-releasenotes.jpg" width="40%" alt="Runner Design Flowchart"/>
 
   Our goal was to make automation easy and accessible to everyone. From the most advanced users to those new to cloud computing, Runner makes it easy to create jobs and execute them regardless of your environment or provider.
 
