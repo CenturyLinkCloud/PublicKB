@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-### New Features (6)
+### New Features (3)
 
 * __Intrusion Prevention has been released for General Availability.__ The [Intrusion Prevention or IPS Product](https://www.ctl.io/intrusion-prevention-service/) is now available in all CenturyLink Cloud Data Centers, except for UC1.  
 
@@ -39,7 +39,7 @@
 
   * __"api.orchestrate.io" now directs requests automagically to the correct data center.__ Clients no longer need to be configured to connect to the appropriate data center. The "api.orchestrate.io" is now intelligent and will route your request to your Orchestrate app.
   
-### Early Adopter Program Updates (6)
+### Early Adopter Program Updates (2)
 
 ![Runner Logo](../images/2015-11-03_runner-logo-releasenotes.png)
 
@@ -67,7 +67,7 @@
 
   *Note: AppFog users will continue to select pre-defined plans through the AppFog Add-On Engine marketplace.*
 
-### Enhancements (5)
+### Enhancements (3)
 
 * __Object Storage - Performance Enhancements & New Pricing.__ The object storage service in Canada now offers improved performance and reliability, while continuing to provide the familiar S3 interface. Existing customers will automatically receive these new capabilities. More details are available on the [Object Storage product page](https://www.ctl.io/object-storage/), including new pricing, and the [knowledge base](https://www.ctl.io/knowledge-base/object-storage).
 
