@@ -185,7 +185,7 @@ The costs associated with this Blueprint deployment are for the CenturyLink Clou
 * [https://www.cloudfuze.com/blog/](https://www.cloudfuze.com/blog/)
 
 #### My deploy failed, what next ?
-* Please Contact [support@cloudfuze.com](support@cloudfuze.com). And send the Blueprint build logs and the cloudfuze installation logs at location “/var/log/cloudfuze/” on the server
+* Please Contact [support@cloudfuze.com](mailto:support@cloudfuze.com). And send the Blueprint build logs and the cloudfuze installation logs at location “/var/log/cloudfuze/” on the server
 
 #### Who should I contact for support?
 * For issues related to deploying the CloudFuze Blueprint on CenturyLink Cloud, please contact [support@CloudFuze.com](mailto:support@CloudFuze.com) or via telephone: (888) 600-6996
