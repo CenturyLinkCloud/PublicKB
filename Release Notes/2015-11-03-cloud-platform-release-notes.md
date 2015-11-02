@@ -10,15 +10,13 @@
 
 * __Intrusion Prevention has been released for General Availability.__ The [Intrusion Prevention or IPS Product](https://www.ctl.io/intrusion-prevention-service/) is now available in all CenturyLink Cloud Data Centers, except for UC1.  
 
-  The product installs the Trend Micro host-based IPS Agent to protect your host against known and unknown vulnerabilities on operating systems and over 100 applications.  The agent is automatically updated with protection against new vulnerabilities as Trend Micro releases them.  It also automatically scans your host for newly installed applications every 24 hours, and if any are found, the protection policy is updated accordingly.  Details on installing IPS and configuring your event notification destinations are available in the [knowledge base](https://www.ctl.io/knowledge-base/security/#1).
+  The product installs a Trend Micro Agent on a host machine to protect that host against known and unknown vulnerabilities to operating systems and over 100 applications. The IPS agent automatically scans the host for newly installed applications every 24 hours, and if any are found, the protection policy is updated accordingly. The agent is also automatically updated with new Trend Micro patches to protect against new vulnerabilities. Details on installing IPS and configuring your event notification destinations are available in the Security section of our [knowledge base](https://www.ctl.io/knowledge-base/security/#1).
 
-  Highlights of the Product:
-  * Installation of the Trend Micro IPS Agent, protecting against known and unknown vulnerabilities on operating systems and over 100 applications.  
-  * Automatic policy updates from newly release vulnerability protection and newly found applications on the host
-  * Ability to install via blueprint to CenturyLink Cloud servers
-  * Ability to send event notifications via WebHook and Email
-  * Ability to send event data to a syslog server
-  * Data retention of 90 days for all Event Data
+  Other Service Highlights:
+  * Installation via Blueprints 
+  * Supports event notifications via WebHook and Email
+  * Event data captured and forwarded to a syslog server 
+  * 90-day data retention of all event data, to help audits and compliance
 
 * __AppFog Control Portal UI Enhancements.__ [AppFog](https://www.ctl.io/appfog/) Developers can now perform common actions in the Control Portal UI:
 
