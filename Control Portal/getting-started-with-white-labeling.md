@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-##Getting Started with White Labeling
+## Getting Started with White Labeling
 
 CenturyLink Cloud includes several features that allow organizations to replace specific CenturyLink branding elements with their own brand. This article covers the most popular elements of white-labeling, including:
 
@@ -20,11 +20,11 @@ First, navigate to "Account" - > "Settings," then click "Site Branding."
 
 ![Settings Link in CenturyLink Control Portal](../images/account-settings-site-branding.png)
 
-###Updating the Site Name
+### Updating the Site Name
 
-Click this section, and replace "Control Portal" with any name - this will usually be the name of your company or division. Make sure to click "Save" at the bottom of the page. After the change takes effect, users will see this name in the header as well as on the login page of your unique [subdomain that features an account alias](../release notes/2015-03-05-cloud-platform-release-notes.md).
+Click this section, and replace "Control Portal" with any name - this will usually be the name of your company or division. Make sure to click "Save" at the bottom of the page. After the change takes effect, users will see this name in the header as well as on the login page of your unique [subdomain that features an account alias](../Release Notes/2015-03-05-cloud-platform-release-notes.md).
 
-###Customize the Control Portal Logo
+### Customize the Control Portal Logo
 
 This logo appears on the header of every page in the Control Portal. To change it:
 
@@ -34,9 +34,9 @@ This logo appears on the header of every page in the Control Portal. To change i
   * For best results, select a logo that's on a transparent background. Alternatively, you can adjust the logo background and the header background to be the same color.
 2. Select the "save" button at the bottom of the page to apply the logo change. It may take a few minutes before your changes to take effect while your web browser's cache clears.
 
-###Customize the 'Sign In Page' Logo
+### Customize the 'Sign In Page' Logo
 
-This logo appears on the sign in page to the Control Portal for accounts using a [subdomain that features an account alias](../release notes/2015-03-05-cloud-platform-release-notes.md).
+This logo appears on the sign in page to the Control Portal for accounts using a [subdomain that features an account alias](../Release Notes/2015-03-05-cloud-platform-release-notes.md).
 
 1. Select the "change" button and choose a local file on your computer. The chosen file must be:
   * PNG, GIF or JPG format.
@@ -45,7 +45,7 @@ This logo appears on the sign in page to the Control Portal for accounts using a
 
 ![Customized Logos in the Control Portal](../images/custom-logos-in-control.png)
 
-###Customize the Shortcut (or 'Favicon') Icon
+### Customize the Shortcut (or 'Favicon') Icon
 
 The shortcut icon, or 'favicon', appears in some web browsers on the address bar, tabs or bookmarks.
 
@@ -55,7 +55,7 @@ The shortcut icon, or 'favicon', appears in some web browsers on the address bar
   * Use transparency (with ICO/PNG) to let the background color of the browser navigation window to show through.
 2. Select the "save" button at the bottom of the page to apply the logo change. Changes will take a few moments to appear.
 
-###Customize the iOS Screen Icon
+### Customize the iOS Screen Icon
 
 This icon appears when you add a home screen icon for the Control Portal on iOS device. To change it from the default:
 
@@ -80,7 +80,7 @@ Here's a preview of what the newly branded portal looks like with the settings a
 ![Customized Control Portal](../images/customized-summary.png)
 
 
-###Using Custom Domains
+### Using Custom Domains
 
 A custom subdomain is automatically available for each account alias, in the format of <code>https://alias.cloudportal.io</code>. A customized "Sign In Page" logo, if specified, will appear on this URL. Nothing is required for this custom domain to be available - it should just be promoted as the flagship login page where appropriate.
 

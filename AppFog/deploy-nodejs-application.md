@@ -7,15 +7,9 @@
   "contentIsHTML": false
 }}}
 
-### IMPORTANT NOTE
-
-AppFog v2, the upcoming CenturyLink Cloud integrated public Platform-as-a-Service (PaaS), is not available to all customers at this time. We are current in a Limited Beta program with specific customers. AppFog v2 will be available in Open Beta later in 2015.
-
-The current AppFog service at [http://www.appfog.com/](http://www.appfog.com/) is still available and will continue to be in service even after AppFog v2 is made generally available. Please feel free to sign up for the current AppFog service [here](https://console.appfog.com/signup).
-
 ### Audience
 
-Currently, this article is to support customers in the Limited Beta program.
+Application developers
 
 ### Overview
 
@@ -44,7 +38,7 @@ In the application's package.json, there is an ability to [set the "scripts"](ht
 
 Now when you run `npm start` in the top-level application directory it will run `node app.js`. The Node.js buildpack automatically tries this default defined command when staging your application into AppFog.
 
-An alternative is the send the command that AppFog should execute to start your application [using the command line](http://docs.cloudfoundry.org/devguide/deploy-apps/app-startup.html) or [Cloud Foundry manifests](http://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html) approaches.
+An alternative is to send the command that AppFog should execute to start your application [using the command line](http://docs.cloudfoundry.org/devguide/deploy-apps/app-startup.html) or [Cloud Foundry manifests](http://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html) approaches.
 
 #### Start via Command Line
 

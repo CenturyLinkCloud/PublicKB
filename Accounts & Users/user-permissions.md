@@ -10,7 +10,7 @@ Control Portal permissions are controlled by adding users to one or more roles. 
 
 The permissions settings page includes a list of roles and their respective descriptions (shown below). For a complete matrix of roles and the specific functions they can perform, reference the [Role Permissions Matrix](../Accounts & Users/role-permissions-matrix.md) for details.
 
-###Steps
+### Steps
 
 To edit permissions go to Control Portal &gt; Account &gt; Permissions.
 

@@ -14,9 +14,9 @@
 
 ### Reference Material
 
-+ [Understanding VM Deployment Options &amp; Power States](https://www.centurylinkcloud.com/knowledge-base/servers/understanding-vm-deployment-options-and-power-states/)
-+ [Creating a Scheduled Task](https://www.centurylinkcloud.com/knowledge-base/servers/creating-a-scheduled-task/)
-+ [Creating &amp; Applying Autoscale Policies](https://www.centurylinkcloud.com/knowledge-base/autoscale/creating-and-applying-autoscale-policies/)
++ [Understanding VM Deployment Options &amp; Power States](https://www.ctl.io/knowledge-base/servers/understanding-vm-deployment-options-and-power-states/)
++ [Creating a Scheduled Task](https://www.ctl.io/knowledge-base/servers/creating-a-scheduled-task/)
++ [Creating &amp; Applying Autoscale Policies](https://www.ctl.io/knowledge-base/autoscale/creating-and-applying-autoscale-policies/)
 
 ### Pausing
 Pausing is the act of suspending a virtual machine; virtual machines in a paused state are not billed for compute (RAM,CPU) usage- only storage consumption and licensing costs. Individual machines or entire groups can easily be paused through our Control
@@ -26,7 +26,7 @@ Portal. To do so, simply select the appropriate group and use the "pause" button
 
 Once you have selected the pause button, a selection box will appear which will allow you to choose one or all of the servers to be paused. Simple select the servers you wish to pause and select the "pause" button.</p>
 
-###Archiving
+### Archiving
 Pausing servers is an effective way to temporarily reduce server costs; however, certain servers may no longer be needed in production but are needed either for reference or are planned for production usage at a later date. These servers can be "Archived" which suspends the virtual machine, and moves the server to a significantly cheaper storage tier. In the archive state, a customer pays only for the archival storage consumed by the machine, at a reduced rate- no compute or licensing costs are levied.
 
 Despite being archived, it is still an easily-executed and timely task to bring servers out of an archival state and back into production. To archive a server, simply select the "Archive" option from the actions menu. Note that selecting "Archive" on a group will archive the entire group of servers, though there will be a prompt to ensure this is the desired action before execution.
@@ -50,7 +50,7 @@ Autoscale makes it possible for a server or group of servers to self-regulate an
 
 Instead of requiring system administrators to closely monitor and scale servers based on changes in utilization, you can create policies that add and remove capacity automatically. This ensures that you don't have unnecessary CPUs allocated or additional servers powered on unless you need them.
 
-###Time to Live
+### Time to Live
 When creating a new server, the CenturyLink Cloud Control user interface includes a quick and easy way to put a time limit on the duration of the server's existence.  By setting the "Time to Live" policy, users can be assured that their server will not accrue charges beyond a specific length of time.  This feature is especially helpful during demonstrations and illustrations of the platform's capability.
 
 ![](../images/time_to_live.png)

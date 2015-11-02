@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Pivotal HD + HAWQ - Blueprint",
-  "date": "5-27-2015",
+  "date": "8-3-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -10,17 +10,17 @@
 
 ### Overview
 
-After reading this article, the reader should feel comfortable deploying the Pivotal HD and HAWQyGemFire in-memory database on CenturyLink Cloud.
+After reading this article, the reader should feel comfortable deploying the Pivotal HD and HAWQ on CenturyLink Cloud.
 
 ### Partner Profile
 
-<img src="/knowledge-base/images/pivotal_hdhawq/product-pivotal-hd.png" style="border:0;float:right;max-width: 150px;">
+<img src="../../images/pivotal_hdhawq/product-pivotal-hd.png" style="border:0;float:right;max-width: 150px;">
 
 Pivotal HD + HAWQ – “World’s Most Advanced Enterprise SQL on Hadoop Analytic Engine on the Leading Standards-Based Hadoop Distribution For Advanced Analytics”
 
 http://pivotal.io/big-data/pivotal-hawq
 
-#####Customer Support
+##### Customer Support
 
 |Sales Contact   	|
 |:-	|
@@ -52,7 +52,7 @@ You can achieve a single-button deployment of a new cluster, including an Ambari
 
   Determine whether you will be building a test cluster with small nodes or a production cluster whose nodes are configured with increased CPU and RAM.
 
-  <img src="/knowledge-base/images/pivotal_hdhawq/cluster_blueprint_tiles.png" style="border:0;max-width:250px;">
+  <img src="../../images/pivotal_hdhawq/cluster_blueprint_tiles.png" style="border:0;max-width:250px;">
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "Pivotal HAWQ" in the keyword search on the right side of the page.
 
@@ -60,7 +60,7 @@ You can achieve a single-button deployment of a new cluster, including an Ambari
 
 3. **Set Required parameters.**
 
-  <img src="/knowledge-base/images/pivotal_hdhawq/deploy_cluster_parameters.png" style="max-width:450px;">
+  <img src="../../images/pivotal_hdhawq/deploy_cluster_parameters.png" style="max-width:450px;">
 
   * **EULA** - Click to accept the software end user license agreement
   * **Cluster ID ** - Set unique identifier for all hosts in this Greenplum cluster.  This is used to help other hosts find and join into the cluster
@@ -87,19 +87,19 @@ You can achieve a single-button deployment of a new cluster, including an Ambari
 
   This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within 50 to 75 minutes.  Take note that the Blueprint status may indicate deployment has completed but there will be a several minute delay until the cluster itself is ready for use as some backup install tasks may still be in process.
 
-  <img src="/knowledge-base/images/pivotal_hdhawq/ambari_install_progress.png" style="width:70%;">
+  <img src="../../images/pivotal_hdhawq/ambari_install_progress.png" style="width:70%;">
 
 7. **Deployment Complete**
 
   Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.  If you do not receive an email like the one shown below your cluster may have had a deployment error - review the *Blueprint Build Log* to for error messages.
 
-  <img src="/knowledge-base/images/pivotal_hdhawq/deploy_cluster_complete_email.png" style="border:0;width:70%;">
+  <img src="../../images/pivotal_hdhawq/deploy_cluster_complete_email.png" style="border:0;width:70%;">
 
 8. **Ambari Dashboard**
 
   Access the Ambari dashboard via port 8080 on your Ambari server.  Authenticate using the default credentials admin/admin.
 
-  <img src="/knowledge-base/images/pivotal_hdhawq/ambari_dashboard.png" style="border:0;">
+  <img src="../../images/pivotal_hdhawq/ambari_dashboard.png" style="border:0;">
 
 8. **Demo Application** (optional)
 
@@ -184,8 +184,8 @@ You can achieve a single-button deployment of a new cluster, including an Ambari
 
   Servers are built using private IPs only with access with client or IPSEC VPN.  For access from the Internet at large add a public IP to your master server.
 
-  <a href="../../../network/how-to-add-public-ip-to-virtual-machine/">
-    <img style="border:0;width:50px;vertical-align:middle;" src="/knowledge-base/images/shared_assets/fw_icon.png">
+  <a href="../../Network/how-to-add-public-ip-to-virtual-machine.md">
+    <img style="border:0;width:50px;vertical-align:middle;" src="../../images/shared_assets/fw_icon.png">
     Adding a public IP to your virtual machine
   </a>
 
@@ -203,7 +203,7 @@ After deploying this Blueprint, you may secure entitlements to the technology us
 
 **Where do I obtain my license?**
 
-Contact your Pivotal account manager or inquire via email to [centurylinkcloud-sales@pivotal.io](mailto:centurylinkcloud-sales@pivotal.io)
+Contact your Pivotal account manager or inquire via email to [sales-clc@pivotal.io](mailto:sales-clc@pivotal.io)
 
 **Who should I contact for support?**
 

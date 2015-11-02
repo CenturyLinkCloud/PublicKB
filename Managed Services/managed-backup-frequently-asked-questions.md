@@ -1,6 +1,6 @@
 {{{
   "title": "Managed Backup - Frequently Asked Questions",
-  "date": "6-12-2015",
+  "date": "8-4-2015",
   "author": "Bryan Friedman",
   "attachments": [
     {
@@ -19,12 +19,12 @@ A: Managed Backup makes CenturyLink's backup solution available in the CenturyLi
 
 **Q: How do I create a VM that uses Managed Backup?**
 
-A: From the Control Portal menu, select “Create Server.” You will then be prompted to select the data center, group membership, and other VM properties. Select a data center that supports Managed Backup (an updated list is [available here](//www.centurylinkcloud.com/managed-services/backup/)), and then click the “managed server” element to “Yes.” Once this is selected, you will see the option for "managed backup" appear. Set this to yes, and the operating system drop-down menu will then automatically refresh to show available options. Choose your version, and then proceed with the remainder of the server creation process. You may also [review a more detailed walkthrough of enabling (and disabling) Managed Backup on a server](../Managed Services/enabling-and-disabling-managed-backup.md).
+A: From the Control Portal menu, select “Create Server.” You will then be prompted to select the data center, group membership, and other VM properties. Select a data center that supports Managed Backup (an updated list is [available here](//www.ctl.io/managed-services/backup/)), and then click the “managed server” element to “Yes.” Once this is selected, you will see the option for "managed backup" appear. Set this to yes, and the operating system drop-down menu will then automatically refresh to show available options. Choose your version, and then proceed with the remainder of the server creation process. You may also [review a more detailed walkthrough of enabling (and disabling) Managed Backup on a server](../Managed Services/enabling-and-disabling-managed-backup.md).
 
 **Q: What if I don’t see an option for Managed Backup in the CenturyLink Cloud Control Panel?**
 
 A: There could be a few causes:
-* Be sure you are creating the server in a data center that supports the managed backup service (an updated list is [available here](//www.centurylinkcloud.com/managed-services/backup/)).
+* Be sure you are creating the server in a data center that supports the managed backup service (an updated list is [available here](//www.ctl.io/managed-services/backup/)).
 * It is possible your company has not yet executed a Master Services Agreement (MSA) with CenturyLink Technology Solutions. To obtain a MSA – or if you believe you should already have one in place – please contact a CenturyLink Sales Representative toll free at:
     * United States: 1-855-287-2541
     * Canada: 1-877-387-3764
@@ -35,7 +35,7 @@ A: There could be a few causes:
 
 **Q: What's the difference between Managed Backup and Premium Storage?**
 
-A: Both options provide a two-week retention period and offsite backups. But Managed Backup also offers the ability for customers to work with the managed backup support team to customize retention policies and backup schedules. There are options for including – or excluding - specific files/folders from a backup policy. Premium Storage simply provides nightly VM backups, making it difficult to restore selected files or folders, while Managed Backup performs full and incremental backups on a nightly basis and can be turned on and off as needed. Managed Backup also encrypts the backup data at rest.
+A: Both options provide a two-week retention period and offsite backups. But Managed Backup also offers the ability for customers to work with the managed backup support team to customize retention policies and backup schedules. There are options for including – or excluding - specific files/folders from a backup policy. Premium Storage simply provides nightly VM backups, making it difficult to restore selected files or folders, while Managed Backup performs full and incremental backups on a nightly basis and can be turned on and off as needed. Managed Backup also encrypts the backup data at rest. Encryption is provided on the backup infrastructure servers after a backup has been performed; the encryption key in only avalible to our operations staff and the backup systems.
 
 Users are likely best served by choosing *either* Managed Backup *or* Premium Storage. For Hyperscale servers, Managed Backup is recommended.
 
@@ -103,7 +103,7 @@ A: The Master server in the DPB infrastructure is already configured to support 
 
 **Q: As a customer can I request on-demand backups out of the normal scheduled jobs?**
 
-A: This is possible via a request to Support.  The backup will have the standard product feature of 2 weeks retention at the local data center and a simultaneous copy at the secondary data center.
+A: This is possible through a request to the Client Service Center at 1-888-638-6771.  The backup will have the standard product feature of 2 weeks retention at the local data center and a simultaneous copy at the secondary data center.
 
 **Q: Is hot backup offered in Managed Backup for (a) databases and for (b) Exchange? What options/suggestions are available?**
 
@@ -119,6 +119,9 @@ A: The table below provides the offsite vault locations:
 
 **CenturyLink Cloud Location**|**Offsite Vault Location**
 ------------------------------|--------------------------
-US West (Santa Clara) - UC1|[CenturyLink CH3](//www.centurylinktechnology.com/data-centers/north-america/chicago)
-US East (Sterling) - VA1|[CenturyLink DL2](//www.centurylinktechnology.com/data-centers/north-america/dallas)
-Great Britain (Slough) - GB3|[CenturyLink LO6](//www.centurylinktechnology.com/data-centers/europe/london)
+US West (Santa Clara) - UC1|[CenturyLink CH3](//www.centurylink.com/business/enterprise/colocation/data-centers/united-states/illinois/chicago.html)
+US East (Sterling) - VA1|[CenturyLink DL2](//www.centurylink.com/business/enterprise/colocation/data-centers/united-states/texas/dallas.html)
+Great Britain (Slough) - GB3|[CenturyLink LO6](//www.centurylink.com/business/enterprise/colocation/data-centers/united-kingdom/london.html)
+APAC (Singapore) - SG1|[CenturyLink SG8](//www.centurylink.com/business/enterprise/colocation/data-centers/singapore.html)
+US Central (Chicago) - IL1|[CenturyLink DL2](//www.centurylink.com/business/enterprise/colocation/data-centers/united-states/texas/dallas.html)
+Canada (Toronto - Mississauga) - CA3|[CenturyLink TR3](//www.centurylink.com/business/enterprise/resources/products/tr3-toronto-canada.html)

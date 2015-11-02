@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-###Table of Contents
+### Table of Contents
 
 * [Overview](#overview)
 * [Audience](#audience)
@@ -71,8 +71,8 @@ For any method you choose, the following table will assist you with data needed 
 
 **Operating Systems** | **Blueprint Name** | **Script Package Name** | **Package ID**
  --- | --- | --- | ---
- Windows 2012 and 2012R2 | Windows Update Scripts | Windows Update Scripts | 94bd395f-9b54-4693-94ae-4f3aa93fc239
- Red Hat Enterprise Linux 5, 6, and 7 OR CentOS 5 and 6 | Yum Update Script | Yum Update | 5d743f04-a9ce-4174-a7c8-52df93c47c08
+ Windows 2012 and 2012R2 | Auto Patching Windows 2012 | Auto Patching Windows 2012 | b229535c-a313-4a31-baf8-6aa71ff4b9ed
+ Red Hat Enterprise Linux 5, 6, and 7 OR CentOS 5 and 6 | Auto Patching RHEL or CentOS | Auto Patching RHEL/CentOS | 5d743f04-a9ce-4174-a7c8-52df93c47c08
 
 
 ### Option 1: Blueprint
@@ -89,9 +89,9 @@ The process initiated by the script package may include several, automated reboo
 
 Locate and select the appropriate Blueprint within the Blueprint Library. See the table above for the name of the Blueprint.
 
-![Windows Update Scripts Blueprint Image](../images/Patching/PatchaaS_WindowsUpdateHoverProd.png)
+![Auto Patching Windows 2012 Blueprint Image](../images/Patching/PatchaaS_WindowsUpdateHoverProd.png)
 
-![YUM Update Script Blueprint Image](../images/Patching/PatchaaS_YumUpdateBP.png)
+![Auto Patching RHEL or CentOS Blueprint Image](../images/Patching/PatchaaS_YumUpdateBP.png)
 
 
 
@@ -128,7 +128,7 @@ The process initiated by the script package may include several, automated reboo
 
 2\. Execute Action
 
-Navigate to the group and select "execute package" from the [action drop-down](../servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) . The name of the package to search for is in the table above.
+Navigate to the group and select "execute package" from the [action drop-down](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) . The name of the package to search for is in the table above.
 
 
 ![Patching_GroupActionWindows](../images/Patching/PatchaaS_GroupAction.png)
@@ -156,7 +156,7 @@ The process initiated by the script package may include several, automated reboo
 
 2\. Execute Package
 
-Please reference [API Documentation about authentication](https://www.centurylinkcloud.com/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests. Review the [Execute Package](https://www.centurylinkcloud.com/api-docs/v2/#server-actions-execute-package) to determine how to proceed. There are currently no parameters to add. Below is a JSON example:
+Please reference [API Documentation about authentication](https://www.ctl.io/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests. Review the [Execute Package](https://www.ctl.io/api-docs/v2/#server-actions-execute-package) to determine how to proceed. There are currently no parameters to add. Below is a JSON example:
 
 
   ```
@@ -190,7 +190,7 @@ A history of all executions against your server is available for your review. Th
 
 #### Authentication
 
-Reference [API Documentation about authentication](https://www.centurylinkcloud.com/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests.
+Reference [API Documentation about authentication](https://www.ctl.io/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests.
 
 ### URL
 
@@ -236,7 +236,7 @@ Details on all attempted patches for a single execution against a server are ava
 
 #### Authentication
 
-Reference [API Documentation about authentication](https://www.centurylinkcloud.com/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests.
+Reference [API Documentation about authentication](https://www.ctl.io/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests.
 
 ### URL
 

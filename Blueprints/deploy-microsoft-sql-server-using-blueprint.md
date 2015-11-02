@@ -18,7 +18,7 @@ CenturyLink Cloud customers can procure and deploy Microsoft SQL Server licensin
     * Windows 2008 R2 Enterprise 64-bit
     * Windows 2008 R2 Datacenter 64-bit
     * Windows 2012 Datacenter 64-bit
-    * Windows 2012 R2 Data Center 64-bit
+    * Windows 2012 R2 Datacenter 64-bit
 * ~15 GB Free Storage on C:\
 * The Supported SQL Server Editions via blueprint are as follows:
     * SQL Server 2008 R2 Web Edition
@@ -37,16 +37,16 @@ CenturyLink Cloud customers can procure and deploy Microsoft SQL Server licensin
 
 ### Exceptions
 
-This KB does not apply to [Managed Microsoft SQL Customers.](//www.centurylinkcloud.com/managed-services/ms-sql)
+This KB does not apply to [Managed Microsoft SQL Customers.](//www.ctl.io/managed-services/ms-sql)
 
 ### General Notes
 
 The following are quick tips/notes based on past experiences with customers leveraging this blueprint
 
 * It is not possible at the current time to install SQL to a drive other than C:\ via blueprint. Customers can modify the SQL database, tempdb, log locations post install to other volumes using SQL tools
-* The fee's for Microsoft SQL server will be applied automatically to the customers invoice when using the public blueprint. These fee's are available in the [Pricing Catalog](//www.centurylinkcloud.com/pricing). If you are unsure what these fee's are please contact your account manager.
+* The fee's for Microsoft SQL server will be applied automatically to the customers invoice when using the public blueprint. These fee's are available in the [Pricing Catalog](//www.ctl.io/pricing). If you are unsure what these fee's are please contact your account manager.
 * Licensing fee's are adjusted based on number of vCPU allocated to a virtual machine. By using tools like Autoscale, customers billing will be modified as vCPU configurations change.
-* Customers can **add features** to an existing SQL instance or **add new** SQL instances by running the blueprint multiple times on the same server.  
+* Customers can **add features** to an existing SQL instance or **add new** SQL instances by running the blueprint multiple times on the same server.
 
 ### Installing Microsoft SQL Server using Group Tasks
 

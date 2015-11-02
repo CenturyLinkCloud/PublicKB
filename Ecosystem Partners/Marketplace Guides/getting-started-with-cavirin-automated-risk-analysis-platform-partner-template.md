@@ -8,7 +8,7 @@
 
 ![logo](../../images/Ecosystem-Cavirin-ARAP_logo_full-color_200px.png)
 
-###Partner Profile
+### Partner Profile
 Cavirin - Delivering Continuous Audit and Operational Compliance to the Cloud
 
 For additional information about the company please visit [http://www.cavirin.com](http://www.cavirin.com)
@@ -46,26 +46,26 @@ Customers can access the Cavirin Help Center by going to [https://support.caviri
 
 This deployment process for Partner Templates currently requires manual interaction via the Service Task process, but will be further automated in future releases of the CenturyLink Cloud Platform.
 
-If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@centurylinkcloud.com](mailto:features@centurylinkcloud.com)
+If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@ctl.io](mailto:features@ctl.io)
 
 ### Prerequisite
 1.  Access to the CenturyLink Cloud platform as an authorized user.
 2.  Identify a Network VLAN you want the Cavirin partner template to reside on
 3.  A Cavirin ARAP License.  You will need to send this to CenturyLink Support at the time of deployment.
-4.	The Cavirin ARAP server will utilize the following resources.  Note: larger environments may require additional processors to allow for speed of discovery.
-  *	8GB RAM
-  *	2 Processors
-  *	100GB disk space (can be thin provisioned)
-  *	line of sight network access to devices in scope
-5.	The following protocols are used for discovery
+4.    The Cavirin ARAP server will utilize the following resources.  Note: larger environments may require additional processors to allow for speed of discovery.
+  *    8GB RAM
+  *    2 Processors
+  *    100GB disk space (can be thin provisioned)
+  *    line of sight network access to devices in scope
+5.    The following protocols are used for discovery
   * ICMP
   * SNMP
   * SSH
-  * WMI / Windows Remote Management (WinRM) 
-6.	To access Windows machines you will need Administrator credentials.
-7.	To access Linux machines you will need root level credentials, a PEM key file can also be used for access.
-8.	If you would like to access systems outside the immediate network then there must routable access to that network either through a router or vpn.
-9.	Please refer to [https://support.cavirin.com](https://support.cavirin.com) to find any additional prerequisites required for your deployment
+  * WMI / Windows Remote Management (WinRM)
+6.    To access Windows machines you will need Administrator credentials.
+7.    To access Linux machines you will need root level credentials, a PEM key file can also be used for access.
+8.    If you would like to access systems outside the immediate network then there must routable access to that network either through a router or vpn.
+9.    Please refer to [https://support.cavirin.com](https://support.cavirin.com) to find any additional prerequisites required for your deployment
 
 ### Postrequisite
 - If you want to access your Cavirin partner template over the internet, please perform the following tasks once your VM has been deployed to your account:
@@ -75,7 +75,7 @@ If you are interested in seeing this type of Partner Template deployment as an a
 2. If required, [allow incoming traffic for the admin port](../../Network/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Servers Public IP in Control Portal.  Warning: Please make sure your firewall rules are properly configured to only allow specific source traffic.  If you do not configure source traffic rules you risk exposing your VM to the entire internet.  Note: When accessing your VM for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
 
 ### Detailed Steps to Deploy Cavirin Automated Risk Anaylysis Platform
-The Cavirin partner template deploys in a virtual appliance model, as a CenturyLink Cloud *Partner Template*.  Follow these step by step instructions to deploy a Cavirin partner template in to your CenturyLink Cloud account:  
+The Cavirin partner template deploys in a virtual appliance model, as a CenturyLink Cloud *Partner Template*.  Follow these step by step instructions to deploy a Cavirin partner template in to your CenturyLink Cloud account:
 
 * Open a service task request ticket via email to [ServiceTasks@Tier3.com](mailto:ServiceTasks@Tier3.com) with the following details.  `You will need to edit some of the information below and attach your Cavirin license to the email!`
 
@@ -105,7 +105,7 @@ Your_Name_Here
 -----
 
 ### Pricing
-There are no Cavirin license costs included.  The cost to deploy the Cavirin Partner Template will be billed as a Service Task, but CenturyLink will provide a credit for those costs.  In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees is [available here](http://www.centurylinkcloud.com/service-tasks).
+There are no Cavirin license costs included.  The cost to deploy the Cavirin Partner Template will be billed as a Service Task, but CenturyLink will provide a credit for those costs.  In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees is [available here](http://www.ctl.io/service-tasks).
 
 #### Process to request credit for Service Task fee
 Follow this process to request credit on your account to re-imburse any expense to deploy the Partner Template
@@ -128,10 +128,10 @@ Thank you very much, your_name_here
 
 ### Accessing and Configuring your Cavirin partner template
 Follow these steps to access and configure your Cavirin partner template:
-1.	Using a web broweser, Go to https://server_ip_address  (This can be the private IP if you are connected via VPN, or a Public IP if you added one and opened the proper firewall rules)
-2.	Log in with newly created administrator account
-3.	Once logged in you start creating discovery profiles to scan your devices.
-4.	Refer to [http://support.cavirin.com](http://support.cavirin.com) for additional how-to information, a user account will be required, please contact [support@cavirin.com](mailto:support@cavirin.com) to request access.
+1.    Using a web broweser, Go to https://server_ip_address  (This can be the private IP if you are connected via VPN, or a Public IP if you added one and opened the proper firewall rules)
+2.    Log in with newly created administrator account
+3.    Once logged in you start creating discovery profiles to scan your devices.
+4.    Refer to [http://support.cavirin.com](http://support.cavirin.com) for additional how-to information, a user account will be required, please contact [support@cavirin.com](mailto:support@cavirin.com) to request access.
 
 ### Frequently Asked Questions
 
@@ -140,4 +140,4 @@ Existing CenturyLink Enterprise Customers can contact their Account Representati
 
 #### Who should I contact for support?
 * For issues regarding the Cavirin appliance, the application or functionality of it, please contact Cavirin via their 24x7 Web Support: [https://support.cavirin.com](https://support.cavirin.com), or via Email Support: [support@cavirin.com](mailto:support@cavirin.com)
-* For issues related to cloud infrastructure (VM’s, network, etc), or is you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new) 
+* For issues related to cloud infrastructure (VM’s, network, etc), or is you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new)

@@ -1,153 +1,116 @@
 {{{
   "title": "Getting Started with WildFly - Blueprint",
-  "date": "05-06-2015",
-  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
+  "date": "07-30-2015",
+  "author": "Bitnami and <a href='https://www.linkedin.com/in/bstolzberg'>Bob Stolzberg</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
+![WildFly logo](https://bitnami.com/assets/stacks/wildfly/img/wildfly-stack-220x234.png)
 
+### Technology Profile
+Welcome to the next-generation JBoss AS server, WildFly. Written in Java, WildFly is free and open source application server. Don't let it's agile and lightweight feel fool you: WildFly is a powerful beast that can run extremely fast with a full J2EE stack including Java EE7. This new Java release provides rich enterprise capabilities in frameworks that reduce technical burden and eliminate boiler plate. WildFly also supports the latest standards for REST based data access, including JAX-RS 2, and JSON-P. The WildFly stack includes ready-to-run versions of WildFly, Apache, MySQL, and Java, and required dependencies.
 
 ### Description
+Through the CenturyLink Blueprint integration, the WildFly provides a click-through solution to install and configure WildFly on the Linux platform.
 
-<img alt="WildFly Logo" src="/knowledge-base/images/bitnami_logos/wildfly-stack-110x117-e2357a2e61beca79ff271fa70ba61797.png" style="border:0;float:right;max-width:250px">
-   
-After reading this article, the reader should feel comfortable deploying the WildFly stack by Bitnami.
-
-<a href="https://bitnami.com/" rel="no-follow">Bitnami</a> has integrated their <a href="https://bitnami.com/stack/wildfly" rel="no-follow">WildFly stack</a> with the CenturyLink Cloud platform with a single-click deploy solution.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this WildFly solution.
-
-Welcome to the next-generation JBoss AS server, WildFly. Written in Java, WildFly is free and open source application server. Don't let it's agile and lightweight feel fool you: WildFly is a powerful beast that can run extremely fast with a full J2EE stack including Java EE7. This new Java release provides rich enterprise capabilities in frameworks that reduce technical burden and eliminate boiler plate. WildFly also supports the latest standards for REST based data access, including JAX-RS 2, and JSON-P. The Bitnami WildFly stack includes ready-to-run versions of WildFly, Apache, MySQL, and Java, and required dependencies.
-
+For more information, please visit [http://www.wildfly.org/](http://www.wildfly.org/)
 
 ### Audience
-
 CenturyLink Cloud Users
 
+### Impact
+After reading this article, the user should feel comfortable getting started using the Blueprint technology on CenturyLink Cloud.
+
+### Prerequisite
+- Access to the CenturyLink Cloud platform as an authorized user.
+
+### Postrequisite
+- If you want to access your application over the internet, please perform the following tasks after you receive an email notifying you that the Blueprint completed successfully:
+
+1. If you need to connect to your server via the Internet, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
+
+2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
+  * The default ports to access the application are: 80, 443
 
 ### Deploying WildFly on a New Server
+WildFly is available as a Blueprint for deployment on a new server.
 
-WildFly is available as a Blueprint for deployment on a **new server**.
+#### Steps to Deploy Blueprint
+1. **Locate the WildFly Stack Blueprint**
+  1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+  2. Search for “WildFly” in the keyword search on the right side of the page.
+  3. Locate the 'Install WildFly on Linux' Blueprint
 
-#### Steps
+2. **Choose and Deploy the Blueprint. Click the “Install WildFly on Linux” Blueprint.**
 
+3. **Configure the Blueprint** 
+Complete the information below:
 
-1. **Locate the Blueprint in the Blueprint Library**
+  1. Execute on Server: Select a Linux x64 server to deploy the Blueprint on.
+  2. Username, e.g. manager
+  3. Password
+  4. MySQL Server root password
+  5. Apache Web Server Port, e.g. 80
+  6. SSL Port, e.g. 443
+  7. MySQL Server port, e.g. 3306
 
-  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for **WildFly on Linux** in the keyword search on the right side of the page.
+4. **Review and Confirm the Blueprint**
+  1. Click “next: step 2”
+  2. Verify your configuration details.
 
-2. **Click the Deploy Blueprint button.**
+5. **Deploy the Blueprint**
+  1. Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
+  2. This will kick off the blueprint deploy process and load a page to allow you to track the progress of the deployment.
 
-3. **Set Required parameters.**
+6. **Monitor the Activity Queue**
+  * Monitor the Deployment Queue to view the progress of the blueprint.
+  * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+  * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-  Set the following parameters in addition to those associated with your server itself (password, network, group, etc.):
+### Deploy WildFly to an existing server (alternate option)
+The WildFly Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
-  * **Service Password** -  Provide service password 6 chars or more 
-  * **Jboss server AJP port** -  AJP connector port default 8009
-  * **Jboss server HTTP port** -  WildFly HTTP Connector Port default 8080
-  * **Apache server SSL port** - default 443
-  * **Jboss server management native port** -  WildFly Management Command Line Console port default 9999
-  * **Jboss server management http port** -  WildFly Management HTTP port default 9990
-  * **Apache server port** - default 80
-  * **Jboss server directory** -  Root Directory directory (must already exist) default /usr/local
-  * **JBoss server HTTPS port** -  HTTPS connector port default 8443
-  * **Jboss server management https port** -  WildFly Management HTTPS port default 9443
-
-5. **Review and Confirm the Blueprint**
-
-6. **Deploy the Blueprint**
-
-  Once verified, click on the `deploy blueprint` button. You will see the deployment details stating the Blueprint is queued for execution.
-
-  This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within five minutes.
-
-7. **Deployment Complete**
-
-  Once the Blueprint has finished executing on your server you may access WildFly by navigating to your server via http.
-
-8. **Enable public access** (optional)
-
-  Servers are built using private IPs only with access with client or IPSEC VPN.  For inbound access from the Internet add a public IP to your master server.
-
-  <a href="../../../network/how-to-add-public-ip-to-virtual-machine/">
-    <img style="border:0;width:50px;vertical-align:middle;" src="/knowledge-base/images/shared_assets/fw_icon.png">
-    Adding a public IP to your virtual machine
-  </a>
-
-
-
-### Deploying WildFly on an existing server (alternate option)
-
-WildFly is available as a Blueprint Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on the same machines
-
-#### Steps
-
-
+#### Steps to deploy WildFly to an existing server
 1. **Deploy or Identify an Existing Server**
-
-  Identify the server targeted for WildFly installation.  Operating sustem must be linux.
-
-  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
+Identify the server targeted for WildFly installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. **Select to Execute the Package on a Server Group**
+  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install WildFly on Linux**.
+  2. See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
-  Packages can be executed on one more more servers in a group.  Search for the public script package named **Install WildFly on Linux**.
+3. **Configure the Parameters**
+Set the following application parameters:
 
-  See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
+* **Username** - default manager
+* **Password**
+* **MySQL Server root password**
+* **Apache Web Server Port** - default 80
+* **SSL Port** - default 443
+* **MySQL Server port** - default 3306
 
-3. **Set Parameters**
+4. **Deploy the Script Package**
+Once verified, click on the `execute package` button. This will kick off the deployment process and load a page where you can track the progress. Deployment will typically complete within a few minutes.
 
-  Set the following parameters:
+5. **Monitor the Activity Queue**
+  * Monitor the Deployment Queue to view the progress of the blueprint.
+  * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+  * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-  * **Service Password** -  Provide service password 6 chars or more 
-  * **Jboss server AJP port** -  AJP connector port default 8009
-  * **Jboss server HTTP port** -  WildFly HTTP Connector Port default 8080
-  * **Apache server SSL port** - default 443
-  * **Jboss server management native port** -  WildFly Management Command Line Console port default 9999
-  * **Jboss server management http port** -  WildFly Management HTTP port default 9990
-  * **Apache server port** - default 80
-  * **Jboss server directory** -  Root Directory directory (must already exist) default /usr/local
-  * **JBoss server HTTPS port** -  HTTPS connector port default 8443
-  * **Jboss server management https port** -  WildFly Management HTTPS port default 9443
+### Access your WildFly server
+After your Blueprint deploys successfully, please follow these instructions to access your server:
 
-4. **Deploy the Blueprint**
-
-  Once verified, click on the `execute package` button. You will see the deployment details stating the Blueprint is queued for execution.
-
-  This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within five minutes.
-
-5. **Deployment Complete**
-
-  Once the Blueprint has finished executing on your server you may access WildFly by navigating to your server via http.
-
-6. **Enable public access** (optional)
-
-  Servers are built using private IPs only with access with client or IPSEC VPN.  For inbound access from the Internet add a public IP to your master server.
-
-  <a href="../../../network/how-to-add-public-ip-to-virtual-machine/">
-    <img style="border:0;width:50px;vertical-align:middle;" src="/knowledge-base/images/shared_assets/fw_icon.png">
-    Adding a public IP to your virtual machine
-  </a>
-
+  1. Check email to obtain Server Name and IP Address Login information
+  2. Log in to the server and start having fun!
 
 ### Pricing
-
-The costs listed above in the above steps are for the infrastructure only.
-
+The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  There are no Bitnami license costs or additional fees bundled in.
 
 ### About Bitnami
-
 CenturyLink Cloud works with [Bitnami](http://www.bitnami.com) to provide open source software integrations to its customers.  Bitnami is a library of popular server applications and development environments that can be installed with one click, either in your laptop, in a virtual machine or hosted in the cloud. Bitnami takes care of compiling and configuring the applications and all of their dependencies (third-party libraries, language runtimes, databases) so they work out-of-the-box. The resulting packaged software (a 'stack') is then made available as native installers, virtual machines and cloud images. These Bitnami application packages provide a consistent, secure and optimized end-user experience when deploying any app, on any platform.
-
 
 ### Frequently Asked Questions
 
-**Who should I contact for support?**
-
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+#### Who should I contact for support?
 * For issues related to deploying the Bitnami Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [Bitnami Support website](http://www.bitnami.com/support)
-
-**How do I access WildFly for the first time?**
-
-Nearly all Bitnami stacks can be accessed and configured by navigating to your server with a web browser.
-
-
+* For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).

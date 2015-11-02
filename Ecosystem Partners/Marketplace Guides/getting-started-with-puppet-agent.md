@@ -14,7 +14,7 @@ After reading this article, the reader should feel comfortable deploying a Puppe
 
 ### Partner Profile
 
-<img src="/knowledge-base/images/puppet/puppet_labs_logo.jpg" style="border:0;float:right;max-width: 100px;">
+<img src="../../images/puppet/puppet_labs_logo.jpg" style="border:0;float:right;max-width: 100px;">
 
 Puppet is a configuration management solution that allows you to define the state of your IT infrastructure, and then automatically enforces the desired state.
 
@@ -59,7 +59,7 @@ Add a Puppet Agent to an existing Linux server using the preconfigured Blueprint
 
 1. **Locate the Blueprint in the Blueprint Library**
 
-  <img src="/knowledge-base/images/puppet/agent_blueprint_tiles.png" style="border:0;max-width:250px">
+  <img src="../../images/puppet/agent_blueprint_tiles.png" style="border:0;max-width:250px">
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “Puppet Agent” in the keyword search on the right side of the page.
 
@@ -67,7 +67,7 @@ Add a Puppet Agent to an existing Linux server using the preconfigured Blueprint
 
 3. **Set Required parameters.**
 
-  <img src="/knowledge-base/images/puppet/deploy_agent_parameters.png" style="max-width:450px;">
+  <img src="../../images/puppet/deploy_agent_parameters.png" style="max-width:450px;">
 
   * **Puppet Master** - Enter the FQDN of an existing Puppet Master server
   * **Execute on Server ** - Select the existing server on which to execute this Blueprint
@@ -87,7 +87,7 @@ CenturyLink Cloud publishes a variety of packaged and certified community releas
 These certifications are limited to successful deployment of assets on cloud servers and do not extend onto ongoing software configuration, garauntees,
 or support.
 
-Have a suggestion for other software to include within the CenturyLink Cloud Blueprints Library?  Email ecosystem@CenturyLinkCloud.com.
+Have a suggestion for other software to include within the CenturyLink Cloud Blueprints Library?  Email ecosystem@ctl.io.
 
 
 ### Frequently Asked Questions

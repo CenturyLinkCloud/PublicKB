@@ -35,7 +35,7 @@
 <p>Once logged into OWA you have a fully functional Email application. You can send and receive email, view and modify your Calendar, Contacts, and Tasks.</p>
 <p>Reference the below articles for additional tasks that can be done via OWA.</p>
 
-<p><a href="http://help.tier3.com/entries/21415853-how-to-recover-deleted-email-from-owa">How to recover deleted email from owa</a>
+<p><a href="how-to-recover-deleted-email-from-owa.md">How to recover deleted email from owa</a>
 </p>
-<p><a href="http://help.tier3.com/entries/21401011-how-to-change-your-email-password-via-owa">How to change your email password via owa</a>
+<p><a href="how-to-change-your-email-password-via-owa.md">How to change your email password via owa</a>
 </p>

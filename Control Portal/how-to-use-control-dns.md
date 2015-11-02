@@ -36,7 +36,7 @@
 <p><img src="https://t3n.zendesk.com/attachments/token/abxiu0k0skztrz3/?name=CreateA.png" alt="CreateA.png" />
 </p>
 
-<p>Hitting ok will create an A record. This would direct any traffic to <a href="ftp://ftp.mydnszone9.com/">ftp.mydnszone9.com</a> to 5.5.5.5</p>
+<p>Hitting ok will create an A record. This would direct any traffic to ftp.mydnszone9.com to 5.5.5.5</p>
 <p>Creating a CNAME record:</p>
 <p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/5vdqo5wz0sqzzfq/?name=CreateCNAME.png" alt="CreateCNAME.png" />
 </p>

@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-CenturyLink Cloud offers customers [Hyperscale Servers](//www.centurylinkcloud.com/hyperscale/) – an instance type that is designed for distributed workloads that require maximum performance. Hyperscale offers the same top-tier CPU and RAM performance found in our standard servers – and adds 100% flash storage. That means customers can typically expect at least 15,000 IOPS to turbo-charge applications.
+CenturyLink Cloud offers customers [Hyperscale Servers](//www.ctl.io/hyperscale/) – an instance type that is designed for distributed workloads that require maximum performance. Hyperscale offers the same top-tier CPU and RAM performance found in our standard servers – and adds 100% flash storage. That means customers can typically expect at least 15,000 IOPS to turbo-charge applications.
 
 Anti-affinity policies make it possible to spread workloads across physical hosts. When a new server is created and references an anti-affinity policy, the CenturyLink Cloud platform makes sure that all the virtual servers in that policy are distributed to unique physical hosts.
 ### Prerequisites to Leverage Anti-Affinity Policies

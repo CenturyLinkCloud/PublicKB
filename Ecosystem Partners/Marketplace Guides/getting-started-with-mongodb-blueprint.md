@@ -14,13 +14,13 @@ After reading this article, the reader should feel comfortable deploying the Mon
 
 ### Partner Profile
 
-<img src="/knowledge-base/images/mongodb/mongodb-logo.png" style="border:0;float:right;">
+<img src="../../images/mongodb/mongodb-logo.png" style="border:0;float:right;">
 
 MongoDB – “simple and elegant with the freedom to scale”
 
 http://www.mongodb.org/
 
-#####Customer Support
+##### Customer Support
 
 * [MongoDB Community Support ](http://www.mongodb.org/get-involved)
 
@@ -47,7 +47,7 @@ CenturyLink Cloud Users
 
   Determine whether you will be building a test cluster with small nodes or a production cluster whose nodes are configured with increased CPU and RAM.
 
-  <img src="/knowledge-base/images/mongodb/mongodb_blueprint_tile.png" style="border:0;max-width:250px;">
+  <img src="../../images/mongodb/mongodb_blueprint_tile.png" style="border:0;max-width:250px;">
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "MongoDB" in the keyword search on the right side of the page.
 
@@ -55,7 +55,7 @@ CenturyLink Cloud Users
 
 3. **Set Required parameters.**
 
-  <img src="/knowledge-base/images/mongodb/deploy_parameters.png" style="max-width:450px;">
+  <img src="../../images/mongodb/deploy_parameters.png" style="max-width:450px;">
 
   * **Database Admin Username** - Username created in new MongoDB instance
   * **Database Admin Password** - Password created in new MongoDB instance
@@ -82,7 +82,7 @@ CenturyLink Cloud Users
 
   Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.  If you do not receive an email like the one shown below your cluster may have had a deployment error - review the *Blueprint Build Log* to for error messages.
 
-  <img src="/knowledge-base/images/mongodb/deploy_complete_email.png" style="border:0;width:70%;">
+  <img src="../../images/mongodb/deploy_complete_email.png" style="border:0;width:70%;">
 
 
 ### Pricing
@@ -102,7 +102,7 @@ MongoDB is Open Source community owned software with no associated cost to acqui
 
 MongoDB is packaged and provided by CenturyLink as a courtesy to ease startup time. All support for this Open Source software is provided by the community. Please start at http://www.mongodb.org/
 
-For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../../Support/how-do-i-report-a-support-issue.md).
+For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
 
 
 **Creating a User for your Application**

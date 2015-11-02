@@ -8,15 +8,9 @@
   "sticky": true
 }}}
 
-### IMPORTANT NOTE
-
-AppFog v2, the upcoming CenturyLink Cloud integrated public Platform-as-a-Service (PaaS), is not available to all customers at this time. We are current in a Limited Beta program with specific customers. AppFog v2 will be available in Open Beta later in 2015.
-
-The current AppFog service at [http://www.appfog.com/](http://www.appfog.com/) is still available and will continue to be in service even after AppFog v2 is made generally available. Please feel free to sign up for the current AppFog service [here](https://console.appfog.com/signup).
-
 ### Audience
 
-Currently, this article is to support customers in the Limited Beta program.
+Application developers
 
 ### AppFog Overview
 
@@ -24,13 +18,11 @@ AppFog is a public Platform-as-a-Service (PaaS) that makes deploying scalable, r
 
 ![Work on code, not infrastructure](../images/appfog-vs-traditional.png)
 
-AppFog supports the followng common application runtimes: Java, Node.js, PHP, Python, Go, Ruby, and Static Websites. Integrating with services such as databases, messaging middleware, load balancing, monitoring and more are easily provisioned through the AppFog Marketplace.
+AppFog supports the following common application runtimes: Java, Node.js, PHP, Python, Go, Ruby, and Static Websites. Integrating with services such as databases, messaging middleware, load balancing, monitoring and more are easily provisioned through the AppFog Marketplace.
 
 ### Enable AppFog in Control Portal
 
-*NOTE: The following steps will only work for customers with CenturyLink Control Portal accounts enabled for the Limited Beta program.*
-
-Go to https://control.ctl.io, login, and you should see “AppFog" listed in the drop down navigation bar:
+Go to https://control.ctl.io, login, and you will see “AppFog" listed in the drop down navigation bar:
 
 ![AppFog in Dropdown Navigation](../images/appfog-in-dropdown-nav.png)
 
@@ -38,8 +30,16 @@ You may also navigate to AppFog via the icon on the left-side vertical navigatio
 
 ![AppFog icon in Vertical Navigation](../images/appfog-icon-nav.png)
 
-Navigate to AppFog using either navigation approach and now it is time to enable deployment to AppFog regions, US East and/or US West. Each region has its own "add region" button to enable it in your AppFog:
+Navigate to AppFog using either navigation approach. Now it is time to enable deployment to AppFog regions, US East and/or US West. Each region has its own "add region" button to enable it in your AppFog:
 
 ![AppFog Overview](../images/appfog-overview.png)
 
-If the region has already been enabled then there the region will be a link to the region overview page and no "add region" button will be displayed on the region row.
+If the region has already been enabled then a link will appear to send you to the region overview page and no "add region" button will be displayed on the region row.
+
+### Where to Go From Here?
+
+Now that you have AppFog enabled on your account you can manage membership to regions and spaces, login from  terminal and deploy an application.
+
+* [Manage AppFog Region and Space Membership](manage-appfog-membership.md)
+* [Login to AppFog using Cloud Foundry CLI](login-using-cf-cli.md)
+* [Deploy an Application to AppFog](deploy-an-application.md)

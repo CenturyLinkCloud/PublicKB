@@ -8,7 +8,7 @@
 
 ![Vision Solutions Double Take logo](../../images/ecosystem-double-take-logo.png)
 
-###Partner Profile
+### Partner Profile
 - Vision Solutions – Migrate, Protect & Recover... Anywhere
 - [www.visionsolutions.com](http://www.visionsolutions.com)
 
@@ -48,9 +48,9 @@ After executing the steps in this Getting Started document, the users will have 
 ### Postrequisite
 - If you want to access your VM with Double-Take over the internet, please perform the following tasks once you receive an email confirming you Blueprint completed successfully:
 
-1. If you need to connect to your server via the Internet, Add a [Public IP](../../../network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/how-to-configure-client-vpn.md) or similar technology.
+1. If you need to connect to your server via the Internet, Add a [Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/how-to-configure-client-vpn.md) or similar technology.
 
-2. [Allow incoming traffic](../../../network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal.  Add the required Double-Take ports from the list or screen shot below or as documented in the [Users' Guide](http://download.doubletake.com/_download/Documentation/DocumentationLibrary.htm) for the respective platform.
+2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal.  Add the required Double-Take ports from the list or screen shot below or as documented in the [Users' Guide](http://download.doubletake.com/_download/Documentation/DocumentationLibrary.htm) for the respective platform.
   - Open the following Public Ports by selecting the checkboxes:  RDP (3389) and PING
   - Open the following 6x custom ports using these protocols by clicking on the Custom Port dropdown
     * 6320 TCP and UDP (Note: This is 2 unique rules)
@@ -82,7 +82,7 @@ After executing the steps in this Getting Started document, the users will have 
 * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the Vision Solutions Server until you have received this email notification.
 
 ### Accessing your Vision Solutions appliance
-Double-Take is managed using the Double-Take Console which runs on a Windows instance with network access to both the Double-Take source and target servers.  The Double-Take console is installed as part of deploying the Double-Take for Windows Blueprint.  For OS level access, you can connect to Windows using RDP and Linux using SSH. 
+Double-Take is managed using the Double-Take Console which runs on a Windows instance with network access to both the Double-Take source and target servers.  The Double-Take console is installed as part of deploying the Double-Take for Windows Blueprint.  For OS level access, you can connect to Windows using RDP and Linux using SSH.
 
 ### Pricing
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  There are no Vision Solutions or Double Take license costs or additional fees bundled in. There are multiple  Double-Take licensee options designed to meet your specific solutinos and SLA needs. Please contact CenturyLinkInfo@visionsolutions.com for your appropriate licensing assistance.

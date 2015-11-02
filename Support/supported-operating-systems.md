@@ -19,9 +19,11 @@ The following operating systems are supported in CenturyLink Cloud, as of April 
 * RedHat Enterprise Linux 7
 * Ubuntu 12
 * Ubuntu 14
-* Windows Server 2008 R2
-* Windows Server 2012
-* Windows Server 2012 R2
+* Windows Server 2008 R2 Standard
+* Windows Server 2008 R2 Enterprise
+* Windows Server 2008 R2 Datacenter Edition
+* Windows Server 2012 Datacenter Edition
+* Windows Server 2012 R2 Datacenter Edition
 
 **NOTE: Only the 64-bit version of each OS is supported**
 
@@ -39,4 +41,4 @@ This is listed [here](../Servers/operating-system-template-retirement-policy.md)
 
 ### I'd like to deploy an operating system that is not supported. What are my options?
 
-We do not recommend that you deploy unsupported operating systems in the platform. CenturyLink Cloud SLAs will not apply to virtual machines running an *unsupported* OS. In addition, some features may not work on unsupported OSes. Your options are to request a new OS be supported using our [suggested feature process](mailto:features@centurylinkcloud.com), or to deploy the OS in a traditional hosting environment.
+We do not recommend that you deploy unsupported operating systems in the platform. CenturyLink Cloud SLAs will not apply to virtual machines running an *unsupported* OS. In addition, some features may not work on unsupported OSes. Your options are to request a new OS be supported using our [suggested feature process](mailto:features@ctl.io), or to deploy the OS in a traditional hosting environment.

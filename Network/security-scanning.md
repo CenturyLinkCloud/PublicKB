@@ -7,10 +7,10 @@
 }}}
 
 ### Overview
-Centurylink Cloud customers can leverage Nessus Security Vulnerability scanning services via [Service Task](http://www.centurylinkcloud.com/service-tasks) to discover security vulnerabilities on Cloud Virtual Machines provisioned across the platform.
+Centurylink Cloud customers can leverage Nessus Security Vulnerability scanning services via [Service Task](http://www.ctl.io/service-tasks) to discover security vulnerabilities on Cloud Virtual Machines provisioned across the platform.
 
 ### How To Request a Nessus Security Vulnerability Scan
-Customers should request a [Service Task](../Service Tasks/requesting-service-tasks-on-centurylink-cloud.md) for [Nessus Security Vulnerability Scanning](http://www.centurylinkcloud.com/service-tasks/#nessus). In the request customers should supply the following information:
+Customers should request a [Service Task](../Service Tasks/requesting-service-tasks-on-centurylink-cloud.md) for [Nessus Security Vulnerability Scanning](http://www.ctl.io/service-tasks/#nessus). In the request customers should supply the following information:
 
 * Customer Alias & [Pin](../Support/pin-authentication-for-support-requests.md)
 * Time (including time zone) you wish the scan to run
@@ -39,3 +39,7 @@ A: Yes, if you wish to run a Credentialed Vulnerability Scan.  Customers have th
 **Q: What is the expected response time to schedule and receive my Vulnerability Scan?**
 
 A: Please refer to our [Ticket Prioritization Matrix](../Support/ticket-prioritization-matrix.md)
+
+**Q: Do I need to supply URLs?**
+
+A: No.  Only IP addresses (internal or external) are needed.

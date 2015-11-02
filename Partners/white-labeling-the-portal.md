@@ -14,16 +14,16 @@ This allows Partners to white label the CenturyLink Cloud as "their own" thus pr
 * Step-by-step instructions for white labeling the portal.
 
 ---
-###What Is "White Labeling"?
+### What Is "White Labeling"?
 
 "White Labeling the Portal" simply means you can remove specific CenturyLink brand elements and information and replace them with you own:
 
 * site branding (logo, site name)
 * color scheme
 * email notifications
-* customer support 
+* customer support
 
-White Labeling does not mean modifying or changing in any way functional content (such as server functionality). For example, a CenturyLink Cloud partner cannot rewrite the portal in another language. 
+White Labeling does not mean modifying or changing in any way functional content (such as server functionality). For example, a CenturyLink Cloud partner cannot rewrite the portal in another language.
 
 To Learn about the following topics metioned below [click here](../Control Portal/getting-started-with-white-labeling.md)
 * Updating the Site Name
@@ -33,13 +33,13 @@ To Learn about the following topics metioned below [click here](../Control Porta
 * Customize the Control Portal Color Scheme
 * Using Custom Domains
 
-###Email Notifications
+### Email Notifications
 
 You can change email notifications and replace the CenturyLink Cloud email alias with your own.
 
 #### Customize Email Notification Reply Address
 
-You can change email notifications and replace the CenturyLink Cloud email alias with your own. 
+You can change email notifications and replace the CenturyLink Cloud email alias with your own.
 
 1. Go to the "Account" > "Settings" section. Then select "Email Notifications."
 2. The following system email addresses can be changed to reflect your preferred email address.
@@ -49,19 +49,19 @@ You can change email notifications and replace the CenturyLink Cloud email alias
   * Monitoring Email
 3. The Email Signature can also be changed to reflect your preferred email signature.
 
-####Addtional Outbound Notifications
+#### Additional Outbound Notifications
 
 There are additional outbound email notifications that are handled in a similar in way. These should be updated to reflect the organization's information and procedures. These include the following:
 
 * Basic Settings
-* Blueprint Success 
+* Blueprint Success
 * Users Welcome
 * User Password Reset
 * VPN Server Confirmation
-* Server Lifespan Expiration 
+* Server Lifespan Expiration
 * Group Lifespan Expiration
 
-####Customize Outbound Email Content
+#### Customize Outbound Email Content
 
 To customize the content of your outbound email notifications, do the following:
 
@@ -74,7 +74,7 @@ To customize the content of your outbound email notifications, do the following:
 When White Labeling the Portal, it is necessary to change the Customer Support links to reflect your organization's support structure. As a partner you are responsible for first level of support. So please make sure that the support information is updated.
 
 1. Go to "Account" > "Settings" and then select "Customer Support"
-2. Customize Customer Support Links. The following support links need to be changed to reflect all details of your organization's support structure: 
+2. Customize Customer Support Links. The following support links need to be changed to reflect all details of your organization's support structure:
   * Footer Support Email
   * Footer Support Phone
   * Customer Support Panel
@@ -83,7 +83,7 @@ When White Labeling the Portal, it is necessary to change the Customer Support l
   * Knowledge Base URL
   * Knowledge Base Search URL
   * Chat Service
-3. The process is the same for all support links. Click on the link you wish to edit to toggle the form. 
+3. The process is the same for all support links. Click on the link you wish to edit to toggle the form.
 4. Type in the appropriate value.
 5. Select "Save" to commit your changes.
 
@@ -103,4 +103,8 @@ To change the the TRUSTe Certified Logo, do the following:
 1. Go to Account > Settings and select "Customer Support"
 2. Use the image editor, and click on the insert image icon (3rd from the right) to insert your image. Recommended image size is 142 pixels wide by 45 pixels high.
 
+#### Other Useful White Labeling Article:
 
+[Learn More About White Labeling Cloud Services Estimator](https://www.ctl.io/blog/post/cloud-services-estimator-now-open-source/)
+
+[Learn More About White Labeling KB and How To Make Your Own Cloud](https://www.ctl.io/blog/post/take-control-channel-partners-and-enterprise-customers-can-make-our-cloud-their-own/)

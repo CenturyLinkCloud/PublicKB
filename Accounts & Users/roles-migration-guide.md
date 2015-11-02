@@ -41,7 +41,7 @@
 </table>
 
 You should find that for Account Administrators and Billing Managers, their access is virtually identical to what it was before, with Billing Managers now able to simply view some additional account settings (but not change them). Domain Administrators similarly now have read-only access to account settings, as well as to other areas such as load balancers, SMTP relay, VPN, and network configuration, in addition to the existing DNS and Site Redirect access they had before. Perhaps the biggest change to the previous role set happens for Server Administrator. This role was frequently the culprit for not providing sufficient access to users and leading many to become full blown Account Administrators without the need for access to all things. Server Administrators now have full access to all server-related functions as well as other tangential areas such as load balancers, networks, policies, etc. You can view a complete list of actions that can be performed by each role in the
-[Role Permissions Matrix](../Account & Users/role-permission-matrix.md).
+[Role Permissions Matrix](../Accounts & Users/role-permissions-matrix.md).
 
 <h3>Migrating Users to New Roles</h3>
 <p>If almost all users in your account are Account Administrators, you will likely want to move some of them into one of the four new roles: Server Operator, Network Manager, Security Manager, or Account Viewer.</p>

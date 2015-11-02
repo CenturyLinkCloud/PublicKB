@@ -7,7 +7,7 @@
 }}}
 
 <h3>Creating Cross Data Center Firewall Policies</h3>
-<p>In addition to being able to connect networks within a particular data center through&nbsp;<a href="http://help.tier3.com/entries/22196842-connecting-data-center-networks-through-firewall-policies">Intra Data Center firewall policies</a>,
+<p>In addition to being able to connect networks within a particular data center through&nbsp;<a href="connecting-data-center-networks-through-firewall-policies.md">Intra Data Center firewall policies</a>,
   users can also create firewall policies that span cloud data centers. This helps enterprises build sophisticated, secure network topologies that take advantage of the CenturyLink Cloud's global footprint while meeting an organization's functional needs.</p>
 <h3>General Notes</h3>
 <ul>

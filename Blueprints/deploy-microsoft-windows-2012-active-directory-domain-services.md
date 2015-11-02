@@ -8,14 +8,14 @@
 
 ### Deploy Microsoft Windows 2012 Active Directory Domain Services using CenturyLink Cloud Blueprint
 
-CenturyLink Cloud customers can deploy Microsoft Windows 2012 Active Directory Domain Servers using the Execute Packges functions or Blueprints within the Control Portal.  Public Packages are available for both the primary and secondary domain controllers.
+CenturyLink Cloud customers can deploy Microsoft Windows 2012 Active Directory Domain Servers using the Execute Packages functions or Blueprints within the Control Portal.  Public Packages are available for both the primary and secondary domain controllers.
 
 #### Prerequisites
 
 * A CenturyLink Cloud Account
 * Supported Guest Operating Systems
-  * Windows 2012 Data Center 64-bit
-  * Windows 2012 R2 Data Center 64-bit
+  * Windows 2012 Datacenter 64-bit
+  * Windows 2012 R2 Datacenter 64-bit
 
 #### Exceptions
 

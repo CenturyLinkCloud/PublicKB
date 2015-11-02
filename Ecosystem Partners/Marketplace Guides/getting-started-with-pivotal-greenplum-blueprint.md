@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Pivotal Greenplum - Blueprint",
-  "date": "3-2-2015",
+  "date": "8-24-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -10,17 +10,17 @@
 
 ### Overview
 
-After reading this article, the reader should feel comfortable deploying the Pivotal Greenplum database on CenturyLink Cloud.
+After reading this article, the reader should feel comfortable deploying the Pivotal Greenplum 4.3.5.3 database release on CenturyLink Cloud.
 
 ### Partner Profile
 
-<img src="/knowledge-base/images/pivotal_greenplum/pivotal_greenplum_logo.png" style="border:0;float:right;">
+<img src="../../images/pivotal_greenplum/pivotal_greenplum_logo.png" style="border:0;float:right;">
 
 Pivotal Greenplum – “Best-in-class, enterprise-grade analytical data warehouse..”
 
 http://pivotal.io/big-data/pivotal-greenplum-database
 
-#####Customer Support
+##### Customer Support
 
 |Sales Contact      |
 |:- |
@@ -41,9 +41,9 @@ CenturyLink Cloud Users
 ### Deployment Packages
 
 
-|[Deploy a New Cluster](#deploying-a-new-cluster)   	|[Expand an Existing Cluster](../../Ecosystem Partners/howto-pivotal-greenplum-expand-cluster.md)   	|
+|[Deploy a New Cluster](#deploying-a-new-cluster)   	|[Expand an Existing Cluster](howto-pivotal-greenplum-expand-cluster.md)   	|
 |:-	|:-	|
-|<p>Deploy a minimal cluster sized for testing.<p>When you're ready, deploy a production capable cluster using the same pattern.<p>See [Deploying a new cluster](#deploying-a-new-cluster) to get started.  If you're looking for a single-button deploy of clusters with more nodes see our guide on [Creating larger cluster Blueprints](../../Ecosystem Partners/howto-pivotal-greenplum-larger-clusters.md)   	|<p>Grow existing clusters to their optimal size from day zero or to accommodate growth over time.<p>We'll cleanly add capacity and leave any application disrupting work to you.<p>See [Expanding an existing cluster](../../Ecosystem Partners/howto-pivotal-greenplum-expand-cluster.md) to get started.   	|
+|<p>Deploy a minimal cluster sized for testing.<p>When you're ready, deploy a production capable cluster using the same pattern.<p>See [Deploying a new cluster](#deploying-a-new-cluster) to get started.  If you're looking for a single-button deploy of clusters with more nodes see our guide on [Creating larger cluster Blueprints](howto-pivotal-greenplum-larger-clusters.md)   	|<p>Grow existing clusters to their optimal size from day zero or to accommodate growth over time.<p>We'll cleanly add capacity and leave any application disrupting work to you.<p>See [Expanding an existing cluster](howto-pivotal-greenplum-expand-cluster.md) to get started.   	|
 
 
 
@@ -58,7 +58,7 @@ You can achieve a single-button deployment of a new cluster including a master h
 
   Determine whether you will be building a test cluster with small nodes or a production cluster whose nodes are configured with increased CPU and RAM.
 
-  <img src="/knowledge-base/images/pivotal_greenplum/cluster_blueprint_tiles.png" style="border:0;">
+  <img src="../../images/pivotal_greenplum/cluster_blueprint_tiles.png" style="border:0;">
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “Pivotal Greenplum” in the keyword search on the right side of the page.
 
@@ -66,7 +66,7 @@ You can achieve a single-button deployment of a new cluster including a master h
 
 3. **Set Required parameters.**
 
-  <img src="/knowledge-base/images/pivotal_greenplum/deploy_cluster_parameters.png" style="max-width:450px;">
+  <img src="../../images/pivotal_greenplum/deploy_cluster_parameters.png" style="max-width:450px;">
 
   * **EULA** - Click to accept the software end user license agreement
   * **Cluster ID ** - Set unique identifier for all hosts in this Greenplum cluster.  This is used to help other hosts find and join into the cluster
@@ -95,19 +95,20 @@ You can achieve a single-button deployment of a new cluster including a master h
 
   Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.  If you do not receive an email like the one shown below your cluster may have had a deployment error - review the *Blueprint Build Log* to for error messages.
 
-  <img src="/knowledge-base/images/pivotal_greenplum/deploy_cluster_complete_email.png" style="border:0;width:70%;">
+  <img src="../../images/pivotal_greenplum/deploy_cluster_complete_email.png" style="border:0;width:70%;">
 
 8. **Web Command Center** (optional)
 
-  If you elected to install the optional web command center you may access it via http on port 20800.  Authenticate using the `gpadmin` user and your administrative credentials
+  If you elected to install the optional web command center you may access it via http on port 20800.  Authenticate using the `gpmon` user and your administrative credentials
 
-  <img src="/knowledge-base/images/pivotal_greenplum/web_command_center.png" style="border:0;">
+  <img src="../../images/pivotal_greenplum/web_command_center.png" style="border:0;">
 
 8. **Demo Application** (optional)
 
-  If you elected to install the optional demo application you may access the database from the master server.  Follow the [Pivot Greenplum demo lab](https://github.com/pivotalsoftware/pivotal-samples/tree/master/Labs) to quickly get up to speed on the Greenplum platform.  Authenticate using the `gpadmin` user and your administrative credentials
+  If you elected to install the optional demo application you may access the database from the master server.  Follow the [Pivotal Greenplum demo lab](https://github.com/pivotalsoftware/pivotal-samples/tree/master/Labs) to quickly get up to speed on the Greenplum platform.  ssh to your host as `root` then authenticate using the `gpadmin` user and your administrative credentials.
 
   ```
+  [root@localhost #]$ su - gpadmin
   [gpadmin@localhost ~]$ psql default
   psql (8.2.15)
   Type "help" for help.
@@ -134,8 +135,8 @@ You can achieve a single-button deployment of a new cluster including a master h
 
   Servers are built using private IPs only with access with client or IPSEC VPN.  For access from the Internet at large add a public IP to your master server.
 
-  <a href="../../../network/how-to-add-public-ip-to-virtual-machine/">
-    <img style="border:0;width:50px;vertical-align:middle;" src="/knowledge-base/images/shared_assets/fw_icon.png">
+  <a href="../../Network/how-to-add-public-ip-to-virtual-machine.md">
+    <img style="border:0;width:50px;vertical-align:middle;" src="../../images/shared_assets/fw_icon.png">
     Adding a public IP to your virtual machine
   </a>
 
@@ -153,7 +154,7 @@ After deploying this Blueprint, you may secure entitlements to the technology us
 
 **Where do I obtain my license?**
 
-Contact your Pivotal account manager or inquire via email to [centurylinkcloud-sales@pivotal.io](mailto:centurylinkcloud-sales@pivotal.io)
+Contact your Pivotal account manager or inquire via email to [sales-clc@pivotal.io](mailto:sales-clc@pivotal.io)
 
 **Who should I contact for support?**
 
@@ -166,7 +167,7 @@ Contact your Pivotal account manager or inquire via email to [centurylinkcloud-s
 
 View Pivotal's [Getting Started](http://gpdb.docs.pivotal.io/gpdb-434.html) guide and other documentation from the Pivotal documentation hub.
 
-<img src="/knowledge-base/images/pivotal_greenplum/getting_started_pdf.png" style="max-height: 300px;margin-left:1em;">
+<img src="../../images/pivotal_greenplum/getting_started_pdf.png" style="max-height: 300px;margin-left:1em;">
 
 
 **How do I login to my cluster for the first time?**

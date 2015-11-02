@@ -47,7 +47,7 @@ Flume can also optionally encrypt all communications using a selectable encrypti
 A unique feature of Flume among file transfer programs is the ability to be used in a UNIX "pipe". This means that source data can come via 'stdin' and/or output can be to 'stdout'. If either of these modes is used at the remote location, Flume allows specification of what program is to run there to either: push data to 'stdin' or pull data from 'stdout'. See the Flume User Manual for more information on this feature.
 
 ### Offer
-Saratoga Data is making their technology available for CenturyLink Cloud Users to deploy to their account.  Installation of the Flume Blueprint includes a license good for as much as two months (depending on the actual date of deployment). In order to purchase a license or entitlement, please contact [sales@saratogadata.com](mailto:sales@saratogadata.com)
+Saratoga Data is making their technology available for CenturyLink Cloud Users to deploy to their account.  Installation of the Flume Blueprint includes a license good for one month (depending on the actual date of deployment). In order to purchase a license or entitlement, please contact [sales@saratogadata.com](mailto:sales@saratogadata.com)
 
 ### Audience
 CenturyLink Cloud Users with high latency, challenged links, especially remote locations and via satellite-based connections.
@@ -65,9 +65,9 @@ After executing the steps in this Getting Started document, the users will have 
 ### Postrequisite
 - If you want to access your VM over the internet, please perform the following tasks once you receive an email confirming you Blueprint completed successfully:
 
-1. If you need to connect to your server via the Internet, Add a [Public IP](../../../network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/how-to-configure-client-vpn.md) or similar technology.
+1. If you need to connect to your server via the Internet, Add a [Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/how-to-configure-client-vpn.md) or similar technology.
 
-2. [Allow incoming traffic](../../../network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal. The ports used by 'flume' are controlled by a configuration file /etc/flume/ports but the standard ports to open are:
+2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal. The ports used by 'flume' are controlled by a configuration file /etc/flume/ports but the standard ports to open are:
 * TCP 22, 2354-2454
 * UDP 2355-2454
 
@@ -93,7 +93,7 @@ After executing the steps in this Getting Started document, the users will have 
 Access your Saratoga Data Flume server by connecting to the server via ssh to the public IP using root and the password created when deploying the blueprint.
 
 * The flume data transfer program is invoked using the command line.
-* For instruction on using Flume see the User Manual present on the newly created server. It is also available at [ftp://public.saratogadata.com/pub/sw/flume_2.3/Flume_2.3_User_Manual.pdf](ftp://public.saratogadata.com/pub/sw/flume_2.3/Flume_2.3_User_Manual.pdf) or [http://ca.saratogadata.com:888/download/flume/2.3/Flume_2.3_User_Manual.pdf](http://ca.saratogadata.com:888/download/flume/2.3/Flume_2.3_User_Manual.pdf)
+* For instruction on using Flume see the User Manual present on the newly created server. It is also available at [ftp://public.saratogadata.com/pub/sw/flume_2.3/Flume_2.3_User_Manual.pdf](ftp://public.saratogadata.com/pub/sw/flume_2.3/Flume_2.3_User_Manual.pdf)
 
 You can also access a simple 'man' page with:
 man flume
@@ -116,4 +116,4 @@ Existing CenturyLink Enterprise Customers can contact their Account Representati
 
 #### Who should I contact for support?
 * For issues related to deploying the Blueprint, licensing, Accessing or using the Saratoga Data application, please visit the [Saratoga Data Support Website](http://www.SaratogaDataSystems.com/support)
-* For issues related to cloud infrastructure (VM’s, network, etc), or is you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new) 
+* For issues related to cloud infrastructure (VM’s, network, etc), or is you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new)

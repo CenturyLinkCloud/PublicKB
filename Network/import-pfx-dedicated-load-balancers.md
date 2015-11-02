@@ -38,4 +38,4 @@ Dedicated Load Balancers offer the capability of load balancing SSL traffic.  Th
 ### Notes
 
 * This example was performed on Netscaler VPX version 10.5
-* Please review [Dedicated LB Basic Management](../network/dedicated-load-balancer-basic-management.md) for the basics of creating a Load Balancer VIP and Service Group when using Dedicated Load Balancers
+* Please review [Dedicated LB Basic Management](../Network/dedicated-load-balancer-basic-management.md) for the basics of creating a Load Balancer VIP and Service Group when using Dedicated Load Balancers

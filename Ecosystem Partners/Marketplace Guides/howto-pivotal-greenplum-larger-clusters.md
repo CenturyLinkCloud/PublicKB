@@ -14,13 +14,13 @@ After reading this article, the user should feel comfortable creating a new Blue
 
 ### Partner Profile
 
-<img src="/knowledge-base/images/pivotal_greenplum/pivotal_greenplum_logo.png" style="border:0;float:right;">
+<img src="../../images/pivotal_greenplum/pivotal_greenplum_logo.png" style="border:0;float:right;">
 
 Pivotal Greenplum – “Best-in-class, enterprise-grade analytical data warehouse..”
 
 http://pivotal.io/big-data/pivotal-greenplum-database
 
-#####Customer Support
+##### Customer Support
 
 |Sales Contact      |
 |:- |
@@ -45,7 +45,7 @@ Single button deploy of an arbitrary sized Pivotal Greenplum cluster.
 
 #### Steps
 
-1. **Review creating a new Blueprint** referencing the [How to build a blueprint KB](../../Blueprints/how-to-build-a-blueprint/) if necessary
+1. **Review creating a new Blueprint** referencing the [How to build a blueprint KB](../../Blueprints/how-to-build-a-blueprint.md) if necessary
 
   * (Wizard step 1) Complete as normal
   * (Wizard step 2) Do not add any servers in this step
@@ -54,6 +54,6 @@ Single button deploy of an arbitrary sized Pivotal Greenplum cluster.
 
   Add a single new cluster to the Blueprint and any number of additional nodes.  Take note that if deploying your cluster in a mirrored configuration then an even number of nodes must be added.
 
-  <img src="/knowledge-base/images/pivotal_greenplum/customize_blueprint.png" style="">
+  <img src="../../images/pivotal_greenplum/customize_blueprint.png" style="">
 
 3. **Save Blueprint**

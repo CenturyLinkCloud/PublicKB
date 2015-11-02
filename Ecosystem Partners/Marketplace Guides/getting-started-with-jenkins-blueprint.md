@@ -1,143 +1,116 @@
 {{{
   "title": "Getting Started with Jenkins - Blueprint",
-  "date": "05-06-2015",
-  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
+  "date": "07-30-2015",
+  "author": "Bitnami and <a href='https://www.linkedin.com/in/bstolzberg'>Bob Stolzberg</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
+![Jenkins logo](https://bitnami.com/assets/stacks/jenkins/img/jenkins-stack-220x234.png)
 
+### Technology Profile
+Ask a room of developers which CI system they're using and there is a good chance that several, if not most, will say Jenkins. Not wanting to see their favorite CI subsumed by Oracle, Jenkins was spun out in 2011 as its own product. It's widely recognized as the most feature-rich CI available with easy configuration, continuous delivery and continuous integration support, easily test, build and stage your app, and more. It supports multiple SCM tools including CVS, Subversion and Git. It can execute Apache Ant and Apache Maven-based projects as well as arbitrary scripts. Out of the box, the Jenkins Blueprint package includes Jenkins, Apache, Tomcat, and Git.
 
 ### Description
+Through the CenturyLink Blueprint integration, the Jenkins provides a click-through solution to install and configure Jenkins on the Linux platform.
 
-<img alt="Jenkins Logo" src="/knowledge-base/images/bitnami_logos/jenkins-stack-110x117-7ed1d23148c869ee6aa6831a71ad9588.png" style="border:0;float:right;max-width:250px">
-   
-After reading this article, the reader should feel comfortable deploying the Jenkins stack by Bitnami.
-
-<a href="https://bitnami.com/" rel="no-follow">Bitnami</a> has integrated their <a href="https://bitnami.com/stack/jenkins" rel="no-follow">Jenkins stack</a> with the CenturyLink Cloud platform with a single-click deploy solution.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Jenkins solution.
-
-Ask a room of developers which CI system they're using and there is a good chance that several, if not most, will say Jenkins. Not wanting to see their favorite CI subsumed by Oracle, Jenkins was spun out in 2011 as its own product. It's widely recognized as the most feature-rich CI available with easy configuration, continuous delivery and continuous integration support, easily test, build and stage your app, and more. It supports multiple SCM tools including CVS, Subversion and Git. It can execute Apache Ant and Apache Maven-based projects as well as arbitrary scripts. Out of the box, the Bitnami Jenkins package includes Jenkins, Apache, Tomcat, and Git.
-
+For more information, please visit [http://jenkins-ci.org/](http://jenkins-ci.org/)
 
 ### Audience
-
 CenturyLink Cloud Users
 
+### Impact
+After reading this article, the user should feel comfortable getting started using the Blueprint technology on CenturyLink Cloud.
+
+### Prerequisite
+- Access to the CenturyLink Cloud platform as an authorized user.
+
+### Postrequisite
+- If you want to access your application over the internet, please perform the following tasks after you receive an email notifying you that the Blueprint completed successfully:
+
+1. If you need to connect to your server via the Internet, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
+
+2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
+  * The default ports to access the application are: 80, 443
 
 ### Deploying Jenkins on a New Server
+Jenkins is available as a Blueprint for deployment on a new server.
 
-Jenkins is available as a Blueprint for deployment on a **new server**.
+#### Steps to Deploy Blueprint
+1. **Locate the Jenkins Stack Blueprint**
+  1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+  2. Search for “Jenkins” in the keyword search on the right side of the page.
+  3. Locate the 'Install Jenkins on Linux' Blueprint
 
-#### Steps
+2. **Choose and Deploy the Blueprint. Click the “Install Jenkins on Linux” Blueprint.**
 
+3. **Configure the Blueprint** 
+Complete the information below:
 
-1. **Locate the Blueprint in the Blueprint Library**
+  1. Execute on Server: Select a Linux x64 server to deploy the Blueprint on.
+  2. Apache Web Server Port, e.g. 80
+  3. SSL Port, e.g. 443
+  4. Login, e.g. user
+  5. Your real name, e.g. User Name
+  6. Email Address, e.g. user@example.com
+  7. Password
 
-  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for **Jenkins on Linux** in the keyword search on the right side of the page.
+4. **Review and Confirm the Blueprint**
+  1. Click “next: step 2”
+  2. Verify your configuration details.
 
-2. **Click the Deploy Blueprint button.**
+5. **Deploy the Blueprint**
+  1. Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
+  2. This will kick off the blueprint deploy process and load a page to allow you to track the progress of the deployment.
 
-3. **Set Required parameters.**
+6. **Monitor the Activity Queue**
+  * Monitor the Deployment Queue to view the progress of the blueprint.
+  * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+  * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-  Set the following parameters in addition to those associated with your server itself (password, network, group, etc.):
+### Deploy Jenkins to an existing server (alternate option)
+Jenkins Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
-  * **Tomcat server shutdown port** -  Tomcat Shutdown Port default 8005
-  * **Apache server SSL port** - default 443
-  * **Apache server port** - default 80
-  * **User's name** -  Users Name 
-  * **Service Password** -  Provide service password 6 chars or more 
-
-5. **Review and Confirm the Blueprint**
-
-6. **Deploy the Blueprint**
-
-  Once verified, click on the `deploy blueprint` button. You will see the deployment details stating the Blueprint is queued for execution.
-
-  This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within five minutes.
-
-7. **Deployment Complete**
-
-  Once the Blueprint has finished executing on your server you may access Jenkins by navigating to your server via http.
-
-8. **Enable public access** (optional)
-
-  Servers are built using private IPs only with access with client or IPSEC VPN.  For inbound access from the Internet add a public IP to your master server.
-
-  <a href="../../../network/how-to-add-public-ip-to-virtual-machine/">
-    <img style="border:0;width:50px;vertical-align:middle;" src="/knowledge-base/images/shared_assets/fw_icon.png">
-    Adding a public IP to your virtual machine
-  </a>
-
-
-
-### Deploying Jenkins on an existing server (alternate option)
-
-Jenkins is available as a Blueprint Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on the same machines
-
-#### Steps
-
-
+#### Steps to deploy Jenkins to an existing server
 1. **Deploy or Identify an Existing Server**
-
-  Identify the server targeted for Jenkins installation.  Operating sustem must be linux.
-
-  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
+Identify the server targeted for Jenkins installation.  The Operating system must be supported by the Script Package.  See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. **Select to Execute the Package on a Server Group**
+  1. Packages can be executed on one more more servers in a Group.  Search for the public script package named **Install Jenkins on Linux**.
+  2. See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
-  Packages can be executed on one more more servers in a group.  Search for the public script package named **Install Jenkins on Linux**.
+3. **Configure the Parameters**
+Set the following application parameters:
 
-  See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
+* **Apache Web Server Port** - default 80
+* **SSL Port** - default 443
+* **Login** - default user
+* **Your real name** - default User Name
+* **Email Address** - default user@example.com
+* **Password**
 
-3. **Set Parameters**
+4. **Deploy the Script Package**
+Once verified, click on the `execute package` button. This will kick off the deployment process and load a page where you can track the progress. Deployment will typically complete within a few minutes.
 
-  Set the following parameters:
+5. **Monitor the Activity Queue**
+  * Monitor the Deployment Queue to view the progress of the blueprint.
+  * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+  * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
-  * **Tomcat server shutdown port** -  Tomcat Shutdown Port default 8005
-  * **Apache server SSL port** - default 443
-  * **Apache server port** - default 80
-  * **User's name** -  Users Name 
-  * **Service Password** -  Provide service password 6 chars or more 
+### Access your Jenkins server
+After your Blueprint deploys successfully, please follow these instructions to access your server:
 
-4. **Deploy the Blueprint**
-
-  Once verified, click on the `execute package` button. You will see the deployment details stating the Blueprint is queued for execution.
-
-  This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within five minutes.
-
-5. **Deployment Complete**
-
-  Once the Blueprint has finished executing on your server you may access Jenkins by navigating to your server via http.
-
-6. **Enable public access** (optional)
-
-  Servers are built using private IPs only with access with client or IPSEC VPN.  For inbound access from the Internet add a public IP to your master server.
-
-  <a href="../../../network/how-to-add-public-ip-to-virtual-machine/">
-    <img style="border:0;width:50px;vertical-align:middle;" src="/knowledge-base/images/shared_assets/fw_icon.png">
-    Adding a public IP to your virtual machine
-  </a>
-
+  1. Check email to obtain Server Name and IP Address Login information
+  2. Log in to the server and start having fun!
 
 ### Pricing
-
-The costs listed above in the above steps are for the infrastructure only.
-
+The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  There are no Bitnami license costs or additional fees bundled in.
 
 ### About Bitnami
-
 CenturyLink Cloud works with [Bitnami](http://www.bitnami.com) to provide open source software integrations to its customers.  Bitnami is a library of popular server applications and development environments that can be installed with one click, either in your laptop, in a virtual machine or hosted in the cloud. Bitnami takes care of compiling and configuring the applications and all of their dependencies (third-party libraries, language runtimes, databases) so they work out-of-the-box. The resulting packaged software (a 'stack') is then made available as native installers, virtual machines and cloud images. These Bitnami application packages provide a consistent, secure and optimized end-user experience when deploying any app, on any platform.
-
 
 ### Frequently Asked Questions
 
-**Who should I contact for support?**
-
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+#### Who should I contact for support?
 * For issues related to deploying the Bitnami Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [Bitnami Support website](http://www.bitnami.com/support)
-
-**How do I access Jenkins for the first time?**
-
-Nearly all Bitnami stacks can be accessed and configured by navigating to your server with a web browser.
-
-
+* For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
