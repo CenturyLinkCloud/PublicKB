@@ -22,7 +22,7 @@ Currently, this article is to support customers in the Limited Beta program.  Ad
 Our MySQL Database-as-a-Service limited beta provides instant access to a single MySQL-compatible database instance with SSL support, daily backups held for 7 days and basic monitoring.  The free beta now allows a user to configure the amount of CPU, Memory and Storage based on their database needs.  For users that would like some sizing guidance, below are a few common configurations and an approximate number of max connections that can be expected for that size:
 
 **Micro**|**Small**|**Medium**|**Large**|**X-Large**
------------|-----------|--------------|------------
+-----------|-----------|--------------|------------ |------------
 CPUs: 1 Core<br>Memory: 1 GB<br>Storage: 1 GB<br>Connections: 80|CPUs: 1 Core<br>Memory: 2 GB<br>Storage: 1 GB<br>Connections: 470|CPUs: 2 Core<br>Memory: 6 GB<br>Storage: 64 GB<br>Connections: 2025|CPUs: 4 Core<br>Memory: 16 GB<br>Storage: 256 GB<br>Connections: 5900 |CPUs: 8 Core<br>Memory: 32 GB<br>Storage: 512 GB<br>Connections: 12000
 
 #### Prerequisites
