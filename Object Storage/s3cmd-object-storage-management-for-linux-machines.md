@@ -74,7 +74,7 @@ Once S3CMD has been installed, it must be configured to use CenturyLink Cloud’
     <li>Select “Yes” when prompted to save your configuration file.</li>
     <li>The .s3cfg file will be created in your users home directory- open it with your favorite text editor, in this example we will use <strong>vi</strong>. Enter the command: <strong>vi ~/.s3cfg</strong>
     </li>
-    <li>In the configuration file, change the following fields with the appropriate CenturyLink Cloud data center (in this example, we are using Canada- but an American data center would be us.tier3.io, UK would be uk.tier3.io, etc.)</li>
+    <li>In the configuration file, change the following fields with the appropriate CenturyLink Cloud data center</li>
   </ol>
 </ol>
 <pre>host_base = canada.os.ctl.io
