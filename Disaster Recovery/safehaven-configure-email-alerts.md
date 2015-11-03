@@ -63,9 +63,19 @@ The more concise version is as follows:
 /
 ```
 root=postmaster
-mailhub=relay@t3mx.com:25
+mailhub=relay.t3mx.com:25
 FromLineOverride=NO
 AuthUser=UserName@t3mx.com
 AuthPass=*****************
 UseSTARTTLS=no
 ```
+
+### Connecting to the SMTP Relay Service:
+
+Connecting to the SMTP service is very easy as it is done via port 25 from inside the CenturyLink Cloud. Here are the settings:
+•SMTP Host: relay.t3mx.com
+•SMTP Host Port: 25
+•User: (what is provided in your control portal as the alias)
+•Password: (what is provided in your control portal)
+
+You will also need to add SPF record as follows: v=spf1 ip4:66.150.160.0/24
