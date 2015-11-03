@@ -146,7 +146,7 @@ Follow these steps to access and use the CloudFuze software
 4. Configuring Oauth in CloudFuze
 - Follow these instructions to configure Oauth in CloudFuze
 
-1.  Paste below link in browser:
+  1.  Paste below link in browser:
     * https://{domain}/oauthkeys
     * Example: https://mydomain.cloudfuze.com/oauthkeys
 
