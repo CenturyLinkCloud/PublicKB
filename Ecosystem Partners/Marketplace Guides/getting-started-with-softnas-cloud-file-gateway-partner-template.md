@@ -95,10 +95,10 @@ This deployment process for Partner Templates currently requires manual interact
 ### Detailed Steps to Deploy SoftNAS partner template
 SoftNAS deploys in a virtual appliance model, as a CenturyLink Cloud *Partner Template*.  Follow these step by step instructions to deploy a SoftNAS solution in to your CenturyLink Cloud account:
 
-- Open a service task request ticket via email to ServiceTasks@Tier3.com with the following details.  You will need to edit some of the information below.
+- Open a service task request ticket via email to ServiceTasks@ctl.io with the following details.  You will need to edit some of the information below.
 
 ----
-TO: ServiceTasks@Tier3.com
+TO: ServiceTasks@ctl.io
 
 EMAIL SUBJECT:   Ecosystem Partner Template Import Request
 
