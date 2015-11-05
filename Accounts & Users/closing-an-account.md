@@ -1,7 +1,8 @@
 {{{
   "title": "Closing your Account",
-  "date": "11-03-2015",
+  "date": "11-04-2015",
   "author": "Richard Seroter",
+  "keywords": ["terminate", "account"],
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
@@ -9,7 +10,11 @@
 
 ### Overview
 
-We're sorry to see you go, but we want to make sure your offboarding experience is as easy as possible. Follow the steps below to ensure that your account closure goes off without a hitch.
+We're sorry to see you go, but we want to make sure your off-boarding experience is as easy as possible. Follow the steps below to ensure that your account closure goes off without a hitch.
+
+### Exceptions
+
+* Cloud Term Commitment Customers: If you have a cloud term commitment, please contract your sales representative to execute a terminate service order.
 
 ### Steps for closing your account
 
@@ -19,4 +24,4 @@ We're sorry to see you go, but we want to make sure your offboarding experience 
 4. __Click the "Request to close" link found under Account --> Info.__ This link immediately triggers a request (without an additional confirmation prompt) to the CenturyLink team, who will reach out to you to confirm your identity (via [your user PIN](https://www.ctl.io/knowledge-base/support/pin-authentication-for-support-requests/)).  
 ![Close account](../images/2015-11-03_closeaccount01.png)  
 5. __CenturyLink Customer Care will reach out to you via email and ask you to confirm your user PIN.__ Once we receive the PIN value, your account will be put into a "deleted" state and all remaining resources will be deleted. There is no guarantee that any servers or configurations can retrieved after this point.
-6. __Customer receives their final invoice.__ After the close of the current month, you will recieve your final invoice from CenturyLink.
+6. __Customer receives their final invoice.__ After the close of the current month, you will receive your final invoice from CenturyLink.
