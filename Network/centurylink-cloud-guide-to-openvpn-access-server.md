@@ -360,7 +360,7 @@ To create an active and standby configuration using OpenVPN Access Server follow
 
 ### Configuring Client VPN DHCP Pool
 
-1. Navigate to **Configuration > VPN Settings** in the Web Admin UI.  Input a block of IP addresses to be used for DHCP to VPN Clients in the **Dynamic IP Address Network** field. [Cheat Sheets are available online to assist.](//www.aelius.com/njh/subnet_sheet.html)  In this example the DHCP pool will be 10.105.82.65-10.105.82.126 (62 IP addresses).
+1. Navigate to **Configuration > VPN Settings** in the Web Admin UI.  Input the block of IP addresses to be used for DHCP to VPN Clients (previously claimed in the Reserving Client VPN DHCP Pool in the Control Portal portion of this article) in the **Dynamic IP Address Network** field. [Cheat Sheets are available online to assist.](//www.aelius.com/njh/subnet_sheet.html)  In this example the DHCP pool will be 10.105.82.65-10.105.82.126 (62 IP addresses).
 
 * CRITICAL NOTE:  <.11 & >.230 are reserved and not permitted to be used in this pool on the platform.
 
