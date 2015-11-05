@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to Openvpn Access Server",
-  "date": "11-4-2015",
+  "date": "11-5-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -345,7 +345,7 @@ To create an active and standby configuration using OpenVPN Access Server follow
 
 2. Navigate to **Configuration > Sever Network Settings** in the Web Admin UI (NOTE: Remember to use the Shared Virtual IP Address if using HA).  
 
-    * Input the Public IP address (in the VPN server section) previously allocated as part of step 1 in the **Hostname or IP Address** field.  
+    * Input the FQDN you plan to use for the client vpn web URL (i.e. vpn.mycompany.com) in the **Hostname or IP Address** field.  This FQDN should resolve to the public IP address previously allocated and requires you complete the **Installing SSL Web Certificates** portion of this article.  If you plan to deliver services without a FQDN (as shown in this example) just input the public IP address directly.
     * If using HA, update the **Interfaces and IP Addresses** selection by choosing the **Shared Virtual IP Address** in the VPN server section.
 
         ![VPN Server Configuration](../images/centurylink-cloud-guide-to-openvpn-access-server-05.png)
