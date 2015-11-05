@@ -370,11 +370,13 @@ To create an active and standby configuration using OpenVPN Access Server follow
 
 ### Adding Routes to CenturyLink Cloud VLANs
 
-1. Navigate to **Configuration > VPN Settings** in the Web Admin UI.  In the **Routing** section, confirm **Yes, via NAT** is selected and input the CenturyLink Cloud vlans you wish to allow Client VPN users to access once connected.  Generally, this list includes (1) the vlan in which the OpenVPN AS server resides and (2) any vlans that you wish to deliver services from to end users.  CenturyLink Cloud uses /24 networks.  
+1. Navigate to **Configuration > VPN Settings** in the Web Admin UI.  In the **Routing** section, confirm **Yes, via NAT** is selected and input the CenturyLink Cloud vlans you wish to allow Client VPN users to access once connected.  Generally, this list includes any vlans that you wish to deliver services from to end users.  CenturyLink Cloud uses /24 networks.
 
     ![vlan routes](../images/centurylink-cloud-guide-to-openvpn-access-server-09.png)
 
 2. Choose **Save Settings**, followed by **Update Running Server.**
+
+3. Add [Intra Data Center](../Network/connecting-data-center-networks-through-firewall-policies.md) and [Cross Data Center](../Network/creating-cross-data-center-firewall-policies.md) firewall policies from the OpenVPN Access Server vlan to the vlans (networks) that house your services client vpn users will consume.  
 
 ### Configuring LDAP Authentication
 While there are various authentication methods (Local, PAM, Radius, LDAP) this example guide will focus on using LDAP.  
