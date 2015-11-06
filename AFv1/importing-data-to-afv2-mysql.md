@@ -70,7 +70,7 @@ System-Provided:
 #### Example Connection:
   
   ```
-  mysql -h 25dd22ae-0065-454b-8uw3-14c09814cec2.il1.dbaas.ctl.io -u admin -p
+  mysql -h 25dd22ae-0065-454b-8uw3-14c09814cec2.il1.dbaas.ctl.io -u admin -p -P 49340
   ```
   * At the prompt enter the password `GKQY0qbxn7i24Ftt`.
   * To import a MySQL dump file the the default database:

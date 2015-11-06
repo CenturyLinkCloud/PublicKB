@@ -18,7 +18,7 @@ Before deleting any applications or services on AppFog v1 ensure you have local 
 
 AppFog v2 provides SSL for default domains, such as &lt;appname&gt;.useast.appfog.ctl.io. SSL endpoints for custom domains are not available on AppFog v2. If you need your SSL certificate please login to open a [Support Ticket](https://support.appfog.com) or email support@appfog.com. We are unable to provide your certificate key.
 
-For SSL support for a custom domain on AppFog v2 we recommend utilizing a service such as CloudFlare. CloudFlare, or a similar provider, will provide SSL support with their SSL certificate from the end user to the CloudFlare server. You would then need a CNAME record at CloudFlare pointing to hello-node.useast.appfog.ctl.io or hello-node.useast.appfog.ctl.io. Communication from CloudFlare to AppFog would then be covered by the AppFog *.appfog.ctl.io SSL certificate. Although different than the current SSL support on v1, this would provide end-to-end SSL support, enabling use of the Full or Full Strict option on CloudFlare.
+For SSL support for a custom domain on AppFog v2 we recommend utilizing a service such as CloudFlare. CloudFlare, or a similar provider, will provide SSL support with their SSL certificate from the end user to the CloudFlare server. You would then need a CNAME record at CloudFlare pointing to hello-node.useast.appfog.ctl.io or hello-node.useast.appfog.ctl.io. Communication from CloudFlare to AppFog would then be encrypted with the AppFog *.appfog.ctl.io SSL certificate. When configuring SSL on CloudFlare select the Full SSL option. The "Flexible" SSl option will only provide SSL from the end user to CloudFlare. The "Full Strict" option is not supported by AppFog.
 
 
 ### Related Support Documentation:
