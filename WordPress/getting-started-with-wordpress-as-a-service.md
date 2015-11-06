@@ -62,6 +62,10 @@ CenturyLink Cloud's WordPress as a Service is a secure, Enterprise class, cloud-
 
 A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge base article for known WordPress Limitaions](wordpress-known-limitations.md).
 
+**Q: I lost my Git confirmation email, how do I confirm my Git repository?**
+
+A: Use the link here: https://git.wordpress.ctl.io/users/confirmation/new
+
 **Q: How do I migrate my existing WordPress Site to CenturyLink WordPress as a Service?**
 
 A: The CenturyLink Cloud WordPress as a service team has compiled a [knowledge base article for manually migrating a WordPress site to CenturyLink Cloud](wordpress-site-migration-to-centurylink-cloud.md).
