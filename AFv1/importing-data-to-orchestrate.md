@@ -39,7 +39,7 @@ $ cf create-service orchestrate free newdb
 
 The `cf create-service` command will provision a new Orchestrate instance that can later be bound to an application deployed to AppFog.
 
-### Bind MySQL to Application
+### Bind Orchestrate to the Application
 
 To bind the Orchestrate service instance to an [application deployed to AppFog](../AppFog/deploy-an-application.md) you can use the `cf bind-service` command:
 
