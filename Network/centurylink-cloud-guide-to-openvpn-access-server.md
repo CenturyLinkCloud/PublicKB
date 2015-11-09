@@ -47,7 +47,7 @@ OpenVPN Access Server is a full featured secure network tunneling VPN software s
 * **Scalable:** Expand concurrent user volumes and performance quickly to adapt to changing business needs.
 * **Control:** Maintain complete control of the entire OpenVPN Access Server configuration.
 
-![OpenVPN AS High Level Overview](..images/centurylink-cloud-guide-to-openvpn-access-server-hl.png)
+![OpenVPN AS High Level Overview](../images/centurylink-cloud-guide-to-openvpn-access-server-hl.png)
 
 ### Reserving Client VPN DHCP Pool in the Control Portal
 As part of the OpenVPN AS configuration a pool of DHCP addresses in the OpenVPN vlan must be claimed in the Control Portal to avoid these IP addresses from being allocated to other services on the platform.  
