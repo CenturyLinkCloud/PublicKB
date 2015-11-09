@@ -20,8 +20,8 @@
 * [Perform a Test fail over](#Perform-a-Test-fail-over)
 
 ### Overview
-Double-Take allow customer to have a DR environment setup with a few
-easy steps. With Vision Solutions created Blueprint in CLC, this further
+Double-Take enables customer to have a DR environment created with a few
+easy steps. With Vision Solutions created Blueprint in CenturyLink Cloud (CLC), this further
 simplifies the deployment process.
 
 Before deploying any software, a DR plan needs to be in place. Depending
@@ -44,25 +44,30 @@ the products, please see Vision Solutions website.
     replication
 
 -   [Firewall
-    rules](//www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-double-take-blueprint/#postrequisite)
+    rules](../ecosystem partners/marketplace guides/getting-started-with-double-take-blueprint.md)
     are in place for Double-Take Console and agent communication (Please
-    see Knowledge Base article [**Getting Started with Double-Take -
-    Blueprint**](../ecosystem-partners/marketplace-guides/getting-started-with-double-take-blueprint.md)
+    see Knowledge Base article [**Getting Started with Double-Take
+    Blueprint**](../ecosystem partners/marketplace guides/getting-started-with-double-take-blueprint.md)
 
 ### Use Cases
 
-For ease of management, a Double-Take console software is
+For ease of management, a Double-Take console software is the single pane of glass for managing all Double-Take servers, jobs and licenses.  There are two products being covered as part of the knowledge articles, Double-Take DR and Double Availability.
 
-For DR product, there are minimum three servers, the source server, the
-repository server and the target server. The source server is the server
+- Double-Take AVailability
+  - Consists of minimum two servers, the source and target server
+  - there is a real time synchronization between
+source and target servers (see below).
+  ![DT-Availiability-blockdiagram](../images/doubletake/DT-Availiability-blockdiagram.png)
+
+- Double-Take DR
+  - there are minimum three servers, the source server, the
+repository server and the target server.
+  - The source server is the server
 requires DR, with repository server to store the data and target servers
 for disaster recovery (see below).
+  ![DT-DR-blockdiagram](../images/doubletake/DT-DR-blockdiagram.png)
 
-![](../images/doubletake/DT-DR-blockdiagram.png)
 
-For Availability product, there is a real time synchronization between
-source and target servers (see below).
-![](../images/doubletake/DT-Availiability-blockdiagram.png)
 
 Starting with the Blueprint, apply the appropriate license to the server
 during the Blueprint setup. Please see the **Getting Started with Double
@@ -71,8 +76,7 @@ Take - Blueprint** for details of licensing request.
 ### Setting up disaster recovery from on premise server to CenturyLink Cloud
 
 On premise Linux server requires a high availability setup, an offsite
-warm server is needed to meet the business requirement. By using Double
-Take Availability and CenturyLink Cloud, this can be done in a few
+warm server is needed to meet the business requirement. By using Double-Take Availability and CenturyLink Cloud, this can be done in a few
 steps.
 
 ### Considerations
@@ -97,52 +101,52 @@ For this example, the source server is running CentOS 6.
 
 -   Deploy Double-Take Console on a VM in CenturyLink Cloud by running
     the [Double-Take Windows Blueprint from the blueprint
-    library](../ecosystem-partners/marketplace-guides/getting-started-with-double-take-blueprint.md) or install Double-Take Console on a workstation that can communicate with both source and target server (Refer to [Double-Take User Guide](//download.doubletake.com/_download/dt53/docs/Availability/User's%20Guide/Double-Take%20Availability%20User's%20Guide.htm#CSHID=ConsoleInstall.htm|StartTopic=Content%2FConsoleInstall.htm) )
+    library](../ecosystem partners/marketplace guides/getting-started-with-double-take-blueprint.md) or install Double-Take Console on a workstation that can communicate with both source and target server (Refer to [Double-Take User Guide](//download.doubletake.com/_download/dt53/docs/Availability/User's%20Guide/Double-Take%20Availability%20User's%20Guide.htm#CSHID=ConsoleInstall.htm|StartTopic=Content%2FConsoleInstall.htm) )
 
 -   Once installed, start the Console from the “Start’ Menu
 
-    ![](../images/doubletake/DT-console-icon.png)
+    ![DT-console-icon](../images/doubletake/DT-console-icon.png)
 
 -   Double-Take Console will be the management interface to set up the DR environment
 
-    ![](../images/doubletake/DT-console-UI.png)
+    ![DT-console-UI](../images/doubletake/DT-console-UI.png)
 
     Once in the Management Console, go to ‘Help’ and ‘Check for Updates’
     and install any updates available
 
-    ![](../images/doubletake/DT-console-update.png)
+    ![DT-console-update](../images/doubletake/DT-console-update.png)
 
 -   Create the target server by running the Double-Take Blueprint on
     CentOS 6 from the Blueprint library, enter the Linux Double-Take
     Availability for Linux license in the Blueprint screen
 
-    ![](../images/doubletake/DT-blueprint-centos.png)
+    ![DT-blueprint-centos](../images/doubletake/DT-blueprint-centos.png)
 
-    ![](../images/doubletake/DT-blueprint-license.png)
+    ![DT-blueprint-license](../images/doubletake/DT-blueprint-license.png)
 
 -   To manage the new server from the Double-Take Console by clicking on
     ‘Get Started’ and ‘Add Servers’
 
-    ![](../images/doubletake/DT-console-addservers.png)
+    ![DT-console-addservers](../images/doubletake/DT-console-addservers.png)
 
 -   Enter the IP address or hostname, user name and password in the
     prompt:
 
-    ![](../images/doubletake/DT-console-addservers-2.png)
+    ![DT-console-addservers-2](../images/doubletake/DT-console-addservers-2.png)
 
 -   The ‘Manage Servers’ screen will show the status of the management
     connectivity
 
-    ![](../images/doubletake/DT-console-manageservers.png)
+    ![DT-console-manageservers](../images/doubletake/DT-console-manageservers.png)
 
 -   Once connected, the server name and license will be displayed on the
     Management Console
 
-    ![](../images/doubletake/DT-console-managelinux.png)
+    ![DT-console-managelinux](../images/doubletake/DT-console-managelinux.png)
 
 -   The server details can be seen by double clicking the server
 
-    ![](../images/doubletake/DT-console-serverdetails.png)
+    ![DT-console-serverdetails](../images/doubletake/DT-console-serverdetails.png)
 
 ### Target Server
 
@@ -152,55 +156,55 @@ For this example, the source server is running CentOS 6.
 -   The source server will appear on the managed server list with
     ‘Cannot Connect to Double-Take’ activity.
 
-    ![](../images/doubletake/DT-console-managenewservers.png)
+    ![DT-console-managenewservers](../images/doubletake/DT-console-managenewservers.png)
 
 -   Right click on the source server and click on ‘Install’
 
-    ![](../images/doubletake/DT-console-install2take.png)
+    ![DT-console-install2take](../images/doubletake/DT-console-install2take.png)
 
 -   The ‘Install’ screen will give the installation option, like
     temporary directory, installation path as well as schedule of the
     installation![](../images/doubletake/DT-console-install2take-2.png)
 
-    ![](../images/doubletake/DT-console-install2take-3.png)
+    ![DT-console-install2take-3](../images/doubletake/DT-console-install2take-3.png)
 
 -   The ‘Manage Server’ screen will display the status of the
     installation, once completed, the source server will have ‘idle’
     status and license status displayed
 
-    ![](../images/doubletake/DT-console-manageservers-idle.png)
+    ![DT-console-manageservers-idle](../images/doubletake/DT-console-manageservers-idle.png)
 
-    Under ‘Server Preperties’, the network traffic can be encrypted
+    Under ‘Server Properties’, the network traffic can be encrypted
 
-    ![](../images/doubletake/DT-console-serverproperties.png)
+    ![DT-console-serverproperties](../images/doubletake/DT-console-serverproperties.png)
 
 ### Setting up Double-Take Availability
 -   Click on ‘Get Started’ and pick ‘Double-Take Availability’
 
-    ![](../images/doubletake/DT-console-availability.png)
+    ![DT-console-availability](../images/doubletake/DT-console-availability.png)
 
--   Use the “Protect files and folders, an applaication or an entire
+-   Use the “Protect files and folders, an application or an entire
     Windows or Linux server’
 
-    ![](../images/doubletake/DT-console-availability-2.png)
+    ![DT-console-availability-2](../images/doubletake/DT-console-availability-2.png)
 
 -   Pick the source server
 
-    ![](../images/doubletake/DT-console-availability-sourceserver.png)
+    ![DT-console-availability-sourceserver](../images/doubletake/DT-console-availability-sourceserver.png)
 
 -   Depending on the data protection requirement, the options can be
     configured at this screen
 
-    ![](../images/doubletake/DT-console-availability-choosedata.png)
+    ![DT-console-availability-choosedata](../images/doubletake/DT-console-availability-choosedata.png)
 
     Replication Rules
 
-    ![](../images/doubletake/DT-console-availability-replication.png)
+    ![DT-console-availability-replication](../images/doubletake/DT-console-availability-replication.png)
 
 -   Pick the target server, in this case, the server in CenturyLink
     Cloud
 
-    ![](../images/doubletake/DT-console-availability-targetserver.png)
+    ![DT-console-availability-targetserver](../images/doubletake/DT-console-availability-targetserver.png)
 
 -   Setting the options of the replication, please note, there is a
     single NIC in CenturyLink Cloud by default, please make sure it
@@ -209,27 +213,27 @@ For this example, the source server is running CentOS 6.
     configuration’ from ‘Failover Identity’ as changing the IP address
     on the CenturyLink Cloud server would make the server inaccessible.
 
-    ![](../images/doubletake/DT-console-availability-options.png)
+    ![DT-console-availability-options](../images/doubletake/DT-console-availability-options.png)
 
 -   For Reverse Protection option, the data synchronize both ways.
     Depending on the business requirement, it could be helpful. In this
     scenario, one way data replication is configured.
 
-    ![](../images/doubletake/DT-console-availability-reverse.png)
+    ![DT-console-availability-reverse](../images/doubletake/DT-console-availability-reverse.png)
 
 -   An important checklist as the last step, verify all the items of the
     checklist before proceeding
 
-    ![](../images/doubletake/DT-console-availability-checklist.png)
+    ![DT-console-availability-checklist](../images/doubletake/DT-console-availability-checklist.png)
 
 -   Once started, the ‘Manage Job’ screen will display the status of the
     replication
 
-    ![](../images/doubletake/DT-console-availability-managejobs.png)
+    ![DT-console-availability-managejobs](../images/doubletake/DT-console-availability-managejobs.png)
 
     Double click on the job can display the detail status
 
-    ![](../images/doubletake/DT-console-availability-jobdetails.png)
+    ![DT-console-availability-jobdetails](../images/doubletake/DT-console-availability-jobdetails.png)
 
 -   Now, a Double-Take Availability pair is created and all changes from
     the source will be replicated to the target server
@@ -239,21 +243,21 @@ For this example, the source server is running CentOS 6.
 -   Before testing, take a snapshot of the target server using the built
     in snapshot tool in CenturyLink Cloud (please refer to knowledge
     article [Creating and Managing Server
-    Snapshots](//www.ctl.io/knowledge-base/servers/creating-and-managing-server-snapshots/)
+    Snapshots](../servers/creating-and-managing-server-snapshots.md)
 
 -   Right Click on the job and choose ‘Failover, Cutover, or Recover'
 
-    ![](../images/doubletake/DT-console-availability-failover.png)
+    ![DT-console-availability-failover](../images/doubletake/DT-console-availability-failover.png)
 
 -   From the ‘Failover and Cutover’ dialogue box, choose a ‘Perform test
     failover’
 
-    ![](../images/doubletake/DT-console-availability-failover-2.png)
+    ![DT-console-availability-failover-2](../images/doubletake/DT-console-availability-failover-2.png)
 
 -   The target server will be reboot and restart as an identical server
     as the source server
 
-    ![](../images/doubletake/DT-linux-reboot.png)
+    ![doubletake/DT-linux-reboot](../images/doubletake/DT-linux-reboot.png)
 
 -   Once failed over, please ensure the password of the new server
     matches the password of the target server in the CenturyLink Cloud
@@ -265,5 +269,6 @@ For this example, the source server is running CentOS 6.
 -   Once everything tests out, the target server can be rolled back
     using the snapshot to continue the continuous protection
 
-> With this in place, whenever a test or a real failover is required, it
-> can be done from the Double-Take Management Console.
+With this in place, whenever a test or a real failover is required, it can be done from the Double-Take Management Console.
+
+A second article will cover how to set up a disaster recovery environment using Double-Take DR.
