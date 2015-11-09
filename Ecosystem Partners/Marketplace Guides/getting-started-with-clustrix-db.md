@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-![Clustrix Logo](../../Images/clustrix_blue.png)
+![Clustrix Logo](../../images/clustrix_blue.png)
 
 
 ### Technology Profile
