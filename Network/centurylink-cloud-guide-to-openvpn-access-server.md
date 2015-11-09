@@ -395,9 +395,9 @@ While there are various authentication methods (Local, PAM, Radius, LDAP) this e
 
     ![firewall policy](../images/centurylink-cloud-guide-to-openvpn-access-server-10.png)
 
-**Source**|**Destination**|**Ports**
-----------|---------------|---------
-Primary OpenVPN AS<br>Secondary OpenVPN AS<br>OpenVPN AS Shared Virtual IP|Microsoft Active Directory Domain Controller(s)|TCP/389<br>UDP/389
+  **Source**|**Destination**|**Ports**
+  ----------|---------------|---------
+  Primary OpenVPN AS<br>Secondary OpenVPN AS<br>OpenVPN AS Shared Virtual IP|Microsoft Active Directory Domain Controller(s)|TCP/389<br>UDP/389
 
 4. Navigate to **Authentication > General** in the Web Admin UI.  Select **LDAP**, Choose **Save Settings**, followed by **Update Running Server.**
 
