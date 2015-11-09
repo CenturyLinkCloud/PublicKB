@@ -49,7 +49,7 @@ SoftNAS Cloud is packaged with a primary administration interface called SoftNAS
 - Easy set-up and configuration wizards, intuitive admin interface (StorageCenter)
 
 ### Offer
-SoftNAS Cloud File Gateway is now available for CenturyLink Cloud Users to deploy to their account.  The SoftNAS appliance comes with a free trial that let's you use up to 100GB without having to purchase a license.  In order to purchase a license or entitlement, please visit [http://www.softnas.com/pricing](http://www.softnas.com/pricing) or contact [sales@softnas.com](mailto:sales@softnas.com)
+SoftNAS Cloud File Gateway is now available for CenturyLink Cloud Users to deploy to their account.  The SoftNAS appliance comes with a free trial that let's you use up to 100GB without having to purchase a license.  In order to purchase a license or entitlement, please visit [https://www.softnas.com/wp/pricing/](//www.softnas.com/wp/pricing/) or contact [sales@softnas.com](mailto:sales@softnas.com)
 
 SoftNAS has provided a Virtual Appliance - called a Partner Template - that can be deployed to your CenturyLink Cloud account via a Service Task.  Although Service Tasks are ordinarily billed to the end user account, CenturyLink will provide a refund for the Service Task costs associated with deploying the Partner Template.  Please follow the process below to request credit.
 
