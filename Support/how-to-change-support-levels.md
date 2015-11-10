@@ -1,13 +1,13 @@
 {{{
   "title": "How To Change Support Levels",
-  "date": "10-28-2015",
+  "date": "11-03-2015",
   "author": "Anthony Hakim",
   "attachments": []
 }}}
 
 ### Description
-CenturyLink Cloud offers three different types of Support Levels:
-* [Developer (All online sign up customers)]()
+CenturyLink Cloud offers three different types of [Support Levels](https://www.ctl.io/support/):
+* Developer (All online sign up customers)
 * Professional (Default option for contracts)
 * Enterprise (Premier level of support)
 
