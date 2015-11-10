@@ -22,7 +22,7 @@ This article assumes familiarity with Mesosphere and a basic working knowledge o
 
 This article pertains to version 0.1 of the Mesosphere Cluster blueprint and as such should be considered a technical preview. Advanced Mesosphere administration and scaling is beyond the scope of this article. 
 
-For more information, please visit the official Mesosphere [documentaiton](https://docs.mesosphere.com/) and [support](https://docs.mesosphere.com/support/)
+For more information, please visit the official Mesosphere [documentation](https://docs.mesosphere.com/) and [support](https://docs.mesosphere.com/support/)
 
 This blueprint bundles the Open-Source Community release of Mesosphere. More information for commercial support for Mesosphere is available [here](https://mesosphere.com/product/).
 
