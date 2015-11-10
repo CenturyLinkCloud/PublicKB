@@ -29,7 +29,7 @@ In this article we will walk through an example migration from AppFog v1 to AppF
 
 ### Establish AppFog v2 Account
 
-First we need to create an account on the CenturyLink platform, submit the discount form, and install the `cf` CLI tool. The Knowledge Base articles on these subjects can be found in the [AppFog Section](../appfog.md)
+First we need to create an account on the CenturyLink platform, submit the discount form, and install the `cf` CLI tool. The Knowledge Base articles on these subjects can be found in the [AppFog Section](../AppFog/)
 
 1. Create an account at: https://www.ctl.io by selecting "Free Trial" from the upper corner
 2. Once an account is created, complete the [Discount Request Form](https://www.ctl.io/appfog/v1-discount-request/). This will discount AppFog v2 for one year for AppFog v1 users.
