@@ -33,32 +33,32 @@ Installs an IPS agent on the designated host.
 
 ##### Structure
 
->POST https://api.client-security.ctl.io/ips/api/app/{accountAlias}
+>POST https://api.client-security.ctl.io/ips/api/app/
 
-'[
     {
-        "hostName":{serverName}
+        "hostName":"serverName",
+        "accountAlias":"CLC Account Alias"
     }
-]'
-
-##### URI Parameters
-
-| **Name**     | **Type** | **Description**                    | **REQ.**|
-|--------------|----------|------------------------------------|---------|
-|accountAlias  |String    |Short code for a particular account |Yes      |
 
 ##### Content Properties
 
-| **Name**     | **Type** | **Description**                                               | **REQ.** |
-|--------------|----------|---------------------------------------------------------------|----------|
-|serverName    |String    |The name of the server that the destination should be set for. |Yes       |
+| **Name**     | **Type** | **Description**                                               | **REQ.**|
+|--------------|----------|---------------------------------------------------------------|---------|
+|accountAlias  |String    |Short code for a particular account                            |Yes      |
+|hostName      |String    |The name of the server that the destination should be set for. |Yes      |
+
+##### Example
+    {
+        "hostName":"VA1CLCDTEST04",
+        "accountAlias":"CLCD"
+    }
 
 ##Notification Destination
 
 
 ### Configuration Process via our API
 
-Sets a destination for all IPS event notifications to be sent to. 
+These calls will do all of the operations for configuring, retrieving, updating and deleting a notification destination. 
 Calls to this operation must include a token acquired from the authentication endpoint. 
 See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
@@ -66,14 +66,20 @@ See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for in
 
 ##### Structure
 
+###### Create and Update
 >PUT https://api.client-security.ctl.io/ips/api/notifications/{accountAlias}/{serverName}
 
-'[
    {
        "url":{some URL},
       "typeCode":{endpoint type}
    }
-]'
+
+###### Retrieve
+>GET https://api.client-security.ctl.io/ips/api/notifications/{accountAlias}/{serverName}
+
+###### Delete
+>DELETE https://api.client-security.ctl.io/ips/api/notifications/{accountAlias}/{serverName}
+
 
 #### Request
 
@@ -115,28 +121,27 @@ The options are 16-23 for descriptions follow the link: [https://en.wikipedia.or
 
 >PUT http://api.client-security.ctl.io/ips/api/notification/ALIAS/VA1ALIASMYSVR01
 
-'[
-          {
-              "url": "http://my.slack.webhook",
-              "typeCode": "SLACK"
-          },
-          {
-               "url": "http://my.generic.webhook",
-               "typeCode": "WEBHOOK"
-          },
-          {
-              "typeCode": "SYSLOG",
-              "sysLogSettings": {
-                  "ipAddress": "12345",
-                  "udpPort": "8081",
-                  "facility": "16"
-              }
-          },
-          {
-              "typeCode": "EMAIL",
-              "emailAddress": "youremail@site.com"
-          }
-]'
+    {
+        "url": "http://my.slack.webhook",
+        "typeCode": "SLACK"
+    },
+    {
+        "url": "http://my.generic.webhook",
+        "typeCode": "WEBHOOK"
+    },
+    {
+        "typeCode": "SYSLOG",
+        "sysLogSettings": 
+            {
+                "ipAddress": "12345",
+                "udpPort": "8081",
+                "facility": "16"
+            }
+    },
+    {
+        "typeCode": "EMAIL",
+        "emailAddress": "youremail@site.com"
+    }
       
 If you are using the generic "WEBHOOK" type for your notifications the following key-value pair are to be expected in return when an event is triggered
 ##### Response Object
@@ -174,12 +179,22 @@ Uninstalls an IPS agent from a designated host.
 
 ##### Structure
 
-DELETE https://api.client-security.ctl.io/ips/api/app/{accountAlias}/{policyId}/{serverName}
+>DELETE https://api.client-security.ctl.io/ips/api/app/
 
-##### URI Parameters
+    {
+        "hostName":"serverName",
+        "accountAlias":"CLC Account Alias"
+    }
+
+##### Content Properties
 
 | **Name**     | **Type** | **Description**                                               | **REQ.**|
 |--------------|----------|---------------------------------------------------------------|---------|
 |accountAlias  |String    |Short code for a particular account                            |Yes      |
-|policyId      |String    |                                                               |Yes      |
-|serverName    |String    |The name of the server that the destination should be set for. |Yes      |
+|hostName      |String    |The name of the server that the destination should be set for. |Yes      |
+
+##### Example
+    {
+        "hostName":"VA1CLCDTEST04",
+        "accountAlias":"CLCD"
+    }
