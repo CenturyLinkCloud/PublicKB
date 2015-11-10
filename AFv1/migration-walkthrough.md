@@ -65,7 +65,11 @@ define('DB_COLLATE', '')
  ```
 
 5. The default application memory reservation is 1GB and the default buildpack will support PHP 5.5 and 5.6. Specify the PHP custom buildpack when deploying PHP 5.3 and 5.4 applications, if necessary also specify the memory allocation:
-`cf push <appname> -m <memory> -b https://github.com/CenturyLinkCloud/php-buildpack.git#af_custom_php`
+ 
+ ```
+cf push <appname> -m <memory> -b https://github.com/CenturyLinkCloud/php-buildpack.git#af_custom_php
+ ```
+ 
 6. For this example we would use the following commands to push the example-app and test-app applications to AppFog v2:
 ```
 cf push example-app -m -128M -b https://github.com/CenturyLinkCloud/php-buildpack.git#af_custom_php
