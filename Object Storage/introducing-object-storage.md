@@ -27,7 +27,7 @@ A: Object Storage users are distinct from CenturyLink Cloud users, but all resid
 
 **Q: What kind of data belongs in Object Storage?**
 
-A: Object Storage is for key-value data. It is a schema-less repository that can store large objects (up to 6 TB) and is perfect for archive data, Microsoft Office documents and more.
+A: Object Storage is for key-value data. It is a schema-less repository that can store large objects (up to 5 TB) and is perfect for archive data, Microsoft Office documents and more.
 
 **Q: How available is my data?**
 
