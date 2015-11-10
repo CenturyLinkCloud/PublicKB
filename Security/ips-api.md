@@ -7,7 +7,7 @@
 
 #IPS-API
 
-The IPS-API is a RESTful api and as such will use the normal modes of interaction with the api.
+The IPS-API is a RESTful api.
 IPS or Intrusion Prevention Service will require you to have a server and account in the CenturyLink Platform.
 
 ##Authentication
@@ -25,7 +25,7 @@ To interact with the IPS-API you will need to provide in the headers two fields
 |Content-Type   |applicaiton\json           |
 |Authorization  |Bearer (CLC Bearer Token)  |
 
-##Installing
+##Install
 
 Installs an IPS agent on the designated host. 
 
@@ -53,6 +53,35 @@ Installs an IPS agent on the designated host.
         "accountAlias":"CLCD"
     }
 
+
+##Uninstall
+
+Uninstalls an IPS agent from a designated host.
+
+#### URL
+
+##### Structure
+
+>DELETE https://api.client-security.ctl.io/ips/api/app/
+
+    {
+        "hostName":"serverName",
+        "accountAlias":"CLC Account Alias"
+    }
+
+##### Content Properties
+
+| **Name**     | **Type** | **Description**                                               | **REQ.**|
+|--------------|----------|---------------------------------------------------------------|---------|
+|accountAlias  |String    |Short code for a particular account                            |Yes      |
+|hostName      |String    |The name of the server that the destination should be set for. |Yes      |
+
+##### Example
+    {
+        "hostName":"VA1CLCDTEST04",
+        "accountAlias":"CLCD"
+    }
+    
 ##Notification Destination
 
 
@@ -143,7 +172,7 @@ The options are 16-23 for descriptions follow the link: [https://en.wikipedia.or
         "emailAddress": "youremail@site.com"
     }
       
-If you are using the generic "WEBHOOK" type for your notifications the following key-value pair are to be expected in return when an event is triggered
+The following key-value pairs are sent to the notification destination when an event is triggered. If you are using the generic "WEBHOOK" type for your notifications the following will be sent in json format.
 ##### Response Object
 | **Name** | **Type** | **Description**                                                                     |
 |----------|----------|-------------------------------------------------------------------------------------|
@@ -170,31 +199,3 @@ If you are using the generic "WEBHOOK" type for your notifications the following
 |sourcePort|String    |Source Port                                                                          |
 |tags      |String    |Name of any event tags assigned to this event                                        |
 |severity  |String    |Severity                                                                             |
-
-##Uninstalling
-
-Uninstalls an IPS agent from a designated host.
-
-#### URL
-
-##### Structure
-
->DELETE https://api.client-security.ctl.io/ips/api/app/
-
-    {
-        "hostName":"serverName",
-        "accountAlias":"CLC Account Alias"
-    }
-
-##### Content Properties
-
-| **Name**     | **Type** | **Description**                                               | **REQ.**|
-|--------------|----------|---------------------------------------------------------------|---------|
-|accountAlias  |String    |Short code for a particular account                            |Yes      |
-|hostName      |String    |The name of the server that the destination should be set for. |Yes      |
-
-##### Example
-    {
-        "hostName":"VA1CLCDTEST04",
-        "accountAlias":"CLCD"
-    }
