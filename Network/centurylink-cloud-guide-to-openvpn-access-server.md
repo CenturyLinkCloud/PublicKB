@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to Openvpn Access Server",
-  "date": "11-6-2015",
+  "date": "11-10-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -22,6 +22,7 @@
 * [Adding Routes to CenturyLink Cloud VLANs](#Adding-Routes-to-CenturyLink-Cloud-VLANs)
 * [Configuring LDAP Authentication](#Configuring-LDAP-Authentication)
 * [Installing SSL Web Certificates](#Installing-SSL-Web-Certificates)
+* [Two Factor Authentication](#Two-Factor-Authentication)
 * [Connecting to Client VPN Services](#Connecting-to-Client-VPN-Services)
 
 ### Overview
@@ -434,6 +435,35 @@ While there are various authentication methods (Local, PAM, Radius, LDAP) this e
 6. If you have provided all the necessary files correctly, a successful message should appear. Choose **Save Settings**, followed by **Update Running Server.**
 
     ![Validation Results](../images/centurylink-cloud-guide-to-openvpn-access-server-17.png)
+
+### Two Factor Authentication
+There is a marketplace of Two Factor Authentication services that can be deployed in conjunction with OpenVPN Access Server.  Customers who wish to enable such features should evaluation the community to find the product that suites their needs not only for client vpn use but a larger corporate strategy for two factor authentication.  As an example use case, our teams setup two factor authentication using [Duo Security](//www.duosecurity.com) and leveraged their mobile phone applications.  While this guide isn't meant to be a complete configuration guide for [Duo Security](//www.duosecurity.com), a high level approach and diagram is detailed below.
+
+![Duo OpenVPN high level diagram](../images/centurylink-cloud-guide-to-openvpn-access-server-22.png)
+
+1. Sign up for a [Duo Security](//www.duosecurity.com) account.
+
+2. Choose an Application to Protect, in this case OpenVPN Access Server
+
+    ![Protect OpenVPN AS](../images/centurylink-cloud-guide-to-openvpn-access-server-18.png)
+
+3. Create Users and Groups for your OpenVPN Application.  [Duo Security](//www.duosecurity.com) has various options to sync with Active Directory, import users to reduce effort.  
+
+    ![Users Duo Security](../images/centurylink-cloud-guide-to-openvpn-access-server-19.png)
+
+    ![Groups Duo Security](../images/centurylink-cloud-guide-to-openvpn-access-server-20.png)
+
+4. Configure 2FA Devices and download Duo Mobile for mobile phones.
+
+    ![2FA devices Duo Security](../images/centurylink-cloud-guide-to-openvpn-access-server-21.png)
+
+5. [Configure OpenVPN Access Server](//www.duosecurity.com/docs/openvpn_as) for use with Duo Security
+
+6. Connect to client VPN and use the Duo Mobile application to generate a passcode.
+
+    ![input duo passcode](../images/centurylink-cloud-guide-to-openvpn-access-server-23.png)
+
+    ![generate passcode on phone](../images/centurylink-cloud-guide-to-openvpn-access-server-24.png)
 
 ### Connecting to Client VPN Services
 
