@@ -15,7 +15,7 @@ This document is for users of AppFog v1 for migration to the next generation of 
 Before deleting any applications or services on AppFog v1 ensure you have local copies. Once apps and services are deleted it is **permanent**. We will not be able to provide a backup.
 
 ### Importing Data Into CenturyLink MySQL DBaaS
-* To learn how to create, bind, and determine connection credentials review our Knowledge Base article on [Using CenturyLink MySQL with AppFog Applications](../Database/connecting-to-mysql-dbaas-over-ssl-on-appfog.md).
+* To learn how to create, bind, and determine connection credentials review our Knowledge Base article on [Using CenturyLink MySQL with AppFog Applications](../AppFog/using-ctl-mysql-with-appfog-apps.md).
 * You can access your database from the command line using the credentials provided by the VCAP_SERVICES environment variable. You can also [Connect to MySQL DBaaS over SSL on AppFogv2](../Database/connecting-to-mysql-dbaas-over-ssl-on-appfog.md). The certificate needs to be in proper .pem format:
 
 ```
@@ -70,7 +70,7 @@ System-Provided:
 #### Example Connection:
   
   ```
-  mysql -h 25dd22ae-0065-454b-8uw3-14c09814cec2.il1.dbaas.ctl.io -u admin -p
+  mysql -h 25dd22ae-0065-454b-8uw3-14c09814cec2.il1.dbaas.ctl.io -u admin -p -P 49340
   ```
   * At the prompt enter the password `GKQY0qbxn7i24Ftt`.
   * To import a MySQL dump file the the default database:

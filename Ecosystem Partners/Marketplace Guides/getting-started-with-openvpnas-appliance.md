@@ -72,7 +72,7 @@ CenturyLink Cloud Users
 
 7. **Deployment Complete**
 
-  Once the Blueprint has finished execution you will a number of emails.  The first will indicate the server has been deployed and the second will come a few minutes later once the appliance has been fully activated.  If you do not receive an email like the one shown below you may have had a deployment error - review the *Blueprint Build Log* to for error messages.
+  Once the Blueprint has finished execution you will receive a number of emails.  The first will indicate the server has been deployed and the second will come a few minutes later once the appliance has been fully activated.  If you do not receive an email like the one shown below you may have had a deployment error - review the *Blueprint Build Log* to for error messages.
 
   <div style="float:left;width:45%;margin-left:1em;">
     *Email #1: Appliance deploy started*
@@ -90,6 +90,24 @@ CenturyLink Cloud Users
 
   Access your appliance and finalize configuration by opening an ssh connection to your server and loging in as the `root` user with the password credentials supplied in step (4) above.
 
+  Note that on first login you will finalize the configuration.  For proper authentication select root as your login user or if leveraging the default openvpn user you'll need to set the credentials for that user with the `passwd openvpn` command:
+
+  ```
+  To initially login to the Admin Web UI, you must use a
+  username and password that successfully authenticates you
+  with the host UNIX system (you can later modify the settings
+  so that RADIUS or LDAP is used for authentication instead).
+
+  You can login to the Admin Web UI as "openvpn" or specify
+  a different user account to use for this purpose.
+
+  Do you wish to login to the Admin UI as "openvpn"?
+  > Press ENTER for default [yes]: no
+
+  > Specify the username for an existing user or for the new user account: root
+  Note: This user already exists.
+  ```
+
 
 ### Pricing
 
@@ -102,7 +120,6 @@ After deploying this Blueprint, you may secure entitlements to the technology us
 Additional resources:
 
 * [OpenVPN Appliance FAQ](https://openvpn.net/index.php/access-server/section-faq-openvpn-as/virtual-appliance.html)
-* [Appliance quick start guide](https://openvpn.net/index.php/access-server/section-faq-openvpn-as/virtual-appliance.html)
 
 ### Frequently Asked Questions
 
