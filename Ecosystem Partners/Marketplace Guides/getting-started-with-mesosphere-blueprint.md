@@ -195,6 +195,10 @@ An example job to test routing:
 eg. `curl -vv -H "Host: dirlist.foobar.com"" 34.34.34.34` should resolve to the dirlist container.
 
 
+### Troubleshooting
+If on the initial install your apps are not running and stuck in deployment, restart the cluster of servers once. 
+
+
 ### Pricing
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Mesosphere license costs or additional fees bundled in for the Community Release.
 
