@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to Openvpn Access Server",
-  "date": "11-5-2015",
+  "date": "11-6-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -46,6 +46,8 @@ OpenVPN Access Server is a full featured secure network tunneling VPN software s
 * **Flexible Authentication:** Leverage LDAP, Radius and even Dual Factor Authentication for client vpn services.
 * **Scalable:** Expand concurrent user volumes and performance quickly to adapt to changing business needs.
 * **Control:** Maintain complete control of the entire OpenVPN Access Server configuration.
+
+![OpenVPN AS High Level Overview](../images/centurylink-cloud-guide-to-openvpn-access-server-hl.png)
 
 ### Reserving Client VPN DHCP Pool in the Control Portal
 As part of the OpenVPN AS configuration a pool of DHCP addresses in the OpenVPN vlan must be claimed in the Control Portal to avoid these IP addresses from being allocated to other services on the platform.  
@@ -345,7 +347,7 @@ To create an active and standby configuration using OpenVPN Access Server follow
 
 2. Navigate to **Configuration > Sever Network Settings** in the Web Admin UI (NOTE: Remember to use the Shared Virtual IP Address if using HA).  
 
-    * Input the FQDN you plan to use for the client vpn web URL (i.e. vpn.mycompany.com) in the **Hostname or IP Address** field.  This FQDN should resolve to the public IP address previously allocated and requires you complete the **Installing SSL Web Certificates** portion of this article.  If you plan to deliver services without a FQDN (as shown in this example) just input the public IP address directly.
+    * Input the FQDN you plan to use for the client vpn web URL (i.e. vpn.mycompany.com) in the **Hostname or IP Address** field.  This FQDN should resolve to the public IP address previously allocated and requires you complete the **Installing SSL Web Certificates** portion of this article.  
     * If using HA, update the **Interfaces and IP Addresses** selection by choosing the **Shared Virtual IP Address** in the VPN server section.
 
         ![VPN Server Configuration](../images/centurylink-cloud-guide-to-openvpn-access-server-05.png)
@@ -393,10 +395,9 @@ While there are various authentication methods (Local, PAM, Radius, LDAP) this e
 
     ![firewall policy](../images/centurylink-cloud-guide-to-openvpn-access-server-10.png)
 
-    **Source**|**Destination**|**Ports**
-    ----------|---------------|---------
-    Primary OpenVPN AS<br>Secondary OpenVPN AS<br>OpenVPN AS Shared Virtual IP|Microsoft Active Directory Domain Controller(s)|TCP/389<br>UDP/389
-
+  **Source**|**Destination**|**Ports**
+  ----------|---------------|---------
+  Primary OpenVPN AS<br>Secondary OpenVPN AS<br>OpenVPN AS Shared Virtual IP|Microsoft Active Directory Domain Controller(s)|TCP/389<br>UDP/389
 
 4. Navigate to **Authentication > General** in the Web Admin UI.  Select **LDAP**, Choose **Save Settings**, followed by **Update Running Server.**
 
@@ -413,7 +414,26 @@ While there are various authentication methods (Local, PAM, Radius, LDAP) this e
 6. Choose **Save Settings**, followed by **Update Running Server.**
 
 ### Installing SSL Web Certificates
-Customers can follow the [OpenVPN AS documentation](//docs.openvpn.net/how-to-tutorialsguides/administration/installing-and-managing-ssl-web-certificates-in-openvpn-access-server/) to install and managed SSL web certificates. Update your DNS records to point to the Public IP created previously.  
+
+1. Connect to [Client VPN.](../Network/how-to-configure-client-vpn.md)
+
+2. SSH to the **Shared Virtual IP Address** (or primary node for standalone deployments) of the OpenVPN Access Server cluster and login using root.
+
+3. Run the following command to generate the certificate signing request (CSR) and your private key.
+
+    ```
+    openssl req -out server.csr -new -newkey rsa:4096 -sha256 -nodes -keyout server.key
+    ```
+
+4. Once your certificate authority has approved your certificate signing request (CSR), it will send you the signed certificate and a certificate bundle.
+
+5. Navigate to **Configuration > Web Server** in the Web Admin UI.  Provide the three files necessary for certificate installation, then press the Validate button.
+
+    ![Validate Certificates](../images/centurylink-cloud-guide-to-openvpn-access-server-16.png)
+
+6. If you have provided all the necessary files correctly, a successful message should appear. Choose **Save Settings**, followed by **Update Running Server.**
+
+    ![Validation Results](../images/centurylink-cloud-guide-to-openvpn-access-server-17.png)
 
 ### Connecting to Client VPN Services
 
