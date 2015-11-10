@@ -3,7 +3,7 @@
 {{{
   "title": "Installing OSS Mesosphere on Ubuntu x64'>",
   "date": "November 9, 2015",
-  "author": "Albert Choi <albert.choi@ctl.io>",
+  "author": "Albert Choi",
   "attachments": [],
   "contentIsHTML": false
 }}}
