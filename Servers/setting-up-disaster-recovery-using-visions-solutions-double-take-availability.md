@@ -48,35 +48,31 @@ the products, please see Vision Solutions website.
     are in place for Double-Take Console and agent communication (Please
     see Knowledge Base article [**Getting Started with Double-Take
     Blueprint**](../ecosystem partners/marketplace guides/getting-started-with-double-take-blueprint.md)
+-	Review the [Self-Service VM Import / OVF Requirements](//www.ctl.io/knowledge-base/servers/self-service-vm-import-ovf-requirements/) to ensure successfully DR
+
 
 ### Use Cases
 
 For ease of management, a Double-Take console software is the single pane of glass for managing all Double-Take servers, jobs and licenses.  There are two products being covered as part of the knowledge articles, Double-Take DR and Double Availability.
 
-- Double-Take AVailability
+- Double-Take Availability
   - Consists of minimum two servers, the source and target server
-  - there is a real time synchronization between
-source and target servers (see below).
+  - there is a real time synchronization between source and target servers (see below).
   ![DT-Availiability-blockdiagram](../images/doubletake/DT-Availiability-blockdiagram.png)
 
 - Double-Take DR
-  - there are minimum three servers, the source server, the
-repository server and the target server.
-  - The source server is the server
-requires DR, with repository server to store the data and target servers
-for disaster recovery (see below).
+  - there are minimum three servers, the source server, the repository server and the target server.
+  - The source server is the server requires DR, with repository server to store the data and target servers for disaster recovery (see below).
   ![DT-DR-blockdiagram](../images/doubletake/DT-DR-blockdiagram.png)
 
+  This knowledge article covers Double-Take Availability.
 
 
-Starting with the Blueprint, apply the appropriate license to the server
-during the Blueprint setup. Please see the **Getting Started with Double
-Take - Blueprint** for details of licensing request.
+Starting with the Blueprint, apply the appropriate license to the server during the Blueprint setup. Please see the [Getting Started with Double-Take Blueprint](../ecosystem partners/marketplace guides/getting-started-with-double-take-blueprint.md) for details of licensing request.
 
 ### Setting up disaster recovery from on premise server to CenturyLink Cloud
 
-On premise Linux server requires a high availability setup, an offsite
-warm server is needed to meet the business requirement. By using Double-Take Availability and CenturyLink Cloud, this can be done in a few
+On premise Linux server requires a high availability setup, an offsite warm server is needed to meet the business requirement. By using Double-Take Availability and CenturyLink Cloud, this can be done in a few
 steps.
 
 ### Considerations
@@ -87,13 +83,11 @@ In preparation, there are several factors need to be considered:
     [Double
     Take](//www.visionsolutions.com/docs/default-source/ha-dr-solution/double-take-availability-for-linux/doiuble-take-availability-for-linux---technical-data-sheet.pdf?sfvrsn=2)
 
--   Currently Double-Take Blueprints are available on CentOS 5/6, RHEL
-    5/6 and Microsoft Windows 2008 R2 and 2012 R2
+-   Currently Double-Take Blueprints are available on CentOS 5/6, RHEL 5/6 and Microsoft Windows 2008 R2 and 2012 R2
 
 -   Bandwidth and connectivity between source and target
 
--   Double-Take Console (for management) is part of the Windows
-    Blueprint installation
+-   Double-Take Console (for management) is part of the Windows Blueprint installation
 
 ### Source Server
 
