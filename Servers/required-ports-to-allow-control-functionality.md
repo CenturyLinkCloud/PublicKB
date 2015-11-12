@@ -18,11 +18,11 @@ For Linux VMs, customers need to ensure that the following ports are running:
 
 * SSH (port 22).
 
-  ![SSH on Linux](../images/required-ports-to-allow-control-functionality1.png)
+  ![Required ports to allow control functionality](../images/required-ports-to-allow-control-functionality1.png)
 
 ### Windows
 For Windows VMs, customers need to ensure that the following ports are running:
 
 * WinRM (5985).
 
-  ![WinRM on Windows](../images/required-ports-to-allow-control-functionality2.png)
+  ![Required ports to allow control functionality](../images/required-ports-to-allow-control-functionality2.png)
