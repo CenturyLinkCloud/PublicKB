@@ -1,4 +1,4 @@
-{{{ "title": "Removing Intrusion Prevention System (IPS)", 
+{{{ "title": "IPS-API", 
         "date": "11-09-2015", 
         "author": "Client-Security", 
         "attachments": [], 
