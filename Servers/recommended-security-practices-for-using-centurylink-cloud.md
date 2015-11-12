@@ -10,13 +10,13 @@
 The purpose of this article is to provide some general recommended security practices for customers using CenturyLink Cloud. These practices are based on common scenarios we have seen in customer environment, but is not an exhaustive list of all possible security considerations and is not intended to replace having a proper security risk assessment performed on the customer environment.
 
 ### Audience
-* All CenturyLink Cloud customers
+* All CenturyLink Cloud customers.
 
 ### Impact
 Failure to properly secure systems and applications that are exposed to the public network can result in the systems being compromised, leakage of proprietary data, etc. In some cases, a compromised machine can be used by remote attackers as part of a botnet to attack other systems across the Internet.
 
 ### Prerequisites
-None
+None.
 
 ### Detailed Steps
 1. Do not open SSH (port 22) or RDP (port 3389) to the public network. Customers wishing to manage their servers over SSH and RDP should use the provided software-based VPN or other private connection option such as Direct Connect, IPSec VPN, etc. More information about the VPN can be found in our knowledge base [here](https://www.ctl.io/knowledge-base/network/how-to-configure-client-vpn/).
