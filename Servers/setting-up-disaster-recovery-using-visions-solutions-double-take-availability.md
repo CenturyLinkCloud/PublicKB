@@ -9,15 +9,15 @@
 
 ### Table of contents
 
-* [Overview](#Overview)
-* [Prerequisites](#Prerequisites)
-* [Use Cases](#Use-Cases)
-* [Setting up disaster recovery from on premise server to CenturyLink Cloud](#Setting-up-disaster-recovery-from-on-premise-server-to-CenturyLink-Cloud)
-* [Considerations](#Considerations)
-* [Source Server](#Source-Server)
-* [Target Server](#Target-Server)
-* [Setting up Double-Take Availability](#Setting-up-Double-Take-Availability)
-* [Perform a Test fail over](#Perform-a-Test-fail-over)
+* [Overview](#overview)
+* [Prerequisites](#prerequisites)
+* [Use Cases](#use-Cases)
+* [Setting up disaster recovery from on premise server to CenturyLink Cloud](#setting-up-disaster-recovery-from-on-premise-server-to-centuryLink-Cloud)
+* [Considerations](#considerations)
+* [Source Server](#source-Server)
+* [Target Server](#target-Server)
+* [Setting up Double-Take Availability](#setting-up-double-take-availability)
+* [Perform a Test fail over](#perform-a-test-fail-over)
 
 ### Overview
 Double-Take enables customer to have a DR environment created with a few
@@ -50,7 +50,7 @@ the products, please see Vision Solutions website.
     are in place for Double-Take Console and agent communication (Please
     see Knowledge Base article [**Getting Started with Double-Take
     Blueprint**](../ecosystem partners/marketplace guides/getting-started-with-double-take-blueprint.md)
--	 Review the [Self-Service VM Import / OVF Requirements](//www.ctl.io/knowledge-base/servers/self-service-vm-import-ovf-requirements/) to ensure successfully DR
+-	 Review the [Self-Service VM Import / OVF Requirements](../servers/self-service-vm-import-ovf-requirements.md) to ensure successfully DR
 
 
 ### Use Cases
