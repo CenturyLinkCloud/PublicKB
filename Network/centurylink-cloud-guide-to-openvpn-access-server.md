@@ -429,7 +429,7 @@ While there are various authentication methods (Local, PAM, Radius, LDAP) this e
     ![Validation Results](../images/centurylink-cloud-guide-to-openvpn-access-server-17.png)
 
 ### Two Factor Authentication
-There is a marketplace of Two Factor Authentication services that can be deployed in conjunction with OpenVPN Access Server.  Customers who wish to enable such features should evaluation the community to find the product that suites their needs not only for client vpn use but a larger corporate strategy for two factor authentication.  As an example use case, our teams setup two factor authentication using [Duo Security](//www.duosecurity.com) and leveraged their mobile phone applications.  While this guide isn't meant to be a complete configuration guide for [Duo Security](//www.duosecurity.com), a high level approach and diagram is detailed below.
+There is a marketplace of Two Factor Authentication services that can be deployed in conjunction with OpenVPN Access Server. Customers who wish to enable such features should evaluate the community to find the product that fits their needs, not only for client vpn use but a larger corporate strategy for two factor authentication.  As part of this KB, our teams setup two factor authentication using [Duo Security](//www.duosecurity.com) and leveraged their mobile phone applications.  While this guide isn't meant to be a complete configuration guide for [Duo Security](//www.duosecurity.com), a high level approach and diagram is detailed below.
 
 ![Duo OpenVPN high level diagram](../images/centurylink-cloud-guide-to-openvpn-access-server-22.png)
 
