@@ -14,8 +14,8 @@
 * [Use Cases](#use-cases)
 * [Setting up disaster recovery from on premise server to CenturyLink Cloud](#setting-up-disaster-recovery-from-on-premise-server-to-centuryLink-cloud)
 * [Considerations](#considerations)
-* [Source Server](#source-Server)
-* [Target Server](#target-Server)
+* [Source Server](#source-server)
+* [Target Server](#target-server)
 * [Setting up Double-Take Availability](#setting-up-double-take-availability)
 * [Perform a Test fail over](#perform-a-test-fail-over)
 
@@ -82,8 +82,7 @@ steps.
 In preparation, there are several factors need to be considered:
 
 -   Verify the Linux version on the Source Server is supported by
-    [Double
-    Take](//www.visionsolutions.com/docs/default-source/ha-dr-solution/double-take-availability-for-linux/doiuble-take-availability-for-linux---technical-data-sheet.pdf?sfvrsn=2)
+    [Double-Take](//www.visionsolutions.com/docs/default-source/ha-dr-solution/double-take-availability-for-linux/doiuble-take-availability-for-linux---technical-data-sheet.pdf?sfvrsn=2)
 
 -   Currently Double-Take Blueprints are available on CentOS 5/6, RHEL 5/6 and Microsoft Windows 2008 R2 and 2012 R2
 
