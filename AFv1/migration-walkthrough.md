@@ -104,9 +104,9 @@ System-Provided:
     "credentials": {
      "certificate": "-----BEGIN CERTIFICATE-----\n{...}\n-----END CERTIFICATE-----",
      "dbname": "default",
-     "host": "25dd22ae-0065-454b-8uw3-14c09814cec2.il1.dbaas.ctl.io",
-     "password": "GKQY0qbxn7i24Ftt",
-     "port": 49340,
+     "host": "HOST",
+     "password": "PASSWORD",
+     "port": PORT,
      "username": "admin"
     },
     "label": "ctl_mysql",
@@ -120,7 +120,7 @@ System-Provided:
 6. Use the VCAP_SERVICES credentials to connect to the database and import the `example-db.sql` dump file:
 
 ```
-mysql -h 25dd22ae-0065-454b-8uw3-14c09814cec2.il1.dbaas.ctl.io default -u admin -p -P 49340 < /path/to/file/example-db.sql
+mysql -h <HOST> default -u admin -p -P <PORT> < /path/to/file/example-db.sql
 ```
 You will be prompted for the password. You can also use SSL when connecting to the database. To do so copy the ca.cert to a file and specify the location as described in the [Importing Data Into AppFog v2 MySQL](importing-data-to-afv2-mysql.md) article.
 
