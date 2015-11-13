@@ -35,7 +35,7 @@ the products, please see Vision Solutions website.
 
 -   Access to the CenturyLink Cloud platform as an authorized user
 
--   The DR [Operating System is supported in CenturyLink Cloud](../support/supported-operating-systems.md)
+-   The DR [Operating System is supported in CenturyLink Cloud](../Support/supported-operating-systems.md)
 
 -   Identify a Network VLAN you want the Vision Solutions servers to
     reside on
@@ -46,11 +46,11 @@ the products, please see Vision Solutions website.
     replication
 
 -   [Firewall
-    rules](../ecosystem partners/marketplace guides/getting-started-with-double-take-blueprint.md)
+    rules](../Ecosystem Partner/Marketplace Guides/getting-started-with-double-take-blueprint.md)
     are in place for Double-Take Console and agent communication (Please
     see Knowledge Base article [**Getting Started with Double-Take
-    Blueprint**](../ecosystem partners/marketplace guides/getting-started-with-double-take-blueprint.md)
--	 Review the [Self-Service VM Import / OVF Requirements](../servers/self-service-vm-import-ovf-requirements.md) to ensure successfully DR
+    Blueprint**](../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md)
+-	 Review the [Self-Service VM Import / OVF Requirements](../Servers/self-service-vm-import-ovf-requirements.md) to ensure successfully DR
 
 
 ### Use Cases
@@ -70,7 +70,7 @@ For ease of management, a Double-Take console software is the single pane of gla
   This knowledge article covers Double-Take Availability.
 
 
-Starting with the Blueprint, apply the appropriate license to the server during the Blueprint setup. Please see the [Getting Started with Double-Take Blueprint](../ecosystem partners/marketplace guides/getting-started-with-double-take-blueprint.md) for details of licensing request.
+Starting with the Blueprint, apply the appropriate license to the server during the Blueprint setup. Please see the [Getting Started with Double-Take Blueprint](../Ecosystem Partner/Marketplace Guides/getting-started-with-double-take-blueprint.md) for details of licensing request.
 
 ### Setting up disaster recovery from on premise server to CenturyLink Cloud
 
@@ -96,7 +96,7 @@ For this example, the Source Server is running CentOS 6.
 
 1. Deploy Double-Take Console on a VM in CenturyLink Cloud by running
     the [Double-Take Windows Blueprint from the blueprint
-    library](../ecosystem partners/marketplace guides/getting-started-with-double-take-blueprint.md) or install Double-Take Console on a workstation that can communicate with both source and Target Server (Refer to [Double-Take User Guide](//download.doubletake.com/_download/dt53/docs/Availability/User's%20Guide/Double-Take%20Availability%20User's%20Guide.htm#CSHID=ConsoleInstall.htm|StartTopic=Content%2FConsoleInstall.htm) )
+    library](../Ecosystem Partner/Marketplace Guides/getting-started-with-double-take-blueprint.md) or install Double-Take Console on a workstation that can communicate with both source and Target Server (Refer to [Double-Take User Guide](//download.doubletake.com/_download/dt53/docs/Availability/User's%20Guide/Double-Take%20Availability%20User's%20Guide.htm#CSHID=ConsoleInstall.htm|StartTopic=Content%2FConsoleInstall.htm) )
 
 2.   Once installed, start the Console from the “Start’ Menu
 
@@ -238,7 +238,7 @@ For this example, the Source Server is running CentOS 6.
 -   Before testing, take a snapshot of the Target Server using the built
     in snapshot tool in CenturyLink Cloud (please refer to knowledge
     article [Creating and Managing Server
-    Snapshots](../servers/creating-and-managing-server-snapshots.md) for quick recovery
+    Snapshots](../Servers/creating-and-managing-server-snapshots.md) for quick recovery
 
     1. Right Click on the job and choose ‘Failover, Cutover, or Recover'
 
