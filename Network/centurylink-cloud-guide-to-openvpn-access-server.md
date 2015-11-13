@@ -390,11 +390,7 @@ While there are various authentication methods (Local, PAM, Radius, LDAP) this e
     * Create (or add existing) domain users to the VPN-Users Group
     * Create a VPN-Auth user with a secure password, set never to expire.  This will be used to do user/group lookups to the directory.  This is safer than using a domain administrator account.
 
-3. [Create a Firewall Rule](../Network/connecting-data-center-networks-through-firewall-policies.md) between the OpenVPN AS Primary, Secondary (if using HA) & Shared Virtual IP Address (if using HA) and the Active Directory Domain Controller(s).
-
-    **Source**|**Destination**|**Ports**
-    ----------|---------------|---------
-    Primary OpenVPN AS<br>Secondary OpenVPN AS<br>OpenVPN AS Shared Virtual IP|Microsoft Active Directory Domain Controller(s)|TCP/389<br>UDP/389
+3. [Create a Firewall Rule](../Network/connecting-data-center-networks-through-firewall-policies.md) between the OpenVPN AS Primary, Secondary (if using HA) & Shared Virtual IP Address (if using HA) and the Active Directory Domain Controller(s). **TIP: LDAP requires TCP/389 and UDP/389**
 
 4. Navigate to **Authentication > General** in the Web Admin UI.  Select **LDAP**, Choose **Save Settings**, followed by **Update Running Server.**
 
