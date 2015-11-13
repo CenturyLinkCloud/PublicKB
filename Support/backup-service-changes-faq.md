@@ -37,8 +37,8 @@ This retirement of Standard and Premium - and launch of the Simple Backup Servic
 * October 7, 2015 - notification of the retirement of Standard and Premium Storage
 * November 16, 2015 - update to this knowledge article with notification of the following timeline
 * December 15, 2015 - the Premium storage service will be modified to replicate snapshots to the local DC only
-* January 5, 2016 - Simple Backup Service generally available; customer initiated migration period
-* Feb 16, 2016 - Standard and Premium storage services retired
+* January 5, 2016 - Simple Backup Service generally available; customer initiated migration period begins
+* Feb 16, 2016 - Standard and Premium storage services retired; customer migration period ends
 
 ### Will my pricing change?
 
