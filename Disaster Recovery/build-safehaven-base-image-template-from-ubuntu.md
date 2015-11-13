@@ -30,10 +30,10 @@ This document covers the creation of a SafeHaven 3.0/3.1 base image. This base i
       3.13.0-44 as the current kernel. Note that iSCSI servers are tied to the kernel so if you forget to do this step, you will need to rebuild iSCSI after downgrading the kernel.
 
   3. Download the "base installers" package
-      `wget https://www.dropbox.com/sh/b7nkdp0t6uga02k/AADItErKWMWcy8ATjxh9CxQqa/baseInstaller-SafeHaven3.1.0-GA.tar.gz?dl=0`
+      `wget https://www.dropbox.com/sh/c7uj6do7oikpclg/AACOWdFh6AklIyWLm9vSQ7yYa/baseInstaller-SafeHaven3.1.0.6-GA.tar.gz?dl=0`
 
   4. Untar the downloaded file by running:
-      `tar xvfz baseInstaller-SafeHaven3.1.0-GA.tar.gz?dl=0` (tar xvz Saf (using tab to autocomplete name should be easier))
+      `tar xvfz baseInstaller-SafeHaven3.1.0.6-GA.tar.gz?dl=0` (tar xvz Saf (using tab to autocomplete name should be easier))
 
   5. Remove the downloaded .gz `rm -rf Safehaven-(tab)` (optional)
 
@@ -48,10 +48,10 @@ This document covers the creation of a SafeHaven 3.0/3.1 base image. This base i
   9. Change to your root directory. The fastest way to do this is to issue: the `cd ~` command.
 
   10. Download the full kernel from the SafeHaven links. Current 3.1 GA-June26 release can be found below:
-      `wget https://www.dropbox.com/sh/b7nkdp0t6uga02k/AACDB_ZwEOLkVGjVkcPumHKSa/SafeHaven3.1.0-GA_full_kernel-3.13.0-44-generic_06-26-2015_bin.tar.gz?dl=0`
+      `wget https://www.dropbox.com/sh/c7uj6do7oikpclg/AADHVJ-5f-vd7JBGePHIIRRea/SafeHaven3.1.0.6-GA_full_kernel-3.13.0-44-generic_09-25-2015_bin.tar.gz?dl=0`
 
   11. Extract the archive, ensuring to use the "-C /" flag so that the necessary code will be written/overwritten in an upgrade:
-      `tar xvfz SafeHaven3.1.0-GA_full_kernel-3.13.0-44-generic...etc.gz -C /`
+      `tar xvfz SafeHaven3.1.0.6-GA_full_kernel-3.13.0-44-generic...etc.gz -C /`
 
   12. Reboot your server.
 
@@ -59,9 +59,6 @@ This document covers the creation of a SafeHaven 3.0/3.1 base image. This base i
 
   14. Verify that you are running the expected version of safehaven:
       `cat syntropy_version` and
-      `cat utils_version`. The syntropy and utils version should match on all nodes of the cluster. The results of both of these commands should match the expected output (i.e. Syntropy = `SafeHaven3.1.0-GA, DataGardens Inc. 2015` and utils = `Relative URL: ^/safehaven3/tags/sh3.1.0/utils  Revision: 14217`)
+      `cat utils_version`. The syntropy and utils version should match on all nodes of the cluster. The results of both of these commands should match the expected output (i.e. Syntropy = `SafeHaven3.1.0.6-GA, DataGardens Inc. 2015` and utils = `Relative URL: ^/safehaven3/tags/sh3.1.0.6/utils Revision: 14389`)
 
-  15. If you are employing Local Cache as a protection method, repeat the `wget/tar zvfz` _Filename_` -C /` process with the following two files post-reboot, which will require updates on all nodes (3.1.0.5 as opposed to 3.1.0GA above)
-  https://www.dropbox.com/s/5v98ek0gxxoapds/sbd3_14350_kernel_3.13.0-44-generic_bin.tar.gz?dl=0
-
-  https://www.dropbox.com/s/550igi4zrb1a716/SafeHaven3.1.0.5-GA_nosbd_09-14-2015_bin.tar.gz?dl=0
+  
