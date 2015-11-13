@@ -14,7 +14,7 @@ The Platform CenturyLink IPS utilizes an Agent installed on your Virtual Machine
 
 The Blueprint allows a customer that has purchased the IPS service from Platform CenturyLink to modify how they would like to be notified regarding IPS security events. This Blueprint will only change **Slack** notification settings for the server it is run against.
 
-Our API allows for a customer to set notification destinations for either **Slack** or **Sys Log**.  
+Our API allows for a customer to set notification destinations for either **Slack** or **Syslog**.  
 
 ### Prerequisites
 
