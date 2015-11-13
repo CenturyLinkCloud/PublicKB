@@ -363,9 +363,7 @@ To create an active and standby configuration using OpenVPN Access Server follow
 
 ### Configuring Client VPN DHCP Pool
 
-1. Navigate to **Configuration > VPN Settings** in the Web Admin UI.  Input the block of IP addresses to be used for DHCP to VPN Clients (previously claimed in the Reserving Client VPN DHCP Pool in the Control Portal portion of this article) in the **Dynamic IP Address Network** field. [Cheat Sheets are available online to assist.](//www.aelius.com/njh/subnet_sheet.html)  In this example the DHCP pool will be 10.105.82.65-10.105.82.126 (62 IP addresses).
-
-* CRITICAL NOTE:  <.11 & >.230 are reserved and not permitted to be used in this pool on the platform.
+1. Navigate to **Configuration > VPN Settings** in the Web Admin UI.  Input the block of IP addresses to be used for DHCP to VPN Clients (previously claimed in the Reserving Client VPN DHCP Pool in the Control Portal portion of this article) in the **Dynamic IP Address Network** field. [Cheat Sheets are available online to assist.](//www.aelius.com/njh/subnet_sheet.html)  In this example the DHCP pool will be 10.105.82.65-10.105.82.126 (62 IP addresses). **CRITICAL NOTE:  <.11 & >.230 are reserved and not permitted to be used in this pool on the platform.**
 
     ![Client VPN DHCP Pool](../images/centurylink-cloud-guide-to-openvpn-access-server-08.png)
 
@@ -392,13 +390,7 @@ While there are various authentication methods (Local, PAM, Radius, LDAP) this e
     * Create (or add existing) domain users to the VPN-Users Group
     * Create a VPN-Auth user with a secure password, set never to expire.  This will be used to do user/group lookups to the directory.  This is safer than using a domain administrator account.
 
-3. [Create a Firewall Rule](../Network/connecting-data-center-networks-through-firewall-policies.md) between the OpenVPN AS Primary, Secondary (if using HA) & Shared Virtual IP Address (if using HA) and the Active Directory Domain Controller(s).  
-
-    ![firewall policy](../images/centurylink-cloud-guide-to-openvpn-access-server-10.png)
-
-  **Source**|**Destination**|**Ports**
-  ----------|---------------|---------
-  Primary OpenVPN AS<br>Secondary OpenVPN AS<br>OpenVPN AS Shared Virtual IP|Microsoft Active Directory Domain Controller(s)|TCP/389<br>UDP/389
+3. [Create a Firewall Rule](../Network/connecting-data-center-networks-through-firewall-policies.md) between the OpenVPN AS Primary, Secondary (if using HA) & Shared Virtual IP Address (if using HA) and the Active Directory Domain Controller(s). **TIP: LDAP requires TCP/389 and UDP/389**
 
 4. Navigate to **Authentication > General** in the Web Admin UI.  Select **LDAP**, Choose **Save Settings**, followed by **Update Running Server.**
 
@@ -437,7 +429,7 @@ While there are various authentication methods (Local, PAM, Radius, LDAP) this e
     ![Validation Results](../images/centurylink-cloud-guide-to-openvpn-access-server-17.png)
 
 ### Two Factor Authentication
-There is a marketplace of Two Factor Authentication services that can be deployed in conjunction with OpenVPN Access Server.  Customers who wish to enable such features should evaluation the community to find the product that suites their needs not only for client vpn use but a larger corporate strategy for two factor authentication.  As an example use case, our teams setup two factor authentication using [Duo Security](//www.duosecurity.com) and leveraged their mobile phone applications.  While this guide isn't meant to be a complete configuration guide for [Duo Security](//www.duosecurity.com), a high level approach and diagram is detailed below.
+There is a marketplace of Two Factor Authentication services that can be deployed in conjunction with OpenVPN Access Server. Customers who wish to enable such features should evaluate the community to find the product that fits their needs, not only for client vpn use but a larger corporate strategy for two factor authentication.  As part of this KB, our teams setup two factor authentication using [Duo Security](//www.duosecurity.com) and leveraged their mobile phone applications.  While this guide isn't meant to be a complete configuration guide for [Duo Security](//www.duosecurity.com), a high level approach and diagram is detailed below.
 
 ![Duo OpenVPN high level diagram](../images/centurylink-cloud-guide-to-openvpn-access-server-22.png)
 

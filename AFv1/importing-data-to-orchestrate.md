@@ -61,12 +61,12 @@ System-Provided:
   "orchestrate": [
    {
     "credentials": {
-     "ORCHESTRATE_API_HOST": "api.ctl-va1-a.orchestrate.io",
-     "ORCHESTRATE_API_KEY": "ac86b1b4-68f7-42a3-9914-5eecea4637d2",
-     "ORCHESTRATE_API_URL": "https://api.ctl-va1-a.orchestrate.io/"
+     "ORCHESTRATE_API_HOST": "<HOST_ADDRESS>",
+     "ORCHESTRATE_API_KEY": "<API_KEY>",
+     "ORCHESTRATE_API_URL": "<API_URL>"
     },
     "label": "orchestrate",
-    "name": "my-orch-test",
+    "name": "example-db",
     "plan": "free",
     "tags": []
    }
