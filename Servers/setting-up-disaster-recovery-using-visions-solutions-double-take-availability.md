@@ -46,7 +46,7 @@ the products, please see Vision Solutions website.
     replication
 
 -   [Firewall
-    rules](../Ecosystem Partner/Marketplace Guides/getting-started-with-double-take-blueprint.md)
+    rules](../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md)
     are in place for Double-Take Console and agent communication (Please
     see Knowledge Base article [**Getting Started with Double-Take
     Blueprint**](../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md)
@@ -70,7 +70,7 @@ For ease of management, a Double-Take console software is the single pane of gla
   This knowledge article covers Double-Take Availability.
 
 
-Starting with the Blueprint, apply the appropriate license to the server during the Blueprint setup. Please see the [Getting Started with Double-Take Blueprint](../Ecosystem Partner/Marketplace Guides/getting-started-with-double-take-blueprint.md) for details of licensing request.
+Starting with the Blueprint, apply the appropriate license to the server during the Blueprint setup. Please see the [Getting Started with Double-Take Blueprint](../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md) for details of licensing request.
 
 ### Setting up disaster recovery from on premise server to CenturyLink Cloud
 
@@ -96,7 +96,7 @@ For this example, the Source Server is running CentOS 6.
 
 1. Deploy Double-Take Console on a VM in CenturyLink Cloud by running
     the [Double-Take Windows Blueprint from the blueprint
-    library](../Ecosystem Partner/Marketplace Guides/getting-started-with-double-take-blueprint.md) or install Double-Take Console on a workstation that can communicate with both source and Target Server (Refer to [Double-Take User Guide](//download.doubletake.com/_download/dt53/docs/Availability/User's%20Guide/Double-Take%20Availability%20User's%20Guide.htm#CSHID=ConsoleInstall.htm|StartTopic=Content%2FConsoleInstall.htm) )
+    library](../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md) or install Double-Take Console on a workstation that can communicate with both source and Target Server (Refer to [Double-Take User Guide](//download.doubletake.com/_download/dt53/docs/Availability/User's%20Guide/Double-Take%20Availability%20User's%20Guide.htm#CSHID=ConsoleInstall.htm|StartTopic=Content%2FConsoleInstall.htm) )
 
 2.   Once installed, start the Console from the “Start’ Menu
 
