@@ -265,8 +265,10 @@ For this example, the Source Server is running CentOS 6.
 -   Once everything tests out, the Target Server can be rolled back
     using the snapshot to continue the continuous protection (if snapshot is not available, the test server can be deleted and a new one can be created using the steps above)
 
-    Also this procedure can be repeated to set up multiple servers in a complex environment and managed from the Double-Take Management Console.  For multi-tiers application environment, both the time-out
-    ![DT console availability failover monitor](../images/doubletake/DT-console-availability-failovermonitor.png) and script option ![DT console availability failover option](../images/doubletake/DT-console-availability-failoveroption.png)can be used to control the start up sequence of the new environment.
+    Also this procedure can be repeated to set up multiple servers in a complex environment and managed from the Double-Take Management Console.  For multi-tiers application environment, both the time-out and script option under the 'Set Options' page (step 6 of [Setting up Double-Take Availability](#Setting-up-Double-Take-Availability)) can be used to control the start up sequence of the new environment.
+    ![DT console availability failover monitor](../images/doubletake/DT-console-availability-failovermonitor.png)
+
+    ![DT console availability failover option](../images/doubletake/DT-console-availability-failoveroption.png)
 
 
 With this in place, whenever a test or a real failover is required, it can be done from the Double-Take Management Console.
