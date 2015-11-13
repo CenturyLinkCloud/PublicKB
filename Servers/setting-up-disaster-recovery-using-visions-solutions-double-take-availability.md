@@ -12,7 +12,7 @@
 * [Overview](#overview)
 * [Prerequisites](#prerequisites)
 * [Use Cases](#use-cases)
-* [Setting up disaster recovery from on premise server to CenturyLink Cloud](#setting-up-disaster-recovery-from-on-premise-server-to-centuryLink-cloud)
+* [Setting up disaster recovery from on premise server to CenturyLink Cloud](#setting-up-disaster-recovery-from-on-premise-server-to-centurylink-cloud)
 * [Considerations](#considerations)
 * [Source Server](#source-server)
 * [Target Server](#target-server)
