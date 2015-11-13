@@ -173,5 +173,6 @@ For more information visit our [Add-On Migration](migrating-environment-variable
 3. Here are the commands to migrate the IronMQ configs to AppFog v2:
 
 ```
-cf set-env example-app IRON_MQ_TOKEN Jcn3Y4lydf0Ew4qKearqgCVJ--Q
-cf set-env example-app IRON_MQ_PROJECT_ID 560aeddeff1d3180063400a0
+cf set-env example-app IRON_MQ_TOKEN <YOUR_IRON_MQ_TOKEN>
+cf set-env example-app IRON_MQ_PROJECT_ID <YOUR_IRON_MQ_PROJECT_ID>
+```
