@@ -1,6 +1,6 @@
 {{{
   "title": "SafeHaven 3.1: Cluster Configuration",
-  "date": "11-10-2015",
+  "date": "11-16-2015",
   "author": "Josh Leporati",
   "attachments": [],
   "contentIsHTML": false
