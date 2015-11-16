@@ -67,11 +67,11 @@ Not at this time. If you would like to recommend another, please send request de
 
 **Do you retain the data after the event notification is sent?**
 
-Yes, we retain the data for 60 days.  If you need a longer data retention period, we are working on additional add-on functionality to store this data.  If you are interested, please send request details to [features@ctl.io](mailto:features@ctl.io).
+Yes, we retain the data for 13 weeks.  If you are interested in a longer retention period, please send request details to [features@ctl.io](mailto:features@ctl.io).
 
 **Are you storing the full payload in another location?**
 
-Yes, we retain the data in another location for 60 days.
+Yes, we retain the data in another location for 13 weeks.
 
 **Do you support a text message or paging service?**
 
