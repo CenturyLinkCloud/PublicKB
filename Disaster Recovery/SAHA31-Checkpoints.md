@@ -24,7 +24,7 @@ server, and will determine your recovery point objective.
 
 ## Editing Checkpoints
 
-Similar to the above process, proceed to the **Edit Checkpoints Period** and from there, you can modify the Checkpoint Period previously specified.
+Similar to the above process, proceed to the **Edit Checkpoints Period**, from there you can modify the Checkpoint Period previously specified.
 
 ## Taking a Manual Checkpoint
 
