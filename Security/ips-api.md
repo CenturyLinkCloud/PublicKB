@@ -146,6 +146,8 @@ TypeCode currently consists of: SYSLOG, EMAIL, WEBHOOK and SLACK
 Facility is to set the type of program logging messages. 
 The options are 16-23 for descriptions follow the link: [https://en.wikipedia.org/wiki/Syslog](https://en.wikipedia.org/wiki/Syslog) 
 
+* Note: Syslog server IP must reside outside of the UC1 datacenter at this time
+
 ##### Example
 
 >PUT http://api.client-security.ctl.io/ips/api/notification/ALIAS/VA1ALIASMYSVR01
