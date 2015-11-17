@@ -19,10 +19,10 @@
 * [Implementing High Availability](#implementing-high-availability)
 * [Configure Server Network Settings](#configure-server-network-settings)
 * [Configuring Client VPN DHCP Pool](#configuring-client-vpn-dhcp-pool)
-* [Adding Routes to CenturyLink Cloud VLANs](#adding-routes-to-centuryLink-cloud-vlans)
+* [Adding Routes to CenturyLink Cloud VLANs](#adding-routes-to-centurylink-cloud-vlans)
 * [Configuring LDAP Authentication](#configuring-ldap-authentication)
 * [Installing SSL Web Certificates](#installing-ssl-web-certificates)
-* [Two Factor Authentication](#two-cactor-authentication)
+* [Two Factor Authentication](#two-factor-authentication)
 * [Connecting to Client VPN Services](#connecting-to-client-vpn-services)
 
 ### Overview
