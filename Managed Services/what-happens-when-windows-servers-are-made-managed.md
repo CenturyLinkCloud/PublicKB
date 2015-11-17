@@ -32,7 +32,7 @@ Many of the following items are mandatory. Some default items have options for c
 * If a [dedicated domain exists](../Managed Services/getting-started-with-managed-active-directory.md) for the customer, the server will be joined to it. Otherwise, the server will join a shared domain.
 * Our monitoring agent is installed and configured. Heartbeat monitoring of the agent commences.
 * Our approved virus scanning agent is downloaded and configured. It will be updated weekly.
-* 10 GB D: drive is added
+* 10 GB D: drive is added. If D: drive already exists, the next available, unused drive will be added.
 * A pre-defined Windows Update Group Policy Object is linked to each customer OU. For servers that are being created as managed, operationally expected updates are installed, bringing the server to a Centurylink-approved patch level. [If the server already exists ](../Managed Services/converting-unmanaged-virtual-machines-to-managed.md) there is an exception. No updates will be applied to Customer Provided Images (CPI). [requests can be made](../Managed Services/created-a-managed-server-now-what.md) to approve or un-approve particular patches. The server is rebooted as required
 * Basic OS standardization is performed, including setting time zone
 * Hibernation disabled

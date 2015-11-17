@@ -49,7 +49,7 @@ SoftNAS Cloud is packaged with a primary administration interface called SoftNAS
 - Easy set-up and configuration wizards, intuitive admin interface (StorageCenter)
 
 ### Offer
-SoftNAS Cloud File Gateway is now available for CenturyLink Cloud Users to deploy to their account.  The SoftNAS appliance comes with a free trial that let's you use up to 100GB without having to purchase a license.  In order to purchase a license or entitlement, please visit [http://www.softnas.com/pricing](http://www.softnas.com/pricing) or contact [sales@softnas.com](mailto:sales@softnas.com)
+SoftNAS Cloud File Gateway is now available for CenturyLink Cloud Users to deploy to their account.  The SoftNAS appliance comes with a free trial that let's you use up to 100GB without having to purchase a license.  In order to purchase a license or entitlement, please visit [https://www.softnas.com/wp/pricing/](//www.softnas.com/wp/pricing/) or contact [sales@softnas.com](mailto:sales@softnas.com)
 
 SoftNAS has provided a Virtual Appliance - called a Partner Template - that can be deployed to your CenturyLink Cloud account via a Service Task.  Although Service Tasks are ordinarily billed to the end user account, CenturyLink will provide a refund for the Service Task costs associated with deploying the Partner Template.  Please follow the process below to request credit.
 
@@ -67,7 +67,7 @@ This deployment process for Partner Templates currently requires manual interact
 - Do you want to deploy this in a high availability configuration?  Typically, most users _do not_ deploy a HA configuration, but if you want to there are a few things you should be aware of.  For starters, a SoftNAS HA configuration will consist of 3 SoftNAS appliances.  The primary and secondary will reside in separate data centers and the third will reside in the same data center as the primary.  For more information on SoftNAS high availaility architecture details, please contact [SoftNAS Support](mailto:support@softnas.com).
 
 ### Postrequisite
-1.  Make sure you add additional raw storage to the SoftNAS VM via the Control Portal as outlined in the Accessing and using your SoftNAS Cloud Gateway section of this article.
+1.  Make sure you add additional partitions to the SoftNAS VM via the Control Portal as outlined in the Accessing and using your SoftNAS Cloud Gateway section of this article.
 
 2. If you want to access your VM over the internet, please perform the following tasks once you receive an email confirming you Blueprint completed successfully:
 
@@ -95,10 +95,10 @@ This deployment process for Partner Templates currently requires manual interact
 ### Detailed Steps to Deploy SoftNAS partner template
 SoftNAS deploys in a virtual appliance model, as a CenturyLink Cloud *Partner Template*.  Follow these step by step instructions to deploy a SoftNAS solution in to your CenturyLink Cloud account:
 
-- Open a service task request ticket via email to ServiceTasks@Tier3.com with the following details.  You will need to edit some of the information below.
+- Open a service task request ticket via email to ServiceTasks@ctl.io with the following details.  You will need to edit some of the information below.
 
 ----
-TO: ServiceTasks@Tier3.com
+TO: ServiceTasks@ctl.io
 
 EMAIL SUBJECT:   Ecosystem Partner Template Import Request
 
@@ -135,7 +135,7 @@ If you are interested in seeing this type of Partner Template deployment as an a
 4. Add storage to the SoftNAS VM by using Control Portal
   1. Navigate to the SoftNAS server in the Control Portal
   2. Click on Edit Storage button
-  3. Add a Raw Partition and size appropriately
+  3. Add a Partition and size appropriately
   4. Click the Save button
   5. Wait for the storage to be added
 

@@ -79,7 +79,7 @@ The CenturyLink Technology Solutions Client Service Center is also available to 
 
 **Q: What if I want my backups to be kept for longer than two weeks?**
 
-A:  If you would like to change the default two-week retention schedule for your backups, you may contact the CenturyLink Technology Solutions Client Service Center at 1-888-638-6771 and enter a request to customize the retention period for a particular server or set of servers. A few different retention periods are available to choose from.
+A:  At this time 2 weeks is the only retention period available.  Our [upcoming simple backup service](../Support/backup-service-changes-faq.md) will provide options for customer defined retention periods.
 
 **Q: What should I do if I need a restore?**
 
