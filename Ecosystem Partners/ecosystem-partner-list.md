@@ -98,6 +98,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Pivotal GemFire](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-gemfire-blueprint.md)   	| Blueprint    | In-memory distributed database for high scale custom applications    |
 | [Pivotal Greenplum](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-greenplum-blueprint.md)   	| Blueprint    | Enterprise-grade analytical data warehouse    |
 | [Pivotal HD + HAWQ](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-hd-hawq.md)   	| Blueprint    | Enterprise-grade Hadoop cluster    |
+| [Qubida Analytics](../Ecosystem Partners/Marketplace Guides/getting-started-with-qubida-blueprint.md)   	| Blueprint    | Big Data BI    |
 | [XtremeData dbX](../Ecosystem Partners/Marketplace Guides/getting-started-with-xtremedata-dbx-blueprint.md)  | Blueprint  | On-Demand Big Data Analytics with real-time ingest |
 | [ZoomData](../Ecosystem Partners/Marketplace Guides/getting-started-with-zoomdata-blueprint.md)  | Blueprint  | Visual analytics of big data |
 
