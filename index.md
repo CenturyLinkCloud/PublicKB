@@ -5,6 +5,7 @@
     "AppFog",
     "Autoscale",
     "Blueprints",
+    "Compliance",
     "Control Portal",
     "Database",
     "Disaster Recovery",

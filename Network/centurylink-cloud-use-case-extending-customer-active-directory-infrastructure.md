@@ -1,7 +1,7 @@
 {{{
   "title": "CenturyLink Cloud Use Case: Extending Customer Active Directory Infrastructure",
-  "date": "9-2-2015",
-  "author": "Mark Turpin",
+  "date": "9-24-2015",
+  "author": "Jake Malmad",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -27,6 +27,8 @@ Setup an IPSEC VPN tunnel that allows communication between the VLAN your new AD
 2. Log into the newly created VM. Ping the AD/DNS server to ensure it can be reached. This step is vital. Ensure your VM can reach your current AD servers before continuing.
 3. Run dcpromo on the server to make the VM a new domain controller in the current domain; repeat for the other VM if applicable.  If the server(s) are 2012, [install Active Directory AD DS](https://technet.microsoft.com/en-us/library/hh472162.aspx).
 4. [Set up AD sites based on IP subnets](https://technet.microsoft.com/en-us/library/cc732761.aspx) to ensure that new VMs created and added to the domain use the newly created AD servers for authentication.
-5.  Add the new domain controllers to the new site.
+5. Add the new domain controllers to the new site.
+6. Create forward and reverse lookup zones for the new subnets in DNS.
+7. Verify replication topology by examining "NTDS settings" for each Domain Controller in "Active Directory Sites and Services". Optionally, one can run "dcdiag.exe /v" for a verbose report on Domain Controller configuration, replication and any other issues that may require additional troubleshooting.
 
 Options: Leverage MPLS connections or direct connects to connect your cloud environment to the location of your current AD infrastructure. Customers will often leave the IPSEC VPN tunnel in place for redundancy.

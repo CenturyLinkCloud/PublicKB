@@ -80,4 +80,4 @@ Slack is currently the only WebHook we’ve tested and integrated with. If you w
 
 **Do you provide long term storage of events and notifications?**
 
-We retain 60 days’ worth of events and notifications. We are investigating additional features, such as an automated database for longer retention times. If you would like to be a beta tester or have interest in a feature for longer retention, please send request details to [features@ctl.io](mailto:features@ctl.io)
+We retain 13 weeks worth of events and notifications. We are investigating additional features, such as an automated database for longer retention times. If you would be interested in a feature for longer retention, please send request details to [features@ctl.io](mailto:features@ctl.io)

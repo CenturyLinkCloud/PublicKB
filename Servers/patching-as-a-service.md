@@ -6,8 +6,8 @@
   "contentIsHTML": false
 }}}
 
-### Table of Contents
-
+Table of Contents
+=================
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
@@ -18,6 +18,7 @@
 * [Option 3: API](#option-3-api)
 * [Summary of All Patches Deployed to a Server](#summary-of-all-patches-deployed-to-a-server)
 * [Detail of Patches Deployed in an Execution](#detail-of-patches-deployed-in-an-execution)
+
 
 
 ### Overview
@@ -56,7 +57,9 @@ CenturyLink Cloud Users
 
 ### Support
 
-This service has been tested for the scope identified within this article. Product improvement is important to us so our Product Team will be aware of issues related to this service, but no one will providing direct client support. If you have suggestions for improvement, please submit a feature request.
+If you have any concerns with the use or affects of this product, please submit a support ticket to CenturyLink Cloud.
+
+If you have suggestions for improvement, please submit a feature request.
 
 ### Pricing
 
@@ -72,7 +75,7 @@ For any method you choose, the following table will assist you with data needed 
 **Operating Systems** | **Blueprint Name** | **Script Package Name** | **Package ID**
  --- | --- | --- | ---
  Windows 2012 and 2012R2 | Auto Patching Windows 2012 | Auto Patching Windows 2012 | b229535c-a313-4a31-baf8-6aa71ff4b9ed
- Red Hat Enterprise Linux 5, 6, and 7 OR CentOS 5 and 6 | Auto Patching RHEL or CentOS | Auto Patching RHEL/CentOS | 5d743f04-a9ce-4174-a7c8-52df93c47c08
+ Red Hat Enterprise Linux 5, 6, and 7 OR CentOS 5 and 6 | Yum Update Script | Yum Update | 5d743f04-a9ce-4174-a7c8-52df93c47c08
 
 
 ### Option 1: Blueprint
@@ -89,9 +92,9 @@ The process initiated by the script package may include several, automated reboo
 
 Locate and select the appropriate Blueprint within the Blueprint Library. See the table above for the name of the Blueprint.
 
-![Auto Patching Windows 2012 Blueprint Image](../images/Patching/PatchaaS_WindowsUpdateHoverProd.png)
+![Windows Update Scripts Blueprint Image](../images/Patching/PatchaaS_WindowsUpdateHoverProd.png)
 
-![Auto Patching RHEL or CentOS Blueprint Image](../images/Patching/PatchaaS_YumUpdateBP.png)
+![YUM Update Script Blueprint Image](../images/Patching/PatchaaS_YumUpdateBP.png)
 
 
 
@@ -115,6 +118,10 @@ The execution will continue even after the completion of the script so please le
 
 After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
 
+9\. Optional: Remove DNS
+
+You may wish to remove DNS 8.8.8.8 from the server.\*
+
 
 ### Option 2: Group Action
 
@@ -128,7 +135,7 @@ The process initiated by the script package may include several, automated reboo
 
 2\. Execute Action
 
-Navigate to the group and select "execute package" from the [action drop-down](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) . The name of the package to search for is in the table above.
+Navigate to the group and select "execute package" from the [action drop-down](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md). The name of the package to search for is in the table above.
 
 
 ![Patching_GroupActionWindows](../images/Patching/PatchaaS_GroupAction.png)
@@ -144,6 +151,10 @@ Navigate to the group and select "execute package" from the [action drop-down](.
 
 After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
 
+5\. Optional: Remove DNS
+
+You may wish to remove DNS 8.8.8.8 from the servers.\*
+
 ### Option 3: API
 
 An API request can deploy against all VMs a user is authorized to administer under a single alias.
@@ -156,7 +167,7 @@ The process initiated by the script package may include several, automated reboo
 
 2\. Execute Package
 
-Please reference [API Documentation about authentication](https://www.ctl.io/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests. Review the [Execute Package](https://www.ctl.io/api-docs/v2/#server-actions-execute-package) to determine how to proceed. There are currently no parameters to add. Below is a JSON example:
+Please reference [API Documentation about authentication](https://www.centurylinkcloud.com/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests. Review the [Execute Package](https://www.centurylinkcloud.com/api-docs/v2/#server-actions-execute-package) to determine how to proceed. There are currently no parameters to add. Below is a JSON example:
 
 
   ```
@@ -177,7 +188,9 @@ Please reference [API Documentation about authentication](https://www.ctl.io/api
 
 After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
 
+4\. Optional: Remove DNS
 
+You may wish to remove DNS 8.8.8.8 from the server.\*
 
 
 
@@ -190,7 +203,7 @@ A history of all executions against your server is available for your review. Th
 
 #### Authentication
 
-Reference [API Documentation about authentication](https://www.ctl.io/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests.
+Reference [API Documentation about authentication](https://www.centurylinkcloud.com/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests.
 
 ### URL
 
@@ -236,7 +249,7 @@ Details on all attempted patches for a single execution against a server are ava
 
 #### Authentication
 
-Reference [API Documentation about authentication](https://www.ctl.io/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests.
+Reference [API Documentation about authentication](https://www.centurylinkcloud.com/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests.
 
 ### URL
 
@@ -279,3 +292,5 @@ patches | Number | Quantity of patches installed
 patch_begin_message | string | Identifies the Software or OS updated and the reference number (if Windows, KB#######) for that particular update
 patch_end_message | string | Result code established by Microsoft, defining the possible results of an install. These same codes will be used for other Operating Systems as well. https://msdn.microsoft.com/en-us/library/windows/desktop/aa387095(v=vs.85).aspx
 status | string | for an individual patch, could be pending, completed, or failed
+
+\* To enable data to be captured in our reporting service, the service adds DNS 8.8.8.8 to the server. (The reason for this step is no longer necessary so it will be removed in a future release.) If this will affect your servers, you should manually remove it.
