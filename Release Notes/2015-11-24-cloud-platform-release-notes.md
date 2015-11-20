@@ -19,11 +19,11 @@
   ![In DC Replication](../images/2015-11-24_releasenotes2.png)
   
   * __New UI.__ Starting November 30th, customers will notice a change in the look, feel, and functionality of the MySQL DBaaS user interface. The UI will be more consistent with the CenturyLink Cloud Control Portal. __Relational DB__ will now be a menu option within the green navigation bar, and Database Instances can be created and monitored in a single window.
-  ![Navigation](../images/2015-11-24-releasenotes1.png)
-  ![DB Instances](../images/2015-11-24-releasenotes3.png)
+  ![Navigation](../images/2015-11-24_releasenotes1.png)
+  ![DB Instances](../images/2015-11-24_releasenotes3.png)
 
 
-### Enhancements (3)
+### Enhancements (2)
 
 * __Intrusion Prevention/IPS.__ Installation of the [Intrusion Prevention or IPS Product](https://www.ctl.io/intrusion-prevention-service/) can be done via blueprint.  Details on the installation process and other [information on Intrusion Prevention](https://www.ctl.io/knowledge-base/security/#1) can be found in the Security section of our knowledge base.
 
