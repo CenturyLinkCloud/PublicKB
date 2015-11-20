@@ -12,12 +12,12 @@ This document is for users of AppFog v1. This document does not apply to the cur
 
 ### Documentation
 
-<p>AppFog provides for easy implementation and use of environment variables either using the web console or the CLI. If you haven't already installed it, here is the <a href="appfog-cli-tool-manual.md">AppFog CLI Tool Manual</a>.</p>
+<p>AppFog provides for easy implementation and use of environment variables either using the web console or the CLI. If you haven't already installed it, here is the <a href="./appfog-cli-tool-manual.md">AppFog CLI Tool Manual</a>.</p>
 <h3>Web Console</h3>
 <p>Simply navigate to the application's <strong>Mission Control</strong> page and select the <strong>Env Variables</strong> button on the left. Once entered select the <strong>Update</strong> button to provision the variable.</p>
 <p> </p>
 <h3>CLI</h3>
-<p>Here are the commands to use in the <a href="appfog-cli-tool-manual.md">CLI</a>.</p>
+<p>Here are the commands to use in the <a href="./appfog-cli-tool-manual.md">CLI</a>.</p>
 <table>
 <tbody>
 <tr>
