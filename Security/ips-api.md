@@ -1,33 +1,32 @@
-{{{ "title": "IPS-API", 
-        "date": "11-09-2015", 
-        "author": "Client-Security", 
-        "attachments": [], 
-        "contentIsHTML": false, 
+{{{ "title": "IPS-API",
+        "date": "11-09-2015",
+        "author": "Client-Security",
+        "attachments": [],
+        "contentIsHTML": false,
         "sticky": false }}}
 
-#IPS-API
+# IPS-API
 
 The IPS-API is a RESTful api.
 IPS or Intrusion Prevention Service will require you to have a server and account in the CenturyLink Platform.
 
-##Authentication
+## Authentication
 
 In order to use the IPS-API you must retrieve a bearer token from CLC.
-This will be used during each of the calls.
-A link to CLC's authentication is provided:[CLC Authentication](https://www.ctl.io/api-docs/v2/#authentication-login)
+This will be used during each of the calls. For more, see the [CLC Authentication](https://www.ctl.io/api-docs/v2/#authentication-login) documentation.
 
-##Headers
+## Headers
 
 To interact with the IPS-API you will need to provide in the headers two fields
 
 |**Header**     |**Value**                  |
 |---------------|---------------------------|
-|Content-Type   |applicaiton\json           |
+|Content-Type   |application/json           |
 |Authorization  |Bearer (CLC Bearer Token)  |
 
-##Install
+## Install
 
-Installs an IPS agent on the designated host. 
+Installs an IPS agent on the designated host.
 
 #### URL
 
@@ -54,7 +53,7 @@ Installs an IPS agent on the designated host.
     }
 
 
-##Uninstall
+## Uninstall
 
 Uninstalls an IPS agent from a designated host.
 
@@ -81,14 +80,14 @@ Uninstalls an IPS agent from a designated host.
         "hostName":"VA1CLCDTEST04",
         "accountAlias":"CLCD"
     }
-    
-##Notification Destination
+
+## Notification Destination
 
 
 ### Configuration Process via our API
 
-These calls will do all of the operations for configuring, retrieving, updating and deleting a notification destination. 
-Calls to this operation must include a token acquired from the authentication endpoint. 
+These calls will do all of the operations for configuring, retrieving, updating and deleting a notification destination.
+Calls to this operation must include a token acquired from the authentication endpoint.
 See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
 #### URL
@@ -98,10 +97,10 @@ See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for in
 ###### Create and Update
 >PUT https://api.client-security.ctl.io/ips/api/notifications/{accountAlias}/{serverName}
 
-   {
-       "url":{some URL},
-      "typeCode":{endpoint type}
-   }
+    {
+        "url":{some URL},
+        "typeCode":{endpoint type}
+    }
 
 ###### Retrieve
 >GET https://api.client-security.ctl.io/ips/api/notifications/{accountAlias}/{serverName}
@@ -125,7 +124,7 @@ See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for in
 |-------------------------|----------|--------------------------------------|----------|
 |notificationDestinations |array     | List of Notification Destinations    |Yes       |       
 
-##### Notification Destination Definition 
+##### Notification Destination Definition
 
 | **Name**  | **Type**  | **Description**                                           | **REQ.** |
 |-----------|-----------|-----------------------------------------------------------|----------|
@@ -143,8 +142,10 @@ TypeCode currently consists of: SYSLOG, EMAIL, WEBHOOK and SLACK
 |udpPort    |Integer    |The port the syslog is listening on                              |Yes        |
 |facility   |Integer    |This is an Integer, 16-23, for descriptions see below.           |Yes        |
 
-Facility is to set the type of program logging messages. 
-The options are 16-23 for descriptions follow the link: [https://en.wikipedia.org/wiki/Syslog](https://en.wikipedia.org/wiki/Syslog) 
+Facility is to set the type of program logging messages.
+The options are 16-23 for descriptions follow the link: [https://en.wikipedia.org/wiki/Syslog](https://en.wikipedia.org/wiki/Syslog)
+
+* Note: Syslog server IP must reside outside of the UC1 datacenter at this time
 
 ##### Example
 
@@ -160,7 +161,7 @@ The options are 16-23 for descriptions follow the link: [https://en.wikipedia.or
     },
     {
         "typeCode": "SYSLOG",
-        "sysLogSettings": 
+        "sysLogSettings":
             {
                 "ipAddress": "12345",
                 "udpPort": "8081",
@@ -171,7 +172,7 @@ The options are 16-23 for descriptions follow the link: [https://en.wikipedia.or
         "typeCode": "EMAIL",
         "emailAddress": "youremail@site.com"
     }
-      
+
 The following key-value pairs are sent to the notification destination when an event is triggered. If you are using the generic "WEBHOOK" type for your notifications the following will be sent in json format.
 ##### Response Object
 | **Name** | **Type** | **Description**                                                                     |
