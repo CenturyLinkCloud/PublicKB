@@ -21,6 +21,7 @@
   * __New UI.__ Starting November 30th, customers will notice a change in the look, feel, and functionality of the MySQL DBaaS user interface. The UI will be more consistent with the CenturyLink Cloud Control Portal. __Relational DB__ will now be a menu option within the green navigation bar, and Database Instances can be created and monitored in a single window.
   ![Navigation](../images/2015-11-24_releasenotes1.png)
   ![DB Instances](../images/2015-11-24_releasenotes3.png)
+  * __Inclusion in the Service Catalog__ Relational DB can now also be turned on and off as a feature flag via our [Service Catalog](https://www.ctl.io/knowledge-base/general/getting-started-with-the-service-catalog/). 
 
 
 ### Enhancements (2)
