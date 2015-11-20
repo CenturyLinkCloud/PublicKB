@@ -21,6 +21,7 @@ This document is for users of AppFog v1. This document does not apply to the cur
 * [Importing Data to Orchestrate on AppFog v2](../../AFv1/importing-data-to-orchestrate.md)
 * [Migrating Teams to AppFog v2](../../AFv1/migrating-teams-to-afv2.md)
 * [Migrating a PHP Application to AppFog v2](../../AFv1/migrating-php-to-afv2.md)
+* [Example Migration Walkthrough](../../AFv1/migration-walkthrough.md)
 * [Migration FAQ](../../AFv1/migration-faq.md)
 
 ### Getting Started

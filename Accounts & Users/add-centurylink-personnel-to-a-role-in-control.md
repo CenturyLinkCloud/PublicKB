@@ -24,6 +24,5 @@
 </p>
 <ul>
   <li><strong>Option 1</strong>: Request that the CenturyLink Cloud customer add you to the appropriate role.  This is self-service for the customer.</li>
-  <li><strong>Option 2</strong>: Have the CenturyLink Cloud customer request you be added to the appropriate Role via the CenturyLink Cloud ticketing process. Make sure to include the specific Role(s) required.  Ensure the CenturyLink Cloud customer CC’s you on the request.  Once the request is provided by the CenturyLink Cloud customer, permissions will be granted and the ticket will be processed per SLA.</li>
-  <li><strong>Option 3</strong>: Open a ticket via the CenturyLink Cloud ticketing process requesting you be added to the appropriate Role.  This will require the CenturyLink Cloud customer to approve; please ensure they are CC’d on the ticket. Make sure to include the specific Role(s) required. The CenturyLink Cloud NOC will request the approval. Once approval is given by the CenturyLink Cloud customer, permissions will be granted and the ticket will be processed per SLA.</li>
+  <li><strong>Option 2</strong>: Have the CenturyLink Cloud customer request you be added to the appropriate Role via the CenturyLink Cloud ticketing process. Make sure to include the specific Role(s) required and make sure the customer provides their Control Portal PIN for identity verification.  Ensure the CenturyLink Cloud customer CC’s you on the request.  Once the request is provided by the CenturyLink Cloud customer, permissions will be granted and the ticket will be processed per SLA.</li>
 </ul>
