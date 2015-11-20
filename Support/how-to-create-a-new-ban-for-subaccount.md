@@ -1,6 +1,6 @@
 {{{
   "title": "How to Create a New BAN for an existing Account",
-  "date": "11-19-2015",
+  "date": "11-20-2015",
   "author": "Tessa Rodriguez",
   "attachments": [],
   "contentIsHTML": false
@@ -25,7 +25,7 @@ CenturyLink Cloud will default to having one Billing Account Number (BAN) per Hi
 1. On the Knowledge Base Home Page click “Submit Support Request”
 2. In the Subject Line, please add “New BAN Request”
 3. In the Description, be sure to include the following information:
-  - The Sub Account Alias you would like to be associated to a New BAN.  
+  - The Sub Account Alias you would like to be associated to a New BAN
   - Billing Address
   - Billing contact
   - Currency if other than USD
@@ -34,17 +34,17 @@ CenturyLink Cloud will default to having one Billing Account Number (BAN) per Hi
 
 ### FAQ
 
-**Is it possible to give my first Sub-Account a new BAN, but keep my second Sub Account under the Master BAN?**
+**Is it possible to give my first Sub-Account a new BAN, but keep my second Sub Account under the Master Accounts BAN?**
 
-Yes, our program will default to having all sub-accounts under the master's BAN, unless requested otherwise.  If you request for a specific sub-account to be associated to a new BAN, that sub-account (and any sub-accounts that sub-accounts has) is the only account that will be associated to the new BAN.  
+Yes, our program will default to having all sub-accounts under the master's BAN, unless requested otherwise.  If you request for a specific sub-account to be associated to a new BAN, that sub-account (and any sub-account built under that sub account) will be the only account that is associated to the new BAN.
 
 **If I have Sub-Accounts under the Sub-Account that I am requesting a new BAN for, will they also get new BANs?**
 
-No, the Main Sub-Account will be the only account that receives a new BAN.  However, if you would like those sub-accounts to have their own BAN as well, please add that request that in the ticket as well.
+No, the Main Sub-Account will be the only account that receives a new BAN.  However, if you would like those sub-accounts to have their own BAN as well, please add that request to the ticket.
 
 **Is there a limit to how many BANs I can add to my hierarchy?**
 
-You can have as many BANS as you have Account Alias's.
+You can have as many BANs as you have Account Aliases.
 
 **Can I have multiple BANS on one Sub-Account?**
 
