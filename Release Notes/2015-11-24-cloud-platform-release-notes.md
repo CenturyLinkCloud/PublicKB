@@ -33,7 +33,7 @@
 
 * __SafeHaven__. We created SafeHaven for CenturyLink Cloud to protect your enterprise data and production systems. We're releasing two enhancements this cycle:
 
-  * __Cluster Installer Integration with SafeHaven Console.__ The integrated makes it is easier for user to create a SafeHaven cluster, improving user experience.
+  * __Cluster Installer Integration with SafeHaven Console.__ The integration makes it is easier for users to create a SafeHaven cluster and removes friction from the user experience.
   ![SafeHaven Console](../images/2015-11-24_releasenotes4.png)
 
   * __Disk Mapping Structure Updates.__ This change prevents a VM from freezing when a new disk is mapped.
