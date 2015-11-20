@@ -8,7 +8,7 @@
 
 ### New Features (1)
 
-* __Placeholder.__ blah blah blah.  
+* __CentOS 7 Added to Standard OS Templates.__ blah blah blah.  
  
 
 ### Early Adopter Program Updates (1)
@@ -33,7 +33,8 @@
 
 * __SafeHaven__. We created SafeHaven for CenturyLink Cloud to protect your enterprise data and production systems. We're releasing two enhancements this cycle:
 
-  * __Cluster Installer Integration with SafeHaven Console.__ 
+  * __Cluster Installer Integration with SafeHaven Console.__ The integrated makes it is easier for user to create a SafeHaven cluster, improving user experience.
+  ![SafeHaven Console](../images/2015-11-24_releasenotes4.png)
 
   * __Disk Mapping Structure Updates.__ This change prevents a VM from freezing when a new disk is mapped.
 
