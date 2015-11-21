@@ -8,7 +8,9 @@
 
 ### New Features (1)
 
-* __CentOS 7 Added to Standard OS Templates.__ blah blah blah.  
+* __CentOS 7 - New Supported OS Template.__ Customers may now create VMs based on the CentOS 7 operating system from the Control Portal and the API. This latest OS offers the same features as RHEL 7, but at no charge.
+
+  In addition, this OS template will be managed and maintained by our OS team ongoing, so new features and capabilities will be included as they are vetted by our team.  
  
 
 ### Early Adopter Program Updates (1)
@@ -37,19 +39,16 @@
   * __Cluster Installer Integration with SafeHaven Console.__ The integration makes it is easier for users to create a SafeHaven cluster and removes friction from the user experience.
   ![SafeHaven Console](../images/2015-11-24_releasenotes4.png)
 
-  * __Disk Mapping Structure Updates.__ This change prevents a VM from freezing when a new disk is mapped.
+  * __Disk Mapping Structure Updates.__ This change prevents performance penalty previously experienced by guest VMs.
 
 * __Bare Metal Support for Execute Package.__ Packages can now be executed on Bare Metal servers using the [Execute Package](https://www.ctl.io/knowledge-base/servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/) action available at the server group level.
-  
-### Ecosystem (3)
 
-* __Placeholder 1__ blah blah blah
-* __Placeholder 2__ blah blah blah
+### Ecosystem (X)
+
+* __Placeholder__ Shac to come up with some material by Monday
 
 ### Announcements (1)
 
-* __Removal of "Under Construction" Server Policy__ Awaiting copy from Mr. Jared Ruckle
+* __Removal of "Under Construction" Server Policy__ Occasionally, requests for new resources in CenturyLink Cloud will not complete successfully, and appear as "Under Construction" indefinitely. Effective January 1, 2016, requests that remain "Under Construction" state for 14 days will be automatically deleted from the platform. The removal of resources will be done automatically every two weeks, so the first such removal will be January 15, 2016.
 
-### Selected Bug Fixes (1)
-
-* __Placeholder__ blah blah blah
+  Customers do not get billed for resources in an "Under Construction" state, so this new policy does not have a commercial impact to billing and usage.
