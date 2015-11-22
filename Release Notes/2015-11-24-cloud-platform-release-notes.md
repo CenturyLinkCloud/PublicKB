@@ -9,7 +9,7 @@
 ### New Features (1)
 
 * __CentOS 7 - New Supported OS Template.__ Customers may now create VMs based on the CentOS 7 operating system from the Control Portal and the API. This latest OS offers the same features as RHEL 7, but at no charge. In addition, this OS template will be managed and maintained by our OS team ongoing, so new features and capabilities will be included as they are vetted by our team.  
-* 
+
 ### Early Adopter Program Updates (1)
 
 * __MySQL DBaaS.__ The MySQL-compatible Database-as-a-Service is currently (in beta and is available to select customers)[https://www.ctl.io/dbaas/].   
