@@ -23,7 +23,7 @@
   * __Inclusion in the Service Catalog__ Relational DB can now also be turned on and off as a feature flag via our [Service Catalog](https://www.ctl.io/knowledge-base/general/getting-started-with-the-service-catalog/). 
 
 
-### Enhancements (2)
+### Enhancements (3)
 
 * __Intrusion Prevention/IPS.__ Installation of the [Intrusion Prevention Service (IPS)](https://www.ctl.io/intrusion-prevention-service/) can be done via Blueprint. Details on the installation process and other [information on Intrusion Prevention](https://www.ctl.io/knowledge-base/security/#1) can be found in the Security section of our knowledge base.
 
