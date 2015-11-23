@@ -6,11 +6,11 @@
   "contentIsHTML": false
 }}}
 
-### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.
+### IMPORTANT NOTECenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.
 
 ## Overview
 
-When you need to make changes to your CenturyLink WordPress as a Service site, git is the way to go. CenturyLink
+When you need to make changes to your site one CenturyLink Wordpress hosting, git is the way to go. CenturyLink
 provides you with a copy of your WordPress site's source code on our own secure, private
 [git servers](https://git.wordpress.ctl.io/). The general process is to clone your repository from our git
 hosting, make your changes in the local repository, commit your changes in git, and finally push your commits
@@ -19,7 +19,7 @@ are live in the next few minutes.
 
 ## Prerequisites
 
-- You have already successfully created your WordPress site with CenturyLink's WordPress as a Service.
+- You have already successfully created your WordPress site with the CenturyLink WordPress hosting platform.
 - You will log in to our git hosting with the CLC username you used when you created the site.
 - You have the site's WordPress administrative password, which is also your git password.
 
@@ -27,9 +27,7 @@ are live in the next few minutes.
 
 - You want to install or update a WordPress plug-in or theme.
 - You need to customize the WordPress core.
-- You are [migrating](wordpress-site-migration-to-centurylink-cloud.md) an existing WordPress site to CenturyLink's
-  WordPress as a Service.
-
+- You are [migrating](wordpress-site-migration-to-centurylink-cloud.md) an existing WordPress site to the CenturyLink WordPress hosting platform.
 Don't do this if you are just posting new content (text, images, video) to your WordPress site. Please review
 our documentation on [persistent object storage](wordpress-persistent-storage-configuration.md) for creating
 multimedia content.
@@ -88,7 +86,7 @@ and then [pushing them to a remote repository](https://git-scm.com/book/en/v2/Gi
 
   `git push origin master`
 
-4. From here, our git hosting lets the CenturyLink WordPress service know that you have made a change. The service will pull down your changes from the repository to update your live site! Please note that **only** commits pushed to the *master* branch will update your live site.
+4. From here, our git hosting lets the CenturyLink WordPress hosting platform know that you have made a change. The service will pull down your changes from the repository to update your live site! Please note that **only** commits pushed to the *master* branch will update your live site.
 
 ## That's It!
 
