@@ -29,7 +29,22 @@ The export utility in AppFog v1 is subject to timeout for databases larger than 
 2: mysql
 3: mysqldump
 </pre>
-2. Export a MySQL database using phpMyAdmin:
+2. Export a MySQL database using the `export-service` command:
+  * Use `export-service` to generate a dump URI.
+  * Download the file from the URL.
+  * Give the file the ZIP file extension.
+  * Decompress the ZIP and navigate to the content folder in your current directory.
+  * Decompress the SQL file from the Gunzip (GZ) file.
+  * An example is below:
+<pre>af export-service \<service_name\>
+mkdir \<service_name\>
+cd \<service_name\>
+wget -c -O \<service_name\>.zip \<URL_provided_by_export-service_command\>
+unzip \<service_name\>.zip
+cd content
+gunzip *.gz
+</pre>
+3. Export a MySQL database using phpMyAdmin:
   * Deploy a [phpMyAdmin on AppFog](phpmyadmin-on-appfog.md) jumpstart app.
   * Use the phpMyAdmin export utility.
   * For large databases that still experience timeouts you can export the database in chunks, selecting single or multiple tables at a time.
