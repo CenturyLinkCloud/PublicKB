@@ -8,7 +8,7 @@
 
 ### Description (goal/purpose)
 
-CenturyLink Cloud will default to having one Billing Account Number (BAN) per Hierarchy that is automatically generated upon signing up for the service. We do have the capability to separate Master and Sub Accounts onto different BANs, if requested.
+CenturyLink Cloud will default to having one Billing Account Number (BAN) per Hierarchy that is automatically generated upon signing up for the service. We do have the capability to separate Master and Sub-Accounts onto different BANs, if requested.
 - Sub-Accounts can be billed separately from their Master Account, and separate from each other
 
 
@@ -16,7 +16,7 @@ CenturyLink Cloud will default to having one Billing Account Number (BAN) per Hi
 
 - Customers
 
-### Pre-Requisites
+### Prerequisites
 - There must be a Master and a Sub-Account within the same hierarchy, currently billing on the same invoice before making this request
 
 
