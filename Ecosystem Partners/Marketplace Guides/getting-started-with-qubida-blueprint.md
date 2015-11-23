@@ -86,8 +86,21 @@ You can achieve a single-button deployment of a new Qubida Analytics instance us
   Once the status messages in the previous step indicate your environment is ready then access Qubida Analytics 
   Client UI via port 80 on your new server (point your web browser to https://yourhost). 
 
+  <img src="../../images/qubida/signin.png">
+
+  Click on “Sign in” and on “Not a Member? Sign up”
+
+  <img src="../../images/qubida/not_a_member.png">
+
+  Use your new login to Sign in and start using Qubida
+
+  <img src="../../images/qubida/login.png">
+
   Signup for trial account to discover and explore your Big Data.
 
+9. **Using Qubida**
+
+  Review the [Qubida User Manual](https://qubida.atlassian.net/wiki/display/UM/Introduction) for help getting started.
 
 
 ### Pricing
