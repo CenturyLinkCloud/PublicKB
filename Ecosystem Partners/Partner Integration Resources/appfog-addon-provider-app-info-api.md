@@ -8,7 +8,7 @@
 
 ### Purpose
 
-The new Add-on Engine marketplace is made available to the NextGen AppFog users to provision and bind services to their applications. This document describes the App Info endpoint, which AppFog Add-on Partners can use to retrieve the list of provisioned add-ons.
+The new Add-on Engine marketplace is made available to the NextGen AppFog v2 users to provision and bind services to their applications. This document describes the App Info endpoint, which AppFog Add-on Partners can use to retrieve the list of provisioned add-ons.
 
 ### Audience
 
@@ -67,11 +67,11 @@ with body attributes:
 - `plan` - Plan id as provisioned
 - `provider_id` - The unique identifier assigned to the application by your add-on at time of provisioning
 - `account_id` - Account alias
-- `resource.uuid` - Unique identifier assigned by AppFog
+- `resource.uuid` - Application id: unique identifier assigned by AppFog
 
 ### Get Individual App
 
-You can also ask for an individual app by id:
+You can also ask for an individual app by application id (`resource.uuid` from the previous above call):
 
 ```
 curl -s https://sudosandwich:correcthorsebatterystaple@addons.ctl.io/vendor/apps/e9f4ad41-e455-4db1-92bd-9cc657a6f75e
@@ -102,7 +102,7 @@ with additional body attributes:
 
 ### Update Configuration
 
-Please note that this **requires user action**. Once you've updated a configuration, the user must re-bind the service to an application and re-stage he application. There is no way for an add-on provider to trigger this action, so many changes will require coordination with users.
+Please note that this **requires user action**. Once you've updated a configuration, the user must re-bind the service to an application and re-stage the application. There is no way for an add-on provider to trigger this action, so many changes will require coordination with users.
 
 Update the configuration your service is providing for an application by calling:
 
