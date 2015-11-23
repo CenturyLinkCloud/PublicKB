@@ -6,10 +6,10 @@
   "contentIsHTML": false
 }}}
 
-## Article Overview
+### Article Overview
 This article will walk you through expanding the storage assigned to your SRN.  You can assign new storage to current storage pools, or create a new pool on the SRN to assign the storage to.  Storage from the SRN is used for all aspects of the SafeHaven protection, from the Local Replica / Local Cache, to Checkpoints, as well as temporary write space during test failover and failover scenarios.
 
-## Expanding SRN Storage
+### Expanding SRN Storage
 
 1. Assuming that our SRN is contained within the CenturyLink Cloud we need to first go and add a new raw disk with the appropriate amount of disk space to our SRN.  If your SRN is on-prem, proceed to add raw storage via the correct method pertanant to your environment
 
@@ -39,7 +39,7 @@ This article will walk you through expanding the storage assigned to your SRN.  
 
     ![COMPLETED](../images/safehaven-expand-srn-storage-6.png)
 
-## Other Notes
+### Other Notes
 
 Apply caution when working with your SRN Storage Pools.  These pools are used to maintain the SafeHaven replication data between your Production and DR side systems.  Typically you will want to increase 1 for 1, your Production SRN with you DR SRN when modifying space allocations - especially when in a local replica mode.  Local cache mode does not require a 1 for 1 mirror.  You should always understand your environment sizing requirements prior to adjusting SRN storage.
 
