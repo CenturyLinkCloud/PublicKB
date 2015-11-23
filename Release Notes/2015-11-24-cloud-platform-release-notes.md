@@ -12,7 +12,7 @@
 
 ### Early Adopter Program Updates (1)
 
-* __MySQL DBaaS.__ The MySQL-compatible Database-as-a-Service is currently (in beta and is available to select customers)[https://www.ctl.io/dbaas/].   
+* __MySQL DBaaS.__ The MySQL-compatible Database-as-a-Service is currently [in beta and is available to select customers](https://www.ctl.io/dbaas/).   
 
   * __In-datacenter replication.__ Coming November 30th, customers can enjoy a more highly available solution by choosing to replicate their database instance within datacenter with logic that ensures the primary and replica instances do not share the same host or storage infrastructure.
   ![In DC Replication](../images/2015-11-24_releasenotes2.png)
@@ -39,10 +39,6 @@
   * __Disk Mapping Structure Updates.__ This change brings performance improvements to guest VMs.
 
 * __Bare Metal Support for Execute Package.__ Packages can now be executed on Bare Metal servers using the [Execute Package](https://www.ctl.io/knowledge-base/servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/) action available at the server group level.
-
-### Ecosystem (X)
-
-* __Placeholder__ Shac to come up with some material by Monday
 
 ### Announcements (1)
 
