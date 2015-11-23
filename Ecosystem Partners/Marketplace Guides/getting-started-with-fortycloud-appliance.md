@@ -68,7 +68,7 @@ CenturyLink Cloud Users
 
 3. **Set Required parameters.**
 
-  <img src="../../images/bpimager/deploy_parameters.png">
+  ![Deploy Parameters](../../images/bpimager/deploy_parameters.png)
 
   * **Control User Password** - The password associated with your control.ctl.io login
 
@@ -118,21 +118,21 @@ CenturyLink Cloud Users
     You can request a new account free of charge on the FortyCloud website: http://campaign.fortycloud.com/30-day-free-trial/
   * Login to the FortyCloud Web Admin Console to retrieve a new Gateway registration token.
   * Press on the “Setup a new Gateway” icon
-    <img src="../../images/fortycloud/setup_new_gateway.png" style="">
+	![Setup New Gateway](../../images/fortycloud/setup_new_gateway.png)
   * **Setup a New Gateway** Wizard opens. Make Sure **CenturyLink Cloud** is selected and copy the *FortyCloud Account Registration Token* 
     (the blue highlighted text)
-    <img src="../../images/fortycloud/setup_new_gateway2.png" style="">
+	![Setup New Gateway](../../images/fortycloud/setup_new_gateway2.png)
   * SSH to your server using your password (ssh root@[Public IP]) once prompted enter your password, once you are logged in the following 
     screen will be prompted
-    <img src="../../images/fortycloud/setup_new_gateway3.png" style="">
+	![Setup New Gateway](../../images/fortycloud/setup_new_gateway3.png)
   * Type the following command inside your SSH console
     ```
 	> sudo fccli register –t <Paste “FortyCloud Account Registration Token”>
 	```
 	You should see the following
-    <img src="../../images/fortycloud/setup_new_gateway4.png" style="">
+	![Setup New Gateway](../../images/fortycloud/setup_new_gateway4.png)
   * Within a few minutes your new FortyCloud Gateway will appear on the Web Admin Console dashboard (as seen below)
-    <img src="../../images/fortycloud/setup_new_gateway5.png" style="">
+	![Setup New Gateway](../../images/fortycloud/setup_new_gateway5.png)
 
   You can now proceed with the Gateway configuration. 'How to' tutorials are available via the Support Center link located on the top right corner. 
 
