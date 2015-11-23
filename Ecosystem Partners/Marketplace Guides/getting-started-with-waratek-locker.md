@@ -134,6 +134,9 @@ Waratek Locker is available as a Blueprint for deployment on a new server.
 
 8. Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
+### Pricing
+For pricing and licensing of Locker, please contact [our sales team](mailto:sales@waratek.com).
+
 ### Frequently Asked Questions
 
 For more information about Locker, click on the following links: 

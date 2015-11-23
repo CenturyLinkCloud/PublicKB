@@ -10,7 +10,7 @@
 
 ### IMPORTANT NOTE
 
-CenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage at this time.
+CenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage at this time.
 
 During the Limited Beta there is no production Service Level Agreement.
 
@@ -96,7 +96,7 @@ At the present time, CenturyLink does not provide automated updates or upgrades 
 
 8. Test and verify in PROD
 
-  Now you can login to your Production WordPress site, and verify that it was successfully updated to the new version of WordPress core.
+  Now you can login to your production WordPress site, and verify that it was successfully updated to the new version of WordPress core.
 
   Occasionally, a WordPress core update may require updates to the database, and you may see a screen like this one:
 

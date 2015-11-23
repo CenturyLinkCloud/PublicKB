@@ -74,7 +74,7 @@ CenturyLink Cloud Users
 
 7. **Deployment Complete**
 
-  Once the Blueprint has finished execution you will a number of emails.  The first will indicate the server has been deployed and the second will come a few minutes later once the appliance has been fully activated.  If you do not receive an email like the one shown below you may have had a deployment error - review the *Blueprint Build Log* to for error messages.
+  Once the Blueprint has finished execution you will receive a number of emails.  The first will indicate the server has been deployed and the second will come a few minutes later once the appliance has been fully activated.  If you do not receive an email like the one shown below you may have had a deployment error - review the *Blueprint Build Log* to for error messages.
 
   <div style="float:left;width:45%;margin-left:1em;">
     *Email #1: Appliance deploy started*

@@ -1,7 +1,7 @@
 {{{
   "title": "Introducing Object Storage",
-  "date": "8-7-2015",
-  "author": "Richard Seroter",
+  "date": "10-29-2015",
+  "author": "Daniel Stephan",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -27,15 +27,11 @@ A: Object Storage users are distinct from CenturyLink Cloud users, but all resid
 
 **Q: What kind of data belongs in Object Storage?**
 
-A: Object Storage is for key-value data. It is a schema-less repository that can store large objects (up to 5 GB) and is perfect for archive data, Microsoft Office documents and more.
+A: Object Storage is for key-value data. It is a schema-less repository that can store large objects (up to 5 TB) and is perfect for archive data, Microsoft Office documents and more.
 
-**Q: How is my data replicated?**
+**Q: How available is my data?**
 
-A: The object storage service replicates a single object three times within the selected region.
-
-**Q: How available is my data within a given data center?**
-
-A: Each data center contains a "ring" of servers that maintain copies of the objects. If any server fails, there is no interruption of service as the servers simply re-balance and distribute the objects evenly across the remaining servers in the ring. This provides a very high availability of data within a given data center.
+A: Data stored in an object storage region is stored in a highly available, fault tolerant way.  When data is stored, it is written to a datacenter where it is stored in an industry standard, highly redundant method. Data is also replicated to an additional datacenter where it is again stored using the same redundant method.  This combination of datacenter redundancy and multi-datacenter replication yields a robust, always-on object storage solution.
 
 **Q: How do I interact with Object Storage?**
 
@@ -53,7 +49,7 @@ Create a bucket|X|X
 Delete a bucket|X|X
 View bucket ACLs (permissions)|X|X
 Set bucket ACLs (permissions)|X|X
-See bucket region|X|
+See bucket region|X|X
 See bucket owner name|X|X
 Add object to bucket||X
 Delete object in bucket||X

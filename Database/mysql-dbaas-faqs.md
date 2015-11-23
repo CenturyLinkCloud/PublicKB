@@ -26,7 +26,7 @@ Currently, this article is to support customers in the Limited Beta program.  Ad
 
 <p><strong>Q: How is my data isolated from other Database-as-a-Service tenants?</strong>
 </p>
-<p>A: Each MySQL instance lives on it's own Virtual Machine.</p>
+<p>A: Each MySQL instance lives on its own Virtual Machine.</p>
 
 <p><strong>Q: Can I choose to replicate my data for higher availability?</strong>
 </p>

@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Feature Availability Matrix",
-  "date": "8-4-2015",
+  "date": "11-4-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
