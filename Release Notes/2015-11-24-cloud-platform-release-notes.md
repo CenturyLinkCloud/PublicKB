@@ -40,8 +40,10 @@
 
 * __Bare Metal Support for Execute Package.__ Packages can now be executed on Bare Metal servers using the [Execute Package](https://www.ctl.io/knowledge-base/servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/) action available at the server group level.
 
-### Announcements (1)
+### Announcements & Reminders (2)
 
-* __Automatic Removal of "Under Construction" Resources.__ Occasionally, requests for new resources in CenturyLink Cloud will not complete successfully, and appear as "Under Construction" indefinitely. Effective January 1, 2016, requests that remain "Under Construction" state for 14 days will be automatically deleted from the platform. The removal of resources will be done automatically every two weeks, so the first such removal will be January 15, 2016.
+* __New Policy: Automatic Removal of "Under Construction" Resources.__ Occasionally, requests for new resources in CenturyLink Cloud will not complete successfully, and appear as "Under Construction" indefinitely. Effective January 1, 2016, requests that remain "Under Construction" state for 14 days will be automatically deleted from the platform. The removal of resources will be done automatically every two weeks, so the first such removal will be January 15, 2016.
 
   Customers do not get billed for resources in an "Under Construction" state, so this new policy does not have a commercial impact to billing and usage.
+  
+* __Reminder: No Automated Backup for Custom VMs Larger than 4 TB.__ The Standard and Premium automatic snapshot function does not function on VMs with more than 4 TB of block storage. Customers are responsible for their own backups on these servers.
