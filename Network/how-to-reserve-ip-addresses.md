@@ -25,7 +25,7 @@ The following steps will walk you through reserving IP addresses in the CLC Port
 
 3. With your IP's noted, send an email to noc@ctl.io and request for the IP's to be marked as reserved.  Don't forget to specify your account information, including your PIN and the datacenter these IP's reside in.
 
-  - Additional Notes - [Submitting a support request to the NOC](../support/how-do-i-report-a-support-issue.md)
+  - Additional Notes - [Submitting a support request to the NOC](../Support/how-do-i-report-a-support-issue.md)
   - ![EMAILNOC](../images/how-to-reserve-ip-addresses-3.png)
 
 4. Once the reservation completion from the NOC has been completed you will see your IP's marked as claimed without any server listed for them.  Upon the next infrastructure build request the next free IP will be used, skipping those we have marked as claimed.  From here you can assign your IP's out to the solutions that require them.
