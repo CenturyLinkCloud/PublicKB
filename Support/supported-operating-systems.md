@@ -1,6 +1,6 @@
 {{{
   "title": "Supported Operating Systems",
-  "date": "4-7-2015",
+  "date": "11-24-2015",
   "author": "Jared Ruckle",
   "attachments": [],
   "contentIsHTML": false
@@ -12,6 +12,7 @@ The following operating systems are supported in CenturyLink Cloud, as of April 
 
 * CentOS 5
 * CentOS 6
+* CentOS 7
 * Debian 6
 * Debian 7
 * RedHat Enterprise Linux 5
