@@ -1,6 +1,6 @@
 {{{
   "title": "Connecting to MySQL DBaaS over SSL-enabled Connection",
-  "date": "08-14-2015",
+  "date": "11-22-2015",
   "author": "Lane Maxwell",
   "attachments": [],
   "related-products" : [],
@@ -19,7 +19,7 @@ Currently, this article is to support customers in the Limited Beta program.  Ad
 
 ## Connecting over SSL-enabled Connection
 
-1.  Navigate to the "Database Instances" screen.  For provisioned instances of MySQL, you will see a "Download Certificate" button.  When you click this button, you will download a file called ca-cert.pem. This is the certificate that will enable the SSL connection.  ![DownloadCert](../images/dbaas-cert-beta.png)
+1.  Once in the user interface, you will see a list of your database subscriptions.  Locate and click on the subscription for which you need to download a certificate.  This will take you to a new screen with subscription details and a button to download your certificate.  When you click this button, you will download a file called [dbinsancename].pem. This is the certificate that will enable the SSL connection.  ![DownloadCert](../images/dbaas-cert-beta-cyclops.png)
 
 2.  Once the certificate is downloaded, you can connect specifying the `--ssl-ca` parameter and pass in the certificate.
 `mysql -h 10.0.0.1 -u admin -p --ssl-ca=/{path_to_download_location}/ca-cert.pem -P 49152`
