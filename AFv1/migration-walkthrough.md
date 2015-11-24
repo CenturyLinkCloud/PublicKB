@@ -63,14 +63,29 @@ define('DB_HOST', $service['credentials']['host'] . ':' . $service['credentials'
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '')
  ```
+5. AppFog v1 had several PHP extensions and modules enabled by default. AppFog v2 allow users to specify necessary extensions and modules. The following steps outline the process:
+ * Create a new `.bp-config` directory in your application's root directory.
+ * Within the new `.bp-config` directory add a filed named `options.json`.
+ * Enable extensions by adding the PHP_EXTENSIONS or PHP_MODULES setting in the `options.json` file. The following example enables several PHP extensions that were available on AppFog v1:
+ ```
+{
+"PHP_EXTENSIONS": ["pdo", "pdo_mysql", "mysqli", "mysql", "mbstring", "mcrypt", "gd", "zip", "curl", "openssl", "sockets", "pdo_pgsql", "pdo_sqlite", "pgsql", "mongo"]
+}
+ ```
+6. Users were able to modify some php.ini settings on AppFog v1 within their .htaccess file. On AppFog v2 users will need to create a `user.ini` file in their root directory and include their settings. The following are examples of settings which may be modified:
 
-5. The default application memory reservation is 1GB and the default buildpack will support PHP 5.5 and 5.6. Specify the PHP custom buildpack when deploying PHP 5.3 and 5.4 applications, if necessary also specify the memory allocation:
+ ```
+memory_limit = 256M
+upload_max_filesize = 4M
+max_input_time = 90
+  ```
+7. The default application memory reservation is 1GB and the default buildpack will support PHP 5.5 and 5.6. Specify the PHP custom buildpack when deploying PHP 5.3 and 5.4 applications, if necessary also specify the memory allocation:
  
  ```
 cf push <appname> -m <memory> -b https://github.com/CenturyLinkCloud/php-buildpack.git#af_custom_php
  ```
  
-6. For this example we would use the following commands to push the example-app and test-app applications to AppFog v2:
+8. For this example we would use the following commands to push the example-app and test-app applications to AppFog v2:
 ```
 cf push example-app -m -128M -b https://github.com/CenturyLinkCloud/php-buildpack.git#af_custom_php
 cf push test-app -m 256M
@@ -80,7 +95,24 @@ cf push test-app -m 256M
 
 More information can be found in our [Migrating a Service](export-services-and-third-party-alternatives.md) and [Importing Data Into AppFog v2 MySQL](importing-data-to-afv2-mysql.md) articles. Our MySQL DBaaS is currently in Beta. It is due to release from Beta in December.
 
-1. First we need to export the data from AppFog v1. Establish a tunnel using `af tunnel`, then select the database at the prompt. At the next prompt select the option `3. mysqldump`. You will then be prompted to select an output file. You can provide the path or it will download to your current working directory. Be sure to include the proper `.sql` extension, as in `example-db.sql`.
+1. First we need to export the data from AppFog v1. There are several options available. In this example we'll use the `af export-service <service_name>` command. The [Migrating a Service](export-services-and-third-party-alternatives.md) article provides information on other options.
+ * From the CLI on AppFog v1:
+ ```
+af export-service example-db
+ ```
+ * This proivdes a URL to download your database. Use the wget command to download the database:
+ ```
+wget -c -O <example-db>.zip <URL_provided_by_export-service_command>
+ ```
+ * Decompress the downloaded file:
+ ```
+ unzip <example-db>.zip
+ ```
+ * Naviagte to the "content" directory. Then decompress the SQL file and rename it to your service name:
+ ```
+gunzip <example-db>.sql <file_name>.gz
+ ```
+ 
 2. Next, create a service on AppFog v2. You can view the available first-party service options using `cf marketplace`:
 
  ```
@@ -117,7 +149,7 @@ System-Provided:
   ],
   ```
 
-6. Use the VCAP_SERVICES credentials to connect to the database and import the `example-db.sql` dump file:
+6. Use the VCAP_SERVICES credentials to connect to the database and import the `example-db.sql` file:
 
 ```
 mysql -h <HOST_ADDRESS> default -u admin -p -P <PORT_NUMBER> < /path/to/file/example-db.sql

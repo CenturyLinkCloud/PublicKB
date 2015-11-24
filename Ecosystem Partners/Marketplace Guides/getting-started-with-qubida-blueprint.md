@@ -12,7 +12,7 @@
 
 <img src="../../images/qubida/qubida_logo.png" style="border:0;float:right;max-width: 150px;">
 
-Qubida Analytics provices "Quick Big Data".
+Qubida Analytics provides "Quick Big Data".
 
 
 ##### Customer Support
@@ -82,12 +82,25 @@ You can achieve a single-button deployment of a new Qubida Analytics instance us
   Once the Blueprint has deployed you will receive an email confirming the newly deployed assets within a few minutes.  If you do not receive an email you may have had a deployment error - check the *Blueprints Queue* or review the *Blueprint Build Log* to for error messages.
 
 8. **Accessing Qubida**
+ 
+  Once the status messages in the previous step indicate your environment is ready then access Qubida Analytics 
+  Client UI via port 80 on your new server (point your web browser to https://yourhost). 
 
-Once the status messages in the previous step indicate your environment is ready then access Qubida Analytics 
-Client UI via port 80 on your new server (point your web browser to https://yourhost). 
+  <img src="../../images/qubida/signin.png">
 
-Signup for trial account to discover and explore your Big Data.
+  Click on “Sign in” and on “Not a Member? Sign up”
 
+  <img src="../../images/qubida/not_a_member.png">
+
+  Use your new login to Sign in and start using Qubida
+
+  <img src="../../images/qubida/login.png">
+
+  Signup for trial account to discover and explore your Big Data.
+
+9. **Using Qubida**
+
+  Review the [Qubida User Manual](https://qubida.atlassian.net/wiki/display/UM/Introduction) for help getting started.
 
 
 ### Pricing
