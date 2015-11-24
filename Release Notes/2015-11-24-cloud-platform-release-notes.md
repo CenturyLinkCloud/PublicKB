@@ -46,4 +46,4 @@
 
   Customers do not get billed for resources in an "Under Construction" state, so this new policy does not have a commercial impact to billing and usage.
   
-* __Reminder: No Automated Backup for Custom VMs Larger than 4 TB.__ The Standard and Premium automatic snapshot function does not function on VMs with more than 4 TB of block storage. Customers are responsible for their own backups on these servers.
+* __Reminder: No Automated Backup for Custom VMs Larger than 4 TB.__ The Standard and Premium backup features do not function on VMs with more than 4 TB of block storage. Customers are responsible for their own backups on these servers.
