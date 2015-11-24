@@ -9,7 +9,7 @@
 ### Article Overview
 This article will walk you through the process of reserving IP addresses in the platform.  
 
-There may be times when you need to prevent the auto-assignment of the next available IP in your datacenter.  One common occurrence of needing a to reserve an IP would be if you need to assign a clustered resource an IP within the same network as its host services.  In this scenario, assigning the next IP would work fine, until you created a new server in the datacenter.  At that time the next available IP would get assigned from the platform, and without the IP being reserved, you would inadvertently assign the used IP to a new server since the platform does not know the IP was assigned to another resource.
+There may be times when you need to prevent the auto-assignment of the next available IP in your datacenter.  One common occurrence of needing to reserve an IP would be if you need to assign a clustered resource an IP within the same network as its host services.  In this scenario, assigning the next IP would work fine, until you created a new server in the datacenter.  At that time the next available IP would get assigned from the platform, and without the IP being reserved, you would inadvertently assign the used IP to a new server since the platform does not know the IP was assigned to another resource.
 
 ### Steps to reserve an IP Address
 
