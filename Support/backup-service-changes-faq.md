@@ -1,7 +1,7 @@
 {{{
-  "title": "[UPDATED] About Simple Backup Service and the Retirement of Standard & Premium Storage",
-  "date": "[UPDATED 11-18-2015], Originally Posted 10-7-2015",
-  "author": "Jared Ruckle & Mark Lee",
+  "title": "About Simple Backup Service and the Retirement of Standard & Premium Storage",
+  "date": "UPDATED 11-18-2015, First Posted 10-7-2015",
+  "author": "Jared Ruckle",
   "attachments": []
 }}}
 
