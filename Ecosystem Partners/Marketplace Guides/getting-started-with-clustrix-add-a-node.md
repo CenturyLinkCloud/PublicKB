@@ -8,7 +8,7 @@
 }}}
 
 
-![Clustrix logo](../../images/clustrix_blue)
+![Clustrix logo](../../images/clustrix_blue.png)
 
 
 ### Technology Profile
@@ -56,7 +56,7 @@ After reading this article, the user should understand what ClustrixDB does, how
 
 To access your application from a computer outside the CenturyLink Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
 
-  1. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Server's Public IP through Control Portal and configuring appropriately.
+  1. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Server's Public IP through Control Portal and configuring appropriately.
         * The default ports to access the application are: 80, 22, 3306
 
 
