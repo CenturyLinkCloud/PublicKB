@@ -1,5 +1,5 @@
 {{{
-  "title": "How to use Control DNS",
+  "title": "How to manage public DNS in Control",
   "date": "11-25-2015",
   "author": "Chris Little",
   "attachments": [],
@@ -7,14 +7,15 @@
 }}}
 
 ### Overview
-CenturyLink Cloud supports the ability to host and manage DNS zones within the Control Portal.  Customers can configure services to manage their entire domain or individual subdomain DNS zone.  
+CenturyLink Cloud supports the ability to host and manage **Public** DNS zones within the Control Portal.  Customers can configure services to manage their entire domain or an individual subdomain DNS zone.  
 
 ### Audience
-* CenturyLink Cloud Customers
+* CenturyLink Cloud Customers who wish to manage public DNS services in the Control Portal
 
 ### Prerequisites
 * Customers must procure a domain
 * Administrative control of the domain with the domain registrar
+* A CenturyLink Cloud user with [Account Administrator, Network Manager or DNS Manager role.](../Accounts & Users/role-permissions-matrix.md)
 
 ### Configuring a Domain
 The steps below will guide a user through configuring a domain within the Control Portal and making the necessary changes with the domain registrar allowing complete management of the DNS records and zone within the platform.  Refer to the [Configuring a Subdomain](#configuring-a-subdomain) portion of this article for steps on leveraging subdomains.
