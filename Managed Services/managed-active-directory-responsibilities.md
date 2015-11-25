@@ -24,7 +24,7 @@ Users employed by companies that have agreed to terms with [CenturyLink Sales](h
 
 The following is not meant to be a complete description of every feature of Active Directory, but to give users context regarding the support CenturyLink provides. If you have questions or concerns  which fall outside the scope presented below, please contact the CenturyLink Client Service Center at 1-888-638-6771 to submit your request for review. With Service Management or Advanced Services, it is possible for CenturyLink to provide resources to take on responsibilities beyond what is identified below. Please contact your CenturyLink sales representative to discuss these scenarios.
 
-**High Level Function** | **Responsibile** | **Contact Method** | **Notes**
+**High Level Function** | **Responsible** | **Contact Method** | **Notes**
  --- | --- | --- | ---
  Initial configuration | CLC Managed AD Blueprint | Client | If there are issues with the Blueprint's initial configuration of Managed AD, it will fail during provisioning. Client should expect to be contacted by CenturyLink operations to assist.
  Configure Sites & Services for non-CewnturyLink Managed Sites | Customer | Internal | N/A
@@ -45,5 +45,3 @@ The following is not meant to be a complete description of every feature of Acti
  Disable Users | | CenturyLink Support | CenturyLink Operations | 1-888-638-6771
  Create or Modify Standard Group Policies | CenturyLink Support | CenturyLink Operations | 1-888-638-6771
  Change Domain/Forest Function Level | CenturyLink Support | CenturyLink Operations | 1-888-638-6771
-
- 
