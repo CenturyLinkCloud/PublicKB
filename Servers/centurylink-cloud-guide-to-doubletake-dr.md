@@ -125,6 +125,7 @@ Import server to CenturyLink Cloud (please see [Self Service VM import OVF requi
 There are two way of installing Double-Take software on the source server, either by downloading from Vision Solutions website or from the Double-Take Management Console.  
 
 Install Double-Take DR on the Source Server using the Double-Take Management Console
+
 1.   To manage the new server from the Double-Take Console by clicking on ‘Get Started’ and ‘Add Servers’
 
     ![DT console add servers](../images/doubletake/DT-console-addservers.png)
