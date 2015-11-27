@@ -292,7 +292,7 @@ The Double-Take license required for this node is ‘Double-Take DR For Windows 
     [API](//www.ctl.io/api-docs/v2/\#server-actions-create-snapshot)
     or [CLI](//github.com/CenturyLinkCloud/CenturyLink Cloud-go-cli) for recovery or rebuild the test node with the procedure [Creating a Target Server](#creating-a-target-server)
 
-    ![DT-CenturyLink Cloud-snpshot](../images/doubletake/DT-CenturyLink Cloud-snpshot.png)
+    ![DT-CenturyLink Cloud-snapshot](../images/doubletake/DT-clc-snapshot.png)
 
 -   From ‘Manage Jobs’ screen, right click on the replication job from the Repository Server to the Target Server and choose ‘Failover, Cutover or Recover’
 
