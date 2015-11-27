@@ -16,9 +16,12 @@ Quickly deploy and successfully use software and technology from any of our cert
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [A10 vThunder](../Ecosystem Partners/Marketplace Guides/getting-started-with-a10-vthunder-partner-template.md)   	| Template    | Application service gateway    |
+| [Appcito CAFE](../Ecosystem Partners/Marketplace Guides/getting-started-with-appcito-cafe.md)   	| Blueprint    | Application delivery controller    |
 | [Cohesive Networks VNS3](../Ecosystem Partners/Marketplace Guides/getting-started-with-cohesiveft-vns3-partner-template.md)   	| Template    | Network security appliance    |
+| [FortyCloud](../Ecosystem Partners/Marketplace Guides/getting-started-with-fortycloud-appliance.md)   	| Blueprint (Virtual Appliance)    | Network security appliance    |
+| [LaGrange Systems CloudMaestro](../Ecosystem Partners/Marketplace Guides/getting-started-with-lagrange-systems-cloudmaestro-blueprint.md)   	| Blueprint    | Application Delivery Controller  |
 | [NGiNX](../Ecosystem Partners/Marketplace Guides/getting-started-with-nginx-blueprint.md)   	| Blueprint    | Web traffic manager    |
-
+| [OpenVPN AS](../Ecosystem Partners/Marketplace Guides/getting-started-with-openvpnas-appliance.md)   	| Blueprint (Virtual Appliance)    | Secure access manager    |
 
 ### Development Frameworks
 
@@ -27,14 +30,13 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Apache HTTP Server](../Managed Services/getting-started-with-managed-apache.md)   	| Blueprint (Managed)   | Multi-purpose web server    |
 | [Apache Tomcat Server](../Managed Services/getting-started-with-managed-tomcat.md)   	| Blueprint (Managed)   | Web application server    |
 | [CloudMine](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudmine-blueprint.md)   	| Blueprint    | Mobile backend    |
-| [Elastic COBOL Developer](../Ecosystem Partners/Marketplace Guides/getting-started-with-elastic-cobol.md)     | Blueprint | Legacy COBOL Code migration |
+| [Heirloom Elastic COBOL](../Ecosystem Partners/Marketplace Guides/getting-started-with-elastic-cobol.md)     | Blueprint | Legacy COBOL Code migration |
 | [LAMP](../Ecosystem Partners/Marketplace Guides/getting-started-with-lamp-stack-blueprint.md)   	| Blueprint    | Linux, Apache, MariaDB/MySQL, and PHP/Perl/Python bundle    |
 | [Magento](../Ecosystem Partners/Marketplace Guides/getting-started-with-magento-blueprint.md)   	| Blueprint    | Ecommerce Shopping cart    |
 | [Microsoft Internet Information Services (IIS)](../Managed Services/getting-started-with-managed-microsoft-iis.md)   	| Blueprint (Managed)   | Web application server    |
 | [Node.js](../Ecosystem Partners/Marketplace Guides/getting-started-with-nodejs-blueprint.md)   	| Blueprint    | Node.js Javascript runtime    |
 | [PrestaShop](../Ecosystem Partners/Marketplace Guides/getting-started-with-prestashop-blueprint.md)   	| Blueprint    | E-commerce platform    |
 | [Red Hat JBoss](../Ecosystem Partners/Marketplace Guides/getting-started-with-jboss-blueprint.md)   	| Blueprint    | Java application server    |
-
 
 ### Security
 
@@ -54,9 +56,12 @@ Quickly deploy and successfully use software and technology from any of our cert
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [BCMOne VitalView](../Ecosystem Partners/Marketplace Guides/getting-started-with-bcmone-vital-view-blueprint.md)   	| Blueprint    | Network monitoring and management    |
+| [CA Unified Infrastructure Management](../Ecosystem Partners/Marketplace Guides/getting-started-with-ca-unified-infrastructure-management-on-windows.md)   	| Blueprint    | Systems monitoring and management    |
 | [Centerity](../Ecosystem Partners/Marketplace Guides/getting-started-with-centerity-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
+| [CloudBolt](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudbolt-appliance.md)   	| Blueprint    | Cloud Management Platform    |
 | [Chef Server](../Ecosystem Partners/Marketplace Guides/getting-started-with-chef-server-blueprint.md)   	| Blueprint    | Configuration management    |
 | [Dynatrace](../Ecosystem Partners/Marketplace Guides/getting-started-with-dynatrace-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
+| [Rundeck](../Ecosystem Partners/Marketplace Guides/getting-started-with-rundeck-blueprint.md)   	| Blueprint    | Job scheduler and runbook automation   |
 
 
 ### Development Toolchain
@@ -84,6 +89,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [CloudEra](../Managed Services/getting-started-with-cloudera-on-centurylink-cloud.md)   	| Blueprint (Managed)   | Industry-leading Hadoop implementation    |
+| [Coffing Data Warehouseing](../Ecosystem Partners/Marketplace Guides/getting-started-with-coffing-data-warehousing-nexus-chameleon-blueprint.md) 	| Blueprint  | Data Warehouse  |
 | [DataStax Cassandra](../Ecosystem Partners/Marketplace Guides/getting-started-with-datastax-blueprint.md)   	| Blueprint    | Distributed NoSQL database    |
 | [Hortonworks Hadoop](../Ecosystem Partners/Marketplace Guides/getting-started-with-hortonworks-hadoop-blueprint.md)   	| Blueprint    | Distributed NoSQL database    |
 | [MEAN Stack](../Ecosystem Partners/Marketplace Guides/getting-started-with-mongodb-blueprint.md)   	| Blueprint    | MongoDB, Express, Angular, Node.js bundle    |
@@ -93,7 +99,9 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Pivotal GemFire](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-gemfire-blueprint.md)   	| Blueprint    | In-memory distributed database for high scale custom applications    |
 | [Pivotal Greenplum](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-greenplum-blueprint.md)   	| Blueprint    | Enterprise-grade analytical data warehouse    |
 | [Pivotal HD + HAWQ](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-hd-hawq.md)   	| Blueprint    | Enterprise-grade Hadoop cluster    |
-| [XtremeData dbX](../Ecosystem Partners/Marketplace Guides/getting-started-with-xtremedata-dbx-blueprint.md)   	| Blueprint    | On-Demand Big Data Analytics with real-time ingest    |
+| [Qubida Analytics](../Ecosystem Partners/Marketplace Guides/getting-started-with-qubida-blueprint.md)   	| Blueprint    | Big Data BI    |
+| [XtremeData dbX](../Ecosystem Partners/Marketplace Guides/getting-started-with-xtremedata-dbx-blueprint.md)  | Blueprint  | On-Demand Big Data Analytics with real-time ingest |
+| [ZoomData](../Ecosystem Partners/Marketplace Guides/getting-started-with-zoomdata-blueprint.md)  | Blueprint  | Visual analytics of big data |
 
 ### Analytics & Log Management
 
@@ -108,6 +116,8 @@ Quickly deploy and successfully use software and technology from any of our cert
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [SoftNAS](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md)   	| Template    | NAS and Cloud Storage Gateway   |
+| [CloudBerry Lab Backup Enterprise](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudfuze-blueprint.md)   	| Blueprint    | Backup Software   |
+| [CloudFuze](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudfuze-blueprint.md)   	| Blueprint    | Cloud Storage Management   |
 
 ### Data Protection
 

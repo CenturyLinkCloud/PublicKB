@@ -1,7 +1,7 @@
 {{{
   "title": "About Simple Backup Service and the Retirement of Standard & Premium Storage",
-  "date": "10-7-2015",
-  "author": "Jared Ruckle & Mark Lee",
+  "date": "UPDATED 11-18-2015, First Posted 10-7-2015",
+  "author": "Jared Ruckle",
   "attachments": []
 }}}
 
@@ -17,21 +17,22 @@ CenturyLink Cloud will still offer a block storage service for virtual machines 
 
 ### What does this mean for me?
 
-Your backups on Standard and Premium will continue to function until the Simple Backup Service becomes available. At that point, your simple backup policy will be configured to match Standard or Premium storage and you can adjust their policy from there.  Your backup will then continue to occur consistent with Standard or Premium backup service definitions (the one exception would be backups will be for entire drives and their paths, not snapshots).
+Your backups on Standard and Premium will continue to function until the Simple Backup Service becomes available in your data center. At that point, customers will need to apply a Simple Backup Policy to their servers in order to have data backed up. Your backup will then operate consistent with Standard or Premium backup service definitions, provided that you apply a similar policy to your servers (the one exception: new backups will be for entire drives and their paths, not snapshots). We recommend pre-identifying those servers and important data/apps which need backup ahead of time.
 
 ### Will my servers be automatically removed from standard & premium storage? Is there something I need to do to enable Simple Backup Service?
 
-The default option for customers will be as follows:
+Yes, customer action will be required, but CenturyLink is managing a few items to make things a little easier. The following describes the "default" option:
 
-* CenturyLink engineers will remove Standard & Premium storage from your servers
-* The engineers will then associate Simple Backup Service Policies that closely mirror Standard & Premium functionality to each server
-* Customers may then remove the policies or create their own
+* CenturyLink engineers will remove Standard & Premium storage from the Platform (primary block storage will continue to function).
+* CenturyLink will then populate a few common backup policies to your account.
+* You will need to associate a Simple Backup Service policy to each server if desired.
+* Customers can also modify a pre-populated policy or create their own.
 
-If you would prefer a different path than the one above, please contact us at [help@ctl.io](mailto:help@ctl.io) or reach out to your account manager.
+If you would require additional assistance or an alternative method, please contact us at [help@ctl.io](mailto:help@ctl.io) or reach out to your account manager.
 
 ### When is this happening?
 
-The Standard and Premium products will be phased out data center-by-data center. This phased retirement of Standard and Premium - and phased launch of the Simple Backup Service - is likely to occur in late 2015 or early 2016. We will post more details on this transition in the coming weeks.
+The Standard and Premium products will be phased out data center by data center. This phased retirement of Standard and Premium - and phased launch of the Simple Backup Service - is likely to occur in late 2015 or early 2016. We will post more details on this transition in the coming weeks.
 
 ### Will my pricing change?
 
@@ -45,7 +46,7 @@ It depends on several factors, including:
 * The pace of data change on your servers
 * The retention period of the backups
 
-We anticipate that the combination of *lower* block storage costs and common Simple Backup Service configurations will be *significantly less expensive* than Premium storage, and *slightly more expensive* than Standard Storage. The exact differences of course will depend on your implementation and the final price of block storage and of the Simple Backup Service.
+We anticipate that the combination of *lower* block storage costs and common Simple Backup Service configurations will be *significantly less expensive* than Premium storage, and *slightly more expensive* than Standard storage. The exact differences of course will depend on your implementation and the final price of block storage and of the Simple Backup Service.
 
 ### What is the Simple Backup Service?
 
@@ -63,7 +64,7 @@ Removing a policy from the Control Portal also dis-associates the policy from an
 
 ### Where will the Simple Backup Service be available? Where are the backups stored?
 
-The Simple Backup Service will be available for virtual machines and bare metal servers in all CenturyLink Cloud nodes, public and private. The availability will be introduced node-by-node as mentioned above. The storage targets for the backups will be located in regions around the world. These locations are in enterprise data centers that meet CenturyLink standards for availability, durability, security, and access. Customers can choose the target which make sense for the business needs and governance. Backup target regions tentatively include:
+The Simple Backup Service will be available for virtual machines and bare metal servers in all CenturyLink Cloud nodes, public and private. The availability will be introduced according to the timeline above. The storage targets for the backups will be located in regions around the world. These locations are in enterprise data centers that meet CenturyLink standards for availability, durability, security, and access. Customers can choose the target which make sense for the business needs and governance. Backup target regions tentatively include:
 
 * US East
 * US West
@@ -106,6 +107,6 @@ This chart is a helpful comparison:
 | Backup Level | Snapshot | Snapshot | File-level |
 | Supports user-defined policies | No | No | Yes |
 | Retention Period | 5 days | 14 days | User-defined (1 day minimum) |
-| Location of Backups | Local DC | Secondary DC, based on Primary DC | Choose from several options |
+| Location of Backups | Local DC | Secondary DC | Choose from several options |
 | Frequency of backup | Daily | Daily | User definable (minimum 1 hour) |
 | Restores | Upon request by CTL Cloud customer care | Upon request by CTL Cloud customer care | Self-service |

@@ -1,5 +1,5 @@
 {{{
-  "title": "WordPress Site Migration to CenturyLink Cloud",
+  "title": "WordPress Site Migration to CenturyLink WordPress Hosting",
   "date": "07-17-2015",
   "author": "Bill Burge",
   "attachments": [],
@@ -7,13 +7,13 @@
 }}}
 ### IMPORTANT NOTE
 
-CenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
+CenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
 
 During the Limited Beta there is no production Service Level Agreement.
 
 ## Overview:
 
-There is currently no automated method for migrating an existing WordPress site to CenturyLink Cloud's WordPress. There are multiple methods that could be used to export and import an existing WordPress site into a CenturyLink Cloud WordPress site. This is one tested method. 
+There is currently no automated method for migrating an existing WordPress site to CenturyLink Cloud's WordPress. There are multiple methods that could be used to export and import an existing WordPress site into a CenturyLink Cloud WordPress site. This is one tested method.
 
 ### This migration path assumes the following:
 
@@ -27,7 +27,7 @@ There is currently no automated method for migrating an existing WordPress site 
 
 1.	An existing WordPress site
 2.	The prefix of your WordPress database tables on your existing WordPress site
-3.	A CenturyLink WordPress site
+3.	A WordPress site on CenturyLink WordPress hosting platform
 4.	The prefix of your CenturyLink WordPress database tables
 5. A CenturyLink Object Storage bucket including the access key id and secret access key
 
@@ -42,7 +42,7 @@ There is currently no automated method for migrating an existing WordPress site 
 3. Select Export
 
   ![](../images/wp_site_migration/wp_site_migration_01.png)
- 
+
 4. Replace the following
 
   * Find: source site database prefix
@@ -51,7 +51,7 @@ There is currently no automated method for migrating an existing WordPress site 
   ![](../images/wp_site_migration/wp_site_migration_02.png)
 
   *In this example the originating site’s db prefix is wp1_ and the destination prefix is A67hf_*
-	
+
 5. Expand Advanced options, select the following options, and click EXPORT TO
 
   * Do not export media library (files)
@@ -62,7 +62,7 @@ There is currently no automated method for migrating an existing WordPress site 
 6.	Select where you would like to save the file
 
   *In this example File is the selected option*
-	
+
   ![](../images/wp_site_migration/wp_site_migration_04.png)
 
 7.	Click DOWNLOAD LOCALHOST
@@ -78,7 +78,7 @@ There is currently no automated method for migrating an existing WordPress site 
 
 3. Sync your Git repository (this will force a restart of your CenturyLink WordPress Site)
 
-## CenturyLink WordPress Site
+## CenturyLink WordPress Hosting
 
 1. Login to your WordPress site and activate All-in-One WP Migration
 
@@ -122,41 +122,41 @@ There is currently no automated method for migrating an existing WordPress site 
 
 3. Replace the following fields and click connect.
 
- * **Server:** ca.tier3.io
+ * **Server:** canada.os.ctl.io
  * **Username:** CenturyLink Object Storage Access Key ID
  * **Password:** CenturyLink Object Storage Secret Access Key ID
 
-  ![](../images/wp_site_migration/wp_site_migration_11.png) 
+  ![](../images/wp_site_migration/wp_site_migration_11.png)
 
 4. Right Click your bucket and select New Folder and create a new folder named wp-content
 
-  ![](../images/wp_site_migration/wp_site_migration_12.png) 
+  ![](../images/wp_site_migration/wp_site_migration_12.png)
 
 5. Drag your WordPress Uploads folder into the wp-content folder in your Object Storage
- 
-  ![](../images/wp_site_migration/wp_site_migration_13.png) 
+
+  ![](../images/wp_site_migration/wp_site_migration_13.png)
 
 6. Expand wp-content, right click uploads, and select Info
 
-  ![](../images/wp_site_migration/wp_site_migration_14.png) 
+  ![](../images/wp_site_migration/wp_site_migration_14.png)
 
 7. Expand the settings icon and select Everyone
 
-  ![](../images/wp_site_migration/wp_site_migration_15.png) 
+  ![](../images/wp_site_migration/wp_site_migration_15.png)
 
 8. In the permissions column select READ (permission changes will then propagate through the directory structure)
 
-  ![](../images/wp_site_migration/wp_site_migration_16.png) 
+  ![](../images/wp_site_migration/wp_site_migration_16.png)
 
 9. [Connect to your database](wordpress-database-access-with-external-tools.md)
 
 10. Select the postmeta table
 
-  ![](../images/wp_site_migration/wp_site_migration_17.png) 
-	
+  ![](../images/wp_site_migration/wp_site_migration_17.png)
+
 11.	Select SQL
 
-  ![](../images/wp_site_migration/wp_site_migration_18.png) 
+  ![](../images/wp_site_migration/wp_site_migration_18.png)
 
 12. Edit the following SQL statement, paste it into SQL, and click Go
 
@@ -181,8 +181,8 @@ There is currently no automated method for migrating an existing WordPress site 
 
   `INSERT INTO postmeta (post_id, meta_key, meta_value)`
   `SELECT post_id, 'amazonS3_info' as meta_key, CONCAT('a:2:{s:6:"bucket";s:14:"wordpresstest1";s:3:"key";s:', CHAR_LENGTH(meta_value) + 19,':"wp-content/uploads/',meta_value,'";}') FROM postmeta WHERE meta_key = '_wp_attached_file'`
-	
-  ![](../images/wp_site_migration/wp_site_migration_19.png) 
+
+  ![](../images/wp_site_migration/wp_site_migration_19.png)
 
 12. If it is successful you will see that rows are inserted
 
@@ -197,8 +197,3 @@ There is currently no automated method for migrating an existing WordPress site 
 15. Expand Media and you should now see your content:
 
   ![](../images/wp_site_migration/wp_site_migration_22.png)
-
-
-
-
-

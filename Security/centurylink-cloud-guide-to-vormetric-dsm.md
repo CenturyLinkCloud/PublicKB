@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to Vormetric DSM",
-  "date": "9-03-2015",
+  "date": "11-11-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -9,24 +9,24 @@
 
 ### Table of Contents
 
-* [Vormetric DSM Overview](#Vormetric-DSM-Overview)
-* [Prerequisites](#Prerequisites)
-* [General Notes](#General-Notes)
-* [DNS Services](#DNS-Services)
-* [Network Connectivity](#Network-Connectivity)
-* [Data Security Manager Configuration](#Data-Security-Manager-Configuration)
-* [Account Hierarchy and VDS Domains](#Account-Hierarchy-and-VDS-Domains)
-    * [Account Hierarchy Single VDS Domain](#Account-Hierarchy-Single-VDS-Domain)
-    * [Account Hierarchy Multiple VDS Domains](#Account-Hierarchy-Multiple-VDS-Domains)
-* [Host Agent Installation](#Host-Agent-Installation)
-* [Creating Encryption Keys](#Creating-Encryption-Keys)
-* [Creating Policies and Applying Guardpoints](#Creating-Policies-and-Applying-Guardpoints)
-    * [Creating Policies](#Creating-Policies)
-    * [Creating Guardpoints](#Creating-Guardpoints)
-* [Encrypting Existing Data](#Encrypting-Existing-Data)
-* [High Availability](#High-Availability)
-* [DSM Automatic Backup](#DSM-Automatic-Backup)
-* [Server Backup and Recovery](#Server-Backup-and-Recovery)
+* [Vormetric DSM Overview](#vormetric-dsm-overview)
+* [Prerequisites](#prerequisites)
+* [General Notes](#general-notes)
+* [DNS Services](#dns-services)
+* [Network Connectivity](#network-connectivity)
+* [Data Security Manager Configuration](#data-security-manager-configuration)
+* [Account Hierarchy and VDS Domains](#account-hierarchy-and-vds-domains)
+    * [Account Hierarchy Single VDS Domain](#account-hierarchy-single-vds-domain)
+    * [Account Hierarchy Multiple VDS Domains](#account-hierarchy-multiple-vds-domains)
+* [Host Agent Installation](#host-agent-installation)
+* [Creating Encryption Keys](#creating-encryption-keys)
+* [Creating Policies and Applying Guardpoints](#creating-policies-and-applying-guardpoints)
+    * [Creating Policies](#creating-policies)
+    * [Creating Guardpoints](#creating-guardpoints)
+* [Encrypting Existing Data](#encrypting-existing-data)
+* [High Availability](#high-availability)
+* [DSM Automatic Backup](#dsm-automatic-backup)
+* [Server Backup and Recovery](#server-backup-and-recovery)
 
 ### Vormetric DSM Overview
 Vormetric provides enterprise encryption and key management services that enable corporations to protect their data. Vormetric addresses industry compliance mandates and government regulations globally by securing data in physical, virtual and cloud infrastructures, through Data Encryption, Key Management, Access Policies, Privileged User Control, and Security Intelligence.  Customers should refer to our [Getting Started with Vormetric DSM](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-dsm.md) knowledge-base article for more information.  

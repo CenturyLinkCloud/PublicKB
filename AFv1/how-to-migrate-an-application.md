@@ -25,3 +25,4 @@ Users may export their app code either from the command line or the web console:
 * [Enable AppFog in the Control Portal](../AppFog/getting-started-with-appfog.md#enable-appfog-in-control-portal)
 * [Install the Cloud Foundry CLI tool](../AppFog/login-using-cf-cli.md)
 * [Deploying an Application](../AppFog/deploy-an-application.md)
+* [Setup Custom Domain for Application](../AppFog/setup-custom-domain-for-appfog-app.md/)
