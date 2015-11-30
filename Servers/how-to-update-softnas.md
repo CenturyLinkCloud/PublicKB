@@ -1,44 +1,38 @@
 {{{
-  "title": "SoftNAS: How to update",
-  "date": "11-11-2015",
+  "title": "SoftNAS: How to update software",
+  "date": "11-30-2015",
   "author": "Maxim Volkov",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
-  "sticky": true
+  "sticky": false
 }}}
 
 ### Introduction
 
-<p>SoftNAS Cloud is a software behind virtual NAS appliance provided by SoftNAS, LLC - CenturyLink ecosystem partner. The software gets updated on a regular bases to receive bug fixes and new features. This brings the necessity to periodically upgrade your SoftNAS. Here we will describe this procedure.</p>
+SoftNAS Cloud is a software behind virtual NAS appliance provided by SoftNAS, LLC - CenturyLink ecosystem partner. The software gets updated on a regular bases to receive bug fixes and new features. This brings the necessity to periodically upgrade your SoftNAS. Here we will describe this procedure.
 
 ### Prerequisites
 
-<div>
-<ol>
-<li>A SoftNAS appliance was [ordered](../ecosystem-partners/marketplace-guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md) and [set up](../using-a-software-defined-virtual-nassan-on-centurylink-cloud.md)  in CenturyLin Cloud.</li>
-
-<li>You do have administrative rights to access the appliance's GUI interface.</li>
-<li>Your SoftNAS Cloud license is active.</li>
-</ol>
-</div>
+1. A SoftNAS appliance was [ordered](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md) and [set up](using-a-software-defined-virtual-nassan-on-centurylink-cloud.md) in CenturyLin Cloud.
+2. You do have administrative rights to access the appliance's GUI interface.
+3. Your SoftNAS Cloud license is active.
 
 ### Preparation
 
-<p>The update process will interrupt normal operation of your NAS, so you have to make sure that any processes using the virtual appliance are stopped. Normally the entire operation ma take up to five minutes to download fresh package, install it and resume operation, so you have to account for some down time.</p>
+The update process will interrupt normal operation of your NAS, so you have to make sure that any processes using the virtual appliance are stopped. Normally the entire operation ma take up to five minutes to download fresh package, install it and resume operation, so you have to account for some down time.
 
-<p>The upgrade is data-safe, however, as precaution is always good idea to backup your data and/or for perform a [snapshot](../creating-and-managing-server-snapshots.md) of an entire VM.
+The upgrade is data-safe, however, as precaution is always good idea to backup your data and/or for perform a [snapshot](creating-and-managing-server-snapshots.md) of an entire VM.
 
 ### Update process (GUI)
 
 ![Update window](../images/softnas-update-1.png)
 
-<p>Log in into your appliance
+Log in into your appliance
 
-<ol>
-  <li>Navigate to: Settings >> Software Updates
-  <li>Compare the current version and the available one
-  <li>Initiate update by clicking "Apply Update Now" button
+1. Navigate to: Settings >> Software Updates
+2. Compare the current version and the available one
+3. Initiate update by clicking "Apply Update Now" button
 
 You will be presented with confirmation window.
 
@@ -56,20 +50,17 @@ As well it is possible to perform SoftNAS update using a command line interface.
 
 A "softnas-cmd" command allows to perform many different operations, however for the purpose of this document we'll concentrate on a few related to the update it self:
 
-<ul>
-<li>login - Login to SoftNAS.</li>
-<li>checkupdate - Check if new software updates are available.</li>
-<li>executeupdate - Execute and apply software updates.</li>
-<li>statusupdate - Return the status on an update that is currently in progress.</li>
-
-</ul>
+1. login - Login to SoftNAS.
+2. checkupdate - Check if new software updates are available.
+2. executeupdate - Execute and apply software updates.
+3. statusupdate - Return the status on an update that is currently in progress.
 
 A typical session would look like this:
 
 #### 1. Authentication.
 
 ##### Command
-softnas-cmd login USERNAME PASSWORD --base_url https://localhost/softnas --pretty_print
+softnas-cmd login USERNAME PASSWORD --base_url `https://localhost/softnas` --pretty_print
 
 ##### Response
     {
@@ -184,5 +175,3 @@ That concludes SoftNAS Cloud software update using CLI tool.
 ### Conclusion
 
 Both update options are achieving same goal and you should use the most suitable in your case. The advantage of CLI style, however, is its suitability to be used in update automation.
-
-</div>
