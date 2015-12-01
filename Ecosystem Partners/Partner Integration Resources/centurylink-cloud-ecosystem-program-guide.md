@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Marketplace Provider Program Guide",
-  "date": "9-25-2015",
+  "date": "11-30-2015",
   "author": "David Shacochis",
   "attachments": [],
   "stickyt": true,
@@ -83,6 +83,7 @@ CenturyLink supports technology partners that invest their valuable time and res
 | Featured in Release Notes | 25 points |
 | Featured in VIEW, the CenturyLink user eZine | 25 points |
 | Provider-of-the-Quarter Award | 75 points |
+| Exhibition at the CenturyLink Channel Alliance (CCA) Expo | 50 points |
 | Successful Customer Deployment (Each) | 50 points |
 | Eligibility for Professional Services Development | Included |
 | Listing On CenturyLink Cloud Website | Included |

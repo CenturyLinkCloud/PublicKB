@@ -37,7 +37,7 @@ No, the CPU, memory and storage are static resources on each individual Bare Met
 
 **What are the self-service actions available to me through the Control portal for Bare Metal servers?**
 
-Through the Control portal you are able to power the Bare Metal server on or off, perform a server reset and add a single public IP.  
+Through the Control portal you are able to power the Bare Metal server on or off, perform a server reset and add a single public IP.
 
 **What are the best suited workloads for this new server class?**
 
@@ -106,6 +106,29 @@ Yes, Bare Metal servers do support multiple vNIC configurations. Additional vNIC
 **Can I bring my own OS image?**
 
 No, the available Operating Systems include Windows 2012 Standard Edition R2, Windows 2012 Datacenter Edition, RHEL6, CentOS 6, and Ubuntu 14. If there is a particular OS image you would like to see incorporated please [submit a feature request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/).
+
+As an alternative to a custom image, Bare Metal servers do support the [execute package](https://www.ctl.io/knowledge-base/servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/) action from the Control Portal as well as through the [API](https://www.ctl.io/api-docs/v2/#server-actions-execute-package), allowing you to install the same software or run the same scripts on many servers at once.
+
+**When running "execute package" a Bare Metal server, why does the Blueprint fail?**
+
+Your server may be using an older version of the OS image from before package execution was supported on Bare Metal. Follow the instructions below for the specific OS that your server is running to ensure packages can be executed successfully.
+
+_On Windows_
+
+  - Enable "File and Printer Sharing" on the server. The following PowerShell command will enable it, or you may turn it on through the Management Console in Windows.
+
+        netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=Yes
+
+_On Linux_
+
+  - The `Ciphers` line in `etc/ssh/sshd_config` must support the **`aes256-cbc`** cipher:
+
+        Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes256-cbc
+
+  - Ensure that the `unzip` command package is installed on the server.
+
+
+If you still have problems with failing Blueprints, contact Customer Care by submitting a support request using the link at the top right side of this site.
 
 **Can I use my own licensing for the OS?**
 
