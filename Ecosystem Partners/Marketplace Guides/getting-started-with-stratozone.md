@@ -13,7 +13,7 @@
 
 StratoZone provides end-to-end cloud migration services including discovery, classification, scheduling, and the migration itself.
 
-https://www.ustechsource.com/
+http://www.ustechsource.com/
 
 
 ##### Customer Support
