@@ -165,6 +165,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [Apptio](../Ecosystem Partners/Marketplace Guides/getting-started-with-apptio.md)   	| API    | Cloud usage analysis    |
+| [US Techsource StratoZone](../Ecosystem Partners/Marketplace Guides/getting-started-with-stratozone.md)   	| API    | Cloud migration    |
 
 
 ### Media and Content
