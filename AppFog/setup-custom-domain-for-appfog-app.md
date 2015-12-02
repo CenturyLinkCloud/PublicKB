@@ -63,6 +63,9 @@ In order for the users to access your application at the custom domain there nee
 
 `CNAME 1 min hello-node.useast.appfog.ctl.io.`
 
+### Setting up SSL for your custom domain
+Setting up SSL certifications to match your custom domain will require the use of third-party provider, like CloudFlare.  See https://www.cloudflare.com/ssl/ for more information.
+
 ### Additional Information
 
 For more information on additional capabilities in Cloud Foundry for custom domains (on which AppFog is based), please check out this page on the Cloud Foundry Foundation documentation site:
