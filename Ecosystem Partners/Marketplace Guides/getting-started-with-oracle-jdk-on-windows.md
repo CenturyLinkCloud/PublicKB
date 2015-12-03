@@ -7,7 +7,7 @@
   "contentIsHTML": false
 }}}
 
-![Java logo](http://www.oracle.com/ocom/groups/public/@otn/documents/digitalasset/1612441.gif)
+![Java logo](http://../../images/Java_image.png)
 
 ### Technology Profile
 
