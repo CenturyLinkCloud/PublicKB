@@ -28,7 +28,8 @@ CenturyLink Cloud now has a robust, geo-distributed Object Storage service capab
     ![object storage users control](../images/using-object-storage-from-3rd-party-tools-06.png)
 
 3. Capture the service point for object storage.  They are as follows:
-* Canada: canada.os.ctl.io
+
+    * Canada: canada.os.ctl.io
 
 4. Back in Explorer for Amazon S3, click the **File, New S3 Compatible Account** menu option in order to add the connection details for Object Storage.
 
@@ -63,11 +64,11 @@ CenturyLink Cloud now has a robust, geo-distributed Object Storage service capab
 
     ![object storage user record edited](../images/object-storage-user-record-edited.png)
 
-4. Also you will need the **Service Point** (aka server) where your bucket exists (or will exist). In the Control Portal, on the Object Storage bucket listing page, either create a new bucket, or click on an existing bucket. When the **Bucket Info and Settings** page is displayed, copy/save the portion of the **bucket URL** that follows the bucket name. In this example, the bucket **Service Point** (server name) is: canada.os.ctl.io
+4. Also you will need the **Service Point** (aka server) where your bucket exists (or will exist). In the Control Portal, on the Object Storage bucket listing page, either create a new bucket, or click on an existing bucket. When the **Bucket Info and Settings** page is displayed, copy/save the portion of the **bucket URL** that follows the bucket name. In this example, the bucket **Service Point** (server name) is: **canada.os.ctl.io**
 
     ![object storage bucket info](../images/object-storage-bucket-info-and-settings.png)
 
-5. Back in CyberDuck, click the **Open Connection** icon (upper left corner) in order to configure the connection details for your Object Storage bucket. Select **S3 (Amazon Simple Storage)** from the drop down. In the **Server** field, enter the name of the **Service point**. Leave Port field set to **443**. Populate the **Username** field with your **Access Key ID<** and populate the **Password** field with your **Secret Access key**.
+5. Back in CyberDuck, click the **Open Connection** icon (upper left corner) in order to configure the connection details for your Object Storage bucket. Select **S3 (Amazon Simple Storage)** from the drop down. In the **Server** field, enter the name of the **Service point**. Leave Port field set to **443**. Populate the **Username** field with your **Access Key ID** and populate the **Password** field with your **Secret Access key**.
 
     ![cyberduck setup connection](../images/cyberduck-setup-connection.png)
 
@@ -83,7 +84,7 @@ CenturyLink Cloud now has a robust, geo-distributed Object Storage service capab
 
     ![cyberduck bookmark added](../images/cyberduck-bookmark-added.png)
 
-8. Permissions can be applied at both the bucket and object level. A user could have **FULL ACCESS** rights for the bucket (and thus be able to add and remove objects) but only have **READ** rights to an individual object (and therefore couldn't update that object).
+9. Permissions can be applied at both the bucket and object level. A user could have **FULL ACCESS** rights for the bucket (and thus be able to add and remove objects) but only have **READ** rights to an individual object (and therefore couldn't update that object).
 
     ![cyberduck bucket permissions](../images/cyberduck-bucket-permissions.png)
 
