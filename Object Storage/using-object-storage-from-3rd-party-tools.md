@@ -19,9 +19,9 @@ CenturyLink Cloud now has a robust, geo-distributed Object Storage service capab
 * Have already created a new bucket or have access permissions to an existing bucket
 
 ### Using Cloudberry Explorer for Amazon S3
-[Explorer for Amazon S3](//www.cloudberrylab.com/) is a freeware tool for Windows (a paid version also available) that works with CenturyLink Cloud Object Storage.
+[Explorer for Amazon S3](http://www.cloudberrylab.com/) is a freeware tool for Windows (a paid version also available) that works with CenturyLink Cloud Object Storage.
 
-1. [Download and Install a copy of Explorer for S3.](//www.cloudberrylab.com/free-amazon-s3-explorer-cloudfront-IAM.aspx)
+1. [Download and Install a copy of Explorer for S3.](http://www.cloudberrylab.com/free-amazon-s3-explorer-cloudfront-IAM.aspx)
 
 2. In the Control Portal, navigate to the Object Storage service and view the user record that you want to configure Explorer for Amazon S3 with. Copy/save the **access key id** and **secret access key**.
 
