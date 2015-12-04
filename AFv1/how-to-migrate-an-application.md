@@ -14,6 +14,8 @@ This document is for users of AppFog v1 for migration to the next generation of 
 
 Before deleting any applications or services on AppFog v1 ensure you have local copies. Once apps and services are deleted it is **permanent**. We will not be able to provide a backup.
 
+When migration is complete your billing subscription can be canceled from the [Account](https://console.appfog.com/#account) page of the web console. Please be sure to cancel your subscription as we are not aware when individual user migration is complete. Please contact support@appfog.com to receive a prorated refund of your subscription if appropriate.
+
 ### Export an Application from AppFog v1
 Users may export their app code either from the command line or the web console:
 * Using the AF tool from the command line will create a new directory in your current working directory using the appname. The last pushed code is then downloaded into the new directory:
