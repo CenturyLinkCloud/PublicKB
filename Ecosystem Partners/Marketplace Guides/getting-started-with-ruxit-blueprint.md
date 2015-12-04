@@ -99,13 +99,13 @@ Follow these step by step instructions to deploy Ruxit
 5.	Configure the Blueprint. 
 - On the first page, “Customize Blueprint”, ensure the following options are configured:
 
-* Ruxit tenant ID: Your Ruxit tenant ID is the unique identifier of your Ruxit environment. You can find it easily by looking at the URL in your browser when you are logged into your Ruxit home page. `https://{tenant}.live.Ruxit.com` The subdomain {tenant} represents your tenant ID.
+  * Ruxit tenant ID: Your Ruxit tenant ID is the unique identifier of your Ruxit environment. You can find it easily by looking at the URL in your browser when you are logged into your Ruxit home page. `https://{tenant}.live.Ruxit.com` The subdomain {tenant} represents your tenant ID.
 
-* Ruxit token: You can get your token by following these steps: 
-  - Go to your Ruxit environment: `https://{tenant}.live.Ruxit.com` 
-  - Click the burger menu in the right upper corner and select "Monitor another host". 
-  - You will see the Download Ruxit Agent wizard; click Linux. 
-  - You will see the wget command line. The token is the last part of the path after /latest/
+  * Ruxit token: You can get your token by following these steps: 
+    - Go to your Ruxit environment: `https://{tenant}.live.Ruxit.com` 
+    - Click the burger menu in the right upper corner and select "Monitor another host". 
+    - You will see the Download Ruxit Agent wizard; click Linux. 
+    - You will see the wget command line. The token is the last part of the path after /latest/
 
   ![Ruxit Image](../../images/ecosystem-ruxit-3.png)
 
