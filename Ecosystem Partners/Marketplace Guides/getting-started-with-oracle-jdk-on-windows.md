@@ -7,7 +7,7 @@
   "contentIsHTML": false
 }}}
 
-![Java logo](http://../../images/Java_image.png)
+![Java logo](../../images/Java_image.png)
 
 ### Technology Profile
 
