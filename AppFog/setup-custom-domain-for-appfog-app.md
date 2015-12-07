@@ -19,11 +19,11 @@ When an application is deployed to AppFog a URL is generated based on a route an
 myapp.useast.appfog.ctl.io
 ```
 
-The default domain in the AppFog US East region is `useast.appfog.ctl.io` and the US West region is `hello-node.uswest.appfog.ctl.io.`. The application's name is typically used for the route, or sub-domain, in the URL. Setting up a custom domain for your application involves creating a custom domain and route. The following sections will step you through this process.
+The default domain in the AppFog US East region is `useast.appfog.ctl.io` and the US West region is `hello-node.uswest.appfog.ctl.io.`. The application's name is typically used for the route, or sub-domain, in the URL. Setting up a custom domain for your application involves creating a custom domain and route. The following sections will take you through this process.
 
 ### Pre-requisites
 
-In order to setup a custom domain for applications on AppFog you must be logged in from the command line. If you are not familiar with accessing AppFog from the command line follow the instructions in the instructions in [Login to AppFog using the Cloud Foundry CLI](login-using-cf-cli.md) article before moving onto the following sections.
+In order to setup a custom domain for applications on AppFog you must be logged in from the command line. If you are not familiar with accessing AppFog from the command line follow the instructions in the [Login to AppFog using the Cloud Foundry CLI](login-using-cf-cli.md) article before moving onto the following sections.
 
 ### Setup Custom Domain
 
@@ -66,7 +66,7 @@ In order for users to access your application at the custom domain there needs t
 If your DNS provider is unable to create a redirect from your root domain you many need to consider another DNS provider. Some DNS providers are also offering the option of a CNAME record for your root domain. If this is available you do not need to create a redirect from your root domain, simply create the same CNAME entry as for `www.<YOUR_DOMAIN>`. Remember to also create and map the domain on AppFog if using your root domain.
 
 ### Setting up SSL for your custom domain
-Setting up SSL certifications to match your custom domain will require the use of third-party provider, like CloudFlare.  See https://www.cloudflare.com/ssl/ for more information.
+Setting up SSL certifications to match your custom domain will require the use of a third-party provider, like CloudFlare.  See https://www.cloudflare.com/ssl/ for more information.
 
 ### Additional Information
 
