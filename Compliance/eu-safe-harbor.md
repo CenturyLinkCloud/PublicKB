@@ -1,5 +1,5 @@
 {{{
-  "title": "EU Safe Harbour",
+  "title": "EU Safe Harbor",
   "date": "10-03-2015",
   "author": "Christain Brown",
   "attachments": [],
