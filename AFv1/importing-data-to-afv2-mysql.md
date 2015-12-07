@@ -14,6 +14,9 @@ This document is for users of AppFog v1 for migration to the next generation of 
 
 Before deleting any applications or services on AppFog v1 ensure you have local copies. Once apps and services are deleted it is **permanent**. We will not be able to provide a backup.
 
+When migration is complete your billing subscription can be canceled from the [Account](https://console.appfog.com/#account) page of the web console. Please be sure to cancel your subscription as we are not aware when individual user migration is complete. The billing system will not automatically prorate the subscription and issue a refund. If applicable, please open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com to receive a prorated refund of your subscription.
+
+
 ### Importing Data Into CenturyLink MySQL DBaaS
 * To learn how to create, bind, and determine connection credentials review our Knowledge Base article on [Using CenturyLink MySQL with AppFog Applications](../AppFog/using-ctl-mysql-with-appfog-apps.md).
 * You can access your database from the command line using the credentials provided by the VCAP_SERVICES environment variable. You can also [Connect to MySQL DBaaS over SSL on AppFogv2](../Database/connecting-to-mysql-dbaas-over-ssl-on-appfog.md). The certificate needs to be in proper .pem format:
