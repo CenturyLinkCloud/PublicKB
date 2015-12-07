@@ -16,6 +16,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [A10 vThunder](../Ecosystem Partners/Marketplace Guides/getting-started-with-a10-vthunder-partner-template.md)   	| Template    | Application service gateway    |
+| [aiScaler](../Ecosystem Partners/Marketplace Guides/getting-started-with-aiscaler.md)   	| Blueprint    | Application delivery controller    |
 | [Appcito CAFE](../Ecosystem Partners/Marketplace Guides/getting-started-with-appcito-cafe.md)   	| Blueprint    | Application delivery controller    |
 | [Cohesive Networks VNS3](../Ecosystem Partners/Marketplace Guides/getting-started-with-cohesiveft-vns3-partner-template.md)   	| Template    | Network security appliance    |
 | [FortyCloud](../Ecosystem Partners/Marketplace Guides/getting-started-with-fortycloud-appliance.md)   	| Blueprint (Virtual Appliance)    | Network security appliance    |
@@ -142,7 +143,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Conxio](../Ecosystem Partners/Marketplace Guides/getting-started-with-conxio-everywhere.md)   	| Blueprint    | Secure Communications Platform |
 | [Diaspora](../Ecosystem Partners/Marketplace Guides/getting-started-with-diaspora-blueprint.md)   	| Blueprint    | Private social networking    |
 | [Fat Free CRM](../Ecosystem Partners/Marketplace Guides/getting-started-with-fat-free-crm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
-| [FSM Labs] | (../Ecosystem Partners/Marketplace Guides/getting-started-with-timekeeper.md)    | Blueprint     | Hyper accurate time services |
+| Hyper accurate time services | [FSM Labs] (../Ecosystem Partners/Marketplace Guides/getting-started-with-timekeeper.md)    | Blueprint     | Hyper accurate time services |
 | [Horde Groupware Webmail](../Ecosystem Partners/Marketplace Guides/getting-started-with-horde-blueprint.md)   	| Blueprint    | Mail, Calendar, Address Book, Tasks, and Notes Communication Suite    |
 | [Live Helper Chat](../Ecosystem Partners/Marketplace Guides/getting-started-with-livehelperchat-blueprint.md)   	| Blueprint    | Live chat    |
 | [Microsoft Active Directory ](../Managed Services/getting-started-with-managed-active-directory.md)  	| Blueprint (Managed)   | Directory Service     |
@@ -154,9 +155,18 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Sharelock](../Ecosystem Partners/Marketplace Guides/getting-started-with-sharelock-blueprint.md)  	| Blueprint   | Information sharing     |
 | [Simple Invoices](../Ecosystem Partners/Marketplace Guides/getting-started-with-simpleinvoices-blueprint.md)  	| Blueprint   | Invoice software     |
 | [Spree](../Ecosystem Partners/Marketplace Guides/getting-started-with-spree-blueprint.md)  	| Blueprint   | eCommerce platform     |
-| [Tracks](../Ecosystem Partners/Marketplace Guides/getting-started-with-tracks-blueprint.md)  	| Blueprint   | GTD Group collaboration     |
+| [Tracks](../Ecosystem Partners/Marketplace Guides/getting-started-with-tracks-blueprint.md)  	| Blueprint   | Virtual Desktop Management  |
+ [VDIWorks](../Ecosystem Partners/Marketplace Guides/getting-started-with-vdiworks-console.md)  	| Blueprint   | GTD Group collaboration     |
 | [X2 Engine](../Ecosystem Partners/Marketplace Guides/getting-started-with-x2engine-blueprint.md)  	| Blueprint   | Customer relationship manager (CRM)     |
 | [Zurmo](../Ecosystem Partners/Marketplace Guides/getting-started-with-civicrm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
+
+
+### Cloud Migration and Management
+
+|Vendor Software  	|Integration    | Description   	|
+|:-	|:-	|
+| [Apptio](../Ecosystem Partners/Marketplace Guides/getting-started-with-apptio.md)   	| API    | Cloud usage analysis    |
+| [US Techsource StratoZone](../Ecosystem Partners/Marketplace Guides/getting-started-with-stratozone.md)   	| API    | Cloud migration    |
 
 
 ### Media and Content

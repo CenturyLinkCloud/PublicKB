@@ -14,6 +14,9 @@ This document is for users of AppFog v1 for migration to the next generation of 
 
 Before deleting any applications or services on AppFog v1 ensure you have local copies. Once apps and services are deleted it is **permanent**. We will not be able to provide a backup.
 
+When migration is complete your billing subscription can be canceled from the [Account](https://console.appfog.com/#account) page of the web console. Please be sure to cancel your subscription as we are not aware when individual user migration is complete. The billing system will not automatically prorate the subscription and issue a refund. If applicable, please open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com to receive a prorated refund of your subscription.
+
+
 
 ### Export Services
 The export utility in AppFog v1 is subject to timeout for databases larger than approximately 100M. Please verify your data before deleting any services. For databases near 100M or that experience export errors please login to open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com and we will provide a dump of your database.
