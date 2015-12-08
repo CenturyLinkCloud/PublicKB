@@ -1,4 +1,4 @@
-node_modules{{{
+{{{
   "title": "SoftNAS: How to update software",
   "date": "11-30-2015",
   "author": "Maxim Volkov",
