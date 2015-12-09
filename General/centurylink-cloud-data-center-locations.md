@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Data Center Locations",
-  "date": "7-17-2015",
+  "date": "12-9-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
