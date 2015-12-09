@@ -18,7 +18,7 @@ US East (New York) - NY1|Equinix|755 Secaucus Rd.<br>Secaucus, NJ 07094|[provide
 US East (Sterling) - VA1|CenturyLink|45901 Nokes Blvd<br>Sterling Virginia, 20166|[provider details](http://www.centurylinktechnology.com/data-centers/north-america/washington-dc)
 Great Britain (Portsmouth) - GB1|Peer 1 Hosting|Langstone Technology Park<br>Langstone Road<br>Havant, Hampshire PO9 1SA|[provider details](http://www.peer1.com/infrastructure/datacenter-portsmouth)
 Great Britain (Slough) - GB3|CenturyLink|630 Ajax Avenue<br>Slough, Berkshire, SL1 4DG|[provider details](http://www.centurylinktechnology.com/data-centers/europe/london)
-Canada (Toronto - Mississauga) - CA3|CenturyLink|6800 Millcreek Drive<br>Mississauga, Ontario|[provider details](http://www.centurylinktechnology.com/data-centers/north-america/toronto)
+Canada (Toronto - Mississauga) - CA3|CenturyLink|6800 Millcreek Drive<br>Mississauga, Ontario L5N4J9|[provider details](http://www.centurylinktechnology.com/data-centers/north-america/toronto)
 Canada (Toronto - Markam) - CA2|Peer 1 Hosting|20 Pullman Court<br>Toronto, Ontario M1X 1E4|[provider details](http://www.peer1.com/infrastructure/datacenter-toronto)
 Canada (Vancouver) - CA1|Peer 1 Hosting|555 West Hastings Street<br>Vancouver, BC V6B 4N5|[provider details](http://www.peer1.com/infrastructure/datacenter-vancouver)
 Germany (Frankfurt) - DE1|Equinix|Lärchenstrasse 110<br>65933 Frankfurt- Griesheim Germany|[provider details](http://www.equinix.com/en_US/locations/germany/frankfurt-data-centers/)
