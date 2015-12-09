@@ -118,9 +118,6 @@ The execution will continue even after the completion of the script so please le
 
 After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
 
-9\. Optional: Remove DNS
-
-You may wish to remove DNS 8.8.8.8 from the server.\*
 
 
 ### Option 2: Group Action
@@ -151,9 +148,6 @@ Navigate to the group and select "execute package" from the [action drop-down](.
 
 After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
 
-5\. Optional: Remove DNS
-
-You may wish to remove DNS 8.8.8.8 from the servers.\*
 
 ### Option 3: API
 
@@ -188,9 +182,6 @@ Please reference [API Documentation about authentication](https://www.centurylin
 
 After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
 
-4\. Optional: Remove DNS
-
-You may wish to remove DNS 8.8.8.8 from the server.\*
 
 
 
@@ -292,5 +283,3 @@ patches | Number | Quantity of patches installed
 patch_begin_message | string | Identifies the Software or OS updated and the reference number (if Windows, KB#######) for that particular update
 patch_end_message | string | Result code established by Microsoft, defining the possible results of an install. These same codes will be used for other Operating Systems as well. https://msdn.microsoft.com/en-us/library/windows/desktop/aa387095(v=vs.85).aspx
 status | string | for an individual patch, could be pending, completed, or failed
-
-\* To enable data to be captured in our reporting service, the service adds DNS 8.8.8.8 to the server. (The reason for this step is no longer necessary so it will be removed in a future release.) If this will affect your servers, you should manually remove it.
