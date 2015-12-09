@@ -9,7 +9,7 @@
 ### Overview
 We offer two options of MySQL high availability:
 * [Master-Slave Replication](//dev.mysql.com/doc/refman/5.7/en/replication.html): Enables data from one MySQL database server (the master) to be copied (typically asyncronous) to one or more MySQL database servers (the slaves).  
-* [Multi-Master Replication](//dev.mysql.com/doc/refman/5.1/en/mysql-cluster-replication-multi-master.html): Enables data from **any** Master MySQL database server to be copied (typically syncronous) to other master nodes.  
+* [Multi-Master Replication](//dev.mysql.com/doc/refman/5.1/en/mysql-cluster-replication-multi-master.html): Enables data from **any** Master MySQL database server to be copied (typically syncronous) to other master nodes.  **CenturyLink Cloud Managed MySQL Services only supports (2) nodes currently.**
 
 This guide provides (2) unique options and customers should evaluate their needs to decide which fits business requirements.
 
