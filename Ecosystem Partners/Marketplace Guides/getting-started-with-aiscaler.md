@@ -63,7 +63,7 @@ inconvenience for a human, but preventing bots from taking down your server.
 aiProtect can be run non-stop without affecting the speed of your existing application.
 
 
-#### airmobile
+#### aimobile
 
 **aiMobile** increases mobile site performance, unifies your domains across desktop and mobile platforms and automates delivering content that
 fits the capabilities of your mobile users devices.
