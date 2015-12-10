@@ -154,8 +154,8 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Sharelock](../Ecosystem Partners/Marketplace Guides/getting-started-with-sharelock-blueprint.md)  	| Blueprint   | Information sharing     |
 | [Simple Invoices](../Ecosystem Partners/Marketplace Guides/getting-started-with-simpleinvoices-blueprint.md)  	| Blueprint   | Invoice software     |
 | [Spree](../Ecosystem Partners/Marketplace Guides/getting-started-with-spree-blueprint.md)  	| Blueprint   | eCommerce platform     |
-| [Tracks](../Ecosystem Partners/Marketplace Guides/getting-started-with-tracks-blueprint.md)  	| Blueprint   | Virtual Desktop Management  |
- [VDIWorks](../Ecosystem Partners/Marketplace Guides/getting-started-with-vdiworks-console.md)  	| Blueprint   | GTD Group collaboration     |
+| [Tracks](../Ecosystem Partners/Marketplace Guides/getting-started-with-tracks-blueprint.md)  	| Blueprint   | GTD Group collaboration|
+| [VDIWorks](../Ecosystem Partners/Marketplace Guides/getting-started-with-vdiworks-console.md)  	| Blueprint   |   Virtual Desktop Management     |
 | [X2 Engine](../Ecosystem Partners/Marketplace Guides/getting-started-with-x2engine-blueprint.md)  	| Blueprint   | Customer relationship manager (CRM)     |
 | [Zurmo](../Ecosystem Partners/Marketplace Guides/getting-started-with-civicrm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
 
