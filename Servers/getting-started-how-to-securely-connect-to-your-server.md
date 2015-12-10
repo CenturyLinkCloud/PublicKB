@@ -100,7 +100,11 @@ Launch your Remote Desktop client, enter the IP Address for your server, and the
 
   ![Getting Started: How to securely connect to your server](../images/getting-started-how-to-securely-connect-to-your-server8.png)
 
-For Linux Servers, you will need:
-Use any SSH version 2 compatible client. (SSH, Putty, Secure CRT)
+__Connect to your Linux server__
+
+Open up a Terminal, and type in `ssh <user>@<IP Address>`
+
+  `ssh anthony@10.126.103.12`
+
 
   ![Getting Started: How to securely connect to your server](../images/getting-started-how-to-securely-connect-to-your-server9.png)
