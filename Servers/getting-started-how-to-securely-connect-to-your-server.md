@@ -11,7 +11,7 @@
 ## You have a shiny new virtual server - now what?
 Congratulations! You've just built a new virtual server on CenturyLink Cloud - we assume you have created a new virtual server.  If not, [follow this other guide first](../servers/creating-a-new-enterprise-cloud-server/), then return to this guide.
 
-Now what?  How do you securely connect to your server(s)?  Well, just follow the steps below to do so.
+Now what?  How do you securely connect to your server(s)?  Some customers have the option of using a site-to-site VPN tunnel, MPLS, or CNS.  If your company doesn't have these options available, then follow the steps below to use OpenVPN.
 
 ## Connect to your shiny new virtual server
 In order to connect to your shiny new virtual server, you will need to:
