@@ -9,7 +9,7 @@
 }}}
 
 ## You have a shiny new virtual server - now what?
-Congratulations! You've just built a new virtual server on CenturyLink Cloud - we assume you have created a new virtual server.  If not, [follow this other guide first](https://www.ctl.io/knowledge-base/servers/creating-a-new-enterprise-cloud-server/), then return to this guide.
+Congratulations! You've just built a new virtual server on CenturyLink Cloud - we assume you have created a new virtual server.  If not, [follow this other guide first](../servers/creating-a-new-enterprise-cloud-server/), then return to this guide.
 
 Now what?  How do you securely connect to your server(s)?  Well, just follow the steps below to do so.
 
