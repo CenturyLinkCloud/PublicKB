@@ -1,4 +1,4 @@
-﻿{{{
+{{{
   "title": "Getting Started with FlexsSecure - Service",
   "date": "11-30-2015",
   "author": "Bob Stolzberg",
@@ -78,14 +78,14 @@ The Flexsecure system uses JSON formatted data payloads for communicating with t
   2. The second is apikey=<assigned key>
   3. The <assigned key> is generated as part of the sign up process.
 
-* https://api.flexsecure.co/v1/authenticate/user
+* `https://api.flexsecure.co/v1/authenticate/user`
 
 `{
 “email”:”<user email>”,
 “system”:”<system name>”
 }`
 
-* https://api.flexsecure.co/v1/authorize/user
+* `https://api.flexsecure.co/v1/authorize/user`
 
 `{
 “email”:”<user email>”,
@@ -95,10 +95,10 @@ The Flexsecure system uses JSON formatted data payloads for communicating with t
 
 
 #### FlexSecure Process
-1. App calls https://api.flexsecure.co/v1/authenticate/user with the appropriate data in the JSON payload.  
+1. App calls `https://api.flexsecure.co/v1/authenticate/user` with the appropriate data in the JSON payload.  
 2. App checks the return status of the call - if it is FAIL, an error message and reset.  If the return value is SUCCESS, request the pin number from the user.   
 3. Request the input of the pin the end user receives on their cell phone.  
-4. Call https://api.flexsecure.co/v1/authorize/user  with all the data from the authenticate call, plus the pin from the end user.  
+4. Call `https://api.flexsecure.co/v1/authorize/user`  with all the data from the authenticate call, plus the pin from the end user.  
 5. Check the return value.  If the return value is FAIL, exit out and reset, If it is SUCCESS,  allow the user to continue.
 
 ### Screen Shots showing How To Configure
