@@ -15,7 +15,7 @@ After reading this article, the user should be able to provision infrastructure 
 
 ### Description
 
-####[http://terraform.io](http://terraform.io)
+#### [http://terraform.io](http://terraform.io)
 
 <img src="../../images/ecosystem-hashicorp-terraform.png" style="border:0;float:right;max-width: 150px;">
 
