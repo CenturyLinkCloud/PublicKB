@@ -24,7 +24,7 @@
 
 * __NEW - Load Balancer as a Service available as Beta.__ This new shared load balancer service expands the features available to [our current production service](https://www.ctl.io/load-balancing/). New capabilities include TCP load balancing, support for load balancing on any port, and configurable health checks. The beta is available via API only. To request an invitation to the beta program, send an email to [help@ctl.io](mailto:help@ctl.io) or visit the product page.
 
-* __MySQL DBaaS] Notification Subscription.__ Beta users can now select to receive email notifications when CPU or Storage exceed defined thresholds. This can be done at the time of provisioning; notifications can also be added or changed from within the details page your subscription.
+* __MySQL DBaaS Notification Subscription.__ Beta users can now select to receive email notifications when CPU or Storage exceed defined thresholds. This can be done at the time of provisioning; notifications can also be added or changed from within the details page your subscription.
 
 ![MySQL Notifications](../images/2015-12-15_mysql.png)
 
