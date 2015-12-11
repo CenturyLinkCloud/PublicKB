@@ -20,6 +20,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Appcito CAFE](../Ecosystem Partners/Marketplace Guides/getting-started-with-appcito-cafe.md)   	| Blueprint    | Application delivery controller    |
 | [Cohesive Networks VNS3](../Ecosystem Partners/Marketplace Guides/getting-started-with-cohesiveft-vns3-partner-template.md)   	| Template    | Network security appliance    |
 | [FortyCloud](../Ecosystem Partners/Marketplace Guides/getting-started-with-fortycloud-appliance.md)   	| Blueprint (Virtual Appliance)    | Network security appliance    |
+| [HALON](../Ecosystem Partners/Marketplace Guides/getting-started-with-halon-partner-template.md)   	| Template    | SMTP Platform    |
 | [LaGrange Systems CloudMaestro](../Ecosystem Partners/Marketplace Guides/getting-started-with-lagrange-systems-cloudmaestro-blueprint.md)   	| Blueprint    | Application Delivery Controller  |
 | [NGiNX](../Ecosystem Partners/Marketplace Guides/getting-started-with-nginx-blueprint.md)   	| Blueprint    | Web traffic manager    |
 | [OpenVPN AS](../Ecosystem Partners/Marketplace Guides/getting-started-with-openvpnas-appliance.md)   	| Blueprint (Virtual Appliance)    | Secure access manager    |
