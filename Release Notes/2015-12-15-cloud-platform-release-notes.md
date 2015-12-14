@@ -6,9 +6,7 @@
 "contentIsHTML": false
 }}}
 
-### New Features (2)
-
-* __Object Storage - Now Available in US East Region [TENTATIVE] .__ CenturyLink Cloud's object storage service is now available in US East. Like the recently improved Canadian offering, object storage in US East will provide the same high availability and redundancy over the familiar S3 interface. More details are available on the [object storage product page](https://www.ctl.io/object-storage/), including pricing, and the [knowledge base](https://www.ctl.io/knowledge-base/object-storage/).
+### New Features (1)
 
 * __Orchestrate.io - Randomized Sorting.__ Now, equally scored results can show up in different orders. By adding `sort=_random` to the URL query string, the search results will now have an equal chance at being displayed first. Users can choose to randomize sort within an existing search query, i.e. randomize the results of searching for "last name Twain, first name Mark" `sort=value.last_name,value.first_name,_random`. Also, users have the option to randomize results with a predictable seed (by setting `sort=_random:somevalue`), and any subsequent calls to the same seed will result in the same random ordering.
 
@@ -21,8 +19,6 @@
 * __NEW - Managed Pivotal Cloud Foundry Beta Launch.__ Many enterprises are building cloud native applications with Cloud Foundry. With this [new managed service](https://www.ctl.io/managed-services/pivotal-cloud-foundry/), the experts at CenturyLink will administer and maintain important elements of Cloud Foundry clusters running on CenturyLink Cloud. To request an invitation to the beta program, send an email to [help@ctl.io](mailto:help@ctl.io).
 
 ![Cloud Foundry AppManager](../images/2015-12-15_managedpcf.png)
-
-* __NEW - Load Balancer as a Service Beta Launch [TENTATIVE] .__ This new shared load balancer service expands the features available to [our current production service](https://www.ctl.io/load-balancing/). New capabilities include TCP load balancing, support for load balancing on any port, and configurable health checks. The beta is available via API only. To request an invitation to the beta program, send an email to [help@ctl.io](mailto:help@ctl.io) or visit the [product page](https://www.ctl.io/load-balancing/).
 
 * __MySQL DBaaS Notification Subscription.__ Beta users can now select to receive email notifications when CPU or Storage exceed defined thresholds. This can be done at the time of provisioning; notifications can also be added or changed from within the details page your subscription.
 
@@ -43,12 +39,10 @@
 
 ### Ecosystem (5)
 
-* __Mesosphere:__ Coming from Ecosystem [provisioned via blueprint on the CenturyLink platform today.](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-mesosphere/)
+* __Mesosphere:__ [Mesosphere](https://mesosphere.com/) offers a new way to think about infrastructure, creating an operating system for the cloud. With native support for containerized workloads as well as traditional application deployment, mesosphere facilitates orchestration of your applications on a modern, scalable stack. CenturyLink Cloud is proud to offer an integrated solution for getting up and running with mesosphere, [get started now](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-mesosphere-blueprint/).
 
-* __Ruxit:__ Coming from Ecosystem [get started with Heirloom via single-click blueprint](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-ruxit/), reducing their costly dependency on mainframe skill-sets.
+* __Ruxit:__ [Ruxit](https://ruxit.com/) provides an all-in-one full-stack monitoring capability with automatic discovery of your complete application environment. It identifies processes and their dependent services. Using proprietary artificial intelligence technology, Ruxit enables companies to manage thousands of servers with less than a single full-time resource.  Ruxit is now available to CenturyLink customers [via Blueprint deployment](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-ruxit-blueprint/).
 
-* __FortyCloud:__ [FortyCloud](http://www.fortycloud.com) secures your public cloud deployment by managing security end-to-end: VPN, firewall, servers and networking. Customers can now control and monitor their multi-vendor cloud network and improve network security compliance. Try it yourself with an [easy Blueprint deployment](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-fortycloud-appliance/).
+* __FortyCloud:__ [FortyCloud](http://www.fortycloud.com) secures your public cloud deployment by managing security end-to-end: VPN, firewall, servers and networking. Customers can now control and monitor their multi-vendor cloud network and improve network security compliance.  Try it yourself with an [easy Blueprint deployment](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-fortycloud-appliance/).
 
-* __aiScaler:__ Coming from Ecosystem [Get started with the TFS blueprint today](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-aiscaler/).
-
-* __VDIWorks:__[VDIWorks](http://www.vdiworks.com) is the leading provider of virtual desktop management solutions, providing economical, secure support for virtual desktop environments. Customers can implement large sets of desktop clients easily in the CenturyLink Cloud.  Try it yourself using [the VDIWorks blueprint solution at centurylink](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-vdiworks-console/).
+* __VDIWorks:__ [VDIWorks](http://www.vdiworks.com) is an industry leader in providing virtual secure, economical desktop management solutions.  Customers can implement large sets of desktop clients easily in the CenturyLink Cloud, using some of the cloud-ready operating systems already in place. VDIworks and CenturyLink are partnering on a number of desktop solutions, you can [try the first certified blueprint today](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-vdiworks-console/).
