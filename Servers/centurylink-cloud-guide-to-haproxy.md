@@ -32,13 +32,13 @@ together to create a high availability load balancing solution.
 -   Identify a Network VLAN you want the HAProxy to reside on
 
 -   Understanding the functions of load balancer (this is beyond this
-    article) and CenturyLink Cloud offerings, to learn more, please see this [KB](../Network/load-balancing-dedicated-vs-shared.md)
-    [here](//en.wikipedia.org/wiki/Load_balancing_%28computing%29)
+    article) and CenturyLink Cloud offerings, to learn more, please see this [KB](../Network/load-balancing-dedicated-vs-shared.md),
+    [general knowledge here](//en.wikipedia.org/wiki/Load_balancing_%28computing%29)
      and [HAProxy documentations](//www.haproxy.org/#docs)
 
 -   Existing web servers or application servers to be load balanced
 
-- High Availability HAProxy nodes have to reside on the same VLAN as multicast is used for keep heartbeats
+- High Availability HAProxy nodes have to reside on the same VLAN as multicast is used for heartbeats
 
 ### Use Case Scenarios
 
@@ -55,10 +55,11 @@ This can be used for:
 -   Dedicated Work load distribution
 
 -   SSL offloading
-![HAProxy Network Diagram](../images/haproxy/HAproxy-blockdiagram.png)
+![HAProxy Network Diagram](../images/haproxy/haproxy-blockdiagram.png)
 Web traffic would come through a public/private Virtual IP (VIP) through
-the firewall and reach the HAProxy pair. The HAProxy would redirect the
+the firewall and reach the HAProxy pair. HAProxy would redirect the
 traffic based on the algorithm chosen in the configuration.
+In this scenario, port 80 and 443 are being load balanced.
 
 ### Preparation
 
@@ -73,12 +74,12 @@ In preparation. There are several factors need to be considered:
 -   Configure the Virtual IP for the HAProxy servers with Public IP address:
  - [Assign a public IP address](../Network/how-to-add-public-ip-to-virtual-machine.md) to one of the HAProxy servers and bind it to a new IP address
 
- - From that server, run `ifconfig ens160:1 down` and `remove /etc/sysconfig/network-scripts/ifcfg-ens160:1` file; verify this step by pinging the new public and private IP addresses, there should be no reply from these addresses
+ - From that server, run `ifconfig ens160:1 down` and `remove /etc/sysconfig/network-scripts/ifcfg-ens160:1` file; verify this step by pinging the new public and private IP addresses, there should be no reply from these addresses (assuming ens160 is the network interface)
 
  - In this example, 10.100.96.28 is the new private IP assigned along with the public IP addresses
 
 - If only Private IP address is required:
- - Please following this [KB](../Network/how-to-reserve-ip-addresses.md)to reserve the Private IP address required for HAProxy
+ - Please following this [KB](../Network/how-to-reserve-ip-addresses.md) to reserve the Private IP address required for HAProxy
 
 
 ### Deployment
@@ -118,65 +119,64 @@ both can be implemented in CenturyLink Cloud.
       -   Enable Packet forwarding
       -   Enable reverse path filtering
       -   Bind to non-local address needs to be enabled
-```
-{         
+
+    ```
           systctl –w net.ipv4.ip\_forward=1
           systctl –w net.ipv4.conf.default.rp\_filter=1
           systctl –w net.ipv4.ip\_nonlocal\_bind=1
-}
-```
+    ```
 
   b.  For HAProxy configuration (/etc/haproxy/haproxy.cfg)
       -   Enable the application(s) to be load balanced by editing the /etc/haproxy/haproxy.cfg.  The file content would look similar to below:
 
-    ```           
-               global
-                log         127.0.0.1 local2 info
-                chroot      /var/lib/haproxy
-                pidfile     /var/run/haproxy.pid
-                maxconn     4000
-                user        haproxy
-                group       haproxy
-                daemon
-                stats socket /var/lib/haproxy/stats
-               defaults
-                mode                    http
-                log                     global
-                option                  httplog
-                option                  dontlognull
-                option http-server-close
-                option forwardfor       except 127.0.0.0/8
-                option                  redispatch
-                retries                 3
-                timeout http-request    10s
-                timeout queue           1m
-                timeout connect         10s
-                timeout client          1m
-                timeout server          1m
-                timeout http-keep-alive 10s
-                timeout check           10s
-                maxconn                 3000
-               frontend  https-in *:443
-                mode tcp
-                option tcplog
-                default_backend             backend_server
-               frontend  http-in *:80
-                mode http
-                default_backend http_server
-               backend backend_server
-                mode tcp
-                balance     roundrobin
-                option ssl-hello-chk
-                server      wwws01 10.100.96.21:443 check
-                server      wwws02 10.100.96.27:443 check
-                http-request set-header X-Forwarded-Port %[dst_port]
-                http-request add-header X-Forwarded-Proto https if { ssl_fc }
-               backend http_server
-                mode http
-                balance     roundrobin
-                server      www01 10.100.96.21:80 check
-                server      www02 10.100.96.27:80 check
-   ```
+  ```           
+  global
+     log         127.0.0.1 local2 info
+     chroot      /var/lib/haproxy
+     pidfile     /var/run/haproxy.pid
+     maxconn     4000
+     user        haproxy
+     group       haproxy
+  daemon
+     stats socket /var/lib/haproxy/stats
+  defaults
+     mode                    http
+     log                     global
+     option                  httplog
+     option                  dontlognull
+     option http-server-close
+     option forwardfor       except 127.0.0.0/8
+     option                  redispatch
+     retries                 3
+     timeout http-request    10s
+     timeout queue           1m
+     timeout connect         10s
+     timeout client          1m
+     timeout server          1m
+     timeout http-keep-alive 10s
+     timeout check           10s
+     maxconn                 3000
+  frontend  https-in *:443
+     mode tcp
+     option tcplog
+     default_backend             backend_server
+  frontend  http-in *:80
+     mode http
+     default_backend http_server
+  backend backend_server
+     mode tcp
+     balance     roundrobin
+     option ssl-hello-chk
+     server      wwws01 10.100.96.21:443 check
+     server      wwws02 10.100.96.27:443 check
+     http-request set-header X-Forwarded-Port %[dst_port]
+     http-request add-header X-Forwarded-Proto https if { ssl_fc }
+  backend http_server
+     mode http
+     balance     roundrobin
+     server      www01 10.100.96.21:80 check
+     server      www02 10.100.96.27:80 check
+ ```
 
    - options in haproxy.cfg like balance algorithm Round-robin (other options are [available](//cbonte.github.io/haproxy-dconv/configuration-1.5.html#4.2-balance)) and options can be found at [HAProxy site](//www.haproxy.org/#docs)
 
@@ -185,17 +185,17 @@ both can be implemented in CenturyLink Cloud.
 
   -   Enable UDP syslog reception as HAProxy is running with chroot:
 
-    ```
+ ```
     \$ModLoad imudp
     \$UDPServerRun 514
     \$AllowedSender UDP, 127.0.0.1
     \*.info;mail.none;authpriv.none;cron.none;local2.none   /var/log/messages
     local2.\* /var/log/haproxy.log
-    ```
+ ```
 
    c. Keepalive parameters
 
-   ```
+ ```
    global_defs {
      notification_email {
      your@email
@@ -231,7 +231,7 @@ both can be implemented in CenturyLink Cloud.
                 chk_haproxy
         }
    }
-  ```
+ ```
 
    The difference in configuration (haproxy.cfg) between the two HAProxy nodes:
 
@@ -246,14 +246,16 @@ d.  Firewall rules (this varies as application ports and security policy
     can be different, please use the following as references):
 
   -   HAProxy
-```
+
+ ```
     firewall-cmd --permanent --zone=internal --add-service=http
     firewall-cmd --permanent --zone=internal --add-service=https
     firewall-cmd --zone=internal --add-port=443/tcp
     firewall-cmd --zone=internal --add-port=80/tcp
-```
+ ```
   -   Keepalive
-```
+
+ ```
     firewall-cmd --direct --add-rule ipv4 filter INPUT 0 -i ens160 -d 224.0.0.0/8 -j ACCEPT
     firewall-cmd --direct --perm --add-rule ipv4 filter INPUT 0 -i ens160 -d 224.0.0.0/8 -j ACCEPT
     firewall-cmd --direct --add-rule ipv4 filter INPUT 0 -p vrrp -i ens160 -j ACCEPT
@@ -261,7 +263,7 @@ d.  Firewall rules (this varies as application ports and security policy
     firewall-cmd --direct --add-rule ipv4 filter OUTPUT 0 -p vrrp -o ens160 -j ACCEPT
     firewall-cmd --direct --perm --add-rule ipv4 filter OUTPUT 0 -p vrrp -o ens160 -j ACCEPT
     firewall-cmd --reload
-```
+ ```
 
 ### Testing
 The environment can be tested by disabling httpd (or the load balanced application) and haproxy using `systemctl stop httpd` and `systemctl stop haproxy`.  From the demo below, there is minimal delay for the fail over to take place.
