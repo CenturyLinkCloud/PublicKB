@@ -32,9 +32,9 @@ together to create a high availability load balancing solution.
 -   Identify a Network VLAN you want the HAProxy to reside on
 
 -   Understanding the functions of load balancer (this is beyond this
-    article) and CenturyLink Cloud offerings, to learn more, please see tis [KB](../Network/load-balancing-dedicated-vs-shared.md)
+    article) and CenturyLink Cloud offerings, to learn more, please see this [KB](../Network/load-balancing-dedicated-vs-shared.md)
     [here](//en.wikipedia.org/wiki/Load_balancing_%28computing%29)
-    and [HAProxy documentations](//www.haproxy.org/#docs)
+     and [HAProxy documentations](//www.haproxy.org/#docs)
 
 -   Existing web servers or application servers to be load balanced
 
@@ -55,7 +55,7 @@ This can be used for:
 -   Dedicated Work load distribution
 
 -   SSL offloading
-![HAProxy Network Diagram](../images/haproxy/haproxy-blockdiagram.png)
+![HAProxy Network Diagram](../images/haproxy/HAproxy-blockdiagram.png)
 Web traffic would come through a public/private Virtual IP (VIP) through
 the firewall and reach the HAProxy pair. The HAProxy would redirect the
 traffic based on the algorithm chosen in the configuration.
@@ -90,7 +90,7 @@ interfaces, depending on the security and infrastructure requirement,
 both can be implemented in CenturyLink Cloud.
 
 -   Deploy one CentOS 7 server using either the [Control
-    Portal](control.ctl.io), [CLI](//github.com/CenturyLinkCloud/clc-go-cli) or [API](//www.ctl.io/developers/)
+    Portal](//control.ctl.io), [CLI](//github.com/CenturyLinkCloud/clc-go-cli) or [API](//www.ctl.io/developers/)
 
 -   Once deployed, connect to [Client
     VPN](../Network/how-to-configure-client-vpn.md)
@@ -126,10 +126,11 @@ both can be implemented in CenturyLink Cloud.
 }
 ```
 
-    b.  For HAProxy configuration (/etc/haproxy/haproxy.cfg)
+  b.  For HAProxy configuration (/etc/haproxy/haproxy.cfg)
       -   Enable the application(s) to be load balanced by editing the /etc/haproxy/haproxy.cfg.  The file content would look similar to below:
+
     ```           
-              global
+               global
                 log         127.0.0.1 local2 info
                 chroot      /var/lib/haproxy
                 pidfile     /var/run/haproxy.pid
@@ -183,6 +184,7 @@ both can be implemented in CenturyLink Cloud.
     populated in /var/log/messages)
 
   -   Enable UDP syslog reception as HAProxy is running with chroot:
+
     ```
     \$ModLoad imudp
     \$UDPServerRun 514
@@ -192,13 +194,14 @@ both can be implemented in CenturyLink Cloud.
     ```
 
    c. Keepalive parameters
+
    ```
    global_defs {
      notification_email {
-     gavin.lai@gmail.com
+     your@email
    }
-   notification_email_from gavin.lai@ctl.io
-   smtp_server  aspmx.l.google.com
+   notification_email_from your@email
+   smtp_server  your_smtp_server
    smtp_connect_timeout 30
    router_id CA3CCVAHAPROX02
    }
@@ -266,14 +269,19 @@ The environment can be tested by disabling httpd (or the load balanced applicati
 
 ### Troubleshooting
 - Most common issue is firewall ports are not configured properly, firewall can be disabled for testing purpose
+
 - If the HAProxy load balabcers are on different VLANs, please make sure the firewall ports are configured between the two VLANs (for details, please see this [KB](../Network/connecting-data-center-networks-through-firewall-policies.md))
-- Keepalive uses VRRP for heatbeat, the following command would help identify if VRRP is working
+
+- Keepalive uses VRRP for heatbeat, the following command would help identify if VRRP is working:
+
     ```
     netstat -g
     netstat -ng
     ip maddr show
     ```
+
 - As for the virtual IP, the Master HAProxy should own the Virtual IP address, `ip a` command will show if that node has the IP address, the sample output:
+
  ```
  2: ens160: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP qlen 1000
     link/ether 00:0c:29:6e:bd:96 brd ff:ff:ff:ff:ff:ff
