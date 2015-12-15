@@ -37,7 +37,7 @@
 
 * __Intrusion Prevention/IPS Price Drop.__ CenturyLink is constantly reviewing the market to remain competitive with our features and pricing. Based on current research, we have lowered the price for our Intrusion Prevention/IPS product from $0.25 per VM/hr to $0.18 per vm/hr. We are continuing to add new features and review the pricing. If you would like to try IPS with a promo code, please contact [securityproduct-feedback@ctl.io](mailto:securityproduct-feedback@ctl.io) for more information.
 
-### Ecosystem (5)
+### Ecosystem (4)
 
 * __Mesosphere:__ [Mesosphere](https://mesosphere.com/) offers a new way to think about infrastructure, creating an operating system for the cloud. With native support for containerized workloads as well as traditional application deployment, mesosphere facilitates orchestration of your applications on a modern, scalable stack. CenturyLink Cloud is proud to offer an integrated solution for getting up and running with mesosphere, [get started now](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-mesosphere-blueprint/).
 
