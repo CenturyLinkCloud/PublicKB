@@ -31,7 +31,7 @@
 
 ### Enhancements (1)
 
-* __Private routing of traffic between servers using public IPs provided by CenturyLink Cloud.__ Traffic between servers using public IPs provided by CenturyLink Cloud are now routed over our private MPLS network between CenturyLink Cloud Data Centers. This approach offers increased performance and reliability as well as lower cost, compared to using the public Internet.
+* __Private routing of traffic between servers using public IPs provided by CenturyLink Cloud.__ Traffic between servers using public IPs provided by CenturyLink Cloud are now routed over our private MPLS network between CenturyLink Cloud Data Centers. This approach offers increased performance and reliability compared to using the public Internet.
 
 ### Announcements (1)
 
