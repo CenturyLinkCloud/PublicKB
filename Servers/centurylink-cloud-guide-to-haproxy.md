@@ -176,7 +176,7 @@ both can be implemented in CenturyLink Cloud.
                 balance     roundrobin
                 server      www01 10.100.96.21:80 check
                 server      www02 10.100.96.27:80 check
-  ```
+   ```
 
    - options in haproxy.cfg like balance algorithm Round-robin (other options are [available](//cbonte.github.io/haproxy-dconv/configuration-1.5.html#4.2-balance)) and options can be found at [HAProxy site](//www.haproxy.org/#docs)
 
