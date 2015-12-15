@@ -64,10 +64,10 @@ After executing the steps in this Getting Started document, the users will have 
 ### Detailed Steps to Deploy Cohesive Networks VNS3 Partner Template
 Follow these step by step instructions to deploy a VNS3 virtual appliance in to your CenturyLink Cloud account:
 
-- Open a service task request ticket via email to ServiceTasks@Tier3.com with the following details.  You will need to edit some of the information below.
+- Open a service task request ticket via email to ServiceTasks@ctl.io with the following details.  You will need to edit some of the information below.
 
 ----
-TO: ServiceTasks@Tier3.com
+TO: ServiceTasks@ctl.io
 
 EMAIL SUBJECT:   Custom Image Import Request for Ecosystem Partner Template
 

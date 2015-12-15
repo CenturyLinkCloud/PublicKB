@@ -24,3 +24,5 @@ It is important to understand the changes enacted by a clone job, to minimize co
 - Additional attached disks from the source server are not automatically attached to the clone. If these disks are intended to be attached to the clone then this is a manual process on the guest operating system.
 
 - The impact of cloning may vary between Operating Systems. For example, Server 2012 has features built-in to facilitate "cleaner" clones of Virtual Machines than earlier revisions.
+
+- When a clone is requested for a server with multiple NICs, the newly cloned machine will only have a single NIC.
