@@ -31,9 +31,8 @@ together to create a high availability load balancing solution.
 
 -   Identify a Network VLAN you want the HAProxy to reside on
 
--   Understanding the functions of load balancer (this is beyond this
-    article) and CenturyLink Cloud offerings, to learn more, please see this [KB](../Network/load-balancing-dedicated-vs-shared.md),
-    [general knowledge here](//en.wikipedia.org/wiki/Load_balancing_%28computing%29)
+-   Understanding the functions of load balancer (beyond the scope of this article) and CenturyLink Cloud load balancing  offerings, to learn more, please see this [KB](../Network/load-balancing-dedicated-vs-shared.md),
+    [general knowledge](//en.wikipedia.org/wiki/Load_balancing_%28computing%29)
      and [HAProxy documentations](//www.haproxy.org/#docs)
 
 -   Existing web servers or application servers to be load balanced
@@ -42,11 +41,8 @@ together to create a high availability load balancing solution.
 
 ### Use Case Scenarios
 
-HAProxy can be used for dedicated applications (layer 7) or TCP load balancing
-(layer 4) to create a high availability environment for any web
-applications environment. In this use case, two web servers are load
-balanced by a pair of HAProxy to create a high availability environment.
-This can be used for:
+HAProxy can be used as dedicated applications (layer 7) or TCP (layer 4) load balancer to create a high availability environment for any internal and external web or applications environment. In this use case, two web servers are load balanced by a pair of HAProxy to create a high availability environment.
+HAProxy can be configured to handle both internal and external network traffic and used to perform the following functions:
 
 -   Dedicated web services load balancing
 
@@ -55,11 +51,10 @@ This can be used for:
 -   Dedicated Work load distribution
 
 -   SSL offloading
-![HAProxy Network Diagram](../images/haproxy/haproxy-blockdiagram.png)
-Web traffic would come through a public/private Virtual IP (VIP) through
-the firewall and reach the HAProxy pair. HAProxy would redirect the
+![HAProxy Network Diagram](../images/haproxy/HAProxy-blockdiagram.png)
+Web traffic can come through a public/private Virtual IP (VIP)  and reach the HAProxy pair. HAProxy would redirect the
 traffic based on the algorithm chosen in the configuration.
-In this scenario, port 80 and 443 are being load balanced.
+In this scenario, port 80 and 443 are being load balanced with round-robin algorithm.  A complete list of algorithm can be found [here](http://cbonte.github.io/haproxy-dconv/configuration-1.6.html)
 
 ### Preparation
 
@@ -90,7 +85,7 @@ configured with a single network interface or 2 (or more) network
 interfaces, depending on the security and infrastructure requirement,
 both can be implemented in CenturyLink Cloud.
 
--   Deploy one CentOS 7 server using either the [Control
+-   Deploy a CentOS 7 server using either the [Control
     Portal](//control.ctl.io), [CLI](//github.com/CenturyLinkCloud/clc-go-cli) or [API](//www.ctl.io/developers/)
 
 -   Once deployed, connect to [Client
@@ -180,10 +175,7 @@ both can be implemented in CenturyLink Cloud.
 
    - options in haproxy.cfg like balance algorithm Round-robin (other options are [available](//cbonte.github.io/haproxy-dconv/configuration-1.5.html#4.2-balance)) and options can be found at [HAProxy site](//www.haproxy.org/#docs)
 
-  -   Setting up proper logging (optional, if not set, all logs will be
-    populated in /var/log/messages)
-
-  -   Enable UDP syslog reception as HAProxy is running with chroot:
+  -   Setting up proper logging (optional, if not set, HAProxy logs might not be reliability populated in /var/log/messages); To do this, UDP syslog reception needs to be enabled as HAProxy is running with chroot by changing the following in /etc/rsyslog.conf:
 
  ```
     \$ModLoad imudp
@@ -193,7 +185,16 @@ both can be implemented in CenturyLink Cloud.
     local2.\* /var/log/haproxy.log
  ```
 
-   c. Keepalive parameters
+    The difference in configuration (haproxy.cfg) between the two HAProxy nodes:
+
+    | HXPRoxy        | haproxy1       | haproxy2  |
+    | ------------- |:---------------:| ---------:|
+    | state         | MASTER | BACKUP |
+    | priority     | 101      |   100 |
+    | router_id | SeverName1      |    ServerName2 |
+
+
+   c. Keepalive parameters (in /etc/keepalived/keepalived.conf)
 
  ```
    global_defs {
@@ -233,19 +234,10 @@ both can be implemented in CenturyLink Cloud.
    }
  ```
 
-   The difference in configuration (haproxy.cfg) between the two HAProxy nodes:
-
-
-   | HXPRoxy        | haproxy1           | haproxy2  |
-   | ------------- |:-------------:| -----:|
-   | state      | MASTER | BACKUP |
-   | priority     | 101      |   100 |
-   | router_id | SeverName1      |    ServerName2 |
-
 d.  Firewall rules (this varies as application ports and security policy
     can be different, please use the following as references):
 
-  -   HAProxy
+  -   HAProxy and Keepalive
 
  ```
     firewall-cmd --permanent --zone=internal --add-service=http
@@ -266,11 +258,11 @@ d.  Firewall rules (this varies as application ports and security policy
  ```
 
 ### Testing
-The environment can be tested by disabling httpd (or the load balanced application) and haproxy using `systemctl stop httpd` and `systemctl stop haproxy`.  From the demo below, there is minimal delay for the fail over to take place.
+The environment can be tested by disabling httpd (or the load balanced application) and haproxy.  In this example, `systemctl stop httpd` and `systemctl stop haproxy` are used to perform testing.  From the demo below, the screen on the left shows the output of a https request to the VIP.  On the right, the commands are run to show the effect of the https requests.  There is minimal delay for the fail over to take place.
 ![Demo failover](../images/haproxy/haproxy-demo-failover.gif)
 
 ### Troubleshooting
-- Most common issue is firewall ports are not configured properly, firewall can be disabled for testing purpose
+- The most common issue is firewall ports are not configured properly, firewall can be disabled for testing purpose
 
 - If the HAProxy load balabcers are on different VLANs, please make sure the firewall ports are configured between the two VLANs (for details, please see this [KB](../Network/connecting-data-center-networks-through-firewall-policies.md))
 
@@ -282,7 +274,7 @@ The environment can be tested by disabling httpd (or the load balanced applicati
     ip maddr show
     ```
 
-- As for the virtual IP, the Master HAProxy should own the Virtual IP address, `ip a` command will show if that node has the IP address, the sample output:
+- As for the virtual IP on the HAProxy server, the Master HAProxy should own the Virtual IP address, `ip a` command will show if that node has the VIP address, the sample output:
 
  ```
  2: ens160: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP qlen 1000
