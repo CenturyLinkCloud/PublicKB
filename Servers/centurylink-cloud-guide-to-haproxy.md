@@ -13,6 +13,7 @@
 * [Use Case Scenarios](#use-case-scenarios)
 * [Preparation](#preparation)
 * [Deployment](#deployment)
+* [HAProxy configuration differences](#haproxy-configuration-differences)
 * [Testing](#testing)
 * [Troubleshooting](#troubleshooting)
 * [Support](#support)
@@ -185,15 +186,7 @@ both can be implemented in CenturyLink Cloud.
     local2.\* /var/log/haproxy.log
  ```
 
-    The difference in configuration (haproxy.cfg) between the two HAProxy nodes:
-
-| HXPRoxy       | haproxy1        | haproxy2  |
-|-------------|---------------|---------|
-| state         | MASTER          | BACKUP    |
-| priority      | 101             |   100     |
-| router_id     | SeverName1      |ServerName2|
-
-     c. Keepalive parameters (in /etc/keepalived/keepalived.conf)
+  c. Keepalive parameters (in /etc/keepalived/keepalived.conf)
 
  ```
    global_defs {
@@ -255,6 +248,15 @@ d.  Firewall rules (this varies as application ports and security policy
     firewall-cmd --direct --perm --add-rule ipv4 filter OUTPUT 0 -p vrrp -o ens160 -j ACCEPT
     firewall-cmd --reload
  ```
+#### HAProxy configuration differences
+The difference in configuration (haproxy.cfg) between the two HAProxy nodes:
+
+| HXPRoxy       | haproxy1        | haproxy2  |
+|-------------|---------------|---------|
+| state         | MASTER          | BACKUP    |
+| priority      | 101             |   100     |
+| router_id     | SeverName1      |ServerName2|
+
 
 ### Testing
 The environment can be tested by disabling httpd (or the load balanced application) and haproxy.  In this example, `systemctl stop httpd` and `systemctl stop haproxy` are used to perform testing.  From the demo below, the screen on the left shows the output of a https request to the VIP.  On the right, the commands are run to show the effect of the https requests.  There is minimal delay for the fail over to take place.
