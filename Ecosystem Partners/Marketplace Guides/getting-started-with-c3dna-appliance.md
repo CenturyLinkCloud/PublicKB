@@ -58,9 +58,11 @@ CenturyLink Cloud Users
 
 3. **Set Required parameters.**
 
-  ![Deploy Parameters](../../images/bpimager/deploy_parameters.png)
+  ![Deploy Parameters](../../images/c3dna/deploy_parameters.png)
 
+  * **Control Username** - The username used to login to control.ctl.io
   * **Control User Password** - The password associated with your control.ctl.io login
+  * **uiID** - User specified unique identified for the controller
 
 4. **Set Optional Parameters**
 

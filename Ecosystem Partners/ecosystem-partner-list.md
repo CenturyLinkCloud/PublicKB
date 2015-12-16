@@ -60,6 +60,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [BCMOne VitalView](../Ecosystem Partners/Marketplace Guides/getting-started-with-bcmone-vital-view-blueprint.md)   	| Blueprint    | Network monitoring and management    |
 | [CA Unified Infrastructure Management](../Ecosystem Partners/Marketplace Guides/getting-started-with-ca-unified-infrastructure-management-on-windows.md)   	| Blueprint    | Systems monitoring and management    |
 | [Centerity](../Ecosystem Partners/Marketplace Guides/getting-started-with-centerity-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
+| [C<sup>3</sup>DNA](../Ecosystem Partners/Marketplace Guides/getting-started-with-c3dna-appliance.md)   	| Blueprint    | Cloud Management Platform    |
 | [CloudBolt](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudbolt-appliance.md)   	| Blueprint    | Cloud Management Platform    |
 | [Chef Server](../Ecosystem Partners/Marketplace Guides/getting-started-with-chef-server-blueprint.md)   	| Blueprint    | Configuration management    |
 | [Dynatrace](../Ecosystem Partners/Marketplace Guides/getting-started-with-dynatrace-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
