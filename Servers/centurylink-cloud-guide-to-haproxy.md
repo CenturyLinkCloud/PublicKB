@@ -54,7 +54,7 @@ HAProxy can be configured to handle both internal and external network traffic a
 ![HAProxy Network Diagram](../images/haproxy/HAProxy-blockdiagram.png)
 Web traffic can come through a public/private Virtual IP (VIP)  and reach the HAProxy pair. HAProxy would redirect the
 traffic based on the algorithm chosen in the configuration.
-In this scenario, port 80 and 443 are being load balanced with round-robin algorithm.  A complete list of algorithm can be found [here](http://cbonte.github.io/haproxy-dconv/configuration-1.6.html)
+In this scenario, port 80 and 443 are being load balanced with round-robin algorithm.  A complete list of algorithm can be found [here](//cbonte.github.io/haproxy-dconv/configuration-1.6.html)
 
 ### Preparation
 
@@ -187,14 +187,13 @@ both can be implemented in CenturyLink Cloud.
 
     The difference in configuration (haproxy.cfg) between the two HAProxy nodes:
 
-    | HXPRoxy        | haproxy1       | haproxy2  |
-    | ------------- |:---------------:| ---------:|
-    | state         | MASTER | BACKUP |
-    | priority     | 101      |   100 |
-    | router_id | SeverName1      |    ServerName2 |
+| HXPRoxy       | haproxy1        | haproxy2  |
+|-------------|---------------|---------|
+| state         | MASTER          | BACKUP    |
+| priority      | 101             |   100     |
+| router_id     | SeverName1      |ServerName2|
 
-
-   c. Keepalive parameters (in /etc/keepalived/keepalived.conf)
+     c. Keepalive parameters (in /etc/keepalived/keepalived.conf)
 
  ```
    global_defs {
