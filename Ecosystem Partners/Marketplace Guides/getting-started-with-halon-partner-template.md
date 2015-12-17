@@ -13,7 +13,7 @@ After reading this article, the reader should feel comfortable deploying the Hal
 
 ### Partner Profile
 
-<img src="../../images/halon/halon_logo.jpg" style="border:0;float:right;max-width: 150px;">
+<img src="../../images/halon/halon_logo.png" style="border:0;float:right;max-width: 150px;">
 
 Halon Security – “The SMTP software for your business”
 

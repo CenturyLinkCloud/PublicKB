@@ -30,7 +30,7 @@ Customers must maintain eligible licenses on the Authorized Mobility Partner’s
 
     ![enrollment details](../images/using-your-microsoft-licenses-in-the-centurylink-cloud-01.png)
 
-2. Customer will need to complete and submit a license verification form available at [www.microsoftvolumelicensing.com.](//www.microsoftvolumelicensing.com) This form requires you to include basic details about the licenses from your Volume Licensing agreement, which is used for License Mobility through Software Assurance, and is required by Microsoft to verify eligibility for this benefit. The form lists products that are eligible for license mobility, and you indicate which you are deploying with your Authorized Mobility Partner. Once you submit the form to Microsoft through your channel partner, you can deploy the licenses with the Authorized Mobility Partner, without waiting for Microsoft to finish the verification process.
+2. Customer will need to complete and submit a license verification form available at [www.microsoftvolumelicensing.com.](http://www.microsoftvolumelicensing.com) This form requires you to include basic details about the licenses from your Volume Licensing agreement, which is used for License Mobility through Software Assurance, and is required by Microsoft to verify eligibility for this benefit. The form lists products that are eligible for license mobility, and you indicate which you are deploying with your Authorized Mobility Partner. Once you submit the form to Microsoft through your channel partner, you can deploy the licenses with the Authorized Mobility Partner, without waiting for Microsoft to finish the verification process.
 
     ![license verification form](../images/using-your-microsoft-licenses-in-the-centurylink-cloud-02.png)
 
