@@ -148,7 +148,7 @@ From the Add Roles and Features Wizard, click `Next >` three times and then sele
 
 ![Add Hyper-V role](../images/bare-metal-faq-2.png)
 
-Now click `Next >` three times until you reach the Create Virtual Switches screen. Make sure you _do not_ check any network adapters, and just click `Next >`. _DO NOT CREATE ANY VIRTUAL SWITCHES YET or you will lose connectivity to your server! You will add one or more virtual switches later and configure them with the proper VLAN tag to ensure you don't lose connectivity._
+Now click `Next >` three times until you reach the Create Virtual Switches screen. Make sure you _do not_ check any network adapters, and just click `Next >`. **DO NOT CREATE ANY VIRTUAL SWITCHES YET or you will lose connectivity to your server! You will add one or more virtual switches later and configure them with the proper VLAN tag to ensure you don't lose connectivity.**
 
 ![Don't Create a Virtual Switch yet](../images/bare-metal-faq-3.png)
 
