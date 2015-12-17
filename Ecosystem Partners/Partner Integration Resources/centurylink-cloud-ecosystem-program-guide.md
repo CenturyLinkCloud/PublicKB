@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Marketplace Provider Program Guide",
-  "date": "12-16-2015",
+  "date": "12-17-2015",
   "author": "David Shacochis",
   "attachments": [],
   "stickyt": true,
