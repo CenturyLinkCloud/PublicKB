@@ -52,7 +52,9 @@ HAProxy can be configured to handle both internal and external network traffic a
 -   Dedicated Work load distribution
 
 -   SSL offloading
+
 ![HAProxy Network Diagram](../images/haproxy/HAProxy-blockdiagram.png)
+
 Web traffic can come through a public/private Virtual IP (VIP)  and reach the HAProxy pair. HAProxy would redirect the
 traffic based on the algorithm chosen in the configuration.
 In this scenario, port 80 and 443 are being load balanced with round-robin algorithm.  A complete list of algorithm can be found [here](//cbonte.github.io/haproxy-dconv/configuration-1.6.html)
@@ -69,7 +71,7 @@ In preparation. There are several factors need to be considered:
 
 -   Configure the Virtual IP for the HAProxy servers with Public IP address:
  - [Assign a public IP address](../Network/how-to-add-public-ip-to-virtual-machine.md) to one of the HAProxy servers and bind it to a new IP address
-
+ ![Adding Public IP with new Privte IP](../images/haproxy/HAProxy-add-publicip.png)
  - From that server, run `ifconfig ens160:1 down` and `remove /etc/sysconfig/network-scripts/ifcfg-ens160:1` file; verify this step by pinging the new public and private IP addresses, there should be no reply from these addresses (assuming ens160 is the network interface)
 
  - In this example, 10.100.96.28 is the new private IP assigned along with the public IP addresses
@@ -93,7 +95,7 @@ both can be implemented in CenturyLink Cloud.
     VPN](../Network/how-to-configure-client-vpn.md)
     and secure shell to the server and start implementation:
 
--  Change hostname and update the repository
+-  As the applications use 'GetHostByName' system calls, `hostname -s` output should match the real hostname and not localhost.  In order to change hostname, run the first two commands below and update the repository with `yum update`
 
     a.  `grep HOSTNAME network | awk -F= '{print \$2}' | tee /etc/hostname`
 
@@ -265,7 +267,7 @@ The environment can be tested by disabling httpd (or the load balanced applicati
 ### Troubleshooting
 - The most common issue is firewall ports are not configured properly, firewall can be disabled for testing purpose
 
-- If the HAProxy load balabcers are on different VLANs, please make sure the firewall ports are configured between the two VLANs (for details, please see this [KB](../Network/connecting-data-center-networks-through-firewall-policies.md))
+- If the HAProxy load balancers are on different VLANs, please make sure the firewall ports are configured between the two VLANs (for details, please see this [KB](../Network/connecting-data-center-networks-through-firewall-policies.md))
 
 - Keepalive uses VRRP for heatbeat, the following command would help identify if VRRP is working:
 
