@@ -30,13 +30,13 @@ http://www.datto.com/
 
 ### Description
 
-Datto has integrated their technology with the CenturyLink Cloud platform. The purpose of this knowledge base article is to help the reader 
+Datto has integrated their technology with the CenturyLink Cloud platform. The purpose of this knowledge base article is to help the reader
 take advantage of this integration to achieve rapid time-to-value for this data protection solution.
 
-Technology from Datto helps CenturyLink Cloud customers address the business challenge of data protection and eliminates downtime by 
+Technology from Datto helps CenturyLink Cloud customers address the business challenge of data protection and eliminates downtime by
 virtualizing systems instantly and is now available as part of the CenturyLink Cloud Blueprint Engine.
 
-Customers can protect Windows and Linux operating systems and replicate data every 5 minutes to 60 minutes within the CenturyLink Cloud. 
+Customers can protect Windows and Linux operating systems and replicate data every 5 minutes to 60 minutes within the CenturyLink Cloud.
 Additionally, data can be replicated to the Datto cloud where customers can store data for long-term retention or failover and instantly virtualize.
 
 
@@ -49,7 +49,7 @@ CenturyLink Cloud Users
 
 After reading this article, the user should feel comfortable getting started using datto technology on CenturyLink Cloud.
 
-After executing the steps in this Getting Started document, the users will have a functioning Virtual Alto upon which they 
+After executing the steps in this Getting Started document, the users will have a functioning Virtual Alto upon which they
 can start protecting data and virtualizing systems.
 
 
@@ -60,7 +60,6 @@ can start protecting data and virtualizing systems.
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "datto Alto" in the keyword search on the right side of the page.
 
   <img src="../../images/datto/blueprint_tile.png" style="border:0;max-width:250px;">
-
 
 2. **Click the Deploy Blueprint button.**
 
@@ -82,18 +81,28 @@ can start protecting data and virtualizing systems.
 
   This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within five minutes.
 
-7. **Deployment Complete**
+7. **Add Additional Storage**
 
-  Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.  If you do not receive an email like the one shown below your cluster may have had a deployment error - review the *Blueprint Build Log* to for error messages.
-
-  <img src="../../images/datto/deploy_complete_email.png" style="border:0;width:70%;">
+  The Blueprint delivers your server with no data storage configured.  Login to [control.ctl.io](https://control.ctl.io) and
+  add **raw disks** for your server
 
 8. **Access Alto**
 
+  *Note if accessing via a public IP address some of these steps may refresh and direct you towards the private IP causing timeouts.*
+
   * Access the device's web UI by entering the IP address into your browser
-  * Power on VM and apply registration code
-  * Attach provisioned storage disks and reboot
-  * Begin Registration upon reboot
+
+  * Apply registration code.  If you have not yet received a registration code please email bbuckman@datto.com.
+
+    ![Add authorization key](../../images/datto/authorization_key.png)
+
+  * Select disks added in step (7) and click *Create Storage Drive*
+
+    ![Add disks](../../images/datto/add_disks.png)
+
+  * Configure appliance access details and set owner contact information the click *Register Appliance*
+
+    ![Register appliance](../../images/datto/register_appliance.png)
 
 
 ### Pricing
@@ -115,5 +124,3 @@ Email your Datto Account Manager bbuckman@datto.com
 
 * For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
 * For issues related to deploying the Alto Blueprints and application operation on CenturyLink Cloud, please contact bbuckman@datto.com or follow your existing datto support process if known.
-
-
