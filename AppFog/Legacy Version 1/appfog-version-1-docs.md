@@ -24,6 +24,7 @@ This document is for users of AppFog v1. This document does not apply to the cur
 * [Example Migration Walkthrough](../../AFv1/migration-walkthrough.md)
 * [Migration FAQ](../../AFv1/migration-faq.md)
 * [Getting To Know The AppFog v2 CLI cf Tool](../../AFv1/getting-to-know-cf-tool.md)
+* [How to Proxy Requests for an AppFog v1 URL to an AppFog v2 Application](../../AFv1/afv1-url-proxy.md)
 
 ### Getting Started
 
