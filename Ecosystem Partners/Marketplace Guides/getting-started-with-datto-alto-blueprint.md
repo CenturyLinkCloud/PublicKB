@@ -1,5 +1,5 @@
 {{{
-  "title": "Getting Started with datto Alto - Blueprint",
+  "title": "Getting Started with Datto ALTO - Blueprint",
   "date": "12-18-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
@@ -10,14 +10,14 @@
 
 ### Overview
 
-After reading this article, the reader should feel comfortable deploying the datto Virtual Alto to protect server
+After reading this article, the reader should feel comfortable deploying the Datto Virtual ALTO to protect server
 data residing on CenturyLink Cloud.
 
 ### Partner Profile
 
 <img src="../../images/datto/datto_logo_blue.png" style="border:0;float:right;">
 
-datto Alto – “Protecting business data no matter where it lives”
+Datto ALTO – “Protecting business data no matter where it lives”
 
 http://www.datto.com/
 
@@ -47,17 +47,17 @@ CenturyLink Cloud Users
 
 ### Impact
 
-After reading this article, the user should feel comfortable getting started using datto technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using Datto technology on CenturyLink Cloud.
 
-After executing the steps in this Getting Started document, the users will have a functioning Virtual Alto upon which they
+After executing the steps in this Getting Started document, the users will have a functioning Virtual ALTO upon which they
 can start protecting data and virtualizing systems.
 
 
-### Deploying datto Virtual Alto
+### Deploying Datto Virtual ALTO
 
 1. **Locate the Blueprint in the Blueprint Library**
 
-  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "datto Alto" in the keyword search on the right side of the page.
+  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "Datto ALTO" in the keyword search on the right side of the page.
 
   <img src="../../images/datto/blueprint_tile.png" style="border:0;max-width:250px;">
 
@@ -86,7 +86,7 @@ can start protecting data and virtualizing systems.
   The Blueprint delivers your server with no data storage configured.  Login to [control.ctl.io](https://control.ctl.io) and
   add **raw disks** for your server
 
-8. **Access Alto**
+8. **Access ALTO**
 
   *Note if accessing via a public IP address some of these steps may refresh and direct you towards the private IP causing timeouts.*
 
@@ -115,7 +115,7 @@ Account Executive or if you don’t have one, Brian Buckman at bbuckman@datto.co
 
 ### Frequently Asked Questions
 
-**Where do I get my datto registration code?**
+**Where do I get my Datto registration code?**
 
 Email your Datto Account Manager bbuckman@datto.com
 
@@ -123,4 +123,4 @@ Email your Datto Account Manager bbuckman@datto.com
 **Who should I contact for support?**
 
 * For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
-* For issues related to deploying the Alto Blueprints and application operation on CenturyLink Cloud, please contact bbuckman@datto.com or follow your existing datto support process if known.
+* For issues related to deploying the ALTO Blueprints and application operation on CenturyLink Cloud, please contact bbuckman@datto.com or follow your existing Datto support process if known.
