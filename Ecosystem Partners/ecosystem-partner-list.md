@@ -119,6 +119,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
+| [Datto](../Ecosystem Partners/Marketplace Guides/getting-started-with-datto-alto-blueprint.md)   	| Blueprint    | Alto Backup Appliance   |
 | [SoftNAS](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md)   	| Template    | NAS and Cloud Storage Gateway   |
 | [CloudBerry Lab Backup Enterprise](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudberry-lab-backup-enterprise-blueprint.md)   	| Blueprint    | Backup Software   |
 | [CloudFuze](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudfuze-blueprint.md)   	| Blueprint    | Cloud Storage Management   |
