@@ -1,46 +1,27 @@
 {{{
   "title": "How To Change Support Levels",
-  "date": "11-03-2015",
-  "author": "Anthony Hakim",
+  "date": "11-30-2015",
+  "author": "Chris Little",
   "attachments": []
 }}}
 
-### Description
+### Overview
 CenturyLink Cloud offers three different types of [Support Levels](https://www.ctl.io/support/):
 * Developer (All online sign up customers)
 * Professional (Default option for contracts)
 * Enterprise (Premier level of support)
 
-<<<<<<< HEAD
-Customers have the option to change Support Levels by following the steps below.
-=======
-Customer have the option to change Support Plans by following the steps below.
->>>>>>> origin/master
+### Determine Your Current Support Level
+1. Determine your current Support Level by logging into the [Control Portal](https://control.ctl.io), then choose SETTINGS under ACCOUNT.
 
+  ![Current Support Level](../images/how-to-change-support-levels1.png)
 
-### Steps
+2. Click on Customer Support under the Settings Tab.
 
-__Determine your current Support Level__
-  * Logon to your user account in the [Control Portal](https://control.ctl.io), then choose SETTINGS under ACCOUNT.
+  ![Support Service Level](../images/how-to-change-support-levels2.png)
 
-<<<<<<< HEAD
-    ![Current Support Level](../images/how-to-change-support-levels1.png)
-=======
-    ![Current Support Plan](../images/how-to-change-support-levels1.png)
->>>>>>> origin/master
-
-  * Click on Customer Support under the Settings Tab.
-
-    ![Support Service Level](../images/how-to-change-support-levels2.png)
-
-__Change your Support Level__
-
-<<<<<<< HEAD
+### Change your Support Level
 You can request a change to your Support Level by sending an email, with the following information, to [help@ctl.io](mailto:help@ctl.io):
-=======
-You can change Support Level by sending an email, with the following information, to [help@ctl.io](mailto:help@ctl.io):
->>>>>>> origin/master
-
 * Account Alias to which changes are to be made.
 * Support Level you are requesting.
 * Your customer PIN for security verification.

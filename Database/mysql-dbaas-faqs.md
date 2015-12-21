@@ -1,6 +1,6 @@
 {{{
   "title": "FAQs: MySQL DBaaS",
-  "date": "08-14-2015",
+  "date": "11-23-2015",
   "author": "Christine Parr",
   "attachments": [],
   "related-products" : [],
@@ -26,11 +26,11 @@ Currently, this article is to support customers in the Limited Beta program.  Ad
 
 <p><strong>Q: How is my data isolated from other Database-as-a-Service tenants?</strong>
 </p>
-<p>A: Each MySQL instance lives on it's own Virtual Machine.</p>
+<p>A: Each MySQL instance lives on its own Virtual Machine.</p>
 
 <p><strong>Q: Can I choose to replicate my data for higher availability?</strong>
 </p>
-<p>A: The initial DBaaS beta does not include replication options, so is better suited for POCs and Test/Dev environments.  Future releases will include replication options.  To stay up to date on feature releases, sign up for our Early Adopter Program.  In doing so, you will receive monthly updates on new features released and will be informed when replication options are available.
+<p>A: As of November 30th, 2015, beta users will be given the option to replicate their database instance.  If replication is chosen, a replica instance will be created within the same datacenter.  We use logic to ensure that the primary and replica instances do not share the same host.
 </p>
 <p><strong>Q: I understand that SSL Encryption options are available.  Will my data be encrypted in transit and/or at rest? </strong>
 </p>
@@ -38,4 +38,4 @@ Currently, this article is to support customers in the Limited Beta program.  Ad
 </p>
 <p><strong>Q: I understand that CenturyLink is backing my data up daily.  How can I access my backups in order to restore? </strong>
 </p>
-<p>A: During our initial beta, you can send a request to <a href="mailto:dbaas-support@ctl.io">dbaas-support@ctl.io</a> to request a restore from backup and we will work with you to restore your data.</p>
+<p>A: If you need to restore from an available backup, you can send a request to <a href="mailto:dbaas-support@ctl.io">dbaas-support@ctl.io</a> and we will work with you to restore your data.</p>
