@@ -34,7 +34,7 @@ and adding Centurylink Cloud as disaster recovery site.
   SafeHaven console and **Service IP** is the ip used to communicate with SRNs.
   So please make sure you enter the correct ip. **SafeHaven Distribution URL**
   is the url contains the SafeHaven code, currently we use
-  https://www.dropbox.com/s/ervrq9g48uzdj0i/SafeHaven3.1.1-rc4-master_nosbd_11-02-2015_bin.tar.gz?dl=0.
+  https://www.dropbox.com/s/bz75nmcccemseo0/SafeHaven3.1.1-GA_nosbd_12-16-2015_bin.tar.gz?dl=0
   Please make sure the **Service Port** and **Heartbeat Port** are opened on
   both public ip and private ip.
 
