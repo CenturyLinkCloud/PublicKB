@@ -1,7 +1,6 @@
 {{{
-  "title": "Onboard Windows Servers with Automated LRA installation and stub
-  configuration",
-  "date": "12-03-2015",
+  "title": "Onboard Windows Servers with Automated LRA Installation and Stub Configuration",
+  "date": "12-15-2015",
   "author": "Shasha Zhu",
   "attachments": [],
   "related-products": [],
