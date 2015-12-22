@@ -70,9 +70,33 @@ The automated LRA installation is a experimental feature. It requires that the
 guest VM OS to be Windows 2008 R2 or later. Also port TCP 445 has to open on
 guest VMs. 
 
+- Right click on the PG and select **Install SafeHaven Local Replication
+  Agent**.
+  ![Install-LRA](../images/SH3.1.1Onboarding-Windows/SH3.1.1-Onboarding-Windows-14.png)
+- Enter the guest VMs username, password, URL of download LRA and the IP
+  addresses of protected VM. Please ensure the IP addresses entered match the
+  source VM.
+  ![Install-LRA](../images/SH3.1.1Onboarding-Windows/SH3.1.1-Onboarding-Windows-15.png)
+- After ten minutes or so, the replication has been started. Please see the
+  following screeshot, the Un-synchronized data begin to accumulate. 
+  ![Install-LRA](../images/SH3.1.1Onboarding-Windows/SH3.1.1-Onboarding-Windows-16.png)
+- Verify every protected VM in the PG is connected to the iSCSI target and the
+  replication has started on each of the VM.
+  ![Install-LRA](../images/SH3.1.1Onboarding-Windows/SH3.1.1-Onboarding-Windows-17.png)
+
 #### Configure Stub
+
 Automated stub configuration procedure powers on the stubs, installs the
 makestub.exe and configures the stubs to boot from the right target, at last it
-powers off the stubs. The stubs has to be Windows 2008 R2 or later and TCP 445 port is
+powers off the stubs. This step has to be done before the Test-Failover. The stubs has to be Windows 2008 R2 or later and TCP 445 port is
 required to open. Please also match the NIC type and PCI number of the stubs
 with the guest VMs. 
+
+- Right clich the PG and select **Install SafeHaven MakeStub**.
+ ![Install-Makestub](../images/SH3.1.1Onboarding-Windows/SH3.1.1-Onboarding-Windows-18.png)
+- Enter the stub usernamee, password, URL of downloading the makestub.exe and
+  the IP addresses of stubs. Please make sure the IP addresses entered match the
+  source VM name. For example, in the following screenshot, 10.55.220.149 is
+  stub ip which matches to source VM App2. After configure makestub, stub with
+  this ip is the recovery VM for App2. 
+  ![Install-Makestub](../images/SH3.1.1Onboarding-Windows/SH3.1.1-Onboarding-Windows-19.png)
