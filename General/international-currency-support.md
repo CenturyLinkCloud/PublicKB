@@ -3,12 +3,9 @@
  "date": "12-22-2015",
  "author": "Christian Brown"
  "attachments": [],
- "related-products" : [],
- "contentIsHTML": false,
- "sticky": false
+ "contentIsHTML": false
 }}}
 
-# International Payment, Currency and Exchange
 
 ## Description
 
