@@ -1,11 +1,10 @@
 {{{
- "title": "International Currency Support",
- "date": "12-22-2015",
- "author": "Christian Brown"
- "attachments": [],
- "contentIsHTML": false
+  "title": "International Currency Support",
+  "date": "12-22-2015",
+  "author": "Christian Brown",
+  "attachments": [],
+  "contentIsHTML": false
 }}}
-
 
 ## Description
 
