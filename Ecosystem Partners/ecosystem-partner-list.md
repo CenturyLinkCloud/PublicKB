@@ -16,8 +16,11 @@ Quickly deploy and successfully use software and technology from any of our cert
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [A10 vThunder](../Ecosystem Partners/Marketplace Guides/getting-started-with-a10-vthunder-partner-template.md)   	| Template    | Application service gateway    |
+| [aiScaler](../Ecosystem Partners/Marketplace Guides/getting-started-with-aiscaler.md)   	| Blueprint    | Application delivery controller    |
 | [Appcito CAFE](../Ecosystem Partners/Marketplace Guides/getting-started-with-appcito-cafe.md)   	| Blueprint    | Application delivery controller    |
 | [Cohesive Networks VNS3](../Ecosystem Partners/Marketplace Guides/getting-started-with-cohesiveft-vns3-partner-template.md)   	| Template    | Network security appliance    |
+| [FortyCloud](../Ecosystem Partners/Marketplace Guides/getting-started-with-fortycloud-appliance.md)   	| Blueprint (Virtual Appliance)    | Network security appliance    |
+| [HALON](../Ecosystem Partners/Marketplace Guides/getting-started-with-halon-partner-template.md)   	| Template    | SMTP Platform    |
 | [LaGrange Systems CloudMaestro](../Ecosystem Partners/Marketplace Guides/getting-started-with-lagrange-systems-cloudmaestro-blueprint.md)   	| Blueprint    | Application Delivery Controller  |
 | [NGiNX](../Ecosystem Partners/Marketplace Guides/getting-started-with-nginx-blueprint.md)   	| Blueprint    | Web traffic manager    |
 | [OpenVPN AS](../Ecosystem Partners/Marketplace Guides/getting-started-with-openvpnas-appliance.md)   	| Blueprint (Virtual Appliance)    | Secure access manager    |
@@ -57,6 +60,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [BCMOne VitalView](../Ecosystem Partners/Marketplace Guides/getting-started-with-bcmone-vital-view-blueprint.md)   	| Blueprint    | Network monitoring and management    |
 | [CA Unified Infrastructure Management](../Ecosystem Partners/Marketplace Guides/getting-started-with-ca-unified-infrastructure-management-on-windows.md)   	| Blueprint    | Systems monitoring and management    |
 | [Centerity](../Ecosystem Partners/Marketplace Guides/getting-started-with-centerity-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
+| [C<sup>3</sup>DNA](../Ecosystem Partners/Marketplace Guides/getting-started-with-c3dna-appliance.md)   	| Blueprint    | Cloud Management Platform    |
 | [CloudBolt](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudbolt-appliance.md)   	| Blueprint    | Cloud Management Platform    |
 | [Chef Server](../Ecosystem Partners/Marketplace Guides/getting-started-with-chef-server-blueprint.md)   	| Blueprint    | Configuration management    |
 | [Dynatrace](../Ecosystem Partners/Marketplace Guides/getting-started-with-dynatrace-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
@@ -88,6 +92,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [CloudEra](../Managed Services/getting-started-with-cloudera-on-centurylink-cloud.md)   	| Blueprint (Managed)   | Industry-leading Hadoop implementation    |
+| [ClustrixDB](../Ecosystem Partners/Marketplace Guides/getting-started-with-clustrixDB-on-centof6.md)   	| Blueprint    | Scale out Database    |
 | [Coffing Data Warehouseing](../Ecosystem Partners/Marketplace Guides/getting-started-with-coffing-data-warehousing-nexus-chameleon-blueprint.md) 	| Blueprint  | Data Warehouse  |
 | [DataStax Cassandra](../Ecosystem Partners/Marketplace Guides/getting-started-with-datastax-blueprint.md)   	| Blueprint    | Distributed NoSQL database    |
 | [Hortonworks Hadoop](../Ecosystem Partners/Marketplace Guides/getting-started-with-hortonworks-hadoop-blueprint.md)   	| Blueprint    | Distributed NoSQL database    |
@@ -114,8 +119,9 @@ Quickly deploy and successfully use software and technology from any of our cert
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
+| [Datto](../Ecosystem Partners/Marketplace Guides/getting-started-with-datto-alto-blueprint.md)   	| Blueprint    | Alto Backup Appliance   |
 | [SoftNAS](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md)   	| Template    | NAS and Cloud Storage Gateway   |
-| [CloudBerry Lab Backup Enterprise](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudfuze-blueprint.md)   	| Blueprint    | Backup Software   |
+| [CloudBerry Lab Backup Enterprise](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudberry-lab-backup-enterprise-blueprint.md)   	| Blueprint    | Backup Software   |
 | [CloudFuze](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudfuze-blueprint.md)   	| Blueprint    | Cloud Storage Management   |
 
 ### Data Protection
@@ -134,10 +140,13 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Acumatica](../Ecosystem Partners/Marketplace Guides/getting-started-with-acumatica-erp-blueprint.md)   	| Blueprint    | Accounting and ERP    |
 | [Akeneo](../Ecosystem Partners/Marketplace Guides/getting-started-with-akeneo-blueprint.md)   	| Blueprint    | Product Information Management    |
 | [Apex Datacom](../Ecosystem Partners/Marketplace Guides/getting-started-with-apex-datacom-call-me-essentials-edition-blueprint.md)   	| Blueprint    | "Call Me" Voice Widget    |
+| [Computer Associates PPM](../Ecosystem Partners/Marketplace Guides/getting-started-with-ca-ppm-on-windows.md)   	| Blueprint    | Project management |
+| [Computer Associates UIM](../Ecosystem Partners/Marketplace Guides/getting-started-with-ca-unified-infrastructure-management-on-linux.md)   	| Blueprint    | Project management |
 | [CiviCRM](../Ecosystem Partners/Marketplace Guides/getting-started-with-civicrm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
 | [Conxio](../Ecosystem Partners/Marketplace Guides/getting-started-with-conxio-everywhere.md)   	| Blueprint    | Secure Communications Platform |
 | [Diaspora](../Ecosystem Partners/Marketplace Guides/getting-started-with-diaspora-blueprint.md)   	| Blueprint    | Private social networking    |
 | [Fat Free CRM](../Ecosystem Partners/Marketplace Guides/getting-started-with-fat-free-crm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
+| [Hyper accurate time services from FSM Labs](../Ecosystem Partners/Marketplace Guides/getting-started-with-timekeeper.md)    | Blueprint     | Hyper accurate time services |
 | [Horde Groupware Webmail](../Ecosystem Partners/Marketplace Guides/getting-started-with-horde-blueprint.md)   	| Blueprint    | Mail, Calendar, Address Book, Tasks, and Notes Communication Suite    |
 | [Live Helper Chat](../Ecosystem Partners/Marketplace Guides/getting-started-with-livehelperchat-blueprint.md)   	| Blueprint    | Live chat    |
 | [Microsoft Active Directory ](../Managed Services/getting-started-with-managed-active-directory.md)  	| Blueprint (Managed)   | Directory Service     |
@@ -149,9 +158,18 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Sharelock](../Ecosystem Partners/Marketplace Guides/getting-started-with-sharelock-blueprint.md)  	| Blueprint   | Information sharing     |
 | [Simple Invoices](../Ecosystem Partners/Marketplace Guides/getting-started-with-simpleinvoices-blueprint.md)  	| Blueprint   | Invoice software     |
 | [Spree](../Ecosystem Partners/Marketplace Guides/getting-started-with-spree-blueprint.md)  	| Blueprint   | eCommerce platform     |
-| [Tracks](../Ecosystem Partners/Marketplace Guides/getting-started-with-tracks-blueprint.md)  	| Blueprint   | GTD Group collaboration     |
+| [Tracks](../Ecosystem Partners/Marketplace Guides/getting-started-with-tracks-blueprint.md)  	| Blueprint   | GTD Group collaboration|
+| [VDIWorks](../Ecosystem Partners/Marketplace Guides/getting-started-with-vdiworks-console.md)  	| Blueprint   |   Virtual Desktop Management     |
 | [X2 Engine](../Ecosystem Partners/Marketplace Guides/getting-started-with-x2engine-blueprint.md)  	| Blueprint   | Customer relationship manager (CRM)     |
 | [Zurmo](../Ecosystem Partners/Marketplace Guides/getting-started-with-civicrm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
+
+
+### Cloud Migration and Management
+
+|Vendor Software  	|Integration    | Description   	|
+|:-	|:-	|
+| [Apptio](../Ecosystem Partners/Marketplace Guides/getting-started-with-apptio.md)   	| API    | Cloud usage analysis    |
+| [US Techsource StratoZone](../Ecosystem Partners/Marketplace Guides/getting-started-with-stratozone.md)   	| API    | Cloud migration    |
 
 
 ### Media and Content

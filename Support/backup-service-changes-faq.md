@@ -1,9 +1,11 @@
 {{{
-  "title": "[UPDATED] About Simple Backup Service and the Retirement of Standard & Premium Storage",
-  "date": "[UPDATED 11-18-2015], Originally Posted 10-7-2015",
+  "title": "About Simple Backup Service and the Retirement of Standard & Premium Storage",
+  "date": "11-18-2015",
   "author": "Jared Ruckle & Mark Lee",
   "attachments": []
 }}}
+
+Article first posted on 10-7-2015
 
 ### Description
 
@@ -32,7 +34,7 @@ If you would require additional assistance or an alternative method, please cont
 
 ### When is this happening?
 
-The Standard and Premium products will be phased out data center by data center. This phased retirement of Standard and Premium - and phased launch of the Simple Backup Service - is likely to occur in late 2015 or early 2016. We will post more details on this transition in the coming weeks.
+The Standard and Premium products will be phased out data center by data center. This phased retirement of Standard and Premium - and phased launch of the Simple Backup Service - is likely to occur in early 2016. We will post more details on this transition in the coming weeks. **Until then, there are no changes to Standard and Premium storage.**
 
 ### Will my pricing change?
 

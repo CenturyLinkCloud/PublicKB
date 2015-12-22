@@ -18,7 +18,7 @@ Currently, this article is to support customers in the Limited Beta program.  Ad
 
 ## Overview
 
-Our MySQL Database-as-a-Service limited beta provides instant access to a single MySQL-compatible database instance with SSL support, daily backups held locally for 7 days and basic monitoring.  The free beta is limited to a 1vCPU/1GB database instance with up to 100 MB storage and support for 100 concurrent connections in IL1 datacenter.
+Our MySQL-compatible Database-as-a-Service limited beta provides instant access to a MySQL-compatible database instance with SSL support, daily backups held for 7 days, basic monitoring and a replication option.  Users can configure the amount of CPU, Memory and Storage based on their database needs and can choose to replicate their instance in datacenter for a more highly available solution.
 
 #### Prerequisites
 
@@ -30,6 +30,6 @@ Our MySQL Database-as-a-Service limited beta provides instant access to a single
 
 1.  Browse to CenturyLink Cloud’s DBaaS Beta User Interface and login using your CenturyLink Cloud username and password.
 
-2.	Navigate to the “Database Instances” screen, identify the database subscription you would like to delete, and click the delete button. ![DeleteDB](../images/dbaas-delete-beta.png)
+2.	Navigate to the “Database Instances” screen, identify and click on the database subscription you would like to delete. This will take you to a details screen specific to that subscription.
 
-3.  After the database instance is deleted, the status will indicate "Terminated". ![TerminatedDB](../images/dbaas-terminated-beta.png)
+3.  From the details screen, click on the delete button in the upper right hand side of the page, and click 'Yes' when prompted.  ![DeleteDB](../images/dbaas-delete-beta-cyclops.png)

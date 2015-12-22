@@ -14,12 +14,15 @@ This document is for users of AppFog v1 for migration to the next generation of 
 
 Before deleting any applications or services on AppFog v1 ensure you have local copies. Once applications and services are deleted it is **permanent**. We will not be able to provide a backup.
 
+When migration is complete your billing subscription can be canceled from the [Account](https://console.appfog.com/#account) page of the web console. Please be sure to cancel your subscription as we are not aware when individual user migration is complete. The billing system will not automatically prorate the subscription and issue a refund. If applicable, please open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com to receive a prorated refund of your subscription.
+
+
 ### Overview
 In this article we will walk through an example migration from AppFog v1 to AppFog v2. The example is based on the following factors:
 
 1. Utilization of the "Teams" feature on AppFog v1
-2. A PHP 5.3 applicaiton named **example-app**, with a memory reservation of 128M
-3. A PHP 5.6 application named **test-app**, with a memory reservation of 256M
+2. A PHP 5.6 applicaiton named **example-app**, with a memory reservation of 256M
+3. A PHP 5.3 application named **test-app**, with a memory reservation of 128M
 4. A MySQL service named **example-db**
 5. A single Add-On: IronMQ
 6. Two custom domains in use
@@ -48,7 +51,7 @@ AppFog v2 has a variety of options to manage and create spaces, invite users, an
 
 Now the account is established on AppFog v2 and the CLI tool is installed. Next we'll migrate the applications. More information can be found in our [Migrating an Application](how-to-migrate-an-application.md) and [Migrating a PHP Application](migrating-php-to-afv2.md) articles. The application will be pushed to the current space logged into. Use `cf push` whether it is the initial push or an update, there is no equivalent to AppFog v1's `af update` command.
 
-1. PHP 5.3 and 5.4 are deprecated and no longer [officially supported](http://php.net/eol.php). We recommend updating applications to at least PHP 5.5. If updating is not possible at this time we have provided a custom buildpack to support PHP 5.3 and 5.4.
+1. PHP 5.3 and 5.4 are deprecated and no longer [officially supported](http://php.net/eol.php). We recommend updating applications to at least PHP 5.5. If updating is not possible at this time we have provided a custom buildpack to support PHP 5.3 and 5.4. When using the custom buildpack environment variables are not available to your application. This means VCAP_SERVICES or any user set environment variables will not be available to a deployed application. To connect to an AppFog marketplace service the credentials will need to be included in the application's database configuration file. The VCAP_SERVICES variable can be viewed using `cf env <YOUR_APPNAME>` to obtain necessary database connection information.
 2. Download a copy of the application from AppFog v1 using `af pull <appname>`.
 3. Modify your applications to replace any AppFog v1 URLs in the application's code. For instance, replace calls to `example-app.aws.af.cm` with a new application URL of `example-app.uswest.appfog.ctl.io`.
 4. Modify how the VCAP_SERVICES environment variable is called. The fields are slightly different on AppFog v2. On AppFog v1 the database and host fields were "name" and "hostname". They are defined as "dbname" and "host" on AppFog v2, respectively. Follow these links for examples of the VCAP_SERVICES environment variable for [AppFog v1](mysql.md) and [AppFog v2](importing-data-to-afv2-mysql.md). Here is an example using the VCAP_SERVICES variable with PHP:
@@ -63,24 +66,56 @@ define('DB_HOST', $service['credentials']['host'] . ':' . $service['credentials'
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '')
  ```
+5. AppFog v1 had several PHP extensions and modules enabled by default. AppFog v2 allow users to specify necessary extensions and modules. The following steps outline the process:
+ * Create a new `.bp-config` directory in your application's root directory.
+ * Within the new `.bp-config` directory add a filed named `options.json`.
+ * Enable extensions by adding the PHP_EXTENSIONS or PHP_MODULES setting in the `options.json` file. The following example enables several PHP extensions that were available on AppFog v1:
+ ```
+{
+"PHP_EXTENSIONS": ["pdo", "pdo_mysql", "mysqli", "mysql", "mbstring", "mcrypt", "gd", "zip", "curl", "openssl", "sockets", "pdo_pgsql", "pdo_sqlite", "pgsql", "mongo"]
+}
+ ```
+6. AppFog v1 required modifications to php.ini settings to be included in their `.htaccess` file. On AppFog v2 users will need to create a `user.ini` file in their root directory to modify php.ini settings. Users can still utilize a `.htaccess` file for URL rewriting. Here are some examples of php.ini modifications:
 
-5. The default application memory reservation is 1GB and the default buildpack will support PHP 5.5 and 5.6. Specify the PHP custom buildpack when deploying PHP 5.3 and 5.4 applications, if necessary also specify the memory allocation:
+ ```
+memory_limit = 256M
+upload_max_filesize = 4M
+max_input_time = 90
+  ```
+7. The default application memory reservation is 1GB and the default buildpack will support PHP 5.5 and 5.6. Specify the PHP custom buildpack when deploying PHP 5.3 and 5.4 applications, if necessary also specify the memory allocation:
  
  ```
 cf push <appname> -m <memory> -b https://github.com/CenturyLinkCloud/php-buildpack.git#af_custom_php
  ```
  
-6. For this example we would use the following commands to push the example-app and test-app applications to AppFog v2:
+8. For this example we would use the following commands to push the example-app and test-app applications to AppFog v2:
 ```
-cf push example-app -m -128M -b https://github.com/CenturyLinkCloud/php-buildpack.git#af_custom_php
-cf push test-app -m 256M
+cf push example-app -m -256M
+cf push test-app -m -128M -b https://github.com/CenturyLinkCloud/php-buildpack.git#af_custom_php
 ```
 
 ### Migrate Services
 
 More information can be found in our [Migrating a Service](export-services-and-third-party-alternatives.md) and [Importing Data Into AppFog v2 MySQL](importing-data-to-afv2-mysql.md) articles. Our MySQL DBaaS is currently in Beta. It is due to release from Beta in December.
 
-1. First we need to export the data from AppFog v1. Establish a tunnel using `af tunnel`, then select the database at the prompt. At the next prompt select the option `3. mysqldump`. You will then be prompted to select an output file. You can provide the path or it will download to your current working directory. Be sure to include the proper `.sql` extension, as in `example-db.sql`.
+1. First we need to export the data from AppFog v1. There are several options available. In this example we'll use the `af export-service <service_name>` command. The [Migrating a Service](export-services-and-third-party-alternatives.md) article provides information on other options.
+ * From the CLI on AppFog v1:
+ ```
+af export-service example-db
+ ```
+ * This proivdes a URL to download your database. Use the wget command to download the database:
+ ```
+wget -c -O <example-db>.zip <URL_provided_by_export-service_command>
+ ```
+ * Decompress the downloaded file:
+ ```
+ unzip <example-db>.zip
+ ```
+ * Naviagte to the "content" directory. Then decompress the SQL file and rename it to your service name:
+ ```
+gunzip <example-db>.sql <file_name>.gz
+ ```
+ 
 2. Next, create a service on AppFog v2. You can view the available first-party service options using `cf marketplace`:
 
  ```
@@ -117,12 +152,14 @@ System-Provided:
   ],
   ```
 
-6. Use the VCAP_SERVICES credentials to connect to the database and import the `example-db.sql` dump file:
+6. Use the VCAP_SERVICES credentials to connect to the database and import the `example-db.sql` file:
 
-```
+ ```
 mysql -h <HOST_ADDRESS> default -u admin -p -P <PORT_NUMBER> < /path/to/file/example-db.sql
-```
+ ```
 You will be prompted for the password. You can also use SSL when connecting to the database. To do so copy the ca.cert to a file and specify the location as described in the [Importing Data Into AppFog v2 MySQL](importing-data-to-afv2-mysql.md) article.
+
+The VCAP_SERVICES environment variable is not available to a PHP 5.3 or PHP 5.4 application using the custom buildpack. The database connection credentials will need to be provided in the application's database config file.
 
 ### Set up Custom Domains
 
@@ -170,7 +207,8 @@ For more information visit our [Add-On Migration](migrating-environment-variable
 
 1. Obtain the IronMQ credentials on AppFog v1 by using `af env example-app`, or view the variables from the application's Mission Control page of the web console.
 2. Set the variable on AppFog v2 using `cf set-env <appname> <variable> <value>`
-3. Here are the commands to migrate the IronMQ configs to AppFog v2:
+3. If a PHP 5.3 or 5.4 application was utilizing an environment variable on AppFog v1 this will not be available with the custom buildpack. The connection credentials will need to be provided within the application.
+4. Here are the commands to migrate the IronMQ configs to AppFog v2:
 
 ```
 cf set-env example-app IRON_MQ_TOKEN <YOUR_IRON_MQ_TOKEN>

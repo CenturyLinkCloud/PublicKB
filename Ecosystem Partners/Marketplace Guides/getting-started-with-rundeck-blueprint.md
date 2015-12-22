@@ -42,7 +42,9 @@ After reading this article, the user should feel comfortable getting started usi
 RUNDECK is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
+
 1. **Locate the RUNDECK Blueprint**
+
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
   2. Search for “RUNDECK” in the keyword search on the right side of the page.
   3. Locate the 'RUNDECK PRO' Blueprint
@@ -50,22 +52,25 @@ RUNDECK is available as a Blueprint for deployment on a new server.
 2. **Choose and Deploy the Blueprint. Click the “RUNDECK PRO” Blueprint.**
 
 3. **Configure the Blueprint** 
-Complete the information below:
+
+  Complete the information below:
 
   1. Execute on Server: Select a Linux x64 server to deploy the Blueprint on.
   2. Admin password. This is the password you will use to login to the Rundeck instance.
   3. SMTP Relay. Rundeck notification emails will be forwarded to your relay.
 
-
 4. **Review and Confirm the Blueprint**
+
   1. Click “next: step 2”
   2. Verify your configuration details.
 
 5. **Deploy the Blueprint**
+
   1. Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
   2. This will kick off the blueprint deploy process and load a page to allow you to track the progress of the deployment.
 
 6. **Monitor the Activity Queue**
+
   * Monitor the Deployment Queue to view the progress of the blueprint.
   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
   * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
@@ -76,7 +81,7 @@ Complete the information below:
 After your Blueprint deploys successfully, please follow these instructions to access your server:
 
   1. Check email to obtain Server Name and IP Address Login information
-  2. The RUNDECK PRO server URL will be http://{YOUR_IP}:4440/rundeckpro
+  2. The RUNDECK PRO server URL will be https://{YOUR_IP}/rundeckpro
   3. Log in to the server as 'admin' using the Password you set earlier.
   4. Create your first project 
 

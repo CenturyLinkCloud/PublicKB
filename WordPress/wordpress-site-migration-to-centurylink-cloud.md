@@ -1,5 +1,5 @@
 {{{
-  "title": "WordPress Site Migration to CenturyLink Cloud",
+  "title": "WordPress Site Migration to CenturyLink WordPress Hosting",
   "date": "07-17-2015",
   "author": "Bill Burge",
   "attachments": [],
@@ -7,7 +7,7 @@
 }}}
 ### IMPORTANT NOTE
 
-CenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
+CenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
 
 During the Limited Beta there is no production Service Level Agreement.
 
@@ -27,7 +27,7 @@ There is currently no automated method for migrating an existing WordPress site 
 
 1.	An existing WordPress site
 2.	The prefix of your WordPress database tables on your existing WordPress site
-3.	A CenturyLink WordPress site
+3.	A WordPress site on CenturyLink WordPress hosting platform
 4.	The prefix of your CenturyLink WordPress database tables
 5. A CenturyLink Object Storage bucket including the access key id and secret access key
 
@@ -78,7 +78,7 @@ There is currently no automated method for migrating an existing WordPress site 
 
 3. Sync your Git repository (this will force a restart of your CenturyLink WordPress Site)
 
-## CenturyLink WordPress Site
+## CenturyLink WordPress Hosting
 
 1. Login to your WordPress site and activate All-in-One WP Migration
 
