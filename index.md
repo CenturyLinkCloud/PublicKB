@@ -15,7 +15,7 @@
     "Managed Services",
     "Network",
     "Object Storage",
-    "Orchestarte",
+    "Orchestrate",
     "Partners",
     "Release Notes",
     "Security",
