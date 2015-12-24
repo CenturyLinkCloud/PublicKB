@@ -12,7 +12,7 @@
 
 * [Introduction](#introduction)
 * [Prerequisites](#prerequisites)
-* [Tools of the trade](#toodl-of-the-trade)
+* [Tools of the trade](#tools-of-the-trade)
 * [Generate Diffie-Hellman key](#generate-diffie-hellman-key)
 * [SSL Parameters Change](#ssl-parameters-change)
 * [Enable Ciphers](#enable-ciphers )
