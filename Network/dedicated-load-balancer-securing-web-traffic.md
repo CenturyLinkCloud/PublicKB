@@ -21,7 +21,7 @@
 
 ### Introduction
 
-The security improvement of your infrastructure is a moving target. In April of 2015 the Payment Card Industry Data Security Standard (PCI DSS) has released an unscheduled and important update to PCI DSS requirements [PCI 3.1](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-1.pdf). A quote from this documents: "SSL and early TLS are not considered strong cryptography and cannot be used as a security control after June 30, 2016.". In this article we will show how to make your web traffic more secure and configure your Dedicated Load Balancer with stronger encryption.
+The security improvement in your infrastructure is a moving target. In April of 2015 the Payment Card Industry Data Security Standard (PCI DSS) has released an unscheduled and important update to PCI DSS requirements [PCI 3.1](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-1.pdf). A quote from this documents: "SSL and early TLS are not considered strong cryptography and cannot be used as a security control after June 30, 2016.". In this article we will show how to make your web traffic more secure and configure your Dedicated Load Balancer with stronger encryption.
 
 ### Prerequisites
 
