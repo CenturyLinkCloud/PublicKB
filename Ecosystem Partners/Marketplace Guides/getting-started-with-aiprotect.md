@@ -77,7 +77,7 @@ https://aiscaler.com/wiki/getting-started-centurylink**.
 
 1. **Locate the Blueprint in the Blueprint Library**
 
- Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "aiScaler" in the keyword search on the right side of the page.
+ Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "aiProtect" in the keyword search on the right side of the page.
 
   <img src="../../images/aiscaler/blueprint_tile_aiprotect.png" style="border:0;max-width:250px;">
 
@@ -85,7 +85,7 @@ https://aiscaler.com/wiki/getting-started-centurylink**.
 
 3. **Set Required parameters.**
 
-  <img src="../../images/aiscaler/deploy_parameters_aiscaler.png" style="max-width:450px;">
+  <img src="../../images/aiscaler/deploy_parameters.png" style="max-width:450px;">
 
   * **Domain** - optionally specific the first domain
   * **Origin** - optionally specific the content origin
