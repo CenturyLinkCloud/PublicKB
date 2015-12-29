@@ -164,5 +164,5 @@ CenturyLink Cloud works with [Clusterpoint](https://www.clusterpoint.com/) to pr
 
 **Who should I contact for support?**
 
-* For issues related to deploying the Clusterpoint Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [Clusterpoint Support chat](https://www.clusterpoint.com/) or send an [e-mail](support@clusterpoint.com).
+* For issues related to deploying the Clusterpoint Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [Clusterpoint Support chat](https://www.clusterpoint.com/) or send an [e-mail](mailto:support@clusterpoint.com).
 * For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
