@@ -110,14 +110,14 @@ Once the Service Task team deploys your virtual appliance, you will get an email
 
 4. Now you can begin configuring your Halon appliance. For more information about this, see the following link: http://wiki.halon.se/Getting_started
 
-If a customer has any questions or complications, we provide free technical support. Feel free to email Halon at support@halonsecurity.com
+If a customer has any questions or complications, we provide free technical support. Feel free to email Halon at [support@halonsecurity.com](mailto:support@halonsecurity.com)
 
 
 ### Pricing
 
 The costs listed above in Steps 1 and 2 are for the infrastructure only.
 
-After deploying this Partner Template, the end-user can email Halon at sales@halonsecurity.com to start utilizing this service.
+After deploying this Partner Template, the end-user can email Halon at [sales@halonsecurity.com](mailto:sales@halonsecurity.com) to start utilizing this service.
 
 
 #### Process to request credit for Service Task fee
@@ -142,9 +142,9 @@ Follow this process to request credit on your account to re-imburse any expense 
 
 #### Where do I obtain my Halon License?
 
-Please contact sales@halonsecurity.com
+Please contact [sales@halonsecurity.com](mailto:sales@halonsecurity.com)
 
 #### Who should I contact for support?
 
-* For issues related to deploying the Halon partner template on CenturyLink Cloud, please contact support@halonsecurity.com
-* or issues related to cloud infrastructure, please open a ticket using the CenturyLink Cloud [Support Process](https://www.ctl.io/knowledge-base/support/how-do-i-report-a-support-issue/).
+* For issues related to deploying the Halon partner template on CenturyLink Cloud, please contact [support@halonsecurity.com](mailto:support@halonsecurity.com)
+* For issues related to cloud infrastructure, please open a ticket using the CenturyLink Cloud [Support Process](https://www.ctl.io/knowledge-base/support/how-do-i-report-a-support-issue/).
