@@ -104,14 +104,13 @@ Once the Service Task team deploys your virtual appliance, you will get an email
   * single port TCP 25 (For SMTP traffic)
   * (optional) SSH/SFTP (22) for management over SSH
 
-2. Connect to the public IP over HTTPS using your web browser.
+2. Connect to the public IP over HTTPS using your web browser
 
 3. You will now be presented with a login screen, use the default admin/admin credentials to login
 
-4. Now you can begin configuring your Halon appliance. For more information about this, see the following link: http://wiki.halon.se/Getting_started
-   For more information please visit our wiki page.  If a customer has any questions or complications, we provide free technical support.  Feel free to
-   email Halon at support@halonsecurity.com
+4. Now you can begin configuring your Halon appliance. For more information about this, see the following link: http://wiki.halon.se/Getting_started
 
+If a customer has any questions or complications, we provide free technical support. Feel free to email Halon at support@halonsecurity.com
 
 
 ### Pricing
