@@ -1,6 +1,6 @@
 {{{
   "title": "Managed Backup - Frequently Asked Questions",
-  "date": "7-8-2015",
+  "date": "8-4-2015",
   "author": "Bryan Friedman",
   "attachments": [
     {
@@ -35,7 +35,7 @@ A: There could be a few causes:
 
 **Q: What's the difference between Managed Backup and Premium Storage?**
 
-A: Both options provide a two-week retention period and offsite backups. But Managed Backup also offers the ability for customers to work with the managed backup support team to customize retention policies and backup schedules. There are options for including – or excluding - specific files/folders from a backup policy. Premium Storage simply provides nightly VM backups, making it difficult to restore selected files or folders, while Managed Backup performs full and incremental backups on a nightly basis and can be turned on and off as needed. Managed Backup also encrypts the backup data at rest.
+A: Both options provide a two-week retention period and offsite backups. But Managed Backup also offers the ability for customers to work with the managed backup support team to customize retention policies and backup schedules. There are options for including – or excluding - specific files/folders from a backup policy. Premium Storage simply provides nightly VM backups, making it difficult to restore selected files or folders, while Managed Backup performs full and incremental backups on a nightly basis and can be turned on and off as needed. Managed Backup also encrypts the backup data at rest. Encryption is provided on the backup infrastructure servers after a backup has been performed; the encryption key in only avalible to our operations staff and the backup systems.
 
 Users are likely best served by choosing *either* Managed Backup *or* Premium Storage. For Hyperscale servers, Managed Backup is recommended.
 
@@ -79,7 +79,7 @@ The CenturyLink Technology Solutions Client Service Center is also available to 
 
 **Q: What if I want my backups to be kept for longer than two weeks?**
 
-A:  If you would like to change the default two-week retention schedule for your backups, you may contact the CenturyLink Technology Solutions Client Service Center at 1-888-638-6771 and enter a request to customize the retention period for a particular server or set of servers. A few different retention periods are available to choose from.
+A:  At this time 2 weeks is the only retention period available.  Our [upcoming simple backup service](../Support/backup-service-changes-faq.md) will provide options for customer defined retention periods.
 
 **Q: What should I do if I need a restore?**
 
@@ -103,7 +103,7 @@ A: The Master server in the DPB infrastructure is already configured to support 
 
 **Q: As a customer can I request on-demand backups out of the normal scheduled jobs?**
 
-A: This is possible via a request to Support.  The backup will have the standard product feature of 2 weeks retention at the local data center and a simultaneous copy at the secondary data center.
+A: This is possible through a request to the Client Service Center at 1-888-638-6771.  The backup will have the standard product feature of 2 weeks retention at the local data center and a simultaneous copy at the secondary data center.
 
 **Q: Is hot backup offered in Managed Backup for (a) databases and for (b) Exchange? What options/suggestions are available?**
 
@@ -123,3 +123,5 @@ US West (Santa Clara) - UC1|[CenturyLink CH3](//www.centurylink.com/business/ent
 US East (Sterling) - VA1|[CenturyLink DL2](//www.centurylink.com/business/enterprise/colocation/data-centers/united-states/texas/dallas.html)
 Great Britain (Slough) - GB3|[CenturyLink LO6](//www.centurylink.com/business/enterprise/colocation/data-centers/united-kingdom/london.html)
 APAC (Singapore) - SG1|[CenturyLink SG8](//www.centurylink.com/business/enterprise/colocation/data-centers/singapore.html)
+US Central (Chicago) - IL1|[CenturyLink DL2](//www.centurylink.com/business/enterprise/colocation/data-centers/united-states/texas/dallas.html)
+Canada (Toronto - Mississauga) - CA3|[CenturyLink TR3](//www.centurylink.com/business/enterprise/resources/products/tr3-toronto-canada.html)

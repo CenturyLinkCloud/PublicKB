@@ -32,7 +32,7 @@ DataStax, the leading distributed database management system, delivers Apache Ca
 
 http://www.datastax.com/
 
-####Customer Support
+#### Customer Support
 
 [DataStax Blueprint Support](https://academy.datastax.com/demos/getting-started-datastax-enterprise-centurylink-cloud)
 
@@ -40,7 +40,7 @@ http://www.datastax.com/
 
 24x7 Email - support@datastax.com
 
-###Audience
+### Audience
 
 CenturyLink Cloud Users
 

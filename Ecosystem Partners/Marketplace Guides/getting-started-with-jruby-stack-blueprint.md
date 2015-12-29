@@ -12,7 +12,7 @@
 JRuby is a 100% Java implementation of the Ruby programming language. It is Ruby for the JVM. JRuby provides a complete set of core "builtin" classes and syntax for the Ruby language, as well as most of the Ruby Standard Libraries. Rails is a full-stack MVC framework for database-backed web applications that is optimized for programmer happiness and sustainable productivity. The Bitnami JRuby stack includes JRuby, Rails, Warbler gem, Tomcat, Subversion, SQLite and MySQL.
 
 ### Description
-Through the CenturyLink Blueprint integration, Bitnami JRuby Stack Stack provides a click-through solution to install and configure JRuby Stack on the Linux platform.
+Through the CenturyLink Blueprint integration, JRuby Stack provides a click-through solution to install and configure JRuby Stack on the Linux platform.
 
 For more information, please visit [http://jruby.org/](http://jruby.org/)
 

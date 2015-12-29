@@ -7,13 +7,13 @@
 }}}
 
 ![Alert Logic Logo](http://www.ingaa.org/File.aspx?id=21717)
-###Partner Profile
+### Partner Profile
 Alert Logic, the leader in security and compliance solutions for the cloud, provides Security-as-a-Service for on-premises, cloud, and hybrid infrastructures, delivering deep security insight and continuous protection for customers at a lower cost than traditional security solutions. Fully managed by a team of experts, the Alert Logic Security-as-a-Service solution provides network, system and web application protection immediately, wherever your IT infrastructure resides. Alert Logic partners with the leading cloud platforms and hosting providers to protect over 3,000 organizations worldwide. Built for cloud scale, our patented platform stores petabytes of data, analyses over 450 million events and identifies over 60,000 security incidents each month, which are managed by our 24x7 Security Operations Center. Alert Logic, founded in 2002, is headquartered in Houston, Texas, with offices in Seattle, Cardiff and London.
 
 http://www.AlertLogic.com
 
 #### Contact AlertLogic
-#####Alert Logic Sales and Support:
+##### Alert Logic Sales and Support:
 - Email Support - support@alertlogic.com
 - Telephone Support - +1.877.484.8383
 - Sales and Marketing - support@alertlogic.com
@@ -59,10 +59,10 @@ Alert Logic has provided a Virtual Appliance - called a Partner Template - that 
 ### Detailed Steps to Deploy Alert Logic Web Security Manager Partner Template
 Follow these step by step instructions to deploy a Alert Logic Web Security Manager in to your CenturyLink Cloud account:
 
-- Open a service task request ticket via email to ServiceTasks@Tier3.com with the following details.  You will need to edit some of the information below.
+- Open a service task request ticket via email to ServiceTasks@ctl.io with the following details.  You will need to edit some of the information below.
 
 ----
-TO: ServiceTasks@Tier3.com
+TO: ServiceTasks@ctl.io
 
 EMAIL SUBJECT:   Custom Image Import Request for Ecosystem Partner Template
 

@@ -8,7 +8,7 @@
 
 ![logo](../../images/Ecosystem-Cavirin-ARAP_logo_full-color_200px.png)
 
-###Partner Profile
+### Partner Profile
 Cavirin - Delivering Continuous Audit and Operational Compliance to the Cloud
 
 For additional information about the company please visit [http://www.cavirin.com](http://www.cavirin.com)
@@ -46,7 +46,7 @@ Customers can access the Cavirin Help Center by going to [https://support.caviri
 
 This deployment process for Partner Templates currently requires manual interaction via the Service Task process, but will be further automated in future releases of the CenturyLink Cloud Platform.
 
-If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@centurylinkcloud.com](mailto:features@centurylinkcloud.com)
+If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@ctl.io](mailto:features@ctl.io)
 
 ### Prerequisite
 1.  Access to the CenturyLink Cloud platform as an authorized user.
@@ -77,10 +77,10 @@ If you are interested in seeing this type of Partner Template deployment as an a
 ### Detailed Steps to Deploy Cavirin Automated Risk Anaylysis Platform
 The Cavirin partner template deploys in a virtual appliance model, as a CenturyLink Cloud *Partner Template*.  Follow these step by step instructions to deploy a Cavirin partner template in to your CenturyLink Cloud account:
 
-* Open a service task request ticket via email to [ServiceTasks@Tier3.com](mailto:ServiceTasks@Tier3.com) with the following details.  `You will need to edit some of the information below and attach your Cavirin license to the email!`
+* Open a service task request ticket via email to [ServiceTasks@Tctl.io](mailto:ServiceTasks@ctl.io) with the following details.  `You will need to edit some of the information below and attach your Cavirin license to the email!`
 
 ----
-TO: ServiceTasks@Tier3.com
+TO: ServiceTasks@ctl.io
 
 EMAIL SUBJECT:   Ecosystem Partner Template Import Request
 

@@ -1,28 +1,26 @@
 {{{
-  "title": "Unactionable Issues Reported",
-  "date": "11-12-2014",
-  "author": "Gavin McMurdo",
-  "attachments": [],
-  "contentIsHTML": true
+"title": "Unactionable Issues Reported",
+"date": "11-12-2014",
+"author": "Gavin McMurdo",
+"attachments": [],
+"contentIsHTML": false
 }}}
 
-<h3>Description (goal/purpose)</h3>
-<p>This KB contains some of the more humorous / unactionable issues that have been reported to the support organization. These are good examples of what not to put into a support ticket.</p>
-<h3>Audience</h3>
-<ul>
-  <li>All</li>
-</ul>
-<h3>Pre-Requisites</h3>
-<ul>
-  <li>Sense of humor</li>
-</ul>
-<h3>Detailed Steps</h3>
-<ol>
-  <li>Help, my boss cannot get his email</li>
-  <li>My server is down.</li>
-  <li>We are experiencing that our sites are down</li>
-  <li>This is unacceptable, you cannot do maintenance. </li>
-</ol>
-<div>
-  <br />
-</div>
+### Description (goal/purpose)
+
+This KB contains some of the more humorous / unactionable issues that have been reported to the support organization. These are good examples of what not to put into a support ticket.
+
+### Audience
+
+* All
+
+### Pre-Requisites
+
+* Sense of humor
+
+### Detailed Steps
+
+* Help, my boss cannot get his email
+* My server is down.
+* We are experiencing that our sites are down
+* This is unacceptable, you cannot do maintenance.

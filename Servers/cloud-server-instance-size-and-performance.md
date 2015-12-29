@@ -1,6 +1,6 @@
 {{{
   "title": "Cloud Virtual Server Instance Size and Performance",
-  "date": "7-8-2015",
+  "date": "8-13-2015",
   "author": "Richard Seroter",
   "attachments": [],
   "contentIsHTML": false,
@@ -17,7 +17,7 @@ The CenturyLink Cloud Platform does not offer predefined virtual "instance types
     * up to 4 disks of 1 TB apiece
     * up to 15 disks, not exceeding 4 TB
 
-The max configuration for a given Standard virtual machine is 16 vCPU, 128 GB of memory and 4 TB of storage. Refer to [Operating System Root Drive Size](operating-system-root-drive-size.md) for OS Drive Sizes.
+The max configuration for a given Standard virtual machine is 16 vCPU, 128 GB of memory and 4 TB of storage. Refer to [Operating System Root Drive Size](../Servers/operating-system-root-drive-size.md) for OS Drive Sizes.
 
 ### Maximum Resources (Hyperscale)
 
@@ -27,12 +27,13 @@ The max configuration for a given Standard virtual machine is 16 vCPU, 128 GB of
     * single disk up to 1 TB
     * up to 15 disks, not exceeding 1 TB
 
-The max configuration for a given Hyperscale virtual machine is 16 vCPU, 128 GB of memory and 1 TB of storage. Refer to [Operating System Root Drive Size](operating-system-root-drive-size.md) for OS Drive Sizes.
+The max configuration for a given Hyperscale virtual machine is 16 vCPU, 128 GB of memory and 1 TB of storage. Refer to [Operating System Root Drive Size](../Servers/operating-system-root-drive-size.md) for OS Drive Sizes.
 
 ### Maximum Throughput
 
-Virtual Machine vNIC			  | 10 Gbps
+Feature|Performance
 ----------------------------|-----------------
+Virtual Machine vNIC        | up to 10 Gbps<sup>1</sup>
 Firewall (between VLANs)  	| up to 6 Gbps
 Firewall (external) 		  	| up to 2 Gbps
 Load Balancer						   	| 100 Mbps to 400 Mbps (based on unit size purchased)<br>SSL Offload: up to 750 new SSL requests/second
@@ -40,6 +41,8 @@ VPN (client)							  | up to 20 Mbps<br>19 max concurrent connections (higher vo
 VPN (IPSEC)                 | up to 1 Gbps
 Standard VM-based Storage   | 5ms latency<br>Minimum IOPS (2500), Maximum IOPS (20,000) with 4KB block size
 Hyperscale VM-based Storage | Minimum of 15,000 IOPS
+
+<sup>1</sup>All Virtual Servers using our OS Templates are deployed with 10 Gbps vNICs
 
 ### How Compute Resources are Allocated
 

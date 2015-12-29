@@ -10,7 +10,7 @@
 
 ### Description
 
-<img alt="Live Helper Chat Logo" src="/knowledge-base/images/bitnami_logos/livehelperchat-stack-110x117-fe3c24579af9fabe4452d023c13278a7.png" style="border:0;float:right;max-width:250px">
+<img alt="Live Helper Chat Logo" src="../../images/bitnami_logos/livehelperchat-stack-110x117-fe3c24579af9fabe4452d023c13278a7.png" style="border:0;float:right;max-width:250px">
    
 After reading this article, the reader should feel comfortable deploying the Live Helper Chat stack (version 2.30v-1) by Bitnami.
 

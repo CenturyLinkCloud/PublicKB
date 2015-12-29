@@ -19,7 +19,7 @@
     users and buckets.</li>
 </ul>
 <h3>Using the Object Storage REST API from .NET</h3>
-<p>The CenturyLink Cloud Object Storage service is based on Riak CS Enterprise, which offers an Amazon S3-compatible web services endpoint. The endpoint has the same authentication, resources, and payloads as defined in the <a href="http://docs.aws.amazon.com/AmazonS3/latest/API/APIRest.html"
+<p>The CenturyLink Cloud Object Storage service offers an Amazon S3-compatible web services endpoint. The endpoint has the same authentication, resources, and payloads as defined in the <a href="http://docs.aws.amazon.com/AmazonS3/latest/API/APIRest.html"
  >Amazon S3 documentation</a>. The steps below show how to consume Object Storage from a custom .NET application.&nbsp;<strong>Note that the <a href="https://github.com/Tier3/Examples/tree/master/ObjectStorage/Tier3.ObjectStorageViaAPI.DotNet">source code for this sample application</a> can be downloaded from GitHub.</strong>
 </p>
 <h4>Detailed Steps</h4>
@@ -92,7 +92,7 @@ private static string adminAccessSecret = System.Configuration.ConfigurationMana
     <br />
     <pre>//set up variables used by this method
 
-string s3Url = "https://ca.tier3.io/";
+string s3Url = "https://canada.os.ctl.io/";
 
 XDocument resultDoc = new XDocument();
 
@@ -177,7 +177,7 @@ string inputbucket = Console.ReadLine();
 
 //url updated to include the resource (bucket) value
 
-s3Url = "https://ca.tier3.io/" + inputbucket;
+s3Url = "https://canada.os.ctl.io/" + inputbucket;
 
 
 
@@ -277,7 +277,7 @@ AmazonS3Config config = new AmazonS3Config()
 
 {
 
-     ServiceURL = "ca.tier3.io"
+     ServiceURL = "canada.os.ctl.io"
 
 };
 
@@ -380,7 +380,7 @@ exports.index = function(req, res){
 
     AWS.config.loadFromPath('./credentials.json');
 
-    var s3 = new AWS.S3({endpoint:'https://ca.tier3.io'});
+    var s3 = new AWS.S3({endpoint:'https://canada.os.ctl.io'});
 
 
 

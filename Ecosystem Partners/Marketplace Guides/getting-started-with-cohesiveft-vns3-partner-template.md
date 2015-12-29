@@ -8,7 +8,7 @@
 
 ![Cohesive Networks logo](https://cohesive.net/wp-content/uploads/2015/01/cohesive-networks-logo.gif)
 
-###Partner Profile
+### Partner Profile
 Cohesive Networks is a cloud-native network and security company. Over 1,000 customer use our VNS3 network routing and security products to connect, integrate and secure their critical applications in any cloud. VNS3 is a family of award-winning software-only appliances available in public, private and hybrid clouds.
 
 Cohesive is a member of the Open Data Center Alliance (ODCA), a member of the Amazon Partner Network, an Amazon Marketplace Seller, Microsoft Azure certified, a Google Cloud Platform Authorized Technology Partner, certified HP Helion Ready, an IBM Business Partner and member of the CenturyLink Cloud Marketplace Program.
@@ -16,7 +16,7 @@ Cohesive is a member of the Open Data Center Alliance (ODCA), a member of the Am
 https://www.cohesive.net
 
 #### Contact Cohesive Networks
-#####Cohesive Networks Sales and Support:
+##### Cohesive Networks Sales and Support:
 - Sales and licensing - sales@cohesive.net
 - Email Support - support@cohesive.net
 - Web Support - http://support.cohesive.net
@@ -64,10 +64,10 @@ After executing the steps in this Getting Started document, the users will have 
 ### Detailed Steps to Deploy Cohesive Networks VNS3 Partner Template
 Follow these step by step instructions to deploy a VNS3 virtual appliance in to your CenturyLink Cloud account:
 
-- Open a service task request ticket via email to ServiceTasks@Tier3.com with the following details.  You will need to edit some of the information below.
+- Open a service task request ticket via email to ServiceTasks@ctl.io with the following details.  You will need to edit some of the information below.
 
 ----
-TO: ServiceTasks@Tier3.com
+TO: ServiceTasks@ctl.io
 
 EMAIL SUBJECT:   Custom Image Import Request for Ecosystem Partner Template
 

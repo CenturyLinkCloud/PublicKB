@@ -28,15 +28,20 @@ Introduction
 ------------
 
 WordPress is infinitely customizable with themes and plug-ins galore. A best practice is for WordPress developers
-to preview their changes on their local machine before uploading them to their production host. CenturyLink's
-WordPress as a Service offering makes these easy by integrating with Vagrant. Using Vagrant, a full development
+to preview their changes on their local machine before uploading them to their production host. CenturyLink WordPress hosting makes these easy by integrating with Vagrant. Using Vagrant, a full development
 environment can be created in minutes with the whole LEMP (Linux, nginx, MySQL, PHP) stack running inside a virtual
 machine.
 
 Creating the Local Development Environment
 ------------------------------------------
 
-After the WordPress site's git repository has been cloned, change into its directory and run:
+After the WordPress site's git repository has been cloned, change into its directory.
+
+Optionally, the `.env.local` file may be changed to set values like WordPress keys and salts, the site name, etc.
+These parameters should be configured first if it is desired that they be customized. If these are changed after
+the first provisioning, the Vagrant box may first need to be destroyed and re-upped for changes to take effect.
+
+Next run:
 
 ```
 vagrant up
@@ -66,7 +71,7 @@ The WordPress administrative username is `wp-developer`, and the password is `pa
 MySQL
 -----
 
-You can use the MySQL command-line interface to work with your database:
+You can use the MySQL command-line interface to work with your database; the password should be `vagrant`:
 
 ```
 vagrant ssh
@@ -90,3 +95,15 @@ For more details, see the [MySQL documentation](https://dev.mysql.com/doc/refman
 ### Note
 
 Local database changes are not reflected on the live site and *vice versa*!
+
+Resetting the Local Environment
+-------------------------------
+
+The database content can be cleared and the .env.local fully reloaded by resetting the local environment. Changes
+relating to the file system, such as added plug-ins, will not be destroyed; such files will need to be
+deleted.
+
+```
+vagrant destroy
+vagrant up
+```

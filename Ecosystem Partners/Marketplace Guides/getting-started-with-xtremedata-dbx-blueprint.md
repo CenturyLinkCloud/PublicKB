@@ -14,13 +14,13 @@ After reading this article, the user should feel comfortable getting started usi
 
 ### Partner Profile
 
-<img src="/knowledge-base/images/xtremedata/xtremelog_wht.png" style="max-width:200px;border:0;float:right;">
+<img src="../../images/xtremedata/xtremelog_wht.png" style="max-width:200px;border:0;float:right;">
 
 XtremeData – “On-Demand Big Data Analytics with real-time ingest."
 
 http://www.xtremedata.com/
 
-#####Customer Support
+##### Customer Support
 
 |Sales Contact      |
 |:- |
@@ -54,7 +54,7 @@ Single button deploy of a new cluster including a master host, a standby master 
 
   Determine whether you will be building a test cluster with small nodes or a production cluster whose nodes that have increased CPU and RAM available.
 
-  <img src="/knowledge-base/images/xtremedata/dbx_blueprint_tile.png" style="margin-left:1em;border:0;max-width:250px;">
+  <img src="../../images/xtremedata/dbx_blueprint_tile.png" style="margin-left:1em;border:0;max-width:250px;">
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for `dbX Cluster` in the keyword search on the right side of the page.
 
@@ -62,7 +62,7 @@ Single button deploy of a new cluster including a master host, a standby master 
 
 3. **Set Required parameters.**
 
-  <img src="/knowledge-base/images/xtremedata/dbx_deploy_parameters.png" style="margin-left:1em;max-width:450px;">
+  <img src="../../images/xtremedata/dbx_deploy_parameters.png" style="margin-left:1em;max-width:450px;">
 
   * **Head Server** - Select the first option `DBXHD`
   * **Cluster Name** - set unique identifier for all hosts in this cluster
@@ -93,13 +93,13 @@ Single button deploy of a new cluster including a master host, a standby master 
 
   Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.  If you do not receive an email like the one shown below your cluster may have had a deployment error - review the *Blueprint Build Log* for error messages.
 
-  <img src="/knowledge-base/images/xtremedata/dbx_deploy_success_email.png" style="border:0;">
+  <img src="../../images/xtremedata/dbx_deploy_success_email.png" style="border:0;">
 
 8. **Access Web xdAdmin Console**
 
   Access the xdAdmin web console via https on port 2400.  Authenticate using your root user and associated credentials.
 
-  <img src="/knowledge-base/images/xtremedata/web_gui_screenshot.png" style="border:0;">
+  <img src="../../images/xtremedata/web_gui_screenshot.png" style="border:0;">
 
 9. **Enable public access** (optional)
 
