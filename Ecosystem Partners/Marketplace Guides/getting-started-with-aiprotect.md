@@ -1,5 +1,5 @@
 {{{
-  "title": "Getting Started with aiScaler - Blueprint",
+  "title": "Getting Started with aiProtec - Blueprint",
   "date": "12-29-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
@@ -28,23 +28,21 @@ aiScaler helps CenturyLink Cloud customers address the business challenge of�
 aiScaler has integrated their technology with the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage
 of this integration to achieve rapid time-to-value for this application delivery controller solution.
 
-#### aiScaler
 
-**aiScaler** Provides Traffic Management, Dynamic Site Acceleration, and DDoS protection in a single easily configured virtual appliance. We provide
-free installation support and ongoing access to engineers with CenturyLink expertise to help you optimize your site.
+#### aiProtect
 
-Alexa top 1000 sites, use aiScaler to scale and stabilize their environments.
+**aiProtect** automates the identification and mitigation of Denial of Service (DoS & DDOS) attacks, while providing detailed reporting necessary to end
+the attack.
 
-Our reporting tools provide over 200 real-time metrics so you know what is happening with your application, allowing you to alert on and solve issues
-before they affect your users. We support mobile redirection and re-writing, HTTPS offload, while managing your users session layer, to free up origin
-resources.
+It is a reverse proxy placed between your origin server and the web, that identifies attackers and blocks their requests, while reporting offending
+addresses so your network provider can stop the attack.
 
-**aiScaler** can reduce your Origin load by over **80%**, simplifying your implementation and saving money on your deployment. Our dynamic site caching
-increases the speed from click to content. Deploying aiScaler as multiple endpoints on different CenturyLink Cloud geographic networks removes network
-latency.
+**aiProtect** uses a unique Intelligent request throttling. It limits requesting clients to a certain number of requests per interval. For example,
+aiProtect can limit a client to 20 requests per 10 seconds. This method of throttling is different from simple RPS-limiting and is much more user
+friendly. If your typical page consists of 10-15 items, such a limit will allow users to view a complete page every 10 seconds, presenting no
+inconvenience for a human, but preventing bots from taking down your server.
 
-We support Highly Available deployment and can help you configure your CenturyLink systems to guarantee uptime. In addition we provide 2 hours of free
-deployment support. Please contact us for a free technical consult.
+aiProtect can be run non-stop without affecting the speed of your existing application.
 
 
 ### Audience
@@ -79,9 +77,9 @@ https://aiscaler.com/wiki/getting-started-centurylink**.
 
 1. **Locate the Blueprint in the Blueprint Library**
 
- Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "aiScaler" in the keyword search on the right side of the page.
+ Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "aiProtect" in the keyword search on the right side of the page.
 
-  <img src="../../images/aiscaler/blueprint_tile_aiscaler.png" style="border:0;max-width:250px;">
+  <img src="../../images/aiscaler/blueprint_tile_aiprotect.png" style="border:0;max-width:250px;">
 
 2. **Click the Deploy Blueprint button.**
 

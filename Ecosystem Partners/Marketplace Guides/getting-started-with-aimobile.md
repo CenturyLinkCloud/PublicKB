@@ -1,5 +1,5 @@
 {{{
-  "title": "Getting Started with aiScaler - Blueprint",
+  "title": "Getting Started with aiMobile - Blueprint",
   "date": "12-29-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
@@ -28,23 +28,21 @@ aiScaler helps CenturyLink Cloud customers address the business challenge of�
 aiScaler has integrated their technology with the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage
 of this integration to achieve rapid time-to-value for this application delivery controller solution.
 
-#### aiScaler
 
-**aiScaler** Provides Traffic Management, Dynamic Site Acceleration, and DDoS protection in a single easily configured virtual appliance. We provide
-free installation support and ongoing access to engineers with CenturyLink expertise to help you optimize your site.
+#### aiMobile
 
-Alexa top 1000 sites, use aiScaler to scale and stabilize their environments.
+**aiMobile** increases mobile site performance, unifies your domains across desktop and mobile platforms and automates delivering content that
+fits the capabilities of your mobile users devices.
 
-Our reporting tools provide over 200 real-time metrics so you know what is happening with your application, allowing you to alert on and solve issues
-before they affect your users. We support mobile redirection and re-writing, HTTPS offload, while managing your users session layer, to free up origin
-resources.
+**aiMobile** provides per device dynamic caching to decrease the time from click to content. We do on the fly re-write and redirection to allow
+you to transform the incoming URL’s to arrive at the right internal resource, tagged in the manner most easily digested by your development team.
 
-**aiScaler** can reduce your Origin load by over **80%**, simplifying your implementation and saving money on your deployment. Our dynamic site caching
-increases the speed from click to content. Deploying aiScaler as multiple endpoints on different CenturyLink Cloud geographic networks removes network
-latency.
+**aiMobile** can detect new mobile devices and in conjunction with UserAgent databases provide nearly 100% accurate identification of end user devices.
 
-We support Highly Available deployment and can help you configure your CenturyLink systems to guarantee uptime. In addition we provide 2 hours of free
-deployment support. Please contact us for a free technical consult.
+**aiMobile** can transform your web addresses to a unified structure across all content to users, protecting your SEO investment and making user
+sharing of your content seamless. We provide remote API management and real time statistics to allow you to build stable systems that alert you
+of issues in time to keep them from affecting users. It is easy to install and we provide 2 hours of free engineering support for test and
+development. Please contact us for a free technical consult.
 
 
 ### Audience
@@ -79,9 +77,9 @@ https://aiscaler.com/wiki/getting-started-centurylink**.
 
 1. **Locate the Blueprint in the Blueprint Library**
 
- Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "aiScaler" in the keyword search on the right side of the page.
+ Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "aiMobile" in the keyword search on the right side of the page.
 
-  <img src="../../images/aiscaler/blueprint_tile_aiscaler.png" style="border:0;max-width:250px;">
+  <img src="../../images/aiscaler/blueprint_tile_aimobile.png" style="border:0;max-width:250px;">
 
 2. **Click the Deploy Blueprint button.**
 
@@ -89,6 +87,8 @@ https://aiscaler.com/wiki/getting-started-centurylink**.
 
   <img src="../../images/aiscaler/deploy_parameters.png" style="max-width:450px;">
 
+  * **Execute on Server** - Select the name of the pre-existing server no which to deploy the software
+  * **Edition** - Select one of aiScaler, aiProtect, or aiMobile
   * **Domain** - optionally specific the first domain
   * **Origin** - optionally specific the content origin
 
