@@ -1,5 +1,5 @@
 {{{
-  "title": "Getting Started with aiProtec - Blueprint",
+  "title": "Getting Started with aiProtect - Blueprint",
   "date": "12-29-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
