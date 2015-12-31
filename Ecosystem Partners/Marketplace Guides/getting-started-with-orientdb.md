@@ -1,6 +1,6 @@
 {{{
   "title": "Installing OrientDB on CentOS 7",
-  "date": "30 December, 2015",
+  "date": "12-30-2015",
   "author": "OrientDB LTD",
   "attachments": [],
   "contentIsHTML": false

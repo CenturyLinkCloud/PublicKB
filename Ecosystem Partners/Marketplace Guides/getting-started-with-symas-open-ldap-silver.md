@@ -1,6 +1,6 @@
 {{{
   "title": "Install Symas OpenLDAP Silver",
-  "date": "12/18/2015",
+  "date": "12-18-2015",
   "author": "Matt Hardin",
   "attachments": [],
   "contentIsHTML": false

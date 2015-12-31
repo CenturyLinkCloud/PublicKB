@@ -1,6 +1,6 @@
 {{{
   "title": "Yellowfin 7.1 for CenturyLink",
-  "date": "30th December 2015",
+  "date": "12-30-2015",
   "author": "Cadell Falconer",
   "attachments": [],
   "contentIsHTML": false
