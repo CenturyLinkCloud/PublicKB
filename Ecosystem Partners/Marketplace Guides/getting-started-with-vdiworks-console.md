@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-![VDIworks logo](http://66.7.195.144/wp-content/uploads/2014/10/VDIworkls_color_logo_smallerl.png)
+![VDIworks logo](../../images/VDIworkls_color_logo_smallerl.png)
 
 ### Technology Profile
 VDP is an end to end VDI management system. It combines connection brokering, VM management, health, alerting, inventory, physical management, and remote protocols.
