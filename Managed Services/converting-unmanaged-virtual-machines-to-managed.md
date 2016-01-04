@@ -7,15 +7,26 @@
 }}}
 
 ### Overview
-[CenturyLink Cloud Managed Operating System Services](//www.ctl.io/managed-services/operating-system/) provide maintenance and management of your Windows & Red Hat cloud servers, 24x7.  For a flat hourly fee, our engineers will perform common administrative functions on your behalf. Don’t worry about applying the latest patches, updating servers with the latest anti-virus tools, or keeping servers compliant with corporate access policies - we’ll do it for you!
+[CenturyLink Cloud Managed Operating System Services](//www.ctl.io/managed-services/operating-system/) provide maintenance and management of your Windows & Red Hat cloud servers, 24x7.  For a flat hourly fee, our engineers will perform support and administrative functions on your behalf.
 
-Customers may wish to enable [Managed Operating System Services](//www.ctl.io/managed-services/operating-system/) on virtual machines already deployed in an **unmanaged** state to offload critical IT functions.  In order to facilitate this process the CenturyLink Cloud platform provides an automated [Blueprint](//www.ctl.io/blueprints/) to convert unmanaged virtual machines into a managed operating system.
+Customers may wish to enable Managed OS on virtual machines already deployed in an **unmanaged** state to offload critical IT functions.  In order to facilitate this process the CenturyLink Cloud platform provides an automated [Blueprint](//www.ctl.io/blueprints/) to convert unmanaged virtual machines into a managed operating system.
+
+Of course, you may also consider using the CenturyLink Cloud API to handle these actions programmatically. What follows is the simplest method, via the Control Portal.
+
+### Audience
+
+Users employed by companies that have agreed to terms with [CenturyLink Sales](http://www.centurylink.com/) for the CenturyLink Cloud product.
+
+### Prerequisites
+* An understanding of the standard server creation process.
+* Some idea of the benefits included with [managed servers](../Managed Services/managed-operating-system-frequently-asked-questions.md)
+
 
 ### Important Information
 * Conversion from **Managed** to **Unmanaged** Operating System Services is not currently a supported feature.
 * It is advised that customers perform the conversion during a maintenance window due to potential impact on running services.
 * It is recommended to create a snapshot of the VM before running the management process
-* Normally, a single CPI Blueprint will take between ten and thirty minutes to complete. However, this can be influenced by jobs in the  queue
+* Normally, a single CPI Blueprint will take between ten and thirty minutes to complete. However, this can be influenced by jobs in the queue
 * To preconfigure network access, prior to making an unmanaged VM Managed, please be sure at least one [new, managed server](../Managed Services/created-a-managed-server-now-what.md) has been created in the desired VLAN/Network.
 
 
@@ -76,8 +87,17 @@ GB3 - Great Britain (Slough)<p>VA1 - US East (Sterling)<p>UC1 - US West (Santa C
 
     ![queue linux conversion](../images/converting-unmanaged-virtual-machines-to-managed-10.png)
 
+
+  After creating a VM for management or after deploying the blueprint to convert an existing VM to a managed one, the VM will be 'Under Construction' while background processes are completed. You will not have access to the server during that time. Please allow up to a 60 minutes. If there are any issues beyond that time, contact us via email <a href="mailto:request@centurylink.com">request@centurylink.com</a> or by phone at the following numbers.
+
+    * In the US: 888.638.6771
+    * UK: +44.118.322.6100
+    * Singapore: +65.6305.8099.
+
+  Please do not email the CenturyLink Cloud NOC or raise the issue via chat - faster responses to inquiries will come from the email address and support numbers above. This is because Managed support is provided by a different team than Platform support.
+
 ### Validation
-Customers will receive a notification email once the virtual machine is successfully converted to Managed.
+The user will receive a notification email once the virtual machine is successfully converted to Managed.
 ```
 Your request "Managed server build VA1CCVARHEL01" has successfully completed.
 ```

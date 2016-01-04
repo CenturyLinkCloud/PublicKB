@@ -1,5 +1,5 @@
 {{{
-  "title": "Getting Started with FlexsSecure - Service",
+  "title": "Getting Started with FlexSecure - Service",
   "date": "11-30-2015",
   "author": "Bob Stolzberg",
   "attachments": [],
@@ -24,6 +24,8 @@ FlexSecure is a Context-based Security-as-a-Service API Platform. This platform 
 By adding multi-layered Authentication options that may require user interaction before granting access, organizations have the ability to add significant levels of security to protect their data from hackers, and prevent unauthorized access.
 
 Technology from FlexSecure helps CenturyLink Cloud customers address the business challenge of secure connectivity by implementing a Context-based User and Device authentication Platform.
+
+![FlexSecure InfoGraphic](../../images/ecosystem-FlexSecureInfographic-pg1.jpg)
 
 ### Solution Overview
 FlexSecure solves a unifying problem:  the need to dynamically secure access to resources and data, based on who the person is and what they are trying to access.

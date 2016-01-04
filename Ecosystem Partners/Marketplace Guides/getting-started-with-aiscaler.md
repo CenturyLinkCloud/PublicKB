@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with aiScaler - Blueprint",
-  "date": "12-1-2015",
+  "date": "12-29-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -19,7 +19,7 @@ aiScaler helps CenturyLink Cloud customers address the business challenge of�
 
 |Sales Contact   	| |
 |:-	| |
-|support@aiscaler.com<br>+1-408-744-6078, +44 20 7993 4587<br>Skype: ai.scaler   	| 2 Free hours of installation support<br>Professional services available.<br>Email, skype and phone available M-F Business hours EST.|
+|support@aiscaler.com<br>+1-408-744-6078<br>+44 20 7993 4587<br>Skype: ai.scaler   	| 2 Free hours of installation support<br>Professional services available.<br>Email, skype and phone available M-F Business hours EST.|
 
 
 
@@ -45,38 +45,6 @@ latency.
 
 We support Highly Available deployment and can help you configure your CenturyLink systems to guarantee uptime. In addition we provide 2 hours of free
 deployment support. Please contact us for a free technical consult.
-
-
-#### aiProtect
-
-**aiProtect** automates the identification and mitigation of Denial of Service (DoS & DDOS) attacks, while providing detailed reporting necessary to end
-the attack.
-
-It is a reverse proxy placed between your origin server and the web, that identifies attackers and blocks their requests, while reporting offending
-addresses so your network provider can stop the attack.
-
-**aiProtect** uses a unique Intelligent request throttling. It limits requesting clients to a certain number of requests per interval. For example,
-aiProtect can limit a client to 20 requests per 10 seconds. This method of throttling is different from simple RPS-limiting and is much more user
-friendly. If your typical page consists of 10-15 items, such a limit will allow users to view a complete page every 10 seconds, presenting no
-inconvenience for a human, but preventing bots from taking down your server.
-
-aiProtect can be run non-stop without affecting the speed of your existing application.
-
-
-#### aimobile
-
-**aiMobile** increases mobile site performance, unifies your domains across desktop and mobile platforms and automates delivering content that
-fits the capabilities of your mobile users devices.
-
-**aiMobile** provides per device dynamic caching to decrease the time from click to content. We do on the fly re-write and redirection to allow
-you to transform the incoming URL’s to arrive at the right internal resource, tagged in the manner most easily digested by your development team.
-
-**aiMobile** can detect new mobile devices and in conjunction with UserAgent databases provide nearly 100% accurate identification of end user devices.
-
-**aiMobile** can transform your web addresses to a unified structure across all content to users, protecting your SEO investment and making user
-sharing of your content seamless. We provide remote API management and real time statistics to allow you to build stable systems that alert you
-of issues in time to keep them from affecting users. It is easy to install and we provide 2 hours of free engineering support for test and
-development. Please contact us for a free technical consult.
 
 
 ### Audience
@@ -113,7 +81,7 @@ https://aiscaler.com/wiki/getting-started-centurylink**.
 
  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "aiScaler" in the keyword search on the right side of the page.
 
-  <img src="../../images/aiscaler/blueprint_tile.png" style="border:0;max-width:250px;">
+  <img src="../../images/aiscaler/blueprint_tile_aiscaler.png" style="border:0;max-width:250px;">
 
 2. **Click the Deploy Blueprint button.**
 
@@ -121,8 +89,6 @@ https://aiscaler.com/wiki/getting-started-centurylink**.
 
   <img src="../../images/aiscaler/deploy_parameters.png" style="max-width:450px;">
 
-  * **Execute on Server** - Select the name of the pre-existing server no which to deploy the software
-  * **Edition** - Select one of aiScaler, aiProtect, or aiMobile
   * **Domain** - optionally specific the first domain
   * **Origin** - optionally specific the content origin
 
