@@ -8,7 +8,7 @@
 
 ## Description
 
-CenturyLink Cloud customers pay foreign transaction fees when credit cards are used for international transactions. When activating cloud services, you are able to set your payment currency preference to see your estimated bills and pay your invoices in your preferred currency.
+CenturyLink Cloud customers pay foreign transaction fees when credit cards are used for international transactions.  Corporate invoiced customers can specify their currency preference based on their business address and pay invoices in their preferred currency.
 
 ### The following currencies are available:
 
