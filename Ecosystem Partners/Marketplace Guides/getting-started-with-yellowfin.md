@@ -38,7 +38,7 @@ To access your application from a computer outside the CenturyLink Cloud network
 
 ### Deploying the Yellowfin 7.1 Template
 
-### Howe to Deploy the Partner Image
+### How to Deploy the Partner Image
   1. Create an email to ServiceTasks@ctl.io
   2. Copy and paste the information below into the body of the email
 	3. Edit the information as needed and send
