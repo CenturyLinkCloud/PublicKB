@@ -10,7 +10,7 @@
 
 All Key/Value items in Orchestrate have a version history, a list of all the changes to the item over time.
 
-[Data in Orchestrate is immutable](/developers/blog/post/immutability) and the majority of operations are non-destructive. When updating a Key/Value item, Orchestrate creates a new version (instead of overwriting the original), and adds it to the version history.
+[Data in Orchestrate is immutable](//www.ctl.io/developers/blog/post/immutability) and the majority of operations are non-destructive. When updating a Key/Value item, Orchestrate creates a new version (instead of overwriting the original), and adds it to the version history.
 
 This non-destructive behavior enables you to track changes, retrieve previous values of a Key/Value item, restore deleted values, or manage state when multiple actors are changing values in parallel.
 
@@ -132,7 +132,7 @@ GET https://api.orchestrate.io/v0/$collection/$key/refs/?values=true
 }
 ```
 
-> See the [Refs](/docs/apiref#refs) in the [API Reference](/docs/apiref) for language specific usage and further information.
+> See the [Refs](//orchestrate.io/docs/apiref#refs) in the [API Reference](//orchestrate.io/docs/apiref) for language specific usage and further information.
 
 ### Dangling Refs
 

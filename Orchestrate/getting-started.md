@@ -10,7 +10,7 @@
 
 Orchestrate unifies multiple databases through a simple REST API. It runs as a service and supports queries like full-text search, time series events, graph relations, geographic queries, and key/value.
 
-This articles gives a quick overview of terminology and initial steps required to use Orchestrate. Optionally you can take the [dashboard walk-through](./walkthrough) or skip straight to the [full Orchestrate documentation](https://orchestrate.io/docs).
+This articles gives a quick overview of terminology and initial steps required to use Orchestrate. Optionally you can take the [dashboard walk-through](./walkthrough.md) or skip straight to the [full Orchestrate documentation](https://orchestrate.io/docs).
 
 ### Create your account
 It's easy to create an account with Orchestrate. Just visit the [Orchestrate Dashboard](https://dashboard.orchestrate.io/users/register).

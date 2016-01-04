@@ -18,7 +18,7 @@ All of our import tools are open-source on [GitHub](https://github.com/orchestra
 
 ### Use the Orchestrate Bulk API
 
-The [Orchestrate Bulk API](https://orchestrate.io/docs/apiref#bulk) provides endpoints for POSTing multiple records (any combination of items, events, and relationships) within the body of a single HTTP request. This can be a convenient way of reloading data from an [Orchestrate Export](./data-export), since bulk operation objects use a compatible data-model as export files.
+The [Orchestrate Bulk API](https://orchestrate.io/docs/apiref#bulk) provides endpoints for POSTing multiple records (any combination of items, events, and relationships) within the body of a single HTTP request. This can be a convenient way of reloading data from an [Orchestrate Export](./data-export.md), since bulk operation objects use a compatible data-model as export files.
 
 ### Import from SQL Databases
 
