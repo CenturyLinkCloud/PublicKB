@@ -70,8 +70,8 @@ Your account alias and PIN are available from your account info page and your us
 
 ### Access your Yellowfin 7.1 server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
-  1. [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
-  2. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
+  1. [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
+  2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
     * The default ports to access the application are: 80, 443
   3. Visit your Public IP address in a web browser.
   4. Click the "Register to Receive your login details" link and follow the prompts.
