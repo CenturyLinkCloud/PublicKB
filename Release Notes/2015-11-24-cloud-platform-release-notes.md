@@ -17,10 +17,8 @@
   * __In-datacenter replication.__ Coming November 30th, customers can enjoy a more highly available solution by choosing to replicate their database instance within datacenter with logic that ensures the primary and replica instances do not share the same host or storage infrastructure.
   ![In DC Replication](../images/2015-11-24_releasenotes2.png)
   
-  * __New UI.__ Starting November 30th, customers will notice a change in the look, feel, and functionality of the MySQL DBaaS user interface. The UI will be more consistent with the CenturyLink Cloud Control Portal. __Relational DB__ will now be a menu option within the green navigation bar, and Database Instances can be created and monitored in a single window.
-  ![Navigation](../images/2015-11-24_releasenotes1.png)
+  * __New UI.__ Starting November 30th, customers will notice a change in the look, feel, and functionality of the MySQL DBaaS user interface. The UI will be more consistent with the CenturyLink Cloud Control Portal.
   ![DB Instances](../images/2015-11-24_releasenotes3.png)
-  * __Inclusion in the Service Catalog__ Relational DB can now also be turned on and off as a feature flag via our [Service Catalog](https://www.ctl.io/knowledge-base/general/getting-started-with-the-service-catalog/). 
 
 
 ### Enhancements (3)
