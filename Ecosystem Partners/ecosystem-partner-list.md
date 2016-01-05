@@ -16,6 +16,8 @@ Quickly deploy and successfully use software and technology from any of our cert
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [A10 vThunder](../Ecosystem Partners/Marketplace Guides/getting-started-with-a10-vthunder-partner-template.md)   	| Template    | Application service gateway    |
+| [aiMobile](../Ecosystem Partners/Marketplace Guides/getting-started-with-aimobile.md)   	| Blueprint    | Application delivery controller    |
+| [aiProtect](../Ecosystem Partners/Marketplace Guides/getting-started-with-aiprotect.md)   	| Blueprint    | Application delivery controller    |
 | [aiScaler](../Ecosystem Partners/Marketplace Guides/getting-started-with-aiscaler.md)   	| Blueprint    | Application delivery controller    |
 | [Appcito CAFE](../Ecosystem Partners/Marketplace Guides/getting-started-with-appcito-cafe.md)   	| Blueprint    | Application delivery controller    |
 | [Cohesive Networks VNS3](../Ecosystem Partners/Marketplace Guides/getting-started-with-cohesiveft-vns3-partner-template.md)   	| Template    | Network security appliance    |
@@ -92,6 +94,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [CloudEra](../Managed Services/getting-started-with-cloudera-on-centurylink-cloud.md)   	| Blueprint (Managed)   | Industry-leading Hadoop implementation    |
+| [Clusterpoint](../Ecosystem Partners/Marketplace Guides/getting-started-with-clusterpoint-blueprint.md)   	| Blueprint    | Scale out Database    |
 | [ClustrixDB](../Ecosystem Partners/Marketplace Guides/getting-started-with-clustrixDB-on-centof6.md)   	| Blueprint    | Scale out Database    |
 | [Coffing Data Warehouseing](../Ecosystem Partners/Marketplace Guides/getting-started-with-coffing-data-warehousing-nexus-chameleon-blueprint.md) 	| Blueprint  | Data Warehouse  |
 | [DataStax Cassandra](../Ecosystem Partners/Marketplace Guides/getting-started-with-datastax-blueprint.md)   	| Blueprint    | Distributed NoSQL database    |
@@ -120,7 +123,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
 | [Datto](../Ecosystem Partners/Marketplace Guides/getting-started-with-datto-alto-blueprint.md)   	| Blueprint    | Alto Backup Appliance   |
-| [SoftNAS](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md)   	| Template    | NAS and Cloud Storage Gateway   |
+| [SoftNAS](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-appliance.md)   	| Blueprint    | NAS and Cloud Storage Gateway   |
 | [CloudBerry Lab Backup Enterprise](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudberry-lab-backup-enterprise-blueprint.md)   	| Blueprint    | Backup Software   |
 | [CloudFuze](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudfuze-blueprint.md)   	| Blueprint    | Cloud Storage Management   |
 
