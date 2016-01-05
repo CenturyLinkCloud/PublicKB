@@ -55,7 +55,7 @@ To create the LBaaS framework and to get a VIP assigned, use the Create LBaaS fu
 | Name | Type | Description | Req. |
 | --- | --- | --- | --- |
 | AccountAlias | string | Short code for a particular account | Yes |
-| DataCenter | string | Short string representing the data center where the load balancer is. Valid codes can be retrieved from the [Get Data Center List](../Data Centers/get-data-center.md) API operation. | Yes |
+| DataCenter | string | Short string representing the data center where the load balancer is. Valid codes can be retrieved from the [Get Data Center List](http://www.ctl.io/api-docs/v2#data-centers-get-data-center-list) API operation. | Yes |
 
 #### Example
 
@@ -87,7 +87,7 @@ To create the LBaaS framework and to get a VIP assigned, use the Create LBaaS fu
 | Name | Type | Description |
 | --- | --- | --- |
 | id | string | ID of the LBaaS load balancer create request |
-| status | string | Initially the response will show a status for the request of "ACTIVE".  A status of "COMPLETE" will show in the Response of a [GET LBaaS group](../Load Balancer as a Service/get-lbaas-group.md) function when the Group has been created with the new configuration. |
+| status | string | Initially the response will show a status for the request of "ACTIVE".  A status of "COMPLETE" will show in the Response of a function when the Group has been created with the new configuration. |
 | description | string | Describes the activity running within the LBaaS Group create process |
 | requestDate | string | Date-time stamp of the request |
 | completionDate | string | Date-time stamp of LBaaS Group creation.  Null value returned until process has completed |
@@ -104,7 +104,7 @@ To check on the status of the request, use the same URL used to create the load 
 | Name | Type | Description | Req. |
 | --- | --- | --- | --- |
 | AccountAlias | string | Short code for a particular account | Yes |
-| DataCenter | string | Short string representing the data center where the load balancer is. Valid codes can be retrieved from the [Get Data Center List](../Data Centers/get-data-center.md) API operation. | Yes |
+| DataCenter | string | Short string representing the data center where the load balancer is. Valid codes can be retrieved from the [Get Data Center List](http://www.ctl.io/api-docs/v2#data-centers-get-data-center-list) API operation. | Yes |
 | id | string | The id of the request the user is interested in.  This id was provided in the response to the Create LBaaS Group API call. | Yes |
 
 #### Example
@@ -130,7 +130,7 @@ To check on the status of the request, use the same URL used to create the load 
 | Name | Type | Description |
 | --- | --- | --- |
 | id | string | ID of the LBaaS group create request |
-| status | string | Initially the response will show a status for the request of "ACTIVE".  A status of "COMPLETE" will show in the Response of a [GET LBaaS group](../Load Balancer as a Service/get-lbaas-group.md) function when the Group has been created with the new configuration. |
+| status | string | Initially the response will show a status for the request of "ACTIVE".  A status of "COMPLETE" will show in the Response of a GET LBaaS group function when the Group has been created with the new configuration. |
 | description | string | Describes the activity running within the LBaaS Group create process |
 | requestDate | string | Date-time stamp of the request |
 | completionDate | string | Date-time stamp of LBaaS Group creation.  Null value returned until process has completed |
@@ -146,7 +146,7 @@ To see the status and details of a single LBaaS, use the GET function with the s
 | Name | Type | Description | Req. |
 | --- | --- | --- | --- |
 | accountAlias | string | Short code for a particular account | Yes |
-| DataCenter | string | Short string representing the data center where the load balancer is. Valid codes can be retrieved from the [Get Data Center List](../Data Centers/get-data-center.md) API operation. | Yes |
+| DataCenter | string | Short string representing the data center where the load balancer is. Valid codes can be retrieved from the [Get Data Center List](http://www.ctl.io/api-docs/v2#data-centers-get-data-center-list) API operation. | Yes |
 | loadBalancerId | string | The id of the Load Balancer for which details are to be returned | Yes |      
 
 #### Example
@@ -188,7 +188,7 @@ To see the status and details of a single LBaaS, use the GET function with the s
 | (pools) healthCheck | string | Health check configuration for the backend node pool members |
 | status | string | Status of the LBaaS Load Balancer - "READY", "DELETED", "UNDER_CONSTRUCTION", "UPDATING_CONFIGURATION", "FAILED" |
 | accountAlias | string | Short code for a particular account |
-| dataCenter | string | Short string representing the data center where the load balancer is. Valid codes can be retrieved from the [Get Data Center List](../Data Centers/get-data-center.md) API operation. |
+| dataCenter | string | Short string representing the data center where the load balancer is. Valid codes can be retrieved from the [Get Data Center List](http://www.ctl.io/api-docs/v2#data-centers-get-data-center-list) API operation. |
 
 
 ### View Details for All LBaaS (within a given account alias)
@@ -274,7 +274,7 @@ To see the status and details of all LBaaS instances for a given account, use th
 | (pools) healthCheck | string | Health check configuration for the backend node pool members |
 | status | string | Status of the LBaaS Load Balancer - "READY", "DELETED", "UNDER_CONSTRUCTION", "UPDATING_CONFIGURATION", "FAILED" |
 | accountAlias | string | Short code for a particular account |
-| dataCenter | string | Short string representing the data center where the load balancer is. Valid codes can be retrieved from the [Get Data Center List](../Data Centers/get-data-center.md) API operation. |
+| dataCenter | string | Short string representing the data center where the load balancer is. Valid codes can be retrieved from the [Get Data Center List](http://www.ctl.io/api-docs/v2#data-centers-get-data-center-list) API operation. |
 
 ### Create pool
 Append the URL with the Group ID that was provided in the Create Group POST response followed by </pools>.
@@ -285,7 +285,7 @@ Append the URL with the Group ID that was provided in the Create Group POST resp
 | Name | Type | Description | Req. |
 | --- | --- | --- | --- |
 | AccountAlias | string | Short code for a particular account | Yes |
-| DataCenter | string | Short string representing the data center where the load balancer is. Valid codes can be retrieved from the [Get Data Center List](../Data Centers/get-data-center.md) API operation. | Yes |
+| DataCenter | string | Short string representing the data center where the load balancer is. Valid codes can be retrieved from the [Get Data Center List](http://www.ctl.io/api-docs/v2#data-centers-get-data-center-list) API operation. | Yes |
 | loadBalancerId | string | The id of the Load Balancer for which details are to be returned | Yes |  
 
 #### Example:
@@ -353,7 +353,7 @@ Append the URL with the Group ID that was provided in the Create Group POST resp
 | Name | Type | Description | Req. |
 | --- | --- | --- | --- |
 | accountAlias | string | Short code for a particular account | Yes |
-| dataCenter | string | Short string representing the data center where the load balancer is. Valid codes can be retrieved from the [Get Data Center List](../Data Centers/get-data-center.md) API operation. | Yes |
+| dataCenter | string | Short string representing the data center where the load balancer is. Valid codes can be retrieved from the [Get Data Center List](http://www.ctl.io/api-docs/v2#data-centers-get-data-center-list) API operation. | Yes |
 | loadBalancerId | string | The id of the Load Balancer for which details are to be returned | Yes |
 | poolId | string | The id of the Load Balancer for which configuration is to be updated | Yes |
 
@@ -445,7 +445,7 @@ Simply use the URL with the Group ID followed by </pools>. Further append the UR
 | Name | Type | Description |
 | --- | --- | --- |
 | id | string | ID of the LBaaS load balancer pool delete request |
-| status | string | Initially the response will show a status for the request of "ACTIVE".  A status of "COMPLETE" will show in the Response of a [GET LBaaS group](../Load Balancer as a Service/get-lbaas-group.md) function when the pool has been deleted. |
+| status | string | Initially the response will show a status for the request of "ACTIVE".  A status of "COMPLETE" will show in the Response of a GET LBaaS group function when the pool has been deleted. |
 | description | string | Describes the activity running within the LBaaS load balancer pool delete process |
 | requestDate | string | Date-time stamp of the request |
 | completionDate | string | Date-time stamp of request completion.  Null value returned until process has completed |
@@ -465,7 +465,7 @@ Simply use the URL with the Group ID. No request body is required.
 | Name | Type | Description | Req. |
 | --- | --- | --- | --- |
 | AccountAlias | string | Short code for a particular account | Yes |
-| DataCenter | string | Short string representing the data center where the load balancer is. Valid codes can be retrieved from the [Get Data Center List](../Data Centers/get-data-center.md) API operation. | Yes |
+| DataCenter | string | Short string representing the data center where the load balancer is. Valid codes can be retrieved from the [Get Data Center List](http://www.ctl.io/api-docs/v2#data-centers-get-data-center-list) API operation. | Yes |
 | loadBalancerId | string | The id of the Load Balancer to be deleted | Yes |
 
 #### Example
@@ -490,7 +490,7 @@ Simply use the URL with the Group ID. No request body is required.
 | Name | Type | Description |
 | --- | --- | --- |
 | id | string | ID of the LBaaS load balancer delete request |
-| status | string | Initially the response will show a status for the request of "ACTIVE".  A status of "COMPLETE" will show in the Response of a [GET LBaaS group](../Load Balancer as a Service/get-lbaas-group.md) function when the pool has been deleted. |
+| status | string | Initially the response will show a status for the request of "ACTIVE".  A status of "COMPLETE" will show in the Response of a GET LBaaS group function when the pool has been deleted. |
 | description | string | Describes the activity running within the LBaaS load balancer delete process |
 | requestDate | string | Date-time stamp of the request |
 | completionDate | string | Date-time stamp of request completion.  Null value returned until process has completed |
