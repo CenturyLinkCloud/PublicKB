@@ -48,14 +48,6 @@ After reading this article, the user should be able to deploy Clusterpoint bluep
 hub and node with web manager.
 
 
-### Prerequisites
-
-TODO
-Prior to deploying this Blueprint please create a new server matching the below specifications:
-
-* Server running Ubuntu 14.04, Debian 7, RHEL 7 or CentOS 7.  4CPU/8GB RAM is a good starting point
-* Assigned public IP with the following open ports: 22, 80, 443
-
 
 ### Deploying the Clusterpoint All Blueprint
 
