@@ -9,7 +9,7 @@
 ![Netwrix logo](http://../../images/netwrix-logo.svg)
 
 ### Partner Profile
-Netwrix Corporation is the IT auditing company, providing software that maximizes visibility into who changed what, when, where and who has access to what. Over 6,000 customers worldwide rely on Netwrix to audit IT infrastructure changes and data access, prepare reports required for passing compliance audits and increase the efficiency of IT operations. 
+Netwrix Corporation is the IT auditing company, providing software that maximizes visibility into who changed what, when, where and who has access to what. Over 6,000 customers worldwide rely on Netwrix to audit IT infrastructure changes and data access, prepare reports required for passing compliance audits and increase the efficiency of IT operations.
 
 ### Technology Profile
 Netwrix Auditor is an IT auditing software that provides actionable audit data about who changed what, when and where and who has access to what. Netwrix Auditor helps organizations prevent security breaches caused by insider attacks, pass compliance audits with far less effort and expense, and keep tabs on what privileged users are doing in the environment. Netwrix Auditor enables auditing of the broadest variety of IT systems, including Active Directory, Exchange, file servers, SharePoint, SQL Server, VMware and Windows Server. It also supports user activity monitoring through video recording with search by metadata capabilities.
