@@ -1,6 +1,6 @@
 <h1>Centurylink Cloud Completes Annual SOC Examination</h1>
 
-<p>CenturyLink Cloud company has completed its annual examination <a href="https://www.ctl.io/compliance/soc-2/">SOC 2 Type 2</a> Report prepared in accordance with the <a href="http://www.aicpa.org/InterestAreas/FRC/AssuranceAdvisoryServices/Pages/AICPASOC2Report.aspx">AICPA AT 101</a> and IAASB ISAE No. 3402 Standards.</p>
+<p>CenturyLink Cloud has completed its annual examination <a href="https://www.ctl.io/compliance/soc-2/">SOC 2 Type 2</a> Report prepared in accordance with the <a href="http://www.aicpa.org/InterestAreas/FRC/AssuranceAdvisoryServices/Pages/AICPASOC2Report.aspx">AICPA AT 101</a> and IAASB ISAE No. 3402 Standards.</p>
 
 <p>CenturyLink SOC 2 Reports are examination engagements performed by a third party auditor in accordance with AT Section 101, Attest Engagements, of SSAEs (Statement on Standards for Attestation Engagements) using the predefined criteria as outlined in TSP section 100, Trust Services Principles, Criteria, and Illustrations for Security, Availability, Processing Integrity, Confidentiality, and Privacy. A system is designed, implemented, and operated to achieve specific business objectives in accordance with management-specified requirements.</p>
 
