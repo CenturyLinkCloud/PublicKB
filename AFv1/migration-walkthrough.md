@@ -75,7 +75,7 @@ define('DB_COLLATE', '')
 "PHP_EXTENSIONS": ["pdo", "pdo_mysql", "mysqli", "mysql", "mbstring", "mcrypt", "gd", "zip", "curl", "openssl", "sockets", "pdo_pgsql", "pdo_sqlite", "pgsql", "mongo"]
 }
  ```
-6. Users were able to modify some php.ini settings on AppFog v1 within their .htaccess file. On AppFog v2 users will need to create a `user.ini` file in their root directory and include their settings. The following are examples of settings which may be modified:
+6. AppFog v1 required modifications to php.ini settings to be included in their `.htaccess` file. On AppFog v2 users will need to create a `user.ini` file in their root directory to modify php.ini settings. Users can still utilize a `.htaccess` file for URL rewriting. Here are some examples of php.ini modifications:
 
  ```
 memory_limit = 256M

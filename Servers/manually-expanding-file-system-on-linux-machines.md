@@ -38,7 +38,7 @@
 
 <h3>Part 2: Expanding the new (Partition less) drives</h3>
 
-<p>IFF you see that the drive you are looking to expand does not have partitions on it, consider yourself lucky as the drive will be much easier to expand (which is why we moved to this model) and will not require a reboot or any downtime.</p>
+<p>If and only if you see that the drive you are looking to expand does not have partitions on it, consider yourself lucky as the drive will be much easier to expand (which is why we moved to this model) and will not require a reboot or any downtime.</p>
 <p>The failure of a partition-less drive via the control site generally means that the control site was unable to log into the system, the drive will be expanded in vmware but the file system size on the machine will not reflect this. </p>
 <p>In this case I have already expanded the drive to 20GB, but the OS is still showing 15GB </p>
 <p><img src="../images/manually-expand-linux-5.png" alt />
