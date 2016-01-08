@@ -1,4 +1,11 @@
-<h1>Centurylink Cloud Completes Annual SOC Examination</h1>
+{{{
+  "title": "Centurylink Cloud Completes Annual SOC Examination",
+  "date": "01-08-2016",
+  "author": "Christian Brown",
+  "attachments": [],
+  "contentIsHTML": false,
+  "sticky": true
+}}}
 
 <p>CenturyLink Cloud has completed its annual examination <a href="https://www.ctl.io/compliance/soc-2/">SOC 2 Type 2</a> Report prepared in accordance with the <a href="http://www.aicpa.org/InterestAreas/FRC/AssuranceAdvisoryServices/Pages/AICPASOC2Report.aspx">AICPA AT 101</a> and IAASB ISAE No. 3402 Standards.</p>
 
