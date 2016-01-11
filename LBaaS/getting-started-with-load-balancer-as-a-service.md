@@ -10,15 +10,15 @@
 
 Cloud Network Administrators, Application Developers
 
-## Overview
+### Overview
 
 CenturyLink Load Balancer as a Service helps you build highly scalable and highly available applications by providing application-level (HTTP & TCP) load balancing. It also offers various persistence methods to ensure that a user, once connected, continues to be connected to the same application instance.
 
-## What is Load Balancer as a Service?
+### What is Load Balancer as a Service?
 
 LBaaS is a load balancing solution that is meant to provide both server load balancing and high availability in an industry standard manner.
 
-## LBaaS Feature List
+### LBaaS Feature List
 
 * Programmable API (UI coming soon)
   - Create, Read, Update, Delete
@@ -30,7 +30,7 @@ LBaaS is a load balancing solution that is meant to provide both server load bal
 * Basic Health Checks: TCP Listeners (TCP Send/Expect coming soon!)
 *	Port Forwarding/Redirect
 
-## Configuration and Management
+### Configuration and Management
 
 Manage your LBaaS from anywhere with an API. Create LBaaS VIPs and pools, add/remove servers from pool, and delete LBaaS configurations through a REST API that supports only JSON for all operations.
 
@@ -43,7 +43,7 @@ The request format is specified using the ‘Content-Type’ header and is requi
 
 Authentication to the API is done with the same credentials used to access the CenturyLink Cloud Control Portal. The username and password are provided to the API and in return, the user gets back a credentials object. This object contains a valid bearer token, which must be provided on each subsequent API request and can be reused for up to 2 weeks. The HTTP request must also include a Content-Type header set to application/json.
 
-## Configure the Load Balancer as a Service (LBaaS)
+### Configure the Load Balancer as a Service (LBaaS)
 
 ### Create LBaaS
 
@@ -500,7 +500,7 @@ Simply use the URL with the Group ID. No request body is required.
 
 ##### If you delete a LBaaS Load Balancer that has an existing pool, the pool will be deleted at the same time.
 
-## Health Checks
+### Health Checks
 
 LBaaS uses health checks to determine if a backend server is available to process requests. This avoids having to manually remove a server from the backend if it becomes unavailable. The default health check is to try to establish a TCP connection to the server (i.e. it checks if the backend server is listening on the configured IP address and port).
 
@@ -516,6 +516,6 @@ Interval Seconds: The interval in seconds between health checks. Integer values 
 
 Target Port: This is the target protocol and port pair. Either HTTP or TCP and a selection in the range of valid ports from 1 through 65535. The format is “http:3381”, for example.
 
-## Support
+### Support
 
 For questions about the service, feel free to get us on Slack @ #load-balancing or via email at LBaaS-feedback@ctl.io.
