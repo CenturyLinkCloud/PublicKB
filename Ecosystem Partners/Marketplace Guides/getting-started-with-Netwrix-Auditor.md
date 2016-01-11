@@ -9,7 +9,7 @@
 ![Netwrix logo](http://../../images/netwrix-logo.svg)
 
 ### Partner Profile
-Netwrix Corporation is an IT auditing solutions provider. Exclusive focus on IT auditing enables us to offer superior product in its class. Our mission is to provide customers with complete visibility and accountability of their IT infrastructure changes and data access. Over 150,000 IT departments worldwide rely on Netwrix to audit IT infrastructure changes and data access, prepare reports required for passing compliance audits, and increase the efficiency of IT operations.  
+Netwrix Corporation is the IT auditing company, providing software that maximizes visibility into who changed what, when, where and who has access to what. Over 6,000 customers worldwide rely on Netwrix to audit IT infrastructure changes and data access, prepare reports required for passing compliance audits and increase the efficiency of IT operations.
 
 ### Technology Profile
 Netwrix Auditor is an IT auditing software that provides actionable audit data about who changed what, when and where and who has access to what. Netwrix Auditor helps organizations prevent security breaches caused by insider attacks, pass compliance audits with far less effort and expense, and keep tabs on what privileged users are doing in the environment. Netwrix Auditor enables auditing of the broadest variety of IT systems, including Active Directory, Exchange, file servers, SharePoint, SQL Server, VMware and Windows Server. It also supports user activity monitoring through video recording with search by metadata capabilities.
@@ -21,7 +21,7 @@ Through the CenturyLink Blueprint integration, Netwrix provides a solution to de
 For more information, please visit [www.netwrix.com](http://www.netwrix.com/)
 
 ### Contact Netwrix
-Phone: 1-949-407-5125 | Toll-free: 888-638-9749 | [Contact Us](http://www.netwrix.com/contact.html)
+Phone: 1-949-910-9556 | Toll-free: 888-638-9749 ext 2812 | [Contact Us](https://start.netwrix.com/netwrix_auditor_blueprint.html)
 
 ### Audience
 CenturyLink Cloud Users
@@ -66,11 +66,11 @@ To get detailed information on Netwrix Auditor configuration and usage please re
 
 #### Where do I obtain my Netwrix License?
 Existing CenturyLink  Customers can contact their Account Representative for help obtaining a Netwrix license, or contact Netwrix directly:
-  - Web - [http://www.netwrix.com](http://www.netwrix.com)
-  -
+  - Web - [http://www.netwrix.com](https://start.netwrix.com/netwrix_auditor_blueprint.html)
+  - Phone: 1-949-910-9556 | Toll-free: 888-638-9749 ext 2812
 
 #### Who should I contact for support?
 * For issues regarding the Netwrix Auditor software, please contact Netwrix:
-  - need contacts
+  - Web - [http://www.netwrix.com](http://www.netwrix.com/support.html)
 
 * For issues related to CenturyLink cloud infrastructure (VM’s, storage, network, etc), or if you experience a problem deploying the partner template, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new)
