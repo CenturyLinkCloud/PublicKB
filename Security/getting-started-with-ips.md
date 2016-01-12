@@ -70,10 +70,6 @@ Once the IPS Agent is installed on a VM, it will incur an hourly charge until th
 
 **Note:** If a VM is to be decommissioned, the agent MUST be deactivated to avoid on-going charges.
 
-### Related Topics
-
-Cli installation and uninstall processes for IPS can be found in the following document [IPS-Anywhere](ipsAnywhere.md)
-
 ### Support
 
 If you need assistance, please send initial contact to [help@ctl.io](mailto:help@ctl.io). You will receive an automated reply with step-by-step instructions on setting up a Zendesk user account. The Zendesk account will allow for future engagements with customer service.

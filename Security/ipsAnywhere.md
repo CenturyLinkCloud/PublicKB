@@ -1,4 +1,4 @@
-{{{ "title": "Install IPS Anywhere",
+{{{ "title": "IPS Anywhere Install & Uninstall",
         "date": "1-11-2016",
         "author": "Client-Security",
         "attachments": [],
