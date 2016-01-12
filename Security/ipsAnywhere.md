@@ -22,10 +22,11 @@ IPS or Intrusion Prevention Service will require you to have two things:
 ## Install
 
 Installs an IPS agent on your server. 
-This server needs the ability to make a cURL command.
+This server needs the ability to make an outbound cURL command over port 443.
 This cURL command will pull down a script and install the IPS agent. 
 The script will configure and activate the agent.
 The agent will communicate with our security manager.
+Billing subscription will be activated.
 
 ##### Structure
 
@@ -56,8 +57,9 @@ The agent will communicate with our security manager.
 ## Uninstall
 
 Uninstalls an IPS agent from your server.
-This server needs the ability to make a cURL command.
-This will remove the IPS agent from your server and inactivate your subscription.
+This server needs the ability to make an outbound cURL command over port 443.
+This will remove the IPS agent from your server.
+Billing subscription will be inactivated.
 
 ##### Structure
 
