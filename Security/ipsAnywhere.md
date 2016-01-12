@@ -11,7 +11,7 @@ The IPS-API is a RESTful api.
 IPS or Intrusion Prevention Service will require you to have two things:
 
 * A server with Administration credentials.
-* An account on the CenturyLink Cloud Platform [CenturyLink Cloud](https://www.ctl.io/)
+* An account on the [CenturyLink Cloud Platform](https://www.ctl.io/)
 
 ##### Current Supported Operating Systems
 
@@ -23,8 +23,9 @@ IPS or Intrusion Prevention Service will require you to have two things:
 
 Installs an IPS agent on your server. 
 This server needs the ability to make a cURL command.
-This cURL command will pull down a script and install the Intrusion Prevention Agent. 
-It will also configure the agent to activate and be in contact with our Manager.
+This cURL command will pull down a script and install the IPS agent. 
+The script will configure and activate the agent.
+The agent will communicate with our security manager.
 
 ##### Structure
 
@@ -37,7 +38,7 @@ It will also configure the agent to activate and be in contact with our Manager.
 |CLC_USERNAME   |String    |A valid username with CenturyLink                   |Yes      |
 |CLC_PASSWORD   |String    |The CenturyLink password linked to above User       |Yes      |
 |CLOUD_PROVIDER |String    |The value for your cloud provider                   |No       |
-|HOST_NAME      |String    |Value for server/VM name *                          |No       |
+|HOST_NAME      |String    |Value for server/VM name                            |No       |
 
 * Hostname will default to a cli command >hostname -f 
 
@@ -56,7 +57,7 @@ It will also configure the agent to activate and be in contact with our Manager.
 
 Uninstalls an IPS agent from your server.
 This server needs the ability to make a cURL command.
-This will remove the Agent from your server and inactivate your subscription.
+This will remove the IPS agent from your server and inactivate your subscription.
 
 ##### Structure
 
