@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started with Intrusion Prevention System (IPS)",
-  "date": "08-11-2015",
-  "author": "Stephanie Wong",
+  "date": "01-12-2016",
+  "author": "Client-Security",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
@@ -69,6 +69,10 @@ This Blueprint is for the actual installation and activation of the IPS service 
 Once the IPS Agent is installed on a VM, it will incur an hourly charge until the uninstall blueprint is executed successfully.
 
 **Note:** If a VM is to be decommissioned, the agent MUST be deactivated to avoid on-going charges.
+
+### Related Topics
+
+Cli installation and uninstall processes for IPS can be found in the following document [IPS-Anywhere](ipsAnywhere.md)
 
 ### Support
 
