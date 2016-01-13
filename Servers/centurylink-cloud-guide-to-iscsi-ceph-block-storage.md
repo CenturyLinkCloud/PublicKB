@@ -390,7 +390,7 @@ show the Windows iSCSI initiator configuration:
 Once connected, the iSCSI drive can be used as a block storage device.
 
 ### Expanding the storage cluster
-Ceph cluster can be expanded by adding more nodes into the cluster.  This also increases the serviceability of the storage environment as storage nodes can be added or removed from the cluster.  
+Ceph cluster can be expanded by adding more nodes into the cluster.  This also increases the serviceability of the storage environment as storage nodes can be added or removed from the cluster without impacting production.  
 By following the steps from [Creating the servers](#creating-the-servers),
 [Prepare the servers for Ceph Installation](#prepare-the-servers-for-ceph-installation) to prepare a new storage node.  Once completed, on the Ceph administration node, run:
 ```
