@@ -14,7 +14,7 @@ SoftNAS Cloud is a software behind virtual NAS appliance provided by SoftNAS, LL
 
 ### Prerequisites
 
-1. A SoftNAS appliance was [ordered](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md) and [set up](using-a-software-defined-virtual-nassan-on-centurylink-cloud.md) in CenturyLin Cloud.
+1. A SoftNAS appliance was [ordered](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-appliance.md) and [set up](using-a-software-defined-virtual-nassan-on-centurylink-cloud.md) in CenturyLin Cloud.
 2. You do have administrative rights to access the appliance's GUI interface.
 3. Your SoftNAS Cloud license is active.
 
