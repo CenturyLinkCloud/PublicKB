@@ -18,7 +18,7 @@ This guide is intended for Beta Customers in relation to getting started with Si
 
 Simple Backup Service (SBS) provides file level backups. This beta version of the UI allows users to quickly setup backups as well as perform other backup related activities. Additionally, there is no need to stand-up any additional infrastructure (servers, network, storage) because this is all part of the service. An agent will be automatically installed on the server during provisioning. Servers must have connectivity to the internet and restores for CLC VMs. Users choose which servers and data that require being backed up, as well as the frequency of the backups and retention periods.
 
-For additional information, please visit our [FAQ section](./simple-backup-faqs.md) or additional [Knowledge Base](//www.ctl.io/knowledge-base/backup/#1) articles.
+For additional information, please visit our FAQ section or additional [Knowledge Base](//www.ctl.io/knowledge-base/backup/#1) articles.
 
 The following provides steps to get started:
 --------------------------------------------
