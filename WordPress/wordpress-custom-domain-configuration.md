@@ -66,8 +66,8 @@ www.example.com.    CNAME   example.useast.wordpress.ctl.io.
 9. Replace both instances of `getenv("SITEURL")` with a URL using your new domain. For example:
 
    ```
-   define('WP_SITEURL', "https://www.example.com");
-   define('WP_HOME', "https://www.example.com");
+   define('WP_SITEURL', 'https://www.example.com');
+   define('WP_HOME', 'https://www.example.com');
    ```
 
    Note that the `WP_SITEURL` variable defines the base URL used for the WordPress administration console, and
