@@ -1,5 +1,5 @@
 {{{
-  "title": "Configuring Intrusion Prevention System (IPS) Notifications",
+  "title": "IPS - Configuring Notifications",
   "date": "10-22-2015",
   "author": "Client-Security",
   "attachments": [],

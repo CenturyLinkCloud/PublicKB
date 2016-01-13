@@ -1,5 +1,5 @@
 {{{
-  "title": "CenturyLink Cloud Guide to Vormetric DSM",
+  "title": "IPS - CenturyLink Cloud Guide to Vormetric DSM",
   "date": "11-11-2015",
   "author": "Chris Little",
   "attachments": [],

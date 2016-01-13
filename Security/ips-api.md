@@ -1,4 +1,4 @@
-{{{ "title": "IPS-API",
+{{{ "title": "IPS - RESTful API",
         "date": "11-09-2015",
         "author": "Client-Security",
         "attachments": [],
@@ -9,6 +9,9 @@
 
 The IPS-API is a RESTful api.
 IPS or Intrusion Prevention Service will require you to have a server and account in the CenturyLink Platform.
+
+### Supported Managed Operating Systems
+Current supported operating systems can be found here [Operating System Support](../Security/supported-ips-oses.md)
 
 ## Authentication
 

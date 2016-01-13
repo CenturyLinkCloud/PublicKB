@@ -1,4 +1,4 @@
-{{{ "title": "IPS Anywhere Install & Uninstall",
+{{{ "title": "IPS - CLI Install & Uninstall",
         "date": "1-11-2016",
         "author": "Client-Security",
         "attachments": [],
@@ -13,11 +13,8 @@ IPS or Intrusion Prevention Service will require you to have two things:
 * A server with Administration credentials.
 * An account on the [CenturyLink Cloud Platform](https://www.ctl.io/)
 
-##### Current Supported Operating Systems
-
-* RedHat 64-bit version 5, 6 and 7
-* CentOS 64-bit version 5 and 6
-* Ubuntu 64-bit version 12 and 14
+### Supported Managed Operating Systems
+Current supported operating systems can be found here [Operating System Support](../Security/supported-ips-oses.md)
 
 ## Install
 
