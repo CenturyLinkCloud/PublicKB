@@ -32,6 +32,7 @@ Ceph is a free software storage platform that stores data in a distributed clust
 
 ### Use Case Scenarios
 Ceph Block storage will iSCSI gateway can be used as shared storage for clusters and compute farm, dedicated storage for servers.  With its horizontal scalability, a storage platform larger than 4TB can be created.  In this use case, a 100GB redundant storage backend will be created with the iSCSI gateway.  Please see the diagram below:
+
 ![Ceph diagram](../images/ceph/ceph-blockdiagram.png)
 
 ### Creating the servers
@@ -173,7 +174,7 @@ To increase the amount of PID for the Ceph nodes:
 # sysctl –w kernel.pid_max=4194303
 ```
 
-###Setting up the Administration Node using Ceph Hammer LTS release
+### Setting up the Administration Node using Ceph Hammer LTS release
 
 Assuming the /etc/hosts is up-to-date, install the Ceph repository on
 the Administration node:
@@ -389,12 +390,18 @@ show the Windows iSCSI initiator configuration:
 Once connected, the iSCSI drive can be used as a block storage device.
 
 ### Expanding the storage cluster
-Prepare the new storage node using steps from [Creating the servers](#creating-the-servers),
-[Prepare the servers for Ceph Installation](#prepare-the-servers-for-ceph-installation).  Once completed, on the Ceph administration node, run:
+Ceph cluster can be expanded by adding more nodes into the cluster.  This also increases the serviceability of the storage environment as storage nodes can be added or removed from the cluster.  
+By following the steps from [Creating the servers](#creating-the-servers),
+[Prepare the servers for Ceph Installation](#prepare-the-servers-for-ceph-installation) to prepare a new storage node.  Once completed, on the Ceph administration node, run:
 ```
 # ceph-deploy install ceph-storage-3
+:
+:
+[ceph-storage-3][DEBUG ] Complete!
+[ceph-storage-3][INFO  ] Running command: sudo ceph --version
+[ceph-storage-3][DEBUG ] ceph version 0.94.5 (9764da52395923e0b32908d83a9f7304401fee43)
 ```
-Then run the following to verify the storage node has the storage for expansion
+Then run the following to verify the storage node (sdd is the additional storage)
 ```
 # ceph-deploy disk list ceph-storage-3
 [ceph_deploy.conf][DEBUG ] found configuration file at: /root/.cephdeploy.conf
