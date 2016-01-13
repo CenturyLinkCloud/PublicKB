@@ -98,7 +98,7 @@ Example:
 Make sure all the firewall ports are configured for Ceph nodes to
 communicated with each others. The TCP ports required are as follows:
 
-|  Node            |  TCP ports required      |
+|  Node            |  TCP-ports-required      |
 |  --------------- |  -----------------       |
 |  Administration  |  80, 2003, and 4505-4506 |
 |  Monitor         |  6789                    |
