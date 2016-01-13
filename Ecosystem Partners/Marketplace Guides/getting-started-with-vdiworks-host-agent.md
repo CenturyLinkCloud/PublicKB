@@ -16,6 +16,7 @@ VDP is an end to end VDI management system. Combining connection brokering, VM m
 This CenturyLink Blueprint provides a click-through solution to install and configure the VDIworks VDP Host Agent on the Windows Server platform.
 
 For more information, please visit [http://www.vdiworks.com/](http://www.vdiworks.com)
+To get in contact with sales representative please email [sales@vdiworks.com](mailto:sales@vdiworks.com)
 
 ### Audience
 CenturyLink Cloud Users
@@ -70,6 +71,7 @@ VDP Host Agent is available as a Blueprint for deployment on a new server.
 
 ### Pricing
 For pricing information please contact us through [http://www.vdiworks.com/contact-vdiworks/](http://www.vdiworks.com/contact-vdiworks/)
+To get in contact with sales representative please email [sales@vdiworks.com](mailto:sales@vdiworks.com)
 
 ### About VDIWorks
  Headquartered in Austin, Texas and founded in 2007, VDIworks is a leading provider of Virtual Desktop enablement and management software. Our solution is built on 10 years of pioneering work in the fields of centralized computing and virtualization. Our innovation has been recognized with 6 awarded and over 12 pending patents thus far. We offer the ultimate flexibility and preserves customer choice by giving customers the ability to deploy the right solution for the right user type, utilize any back-end hardware, end-point user access device or virtualization technology for desktop virtualization.
