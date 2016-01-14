@@ -16,7 +16,7 @@
 
 * __"IPS Anywhere" for Any Server Running Selected Versions of Red Hat, CentOS, Ubuntu, and SUSE.__ CenturyLink Cloud users may now install instances of host-based [Intrusion Prevention Service](https://www.ctl.io/intrusion-prevention-service/) on any server running one of these operating systems: RHEL 5/6/7(64 bit), CentOS 5/6, Ubuntu 12/14, and SUSE 11. The server can be located on-premises, in CenturyLink Cloud, or off-site with another hosting provider - the only requirement is connectivity to CenturyLink's management network. To configure access to this network, refer to [Getting Started with IPS - prerequisites](https://www.ctl.io/knowledge-base/security/getting-started-with-ips/#prerequisites).
 
-Installing IPS Anywhere is a simple API call - to learn more, [refer to this KB article](https://www.ctl.io/knowledge-base/security/#1).
+  Installing IPS Anywhere is a simple API call - to learn more, [refer to this KB article](https://www.ctl.io/knowledge-base/security/#1).
 
 * __AppFog: View & Edit Environmental Variables from the Control Portal.__ Application environmental variables, the primary mechanism for managing configuration in [AppFog](https://www.ctl.io/appfog/), can now be viewed and edited via the Control Portal. The new viewer/editor feature allows users to update, add, and remove environment variables.
 
@@ -24,15 +24,11 @@ Installing IPS Anywhere is a simple API call - to learn more, [refer to this KB 
 
 ### Early Adopter Program Updates (5)
 
-* __NEW - Load Balancer as a Service.__ [Load Balancer as a Service (LBaaS)](https://www.ctl.io/load-balancing/) is a new shared load balancer service that offers more capabilities than our current production service, including:
+* __NEW - Load Balancer as a Service.__ [Load Balancer as a Service (LBaaS)](https://www.ctl.io/load-balancing/) is a new shared load balancer service that offers more capabilities than our current production service, including, TCP load balancing, support for load balancing on any port, and configurable health checks.
 
-    * TCP load balancing
-    * Support for load balancing on any port
-    * Configurable health checks
+  These features, and more, are now available in beta via API. For more details, and to sign-up for the beta service, please visit [the product page](https://www.ctl.io/load-balancing/).
 
-These features, and more, are now available in beta via API. For more details, and to sign-up for the beta service, please visit [the product page](https://www.ctl.io/load-balancing/).
-
-* __DBaaS Beta Conclusion.__ The [DBaaS beta](https://www.ctl.io/dbaas/) ends January 24, as the service becomes generally available as the "Relational DB Service". This new service supports rapid software delivery by providing instant access to a high performance, enterprise-hardened MySQL-compatible database instances. The service is hosted on CenturyLink Cloud's Hyperscale service, with 100% flash storage. The service will be available in three CenturyLink Cloud locations: IL1, VA1 and UC1.
+* __DBaaS Beta Conclusion.__ The [DBaaS beta](https://www.ctl.io/dbaas/) ends January 25; the service will then become generally available as the "Relational DB Service". This new service supports rapid software delivery by providing instant access to a high performance, enterprise-hardened MySQL-compatible database instances. The service is hosted on CenturyLink Cloud's [Hyperscale service](https://www.ctl.io/hyperscale/), with 100% flash storage. The service will be GA at launch in three CenturyLink Cloud locations: IL1, VA1 and UC1.
 
 * __Runner.__ Several new capabilities are available for [the agent-less automation service](http://info.runner.ctl.io/):
 
@@ -66,4 +62,4 @@ These features, and more, are now available in beta via API. For more details, a
 
 ### Open Source Contributions (1)
 
-* __[CenturyLink Cloud Chef Knife Plug-In](https://github.com/CenturyLinkCloud/clc-knife/)__ Chef users can now perform key configuration management functions using CenturyLink Cloud and Knife, with this open-source plug-in. Over a dozen commands related to servers, data centers, groups, and power operations are supported. Fork [the repo on Github](https://github.com/CenturyLinkCloud/clc-knife) to get started.
+* __[CenturyLink Cloud Chef Knife Plug-In](https://github.com/CenturyLinkCloud/clc-knife/).__ Chef users can now perform key configuration management functions using CenturyLink Cloud and Knife, with this open-source plug-in. Over a dozen commands related to servers, data centers, groups, and power operations are supported. Fork [the repo on Github](https://github.com/CenturyLinkCloud/clc-knife) to get started.
