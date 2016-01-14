@@ -31,7 +31,7 @@ Ceph is a free software storage platform that stores data in a distributed clust
 -   Understanding of storage technology (for Ceph Specific knowledge, please refer to [Ceph's how to website](//docs.ceph.com/docs/master/))
 
 ### Use Case Scenarios
-Ceph Block storage will iSCSI gateway can be used as shared storage for clusters and compute farm, dedicated storage for servers.  With its horizontal scalability, a storage platform larger than 4TB can be created.  In this use case, a 100GB redundant storage backend will be created with the iSCSI gateway.  Please see the diagram below:
+Ceph Block storage with iSCSI gateway can be used as shared storage for clusters and compute farm, dedicated storage for servers.  With its horizontal scalability, a storage platform larger than 4TB can be created.  In this use case, a 100GB redundant storage backend will be created with the iSCSI gateway.  Please see the diagram below:
 
 ![Ceph diagram](../images/ceph/ceph-blockdiagram.png)
 
@@ -72,14 +72,12 @@ The optional storage/cluster network can be created using [Add or Remove Network
 
 ###Prepare the servers for Ceph Installation
 
-Change hostname to the reflect the real hostname as ceph-deploy uses
-hostnames to generate keys:
+The hostname needs to be changed to reflect the real hostname as 'ceph-deploy' script uses
+hostname to generate keys:
 ```
-# grep HOSTNAME /etc/sysconfig/network | awk -F= '{print $2}' | tee
-/etc/hostname
+# grep HOSTNAME /etc/sysconfig/network | awk -F= '{print $2}' | tee /etc/hostname
 
-# hostname `grep HOSTNAME /etc/sysconfig/network | awk -F= '{print
-$2}'`
+# hostname `grep HOSTNAME /etc/sysconfig/network | awk -F= '{print $2}'`
 ```
 Populate the /etc/hosts file of the administration node with all the
 nodes in the environment.
@@ -89,14 +87,15 @@ Example:
 # IPv4 Configuration
 
 127.0.0.1 localhost
-10.x.y.23 ceph-monitor-1.local ceph-monitor-1
-10.x.y.19 ceph-admin-1.local ceph-admin-1
-10.x.y.17 ceph-storage-1.local ceph-storage-1
-10.x.y.22 ceph-storage-2.local ceph-storage-2
+10.x.y.a ceph-monitor-1.local ceph-monitor-1
+10.x.y.b ceph-admin-1.local ceph-admin-1
+10.x.y.c ceph-storage-1.local ceph-storage-1
+10.x.y.d ceph-storage-2.local ceph-storage-2
 
 ```
 Make sure all the firewall ports are configured for Ceph nodes to
 communicated with each others. The TCP ports required are as follows:
+
 
 |  Node            |  TCP-ports-required      |
 |  --------------- |  -----------------       |
@@ -118,11 +117,9 @@ To enable these ports:
 ```
 Create a Ceph user on all the nodes (example user: cephuser):
 ```
-# useradd -d /home/cephuser -m cephuser –p xxxxxxxxx
+# useradd -d /home/cephuser -m –p xxxxxxxxx cephuser
 
-# echo "cephuser ALL = (root) NOPASSWD:ALL" | sudo tee
-/etc/sudoers.d/cephuser
-
+# echo "cephuser ALL = (root) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/cephuser
 cephuser ALL = (root) NOPASSWD:ALL
 ```
 From the admin node, setup the SSH key for remote management purpose:
@@ -155,29 +152,29 @@ Set up .ssh/config file for remote login without password
 ```
 Host ceph-storage-1
  Hostname ceph-storage-1
- User cephs
+ User cephuser
 Host ceph-storage-2
  Hostname ceph-storage-2
- User cephs
+ User cephuser
 Host ceph-monitor-1
  Hostname ceph-monitor-1
- User cephs
+ User cephuser
 Host ceph-admin-1
  Hostname ceph-admin-1
- User cephs
+ User cephuser
 ```
 Enable SSH tty for ceph-deploy utility:
 ```
 # sed -i '/requiretty/s/\^/#/' /etc/sudoers
 ```
-To increase the amount of PID for the Ceph nodes:
+To increase the amount of PID for the Ceph nodes (default is 32bit at 32768):
 ```
 # sysctl –w kernel.pid_max=4194303
 ```
 
 ### Setting up the Administration Node using Ceph Hammer LTS release
 
-Assuming the /etc/hosts is up-to-date, install the Ceph repository on
+Assuming the /etc/hosts is up-to-date, (please see [Prepare the servers for Ceph Installation](#prepare-the-servers-for-ceph-installation)), install the Ceph repository on
 the Administration node:
 ```
 #rpm -Uhv http://ceph.com/rpm-%20hammer/el7/noarch/ceph-release-1-0.el7.noarch.rpm
@@ -191,7 +188,7 @@ directory with the cluster name (ceph is used in this example):
 
 # cd ~/ceph-cluster
 
-#ceph-deploy new Initial_monitor_node_hostname
+#ceph-deploy new ceph-monitor-1
 ```
 Once the script is completed, new files are created in \~/ceph-cluster.
 Depending on the number of storage nodes in the initial configuration,
@@ -207,8 +204,7 @@ Once this is completed, the rest of the environment can be installed.
 
 From the administration node:
 ```
-#ceph-deploy install admin-node storage-node1 storage-node2
-monitor-node1
+#ceph-deploy install ceph-admin-1 ceph-storage-1 ceph-storage-2 ceph-monitor-1
 ```
 Once completed, the monitoring node can be initialized with the
 following command:
@@ -217,7 +213,7 @@ following command:
 ```
 ### Setting up Storage node
 ```
-#ceph-deploy disk list storage_node_name
+#ceph-deploy disk list ceph-storage-1 ceph-storage-2
 
 [ceph-storage-1][INFO ] Running command: sudo /usr/sbin/ceph-disk
 list
@@ -278,8 +274,10 @@ A new device /dev/rbd0 would be created as a result from the commands
 above, a simple ‘ls’ command can verify the result.
 
 ### Installation of iSCSI software and configure iSCSI target
+
+On the administration node, install the iSCSI target packages:
 ```
-#yum install targetcli targetd scsi-target-utils –y
+#yum install targetcli targetd iscsi-target-utils –y
 ```
 Using targetcli to configure the iSCSI target:
 ```
@@ -295,8 +293,7 @@ Created block storage object iscsi1 using /dev/rbd0.
 o- block
 ...................................................................
 [Storage Objects: 1]
-o- iscsi1 ............................ [/dev/rbd0 (50.0GiB) write-thru
-deactivated]
+o- iscsi1 ............................ [/dev/rbd0 (50.0GiB) write-thru deactivated]
 
 /backstores/block> cd ..
 
@@ -351,13 +348,11 @@ In order to configure the Access Control List, an iSCSI initiator name
 is required. In this example a Windows host is used to mount the iSCSI
 LUN.
 ```
-/iscsi/iqn.20...00a/tpg1/acls> create
-iqn.1991-05.com.microsoft:ca3ccva2take02
+/iscsi/iqn.20...00a/tpg1/acls> create iqn.1991-05.com.microsoft:ca3ccva2take02
 Created Node ACL for iqn.1991-05.com.microsoft:ca3ccva2take02
 Created mapped LUN 0.
 
-/iscsi/iqn.20...00a/tpg1/acls> cd
-iqn.1991-05.com.microsoft:ca3ccva2take02
+/iscsi/iqn.20...00a/tpg1/acls> cd iqn.1991-05.com.microsoft:ca3ccva2take02
 
 /iscsi/iqn.20...a3ccva2take02> set auth userid=testing
 
