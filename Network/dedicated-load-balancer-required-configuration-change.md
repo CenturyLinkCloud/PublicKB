@@ -8,9 +8,9 @@
 
 ### Overview
 
-We have identified an issue with some versions of Citrix NetScaler that cause the NetScaler Load Balancers to stop passing traffic under certain circumstances. We've modified our infrastructure to temporarily prevent this bug from affecting customers but this is a short term fix. In order to prevent this issue from affecting any NetScalers you may have in your environment, a small change to a configuration file and a reboot is required. We have already begun remediating as many customer NetScaler devices as we can but we have not been able to fix everyone's device.
+We've identified an issue with some versions of Citrix NetScaler that cause the NetScaler Load Balancers to stop passing traffic after some specific security patches have been applied. In order to prevent this issue from affecting any NetScalers you may have in your environment, a small change to a configuration file and a reboot is required. We have already begun remediating as many customer NetScaler devices as we can but we have not been able to fix everyone's device.
 
-**After February 8, 2016, we can no longer guarantee the availability of NetScalers that have not had this change applied. In order to ensure that your NetScalers are not affected by this issue, please make sure to complete one of the options outlined below prior to February 8, 2016.**
+**We will begin patching our systems after February 8, 2016. In order to ensure that your NetScalers are not affected by this issue, please make sure to complete one of the options outlined below prior to February 8, 2016.**
 
 ### What options do I have?
 
@@ -36,4 +36,4 @@ If you have been directed to this article, it means that for whatever reason we 
 
 ### What do I do next?
 
-If you have been contacted that we were unable to remediate your NetScaler and you have questions please reach out to us.  If you have finished one of the three options above, please let us know by [submitting a support ticket](https://t3n.zendesk.com/tickets/new) so we know your NetScaler is healthy.
+If you have any questions please [reach out to us](https://t3n.zendesk.com/tickets/new).  If you have finished one of the three options above, please let us know by [submitting a support ticket](https://t3n.zendesk.com/tickets/new) so we know your NetScaler is healthy.
