@@ -1,6 +1,6 @@
 {{{
   "title": "Dedicated Load Balancer Required Configuration Change",
-  "date": "1-13-2015",
+  "date": "1-15-2016",
   "author": "Bryan Friedman",
   "attachments": [],
   "contentIsHTML": false,
