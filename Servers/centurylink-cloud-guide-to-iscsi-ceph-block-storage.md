@@ -70,7 +70,7 @@ standard --storage-type standard
 ```
 The optional storage/cluster network can be created using [Add or Remove Network Interface to Server using Go CLI Knowledge Article](//www.ctl.io/knowledge-base/network/add-or-remove-network-interface-to-server-using-go-cli/).  
 
-###Prepare the servers for Ceph Installation
+### Prepare the servers for Ceph Installation
 
 The hostname needs to be changed to reflect the real hostname as 'ceph-deploy' script uses
 hostname to generate keys:
