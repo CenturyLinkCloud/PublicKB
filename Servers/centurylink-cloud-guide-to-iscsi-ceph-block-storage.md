@@ -269,9 +269,14 @@ storage cluster and map to a pool iscsi-block1
 # rbd create blkstor1 --size 51200
 
 # rbd map blkstor1 --pool iscsi-block1 --name client.admin
+
 ```
 A new device /dev/rbd0 would be created as a result from the commands
 above, a simple ‘ls’ command can verify the result.
+In order to made the rbd configuration persistent across reboot, enter pool/device into /etc/ceph/rbdmap:
+```
+# echo "iscsi-block1/blkstor1" >> /etc/ceph/rbdmap
+```
 
 ### Installation of iSCSI software and configure iSCSI target
 
