@@ -5,8 +5,6 @@
         "contentIsHTML": false,
         "sticky": false }}}
 
-# IPS-API
-
 The IPS-API is a RESTful api.
 IPS or Intrusion Prevention Service will require you to have two things:
 
@@ -16,7 +14,7 @@ IPS or Intrusion Prevention Service will require you to have two things:
 ### Supported Managed Operating Systems
 Current supported operating systems can be found here [Operating System Support](../Security/supported-ips-oses.md)
 
-## Install
+### Install
 
 Installs an IPS agent on your server. 
 This server needs the ability to make an outbound cURL command over port 443.
@@ -51,7 +49,7 @@ Billing subscription will be activated.
 |AZURE          |Microsoft Azure                             |
 |OTHER          |Default value if none are submitted         |
 
-## Uninstall
+### Uninstall
 
 Uninstalls an IPS agent from your server.
 This server needs the ability to make an outbound cURL command over port 443.

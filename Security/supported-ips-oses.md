@@ -10,22 +10,26 @@
 Currently a server has to be on the CenturyLink Cloud Platform to utilize the Blueprint and API Support.
 Operating systems with the CLI Support can reside inside or outside the CenturyLink Platform.  We support all major Cloud providers, such as AWS, Azure, DigitalOcean, etc.  We also support internal private clouds, hybrid clouds, etc.
 
-## Linux
+### Linux
 
-### RedHat
+#### RedHat
 * RedHat 5 64-bit [Blueprint Support](../Security/getting-started-with-ips.md) - [API Support](../Security/ips-api.md) - [CLI Support](../Security/ipsAnywhere.md)
 * RedHat 6 64-bit [Blueprint Support](../Security/getting-started-with-ips.md) - [API Support](../Security/ips-api.md) - [CLI Support](../Security/ipsAnywhere.md)
 * RedHat 7 64-bit [CLI Support](../Security/ipsAnywhere.md)
 
-### Ubuntu
+#### Ubuntu
 * Ubuntu 12 64-bit [CLI Support](../Security/ipsAnywhere.md)
 * Ubuntu 14 64-bit [CLI Support](../Security/ipsAnywhere.md)
 
-### CentOS
+#### CentOS
 * CentOS 5 64-bit [CLI Support](../Security/ipsAnywhere.md)
 * CentOS 6 64-bit [CLI Support](../Security/ipsAnywhere.md)
+* CentOS 7 64-bit [CLI Support](../Security/ipsAnywhere.md)
 
-## Windows
+#### SUSE
+* SUSE 11 64-bit [CLI Support](../Security/ipsAnywhere.md)
+
+#### Windows
 * Windows 2008 DataCenter 64-bit [Blueprint Support](../Security/getting-started-with-ips.md) - [API Support](../Security/ips-api.md)
 * Windows 2008 R2 DataCenter 64-bit [Blueprint Support](../Security/getting-started-with-ips.md) - [API Support](../Security/ips-api.md)
 * Windows 2008 Enterprise 64-bit [Blueprint Support](../Security/getting-started-with-ips.md) - [API Support](../Security/ips-api.md)
