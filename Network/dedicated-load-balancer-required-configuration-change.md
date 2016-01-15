@@ -2,6 +2,7 @@
   "title": "Dedicated Load Balancer Required Configuration Change",
   "date": "1-13-2015",
   "author": "Bryan Friedman",
+  "attachments": [],
   "contentIsHTML": false,
   "sticky": false
 }}}
