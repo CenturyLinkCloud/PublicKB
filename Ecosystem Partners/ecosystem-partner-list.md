@@ -26,6 +26,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [LaGrange Systems CloudMaestro](../Ecosystem Partners/Marketplace Guides/getting-started-with-lagrange-systems-cloudmaestro-blueprint.md)   	| Blueprint    | Application Delivery Controller  |
 | [NGiNX](../Ecosystem Partners/Marketplace Guides/getting-started-with-nginx-blueprint.md)   	| Blueprint    | Web traffic manager    |
 | [OpenVPN AS](../Ecosystem Partners/Marketplace Guides/getting-started-with-openvpnas-appliance.md)   	| Blueprint (Virtual Appliance)    | Secure access manager    |
+| [Silver Peak](../Ecosystem Partners/Marketplace Guides/getting-started-with-silver-peak-partner-template.md)   	| Template    | WAN acceleration    |
 
 ### Development Frameworks
 
@@ -49,6 +50,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Alert Logic Web Security Manager](../Ecosystem Partners/Marketplace Guides/getting-started-with-alert-logic-web-security-manager-partner-template.md)   	| Template    | Web security manager appliance    |
 | [Alert Logic Threat Manager](../Ecosystem Partners/Marketplace Guides/getting-started-with-alert-logic-threat-manager-partner-template.md)   	| Template    | Threat manager appliance    |
 | [Cavirin Automated Risk Analysis Platform](../Ecosystem Partners/Marketplace Guides/getting-started-with-cavirin-automated-risk-analysis-platform-partner-template.md)   	| Template    | Governance and compliance appliance    |
+| [FlexSecure](../Ecosystem Partners/Marketplace Guides/getting-started-with-flexsecure.md)   	| Blueprint    | Context-based Security-as-a-Service platform    |
 | [OSSEC](../Ecosystem Partners/Marketplace Guides/getting-started-with-ossec-blueprints.md)   	| Template    | HIDS    |
 | [Symas](../Ecosystem Partners/Marketplace Guides/getting-started-with-symas-open-ldap-silver.md)   	| Blueprint   | LDAP    |
 | [Vormetric](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-dsm.md)   	| Template    | Data encryption and key management    |
@@ -66,8 +68,12 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [C<sup>3</sup>DNA](../Ecosystem Partners/Marketplace Guides/getting-started-with-c3dna-appliance.md)   	| Blueprint    | Cloud Management Platform    |
 | [CloudBolt](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudbolt-appliance.md)   	| Blueprint    | Cloud Management Platform    |
 | [Chef Server](../Ecosystem Partners/Marketplace Guides/getting-started-with-chef-server-blueprint.md)   	| Blueprint    | Configuration management    |
+| [Docker Machine](../Ecosystem Partners/Marketplace Guides/getting-started-with-docker-machine.md)   	| Blueprint    | Automated Docker provisioning |
+| [Docker Trusted Registry](../Ecosystem Partners/Marketplace Guides/getting-started-with-docker-trusted-registry-blueprint.md)   	| Blueprint    | Store and manage Docker images within CenturyLink Cloud |
 | [Dynatrace](../Ecosystem Partners/Marketplace Guides/getting-started-with-dynatrace-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
+| [Mesosphere](../Ecosystem Partners/Marketplace Guides/getting-started-with-mesosphere-blueprint.md)   	| Blueprint    | Datacenter operating system |
 | [Rundeck](../Ecosystem Partners/Marketplace Guides/getting-started-with-rundeck-blueprint.md)   	| Blueprint    | Job scheduler and runbook automation   |
+| [Ruxit](../Ecosystem Partners/Marketplace Guides/getting-started-with-ruxit-blueprint.md)   	| Blueprint    | Application performance monitoring (APM)   |
 
 
 ### Development Toolchain
