@@ -22,6 +22,10 @@ This Blueprint is for the actual installation and activation of the IPS service 
   Installing Virtual Machine - activate.dsm.client-security.ctl.io 443/tcp
   
   Installing Virtual Machine - relay.dsm.client-security.ctl.io 443/tcp
+  
+  Installing Virtual Machine - api.client-security.ctl.io/ips/scripts/install.sh 443/tcp
+
+  Installing Virtual Machine - api.client-security.ctl.io/ips/scripts/uninstall.sh 443/tcp
 
 ### Supported Managed Operating Systems
 Current supported operating systems can be found here [Operating System Support](../Security/supported-ips-oses.md)
