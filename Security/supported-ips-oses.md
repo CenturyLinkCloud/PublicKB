@@ -5,8 +5,6 @@
         "contentIsHTML": false,
         "sticky": false }}}
 
-# Operating System Support
-
 Currently a server has to be on the CenturyLink Cloud Platform to utilize the Blueprint and API Support.
 Operating systems with the CLI Support can reside inside or outside the CenturyLink Platform.  We support all major Cloud providers, such as AWS, Azure, DigitalOcean, etc.  We also support internal private clouds, hybrid clouds, etc.
 
