@@ -1,5 +1,5 @@
 {{{
-  "title": "Removing Intrusion Prevention System (IPS)",
+  "title": "IPS - Removing Agent",
   "date": "09-24-2015",
   "author": "Stephanie Wong",
   "attachments": [],
