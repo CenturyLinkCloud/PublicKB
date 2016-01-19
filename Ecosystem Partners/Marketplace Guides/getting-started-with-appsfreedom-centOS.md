@@ -7,8 +7,6 @@
   "contentIsHTML": false
 }}}
 
-![appsFreedom](appsFreedom)
-
 ### Technology Profile
 
 This blueprint allows company's of user size 1-100 deploy appsFreedom Platform - Basic edition.
@@ -113,5 +111,5 @@ CenturyLink Cloud works with [appsFreedom Inc](http://appsfreedom.com) to provid
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to deploying the appsFreedom Inc Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [appsFreedom Inc. Support](855.277.7373)
+* For issues related to deploying the appsFreedom Inc Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please contact appsFreedom Inc. Support at 855.277.7373
 * For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
