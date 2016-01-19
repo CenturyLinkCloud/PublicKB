@@ -1,6 +1,6 @@
 {{{
   "title": "Ecosystem Partner List",
-  "date": "10-02-2015",
+  "date": "01-19-2016",
   "author": "CenturyLink Ecosystem",
   "attachments": [],
   "contentIsHTML": false,
