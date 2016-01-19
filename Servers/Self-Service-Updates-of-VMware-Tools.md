@@ -30,7 +30,7 @@ It is also recommended to reboot your server after installing/upgrading VMware T
 To update VMware Tools for Windows, you can download them from VMware's website and run the .exe installer.  You can run the installer interactively or silently.  It is recommended that you reboot after installation.
 
 1. If possible, create a server snapshot.
-2. Download the latest version from VMware's website via this link [Here](//https://packages.vmware.com/tools/releases/latest/windows/x64/index.html)
+2. Download the latest version from VMware's website via this link [Here](https://packages.vmware.com/tools/releases/latest/windows/x64/index.html)
 3. Double-click on the downloaded .exe file to run the installer interactively.
 4. Reboot the server.
 
