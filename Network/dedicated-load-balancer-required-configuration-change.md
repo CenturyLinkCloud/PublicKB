@@ -27,7 +27,7 @@ If you have been directed to this article, it means that for whatever reason we 
 
   2. On each device you log into, create or modify the following file:
 
-          /flash/boot/defaults/loader.conf
+          /flash/boot/loader.conf.local
 
   3. At the end of this file, add the following line:
 
