@@ -22,7 +22,7 @@ Administrative access to servers
 
 **Detailed Steps**
  
-Installers for VMware Tools can be found on VMware's website or on Linux vendor repositories.  Prior to upgrading VMware Tools, it is recommended to create a server snapshot if you are able to do so (certain conditions exclude a server from being able to have snapshots).  Please see this link [creating-and-managing-server-snapshots](../servers/creating-and-managing-server-snapshots.md) for instructions on how to create snapshots.  This will give you a known good state should you encounter an issue during the upgrade and need to revert back to the last known good state.  
+Installers for VMware Tools can be found on VMware's website or on Linux vendor repositories.  Prior to upgrading VMware Tools, it is recommended to create a server snapshot if you are able to do so (certain conditions exclude a server from being able to have snapshots).  Please see this link [creating-and-managing-server-snapshots](./servers/creating-and-managing-server-snapshots.md) for instructions on how to create snapshots.  This will give you a known good state should you encounter an issue during the upgrade and need to revert back to the last known good state.  
 
 It is also recommended to reboot your server after installing/upgrading VMware Tools.
  
