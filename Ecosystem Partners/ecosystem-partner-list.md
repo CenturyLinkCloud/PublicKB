@@ -33,6 +33,8 @@ Quickly deploy and successfully use software and technology from any of our cert
 |:-	|:-	|
 | [Apache HTTP Server](../Managed Services/getting-started-with-managed-apache.md)   	| Blueprint (Managed)   | Multi-purpose web server    |
 | [Apache Tomcat Server](../Managed Services/getting-started-with-managed-tomcat.md)   	| Blueprint (Managed)   | Web application server    |
+| [AppsFreedom](../Ecosystem Partners/Marketplace Guides/getting-started-with-appsfreedom-centOS.md.md)   	| Blueprint   | Mobile application development platform    |
+
 | [CloudMine](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudmine-blueprint.md)   	| Blueprint    | Mobile backend    |
 | [Heirloom Elastic COBOL](../Ecosystem Partners/Marketplace Guides/getting-started-with-elastic-cobol.md)     | Blueprint | Legacy COBOL Code migration |
 | [LAMP](../Ecosystem Partners/Marketplace Guides/getting-started-with-lamp-stack-blueprint.md)   	| Blueprint    | Linux, Apache, MariaDB/MySQL, and PHP/Perl/Python bundle    |
