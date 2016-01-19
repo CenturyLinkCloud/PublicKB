@@ -9,15 +9,15 @@
 * [Overview](#overview)
 * [Prerequisites](#prerequisites)
 * [Supported Managed Operating Systems](#supported-managed-operating-systems)
-* [Supported Managed Microsoft SQL Server Editions](#Supported-managed-microsoft-sql-server-editions)
-* [Important Information](*important-information)
-* [Installation Process](*installation-process)
+* [Supported Managed Microsoft SQL Server Editions](#supported-managed-microsoft-sql-server-editions)
+* [Important Information](#important-information)
+* [Installation Process](#installation-process)
   * [Managed SQL with CenturyLink provided license](#managed-sql-with-centurylink-provided-license)
   * [Managed SQL with BYOL](#managed-sql-with-byol)
-* [Frequently Asked Questions](*frequently-asked-questions)
+* [Frequently Asked Questions](#frequently-asked-questions)
 
 ### Overview
-The Microsoft SQL Server (MS-SQL) database is a comprehensive and integrated data management and analysis software application that enables the reliable management of mission-critical information.
+The Microsoft SQL Server (MS-SQL) database is a comprehensive and integrated data management and analysis software application that enables the reliable management of mission-critical information.  This Managed Service is available for both CenturyLink provided Microsoft provided SQL server licenses and customer Bring Your Own License (BYOL).
 
 ### Prerequisites
 * A CenturyLink Cloud Account
