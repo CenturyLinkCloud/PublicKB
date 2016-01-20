@@ -12,11 +12,11 @@
 <ul>
   <li>Must have a dedicated Netscaler available in your environment</li>
   <li>Must have an Admin login to your netscaler</li>
-  <li>Must have Java installed and configured correctly. See KB: <a href="(../general/how-to-configure-java-settings-to-access-web-user-interfaces.md)"> [How-to-Configure-Java]</a>
+  <li>Must have Java installed and configured correctly. See KB: <a href="./how-to-configure-java-settings-to-access-web-user-interfaces.md"> [How-to-Configure-Java]</a>
       <br />
     </a>
   </li>
-  <li>Understand the basic architecture of how a Netscaler works. See KB:<a href="(../network/load-balancing-dedicated-vs-shared)"> [Load-Balancing-Dedicated-vs-Shared​]</a>
+  <li>Understand the basic architecture of how a Netscaler works. See KB:<a href="/load-balancing-dedicated-vs-shared">Load Balancing Dedicated vs Shared</a>
       <br />
     </a>
   </li>
