@@ -109,18 +109,14 @@ can start protecting data and virtualizing systems.
 
 The costs listed above in the above steps are for the infrastructure only.
 
-After deploying this Blueprint, you may secure entitlements to the technology by emailing your datto
-Account Executive or if you don’t have one, Brian Buckman at bbuckman@datto.com.
+After deploy this Blueprint, you may secure entitlements to the technology by contacting your authorized centurylink provider and 
+if you don't have one contact Brian Buckman at bbuckman@datto.com.
 
 
 ### Frequently Asked Questions
-
-**Where do I get my Datto registration code?**
-
-Email your Datto Account Manager bbuckman@datto.com
 
 
 **Who should I contact for support?**
 
 * For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
-* For issues related to deploying the ALTO Blueprints and application operation on CenturyLink Cloud, please contact bbuckman@datto.com or follow your existing Datto support process if known.
+* For issues related to deploying the ALTO Blueprints and application operation on CenturyLink Cloud follow your existing Datto support process.
