@@ -18,15 +18,17 @@ Please note that keeping current with VMware Tools is not mandatory in order to 
 If you would like to update the version of VMware Tools on your servers, this is now available as a self-service task.  This article will discuss the steps needed for you to complete this upgrade. 
 
 **Prerequisites**
+
 Administrative access to servers
 
 **Detailed Steps**
  
-Installers for VMware Tools can be found on VMware's website or on Linux vendor repositories.  Prior to upgrading VMware Tools, it is recommended to create a server snapshot if you are able to do so (certain conditions exclude a server from being able to have snapshots).  Please see this link [creating-and-managing-server-snapshots](./servers/creating-and-managing-server-snapshots.md) for instructions on how to create snapshots.  This will give you a known good state should you encounter an issue during the upgrade and need to revert back to the last known good state.  
+Installers for VMware Tools can be found on VMware's website or on Linux vendor repositories.  Prior to upgrading VMware Tools, it is recommended to create a server snapshot if you are able to do so (certain conditions exclude a server from being able to have snapshots).  Please see this link [creating-and-managing-server-snapshots](./creating-and-managing-server-snapshots.md) for instructions on how to create snapshots.  This will give you a known good state should you encounter an issue during the upgrade and need to revert back to the last known good state.  
 
 It is also recommended to reboot your server after installing/upgrading VMware Tools.
  
 **Windows**
+
 To update VMware Tools for Windows, you can download them from VMware's website and run the .exe installer.  You can run the installer interactively or silently.  It is recommended that you reboot after installation.
 
 1. If possible, create a server snapshot.
@@ -36,6 +38,7 @@ To update VMware Tools for Windows, you can download them from VMware's website 
 
 
 **Linux**
+
 To update them for Linux, updates should be made available through vendor repositories.  Please contact help@ctl.io for assistance if your Linux server does not connect to a repository properly.  RedHat servers will receive updates from CenturyLink Cloud's RHUI environment.  CentOS, Ubuntu and other Debian variants will receive updates from their respective vendors.
 
 1. If possible, create a server snapshot.
