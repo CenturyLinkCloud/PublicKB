@@ -18,58 +18,58 @@ If any other versions of VMware Tools have been installed (including open-vm-too
 
 **RHEL / CentOS:**
 
-'yum remove vmware*'
+`yum remove vmware*`
 
 **Ubuntu:**
 
-'apt-get remove vmware*'
+`apt-get remove vmware*`
 Import the following keys
 
 **RHEL / CentOS:**
 
-'rpm --import http://packages.vmware.com/tools/keys/VMWARE-PACKAGING-GPG-DSA-KEY.pub'
-'rpm --import http://packages.vmware.com/tools/keys/VMWARE-PACKAGING-GPG-RSA-KEY.pub'
+`rpm --import http://packages.vmware.com/tools/keys/VMWARE-PACKAGING-GPG-DSA-KEY.pub`
+`rpm --import http://packages.vmware.com/tools/keys/VMWARE-PACKAGING-GPG-RSA-KEY.pub`
 
 **Ubuntu:**
 
-'wget http://packages.vmware.com/tools/keys/VMWARE-PACKAGING-GPG-DSA-KEY.pub -O - | apt-key add -'
-'wget http://packages.vmware.com/tools/keys/VMWARE-PACKAGING-GPG-RSA-KEY.pub -O - | apt-key add -'
+`wget http://packages.vmware.com/tools/keys/VMWARE-PACKAGING-GPG-DSA-KEY.pub -O - | apt-key add -`
+`wget http://packages.vmware.com/tools/keys/VMWARE-PACKAGING-GPG-RSA-KEY.pub -O - | apt-key add -`
 
 **Create the config file for the new repository:**
 
 **RHEL/CentOS 5:**
 
-'echo -e "[vmware-tools]\nname=VMwareTools\nbaseurl=http://packages.vmware.com/tools/releases/latest/rhel5/\$basearch\nenabled=1\ngpgcheck=1" > /etc/yum.repos.d/vmware-tools.repo'
+`echo -e "[vmware-tools]\nname=VMwareTools\nbaseurl=http://packages.vmware.com/tools/releases/latest/rhel5/\$basearch\nenabled=1\ngpgcheck=1" > /etc/yum.repos.d/vmware-tools.repo`
 
 **RHEL/CentOS 6:**
 
-'echo -e "[vmware-tools]\nname=VMwareTools\nbaseurl=http://packages.vmware.com/tools/releases/latest/rhel6/\$basearch\nenabled=1\ngpgcheck=1" > /etc/yum.repos.d/vmware-tools.repo'
+`echo -e "[vmware-tools]\nname=VMwareTools\nbaseurl=http://packages.vmware.com/tools/releases/latest/rhel6/\$basearch\nenabled=1\ngpgcheck=1" > /etc/yum.repos.d/vmware-tools.repo`
 
 **Ubuntu 12.04:**
 
-'echo "deb http://packages.vmware.com/tools/releases/latest/ubuntu precise main" > /etc/apt/sources.list.d/vmware-tools.list'
+`echo "deb http://packages.vmware.com/tools/releases/latest/ubuntu precise main" > /etc/apt/sources.list.d/vmware-tools.list`
 
 **Ubuntu 14:04:**
 
-'echo "deb http://packages.vmware.com/packages/ubuntu trusty main" > /etc/apt/sources.list.d/vmware-tools.list'
+`echo "deb http://packages.vmware.com/packages/ubuntu trusty main" > /etc/apt/sources.list.d/vmware-tools.list`
 
 **Install VMware Tools**
 
 **RHEL/CentOS 5 & 6:**
 
-'yum install vmware-tools-esx-kmods vmware-tools-esx-nox'
+`yum install vmware-tools-esx-kmods vmware-tools-esx-nox`
 
 **RHEL/CentOS 7:**
 
-'yum install open-vm-tools'
+`yum install open-vm-tools`
 
 **Ubuntu 12.04:**
 
-'apt-get update && apt-get install vmware-tools-esx-kmods-$(uname -r) vmware-tools-esx-nox'
+`apt-get update && apt-get install vmware-tools-esx-kmods-$(uname -r) vmware-tools-esx-nox`
 
 **Ubuntu 14:04:**
 
-'apt-get update && apt-get install open-vm-tools open-vm-tools-deploypkg'
+`apt-get update && apt-get install open-vm-tools open-vm-tools-deploypkg`
 
 
 Additional Information
