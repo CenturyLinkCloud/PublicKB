@@ -28,7 +28,7 @@ The PHP buildpack defaults to version 5.5. To use a different version create a `
 }
 ```
 The default PHP buildpack does not support PHP 5.3, and soon will not support PHP 5.4. This is because both PHP versions are no longer supported. AppFog developers have created a custom buildpack to support PHP 5.3 and 5.4 on AppFog v2. To use PHP 5.3 or 5.4 specify the version as described above and include the custom buildpack when pushing your app:
-`cf push <appname> -b https://github.com/CenturyLinkCloud/php-buildpack#af_custom_php`. When using the PHP custom buildpack environment variables can not be utilized. This means VCAP_SERVICES or any user set environment variables will not be available to the deployed PHP application. To connect to an AppFog marketplace service the credentials will need to be included in the application's database configuration file. The VCAP_SERVICES variable can be viewed using `cf env <YOUR_APPNAME>` to obtain necessary database connection information.
+`cf push <appname> -b https://github.com/CenturyLinkCloud/php-buildpack#af_custom_php`. When using the PHP custom buildpack only predefined environment variables can be utilized. This means user set environment variables will not be available to the deployed PHP application. The VCAP_SERVICES environment variable is available for use connecting to an AppFog marketplace service offering. This buildpack commit lists the [available environment variables](https://github.com/CenturyLinkCloud/php-buildpack/commit/6bd12f73bc68950856e67cae9a08c4d89c2dfefc) defined in the custom buildpack.
 
 ### .htaccess
 * AppFog v2 allows for the use of an `.htaccess` file in the root of your application for URL rewriting: http://docs.cloudfoundry.org/buildpacks/php/gsg-php-usage.html.
