@@ -75,7 +75,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 
 
 ### <a name="createmysql"></a> Create a CenturyLink Relational DB MySQL Instance
-1. Use [Create a MySQL instance on CenturyLink DBaaS](../Database/getting-started-with-MySQL-DBaaS.md) knowledge article to create a database instance
+1. Use [Create a MySQL instance on CenturyLink DBaaS](../Database/getting-started-with-mysql-rdbs.md) knowledge article to create a database instance
 2. Note down the user name and the connection string from the setup
 
   ![DBaaS](../images/owncloud/dbaas.png)
