@@ -98,6 +98,10 @@ Simple Backup Service does not perform snapshots - it provides file and folder l
 
 Not at first - restores will be done on the source VM. However, future improvements to Simple Backup Service may include support for restores to a server at a remote DC. Alternatively, users may first restore the files to the server at the source data center, and then copy/move the files to the server at the remote data center.
 
+### What operating systems does Simple Backup Service support?
+
+At launch, the service will support all 64-bit operating systems available on the Platform today. In the future, legacy 32-bit operating systems will be supported as well.
+
 ### How does Simple Backup Service differ from the current storage services?
 
 This chart is a helpful comparison:
