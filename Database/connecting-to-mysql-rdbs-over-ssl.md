@@ -1,6 +1,6 @@
 {{{
-  "title": "Connecting to MySQL DBaaS over SSL-enabled Connection",
-  "date": "11-22-2015",
+  "title": "Connecting to Relational DB over SSL-enabled Connection",
+  "date": "01-25-2016",
   "author": "Lane Maxwell",
   "attachments": [],
   "related-products" : [],
@@ -8,14 +8,10 @@
 }}}
 
 
-#### IMPORTANT NOTE
-
-CenturyLink Cloud’s MySQL-compatible Database-as-a-Service product is currently in a Limited Beta with specific customers by invitation only and is not intended for production usage.
-During the Limited Beta there is no production Service Level Agreement.
 
 #### Audience
 
-Currently, this article is to support customers in the Limited Beta program.  Additionally, the steps below are for customers using the DBaaS service through our Beta UI.  For instructions on how to use your cert in AppFog, please see [Connecting to MySQL DBaas Over SSL on AppFogv2](../Database/connecting-to-mysql-dbaas-over-ssl-on-appfog.md).
+This article is to support customers of Relational DB Service, CenturyLink's MySQL compatible database-as-a-service product.  Additionally, the steps below are for customers using Relational DB Service through Control Portal.  For instructions on how to use your cert in AppFog, please see [Connecting to MySQL Relational DB Over SSL on AppFogv2](../Database/connecting-to-mysql-rdbs-over-ssl-on-appfog.md).
 
 ## Connecting over SSL-enabled Connection
 
@@ -25,7 +21,7 @@ Currently, this article is to support customers in the Limited Beta program.  Ad
 `mysql -h 10.0.0.1 -u admin -p --ssl-ca=/{path_to_download_location}/ca-cert.pem -P 49152`
 
 3.  Once logged in, validate the SSL connection by using the show command.
-
+<p>
 `mysql> show status like 'Ssl_cipher';`
 
 ```
@@ -38,3 +34,4 @@ Currently, this article is to support customers in the Limited Beta program.  Ad
 
 mysql>
 ```
+<p> 4.  If you have questions or feedback, please submit them to our team by emailing <a href="mailto:rdbs-help@ctl.io">rdbs-help@ctl.io</a>.
