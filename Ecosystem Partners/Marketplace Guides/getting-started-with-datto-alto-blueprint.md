@@ -58,6 +58,7 @@ can start protecting data and virtualizing systems.
 1. **Locate the Blueprint in the Blueprint Library**
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "Datto ALTO" in the keyword search on the right side of the page.
+  (pricing includes IaaS resources only, see end of article for licensing details)
 
   <img src="../../images/datto/blueprint_tile.png" style="border:0;max-width:250px;">
 
@@ -107,13 +108,16 @@ can start protecting data and virtualizing systems.
 
 ### Pricing
 
-The costs listed above in the above steps are for the infrastructure only.
+The costs listed in the above steps are for the infrastructure only.
 
-After deploy this Blueprint, you may secure entitlements to the technology by contacting your authorized centurylink provider and 
-if you don't have one contact Brian Buckman at bbuckman@datto.com.
+After deploying this Blueprint, you may secure entitlements to the technology by emailing your Datto Account Executive or if you don’t have one, Brian Buckman at bbuckman@datto.com.
 
 
 ### Frequently Asked Questions
+
+**Where do I get my Datto registration code?**
+
+Email your Datto Account Manager at bbuckman@datto.com.
 
 
 **Who should I contact for support?**
