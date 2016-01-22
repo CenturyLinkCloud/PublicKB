@@ -123,4 +123,4 @@ Email your Datto Account Manager at bbuckman@datto.com.
 **Who should I contact for support?**
 
 * For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
-* For issues related to deploying the ALTO Blueprints and application operation on CenturyLink Cloud follow your existing Datto support process.
+* For issues related to deploying the ALTO Blueprints and application operation on CenturyLink Cloud, follow your existing Datto support process.
