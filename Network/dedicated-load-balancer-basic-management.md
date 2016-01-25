@@ -16,7 +16,7 @@
       <br />
     </a>
   </li>
-  <li>Understand the basic architecture of how a Netscaler works. See KB:<a href="/load-balancing-dedicated-vs-shared">Load Balancing Dedicated vs Shared</a>
+  <li>Understand the basic architecture of how a Netscaler works. See KB:<a href="./load-balancing-dedicated-vs-shared.md">Load Balancing Dedicated vs Shared</a>
       <br />
     </a>
   </li>
