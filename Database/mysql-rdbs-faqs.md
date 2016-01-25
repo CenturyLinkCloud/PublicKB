@@ -36,7 +36,7 @@ This article is to support customers of Relational DB Service, CenturyLink's MyS
 </p>
 <p>A: Upon database subscription, you will be given the option to download a self-signed cert that can be consumed by your target application. When implemented, your database connection is encrypted as well as your data in transit.  Please see the KB article on [Connecting to MySQL Relational DB Over SSL](../Database/connecting-to-mysql-rdbs-over-ssl.md) for additional details.
 </p>
-<p><strong>Q: How will I know when my database instance is reaching maximum capacity?
+<p><strong>Q: How will I know when my database instance is reaching maximum capacity?</strong>
 </p>A: Customers have the option to sign up to receive email notification when their CPU and/or storage has reached 80% capacity.  Customers who sign up for these notifications will be notified again when capacity reaches 90%.  Upon notification, customers can easily scale their database instance size through API or UI.
 
 <p><strong>Q: How can I grow or shrink my database instance?</strong>
