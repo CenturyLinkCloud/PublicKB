@@ -8,7 +8,7 @@
 
 ### IMPORTANT NOTE
 
-CenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only
+CenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only
 and is not intended for production usage.
 
 During the Limited Beta there is no production Service Level Agreement.
@@ -18,12 +18,11 @@ During the Limited Beta there is no production Service Level Agreement.
 WordPress uses a MySQL relational database for storing and retrieving content like posts, pages, image paths and
 comments as well as user login information.
 
-At times it is necessary to manage the database to resolve issues or add functionality.  With your CenturyLink Cloud
-WordPress site, you get your connection details and can use the tool of your choice to administer the database.
+At times it is necessary to manage the database to resolve issues or add functionality.  With your site, you get your connection details and can use the tool of your choice to administer the database.
 
 ### Prerequisites:
 
-* A CenturyLink WordPress site has been created.
+* A CenturyLink WordPress hosting site has been created.
 * A suitable MySQL client is installed and ready to use. There are many compatible options—from the MySQL
   command-line interface to MySQL Workbench and other third-party tools.
 

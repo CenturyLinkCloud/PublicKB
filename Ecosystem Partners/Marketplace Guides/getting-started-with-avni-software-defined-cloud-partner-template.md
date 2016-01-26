@@ -37,7 +37,7 @@ Avni has provided a Virtual Appliance - called a Partner Template - that can be 
 
 For the first time in the cloud industry, Avni has made it possible to automate and simplify every aspect of infrastructure design, build-out, re-architect, and scale private, hybrid, and public clouds. With the Avni SDC software, you can now deploy apps in minutes – not in weeks or months – and see immediate, measurable and significant savings in OpEx and CapEx.
 
-Customers can use Avni for Dev/Test, DevOps automation, existing business-critical multi-tier apps in production, scale-out micro-services based apps, etc. In all cases, existing 
+Customers can use Avni for Dev/Test, DevOps automation, existing business-critical multi-tier apps in production, scale-out micro-services based apps, etc. In all cases, existing
 
 The Avni SDC software is the first solution to integrate all the critical technologies so that you can deploy your existing apps in minutes in any cloud. For more information on SDC, use the contact information above.
 
@@ -49,10 +49,10 @@ After reading this article, the user should feel comfortable deploying the Avni 
 
 This deployment process for Partner Templates currently requires manual interaction via the Service Task process, but will be further automated in future releases of the CenturyLink Cloud Platform.
 
-If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@centurylinkcloud.com](mailto:features@centurylinkcloud.com)
+If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@ctl.io](mailto:features@ctl.io)
 
 ### Prerequisite
-- User requires access to the SDC Cloud platform as an authorized user. 
+- User requires access to the SDC Cloud platform as an authorized user.
 - Access to the CenturyLink Cloud platform as an authorized user.
 - Identify a Network VLAN you want the Avni SDC VM to reside on
 
@@ -66,10 +66,10 @@ If you are interested in seeing this type of Partner Template deployment as an a
 ### Detailed Steps to Deploy Avni SDC
 Avni SDC deploys in a virtual appliance model, as a CenturyLink Cloud *Partner Template*.  Follow these step by step instructions to deploy a Avni SDC in to your CenturyLink Cloud account:
 
-* Open a service task request ticket via email to ServiceTasks@Tier3.com with the following details.  `You will need to edit some of the information below.`
+* Open a service task request ticket via email to ServiceTasks@ctl.io with the following details.  `You will need to edit some of the information below.`
 
 ----
-TO: ServiceTasks@Tier3.com
+TO: ServiceTasks@ctl.io
 
 EMAIL SUBJECT:   Ecosystem Partner Template Import Request
 
@@ -103,7 +103,7 @@ Follow these steps to access and configure your Avni SDC partner template once y
   *	Server Group Name: <CenturyLink-Server-Group-Name> (for example, Default Group)
   *	Region: <Datacenter-Region-Code> (for example, it should be WA1 for Seattle datacenter)
   *	Image Name: <AVNI-SDC-Template-name>: For the template name please refer to the Avni SDC launch instruction manual and user guide.
-  *	Avni VMs Network: <Network-For-SDC-VMs> 
+  *	Avni VMs Network: <Network-For-SDC-VMs>
 
 Refer to Avni SDC user guide for more information.
 

@@ -9,6 +9,7 @@
 <p><strong>Description:</strong>
 </p>
 <p>The heart of the CenturyLink Cloud Enterprise Cloud Platform is the ability to create and manage virtual infrastructure. In this KB article, we demonstrate how to provision new virtual machines in the CenturyLink Cloud.</p>
+<p>Once you've gone through this KB article and created a new server, you can follow this Getting Started guide to learn <a href="https://www.ctl.io/knowledge-base/servers/getting-started-how-to-securely-connect-to-your-server/">how to securely connect to your new server.</a>
 <p><strong>Steps:</strong>
 </p>
 <div><strong>1. Start "Create Server" Process.</strong>

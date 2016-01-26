@@ -10,12 +10,12 @@
 
 ### IMPORTANT NOTE
 
-CenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage at this time.
+CenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage at this time.
 
 During the Limited Beta there is no production Service Level Agreement.
 
 ### Overview
-The [Yoast SEO Plugin for WordPress](https://yoast.com/wordpress/plugins/seo/) is a popular, full-featured plugin for [SEO](https://codex.wordpress.org/Search_Engine_Optimization_for_WordPress).  Most of what you need to know is already covered in the [excellent Yoast SEO Tutorial](https://yoast.com/articles/wordpress-seo/) that you can find on their website.  In this KB article, we will cover how to install and setup Yoast SEO on the [CenturyLink Cloud WordPress](https://www.ctl.io/wordpress) platform so that you can take advantage of it.
+The [Yoast SEO Plugin for WordPress](https://yoast.com/wordpress/plugins/seo/) is a popular, full-featured plugin for [SEO](https://codex.wordpress.org/Search_Engine_Optimization_for_WordPress).  Most of what you need to know is already covered in the [excellent Yoast SEO Tutorial](https://yoast.com/articles/wordpress-seo/) that you can find on their website.  In this KB article, we will cover how to install and setup Yoast SEO on the [CenturyLink Cloud WordPress](https://www.ctl.io/wordpress) hosting platform so that you can take advantage of it.
 
 ### Installing the Yoast SEO Plugin
 
@@ -29,7 +29,7 @@ The [Yoast SEO Plugin for WordPress](https://yoast.com/wordpress/plugins/seo/) i
 
 Now that you have the plugin installed, go ahead and open the [Yoast SEO Tutorial](https://yoast.com/articles/wordpress-seo/).  In section 1, it makes several recommendations about setting up the URL and permalinks for your site.  For the most part, you can follow these recommendations as-is, but there are a couple of items to make note of:
 
-1. In section 1.1.1 regarding Permalink Structure, Yoast refers to a separate article on [changing your permalink structure](https://yoast.com/change-wordpress-permalink-structure/) which includes instructions for adding "redirects" to your _.htaccess_ file.  Please note that this is not necessary on the CenturyLink WordPress platform, and in fact will not work.  Instead, simply [modify your permalink structure](https://codex.wordpress.org/Using_Permalinks) using the WordPress admin console.
+1. In section 1.1.1 regarding Permalink Structure, Yoast refers to a separate article on [changing your permalink structure](https://yoast.com/change-wordpress-permalink-structure/) which includes instructions for adding "redirects" to your _.htaccess_ file.  Please note that this is not necessary on the CenturyLink WordPress hosting platform, and in fact will not work.  Instead, simply [modify your permalink structure](https://codex.wordpress.org/Using_Permalinks) using the WordPress admin console.
 
 2. In section 1.1.2, Yoast discusses choosing between _WWW_ and _non-WWW_ domain names for your site.  The CenturyLink platform supports either one, but bear in mind that you must create a custom _vanity URL_.  See our [KB article](../WordPress/wordpress-custom-domain-configuration.md) for assistance with setting up a custom domain name for your WordPress site.
 
