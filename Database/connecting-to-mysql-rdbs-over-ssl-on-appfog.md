@@ -1,6 +1,6 @@
 {{{
-  "title": "Connecting to MySQL DBaaS over SSL on AppFogv2",
-  "date": "08-14-2015",
+  "title": "Connecting to Relational DB over SSL on AppFogv2",
+  "date": "01-25-2016",
   "author": "Lane Maxwell",
   "attachments": [],
   "related-products" : [],
@@ -8,17 +8,13 @@
 }}}
 
 
-#### IMPORTANT NOTE
-
-CenturyLink Cloud’s MySQL-compatible Database-as-a-Service product is currently in a Limited Beta with specific customers by invitation only and is not intended for production usage.
-During the Limited Beta there is no production Service Level Agreement.
 
 #### Audience
 
-Currently, this article is to support customers in the Limited Beta program.  Additionally, the steps below are for customers using the DBaaS service through AppFog.  For instructions on how to use your cert after purchasing through the DBaaS UI, see [Connecting to MySQL DBaaS Over SSL](../Database/connecting-to-mysql-dbaas-over-ssl.md).
+This article is to support AppFog customers using the ctl_mysql service through the AppFog AddOn Engine.  The ctl_mysql service is Centurylink's MySQL-compatible Relational Database Service.  For instructions on how to use your cert after purchasing through the Relational DB UI, see [Connecting to MySQL Relational DB Over SSL](../Database/connecting-to-mysql-rdbs-over-ssl.md).
 
 ## Connecting over SSL-enabled Connection
-Provisioning the DBaaS MySQL instance through the AddOn Engine will return a collection of variables as defined below.
+Provisioning the Relational DB MySQL instance through the AddOn Engine will return a collection of variables as defined below.
 
 ```
 {
@@ -50,3 +46,4 @@ Provisioning the DBaaS MySQL instance through the AddOn Engine will return a col
 
 mysql>
 ```
+<p>4.  If you have questions or feedback, please submit them to our team by emailing <a href="mailto:rdbs-help@ctl.io">rdbs-help@ctl.io</a>.
