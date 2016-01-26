@@ -9,7 +9,7 @@
 ![ownCloud logo](../images/owncloud/ownCloud-logo.png)
 
 ### Contents
-- [Deploying ownCloud on a New Server](#eploying-owncloud-on-a-new-servers)
+- [Deploying ownCloud on a New Server](#deploying-owncloud-on-a-new-servers)
 - [Create a CenturyLink Relational DB MySQL Instance](#create-a-centurylink-relational-db-mysql-instance)
 - [Connect to the server via OpenVPN](#connect-to-the-server-via-openvpn)
 - [Steps to deploy ownCloud to an existing server](#steps-to-deploy-owncloud-to-an-existing-server)
