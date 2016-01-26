@@ -1,5 +1,5 @@
 {{{
-  "title": "Using ownCloud with CenturyLink DBaas",
+  "title": "Using ownCloud with CenturyLink Relational DB Service",
   "date": "09-17-2015",
   "author": "Gavin Lai",
   "attachments": [],
@@ -10,10 +10,10 @@
 
 ### Contents
 - [Deploying ownCloud on a New Server](#installserver)
-- [Create a MySQL instance on CenturyLink DBaaS (Beta)](#createmysql)
+- [Create a CenturyLink Relational DB MySQL Instance](#createmysql)
 - [Connect to the server via OpenVPN](#connectvpn)
 - [Steps to deploy ownCloud to an existing server](#deployowncloud)
-- [Configure ownCloud connection to CenturyLink MySQL DBaaS (Beta)](#ownclouddbaas)
+- [Configure ownCloud connection to CenturyLink MySQL Relational DB](#ownclouddbaas)
 - [Configure ownCloud to utilize SMTP Relay](#smtprelay)
 - [Configure ownCloud to utilize Object Storage](#objectstorage)
 
@@ -21,7 +21,7 @@
 ownCloud is a personal productivity powerhouse. It gives you universal access to all your files, contacts, calendars and bookmarks across all of your devices. Unlike many of the shared repository services out there, with ownCloud, you have your own, private repo. However, just like the public repo companies, with ownCloud you can share your files with friends and co-workers. If you need it, ownCloud even integrates with other storage providers. Best of all, ownCloud is open source and free!
 
 ### Description
-This CenturyLink Cloud knowledge article provides a walkthrough to install and configure ownCloud on the Linux platform (from scratch and Blueprint), customize ownCloud to utilize CenturyLink Cloud's DBaaS (Beta), SMTP Relay and Object Storage.
+This CenturyLink Cloud knowledge article provides a walkthrough to install and configure ownCloud on the Linux platform (from scratch and Blueprint), customize ownCloud to utilize CenturyLink Cloud's Relational DB Service, SMTP Relay and Object Storage.
 
 For more information, please visit [http://owncloud.org](//owncloud.org)
 
@@ -29,12 +29,11 @@ For more information, please visit [http://owncloud.org](//owncloud.org)
 CenturyLink Cloud Users
 
 ### Impact
-After reading this article, the user can configure a customized ownCloud environment to utilize DBaaS, mail relay and Object storage (Enterprise edition) to minimize administration for local resources
+After reading this article, the user can configure a customized ownCloud environment to utilize Relational DB Service, mail relay and Object storage (Enterprise edition) to minimize administration for local resources
 
 
 ### Prerequisite
 - Access to the CenturyLink Cloud platform as an authorized user
-- Access to CenturyLink Cloud Database as a Service as an authorized user
 - Access to Object Storage if required, CenturyLink Cloud Object Storage can be used as primary storage for the Enterprise Edition of ownCloud
 
 
@@ -75,8 +74,8 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 
 
 
-### <a name="createmysql"></a> Create a MySQL instance on CenturyLink DBaaS (Beta)
-1. Use [Create a MySQL instance on CenturyLink DBaaS](../Database/getting-started-with-MySQL-DBaaS.md) knowledge article to create a database instance
+### <a name="createmysql"></a> Create a CenturyLink Relational DB MySQL Instance
+1. Use [Create a MySQL instance on CenturyLink DBaaS](../Database/getting-started-with-mysql-rdbs.md) knowledge article to create a database instance
 2. Note down the user name and the connection string from the setup
 
   ![DBaaS](../images/owncloud/dbaas.png)
@@ -134,7 +133,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 		```
 
 
-#### <a name="ownclouddbaas"></a> Configure ownCloud connection to CenturyLink MySQL DBaaS (Beta)
+#### <a name="ownclouddbaas"></a> Configure ownCloud connection to CenturyLink MySQL Relational DB Service
 ##### To trigger the initial setup in the ownCloud Blueprint installation, move the config.php file from /opt/bitnami/apps/owncloud/htdocs/config directory to a new location (please [backup the data for restoration](//wiki.bitnami.com/Applications/BitNami_ownCloud#How_to_create_a_full_backup_of_ownCloud.3f))
 1. If not already, connect to [CenturyLink Cloud VPN](../Network/how-to-configure-client-vpn.md)
 2. Point the web browser to the private address of the ownCloud server
@@ -143,7 +142,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 	![configuration](../images/owncloud/owncloud-setup-first.png)
 
 4. Click on ***Storage and Database***, select ***MySQL***
-5. Using the information from DBaaS to complete the information, the format for the host is IP_Address:port (e.g. 192.168.1.1:45678)
+5. Using the information from Relational DB Service to complete the information, the format for the host is IP_Address:port (e.g. 192.168.1.1:45678)
 
 	![ownCloud database input](../images/owncloud/oc-setup-mysql.png)
 
@@ -151,7 +150,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 
   ![ownCloud Welcome](../images/owncloud/owncloud-welcome.png)
 
-7. Download the certificate from Database as a Service to the ownCloud server to enable secure communication between the database and the ownCloud server.  Please refer to this [Connecting to MySQL DBaaS over SSL-enabled Connection](../Database/connecting-to-mysql-dbaas-over-ssl.md) knowledge article.
+7. Download the certificate from Relational DB Service to the ownCloud server to enable secure communication between the database and the ownCloud server.  Please refer to this [Connecting to MySQL Relational DB Service over SSL-enabled Connection](../Database/connecting-to-mysql-rdbs-over-ssl.md) knowledge article.
 	- Add the following to section to the config.php file (default location: /var/www/owncloud/config/)
 
 	   ```

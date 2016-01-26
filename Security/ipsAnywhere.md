@@ -17,15 +17,16 @@ Current supported operating systems can be found here [Operating System Support]
 ### Install
 
 Installs an IPS agent on your server. 
-This server needs the ability to make an outbound cURL command over port 443.
-This cURL command will pull down a script and install the IPS agent. 
+The server needs the ability to make an outbound cURL command over port 443.
+The cURL command will pull down a script and install the IPS agent.
+Running the install requires root privileges.
 The script will configure and activate the agent.
 The agent will communicate with our security manager.
 Billing subscription will be activated.
 
 ##### Structure
 
->curl https://api.client-security.ctl.io/ips/scripts/install.sh | CLC_USERNAME=your.clc.account CLC_PASSWORD=your.clc.password CLOUD_PROVIDER=your.cloud.provider HOST_NAME=your.host.name bash
+>curl https://api.client-security.ctl.io/ips/scripts/install.sh | sudo CLC_USERNAME=your.clc.account CLC_PASSWORD=your.clc.password CLOUD_PROVIDER=your.cloud.provider HOST_NAME=your.host.name bash
 
 ##### Content Properties
 
@@ -53,12 +54,13 @@ Billing subscription will be activated.
 
 Uninstalls an IPS agent from your server.
 This server needs the ability to make an outbound cURL command over port 443.
+Running the uninstall requires root privileges.
 This will remove the IPS agent from your server.
 Billing subscription will be inactivated.
 
 ##### Structure
 
->curl https://api.client-security.ctl.io/ips/scripts/uninstall.sh | CLC_USERNAME=your.clc.account CLC_PASSWORD=your.clc.password bash
+>curl https://api.client-security.ctl.io/ips/scripts/uninstall.sh | sudo CLC_USERNAME=your.clc.account CLC_PASSWORD=your.clc.password bash
 
 ##### Content Properties
 
