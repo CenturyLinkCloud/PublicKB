@@ -1,4 +1,4 @@
-{{{ "title": "IPS-API",
+{{{ "title": "IPS - RESTful API",
         "date": "11-09-2015",
         "author": "Client-Security",
         "attachments": [],
@@ -10,12 +10,15 @@
 The IPS-API is a RESTful api.
 IPS or Intrusion Prevention Service will require you to have a server and account in the CenturyLink Platform.
 
-## Authentication
+### Supported Managed Operating Systems
+Current supported operating systems can be found here [Operating System Support](../Security/supported-ips-oses.md)
+
+### Authentication
 
 In order to use the IPS-API you must retrieve a bearer token from CLC.
 This will be used during each of the calls. For more, see the [CLC Authentication](https://www.ctl.io/api-docs/v2/#authentication-login) documentation.
 
-## Headers
+### Headers
 
 To interact with the IPS-API you will need to provide in the headers two fields
 
