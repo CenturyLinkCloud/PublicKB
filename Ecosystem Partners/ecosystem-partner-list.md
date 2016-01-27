@@ -108,6 +108,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Couchbase](../Ecosystem Partners/Marketplace Guides/getting-started-with-couchbase.md)   	| Blueprint    | Scale out Database    |
 | [DataStax Cassandra](../Ecosystem Partners/Marketplace Guides/getting-started-with-datastax-blueprint.md)   	| Blueprint    | Distributed NoSQL database    |
 | [Hortonworks Hadoop](../Ecosystem Partners/Marketplace Guides/getting-started-with-hortonworks-hadoop-blueprint.md)   	| Blueprint    | Distributed NoSQL database    |
+| [MapR](../Ecosystem Partners/Marketplace Guides/getting-started-with-mapr-blueprint.md)   	| Blueprint    | Enterprise-grade Hadoop cluster    |
 | [MEAN Stack](../Ecosystem Partners/Marketplace Guides/getting-started-with-mongodb-blueprint.md)   	| Blueprint    | MongoDB, Express, Angular, Node.js bundle    |
 | [Microsoft SQL Server](../Managed Services/getting-started-with-managed-microsoft-sql-server.md)   	| Blueprint (Managed)   | Enterprise-grade relational database management system   |
 | [MongoDB](../Ecosystem Partners/Marketplace Guides/getting-started-with-mongodb-blueprint.md)   	| Blueprint    | High performance document oriented NoSQL database    |
