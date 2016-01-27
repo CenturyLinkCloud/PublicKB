@@ -42,7 +42,7 @@ cf events <APP_NAME>
 ```
 cf scale <APP_NAME> -i <NUMBER_OF_INSTANCES>
 ```
-* Scale the memory reservation for an application, for example 128M, 1G. *Note*, scaling memory reservation will restart the application:
+* Scale the memory reservation for an application, for example 128M, 1G. **Note**, scaling memory reservation will restart the application:
 ```
 cf scale <APP_NAME> -m <DESIRED_MEMORY>
 ```
