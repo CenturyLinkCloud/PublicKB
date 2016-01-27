@@ -6,9 +6,50 @@ AppFog Users
 
 ### Overview
 
-This article is intended to provide the available commands using the Cloud Foundry CLI `cf` tool, version 6.x. For more information refer to the [Cloud Foundry Docs](https://docs.cloudfoundry.org/devguide/installcf) or how to [Install the CLI Tool](login-using-cf-cli.md). The commands provided here can be displayed using `cf help` from the CLI. For detailed information on a specific command use `cf help <COMMAND>`.
+This article is intended to provide the available commands using the Cloud Foundry CLI `cf` tool, version 6.x. For more information refer to the [Cloud Foundry Docs](https://docs.cloudfoundry.org/devguide/installcf) or how to [Install the CLI Tool](login-using-cf-cli.md).
+
+### Common Commmand examples
+
+* List all provisioned applications:
+```
+cf apps
+```
+* View detailed information on a specific application, including state, CPU usage, memory:
+```
+cf app <APP_NAME>
+```
+* Get a dump of application logs in the Loggregator buffer:
+```
+cf logs <APP_NAME> --recent
+```
+* To obtain an active stream of the application logs:
+```
+cf logs <APP_NAME>
+```
+* View the files in an application directory:
+```
+cf files <APP_NAME>
+```
+* Users have the ability to navigate to a specific directory or view the contents of a file:
+```
+cf files <APP_NAME> path/to/file-to-view
+```
+* Show recent events for an application:
+```
+cf events <APP_NAME>
+```
+* Scale the number of appliation instances:
+```
+cf scale <APP_NAME> -i <NUMBER_OF_INSTANCES>
+```
+* Scale the memory reservation for an application, for example 128M, 1G. *Note*, scaling memory reservation will restart the application:
+```
+cf scale <APP_NAME> -m <DESIRED_MEMORY>
+```
 
 ### cf CLI Tool Commands
+
+The commands provided here can be displayed using `cf help` from the CLI. For detailed information on a specific command use `cf help <COMMAND>`.
 
 ```
 NAME:
