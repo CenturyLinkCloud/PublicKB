@@ -1,6 +1,6 @@
 ﻿{{{
   "title": "Managed Operating System - Frequently Asked Questions",
-  "date": "12-31-2015",
+  "date": "01-28-2015",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false,
@@ -51,7 +51,7 @@ There could be a few causes:
 
 **Is there anything that I cannot do in the Control Portal with a managed VM?**
 
-A managed server cannot be cloned, archived, or converted to a template. Also, the "time to live" option is not available when creating a new managed server. At this time, you cannot create a managed server within a Cloud Blueprint.
+A managed server cannot be cloned, archived, or converted to a template. You cannot restore a managed server as an unmanaged server. Also, the "time to live" option is not available when creating a new managed server. At this time, you cannot create a managed server within a Cloud Blueprint.
 
 **How do I log into my server?**
 
