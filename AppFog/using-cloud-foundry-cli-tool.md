@@ -46,6 +46,10 @@ cf scale <APP_NAME> -i <NUMBER_OF_INSTANCES>
 ```
 cf scale <APP_NAME> -m <DESIRED_MEMORY>
 ```
+* View the current User, targeted Space and Org using `cf target`. Change the targeted Space or Org using the `-s` or `-o` options. For example, to change the targeted Space:
+```
+cf target -s <SPACE>
+```
 
 ### cf CLI Tool Commands
 
