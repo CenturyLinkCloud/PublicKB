@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-## Overview
+### Overview
 
 Behind the scenes, making a server managed or installing a managed application requires the coordination of diverse components and, while  provisioning has a good success rate, it is possible your server may experience issues with one of the dependencies. The following steps are refined versions of what users have done to assist with the troubleshooting process and expedite the management of your server.
 
