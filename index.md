@@ -20,7 +20,6 @@
     "Release Notes",
     "Security",
     "Service Tasks",
-    "Servers",
-    "WordPress"
+    "Servers"
   ]
 }}}
