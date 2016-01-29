@@ -10,17 +10,17 @@ Blueprints are a saved and repeatable workflow that bundles components like Temp
 
 See also the KB articles on
 
-- [Templates Best Practices](templates-best-practices.md)
-- [Packages Best Practices](packages-best-practices.md)
-- [Differentiating the Template, Package and Blueprint components](understanding-the-difference-between-templates-blueprints-and-packages.md)
+* [Templates Best Practices](templates-best-practices.md)
+* [Packages Best Practices](packages-best-practices.md)
+* [Differentiating the Template, Package and Blueprint components](understanding-the-difference-between-templates-blueprints-and-packages.md)
 
 ### Workflow Components to Consider
 
 When deploying new servers as part of a Blueprint make careful consideration of the following components:
 
-- Always patch servers to the latest patch level (include the Linux Update or Perform Windows Update)
-- If you have a demo mode or application available include a parameter to optionally install and configure as part of your Blueprint (as opposed to handling this out of band or of creating multiple Blueprints with largely matching functionality)
-- Attach public IP addresses only on services that will receive inbound Internet traffic.  Most customers access the cloud environment via secured private connectivity and don't see the public addresses.  If your Blueprint is an Internet connected service that should be accessible to the Internet at large then skip this step
+* Always patch servers to the latest patch level (include the Linux Update or Perform Windows Update)
+* If you have a demo mode or application available include a parameter to optionally install and configure as part of your Blueprint (as opposed to handling this out of band or of creating multiple Blueprints with largely matching functionality)
+* Attach public IP addresses only on services that will receive inbound Internet traffic.  Most customers access the cloud environment via secured private connectivity and don't see the public addresses.  If your Blueprint is an Internet connected service that should be accessible to the Internet at large then skip this step
 
 ### When to use Packages versus Blueprints
 
@@ -58,10 +58,10 @@ If you are adding capacity to an existing environment the most common pattern is
 The parameter types and other metadata is embedded within the Blueprint definition.  Changes to parameter names, types, etc. in an included package will not be reflected until the blueprint is edited and republished.
 
 ### Advanced Needs
-If your state needs are more advanced, such as requiring key exchange, automated registering of new assets, self-discovery, etc. we recommend investigating the bpbroker toolset which was specifically created to support this workflow.
+If your state needs are more advanced, such as requiring key exchange, automated registering of new assets, self-discovery, etc. we recommend investigating the [bpbroker](https://github.com/CenturyLinkCloud/bpbroker) toolset which was specifically created to support this workflow.
 
 ### Adding a Public IP Address
-CenturyLink Cloud includes an operation to add a public IP address to any server as part of the Blueprint deployment.  Take note that this operation adds both an additional private IP address then NATs a new public IP to the server.
+CenturyLink Cloud includes an operation to add a public IP address to any server as part of the Blueprint deployment.  Take note that this operation adds both an additional private IP address then NATs a new public IP to the server. In most scenarios what you really want is to execute the script package **[Create/Update Public IP NAT to Primary Private IP Address](blueprint-nat-public-ip-to-primary-private-ip.md)**.  If using the *add public ip address* task then the following behavior will result:
 
  * Inbound requests to the public IP will always function as expected
  * Egress traffic sourcing from the server will **not** come from the new public IP address.  Egress traffic will appear to source from the public IP associated with the primary server IP address (this can only be configured via the control portal).  If no public IP is associated with the primary server IP address then the traffic will be NATed behind a shared public IP address associated with a number of hosts in the datacenter.

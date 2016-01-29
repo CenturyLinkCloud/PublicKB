@@ -16,22 +16,22 @@
 </p>
 <ul>
   <li>Locate the “Design Blueprint” option in the Control Portal navigation menu.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/ecsp8z8mhn9crln/?name=siblueprint01.png" alt="siblueprint01.png" />
+    <br /><img src="../images/blueprint-add-package-siblueprint01.png" alt="siblueprint01.png" />
   </li>
   <li>Provide a name, version number, privacy setting and description for the blueprint.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/0tg80o2nm8ut4xy/?name=siblueprint02.png" alt="siblueprint02.png" />
+    <br /><img src="../images/blueprint-add-package-siblueprint02.png" alt="siblueprint02.png" />
   </li>
   <li>Add a pair of servers to the blueprint. In this example, the servers are Windows Server 2008 R2 machines with default memory and CPU configurations. Note that no software/tasks/scripts are applied at this point.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/cwwqrpuaryeouc1/?name=siblueprint03.png" alt="siblueprint03.png" />
+    <br /><img src="../images/blueprint-add-package-siblueprint03.png" alt="siblueprint03.png" />
   </li>
   <li>After clicking “Next”, click the “Add Task” button and choose a software package or script that is known to have installation parameters.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/m2oryuwvztahd6g/?name=siblueprint04.png" alt="siblueprint04.png" />
+    <br /><img src="../images/blueprint-add-package-siblueprint04.png" alt="siblueprint04.png" />
   </li>
   <li>Click the “Add” button and then choose which server that this package applies to. Blueprint authors can select specific servers or choose the “Select During Deployment” option. In this example, the first server is selected.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/5o9bf7trcjrmppm/?name=siblueprint05.png" alt="siblueprint05.png" />
+    <br /><img src="../images/blueprint-add-package-siblueprint05.png" alt="siblueprint05.png" />
   </li>
   <li>After clicking the “Add Global Tasks” button, repeat this process and add the same software package to the second server in the blueprint. The final result should show two servers and two instances of the software package.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/avhv6mt3bq2ccqx/?name=siblueprint06.png" alt="siblueprint06.png" />
+    <br /><img src="../images/blueprint-add-package-siblueprint06.png" alt="siblueprint06.png" />
   </li>
   <li>Finish the Blueprint Designer wizard and submit the blueprint for publishing.</li>
 </ul>
@@ -42,17 +42,17 @@
   <li>In this variation of step 1a, the software is selected at the same time as the server is configured. These two methods for installing software produce the same output even though the blueprint engine treats them slightly differently. The technique in
     step 1a is recommended when the server environment already exists and the blueprint is used to provision software onto that environment. The activities outlined here in Step 1b are recommended when building an entirely new environment.</li>
   <li>Locate the “Design Blueprint” option in the Control Portal navigation menu.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/0wnux08bmjiz4zn/?name=siblueprint01.png" alt="siblueprint01.png" />
+    <br /><img src="../images/blueprint-add-package-siblueprint01.png" alt="siblueprint01.png" />
   </li>
   <li>Provide a name, version number, privacy setting and description for the blueprint.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/gvj9wjfgy4apyxv/?name=siblueprint07.png" alt="siblueprint07.png" />
+    <br /><img src="../images/blueprint-add-package-siblueprint07.png" alt="siblueprint07.png" />
   </li>
   <li>Add a pair of servers to the blueprint. In this example, the servers are Windows Server 2008 R2 machines with default memory and CPU configurations. On the server configuration page, click the “Install Software” button and select a software package.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/w1l2ekiosw1mrcc/?name=siblueprint08.png" alt="siblueprint08.png" />
+    <br /><img src="../images/blueprint-add-package-siblueprint08.png" alt="siblueprint08.png" />
   </li>
   <li>Repeat the process and add a second server that has the same software package selected during the server configuration.</li>
   <li>After saving both server configurations, see the “Task &amp; Order” page where both servers, and their software packages, are listed in a slightly different way than demonstrated in step 1a.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/k3buy6rwlptlaxw/?name=siblueprint09.png" alt="siblueprint09.png" />
+    <br /><img src="../images/blueprint-add-package-siblueprint09.png" alt="siblueprint09.png" />
   </li>
   <li>Complete the blueprint and submit it for publishing.</li>
 </ul>
@@ -62,14 +62,14 @@
 <ul>
   <li>Blueprints built using either the technique from Step 1a or 1b will follow the same deployment process.</li>
   <li>Locate the blueprints that have multiple servers with the same software package.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/zmy350gn0ar40rj/?name=siblueprint10.png" alt="siblueprint10.png" />
+    <br /><img src="../images/blueprint-add-package-siblueprint10.png" alt="siblueprint10.png" />
   </li>
   <li>Select a blueprint for deployment.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/ghjfngcjiiaiobv/?name=siblueprint11.png" alt="siblueprint11.png" />
+    <br /><img src="../images/blueprint-add-package-siblueprint11.png" alt="siblueprint11.png" />
   </li>
   <li>Click “Deploy Blueprint” and see the deployment-level parameters that can be set including server passwords, network, server names and one section for EACH instance of the software package contained in the blueprint. This means that each software package
     could be deployed with parameter that are unique to the server its being installed on.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/k1uim9lsddsntgc/?name=siblueprint12.png" alt="siblueprint12.png" />
+    <br /><img src="../images/blueprint-add-package-siblueprint12.png" alt="siblueprint12.png" />
   </li>
   <li>Review the settings of the blueprint and choose to deploy it.</li>
   <li>Upon completion, see that the software was installed on each server per the configured parameters.</li>

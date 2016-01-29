@@ -34,4 +34,8 @@
 <p>A: CenturyLink Cloud Supports&nbsp;MySQL v5.5, MySQL 5.6.</p>
 <p><strong>Q: What operating systems are supported for Managed Oracle MySQL?</strong>
 </p>
-<p>A: Managed Red Hat.</p>
+<p>A: Managed Red Hat.
+</p>
+<p><strong>Q: Can *un-managed* MySQL Services be converted to *Managed* (or vice versa)?</strong>
+</p>
+<p>A: This capability is not available at this time.</p>

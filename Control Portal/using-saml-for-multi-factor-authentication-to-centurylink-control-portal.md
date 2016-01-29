@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-###Description
+### Description
 
 As described in [Using SAML for Single-Sign-On](../Control Portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md), CenturyLink Cloud supports the use of Security Assertion Markup Language (SAML) for exchanging user authentication data as XML between trusted parties. This industry standard protocol empowers customers to use their **own** SAML-supported identity management system for authenticating users of the CenturyLink Control Portal.
 
@@ -16,13 +16,13 @@ For more details and how SAML works in general and how to specifically setup an 
 
 In the example below, however, we will use a separate software-as-a-service vendor as the identity provider in order to also enforce multi-factor authentication. The following steps will walk through the process of configuring the IdP to add users, enabling MFA and SAML, and configuring CenturyLink Control Portal's SAML settings to enforce the use of the IdP.
 
-###Steps
+### Steps
 
 In this example, we will use the cloud-based identity and access management solution <a href="http://www.onelogin.com">OneLogin</a> as our identity provider since it is free to use as a demo, easy to setup, and supports both SAML and MFA.
 
 Though we are using OneLogin in our example here, of course the principles will apply for any IdP with support for SAML and MFA. The steps below assume you have already [signed up](http://www.onelogin.com/signup) for a OneLogin account and are able to login to its administrator interface.
 
-###Configure IdP for SAML
+### Configure IdP for SAML
 
 1. In the CenturyLink Cloud Control Portal, from the Account Settings page, navigate to the "Users" tab and the "Authentication" sub-menu.
 2. Click the "SAML 2.0 Authentication" checkbox to show all the available settings. For now, just take note of the "Relying Party Assertion Consumer Service URL" listed there. It should be in the format of <code>https://{account-alias}.cloudportal.io/SAMLAuth/Post</code>. (Highlighted in the screenshot below.)
@@ -40,7 +40,7 @@ Though we are using OneLogin in our example here, of course the principles will 
 
 There are a number of other settings that OneLogin supports or that may be supported by other IdPs, but this is the minimal configuration required on the OneLogin side for SAML authentication to work.
 
-###Configure Control Portal SAML Settings
+### Configure Control Portal SAML Settings
 
 1. While still in the OneLogin administrator interface, click on the "SSO" tab to view SAML configuration information required to plug in to the Control Portal settings. You should see a SAML 2.0 Endpoint and a X.509 Certificate. Both of these values are required to configure SAML in CenturyLink Cloud Control Portal.
 ![Login SAML Info](../images/onelogin-saml-info.png)
@@ -49,7 +49,7 @@ There are a number of other settings that OneLogin supports or that may be suppo
 
 At this point, SAML is configured on both ends. All that's left is to enable MFA and begin provisioning users.
 
-###Configure IdP for MFA
+### Configure IdP for MFA
 
 1. From the OneLogin interface, select the "Settings" menu and go to "Authentication Factors". From this screen you will be presented with a number of available multi-factor authentication providers that can be enabled. Clicking the provider name and clicking the "Save" button activates it as an additional authentication factor. In this example we will use "Google Authenticator" since it's ubiquitous and easy to setup. (You could choose RSA SecurID or another provider of your choice.)
 ![MFA Setup](../images/mfa-setup.png)
@@ -58,7 +58,7 @@ At this point, SAML is configured on both ends. All that's left is to enable MFA
 ![MFA Policy](../images/mfa-policy.png)
 All that's left is to provision users in the IdP and associate them with users in Control Portal.
 
-###Provision User(s)
+### Provision User(s)
 
 There are a few different options for provisioning users to CenturyLink Cloud and no doubt the IdP you choose to use has a number of options as well. OneLogin supports both bulk user import from a flat file as well as an [API](https://onelogin.zendesk.com/hc/en-us/articles/201175524-Users-API) for creating users. CenturyLink Cloud's API also provides the capability to programmatically create users. In this example, we will assume we already have a user in the Control Portal that we want to provision to OneLogin.
 
@@ -80,7 +80,7 @@ You may have the opposite situation where you need to create users in Control th
 6. The user receives an e-mail with a link to set their password. When they follow the link, they will set their password and then, in this case since we are using Google Authenticator, will be presented with a QR code to scan using the Google Authenticator app to setup a token and be given a security code to enter. Once this is done, the user enters the security code and clicks "log in". This will activate the user's MFA token for use.
 ![OneLogin-QR-Scan](../images/onelogin-qr-scan.png)
 
-###Putting It All Together
+### Putting It All Together
 
 Now that all the configuration is complete, users must login to Control Portal using their OneLogin credentials.
 
@@ -89,7 +89,7 @@ Now that all the configuration is complete, users must login to Control Portal u
 
 Note that the "Require SAML for Login" setting will force this user to login this way whether they access the SAML-specific login page as described in Step 1 or the primary control URL (https://control.ctl.io). If the primary URL is used, when logging in using the regular login screen, after entering the username (and any value for password), the user will be redirected to the SAML login page as described above.
 
-###Updated Signing Certificate (March 2015)
+### Updated Signing Certificate (March 2015)
 
 Customers with an existing SAML configuration as of March 5 2015 will need to update their signing certificate for use with their IdP with the following text:
 

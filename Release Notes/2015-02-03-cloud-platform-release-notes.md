@@ -8,7 +8,7 @@
 <p><strong>New Features (2)</strong>
 </p>
 <div>
-  <hr />
+  <hr>
 </div>
 <ul>
 <li><strong><strong>Self-service Virtual Machine import.</strong></strong>&nbsp;Customers can now import their existing Windows Server 2008R2, Windows Server 2012 / R2, and Red Hat Enterprise Linux 6 virtual servers into the CenturyLink Cloud. Servers can be uploaded into any cloud data center if they <a href="https://t3n.zendesk.com/entries/60156724-Self-Service-VM-Import-OVF-Requirements">meet a series of prerequisites</a>. The customer can choose the account, group, server type (standard or Hyperscale), storage level, and VLAN for the server.&nbsp;<strong><br /></strong>
@@ -18,14 +18,14 @@
 </ul>
 <p></p>
 <p><strong>Minor Enhancements (6)</strong></p>
-<div><hr /></div>
+<div><hr .></div>
 <ul>
 <li><strong>Autoscale for Red Hat Enterprise Linux 7.&nbsp;</strong>RHEL servers now support vertical CPU autoscale policies for simple, automated scale up and scale down based on utilization.</li>
-<li><strong>Cost of managed servers included in running Group/Server estimates.</strong>&nbsp;Taking advantage of managed operating systems or managed applications? Associated hourly charges are now included in both the Group overview estimates, and per-server estimates.</li>
+<li><strong>Cost of managed servers included in running Group.Server estimates.</strong>&nbsp;Taking advantage of managed operating systems or managed applications? Associated hourly charges are now included in both the Group overview estimates, and per-server estimates.</li>
 <li><strong>Site to site VPN to single data center endpoint. </strong>Site to site VPN configurations now prevent more than one configuration to the same VPN endpoint in a data center. Please contact the NOC if you'd like to set up a new VPN tunnel to an existing endpoint.</li>
 <li><strong>Private Cloud isolation in Control Portal. </strong>CenturyLink Private Cloud was launched in 2014 and customers are now going live. The Control Portal (and API) will only show a private cloud data center to the relevant customer.</li>
 <li><strong>CenturyLink administrator account removed from all virtual machines</strong>. In the past CenturyLink Cloud has used a local administrator account to perform activities on servers at the request of our customers. Moving forward, we've removed this&nbsp;account from all cloud servers. What this means for customers, is (a) all access to a cloud servers is done through customer-created accounts, and (b) if you forget your password (and do not have the server password synchronized with the Control Portal), the cloud team can no longer log in and reset it for you. Store those passwords carefully!</li>
-<li><strong>Default NIC changed on Windows 2008/2012 templates.&nbsp;</strong>In order to offer 10g connections on all Windows Servers, we've updated the default NIC on all Windows Server 2008 and Windows Server 2012 operating system templates to use the VMware VMXnet3 network adapter.</li>
+<li><strong>Default NIC changed on Windows 2008.2012 templates.&nbsp;</strong>In order to offer 10g connections on all Windows Servers, we've updated the default NIC on all Windows Server 2008 and Windows Server 2012 operating system templates to use the VMware VMXnet3 network adapter.</li>
 </ul>
 <p></p>
 <p><strong>Notifications (3)</strong></p>

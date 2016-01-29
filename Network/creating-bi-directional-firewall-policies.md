@@ -9,7 +9,7 @@
 <p><strong>Description:</strong>
 </p>
 <p>CenturyLink Cloud Platform firewall policies make it simple to connect networks within a given account or across accounts. Firewall policies are inherently one-way, but it is very straightforward to craft a pair of policies that enable bi-directional communication.
-  This walkthrough builds upon the servers, networks and policies built in the KB article entitled <a href="http://help.tier3.com/entries/22196842-connecting-data-center-networks-through-firewall-policies">Connecting Data Center Networks Through Firewall Policies</a>.</p>
+  This walkthrough builds upon the servers, networks and policies built in the KB article entitled <a href="connecting-data-center-networks-through-firewall-policies.md">Connecting Data Center Networks Through Firewall Policies</a>.</p>
 <p><strong>Steps:</strong>
 </p>
 <p><strong>1. Confirm that you have two servers in two different networks.</strong>

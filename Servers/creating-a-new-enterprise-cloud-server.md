@@ -9,6 +9,7 @@
 <p><strong>Description:</strong>
 </p>
 <p>The heart of the CenturyLink Cloud Enterprise Cloud Platform is the ability to create and manage virtual infrastructure. In this KB article, we demonstrate how to provision new virtual machines in the CenturyLink Cloud.</p>
+<p>Once you've gone through this KB article and created a new server, you can follow this Getting Started guide to learn <a href="https://www.ctl.io/knowledge-base/servers/getting-started-how-to-securely-connect-to-your-server/">how to securely connect to your new server.</a>
 <p><strong>Steps:</strong>
 </p>
 <div><strong>1. Start "Create Server" Process.</strong>
@@ -33,10 +34,10 @@
 </ul>
 <ol>
   <ol>
-    <li><a href="http://www.centurylinkcloud.com/products/management/groups">Group membership</a>&nbsp;</li>
-    <li><a href="http://www.centurylinkcloud.com/managed-services/operating-system">Managed Server</a>
+    <li><a href="http://www.ctl.io/products/management/groups">Group membership</a>&nbsp;</li>
+    <li><a href="http://www.ctl.io/managed-services/operating-system">Managed Server</a>
     </li>
-    <li><a href="http://www.centurylinkcloud.com/servers">Standard </a>or <a href="http://www.centurylinkcloud.com/products/compute/hyperscale">Hyperscale</a>&nbsp;Server Type</li>
+    <li><a href="http://www.ctl.io/servers">Standard </a>or <a href="http://www.ctl.io/products/compute/hyperscale">Hyperscale</a>&nbsp;Server Type</li>
   </ol>
 </ol>
 <p><img src="https://t3n.zendesk.com/attachments/token/Ij5TseHU3xH1OVaAxqAny7Y9h/?name=04.png" alt="04.png" />

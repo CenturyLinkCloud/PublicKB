@@ -1,95 +1,128 @@
 {{{
-  "title": "Connecting Data Center Networks Through Firewall Policies",
-  "date": "12-12-2012",
-  "author": "Richard Seroter",
+  "title": "Creating Intra Data Center Firewall Policies",
+  "date": "03-27-2015",
+  "author": "Chris Little",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
-<p><strong>Description:</strong>
-</p>
-<p>CenturyLink Cloud Platform users can now connect networks within a particular data center through the use of configurable firewall policies. This is useful when a customer has multiple vlans within a particular account, or has a range of sub-accounts with
-  their own vlans, and wants to selectively choose the traffic that can flow among them.</p>
-<p><strong>Steps:</strong>
-</p>
-<p><strong>1. Confirm that you are working with servers on multiple networks.&nbsp;</strong>
-</p>
-<ul>
-  <li>View the available networks for the parent account. Notice a single network for the account with alias <strong>RSDA</strong>.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/pr4zw73lkszj5hn/?name=firewalloverview01.png" alt="firewalloverview01.png" />
-  </li>
-  <li>Create or identify a server that is part of this account and this network. See that the server below has an IP address that is part of the above vlan.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/fp3mesplizlt7rf/?name=firewalloverview03.png" alt="firewalloverview03.png" />
-  </li>
-  <li>Navigate to a sub-account and view the available networks. In the image below, see a single network for the sub-account with alias <strong>SSUB</strong>.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/snavywmq9cyiyfw/?name=firewalloverview02.png" alt="firewalloverview02.png" />
-  </li>
-  <li>Create or identify a server that is part of this particular account and network. See that the server below has an IP address that is part of the above vlan.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/9s1lw1a1twdqrhy/?name=firewalloverview04.png" alt="firewalloverview04.png" />
-  </li>
-</ul>
-<div><strong>2. Check to see if the servers on different networks can "see" each other.</strong>
-</div>
-<div>
-  <ul>
-    <li>Log into each server.
-      <br /><img src="https://t3n.zendesk.com/attachments/token/lr9utt2jcpag7e9/?name=firewalloverview05.png" alt="firewalloverview05.png" />
-    </li>
-    <li>Attempt to ping one server from the other.
-      <br /><img src="https://t3n.zendesk.com/attachments/token/qx7sjd1lawbb4ne/?name=firewalloverview06.png" alt="firewalloverview06.png" />
-    </li>
-    <li>Notice that the server in the parent account's vlan is unable to see the server in the sub-account's vlan.</li>
-  </ul>
-  <div><strong>3. Create a firewall policy that connects these two networks.</strong>
-  </div>
-  <div>
-    <ul>
-      <li>Navigate back to the parent account's <strong>Network </strong>settings. If you have appropriate permissions, then a menu item called <strong>Firewall </strong>should appear in the Network navigation.
-        <br /><img src="https://t3n.zendesk.com/attachments/token/khmpd6qbg6uxina/?name=firewalloverview07.png" alt="firewalloverview07.png" />
-      </li>
-      <li>On the Firewalls page, there are two key sections (highlighted below) beneath either the&nbsp;<strong>Intra Data Center </strong>and <strong>Cross Data Center </strong>tabs. The <strong>first section</strong> identifies the account connections being
-        made. Once an account is selected, all vlans that are part of that account can become part of the firewall policy. <strong>Note that this screen does not show ALL firewall policies in place for an account. It only shows the policies that are in place for the selected "source account" and "destination account" combination. </strong>The
-        <strong>second section</strong>&nbsp;of this screen is where firewall policies are created, edited and ordered.
-        <br /><img src="https://t3n.zendesk.com/attachments/token/7vz1ebnfc1puyso/?name=firewalloverview08.png" alt="firewalloverview08.png" />
-      </li>
-      <li>Set the <strong>Destination Account </strong>to the appropriate sub-account, or keep the same account name of the <strong>Account Account</strong>&nbsp;if you are planning to link multiple networks within the same account.
-        <br /><img src="https://t3n.zendesk.com/attachments/token/7vpflfmsslcftxr/?name=firewalloverview09.png" alt="firewalloverview09.png" />
-      </li>
-      <li>Click the <strong>add policy </strong>button to define a new firewall policy between vlans in these two accounts. From here you can set the status ("on" or "off"), source IP addresses, destination IP addresses, and ports to expose.
-        <br /><img src="https://t3n.zendesk.com/attachments/token/cjomfru8jscgrfy/?name=firewalloverview10.png" alt="firewalloverview10.png" />
-      </li>
-      <li>Click the <strong>add source address </strong>button to choose the vlan and IP address (range) that is part of this policy. This pop up lets you narrow down the pool of source IP addresses by selecting a subnet size and the starting IP address.
-        <br
-        /><img src="https://t3n.zendesk.com/attachments/token/k8ujnbnc78uls8c/?name=firewalloverview11.png" alt="firewalloverview11.png" />
-      </li>
-      <li>When these settings are saved, the firewall policy shows the source address in <a href="http://en.wikipedia.org/wiki/CIDR_notation">Classless Inter-Domain Routing (CIDR) notation</a>&nbsp;(see an <a href="http://technet.microsoft.com/en-us/library/cc958832.aspx"
-       >additional explanation of CIDR here</a>).
-        <br /><img src="https://t3n.zendesk.com/attachments/token/46jc6gtxktmmsc1/?name=firewalloverview12.png" alt="firewalloverview12.png" />
-      </li>
-      <li>Next, choose the <strong>add destination address</strong>&nbsp;button and select a network and IP range that will satisfy the needs of the firewall policy.
-        <br /><img src="https://t3n.zendesk.com/attachments/token/d6d0e1hwezulvuy/?name=firewalloverview13.png" alt="firewalloverview13.png" />
-      </li>
-      <li>Finally, click the <strong>add port</strong>&nbsp;button to select which ports are being opened as part of this firewall policy.
-        <br /><img src="https://t3n.zendesk.com/attachments/token/noalky2hyx9a7wb/?name=firewalloverview14.png" alt="firewalloverview14.png" />
-      </li>
-      <li>In this example, the PING port was selected to enable simple ping communication between the networks.
-        <br /><img src="https://t3n.zendesk.com/attachments/token/u5u4rzv2ukzwfzm/?name=firewalloverview15.png" alt="firewalloverview15.png" />
-      </li>
-      <li>Save the firewall policy and it is instantly applied to the firewall. You can then see the policy and click it to edit it.
-        <br /><img src="https://t3n.zendesk.com/attachments/token/mmf28xgrohw7itv/?name=firewalloverview16.png" alt="firewalloverview16.png" />
-      </li>
-      <li>Note that there can be multiple firewall policies defined between networks, and the <strong>order of policies matters</strong>. The policies are evaluated in a "first match" manner, so the most restrictive policies should be at the top, and the
-        most unrestricted at the bottom.</li>
-    </ul>
-    <div><strong>4. Confirm that firewall policy is working.</strong>
-    </div>
-    <div>
-      <ul>
-        <li>From the server in the parent account's network, once again attempt to ping the server in the sub-account's network.
-          <br /><img src="https://t3n.zendesk.com/attachments/token/mtdute2j3pmbxkz/?name=firewalloverview17.png" alt="firewalloverview17.png" />
-        </li>
-        <li>See that the ping attempt is now successful because there is now a firewall policy in place that allows ping communication between the two networks.</li>
-      </ul>
-    </div>
-  </div>
-</div>
+### Overview
+The CenturyLink Cloud Platform provides self-service tools to connect networks within a particular data center ("intra data center") through the use of configurable firewall policies. This is useful when a customer has multiple networks (vlans) within a particular account, or has a range of sub-accounts with their own vlans, and wants to selectively choose the traffic that can flow among them.
+
+### Connecting Networks within a Single Account
+
+1. Create network VLAN(s) in the respective CenturyLink Cloud Data Center.  We recommend [applying friendly names](../Network/add-a-user-friendly-name-to-vlans.md) to Networks.
+
+2. Validate the networks are in place in your CenturyLink Cloud account using the Networks menu item and selecting the appropriate Data Center.  In the sample below, a Web Services & Database Services VLAN exists in UC1.
+
+  ![validate networks](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-01.png)
+
+3. Create Virtual Instances within the appropriate network (VLAN).   In this example, we have created (2) VM's as follows:
+
+  Web VM (IP 10.120.68.15) in Web Services 10.120.68.50/24 Network (VLAN)
+
+  ![Web VM](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-02.png)
+
+  DB VM (IP 10.120.69.12) in Database Services 10.120.69.0/24 Network (VLAN)
+
+  ![DB VM](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-03.png)
+
+  **OPTIONAL:**  Perform a test ICMP ping between the web server & database server.  This test should fail as no Firewall Rule is in place between networks in UC1.
+
+  ![Ping Test](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-04.png)
+
+4. Navigate to the Firewall menu in Control.
+
+  ![Navigate to Firewall](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-05.png)
+
+5. Select the desired CenturyLink Cloud Data Center node you wish to create an Firewall rule.  Next, choose to the Intra Data Center tab.  In this example, we used UC1.
+
+  ![Intra DC Policy](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-06.png)
+
+6. Choose Add Policy, Add Source Address.
+
+  ![Source Policy](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-07.png)
+
+7. Select the appropriate source network followed by the subnet size.  Customers can choose to do an entire network (VLAN), CIDR blocks or individual IPs in the rule set.  In this example, we are choosing the Web Services (10.120.68.0/24) network and the individual Web VM (10.120.68.15) for this rule set.
+
+  ![Source Policy network](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-08.png)
+
+  ![Source Policy end state](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-09.png)
+
+8. Choose Add Destination Address.  Select the appropriate destination network followed by the subnet size.  Customers can choose to do an entire network (VLAN), CIDR blocks or individual IPs in the rule set.  In this example, we are choosing the Database Services (10.120.69.0/24) network and the individual DB VM (10.120.69.12) for this rule set.
+
+  ![destination network](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-10.png)
+
+9. Select Add Ports.  Customers can choose from predefined TCP ports (any, FTP, FTPS, HTTP, HTTPS, PING, SSH, RDP), Custom TCP or UDP ports and Custom TCP or UDP port ranges all within the same rule set.  For demonstration purposes, we are simply opening PING.  Choose Ok.
+
+  ![source and destination networks](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-11.png)
+
+  ![ports open](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-12.png)
+
+10. Once complete, press the Save button.  Your new Intra Data Center Rule will take less than 60 seconds to process in the Queue.  You can review its progress using the Queue Menu item.  
+
+  ![completed policy](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-13.png)
+
+11. Confirm the Intra Data Center Firewall Policy is functional by performing another ICMP Ping test between virtual instances located in the (2) networks.  In this example, we are able to ping from the Web VM (10.120.68.15) to the DB VM (10.120.69.12).  
+
+  ![ping test](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-14.png)
+
+### Connecting Networks Across a Parent & Sub-Account Hierarchy
+
+1. Create the appropriate Parent & Sub-Account Hierarchy.  Refer to the [Account Hierarchy Primer](../Accounts & Users/account-hierarchy-user-network-and-firewall-policy-primer.md) for more information.
+
+2. Create network VLAN(s) in the respective CenturyLink Cloud Data Center and Accounts.  We recommend [applying friendly names](../Network/add-a-user-friendly-name-to-vlans.md) to Networks.
+
+3. Validate the networks are in place in your CenturyLink Cloud accounts using the Networks menu item and selecting the appropriate Data Center.  In the sample below, a Parent Web Services network & a Sub-Account DB VLAN exists in UC1 under unique Accounts.  
+
+  ![Web VLAN](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-15.png)
+
+  ![DB VLAN](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-16.png)
+
+4. Create Virtual Instances within the appropriate network (VLAN).   In this example, we have created (2) VMs as follows
+
+  Web VM (IP 10.120.68.15) in Web Services 10.120.68.50/24 Network (VLAN)
+
+  ![Web VM](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-17.png)
+
+  DB VM (IP 10.122.171.12) in Sub-Account DB 10.122.171.0/24 Network (VLAN)
+
+  ![DB VM](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-18.png)
+
+  **OPTIONAL:** Perform a test ICMP ping between the web server (parent account) & database server (sub-account).  This test should fail as no Firewall Rule is in place between these networks in UC1.
+
+5. Navigate to the Firewall menu in Control.
+
+  ![Firewall Menu](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-19.png)
+
+6. Select the desired CenturyLink Cloud Data Center node you wish to create an Firewall rule.  Next, choose to the Intra Data Center tab and change the **destination account** to the appropriate sub-account.  In this example, in UC1 we chose a Sandbox Sub Account.  
+
+  ![Destination Account](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-20.png)
+
+7. Choose Add Policy, Add Source Address.
+
+  ![Add Source Address](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-21.png)
+
+8. Select the appropriate source network followed by the subnet size.  Customers can choose to do an entire network (VLAN), CIDR blocks or individual IPs in the rule set.  In this example, we are choosing the Web Services (10.120.68.0/24) network and the individual Web VM (10.120.68.15) for this rule set.
+
+  ![Select Source Network or IP](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-22.png)
+
+  ![Source Network Complete](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-23.png)
+
+9. Choose Add Destination Address.  Select the appropriate destination network followed by the subnet size.  Customers can choose to do an entire network (VLAN), CIDR blocks or individual IPs in the rule set.  In this example, we are choosing the Sub-Account DB (10.122.171.0/24) network and the individual DB VM (10.122.171.12) for this rule set.
+
+  ![Select Destination Network or IP](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-24.png)
+
+10. Select Add Ports.  Customers can choose from predefined TCP ports (any, FTP, FTPS, HTTP, HTTPS, PING, SSH, RDP), Custom TCP or UDP ports and Custom TCP or UDP port ranges all within the same rule set.  For demonstration purposes, we are simply opening PING.  Choose Ok.
+
+  ![Source and Destination complete](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-25.png)
+
+  ![Select Ports](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-26.png)
+
+11. Once complete, press the Save button.  Your new Intra Data Center Rule will take less than 60 seconds to process in the Queue.  You can review its progress using the Queue Menu item.
+
+  ![Firewall Rule Complete](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-27.png)
+
+12. Confirm the Intra Data Center Firewall Policy is functional by performing another ICMP Ping test between virtual instances located in the (2) networks.  In this example, we are able to ping from the Web VM (10.120.68.15) to the DB VM (10.122.171.12).  
+
+  ![Ping Test](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-28.png)

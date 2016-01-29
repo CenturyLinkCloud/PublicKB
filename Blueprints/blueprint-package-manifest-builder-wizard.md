@@ -1,12 +1,12 @@
 {{{
   "title": "Blueprint Package Manifest Builder Wizard",
-  "date": "2-23-2015",
-  "author": "Keith Resar",
+  "date": "6-09-2015",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-Take advantage of our web-based [Blueprint Package Manifest Builder Wizard](http://centurylinkcloud.github.io/Ecosystem/BlueprintManifestBuilder/) to:
+Take advantage of our web-based [Blueprint Package Manifest Builder Wizard](http://centurylinkcloud.github.io/blueprint-package-manifest-builder/) to:
 
 * Discover the user and system generated data collector widgets
 * Create a functional package.manifest file
@@ -18,7 +18,7 @@ For a more in-depth review of how to manually create a Blueprint Package or to r
 
 The wizard screen is divided into four primary components.  See details on each in the Wizard Usage section of this article.
 
-[![](../images/blueprint-package-manifest-wizard-1.png)](http://centurylinkcloud.github.io/Ecosystem/BlueprintManifestBuilder/)
+[![](../images/blueprint-package-manifest-wizard-1.png)](http://centurylinkcloud.github.io/blueprint-package-manifest-builder/)
 
 1. Package Foundational Definition.  Define package-level attributes such as names and identifiers
 2. User and System Parameter widgets.  Drag and drop one or more of these into section (3) as you build your package design.
@@ -27,7 +27,7 @@ The wizard screen is divided into four primary components.  See details on each 
 
 ### Wizard Usage
 
-Access the [Blueprint Package Manifest Builder Wizard](http://centurylinkcloud.github.io/Ecosystem/BlueprintManifestBuilder/) and follow these steps to successfully create your package.
+Access the [Blueprint Package Manifest Builder Wizard](http://centurylinkcloud.github.io/blueprint-package-manifest-builder/) and follow these steps to successfully create your package.
 
 
 1. **Package Foundational Definition**
