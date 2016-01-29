@@ -207,3 +207,4 @@ The costs associated with running Kubernetes from the ansible scripts are for th
 * For issues related to creating the Kubernetes cluster, please email kubernetes@ctl.io or create a support ticket. 
 * For issues related to cloud infrastructure (VM’s, network, etc), please open a CenturyLink Cloud Support ticket: https://t3n.zendesk.com/tickets/new
 * For more information on using Kubernetes, please visit http://kubernetes.io/v1.1/
+

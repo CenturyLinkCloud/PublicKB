@@ -11,6 +11,7 @@
     "Disaster Recovery",
     "Ecosystem Partners",
     "General",
+    "Kubernetes",
     "Mail",
     "Managed Services",
     "Network",
