@@ -6,6 +6,7 @@
     "Autoscale",
     "Blueprints",
     "Compliance",
+    "Container Services",
     "Control Portal",
     "Database",
     "Disaster Recovery",
