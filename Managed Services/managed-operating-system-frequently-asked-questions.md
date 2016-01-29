@@ -91,12 +91,9 @@ Files can be transferred by simply drag and drop in Windows Explorer from your r
 
 The CenturyLink Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at the numbers below, or send email to request@centurylink.com for Managed OS issues. If there is an incident, email can be sent to incident@centurylink.com.
 
-* United States: 1-855-287-2541
-* Canada: 1-877-387-3764
-* Europe, Middle East &amp; Africa: +44 (0) 207 400 5600
-* Japan: +81 3 5214 0180
-* Hong Kong: +852 3079 4461
-* Singapore: +65 6591 8824
+* US: 888.638.6771
+* UK: +44.118.322.6100
+* Singapore: +65.6305.8099
 
 **How is Managed Support different than Platform Support?**
 
