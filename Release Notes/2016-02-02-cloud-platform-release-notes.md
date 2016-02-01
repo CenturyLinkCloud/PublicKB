@@ -24,7 +24,7 @@ Features include:
 
 For more information visit: https://www.ctl.io/relational-database/
 
-![Relational DB Logo](../images/2016-02-02-relational_db_logo.png)
+	![Relational DB Logo](../images/2016-02-02-relational_db_logo.png)
 
 ### Early Adopter Program (1)
 
@@ -49,4 +49,4 @@ For more information visit: https://www.ctl.io/relational-database/
 	
 	Source: https://github.com/CenturyLinkCloud/Cyclops
 
-![Cyclops Logo](../images/2016-02-02-cyclops_logo.png)
+	![Cyclops Logo](../images/2016-02-02-cyclops_logo.png)
