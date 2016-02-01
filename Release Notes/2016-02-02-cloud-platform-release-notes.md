@@ -26,8 +26,9 @@
 
 ![Relational DB Logo](../images/2016-02-02-relational_db_logo.png)
 
-### Early Adopter Program (1)
+### Early Adopter Program (2)
 
+* __Simple Backup Service.__ [Simple Backup](https://www.ctl.io/simple-backup-service/) now supports account switching functionality within the control portal. With account switching, users may now provision backup policies for servers that reside under different sub accounts without having to login to each sub account directly.
 * __DBaaS Beta Conclusion.__ The [DBaaS beta](https://www.ctl.io/dbaas/) ended January 25; the service is now generally available as the "Relational DB Service". This new service supports rapid software delivery by providing instant access to a high performance, enterprise-hardened MySQL-compatible database instances. The service is hosted on CenturyLink Cloud's [Hyperscale service](https://www.ctl.io/hyperscale/), with 100% flash storage. The service will be GA at launch in three CenturyLink Cloud locations: IL1, VA1 and UC1.
 
 ### Announcements (1)
