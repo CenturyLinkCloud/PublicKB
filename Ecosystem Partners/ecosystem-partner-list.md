@@ -1,6 +1,6 @@
 {{{
   "title": "Ecosystem Partner List",
-  "date": "10-02-2015",
+  "date": "01-26-2016",
   "author": "CenturyLink Ecosystem",
   "attachments": [],
   "contentIsHTML": false,
@@ -26,6 +26,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [LaGrange Systems CloudMaestro](../Ecosystem Partners/Marketplace Guides/getting-started-with-lagrange-systems-cloudmaestro-blueprint.md)   	| Blueprint    | Application Delivery Controller  |
 | [NGiNX](../Ecosystem Partners/Marketplace Guides/getting-started-with-nginx-blueprint.md)   	| Blueprint    | Web traffic manager    |
 | [OpenVPN AS](../Ecosystem Partners/Marketplace Guides/getting-started-with-openvpnas-appliance.md)   	| Blueprint (Virtual Appliance)    | Secure access manager    |
+| [Silver Peak](../Ecosystem Partners/Marketplace Guides/getting-started-with-silver-peak-partner-template.md)   	| Template    | WAN acceleration    |
 
 ### Development Frameworks
 
@@ -33,6 +34,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 |:-	|:-	|
 | [Apache HTTP Server](../Managed Services/getting-started-with-managed-apache.md)   	| Blueprint (Managed)   | Multi-purpose web server    |
 | [Apache Tomcat Server](../Managed Services/getting-started-with-managed-tomcat.md)   	| Blueprint (Managed)   | Web application server    |
+| [AppsFreedom](../Ecosystem Partners/Marketplace Guides/getting-started-with-appsfreedom-centOS.md)   	| Blueprint   | Mobile application development platform    |
 | [CloudMine](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudmine-blueprint.md)   	| Blueprint    | Mobile backend    |
 | [Heirloom Elastic COBOL](../Ecosystem Partners/Marketplace Guides/getting-started-with-elastic-cobol.md)     | Blueprint | Legacy COBOL Code migration |
 | [LAMP](../Ecosystem Partners/Marketplace Guides/getting-started-with-lamp-stack-blueprint.md)   	| Blueprint    | Linux, Apache, MariaDB/MySQL, and PHP/Perl/Python bundle    |
@@ -49,6 +51,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Alert Logic Web Security Manager](../Ecosystem Partners/Marketplace Guides/getting-started-with-alert-logic-web-security-manager-partner-template.md)   	| Template    | Web security manager appliance    |
 | [Alert Logic Threat Manager](../Ecosystem Partners/Marketplace Guides/getting-started-with-alert-logic-threat-manager-partner-template.md)   	| Template    | Threat manager appliance    |
 | [Cavirin Automated Risk Analysis Platform](../Ecosystem Partners/Marketplace Guides/getting-started-with-cavirin-automated-risk-analysis-platform-partner-template.md)   	| Template    | Governance and compliance appliance    |
+| [FlexSecure](../Ecosystem Partners/Marketplace Guides/getting-started-with-flexsecure.md)   	| Blueprint    | Context-based Security-as-a-Service platform    |
 | [OSSEC](../Ecosystem Partners/Marketplace Guides/getting-started-with-ossec-blueprints.md)   	| Template    | HIDS    |
 | [Symas](../Ecosystem Partners/Marketplace Guides/getting-started-with-symas-open-ldap-silver.md)   	| Blueprint   | LDAP    |
 | [Vormetric](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-dsm.md)   	| Template    | Data encryption and key management    |
@@ -66,8 +69,12 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [C<sup>3</sup>DNA](../Ecosystem Partners/Marketplace Guides/getting-started-with-c3dna-appliance.md)   	| Blueprint    | Cloud Management Platform    |
 | [CloudBolt](../Ecosystem Partners/Marketplace Guides/getting-started-with-cloudbolt-appliance.md)   	| Blueprint    | Cloud Management Platform    |
 | [Chef Server](../Ecosystem Partners/Marketplace Guides/getting-started-with-chef-server-blueprint.md)   	| Blueprint    | Configuration management    |
+| [Docker Machine](../Ecosystem Partners/Marketplace Guides/getting-started-with-docker-machine.md)   	| Blueprint    | Automated Docker provisioning |
+| [Docker Trusted Registry](../Ecosystem Partners/Marketplace Guides/getting-started-with-docker-trusted-registry-blueprint.md)   	| Blueprint    | Store and manage Docker images within CenturyLink Cloud |
 | [Dynatrace](../Ecosystem Partners/Marketplace Guides/getting-started-with-dynatrace-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
+| [Mesosphere](../Ecosystem Partners/Marketplace Guides/getting-started-with-mesosphere-blueprint.md)   	| Blueprint    | Datacenter operating system |
 | [Rundeck](../Ecosystem Partners/Marketplace Guides/getting-started-with-rundeck-blueprint.md)   	| Blueprint    | Job scheduler and runbook automation   |
+| [Ruxit](../Ecosystem Partners/Marketplace Guides/getting-started-with-ruxit-blueprint.md)   	| Blueprint    | Application performance monitoring (APM)   |
 
 
 ### Development Toolchain
@@ -101,6 +108,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Couchbase](../Ecosystem Partners/Marketplace Guides/getting-started-with-couchbase.md)   	| Blueprint    | Scale out Database    |
 | [DataStax Cassandra](../Ecosystem Partners/Marketplace Guides/getting-started-with-datastax-blueprint.md)   	| Blueprint    | Distributed NoSQL database    |
 | [Hortonworks Hadoop](../Ecosystem Partners/Marketplace Guides/getting-started-with-hortonworks-hadoop-blueprint.md)   	| Blueprint    | Distributed NoSQL database    |
+| [MapR](../Ecosystem Partners/Marketplace Guides/getting-started-with-mapr-blueprint.md)   	| Blueprint    | Enterprise-grade Hadoop cluster    |
 | [MEAN Stack](../Ecosystem Partners/Marketplace Guides/getting-started-with-mongodb-blueprint.md)   	| Blueprint    | MongoDB, Express, Angular, Node.js bundle    |
 | [Microsoft SQL Server](../Managed Services/getting-started-with-managed-microsoft-sql-server.md)   	| Blueprint (Managed)   | Enterprise-grade relational database management system   |
 | [MongoDB](../Ecosystem Partners/Marketplace Guides/getting-started-with-mongodb-blueprint.md)   	| Blueprint    | High performance document oriented NoSQL database    |

@@ -83,8 +83,8 @@ Docker users interested in deploying machines on CenturyLink Cloud.
 ### Machine options
 
 
-#### Public IP
-By default, a public IP is allocated on your docker-machine instance, controlled by the `--clc-server-private` flag. Connectivity is required for docker-machine to install the docker engine software bits. This means that if public ips are not available or you don't want the tls-secured machine publicly accessible, you'll need to 
+#### Public/Private
+By default, a public IP is allocated on your docker-machine instance, controlled by the `--clc-server-private` flag. SSH is required for docker-machine to install the docker engine software packages. This means that if public ips are not available or you don't want the tls-secured machine publicly accessible, you'll need to be connected via [VPN Access](../../Network/how-to-configure-client-vpn.md).
 
 
 
