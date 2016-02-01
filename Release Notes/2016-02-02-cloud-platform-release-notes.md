@@ -26,10 +26,10 @@
 
 ![Relational DB Logo](../images/2016-02-02-relational_db_logo.png)
 
-### Early Adopter Program (2)
+### Early Adopter Program (1)
 
-* __Simple Backup Service.__ [Simple Backup](https://www.ctl.io/simple-backup-service/) now supports account switching functionality within the control portal. With account switching, users may now provision backup policies for servers that reside under different sub accounts without having to login to each sub account directly.
-* __DBaaS Beta Conclusion.__ The [DBaaS beta](https://www.ctl.io/dbaas/) ended January 25; the service is now generally available as the "Relational DB Service". This new service supports rapid software delivery by providing instant access to a high performance, enterprise-hardened MySQL-compatible database instances. The service is hosted on CenturyLink Cloud's [Hyperscale service](https://www.ctl.io/hyperscale/), with 100% flash storage. The service will be GA at launch in three CenturyLink Cloud locations: IL1, VA1 and UC1.
+* __Simple Backup Service.__ [Simple Backup](https://www.ctl.io/simple-backup-service/) now supports account switching functionality within the Control Portal. With account switching, users may now provision backup policies for servers that reside under different sub accounts without having to login to each sub account directly.
+
 
 ### Announcements (1)
 
@@ -40,12 +40,12 @@
 ### Ecosystem (2)
 
 * __MapR.__ We've added another top-tier player in the Hadoop space - MapR joins the ranks of Cloudera and Pivotal HD as yet another organization that recognizes the opportunity CenturyLink Cloud virtual and bare metal IaaS offers to the Big Data space.  [Deploy MapR Community Edition today.](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-mapr-blueprint/)
-* __CouchBase and OrientDB.__ Whether it be a greenfield build on CenturyLink cloud or an existing application migration, we are the place for NoSQL database engines.  We've also added  [CouchBase](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-couchbase/) and [OrientDB](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-orientdb/#audience) for instant deployment from our marketplace.  Find the best software for your application - or compare the performance and reliability of the underlying IaaS.
+* __CouchBase and OrientDB.__ Whether it be a greenfield build on CenturyLink Cloud or an existing application migration, we are the place for NoSQL database engines.  We've also added  [CouchBase](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-couchbase/) and [OrientDB](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-orientdb/#audience) for instant deployment from our marketplace.  Find the best software for your application - or compare the performance and reliability of the underlying IaaS.
 
 
 ### Open Source Contributions (1)
 
-* __Cyclops.__ [Cyclops](https://github.com/CenturyLinkCloud/Cyclops) is an open source collection of ux/ui patterns that make up the CenturyLink Cloud user interface. It's our way to showing how focused we are on creating a delightful and responsive user experience. 
+* __Cyclops.__ [Cyclops](https://github.com/CenturyLinkCloud/Cyclops) is an open source collection of UX/UI patterns that make up the CenturyLink Cloud user interface. It's our way to showing how focused we are on creating a delightful and responsive user experience. 
 
 	![Cyclops Logo](../images/2016-02-02-cyclops_logo.png)
 
