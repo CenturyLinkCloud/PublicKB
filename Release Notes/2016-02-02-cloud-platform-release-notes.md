@@ -24,7 +24,7 @@ Features include:
 
 For more information visit: https://www.ctl.io/relational-database/
 
-	![Relational DB Logo](../images/2016-02-02-relational_db_logo.png)
+![Relational DB Logo](../images/2016-02-02-relational_db_logo.png)
 
 ### Early Adopter Program (1)
 
@@ -45,8 +45,8 @@ For more information visit: https://www.ctl.io/relational-database/
 
 * __[Cyclops](https://github.com/CenturyLinkCloud/Cyclops).__ Cyclops is an open source collection of ux/ui patterns that make up the CenturyLink Cloud user interface. It's our way to showing how focused we are on creating a delightful and responsive user experience. 
 
+	![Cyclops Logo](../images/2016-02-02-cyclops_logo.png)
+
 	Browse the pattern library here: http://assets.ctl.io/cyclops
 	
 	Source: https://github.com/CenturyLinkCloud/Cyclops
-
-	![Cyclops Logo](../images/2016-02-02-cyclops_logo.png)
