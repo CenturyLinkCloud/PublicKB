@@ -5,6 +5,7 @@
     "AppFog",
     "Autoscale",
     "Blueprints",
+    "Compliance",
     "Control Portal",
     "Database",
     "Disaster Recovery",
@@ -14,11 +15,11 @@
     "Managed Services",
     "Network",
     "Object Storage",
+    "Orchestrate",
     "Partners",
     "Release Notes",
     "Security",
     "Service Tasks",
-    "Servers",
-    "WordPress"
+    "Servers"
   ]
 }}}

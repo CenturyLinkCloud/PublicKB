@@ -1,5 +1,5 @@
 {{{
-  "title": "Platform Specific: Does AppFog have a persistent file system?",
+  "title": "How Can I Update My App Without Downtime?",
   "date": "1-22-2015",
   "author": "Chris Sterling",
   "attachments": [],

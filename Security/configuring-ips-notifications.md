@@ -1,7 +1,7 @@
 {{{
   "title": "Configuring Intrusion Prevention System (IPS) Notifications",
-  "date": "09-21-2015",
-  "author": "Sean Robb",
+  "date": "10-22-2015",
+  "author": "Client-Security",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -14,7 +14,7 @@ The Platform CenturyLink IPS utilizes an Agent installed on your Virtual Machine
 
 The Blueprint allows a customer that has purchased the IPS service from Platform CenturyLink to modify how they would like to be notified regarding IPS security events. This Blueprint will only change **Slack** notification settings for the server it is run against.
 
-Our API allows for a customer to set notification destinations for either **Slack** or **Sys Log**.  
+Our API allows for a customer to set notification destinations for either **Slack** or **Syslog**.  
 
 ### Prerequisites
 
@@ -53,72 +53,7 @@ Our API allows for a customer to set notification destinations for either **Slac
 6. An email notification will be sent to the initiator of the Blueprint for both queuing and completion.
 
 ### Configuration Process via our API
-
-Sets a destination for all IPS event notifications to be sent to. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
-
-#### URL
-
-##### Structure
-
->PUT http://api.client-security.ctl.io/ips/api/notifications/{accountAlias}/{serverName}
->
->'[
->   {
->       "url":{some URL},
->       "typeCode":{endpoint type}
->   }
->]'
-
-#### Request
-
-##### URI Parameters
-
-| **Name**     | **Type** | **Description**                                               | **REQ.**|
-|--------------|----------|---------------------------------------------------------------|---------|
-|accountAlias  |string    |Short code for a particular account                            |Yes      |
-|serverName    |string    |The name of the server that the destination should be set for. |Yes      |
-
-##### Content Properties
-
-| **Name**                | **Type** | **Description**                      | **REQ.** |
-|-------------------------|----------|--------------------------------------|----------|
-|notificationDestinations |array     | List of Notification Destinations    |Yes       |       
-
-##### Notification Destination Definition 
-
-| **Name** | **Type** | **Description**                                                            | **REQ.** |
-|----------|----------|----------------------------------------------------------------------------|----------|
-|url       |string    |The URL endpoint for notification.                                          |No        |
-|typeCode  |string    |This is the type of destination. SYSLOG or WEBHOOK for a Slack format       |Yes       |
-|sysLogSettings|SysLogSettings|This contains all of the options for syslog                         |No        |
-
-##### SysLogSettings Definition
-| **Name**  | **Type**  | **Description**                                                 | **REQ.**  |
-|-----------|---------- |-----------------------------------------------------------------|-----------|
-|ipAddress  |String     |The IP address of customers syslog server                        |Yes        |
-|udpPort    |Integer    |The port the syslog is listening on                              |Yes        |
-|facility   |Integer    |This is an Integer, 16-23, for descriptions see below.             |Yes        |
-
-Facility is to set the type of program logging messages. The options are 16-23 for descriptions follow the link: [https://en.wikipedia.org/wiki/Syslog](https://en.wikipedia.org/wiki/Syslog) 
-
-##### Example
-
->PUT http://api.client-security.ctl.io/ips/api/notification/ALIAS/VA1ALIASMYSVR01
->
->'[
-          {
-              "url": "http://my.slack.webhook",
-              "typeCode": "WEBHOOK"
-          },
-          {
-              "typCode": "SYSLOG",
-              "sysLogSettings": {
-                  "ipAddress": "12345",
-                  "udpPort": "8081",
-                  "facility": "16"
-              }
-          }
-      ]'
+This can be found in the following document [IPS-API](ips-api.md)
 
 ### Frequently Asked Questions
 
@@ -132,11 +67,11 @@ Not at this time. If you would like to recommend another, please send request de
 
 **Do you retain the data after the event notification is sent?**
 
-Yes, we retain the data for 60 days.  If you need a longer data retention period, we are working on additional add-on functionality to store this data.  If you are interested, please send request details to [features@ctl.io](mailto:features@ctl.io).
+Yes, we retain the data for 13 weeks.  If you are interested in a longer retention period, please send request details to [features@ctl.io](mailto:features@ctl.io).
 
 **Are you storing the full payload in another location?**
 
-Yes, we retain the data in another location for 60 days.
+Yes, we retain the data in another location for 13 weeks.
 
 **Do you support a text message or paging service?**
 

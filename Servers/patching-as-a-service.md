@@ -6,8 +6,8 @@
   "contentIsHTML": false
 }}}
 
-### Table of Contents
-
+Table of Contents
+=================
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
@@ -18,6 +18,7 @@
 * [Option 3: API](#option-3-api)
 * [Summary of All Patches Deployed to a Server](#summary-of-all-patches-deployed-to-a-server)
 * [Detail of Patches Deployed in an Execution](#detail-of-patches-deployed-in-an-execution)
+
 
 
 ### Overview
@@ -56,7 +57,9 @@ CenturyLink Cloud Users
 
 ### Support
 
-This service has been tested for the scope identified within this article. Product improvement is important to us so our Product Team will be aware of issues related to this service, but no one will providing direct client support. If you have suggestions for improvement, please submit a feature request.
+If you have any concerns with the use or affects of this product, please submit a support ticket to CenturyLink Cloud.
+
+If you have suggestions for improvement, please submit a feature request.
 
 ### Pricing
 
@@ -72,7 +75,7 @@ For any method you choose, the following table will assist you with data needed 
 **Operating Systems** | **Blueprint Name** | **Script Package Name** | **Package ID**
  --- | --- | --- | ---
  Windows 2012 and 2012R2 | Auto Patching Windows 2012 | Auto Patching Windows 2012 | b229535c-a313-4a31-baf8-6aa71ff4b9ed
- Red Hat Enterprise Linux 5, 6, and 7 OR CentOS 5 and 6 | Auto Patching RHEL or CentOS | Auto Patching RHEL/CentOS | 5d743f04-a9ce-4174-a7c8-52df93c47c08
+ Red Hat Enterprise Linux 5, 6, and 7 OR CentOS 5 and 6 | Yum Update Script | Yum Update | 5d743f04-a9ce-4174-a7c8-52df93c47c08
 
 
 ### Option 1: Blueprint
@@ -89,9 +92,9 @@ The process initiated by the script package may include several, automated reboo
 
 Locate and select the appropriate Blueprint within the Blueprint Library. See the table above for the name of the Blueprint.
 
-![Auto Patching Windows 2012 Blueprint Image](../images/Patching/PatchaaS_WindowsUpdateHoverProd.png)
+![Windows Update Scripts Blueprint Image](../images/Patching/PatchaaS_WindowsUpdateHoverProd.png)
 
-![Auto Patching RHEL or CentOS Blueprint Image](../images/Patching/PatchaaS_YumUpdateBP.png)
+![YUM Update Script Blueprint Image](../images/Patching/PatchaaS_YumUpdateBP.png)
 
 
 
@@ -116,6 +119,7 @@ The execution will continue even after the completion of the script so please le
 After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
 
 
+
 ### Option 2: Group Action
 
 Control Portal's server group action functionality allows for execution of a script package against one or multiple servers in a server group.
@@ -128,7 +132,7 @@ The process initiated by the script package may include several, automated reboo
 
 2\. Execute Action
 
-Navigate to the group and select "execute package" from the [action drop-down](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) . The name of the package to search for is in the table above.
+Navigate to the group and select "execute package" from the [action drop-down](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md). The name of the package to search for is in the table above.
 
 
 ![Patching_GroupActionWindows](../images/Patching/PatchaaS_GroupAction.png)
@@ -143,6 +147,7 @@ Navigate to the group and select "execute package" from the [action drop-down](.
 4\. Execution Complete
 
 After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
+
 
 ### Option 3: API
 
@@ -176,7 +181,6 @@ Please reference [API Documentation about authentication](https://www.ctl.io/api
 3\. Execution Complete
 
 After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
-
 
 
 

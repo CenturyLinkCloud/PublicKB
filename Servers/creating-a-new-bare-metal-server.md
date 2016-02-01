@@ -8,6 +8,8 @@
 ### Description
 Creating a bare metal server on CenturyLink Cloud follows a similar flow as [creating a virtual server](../Servers/creating-a-new-enterprise-cloud-server.md), with a few exceptions. The steps below demonstrate how to provision new bare metal machines in the CenturyLink Cloud. For specifications on which capabilities are supported for bare metal servers as opposed to virtual machines, you may reference the [Server Comparison Matrix](../Servers/server-comparison-matrix.md) for details. For more information on Bare Metal servers in general, please refer to the [Bare Metal FAQ](../Servers/bare-metal-faq.md).
 
+Once you've gone through this KB article and created a new server, you can follow this Getting Started guide to learn [how to securely connect to your new server.](../Servers/getting-started-how-to-securely-connect-to-your-server.md)
+
 ### Steps
 
 1. To start the "Create Server" Process, use the **+** icon on the left side of the **Servers** area and choose **+ Server** to bring up the **Create Server** page.
