@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>Customers may deploy CDN, using one of CenturyLink’s CDN partners. To inquire about CDN services, please send an email to: <a href="mailto:CDNRequests@savvis.com">CDNRequests@savvis.com</a>.</p>
+<p>Customers may deploy CDN, using one of CenturyLink’s CDN partners. To inquire about CDN services, please send an email to: <a href="mailto:CDNRequests@centurylink.com">CDNRequests@centurylink.com</a>.</p>
 <p>Alternatively, you may contact your account representative.</p>
 <p>From there, you will be asked to fill out a configuration form with key details of your project. Examples of some of these requirements are listed below.</p>
 <h3><strong>For a CDN Caching Property:</strong></h3>

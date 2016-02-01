@@ -32,7 +32,7 @@ Though it is not explicitly disabled by the platform, it is not recommended that
 
 **What Operating Systems support Autoscale?**
 
-Vertical Autoscale can be applied to any server type that supports a "hot add" of CPU resources without a reboot. Those OSes include: Windows Server 2012 Datacenter Edition, Red Hat Enterprise Linux 5/6/7 x64, and Ubuntu 10/12/14 x64. Horizontal Autoscale is applied at the group level and will work with any server types within that group.
+Vertical Autoscale can be applied to any server type that supports a "hot add" of CPU resources without a reboot. Those OSes include: Windows Server 2012/2012 R2 Datacenter Edition, Red Hat Enterprise Linux 5/6/7 x64, and Ubuntu 12/14 x64. Horizontal Autoscale is applied at the group level and will work with any server types within that group.
 
 **How often are you sampling the virtual machine for utilization data points?**
 
@@ -103,7 +103,7 @@ Servers will be turned off and on based on the name of the server. This is one r
 See the article on how to best maintain servers in a horizontal Autoscale group for more information on this topic.
 
 **Is there a way to trigger an Autoscale event manually so that I can control specifically when servers are powered on (or off)**?
-While the Control Portal does not allow you to set scheduled times for autoscaling, you do have some options for controlling the power operations of the server outside the context of the defined Autoscale policy. You can always use the Control Portal to manually power on and off any servers in the group that you'd like. You may also wish to use the API to [power on](http://www.centurylinkcloud.com/api-docs/v2#power-operations-power-on-server) and [power off](http://www.centurylinkcloud.com/api-docs/v2#power-operations-power-off-server) the servers if, for example, you have a separate monitoring process that can detect load as well. Additionally, you could also use [Scheduled Tasks](../Servers/creating-a-scheduled-task.md) (on a server by server level) to turn servers on or off at a specific time when you know load is high or low, potentially scaling ahead of the Autoscale events. (In all of these cases, it is important to note that these servers may be powered off or on after being manually started or stopped due to an Autoscale event triggering.)
+While the Control Portal does not allow you to set scheduled times for autoscaling, you do have some options for controlling the power operations of the server outside the context of the defined Autoscale policy. You can always use the Control Portal to manually power on and off any servers in the group that you'd like. You may also wish to use the API to [power on](http://www.ctl.io/api-docs/v2#power-operations-power-on-server) and [power off](http://www.ctl.io/api-docs/v2#power-operations-power-off-server) the servers if, for example, you have a separate monitoring process that can detect load as well. Additionally, you could also use [Scheduled Tasks](../Servers/creating-a-scheduled-task.md) (on a server by server level) to turn servers on or off at a specific time when you know load is high or low, potentially scaling ahead of the Autoscale events. (In all of these cases, it is important to note that these servers may be powered off or on after being manually started or stopped due to an Autoscale event triggering.)
 
 **What happens if I want to remove a horizontal Autoscale policy from my group?**
 
@@ -120,7 +120,7 @@ If you choose to remove the load balancer from a group's horizontal Autoscale po
 
 **May I create managed servers in my horizontal Autoscale group?**
 
-Yes, managed servers may be included in a horizontal Autoscale group. Keep in mind that management fees will still apply for servers that are powered off.
+Yes, managed servers may be included in a horizontal Autoscale group.
 
 **Do I have to use the load balancer as part of my horizontal Autoscale group?**
 

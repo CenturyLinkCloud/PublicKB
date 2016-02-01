@@ -10,7 +10,7 @@
 
 The CenturyLink Cloud API can be used to perform the same actions programmatically as you can from within the Control Portal. Oftentimes multiple API calls are required to perform a particular task, and this may include waiting for asynchronous jobs to complete. Particularly in these cases, it's important to make sure to use a very prescriptive sequence for the calls to ensure success. The below example shows one such sequence for authenticating, creating a server, updating the server information, and restarting it.
 
-For more details about the specific API functions used below, you may reference the complete [API documentation](https://www.centurylinkcloud.com/api-docs/v2).
+For more details about the specific API functions used below, you may reference the complete [API documentation](https://www.ctl.io/api-docs/v2).
 
 ### Steps
 
@@ -46,7 +46,7 @@ As shown below, all subsequent HTTP requests must also include this token in the
 
     Authorization: Bearer VGCVlA1JK5WLEXicGVujiJblEIApnIJhicZcNZG1MjvJI5IQXJime3tzQYOYHjLuX2NiZLiJvTRi2JOXdcbkX46UWzmIZnJIzpM6JjpmJDB.iX91ML6IzhdX62cekloAB6uJUOjjoi1xClUOBXZmXJxciUzdje2MJM96VM1Mk4NOXubYIXbbiwf06E1YQbeEsKIy1HdizndJWyJVs4XCGiwpTdlyiRXkGrikopi0I5pI.6RYzOrI2lj4bYZsJzeWXGCRNpyXjIbbJLcJL3ckH4CjbisZnZJYMiiIYgD1plIa9JUXuFUG4iymCQV2JXiJluZiziRJYk0b1VJhIRc3M13ihOe
 
-More information can be found in the [Authentication Overview API Documentation](https://www.centurylinkcloud.com/api-docs/v2/#getting-started-api-v20-authentication-overview) as needed.
+More information can be found in the [Authentication Overview API Documentation](https://www.ctl.io/api-docs/v2/#getting-started-api-v20-authentication-overview) as needed.
 
 #### 2. Get Deployment Capabilities
 
@@ -196,11 +196,11 @@ We get back the complete list of groups. (Some of the details of the response ha
 
 We will use the UUID for the Default Group (`8a03fcae8ddfe311b05f005056812345`) to create our server below.
 
-For more details about the links referenced above and other link types, see the [Links Framework API Documentation](https://www.centurylinkcloud.com/api-docs/v2/#getting-started-api-v20-links-framework) as well as the [Link Definitions API Documentation](https://www.centurylinkcloud.com/api-docs/v2/#link-definitions) for each resource type.
+For more details about the links referenced above and other link types, see the [Links Framework API Documentation](https://www.ctl.io/api-docs/v2/#getting-started-api-v20-links-framework) as well as the [Link Definitions API Documentation](https://www.ctl.io/api-docs/v2/#link-definitions) for each resource type.
 
 #### 4. Create a Server
 
-To create a server we use the following request. Notice in the JSON payload we are using the `groupId` from our previous call to the groups endpoint as well as the `sourceServerId` (the desired template name) and `networkId` we chose from the deployment capabilities call above. We also include all of the other required parameters as outlined in the [Create Server API Documentation](https://www.centurylinkcloud.com/api-docs/v2/#servers-create-server).
+To create a server we use the following request. Notice in the JSON payload we are using the `groupId` from our previous call to the groups endpoint as well as the `sourceServerId` (the desired template name) and `networkId` we chose from the deployment capabilities call above. We also include all of the other required parameters as outlined in the [Create Server API Documentation](https://www.ctl.io/api-docs/v2/#servers-create-server).
 
     POST https://api.ctl.io/v2/servers/ALIAS
     Content-Type: application/json
@@ -363,7 +363,7 @@ First, we will update the server description using the following request. (We ar
 
 We receive a `204 NO CONTENT` status meaning the update was successful. (We could use the GET request if we wanted to see the server details with the new description.)
 
-For more information on updating properties of a server, see the [API Documentation](https://www.centurylinkcloud.com/api-docs/v2/#servers).
+For more information on updating properties of a server, see the [API Documentation](https://www.ctl.io/api-docs/v2/#servers).
 
 #### Restart Server
 

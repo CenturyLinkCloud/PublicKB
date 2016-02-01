@@ -1,5 +1,5 @@
 {{{
-  "title": "Connecting Data Center Networks Through Firewall Policies",
+  "title": "Creating Intra Data Center Firewall Policies",
   "date": "03-27-2015",
   "author": "Chris Little",
   "attachments": [],
@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-The CenturyLink Cloud Platform provides self-service tools to connect networks within a particular data center through the use of configurable firewall policies. This is useful when a customer has multiple networks (vlans) within a particular account, or has a range of sub-accounts with their own vlans, and wants to selectively choose the traffic that can flow among them.
+The CenturyLink Cloud Platform provides self-service tools to connect networks within a particular data center ("intra data center") through the use of configurable firewall policies. This is useful when a customer has multiple networks (vlans) within a particular account, or has a range of sub-accounts with their own vlans, and wants to selectively choose the traffic that can flow among them.
 
 ### Connecting Networks within a Single Account
 

@@ -2,18 +2,24 @@
   "category_order": [
     "Support",
     "Accounts & Users",
+    "AppFog",
     "Autoscale",
     "Blueprints",
-    "Service Tasks",
+    "Compliance",
     "Control Portal",
+    "Database",
+    "Disaster Recovery",
     "Ecosystem Partners",
     "General",
     "Mail",
     "Managed Services",
     "Network",
     "Object Storage",
+    "Orchestrate",
     "Partners",
     "Release Notes",
+    "Security",
+    "Service Tasks",
     "Servers"
-  ] 
+  ]
 }}}

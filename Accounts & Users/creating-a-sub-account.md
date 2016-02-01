@@ -38,7 +38,7 @@ Note that an account alias cannot be reused, even after deletion of the original
 <p>You may input a Default Primary DNS and a Default Secondary DNS IP address. This will be the DNS server value input into your IPv4 settings when building a server. You may select your own environment DNS servers, preferred public DNS servers, or the default datacenter DNS servers (172.17.1.26, 172.17.1.27) or leave it blank, in which case it will default to the aforementioned Datacenter DNS servers, which do allow for external DNS lookup.</p>
 <p>Bill to: Each sub account generates an invoice. You have the option of submitting the invoice to the parent account, or bill the sub account directly.</p>
 <p>Payment Type: Input the payment type for the sub account.</p>
-<p>Share Parent Networks: This allows for sub accounts to share networks with the parent account. If this is set to ‘NO’ then the sub account will receive unique IP ranges when deploying servers/networks.</p>
+<p>Share Parent Networks: This allows the sub account to use the networks present in its parent account. If this is set to ‘NO’ then the sub account will receive unique IP ranges when deploying servers/networks.</p>
 
 <h3>Settings</h3>
 <img src="../images/createsubaccount-subsettings.png" alt="subsettings.png" />
@@ -67,7 +67,7 @@ Note that an account alias cannot be reused, even after deletion of the original
 <p>Menus are hidden to the sub account</p>
 <p>You can click any of these settings and toggle them between disabled (not visible) and enabled (visible and therefore editable)</p>
 
-###Adding Users/Permissions
+### Adding Users/Permissions
 1. To add new users to the subaccount
 2. In the dropdown in the top left, select the subaccount for which you would like to add a user.
 3. Go to account &gt; users and click “+ Create New User”.
