@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-![Yellowfin Business Intelligence](http://../../images/YF_LOGO.png)
+![Yellowfin Business Intelligence](../../images/YF_LOGO.png)
 
 ### Technology Profile
 

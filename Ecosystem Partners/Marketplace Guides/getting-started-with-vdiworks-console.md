@@ -26,7 +26,7 @@ After reading this article, the user should feel comfortable installing the Host
 
 ### Prerequisite
 *  Access to the CenturyLink Cloud platform as an authorized user.
-*  A SQL Server machine in your Centurylink Cloud account, along with it's IP address and credentials.
+
 
 ### Postrequisite
 *  If you want to access your application over the internet, please perform the following tasks after you receive an email notifying you that the Blueprint completed successfully:
@@ -80,7 +80,7 @@ Proceed to Step 2.
 4. **Review Blueprint and Deploy**
 
 ### Access VDIworks VDP Console Server
- After your Blueprint Deploys successfully, please follow these instructions to access your server:
+ After your Blueprint Deploys successfully, SQL Server and VDP Console should be installed. Please follow these instructions to access your server:
 
   1. Watch email for notification of the deployment completion.
   2. Log in to your server.
