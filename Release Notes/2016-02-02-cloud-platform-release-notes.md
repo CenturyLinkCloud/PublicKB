@@ -33,7 +33,7 @@
 
 ### Announcements (1)
 
-* __Sub-Accounts Disabled for Self-Sign Up Customers.__ Effective February 16, 2015 customers who have activated online will no longer have access to create new sub-accounts by default. This feature can be re-enabled upon request by creating a ticket via an email to help@ctl.io.
+* __Sub-Accounts Disabled for Self-Sign Up Customers.__ Effective February 16, 2016 customers who have activated online will no longer have access to create new sub-accounts by default. This feature can be re-enabled upon request by creating a ticket via an email to help@ctl.io.
 
 	Please [refer to our KB](https://www.ctl.io/knowledge-base/accounts-&-users/subaccounts-web-signup/) for additional information.
 
