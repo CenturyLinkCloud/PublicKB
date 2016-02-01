@@ -34,7 +34,7 @@ After following the instructions this article, the user should have a working ku
 - VMs are available in all 13 of our public cloud locations
 
 
-## Requirements
+### Requirements
 
 The following requirements are needed in order to use these scripts to install Kubernetes on CenturyLink Cloud. 
 
@@ -49,7 +49,7 @@ And
 - pip
 - git
 
-## Script Installation
+### Script Installation
 
 After you have all the requirements met, please follow these instructions to install this script. 
 
@@ -95,7 +95,7 @@ If you use ubuntu 14, for your convenouce we have provided a step by step guide 
   source credentials.sh
 ```
 
-## Cluster Creation 
+### Cluster Creation 
 
 To create a new Kubernetes cluster, simply run the kube-up.sh script. A complete list of script options and some examples are listed below.
 
@@ -147,19 +147,19 @@ Create a cluster with name of k8s_3, 1 master node, and 10 worker minions (on VM
   bash kube-up.sh --clc_cluster_name=k8s_3 --minion_type=standard --minion_count=10 --datacenter=VA1 -mem=6 -cpu=4
 ```
 
-## Cluster Deletion
+### Cluster Deletion
 
 To delete a cluster, log into the CenturyLink Cloud control portal and delete the parent server group that contains the Kubernetes Cluster. We hope to add a scripted option to do this soon. 
 
 
-## What Kubernetes features do not work on CenturyLink Cloud
+### What Kubernetes features do not work on CenturyLink Cloud
 
 - At this time, there is no support services of the type 'loadbalancer'. We are actively working on this and hope to publish the changes soon. 
 - At this time, there is no support for persistent storage volumes provided by CenturyLink Cloud. However, customers can bring their pwn persistent storage offering.
 
 
 
-## Postrequisite
+### Postrequisite
 
 #### Kubernetes  Access
 You will need the kubectl client program to manage your kubernetes cluster. You can access this by one of two ways:
@@ -171,7 +171,7 @@ You will need the kubectl client program to manage your kubernetes cluster. You 
 - Network access from a remote box to the master can be achieved by using the VPN access that you needed in the previous step or by adding a public IP address to the master server. 
 
 
-## Kubernetes Usage
+### Kubernetes Usage
 
 #### How to access the kubernetes UI 
 
@@ -183,15 +183,21 @@ http://(IP-ADDRESS-OF-MASTER-SERVER):8080/api/v1/proxy/namespaces/kube-system/se
 
 To get your Kubernetes cluster's information:
 
-``` kubectl -s http://(IP-ADDRESS-OF-MASTER-SERVER):8080 cluster-info ```
+``` 
+kubectl -s http://(IP-ADDRESS-OF-MASTER-SERVER):8080 cluster-info 
+```
 
 To get the list of nodes in your Kubernetes clusters :
 
-``` kubectl -s http://(IP-ADDRESS-OF-MASTER-SERVER):8080 get nodes ```
+``` 
+kubectl -s http://(IP-ADDRESS-OF-MASTER-SERVER):8080 get nodes 
+```
 
 To run 2 copies of nginx on your cluster:
 
-``` kubectl -s http://(IP-ADDRESS-OF-MASTER-SERVER):8080 run my-nginx --image=nginx --replicas=2 --port=80 ```
+``` 
+kubectl -s http://(IP-ADDRESS-OF-MASTER-SERVER):8080 run my-nginx --image=nginx --replicas=2 --port=80 
+```
 
 
 For more information on how to use the kubectl client, please visit: 
