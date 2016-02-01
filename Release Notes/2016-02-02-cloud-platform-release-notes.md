@@ -8,19 +8,19 @@
 
 ### New Features (1)
 
-__Relational DB Service__ The DBaaS beta has come to a close with the release of our GA product, Relational DB Service.  
+* __Relational DB Service__ The DBaaS beta has come to a close with the release of our GA product, Relational DB Service.  
 
-Our Relational DB Service supports your rapid software delivery needs by providing instant access to a high performance, enterprise-hardened MySQL-compatible database instance built on our hyperscale platform with 100% flash storage.  
+	Our Relational DB Service supports your rapid software delivery needs by providing instant access to a high performance, enterprise-hardened MySQL-compatible database instance built on our hyperscale platform with 100% flash storage.  
 
-Features include:
+	Features include:
 
-- Availablity in UC1, VA1 and IL1; global expansion throughout 2016
-- Choose any combination of CPU/RAM and storage within platform limits
-- Replication option for High Availability: In-datacenter replication with auto-failover and a manual failover option
-- Ability to scale CPU, RAM and storage independently of each other with a click of a button or API call 
-- SSL certificate provided to encrypt your connection and data in transit
-- Daily backups with configurable backup times
-- Sign up to be notified when CPU and storage thresholds are exceeded
+	- Availablity in UC1, VA1 and IL1; global expansion throughout 2016
+	- Choose any combination of CPU/RAM and storage within platform limits
+	- Replication option for High Availability: In-datacenter replication with auto-failover and a manual failover option
+	- Ability to scale CPU, RAM and storage independently of each other with a click of a button or API call 
+	- SSL certificate provided to encrypt your connection and data in transit
+	- Daily backups with configurable backup times
+	- Sign up to be notified when CPU and storage thresholds are exceeded
 
 For more information visit: https://www.ctl.io/relational-database/
 
