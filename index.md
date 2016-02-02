@@ -4,6 +4,7 @@
     "Accounts & Users",
     "AppFog",
     "Autoscale",
+    "Backup",
     "Blueprints",
     "Compliance",
     "Container Services",
