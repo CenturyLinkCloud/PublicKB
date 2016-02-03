@@ -40,7 +40,7 @@ A: No, the policy frequency determines when the next backup will be executed or 
 
 **Q: Can I completely delete my backed up files from storage regardless of the retention period?**
 
-A: Not manually at this time.
+A: No, this is a manual process at this time. A support request will need to be opened to have this performed.
 
 **Q: Why do unchanged files not follow retention?**
 
