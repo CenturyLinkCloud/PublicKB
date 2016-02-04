@@ -80,7 +80,7 @@ After reading this KB, the user should feel comfortable getting started using Ze
    2. Choose, Customize and Deploy the Zentera Blueprint.
     + Click on **Zentera zLink Agent Installer for RedHat, CentOS and Ubuntu**.
 
-    ![Zentera Blueprint in Library](../../images/zentera-blueprint)
+    ![Zentera Blueprint in Library](../../images/zentera-blueprint.png)
 
     + Click on **Deploy Blueprint**.
     + Select your server from the **Execute on Server** drop-down list.
