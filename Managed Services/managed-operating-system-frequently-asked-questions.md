@@ -1,6 +1,6 @@
 ﻿{{{
   "title": "Managed Operating System - Frequently Asked Questions",
-  "date": "12-31-2015",
+  "date": "01-28-2015",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false,
@@ -51,7 +51,7 @@ There could be a few causes:
 
 **Is there anything that I cannot do in the Control Portal with a managed VM?**
 
-A managed server cannot be cloned, archived, or converted to a template. Also, the "time to live" option is not available when creating a new managed server. At this time, you cannot create a managed server within a Cloud Blueprint.
+A managed server cannot be cloned, archived, or converted to a template. You cannot restore a managed server as an unmanaged server. Also, the "time to live" option is not available when creating a new managed server. At this time, you cannot create a managed server within a Cloud Blueprint.
 
 **How do I log into my server?**
 
@@ -91,12 +91,9 @@ Files can be transferred by simply drag and drop in Windows Explorer from your r
 
 The CenturyLink Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at the numbers below, or send email to request@centurylink.com for Managed OS issues. If there is an incident, email can be sent to incident@centurylink.com.
 
-* United States: 1-855-287-2541
-* Canada: 1-877-387-3764
-* Europe, Middle East &amp; Africa: +44 (0) 207 400 5600
-* Japan: +81 3 5214 0180
-* Hong Kong: +852 3079 4461
-* Singapore: +65 6591 8824
+* US: 888.638.6771
+* UK: +44.118.322.6100
+* Singapore: +65.6305.8099
 
 **How is Managed Support different than Platform Support?**
 
