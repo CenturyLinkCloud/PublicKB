@@ -280,7 +280,7 @@ To see the status and details of all LBaaS instances for a given account, use th
 Append the URL with the Group ID that was provided in the Create Group POST response followed by </pools>.
 
 #### Structure:
-    POST https://api.loadbalancer.clt.io/{accountAlias}/{dataCenter}loadBalancers/{loadBalancerId}/pools/
+    POST https://api.loadbalancer.clt.io/{accountAlias}/{dataCenter}/loadBalancers/{loadBalancerId}/pools/
 
 | Name | Type | Description | Req. |
 | --- | --- | --- | --- |
