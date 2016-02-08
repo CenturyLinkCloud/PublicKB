@@ -21,3 +21,5 @@
   </a>
 </p>
 <p>Click “<strong>Save</strong>” to finish setting your custom PIN.</p>
+
+<p> <strong>*** Note ***</strong></p> <p>When submitting a support request, if you have multiple accounts, please indicate which username corresponds to the PIN you are supplying.</p>

@@ -1,7 +1,7 @@
 {{{
-  "title": "Getting Started with Intrusion Prevention System (IPS)",
-  "date": "08-11-2015",
-  "author": "Stephanie Wong",
+  "title": "IPS - Getting Started",
+  "date": "01-12-2016",
+  "author": "Client-Security",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
@@ -22,19 +22,13 @@ This Blueprint is for the actual installation and activation of the IPS service 
   Installing Virtual Machine - activate.dsm.client-security.ctl.io 443/tcp
   
   Installing Virtual Machine - relay.dsm.client-security.ctl.io 443/tcp
+  
+  Installing Virtual Machine - api.client-security.ctl.io/ips/scripts/install.sh 443/tcp
+
+  Installing Virtual Machine - api.client-security.ctl.io/ips/scripts/uninstall.sh 443/tcp
 
 ### Supported Managed Operating Systems
-* Red Hat Enterprise Linux 5 (64-bit only)
-* Red Hat Enterprise Linux 6 (64-bit only)
-* Microsoft Windows Server 2008 Standard R2 (64-bit only)
-* Microsoft Windows Server 2008 Enterprise (64-bit only)
-* Microsoft Windows Server 2008 Enterprise R2 (64-bit only)
-* Microsoft Windows Server 2008 Datacenter (64-bit only)
-* Microsoft Windows Server 2008 Datacenter R2 (64-bit only)
-* Microsoft Windows Server 2012 Datacenter (64-bit only)
-* Microsoft Windows Server 2012 Datacenter R2 (64-bit only)
-
-
+Current supported operating systems can be found here [Operating System Support](../Security/supported-ips-oses.md)
 
 ### Installation Process
 

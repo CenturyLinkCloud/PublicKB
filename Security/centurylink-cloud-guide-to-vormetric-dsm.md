@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to Vormetric DSM",
-  "date": "9-03-2015",
+  "date": "1-18-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -9,24 +9,24 @@
 
 ### Table of Contents
 
-* [Vormetric DSM Overview](#Vormetric-DSM-Overview)
-* [Prerequisites](#Prerequisites)
-* [General Notes](#General-Notes)
-* [DNS Services](#DNS-Services)
-* [Network Connectivity](#Network-Connectivity)
-* [Data Security Manager Configuration](#Data-Security-Manager-Configuration)
-* [Account Hierarchy and VDS Domains](#Account-Hierarchy-and-VDS-Domains)
-    * [Account Hierarchy Single VDS Domain](#Account-Hierarchy-Single-VDS-Domain)
-    * [Account Hierarchy Multiple VDS Domains](#Account-Hierarchy-Multiple-VDS-Domains)
-* [Host Agent Installation](#Host-Agent-Installation)
-* [Creating Encryption Keys](#Creating-Encryption-Keys)
-* [Creating Policies and Applying Guardpoints](#Creating-Policies-and-Applying-Guardpoints)
-    * [Creating Policies](#Creating-Policies)
-    * [Creating Guardpoints](#Creating-Guardpoints)
-* [Encrypting Existing Data](#Encrypting-Existing-Data)
-* [High Availability](#High-Availability)
-* [DSM Automatic Backup](#DSM-Automatic-Backup)
-* [Server Backup and Recovery](#Server-Backup-and-Recovery)
+* [Vormetric DSM Overview](#vormetric-dsm-overview)
+* [Prerequisites](#prerequisites)
+* [General Notes](#general-notes)
+* [DNS Services](#dns-services)
+* [Network Connectivity](#network-connectivity)
+* [Data Security Manager Configuration](#data-security-manager-configuration)
+* [Account Hierarchy and VDS Domains](#account-hierarchy-and-vds-domains)
+    * [Account Hierarchy Single VDS Domain](#account-hierarchy-single-vds-domain)
+    * [Account Hierarchy Multiple VDS Domains](#account-hierarchy-multiple-vds-domains)
+* [Host Agent Installation](#host-agent-installation)
+* [Creating Encryption Keys](#creating-encryption-keys)
+* [Creating Policies and Applying Guardpoints](#creating-policies-and-applying-guardpoints)
+    * [Creating Policies](#creating-policies)
+    * [Creating Guardpoints](#creating-guardpoints)
+* [Encrypting Existing Data](#encrypting-existing-data)
+* [High Availability](#high-availability)
+* [DSM Automatic Backup](#dsm-automatic-backup)
+* [Server Backup and Recovery](#server-backup-and-recovery)
 
 ### Vormetric DSM Overview
 Vormetric provides enterprise encryption and key management services that enable corporations to protect their data. Vormetric addresses industry compliance mandates and government regulations globally by securing data in physical, virtual and cloud infrastructures, through Data Encryption, Key Management, Access Policies, Privileged User Control, and Security Intelligence.  Customers should refer to our [Getting Started with Vormetric DSM](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-dsm.md) knowledge-base article for more information.  
@@ -522,7 +522,8 @@ CenturyLink Cloud customers, depending on their technical requirements, implemen
 **Backup Method**|**Approach**
 -----------------|------------
 [Standard Virtual Server](../Servers/centurylink-cloud-backup-and-recovery-services.md)|Standard Virtual Servers include either a 5 or 14 day daily virtual server backup of the entire instance. Using this service with encrypted data sets should be transparent during a backup or virtual server restore action as the entire virtual server is impacted.  Host agents will communicate with the Vormetric DSM and receive the same policy with key access even if you restore a virtual server to a previous state.  
-[Managed Backup](//www.ctl.io/managed-services/backup)|Managed Backup services leverage a client agent to backup and restore data to the server.  As such as part of policy creation a security rule must be put in place that **permits** the backup agent executable **read/write** to the Guardpoint.  Agent based backups are the only situation in which a security rule should permit read/write to a Guardpoint.  Its important to note that should you restore data, using the agent, to a location outside the Guardpoint policy configuration changes will be required in order to permit access to this new location and apply the encryption key. An example policy that includes a security rule for a backup agent can be seen below.
+[Simple Backup Service](//www.ctl.io/simple-backup-service)|The Simple Backup Service leverages a client agent to backup and restore data to the server.  As such as part of policy creation a security rule must be put in place that **permits** the backup agent executable **read/write** to the Guardpoint.  Agent based backups are the only situation in which a security rule should permit read/write to a Guardpoint.  Its important to note that should you restore data, using the agent, to a location outside the Guardpoint policy configuration changes will be required in order to permit access to this new location and apply the encryption key. An example policy that includes a security rule for a backup agent can be seen below.
+[Managed Backup](//www.ctl.io/managed-services/backup)|Managed Backup services leverage client agents similar to Simple Backup Services.  As such the rules and approach would mirror the process already detailed.
 [Ecosystem](../Ecosystem Partners/ecosystem-partner-list.md)|3rd Party Ecosystem partners such as [Commvault](../Ecosystem Partners/Marketplace Guides/getting-started-with-commvault-storage-blueprint.md) generally leverage client agents similar to Managed Backup services.  As such the rules and approach would mirror the process already detailed.
 [Snapshots](../Servers/creating-and-managing-server-snapshots.md)|While technically a snapshot is not a backup it does facilitate the restoration of an entire virtual server to a previous state.  Using this service with encrypted data sets should be transparent during a snapshot or revert snapshot action as the entire virtual server is impacted.  Host agents will communicate with the Vormetric DSM and receive the same policy with key access even if you revert a snapshot to a previous state.  
 
@@ -538,11 +539,7 @@ Policy Summary:
 
 1. Only authorized Users/Groups have full read/write and automatic encrypt/decrypt access to the protected data.
 
-2. The Backup software (agent based) can read and write data files.  For example, for a Windows 2012 R2 on Managed Backup the Netbackup agent executables are as follows:
-  * C:\Program Files\VERITAS\NetBackup\bin\bpcd.exe
-  * C:\Program Files\VERITAS\NetBackup\bin\bpinetd.exe
-  * C:\Program Files\VERITAS\pdde\mtstrmd.exe
-  * C:\Program Files\VERITAS\NetBackup\bin\nbdisco.exe
-  * C:\Program Files\VERITAS\NetBackup\bin\vnetd.exe
+2. The Backup software (agent based) can read and write data files.  For example, for a Windows 2012 R2 using Simple Backup Services the agent executable is:
+  * C:\Program Files\SimpleBackupService\srvany.exe
 
 3. All other data requests to the protected data are denied and audited.

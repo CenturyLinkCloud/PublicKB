@@ -1,6 +1,6 @@
 {{{
   "title": "Supported Operating Systems",
-  "date": "4-7-2015",
+  "date": "11-24-2015",
   "author": "Jared Ruckle",
   "attachments": [],
   "contentIsHTML": false
@@ -12,6 +12,7 @@ The following operating systems are supported in CenturyLink Cloud, as of April 
 
 * CentOS 5
 * CentOS 6
+* CentOS 7
 * Debian 6
 * Debian 7
 * RedHat Enterprise Linux 5
@@ -19,9 +20,11 @@ The following operating systems are supported in CenturyLink Cloud, as of April 
 * RedHat Enterprise Linux 7
 * Ubuntu 12
 * Ubuntu 14
-* Windows Server 2008 R2
-* Windows Server 2012
-* Windows Server 2012 R2
+* Windows Server 2008 R2 Standard
+* Windows Server 2008 R2 Enterprise
+* Windows Server 2008 R2 Datacenter Edition
+* Windows Server 2012 Datacenter Edition
+* Windows Server 2012 R2 Datacenter Edition
 
 **NOTE: Only the 64-bit version of each OS is supported**
 

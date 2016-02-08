@@ -73,7 +73,7 @@ This strikes me as being a huge win for developers, and I firmly hope that build
 
 Other useful aspects of Ender include the ender info command, which gives you an actual dependency tree of the ender.js file that you have constructed up to that point, much like the tree command found in some *nix environments. There’s a lot more where that came from, and I suggest checking out the docs to have a more comprehensive look at what Ender has on offer.
 
-###This sounds too good to be true…
+### This sounds too good to be true…
 
 Now, Ender surely isn’t flawless. I’m sure that there are plenty of namespace issues that emerge when different libraries use the same function and/or variable names. This is something that should be very much on your radar when using Ender, and you should never assume that throwing together any set of libraries haphazardly will always work out unproblematically.
 

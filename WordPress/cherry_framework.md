@@ -10,14 +10,14 @@
 
 ### IMPORTANT NOTE
 
-CenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage at this time.
+CenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage at this time.
 
 During the Limited Beta there is no production Service Level Agreement.
 
 ### Overview
 The [Cherry Framework for WordPress](http://www.cherryframework.com/) is a free framework that can use WordPress themes from Template Monster that are made to use with the Cherry Framework. 
 
-Most of what you need to know is already covered in the [quick start guide on Template Monster](http://www.templatemonster.com/help/quick-start-guide/wordpress-themes/master/index_en.html#introduction).  In this KB article, we will cover how to install and setup Cherry Framework on the [CenturyLink Cloud WordPress](https://www.ctl.io/wordpress) platform so that you can take advantage of it.
+Most of what you need to know is already covered in the [quick start guide on Template Monster](http://www.templatemonster.com/help/quick-start-guide/wordpress-themes/master/index_en.html#introduction).  In this KB article, we will cover how to install and setup Cherry Framework on the [CenturyLink WordPress](https://www.ctl.io/wordpress) hosting platform so that you can take advantage of it.
 
 
 ### Cherry Framework Features
@@ -26,7 +26,7 @@ Cherry Framework comes with a robust amount of features and options that makes i
 
 ### Installing the Cherry Framework
 
-1. First you will need to setup your [local developement environment] (https://www.ctl.io/knowledge-base/wordpress/wordpress-local-development/).
+1. First you will need to setup your [local developement environment](https://www.ctl.io/knowledge-base/wordpress/wordpress-local-development/).
 
 2. Next is to [download and save the framework](http://www.cherryframework.com/) from the Cherry Framework website for the local environment.
 

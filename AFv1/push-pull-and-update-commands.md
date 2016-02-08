@@ -50,7 +50,7 @@ user@localhost:~/af/apps/user-php$ ls
 index.php</pre>
 <h4>UPDATE</h4>
 <h4><code>af update {app}</code></h4>
-<p>The command <code>update</code> updates the specified application with the <strong>all</strong> content in your current directory. If you have a ZIP file located within this directory, it can cause the problems lined out in the <a href="application-configuration-using-manifest-files-and-afignore.md">ZIP Files</a> section of our Application Configuration article above. An example for an application called <code>user-php</code> is below.</p>
+<p>The command <code>update</code> updates the specified application with the <strong>all</strong> content in your current directory. If you have a ZIP file located within this directory, it can cause the problems lined out in the <a href="./application-configuration-using-manifest-files-and-afignore.md">ZIP Files</a> section of our Application Configuration article above. An example for an application called <code>user-php</code> is below.</p>
 <pre>user@localhost:~/af/apps$ ls
 user-php  my_test_php_app
 user@localhost:~/af/apps$ cd user-php/
