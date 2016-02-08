@@ -1,6 +1,6 @@
 {{{
   "title": "Getting To Know The CLI cf Tool",
-  "date": "12-4-2015",
+  "date": "02-08-2015",
   "author": "Ben Heisel",
   "attachments": [],
   "related-products" : [],
@@ -17,7 +17,7 @@ Before deleting any applications or services on AppFog v1 ensure you have local 
 When migration is complete your billing subscription can be canceled from the [Account](https://console.appfog.com/#account) page of the web console. Please be sure to cancel your subscription as we are not aware when individual user migration is complete. The billing system will not automatically prorate the subscription and issue a refund. If applicable, please open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com to receive a prorated refund of your subscription.
 
 ### The AppFog v2 cf CLI Tool
-There are similarities and differences between the AppFog v2 `cf` CLI tool and the AppFog v1 `af` tool. This article is intended to provide some of the new `cf` tool syntax for AppFog v1 users. More information about the `cf` tool can be found in the [Cloud Foundry Docs](https://docs.cloudfoundry.org/devguide/installcf/) or from the CLI run `cf help`. For detail on a specific command `cf help <COMMAND>`.
+There are similarities and differences between the AppFog v2 `cf` CLI tool and the AppFog v1 `af` tool. This article is intended to provide some of the new `cf` tool syntax for AppFog v1 users. More information about the `cf` tool can be found in our [Using the Cloud Foundry CLI Tool](../AppFog/using-cloud-foundry-cli-tool.md) article, or from the CLI run `cf help`. For detail on a specific command use `cf help <COMMAND>`.
 
 At this time the AppFog v2 web console offers the option to start, stop, scale, restage, or delete an application. Additionally, environment variables can be viewed, created, or deleted through the web interface. All other actions must be taken using the CLI tool. Each individual application page will also display the current hourly rate for that application.
 
