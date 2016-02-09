@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Chef Server - Blueprint",
-  "date": "2-08-2016",
+  "date": "2-10-2016",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -61,7 +61,13 @@ they can start developing their configuration management solutions.
 
   <img src="../../images/chef/deploy_parameters.png" style="max-width:450px;">
 
-  * **MC Password** - Repeat the root administrator credentials already given for the server
+  * **Execute on Server** - Leave selected at `CHEF`
+  * **First Name** - Administrator's first name
+  * **Last Name** - Administrator's last name
+  * **Email** - Administrator's email
+  * **Org Short Name** - Short name for Org
+  * **Org Long Name** - Long name for Org
+  * **Password For Admin** - Initial password to login to web interface
 
 4. **Set Optional Parameters**
 
