@@ -35,7 +35,7 @@ After reading this article, the user should be able to deploy Clusterpoint bluep
 
 ### Postrequisite
 To access your application from a computer outside the CenturyLink Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
-  1. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
+  1. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
     * Port to access the Clusterpoint Web Console is TCP 5580. Open it if you want to access Clusterpoint On Premises Web Console to manage your Clusterpoint databases and users, and use REST API interface to access Clusterpoint databases;
     * Port to access Clusterpoint Hub for API access is TCP 25007. Open it if you want to access Clusterpoint databases trough TCP from outside your CenturyLink network;
     * All additional nodes speak to core server with manager trough local IP. However, if you want to get additional hub access for TCP connections you need to assign public IP and open port TCP 25007 for additional node/hub machines as well; 
@@ -116,7 +116,7 @@ Clusterpoint is available as a Software Package for deployment on an existing se
 Identify the server targeted for Clusterpoint installation.  The Operating system must be supported by the Software Package.  The server must be a server within your CenturyLink Cloud account.
 2. **Select 'Execute the Package on a Server Group'**
   1. Packages can be executed on one more more servers in a Group.  Search for the public software package named **Install Clusterpoint Database (Manager)** or **Install Clusterpoint Database (Node and Hub)** accordingly what you want to install.
-  2. See the [using group tasks to install scripts on groups](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
+  2. See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. **Deploy the Script Package**
 Once verified, click on the `execute package` button. This will kick off the deployment process and load a page where you can track the progress. Deployment will typically complete within a few minutes.
