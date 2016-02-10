@@ -94,6 +94,7 @@ clc login –user username –password
 
 For output (with –-output), there are three options:
 ‘JSON, TEXT, TABLE’
+
 JSON:
 ```
 [
@@ -140,7 +141,7 @@ Or
 clc server list -–filter “LocationID”=”CA3”
 ```
 
-**List hoatname of all servers in a datacenter:**
+**List hostname of all servers in a datacenter:**
 ```
 clc server list --all --filter location-id=CA3 --query details.host-name
 ```
@@ -188,8 +189,7 @@ clc server list --all --filter status=active --output table
 
 **Who/when created a server:**
 ```
-clc server list --all --filter name=CA2ABCDADM01 --query
-change-info.{created-by,created-date}
+clc server list --all --filter name=CA2ABCDADM01 --query change-info.{created-by,created-date}
 ```
 
 **Display power state and hostname:**
@@ -209,8 +209,7 @@ clc server list --all --query details.{power-state,host-name} --output text | gr
 
 **Server name with number of CPUs and memory (in MB):**
 ```
-clc server list --all --query "details.{cpu,memoryMB,host-name}"
---output text
+clc server list --all --query "details.{cpu,memoryMB,host-name}" --output text
 ```
 
 **Find IP addresses with server name:**
@@ -295,10 +294,8 @@ clc group create --name "TestCA2" --description "Test Servers" --parent-group-na
 
 **Create a server:**
 ```
-clc server create --name test1 --description "test" --group-name Test
---template-name UBUNTU-14-64-TEMPLATE --root-password xxxxxxxxx
---network-name vlan\_771\_10.56.171 --cpu 1 --memory-gb 1 --type
-standard --storage-type standard --additional-disks sizeGB=50,type=raw
+clc server create --name test1 --description "test" --group-name Test --template-name UBUNTU-14-64-TEMPLATE --root-password xxxxxxxxx
+--network-name vlan\_771\_10.56.171 --cpu 1 --memory-gb 1 --type standard --storage-type standard --additional-disks sizeGB=50,type=raw
 ```
 
 **Create a new VLAN in a datacenter**
@@ -344,6 +341,7 @@ C:\Users\test.user\Downloads\clc-20160106>clc firewall-policy create --data-cent
 ```
 
 **Create a json file for repeat usage of frequent use commands**
+
 For the example below, servername.json is created to list all the hostname of all servers in the account:
 ```
 clc server list --all --query details.host-name --generate-cli-skeleton > servername.json
