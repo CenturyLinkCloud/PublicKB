@@ -4,8 +4,10 @@
     "Accounts & Users",
     "AppFog",
     "Autoscale",
+    "Backup",
     "Blueprints",
     "Compliance",
+    "Container Services",
     "Control Portal",
     "Database",
     "Disaster Recovery",
@@ -20,7 +22,6 @@
     "Release Notes",
     "Security",
     "Service Tasks",
-    "Servers",
-    "WordPress"
+    "Servers"
   ]
 }}}

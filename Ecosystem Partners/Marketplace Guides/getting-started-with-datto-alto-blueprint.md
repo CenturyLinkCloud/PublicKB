@@ -25,7 +25,7 @@ http://www.datto.com/
 
 |Sales Contact   	| Support Contact	|
 |:-	|	:-	|
-|Brian Buckman<br>bbuckman@datto.com<br>(312) 638-2742   	| 24x7 Customer Support<br> [www.datto.com/support](http://www.datto.com/support)<br>(877) 455-6015	|
+|Datto Channel Manager<br>Brian Buckman<br>bbuckman@datto.com<br>(312) 638-2742<br>pricing will come from your authorized MSP | 24x7 Customer Support<br> [www.datto.com/support](http://www.datto.com/support)<br>(877) 455-6015	|
 
 
 ### Description
@@ -58,6 +58,7 @@ can start protecting data and virtualizing systems.
 1. **Locate the Blueprint in the Blueprint Library**
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "Datto ALTO" in the keyword search on the right side of the page.
+  (pricing includes IaaS resources only, see end of article for licensing details)
 
   <img src="../../images/datto/blueprint_tile.png" style="border:0;max-width:250px;">
 
@@ -107,20 +108,19 @@ can start protecting data and virtualizing systems.
 
 ### Pricing
 
-The costs listed above in the above steps are for the infrastructure only.
+The costs listed in the above steps are for the infrastructure only.
 
-After deploying this Blueprint, you may secure entitlements to the technology by emailing your datto
-Account Executive or if you don’t have one, Brian Buckman at bbuckman@datto.com.
+After deploying this Blueprint, you may secure entitlements to the technology by emailing your Datto Account Executive or if you don’t have one, Brian Buckman at bbuckman@datto.com.
 
 
 ### Frequently Asked Questions
 
 **Where do I get my Datto registration code?**
 
-Email your Datto Account Manager bbuckman@datto.com
+Email your Datto Channel Manager at bbuckman@datto.com.  Datto pricing will come from your authorized MSP
 
 
 **Who should I contact for support?**
 
 * For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
-* For issues related to deploying the ALTO Blueprints and application operation on CenturyLink Cloud, please contact bbuckman@datto.com or follow your existing Datto support process if known.
+* For issues related to deploying the ALTO Blueprints and application operation on CenturyLink Cloud, follow your existing Datto support process.
