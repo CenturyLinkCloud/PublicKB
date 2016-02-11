@@ -72,6 +72,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Docker Machine](../Ecosystem Partners/Marketplace Guides/getting-started-with-docker-machine.md)   	| Blueprint    | Automated Docker provisioning |
 | [Docker Trusted Registry](../Ecosystem Partners/Marketplace Guides/getting-started-with-docker-trusted-registry-blueprint.md)   	| Blueprint    | Store and manage Docker images within CenturyLink Cloud |
 | [Dynatrace](../Ecosystem Partners/Marketplace Guides/getting-started-with-dynatrace-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
+| [HPE LoadRunner](../Ecosystem Partners/Marketplace Guides/getting-started-with-hp-loadrunner-blueprint.md)   	| Blueprint    | Load Testing    |
 | [Mesosphere](../Ecosystem Partners/Marketplace Guides/getting-started-with-mesosphere-blueprint.md)   	| Blueprint    | Datacenter operating system |
 | [Rundeck](../Ecosystem Partners/Marketplace Guides/getting-started-with-rundeck-blueprint.md)   	| Blueprint    | Job scheduler and runbook automation   |
 | [Ruxit](../Ecosystem Partners/Marketplace Guides/getting-started-with-ruxit-blueprint.md)   	| Blueprint    | Application performance monitoring (APM)   |
