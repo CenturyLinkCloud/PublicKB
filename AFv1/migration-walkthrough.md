@@ -126,13 +126,7 @@ wget -c -O <example-db>.zip <URL_provided_by_export-service_command>
 gunzip <example-db>.sql <file_name>.gz
  ```
  
-2. Next, create a service on AppFog v2. You can view the available first-party service options using `cf marketplace`:
-
- ```
-service       plans                         description   
-ctl_mysql     micro, small, medium, large   CenturyLink's BETA MySQL DBaaS.  For development use only; not subject to SLAs.   
-orchestrate   free                          Orchestrate DBaaS
- ```
+2. Next, create a service on AppFog v2. You can view the available first-party service options using `cf marketplace`. For resource and pricing information on a specifc serivice offering use `cf marketplace -s <service-name>`.
 
 3. The syntax to create a service is `cf create-service <service-type> <plan> <service-name>`. For this example, `cf create-service ctl_mysql micro example-db`.
 4. Next bind the service to the application: `cf bind-service example-app example-db`.
