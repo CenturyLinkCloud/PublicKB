@@ -1,6 +1,6 @@
 ﻿{{{
   "title": "Managed Operating System - Frequently Asked Questions",
-  "date": "01-28-2015",
+  "date": "02-11-2015",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false,
@@ -42,12 +42,12 @@ There could be a few causes:
 * Be sure you are creating the server in a data center that supports managed services.
 * It is possible your company has not yet executed a Master Services Agreement (MSA) with CenturyLink Technology Solutions. To obtain a MSA – or if you believe you should already have one in place – please contact a CenturyLink Sales Representative toll free at:
 
-    * United States: 1-855-287-2541
+    * United States: 1-800-871-9244
     * Canada: 1-877-387-3764
     * Europe, Middle East &amp; Africa: +44 (0) 207 400 5600
-    * Japan: +81 3 5214 0180
-    * Hong Kong: +852 3079 4461
-    * Singapore: +65 6591 8824
+    * Japan: +81 3 6435 9658
+    * Hong Kong: +852 2190 8798
+    * Singapore: +65 6768 8098
 
 **Is there anything that I cannot do in the Control Portal with a managed VM?**
 
