@@ -42,7 +42,7 @@ There could be a few causes:
 * Be sure you are creating the server in a data center that supports managed services.
 * It is possible your company has not yet executed a Master Services Agreement (MSA) with CenturyLink Technology Solutions. To obtain a MSA – or if you believe you should already have one in place – please contact a CenturyLink Sales Representative toll free at:
 
-    * United States: 1-855-287-2541
+    * United States: 1-888-638-6771
     * Canada: 1-877-387-3764
     * Europe, Middle East &amp; Africa: +44 (0) 207 400 5600
     * Japan: +81 3 5214 0180
@@ -91,7 +91,7 @@ Files can be transferred by simply drag and drop in Windows Explorer from your r
 
 The CenturyLink Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at the numbers below, or send email to request@centurylink.com for Managed OS issues. If there is an incident, email can be sent to incident@centurylink.com.
 
-* United States: 1-855-287-2541
+* United States: 1-888-638-6771
 * Canada: 1-877-387-3764
 * Europe, Middle East &amp; Africa: +44 (0) 207 400 5600
 * Japan: +81 3 5214 0180
