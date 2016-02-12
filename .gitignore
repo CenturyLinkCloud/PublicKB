@@ -16,3 +16,6 @@ ehthumbs.db
 
 # merge files
 *.orig
+
+# IntelliJ created files
+.idea
