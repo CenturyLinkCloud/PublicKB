@@ -106,7 +106,7 @@ cf push test-app -m -128M -b https://github.com/CenturyLinkCloud/php-buildpack.g
 
 ### Migrate Services
 
-More information can be found in our [Migrating a Service](export-services-and-third-party-alternatives.md) and [Importing Data Into AppFog v2 MySQL](importing-data-to-afv2-mysql.md) articles. Our MySQL DBaaS is currently in Beta. It is due to release from Beta in December.
+More information can be found in our [Migrating a Service](export-services-and-third-party-alternatives.md) and [Importing Data Into AppFog v2 MySQL](importing-data-to-afv2-mysql.md) articles.
 
 1. First we need to export the data from AppFog v1. There are several options available. In this example we'll use the `af export-service <service_name>` command. The [Migrating a Service](export-services-and-third-party-alternatives.md) article provides information on other options.
  * From the CLI on AppFog v1:
