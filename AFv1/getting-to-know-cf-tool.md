@@ -30,13 +30,8 @@ Before mapping a custom domain to an application on AppFog v2 the domain needs t
 ##### Services
 Users are able to connect directly to their services on AppFog v2 so there is not a `tunnel` command. There is also not an `export-service` command. To obtain a backup of your service connect directly to the service using the credentials in the VCAP_SERVICES environment variable.
 
-To list available services with AppFog v2 use `cf marketplace`:
+To list available services with AppFog v2 use `cf marketplace`. For detailed information on a specific service use `cf marketplace -s <SERVICE>`.
 
-```
-service       plans                         description   
-ctl_mysql     micro, small, medium, large   CenturyLink's BETA MySQL DBaaS.  For development use only; not subject to SLAs.   
-orchestrate   free                          Orchestrate DBaaS
-```
 To create a service instance use `cf create-service <SERVICE_TYPE> <SERVICE_PLAN> <YOUR_SERVICE_NAME>`. For example, `cf create-service ctl_mysql micro example-db`.
 
 ##### Application Health and Status
