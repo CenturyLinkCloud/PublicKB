@@ -14,18 +14,15 @@
 
 	The full list of supported Operating Systems can be found [here](https://www.ctl.io/knowledge-base/security/supported-ips-oses/).
 
-### Early Adopter Program (0)
-
-
-
 ### Announcements (1)
 
 * __Sub-Accounts Disabled for Self-Sign Up Customers.__ As announced in the release notes from February 2, 2016, customers who have activated online no longer have the ability to create new sub-accounts by default. This feature can be re-enabled upon request by creating a ticket via an email to [help@ctl.io](mailto:help@ctl.io).
 
 	Please refer to our [release notes for February 2, 2016](https://www.ctl.io/knowledge-base/release-notes/2016-02-02-cloud-platform-release-notes/#announcements-1) and [KB article](https://www.ctl.io/knowledge-base/accounts-&-users/subaccounts-web-signup/) for additional information.
 
-### Ecosystem (0)
+### Ecosystem (1)
 
+* __Bitnami Launchpad.__ [Bitnami](https://bitnami.com/) is a software service that packages popular applications into cloud-friendly installers and integrates them with the major cloud service platforms. Especially focused on open source projects, Bitnami makes it easy for an enterprise cloud user to evaluate open source alternatives for different tools and functions. A number of Blueprints in the [CenturyLink Cloud Marketplace](https://www.ctl.io/knowledge-base/ecosystem-partners/ecosystem-partner-list/) are based on Bitnami installers, and you can now get started quickly by deploying applications to CenturyLink directly from the [Centurylink-Bitnami Launchpad site](https://centurylink.bitnami.com/).
 
-
-### Open Source Contributions (0)
+	![Bitnami Launchpad for CenturyLink Cloud](../images/2016-02-16_bitnami_launchpad.png)
+	
