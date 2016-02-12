@@ -140,7 +140,7 @@ Once your odrive File Server has been configured, you can store information on i
       ![odrive Image](../../images/ecosystem-odrive-10.png)
 
   3. Add the odrive File Server information:  
-    - The IP address URL https://<YOUR_OFS_SERVER_IP>:4433/
+    - The IP address URL https://YOUR_OFS_SERVER_IP:4433/
     - The username/password you created when you initially configured the odrive file server
     - You will receive an error if it cannot authorize
 
