@@ -95,6 +95,7 @@ The CenturyLink Technology Solutions Client Service Center is available to assis
 * UK: +44.118.322.6100
 * Singapore: +65.6305.8099
 
+
 **How is Managed Support different than Platform Support?**
 
 Your [Platform support](https://www.ctl.io/support/) options are distinct from Managed Support for a variety of reasons. You will find that public, platform support handles issues below the Operating System layer and some form of it is provided, regardless what flavor you choose, regardless what data center you choose. However, Managed Support is provided at your option within specific data centers for specific Operating Systems and Applications on CenturyLink Cloud (as well as other managed hosting products in the broader [CenturyLink Product Catalog](http://www.centurylink.com/business/enterprise/). Different teams with different skills sets are required and different methods are employed by each team.
@@ -126,7 +127,7 @@ Servers **can** be converted from unmanaged to managed by executing the "Managed
 
 **What Anti-Virus is provided for Windows Servers and how often is it updated?**
 
-McAfee 5.02 is the default, standard Anti-Virus for Managed Windows Servers and is updated daily. Any managed servers with Windows OS deployed prior to November 21, 2015 use an older version. If you would like to use a different Anti-Virus, please contact your CenturyLink sales representative to discuss Advanvanced Services.
+McAfee 5.02 is the default, standard Anti-Virus for Managed Windows Servers and is updated daily. Any managed servers with Windows OS deployed prior to November 21, 2015 use an older version. If you would like to use a different Anti-Virus, please contact your CenturyLink sales representative to discuss Advanced Services.
 
 **How do I Set Get Anti-Virus on a Managed RedHat Server?**
 
