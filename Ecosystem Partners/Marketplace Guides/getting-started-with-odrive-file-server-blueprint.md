@@ -118,7 +118,7 @@ After your Blueprint deploys successfully, please follow these instructions to a
 
       ![odrive Image](../../images/ecosystem-odrive-0a.png)
 
-  3. Connect to the following URL to begin using your ODrive File Server:  *https://YOUR_OFS_SERVER_IP:4433/*    Note: Chrome users will need to ignore the "Your connection is not private" warning from an Invalid SSL certificate  and Proceed to the website.
+  3. Connect to the following URL to begin using your ODrive File Server:  *https://YOUR_OFS_SERVER_IP:4434/*    Note: Chrome users will need to ignore the "Your connection is not private" warning from an Invalid SSL certificate  and Proceed to the website.
 
   4. Accept the odrive terms of usage
 
