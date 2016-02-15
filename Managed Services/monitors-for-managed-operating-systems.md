@@ -1,4 +1,4 @@
-{{
+{{{
   "title": "Monitors for Managed Operating Systems",
   "date": "02-12-2015",
   "author": "Ben Swoboda",
