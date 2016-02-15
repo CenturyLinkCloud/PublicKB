@@ -34,15 +34,14 @@ The API for creating a user is available at [https://www.ctl.io/api-docs/v1/#use
 
 At a minimum, you must specify UserName, AccountAlias, EmailAddress, FirstName, and LastName.  While it is not required, adding Roles at the same time is recommended.  A sample PowerShell call may look like this:
   ```
-  $UserInfo = @"
-  {
-  'UserName':'UserEmail@yourdomain.com', #This can be anything, but email is most common
-  'AccountAlias':'ABCD', #This is the account alias the user will be in
-  'EmailAddress': 'UserEmail@yourdomain.com',
-  'FirstName':'John',
-  'LastName':'Doe',
-  'Roles':[12,14] #This gives him network manager and server operator roles
-  }
-  "@
-  Invoke-WebRequest -URI ‘https://api.ctl.io/REST/User/CreateUser/JSON’ -Method POST -ContentType application/json -Body $UserInfo -WebSession $session -verbose
+$UserInfo = @{ 
+'UserName' = 'UserEmail@yourdomain.com' #This can be anything, but email is most common 
+'AccountAlias' = 'ABCD' #This is the account alias the user will be in 
+'EmailAddress' = 'UserEmail@yourdomain.com' 
+'FirstName' = 'John' 
+'LastName' = 'Doe' 
+'Roles' = 12,14 #This gives him network manager and server operator roles 
+} | ConvertTo-Json
+
+Invoke-WebRequest -URI ‘https://api.ctl.io/REST/User/CreateUser/JSON’ -Method POST -ContentType application/json -Body $UserInfo -WebSession $session -verbose
   ```
