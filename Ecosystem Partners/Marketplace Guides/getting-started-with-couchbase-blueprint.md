@@ -44,11 +44,11 @@ After you successfully install a Blueprint, you will receive a notification emai
 
    1. Log into [CenturyLink Control Portal](https://control.ctl.io) and enter your login and password.   
    2. Click on **sign in**. The dashboard containing CenturyLink servers will open, where you can select servers and the Blueprints library.      
-   ![](2-dashboard-uc.png)
+   ![](../../images/2-dashboard-uc.png)
    3. To find the Couchbase blueprint, select the green Dashboard area on the top and then select **Blueprints Library**.   
 
    4. In the panel "Blueprints Library", if needed use the keyword search on the right to select among multiple blueprints. In our case, choose from the available displayed blueprint thumbnails.   
-  ![](4-bp-lib.png)               
+  ![](../../images/4-bp-lib.png)               
 2. **Choose the Blueprint**    
   Click on **Install Couchbase Server on CentOS6**.     
 3. **Deploy the Blueprint**      
