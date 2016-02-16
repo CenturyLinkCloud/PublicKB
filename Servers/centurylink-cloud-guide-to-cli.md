@@ -27,6 +27,7 @@ For accounts, users, [API v1](//ca.ctl.io/api-docs/v1/u5o/) provides the access 
 The Python based SDK is crossed platform, the CLI can be ran on any Python 2.7 environment.  For detail usage of Python CLI and download, please see its [GitHub repository](//github.com/CenturyLinkCloud/clc-python-sdk/blob/master/README_CLI.md).  The pre-complied windows CLI executable can be downloaded from [here](//github.com/CenturyLinkCloud/clc-python-sdk/raw/master/src/dist/clc-cli.exe).
 The GO based CLI can be run on Mac OSX, Linux and Windows. For download page, please see the [CenturyLink Cloud CLI GitHub release page](//github.com/CenturyLinkCloud/clc-go-cli/releases).  
 The resources available on both tools will output similar results, at this time, certain functions are only available on API v1, hence the need of both tools to capture all the functionalities of the platform.
+
 Comparison of the two CLI tools:
 
 | CLI         |   Python            | Go                  |
