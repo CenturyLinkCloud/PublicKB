@@ -20,9 +20,9 @@
 ### Overview
 
 There are two CLI interfaces available on CenturyLink Cloud, GO based
-CLI for API v2 [explains here](//github.com/CenturyLinkCloud/clc-go-cli) and [Python based CLI for API v1 and v2](//github.com/CenturyLinkCloud/clc-python-sdk)
+CLI for API v2 [(explains here)](//github.com/CenturyLinkCloud/clc-go-cli) and [Python based CLI for API v1 and v2](//github.com/CenturyLinkCloud/clc-python-sdk)
 
-For accounts, users, groups, [API v1](//github.com/CenturyLinkCloud/clc-python-sdk/blob/master/README_CLI.md) provides the access to this information. For the rest of the data, [API v2](//www.ctl.io/api-docs/v2/) can be used to access this information.
+For accounts, users, [API v1](//ca.ctl.io/api-docs/v1/u5o/) provides the access to this information. For the rest of the data, [API v2](//www.ctl.io/api-docs/v2/) can be used to access this information.
 
 The Python based SDK is crossed platform, the CLI can be ran on any Python 2.7 environment.  For detail usage of Python CLI and download, please see its [GitHub repository](//github.com/CenturyLinkCloud/clc-python-sdk/blob/master/README_CLI.md).  The pre-complied windows CLI executable can be downloaded from [here](//github.com/CenturyLinkCloud/clc-python-sdk/raw/master/src/dist/clc-cli.exe).
 The GO based CLI can be run on Mac OSX, Linux and Windows. For download page, please see the [CenturyLink Cloud CLI GitHub release page](//github.com/CenturyLinkCloud/clc-go-cli/releases).  
@@ -124,7 +124,7 @@ password: pa33w0rd
 `clc -–help` will print out the help message, --help works on options
 of the command as well.
 
-Output of clc -–help:
+Output of `clc -–help`:
 
 ```
 
@@ -414,7 +414,7 @@ clc-cli billing account-summary --alias SUBA
 clc server list --account-alias SUBA
 clc network list --account-alias SUBA
 clc group list --data-center CA3 --account-alias SUBA
-clc billing get-invoice-data --account-alias SUBA --year 2016 --month 1\
+clc billing get-invoice-data --account-alias SUBA --year 2016 --month 1
 ```
 
 **List group and server in a specific account:**
@@ -432,6 +432,7 @@ clc server list –account-alias ABCD
 (**Warning**: use with care)
 
 ***Create***
+
 **Create a user**
 ```
 clc-cli users create --alias ABCD --user "new.test" --email new.test@abcd.com --first-name new --last-name test --roles AccountViewer
