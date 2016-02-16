@@ -29,20 +29,98 @@ repository](//github.com/CenturyLinkCloud/clc-python-sdk/blob/master/README_CLI.
 The windows CLI executable can be downloaded from
 [here](//github.com/CenturyLinkCloud/clc-python-sdk/raw/master/src/dist/clc-cli.exe).
 
-The new GO based CLI can be run on Mac OSX, Linux and Windows. For
+Comparison of the two CLI tools:
+
+| CLI         |   Python            | Go                  |
+| ---------   | ------------------- | -----------------   |
+| API version | Mostly v1 (some v2) |         v2          |
+| Resources     |  accounts           |   alert-policy      |
+|             | billing             |  anti-affinity-policy |
+|             | blueprints          |  autoscale-policy   |
+|             | groups              | billing             |
+|             | networks            | custom-fields       |
+|             | queue               | data-center         |
+|             | servers             | firewall-policy     |
+|             | users               | group               |
+|             |                     | load-balancer       |
+|             |                     | load-balancer-pool  |
+|             |                     | login               |
+|             |                     | network             |
+|             |                     | server              |
+|             |                     | wait                |
+
+The GO based CLI can be run on Mac OSX, Linux and Windows. For
 download page, please see the [CenturyLink Cloud CLI GitHub release
-page](//github.com/CenturyLinkCloud/clc-go-cli/releases).
+page](//github.com/CenturyLinkCloud/clc-go-cli/releases).  
+The Python based SDK is crossed platform, the CLI can be ran on any Python 2.7 environment.  There is a pre-complied Windows version of the CLI, it is available [here](https://github.com/CenturyLinkCloud/clc-python-sdk/raw/master/src/dist/clc-cli.exe).  A
+The resources available on both tools will output similar results, at this time, certain functions are only available on API v1, hence the need of both tools to capture all the functionalities of the platform.
 
 ### Prerequisites
 -   Access to the CenturyLink Cloud platform as an authorized user
 -   Understanding of CenturyLink Cloud portal
 -   Scripting knowledge will help on fully utilizing the CLI
+-   Python 2.7 installed in the environment for Python based CLI
+-   API user account [please see this KB for detail](https://www.ctl.io/knowledge-base/accounts-&-users/creating-users/)
 
 ### Use Case Scenarios
 This tool enables system administrators to interface with CenturyLink Cloud without programming with the API or the using the Control Portal.  Automation can be achieved using scripting and other automation tools.
 
 ### Installation of CenturyLink Cloud CLI
-Installation is simple. Download the executable and run it. The detail
+
+***In order to make easy distintion between the two CLIs, clc-cli is the Python based tool and clc is the GO based tool.***
+
+**Python Based CLI:**
+
+Installation instruction is available [here](https://github.com/CenturyLinkCloud/clc-python-sdk).  If pip is installed, then the following command will installed the CenturyLink Cloud Python SDK and CLI:
+```
+pip install clc-sdk
+```
+For authentication, it can be several way, please see the [README page of the CLI](https://github.com/CenturyLinkCloud/clc-python-sdk/blob/master/README_CLI.md#authentication).  In order to use a system configuration file, a clc.ini (Windows) or clc_config (POSIX) needs to be created.  An example is shown below:
+```
+[global]
+V1_API_KEY=
+V1_API_PASSWD=
+
+V2_API_USERNAME=
+V2_API_PASSWD=
+
+blueprint_ftp_url=ftp://user:password@ftp_fqdn
+```
+The CLI command is clc in Linux or MacOSX and clc-cli for Windows.
+`clc-cli` --help will print out the help message,
+
+```
+usage: clc-cli.exe [-h] [--cols [COL [COL ...]]] [--config CONFIG] [--v1-api-key KEY] [--v1-api-passwd PASSWORD]                    [--v2-api-username USERNAME] [--v2-api-passwd PASSWORD] [--async] [--quiet] [--verbose] [--format {json,table,text,csv}]                    {accounts,users,servers,groups,billing,networks,queue,blueprints} ...
+
+CLI tool for interacting with CenturyLink Cloud API.  
+optional arguments:
+  -h, --help                  show this help message and exit
+  --cols [COL [COL ...]]      Include only specific columns in the output
+  --config CONFIG, -c         CONFIG Ini config file
+  --v1-api-key KEY            V1 API key
+  --v1-api-passwd PASSWORD    V1 API password
+  --v2-api-username USERNAME  V2 API username
+  --v2-api-passwd PASSWORD    V2 API password
+  --async                     Return immediately after queueing long-running calls
+  --quiet, -q                 Supress status output (repeat up to 2 times)
+  --verbose, -v               Increase verbosity
+  --format {json,table,text,csv}, -f {json,table,text,csv}  Output result format (table is default)
+
+Commands:
+  {accounts,users,servers,groups,billing,networks,queue,blueprints}
+    accounts            Account level activities (list, create, modify)
+    users               User level activities (list, create, modify)
+    servers             Server level activities (list, create, modify)
+    groups              Group level activities (list, create, modify)
+    billing             Billing activities
+    networks            Network activities
+    queue               Work queue
+    blueprints          Blueprints
+    ```
+
+**GO Based CLI:**
+
+Installation is simple for the GO based CLI. Download the executable and run it. The detail
 of the installation steps can be found [here](//github.com/CenturyLinkCloud/clc-go-cli).
 A configuration file can be set up with account information, the detail
 steps are located [here](//github.com/CenturyLinkCloud/clc-go-cli#set-up-the-configuration-file).
@@ -59,10 +137,10 @@ user: alice
 password: pa33w0rd
 ```
 
-\`clc –help\` will print out the help message, --help works on options
+`clc -–help` will print out the help message, --help works on options
 of the command as well.
 
-Output of clc –help:
+Output of clc -–help:
 
 ```
 
@@ -86,14 +164,20 @@ autoscale-policy
 ```
 
 **Logging into the CenturyLink account:**
-Login to an account with a configuration file:
+
+Using command without a configuration file:
+```
+clc-cli --v1-api-key xxxxxxxxxxxxxxxxx --v1-api-passwd xxxxxxxxxxxxx  Commands
+```
 ```
 clc login –user username –password
 ```
+Or setup the configuration file as described in [Installation of CenturyLink Cloud CLI](#installation-of-centurylink-cloud-cli)
+
 **Output Format:**
 
-For output (with –-output), there are three options:
-‘JSON, TEXT, TABLE’
+For output (with --format for clc-cli or –-output for clc), there are several options:
+‘JSON, TEXT, TABLE’, an additional option ‘csv’ for clc-cli.
 
 JSON:
 ```
@@ -116,22 +200,52 @@ Table:
 | test.user.abcd | 2016-01-08 21:08:12 |
 +----------------+---------------------+
 ```
+csv:
+```
+HardwareGroupUUID,Name,Description,Cpu,MemoryGB,Status,TotalDiskSpaceGB,ServerType,OperatingSystem,PowerState,Location,IPAddress
+123456789abcdef123456789abcdef,CA3ABCDCEPHST05,TEST,2,4,Archived,76,1,47,Stopped,CA3,10.x.x.x
+```
+
 ### READ commands
 (No changes made with the following commands)
 
 ***List and Find***
-
+**List all accounts**
+```
+clc-cli accounts list
+```
+**List details of an account**
+```
+clc-cli accounts get -alias ABCD
+```
+**List all users in an account**
+```
+clc-cli users lists
+```
+**Get detail of a user**
+```
+clc-cli users get --alias ABCD --user "demo.user"
+```
 **List all data centers:**
+```
+clc-cli accounts locations
+```
 ```
 clc data-centers list
 ```
 
 **List all servers in the account:**
 ```
+clc-cli servers list
+```
+```
 clc server list
 ```
 
 **For a particular data center:**
+```
+clc-cli servers list --location CA3
+```
 ```
 clc server list –-data-center ca1
 ```
@@ -140,8 +254,10 @@ Or
 ```
 clc server list -–filter “LocationID”=”CA3”
 ```
-
 **List hostname of all servers in a datacenter:**
+```
+clc-cli --cols Name --config config.ini servers list --location CA3
+```
 ```
 clc server list --all --filter location-id=CA3 --query details.host-name
 ```
@@ -194,6 +310,9 @@ clc server list --all --filter name=CA2ABCDADM01 --query change-info.{created-by
 
 **Display power state and hostname:**
 ```
+clc-cli --cols Name PowerState --config.ini servers list-all
+```
+```
 clc server list --all --query details.{power-state,host-name}
 ```
 
@@ -204,7 +323,7 @@ clc server list --all --query details.{power-state,host-name} --output text | fi
 ```
 For Linux or MacOSX:
 ```
-clc server list --all --query details.{power-state,host-name} --output text | grep "paused" (Linux/MacOSX)
+clc server list --all --query details.{power-state,host-name} --output text | grep "paused"
 ```
 
 **Server name with number of CPUs and memory (in MB):**
@@ -214,10 +333,16 @@ clc server list --all --query "details.{cpu,memoryMB,host-name}" --output text
 
 **Find IP addresses with server name:**
 ```
+clc-cli -f text --cols Name IPAddress --config.ini servers list-all
+```
+```
 clc server list --all --query "details.{host-name,ipAddresses}" --output text
 ```
 
 **List all groups:**
+```
+clc-cli group list
+```
 ```
 clc group list –all
 ```
@@ -234,15 +359,33 @@ clc group list --filter 'servers-count>0'
 
 **List all network in a datacenter:**
 ```
+clc-cli networks list --location ca2
+```
+```
 clc network list --data-center ca3 --output table
 ```
 **Query the above result with Name, Description and Gateway:**
 ```
 clc network list --data-center ca3 --query Name,Description,Gateway --output table
 ```
+**List all jobs in the queue**
+```
+clc-cli queue list
+```
+**List Blueprints (all, scripts, software and system)**
+```
+clc-cli blueprints list
+clc-cli blueprints list-scripts
+clc-cli blueprints list-software
+clc-cli blueprints list-system
+```
 
 ### Billing and Accounting
 
+**Get Month to Date billing on the account**
+```
+clc-cli billing account-summary
+```
 **Get invoice for a month**
 ```
 clc billing get-invoice-data --year 2015 --month 12
@@ -257,12 +400,14 @@ json
 ```
 clc group get-billing-details --group-name Test
 ```
-*Output contains:
+*Output contains:*
 
 *ArchiveCost, CurrentHour, MonthToDate, MonthlyEstimate, TemplateCost*
 
 **Get Billing for a server:**
-
+```
+clc-cli billing server-estimate --server CA2ABCDTEST104
+```
 For Windows:
 ```
 clc group get-billing-details --group-name ceph --output text | find “hostname”
@@ -276,6 +421,9 @@ clc group get-billing-details --group-name ceph --output text | grep “hostname
 
 **List group and server in a specific account:**
 ```
+clc-cli groups list --alias ABCD
+```
+```
 clc group list –account-alias ABCD
 ```
 ```
@@ -286,16 +434,27 @@ clc server list –account-alias ABCD
 (**Warning**: use with care)
 
 ***Create***
+**Create a user**
+```
+clc-cli users create --alias ABCD --user "new.test" --email new.test@abcd.com --first-name new --last-name test --roles AccountViewer
+```
+*Possible roles: ServerAdministrator,BillingManager,DNSManager,AccountAdministrator,AccountViewer,NetworkManager,SecurityManager,ServerOperator*
 
 **Create a group:**
+```
+clc-cli groups create --location CA2 --alias ABCD --parnet DevOps --group TestingCLI --description "Testing group"
+```
 ```
 clc group create --name "TestCA2" --description "Test Servers" --parent-group-name "CA2 Hardware"
 ```
 
 **Create a server:**
 ```
-clc server create --name test1 --description "test" --group-name Test --template-name UBUNTU-14-64-TEMPLATE --root-password xxxxxxxxx
---network-name vlan\_771\_10.56.171 --cpu 1 --memory-gb 1 --type standard --storage-type standard --additional-disks sizeGB=50,type=raw
+clc-cli servers create --alias ABCD --location CA3 --group TestingCLI --name test1 --template UBUNTU-14-64-TEMPLATE --backup-level Standard --cpu 1 --ram 1 --network vlan_771_10.56.171
+```
+```
+clc server create --name test1 --description "test" --group-name TestingCLI --template-name UBUNTU-14-64-TEMPLATE --root-password xxxxxxxxx
+--network-name vlan_771_10.56.171 --cpu 1 --memory-gb 1 --type standard --storage-type standard --additional-disks sizeGB=50,type=raw
 ```
 
 **Create a new VLAN in a datacenter**
@@ -317,6 +476,9 @@ Output:
 
 **Delete a server:**
 ```
+clc-cli servers delete --server CA3ABCDTEST106
+```
+```
 clc server delete --server-name CA3ABCD2TSQL01
 ```
 Output looks like below:
@@ -329,7 +491,10 @@ Output looks like below:
 ```
 **Delete a group** (will delete all servers in this group):
 ```
-clc group delete –group-name TestGroup
+clc-cli groups delete --group TestGroup
+```
+```
+clc group delete -–group-name TestGroup
 ```
 
 
@@ -337,7 +502,7 @@ clc group delete –group-name TestGroup
 
 **Create firewall rule with port tcp/22 between VLANs:**
 ```
-C:\Users\test.user\Downloads\clc-20160106>clc firewall-policy create --data-center CA1 --destination-account abcd --sources "10.56.250.0/24" --destinations "10.56.171.0/24" --ports tcp/22
+clc firewall-policy create --data-center CA1 --destination-account abcd --sources "10.56.250.0/24" --destinations "10.56.171.0/24" --ports tcp/22
 ```
 
 **Create a json file for repeat usage of frequent use commands**
