@@ -194,6 +194,7 @@ HardwareGroupUUID,Name,Description,Cpu,MemoryGB,Status,TotalDiskSpaceGB,ServerTy
 (No changes made with the following commands)
 
 ***List and Find***
+
 **List all accounts**
 ```
 clc-cli accounts list
@@ -377,8 +378,7 @@ clc billing get-invoice-data --year 2015 --month 12
 
 **Narrow down the output with locations**
 ```
-clc billing get-invoice-data --year 2015 --month 12 --query LineItems.{ServiceLocation,UnitCost} --output
-json
+clc billing get-invoice-data --year 2015 --month 12 --query LineItems.{ServiceLocation,UnitCost} --output json
 ```
 **Get billing for a group:**
 ```
@@ -403,7 +403,18 @@ clc group get-billing-details --group-name ceph --output text | grep “hostname
 
 **From a Master account to look in a sub-account:**
 ```
-clc-cli account get --alias ABCD
+clc-cli account get --alias SUBA
+cli-cli users list --alias SUBA
+clc-cli servers list --alias SUBA
+clc-cli networks list --alias SUBA
+clc-cli groups list --location CA3 --alias SUBA
+clc-cli billing account-summary --alias SUBA
+```
+```
+clc server list --account-alias SUBA
+clc network list --account-alias SUBA
+clc group list --data-center CA3 --account-alias SUBA
+clc billing get-invoice-data --account-alias SUBA --year 2016 --month 1\
 ```
 
 **List group and server in a specific account:**
