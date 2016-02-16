@@ -20,40 +20,22 @@
 ### Overview
 
 There are two CLI interfaces available on CenturyLink Cloud, GO based
-CLI for API v2 (explains here) and Python based CLI for API v1 and v2.
+CLI for API v2 [explains here](//github.com/CenturyLinkCloud/clc-go-cli) and [Python based CLI for API v1 and v2](//github.com/CenturyLinkCloud/clc-python-sdk)
 
 For accounts, users, groups, [API v1](//github.com/CenturyLinkCloud/clc-python-sdk/blob/master/README_CLI.md) provides the access to this information. For the rest of the data, [API v2](//www.ctl.io/api-docs/v2/) can be used to access this information.
 
-For detail usage of CLI v1 and download, please see its [GitHub
-repository](//github.com/CenturyLinkCloud/clc-python-sdk/blob/master/README_CLI.md).
-The windows CLI executable can be downloaded from
-[here](//github.com/CenturyLinkCloud/clc-python-sdk/raw/master/src/dist/clc-cli.exe).
-
+The Python based SDK is crossed platform, the CLI can be ran on any Python 2.7 environment.  For detail usage of Python CLI and download, please see its [GitHub repository](//github.com/CenturyLinkCloud/clc-python-sdk/blob/master/README_CLI.md).  The pre-complied windows CLI executable can be downloaded from [here](//github.com/CenturyLinkCloud/clc-python-sdk/raw/master/src/dist/clc-cli.exe).
+The GO based CLI can be run on Mac OSX, Linux and Windows. For download page, please see the [CenturyLink Cloud CLI GitHub release page](//github.com/CenturyLinkCloud/clc-go-cli/releases).  
+The resources available on both tools will output similar results, at this time, certain functions are only available on API v1, hence the need of both tools to capture all the functionalities of the platform.
 Comparison of the two CLI tools:
 
 | CLI         |   Python            | Go                  |
 | ---------   | ------------------- | -----------------   |
 | API version | Mostly v1 (some v2) |         v2          |
-| Resources     |  accounts           |   alert-policy      |
-|             | billing             |  anti-affinity-policy |
-|             | blueprints          |  autoscale-policy   |
-|             | groups              | billing             |
-|             | networks            | custom-fields       |
-|             | queue               | data-center         |
-|             | servers             | firewall-policy     |
-|             | users               | group               |
-|             |                     | load-balancer       |
-|             |                     | load-balancer-pool  |
-|             |                     | login               |
-|             |                     | network             |
-|             |                     | server              |
-|             |                     | wait                |
+| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> billing <br> custom-fields <br> data-center <br> firewall-policy <br> group <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> server <br> wait <br>      |
 
-The GO based CLI can be run on Mac OSX, Linux and Windows. For
-download page, please see the [CenturyLink Cloud CLI GitHub release
-page](//github.com/CenturyLinkCloud/clc-go-cli/releases).  
-The Python based SDK is crossed platform, the CLI can be ran on any Python 2.7 environment.  There is a pre-complied Windows version of the CLI, it is available [here](//github.com/CenturyLinkCloud/clc-python-sdk/raw/master/src/dist/clc-cli.exe).  A
-The resources available on both tools will output similar results, at this time, certain functions are only available on API v1, hence the need of both tools to capture all the functionalities of the platform.
+
+
 
 ### Prerequisites
 -   Access to the CenturyLink Cloud platform as an authorized user
@@ -420,6 +402,9 @@ clc group get-billing-details --group-name ceph --output text | grep “hostname
 ```
 
 **From a Master account to look in a sub-account:**
+```
+clc-cli account get --alias ABCD
+```
 
 **List group and server in a specific account:**
 ```
