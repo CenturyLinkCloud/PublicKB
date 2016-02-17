@@ -66,6 +66,7 @@ define('DB_HOST', $service['credentials']['host'] . ':' . $service['credentials'
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '')
  ```
+ 
 5. AppFog v1 had several PHP extensions and modules enabled by default. AppFog v2 allow users to specify necessary extensions and modules. The following steps outline the process:
  * Create a new `.bp-config` directory in your application's root directory.
  * Within the new `.bp-config` directory add a filed named `options.json`.
@@ -75,20 +76,29 @@ define('DB_COLLATE', '')
 "PHP_EXTENSIONS": ["pdo", "pdo_mysql", "mysqli", "mysql", "mbstring", "mcrypt", "gd", "zip", "curl", "openssl", "sockets", "pdo_pgsql", "pdo_sqlite", "pgsql", "mongo"]
 }
  ```
-6. AppFog v1 required modifications to php.ini settings to be included in their `.htaccess` file. On AppFog v2 users will need to create a `user.ini` file in their root directory to modify php.ini settings. Users can still utilize a `.htaccess` file for URL rewriting. Here are some examples of php.ini modifications:
+ 
+6. The PHP buildpack default version is 5.5. Specifying a different PHP version is done within the `bp.config/options.json` file. The example app `test-app` requires version 5.3, this example shows how to specify a runtime and enable some PHP extensions:
+ ```
+{
+"PHP_VERSION" : "{PHP_53_LATEST}",
+"PHP_EXTENSIONS": ["pdo", "pdo_mysql", "mysqli", "mysql", "mbstring", "mcrypt"]
+}
+ ```
+ 
+7. AppFog v1 required modifications to php.ini settings to be included in their `.htaccess` file. On AppFog v2 users will need to create a `user.ini` file in their root directory to modify php.ini settings. Users can still utilize a `.htaccess` file for URL rewriting. Here are some examples of php.ini modifications:
 
  ```
 memory_limit = 256M
 upload_max_filesize = 4M
 max_input_time = 90
   ```
-7. The default application memory reservation is 1GB and the default buildpack will support PHP 5.5 and 5.6. Specify the PHP custom buildpack when deploying PHP 5.3 and 5.4 applications, if necessary also specify the memory allocation:
+8. The default application memory reservation is 1GB and the default buildpack will support PHP 5.5 and 5.6. Specify the PHP custom buildpack when deploying PHP 5.3 and 5.4 applications, if necessary also specify the memory allocation:
  
  ```
 cf push <appname> -m <memory> -b https://github.com/CenturyLinkCloud/php-buildpack.git#af_custom_php
  ```
  
-8. For this example we would use the following commands to push the example-app and test-app applications to AppFog v2:
+9. For this example we would use the following commands to push the example-app and test-app applications to AppFog v2:
 ```
 cf push example-app -m -256M
 cf push test-app -m -128M -b https://github.com/CenturyLinkCloud/php-buildpack.git#af_custom_php
@@ -96,7 +106,7 @@ cf push test-app -m -128M -b https://github.com/CenturyLinkCloud/php-buildpack.g
 
 ### Migrate Services
 
-More information can be found in our [Migrating a Service](export-services-and-third-party-alternatives.md) and [Importing Data Into AppFog v2 MySQL](importing-data-to-afv2-mysql.md) articles. Our MySQL DBaaS is currently in Beta. It is due to release from Beta in December.
+More information can be found in our [Migrating a Service](export-services-and-third-party-alternatives.md) and [Importing Data Into AppFog v2 MySQL](importing-data-to-afv2-mysql.md) articles.
 
 1. First we need to export the data from AppFog v1. There are several options available. In this example we'll use the `af export-service <service_name>` command. The [Migrating a Service](export-services-and-third-party-alternatives.md) article provides information on other options.
  * From the CLI on AppFog v1:
@@ -116,13 +126,7 @@ wget -c -O <example-db>.zip <URL_provided_by_export-service_command>
 gunzip <example-db>.sql <file_name>.gz
  ```
  
-2. Next, create a service on AppFog v2. You can view the available first-party service options using `cf marketplace`:
-
- ```
-service       plans                         description   
-ctl_mysql     micro, small, medium, large   CenturyLink's BETA MySQL DBaaS.  For development use only; not subject to SLAs.   
-orchestrate   free                          Orchestrate DBaaS
- ```
+2. Next, create a service on AppFog v2. You can view the available first-party service options using `cf marketplace`. For resource and pricing information on a specifc serivice offering use `cf marketplace -s <service-name>`.
 
 3. The syntax to create a service is `cf create-service <service-type> <plan> <service-name>`. For this example, `cf create-service ctl_mysql micro example-db`.
 4. Next bind the service to the application: `cf bind-service example-app example-db`.
