@@ -33,3 +33,7 @@ When unmapping a `*.ctl.io` domain from an AppFog v1 application the application
 ```
 af unmap foo foo.useast.appfog.ctl.io
 ```
+
+### Important
+
+If mapping an AppFog v1 URL to an AppFog v2 applicataion users should still cancel their billing subscription for AppFog v1 from the [Account Page](https://console.appfog.com/#account) of the AppFog v1 web console. Even without a billing subscription the mapping will remain active. **Do not** request for your AppFog v1 account to be deleted, which requires a support ticket. Deleting your AppFog v1 account will remove all URL mappings.
