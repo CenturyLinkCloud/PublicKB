@@ -1,6 +1,6 @@
 {{{
   "title": "Example Migration Walkthrough",
-  "date": "11-10-2015",
+  "date": "02-17-2015",
   "author": "Ben Heisel",
   "attachments": [],
   "related-products" : [],
@@ -51,7 +51,7 @@ AppFog v2 has a variety of options to manage and create spaces, invite users, an
 
 Now the account is established on AppFog v2 and the CLI tool is installed. Next we'll migrate the applications. More information can be found in our [Migrating an Application](how-to-migrate-an-application.md) and [Migrating a PHP Application](migrating-php-to-afv2.md) articles. The application will be pushed to the current space logged into. Use `cf push` whether it is the initial push or an update, there is no equivalent to AppFog v1's `af update` command.
 
-1. PHP 5.3 and 5.4 are deprecated and no longer [officially supported](http://php.net/eol.php). We recommend updating applications to at least PHP 5.5. If updating is not possible at this time we have provided a custom buildpack to support PHP 5.3 and 5.4. When using the custom buildpack environment variables are not available to your application. This means VCAP_SERVICES or any user set environment variables will not be available to a deployed application. To connect to an AppFog marketplace service the credentials will need to be included in the application's database configuration file. The VCAP_SERVICES variable can be viewed using `cf env <YOUR_APPNAME>` to obtain necessary database connection information.
+1. PHP 5.3 and 5.4 are deprecated and no longer [officially supported](http://php.net/eol.php). We recommend updating applications to at least PHP 5.5. If updating is not possible at this time we have provided a custom buildpack to support PHP 5.3 and 5.4. When using the PHP custom buildpack only predefined environment variables can be utilized. This means user set environment variables will not be available to the deployed PHP application. The VCAP_SERVICES environment variable is available for use connecting to an AppFog marketplace service offering. This buildpack commit lists the [available environment variables](https://github.com/CenturyLinkCloud/php-buildpack/commit/6bd12f73bc68950856e67cae9a08c4d89c2dfefc) defined in the custom buildpack.
 2. Download a copy of the application from AppFog v1 using `af pull <appname>`.
 3. Modify your applications to replace any AppFog v1 URLs in the application's code. For instance, replace calls to `example-app.aws.af.cm` with a new application URL of `example-app.uswest.appfog.ctl.io`.
 4. Modify how the VCAP_SERVICES environment variable is called. The fields are slightly different on AppFog v2. On AppFog v1 the database and host fields were "name" and "hostname". They are defined as "dbname" and "host" on AppFog v2, respectively. Follow these links for examples of the VCAP_SERVICES environment variable for [AppFog v1](mysql.md) and [AppFog v2](importing-data-to-afv2-mysql.md). Here is an example using the VCAP_SERVICES variable with PHP:
@@ -85,7 +85,7 @@ define('DB_COLLATE', '')
 }
  ```
  
-7. AppFog v1 required modifications to php.ini settings to be included in their `.htaccess` file. On AppFog v2 users will need to create a `user.ini` file in their root directory to modify php.ini settings. Users can still utilize a `.htaccess` file for URL rewriting. Here are some examples of php.ini modifications:
+7. AppFog v1 required modifications to php.ini settings to be included in their `.htaccess` file. On AppFog v2 users will need to create a `.user.ini` file in their root directory to modify php.ini settings. Users can still utilize a `.htaccess` file for URL rewriting. Here are some examples of php.ini modifications:
 
  ```
 memory_limit = 256M
@@ -163,8 +163,6 @@ mysql -h <HOST_ADDRESS> default -u admin -p -P <PORT_NUMBER> < /path/to/file/exa
  ```
 You will be prompted for the password. You can also use SSL when connecting to the database. To do so copy the ca.cert to a file and specify the location as described in the [Importing Data Into AppFog v2 MySQL](importing-data-to-afv2-mysql.md) article.
 
-The VCAP_SERVICES environment variable is not available to a PHP 5.3 or PHP 5.4 application using the custom buildpack. The database connection credentials will need to be provided in the application's database config file.
-
 ### Set up Custom Domains
 
 Here is our Knowledge Base article on AppFog v2 [Custom Domains](../AppFog/setup-custom-domain-for-appfog-app.md). Additional information can be found in the Cloud Foundry Docs at: https://docs.cloudfoundry.org/devguide/deploy-apps/domains-routes.html
@@ -211,7 +209,7 @@ For more information visit our [Add-On Migration](migrating-environment-variable
 
 1. Obtain the IronMQ credentials on AppFog v1 by using `af env example-app`, or view the variables from the application's Mission Control page of the web console.
 2. Set the variable on AppFog v2 using `cf set-env <appname> <variable> <value>`
-3. If a PHP 5.3 or 5.4 application was utilizing an environment variable on AppFog v1 this will not be available with the custom buildpack. The connection credentials will need to be provided within the application.
+3. If a PHP 5.3 or 5.4 application was utilizing a user set environment variable on AppFog v1 this will not be available with the custom buildpack. The connection credentials will need to be provided within the application.
 4. Here are the commands to migrate the IronMQ configs to AppFog v2:
 
 ```
