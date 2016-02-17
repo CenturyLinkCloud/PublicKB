@@ -26,7 +26,7 @@ A: From the Control Portal menu, select “Create Server.” You will then be pr
 A: There could be a few causes:
 * Be sure you are creating the server in a data center that supports the managed backup service (an updated list is [available here](//www.ctl.io/managed-services/backup/)).
 * It is possible your company has not yet executed a Master Services Agreement (MSA) with CenturyLink Technology Solutions. To obtain a MSA – or if you believe you should already have one in place – please contact a CenturyLink Sales Representative toll free at:
-    * United States: 1-855-287-2541
+    * United States: 1-888-638-6771
     * Canada: 1-877-387-3764
     * Europe, Middle East and Africa: +44 (0) 207 400 5600
     * Japan: +81 3 5214 0180

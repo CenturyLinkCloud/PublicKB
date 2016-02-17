@@ -1,6 +1,6 @@
 {{{
-  "title": "Using CenturyLink MySQL with AppFog Applications",
-  "date": "10-23-2015",
+  "title": "Using CenturyLink MySQL Relational DB with AppFog Applications",
+  "date": "02-08-2016",
   "author": "Chris Sterling",
   "attachments": [],
   "related-products" : [],
@@ -13,40 +13,38 @@ Application developers
 
 ### Overview
 
-This article will provide an overview of our [new CenturyLink MySQL Database-as-a-Service offering](https://www.ctl.io/dbaas/) that is currently in beta and how it can be consumed by applications deployed to AppFog. We will use JavaScript with the [MySQL Node.js module](https://github.com/felixge/node-mysql/) to demonstrate using the CenturyLink MySQL service.
+This article will provide an overview of our [MySQL-compatible Relational DB offering](https://www.ctl.io/relational-database/) and how it can be consumed by applications deployed to AppFog. We will use JavaScript with the [MySQL Node.js module](https://github.com/felixge/node-mysql/) to demonstrate using CenturyLink's Relational DB service.
 
-#### Warning - MySQL Service in Beta
-
-The [CenturyLink MySQL Database-as-a-Service](https://www.ctl.io/dbaas/) recently went into beta and is currently included in the AppFog marketplace. You can find via the Cloud Foundry CLI by running the following command in a terminal window:
+[CenturyLink Relational DB](https://www.ctl.io/relational-database/) is included in the AppFog marketplace. You can find it via the Cloud Foundry CLI by running the following command in a terminal window:
 
 ```
 $ cf marketplace
 ...
-service       plans                description   
-ctl_mysql     micro                CenturyLink's BETA MySQL DBaaS.  For development use only; not subject to SLAs.
+service       plans                           description   
+ctl_mysql     micro, small, medium, large     CenturyLink's Relational DB Service, MySQL-compatible database-as-a-service
 ```
 
-As the description mentions, the `ctl_mysql` service is in beta and is for development use only at this time. Although we have no guarantees of service availability yet our DBaaS team is focused on providing the best service possible as they gather feedback. Please go the [DBaaS product page](https://www.ctl.io/dbaas/) to learn more.
 
-### Create a MySQL Service Instance
 
-To create a new CenturyLink MySQL service instance, we can use the Cloud Foundry CLI. In order to do this you must be [logged into an AppFog region](login-using-cf-cli.md). The following command will create a new CenturyLink MySQL service instance named `acmedb`:
+### Create a Relational DB Service Instance
+
+To create a new CenturyLink Relational DB service instance, we can use the Cloud Foundry CLI. In order to do this you must be [logged into an AppFog region](login-using-cf-cli.md). The following command will create a new micro Relational DB service instance named `acmedb`:
 
 ```
 $ cf create-service ctl_mysql micro acmedb
 ```
 
-The `cf create-service` command will provision a new MySQL instance that can later be bound to an application deployed to AppFog.
+The `cf create-service` command will provision a new MySQL-compatible instance that can later be bound to an application deployed to AppFog.
 
-### Bind MySQL to Application
+### Bind Relational DB to Application
 
-To bind the MySQL service instance to an [application deployed to AppFog](deploy-an-application.md) you can use the `cf bind-service` command:
+To bind the Relational DB service instance to an [application deployed to AppFog](deploy-an-application.md) you can use the `cf bind-service` command:
 
 ```
 $ cf bind-service myapp acmedb
 ```
 
-This will add the CenturyLink MySQL service instance access credentials into the `myapp` application's runtime environment. To view these MySQL service instance credentials use the `cf env` command and they will be located in the VCAP_SERVICES environment variable which is a convention for Cloud Foundry enabled services:
+This will add the CenturyLink Relational DB service instance access credentials into the `myapp` application's runtime environment. To view these MySQL service instance credentials use the `cf env` command and they will be located in the VCAP_SERVICES environment variable which is a convention for Cloud Foundry enabled services:
 
 ```
 $ cf env myapp
@@ -117,7 +115,7 @@ var connectionInfo = {
   database: 'myappdb'
 };
 
-// set connection info from CenturyLink MySQL service instance
+// set connection info from CenturyLink Relational DB service instance
 // credentials from VCAP_SERVICES environment variable
 if (process.env.VCAP_SERVICES) {
   var services = JSON.parse(process.env.VCAP_SERVICES);

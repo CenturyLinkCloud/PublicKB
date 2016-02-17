@@ -19,15 +19,15 @@ What is the optimal way to report an issue to CenturyLink Cloud support and have
 
 * Have a definition of the issue that is being encountered including the count of servers / customers
 * Think of a good one line description of the issue
-* Account Alias / username 
+* Account Alias / username
 * [User PIN](../Support/pin-authentication-for-support-requests.md)
 
 ### Exceptions
 [Managed Services](//www.ctl.io/managed-services) customers should use the data below to request support for Managed OS or Applications:
 
-**Phone**|**Email**
----------|---------
-US: 888.638.6771<br>UK: +44.118.322.6100<br>Singapore: +65.6305.8099|request@centurylink.com
+**Phone**|**Email for Incidents**|**Email for Requests**
+---------|---------|---------
+US: 888.638.6771<br>UK: +44.118.322.6100<br>Singapore: +65.6305.8099| incident@centurylink.com | request@centurylink.com
 
 ### Online Support
 
@@ -51,12 +51,12 @@ US: 888.638.6771<br>UK: +44.118.322.6100<br>Singapore: +65.6305.8099|request@cen
 2. Open a ticket and use the one line description as the ticket subject / title
   * You can open a ticket by simply sending an email to [noc@ctl.io](mailto:noc@ctl.io)
   * You can also open a ticket by going to [https://www.ctl.io/knowledge-base](https://www.ctl.io/knowledge-base/) and clicking the "Submit a request" button at the top of the page
-  
+
 3. Capture the data collected and add it to the body of the ticket
 
 ### Phone Support
 **Professional and Enterprise** support level clients can call our phone support.
-    
+
 **Country**|**Phone Number**
 -----------|----------------
 USA|+1 (425) 321-0338
@@ -64,7 +64,7 @@ UK|+44 20 0333 0338
 Hong Kong|+852 58032338
 Australia|+61 7 4410 3380
 Singapore|+65 3158 9575
-    
+
 Gather information about the issue that you experiencing. Examples of data that helps are:
   * Production / Test / Development environments
   * Time the issue started
