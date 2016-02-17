@@ -500,6 +500,9 @@ clc group delete -–group-name TestGroup
 
 ### Advanced Usage
 
+**Adding a secondary network card on a server**
+Please refer to the [Add or Remove Network Interface to Server using Go CLI](../Network/add-or-remove-network-interface-to-server-using-go-cli.md)
+
 **Create firewall rule with port tcp/22 between VLANs:**
 ```
 clc firewall-policy create --data-center CA1 --destination-account abcd --sources "10.56.250.0/24" --destinations "10.56.171.0/24" --ports tcp/22
