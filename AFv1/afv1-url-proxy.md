@@ -1,6 +1,6 @@
 {{{
   "title": "How to Map an AppFog v1 URL to an AppFog v2 Application",
-  "date": "12-14-2015",
+  "date": "02-17-2016",
   "author": "Ben Heisel",
   "attachments": [],
   "related-products" : [],
