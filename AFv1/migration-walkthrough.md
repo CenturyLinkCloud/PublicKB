@@ -1,6 +1,6 @@
 {{{
   "title": "Example Migration Walkthrough",
-  "date": "02-17-2015",
+  "date": "02-17-2016",
   "author": "Ben Heisel",
   "attachments": [],
   "related-products" : [],
