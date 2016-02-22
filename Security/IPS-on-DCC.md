@@ -26,7 +26,6 @@ Run below command in a terminal session on target server:
 > * curl https://api.client-security.ctl.io/ips/scripts/install.sh | sudo CLC_USERNAME=<your.clc.username> CLC_PASSWORD=<your.clc.password> CLOUD_PROVIDER= CTL_DCC bash
 
   * Windows-based Operating Systems
-Run both commands below in a PowerShell session on target server (Note: for the user input, you will need to enclose the data in “” as shown below):
 > * Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 > * (New-Object System.Net.WebClient).DownloadFile("https://api.ts.client-security.ctl.io/ips/scripts/install.ps1","$env:temp\install.ps1") ; cd $env:temp ; .\install.ps1 -controlUser "<your.clc.account>" -controlUserPassword "<your.clc.password>" -accountAlias "<your.clc.account,alias>" -cloudProvider "CTL_DCC"
 > * Note: for the user input, you will need to enclose the data in “”.  For example, if your username was testuser, for the option of -controlUser "<your.clc.account>", you would use -controlUser "test user”.
@@ -35,14 +34,14 @@ Run both commands below in a PowerShell session on target server (Note: for the 
 There are two ways to  set/update IPS event notifications.  The first is to send a request to help@ctl.io for the Client Security Team and the second is to send a request to the IPS API directly.  
 
 If sending an email, send the following data as needed:
-* The servers to update the notification on
-* The email addresses or email addresses to send notifications to. 
-* The WebHook URL to send notifications to.  NOTE: There can only be 1 WebHook setup.
-* The syslog server to forward event data to.  NOTE: There can only be 1 syslog server setup.
+  * The servers to update the notification on
+  * The email addresses or email addresses to send notifications to. 
+  * The WebHook URL to send notifications to.  NOTE: There can only be 1 WebHook setup.
+  * The syslog server to forward event data to.  NOTE: There can only be 1 syslog server setup.
 
 The full documentation for the IPS API is documented in the KB link listed below.  Examples of how to request each of the notification mediums (Email, Slack, Webhook, & Syslog) are reviewed.   
 
-* IPS API KB: https://www.ctl.io/knowledge-base/security/ips-api/
+  * IPS API KB: https://www.ctl.io/knowledge-base/security/ips-api/
 
 ## Additional KBs and Links
   * Product Details: https://www.ctl.io/intrusion-prevention-service/
