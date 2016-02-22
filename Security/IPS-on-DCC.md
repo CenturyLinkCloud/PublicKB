@@ -11,15 +11,18 @@ This document is intended to summarize (aka Quick Start) the installation and no
         
 ## Pre-Requisites 
   * Compatible server OS 
-    * Note: IPS supports all Managed DCC OS Images at this time
-    * https://www.ctl.io/knowledge-base/security/supported-ips-oses/
-  * See https://www.ctl.io/knowledge-base/security/getting-started-with-ips/#prerequisites for the other requirements such as the firewall rules to allow agent download, activation and management.
+    * IPS supports all Managed DCC OS Images at this time
+    * Supported OSs KB: https://www.ctl.io/knowledge-base/security/supported-ips-oses/
+  * Firewall Rules
+  * Centurylink Cloud Account
+
+KB: https://www.ctl.io/knowledge-base/security/getting-started-with-ips/#prerequisites 
         
 ## Installing IPS on Target Server
         
 The IPS “Anywhere” install requires 1-2 command lines to initiate the install of the servers IPS agent and automatically handles all of the backend configurations behinds the scenes.   
         
-  KB: https://www.ctl.io/knowledge-base/security/ipsanywhere/
+KB: https://www.ctl.io/knowledge-base/security/ipsanywhere/
         
 Run below command in a terminal session on target server:
   * Linux-based Operating Systems
