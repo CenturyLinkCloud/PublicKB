@@ -7,7 +7,7 @@
 
 Article first posted on February 22, 2016
 
-### Introducing New Options for Backups, Plus An Update on the Retirement of Standard & Premium Backup Features
+### Introducing New Options for Backups, Plus an Update on the Retirement of Standard & Premium Backup Features
 
 Late last year, CenturyLink notified customers that the backup features associated with [“Standard” and “Premium” storage were to be retired in early 2016](../Support/backup-service-changes-faq.md).
 
@@ -109,7 +109,7 @@ The answer varies depending on the workload and your requirements. Along those l
 * Deployment Time: Days
 * Support Model: Software is supported by CommVault; CenturyLink Cloud supports the underlying infrastructure via our standard SLAs
 * To Get Started: 30-day evaluation licenses are available, please contact your CenturyLink account team, or [CommVault for additional information](http://www.commvault.com/contact-us).
-* Other resources: Additional documentation is available at the following links:
+* Other resources:
   * [Getting Started with CommVault Storage Blueprint](../Ecosystem Partners/Marketplace Guides/getting-started-with-commvault-storage-blueprint.md)
 
 #### Double Take, from Vision Solutions
@@ -121,7 +121,7 @@ The answer varies depending on the workload and your requirements. Along those l
 * Deployment Time: Days
 * Support Model: Software is supported by Vision Solutions; CenturyLink Cloud supports the underlying infrastructure via our standard SLAs
 * To Get Started: Contact Vision Solutions directly via email at [CenturyLinkInfo@visionsolutions.com](mailto:CenturyLinkInfo@visionsolutions.com); evaluation licenses are available.
-* Other resources: Additional documentation is available at the following links:
+* Other resources:
   * [Getting Started with the Double Take Blueprint](../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md)
   * [Setting up disaster recovery using Visions Solutions Double-Take Availability](../Servers/setting-up-disaster-recovery-using-visions-solutions-double-take-availability.md)
   * [CenturyLink Cloud Guide to Double Take DR](../Servers/centurylink-cloud-guide-to-doubletake-dr.md)
