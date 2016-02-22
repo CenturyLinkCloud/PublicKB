@@ -10,28 +10,26 @@
 This document is intended to summarize (aka Quick Start) the installation and notification configuration steps for CLC’s IPS “Anywhere” service as derived from the services public KBs.  
         
 ## Pre-Requisites 
-* Compatible server OS 
-** Note: IPS supports all Managed DCC OS Images at this time
-** https://www.ctl.io/knowledge-base/security/supported-ips-oses/
-See https://www.ctl.io/knowledge-base/security/getting-started-with-ips/#prerequisites for the other requirements such as the firewall rules to allow agent download, activation and management.
+  * Compatible server OS 
+    * Note: IPS supports all Managed DCC OS Images at this time
+    * https://www.ctl.io/knowledge-base/security/supported-ips-oses/
+  * See https://www.ctl.io/knowledge-base/security/getting-started-with-ips/#prerequisites for the other requirements such as the firewall rules to allow agent download, activation and management.
         
 ## Installing IPS on target Server
         
 The IPS “Anywhere” install requires 1-2 command lines to initiate the install of the servers IPS agent and automatically handles all of the backend configurations behinds the scenes.   
         
-* KB: https://www.ctl.io/knowledge-base/security/ipsanywhere/
-* Linux-based Operating Systems
+  KB: https://www.ctl.io/knowledge-base/security/ipsanywhere/
         
 Run below command in a terminal session on target server:
   * Linux-based Operating Systems
 > * curl https://api.client-security.ctl.io/ips/scripts/install.sh | sudo CLC_USERNAME=<your.clc.username> CLC_PASSWORD=<your.clc.password> CLOUD_PROVIDER= CTL_DCC bash
 
   * Windows-based Operating Systems
-  Run bothcommands below in a PowerShell session on target server (Note: for the user input, you will need to enclose the data in “” as shown below):
+Run both commands below in a PowerShell session on target server (Note: for the user input, you will need to enclose the data in “” as shown below):
 > * Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 > * (New-Object System.Net.WebClient).DownloadFile("https://api.ts.client-security.ctl.io/ips/scripts/install.ps1","$env:temp\install.ps1") ; cd $env:temp ; .\install.ps1 -controlUser "<your.clc.account>" -controlUserPassword "<your.clc.password>" -accountAlias "<your.clc.account,alias>" -cloudProvider "CTL_DCC"
-
-* Note: for the user input, you will need to enclose the data in “”.  For example, if your username was testuser, for the option of -controlUser "<your.clc.account>", you would use -controlUser "test user”.
+> Note: for the user input, you will need to enclose the data in “”.  For example, if your username was testuser, for the option of -controlUser "<your.clc.account>", you would use -controlUser "test user”.
 
 ## Notifications
 There are two ways to  set/update IPS event notifications.  The first is to send a request to help@ctl.io for the Client Security Team and the second is to send a request to the IPS API directly.  
