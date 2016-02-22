@@ -1,9 +1,11 @@
-{{{ "title": "IPS - Centurylink Dedicated Cloud Compute (DCC) FAQ",
-        "date": "02-22-2016",
-        "author": "Client-Security",
-        "attachments": [],
-        "contentIsHTML": false,
-        "sticky": false }}}
+{{{
+  "title": "IPS - Centurylink Dedicated Cloud Compute (DCC) FAQ",
+  "date": "02-22-2016",
+  "author": "Client-Security",
+  "attachments": [],
+  "contentIsHTML": false,
+  "sticky": false
+}}}
         
 ### FAQ for Installing and Implementing IPS Anywhere for CenturyLink Dedicated Cloud Compute (DCC)
         
