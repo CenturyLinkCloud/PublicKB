@@ -102,4 +102,6 @@ cf create-domain <ORGANIZATION> <DOMAIN>
 cf map-route <APP_NAME> <DOMAIN>
 ```
 
-This is not a complete guide for every application and additional reading of our [Migration Articles](../AppFog/appfog-version-1-docs.md) may be necessary. For questions or assistance migrating please open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com.
+##### Final Note
+
+This is not a complete guide for every application and additional reading of our [Migration Articles](../AppFog/Legacy Version 1/appfog-version-1-docs.md) may be necessary. For questions or assistance migrating please open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com.
