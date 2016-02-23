@@ -57,6 +57,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Vormetric](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-dsm.md)   	| Template    | Data encryption and key management    |
 | [Vormetric](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-encryption-agent-deployment-blueprints.md)   	| Blueprint    | Data encryption and key management    |
 | [Waratek AppSecurity](../Ecosystem Partners/Marketplace Guides/getting-started-with-waratek-appsecurity.md)   	| Blueprint    | Secure Java Runtime    |
+| [Zetera CoIP](../Ecosystem Partners/Marketplace Guides/getting-started-with-zentera-coip-agent.md)   	| Blueprint    | Secure hybrid network fabric    |
 
 
 ### Management and Monitoring
@@ -72,6 +73,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Docker Machine](../Ecosystem Partners/Marketplace Guides/getting-started-with-docker-machine.md)   	| Blueprint    | Automated Docker provisioning |
 | [Docker Trusted Registry](../Ecosystem Partners/Marketplace Guides/getting-started-with-docker-trusted-registry-blueprint.md)   	| Blueprint    | Store and manage Docker images within CenturyLink Cloud |
 | [Dynatrace](../Ecosystem Partners/Marketplace Guides/getting-started-with-dynatrace-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
+| [HPE LoadRunner](../Ecosystem Partners/Marketplace Guides/getting-started-with-hp-loadrunner-blueprint.md)   	| Blueprint    | Load Testing    |
 | [Mesosphere](../Ecosystem Partners/Marketplace Guides/getting-started-with-mesosphere-blueprint.md)   	| Blueprint    | Datacenter operating system |
 | [Rundeck](../Ecosystem Partners/Marketplace Guides/getting-started-with-rundeck-blueprint.md)   	| Blueprint    | Job scheduler and runbook automation   |
 | [Ruxit](../Ecosystem Partners/Marketplace Guides/getting-started-with-ruxit-blueprint.md)   	| Blueprint    | Application performance monitoring (APM)   |
@@ -105,7 +107,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Clusterpoint](../Ecosystem Partners/Marketplace Guides/getting-started-with-clusterpoint-blueprint.md)   	| Blueprint    | Scale out Database    |
 | [ClustrixDB](../Ecosystem Partners/Marketplace Guides/getting-started-with-clustrixDB-on-centof6.md)   	| Blueprint    | Scale out Database    |
 | [Coffing Data Warehouseing](../Ecosystem Partners/Marketplace Guides/getting-started-with-coffing-data-warehousing-nexus-chameleon-blueprint.md) 	| Blueprint  | Data Warehouse  |
-| [Couchbase](../Ecosystem Partners/Marketplace Guides/getting-started-with-couchbase.md)   	| Blueprint    | Scale out Database    |
+| [Couchbase](../Ecosystem Partners/Marketplace Guides/getting-started-with-couchbase-blueprint.md)   	| Blueprint    | Scale out Database    |
 | [DataStax Cassandra](../Ecosystem Partners/Marketplace Guides/getting-started-with-datastax-blueprint.md)   	| Blueprint    | Distributed NoSQL database    |
 | [Hortonworks Hadoop](../Ecosystem Partners/Marketplace Guides/getting-started-with-hortonworks-hadoop-blueprint.md)   	| Blueprint    | Distributed NoSQL database    |
 | [MapR](../Ecosystem Partners/Marketplace Guides/getting-started-with-mapr-blueprint.md)   	| Blueprint    | Enterprise-grade Hadoop cluster    |

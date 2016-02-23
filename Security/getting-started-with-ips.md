@@ -1,6 +1,6 @@
 {{{
   "title": "IPS - Getting Started",
-  "date": "01-12-2016",
+  "date": "02-19-2016",
   "author": "Client-Security",
   "attachments": [],
   "contentIsHTML": false,
@@ -10,7 +10,9 @@
 ### Overview
 The Platform CenturyLink IPS utilizes an Agent installed on your Virtual Machine (VM) that monitors the VM for suspicious activity. If suspicious activity is found, the Agent logs the activity, which it may block or stop, and reports the incident based on the IPS policy. There is a default policy associated with each VM that is automatically tuned based on the host operating system and installed applications.
 
-This Blueprint is for the actual installation and activation of the IPS service on the VM. Other Blueprints will be available for modifications to the installation.
+We currently support two methods for installing and uninstalling our IPS Agent on your VM.  The first method is via Blueprint (shown below).  The second method is via command line show here [IPS Anywhere](../Security/ipsAnywhere.md). We support any Cloud provider, along with Hybrid Clouds, and Internal Private Clouds.
+
+The Blueprint method shown below installs and activates the IPS agent on your VM. We also provide a Blueprint for uninstalling the IPS agent on your VM.
 
 ### Prerequisites
 * A CenturyLink Cloud Account

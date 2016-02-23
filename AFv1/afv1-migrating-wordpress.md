@@ -1,6 +1,6 @@
 {{{
   "title": "Migrating a WordPress App",
-  "date": "10-08-2015",
+  "date": "02-17-2016",
   "author": "Ben Heisel",
   "attachments": [],
   "related-products" : [],
@@ -18,5 +18,5 @@ When migration is complete your billing subscription can be canceled from the [A
 
 
 ### WordPress Migration
-CenturyLink has launched [WordPress as a Service](https://www.ctl.io/wordpress/) on CenturyLink Cloud. More information can be found on the [WordPress](../WordPress/) Knowledge Base page. There is a [WordPress Site Migration to CenturyLink Cloud](../WordPress/wordpress-site-migration-to-centurylink-cloud.md) guide. Please review our other migration guides including [Migrating an App](how-to-migrate-an-application.md) and [Migrating a Service](export-services-and-third-party-alternatives.md).
+To migrate a WordPress application refer to the steps in our [Migrating a PHP App](migrating-php-to-afv2.md) and [Migrating a Service](export-services-and-third-party-alternatives.md) articles. Also, our [Example Migration](migration-walkthrough.md) article provides detailed steps for a PHP applicaion using a MySQL service. In addition to the normal PHP migration steps, WordPress users will also need to follow this article to [Change the Site URL](https://codex.wordpress.org/Changing_The_Site_URL#Relocate_method).
 
