@@ -1,5 +1,5 @@
 {{{ "title": "IPS - CLI Install & Uninstall",
-        "date": "1-11-2016",
+        "date": "02-19-2016",
         "author": "Client-Security",
         "attachments": [],
         "contentIsHTML": false,
@@ -10,6 +10,8 @@ IPS or Intrusion Prevention Service will require you to have two things:
 
 * A server with Administration credentials.
 * An account on the [CenturyLink Cloud Platform](https://www.ctl.io/)
+
+For more information, please see the Prerequisites section on our [Getting Started](../Security/getting-started-with-ips.md) page.
 
 ### Supported Managed Operating Systems
 Current supported operating systems can be found here [Operating System Support](../Security/supported-ips-oses.md)
@@ -78,6 +80,7 @@ Running the install requires Administrative privileges.
 The script will configure and activate the agent. 
 The agent will communicate with our security manager.
 Billing subscription will be activated.
+Note: When the install completes, your RDP session may reset, at which time, you'll need to reconnect to your Windows VM.
 
 ##### IPS Install Commands
 
@@ -117,6 +120,7 @@ This server needs the ability to make an outbound call over port 443.
 Running the uninstall requires Administrative privileges.
 This will remove the IPS agent from your server.
 Billing subscription will be inactivated.
+Note: When the uninstall completes, your RDP session may reset, at which time, you'll need to reconnect to your Windows VM.
 
 ##### IPS Uninstall Commands
 
@@ -134,3 +138,7 @@ Command Two
 |---------------|----------|----------------------------------------------------|---------|
 |controlUser   |String    |A valid username with CenturyLink                   |Yes      |
 |controlUserPassword   |String    |The CenturyLink password linked to above User       |Yes      |
+
+### Configuring IPS Notifications
+
+Next step is to configure your IPS notifications. Please click [here](../Security/configuring-ips-notifications.md) for help with configuring your IPS notifications.
