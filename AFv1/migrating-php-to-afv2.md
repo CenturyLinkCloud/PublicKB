@@ -57,7 +57,7 @@ echo "Hello World";
 * The PHP extensions enabled by default on AppFog v1 can be found here: [PHP 5.3](http://php_info.aws.af.cm/), [PHP 5.4](http://php_info54.aws.af.cm/), [PHP 5.5](http://php_info55.aws.af.cm/), [PHP 5.6](http://php_info56.aws.af.cm/).
 
 ### VCAP_SERVICES
-The VCAP_SERVICES environment varialbe is available on AppFog v2. Some of the fields are slightly different than AppFog v1. Here is an example to connect to a MySQL instance:
+The VCAP_SERVICES environment varialbe is available on AppFog v2. Some of the fields are slightly different than AppFog v1. Also, the MySQL service is now named `ctl_mysql`. Here is an example to connect to a MySQL instance:
 ```
 $services = json_decode($_ENV['VCAP_SERVICES'], true);
 $service = $services['ctl_mysql'][0];
