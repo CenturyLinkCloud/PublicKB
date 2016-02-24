@@ -32,7 +32,7 @@ Yes, servers will be automatically removed from Standard and Premium backup. If 
 * Associate policies across your deployment as desired
 * CenturyLink engineers will remove Standard & Premium storage from the Platform (primary block storage will continue to function)
 * You will need to associate a Simple Backup Service policy to each server if desired
-* Customers can also modify a pre-populated policy or create their own
+* Customers can also modify an existing policy or create their own
 
 If you would require additional assistance, please contact us at [help@ctl.io](mailto:help@ctl.io) or reach out to your account manager.
 
