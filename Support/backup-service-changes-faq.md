@@ -26,7 +26,7 @@ Your backups on Standard and Premium will continue to function until April 26, 2
 
 Yes, servers will be automatically removed from Standard and Premium backup. If you would like to have your servers protected with the Simple Backup Service, here are steps to follow:
 
-* The Simple Backup Service will be launched on March 29. The service is in beta now - we recommend trying out the service as soon as possible, [please visit the product page and complete the online form]((https://www.ctl.io/simple-backup-service/).
+* The Simple Backup Service will be launched on March 29. The service is in beta now - we recommend trying out the service as soon as possible, [please visit the product page and complete the online form](https://www.ctl.io/simple-backup-service/).
 * Customers can then create and apply backup policies to their virtual machines
 * Apply policies to a few test machines
 * Associate policies across your deployment as desired
@@ -56,7 +56,7 @@ We anticipate that the combination of *lower* block storage costs and common Sim
 
 ### What is the Simple Backup Service?
 
-The [Simple Backup Service](https://www.ctl.io/simple-backup-service/) is a new product that performs scheduled backups of data from your servers and stores them in secure object storage for customized retention periods. Users can configure and manage backup policies (frequency, retention, and paths) via the Control Portal. The details and reports of the backups can be viewed via the Control Portal as well.
+The [Simple Backup Service](https://www.ctl.io/simple-backup-service/) is a new product that performs regular backups of data from your servers and stores them in secure object storage for customized retention periods. Users can configure and manage backup policies (frequency, retention, and paths) via the Control Portal. The details and reports of the backups can be viewed via the Control Portal as well.
 
 In addition, users can initiate a restore of files and folders from a given point in time.
 
