@@ -22,6 +22,8 @@ This presentation outlines the steps needed to migrate a PHP 5.3 application usi
 
 [![](../images/appfog-webinar.png)](https://vimeo.com/156569518)
 
+**Note:** *This is not a complete guide for every application and additional reading of our [Migration Articles](../AppFog/Legacy Version 1/appfog-version-1-docs.md) may be necessary. For questions or assistance migrating please open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com.*
+
 ### List of Commands
 
 The following commands were used on a Linux OS in the webinar and may prove useful when modifying your application:
@@ -103,7 +105,3 @@ cf create-domain <ORGANIZATION> <DOMAIN>
 ```
 cf map-route <APP_NAME> <DOMAIN>
 ```
-
-##### Final Note
-
-This is not a complete guide for every application and additional reading of our [Migration Articles](../AppFog/Legacy Version 1/appfog-version-1-docs.md) may be necessary. For questions or assistance migrating please open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com.
