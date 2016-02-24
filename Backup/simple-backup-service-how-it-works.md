@@ -1,6 +1,16 @@
+{{{
+  "title": "Simple Backup How It Works,
+  "date": "02-24-2016",
+  "author": "John Gerger",
+  "attachments": [],
+  "related-products" : [],
+  "contentIsHTML": false,
+  "sticky": false
+}}}
+
 **Simple Backup Service (SBS)**
 
-[Simple Backup Service](https://www.ctl.io/simple-backup-service/) provides file and folder level backups and restores. The service is integrated with the [Control Portal](https://control.ctl.io/) and is API accessible. That gives you flexibility and ease of use to configure and customize backup policies. 
+[Simple Backup Service](https://www.ctl.io/simple-backup-service/) provides file and folder level backups and restores. The service is integrated with the [Control Portal](https://control.ctl.io/) and is API accessible. That gives you flexibility and ease of use to configure and customize backup policies.
 
 For example, you can specify the backup frequency, retention, location, self-service restores, or path(s)/folder(s) to be backed up. The policies you define can then be applied to VMs and [Bare Metal](https://www.ctl.io/bare-metal/) cloud servers. You can add or remove servers to policies at any time or indicate the storage region as your business needs change.
 
@@ -20,7 +30,7 @@ Backup Policies are user-defined configurations that you specify through the [Co
 * *Paths to Exclude* – Define what directories should be excluded from your backups. Multiple paths may be indicated by clicking the ‘add path’ button. Exclusions override inclusions. Certain OS files/folders are automatically excluded from backup.
 
 **Backup Agent**
-When a server is added to a backup policy the backup agent is automatically installed on the server as a continuously running service. The agent executes backups of designated files/folders, per the frequency, retention period, and storage location specified in the backup policy. Agent communication transmits over a secure, TLS (transport layer security) connection to the cloud component of the SBS service to sync policy changes and determine when to execute a backup. Backups are fully-encrypted for storage and decrypted upon restore
+When a server is added to a backup policy the backup agent is automatically installed on the server as a continuously running service. The agent executes backups of designated files/folders, per the frequency, retention period, and storage location specified in the backup policy. Agent communication transmits over a secure, TLS (transport layer security) connection to the cloud component of the SBS service to sync policy changes and determine when to execute a backup.
 
 Upon installation the agent initially conducts a full backup as indicated by the backup policy. For each consecutive backup, the agent handles files on the server the status of the file as indicate below:
 
@@ -50,8 +60,6 @@ A new restoration point is created at the completion of every backup, full or in
 
 In order to prevent the accidental overwriting of data, a new directory is created under the restoration path you provide. The directory uses the restoration point ID as the name and contains all of the restored data.
 
-**Security**
-Data in transit between the backup client and the backup infrastructure uses a secure TLS connection. All backups are fully encrypted for storage and decrypted upon restore.
 
 **Related Topics**
 * [Getting Started with Simple Backup](https://www.ctl.io/knowledge-base/backup/getting-started-with-simple-backup/)
