@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-![Yellowfin Business Intelligence](http://../../images/YF_LOGO.png)
+![Yellowfin Business Intelligence](../../images/YF_LOGO.png)
 
 ### Technology Profile
 
@@ -52,7 +52,7 @@ To access your application from a computer outside the CenturyLink Cloud network
 
   Please create a ticket to import the Ecosystem Partner Template image referenced below to my CenturyLink Cloud Account:
 
-  - Import CenturyLink Ecosystem Partner Source Image: Yellowfin 7.1 updated (from account YFBI)
+  - Import CenturyLink Ecosystem Partner Source Image: Yellowfin 7.1 29012016 (from account YFBI)
   - My CenturyLink Cloud Account Alias: ####
   - My CenturyLink Cloud Account PIN:  ######
   - Data Center to import image to: ###

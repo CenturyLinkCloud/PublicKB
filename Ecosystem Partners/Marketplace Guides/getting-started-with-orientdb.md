@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-![OrientDB-Logo](http://../../images/orientdb-logo.png)
+![OrientDB-Logo](../../images/orientdb-logo.png)
 
 ### Technology Profile
 

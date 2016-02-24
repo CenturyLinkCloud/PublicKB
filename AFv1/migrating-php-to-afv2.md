@@ -1,6 +1,6 @@
 {{{
   "title": "Migrating a PHP Application to AppFog v2",
-  "date": "10-28-2015",
+  "date": "02-08-2016",
   "author": "Ben Heisel",
   "attachments": [],
   "related-products" : [],
@@ -54,8 +54,10 @@ echo "Hello World";
 "PHP_EXTENSIONS": ["pdo", "pdo_mysql", "mysqli", "mysql", "mbstring", "mcrypt", "gd", "zip", "curl", "openssl", "sockets", "pdo_pgsql", "pdo_sqlite", "pgsql", "mongo"]
 }
 ```
+* The PHP extensions enabled by default on AppFog v1 can be found here: [PHP 5.3](http://php_info.aws.af.cm/), [PHP 5.4](http://php_info54.aws.af.cm/), [PHP 5.5](http://php_info55.aws.af.cm/), [PHP 5.6](http://php_info56.aws.af.cm/).
+
 ### VCAP_SERVICES
-The VCAP_SERVICES environment varialbe is available on AppFog v2. Some of the fields are slightly different than AppFog v1. Here is an example to connect to a MySQL instance:
+The VCAP_SERVICES environment varialbe is available on AppFog v2. Some of the fields are slightly different than AppFog v1. Also, the MySQL service is now named `ctl_mysql`. Here is an example to connect to a MySQL instance:
 ```
 $services = json_decode($_ENV['VCAP_SERVICES'], true);
 $service = $services['ctl_mysql'][0];
@@ -66,3 +68,6 @@ define('DB_HOST', $service['credentials']['host'] . ':' . $service['credentials'
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '')
 ```
+
+### Additional Information
+Our [Deploying a PHP Application](../AppFog/deploy-php-application.md) article has more information about customizing PHP and Apache buildpack settings.
