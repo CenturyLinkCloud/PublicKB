@@ -1,5 +1,5 @@
 {{{
-  "title": "Simple Backup How It Works,
+  "title": "Simple Backup How It Works",
   "date": "02-24-2016",
   "author": "John Gerger",
   "attachments": [],
