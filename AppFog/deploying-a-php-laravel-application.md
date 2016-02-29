@@ -45,6 +45,7 @@ Add a manifest file in your apps root folder.  The contents will be application-
  applications:
  - name: <yourappname>
    memory: 128M
+   instances: 2
    buildpack: https://github.com/cloudfoundry/php-buildpack
    env:
      CF_STAGING_TIMEOUT: 15
@@ -53,7 +54,7 @@ Add a manifest file in your apps root folder.  The contents will be application-
 
 ### Troubleshooting
 
-To enable the buildpack debug mode you can set the BP_DEBUG environment variable to true using the following command. This will instruct the buildpack to set it's log level to DEBUG and write to stdout:
+To enable the buildpack debug mode you can set the BP_DEBUG environment variable to true using the following command. This will instruct the buildpack to set its log level to DEBUG and write to stdout:
 
 ```
 cf se <YOUR_APPNAME> BP_DEBUG true
