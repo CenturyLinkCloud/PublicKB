@@ -22,6 +22,14 @@
 
 	For more information - including alternatives you may want to consider for backup and disaster recovery, [please refer to this knowledge base article.](https://www.ctl.io/knowledge-base/support/introducing-new-options-for-backups/)
 
-### Ecosystem (1)
+### Ecosystem (2)
 
-* __Placeholder.__
+* __HP Enterprise - Load Runner.__ Performance is key! Users can now deploy [HPE Load Runner](http://www8.hp.com/us/en/software-solutions/loadrunner-load-testing/) via Blueprint to perform a load test on cloud applications. Testing applications and environment performance is important to learn if your app is going to continue deliver under resource load. [Prove your apps perform](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-hp-loadrunner-blueprint/) by load testing them with HPE Load Runner.
+
+* __RuxIt - Full Stack Availability and Performance Monitoring.__ All in one performance management is here with [RuxIt](https://ruxit.com/). Deploy the RuxIt agent via Blueprint to monitor full stack availability and performance of your applications and server. RuxIt's dashboards are beautiful and provide great information through their artificial intelligence smart analysis. [Get immediate results](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-ruxit-blueprint/) with RuxIt.
+
+### Open Source Contributions (2)
+
+* __Hashicorp Terraform.__ [Terraform](https://www.terraform.io/) by Hashicorp accelerates the DevOps cycle by realizing declarative configuration of infrastructure, converging changes to it and scaling it in a repeatable way. We are excited to announce the partnership with and inclusion of CenturyLink Cloud into the terraform ecosystem. Today, the clc plugin is available as a preview for integration into an upcoming terraform release. Start automating your infrastructure buildout today by [test-driving the plugin here](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-hashicorp-terraform/).
+
+* __Docker Machine.__ In cased you missed it, [Docker 1.10](https://github.com/docker/docker/blob/master/CHANGELOG.md) was released last month. This release brings stabilization and enhancements to the network stack, better integration with compose, and optimizations to the image transport engine. You can use [docker-machine](https://www.docker.com/products/docker-machine) to create and manage your docker instances on CenturyLink Cloud. The [CLC driver for docker-machine](https://github.com/CenturyLinkCloud/docker-machine-driver-clc) allows you to start building your swarm cluster via simple command-line flags. Check out our [getting started guide](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-docker-machine/) for details.
