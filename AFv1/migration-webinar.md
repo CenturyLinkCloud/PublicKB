@@ -20,7 +20,7 @@ When migration is complete your billing subscription can be canceled from the [A
 
 This presentation outlines the steps needed to migrate a PHP 5.3 application using a MySQL service on AppFog v1, and follows the steps in our [Example Migration Walkthrough](migration-walkthrough.md) article.
 
-[![](../images/appfog-webinar.png)](https://vimeo.com/156569518)
+[![](../images/appfog-webinar.png)](https://vimeo.com/157172247)
 
 **Note:** *This is not a complete guide for every application and additional reading of our [Migration Articles](../AppFog/Legacy Version 1/appfog-version-1-docs.md) may be necessary. For questions or assistance migrating please open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com.*
 
