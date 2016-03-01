@@ -5,7 +5,7 @@
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
-  "sticky": false
+  "sticky": true
 }}}
 
 **FAQs: Simple Backup Service**
@@ -46,11 +46,9 @@ A: No, this is a manual process at this time. A support request will need to be 
 
 A: This provides the ability to utilize incremental backups with consistent full backup protection. By not expiring unchanged files, there is no need to retransfer them to object storage, which minimizes data transfer costs and provides quicker backups. Bottom line is that it provides quicker and cheaper backups for our users.
 
-**Q: Is SBS intended to be used for full server restore?**
+**Q: Is SBS intended to be used for Disaster Recovery?**
 
-A: No. In fact, SBS does not backup the OS files. For full server backup
-capabilities, please view our Disaster Recovery product,
-[SafeHaven](https://www.ctl.io/disaster-recovery/).
+A: No, SBS provides file-level backup protection. In fact, SBS does not backup the OS files or provide snapshot capability. Users can still perform [manual snapshots on-demand](https://www.ctl.io/knowledge-base/servers/creating-and-managing-server-snapshots/) and as scheduled tasks within the server settings. For full [Disaster Recovery](https://www.ctl.io/knowledge-base/support/introducing-new-options-for-backups/#how-does-the-simple-backup-service-compare-to-other-options-are-available-on-centurylink-cloud) services, there are a number of options available internally or through Certified Ecosystem partners.
 
 **Q: Which files/folders are automatically excluded from the backups?**
 
