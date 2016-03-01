@@ -9,7 +9,6 @@
 ### New Features (1)
 
 * __Relational Database: Configurable Backup Retention.__ Customers may now configure their backup retention policy to be anywhere between 1 and 35 days. Your Relational DB subscription includes up to 100% of your allocated storage amount in backup storage. Backup storage that exceeds the size of your allocated storage will be billed at an "Additional Backup Storage" rate of $0.04/GB per month.
-![Configurable Backup Retention](../images/2016-03-01-relational-database.png)
 
 ### Announcements (1)
 
