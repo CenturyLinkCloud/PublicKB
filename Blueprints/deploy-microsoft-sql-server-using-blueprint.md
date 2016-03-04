@@ -1,6 +1,6 @@
 {{{
   "title": "Deploy Microsoft SQL Server using Blueprint",
-  "date": "4-29-2015",
+  "date": "2-24-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -47,6 +47,7 @@ The following are quick tips/notes based on past experiences with customers leve
 * The fee's for Microsoft SQL server will be applied automatically to the customers invoice when using the public blueprint. These fee's are available in the [Pricing Catalog](//www.ctl.io/pricing). If you are unsure what these fee's are please contact your account manager.
 * Licensing fee's are adjusted based on number of vCPU allocated to a virtual machine. By using tools like Autoscale, customers billing will be modified as vCPU configurations change.
 * Customers can **add features** to an existing SQL instance or **add new** SQL instances by running the blueprint multiple times on the same server.
+* The blueprint does not allow for version mobility.  Customers who want to change the edition deployed must create a new server and SQL instance with the version desired and migrate their data.
 
 ### Installing Microsoft SQL Server using Group Tasks
 
@@ -54,7 +55,7 @@ The following are quick tips/notes based on past experiences with customers leve
 
     ![servers menu in control portal](../images/deploy-microsoft-sql-server-using-blueprint-01.png)
 
-2. Browse to the Group that houses the VM(s) you want to deploy SQL. Select Action, Execute Package.
+2. Browse to the Group that houses the VM(s) you want to deploy SQL. Select More Actions, Execute Package.
 
     ![select execute package](../images/deploy-microsoft-sql-server-using-blueprint-02.png)
 

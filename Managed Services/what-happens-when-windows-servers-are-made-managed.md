@@ -22,7 +22,7 @@ Users employed by companies that have agreed to terms with [CenturyLink Sales](h
 
 ### Important Information
 
-It is required that a Windows server reboot during the make managed process. If the server already exists and is being [converted](../Managed Services/converting-unmanaged-virtual-machines-to-managed.md) then the server should be placed in maintenance mode prior to running the blueprint and removed from maintenance mode once an email verifying copletion has been received.
+It is required that a Windows server reboot during the make managed process. If the server already exists and is being [converted](../Managed Services/converting-unmanaged-virtual-machines-to-managed.md) then the server should be placed in maintenance mode prior to running the blueprint and removed from maintenance mode once an email verifying completion has been received.
 
 The following is not meant to be a complete description of everything that happens when a VM is prepared for management, but to give users a better idea of configuration changes that might be necessary to manage their servers.
 
@@ -33,7 +33,7 @@ Many of the following items are mandatory. Some default items have options for c
 * Our monitoring agent is installed and configured. Heartbeat monitoring of the agent commences.
 * Our approved virus scanning agent is downloaded and configured. It will be updated weekly.
 * 10 GB D: drive is added. If D: drive already exists, the next available, unused drive will be added.
-* A pre-defined Windows Update Group Policy Object is linked to each customer OU. For servers that are being created as managed, operationally expected updates are installed, bringing the server to a Centurylink-approved patch level. [If the server already exists ](../Managed Services/converting-unmanaged-virtual-machines-to-managed.md) there is an exception. No updates will be applied to Customer Provided Images (CPI). [requests can be made](../Managed Services/created-a-managed-server-now-what.md) to approve or un-approve particular patches. The server is rebooted as required
+* A pre-defined Windows Update Group Policy Object is linked to each customer OU. Miscrosoft-approved patches will be applied  [If the server already exists ](../Managed Services/converting-unmanaged-virtual-machines-to-managed.md) there is an exception. No updates will be applied to Customer Provided Images (CPI). [requests can be made](../Managed Services/created-a-managed-server-now-what.md) to approve or un-approve particular patches. The server is rebooted as required.
 * Basic OS standardization is performed, including setting time zone
 * Hibernation disabled
 * Boot config timeout set to five seconds

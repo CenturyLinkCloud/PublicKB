@@ -14,13 +14,13 @@ Using Object Storage with a Cloud Storage Gateway
 <p>There are many Cloud Storage Gateway appliances on the market today. In this knowledge base we will focus on&nbsp;<a href="http://www.twinstrata.com/">TwinStrata</a>. The TwinStrata CloudArray&nbsp;provides customers various
   delivery models for the CloudArray product and Cloud Storage. Customers should validate with their Cloud Storage Gateway provider the support of an S3 compatible Object Storage. </p>
 <h3>Supporting Information</h3>
-<p>Information and details around the CenturyLink Cloud Object Storage can be found in our&nbsp;<a href="https://t3n.zendesk.com/forums/20789095-Object-Storage"><strong>Knowledge base</strong></a>. It is also important to note that
+<p>Information and details around the CenturyLink Cloud Object Storage can be found in our&nbsp;<a href="https://www.ctl.io/knowledge-base/object-storage/"><strong>Knowledge base</strong></a>. It is also important to note that
   CenturyLink Cloud provides no support for any 3rd party Cloud Storage Gateways. We are simply providing cloud based storage for use with these Cloud Storage Gateways.  </p>
 <h3>Prerequisites</h3>
 <ul>
   <li>A CenturyLink Cloud Account</li>
   <li>TwinStrata CloudArray Virtual or Physical Appliance Base Configuration</li>
-  <li>An object storage user is created in the CenturyLink Cloud Control Portal. <a href="https://t3n.zendesk.com/entries/21648384-Using-Object-Storage-from-the-Control-Portal">See this KB</a>
+  <li>An object storage user is created in the CenturyLink Cloud Control Portal. <a href="https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/">See this KB</a>
   </li>
   <li>The Cloud Storage Gateway has internet access ports as defined by the TwinStrata Installation Documentation.</li>
 </ul>
@@ -34,7 +34,7 @@ Using Object Storage with a Cloud Storage Gateway
 </p>
 <p>3. Enter the details required to connect to the selected Cloud Provider. </p>
 <ul>
-  <li>Currently Object Storage is only available out of our Canada Region. <strong>The Node URL is canada.os.ctl.io</strong>
+  <li>For the node, <a href="https://www.ctl.io/knowledge-base/object-storage/object-storage-service-points/">all service points are listed here.</a>
   </li>
   <li>Provide the&nbsp;<strong>access key id</strong> and&nbsp;<strong>secret access key&nbsp;</strong>for the user created in the prerequisites</li>
   <li>Encryption, Compression and SSL are recommended</li>

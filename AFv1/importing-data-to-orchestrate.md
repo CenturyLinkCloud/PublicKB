@@ -14,20 +14,15 @@ This document is for users of AppFog v1 for migration to the next generation of 
 
 Before deleting any applications or services on AppFog v1 ensure you have local copies. Once apps and services are deleted it is **permanent**. We will not be able to provide a backup.
 
+When migration is complete your billing subscription can be canceled from the [Account](https://console.appfog.com/#account) page of the web console. Please be sure to cancel your subscription as we are not aware when individual user migration is complete. The billing system will not automatically prorate the subscription and issue a refund. If applicable, please open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com to receive a prorated refund of your subscription.
+
+
 ### Overview
 
 This article will provide an overview of our [CenturyLink Orchestrate Database Service](https://orchestrate.io/) and how it can be consumed by applications deployed to AppFog.
 
 
-You can find available service offerings via the Cloud Foundry CLI by running the following command in a terminal window:
-
-```
-$ cf marketplace
-...
-service       plans                           description   
-ctl_mysql     micro, small, medium, large     CenturyLink's BETA MySQL DBaaS.  For development use only; not subject to SLAs.
-orchestrate   free                            Orchestrate DBaaS
-```
+You can find available service offerings via the Cloud Foundry CLI using `cf marketplace`. For detailed information on a specific service use `cf marketplace -s <service>`.
 
 ### Create an Orchestrate Service Instance
 

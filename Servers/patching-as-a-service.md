@@ -118,9 +118,6 @@ The execution will continue even after the completion of the script so please le
 
 After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
 
-9\. Optional: Remove DNS
-
-You may wish to remove DNS 8.8.8.8 from the server.\*
 
 
 ### Option 2: Group Action
@@ -151,9 +148,6 @@ Navigate to the group and select "execute package" from the [action drop-down](.
 
 After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
 
-5\. Optional: Remove DNS
-
-You may wish to remove DNS 8.8.8.8 from the servers.\*
 
 ### Option 3: API
 
@@ -167,7 +161,7 @@ The process initiated by the script package may include several, automated reboo
 
 2\. Execute Package
 
-Please reference [API Documentation about authentication](https://www.centurylinkcloud.com/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests. Review the [Execute Package](https://www.centurylinkcloud.com/api-docs/v2/#server-actions-execute-package) to determine how to proceed. There are currently no parameters to add. Below is a JSON example:
+Please reference [API Documentation about authentication](https://www.ctl.io/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests. Review the [Execute Package](https://www.ctl.io/api-docs/v2/#server-actions-execute-package) to determine how to proceed. There are currently no parameters to add. Below is a JSON example:
 
 
   ```
@@ -188,9 +182,6 @@ Please reference [API Documentation about authentication](https://www.centurylin
 
 After the patching is complete you will receive an email that patching is complete. Please remove the server from maintenance mode.
 
-4\. Optional: Remove DNS
-
-You may wish to remove DNS 8.8.8.8 from the server.\*
 
 
 
@@ -203,7 +194,7 @@ A history of all executions against your server is available for your review. Th
 
 #### Authentication
 
-Reference [API Documentation about authentication](https://www.centurylinkcloud.com/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests.
+Reference [API Documentation about authentication](https://www.ctl.io/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests.
 
 ### URL
 
@@ -249,7 +240,7 @@ Details on all attempted patches for a single execution against a server are ava
 
 #### Authentication
 
-Reference [API Documentation about authentication](https://www.centurylinkcloud.com/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests.
+Reference [API Documentation about authentication](https://www.ctl.io/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests.
 
 ### URL
 
@@ -292,5 +283,3 @@ patches | Number | Quantity of patches installed
 patch_begin_message | string | Identifies the Software or OS updated and the reference number (if Windows, KB#######) for that particular update
 patch_end_message | string | Result code established by Microsoft, defining the possible results of an install. These same codes will be used for other Operating Systems as well. https://msdn.microsoft.com/en-us/library/windows/desktop/aa387095(v=vs.85).aspx
 status | string | for an individual patch, could be pending, completed, or failed
-
-\* To enable data to be captured in our reporting service, the service adds DNS 8.8.8.8 to the server. (The reason for this step is no longer necessary so it will be removed in a future release.) If this will affect your servers, you should manually remove it.

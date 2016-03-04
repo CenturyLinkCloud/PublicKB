@@ -23,6 +23,9 @@ This document is for users of AppFog v1. This document does not apply to the cur
 * [Migrating a PHP Application to AppFog v2](../../AFv1/migrating-php-to-afv2.md)
 * [Example Migration Walkthrough](../../AFv1/migration-walkthrough.md)
 * [Migration FAQ](../../AFv1/migration-faq.md)
+* [Getting To Know The AppFog v2 CLI cf Tool](../../AFv1/getting-to-know-cf-tool.md)
+* [How to Map an AppFog v1 URL to an AppFog v2 Application](../../AFv1/afv1-url-proxy.md)
+* [Migration Webinar](../../AFv1/migration-webinar.md)
 
 ### Getting Started
 
