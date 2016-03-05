@@ -23,7 +23,7 @@ The following steps will walk you through reserving IP addresses in the CLC Port
 
   ![IPADDRESSCONFIRM](../images/how-to-reserve-ip-addresses-2.png)
 
-3. With your IP's noted, send an email to noc@ctl.io and request for the IP's to be marked as reserved.  Don't forget to specify your account information, including your PIN and the datacenter these IP's reside in.  Utilize the following template and send the required information to noc@ctl.io:
+3. With your IP's noted, send an email to help@ctl.io and request for the IP's to be marked as reserved.  Don't forget to specify your account information, including your PIN and the datacenter these IP's reside in.  Utilize the following template and send the required information to help@ctl.io:
 
   ```
   NOC,
