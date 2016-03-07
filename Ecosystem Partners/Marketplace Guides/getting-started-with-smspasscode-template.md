@@ -1,13 +1,13 @@
 ﻿
 {{{
-  "title": Deploying SMS PASSCODE on CenturyLink Cloud",
+  "title": "Deploying SMS PASSCODE on CenturyLink Cloud",
   "date": “12-30-2015",
   "author": “Max Ranzau",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-![SMS PASSCODE LOGO](../../images/smspasscode_logo.png)
+![SMSPasscode Logo](../../images/smspasscode_logo.pricing)
 
 ### Technology Profile
 
@@ -20,10 +20,6 @@ SMS PASSCODE has integrated their technology with the CenturyLink Cloud platform
 SMS PASSCODE® is a technology leader in adaptive multi-factor authentication using SMS, voice call, or secure e-mail. The solution offers a highly secure challenge- and session-specific login process tightly integrated into leading authentication systems such as Citrix, Cisco, Microsoft, VMware and many other VPN systems. The platform is designed as scalable and fault tolerant from the ground up and offers a much lower TCO compared with alternatives.
 
 Technology from SMS PASSCODE helps CenturyLink Cloud customers address the business challenge of securing remote access by implementing multi-factor authentication - now available as part of the CenturyLink Cloud Blueprint Engine.
-
-### Description
-
-SMS PASSCODE's unique Adaptive Multifactor Authentication is among the most secure options available for adding additional protection over and above user name and password.  It generates a One Time Passcode in real time at the time of login and ties that code to the unique session initiated by the user.  It also supports Geo-location and Geo-fencing allow additional access control based on user location as well as greatly reduced attack surface.
 
 For more information, please visit https://www.smspasscode.com
 
@@ -40,11 +36,10 @@ After executing the steps in this Getting Started document, the users will hav
 - Windows Server
 
 ### Postrequisite
-
 To access your application from a computer outside the CenturyLink Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
-  1. [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
-  2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
-    * The default port to access the web admin interface is 2000
+  1. [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
+  2. [Allow incoming traffic](../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
+    * The default ports to access the application are: 80, 443 <this is incorrect, correct to required ports>
 
 ### Deploying the SMSPasscode partner Template
 ### How to Deploy the Partner Image
@@ -52,7 +47,7 @@ To access your application from a computer outside the CenturyLink Cloud network
   2. Copy and paste the information below into the body of the email
 	3. Edit the information as needed and send
 
-```
+   ```
   TO: ServiceTasks@ctl.io
 
   EMAIL SUBJECT:   Ecosystem Partner Template Import Request
@@ -74,8 +69,8 @@ To access your application from a computer outside the CenturyLink Cloud network
   Thank you very much,
 
 	   Your_Name_Here
-```
-Your account alias and PIN are available from your account info page and your user profile page respectively.
+	   ``` 	
+Your account alias and PIN are available from your account info page and your user profile page respectively.  
 
 
 #### Steps to Complete Installation
@@ -87,7 +82,14 @@ Once the Template is copied and server is created, complete the following steps 
 
   3. From the start menu, launch the SMS PASSCODE configuration tool and browse to the Network tab, change the shared secret (password) to something customer unique (min 15 chars).
 
-  4. On the configuration tool Database tab, change the hostname to the hostname of the new instance (if in doubt, open command prompt, type hostname). Note: if you hit the test button on the database test now, the test will fail, this is okay as the cause is fixed in the next steps.
+The Configuration Tool  <this doesn't seem to make sense>
+
+The shared secret on the Network tab <this doesn't seem to make sense>
+
+
+  4. On the configuration tool Database tab, change the hostname to the hostname of the new instance (if in doubt, open command prompt, type hostname).
+
+    - Note that if you hit the test button on the database test now, the test will fail, this is okay as the cause is fixed in the next steps.
 
   5. Launch the web admin interface (http://localhost:2000) and:
 
@@ -106,12 +108,12 @@ From here, there are two additional steps to complete provisioning of a new Cent
     - Web service dispatchers
     - E-mail dispatchers
     - Hardware SMS Gateways to be able to send out text messsages/voice number calls to mobile devices or e-mails.
-    - For setting up a Web Dispatcher with Nexmo, refer to page 21 of the Trial installation guide. https://partner.smspasscode.com/media/2377/quick-trial-install-guide_nexmo_radius.pdf
+    - For setting up a Web Dispatcher with Nexmo, refer to the attached installation guide. <What guide? need a link>
 
-  11.  Install the necessary authentication clients on other servers. These are all documented in detail in the SMS Passcode administrative guide, https://partner.smspasscode.com/media/2318/admin_guide_80-rev11.pdf
+  11.  Install the necessary authentication clients on other servers. These are all documented in detail in the SMS Passcode administrative guide, <need link>
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  SMS PASSCODE Multifactor Authentication is priced on a per user per month basis for the number of users you will be protecting with SMS PASSCODE.  Pricing is on a per user per month basis regardless of what that user is protecting (including Citrix, VPN, Remote Desktop, Windows Login, etc.)
+The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  SMS PASSCODE Multifactor Authentication is priced on a per user per month basis for the number of users you will be protecting with SMS PASSCODE.  Pricing is $3.50 per user per month regardless of what that user is protecting (including Citrix, VPN, Remote Desktop, Windows Login, etc.) <is it a good idea to put pricing here? what if it changes?>
 After deploying this template, the user can secure entitlements to the technology by sending a request via e-mail to: dad@smspasscode.com.
 
 ### About SMS PASSCODE
