@@ -1,0 +1,5 @@
+---
+applications:
+- name: django-sample
+  memory: 512M
+  instances: 1
