@@ -52,6 +52,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Cavirin Automated Risk Analysis Platform](../Ecosystem Partners/Marketplace Guides/getting-started-with-cavirin-automated-risk-analysis-platform-partner-template.md)   	| Template    | Governance and compliance appliance    |
 | [OSSEC](../Ecosystem Partners/Marketplace Guides/getting-started-with-ossec-blueprints.md)   	| Template    | HIDS    |
 | [Symas](../Ecosystem Partners/Marketplace Guides/getting-started-with-symas-open-ldap-silver.md)   	| Blueprint   | LDAP    |
+| [SMS Passcode](../Ecosystem Partners/Marketplace Guides/getting-started-with-smspasscode-template.md)   	| Template   | Multifactor Authentication    |
 | [Vormetric](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-dsm.md)   	| Template    | Data encryption and key management    |
 | [Vormetric](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-encryption-agent-deployment-blueprints.md)   	| Blueprint    | Data encryption and key management    |
 | [Waratek AppSecurity](../Ecosystem Partners/Marketplace Guides/getting-started-with-waratek-appsecurity.md)   	| Blueprint    | Secure Java Runtime    |
