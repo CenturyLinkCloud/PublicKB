@@ -13,7 +13,7 @@
 
 This article is to support customers of Relational DB Service, CenturyLink's MySQL compatible database-as-a-service product.  
 
-## Connecting to your Relational DB Instance through the MySQL Workbench Client
+### Connecting to your Relational DB Instance through the MySQL Workbench Client
 
 1.  All you need to connect to your Relational DB is the connection string of your instance and the **database** username and password you created when you provisioned your Relational DB instance.  Your connection string is included on the database details page which you can get to by navigating to and clicking on the instance you would like to connect to.  
 <p>![Connection](../images/rdbs-connection.png)
