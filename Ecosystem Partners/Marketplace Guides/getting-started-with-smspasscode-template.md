@@ -1,13 +1,13 @@
 ﻿
 {{{
   "title": "Deploying SMS PASSCODE on CenturyLink Cloud",
-  "date": “12-30-2015",
-  "author": “Max Ranzau",
+  "date": "12-30-2015",
+  "author": "Max Ranzau",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-![SMSPasscode Logo](../../images/smspasscode_logo.pricing)
+![SMSPasscode Logo](../../images/smspasscode_logo.png)
 
 ### Technology Profile
 
