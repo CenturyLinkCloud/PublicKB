@@ -7,7 +7,7 @@
   "contentIsHTML": false
 }}}
 
-![SMS PASSCODE LOGO](../../images/SMSPASSCODE_Logo_KB.png)
+![SMS PASSCODE LOGO](../../images/smspasscode_logo.png)
 
 ### Technology Profile
 
