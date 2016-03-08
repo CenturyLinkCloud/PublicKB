@@ -5,7 +5,7 @@
   "attachments": [
   {
     "file_name": "Python Django Sample",
-    "url": "/attachments/af-python-django-sample.tar.xz",
+    "url": "../attachments/af-python-django-sample.tar.xz",
     "type": "application/x-xz"
   }],
   "related-products" : [],
@@ -27,7 +27,7 @@ To develop using Python you must have the its [runtime interpreter](https://wiki
 You will also need [Pip](https://pip.pypa.io/en/stable/installing/) installed in your development environment.
 
 #### Downloading Simple Example Application
-The sample app used in this article is [attached](/attachments/af-python-django-sample.tar.xz).
+The sample app used in this article is [attached](../attachments/af-python-django-sample.tar.xz).
 
 #### Running the Sample App Locally
 After downloading the sample app locally you must install the required Python modules.
