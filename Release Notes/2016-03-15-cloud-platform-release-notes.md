@@ -6,8 +6,6 @@
 "contentIsHTML": false
 }}}
 
-### New Features (1)
-
 ### Early Adopter Program - Updates (1)
 
 * __Simple Backup Service Beta Agent Updates.__
