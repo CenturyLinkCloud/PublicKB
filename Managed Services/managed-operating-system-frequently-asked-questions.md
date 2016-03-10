@@ -24,7 +24,7 @@ CenturyLink’s Managed OS service helps you spend less time on the IT tasks tha
 
 It would be impossible to create an all-inclusive list of everything a product is not, but this section addresses some current or often-asked items.
 
-* Standard backups had been an especially powerful tool for Support teams to help you keep your environment up and running. But effective April 26, 2016, "standard" and "premium" backup storage features for virtual machines will be retired. On this date, the data on your storage volumes will no longer be backed up by default. It is highly recommended that you make arrangements to activate [Simple Backup Service](../support/backup-service-changes-faq.md) for your Managed VMs.
+* Standard backups had been an especially powerful tool for Support teams to help you keep your environment up and running. But effective April 26, 2016, "standard" and "premium" backup storage features for virtual machines will be retired. On this date, the data on your storage volumes will no longer be backed up by default. It is highly recommended that you make arrangements to activate [Simple Backup Service](../Support/backup-service-changes-faq.md) for your Managed VMs.
 
 **What do I pay for a managed VM?**
 
