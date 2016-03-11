@@ -47,7 +47,7 @@ To access your application from a computer outside the CenturyLink Cloud network
   2. Copy and paste the information below into the body of the email
 	3. Edit the information as needed and send
 
-   ```
+```
   TO: ServiceTasks@ctl.io
 
   EMAIL SUBJECT:   Ecosystem Partner Template Import Request
@@ -69,7 +69,8 @@ To access your application from a computer outside the CenturyLink Cloud network
   Thank you very much,
 
 	   Your_Name_Here
-	   ``` 	
+```
+ 	
 Your account alias and PIN are available from your account info page and your user profile page respectively.  
 
 
