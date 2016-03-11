@@ -20,9 +20,15 @@ CenturyLink’s Managed OS service helps you spend less time on the IT tasks tha
 * Patch/Update Management – With support available for all critical and vendor-recommended patches, we ensure only OS vendor-recommended patches are installed. Please see the [patching article](../Managed Services/managed-os-operating-system-patching-and-update-processes.md) for more details.
 * Security – We secure the OS with industry-standard anti-virus protection, regular virus and malware signature updates, and additional OS-level hardening to mitigate risk.
 
+**What is not included in the Managed OS service?**
+
+It would be impossible to create an all-inclusive list of everything a product is not, but this section addresses some current or often-asked items.
+
+* Standard backups had been an especially powerful tool for Support teams to help you keep your environment up and running. But effective April 26, 2016, "standard" and "premium" backup storage features for virtual machines will be retired. On this date, the data on your storage volumes will no longer be backed up by default. It is highly recommended that you make arrangements to activate [Simple Backup Service](../Support/backup-service-changes-faq.md) for your Managed VMs.
+
 **What do I pay for a managed VM?**
 
-Customers pay for managed operating system and managed applications on an hourly basis. For managed OS, customers pay the management charge whenever the server is powered on. Licensing fees continue whether the server is powered on or off.
+Customers pay for managed operating system and managed applications on an hourly  basis. For managed OS, customers pay the management charge whenever the server is powered on. Licensing fees continue whether the server is powered on or off.
 
 For managed applications, customers pay the management charge for as long as the managed application is on the server (whether the server is powered on or off).
 
