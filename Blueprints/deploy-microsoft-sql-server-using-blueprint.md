@@ -1,6 +1,6 @@
 {{{
   "title": "Deploy Microsoft SQL Server using Blueprint",
-  "date": "2-10-2016",
+  "date": "2-24-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -55,7 +55,7 @@ The following are quick tips/notes based on past experiences with customers leve
 
     ![servers menu in control portal](../images/deploy-microsoft-sql-server-using-blueprint-01.png)
 
-2. Browse to the Group that houses the VM(s) you want to deploy SQL. Select Action, Execute Package.
+2. Browse to the Group that houses the VM(s) you want to deploy SQL. Select More Actions, Execute Package.
 
     ![select execute package](../images/deploy-microsoft-sql-server-using-blueprint-02.png)
 
