@@ -16,7 +16,7 @@ The CenturyLink Cloud Platform provides clients with various integrated and cust
 All **Standard** Servers in the CenturyLink Cloud platform include a nightly file system backup of the Operating System's running state. These nightly backups start around 8pm (local server time) but are staggered to minimize impact on load. The backups will be retained based on choice during VM provisioning. **These backups are not application aware and as such do not provide transactional consistency. Refer to the Database and Exchange portions of this KB for options to meet this need.**
 
 * Standard Backup: 5 Days of rolling backups, retained within the local data center
-* Premium Backup: 14 Days of rolling backups, with copies stored locally and the two most recent copies replicated to a secondary data center. Data Center pairings can be found in the [DR Matrix](../Servers/disaster-recovery-comparison-matrix.md).
+* Premium Backup: 14 Days of rolling backups, with copies stored locally and the two most recent copies replicated to a secondary data center.
 
 ### File Server Backup &amp; Recovery Services
 
@@ -99,5 +99,3 @@ No, we are not able to restore the VM with its previous name in Control after it
 **Do daily backups occur regardless of the VM's operating state?  (running, stopped, paused, archived)**
 
 VMs in running, stopped or paused states receive daily backups. VMs in the archived state do not receive daily backups.
-
-
