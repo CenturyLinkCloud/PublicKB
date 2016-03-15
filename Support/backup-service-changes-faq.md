@@ -6,6 +6,7 @@
 }}}
 
 Article first posted on 10-7-2015
+
 Updated on February 23, 2016 to reflect specific dates, as the rollout plan, including the need for customers to create, and apply their own backup policies.
 
 ### Description

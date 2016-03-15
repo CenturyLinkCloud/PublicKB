@@ -60,6 +60,8 @@ A new restoration point is created at the completion of every backup, full or in
 
 In order to prevent the accidental overwriting of data, a new directory is created under the restoration path you provide. The directory uses the restoration point ID as the name and contains all of the restored data.
 
+**Security**
+Backup are transferred from your server over the public Internet to Object Storage using TLSv1.2. The data is then encrypted at rest in the object store with 256-bit AES encryption server side. A unique key that is also encrypted with a master key when it is stored is used to secure your data. Keys are stored in separate locations from your data for extra protection. At this time user supplied keys are not supported.
 
 **Related Topics**
 * [Getting Started with Simple Backup](https://www.ctl.io/knowledge-base/backup/getting-started-with-simple-backup/)

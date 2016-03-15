@@ -1,7 +1,7 @@
 {{{
   "title": "Cloud Virtual Server Instance Size and Performance",
-  "date": "8-13-2015",
-  "author": "Richard Seroter",
+  "date": "3-1-2016",
+  "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
@@ -16,6 +16,7 @@ The CenturyLink Cloud Platform does not offer predefined virtual "instance types
 * Up to 4 TB storage
     * up to 4 disks of 1 TB apiece
     * up to 15 disks, not exceeding 4 TB
+* Up to 4 vNIC
 
 The max configuration for a given Standard virtual machine is 16 vCPU, 128 GB of memory and 4 TB of storage. Refer to [Operating System Root Drive Size](../Servers/operating-system-root-drive-size.md) for OS Drive Sizes.
 
@@ -26,6 +27,7 @@ The max configuration for a given Standard virtual machine is 16 vCPU, 128 GB of
 * Up to 1 TB Storage (SSD)
     * single disk up to 1 TB
     * up to 15 disks, not exceeding 1 TB
+* Up to 4 vNIC
 
 The max configuration for a given Hyperscale virtual machine is 16 vCPU, 128 GB of memory and 1 TB of storage. Refer to [Operating System Root Drive Size](../Servers/operating-system-root-drive-size.md) for OS Drive Sizes.
 
