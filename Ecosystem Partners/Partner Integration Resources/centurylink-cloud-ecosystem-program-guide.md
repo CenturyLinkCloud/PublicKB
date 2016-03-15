@@ -24,7 +24,7 @@ This document explains the process for onboarding technology into the CenturyLin
 
 ![Process Logo](../../images/centurylink-cloud-ecosystem-program-guide-ecosystem_process.png)
 
-Entry into the Marketplace Provider Program consists of two primary steps: **Application** and **Certification**. Once a potential technology is identified, the company is classified as an Applicant. Once a company becomes a Customer of CenturyLink Cloud, accepts the platform Agreement, and initiates integration activities with the CenturyLink Ecosystem team, the Applicant is referred to as a Candidate. Once the solution is certified, the Candidate becomes a **Certified Provider**.
+Entry into the Marketplace Provider Program consists of two primary steps: **Application** and **Certification**. Once a potential technology is identified, the company is classified as an Applicant. Once a company becomes a Customer of CenturyLink Cloud, they accept the Marketplace Provider Program Supplemental Terms.  Upon engaging with the [Ecosystem team](mailto:ecosystem@ctl.io), validating an integration strategy, the Applicant is referred to as a Candidate. Once the solution is certified, the Candidate becomes a **Certified Provider**.
 
 ### Application
 
