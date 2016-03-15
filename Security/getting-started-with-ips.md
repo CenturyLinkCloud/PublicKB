@@ -1,6 +1,6 @@
 {{{
   "title": "IPS - Getting Started",
-  "date": "02-19-2016",
+  "date": "02-28-2016",
   "author": "Client-Security",
   "attachments": [],
   "contentIsHTML": false,
@@ -80,7 +80,7 @@ Not at this time, if you'd like to see this feature, please contact [features@ct
 
 **What does the IPS Product Provide?**
 
-Platform CenturyLink’s IPS service helps ensure secure protection against your Virtual Machine (VM) from known intrusion patterns that hackers utilize. It also allows you to spend less time on the maintenance of your system, instead allowing you to focus on the tasks for your core business. We will do the patching and ensure that all agents have up-to-date signatures for possible attacks.
+Platform CenturyLink's IPS service helps ensure secure protection against your Virtual Machine (VM) from known intrusion patterns that hackers utilize. It also allows you to spend less time on the maintenance of your system, instead allowing you to focus on the tasks for your core business.  We will ensure that all IPS agents have up-to-date signatures to prevent possible attacks.
 
 **How do I configure the notifications settings to send alerts?**
 
@@ -88,7 +88,7 @@ Follow the process in the [Configuring IPS Notifications article](configuring-ip
 
 **Will you be adding support for additional Operating Systems?**
 
-Yes, we are working on adding additional OSes. If you have a specific OS you would like to see supported, please contact features.ctl.io.
+Yes, we are working on adding additional OSes. If you have a specific OS you would like to see supported, please contact features@ctl.io.
 
 **If I decommission a Virtual Machine, do I need to uninstall the IPS agent?**
 
