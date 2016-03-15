@@ -73,6 +73,7 @@ $ echo 'python-2.7.11' > runtime.txt
 #### Now you can push your app to the platform.
 You are ready to deploy the app using the [Cloud Foundry CLI](login-using-cf-cli.md). Once it is running, copy the value from `urls` and go to that address in a browser. You should see a page that says 'Hello'.
 * The example below returns django-sample.useast.appfog.ctl.io as the URL. Your app's address will depend on its region and either its name or the route you provide.
+
 ```
 $ cf push django-sample
 Using manifest file /home/derek/code/django_sample/manifest.yml
