@@ -16,7 +16,7 @@ CenturyLink Cloud offers customers a way to set custom prices for their sub acco
 The SYOP feature should be used by anyone who would like to set prices for their sub accounts that are different from the price they pay to CenturyLink Cloud. This change affects only the prices that are shown to sub accounts, and does not change the amount that customers are responsible for paying to CenturyLink Cloud for their combined accounts' usage.
 
 ##### How do I change prices for my sub accounts?
-To access the SYOP functionality, navigate to https://control.ctl.io/pricingcatalog. Step-by-step instructions for [setting a default price sheet](../General/setting-default-prices-for-sub-accounts.md) and [setting a price sheet for a specific sub account](../General/setting-prices-for-sub-accounts.md) will be available in our Knowledge Base soon.
+To access the SYOP functionality, navigate to https://control.ctl.io/pricingcatalog. Step-by-step instructions for [setting a default price sheet](../General/setting-default-prices-for-sub-accounts.md) and [setting a price sheet for a specific sub account](../General/setting-prices-for-sub-accounts.md) are in our Knowledge Base.
 
 ##### What prices can be adjusted?  
 Prices for all products appearing in the [online Pricing Catalog](//www.ctl.io/pricing) can be changed, with the sole exception of Support. Support fees are charged as a fixed percentage of a customer's entire bill, and cannot be adjusted via Set Your Own Price at this time.

@@ -14,14 +14,18 @@ This document is for users of AppFog v1 for migration to the next generation of 
 
 Before deleting any applications or services on AppFog v1 ensure you have local copies. Once apps and services are deleted it is **permanent**. We will not be able to provide a backup.
 
+When migration is complete your billing subscription can be canceled from the [Account](https://console.appfog.com/#account) page of the web console. Please be sure to cancel your subscription as we are not aware when individual user migration is complete. The billing system will not automatically prorate the subscription and issue a refund. If applicable, please open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com to receive a prorated refund of your subscription.
+
+
 ### AppFog SSL Support
 
 AppFog v2 provides SSL for default domains, such as &lt;appname&gt;.useast.appfog.ctl.io. SSL endpoints for custom domains are not available on AppFog v2. If you need your SSL certificate please login to open a [Support Ticket](https://support.appfog.com) or email support@appfog.com. We are unable to provide your certificate key.
 
-For SSL support for a custom domain on AppFog v2 we recommend utilizing a service such as CloudFlare's Flexible SSL. CloudFlare's Flexible SSL will provide SSL support from the end user to their server, and endusers will see the SSL icon lock in their browser. When provisioning CloudFlare's Flexible SSL be sure to select "Flexible" under the SSL option, the default is "Full". Note, CloudFlare's Flexible SSL does not provide SSL support from the CloudFlare server to AppFog. CloudFlare's Full SSL product would require installation of your certificate on the AppFog server, which is not supported.
+For SSL support for a custom domain on AppFog v2 we recommend utilizing a service such as CloudFlare. CloudFlare, or a similar provider, will provide SSL support with their SSL certificate from the end user to the CloudFlare server. You would then need a CNAME record at CloudFlare pointing to hello-node.useast.appfog.ctl.io or hello-node.useast.appfog.ctl.io. Communication from CloudFlare to AppFog would then be encrypted with the AppFog *.appfog.ctl.io SSL certificate. When configuring SSL on CloudFlare select the Full SSL option. The "Flexible" SSl option will only provide SSL from the end user to CloudFlare. The "Full Strict" option is not supported by AppFog.
 
 
 ### Related Support Documentation:
+* [AppFog v2 Custom Domain](../AppFog/setup-custom-domain-for-appfog-app.md)
 * [CloudFlare SSL](https://www.cloudflare.com/ssl)
 * [CloudFlare SSL Knowledge Base](https://support.cloudflare.com/hc/en-us/categories/200276247)
 * [CenturyLink WordPress and CloudFlare](../WordPress/wordpress-cloudflare-SSL-configuration.md)
