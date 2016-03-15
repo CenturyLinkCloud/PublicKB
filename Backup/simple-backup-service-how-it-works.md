@@ -10,7 +10,7 @@
 
 **Simple Backup Service (SBS)**
 
-[Simple Backup Service](https://www.ctl.io/simple-backup-service/) provides file and folder level backups and restores. The service is integrated with the [Control Portal](https://control.ctl.io/) and is API accessible. That gives you flexibility and ease of use to configure and customize backup policies.
+[Simple Backup Service](https://www.ctl.io/simple-backup-service/) provides file and folder level backups and restores. The service is integrated with the [Control Portal](https://control.ctl.io/) and is [API accessible](https://api-va1.backup.ctl.io/clc-backup-api/swagger-ui.html). That gives you flexibility and ease of use to configure and customize backup policies.
 
 For example, you can specify the backup frequency, retention, location, self-service restores, or path(s)/folder(s) to be backed up. The policies you define can then be applied to VMs and [Bare Metal](https://www.ctl.io/bare-metal/) cloud servers. You can add or remove servers to policies at any time or indicate the storage region as your business needs change.
 
@@ -56,7 +56,7 @@ You can enable or disable a server or policy as needed. An inactive policy essen
 If the backup agent is unable to communicate with the SBS infrastructure, data will not be set to expire. The feature ensures that data is safe and restorable in the case of server failure or Internet connectivity issues. Servers removed from a policy are treated as if the server status is set to inactive and the retention period starts.
 
 **Restoration**
-A new restoration point is created at the completion of every backup, full or incremental. The restore point contains a backup date and time stamp which is actually the point-in-time that the backup job completed. Executing a restore is easy. You manage restoration points through the Control Portal or via API calls. Select the "point-in-time" backup event, specify a destination directory, and click the *restore* button. That's it! Your data is restored automatically within minutes. You can also delete restoration points that are no longer needed.
+A new restoration point is created at the completion of every backup, full or incremental. The restore point contains a backup date and time stamp which is actually the point-in-time that the backup job completed. Executing a restore is easy. You manage restoration points through the Control Portal or via [API calls](https://api-va1.backup.ctl.io/clc-backup-api/swagger-ui.html). Select the "point-in-time" backup event, specify a destination directory, and click the *restore* button. That's it! Your data is restored automatically within minutes. You can also delete restoration points that are no longer needed.
 
 In order to prevent the accidental overwriting of data, a new directory is created under the restoration path you provide. The directory uses the restoration point ID as the name and contains all of the restored data.
 
