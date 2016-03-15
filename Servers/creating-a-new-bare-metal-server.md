@@ -2,7 +2,7 @@
   "title": "Creating a New Bare Metal Server",
   "date": "3-14-2016",
   "author": "Bryan Friedman",
-  "attachments": []
+  "attachments": [],
   "contentIsHTML": false
 }}}
 
