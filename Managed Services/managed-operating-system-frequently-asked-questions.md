@@ -1,13 +1,13 @@
 ﻿{{{
   "title": "Managed Operating System - Frequently Asked Questions",
-  "date": "4-22-2015",
-  "author": "Jacob Kenner",
+  "date": "02-11-2015",
+  "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
 }}}
 
-Here are a few frequently asked questions for our managed OS service.
+Here are a few frequently asked questions for our [CenturyLink Cloud Managed Operating System Services](//www.ctl.io/managed-services/operating-system/).
 
 **What is included in the Managed OS service?**
 
@@ -15,26 +15,30 @@ CenturyLink’s Managed OS service helps you spend less time on the IT tasks tha
 
 * Vendor Management – CenturyLink maintains ownership and management responsibility for your OS, freeing you from managing OS-level functions, SPLAs and license keys.
 * Access Management – We take responsibility for user policies, administration and password management enforcement.
-* Configuration Management – We confirm the initial install and basic functionality using an OS image built on vendor-recommended best-practices &amp; years of industry experience.
-* Change Management – We provide access to OS-level change data performed by CenturyLink staff, along with robust ITIL-based internal changed control.
-* Patch/Update Management – With support available for all critical and vendor-recommended patches, we ensure only OS vendor-recommended patches are installed.
+* Configuration Management – We confirm the initial install and basic functionality using an OS image built on vendor-recommended best-practices and years of industry experience.
+* Change Management – We provide access to OS-level change data performed by CenturyLink staff, along with robust ITIL-based internal change control.
+* Patch/Update Management – With support available for all critical and vendor-recommended patches, we ensure only OS vendor-recommended patches are installed. Please see the [patching article](../Managed Services/managed-os-operating-system-patching-and-update-processes.md) for more details.
 * Security – We secure the OS with industry-standard anti-virus protection, regular virus and malware signature updates, and additional OS-level hardening to mitigate risk.
 
-**How do I pay for a managed VM?**
+**What is not included in the Managed OS service?**
 
-Customers pay for managed operating system and managed applications on an hourly basis. For managed OS, customers pay the management charge __whenever the server is powered on__. Licensing fees continue whether the server is powered on or off.
+It would be impossible to create an all-inclusive list of everything a product is not, but this section addresses some current or often-asked items.
 
-For managed applications, customers pay the management charge __for as long as the managed application is on the server (whether the server is powered on or off)__.
+* Backups are not a part of the Managed OS service, but backups have been an available feature on Standard and Premium storage for all virtual machines. Effective April 26, 2016, the backup features associated with Standard and Premium storage will be retired.  On this date, the data on your storage volumes will no longer be backed up by default. It is highly recommended that you make arrangements to activate [Simple Backup Service](../Support/backup-service-changes-faq.md) for your Managed VMs.
+
+**What do I pay for a managed VM?**
+
+Customers pay for managed operating system and managed applications on an hourly  basis. For managed OS, customers pay the management charge whenever the server is powered on. Licensing fees continue whether the server is powered on or off.
+
+For managed applications, customers pay the management charge for as long as the managed application is on the server (whether the server is powered on or off).
 
 Please review the [cloud pricing catalog](//www.ctl.io/pricing) for the billing type of each managed product!
 
 **How do I create a Managed VM?**
 
-For starters, you need to identify a data center that supports managed operating systems. In the [data centers](//www.ctl.io/data-centers/) page, find the filter in the Cloud category called Public Cloud Managed OS.
-
-From the Control Portal menu, select “Create Server.”  Then, select the data center, group membership, and other VM properties.  Select the data center that supports managed services and then click the “managed server” element to “Yes.” The operating system drop-down menu will automatically show available options. Choose your version, and then proceed with the remainder of the server creation process.
-
-After creating a managed VM, the VM will be 'Under Construction' while background processes are completed. You will not have access to the server during that time; you will receive a notification via email once the operation has completed in a few hours. If there are any issues beyond that time, contact us via email <a href="mailto:request@centurylink.com">request@centurylink.com</a> or by phone at the following numbers. In the US: 888.638.6771; UK: +44.118.322.6100; Singapore: +65.6305.8099. Please do not email the CenturyLink Cloud NOC or raise the issue via chat - faster responses to inquiries will come from the email address and support numbers above.
+Please review the articles dedicated to:
+* [making a new server a managed server](../Managed Services/created-a-managed-server-now-what.md)
+* [converting an existing server to a managed server](../Managed Services/converting-unmanaged-virtual-machines-to-managed.md)
 
 
 **What if I don’t see an option for Managed OS in the CenturyLink Cloud Control Panel?**
@@ -44,16 +48,16 @@ There could be a few causes:
 * Be sure you are creating the server in a data center that supports managed services.
 * It is possible your company has not yet executed a Master Services Agreement (MSA) with CenturyLink Technology Solutions. To obtain a MSA – or if you believe you should already have one in place – please contact a CenturyLink Sales Representative toll free at:
 
-    * United States: 1-855-287-2541
+    * United States: 1-800-871-9244
     * Canada: 1-877-387-3764
     * Europe, Middle East &amp; Africa: +44 (0) 207 400 5600
-    * Japan: +81 3 5214 0180
-    * Hong Kong: +852 3079 4461
-    * Singapore: +65 6591 8824
+    * Japan: +81 3 6435 9658
+    * Hong Kong: +852 2190 8798
+    * Singapore: +65 6768 8098
 
 **Is there anything that I cannot do in the Control Portal with a managed VM?**
 
-A managed virtual machine cannot be cloned, archived, or converted to a template. Also, the "time to live" option is not available when creating a new managed server. At this time, you cannot create a managed server within a Cloud Blueprint.
+A managed server cannot be cloned, archived, or converted to a template. You cannot restore a managed server as an unmanaged server. Also, the "time to live" option is not available when creating a new managed server. At this time, you cannot create a managed server within a Cloud Blueprint.
 
 **How do I log into my server?**
 
@@ -71,9 +75,8 @@ If you connect and find that the system disconnects you immediately, you should 
 
 **How can I have my VM patched?**
 
-An important component of OS administration and management is keeping the system up-to-date. This includes keeping the system current with all patches to help prevent security compromises or operational reliability issues. CenturyLink will, from time to time, schedule the installation of system patches as deemed appropriate by our Solution Engineers. We will schedule the installation with you in advance. This will allow both parties to prepare for the patching, as well as provide ample time for discussion regarding the potential impact the patch may have on specific applications within your environment.
+An important component of OS administration and management is keeping the system up-to-date. Please see the [patching article](../Managed Services/managed-os-operating-system-patching-and-update-processes.md) for more details.
 
-In addition, you can request patching for your VM by contacting the Client Service Center at 1-888-638-6771 and choosing menu option 2.
 
 **How can I transfer files to my server using Remote Desktop?**
 
@@ -92,7 +95,18 @@ Files can be transferred by simply drag and drop in Windows Explorer from your r
 
 **Who do I contact if I have trouble with my Managed VM?**
 
-The CenturyLink Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at 1-888-638-6771, or send email to request@centurylink.com for Managed OS issues. If there is an incident, email can be sent to incident@centurylink.com.
+The CenturyLink Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at the numbers below, or send email to request@centurylink.com for Managed OS issues. If there is an incident, email can be sent to incident@centurylink.com.
+
+* US: 888.638.6771
+* UK: +44.118.322.6100
+* Singapore: +65.6305.8099
+
+
+**How is Managed Support different than Platform Support?**
+
+Your [Platform support](https://www.ctl.io/support/) options are distinct from Managed Support for a variety of reasons. You will find that public, platform support handles issues below the Operating System layer and some form of it is provided, regardless what flavor you choose, regardless what data center you choose. However, Managed Support is provided at your option within specific data centers for specific Operating Systems and Applications on CenturyLink Cloud (as well as other managed hosting products in the broader [CenturyLink Product Catalog](http://www.centurylink.com/business/enterprise/). Different teams with different skills sets are required and different methods are employed by each team.
+
+The contact methods described above will connect you with the Managed Support teams as quickly as possible. If you contact the NOC for an issue regarding a Managed Server that is not related to the platform, you will be politely asked to use the aforementioned contact methods. if you contact the Managed Support team for a platform issue,
 
 **How can I remove Managed Services from a VM?**
 
@@ -100,11 +114,14 @@ Currently, the only way to remove Managed Services from a VM once it has been de
 
 **How can I tell my *managed* VMs from my <em>unmanaged</em> VMs in the CenturyLink Cloud Control portal?**
 
-Managed VMs will be noted with an asterisk (*) in front of the server name. For example, *ILMHPELCTA04. This notation is intended to make it easier to locate managed VMs from within a list of all Cloud VMs you have created.
+Managed VMs will be noted with an asterisk (&#42;) in front of the server name. For example, &#42;ILMHPELCTA04. This notation is intended to make it easier to locate managed VMs from within a list of all Cloud VMs you have created.
 
 **My VM shows under construction in Control, but shows that the build has completed successfully?**
 
-On Managed VMs, there are additional tasks that is being processed in the background in order to fully integrate into the Managed system, once this is complete Control will reflect it as active and manageable.
+On Managed VMs, there are additional tasks that is being processed in the background in order to fully integrate into the Managed system, once this is complete Control will reflect it as active and manageable. Please see the following articles for additional details:
+
+* [making a new server a managed server](../Managed Services/created-a-managed-server-now-what.md)
+* [converting an existing server to a managed server](../Managed Services/converting-unmanaged-virtual-machines-to-managed.md)
 
 **Can I join Managed Servers to my own domain?**
 
@@ -116,4 +133,8 @@ Servers **can** be converted from unmanaged to managed by executing the "Managed
 
 **What Anti-Virus is provided for Windows Servers and how often is it updated?**
 
-McAfee is leveraged on Managed Windows Servers and is updated daily.
+McAfee 5.02 is the default, standard Anti-Virus for Managed Windows Servers and is updated daily. Any managed servers with Windows OS deployed prior to November 21, 2015 use an older version. If you would like to use a different Anti-Virus, please contact your CenturyLink sales representative to discuss Advanced Services.
+
+**How do I Set Get Anti-Virus on a Managed RedHat Server?**
+
+Anti-virus is not standard for Managed RHEL. Please contact your CenturyLink sales representative to discuss Advanced Services.

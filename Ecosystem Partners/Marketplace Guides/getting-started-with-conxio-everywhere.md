@@ -1,6 +1,6 @@
 {{{
-  "title": "Getting Started with Conexio Everywhere - Blueprint",
-  "date": "8-28-2015",
+  "title": "Getting Started with Conxio Everywhere - Blueprint",
+  "date": "9-11-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -43,13 +43,6 @@ Conxio is aligned with ISO 27001 and is capable of delivering compliance with HI
 CenturyLink Cloud Users
 
 ### Deploying via Blueprint Packages
-
-Puppet agents are often best deployed as part of a new server build, especially when designed a standardized infrastructure service catalog.
-CenturyLink has made two packages available for inclusion in your own Blueprints:
-
-
-#### Steps
-
 
 1. **Locate the Blueprint in the Blueprint Library**
 

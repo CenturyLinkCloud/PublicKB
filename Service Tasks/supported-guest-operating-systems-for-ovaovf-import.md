@@ -1,13 +1,13 @@
 {{{
   "title": "Supported Guest Operating Systems for OVA/OVF Import",
-  "date": "8-31-2015",
-  "author": "Chris Little",
+  "date": "11-24-2015",
+  "author": "Jacob Malmad",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
 ### Overview
-CenturyLink Cloud customers may wish to import OVA/OVF Guest Operating Systems to the platform via a [Service Task](//www.ctl.io/products/support/service-tasks). Customers frequently request a list of the supported Guest Operating Systems the CenturyLink Cloud supports for Import and this KB is meant to address this query. 
+CenturyLink Cloud customers may wish to import OVA/OVF Guest Operating Systems to the platform via a [Service Task](//www.ctl.io/products/support/service-tasks). Customers frequently request a list of the supported Guest Operating Systems the CenturyLink Cloud supports for Import and this KB is meant to address this query.
 
 It is recommended that customers leverage our [Self-Service OVF Import Capabilities](../Servers/self-service-vm-import-ovf-requirements.md) for Operating Systems supported by this functionality.
 
@@ -21,6 +21,7 @@ It is recommended that customers leverage our [Self-Service OVF Import Capabilit
 ### Supported Operating Systems List
 * CentOS 5 | 64-bit
 * CentOS 6 | 64-bit
+* CentOS 7 | 64-bit
 * Debian 6 | 64-bit
 * Debian 7 | 64-bit
 * RedHat Enterprise Linux 5 | 64-bit

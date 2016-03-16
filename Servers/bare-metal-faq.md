@@ -37,7 +37,7 @@ No, the CPU, memory and storage are static resources on each individual Bare Met
 
 **What are the self-service actions available to me through the Control portal for Bare Metal servers?**
 
-Through the Control portal you are able to power the Bare Metal server on or off, perform a server reset and add a single public IP.  
+Through the Control portal you are able to power the Bare Metal server on or off, perform a server reset and add a single public IP.
 
 **What are the best suited workloads for this new server class?**
 
@@ -77,7 +77,7 @@ No, there are a select number of management capabilities available through the C
 
 **Can I change the administrator/root password of my server through Control or the API?**
 
-No, the password can only be set at the time of server creation. If you would like to change the password on the server, you may do so through the OS, but the “show credentials” link in the Control portal will no longer display accurate credentials.
+Yes, the password is set at the time of server creation and can be changed after the fact. The password should only be [changed through the Control portal](../Servers/how-to-change-a-server-administrator-password.md) or API.  Changing the password through the OS will cause the “show credentials” link in the Control portal to no longer display accurate credentials.
 
 **Where are Bare Metal servers available geographically?**
 
@@ -99,10 +99,98 @@ Yes, Bare Metal servers are dedicated to you once they have been provisioned and
 
 No, the storage configurations provisioned for Bare Metal servers are all either RAID 1 or RAID 5 depending on the server configuration type and tampering with that configuration could result in loss of management access which could disrupt support. Each server is provisioned with two partitions, one 300GB boot partition and a second partition for the remaining storage capacity for that particular configuration type.
 
+**Can I customize my network interface configuration on a Bare Metal server?**
+
+Yes, Bare Metal servers do support multiple vNIC configurations. Additional vNICs can be [added through the API](//www.ctl.io/api-docs/v2/#servers-add-secondary-network). It is not advised to make any other manual network configuration changes as they may be detrimental to associated support and automated provisioning services.
+
 **Can I bring my own OS image?**
 
-No, the available Operating Systems include Windows 2012 R2, RHEL6, CentOS 6, and Ubuntu 14. If there is a particular OS image you would like to see incorporated please [submit a feature request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/).
+No, the available Operating Systems include Windows 2012 Standard Edition R2, Windows 2012 Datacenter Edition, RHEL6, CentOS 6, and Ubuntu 14. If there is a particular OS image you would like to see incorporated please [submit a feature request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/).
+
+As an alternative to a custom image, Bare Metal servers do support the [execute package](https://www.ctl.io/knowledge-base/servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/) action from the Control Portal as well as through the [API](https://www.ctl.io/api-docs/v2/#server-actions-execute-package), allowing you to install the same software or run the same scripts on many servers at once.
+
+**When running "execute package" a Bare Metal server, why does the Blueprint fail?**
+
+Your server may be using an older version of the OS image from before package execution was supported on Bare Metal. Follow the instructions below for the specific OS that your server is running to ensure packages can be executed successfully.
+
+_On Windows_
+
+  - Enable "File and Printer Sharing" on the server. The following PowerShell command will enable it, or you may turn it on through the Management Console in Windows.
+
+        netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=Yes
+
+_On Linux_
+
+  - The `Ciphers` line in `etc/ssh/sshd_config` must support the **`aes256-cbc`** cipher:
+
+        Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes256-cbc
+
+  - Ensure that the `unzip` command package is installed on the server.
+
+
+If you still have problems with failing Blueprints, contact Customer Care by submitting a support request using the link at the top right side of this site.
 
 **Can I use my own licensing for the OS?**
 
-No, the licensing is factored into the cost of the Bare Metal server where applicable and can not be separated from the service.  If you would be interested in using your own OS licensing with Bare Metal servers, please let us know in a [feature request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/).
+No, the licensing is factored into the cost of the Bare Metal server where applicable and cannot be separated from the service.  If you would be interested in using your own OS licensing with Bare Metal servers, please let us know in a [feature request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/).
+
+**What's the difference between Windows 2012 Standard and Windows 2012 Datacenter Edition on Bare Metal servers?**
+
+Both are capable of leveraging the Hyper-V role to provision VMs on the Bare Metal server, but the Datacenter Edition license allows for unlimited VMs to be provisioned on a physical host while the Standard Edition is limited to two VMs running concurrently on the physical server host.
+
+**How do I enable Hyper-V support on my Windows 2012 Bare Metal server?**
+
+If you would like to enable Hyper-V functionality for use on your Windows bare metal server, you will need to add the Hyper-V role via the Server Manager Dashboard. Start by logging into your bare metal server as Administrator, opening Control Panel and selecting `Programs > Turn Windows features on or off`.
+
+![Turn Windows features on or off](../images/bare-metal-faq-1.png)
+
+From the Add Roles and Features Wizard, click `Next >` three times and then select the `Hyper-V` checkbox. Click the `Add Features` button when the prompt comes up.
+
+![Add Hyper-V role](../images/bare-metal-faq-2.png)
+
+Now click `Next >` three times until you reach the Create Virtual Switches screen. Make sure you _do not_ check any network adapters, and just click `Next >`. **DO NOT CREATE ANY VIRTUAL SWITCHES YET or you will lose connectivity to your server! You will add one or more virtual switches later and configure them with the proper VLAN tag to ensure you don't lose connectivity.**
+
+![Don't Create a Virtual Switch yet](../images/bare-metal-faq-3.png)
+
+Click `Next >` two more times until you reach the Confirmation screen. Finally, click `Install` to finish the installation process. Once complete, click `Close` and make sure to restart the server as stated.
+
+Once the server comes back up, log in as Administrator again. To finish the configuration you'll need to go back and create at least one virtual switch, but be very careful to follow the steps below so you don't lose network connectivity.
+
+First, open Network and Sharing Center from Control Panel and look for the connection labeled `team0 - VLAN <ID>` where `<ID>` is the VLAN tag. Take note of this number as you will need it in a following step.
+
+![Note the VLAN ID](../images/bare-metal-faq-4.png)
+
+Now, launch `Hyper-V Manager`, right click on the server name, and select `Virtual Switch Manager...`.
+
+![Virtual Switch Manager](../images/bare-metal-faq-5.png)
+
+Click `Create Virtual Switch` (you probably want an External type). Give the switch a name. The most important part here is to enable the VLAN ID! Check the `Enable virtual LAN identification for management operating system` checkbox and enter the VLAN ID noted above into the text box.
+
+![Enter the VLAN ID](../images/bare-metal-faq-6.png)
+
+Click `OK` and then `Yes` to apply the changes. You are now free to set up virtual machines connected to this virtual switch.
+
+**How do I activate my Windows VMs provisioned on a Windows 2012 Datacenter Edition Bare Metal server?**
+
+The answers will differ depending on which Windows OSes you are trying to activate.  Guest VMs running Windows 2012 R2 will automatically activate using [AVMA (Automatic Virtual Machine Activation)](https://technet.microsoft.com/en-us/library/dn303421.aspx) using the host's Hypervisor. Guest VMs running Windows 2008 R2 can activate either using Multi-Activation Keys (MAKs) obtained from Microsoft, or by using the volume license keys available on [Microsoft's site](https://technet.microsoft.com/en-us/library/jj612867.aspx?f=255&MSPPError=-2147217396) along with the CenturyLink KMS host. To use our KMS you will need to manually specify the KMS host on the guest VM.
+
+1. You will need the VM to be on a CenturyLink Cloud customer VLAN to access our KMS host and the IP/port associated.
+  ```
+  172.17.1.21:1688
+  ```
+
+2. You can test TCP port by telnetting to the IP over the appropriate port.
+  ```
+  telnet 172.17.1.21 1688
+  ```
+
+3. To specify the KMS host, use the following command:
+  ```
+  slmgr /skms 172.17.1.21:1688
+  ```
+
+Windows VMs in a Hyper-V environment on Bare Metal servers should use IPs in the same VLAN as configured in the Control portal for the host Bare Metal server.  It is also recommended that IPs be higher in the range so VMs claiming from that same range will not encounter IP conflicts.  Additional IPs for guest VMs can be obtained by submitting a customer support request. For activation of older Windows OSes on guest VMs you will need to obtain your own MAKs and/or activation solution.
+
+**Does CenturyLink provide OS media (ISO's) for guest VMs on Windows 2012 Datacenter Edition with Hyper-V?**
+
+Customers are responsible for supplying their own guest VM OS media when using the Windows 2012 Datacenter Edition virtualization features.

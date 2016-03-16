@@ -59,6 +59,7 @@ The repository is organized by category, and each folder represents a category. 
   **Note:** Content authors are responsible for making their pull requests pass the commit analyzer. Once they pass, pull requests will be merged.
 
 1. CenturyLink Cloud Team reviews your pull request. If accepted, it will be added to the [Knowledge Base on ctl.io](https://www.ctl.io/knowledge-base).
+2. In general Pull Requests are review once in the morning and once in the afternoon (Seattle Time). This is not a garantee but is generally the practice. So if there are no changes required your pull request is generally accepted within a day. However, if there are changes required then the time line depends on when the changes are addressed. So remember to keep an eye on your pull request for comments.
 
 
 #### Run the Commit Analyzer locally
@@ -180,18 +181,18 @@ KBs generally use heading level 3 (###) as the highest heading level in the arti
     ```
 
   Be sure the file name does not include any spaces.
-  
+
   The image reference within the article should look like this:
-  
+
     ```
     ![Image Description](../images/[file-name])
     ```
  The image description should be short and relevant to the image.
- 
+
 ### Images within Ordered Lists
- 
+
  When referencing an image within an ordered list, the image should follow the format below. This keeps the image reference from breaking the numbering within the list.
- 
+
     ```
     1. [Text][at least two blank spaces after the text]
     [blank line]
@@ -234,4 +235,23 @@ KBs generally use heading level 3 (###) as the highest heading level in the arti
   -------------|-------------|-------------
   TEXT COLUMN A|TEXT COLUMN B|TEXT COLUMN C
   TEXT COLUMN A|TEXT COLUMN B|TEXT COLUMN C
+  ```
+
+### Table of Contents
+
+  For longer articles a table of contents can improve the browsing experience of the user. **Lowercase** must be used for the `#section-a` to properly jump to the appropriate section of the article.
+
+  ```
+  ### Table of Contents
+
+  * [Section A](#section-a)
+  * [Section B](#section-b)
+  * [Section C](#section-c)
+  * [Section C](#section-d)
+
+  ### Section A
+  Text for this area.
+
+  ### Section B
+  Text for this area.
   ```
