@@ -15,7 +15,7 @@ Application developers
 
 This article will provide an overview of our [MySQL-compatible Relational DB offering](https://www.ctl.io/relational-database/)
 and how it can be consumed by applications deployed to AppFog.
-We will use JavaScript with the [MySQL Node.js module](https://github.com/felixge/node-mysql/)
+We will use JavaScript with the [MySQL Node.js module](https://www.npmjs.com/package/mysql)
 to demonstrate using CenturyLink's Relational DB service.
 
 [CenturyLink Relational DB](https://www.ctl.io/relational-database/) is included in the AppFog marketplace.
@@ -50,7 +50,8 @@ $ cf bind-service myapp acmedb
 ```
 
 This will add the CenturyLink Relational DB service instance access credentials into the `myapp` application's
-runtime environment. To view these MySQL service instance credentials use the `cf env` command and they will be
+runtime environment. To view these MySQL service instance credentials use the `cf env` command
+(or the "Environment" area for an application in the AppFog UI) and they will be
 located in the VCAP_SERVICES environment variable which is a convention for Cloud Foundry enabled services:
 
 ```
@@ -83,7 +84,7 @@ Below we will show an example using Node.js and the MySQL client module.
 
 ### Example: Using Environment Credentials in Node.js
 
-This section will assume that you have an existing Node.js which needs a MySQL database named `myapp`.
+This section will assume that you have an existing Node.js app which needs a MySQL database named `myapp`.
 The first step is to add the MySQL client module to `myapp` Node.js application using NPM (Node Package Manager)
 for including the dependency.
 
@@ -130,7 +131,7 @@ var connectionInfo = {
 // set connection info from db service instance credentials from VCAP_SERVICES environment variable
 if (process.env.VCAP_SERVICES) {
   var services = JSON.parse(process.env.VCAP_SERVICES);
-  var ctlMysqlConfig = services["ctl_mysql"];
+  var ctlMysqlConfig = services['ctl_mysql'];
 
   if (ctlMysqlConfig) {
     var node = ctlMysqlConfig[0];
@@ -188,7 +189,7 @@ In addition, there is a corresponding function to find all items in the items ta
 
 ### Example: Using Environment Credentials in Java
 
-The Java example below uses [Gradle](http://gradle.org/) as it's build system. The
+The Java example below uses [Gradle](http://gradle.org/) as its build system. The
 build file, `build.gradle`, appears below:
 
 ```
@@ -309,7 +310,8 @@ json parsing libraries out there; pick your favorite. I included the asserts for
 that someone begins with this code example; a real world app would want use thorough error handling.
 
 Finally, below is the deployment file `manifest.yml`. The property `no-route` is included as the
-app doesn't respond to http requests:
+app doesn't respond to http requests
+(the Diego runtime also requires [disabling health checks](using-diego.md) in non-webapps):
 
 ```
 applications:
