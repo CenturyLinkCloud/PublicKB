@@ -80,13 +80,13 @@ Customers in the **Professional and Enterprise** support tier can leverage our p
 
 2. Call the phone number for your appropriate region.
 
-    **Country**|**Phone Number**
-    -----------|----------------
-    USA|+1 (425) 321-0338
-    UK|+44 20 0333 0338
-    Hong Kong|+852 58032338
-    Australia|+61 7 4410 3380
-    Singapore|+65 3158 9575
+**Country**|**Phone Number**
+-----------|----------------
+USA|+1 (425) 321-0338
+UK|+44 20 0333 0338
+Hong Kong|+852 58032338
+Australia|+61 7 4410 3380
+Singapore|+65 3158 9575
 
 ### FAQ
 
