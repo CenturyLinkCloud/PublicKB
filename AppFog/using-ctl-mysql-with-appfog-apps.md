@@ -1,6 +1,6 @@
 {{{
   "title": "Using CenturyLink MySQL Relational DB with AppFog Applications",
-  "date": "02-08-2016",
+  "date": "03-16-2016",
   "author": "Chris Sterling",
   "attachments": [],
   "related-products" : [],
@@ -15,20 +15,68 @@ Application developers
 
 This article will provide an overview of our [MySQL-compatible Relational DB offering](https://www.ctl.io/relational-database/) and how it can be consumed by applications deployed to AppFog. We will use JavaScript with the [MySQL Node.js module](https://github.com/felixge/node-mysql/) to demonstrate using CenturyLink's Relational DB service.
 
-[CenturyLink Relational DB](https://www.ctl.io/relational-database/) is included in the AppFog marketplace. You can find it via the Cloud Foundry CLI by running the following command in a terminal window:
+### Relational DB Service Deployment Options
+
+There are two options for provisioning a Relational DB Service (RDBS) instance for use with AppFog. The actual Relational DB service is the same product, each method provides different options. Pricing is the same and can be estimated from the Relational DB Services of our [Price Estimator](https://www.ctl.io/estimator/).
+
+<h5><a href="#cli">1. Provisioning using the AppFog CLI tool</a><h5>
+
+* This method provides the options for plans with preconfigured resource allocation.
+* The preset resource allocation can not be scaled.
+* The VCAP_SERVICES environment variable is available for connection to the service.
+ 
+<h5><a href="#rdbs">2. Provisioning from the Relational DB page</a><h5>
+
+* This method provides the abiltiy for users to customize resource allocation upon service creation.
+* These RDBS instances can be scaled at anytime, requiring a restart which typically only takes a few minutes.
+* Backups are readily available for download.
+* Replication can be enabled or disabled.
+* The VCAP_SERVICES environment variable is **not** available for connection to the service.
+
+### Using An RDBS Instance To Host Multiple Databases
+
+* An RDBS instance created from AppFog has a database named `default` created and this database is provided in the `dbname` field of the VCAP_SERVICES environment variable. Users can create multiple databases within a single RDBS instance instead of creating a new RDBS instance for each application. *Note:* Since VCAP_SERVICES will only provide the `default` database for connection the user created database needs to be provided in the connection configuration. This example shows configuration to conncect to a user created database named `myapp-db`:
+
+```
+// set connection info from CenturyLink Relational DB service instance
+// credentials from VCAP_SERVICES environment variable
+if (process.env.VCAP_SERVICES) {
+  var services = JSON.parse(process.env.VCAP_SERVICES);
+  var ctlMysqlConfig = services["ctl_mysql"];
+
+  if (ctlMysqlConfig) {
+    var node = ctlMysqlConfig[0];
+    connectionInfo = {
+        host: node.credentials.host,
+        port: node.credentials.port,
+        user: node.credentials.username,
+        password: node.credentials.password,
+        database: node.credentials.dbname,
+        ssl: {
+          ca: node.credentials.certificate
+        }
+    };
+  }
+  ```
+  
+  * RDBS instances created from the Relational DB are also able to host multiple databases, they do not have a `default` database created. Users must create a database within the instance.
+
+<h3 id="cli">Create a Relational DB Service Instance from the AppFog CLI</h3>
+ 
+To create a new CenturyLink Relational DB service instance, we can use the Cloud Foundry CLI. In order to do this you must be [logged into an AppFog region](login-using-cf-cli.md). [CenturyLink Relational DB](https://www.ctl.io/relational-database/) is included in the AppFog marketplace. You can find it via the Cloud Foundry CLI by running the following command in a terminal window:
 
 ```
 $ cf marketplace
 ...
-service       plans                           description   
-ctl_mysql     micro, small, medium, large     CenturyLink's Relational DB Service, MySQL-compatible database-as-a-service
+service       plans                             description   
+ctl_mysql     micro*, small*, medium*, large*   CenturyLink's Relational DB Service, MySQL-compatible database-as-a-service with SSL encryption option and daily backups held 7 days.  Please see https://www.ctl.io/legal/ for terms of service.   
+orchestrate   free                              Orchestrate DBaaS   
+
+* These service plans have an associated cost. Creating a service instance will incur this cost.
 ```
+Running `cf marketplace -s <SERVICE_NAME>` will provide resource and pricing information about plans available with that service.
 
-
-
-### Create a Relational DB Service Instance
-
-To create a new CenturyLink Relational DB service instance, we can use the Cloud Foundry CLI. In order to do this you must be [logged into an AppFog region](login-using-cf-cli.md). The following command will create a new micro Relational DB service instance named `acmedb`:
+The following command will create a new micro Relational DB service instance named `acmedb`:
 
 ```
 $ cf create-service ctl_mysql micro acmedb
@@ -36,7 +84,7 @@ $ cf create-service ctl_mysql micro acmedb
 
 The `cf create-service` command will provision a new MySQL-compatible instance that can later be bound to an application deployed to AppFog.
 
-### Bind Relational DB to Application
+##### Bind Relational DB to Application
 
 To bind the Relational DB service instance to an [application deployed to AppFog](deploy-an-application.md) you can use the `cf bind-service` command:
 
@@ -57,10 +105,13 @@ System-Provided:
     "credentials": {
      "certificate": "-----BEGIN CERTIFICATE-----\n{...}\n-----END CERTIFICATE-----",
      "dbname": "default",
-     "host": "{IP Address}",
-     "password": "{Password}",
-     "port": {Port Number},
-     "username": "{Username}"
+     "host": "<SERVICE_URL>",
+     "hostname": "<SERVICE_URL>",
+     "jdbcUrl": "<JDBC_URL>",
+     "name": "default",
+     "password": "<PASSWORD>",
+     "port": <PORT>,
+     "username": "<USERNAME>"
     },
     "label": "ctl_mysql",
     "name": "acmedb",
@@ -73,9 +124,15 @@ System-Provided:
 
 These credentials can be populated into a MySQL client library for the specific runtime for your application. Below we will show an example using Node.js and the MySQL client module.
 
-### Example: Using Credentials from Environment in Node.js MySQL Client
 
-This section will assume that you have an existing Node.js which needs a MySQL database named `myapp`. The first step is to add the MySQL client module to `myapp` Node.js application using NPM (Node Package Manager) for including the dependency.
+
+<h3 id="rdbs">Create a Relational DB Service from the Relational DB Page</h3>
+
+To create a Reltaional DB Service (RDBS) from outside of AppFog either naviagate direclty to [rdbs.ctl.io](https://rdbs.ctl.io/), or from the [Control Portal](https://control.ctl.io) use the dropdown arrow in the upper right corner and select Relational DB from the menu. Our [Getting Started with Relational DB Service](https://www.ctl.io/knowledge-base/database/getting-started-with-mysql-rdbs/) article describes how to create an RDBS instance.
+
+### Example: Using RDBS service in Node.js MySQL Client
+
+This section will assume that you have an existing Node.js application which needs a MySQL database named `myapp`. The first step is to add the MySQL client module to `myapp` Node.js application using NPM (Node Package Manager) for including the dependency.
 
 ```
 $ npm install mysql --save
@@ -102,6 +159,8 @@ The application's package.json should include `mysql` and `q` modules similar to
 }
 
 ```
+
+##### Example Connecting to an RDBS Instance Created From AppFog CLI
 
 Now that the Node.js MySQL client is available, we use require to pull the module into the application, pull credentials from application's AppFog deployment environment and setup a function to enable execution of SQL statements against the MySQL database. Below is code that can be used to do all of this that can be put into a file named `dbconfig.js`:
 
@@ -146,7 +205,39 @@ exports.query = function(query, callback) {
   connection.end();
 };
 
+``` 
+
+##### Example Connecting to RDBS Instance Created From Relational DB Page
+
+A conncection string will be provided to access your RDBS instance, the username and password are selected when creating the service. You can use a third-party tool or your local MySQL install to connect to your RDBS instance to create a database. 
+
 ```
+var mysql = require('mysql');
+
+// use RDBS connection info
+var connectionInfo = {
+  user: '<USER_NAME>',
+  password: '<PASSWORD>',
+  host: '<HOST>',
+  port: '<PORT>',
+  database: 'myappdb',
+  ssl: {
+    ca: '<DOWNLOADED_CERT>'
+  }
+};
+
+// create function named 'query' to use for SQL statement execution
+// against MySQL database
+exports.query = function(query, callback) {
+  var connection = mysql.createConnection(connectionInfo);
+  connection.query(query, function(queryError, result) {
+    callback(queryError, result);
+  });
+  connection.end();
+};
+```
+
+### Example SQL Statement
 
 To use the MySQL connection to execute SQL statements from the application, we must require our new `dbconfig` module and then send a valid SQL command to the query function:
 
@@ -171,5 +262,4 @@ exports.findAllItems = function() {
   return deferred.promise;
 }
 ```
-
 The code above provides a function that adds an item with a name and description into the items table. In addition, there is a corresponding function to find all items in the items table using a promise.
