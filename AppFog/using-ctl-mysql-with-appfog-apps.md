@@ -49,7 +49,7 @@ if (process.env.VCAP_SERVICES) {
         port: node.credentials.port,
         user: node.credentials.username,
         password: node.credentials.password,
-        database: node.credentials.dbname,
+        database: 'myapp-db',
         ssl: {
           ca: node.credentials.certificate
         }
