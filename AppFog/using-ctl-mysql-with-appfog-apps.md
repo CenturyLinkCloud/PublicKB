@@ -19,18 +19,17 @@ This article will provide an overview of our [MySQL-compatible Relational DB off
 
 There are two options for provisioning a Relational DB Service (RDBS) instance for use with AppFog. Regardless of the provisioning method, the Relational DB service instance product and pricing model are the same. Pricing can be estimated from the Relational DB Services section of our [Price Estimator](https://www.ctl.io/estimator/).
 
-<h5><a href="#cli">1. Provisioning using the AppFog CLI tool</a><h5>
-- This method offers several RDBS instance options with preconfigured resource allocation.
-- The preset resource allocation can not be scaled.
-- The VCAP_SERVICES environment variable is available for connection to the service.
+<h5><a href="#cli">1. Provisioning using the AppFog CLI tool</a></h5>
+* This method offers several RDBS instance options with preconfigured resource allocation.
+* The preset resource allocation can not be scaled.
+* The VCAP_SERVICES environment variable is available for connection to the service.
  
-<h5><a href="#rdbs">2. Provisioning from the Relational DB page</a><h5>
-
-- This method provides the abiltiy for users to customize resource allocation upon service creation.
-- These RDBS instances can be scaled at anytime, requiring a restart which typically only takes a few minutes.
-- Backups are readily available for download.
-- Replication can be enabled or disabled.
-- The VCAP_SERVICES environment variable is **not** available for connection to the service.
+<h5><a href="#rdbs">2. Provisioning from the Relational DB page</a></h5>
+* This method provides the abiltiy for users to customize resource allocation upon service creation.
+* These RDBS instances can be scaled at anytime, requiring a restart which typically only takes a few minutes.
+* Backups are readily available for download.
+* Replication can be enabled or disabled.
+* The VCAP_SERVICES environment variable is **not** available for connection to the service.
 
 ### Using An RDBS Instance To Host Multiple Databases
 
