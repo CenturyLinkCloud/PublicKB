@@ -1,5 +1,5 @@
 {{{
-  "title": "Install RDP on Linux for Simple Backup Service (SBS)",
+  "title": "Install RDP on Linux for SBS",
   "date": "03-21-2016",
   "author":  John Gerger",
   "attachments": [],
