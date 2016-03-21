@@ -1,7 +1,7 @@
 {{{
   "title": "Install RDP on Linux for SBS",
   "date": "03-21-2016",
-  "author":  John Gerger",
+  "author":  "John Gerger",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
