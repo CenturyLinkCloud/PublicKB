@@ -20,7 +20,7 @@ CenturyLink Cloud’s Simple Backup Service product is currently in a Limited Be
 
 **Q: Where do I configure backups?**
 
-A: The Control Portal provides backup configuration functionality. Please refer to our [Getting Started Guide](./getting-started-with-simple-backup.md) for more details
+A: The Control Portal provides backup configuration functionality. Please refer to our [Getting Started Guide](./getting-started-with-simple-backup.md) for more details. Additionally, the [Backup API](https://api-va1.backup.ctl.io/clc-backup-api/swagger-ui.html) may be used for advanced scripting.
 
 **Q: What are the network requirements for SBS, if any?**
 
