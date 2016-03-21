@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-## Overview
+### Overview
 CenturyLink Cloud delivers some of the highest performing infrastructure in the industry (Source: Cloud Harmony Report).
 Our infrastructure delivers databases with higher IOPS, Websites with faster response times, storage with greater availability, as well as many more advantageous benefits for your customer.
 
@@ -35,7 +35,7 @@ The body of the email should include:
 
 You will get a confirmation email from CenturyLink Cloud Trial Team confirming the trial.
 
-## Emails from CenturyLink and Partner Actions
+### Emails from CenturyLink and Partner Actions
 
 ### T-7days
 A CenturyLink Cloud Team email letting you know that the customer trial will expire in 7 days and we will begin billing you (the partner) for that customer.
