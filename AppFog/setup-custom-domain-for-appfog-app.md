@@ -19,7 +19,7 @@ When an application is deployed to AppFog a URL is generated based on a route an
 myapp.useast.appfog.ctl.io
 ```
 
-The default domain in the AppFog US East region is `useast.appfog.ctl.io` and the US West region is `hello-node.uswest.appfog.ctl.io.`. The application's name is typically used for the route, or sub-domain, in the URL. Setting up a custom domain for your application involves creating a custom domain and route. The following sections will take you through this process.
+The default domain in the AppFog US East region is `useast.appfog.ctl.io` and the US West region is `uswest.appfog.ctl.io.`. The application's name is typically used for the route, or sub-domain, in the URL. Setting up a custom domain for your application involves creating a custom domain and route. The following sections will take you through this process.
 
 ### Pre-requisites
 
@@ -59,7 +59,7 @@ Now if a request for `www.sudomesandwich.io` were to come to AppFog it would be 
 
 ### Setting Up DNS with 3rd Party Provider
 
-In order for users to access your application at the custom domain there needs to be a DNS (domain name service) entry that describes how to route traffic to AppFog. AppFog's external IP addresses are not static and should not be used for a DNS A Record. At your DNS provider create a redirect(302) from your root domain `<YOUR_DOMAIN>` routing to `www.<YOUR_DOMAIN>`. For this example, `myapp.sudomesandwich.io` will redirect to `www.myapp.sudomesandwich.io`. This is a fairly standard tool that DNS services provide. If you don’t see an option for it at your domain host, contact their support services and they may be able to do that for you. Once the root domain redirect is established, you then can map a CNAME record pointing to AppFog. Depending on the region your app is deployed either create the CNAME Record directing to `hello-node.uswest.appfog.ctl.io.` or `hello-node.useast.appfog.ctl.io.` For instance, to map `www.myapp.sudomesandwich.io` in the US East region you would have a CNAME record like this:
+In order for users to access your application at the custom domain there needs to be a DNS (domain name service) entry that describes how to route traffic to AppFog. AppFog's external IP addresses are not static and should not be used for a DNS A Record. At your DNS provider create a redirect(302) from your root domain `<YOUR_DOMAIN>` routing to `www.<YOUR_DOMAIN>`. For this example, `myapp.sudomesandwich.io` will redirect to `www.myapp.sudomesandwich.io`. This is a fairly standard tool that DNS services provide. If you don’t see an option for it at your domain host, contact their support services and they may be able to do that for you. Once the root domain redirect is established, you then can map a CNAME record pointing to AppFog. Depending on the region your app is deployed to either create the CNAME Record directing to `hello-node.uswest.appfog.ctl.io.` or `hello-node.useast.appfog.ctl.io.` For instance, to map `www.myapp.sudomesandwich.io` in the US East region you would have a CNAME record like this:
 
 `CNAME www 1 min hello-node.useast.appfog.ctl.io.`
 
