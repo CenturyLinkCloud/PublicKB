@@ -57,10 +57,6 @@ It depends on several factors, including:
 
 We anticipate that the combination of *lower* block storage costs and common Simple Backup Service configurations will be *significantly less expensive* than Premium storage, and *slightly more expensive* than Standard storage. The exact differences of course will depend on your implementation and the final price of block storage and of the Simple Backup Service.
 
-### If I apply Simple Backups policies before May 1, can I remove my Standard & Premium backup features to save money?
-
-Yes. Customers should send a ticket to [help@ctl.io](mailto:help@ctl.io) with the VM names to omit from the Standard & Premium backup job.
-
 ### What is the Simple Backup Service?
 
 The [Simple Backup Service](https://www.ctl.io/simple-backup-service/) is a new product that performs regular backups of data from your servers and stores them in secure object storage for customized retention periods. Users can configure and manage backup policies (frequency, retention, and paths) via the Control Portal. The details and reports of the backups can be viewed via the Control Portal as well.

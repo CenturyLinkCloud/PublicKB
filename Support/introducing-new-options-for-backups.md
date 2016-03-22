@@ -69,10 +69,6 @@ Third, consider the following timeline to protect your VMs with the Simple Backu
 #### Week 4
 * Ensure that all VMs that need to be protected, are protected, either with Simple Backup or with another mechanism.
 
-### If I apply Simple Backups policies before May 1, can I remove my Standard & Premium backup features to save money?
-
-Yes. Customers should send a ticket to [help@ctl.io](mailto:help@ctl.io) with the VM names to omit from the Standard & Premium backup job.
-
 ### How does the Simple Backup Service compare to other options are available on CenturyLink Cloud?
 
 The answer varies depending on the workload and your requirements. Along those lines, We’ve partnered with several companies who have in turn integrated their technology with our platform as Certified Ecosystem partners. We summarized a few of these below. They all have a few things in common, namely:
