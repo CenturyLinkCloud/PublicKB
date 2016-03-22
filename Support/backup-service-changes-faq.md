@@ -57,9 +57,9 @@ It depends on several factors, including:
 
 We anticipate that the combination of *lower* block storage costs and common Simple Backup Service configurations will be *significantly less expensive* than Premium storage, and *slightly more expensive* than Standard storage. The exact differences of course will depend on your implementation and the final price of block storage and of the Simple Backup Service.
 
-### If I apply Simple Backup policies before May 1, won't I be double-charged for Standard & Premium backups too?
+### If I apply Simple Backups policies before May 1, can I remove my Standard & Premium backup features to save money?
 
-Customers that wish to avoid this scenario should send a ticket to [help@ctl.io](mailto:help@ctl.io) with the VM names to omit from the Standard & Premium backup job.
+Yes. Customers should send a ticket to [help@ctl.io](mailto:help@ctl.io) with the VM names to omit from the Standard & Premium backup job.
 
 ### What is the Simple Backup Service?
 

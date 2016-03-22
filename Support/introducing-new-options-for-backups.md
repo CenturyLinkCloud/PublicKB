@@ -69,9 +69,9 @@ Third, consider the following timeline to protect your VMs with the Simple Backu
 #### Week 4
 * Ensure that all VMs that need to be protected, are protected, either with Simple Backup or with another mechanism.
 
-### If I apply Simple Backups policies before May 1, won't I be double-charged for Standard & Premium backups too?
+### If I apply Simple Backups policies before May 1, can I remove my Standard & Premium backup features to save money?
 
-Customers that wish to avoid this scenario should send a ticket to [help@ctl.io](mailto:help@ctl.io) with the VM names to omit from the Standard & Premium backup job.
+Yes. Customers should send a ticket to [help@ctl.io](mailto:help@ctl.io) with the VM names to omit from the Standard & Premium backup job.
 
 ### How does the Simple Backup Service compare to other options are available on CenturyLink Cloud?
 
