@@ -33,12 +33,6 @@ A: There could be a few causes:
     * Hong Kong: +852 3079 4461
     * Singapore: +65 6591 8824
 
-**Q: What's the difference between Managed Backup and Premium Storage?**
-
-A: Both options provide a two-week retention period and offsite backups. But Managed Backup also offers the ability for customers to work with the managed backup support team to customize retention policies and backup schedules. There are options for including – or excluding - specific files/folders from a backup policy. Premium Storage simply provides nightly VM backups, making it difficult to restore selected files or folders, while Managed Backup performs full and incremental backups on a nightly basis and can be turned on and off as needed. Managed Backup also encrypts the backup data at rest. Encryption is provided on the backup infrastructure servers after a backup has been performed; the encryption key in only avalible to our operations staff and the backup systems.
-
-Users are likely best served by choosing *either* Managed Backup *or* Premium Storage. For Hyperscale servers, Managed Backup is recommended.
-
 **Q: How much does the Managed Backup service cost? Why is the cost not included in the estimates shown in Control Portal?**
 
 A: Managed Backup uses a tiered pricing model and will cost anywhere from $0.87 to $1.10 per GB per month,and depending on how much average protected storage is being used (see table below). *Note: Existing managed hosting customers using Data Protect Backup will have cloud usage contribute to overall protected data utilization and also may have different pricing based on existing term commit agreements.* Though the costs for Managed Backup does not currently show up as part of the estimates in Control Portal, they will appear on your monthly invoice from CenturyLink as a separate line item. If you have detailed questions regarding billing, please contact your CenturyLink Sales Representative using one of the numbers above.

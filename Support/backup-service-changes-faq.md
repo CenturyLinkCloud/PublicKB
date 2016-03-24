@@ -1,44 +1,51 @@
 {{{
   "title": "About Simple Backup Service and the Retirement of Standard & Premium Storage",
-  "date": "11-18-2015",
+  "date": "3-23-2016",
   "author": "Jared Ruckle & Mark Lee",
   "attachments": []
 }}}
 
 Article first posted on 10-7-2015
 
+Updated on March 23, 2016 to reflect specific dates, as the rollout plan, including the need for customers to create, and apply their own backup policies.
+
 ### Description
 
-CenturyLink will be introducing a new service, Simple Backup Service, and retiring the Standard and Premium storage products. This Frequently Asked Questions document is meant to provide greater context and clarity about this transition.
+CenturyLink will be introducing a new service, [Simple Backup Service](https://www.ctl.io/simple-backup-service/) , and retiring the Standard and Premium backup storage products. This Frequently Asked Questions document is meant to provide greater context and clarity about this transition. Additional details, [please refer to this knowledge base article updated March 23, 2016](../Support/introducing-new-options-for-backups.md).
 
 ### Why is this change happening?
 
-Many customers want more features in their backups - either in retention period, location of secondary copies, or the freedom to have no backup at all. The Simple Backup Service offers this flexibility.
+Many customers want more features in their backups - either in retention period, location of secondary copies, or the freedom to have no backup at all. The [Simple Backup Service](https://www.ctl.io/simple-backup-service/) offers this flexibility.
 
-CenturyLink Cloud will still offer a block storage service for virtual machines and bare metal - but users will not be required to have a backup option for existing instances or new servers that they create.
+CenturyLink Cloud will still offer a block storage service for virtual machines and bare metal - but users will no longer have a bundled backup option for existing instances or new servers that they create.
 
 ### What does this mean for me?
 
-Your backups on Standard and Premium will continue to function until the Simple Backup Service becomes available in your data center. At that point, customers will need to apply a Simple Backup Policy to their servers in order to have data backed up. Your backup will then operate consistent with Standard or Premium backup service definitions, provided that you apply a similar policy to your servers (the one exception: new backups will be for entire drives and their paths, not snapshots). We recommend pre-identifying those servers and important data/apps which need backup ahead of time.
+Your backups on Standard and Premium will continue to function until May 1, 2016. **After that date, your data will no longer be automatically backed up.** In the meantime, assess your backup requirements, and identify servers that require protection. CenturyLink has developed a [short-list of solutions to consider for backup and disaster recovery scenarios](../Support/introducing-new-options-for-backups.md).
 
-### Will my servers be automatically removed from standard & premium storage? Is there something I need to do to enable Simple Backup Service?
+### Will my servers be automatically removed from Standard & Premium backup? Is there something I need to do to enable Simple Backup Service?
 
-Yes, customer action will be required, but CenturyLink is managing a few items to make things a little easier. The following describes the "default" option:
+Yes, servers will be automatically removed from Standard and Premium backup on May 1, 2016. If you would like to have your servers protected with the Simple Backup Service, here are steps to follow:
 
-* CenturyLink engineers will remove Standard & Premium storage from the Platform (primary block storage will continue to function).
-* CenturyLink will then populate a few common backup policies to your account.
-* You will need to associate a Simple Backup Service policy to each server if desired.
-* Customers can also modify a pre-populated policy or create their own.
+* The Simple Backup Service launches March 29. The service is in beta now - we recommend trying out the service as soon as possible, [please visit the product page and complete the online form](https://www.ctl.io/simple-backup-service/).
+* Customers can then create and apply backup policies to their virtual machines
+* Apply policies to a few test machines
+* Associate policies across your deployment as desired
+* CenturyLink engineers will remove Standard & Premium storage from the Platform (primary block storage will continue to function)
+* You will need to associate a Simple Backup Service policy to each server if desired
+* Customers can also modify an existing policy or create their own
 
-If you would require additional assistance or an alternative method, please contact us at [help@ctl.io](mailto:help@ctl.io) or reach out to your account manager.
+If you would require additional assistance, please contact us at [help@ctl.io](mailto:help@ctl.io) or reach out to your account manager.
 
 ### When is this happening?
 
-The Standard and Premium products will be phased out data center by data center. This phased retirement of Standard and Premium - and phased launch of the Simple Backup Service - is likely to occur in early 2016. We will post more details on this transition in the coming weeks. **Until then, there are no changes to Standard and Premium storage.**
+The Standard and Premium products will be retired on May 1. **Until then, there are no changes to Standard and Premium storage. However, customers should evaluate the Simple Backup Service and other alternatives in the meantime.**
 
 ### Will my pricing change?
 
-Yes – your price for block storage will drop, since backups are no longer included by default. However, additional backup costs may be incurred via the Simple Backup Service.
+Yes – your price for block storage will drop automatically, since backups are no longer included by default. However, additional backup costs may be incurred via the Simple Backup Service or other selected solutions.
+
+Your May 2016 will reflect these changes.
 
 ### Will I save money with the Simple Backup Service, compared to what I'm paying today?
 
@@ -52,7 +59,7 @@ We anticipate that the combination of *lower* block storage costs and common Sim
 
 ### What is the Simple Backup Service?
 
-The Simple Backup Service is a new product that performs scheduled backups of data from your servers and stores them in secure object storage for customized retention periods. Users can configure and manage backup policies (frequency, retention, and paths) via the Control Portal. The details and reports of the backups can be viewed via the Control Portal as well.
+The [Simple Backup Service](https://www.ctl.io/simple-backup-service/) is a new product that performs regular backups of data from your servers and stores them in secure object storage for customized retention periods. Users can configure and manage backup policies (frequency, retention, and paths) via the Control Portal. The details and reports of the backups can be viewed via the Control Portal as well.
 
 In addition, users can initiate a restore of files and folders from a given point in time.
 
@@ -88,7 +95,7 @@ From there, users associate a policy with a server and then specify the target r
 
 ### My requirements for governance may not be met by the Simple Backup Service. What are my options? Can I continue to use Standard and Premium storage indefinitely?
 
-Standard and Premium Storage will not be available for continued use once they are retired from a data center; if you have questions about options, please contact us at [help@ctl.io](mailto:help@ctl.io).
+Standard and Premium Storage will not be available for continued use once they are retired on May 1; if you have questions about options, please refer to [this knowledge article with additional options](../Support/introducing-new-options-for-backups.md), including those from our ecosystem partners.
 
 ### I'd like to do snapshots on my VMs. Does Simple Backup Service perform snapshots? What options do I have?
 
