@@ -17,7 +17,7 @@
 
 	Late last year, CenturyLink notified customers that the [backup features associated with “Standard” and “Premium” storage were to be retired in early 2016.](https://www.ctl.io/knowledge-base/support/backup-service-changes-faq/)
 
-	We can now offer more clarity on this timing. Effective April 26, 2016 Standard and Premium backup features will reach end of life in CenturyLink Cloud in all locations. There is no impact to the persistent storage attached to servers, but the 5-day and 14-day backup capabilities will no longer function after this date.
+	We can now offer more clarity on this timing. Effective May 1, 2016 Standard and Premium backup features will reach end of life in CenturyLink Cloud in all locations. There is no impact to the persistent storage attached to servers, but the 5-day and 14-day backup capabilities will no longer function after this date.
 
 	For more information - including alternatives you may want to consider for backup and disaster recovery, [please refer to this knowledge base article.](https://www.ctl.io/knowledge-base/support/introducing-new-options-for-backups/)
 
