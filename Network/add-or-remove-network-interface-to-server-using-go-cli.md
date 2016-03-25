@@ -18,7 +18,7 @@ Customers may wish to implement additional network interfaces (NICs) on CenturyL
 * Control Portal Username and Password
 * Server name you wish to add/remove an additional network interface (**Server name must be all caps**)
 * Network name you wish to add/remove (**Network name is case sensitive**)
-* Account Alias if you wish to add a network interface to a server in a sub-account
+* Account Alias if you wish to add/remove a network interface to a server in a sub-account
 
 ### Add a Network Interface to a Server
 
@@ -51,10 +51,10 @@ Customers may wish to implement additional network interfaces (NICs) on CenturyL
 
 ### Remove a Network Interface from a Server
 
-1. Run the remove-secondary-network Go CLI command.  
+1. Run the remove-secondary-network Go CLI command.  Use the optional --account-alias field is only required if you wish to add/remove a network interface to a server in a sub-account
 
     ```
-    clc server remove-secondary-network --server-name XXXXX --network-name XXXXX
+    clc server remove-secondary-network --server-name XXXXX --network-name XXXXX --account-alias XXXX
     ```
 
     ```
