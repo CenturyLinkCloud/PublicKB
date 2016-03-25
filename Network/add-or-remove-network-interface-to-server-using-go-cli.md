@@ -51,7 +51,7 @@ Customers may wish to implement additional network interfaces (NICs) on CenturyL
 
 ### Remove a Network Interface from a Server
 
-1. Run the remove-secondary-network Go CLI command.  Use the optional --account-alias field is only required if you wish to add/remove a network interface to a server in a sub-account
+1. Run the remove-secondary-network Go CLI command.  Use the optional --account-alias field is only required if you wish to remove a network interface from a server in a sub-account
 
     ```
     clc server remove-secondary-network --server-name XXXXX --network-name XXXXX --account-alias XXXX
