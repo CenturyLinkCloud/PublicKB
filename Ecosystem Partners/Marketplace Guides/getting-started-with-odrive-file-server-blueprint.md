@@ -19,19 +19,19 @@ Check out this [odrive video](https://vimeo.com/117538897) to learn more.
 ##### odrive Support:
 24x7 Web Support - [https://www.odrive.com/forum/](https://www.odrive.com/forum/)
 
-### Description 
-odrive has integrated their technology with the CenturyLink Cloud platform and produced several Blueprints to deploy the odrive File Server. In addition, a user can link to CenturyLink servers via SFTP protocol. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Cloud and file sharing solution. 
+### Description
+odrive has integrated their technology with the CenturyLink Cloud platform and produced several Blueprints to deploy the odrive File Server. In addition, a user can link to CenturyLink servers via SFTP protocol. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Cloud and file sharing solution.
 
 odrive offers integrated file sync capabilities with the CenturyLink Cloud platform. This document will guide CenturyLink users how to deploy the odrive File Server in the CenturyLink Cloud and link to Century Link cloud servers via SFTP with a few easy steps.  
 
 ### Solution Overview
-odrive enables Century Link customers to set up either an individual private cloud or public cloud storage for groups. 
+odrive enables Century Link customers to set up either an individual private cloud or public cloud storage for groups.
 
-odrive fully supports SFTP (SSH File Transfer Protocol) linking, giving you the "Dropbox experience" with any SSH-enabled Century Link cloud server. You will get native file browsing, offline access, full bi-directional sync, conflict handling, granular sync and unsync, multi-link capabilities, and in-line editing. 
+odrive fully supports SFTP (SSH File Transfer Protocol) linking, giving you the "Dropbox experience" with any SSH-enabled Century Link cloud server. You will get native file browsing, offline access, full bi-directional sync, conflict handling, granular sync and unsync, multi-link capabilities, and in-line editing.
 
-With the odrive file server (OFS), you can add a user and provision storage in seconds. Administrators have full control over user permissions and access. You will also have real-time insight into user access and data usage. 
+With the odrive file server (OFS), you can add a user and provision storage in seconds. Administrators have full control over user permissions and access. You will also have real-time insight into user access and data usage.
 
-### Offer 
+### Offer
 odrive is offering SFTP linking and the odrive File Server as part of a no charge program for Linux and Windows servers within CenturyLink’s Cloud. Through this unique offer, users will have access to SFTP linking and the odrive File Server services at no additional cost.  Please check with CenturyLink for any access charges that may apply to using its Cloud.  Please contact ODrive directly for offer and pricing details.
 
 All use of odrive software, documentation and services is governed by odrive’s Software License and Support Agreement or End User License Agreement (EULA) that can be reviewed at: [https://www.odrive.com/terms/](https://www.odrive.com/terms/)
@@ -56,7 +56,7 @@ After reading this article, the user should feel comfortable getting started usi
 1. Add a Public IP to your VM and open Firewall Ports 4433 and 4434 for TCP protocol
 1. Browse to the new VM and click on the Add Public IP button
 2. When the firewall rule dialog opens, Add two (2x) single-port boxes: configure one for TCP on port 4433 and the other TCP on port 4434.  
-3. Click the "Add Public IP address button".  When the Add Public IP task completes you should be able to connect to your new odrive file server from your odrive client via the public IP. 
+3. Click the "Add Public IP address button".  When the Add Public IP task completes you should be able to connect to your new odrive file server from your odrive client via the public IP.
 
       ![odrive Image](../../images/ecosystem-odrive-0a.png)
 
@@ -64,7 +64,7 @@ After reading this article, the user should feel comfortable getting started usi
 * Install ODrive File Server on Linux - Deploys ODrive File Server on CentOS / Red Hat Linux x64 OS
 * Install ODrive File Server on Windows - Deploys ODrive File Server on Windows 2008 R2 Standard x64 OS
 
-### Install ODrive File Server Blueprint 
+### Install ODrive File Server Blueprint
 1. Locate the ODrive File Server Blueprint
 
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
@@ -118,7 +118,7 @@ After your Blueprint deploys successfully, please follow these instructions to a
 
       ![odrive Image](../../images/ecosystem-odrive-0a.png)
 
-  3. Connect to the following URL to begin using your ODrive File Server:  *https://<YOUR_OFS_SERVER_IP>:4433/*    Note: Chrome users will need to ignore the "Your connection is not private" warning from an Invalid SSL certificate  and Proceed to the website.
+  3. Connect to the following URL to begin using your ODrive File Server:  *https://YOUR_OFS_SERVER_IP:4434/*    Note: Chrome users will need to ignore the "Your connection is not private" warning from an Invalid SSL certificate  and Proceed to the website.
 
   4. Accept the odrive terms of usage
 
@@ -130,7 +130,7 @@ After your Blueprint deploys successfully, please follow these instructions to a
 
       ![odrive Image](../../images/ecosystem-odrive-9.png)
 
-### Start using your odrive File Server 
+### Start using your odrive File Server
 
 #### Configure your odrive File Server within the odrive client
 Once your odrive File Server has been configured, you can store information on it easily by adding it to the odrive client.  Follow the instructions below to add your new odrive File Server to the odrive client:
@@ -140,7 +140,7 @@ Once your odrive File Server has been configured, you can store information on i
       ![odrive Image](../../images/ecosystem-odrive-10.png)
 
   3. Add the odrive File Server information:  
-    - The IP address URL https://<YOUR_OFS_SERVER_IP>:4433/
+    - The IP address URL https://YOUR_OFS_SERVER_IP:4433/
     - The username/password you created when you initially configured the odrive file server
     - You will receive an error if it cannot authorize
 
@@ -155,12 +155,12 @@ Once your odrive File Server has been configured, you can store information on i
 ### Pricing
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  There are no odrive license costs or additional fees bundled in.
 
-### Frequently Asked Questions 
+### Frequently Asked Questions
 
 #### Where do I obtain my odrive Licenses?
 odrive is free. Sign up at: [http://odrive.com](http://odrive.com)
 
-#### Who should I contact for support? 
+#### Who should I contact for support?
 * For issues related to deploying the odrive Blueprint on CenturyLink Cloud or linking via SFTP, Licensing, Accessing or using the deployed software, please visit the odrive Support Forum: [https://www.odrive.com/forum/](https://www.odrive.com/forum/)
 
-* For issues related to cloud infrastructure (VM’s, network, etc), or is you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new) 
+* For issues related to cloud infrastructure (VM’s, network, etc), or is you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new)

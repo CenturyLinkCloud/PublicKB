@@ -196,7 +196,7 @@ To see the status and details of a single LBaaS, use the GET function with the s
 To see the status and details of all LBaaS instances for a given account, use the GET function with the same API call as used in the Create LBaaS Group.
 
 #### Structure:
-    GET https://api.loadbalancer.ctl.io/{accountAlias}/loadBalancers
+    GET https://api.loadbalancer.ctl.io/{accountAlias}/loadbalancers
 
 | Name | Type | Description | Req. |
 | --- | --- | --- | --- |
@@ -280,7 +280,7 @@ To see the status and details of all LBaaS instances for a given account, use th
 Append the URL with the Group ID that was provided in the Create Group POST response followed by </pools>.
 
 #### Structure:
-    POST https://api.loadbalancer.clt.io/{accountAlias}/{dataCenter}loadBalancers/{loadBalancerId}/pools/
+    POST https://api.loadbalancer.clt.io/{accountAlias}/{dataCenter}/loadbalancers/{loadBalancerId}/pools/
 
 | Name | Type | Description | Req. |
 | --- | --- | --- | --- |
@@ -348,7 +348,7 @@ Append the URL with the Group ID that was provided in the Create Group POST resp
 Append the URL with the Group ID that was provided in the Create Group POST response followed by </pools>. Further append the URL with the Pools ID that was provided in the Create Pools POST response.
 
 #### Structure:
-    PUT https://api.loadbalancer.clt.io/{accountAlias}/{dataCenter}loadBalancers/{loadBalancerId}/pools/{poolId}
+    PUT https://api.loadbalancer.clt.io/{accountAlias}/{dataCenter}/loadbalancers/{loadBalancerId}/pools/{poolId}
 
 | Name | Type | Description | Req. |
 | --- | --- | --- | --- |
@@ -420,7 +420,7 @@ Append the URL with the Group ID that was provided in the Create Group POST resp
 Simply use the URL with the Group ID followed by </pools>. Further append the URL with the Pools ID that was provided in the Create Pools POST response. No request body is required.
 
 #### Structure:
-    DELETE https://api.loadbalancer.clt.io/{accountAlias}/{dataCenter}/loadBalancers/{loadBalancerId}/pools/{poolId}
+    DELETE https://api.loadbalancer.clt.io/{accountAlias}/{dataCenter}/loadbalancers/{loadBalancerId}/pools/{poolId}
 
 ### Example
 
@@ -460,7 +460,7 @@ Deletes a LBaaS Load Balancer configuration including any pools configured on th
 Simply use the URL with the Group ID. No request body is required.
 
 #### Structure:
-    DELETE https://api.loadbalancer.clt.io/{accountAlias}/{dataCenter}/loadBalancers/{loadBalancerId}
+    DELETE https://api.loadbalancer.clt.io/{accountAlias}/{dataCenter}/loadbalancers/{loadBalancerId}
 
 | Name | Type | Description | Req. |
 | --- | --- | --- | --- |
