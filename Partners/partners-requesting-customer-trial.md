@@ -1,58 +1,61 @@
-{{{ 
-  "title": "Partner's Requesting Customer Trial ",
+{{{
+  "title": "Partners Requesting a Customer Trial",
   "date": "6-25-2015",
   "author": "",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-Overview
-CenturyLink’s Cloud delivers some of the highest performing Infrastructure in the industry (Source: Cloud Harmony Report). 
-Our infrastructure delivers databases with higher IOPS, Websites with faster response times, storage with greater availability, as well as many more benefits that your customer can take advantage of.
-**Offering customer’s trial often lead to wins:**
+### Overview
+CenturyLink Cloud delivers some of the highest performing infrastructure in the industry (Source: Cloud Harmony Report).
+Our infrastructure delivers databases with higher IOPS, Websites with faster response times, storage with greater availability, as well as various other advantageous benefits for your customer.
 
-Customer gets a **30 Day Free Trial or $2,500** in services backed by CenturyLink Clouds Architecture & Support Teams. 
-Experience CenturyLink Cloud via a 30-Day Free Trial today and receive:
+**Offering customers a free trial often leads to wins:**
+
+Each customer gets a **30 Day Free Trial or $2,500** in services backed by CenturyLink Cloud's Architecture & Support Teams.
+Experience the CenturyLink Cloud platform via the free trial today and receive:
 * 30 days free (up to $2500 usage).
-* Access to CenturyLink Cloud products and services. 
-* High performance, fast deployment times and intuitive management capabilities that will push your business forward.
+* Access to CenturyLink Cloud products and services.
+* High performance, fast deployment times, and intuitive management capabilities that will push your business forward.
 
-**As a partner you have the ability to offer your customers trial.**
+**As a partner, you have the ability to offer your customers a free trial.**
 
-**To request a trial, use the following process:**
-1. Create customer account in the control portal 
-2. Request a Trial via email cloudpartnerhelp@centurylink.com 
-3. Email Subject:Trial Request- Partner Name - Customer Alias
+To request a trial, use the following process:
+1. Create a customer account in the control portal.
+2. Request a trial via email -- [cloudpartnerhelp@centurylink.com](mailto:cloudpartnerhelp@centurylink.com).
+3. In the email subject line, write: "Trial Request - {Partner Name} - {Customer Alias}"
 
-**Body of the Email:**
-* Partner Name 
-* Partner Contact 
+The body of the email should include:
+* Partner Name
+* Partner Contact
 * Partner Contact Email
-* Customer Name 
-* Customer Alias (Portal Alias) 
+* Customer Name
+* Customer Alias (Portal Alias)
 * Trial Start Date
 
-You will get a confirmation email from CenturyLink Cloud Trial Team confirming the Trial. 
+You will get a confirmation email from CenturyLink Cloud Trial Team confirming the trial.
 
 ### Emails from CenturyLink and Partner Actions
 
-#### T-7days 
-CenturyLink Cloud Team Email letting you know that the customer trial will be expire in 7 days and we will begin billing you (partner) for that customer.
-**Partner Action:** It is a good time for the partner to check with the customer about the trial and to help them decide if they want to become a loyal customer.
+### T-7days
+You (the partner) will receive a CenturyLink Cloud Team email letting you know that the customer trial will expire in 7 days and we will begin billing you (the partner) for that customer.
 
-#### End of Trial
-CenturyLink Cloud Team Email letting you know that the customer trial has expired and we will begin billing the you (partner) for that customer (if we didn’t hear back from the partner on
-cancellation)
+**Partner Action:** It is advised that you (the partner) reach out to the customer regarding the trial in an effort to help them decide if they want to become a billable customer.
 
-**Partner Action:** Update CenturyLink Cloud Trial Team about customer’s decision of becoming
-a monthly billable customer or if they decided to discontinue their service. If we do not hear back from (you) partner by the end of the trial, we begin billing the partner for that customer.
+### End of Trial
+You (the partner) will receive a CenturyLink Cloud Team email letting you know that the customer trial has expired and we will begin billing the you (the partner) for that customer (if we haven't heard back from the partner requesting a  cancellation).
 
-### Action Items (for Partners)
-#### Pre Trial Phase:
-* Set up Customer account in Control Portal.
-* Partner requests Trial via email cloudpartnerhelp@centurylink.com with the information mentioned above.
+**Partner Action:** Contact the CenturyLink Cloud Trial Team confirming the customers decision to either become
+a monthly billable customer or discontinue their service. If we do not hear back from you (the partner) by the end of the trial, we begin billing you for that customer.
 
-#### Trial Phase:
-* Partner to check with the customer on their decision on whether or not they want to continue the service and be a billable customer for the partner. 
-* Partner needs to inform the CenturyLink Trial team about the customer decision are ready to be billing customer from the following month or if they want to cancel their Trial service
-_(If we do not hear back from (you) partner by the end of the trial, we begin billing the partner on a monthly basis for that customer)._
+### Action Items (for Partners) Recap:
+
+**Pre-Trial Phase:**
+* Customer sets up a customer account in the Control Portal.
+* Partner requests trial via email [cloudpartnerhelp@centurylink.com](mailto:cloudpartnerhelp@centurylink.com) with the information mentioned above.
+
+**Trial Phase:**
+* Partner checks with the customer on their decision to either continue or discontinue the service and be a billable customer for the partner.
+* Partner contacts the CenturyLink Trial Team to confirm the customers decision.
+
+*(If we do not hear back from (you) partner by the end of the trial, we begin billing the partner on a monthly basis for that customers usage).*

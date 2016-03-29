@@ -1,17 +1,17 @@
 {{{
   "title": "About Simple Backup Service and the Retirement of Standard & Premium Storage",
-  "date": "2-23-2016",
+  "date": "3-28-2016",
   "author": "Jared Ruckle & Mark Lee",
   "attachments": []
 }}}
 
 Article first posted on 10-7-2015
 
-Updated on February 23, 2016 to reflect specific dates, as the rollout plan, including the need for customers to create, and apply their own backup policies.
+Updated on March 29, 2016 to reflect April 1 price drop for block storage, specific dates, as the rollout plan, including the need for customers to create, and apply their own backup policies.
 
 ### Description
 
-CenturyLink will be introducing a new service, [Simple Backup Service](https://www.ctl.io/simple-backup-service/) , and retiring the Standard and Premium backup storage products. This Frequently Asked Questions document is meant to provide greater context and clarity about this transition. Additional details, [please refer to this knowledge base article updated February 22, 2016](../Support/introducing-new-options-for-backups.md).
+CenturyLink will be introducing a new service, [Simple Backup Service](https://www.ctl.io/simple-backup-service/) , and retiring the Standard and Premium backup storage products. This Frequently Asked Questions document is meant to provide greater context and clarity about this transition. Additional details, [please refer to this knowledge base article updated March 23, 2016](../Support/introducing-new-options-for-backups.md).
 
 ### Why is this change happening?
 
@@ -21,13 +21,13 @@ CenturyLink Cloud will still offer a block storage service for virtual machines 
 
 ### What does this mean for me?
 
-Your backups on Standard and Premium will continue to function until April 26, 2016. **After that date, your data will no longer be automatically backed up.** In the meantime, assess your backup requirements, and identify servers that require protection. CenturyLink has developed a [short-list of solutions to consider for backup and disaster recovery scenarios](../Support/introducing-new-options-for-backups.md).
+Your backups on Standard and Premium will continue to function until May 1, 2016. **After that date, your data will no longer be automatically backed up.** In the meantime, assess your backup requirements, and identify servers that require protection. CenturyLink has developed a [short-list of solutions to consider for backup and disaster recovery scenarios](../Support/introducing-new-options-for-backups.md).
 
 ### Will my servers be automatically removed from Standard & Premium backup? Is there something I need to do to enable Simple Backup Service?
 
-Yes, servers will be automatically removed from Standard and Premium backup. If you would like to have your servers protected with the Simple Backup Service, here are steps to follow:
+Yes, servers will be automatically removed from Standard and Premium backup on May 1, 2016. If you would like to have your servers protected with the Simple Backup Service, here are steps to follow:
 
-* The Simple Backup Service will be launched on March 29. The service is in beta now - we recommend trying out the service as soon as possible, [please visit the product page and complete the online form](https://www.ctl.io/simple-backup-service/).
+* The Simple Backup Service launches March 29 - we recommend trying out the service as soon as possible, [please visit the product page and complete the online form](https://www.ctl.io/simple-backup-service/).
 * Customers can then create and apply backup policies to their virtual machines
 * Apply policies to a few test machines
 * Associate policies across your deployment as desired
@@ -39,11 +39,13 @@ If you would require additional assistance, please contact us at [help@ctl.io](m
 
 ### When is this happening?
 
-The Standard and Premium products will be retired on April 26. **Until then, there are no changes to Standard and Premium storage. However, customers should evaluate the Simple Backup Service and other alternatives in the meantime.**
+The Standard and Premium products will be retired on May 1. **Until then, there are no changes to Standard and Premium storage. However, customers should evaluate the Simple Backup Service and other alternatives in the meantime.**
 
 ### Will my pricing change?
 
-Yes – your price for block storage will drop, since backups are no longer included by default. However, additional backup costs may be incurred via the Simple Backup Service or other selected solutions.
+Yes – your price for block storage will drop automatically, since backups are no longer included by default. However, additional backup costs may be incurred via the Simple Backup Service or other selected solutions.
+
+New prices for block storage will go into effect April 1, 2016, one month **before** the retirement of Standard & Premium backup features. Your April 2016 invoice will reflect these changes.
 
 ### Will I save money with the Simple Backup Service, compared to what I'm paying today?
 
@@ -53,7 +55,7 @@ It depends on several factors, including:
 * The pace of data change on your servers
 * The retention period of the backups
 
-We anticipate that the combination of *lower* block storage costs and common Simple Backup Service configurations will be *significantly less expensive* than Premium storage, and *slightly more expensive* than Standard storage. The exact differences of course will depend on your implementation and the final price of block storage and of the Simple Backup Service.
+We anticipate that the combination of *lower* block storage costs and common Simple Backup Service configurations will be *significantly less expensive* than Premium storage, and *slightly more expensive* than Standard storage. The exact differences of course will depend on your implementation.
 
 ### What is the Simple Backup Service?
 
@@ -93,7 +95,7 @@ From there, users associate a policy with a server and then specify the target r
 
 ### My requirements for governance may not be met by the Simple Backup Service. What are my options? Can I continue to use Standard and Premium storage indefinitely?
 
-Standard and Premium Storage will not be available for continued use once they are retired on April 26; if you have questions about options, please refer to [this knowledge article with additional options](../Support/introducing-new-options-for-backups.md), including those from our ecosystem partners.
+Standard and Premium Storage will not be available for continued use once they are retired on May 1; if you have questions about options, please refer to [this knowledge article with additional options](../Support/introducing-new-options-for-backups.md), including those from our ecosystem partners.
 
 ### I'd like to do snapshots on my VMs. Does Simple Backup Service perform snapshots? What options do I have?
 
