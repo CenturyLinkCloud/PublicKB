@@ -139,7 +139,7 @@ This script must be executed from root or with sudo with root permissions.  It 
 This file must be emailed to licensing@rackwareinc.com  RackWare will generate a license file called: 
 rackware-license-(date-time)
 
-Where the (date-time) is the original date-time in the original rackware-pre-install-output-<date-time>.
+Where the (date-time) is the original date-time in the original rackware-pre-install-output-(date-time).
 
 Next, create the directory /etc/rackware, and copy the rackware-license-(date-time) to /etc/rackware/.
 
@@ -239,7 +239,7 @@ If sufficient storage is not available to hold captured Images, captures will fa
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  RackWare licensing information can be obtained by email info@rackwareinc.com.  
 
 ### About RackWare
-CenturyLink Cloud works with [RackWare](www.rackwareinc.com) to provide a software management suite for cloud called RackWare Management Module (RMM).  The RMM solution enables Enterprises to implement 4 major use cases: workload mobility, backup, disaster recovery, and AutoScaling.   
+CenturyLink Cloud works with [Rackware's web page](http://www.rackwareinc.com) to provide a software management suite for cloud called RackWare Management Module (RMM).  The RMM solution enables Enterprises to implement 4 major use cases: workload mobility, backup, disaster recovery, and AutoScaling.   
 
 
 ### Frequently Asked Questions
