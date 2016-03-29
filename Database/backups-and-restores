@@ -11,7 +11,7 @@
 
  This article is to support customers of Relational DB Service, CenturyLink's MySQL compatible database-as-a-service product.  Additionally, these instructions are specific to performing backups and restores through the CenturyLink Control portal.
 
- ## Overview
+ #### Overview
 
  CenturyLink's Relational DB Service is a MySQL-compatible database-as-a-service that provides instant access to a database instance with SSL support, daily backups, restore functionality, basic monitoring and a replication option.  Users can configure the amount of CPU, Memory and Storage based on their database needs and can choose to replicate their instance in datacenter for a more highly available solution.  As customers' capacity needs grown, they can easily scale their CPU, RAM and/or Storage through the click of a button.
 
@@ -20,10 +20,10 @@
  Access to the CenturyLink Cloud Platform as an authorized user
 
 
-## Relational DB Backups
+### Relational DB Backups
 The Relational DB service includes daily, automated hot backups as well as the ability to take a backup on demand.  Users have the ability to define the time of day backups are run as well as a data retention policy.  Backups are held off-site at least 350 miles from the datacenter of the Relational DB instance.  Backups will always be held in the same country as the Relational DB instance as well to maintain data sovereignty.
 
-## Defining your Backup Policy
+#### Defining your Backup Policy
 
 1. Upon provisioning of a Relational DB instance, the user is asked to define their Backup Schedule and their Backup Retention.  Backup Schedule will govern the time of day all automated, daily backups are taken.  Backup retention can be set to any value between 1 and 35 days.  Please note that increasing your backup retention period may increase the backup storage consumed by your instance.  Your Relational DB subscription includes up to 100% of your allocated storage amount in backup storage.  Backup storage that exceeds the size of your allocated storage will be billed at the Additional Backup Storage rate defined in the [pricing catalogue](https://www.ctl.io/pricing/#/va1).
 <p>
@@ -37,7 +37,7 @@ The Relational DB service includes daily, automated hot backups as well as the a
 <p>
 <p>![EditBackupPolicy](../images/rdbs-edit-backup-policy.png)
 
-## Taking a Manual Backup
+### Taking a Manual Backup
 Users may choose to take a backup at any time.  Manual backups will be retained in accordance with the defined backup policy for that instance, but can also be deleted at any time by the user.
 
 1.  Identify the Relational DB instance to be backed up and click on that instance to navigate to the details page.
@@ -50,7 +50,7 @@ Users may choose to take a backup at any time.  Manual backups will be retained 
 <p>
 <p>![ManualBackup](../images/rdbs-manual-backup.png)
 
-## Restoring from Backup
+### Restoring from Backup
 
 A Relational DB instance can be restored from any available backup within the same account of equal or smaller storage size.  This enables developers to easily move their development environment into a production environment simply by creating a backup of development, creating a new instance for production and restoring that new instance from the development environment's backup.  Similarly, this functionality enables users who need to pull back their production data into a test environment on a regular basis.  Backups from a single instance can be restored to a replicated instance and vice versa, allowing the user to seamlessly transition data loads between environments with different levels of availability and performance.
 
