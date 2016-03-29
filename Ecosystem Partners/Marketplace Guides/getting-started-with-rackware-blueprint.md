@@ -1,5 +1,5 @@
 {{{
-  "title": "RackWare Management Module v5",
+  "title": "Getting started with RackWare Management Module v5",
   "date": "March 28, 2016",
   "author": "Todd A. Matters",
   "attachments": [],
