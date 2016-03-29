@@ -48,7 +48,7 @@ The following provides steps to get started:
 
   ![](../images/backup/getting-started/image7.png)
 
-8.  [Accessing the agent](./sbs-agent-security.md) on your server will allow you to view details, execute a backup, or execute a restore. To access the agent directly, connect to your CLC server, launch a browser, and navigate to `http://localhost:15915`. Alternatively, you can also [configure the agent for remote access](./sbs-agent-security.md) and connect to the agent from your local computers browser if you have a VPN configured to connect into your CLC servers; the address would be `http://<your servers IP address>:15915` (e.g. `http://10.11.12.13:15915`).
+8.  [Accessing the agent](./sbs-agent-security.md) on your server will allow you to view details, execute a backup, or execute a restore. To access the agent directly, connect to your CLC server, launch a browser, navigate to `http://localhost:15915`, and view the [Agent Security KB](./sbs-agent-security.md) to obtain credentials. Alternatively, you can also [configure the agent for remote access](./sbs-agent-security.md) and connect to the agent from your local computers browser if you have a VPN configured to connect into your CLC servers; the address would be `http://<your servers IP address>:15915` (e.g. `http://10.11.12.13:15915`).
 
 9.  From the Agent Home Dashboard, you can view policy details by clicking the Policy name.
 
