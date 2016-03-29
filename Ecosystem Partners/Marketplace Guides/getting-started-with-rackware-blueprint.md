@@ -34,7 +34,7 @@ Disaster Recovery
 	Test mode
 	Entirely automated failover and fallback
 
-For more information, please visit www.rackwareinc.com
+For more information, please visit [Rackware's web page](http://www.rackwareinc.com)
 
 ### Audience
 CenturyLink Cloud Users
