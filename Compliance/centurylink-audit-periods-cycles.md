@@ -3,7 +3,7 @@
   "date": "03-24-2016",
   "author": "Christian Brown",
   "contentIsHTML": false,
-  "sticky": false
+  "sticky": true
 }}}
 
 Audit reports are conducted using data from the prior 12-month period, as an auditor has to have, at minimum, six months of data to be able to provide an opinion.
