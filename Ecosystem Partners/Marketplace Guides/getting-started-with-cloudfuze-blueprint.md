@@ -171,6 +171,7 @@ Follow these steps to access and use the CloudFuze software
       ![CloudFuze Image](../../images/ecosystem-CloudFuze-14.png)
 
 5. IMPORTANT: After updating all, please click on “Revoke Access” to logout from page.
+6. Please go through the [CloudFuze UserGuide](#Userguide) 
 
 ### Pricing
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  There are no CloudFuze license costs or additional fees bundled in. Contact [sales@cloudfuze.com](mailto:sales@cloudfuze.com) for poduct pricing information.
@@ -180,7 +181,10 @@ The costs associated with this Blueprint deployment are for the CenturyLink Clou
 #### Where do I get my CloudFuze License?
 * The CloudFuze on CenturyLink Cloud is provided in a bring-your-own-license model.  Please contact [sales@CloudFuze.com](mailto:sales@CloudFuze.com) to activate your CloudFuze license.
 
+<a name="Userguide"></a>
 #### Where should I get CloudFuze 2.0 User Guide? And How to Use CloudFuze 2.0 ?
+* [https://www.cloudfuze.com/enterprise-user-guide](https://www.cloudfuze.com/enterprise-user-guide)
+* [https://www.cloudfuze.com/admin-console-guide](https://www.cloudfuze.com/admin-console-guide)
 * [https://www.cloudfuze.com/tutorial-2-0/](https://www.cloudfuze.com/tutorial-2-0/)
 * [https://www.cloudfuze.com/blog/](https://www.cloudfuze.com/blog/)
 

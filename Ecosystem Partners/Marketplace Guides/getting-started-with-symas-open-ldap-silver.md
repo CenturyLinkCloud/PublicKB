@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-![Symas Corp.](http://../../images/symas-logo.png)
+![Symas Corp.](../../images/symas-logo.png)
 
 ### Technology Profile
 Symas OpenLDAP Silver is an LDAP v3 server based on the popular OpenLDAP software, which is noted for its performance, flexibility, and stability. The Silver version features the Lightning Memory-mapped Database but is otherwise limited in that it lacks the ability to act as a replication provider and does not have the ability to communicate with or authenticate to Active Directory or other directory servers. It is therefore best suited for evaluations, proofs of concept, and directories that are not mission-critical. For enterprise-grade directory servers, please consider one of our other Symas OpenLDAP offerings.
