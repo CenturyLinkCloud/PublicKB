@@ -11,10 +11,6 @@
 **FAQs: Simple Backup Service**
 -------------------------------
 
-#### IMPORTANT NOTE
-
-CenturyLink Cloud’s Simple Backup Service product is currently in a Limited Beta with specific customers by invitation only and is not intended for production usage. During the Limited Beta there is no production Service Level Agreement.
-
 **FREQUENTLY ASKED QUESTIONS**
 ------------------------------
 
