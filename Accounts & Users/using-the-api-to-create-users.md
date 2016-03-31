@@ -20,7 +20,7 @@ Prior to creating a user via the API, you must have an API user created.  You wi
 #### 2. Authentication
 While there are multiple ways to authenticate, this example uses the REST method.  In PowerShell you can authenticate using this code:
   ```
-  Invoke-RestMethod -URI "https://api.ctl.io/REST/Auth/Logon" -Method POST -ContentType application/json -Body "{'APIKey':  '[Your APIKey]', 'Password':  '[Your APIPassword]'}" -SessionVariable
+  Invoke-RestMethod -URI "https://api.ctl.io/REST/Auth/Logon" -Method POST -ContentType application/json -Body "{'APIKey': '[Your APIKey]', 'Password': '[Your APIPassword]'}" -SessionVariable session
   ```
 
 Be sure to replace the API key and password in the string.  Once you authenticate successfully, you will receive a message similar to the following:

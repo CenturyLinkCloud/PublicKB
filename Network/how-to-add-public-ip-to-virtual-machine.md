@@ -1,6 +1,6 @@
 {{{
   "title": "How To: Add Public IP to Server",
-  "date": "2-3-2016",
+  "date": "2-29-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -10,7 +10,7 @@ CenturyLink Cloud customers may wish to add a public IP to specific virtual mach
 
 ### General Notes & Best Practices
 
-* As of 2/2/2016 all **new** public IPs deployed on the platform have [hairpinning](//en.wikipedia.org/wiki/Hairpinning) enabled.
+* All public IPs deployed on the platform have [hairpinning](../Network/hairpin-nats.md) enabled. 
 * In its current iteration setting a source IP filter will secure all public ports, single ports or port ranges specified by the customer. Customers can leverage OS based firewall services if they wish to secure public services in a more granular fashion
 * Customers are encouraged to leverage the source IP filter unless delivering completely open public internet services to their user community.
 * Customers should avoid opening RDP or SSH to their virtual machines to the public internet. As such the following are recommended access methods.

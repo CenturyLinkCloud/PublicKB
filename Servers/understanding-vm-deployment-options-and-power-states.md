@@ -1,6 +1,6 @@
 {{{
   "title": "Understanding VM Deployment Options and Power States",
-  "date": "2-4-2016",
+  "date": "3-15-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -56,7 +56,7 @@
 
 ![shutdown function](../images/understanding-vm-deployment-options-and-power-states-03.png)
 
-**Costs:** In the shutdown/Power Off state, a customer pays for storage consumed by the virtual machine, licensing costs and *Managed Application Services*. Compute, memory and *Managed OS* costs are not levied. 
+**Costs:** In the shutdown/Power Off state, a customer pays for storage allocated to the virtual machine, licensing costs and *Managed Application Services*. Compute, memory and *Managed OS* costs are not levied.
 
 **Sample Use Case:** A Managed Server customer maintains a development and staging environment for their production workloads. This environment is only used during business hours 8 AM to 8 PM EST. The IT department, in order to save costs, creates a scheduled shutdown event during off hours. This automated task eliminates CPU, RAM and Managed Server fee's between the 8 PM and 8 AM EST time window for these environments.
 
@@ -71,5 +71,3 @@
 **Costs:** In the archive state, a customer pays only for the archival storage consumed by the virtual machine (at a reduced rate). Compute, memory and licensing costs are not levied.  *Managed Services customers cannot leverage the Archive Feature*.
 
 **Sample Use Case:** The business department has a reporting server that pulls data on a monthly basis from a 3rd party and generates reports for business analysis. This virtual machine is only required for 2 days per month and otherwise is unused. To save costs, the IT department schedules the server to be placed in archive and brought out of archived for operation during just these 2 days of the month.
-
-**Note:** Archived servers are not backed up or replicated (for premium storage customers) daily. Rather, only a single copy of the server exists. To restore a VM in which you have archived, simply unarchive it.

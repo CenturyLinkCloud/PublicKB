@@ -1,6 +1,6 @@
 {{{
   "title": "FAQs: Relational DB Service",
-  "date": "01-25-2016",
+  "date": "02-28-2016",
   "author": "Christine Parr",
   "attachments": [],
   "related-products" : [],
@@ -40,18 +40,22 @@ This article is to support customers of Relational DB Service, CenturyLink's MyS
 </p>A: Customers have the option to sign up to receive email notification when their CPU and/or storage has reached 80% capacity.  Customers who sign up for these notifications will be notified again when capacity reaches 90%.  Upon notification, customers can easily scale their database instance size through API or UI.
 
 <p><strong>Q: How can I grow or shrink my database instance?</strong>
-</p>A: Customers can easily scale their database instance size through the UI or API.  CPU and RAM can be scaled up or down and storage can be scaled up.  Adding or removing memory or reducing CPU will require a database restart.  Growing CPU or storage will not require a restart of the database.  Please see the KB article on [Resizing a Relational DB Instance](../Database/resizing-mysql-rdbs-instance.md)
+</p>A: Customers can easily scale their database instance size through the UI or API.  CPU and RAM can be scaled up or down and storage can be scaled up only.  Adding or removing memory or reducing CPU will require a database restart.  Growing CPU or storage will not require a restart of the database.  Please see the KB article on [Resizing a Relational DB Instance](../Database/resizing-mysql-rdbs-instance.md)
 </p>
 <p><strong>Q: I understand that CenturyLink is backing my data up daily.  How can I access my backups in order to restore? </strong>
 </p>
-<p>A: If you need to restore from an available backup, you can send a request to <a href="mailto:rdbs-help@ctl.io">rdbs-help@ctl.io</a> and we will work with you to restore your data.  Check back here soon though, because automated restores from backup are a planned feature!</p>
+<p>A: If you need to restore from an available backup, you can leverage the Restore Backup API or perform the restore in the Control Portal.  For more information on performing database restores in Control, please see the KB on [Backups and Restores](../Database/backups-and-restores). </p>
+<p><strong>Q: How long are my backups being held?
+</p>
+<p>A: At the time of Relational DB subscription creation, the user will define backup retention policy.  Customers can select a retention policy as short as 1 day or as long as 35 days.  Customers can also change the backup retention policy post-provisioning through the Subscription details page of the UI or through API.  
+</p>
 <p><strong>Q: Where are my backups being held? </strong>
 </p>
-<p>A: For disaster recovery purposes, backups are being held offsite at least 350 miles away from your primary database.  
+<p>A: For disaster recovery purposes, backups are being held offsite at least 350 miles away from your primary database.  Backups are also held in the same country as the associated Relational DB instance to maintain data sovereignty. 
 </p>
 <p><strong>Q: Will the product support the use of standard MySQL management tools including the ability to monitor and report on database tasks within the tool?  </strong>
 </p>
-<p>A: Yes.  Your database instance is on a dedicated VVM and there are no restrictions for any management utilities.  In fact, we expect that much of the database management will be accomplished using MySQL Command Line Interface or a MySQL client of your choice.
+<p>A: Yes.  Your database instance is on a dedicated VM and there are no restrictions for any management utilities.  In fact, we expect that much of the database management will be accomplished using MySQL Command Line Interface or a MySQL client of your choice.
 <p>
 <p><strong>Q: Are there published APIs that I can use in my own automation? </strong>
 </p>

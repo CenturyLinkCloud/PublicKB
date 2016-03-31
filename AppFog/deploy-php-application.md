@@ -171,4 +171,4 @@ cf se <YOUR_APPNAME> BP_DEBUG true
 <b>NOTE</b>: If you enable debug logging it might include sensitive information like usernames, passwords, tokens, service info and file names from your application. Be careful where you post those logs and if necessary, redact any sensitive information first.
 ### Additional Information
 
-More information on deploying PHP applicatinos can be found in the [Cloud Foundry Documentation](http://http://docs.cloudfoundry.org/buildpacks/php/index.html)
+More information on deploying PHP applicatinos can be found in the [Cloud Foundry Documentation](https://docs.cloudfoundry.org/buildpacks/php/index.html).

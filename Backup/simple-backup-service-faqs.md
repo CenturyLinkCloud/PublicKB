@@ -5,22 +5,18 @@
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
-  "sticky": false
+  "sticky": true
 }}}
 
 **FAQs: Simple Backup Service**
 -------------------------------
-
-#### IMPORTANT NOTE
-
-CenturyLink Cloud’s Simple Backup Service product is currently in a Limited Beta with specific customers by invitation only and is not intended for production usage. During the Limited Beta there is no production Service Level Agreement.
 
 **FREQUENTLY ASKED QUESTIONS**
 ------------------------------
 
 **Q: Where do I configure backups?**
 
-A: The Control Portal provides backup configuration functionality. Please refer to our [Getting Started Guide](./getting-started-with-simple-backup.md) for more details
+A: The Control Portal provides backup configuration functionality. Please refer to our [Getting Started Guide](./getting-started-with-simple-backup.md) for more details. Additionally, the [Backup API](https://api-va1.backup.ctl.io/clc-backup-api/swagger-ui.html) may be used for advanced scripting.
 
 **Q: What are the network requirements for SBS, if any?**
 
@@ -46,11 +42,9 @@ A: No, this is a manual process at this time. A support request will need to be 
 
 A: This provides the ability to utilize incremental backups with consistent full backup protection. By not expiring unchanged files, there is no need to retransfer them to object storage, which minimizes data transfer costs and provides quicker backups. Bottom line is that it provides quicker and cheaper backups for our users.
 
-**Q: Is SBS intended to be used for full server restore?**
+**Q: Is SBS intended to be used for Disaster Recovery?**
 
-A: No. In fact, SBS does not backup the OS files. For full server backup
-capabilities, please view our Disaster Recovery product,
-[SafeHaven](https://www.ctl.io/disaster-recovery/).
+A: No, SBS provides file-level backup protection. In fact, SBS does not backup the OS files or provide snapshot capability. Users can still perform [manual snapshots on-demand](https://www.ctl.io/knowledge-base/servers/creating-and-managing-server-snapshots/) and as scheduled tasks within the server settings. For full [Disaster Recovery](https://www.ctl.io/knowledge-base/support/introducing-new-options-for-backups/#how-does-the-simple-backup-service-compare-to-other-options-are-available-on-centurylink-cloud) services, there are a number of options available internally or through Certified Ecosystem partners.
 
 **Q: Which files/folders are automatically excluded from the backups?**
 
@@ -72,7 +66,7 @@ A: Please refer to the list below:
 
 - **Linux**
 
-  Explicit path exclusions: "/tmp", "/temp", "/proc", "/dev", "/devices", "/sys", "/opt/bakdat", "/opt/simplebackupservice", "/run", "/var/run", "/var/lock", "/mnt", "/media", "/lost+found", "/var/spool/cups", "/var/spool/lpd", "/var/spool/postfix"
+  Explicit path exclusions: "/tmp", "/temp", "/proc", "/dev", "/devices", "/sys", "/opt/bakdat", "/opt/simplebackupservice", "/run", "/var/run", "/var/lock",  "/media", "/lost+found", "/var/spool/cups", "/var/spool/lpd", "/var/spool/postfix"
 
   Explicit files exclusions: None
 
@@ -117,7 +111,7 @@ A: Currently the only restore option available is a full restore of all files fr
 
 **Q: Can restores be performed to another server?**
 
-A: Not currently at this time. A self-service feature is on the SBS roadmap.
+A: Not currently at this time. A self-service feature is on the SBS roadmap. If a restore to an alternate server is required, please create a support request.
 
 **Q: How is the “Backup Date” determined for Restore Points?**
 
