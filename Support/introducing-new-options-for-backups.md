@@ -1,19 +1,21 @@
 {{{
   "title": "Introducing New Options for Backups, Plus An Update on the Retirement of Standard & Premium Backup Features",
-  "date": "2-22-2016",
+  "date": "3-28-2016",
   "author": "Jared Ruckle",
   "attachments": []
 }}}
 
-Article first posted on February 22, 2016
+Article updated March 28, 2016; article first posted on February 22, 2016
 
 ### Introducing New Options for Backups, Plus an Update on the Retirement of Standard & Premium Backup Features
 
 Late last year, CenturyLink notified customers that the backup features associated with [“Standard” and “Premium” storage were to be retired in early 2016](../Support/backup-service-changes-faq.md).
 
-We can now offer more clarity on this timing. **Effective April 26, 2016 Standard and Premium backup features will reach end of life in CenturyLink Cloud in all locations.** There is no impact to the persistent storage attached to servers, but the 5-day and 14-day backup capabilities will no longer function after this date.
+We can now offer more clarity on this timing. **Effective May 1, 2016 Standard and Premium backup features will reach end of life in CenturyLink Cloud in all locations.** There is no impact to the persistent storage attached to servers, but the 5-day and 14-day backup capabilities will no longer function after this date.
 
-In addition, we are announcing that the general availability of the [Simple Backup Service will be March 29, 2016](https://www.ctl.io/simple-backup-service/). This integrated service will offer file-level backup protection, with highly customizable retention policies. The service will be available in all CenturyLink Cloud locations, with backup locations around the world.
+The [Simple Backup Service will be generally available on March 29, 2016](https://www.ctl.io/simple-backup-service/). This integrated service will offer file-level backup protection, with highly customizable retention policies. The service will be available in all CenturyLink Cloud locations, with backup locations around the world.
+
+In addition, we will be dropping the prices of block storage on April 1, a full month **before** the retirement of Standard & Premium backup features.
 
 To assist customers during this transition, here are answers to a few common questions we’ve heard from customers in recent weeks.
 
@@ -30,7 +32,7 @@ Another reason: a lack of usage of the Standard and Premium backup services, par
 
 ### Is the price of storage going to drop? If so, by how much?
 
-Yes – since storage no longer includes bundled backup, we anticipate a price drop of **at least 20% when compared to Standard** and **at least 75% compared to Premium**. We will announce final details of the new price in the coming weeks.
+Yes – since storage no longer includes bundled backup, we anticipate a price drop of **20% when compared to Standard** and **at least 75% compared to Premium**. We will announce final details of the new price on April 1, 2016. New pricing will take effect April 1, 2016.
 
 ### Will I still be able to take snapshots manually?
 
@@ -48,7 +50,7 @@ In addition, users can initiate a restore of files and folders from a given poin
 
 ### Can I get started with Simple Backup right now?
 
-Yes! Sign-up for the beta with [this online form](https://www.ctl.io/simple-backup-service/) – the product team will follow-up with you shortly thereafter. In addition, you may review [this helpful Getting Started Guide](../Backup/getting-started-with-simple-backup.md).
+Yes! Review [this helpful Getting Started Guide](../Backup/getting-started-with-simple-backup.md) to get familiar with the service.
 
 Second, profile your applications. What level of data protection do your VMs need?  What InfoSec data retention policies are in play? Are there some VMs that don't even need backup?
 
@@ -82,12 +84,12 @@ The answer varies depending on the workload and your requirements. Along those l
 #### Simple Backup Service, from CenturyLink
 * When to use it: To back up and protect files against corruption
 * Requirements: Outbound Internet access for servers; administrative credentials need to be stored in the Control Portal for automated deployment (manual deployment can be performed if credentials are not stored in the Control Portal)
-* Cost: Likely $0.10 GB / mo; Self-service restores will be priced “per GB restored” (pricing TBD)
+* Cost: $0.10 GB / mo; Self-service restores will be priced at $0.10 per GB restored
 * Licensing: None
-* Availability: In beta today (sign up now), forecast GA on March 29, 2016
+* Availability: GA on March 29, 2016
 * Deployment Time: Instant – agents are installed locally on each server once a backup policy is applied to a given server
 * Support Model: Supported by CenturyLink (since the product is integrated into the Control Portal), with an integrated support experience
-* Getting Started: Apply to be part of the beta by completing [the form on the product page](https://www.ctl.io/simple-backup-service/).
+* Getting Started: Review the [the form on the product page](https://www.ctl.io/simple-backup-service/).
 
 #### Safe Haven, from CenturyLink
 * When to use it: Disaster Recovery between CenturyLink Cloud locations, with customized RTO/RPO targets.
@@ -101,7 +103,7 @@ The answer varies depending on the workload and your requirements. Along those l
   * [This section of the knowledge base](../Disaster Recovery) has additional articles on Safe Haven.
 
 #### CommVault
-* When to use it: Data and file backup, with many powerful features and capabilities to protect data across a variety of platforms, and to host data across a variety of storage media
+* When to use it: Data and file backup, with many powerful features and capabilities to protect data across a variety of platforms, and to host data across a variety of storage media. OS-level images are supported.
 * Requirements: Detailed in [this knowledge base article: Getting Started with CommVault Storage Blueprint](../Ecosystem Partners/Marketplace Guides/getting-started-with-commvault-storage-blueprint.md)
 * Cost: Based on the amount of storage protected. Pricing is available upon request, and evaluation licenses are available. Compute resources are required to run CommVault “control” servers in CenturyLink Cloud.
 * Licensing: Bring your own license (BYOL), available from CommVault

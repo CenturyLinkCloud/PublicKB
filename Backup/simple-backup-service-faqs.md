@@ -11,10 +11,6 @@
 **FAQs: Simple Backup Service**
 -------------------------------
 
-#### IMPORTANT NOTE
-
-CenturyLink Cloud’s Simple Backup Service product is currently in a Limited Beta with specific customers by invitation only and is not intended for production usage. During the Limited Beta there is no production Service Level Agreement.
-
 **FREQUENTLY ASKED QUESTIONS**
 ------------------------------
 
@@ -115,7 +111,7 @@ A: Currently the only restore option available is a full restore of all files fr
 
 **Q: Can restores be performed to another server?**
 
-A: Not currently at this time. A self-service feature is on the SBS roadmap.
+A: Not currently at this time. A self-service feature is on the SBS roadmap. If a restore to an alternate server is required, please create a support request.
 
 **Q: How is the “Backup Date” determined for Restore Points?**
 
