@@ -18,6 +18,14 @@
 
 A: The Control Portal provides backup configuration functionality. Please refer to our [Getting Started Guide](./getting-started-with-simple-backup.md) for more details. Additionally, the [Backup API](https://api-va1.backup.ctl.io/clc-backup-api/swagger-ui.html) may be used for advanced scripting.
 
+**Q: What are the logon credentials for the backup agent?**
+
+A: Please review the [SBS Agent Security Configurations](./sbs-agent-security.md) KB article for details.
+
+**Q: Can I change the backup agent credentials for all my instances in one place?**
+
+A: Not currently at this time. Each properties file must be updated individually.
+
 **Q: What are the network requirements for SBS, if any?**
 
 A: Simple Backup Service requires outbound internet traffic over port 443. CLC VMs allow outbound traffic by default using NAT.
@@ -32,7 +40,7 @@ A: Yes, from the Backup Agent, users can select the “Backup” button from the
 
 **Q: Can I schedule backups to execute at a specific time in the day?**
 
-A: No, the policy frequency determines when the next backup will be executed or the user may manually trigger a backup. Once a backup has completed, the frequency will start to countdown and the next backup will occur when the frequency countdown has expired.
+A: No, the policy frequency determines when the next backup will be executed or the user may manually trigger a backup. Once a backup has completed, the frequency will start to countdown and the next backup will occur when the frequency countdown has expired. If you want to prevent backups from occurring during peak business hours, you will need to stop and restart the service accordingly.
 
 **Q: Can I completely delete my backed up files from storage regardless of the retention period?**
 
@@ -85,6 +93,10 @@ A: Not at this time; currently the exclusion list overrides the inclusion list. 
 
 A: The agent is setup to start on boot at install time.
 
+**Q: How can I access my backup agent from a remote machine?**
+
+A: Please review the [SBS Agent Security Configurations](./sbs-agent-security.md) KB article for details.
+
 **Q: If a new version of the the agent is available, what are the steps to update the agent on my server?**
 
 A: No steps required by the user. The agent will automatically update itself, given that the server is powered on, agent is running and the server is connected to the internet.
@@ -124,6 +136,10 @@ A: A partially successful backup means that at least one new, or changed file wa
 **Q: How can I confirm that my backups were successful?**
 
 A: There are two places in the agent that show the status of your backups. First, in the Backup Jobs section, which shows all backups executed by this particular agent. Second, for additional information, selecting “Restore” from the Policy Details page will drill down into greater detail about backups for the specific Policy. Details include Backup Date, Status, and Protected Data (GBs).
+
+**Q: What is the "Protected Data" amount for my Restore Point?**
+
+A: Protected Data is not the amount of data backed up for the specified backup instance, but rather the total amount of restorable data for the specified restore point. Essentially, Protected Data is the consolidation of your full backup and any changes per the specified backup instance.
 
 **Q: Can I adjust the storage region of a server?**
 
