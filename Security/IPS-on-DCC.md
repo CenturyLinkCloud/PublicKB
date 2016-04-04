@@ -17,6 +17,7 @@ This document is intended to summarize (aka Quick Start) the installation and no
     * Supported OSs KB: https://www.ctl.io/knowledge-base/security/supported-ips-oses/
   * Firewall Rules
   * Centurylink Cloud Account
+  * Admin or SUDO/root privileges
 
 KB: https://www.ctl.io/knowledge-base/security/getting-started-with-ips/#prerequisites 
         
