@@ -27,26 +27,31 @@ The IPS “Anywhere” install requires 1-2 command lines to initiate the instal
         
 KB: https://www.ctl.io/knowledge-base/security/ipsanywhere/
         
-#### Content Properties
+##### Content Properties
 
 | Name | Type | Description | Req. |
 | --- | --- | --- | --- |
 | CLC_USERNAME | string | Control Portal user name value | Yes |
 | CLC_PASSWORD | string | Control Portal password value. | Yes |
 
-#### Example
-
-    CLC_USERNAME="TestUser"
-    CLC_PASSWORD="YourPassword"
-
 #### Linux-based Operating Systems
+
+##### Content Example
+
+    CLC_USERNAME=TestUser
+    CLC_PASSWORD=YourPassword
 
 Install Command
 
-    curl https://api.client-security.ctl.io/ips/scripts/install.sh | sudo CLC_USERNAME=<your.clc.username> CLC_PASSWORD=<your.clc.password> CLOUD_PROVIDER= CTL_DCC bash
+    curl https://api.client-security.ctl.io/ips/scripts/install.sh | sudo CLC_USERNAME=<your.clc.username> CLC_PASSWORD=<your.clc.password> CLOUD_PROVIDER=CTL_DCC bash
 
 
 #### Windows-based Operating Systems
+
+##### Content Example
+
+    CLC_USERNAME="TestUser"
+    CLC_PASSWORD="YourPassword"
 
 Set Server to Accept Install
 
