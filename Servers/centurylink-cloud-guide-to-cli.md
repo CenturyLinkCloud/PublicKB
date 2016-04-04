@@ -14,8 +14,8 @@
 * [READ commands](#read-commands)
 * [Billing and Accounting](#billing-and-accounting)
 * [Commands change the environment](#commands-change-the-environment)
-* [Advanced usage](#advanced-usage)
-* [Platform as a Service control](#platform-as-a-service-control)
+* [Advanced Usage](#advanced-usage)
+* [Application Services control](#application-services-control)
   * [Relational Database Service](#relational-database-service)
   * [Intrusion Prevention Service](#intrusion-prevention-service)
 * [Support](#support)
@@ -36,7 +36,7 @@ Comparison of the two CLI tools:
 | CLI         |   Python            | Go                  |
 | ---------   | ------------------- | -----------------   |
 | API version | Mostly v1 (some v2) |         v2          |
-| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> billing <br> custom-fields <br> data-center <br> firewall-policy <br> group <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> server <br> wait <br>      |
+| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> billing <br> custom-fields <br> data-center <br> db <br> firewall-policy <br> group <br> ips <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> server <br> wait <br>      |
 
 
 
@@ -131,24 +131,25 @@ of the command as well.
 Output of `clc -–help`:
 
 ```
-
 To get full usage information run clc without arguments.
 Available resources:
+       group
+       alert-policy
+       firewall-policy
+       load-balancer-pool
+       billing
+       wait
+       db
+       server
+       network
+       load-balancer
+       data-center
+       anti-affinity-policy
+       autoscale-policy
+       ips
+       custom-fields
+       login
 
-network
-alert-policy
-custom-fields
-login
-server
-anti-affinity-policy
-billing
-load-balancer
-group
-data-center
-firewall-policy
-load-balancer-pool
-wait
-autoscale-policy
 ```
 
 **Logging into the CenturyLink account:**
@@ -513,7 +514,7 @@ clc firewall-policy create --data-center CA1 --destination-account abcd --source
 
 **Create a snapshot for a server (maximum 10 days expiration)**
 ```
-clc server create-snapshot --server-ids CA3ABCDTAKE02 ----snapshot-expiration-days 2
+clc server create-snapshot --server-ids CA3ABCDTAKE02 --snapshot-expiration-days 2
 ```
 **Find the snapshot ID**
 ```
@@ -536,7 +537,7 @@ To use the file,
 clc server list --from-file servername.json
 ```
 
-### Platform as a Service control
+### Application Services control
 Both Relational Database Service and Intrusion Prevention Service can be managed from the GO based CLI.  
 For Relational DB, cli can manage creation, deletion, failover, notification and listing of different resources.  The `--help` option can be used to find out more on the options.  
 The following examples show some of the basic functions.
