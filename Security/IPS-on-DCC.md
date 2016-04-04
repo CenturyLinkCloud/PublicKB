@@ -28,12 +28,20 @@ The IPS “Anywhere” install requires 1-2 command lines to initiate the instal
 KB: https://www.ctl.io/knowledge-base/security/ipsanywhere/
         
 Run below command in a terminal session on target server:
-  * Linux-based Operating Systems
-> * curl https://api.client-security.ctl.io/ips/scripts/install.sh | sudo CLC_USERNAME=<your.clc.username> CLC_PASSWORD=<your.clc.password> CLOUD_PROVIDER= CTL_DCC bash
 
-  * Windows-based Operating Systems
-> * Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-> * (New-Object System.Net.WebClient).DownloadFile("https://api.ts.client-security.ctl.io/ips/scripts/install.ps1","$env:temp\install.ps1") ; cd $env:temp ; .\install.ps1 -controlUser "<your.clc.account>" -controlUserPassword "<your.clc.password>" -accountAlias "<your.clc.account,alias>" -cloudProvider "CTL_DCC"
+> Linux-based Operating Systems
+
+    curl https://api.client-security.ctl.io/ips/scripts/install.sh | sudo CLC_USERNAME=<your.clc.username> CLC_PASSWORD=<your.clc.password> CLOUD_PROVIDER= CTL_DCC bash
+
+
+> Windows-based Operating Systems
+
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
+
+    (New-Object System.Net.WebClient).DownloadFile("https://api.ts.client-security.ctl.io/ips/scripts/install.ps1","$env:temp\install.ps1") ; cd $env:temp ; .\install.ps1 -controlUser "<your.clc.account>" -controlUserPassword "<your.clc.password>" -accountAlias "<your.clc.account,alias>" -cloudProvider "CTL_DCC"
+
+
 > * Note: for the user input, you will need to enclose the data in “”.  For example, if your username was testuser, for the option of -controlUser "<your.clc.account>", you would use -controlUser "test user”.
 
 ### Notifications
