@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to CLI",
-  "date": "02-13-2016",
+  "date": "04-03-2016",
   "author": "Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
@@ -15,6 +15,9 @@
 * [Billing and Accounting](#billing-and-accounting)
 * [Commands change the environment](#commands-change-the-environment)
 * [Advanced usage](#advanced-usage)
+* [Platform as a Service control](#platform-as-a-service-control)
+  * [Relational Database Service](#relational-database-service)
+  * [Intrusion Prevention Service](#intrusion-prevention-service)
 * [Support](#support)
 
 ### Overview
@@ -508,6 +511,20 @@ Please refer to the [Add or Remove Network Interface to Server using Go CLI](../
 clc firewall-policy create --data-center CA1 --destination-account abcd --sources "10.56.250.0/24" --destinations "10.56.171.0/24" --ports tcp/22
 ```
 
+**Create a snapshot for a server (maximum 10 days expiration)**
+```
+clc server create-snapshot --server-ids CA3ABCDTAKE02 ----snapshot-expiration-days 2
+```
+**Find the snapshot ID**
+```
+clc server get --server-name CA3ABCDTAKE02 --query details.snapshots.id --output text
+```
+**Delete a snapshot from a server**
+(Snapshot ID can be retrieved from `clc server get` command)
+```
+clc server delete-snapshot --server-name CA3ABCDTAKE02 --snapshot-id 1
+```
+
 **Create a json file for repeat usage of frequent use commands**
 
 For the example below, servername.json is created to list all the hostname of all servers in the account:
@@ -517,6 +534,82 @@ clc server list --all --query details.host-name --generate-cli-skeleton > server
 To use the file,
 ```
 clc server list --from-file servername.json
+```
+
+### Platform as a Service control
+Both Relational Database Service and Intrusion Prevention Service can be managed from the GO based CLI.  
+For Relational DB, cli can manage creation, deletion, failover, notification and listing of different resources.  The `--help` option can be used to find out more on the options.  
+The following examples show some of the basic functions.
+### Relational Database Service
+**Listing all the available data centers for this service:**
+```
+clc db list-datacenters
+```
+**Listing database instances in a data center:**
+```
+clc db list --data-center IL1
+```
+**Querying the ID of the database:**
+```
+clc db list --data-center VA1 --query ID --output text
+```
+**Creating a new database with replication:**
+```
+clc db create --instance-type MYSQL_REPLICATION --external-id yourdb --machine-config "cpu=1,memory=2,storage=15" --backup-retention-days 5 --users "name=admin,password=XXXX" --data-center IL1
+```
+Once created, an output similar to below would include the IP address, the certificate and a summary of the configuration:
+```
+{
+    "BackupRetentionDays": 2,
+    "BackupTime": "0:0",
+    "Backups": null,
+    "Certificate": "-----BEGIN CERTIFICATE-----\xxxxxxxxxxxx\n-----END CERTIFICATE-----",
+    "ExternalId": "yourdb",
+    "Host": "yourdb.il1.rdbs.ctl.io",
+    "Id": 3185,
+    "InstanceType": "MySQL",
+    "Instances": null,
+    "Location": "IL1",
+    "OptionGroup": "",
+    "ParameterGroup": "",
+    "Port": XXXXX,
+    "Servers": [
+        {
+            "Alias": "IL1DBXXXXXXX",
+            "Attributes": {
+                "INTERNAL_IP": "xx.xx.xx.xx"
+            },
+            "Connections": 362,
+            "Cpu": 1,
+            "Id": XXXX,
+            "Location": "il1",
+            "Memory": 2,
+            "Storage": 10
+        }
+    ],
+    "Status": "Configuring",
+    "Users": [
+        {
+            "name": "admin",
+            "password": "XXXX"
+        }
+    ]
+}
+```
+**Create notifications (options are 'CPU_UTILIZATION' or 'MEMORY_UTILIZATION'
+or 'STORAGE_UTILIZATION' to email or SMS) for the database instance:**
+```
+clc db create-notification  --subscription-id 3185 --destination-type SMS --location xxxxxxxxx --notifications NotificationType=MEMORY_UTILIZATION
+```
+
+### Intrusion Prevention Service
+**Install IPS on a host:** (`uninstall` to uninstall)
+```
+clc ips install --server-name CA3ABCDTAKE02
+```
+**Set the notification (options: Webhook, Slack, syslog and Email) with email:**
+```
+clc ips set-notifications --server-name CA3ABCDTAKE02 --notification-destinations "type-code"="EMAIL","email-address"="monitor@abcd.com"
 ```
 
 ### Support
