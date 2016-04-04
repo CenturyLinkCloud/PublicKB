@@ -1,6 +1,6 @@
 {{{
   "title": "IPS - Centurylink Dedicated Cloud Compute (DCC) FAQ",
-  "date": "02-22-2016",
+  "date": "04-04-2016",
   "author": "Client-Security",
   "attachments": [],
   "contentIsHTML": false,
