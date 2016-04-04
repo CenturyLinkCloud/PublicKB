@@ -7,11 +7,11 @@
   "sticky": false
 }}}
         
-### FAQ for Installing and Implementing IPS Anywhere for CenturyLink Dedicated Cloud Compute (DCC)
+## FAQ for Installing and Implementing IPS Anywhere for CenturyLink Dedicated Cloud Compute (DCC)
         
 This document is intended to summarize (aka Quick Start) the installation and notification configuration steps for CLC’s IPS “Anywhere” service as derived from the services public KBs.  
         
-### Pre-Requisites 
+#### Pre-Requisites 
   * Compatible server OS 
     * IPS supports all Managed DCC OS Images at this time
     * Supported OSs KB: https://www.ctl.io/knowledge-base/security/supported-ips-oses/
@@ -27,22 +27,36 @@ The IPS “Anywhere” install requires 1-2 command lines to initiate the instal
         
 KB: https://www.ctl.io/knowledge-base/security/ipsanywhere/
         
-Run below command in a terminal session on target server:
+#### Content Properties
 
-> Linux-based Operating Systems
+| Name | Type | Description | Req. |
+| --- | --- | --- | --- |
+| CLC_USERNAME | string | Control Portal user name value | Yes |
+| CLC_PASSWORD | string | Control Portal password value. | Yes |
+
+#### Example
+
+    CLC_USERNAME="TestUser"
+    CLC_PASSWORD="YourPassword"
+
+#### Linux-based Operating Systems
+
+Install Command
 
     curl https://api.client-security.ctl.io/ips/scripts/install.sh | sudo CLC_USERNAME=<your.clc.username> CLC_PASSWORD=<your.clc.password> CLOUD_PROVIDER= CTL_DCC bash
 
 
-> Windows-based Operating Systems
+#### Windows-based Operating Systems
+
+Set Server to Accept Install
 
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 
+Install Command 
 
     (New-Object System.Net.WebClient).DownloadFile("https://api.ts.client-security.ctl.io/ips/scripts/install.ps1","$env:temp\install.ps1") ; cd $env:temp ; .\install.ps1 -controlUser "<your.clc.account>" -controlUserPassword "<your.clc.password>" -accountAlias "<your.clc.account,alias>" -cloudProvider "CTL_DCC"
 
 
-> * Note: for the user input, you will need to enclose the data in “”.  For example, if your username was testuser, for the option of -controlUser "<your.clc.account>", you would use -controlUser "test user”.
 
 ### Notifications
 There are two ways to  set/update IPS event notifications.  The first is to send a request to help@ctl.io for the Client Security Team and the second is to send a request to the IPS API directly.  
@@ -62,6 +76,6 @@ The full documentation for the IPS API is documented in the KB link listed below
 
   * KB Repository (All of CLC’s IPS KBs, current and future, can be found in our KB repository):  https://www.ctl.io/knowledge-base/security/#1
   * Videos to help with Installation
-    * Linux-Based OSes: https://vimeo.com/155560998 
-    * Windows-Based OSes: TBD
+    * Linux-Based OSes: https://vimeo.com/156468735 
+    * Windows-Based OSes: https://vimeo.com/156470065 
   * Demonstration about Why IPS is needed in addition to Anti-Virus: https://www.ctl.io/blog/post/anti-virus-is-not-enough/
