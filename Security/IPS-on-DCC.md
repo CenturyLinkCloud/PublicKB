@@ -7,7 +7,7 @@
   "sticky": false
 }}}
         
-## FAQ for Installing and Implementing IPS Anywhere for CenturyLink Dedicated Cloud Compute (DCC)
+### FAQ for Installing and Implementing IPS Anywhere for CenturyLink Dedicated Cloud Compute (DCC)
         
 This document is intended to summarize (aka Quick Start) the installation and notification configuration steps for CLC’s IPS “Anywhere” service as derived from the services public KBs.  
         
@@ -41,7 +41,7 @@ KB: https://www.ctl.io/knowledge-base/security/ipsanywhere/
     CLC_USERNAME=TestUser
     CLC_PASSWORD=YourPassword
 
-Install Command
+##### Install Command
 
     curl https://api.client-security.ctl.io/ips/scripts/install.sh | sudo CLC_USERNAME=<your.clc.username> CLC_PASSWORD=<your.clc.password> CLOUD_PROVIDER=CTL_DCC bash
 
@@ -53,11 +53,11 @@ Install Command
     CLC_USERNAME="TestUser"
     CLC_PASSWORD="YourPassword"
 
-Set Server to Accept Install
+##### Set Server to Accept Install
 
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 
-Install Command 
+##### Install Command 
 
     (New-Object System.Net.WebClient).DownloadFile("https://api.ts.client-security.ctl.io/ips/scripts/install.ps1","$env:temp\install.ps1") ; cd $env:temp ; .\install.ps1 -controlUser "<your.clc.account>" -controlUserPassword "<your.clc.password>" -accountAlias "<your.clc.account,alias>" -cloudProvider "CTL_DCC"
 
