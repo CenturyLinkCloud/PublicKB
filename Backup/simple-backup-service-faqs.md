@@ -30,6 +30,10 @@ A: Not currently at this time. Each properties file must be updated individually
 
 A: Simple Backup Service requires outbound internet traffic over port 443. CLC VMs allow outbound traffic by default using NAT.
 
+**Q: How can I use Simple Backup Service on a server that doesn't have internet access?**
+
+A: Simple Backup Service requires consistent internet connectivity to install, update, backup, and restore. If consistent internet connectivity is not an option, please review our [Managed Backup](https://www.ctl.io/managed-services/backup/) offering.
+
 **Q: If the backup frequency is every 4 hours, what should I expect?**
 
 A: This depends on how long a backup takes to complete. The frequency timer will not start until the previous backup has completed, so in this example the next backup will start 4 hours after the previous one has completed.
@@ -64,7 +68,7 @@ A: Please refer to the list below:
 
   Explicit files exclusions: "C:\system.sav", "C:\hiberfil.sys", "C:\pagefile.sys", "C:\swapfile.sys"
 
-  Directory names excluded (regardless of path): "\$Recycle.Bin", "System Volume Information"
+  Folder names excluded (regardless of path): "\$Recycle.Bin", "System Volume Information"
 
   fileExtensionsExcluded: None
 
@@ -89,9 +93,17 @@ A: Please refer to the list below:
 
 A: Not at this time; currently the exclusion list overrides the inclusion list. The reason these are not included is because SBS is intended to backup the apps and data that are specific and important to your business. SBS is not intended to be a full server restore. Since OS files are not included, the speed and performance of the backups are increased, while also minimizing backup costs.
 
+**Q: Are wildcard characters supported for inclusion/exclusion backup paths when creating a Backup Policy?**
+
+A: Wildcard characters are not directly supported at this time. However, all sub-folders and files of an included path will be backed up unless specifically added to the exclusion list. All sub-folders and files of an exclusion path will be omitted from backup.
+
 **Q: If I reboot my server, do I need to restart the agent?**
 
 A: The agent is setup to start on boot at install time.
+
+**Q: Why is my policy status still showing "Pending_Install"**
+
+A: A policy will show its status as "Pending_Install" until the SBS agent checks back in with the SBS servers. This could be delayed if the agent is performing a backup/restore or if a system reboot is required.
 
 **Q: How can I access my backup agent from a remote machine?**
 
@@ -117,6 +129,18 @@ A: An inactive policy essentially disables all servers while the server status o
 
 A: No further backups occur from the server to storage. If a backup agent is unable to communicate with the SBS infrastructure backed up data will not be set to expire. This is to ensure that data is safe and restorable in the case of server failure or internet connectivity issues.
 
+**Q: How can I view the policies applied to a server?**
+
+A: Currently, the most efficient method of viewing all the policies applied to a server is to navigate from Control Portal and drill into the server from the Policy Details page. Steps detailed below:
+
+  1. From your server within Control Portal, click the "manage" button in the "Backup Level" section to view all policies associated with your account alias.
+  2. Click a policy to drill into the policy details to view all associated servers.
+  3. Click a server to view all applied policies.
+
+**Q: What does an "IN_PROGRESS" status backup/restore mean?**
+
+A: An "IN_PROGRESS" status for a backup job means the data is actively being transferred from the server to the specified storage region associated with the policy. An "IN_PROGRESS" status for a restore job indicates the data is actively being restored from the storage region associated with the policy to the server.
+
 **Q: Can I select specific files/folders to restore from a restore point?**
 
 A: Currently the only restore option available is a full restore of all files from a specific point in time (based on the retention period); all files that existed at that point in time will be restored. We have selective file restore on the roadmap and understand that it is a very important feature to most people, but we do not have an estimated release date yet.
@@ -133,6 +157,21 @@ A: The Backup Date is the point in time that the Backup Job completed.
 
 A: A partially successful backup means that at least one new, or changed file was not backed up completely. All other files successfully backed up will be available through this restore point. Note that locked files will not be backed up.
 
+**Q: Why did my restore fail?**
+
+A: Common causes of restore failure:
+
+  - Server lacks internet connectivity over port 443.
+  - Restore Path is not accessible due to permissions.
+  - Insufficient disk space (error message will display).
+
+**Q: Why can't I see all of my restored files?**
+
+A: Common causes of obscured restore files:
+
+  - Permissions of the files and folders restored as assigned during backup execution.
+  - Invalid path structure provided as a Restore Path. In this case, the files and folders will be restored to the C:Windows\System32 folder for Windows or the SimpleBackupService directory for Linux.
+
 **Q: How can I confirm that my backups were successful?**
 
 A: There are two places in the agent that show the status of your backups. First, in the Backup Jobs section, which shows all backups executed by this particular agent. Second, for additional information, selecting “Restore” from the Policy Details page will drill down into greater detail about backups for the specific Policy. Details include Backup Date, Status, and Protected Data (GBs).
@@ -140,6 +179,10 @@ A: There are two places in the agent that show the status of your backups. First
 **Q: What is the "Protected Data" amount for my Restore Point?**
 
 A: Protected Data is not the amount of data backed up for the specified backup instance, but rather the total amount of restorable data for the specified restore point. Essentially, Protected Data is the consolidation of your full backup and any changes per the specified backup instance.
+
+**Q: Why am I seeing a different number of restore points than I expected?**
+
+A: The number of restore points depends on the backup frequency as selected in the policy. Note that the frequency is the measurement of time between the end of the last backup and the next backup.
 
 **Q: Can I adjust the storage region of a server?**
 
