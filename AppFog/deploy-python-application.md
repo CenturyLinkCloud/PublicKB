@@ -27,7 +27,7 @@ To develop using Python you must have the its [runtime interpreter](https://wiki
 You will also need [Pip](https://pip.pypa.io/en/stable/installing/) installed in your development environment.
 
 #### Downloading Simple Example Application
-The sample app used in this article is [attached](../attachments/af-python-django-sample.zip).
+The sample app used in this article is attached at the bottom of this article.
 
 #### Running the Sample App Locally
 After downloading the sample app locally you must install the required Python modules.

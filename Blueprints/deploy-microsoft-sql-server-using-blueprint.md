@@ -46,7 +46,8 @@ The following are quick tips/notes based on past experiences with customers leve
 * It is not possible at the current time to install SQL to a drive other than C:\ via blueprint. Customers can modify the SQL database, tempdb, log locations post install to other volumes using SQL tools
 * The fee's for Microsoft SQL server will be applied automatically to the customers invoice when using the public blueprint. These fee's are available in the [Pricing Catalog](//www.ctl.io/pricing). If you are unsure what these fee's are please contact your account manager.
 * Licensing fee's are adjusted based on number of vCPU allocated to a virtual machine. By using tools like Autoscale, customers billing will be modified as vCPU configurations change.
-* Customers can **add features** to an existing SQL instance or **add new** SQL instances by running the blueprint multiple times on the same server.
+* Customers can **add features** to an existing SQL instance by running the blueprint multiple times on the same server and only selecting the additional features required.
+* Customers can **add new** SQL instances by running the blueprint multiple times on the same server.
 * The blueprint does not allow for version mobility.  Customers who want to change the edition deployed must create a new server and SQL instance with the version desired and migrate their data.
 
 ### Installing Microsoft SQL Server using Group Tasks
