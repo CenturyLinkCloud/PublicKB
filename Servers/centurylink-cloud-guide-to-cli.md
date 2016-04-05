@@ -37,7 +37,7 @@ Comparison of the two CLI tools:
 | CLI         |   Python            | Go                  |
 | ---------   | ------------------- | -----------------   |
 | API version | Mostly v1 (some v2) |         v2          |
-| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> billing <br> custom-fields <br> data-center <br> db <br> firewall-policy <br> group <br> ips <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> server <br> wait <br>      |
+| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> billing <br> custom-fields <br> data-center <br> db <br> firewall-policy <br> group <br> ips <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> os-patch <br> server <br> wait <br>      |
 
 
 
@@ -134,22 +134,23 @@ Output of `clc -–help`:
 ```
 To get full usage information run clc without arguments.
 Available resources:
-       group
-       alert-policy
-       firewall-policy
-       load-balancer-pool
-       billing
-       wait
-       db
-       server
-       network
-       load-balancer
-       data-center
-       anti-affinity-policy
-       autoscale-policy
-       ips
-       custom-fields
-       login
+          login
+          autoscale-policy
+          os-patch
+          group
+          data-center
+          anti-affinity-policy
+          billing
+          network
+          firewall-policy
+          load-balancer
+          custom-fields
+          ips
+          server
+          alert-policy
+          load-balancer-pool
+          db
+          wait
 
 ```
 
