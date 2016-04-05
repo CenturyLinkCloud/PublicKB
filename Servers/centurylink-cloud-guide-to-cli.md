@@ -544,6 +544,7 @@ Both Relational Database Service and Intrusion Prevention Service can be managed
 For Relational DB, cli can manage creation, deletion, failover, notification and listing of different resources.  The `--help` option can be used to find out more on the options.  
 The following examples show some of the basic functions.
 ### Relational Database Service
+For details of Relational Database Service, please see this [knowledge article](//Database/getting-started-with-mysql-rdbs/).
 **Listing all the available data centers for this service:**
 ```
 clc db list-datacenters
@@ -606,6 +607,7 @@ clc db create-notification  --subscription-id 3185 --destination-type SMS --loca
 ```
 
 ### Intrusion Prevention Service
+For details of Intrusion Prevention Service, please see [here](//Security/getting-started-with-ips/).
 **Install IPS on a host:** (`uninstall` to uninstall)
 ```
 clc ips install --server-name CA3ABCDTAKE02
@@ -616,6 +618,7 @@ clc ips set-notifications --server-name CA3ABCDTAKE02 --notification-destination
 ```
 
 ### Patching Service
+With patching, it is part of patching best practice to have roll back plan.  This can be done via a snapshot, in case of bad patch or application issue, it can be reverted quickly.  
 **Patching a server (either Windows2012 or RedHat):**
 ```
 clc os-patch apply --server-ids CA3ABCDTAKE02 --os-type Windows2012
