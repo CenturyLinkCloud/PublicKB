@@ -55,7 +55,7 @@ US: 888.638.6771<br>UK: +44.118.322.6100<br>Singapore: +65.6305.8099| incident@c
 ### Chat Support
 Customers in the **Professional and Enterprise** support tier can leverage our real-time chat system.
 
-1. Login to the [Control Portal](//www.control.ctl.io), select the **?** icon and choose **Chat with support.**
+1. Login to the [Control Portal](//control.ctl.io), select the **?** icon and choose **Chat with support.**
 
     ![Chat with support](../images/how-do-i-get-support-for-centurylink-cloud-services-02.png)
 
@@ -80,13 +80,13 @@ Customers in the **Professional and Enterprise** support tier can leverage our p
 
 2. Call the phone number for your appropriate region.
 
-    **Country**|**Phone Number**
-    -----------|----------------
-    USA|+1 (425) 321-0338
-    UK|+44 20 0333 0338
-    Hong Kong|+852 58032338
-    Australia|+61 7 4410 3380
-    Singapore|+65 3158 9575
+**Country**|**Phone Number**
+-----------|----------------
+USA|+1 (425) 321-0338
+UK|+44 20 0333 0338
+Hong Kong|+852 58032338
+Australia|+61 7 4410 3380
+Singapore|+65 3158 9575
 
 ### FAQ
 
