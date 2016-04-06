@@ -10,7 +10,7 @@
 
 Key/Values in Orchestrate are how you store most data. At it's basic level, it's a JSON object store. You specify a unique key and then the JSON value to store. Keys are unique to a collection and are used to store and retrieve an object.
 
-## Storing Data
+### Storing Data
 Let's store some data for a new user in our app. For our key we will assign the user a unique user ID, and for the value we will save a JSON object with the user's data. We use the user ID rather than the email because we want to use a key that won't ever change.
 
 ### Request
@@ -27,7 +27,7 @@ curl https://api.orchestrate.io/v0/users/kates-user-id \
 HTTP/1.1 201 Created
 ```
 
-## Retrieving Data
+### Retrieving Data
 Now let's get the user data. We just specify the key and are returned the JSON object for that user.
 
 ### Request
@@ -46,7 +46,7 @@ curl https://api.orchestrate.io/v0/users/kates-user-id \
 }
 ```
 
-## Updating Data
+### Updating Data
 Let's add a new field to our user data. One of the ways we can accomplish this is through a `PATCH` request. Using this method, we only need the key of our user to manipulate the data, rather than retrieving the entire user item.
 
 ### Request

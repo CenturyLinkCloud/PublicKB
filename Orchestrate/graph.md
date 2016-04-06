@@ -12,7 +12,7 @@ Graph queries create and retrieve relationships between items such as user profi
 
 For example, use Graph to follow relationships between users, to query which products a user likes, or even to associate a set of photos with a specific user.
 
-## Creating a Graph Relationship
+### Creating a Graph Relationship
 Let's create a relationship between Kate and her friend Rob. Relationships are one-directional so Kate will follow Rob but Rob won't follow Kate (we can do bi-directional with two API calls).
 
 ### Request
@@ -27,7 +27,7 @@ curl -i "https://api.orchestrate.io/v0/users/kates-user-id/relation/follows/user
 HTTP/1.1 204 No Content
 ```
 
-## Retrieving Graph Relationships
+### Retrieving Graph Relationships
 Let's now find all the users that Kate follows.
 
 ### Request
@@ -58,7 +58,7 @@ curl "https://api.orchestrate.io/v0/users/kates-user-id/relations/follows" \
 }
 ```
 
-## Extended Graph Relationships
+### Extended Graph Relationships
 Let's take it a step further and find all likes for every user Kate follows. All we need to do is query the relationship follows/likes.
 
 ### Request
@@ -99,7 +99,7 @@ curl "https://api.orchestrate.io/v0/users/kates-user-id/relations/follows/likes"
 }
 ```
 
-## Removing a Graph Relationship
+### Removing a Graph Relationship
 Removing relationships is simple. If Kate no longer wants to follow Asa, specify the relationship and call the appropriate method:
 
 ### Request
@@ -114,7 +114,7 @@ curl -i "https://api.orchestrate.io/v0/users/kates-user-id/relation/follows/user
 HTTP/1.1 204 No Content
 ```
 
-## Other Uses
+### Other Uses
 We could use Graph for other things as well. Let's say we have a `users` collection and a `photos` collection. When a user uploads a photo we create a new key/value object for it in our `photos` collection but we want to associate the photo with the user. We can create a Graph relationship between them.
 
 ### Request
@@ -169,7 +169,7 @@ curl "https://api.orchestrate.io/v0/users/kates-user-id/relations/posted" \
 }
 ```
 
-## Pagination and Limits
+### Pagination and Limits
 We can also have Orchestrate use an offset and limit so we can page through the relationships. If there are more results than the requested limit, the response will include a `next` field that will be a uri that can be used to fetch the next page of results. There will be a `prev` field to fetch the previous page. These links will also be included as Link headers in the HTTP response. The default limit is 10, and the maximum is 100.
 
 ### Request

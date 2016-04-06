@@ -25,7 +25,7 @@ Any object with fields that Orchestrate recognizes as representing a latitude an
 
 Orchestrate understands the `location` field contains geographic data because the `latitude` and `longitude` fields contain numbers representing [decimal degrees](https://en.wikipedia.org/wiki/Decimal_degrees). That field can be named anything, not just `location`. Orchestrate will also understand `lat` as short for `latitude`, and `lon`, `long`, and `lng` as short for `longitude`. The values of these fields must be numbers, so Orchestrate can use them as decimal degrees.
 
-## Geo Distance Queries
+### Geo Distance Queries
 We can do a search for all items within a certain distance of a point using `NEAR` in the search's query string:
 
 ### Request
@@ -58,7 +58,7 @@ ft|foot|imperial|
 in|inch|imperial|
 nmi|nautical mile|nautical|
 
-## Sorting by Distance
+### Sorting by Distance
 When you're retrieving items by their proximity to a point, you can sort results by distance from that point:
 ```
 curl -i "https://api.orchestrate.io/v0/places?query=value.location:NEAR:%7blat:12.3%20lon:56.7%20dist:100km%20%7d&sort=value.location:distance:asc" \
@@ -123,7 +123,7 @@ Connection: keep-alive
 
 Each item in the result set contains a `distance` value that indicates how far the item is from the geographic point specified in the query. This distance is in the same units as the query itself.
 
-## Geo Bounding Box Queries
+### Geo Bounding Box Queries
 To retrieve all items within a particular area, you can specify a bounding box and return all items within it. For example:
 ```
 curl -i "https://api.orchestrate.io/v0/places?query=value:IN:%7bnorth:12.5%20east:57%20south:12%20west:56%20%7d" \

@@ -12,7 +12,7 @@ Orchestrate automatically creates a full-text search index for every object you 
 
 Search queries allow the retrieval of key/value objects based on their contents. When an object is put into Orchestrate, the document is analyzed and its contents are indexed. Orchestrate does not require schemas. Instead, the first time it sees a field in an object it determines the type based on the contents of the field. Each collection will have its own implicit schema based on the contents of its object.
 
-## Find a User
+### Find a User
 We can do a simple search on any field. The following will search for any occurrence of "Portland".
 
 ### Request
@@ -58,7 +58,7 @@ curl -i "https://api.orchestrate.io/v0/users?query=Portland" \
 }
 ```
 
-## More Refined Search
+### More Refined Search
 But what if we want to find only the users who's home town is "Portland, OR". We can tell Orchestrate to only match a specific field by searching for `value.hometown: "Portland, OR"`.
 
 ### Request
@@ -90,7 +90,7 @@ curl -i "https://api.orchestrate.io/v0/users?query=value.hometown%3A%20%22Portla
 }
 ```
 
-## Pagination and Limits
+### Pagination and Limits
 We can also have Orchestrate use an offset and limit so we can page through the results.
 
 ### Request
@@ -124,7 +124,7 @@ curl -i "https://api.orchestrate.io/v0/users?query=value.hometown%3A%22Portland%
 }
 ```
 
-## Complex Queries
+### Complex Queries
 Orchestrate harnesses the power of [Lucene](http://lucene.apache.org/core/4_5_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Overview) for full text search.
 
 ### Boolean Operators
@@ -153,7 +153,7 @@ For example: `value.tags: ruby*` will match the tags "Ruby" as well as "Ruby on 
 
 [Read more about Lucene](https://www.ctl.io/developers/blog/post/querying-the-enron-email-trove-with-lucene)
 
-## Searching Items, Events, and Graph Relationships
+### Searching Items, Events, and Graph Relationships
 So far, we've only considered searching the key-value Items you've stored in your Orchestrate database. But Orchestrate also supports timestamped Event objects, and Graph objects representing the relationships between Items. Event and Graph objects can have their own JSON properties, and Orchestrate lets you search those objects using exactly the same Lucene syntax you use to search for Items.
 
 By default, Orchestrate only returns Items from search queries. But you can enable Event and Graph results by adding a clause to your query filtering the `@path.kind` field. For example, this query would return only Event objects with the phrase "mountain biking" in the description.
@@ -176,7 +176,7 @@ Or like this:
 
 [Read more about Graph Relationship Search](https://orchestrate.io/docs/apiref#search-graph-relationships)
 
-## Sorting
+### Sorting
 Orchestrate also supports sorting search results by field value. By default, search queries return results in order of decreasing relevance: items with more matches get a higher score than items with fewer matches. By adding a sort parameter along with the field name and order we want to sort by, we can customize the sorting behavior.
 
 We can sort users with the hometown "Portland, OR" in ascending order by name like this:
@@ -193,7 +193,7 @@ curl -i "https://api.orchestrate.io/v0/users?query=value.hometown%3A%20%22Portla
   -u '12345678-1234-1234-1234-123456789012:'
 ```
 
-## Multiple Field Sorting
+### Multiple Field Sorting
 What if we updated our user object by adding fields for first and last names?
 ```
 {
