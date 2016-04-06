@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to CLI",
-  "date": "04-03-2016",
+  "date": "04-05-2016",
   "author": "Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
