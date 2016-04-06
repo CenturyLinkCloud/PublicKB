@@ -608,7 +608,7 @@ clc db create-notification  --subscription-id 3185 --destination-type SMS --loca
 
 ### Intrusion Prevention Service
 For details of Intrusion Prevention Service, please see [here](../Security/getting-started-with-ips.md).
-**Install IPS on a host:** (`uninstall` to uninstall)
+**Install Intrusion Prevention Service on a host:** (`uninstall` to uninstall)
 ```
 clc ips install --server-name CA3ABCDTAKE02
 ```
