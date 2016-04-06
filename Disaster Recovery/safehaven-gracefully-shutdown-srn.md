@@ -26,17 +26,19 @@ Rebooting an SRN without taking the proper steps for a graceful shutdown can cau
 
   a.	`scstadmin -list_target`
 
-  b.	Perform the following command with each IQN pasted into the <target name> field: `scstadmin -rem_target <the target name> -driver iscsi`
+  b.	Perform the following command with each IQN pasted into the <target name> field: `scstadmin -disable_target <the target name> -driver iscsi`
 
 5.	Deactivate the Pluns (logical volumes) for the protection groups:
   a. Run `lvscan`
   b. Run `vgchange –an <VG name>` using the volume names, for each volume.
   c. Run `lvscan` again to make sure all volumes have been deactivated (lvscan should show all as "inactive"). If you are unable to deactivate a volume, run `kpartx -d /dev/sbd0` then `kpartx -d /dev/sbd1` (use all sbd's from 0 onward)
 
-6.	Clear all the sbd’s : `sbdmAllClear` (or individually clear sbd's: `sbdm /dev/sbd<number> clear` similar to step 5c).
+6.	Clear all the sbd’s : `sbdAllClear` (or individually clear sbd's: `sbdm /dev/sbd<number> clear` similar to step 5c).
 
-7.	Reboot the SRN
+7.	Clear the bitmaps: `sbdFlushAllBitmaps`
 
-8.	After rebooting the SRN, make sure that the Protection Groups are reconstituted and in "running state" and that the Guest connects to the targets again. On the Production (source) VM, run `DgSyncEx.exe list` from the SafeHaven Tools Command Prompt to make sure sync is intact. Check `lvscan` to make sure that the logical volumes are active, and run `scstadmin –list_target` to verify that the iSCSI targets are being presented.
+8.	Reboot the SRN
 
-9. (Optional) Create a new checkpoint.
+9.	After rebooting the SRN, make sure that the Protection Groups are reconstituted and in "running state" and that the Guest connects to the targets again. On the Production (source) VM, run `DgSyncEx.exe list` from the SafeHaven Tools Command Prompt to make sure sync is intact. Check `lvscan` to make sure that the logical volumes are active, and run `scstadmin –list_target` to verify that the iSCSI targets are being presented.
+
+10. (Optional) Create a new checkpoint.
