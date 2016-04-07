@@ -210,5 +210,7 @@ Note: If you have any questions, or would like assistance from us in setting up 
 
 ##### Syslog Firewall Rules
 * Add the following rules to the Firewall that the Syslog server sits behind if located in another locations
-  * dsm01.client-security.ctl.io 514/upd
-  * dsm02.client-security.ctl.io 514/udp
+
+  dsm01.client-security.ctl.io 514/upd
+  
+  dsm02.client-security.ctl.io 514/udp
