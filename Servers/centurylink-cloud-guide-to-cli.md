@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to CLI",
-  "date": "04-05-2016",
+  "date": "04-07-2016",
   "author": "Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
@@ -19,6 +19,7 @@
   * [Relational Database Service](#relational-database-service)
   * [Intrusion Prevention Service](#intrusion-prevention-service)
   * [Patching Service](#patching-service)
+  * [Simple Backup Service](#simple-backup-service)
 * [Support](#support)
 
 ### Overview
@@ -37,7 +38,7 @@ Comparison of the two CLI tools:
 | CLI         |   Python            | Go                  |
 | ---------   | ------------------- | -----------------   |
 | API version | Mostly v1 (some v2) |         v2          |
-| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> billing <br> custom-fields <br> data-center <br> db <br> firewall-policy <br> group <br> ips <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> os-patch <br> server <br> wait <br>      |
+| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> backup <br> billing <br> custom-fields <br> data-center <br> db <br> firewall-policy <br> group <br> ips <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> os-patch <br> server <br> wait <br>      |
 
 
 
@@ -136,20 +137,21 @@ To get full usage information run clc without arguments.
 Available resources:
           login
           autoscale-policy
-          os-patch
-          group
+          db
+          backup
           data-center
-          anti-affinity-policy
-          billing
-          network
-          firewall-policy
           load-balancer
-          custom-fields
+          billing
           ips
           server
-          alert-policy
+          group
           load-balancer-pool
-          db
+          custom-fields
+          os-patch
+          network
+          alert-policy
+          anti-affinity-policy
+          firewall-policy
           wait
 
 ```
@@ -540,11 +542,12 @@ clc server list --from-file servername.json
 ```
 
 ### Application Services control
-Both Relational Database Service and Intrusion Prevention Service can be managed from the GO based CLI.  
-For Relational DB, cli can manage creation, deletion, failover, notification and listing of different resources.  The `--help` option can be used to find out more on the options.  
-The following examples show some of the basic functions.
+Relational Database Service,Intrusion Prevention Service, Patching Service and Simple Backup Service can be managed from the GO based CLI.  
+The following examples show the basic functions of what can be done from the CLI.
+
 ### Relational Database Service
-For details of Relational Database Service, please see this [knowledge article](../Database/getting-started-with-mysql-rdbs.md).
+For Relational DB, cli can manage creation, deletion, failover, notification and listing of different resources.  The `--help` option can be used to find out more on the options.  For details of Relational Database Service, please see this [knowledge article](../Database/getting-started-with-mysql-rdbs.md).
+
 **Listing all the available data centers for this service:**
 ```
 clc db list-datacenters
@@ -714,6 +717,66 @@ T Framework 4.6 and 4.6.1 for Windows 8.1 and Server 2012 R2 for x64 (KB3135998)
     "Start_time": "2016-04-05 04:14:10",
     "Status": "COMPLETED"
 }
+```
+
+### Simple Backup Service
+Simple Backup Service provides a set and forget backup solution to CenturyLink Cloud customers, to learn more, please refer to this [knowledge article](../Backup/simple-backup-service-how-it-works.md).  With CLI access to Simple Backup Service, it gives customers more management flexibility on managing their backup.
+
+**Create a backup policy:**
+```
+clc backup create-account-policy --name CLICreated --os-type Windows --paths "c:\\users" e:\\" --excluded-directory-paths "e:\\temp" --backup-interval-hours 24 --retention-days 2
+```
+**Apply a policy to a server**
+```
+clc backup apply-policy --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --server-name CA3ABCDTAKE02 --storage-region CANADA
+```
+**Unapply a policy to a server**
+```
+clc backup unapply-policy --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --server-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+```
+**Enable/Disable a policy on a server** (Status: ACTIVE/INACTIVE)
+```
+clc backup update-server-policy --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --server-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --status INACTIVE
+```
+**List various objects in Simple Backup Service**
+
+***List of datacenters and storage regions***
+```
+clc backup get-data-centers
+```
+```
+clc backup get-regions
+```
+***List of servers in a datacenter***
+```
+clc backup get-servers --data-center-name "CA3 - Canada (Toronto)"
+```
+***List of supported OS***
+```
+clc backup get-os-types
+```
+***List of available/applied policies in the account***
+```
+clc backup get-account-policies
+```
+```
+clc backup get-account-policy --policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+```
+```
+clc backup get-applied-account-policies --policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+```
+```
+clc backup get-applied-server-policies --server-name CA3ABCDTAKE02
+```
+```
+clc backup get-allowed-account-policies --server-name CA3ABCDTAKE02
+```
+***List of restore points/data***
+```
+clc backup get-stored-data --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --server-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --search-date 2016-04-07
+```
+```
+clc backup get-restore-point-details --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --server-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  --backup-finished-start-date 2016-02-06 --backup-finished-end-date 2016-04-07 --sort-by retentionExpiredDate
 ```
 
 ### Support
