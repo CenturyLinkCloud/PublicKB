@@ -20,7 +20,7 @@ Visit [www.ctl.io/free-trial](http://www.ctl.io/free-trial). You will need a val
 
 Each free trial includes:
 
-* Up to $2,500 in usage of the service
+* Up to $500 in usage of the service
 * Free orientation from a CenturyLink Cloud solution architect
 * Email & phone support from the solution architect during the trial
 * Self-service access CenturyLink Cloud services, including cloud servers, block storage, load balancers, VLANs, [AppFog, based on Cloud Foundry](http://www.ctl.io/appfog/), and much more
