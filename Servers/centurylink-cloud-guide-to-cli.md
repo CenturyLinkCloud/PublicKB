@@ -547,6 +547,7 @@ The following examples show the basic functions of what can be done from the CLI
 
 ### Relational Database Service
 For Relational DB, cli can manage creation, deletion, failover, notification and listing of different resources.  The `--help` option can be used to find out more on the options.  For details of Relational Database Service, please see this [knowledge article](../Database/getting-started-with-mysql-rdbs.md).
+
 **Listing all the available data centers for this service:**
 ```
 clc db list-datacenters
