@@ -770,7 +770,7 @@ clc backup get-applied-server-policies --server-name CA3ABCDTAKE02
 ```
 clc backup get-allowed-account-policies --server-name CA3ABCDTAKE02
 ```
-***List of restored points/data***
+***List of restore points/data***
 ```
 clc backup get-stored-data --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --server-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --search-date 2016-04-07
 ```
