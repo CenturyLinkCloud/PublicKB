@@ -542,11 +542,11 @@ clc server list --from-file servername.json
 ```
 
 ### Application Services control
-Both Relational Database Service and Intrusion Prevention Service can be managed from the GO based CLI.  
-For Relational DB, cli can manage creation, deletion, failover, notification and listing of different resources.  The `--help` option can be used to find out more on the options.  
-The following examples show some of the basic functions.
+Relational Database Service,Intrusion Prevention Service, Patching Service and Simple Backup Service can be managed from the GO based CLI.  
+The following examples show the basic functions of what can be done from the CLI.
+
 ### Relational Database Service
-For details of Relational Database Service, please see this [knowledge article](../Database/getting-started-with-mysql-rdbs.md).
+For Relational DB, cli can manage creation, deletion, failover, notification and listing of different resources.  The `--help` option can be used to find out more on the options.  For details of Relational Database Service, please see this [knowledge article](../Database/getting-started-with-mysql-rdbs.md).
 **Listing all the available data centers for this service:**
 ```
 clc db list-datacenters
