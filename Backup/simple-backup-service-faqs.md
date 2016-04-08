@@ -77,6 +77,10 @@ A: At this time, open files will not be backed up and a “Partial_Success” wi
 
 A: There are two places in the agent that show the status of your backups. First, in the Backup Jobs section, which shows all backups executed by this particular agent. Second, for additional information, selecting “Restore” from the Policy Details page will drill down into greater detail about backups for the specific Policy. Details include Backup Date, Status, and Protected Data (GBs).
 
+**Q: For a "Failed" or "Partial_Success" backup status, can I see which files failed and why?**
+
+A: Yes, see the sbs-backup-files-failed.csv file located on your system for details.
+
 ### Restores
 
 **Q: What does an "IN_PROGRESS" status restore mean?**
