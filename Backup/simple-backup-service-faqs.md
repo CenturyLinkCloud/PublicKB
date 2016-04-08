@@ -63,7 +63,7 @@ A: The agent is setup to start on boot at install time.
 
 **Q: Where do I configure backups?**
 
-A: The Control Portal provides backup configuration functionality. Please refer to our [Getting Started Guide](./getting-started-with-simple-backup.md) for more details. Additionally, the [Backup API](https://api-va1.backup.ctl.io/clc-backup-api/swagger-ui.html) may be used for advanced scripting.
+A: The Control Portal provides backup configuration functionality. Please refer to our [Getting Started Guide](./getting-started-with-simple-backup.md) for more details. Additionally, the [Backup API](https://www.ctl.io/api-docs/v2/#simple-backup) may be used for advanced scripting.
 
 **Q: What does an "IN_PROGRESS" status backup mean?**
 
