@@ -1,7 +1,7 @@
 {{{
   "title": "SafeHaven 3.1: Checkpoints",
-  "date": "11-16-2015",
-  "author": "Josh Leporati",
+  "date": "04-08-2016",
+  "author": "Jake Malmad",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -55,6 +55,6 @@ To view both automatic and manual checkpoints taken follow the next steps
 
   ![Show History Checkpoints](../images/SAHA31-Checkpoints-7.png)
 
-3. The available Checkpoints will display with related data for the Checkpoints shown.
+3. The available Checkpoints will display with related data for the Checkpoints shown. Please note that checkpoints taken for Full Replica Linux VMs will always show in an "Unknown" state rather than "Clean" checkpoints, despite being valid and bootable.
 
   ![Listed Checkpoints](../images/SAHA31-Checkpoints-8.png)
