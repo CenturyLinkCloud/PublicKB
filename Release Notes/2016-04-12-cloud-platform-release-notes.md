@@ -7,7 +7,7 @@
 }}}
 ### New Features (3)
 * __New CenturyLink Cloud Data Center - AU1 APAC (Sydney) Now Live.__ 
-  Effective April 12, 2016, New CenturyLink Cloud now has a second location in APAC - Sydney, Australia is now live for all users, with the flagship CenturyLink Cloud infrastructure services.[Read the
+  Effective April 12, 2016, CenturyLink now has a second location in APAC - Sydney, Australia is now live for all users, with the flagship CenturyLink Cloud infrastructure services.[Read the
 blog here. ](../General/centurylink-cloud-data-center-locations.md) [View DC feature availability. ](../General/centuryLink-cloud-feature-availability-matrix.md) 
 * __Simple Backup Service__. Effective April 12, 2016, Simple Backup Service has added multiple new features.
   - [Simple Backup] (https://www.ctl.io/simple-backup-service/) Agent UI now provides a path to a new log file which contains failed or partially successful SBS jobs. ![FailedBackupsFileCSV_Location_shown](../images/FailedBackupsFileCSV_Location_shown.JPG)
