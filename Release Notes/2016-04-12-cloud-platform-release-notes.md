@@ -16,13 +16,13 @@ blog here. ](../General/centurylink-cloud-data-center-locations.md) [View DC fea
 
 * __AppFog__. Effective April 12, 2016, although functions are unchanged, several updates has been added to AppFog Control Portal to improve user experience.
   - Larger font and Larger left-nav tree-view are adopted for improved readability.
-  - Top-nav dropdown menu (aka "green monster") replaced by link to Control Portal.
+  - Top-nav dropdown menu replaced by link to Control Portal.
   - Breadcrumb trail placement shifted.
   - Account dropdown at top of page lists all AppFog accounts so that current user can access.
 ![AppFog Application Dashboard Comparison](../images/AF-app-dashboard-comparison2.png)
 
 ### Enhancements (2)
-* __Centurylink Developer Centre__. Our [Developer Center](https://www.ctl.io/developers/) now includes [language-specific resources] to help you code against CenturyLink Cloud platform. We have gathered SDKs, tutorials, and other documentation for AppFog, Orchestrate, Infrastructure, and more. We currently feature Java, .NET, Python, NodeJS, Go, and PHP.
+* __Centurylink Developer Center__. Our [Developer Center](https://www.ctl.io/developers/) now includes [language-specific resources] to help you code against CenturyLink Cloud platform. We have gathered SDKs, tutorials, and other documentation for AppFog, Orchestrate, Infrastructure, and more. We currently feature Java, .NET, Python, NodeJS, Go, and PHP.
 * __OS Tempate__. Several security patches has been added on RHEL 7,  Ubuntu 12 and Ubuntu 14 OS templates to avoid potential exploit.
 
 ### Announcements (3)
