@@ -17,7 +17,7 @@
 * [Policies](#policies)
 * [Frequency](#frequency)
 * [Retention](#retention)
-* [Inclusions/Exclusions](#inclusions/exclusions)
+* [Inclusions & Exclusions](#inclusions-&-exclusions)
 
 ### Requirements
 
@@ -35,7 +35,7 @@ A: No further backups occur from the server to storage. If a backup agent is una
 
 **Q: Is SBS intended to be used for Disaster Recovery?**
 
-A: No, SBS provides file-level backup protection. In fact, SBS does not backup certain [OS files](#inclusions/exclusions) or provide snapshot capability. Users can still perform [manual snapshots on-demand](https://www.ctl.io/knowledge-base/servers/creating-and-managing-server-snapshots/) and as scheduled tasks within the server settings. For full [Disaster Recovery](https://www.ctl.io/knowledge-base/support/introducing-new-options-for-backups/#how-does-the-simple-backup-service-compare-to-other-options-are-available-on-centurylink-cloud) services, there are a number of options available internally or through Certified Ecosystem partners.
+A: No, SBS provides file-level backup protection. In fact, SBS does not backup certain [OS files](#inclusions-&-exclusions) or provide snapshot capability. Users can still perform [manual snapshots on-demand](https://www.ctl.io/knowledge-base/servers/creating-and-managing-server-snapshots/) and as scheduled tasks within the server settings. For full [Disaster Recovery](https://www.ctl.io/knowledge-base/support/introducing-new-options-for-backups/#how-does-the-simple-backup-service-compare-to-other-options-are-available-on-centurylink-cloud) services, there are a number of options available internally or through Certified Ecosystem partners.
 
 ### Agent
 
@@ -180,7 +180,7 @@ A: No, this is a manual process at this time. A [support request](https://www.ct
 
 A: This provides the ability to utilize incremental backups with consistent full backup protection. By not expiring unchanged files, there is no need to retransfer them to object storage, which minimizes data transfer costs and provides quicker backups. Bottom line is that it provides quicker and cheaper backups for our users.
 
-### Inclusions/Exclusions
+### Inclusions & Exclusions
 
 **Q: Which files/folders are automatically excluded from the backups?**
 
