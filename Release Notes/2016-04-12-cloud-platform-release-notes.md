@@ -4,7 +4,7 @@
 "author": "Shasha Zhu",
 "attachments": [],
 "contentIsHTML": false
-}}
+}}}
 ### New Features (3)
 * __New CenturyLink Cloud Data Center - AU1 APAC (Sydney) Now Live.__ 
   Effective April 12, 2016, CenturyLink Cloud now has a second location in APAC - Sydney is now live for all
