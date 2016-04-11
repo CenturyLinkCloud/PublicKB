@@ -22,8 +22,8 @@ blog here. ](../General/centurylink-cloud-data-center-locations.md) [View DC fea
 ![AppFog Application Dashboard Comparison](../images/AF-app-dashboard-comparison2.png)
 
 ### Enhancements (2)
-* __Centurylink Developer Center__. Our [Developer Center](https://www.ctl.io/developers/) now includes [language-specific resources] to help you code against CenturyLink Cloud platform. We have gathered SDKs, tutorials, and other documentation for AppFog, Orchestrate, Infrastructure, and more. We currently feature Java, .NET, Python, NodeJS, Go, and PHP.
-* __OS Tempate__. Several security patches has been added on RHEL 7,  Ubuntu 12 and Ubuntu 14 OS templates to avoid potential exploit.
+* __Centurylink Developer Center__. Our [Developer Center](https://www.ctl.io/developers/) now includes [language-specific resources](https://www.ctl.io/developers/sdks-tools) to help you code against CenturyLink Cloud platform. We have gathered SDKs, tutorials, and other documentation for AppFog, Orchestrate, Infrastructure, and more. We currently feature Java, .NET, Python, NodeJS, Go, and PHP.
+* __OS Template__. Several security patches has been added on RHEL 7,  Ubuntu 12 and Ubuntu 14 OS templates to avoid potential exploit.
 
 ### Announcements (3)
 * __Standard and Premium Block Storage Price Reduction__. Effective April 1, 2016, list pricing for Standard and Premium have been reduced. Both services are now priced at $0.12 GB per month.
