@@ -1,5 +1,5 @@
 ﻿{{{
-  "title": RackWare Management Module v5",
+  "title": "RackWare Management Module v5",
   "date": "March 28, 2016",
   "author": "Todd A. Matters",
   "attachments": [],
@@ -131,7 +131,7 @@ A general "yum update" should be executed as long as the kernel update is includ
 After executing the ‘yum update’ or ‘yum update kernel’ command, you must reboot the server.
 
 If using RHEL without a subscription, a DVD should be configured as the repo.     
- 
+
 
 
 
@@ -151,7 +151,7 @@ Where the (date-time) is the original date-time in the original rackware-pre-ins
 Next, create the directory /etc/rackware, and copy the rackware-license-(date-time) to /etc/rackware/.
 
 
-####Execute the Installation Script 
+####Execute the Installation Script
 
 From root user, execute:
      ./rackware-(VERSION)-x86_64.sh
@@ -163,7 +163,7 @@ There will be a series of prompts.    Accept the default values for all Yes/No q
 
  Select the network interfaces the RMM will use to interface with Client Hosts.  In general, select all available interfaces.  If using the Image mobility features (migrations and DR) see the section Image Mobility Requirements.
 
-####Verify the RMM Installation 
+####Verify the RMM Installation
 
 A couple of commands will ensure that the software is installed correctly.  
 
