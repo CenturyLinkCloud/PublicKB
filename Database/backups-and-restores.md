@@ -1,23 +1,23 @@
 {{{
- "title": "Relational DB Backups and Restores",
- "date": "03-30-2016",
- "author": "Christine Parr",
- "attachments": [],
- "related-products" : [],
- "contentIsHTML": false
- }}}
+  "title": "Relational DB Backups and Restores",
+  "date": "03-30-2016",
+  "author": "Christine Parr",
+  "attachments": [],
+  "related-products" : [],
+  "contentIsHTML": false
+}}}
 
- #### Audience
+#### Audience
 
- This article is to support customers of Relational DB Service, CenturyLink's MySQL compatible database-as-a-service product.  Additionally, these instructions are specific to performing backups and restores through the CenturyLink Control portal.
+This article is to support customers of Relational DB Service, CenturyLink's MySQL compatible database-as-a-service product.  Additionally, these instructions are specific to performing backups and restores through the CenturyLink Control portal.
 
- #### Overview
+#### Overview
 
- CenturyLink's Relational DB Service is a MySQL-compatible database-as-a-service that provides instant access to a database instance with SSL support, daily backups, restore functionality, basic monitoring and a replication option.  Users can configure the amount of CPU, Memory and Storage based on their database needs and can choose to replicate their instance in datacenter for a more highly available solution.  As customers' capacity needs grown, they can easily scale their CPU, RAM and/or Storage through the click of a button.
+CenturyLink's Relational DB Service is a MySQL-compatible database-as-a-service that provides instant access to a database instance with SSL support, daily backups, restore functionality, basic monitoring and a replication option.  Users can configure the amount of CPU, Memory and Storage based on their database needs and can choose to replicate their instance in datacenter for a more highly available solution.  As customers' capacity needs grown, they can easily scale their CPU, RAM and/or Storage through the click of a button.
 
- #### Prerequisites
+#### Prerequisites
 
- Access to the CenturyLink Cloud Platform as an authorized user
+Access to the CenturyLink Cloud Platform as an authorized user
 
 
 ### Relational DB Backups

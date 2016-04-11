@@ -44,7 +44,7 @@ This article is to support customers of Relational DB Service, CenturyLink's MyS
 </p>
 <p><strong>Q: I understand that CenturyLink is backing my data up daily.  How can I access my backups in order to restore? </strong>
 </p>
-<p>A: If you need to restore from an available backup, you can leverage the Restore Backup API or perform the restore in the Control Portal.  For more information on performing database restores in Control, please see the KB on [Backups and Restores](../Database/backups-and-restores). </p>
+<p>A: If you need to restore from an available backup, you can leverage the Restore Backup API or perform the restore in the Control Portal.  For more information on performing database restores in Control, please see the KB on [Backups and Restores](../Database/backups-and-restores.md). </p>
 <p><strong>Q: How long are my backups being held?
 </p>
 <p>A: At the time of Relational DB subscription creation, the user will define backup retention policy.  Customers can select a retention policy as short as 1 day or as long as 35 days.  Customers can also change the backup retention policy post-provisioning through the Subscription details page of the UI or through API.  
