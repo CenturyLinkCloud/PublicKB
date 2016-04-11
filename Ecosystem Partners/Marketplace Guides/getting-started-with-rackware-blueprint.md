@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-![<alternate access text that describes the logo>](<URL of the logo>)
+![Rackware Logo](../../images/rackware-logo.jpeg)
 
 ### Technology Profile
 
@@ -52,7 +52,7 @@ If using the RMM to migrate workloads to the CenturyLink cloud, the RMM Server c
 
 If using the RMM to for Disaster Recovery, the DR configuration and operation can be monitored by configuring email alerts in the DR Policy.  Consult the RackWare v5 Disaster Recovery Guide for more information.  
 
-### Deploying the <name of the blueprint> Blueprint
+### Deploying the Rackware Blueprint
 
 #### Steps to Deploy Blueprint
 1. **Locate the "Install RackWare RMM on Linux" Blueprint**
@@ -202,7 +202,7 @@ This will display general information about the RMM.
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  RackWare licensing information can be obtained by email info@rackwareinc.com.  
 
 ### About RackWare
-CenturyLink Cloud works with [RackWare](www.rackwareinc.com) to provide a software management suite for cloud called RackWare Management Module (RMM).  The RMM solution enables Enterprises to implement 4 major use cases: workload mobility, backup, disaster recovery, and AutoScaling.   
+CenturyLink Cloud works with [RackWare](http://www.rackwareinc.com) to provide a software management suite for cloud called RackWare Management Module (RMM).  The RMM solution enables Enterprises to implement 4 major use cases: workload mobility, backup, disaster recovery, and AutoScaling.   
 
 
 ### Frequently Asked Questions
