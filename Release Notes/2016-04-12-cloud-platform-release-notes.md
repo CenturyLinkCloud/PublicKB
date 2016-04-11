@@ -9,11 +9,12 @@
 * __New CenturyLink Cloud Data Center - AU1 APAC (Sydney) Now Live.__ 
   Effective April 12, 2016, CenturyLink Cloud now has a second location in APAC. Sydney is now live for all
 users, with the flagship CenturyLink Cloud infrastructure services.[Read the
-blog here. ](http://updatemelater) [View DC feature availability. ](http://updatemelater) 
+blog here. ](../General/centurylink-cloud-data-center-locations.md) [View DC feature availability. ](../General/centuryLink-cloud-feature-availability-matrix.md) 
 * __Simple Backup Service__. Effective April 12, 2016, Simple Backup Service has added multiple new features.
   - [Simple Backup] (https://www.ctl.io/simple-backup-service/) Agent UI now provides a path to a new log file which contains failed or partially successful SBS jobs. ![FailedBackupsFileCSV_Location_shown](../images/FailedBackupsFileCSV_Location_shown.JPG)
   - Now it is possible to fully remove a Server from a Backup Policy using both the Control Portal and API.  In the Control Portal, simply navigate to the Server Policy Details screen, and use the "Remove" button to remove the server from the backup policy. To accomplish this programmatically via the Simple Backup API, refer to the [Delete Server Policy](https://www.ctl.io/api-docs/v2/#simple-backup-delete-server-policy) documentation. ![Server_Policy_Remove_Button](../images/Server_Policy_Remove_Button.png)  
   - We have added Simple Backup Service to the CenturyLink Cloud API v2.0.  Developers can now interact with Simple Backup programatically in addition to the Control Portal interface. Documentation for the Simple Backup API can be found [here](https://www.ctl.io/api-docs/v2/#simple-backup). ![API_Documentation_V2_-_CenturyLink_Cloud](../images/API_Documentation_V2_-_CenturyLink_Cloud.png)
+
 * __AppFog__. Effective April 12, 2016, although functions are unchanged, several updates has been added to AppFog Control Portal to improve user experience.
   - Larger font and Larger left-nav tree-view are adopted for improved readability.
   - Top-nav dropdown menu (aka "green monster") replaced by link to Control Portal.
