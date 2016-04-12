@@ -47,16 +47,16 @@ Each argument accepts various aliases:
 `radius` and its aliases require some measure of units, like kilometers or miles. Orchestrate understands various units across multiple systems of measurement:
 
 |**Unit**|**Definition**|**System**|
-|----|:--------:|-----:|
-km|kilometer|metric|
-m|meter|metric|
-cm|centimeter|metric|
-mm|millimeter|metric|
-mi|mile|imperial|
-yd|yard|imperial|
-ft|foot|imperial|
-in|inch|imperial|
-nmi|nautical mile|nautical|
+|:------:|:------------:|:--------:|
+|   km   |   kilometer  |  metric  |
+|    m   |     meter    |  metric  |
+|   cm   |  centimeter  |  metric  |
+|   mm   |  millimeter  |  metric  |
+|   mi   |     mile     | imperial |
+|   yd   |     yard     | imperial |
+|   ft   |     foot     | imperial |
+|   in   |     inch     | imperial |
+|  nmi   | nautical mile| nautical |
 
 ### Sorting by Distance
 When you're retrieving items by their proximity to a point, you can sort results by distance from that point:
