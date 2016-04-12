@@ -17,7 +17,7 @@
 * [Policies](#policies)
 * [Frequency](#frequency)
 * [Retention](#retention)
-* [Inclusions & Exclusions](#inclusions-&-exclusions)
+* [Inclusions and Exclusions](#inclusions-and-exclusions)
 
 ### Requirements
 
@@ -180,7 +180,7 @@ A: No, this is a manual process at this time. A [support request](https://www.ct
 
 A: This provides the ability to utilize incremental backups with consistent full backup protection. By not expiring unchanged files, there is no need to retransfer them to object storage, which minimizes data transfer costs and provides quicker backups. Bottom line is that it provides quicker and cheaper backups for our users.
 
-### Inclusions & Exclusions
+### Inclusions and Exclusions
 
 **Q: Which files/folders are automatically excluded from the backups?**
 
