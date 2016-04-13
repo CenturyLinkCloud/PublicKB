@@ -1,11 +1,11 @@
 {{{
   "title": "Introducing New Options for Backups, Plus An Update on the Retirement of Standard & Premium Backup Features",
-  "date": "3-28-2016",
+  "date": "4-14-2016",
   "author": "Jared Ruckle",
   "attachments": []
 }}}
 
-Article updated March 28, 2016; article first posted on February 22, 2016
+Article updated April 14, 2016; article first posted on February 22, 2016
 
 ### Introducing New Options for Backups, Plus an Update on the Retirement of Standard & Premium Backup Features
 
@@ -41,6 +41,10 @@ Yes. Snapshots are a useful feature for very specific scenarios – such as righ
 ### Is my team required to take action in order to protect my data after this change?
 
 Yes.  There are several options presented below. It is important to know that if your team does not choose to implement one of the options below - or utilize their own backup design - data will not be protected against loss or corruption.
+
+### What happens to my backup data from Standard and Premium?
+
+Customers will no longer have access to their backup data from Standard and Premium storage features after April 30, 2016. Data from Standard and Premium backups are not carried over or otherwise migrated to the Simple Backup Service, or any other backup product. The Standard and Premium backup data will be inaccessible via Control or the APIs after April 30, 2016. Customers requiring access to this data should request backup restores as soon as possible via ticket at help@ctl.io.
 
 ### What is the Simple Backup Service?
 
