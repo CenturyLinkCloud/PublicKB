@@ -7,6 +7,8 @@
 
 Article first posted on 10-7-2015
 
+Updated April 14, 2016 to reflect the lack of data availability after feature retirement.
+
 Updated on March 29, 2016 to reflect April 1 price drop for block storage, specific dates, as the rollout plan, including the need for customers to create, and apply their own backup policies.
 
 ### Description
@@ -40,6 +42,10 @@ If you would require additional assistance, please contact us at [help@ctl.io](m
 ### When is this happening?
 
 The Standard and Premium products will be retired on May 1. **Until then, there are no changes to Standard and Premium storage. However, customers should evaluate the Simple Backup Service and other alternatives in the meantime.**
+
+### What happens to my backup data from Standard and Premium?
+
+Customers will no longer have access to their backup data from Standard and Premium storage features after April 30, 2016. Data from Standard and Premium backups are not carried over or otherwise migrated to the Simple Backup Service, or any other backup product. The Standard and Premium backup data will be inaccessible via Control or the APIs after April 30, 2016. Customers requiring access to this data should request backup restores as soon as possible via ticket at help@ctl.io.
 
 ### Will my pricing change?
 
