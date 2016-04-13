@@ -137,9 +137,9 @@ preserve_attrs = True
 
 progress_meter = True
 
-proxy_host = localhost
+proxy_host =
 
-proxy_port = 8080
+proxy_port = 0
 
 recursive = False
 

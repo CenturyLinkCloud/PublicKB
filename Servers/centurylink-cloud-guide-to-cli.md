@@ -726,6 +726,10 @@ Simple Backup Service provides a set and forget backup solution to CenturyLink C
 ```
 clc backup create-account-policy --name CLICreated --os-type Windows --paths "c:\\users" e:\\" --excluded-directory-paths "e:\\temp" --backup-interval-hours 24 --retention-days 2
 ```
+**Update an existing backup policy** (adding /data, excluding /data/tmp and changing interval to 48 hours, retention days cannot be changed)
+```
+clc backup update-account-policy --policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --name Linux-backup --os-type Linux --backup-interval-hours 48 --retention-days 7 --paths "/opt/local" "/usr/local" "/data" --excluded-directory-paths "/usr/local/tmp" "/data/tmp" --status ACTIVE
+```
 **Apply a policy to a server**
 ```
 clc backup apply-policy --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --server-name CA3ABCDTAKE02 --storage-region CANADA
