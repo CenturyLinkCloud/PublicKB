@@ -66,7 +66,7 @@ Third, consider the following timeline to protect your VMs with the Simple Backu
 * Experiment with other elements of the Simple Backup UI.
 
 #### Week 2
-* For users with large volumes of servers: familiarize yourself with the Simple Backup APIs (available upon request). This will be the most efficient way to apply policies to many VMs.
+* For users with large volumes of servers: familiarize yourself with the [Simple Backup APIs](https://www.ctl.io/api-docs/v2/#simple-backup). This will be the most efficient way to apply policies to many VMs.
 * Consider data sovereignty implications, and ensure that backups do not cross geographic lines that may violate applicable regulations.
 
 #### Week 3
@@ -132,4 +132,5 @@ The answer varies depending on the workload and your requirements. Along those l
   * [Setting up disaster recovery using Visions Solutions Double-Take Availability](../Servers/setting-up-disaster-recovery-using-visions-solutions-double-take-availability.md)
   * [CenturyLink Cloud Guide to Double Take DR](../Servers/centurylink-cloud-guide-to-doubletake-dr.md)
 
+### Summary
 This information should give you a good starting point to investigate specialized solutions that can meet your business requirements. In the coming weeks, we will post additional knowledge base articles – including sample code snippets for using the Simple Backup Service APIs, and recordings of demonstrations of the solutions mentioned above. If there’s more details or information you would require, please let us know via [help@ctl.io](mailto:help@ctl.io).
