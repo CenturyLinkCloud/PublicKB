@@ -35,7 +35,7 @@ A: No further backups occur from the server to storage. If a backup agent is una
 
 **Q: Is SBS intended to be used for Disaster Recovery?**
 
-A: No, SBS provides file-level backup protection. In fact, SBS does not backup certain [OS files](#inclusions-&-exclusions) or provide snapshot capability. Users can still perform [manual snapshots on-demand](https://www.ctl.io/knowledge-base/servers/creating-and-managing-server-snapshots/) and as scheduled tasks within the server settings. For full [Disaster Recovery](https://www.ctl.io/knowledge-base/support/introducing-new-options-for-backups/#how-does-the-simple-backup-service-compare-to-other-options-are-available-on-centurylink-cloud) services, there are a number of options available internally or through Certified Ecosystem partners.
+A: No, SBS provides file-level backup protection. In fact, SBS does not backup certain [OS files](#inclusions-and-exclusions) or provide snapshot capability. Users can still perform [manual snapshots on-demand](https://www.ctl.io/knowledge-base/servers/creating-and-managing-server-snapshots/) and as scheduled tasks within the server settings. For full [Disaster Recovery](https://www.ctl.io/knowledge-base/support/introducing-new-options-for-backups/#how-does-the-simple-backup-service-compare-to-other-options-are-available-on-centurylink-cloud) services, there are a number of options available internally or through Certified Ecosystem partners.
 
 ### Agent
 
