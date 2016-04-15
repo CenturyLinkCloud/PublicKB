@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-![Netwrix logo](../../images/netwrix-logo.svg)
+![Netwrix logo](http://img.netwrix.com/netwrix-logo-header.svg)
 
 ### Partner Profile
 Netwrix Corporation provides IT auditing software that delivers complete visibility into IT infrastructure changes and data access, including who changed what, when and where each change was made, and who has access to what. Over 150,000 IT departments worldwide rely on Netwrix to audit IT infrastructure changes and data access, prepare reports required for passing compliance audits, and increase the efficiency of IT operations. Founded in 2006, Netwrix has earned more than 70 industry awards and was named to both the Inc. 5000 and Deloitte Technology Fast 500 lists of the fastest growing companies in the U.S.
