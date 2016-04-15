@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to CLI",
-  "date": "02-13-2016",
+  "date": "04-07-2016",
   "author": "Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
@@ -14,7 +14,12 @@
 * [READ commands](#read-commands)
 * [Billing and Accounting](#billing-and-accounting)
 * [Commands change the environment](#commands-change-the-environment)
-* [Advanced usage](#advanced-usage)
+* [Advanced Usage](#advanced-usage)
+* [Application Services control](#application-services-control)
+  * [Relational Database Service](#relational-database-service)
+  * [Intrusion Prevention Service](#intrusion-prevention-service)
+  * [Patching Service](#patching-service)
+  * [Simple Backup Service](#simple-backup-service)
 * [Support](#support)
 
 ### Overview
@@ -33,7 +38,7 @@ Comparison of the two CLI tools:
 | CLI         |   Python            | Go                  |
 | ---------   | ------------------- | -----------------   |
 | API version | Mostly v1 (some v2) |         v2          |
-| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> billing <br> custom-fields <br> data-center <br> firewall-policy <br> group <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> server <br> wait <br>      |
+| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> backup <br> billing <br> custom-fields <br> data-center <br> db <br> firewall-policy <br> group <br> ips <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> os-patch <br> server <br> wait <br>      |
 
 
 
@@ -128,24 +133,27 @@ of the command as well.
 Output of `clc -–help`:
 
 ```
-
 To get full usage information run clc without arguments.
 Available resources:
+          login
+          autoscale-policy
+          db
+          backup
+          data-center
+          load-balancer
+          billing
+          ips
+          server
+          group
+          load-balancer-pool
+          custom-fields
+          os-patch
+          network
+          alert-policy
+          anti-affinity-policy
+          firewall-policy
+          wait
 
-network
-alert-policy
-custom-fields
-login
-server
-anti-affinity-policy
-billing
-load-balancer
-group
-data-center
-firewall-policy
-load-balancer-pool
-wait
-autoscale-policy
 ```
 
 **Logging into the CenturyLink account:**
@@ -508,6 +516,20 @@ Please refer to the [Add or Remove Network Interface to Server using Go CLI](../
 clc firewall-policy create --data-center CA1 --destination-account abcd --sources "10.56.250.0/24" --destinations "10.56.171.0/24" --ports tcp/22
 ```
 
+**Create a snapshot for a server (maximum 10 days expiration)**
+```
+clc server create-snapshot --server-ids CA3ABCDTAKE02 --snapshot-expiration-days 2
+```
+**Find the snapshot ID**
+```
+clc server get --server-name CA3ABCDTAKE02 --query details.snapshots.id --output text
+```
+**Delete a snapshot from a server**
+(Snapshot ID can be retrieved from `clc server get` command)
+```
+clc server delete-snapshot --server-name CA3ABCDTAKE02 --snapshot-id 1
+```
+
 **Create a json file for repeat usage of frequent use commands**
 
 For the example below, servername.json is created to list all the hostname of all servers in the account:
@@ -517,6 +539,248 @@ clc server list --all --query details.host-name --generate-cli-skeleton > server
 To use the file,
 ```
 clc server list --from-file servername.json
+```
+
+### Application Services control
+Relational Database Service,Intrusion Prevention Service, Patching Service and Simple Backup Service can be managed from the GO based CLI.  
+The following examples show the basic functions of what can be done from the CLI.
+
+### Relational Database Service
+For Relational DB, cli can manage creation, deletion, failover, notification and listing of different resources.  The `--help` option can be used to find out more on the options.  For details of Relational Database Service, please see this [knowledge article](../Database/getting-started-with-mysql-rdbs.md).
+
+**Listing all the available data centers for this service:**
+```
+clc db list-datacenters
+```
+**Listing database instances in a data center:**
+```
+clc db list --data-center IL1
+```
+**Querying the ID of the database:**
+```
+clc db list --data-center VA1 --query ID --output text
+```
+**Creating a new database with replication:**
+```
+clc db create --instance-type MYSQL_REPLICATION --external-id yourdb --machine-config "cpu=1,memory=2,storage=15" --backup-retention-days 5 --users "name=admin,password=XXXX" --data-center IL1
+```
+Once created, an output similar to below would include the IP address, the certificate and a summary of the configuration:
+```
+{
+    "BackupRetentionDays": 2,
+    "BackupTime": "0:0",
+    "Backups": null,
+    "Certificate": "-----BEGIN CERTIFICATE-----\xxxxxxxxxxxx\n-----END CERTIFICATE-----",
+    "ExternalId": "yourdb",
+    "Host": "yourdb.il1.rdbs.ctl.io",
+    "Id": 3185,
+    "InstanceType": "MySQL",
+    "Instances": null,
+    "Location": "IL1",
+    "OptionGroup": "",
+    "ParameterGroup": "",
+    "Port": XXXXX,
+    "Servers": [
+        {
+            "Alias": "IL1DBXXXXXXX",
+            "Attributes": {
+                "INTERNAL_IP": "xx.xx.xx.xx"
+            },
+            "Connections": 362,
+            "Cpu": 1,
+            "Id": XXXX,
+            "Location": "il1",
+            "Memory": 2,
+            "Storage": 10
+        }
+    ],
+    "Status": "Configuring",
+    "Users": [
+        {
+            "name": "admin",
+            "password": "XXXX"
+        }
+    ]
+}
+```
+**Create notifications (options are 'CPU_UTILIZATION' or 'MEMORY_UTILIZATION'
+or 'STORAGE_UTILIZATION' to email or SMS) for the database instance:**
+```
+clc db create-notification  --subscription-id 3185 --destination-type SMS --location xxxxxxxxx --notifications NotificationType=MEMORY_UTILIZATION
+```
+
+### Intrusion Prevention Service
+For details of Intrusion Prevention Service, please see [here](../Security/getting-started-with-ips.md).
+
+**Install Intrusion Prevention Service on a host:** (`uninstall` to uninstall)
+```
+clc ips install --server-name CA3ABCDTAKE02
+```
+**Set the notification (options: Webhook, Slack, syslog and Email) with email:**
+```
+clc ips set-notifications --server-name CA3ABCDTAKE02 --notification-destinations "type-code"="EMAIL","email-address"="monitor@abcd.com"
+```
+
+### Patching Service
+With patching, it is part of patching best practice to have roll back plan.  This can be done via a snapshot, in case of bad patch or application issue, it can be reverted quickly.  
+**Patching a server (either Windows2012 or RedHat):**
+```
+clc os-patch apply --server-ids CA3ABCDTAKE02 --os-type Windows2012
+```
+**List the patching status or result:**
+```
+clc os-patch list --server-name CA3ABCDTAKE02
+```
+**Sample outputs**
+Patching is running:
+```
+[
+    {
+        "End_time": "",
+        "Execution_id": "CA3-XXXXX",
+        "Init_messages": [
+            {
+                "End_time": "",
+                "Init_begin_message": "Invoking SUS API",
+                "Init_end_message": "",
+                "Start_time": "2016-04-05 04:14:14"
+            }
+        ],
+        "Start_time": "2016-04-05 04:14:10",
+        "Status": "RUNNING"
+    }
+]
+```
+Completed patching output:
+```
+[
+    {
+        "End_time": "2016-04-05 04:34:14",
+        "Execution_id": "CA3-XXXXX,
+        "Init_messages": [
+            {
+                "End_time": "2016-04-05 04:34:12",
+                "Init_begin_message": "Invoking SUS API",
+                "Init_end_message": "Update Process Complete. There are 0 update
+s to install",
+                "Start_time": "2016-04-05 04:31:51"
+            },
+            {
+                "End_time": "2016-04-05 04:28:11",
+                "Init_begin_message": "Invoking SUS API",
+                "Init_end_message": "Updates Downloaded Successfully downloaded
+4 updates to install##https://support.microsoft.com/en-us/kb/3127231 https://sup
+port.microsoft.com/en-us/kb/3122660 https://support.microsoft.com/en-us/kb/30987
+85 https://support.microsoft.com/en-us/kb/3135998##",
+                "Start_time": "2016-04-05 04:25:15"
+            },
+        ],
+        "Start_time": "2016-04-05 04:14:10",
+        "Status": "COMPLETED"
+    }
+]
+```
+**Review of the a patching execution**
+```
+clc os-patch list-details --server-name CA3ABCDTAKE02 --execution-id CA3-XXXXX
+```
+**Sample Output:**
+```
+{
+    "Begin_message": "Update Process BEGIN",
+    "Duration": "20m 4s",
+    "End_message": "Updating Complete",
+    "End_time": "2016-04-05 04:34:14",
+    "Execution_id": "CA3-XXXXX",
+    "Patches": [
+        {
+            "End_time": "2016-04-05 04:28:26",
+            "Patch_begin_message": "Installing Security Update for Microsoft .NE
+T Framework 4.6 and 4.6.1 for Windows 8.1 and Server 2012 R2 for x64 (KB3135998)
+",
+            "Patch_end_message": "Result Code: 2",
+            "Start_time": "2016-04-05 04:28:26",
+            "Status": "COMPLETED"
+        },
+                      .
+                      .
+                      .
+        {
+            "End_time": "2016-04-05 04:16:32",
+            "Patch_begin_message": "Installing Update for Windows Server 2012 R2
+ (KB3084905)",
+            "Patch_end_message": "Result Code: 2",
+            "Start_time": "2016-04-05 04:16:32",
+            "Status": "COMPLETED"
+        }
+    ],
+    "Start_time": "2016-04-05 04:14:10",
+    "Status": "COMPLETED"
+}
+```
+
+### Simple Backup Service
+Simple Backup Service provides a set and forget backup solution to CenturyLink Cloud customers, to learn more, please refer to this [knowledge article](../Backup/simple-backup-service-how-it-works.md).  With CLI access to Simple Backup Service, it gives customers more management flexibility on managing their backup.
+
+**Create a backup policy:**
+```
+clc backup create-account-policy --name CLICreated --os-type Windows --paths "c:\\users" e:\\" --excluded-directory-paths "e:\\temp" --backup-interval-hours 24 --retention-days 2
+```
+**Update an existing backup policy** (adding /data, excluding /data/tmp and changing interval to 48 hours, retention days cannot be changed)
+```
+clc backup update-account-policy --policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --name Linux-backup --os-type Linux --backup-interval-hours 48 --retention-days 7 --paths "/opt/local" "/usr/local" "/data" --excluded-directory-paths "/usr/local/tmp" "/data/tmp" --status ACTIVE
+```
+**Apply a policy to a server**
+```
+clc backup apply-policy --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --server-name CA3ABCDTAKE02 --storage-region CANADA
+```
+**Unapply a policy to a server**
+```
+clc backup unapply-policy --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --server-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+```
+**Enable/Disable a policy on a server** (Status: ACTIVE/INACTIVE)
+```
+clc backup update-server-policy --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --server-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --status INACTIVE
+```
+**List various objects in Simple Backup Service**
+
+***List of datacenters and storage regions***
+```
+clc backup get-data-centers
+```
+```
+clc backup get-regions
+```
+***List of servers in a datacenter***
+```
+clc backup get-servers --data-center-name "CA3 - Canada (Toronto)"
+```
+***List of supported OS***
+```
+clc backup get-os-types
+```
+***List of available/applied policies in the account***
+```
+clc backup get-account-policies
+```
+```
+clc backup get-account-policy --policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+```
+```
+clc backup get-applied-account-policies --policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+```
+```
+clc backup get-applied-server-policies --server-name CA3ABCDTAKE02
+```
+```
+clc backup get-allowed-account-policies --server-name CA3ABCDTAKE02
+```
+***List of restore points/data***
+```
+clc backup get-stored-data --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --server-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --search-date 2016-04-07
+```
+```
+clc backup get-restore-point-details --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --server-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  --backup-finished-start-date 2016-02-06 --backup-finished-end-date 2016-04-07 --sort-by retentionExpiredDate
 ```
 
 ### Support

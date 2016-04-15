@@ -1,13 +1,15 @@
 {{{
   "title": "About Simple Backup Service and the Retirement of Standard & Premium Storage",
-  "date": "3-23-2016",
+  "date": "3-28-2016",
   "author": "Jared Ruckle & Mark Lee",
   "attachments": []
 }}}
 
 Article first posted on 10-7-2015
 
-Updated on March 23, 2016 to reflect specific dates, as the rollout plan, including the need for customers to create, and apply their own backup policies.
+Updated April 14, 2016 to reflect the lack of data availability after feature retirement.
+
+Updated on March 29, 2016 to reflect April 1 price drop for block storage, specific dates, as the rollout plan, including the need for customers to create, and apply their own backup policies.
 
 ### Description
 
@@ -27,7 +29,7 @@ Your backups on Standard and Premium will continue to function until May 1, 2016
 
 Yes, servers will be automatically removed from Standard and Premium backup on May 1, 2016. If you would like to have your servers protected with the Simple Backup Service, here are steps to follow:
 
-* The Simple Backup Service launches March 29. The service is in beta now - we recommend trying out the service as soon as possible, [please visit the product page and complete the online form](https://www.ctl.io/simple-backup-service/).
+* The Simple Backup Service launches March 29 - we recommend trying out the service as soon as possible, [please visit the product page and complete the online form](https://www.ctl.io/simple-backup-service/).
 * Customers can then create and apply backup policies to their virtual machines
 * Apply policies to a few test machines
 * Associate policies across your deployment as desired
@@ -41,11 +43,15 @@ If you would require additional assistance, please contact us at [help@ctl.io](m
 
 The Standard and Premium products will be retired on May 1. **Until then, there are no changes to Standard and Premium storage. However, customers should evaluate the Simple Backup Service and other alternatives in the meantime.**
 
+### What happens to my backup data from Standard and Premium?
+
+Customers will no longer have access to their backup data from Standard and Premium storage features after April 30, 2016. Data from Standard and Premium backups are not carried over or otherwise migrated to the Simple Backup Service, or any other backup product. The Standard and Premium backup data will be inaccessible via Control or the APIs after April 30, 2016. Customers requiring access to this data should request backup restores as soon as possible via ticket at help@ctl.io.
+
 ### Will my pricing change?
 
 Yes – your price for block storage will drop automatically, since backups are no longer included by default. However, additional backup costs may be incurred via the Simple Backup Service or other selected solutions.
 
-Your May 2016 will reflect these changes.
+New prices for block storage will go into effect April 1, 2016, one month **before** the retirement of Standard & Premium backup features. Your April 2016 invoice will reflect these changes.
 
 ### Will I save money with the Simple Backup Service, compared to what I'm paying today?
 
@@ -55,7 +61,7 @@ It depends on several factors, including:
 * The pace of data change on your servers
 * The retention period of the backups
 
-We anticipate that the combination of *lower* block storage costs and common Simple Backup Service configurations will be *significantly less expensive* than Premium storage, and *slightly more expensive* than Standard storage. The exact differences of course will depend on your implementation and the final price of block storage and of the Simple Backup Service.
+We anticipate that the combination of *lower* block storage costs and common Simple Backup Service configurations will be *significantly less expensive* than Premium storage, and *slightly more expensive* than Standard storage. The exact differences of course will depend on your implementation.
 
 ### What is the Simple Backup Service?
 

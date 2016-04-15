@@ -1,6 +1,6 @@
 {{{
   "title": "Add or Remove Network Interface to Server using Go CLI",
-  "date": "3-25-2016",
+  "date": "3-28-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -16,8 +16,8 @@ Customers may wish to implement additional network interfaces (NICs) on CenturyL
 
 ### Required Data
 * Control Portal Username and Password
-* Server name you wish to add/remove an additional network interface (**Server name must be all caps**)
-* Network name you wish to add/remove (**Network name is case sensitive**)
+* Server name you wish to add/remove an additional network interface
+* Network name you wish to add/remove
 * Account Alias if you wish to add/remove a network interface to a server in a sub-account
 
 ### Add a Network Interface to a Server
