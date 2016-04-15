@@ -1,11 +1,11 @@
 {{{
   "title": "Introducing New Options for Backups, Plus An Update on the Retirement of Standard & Premium Backup Features",
-  "date": "3-28-2016",
+  "date": "4-14-2016",
   "author": "Jared Ruckle",
   "attachments": []
 }}}
 
-Article updated March 28, 2016; article first posted on February 22, 2016
+Article updated April 14, 2016; article first posted on February 22, 2016
 
 ### Introducing New Options for Backups, Plus an Update on the Retirement of Standard & Premium Backup Features
 
@@ -42,6 +42,10 @@ Yes. Snapshots are a useful feature for very specific scenarios – such as righ
 
 Yes.  There are several options presented below. It is important to know that if your team does not choose to implement one of the options below - or utilize their own backup design - data will not be protected against loss or corruption.
 
+### What happens to my backup data from Standard and Premium?
+
+Customers will no longer have access to their backup data from Standard and Premium storage features after April 30, 2016. Data from Standard and Premium backups are not carried over or otherwise migrated to the Simple Backup Service, or any other backup product. The Standard and Premium backup data will be inaccessible via Control or the APIs after April 30, 2016. Customers requiring access to this data should request backup restores as soon as possible via ticket at help@ctl.io.
+
 ### What is the Simple Backup Service?
 
 The [Simple Backup Service](https://www.ctl.io/simple-backup-service/) is a new product that performs scheduled backups of data from your servers and stores them in secure object storage for customized retention periods. Users can configure and manage backup policies (frequency, retention, and paths) via the Control Portal. The details and reports of the backups can be viewed via the Control Portal as well.
@@ -62,7 +66,7 @@ Third, consider the following timeline to protect your VMs with the Simple Backu
 * Experiment with other elements of the Simple Backup UI.
 
 #### Week 2
-* For users with large volumes of servers: familiarize yourself with the Simple Backup APIs (available upon request). This will be the most efficient way to apply policies to many VMs.
+* For users with large volumes of servers: familiarize yourself with the [Simple Backup APIs](https://www.ctl.io/api-docs/v2/#simple-backup). This will be the most efficient way to apply policies to many VMs.
 * Consider data sovereignty implications, and ensure that backups do not cross geographic lines that may violate applicable regulations.
 
 #### Week 3
@@ -128,4 +132,5 @@ The answer varies depending on the workload and your requirements. Along those l
   * [Setting up disaster recovery using Visions Solutions Double-Take Availability](../Servers/setting-up-disaster-recovery-using-visions-solutions-double-take-availability.md)
   * [CenturyLink Cloud Guide to Double Take DR](../Servers/centurylink-cloud-guide-to-doubletake-dr.md)
 
+### Summary
 This information should give you a good starting point to investigate specialized solutions that can meet your business requirements. In the coming weeks, we will post additional knowledge base articles – including sample code snippets for using the Simple Backup Service APIs, and recordings of demonstrations of the solutions mentioned above. If there’s more details or information you would require, please let us know via [help@ctl.io](mailto:help@ctl.io).
