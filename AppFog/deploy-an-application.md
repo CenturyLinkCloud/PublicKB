@@ -17,15 +17,17 @@ We currently support applications using the following application runtimes in Ap
 
 * [Java](deploy-java-application.md)
 * [Node.js](deploy-nodejs-application.md)
-* Ruby
+* [Ruby](deploy-ruby-application.md)
 * [PHP](deploy-php-application.md)
-* Python
+* [Python](deploy-python-application.md)
 * Go
 * [Static websites](deploy-static-website.md)
 
 ### Deploy Application
 
-Once you have an application to deploy that is based on one of the supported application runtimes, you can deploy that application using the Cloud Foundry CLI. Here are the steps for deploying your application:
+Once you have an application to deploy that is based on one of the supported application runtimes, you can deploy that application using the Cloud Foundry CLI or [from the Control Portal](deploy-applicaton-from-ui.md).
+
+Here are the steps for deploying your application in the CLI:
 
 * Go to the directory where your application source code is located
 * Run the command `cf push [name of app]` to deploy it into AppFog (NOTE: [name of app] must be unique so be clever with name such as “theultimateapp-100”)

@@ -1,7 +1,7 @@
 {{{
-  "title": "Getting Started with Intrusion Prevention System (IPS)",
-  "date": "08-11-2015",
-  "author": "Stephanie Wong",
+  "title": "IPS - Getting Started",
+  "date": "02-28-2016",
+  "author": "Client-Security",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
@@ -10,7 +10,9 @@
 ### Overview
 The Platform CenturyLink IPS utilizes an Agent installed on your Virtual Machine (VM) that monitors the VM for suspicious activity. If suspicious activity is found, the Agent logs the activity, which it may block or stop, and reports the incident based on the IPS policy. There is a default policy associated with each VM that is automatically tuned based on the host operating system and installed applications.
 
-This Blueprint is for the actual installation and activation of the IPS service on the VM. Other Blueprints will be available for modifications to the installation.
+We currently support two methods for installing and uninstalling our IPS Agent on your VM.  The first method is via Blueprint (shown below).  The second method is via command line show here [IPS Anywhere](../Security/ipsAnywhere.md). We support any Cloud provider, along with Hybrid Clouds, and Internal Private Clouds.
+
+The Blueprint method shown below installs and activates the IPS agent on your VM. We also provide a Blueprint for uninstalling the IPS agent on your VM.
 
 ### Prerequisites
 * A CenturyLink Cloud Account
@@ -22,19 +24,13 @@ This Blueprint is for the actual installation and activation of the IPS service 
   Installing Virtual Machine - activate.dsm.client-security.ctl.io 443/tcp
   
   Installing Virtual Machine - relay.dsm.client-security.ctl.io 443/tcp
+  
+  Installing Virtual Machine - api.client-security.ctl.io/ips/scripts/install.sh 443/tcp
+
+  Installing Virtual Machine - api.client-security.ctl.io/ips/scripts/uninstall.sh 443/tcp
 
 ### Supported Managed Operating Systems
-* Red Hat Enterprise Linux 5 (64-bit)
-* Red Hat Enterprise Linux 6 (64-bit)
-* Microsoft Windows Server 2008 Standard R2 (64-bit)
-* Microsoft Windows Server 2008 Enterprise (64-bit)
-* Microsoft Windows Server 2008 Enterprise R2 (64-bit)
-* Microsoft Windows Server 2008 Datacenter (64-bit)
-* Microsoft Windows Server 2008 Datacenter R2 (64-bit)
-* Microsoft Windows Server 2012 Datacenter (64-bit)
-* Microsoft Windows Server 2012 Datacenter R2 (64-bit)
-
-
+Current supported operating systems can be found here [Operating System Support](../Security/supported-ips-oses.md)
 
 ### Installation Process
 
@@ -84,7 +80,7 @@ Not at this time, if you'd like to see this feature, please contact [features@ct
 
 **What does the IPS Product Provide?**
 
-Platform CenturyLink’s IPS service helps ensure secure protection against your Virtual Machine (VM) from known intrusion patterns that hackers utilize. It also allows you to spend less time on the maintenance of your system, instead allowing you to focus on the tasks for your core business. We will do the patching and ensure that all agents have up-to-date signatures for possible attacks.
+Platform CenturyLink's IPS service helps ensure secure protection against your Virtual Machine (VM) from known intrusion patterns that hackers utilize. It also allows you to spend less time on the maintenance of your system, instead allowing you to focus on the tasks for your core business.  We will ensure that all IPS agents have up-to-date signatures to prevent possible attacks.
 
 **How do I configure the notifications settings to send alerts?**
 
@@ -92,7 +88,7 @@ Follow the process in the [Configuring IPS Notifications article](configuring-ip
 
 **Will you be adding support for additional Operating Systems?**
 
-Yes, we are working on adding additional OSes. If you have a specific OS you would like to see supported, please contact features.ctl.io.
+Yes, we are working on adding additional OSes. If you have a specific OS you would like to see supported, please contact features@ctl.io.
 
 **If I decommission a Virtual Machine, do I need to uninstall the IPS agent?**
 

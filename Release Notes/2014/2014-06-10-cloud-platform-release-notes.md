@@ -30,7 +30,7 @@
   </li>
   <li><strong>Server/Group search results link to new user interface.&nbsp;</strong>The global search has been updated so that server or group results direct the user to the new user experience .</li>
   <li><strong>Updated bandwidth pricing, model.&nbsp;</strong>The new bandwidth model and pricing takes effect. This is a switch from 95th percentile bandwidth billing to a GB transferred model. The bandwidth graph on the Dashboard has been updated, and invoice
-    information will show the charge for outbound GB transferred during the month. <a href="https://t3n.zendesk.com/entries/42123304-June-2014-Bandwidth-Model-Change-FAQ">See the FAQ</a> for more details.</li>
+    information will show the charge for outbound GB transferred during the month. 
   <li><strong>Blueprint API updated to show servers a Blueprint is acting on</strong>. The GetDeploymentStatus operation in the v1 Blueprint API now returns all the servers that are part of the Blueprint, even if there isn't a "create server" task in the
     Blueprint itself..</li>
   <li><strong>Blueprint Request ID available in script context.&nbsp;</strong>Blueprint developers can now access an additional context parameter from their scripts. The T3.RequestId value is populated with the unique ID of the Blueprint being executed.</li>

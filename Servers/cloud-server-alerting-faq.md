@@ -25,7 +25,7 @@
 
 <p><strong>Q: How do I create alert policies in the Control Portal?</strong>
 </p>
-<p>A: Visit the&nbsp;<strong>Alerts</strong> page using the main navigation men, then choose&nbsp;<strong>create alert policy</strong>. Provide a name for the policy and a specific utilization threshold for CPU/memory/storage that should trigger an alert.
+<p>A: Visit the&nbsp;<strong>Alerts</strong> page using the main navigation menu, then choose&nbsp;<strong>create alert policy</strong>. Provide a name for the policy and a specific utilization threshold for CPU/memory/storage that should trigger an alert.
   <br
   /><img src="https://t3n.zendesk.com/attachments/token/dluhifjpnr6kuw7/?name=monitoringfaq01.png" alt="monitoringfaq01.png" />
 </p>
