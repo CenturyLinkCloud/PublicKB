@@ -227,7 +227,7 @@ A: Wildcard characters are not directly supported at this time. However, all sub
 
 **Q: How is my bill calculated?**
 
-A: SBS provides a simplified billing model. The cost per GB for backups is calculated on the actual data stored on a hourly basis. The actual data stored varies based on the retention, frequency, and your data change rate. After your first initial backup, each subsequent backup will execute as an incremental backup and only capture and store changes to your data. The restore cost is a flat rate based on the restored amount of data in GBs.
+A: SBS provides a simplified billing model. The cost per GB for backups is calculated on the actual data stored on an hourly basis. The actual data stored varies based on the backup retention, frequency, and your data change rate. After your first initial backup, each subsequent backup will capture and store changes to your data. The restore cost is a flat rate based on the restored amount of data in GBs.
 
 * Backup Cost Calculation Example:
 
