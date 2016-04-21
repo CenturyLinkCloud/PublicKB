@@ -6,64 +6,41 @@
   "contentIsHTML": true
 }}}
 
-<strong>SCOPE</strong>
+<p><strong>SCOPE</strong></p>
 <p>Changing IP addresses</p>
-
-<strong>DESCRIPTION&nbsp;</strong>
-<p>At this time, there is no automated way of changing IP addresses via Control Portal. Even with careful planning there may be times when IP addresses will need to be modified. This is a 2 step process to coordinate the change with the Centurylink
-  Cloud Engineer.</p>
-
-<strong>AUDIENCE</strong>
+<p><strong>DESCRIPTION </strong></p>
+<p>At this time, there is no automated way of changing IP addresses via Control Portal. Even with careful planning there may be times when IP addresses will need to be modified.</p>
+<p><strong>AUDIENCE</strong></p>
 <p>Centurylink Cloud Users</p>
-
-<strong>PROCESS</strong>
+<p><strong>PROCESS</strong></p>
+<ul>
+<li><strong>Changing IPs on the same subnet</strong>
 <ol>
-  <li>
-    <p>Gather the necessary information for the change. This will include the following</p>
-  </li>
-  <ol>
-    <li>
-      <p>Server name</p>
-    </li>
-    <li>
-      <p>IP address to be changed, you can view your current list of provisioned IPs under Network =&gt; IP addresses</p>
-    </li>
-    <li>
-      <p>Customer PIN</p>
-    </li>
-  </ol>
+<li>Gather the necessary information for the change and send mail to <a href="mailto:help@ctl.io">help@ctl.io</a>. It should include the following information to avoid delay.</li>
 </ol>
-
+</li>
+<li>Subject of the email with <strong>"IP change request (Control update only)"</strong></li>
+<li>Server name</li>
+<li>IP address to be changed, you can view your current list of provisioned IPs under Network =&gt; IP addresses</li>
+<li>
 <ol>
-  <li>
-    <p>There are 2 ways that this can be performed. </p>
-  </li>
-  <ol>
-    <li>
-      <p>Allowing a Centurylink Cloud engineer to perform the task end to end. </p>
-    </li>
-    <ol>
-      <li>
-        <p>Include the gathered information from step 1 and send mail to noc@tier3.com with subject line&nbsp; <strong>"IP change request."</strong>&nbsp; </p>
-      </li>
-      <li>
-        <p>This mail will also include granting permission for the Cloud engineer to login to the server to make the necessary network configuration changes. </p>
-      </li>
-      <li>
-        <p>Any downtime requirements. This change does require the server to go offline for a short duration &lt; 1min </p>
-      </li>
-    </ol>
-  </ol>
+<li>Customer Care Engineer will perform the updates in Control to remove the old and add the new IP to the requested server. Mail response will be sent from the ticket confirming the change performed.</li>
+<li>Customer to modify the IP on the vm at the Operating system layer.</li>
 </ol>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2. Self-servicing the change on the server and allowing the Cloud engineer to perform the updates to Control.</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. Include the gathered information from step 1 and send mail to noc@tier3.com with subject line <strong>"IP change request (Control update only)"</strong>
-</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2, &nbsp;Please obtain a valid free IP from the network page and configure on the server manually. <strong>CAUTION:</strong> &nbsp;<strong>&nbsp;This will only be applicable for IPs on the same subnet, changing the server IP address to a different network vlan will cause the server to go offline and requires a Cloud engineer to resolve!</strong>
-</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;***NOTE*** Any new builds can potentially claim an IP so plan accordingly.</p>
-
+</li>
+</ul>
+<p> </p>
+<ul>
+<li><strong>Changing IPs to a different subnet</strong>
 <ol>
-  <li>
-    <p>Mail notification from the ticket will be sent to you upon completion of the task.&nbsp;</p>
-  </li>
+<li>Currently, this is a non-standard support request and will require a ticket submission to Custom Requests.  Please reference our <a href="https://www.ctl.io/knowledge-base/support/submitting-custom-requests/">Custom Request</a> process for more information.</li>
+<li>Please also include the information stated in step 1a in addition to the following.
+<ul>
+<li>Subject of the email with <strong>“Custom Request – IP and subnet change request”</strong></li>
+<li>Verbal statement to grant permission for the Customer Care team to login to the server to make OS level changes.</li>
+</ul>
+</li>
 </ol>
+</li>
+</ul>
+<p> </p>
