@@ -1,5 +1,5 @@
 {{{ "title": "IPS - RESTful API",
-        "date": "04-07-2016",
+        "date": "04-20-2016",
         "author": "Client-Security",
         "attachments": [],
         "contentIsHTML": false,
@@ -212,6 +212,6 @@ Note: If you have any questions, or would like assistance from us in setting up 
 
 * Add the following rules to the Firewall that the Syslog server sits behind if located in another location
 
-  * dsm01.client-security.ctl.io 514/upd
+  * dsm01.client-security.ctl.io 514/udp
 
   * dsm02.client-security.ctl.io 514/udp
