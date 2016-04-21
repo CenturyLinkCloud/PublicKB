@@ -18,12 +18,17 @@
 * [Frequency](#frequency)
 * [Retention](#retention)
 * [Inclusions and Exclusions](#inclusions-and-exclusions)
+* [Billing](#billing)
 
 ### Requirements
 
 **Q: What are the network requirements for SBS, if any?**
 
 A: Simple Backup Service requires outbound internet traffic over port 443. CLC VMs allow outbound traffic by default using NAT.
+
+**Q: What OSes are supported?**
+
+A: All Operating Systems that are currently buildable in the CLC Control Portal are supported. Customer imported OVA/OVF OSes and 32-bit OSes are not supported.
 
 **Q: How can I use Simple Backup Service on a server that doesn't have internet access?**
 
@@ -217,3 +222,21 @@ A: Not at this time; currently the exclusion list overrides the inclusion list. 
 **Q: Are wildcard characters supported for inclusion/exclusion backup paths when creating a Backup Policy?**
 
 A: Wildcard characters are not directly supported at this time. However, all sub-folders and files of an included path will be backed up unless specifically added to the exclusion list. All sub-folders and files of an exclusion path will be omitted from backup.
+
+### Billing
+
+**Q: What am I billed for?**
+
+A: SBS provides a simplified billing model. The cost per GB for backups is calculated on the actual data stored on a hourly basis. The restore cost is a flat rate based on the restored amount of data in GBs.
+
+* Backup Cost Calculation Example:
+
+  10 GB of data backed up starting on the 15th of the month.
+
+  Actual Hourly Byte Usage = (10,737,418,240 bytes of backup x 15 days x 24 hours) = 3,865,470,566,400
+
+  Billable amount based on the monthly rate = 3,865,470,566,400 byte usage x (1 GB / 1,073,741,824 bytes) x (1 month / 744 hours) = 4.83869630095703
+
+**Q: Are there any additional costs or hidden fees associated with SBS?**
+
+A: No, there are no hidden fees or additional costs (data transfer, storage, licenses, etc).
