@@ -8,7 +8,7 @@
 
 ![logo](http://kubernetes.io/img/desktop/nav_logo.svg)
 
-Please visit [here](https://github.com/CenturyLinkCloud/adm-kubernetes-on-clc) for insturctions on how to install Kubrenetes on CenturyLink Cloud. 
+Please visit [here](https://github.com/CenturyLinkCloud/adm-kubernetes-on-clc) for instructions on how to install Kubrenetes on CenturyLink Cloud. 
 
 ### Technology Profile
 
