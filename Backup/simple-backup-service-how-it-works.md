@@ -23,7 +23,7 @@ SBS leverages [Object Storage](https://www.ctl.io/object-storage/). Backups are 
 Backup Policies are user-defined configurations that you specify through the [Control Portal](https://control.ctl.io/). Servers are added to policies and start backing up based on the policy details. There is no limit on the number of servers you can add to a policy. Likewise, a server can be added to multiple policies. Backup Policy details include:
 
 * *Name* – A quick, user-friendly name to assist with identifying policies
-* *Operating System* – Linux or Windows. All 64-bit Managed OS versions are currently supported.
+* *Operating System* – Linux or Windows. All Operating Systems that are currently buildable in the CLC Control Portal are supported.
 * *Frequency* – Measured in hours, the frequency establishes the duration between backups. Following a completed backup, the frequency timer restarts and the next backup begins upon frequency expiration.
 * *Retention (days)* – The number of days that each data point is stored in secure object storage.
 * *Paths to Include* – Define what directories should be included in your backups. Multiple paths may be indicated by clicking the ‘add path’ button.
