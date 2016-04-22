@@ -1,6 +1,6 @@
 ﻿{{{
   "title": "Managed Operating System - Frequently Asked Questions",
-  "date": "12-31-2015",
+  "date": "02-11-2015",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false,
@@ -20,9 +20,15 @@ CenturyLink’s Managed OS service helps you spend less time on the IT tasks tha
 * Patch/Update Management – With support available for all critical and vendor-recommended patches, we ensure only OS vendor-recommended patches are installed. Please see the [patching article](../Managed Services/managed-os-operating-system-patching-and-update-processes.md) for more details.
 * Security – We secure the OS with industry-standard anti-virus protection, regular virus and malware signature updates, and additional OS-level hardening to mitigate risk.
 
+**What is not included in the Managed OS service?**
+
+It would be impossible to create an all-inclusive list of everything a product is not, but this section addresses some current or often-asked items.
+
+* Backups are not a part of the Managed OS service, but backups have been an available feature on Standard and Premium storage for all virtual machines. Effective May 1, 2016, the backup features associated with Standard and Premium storage will be retired.  On this date, the data on your storage volumes will no longer be backed up by default. It is highly recommended that you make arrangements to activate [Simple Backup Service](../Support/backup-service-changes-faq.md) for your Managed VMs.
+
 **What do I pay for a managed VM?**
 
-Customers pay for managed operating system and managed applications on an hourly basis. For managed OS, customers pay the management charge whenever the server is powered on. Licensing fees continue whether the server is powered on or off.
+Customers pay for managed operating system and managed applications on an hourly  basis. For managed OS, customers pay the management charge whenever the server is powered on. Licensing fees continue whether the server is powered on or off.
 
 For managed applications, customers pay the management charge for as long as the managed application is on the server (whether the server is powered on or off).
 
@@ -42,16 +48,16 @@ There could be a few causes:
 * Be sure you are creating the server in a data center that supports managed services.
 * It is possible your company has not yet executed a Master Services Agreement (MSA) with CenturyLink Technology Solutions. To obtain a MSA – or if you believe you should already have one in place – please contact a CenturyLink Sales Representative toll free at:
 
-    * United States: 1-855-287-2541
+    * United States: 1-800-871-9244
     * Canada: 1-877-387-3764
     * Europe, Middle East &amp; Africa: +44 (0) 207 400 5600
-    * Japan: +81 3 5214 0180
-    * Hong Kong: +852 3079 4461
-    * Singapore: +65 6591 8824
+    * Japan: +81 3 6435 9658
+    * Hong Kong: +852 2190 8798
+    * Singapore: +65 6768 8098
 
 **Is there anything that I cannot do in the Control Portal with a managed VM?**
 
-A managed server cannot be cloned, archived, or converted to a template. Also, the "time to live" option is not available when creating a new managed server. At this time, you cannot create a managed server within a Cloud Blueprint.
+A managed server cannot be cloned, archived, or converted to a template. You cannot restore a managed server as an unmanaged server. Also, the "time to live" option is not available when creating a new managed server. At this time, you cannot create a managed server within a Cloud Blueprint.
 
 **How do I log into my server?**
 
@@ -91,12 +97,10 @@ Files can be transferred by simply drag and drop in Windows Explorer from your r
 
 The CenturyLink Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at the numbers below, or send email to request@centurylink.com for Managed OS issues. If there is an incident, email can be sent to incident@centurylink.com.
 
-* United States: 1-855-287-2541
-* Canada: 1-877-387-3764
-* Europe, Middle East &amp; Africa: +44 (0) 207 400 5600
-* Japan: +81 3 5214 0180
-* Hong Kong: +852 3079 4461
-* Singapore: +65 6591 8824
+* US: 888.638.6771
+* UK: +44.118.322.6100
+* Singapore: +65.6305.8099
+
 
 **How is Managed Support different than Platform Support?**
 
@@ -129,7 +133,7 @@ Servers **can** be converted from unmanaged to managed by executing the "Managed
 
 **What Anti-Virus is provided for Windows Servers and how often is it updated?**
 
-McAfee 5.02 is the default, standard Anti-Virus for Managed Windows Servers and is updated daily. Any managed servers with Windows OS deployed prior to November 21, 2015 use an older version. If you would like to use a different Anti-Virus, please contact your CenturyLink sales representative to discuss Advanvanced Services.
+McAfee 5.02 is the default, standard Anti-Virus for Managed Windows Servers and is updated daily. Any managed servers with Windows OS deployed prior to November 21, 2015 use an older version. If you would like to use a different Anti-Virus, please contact your CenturyLink sales representative to discuss Advanced Services.
 
 **How do I Set Get Anti-Virus on a Managed RedHat Server?**
 
