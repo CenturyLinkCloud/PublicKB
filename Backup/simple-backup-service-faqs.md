@@ -235,7 +235,7 @@ A: SBS provides a simplified billing model. The cost per GB for backups is calcu
 
   Actual Hourly Byte Usage = (10,737,418,240 bytes of backup x 15 days x 24 hours) = 3,865,470,566,400
 
-  Billable amount based on the monthly rate = 3,865,470,566,400 byte usage x (1 GB / 1,073,741,824 bytes) x (1 month / 744 hours) = 4.83869630095703
+  Billable amount based on the monthly rate = 3,865,470,566,400 byte usage x (1 GB / 1,073,741,824 bytes) x (1 month / 720 hours) = 5.76460752303 GB
 
 **Q: Are there any additional costs or hidden fees associated with SBS?**
 
