@@ -7,7 +7,6 @@
 }}}
 ### New Features (3)
 * __New CenturyLink Cloud Data Center - AU1 APAC (Sydney) Now Live.__ 
-  Effective April 12, 2016, CenturyLink now has a second location in APAC - Sydney, Australia is now live for all users, with the flagship CenturyLink Cloud infrastructure services. [Read the blog](//www.ctl.io/blog/post/australian-public-cloud-node-ga/) or [view data center feature availability.](//www.ctl.io/data-centers/) 
 * __Simple Backup Service__. Effective April 12, 2016, Simple Backup Service has added multiple new features.
   - Simple Backup Agent UI now provides a path to a new log file which contains failed or partially successful SBS jobs. ![FailedBackupsFileCSV_Location_shown](../images/FailedBackupsFileCSV_Location_shown.JPG)
   - Now it is possible to fully remove a server from a Backup Policy using both the Control Portal and API.  In the Control Portal, simply navigate to the Server Policy Details screen, and use the "Remove" button to remove the server from the backup policy. To accomplish this programmatically via the Simple Backup API, refer to the [Delete Server Policy](https://www.ctl.io/api-docs/v2/#simple-backup-delete-server-policy) documentation. ![Server_Policy_Remove_Button](../images/Server_Policy_Remove_Button.png)  
