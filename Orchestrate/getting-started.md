@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Orchestrate",
-  "date": "4-20-2015",
+  "date": "04-20-2015",
   "author": "Adam DuVander",
   "attachments": [],
   "related-products" : [],
@@ -40,4 +40,4 @@ An **API Key** is a code passed from your application to our API that identifies
 Collections are a grouping of the JSON objects you will store and query. Collections are similar to tables in a relational database or buckets in object storage.
 
 With some basic understanding of Orchestrate, dive into the
-[Key / Value documentation](https://orchestrate.io/docs/key-value) on Orchestrate's website.
+[Key / Value documentation](https://www.ctl.io/knowledge-base/orchestrate/key-value/) on Orchestrate's website.
