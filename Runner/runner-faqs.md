@@ -8,31 +8,29 @@
   "sticky": true
 }}}
 
-
 #### Audience
 
 This article is to support customers of Runner, a product that enables teams, developers, and engineers to quickly provision, interact, and modify their environments anywhere - CenturyLink Cloud, third-party cloud providers, and on-premises.  Additionally, the responses in this FAQ document are specific to using the service through the Control Portal.
 
+#### FREQUENTLY ASKED QUESTIONS
 
-## FREQUENTLY ASKED QUESTIONS
+**Q: Do I need a CenturyLink Cloud account to use the Runner tools?**
 
-###### Q: Do I need a CenturyLink Cloud account to use the Runner tools?
+A: Yes, you will need a CenturyLink Cloud account. If you don't already have an account with us, you can start with a [free 30 day trial](https://www.ctl.io/free-trial/) to help kick the tires.
 
-A: Yes, you will need a CenturyLink Cloud account. You can start with a free 30 day trial to help kick the tires. However, although you need a CenturyLink Cloud account so you can use the Runner tools against system resources you have on site or with other cloud providers.
+**Q: How can I use Runner services against resources present in other cloud providers or on-prem environment?**
 
-###### Q: How can I use Runner services against resources in other cloud providers or my on-premises environment?
+**A:** To run Ansible playbooks against other cloud providers, users would need to leverage the VPN service which would help to provide the necessary VPN connections for accessing third party cloud providers. Runner will establish the VPN connections before the playbook execution if any such connections exist for the account.
 
-A: To run Ansible playbooks against other cloud providers, users would need to leverage the VPN service which would help to provide the necessary VPN connections for accessing third party cloud providers. Runner will establish the VPN connections before the playbook execution if any such connections exist for the account.
+**Q: How can I check the status of my playbook execution?**
 
-###### Q: How can I check the status of my playbook execution?
-
-A: Status of Job execution can be retrieved in either of following ways:
+**A:** Status of Job execution can be retrieved in either of following ways:
 - By registering the job document with a call back url at the time of creating the job
 - By making HTTPs calls directly to our status-api
 
-###### Q: Can I run a playbook from a private Github repository?
+**Q: Can I run a playbook from a private Github repository?**
 
-A: Absolutely! Credentials capable of pulling the repository will need to be provided in the payload sent to the Runner’s Job Service. The code block would look similar to this:
+**A:** Absolutely! Credentials capable of pulling the repository will need to be provided in the payload sent to the Runner’s Job Service. The code block would look similar to this:
 
 ```json
 "repository": {
@@ -46,15 +44,13 @@ A: Absolutely! Credentials capable of pulling the repository will need to be pro
 }
 ```
 
-###### Q: Will I be able to use Runner to manage my CenturyLink Cloud resources?
+**Q: Will I be able to use Runner to manage my CenturyLink Cloud resources?**
 
-A: Yes our services use the underlying Centurylink Cloud APIs to let you manage your resources in Centurylink Cloud. In addition, you can use our services to manage your resources on third-party cloud providers, and on-premises.
+**A:** Yes our services use the underlying Centurylink Cloud APIs to let you manage your resources in Centurylink Cloud. In addition, you can use our services to manage your resources on third-party cloud providers, and on-premises.
 
-###### Q: I previously defined a job, how do I execute it again?
+**Q: I previously defined a job, how do I execute it again?**
 
-A: You can use the job id of the previously created job to start another execution of that job. Simply POST a request as described in the documentation
-
-Start a Job
+**A:** You can use the job id of the previously created job to start another execution of that job. Simply POST a request as described in the documentation "Start a Job"
 
 Because our Runner’s Job services do not persist any private keys related to the job, you will need to send that information as well if required. For example:
 
@@ -62,6 +58,49 @@ Because our Runner’s Job services do not persist any private keys related to t
  { "sshPrivateKey":"LS0tLS1CRUdJTiBSU0EgUFJJVkFURS..." }
 ```
 
-###### Q: How do I provide feedback?
+**Q: How much will Runner cost me?**
 
-A: If you have questions or feedback, please submit them to our team by emailing [runner-help@ctl.io](mailto:runner-help@ctl.io).
+**A:** All internal jobs are FREE. There are no base charges, or monthly fees. You only pay for the resources you create.
+
+All external jobs (on-premises, multi-cloud) are priced at $0.015/hr.
+
+**Q: Is there a maximum number of concurrent jobs I can have running?**
+
+**A:** Yes, the maximum number of concurrent jobs is four (4).
+
+**Q: How do I handle this error?**
+
+`ERROR: clc_server is not a legal parameter in an Ansible task or handler`
+
+**A:** This error indicates that your environment isn’t fully set up.
+
+Ansible requires explicitly including non-core modules via a library path. (see docs)
+
+Here are two recommended ways for solving this issue:
+
+1. Update the ANSIBLE_LIBRARY environment variable as such ANSIBLE_LIBRARY=/path/to/installed/module
+2. Configure the library setting in ansible.cfg. This file is found in /etc but you can also define this file local to your workspace.
+
+**Q: In case of a Job execution failure, where should I look to get more information related to the failure?**
+
+**A:** When you see the execution status as `FAILURE` or `INIT_FAILURE`, then follow the below steps to find out more details on the cause for failure,
+
+Query the status for your execution and then:
+
+* First look for event_type=playbook_result and look for the message in that json block
+* Based on the above message you can further narrow down to the actual error message by looking for event_type=runner_on_failed or event_type=runner_on_unreachable or event_type=runner_on_async_failed and get the corresponding message in that json block
+
+**Q: Can I configure my Runner jobs to be executed in a schedule?**
+
+**A:** Yes you could schedule the jobs, please refer the API documentation for more details Job Schedule
+
+**Q: My Job is still RUNNING, is there a way for me to check the tasks completed and their statuses?**
+
+**A:** Absolutely, there are couple of ways you can check status of an execution at any state:
+
+* Status API – You can also view detailed status of the execution via Status API
+* Webhooks – You could check the status via the webhook, if you have specified the details in the call back entity while creating the job
+
+**Q: How do I provide feedback?**
+
+A: If you have questions or feedback, please submit them to our team by emailing [help@ctl.io](mailto:help@ctl.io).
