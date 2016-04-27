@@ -649,40 +649,53 @@ Note: The maximum number of records per request is 100, use the combination of p
 | NAME | TYPE |	DESCRIPTION	|
 | --- | --- | --- | --- |
 | totalSize |	integer |	Total number of jobs created under your account alias. |
-| page	integer	The current page number based on your query.
-size	integer	Page size of your query.
-results	array	List of jobs
-Jobs Entity
-NAME	TYPE	DESCRIPTION
-id	string	ID of the job.
-accountAlias	string	The account alias under which the job was created.
-description	string	Description of the job.
-executionTtl	integer	The time in minutes expected for the job execution to be complete.
-repository	array	GitHub repository details where the playbook is related to the job is present.
-hosts	array	Hosts entity schema
-callbacks	array	Call back webhook urls where you would like to view live feed of job status.
-createdTime	integer	Timestamp when the Job was created.
-lastUpdatedTime	integer	Timestamp when the Job was last updated.
-links	array	Collection of entity links that point to resources related to this policy.
-Repository Entity
-NAME	TYPE	DESCRIPTION
-credentials	array	Credentials of a private GitHub repository where the playbook is present.
-url	string	Playbook GitHub repository url.
-branch	string	Repository branch or tag where the playbook is present.
-defaultPlaybook	string	Name of the playbook to be executed with file extension.
-Credentials Entity
-NAME	TYPE	DESCRIPTION
-username	string	User name of your private GitHub repository.
-password	string	Password of your private GitHub repository.
-Hosts Entity
+| page |	integer |	The current page number based on your query. |
+| size |	integer |	Page size of your query. |
+| results |	array |	List of jobs |
+
+**Jobs Entity**
+
+| NAME | TYPE |	DESCRIPTION	|
+| --- | --- | --- | --- |
+| id |	string |	ID of the job. |
+| accountAlias |	string |	The account alias under which the job was created. |
+| description |	string |	Description of the job. |
+| executionTtl |	integer |	The time in minutes expected for the job execution to be complete. |
+| repository |	array |	GitHub repository details where the playbook is related to the job is present. |
+| hosts |	array |	Hosts entity schema |
+| callbacks |	array |	Call back webhook urls where you would like to view live feed of job status. |
+| createdTime |	integer |	Timestamp when the Job was created. |
+| lastUpdatedTime |	integer |	Timestamp when the Job was last updated. |
+| links |	array |	Collection of entity links that point to resources related to this policy. |
+
+**Repository Entity**
+
+| NAME | TYPE |	DESCRIPTION	|
+| --- | --- | --- | --- |
+| credentials |	array |	Credentials of a private GitHub repository where the playbook is present. |
+| url |	string |	Playbook GitHub repository URL. |
+| branch |	string |	Repository branch or tag where the playbook is present. |
+| defaultPlaybook |	string |	Name of the playbook to be executed with file extension. |
+
+**Credentials Entity**
+
+| NAME | TYPE |	DESCRIPTION	|
+| --- | --- | --- | --- |
+| username |	string |	User name of your private GitHub repository. |
+| password |	string |	Password of your private GitHub repository. |
+
+**Hosts Entity**
+
 Defined list of hosts and their related variable made available to the playbook when a play or task is executed for that host.
 
-NAME	TYPE	DESCRIPTION
-id	string	Host name on which the play is to be executed.
-hostVars	array	Host vars are made available to the playbook when a play or task is executed for that host.
-Examples
+| NAME | TYPE |	DESCRIPTION	|
+| --- | --- | --- | --- |
+| id |	string |	Host name on which the play is to be executed. |
+| hostVars |	array |	Host vars are made available to the playbook when a play or task is executed for that host. |
 
-JSON
+**Example**
+
+```JSON
 {
     "totalSize": 2000,
     "page": 0,
@@ -736,152 +749,55 @@ JSON
                   }
     ]
 }
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-JSON
-{
-    "totalSize": 2000,
-    "page": 0,
-    "size": 100,
-    "results": [
-                  {
-                    "id": "1111505e-6773-494a-b2bf-d2cc2684710d",
-                    "accountAlias": "XXXX",
-                    "description": "Your job description",
-                    "executionTtl": null,
-                    "repository": {
-                      "url": "https://GitHub.com/yourrepository.GitHub",
-                      "branch": "repository_branch",
-                      "defaultPlaybook": "example.yml",
-                      "credentials": {
-                        "username": "GitHub username",
-                        "password": "GitHub password"
-                      }
-                    },
-                    "hosts": [
-                      {
-                        "id": "localhost",
-                        "hostVars": {
-                          "ansible_connection": "local",
-                          "datacenter": "VA1"
-                        }
-                      }
-                    ],
-                    "properties": {},
-                    "status": "ACTIVE",
-                    "callbacks": [
-                      {
-                        "url": "your callback webhook",
-                        "level": "DEBUG"
-                      }
-                    ],
-                    "createdTime": 1440785845177,
-                    "lastUpdatedTime": 1440785845177,
-                    "links": [
-                      {
-                        "ref": "self",
-                        "id": "52f9505e-6773-494a-b2bf-d2cc2684710d",
-                        "href": "/v2/workflow/XXXX/jobs/52f9505e-6773-494a-b2bf-d2cc2684710d",
-                        "verbs": [
-                          "GET",
-                          "POST",
-                          "DELETE"
-                        ]
-                      }
-                    ]
-                  }
-    ]
-}
-Top
-Start a Job
-Creates an execution of an existing job by ID against different host(s). Calls to this operation must include a token acquired from the authentication endpoint. See the Login API for information on acquiring this token. Once the execution is created, it will be queued to start at the earliest. Live status feed of the execution can be viewed with your callback(s) url if you have defined at the time of job creation.
+```
 
-When to Use It
+
+### START JOB <a id="StartJob"></a>
+
+Creates an execution of an existing job by ID against different host(s). Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token. Once the execution is created, it will be queued to start at the earliest. Live status feed of the execution can be viewed with your callback(s) URL if you have defined at the time of job creation.
+
+**When to use it**
+
 Use this API operation when you would like to explicitly start a job execution on any host(s).
 
-URL
-Structure
+#### URL
+**Structure**
 
-POST https://api.runner.ctl.io/jobs/{accountAlias}/{id}/start
-1
-POST https://api.runner.ctl.io/jobs/{accountAlias}/{id}/start
-Example
+`POST https://api.runner.ctl.io/jobs/{accountAlias}/{id}/start`
 
-POST https://api.runner.ctl.io/jobs/XXXX/1111505e-6773-494a-b2bf-d2cc2684710d/start
-1
-POST https://api.runner.ctl.io/jobs/XXXX/1111505e-6773-494a-b2bf-d2cc2684710d/start
-Request
-URI Parameters
-NAME	TYPE	DESCRIPTION	REQ.
-accountAlias	string	Short code for a particular account.	Yes
-id	string	Id of the job to be started.	Yes
-Content Properties
+**Example**
+
+`POST https://api.runner.ctl.io/jobs/XXXX/1111505e-6773-494a-b2bf-d2cc2684710d/start`
+
+#### Request
+**URI Parameters**
+
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| accountAlias |	string |	Short code for a particular account. |	Yes |
+| id |	string |	Id of the job to be started. |	Yes |
+
+**Content Properties**
+
 Based on your job definition you have to start an execution by passing in required host(s) information. If you would like to start the execution without any host, then you have to POST an empty object.
 
-NAME	TYPE	DESCRIPTION	REQ.
-hosts	array	Hosts entity schema	No
-sshPrivateKey	string	SSH private key (base64 encoded) that can be used to connect listed hosts.	No
-Hosts Entity
-Define list of hosts and their related variable made available to the playbook when a play or task is executed for that host.
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| hosts |	array |	Hosts entity schema. |	No |
+| sshPrivateKey |	string |	SSH private key (base64 encoded) that can be used to connect listed hosts. |	No |
 
-NAME	TYPE	DESCRIPTION	REQ.
-id	string	Host name on which the play is to be executed.	Yes
-sshPrivateKey	string	Private Key (base64 encoded) required when any task to be performed on the specified host connected via SSH.	No
-Example
+**Hosts Entity**
 
-JSON
+Define list of hosts and their related variable made available to the playbook, when a playbook or task is executed for that host.
+
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| id |	string |	Host name on which the play is to be executed. |	Yes |
+| sshPrivateKey |	string |	Private Key (base64 encoded) required when any task to be performed on the specified host connected via SSH. |	No |
+
+**Example**
+
+```JSON
 {
     "hosts": [
         {
@@ -889,36 +805,26 @@ JSON
         }
     ]
 }
-1
-2
-3
-4
-5
-6
-7
-8
-JSON
-{
-    "hosts": [
-        {
-            "id": "localhost"
-        }
-    ]
-}
-Response
+```
+
+#### Response
+
 An execution document will be your response but you could view the execution details by making a call to the GET Job Executions.
 
-Entity Definition
-Name	Type	Description
-execution_id	string	Execution id of the queried Job.
-start	number	EPOCH format of job execution start Date time in UTC.
-end	number	EPOCH format of job execution end Date time in UTC.
-job_id	string	Id of the job being queried.
-account_alias	string	Short code for a particular account.
-status	string	Will be PENDING at the time of start.
-Examples
+**Entity Definition**
 
-JSON
+| NAME | TYPE |	DESCRIPTION	|
+| --- | --- | --- | --- |
+| execution_id |	string |	Execution id of the queried Job. |
+| start |	number |	EPOCH format of job execution start Date time in UTC. |
+| end |	number |	EPOCH format of job execution end Date time in UTC. |
+| job_id |	string |	Id of the job being queried. |
+| account_alias |	string |	Short code for a particular account. |
+| status |	string |	Will be PENDING at the time of start. |
+
+**Examples**
+
+```JSON
 {
     start: null
     end: null
@@ -930,85 +836,74 @@ JSON
     failed_hosts: [0]
     is_vpn_established: false
 }
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-JSON
-{
-    start: null
-    end: null
-    job_id: "1111505e-6773-494a-b2bf-d2cc2684710d"
-    execution_id: "44fdcfa2-6a7f-46d3-9f71-22e629e2358a"
-    account_alias: "XXXX"
-    status: "PENDING"
-    repository_log: null
-    failed_hosts: [0]
-    is_vpn_established: false
-}
-Top
-Get Job Executions
-Gets details of all the executions of a particular Job by ID. Calls to this operation must include a token acquired from the authentication endpoint. See the Login API for information on acquiring this token.
+```
 
-When to Use It
+
+### GET JOB EXECUTIONS <a id="GetJobExecutions"></a>
+
+Gets details of all the executions of a particular Job by ID. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
+
+**When to use it**
+
 Use this API operation when you would like to get details of all the executions of a particular job created within your account.
 
-URL
-Structure
+#### URL
+**Structure**
 
-GET https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/executions?page=0&size=100
-1
-GET https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/executions?page=0&size=100
-Example
+`GET https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/executions?page=0&size=100`
 
-GET https://api.runner.ctl.io/jobs/XXXX/ba7e6f6a-2673-4580-a297-8d7e44483bd7/executions
-1
-GET https://api.runner.ctl.io/jobs/XXXX/ba7e6f6a-2673-4580-a297-8d7e44483bd7/executions
-Request
-URI Parameters
-NAME	TYPE	DESCRIPTION	REQ.
-accountAlias	string	Short code for a particular account.	Yes
-id	string	Id of the job being queried.	Yes
-page	integer	You can specify the page number for which you would like to get the results for.
-Default is “0”.	No
-size	integer	You can specify the page size between 1 to 100.
-Default is “100”.	No
-Response
+**Example**
+
+`GET https://api.runner.ctl.io/jobs/XXXX/ba7e6f6a-2673-4580-a297-8d7e44483bd7/executions`
+
+#### Request
+**URI Parameters**
+
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| accountAlias |	string |	Short code for a particular account. |	Yes |
+| id |	string |	Id of the job being queried. |	Yes |
+| page |	integer |	You can specify the page number for which you would like to get the results for. Default is “0”. |	No |
+| size |	integer |	You can specify the page size between 1 to 100. Default is “100”. |	No |
+
+#### Response
+
 Preview of all executions of a particular job.
 
-Entity Definition
-Name	Type	Description
-totalSize	integer	Total number of executions for a queried job.
-page	integer	The current page number based on your query.
-size	integer	Page size of your query.
-results	array	List of job executions
-Job Executions Entity
-Name	Type	Description
-execution_id	string	Execution id of the queried Job.
-timers	array	History of execution timers.
-job_id	string	Id of the job being queried.
-account_alias	string	Short code for a particular account.
-status	string	Current status of the execution. Status transition from PENDING -> RUNNING -> SUCCESS/FAILURE.
-repository_log	string	GitHub commit version of the playbook, if the defined playbook is from GitHub repository.
-failed_hosts	array	List of failed hosts.
-is_vpn_established	boolean	Set to true if the execution has any VPN connections enabled part of the play.
-Execution timers Entity
+**Entity Definition**
+
+| NAME | TYPE |	DESCRIPTION	|
+| --- | --- | --- | --- |
+| totalSize |	integer |	Total number of executions for a queried job. |
+| page |	integer |	The current page number based on your query. |
+| size |	integer |	Page size of your query. |
+| results |	array |	List of job executions. |
+
+**Job Executions Entity**
+
+| | NAME | TYPE |	DESCRIPTION	|
+| --- | --- | --- | --- |
+|  sdexecution_id |	string |	Execution id of the queried Job. |
+| timers |	array |	History of execution timers. |
+| job_id |	string |	Id of the job being queried. |
+| account_alias |	string |	Short code for a particular account. |
+| status |	string |	Current status of the execution. Status transition from PENDING -> RUNNING -> SUCCESS/FAILURE. |
+| repository_log |	string |	GitHub commit version of the playbook, if the defined playbook is from GitHub repository. |
+| failed_hosts |	array |	List of failed hosts. |
+| is_vpn_established |	boolean |	Set to true if the execution has any VPN connections enabled part of the play. |
+
+**Execution Timers Entity**
+
 An execution will have multiple timers only when it is restarted.
 
-Name	Type	Description
-start	number	EPOCH format of job execution start Date time in UTC.
-end	number	EPOCH format of job execution end Date time in UTC.
-Examples
+| NAME | TYPE |	DESCRIPTION	|
+| --- | --- | --- | --- |
+| start |	number |	EPOCH format of job execution start Date time in UTC. |
+| end |	number |	EPOCH format of job execution end Date time in UTC. |
 
-JSON
+**Example**
+
+```JSON
 {
     "totalSize": 2,
     "page": 0,
@@ -1063,155 +958,56 @@ JSON
         }
     ]   
  }
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-JSON
-{
-    "totalSize": 2,
-    "page": 0,
-    "size": 2,
-    "results": [
-        {
-            "start": 1444924450534,
-            "end": 1444924452123,
-            "job_id": "ba7e6f6a-2673-4580-a297-8d7e44483bd7",
-            "execution_id": "43324ce3-dc2a-480e-94b9-1ea705373111",
-            "account_alias": "XXXX",
-            "status": "FAILURE",
-            "repository_log": "{
-              "recent_commit": [
-                  {
-                       "commit": "b087e1a44c79d0576d7cccd249d3e71a3c54fe12",
-                       "author": "Author name",  
-                       "author_email": "sample@xxx.com",  
-                       "date": "Wed Sep 16 16:27:20 2015 -0500",  
-                       "message": "Latest commit"
-                  }
-              ],
-              "tags": []
-            }",
-            "failed_hosts": [
-                                "localhost"
-            ],
-            "is_vpn_established": false
-        },
-        {
-            "start": 1444919575778,
-            "end": null,
-            "job_id": "ba7e6f6a-2673-4580-a297-8d7e44483bd7",
-            "execution_id": "44fdcfa2-6a7f-46d3-9f71-22e629e2358a",
-            "account_alias": "XXXX",
-            "status": "RUNNING",
-            "repository_log": "{
-              "recent_commit": [
-                  {
-                       "commit": "b087e1a44c79d0576d7cccd249d3e71a3c54fe12",
-                       "author": "Author name",  
-                       "author_email": "sample@xxx.com",  
-                       "date": "Wed Sep 16 16:27:20 2015 -0500",  
-                       "message": "Latest commit"
-                  }
-              ],
-              "tags": []
-            }",                                         "failed_hosts": [        
-            ],
-            "is_vpn_established": false,
-            "id": "61671a90-93f2-491a-b8f2-aed515f0b5a6"
-        }
-    ]   
- }
-Top
-Re-start a Job Execution
-Re-starts a failed execution of an existing job by ID against failed host(s). Calls to this operation must include a token acquired from the authentication endpoint. See the Login API for information on acquiring this token. Once the execution is created, it will be queued to re-start at the earliest. Live status feed of the execution can be viewed with your callback(s) url if you have defined at the time of job creation.
+```
 
-When to Use It
+
+### RESTART JOB EXECUTION <a id="RestartJobExecution"></a>
+
+Restarts a failed execution of an existing job by ID against failed host(s). Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token. Once the execution is created, it will be queued to restart at the earliest. Live status feed of the execution can be viewed with your callback(s) URL if you have defined at the time of job creation.
+
+**When to use it**
+
 This API operation is applicable only on Failed executions of a job. Use this API operation when you would like to execute the same play against the failed host(s).
 
-URL
-Structure
+#### URL
+**Structure**
 
-POST https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/executions/{executionId}/restart
-1
-POST https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/executions/{executionId}/restart
-Example
+`POST https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/executions/{executionId}/restart`
 
-POST https://api.runner.ctl.io/jobs/XXXX/1111505e-6773-494a-b2bf-d2cc2684710d/executions/44fdcfa2-6a7f-46d3-9f71-22e629e2358a/restart
-1
-POST https://api.runner.ctl.io/jobs/XXXX/1111505e-6773-494a-b2bf-d2cc2684710d/executions/44fdcfa2-6a7f-46d3-9f71-22e629e2358a/restart
-Request
-URI Parameters
-NAME	TYPE	DESCRIPTION	REQ.
-accountAlias	string	Short code for a particular account.	Yes
-jobId	string	Id of the job to be re-started.	Yes
-executionId	string	Execution id of the job to be re-started.	Yes
-Content Properties
-Based on your job definition you can re-start an execution by passing in required failed host(s) information. If you would like to re-start the execution without any host, then you have to POST an empty object.
+**Example**
 
-NAME	TYPE	DESCRIPTION	REQ.
-hosts	array	Hosts entity schema	No
-sshPrivateKey	string	SSH private key (base64 encoded) that can be used to connect listed hosts.	No
-Hosts Entity
+`POST https://api.runner.ctl.io/jobs/XXXX/1111505e-6773-494a-b2bf-d2cc2684710d/executions/44fdcfa2-6a7f-46d3-9f71-22e629e2358a/restart`
+
+#### Request
+**URI Parameters**
+
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| accountAlias |	string |	Short code for a particular account. |	Yes |
+| jobId |	string |	ID of the job to be restarted. |	Yes |
+| executionId |	string |	Execution ID of the job to be restarted. |	Yes |
+
+**Content Properties**
+
+Based on your job definition you can restart an execution by passing in required failed host(s) information. If you would like to restart the execution without any host, then you have to POST an empty object.
+
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| hosts |	array |	Hosts entity schema |	No |
+| sshPrivateKey |	string |	SSH private key (base64 encoded) that can be used to connect listed hosts. |	No |
+
+**Hosts Entity**
+
 Define list of failed host(s) and their related variable made available to the playbook when a play or task is executed for that host.
 
-NAME	TYPE	DESCRIPTION	REQ.
-id	string	Host name on which the play is to be executed.	Yes
-sshPrivateKey	string	Private Key (base64 encoded) required when any task to be performed on the specified host connected via SSH.	No
-Example
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| id |	string |	Host name on which the play is to be executed. |	Yes |
+| sshPrivateKey |	string |	Private Key (base64 encoded) required when any task to be performed on the specified host connected via SSH. |	No |
 
-JSON
+**Example**
+
+```JSON
 {
     "hosts": [
         {
@@ -1219,44 +1015,37 @@ JSON
         }
     ]
 }
-1
-2
-3
-4
-5
-6
-7
-8
-JSON
-{
-    "hosts": [
-        {
-            "id": "localhost"
-        }
-    ]
-}
-Response
+```
+
+#### Response
+
 An execution document with your previous run timer details with an updated status as “PENDING” will be your response. You could view the execution details by making a call to the GET Job Executions.
 
-Entity Definition
-Name	Type	Description
-execution_id	string	Execution id of the queried Job.
-timers	array	History of execution timers.
-job_id	string	Id of the job being queried.
-account_alias	string	Short code for a particular account.
-status	string	Will be PENDING at the time of re-start.
-repository_log	string	GitHub commit version of the playbook, if the defined playbook is from GitHub repository.
-failed_hosts	array	List of failed hosts.
-is_vpn_established	boolean	Set to true if the execution has any VPN connections enabled part of the play.
-Execution timers Entity
+**Entity Definition**
+
+| NAME | TYPE |	DESCRIPTION	|
+| --- | --- | --- | --- |
+| execution_id |	string |	Execution id of the queried Job. |
+| timers |	array |	History of execution timers. |
+| job_id |	string |	Id of the job being queried. |
+| account_alias |	string |	Short code for a particular account. |
+| status |	string |	Will be PENDING at the time of re-start. |
+| repository_log |	string |	GitHub commit version of the playbook, if the defined playbook is from GitHub repository. |
+| failed_hosts |	array |	List of failed hosts. |
+| is_vpn_established |	boolean |	Set to true if the execution has any VPN connections enabled part of the play. |
+
+**Execution Timers Entity**
+
 An execution will have multiple timers only when it is restarted.
 
-Name	Type	Description
-start	number	EPOCH format of job execution start Date time in UTC.
-end	number	EPOCH format of job execution end Date time in UTC.
-Examples
+| NAME | TYPE |	DESCRIPTION	|
+| --- | --- | --- | --- |
+| start |	number |	EPOCH format of job execution start Date time in UTC. |
+| end |	number |	EPOCH format of job execution end Date time in UTC. |
 
-JSON
+**Example**
+
+```JSON
 {
     "timers": [
         {
@@ -1272,102 +1061,78 @@ JSON
     failed_hosts: [0],
     is_vpn_established: false
 }
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-JSON
-{
-    "timers": [
-        {
-          "start": 1445359386400,
-          "end": 1445359388219
-        }
-    ],
-    job_id: "1111505e-6773-494a-b2bf-d2cc2684710d",
-    execution_id: "44fdcfa2-6a7f-46d3-9f71-22e629e2358a",
-    account_alias: "XXXX",
-    status: "PENDING",
-    repository_log: null,
-    failed_hosts: [0],
-    is_vpn_established: false
-}
-Top
-Stop a Job Execution
-To stop a Pending/Initializing/Running/Stopping job execution gracefully. Calls to this operation must include a token acquired from the authentication endpoint. See the Login API for information on acquiring this token. Live status feed of the execution can be viewed with your callback(s) url if you have defined at the time of job creation.
+```
 
-When to Use It
+
+### STOP JOB EXECUTION <a id="StopJobExecution"></a>
+
+To stop a Pending/Initializing/Running/Stopping job execution gracefully. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token. Live status feed of the execution can be viewed with your callback(s) url if you have defined at the time of job creation.
+
+**When to use it**
+
 Use this API operation when you would like to stop a Pending/Initializing/Running/Stopping execution of a job.
 
-URL
-Structure
+#### URL
+**Structure**
 
-POST https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/executions/{executionId}/stop
-1
-POST https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/executions/{executionId}/stop
-Example
+`POST https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/executions/{executionId}/stop`
 
-POST https://api.runner.ctl.io/jobs/XXXX/1111505e-6773-494a-b2bf-d2cc2684710d/executions/44fdcfa2-6a7f-46d3-9f71-22e629e2358a/stop
-1
-POST https://api.runner.ctl.io/jobs/XXXX/1111505e-6773-494a-b2bf-d2cc2684710d/executions/44fdcfa2-6a7f-46d3-9f71-22e629e2358a/stop
-Request
-URI Parameters
-NAME	TYPE	DESCRIPTION	REQ.
-accountAlias	string	Short code for a particular account.	Yes
-id	string	Id of the job.	Yes
-executionId	string	Execution id of the job to be stopped.	Yes
-Content Properties
-NAME	TYPE	DESCRIPTION	REQ.
-expiryDuration	number	Stop signal expiry duration in seconds.
-Default value is zero seconds.	No
-Example
+**Example**
 
-JSON
+`POST https://api.runner.ctl.io/jobs/XXXX/1111505e-6773-494a-b2bf-d2cc2684710d/executions/44fdcfa2-6a7f-46d3-9f71-22e629e2358a/stop`
+
+#### Request
+**URI Parameters**
+
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| accountAlias |	string |	Short code for a particular account. |	Yes |
+| id |	string |	ID of the job. |	Yes |
+| executionId |	string |	Execution ID of the job to be stopped. |	Yes |
+
+**Content Properties**
+
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| expiryDuration | 	number | 	Stop signal expiry duration in seconds. Default value is zero seconds. |	No |
+
+**Example**
+
+```JSON
 {
     "expiryDuration": 5
  }
-1
-2
-3
-4
-JSON
-{
-    "expiryDuration": 5
- }
-Response
-An execution document with your previous run timer details with an updated status as “STOPPING” will be your response. Eventually the status will change to STOPPED. You could view the execution details by making a call to the GET Job Executions.
+```
+
+#### Response
+
+An execution document with your previous run timer details with an updated status as “STOPPING” will be your response. Eventually the status will change to STOPPED. You can view the execution details by making a call to the GET Job Executions.
 
 Note: Tasks that are executed until the stop request will not rollback.
 
-Entity Definition
-Name	Type	Description
-execution_id	string	Execution id of the queried Job.
-timers	array	History of execution timers.
-job_id	string	Id of the job being queried.
-account_alias	string	Short code for a particular account.
-status	string	Will be STOPPING at the time of stop.
-repository_log	string	GitHub commit version of the playbook, if the defined playbook is from GitHub repository.
-failed_hosts	array	List of failed hosts.
-is_vpn_established	boolean	Set to true if the execution has any VPN connections enabled part of the play.
-Execution timers Entity
-Name	Type	Description
-start	number	EPOCH format of job execution start Date time in UTC.
-end	number	EPOCH format of job execution end Date time in UTC.
-Examples
+**Entity Definition**
 
-JSON
+| NAME | TYPE |	DESCRIPTION	|
+| --- | --- | --- | --- |
+| execution_id |	string |	Execution id of the queried Job. |
+| timers |	array |	History of execution timers. |
+| job_id |	string |	Id of the job being queried. |
+| account_alias |	string |	Short code for a particular account. |
+| status |	string |	Will be STOPPING at the time of stop. |
+| repository_log |	string |	GitHub commit version of the playbook, if the defined playbook is from GitHub repository. |
+| failed_hosts |	array |	List of failed hosts. |
+| is_vpn_established |	boolean |	Set to true if the execution has any VPN connections enabled part of the play. |
+
+**Execution Timers Entity**
+
+| NAME | TYPE |	DESCRIPTION	|
+| --- | --- | --- | --- |
+| start |	number |	EPOCH format of job execution start Date time in UTC. |
+| end |	number |	EPOCH format of job execution end Date time in UTC. |
+
+**Example**
+
+```JSON
 {
     "timers": [
         {
@@ -1383,102 +1148,77 @@ JSON
     failed_hosts: [0]
     is_vpn_established: false
 }
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-JSON
-{
-    "timers": [
-        {
-          "start": 1445359386400,
-          "end": 1445359388219
-        }
-    ],
-    job_id: "1111505e-6773-494a-b2bf-d2cc2684710d"
-    execution_id: "44fdcfa2-6a7f-46d3-9f71-22e629e2358a"
-    account_alias: "XXXX"
-    status: "STOPPING"
-    repository_log: null
-    failed_hosts: [0]
-    is_vpn_established: false
-}
-Top
-Kill a Job Execution
-To kill the process of a job execution with any of status as Pending/Initializing/Running/Stopping/Killing. Calls to this operation must include a token acquired from the authentication endpoint. See the Login API for information on acquiring this token. Live status feed of the execution can be viewed with your callback(s) url if you have defined at the time of job creation.
+```
 
-When to Use It
+### KILL JOB EXECUTION <a id="KillJobExecution"></a>
+
+To kill the process of a job execution with any of status as Pending/Initializing/Running/Stopping/Killing. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.Calls to this operation must include a token acquired from the authentication endpoint. Live status feed of the execution can be viewed with your callback(s) url if you have defined at the time of job creation.
+
+**When to use it**
+
 Use this API operation when you would like to terminate an execution of a job with any of status as Pending/Initializing/Running/Stopping/Killing.
 
-URL
-Structure
+#### URL
+**Structure**
 
-POST https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/executions/{executionId}/kill
-1
-POST https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/executions/{executionId}/kill
-Example
+`POST https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/executions/{executionId}/kill`
 
-POST https://api.runner.ctl.io/jobs/XXXX/1111505e-6773-494a-b2bf-d2cc2684710d/executions/44fdcfa2-6a7f-46d3-9f71-22e629e2358a/kill
-1
-POST https://api.runner.ctl.io/jobs/XXXX/1111505e-6773-494a-b2bf-d2cc2684710d/executions/44fdcfa2-6a7f-46d3-9f71-22e629e2358a/kill
-Request
-URI Parameters
-NAME	TYPE	DESCRIPTION	REQ.
-accountAlias	string	Short code for a particular account.	Yes
-id	string	Id of the job.	Yes
-executionId	string	Execution id of the job to be killed.	Yes
-Content Properties
-NAME	TYPE	DESCRIPTION	REQ.
-expiryDuration	number	Kill signal expiry duration in seconds.
-Default value is zero seconds.	No
-Example
+**Example**
 
-JSON
+`POST https://api.runner.ctl.io/jobs/XXXX/1111505e-6773-494a-b2bf-d2cc2684710d/executions/44fdcfa2-6a7f-46d3-9f71-22e629e2358a/kill`
+
+#### Request
+**URI Parameters**
+
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| accountAlias |	string |	Short code for a particular account. |	Yes |
+| id |	string |	ID of the job. |	Yes |
+| executionId |	string |	Execution ID of the job to be killed. |	Yes |
+
+**Content Properties**
+
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| expiryDuration |	number |	Kill signal expiry duration in seconds. Default value is zero seconds. |	No |
+
+**Example**
+
+```JSON
 {
     "expiryDuration": 5
  }
-1
-2
-3
-4
-JSON
-{
-    "expiryDuration": 5
- }
-Response
-An execution document with your previous run timer details with an updated status as “KILLING” will be your response. Eventually the status will change to KILLED. You could view the execution details by making a call to the GET Job Executions.
+```
+
+#### Response
+
+An execution document with your previous run timer details with an updated status as “KILLING” will be your response. Eventually the status will change to KILLED. You can view the execution details by making a call to the GET Job Executions.
 
 Note: Tasks that are executed until the kill request will not rollback.
 
-Entity Definition
-Name	Type	Description
-execution_id	string	Execution id of the queried Job.
-timers	array	History of execution timers.
-job_id	string	Id of the job being queried.
-account_alias	string	Short code for a particular account.
-status	string	Will be KILLING at the time of kill.
-repository_log	string	GitHub commit version of the playbook, if the defined playbook is from GitHub repository.
-failed_hosts	array	List of failed hosts.
-is_vpn_established	boolean	Set to true if the execution has any VPN connections enabled part of the play.
-Execution timers Entity
-Name	Type	Description
-start	number	EPOCH format of job execution start Date time in UTC.
-end	number	EPOCH format of job execution end Date time in UTC.
-Examples
+**Entity Definition**
 
-JSON
+| NAME | TYPE |	DESCRIPTION	|
+| --- | --- | --- | --- |
+| execution_id |	string |	Execution id of the queried Job. |
+| timers |	array |	History of execution timers. |
+| job_id |	string |	Id of the job being queried. |
+| account_alias |	string |	Short code for a particular account. |
+| status |	string |	Will be KILLING at the time of kill. |
+| repository_log |	string |	GitHub commit version of the playbook, if the defined playbook is from GitHub repository. |
+| failed_hosts |	array |	List of failed hosts. |
+| is_vpn_established |	boolean |	Set to true if the execution has any VPN connections enabled part of the play. |
+
+**Execution Timers Entity**
+
+| NAME | TYPE |	DESCRIPTION	|
+| --- | --- | --- | --- |
+| start |	number |	EPOCH format of job execution start Date time in UTC. |
+| end |	number |	EPOCH format of job execution end Date time in UTC. |
+
+**Example**
+
+```JSON
 {
     "timers": [
         {
@@ -1494,73 +1234,52 @@ JSON
     failed_hosts: [0]
     is_vpn_established: false
 }
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-JSON
-{
-    "timers": [
-        {
-          "start": 1445359386400,
-          "end": 1445359388219
-        }
-    ],
-    job_id: "1111505e-6773-494a-b2bf-d2cc2684710d"
-    execution_id: "44fdcfa2-6a7f-46d3-9f71-22e629e2358a"
-    account_alias: "XXXX"
-    status: "KILLING"
-    repository_log: null
-    failed_hosts: [0]
-    is_vpn_established: false
-}
-Top
-Create Job Schedule
-Define the schedule for an existing job. Have your Service Account Alias created. Calls to this operation must include a token acquired from the authentication endpoint. See the Login API for information on acquiring this token.
+```
 
-When to Use It
+
+### CREATE JOB SCHEDULE <a id="CreateJobSchedule"></a>
+
+Define the schedule for an existing job. Have your Service Account Alias created. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
+
+**When to use it**
+
 Use this request when you would like to schedule an existing job in a timely manner.
 
-URL
-Structure
+#### URL
+**Structure**
 
-POST https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/schedules
-1
-POST https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/schedules
-Example
+`POST https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/schedules`
 
-POST https://api.runner.ctl.io/jobs/XXXX/6f6546f8-316d-4cc0-b144-cac3f5668e8d/schedules
-1
-POST https://api.runner.ctl.io/jobs/XXXX/6f6546f8-316d-4cc0-b144-cac3f5668e8d/schedules
-Request
-URI Parameters
-NAME	TYPE	DESCRIPTION	REQ.
-accountAlias	string	Short code for a particular account.	Yes
-id	string	Id of the job to be scheduled.	Yes
-Content Properties
-NAME	TYPE	DESCRIPTION	REQ.
-description	string	Description of the job schedule.	Yes
-serviceAccountAlias	string	Service Account Alias created from API https://api.runner.ctl.io/serviceAccounts/{accountAlias}	Yes
-trigger	array	Trigger entity schema	Yes
-Trigger Entity
-Name	Type	Description	REQ.
-type	string	Type of schedule expression, could be either “cron” or “date”.	Yes
-expression	string	Unix cron expression if the type is “cron” and UTC date format for “date” type.	Yes
-Example
+**Example**
 
-JSON
+`POST https://api.runner.ctl.io/jobs/XXXX/6f6546f8-316d-4cc0-b144-cac3f5668e8d/schedules`
+
+#### Request
+**URI Parameters**
+
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| accountAlias |	string |	Short code for a particular account. |	Yes |
+| id |	string |	ID of the job to be scheduled. |	Yes |
+
+**Content Properties**
+
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| description |	string |	Description of the job schedule. |	Yes |
+| serviceAccountAlias |	string |	Service Account Alias created from API https://api.runner.ctl.io/serviceAccounts/{accountAlias} |	Yes |
+| trigger |	array |	Trigger entity schema. |	Yes |
+
+**Trigger Entity**
+
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| type |	string |	Type of schedule expression, could be either “cron” or “date”. |	Yes |
+| expression |	string |	Unix cron expression if the type is “cron” and UTC date format for “date” type. |	Yes |
+
+**Example**
+
+```JSON
 {
     "description": "Job Schedule demo.",
     "type": {
@@ -1569,38 +1288,27 @@ JSON
     },
     "serviceAccountAlias": "demo-account-service-account1"
 }
-1
-2
-3
-4
-5
-6
-7
-8
-9
-JSON
-{
-    "description": "Job Schedule demo.",
-    "type": {
-        "type": "cron",
-        "expression": "* * * * *"
-    },
-    "serviceAccountAlias": "demo-account-service-account1"
-}
-Response
+```
+
+#### Response
+
 A schedule document will be your response.
+
 Note: You will need to save the id for later to delete the schedule.
 
-Entity Definition
-NAME	TYPE	DESCRIPTION
-id	string	Job scheduled Id.
-jobId	string	Id of the job to be scheduled.
-accountAlias	string	The account alias under which the job was created.
-scheduleId	string	Id of the schedule that was created.
-description	string	Description of the job schedule.
-Examples
+**Entity Definition**
 
-JSON
+| NAME | TYPE |	DESCRIPTION	|
+| --- | --- | --- | --- |
+| id |	string |	Job scheduled ID. |
+| jobId |	string |	ID of the job to be scheduled. |
+| accountAlias |	string |	The account alias under which the job was created. |
+| scheduleId |	string |	ID of the schedule that was created. |
+| description |	string |	Description of the job schedule. |
+
+**Example**
+
+```JSON
 {
     "id":"9b68b4cd-f642-4358-93b6-32f522fa1448",
     "jobId":"6f6546f8-316d-4cc0-b144-cac3f5668e8d",
@@ -1608,58 +1316,53 @@ JSON
     "scheduleId":"3f3b1353-7048-4f51-bbb7-a741c1fd2f14",
     "description":"Job Schedule demo."
 }
-1
-2
-3
-4
-5
-6
-7
-8
-JSON
-{
-    "id":"9b68b4cd-f642-4358-93b6-32f522fa1448",
-    "jobId":"6f6546f8-316d-4cc0-b144-cac3f5668e8d",
-    "accountAlias":"XXXX",
-    "scheduleId":"3f3b1353-7048-4f51-bbb7-a741c1fd2f14",
-    "description":"Job Schedule demo."
-}
-Top
-Update Job Schedule
-Update a schedule for an existing job. Have your Service Account Alias created. Calls to this operation must include a token acquired from the authentication endpoint. See the Login API for information on acquiring this token.
+```
 
-When to Use It
+
+### UPDATE JOB SCHEDULE <a id="UpdateJobSchedule"></a>
+
+Update a schedule for an existing job. Have your Service Account Alias created. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
+
+**When to use it**
+
 Use this request when you would like to update a schedule of an existing job.
 
-URL
-Structure
+#### URL
+**Structure**
 
-PUT https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/schedules/{jobScheduleId}
-1
-PUT https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/schedules/{jobScheduleId}
-Example
+`PUT https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/schedules/{jobScheduleId}`
 
-PUT https://api.runner.ctl.io/jobs/XXXX/6f6546f8-316d-4cc0-b144-cac3f5668e8d/schedules/9b68b4cd-f642-4358-93b6-32f522fa1448
-1
-PUT https://api.runner.ctl.io/jobs/XXXX/6f6546f8-316d-4cc0-b144-cac3f5668e8d/schedules/9b68b4cd-f642-4358-93b6-32f522fa1448
-Request
-URI Parameters
-NAME	TYPE	DESCRIPTION	REQ.
-accountAlias	string	Short code for a particular account.	Yes
-jobId	string	Job Id for which the scheduled will be updated.	Yes
-jobScheduleId	string	Id of the job schedule to be updated.	Yes
-Content Properties
-NAME	TYPE	DESCRIPTION	REQ.
-description	string	Description of the job schedule.	Yes
-serviceAccountAlias	string	Service Account Alias created from API https://api.runner.ctl.io/serviceAccounts/{accountAlias}	Yes
-trigger	array	Trigger entity schema	Yes
-Trigger Entity
-Name	Type	Description	REQ.
-type	string	Type of schedule expression, could be either “cron” or “date”.	Yes
-expression	string	Unix cron expression if the type is “cron” and UTC date format for “date” type.	Yes
-Example
+**Example**
 
-JSON
+`PUT https://api.runner.ctl.io/jobs/XXXX/6f6546f8-316d-4cc0-b144-cac3f5668e8d/schedules/9b68b4cd-f642-4358-93b6-32f522fa1448`
+
+#### Request
+**URI Parameters**
+
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| accountAlias |	string |	Short code for a particular account. |	Yes |
+| jobId |	string |	Job ID for which the scheduled will be updated. |	Yes |
+| jobScheduleId |	string |	ID of the job schedule to be updated. |	Yes |
+
+**Content Properties**
+
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| description |	string |	Description of the job schedule. |	Yes |
+| serviceAccountAlias |	string |	Service Account Alias created from API https://api.runner.ctl.io/serviceAccounts/{accountAlias} |	Yes |
+| trigger |	array |	Trigger entity schema. |	Yes |
+
+**Trigger Entity**
+
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| type |	string |	Type of schedule expression, could be either “cron” or “date”. |	Yes |
+| expression |	string |	Unix cron expression if the type is “cron” and UTC date format for “date” type. |	Yes |
+
+**Example**
+
+```JSON
 {
     "description": "Job Schedule demo.",
     "type": {
@@ -1668,131 +1371,119 @@ JSON
     },
     "serviceAccountAlias": "demo-account-service-account1"
 }
-1
-2
-3
-4
-5
-6
-7
-8
-9
-JSON
-{
-    "description": "Job Schedule demo.",
-    "type": {
-        "type": "cron",
-        "expression": "* 1 * * *"
-    },
-    "serviceAccountAlias": "demo-account-service-account1"
-}
-Response
+```
+
+#### Response
+
 The updated schedule document will be your response.
+
 Note: We will need to save the id field for later to delete the schedule.
 
-Entity Definition
-NAME	TYPE	DESCRIPTION
-id	string	Job scheduled Id.
-jobId	string	Id of the job to be scheduled.
-accountAlias	string	The account alias under which the job schedule was created.
-scheduleId	string	Id of the schedule that was created.
-description	string	Description of the job schedule.
-Examples
+**Entity Definition**
 
-JSON
+| NAME | TYPE |	DESCRIPTION	|
+| --- | --- | --- | --- |
+| id |	string |	Job scheduled ID. |
+| jobId |	string |	ID of the job to be scheduled. |
+| accountAlias |	string |	The account alias under which the job schedule was created. |
+| scheduleId |	string |	ID of the schedule that was created. |
+| description |	string |	Description of the job schedule. |
+
+**Example**
+
+```JSON
 {
     "id":"9b68b4cd-f642-4358-93b6-32f522fa1448",
     "jobId":"6f6546f8-316d-4cc0-b144-cac3f5668e8d",
     "accountAlias":"XXXX",
     "scheduleId":"3f3b1353-7048-4f51-bbb7-a741c1fd2f14",
     "description":"Job Schedule demo."
-}   
-1
-2
-3
-4
-5
-6
-7
-8
-JSON
-{
-    "id":"9b68b4cd-f642-4358-93b6-32f522fa1448",
-    "jobId":"6f6546f8-316d-4cc0-b144-cac3f5668e8d",
-    "accountAlias":"XXXX",
-    "scheduleId":"3f3b1353-7048-4f51-bbb7-a741c1fd2f14",
-    "description":"Job Schedule demo."
-}   
-Top
-Delete Job Schedule
-Delete a schedule of an existing job. Have your Service Account Alias created. Calls to this operation must include a token acquired from the authentication endpoint. See the Login API for information on acquiring this token.
+}
+```
 
-When to Use It
+
+### DELETE JOB SCHEDULE <a id="DeleteJobSchedule"></a>
+
+Delete a schedule of an existing job. Have your Service Account Alias created. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
+
+**When to use it**
+
 Use this request when you would like to delete a schedule of an existing job.
 
-URL
-Structure
+#### URL
+**Structure**
 
-DELETE https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/schedules/{jobScheduleId}
-1
-DELETE https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/schedules/{jobScheduleId}
-Example
+`DELETE https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/schedules/{jobScheduleId}`
 
-DELETE https://api.runner.ctl.io/jobs/XXXX/6f6546f8-316d-4cc0-b144-cac3f5668e8d/schedules/9b68b4cd-f642-4358-93b6-32f522fa1448
-1
-DELETE https://api.runner.ctl.io/jobs/XXXX/6f6546f8-316d-4cc0-b144-cac3f5668e8d/schedules/9b68b4cd-f642-4358-93b6-32f522fa1448
-Request
-URI Parameters
-NAME	TYPE	DESCRIPTION	REQ.
-accountAlias	string	Short code for a particular account.	Yes
-jobId	string	Job Id for which the scheduled will be removed.	Yes
-jobScheduleId	string	Id of the job schedule to be removed.	YesTop
-Get Job Schedule(s)
-Get schedule(s) of an existing job. Have your Service Account Alias created. Calls to this operation must include a token acquired from the authentication endpoint. See the Login API for information on acquiring this token.
+**Example**
 
-When to Use It
+`DELETE https://api.runner.ctl.io/jobs/XXXX/6f6546f8-316d-4cc0-b144-cac3f5668e8d/schedules/9b68b4cd-f642-4358-93b6-32f522fa1448`
+
+#### Request
+**URI Parameters**
+
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| accountAlias |	string |	Short code for a particular account. |	Yes |
+| jobId |	string |	Job ID for which the scheduled will be removed. |	Yes |
+| jobScheduleId |	string |	ID of the job schedule to be removed. |	Yes |
+
+
+### GET JOB SCHEDULE <a id="GetJobSchedule"></a>
+
+Get schedule(s) of an existing job. Have your Service Account Alias created. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
+
+**When to use it**
+
 Use this request when you would like to get all the schedule(s) of an existing job.
 
-URL
-Structure
+#### URL
+**Structure**
 
-GET https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/schedules
-1
-GET https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/schedules
-Example
+`GET https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/schedules`
 
-GET https://api.runner.ctl.io/jobs/XXX/6f6546f8-316d-4cc0-b144-cac3f5668e8d/schedules
-1
-GET https://api.runner.ctl.io/jobs/XXX/6f6546f8-316d-4cc0-b144-cac3f5668e8d/schedules
-Request
-URI Parameters
-NAME	TYPE	DESCRIPTION	REQ.
-accountAlias	string	Short code for a particular account.	Yes
-jobId	string	Job Id for which the schedule(s) are requested.	Yes
-page	integer	You can specify the page number for which you would like to get the results for.
-Default is “0”.	No
-size	integer	You can specify the page size between 1 to 100.
-Default is “100”.	No
-Response
+**Example**
+
+`GET https://api.runner.ctl.io/jobs/XXX/6f6546f8-316d-4cc0-b144-cac3f5668e8d/schedules`
+
+#### Request
+**URI Parameters**
+
+| NAME | TYPE |	DESCRIPTION	| REQ.|
+| --- | --- | --- | --- |
+| accountAlias |	string |	Short code for a particular account. |	Yes |
+| jobId |	string |	Job ID for which the schedule(s) are requested. |	Yes |
+| page |	integer |	You can specify the page number for which you would like to get the results for. Default is “0”. |	No |
+| size |	integer |	You can specify the page size between 1 to 100. Default is “100”. |	No |
+
+#### Response
+
 The updated schedule document will be your response.
+
 Note: We will need to save the id field for later to delete the schedule.
 
-Entity Definition
-NAME	TYPE	DESCRIPTION
-totalSize	integer	Total number of job schedules created for the job under your account alias.
-page	integer	The current page number based on your query.
-size	integer	Page size of your query.
-results	array	List of Job Schedules
-Job Schedule Entity
-NAME	TYPE	DESCRIPTION
-id	string	Job scheduled Id.
-jobId	string	Id of the job for which the schedule(s) are requested.
-accountAlias	string	The account alias under which the job schedule was created.
-scheduleId	string	Id of the job schedule.
-description	string	Description of the job schedule.
-Examples
+**Entity Definition**
 
-JSON
+| NAME | TYPE |	DESCRIPTION	|
+| --- | --- | --- | --- |
+| totalSize |	integer |	Total number of job schedules created for the job under your account alias. |
+| page |	integer |	The current page number based on your query. |
+| size |	integer |	Page size of your query. |
+| results |	array |	List of Job Schedules |
+
+**Job Schedule Entity**
+
+| NAME | TYPE |	DESCRIPTION	|
+| --- | --- | --- | --- |
+| id |	string |	Job scheduled ID. |
+| jobId |	string |	ID of the job for which the schedule(s) are requested. |
+| accountAlias |	string |	The account alias under which the job schedule was created. |
+| scheduleId |	string |	ID of the job schedule. |
+| description |	string |	Description of the job schedule. |
+
+**Example**
+
+```JSON
 {
   "totalSize": 1,
   "page": 0,
@@ -1807,33 +1498,4 @@ JSON
     }
   ]
 }
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-JSON
-{
-  "totalSize": 1,
-  "page": 0,
-  "size": 1,
-  "results": [
-    {
-      "id": "e68e6bc3-75be-4f8c-8ee9-de13d6218278",
-      "jobId": "6f6546f8-316d-4cc0-b144-cac3f5668e8d",
-      "accountAlias": "XXX",
-      "scheduleId": "26f9bd9e-8115-4e57-b1da-4d50c066dd09",
-      "description": "Job Schedule demo."
-    }
-  ]
-}
+```
