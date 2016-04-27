@@ -177,7 +177,9 @@ Response
 
 The response will be a list of objects containing entities for each job created in the given account.
 
-Below is the representation of Job Execution Status for various requests,
+Below is the representation of Job Execution Status for various requests:
+
+![Job Execution Status](../images/Runner-Execution-State-diagram.png)
 
 
 
@@ -186,4 +188,4 @@ Below is the representation of Job Execution Status for various requests,
 
 
 
-##### GET JOB <a id="GetJob"></a>
+##### GET JOB
