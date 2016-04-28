@@ -136,7 +136,7 @@ Define list of hosts and their related variable made available to the playbook w
 
 This entity can be used to pass any additional variables to the playbook as extra variables. Similar to the command line –extra-vars argument.
 
-```JSON
+```
 {
     "property1": "value1",
     "property2": "value2"
@@ -145,7 +145,7 @@ This entity can be used to pass any additional variables to the playbook as extr
 
 **Example**
 
-```JSON
+```
 {
     "description": "Sample Job",
     "repository": {
@@ -200,7 +200,7 @@ Below is the representation of Job Execution Status for various requests:
 
 **Example**
 
-```JSON
+```
 [
   {
     "id": "1111505e-6773-494a-b2bf-d2cc2684710d",
@@ -324,7 +324,7 @@ Defined list of hosts and their related variable made available to the playbook 
 
 **Example**
 
-```JSON
+```
 
 [
   {
@@ -466,7 +466,7 @@ Define list of hosts and their related variable made available to the playbook w
 
 This entity can be used to pass any additional variables to the playbook as extra variables. Similar to the command line –extra-vars argument.
 
-```JSON
+```
 {
     "property1": "value1",
     "property2": "value2"
@@ -475,7 +475,7 @@ This entity can be used to pass any additional variables to the playbook as extr
 
 **Example**
 
-```JSON
+```
 {
     "description": "Sample Job",
     "repository": {
@@ -526,7 +526,7 @@ The response will be a list of objects containing entities for each job created 
 
 **Example**
 
-```JSON
+```
 [
   {
     "id": "1111505e-6773-494a-b2bf-d2cc2684710d",
@@ -695,7 +695,7 @@ Defined list of hosts and their related variable made available to the playbook 
 
 **Example**
 
-```JSON
+```
 {
     "totalSize": 2000,
     "page": 0,
@@ -797,7 +797,7 @@ Define list of hosts and their related variable made available to the playbook, 
 
 **Example**
 
-```JSON
+```
 {
     "hosts": [
         {
@@ -824,17 +824,17 @@ An execution document will be your response but you could view the execution det
 
 **Examples**
 
-```JSON
+```
 {
-    start: null
-    end: null
-    job_id: "1111505e-6773-494a-b2bf-d2cc2684710d"
-    execution_id: "44fdcfa2-6a7f-46d3-9f71-22e629e2358a"
-    account_alias: "XXXX"
-    status: "PENDING"
-    repository_log: null
-    failed_hosts: [0]
-    is_vpn_established: false
+    "start": null
+    "end": null
+    "job_id": "1111505e-6773-494a-b2bf-d2cc2684710d"
+    "execution_id": "44fdcfa2-6a7f-46d3-9f71-22e629e2358a"
+    "account_alias": "XXXX"
+    "status": "PENDING"
+    "repository_log": null
+    "failed_hosts": [0]
+    "is_vpn_established": false
 }
 ```
 
@@ -903,7 +903,7 @@ An execution will have multiple timers only when it is restarted.
 
 **Example**
 
-```JSON
+```
 {
     "totalSize": 2,
     "page": 0,
@@ -916,7 +916,7 @@ An execution will have multiple timers only when it is restarted.
             "execution_id": "43324ce3-dc2a-480e-94b9-1ea705373111",
             "account_alias": "XXXX",
             "status": "FAILURE",
-            "repository_log": "{
+            "repository_log": {
               "recent_commit": [
                   {
                        "commit": "b087e1a44c79d0576d7cccd249d3e71a3c54fe12",
@@ -927,7 +927,7 @@ An execution will have multiple timers only when it is restarted.
                   }
               ],
               "tags": []
-            }",
+            },
             "failed_hosts": [
                                 "localhost"
             ],
@@ -940,7 +940,7 @@ An execution will have multiple timers only when it is restarted.
             "execution_id": "44fdcfa2-6a7f-46d3-9f71-22e629e2358a",
             "account_alias": "XXXX",
             "status": "RUNNING",
-            "repository_log": "{
+            "repository_log": {
               "recent_commit": [
                   {
                        "commit": "b087e1a44c79d0576d7cccd249d3e71a3c54fe12",
@@ -951,7 +951,7 @@ An execution will have multiple timers only when it is restarted.
                   }
               ],
               "tags": []
-            }",                                         "failed_hosts": [        
+            },                                         "failed_hosts": [        
             ],
             "is_vpn_established": false,
             "id": "61671a90-93f2-491a-b8f2-aed515f0b5a6"
@@ -1007,7 +1007,7 @@ Define list of failed host(s) and their related variable made available to the p
 
 **Example**
 
-```JSON
+```
 {
     "hosts": [
         {
@@ -1045,7 +1045,7 @@ An execution will have multiple timers only when it is restarted.
 
 **Example**
 
-```JSON
+```
 {
     "timers": [
         {
@@ -1098,7 +1098,7 @@ Use this API operation when you would like to stop a Pending/Initializing/Runnin
 
 **Example**
 
-```JSON
+```
 {
     "expiryDuration": 5
  }
@@ -1132,7 +1132,7 @@ Note: Tasks that are executed until the stop request will not rollback.
 
 **Example**
 
-```JSON
+```
 {
     "timers": [
         {
@@ -1184,7 +1184,7 @@ Use this API operation when you would like to terminate an execution of a job wi
 
 **Example**
 
-```JSON
+```
 {
     "expiryDuration": 5
  }
@@ -1218,7 +1218,7 @@ Note: Tasks that are executed until the kill request will not rollback.
 
 **Example**
 
-```JSON
+```
 {
     "timers": [
         {
@@ -1279,7 +1279,7 @@ Use this request when you would like to schedule an existing job in a timely man
 
 **Example**
 
-```JSON
+```
 {
     "description": "Job Schedule demo.",
     "type": {
@@ -1308,7 +1308,7 @@ Note: You will need to save the id for later to delete the schedule.
 
 **Example**
 
-```JSON
+```
 {
     "id":"9b68b4cd-f642-4358-93b6-32f522fa1448",
     "jobId":"6f6546f8-316d-4cc0-b144-cac3f5668e8d",
@@ -1362,7 +1362,7 @@ Use this request when you would like to update a schedule of an existing job.
 
 **Example**
 
-```JSON
+```
 {
     "description": "Job Schedule demo.",
     "type": {
@@ -1391,7 +1391,7 @@ Note: We will need to save the id field for later to delete the schedule.
 
 **Example**
 
-```JSON
+```
 {
     "id":"9b68b4cd-f642-4358-93b6-32f522fa1448",
     "jobId":"6f6546f8-316d-4cc0-b144-cac3f5668e8d",
@@ -1483,7 +1483,7 @@ Note: We will need to save the id field for later to delete the schedule.
 
 **Example**
 
-```JSON
+```
 {
   "totalSize": 1,
   "page": 0,
