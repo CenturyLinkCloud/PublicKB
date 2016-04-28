@@ -18,7 +18,7 @@ The Job Service is the primary component of the Runner product. Users can create
 
 The Job Service is a simple, text-based job and task definition. The jobs are executed by a highly available service with the ability to execute massively parallel tasks. It also provides the capability to schedule jobs at a defined interval.
 
-The job actions can be performed via REST API calls. The API works with JSON messages over HTTPS. It relies on the standard HTTP verbs including GET, POST, PUT, and DELETE.
+The job actions can be performed via REST API calls. The API works with JSON messages over HTTP. It relies on the standard HTTP verbs including GET, POST, PUT, and DELETE.
 
 The URL format of the service is: `https://api.runner.ctl.io/{resource}/{account alias}`.
 
