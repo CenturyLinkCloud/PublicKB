@@ -16,7 +16,7 @@ This article is to support customers of Runner, a product that enables teams, de
 
 The Job Service is the primary component of the Runner product. Users can create, modify, and execute jobs at anytime. Many of the other services were created in tandem with the Job Service, and enhance the Job Execution capabilities. The Job Service accepts a payload that references a playbook to be used, whether that is using a public or private GitHub repository. When using a private GitHub repository, GitHub credentials are required.
 
-The Job Service is a simple, text-based job and task definition. The jobs are executed by a highly available ~~job runner~~ service with the ability to execute massively parallel tasks. It also provides the capability to schedule jobs at a defined interval.
+The Job Service is a simple, text-based job and task definition. The jobs are executed by a highly available service with the ability to execute massively parallel tasks. It also provides the capability to schedule jobs at a defined interval.
 
 The job actions can be performed via REST API calls. The API works with JSON messages over HTTP**S**. It relies on the standard HTTP verbs including GET, POST, PUT, and DELETE.
 
