@@ -276,7 +276,7 @@ Use this API operation when you would like to get the details of a specific job 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
 | --- | --- | --- | --- |
 | accountAlias |	string |	Short code for a particular account. |	Yes |
-| id |	string |	Id of the job being queried. |	Yes |
+| id |	string |	ID of the job being queried. |	Yes |
 
 #### Response
 
@@ -395,7 +395,7 @@ Use this API operation when you would like to update the details of a specific j
 | NAME | TYPE |	DESCRIPTION	| REQ.|
 | --- | --- | --- | --- |
 | accountAlias |	string |	Short code for a particular account. |	Yes |
-| id |	string |	Id of the job being updated. |	Yes |
+| id |	string |	ID of the job being updated. |	Yes |
 | immediate |	boolean |	Set to “true” if the job to be executed immediately after creation. Default is “false”. |	No |
 
 **Content Properties**
@@ -603,7 +603,7 @@ Use this API operation when you would like to delete an existing job within a gi
 | NAME | TYPE |	DESCRIPTION	| REQ.|
 | --- | --- | --- | --- |
 | accountAlias |	string |	Short code for a particular account. |	Yes |
-| id |	string |	Id of the job to be deleted from the account. |	Yes |
+| id |	string |	ID of the job to be deleted from the account. |	Yes |
 
 #### Response
 
@@ -775,7 +775,7 @@ Use this API operation when you would like to explicitly start a job execution o
 | NAME | TYPE |	DESCRIPTION	| REQ.|
 | --- | --- | --- | --- |
 | accountAlias |	string |	Short code for a particular account. |	Yes |
-| id |	string |	Id of the job to be started. |	Yes |
+| id |	string |	ID of the job to be started. |	Yes |
 
 **Content Properties**
 
@@ -815,10 +815,10 @@ An execution document will be your response but you could view the execution det
 
 | NAME | TYPE |	DESCRIPTION	|
 | --- | --- | --- | --- |
-| execution_id |	string |	Execution id of the queried Job. |
+| execution_id |	string |	Execution ID of the queried Job. |
 | start |	number |	EPOCH format of job execution start Date time in UTC. |
 | end |	number |	EPOCH format of job execution end Date time in UTC. |
-| job_id |	string |	Id of the job being queried. |
+| job_id |	string |	ID of the job being queried. |
 | account_alias |	string |	Short code for a particular account. |
 | status |	string |	Will be PENDING at the time of start. |
 
@@ -862,7 +862,7 @@ Use this API operation when you would like to get details of all the executions 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
 | --- | --- | --- | --- |
 | accountAlias |	string |	Short code for a particular account. |	Yes |
-| id |	string |	Id of the job being queried. |	Yes |
+| id |	string |	ID of the job being queried. |	Yes |
 | page |	integer |	You can specify the page number for which you would like to get the results for. Default is “0”. |	No |
 | size |	integer |	You can specify the page size between 1 to 100. Default is “100”. |	No |
 
@@ -883,9 +883,9 @@ Preview of all executions of a particular job.
 
 | | NAME | TYPE |	DESCRIPTION	|
 | --- | --- | --- | --- |
-|  sdexecution_id |	string |	Execution id of the queried Job. |
+|  sdexecution_id |	string |	Execution ID of the queried Job. |
 | timers |	array |	History of execution timers. |
-| job_id |	string |	Id of the job being queried. |
+| job_id |	string |	ID of the job being queried. |
 | account_alias |	string |	Short code for a particular account. |
 | status |	string |	Current status of the execution. Status transition from PENDING -> RUNNING -> SUCCESS/FAILURE. |
 | repository_log |	string |	GitHub commit version of the playbook, if the defined playbook is from GitHub repository. |
@@ -1025,9 +1025,9 @@ An execution document with your previous run timer details with an updated statu
 
 | NAME | TYPE |	DESCRIPTION	|
 | --- | --- | --- | --- |
-| execution_id |	string |	Execution id of the queried Job. |
+| execution_id |	string |	Execution ID of the queried Job. |
 | timers |	array |	History of execution timers. |
-| job_id |	string |	Id of the job being queried. |
+| job_id |	string |	ID of the job being queried. |
 | account_alias |	string |	Short code for a particular account. |
 | status |	string |	Will be PENDING at the time of re-start. |
 | repository_log |	string |	GitHub commit version of the playbook, if the defined playbook is from GitHub repository. |
@@ -1114,9 +1114,9 @@ Note: Tasks that are executed until the stop request will not rollback.
 
 | NAME | TYPE |	DESCRIPTION	|
 | --- | --- | --- | --- |
-| execution_id |	string |	Execution id of the queried Job. |
+| execution_id |	string |	Execution ID of the queried Job. |
 | timers |	array |	History of execution timers. |
-| job_id |	string |	Id of the job being queried. |
+| job_id |	string |	ID of the job being queried. |
 | account_alias |	string |	Short code for a particular account. |
 | status |	string |	Will be STOPPING at the time of stop. |
 | repository_log |	string |	GitHub commit version of the playbook, if the defined playbook is from GitHub repository. |
@@ -1200,9 +1200,9 @@ Note: Tasks that are executed until the kill request will not rollback.
 
 | NAME | TYPE |	DESCRIPTION	|
 | --- | --- | --- | --- |
-| execution_id |	string |	Execution id of the queried Job. |
+| execution_id |	string |	Execution ID of the queried Job. |
 | timers |	array |	History of execution timers. |
-| job_id |	string |	Id of the job being queried. |
+| job_id |	string |	ID of the job being queried. |
 | account_alias |	string |	Short code for a particular account. |
 | status |	string |	Will be KILLING at the time of kill. |
 | repository_log |	string |	GitHub commit version of the playbook, if the defined playbook is from GitHub repository. |
@@ -1294,7 +1294,7 @@ Use this request when you would like to schedule an existing job in a timely man
 
 A schedule document will be your response.
 
-Note: You will need to save the id for later to delete the schedule.
+Note: You will need to save the ID for later to delete the schedule.
 
 **Entity Definition**
 
@@ -1377,7 +1377,7 @@ Use this request when you would like to update a schedule of an existing job.
 
 The updated schedule document will be your response.
 
-Note: We will need to save the id field for later to delete the schedule.
+Note: We will need to save the ID field for later to delete the schedule.
 
 **Entity Definition**
 
@@ -1460,7 +1460,7 @@ Use this request when you would like to get all the schedule(s) of an existing j
 
 The updated schedule document will be your response.
 
-Note: We will need to save the id field for later to delete the schedule.
+Note: We will need to save the ID field for later to delete the schedule.
 
 **Entity Definition**
 
