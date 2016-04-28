@@ -1237,6 +1237,11 @@ Note: Tasks that are executed until the kill request will not rollback.
 ```
 
 
+## Job Schedule Service Overview
+
+The Job Schedule Service, allows you to define a set interval at which a job will automatically execute. In order to use the Job Schedule Service, you will need to create a Service Account. Please refer to the [Service Account KB article](https://www.ctl.io/knowledge-base/runner/service-account/) for detailed instructions.
+
+
 ### CREATE JOB SCHEDULE <a id="CreateJobSchedule"></a>
 
 Define the schedule for an existing job. Have your Service Account Alias created. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
