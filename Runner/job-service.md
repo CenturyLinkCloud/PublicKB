@@ -92,14 +92,14 @@ Important Note: For creating a job, the playbook has to be referenced either fro
 | hosts |	array |	Hosts entity schema |	Yes |
 | properties |	array |	Property entity schema |	No |
 | sshPrivateKey |	string |	The default private key (base64 encoded) when connecting to hosts during playbook execution. |	No |
- |useDynamicInventory |	boolean |	Instructs Runner to gather all hosts of your account alias. This makes all hosts available as inventory during the playbook execution. Your playbook can then filter the hosts using the hosts property. |	No |
+| useDynamicInventory |	boolean |	Instructs Runner to gather all hosts of your account alias. This makes all hosts available as inventory during the playbook execution. Your playbook can then filter the hosts using the hosts property. |	No |
 
 **Callbacks Entity**
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
 | --- | --- | --- | --- |
 | url   | string | Your callback webhook url. | Yes  |
-| level | string | You can choose the level of information you would like to receive from DEBUG, ERROR, RESULT. When not specified the default value will be “DEBUG” | No   |
+| level | string | You can choose the level of information you would like to receive from DEBUG, ERROR, RESULT. When not specified the default value will be “DEBUG” | No |
 
 **Repository Entity**
 
