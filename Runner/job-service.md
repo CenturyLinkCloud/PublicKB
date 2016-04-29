@@ -22,7 +22,7 @@ The job actions can be performed via REST API calls. The API works with JSON mes
 
 The URL format of the service is: `https://api.runner.ctl.io/{resource}/{account alias}`.
 
-For example, to retrieve all the Jobs created at the account alias level, you would issue a GET request to https://api.runner.ctl.io/jobs/XXXX. The HTTP request must include headers Content-Type (set to application/json) and Authorization (set to ‘Bearer Token from authentication API’).
+For example, to retrieve all the Jobs created at the account alias level, you would issue a GET request to `https://api.runner.ctl.io/jobs/XXXX`. The HTTP request must include headers Content-Type (set to application/json) and Authorization (set to ‘Bearer Token from authentication API’).
 
 In addition to the Job Service, there is also the Job Schedule Service. The Job Schedule Service, allows you to define a set interval at which a job will automatically execute.
 
