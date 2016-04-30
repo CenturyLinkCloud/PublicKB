@@ -37,7 +37,7 @@ There are two ways to interact with Runner:
 
 The general URL format of the service is:
 
-`https://api.runner.ctl.io/jobs/{accountAlias}?immediate=true|false`
+`https://api.runner.ctl.io/{resource}/{account alias}`
 
 Note: You will need access to the CenturyLink Cloud Platform as an authorized user to be able to use Runner.
 
