@@ -20,7 +20,7 @@ A: Yes, you will need a CenturyLink Cloud account. If you don't already have an 
 
 **Q: How can I use Runner services against resources present in other cloud providers or on-prem environment?**
 
-**A:** To run Ansible playbooks against other cloud providers, users would need to leverage the VPN service which would help to provide the necessary VPN connections for accessing third party cloud providers. Runner will establish the VPN connections before the playbook execution if any such connections exist for the account.
+**A:** To run Ansible playbooks against other cloud providers, users would need to install and run the Runner Minion. The Runner Minion is available as a product in the Runner Marketplace for AWS users and it's available on DockerHub for other cloud and on-premise environments.  Please refer to the [Runner Minion KB](https://www.ctl.io/knowledge-base/runner/runner-minion) for more information.
 
 **Q: How can I check the status of my playbook execution?**
 
@@ -60,9 +60,7 @@ Because our Runner’s Job services do not persist any private keys related to t
 
 **Q: How much will Runner cost me?**
 
-**A:** All internal jobs are FREE. There are no base charges, or monthly fees. You only pay for the resources you create.
-
-All external jobs (on-premises, multi-cloud) are priced at $0.015/hr.
+**A:** Runner is a "freemium" service. You are free to use Runner to manage and execute all your Ansible jobs regardless of cloud. Charges apply only for features such as priority jobs.
 
 **Q: Is there a maximum number of concurrent jobs I can have running?**
 

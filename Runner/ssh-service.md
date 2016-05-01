@@ -34,7 +34,7 @@ For example, to retrieve information of all deployed keypairs created at the acc
 
 ### CREATE KEYPAIR <a id="CreateKeypair"></a>
 
-Creates SSH Keypair and you can also deploy those credentials to CenturyLink servers in a given account, so the keys can be used to authenticate these servers when executing runner jobs. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
+Creates an SSH Keypair and allows you to deploy those credentials to CenturyLink servers in your account.  The key can then be used to authenticate to these resources when executing a Runner Job. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
 **When to use it**
 
@@ -266,7 +266,7 @@ The response will be an object with the key deployed to servers.
 
 ### GET KEYPAIR <a id="GetKeypair"></a>
 
-To get the details of a created keypair alias. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
+Retrieve the details of an existing keypair alias. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
 **When to use it**
 
@@ -374,24 +374,6 @@ Use this API operation when you would like to add server users to an already dep
 #### Response
 
 The response will be a standard HTTP 200 OK response upon new server user name addition.
-
-**Entity Definition**
-
-| NAME | TYPE |	DESCRIPTION	|
-| --- | --- | --- |
-|
-
-**Server Entity**
-
-| NAME | TYPE |	DESCRIPTION	|
-| --- | --- | --- |
-|
-
-**Example**
-
-```
-
-```
 
 
 ### GET SERVER USERS <a id="GetServerUsers"></a>

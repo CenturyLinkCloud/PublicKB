@@ -24,7 +24,7 @@ The URL format of the service is: `https://api.runner.ctl.io/{resource}/{account
 
 For example, to retrieve all the Jobs created at the account alias level, you would issue a GET request to `https://api.runner.ctl.io/jobs/XXXX`. The HTTP request must include headers Content-Type (set to application/json) and Authorization (set to ‘Bearer Token from authentication API’).
 
-In addition to the Job Service, there is also the Job Schedule Service. The Job Schedule Service, allows you to define a set interval at which a job will automatically execute.
+In addition to managing Runner Jobs the Job Service will allow you to define execution schedules for your Jobs.
 
 ## Job Service/Job Schedule Service API Details
 
@@ -77,16 +77,11 @@ Playbooks can be executed in couple of different ways:
 
 1. We recommend to have your playbook in a GitHubHib Repository for complex plays that are referencing multiple dependent playbooks/templates. Please refer to the Repository Entity information listed below.
 
-2. If your playbook is simple and all plays are within a single playbook, then you can base64 encode the playbook and pass it as string to the playbook key below.
-
-Important Note: For creating a job, the playbook has to be referenced either from GitHub or directly, by providing base64 encoded playbook but not both.
-
 | NAME | TYPE |	DESCRIPTION	| REQ.|
 | --- | --- | --- | --- |
 | description	| string |	Description of the job. |	No |
 | executionTtl |	integer |	You can mention the time in minutes expected for the job execution to be complete. If the execution doesn’t complete before the specified time, then it will be gracefully stopped. Default value is “180”. |	No |
 | callbacks |	array |	Callback entity schema |	No |
-| playbook |	string |	If your playbook is simple and all plays are within a single playbook then you can base64 encode the playbook and pass it as string. Please read the above note. |	Yes |
 | playbookTags |	array |	If you would like to execute only specific plays/tasks tags, you can list them as comma separated array of string. |	No |
 | repository |	complex |	Repository entity schema. Please read the above note. |	Yes |
 | hosts |	array |	Hosts entity schema |	Yes |
@@ -404,16 +399,11 @@ Playbooks can be executed in couple of different ways:
 
 1. We recommend to have your playbook in a GitHubHib Repository for complex plays that are referencing multiple dependent playbooks/templates. Please refer to the Repository Entity information listed below.
 
-2. If your playbook is simple and all plays are within a single playbook, then you can base64 encode the playbook and pass it as string to the playbook key below.
-
-Important Note: For creating a job, the playbook has to be referenced either from GitHub or directly, by providing base64 encoded playbook but not both.
-
 | NAME | TYPE |	DESCRIPTION	| REQ.|
 | --- | --- | --- | --- |
 | description |	string |	Description of the job. |	No |
 | executionTtl |	integer |	You can mention the time in minutes expected for the job execution to be complete. If the execution doesn’t complete before the specified time, then it will be gracefully stopped. Default value is “180”. |	No |
 | callbacks |	array |	Callback entity schema. |	No |
-| playbook |	string |	If your playbook is simple and all plays are within a single playbook, then you can base64 encode the playbook and pass it as string. Please read the above note. |	Yes |
 | playbookTags |	array |	If you would like to execute only specific plays/tasks tags, you can list them as comma separated array of string. |	No |
 | repository |	complex |	Repository entity schema. Please read the above note. |	Yes |
 | hosts |	array |	Hosts entity schema. |	Yes |
@@ -883,7 +873,7 @@ Preview of all executions of a particular job.
 
 | | NAME | TYPE |	DESCRIPTION	|
 | --- | --- | --- | --- |
-|  sdexecution_id |	string |	Execution ID of the queried Job. |
+|  execution_id |	string |	Execution ID of the queried Job. |
 | timers |	array |	History of execution timers. |
 | job_id |	string |	ID of the job being queried. |
 | account_alias |	string |	Short code for a particular account. |
