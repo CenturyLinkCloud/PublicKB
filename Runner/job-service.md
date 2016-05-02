@@ -8,11 +8,11 @@
   "sticky": true
 }}}
 
-## Audience
+### Audience
 
 This article is to support customers of Runner, a product that enables teams, developers, and engineers to quickly provision, interact, and modify their environments anywhere - CenturyLink Cloud, third-party cloud providers, and on-premises.  Additionally, the responses in this FAQ document are specific to using the service through the Control Portal.
 
-## Job Service Overview
+### Job Service Overview
 
 The Job Service is the primary component of the Runner product. Users can create, modify, and execute jobs at anytime. Many of the other services were created in tandem with the Job Service, and enhance the Job Execution capabilities. The Job Service accepts a payload that references a playbook to be used, whether that is using a public or private GitHub repository. When using a private GitHub repository, GitHub credentials are required.
 
@@ -26,7 +26,7 @@ For example, to retrieve all the Jobs created at the account alias level, you wo
 
 In addition to managing Runner Jobs the Job Service will allow you to define execution schedules for your Jobs.
 
-## Job Service/Job Schedule Service API Details
+### Job Service/Job Schedule Service API Details
 
 1. Job Service
  - [Create Job](#CreateJob)
@@ -46,7 +46,7 @@ In addition to managing Runner Jobs the Job Service will allow you to define exe
  - [Get Job Schedule](#GetJobSchedule)
 
 
-### CREATE JOB <a id="CreateJob"></a>
+#### CREATE JOB <a id="CreateJob"></a>
 
 Creates a Runner job in a given account. The Runner jobs have to be scripted plays using Ansible. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
@@ -54,7 +54,7 @@ Creates a Runner job in a given account. The Runner jobs have to be scripted pla
 
 Use this API operation when you would like to create a new job definition to execute the tasks specified in the referenced playbook. You also have the option to run it immediately or execute it later by issuing a start request.
 
-#### URL
+##### URL
 **Structure**
 
 `POST https://api.runner.ctl.io/jobs/{accountAlias}?immediate=true|false`
@@ -63,7 +63,7 @@ Use this API operation when you would like to create a new job definition to exe
 
 `POST https://api.runner.ctl.io/jobs/XXXX?immediate=false`
 
-#### Request
+##### Request
 **URI Parameters**
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
@@ -171,7 +171,7 @@ This entity can be used to pass any additional variables to the playbook as extr
 }
 ```
 
-#### Response
+##### Response
 
 The response will be a list of objects containing entities for each job created in the given account.
 
@@ -249,14 +249,14 @@ Below is the representation of Job Execution Status for various requests:
 ```
 
 
-### GET JOB <a id="GetJob"></a>
+##### GET JOB <a id="GetJob"></a>
 
 Gets a given Runner job by ID. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
 **When to use it**
 Use this API operation when you would like to get the details of a specific job created within a given account.
 
-#### URL
+##### URL
 **Structure**
 
 `GET https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}`
@@ -265,7 +265,7 @@ Use this API operation when you would like to get the details of a specific job 
 
 `GET https://api.runner.ctl.io/jobs/XXXX/1111505e-6773-494a-b2bf-d2cc2684710d`
 
-#### Request
+##### Request
 **URI Parameters**
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
@@ -273,7 +273,7 @@ Use this API operation when you would like to get the details of a specific job 
 | accountAlias |	string |	Short code for a particular account. |	Yes |
 | id |	string |	ID of the job being queried. |	Yes |
 
-#### Response
+##### Response
 
 The response will be a Job object containing all its entities.
 
@@ -367,7 +367,7 @@ Defined list of hosts and their related variable made available to the playbook 
 ```
 
 
-### UPDATE JOB <a id="UpdateJob"></a>
+#### UPDATE JOB <a id="UpdateJob"></a>
 
 Updates the details of an existing Runner job by ID. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
@@ -375,7 +375,7 @@ Updates the details of an existing Runner job by ID. Calls to this operation mus
 
 Use this API operation when you would like to update the details of a specific job created within a given account. Basically you can re-write the entire Job description of an existing Job.
 
-#### URL
+##### URL
 **Structure**
 
 `PUT https://api.runner.ctl.io/jobs/{accountAlias}/{id}?immediate=true|false`
@@ -384,7 +384,7 @@ Use this API operation when you would like to update the details of a specific j
 
 `PUT https://api.runner.ctl.io/jobs/XXXX/1111505e-6773-494a-b2bf-d2cc2684710d`
 
-#### Request
+##### Request
 **URI Parameters**
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
@@ -496,7 +496,7 @@ This entity can be used to pass any additional variables to the playbook as extr
 }
 ```
 
-#### Response
+##### Response
 
 The response will be a list of objects containing entities for each job created in the given account.
 
@@ -570,7 +570,7 @@ The response will be a list of objects containing entities for each job created 
 ```
 
 
-### DELETE JOB <a id="DeleteJob"></a>
+#### DELETE JOB <a id="DeleteJob"></a>
 
 Delete an existing Runner job in a given account. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
@@ -578,7 +578,7 @@ Delete an existing Runner job in a given account. Calls to this operation must i
 
 Use this API operation when you would like to delete an existing job within a given account.
 
-#### URL
+##### URL
 **Structure**
 
 `DELETE https://api.runner.ctl.io/jobs/{accountAlias}/{id}`
@@ -587,7 +587,7 @@ Use this API operation when you would like to delete an existing job within a gi
 
 `DELETE https://api.runner.ctl.io/jobs/XXXX/e436f511-21f9-4cda-9026-a68cd6112240`
 
-#### Request
+##### Request
 **URI Parameters**
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
@@ -595,14 +595,14 @@ Use this API operation when you would like to delete an existing job within a gi
 | accountAlias |	string |	Short code for a particular account. |	Yes |
 | id |	string |	ID of the job to be deleted from the account. |	Yes |
 
-#### Response
+##### Response
 
 | HTTP CODE |	DESCRIPTION |
 | --- | --- |
 | 204 |	Sent when a request to delete a Job is successful. |
 
 
-### GET JOBS <a id="GetJobs"></a>
+#### GET JOBS <a id="GetJobs"></a>
 
 Retrieve the list of jobs created within a given account alias. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
@@ -610,7 +610,7 @@ Retrieve the list of jobs created within a given account alias. Calls to this op
 
 Use this API operation when you would like to retrieve the list of jobs published within a given account and view the details of a job.
 
-#### URL
+##### URL
 **Structure**
 
 `GET https://api.runner.ctl.io/jobs/{accountAlias}?page=0&size=100`
@@ -619,7 +619,7 @@ Use this API operation when you would like to retrieve the list of jobs publishe
 
 `GET https://api.runner.ctl.io/jobs/XXXX`
 
-#### Request
+##### Request
 **URI Parameters**
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
@@ -628,7 +628,7 @@ Use this API operation when you would like to retrieve the list of jobs publishe
 | page |	integer |	You can specify the page number for which you would like to get the results for. Default is “0”. |	No |
 | size |	integer |	You can specify the page size between 1 to 100. Default is “100”. |	No |
 
-#### Response
+##### Response
 
 The response will be a list of objects containing entities for each job created in the given account in the order of last created. Along with total number of jobs created under your account alias.
 
@@ -742,7 +742,7 @@ Defined list of hosts and their related variable made available to the playbook 
 ```
 
 
-### START JOB <a id="StartJob"></a>
+#### START JOB <a id="StartJob"></a>
 
 Creates an execution of an existing job by ID against different host(s). Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token. Once the execution is created, it will be queued to start at the earliest. Live status feed of the execution can be viewed with your callback(s) URL if you have defined at the time of job creation.
 
@@ -750,7 +750,7 @@ Creates an execution of an existing job by ID against different host(s). Calls t
 
 Use this API operation when you would like to explicitly start a job execution on any host(s).
 
-#### URL
+##### URL
 **Structure**
 
 `POST https://api.runner.ctl.io/jobs/{accountAlias}/{id}/start`
@@ -759,7 +759,7 @@ Use this API operation when you would like to explicitly start a job execution o
 
 `POST https://api.runner.ctl.io/jobs/XXXX/1111505e-6773-494a-b2bf-d2cc2684710d/start`
 
-#### Request
+##### Request
 **URI Parameters**
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
@@ -797,7 +797,7 @@ Define list of hosts and their related variable made available to the playbook, 
 }
 ```
 
-#### Response
+##### Response
 
 An execution document will be your response but you could view the execution details by making a call to the GET Job Executions.
 
@@ -829,7 +829,7 @@ An execution document will be your response but you could view the execution det
 ```
 
 
-### GET JOB EXECUTIONS <a id="GetJobExecutions"></a>
+#### GET JOB EXECUTIONS <a id="GetJobExecutions"></a>
 
 Gets details of all the executions of a particular Job by ID. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
@@ -837,7 +837,7 @@ Gets details of all the executions of a particular Job by ID. Calls to this oper
 
 Use this API operation when you would like to get details of all the executions of a particular job created within your account.
 
-#### URL
+##### URL
 **Structure**
 
 `GET https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/executions?page=0&size=100`
@@ -846,7 +846,7 @@ Use this API operation when you would like to get details of all the executions 
 
 `GET https://api.runner.ctl.io/jobs/XXXX/ba7e6f6a-2673-4580-a297-8d7e44483bd7/executions`
 
-#### Request
+##### Request
 **URI Parameters**
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
@@ -856,7 +856,7 @@ Use this API operation when you would like to get details of all the executions 
 | page |	integer |	You can specify the page number for which you would like to get the results for. Default is “0”. |	No |
 | size |	integer |	You can specify the page size between 1 to 100. Default is “100”. |	No |
 
-#### Response
+##### Response
 
 Preview of all executions of a particular job.
 
@@ -951,7 +951,7 @@ An execution will have multiple timers only when it is restarted.
 ```
 
 
-### RESTART JOB EXECUTION <a id="RestartJobExecution"></a>
+#### RESTART JOB EXECUTION <a id="RestartJobExecution"></a>
 
 Restarts a failed execution of an existing job by ID against failed host(s). Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token. Once the execution is created, it will be queued to restart at the earliest. Live status feed of the execution can be viewed with your callback(s) URL if you have defined at the time of job creation.
 
@@ -959,7 +959,7 @@ Restarts a failed execution of an existing job by ID against failed host(s). Cal
 
 This API operation is applicable only on Failed executions of a job. Use this API operation when you would like to execute the same play against the failed host(s).
 
-#### URL
+##### URL
 **Structure**
 
 `POST https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/executions/{executionId}/restart`
@@ -968,7 +968,7 @@ This API operation is applicable only on Failed executions of a job. Use this AP
 
 `POST https://api.runner.ctl.io/jobs/XXXX/1111505e-6773-494a-b2bf-d2cc2684710d/executions/44fdcfa2-6a7f-46d3-9f71-22e629e2358a/restart`
 
-#### Request
+##### Request
 **URI Parameters**
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
@@ -1007,7 +1007,7 @@ Define list of failed host(s) and their related variable made available to the p
 }
 ```
 
-#### Response
+##### Response
 
 An execution document with your previous run timer details with an updated status as “PENDING” will be your response. You could view the execution details by making a call to the GET Job Executions.
 
@@ -1054,7 +1054,7 @@ An execution will have multiple timers only when it is restarted.
 ```
 
 
-### STOP JOB EXECUTION <a id="StopJobExecution"></a>
+#### STOP JOB EXECUTION <a id="StopJobExecution"></a>
 
 To stop a Pending/Initializing/Running/Stopping job execution gracefully. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token. Live status feed of the execution can be viewed with your callback(s) url if you have defined at the time of job creation.
 
@@ -1062,7 +1062,7 @@ To stop a Pending/Initializing/Running/Stopping job execution gracefully. Calls 
 
 Use this API operation when you would like to stop a Pending/Initializing/Running/Stopping execution of a job.
 
-#### URL
+##### URL
 **Structure**
 
 `POST https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/executions/{executionId}/stop`
@@ -1071,7 +1071,7 @@ Use this API operation when you would like to stop a Pending/Initializing/Runnin
 
 `POST https://api.runner.ctl.io/jobs/XXXX/1111505e-6773-494a-b2bf-d2cc2684710d/executions/44fdcfa2-6a7f-46d3-9f71-22e629e2358a/stop`
 
-#### Request
+##### Request
 **URI Parameters**
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
@@ -1094,7 +1094,7 @@ Use this API operation when you would like to stop a Pending/Initializing/Runnin
  }
 ```
 
-#### Response
+##### Response
 
 An execution document with your previous run timer details with an updated status as “STOPPING” will be your response. Eventually the status will change to STOPPED. You can view the execution details by making a call to the GET Job Executions.
 
@@ -1140,7 +1140,7 @@ Note: Tasks that are executed until the stop request will not rollback.
 }
 ```
 
-### KILL JOB EXECUTION <a id="KillJobExecution"></a>
+#### KILL JOB EXECUTION <a id="KillJobExecution"></a>
 
 To kill the process of a job execution with any of status as Pending/Initializing/Running/Stopping/Killing. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.Calls to this operation must include a token acquired from the authentication endpoint. Live status feed of the execution can be viewed with your callback(s) url if you have defined at the time of job creation.
 
@@ -1148,7 +1148,7 @@ To kill the process of a job execution with any of status as Pending/Initializin
 
 Use this API operation when you would like to terminate an execution of a job with any of status as Pending/Initializing/Running/Stopping/Killing.
 
-#### URL
+##### URL
 **Structure**
 
 `POST https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/executions/{executionId}/kill`
@@ -1157,7 +1157,7 @@ Use this API operation when you would like to terminate an execution of a job wi
 
 `POST https://api.runner.ctl.io/jobs/XXXX/1111505e-6773-494a-b2bf-d2cc2684710d/executions/44fdcfa2-6a7f-46d3-9f71-22e629e2358a/kill`
 
-#### Request
+##### Request
 **URI Parameters**
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
@@ -1180,7 +1180,7 @@ Use this API operation when you would like to terminate an execution of a job wi
  }
 ```
 
-#### Response
+##### Response
 
 An execution document with your previous run timer details with an updated status as “KILLING” will be your response. Eventually the status will change to KILLED. You can view the execution details by making a call to the GET Job Executions.
 
@@ -1227,12 +1227,12 @@ Note: Tasks that are executed until the kill request will not rollback.
 ```
 
 
-## Job Schedule Service Overview
+### Job Schedule Service Overview
 
 The Job Schedule Service, allows you to define a set interval at which a job will automatically execute. In order to use the Job Schedule Service, you will need to create a Service Account. Please refer to the [Service Account KB article](https://www.ctl.io/knowledge-base/runner/service-account/) for detailed instructions.
 
 
-### CREATE JOB SCHEDULE <a id="CreateJobSchedule"></a>
+#### CREATE JOB SCHEDULE <a id="CreateJobSchedule"></a>
 
 Define the schedule for an existing job. Have your Service Account Alias created. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
@@ -1240,7 +1240,7 @@ Define the schedule for an existing job. Have your Service Account Alias created
 
 Use this request when you would like to schedule an existing job in a timely manner.
 
-#### URL
+##### URL
 **Structure**
 
 `POST https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/schedules`
@@ -1249,7 +1249,7 @@ Use this request when you would like to schedule an existing job in a timely man
 
 `POST https://api.runner.ctl.io/jobs/XXXX/6f6546f8-316d-4cc0-b144-cac3f5668e8d/schedules`
 
-#### Request
+##### Request
 **URI Parameters**
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
@@ -1285,7 +1285,7 @@ Use this request when you would like to schedule an existing job in a timely man
 }
 ```
 
-#### Response
+##### Response
 
 A schedule document will be your response.
 
@@ -1314,7 +1314,7 @@ Note: You will need to save the ID for later to delete the schedule.
 ```
 
 
-### UPDATE JOB SCHEDULE <a id="UpdateJobSchedule"></a>
+#### UPDATE JOB SCHEDULE <a id="UpdateJobSchedule"></a>
 
 Update a schedule for an existing job. Have your Service Account Alias created. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
@@ -1322,7 +1322,7 @@ Update a schedule for an existing job. Have your Service Account Alias created. 
 
 Use this request when you would like to update a schedule of an existing job.
 
-#### URL
+##### URL
 **Structure**
 
 `PUT https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/schedules/{jobScheduleId}`
@@ -1331,7 +1331,7 @@ Use this request when you would like to update a schedule of an existing job.
 
 `PUT https://api.runner.ctl.io/jobs/XXXX/6f6546f8-316d-4cc0-b144-cac3f5668e8d/schedules/9b68b4cd-f642-4358-93b6-32f522fa1448`
 
-#### Request
+##### Request
 **URI Parameters**
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
@@ -1368,7 +1368,7 @@ Use this request when you would like to update a schedule of an existing job.
 }
 ```
 
-#### Response
+##### Response
 
 The updated schedule document will be your response.
 
@@ -1397,7 +1397,7 @@ Note: We will need to save the ID field for later to delete the schedule.
 ```
 
 
-### DELETE JOB SCHEDULE <a id="DeleteJobSchedule"></a>
+#### DELETE JOB SCHEDULE <a id="DeleteJobSchedule"></a>
 
 Delete a schedule of an existing job. Have your Service Account Alias created. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
@@ -1405,7 +1405,7 @@ Delete a schedule of an existing job. Have your Service Account Alias created. C
 
 Use this request when you would like to delete a schedule of an existing job.
 
-#### URL
+##### URL
 **Structure**
 
 `DELETE https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/schedules/{jobScheduleId}`
@@ -1414,7 +1414,7 @@ Use this request when you would like to delete a schedule of an existing job.
 
 `DELETE https://api.runner.ctl.io/jobs/XXXX/6f6546f8-316d-4cc0-b144-cac3f5668e8d/schedules/9b68b4cd-f642-4358-93b6-32f522fa1448`
 
-#### Request
+##### Request
 **URI Parameters**
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
@@ -1424,7 +1424,7 @@ Use this request when you would like to delete a schedule of an existing job.
 | jobScheduleId |	string |	ID of the job schedule to be removed. |	Yes |
 
 
-### GET JOB SCHEDULE <a id="GetJobSchedule"></a>
+#### GET JOB SCHEDULE <a id="GetJobSchedule"></a>
 
 Get schedule(s) of an existing job. Have your Service Account Alias created. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
@@ -1432,7 +1432,7 @@ Get schedule(s) of an existing job. Have your Service Account Alias created. Cal
 
 Use this request when you would like to get all the schedule(s) of an existing job.
 
-#### URL
+##### URL
 **Structure**
 
 `GET https://api.runner.ctl.io/jobs/{accountAlias}/{jobId}/schedules`
@@ -1441,7 +1441,7 @@ Use this request when you would like to get all the schedule(s) of an existing j
 
 `GET https://api.runner.ctl.io/jobs/XXX/6f6546f8-316d-4cc0-b144-cac3f5668e8d/schedules`
 
-#### Request
+##### Request
 **URI Parameters**
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
@@ -1451,7 +1451,7 @@ Use this request when you would like to get all the schedule(s) of an existing j
 | page |	integer |	You can specify the page number for which you would like to get the results for. Default is “0”. |	No |
 | size |	integer |	You can specify the page size between 1 to 100. Default is “100”. |	No |
 
-#### Response
+##### Response
 
 The updated schedule document will be your response.
 
