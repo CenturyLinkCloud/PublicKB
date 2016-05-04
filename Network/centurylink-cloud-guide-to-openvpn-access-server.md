@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to Openvpn Access Server",
-  "date": "11-11-2015",
+  "date": "4-25-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -220,7 +220,23 @@ Customers are encouraged to review the [full explanations](//docs.openvpn.net/ho
   ```
 
 ### Performing Updates and Upgrades
-Once you have deployed the Primary OpenVPN Access Server (or standby node) customers are encouraged to keep their appliance up to date.  Simple run the following via SSH on the OpenVPN AS Appliance:
+Once you have deployed the Primary OpenVPN Access Server (or standby node) customers are encouraged to keep their appliance up to date.  This should be performed before any additional configuration via SSH.
+
+1. Upgrade the OpenVPN Access Server to the latest version by [downloading and installing the Ubuntu 14 64-bit](https://openvpn.net/index.php/access-server/download-openvpn-as-sw/113.html?osfamily=Ubuntu) build.
+
+  ```
+  wget URL_of_new_package
+  dpkg -i URL_of-new_package
+  ```
+
+  For current version 2.0.25 the commands are:
+
+  ```
+  wget http://swupdate.openvpn.org/as/openvpn-as-2.0.25-Ubuntu14.amd_64.deb
+  dpkg -i openvpn-as-2.0.25-Ubuntu14.amd_64.deb
+  ```
+
+2. Apply the latest Ubuntu updates and upgrades.
 
   ```
   apt-get update && apt-get upgrade
