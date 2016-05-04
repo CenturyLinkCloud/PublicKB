@@ -43,7 +43,7 @@ CenturyLink Cloud now has a robust, geo-distributed Object Storage service capab
 
     ![cloudberry copy UI](../images/using-object-storage-from-3rd-party-tools-04.png)
 
-7. Permissions can be applied at both the bucket and object level. Customers should review the documentation for information on apply ACL policies.  **Currently this only works when using the service using the "S3 Compatible" account type.**
+7. Permissions can be applied at both the bucket and object level. Customers should review the documentation for information on apply ACL policies.
 
     ![cloudberry ACLs](../images/using-object-storage-from-3rd-party-tools-05.png)
 
