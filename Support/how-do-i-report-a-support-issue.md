@@ -54,6 +54,7 @@ US: 888.638.6771<br>UK: +44.118.322.6100<br>Singapore: +65.6305.8099| incident@c
 
 ### Chat Support
 Customers in the **Professional and Enterprise** support tier can leverage our real-time chat system.
+* [Chat Requirements](#chat-requirements)
 
 1. Login to the [Control Portal](//control.ctl.io), select the **?** icon and choose **Chat with support.**
 
@@ -62,6 +63,8 @@ Customers in the **Professional and Enterprise** support tier can leverage our r
     ![chat dialog box](../images/how-do-i-get-support-for-centurylink-cloud-services-03.png)
 
 2. Provide your Account Alias, [user PIN](../Support/pin-authentication-for-support-requests.md) and description of the problem to the support engineer.
+
+
 
 ### Phone Support
 Customers in the **Professional and Enterprise** support tier can leverage our phone support.
@@ -101,3 +104,8 @@ When you reopen a ticket, it goes to the engineer that solved. Our engineers wor
 **How long do you wait before closing a ticket?**
 
 After a ticket has been Solved, the automation will close the the ticket after 3 days. All subsequent communication to the closed ticket will create a new ticket at Low priority.
+
+### *Chat requirements*
+
+1. Supported operating systems: Windows XP, Vista, 7, 8, 8.1, 10, Mac OS X 10.8 and newer 
+2. Supported browsers: Chrome 31 and newer, Mozilla Firefox 29 and newer, Internet Explorer 7 and newer, Safari 6 and newer, Opera 12 and newer
