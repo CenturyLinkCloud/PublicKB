@@ -24,7 +24,17 @@
 
 **Q: What are the network requirements for SBS, if any?**
 
-A: Simple Backup Service requires outbound internet traffic over port 443. CLC VMs allow outbound traffic by default using NAT.
+A: SSH for root is required for the Blueprint to initially install the Backup Agent on the target server. Simple Backup Service requires outbound internet traffic over port 443. CLC VMs allow outbound traffic by default using NAT. Alternatively, firewall rules may be configured utilizing the endpoints listed below.
+
+```
+up-va1.backup.ctl.io
+up-de1.backup.ctl.io
+up-ca3.backup.ctl.io
+up-sg1.backup.ctl.io
+up-uc1.backup.ctl.io
+up-gb3.backup.ctl.io
+```
+Additional endpoints will need to be configured based on the Storage Region selected as indicated in the [How it Works](./simple-backup-service-how-it-works.md) KB article.
 
 **Q: What OSes are supported?**
 
@@ -85,6 +95,10 @@ A: There are two places in the agent that show the status of your backups. First
 **Q: For a "Failed" or "Partial_Success" backup status, can I see which files failed and why?**
 
 A: Yes, see the sbs-backup-files-failed.csv file located on your system for details.
+
+**Q: Where are my backups actually stored?**
+
+A: The SBS agent on the server transfers backup data to one of six different backup storage regions, each built on top of cloud object storage. CenturyLink sources this object storage from a combination of its own cloud platform, as well as 3rd party cloud providers such as Amazon Web Services. For more information, see our [How It Works](https://www.ctl.io/knowledge-base/backup/simple-backup-service-how-it-works/) KB article.
 
 ### Restores
 
