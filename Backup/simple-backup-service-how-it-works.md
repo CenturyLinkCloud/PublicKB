@@ -1,6 +1,6 @@
 {{{
   "title": "Simple Backup How It Works",
-  "date": "02-24-2016",
+  "date": "05-02-2016",
   "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
@@ -17,7 +17,16 @@ For example, you can specify the backup frequency, retention, location, self-ser
 **How it Works**
 Define and apply a policy to the server. A backup agent is then installed on the server. Backups of designated files and folders occur per the frequency defined in the backup policy. The server connects to the Internet through which the backup agent communicates directly with the backup infrastructure. No external server talks to the customer’s server.
 
-SBS leverages [Object Storage](https://www.ctl.io/object-storage/). Backups are securely transferred into Object Storage and reside in storage for the duration of the retention period. Restores are initiated by the customer, at which point the files are brought back to the server within a matter of minutes for customer use. All information pertaining to the backup or restore is available to the customer.
+SBS utilizes S3 protocol to leverage a combination of [CLC Object Storage](https://www.ctl.io/object-storage/) and AWS Objects Storage. Backups are securely transferred into Object Storage and reside in storage for the duration of the retention period. Restores are initiated by the customer, at which point the files are brought back to the server for customer use. Partnering with 3rd party cloud providers such as AWS allows additional flexibility for our customers to choose their desired Object Storage region. For a list of storage regions and the associated provider, please see the chart below.
+
+| Backup Region | Storage Target | Endpoint |
+| --- | --- | --- |
+| APAC (Singapore) | AWS Object Storage (Singapore) - APS1 | `s3-ap-southeast-1.amazonaws.com` |
+| EU (Germany) | AWS Object Storage (Frankfurt) - EUC1 | `s3.eu-central-1.amazonaws.com` or `s3-eu-central-1.amazonaws.com`
+| EU (Ireland) | AWS Object Storage (Ireland) - EU | `s3-eu-west-1.amazonaws.com` |
+| US East | AWS Object Storage (Northern Virginia) - USE1 | `s3.amazonaws.com` or `s3-external-1.amazonaws.com` |
+| US West | AWS Object Storage (Oregon) - USW2 | `s3-us-west-2.amazonaws.com` |
+| Canada | CLC Object Storage (Canada) - CA3 | `canada.os.ctl.io` |
 
 **Backup Policies**
 Backup Policies are user-defined configurations that you specify through the [Control Portal](https://control.ctl.io/). Servers are added to policies and start backing up based on the policy details. There is no limit on the number of servers you can add to a policy. Likewise, a server can be added to multiple policies. Backup Policy details include:
@@ -62,9 +71,3 @@ In order to prevent the accidental overwriting of data, a new directory is creat
 
 **Security**
 Backup are transferred from your server over the public Internet to Object Storage using TLSv1.2. The data is then encrypted at rest in the object store with 256-bit AES encryption server side. A unique key that is also encrypted with a master key when it is stored is used to secure your data. Keys are stored in separate locations from your data for extra protection. At this time user supplied keys are not supported. At this time, backups stored in the Canada region will not be encrypted.
-
-**Related Topics**
-* [Getting Started with Simple Backup](https://www.ctl.io/knowledge-base/backup/getting-started-with-simple-backup/)
-* [Simple Backup FAQs](https://www.ctl.io/knowledge-base/backup/simple-backup-service-faqs/)
-* [Minimizing Restore Costs](https://www.ctl.io/knowledge-base/backup/minimizing-restore-costs/)
-* [About Simple Backup Services](https://www.ctl.io/knowledge-base/support/backup-service-changes-faq/)
