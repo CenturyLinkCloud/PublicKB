@@ -86,7 +86,7 @@ Let’s take a look a simple “Hello World” playbook:
 	  tasks:
 	    - name: Display Text
 	      shell: echo “Hello World!”
-	```	   
+```	   
 
 
 
@@ -119,6 +119,5 @@ We run the shell command **echo** here.
 **Want to see it for yourself?** For the full list of playbooks and all Ansible module-related things, visit our [GitHub page](https://github.com/CenturyLinkCloud/clc-ansible-module).
 
 #### What's Next?
-* Start a [free trial](/free-trial/) on CenturyLink Cloud.
-* Visit our [Developer Center](/developers/) to learn how to [Create a Server in your Account and create a Runner job](/developers/blog/post/tutorial-automation-ansible-runner).
-* See more example Playbooks or read up on more documentation, visit our [Runner](http://info.runner.ctl.io/documentation-examples/) page.
+* Start a [free trial](https://www.ctl.io/free-trial/) on CenturyLink Cloud.
+* Learn more about Runner in our [Knowledge Base](https://www.ctl.io/knowledge-base/runner/).
