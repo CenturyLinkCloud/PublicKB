@@ -29,7 +29,7 @@ Using Runner is a fairly straightforward process. To get started, one must first
 
 **Host Information** – This information provides the job context for where your job is to be run. You can specify a single host, group, or all hosts you want to use.
 
-**Bearer Token** – Each job requires authorization in order to run. Runner authorizes your job using your CenturyLink Cloud Bearer Token. [The API is available here](/api-docs/v2/#authentication-login). Runner takes a JSON payload of user defined options and parameters, including the above required information, and creates a job definition within Runner. For a full list of payload options and parameters, please take a look at this [KB article](https://www.ctl.io/knowledge-base/runner/job-service/). It is worth noting that you can create a job and not run it. This will be defined in your API calls, such as:
+**Bearer Token** – Each job requires authorization in order to run. Runner authorizes your job using your CenturyLink Cloud Bearer Token. [The API is available here](https://www.ctl.io/api-docs/v2/#authentication-login). Runner takes a JSON payload of user defined options and parameters, including the above required information, and creates a job definition within Runner. For a full list of payload options and parameters, please take a look at this [KB article](https://www.ctl.io/knowledge-base/runner/job-service/). It is worth noting that you can create a job and not run it. This will be defined in your API calls, such as:
 
 `[RUNNER API PATH]/jobs/{accountAlias}?immediate=true|false`
 
