@@ -19,7 +19,7 @@
 * __Runner GA Launch__. Runner, CenturyLink Cloud Platform’s new automation and orchestration product launched May 2nd, 2016.  Runner reduces complexity and administrative workload by allowing for fast and easy automation and orchestration of infrastructure on our Cloud Platform, as well as third-party cloud providers and on-premise.
 
   **Features include:**
-   - 100% free service – only pay for infrastructure you provision**
+   - 100% free service – only pay for infrastructure you provision
    - Available in all 14 data centers
    - Ansible 2.0 support
    - Runner Minion for multi-cloud and on-premise connectivity
