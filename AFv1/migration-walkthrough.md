@@ -54,7 +54,7 @@ Now the account is established on AppFog v2 and the CLI tool is installed. Next 
 1. PHP 5.3 and 5.4 are deprecated and no longer [officially supported](http://php.net/eol.php). We recommend updating applications to at least PHP 5.5. If updating is not possible at this time we have provided a custom buildpack to support PHP 5.3 and 5.4. When using the PHP custom buildpack only predefined environment variables can be utilized. This means user set environment variables will not be available to the deployed PHP application. The VCAP_SERVICES environment variable is available for use connecting to an AppFog marketplace service offering. This buildpack commit lists the [available environment variables](https://github.com/CenturyLinkCloud/php-buildpack/commit/6bd12f73bc68950856e67cae9a08c4d89c2dfefc) defined in the custom buildpack.
 2. Download a copy of the application from AppFog v1 using `af pull <appname>`.
 3. Modify your applications to replace any AppFog v1 URLs in the application's code. For instance, replace calls to `example-app.aws.af.cm` with a new application URL of `example-app.uswest.appfog.ctl.io`.
-4. Modify how the VCAP_SERVICES environment variable is called. The fields are slightly different on AppFog v2. On AppFog v1 the database and host fields were "name" and "hostname". They are defined as "dbname" and "host" on AppFog v2, respectively. Also, the MySQL service is now named `ctl_mysql`. Follow these links for examples of the VCAP_SERVICES environment variable for [AppFog v1](mysql.md) and [AppFog v2](importing-data-to-afv2-mysql.md). Here is an example using the VCAP_SERVICES variable with PHP:
+4. Modify how the VCAP_SERVICES environment variable is called. The fields are slightly different on AppFog v2. On AppFog v1 the database and host fields were "name" and "hostname". They are defined as "dbname" and "host" on AppFog v2, respectively. Also, the MySQL service is now named `ctl_mysql`. Follow these links for examples of the VCAP_SERVICES environment variable for AppFog v1 and [AppFog v2](importing-data-to-afv2-mysql.md). Here is an example using the VCAP_SERVICES variable with PHP:
 
  ```
 $services = json_decode($_ENV['VCAP_SERVICES'], true);
@@ -66,7 +66,7 @@ define('DB_HOST', $service['credentials']['host'] . ':' . $service['credentials'
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '')
  ```
- 
+
 5. AppFog v1 had several PHP extensions and modules enabled by default. AppFog v2 allow users to specify necessary extensions and modules. The following steps outline the process:
  * Create a new `.bp-config` directory in your application's root directory.
  * Within the new `.bp-config` directory add a filed named `options.json`.
@@ -76,7 +76,7 @@ define('DB_COLLATE', '')
 "PHP_EXTENSIONS": ["pdo", "pdo_mysql", "mysqli", "mysql", "mbstring", "mcrypt", "gd", "zip", "curl", "openssl", "sockets", "pdo_pgsql", "pdo_sqlite", "pgsql", "mongo"]
 }
  ```
- 
+
 6. The PHP buildpack default version is 5.5. Specifying a different PHP version is done within the `bp.config/options.json` file. The example app `test-app` requires version 5.3, this example shows how to specify a runtime and enable some PHP extensions:
  ```
 {
@@ -84,7 +84,7 @@ define('DB_COLLATE', '')
 "PHP_EXTENSIONS": ["pdo", "pdo_mysql", "mysqli", "mysql", "mbstring", "mcrypt"]
 }
  ```
- 
+
 7. AppFog v1 required modifications to php.ini settings to be included in their `.htaccess` file. On AppFog v2 users will need to create a `.user.ini` file in their root directory to modify php.ini settings. Users can still utilize a `.htaccess` file for URL rewriting. Here are some examples of php.ini modifications:
 
  ```
@@ -93,11 +93,11 @@ upload_max_filesize = 4M
 max_input_time = 90
   ```
 8. The default application memory reservation is 1GB and the default buildpack will support PHP 5.5 and 5.6. Specify the PHP custom buildpack when deploying PHP 5.3 and 5.4 applications, if necessary also specify the memory allocation:
- 
+
  ```
 cf push <appname> -m <memory> -b https://github.com/CenturyLinkCloud/php-buildpack.git#af_custom_php
  ```
- 
+
 9. For this example we would use the following commands to push the example-app and test-app applications to AppFog v2:
 ```
 cf push example-app -m -256M
@@ -125,7 +125,7 @@ wget -c -O <example-db>.zip <URL_provided_by_export-service_command>
  ```
 gunzip <example-db>.sql <file_name>.gz
  ```
- 
+
 2. Next, create a service on AppFog v2. You can view the available first-party service options using `cf marketplace`. For resource and pricing information on a specifc serivice offering use `cf marketplace -s <service-name>`.
 
 3. The syntax to create a service is `cf create-service <service-type> <plan> <service-name>`. For this example, `cf create-service ctl_mysql micro example-db`.

@@ -1,5 +1,5 @@
 {{{
-  "title": "SafeHaven 3.0/3.1/3.1.1 - Build a base-imaage template from scratch using Ubuntu 14",
+  "title": "SafeHaven 3.0/3.1/3.1.1 - Build a base-image template from scratch using Ubuntu 14",
   "date": "9-21-2015",
   "author": "Jake Malmad",
   "attachments": [],

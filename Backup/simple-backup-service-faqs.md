@@ -18,12 +18,27 @@
 * [Frequency](#frequency)
 * [Retention](#retention)
 * [Inclusions and Exclusions](#inclusions-and-exclusions)
+* [Billing](#billing)
 
 ### Requirements
 
 **Q: What are the network requirements for SBS, if any?**
 
-A: Simple Backup Service requires outbound internet traffic over port 443. CLC VMs allow outbound traffic by default using NAT.
+A: SSH for root is required for the Blueprint to initially install the Backup Agent on the target server. Simple Backup Service requires outbound internet traffic over port 443. CLC VMs allow outbound traffic by default using NAT. Alternatively, firewall rules may be configured utilizing the endpoints listed below.
+
+```
+up-va1.backup.ctl.io
+up-de1.backup.ctl.io
+up-ca3.backup.ctl.io
+up-sg1.backup.ctl.io
+up-uc1.backup.ctl.io
+up-gb3.backup.ctl.io
+```
+Additional endpoints will need to be configured based on the Storage Region selected as indicated in the [How it Works](./simple-backup-service-how-it-works.md) KB article.
+
+**Q: What OSes are supported?**
+
+A: All Operating Systems that are currently buildable in the CLC Control Portal are supported. Customer imported OVA/OVF OSes and 32-bit OSes are not supported.
 
 **Q: How can I use Simple Backup Service on a server that doesn't have internet access?**
 
@@ -80,6 +95,10 @@ A: There are two places in the agent that show the status of your backups. First
 **Q: For a "Failed" or "Partial_Success" backup status, can I see which files failed and why?**
 
 A: Yes, see the sbs-backup-files-failed.csv file located on your system for details.
+
+**Q: Where are my backups actually stored?**
+
+A: The SBS agent on the server transfers backup data to one of six different backup storage regions, each built on top of cloud object storage. CenturyLink sources this object storage from a combination of its own cloud platform, as well as 3rd party cloud providers such as Amazon Web Services. For more information, see our [How It Works](https://www.ctl.io/knowledge-base/backup/simple-backup-service-how-it-works/) KB article.
 
 ### Restores
 
@@ -217,3 +236,21 @@ A: Not at this time; currently the exclusion list overrides the inclusion list. 
 **Q: Are wildcard characters supported for inclusion/exclusion backup paths when creating a Backup Policy?**
 
 A: Wildcard characters are not directly supported at this time. However, all sub-folders and files of an included path will be backed up unless specifically added to the exclusion list. All sub-folders and files of an exclusion path will be omitted from backup.
+
+### Billing
+
+**Q: How is my bill calculated?**
+
+A: SBS provides a simplified billing model. The cost per GB for backups is calculated on the actual data stored on an hourly basis. The actual data stored varies based on the backup retention, frequency, and your data change rate. After your first initial backup, each subsequent backup will capture and store changes to your data. The restore cost is a flat rate based on the restored amount of data in GBs.
+
+* Backup Cost Calculation Example:
+
+  10 GB of data backed up starting on the 15th of the month assuming no changes throughout the reamining duration of the month.
+
+  Hourly GB Usage = (10 GB of backup x 15 days x 24 hours) = 3,600 GB
+
+  Billable GB amount based on the monthly rate = 3,600 GB usage / 720 hours in a month = 5 GB
+
+**Q: Are there any additional costs or hidden fees associated with SBS?**
+
+A: No, there are no hidden fees or additional costs (data transfer, storage, licenses, etc).
