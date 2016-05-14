@@ -1,18 +1,18 @@
 {{{
   "title": "Getting Started with Magento - Blueprint",
-  "date": "2-25-2015",
+  "date": "02-25-2015",
   "author": "Bob Stolzberg",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-![logo](https://wiki.magento.com/download/attachments/2952491/MAGE2DOC?version=1&modificationDate=1378339878000&api=v2)
+![Magento Logo](../../images/magento-logo.png)
 
 ### Technology Profile
-Magento is one of the most popular open source ecommerce shopping cart systems. It is extremely flexible and has a huge variety of features to build just about any store. Features include SEO-readiness, multi-store support, marketing tools, deep analytics, catalog management, a robust shopping cart with support for multiple shipping addresses and more. The Magento project is backed by eBay, so you can be confident that it will be around for the long run, and it offers multiple editions, including small business and enterprise editions, to help grow with your business. Magento’s flexible, feature-rich open source and enterprise eCommerce solutions help you get the most from your online channel.
+Magento is one of the most popular open source ecommerce shopping cart systems. It is extremely flexible and has a huge variety of features to build just about any store. Features include SEO-readiness, multi-store support, marketing tools, deep analytics, catalog management, a robust shopping cart with support for multiple shipping addresses and more. The Magento project is backed by eBay, so you can be confident that it will be around for the long run. It offers multiple editions, including small business and enterprise editions, to help grow with your business. Magento’s flexible, feature-rich open source and enterprise eCommerce solutions help you get the most from your online channel.
 
 ### Description
-Magento Community Edition is the perfect solution if you're a developer or tech-savvy merchant that wants to explore the flexibility of the Magento eCommerce platform. You can modify—and even contribute to—the core code and engage with our passionate community for support and guidance.  This Blueprint will install and configure Magento 1.9.1.0-1 (64-bit) on Linux.
+Magento Community Edition is the perfect solution if you're a developer or tech-savvy merchant that wants to explore the flexibility of the Magento eCommerce platform. You can modify, and even contribute to the core code and engage with our passionate community for support and guidance.  This Blueprint will install and configure Magento 1.9.1.0-1 (64-bit) on Linux.
 
 For more information, please view http://www.Magento.com
 
@@ -24,25 +24,25 @@ After reading this article, the user should feel comfortable getting started usi
 
 
 ### Prerequisite
-- Access to the CenturyLink Cloud platform as an authorized user.
+- Access to the CenturyLink Cloud platform as an authorized user
 - Existing Linux x64 server and login access
 
 ### Postrequisite
 
-- If you need to connect to your server via internet, add a Public IP address to your server.  For more information view this link: http://www.ctl.io/knowledge-base/network/how-to-add-public-ip-to-virtual-machine.md
+- If you need to connect to your server via the internet, add a Public IP address to your server.  For more information, view this link: http://www.ctl.io/knowledge-base/network/how-to-add-public-ip-to-virtual-machine.md
 
     ![ip.jpg](https://t3n.zendesk.com/attachments/token/kObGC9P2IjP1ate0NexwFNiXz/?name=ip.jpg)
 
-- Allow incoming traffic for ports to an existing server by managing Firewall rules.  Fore more information, vie this link: http://www.ctl.io/knowledge-base/network/creating-cross-data-center-firewall-policies/
+- Allow incoming traffic for ports to an existing server by managing Firewall rules.  For more information, view this link: http://www.ctl.io/knowledge-base/network/creating-cross-data-center-firewall-policies/
 
     ![port.jpg](https://t3n.zendesk.com/attachments/token/1Ufw0JjIWW8XfASYLh4x3Irl9/?name=port.jpg)
 
 
 ### Install Bitnami Magento on Linux Blueprint
-1. Locate the Bitnami Magento Blueprint
+1. Locate the Bitnami Magento Blueprint.
   1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
   2. Search for “Magento” in the keyword search on the right side of the page.
-  3. Locate the 'Install Bitnami Magento on Linux' Blueprint
+  3. Locate the 'Install Bitnami Magento on Linux' Blueprint.
 
 2. Choose and Deploy the Blueprint. Click the “Install Bitnami Magento on Linux” Blueprint.
 
@@ -63,10 +63,10 @@ After reading this article, the user should feel comfortable getting started usi
   14. MyDQL Database User Password
   15. PHPMyAdmin Password
   16. Magento Admin Password
-  17. Start Magento after install?, e.g. Yes
+  17. Start Magento after install?, e.g., Yes
 
 4. Review and Confirm the Blueprint.
-  1. Click “next: step 2”
+  1. Click “next: step 2”.
   2. Verify your configuration details.
 
 5. Deploy the Blueprint.
@@ -81,7 +81,7 @@ After reading this article, the user should feel comfortable getting started usi
 
 ### Access your Magento server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
-  1. Check email to obtain Server Name and IP Address Login information
+  1. Check email to obtain Server Name and IP Address Login information.
   2. Log in to the server and start having fun!
 
 ### Pricing
@@ -94,5 +94,5 @@ CenturyLink Cloud works with Bitnami to provide open source software integration
 
 #### Who should I contact for support?
 * For issues related to deploying the Bitnami Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the Bitnami Support website: http://www.bitnami.com/support
-* For issues related to cloud infrastructure (VM’s, network, etc), please open a CenturyLink Cloud Support ticket: https://t3n.zendesk.com/tickets/new
-* For Magento Support, please visit http://www.magentocommerce.com/knowledge-base
+* For issues related to cloud infrastructure (VM’s, network, etc), please open a CenturyLink Cloud Support ticket: https://t3n.zendesk.com/tickets/new.
+* For Magento Support, please visit http://www.magentocommerce.com/knowledge-base.
