@@ -27,7 +27,7 @@ CenturyLink Cloud now has a robust, geo-distributed Object Storage service capab
 
     ![object storage users control](../images/using-object-storage-from-3rd-party-tools-06.png)
 
-3. [Capture the service point for object storage.](https://www.ctl.io/knowledge-base/object-storage/object-storage-service-points/)
+3. [Capture the service point for object storage.](https://www.ctl.io/knowledge-base/object-storage/object-storage-regions-and-service-points/)
 
 4. Back in Explorer for Amazon S3, click **File** then **New S3 Compatible Account** and choose the **CenturyLink** menu option in order to add the connection details for Object Storage.
 
