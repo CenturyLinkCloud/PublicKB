@@ -16,7 +16,7 @@ The following powershell script will iterate through each of the servers in the 
 
 There are a number of variables at the beginning of the script that you can manually edit before you execute the script. These are the account alias, the number of days the data will be retained, the backup frequency of the policy, and the storage region where the backups will be stored. These variables begin on line 44. The account alias has to be modified, the other variables are optional. If you don't modify the account alias, the script will prompt you to do so before it executes. If you don't edit the other variables within the script, they can be changed later in the Portal UI. An output file with results of the operation will be stored in: C:\users\public\CLC\SBSDeployment.
 
-## Using the Powershell Script
+### Using the Powershell Script
 
 1. First, open a Windows PowerShell ISE window. Copy and paste the block of code at the end of this article into the editor.  
 
@@ -79,7 +79,7 @@ to confirm the script and access the .txt output file. The file contains the log
 
     ![sbspowershellportaldeletepolicy.png](../images/sbspowershellportaldeletepolicy.png)
 
-## Powershell Script
+### Powershell Script
 
 ```
 <#
@@ -317,6 +317,6 @@ forEach ($Server in $serverDetails)
  Write-Verbose -message "Operation complete. An output file with results will be stored at $filename." -verbose
 ```
 
-## Want to Know More About the Simple Backup Service?
+### Want to Know More About the Simple Backup Service?
 
 Check out our SBS product page [here](//www.ctl.io/simple-backup-service/). The CenturyLink Cloud [Knowledge Base](../Backup) also has a number of articles on backup, including [Getting Started with Simple Backup](../backup/getting-started-with-simple-backup/) and [Simple Backup How It Works](../backup/simple-backup-service-how-it-works/).
