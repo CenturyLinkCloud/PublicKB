@@ -24,11 +24,11 @@ We currently support with Runner two options for deploying Expanse on a VM to ge
 
 1. Log into **runner.ctl.io**.
 2. Search for **Expanse** in the Public Products section then click on it
-  ![Search Expanse](./images/runner1.png)
+  ![Search Expanse](../images/BaaS/runner1.png)
 3. Click on run button
-  ![Click on Run](./images/runner2.png)
+  ![Click on Run](../images/BaaS/runner2.png)
 4. Choose the Datacenter you want to deploy a server to, CPU, and RAM. Recommend 2 CPU and 4 GB RAM
-  ![Config Server](./images/runner3.png)
+  ![Config Server](../images/BaaS/runner3.png)
 5. It is now building your server and after about 8 minutes you should see your servers name at http://stats.expanse.tech/
 
 ### Troubleshooting
