@@ -28,7 +28,8 @@ CenturyLink's Relational DB Service is a MySQL-compatible database-as-a-service 
 2.	Click on "Create Database".  From here, select your subscription details (database name, username, password, cpu, memory and storage).  If you want your instance to be replicated, simply, flip the Replication toggle to yes and click on Create Database.
 <p>![CreateReplicatedDB](../images/rdbs-createdb-replicated.png)
 
-3. The resulting provisioning will create a primary database instance as well as a replica database instance and will return you a single connection string.  When a failover occurs, your application will continue to access your database instance using the same connection string.
+3. The resulting provisioning will create a primary database instance as well as a replica database instance and will return you a single connection string.  Replication is asynchronous over a local 10G connection, resulting in real time replication assuming normal network conditions.  
+
 
 ## Manual & Automatic Failover
 1.  Automatic Failover - Your instance will automatically failover to the replica when we detect that your primary instance is unavailable for longer than 6 seconds or 3 consecutive failed health checks.  Failback will occur after one minute of successful health checks of the primary.
