@@ -9,6 +9,7 @@
 
 ### Overview of the NEM Runner job
 We currently support with Runner two options for deploying NEM on a VM to get you up and running quickly.
+
 1. Is an option to build a Ubuntu 14 server in the Data Center of your choice and deploy NEM upon it.
 2. Is an option to deploy NEM to an Ubuntu 14 server that has been put into the CLC inventory and is already stood up.
 
