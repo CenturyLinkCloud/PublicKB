@@ -24,9 +24,17 @@ This article is to support customers of Relational DB Service, CenturyLink's MyS
 </p>
 <p>A: Each MySQL instance lives on its own Virtual Machine.</p>
 
+<p><strong>Q: Are there published APIs that I can use in my own automation? </strong>
+</p>
+<p>A: Yes.  We have published APIs for all actions that can be performed in the UI.  API endpoint is https://api.rdbs.ctl.io/.  For more information and to get started using our APIs, you can view our [API documentation](https://www.ctl.io/api-docs/v2/#relational-database-rdbs).
+</p>
 <p><strong>Q: Can I choose to replicate my data for higher availability?</strong>
 </p>
 <p>A: Customers are given the option to replicate their database instance during the ordering/provisioning process.  If replication is chosen, a replica instance will be created within the same datacenter.  We use logic to ensure that the primary and replica instances do not share the same host or storage volume.  The service will then monitor both primary and replica and will auto-failover to the replica instance if the primary becomes unavailable.  Customers can also choose to perform a manual failover, if needed.  For more information on replication and failover, see our KB on [Replication and Failover](../Database/replication-and-failover.md).</p>
+</p>
+<p><strong>Q: Is the replication synchronous or asynchronous?</strong>
+</p>
+<p>A: Replication is asynchronous across a local 10G network, resulting in real time replication assuming normal networking conditions.
 </p>
 <p><strong>Q: Can I access my replica instance separately in order to load balance my read requests?</strong>
 </p>
@@ -45,21 +53,22 @@ This article is to support customers of Relational DB Service, CenturyLink's MyS
 <p><strong>Q: I understand that CenturyLink is backing my data up daily.  How can I access my backups in order to restore? </strong>
 </p>
 <p>A: If you need to restore from an available backup, you can leverage the Restore Backup API or perform the restore in the Control Portal.  For more information on performing database restores in Control, please see the KB on [Backups and Restores](../Database/backups-and-restores.md). </p>
+<p><strong>Q: Are my backups encrypted? </strong>
+</p>
+<p>A:  Yes.  All backups are encrypted at rest. 
+</p>
 <p><strong>Q: How long are my backups being held?
 </p>
 <p>A: At the time of Relational DB subscription creation, the user will define backup retention policy.  Customers can select a retention policy as short as 1 day or as long as 35 days.  Customers can also change the backup retention policy post-provisioning through the Subscription details page of the UI or through API.  
 </p>
 <p><strong>Q: Where are my backups being held? </strong>
 </p>
-<p>A: For disaster recovery purposes, backups are being held offsite at least 350 miles away from your primary database.  Backups are also held in the same country as the associated Relational DB instance to maintain data sovereignty. 
+<p>A: For disaster recovery purposes, backups are being held offsite at least 350 miles away from your primary database.  Backups are also held in the same country as the associated Relational DB instance to maintain data sovereignty.
 </p>
 <p><strong>Q: Will the product support the use of standard MySQL management tools including the ability to monitor and report on database tasks within the tool?  </strong>
 </p>
 <p>A: Yes.  Your database instance is on a dedicated VM and there are no restrictions for any management utilities.  In fact, we expect that much of the database management will be accomplished using MySQL Command Line Interface or a MySQL client of your choice.
 <p>
-<p><strong>Q: Are there published APIs that I can use in my own automation? </strong>
-</p>
-<p>A: Yes.  We have published APIs for all actions that can be performed in the UI.  API endpoint is https://api.rdbs.ctl.io/.  For more information and to get started using our APIs, please view our [API documentation](https://api.rdbs.ctl.io/api/swagger/index.html).
 
 
 **If you have questions or feedback, please submit them to our team by emailing <a href="mailto:rdbs-help@ctl.io">rdbs-help@ctl.io</a>.**
