@@ -9,6 +9,7 @@
 
 ### Overview of the Expanse Runner job
 We currently support with Runner two options for deploying Expanse on a VM to get you up and running quickly.
+
 1. Is an option to build a Ubuntu 14 server in the Data Center of your choice and deploy Expanse upon it in about 6 minutes.
 2. Is an option to deploy Expanse to an Ubuntu 14 server that has been put into the CLC inventory and is already stood up.
 
