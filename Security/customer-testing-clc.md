@@ -28,7 +28,7 @@ CenturyLink Cloud Users
 
 Any test intended to find either limits or performance degradation points in systems.  
 
-**Required Notification:** CenturyLink does not allow customers to perform load testing except in very special, highly controlled circumstances that must be closely coordinated ahead of time.  Advance notice to the CLC help desk (in all cases) by opening a ticket at help@ctl.io and coordinating with a customer service associate (CSA) during the testing.
+**Required Notification:** CenturyLink does not allow customers to perform load testing except in very special, highly controlled circumstances that must be closely coordinated ahead of time.  Advance notice to the CLC help desk (in all cases) by opening a ticket at help@ctl.io and coordinating with a Customer Care Engineer during the testing.
 
 Tools used for testing include: LoadRunner, NeoLoad, Rational Performance Tester, Jmeter, The Grinder, and other similar tools.
 
