@@ -3,7 +3,8 @@
         "author": "Platform Security",
         "attachments": [],
         "contentIsHTML": false,
-        "sticky": false }}}
+        "sticky": false
+ }}}
 
 ## Description
 
