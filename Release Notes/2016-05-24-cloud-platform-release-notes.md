@@ -6,8 +6,8 @@
 "contentIsHTML": false
 }}}
 
-### New Features (2)
-* __RelationalDB (2)__.
+### New Features (5)
+* __RelationalDB__. Our MySQL-compatible database-as-a-service  offering has been updated with these new features:
 	- **New Flexible Plans Available in AppFog Marketplace.** Thursday, May 19, we launched our new, flexible database plans - mysql_single and mysql_replicated. These new plans enable users to independently configure vCPU, Memory, Storage and Backup settings to their preferred configuration, instead of choosing between fixed “t-shirt” size plans.  
 
     	All existing database instances provisioned via AppFog (e.g. micro, small, medium, and large plans) were automatically converted to the new mysql_single plan, retaining their configuration settings. The new mysql plans can be configured in the Relational DB dashboard, from either the link on the AppFog Application dashboard, or direct navigation to https://rdbs.ctl.io. NOTE: This conversion will not affect pricing or database availability. Application connectivity will NOT be impacted.
@@ -30,7 +30,7 @@
 	![RelationalDB App](../images/2016-05-24_releasenotes-01.png)
 	
 	
-* __Runner (3)__.
+* __Runner__. Our automated infrastructure management service has added the following new features: 
 	- **CLC Ansible Module.**
 	*version: 1.1.10*  
 	Support has been added for mapping a public ip to the existing internal ip of the sytem when adding a new public ip.
