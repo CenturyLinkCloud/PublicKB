@@ -29,7 +29,7 @@ The Blueprint method shown below installs and activates the IPS agent on your VM
 
   * api.client-security.ctl.io/ips/scripts/uninstall.sh 443/tcp
 
-*  If utilizing syslog notifications, add the following source rules to the firewall that the destination Syslog server sits behind
+*  If utilizing Syslog notifications, add the following source servers and ports to the rule that allows data to your Syslog server on the Firewall which protects your Syslog server.
 
   * dsm01.client-security.ctl.io 514/udp
   
