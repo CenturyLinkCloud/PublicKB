@@ -17,7 +17,7 @@ You should already have deployed your SafeHaven nodes to run this process agains
   + Deployed SafeHaven Templates
   + API v1 User
 + SafeHaven Components (Downloadable)
-  + [Console & Cluster Configurator Software - SAHA 3.1.0.6u3](https://www.dropbox.com/sh/8c32qpjseds8srz/AAA8HCZ7hrmkhRYPUdDRBELba/SafeHavenClients-3.1.0.6-u3-Win32.zip?dl=0)
+  + [Console & Cluster Configurator Software - SAHA 3.1.1GA/u1](https://www.dropbox.com/sh/7837hqfwe31wzrh/AACJZHZDFLDo9FrauRIN8cm2a/SH3.1.1-GA-Dec15-2015/SafeHavenConsole-3.1.1-GA.zip?dl=0)
 + Windows OS w/access to both Production and DR SafeHaven environments
 
 ## Cluster Configuration
@@ -28,9 +28,9 @@ The cluster configuration software needs to be run off of a Windows machine - wi
 
 Download and extract the following software to a known location on the Windows machine
 
-[Cluster Configurator Software - SAHA 3.1.0.6u3](https://www.dropbox.com/sh/8c32qpjseds8srz/AAA8HCZ7hrmkhRYPUdDRBELba/SafeHavenClients-3.1.0.6-u3-Win32.zip?dl=0)
+[Cluster Configurator Software - SAHA 3.1.1](https://www.dropbox.com/sh/7837hqfwe31wzrh/AACJZHZDFLDo9FrauRIN8cm2a/SH3.1.1-GA-Dec15-2015/SafeHavenConsole-3.1.1-GA.zip?dl=0)
 
-**At this time the Cluster Configurator is running off of the 3.1.0.6u3 code, when working in your SafeHaven Console make sure to use the correct GUI version related to your SafeHaven Environment**
+**At this time the Cluster Configurator is running off of the 3.1.1 code, when working in your SafeHaven Console make sure to use the correct GUI version related to your SafeHaven Environment**
 
 ### Installing and Configuration Steps
 
@@ -93,7 +93,7 @@ Download and extract the following software to a known location on the Windows m
 
   * **SafeHaven distribution URL** - This is the NO SBD link for the current code level of your SafeHaven Environment
 
-      * ***3.1.0.6u3*** - https://www.dropbox.com/sh/8c32qpjseds8srz/AACvFrqpe06NsGRKGQMvuDYXa/SafeHaven3.1.0.6-u3_nosbd_11-04-2015_bin.tar.gz?dl=0
+      * ***3.1.1*** - https://www.dropbox.com/sh/7837hqfwe31wzrh/AACryIOIhfFGw4kMBINDkIGUa/SH3.1.1-GA-Dec15-2015/SafeHaven3.1.1-GA_nosbd_12-16-2015_bin.tar.gz?dl=0
 
   ![Cluster Config - CMS](../images/SAHA31-ClusterConfiguration-9.png)
 
