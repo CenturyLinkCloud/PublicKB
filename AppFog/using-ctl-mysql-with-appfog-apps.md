@@ -20,18 +20,18 @@ This article will provide an overview of our [MySQL-compatible Relational DB off
 ```
 $ cf marketplace
 ...
-service       plans                           description   
-ctl_mysql     micro, small, medium, large     CenturyLink's Relational DB Service, MySQL-compatible database-as-a-service
+service       plans                              description   
+ctl_mysql     mysql_single, mysql_replicated     CenturyLink's Relational DB Service, MySQL-compatible database-as-a-service
 ```
 
 
 
 ### Create a Relational DB Service Instance
 
-To create a new CenturyLink Relational DB service instance, we can use the Cloud Foundry CLI. In order to do this you must be [logged into an AppFog region](login-using-cf-cli.md). The following command will create a new micro Relational DB service instance named `acmedb`:
+To create a new CenturyLink Relational DB service instance, we can use the Cloud Foundry CLI. In order to do this you must be [logged into an AppFog region](login-using-cf-cli.md). The following command will create a new mysql_single Relational DB service instance named `acmedb`:
 
 ```
-$ cf create-service ctl_mysql micro acmedb
+$ cf create-service ctl_mysql mysql_single acmedb
 ```
 
 The `cf create-service` command will provision a new MySQL-compatible instance that can later be bound to an application deployed to AppFog.
@@ -64,7 +64,7 @@ System-Provided:
     },
     "label": "ctl_mysql",
     "name": "acmedb",
-    "plan": "micro",
+    "plan": "mysql_single",
     "tags": []
    }
   ],
