@@ -6,7 +6,7 @@
   "sticky": true
 }}}
 
-# So what is a Business Associate Agreement?
+### So what is a Business Associate Agreement?
 
 The Business Associate Agreement (BAA) is not a contract for services or a typical non-disclosure agreement. It deals only with CenturyLink’s responsibilities as a [Business Associate](//www.ctl.io/compliance/hipaa/) (BA) under the Health Insurance Portability and Accountability Act (HIPAA), as amended. Most clients in the medical and dental professions are [Covered Entities](//www.ctl.io/compliance/hipaa/) (CE) under HIPAA because they collect, maintain, or process protected health information.
 
