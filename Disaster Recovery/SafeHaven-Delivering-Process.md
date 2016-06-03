@@ -8,16 +8,16 @@
   "sticky": true
 }}}
 
-## Overview
+### Overview
 This article covers major steps to use SafeHaven as a disaster recovery
 service.
 ![break-down](../images/SAHA-delivering-procedure.png)
 ### Get an Order From Marketing Team 
-To start with, you need to approach to SafeHaven marketing team,
+To start the process, you simply contact the SafeHaven team,
 safehavenmarketing@ctl.io, requesting a free trial or direct order. A SafeHaven
 sales lead will deliver a demo and work with you to do the capacity plan and
 compatibility validation. You will be transferred to SafeHaven on-boarding team
-when the PoC or direct order is made.
+when the PoC or direct order is approved.
 
 ### Start Working With On-Boarding Team
 SafeHaven on-boarding team provides customized design based on your specific
