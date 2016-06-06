@@ -17,23 +17,23 @@ The Blueprint method shown below installs and activates the IPS agent on your VM
 ### Prerequisites
 * A CenturyLink Cloud Account
 * One of the Supported Operating Systems listed below on the Virtual Machine
-* Add the following Firewall Rules to allow agent download, activation and management from target machine.
+* Add the following Firewall Rules to allow agent download, activation and management
 
-  * dsm.client-security.ctl.io 443/tcp
+  * Installing Server -> dsm.client-security.ctl.io 443/tcp
   
-  * activate.dsm.client-security.ctl.io 443/tcp
+  * Installing Server -> activate.dsm.client-security.ctl.io 443/tcp
   
-  * relay.dsm.client-security.ctl.io 443/tcp
+  * Installing Server -> relay.dsm.client-security.ctl.io 443/tcp
   
-  * api.client-security.ctl.io/ips/scripts/install.sh 443/tcp
+  * Installing Server -> api.client-security.ctl.io/ips/scripts/install.sh 443/tcp
+  
+  * Installing Server -> api.client-security.ctl.io/ips/scripts/uninstall.sh 443/tcp
 
-  * api.client-security.ctl.io/ips/scripts/uninstall.sh 443/tcp
+*  If utilizing Syslog notifications, add the following rules on the Firewall which protects your Syslog server.
 
-*  If utilizing syslog notificaitons, add the following rules to the firewall that the Syslog server sits behind
-
-  * dsm01.client-security.ctl.io 514/udp
+  * dsm01.client-security.ctl.io 514/udp -> Syslog Server
   
-  * dsm02.client-security.ctl.io 514/udp
+  * dsm02.client-security.ctl.io 514/udp -> Syslog Server
 
 
 ### Supported Managed Operating Systems

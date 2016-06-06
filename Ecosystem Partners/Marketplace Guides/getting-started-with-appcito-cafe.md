@@ -110,7 +110,7 @@ After deploying this Blueprint, you may secure entitlements to the technology us
 Additional resources:
 
 * [Introduction to Appcito CAFE](http://support.appcito.com/support/solutions/articles/5000478428)
-* [Plans and Pricing](http://www.appcito.com/appcito-cafe/plans/)
+* [Plans and Pricing](http://www.appcito.com/products/service-packages/)
 * [Features and Capabilities](http://www.appcito.com/appcito-cafe/)
 
 ### Frequently Asked Questions
