@@ -1,6 +1,6 @@
 {{{
   "title": "Using Object Storage from 3rd Party Tools",
-  "date": "12-2-2015",
+  "date": "5-2-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -27,15 +27,13 @@ CenturyLink Cloud now has a robust, geo-distributed Object Storage service capab
 
     ![object storage users control](../images/using-object-storage-from-3rd-party-tools-06.png)
 
-3. Capture the service point for object storage.  They are as follows:
+3. [Capture the service point for object storage.](https://www.ctl.io/knowledge-base/object-storage/object-storage-regions-and-service-points/)
 
-    * Canada: canada.os.ctl.io
-
-4. Back in Explorer for Amazon S3, click the **File, New S3 Compatible Account** menu option in order to add the connection details for Object Storage.
+4. Back in Explorer for Amazon S3, click **File** then **New S3 Compatible Account** and choose the **CenturyLink** menu option in order to add the connection details for Object Storage.
 
     ![new s3 compatible account](../images/using-object-storage-from-3rd-party-tools-01.png)
 
-5. Specify name, service point, access and secret keys to register the new S3 Compatible Storage account.
+5. Specify name, service point, access and secret keys to register the new CenturyLink account.
 
     ![s3 compatible account input](../images/using-object-storage-from-3rd-party-tools-02.png)
 

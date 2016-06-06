@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Marketplace Provider Program Guide",
-  "date": "12-17-2015",
+  "date": "03-31-2015",
   "author": "David Shacochis",
   "attachments": [],
   "stickyt": true,
@@ -92,6 +92,7 @@ CenturyLink supports technology partners that invest their valuable time and res
 | **Gold Tier "Evangelism" Phase (500-5,000 points)** | Progression |
 | --------------------------------------------------- | ----------- |
 | _Integration Credit_ | _$7,000/mo_ |
+| Development of OnBoarding QuickStart offering | 200 points |
 | CenturyLink Channel Alliance (CCA) Activation as Qualified Workload | 150 points |
 | CloudWalk or other Co-Marketing Event Supported | 100 points |
 | CloudWalk, Co-Marketing, or Champions Event Sponsored | 200 points |

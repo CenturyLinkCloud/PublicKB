@@ -168,7 +168,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Live Helper Chat](../Ecosystem Partners/Marketplace Guides/getting-started-with-livehelperchat-blueprint.md)   	| Blueprint    | Live chat    |
 | [Microsoft Active Directory ](../Managed Services/getting-started-with-managed-active-directory.md)  	| Blueprint (Managed)   | Directory Service     |
 | [NOALYSS](../Ecosystem Partners/Marketplace Guides/getting-started-with-noalyss-blueprint.md)  	| Blueprint   | Dobule Entry Accounting (ERP)	|
-| [Netwrix](../Ecosystem Partners/Marketplace Guides/getting-started-with-Netwrix-Auditor.md)  	| Blueprint   | Auditing of network components	|
+| [Netwrix](../Ecosystem Partners/Marketplace Guides/getting-started-with-netwrix-auditor-80.md)  	| Blueprint   | Auditing of network components	|
 | [OpenCart](../Ecosystem Partners/Marketplace Guides/getting-started-with-opencart-blueprint.md)  	| Blueprint   | eCommerce platform     |
 | [OpenProject](../Ecosystem Partners/Marketplace Guides/getting-started-with-openproject-blueprint.md)  	| Blueprint   | Project Management     |
 | [OXID](../Ecosystem Partners/Marketplace Guides/getting-started-with-oxid-blueprint.md)  	| Blueprint   | eCommerce platform     |
