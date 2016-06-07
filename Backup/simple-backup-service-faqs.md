@@ -54,6 +54,10 @@ A: No, SBS provides file-level backup protection. In fact, SBS does not backup c
 
 ### Agent
 
+**Q: What are the minimum requirements of a VM for the SBS agent to run?**
+
+A: Although the SBS agent will run on 1 core, 1gb of RAM VM's, the overall speed and performance might not be optimal. There could be resource contention on the server during a backup as well, depending on the other processes running on the server at that time.
+
 **Q: What are the logon credentials for the backup agent?**
 
 A: Please review the [SBS Agent Security Configurations](./sbs-agent-security.md) KB article for details.
