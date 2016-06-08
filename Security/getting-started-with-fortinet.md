@@ -1,9 +1,7 @@
 {{{
 "title": "Getting Started with Fortinet",
 "date": "06-08-2016",
-"author": Bob Stolzberg",
-"attachments": [],
-"related-products" : [],
+"author": "Bob Stolzberg",
 "contentIsHTML": false,
 "sticky": false
 }}}
