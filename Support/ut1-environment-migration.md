@@ -23,7 +23,6 @@ CenturyLink Cloud Customers with existing UT1 resources
   * List of VMs to be migrated out of the UT1 datacenter
   * Datacenter locations where VMs should be migrated to
   * VLAN in new DC location to deploy to
-  * VM storage type (i.e. Standard vs Premium)
   * VM admin/root credentials
   * User name and PIN
 
