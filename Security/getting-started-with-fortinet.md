@@ -130,7 +130,7 @@ To access your Fortinet partner template over the internet, please perform the f
 
 2. If required, [allow incoming traffic for the admin port](../../Network/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Server's Public IP in the Control Portal.
     **Warning:** Please make sure your firewall rules are properly configured to only allow specific source traffic. If you do not configure source traffic rules you risk exposing your VM to the entire internet.
-	**Note:** When accessing your VM for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
+	  **Note:** When accessing your VM for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
 
 ### Pricing
 
@@ -138,7 +138,7 @@ There are no Fortinet license costs included. The cost to deploy the Fortinet Pa
 
 ### To Request a Credit for the Service Task Fee
 
-Request a credit on your account to re-imburse any expense to deploy the partner template.
+Request a credit on your account to reimburse any expense to deploy the partner template.
 
 Please copy and paste the email below and send it to [ecosystem@ctl.io](mailto:ecosystem@ctl.io).
 
