@@ -1,6 +1,6 @@
 
 {{{
-  "title": "Installing Docker Trusted Registry",
+  "title": "Getting Started with Docker Trusted Registry - Blueprint",
   "date": "November 11, 2015",
   "author": "Albert Choi",
   "attachments": [],

@@ -1,6 +1,6 @@
 {{{
   "title": "Add or Remove Network Interface to Server using Go CLI",
-  "date": "10-13-2015",
+  "date": "3-28-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -14,6 +14,12 @@ Customers may wish to implement additional network interfaces (NICs) on CenturyL
 * [Go CLI](//github.com/CenturyLinkCloud/clc-go-cli)
 * Server Name, Network Name and optionally the IP address you wish to leverage for this additional network interface
 
+### Required Data
+* Control Portal Username and Password
+* Server name you wish to add/remove an additional network interface
+* Network name you wish to add/remove
+* Account Alias if you wish to add/remove a network interface to a server in a sub-account
+
 ### Add a Network Interface to a Server
 
 1. [Login to your account with the Go CLI.](//github.com/CenturyLinkCloud/clc-go-cli#log-in-to-your-centurylink-cloud-account)
@@ -22,10 +28,12 @@ Customers may wish to implement additional network interfaces (NICs) on CenturyL
     clc login --user XXX --password XXX
     ```
 
-2. Run the add-secondary-network Go CLI command. The --ip-address field is optional if you want to set a specific IP that is free in your network.  If not specified the next available IP will be used.  
+2. Run the add-secondary-network Go CLI command. Use the optional fields below if necessary.
+  * The --ip-address field is optional if you want to set a specific IP that is free in your network.  If not specified the next available IP will be used. 
+  * The --account-alias field is only required if you wish to add a network interface to a server located in a sub-account
 
     ```
-    clc server add-secondary-network --server-name XXXXX --network-name XXXXX --ip-address XXXXX
+    clc server add-secondary-network --server-name XXXXX --network-name XXXXX --ip-address XXXXX --account-alias XXXX
     ```
 
     ```
@@ -43,10 +51,10 @@ Customers may wish to implement additional network interfaces (NICs) on CenturyL
 
 ### Remove a Network Interface from a Server
 
-1. Run the remove-secondary-network Go CLI command.  
+1. Run the remove-secondary-network Go CLI command.  Use the optional --account-alias field is only required if you wish to remove a network interface from a server in a sub-account
 
     ```
-    clc server remove-secondary-network --server-name XXXXX --network-name XXXXX
+    clc server remove-secondary-network --server-name XXXXX --network-name XXXXX --account-alias XXXX
     ```
 
     ```

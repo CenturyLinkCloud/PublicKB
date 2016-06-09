@@ -1,7 +1,7 @@
 
 
 {{{
-  "title": "Installing OSS Mesosphere on Ubuntu x64",
+  "title": "Getting Started with OSS Mesosphere - Blueprint",
   "date": "November 9, 2015",
   "author": "Albert Choi",
   "attachments": [],
@@ -9,7 +9,8 @@
 }}}
 
 
-![mesosphere](https://p4.zdassets.com/hc/settings_assets/558139/200117215/UxO2UjWA3dY3SHQWVgF4Tw-mesosphere_logo_-_horizontal_lockup__rgb__jumbo__720.png)
+<img src="../../images/ecosystem-mesosphere-logo.png" style="border:0;max-width: 300px;"/>
+
 
 ### Technology Profile
 

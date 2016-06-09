@@ -28,6 +28,10 @@ If you are no longer using AppFog, no action is needed.
 
 Please reach out to support@appfog.com, if you need help migrating your applications to AppFog v2. We are confident that we can build a migration plan that will work for you.
 
+#### What about my AppFog v1 billing subcription?
+
+When migration is complete your billing subscription can be canceled from the [Account](https://console.appfog.com/#account) page of the web console. Please be sure to cancel your subscription as we are not aware when individual user migration is complete. The billing system will not automatically prorate the subscription and issue a refund. If applicable, please open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com to receive a prorated refund of your subscription.
+
 ####  Why is AppFog v2 replacing AppFog v1? 
 
 AppFog v1 was built on an older version of Cloud Foundry. There is no easy migration path between these versions. We decided that rather than carry AppFog v1's limitations to the new version of Cloud Foundry, we'd start over and work to build a platform for cloud-native apps that supports the latest and greatest CF features. Further, we are building several new services to augment the core Cloud Foundry features. 
@@ -92,6 +96,8 @@ CenturyLink Cloud features one of the most sophisticated service infrastructures
 
 #### What do I do if I’m using PHP 5.3 or PHP 5.4?
 
-AppFog v2 supports PHP 5.4 and 5.5 out of the box.  The Cloud Foundry buildpack recently removed support for PHP 5.4, because it is no longer receiving updates and patches.  As PHP 5.3 and PHP 5.4 are out of support and no longer receiving updates, we recommend migrating PHP 5.3 and 5.4 applications to PHP 5.5. 
+AppFog v2 supports PHP 5.5 and 5.6 out of the box.  The Cloud Foundry buildpack recently removed support for PHP 5.4, because it is no longer receiving updates and patches.  As PHP 5.3 and PHP 5.4 are out of support and no longer receiving updates, we recommend migrating PHP 5.3 and 5.4 applications to PHP 5.5.
 
 If this is not possible, contact [support@appfog.com](mailto:support@appfog.com).  We've created a custom buildpack for PHP 5.3 that is available for users who cannot upgrade to an officially supported version of PHP.
+
+When using the PHP custom buildpack only predefined environment variables can be utilized. This means user set environment variables will not be available to the deployed PHP application. The VCAP_SERVICES environment variable is available for use connecting to an AppFog marketplace service offering. This buildpack commit lists the [available environment variables](https://github.com/CenturyLinkCloud/php-buildpack/commit/6bd12f73bc68950856e67cae9a08c4d89c2dfefc) defined in the custom buildpack.

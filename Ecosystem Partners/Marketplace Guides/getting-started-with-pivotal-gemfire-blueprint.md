@@ -58,7 +58,7 @@ The GemFire Blueprint is designed to be successfully deployed on an existing ser
 
   <img src="../../images/pivotal_gemfire/gemfire_blueprint_tile.png" style="border:0;max-width:250px;">
 
-  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “Pivotal GemFire in the keyword search on the right side of the page.
+  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “Pivotal GemFire" in the keyword search on the right side of the page.
 
 3. **Click the Deploy Blueprint button.**
 

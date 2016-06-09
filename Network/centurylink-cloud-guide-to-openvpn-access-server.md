@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to Openvpn Access Server",
-  "date": "11-10-2015",
+  "date": "5-9-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -9,21 +9,21 @@
 
 ### Table of Contents
 
-* [Overview](#Overview)
-* [Prerequisites](#Prerequisites)
-* [Exceptions](#Exceptions)
-* [Use Cases](#Use-Cases)
-* [Reserving Client VPN DHCP Pool in the Control Portal](#Reserving-Client-VPN-DHCP-Pool-in-the-Control-Portal)
-* [Base Appliance Configuration](#Base-Appliance-Configuration)
-* [Performing Updates and Upgrades](#Performing-Updates-and-Upgrades)
-* [Implementing High Availability](#Implementing-High-Availability)
-* [Configure Server Network Settings](#Configure-Server-Network-Settings)
-* [Configuring Client VPN DHCP Pool](#Configuring-Client-VPN-DHCP-Pool)
-* [Adding Routes to CenturyLink Cloud VLANs](#Adding-Routes-to-CenturyLink-Cloud-VLANs)
-* [Configuring LDAP Authentication](#Configuring-LDAP-Authentication)
-* [Installing SSL Web Certificates](#Installing-SSL-Web-Certificates)
-* [Two Factor Authentication](#Two-Factor-Authentication)
-* [Connecting to Client VPN Services](#Connecting-to-Client-VPN-Services)
+* [Overview](#overview)
+* [Prerequisites](#prerequisites)
+* [Exceptions](#exceptions)
+* [Use Cases](#use-cases)
+* [Reserving Client VPN DHCP Pool in the Control Portal](#reserving-client-vpn-dhcp-pool-in-the-control-portal)
+* [Base Appliance Configuration](#base-appliance-configuration)
+* [Performing Updates and Upgrades](#performing-updates-and-upgrades)
+* [Implementing High Availability](#implementing-high-availability)
+* [Configure Server Network Settings](#configure-server-network-settings)
+* [Configuring Client VPN DHCP Pool](#configuring-client-vpn-dhcp-pool)
+* [Adding Routes to CenturyLink Cloud VLANs](#adding-routes-to-centurylink-cloud-vlans)
+* [Configuring LDAP Authentication](#configuring-ldap-authentication)
+* [Installing SSL Web Certificates](#installing-ssl-web-certificates)
+* [Two Factor Authentication](#two-factor-authentication)
+* [Connecting to Client VPN Services](#connecting-to-client-vpn-services)
 
 ### Overview
 OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments. OpenVPN Access Server supports a wide range of configurations, including secure and granular remote access to internal network and/ or private cloud network resources and applications with fine-grained access control.
@@ -220,7 +220,23 @@ Customers are encouraged to review the [full explanations](//docs.openvpn.net/ho
   ```
 
 ### Performing Updates and Upgrades
-Once you have deployed the Primary OpenVPN Access Server (or standby node) customers are encouraged to keep their appliance up to date.  Simple run the following via SSH on the OpenVPN AS Appliance:
+Once you have deployed the Primary OpenVPN Access Server (or standby node) customers are encouraged to keep their appliance up to date.  This should be performed before any additional configuration via SSH.
+
+1. Upgrade the OpenVPN Access Server to the latest version by [downloading and installing the Ubuntu 14 64-bit](https://openvpn.net/index.php/access-server/download-openvpn-as-sw/113.html?osfamily=Ubuntu) build.
+
+  ```
+  wget URL_of_new_package
+  dpkg -i URL_of-new_package
+  ```
+
+  For current version 2.0.26 the commands are:
+
+  ```
+  wget http://swupdate.openvpn.org/as/openvpn-as-2.0.26-Ubuntu14.amd_64.deb
+  dpkg -i openvpn-as-2.0.26-Ubuntu14.amd_64.deb
+  ```
+
+2. Apply the latest Ubuntu updates and upgrades.
 
   ```
   apt-get update && apt-get upgrade

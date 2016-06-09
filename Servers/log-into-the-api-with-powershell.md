@@ -35,7 +35,8 @@ CenturyLink Cloud customers can use PowerShell to log into the CenturyLink Cloud
   $json = @"
   {
     'APIKey': 'insert api user guid', 'Password': 'insert api user password'
-  } "@
+  } 
+  "@
 
   #log into the API via Invoke-RestMethod using JSON payload
   $Result = Invoke-RestMethod -URI $URL -Method POST -ContentType application/json -Body $json -SessionVariable session -verbose
@@ -62,7 +63,8 @@ CenturyLink Cloud customers can use PowerShell to log into the CenturyLink Cloud
   $json = @"
   {
     'username':'insert api username', 'password':'insert api user password'
-  } "@
+  } 
+  "@
 
   #log into the API via Invoke-RestMethod using JSON payload
   $Result = Invoke-RestMethod -URI $URL -Method POST -ContentType application/json -Body $json -verbose

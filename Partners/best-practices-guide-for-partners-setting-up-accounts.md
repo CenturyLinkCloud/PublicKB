@@ -14,7 +14,7 @@
 
 - **Sub Accounts** are accounts that are added under a Parent Account.
 
-- **Trials** are a sales tool for you to extend to customers the opportunity to use CenturyLink Cloud – free of charge - for 30 days or up to $2500.
+- **Trials** are a sales tool for you to extend to customers the opportunity to use CenturyLink Cloud – free of charge - for 30 days or up to $500.
 
 ### Getting Started
 You will use _**Sub Accounts**_ to create your Account Hierarchy. Sub Accounts are used to create the following:
@@ -83,7 +83,7 @@ Customer Accounts are just what the name suggests:  accounts for your customers.
 >For example: ABC Services
 
 **Customer Trials**
-Trials are Customer Accounts.  Trials give customers a chance to stand up resources and see how our cloud performs on an actual project or workload.      They are not billed for the 1st 30 days of use or $2500.
+Trials are Customer Accounts.  Trials give customers a chance to stand up resources and see how our cloud performs on an actual project or workload.      They are not billed for the 1st 30 days of use or $500.
 
 When a Trial is converted to a regular, paying customer, the customer does not need to recreate the work they’ve done during the Trial.  The cloud environment for trialing customers is exactly the same as the environment for paying customers.
 

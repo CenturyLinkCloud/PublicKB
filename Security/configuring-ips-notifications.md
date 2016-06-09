@@ -1,6 +1,6 @@
 {{{
   "title": "Configuring Intrusion Prevention System (IPS) Notifications",
-  "date": "10-22-2015",
+  "date": "02-19-2016",
   "author": "Client-Security",
   "attachments": [],
   "related-products" : [],
@@ -14,7 +14,7 @@ The Platform CenturyLink IPS utilizes an Agent installed on your Virtual Machine
 
 The Blueprint allows a customer that has purchased the IPS service from Platform CenturyLink to modify how they would like to be notified regarding IPS security events. This Blueprint will only change **Slack** notification settings for the server it is run against.
 
-Our API allows for a customer to set notification destinations for either **Slack** or **Sys Log**.  
+Our [API](../Security/ips-api.md) allows for a customer to set notification destinations for **WebHook (Slack, for example)**, **Email**, and **Syslog**.  
 
 ### Prerequisites
 
@@ -53,7 +53,7 @@ Our API allows for a customer to set notification destinations for either **Slac
 6. An email notification will be sent to the initiator of the Blueprint for both queuing and completion.
 
 ### Configuration Process via our API
-This can be found in the following document [IPS-API](ips-api.md)
+This can be found in the following document [IPS-API](ips-api.md).
 
 ### Frequently Asked Questions
 
@@ -67,11 +67,11 @@ Not at this time. If you would like to recommend another, please send request de
 
 **Do you retain the data after the event notification is sent?**
 
-Yes, we retain the data for 60 days.  If you need a longer data retention period, we are working on additional add-on functionality to store this data.  If you are interested, please send request details to [features@ctl.io](mailto:features@ctl.io).
+Yes, we retain the data for 13 weeks.  If you are interested in a longer retention period, please send request details to [features@ctl.io](mailto:features@ctl.io).
 
 **Are you storing the full payload in another location?**
 
-Yes, we retain the data in another location for 60 days.
+Yes, we retain the data in another location for 13 weeks.
 
 **Do you support a text message or paging service?**
 

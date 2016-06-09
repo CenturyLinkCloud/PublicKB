@@ -19,7 +19,7 @@ A: CenturyLink Cloud Object Storage is based on a popular software package with 
 
 **Q: What are the key vocabulary terms for Object Storage?**
 
-A: Object storage is deployed in a series of "regions" which include data centers for each CenturyLink Cloud geography (US, Canada, Europe). Note that as of this time, Object Storage is only available in Canada. Object Storage uses "buckets" to hold "objects." Buckets are flat (no hierarchy) and can contain an unlimited number of objects and unlimited amount of storage. "Access Control Lists" (ACLs) describe permissions to a bucket and the objects within it. Object Storage "users" are associated with a given region and have an "access key ID" and "secret access key" which act as the user's username and password for accessing storage.
+A: Object storage is deployed in a series of "regions" which include data centers for each CenturyLink Cloud geography (US, Canada, Europe). Note that as of this time, Object Storage is only available in Canada and US-East. Object Storage uses "buckets" to hold "objects." Buckets are flat (no hierarchy) and can contain an unlimited number of objects and unlimited amount of storage. "Access Control Lists" (ACLs) describe permissions to a bucket and the objects within it. Object Storage "users" are associated with a given region and have an "access key ID" and "secret access key" which act as the user's username and password for accessing storage.
 
 **Q: How do Object Storage users relate to CenturyLink Cloud users?**
 
@@ -31,7 +31,7 @@ A: Object Storage is for key-value data. It is a schema-less repository that can
 
 **Q: How available is my data?**
 
-A: Data stored in an object storage region is stored in a highly available, fault tolerant way.  When data is stored, it is written to a datacenter where it is stored in an industry standard, highly redundant method. Data is also replicated to an additional datacenter where it is again stored using the same redundant method.  This combination of datacenter redundancy and multi-datacenter replication yields a robust, always-on object storage solution.
+A: Data stored in an object storage region is stored in a highly available, fault tolerant way.  When data is stored, it is written to a datacenter where it is stored in an industry standard, highly redundant method. Data is also replicated to an additional datacenter in the same region where it is again stored using the same redundant method.  This combination of redundancy and replication yields a robust, always-on object storage solution.
 
 **Q: How do I interact with Object Storage?**
 

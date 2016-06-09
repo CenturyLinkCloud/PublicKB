@@ -181,18 +181,18 @@ KBs generally use heading level 3 (###) as the highest heading level in the arti
     ```
 
   Be sure the file name does not include any spaces.
-  
+
   The image reference within the article should look like this:
-  
+
     ```
     ![Image Description](../images/[file-name])
     ```
  The image description should be short and relevant to the image.
- 
+
 ### Images within Ordered Lists
- 
+
  When referencing an image within an ordered list, the image should follow the format below. This keeps the image reference from breaking the numbering within the list.
- 
+
     ```
     1. [Text][at least two blank spaces after the text]
     [blank line]
@@ -235,4 +235,23 @@ KBs generally use heading level 3 (###) as the highest heading level in the arti
   -------------|-------------|-------------
   TEXT COLUMN A|TEXT COLUMN B|TEXT COLUMN C
   TEXT COLUMN A|TEXT COLUMN B|TEXT COLUMN C
+  ```
+
+### Table of Contents
+
+  For longer articles a table of contents can improve the browsing experience of the user. **Lowercase** must be used for the `#section-a` to properly jump to the appropriate section of the article.
+
+  ```
+  ### Table of Contents
+
+  * [Section A](#section-a)
+  * [Section B](#section-b)
+  * [Section C](#section-c)
+  * [Section C](#section-d)
+
+  ### Section A
+  Text for this area.
+
+  ### Section B
+  Text for this area.
   ```

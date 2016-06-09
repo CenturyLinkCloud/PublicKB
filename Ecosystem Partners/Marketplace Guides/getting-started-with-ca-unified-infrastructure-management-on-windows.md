@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started With CA Unified Infrastructure Management on Windows (CA UIM)",
-  "date": "10-28-2015",
+  "date": "11-13-2015",
   "author": "Ben Hill",
   "attachments": [],
   "contentIsHTML": false
@@ -19,7 +19,7 @@ CA Unified Infrastructure Management (CA UIM) is a scalable IT monitoring soluti
 
 ### Description
 
-CA Technologies has integrated their _CA Unified Infrastructure Management_ (CA UIM) with the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this IT monitoring solution. solution. - See more at [CA Unified Infrastructure Management](http://www.ca.com/us/opscenter/ca-unified-infrastructure-management.aspx?intcmp=searchresultclick&resultnum=1).
+CA Technologies has integrated their _CA Unified Infrastructure Management_ (CA UIM) with the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this IT monitoring solution. - See more at [CA Unified Infrastructure Management](http://www.ca.com/us/opscenter/ca-unified-infrastructure-management.aspx?intcmp=searchresultclick&resultnum=1).
 
 ### Audience
 
@@ -31,7 +31,9 @@ After reading this article, the user should be able to install UIM for Windows o
 
 ### Prerequisites
 
-Access to the CenturyLink Cloud platform as an authorized user.
+- Access to the CenturyLink Cloud platform as an authorized user
+- MS-SQL Database server with superuser login credentials
+- Enable default MS-SQL server listening port 1433
 
 ### Postrequisites
 None
@@ -42,37 +44,37 @@ CA UIM is available as a Blueprint for deployment on a new server.
 
 #### Steps to deploy to New Server Blueprint
 
-  1. Locate the "Install
-  2. Click on the blueprint. Select "Deploy Blueprint" on the resulting screen
-  3. Configure the Blueprint. Complete the information below:
+  1. Access the blueprints library
+  2. Search for _CA UIM on Windows_
+  3. Click on blueprint icon for CA UIM on Windows
+  4. Deploy Blueprint
 	  - Enter Password
-	  - Choose your group
-	  - Choose your network
-	  - Choose Primary and Secondary DNS
-	  - Choose the Server Type
+	  - Choose Your Group
+	  - Choose Your Network
+	  - Choose Primary & Secondary DNS
+	  - Choose Server Type
 	  - Choose Service Level
 	  - Enter Sever Name
-  4. Review and Confirm Blueprint
-  5. Deploy the Blueprint
-  6. Monitor the Deployment Queue to view the progress of the blueprint. You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
-  7. Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
+	  - Enter Database Host Name
+	  - Enter Database Name
+	  - Enter Database Username
+	  - Enter Database Password
+	  - Enter UIM Admin Password
+	  - Click Next: Step 2
 
-### Steps to deploy to an existing server
-
-  1. Deploy or Identify an existing server
-  2. Locate the "Install UIM on Existing Server" blueprint in the Blueprint Library
-  3. Select "Deploy Blueprint"
-  4. Select the server to be deployed
-  5. Select "next: step 2"
-  6. Select "Deploy Blueprint"
+  5. Review and Confirm Blueprint
+  6. Deploy the Blueprint
   7. Monitor the Deployment Queue to view the progress of the blueprint. You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
-  8. Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
+  8. The blueprint will run for approximately 20 minutes, and may complete with a 'failed' status.  This is due to a timeout due to the installer running long, and if it occurs in the step labeled 'Install CA UIM Single Server on Windows stage3', may be ignored.  Wait 5 to 10 minutes, and the process will complete.
+  9. Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
+  10. Access the UIM application through a web browser pointed at the server address.
+
 
 #### Frequently Asked Questions
 
 For more information about UIM, click on the following links:
 
-[Getting Started - CA Unified Infrastructure Management](https://wiki.ca.com/display/UIM83/Getting+Started)
+[Getting Started - CA Unified Infrastructure Management](https://wiki.ca.com/display/UIM82/Getting+Started)
 
 [Demo Video - CA Unified Infrastructure Management Demo](http://www.ca.com/us/opscenter/ca-unified-infrastructure-management.aspx)
 

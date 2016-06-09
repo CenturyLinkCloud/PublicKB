@@ -270,6 +270,10 @@ reserved for platform-level services, the entire subnet is available for use.  S
 
 Your install will be preloaded with the most current stemcells.  If you need some older stemcells that aren't preloaded or if you need something that's been released since your initial install you can download the stemcells from the links below.  Note these are slightly modified from what's available at network.pivotal.io.
 
+* [3177](http://ateam-packages.canada.os.ctl.io/stemcells/bosh-openstack-clc-ubuntu-trusty-go_agent_3177.tgz)
+* [3146.5](http://ateam-packages.canada.os.ctl.io/stemcells/bosh-openstack-clc-ubuntu-trusty-go_agent_3146.5.tgz)
+* [3146.3](http://ateam-packages.canada.os.ctl.io/stemcells/bosh-openstack-clc-ubuntu-trusty-go_agent_3146.3.tgz)
+* [3146.2](http://ateam-packages.canada.os.ctl.io/stemcells/bosh-openstack-clc-ubuntu-trusty-go_agent_3146.2.tgz)
 * [3100](http://canada.os.ctl.io/bpimager/bosh-openstack-clc-ubuntu-trusty-go_agent_3100.tgz)
 * [3094](http://canada.os.ctl.io/bpimager/bosh-openstack-clc-ubuntu-trusty-go_agent_3094.tgz)
 * [3074](http://canada.os.ctl.io/bpimager/bosh-openstack-clc-ubuntu-trusty-go_agent_3074.tgz)

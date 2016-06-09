@@ -8,7 +8,7 @@
 
 ### New Features (3)
 
-* __Intrusion Prevention has been released for General Availability.__ The [Intrusion Prevention or IPS Product](https://www.ctl.io/intrusion-prevention-service/) is now available in all CenturyLink Cloud Data Centers, except for UC1.  
+* __Intrusion Prevention has been released for General Availability.__ The [Intrusion Prevention or IPS Product](https://www.ctl.io/intrusion-prevention-service/) is now available in all CenturyLink Cloud Data Centers.  
 
   The product installs a Trend Micro Agent on a host machine to protect that host against known and unknown vulnerabilities to operating systems and over 100 applications. The IPS agent automatically scans the host for newly installed applications every 24 hours, and if any are found, the protection policy is updated accordingly. The agent is also automatically updated with new Trend Micro patches to protect against new vulnerabilities. Details on installing IPS and configuring your event notification destinations are available in the Security section of our [knowledge base](https://www.ctl.io/knowledge-base/security/#1).
 
@@ -16,7 +16,7 @@
   * Installation via Blueprints 
   * Supports event notifications via WebHook and Email
   * Event data captured and forwarded to a syslog server 
-  * 90-day data retention of all event data, to help audits and compliance
+  * 13-week data retention of all event data, to help audits and compliance
 
 * __AppFog Control Portal UI Enhancements.__ [AppFog](https://www.ctl.io/appfog/) Developers can now perform common actions in the Control Portal UI:
 
@@ -101,7 +101,7 @@ Start controlling your storage sprawl by [deploying CloudFuze](https://www.ctl.i
 
   * __OpenVPN Access Server.__ [OpenVPN Access Server](https://openvpn.net) is a full-featured, software-based, virtual private networking solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments. OpenVPN Access Server supports a wide range of configurations, including secure and granular remote access to internal network and/ or private cloud network resources and applications with fine-grained access control.  [Build your secure link to the cloud today](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-openvpnas-appliance/) using OpenVPN AS.
 
-  * __SoftNAS.__ [SoftNAS](https://www.softnas.com) is one of the most popular storage technologies in the cloud.  This virtual appliance template is [now available via Cloud Blueprint](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-softnas-cloud-file-gateway-partner-template/), providing CenturyLink customers with an enterprise-grade, software-defined, network-attached storage gateway to safely and reliably operate their business-critical IT systems and storage folders inside CenturyLink Cloud.
+  * __SoftNAS.__ [SoftNAS](https://www.softnas.com) is one of the most popular storage technologies in the cloud.  This virtual appliance template is [now available via Cloud Blueprint](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-softnas-cloud-file-gateway-appliance/), providing CenturyLink customers with an enterprise-grade, software-defined, network-attached storage gateway to safely and reliably operate their business-critical IT systems and storage folders inside CenturyLink Cloud.
 
 ### Open Source Contributions (3)
 

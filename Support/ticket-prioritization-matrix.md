@@ -77,7 +77,7 @@ Each incoming ticket is triaged and the priority evaluated according to the crit
             <td>Any new service request</td>
             <td>1 hour <a href="#2">[2]</a></td>
             <td>Updated every 8 hours</td>
-            <td>normal@ctl.io</td>
+            <td>help@ctl.io</td>
             <td>3 business days <a href="#3">[3]</a></td>
         </tr>
     </tbody>
@@ -103,7 +103,7 @@ Each incoming ticket is triaged and the priority evaluated according to the crit
             <td>24 hours after request</td>
             <td>Ticket entry updated daily</td>
             <td>Completed Monday - Friday during business hours, 9am - 5pm Pacific Time</td>
-            <td>servicetasks@t3n.zendesk.com</td>
+            <td>servicetasks@ctl.io</td>
         </tr>
     </tbody>
 </table>
