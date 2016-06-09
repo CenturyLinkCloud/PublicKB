@@ -68,7 +68,7 @@ If you are interested in seeing this type of partner template deployment as an a
 
 The Fortinet partner template deploys in a virtual appliance model, as a CenturyLink Cloud partner template.  Follow these step by step instructions to deploy a Fortinet Fortigate partner template in to your CenturyLink Cloud account.
 
-1. Open a Service Task Request Ticket via an email to [ServiceTasks@Tctl.io](mailto:ServiceTasks@ctl.io). Attach your Fortinet license to the email and include the following details in the email:
+1. Open a Service Task Request Ticket via an email to [ServiceTasks@ctl.io](mailto:ServiceTasks@ctl.io). Attach your Fortinet license to the email and include the following details in the email:
 
     * CenturyLink Cloud Account Alias
     * CenturyLink Cloud Account PIN
@@ -124,9 +124,9 @@ The Fortinet partner template deploys in a virtual appliance model, as a Century
 
 To access your Fortinet partner template over the internet, please perform the following tasks once your VM has been deployed to your account.
 
-1. If required, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
+1. If required, [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
 
-2. If required, [allow incoming traffic for the admin port](../../Network/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Server's Public IP in the Control Portal.
+2. If required, [allow incoming traffic for the admin port](../Network/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Server's Public IP in the Control Portal.
 
     **Warning:** Please make sure your firewall rules are properly configured to only allow specific source traffic. If you do not configure source traffic rules you risk exposing your VM to the entire internet.
 
