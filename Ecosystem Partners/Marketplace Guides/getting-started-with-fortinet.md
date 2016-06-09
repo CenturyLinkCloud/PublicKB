@@ -6,7 +6,7 @@
 "sticky": false
 }}}
 
-![Fortinet logo](../images/fortinet-logo.jpg)
+![Fortinet logo](../../images/fortinet-logo.jpg)
 
 ### Partner Profile
 
@@ -77,9 +77,9 @@ The Fortinet partner template deploys in a virtual appliance model, as a Century
     * VLAN (to add the server to)
     * Additional Notes
 
-**Note:** You will need to edit some of the information in the example below.
+    **Note:** You will need to edit some of the information in the example below.
 
-**Example Email**
+    **Example Email**
 
  ```
     ----
@@ -124,11 +124,13 @@ The Fortinet partner template deploys in a virtual appliance model, as a Century
 
 To access your Fortinet partner template over the internet, please perform the following tasks once your VM has been deployed to your account.
 
-1. If required, [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
+1. If required, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
 
-2. If required, [allow incoming traffic for the admin port](../Network/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Server's Public IP in the Control Portal.
+2. If required, [allow incoming traffic for the admin port](../../Network/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Server's Public IP in the Control Portal.
+
     **Warning:** Please make sure your firewall rules are properly configured to only allow specific source traffic. If you do not configure source traffic rules you risk exposing your VM to the entire internet.
-	  **Note:** When accessing your VM for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
+
+    **Note:** When accessing your VM for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
 
 ### Pricing
 
