@@ -12,11 +12,9 @@
 
 Encryption is a hot topic. Fortunately, CenturyLink has a couple of partners that specialize in encrypting cloud based environments.
 
-One of these partners is Vormetric. You can read a very in-depth configuration guide here: [CenturyLink Vormetric Guide](../Security/centurylink-cloud-guide-to-vormetric-dsm.md). One of the issues with encryption services like Vormetric is that there are so many options and variables it can be overwhelming and difficult to configure.
-
 Enter Server General, who has recognized the need for encryption services but also the difficulty in implementing them and taken a different approach. Instead of offering every available option and configuration, Server General is for a particular use case: Specific Linux based applications and files. Server General takes this use case and set up some pre-configuration that makes it very easy to get your critical data encrypted.
 
-At this point in the article, if your needs are Windows based or more full featured than you may want to stop here and explore Vormetric. If, however, your needs are to encrypt Linux based data then read on and we’ll share how easy it was to configure the product and our own experience encrypting a MySQL database.
+At this point in the article, if your needs are Windows based or more full featured than you may want to stop here and explore other options. If, however, your needs are to encrypt Linux based data then read on and we’ll share how easy it was to configure the product and our own experience encrypting a MySQL database.
 
 
 ### Supported Options
