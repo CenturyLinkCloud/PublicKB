@@ -1,6 +1,6 @@
 {{{
 "title": "Encryption made easy with Server General",
-"date": "06-10-2016",
+"date": "06-15-2016",
 "author": "Eric Schubert",
 "contentIsHTML": false,
 "sticky": false
