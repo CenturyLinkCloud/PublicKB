@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-![Mahara logo](../../images/mahara-stack-logo.pngg)
+![Mahara logo](../../images/mahara-stack-logo.png)
 
 ### Technology Profile
 
