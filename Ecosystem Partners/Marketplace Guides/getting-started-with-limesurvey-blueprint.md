@@ -41,15 +41,15 @@ After reading this article, the user should feel comfortable getting started usi
 LimeSurvey is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
-1. **Locate the Bitnami LimeSurvey Stack Blueprint.**
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+1. Locate the Bitnami LimeSurvey Stack Blueprint.
+   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
    * Search for “LimeSurvey” in the keyword search on the right side of the page.
    * Locate the 'Install Bitnami LimeSurvey on Linux' Blueprint.
 
-2. **Choose and Deploy the Blueprint.**
+2. Choose and Deploy the Blueprint.
    * Click the “Install Bitnami LimeSurvey on Linux” Blueprint.
 
-3. **Configure the Blueprint.**
+3. Configure the Blueprint.
 Complete the information below:
 
    * Execute on Server: Select a Linux x64 server to deploy the Blueprint on.
@@ -69,15 +69,15 @@ Complete the information below:
    * SMTP Host
    * Secure connection, e.g., tls
 
-4. **Review and Confirm the Blueprint.**
+4. Review and Confirm the Blueprint.
    * Click “next: step 2”.
    * Verify your configuration details.
 
-5. **Deploy the Blueprint.**
-   * Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating that the Blueprint is queued for execution.
+5. Deploy the Blueprint.
+   * Once verified, click on the `deploy blueprint` button. You will see the deployment details along with an email stating that the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
 
-6. **Monitor the Activity Queue.**
+6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
    * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down menu.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
@@ -88,14 +88,14 @@ Bitnami LimeSurvey Stack is available as a Script Package for deployment on an e
 
 #### Steps
 
-1. **Deploy or Identify an Existing Server.**
+1. Deploy or Identify an Existing Server.
 Identify the server targeted for LimeSurvey installation. The Operating system must be supported by the Script Package. See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
-2. **Select to Execute the Package on a Server Group.**
+2. Select to Execute the Package on a Server Group.
    * Packages can be executed on one or more servers in a Group. Search for the public script package named **Install Bitnami LimeSurvey on Linux**.
    * See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
-3. **Configure the Parameters.**
+3. Configure the Parameters.
 Set the following application parameters:
 
   * **Apache Web Server Port** - default 80
@@ -114,10 +114,10 @@ Set the following application parameters:
   * **SMTP Host**
   * **Secure connection** - default tls
 
-4. **Deploy the Script Package.**
+4. Deploy the Script Package.
 Once verified, click on the `execute package` button. This kicks off the deployment process and loads a page where you can track the progress. Deployment typically completes within a few minutes.
 
-5. **Monitor the Activity Queue.**
+5. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
    * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
