@@ -1,5 +1,5 @@
 {{{
-  "title": "SafeHaven 3.0/3.1/3.1.1 - Build a base-imaage template from scratch using Ubuntu 14",
+  "title": "SafeHaven 3.0/3.1/3.1.1 - Build a base-image template from scratch using Ubuntu 14",
   "date": "9-21-2015",
   "author": "Jake Malmad",
   "attachments": [],
@@ -30,7 +30,7 @@ This document covers the creation of a SafeHaven 3.0/3.1 base image. This base i
       3.13.0-44 as the current kernel. Note that iSCSI servers are tied to the kernel so if you forget to do this step, you will need to rebuild iSCSI after downgrading the kernel.
 
   3. Download the "base installers" package
-      `wget https://www.dropbox.com/sh/7837hqfwe31wzrh/AADGn34eQ25IDLw4_VOmsRWya/SH3.1.1-u1-Testing/baseInstaller-SafeHaven3.1.1-u1.tar.gz?dl=0`
+      `https://www.dropbox.com/sh/7837hqfwe31wzrh/AAAcE46WjfNGtgFucXot2t5ha/SH3.1.1-u1/baseInstaller-SafeHaven3.1.1-u1.tar.gz?dl=0`
 
   4. Untar the downloaded file by running:
       `tar xvfz baseInstaller-SafeHaven3.1.1-u1.tar.gz?dl=0` (tar xvz Saf (using tab to autocomplete name should be easier))
