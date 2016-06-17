@@ -133,7 +133,7 @@ The following table describes list of operational support activities and request
     </tr>
     <tr>
       <td>DDOS investigation</td>
-      <td>All commercially reasonable efforts employed to mitigate, investigate, and resolve DDOS attacks and/or other security intrusions</td>
+      <td>Commercially reasonable efforts are employed to mitigate, investigate, and resolve DDOS attacks and/or other security intrusions that affect the shared platform.</td>
     </tr>
   </tbody>
 </table>

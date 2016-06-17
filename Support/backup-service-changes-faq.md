@@ -1,44 +1,61 @@
 {{{
   "title": "About Simple Backup Service and the Retirement of Standard & Premium Storage",
-  "date": "11-18-2015",
+  "date": "6-1-2016",
   "author": "Jared Ruckle & Mark Lee",
   "attachments": []
 }}}
 
 Article first posted on 10-7-2015
 
+Updated June 1, 2016 to confirm the retirement of Standard & Premium backup features in the platform as communicated previously.
+
+Updated May 4, 2016 to reflect new retirement date of June 1, 2016
+
+Updated April 14, 2016 to reflect the lack of data availability after feature retirement.
+
+Updated on March 29, 2016 to reflect April 1 price drop for block storage, specific dates, as the rollout plan, including the need for customers to create, and apply their own backup policies.
+
 ### Description
 
-CenturyLink will be introducing a new service, Simple Backup Service, and retiring the Standard and Premium storage products. This Frequently Asked Questions document is meant to provide greater context and clarity about this transition.
+CenturyLink has introduced a new service, [Simple Backup Service](https://www.ctl.io/simple-backup-service/), and will be retiring the Standard and Premium backup storage products. This Frequently Asked Questions document is meant to provide greater context and clarity about this transition. Additional details, [please refer to this knowledge base article updated May 4, 2016](../Support/introducing-new-options-for-backups.md). **UPDATE ON JUNE 1, 2016: Standard & Premium backup features are now retired. Please continue to take steps to ensure data is backed up and protected as needed.**
 
-### Why is this change happening?
+### Why has this change happened?
 
-Many customers want more features in their backups - either in retention period, location of secondary copies, or the freedom to have no backup at all. The Simple Backup Service offers this flexibility.
+Many customers want more features in their backups - either in retention period, location of secondary copies, or the freedom to have no backup at all. The [Simple Backup Service](https://www.ctl.io/simple-backup-service/) offers this flexibility.
 
-CenturyLink Cloud will still offer a block storage service for virtual machines and bare metal - but users will not be required to have a backup option for existing instances or new servers that they create.
+CenturyLink Cloud still offers a block storage service for virtual machines and bare metal - but users now no longer have a bundled backup option for existing instances or new servers that they create.
 
 ### What does this mean for me?
 
-Your backups on Standard and Premium will continue to function until the Simple Backup Service becomes available in your data center. At that point, customers will need to apply a Simple Backup Policy to their servers in order to have data backed up. Your backup will then operate consistent with Standard or Premium backup service definitions, provided that you apply a similar policy to your servers (the one exception: new backups will be for entire drives and their paths, not snapshots). We recommend pre-identifying those servers and important data/apps which need backup ahead of time.
+Your backups on Standard and Premium will continue to function until June 1, 2016. **UPDATE ON JUNE 1, 2016: Standard & Premium backup have been retired. Please continue to take steps to ensure data is backed up and protected as needed. Now, your data is no longer be automatically backed up.** Continue to assess your backup requirements, and identify servers that require protection. CenturyLink has developed a [short-list of solutions to consider for backup and disaster recovery scenarios](../Support/introducing-new-options-for-backups.md).
 
-### Will my servers be automatically removed from standard & premium storage? Is there something I need to do to enable Simple Backup Service?
+### Will my servers be automatically removed from Standard & Premium backup? Is there something I need to do to enable Simple Backup Service?
 
-Yes, customer action will be required, but CenturyLink is managing a few items to make things a little easier. The following describes the "default" option:
+Yes, servers will be automatically removed from Standard and Premium backup on June 1, 2016. **UPDATE ON JUNE 1, 2016: Standard & Premium backup features are now retired. Please continue to take steps to ensure data is backed up and protected as needed.** If you would like to have your servers protected with the Simple Backup Service, here are the steps to follow:
 
-* CenturyLink engineers will remove Standard & Premium storage from the Platform (primary block storage will continue to function).
-* CenturyLink will then populate a few common backup policies to your account.
-* You will need to associate a Simple Backup Service policy to each server if desired.
-* Customers can also modify a pre-populated policy or create their own.
+* The Simple Backup Service launched March 29 - we recommend trying out the service as soon as possible, [please visit the product page and complete the online form](https://www.ctl.io/simple-backup-service/).
+* Customers can then create and apply backup policies to their virtual machines
+* Apply policies to a few test machines
+* Associate policies across your deployment as desired
+* CenturyLink engineers will remove Standard & Premium storage from the Platform (primary block storage will continue to function)
+* You will need to associate a Simple Backup Service policy to each server if desired
+* Customers can also modify an existing policy or create their own
 
-If you would require additional assistance or an alternative method, please contact us at [help@ctl.io](mailto:help@ctl.io) or reach out to your account manager.
+If you would require additional assistance, please contact us at [help@ctl.io](mailto:help@ctl.io) or reach out to your account manager.
 
 ### When is this happening?
 
-The Standard and Premium products will be phased out data center by data center. This phased retirement of Standard and Premium - and phased launch of the Simple Backup Service - is likely to occur in early 2016. We will post more details on this transition in the coming weeks. **Until then, there are no changes to Standard and Premium storage.**
+The Standard and Premium backup features are now retired, effective June 1. **Customers should continue to evaluate the Simple Backup Service and other alternatives as needed.**
+
+### What happens to my backup data from Standard and Premium?
+
+Customers no longer have access to their backup data from Standard and Premium storage features after May 31, 2016. Data from Standard and Premium backups are not carried over or otherwise migrated to the Simple Backup Service, or any other backup product. The Standard and Premium backup data will be inaccessible via Control or the APIs after May 31, 2016. Customers requiring access to this data should request backup restores as soon as possible via ticket at help@ctl.io.
 
 ### Will my pricing change?
 
-Yes – your price for block storage will drop, since backups are no longer included by default. However, additional backup costs may be incurred via the Simple Backup Service.
+Yes – the list price for block storage was reduced effective April 1, 2016. However, additional backup costs may be incurred via the Simple Backup Service or other selected solutions.
+
+New prices for block storage are in effect April 1, 2016, two months **before** the retirement of Standard & Premium backup features. Your April and May 2016 invoices will reflect these changes.
 
 ### Will I save money with the Simple Backup Service, compared to what I'm paying today?
 
@@ -48,11 +65,11 @@ It depends on several factors, including:
 * The pace of data change on your servers
 * The retention period of the backups
 
-We anticipate that the combination of *lower* block storage costs and common Simple Backup Service configurations will be *significantly less expensive* than Premium storage, and *slightly more expensive* than Standard storage. The exact differences of course will depend on your implementation and the final price of block storage and of the Simple Backup Service.
+We anticipate that the combination of *lower* block storage costs and common Simple Backup Service configurations will be *significantly less expensive* than Premium storage, and *slightly more expensive* than Standard storage. The exact differences of course will depend on your implementation.
 
 ### What is the Simple Backup Service?
 
-The Simple Backup Service is a new product that performs scheduled backups of data from your servers and stores them in secure object storage for customized retention periods. Users can configure and manage backup policies (frequency, retention, and paths) via the Control Portal. The details and reports of the backups can be viewed via the Control Portal as well.
+The [Simple Backup Service](https://www.ctl.io/simple-backup-service/) is a new product that performs regular backups of data from your servers and stores them in secure object storage for customized retention periods. Users can configure and manage backup policies (frequency, retention, and paths) via the Control Portal. The details and reports of the backups can be viewed via the Control Portal as well.
 
 In addition, users can initiate a restore of files and folders from a given point in time.
 
@@ -66,7 +83,7 @@ Removing a policy from the Control Portal also dis-associates the policy from an
 
 ### Where will the Simple Backup Service be available? Where are the backups stored?
 
-The Simple Backup Service will be available for virtual machines and bare metal servers in all CenturyLink Cloud nodes, public and private. The availability will be introduced according to the timeline above. The storage targets for the backups will be located in regions around the world. These locations are in enterprise data centers that meet CenturyLink standards for availability, durability, security, and access. Customers can choose the target which make sense for the business needs and governance. Backup target regions tentatively include:
+The Simple Backup Service is now available for virtual machines and bare metal servers in all CenturyLink Cloud nodes, public and private. The storage targets for the backups are located in regions around the world. These locations are in enterprise data centers that meet CenturyLink standards for availability, durability, security, and access. Customers can choose the target which make sense for the business needs and governance. Backup target regions include:
 
 * US East
 * US West
@@ -88,7 +105,7 @@ From there, users associate a policy with a server and then specify the target r
 
 ### My requirements for governance may not be met by the Simple Backup Service. What are my options? Can I continue to use Standard and Premium storage indefinitely?
 
-Standard and Premium Storage will not be available for continued use once they are retired from a data center; if you have questions about options, please contact us at [help@ctl.io](mailto:help@ctl.io).
+Standard and Premium Storage will not be available for continued use once they are retired on June 1; if you have questions about options, please refer to [this knowledge article with additional options](../Support/introducing-new-options-for-backups.md), including those from our ecosystem partners.
 
 ### I'd like to do snapshots on my VMs. Does Simple Backup Service perform snapshots? What options do I have?
 
@@ -96,11 +113,11 @@ Simple Backup Service does not perform snapshots - it provides file and folder l
 
 ### With this new service, can I still restore to a remote DC, like with Premium Storage?
 
-Not at first - restores will be done on the source VM. However, future improvements to Simple Backup Service may include support for restores to a server at a remote DC. Alternatively, users may first restore the files to the server at the source data center, and then copy/move the files to the server at the remote data center.
+Not today - restores will be done on the source VM. However, future improvements to Simple Backup Service may include support for restores to a server at a remote DC. Alternatively, users may first restore the files to the server at the source data center, and then copy/move the files to the server at the remote data center.
 
 ### What operating systems does Simple Backup Service support?
 
-At launch, the service will support all 64-bit operating systems available on the Platform today. In the future, legacy 32-bit operating systems will be supported as well.
+The service supports all 64-bit operating systems available on the Platform today. In the future, legacy 32-bit operating systems will be supported as well.
 
 ### How does Simple Backup Service differ from the current storage services?
 

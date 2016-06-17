@@ -1,6 +1,6 @@
 {{{
   "title": "Configuring Intrusion Prevention System (IPS) Notifications",
-  "date": "10-22-2015",
+  "date": "02-19-2016",
   "author": "Client-Security",
   "attachments": [],
   "related-products" : [],
@@ -14,7 +14,7 @@ The Platform CenturyLink IPS utilizes an Agent installed on your Virtual Machine
 
 The Blueprint allows a customer that has purchased the IPS service from Platform CenturyLink to modify how they would like to be notified regarding IPS security events. This Blueprint will only change **Slack** notification settings for the server it is run against.
 
-Our API allows for a customer to set notification destinations for either **Slack** or **Syslog**.  
+Our [API](../Security/ips-api.md) allows for a customer to set notification destinations for **WebHook (Slack, for example)**, **Email**, and **Syslog**.  
 
 ### Prerequisites
 
@@ -53,7 +53,7 @@ Our API allows for a customer to set notification destinations for either **Slac
 6. An email notification will be sent to the initiator of the Blueprint for both queuing and completion.
 
 ### Configuration Process via our API
-This can be found in the following document [IPS-API](ips-api.md)
+This can be found in the following document [IPS-API](ips-api.md).
 
 ### Frequently Asked Questions
 

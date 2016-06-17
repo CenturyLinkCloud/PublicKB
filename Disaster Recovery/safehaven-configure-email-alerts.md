@@ -20,6 +20,8 @@ SafeHaven provides automatic reports on the cluster health and performance. If, 
 
  ![SafeHavenEmail](../images/safehaven-configure-email-alerts.PNG)
 
+**PLEASE NOTE THAT CERTAIN SPECIAL CHARACTERS ARE NOT SUPPORTED IN THE PASSWORD FIELD AND WILL CAUSE ALERTING TO FAIL. THE CHARACTERS ARE:** ``` #, =, : and space```
+
 4. Verify that the "Report Settings" configuration and timing is correct:
 
  ![SafeHavenEmail1](../images/safehaven-configure-email-alerts-01.PNG)

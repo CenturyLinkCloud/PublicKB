@@ -1,6 +1,6 @@
 {{{
   "title": "Using ownCloud with CenturyLink Relational DB Service",
-  "date": "01-26-2-16",
+  "date": "1-26-2016",
   "author": "Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
