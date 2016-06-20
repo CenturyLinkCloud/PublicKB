@@ -43,7 +43,7 @@ CenturyLink Cloud Users, Security Engineers, Enterprise CSO's and Application De
 After reading this article, the user should feel comfortable getting started using the partner technology on CenturyLink Cloud.
 
 ### Offer
-FlexSecure has provided CenturyLink customers a 25% discount on services.  To take advantage of this offer, please confirm that you are a CenturyLink customer and send an email to [admin@flexsecure.co](mailto:admin@flexsecure.co)
+FlexSecure has provided CenturyLink customers a 25% discount on services.  To take advantage of this offer, please confirm that you are a CenturyLink customer and send an email to [admin@flexsecure.co](mailto:admin@flexsecure.co).
 
 ### Prerequisite
 Please confirm that you are a CenturyLink customer and register for an account, at the following link:
@@ -55,30 +55,30 @@ Once the account has been created, the customer will be able to create systems, 
 It is suggested that systems be entered first, followed by the users.
 
 After gaining access, below are the steps for the acct. admin. to configure the system:
-- set up systems
-- set up users
-- set up systems that a user can access
+* set up systems
+* set up users
+* set up systems that a user can access
 
 The system is now ready for use in an application!
 
 #### Steps to add pin-based authentication
 A typical use case, if a developer needs to add a pin-based authentication, follow the steps below:
-  - Change login process to accept an email address
-  - On the backend, once the email has been entered, need to run the following API command: /user/authenticate
-  - This will start the authentication Process
-  - Since we configured a user to use pin-based security, once the api call is made, the user will receive a sms text message on their mobile phone, with the pin number
-  - The application needs to accept the pin no. inside the login process
+* Change login process to accept an email address.
+* On the backend, once the email has been entered, need to run the following API command: /user/authenticate.
+* This will start the authentication Process.
+* Since we configured a user to use pin-based security, once the api call is made, the user will receive a sms text message on their mobile phone, with the pin number.
+* The application needs to accept the pin no. inside the login process.
 
-- Once the user submits the pin, the api call: /system/authenticate is triggered, so that the system they are trying to access, can complete the authorization process
+Once the user submits the pin, the api call: /system/authenticate is triggered, so that the system they are trying to access, can complete the authorization process.
 
 This is how easy it is to implement FlexSecure!
 
 #### JSON Information
 The Flexsecure system uses JSON formatted data payloads for communicating with the service.  The call requires two headers.  
 
-  1. First is the Content-Type: application/json
-  2. The second is apikey=<assigned key>
-  3. The <assigned key> is generated as part of the sign up process.
+  * First is the Content-Type: application/json
+  * The second is apikey=<assigned key>
+  * The <assigned key> is generated as part of the sign up process.
 
 * `https://api.flexsecure.co/v1/authenticate/user`
 
@@ -97,14 +97,13 @@ The Flexsecure system uses JSON formatted data payloads for communicating with t
 
 
 #### FlexSecure Process
-1. App calls `https://api.flexsecure.co/v1/authenticate/user` with the appropriate data in the JSON payload.  
-2. App checks the return status of the call - if it is FAIL, an error message and reset.  If the return value is SUCCESS, request the pin number from the user.   
-3. Request the input of the pin the end user receives on their cell phone.  
-4. Call `https://api.flexsecure.co/v1/authorize/user`  with all the data from the authenticate call, plus the pin from the end user.  
-5. Check the return value.  If the return value is FAIL, exit out and reset, If it is SUCCESS,  allow the user to continue.
+* App calls `https://api.flexsecure.co/v1/authenticate/user` with the appropriate data in the JSON payload.  
+* App checks the return status of the call - if it is FAIL, an error message and reset.  If the return value is SUCCESS, request the pin number from the user.   
+* Request the input of the pin the end user receives on their cell phone.  
+* Call `https://api.flexsecure.co/v1/authorize/user` with all the data from the authenticate call, plus the pin from the end user.  
+* Check the return value. If the return value is FAIL, exit out and reset, If it is SUCCESS,  allow the user to continue.
 
 ### Screen Shots showing How To Configure
-
 * User Account Access
 
 ![FlexSecure Account Access](../../images/ecosystem-FlexSecure-1.png)
@@ -117,15 +116,15 @@ The Flexsecure system uses JSON formatted data payloads for communicating with t
 
 ### Pricing
 #### Private Enterprise version of FlexSecure that is deployed via a virtual appliance
-1.  Upto 250K Authentications, base price of $750 per month (with email delivery of pins); plus, an addl fee of 0.02 cents per pin delivered by SMS
-2.  Upto 100K Authentications, base price of $500 per month (with email delivery of pins); plus, an addl fee of 0.02 cents per pin delivered by SMS
+*  Upto 250K Authentications, base price of $750 per month (with email delivery of pins); plus, an addl fee of 0.02 cents per pin delivered by SMS
+*  Upto 100K Authentications, base price of $500 per month (with email delivery of pins); plus, an addl fee of 0.02 cents per pin delivered by SMS
 * There is an additional cost to add other authentication contexts such as Time, Location, Voice, Biometrics, etc.
 
 #### Cloud version
-Pay as you go – monthly subscription of $3 per user per month; plus, addl fee of 0.05 cents per pin delivered by SMS 
+Pay as you go – monthly subscription of $3 per user per month; plus, addl fee of 0.05 cents per pin delivered by SMS
 
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to FlexSecure on CenturyLink Cloud, please contact [admin@flexsecure.co](mailto:admin@flexsecure.co)
-* For issues related to cloud infrastructure (VM’s, network, etc), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new) 
+* For issues related to FlexSecure on CenturyLink Cloud, please contact [admin@flexsecure.co](mailto:admin@flexsecure.co).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new) .
