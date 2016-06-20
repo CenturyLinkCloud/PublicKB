@@ -47,11 +47,11 @@ Creating a new API using InstantAPI Platform is easy and straightforward.  In th
 
 2. Click on the menu and select **Endpoint Management** in the **Creation** section.
 
-![api1.png](../images/api1.png)
+![api1.png](../../images/api1.png)
 
 3. Once you are in Endpoint Management, click on the + **ENDPOINT** button in the top right corner to add an API call.
 
-![api2.png](../images/api2.png)
+![api2.png](../../images/api2.png)
 
 4. You can now start creating the first API call for the domainBroker Demo API.
 
@@ -67,11 +67,11 @@ For example in the following endpoint: /partner/{id}/orders/{?status}
 We can clearly see that `**id**` is a passed value in the API URL and `**status**` is the query string value. We can make a query string optional by surrounding it with a square brackets like this **[{?status}]**. We can have as many passed querystring and url parameters as we want, and the order of querystring parameters does not matter.
 However, for this guide we will be using the GET method. By default GET should already be selected.
 
-![api3.png](../images/api3.png)
+![api3.png](../../images/api3.png)
 
 Under API Call Map, we can add a friendly URL based on our needs. For this API call use the following URL: demo/domainbroker/domain/[{?domain}]
 
-![api4.png](../images/api4.png)
+![api4.png](../../images/api4.png)
 
 We can add the URL with a query string or without it. The API call we are creating is with a query string. This means that we can pass the parameter as a URL. For example: ?domain=google
 
@@ -79,13 +79,13 @@ Add a brief description, then select the sample domainBroker MySQL database whic
 
 Once selected as the backend for the API call you will see a combo-box with different SQL based command primitives. Since we are using a pre-configured Data Silo that is accessing a MySQL database we now have to provide the base type of the database call. We do this to add an extra layer of SQL Injection protection.
 
-![api5.png](../images/api5.png)
+![api5.png](../../images/api5.png)
 
 Once the API command type is selected, put in the following API command: **select * from domains where domain_name LIKE ‘%[[domain:string:default=””]]%’**
 
 InstantAPI was designed to make it easy for existing database users to pull out data via an API using the knowledge they already have in the case of a SQL database you only need to know how to query, GET/PUT/UPDATE and DELETE data in SQL, and also know what an API endpoint is to create a fully functional enterprise API call.
 
-![api6.png](../images/api6.png)
+![api6.png](../../images/api6.png)
 
 This API command will list all available domains from the domains table and as an optional parameter we will filter the result by passing in the optional **[{?domain}]** as defined in the API endpoint previously.
 
@@ -93,7 +93,7 @@ We can also limit the results by enabling the paging support and entering the pa
 
 Once the configuration is done we can save the settings by clicking on **DONE** as shown in the screen below.
 
-![api7.png](../images/api7.png)
+![api7.png](../../images/api7.png)
 
 Your first API endpoint has now been deployed to a staged (non-production) version and is available for testing.
 
@@ -103,11 +103,11 @@ Now that we have an endpoint saved and deployed to a staged testing area, we can
 
 To get your Master API Key click on the right corner **ACCOUNT PROFILE** icon. After clicking on user icon, it will look like this:
 
-![api71.png](../images/api71.png)
+![api71.png](../../images/api71.png)
 
 Copy the Master API key from the panel as shown below:
 
-![api8.png](../images/api71.png)
+![api8.png](../../images/api71.png)
 
 Once done, you can paste the following URL into your browser version section. (our recommended browser is Chrome)
 
@@ -123,13 +123,13 @@ If you added paged support you can also add query string parameters for limit (a
 
 Copy your Master API Key and replace the value for apikey shown above and pasted into your browser. Once done you should see a result as a JSON response based on your API call as shown below:
 
-![api9.png](../images/api9.png)
+![api9.png](../../images/api9.png)
 
 ### Audit Management
 
 One of the key features in InstantAPI is Audit Management from which we can monitor all calls made. Select the Audit Management from the InstantAPI Platform as shown below:
 
-![api10.png](../images/api10.png)
+![api10.png](../../images/api10.png)
 
 This concludes our quick start step-by-step guide on creating your very first API call using InstantAPI platform.
 
