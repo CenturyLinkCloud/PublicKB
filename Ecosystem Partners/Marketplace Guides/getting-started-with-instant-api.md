@@ -1,15 +1,9 @@
 {{{
-
 "title": "Getting Started with Instant API",
-
 "date": "06-20-16",
-
 "author": "Scott Ling",
-
 "attachments": [],
-
 "contentIsHTML": false
-
 }}}
 
 ### Technology Profile
@@ -107,7 +101,7 @@ To get your Master API Key click on the right corner **ACCOUNT PROFILE** icon. A
 
 Copy the Master API key from the panel as shown below:
 
-![api8.png](../../images/api71.png)
+![api8.png](../../images/api8.png)
 
 Once done, you can paste the following URL into your browser version section. (our recommended browser is Chrome)
 
