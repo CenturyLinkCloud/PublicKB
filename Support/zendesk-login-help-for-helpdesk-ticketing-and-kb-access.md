@@ -3,21 +3,24 @@
   "date": "11-12-2014",
   "author": "Jon McClary",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
-<p><strong>&nbsp;Description (goal/purpose)</strong>
-</p>
-<p>CenturyLinkCloud utilizes Zendesk <a href="http://t3n.zendesk.com/">http://t3n.zendesk.com</a> for ticketing. This allows for email updates, and the ability to view ticket status in the web interface, as well as viewing CenturyLinkCloud Knowledge Base
-  articles. A free&nbsp;account with Zendesk is required for access. This is different than your CenturylinkCloud account.</p>
-<p><strong>Audience:</strong>
-</p>
-<p><strong>&nbsp;</strong>Customers</p>
-<p>&nbsp;<strong>Detailed Steps</strong>
-</p>
-<p>&nbsp;<strong>Scenario A</strong>: You have communicated with <a href="mailto:noc@tier3.com">noc@tier3.com</a> in the past. This automatically registers your email address, but does not provide you with a password. Click here to&nbsp;have a password sent
-  to you.</p>
-<p>&nbsp;<strong>Scenario B</strong>: You have not communicated with <a href="mailto:noc@tier3.com">noc@tier3.com</a> in the past but you would like to set up an account with Zendesk. Click here to register for a new Zendesk account.</p>
-<p>&nbsp;<strong>Scenario C</strong>: You do have a Zendesk account, and have logged in previously, but you&nbsp;have forgotten&nbsp;your password. Click here for instructions to reset your password.</p>
-<p>&nbsp;<img alt />
-</p>
+### Description (Goal/Purpose)
+CenturyLink Cloud utilizes Zendesk ([support.ctl.io](https://support.ctl.io)) for ticketing. This allows for the ability to receive email updates and create/view tickets in a web interface. The creation of a free account is required for access which is different than a [Control Portal](https://control.ctl.io) account.
+
+### Audience
+Customers
+
+### Detailed Steps
+##### Scenario A:
+You have communicated with CenturyLink Cloud in the past. This means your email address likely already registered, but your account does not a password set.
+* [Request a password reset link be emailed to you.](https://t3n.zendesk.com/auth/v2/login/password_reset)
+
+##### Scenario B:
+You have _not_ communicated with CenturyLink Cloud in the past, but you would like to set up a support account.
+* [Register for a new CenturyLink Cloud support account.](https://t3n.zendesk.com/auth/v2/login/registration)
+
+##### Scenario C:
+You already have a Zendesk account _and_ have logged in previously, but you have forgotten your password.
+* [Request a password reset link be emailed to you.](https://t3n.zendesk.com/auth/v2/login/password_reset)

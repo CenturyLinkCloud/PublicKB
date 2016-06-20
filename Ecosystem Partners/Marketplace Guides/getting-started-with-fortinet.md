@@ -6,13 +6,13 @@
 "sticky": false
 }}}
 
-![Fortinet logo](../images/fortinet-logo.jpg)
+![Fortinet logo](../../images/fortinet-logo.jpg)
 
 ### Partner Profile
 
 Fortinet -- Delivering High-Performance, Next-Generation Firewall to the Cloud
 
-For additional information about the company please visit [http://www.fortinet.com](//www.fortinet.com)
+For additional information about the company please visit [Fortinet](//www.fortinet.com).
 
 ### Contact Fortinet
 
@@ -58,17 +58,15 @@ The deployment process for partner templates currently requires manual interacti
 If you are interested in seeing this type of partner template deployment as an automated feature in the future, please share your input with us at [features@ctl.io](mailto:features@ctl.io)
 
 ### Prerequisite
-
 * Access to the CenturyLink Cloud platform as an authorized user.
 * A Network VLAN for the Fortinet partner template to be deployed on.
 * A FortiGate VM License.
     **Note:** You will need to send this to CenturyLink Support at the time of deployment. You should have obtained a license from FortiGate sales.
 
 ### Deploying, Accessing, and Configuring the Fortigate Partner Template
-
 The Fortinet partner template deploys in a virtual appliance model, as a CenturyLink Cloud partner template.  Follow these step by step instructions to deploy a Fortinet Fortigate partner template in to your CenturyLink Cloud account.
 
-1. Open a Service Task Request Ticket via an email to [ServiceTasks@Tctl.io](mailto:ServiceTasks@ctl.io). Attach your Fortinet license to the email and include the following details in the email:
+1. Open a Service Task Request Ticket via an email to [ServiceTasks@ctl.io](mailto:ServiceTasks@ctl.io). Attach your Fortinet license to the email and include the following details in the email:
 
     * CenturyLink Cloud Account Alias
     * CenturyLink Cloud Account PIN
@@ -77,9 +75,9 @@ The Fortinet partner template deploys in a virtual appliance model, as a Century
     * VLAN (to add the server to)
     * Additional Notes
 
-**Note:** You will need to edit some of the information in the example below.
+    **Note:** You will need to edit some of the information in the example below.
 
-**Example Email**
+    **Example Email**
 
  ```
     ----
@@ -121,17 +119,17 @@ The Fortinet partner template deploys in a virtual appliance model, as a Century
 **Note:** Refer to [http://support.fortinet.com](//support.fortinet.com) for additional how-to information. A FortiNet support user account is required (you can sign up for this on the site).
 
 ### Postrequisite
-
 To access your Fortinet partner template over the internet, please perform the following tasks once your VM has been deployed to your account.
 
-1. If required, [Add a Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
+1. If required, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
 
-2. If required, [allow incoming traffic for the admin port](../Network/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Server's Public IP in the Control Portal.
+2. If required, [allow incoming traffic for the admin port](../../Network/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Server's Public IP in the Control Portal.
+
     **Warning:** Please make sure your firewall rules are properly configured to only allow specific source traffic. If you do not configure source traffic rules you risk exposing your VM to the entire internet.
-	  **Note:** When accessing your VM for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
+
+    **Note:** When accessing your VM for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
 
 ### Pricing
-
 There are no Fortinet license costs included. The cost to deploy the Fortinet Partner Template will be billed as a Service Task, but CenturyLink will provide a credit for those costs. In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees is [available here](//www.ctl.io/service-tasks).
 
 ### To Request a Credit for the Service Task Fee
@@ -166,6 +164,6 @@ Thank you very much, your_name_here
 **Q:** Who should I contact for support?
 
 **A:**
-* For issues regarding the Fortinet appliance, the application or functionality of it, please contact Fortinet via their 24x7 Web Support: [https://support.fortinet.com](//support.fortinet.com), or via Phone Support: (866) 648 4638.
+* For issues regarding the Fortinet appliance, the application or functionality of it, please contact Fortinet via their 24x7 Web Support: [Fortinet](//support.fortinet.com), or via Phone Support: (866) 648 4638.
 
-* For issues related to cloud infrastructure (VM’s, network, etc), or is you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

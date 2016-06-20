@@ -70,6 +70,16 @@ A: Not currently at this time. Each properties file must be updated individually
 
 A: Please review the [SBS Agent Security Configurations](./sbs-agent-security.md) KB article for details.
 
+**Q: Where can I find the backup agent's logs on my machine?**
+
+A: logs can be viewed at the following locations:
+  * Linux: /var/lib/simple-backup-service
+  * Windows: C:\Windows\System32\config\systemprofile\appdata\local\simplebackupservice
+
+**Q: What can I find in the backup agent's logs?**
+
+A: The backup agent's logs have details about the backups that have ran on the system. This is helpful if you are trying to identify causes of backup failures as the failed files will be listed in the logs.
+
 **Q: If a new version of the the agent is available, what are the steps to update the agent on my server?**
 
 A: No steps required by the user. The agent will automatically update itself, given that the server is powered on, agent is running and the server is connected to the internet.
