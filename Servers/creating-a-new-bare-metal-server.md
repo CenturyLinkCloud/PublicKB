@@ -1,12 +1,15 @@
 {{{
   "title": "Creating a New Bare Metal Server",
-  "date": "7-5-2015",
+  "date": "3-14-2016",
   "author": "Bryan Friedman",
-  "attachments": []
+  "attachments": [],
+  "contentIsHTML": false
 }}}
 
 ### Description
 Creating a bare metal server on CenturyLink Cloud follows a similar flow as [creating a virtual server](../Servers/creating-a-new-enterprise-cloud-server.md), with a few exceptions. The steps below demonstrate how to provision new bare metal machines in the CenturyLink Cloud. For specifications on which capabilities are supported for bare metal servers as opposed to virtual machines, you may reference the [Server Comparison Matrix](../Servers/server-comparison-matrix.md) for details. For more information on Bare Metal servers in general, please refer to the [Bare Metal FAQ](../Servers/bare-metal-faq.md).
+
+Once you've gone through this KB article and created a new server, you can follow this Getting Started guide to learn [how to securely connect to your new server.](../Servers/getting-started-how-to-securely-connect-to-your-server.md)
 
 ### Steps
 
@@ -22,7 +25,7 @@ Creating a bare metal server on CenturyLink Cloud follows a similar flow as [cre
 
   ![Create a New Bare Metal Server](../images/baremetal-create-4.png)
 
-  You should also notice the warning message that appears regarding no backups or storage redundancy. Bare Metal servers do not offer standard or premium backup options, so make sure you implement your own solution if you need backups for the server.
+  You should also notice the warning message that appears regarding no backups or storage redundancy. Customers who require backups for Bare Metal servers should review our [Simple Backup Service](//www.ctl.io/simple-backup-service).
 
 4. Now, choose the operating system for this server. Bare Metal servers currently offer a subset of the OS options offered for virtual machines on CenturyLink Cloud: Windows 2012 R2 Standard, Red Hat 6, CentOS 6, and Ubuntu 14.
 

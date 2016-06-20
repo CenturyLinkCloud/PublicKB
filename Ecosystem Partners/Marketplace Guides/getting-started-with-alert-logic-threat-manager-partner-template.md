@@ -53,10 +53,10 @@ Alert Logic has provided a Virtual Appliance - called a Partner Template - that 
 ### Detailed Steps to Deploy Alert Logic Threat Manager Partner Template
 Follow these step by step instructions to deploy a Alert Logic Threat Manager in to your CenturyLink Cloud account:
 
-- Open a service task request ticket via email to ServiceTasks@Tier3.com with the following details.  You will need to edit some of the information below.
+- Open a service task request ticket via email to ServiceTasks@ctl.io with the following details.  You will need to edit some of the information below.
 
 ----
-TO: ServiceTasks@Tier3.com
+TO: ServiceTasks@ctl.io
 
 EMAIL SUBJECT:   Custom Image Import Request for Ecosystem Partner Template
 

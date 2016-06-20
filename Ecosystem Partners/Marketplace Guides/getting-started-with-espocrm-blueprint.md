@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-![EspoCRM logo](https://bitnami.com/assets/stacks/espocrm/img/espocrm-stack-220x234.png)
+![EspoCRM Logo](https://bitnami.com/assets/stacks/espocrm/img/espocrm-stack-220x234.png)
 
 ### Technology Profile
 EspoCRM is a simple CRM system that helps you to manage your customer relationships. It is fully open sourced under the terms of the GPLv3, features responsive design and is lightning-fast. It can also be easily customized to meet your specific needs.
@@ -44,7 +44,7 @@ EspoCRM is available as a Blueprint for deployment on a new server.
 
 2. **Choose and Deploy the Blueprint. Click the “Install EspoCRM on Linux” Blueprint.**
 
-3. **Configure the Blueprint** 
+3. **Configure the Blueprint**
 Complete the information below:
 
   1. Execute on Server: Select a Linux x64 server to deploy the Blueprint on.

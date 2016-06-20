@@ -1,5 +1,5 @@
 {{{
-  "title": "SafeHaven 3.1: Creating a SafeHaven Base Image Template from Ubuntu",
+  "title": "SafeHaven 3.1: Removing Stuck Test Failover Clones",
   "date": "9-21-2015",
   "author": "Jake Malmad",
   "attachments": [],

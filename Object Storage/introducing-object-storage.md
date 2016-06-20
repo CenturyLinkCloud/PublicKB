@@ -1,7 +1,7 @@
 {{{
   "title": "Introducing Object Storage",
-  "date": "8-7-2015",
-  "author": "Richard Seroter",
+  "date": "10-29-2015",
+  "author": "Daniel Stephan",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -15,11 +15,11 @@ CenturyLink Cloud now has a robust, geo-based Object Storage service capable of 
 ### FAQ
 **Q: Is this software home-grown or is this based on a commercial product?**
 
-A: CenturyLink Cloud Object Storage is based on [Riak CS Enterprise from Basho](//www.basho.com) and will be deployed across CenturyLink Cloud data centers.
+A: CenturyLink Cloud Object Storage is based on a popular software package with targeted extensions to optimize it for CenturyLink Cloud.
 
 **Q: What are the key vocabulary terms for Object Storage?**
 
-A: Object storage is deployed in a series of "regions" which include data centers for each CenturyLink Cloud geography (US, Canada, Europe). Note that as of this time, Object Storage is only available in Canada. Object Storage uses "buckets" to hold "objects." Buckets are flat (no hierarchy) and can contain an unlimited number of objects and unlimited amount of storage. "Access Control Lists" (ACLs) describe permissions to a bucket and the objects within it. Object Storage "users" are associated with a given region and have an "access key ID" and "secret access key" which act as the user's username and password for accessing storage.
+A: Object storage is deployed in a series of "regions" which include data centers for each CenturyLink Cloud geography (US, Canada, Europe). Note that as of this time, Object Storage is only available in Canada and US-East. Object Storage uses "buckets" to hold "objects." Buckets are flat (no hierarchy) and can contain an unlimited number of objects and unlimited amount of storage. "Access Control Lists" (ACLs) describe permissions to a bucket and the objects within it. Object Storage "users" are associated with a given region and have an "access key ID" and "secret access key" which act as the user's username and password for accessing storage.
 
 **Q: How do Object Storage users relate to CenturyLink Cloud users?**
 
@@ -27,15 +27,11 @@ A: Object Storage users are distinct from CenturyLink Cloud users, but all resid
 
 **Q: What kind of data belongs in Object Storage?**
 
-A: Object Storage is for key-value data. It is a schema-less repository that can store large objects (up to 5 GB) and is perfect for archive data, Microsoft Office documents and more.
+A: Object Storage is for key-value data. It is a schema-less repository that can store large objects (up to 5 TB) and is perfect for archive data, Microsoft Office documents and more.
 
-**Q: How is my data replicated?**
+**Q: How available is my data?**
 
-A: The object storage service replicates a single object three times within the selected region.
-
-**Q: How available is my data within a given data center?**
-
-A: Each data center contains a "ring" of servers that maintain copies of the objects. If any server fails, there is no interruption of service as the servers simply re-balance and distribute the objects evenly across the remaining servers in the ring. This provides a very high availability of data within a given data center.
+A: Data stored in an object storage region is stored in a highly available, fault tolerant way.  When data is stored, it is written to a datacenter where it is stored in an industry standard, highly redundant method. Data is also replicated to an additional datacenter in the same region where it is again stored using the same redundant method.  This combination of redundancy and replication yields a robust, always-on object storage solution.
 
 **Q: How do I interact with Object Storage?**
 
@@ -53,7 +49,7 @@ Create a bucket|X|X
 Delete a bucket|X|X
 View bucket ACLs (permissions)|X|X
 Set bucket ACLs (permissions)|X|X
-See bucket region|X|
+See bucket region|X|X
 See bucket owner name|X|X
 Add object to bucket||X
 Delete object in bucket||X

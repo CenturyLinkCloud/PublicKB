@@ -15,7 +15,7 @@
 ### Enhancements (9)
 
 * __Cloud Platform.__ The CenturyLink Cloud platform updates include:
-  * __Subaccounts in the Service Catalog__. Administrators now have the ability to create and view sub-accounts using the CenturyLink Cloud Service Catalog.
+  * __Subaccounts in the Service Catalog__. Administrators now have the ability to toggle permissions for showing and hiding sub-accounts using the CenturyLink Cloud Service Catalog.
   * __Reboot Message Upon Storage Removal.__ Users that remove a storage volume from a cloud server will now see a "reboot required" message.
   * __Set Your Own Price: Default Price Sheet.__ Users with System Billing Manager privileges (or above) can now create a "default" price sheet that can then be inherited by all sub-accounts.
 

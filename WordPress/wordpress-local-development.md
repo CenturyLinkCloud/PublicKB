@@ -28,8 +28,7 @@ Introduction
 ------------
 
 WordPress is infinitely customizable with themes and plug-ins galore. A best practice is for WordPress developers
-to preview their changes on their local machine before uploading them to their production host. CenturyLink's
-WordPress as a Service offering makes these easy by integrating with Vagrant. Using Vagrant, a full development
+to preview their changes on their local machine before uploading them to their production host. CenturyLink WordPress hosting makes these easy by integrating with Vagrant. Using Vagrant, a full development
 environment can be created in minutes with the whole LEMP (Linux, nginx, MySQL, PHP) stack running inside a virtual
 machine.
 

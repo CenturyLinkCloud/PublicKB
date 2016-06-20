@@ -1,6 +1,6 @@
 {{{
   "title": "Using Object Storage for Backup as a Service",
-  "date": "4-20-2015",
+  "date": "10-23-2015",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -27,7 +27,7 @@ CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storag
     ![Select S3 compatible](../images/using-object-storage-for-backup-as-a-service-01.png)
 
 2. Populate the S3 Compatible Account information with your CenturyLink Cloud [Object Storage Access Key, Secret Key, Service Point and bucket name.](../Object Storage/using-object-storage-from-the-control-portal.md)
-    * The Service Point for Canada is **ca.tier3.io**
+    * [All service points are listed here.](//www.ctl.io/knowledge-base/object-storage/object-storage-regions-and-service-points/)
 
     ![S3 Compatible Account input](../images/using-object-storage-for-backup-as-a-service-02.png)
 

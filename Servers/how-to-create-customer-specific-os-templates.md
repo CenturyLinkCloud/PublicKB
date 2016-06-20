@@ -1,6 +1,6 @@
 {{{
   "title": "How To:  Create Customer Specific OS Templates",
-  "date": "8-12-2015",
+  "date": "6-6-2016",
   "author": "Chris Little",
   "attachments": [],
   "related-products" : [],
@@ -10,7 +10,7 @@
 
 ### Overview
 
-CenturyLink Cloud customers may choose to create their own baseline OS templates for deployment within the Control Portal. These templates may include customization, software packages, security templates or other components. Customers should take care to test and validate the packages or changes being applied to the OS instance function properly after the template process is complete. Customers are responsible for this validation and ongoing support of changes made to OS Templates.
+CenturyLink Cloud customers may choose to create their own baseline OS templates for deployment within the Control Portal. These templates may include customization, software packages, security templates or other components. Customers should take care to test and validate the packages or changes being applied, to ensure that the OS instance functions properly after the template process is complete. Customers are responsible for this validation and ongoing support of changes made to OS Templates.
 
 ### Exclusions
 
@@ -52,15 +52,15 @@ Customers creating OS Templates for Windows Servers should carefully review the 
 
 **Q: I've created a custom template in Data Center A, but when I try to create a VM from the template in Data Center B it's not showing?**
 
-A: Customer created templates do not replicate to all data centers out of the box today. If you need templates copied to other data centers please create a support ticket. Feature sets for global template replication are coming soon.
+A: Customer created templates do not replicate to all data centers out of the box today. If you need templates copied to other data centers please [open a support request](../Support/how-do-i-report-a-support-issue.md).  Copying templates will incur a [VM Transfer](https://www.ctl.io/service-tasks/#vm-transfer) fee.
 
 **Q: I've created a custom template in my account, but when I try to create a VM from the template in my _sub_ accounts, it's not showing?**
 
-A: Make sure that when you perform the convert to template function that you are selecting the "Private Shared" option described in step #4 above. This setting allows customers to permit access to this template from sub accounts as well.
+A: Make sure that when you perform the convert to template function that you are selecting the "Private Shared" option described in step 4 above. This setting allows customers to permit access to this template from sub accounts as well.
 
 **Q: What fees are associated with use of custom OS templates?**
 
-A: Templates are stored in a group called 'Templates' within the server groups area of Control. Template storage is billed on a per GB basis as Standard Storage. Rates are available from your Sales Representative.
+A: Templates are stored in a group called 'Templates' within the server groups area of Control. Template storage is billed on a per GB basis as Standard Storage. Rates are available from your Sales Representative. Additionally, copying templates will incur a [VM Transfer](https://www.ctl.io/service-tasks/#vm-transfer) fee.
 
 **Q: What format should my virtual machine use if I choose to leverage  self-service import?**
 

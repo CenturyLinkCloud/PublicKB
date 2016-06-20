@@ -1,6 +1,6 @@
 {{{
   "title": "S3CMD - Object Storage Management for Linux Machines",
-  "date": "03-25-2015",
+  "date": "10-02-2015",
   "author": "Brian Button",
   "attachments": [],
   "contentIsHTML": true
@@ -18,6 +18,9 @@
     </li>
     <li class="scroll-to-link">
     <a href="#version">Special note about S3CMD versions</a>
+	<li class="scroll-to-link">
+		<a href="#speed">Way to improve the transfer speed</a>
+    </li>
 </ul>
 
 <h4><a id="install">Installing S3CMD</a></h4>
@@ -71,12 +74,12 @@ Once S3CMD has been installed, it must be configured to use CenturyLink Cloud’
     <li>Select “Yes” when prompted to save your configuration file.</li>
     <li>The .s3cfg file will be created in your users home directory- open it with your favorite text editor, in this example we will use <strong>vi</strong>. Enter the command: <strong>vi ~/.s3cfg</strong>
     </li>
-    <li>In the configuration file, change the following fields with the appropriate CenturyLink Cloud data center (in this example, we are using Canada- but an American data center would be us.tier3.io, UK would be uk.tier3.io, etc.)</li>
+    <li>In the configuration file, change the following fields with the appropriate CenturyLink Cloud data center</li>
   </ol>
 </ol>
-<pre>host_base = ca.tier3.io
+<pre>host_base = canada.os.ctl.io
 
-host_bucket = %(bucket)s.ca.tier3.io</pre>
+host_bucket = %(bucket)s.canada.os.ctl.io</pre>
 
 <p>Alternatively, you can modify and save the following file and then specify s3cmd to use it by entering the command <strong>s3cmd&nbsp;–c /path/to/config file</strong>
 </p>
@@ -120,9 +123,9 @@ gpg_encrypt = %(gpg_command)s -c --verbose --no-use-agent --batch --yes --passph
 
 guess_mime_type = True
 
-<strong>host_base = ca.tier3.io</strong>
+<strong>host_base = canada.os.ctl.io</strong>
 
-<strong>host_bucket = %(bucket)s.ca.tier3.io</strong>
+<strong>host_bucket = %(bucket)s.canada.os.ctl.io</strong>
 
 human_readable_sizes = False
 
@@ -134,9 +137,9 @@ preserve_attrs = True
 
 progress_meter = True
 
-proxy_host = localhost
+proxy_host =
 
-proxy_port = 8080
+proxy_port = 0
 
 recursive = False
 
@@ -194,7 +197,10 @@ S3CMD is an active open-source project, and as such is frequently updated. Depen
 <p>
 If your version is <strong>1.5.0</strong> or newer, then there are two ways to make this work correctly again. The first is to provide the <strong>--signature-v2</strong> argument to S3CMD, for example like <strong>s3cmd --signature-v2 ls</strong>. The argument tells S3CMD to revert to the original authentication strategy. The more permanent change is to add <strong>signature_v2 = True</strong> to the bottom of your .s3cfg file. That will force S3CMD to use the original authentication strategy every time the command is run.
 </p>
-
+<h4><a id="speed">Way to improve the transfer speed</a></h4>
+<p>
+When uploading or downloading a large file, consider to put s3cmd in quiet mode ( <strong>--no-progress</strong> option) to minimize the output to console (stdout), as stdout could potentially slow down the transfer process.
+</p>
 </br>
 
 <p>Look for the second article in this series which will discuss using advanced S3cmd features such as rsync and encryption!</p>

@@ -40,7 +40,7 @@ Waratek JVM is available as a Blueprint for deployment on a new server.
 
 #### Steps to deploy to New Server Blueprint
 
-1.  Locate the "Install Waratek JVM on New Server" Blueprint
+1.  Locate the "Install Waratek JVM 3-0-2 on New Server" Blueprint
 
 2.  Click on the blueprint. Select "Deploy Blueprint" on the resulting screen
 
@@ -71,7 +71,7 @@ Waratek JVM is available as a Blueprint for deployment on a new server.
 
 1.  Deploy or Identify an existing server
 
-2.  Locate the "Install Waratek on Existing Server" blueprint in the Blueprint Library
+2.  Locate the "Install Waratek JVM on Existing Server" blueprint in the Blueprint Library
 
 3.  Select "Deploy Blueprint"
 

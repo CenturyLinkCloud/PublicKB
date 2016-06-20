@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Pivotal Cloud Foundry - Blueprint",
-  "date": "9-1-2015",
+  "date": "11-5-2015",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -10,7 +10,7 @@
 
 ### Overview
 
-After reading this article, the reader should feel comfortable deploying the Pivotal Cloud Foundry (PCF) 1.5.5 on CenturyLink Cloud.
+After reading this article, the reader should feel comfortable deploying Pivotal Cloud Foundry (PCF) on CenturyLink Cloud.
 
 ### Partner Profile
 
@@ -33,7 +33,7 @@ Pivotal has integrated their Cloud Foundry technology with the CenturyLink Cloud
 
 <img src="../../images/pivotal_pcf/how_pcf_works.png" style="border:0;">
 
-Cloud Foundry® is the result of collaborative industry efforts to build an open platform for next-generation software development. Over 40 members of the Cloud Foundry Foundation now contribute to the project, including VMware, EMC and GE. Pivotal’s commercial edition builds on the open source Cloud Foundry release with advanced features:
+Cloud Foundry® is the result of collaborative industry efforts to build an open platform for next-generation software development. Over 40 members of the Cloud Foundry Foundation now contribute to the project, including VMware, EMC and GE. Pivotal’s commercial edition builds on the open source Cloud Foundry release with advanced features.
 
 
 ### Audience
@@ -49,7 +49,6 @@ You can achieve a single-button deployment of a new Cloud Foundry using CenturyL
 
 Pivotal Cloud Foundry is a complex piece of software.  Before installing please validate the following:
 
-* **Early Access Note** - This is an early access release.  Please log a ticket with noc@ctl.io for deployments before this goes GA
 * **control.ctl.io Service Account** - For production deployments we recommend creating a dedicated control.ctl.io user account as the credentials
   are used for all IaaS changes directed by BOSH.  Deploys cannot be done using accounts with requiring two-factor authentication.
 * **Dedicated Network** - Due to the size of typical PCF deploys and some IP address management concerns we require an entire VLAN be dedicated to this install.  PCF servers will reside on the top half of this class-C.
@@ -71,9 +70,6 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
 
   Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "Pivotal Cloud Foundry" in the keyword search on the right side of the page.
 
-  > Note for access to this Blueprint during this early access period
-  > # Email noc@ctl.io
-
   <img src="../../images/pivotal_pcf/cluster_blueprint_tiles.png" style="border:0;max-width:250px;">
 
 3. **Click the Deploy Blueprint button.**
@@ -84,7 +80,6 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
 
   * **Email Address** - Email address to receive build notification and PCF access information
   * **Deploy PCF** - We will automatically configure Operations Director (which manages Micro BOSH) and Elastic Runtime.  We can stop post-configuration for you to update settings or perform the full deploy on your behalf.
-  * **Select Addons** (optional) - Select one or more add-on tiles to download and add.
   * **Current Control User Password** - Enter (and confirm) the password associated with your control.ctl.io account.
 
 5. **Set Optional Parameters**
@@ -111,7 +106,7 @@ Pivotal Cloud Foundry is a complex piece of software.  Before installing please 
 
 8. **Deployment Complete**
 
-  Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets within a few minutes.  If you do not receive an email like the one shown below you may have had a deployment error - review the *Blueprint Build Log* to for error messages.
+  Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets within a few minutes.  If you do not receive an email like the one shown below you may have had a deployment error - review the *Blueprint Build Log* for error messages.
 
   <img src="../../images/pivotal_pcf/deploy_install_status1.png" style="border:1;margin-left:1em;width:70%;">
 
@@ -236,6 +231,20 @@ Should this split DNS be required implement the following:
   by installing BIND on the Operations Manager host and pointing all DNS resolvers to this IP
 * Edit the public DNS so the FQDN resolves to the NATed public IP for the HA proxy (.128 by default)
 
+To configure DNS as suggested above perform the following prior to selecting *Apply Changes*:
+
+1. ssh to your Operations Manager server, and execute this script:
+  ```
+  # ./install_bind_wildcard.sh $domain_name
+  ```
+
+2. From the Operations Manager web console, open the **Ops Director** tile, click **Create Network**, and enter the private IP address for 
+   your Operations Manager server in the DNS field
+
+3. Following a successful deploy through *Apply Changes*, login to the CenturyLink Cloud control.ctl.io portal and locate the router.  This server's
+   IP address final octet is **.128**.  Add a public IP address to this host and permit http/https traffic.  Modify your external DNS so the wildcard
+   domain points at the newly created public IP.
+
 
 **IP Address Space for Larger Deployments**
 
@@ -261,10 +270,17 @@ reserved for platform-level services, the entire subnet is available for use.  S
 
 Your install will be preloaded with the most current stemcells.  If you need some older stemcells that aren't preloaded or if you need something that's been released since your initial install you can download the stemcells from the links below.  Note these are slightly modified from what's available at network.pivotal.io.
 
-* [2989](http://ca.tier3.io/ateam-packages/stemcells/bosh-stemcell-2989-clc-ubuntu-trusty-go_agent.tgz)
-* [3012](http://ca.tier3.io/ateam-packages/stemcells/bosh-stemcell-3012-clc-ubuntu-trusty-go_agent.tgz)
-* [3026](http://ca.tier3.io/ateam-packages/stemcells/bosh-stemcell-3026-clc-ubuntu-trusty-go_agent.tgz)
+* [3177](http://ateam-packages.canada.os.ctl.io/stemcells/bosh-openstack-clc-ubuntu-trusty-go_agent_3177.tgz)
+* [3146.5](http://ateam-packages.canada.os.ctl.io/stemcells/bosh-openstack-clc-ubuntu-trusty-go_agent_3146.5.tgz)
+* [3146.3](http://ateam-packages.canada.os.ctl.io/stemcells/bosh-openstack-clc-ubuntu-trusty-go_agent_3146.3.tgz)
+* [3146.2](http://ateam-packages.canada.os.ctl.io/stemcells/bosh-openstack-clc-ubuntu-trusty-go_agent_3146.2.tgz)
+* [3100](http://canada.os.ctl.io/bpimager/bosh-openstack-clc-ubuntu-trusty-go_agent_3100.tgz)
+* [3094](http://canada.os.ctl.io/bpimager/bosh-openstack-clc-ubuntu-trusty-go_agent_3094.tgz)
+* [3074](http://canada.os.ctl.io/bpimager/bosh-openstack-clc-ubuntu-trusty-go_agent_3074.tgz)
 * [3062](http://ca.tier3.io/ateam-packages/stemcells/bosh-openstack-clc-ubuntu-trusty-go_agent_3062.tgz)
+* [3026](http://ca.tier3.io/ateam-packages/stemcells/bosh-stemcell-3026-clc-ubuntu-trusty-go_agent.tgz)
+* [3012](http://ca.tier3.io/ateam-packages/stemcells/bosh-stemcell-3012-clc-ubuntu-trusty-go_agent.tgz)
+* [2989](http://ca.tier3.io/ateam-packages/stemcells/bosh-stemcell-2989-clc-ubuntu-trusty-go_agent.tgz)
 
 
 

@@ -10,7 +10,7 @@
 
 ### IMPORTANT NOTE
 
-CenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage at this time.
+CenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage at this time.
 
 During the Limited Beta there is no production Service Level Agreement.
 
@@ -26,7 +26,7 @@ WooCommerce is well known in the WordPress community. It provides functionality 
 
 ### Installing the WooCommerce Plugin
 
-1. First you will need to setup your [local developement environment] (https://www.ctl.io/knowledge-base/wordpress/wordpress-local-development/).
+1. First you will need to setup your [local developement environment](https://www.ctl.io/knowledge-base/wordpress/wordpress-local-development/).
 
 2. Next is to [download and save the plugin](http://www.woothemes.com/woocommerce/download/) from the WooCommerce website for the local environment.
 

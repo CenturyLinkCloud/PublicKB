@@ -25,7 +25,7 @@ In this sample deployment no security services were put in place around access t
 * A CenturyLink Cloud Account
 * [Service Task for OVF Import](//www.ctl.io/products/support/service-tasks)
 * [A licensed copy of SoftNAS](//www.softnas.com/wp/purchase)
-* Refer to the [SoftNAS Getting Started Guide](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md) for details on how to procure and deploy the SoftNAS virtual appliance.
+* Refer to the [SoftNAS Getting Started Guide](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-appliance.md) for details on how to procure and deploy the SoftNAS virtual appliance.
 
 ### Example A: Configuration of the SoftNAS Virtual Appliance using Virtual Disks
 
