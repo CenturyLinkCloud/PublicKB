@@ -129,6 +129,8 @@ CenturyLink Cloud Users, Storage Administrators, IT Managers
 
   Wait for the second email indicating your appliance is ready for use before attempting to access the resource.
 
+  Note that, if you access the appliance via the Control Portal, it will report that it is an Ubuntu operating system.  This is not accurate; the build process layers the appliance over the Ubuntu OS and modifies it to the operating system required by the appliance. This is expected behavior, and does not affect the operations of the appliance. 
+
 8. **Accessing Your Appliance**
 
   1. Access your appliance by navigating to the server's private IP address with your web browser over https (e.g. https://youripaddress/).
