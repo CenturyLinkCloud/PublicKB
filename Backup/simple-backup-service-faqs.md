@@ -72,9 +72,9 @@ A: Please review the [SBS Agent Security Configurations](./sbs-agent-security.md
 
 **Q: Where can I find the backup agent's logs on my machine?**
 
-A:
-* Linux: /var/lib/simple-backup-service
-* Windows: C:\Windows\System32\config\systemprofile\appdata\local\simplebackupservice
+A: logs can be viewed at the following locations:
+  * Linux: /var/lib/simple-backup-service
+  * Windows: C:\Windows\System32\config\systemprofile\appdata\local\simplebackupservice
 
 **Q: What can I find in the backup agent's logs?**
 
