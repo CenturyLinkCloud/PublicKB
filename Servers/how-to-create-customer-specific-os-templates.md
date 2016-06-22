@@ -52,7 +52,7 @@ Customers creating OS Templates for Windows Servers should carefully review the 
 
 **Q: I've created a custom template in Data Center A, but when I try to create a VM from the template in Data Center B it's not showing?**
 
-A: Customer created templates do not replicate to all data centers out of the box today. If you need templates copied to other data centers please [open a support request](../Support/how-do-i-report-a-support-issue.md).  Copying templates will incur a [VM Transfer](https://www.ctl.io/service-tasks/#vm-transfer) fee.
+A: Customer created templates do not replicate to all data centers out of the box today. If you need templates copied to other data centers please [open a support request](../Support/how-do-i-report-a-support-issue.md).  Copying templates to a different account will incur a [VM Transfer](https://www.ctl.io/service-tasks/#vm-transfer) fee.
 
 **Q: I've created a custom template in my account, but when I try to create a VM from the template in my _sub_ accounts, it's not showing?**
 
@@ -60,7 +60,7 @@ A: Make sure that when you perform the convert to template function that you are
 
 **Q: What fees are associated with use of custom OS templates?**
 
-A: Templates are stored in a group called 'Templates' within the server groups area of Control. Template storage is billed on a per GB basis as Standard Storage. Rates are available from your Sales Representative. Additionally, copying templates will incur a [VM Transfer](https://www.ctl.io/service-tasks/#vm-transfer) fee.
+A: Templates are stored in a group called 'Templates' within the server groups area of Control. Template storage is billed on a per GB basis as Standard Storage. Rates are available from your Sales Representative. 
 
 **Q: What format should my virtual machine use if I choose to leverage  self-service import?**
 
