@@ -142,5 +142,5 @@
 <ul>
   <li>For issues related to deploying the CloudMine& Blueprint on CenturyLink Cloud, please contact <a href="mailto:CenturyLinksupport@cloudmine.me">CenturyLinksupport@cloudmine.me</a>
   </li>
-  <li>For issues related to cloud infrastructure (VM’s, network, etc), please open a ticket using the CenturyLink Cloud <a href="https://t3n.zendesk.com/entries/23610702-How-do-I-report-a-support-issue-">Support Process</a>.</li>
+  <li>For issues related to cloud infrastructure (VMs, network, etc.), please open a ticket using the CenturyLink Cloud <a href="https://t3n.zendesk.com/entries/23610702-How-do-I-report-a-support-issue-">Support Process</a>.</li>
 </ul>
