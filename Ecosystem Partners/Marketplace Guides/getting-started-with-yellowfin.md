@@ -9,39 +9,39 @@
 ![Yellowfin Business Intelligence](../../images/YF_LOGO.png)
 
 ### Technology Profile
-
 Yellowfin is a 100% web-based platform ideal for Business Intelligence and analytics in the cloud. Just launch your free trial version of Yellowfin directly from the CenturyLink marketplace and get started in minutes with your free trial that enables 3 users to create and share unlimited reports and dashboards for 12 months. Then upgrade at anytime to seamlessly scale throughout your enterprise.
 
 ### Description
-
 Yellowfin is a 100% web-based platform ideal for Business Intelligence and analytics in the cloud. Just launch your free trial version of Yellowfin directly from the CenturyLink marketplace and get started in minutes with your free trial that enables 3 users to create and share unlimited reports and dashboards for 12 months. Then upgrade at anytime to seamlessly scale throughout your enterprise.
 
-For more information, please visit http://www.yellowfinbi.com/
+For more information, please visit http://www.yellowfinbi.com/.
 
 ### Audience
 CenturyLink Cloud Users
 
 ### Impact
-After reading this article, the user should be able to spin up Yellowfin 7.1 on CenturyLink
+After reading this article, the user should be able to spin up Yellowfin 7.1 on CenturyLink.
 
 ### Prerequisite
-- Access to the CenturyLink Cloud platform as an authorized user.
-- Organisational/Company email address.
+* Access to the CenturyLink Cloud platform as an authorized user.
+* Organizational/Company email address.
 
 ### Postrequisite
 To access your application from a computer outside the CenturyLink Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
-  1. [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
-  2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
-    * The default ports to access the application are: 80, 443
-  3. Visit your Public IP address in a web browser.
-  4. Click the "Register to Receive your login details" link and follow the prompts.
+* [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
+* [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
+  * The default ports to access the application are: `80`, `443`.
+* Visit your Public IP address in a web browser.
+* Click the "Register to Receive your login details" link and follow the prompts.
 
 ### Deploying the Yellowfin 7.1 Template
 
 ### How to Deploy the Partner Image
-  1. Create an email to ServiceTasks@ctl.io
-  2. Copy and paste the information below into the body of the email
-	3. Edit the information as needed and send
+1. Create an email to ServiceTasks@ctl.io.
+
+2. Copy and paste the information below into the body of the email.
+
+3. Edit the information as needed and send.
 
    ```
   TO: ServiceTasks@ctl.io
@@ -66,18 +66,18 @@ To access your application from a computer outside the CenturyLink Cloud network
 
 	   Your_Name_Here
 	   ``` 	
-Your account alias and PIN are available from your account info page and your user profile page respectively.  
+Your account alias and PIN are available from your account info page and your user profile page respectively.
 
 ### Access your Yellowfin 7.1 server
-After your Blueprint deploys successfully, please follow these instructions to access your server:
-  1. [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
-  2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
-    * The default ports to access the application are: 80, 443
-  3. Visit your Public IP address in a web browser.
-  4. Click the "Register to Receive your login details" link and follow the prompts.
+After your Blueprint deploys successfully, please follow these instructions to access your server.
+* [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal
+* [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
+   * The default ports to access the application are: `80`, `443`.
+* Visit your Public IP address in a web browser.
+* Click the "Register to Receive your login details" link and follow the prompts.
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  There are no Yellowfin 7.1 for CenturyLink license costs or additional fees bundled in.
+The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Yellowfin 7.1 for CenturyLink license costs or additional fees bundled in.
 
 ### About Yellowfin
 CenturyLink Cloud works with [Yellowfin](http://www.yellowfinbi.com/) to provide Yellowfin 7.1, a business Intelligence software package.
@@ -86,4 +86,4 @@ CenturyLink Cloud works with [Yellowfin](http://www.yellowfinbi.com/) to provide
 
 #### Who should I contact for support?
 * [Yellowfin Forum](http://www.yellowfinbi.com/YFForum.i4).
-* For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
