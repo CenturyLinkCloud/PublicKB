@@ -7,7 +7,7 @@
   "contentIsHTML": false
 }}}
 
-![Magento Logo](../../images/appsfreedom-logo.png)
+![appsFreedom Logo](../../images/appsfreedom-logo.png)
 
 ### Technology Profile
 This blueprint allows company's of user size 1-100 deploy appsFreedom Platform - Basic edition.
