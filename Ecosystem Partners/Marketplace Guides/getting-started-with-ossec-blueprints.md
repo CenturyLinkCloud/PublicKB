@@ -54,7 +54,7 @@ CenturyLink has developed a script package that installs and configures an OSSEC
    ![ID and Key](../../images/ossec-id-and-key.png)
 
 5. Select a single server to install package on.
-   ![Select Servers](../../imgaes/ossec-select-servers.png)
+   ![Select Servers](../../images/ossec-select-servers.png)
 
 6. Select to execute package and watch deployment process.
    * Click the `execute package` button.
