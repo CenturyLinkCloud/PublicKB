@@ -50,7 +50,7 @@ Prior to beginning the software install you must create two groups and assign a 
 2. Locate the Blueprint in the Blueprint Library.
    * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
    * Search for "Pivotal Cloud Foundry" in the keyword search on the right side of the page.
-   <img src="../../images/pivotal_pcf/cluster__tiles.png" style="border:0;max-width:250px;">
+   <img src="../../images/pivotal_pcf/cluster_blueprint_tiles.png" style="border:0;max-width:250px;">
 
 3. Click the `deploy blueprint` button.
 
