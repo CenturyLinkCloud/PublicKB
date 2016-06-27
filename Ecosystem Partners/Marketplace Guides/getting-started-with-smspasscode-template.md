@@ -83,9 +83,9 @@ Once the Template is copied and server is created, complete the following steps 
 
   3. From the start menu, launch the SMS PASSCODE configuration tool and browse to the Network tab, change the shared secret (password) to something customer unique (min 15 chars).
 
-The Configuration Tool  <this doesn't seem to make sense>
+The Configuration Tool 
 
-The shared secret on the Network tab <this doesn't seem to make sense>
+The shared secret on the Network tab 
 
 
   4. On the configuration tool Database tab, change the hostname to the hostname of the new instance (if in doubt, open command prompt, type hostname).
