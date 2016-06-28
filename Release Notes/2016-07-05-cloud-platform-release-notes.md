@@ -18,7 +18,7 @@
 
 ### Enhancements (1)
 * __Runner:__
-	* **Playbook Version Support -** Runner now supports the ability of a Playbook to directly reference a specific version of AWS Boto, Azure, or clc-ansible-modules, when executing a Playbook. This allows users to take advantage of updated features of modules or even pin a particular Playbook to a legacy version.
+	* **Playbook Version Support -** Runner now supports the ability for a Playbook to directly reference a specific version of AWS Boto, Azure, or clc-ansible-modules, when executing a Playbook. This allows users to take advantage of updated features of modules or even pin a particular Playbook to a legacy version.
 
 
 ### Announcements (2)
@@ -40,7 +40,7 @@
 * __Bullet:__
 	* **Tagline -** Body text.
 	
-### Open Source Contributions (n)
+### Bug Fixes (n)
 * __Bullet:__
 	* **Tagline -** Body text.  
 <p>
