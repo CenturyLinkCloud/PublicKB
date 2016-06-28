@@ -102,7 +102,6 @@ Once the Service Task team deploys your virtual appliance, you will get an email
 
   * HTTPS (443) for management
   * single port TCP 25 (For SMTP traffic)
-  * (optional) SSH/SFTP (22) for management over SSH
 
 2. Connect to the public IP over HTTPS using your web browser
 
