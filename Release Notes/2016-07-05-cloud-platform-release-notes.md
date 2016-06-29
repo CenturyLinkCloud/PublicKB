@@ -7,7 +7,7 @@
 }}}
 
 
-### New Features (2)
+### New Features (3)
 * __Relational DB:__
 	* **Point in Time Restore -** Effective 7/6, customers will be able to restore a Relational DB instance to any point in time up to 10 minutes ago, as far back as one week, or the customers' backup retention policy, whichever is shorter.  
 <p>
