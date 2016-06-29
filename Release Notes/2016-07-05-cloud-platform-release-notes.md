@@ -7,10 +7,7 @@
 }}}
 
 
-### New Features (3)
-* __Relational DB:__
-	* **Point in Time Restore -** Effective 7/6, customers will be able to restore a Relational DB instance to any point in time up to 10 minutes ago, as far back as one week, or the customers' backup retention policy, whichever is shorter.  
-<p>
+### New Features (2)
 * __Runner:__
 	* **Gitlab Support -** Runner now supports GitLab in addition to GitHub as a code repository for Playbooks. Users can now reference their Playbooks from any publicly accessible GitLab repository.
 	* **Azure Support -** Runner now supports Microsoft Azure! Runner supports minion deployments as well as Playbook executions against Azure.
