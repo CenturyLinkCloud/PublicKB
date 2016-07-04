@@ -7,7 +7,7 @@
 }}}
 
 
-### New Features (1)
+### New Features (2)
 * __Runner:__
 	* **Gitlab Support -** Runner now supports GitLab in addition to GitHub as a code repository for Playbooks. Users can now reference their Playbooks from any publicly accessible GitLab repository.
 	* **Azure Support -** Runner now supports Microsoft Azure! Runner supports minion deployments as well as Playbook executions against Azure.
