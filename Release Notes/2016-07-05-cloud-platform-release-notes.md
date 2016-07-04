@@ -19,9 +19,9 @@
 <p>
 * __Operating Systems:__
 	* **Updated OS Templates -** The following OS templates have been updated with the latest patches from the vendor:
-- RedHat Enterprise Linux 6 | 64-bit
-- RedHat Enterprise Linux 7 | 64-bit
-- CentOS 6 | 64-bit
+        * RedHat Enterprise Linux 6 | 64-bit
+        * RedHat Enterprise Linux 7 | 64-bit
+        * CentOS 6 | 64-bit
 
 
 ### Announcements (2)
