@@ -24,7 +24,17 @@
 
 **Q: What are the network requirements for SBS, if any?**
 
-A: Simple Backup Service requires outbound internet traffic over port 443. CLC VMs allow outbound traffic by default using NAT.
+A: SSH for root is required to allow the Blueprint to initially install the Backup Agent on the target server; it may be disabled after the initial instillation as it is not needed for the agent to function. The Simple Backup Service also requires outbound internet traffic over port 443. CLC VMs allow outbound traffic by default using NAT. Alternatively, firewall rules may be configured utilizing the endpoints listed below.
+
+```
+up-va1.backup.ctl.io
+up-de1.backup.ctl.io
+up-ca3.backup.ctl.io
+up-sg1.backup.ctl.io
+up-uc1.backup.ctl.io
+up-gb3.backup.ctl.io
+```
+Additional endpoints will need to be configured based on the Storage Region selected as indicated in the [How it Works](./simple-backup-service-how-it-works.md) KB article.
 
 **Q: What OSes are supported?**
 
@@ -44,6 +54,10 @@ A: No, SBS provides file-level backup protection. In fact, SBS does not backup c
 
 ### Agent
 
+**Q: What are the minimum requirements of a VM for the SBS agent to run?**
+
+A: Although the SBS agent will run on 1 core, 1gb of RAM VM's, the overall speed and performance might not be optimal. There could be resource contention on the server during a backup as well, depending on the other processes running on the server at that time.
+
 **Q: What are the logon credentials for the backup agent?**
 
 A: Please review the [SBS Agent Security Configurations](./sbs-agent-security.md) KB article for details.
@@ -55,6 +69,16 @@ A: Not currently at this time. Each properties file must be updated individually
 **Q: How can I access my backup agent from a remote machine?**
 
 A: Please review the [SBS Agent Security Configurations](./sbs-agent-security.md) KB article for details.
+
+**Q: Where can I find the backup agent's logs on my machine?**
+
+A: logs can be viewed at the following locations:
+  * Linux: /var/lib/simple-backup-service
+  * Windows: C:\Windows\System32\config\systemprofile\appdata\local\simplebackupservice
+
+**Q: What can I find in the backup agent's logs?**
+
+A: The backup agent's logs have details about the backups that have ran on the system. This is helpful if you are trying to identify causes of backup failures as the failed files will be listed in the logs.
 
 **Q: If a new version of the the agent is available, what are the steps to update the agent on my server?**
 
@@ -85,6 +109,10 @@ A: There are two places in the agent that show the status of your backups. First
 **Q: For a "Failed" or "Partial_Success" backup status, can I see which files failed and why?**
 
 A: Yes, see the sbs-backup-files-failed.csv file located on your system for details.
+
+**Q: Where are my backups actually stored?**
+
+A: The SBS agent on the server transfers backup data to one of six different backup storage regions, each built on top of cloud object storage. CenturyLink sources this object storage from a combination of its own cloud platform, as well as 3rd party cloud providers such as Amazon Web Services. For more information, see our [How It Works](https://www.ctl.io/knowledge-base/backup/simple-backup-service-how-it-works/) KB article.
 
 ### Restores
 

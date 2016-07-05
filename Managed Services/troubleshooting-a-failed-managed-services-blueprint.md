@@ -29,15 +29,11 @@
 </p>
 <p><strong>5. If your request is in failed status, click on the request to see additional details.&nbsp;</strong>
 </p>
-<p><strong>6. Click Resume to try to run the request from the point of failure.</strong>
-</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/AS0hlgmJ5GDtwjovfrorTGZ1z/?name=Details.png" alt="Details.png" /></p>
-<p><strong>7. If the issue occurs while running a CLC Blueprint for a Managed Application and the Blueprint fails again after Resuming:&nbsp;</strong>
+<p><strong>7. If the issue occurs while running a CLC Blueprint for a Managed Application: &nbsp;</strong>
 </p>
 
 <ul>
-  <li>If the Blueprint failed at either the step of “Validate Blueprint” or “Reserve Blueprint” call Support at 1-888-638-6771 and notify us about the ≈step the Blueprint failed (such as “Install Managed MS SQL”) and approximate dates and times when you attempted
-    to resume it.</li>
+  <li>If the Blueprint failed at either the step of “Validate Blueprint” or “Reserve Blueprint” call Support at 1-888-638-6771 and notify us about the ≈step the Blueprint failed (such as “Install Managed MS SQL”) </li>
   <li>If the Blueprint failed after “Reserve Blueprint,” expand the step where the error failed by clicking on it.</li>
 </ul>
 <ol>
@@ -48,7 +44,7 @@
 <p><img src="https://t3n.zendesk.com/attachments/token/8L7RLq5vFql23Ai1M2rWlKRdi/?name=Error_Details.png" alt="Error_Details.png" />
 </p>
 <ul>
-  <li>Call Support at 1-888-638-6771. Please notify us about the step the Blueprint failed (such as “Install Managed MSSQL”) and approximate dates and times when you attempted to resume it.</li>
+  <li>Call Support at 1-888-638-6771. Please notify us about the step the Blueprint failed (such as “Install Managed MSSQL”).</li>
 </ul>
 <p><strong>8. If the issue occurs during Server Creation for a VM you are attempting to “Make Managed” and the job fails at the same point a second time, continue to troubleshoot by:</strong>
 </p>
@@ -63,7 +59,7 @@
 <ul>
   <ul>
     <li>If it is a resource issue and you require more resources, please adjust accordingly or request limit increases from your account administrator.</li>
-    <li>If it is not a resource issue, please contact Support at 1-888-638-6771. Please also note the step the Blueprint failed and approximate dates and times you attempted to Resume it.</li>
+    <li>If it is not a resource issue, please contact Support at 1-888-638-6771. Please also note the step the Blueprint failed.</li>
   </ul>
 </ul>
 <ul>
