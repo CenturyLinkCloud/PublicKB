@@ -18,11 +18,7 @@ For more information on what Kubernetes is, please visit http://www.kubernetes.i
 
 
 ### Description
-=======
-For more information, please view: [http://www.kubernetes.io](http://www.kubernetes.io)
 
-
-### Description
 By using our Ansible scripts, customers can create a Kubernetes cluster on CenturyLink Cloud infrastructure by running a single script.
 
 To see the source code of our Kubernetes Cluster Creation Ansible scripts, please visit our github repo: [https://github.com/CenturyLinkCloud/adm-kubernetes-on-clc](https://github.com/CenturyLinkCloud/adm-kubernetes-on-clc)
@@ -31,11 +27,7 @@ By using our Ansible scripts, customers can create a Kubernetes cluster on Centu
 
 ### Audience
 
-CenturyLink Cloud Users, Developers, Operations, System Engineers, Architects
-
-### Impact
-=======
-CenturyLink Cloud Users, Developers, Operations, System Engineers, Architects
+CenturyLink Cloud Users, Developers, Operations, System Engineers, Architects.
 
 ### Impact
 After following the instructions this article, the user should have a working Kubernetes cluster on CenturyLink.
@@ -327,7 +319,6 @@ After following the instructions this article, the user should have a working ku
 
 Since this is an open source project, the instructions on how to use this scripts are found on Github. Please visit [here](https://github.com/CenturyLinkCloud/adm-kubernetes-on-clc) for the detailed instructions on how to install a Kubernetes Cluster on CenturyLink Cloud.
 
-=======
 #### Who should I contact for support?
 * For issues related to creating the Kubernetes cluster, please email kubernetes@ctl.io or create a support ticket.
 * For issues related to cloud infrastructure (VM’s, network, etc), please open a CenturyLink Cloud Support ticket: https://t3n.zendesk.com/tickets/new
