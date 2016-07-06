@@ -1,6 +1,6 @@
 {{{ "title": "CenturyLink Cloud Public IP Listing",
 "date": "07-06-2016",
-"author": [],
+"author": "Brandy Smith",
 "attachments": [],
 "contentIsHTML": false
 }}}
