@@ -1,6 +1,6 @@
 {{{
   "title": "Object Storage Regions and Service Points",
-  "date": "5-12-2016",
+  "date": "7-5-2016",
   "author": "Daniel Stephan",
   "attachments": [],
   "contentIsHTML": false
@@ -12,4 +12,4 @@ The CenturyLink Cloud Object Storage service is available in multiple regions.  
 |Region|Primary Data Center|Secondary Data Center|Service Point|
 |---|---|---|---:|
 |Canada|CA3|CA1|canada.os.ctl.io|
-|US-East|VA1|NY1|useast.os.ctl.io|
+|US-East|NY1|VA1|useast.os.ctl.io|
