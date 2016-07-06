@@ -6,105 +6,42 @@
 }}}
 
 
-CenturyLink Cloud customers may wish to add a public IP to specific [virtual machine](/servers/) or [Bare Metal](/bare-metal/) server in their cloud environment to deliver services. Public IPs are delivered using a 1 to 1 NAT model.
+CenturyLink Cloud customers may wish to add a public IP to specific [virtual machine](//www.ctl.io/servers/) or [Bare Metal](//www.ctl.io/bare-metal/) server in their cloud environment to deliver services. Public IPs are delivered using a 1 to 1 NAT model.
 
 ### General Notes & Best Practices
 
-* All public IPs deployed on the platform have [hairpinning](/knowledge-base/network/hairpin-nats/) enabled.
-* In its current iteration setting a source IP filter will secure all public ports, single ports or port ranges specified by the customer. Customers can leverage OS based [firewall services](/cloud-firewall/) if they wish to secure public services in a more granular fashion.
+* All public IPs deployed on the platform have [hairpinning](../Network/hairpin-nats.md) enabled.
+* In its current iteration setting a source IP filter will secure all public ports, single ports or port ranges specified by the customer. Customers can leverage OS based [firewall services](//www.ctl.io/cloud-firewall/) if they wish to secure public services in a more granular fashion.
 * Customers are encouraged to leverage the source IP filter unless delivering completely open public Internet services to their user community.
 * Customers should avoid opening RDP or SSH to their virtual machines to the public Internet. As such the following are recommended access methods.
 
- 1. Use the free OpenVPN client included in every CenturyLink Cloud Account. Refer to [How To Configure Client    VPN](/knowledge-base/network/how-to-configure-client-vpn/). This is the ideal solution for individuals who are mobile and not in fixed office or data center locations.
- 2. Build an IPSEC VPN Tunnel from a remote office or data center location. Refer to [Creating a Self-Service IPSEC Site-to-Site VPN Tunnel](/knowledge-base/network/creating-a-self-service-ipsec-site-to-site-vpn-tunnel/). IPSEC VPN tunnels are best for remote access to Cloud Virtual Machines when administrators are in centralized offices or data centers.
+ 1. Use the free OpenVPN client included in every CenturyLink Cloud Account. Refer to [How To Configure Client    VPN](../Network/how-to-configure-client-vpn.md). This is the ideal solution for individuals who are mobile and not in fixed office or data center locations.
+ 2. Build an IPSEC VPN Tunnel from a remote office or data center location. Refer to [Creating a Self-Service IPSEC Site-to-Site VPN Tunnel](..Network/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md). IPSEC VPN tunnels are best for remote access to Cloud Virtual Machines when administrators are in centralized offices or data centers.
  3. If either of the previous options are not feasible customers should at a minimum use the source IP filter service on the public IP and pair that with local OS firewall policies within the guest VM.
- 4. Refer to [How to Add Public IP to servers](/knowledge-base/network/how-to-add-public-ip-to-virtual-machine/), for further instructions.
+ 4. Refer to [How to Add Public IP to servers](..Network/how-to-add-public-ip-to-virtual-machine.md), for further instructions.
 
 ### Public IP Listing
 
 Below is the current CenturyLink public IP listing. It is updated regularly as public IPs are created.
 
-| **Data Center**   | **Routes**   | 
+| **Data Center**   | **Routes**   
 |---------------------------|--------------------|
-| **AU1**| | 
-              |- 65.127.194.144/29
-             | - 65.151.184.0/23|  |
-| **CA1**| | 
-             | - 216.187.73.144/28
-             | - 64.69.71.128/25
-             | - 65.39.180.0/24
-             | - 65.39.184.0/25
-             | - 216.187.110.0/24|  |
-|**CA2**||
-              | - 70.33.239.96/28
-              |  - 66.155.96.0/24
-              |   - 66.155.100.0/24
-              |  - 69.28.224.128/25
-              |  - 70.33.208.0/25
-              |  - 70.33.239.128/25
-              |  - 107.6.43.0/24| |
-|**CA3**||
-              | - 206.152.25.96/28
-              | - 206.152.32.0/21||
-|**DE1**|| 
-               | - 66.155.5.0/28
-               |  - 66.155.4.0/24
-               |  - 66.155.94.0/24||
-|**GB1**||
-               |  - 176.74.176.144/28
-               |  - 66.155.18.0/24
-               |  - 66.155.19.0/24
-               |  - 66.155.27.0/24
-               |  - 66.155.28.0/24
-               |   - 176.74.168.0/25
-               |   - 176.74.179.0/25 ||
-|**GB3**||
-                | - 206.142.225.192/28
-                |  - 206.142.240.0/21||
-|**IL1**||
-                |  - 64.94.35.32/28
-                |  - 64.74.98.0/24
-                |  - 66.150.98.0/23
-                |  - 66.150.105.0/24
-                |  - 66.151.15.0/24
-                |  - 69.25.149.0/24
-                |  - 72.5.203.0/24
-                |  - 74.217.15.0/24||
-|**NY1**||
-                |  - 74.217.51.192/28
-                |  - 74.201.135.0/24
-                |  - 74.201.140.0/24
-                |  - 74.201.226.0/24
-                |  - 74.201.232.0/24
-                |  - 74.201.237.0/24
-                |  - 74.201.240.0/24||
-|**SG1**||
-                | - 205.139.20.0/28
-                | - 205.139.16.0/22||
-|**UC1**||
-                | - 64.15.180.16/28
-                | - 64.15.182.0/24
-                | - 64.15.184.0/21||
-|**UT1**||
-                | - 8.22.8.0/28
-                | -  8.22.9.0/24
-                | - 8.23.156.0/24||
-|**VA1**||
-                | - 206.128.131.32/28
-                | - 206.128.134.0/23
-                | - 206.128.137.0/24
-                | - 206.128.152.0/21
-                | - 206.128.173.0/24
-                | - 206.128.176.0/23||
-|**WA1**||
-                | - 64.94.142.8/29
-                | - 64.94.114.0/24
-                | - 64.94.138.0/24
-                | - 66.150.160.0/25
-                | - 66.150.174.0/24
-                | - 70.42.161.0/24
-                | - 70.42.168.0/24||
-                
+| AU1| 65.127.194.144/29<br>65.151.184.0/23
+| CA1| 216.187.73.144/28<br>64.69.71.128/25<br>65.39.180.0/24<br>65.39.184.0/25<br>216.187.110.0/24
+| CA2| 70.33.239.96/28<br>66.155.96.0/24<br>66.155.100.0/24<br>69.28.224.128/25<br>70.33.208.0/25<br>70.33.239.128/25<br>107.6.43.0/24
+|CA3|  206.152.25.96/28<br>206.152.32.0/21
+|DE1|  66.155.5.0/28<br>66.155.4.0/24<br>66.155.94.0/24<br>66.155.19.0/24
+|GB1|  176.74.176.144/28<br>66.155.18.0/24<br>66.155.27.0/24<br>66.155.28.0/24<br>176.74.168.0/25<br>176.74.179.0/25
+|GB3|  206.142.225.192/28<br>206.142.240.0/21
+|IL1|  64.94.35.32/28<br>64.74.98.0/24<br>66.150.105.0/24<br>66.151.15.0/24<br>69.25.149.0/24<br>72.5.203.0/24<br>74.217.15.0/24
+|NY1|  74.217.51.192/28<br>74.201.135.0/24<br>74.201.140.0/24<br>74.201.226.0/24<br>74.201.232.0/24<br>74.201.237.0/24<br>74.201.240.0/24
+|SG1|  205.139.20.0/28<br>205.139.16.0/22
+|UC1|  64.15.180.16/28<br>64.15.182.0/24<br>64.15.184.0/21
+|UT1|  8.22.8.0/28<br>8.22.9.0/24<br>8.23.156.0/24
+|VA1|  206.128.131.32/28<br>206.128.134.0/23<br>206.128.137.0/24<br>206.128.152.0/21<br>206.128.173.0/24<br>206.128.176.0/23
+|WA1|  64.94.142.8/29<br>64.94.114.0/24<br>64.94.138.0/24<br>66.150.160.0/25<br>66.150.174.0/24<br>70.42.161.0/24<br>70.42.168.0/24
+
+
 ### Frequently Asked Questions
 
 Q: **What happens to my Public IP if I use the pause, power off or archive services in CenturyLink Cloud?**
