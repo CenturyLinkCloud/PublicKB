@@ -1,6 +1,6 @@
 {{{
-  "title": "Using CenturyLink MySQL with AppFog Applications",
-  "date": "10-23-2015",
+  "title": "Using CenturyLink MySQL Relational DB with AppFog Applications",
+  "date": "02-08-2016",
   "author": "Chris Sterling",
   "attachments": [],
   "related-products" : [],
@@ -13,40 +13,46 @@ Application developers
 
 ### Overview
 
-This article will provide an overview of our [new CenturyLink MySQL Database-as-a-Service offering](https://www.ctl.io/dbaas/) that is currently in beta and how it can be consumed by applications deployed to AppFog. We will use JavaScript with the [MySQL Node.js module](https://github.com/felixge/node-mysql/) to demonstrate using the CenturyLink MySQL service.
+This article will provide an overview of our [MySQL-compatible Relational DB offering](https://www.ctl.io/relational-database/)
+and how it can be consumed by applications deployed to AppFog.
+We will use JavaScript with the [MySQL Node.js module](https://www.npmjs.com/package/mysql)
+to demonstrate using CenturyLink's Relational DB service.
 
-#### Warning - MySQL Service in Beta
-
-The [CenturyLink MySQL Database-as-a-Service](https://www.ctl.io/dbaas/) recently went into beta and is currently included in the AppFog marketplace. You can find via the Cloud Foundry CLI by running the following command in a terminal window:
+[CenturyLink Relational DB](https://www.ctl.io/relational-database/) is included in the AppFog marketplace.
+You can find it via the Cloud Foundry CLI by running the following command in a terminal window:
 
 ```
 $ cf marketplace
 ...
-service       plans                description   
-ctl_mysql     micro                CenturyLink's BETA MySQL DBaaS.  For development use only; not subject to SLAs.
+service       plans                              description   
+ctl_mysql     mysql_single, mysql_replicated     CenturyLink's Relational DB Service, MySQL-compatible database-as-a-service with SSL encryption option and daily backups held 7 days.  Please see https://www.ctl.io/legal/ for terms of service.
 ```
 
-As the description mentions, the `ctl_mysql` service is in beta and is for development use only at this time. Although we have no guarantees of service availability yet our DBaaS team is focused on providing the best service possible as they gather feedback. Please go the [DBaaS product page](https://www.ctl.io/dbaas/) to learn more.
+### Create a Relational DB Service Instance
 
-### Create a MySQL Service Instance
-
-To create a new CenturyLink MySQL service instance, we can use the Cloud Foundry CLI. In order to do this you must be [logged into an AppFog region](login-using-cf-cli.md). The following command will create a new CenturyLink MySQL service instance named `acmedb`:
+To create a new CenturyLink Relational DB service instance, we can use the Cloud Foundry CLI.
+In order to do this you must be [logged into an AppFog region](login-using-cf-cli.md). The following
+command will create a new micro Relational DB service instance named `acmedb`:
 
 ```
-$ cf create-service ctl_mysql micro acmedb
+$ cf create-service ctl_mysql mysql_single acmedb
 ```
 
-The `cf create-service` command will provision a new MySQL instance that can later be bound to an application deployed to AppFog.
+The `cf create-service` command will provision a new MySQL-compatible instance that can later be
+bound to an application deployed to AppFog.
 
-### Bind MySQL to Application
+### Bind Relational DB to Application
 
-To bind the MySQL service instance to an [application deployed to AppFog](deploy-an-application.md) you can use the `cf bind-service` command:
+To bind the Relational DB service instance to an [application deployed to AppFog](deploy-an-application.md) you can use the `cf bind-service` command:
 
 ```
 $ cf bind-service myapp acmedb
 ```
 
-This will add the CenturyLink MySQL service instance access credentials into the `myapp` application's runtime environment. To view these MySQL service instance credentials use the `cf env` command and they will be located in the VCAP_SERVICES environment variable which is a convention for Cloud Foundry enabled services:
+This will add the CenturyLink Relational DB service instance access credentials into the `myapp` application's
+runtime environment. To view these MySQL service instance credentials use the `cf env` command
+(or the "Environment" area for an application in the AppFog UI) and they will be
+located in the VCAP_SERVICES environment variable which is a convention for Cloud Foundry enabled services:
 
 ```
 $ cf env myapp
@@ -66,24 +72,28 @@ System-Provided:
     },
     "label": "ctl_mysql",
     "name": "acmedb",
-    "plan": "micro",
+    "plan": "mysql_single",
     "tags": []
    }
   ],
 
 ```
 
-These credentials can be populated into a MySQL client library for the specific runtime for your application. Below we will show an example using Node.js and the MySQL client module.
+These credentials can be populated into a MySQL client library for the specific runtime for your application.
+Below we will show an example using Node.js and the MySQL client module.
 
-### Example: Using Credentials from Environment in Node.js MySQL Client
+### Example: Using Environment Credentials in Node.js
 
-This section will assume that you have an existing Node.js which needs a MySQL database named `myapp`. The first step is to add the MySQL client module to `myapp` Node.js application using NPM (Node Package Manager) for including the dependency.
+This section will assume that you have an existing Node.js app which needs a MySQL database named `myapp`.
+The first step is to add the MySQL client module to `myapp` Node.js application using NPM (Node Package Manager)
+for including the dependency.
 
 ```
 $ npm install mysql --save
 ```
 
-Also, since commands are sent to MySQL asynchronously with promises, we should include the [Q Node.js module](https://www.npmjs.com/package/q).
+Also, since commands are sent to MySQL asynchronously with promises, we should include
+the [Q Node.js module](https://www.npmjs.com/package/q).
 
 ```
 $ npm install q --save
@@ -95,9 +105,7 @@ The application's package.json should include `mysql` and `q` modules similar to
 {
   "name": "myapp",
   "version": "0.0.1",
-  ...
   "dependencies": {
-    ...
     "mysql": "^2.9.0",
     "q": "^1.1.2"
   }
@@ -105,7 +113,10 @@ The application's package.json should include `mysql` and `q` modules similar to
 
 ```
 
-Now that the Node.js MySQL client is available, we use require to pull the module into the application, pull credentials from application's AppFog deployment environment and setup a function to enable execution of SQL statements against the MySQL database. Below is code that can be used to do all of this that can be put into a file named `dbconfig.js`:
+Now that the Node.js MySQL client is available, we use require to pull the module into the application,
+pull credentials from application's AppFog deployment environment and setup a function to enable execution
+of SQL statements against the MySQL database. Below is code that can be used to do all of this that can be put
+into a file named `dbconfig.js`:
 
 ```
 var mysql = require('mysql');
@@ -117,11 +128,10 @@ var connectionInfo = {
   database: 'myappdb'
 };
 
-// set connection info from CenturyLink MySQL service instance
-// credentials from VCAP_SERVICES environment variable
+// set connection info from db service instance credentials from VCAP_SERVICES environment variable
 if (process.env.VCAP_SERVICES) {
   var services = JSON.parse(process.env.VCAP_SERVICES);
-  var ctlMysqlConfig = services["ctl_mysql"];
+  var ctlMysqlConfig = services['ctl_mysql'];
 
   if (ctlMysqlConfig) {
     var node = ctlMysqlConfig[0];
@@ -138,8 +148,7 @@ if (process.env.VCAP_SERVICES) {
   }
 }
 
-// create function named 'query' to use for SQL statement execution
-// against MySQL database
+// create function 'query' for SQL statement execution against MySQL database
 exports.query = function(query, callback) {
   var connection = mysql.createConnection(connectionInfo);
   connection.query(query, function(queryError, result) {
@@ -150,7 +159,8 @@ exports.query = function(query, callback) {
 
 ```
 
-To use the MySQL connection to execute SQL statements from the application, we must require our new `dbconfig` module and then send a valid SQL command to the query function:
+To use the MySQL connection to execute SQL statements from the application, we must require
+our new `dbconfig` module and then send a valid SQL command to the query function:
 
 ```
 var Q = require('q');
@@ -174,4 +184,141 @@ exports.findAllItems = function() {
 }
 ```
 
-The code above provides a function that adds an item with a name and description into the items table. In addition, there is a corresponding function to find all items in the items table using a promise.
+The code above provides a function that adds an item with a name and description into the items table.
+In addition, there is a corresponding function to find all items in the items table using a promise.
+
+### Example: Using Environment Credentials in Java
+
+The Java example below uses [Gradle](http://gradle.org/) as its build system. The
+build file, `build.gradle`, appears below:
+
+```
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '1.2.3'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.mariadb.jdbc:mariadb-java-client:1.3.6'
+    compile 'com.google.code.gson:gson:2.6.2'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'main.Main'
+    }
+}
+```
+
+* The [shadow](https://github.com/johnrengelman/shadow) build plugin is used to bundle a fat jar that includes all the dependencies.
+* [gson](https://github.com/google/gson) is used to parse the environment services json.
+* The MySQL compatible connector [mariadb-java-client](https://mariadb.com/kb/en/mariadb/about-mariadb-connector-j/) is used to communicate with the ctl_mysql service.
+
+And here's the code for `src/main/java/main/Main.java`:
+
+```
+package main;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import java.sql.*;
+import java.util.Properties;
+
+public class Main {
+
+    public static void main(String args[]) throws Exception {
+        Connection conn = buildConnection();
+
+        //AppFog expects a process to stay running, so loop forever and query every 5 seconds
+        while (true) {
+            String query = "select name, description from items";
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(query);
+            while (rs.next()) {
+                System.out.println("Row (name, description) '" + rs.getString(1) + "', '" + rs.getString(2) + "'");
+            }
+            Thread.sleep(5000);
+        }
+    }
+
+    //establish a database connection
+    private static Connection buildConnection() throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException {
+        ServicesConfig servicesConfig = loadServicesConfig();
+
+        Class.forName("org.mariadb.jdbc.Driver").newInstance();
+        String connectionString = "jdbc:mysql://" +
+                servicesConfig.ctl_mysql[0].credentials.host +
+                ":" + servicesConfig.ctl_mysql[0].credentials.port +
+                "/" + servicesConfig.ctl_mysql[0].credentials.dbname;
+
+        Properties properties = new Properties();
+        properties.setProperty("user", servicesConfig.ctl_mysql[0].credentials.username);
+        properties.setProperty("password", servicesConfig.ctl_mysql[0].credentials.password);
+        properties.setProperty("useSSL", "true");
+        properties.setProperty("serverSslCert", servicesConfig.ctl_mysql[0].credentials.certificate);
+
+        return DriverManager.getConnection(connectionString, properties);
+    }
+
+    //parse the environment json into credentials object
+    private static ServicesConfig loadServicesConfig() {
+        Gson gson = new GsonBuilder().create();
+        ServicesConfig servicesConfig = gson.fromJson(System.getenv("VCAP_SERVICES"), ServicesConfig.class);
+        assert servicesConfig != null;
+        assert servicesConfig.ctl_mysql != null && servicesConfig.ctl_mysql.length == 1;
+        assert servicesConfig.ctl_mysql[0].credentials != null;
+
+        return servicesConfig;
+    }
+
+    //objects representing json vcap services
+    private class ServicesConfig {
+        private CtlMysqlConfig[] ctl_mysql;
+    }
+
+    private class CtlMysqlConfig {
+        Credentials credentials;
+    }
+
+    private class Credentials {
+        private String certificate;
+        private String dbname;
+        private String host;
+        private String password;
+        private Integer port;
+        private String username;
+    }
+}
+```
+
+`main()` is a loop that runs simply forever: AppFog expects a program to continue running, so this
+example simply queries every five seconds indefinitely and prints out the results.
+
+`buildConnection()` establishes the database connection with the provisioned ctl_mysql database.
+It takes an object representing the parsed environment and builds up a proper connection string. Note
+the use of properties `useSSL` and `serverSslCert` to establish a secure connection. `serverSslCert`
+is the reason I chose the MySQL compatible MariaDB connector. Establishing a secure connection
+with a certificate string is a bit more cumbersome in other drivers.
+
+`loadServicesConfig()` parses the environment to get database credentials/host/cert/port. There are quite a few
+json parsing libraries out there; pick your favorite. I included the asserts for getting started in the event
+that someone begins with this code example; a real world app would want use thorough error handling.
+
+Finally, below is the deployment file `manifest.yml`. The property `no-route` is included as the
+app doesn't respond to http requests
+(the Diego runtime also requires [disabling health checks](using-diego.md) in non-webapps):
+
+```
+applications:
+- name: java-mysql
+  memory: 512M
+  instances: 1
+  path: build/libs/java_mysql-all.jar
+  no-route: true
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+```

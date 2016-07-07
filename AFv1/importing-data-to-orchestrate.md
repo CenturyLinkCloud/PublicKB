@@ -22,15 +22,7 @@ When migration is complete your billing subscription can be canceled from the [A
 This article will provide an overview of our [CenturyLink Orchestrate Database Service](https://orchestrate.io/) and how it can be consumed by applications deployed to AppFog.
 
 
-You can find available service offerings via the Cloud Foundry CLI by running the following command in a terminal window:
-
-```
-$ cf marketplace
-...
-service       plans                           description   
-ctl_mysql     micro, small, medium, large     CenturyLink's BETA MySQL DBaaS.  For development use only; not subject to SLAs.
-orchestrate   free                            Orchestrate DBaaS
-```
+You can find available service offerings via the Cloud Foundry CLI using `cf marketplace`. For detailed information on a specific service use `cf marketplace -s <service>`.
 
 ### Create an Orchestrate Service Instance
 

@@ -5,18 +5,13 @@
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
-  "sticky": false
+  "sticky": true
 }}}
 
-Simple Backup Service – Beta Customer – Getting Started Guide
+Simple Backup Service – Getting Started Guide
 =============================================================
 
-Thank you for being a Beta Customer!
-------------------------------------
-
-This guide is intended for Beta Customers in relation to getting started with Simple Backup Service.
-
-Simple Backup Service (SBS) provides file level backups. This beta version of the UI allows users to quickly setup backups as well as perform other backup related activities. Additionally, there is no need to stand-up any additional infrastructure (servers, network, storage) because this is all part of the service. An agent will be automatically installed on the server during provisioning. Servers must have connectivity to the internet and restores for CLC VMs. Users choose which servers and data that require being backed up, as well as the frequency of the backups and retention periods.
+Simple Backup Service (SBS) provides file level backups. This version of the UI allows users to quickly setup backups as well as perform other backup related activities. Additionally, there is no need to stand-up any additional infrastructure (servers, network, storage) because this is all part of the service. An agent will be automatically installed on the server during provisioning. Servers must have connectivity to the internet and restores for CLC VMs. Users choose which servers and data that require being backed up, as well as the frequency of the backups and retention periods.
 
 For additional information, please visit our [FAQ section](./simple-backup-service-faqs.md) or additional [Knowledge Base](//www.ctl.io/knowledge-base/backup/#1) articles.
 
@@ -53,7 +48,12 @@ The following provides steps to get started:
 
   ![](../images/backup/getting-started/image7.png)
 
-8.  Accessing the agent on your server will allow you to view details, execute a backup, or execute a restore. To access the agent directly, connect to your CLC server, launch a browser, and navigate to `http://localhost:15915`. Alternatively, you can also connect to the agent from your local computers browser if you have a VPN configured to connect into your CLC servers; the address would be `http://<your servers IP address>:15915` (e.g. `http://10.11.12.13:15915`).
+8.  Accessing the agent on your server will allow you to view details, execute a backup, or execute a restore. To access the agent directly, connect to your CLC server, launch a browser, navigate to `http://localhost:15915`, and view the [Agent Security KB](./sbs-agent-security.md) to obtain credentials. Alternatively, you can also [configure the agent for remote access](./sbs-agent-security.md) and connect to the agent from your local computer browser if you have a VPN configured to connect into your CLC servers; the address would be `http://<your servers IP address>:15915` (e.g. `http://10.11.12.13:15915`). [Installing RDP for Linux](./linux-rdp.md) also enables agent access. For Linux, a local firewall will need to be opened by executing the following commands:
+
+  ```
+  firewall-cmd --permanent --add-port=15915/tcp
+  firewall-cmd --reload
+  ```
 
 9.  From the Agent Home Dashboard, you can view policy details by clicking the Policy name.
 

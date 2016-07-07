@@ -1,12 +1,10 @@
 {{{
   "title": "Getting Started with MongoDB - Blueprint",
-  "date": "3-17-2015",
+  "date": "03-17-2015",
   "author": "Keith Resar",
   "attachments": [],
   "contentIsHTML": false
 }}}
-
-
 
 ### Overview
 
@@ -27,7 +25,7 @@ http://www.mongodb.org/
 
 ### Description
 
-MongoDB database technology has been integrated for automated deployment on the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this solution.
+MongoDB database technology has been integrated for automated deployment on the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this solution.
 
 MongoDB is a cross-platform NoSQL document-oriented database. Its structure is JSON-like, making integration of data in certain types of applications easier and faster.
 
@@ -42,59 +40,49 @@ CenturyLink Cloud Users
 
 #### Steps
 
+1. Locate the Blueprint in the Blueprint Library.
+   * Determine whether you will be building a test cluster with small nodes or a production cluster whose nodes are configured with increased CPU and RAM.
 
-1. **Locate the Blueprint in the Blueprint Library**
+   <img src="../../images/mongodb/mongodb_blueprint_tile.png" style="border:0;max-width:250px;">
 
-  Determine whether you will be building a test cluster with small nodes or a production cluster whose nodes are configured with increased CPU and RAM.
+   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "MongoDB" in the keyword search on the right side of the page.
 
-  <img src="../../images/mongodb/mongodb_blueprint_tile.png" style="border:0;max-width:250px;">
+2. Click the Deploy Blueprint button.
 
-  Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "MongoDB" in the keyword search on the right side of the page.
+3. Set Required parameters.
 
-2. **Click the Deploy Blueprint button.**
+   <img src="../../images/mongodb/deploy_parameters.png" style="max-width:450px;">
 
-3. **Set Required parameters.**
+   * **Database Admin Username** - Username created in new MongoDB instance
+   * **Database Admin Password** - Password created in new MongoDB instance
 
-  <img src="../../images/mongodb/deploy_parameters.png" style="max-width:450px;">
+4. Set Optional Parameters.
 
-  * **Database Admin Username** - Username created in new MongoDB instance
-  * **Database Admin Password** - Password created in new MongoDB instance
+   * Password/Confirm Password (This is the root password for the server. Keep this in a secure place).
+   * Set DNS to “Manually Specify” and use “8.8.8.8” (or any other public DNS server of your choice).
+   * Optionally set the server name prefix.
+   * The default values are fine for every other option.
 
-4. **Set Optional Parameters**
+5. Review and Confirm the Blueprint.
 
-  Password/Confirm Password (This is the root password for the server. Keep this in a secure place).  
+6. Deploy the Blueprint.
+   * Once verified, click on the `deploy blueprint` button. You will see the deployment details stating the Blueprint is queued for execution.
+   * This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within ten minutes.
 
-  Set DNS to “Manually Specify” and use “8.8.8.8” (or any other public DNS server of your choice).
+7. Deployment Complete.
+   * Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.
+   * If you do not receive an email like the one shown below your cluster may have had a deployment error - review the *Blueprint Build Log* to for error messages.
 
-  Optionally set the server name prefix.
-
-  The default values are fine for every other option.
-
-5. **Review and Confirm the Blueprint**
-
-6. **Deploy the Blueprint**
-
-  Once verified, click on the `deploy blueprint` button. You will see the deployment details stating the Blueprint is queued for execution.
-
-  This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within ten minutes.
-
-7. **Deployment Complete**
-
-  Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.  If you do not receive an email like the one shown below your cluster may have had a deployment error - review the *Blueprint Build Log* to for error messages.
-
-  <img src="../../images/mongodb/deploy_complete_email.png" style="border:0;width:70%;">
+   <img src="../../images/mongodb/deploy_complete_email.png" style="border:0;width:70%;">
 
 
 ### Pricing
-
-The costs listed above in Steps 1 and 2 are for the infrastructure only.
-
-MongoDB is Open Source community owned software with no associated cost to acquire.
+The costs listed above in Steps 1 and 2 are for the infrastructure only. MongoDB is Open Source community owned software with no associated cost to acquire.
 
 
 ### Frequently Asked Questions
 
-**Where do I get my License?**
+**Where do I get my license?**
 
 MongoDB is Open Source community owned software with no associated cost to acquire.
 
@@ -106,8 +94,7 @@ For issues related to cloud infrastructure, please open a ticket using the [Cent
 
 
 **Creating a User for your Application**
-
-The database server is created with the admin user as the only user.  From there you will need to create a user for your Application.  You can do that by executing the following from your server:
+The database server is created with the admin user as the only user. From there you will need to create a user for your Application. You can do that by executing the following from your server:
 
 ```
 [root@SERVER ~]# mongo <IP_ADDRESS>:27017/admin -u <USER_YOU_CREATED> -p <PASSWORD_OF_ADMIN_USER>
@@ -150,5 +137,4 @@ testdb
 ```
 
 **What operating systems are supported for Unmanaged MongoDB?**
-
-Unmanaged Red Hat 7
+   * Unmanaged Red Hat 7

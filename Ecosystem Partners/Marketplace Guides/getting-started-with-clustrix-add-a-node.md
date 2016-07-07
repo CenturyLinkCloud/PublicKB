@@ -1,32 +1,28 @@
 
 {{{
   "title": "Add a ClustrixDB v7.0.1 node on CentOS 6",
-  "date": "November 15 2015",
+  "date": "11-15-2015",
   "author": "Jesse Bornfreund",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-
-![Clustrix logo](../../images/clustrix_blue.png)
-
+![Clustrix Logo](../../images/clustrix_blue.png)
 
 ### Technology Profile
-
-Clustrix provides the leading scale-out SQL database engineered for the cloud.  It is the first database built specifically to meet the revenue scaling, performance and availability demands of today’s web sites and applications such as those for e commerce, healthcare and finance. With ClustrixDB, you can build business critical applications that support massive transactional volume and real-time reporting of business performance metrics.
-
+Clustrix provides the leading scale-out SQL database engineered for the cloud.  It is the first database built specifically to meet the revenue scaling, performance and availability demands of today’s web sites and applications such as those for eCommerce, healthcare and finance. With ClustrixDB, you can build business critical applications that support massive transactional volume and real-time reporting of business performance metrics.
 
 ### Description
 This KB allows a ClustrixDB customer to add additional ClustrixDB nodes to their cluster.  ClustrixDB is a drop-in replacement for MySQL that provides simplicity of management and scaling using commodity server infrastructure. ClustrixDB offers key features for companies who need an easily managed, easily scaled RDBMS:
 
 * First scale-out relational database designed to meet the elastic scaling requirements of high-volume online transactions needed by e-commerce and other Web applications.
 * Architecture that massively scales both reads and writes, while ensuring transaction integrity.
-* ACID Compliant
-* Scales linearly with a shared-nothing architecture, automated, intelligent data distribution and distributed query processing
-* “Clustered” database architecture provides automatic redundancy at deployment and assures high-availability of RDBMS across any load with automated fault recovery
-* FLEX licensing model allows deployment of additional database resources for “spikes” due to seasons, promotions or planned heavy loads
+* ACID Compliant.
+* Scales linearly with a shared-nothing architecture, automated, intelligent data distribution and distributed query processing.
+* “Clustered” database architecture provides automatic redundancy at deployment and assures high-availability of RDBMS across any load with automated fault recovery.
+* FLEX licensing model allows deployment of additional database resources for “spikes” due to seasons, promotions or planned heavy loads.
 * Code compatible with MySQL, with added benefit that adding servers (and scaling read/write capacity) requires no coding changes to application code.
-* ClustrixDB is seen by the application as a single logical database, no matter how many database server nodes are deployed
+* ClustrixDB is seen by the application as a single logical database, no matter how many database server nodes are deployed.
 * Our patented slicing method delivers performance that is superior to that of sharding and sharding-like approaches, which are costly to manage and fragile.
 * Can be deployed across geography with asynchronous replication, using MySQL replication protocol.
 * Self-managing, eliminates many DBA operations tasks, significantly reducing the cost of ownership and allowing engineers to focus on innovation.
@@ -36,29 +32,21 @@ Current Release is v 7.0.1 (6/15/2015)
 
 For more information, please visit www.clustrix.com
 
-
 ### Audience
 CenturyLink Cloud Users
-
 
 ### Impact
 After reading this article, the user should understand what ClustrixDB does, how to add a new node to an existing ClustrixDB cluster, and how to contact Clustrix to get more information or product license/keys for evaluation and production.
 
-
 ### Prerequisite
-
-   1. Access to the CenturyLink Cloud platform as an authorized user.  
-   2. An existing ClustrixDB cluster with an Evaluation or Production License
-   3. Adequate/equivalent CLC infrastructure will be deployed for the new evaluation or typical production node as part of the ClustrixDB Blueprint execution.
-
+* Access to the CenturyLink Cloud platform as an authorized user.  
+* An existing ClustrixDB cluster with an Evaluation or Production License.
+* Adequate/equivalent CLC infrastructure will be deployed for the new evaluation or typical production node as part of the ClustrixDB Blueprint execution.
 
 ### Postrequisite
-
 To access your application from a computer outside the CenturyLink Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
-
-  1. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Server's Public IP through Control Portal and configuring appropriately.
-        * The default ports to access the application are: 80, 22, 3306
-
+* [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Server's Public IP through the Control Portal and configuring appropriately.
+* The default ports to access the application are: `22`, `80`, `3306`.
 
 ### Deploying the “Add a ClustrixDB v7-0-1 node" Blueprint
 

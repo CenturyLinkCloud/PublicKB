@@ -1,13 +1,15 @@
 {{{
   "title": "Getting Started with Managed Active Directory",
-  "date": "10-14-2014",
-  "author": "Jared Ruckle",
+  "date": "6-13-2016",
+  "author": "Thomas Broadwell",
   "attachments": [],
   "contentIsHTML": true
 }}}
 
-<p>Here's how to get started with Managed Active Directory in CenturyLink Cloud. <strong>NOTE: Before you can deploy Managed Active Directory, you must create a Managed Windows server. </strong><strong>Also, please ensure that two or more Domain Controllers have been built in your deployment, as this is a necessary component for servers to be added into your Domain. If this is not possible, all server builds will be added into the shared Active Directory Domain.</strong>
+<strong>NOTE: Managed Active Directory requires a Forest and at least two Domain Controllers be present within your domain.  Before you can deploy Managed Active Directory blueprints, you must have created Managed Windows servers on which to build them.  If a Forest does not already exist, the "CLC Managed Active Directory - New Forest" blueprint will deploy a new forest and a Domain Controller.  A secondary Domain Controller can be deployed using the "CLC Managed Active Directory - Add DC" blueprint.  Managed AD requires that two or more Domain Controllers have been built in your deployment, as this is necessary for servers to be added into your Domain. If this is not possible, all server builds will be added into the shared Active Directory Domain.</strong>
 </p>
+
+<p>Here's how to get started with Managed Active Directory in CenturyLink Cloud:</p>
 
 <p>1. Navigate to the Blueprints Library, and search for "Active Directory". Click on the “CLC Managed Active Directory – Add DC” Blueprint.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/EyJnmscs4LOWcKiCl1J26abrq/?name=AD_DC.jpg" alt="AD_DC.jpg" />

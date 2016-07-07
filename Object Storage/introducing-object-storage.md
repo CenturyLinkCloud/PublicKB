@@ -31,7 +31,7 @@ A: Object Storage is for key-value data. It is a schema-less repository that can
 
 **Q: How available is my data?**
 
-A: Data stored in an object storage region is stored in a highly available, fault tolerant way.  When data is stored, it is written to a datacenter where it is stored in an industry standard, highly redundant method. Data is also replicated to an additional datacenter where it is again stored using the same redundant method.  This combination of datacenter redundancy and multi-datacenter replication yields a robust, always-on object storage solution.
+A: Data stored in an object storage region is stored in a highly available, fault tolerant way.  When data is stored, it is written to a datacenter where it is stored in an industry standard, highly redundant method. Data is also replicated to an additional datacenter in the same region where it is again stored using the same redundant method.  This combination of redundancy and replication yields a robust, always-on object storage solution.
 
 **Q: How do I interact with Object Storage?**
 
