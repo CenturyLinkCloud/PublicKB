@@ -30,5 +30,6 @@ Importing custom images/appliances for customers can be done in two ways. In bot
 1.  We must be able to install VMware tools on the machine.
 1. Windows machines cannot be domain joined (breaks clones)
   Meeting these requirements is not always a guarantee that we will be able to have full control site support (or even import the machine at all), however missing any of them is a guarantee that we will not be able to give the image full functionality.
+1.  Only one SCSI controller is allowed to be configured. 
 
 

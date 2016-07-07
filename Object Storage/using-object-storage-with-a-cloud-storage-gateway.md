@@ -34,7 +34,7 @@ Using Object Storage with a Cloud Storage Gateway
 </p>
 <p>3. Enter the details required to connect to the selected Cloud Provider. </p>
 <ul>
-  <li>For the node, <a href="https://www.ctl.io/knowledge-base/object-storage/object-storage-service-points/">all service points are listed here.</a>
+  <li>For the node, <a href="https://www.ctl.io/knowledge-base/object-storage/object-storage-regions-and-service-points/">all service points are listed here.</a>
   </li>
   <li>Provide the&nbsp;<strong>access key id</strong> and&nbsp;<strong>secret access key&nbsp;</strong>for the user created in the prerequisites</li>
   <li>Encryption, Compression and SSL are recommended</li>

@@ -33,6 +33,7 @@ The following is not meant to be a complete description of every feature of Acti
  Migrate objects from an external environment | Customer | Internal | N/A
  Migrate objects from an external environment | Customer | Internal | N/A
  Create Users and Groups | Customer | Internal | N/A
+ Bulk-Create Users and Groups | CenturyLink Support | CenturyLink Operations | 1-888-638-6771 
  Create/Modify OUs & Containers | Customer | Internal | N/A
  Create/Modify DNS Records | Customer | Internal | N/A
  Create/Modify Custom Group Policies  | Customer | Internal | N/A
@@ -42,6 +43,6 @@ The following is not meant to be a complete description of every feature of Acti
  Monitor Authentication Activity and AD Directory Changes | Customer | Internal | N/A
  Unlock User Accounts | CenturyLink Support | CenturyLink Operations | 1-888-638-6771
  Reset User Passwords | CenturyLink Support | CenturyLink Operations | 1-888-638-6771
- Disable Users | | CenturyLink Support | CenturyLink Operations | 1-888-638-6771
+ Disable Users | CenturyLink Support | CenturyLink Operations | 1-888-638-6771
  Create or Modify Standard Group Policies | CenturyLink Support | CenturyLink Operations | 1-888-638-6771
  Change Domain/Forest Function Level | CenturyLink Support | CenturyLink Operations | 1-888-638-6771

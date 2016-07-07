@@ -1,6 +1,6 @@
 {{{
   "title": "Getting To Know The CLI cf Tool",
-  "date": "12-4-2015",
+  "date": "02-08-2016",
   "author": "Ben Heisel",
   "attachments": [],
   "related-products" : [],
@@ -17,7 +17,7 @@ Before deleting any applications or services on AppFog v1 ensure you have local 
 When migration is complete your billing subscription can be canceled from the [Account](https://console.appfog.com/#account) page of the web console. Please be sure to cancel your subscription as we are not aware when individual user migration is complete. The billing system will not automatically prorate the subscription and issue a refund. If applicable, please open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com to receive a prorated refund of your subscription.
 
 ### The AppFog v2 cf CLI Tool
-There are similarities and differences between the AppFog v2 `cf` CLI tool and the AppFog v1 `af` tool. This article is intended to provide some of the new `cf` tool syntax for AppFog v1 users. More information about the `cf` tool can be found in the [Cloud Foundry Docs](https://docs.cloudfoundry.org/devguide/installcf/) or from the CLI run `cf help`. For detail on a specific command `cf help <COMMAND>`.
+There are similarities and differences between the AppFog v2 `cf` CLI tool and the AppFog v1 `af` tool. This article is intended to provide some of the new `cf` tool syntax for AppFog v1 users. More information about the `cf` tool can be found in our [Using the Cloud Foundry CLI Tool](../AppFog/using-cloud-foundry-cli-tool.md) article, or from the CLI run `cf help`. For detail on a specific command use `cf help <COMMAND>`.
 
 At this time the AppFog v2 web console offers the option to start, stop, scale, restage, or delete an application. Additionally, environment variables can be viewed, created, or deleted through the web interface. All other actions must be taken using the CLI tool. Each individual application page will also display the current hourly rate for that application.
 
@@ -30,13 +30,8 @@ Before mapping a custom domain to an application on AppFog v2 the domain needs t
 ##### Services
 Users are able to connect directly to their services on AppFog v2 so there is not a `tunnel` command. There is also not an `export-service` command. To obtain a backup of your service connect directly to the service using the credentials in the VCAP_SERVICES environment variable.
 
-To list available services with AppFog v2 use `cf marketplace`:
+To list available services with AppFog v2 use `cf marketplace`. For detailed information on a specific service use `cf marketplace -s <SERVICE>`.
 
-```
-service       plans                         description   
-ctl_mysql     micro, small, medium, large   CenturyLink's BETA MySQL DBaaS.  For development use only; not subject to SLAs.   
-orchestrate   free                          Orchestrate DBaaS
-```
 To create a service instance use `cf create-service <SERVICE_TYPE> <SERVICE_PLAN> <YOUR_SERVICE_NAME>`. For example, `cf create-service ctl_mysql micro example-db`.
 
 ##### Application Health and Status

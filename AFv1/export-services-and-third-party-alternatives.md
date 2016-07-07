@@ -22,7 +22,7 @@ When migration is complete your billing subscription can be canceled from the [A
 The export utility in AppFog v1 is subject to timeout for databases larger than approximately 100M. Please verify your data before deleting any services. For databases near 100M or that experience export errors please login to open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com and we will provide a dump of your database.
 
 1. Export using the tunnel:
-  * [Tunneling](service-database-content-management-tunneling.md) on AppFog v1.
+  * Tunneling on AppFog v1.
   * From the command line:
 <pre>af tunnel</pre>
   * Select the service to export.
@@ -48,7 +48,7 @@ cd content
 gunzip *.gz
 </pre>
 3. Export a MySQL database using phpMyAdmin:
-  * Deploy a [phpMyAdmin on AppFog](phpmyadmin-on-appfog.md) jumpstart app.
+  * Deploy a phpMyAdmin on AppFog jumpstart app.
   * Use the phpMyAdmin export utility.
   * For large databases that still experience timeouts you can export the database in chunks, selecting single or multiple tables at a time.
 

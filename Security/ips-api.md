@@ -1,5 +1,5 @@
 {{{ "title": "IPS - RESTful API",
-        "date": "11-09-2015",
+        "date": "04-20-2016",
         "author": "Client-Security",
         "attachments": [],
         "contentIsHTML": false,
@@ -89,9 +89,11 @@ Uninstalls an IPS agent from a designated host.
 
 ### Configuration Process via our API
 
-These calls will do all of the operations for configuring, retrieving, updating and deleting a notification destination.
+The calls below will perform all of the operations for configuring, retrieving, updating, and deleting a notification destination.
 Calls to this operation must include a token acquired from the authentication endpoint.
 See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
+
+Note: If you have any questions, or would like assistance from us in setting up your notifications, please email us at help@ctl.io.  We're happy to help at anytime!
 
 #### URL
 
@@ -136,7 +138,9 @@ See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for in
 |sysLogSettings|SysLogSettings|This contains all of the options for SYSLOG          |No        |
 |emailAddress|String    |This object will contain options for an EMAIL notification |No        |
 
-TypeCode currently consists of: SYSLOG, EMAIL, WEBHOOK and SLACK
+TypeCode currently consists of: SYSLOG, EMAIL, and WEBHOOK
+
+Note: If you have any questions, or would like assistance from us in setting up your notifications, please email us at help@ctl.io.  We're happy to help at anytime!
 
 ##### SysLogSettings Definition
 | **Name**  | **Type**  | **Description**                                                 | **REQ.**  |
@@ -147,8 +151,6 @@ TypeCode currently consists of: SYSLOG, EMAIL, WEBHOOK and SLACK
 
 Facility is to set the type of program logging messages.
 The options are 16-23 for descriptions follow the link: [https://en.wikipedia.org/wiki/Syslog](https://en.wikipedia.org/wiki/Syslog)
-
-* Note: Syslog server IP must reside outside of the UC1 datacenter at this time
 
 ##### Example
 
@@ -203,3 +205,13 @@ The following key-value pairs are sent to the notification destination when an e
 |sourcePort|String    |Source Port                                                                          |
 |tags      |String    |Name of any event tags assigned to this event                                        |
 |severity  |String    |Severity                                                                             |
+
+Note: If you have any questions, or would like assistance from us in setting up your notifications, please email us at help@ctl.io.  We're happy to help at anytime!
+
+##### Syslog Firewall Rules
+
+* Add the following rules to the Firewall that the Syslog server sits behind if located in another location
+
+  * dsm01.client-security.ctl.io 514/udp
+
+  * dsm02.client-security.ctl.io 514/udp

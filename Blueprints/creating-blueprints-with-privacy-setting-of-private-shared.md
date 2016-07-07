@@ -46,3 +46,5 @@ For an overall guide to creating blueprints refer to our [guide.](../Blueprints/
 3. Confirm the previously created blueprint is available to deploy in the sub account.
 
     ![deploy blueprint in sub account](../images/creating-blueprints-with-privacy-setting-of-private-shared-04.png)
+
+**NOTE:** Once your Blueprint is created, it will take a few moments for that Blueprint to replicate to other CenturyLink Cloud locations. That is, custom Blueprints are not instantly available globally for deployment.

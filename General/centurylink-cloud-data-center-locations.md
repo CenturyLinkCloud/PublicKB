@@ -23,3 +23,4 @@ Canada (Toronto - Markam) - CA2|Peer 1 Hosting|20 Pullman Court<br>Toronto, Onta
 Canada (Vancouver) - CA1|Peer 1 Hosting|555 West Hastings Street<br>Vancouver, BC V6B 4N5|[provider details](http://www.peer1.com/infrastructure/datacenter-vancouver)
 Germany (Frankfurt) - DE1|Equinix|Lärchenstrasse 110<br>65933 Frankfurt- Griesheim Germany|[provider details](http://www.equinix.com/en_US/locations/germany/frankfurt-data-centers/)
 APAC (Singapore) - SG1|CenturyLink|29A International Business Park<br>Jurong East Singapore 609934|[provider details](http://www.centurylink.com/business/enterprise/colocation/data-centers/singapore.html)
+Australia - AU1|CenturyLink|4 Eden Park Dr <br>Macquarie Park NSW 2113|[provider details](http://www.centurylink.com/business/enterprise/colocation/data-centers/australia/australia.html)
