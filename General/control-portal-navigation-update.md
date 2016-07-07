@@ -37,7 +37,7 @@ This new navigation bar is designed to be responsive, so whether you use a deskt
 
 ### Sub-Account
 
-If you are customer that happens to use our sub-account feature, there is a new sub-account navigation menu at the very top of the page. This displays your current account name and alias, giving you context for the data on the page below. To open the menu, click the account name (or press ctrl + i on your keyboard) to view the entire account hierarchy your user has access to.
+If you are a customer that happens to use our sub-account feature, there is a new sub-account navigation menu at the very top of the page. This displays your current account name and alias, giving you context for the data on the page below. To open the menu, click the account name (or press ctrl + i on your keyboard) to view the entire account hierarchy your user has access to.
 
 ![Animated gif of Control Portal main navigation menu behavior](../images/menu-account-context.gif)
 
