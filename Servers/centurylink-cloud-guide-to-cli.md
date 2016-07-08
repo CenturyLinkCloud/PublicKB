@@ -59,7 +59,7 @@ This tool enables system administrators to interface with CenturyLink Cloud with
 
 ***In order to make easy distintion between the two CLIs, clc-cli is the Python based tool and clc is the GO based tool.***
 
-**Python Based CLI:**
+**Python Based CLI**
 
 Installation instruction is available [here](//github.com/CenturyLinkCloud/clc-python-sdk).  If pip is installed, then the following command will installed the CenturyLink Cloud Python SDK and CLI:
 ```
@@ -110,7 +110,7 @@ Commands:
 ```
 
 
-**GO Based CLI:**
+**GO Based CLI**
 
 Installation is simple for the GO based CLI. Download the executable and run it. The detail
 of the installation steps can be found [here](//github.com/CenturyLinkCloud/clc-go-cli).
@@ -159,7 +159,7 @@ Available resources:
 
 ```
 
-**Logging into the CenturyLink account:**
+**Logging into the CenturyLink account**
 
 Using command without a configuration file:
 ```
@@ -170,7 +170,7 @@ clc login –user username –password
 ```
 Or setup the configuration file as described in [Installation of CenturyLink Cloud CLI](#installation-of-centurylink-cloud-cli)
 
-**Output Format:**
+**Output Format**
 
 For output (with --format for clc-cli or –-output for clc), there are several options:
 ‘JSON, TEXT, TABLE’, and 'csv'.
@@ -223,7 +223,7 @@ clc-cli users lists
 ```
 clc-cli users get --alias ABCD --user "demo.user"
 ```
-**List all data centers:**
+**List all data centers**
 ```
 clc-cli accounts locations
 ```
@@ -231,7 +231,7 @@ clc-cli accounts locations
 clc data-centers list
 ```
 
-**List all servers in the account:**
+**List all servers in the account**
 ```
 clc-cli servers list
 ```
@@ -239,7 +239,7 @@ clc-cli servers list
 clc server list
 ```
 
-**For a particular data center:**
+**For a particular data center**
 ```
 clc-cli servers list --location CA3
 ```
@@ -251,7 +251,7 @@ Or
 ```
 clc server list -–filter “LocationID”=”CA3”
 ```
-**List hostname of all servers in a datacenter:**
+**List hostname of all servers in a datacenter**
 ```
 clc-cli --cols Name --config config.ini servers list --location CA3
 ```
@@ -264,12 +264,12 @@ clc server list –all --query location-id=ca3
 ```
 
 **Find all the hyperscale (or standard/baremetal) server in the
-account:**
+account**
 ```
 clc server list --all --filter type=hyperscale --query details.host-name
 ```
 
-**All OS/templates available in a DC:**
+**All OS/templates available in a DC**
 ```
 clc data-center get-deployment-capabilities --data-center CA3 --query templates.name --output text
 ```
@@ -295,17 +295,17 @@ WIN2012DTC-64
 WIN2012R2DTC-64
 ```
 
-**Show all “active” servers :**
+**Show all “active” servers**
 ```
 clc server list --all --filter status=active --output table
 ```
 
-**Who/when created a server:**
+**Who/when created a server**
 ```
 clc server list --all --filter name=CA3ABCDADM01 --query change-info.{created-by,created-date}
 ```
 
-**Display power state and hostname:**
+**Display power state and hostname**
 ```
 clc-cli --cols Name PowerState --config.ini servers list-all
 ```
@@ -313,7 +313,7 @@ clc-cli --cols Name PowerState --config.ini servers list-all
 clc server list --all --query details.{power-state,host-name}
 ```
 
-**All paused servers (or started and stopped):**
+**All paused servers (or started and stopped)**
 For Windows command:
 ```
 clc server list --all --query details.{power-state,host-name} --output text | find "paused"
@@ -323,12 +323,12 @@ For Linux or MacOSX:
 clc server list --all --query details.{power-state,host-name} --output text | grep "paused"
 ```
 
-**Server name with number of CPUs and memory (in MB):**
+**Server name with number of CPUs and memory (in MB)**
 ```
 clc server list --all --query "details.{cpu,memoryMB,host-name}" --output text
 ```
 
-**Find IP addresses with server name:**
+**Find IP addresses with server name**
 ```
 clc-cli -f text --cols Name IPAddress --config.ini servers list-all
 ```
@@ -336,7 +336,7 @@ clc-cli -f text --cols Name IPAddress --config.ini servers list-all
 clc server list --all --query "details.{host-name,ipAddresses}" --output text
 ```
 
-**List all groups:**
+**List all groups**
 ```
 clc-cli group list
 ```
@@ -344,24 +344,24 @@ clc-cli group list
 clc group list –all
 ```
 
-**Find all empty groups:**
+**Find all empty groups**
 ```
 clc group list --filter 'servers-count=0'
 ```
 
-**Find all groups with servers:**
+**Find all groups with servers**
 ```
 clc group list --filter 'servers-count>0'
 ```
 
-**List all network in a datacenter:**
+**List all network in a datacenter**
 ```
 clc-cli networks list --location ca3
 ```
 ```
 clc network list --data-center ca3 --output table
 ```
-**Query the above result with Name, Description and Gateway:**
+**Query the above result with Name, Description and Gateway**
 ```
 clc network list --data-center ca3 --query Name,Description,Gateway --output table
 ```
@@ -392,7 +392,7 @@ clc billing get-invoice-data --year 2015 --month 12
 ```
 clc billing get-invoice-data --year 2015 --month 12 --query LineItems.{ServiceLocation,UnitCost} --output json
 ```
-**Get billing for a group:**
+**Get billing for a group**
 ```
 clc group get-billing-details --group-name Test
 ```
@@ -400,7 +400,7 @@ clc group get-billing-details --group-name Test
 
 *ArchiveCost, CurrentHour, MonthToDate, MonthlyEstimate, TemplateCost*
 
-**Get Billing for a server:**
+**Get Billing for a server**
 ```
 clc-cli billing server-estimate --server CA3ABCDTEST104
 ```
@@ -413,7 +413,7 @@ For Linux or MacOSX:
 clc group get-billing-details --group-name ceph --output text | grep “hostname”
 ```
 
-**From a Master account to look in a sub-account:**
+**From a Master account to look in a sub-account**
 ```
 clc-cli account get --alias SUBA
 cli-cli users list --alias SUBA
@@ -429,7 +429,7 @@ clc group list --data-center CA3 --account-alias SUBA
 clc billing get-invoice-data --account-alias SUBA --year 2016 --month 1
 ```
 
-**List group and server in a specific account:**
+**List group and server in a specific account**
 ```
 clc-cli groups list --alias ABCD
 ```
@@ -459,7 +459,7 @@ clc-cli users create --alias ABCD --user "new.test" --email new.test@abcd.com --
 ```
 *Possible roles: ServerAdministrator,BillingManager,DNSManager,AccountAdministrator,AccountViewer,NetworkManager,SecurityManager,ServerOperator*
 
-**Create a group:**
+**Create a group**
 ```
 clc-cli groups create --location CA3 --alias ABCD --parnet DevOps --group TestingCLI --description "Testing group"
 ```
@@ -467,7 +467,7 @@ clc-cli groups create --location CA3 --alias ABCD --parnet DevOps --group Testin
 clc group create --name "TestCA3" --description "Test Servers" --parent-group-name "CA3 Hardware"
 ```
 
-**Create a server:**
+**Create a server**
 ```
 clc-cli servers create --alias ABCD --location CA3 --group TestingCLI --name test1 --template UBUNTU-14-64-TEMPLATE --backup-level Standard --cpu 1 --ram 1 --network vlan_771_10.xxx.yyy
 ```
@@ -512,13 +512,13 @@ clc load-balancer-pool create --data-center ca2 --load-balancer-name CLITest --p
 ```
 **Adding servers in the load balanced pool**
 ```
-clc load-balancer update-nodes --data-center CA2 --load-balancer-name CLITest --pool-id ffdd1817ee12426a8b048eaf28958245 --nodes "ip-address"="10.xxx.yyy.zzz","Private-Port"=443 "ip-address"="10.xxx.yyy.zzz","Private-Port"=443,"Status"=disabled
+clc load-balancer update-nodes --data-center CA2 --load-balancer-name CLITest --pool-id xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --nodes "ip-address"="10.xxx.yyy.zzz","Private-Port"=443 "ip-address"="10.xxx.yyy.zzz","Private-Port"=443,"Status"=disabled
 
 
 ```
 ***Delete***
 
-**Delete a server:**
+**Delete a server**
 ```
 clc-cli servers delete --server CA3ABCDTEST106
 ```
@@ -542,7 +542,7 @@ clc group delete -–group-name TestGroup
 ```
 **Delete a Load Balanced pool**
 ```
-clc load-balancer-pool delete --data-center CA2 --load-balancer-name CLITest --pool-id 9f6b7849dae349ef96a6cc80742897af
+clc load-balancer-pool delete --data-center CA2 --load-balancer-name CLITest --pool-id xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 ### Advanced Usage
@@ -555,7 +555,7 @@ clc wait
 **Adding a secondary network card on a server**
 Please refer to the [Add or Remove Network Interface to Server using Go CLI](../Network/add-or-remove-network-interface-to-server-using-go-cli.md)
 
-**Create firewall rule with port tcp/22 between VLANs:**
+**Create firewall rule with port tcp/22 between VLANs**
 ```
 clc firewall-policy create --data-center CA1 --destination-account abcd --sources "10.aaa.bbb.0/24" --destinations "10.xxx.yyy.0/24" --ports tcp/22
 ```
@@ -596,19 +596,19 @@ The following examples show the basic functions of what can be done from the CLI
 ### Relational Database Service
 For Relational DB, cli can manage creation, deletion, failover, notification and listing of different resources.  The `--help` option can be used to find out more on the options.  For details of Relational Database Service, please see this [knowledge article](../Database/getting-started-with-mysql-rdbs.md).
 
-**Listing all the available data centers for this service:**
+**Listing all the available data centers for this service**
 ```
 clc db list-datacenters
 ```
-**Listing database instances in a data center:**
+**Listing database instances in a data center**
 ```
 clc db list --data-center IL1
 ```
-**Querying the ID of the database:**
+**Querying the ID of the database**
 ```
 clc db list --data-center VA1 --query ID --output text
 ```
-**Creating a new database with replication:**
+**Creating a new database with replication**
 ```
 clc db create --instance-type MYSQL_REPLICATION --external-id yourdb --machine-config "cpu=1,memory=2,storage=15" --backup-retention-days 5 --users "name=admin,password=XXXX" --data-center IL1
 ```
@@ -652,7 +652,7 @@ Once created, an output similar to below would include the IP address, the certi
 }
 ```
 **Create notifications (options are 'CPU_UTILIZATION' or 'MEMORY_UTILIZATION'
-or 'STORAGE_UTILIZATION' to email or SMS) for the database instance:**
+or 'STORAGE_UTILIZATION' to email or SMS) for the database instance**
 ```
 clc db create-notification  --subscription-id 3185 --destination-type SMS --location xxxxxxxxx --notifications NotificationType=MEMORY_UTILIZATION
 ```
@@ -660,11 +660,11 @@ clc db create-notification  --subscription-id 3185 --destination-type SMS --loca
 ### Intrusion Prevention Service
 For details of Intrusion Prevention Service, please see [here](../Security/getting-started-with-ips.md).
 
-**Install Intrusion Prevention Service on a host:** (`uninstall` to uninstall)
+**Install Intrusion Prevention Service on a host** (`uninstall` to uninstall)
 ```
 clc ips install --server-name CA3ABCDTAKE02
 ```
-**Set the notification (options: Webhook, Slack, syslog and Email) with email:**
+**Set the notification (options: Webhook, Slack, syslog and Email) with email**
 ```
 clc ips set-notifications --server-name CA3ABCDTAKE02 --notification-destinations "type-code"="EMAIL","email-address"="monitor@abcd.com"
 ```
