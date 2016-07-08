@@ -1,6 +1,6 @@
 {{{
   "title": "Installing Cloudsoft AMP Open Edition server",
-  "date": "07/04/2016",
+  "date": "07/08/2016",
   "author": "Cloudsoft Corp.",
   "attachments": [],
   "contentIsHTML": false
