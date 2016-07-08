@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to CLI",
-  "date": "04-07-2016",
+  "date": "07-07-2016",
   "author": "Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
@@ -15,6 +15,8 @@
 * [Billing and Accounting](#billing-and-accounting)
 * [Commands change the environment](#commands-change-the-environment)
 * [Advanced Usage](#advanced-usage)
+  * [Network/Firewall](#network/firewall)
+  * [Snapshot](#snapshot)
 * [Application Services control](#application-services-control)
   * [Relational Database Service](#relational-database-service)
   * [Intrusion Prevention Service](#intrusion-prevention-service)
@@ -30,7 +32,7 @@ CLI for API v2 [(explains here)](//github.com/CenturyLinkCloud/clc-go-cli) and [
 For accounts, users, [API v1](//ca.ctl.io/api-docs/v1/u5o/) provides the access to this information. For the rest of the data, [API v2](//www.ctl.io/api-docs/v2/) can be used to access this information.
 
 The Python based SDK is crossed platform, the CLI can be ran on any Python 2.7 environment.  For detail usage of Python CLI and download, please see its [GitHub repository](//github.com/CenturyLinkCloud/clc-python-sdk/blob/master/README_CLI.md).  The pre-complied windows CLI executable can be downloaded from [here](//github.com/CenturyLinkCloud/clc-python-sdk/raw/master/src/dist/clc-cli.exe).
-The GO based CLI can be run on Mac OSX, Linux and Windows. For download page, please see the [CenturyLink Cloud CLI GitHub release page](//github.com/CenturyLinkCloud/clc-go-cli/releases).  
+The GO based CLI can be run on Mac OSX, Linux and Windows. For release notes and download page, please see the [CenturyLink Cloud CLI GitHub release page](//github.com/CenturyLinkCloud/clc-go-cli/releases).  
 The resources available on both tools will output similar results, at this time, certain functions are only available on API v1, hence the need of both tools to capture all the functionalities of the platform.
 
 Comparison of the two CLI tools:
@@ -38,7 +40,7 @@ Comparison of the two CLI tools:
 | CLI         |   Python            | Go                  |
 | ---------   | ------------------- | -----------------   |
 | API version | Mostly v1 (some v2) |         v2          |
-| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> backup <br> billing <br> custom-fields <br> data-center <br> db <br> firewall-policy <br> group <br> ips <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> os-patch <br> server <br> wait <br>      |
+| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> backup <br> billing <br> crossdc-firewall-policy <br> custom-fields <br> data-center <br> db <br> firewall-policy <br> group <br> ips <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> os-patch <br> server <br> wait <br>      |
 
 
 
@@ -135,24 +137,25 @@ Output of `clc -–help`:
 ```
 To get full usage information run clc without arguments.
 Available resources:
-          login
-          autoscale-policy
-          db
-          backup
-          data-center
-          load-balancer
-          billing
-          ips
-          server
-          group
-          load-balancer-pool
-          custom-fields
-          os-patch
-          network
-          alert-policy
-          anti-affinity-policy
-          firewall-policy
-          wait
+        load-balancer
+        billing
+        autoscale-policy
+        backup
+        crossdc-firewall-policy
+        group
+        data-center
+        firewall-policy
+        wait
+        server
+        load-balancer-pool
+        ips
+        network
+        anti-affinity-policy
+        custom-fields
+        login
+        db
+        os-patch
+        alert-policy
 
 ```
 
@@ -170,7 +173,7 @@ Or setup the configuration file as described in [Installation of CenturyLink Clo
 **Output Format:**
 
 For output (with --format for clc-cli or –-output for clc), there are several options:
-‘JSON, TEXT, TABLE’, an additional option ‘csv’ for clc-cli.
+‘JSON, TEXT, TABLE’, and 'csv'.
 
 JSON:
 ```
@@ -436,6 +439,14 @@ clc group list –account-alias ABCD
 ```
 clc server list –account-alias ABCD
 ```
+**List shared load balancer and load balanced pool**
+```
+clc load-balancer list --data-center ca2
+```
+```
+clc load-balancer-pool list --data-center ca2 --load-balancer-name CLITest
+```
+
 
 ### Commands change the environment
 (**Warning**: use with care)
@@ -458,11 +469,11 @@ clc group create --name "TestCA3" --description "Test Servers" --parent-group-na
 
 **Create a server:**
 ```
-clc-cli servers create --alias ABCD --location CA3 --group TestingCLI --name test1 --template UBUNTU-14-64-TEMPLATE --backup-level Standard --cpu 1 --ram 1 --network vlan_771_10.56.171
+clc-cli servers create --alias ABCD --location CA3 --group TestingCLI --name test1 --template UBUNTU-14-64-TEMPLATE --backup-level Standard --cpu 1 --ram 1 --network vlan_771_10.xxx.yyy
 ```
 ```
 clc server create --name test1 --description "test" --group-name TestingCLI --template-name UBUNTU-14-64-TEMPLATE --root-password xxxxxxxxx
---network-name vlan_771_10.56.171 --cpu 1 --memory-gb 1 --type standard --storage-type standard --additional-disks sizeGB=50,type=raw
+--network-name vlan_771_10.xxx.yyy --cpu 1 --memory-gb 1 --type standard --storage-type standard --additional-disks sizeGB=50,type=raw
 ```
 
 **Create a new VLAN in a datacenter**
@@ -479,7 +490,32 @@ Output:
     "Verbs": null
 }
 ```
+**Create a new Shared Load Balancer in a datacenter (initially disabled)**
+```
+clc load-balancer create --data-center CA2 --name WebStore --description "For online store" --status disabled
+```
+Output:
+```
+{
+    "Description": "For online store",
+    "Id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "IpAddress": "www.xxx.yyy.zzz",
+    "Name": "WebStore",
+    "Pools": [],
+    "Status": "disabled"
+}
+```
+**Create a new Load Balacner Pool**
+```
+clc load-balancer-pool create --data-center ca2 --load-balancer-name CLITest --port 80 --method roundrobin --persistence standard
 
+```
+**Adding servers in the load balanced pool**
+```
+clc load-balancer update-nodes --data-center CA2 --load-balancer-name CLITest --pool-id ffdd1817ee12426a8b048eaf28958245 --nodes "ip-address"="10.xxx.yyy.zzz","Private-Port"=443 "ip-address"="10.xxx.yyy.zzz","Private-Port"=443,"Status"=disabled
+
+
+```
 ***Delete***
 
 **Delete a server:**
@@ -504,18 +540,30 @@ clc-cli groups delete --group TestGroup
 ```
 clc group delete -–group-name TestGroup
 ```
-
+**Delete a Load Balanced pool**
+```
+clc load-balancer-pool delete --data-center CA2 --load-balancer-name CLITest --pool-id 9f6b7849dae349ef96a6cc80742897af
+```
 
 ### Advanced Usage
-
+**Wait**
+The option allows the previous command finishes before running the next command
+```
+clc wait
+```
+### Network/Firewall
 **Adding a secondary network card on a server**
 Please refer to the [Add or Remove Network Interface to Server using Go CLI](../Network/add-or-remove-network-interface-to-server-using-go-cli.md)
 
 **Create firewall rule with port tcp/22 between VLANs:**
 ```
-clc firewall-policy create --data-center CA1 --destination-account abcd --sources "10.56.250.0/24" --destinations "10.56.171.0/24" --ports tcp/22
+clc firewall-policy create --data-center CA1 --destination-account abcd --sources "10.aaa.bbb.0/24" --destinations "10.xxx.yyy.0/24" --ports tcp/22
 ```
-
+**Create a cross DC firewall policy with the same or sub account(initially disabled, can be enabled using update option)**
+```
+clc crossdc-firewall-policy create --data-center CA2 --destination-account-id abcd --destination-location-id va1 --destination-cidr "10.aaa.bbb.0/24" --source-cidr "10.xxx.yyy.0/24" --enabled false
+```
+### Snapshot
 **Create a snapshot for a server (maximum 10 days expiration)**
 ```
 clc server create-snapshot --server-ids CA3ABCDTAKE02 --snapshot-expiration-days 2
@@ -761,7 +809,7 @@ clc backup get-os-types
 ```
 ***List of available/applied policies in the account***
 ```
-clc backup get-account-policies
+clc backup get-account-policies --account-alias ABCD
 ```
 ```
 clc backup get-account-policy --policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
