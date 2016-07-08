@@ -4,7 +4,7 @@
   "author": "Jake Malmad",
   "attachments": [],
   "contentIsHTML": false
-}}
+}}}
 ## Article Overview
 SafeHaven uses RabbitMQ queues to validate and manage checkpoints. In certain complex configurations, or when setup errors have occurred, the queues will not be created correctly. This document walks through the steps to remediate queue creation failures.
 
