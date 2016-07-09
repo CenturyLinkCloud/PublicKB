@@ -5,10 +5,11 @@
   "attachments": [],
   "contentIsHTML": false
 }}}
-## Article Overview
+
+### Article Overview
 SafeHaven uses RabbitMQ queues to validate and manage checkpoints. In certain complex configurations, or when setup errors have occurred, the queues will not be created correctly. This document walks through the steps to remediate queue creation failures.
 
-## Detailed Steps
+### Detailed Steps
 1. Identify a Protection Group with a missing RabbitMQ queue. This can be done via running the cluster diagnostics in the CMS (Help-> "Run Cluster Diagnostics"). The cluster diagnostics may report something like this: `IL1XXXSRN01      WARNING RabbitMQ checkpoint queue for IL1XXXPG01 target not active.` Another indication that there may not be a queue is if you have a Windows Protection Group that consistently does not generate clean checkpoints. If this is the case, check if there is a queue on the SRN.
 
 2. To check if a RabbitMQ queue resides on the SRN, ssh into the Production SRN node. Issue the command `rabbitmqctl list_queues`. One should see an output like this:
