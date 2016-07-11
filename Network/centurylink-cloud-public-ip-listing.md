@@ -6,7 +6,7 @@
 }}}
 
 
-CenturyLink Cloud customers may wish to add a public IP to specific [virtual machine](//www.ctl.io/servers/) or [Bare Metal](//www.ctl.io/bare-metal/) server in their cloud environment to deliver services. Public IPs are delivered using a 1 to 1 NAT model.
+CenturyLink Cloud customers may wish to add a public IP to a specific [virtual machine](//www.ctl.io/servers/) or [Bare Metal](//www.ctl.io/bare-metal/) server in their cloud environment to deliver services. Public IPs are delivered using a 1 to 1 NAT model.
 
 ### General Notes & Best Practices
 
@@ -35,7 +35,7 @@ Below is the current CenturyLink public IP listing. It is updated regularly as p
 |IL1|  64.94.35.32/28<br>64.74.98.0/24<br>66.150.105.0/24<br>66.151.15.0/24<br>69.25.149.0/24<br>72.5.203.0/24<br>74.217.15.0/24
 |NY1|  74.217.51.192/28<br>74.201.135.0/24<br>74.201.140.0/24<br>74.201.226.0/24<br>74.201.232.0/24<br>74.201.237.0/24<br>74.201.240.0/24
 |SG1|  205.139.20.0/28<br>205.139.16.0/22
-|UC1|  64.15.180.16/28<br>64.15.182.0/24<br>64.15.184.0/21
+|UC1|  64.15.180.16/28<br>64.15.182.0/24<br>64.15.183.0/24<br>64.15.184.0/21
 |UT1|  8.22.8.0/28<br>8.22.9.0/24<br>8.23.156.0/24
 |VA1|  206.128.131.32/28<br>206.128.134.0/23<br>206.128.137.0/24<br>206.128.152.0/21<br>206.128.173.0/24<br>206.128.176.0/23
 |WA1|  64.94.142.8/29<br>64.94.114.0/24<br>64.94.138.0/24<br>66.150.160.0/25<br>66.150.174.0/24<br>70.42.161.0/24<br>70.42.168.0/24
