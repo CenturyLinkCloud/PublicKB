@@ -109,7 +109,7 @@ Once done, you can paste the following URL into your browser version section. (o
 
 In the above example we have put the API key before the version being tested for readability. The API key can also be added to the URL as a query string parameter as follows:
 
-https://ctl-us02.api.run/v2/demov2/domainbroker/domain?apikey=************
+https://ctl-us01.api.run/staged/demo/domainbroker/domain?apikey= <your api key key>
 
 Or it can be added to the HTTP Header of the call (normally done via code).
 
