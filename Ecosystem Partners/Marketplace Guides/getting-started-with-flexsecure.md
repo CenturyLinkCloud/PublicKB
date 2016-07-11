@@ -13,11 +13,14 @@ FlexSecure is a context-based Authentication-as-a-Service API platform, providin
 
 By adding multi-layered authentication options that may require user interaction before granting access, organizations have the ability to add significant levels of security to protect their data from hackers and prevent unauthorized access.
 
-FlexSecure Passwordless authentication
+FlexSecure Passwordless authentication:
 
 * No need to remember passwords.
+
 * Quick and easy integration into applications.
+
 * Authenticate users once and add additional contexts such as pin-based security authentication.
+
 * Easy user adoption, since the passwordless authentication link is delivered by SMS.
 
 
@@ -30,13 +33,17 @@ FlexSecure sees access as a dynamic problem that needs a dynamic solution. Our t
 The FlexSecure technology is implemented through a secure API that allows for easy integration into your existing applications, websites, and enterprise systems.
 
 ### Audience
+
 CenturyLink Cloud Users, Application Developers, Enterprises
 
 ### Pre-Requisite
+
 Please confirm that you are a CenturyLink Cloud customer and register for an account, at the following link:
+
 [FlexSecure Registration Form](//docs.google.com/forms/d/1W6tpMVM5PiW50_QJwmlwSQUX-5ch4dPNTiKDzYkJQf4/viewform?c=0&w=1)
 
 ### Post-Requisite
+
 The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Cyber Security solution.
 
 Once the account has been created, the customer will be able to create systems and users, as well as assign existing policies. Users can be anyone or any device that needs to be authenticated. Systems are anything that users want to access -- like applications, cloud infrastructure, etc.
@@ -78,7 +85,7 @@ After gaining access, the account administrator should follow the steps below to
 
     `POST https://api.flexsecure.co/v2/system/authenticate/user`
 
-	For passwordless-based calls:
+	  For passwordless-based calls:
 
   	```
 	  POST https://api.flexsecure.co/v2/system/authenticate/user
@@ -109,7 +116,7 @@ After gaining access, the account administrator should follow the steps below to
 
     `POST https://api.flexsecure.co/v2/system/authenticate/user`
 
-	For pin-based calls:
+  	For pin-based calls:
 
 	  ```
     POST https://api.flexsecure.co/v2/system/authenticate/user
@@ -163,9 +170,11 @@ For pin-based calls:
 FlexSecure offers CenturyLink customers:
 
 **Enterprise Version**
+
 High-volume security appliance
 
 **Cloud Version**
+
 Pay as you go – monthly subscription
 
 Please contact us for pricing: [sales@flexsecure.co](mailto:sales@flexsecure.co)
