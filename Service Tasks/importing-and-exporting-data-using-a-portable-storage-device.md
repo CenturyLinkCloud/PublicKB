@@ -18,8 +18,9 @@ CenturyLink Cloud supports importing and exporting data through portable storage
 ### Prerequisites
 * All data must be encrypted, the following tools are recommended:
   * BitLocker for Windows if using a supported OS version
+  * 7-Zip for Windows with AES-256 and password
   * GnuPrivacyGuard (GPG) for Windows if BitLocker is not supported
-  * dm-crypt or GPG for Linux OS variants
+  * dm-crypt, p7zip or GPG for Linux OS variants
 * Include all power sources and connection cables required for the device
 * USB 2.0 or above
 * Limit 1 TB/drive

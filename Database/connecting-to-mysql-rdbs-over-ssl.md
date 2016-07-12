@@ -17,8 +17,15 @@ This article is to support customers of Relational DB Service, CenturyLink's MyS
 
 1.  Once in the user interface, you will see a list of your database subscriptions.  Locate and click on the subscription for which you need to download a certificate.  This will take you to a new screen with subscription details and a button to download your certificate.  When you click this button, you will download a file called [dbinsancename].pem. This is the certificate that will enable the SSL connection.  ![DownloadCert](../images/rdbs-cert.png)
 
-2.  Once the certificate is downloaded, you can connect specifying the `--ssl-ca` parameter and pass in the certificate.
-`mysql -h 10.0.0.1 -u admin -p --ssl-ca=/{path_to_download_location}/ca-cert.pem -P 49152`
+2.  Once the certificate is downloaded, you can make an SSL connection using mysql's `--ssl-ca` parameter. If you created your subscription in UC1 with Server name "demo-app", Username "admin", and downloaded your cert to `/Users/my-home-dir/Downloads`, then your connection shown on the subscription details will look something like `demo-app.uc1.rdbs.ctl.io:49929` and the command line you would use is: 
+
+  `mysql -h demo-app.uc1.rdbs.ctl.io -u admin -p --ssl-ca=/Users/my-home-dir/Downloads/demo-app.pem -P 49929`
+
+  Note: If you see an error during the connection attempt that looks like 
+  
+  `ERROR 2026 (HY000): SSL connection error: ASN: bad other signature confirmation`
+  
+  the most likely cause is `--ssl-ca` file not found. Ensure that you are using an absolute path to your pem file and that path is correct.
 
 3.  Once logged in, validate the SSL connection by using the show command.
 <p>
