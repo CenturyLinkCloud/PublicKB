@@ -115,7 +115,7 @@ Each incoming ticket is triaged and the priority evaluated according to the crit
 
 <div id="3">[3] Complexity of tasks will have a significant impact on the the resolution time. In most cases, the simple requests can be completed in much less time, normally 1 business day.</div>
 
-<div id="4">[4] Service Task estimation and duties are performed during business hours, Monday through Friday, 9am-5pm Pacific Time.</div>
+<div id="4">[4] Service Task estimation and duties are performed, Monday through Friday, 7am-7pm Pacific Time.</div>
 
 
 ### FAQ
