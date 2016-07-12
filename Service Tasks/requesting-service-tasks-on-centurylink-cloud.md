@@ -8,7 +8,7 @@
 
 ### Description (goal/purpose)
 Our team of network engineers has deep operational expertise to quickly and efficiently perform common platform activities. Just give us the details on your request – and within one business day, we'll reply with an estimate, along with a projected completion date for the task.
-* Service task estimation and duties are performed during business hours, Monday-Friday, 9am-5pm Pacific Time.
+* Service task estimation and duties are performed Monday-Friday, 7am-7pm Pacific Time.
 * The types of tasks we can perform on your behalf are [listed on our website along with any associated fees.](//www.ctl.io/products/support/service-tasks)
 
 ### Audience

@@ -37,6 +37,6 @@ Sometimes the blockchain does not fully sync at first run and you will need to r
 
 1. ssh into your server from a terminal(ex: ssh root@ipaddress)
 2. Find the screen session that is running the command currently. screen -ls
-3. Attach to that session and kill it. screen -r {{ number of the session }} then ctrl-c
+3. Attach to that session and kill it. screen -r <number of the session> then ctrl-c
 4. Now start the sync again by typing the following. screen -dm bash -c ". /opt/expanse/setup.sh"
 5. It should now fully sync up.
