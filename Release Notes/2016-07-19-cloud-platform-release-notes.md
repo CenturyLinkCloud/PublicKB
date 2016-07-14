@@ -7,21 +7,21 @@
 }}}
 
 ### New Features (3)
-* __[Control Portal](control.ctl.io): Updated Main Navigation Experience in the Control Portal__
+* __Control Portal: Updated Main Navigation Experience in the Control Portal__
 
-	We’ve redesigned our Control Portal experience with our users in mind. The new enhancements make navigation faster, more intuitive, and mobile-friendly. Additionally, we also want to give you consistent, high-quality experience when interacting with the flagship CenturyLink Cloud Control Portal, and our cloud-related services. For additional details on this update, please read [this KB from our creative director](https://www.ctl.io/knowledge-base/general/control-portal-navigation-update/).
+	We’ve redesigned our [Control Portal](control.ctl.io) experience with our users in mind. The new enhancements make navigation faster, more intuitive, and mobile-friendly. Additionally, we also want to give you consistent, high-quality experience when interacting with the flagship CenturyLink Cloud Control Portal, and our cloud-related services. For additional details on this update, please read [this KB from our creative director](https://www.ctl.io/knowledge-base/general/control-portal-navigation-update/).
 
 	![Control UI Left Nav](../images/2016-07-19_ReleaseNotes1.png)
 
-* __[Relational DB](https://www.ctl.io/relational-database/): Point in Time Restore__
+* __Relational DB: Point in Time Restore__
 
-	Customers are now able to restore a Relational DB instance to any point in time up to 10 minutes ago, as far back as one week or the customers' backup retention policy, whichever is shorter.<p>
+	Customers are now able to restore a [Relational DB](https://www.ctl.io/relational-database/) instance to any point in time up to 10 minutes ago, as far back as one week or the customers' backup retention policy, whichever is shorter.<p>
 
   ![Relational DB Logo](../images/2016-02-02-relational_db_logo.png)
 
-* __[Runner](runner.ctl.io) __
+* __Runner__
 
-  Our automated infrastructure management service has added the following new features:
+  Our automated infrastructure management service, [Runner](runner.ctl.io), has added the following new features:
 	- __BitBucket Support__ - Runner now supports BitBucket, in addition to GitHub and GitLab, as a repository for Playbooks and Products. Users can now reference their Playbooks or Products from any publicly accessible BitBucket repository.
 	- __Advanced Ansible Support__ - Advanced Ansible features such as wait_for, tags, and flags are now available.
 	- __Data Center Expansion__ - Runner is now available in the AU1 Datacenter in Sydney, Australia.<p>
@@ -43,7 +43,7 @@
 
 ### Open Source Contributions (1)
 
-* __Cyclops: Version 1.5__
+* __Cyclops: Version 1.5 Release__
 
   [Cyclops](https://github.com/CenturyLinkCloud/Cyclops) is an open source collection of UX/UI patterns that make up the CenturyLink Cloud user interface. It's our way to showing how focused we are on creating a delightful and responsive user experience.
 
@@ -55,16 +55,16 @@
   - Responsive text [alignment](http://assets.ctl.io/cyclops/1.5.0/typography.html#alignment), truncate, justify, no wrap text
   - [Main-Nav](http://assets.ctl.io/cyclops/1.5.0/navigation.html#mainNav)
   - Updated documentation Pages
-  - Navbar widget to support dynamic insertion of navbars
+  - Navbar widget to support dynamic insertion of navbars<p>
 
   __Bug Fixes__
 
-  - Slider minDefault Error https://github.com/CenturyLinkCloud/Cyclops/issues/38
-  - Need colors for line/area graphs https://github.com/CenturyLinkCloud/Cyclops/issues/39
-  - Inline confirm on a btn-sm button will generate a Yes and a No button of different sizes https://github.com/CenturyLinkCloud/Cyclops/issues/48
-  - Main-Nav Box shadow https://github.com/CenturyLinkCloud/Cyclops/issues/50
-  - Main-nav loading state https://github.com/CenturyLinkCloud/Cyclops/issues/51
-  - Chart color series sequence documentation https://github.com/CenturyLinkCloud/Cyclops/issues/53
+  - [Slider minDefault Error](https://github.com/CenturyLinkCloud/Cyclops/issues/38)
+  - [Need colors for line/area graphs](https://github.com/CenturyLinkCloud/Cyclops/issues/39)
+  - [Inline confirm on a btn-sm button will generate a Yes and a No button of different sizes]( https://github.com/CenturyLinkCloud/Cyclops/issues/48)
+  - [Main-Nav Box shadow](https://github.com/CenturyLinkCloud/Cyclops/issues/50)
+  - [Main-nav loading state](https://github.com/CenturyLinkCloud/Cyclops/issues/51)
+  - [Chart color series sequence documentation](https://github.com/CenturyLinkCloud/Cyclops/issues/53)<p>
 
 	   Browse the pattern library here: http://assets.ctl.io/cyclops
 
