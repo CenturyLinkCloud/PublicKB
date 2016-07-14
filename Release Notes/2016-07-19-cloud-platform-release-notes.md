@@ -9,7 +9,7 @@
 ### New Features (3)
 * __Control Portal: Updated Main Navigation Experience in the Control Portal__
 
-	We’ve redesigned our [Control Portal](control.ctl.io) experience with our users in mind. The new enhancements make navigation faster, more intuitive, and mobile-friendly. Additionally, we also want to give you consistent, high-quality experience when interacting with the flagship CenturyLink Cloud Control Portal, and our cloud-related services. For additional details on this update, please read [this KB from our creative director](https://www.ctl.io/knowledge-base/general/control-portal-navigation-update/).
+	We’ve redesigned our [Control Portal](https://control.ctl.io) experience with our users in mind. The new enhancements make navigation faster, more intuitive, and mobile-friendly. Additionally, we also want to give you consistent, high-quality experience when interacting with the flagship CenturyLink Cloud Control Portal, and our cloud-related services. For additional details on this update, please read [this KB from our creative director](https://www.ctl.io/knowledge-base/general/control-portal-navigation-update/).
 
 	![Control UI Left Nav](../images/2016-07-19_ReleaseNotes1.png)
 
@@ -21,7 +21,7 @@
 
 * __Runner__
 
-  Our automated infrastructure management service, [Runner](runner.ctl.io), has added the following new features:
+  Our [automated infrastructure management service](https://www.ctl.io/runner/) has added the following new features:
 	- __BitBucket Support__ - Runner now supports BitBucket, in addition to GitHub and GitLab, as a repository for Playbooks and Products. Users can now reference their Playbooks or Products from any publicly accessible BitBucket repository.
 	- __Advanced Ansible Support__ - Advanced Ansible features such as wait_for, tags, and flags are now available.
 	- __Data Center Expansion__ - Runner is now available in the AU1 Datacenter in Sydney, Australia.<p>
@@ -66,11 +66,11 @@
   - [Main-nav loading state](https://github.com/CenturyLinkCloud/Cyclops/issues/51)
   - [Chart color series sequence documentation](https://github.com/CenturyLinkCloud/Cyclops/issues/53)<p>
 
-	   Browse the pattern library here: http://assets.ctl.io/cyclops
+  Browse the pattern library here: http://assets.ctl.io/cyclops
 
-	   Source: https://github.com/CenturyLinkCloud/Cyclops
+	Source: https://github.com/CenturyLinkCloud/Cyclops
 
-	   Compare between last release: https://github.com/CenturyLinkCloud/Cyclops/compare/v1.4.0...v1.5.0
+	Compare between last release: https://github.com/CenturyLinkCloud/Cyclops/compare/v1.4.0...v1.5.0
 
   ![Cyclops Logo](../images/2016-02-02-cyclops_logo.png)
 
