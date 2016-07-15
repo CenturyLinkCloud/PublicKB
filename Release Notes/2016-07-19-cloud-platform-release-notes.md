@@ -34,7 +34,7 @@
 	The CenturyLink Cloud CLI has been enhanced to include additional API calls for several of our advanced services. Users can use the CLI to operate their compute, storage, and networking services as well as these new features:
   - [RelationalDB](https://www.ctl.io/relational-database/)
   - [Simple Backup](https://www.ctl.io/simple-backup-service/)
-  - [IPS](https://www.ctl.io/intrusion-prevention-service/)
+  - [Intrusion Prevention Service (IPS)](https://www.ctl.io/intrusion-prevention-service/)
   - [Patching-as-a-Service](https://www.ctl.io/knowledge-base/servers/patching-as-a-service/)
   - [Site-to-Site VPN](https://www.ctl.io/vpn/)
   - [Cross Data Center Firewalls](https://www.ctl.io/cloud-firewall/)<p>
