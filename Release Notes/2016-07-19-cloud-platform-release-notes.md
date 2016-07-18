@@ -6,18 +6,12 @@
 "contentIsHTML": false
 }}}
 
-### New Features (3)
+### New Features (2)
 * __Control Portal: Updated Main Navigation Experience in the Control Portal__
 
-	We’ve redesigned our [Control Portal](https://control.ctl.io) experience with our users in mind. The new enhancements make navigation faster, more intuitive, and mobile-friendly. Additionally, we also want to give you consistent, high-quality experience when interacting with the flagship CenturyLink Cloud Control Portal, and our cloud-related services. For additional details on this update, please read [this KB from our creative director](https://www.ctl.io/knowledge-base/general/control-portal-navigation-update/).
+	We’ve redesigned our [Control Portal](https://control.ctl.io) experience with our users in mind. The new enhancements make navigation faster, more intuitive, and mobile-friendly. Additionally, we also want to give you consistent, high-quality experience when interacting with the flagship CenturyLink Cloud Control Portal, and our cloud-related services. For additional details on this update, please read [this KB from our creative director](https://www.ctl.io/knowledge-base/general/control-portal-navigation-update/).<p>
 
 	![Control UI Left Nav](../images/2016-07-19_ReleaseNotes1.png)
-
-* __Relational DB: Point in Time Restore__
-
-	Customers are now able to restore a [Relational DB](https://www.ctl.io/relational-database/) instance to any point in time up to 10 minutes ago, as far back as one week or the customers' backup retention policy, whichever is shorter.<p>
-
-  ![Relational DB Logo](../images/2016-02-02-relational_db_logo.png)
 
 * __Runner__
 
