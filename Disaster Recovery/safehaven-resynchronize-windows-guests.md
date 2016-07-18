@@ -21,4 +21,4 @@ Sometimes, due to impromper error states or corruption, it can be necessary to r
 
 5. Repeat for disk 1, 2 or any other remaining Production disk (note that one does not select the replica iSCSI disks).
 
-6. Type `sync report` for a detailed view of the resynchronization progress (or `DgSyncEx.exe sync report` if prompt exited). When all disks have hit 100%, confirm they are in a clean state by issueing the `list` command from the prompt or `DgSyncEx.exe list` in a new tools prompt.
+6. Type `sync report` for a detailed view of the resynchronization progress (or `DgSyncEx.exe sync report` if prompt exited). When all disks have hit 100%, confirm they are in a clean state by issuing the `list` command from the prompt or `DgSyncEx.exe list` in a new tools prompt.
