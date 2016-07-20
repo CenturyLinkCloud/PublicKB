@@ -45,12 +45,13 @@ CenturyLink Cloud Users who have already [deployed Pivotal Cloud Foundry](gettin
      * LOGGREGATOR_SHARED_SECRET - Note the secret is the first of two parameters listed.
 
 2. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library. Search for "Pivotal Cloud Foundry" in the keyword search on the right side of the page.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * Search for "Pivotal Cloud Foundry" in the keyword search on the right side of the page.
    <img src="../../images/pivotal_pcf/diego_blueprint_tiles.png" style="border:0;">
 
    * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “Pivotal Greenplum” in the keyword search on the right side of the page.
 
-3. Click the Deploy Blueprint button.
+3. Click the `deploy blueprint` button.
 
 4. Set Required parameters.
 
