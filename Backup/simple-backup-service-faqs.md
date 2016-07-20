@@ -24,7 +24,7 @@
 
 **Q: What are the network requirements for SBS, if any?**
 
-A: SSH for root is required for the Blueprint to initially install the Backup Agent on the target server. Simple Backup Service requires outbound internet traffic over port 443. CLC VMs allow outbound traffic by default using NAT. Alternatively, firewall rules may be configured utilizing the endpoints listed below.
+A: SSH for root is required to allow the Blueprint to initially install the Backup Agent on the target server; it may be disabled after the initial instillation as it is not needed for the agent to function. The Simple Backup Service also requires outbound internet traffic over port 443. CLC VMs allow outbound traffic by default using NAT. Alternatively, firewall rules may be configured utilizing the endpoints listed below.
 
 ```
 up-va1.backup.ctl.io
@@ -72,9 +72,9 @@ A: Please review the [SBS Agent Security Configurations](./sbs-agent-security.md
 
 **Q: Where can I find the backup agent's logs on my machine?**
 
-A:
-* Linux: /var/lib/simple-backup-service
-* Windows: C:\Windows\System32\config\systemprofile\appdata\local\simplebackupservice
+A: logs can be viewed at the following locations:
+  * Linux: /var/lib/simple-backup-service
+  * Windows: C:\Windows\System32\config\systemprofile\appdata\local\simplebackupservice
 
 **Q: What can I find in the backup agent's logs?**
 

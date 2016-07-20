@@ -55,6 +55,13 @@ There could be a few causes:
     * Hong Kong: +852 2190 8798
     * Singapore: +65 6768 8098
 
+**What are the network requirements for making a managed vm?**
+
+In order for the Make Managed blueprint to succeed, the server in question has to be able to connect to an api endpoint, as well as the internal network specific to the Managed Server service in a given datacenter. If the blueprint fails due to an error indicating a network issue, customers should check the firewall settings on the server they want to make managed, making them more permissive to allow the blueprint to complete successfully. You can work with the Managed Services team to have firewall settings configured as desired after a successful conversion.
+
+Additionally, if a customer has a Cloud Network Service (CNS) set up, and the server they would like to make managed is in a vlan that is part of this configuration, we will need to assist with updating the configuration to allow traffic from the management network over this connection. Submit a ticket to help@ctl.io with details of both the blueprint error and the CNS connection and our engineers will be happy to assist.
+
+
 **Is there anything that I cannot do in the Control Portal with a managed VM?**
 
 A managed server cannot be cloned, archived, or converted to a template. You cannot restore a managed server as an unmanaged server. Also, the "time to live" option is not available when creating a new managed server. At this time, you cannot create a managed server within a Cloud Blueprint.
