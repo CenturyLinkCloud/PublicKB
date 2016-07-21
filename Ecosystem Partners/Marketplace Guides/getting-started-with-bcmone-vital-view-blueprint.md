@@ -3,7 +3,7 @@
   "date": "01-05-2015",
   "author": "Bob Stolzberg",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 ![Vital View Logo](../../images/vitalview-logo.png)
