@@ -36,32 +36,28 @@ After reading this article, the user should feel comfortable getting started usi
 Follow these step by step instructions to get started with a Dynatrace deployment. We'll use the 'Install Dynatrace All In One' in the example below.
 
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Dynatrace” in the keyword search on the right side of the page.
 
 2. Choose and Deploy the Blueprint.
    * Click the “Install Dynatrace All In One” Blueprint.
-   * Click on the "Deploy Blueprint" button.
-   ![2.jpg](https://t3n.zendesk.com/attachments/token/JkyvaCSCSeVyVnpDqRMRlrl4q/?name=2.jpg)
+   * Click the `deploy blueprint` button.
 
 3. Configure the Blueprint.
    * Complete the information/fields required by the Blueprint wizard.
-   ![3.jpg](https://t3n.zendesk.com/attachments/token/XBgBCt3A0l4XNDm7A0JXGE2cG/?name=3.jpg)
 
 4. Review and Confirm the Blueprint.
    * Click `next: step 2`.
    * Verify your configuration details.
-   ![4.jpg](https://t3n.zendesk.com/attachments/token/0H4w5DKq1hv1u8FojXWoFD6Dg/?name=4.jpg)
 
 5. Deploy the Blueprint.
    * Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
-   * his will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
+   * This will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * This is what a successful deployment looks like in the queue:
-   ![queue](https://t3n.zendesk.com/attachments/token/20v6ABIQPsXP4Eb92429rpStU/?name=5.jpg)
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access and Configure Dynatrace on CenturyLink

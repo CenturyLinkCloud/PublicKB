@@ -43,7 +43,7 @@ To access your application from a computer outside the CenturyLink Cloud network
 
 #### Steps to Deploy Blueprint
 1. Locate the Clusterpoint All Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Clusterpoint” in the keyword search on the right side of the page.
    * Locate the 'Clusterpoint All' Blueprint.
 
@@ -61,19 +61,19 @@ To access your application from a computer outside the CenturyLink Cloud network
    * Verify your configuration details.
 
 5. Deploy the Blueprint.
-   * Once verified, click on the `deploy blueprint` button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
+   * Once verified, click the `deploy blueprint` button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Deploying the Clusterpoint Node Blueprint (for adding new node to your database cloud)
 
 #### Steps to Deploy Blueprint
 1. Locate the Clusterpoint Node Blueprint.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Clusterpoint” in the keyword search on the right side of the page.
    * Locate the 'Clusterpoint Node' Blueprint.
 
@@ -100,7 +100,7 @@ To access your application from a computer outside the CenturyLink Cloud network
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Deploy Clusterpoint All or Clusterpoint Node to an existing server (alternate option)
@@ -122,7 +122,7 @@ Clusterpoint is available as a Software Package for deployment on an existing se
 
 4. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access your Clusterpoint Databse cloud

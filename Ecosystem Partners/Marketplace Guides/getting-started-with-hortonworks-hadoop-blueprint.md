@@ -39,50 +39,78 @@ After reading this article, the user should feel comfortable getting Hortonworks
 
 #### Steps to Deploy Blueprint
 1. Locate the Hortonworks Install Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Hortonworks” in the keyword search on the right side of the page.
    * Locate the 'Install Hortonworks on RHEL6' Blueprint.
+
 2. Choose and Deploy the Blueprint.
    * Click the “Install Hortonworks on RHEL6” Blueprint.
-3.	Configure the Blueprint using the standard information. There is nothing special required.
+
+3.	Configure the Blueprint.
+    * Use the standard information. There is nothing special required.
+
 4.	Review and Confirm the Blueprint.
    * Click `next: step 2`.
    * Verify your configuration details.
+
 5. Deploy the Blueprint.
-   * Once verified, click on the `deploy blueprint` button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
+   * Once verified, click on the `deploy blueprint` button.
+   * You will see the deployment details along with an email stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
+
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the Hortonworks Server until you have received this email notification.
 
 ### Accessing your Hortonworks Hadoop Server
 After your Blueprint deploys successfully, please follow these instructions to access your server.
+
 #### Steps
-1.	Check your email to obtain Server Name and IP Address Login information.
-2.	Click on the link to the server and then add a firewall port as referenced in the post requisite section.
-3.	Open a Web browser and navigate to your servers IP using port 8080. This should look like the following URL `http://<your-ip-here>:8080`. Login as the user admin with password admin to customize your Hadoop server.
+1. Check your email to obtain Server Name and IP Address Login information.
+
+2. Click on the link to the server and then add a firewall port as referenced in the post requisite section.
+
+3. Open a Web browser and navigate to your servers IP using port `8080`.
+   * This should look like the following URL `http://<your-ip-here>:8080`.
+   * Login as the user admin with password admin to customize your Hadoop server.
    * Once logged in click on “Launch Install Wizard”.
    * Type in your preferred cluster name in the “Cluster Name” Field. Click next.
    * Select “HDP 2.1” and click next.
    * Type in “localhost” in the field “Target Hosts”.
-4.	For this next section we will need the RSA private key from the server. SSH to the server and copy the text from the command `cat /root/.ssh/id_dsa` and paste it into the `Host Registration Information` field.
-5.	Click OK to confirm localhost as the FQDN.
-6.	Click next after host registration.
-7.	You may receive a firewall notice just click ok to accept.
-8.	Click next to confirm desired services.
-9.	Click next to confirm master assignments.
+
+4. For this next section we will need the RSA private key from the server. SSH to the server and copy the text from the command `cat /root/.ssh/id_dsa` and paste it into the `Host Registration Information` field.
+
+5. Click OK to confirm localhost as the FQDN.
+
+6. Click next after host registration.
+
+7. You may receive a firewall notice just click ok to accept.
+
+8. Click next to confirm desired services.
+
+9. Click next to confirm master assignments.
+
 10.	Click next to confirm slave assignments.
+
 11.	Click on the Nagios tab, enter in your preferred Nagios password and preferred Email address.
+
 12.	Click on the Hive tab, enter in your preferred Hive password.
+
 13.	Click on the Oozie tab and enter in your preferred oozie password.
+
 14.	Click on the Falcon tab.
    * for `.falcon.graph.blueprints.graph` enter `com.thinkaurelius.titan.core.TitanFactory`.
    * for `.falcon.graph.storage.backend` field enter `berkeleyje`.
+
 15.	Scroll to the bottom of the page and click Next.
+
 16.	Click Deploy.
+
 17.	After configuration is complete hit Next.
+
 18.	On Summary page click Complete.
+
 19.	You will then be redirected to the Hortworks Dashboard: http://your-ip:8080/#/main/dashboard/metrics
 
 ### Pricing
