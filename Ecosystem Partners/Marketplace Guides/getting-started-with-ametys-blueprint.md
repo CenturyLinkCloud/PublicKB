@@ -38,11 +38,12 @@ Ametys is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
 1. Locate the Ametys Blueprint.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Ametys” in the keyword search on the right side of the page.
    * Locate the 'Install Ametys on Linux' Blueprint.
 
-2. **Choose and Deploy the Blueprint. Click the “Install Ametys on Linux” Blueprint.**
+2. Choose and Deploy the Blueprint.
+   * Click the “Install Ametys on Linux” Blueprint.
 
 3. Configure the Blueprint.
    Complete the information below:
@@ -52,9 +53,9 @@ Ametys is available as a Blueprint for deployment on a new server.
    * Email Address, e.g., user@example.com
    * Password
 
-4. **Review and Confirm the Blueprint**
-  1. Click `next: step 2`.
-  2. Verify your configuration details.
+4. Review and Confirm the Blueprint
+   * Click `next: step 2`.
+   * Verify your configuration details.
 
 5. Deploy the Blueprint.
    * Once verified, click the `deploy blueprint` button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
@@ -62,7 +63,7 @@ Ametys is available as a Blueprint for deployment on a new server.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Deploy Ametys to an existing server (alternate option)
@@ -91,7 +92,7 @@ Ametys is available as a Script Package for deployment on an existing server bas
 
 5. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access your Ametys server
