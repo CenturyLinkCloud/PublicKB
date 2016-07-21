@@ -33,7 +33,9 @@ Below is a solution diagram illustrating the Data Security Manager (DSM) deploym
 For more information including whitepapers and data sheets, please view the DSM product information on [Vormetric's website](http://www.vormetric.com/products/data-security-manager).
 
 ### Solution Overview
-The Vormetric Data Security Manager (DSM) is the brain of the Vormetric Data Security Platform. The Vormetric Data Security Manager is a data security appliance which enables centralizes policy control and key management for data-at-rest-encryption, privileged user access control and security intelligence across an organization. The Data Security Manager changes the data security management game by enabling an IT organization to have a consistent and repeatable method for encrypting, enforcing access policies and gaining security intelligence for all structured and unstructured data. Once the Data Security Manager is in place, new security mandates, compliance requirements and risks are quickly met through the provisioning of Vormetric Transparent Encryption, Vormetric Application Encryption, or managing keys and certificates for 3rd party devices. The result of centralizing control of such a breadth of data-at-rest security capabilities is low total cost of ownership, efficient deployment of new secure services, and an increase in control and visibility of data across your organization.
+The Vormetric Data Security Manager (DSM) is the brain of the Vormetric Data Security Platform. The Vormetric Data Security Manager is a data security appliance which enables centralizes policy control and key management for data-at-rest-encryption, privileged user access control and security intelligence across an organization. The Data Security Manager changes the data security management game by enabling an IT organization to have a consistent and repeatable method for encrypting, enforcing access policies and gaining security intelligence for all structured and unstructured data.
+
+Once the Data Security Manager is in place, new security mandates, compliance requirements and risks are quickly met through the provisioning of Vormetric Transparent Encryption, Vormetric Application Encryption, or managing keys and certificates for 3rd party devices. The result of centralizing control of such a breadth of data-at-rest security capabilities is low total cost of ownership, efficient deployment of new secure services, and an increase in control and visibility of data across your organization.
 
 ### Offer
 Vormetric has provided a Virtual Appliance - called a Partner Template - that can be deployed to your CenturyLink Cloud account via a Service Task. Although Service Tasks are ordinarily billed to the end user account, CenturyLink will provide a refund for the Service Task costs associated with deploying the Vormetric Partner Template. Please follow the process below to request credit. In order to purchase a license or entitlement, please contact Vormetric Sales using the contact information above.
@@ -59,11 +61,10 @@ If you are interested in seeing this type of Partner Template deployment as an a
 
 * If required, [allow incoming traffic for the admin port](../../Network/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Servers Public IP in the Control Portal. **IMPORTANT**: Please make sure your firewall rules are properly configured to only allow specific source traffic. If you do not configure source traffic rules you risk exposing your DSM to the entire internet. Note: When accessing your DSM for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
 
-3. Allow incoming traffic for the following ports.
+* Allow incoming traffic for the following ports.
    * TCP Ports: `22`, `443`, `5696`, `7024`, `8080`, `8443`, `8444`, `8445`, `50000`
    * UDP Ports: `123`, `161`, `7025`
    * ICMP: All
-   ![Open Firewall Port](https://t3n.zendesk.com/attachments/token/1Ufw0JjIWW8XfASYLh4x3Irl9/?name=port.jpg)
 
 ### Detailed Steps to Deploy Vormetric DSM
 Vormetric DSM deploys in a virtual appliance model, as a CenturyLink Cloud *Partner Template*. Follow these step by step instructions to deploy a Vormetric DSM in to your CenturyLink Cloud account:
@@ -96,14 +97,14 @@ Your_Name_Here
 ### Accessing and Configuring your Vormetric partner template
 Follow these steps to access and configure your Vormetric partner template once you receive an email from Service Tasks confirming the partner template has been deployed to your account.
 
-1. Connect to your DSM's IP address provided by support via SSH and login as cliadmin / Vormetric123$
+1. Connect to your DSM's IP address provided by support via SSH and login as cliadmin / Vormetric123$.
 2. Change your password and configure your DSM based on your requirements. Please view the support information on [http://www.Vormetric.com](http://www.Vormetric.com) for more information.
 
 ### Pricing
 There are no Vormetric license costs included. The cost to deploy the Vormetric Partner Template will be billed as a Service Task, but CenturyLink will provide a credit for those costs. In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees is [available here](http://www.ctl.io/service-tasks).
 
 #### Process to request credit for Service Task fee
-Follow this process to request credit on your account to re-imburse any expense to deploy the Partner Template
+Follow this process to request credit on your account to re-imburse any expense to deploy the Partner Template.
 
 * Please copy and paste the email below and send it to [ecosystem@ctl.io](mailto:ecosystem@ctl.io).
 
