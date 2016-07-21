@@ -37,7 +37,7 @@ None
 CA UIM is available as a Blueprint for deployment on a new server.
 
 #### Steps to deploy to New Server Blueprint
-1. Access the Blueprints library.
+1. Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
 
 2. Search for *CA UIM on Windows*.
 
@@ -63,7 +63,7 @@ CA UIM is available as a Blueprint for deployment on a new server.
 6. Deploy the Blueprint.
 
 7. Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
 
 8. The Blueprint will run for approximately 20 minutes, and may complete with a 'failed' status.
    * This is due to a timeout caused by the installer running long. If it occurs in the step labeled 'Install CA UIM Single Server on Windows stage3', the message may be ignored.
@@ -79,7 +79,6 @@ CA UIM is available as a Blueprint for deployment on a new server.
 For more information about UIM, click on the following links:
 * [Getting Started - CA Unified Infrastructure Management](https://wiki.ca.com/display/UIM82/Getting+Started)
 * [Demo Video - CA Unified Infrastructure Management Demo](http://www.ca.com/us/opscenter/ca-unified-infrastructure-management.aspx)
-
 
 #### Issues related to deploying UIM Blueprints on CenturyLink Cloud
 * Contact [our sales team](mailto:sales@ca.com).

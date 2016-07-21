@@ -12,12 +12,10 @@
 Hewlett Packard Enterprise – Load testing software that gives you an accurate picture of end-to-end system performance to identify and resolve issues
 before applications go-live. [Click here for more information](http://www8.hp.com/us/en/software-solutions/loadrunner-load-testing/).
 
-
 ##### Customer Support
 | Sales Contact | Support Contact	|
 |:-	|	:-	|
 | [HPE Sales](https://saas.hpe.com/buy/loadrunner?utm_source=hp.com&utm_medium=referral&utm_term=lr&utm_content=buy_flow&utm_campaign=hp.com_redirects) | [HPE Customer Support](http://community.hpe.com/t5/LoadRunner-Performance-Center/tkb-p/lr_pc_tkb) |
-
 
 ### Description
 HPE has integrated their technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for the HPE LoadRunner, the market leader for load and performance testing solution.
@@ -28,9 +26,9 @@ Technology from HPE helps CenturyLink Cloud customers address the business ch
 
 
 ### Solution Overview
-HPE LoadRunner software is the industry-standard software for performance engineering. With an intuitive record and playback mechanism, including the patented TruClient technology, HP LoadRunner captures and produces real business processes that users would perform in production,
-at massive scale. During a test, LoadRunner captures end-user response times for business processes and transactions to determine whether the application can meet the required service-level agreements, and correlates this information against application infrastructure metrics to provide a complete picture of the potential bottlenecks in your system. LoadRunner provides an automated solution to validate that your application is built for better performance and reliability.
+HPE LoadRunner software is the industry-standard software for performance engineering. With an intuitive record and playback mechanism, including the patented TruClient technology, HP LoadRunner captures and produces real business processes that users would perform in production, at massive scale.
 
+During a test, LoadRunner captures end-user response times for business processes and transactions to determine whether the application can meet the required service-level agreements, and correlates this information against application infrastructure metrics to provide a complete picture of the potential bottlenecks in your system. LoadRunner provides an automated solution to validate that your application is built for better performance and reliability.
 
 LoadRunner helps you:
 * Test a broad range of applications, including the latest Web and Mobile technologies, ERP/CRM applications, and many legacy systems.
@@ -40,27 +38,21 @@ LoadRunner helps you:
 ### Offer
 HPE has provided a Blueprint that enables customers to deploy HPE LoadRunner in a Bring Your Own license model. For more information, please visit the LoadRunner support website.
 
-
 ### Audience
 CenturyLink Cloud Users, Developers, Application Owners, Operations
-
 
 ### Impact
 After reading this article, the user should feel comfortable getting started using the partner technology on CenturyLink Cloud.
 
 After executing the steps in this Getting Started document, the users will have a functioning HPE LoadRunner, the market leader for load and performance testing solution upon which they can start testing real business processes that users would perform in production, at massive scale using the LoadRunner software as their single load testing tool.
 
-
 ### How-To Video
 <iframe width="854" height="480" src="https://www.youtube.com/embed/XEHdSSgPY2E" frameborder="0" allowfullscreen></iframe>
 
-
 ### Detailed Steps to deploy HPE LoadRunner Blueprint
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for "LoadRunner" in the keyword search on the right side of the page.
-
-   <img src="../../images/hpe/blueprint_tile.png" style="border:0;max-width:250px;">
 
 2. Click the `deploy blueprint` button.
 
@@ -73,7 +65,8 @@ After executing the steps in this Getting Started document, the users will hav
 4. Review and Confirm the Blueprint.
 
 5. Deploy the Blueprint
-   * Once verified, click on the `deploy blueprint` button. You will see the deployment details stating the Blueprint is queued for execution.
+   * Once verified, click on the `deploy blueprint` button.
+   * You will see the deployment details stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within five minutes.
 
 6. Enable public access (optional).

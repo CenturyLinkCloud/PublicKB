@@ -16,20 +16,18 @@ After reading this article, the reader should feel comfortable deploying the Git
 
 The GitLab open source edition is a developer tool that allows users to collaborate on code, create new projects, manage repositories, and perform code reviews. When using GitLab, users can keep their code on their own servers, either in the cloud or on-premise. For additional peace of mind, the free community edition even features enterprise-grade features such as a mature user permissions scheme and support for high availability. This GitLab stack is bundled with GitLab CI, a continuous integration server. Just point your projects at the CI server and automate all your tests.
 
-
 ### Audience
-
 CenturyLink Cloud Users
 
-
 ### Deploying GitLab on a New Server
-GitLab is available as a Blueprint for deployment on a **new server**.
+GitLab is available as a Blueprint for deployment on a new server.
 
 #### Steps
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library. Search for **GitLab on Linux** in the keyword search on the right side of the page.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * Search for 'GitLab on Linux' in the keyword search on the right side of the page.
 
-2. Click the Deploy Blueprint button.
+2. Click the `deploy blueprint` button.
 
 3. Set Required parameters.
    Set the following parameters in addition to those associated with your server itself (password, network, group, etc.):
@@ -39,16 +37,17 @@ GitLab is available as a Blueprint for deployment on a **new server**.
    * **Service Password** -  Provide service password 6 chars or more
    * **User's name** -  Users Name
 
-5. Review and Confirm the Blueprint.
+4. Review and Confirm the Blueprint.
 
-6. Deploy the Blueprint.
+5. Deploy the Blueprint.
    * Once verified, click the `deploy blueprint` button. You will see the deployment details stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within five minutes.
 
-7. Deployment Complete.
+6. Deployment Complete.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint has finished executing on your server you may access GitLab by navigating to your server via http.
 
-8. Enable public access (optional).
+7. Enable public access (optional).
    * Servers are built using private IPs only with access with client or IPSEC VPN. For inbound access from the Internet add a public IP to your master server.
 
   <a href="../../Network/how-to-add-public-ip-to-virtual-machine.md">
@@ -82,6 +81,7 @@ GitLab is available as a Blueprint Package for deployment on an existing server 
    * This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within five minutes.
 
 5. Deployment Complete.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint has finished executing on your server you may access GitLab by navigating to your server via HTTP.
 
 6. Enable public access (optional).
@@ -95,10 +95,8 @@ GitLab is available as a Blueprint Package for deployment on an existing server 
 ### Pricing
 The costs listed above in the above steps are for the infrastructure only.
 
-
 ### About Bitnami
 CenturyLink Cloud works with [Bitnami](http://www.bitnami.com) to provide open source software integrations to its customers. Bitnami is a library of popular server applications and development environments that can be installed with one click, either in your laptop, in a virtual machine or hosted in the cloud. Bitnami takes care of compiling and configuring the applications and all of their dependencies (third-party libraries, language runtimes, databases) so they work out-of-the-box. The resulting packaged software (a 'stack') is then made available as native installers, virtual machines and cloud images. These Bitnami application packages provide a consistent, secure and optimized end-user experience when deploying any app, on any platform.
-
 
 ### Frequently Asked Questions
 

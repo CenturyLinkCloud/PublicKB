@@ -18,7 +18,6 @@ Through the CenturyLink Blueprint integration, LimeSurvey provides a click-throu
 
 For more information, please visit http://www.limesurvey.org.
 
-
 ### Audience
 CenturyLink Cloud Users
 
@@ -42,7 +41,7 @@ LimeSurvey is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
 1. Locate the Bitnami LimeSurvey Stack Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “LimeSurvey” in the keyword search on the right side of the page.
    * Locate the 'Install Bitnami LimeSurvey on Linux' Blueprint.
 
@@ -79,15 +78,13 @@ Complete the information below:
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down menu.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Deploy LimeSurvey to an existing server (alternate option)
-
 Bitnami LimeSurvey Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements. The Stack also supports more advanced configurations such as customized Blueprint workflows to repeatably deploy multiple stacks on servers.
 
 #### Steps
-
 1. Deploy or Identify an Existing Server.
 Identify the server targeted for LimeSurvey installation. The Operating system must be supported by the Script Package. See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
@@ -119,7 +116,7 @@ Once verified, click on the `execute package` button. This kicks off the deploym
 
 5. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access your LimeSurvey server
