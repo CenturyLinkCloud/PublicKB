@@ -3,7 +3,7 @@
   "date": "12-16-2014",
   "author": "Jared Ruckle",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 *Updated 17 Dec 2014 by David Shacochis*
