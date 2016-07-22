@@ -1,6 +1,6 @@
 {{{
   "title": "Installing Cloudsoft AMP Open Edition server",
-  "date": "07/04/2016",
+  "date": "07/08/2016",
   "author": "Cloudsoft Corp.",
   "attachments": [],
   "contentIsHTML": false
@@ -9,7 +9,7 @@
 ![Cloudsoft logo](../../images/cloudsoft/cloudsoft-logo.jpg)
 
 ### Technology Profile
-Cloudsoft Application Management Platform (AMP) Open Edition is software which streamlines the development and operation of applications. AMP Open Edition orchestrates services, platforms and infrastructures to ensure they directly meet the needs of applications, dynamically and in real time. This results in more reliable operations, productive development and greater agility for IT to respond to their business needs.
+Cloudsoft Application Management Platform (AMP) Open Edition is software which streamlines the development and operation of applications. AMP Open Edition orchestrates services, platforms, and infrastructures to ensure they directly meet the needs of applications, dynamically and in real time. This results in more reliable operations, productive development and greater agility for IT to respond to their business needs.
 
 ### Description
 AMP Open Edition is built on the open-source project [Apache Brooklyn](https://brooklyn.apache.org), with Cloudsoft's commercial support and additional enterprise features.
@@ -18,6 +18,7 @@ For more information, please visit http://www.cloudsoft.io/products/.
 
 ### Audience
 CenturyLink Cloud Users
+If you are ready to get started, but are not yet a CenturyLink Cloud customer, no problem. Get started with [CenturyLink Cloud for free](https://www.ctl.io/free-trial/). Try our most popular products, or [MarketPlace Partners](https://www.ctl.io/marketplace/program/) offerings, allowing you to create a combination of products that best fits your business needs.
 
 ### Impact
 After reading this article, the user will be able to install and use Cloudsoft AMP Open Edition in the CenturyLink Cloud platform.
@@ -33,7 +34,7 @@ If you are deploying from "CenturyLink Blueprints Library" all the prerequisites
 
 #### Steps to Deploy Blueprint
 1. **Locate the Cloudsoft AMP Open Edition Blueprint**
-  1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+  1. Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
   2. Search for "AMP" in the keyword search on the right side of the page and filter for "Monitoring" Solution
   3. Locate the "Cloudsoft AMP Open Edition" Blueprint
 
@@ -68,9 +69,9 @@ If you are deploying from "CenturyLink Blueprints Library" all the prerequisites
   2. This will kick off the blueprint deploy process and load a page to allow you to track the progress of the deployment.
 
 6. **Monitor the Activity Queue**
-  1. Monitor the Deployment Queue to view the progress of the blueprint.
+  1. Monitor the Deployment Queue to view the progress of the Blueprint.
   2. You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
-  3. Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
+  3. Once the Blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
 
 ### Access your AMP Open Edition server
@@ -90,5 +91,5 @@ CenturyLink Cloud works with [Cloudsoft](http://www.cloudsoft.io) to provide agi
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to deploying the Cloudsoft AMP Open Edition Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [Cloudsoft Support website](https://support.cloudsoft.io/)
+* For issues related to deploying the Cloudsoft AMP Open Edition Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [Cloudsoft Support website](https://support.cloudsoft.io/).
 * For issues related to cloud infrastructure (VMs, network, etc), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).

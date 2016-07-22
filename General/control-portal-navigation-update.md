@@ -37,11 +37,17 @@ This new navigation bar is designed to be responsive, so whether you use a deskt
 
 ### Sub-Account
 
-If you are customer that happens to use our sub-account feature, there is a new sub-account navigation menu at the very top of the page. This displays your current account name and alias, giving you context for the data on the page below. To open the menu, click the account name (or press ctrl + i on your keyboard) to view the entire account hierarchy your user has access to.
+If you are a customer that happens to use our sub-account feature, there is a new sub-account navigation menu at the very top of the page. This displays your current account name and alias, giving you context for the data on the page below. To open the menu, click the account name (or press ctrl + i on your keyboard) to view the entire account hierarchy your user has access to.
 
 ![Animated gif of Control Portal main navigation menu behavior](../images/menu-account-context.gif)
 
 If you belong to a large organization with a long list of accounts, you can filter the list of accounts by account name or alias using the filter input box to quickly change account context. The full account hierarchy for each sub-account is displayed, so it is easier to understand what sub-account belongs to whom.
+
+### Help and Support
+
+To access help and support options, a menu is available at the upper right next to the username of the person currently signed in. Clicking the question mark icon will reveal your support options.
+
+![Screenshot of the support options in the new Control Portal navigation bar](../images/menu-support.png)
 
 ### Custom Colors and Logos
 
