@@ -9,7 +9,7 @@
 ![Clustrix Logo](../../images/clustrix_blue.png)
 
 ### Technology Profile
-Clustrix provides the leading scale-out SQL database engineered for the cloud.  It is the first database built specifically to meet the revenue scaling, performance and availability demands of today’s web sites and applications such as those for eCommerce, healthcare and finance. With ClustrixDB, you can build business critical applications that support massive transactional volume and real-time reporting of business performance metrics.
+Clustrix provides the leading scale-out SQL database engineered for the cloud. It is the first database built specifically to meet the revenue scaling, performance and availability demands of today’s web sites and applications such as those for eCommerce, healthcare and finance. With ClustrixDB, you can build business critical applications that support massive transactional volume and real-time reporting of business performance metrics.
 
 
 ### Description
@@ -30,7 +30,7 @@ ClustrixDB is a drop-in replacement for MySQL that provides simplicity of manage
 
 Current Release is v 7.0.1 (6/15/2015)
 
-For more information, please visit www.clustrix.com
+For more information, please visit www.clustrix.com.
 
 ### Audience
 CenturyLink Cloud Users
@@ -43,7 +43,6 @@ After reading this article, the user should understand what ClustrixDB does, how
 * A Clustrix Evaluation or Production License key -- You can email us at clcsales@clustrix.com to request an evaluation license key.
 * Adequate CLC infrastructure will be deployed for evaluation or typical production as part of the ClustrixDB Blueprint execution.
 
-
 ### Postrequisite
 To access your application from a computer outside the CenturyLink Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
 * The blue print will configure a public IP address.
@@ -53,7 +52,7 @@ To access your application from a computer outside the CenturyLink Cloud network
 
 #### Steps to Deploy Blueprint
 1. Locate the “Install ClustrixDB v-7-0-1" Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Clustrix” in the keyword search on the right side of the page.
    * Locate the "ClustrixDB v-7-0-1" Blueprint.
 
@@ -70,7 +69,7 @@ To access your application from a computer outside the CenturyLink Cloud network
 
 4. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access your ClustrixDB cluster
@@ -81,7 +80,7 @@ After your Blueprint deploys successfully, please follow these instructions to a
    * You'll need the private IP's of all the nodes as well as your ClustrixDB license key to complete the wizard.
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.  CenturyLink Cloud customers must have a separate subscription and license and license key from Clustrix to use the ClustrixDB software after deployed. For more information on pricing and licensing, please contact Clustrix @ +1 877.806.5357 or +1 415.501.9560 or at [clcsales@clustrix.com](mailto:clcsales@clustrix.com).
+The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. CenturyLink Cloud customers must have a separate subscription and license and license key from Clustrix to use the ClustrixDB software after deployed. For more information on pricing and licensing, please contact Clustrix @ +1 877.806.5357 or +1 415.501.9560 or at [clcsales@clustrix.com](mailto:clcsales@clustrix.com).
 
 ### About Clustrix
 CenturyLink Cloud works with [[Clustrix](http://www.clustrix.com)] who provides the leading scale-out SQL database engineered for the cloud and the first database built specifically to meet the unique growth, performance and availability demands of today’s transactional web sites and web applications. With ClustrixDB, you can build business critical applications that support massive transactional volume and real-time reporting of business performance metrics.

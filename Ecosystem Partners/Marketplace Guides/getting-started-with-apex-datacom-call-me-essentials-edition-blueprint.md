@@ -53,15 +53,12 @@ After reading this article, the user should feel comfortable getting started usi
 Follow these step by step instructions to deploy a single server instance of Call Me Essentials Edition.
 
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-   ![Apex Datacom Image](../../images/ecosystem-apex-datacom-callme-a1.png)
-   * Search for “Call Me” in the keyword search on the right side of the Blueprints Library page as shown in the image below.
-   ![Apex Datacom Image](../../images/ecosystem-apex-datacom-callme-a2.png)
-   * Locate the Apex Call Me Essentials Edition Blueprint on the left side and click this.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * Search for “Call Me” in the keyword search on the right side of the Blueprints Library page.
+   * Locate the Apex Call Me Essentials Edition Blueprint on the left side and click on it.
 
 2. Choose the Blueprint.
-   * Click on the "Deploy Blueprint" green button.
-   ![Apex Datacom Image](../../images/ecosystem-apex-datacom-callme-a3.png)
+   * Click the `Deploy Blueprint` button.
 
 3.	Configure the Blueprint.
    * Complete the info fields required by the Blueprint wizard. An image down below highlights the fields you must complete correctly.
@@ -79,13 +76,13 @@ Follow these step by step instructions to deploy a single server instance of Cal
 4.	Review and Confirm the Blueprint.
    * You will come to a confirmation view of what your Blueprint looks like.
    * Verify your configuration details.
-   * Then click the “deploy Blueprint” green button at the bottom.
+   * Click the `deploy Blueprint` button.
    ![Apex Datacom Image](../../images/ecosystem-apex-datacom-callme-a5.png)
 
 5.	Blueprint Queued & Deployed.
-   * Having clicked the deploy Blueprint it will be submitted into a queue and you will be taken to a monitoring page where you can see the progress of each step the Blueprint goes through.
+   * The Blueprint will be submitted into a queue and you will be taken to a monitoring page where you can see the progress of each step the Blueprint goes through.
    * There are a total of ten steps and this will take several minutes. You do not need to stay on the monitoring page.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Each step as it completes successfully will show a green circle indicator. Should you see a red circle indicator at any step you might be given a resume option which you should take.
    * If the Blueprint is stuck at a red indicator you should open a ticket (possibly through chat if you have this option in your CLC account) to resume the Blueprint.
    * Most normally the Blueprint will complete properly. Below is what a successful deployment looks like when completed.

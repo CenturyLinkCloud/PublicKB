@@ -61,11 +61,10 @@ Public clouds auth configurations. You need to get all required Public Clouds AP
 Follow these step by step instructions to deploy CloudFuze.
 
 1. Open the Blueprint Library.
-   * Access your Blueprint Library by selecting the “Blueprints Library” under the Blueprints heading from the green drop down menu.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
 
 2. Search for the Blueprint.
    * To search for the CloudFuze Blueprint, type “CloudFuze” under “Refine Results” in the right panel and click the `Go` button.
-   ![CloudFuze Image](../../images/ecosystem-CloudFuze-1.png)
 
 3. Select the Blueprint.
    * Select the CloudFuze Blueprint.
@@ -80,8 +79,6 @@ Follow these step by step instructions to deploy CloudFuze.
    * Admin User ID email address
    * Admin Password
 
-   ![CloudFuze Image](../../images/ecosystem-CloudFuze-2.png)
-
 6. Review and Confirm the Blueprint.
    * You will come to a confirmation view of what your Blueprint looks like.
    * Verify your configuration details.
@@ -89,13 +86,11 @@ Follow these step by step instructions to deploy CloudFuze.
 
 7. Monitor the Activity Queue.
    * After clicking Deploy Blueprint, the job will be submitted into a queue and you will be taken to a monitoring page where you can see the progress of each step the Blueprint goes through.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
 
-6. Jump In!
+8. Jump In!
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
    * Please open the Blueprint Build log after completing and note the apiURL's listed in the Accessing URL's section.
-
-   ![CloudFuze Image](../../images/ecosystem-CloudFuze-6.png)
 
 ### Access and use CloudFuze
 Follow these steps to access and use the CloudFuze software.

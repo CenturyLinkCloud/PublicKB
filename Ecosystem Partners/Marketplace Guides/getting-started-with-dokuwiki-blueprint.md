@@ -19,16 +19,15 @@ Launched in 2004, DokuWiki was built for small companies and organizations that 
 ### Audience
 CenturyLink Cloud Users
 
-
 ### Deploying DokuWiki on a New Server
 DokuWiki is available as a Blueprint for deployment on a **new server**.
 
 #### Steps
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-   * Search for **DokuWiki on Linux** in the keyword search on the right side of the page.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * Search for "DokuWiki on Linux" in the keyword search on the right side of the page.
 
-2. Click the Deploy Blueprint button.
+2. Click the `deploy blueprint` button.
 
 3. Set Required parameters.
    Set the following parameters in addition to those associated with your server itself (password, network, group, etc.):
@@ -96,10 +95,8 @@ DokuWiki is available as a Blueprint Package for deployment on an existing serve
 ### Pricing
 The costs listed above in the above steps are for the infrastructure only.
 
-
 ### About Bitnami
 CenturyLink Cloud works with [Bitnami](http://www.bitnami.com) to provide open source software integrations to its customers. Bitnami is a library of popular server applications and development environments that can be installed with one click, either in your laptop, in a virtual machine or hosted in the cloud. Bitnami takes care of compiling and configuring the applications and all of their dependencies (third-party libraries, language runtimes, databases) so they work out-of-the-box. The resulting packaged software (a 'stack') is then made available as native installers, virtual machines and cloud images. These Bitnami application packages provide a consistent, secure and optimized end-user experience when deploying any app, on any platform.
-
 
 ### Frequently Asked Questions
 **Who should I contact for support?**

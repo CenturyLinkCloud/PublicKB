@@ -42,14 +42,12 @@ After reading this article, the user should feel comfortable getting started dep
 
 ### Install Minecraft PE Server on Linux Blueprint
 1. Locate the Mojang Minecraft PE Server Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Minecraft PE” in the keyword search on the right side of the page.
    * Locate the 'Install Minecraft PE Server on Linux' Blueprint.
-   ![Locate Minecraft PE Blueprint Image](../../images/ecosystem-minecraft-pe-server-10.png)
 
 2. Choose and Deploy the Blueprint.
    * Click the “Install Minecraft PE Server on Linux” Blueprint.
-   ![Deploy Minecraft PE Blueprint Image](../../images/ecosystem-minecraft-pe-server-8.png)
 
 3. Configure the Blueprint with the following Minecraft specific information:
    * Server Name - Server Name, e.g., CLCMC
@@ -57,24 +55,22 @@ After reading this article, the user should feel comfortable getting started dep
    * Game Mode - Creative or Survival mode
    * minecraftpe user's password - Set a secure password for the minecraftpe user that runs the server software.
    * Finally, Click the `Next: Step 2` button at the bottom of the Blueprint.
-   ![Configure Minecraft PE Blueprint Image](../../images/ecosystem-minecraft-pe-server-11.png)
 
 4. Review, Confirm, and Deploy the Blueprint.
    * Verify your configuration details.
-   * Once verified, click on the ‘deploy blueprint’ button. This will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
+   * Once verified, click on the `deploy blueprint` button. This will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the Minecraft Server until you have received this email notification.
-   ![Minecraft PE Blueprint Queue Image](../../images/ecosystem-minecraft-pe-server-9.png)
 
 ### Postrequisites
-1. Add a Public IP to your VM and open 2x Firewall Ports: Port 19132 for TCP and UDP.
+1. Add a Public IP to your VM and open 2x Firewall Ports: Port `19132` for TCP and UDP.
    * Browse to the new VM and click on the Add Public IP button.
-   * When the firewall rule dialog opens, Add two (2x) single-port boxes: configure one for TCP on port 19132 and the other UDP on port 19132.
-   ![Minecraft PE Firewall Rules Image](../../images/ecosystem-minecraft-pe-server-7.png)
-   * Click the "Add Public IP address button". When the Add Public IP task completes you should be able to connect to your new server from your Minecraft PE client (iPhone or iPad) via the public IP. Please view the instructions below to learn how to access the server for gameplay from your Minecraft PE client.
+   * When the firewall rule dialog opens, Add two (2x) single-port boxes: configure one for TCP on port `19132` and the other UDP on port `19132`.
+   * Click the `Add Public IP address` button.
+   * When the Add Public IP task completes you should be able to connect to your new server from your Minecraft PE client (iPhone or iPad) via the public IP. Please view the instructions below to learn how to access the server for gameplay from your Minecraft PE client.
 
 2. Optional: Customize and configure your Minecraft PE Server by editing the `server.properties` file in `/home/minecraftpe`.
 
@@ -111,9 +107,13 @@ After you've added a Public IP to your server and opened the proper firewall hol
 After your Blueprint deploys successfully, please follow these instructions to access your server:
 
 1. Check your email to obtain the servers private IP Address information, or obtain it from the Control Portal.
+
 2. Establish a VPN connection to your data center and then SSH to your Minecraft Server's Private IP. Login as the user minecraftpe with password you set when you deployed the Blueprint. If you experience any issues logging in as the minecraftpe user, please see the FAQ below.
+
 3. Connect to your Minecraft console by running this command as the minecraftpe user: `screen -r`
+
 4. To disconnect from the java console: press "CTRL A + Z" (A then Z).
+
 5. To stop (and save) the server, login to the console and type save-all then stop. For more information, please consult the Minecraft PE documentation.
 
 ### Pricing
@@ -127,8 +127,11 @@ The costs associated with this Blueprint deployment are for the CenturyLink Clou
 
 #### What does the 'Install PE Minecraft Server on Linux x64' Script Package do?
 1. Add a user called minecraftpe to the Linux OS. This user will run the Minecraft PE server software so the inecraft PE Server will not run as root. The minecraftpe users password will be set to the password provided during deployment.
+
 2. Download the latest Minecraft PE software from the Mojang website to ~minecraftpe (/home/minecraftpe).
+
 3. Append information from the user to the Minecraft PE `server.properties` configuration file.
+
 4. Starts the Minecraft PE software as the minecraftpe user.
 
 #### What Firewall ports are required to be opened?
@@ -143,4 +146,4 @@ The costs associated with this Blueprint deployment are for the CenturyLink Clou
 
 #### Who should I contact for support?
 * CenturyLink Cloud does not support the Minecraft PE Server software. Please contact Mojang for any support around Minecraft.
-* For issues related to cloud infrastructure (VM’s, network, etc), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket: https://t3n.zendesk.com/tickets/new.
+* For issues related to cloud infrastructure (VM’s, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket: https://t3n.zendesk.com/tickets/new.
