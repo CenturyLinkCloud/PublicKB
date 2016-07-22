@@ -36,7 +36,7 @@ eZ Publish is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
 1. Locate the eZ Publish Stack Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “eZ Publish” in the keyword search on the right side of the page.
    * Locate the 'Install eZ Publish on Linux' Blueprint.
 
@@ -66,7 +66,7 @@ eZ Publish is available as a Blueprint for deployment on a new server.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Deploy eZ Publish to an existing server (alternate option)
@@ -100,7 +100,7 @@ The eZ Publish Stack is available as a Script Package for deployment on an exist
 
 5. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access your eZ Publish server

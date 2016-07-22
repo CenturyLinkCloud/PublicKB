@@ -22,27 +22,26 @@ http://www.appcito.com
 
 
 ### Description
-Appcito CAFE (Cloud Application Front End) is an easy-to-deploy, unified and cloud-native service that enables cloud application teams to select and deploy enterprise grade L4 to L7 application network services. Appcitos subscription-based service is designed to meet the needs of both application owners and DevOps and provides different tiers of service starter, business and enterprise. Its integrated, scalable and pay-as-you-go service is easy to consume and takes less than 5 minutes to get started. Service Offering: Availability Services: Elastic Load Balancing for high availability of application with built in autoscaling, analytics and feedback capabilities. Load balancing techniques include Round Robin, Weighted Average, Least Connections. Performance Optimization: Front-end optimization capabilities including Compression, Caching, Page Speed and SPDY services optimize the performance of website and mobile applications. Content switching and programmability allows policy based URL re-direction to customize application end user experience Application Security: Detection and protection from application from DDOS attacks; Web Application Firewall for top OWASP attack detection and prevention like SQL injection or cross-site scripting types of attacks; Elastic SSL to enable application transport security and prevent snooping, phishing attacks Continuous Deployment: Blue/Green upgrades facilitates policy-based redirection of application traffic (traffic steering).
+Appcito CAFE (Cloud Application Front End) is an easy-to-deploy, unified and cloud-native service that enables cloud application teams to select and deploy enterprise grade L4 to L7 application network services. Appcitos subscription-based service is designed to meet the needs of both application owners and DevOps and provides different tiers of service starter, business and enterprise. Its integrated, scalable and pay-as-you-go service is easy to consume and takes less than 5 minutes to get started.
 
+Service Offering: Availability Services: Elastic Load Balancing for high availability of application with built in autoscaling, analytics and feedback capabilities. Load balancing techniques include Round Robin, Weighted Average, Least Connections. Performance Optimization: Front-end optimization capabilities including Compression, Caching, Page Speed and SPDY services optimize the performance of website and mobile applications. Content switching and programmability allows policy based URL re-direction to customize application end user experience Application Security: Detection and protection from application from DDOS attacks; Web Application Firewall for top OWASP attack detection and prevention like SQL injection or cross-site scripting types of attacks; Elastic SSL to enable application transport security and prevent snooping, phishing attacks Continuous Deployment: Blue/Green upgrades facilitates policy-based redirection of application traffic (traffic steering).
 
 ### Audience
 CenturyLink Cloud Users
 
-
 ### Prerequisites
 * Access to the CenturyLink Cloud platform as an authorized user
-
 
 ### Postrequisites
 * A functioning account on the Appcito platform http://ctlcafe.appcito.com/#signup
 
-
 ### Steps to Deploy a New Appcito ADC
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "Appcito" in the keyword search on the right side of the page.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * Search for "Appcito" in the keyword search on the right side of the page.
    <img src="../../images/appcito/cluster_blueprint_tiles.png" style="border:0;max-width:250px;">
 
-2. Click the Deploy Blueprint button.
+2. Click the `deploy blueprint` button.
 
 3. Set Required parameters.
    <img src="../../images/appcito/deploy_parameters.png">

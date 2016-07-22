@@ -11,7 +11,6 @@
 ### Technology Profile
 CA Project and Portfolio Management (CA PPM) helps business leaders to deliver the “right” products and applications to market faster and with less risk. Only CA PPM connects strategy to execution across the entire enterprise portfolio with relevant and immediate visibility needed to improve project ROI. See more at [www.ca.com](http://www.ca.com).
 
-
 ### Contact CA Technologies
 * [Email & phone support](https://www.ca.com/us/contact/call-me.aspx)
 
@@ -35,7 +34,7 @@ None
 CA PPM is available as a Blueprint for deployment on a new server.
 
 #### Steps to deploy to New Server Blueprint
-1. Access the Blueprints library.
+1. Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
 
 2. Search for *CA PPM14-3 Windows*.
 
@@ -63,7 +62,7 @@ CA PPM is available as a Blueprint for deployment on a new server.
 6. Deploy the Blueprint.
 
 7. Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
 
 8. Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete.
    * Please do not use the application until you have received this email notification.

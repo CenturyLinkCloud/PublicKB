@@ -6,8 +6,6 @@
   "contentIsHTML": false
 }}}
 
-
-
 ### Overview
 After reading this article, the user should be able to provision infrastructure with
 [Hashicorp Terraform](https://terraform.io) on CenturyLink Cloud.
@@ -80,10 +78,9 @@ Full [documentaiton](https://www.terraform.io/docs/providers/clc/index.html) for
 
 4. Explore the examples.
    Additional example and resources:
-
-    * [examples](https://github.com/CenturyLinkCloud/terraform-provider-clc/tree/master/examples) * basic use
-    * [mantl.io](https://github.com/CiscoCloud/mantl/blob/master/terraform/clc.sample.tf) - mesos from terraform + ansible
-    * [terraform.py](https://github.com/CiscoCloud/terraform.py) - dynamic inventory for ansible
+   * [examples](https://github.com/CenturyLinkCloud/terraform-provider-clc/tree/master/examples) * basic use
+   * [mantl.io](https://github.com/CiscoCloud/mantl/blob/master/terraform/clc.sample.tf) - mesos from terraform + ansible
+   * [terraform.py](https://github.com/CiscoCloud/terraform.py) - dynamic inventory for ansible
 
 5. Start terraform'ing.
    Use the provided terraform resources to build out your infrastructure.

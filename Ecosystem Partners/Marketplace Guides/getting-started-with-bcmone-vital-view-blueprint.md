@@ -3,7 +3,7 @@
   "date": "01-05-2015",
   "author": "Bob Stolzberg",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 ![Vital View Logo](../../images/vitalview-logo.png)
@@ -34,7 +34,7 @@ After reading this article, the user should feel comfortable getting started usi
 ###  Detailed Steps
 Follow these step by step instructions to get started with a single-server Vital View deployment.
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Vital View” in the keyword search on the right side of the page.
    * Click the “Install Vital View” Blueprint.
 
@@ -59,7 +59,7 @@ Follow these step by step instructions to get started with a single-server Vital
 5. Deploy the Blueprint.
    * Once verified, click the `deploy blueprint` button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a queue page to allow you to track the progress of the deployment.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Below is what a successful deployment looks like when completed.
    ![Successful Install of VitalView](../../images/success-vitalview.png)
 

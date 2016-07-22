@@ -30,10 +30,8 @@ Technology from Datto helps CenturyLink Cloud customers address the business cha
 
 Customers can protect Windows and Linux operating systems and replicate data every 5 minutes to 60 minutes within the CenturyLink Cloud. Additionally, data can be replicated to the Datto cloud where customers can store data for long-term retention or failover and instantly virtualize.
 
-
 ### Audience
 CenturyLink Cloud Users
-
 
 ### Impact
 After reading this article, the user should feel comfortable getting started using Datto technology on CenturyLink Cloud.
@@ -42,11 +40,9 @@ After executing the steps in this Getting Started document, the users will have 
 
 ### Deploying Datto Virtual ALTO
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for "Datto ALTO" in the keyword search on the right side of the page.
    * (Pricing includes IaaS resources only. See end of article for licensing details.)
-
-   <img src="../../images/datto/blueprint_tile.png" style="border:0;max-width:250px;">
 
 2. Click the `deploy blueprint` button.
 
@@ -63,17 +59,17 @@ After executing the steps in this Getting Started document, the users will have 
    * You will see the deployment details stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within five minutes.
 
-7. Add Additional Storage.
+6. Add Additional Storage.
    * The Blueprint delivers your server with no data storage configured. Login to [Control Portal](https://control.ctl.io) and add **raw disks** for your server.
 
-8. Access ALTO
+7. Access ALTO
    * **Note** if accessing via a public IP address some of these steps may refresh and direct you towards the private IP causing timeouts.
    * Access the device's web UI by entering the IP address into your browser.
    * Apply registration code. If you have not yet received a registration code please email bbuckman@datto.com.
 
   ![Add authorization key](../../images/datto/authorization_key.png)
 
-   * Select disks added in step (7) and click *Create Storage Drive*.
+   * Select disks added in Step (7) and click *Create Storage Drive*.
 
     ![Add disks](../../images/datto/add_disks.png)
 
@@ -82,7 +78,7 @@ After executing the steps in this Getting Started document, the users will have 
     ![Register appliance](../../images/datto/register_appliance.png)
 
 ### Pricing
-The costs listed in the above steps are for the infrastructure only. After deploying this Blueprint, you may secure entitlements to the technology by emailing your Datto Account Executive or if you don’t have one, Brian Buckman at bbuckman@datto.com.
+The costs listed in the above steps are for the infrastructure only. After deploying this Blueprint, you may secure entitlements to the technology by emailing your Datto Account Executive.
 
 ### Frequently Asked Questions
 **Where do I get my Datto registration code?**

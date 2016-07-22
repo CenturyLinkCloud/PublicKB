@@ -33,26 +33,22 @@ We support Highly Available deployment and can help you configure your CenturyLi
 ### Audience
 CenturyLink Cloud Users
 
-
 ### Impact
 After reading this article, the you should feel comfortable getting started using the aiScaler technology on CenturyLink Cloud.
 
 After executing the steps in this Getting Started document, you will have a functioning virtual application delivery controller, upon which you can deploy web applications that are fast, able to handle massive traffic and secured from DDoS and other online attacks.
-
-
 
 ### Prerequisites
 Prior to deploying this Blueprint please create a new server matching the below specifications:
 * Server running Ubuntu 14.04, Debian 7, RHEL 7 or CentOS 7. 4CPU/8GB RAM is a good starting point
 * Assigned public IP with the following open ports: `22`, `80`, `443`.
 
-
 ### Deploying aiScaler
 You can achieve a single-button deployment of a new aiScaler instance using CenturyLink Cloud Blueprints. Follow these step by step instructions to deploy aiScaler. For more details please reference
 https://aiscaler.com/wiki/getting-started-centurylink.
 
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for "aiScaler" in the keyword search on the right side of the page.
 
   <img src="../../images/aiscaler/blueprint_tile_aiscaler.png" style="border:0;max-width:250px;">
@@ -80,9 +76,6 @@ https://aiscaler.com/wiki/getting-started-centurylink.
 7. Deployment Complete.
    * Once the Blueprint has deployed you will receive an email confirming the newly deployed assets within a few minutes.
    * If you do not receive an email you may have had a deployment error - check the *Blueprints Queue* or review the *Blueprint Build Log* to for error messages.
-
-
-
 
 ### Pricing
 The costs listed above in the above steps are for the infrastructure only. After deploying this Blueprint, you may secure entitlements to the technology using the following steps:
