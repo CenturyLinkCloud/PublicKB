@@ -11,22 +11,22 @@ If a Managed Services Blueprint does not complete as expected, please note the O
 If that is not the issue, follow these steps to expedite troubleshooting.
 ##### 1. From within the Control Portal, hover over the green bar at the top of the page.
 ```
-![Menu.png](https://t3n.zendesk.com/attachments/token/U8DbQ8GQAPbqUUC5iz66CKzfe/?name=Menu.png)
+![Menu.png](../images/Menu.png)
 ```
 
 ##### 2. Select Queue beneath Blueprints.
 ```
-![Queue.png](https://t3n.zendesk.com/attachments/token/9H29B48xmszIFEY7lO1hpGiK4/?name=Queue.png)
+![Queue.png](../images/Queue.png)
 ```
 
 ##### 3. On the Deployment Queue page, click the pull-down list and select the correct data center.
 ```
-![Context.png](https://t3n.zendesk.com/attachments/token/HGRaSjuSNpR79phiQH7UVmJOx/?name=Context.png)
+![Context.png](../images/Context.png)
 ```
 
 ##### 4. Click on the radio buttons to find the relevant job and status.
 ```
-![Deployment.png](https://t3n.zendesk.com/attachments/token/COvAYHehl5K2B1wFKqeBsfkG3/?name=Deployment.png
+![Deployment.png](../images/Deployment.png
 ```
 
 ##### 5. If your request is in failed status, click on the request to see additional details.
@@ -37,14 +37,14 @@ If that is not the issue, follow these steps to expedite troubleshooting.
 * If the Blueprint failed after “Reserve Blueprint,” expand the step where the error failed by clicking on it. Call Support at 1-888-638-6771. Please notify us about the step the Blueprint failed (such as “Install Managed MSSQL”).
   * You may be able to further expand the errant step to see details of the error:
 ```
-![Error_Details.png](https://t3n.zendesk.com/attachments/token/8L7RLq5vFql23Ai1M2rWlKRdi/?name=Error_Details.png)
+![Error_Details.png](../images/Error_Details.png)
 ```
 
 ##### 7. If the issue occurs during Server Creation for a VM you are attempting to “Make Managed” and the job fails at the same point a second time, continue to troubleshoot by:
 * Checking to see if Blueprint failed prior to a step called "Apply CTS customizations to ______." (The blank would be specific to an Operating System) If so, it is possibly a resource issue.
 * Check the main dashboard to determine if you have exceeded resource limits.
 ```
-![Resource_check.png](https://t3n.zendesk.com/attachments/token/8Zk9V4VvIYIhGI2ZcUAbvXRax/?name=Resource_Check.png)
+![Resource_check.png](../images/Resource_Check.png)
 ```
   * If it is a resource issue and you require more resources, please adjust accordingly or request limit increases from your account administrator.</li>
   * If it is not a resource issue, please contact Support at 1-888-638-6771. Please also note the step at which the Blueprint failed.
