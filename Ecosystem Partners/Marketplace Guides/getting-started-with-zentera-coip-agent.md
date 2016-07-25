@@ -1,15 +1,15 @@
-
 {{{
   "title": "Getting Started with Zentera CoIP",
-  "date": "2016-01-28",
+  "date": "01-28-2016",
   "author": "Zentera Systems, Inc.",
   "attachments": [],
   "contentIsHTML": false
 }}}
+
 ![Zentera Logo](../../images/zentera-logo.jpeg)
 
 ## Technology Profile
-Zentera Systems, Inc., enables companies to secure production datacenter operations across public, private and managed hosted network domains.The Zentera CoIP secure networking platform for the cloud ecosystem creates a unified network plane across multiple private and cloud domains, connecting dispersed endpoint servers, virtual machines and containers. The CoIP platform offers enterprise-grade security for hybrid networks, connecting and protecting corporate compute resources while shielding applications and data deployed in on-premises and managed hosting environments as well as the public cloud. CoIP can be provisioned in hours over the existing IP infrastructure and does not require any infrastructure change.
+Zentera Systems, Inc., enables companies to secure production datacenter operations across public, private and managed hosted network domains. The Zentera CoIP secure networking platform for the cloud ecosystem creates a unified network plane across multiple private and cloud domains, connecting dispersed endpoint servers, virtual machines and containers. The CoIP platform offers enterprise-grade security for hybrid networks, connecting and protecting corporate compute resources while shielding applications and data deployed in on-premises and managed hosting environments as well as the public cloud. CoIP can be provisioned in hours over the existing IP infrastructure and does not require any infrastructure change.
 [http://www.zentera.net](http://www.zentera.net)
 
 ## Description ##
@@ -71,26 +71,22 @@ After reading this KB, the user should feel comfortable getting started using Ze
    * You can remain logged in. You will be returning to zCenter at the end of this Blueprint.
 
 ### Step to Deploy Blueprint on CenturyLink to Install CoIP zLink into Your Server (VM)
-1. Locate the Zentera Blueprint from the CenturyLink Control Panel by selecting the green dashboard area on the top.
-   * Select **Blueprints Library** and using the search function to locate the Zentera Blueprint.
+1. Locate the Zentera Blueprint.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * Use the search function to locate the Zentera Blueprint.
 
 2. Choose, Customize and Deploy the Zentera Blueprint.
-   * lick on **Zentera zLink Agent Installer for RedHat, CentOS and Ubuntu**.
-   ![Zentera Blueprint in Library](../../images/zentera-blueprint.png)
-
-   * Click on **Deploy Blueprint**.
-   * Select your server from the **Execute on Server** drop-down list.
+   * Click on 'Zentera zLink Agent Installer for RedHat, CentOS and Ubuntu'.
+   * Click on `deploy blueprint`.
+   * Select your server from the **Execute on Server** list.
    * From your text file, copy and paste the **Zentera Gateway Applicance URL** (your zCenter URL), **zCenter Customer ID** and **zCenter Cloud Server Pool Tag** into the dialogue box.
-   ![Zentera Customize Blueprint dialog box](../../images/zentera-blueprint-form.png)
-
-   * Click **Next Step 2**.
-   * Review your information and click **Deploy Blueprint**.
-
+   * Click `next Step 2`.
+   * Review your information and click `deploy blueprint`.
 
 3. Monitor the Deployment Queue for progress.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
 
-6. Verification in zCenter of CoIP zlink Installation into Your Server.
+4. Verification in zCenter of CoIP zlink Installation into Your Server.
    * Once the Blueprint completes successfully, verify that your server is registered on zCenter.
    * In your zCenter, click **Project Provisioning** then choose **Cloud Server Pools**.
    * Find your Pool Tag and click on its **Cloud Servers** link.

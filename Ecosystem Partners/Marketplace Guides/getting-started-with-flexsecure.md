@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with FlexSecure",
-  "date": "7-11-2016",
+  "date": "07-11-2016",
   "author": "Sid Prasanna",
   "attachments": [],
   "contentIsHTML": false
@@ -14,18 +14,12 @@ FlexSecure is a context-based Authentication-as-a-Service API platform, providin
 By adding multi-layered authentication options that may require user interaction before granting access, organizations have the ability to add significant levels of security to protect their data from hackers and prevent unauthorized access.
 
 FlexSecure Passwordless authentication:
-
 * No need to remember passwords.
-
 * Quick and easy integration into applications.
-
 * Authenticate users once and add additional contexts such as pin-based security authentication.
-
 * Easy user adoption, since the passwordless authentication link is delivered by SMS.
 
-
 ### Description
-
 FlexSecure solves a unifying problem -- the need to dynamically secure access to resources and data based on the user and their level of authorized access. Many solutions exist for granting access in a static way, but no single solution exists that can adjust the security authentication requirements in real-time, based on dynamic factors in the security equation.
 
 FlexSecure sees access as a dynamic problem that needs a dynamic solution. Our technology enables companies to provide strong and flexible authentication for access to more sensitive resources and data, while relaxing the requirements for access to less sensitive content. This allows users to get more work done, without interruption, while giving the highest level of security when necessary.
@@ -33,23 +27,19 @@ FlexSecure sees access as a dynamic problem that needs a dynamic solution. Our t
 The FlexSecure technology is implemented through a secure API that allows for easy integration into your existing applications, websites, and enterprise systems.
 
 ### Audience
-
 CenturyLink Cloud Users, Application Developers, Enterprises
 
 ### Pre-Requisite
-
 Please confirm that you are a CenturyLink Cloud customer and register for an account, at the following link:
 
 [FlexSecure Registration Form](//docs.google.com/forms/d/1W6tpMVM5PiW50_QJwmlwSQUX-5ch4dPNTiKDzYkJQf4/viewform?c=0&w=1)
 
 ### Post-Requisite
-
 The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Cyber Security solution.
 
 Once the account has been created, the customer will be able to create systems and users, as well as assign existing policies. Users can be anyone or any device that needs to be authenticated. Systems are anything that users want to access -- like applications, cloud infrastructure, etc.
 
 ### Steps to Configure the System 
-
 It is suggested that systems be entered first, followed by the users.
 After gaining access, the account administrator should follow the steps below to configure the system:
 
@@ -158,7 +148,6 @@ For pin-based calls:
     ```
 
 ### Who Should I Contact for Support?
-
 * For issues related to the FlexSecure Blueprint on CenturyLink Cloud or Licensing, please visit [www.flexsecure.co](//www.flexsecure.co/)
 
 * Customer Support -- please use the email address: [support@flexsecure.co](mailto:support@flexsecure.co) for all support needs.
@@ -166,7 +155,6 @@ For pin-based calls:
 * For issues related to cloud infrastructure (VM's, network, and so on) or if you experience a problem deploying the Blueprint or Script Package, open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](//t3n.zendesk.com/tickets/new).
 
 ### Offer and Pricing
-
 FlexSecure offers CenturyLink customers:
 
 **Enterprise Version**

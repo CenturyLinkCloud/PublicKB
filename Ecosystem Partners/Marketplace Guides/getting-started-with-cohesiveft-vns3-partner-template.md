@@ -57,7 +57,7 @@ After executing the steps in this Getting Started document, the users will have 
 * If you want to access your Cohesive Networks VNS3 virtual appliance from the internet, please perform the following tasks once your VNS3 virtual appliance has been deployed to your account and has been configured.
 * [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
 * If required, [allow incoming traffic for the admin port](../../Network/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Servers Public IP in Control Portal. Warning: Please make sure your VNS3 appliance firewall rules are properly configured to only allow specific source traffic. If you do not configure source traffic rules you risk exposing your VNS3 appliance admin port to the entire internet. Note: When accessing your CohesiveFT VNS3 virtual appliance for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
- ![Admin Port Firewall Ports](https://cohesive.net/wp-content/uploads/2015/03/CohesiveNetworks_CL_port8000.png)
+![Admin Port Firewall Ports](https://cohesive.net/wp-content/uploads/2015/03/CohesiveNetworks_CL_port8000.png)
 
 ### Detailed Steps to Deploy Cohesive Networks VNS3 Partner Template
 Follow these step by step instructions to deploy a VNS3 virtual appliance in to your CenturyLink Cloud account:
@@ -99,21 +99,21 @@ Thank you very much, Your_Name_Here
 Once the Service Task team deploys your Cohesive Networks VNS3 virtual appliance, you will get an email notification with details on your new devices. Follow these instructions to access and configure your VNS3 virtual appliance:
 
 1. Connect to your CenturyLink Cloud environment via Client VPN by starting or initiating your VPN client.
-2. Log in to the VNS3 Web UI at `https://<VNS3 PRIVATE IP>:8000`   The Default username is vnscubed and default password is vnscubed
-3. Reset your passwords and log in again
+2. Log in to the VNS3 Web UI at `https://<VNS3 PRIVATE IP>:8000`. The Default username is vnscubed and default password is vnscubed.
+3. Reset your passwords and log in again.
 4. From the left hand menu, select Upload License. Paste the encrypted VNS3 license received from Cohesive in the first field. Then click Submit.
 5. Either select a preconfigured subnet, or click the Custom Radio button to specify a custom subnet range. Once you complete this step, the VNS3 manager instance will reboot itself and will come up with your specified topology enabled and running.
 6. Generate a keyset by clicking Generate New under Overlay in the left column. Click Generate keys link. Key generator will be started in the background, and you can refresh screen to observe progress.
 
-- For a downloadable PDF version of the detailed configuration guide, visit: https://cohesive.net/dnld/Cohesive-Networks_VNS3-3.5-Configuration.pdf
+- For a downloadable PDF version of the detailed configuration guide, visit: https://cohesive.net/dnld/Cohesive-Networks_VNS3-3.5-Configuration.pdf.
 
-- For support on how to configure your Cohesive Networks VNS3 virtual appliance, please visit the Cohesive support website at https://cohesive.net/support/support-contacts/
+- For support on how to configure your Cohesive Networks VNS3 virtual appliance, please visit the Cohesive support website at https://cohesive.net/support/support-contacts/.
 
 ### Pricing
 There are no Cohesive Networks VNS3 license costs included. The cost to deploy the Cohesive Networks VNS3 Partner Template will be billed as a Service Task, but CenturyLink will provide a credit for those costs. In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees are available here: http://www.ctl.io/service-tasks
 
 #### Process to request credit for Service Task fee
-Follow this process to request credit on your account to re-imburse any expense to deploy the Partner Template
+Follow this process to request credit on your account to reimburse any expense to deploy the Partner Template.
 
 1. Please copy and paste the email below and send it to [ecosystem@ctl.io](mailto:ecosystem@ctl.io)
 
@@ -125,7 +125,7 @@ EMAIL SUBJECT:   Requesting Credit for Cohesive Partner Template Deployment
 
 CLC Ecosystem Team,
 
-I am requesting a credit be placed on my account to cover the fees associated with deploying the CovesiveFT Partner Template to my account under the Service Task deployed on MM/DD/YYYY. My CenturyLink Cloud username or account alias the credit needs to be placed on is ######
+I am requesting a credit be placed on my account to cover the fees associated with deploying the CohesiveFT Partner Template to my account under the Service Task deployed on MM/DD/YYYY. My CenturyLink Cloud username or account alias the credit needs to be placed on is ######
 
 Thank you very much, your_name_here
 
@@ -143,4 +143,4 @@ Thank you very much, your_name_here
 - Email Support - sales@cohesive.net
 - Web Support - http://support.cohesive.net
 - Telephone Support available with enhanced technical support. Visit https://cohesive.net/support/support-plans for details and pricing.
-- For issues related to cloud infrastructure (VM’s, network, etc), please open a ticket using the CenturyLink Cloud Support Process.
+- For issues related to cloud infrastructure (VMs, network, etc.), please open a ticket using the CenturyLink Cloud Support Process.

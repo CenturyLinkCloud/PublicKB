@@ -10,14 +10,10 @@
 
 ### Technology Profile
 
-
-
 ### Description
-
 Through the CenturyLink Blueprint integration, Mahara provides a click-through solution to install and configure Mahara on the Linux platform. Mahara is a fully featured web application to build your electronic portfolio. You can create journals, upload files, embed social media resources from the web and collaborate with other users in groups.
 
 For more information, please visit http://www.mahara.org.
-
 
 ### Audience
 CenturyLink Cloud Users
@@ -25,16 +21,13 @@ CenturyLink Cloud Users
 ### Impact
 After reading this article, the user should feel comfortable getting started using the Bitnami Blueprint technology on CenturyLink Cloud.
 
-
 ### Prerequisite
-- Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the CenturyLink Cloud platform as an authorized user.
 
 ### Postrequisite
 
 * If you want to access your application over the internet, please perform the following tasks after you receive an email notifying you that the Blueprint completed successfully:
-
-* If you need to connect to your server via the Internet, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal
-
+* If you need to connect to your server via the Internet, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
 * [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
    * The default ports to access the application are: `80`, `443`
 
@@ -43,7 +36,7 @@ Mahara is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
 1. Locate the Bitnami Mahara Stack Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Mahara” in the keyword search on the right side of the page.
    * Locate the 'Install Bitnami Mahara on Linux' Blueprint.
 
@@ -70,9 +63,8 @@ Mahara is available as a Blueprint for deployment on a new server.
    * SMTP Host
    * Secure connection, e.g., tls
 
-
 4. Review and Confirm the Blueprint.
-   * Click “next: step 2.”
+   * Click `next: step 2`.
    * Verify your configuration details.
 
 5. Deploy the Blueprint.
@@ -81,16 +73,14 @@ Mahara is available as a Blueprint for deployment on a new server.
 
 6. Monitor the Activity Queue.
   * Monitor the Deployment Queue to view the progress of the Blueprint.
-  * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+  * To monitor progress, click **Queue** from the Nav Menu on the left.
   * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
-
 
 ### Deploy Mahara to an existing server (alternate option)
 
 Bitnami Mahara Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
 #### Steps
-
 1. Deploy or Identify an Existing Server.
    Identify the server targeted for Mahara installation. The Operating system must be supported by the Script Package. See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
@@ -122,13 +112,11 @@ Bitnami Mahara Stack is available as a Script Package for deployment on an exist
 
 5. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
-
 
 ### Access your Mahara server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
-
 1. Check email to obtain Server Name and IP Address Login information.
 2. Log in to the server and start having fun!
 

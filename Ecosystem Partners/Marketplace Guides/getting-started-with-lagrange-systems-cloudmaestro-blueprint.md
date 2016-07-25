@@ -1,6 +1,6 @@
 {{{
 "title": "Getting Started with Lagrange Systems CloudMaestro Blueprint",
-"date": "8-31-2015",
+"date": "08-31-2015",
 "author": "Bob Stolzberg",
 "attachments": [],
 "contentIsHTML": false
@@ -61,25 +61,30 @@ Enabling scaling and server replacement in CloudMaestro will be available after 
 Follow these step by step instructions to deploy the CloudMaestro Agent on your server.
 
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “CloudMaestro” in the keyword search on the right side of the Blueprints Library page as shown in the image below.
    * Locate and click the Lagrange Systems "Install CloudMaestro by Lagrange Systems" Blueprint.
 
-2. Deploy the Blueprint: Click on the "Deploy Blueprint" button.
-3. Configure the Blueprint. Complete the information/fields required by the Blueprint wizard.
+2. Deploy the Blueprint.
+   * Click the `deploy blueprint` button.
+
+3. Configure the Blueprint.
+   Complete the information/fields required by the Blueprint wizard.
    * Your CloudMaestro Status Key – Enter the Status Key from the CloudMaestro Account Settings.
 
 4. Review and Confirm the Blueprint.
    * Verify your configuration details.
 
 5. Deploy the Blueprint.
-   * Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
+   * Once verified, click the `deploy blueprint` button.
+   * You will see the deployment details along with an email stating the Blueprint is queued for execution.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
 7. Get Busy!
-   * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
+   * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete.
+   * Please do not use the application until you have received this email notification.
 
 ### Access your Lagrange CloudMaestro Server
 After your Blueprint deploys successfully, please follow these instructions to access your CloudMaestro Server solution:
@@ -110,5 +115,5 @@ Existing CenturyLink Enterprise Customers can contact their Account Representati
    * Contact Sales by emailing [info@lagrangesystems.com](mailto:info@lagrangesystems.com).
 
 #### Who should I contact for support?
-* For issues related to deploying the Lagrange solution on CenturyLink Cloud via the Blueprint, accessing, or using the deployed software, [please contact Lagrange Systems via their [website](http://www.lagrangesystems.com) or by calling (303) 900-3560
+* For issues related to deploying the Lagrange solution on CenturyLink Cloud via the Blueprint, accessing, or using the deployed software, [please contact Lagrange Systems via their [website](http://www.lagrangesystems.com) or by calling (303) 900-3560.
 * For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

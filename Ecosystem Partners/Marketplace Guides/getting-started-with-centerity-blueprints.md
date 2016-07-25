@@ -84,7 +84,7 @@ After reading this article, the user should feel comfortable getting started usi
 
 ### Install Centerity Windows Agent 64bit Blueprint
 1. Locate the Centerity Windows Agent 64bit Blueprint.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Centerity” in the keyword search on the right side of the page.
    * Locate the Centerity Windows Agent 64 Bit Blueprint.
 
@@ -108,10 +108,8 @@ After reading this article, the user should feel comfortable getting started usi
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * YTo monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
-   * This is what a successful deployment looks like in the queue.
-   ![4.jpg](https://t3n.zendesk.com/attachments/token/wH3PrttvGpTrIL1Tj89rExFDE/?name=4.jpg)
 
 ### Install Centerity CentOS / Red Hat Agent 64bit Blueprint
 1. Locate the Centerity CentOS / Red Hat Agent 64bit Blueprint.
@@ -136,27 +134,18 @@ After reading this article, the user should feel comfortable getting started usi
    * Verify your configuration details.
 
 5. Deploy the Blueprint.
-   * Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
+   * Once verified, click the `deploy blueprint` button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
-   * This is what a successful deployment looks like in the queue.
-   ![l3.jpg](https://t3n.zendesk.com/attachments/token/lZe5rrMS3OHAQnuOWym0jMTD8/?name=l3.jpg)
 
 ### Access Centerity Monitor
 After your Blueprint deploys successfully, please follow these instructions to access your Centerity Monitor solution:
-* This is what a successful deployment looks like in the queue:
-  ![l3.jpg](https://t3n.zendesk.com/attachments/token/lZe5rrMS3OHAQnuOWym0jMTD8/?name=l3.jpg)
-
-* Check email to obtain Centerity Login information. This is what a successful deployment looks like in the queue:
-  ![l3.jpg](https://t3n.zendesk.com/attachments/token/lZe5rrMS3OHAQnuOWym0jMTD8/?name=l3.jpg)
-
-* Log in to the Centerity server via web browser with the provided credentials. This is what a successful deployment looks like in the queue:
-  ![l3.jpg](https://t3n.zendesk.com/attachments/token/lZe5rrMS3OHAQnuOWym0jMTD8/?name=l3.jpg)
-
+* Check email to obtain Centerity Login information.
+* Log in to the Centerity server via web browser with the provided credentials.
 * Review your dashboard and click on the top right question mark for the user guide.
   ![dashboard.jpg](https://t3n.zendesk.com/attachments/token/FC2YHIrUuu0ZvUcuhMVLoAMPq/?name=dashboard.jpg)
 
