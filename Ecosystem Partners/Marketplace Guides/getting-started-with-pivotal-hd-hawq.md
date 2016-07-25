@@ -37,17 +37,12 @@ You can achieve a single-button deployment of a new cluster, including an Ambari
 #### Steps
 1. Locate the Blueprint in the Blueprint Library.
    * Determine whether you will be building a test cluster with small nodes or a production cluster whose nodes are configured with increased CPU and RAM.
-   <img src="../../images/pivotal_hdhawq/cluster_blueprint_tiles.png" style="border:0;max-width:250px;">
-
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for "Pivotal HAWQ" in the keyword search on the right side of the page.
 
-2. Click the Deploy Blueprint button.
+2. Click the `deploy blueprint` button.
 
 3. Set Required parameters.
-
-   <img src="../../images/pivotal_hdhawq/deploy_cluster_parameters.png" style="max-width:450px;">
-
    * **EULA** - Click to accept the software end user license agreement.
    * **Cluster ID** - Set unique identifier for all hosts in this Greenplum cluster. This is used to help other hosts find and join into the cluster.
    * **Email Address** - Email address to receive build notification and HD+HAWQ access information
@@ -79,7 +74,7 @@ You can achieve a single-button deployment of a new cluster, including an Ambari
    * Access the Ambari dashboard via port 8080 on your Ambari server. Authenticate using the default credentials admin/admin.
    <img src="../../images/pivotal_hdhawq/ambari_dashboard.png" style="border:0;">
 
-8. Demo Application (optional).
+9. Demo Application (optional).
    * If you elected to install the optional demo application you may access the Chicago Crime Database from one of the HAWQ nodes - look for an email once the install is completed for personalized access details to get started immediately.
    * Execute these as the `gpadmin` user which already has permissions to the HAWQ datasource:
 
@@ -156,7 +151,7 @@ You can achieve a single-button deployment of a new cluster, including an Ambari
   LIMIT 250;
   ```
 
-12. Enable public access (optional).
+10. Enable public access (optional).
    * Servers are built using private IPs only with access with client or IPSEC VPN. For access from the Internet at large add a public IP to your master server.
    <a href="../../Network/how-to-add-public-ip-to-virtual-machine.md">
     <img style="border:0;width:50px;vertical-align:middle;" src="../../images/shared_assets/fw_icon.png">

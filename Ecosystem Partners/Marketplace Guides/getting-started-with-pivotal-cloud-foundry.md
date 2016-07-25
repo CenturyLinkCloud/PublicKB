@@ -48,9 +48,8 @@ Prior to beginning the software install you must create two groups and assign a 
    <img src="../../images/pivotal_pcf/creating_clc_groups.gif" style="">
 
 2. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for "Pivotal Cloud Foundry" in the keyword search on the right side of the page.
-   <img src="../../images/pivotal_pcf/cluster_blueprint_tiles.png" style="border:0;max-width:250px;">
 
 3. Click the `deploy blueprint` button.
 
@@ -58,7 +57,6 @@ Prior to beginning the software install you must create two groups and assign a 
    * **Email Address** - Email address to receive build notification and PCF access information
    * **Deploy PCF** - We will automatically configure Operations Director (which manages Micro BOSH) and Elastic Runtime. We can stop post-configuration for you to update settings or perform the full deploy on your behalf.
    * **Current Control User Password** - Enter (and confirm) the password associated with your account.
-   <img src="../../images/pivotal_pcf/deploy_cluster_parameters.png" style="max-width:450px;">
 
 5. Set Optional Parameters.
    * Password/Confirm Password (This is the root password for the server. Keep this in a secure place)
@@ -74,7 +72,6 @@ Prior to beginning the software install you must create two groups and assign a 
    * You will see the deployment details stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within 50 to 75 minutes.
    * Take note that the Blueprint status may indicate deployment has completed but there will be a several minute delay until the cluster itself is ready for use as some backup install tasks may still be in process.
-   <img src="../../images/pivotal_pcf/ops_mgr_blueprint_install_progress.png" style="border:0;width:70%;">
 
 8. Deployment Complete.
    * Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets within a few minutes.

@@ -25,20 +25,18 @@ Technology from Qubida Analytics helps CenturyLink Cloud customers address th
 CenturyLink Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the partner technology on
-CenturyLink Cloud. After executing the steps in this Getting Started document, the users will have a functioning BI analytics solution.
+After reading this article, the user should feel comfortable getting started using the partner technology on CenturyLink Cloud. After executing the steps in this Getting Started document, the users will have a functioning BI analytics solution.
 
 ### Deploying Qubida
-You can achieve a single-button deployment of a new Qubida Analytics instance using CenturyLink Cloud Blueprints. 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+You can achieve a single-button deployment of a new Qubida Analytics instance using CenturyLink Cloud Blueprints.
+1. Locate the Blueprint in the Blueprint Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for "Qubida Analytics Trial" in the keyword search on the right side of the page.
-   <img src="../../images/qubida/blueprint_tile.png" style="border:0;max-width:250px;">
 
 2. Click the `deploy blueprint` button.
 
 3. Set Required parameters.
    * **Email** - Enter email address to receive email post successful deployment of Qubida Analytics server.
-   <img src="../../images/qubida/deploy_parameters.png" style="max-width:450px;">
 
 4. Set Optional Parameters.
    * Password/Confirm Password (This is the root password for the server. Keep this in a secure place).

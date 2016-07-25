@@ -47,8 +47,6 @@ You can achieve a single-button deployment of a new cluster including a master h
 2. Click the Deploy Blueprint button.
 
 3. Set Required parameters.
-   <img src="../../images/pivotal_greenplum/deploy_cluster_parameters.png" style="max-width:450px;">
-
    * **EULA** - Click to accept the software end user license agreement.
    * **Cluster ID** - Set unique identifier for all hosts in this Greenplum cluster. This is used to help other hosts find and join into the cluster.
   * **Email Address** - Email address to receive build notification and Greenplum access information.
@@ -75,7 +73,7 @@ You can achieve a single-button deployment of a new cluster including a master h
    * If you elected to install the optional web command center you may access it via http on port `20800`. Authenticate using the `gpmon` user and your administrative credentials.
    <img src="../../images/pivotal_greenplum/web_command_center.png" style="border:0;">
 
-8. Demo Application (optional).
+9. Demo Application (optional).
    * If you elected to install the optional demo application you may access the database from the master server.
    * Follow the [Pivotal Greenplum demo lab](https://github.com/pivotalsoftware/pivotal-samples/tree/master/Labs) to quickly get up to speed on the Greenplum platform. ssh to your host as `root` then authenticate using the `gpadmin` user and your administrative credentials.
 
@@ -103,7 +101,7 @@ You can achieve a single-button deployment of a new cluster including a master h
   default=#
   ```
 
-12. Enable public access (optional).
+10. Enable public access (optional).
    * Servers are built using private IPs only with access with client or IPSEC VPN. For access from the Internet at large add a public IP to your master server.
 
   <a href="../../Network/how-to-add-public-ip-to-virtual-machine.md">

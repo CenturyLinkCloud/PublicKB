@@ -49,12 +49,12 @@ If using the RMM to for Disaster Recovery, the DR configuration and operation ca
 ### Deploying the Rackware Blueprint
 #### Steps to Deploy Blueprint
 1. Locate the "Install RackWare RMM on Linux" Blueprint.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-   * Search for "RackWare RMM" in the keyword search on the right side of the page.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * Search for 'RackWare RMM' in the keyword search on the right side of the page.
    * Locate the 'Install RackWare RMM on Linux' Blueprint.
 
 2. Choose and Deploy the Blueprint.
-   * Click the "Install RackWare RMM on Linux" Blueprint.
+   * Click the 'Install RackWare RMM on Linux' Blueprint.
 
 3. Customize the Blueprint.
    Provide the input global Blueprint values.
@@ -76,7 +76,7 @@ If using the RMM to for Disaster Recovery, the DR configuration and operation ca
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Deploy the RMM to an existing server (alternate option)  
@@ -86,28 +86,25 @@ The RMM is available as a Script Package for deployment on a newly provisioned s
 Identify the server targeted for RMM installation. The Operating system must be supported by the Script Package. The server must be a server within your CenturyLink Cloud account.
 
 Installation set up for RackWare is comprised of a dedicated server (physical or virtual) running the RMM. The RMM server requirements are as follows:
-
-  - x86_64 architecture (Intel or AMD)
-  - RHEL / CentOS v6 (6.5 or higher)
-  - 10 GB or more of storage on /opt/
-  - 5 GB or more storage on /srv/   
-  - 5 GB or more of storage on /tmp
-  - 16 GB memory
-  - 4 cores (vCPU)
-  - Additional storage on /srv/ sufficient to hold captured Images
+* x86_64 architecture (Intel or AMD)
+* RHEL / CentOS v6 (6.5 or higher)
+* 10 GB or more of storage on /opt/
+* 5 GB or more storage on /srv/   
+* 5 GB or more of storage on /tmp
+* 16 GB memory
+* 4 cores (vCPU)
+* Additional storage on /srv/ sufficient to hold captured Images
 
 The RMM installation requires the following additional configuration:
-
-  - Working yum manager with EPEL package
-  - SELinux is disabled
-  - Name resolution must be configured and working.
-  - Access to the Internet for additional packages
-  - Install as root
+* Working yum manager with EPEL package
+* SELinux is disabled
+* Name resolution must be configured and working.
+* Access to the Internet for additional packages
+* Install as root
 
 If mount points are set up for /opt, /srv, or /tmp, be sure to set up those mount points in the /etc/fstab file.
 
-The following ports are required to the Internet:
-       TCP port 443.
+The following ports are required to the Internet: TCP port `443`.
 
 *** These requirements are necessary only during the installation. After a successful installation, these requirements do not apply for normal RMM operation.
 
@@ -123,10 +120,9 @@ If using RHEL without a subscription, a DVD should be configured as the repo.
 Download and execute the "rackware-pre-installation_v1.1.sh" script on the RMM Server.
 
 This script must be executed from root or with sudo with root permissions.  It will generate a file called:
-       rackware-pre-install-output-(date-time)
+rackware-pre-install-output-(date-time)
 
 This file must be emailed to licensing@rackwareinc.com. RackWare will generate a license file called:
-
 rackware-license-(date-time)
 
 Where the (date-time) is the original date-time in the original rackware-pre-install-output-(date-time).
