@@ -580,7 +580,7 @@ clc server get --server-name CA3ABCDTAKE02 --query details.snapshots.id --output
 clc server delete-snapshot --server-name CA3ABCDTAKE02 --snapshot-id 1
 ```
 ### Site to Site vpn (create/delete/list/update)
-**Create Site to Site VPN
+**Create Site to Site VPN**
 ```
 clc site-to-site-vpn create --local "alias=CA2,subnets=10.x.x.0/24" --remote "siteName=NH,deviceType=pfsense,address=76.x.x.x,subnets=192.168.1.0/24" --ipsec "encryption=aes128,hashing=sha1_96,protocol=esp,pfs=group2,lifetime=28800" --ike "encryption=aes128,hashing=sha1_96,diffieHellmanGroup=group2,preSharedKey=b7fd0390436a4556a17c42f79d782eb9,lifetime=28800,mode=main,deadPeerDetection=false,natTraversal=false,remoteIdentity=false"
 ```
