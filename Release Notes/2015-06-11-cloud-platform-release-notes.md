@@ -56,9 +56,6 @@
 
 ### Ecosystem: New Blueprints (5)
 
-* [__Pivotal HD + HAWQ.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-hd-hawq.md)
-This latest entry from Pivotal in our Cloud Marketplace provides the best of both worlds in the data management space - the scalability and flexibility of Hadoop with the structured query support of HAWQ.  This Open Data Platform (ODP) compliant solution contributes to a more standards-based implementation of the Hadoop File System (HDFS), which will over time help accelerate enterprise productivity around this cost-saving, scale-ready technology.
-
 * [__Vormetric.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-encryption-agent-deployment-blueprints.md)
 This security solution complements our previous integration with Vormetric Security Manager, allowing the deployment of encryption agents to various server endpoints on the CenturyLink Cloud.  With Vormetric, a single infrastructure and management environment protects data wherever it resides with file, volume and cloud storage encryption, tokenization with dynamic data masking, field-level application encryption, sophisticated access control policies, third party and integrated encryption key management.
 
@@ -74,7 +71,7 @@ Even though our global cloud platform is able to scale to various enterprise wor
 
 ### Open Source Contributions (2) 
 
-* [__Lorry.io.__](//lorry.io/) Lorry.io is a CenturyLink Labs open-source project for creating, validating and sharing Docker Compose YAML files. Docker-compose.yml files are used to define and run complex applications with Docker and Docker Compose. Lorry.io can also import Panamax templates and convert them into docker-compose.yml files. For more information, [read this blog post](../developers/blog/post/lorry-io-pathway-to-docker-composable-apps/) and [browse the wiki here](//github.com/CenturyLinkLabs/lorry).
+* [__Lorry.io.__](//lorry.io/) Lorry.io is a CenturyLink Labs open-source project for creating, validating and sharing Docker Compose YAML files. Docker-compose.yml files are used to define and run complex applications with Docker and Docker Compose. Lorry.io can also import Panamax templates and convert them into docker-compose.yml files. For more information, [read this blog post](../developers/blog/post/lorry-io-pathway-to-docker-composable-apps.md) and [browse the wiki here](//github.com/CenturyLinkLabs/lorry).
 
 * **Updates:**
 
