@@ -41,24 +41,19 @@ Access to the CenturyLink Cloud platform as an authorized user.
 
 #### Steps to Deploy Blueprint
 1. Provision three new servers using the steps below.
-   * Click 'CREATE SERVER' from the CenturyLink Control Portal Dashboard. Refer to the image below for a sample.
-   ![](../../images/BTSS1A.png)
-   * Set 'data center', 'group member of', 'operating system', 'server name', 'description', 'admin/root password' and 'confirm password'. Refer to the image below for a sample.
-   ![](../../images/BTSS1B.png)
-   * Set 'cpu', 'memory' and 'network'. Then press the 'CREATE SERVER' button. Refer to the image below for a sample.
-   ![](../../images/BTSS1C.png)
-   * This will kick off the server provisioning process and load a page to allow you to track the progress. Refer to the image below for a sample.
-   ![](../../images/BTSS1D.png)
+   * Login to the Control Portal. From the Nav Menu on the left, click **Create > Server**.
+   * Set 'data center', 'group member of', 'operating system', 'server name', 'description', 'admin/root password' and 'confirm password'.
+   * Set 'cpu', 'memory' and 'network'.
+   * Then click the `create server` button.
+   * This will kick off the server provisioning process and load a page to allow you to track the progress.
 
 Note: the server names should indicate the role the server will assume.
 
 2. Locate the BizTalk Server 2013 R2 Distributed Blueprint.
-   * Click 'BLUEPRINTS LIBRARY' from the CenturyLink Control Portal Dashboard. Refer to the image below for a sample."
-   ![](../../images/BTSS2A_1.png)
-   * Locate and click on the 'BizTalk Server 2013 R2 Distributed' Blueprint. Refer to the image below for a sample."
-   ![](../../images/BTSS2A_2.png)
-   * Click the 'deploy blueprint' button. Refer to the image below for a sample."
-   ![](../../images/BTSS2A_3.png)
+   * From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * Locate and click on the 'BizTalk Server 2013 R2 Distributed' Blueprint.
+   * Click the `deploy blueprint` button.
+
 3. Customize the Blueprint.
    * Set the AD/DNS Server properties for the AD/DNS server.
       * 'Execute on Server' - set to the provisioned AD/DNS server name
@@ -67,8 +62,6 @@ Note: the server names should indicate the role the server will assume.
       * 'Net BIOS Name' - set to your domain Net BIOS name
       * 'Safe Mode Admin Password' - set to your domain administrator password
       * 'Confirm Safe Mode Admin Password' - set to your domain administrator password
-
-      ![](../../images/AD_DNS_Server.png)
 
    * Set the SQL Server properties for the SQL Server and Enterprise Single Signon server.
       * 'Execute on Server' - set to the provisioned SQL/SSO server name
@@ -79,14 +72,10 @@ Note: the server names should indicate the role the server will assume.
       * 'Management Tools' - check this feature
       * 'Connectivity Components' - check this feature
 
-      ![](../../images/SQL_Server.png)
-
    * Set the ENTSSO Server properties.
       * 'Execute on Server' - set to the provisioned SQL/SSO server name
       * 'Company Name' - set to your company name
       * 'User Name' - set to your name
-
-      ![](../../images/ENSSSO_Server.png)
 
    * Set the Join SQL/ENTSSO server to the domain.
       * 'Execute on Server' - set to the provisioned SQL/SSO server name
@@ -96,7 +85,6 @@ Note: the server names should indicate the role the server will assume.
       * 'Domain Admin Password' - set to your domain administrator password
       * 'Confirm Domain Admin Password' - set to your domain administrator password
 
-      ![](../../images/Join_SQLSSO_Server.png)
 	4. Set the BTS Runtime server properties.
      * 'Execute on Server' - set to the provisioned BizTalk Runtime server name
      * 'Execute on Server' - set to the provisioned BizTalk Runtime server name
@@ -109,19 +97,18 @@ Note: the server names should indicate the role the server will assume.
      * 'Domain Admin Password' - set to your domain administrator password
      * 'Confirm Domain Admin Password' - set to your domain administrator password
 
-     ![](../../images/BTS_Runtime_Server.png)
-
 5. Review and Confirm the Blueprint.
-   * Verify your configuration details. Refer to the image below for a sample.
+   * Verify your configuration details.
 
-   ![](../../images/BTSS2D.png)
 6. Deploy the Blueprint.
-   * Once verified, click on the 'deploy blueprint' button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
-   * his will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
+   * Once verified, click the `deploy blueprint` button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
+   * This will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
+
 7. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
+
 8. Configure BizTalk Server.
    * For information about installing and configuring BizTalk Server in general please see the following Microsoft documentation.
    * [Installation Overview for BizTalk Server 2013 and 2013 R2](https://msdn.microsoft.com/en-us/library/jj248688.aspx)

@@ -9,7 +9,6 @@
 ![Clustrix Logo](../../images/clustrix_blue.png)
 
 ### Technology Profile
-
 Clustrix provides the leading scale-out SQL database engineered for the cloud.  It is the first database built specifically to meet the revenue scaling, performance and availability demands of today’s web sites and applications such as those for eCommerce, healthcare and finance. With ClustrixDB, you can build business critical applications that support massive transactional volume and real-time reporting of business performance metrics.
 
 ### Description
@@ -30,14 +29,13 @@ ClustrixDB is a drop-in replacement for MySQL that provides simplicity of manage
 
 Current Release is v 7.0.1 (6/15/2015)
 
-For more information, please visit www.clustrix.com
+For more information, please visit www.clustrix.com.
 
 ### Audience
 CenturyLink Cloud Users
 
 ### Impact
 After reading this article, the user should understand what ClustrixDB does, how to deploy it, and how to contact Clustrix to get more information or product license/keys for evaluation and production.
-
 
 ### Prerequisite
 * Access to the CenturyLink Cloud platform as an authorized user.
@@ -53,7 +51,7 @@ To access your application from a computer outside the CenturyLink Cloud network
 
 #### Steps to Deploy Blueprint
 1. Locate the “Install ClustrixDB v-7-0-1" Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Clustrix” in the keyword search on the right side of the page.
    * Locate the "ClustrixDB v-7-0-1" Blueprint.
 
@@ -65,12 +63,12 @@ To access your application from a computer outside the CenturyLink Cloud network
    * On the first Deploy page you will be able to setup the Password, Group, Network, DNS and Server Names to match your requirements.
    * You need to set the Server Type to Hyperscale to provision local SSD storage.
    * Once you've completed the required modifications push the `next` button to review your settings.
-   * Now push the `deploy blueprint` button again to begin deployment.
+   * Click the `deploy blueprint` button again to begin deployment.
    * You will see the deployment details along with an email stating the Blueprint is queued for execution.
 
 4. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access your ClustrixDB cluster

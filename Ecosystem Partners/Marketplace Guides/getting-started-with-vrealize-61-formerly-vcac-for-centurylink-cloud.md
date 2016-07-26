@@ -3,12 +3,13 @@
   "date": "12-16-2014",
   "author": "Jared Ruckle",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 *Updated 17 Dec 2014 by David Shacochis*
 
 ### vRealize CenturyLink Cloud
+
 [vRealize](http://www.vmware.com/products/vrealize-suite/)(formerly vCloud Automation Center, or vCAC) is a cloud management platform that enables users to perform functions against VMware vSphere, other hypervisors, and select public clouds. vRealize gives IT pros:
 * A self-service portal for building and managing virtual infrastructure
 * An orchestration tool for designing multi-tier applications

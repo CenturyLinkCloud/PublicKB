@@ -1,5 +1,5 @@
 {{{
-  "title": "Yellowfin 7.1 for CenturyLink",
+  "title": "Yellowfin 7.2 for CenturyLink",
   "date": "12-30-2015",
   "author": "Cadell Falconer",
   "attachments": [],
@@ -34,7 +34,7 @@ To access your application from a computer outside the CenturyLink Cloud network
 * Visit your Public IP address in a web browser.
 * Click the "Register to Receive your login details" link and follow the prompts.
 
-### Deploying the Yellowfin 7.1 Template
+### Deploying the Yellowfin 7.2 Template
 
 ### How to Deploy the Partner Image
 1. Create an email to ServiceTasks@ctl.io.
@@ -52,7 +52,7 @@ To access your application from a computer outside the CenturyLink Cloud network
 
   Please create a ticket to import the Ecosystem Partner Template image referenced below to my CenturyLink Cloud Account:
 
-  - Import CenturyLink Ecosystem Partner Source Image: Yellowfin 7.1 29012016 (from account YFBI)
+  - Import CenturyLink Ecosystem Partner Source Image: Yellowfin 7.2 20160701 (from account YFBI)
   - My CenturyLink Cloud Account Alias: ####
   - My CenturyLink Cloud Account PIN:  ######
   - Data Center to import image to: ###
@@ -68,7 +68,7 @@ To access your application from a computer outside the CenturyLink Cloud network
 	   ``` 	
 Your account alias and PIN are available from your account info page and your user profile page respectively.
 
-### Access your Yellowfin 7.1 server
+### Access your Yellowfin 7.2 server
 After your Blueprint deploys successfully, please follow these instructions to access your server.
 * [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal
 * [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
@@ -80,7 +80,7 @@ After your Blueprint deploys successfully, please follow these instructions to a
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Yellowfin 7.1 for CenturyLink license costs or additional fees bundled in.
 
 ### About Yellowfin
-CenturyLink Cloud works with [Yellowfin](http://www.yellowfinbi.com/) to provide Yellowfin 7.1, a business Intelligence software package.
+CenturyLink Cloud works with [Yellowfin](http://www.yellowfinbi.com/) to provide Yellowfin 7.2, a business Intelligence software package.
 
 ### Frequently Asked Questions
 

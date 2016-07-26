@@ -32,56 +32,44 @@ After reading this article, users should  be able to start a server running Couc
 ### Postrequisite
 After you successfully install a Blueprint, you will receive a notification email. If you want to access your application from a computer that is outside of the CenturyLink Cloud network, you need to perform the following steps:
 * [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the CenturyLink the Control Portal.
-* Click on the Servers Public IP through the Control Portal and configure the ports. The default port for Couchbase Server is 8091. For the additional available network ports, refer to the Couchbase Server [documentation](http://developer.couchbase.com/documentation/server/4.1/install/install-ports.html).
+* Click on the Servers Public IP through the Control Portal and configure the ports. The default port for Couchbase Server is `8091`. For the additional available network ports, refer to the Couchbase Server [documentation](http://developer.couchbase.com/documentation/server/4.1/install/install-ports.html).
 
 ### Deploying the Couchbase Server Blueprint
 
 #### Steps to Deploy Blueprint
 1. Locate the Couchbase Server Blueprint.
-   * Log into the CenturyLink Control Portal.
-   * Click **sign in**. The dashboard containing CenturyLink servers will open, where you can select servers and the Blueprints library.    
-   ![](../../images/2-dashboard-uc.png)
-   * To find the Couchbase Blueprint, select the green Dashboard area on the top and then select **Blueprints Library**.
-   * In the panel "Blueprints Library", if needed use the keyword search on the right to select among multiple Blueprints. In our case, choose from the available displayed Blueprint thumbnails.
-  ![](../../images/4-bp-lib.png)               
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * In the panel "Blueprints Library", if needed use the keyword search on the right to select among multiple Blueprints. In our case, choose from the available displayed Blueprint thumbnails.         
 
 2. Choose the Blueprint.   
-   * Click on **Install Couchbase Server on CentOS6**.   
+   * Click on Install "Couchbase Server on CentOS6".   
 
 3. Deploy the Blueprint.    
-   * In the panel "Install Couchbase Server on CentOS6", click **deploy blueprint**.  
-   ![](../../images/6-install-cbs-osx.png)   
+   * In the panel "Install Couchbase Server on CentOS6", click the `deploy blueprint` button.
 
-4. **Customize the Blueprint**   
-   * Use the panel "Deploy install Couchbase Server on CentOS6 Blueprint" customize your Blueprint.    
-   ![](../../images/7-customize-bp.png)   
-
-    *  **Build Server(s)** by entering or choosing the following:
-		* Password: *password*
-        * Confirm the same password: *password*
-        * Group: **default**.
-        * Network: *network ID*
-        * Primary DNS: **Manually Specify**
-        * Secondary DNS: **Manually Specify**
-        * Server Type: **Standard (default)**.
-        * Service Level: choose between **Premium** or **Standard**.
-    *  **Server Name(s)**. Enter a name, such as **CBNODE**.
-    *  **Specify Credentials**. To run the task under the default administrative account, leave **NO** for credentials.    
-   ![](../../images/8-nextstep-2.png)      
-
-   * Click on **next step**.
+4. Customize the Blueprint.
+   * Password: *password*
+   * Confirm the same password: *password*
+   * Group: **default**.
+   * Network: *network ID*
+   * Primary DNS: **Manually Specify**
+   * Secondary DNS: **Manually Specify**
+   * Server Type: **Standard (default)**.
+   * Service Level: choose between **Premium** or **Standard**.
+   * **Server Name(s)**. Enter a name, such as **CBNODE**.
+   * **Specify Credentials**. To run the task under the default administrative account, leave **NO** for credentials.
+   * Click the next: `step 2 button`.
 
 5. Review the Blueprint.           
    * Verify the information.           
-   * If your information is correct, click the **deploy blueprint** button.
+   * If your information is correct, click the `deploy blueprint` button.
 
 6. Deploy the Blueprint.   
-   * In the panel "Deploy Blueprint: install Couchbase Server on CentOS6" you will see the deployment details.   
-   ![](../../images/10-deploy-bprint.png)   
+   * In the panel "Deploy Blueprint: install Couchbase Server on CentOS6" you will see the deployment details.      
 
 7. Monitor the Activity Queue.        
    * Monitor the Deployment Queue to view the progress of the Blueprint deployment.
-   * Access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email confirming that the Blueprint build is complete. Do not use the application until you have received this email notification.
 
 ### Pricing

@@ -27,6 +27,7 @@ Users employed by companies that have agreed to terms with [CenturyLink Sales](h
 * It is advised that customers perform the conversion during a maintenance window due to potential impact on running services.
 * It is recommended to create a snapshot of the VM before running the management process
 * Normally, a single CPI Blueprint will take between ten and thirty minutes to complete. However, this can be influenced by jobs in the queue
+* Due to security concerns, customers will be unable to convert a sub-account VM to Managed while using an IP address from a parent account network. The network chosen for the VM must belong to the same account upon which the machine resides.
 * To preconfigure network access, prior to making an unmanaged VM Managed, please be sure at least one [new, managed server](../Managed Services/created-a-managed-server-now-what.md) has been created in the desired VLAN/Network.
 
 

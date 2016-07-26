@@ -38,7 +38,7 @@ MEAN is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
 1. Locate the MEAN Stack Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “MEAN” in the keyword search on the right side of the page.
    * Locate the 'Install MEAN on Linux' Blueprint.
 
@@ -56,12 +56,12 @@ MEAN is available as a Blueprint for deployment on a new server.
    * Verify your configuration details.
 
 5. Deploy the Blueprint.
-   * Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
+   * Once verified, click the `deploy blueprint` button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Deploy MEAN to an existing server (alternate option)
@@ -85,12 +85,11 @@ The MEAN Stack is available as a Script Package for deployment on an existing se
 
 5. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access your MEAN server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
-
 1. Check email to obtain Server Name and IP Address Login information
 2. Log in to the server and start having fun!
 

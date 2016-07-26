@@ -48,11 +48,11 @@ After executing the steps in this Getting Started document, the users will have 
 
 ### Postrequisite
 After the Blueprint completes, you will need to RDP to the server, login to the Commvault GUI and perform the follows tasks under Library and Drive configuration, and perform the following tasks:
-* Change your default admin password to something secure
-* [Install the Commvault Media Agent](http://documentation.commvault.com/commvault/v10/article?p=deployment.html) on this server
-* [Configure the Commvault libraries](http://documentation.commvault.com/commvault/v10/article?p=features/library_drive_config/library_drive_configuration_getting_started.html)
-* [Create a schedule policy](http://documentation.commvault.com/commvault/v10/article?p=features/schedule_policy/getting_started.htm)
-* [Create a deduplication policy](http://documentation.commvault.com/commvault/v10/article?p=features/deduplication/t_creating_a_global_deduplication_policy.htm)
+* Change your default admin password to something secure.
+* [Install the Commvault Media Agent](http://documentation.commvault.com/commvault/v10/article?p=deployment.html) on this server.
+* [Configure the Commvault libraries](http://documentation.commvault.com/commvault/v10/article?p=features/library_drive_config/library_drive_configuration_getting_started.html).
+* [Create a schedule policy](http://documentation.commvault.com/commvault/v10/article?p=features/schedule_policy/getting_started.htm).
+* [Create a deduplication policy](http://documentation.commvault.com/commvault/v10/article?p=features/deduplication/t_creating_a_global_deduplication_policy.htm).
 * If you want to access Commvault server over the internet, please perform the following tasks once you receive an email confirming you Blueprint completed successfully.
    * To connect to your Commvault server via the Internet, Add a [Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/how-to-configure-client-vpn.md) or similar technology.
    * [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal.
@@ -67,7 +67,7 @@ After the Blueprint completes, you will need to RDP to the server, login to the 
 
 ### Steps to deploy Commvault Blueprints
 1. Locate the Commvault Blueprints.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Commvault” in the keyword search on the right side of the page.
    * Locate the "Commvault" Blueprint for the platform you want to deploy on.
 
@@ -95,12 +95,12 @@ After the Blueprint completes, you will need to RDP to the server, login to the 
    * Verify your configuration details.
 
 5. Deploy the Blueprint.
-   * Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
+   * Once verified, click the `deploy blueprint` button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access Commvault File Server
@@ -109,7 +109,7 @@ After your Blueprint deploys successfully, please follow these instructions to a
 * Connect to the Commvault Server by using Remote Desktop and logging in as Administrator.
 * Find and run “Simpana Administrative Console” from search in windows 2012.
 * Login to the Commserve GUI with the usernamein `admin` and password `admin`.
-* Configure your Commvault solution apprpriately. See the Post-Requisite section for more details.
+* Configure your Commvault solution appropriately. See the Post-Requisite section for more details.
 
 ### Pricing
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Commvault license costs or additional fees bundled in. Licensing and Pricing for Simpana need to be aligned with software contract. Please contact CommVault Sales for information: [Contact Commvault sales](http://www.commvault.com/contact-us).

@@ -22,24 +22,19 @@ http://www.conx.io/
 |sales-clc@conx.io |
 
 ### Description
-Conxio is a secure communication platform that enables financial institutions to connect with their customers over ATMs or any other
-connected devices and exchange end-to-end encrypted and untraceable messages, including streaming video and sharing desktops. Conxio is the first solution of its kind that works on HTML5 and does not require installation of any app while working on any connected device. Conxio is aligned with ISO 27001 and is capable of delivering compliance with HIPAA, SEC, FISMA-2002, internal and external certification requirements.
+Conxio is a secure communication platform that enables financial institutions to connect with their customers over ATMs or any other connected devices and exchange end-to-end encrypted and untraceable messages, including streaming video and sharing desktops. Conxio is the first solution of its kind that works on HTML5 and does not require installation of any app while working on any connected device. Conxio is aligned with ISO 27001 and is capable of delivering compliance with HIPAA, SEC, FISMA-2002, internal and external certification requirements.
 
 ### Audience
 CenturyLink Cloud Users
 
 ### Deploying via Blueprint Packages
 1. Locate the Blueprint in the Blueprint Library.
-   <img src="../../images/conxio/blueprint_tile.png" style="border:0;max-width:250px">
-
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Conxio Everywhere” in the keyword search on the right side of the page.
 
 2. Click the `deploy blueprint` button.
 
 3. Set Required parameters.
-   <img src="../../images/conxio/deploy_parameters.png" style="max-width:450px;">
-
    * **Server Root Password** - Re-confirm the server root password you've chosen.
 
 4. Review and Confirm the Blueprint.

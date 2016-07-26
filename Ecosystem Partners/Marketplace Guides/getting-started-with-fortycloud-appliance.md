@@ -6,26 +6,19 @@
   "contentIsHTML": false
 }}}
 
-
-
 ### Technology Profile
-
 <img src="../../images/fortycloud/fortycloud_logo.png" style="border:0;float:right;max-width: 150px;">
 
 FortyCloud is a unique security solution for cloud infrastructure deployments that is delivered as a service. FortyCloud makes your public cloud private by building a secure and dynamic perimeter around your cloud infrastructure resources.
 
 http://www.fortycloud.com
 
-
 ##### Customer Support
-
 | Sales Contact  | Support Contact  |
 |:- |:- |
 | sales@fortycloud.com  | centurylink@fortycloud.com  |
 
-
 ### Description
-
 FortyCloud provides a comprehensive security solution for IaaS using Software Defined Networking (SDN) and Software Defined Security (SDS) technologies. All important IT security elements, like AAA, encryption and firewall, are packaged together in the FortyCloud solution and are delivered in SaaS model. Using an Intuitive UI, the FortyCloud solution allows even non-security experts to easily configure fine-grained security policies that are then enforced using the different FortyCloud network entities.
 
 Benefits:
@@ -35,29 +28,23 @@ Benefits:
 * **Business agility** – Security is no longer a barrier to growth; with FortyCloud, security scales according to business requirements.
 * **Operational efficiency** - All networking and access related security tasks are automated.
 
-For more information visit: www.fortycloud.com
-
+For more information visit: www.fortycloud.com.
 
 ### Audience
 CenturyLink Cloud Users
-
 
 ### Prerequisites
 * Access to the CenturyLink Cloud platform as an authorized user.
 * control.ctl.io account with password authentication (two factor authentication not yet supported).
 
-
 ### Steps to Deploy a New Appliance
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for "FortyCloud Appliance" in the keyword search on the right side of the page.
 
-   <img src="../../images/fortycloud/blueprint_tile.png" style="border:0;max-width:250px;">
+2. Click the `deploy blueprint` button.
 
-2. Click the Deploy Blueprint button.
 3. Set Required parameters.
-   ![Deploy Parameters](../../images/bpimager/deploy_parameters.png)
-
    * **Control User Password** - The password associated with your control.ctl.io login.
 
 4. Set Optional Parameters.
@@ -116,7 +103,6 @@ CenturyLink Cloud Users
 
 11. You can now proceed with the Gateway configuration. 'How to' tutorials are available via the Support Center link located on the top right corner.
 
-
 ### Pricing
 The costs listed above in the above steps are for the infrastructure only.
 
@@ -124,11 +110,9 @@ After deploying this Blueprint, you may secure entitlements to the technology us
 * Email: sales@fortycloud.com
 * Visit our pricing plan page: http://fortycloud.com/pricing/ and take advantage of FortyCloud's 30-day free trial offer
 
-
 ### Frequently Asked Questions
 **Where do I obtain my license?**
 In order to create a new license visit our new account request page: http://campaign.fortycloud.com/30-day-free-trial/
-
 
 **Who should I contact for support?**
 * For issues related to deploying CloudBolt email centurylink@fortycloud.com.

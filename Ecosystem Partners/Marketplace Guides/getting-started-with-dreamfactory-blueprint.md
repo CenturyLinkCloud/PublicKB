@@ -27,18 +27,16 @@ After reading this article, the user should feel comfortable getting started usi
 
 ### Postrequisite
 * If you want to access your application over the internet, please perform the following tasks after you receive an email notifying you that the Blueprint completed successfully.
-
 * If you need to connect to your server via the Internet, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
-
 * [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
-  * The default ports to access the application are: 80, 443.
+  * The default ports to access the application are: `80`, `443`.
 
 ### Deploying DreamFactory on a New Server
 DreamFactory is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
 1. Locate the DreamFactory Stack Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “DreamFactory” in the keyword search on the right side of the page.
    * Locate the 'Install DreamFactory on Linux' Blueprint.
 
@@ -68,7 +66,7 @@ DreamFactory is available as a Blueprint for deployment on a new server.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Deploy DreamFactory to an existing server (alternate option)
@@ -101,7 +99,7 @@ The DreamFactory Stack is available as a Script Package for deployment on an exi
 
 5. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access your DreamFactory server
