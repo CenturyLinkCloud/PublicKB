@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-## Article Overview
+### Article Overview
 This article walks you through the process of enabling, modifying, viewing, and taking checkpoints within your SafeHaven protection groups. Checkpoints are used by SafeHaven as the restorable points for a server and determine your recovery point objective.
 
 ## Enabling Checkpoints
@@ -18,10 +18,10 @@ This article walks you through the process of enabling, modifying, viewing, and 
 3. Under Checkpoint Period, ensure that **Checkpoints Enabled** is check marked and that a proper period time is specified. This is the frequency of checkpoints taken by SafeHaven.
    ![Checkpoints Enabled](../images/SAHA31-Checkpoints-2.png)
 
-## Editing Checkpoints
+### Editing Checkpoints
 Similar to the above process, proceed to the **Edit Checkpoints Period**. From there you can modify the Checkpoint Period previously specified.
 
-## Taking a Manual Checkpoint
+### Taking a Manual Checkpoint
 There may be times when you wish to take a manual Checkpoint, either for test failover scenarios, or after some large changes have been synchronized.
 
 1. Right-click on the protection group you wish to take a Checkpoint of and select Create Checkpoint.
@@ -35,7 +35,7 @@ There may be times when you wish to take a manual Checkpoint, either for test fa
 
    ![Completed Checkpoints](../images/SAHA31-Checkpoints-6.png)
 
-## Viewing Checkpoints
+### Viewing Checkpoints
 To view both automatic and manual checkpoints, take follow the next steps.
 
 1. Open the SafeHaven Console and login to the CMS.
