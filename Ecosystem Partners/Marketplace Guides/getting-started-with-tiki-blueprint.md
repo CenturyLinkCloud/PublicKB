@@ -12,7 +12,6 @@
 Sure, Tiki Wiki is a wiki, but Tiki Wiki CMS groupware is much more. The stack includes tools for creating robust knowledge bases, collaboration and project management, website and blog publishing, CRM help desk, e-learning and more. Tiki can be used to create many different kinds of web apps, sites, portals, intranets, or extranets. With so much power, we look forward to hearing what your team builds with the free Tiki Wiki package from Bitnami.
 
 ### Description
-
 Through the CenturyLink Blueprint integration, Tiki Wiki CMS Groupware provides a click-through solution to install and configure Tiki Wiki CMS Groupware on the Linux platform.
 
 For more information, please visit http://info.tiki.org.
@@ -39,7 +38,7 @@ Tiki Wiki CMS Groupware is available as a Blueprint for deployment on a new serv
 
 #### Steps to Deploy Blueprint
 1. Locate the Bitnami Tiki Wiki CMS Groupware Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Tiki Wiki CMS Groupware” in the keyword search on the right side of the page.
    * Locate the 'Install Bitnami Tiki Wiki CMS Groupware on Linux' Blueprint.
 
@@ -77,7 +76,7 @@ Tiki Wiki CMS Groupware is available as a Blueprint for deployment on a new serv
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Deploy Tiki Wiki CMS Groupware to an existing server (alternate option)
@@ -119,7 +118,7 @@ Bitnami Tiki Wiki CMS Groupware is available as a Script Package for deployment 
 
 5. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access your Tiki Wiki CMS Groupware server

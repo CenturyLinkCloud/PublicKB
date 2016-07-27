@@ -53,8 +53,6 @@ A:** This endpoint only works with vRealize 6.1.
 
 **Q: How do customers authenticate vRealize with the CenturyLink Cloud?
 A:** Customers use API credentials from the Control Portal.
-![vRealize_3](../../images/vRealize_3.png)
-
 ![vRealize_4](../../images/vRealize_4.png)
 
 **Q: How does the endpoint show up for CenturyLink Cloud customers?
