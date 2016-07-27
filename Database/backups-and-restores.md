@@ -7,19 +7,19 @@
   "contentIsHTML": false
 }}}
 
-#### Audience
+### Audience
 This article is to support customers of Relational DB Service, CenturyLink's MySQL compatible database-as-a-service product. These instructions are specific to performing backups and restores through the Control Portal.
 
-#### Overview
+### Overview
 CenturyLink's Relational DB Service is a MySQL-compatible database-as-a-service that provides instant access to a database instance with SSL support, daily backups, restore functionality, basic monitoring and a replication option. Users can configure the amount of CPU, Memory, and Storage based on their database needs. They can choose to replicate their instance in a datacenter for a more highly available solution. As the customer's capacity needs grown, they can easily scale their CPU, RAM, and/or Storage with the click of a button.
 
-#### Prerequisites
+### Prerequisites
 Access to the CenturyLink Cloud Platform as an authorized user
 
 ### Relational DB Backups
 The Relational DB service includes daily, automated hot backups as well as the ability to take a backup on demand. Users have the ability to define the time of day backups are run as well as a data retention policy. Backups are held off-site at least 350 miles from the datacenter housing the Relational DB instance. Backups are always held in the same country as the Relational DB instance in order to maintain data sovereignty.
 
-#### Defining your Backup Policy
+### Defining your Backup Policy
 
 1. Upon provisioning of a Relational DB instance, the user is asked to define their Backup Schedule and their Backup Retention. The Backup Schedule governs the time of day all automated, daily backups are taken. Backup retention can be set to any value between 1 and 35 days. Please note that increasing your backup retention period may increase the backup storage consumed by your instance. Your Relational DB subscription includes up to 100% of your allocated storage amount in backup storage. Backup storage that exceeds the size of your allocated storage is billed at the Additional Backup Storage rate defined in the [pricing catalogue](https://www.ctl.io/pricing/#/va1).
    ![DefineBackupPolicy](../images/rdbs-define-backup-policy.png)

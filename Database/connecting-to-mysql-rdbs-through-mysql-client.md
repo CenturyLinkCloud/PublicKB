@@ -7,7 +7,7 @@
   "contentIsHTML": false
 }}}
 
-#### Audience
+### Audience
 This article is to support customers of Relational DB Service, CenturyLink's MySQL compatible database-as-a-service product.
 
 ### Connecting to your Relational DB Instance through the MySQL Workbench Client
