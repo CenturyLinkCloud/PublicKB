@@ -14,7 +14,6 @@ Netwrix Corporation is the IT auditing company, providing software that maximize
 ### Technology Profile
 Netwrix Auditor is an IT auditing software that provides actionable audit data about who changed what, when and where and who has access to what. Netwrix Auditor helps organizations prevent security breaches caused by insider attacks, pass compliance audits with far less effort and expense, and keep tabs on what privileged users are doing in the environment. Netwrix Auditor enables auditing of the broadest variety of IT systems, including Active Directory, Exchange, file servers, SharePoint, SQL Server, VMware and Windows Server. It also supports user activity monitoring through video recording with search by metadata capabilities.
 
-
 ### Description
 Through the CenturyLink Blueprint integration, Netwrix provides a solution to deploy and configure Netwrix Auditor platform.
 
@@ -30,7 +29,7 @@ CenturyLink Cloud Users
 After reading this article, the user should feel comfortable getting started using the Netwrix Auditor Blueprint on CenturyLink Cloud.
 
 ### Prerequisite
-- Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the CenturyLink Cloud platform as an authorized user.
 
 ### Important Notes
 * For full featured auditing we recommend to have the Microsoft Active Directory set up in the same VLAN as the deployed Netwrix Auditor Blueprint.
@@ -40,21 +39,25 @@ After reading this article, the user should feel comfortable getting started usi
 ### Installing Netwrix Auditor
 1. Search for "Netwrix Auditor" in the Blueprints Library.
 2. Select "Netwrix Auditor 7 VAP Trial".
-3. Select "Deploy Blueprint".
+3. Click `deploy blueprint`.
 4. Populate the resulting page.
-5. Select "next: step 2".
-6. Select "Deploy Blueprint".
+5. Click `next: step 2`.
+6. Click `deploy blueprint`.
 
-Your blueprint will deploy in about 15 minutes.  When you receive a confirmation email, you can then begin to config your Auditor software.
+Your blueprint will deploy in about 15 minutes. When you receive a confirmation email, you can then begin to config your Auditor software.
 
 ### First Steps in Configuration
 1. If you wish to audit Active Directory, please join the Netwrix Auditor server into your AD domain and __after reboot login as the Domain Admin__.
+
 2. Open Netwrix Auditor Administrative Console and configure Audit Database settings (located under "Audit Archive -> Audit Database") by clicking on “Configure” button
    * If you wish to use preinstalled SQL Express - Opt to use existing SQL instance (then click Next and OK several times). OR
    * If you prefer to use external instance of MS SQL with Native Reporting services enabled, please provide the details of your MS SQL server. (Due to limitations of MS-SQL use only NetBIOS domain names in SAMID format (NetBIOSdomainName\user).
    * In order to make Netwrix Auditor Self Audit data available in Netwrix Auditor Client (AuditIntelligence console) click: “Apply these Audit Database settings to all Managed Objects” and after a while videos would become available in Netwrix Auditor Client.
+
 3. Configure Default Data Processing Account (located under "Settings-> Data Collection") Blueprint is preconfigured with local administrator as the current default. If you plan to audit AD, we recommend providing Domain Admin credentials here. (Use domain\user format).
+
 4. If you wish to receive email notifications and alerts, please update Default SMTP settings in "Email Notifications" (located under "Settings-> Data Collection").
+
 5. To change default location and retention settings of the file system component of the audit archive go to  "AuditArchive-> Long-Term Archive” and replace the default “N:\ProgramData\Netwrix Auditor\Data” with the desired location.
 
 ### Using Netwrix Auditor
@@ -66,11 +69,10 @@ Here is an example of [how to configure Managed Object for Active Directory](htt
 
 #### Where do I obtain my Netwrix License?
 Existing CenturyLink Customers can contact their Account Representative for help obtaining a Netwrix license, or contact Netwrix directly:
-  - Web - [http://www.netwrix.com](https://start.netwrix.com/netwrix_auditor_blueprint.html)
-  - Phone: 1-949-910-9556 | Toll-free: 888-638-9749 ext 2812
+* Web - [http://www.netwrix.com](https://start.netwrix.com/netwrix_auditor_blueprint.html)
+* Phone: 1-949-910-9556 | Toll-free: 888-638-9749 ext 2812
 
 #### Who should I contact for support?
 * For issues regarding the Netwrix Auditor software, please contact Netwrix:
-  * Web - [http://www.netwrix.com](http://www.netwrix.com/support.html)
-
+* Web - [http://www.netwrix.com](http://www.netwrix.com/support.html)
 * For issues related to CenturyLink cloud infrastructure (VMs, storage, network, etc.), or if you experience a problem deploying the partner template, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

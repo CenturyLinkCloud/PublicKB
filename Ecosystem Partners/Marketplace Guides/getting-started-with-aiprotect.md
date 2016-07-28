@@ -46,7 +46,7 @@ https://aiscaler.com/wiki/getting-started-centurylink.
 
 
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for "aiProtect" in the keyword search on the right side of the page.
 
   <img src="../../images/aiscaler/blueprint_tile_aiprotect.png" style="border:0;max-width:250px;">

@@ -38,12 +38,12 @@ phpBB is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
 1. Locate the Bitnami phpBB Stack Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
-   * Search for “phpBB” in the keyword search on the right side of the page.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * Search for 'phpBB' in the keyword search on the right side of the page.
    * Locate the 'Install Bitnami phpBB on Linux' Blueprint.
 
 2. Choose and Deploy the Blueprint.
-   * Click the “Install Bitnami phpBB on Linux” Blueprint.
+   * Click the 'Install Bitnami phpBB on Linux' Blueprint.
 
 3. Configure the Blueprint.
    Complete the information below:
@@ -69,7 +69,7 @@ phpBB is available as a Blueprint for deployment on a new server.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Deploy phpBB to an existing server (alternate option)
@@ -83,10 +83,10 @@ Bitnami phpBB Stack is available as a Script Package for deployment on an existi
 
 2. Select to Execute the Package on a Server Group.
    * Packages can be executed on one more more servers in a Group.
-   * Search for the public script package named **Install Bitnami phpBB on Linux**.
+   * Search for the public script package named 'Install Bitnami phpBB on Linux'.
    * See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
-3. Configure the Parameters.
+3. Configure the Parameters. 
    Set the following application parameters:
 
    * **Apache Web Server Port** - default 80
@@ -104,7 +104,7 @@ Bitnami phpBB Stack is available as a Script Package for deployment on an existi
 
 5. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access your phpBB server

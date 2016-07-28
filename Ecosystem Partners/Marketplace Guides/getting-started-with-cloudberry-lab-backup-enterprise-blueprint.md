@@ -58,53 +58,43 @@ After executing the steps in this Getting Started document, the users will have 
 Follow these step by step instructions to deploy Cloudberry Backup Enterprise Edition on your server and connect to you CenturyLink Object Storage account.
 
 1. Open the Blueprint Library.
-   * Access your Blueprint Library by selecting the “Blueprints Library” under the Blueprints heading from the green drop down menu.
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-1.png)
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
 
 2. Search for the Blueprint.
    * To search for the Blueprint, type “Cloudberry Backup Enterprise for Desktop and Server” under “Refine Results” in the right panel and click the `Go` button.
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-2.png)
 
 3. Choose the Blueprint.
    * Click on the Blueprint titled “CloudBerry Backup Enterprise for Desktop and Server”.
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-3.png)
 
 4. Deploy the Blueprint.
    * Click the `deploy blueprint` button to begin configuring your installation.
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-4.png)
 
 5. Configure the Blueprint.
    * On the first page, “Customize Blueprint”, ensure the following options are configured.
    * Choose the server, you would like to install Cloudberry Backup Enterprise on.
    * Enter the e-mail, which you would like to use for trial activation.
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-5.png)
-
-   * Then click `next step 2`.
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-6.png)
+   * Then, click `next step 2`.
 
 6. Review and Confirm the Blueprint.
    * You will come to a confirmation view of what your Blueprint looks like.
    * Verify your configuration details.
-   * Then click the `deploy blueprint` button at the bottom.
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-7.png)
+   * Then, click `deploy blueprint`.
 
 7. Monitor the Activity Queue.
    * After clicking Deploy Blueprint, the job will be submitted into a queue and you will be taken to a monitoring page where you can see the progress of each step the Blueprint goes through.
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-8.png)
-
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-9.png)
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
 
 8. Jump In!
-   * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
+   * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete.
+   * Please do not use the application until you have received this email notification.
 
 ### Access and use Cloudberry
 Follow these steps to access and use the CloudBerry software.
 
-1. Access the VM
+1. Access the VM.
    * Please, log in to your server using the VPN Access.
 
-2. Launch the software
+2. Launch the software.
    * You will see a Cloudberry Backup Enterprise Edition Icon on the desktop.
    * Double click it to launch.
    ![CloudBerry Image](../../images/ecosystem-CloudBerry-10.png)

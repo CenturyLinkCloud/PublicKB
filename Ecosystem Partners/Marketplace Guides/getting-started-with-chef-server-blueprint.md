@@ -32,9 +32,8 @@ After executing the steps in this Getting Started document, the users will hav
 
 ### Deploying Chef Server
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for "Chef" in the keyword search on the right side of the page.
-   ![Cluster Tile](../../images/chef/cluster_blueprint_tile.png)
 
 2. Click the `deploy blueprint` button.
 
@@ -47,15 +46,12 @@ After executing the steps in this Getting Started document, the users will hav
    * **Org Long Name** - Long name for Org
    * **Password For Admin** - Initial password to login to web interface
 
-   ![Deploy Parameters](../../images/chef/deploy_parameters.png)
-
 4. Set Optional Parameters.
    * Password/Confirm Password (This is the root password for the server. Keep this in a secure place).
    * Set DNS to “Manually Specify” and use “8.8.8.8” (or any other public DNS server of your choice).
    * Optionally set the server name prefix.
    * The default values are fine for every other option.
-   * **IMPORTANT**: You should note the two hostnames you specified above, as well as the MC password. These
-  will be needed later to log into and configure your SUREedge instances.
+   * **IMPORTANT**: You should note the two hostnames you specified above, as well as the MC password. These will be needed later to log into and configure your SUREedge instances.
 
 5. Review and Confirm the Blueprint.
 
@@ -70,8 +66,7 @@ After executing the steps in this Getting Started document, the users will hav
 9. Connect to Chef Server.
   * Connect to the server's assigned IP address.
   * Use the admin account that you created on provisioning, reset the password, and if needed create new accounts and organizations.
-  * You’ll probably want to download the [starter kit](https://YOURSERVERIP/organizations/your_org_here/getting_started) to help start
-   administering your Chef server.
+  * You’ll probably want to download the [starter kit](https://YOURSERVERIP/organizations/your_org_here/getting_started) to help start administering your Chef server.
 
 ### Pricing
 The costs listed above in the above steps are for the infrastructure only. You receive a free 25 node license with your Chef server. If you would like more licenses please email support@chef.io to secure additional entitlements.

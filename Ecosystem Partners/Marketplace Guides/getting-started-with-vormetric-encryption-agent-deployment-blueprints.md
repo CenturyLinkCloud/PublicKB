@@ -52,15 +52,13 @@ After reading this article, the user should feel comfortable getting started usi
 Follow these step by step instructions to deploy the Vormetric Agent to an existing server.
 
 1. Locate the Vormetric Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Vormetric” in the keyword search on the right side of the Blueprints Library page as shown in the image below.
-   * Locate the Vormetric "Install Vormetric Data Security Transparent Encryption Agent on Linux"
-   ![Vormetric Image](../../images/ecosystem-vormetric-agent-1.png)
+   * Locate the Vormetric "Install Vormetric Data Security Transparent Encryption Agent on Linux".
 
 2. Choose and Deploy the Blueprint.
    * Click the “Install Vormetric Data Security Transparent Encryption Agent on Linux” Blueprint.**
    * Click the `deploy blueprint` button.
-   ![Vormetric Image](../../images/ecosystem-vormetric-agent-2.png)
 
 3. Configure the Blueprint.
    Complete the information below:
@@ -70,12 +68,9 @@ Follow these step by step instructions to deploy the Vormetric Agent to an exist
    * Do you want to enable hardware association? Default = No
    * Would you like to use /dev/random to generate random numbers?  Default = No
 
-  ![Vormetric Image](../../images/ecosystem-vormetric-agent-3.png)
-
 4. Review and Confirm the Blueprint.
    * Click `next: step 2`.
    * Verify your configuration details.
-   ![Vormetric Image](../../images/ecosystem-vormetric-agent-4.png)
 
 5. Deploy the Blueprint.
    * Once verified, click the `deploy blueprint` button.
@@ -84,7 +79,7 @@ Follow these step by step instructions to deploy the Vormetric Agent to an exist
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access and Configure the Vormetric Agent

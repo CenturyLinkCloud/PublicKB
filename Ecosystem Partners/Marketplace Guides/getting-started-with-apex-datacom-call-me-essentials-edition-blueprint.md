@@ -53,15 +53,12 @@ After reading this article, the user should feel comfortable getting started usi
 Follow these step by step instructions to deploy a single server instance of Call Me Essentials Edition.
 
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-   ![Apex Datacom Image](../../images/ecosystem-apex-datacom-callme-a1.png)
-   * Search for “Call Me” in the keyword search on the right side of the Blueprints Library page as shown in the image below.
-   ![Apex Datacom Image](../../images/ecosystem-apex-datacom-callme-a2.png)
-   * Locate the Apex Call Me Essentials Edition Blueprint on the left side and click this.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * Search for “Call Me” in the keyword search on the right side of the Blueprints Library page.
+   * Locate the Apex Call Me Essentials Edition Blueprint on the left side and click on it.
 
 2. Choose the Blueprint.
-   * Click on the "Deploy Blueprint" green button.
-   ![Apex Datacom Image](../../images/ecosystem-apex-datacom-callme-a3.png)
+   * Click the `Deploy Blueprint` button.
 
 3.	Configure the Blueprint.
    * Complete the info fields required by the Blueprint wizard. An image down below highlights the fields you must complete correctly.
@@ -73,30 +70,26 @@ Follow these step by step instructions to deploy a single server instance of Cal
    * Take note: you will not be able to recover your password if you do not enter your correct email password.
    * Also enter a strong password that has a mix of letters, numbers and special characters.
    * Be sure to keep the Call Me Web Login safely written down as you will need this login info to access the app later.
-   * If you are satisfied with you entries then click the “next step 2” green button at the bottom.
+   * Click the `next: step 2` button.
    ![Apex Datacom Image](../../images/ecosystem-apex-datacom-callme-a4.png)
 
 4.	Review and Confirm the Blueprint.
    * You will come to a confirmation view of what your Blueprint looks like.
    * Verify your configuration details.
-   * Then click the “deploy Blueprint” green button at the bottom.
-   ![Apex Datacom Image](../../images/ecosystem-apex-datacom-callme-a5.png)
+   * Click the `deploy Blueprint` button.
 
 5.	Blueprint Queued & Deployed.
-   * Having clicked the deploy Blueprint it will be submitted into a queue and you will be taken to a monitoring page where you can see the progress of each step the Blueprint goes through.
+   * The Blueprint will be submitted into a queue and you will be taken to a monitoring page where you can see the progress of each step the Blueprint goes through.
    * There are a total of ten steps and this will take several minutes. You do not need to stay on the monitoring page.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Each step as it completes successfully will show a green circle indicator. Should you see a red circle indicator at any step you might be given a resume option which you should take.
    * If the Blueprint is stuck at a red indicator you should open a ticket (possibly through chat if you have this option in your CLC account) to resume the Blueprint.
-   * Most normally the Blueprint will complete properly. Below is what a successful deployment looks like when completed.
-   ![Apex Datacom Image](../../images/ecosystem-apex-datacom-callme-a6.png)
 
 6.	Jump In!
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
    * To get started you need to determine the Public IP that was automatically added for this server.
    * To get this Public IP go to your CLC account and locate the newly deployed server and select it so you have a detailed dashboard view of this server. On the right hand side look for your Public IP. See the image below for an idea.
    * IMPORTANT – do not add any additional IP addresses.
-   ![Apex Datacom Image](../../images/ecosystem-apex-datacom-callme-a7.png)
 
 ### Access Apex Call Me Application
 Follow these steps to access and use the Call Me application.

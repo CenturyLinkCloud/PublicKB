@@ -20,7 +20,7 @@ Sales Support:
 * [CenturyLinkInfo@visionsolutions.com](mailto:CenturyLinkInfo@visionsolutions.com?subject=CenturyLink%20Sales%20Help)
 
 ### Description
-Vision Solutions® has integrated their technology with the CenturyLink Cloud platformBlueprintThe purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this data mobility solution.
+Vision Solutions® has integrated their technology with the CenturyLink Cloud platform Blueprint. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this data mobility solution.
 
 Vision Solutions is the premier provider of cloud protection and recovery, high availability, disaster recovery and migration solutions for Windows, Linux, and cloud computing.
 
@@ -30,7 +30,7 @@ Technology from Vision Solutions helps CenturyLink Cloud customers address the b
 Vision Solutions’ Double-Take® is installed typically on two servers; the source server which is likely running outside of the CenturyLink Cloud and the target server running within the CenturyLink Cloud. Double-Take precisely duplicates the application’s native write processes with real-time transaction awareness that never requires a quiesce, including replication of file system meta-data like permissions, attributes, compression and encryption settingsBlueprintWhen using Double-Take, the target server is available as a warm standby for temporary DR or you may choose to permanently migrate into the the CenturyLink Cloud upon cut-over.
 
 ### Offer
-Vision Solutions is making their technology available for CenturyLink Cloud Users to deploy to their accountBlueprintThe Vision Solutions Blueprints require a license keyBlueprintIn order to **evaluate or purchase** a license for entitlement, please email [CenturyLinkInfo@visionsolutions.com](mailto:CenturyLinkInfo@visionsolutions.com?subject=CenturyLink%20Sales%20Help).
+Vision Solutions is making their technology available for CenturyLink Cloud Users to deploy to their accountBlueprintThe Vision Solutions Blueprints require a license key Blueprint. In order to **evaluate or purchase** a license for entitlement, please email [CenturyLinkInfo@visionsolutions.com](mailto:CenturyLinkInfo@visionsolutions.com?subject=CenturyLink%20Sales%20Help).
 
 ### Audience
 CenturyLink Cloud Users
@@ -58,13 +58,14 @@ After executing the steps in this Getting Started document, the users will have 
   ![Double Take ports](../../images/ecosystem-double-take-dtports.png)
 
 ### Install Double-Take Blueprint
-1. Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+1. Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
 
 2. Search for “Double-Take” in the keyword search on the right side of the page.
 
 3. Locate the "Install Double-Take on {Operating System}" Blueprint for your environment.
 
-4. Choose and Deploy the Blueprint. Click the “Install Double-Take on {Operating System}” Blueprint.
+4. Choose and Deploy the Blueprint.
+   * Click the “Install Double-Take on {Operating System}” Blueprint.
    * Configure the Blueprint using the standard information for the server.
    * You will also need to enter the Double-Take License Key provided to you by Vision Solutions.
 
@@ -73,12 +74,13 @@ After executing the steps in this Getting Started document, the users will have 
    * Verify your configuration details.
 
 5. Deploy the Blueprint.
-   * Once verified, click on the `deploy blueprint` button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
+   * Once verified, click the `deploy blueprint` button.
+   * You will see the deployment details along with an email stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the Vision Solutions Server until you have received this email notification.
 
 ### Accessing your Vision Solutions appliance
