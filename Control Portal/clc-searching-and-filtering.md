@@ -33,7 +33,7 @@ The Global search feature in the Control Portal can be found in the upper right 
 Selecting any item in the search will take you to that item. The following steps include examples on searching basics:
 
 1. Click the 'spy glass' located in the upper right corner of the Dashboard near your user name. This opens a global Search window.
-   ![Search Window](clc-searching-and-filtering-3.png)
+   ![Search Window](../images/clc-searching-and-filtering-3.png)
 
 2. Enter you search criteria. This example uses a simple text string.
    ![Search Criteria](../images/clc-searching-and-filtering-4.png)
