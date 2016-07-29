@@ -66,15 +66,13 @@ After reading this article, the user should feel comfortable getting started usi
 
 ### Install ODrive File Server Blueprint
 1. Locate the ODrive File Server Blueprint.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “odrive” in the keyword search on the right side of the page.
    * Locate the "odrive File Server" Blueprint for the platform you want to deploy on, Windows or Linux.
-   ![odrive Image](../../images/ecosystem-odrive-1.png)
 
 2. Choose and Deploy the Blueprint.
    * Click on the “odrive File Server” Blueprint you want to deploy.
    * Click the `deploy blueprint` button.
-   ![odrive Image](../../images/ecosystem-odrive-2.png)
 
 3. Configure the Blueprint.
    Complete the information below:
@@ -96,13 +94,10 @@ After reading this article, the user should feel comfortable getting started usi
    * Once verified, click the `deploy blueprint` button.
    * You will see the deployment details along with an email stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
-   ![odrive Image](../../images/ecosystem-odrive-4.png)
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
-   ![odrive Image](../../images/ecosystem-odrive-5.png)
-
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
    ![odrive Image](../../images/ecosystem-odrive-6.png)
 
@@ -111,9 +106,8 @@ After your Blueprint deploys successfully, please follow these instructions to a
 1. Check email to obtain odrive File Server information and click on the link to load the server in Control Portal.
 
 2. If you want to connect your odrive file server from the internet, Click the "Add Public IP" button and open Firewall ports `4433` and `4434`.
-![odrive Image](../../images/ecosystem-odrive-0a.png)
 
-3. Connect to the following URL to begin using your ODrive File Server: *https://YOUR_OFS_SERVER_IP:4434/*    Note: Chrome users will need to ignore the "Your connection is not private" warning from an Invalid SSL certificate  and Proceed to the website.
+3. Connect to the following URL to begin using your ODrive File Server: *https://YOUR_OFS_SERVER_IP:4434/* Note: Chrome users will need to ignore the "Your connection is not private" warning from an Invalid SSL certificate  and Proceed to the website.
 
 4. Accept the odrive terms of usage.
 

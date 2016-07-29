@@ -1,13 +1,13 @@
 {{{
   "title": "How To: Increase resources on account",
-  "date": "10-26-2015",
-  "author": "Aaron Lemoine [updated by Jared Ruckle]",
+  "date": "07-28-16",
+  "author": "Chris Kleban",
   "attachments": [],
   "contentIsHTML": true
 }}}
 
 <h3>Description&nbsp;</h3>
-<p>CenturyLink Cloud accounts start with a pre-defined resource (CPU/memory/storage) limit per data center. As customers grow their cloud usage, it's common to request an increase in resource limits. Other items to note about increasing resources:
+<p>CenturyLink Cloud accounts start with a pre-defined resource (CPU/memory/storage/Public-IP) limit per data center. As customers grow their cloud usage, it's common to request an increase in resource limits. Other items to note about increasing resources:
 
 <ul>
 <li>Note that only paying customers will have their resource limits increased unless executive approval is given.</li>

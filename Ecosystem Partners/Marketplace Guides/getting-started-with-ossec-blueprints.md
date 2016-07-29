@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-[OSSEC Logo](../../images/ossec-hids-logo.png)
+![OSSEC Logo](../../images/ossec-hids-logo.png)
 
 ### Partner Profile
 * OSSEC - Open Source SECurity
