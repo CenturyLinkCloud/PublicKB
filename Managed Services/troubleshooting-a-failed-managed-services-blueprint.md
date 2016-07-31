@@ -11,7 +11,7 @@ If a Managed Services Blueprint does not complete as expected, please note the O
 If that is not the issue, follow these steps to expedite troubleshooting.
 ##### 1. From within the Control Portal, hover over the green bar at the top of the page.
 
-![Menu.png](../images/Menu.png)
+![Menu.png](../images/Troubleshoot_Managed_OS-Menu.png)
 
 ##### 2. Select Queue beneath Blueprints.
 
