@@ -31,7 +31,6 @@ For more information on US TechSource's StratoZone tooling, please visit: http:/
 
 ![onboarding process](../../images/ustechsource/stratozone_screenshot.png)
 
-
 ### Frequently Asked Questions
 
 **Where do I obtain my license?**
