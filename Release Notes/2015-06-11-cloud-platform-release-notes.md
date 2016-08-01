@@ -42,27 +42,24 @@
   Our KB has more [information about the CenturyLink Cloud Status service.](../General/centurylink-cloud-status-faq.md)
 
 
-### Online Tools (1) 
+### Online Tools (1)
 
 * __Blueprint Formation.__ Take our new blueprint formation tool for a spin. [This GitHub repository](//github.com/CenturyLinkCloud/bpformation) contains a command line interface to interact with the CenturyLink Cloud Blueprints packaging and workflow services.
 
 
-### Notifications (2) 
+### Notifications (2)
 
 * __New Domains.__ Effective March 5, the default CenturyLink Cloud domain was updated to control.ctl.io. The URL for SAML users has also been updated to https://[`account-alias`].cloudportal.io (where `account-alias` is your four-letter account identifier). __Please update any code that leverages the CenturyLink Cloud API to ensure that it uses the supported endpoint.__ The legacy domains will continue to operate until July 15.
 
 * __AppFog Limited Beta.__ Beta access for AppFog continues to be available. Based on Cloud Foundry v2, this new platform for applications makes it easier for developers to build and scale cloud-native applications. To sign-up, visit [the AppFog product page](//www.ctl.io/appfog/).
 
 
-### Ecosystem: New Blueprints (5)
-
-* [__Pivotal HD + HAWQ.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-hd-hawq.md)
-This latest entry from Pivotal in our Cloud Marketplace provides the best of both worlds in the data management space - the scalability and flexibility of Hadoop with the structured query support of HAWQ.  This Open Data Platform (ODP) compliant solution contributes to a more standards-based implementation of the Hadoop File System (HDFS), which will over time help accelerate enterprise productivity around this cost-saving, scale-ready technology.
+### Ecosystem: New Blueprints (4)
 
 * [__Vormetric.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-encryption-agent-deployment-blueprints.md)
 This security solution complements our previous integration with Vormetric Security Manager, allowing the deployment of encryption agents to various server endpoints on the CenturyLink Cloud.  With Vormetric, a single infrastructure and management environment protects data wherever it resides with file, volume and cloud storage encryption, tokenization with dynamic data masking, field-level application encryption, sophisticated access control policies, third party and integrated encryption key management.
 
-* [__SoftNAS.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-partner-template.md)
+* [__SoftNAS.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-appliance.md)
 SoftNAS is one of the most popular storage technologies in the cloud.  This Partner Template, available via Service Task, provides CenturyLink customers with an enterprise-grade, software-defined, NAS storage gateway to safely and reliably operate their business-critical IT systems and storage folders inside CenturyLink Cloud.
 
 * [__Wordpress.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-wordPress-blueprint.md)
@@ -72,9 +69,9 @@ Web publishing is a common workload that can be achieved through a variety of cl
 Even though our global cloud platform is able to scale to various enterprise workloads, it doesn’t mean we can’t use it to have a little bit of fun.  This blueprint rolls out a Mojang Minecraft Pocket Edition (PE) server that supports iOS and Android gameplay on various personal computing devices.  This solution is a great way to build a safe, customized gaming environment for the family while teaching young engineers how the cloud actually works.
 
 
-### Open Source Contributions (2) 
+### Open Source Contributions (2)
 
-* [__Lorry.io.__](//imagelayers.io/) Lorry.io is a CenturyLink Labs open-source project for creating, validating and sharing Docker Compose YAML files. Docker-compose.yml files are used to define and run complex applications with Docker and Docker Compose. Lorry.io can also import Panamax templates and convert them into docker-compose.yml files. For more information, [read this blog post](//www.centurylinklabs.com/lorry-io-pathway-to-docker-composable-apps/) and [browse the wiki here](//github.com/CenturyLinkLabs/lorry).
+* [__Lorry.io.__](https://lorry.io/) Lorry.io is a CenturyLink Labs open-source project for creating, validating and sharing Docker Compose YAML files. Docker-compose.yml files are used to define and run complex applications with Docker and Docker Compose. Lorry.io can also import Panamax templates and convert them into docker-compose.yml files. For more information, [read this blog post](//www.ctl.io/developers/blog/post/lorry-io-pathway-to-docker-composable-apps) and [browse the wiki here](//github.com/CenturyLinkLabs/lorry).
 
 * **Updates:**
 
@@ -82,7 +79,7 @@ Even though our global cloud platform is able to scale to various enterprise wor
   * [Panamax](//www.panamax.io/) (v0.6.3) now supports cAdvisor 0.13.0 and CoreOS 647.2.0.
 
 
-### Bug Fixes (4) 
+### Bug Fixes (4)
 
 * __Roles: Server Scheduler.__ A user with this role can schedule a power op, but they cannot perform a power op from server details. Now, when a user confirms the action, the user is redirected to the queue request and the request is processed.
 

@@ -12,12 +12,14 @@
 <ul>
   <li>Must have a dedicated Netscaler available in your environment</li>
   <li>Must have an Admin login to your netscaler</li>
-  <li>Must have Java installed and configured correctly. See KB:&nbsp;https://t3n.zendesk.com/entries/55258750-How-to-configure-Java-settings-to-access-web-user-interfaces
-    <a href="https://t3n.zendesk.com/entries/27208970-How-to-access-the-web-interface-of-a-Netscaler-Load-Balancer">
+  <li>Must have Java installed and configured correctly. See KB: <a href="../General/how-to-configure-java-settings-to-access-web-user-interfaces.md"> How-to-Configure-Java</a>
       <br />
     </a>
   </li>
-  <li>Understand the basic architecture of how a Netscaler works. See KB:&nbsp;https://t3n.zendesk.com/entries/23688917-Load-Balancing-Dedicated-vs-Shared</li>
+  <li>Understand the basic architecture of how a Netscaler works. See KB:<a href="./load-balancing-dedicated-vs-shared.md">Load Balancing Dedicated vs Shared</a>
+      <br />
+    </a>
+  </li>
 </ul>
 <h3>Notes</h3>
 <ul>

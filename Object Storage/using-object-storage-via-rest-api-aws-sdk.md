@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description</h3>
-<p><a href="http://www.ctl.io/object-storage">CenturyLink Cloud&nbsp;3 Object Storage</a> is an ideal repository for unstructured data ranging from media files to database backups. The Object Storage service is Amazon S3 compatible
+<p><a href="http://www.ctl.io/object-storage">CenturyLink Cloud Object Storage</a> is an ideal repository for unstructured data ranging from media files to database backups. The Object Storage service is Amazon S3 compatible
   which means that code and tools that work with Amazon S3 should work seamlessly with CenturyLink Cloud Object Storage. In this KB article, we'll show you how to use the raw REST API and the AWS SDK (for .NET and Node.js) to interact with Object Storage.</p>
 <h3>Audience</h3>
 <ul>
@@ -19,7 +19,7 @@
     users and buckets.</li>
 </ul>
 <h3>Using the Object Storage REST API from .NET</h3>
-<p>The CenturyLink Cloud Object Storage service is based on Riak CS Enterprise, which offers an Amazon S3-compatible web services endpoint. The endpoint has the same authentication, resources, and payloads as defined in the <a href="http://docs.aws.amazon.com/AmazonS3/latest/API/APIRest.html"
+<p>The CenturyLink Cloud Object Storage service offers an Amazon S3-compatible web services endpoint. The endpoint has the same authentication, resources, and payloads as defined in the <a href="http://docs.aws.amazon.com/AmazonS3/latest/API/APIRest.html"
  >Amazon S3 documentation</a>. The steps below show how to consume Object Storage from a custom .NET application.&nbsp;<strong>Note that the <a href="https://github.com/Tier3/Examples/tree/master/ObjectStorage/Tier3.ObjectStorageViaAPI.DotNet">source code for this sample application</a> can be downloaded from GitHub.</strong>
 </p>
 <h4>Detailed Steps</h4>
@@ -367,7 +367,7 @@ foreach (S3Object obj in objResp.S3Objects)
 
 </pre>
   </li>
-  <li>In the route (controller), add the code to respond to the page load event. This code queries Object Storage via the AWS SDK for Node. See that it loads the credentials file, and passes the Object Storage URL into the object constructor. The <a href="http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3_20060301.html#listBuckets-property"
+  <li>In the route (controller), add the code to respond to the page load event. This code queries Object Storage via the AWS SDK for Node. See that it loads the credentials file, and passes the Object Storage URL and signature version into the object constructor. The <a href="http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3_20060301.html#listBuckets-property"
    >listBuckets operation</a>&nbsp;returns an array of buckets. Here, that array is returned to the view.&nbsp;
     <br />
     <pre>var AWS = require('aws-sdk');
@@ -380,7 +380,7 @@ exports.index = function(req, res){
 
     AWS.config.loadFromPath('./credentials.json');
 
-    var s3 = new AWS.S3({endpoint:'https://canada.os.ctl.io'});
+    var s3 = new AWS.S3({endpoint:'https://canada.os.ctl.io', signatureVersion:'v2'});
 
 
 

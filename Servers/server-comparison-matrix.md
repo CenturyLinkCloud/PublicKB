@@ -101,7 +101,7 @@ Some functions within the Control Portal and associated APIs are only applicable
   <td>Execute Package</td>
   <td>x</td>
   <td>x</td>
-  <td> </td>
+  <td>x</td>
 </tr>
 <tr>
   <td>Scheduled Tasks</td>
@@ -197,7 +197,7 @@ Some functions within the Control Portal and associated APIs are only applicable
   <td>Update Password</td>
   <td>x</td>
   <td>x</td>
-  <td> </td>
+  <td>x</td>
 </tr>
 
 </table>

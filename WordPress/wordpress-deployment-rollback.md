@@ -8,7 +8,7 @@
 
 ### IMPORTANT NOTE
 
-CenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only
+CenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only
 and is not intended for production usage.
 
 During the Limited Beta there is no production Service Level Agreement.
@@ -27,13 +27,13 @@ the rollback. The code in the CenturyLink Git Hosting repository is not modified
 
 ### Prerequisites
 
-* A WordPress site has been created using CenturyLink WordPress-as-a-Service.
+* A WordPress site has been created using the CenturyLink WordPress hosting platform.
 * A change to the site has been committed and pushed to CenturyLink Git Hosting.
 * The change is undesired and needs to be rolled back.
 
 ### Rollback Process
 
-1. [Log in](https://wordpress.ctl.io/) to CenturyLink WordPress-as-a-Service.
+1. [Log in](https://wordpress.ctl.io/) to the CenturyLink WordPress hosting platform.
 2. Find the site that needs to be rolled back in the list of sites.
 3. The "Roll Back" button is on the right side of the row. If no "Roll Back" button
    is visible for a given site, that site cannot be rolled back—either because it is

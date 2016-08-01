@@ -1,5 +1,5 @@
 {{{
-  "title": "Removing Intrusion Prevention System (IPS)",
+  "title": "IPS - Removing Agent",
   "date": "09-24-2015",
   "author": "Stephanie Wong",
   "attachments": [],
@@ -19,9 +19,9 @@ This Blueprint is for the removal and deactivation of the IPS service on the VM.
 
 ### Uninstallation Process
 
-1. Go into the **Blueprints Library**.
+1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**.
 
-  ![Control Portal](../images/client-security/gettingIPS_controlportal.png)
+  ![Control Portal](../images/client-security/IPSblueprintcontrolportal.png)
 
 2. Search for **Uninstall Intrusion Prevention** in the Refine Results section. Then, click **Uninstall Intrusion Prevention on Linux**.
 

@@ -1,6 +1,6 @@
 {{{
   "title": "bpimager Appliance Import Requirements for Ecosystem Partners",
-  "date": "10-22-2015",
+  "date": "2-23-2016",
   "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
@@ -9,7 +9,7 @@
 
 Allow CenturyLink customers to instantly deploy your virtual appliance within their private space on our IaaS Cloud.  
 
-**This program is in Beta and available for all registered Ecosystem partners working with an Integration Engineer**
+**This program is available to all registered Ecosystem partners working with an Integration Engineer**
 
 ### Getting Started
 
