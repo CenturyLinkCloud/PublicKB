@@ -90,39 +90,31 @@ Here are some of the documents that you will need during and after installation:
 Server General Data Encryption Agent can be deployed on any supported Linux server. Follow these step by step instructions to deploy Server General on your CenturyLink Cloud server.
 
 1. Locate the Blueprint in the Blueprint Library.
-   * Search for "Server General" without quotes. You will see the following:
-   ![Server General Blueprint Picture 1](../../images/ecosystem-Server-General-1.png)
-
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * Search for "Server General" without quotes.
    * You may find other Blueprints published by Server General. However, for now we are just looking to install the Server General data encryption agent.
 
 2. Choose the Blueprint.
    * Click the `deploy blueprint` button.
-   ![Server General Blueprint Picture 2](../../images/ecosystem-Server-General-2.png)
 
 3. Configure the Blueprint.
    * In order to configure the Blueprint you will need a valid Server General subscription license. This can be a trial license or a purchased subscription license.
-   * If you do not have a license, then you should get one easily by visiting www.servergeneral.com/centurylink. Once you have the license, you should paste it in the box where it says the "License key".
-   ![Server General Blueprint Picture 3](../../images/ecosystem-Server-General-3.png)
-
-   * Next you will have to type in a passphrase for your "ssh" key. We’ll use this passphrase to encrypt your private key. This private ssh key will be used by the Server General Admin user - "sgadmin". We will tell you how to make use of this key later. Your screen should look like this:
-   ![Server General Blueprint Picture 4](../../images/ecosystem-Server-General-4.png)
+   * If you do not have a license, then you can get one easily by visiting www.servergeneral.com/centurylink. Once you have the license, you should paste it in the box where it says the "License key".
+   * Next you will have to type in a passphrase for your "ssh" key. We’ll use this passphrase to encrypt your private key. This private ssh key will be used by the Server General Admin user - "sgadmin". We will tell you how to make use of this key later.
 
 4. Review and Confirm the Blueprint.
    * Verify your configuration details.
-   ![Server General Blueprint Picture 5](../../images/ecosystem-Server-General-5.png)
 
 5. Deploy the Blueprint.
    * Once verified, click the `deploy blueprint` button. You will see the deployment details.
-   * Monitor the Activity Queue.
-   * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
 
-6. Get Busy!
-   * Once the Blueprint deployment completes successfully, you will see the following screen:
-   ![Server General Blueprint Picture 6](../../images/ecosystem-Server-General-6.png)
+6. Monitor the Activity Queue.
+   * Monitor the Deployment Queue to view the progress of the Blueprint.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
+   * After the Blueprint deployment completes successfully, get busy!
 
 ### Pricing
-The costs listed above in Steps 1 and 2 are for the infrastructure only. After deploying this Blueprint, the user can secure entitlements to the technology using the following steps:
+The costs listed above in Steps 1 and 2 are for the infrastructure only. After deploying this Blueprint, the user can secure entitlements to the technology.
 
 You can try Server General data encryption service for free for 30-days. No credit card is required. If you like our service, then you should upgrade your trial license to a paid license. There is no need to reinstall and reconfigure your Server General.
 

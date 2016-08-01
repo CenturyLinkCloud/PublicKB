@@ -52,19 +52,17 @@ CenturyLink Cloud Users, Storage Administrators, IT Managers
 
 ### Prerequisites
 * Access to the CenturyLink Cloud platform as an authorized user
-* Control Portal account with password authentication (two factor authentication not yet supported)
+* Control Portal account with password authentication (two-factor authentication not yet supported)
 
 ### Steps to Deploy a New SoftNAS Appliance
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for "SoftNAS Appliance" in the keyword search on the right side of the page.
-   <img src="../../images/softnas/blueprint_tile.png" style="border:0;max-width:250px;">
 
 2. Click the `deploy blueprint` button.
 
 3. Set Required parameters.
   * **Control User Password** - The password associated with your login
-  <img src="../../images/bpimager/deploy_parameters.png">
 
 4. Set Optional Parameters.
    * Password/Confirm Password (This is the root password for the server. Keep this in a secure place).

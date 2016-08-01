@@ -3,12 +3,13 @@
   "date": "12-16-2014",
   "author": "Jared Ruckle",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 *Updated 17 Dec 2014 by David Shacochis*
 
 ### vRealize CenturyLink Cloud
+
 [vRealize](http://www.vmware.com/products/vrealize-suite/)(formerly vCloud Automation Center, or vCAC) is a cloud management platform that enables users to perform functions against VMware vSphere, other hypervisors, and select public clouds. vRealize gives IT pros:
 * A self-service portal for building and managing virtual infrastructure
 * An orchestration tool for designing multi-tier applications
@@ -52,8 +53,6 @@ A:** This endpoint only works with vRealize 6.1.
 
 **Q: How do customers authenticate vRealize with the CenturyLink Cloud?
 A:** Customers use API credentials from the Control Portal.
-![vRealize_3](../../images/vRealize_3.png)
-
 ![vRealize_4](../../images/vRealize_4.png)
 
 **Q: How does the endpoint show up for CenturyLink Cloud customers?
