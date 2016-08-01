@@ -24,9 +24,11 @@ Our [API](../Security/ips-api.md) allows for a customer to set notification dest
 
 ### Configuration Process via Blueprints
 
-1. Search for **IPS Notification** in the Blueprint library. Then, click on the desired Operating System blueprint to configure Notifications.
+1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**.
 
-  ![Control Portal](../images/notificationupdate_controlportal.png)
+  ![Control Portal](../images/client-security/IPSblueprintcontrolportal.png)
+
+2. Search for **IPS Notification** in the Blueprint library. Then, click on the desired Operating System blueprint to configure Notifications.
 
   ![Notification Update RHEL](../images/notificationupdate_rhel_blueprintname.png) ![Notification Update Windows](../images/notificationupdate_windows_blueprintname.png)
 
