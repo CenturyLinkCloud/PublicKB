@@ -7,39 +7,34 @@
 }}}
 
 Overview
-<p><a href="https://coreos.com/">CoreOS</a>&nbsp;is a lightweight Linux-based operating system that is designed to run&nbsp;<a href="https://www.docker.io/">Docker</a>&nbsp;containers. CoreOS is not currently supported natively
-  as a VM template within the CenturyLink Cloud Control Portal, however it can be installed by using a self-managed PXE/DHCP Server and a dedicated network. This is easy to set up using the blueprints that have been created to help with the provisioning
-  of a CoreOS cluster.</p>
+<p><a href="https://coreos.com/">CoreOS</a>&nbsp;is a lightweight Linux-based operating system that is designed to run&nbsp;<a href="https://www.docker.io/">Docker</a>&nbsp;containers. CoreOS is not currently supported natively as a VM template within the CenturyLink Cloud Control Portal, however it can be installed by using a self-managed PXE/DHCP Server and a dedicated network. This is easy to set up using the blueprints that have been created to help with the provisioning of a CoreOS cluster.</p>
 <p><em>Note: These same instructions can be followed to setup a Panamax server in CenturyLink Cloud. Instead of the "CoreOS Server" blueprint, just use the "CoreOS Server with Panamax" blueprint below and all other steps are the same. For more information, you can reference the <a href="https://github.com/CenturyLinkLabs/panamax-ui/wiki/Installing-Panamax#centurylink-cloud">installation instructions on the Panamax support site</a>.</em>
 </p>
-Basic Instructions
+<h3>Basic Instructions</h3>
 <p>The basic steps are as follows, with further details below.</p>
 <ol>
   <li>Create a dedicated network (VLAN) in the data center you wish to install CoreOS servers.</li>
-  <ul>
-    <li>Reference&nbsp;<a href="https://t3n.zendesk.com/entries/21806469-Creating-and-Deleting-VLANs">Creating and Deleting VLANs</a>&nbsp;for details</li>
-    <li>Take note of the name of this network so you can use it later</li>
-  </ul>
+    <ul>
+      <li>Reference&nbsp;<a href="https://t3n.zendesk.com/entries/21806469-Creating-and-Deleting-VLANs">Creating and Deleting VLANs</a>&nbsp;for details</li>
+      <li>Take note of the name of this network so you can use it later.</li>
+    </ul>
   <li>Deploy the "DHCP-PXE Server" blueprint.</li>
-  <ul>
-    <li>Make sure to deploy to the data center/VLAN you set up in Step 1 above</li>
-  </ul>
+    <ul>
+      <li>Make sure to deploy to the data center/VLAN you set up in Step 1 above.</li>
+    </ul>
   <li>Deploy the "CoreOS Server" blueprint to add the first server and create the cluster.</li>
-  <ul>
-    <li>For the "Execute on Server" option, be sure to select the name of the DHCP server you created in the previous step, <em>not</em> the CoreOS machine you are currently creating. (This is a very important step.)<strong><br /></strong>
-    </li>
-    <li>The server credentials entered will not actually be used to login to the server as you will use SSH key authorization to access your CoreOS servers.</li>
-    <li>In the "SSH Public Key" field, you may provide the full string of a public key to be used for logging into the CoreOS server over SSH. (If you do not provide a value here, you will have to access the CoreOS server by first using SSH to login to the
-      DHCP server and then using SSH from there to login to the CoreOS server.)</li>
-    <li>After the Blueprint task is complete, view the "build log" and search for the text "IP Address of CoreOS Server" to obtain the IP address that was used for deploying the server.&nbsp;Take note of this address for future use as it will not be displayed
-      in Control.</li>
-  </ul>
+    <ul>
+      <li>For the "Execute on Server" option, be sure to select the name of the DHCP server you created in the previous step, <em>not</em> the CoreOS machine you are currently creating. (This is a very important step.)<strong><br/></strong></li>
+      <li>The server credentials entered will not actually be used to login to the server as you will use SSH key authorization to access your CoreOS servers.</li>
+      <li>In the "SSH Public Key" field, you may provide the full string of a public key to be used for logging into the CoreOS server over SSH. (If you do not provide a value here, you will have to access the CoreOS server by first using SSH to login to the DHCP server and then using SSH from there to login to the CoreOS server.)</li>
+      <li>After the Blueprint task is complete, view the "build log" and search for the text "IP Address of CoreOS Server" to obtain the IP address that was used for deploying the server.&nbsp;Take note of this address for future use as it will not be displayed in Control.</li>
+    </ul>
   <li>Deploy the "CoreOS Server" blueprint for each additional server you'd like to add to the cluster.</li>
-  <ul>
-    <li>Repeat Step 3 for adding additional CoreOS servers into the cluster</li>
-  </ul>
+    <ul>
+      <li>Repeat Step 3 for adding additional CoreOS servers into the cluster.</li>
+    </ul>
 </ol>
-<p>(Note: There are some <a href="#limitations">limitations</a>&nbsp;to the functionality that Control Portal will provide for interacting with these CoreOS servers.)</p>
+<p>(Note: There are some <a href="#limitations">limitations</a>&nbsp;to the functionality that the Control Portal provides for interacting with these CoreOS servers.)</p>
 Detailed Steps
 <h3>Setup Network</h3>
 <p>(You may also reference the article, <a href="https://t3n.zendesk.com/entries/21806469-Creating-and-Deleting-VLANs">Creating and Deleting VLANs</a> for more details about the below steps.)</p>

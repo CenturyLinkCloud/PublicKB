@@ -22,6 +22,8 @@ The CenturyLink Cloud Service Task and Onboarding teams can import images of exi
   * Validate the [Guest Operating System is supported on the CenturyLink Cloud for Import](../Service Tasks/supported-guest-operating-systems-for-ovaovf-import.md)
 
 
+* The VMware hardware version (vmx) must be 8 or lower 
+
 * If exporting multiple Virtual Machines or a collection of Virtual Machines (such as a vAPP), it is required to export each VM individually. Individual files provide greater flexibility and reduce the need for repeated uploads in the event of file corruption (re-uploading a single server vs. the entire collection). **vApp import is unsupported**.
 
 * To reduce file transfer time, and ensure file integrity, it is recommended to use an archival tool (such as the open source [7zip](http://www.7-zip.org/)) to compress the OVA/OVF. CenturyLink recommends 2-4GB increments so that in the event of a corrupt file, a single archive needs re-uploading.

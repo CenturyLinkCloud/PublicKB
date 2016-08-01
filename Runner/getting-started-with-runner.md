@@ -31,7 +31,7 @@ Runner is a new product from CenturyLink that enables fast and easy automation a
 
 There are two ways to interact with Runner:
 
-**1. Via the User Interface (UI) -** In the Control Portal, click on Runner, under Services in the drop-down menu, or you can go directly to Runner at [runner.ctl.io](https://runner.ctl.io).
+**1. Via the User Interface (UI) -** In the Control Portal, click on Runner, under Orchestration in the drop-down menu, or you can go directly to Runner at [runner.ctl.io](https://runner.ctl.io).
 
 **2. Via the Application Programming Interface (API) -** This API is RESTful, using JSON messages over HTTPS and relying on the standard HTTP verbs including GET, POST, PUT and, DELETE.
 

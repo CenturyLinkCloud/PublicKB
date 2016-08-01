@@ -39,16 +39,14 @@ Add a Puppet Agent to an existing Linux server using the preconfigured Blueprint
 
 #### Steps
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Puppet Agent” in the keyword search on the right side of the page.
-   ![Puppet Agent](../../images/puppet/agent_blueprint_tiles.png)
 
 2. Click the `deploy blueprint` button.
 
 3. Set Required parameters.
-   * **Puppet Master** - Enter the FQDN of an existing Puppet Master server
-   * **Execute on Server** - Select the existing server on which to execute this Blueprint
-   ![Deploy Agent](../../images/puppet/deploy_agent_parameters.png)
+   * **Puppet Master** - Enter the FQDN of an existing Puppet Master server.
+   * **Execute on Server** - Select the existing server on which to execute this Blueprint.
 
 4. Review and Confirm the Blueprint.
 

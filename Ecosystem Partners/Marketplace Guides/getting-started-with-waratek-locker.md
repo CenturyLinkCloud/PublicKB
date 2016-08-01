@@ -44,7 +44,7 @@ For further information about Locker please visit: [www.waratek.com/locker](htt
 ### Technology Profile
 Waratek Locker is a secure container, which includes an Oracle certified Java virtual machine (JVM) running a standard Apache Tomcat application server. When a Java application is deployed Locker's security technology monitors its runtime environment. When it detects real-time attacks, it is capable of controlling how the application executes and thus secures it from Advanced Persistent Threats (Advanced Persistent Threats). Furthermore, this award-winning and patented technology can detect and prevent malicious attacks without any code changes to an application.
 
-This CenturyLink Blueprint provides a simple install solution of Waratek Locker on CentOS 6 and Apache Tomcat 7. It is also possible to use other application servers such as JBoss or Weblogic. Please contact Waratek to find out more. 
+This CenturyLink Blueprint provides a simple install solution of Waratek Locker on CentOS 6 and Apache Tomcat 7. It is also possible to use other application servers such as JBoss or Weblogic. Please contact Waratek to find out more.
 
 ### Audience
 CenturyLink Cloud Users desiring a secure Java environment.
@@ -62,10 +62,10 @@ After reading this article, the user should be able to install Locker on a Centu
 Waratek Locker is available as a Blueprint for deployment on a new server.
 
 ### Steps to deploy to New Server Blueprint
-
 1. Locate the "Install Waratek Locker" Blueprint.
 
-2. Select the Blueprint. Click `deploy blueprint`.
+2. Select the Blueprint.
+   * Click `deploy blueprint`.
 
 3. Configure the Blueprint.
    Complete the information below:
@@ -89,7 +89,7 @@ Waratek Locker is available as a Blueprint for deployment on a new server.
    * This will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
 
 6. Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Steps to deploy to an existing server
@@ -106,7 +106,7 @@ Waratek Locker is available as a Blueprint for deployment on a new server.
 6. Click `deploy blueprint`.
 
 7. Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Pricing

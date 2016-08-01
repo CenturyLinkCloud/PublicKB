@@ -20,15 +20,12 @@
 
 * All APIs hosted on InstantAPI come with 24x7 monitoring and support, and enterprise grade security.
 
-
 ### Description
-
 The purpose of this KB article is introduce the InstantAPI Platform and show how easy it is to create an enterprise grade API from existing data or services. A tasks that traditionally takes a skilled team of developers months can now be done in a fraction of the time and cost.
 
 Not only can you create and host your API with ease, InstantAPI also provides the tools to manage and support your API and its users. Enabling you to operate your API as a Service for others to use.
 
 ### Audience
-
 **Current CenturyLink Cloud Customers**
 
 If you are ready to get started, but are not yet a CenturyLink Cloud customer, no problem. Get started with [CenturyLink Cloud for free](//www.ctl.io/free-trial/). Try our most popular products, or [MarketPlace Partners](//www.ctl.io/marketplace/program/) offerings, allowing you to create a combination of products that best fits your business needs.
@@ -105,11 +102,11 @@ Copy the Master API key from the panel as shown below:
 
 Once done, you can paste the following URL into your browser version section. (our recommended browser is Chrome)
 
-**..URL..with apikey before the /staged/ **
+**..URL..with apikey before the /staged/**
 
 In the above example we have put the API key before the version being tested for readability. The API key can also be added to the URL as a query string parameter as follows:
 
-https://ctl-us02.api.run/v2/demov2/domainbroker/domain?apikey=************
+https://ctl-us01.api.run/staged/demo/domainbroker/domain?apikey= <your api key key>
 
 Or it can be added to the HTTP Header of the call (normally done via code).
 
@@ -127,22 +124,19 @@ One of the key features in InstantAPI is Audit Management from which we can moni
 
 This concludes our quick start step-by-step guide on creating your very first API call using InstantAPI platform.
 
-
 ### Offer and Pricing
 
 **Offer**
 
 With the launch of our Version 3, we are providing a special offer called 1 BILLION CALLS. The offer gives the user 1 billion API calls per month and all [CenturyLink Cloud](//www.ctl.io/cloud-platform/) customers receive an additional **20%** discount of all services.
 
-**Pricing**
-
+### Pricing
 Visit our [Pricing page](http://www.instantapi.co/pricing) for the latest pricing, offers, and Frequently Asked Questions.
 
 For further questions or concerns, please [email us](mailto:sales@instantapi.co).
 
 ### Who Should I Contact for Support?
-
-For issues related to cloud infrastructure (VM's, network, and so on) or if you experience a problem deploying the Blueprint or Script Package, open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or through the CenturyLink Cloud Support website.
+For issues related to cloud infrastructure (VM's, network, etc.) or if you experience a problem deploying the Blueprint or Script Package, open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or through the CenturyLink Cloud Support website.
 
 For InstantAPI support related questions, please send an email to:
 [support@instantapi.co](mailto:support@instantapi.co)
