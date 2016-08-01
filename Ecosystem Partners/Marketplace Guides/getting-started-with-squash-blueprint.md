@@ -19,12 +19,12 @@ Squash is a collection of tools that help engineers find and kill bugs in their 
 CenturyLink Cloud Users
 
 ### Deploying Squash on a New Server
-Squash is available as a Blueprint for deployment on a **new server**.
+Squash is available as a Blueprint for deployment on a new server.
 
 #### Steps
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-   * Search for **Squash on Linux** in the keyword search on the right side of the page.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * Search for 'Squash on Linux' in the keyword search on the right side of the page.
 
 2. Click the `deploy blueprint` button.
 
@@ -38,17 +38,18 @@ Squash is available as a Blueprint for deployment on a **new server**.
    * **User's name** -  Users Name
    * **Subversion port** -  Subversion Server port default 3690
 
-5. Review and Confirm the Blueprint.
+4. Review and Confirm the Blueprint.
 
-6. Deploy the Blueprint.
+5. Deploy the Blueprint.
    * Once verified, click the `deploy blueprint` button.
    * You will see the deployment details stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within five minutes.
 
-7. Deployment Complete.
+6. Deployment Complete.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint has finished executing on your server you may access Squash by navigating to your server via http.
 
-8. Enable public access (optional).
+7. Enable public access (optional).
    * Servers are built using private IPs only with access with client or IPSEC VPN.
    * For inbound access from the Internet add a public IP to your master server.
    <a href="../../Network/how-to-add-public-ip-to-virtual-machine.md">
@@ -60,7 +61,7 @@ Squash is available as a Blueprint for deployment on a **new server**.
 Squash is available as a Blueprint Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on the same machines.
 
 #### Steps
-1. **Deploy or Identify an Existing Server**
+1. Deploy or Identify an Existing Server.
    * Identify the server targeted for Squash installation. The operating system must be Linux.
    * See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
@@ -79,12 +80,13 @@ Squash is available as a Blueprint Package for deployment on an existing server 
    * **User's name** -  Users Name
    * **Subversion port** -  Subversion Server port default 3690
 
-4. **Deploy the Blueprint**
+4. Deploy the Blueprint.
    * Once verified, click the `execute package` button.
    * You will see the deployment details stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within five minutes.
 
 5. Deployment Complete.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint has finished executing on your server you may access Squash by navigating to your server via http.
 
 6. Enable public access (optional).

@@ -23,7 +23,6 @@ CenturyLink Cloud Users
 ### Impact
 After reading this article, the user should feel comfortable getting started using the Blueprint technology on CenturyLink Cloud.
 
-
 ### Prerequisite
 * Access to the CenturyLink Cloud platform as an authorized user.
 
@@ -45,9 +44,9 @@ Refinery CMS is available as a Blueprint for deployment on a new server.
    * Locate the 'Install Bitnami Refinery CMS on Linux' Blueprint.
 
 2. Choose and Deploy the Blueprint.
-   * Click the “Install Bitnami Refinery CMS on Linux” Blueprint.
+   * Click the 'Install Bitnami Refinery CMS on Linux' Blueprint.
 
-3. Configure the Blueprint.  
+3. Configure the Blueprint.
    Complete the information below:
 
    * Execute on Server: Select a Linux x64 server to deploy the Blueprint on.
@@ -69,7 +68,7 @@ Refinery CMS is available as a Blueprint for deployment on a new server.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Deploy Refinery CMS to an existing server (alternate option)
@@ -102,12 +101,12 @@ Bitnami Refinery CMS is available as a Script Package for deployment on an exist
 
 5. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access your Refinery CMS server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
-1. Check email to obtain Server Name and IP Address Login information
+1. Check email to obtain Server Name and IP Address Login information.
 2. Log in to the server and start having fun!
 
 ### Pricing

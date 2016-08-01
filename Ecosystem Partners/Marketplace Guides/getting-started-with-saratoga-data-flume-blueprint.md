@@ -9,26 +9,26 @@
 ![Saratoga Data logo](../../images/ecosystem-saratoga-data-logo.png)
 
 ### Partner Profile
-- Saratoga Data Systems, Inc. - Securely and accurately move your distributed data at unprecedented speeds.
-- [www.saratogadata.com](http://saratogadata.com/)
+* Saratoga Data Systems, Inc. - Securely and accurately move your distributed data at unprecedented speeds.
+* [www.saratogadata.com](http://saratogadata.com/)
 
 Customer Support:
-- [support@saratogadata.com](mailto:support@saratogadata.com)
-- 408-898-4307
+* [support@saratogadata.com](mailto:support@saratogadata.com)
+* 408-898-4307
 
 Sales Support:
-- [sales@saratogadata.com](mailto:sales@saratogadata.com)
-- 408-898-4307
+* [sales@saratogadata.com](mailto:sales@saratogadata.com)
+* 408-898-4307
 
 ### Description
-Saratoga Data Systems has provided their Flume accelerated file transfer technology on the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this network and security solution.
+Saratoga Data Systems has provided their Flume accelerated file transfer technology on the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this network and security solution.
 
 Saratoga Data Systems helps CenturyLink Cloud customers address the business challenge of secure and reliable transmission of data over challenged networks by providing fast reliable file transfer using the flume client server software - now available as part of the CenturyLink Cloud Blueprint Engine.
 
 ### Solution Overview
 ![Saratoga Data Flume logo](../../images/ecosystem-saratoga-data-flume-logo.png)
 
-Flume Network Optimization is a patented network protocol for transferring data that is unaffected by high latency and very resiliant in the face of errors and network interruption.
+Flume Network Optimization is a patented network protocol for transferring data that is unaffected by high latency and very resilient in the face of errors and network interruption.
 
 The 'flume' command line interface program implements this protocol wrapped in robust file management technology.
 
@@ -58,23 +58,23 @@ After reading this article, the user should feel comfortable getting started usi
 After executing the steps in this Getting Started document, the users will have a functioning Linux operating system that includes the 'flume' software.
 
 ### Prerequisite
-- Access to the CenturyLink Cloud platform as an authorized user.
-- Identify a Network VLAN you want the Saratoga Data servers to reside on.
-- Possess a Flume license key.
+* Access to the CenturyLink Cloud platform as an authorized user.
+* Identify a Network VLAN you want the Saratoga Data servers to reside on.
+* Possess a Flume license key.
 
 ### Postrequisite
-- If you want to access your VM over the internet, please perform the following tasks once you receive an email confirming you Blueprint completed successfully:
+* If you want to access your VM over the internet, please perform the following tasks once you receive an email confirming you Blueprint completed successfully:
 
-1. If you need to connect to your server via the Internet, Add a [Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/how-to-configure-client-vpn.md) or similar technology.
+* If you need to connect to your server via the Internet, Add a [Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/how-to-configure-client-vpn.md) or similar technology.
 
-2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal. The ports used by 'flume' are controlled by a configuration file /etc/flume/ports but the standard ports to open are:
-* TCP 22, 2354-2454
-* UDP 2355-2454
-
+* [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal. The ports used by 'flume' are controlled by a configuration file /etc/flume/ports but the standard ports to open are:
+   * TCP `22`, `2354-2454`
+   * UDP `2355-2454`
 
 ### Install Flume Blueprint
 1. Locate the Flume Blueprint.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library and search for “Flume” in the keyword search on the right side of the page.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * Search for “Flume” in the keyword search on the right side of the page.
    * Locate the 'Install Flume File Transfer on Linux' Blueprint.
 
 2. Choose and Deploy the Blueprint.
@@ -95,7 +95,7 @@ After executing the steps in this Getting Started document, the users will have 
 
 7. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the new server until you have received this email notification.
 
 ### Accessing your Saratoga Data Flume Server

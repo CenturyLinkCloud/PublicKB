@@ -26,7 +26,7 @@ SUREedge technology allows CenturyLink customers to rapidly migrate workloads fr
 ### Description
 To use SUREedge for DR or onboarding to the Cloud, you must run an instance of SUREedge both on-prem and on-CenturyLink Cloud. The on-prem instance provides the capability to capture and dedupe-replicate applications and data, while the on-cloud instance acts as the receiver, storage and recovery manager in the Cloud.
 To create the on-Cloud instance, use either of these two Blueprints:
-* SUREedge Migrator:  Use this for onboarding/migration to CenturyLink Cloud.
+* SUREedge Migrator:  Use this for on boarding/migration to CenturyLink Cloud.
 * SUREedge DR:  Use this for DR CenturyLink Cloud.
 
 To download and create the on-prem instance, go to [http://www.surelinesystems.com/centurylink/](http://www.surelinesystems.com/centurylink/)
@@ -66,24 +66,21 @@ There are two SUREedge Blueprints available:
 
 #### Steps to Deploy a New SUREedge Blueprint
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-   * Search for "SUREedge" in the keyword search on the right side of the page.
-   * Select either **SUREedge Migrator** or **SUREedge DR**.
-   <img src="../../images/sureedge/cluster_blueprint_tiles.png" style="border:0;max-width:250px;">
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * Search for 'SUREedge' in the keyword search on the right side of the page.
+   * Select either 'SUREedge Migrator' or 'SUREedge DR'.
 
 2. Click the `deploy blueprint` button.
 
 3. Set Required parameters.
    * **MC Password** - Repeat the root administrator credentials already given for the server.
-   <img src="../../images/sureedge/deploy_parameters.png" style="max-width:450px;">
 
 4. Set Optional Parameters.
    * Password/Confirm Password (This is the root password for the server. Keep this in a secure place).
    * Set DNS to “Manually Specify” and use “8.8.8.8” (or any other public DNS server of your choice).
    * Optionally set the server name prefix.
    * The default values are fine for every other option.
-   * *You should note the two hostnames you specified above, as well as the MC password. These
-  will be needed later to log into and configure your SUREedge instances.*
+   * *Make note of the two hostnames you specified above and the MC password. These will be needed later to log into and configure your SUREedge instances.*
 
 5. Review and Confirm the Blueprint.
 

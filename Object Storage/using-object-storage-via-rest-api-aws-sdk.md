@@ -367,7 +367,7 @@ foreach (S3Object obj in objResp.S3Objects)
 
 </pre>
   </li>
-  <li>In the route (controller), add the code to respond to the page load event. This code queries Object Storage via the AWS SDK for Node. See that it loads the credentials file, and passes the Object Storage URL into the object constructor. The <a href="http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3_20060301.html#listBuckets-property"
+  <li>In the route (controller), add the code to respond to the page load event. This code queries Object Storage via the AWS SDK for Node. See that it loads the credentials file, and passes the Object Storage URL and signature version into the object constructor. The <a href="http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3_20060301.html#listBuckets-property"
    >listBuckets operation</a>&nbsp;returns an array of buckets. Here, that array is returned to the view.&nbsp;
     <br />
     <pre>var AWS = require('aws-sdk');
@@ -380,7 +380,7 @@ exports.index = function(req, res){
 
     AWS.config.loadFromPath('./credentials.json');
 
-    var s3 = new AWS.S3({endpoint:'https://canada.os.ctl.io'});
+    var s3 = new AWS.S3({endpoint:'https://canada.os.ctl.io', signatureVersion:'v2'});
 
 
 

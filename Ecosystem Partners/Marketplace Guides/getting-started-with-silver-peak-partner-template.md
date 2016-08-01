@@ -101,7 +101,6 @@ After reading this article, the user should feel comfortable getting started usi
 
 ### Accessing and Configuring your Silver Peak virtual appliance
 Once the Service Task team deploys your virtual appliance, you will get an email notification with details on your new devices. Follow these instructions to access and configure your virtual appliance:
-
 1. Add a public IP to the virtual appliance.
 
 2. Connect to the public IP over HTTPS using your web browser.
@@ -114,7 +113,7 @@ The costs listed above in Steps 1 and 2 are for the infrastructure only. After d
  * Purchase license by sending email - http://www.silver-peak.com/company/contact
 
 #### Process to request credit for Service Task fee
-Follow this process to request credit on your account to re-imburse any expense to deploy the Partner Template
+Follow this process to request credit on your account to reimburse any expense to deploy the Partner Template:
 * Please copy and paste the email below and send it to [ecosystem@ctl.io](mailto:ecosystem@ctl.io).
 
   ```
