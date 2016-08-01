@@ -71,7 +71,7 @@ Even though our global cloud platform is able to scale to various enterprise wor
 
 ### Open Source Contributions (2)
 
-* [__Lorry.io.__](https://lorry.io/) Lorry.io is a CenturyLink Labs open-source project for creating, validating and sharing Docker Compose YAML files. Docker-compose.yml files are used to define and run complex applications with Docker and Docker Compose. Lorry.io can also import Panamax templates and convert them into docker-compose.yml files. For more information, [read this blog post](../developers/blog/post/lorry-io-pathway-to-docker-composable-apps.md) and [browse the wiki here](//github.com/CenturyLinkLabs/lorry).
+* [__Lorry.io.__](https://lorry.io/) Lorry.io is a CenturyLink Labs open-source project for creating, validating and sharing Docker Compose YAML files. Docker-compose.yml files are used to define and run complex applications with Docker and Docker Compose. Lorry.io can also import Panamax templates and convert them into docker-compose.yml files. For more information, [read this blog post](/developers/blog/post/lorry-io-pathway-to-docker-composable-apps) and [browse the wiki here](//github.com/CenturyLinkLabs/lorry).
 
 * **Updates:**
 
