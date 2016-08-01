@@ -41,9 +41,9 @@ Current supported operating systems can be found here [Operating System Support]
 
 ### Installation Process
 
-1. Go into the **Blueprints Library**.
+1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**. 
 
-  ![Control Portal](../images/client-security/gettingIPS_controlportal.png)
+  ![Control Portal](../images/client-security/IPSblueprintcontrolportal.png)
 
 2. Search for **Install Intrusion Prevention** in the Refine Results section. Then, click **Install Intrusion Prevention on Linux** or **Install Intrusion Prevention on Windows**.  
 
