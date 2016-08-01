@@ -54,7 +54,7 @@
 * __AppFog Limited Beta.__ Beta access for AppFog continues to be available. Based on Cloud Foundry v2, this new platform for applications makes it easier for developers to build and scale cloud-native applications. To sign-up, visit [the AppFog product page](//www.ctl.io/appfog/).
 
 
-### Ecosystem: New Blueprints (5)
+### Ecosystem: New Blueprints (4)
 
 * [__Vormetric.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-encryption-agent-deployment-blueprints.md)
 This security solution complements our previous integration with Vormetric Security Manager, allowing the deployment of encryption agents to various server endpoints on the CenturyLink Cloud.  With Vormetric, a single infrastructure and management environment protects data wherever it resides with file, volume and cloud storage encryption, tokenization with dynamic data masking, field-level application encryption, sophisticated access control policies, third party and integrated encryption key management.
@@ -71,7 +71,7 @@ Even though our global cloud platform is able to scale to various enterprise wor
 
 ### Open Source Contributions (2)
 
-* [__Lorry.io.__](//imagelayers.io/) Lorry.io is a CenturyLink Labs open-source project for creating, validating and sharing Docker Compose YAML files. Docker-compose.yml files are used to define and run complex applications with Docker and Docker Compose. Lorry.io can also import Panamax templates and convert them into docker-compose.yml files. For more information, [read this blog post](//www.centurylinklabs.com/lorry-io-pathway-to-docker-composable-apps/) and [browse the wiki here](//github.com/CenturyLinkLabs/lorry).
+* [__Lorry.io.__](https://lorry.io/) Lorry.io is a CenturyLink Labs open-source project for creating, validating and sharing Docker Compose YAML files. Docker-compose.yml files are used to define and run complex applications with Docker and Docker Compose. Lorry.io can also import Panamax templates and convert them into docker-compose.yml files. For more information, [read this blog post](//www.ctl.io/developers/blog/post/lorry-io-pathway-to-docker-composable-apps) and [browse the wiki here](//github.com/CenturyLinkLabs/lorry).
 
 * **Updates:**
 
