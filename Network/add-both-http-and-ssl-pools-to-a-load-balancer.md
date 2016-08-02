@@ -21,13 +21,13 @@ Centurylink Cloud offers a self-service load balancer in the portal.  Customers 
 
 ### How to Add Both HTTP and SSL Pools to a Self Service Load Balancer
 
-1. To create a Self Service Load Balancer, first navigate to the dropdown menu, and then under “Services,” select “Load Balancer.”
+1. Log on to the [Control Portal](https://control.ctl.io/). To create a Self Service Load Balancer, use the left side navigation bar, click on **Network** > **Load Balancer**.
 
-    ![Dropdown menu showing the Load Balancer option](../images/dropdown-menu-load-balancer-highlighted.png)
+    ![Dropdown menu showing the Load Balancer option](../images/loadbalancer.png)
 
-2. At the Load Balancer menu, select the Datacenter where you would like to have the Load Balancer built, and then select “Create Load Balancer Group.”
+2. At the Load Balancer menu, select the Datacenter where you would like to have the Load Balancer built, and then select **load balancer group** button.
 
-    ![Creating a load balancer group](../images/create-load-balancer-group.png)
+    ![Creating a load balancer group](../images/lbgroup.png)
 
 3. On the Base Settings page, type in a name and description for your Load Balancer, then click “Create.”
 
