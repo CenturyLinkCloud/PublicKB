@@ -28,10 +28,7 @@
 </ul>
 <h3>Detailed Steps</h3>
 <ol>
-  <li>Navigate to the Network / Site-to-Site VPN Control Portal function.</li>
-</ol>
-<p><img src="https://t3n.zendesk.com/attachments/token/egbq7lzxvhnuzyy/?name=s2s.PNG" alt="s2s.PNG" />
-</p>
+  <li>Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Network** > **VPN**.</li>
 <p>2. Select the create point to point VPN button</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/mdyjptwvqqnnjqa/?name=ipsec+image+02.jpg" alt="ipsec_image_02.jpg" />
 </p>

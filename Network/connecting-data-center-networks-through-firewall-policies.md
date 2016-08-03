@@ -31,9 +31,9 @@ The CenturyLink Cloud Platform provides self-service tools to connect networks w
 
   ![Ping Test](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-04.png)
 
-4. Navigate to the Firewall menu in Control.
+4. Using the left side navigation bar, click on **Network** > **Firewall**.
 
-  ![Navigate to Firewall](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-05.png)
+  ![Navigate to Firewall](../images/firewall.png)
 
 5. Select the desired CenturyLink Cloud Data Center node you wish to create an Firewall rule.  Next, choose to the Intra Data Center tab.  In this example, we used UC1.
 
@@ -91,9 +91,9 @@ The CenturyLink Cloud Platform provides self-service tools to connect networks w
 
   **OPTIONAL:** Perform a test ICMP ping between the web server (parent account) & database server (sub-account).  This test should fail as no Firewall Rule is in place between these networks in UC1.
 
-5. Navigate to the Firewall menu in Control.
+5. Using the left side navigation bar, click on **Network** > **Firewall**.
 
-  ![Firewall Menu](../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-19.png)
+  ![Navigate to Firewall](../images/firewall.png)
 
 6. Select the desired CenturyLink Cloud Data Center node you wish to create an Firewall rule.  Next, choose to the Intra Data Center tab and change the **destination account** to the appropriate sub-account.  In this example, in UC1 we chose a Sandbox Sub Account.  
 
