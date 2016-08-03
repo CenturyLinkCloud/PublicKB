@@ -24,8 +24,8 @@ In order to maximize resource efficiency on the platform, the Client VPN service
 
 #### Downloading VPN Configuration Files
 
-1. From Control Portal, use the menu to navigate to the VPN page listed under Network.
-  ![](../images/vpn-menu.png)
+1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Network** > **VPN**.
+  ![](../images/network-vpn.png)
 
 2. On the VPN Configuration page, find the existing VPN certificate and click the "download" button. (You may also use the "create certificate" button to create separate VPN certificates for other users.)
   ![](../images/vpn-configuration-download.png)
@@ -122,7 +122,7 @@ In order to maximize resource efficiency on the platform, the Client VPN service
   1.	If you are using RHEL/CentOS/Fedora, export the following variable prior to starting the OpenVPN client.  If you do not do this step, you will see the OpenVPN client connect, fail with a TLS handshake error and retry in an endless loop.
   export OPENSSL_ENABLE_MD5_VERIFY=1
   2.	Change directories to /etc/openvpn/<config_dir> and run openvpn command with the .conf file as your argument.
-  cd /etc/opevpn/<config_dir> 
+  cd /etc/opevpn/<config_dir>
   openvpn ./default.conf
   3.	You have successfully connected when you see the message “Initialization Sequence Completed”
 4.	**Connect to servers**
