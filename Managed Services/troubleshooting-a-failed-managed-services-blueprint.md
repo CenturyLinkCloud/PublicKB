@@ -9,25 +9,25 @@
 If a Managed Services Blueprint does not complete as expected, please note the OS and the time the Blueprint was attempted. RHEL Managed Services Blueprints will fail from 9am to 10am UTC as a result of regular maintenance in our managed services infrastructure. Please wait one hour before attempting again.
 
 If that is not the issue, follow these steps to expedite troubleshooting.
-##### 1. From within the Control Portal, hover over the green bar at the top of the page.
+##### 1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Queue**.
 
-![Menu.png](../images/Troubleshoot_Managed_OS-Menu.png)
+![Menu](../images/control-portal-queue.png)
 
-##### 2. Select Queue beneath Blueprints.
+##### 2. On the Deployment Queue page, click the pull-down list and select the correct data center.
 
-![Queue.png](../images/Queue.png)
+![Context](../images/control-portal-data-center.png)
 
-##### 3. On the Deployment Queue page, click the pull-down list and select the correct data center.
+##### 3. Click the pull down list to find the relevant job and status. The options are:
 
-![Context.png](../images/Context.png)
+* Pending
+* Failed
+* Complete
 
-##### 4. Click on the radio buttons to find the relevant job and status.
+![Deployment](../images/status-drop-down.png)
 
-![Deployment.png](../images/Deployment.png
+##### 4. If your request is in failed status, click on the request to see additional details.
 
-##### 5. If your request is in failed status, click on the request to see additional details.
-
-##### 6. If the issue occurs while running a CLC Blueprint for a Managed Application:
+##### 5. If the issue occurs while running a CLC Blueprint for a Managed Application:
 
 * If the Blueprint failed at either the step of “Validate Blueprint” or “Reserve Blueprint” call Support at 1-888-638-6771 and notify us about the ≈step the Blueprint failed (such as “Install Managed MS SQL”).
 * If the Blueprint failed after “Reserve Blueprint,” expand the step where the error failed by clicking on it. Call Support at 1-888-638-6771. Please notify us about the step the Blueprint failed (such as “Install Managed MSSQL”).
@@ -35,7 +35,7 @@ If that is not the issue, follow these steps to expedite troubleshooting.
 
 ![Error_Details.png](../images/Error_Details.png)
 
-##### 7. If the issue occurs during Server Creation for a VM you are attempting to “Make Managed” and the job fails at the same point a second time, continue to troubleshoot by:
+##### 6. If the issue occurs during Server Creation for a VM you are attempting to “Make Managed” and the job fails at the same point a second time, continue to troubleshoot by:
 * Checking to see if Blueprint failed prior to a step called "Apply CTS customizations to ______." (The blank would be specific to an Operating System) If so, it is possibly a resource issue.
 * Check the main dashboard to determine if you have exceeded resource limits.
 
