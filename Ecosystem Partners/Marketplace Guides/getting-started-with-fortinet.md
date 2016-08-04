@@ -31,7 +31,6 @@ Each FortiGate virtual appliance ships with the broadest range of security and n
 FortiGate is now available as part of the CenturyLink Cloud Platform.
 
 ### Solution Overview
-
 Each FortiGate-VM delivers the same comprehensive suite of consolidated, integrated security technologies as industry-leading FortiGate physical appliances. This suite includes:
 
 * The latest NGFW technologies, such as: IPv4/IPv6 firewall, application control, and intrusion prevention, which deliver unmatched granular management and control of data, applications, users, and devices.
@@ -42,15 +41,12 @@ Each FortiGate-VM delivers the same comprehensive suite of consolidated, integra
 Fortinet’s network security product strategy is built around a multi-tenant architecture. Fortinet solutions have the breadth and depth to address securing data as it moves to, through, and outside of the cloud. By providing centrally-managed physical and virtual appliances that deliver the broadest range of network security solutions in the industry, Fortinet can help protect your critical data, from the customer to the cloud and back.
 
 ### Offer
-
 Fortinet has provided their FortiGate Platform virtual appliance, known as a partner template, that can be deployed to your CenturyLink Cloud account via a Service Task. Although Service Tasks are ordinarily billed to the end user account, CenturyLink will provide a refund for the Service Task costs associated with deploying the Fortinet Partner Template. The process to request a refund can be found in this document. The FortiGate virtual appliance is sold via flexible licensing and packaging. We also have trial licenses available upon request. To receive pricing for your environment and/or receive a trial license please contact Fortinet sales: [Dustin Warner, dwarner@fortinet.com](mailto:dwarner@fortinet.com) or via telephone: (720) 838-7353.
 
 ### Audience
-
 * CenturyLink Cloud Users, Security Administrators, Network Security, Operations Teams
 
 ### Impact
-
 After executing the steps in this Getting Started guide, users will have a functioning FortiGate High Performance Next-Gen Firewall upon which they can quickly start securing workloads in the cloud.
 
 The deployment process for partner templates currently requires manual interaction via the Service Task process, but will be further automated in future releases of the CenturyLink Cloud Platform.
@@ -106,7 +102,7 @@ The Fortinet partner template deploys in a virtual appliance model, as a Century
     -----
 ```
 
-2. The suppport team will send you an email once the template has been deployed. This email will also contain the IP address of the server so that you can access the template.
+2. The support team will send you an email once the template has been deployed. This email will also contain the IP address of the server so that you can access the template.
 
     **Note:** When accessing your VM for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
 
@@ -133,7 +129,6 @@ To access your Fortinet partner template over the internet, please perform the f
 There are no Fortinet license costs included. The cost to deploy the Fortinet Partner Template will be billed as a Service Task, but CenturyLink will provide a credit for those costs. In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees is [available here](//www.ctl.io/service-tasks).
 
 ### To Request a Credit for the Service Task Fee
-
 Request a credit on your account to reimburse any expense to deploy the partner template.
 
 Please copy and paste the email below and send it to [ecosystem@ctl.io](mailto:ecosystem@ctl.io).
@@ -159,7 +154,6 @@ Thank you very much, your_name_here
 **Q:** Where do I obtain my Fortinet License or entitlements?
 
 **A:** Existing CenturyLink Enterprise Customers can contact their Account Representative for help obtaining a Fortinet license, or contact Fortinet directly: Please email [Dustin Warner, dwarner@fortinet.com](mailto:dwarner@fortinet.com) or via telephone: (720) 838-7353.
-
 
 **Q:** Who should I contact for support?
 

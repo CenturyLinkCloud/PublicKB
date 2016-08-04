@@ -27,10 +27,8 @@ After reading this article, the user should feel comfortable getting started usi
 
 ### Postrequisite
 * If you want to access your application over the internet, please perform the following tasks after you receive an email notifying you that the Blueprint completed successfully:
-
-1. If you need to connect to your server via the Internet, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal
-
-2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
+* If you need to connect to your server via the Internet, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal
+* [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
   * The default ports to access the application are: `80`, `443`.
 
 ### Deploying LAMP Stack on a New Server
@@ -38,14 +36,15 @@ LAMP Stack is available as a Blueprint for deployment on a new server.
 
 #### Steps to deploy to an existing server Blueprint
 1. Locate the LAMP Stack Stack Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “LAMP Stack” in the keyword search on the right side of the page.
    * Locate the 'Install LAMP Stack on Linux' Blueprint.
 
-2. Choose and Deploy the Blueprint. Click the “Install LAMP Stack on Linux” Blueprint.
+2. Choose and Deploy the Blueprint.
+   * Click the “Install LAMP Stack on Linux” Blueprint.
 
 3. Configure the Blueprint.
-Complete the information below:
+   Complete the information below:
 
    * Execute on Server: Select a Linux x64 server to deploy the Blueprint on.
    * Apache Web Server Port, e.g., 80
@@ -58,16 +57,17 @@ Complete the information below:
    * Password
 
 4. Review and Confirm the Blueprint.
-   * Click “next: step 2.”
+   * Click `next: step 2`.
    * Verify your configuration details.
 
 5. Deploy the Blueprint.
-   * Once verified, click the `deploy blueprint` button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
+   * Once verified, click the `deploy blueprint` button.
+   * You will see the deployment details along with an email stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
 
 6. Monitor the Activity Queue.
   * Monitor the Deployment Queue to view the progress of the Blueprint.
-  * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+  * To monitor progress, click **Queue** from the Nav Menu on the left.
   * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Deploy LAMP Stack to an existing server (alternate option)
@@ -75,14 +75,15 @@ LAMP Stack Stack is available as a Script Package for deployment on an existing 
 
 #### Steps to deploy to an existing server
 1. Deploy or Identify an Existing Server.
-Identify the server targeted for LAMP Stack installation. The Operating system must be supported by the Script Package. See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
+   * Identify the server targeted for LAMP Stack installation. The Operating system must be supported by the Script Package.
+   * See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. Select to Execute the Package on a Server Group.
    * Packages can be executed on one more more servers in a Group. Search for the public script package named **Install LAMP Stack on Linux**.
    * See the [using group tasks to install scripts on groups](../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md) KB for more information on how to complete the next few steps.
 
 3. Configure the Parameters.
-Set the following application parameters:
+   Set the following application parameters:
 
    * **Apache Web Server Port** - default 80
    * **SSL Port** - default 443
@@ -94,11 +95,12 @@ Set the following application parameters:
    * **Password**
 
 4. Deploy the Script Package.
-Once verified, click on the `execute package` button. This will kick off the deployment process and load a page where you can track the progress. Deployment will typically complete within a few minutes.
+   * Once verified, click on the `execute package` button.
+   * This will kick off the deployment process and load a page where you can track the progress. Deployment will typically complete within a few minutes.
 
 5. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access your LAMP Stack server

@@ -41,18 +41,19 @@ After reading this article, the user should feel comfortable getting started usi
 ### Postrequisite
 * Allow incoming traffic for ports 25565 so users can play on your Minecraft server. To open the firewall port, Navigate to the server in the Control Portal and click on the Public IP address. Then, add a new rule for a specific port and enter 25565. Click `Add` when done so the changes are saved.
 
-* Customize your Minecraft Server by editing the Minecraft server.properties file in /minecraft-server
+* Customize your Minecraft Server by editing the Minecraft `server.properties` file in `/minecraft-server`.
 
 ### Install Minecraft Server on Linux Blueprint
 1. Locate the Mojang Minecraft Server Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Minecraft” in the keyword search on the right side of the page.
    * Locate the 'Install Minecraft Server on Linux' Blueprint.
 
 2. Choose and Deploy the Blueprint.
    * Click the “Install Minecraft Server on Linux” Blueprint.
 
-3. Configure the Blueprint using the standard information. There is nothing special required.
+3. Configure the Blueprint.
+   * Use the standard information. There is nothing special required.
 
 4. Review and Confirm the Blueprint.
    * Click `next: step 2`.
@@ -64,16 +65,21 @@ After reading this article, the user should feel comfortable getting started usi
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the Minecraft Server until you have received this email notification.
 
 ### Access your Minecraft server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
 1. Check your email to obtain Server Name and IP Address Login information.
+
 2. Click on the link to the server and then add a firewall port as referenced in the postrequisite section.
+
 3. SSH to your Minecraft Server's Public IP and login as the user minecraft with password Minecraft123 to customize your Minecraft server.
+
 4. Connect to your Minecraft Java console by running this command as the minecraft user: `screen -r`.
+
 5. To disconnect from the java console: press "CTRL A + Z" (A then Z).
+
 6. To stop the server, login to the console and shut it down. If you are not sure how to do that, consult the Minecraft documentation.
 
 ### Pricing

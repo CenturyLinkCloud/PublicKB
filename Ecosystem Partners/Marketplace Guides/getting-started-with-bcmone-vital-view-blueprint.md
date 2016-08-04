@@ -3,7 +3,7 @@
   "date": "01-05-2015",
   "author": "Bob Stolzberg",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 ![Vital View Logo](../../images/vitalview-logo.png)
@@ -34,13 +34,12 @@ After reading this article, the user should feel comfortable getting started usi
 ###  Detailed Steps
 Follow these step by step instructions to get started with a single-server Vital View deployment.
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Vital View” in the keyword search on the right side of the page.
    * Click the “Install Vital View” Blueprint.
 
 2. Choose the Blueprint.
    * Click the `deploy blueprint` button.
-   ![Install VitalView](../../images/install-vitalview.png)
 
 3. Configure the Blueprint.
    * Complete the information/fields required by the Blueprint wizard.
@@ -49,26 +48,21 @@ Follow these step by step instructions to get started with a single-server Vital
      * Set DNS to “Manually Specify” and use “8.8.8.8” (or any other public DNS server of your choice).
      * Optionally set the server name prefix.
      * Provide information in additional fields.
-     ![Customize VitalView](../../images/customize-vitalview.png)
 
 4. Review and Confirm the Blueprint.
    * Click `next: step 2`.
    * Verify your configuration details.
-   ![Review VitalView](../../images/review-vitalview.png)
 
 5. Deploy the Blueprint.
    * Once verified, click the `deploy blueprint` button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a queue page to allow you to track the progress of the deployment.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
-   * Below is what a successful deployment looks like when completed.
-   ![Successful Install of VitalView](../../images/success-vitalview.png)
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
 
 6. Get Busy!
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
    * Once the process has completed ­ you will need to determine the your IP address for the newly deployed host. If you navigate to the “Servers” panel and look for the IP addresses. Note the IP address, it will be required in future steps. See the image below for help.
    * **Important**: If you want to access Vital View from the internet you will need to manually add a Public IP address to the Vital View server via the CenturyLink Cloud control portal. For more information, view this [Knowledge Base](http://www.ctl.io/knowledge-base/network/how-to-add-public-ip-to-virtual-machine.md) article.
    * You will need to copy the IP address. It will be required in future steps.
-    ![Monitoring VitalView](../../images/monitoring vitalview.png)
 
 7. Access The Vital View dashboard Interface.
    * The Vital View web interface is accessible via https on port `443` of the server’s public or private IP address. Go ahead and navigate to the dashboard now. Ignore the warning about SSL certificate and continue.

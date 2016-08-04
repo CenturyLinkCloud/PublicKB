@@ -78,7 +78,7 @@ Ruxit has provided a Blueprint that will easily add monitoring to your whole Cen
 Follow these step by step instructions to deploy Ruxit.
 
 1. Open the Blueprint Library.
-   * Access your Blueprint Library by selecting the “Blueprints Library” under the Blueprints heading from the green drop down menu.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
 
 2. Search for the Blueprint.
    * To search for the Ruxit Blueprint, type “Ruxit” under “Refine Results” in the right panel.
@@ -89,10 +89,9 @@ Follow these step by step instructions to deploy Ruxit.
 
 4. Deploy the Blueprint.
    * Click on the `deploy blueprint` button to begin configuring your installation.
-   ![Ruxit Image](../../images/ecosystem-ruxit-2.png)
 
 5. Configure the Blueprint.
-On the first page, “Customize Blueprint”, ensure the following options are configured:
+   Ensure the following options are configured:
    * Ruxit tenant ID: Your Ruxit tenant ID is the unique identifier of your Ruxit environment.
    * You can find it easily by looking at the URL in your browser when you are logged into your Ruxit home page. `https://{tenant}.live.Ruxit.com` The subdomain {tenant} represents your tenant ID.
    * Ruxit token - You can get your token by following these steps.
@@ -100,7 +99,6 @@ On the first page, “Customize Blueprint”, ensure the following options are c
      * Click the burger menu in the right upper corner and select "Monitor another host".
      * You will see the Download Ruxit Agent wizard; click Linux.
      * You will see the wget command line. The token is the last part of the path after `/latest/`.
-   ![Ruxit Image](../../images/ecosystem-ruxit-3.png)
 
 6. Review and Confirm the Blueprint.
    * You will come to a confirmation view of what your Blueprint looks like.
@@ -109,11 +107,11 @@ On the first page, “Customize Blueprint”, ensure the following options are c
 
 7. Monitor the Activity Queue.
    * After clicking Deploy Blueprint, the job will be submitted into a queue and you will be taken to a monitoring page where you can see the progress of each step the Blueprint goes through.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
 
 ### Access and use Ruxit
 Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
-* Once the Blueprint completes, simply review your Ruxit homepage and check if your servers are being monitored
+* Once the Blueprint completes, simply review your Ruxit homepage and check if your servers are being monitored.
   ![Ruxit Image](../../images/ecosystem-ruxit-4.png)
 
 * If they are not, please open a support ticket by contacting Ruxit support.

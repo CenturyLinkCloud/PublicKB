@@ -32,16 +32,12 @@ After reading this article, the user should feel comfortable getting started usi
 ### Detailed Steps
 Follow these step by step instructions to get started with a single-server CloudMine deployment.
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “CloudMine” in the keyword search on the right side of the page.
-     ![CloudMine 1](../../images/cm1.png)
-
    * Click the “CloudMine Single Server” Blueprint.
-     ![CloudMine 2](../../images/cm2.png)   
 
 2. Choose the Blueprint.
    * Click the `deploy blueprint` button.
-     ![CloudMine 3](../../images/cm3.png)
 
 3. Configure the Blueprint.
    Ensure the following options are configured.
@@ -50,7 +46,6 @@ Follow these step by step instructions to get started with a single-server Cloud
    * Optionally set the server name prefix.
    * Read and accept the CloudMine [terms of service](https://cloudmine.me/eula/centurylink).
    * The default values are fine for every other option.
-     ![CloudMine 4](../../images/cm4.png)
 
 4. Review and Confirm the Blueprint.
    * Click `next: step 2`.
@@ -63,7 +58,7 @@ Follow these step by step instructions to get started with a single-server Cloud
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
 
 7. Get Busy!
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.

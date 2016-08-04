@@ -34,7 +34,8 @@ Waratek JVM is available as a Blueprint for deployment on a new server.
 ### Steps to deploy to New Server Blueprint
 1. Locate the "Install Waratek JVM 3-0-2 on New Server" Blueprint.
 
-2. Select the Blueprint. Click `deploy blueprint`.
+2. Select the Blueprint.
+   * Click `deploy blueprint`.
 
 3. Configure the Blueprint. Complete the information below:
 
@@ -56,13 +57,11 @@ Waratek JVM is available as a Blueprint for deployment on a new server.
    * This will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
 
 6. Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
-
-7. Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
+   * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete.
    * Please do not use the application until you have received this email notification.
 
 ### Steps to deploy to an existing server
-
 1. Deploy or Identify an existing server.
 
 2. Locate the "Install Waratek JVM on Existing Server" Blueprint in the Blueprint Library.
@@ -76,9 +75,8 @@ Waratek JVM is available as a Blueprint for deployment on a new server.
 6. Select `deploy blueprint`.
 
 7. Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
-
-8. Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
+   * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete.
    * Please do not use the application until you have received this email notification.
 
 ### Frequently Asked Questions
