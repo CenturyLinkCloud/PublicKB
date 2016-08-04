@@ -70,14 +70,13 @@ Follow these step by step instructions to deploy a single server instance of Cal
    * Take note: you will not be able to recover your password if you do not enter your correct email password.
    * Also enter a strong password that has a mix of letters, numbers and special characters.
    * Be sure to keep the Call Me Web Login safely written down as you will need this login info to access the app later.
-   * If you are satisfied with you entries then click the “next step 2” green button at the bottom.
+   * Click the `next: step 2` button.
    ![Apex Datacom Image](../../images/ecosystem-apex-datacom-callme-a4.png)
 
 4.	Review and Confirm the Blueprint.
    * You will come to a confirmation view of what your Blueprint looks like.
    * Verify your configuration details.
    * Click the `deploy Blueprint` button.
-   ![Apex Datacom Image](../../images/ecosystem-apex-datacom-callme-a5.png)
 
 5.	Blueprint Queued & Deployed.
    * The Blueprint will be submitted into a queue and you will be taken to a monitoring page where you can see the progress of each step the Blueprint goes through.
@@ -85,15 +84,12 @@ Follow these step by step instructions to deploy a single server instance of Cal
    * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Each step as it completes successfully will show a green circle indicator. Should you see a red circle indicator at any step you might be given a resume option which you should take.
    * If the Blueprint is stuck at a red indicator you should open a ticket (possibly through chat if you have this option in your CLC account) to resume the Blueprint.
-   * Most normally the Blueprint will complete properly. Below is what a successful deployment looks like when completed.
-   ![Apex Datacom Image](../../images/ecosystem-apex-datacom-callme-a6.png)
 
 6.	Jump In!
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
    * To get started you need to determine the Public IP that was automatically added for this server.
    * To get this Public IP go to your CLC account and locate the newly deployed server and select it so you have a detailed dashboard view of this server. On the right hand side look for your Public IP. See the image below for an idea.
    * IMPORTANT – do not add any additional IP addresses.
-   ![Apex Datacom Image](../../images/ecosystem-apex-datacom-callme-a7.png)
 
 ### Access Apex Call Me Application
 Follow these steps to access and use the Call Me application.
