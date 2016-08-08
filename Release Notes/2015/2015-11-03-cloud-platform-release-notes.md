@@ -44,15 +44,15 @@
 
 * __Runner Beta Launched.__ The Runner service is now available in beta to select customers.
 
-  <img src="../images/2015-11-03_runner-logo-releasenotes.png" alt="Runner Logo"/>
+  <img src="../../images/2015-11-03_runner-logo-releasenotes.png" alt="Runner Logo"/>
 
   Runner enables teams, developers, and engineers to quickly provision, manage, and modify their environment in not only the CenturyLink Cloud Platform, but other cloud services, as well as on-premise deployments. Runner brings together state-based and massive parallel job execution, with multi-cloud and multi-data center support, all in a single interface.
 
-    <img src="../images/2015-11-03_runner-flowchart-abstract-releasenotes.jpg" width="40%" alt="Runner Design Flowchart"/>
+    <img src="../../images/2015-11-03_runner-flowchart-abstract-releasenotes.jpg" width="40%" alt="Runner Design Flowchart"/>
 
   Our goal was to make automation easy and accessible to everyone. From the most advanced users to those new to cloud computing, Runner makes it easy to create jobs and execute them regardless of your environment or provider.
 
-    <img src="../images/2015-11-03_runner-diagram-web-releasenotes.jpg" width="40%" alt="Runner Diagram"/>
+    <img src="../../images/2015-11-03_runner-diagram-web-releasenotes.jpg" width="40%" alt="Runner Diagram"/>
 
   * __Runner Job Service.__ The Job Service is the primary component of the Runner product. Users can create, modify, and execute jobs at anytime. The Job Service accepts a payload that references a playbook, Ansible’s configuration, deployment, and orchestration language file to be used, whether that is using a public GitHub repository or private (GitHub credentials required), as well as other information like login or bearer token, environments, and so on.
 

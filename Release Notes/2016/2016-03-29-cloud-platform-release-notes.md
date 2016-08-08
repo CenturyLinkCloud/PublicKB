@@ -17,7 +17,7 @@
 
   Effective 3/30, Relational DB customers can perform a manual backup of their database instance any time they need.  Manual backups will follow the same backup retention policy as automated backups.
 
-  ![Relational DB Restore](../images/2016-03-29-release-notes-rdbs-manual-backup.png)
+  ![Relational DB Restore](../../images/2016-03-29-release-notes-rdbs-manual-backup.png)
 
 * __Relational DB: Reseller Branding Support.__
 
