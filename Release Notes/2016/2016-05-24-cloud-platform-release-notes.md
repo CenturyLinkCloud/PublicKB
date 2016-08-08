@@ -26,7 +26,7 @@
 	New RelationalDB instances now start at 1 vCPU, 1GB Memory, and 1GB Storage. You can immediately adjust your instance configuration via the RelationalDB dashboard or API. Pricing for instances with the same configuration as the prior t-shirt sized plans remains the same. The complete price breakdown is available in the RelationalDB dashboard and at [https://www.ctl.io/pricing/#/](https://www.ctl.io/pricing/#/).
 
 	- **Custom Configuration Profiles.**  Effective May 25th, RelationalDB customers will be able to customize their MySQL configuration settings. Users will simply modify the default MySQL settings in the UI and save them as a new Configuration Profile under their account. Once created, the Configuration Profiles can be used when creating a new Relational DB instance or applied to an existing Relational DB instance. This enables users to customize their Relational DB instance to meet their applications' unique requirements.
-	![RelationalDB App](../images/2016-05-24_releasenotes-01.png)
+	![RelationalDB App](../../images/2016-05-24_releasenotes-01.png)
 
 
 * __Runner__. Our [automated infrastructure management service](https://www.ctl.io/runner/) has added the following new features:
@@ -41,7 +41,7 @@
 ### Enhancements (2)
 * __Blueprint Queue Page__
 	* **UI and Search Updates.** The UI on the Blueprint Queue Page has been updated to improve usability. We removed the account drop down and replaced it with a new control that filters based on title or account alias.
-	![Blueprint Queue](../images/2016-05-24_releasenotes-02.png)
+	![Blueprint Queue](../../images/2016-05-24_releasenotes-02.png)
 * __API V2 Experimental__
 	* **Cross Data Center Firewall Policy.** Use the Cross Data Center Firewall Policy when you need a Firewall Policy between networks in different Data Centers.
 

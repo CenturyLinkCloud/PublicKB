@@ -13,7 +13,7 @@
 
   Managed OS continue to be available in Virginia (VA1), Santa Clara (UC1) and London (GB3).
 
-* __Patching as a Service.__ Now available for free to all CenturyLink customers using Windows 2012. Our customers can patch their Windows 2012 servers through blueprints or 'execute package' on demand via the Control Portal or API. The service provides the capability to patch servers, know when the patching started and finished as well as list of all patches applied. [You can learn more about Patching as a Service in our KB.](../Servers/patching-as-a-service.md)
+* __Patching as a Service.__ Now available for free to all CenturyLink customers using Windows 2012. Our customers can patch their Windows 2012 servers through blueprints or 'execute package' on demand via the Control Portal or API. The service provides the capability to patch servers, know when the patching started and finished as well as list of all patches applied. [You can learn more about Patching as a Service in our KB.](../../Servers/patching-as-a-service.md)
 
 * __Orchestrate.__ Our multi-modal managed datatabse service, [Orchestrate](https://www.ctl.io/blog/post/centurylink-acquires-orchestrate/), gives developers a single API for key-value, geospatial, graph, and timeseries data. And it just keeps getting better and better! Check out the new functionality delivered this month, focused on usability and exposing API features:
 
@@ -33,13 +33,13 @@
 
 ### Minor Enhancements (3)
 
-* __Database as a Service.__ Certified Managed MySQL now works with RHEL6 and 7. You can [read more about Managed MySQL in our KB](../Managed Services/getting-started-with-managed-mysql.md).
+* __Database as a Service.__ Certified Managed MySQL now works with RHEL6 and 7. You can [read more about Managed MySQL in our KB](../../Managed Services/getting-started-with-managed-mysql.md).
 
 * __UI improvements.__ The Control Portal continues to get easier on the eye. We've made some light improvements to the UI that we think you'll appreciate.
 
 * __CenturyLink Cloud Status.__ [status.ctl.io](//status.ctl.io/) provides real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Notifications surrounding Compute, Network, and Storage are now based on what servers an account has in a specific data center, allowing our customers to get the information they need - and only the information that they need.
 
-  Our KB has more [information about the CenturyLink Cloud Status service.](../General/centurylink-cloud-status-faq.md)
+  Our KB has more [information about the CenturyLink Cloud Status service.](../../General/centurylink-cloud-status-faq.md)
 
 
 ### Online Tools (1)
@@ -56,16 +56,16 @@
 
 ### Ecosystem: New Blueprints (4)
 
-* [__Vormetric.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-encryption-agent-deployment-blueprints.md)
+* [__Vormetric.__](../../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-encryption-agent-deployment-blueprints.md)
 This security solution complements our previous integration with Vormetric Security Manager, allowing the deployment of encryption agents to various server endpoints on the CenturyLink Cloud.  With Vormetric, a single infrastructure and management environment protects data wherever it resides with file, volume and cloud storage encryption, tokenization with dynamic data masking, field-level application encryption, sophisticated access control policies, third party and integrated encryption key management.
 
-* [__SoftNAS.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-appliance.md)
+* [__SoftNAS.__](../../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-appliance.md)
 SoftNAS is one of the most popular storage technologies in the cloud.  This Partner Template, available via Service Task, provides CenturyLink customers with an enterprise-grade, software-defined, NAS storage gateway to safely and reliably operate their business-critical IT systems and storage folders inside CenturyLink Cloud.
 
-* [__Wordpress.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-wordPress-blueprint.md)
+* [__Wordpress.__](../../Ecosystem Partners/Marketplace Guides/getting-started-with-wordPress-blueprint.md)
 Web publishing is a common workload that can be achieved through a variety of cloud models.  One of the most popular tools for these weblog and content management use cases is Wordpress, which is open source and now easier than ever to deploy in CenturyLink Cloud.  Your content teams can be up and running on Wordpress 4.2 in minutes using the Blueprint automation that can either create a new server or install the software onto an existing machine.
 
-* [__Mojang Minecraft PE.__](../Ecosystem Partners/Marketplace Guides/getting-started-with-minecraft-pe-server-blueprint.md)
+* [__Mojang Minecraft PE.__](../../Ecosystem Partners/Marketplace Guides/getting-started-with-minecraft-pe-server-blueprint.md)
 Even though our global cloud platform is able to scale to various enterprise workloads, it doesn’t mean we can’t use it to have a little bit of fun.  This blueprint rolls out a Mojang Minecraft Pocket Edition (PE) server that supports iOS and Android gameplay on various personal computing devices.  This solution is a great way to build a safe, customized gaming environment for the family while teaching young engineers how the cloud actually works.
 
 

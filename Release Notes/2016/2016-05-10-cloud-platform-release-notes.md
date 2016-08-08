@@ -33,4 +33,4 @@
 
   For a full list of features and more, go to https://www.ctl.io/runner or watch our launch video https://vimeo.com/163557923. If you are ready to get started, you can go to https://runner.ctl.io or view the documentation at https://www.ctl.io/knowledge-base/runner/
 
-    ![RunnerLogo](../images/runner-logo-black-text.png)
+    ![RunnerLogo](../../images/runner-logo-black-text.png)

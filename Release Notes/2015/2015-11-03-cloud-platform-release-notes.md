@@ -13,24 +13,24 @@
   The product installs a Trend Micro Agent on a host machine to protect that host against known and unknown vulnerabilities to operating systems and over 100 applications. The IPS agent automatically scans the host for newly installed applications every 24 hours, and if any are found, the protection policy is updated accordingly. The agent is also automatically updated with new Trend Micro patches to protect against new vulnerabilities. Details on installing IPS and configuring your event notification destinations are available in the Security section of our [knowledge base](https://www.ctl.io/knowledge-base/security/#1).
 
   Other Service Highlights:
-  * Installation via Blueprints 
+  * Installation via Blueprints
   * Supports event notifications via WebHook and Email
-  * Event data captured and forwarded to a syslog server 
+  * Event data captured and forwarded to a syslog server
   * 13-week data retention of all event data, to help audits and compliance
 
 * __AppFog Control Portal UI Enhancements.__ [AppFog](https://www.ctl.io/appfog/) Developers can now perform common actions in the Control Portal UI:
 
   * __Scale apps from Control__. AppFog apps can be scaled up or down from the Control Portal. Select the amount of memory, number of instances, and see a cost estimate for the change.
 
-    ![Scale AppFog Apps from Control Portal](../images/2015-11-03_scale-appfog-apps-releasenotes.png)
+    ![Scale AppFog Apps from Control Portal](../../images/2015-11-03_scale-appfog-apps-releasenotes.png)
 
   * __Delete apps from Control.__ Easily delete defunct AppFog applications from the Control Portal.
 
-    ![Delete AppFog Apps from Control Portal](../images/2015-11-03_delete-appfog-apps-releasenotes.png)
+    ![Delete AppFog Apps from Control Portal](../../images/2015-11-03_delete-appfog-apps-releasenotes.png)
 
   * __List all of an application's routes.__ All the routes for a given an AppFog space can now be displayed in the Control Portal.
 
-    ![List App Routes in Control Portal](../images/2015-11-03_list-app-routes-releasenotes.png)
+    ![List App Routes in Control Portal](../../images/2015-11-03_list-app-routes-releasenotes.png)
 
   Previously, these features were only available via the CLI or API.
 
@@ -44,15 +44,15 @@
 
 * __Runner Beta Launched.__ The Runner service is now available in beta to select customers.
 
-  <img src="../images/2015-11-03_runner-logo-releasenotes.png" alt="Runner Logo"/>
+  <img src="../../images/2015-11-03_runner-logo-releasenotes.png" alt="Runner Logo"/>
 
   Runner enables teams, developers, and engineers to quickly provision, manage, and modify their environment in not only the CenturyLink Cloud Platform, but other cloud services, as well as on-premise deployments. Runner brings together state-based and massive parallel job execution, with multi-cloud and multi-data center support, all in a single interface.
 
-    <img src="../images/2015-11-03_runner-flowchart-abstract-releasenotes.jpg" width="40%" alt="Runner Design Flowchart"/>
+    <img src="../../images/2015-11-03_runner-flowchart-abstract-releasenotes.jpg" width="40%" alt="Runner Design Flowchart"/>
 
   Our goal was to make automation easy and accessible to everyone. From the most advanced users to those new to cloud computing, Runner makes it easy to create jobs and execute them regardless of your environment or provider.
 
-    <img src="../images/2015-11-03_runner-diagram-web-releasenotes.jpg" width="40%" alt="Runner Diagram"/>
+    <img src="../../images/2015-11-03_runner-diagram-web-releasenotes.jpg" width="40%" alt="Runner Diagram"/>
 
   * __Runner Job Service.__ The Job Service is the primary component of the Runner product. Users can create, modify, and execute jobs at anytime. The Job Service accepts a payload that references a playbook, Ansible’s configuration, deployment, and orchestration language file to be used, whether that is using a public GitHub repository or private (GitHub credentials required), as well as other information like login or bearer token, environments, and so on.
 
@@ -90,7 +90,7 @@
 
 * __Appcito.__ [Appcito](http://www.appcito.com) CAFE (Cloud Application Front End) is an easy-to-deploy, unified and cloud-native service that enables cloud application teams to select and deploy enterprise grade L4 to L7 application network services.  This cloud-native, proxy-based service gateway improves application delivery with a web-scale solution for load balancing, application security and continuous availability.  [Get started](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-appcito-cafe/) with the Appcito blueprint today.
 
-* __CloudFuze.__ [CloudFuze](https://www.cloudfuze.com/), provides management tools for cloud-based file and storage services.  Their integration allows customers of CenturyLink’s cloud platform to utilize one tool to track and manage information residing in diverse cloud file-sharing services with a common management framework. 
+* __CloudFuze.__ [CloudFuze](https://www.cloudfuze.com/), provides management tools for cloud-based file and storage services.  Their integration allows customers of CenturyLink’s cloud platform to utilize one tool to track and manage information residing in diverse cloud file-sharing services with a common management framework.
 Start controlling your storage sprawl by [deploying CloudFuze](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-cloudfuze-blueprint/) on CenturyLink today.
 
 * __bplmager.__ Many [Marketplace Provider Program](https://www.ctl.io/marketplace/program/) partners use the power of CenturyLink [Cloud Blueprints](https://www.ctl.io/cloud-platform/cloud-orchestration/) to configure ready-to-use solutions that CenturyLink customers can quickly discover and deploy.  However, many partners rely on the virtual appliance model (.AMI, .ISO, .OVF) to package and deploy their software for cloud consumption which had previously only been available on the CenturyLink Cloud platform as a [Service Task](https://www.ctl.io/service-tasks/).  

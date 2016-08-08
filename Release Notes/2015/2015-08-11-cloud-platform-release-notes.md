@@ -11,12 +11,12 @@
 * __Multi-NIC for virtual machines.__ Add up to four virtual network interfaces to a single VM, via API. Use this feature to programmatically add or remove vNICs in separate VLANs - especially useful for virtual appliances and advanced topologies. Multi-NIC configuration details will appear in the Control Portal and in API calls. For more information, refer to the API documentation for adding secondary network adapters and removing secondary network adapters.
 
   __NOTE: Two functions are not supported for VMs with additional NICS: "clone" and "convert to template.__  
-  ![multi-nic](../images/2015-08-11_releasenotes1.png)  
+  ![multi-nic](../../images/2015-08-11_releasenotes1.png)  
 
 * __Database as a Service: MySQL Limited Beta Release.__ Beta program starts August 14th! Participants in the program will be able to subscribe to a MySQL-compatible DBaaS instance through our User Interface or via AppFog. Users will instantly receive a connection to an active MySQL instance with a click of a button. We offer the option to secure the connection using a provided self-signed certificate. In addition, we will maintain daily backups held locally for 7 days. For more information, visit our product page on the CenturyLink Cloud website.
 
 * __Custom Price Sheets ("Name Your Own Price") - Limited Preview.__ Account Administrators and Billing Managers can now configure custom price sheets for cloud services on a monthly basis. IT departments can use this capability for internal chargeback/showback scenarios; resellers can also offer custom or promotional pricing for selected services. To access this feature, login and go directly to [https://control.ctl.io/createPricingAdjustment](https://control.ctl.io/createPricingAdjustment). __Watch for additional functionality that will greatly improve usability!__  
-  ![price-adjustments](../images/2015-08-11_releasenotes2.png)
+  ![price-adjustments](../../images/2015-08-11_releasenotes2.png)
 
 * __WordPress Service: Local WordPress Development Environment built with Vagrant.__ Minimize downtime in production with a local dev environment for your Wordpress deployment! Our WordPress sites now include a fully functional local development environment built on [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads).  Simply [clone your new site using Git](https://www.ctl.io/knowledge-base/wordpress/wordpress-site-updates-with-git/), and run "vagrant up". Your local environment will match the technical configuration of your Production site, giving you confidence that changes tested in DEV will deploy to PROD successfully.  See our new [KB article](https://www.ctl.io/knowledge-base/wordpress/wordpress-local-development/) for more information on how to get started.
 
@@ -27,19 +27,19 @@
 
 * __Bare Metal servers available in Europe.__ Building upon last month's launch of [pay-as-you-go Bare Metal servers](https://www.ctl.io/bare-metal/) in Virginia, we've turned up the service in a London-area data center. Provision servers for your workloads that require the isolation and performance of physical machines.
 
-* __Bare Metal servers now support Ubuntu 14.__ When [creating Bare Metal servers](https://www.ctl.io/knowledge-base/servers/creating-a-new-bare-metal-server), you can now select Ubuntu 14 as an operating system option in addition to the choices that are already supported (CentOS 6, Red Hat Enterprise Linux 6, and Windows Server 2012 R2 Standard). 
+* __Bare Metal servers now support Ubuntu 14.__ When [creating Bare Metal servers](https://www.ctl.io/knowledge-base/servers/creating-a-new-bare-metal-server), you can now select Ubuntu 14 as an operating system option in addition to the choices that are already supported (CentOS 6, Red Hat Enterprise Linux 6, and Windows Server 2012 R2 Standard).
 
 * __Cloud managed backup available in IL1.__ Get more control of your cloud server data backups by deploying [cloud managed backup](https://www.ctl.io/managed-services/backup/), now available in our Chicago-area data center.
 
 * __WordPress Service: Zero Downtime Blue-Green Site Deployments.__ Now, when doing a [Git push to deploy](https://www.ctl.io/knowledge-base/wordpress/wordpress-site-updates-with-git/) updates to a WordPress site, our system will keep your existing site up and fully operational during the deployment.  Your site visitors may continue to use the existing site during the deployment.  When the deployment is complete, our system will seamlessly re-route traffic away from your original site to your newly updated site.
 
 * __WordPress Service: Git SSH protocol now available.__ We now offer SSH access to our WordPress Git repositories, in addition to HTTPS.  Upload your public SSH key to Git, and avoid having to supply HTTPS credentials with Git operations.  See our new [KB article](https://www.ctl.io/knowledge-base/wordpress/wordpress-git-ssh/) to get started.  
-  ![wordpress](../images/2015-08-11_releasenotes3.png)
+  ![wordpress](../../images/2015-08-11_releasenotes3.png)
 
 * __WordPress Service: Performance tuning enhancements to Nginx and PHP.__ Faster site performance is now available with new PHP opcode caching and Nginx FastCGI caching settings in our platform.  These settings take effect by default for any new WordPress sites, and can be enabled for existing WordPress sites by performing a [Git push to deploy](https://www.ctl.io/knowledge-base/wordpress/wordpress-site-updates-with-git/) to update the site.
 
 * __Orchestrate: View invoice and payment history from the Dashboard.__ Database customers can now view their individual invoices and payment history from within the Orchestrate dashboard's "account settings."  
-  ![orchestrate](../images/2015-08-11_releasenotes4.png)
+  ![orchestrate](../../images/2015-08-11_releasenotes4.png)
 
 * __Standalone, unmanaged Apache Spark Blueprint.__ Spark is part of the Apache Hadoop ecosystem and has been a part of our [Managed Hadoop](https://www.ctl.io/managed-services/cloudera/) offering for some time.  Spark powers a stack of libraries including SQL and DataFrames, MLlib for machine learning, GraphX, and Spark Streaming to give the user a powerful application for data analytics.  Spark can be used in conjunction with database systems outside the pure HDFS (Hadoop) environment.  This release will allow the user to connect Spark to their data set of choice and make use of the powerful Spark tools.
 

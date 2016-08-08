@@ -24,4 +24,4 @@
 
 * __Bitnami Launchpad.__ [Bitnami](https://bitnami.com/) is a software service that packages popular applications into cloud-friendly installers and integrates them with the major cloud service platforms. Especially focused on open source projects, Bitnami makes it easy for an enterprise cloud user to evaluate open source alternatives for different tools and functions. A number of Blueprints in the [CenturyLink Cloud Marketplace](https://www.ctl.io/knowledge-base/ecosystem-partners/ecosystem-partner-list/) are based on Bitnami installers, and you can now get started quickly by deploying applications to CenturyLink directly from the [Centurylink-Bitnami Launchpad site](https://centurylink.bitnami.com/).
 
-	![Bitnami Launchpad for CenturyLink Cloud](../images/2016-02-16_bitnami_launchpad.png)
+	![Bitnami Launchpad for CenturyLink Cloud](../../images/2016-02-16_bitnami_launchpad.png)

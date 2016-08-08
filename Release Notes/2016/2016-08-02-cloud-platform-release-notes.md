@@ -13,7 +13,7 @@
 
 	Users are now able to restore a Relational DB instance to any point in time, from as far back as one week ago (or the customers' backup retention policy, whichever is shorter) to as recent as 10 minutes ago.<p>
 
-  ![RelationalDBLogo](../images/rdbs-logo-black.png)
+  ![RelationalDBLogo](../../images/rdbs-logo-black.png)
 
 * __Runner__
 
@@ -23,7 +23,7 @@
 	- __SHA__ - The SHA value for a Product is displayed in the informational box on the right of a product install page.
 	- __Deep Links__ - Users can deep link to specific vendor products. This allows users and/or vendors to share links to specific products to users. When a user enters the URL, they will first be asked to log into Runner, then they will be brought directly to the vendor product.<p>
 
-  ![RunnerLogo](../images/runner-logo-black-text.png)
+  ![RunnerLogo](../../images/runner-logo-black-text.png)
 
 ### Enhancements (1)
 * __CenturyLink Cloud Platform: Inventory Protection__
