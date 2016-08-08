@@ -20,7 +20,7 @@
 
 * **CenturyLink Cloud Status.** A new portal - [status.ctl.io](http:./status.ctl.io) - includes real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Accordingly, maintenance and outage notifications will no longer come from communications@centurylinkcloud.com; instead they will come from noc@ctl.io. More information about this service can be found [here](../General/centurylink-cloud-status-faq.md).
 
-![centurylink-status](../images/centurylink-status.png)
+![centurylink-status](../../images/centurylink-status.png)
 
 * **Account Service Level now retrievable by API.** *Account.ServiceLevel*, a v1 API, can now be used to retrieve an account's support level, in addition to other billing data.
 
@@ -42,11 +42,11 @@
 
   Data Center can be selected when using the estimator:
 
-  ![Pricing Example 01](../images/pricing-example-01.png)
+  ![Pricing Example 01](../../images/pricing-example-01.png)
 
   Or it can be selected when viewing the Pricing Catalog:
 
-  ![Pricing Example 02](../images/pricing-example-02.png)
+  ![Pricing Example 02](../../images/pricing-example-02.png)
 
 
 ### Ecosystem: New Blueprints (5)

@@ -10,7 +10,7 @@
 
 * __AppFog - New "Push App" page.__ [AppFog](https://www.ctl.io/appfog/) now offers a single page UI for the deployment of applications. Users can pick their region, space, app name, and specify the number of instances (as well as the memory per instance), all from a _single_ page. Just supply a url (e.g. Github, https://github.com/CenturyLinkCloud/af-nodejs-jumpstart), and the application will deploy in seconds.
 
-    ![AppFog Push App](../images/2015-09-22-appfog-push-app-ui.png)
+    ![AppFog Push App](../../images/2015-09-22-appfog-push-app-ui.png)
 
 ### Enhancements (9)
 
@@ -41,7 +41,7 @@
   * __New default URL for sites.__ Newly created MySQL DBaaS sites are now given the default domain of `[customer-specified-db].datacenter.dbaas.ctl.io`.
   * __New filters.__ The listing of your DB instances now allows you to filter based on status, specifically `active` and `terminated`.
 
-  ![MySQL Filter Screen](../images/2015-09-22-MySQL_filter.png)
+  ![MySQL Filter Screen](../../images/2015-09-22-MySQL_filter.png)
 
   For more information and to sign up for the beta, visit our [product page on the CenturyLink Cloud website](https://www.ctl.io/dbaas/).
 

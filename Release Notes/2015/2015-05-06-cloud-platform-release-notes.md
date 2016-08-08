@@ -11,7 +11,7 @@
 
 * **Orchestrate.io.** This new database-as-a-service offering is available in four CenturyLink Cloud datacenters: VA1, UC1, GB3, and SG1. The service supports many popular client libraries like Node.js, Java, Ruby, Go, Python, .NET, PHP, and Erlang. Orchestrate can be integrated with other CenturyLink Cloud deployments via API. Sign-up for the service at [**dashboard.orchestrate.io**](https://dashboard.orchestrate.io/sessions/login). For more information on the Orchestrate service, please read [this blog post](https://www.ctl.io/blog/post/centurylink-acquires-orchestrate/).
 
-  ![Orchestrate UI](../images/orchestrate-ui-ctl-cloud.png)
+  ![Orchestrate UI](../../images/orchestrate-ui-ctl-cloud.png)
 
 * **Network APIs.** Networking functions are now available via self-service API. Specific capabilities include:
  * Get a list of available networks
@@ -23,7 +23,7 @@
 
 * **AppFog v2 Limited Beta.** This new platform for creating and managing cloud-native applications is available as a Limited Beta.  Based on Cloud Foundry v2, the service makes it easier for developers to build and scale applications.  If you are interested in becoming a beta tester, please contact [**the AppFog team**](mailto:appfog-feedback@ctl.io).
 
-  ![AppFog Navigation UI](../images/appfog-icon-nav.png)
+  ![AppFog Navigation UI](../../images/appfog-icon-nav.png)
 
 
 ### Minor Enhancements (3)
@@ -43,7 +43,7 @@
 
 * **Getting Started Guides** A [**library of tutorial videos**](//www.ctl.io/guides/) is now online. Each short clip shows how to perform a common activity in the Platform.
 
-  ![Getting Started](../images/getting-started-guide-01.png)
+  ![Getting Started](../../images/getting-started-guide-01.png)
 
 
 ### Ecosystem: New Blueprints (5)

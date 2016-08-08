@@ -13,7 +13,7 @@
 	- Runner Job API now supports the passing of Ansible options (i.e. list-tasks, list-hosts, etc.).  
 	- Additional level of control regarding public products.  Public products are now white-listed.  Users are no longer able to simply make a product public by setting the visibility to 'public'.
 	- Added basic search by name capability on the jobs view page in the Runner UI. (image is for this bullet)
-	![Runner UI Search](../images/runner20160607.png)
+	![Runner UI Search](../../images/runner20160607.png)
 
 ### Enhancements (1)
 * __Control Portal:__
@@ -26,6 +26,6 @@
 * __New Blueprints:__  Server General - [Server General](https://www.servergeneral.com/) is an easy to use encryption service that will protect your data in the cloud. Users can encrypt their data through self service in under 30 minutes. CenturyLink has integrated the Server General encryption agent with our platforms automation services. Customers can use this pay as you go service to achieve HIPAA compliance, reduce audit costs and more, all while controlling their own encryption keys. Check out our [knowledge base article](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-server-general-blueprint/) to get started.
 
 ### Bug Fixes (1)
-* __Runner Bug Fixes:__ 
+* __Runner Bug Fixes:__
 	- Corrected User Interface navigation to prevent the 404 error page.
 	- Corrected issue where users weren't able to save a job without selecting 'run immediately’.

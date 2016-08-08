@@ -9,20 +9,20 @@
 ### New Features (5)
 
 * __Bare Metal servers.__ Get the isolation and performance you need by building and managing physical machines in the CenturyLink Platform. Pay by-the-hour for modern hardware available in three different sizes with all three offering data encryption at rest. Build servers using the same UI and API available for virtual machines.  
-![bare-metal](../images/2015-07-15_releasenotes1.png)  
+![bare-metal](../../images/2015-07-15_releasenotes1.png)  
 As you choose the machine size (up to 20 cores and 128 GB of memory) and Operating System (options include: CentOS 6, Red Hat Enterprise Linux 6, Windows Server 2012 R2), the Control Portal gives you a cost estimate.  
-![bare-metal](../images/2015-07-15_releasenotes2.png)  
+![bare-metal](../../images/2015-07-15_releasenotes2.png)  
 The service is available today in Sterling, VA (VA1) and will soon be online in Slough, UK (GB3). Please see our [Product Page](//www.ctl.io/bare-metal/) for more details, and [Knowledge Base for articles](../Servers/bare-metal-faq.md) on how to use Bare Metal today.
 
 * __AppFog v2.__ Deploy and manage web applications easier with the new, Control Portal-integrated AppFog service based on the open source Cloud Foundry (v2) project. Deploy web applications to a multiple regions and host them in a managed fabric that supports Java, Ruby, Node.js, Go, Python and PHP. Available now in the US-East and US-West region, AppFog offers a scalable runtime for cloud-native applications at only $0.04 per GB hour.  
-![appfog](../images/2015-07-15_releasenotes3.png)  
+![appfog](../../images/2015-07-15_releasenotes3.png)  
 Check out the [Product Page](//www.ctl.io/appfog) and [AppFog section of the Knowledge Base](//www.ctl.io/knowledge-base/appfog/#1) for everything you need to know to get started!
 
 * __WordPress-as-a-Service (Beta).__ WordPress powers tens of millions of websites worldwide, but it can be challenging to set up and maintain yourself. CenturyLink is delivering WordPress-as-a-Service where you can rapidly create sites, map to custom domains, and store configuration information in a provided Git account. WordPress-as-a-Service is available for free in our Virginia data center during beta. Check out our [Product Page](//www.ctl.io/wordpress) and [these KB articles](../WordPress/getting-started-with-wordpress-as-a-service.md) for further details on signing up and using the service!  
-![wordpress](../images/2015-07-15_releasenotes4.png)
+![wordpress](../../images/2015-07-15_releasenotes4.png)
 
 * __Mobile applications for cloud management.__ Manage your CenturyLink Cloud environment on the go using the new iOS and Android application. Log into your account, view servers, change server sizes, view alerts, and more! Read [this KB article](//www.ctl.io/knowledge-base/general/mobile-app-overview-faq/) for more details.  
-![mobile](../images/2015-07-15_releasenotes5.png)
+![mobile](../../images/2015-07-15_releasenotes5.png)
 
 * __SDK for .NET and Java.__ Are you a .NET or Java developer who is integrating cloud infrastructure capabilities into your apps? Now you can use our open source [.NET SDK](//github.com/CenturyLinkCloud/clc-net-sdk) or [Java SDK](//github.com/CenturyLinkCloud/clc-java-sdk) to easily consume the CenturyLink Cloud API in a straightforward way.
 
@@ -30,7 +30,7 @@ Check out the [Product Page](//www.ctl.io/appfog) and [AppFog section of the Kno
 ### Enhancements (9)
 
 * __"Price sheet" user interface.__ Transparency matters. CenturyLink Cloud is a leader in price visibility, and we've extended this further by showing the per SKU costs that apply to any given account. This shows you exactly what you pay for any particular aspect of cloud. Log in and go to directly to  [https://control.ctl.io/pricingcatalog](https://control.ctl.io/pricingcatalog) to quickly review the price you pay for cloud services!  
-![custompricing](../images/2015-07-15_releasenotes6.png)
+![custompricing](../../images/2015-07-15_releasenotes6.png)
 
 * __SafeHaven 3.1.__ The latest version of SafeHaven &#151; the disaster recovery service from CenturyLink &#151; is available! It includes new capabilities around local cache in the production data center, supports resizing of protection groups and checkpoint groups, and a refresh of the console and administration wizards.
 
@@ -43,13 +43,13 @@ Check out the [Product Page](//www.ctl.io/appfog) and [AppFog section of the Kno
 * __Orchestrate - Integration with AppFog v2.__ The magic of Platform-as-a-Service comes alive when you can define apps with scalable app AND data tiers. AppFog developers can add Orchestrate databases to their applications through the AppFog marketplace.
 
 * __Patch Management for Linux.__ Building upon [last month's release](2015-06-11-cloud-platform-release-notes.md) of the cloud's first patching-as-a-service offering, we've added support for patching Linux servers on demand. Choose one or more servers to yum update!  
-![patching](../images/2015-07-15_releasenotes7.png)
+![patching](../../images/2015-07-15_releasenotes7.png)
 
 * __Control Portal dashboard updates.__ Our team continues to update the Control Portal experience. This month, you'll see changes to the Dashboard. If you provision AppFog spaces, you will now see the space count and quota usage on the Dashboard. If you have virtual servers in the CenturyLink Cloud, the Dashboard will now only show you data centers that you're currently using.
-![dashboard](../images/2015-07-15_releasenotes8.png)
+![dashboard](../../images/2015-07-15_releasenotes8.png)
 
 * __Control Portal "more actions" menu on servers and groups page.__ The Control Portal is constantly evolving to complement different screen sizes. On the group and server overview pages, the actions menu now adjusts to your screen size and puts items into a "more items" menu if your screen can't fit all the icons.  
-![menu](../images/2015-07-15_releasenotes9.gif)
+![menu](../../images/2015-07-15_releasenotes9.gif)
 
 
 ### Online Tools (1)

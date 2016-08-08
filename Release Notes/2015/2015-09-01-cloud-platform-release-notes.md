@@ -15,7 +15,7 @@
     + __Add/Remove Server__ Now can add and remove Servers from existing Protection Group.
     + __Automation__ Added automation of LRA (Local Replication Agent) and makestub.
 
-    ![SafeHaven](../images/2015-09-01-safehaven-pg-localcache.png) 
+    ![SafeHaven](../../images/2015-09-01-safehaven-pg-localcache.png)
 
 * __Intrusion Prevention: Limited Beta.__ The Intrusion Prevention Beta has launched. Participants will be able to install instances of host-based Intrusion Prevention on their RHEL 5/6 (64 bit) or Window 2008/2012 (64-bit) virtual machines during the beta program. Our Intrusion Prevention will monitor and use data on the incoming and outgoing server traffic of your host to detect and block known vulnerabilities. For more information, visit our [product page on the CenturyLink Cloud website](https://www.ctl.io/intrusion-prevention-service/).
 
@@ -44,8 +44,8 @@
 * __New Naming Convention for Automated OS Patching.__ The automated patching names have been updated so that they are more intuitive. The new Blueprint names are:
     + Auto Patching for RHEL and CentOS
     + Auto Patching for Windows 2012
-    
-    ![Automated Patching](../images/2015-09-01-auto-patching.png)
+
+    ![Automated Patching](../../images/2015-09-01-auto-patching.png)
 
 * __Managed Hadoop.__ Minor changes have been made to improve the reliability of Managed Hadoop builds.
 
@@ -55,8 +55,8 @@
 
     + __Drive Extensions Now Prohibited When A Snapshots Exists__ Control Portal no longer allows extending a drive when there is an existing snapshot.
     + __Set Your Own Price: Edit Price Adjustments__ Users with System Billing Manager privileges (or above) can now edit a price adjustment that has been added to the Control Portal.
-    
-    ![Set Your Own Price - Edit Adjustments](../images/2015-09-01-syop-edit-adjustment.png)
+
+    ![Set Your Own Price - Edit Adjustments](../../images/2015-09-01-syop-edit-adjustment.png)
 
 ### Ecosystem: New Blueprints (5)
 
@@ -85,6 +85,3 @@
 * __Installing Open VPN on Mac instruction is pointing to a really old version of Tunnelblick__ Updated instructions on using Tunnelblick for OpenVPN on Mac are now listed in the Control Portal.
 
 * __Sidebar hides tool tips__ Sidebar tool tips are no longer hidden behind other UI elements.
-
-
-
