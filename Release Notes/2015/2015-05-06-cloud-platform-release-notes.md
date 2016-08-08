@@ -48,15 +48,15 @@
 
 ### Ecosystem: New Blueprints (5)
 
-* [**Cohesive Networks**](../Ecosystem Partners/Marketplace Guides/getting-started-with-cohesiveft-vns3-partner-template.md) - Technology from Cohesive Networks helps customers address the business challenge of secure connectivity and network management by implementing network and security functions in a virtualized model across disparate cloud networks and service providers.
+* [**Cohesive Networks**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-cohesiveft-vns3-partner-template.md) - Technology from Cohesive Networks helps customers address the business challenge of secure connectivity and network management by implementing network and security functions in a virtualized model across disparate cloud networks and service providers.
 
-* [**Saratoga Flume**](../Ecosystem Partners/Marketplace Guides/getting-started-with-saratoga-data-flume-blueprint.md) - Helps CenturyLink Cloud customers address the business challenge of secure and reliable transmission of data across alternate network providers with high latency and varied availability.
+* [**Saratoga Flume**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-saratoga-data-flume-blueprint.md) - Helps CenturyLink Cloud customers address the business challenge of secure and reliable transmission of data across alternate network providers with high latency and varied availability.
 
-* [**MongoDB**](../Ecosystem Partners/Marketplace Guides/getting-started-with-mongodb-blueprint.md) - A cross-platform, NoSQL-style, document-oriented database. MongoDB’s structure is JSON-like, making integration of unstructured data in certain types of applications easier and faster.
+* [**MongoDB**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-mongodb-blueprint.md) - A cross-platform, NoSQL-style, document-oriented database. MongoDB’s structure is JSON-like, making integration of unstructured data in certain types of applications easier and faster.
 
-* [**AlertLogic**](../Ecosystem Partners/Marketplace Guides/getting-started-with-alert-logic-threat-manager-partner-template.md) - Delivers deep security insight and supports continuous monitoring against cyber-threats.  Built for web scale, the Alert Logic threat management solution combines a cloud-deployed endpoint solution with the power of an aggregated threat intelligence database.
+* [**AlertLogic**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-alert-logic-threat-manager-partner-template.md) - Delivers deep security insight and supports continuous monitoring against cyber-threats.  Built for web scale, the Alert Logic threat management solution combines a cloud-deployed endpoint solution with the power of an aggregated threat intelligence database.
 
-* [**Vision Solutions - DoubleTake**](../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md) - Best-of-breed technology helping customers address the business challenge of adopting cloud-based disaster recovery strategies and performing near-zero downtime migrations without risk across physical, virtual or cloud server platforms.
+* [**Vision Solutions - DoubleTake**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md) - Best-of-breed technology helping customers address the business challenge of adopting cloud-based disaster recovery strategies and performing near-zero downtime migrations without risk across physical, virtual or cloud server platforms.
 
 
 ### Open Source Contributions (3)

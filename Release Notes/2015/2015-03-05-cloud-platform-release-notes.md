@@ -48,7 +48,7 @@
 
 
 ### Managed Services (1)
-* **Managed Backup available in UC1.** Newly created servers in UC1 can now have data protected with the [managed backup service](http://www.ctl.io/managed-services/backup). More details on the service are [here](../Managed Services/managed-backup-frequently-asked-questions.md)
+* **Managed Backup available in UC1.** Newly created servers in UC1 can now have data protected with the [managed backup service](http://www.ctl.io/managed-services/backup). More details on the service are [here](../../Managed Services/managed-backup-frequently-asked-questions.md)
 
 
 ### Documentation (1)
@@ -57,15 +57,15 @@
 
 ### Ecosystem - New Blueprints (4)
 
-* [**Dynatrace**](../Ecosystem Partners/Marketplace Guides/getting-started-with-dynatrace-blueprints.md) – Application Performance Monitoring (APM) software for today's most challenging web, cloud, mobile, enterprise and Big Data applications worldwide.
+* [**Dynatrace**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-dynatrace-blueprints.md) – Application Performance Monitoring (APM) software for today's most challenging web, cloud, mobile, enterprise and Big Data applications worldwide.
 
 
-* [**Datastax**](../Ecosystem Partners/Marketplace Guides/getting-started-with-datastax-blueprint.md) - Enterprise–grade Cassandra solution, enabling customer big data analytics workloads.
+* [**Datastax**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-datastax-blueprint.md) - Enterprise–grade Cassandra solution, enabling customer big data analytics workloads.
 
 
-* [**Acumatica**](../Ecosystem Partners/Marketplace Guides/getting-started-with-acumatica-erp-blueprint.md) - Cloud–based accounting and ERP software for the small to midsize business looking to streamline management processes and unlock business potential.
+* [**Acumatica**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-acumatica-erp-blueprint.md) - Cloud–based accounting and ERP software for the small to midsize business looking to streamline management processes and unlock business potential.
 
-* [**Centerity**](../Ecosystem Partners/Marketplace Guides/getting-started-with-centerity-blueprints.md) – Enhanced monitoring solution providing server metrics and a complete business intelligence layer across  server assets in the CenturyLink Cloud.
+* [**Centerity**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-centerity-blueprints.md) – Enhanced monitoring solution providing server metrics and a complete business intelligence layer across  server assets in the CenturyLink Cloud.
 
 ### Open Source Contributions
 Panamax enhancements from CenturyLink Labs - Selected highlights include:
