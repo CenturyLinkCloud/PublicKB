@@ -59,7 +59,7 @@ For example create xyz@yourcompany.com. This is an important step as this alias 
 
 Our support ticketing system, ZenDesk is where you can track all the updates to your support tickets. After your email address for support please follow the following steps to set up the ZenDesk account.
 
-1. Log into https://t3n.zendesk.com
+1. Log into https://support.ctl.io
 2. Click on “Sign up” on the upper right hand side of the page and fill the form shown below. Please enter the email address you created for the support team.
 **NOTE: CenturyLink will only recognize the email address associated with ZenDesk. Any support request from another email address will not be converted into a ticket. So please use the same email address for escalation.**
 3. After you Sign up, you will receive a welcome email from noc@ctl.io for verification. Click on the verification link and choose your password. Your account will be active right away.
@@ -138,11 +138,15 @@ The following table describes list of operational support activities and request
   </tbody>
 </table>
 
-### Ticket Prioritization Matrix
+### Ticket Prioritization Matrix and Escalations
 
 Tickets are worked according to priority in the order in which they are received. The priority designation indicates the level, extent, and impact on the partner.
 
 [Learn More About Ticket Prioritization](../Support/ticket-prioritization-matrix.md)
+
+If after reviewing hte Ticket Prioritization Matrix you need to escalate a ticket, the following articel details the escalation process.
+
+[Learn How to Escalate a Ticket](../Support/how-do-i-escalate-a-ticket.md)
 
 ### Service Tasks
 
@@ -168,16 +172,9 @@ Our Support team is on call 24x7, and the engineers and Leads are on Shifts (Rot
 
 ### Security Issues
 
-Security Incidents follow a standard Incident Process
-* If an incident is security related, security SMEs are engaged in the same manner as other SMEs
-* If an incident is determined to be a security breach of the CenturyLink Cloud environment, post-incident response and communication will be led by the Security
+Security Incidents follow a standard Incident Process. The below article provides details on what can be expected regarding Security Issues. 
 
-Incident Response team and coordinated with legal, marketing, and executive team.
-
-### Compromised Customer Machines/Abuse
-
-These steps sit inside the “Restoration Process” within the overall Incident Management process.
-
+[Learn More About What to Expect with a Security Incident](../Support/what-can-you-expect-from-tier-3-on-a-security-issue.md)
 
 ### Security Escalation Email
 
@@ -199,22 +196,12 @@ These steps sit inside the “Restoration Process” within the overall Incident
     <tr>
       <td>Management Escalation</td>
       <td>On-call Management Team</td>
-      <td>escalation@t3n.zendesk.com</td>
-    </tr>
-    <tr>
-      <td>Security SME Engagement</td>
-      <td>On-call Security SME</td>
-      <td>security@t3n.zendesk.com</td>
-    </tr>
-    <tr>
-      <td>Security Management Escalation (Warning – Do Not Abuse)</td>
-      <td>Security Management Engagement</td>
-      <td>sec-esc@t3n.zendesk.com + Escalation ticket #</td>
+      <td>escalation@ctl.io</td>
     </tr>
     <tr>
       <td>Executive Escalation (Warning – Do Not Abuse)</td>
       <td>Executive Engagement – Enterprise Support Level Only</td>
-      <td>exec-esc@t3n.zendesk.com + Management Escalation ticket #</td>
+      <td>execescalation@ctl.io + Management Escalation ticket #</td>
     </tr>
   </tbody>
 </table>
