@@ -17,14 +17,14 @@
 	- Availablity in UC1, VA1 and IL1; global expansion throughout 2016
 	- Choose any combination of CPU/RAM and storage within platform limits
 	- Replication option for High Availability: In-datacenter replication with auto-failover and a manual failover option
-	- Ability to scale CPU, RAM and storage independently of each other with a click of a button or API call 
+	- Ability to scale CPU, RAM and storage independently of each other with a click of a button or API call
 	- SSL certificate provided to encrypt your connection and data in transit
 	- Daily backups with configurable backup times
 	- Sign up to be notified when CPU and storage thresholds are exceeded
 
 	For more information visit: https://www.ctl.io/relational-database/
 
-![Relational DB Logo](../images/2016-02-02-relational_db_logo.png)
+![Relational DB Logo](../../images/2016-02-02-relational_db_logo.png)
 
 ### Early Adopter Program (1)
 
@@ -45,10 +45,10 @@
 
 ### Open Source Contributions (1)
 
-* __Cyclops.__ [Cyclops](https://github.com/CenturyLinkCloud/Cyclops) is an open source collection of UX/UI patterns that make up the CenturyLink Cloud user interface. It's our way to showing how focused we are on creating a delightful and responsive user experience. 
+* __Cyclops.__ [Cyclops](https://github.com/CenturyLinkCloud/Cyclops) is an open source collection of UX/UI patterns that make up the CenturyLink Cloud user interface. It's our way to showing how focused we are on creating a delightful and responsive user experience.
 
-	![Cyclops Logo](../images/2016-02-02-cyclops_logo.png)
+	![Cyclops Logo](../../images/2016-02-02-cyclops_logo.png)
 
 	Browse the pattern library here: http://assets.ctl.io/cyclops
-	
+
 	Source: https://github.com/CenturyLinkCloud/Cyclops

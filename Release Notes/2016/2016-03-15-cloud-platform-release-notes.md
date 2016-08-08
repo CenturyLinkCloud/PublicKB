@@ -11,7 +11,7 @@
 
 	AppFog users can now stream aggregated logs (Cloud Foundry platform and application) in the Control Portal UI. Select the Logs tab on the application dashboard and click the “stream logs” button to activate log streaming. Up to 750 lines or 6MB of logs (whichever comes first) are available.
 
-	![AppFog Streaming Logs](../images/2016-03-15-release-notes-af.gif)
+	![AppFog Streaming Logs](../../images/2016-03-15-release-notes-af.gif)
 
 ### Early Adopter Program - Updates (1)
 

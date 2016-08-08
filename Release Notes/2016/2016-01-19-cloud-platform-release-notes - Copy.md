@@ -10,7 +10,7 @@
 
 * __Object Storage now available in US-East.__ CenturyLink's [object storage service](https://www.ctl.io/object-storage/) is now available in the US East region. Like our improved Canadian offering, object storage in US East will provide high availability and redundancy over the familiar S3 interface.  More details are available on the [object storage product page (including pricing)](https://www.ctl.io/object-storage/), as well as the [knowledge base](https://www.ctl.io/knowledge-base/object-storage).
 
-![Object Storage US East](../images/2016-01-19_objectstorageuseast.png)
+![Object Storage US East](../../images/2016-01-19_objectstorageuseast.png)
 
 * __Managed MS SQL: Bring Your Own License.__ A new [Managed MS SQL Blueprint](https://www.ctl.io/managed-services/ms-sql/) that supports "bring your own license" is now available for managed CenturyLink Cloud customers. Customers who deploy this Blueprint will pay for the management of their MS SQL instance only, at a rate of $0.48/hr. The features of the managed service remain unchanged.
 
@@ -20,7 +20,7 @@
 
 * __AppFog: View & Edit Environmental Variables from the Control Portal.__ Application environmental variables, the primary mechanism for managing configuration in [AppFog](https://www.ctl.io/appfog/), can now be viewed and edited via the Control Portal. The new viewer/editor feature allows users to update, add, and remove environment variables.
 
-![AppFog Variable Config UI](../images/2016-01-19-appfog_env_var_config.png)
+![AppFog Variable Config UI](../../images/2016-01-19-appfog_env_var_config.png)
 
 ### Early Adopter Program Updates (5)
 

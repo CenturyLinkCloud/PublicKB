@@ -7,7 +7,7 @@
 }}}
 ### New Features (4)
 * __Simple Backup Service__. Effective April 26, 2016, Simple Backup Service has added multiple new features.
-  - **Add multiple servers and server groups to a backup policy.** Now, when applying a backup policy, users may select a server, multiple servers, or server groups can be selected. This UI enhancement makes it easier to add policies to large quantities of servers at once. ![Server_Policy_Multiselect](../images/2016-04-26-MultiServerPicker.jpg)  
+  - **Add multiple servers and server groups to a backup policy.** Now, when applying a backup policy, users may select a server, multiple servers, or server groups can be selected. This UI enhancement makes it easier to add policies to large quantities of servers at once. ![Server_Policy_Multiselect](../../images/2016-04-26-MultiServerPicker.jpg)  
 
   - ** Estimated billing and stored data metrics for server policies.** The Simple Backup interface now shows estimated billing and stored usage metrics to assist users with understanding their backup related costs. The Simple Backup Policies screen now displays the Month Estimate, Current Hour, and Month To Date billing for all policies associated with an account. Additionally, the Policy Details and Server Details screens display the Month To Date and total stored data that's been consumed for a particular backup policy or server.
 
@@ -15,7 +15,7 @@
 
 * __AppFog: New Dashboard Location__. The account summary dashboard from the Control Portal has been moved to the AppFog homepage. For each region, the consumption gauge displays the memory quota remaining, alongside a listing of the deployment Spaces with total app count and quota percentage consumed.
 
-  ![AppFog_Summary_Dashboard](../images/2016-04-26-appfog-account-dashboard.png)
+  ![AppFog_Summary_Dashboard](../../images/2016-04-26-appfog-account-dashboard.png)
 
 ### Announcements (3)
 * __Price Reductions for Compute, RAM and Hyperscale Storage__. Effective April 1, 2016, list pricing for CPU and RAM pricing have been reduced in US & Canada locations. Hyperscale pricing for storage drops by 20% in North America and APAC, and by 10% in EMEA. Refer to our [Pricing Catalog](https://www.ctl.io/pricing/) for an updated list of prices as well as [this blog post](https://www.ctl.io/blog/post/price-reduction-hybrid-it/) explaining the changes.

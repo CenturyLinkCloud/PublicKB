@@ -11,7 +11,7 @@
 
 * **Service Catalog.** Selected platform services can now be selectively exposed to chosen subaccounts (as well as child subaccounts). This new capability is ideal for the phased rollout of new features to certain subaccounts. The service catalog currently includes: load balancers, premium backup, and public IP addresses for servers.
 
-![Service Catalog](../images/service-catalog-01.png)
+![Service Catalog](../../images/service-catalog-01.png)
 
 
 ### Minor Enhancements (6)
@@ -28,7 +28,7 @@
 
 * **New Left Navigation Control.** Two new icons appear in the left-hand side of the Control Portal interface: the **+** icon presents a new path for the creation of servers and groups; clicking the **infrastructure** icon exposes the familiar 'tree view' for the management of existing resources.
 
-![Left Navigation](../images/left-nav-01.png)
+![Left Navigation](../../images/left-nav-01.png)
 
 
 ### Online Tools (4)
@@ -37,18 +37,18 @@
 
 * **Map of CenturyLink data centers and services.** View CenturyLink's portfolio of capabilities by data center using an [interactive map](http://www.ctl.io/data-centers) online.  The tool supports multiple layers of filtering, as well as standard online map controls.
 
-![Online Map of Services & Locations](../images/datacenter-capabilities-map-01.png)
+![Online Map of Services & Locations](../../images/datacenter-capabilities-map-01.png)
 
 * **CenturyLinkCloud.com is now multi-language.** Browse http://www.ctl.io in multiple languages, including German, Japanese, English (UK), English (Canada), and Canadian French. To change the language, simply navigate to the bottom right of any page on the site.
 
-![Multi-language Site](../images/multilanguage-website-01.png)
+![Multi-language Site](../../images/multilanguage-website-01.png)
 * **New Knowledge Base.** The CenturyLink Cloud [Knowledge Base](http://www.ctl.io/knowledge-base) has been re-designed to be even easier to use. These enhancements include improved organization, layout, and search capabilities.
 
-![Online Knowledge Base](../images/knowledge-base-online-01.png)
+![Online Knowledge Base](../../images/knowledge-base-online-01.png)
 
 
 ### Managed Services (1)
-* **Managed Backup available in UC1.** Newly created servers in UC1 can now have data protected with the [managed backup service](http://www.ctl.io/managed-services/backup). More details on the service are [here](../Managed Services/managed-backup-frequently-asked-questions.md)
+* **Managed Backup available in UC1.** Newly created servers in UC1 can now have data protected with the [managed backup service](http://www.ctl.io/managed-services/backup). More details on the service are [here](../../Managed Services/managed-backup-frequently-asked-questions.md)
 
 
 ### Documentation (1)
@@ -57,15 +57,15 @@
 
 ### Ecosystem - New Blueprints (4)
 
-* [**Dynatrace**](../Ecosystem Partners/Marketplace Guides/getting-started-with-dynatrace-blueprints.md) – Application Performance Monitoring (APM) software for today's most challenging web, cloud, mobile, enterprise and Big Data applications worldwide.
+* [**Dynatrace**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-dynatrace-blueprints.md) – Application Performance Monitoring (APM) software for today's most challenging web, cloud, mobile, enterprise and Big Data applications worldwide.
 
 
-* [**Datastax**](../Ecosystem Partners/Marketplace Guides/getting-started-with-datastax-blueprint.md) - Enterprise–grade Cassandra solution, enabling customer big data analytics workloads.
+* [**Datastax**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-datastax-blueprint.md) - Enterprise–grade Cassandra solution, enabling customer big data analytics workloads.
 
 
-* [**Acumatica**](../Ecosystem Partners/Marketplace Guides/getting-started-with-acumatica-erp-blueprint.md) - Cloud–based accounting and ERP software for the small to midsize business looking to streamline management processes and unlock business potential.
+* [**Acumatica**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-acumatica-erp-blueprint.md) - Cloud–based accounting and ERP software for the small to midsize business looking to streamline management processes and unlock business potential.
 
-* [**Centerity**](../Ecosystem Partners/Marketplace Guides/getting-started-with-centerity-blueprints.md) – Enhanced monitoring solution providing server metrics and a complete business intelligence layer across  server assets in the CenturyLink Cloud.
+* [**Centerity**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-centerity-blueprints.md) – Enhanced monitoring solution providing server metrics and a complete business intelligence layer across  server assets in the CenturyLink Cloud.
 
 ### Open Source Contributions
 Panamax enhancements from CenturyLink Labs - Selected highlights include:

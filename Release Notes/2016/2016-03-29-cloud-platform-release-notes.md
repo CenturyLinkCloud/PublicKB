@@ -11,13 +11,13 @@
 
   Effective 3/30, Relational DB instances can be restored through the UI or API from any available backup within the same account of equal or smaller storage size.  This important new feature not only supports disaster recovery objectives, but enables developers to easily migrate from development to production through a simple backup and restore or to easily pull back production data into test environment on a regular basis.
 
-  ![Relational DB Restore](../images/2016-03-29-release-notes-rdbs-restore.png)
+  ![Relational DB Restore](../../images/2016-03-29-release-notes-rdbs-restore.png)
 
 * __Relational DB: Manual Backup Functionality.__
 
   Effective 3/30, Relational DB customers can perform a manual backup of their database instance any time they need.  Manual backups will follow the same backup retention policy as automated backups.
 
-  ![Relational DB Restore](../images/2016-03-29-release-notes-rdbs-manual-backup.png)
+  ![Relational DB Restore](../../images/2016-03-29-release-notes-rdbs-manual-backup.png)
 
 * __Relational DB: Reseller Branding Support.__
 
