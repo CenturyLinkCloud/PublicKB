@@ -144,7 +144,7 @@ Tickets are worked according to priority in the order in which they are received
 
 [Learn More About Ticket Prioritization](../Support/ticket-prioritization-matrix.md)
 
-If after reviewing hte Ticket Prioritization Matrix you need to escalate a ticket, the following articel details the escalation process.
+If after reviewing the Ticket Prioritization Matrix you need to escalate a ticket, the following article details the escalation process.
 
 [Learn How to Escalate a Ticket](../Support/how-do-i-escalate-a-ticket.md)
 
@@ -197,11 +197,6 @@ Security Incidents follow a standard Incident Process. The below article provide
       <td>Management Escalation</td>
       <td>On-call Management Team</td>
       <td>escalation@ctl.io</td>
-    </tr>
-    <tr>
-      <td>Executive Escalation (Warning – Do Not Abuse)</td>
-      <td>Executive Engagement – Enterprise Support Level Only</td>
-      <td>execescalation@ctl.io + Management Escalation ticket #</td>
     </tr>
   </tbody>
 </table>
