@@ -31,7 +31,11 @@ If you are running a MySQL database instead, you can use a utility such as Perco
 
 As part of configuring the hot backup, you will be asked to choose a destination for the backup files.  We recommend creating a local volume, folder, or even a dedicated file server to serve as a “staging area” where the hot backups can reside.  You only need to retain as many backup files in the local staging area as you’ll need to perform a full database recovery.  
 
+In the example below, SQL Server hot backups are saved in a new volume (E:) on a Windows server, in a folder (\SQLbackups) dedicated to the backups.  
+
   ![](../images/backup/databases/image3.png)
+  
+And below, MySQL hot backups are saved to a dedicated folder (/home/ryan/backups) on the Linux host that is running MySQL.  
   
   ![](../images/backup/databases/image4.png)
   
@@ -39,10 +43,13 @@ One advantage to this approach is that database recoveries can potentially be mu
 
 3. Configure SBS to back up your local staging area
 
-Simple Backup Service can then be configured to back up the new local staging area, for longer term, offsite retention of backup files, as may be required by compliance or other corporate policies.  
+Simple Backup Service can then be configured to back up the new local staging area, for longer term, offsite retention of backup files, as may be required by compliance or other corporate policies.  This offers an added layer of protection from catastrophic failures and outages, as well as a more cost-effective storage option for backups you’ll need to access less frequently.
+
+Here is an example of how a policy could be configured for Microsoft SQL Server backups:
 
   ![](../images/backup/databases/image5.png)
   
+Here is an example of how a policy could be configured for MySQL backups:
+  
   ![](../images/backup/databases/image6.png)
   
-This offers an added layer of protection from catastrophic failures and outages, as well as a more cost-effective storage option for backups you’ll need to access less frequently.
