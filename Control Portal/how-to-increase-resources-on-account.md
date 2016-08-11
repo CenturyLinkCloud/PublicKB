@@ -14,6 +14,7 @@ CenturyLink Cloud accounts start with a pre-defined resource (CPU, memory, stora
 
 ### Resource Notification
 When building a new machine you receive a Control Portal error message indicating a lack of resources (CPU, Memory, Storage).
+
 ![Resource Limits](../images/clc-resource-limit.png)
 
 1. Please contact Support via email: <a href="mailto:help@ctl.io">help@ctl.io</a>
