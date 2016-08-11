@@ -21,11 +21,11 @@ In short, Simple Backup Service does not create hot backups.  You’ll need to l
     
     If you are running Microsoft SQL Server, you can create application-consistent full, differential, and transaction log backups using SQL Server Management Studio, Transact-SQL, and/or Powershell.  These programs leverage the Volume Shadow Copy Service (VSS) in Window’s Server to take consistent snapshot backups of the database.  
     
-        ![](../images/backup/databases/image1.png)
+    ![](../images/backup/databases/image1.png)
     
     If you are running a MySQL database instead, you can use a utility such as Percona XtraBackup to take a hot backup of the MySQL database.  XtraBackup can make full and incremental hot backups of the database, and supports many popular MySQL flavors such as MySQL, Percona Server, and MariaDB.  
     
-        ![](../images/backup/databases/image2.png)
+    ![](../images/backup/databases/image2.png)
     
     
 2. Create a local staging area on your server where hot backup files will reside
