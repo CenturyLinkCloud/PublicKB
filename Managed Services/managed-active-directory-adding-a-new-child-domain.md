@@ -8,7 +8,7 @@
 
 <p>As your Active Directory environment grows, you may need add new "child" domains. <strong>NOTE: Before you can deploy a new child, you need to have Managed Active Directory and Managed Windows server in place. <strong>Also, please ensure that two or more Domain Controllers have been built in your deployment, as this is a necessary component for servers to be added into your Domain. If this is not possible, all server builds will be added into the shared Active Directory Domain.</strong></strong>
 </p>
-<p>1. Navigate to the Blueprints Library, and search for "Active Directory". Click on the “<strong>CLC Managed Active Directory – New Child</strong>" Blueprint. Click on the deploy blueprint button.</p>
+<p>1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**. Search for "Active Directory". Click on the “<strong>CLC Managed Active Directory – New Child</strong>" Blueprint. Click on the **deploy blueprint** button.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/XOGsQO84SHAiWnaZq7DAgga5Z/?name=Child.jpg" alt="Child.jpg" />
 </p>
 <p>2.&nbsp;Fill out the appropriate details, as shown below.</p>

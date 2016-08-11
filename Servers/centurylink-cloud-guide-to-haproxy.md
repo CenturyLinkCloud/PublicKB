@@ -97,7 +97,7 @@ both can be implemented in CenturyLink Cloud.
 
 -  As the applications use 'GetHostByName' system calls, `hostname -s` output should match the real hostname and not localhost.  In order to change hostname, run the first two commands below and update the repository with `yum update`
 
-    a.  `grep HOSTNAME network | awk -F= '{print \$2}' | tee /etc/hostname`
+    a.  `grep HOSTNAME /etc/sysconfig/network | awk -F= '{print \$2}' | tee /etc/hostname`
 
     b.  `` hostname \`grep HOSTNAME /etc/sysconfig/network | awk -F= '{print \$2}'\` ``
 
