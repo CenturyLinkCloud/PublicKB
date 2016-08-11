@@ -45,13 +45,13 @@ In short, Simple Backup Service does not create hot backups.  You’ll need to l
     
 3. Configure SBS to back up your local staging area
 
-Simple Backup Service can then be configured to back up the new local staging area, for longer term, offsite retention of backup files, as may be required by compliance or other corporate policies.  This offers an added layer of protection from catastrophic failures and outages, as well as a more cost-effective storage option for backups you’ll need to access less frequently.
-
-Here is an example of how a policy could be configured for Microsoft SQL Server backups:
-
-  ![](../images/backup/databases/image5.png)
-  
-Here is an example of how a policy could be configured for MySQL backups:
-  
-  ![](../images/backup/databases/image6.png)
+    Simple Backup Service can then be configured to back up the new local staging area, for longer term, offsite retention of backup files, as may be required by compliance or other corporate policies.  This offers an added layer of protection from catastrophic failures and outages, as well as a more cost-effective storage option for backups you’ll need to access less frequently.
+    
+    Here is an example of how a policy could be configured for Microsoft SQL Server backups:
+    
+    ![](../images/backup/databases/image5.png)
+      
+    Here is an example of how a policy could be configured for MySQL backups:
+      
+    ![](../images/backup/databases/image6.png)
   
