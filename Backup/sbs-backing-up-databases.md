@@ -25,7 +25,7 @@ If you are running Microsoft SQL Server, you can create application-consistent f
 
 If you are running a MySQL database instead, you can use a utility such as Percona XtraBackup to take a hot backup of the MySQL database.  XtraBackup can make full and incremental hot backups of the database, and supports many popular MySQL flavors such as MySQL, Percona Server, and MariaDB.  
 
-  ![](../images/backup/databases/image2.png)  
+  ![](../images/backup/databases/image2.png)
 
 
 2. Create a local staging area on your server where hot backup files will reside
@@ -40,7 +40,7 @@ And below, MySQL hot backups are saved to a dedicated folder (/home/ryan/backups
   
   ![](../images/backup/databases/image4.png)
   
-One advantage to this approach is that database recoveries can potentially be much faster, since the local backup files will reside closer to the database server, and don’t have to first be copied from the Simple Backup storage region prior to a restore.  
+One advantage to this approach is that database recoveries can potentially be much faster, since the local backup files will reside closer to the database server, and don’t have to first be copied from the Simple Backup storage region prior to a restore.
 
 
 3. Configure SBS to back up your local staging area
