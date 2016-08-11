@@ -31,15 +31,13 @@ CenturyLink Cloud Users
 
 ### Steps to Deploy a New CloudBolt Appliance
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for "CloudBolt Appliance" in the keyword search on the right side of the page.
-   <img src="../../images/cloudbolt/blueprint_tile.png" style="border:0;max-width:250px;">
 
 2. Click the `deploy blueprint` button.
 
 3. Set Required parameters.
    * **Control User Password** - The password associated with your control.ctl.io login
-   ![Deploy Parameters](../../images/bpimager/deploy_parameters.png)
 
 4. Set Optional Parameters.
    * Password/Confirm Password (This is the root password for the server. Keep this in a secure place).

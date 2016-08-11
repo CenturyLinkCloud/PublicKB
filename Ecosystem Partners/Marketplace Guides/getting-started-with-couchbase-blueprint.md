@@ -38,55 +38,41 @@ After you successfully install a Blueprint, you will receive a notification emai
 
 #### Steps to Deploy Blueprint
 1. Locate the Couchbase Server Blueprint.
-   * Log into [CenturyLink Control Portal](https://control.ctl.io) and enter your login and password.   
-   * Click on **sign in**. The dashboard containing CenturyLink servers will open, where you can select servers and the Blueprints library.      
-   ![](../../images/2-dashboard-uc.png)
-
-   * To find the Couchbase blueprint, select the green Dashboard area on the top and then select **Blueprints Library**.   
-   * In the panel "Blueprints Library", if needed use the keyword search on the right to select among multiple blueprints. In our case, choose from the available displayed blueprint thumbnails.   
-   ![](../../images/4-bp-lib.png)               
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * Use the keyword search on the right to select among multiple blueprints. In our case, choose from the available displayed blueprint thumbnails.            
 
 2. Choose the Blueprint.  
    * Click on **Install Couchbase Server on CentOS6**.     
 
 3. Deploy the Blueprint.      
-   * In the panel "Install Couchbase Server on CentOS6", click **deploy blueprint**.    
-   ![](../../images/6-install-cbs-osx.png)   
+   * Click the `deploy blueprint` button.
 
 4. Customize the Blueprint.
-   * Use the panel "Deploy install Couchbase Server on CentOS6 Blueprint" customize your blueprint.      
-   ![](../../images/7-customize-bp.png)   
-
-    *  **Build Server(s)** by entering or choosing the following:
-		* Password: *password*
-        * Confirm the same password: *password*
-        * Group: **default**.
-        * Network: *network ID*
-        * Primary DNS: **Manually Specify**
-        * Secondary DNS: **Manually Specify**
-        * Server Type: **Standard (default)**.
-        * Service Level: choose between **Premium** or **Standard**.
-    *  **Server Name(s)**. Enter a name, such as **CBNODE**.
-    *  **Specify Credentials**. To run the task under the default administrative account, leave **NO** for credentials.      
-
-    ![](../../images/8-nextstep-2.png)      
-   * Click on **next step**.
+   * Password: *password*
+   * Confirm the same password: *password*
+   * Group: **default**.
+   * Network: *network ID*
+   * Primary DNS: **Manually Specify**
+   * Secondary DNS: **Manually Specify**
+   * Server Type: **Standard (default)**.
+   * Service Level: choose between **Premium** or **Standard**.
+   * **Server Name(s)**. Enter a name, such as **CBNODE**.
+   * **Specify Credentials**. To run the task under the default administrative account, leave **NO** for credentials.   
+   * Click the `next: step 2` button.
 
 5. Review the Blueprint.             
-   * Verify the information.         
-   * If your information is correct, click on the  button **deploy blueprint**.   
+   * Verify the information.
 
 6. Deploy the Blueprint.    
-   * In the panel "Deploy Blueprint: install Couchbase Server on CentOS6" you will see the deployment details.     ![](../../images/10-deploy-bprint.png)   
+   * If your information is correct, click the `deploy blueprint` button.   
 
 7. Monitor the Activity Queue.        
-   * Monitor the Deployment Queue to view the progress of the Blueprint deployment.
-   * Access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
-   * Once the Blueprint completes successfully, you will receive an email confirming that the Blueprint build is complete. Do not use the application until you have received this email notification.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
+   * Once the Blueprint completes successfully, you will receive an email confirming that the Blueprint build is complete.
+   * Do not use the application until you have received this email notification.
 
 ### Pricing
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no  license costs or additional fees bundled in. You will need a valid [Enterprise Edition license](http://www.couchbase.com/agreement/subscription) from Couchbase Inc.
-
 
 ### Frequently Asked Questions
 

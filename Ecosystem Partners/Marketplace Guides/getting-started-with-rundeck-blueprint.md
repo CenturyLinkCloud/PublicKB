@@ -37,7 +37,7 @@ RUNDECK is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
 1. Locate the RUNDECK Blueprint.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “RUNDECK” in the keyword search on the right side of the page.
    * Locate the 'RUNDECK PRO' Blueprint.
 
@@ -61,7 +61,7 @@ RUNDECK is available as a Blueprint for deployment on a new server.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access your RUNDECK server
@@ -80,5 +80,5 @@ CenturyLink Cloud works with [SimplifyOps](http://www.simplifyops.com) to provid
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to deploying the RUNDECK PRO, Licensing or Accessing the deployed software, please visit the [SimplifyOps Support website](http://support.simplifyops.com/)
-* For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to deploying the RUNDECK PRO, Licensing or Accessing the deployed software, please visit the [SimplifyOps Support website](http://support.simplifyops.com/).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).

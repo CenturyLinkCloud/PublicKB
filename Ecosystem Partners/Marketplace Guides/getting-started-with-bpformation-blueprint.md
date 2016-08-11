@@ -13,7 +13,7 @@
 After reading this article, the reader should feel comfortable deploying a [bpformation](https://github.com/CenturyLinkCloud/bpformation) client and using it to orchestrate CenturyLink Cloud.
 
 ### Description
-bpformation is used to help you gain access to a command line interface CLI that interacts with the CenturyLink Cloud Blueprints packaging and workflow services. Query, change, add, and execute CenturyLink Cloud automation using a cross-platform CLI and definitions defined in common json files.
+bpformation is used to help you gain access to a command line interface CLI that interacts with the CenturyLink Cloud Blueprints packaging and workflow services. Query, change, add, and execute CenturyLink Cloud automation using a cross-platform CLI and definitions defined in common JSON files.
 
 https://github.com/CenturyLinkCloud/bpformation
 
@@ -29,16 +29,16 @@ CenturyLink Cloud Users
 
    <img src="../../images/bpformation/blueprint_tiles.png" style="border:0;max-width:250px">
 
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for “bpformation” in the keyword search on the right side of the page.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * Search for “bpformation” in the keyword search on the right side of the page.
 
-2. Click the Deploy Blueprint button.
+2. Click the `deploy blueprint` button.
 
 3. Review and Confirm the Blueprint.
 
 4. Deploy the Blueprint.
-   * Once verified, click on the `deploy blueprint` button. You will see the deployment details stating the Blueprint is queued for execution.
+   * Once verified, click the `deploy blueprint` button. You will see the deployment details stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within 15 to 20 minutes.
-
 
 ### About Community Releases on CenturyLink Cloud
 CenturyLink Cloud publishes a variety of packaged and certified community releases of OSS or otherwise generally available software solutions. These certifications are limited to successful deployment of assets on cloud servers and do not extend onto ongoing software configuration, guarantees, or support.

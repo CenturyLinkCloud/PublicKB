@@ -41,14 +41,14 @@ VDP Host Agent is available as a Blueprint for deployment on a new server.
 
 #### Steps to deploy VDIworks Host Agent
 1. Locate and Select the VDIworks VDP Host Agent Blueprint and Deploy.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for 'VDIworks VDP' in the keyword search on the right side of the page.
    * Locate the 'VDIworks VDP HostAgent 351' Blueprint.
 
 2. Choose and Deploy the Blueprint.
    * Click the 'Install VDIworks VDP Host Agent' Blueprint.
 
-3. Configure the Blueprint.
+3. Configure the Blueprint. 
    Complete the information below:
 
    * Enter a Password for the Server and repeat to confirm.

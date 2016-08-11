@@ -39,7 +39,7 @@ MyBB is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
 1. Locate the Bitnami MyBB Stack Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “MyBB” in the keyword search on the right side of the page.
    * Locate the 'Install Bitnami MyBB on Linux' Blueprint.
 
@@ -66,7 +66,6 @@ MyBB is available as a Blueprint for deployment on a new server.
    * SMTP Host
    * Secure connection, e.g., tls
 
-
 4. **Review and Confirm the Blueprint**
    * Click `next: step 2`.
    * Verify your configuration details.
@@ -77,16 +76,13 @@ MyBB is available as a Blueprint for deployment on a new server.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
-
 ### Deploy MyBB to an existing server (alternate option)
-
 Bitnami MyBB Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
 #### Steps
-
 1. Deploy or Identify an Existing Server.
    * Identify the server targeted for MyBB installation.
    * The Operating system must be supported by the Script Package.
@@ -121,12 +117,11 @@ Bitnami MyBB Stack is available as a Script Package for deployment on an existin
 
 5. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access your MyBB server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
-
 1. Check email to obtain Server Name and IP Address Login information.
 2. Log in to the server and start having fun!
 

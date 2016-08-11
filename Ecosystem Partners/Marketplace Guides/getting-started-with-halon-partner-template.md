@@ -6,7 +6,6 @@
 "contentIsHTML": false
 }}}
 
-
 ### Overview
 After reading this article, the reader should feel comfortable deploying the Halon SMTP platform on CenturyLink Cloud.
 
@@ -26,10 +25,8 @@ https://halon.io
 ### Description
 Halon is the scriptable SMTP (email security) software that provides anti-spam, routing, API integration, task automation, encryption and signing for today’s businesses. Halon’s SMTP email security software is now available on the CenturyLink Cloud Platform for customers to download and install. This article is to help end-users to quickly take advantage of this integration to maximize their investment and immediately protect their infrastructure.
 
-
 ### Solution Overview
 Halon’s scriptable SMTP software is designed to give each business to have a full range of solutions to managing business email. Customers find savings through a reduced need for servers and hardware as well as by nearly eliminating task management through automation features. In addition to this customers can leverage Halon’s expertise and best-in-class service to its customers.
-
 
 ### Offer
 The end-user initiates their relationship with Halon through their CenturyLink Cloud account but pay for their services directly to Halon on a monthly basis. This Virtual Appliance, called a Partner Template, is deployed to your CenturyLink Cloud account via a Service Task. Although Service Tasks are ordinarily billed to the end-user’s account, CenturyLink will provide a refund for costs associated with the Service Task for deploying the Partner Template. Please follow the process below to request credit. In order to purchase your license (AKA entitlement), please email sales@halonsecurity.com or click here for a list of international contacts for Halon Security Sales.
@@ -37,10 +34,8 @@ The end-user initiates their relationship with Halon through their CenturyLink C
 ### Audience
 CenturyLink customers that manage an email infrastructure.
 
-
 ### Impact
 After reading this article, the user should feel comfortable getting started using the partner technology on CenturyLink Cloud. After executing the steps in this document, end-users will have a functioning and more-secure email infrastructure.
-
 
 ### Minimal System Requirements
 Halon’s end-user console is a browser based portal and does not require extensive system resources to operate. The Halon email gateway software is highly efficient, and can handle incredible amounts of e-mail traffic. For performance benchmarks and optimizations, please see http://wiki.halon.se/Performance.
@@ -48,7 +43,6 @@ Halon’s end-user console is a browser based portal and does not require extens
 * CPU: 1 CPU (Minimum), 2 CPU (Recommended)
 * RAM: 2 GB (Minimum), 4 GB (Recommended)
 * Storage: 10 GB (Minimum)
-
 
 ### Howe to Deploy the Partner Image
 1. Create an email to ServiceTasks@ctl.io.
@@ -97,15 +91,13 @@ Once the Service Task team deploys your virtual appliance, you will get an email
 
 If a customer has any questions or complications, we provide free technical support. Feel free to email Halon at [support@halonsecurity.com](mailto:support@halonsecurity.com).
 
-
 ### Pricing
 The costs listed above in Steps 1 and 2 are for the infrastructure only.
 
 After deploying this Partner Template, the end-user can email Halon at [sales@halonsecurity.com](mailto:sales@halonsecurity.com) to start using this service.
 
-
 #### Process to request credit for Service Task fee
-Follow this process to request credit on your account to re-imburse any expense to deploy the Partner Template.
+Follow this process to request credit on your account to reimburse any expense to deploy the Partner Template.
 
 * Please copy and paste the email below and send it to [Ecosystem Partner](mailto:ecosystem@ctl.io).
 

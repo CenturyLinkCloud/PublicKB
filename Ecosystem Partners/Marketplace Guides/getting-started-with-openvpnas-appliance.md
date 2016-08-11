@@ -28,15 +28,13 @@ CenturyLink Cloud Users
 
 ### Steps to Deploy a New Appliance
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for "OpenVPN AS Appliance" in the keyword search on the right side of the page.
-   <img src="../../images/openvpnas/blueprint_tile.png" style="border:0;max-width:250px;">
 
 2. Click the `deploy blueprint` button.
 
 3. Set Required parameters.
-   * Control User Password - The password associated with your control.ctl.io login
-   <img src="../../images/bpimager/deploy_parameters.png">
+   * Control User Password - The password associated with your control.ctl.io login.
 
 4. Set Optional Parameters.
    * Password/Confirm Password (This is the root password for the server. Keep this in a secure place).  
@@ -72,8 +70,7 @@ CenturyLink Cloud Users
    * Note that on first login you will finalize the configuration.
    * For proper authentication select root as your login user or if leveraging the default openvpn user you'll need to set the credentials for that user with the `passwd openvpn` command:
 
-  ```
-  To initially login to the Admin Web UI, you must use a
+  `To initially login to the Admin Web UI, you must use a
   username and password that successfully authenticates you
   with the host UNIX system (you can later modify the settings
   so that RADIUS or LDAP is used for authentication instead).
@@ -85,8 +82,7 @@ CenturyLink Cloud Users
   > Press ENTER for default [yes]: no
 
   > Specify the username for an existing user or for the new user account: root
-  Note: This user already exists.
-  ```
+  Note: This user already exists.`
 
 ### Pricing
 The costs listed above in the above steps are for the infrastructure only. After deploying this Blueprint, you may secure entitlements to the technology using the following steps:

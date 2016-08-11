@@ -18,9 +18,10 @@
   <li>Must have Account Administrator permissions on the platform</li>
 </ul>
 <h3>Detailed Steps</h3>
-<p>1. Locate the "Load Balancer" menu on the Services tab of the Control Portal.</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/jFTfM26U2xv0P4TCAIYVPh9S6/?name=01.png" alt="01.png" />
-</p>
+<p>1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Network** > **Load Balancer**.</p>
+
+  ![Navigate to Firewall](../images/loadbalancer.png)
+
 <p>2. Select the appropriate Data Center.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/8LWLtzq0adgJ4GPLXphkQQ7AH/?name=02.png" alt="02.png" />
 </p>
