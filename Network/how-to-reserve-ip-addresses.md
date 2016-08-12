@@ -15,9 +15,9 @@ There may be times when you need to prevent the auto-assignment of the next avai
 
 The following steps will walk you through reserving IP addresses in the CLC Portal
 
-1. Login to CLC and browse to your IP Address list
+1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Network** > **IP Addresses** and browse to your IP Address list.
 
-  ![IPADDRESS](../images/how-to-reserve-ip-addresses-1.png)
+  ![IPADDRESS](../images/IP-Addresses-tab.png)
 
 2. Ensure that you are in the correct datacenter, then identify the IP addresses you wish to mark as reserved.  In this scenario, we'll be reserving 10.93.186.16 / 10.93.186.17 / 10.93.186.18
 
@@ -29,9 +29,9 @@ The following steps will walk you through reserving IP addresses in the CLC Port
   NOC,
   please mark the following IPs reserved:
 
-  ALIAS: 
-  Data Center: 
-  Pin: 
+  ALIAS:
+  Data Center:
+  Pin:
   IP List:
   ```
 

@@ -45,7 +45,7 @@ The Microsoft SQL Server (MS-SQL) database is a comprehensive and integrated dat
 
 #### Managed SQL with CenturyLink provided license
 
-1. Search for **MS SQL** in the Blueprint library. Then, click on the **CLC Managed MS SQL** Blueprint.
+1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**. Search for **MS SQL** in the Blueprint library. Then, click on the **CLC Managed MS SQL** Blueprint.
 
   ![managed MS SQL blueprint](../images/getting-started-with-managed-microsoft-sql-server-01.png)
 

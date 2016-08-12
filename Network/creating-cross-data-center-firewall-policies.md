@@ -26,9 +26,9 @@
 </p>
 <p><strong><img src="https://t3n.zendesk.com/attachments/token/7xDTkGLoXpfTOtPRF5DLFhOye/?name=09.png" alt="09.png" /></strong>
 </p>
-<p><strong><br /></strong>3. Navigate to the Firewall menu in Control.</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/iGqdw8VdfVC7RCxCygglmXyi5/?name=03.png" alt="03.png" />
-</p>
+<p><strong><br /></strong>3. Using the left side navigation bar, click on **Network** > **Firewall**.
+
+  ![Navigate to Firewall](../images/firewall.png)
 <p>4. Select&nbsp;<strong>Either</strong>&nbsp;the source or destination CenturyLink Cloud Data Center node (as policies when applied are two-way rules). Next, choose to the&nbsp;<strong>Cross Data Center</strong>&nbsp;tab.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/tGm0I9fmyLqfoSryqlOZ3ec6J/?name=04.png" alt="04.png" />
 </p>

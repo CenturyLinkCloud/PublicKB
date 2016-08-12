@@ -141,15 +141,17 @@ If you would like to pin a KB article so that it always appears at the top of it
 
 ### Headers
 
-KBs generally use heading level 3 (###) as the highest heading level in the article (for consistency).
+Use heading level 3 (###) as the highest heading level in the KB articles (for consistency).
 
 ### Sub-Categories
 
   Within the top level categories, additional tags can be assigned to articles based on the name of the articles parent folder name. Keep in mind the need for an additional level of folders when linking to images or other articles when authoring an article in a sub-category folder.
 
-### Links (KB article to KB article)
+### Links
 
-  Links to articles should follow this format:
+KBs use full links (instead of relative links), with the "http:" or "https:" removed.
+
+  Links to KB articles should follow this format:
 
     ```
     [Link Text](../category/kb-article-name.md)
@@ -168,15 +170,26 @@ KBs generally use heading level 3 (###) as the highest heading level in the arti
     ```
     [Managed Microsoft SQL](//www.ctl.io/managed-services/ms-sql)
     ```
+    **Note:** The links have the "http:" or "https:" deleted so that the site will render regardless of the protocol (the ctl.io website only displays https; this ensures there are no conflicts.)
+
+  Links to embedded videos, such as podcasts, should look like this:
+
+  ```
+  <iframe id='ei8087582' src='//centurylinklabs.podomatic.com/embed/frame/posting/2016-06-06T12_59_45-07_00?json_url=http%3A%2F%2Fcenturylinklabs.podomatic.com%2Fentry%2Fembed_params%2F2016-06-06T12_59_45-07_00%3Fcolor%3D43bee7%26autoPlay%3Dfalse%26facebook%3Dtrue%26height%3D85%26width%3D620%26minicast%3Dfalse%26objembed%3D0&notb=1' height='85' width='620'frameborder='0' marginheight='0' marginwidth='0' scrolling='no' allowfullscreen></iframe>
+  ```
+  **Note:** Like the external site links, the "http:" and "https:" are removed from the links to eliminate conflicts.
 
 ### Images
 
   When adding an image to an article, place the image file in the `images/` directory in the root of this repo. The images should not be referenced from outside links. In the article itself, set the image source path like so:
 
+  **Top Level Category Article**
     ```
-    /* Top Level Category Article */
     ../images/[image file]
-    /* Sub-Category Article */
+    ```
+
+  **Sub-Category Article**
+    ```
     ../../images/[image file]
     ```
 
