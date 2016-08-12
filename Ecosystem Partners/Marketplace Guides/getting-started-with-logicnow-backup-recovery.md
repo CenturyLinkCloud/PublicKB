@@ -12,21 +12,6 @@
 
 The MAX Backup & Recovery solution from LogicNow is an easy-to-use, highly secure, multi-platform cloud backup & recovery solution for quickly protecting and recovering data and/or entire servers. Learn more at [logicnow.com](https://www.logicnow.com/products/backup-disaster-recovery)
 
-### Customer Contacts
-
-Contacts: [https://www.logicnow.com/contact](https://www.logicnow.com/contact)
-
-Sales Phone: +1 (919) 957-5099 Ext 1
-
-Sales Email: [ussales@logicnow.com](mailto:ussales@logicnow.com)
-
-Free Trial: [https://www.logicnow.com/products/backup-disaster-recovery/trial](https://www.logicnow.com/products/backup-disaster-recovery/trial)
-
-Support Phone: 1 (855) 801-5441 Ext 3 
-
-Web Support: [https://support.logicnow.com/kb/backup](https://support.logicnow.com/kb/backup)
-
-
 ### Description
 
 MAX Backup & Recovery is integrated with the CenturyLink Cloud
@@ -36,7 +21,7 @@ data protection and rapid control over servers.
 
 ### Free Trial
 
-A risk-free, no credit card 30-day trial license is included with the
+A risk-free, no credit card required, 30-day trial license is included with the
 Blueprint deployment. Users can try the software during that time
 period without restriction.
 
@@ -46,7 +31,7 @@ MAX Backup & Recovery pricing is based on a “Per Server” pricing model
 that includes software, storage, centralized monitoring & 24x7
 support.  This is a Bring You Own License model (BYOL). Contact MAX
 Backup sales for license and pricing information. You may obtain a 30
-day trial license when you run the blueprint.
+day trial license when you run the Blueprint.
 
 ### Audience
 
@@ -55,7 +40,7 @@ backup and recovery solutions.
 
 ### Deploying MAX Backup & Recovery
 
-MAX Backup & Recovery is available as a [Runner job][runner-permalink] for
+MAX Backup & Recovery is available as a [Runner job][https://runner.ctl.io/] for
 deployment.
 
 Once deployed, administration is available via http port 5000 on the target server.
@@ -82,6 +67,20 @@ Cloud Support ticket by emailing [NOC](mailto:noc@ctl.io) or through the Century
 
 For product support questions, release notes, and downloads related to deploying Max
 Backup & Recovery, please visit the LogicNow [Support Website](https://support.logicnow.com/kb/backup).
+
+### Customer Contacts
+
+Contacts: [https://www.logicnow.com/contact](https://www.logicnow.com/contact)
+
+Sales Phone: +1 (919) 957-5099 Ext 1
+
+Sales Email: [ussales@logicnow.com](mailto:ussales@logicnow.com)
+
+Free Trial: [https://www.logicnow.com/products/backup-disaster-recovery/trial](https://www.logicnow.com/products/backup-disaster-recovery/trial)
+
+Support Phone: 1 (855) 801-5441 Ext 3 
+
+Web Support: [https://support.logicnow.com/kb/backup](https://support.logicnow.com/kb/backup)
 
 
 [runner-permalink]: https://runner.ctl.io/product/11b02cd1-c098-4727-b29a-c3202f4fb2c9-logicnow
