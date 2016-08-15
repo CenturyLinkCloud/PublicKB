@@ -1,7 +1,7 @@
 {{{
   "title": "Deploying a PHP Application",
-  "date": "07-07-2015",
-  "author": "Matt Cholick",
+  "date": "01-29-2016",
+  "author": "Ben Heisel",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false
@@ -73,6 +73,24 @@ The buildpack has several configuration options that a developer might want to c
 
 For a complete list of options, see: https://github.com/cloudfoundry/php-buildpack/blob/master/docs/config.md
 
+### php.ini
+
+Many buildpack default php.ini settings may be modified by including a `.user.ini` file in your application's root directory. Additionally, a `.user.ini` file can be placed in any directory to limit modifications to a specific directory as described in the [PHP Documentation](http://php.net/manual/en/configuration.file.per-user.php). This PHP Manual page describes [where a configuration setting may be set](http://php.net/manual/en/ini.list.php). A `.user.ini` file will work for php.ini settings that do not have a [Changeable mode value](http://php.net/manual/en/ini.list.php) of PHP_INI_SYSTEM. Here you can find the default  [PHP 5.5 php.ini](https://github.com/cloudfoundry/php-buildpack/blob/master/defaults/config/php/5.5.x/php.ini) and [PHP 5.6 php.ini](https://github.com/cloudfoundry/php-buildpack/blob/master/defaults/config/php/5.6.x/php.ini) settings.
+
+For example, a script that takes a long time to execute may need the following modifications within a `.user.ini` file:
+
+```
+max_execution_time = 300
+max_input_time = 180
+```
+
+To modify php.ini settings marked PHP_INI_SYSTEM, create the directory `.bp-config/php/conf.d` in the root of your application. Next add a file with any name using the `.ini` extension in the directory, such as `php-settings.ini`. Then set the environment variable `PHP_INI_SCAN_DIR` to `.bp-config/php/conf.d`. This will instruct PHP to look for additional INI configuration in the directory you just created:
+
+```
+cf set-env <YOUR_APPNAME> PHP_INI_SCAN_DIR .bp-config/php/conf.d
+```
+
+
 ### Configuring Apache
 
 Developers have complete control over the buildpack's Apache server. For example, to change the modules and enable mod_alias to add Redirect support in .htaccess (which is off by default), add `httpd-modules.conf` the following to `.bp-config/httpd/extra/` with contents:
@@ -96,6 +114,24 @@ LoadModule alias_module modules/mod_alias.so
 ```
 
 This is the same as the default, with the added line `LoadModule alias_module modules/mod_alias.so`
+
+Some users have reported issues with timeouts beyond the PHP configuration and have needed to modify the Apache timeout settings. This can be done by creating a `httpd-default.conf` file located within the `.bp-config/httpd/extra/` directory. The default can be found here: https://github.com/cloudfoundry/php-buildpack/blob/master/defaults/config/httpd/extra/httpd-default.conf. In the example below note the only change is updating the Timeout value from the default of 60 seconds to 300 seconds:
+
+```
+Timeout 300
+KeepAlive On
+MaxKeepAliveRequests 100
+KeepAliveTimeout 5
+UseCanonicalName Off
+UseCanonicalPhysicalPort Off
+AccessFileName .htaccess
+ServerTokens Prod
+ServerSignature Off
+HostnameLookups Off
+EnableMMAP Off
+EnableSendfile On
+RequestReadTimeout header=20-40,MinRate=500 body=20,MinRate=500
+```
 
 Here are the [default Apache configuration files](https://github.com/cloudfoundry/php-buildpack/tree/master/defaults/config/httpd). To override any file, simply provide a file of the same name and path in `.bp-config/httpd/`
 
@@ -124,3 +160,15 @@ To use nginx, instead of the default Apache, create a file `.bp-config/options.j
 
 The server can be cusomtized in the same way as that described in the "Configuring Apache" section. Here are the
 [default nginx configuration files](https://github.com/cloudfoundry/php-buildpack/tree/master/defaults/config/nginx)
+
+### Troubleshooting
+
+To enable the buildpack debug mode you can set the BP_DEBUG environment variable to true using the following command. This will instruct the buildpack to set it's log level to DEBUG and write to stdout:
+
+```
+cf se <YOUR_APPNAME> BP_DEBUG true
+```
+<b>NOTE</b>: If you enable debug logging it might include sensitive information like usernames, passwords, tokens, service info and file names from your application. Be careful where you post those logs and if necessary, redact any sensitive information first.
+### Additional Information
+
+More information on deploying PHP applicatinos can be found in the [Cloud Foundry Documentation](https://docs.cloudfoundry.org/buildpacks/php/index.html).

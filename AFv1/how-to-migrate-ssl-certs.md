@@ -14,6 +14,9 @@ This document is for users of AppFog v1 for migration to the next generation of 
 
 Before deleting any applications or services on AppFog v1 ensure you have local copies. Once apps and services are deleted it is **permanent**. We will not be able to provide a backup.
 
+When migration is complete your billing subscription can be canceled from the [Account](https://console.appfog.com/#account) page of the web console. Please be sure to cancel your subscription as we are not aware when individual user migration is complete. The billing system will not automatically prorate the subscription and issue a refund. If applicable, please open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com to receive a prorated refund of your subscription.
+
+
 ### AppFog SSL Support
 
 AppFog v2 provides SSL for default domains, such as &lt;appname&gt;.useast.appfog.ctl.io. SSL endpoints for custom domains are not available on AppFog v2. If you need your SSL certificate please login to open a [Support Ticket](https://support.appfog.com) or email support@appfog.com. We are unable to provide your certificate key.

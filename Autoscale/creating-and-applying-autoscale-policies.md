@@ -63,7 +63,7 @@ This KB article describes all of the steps for creating, applying, and testing b
   </li>
   <li>Vertical Autoscale policies can be added to existing servers or during the server creation process. These steps will show how to apply to an existing server (but similar steps below are followed after setting the "cpu autoscale" option to
     "on" when creating a server.) Locate a Windows Server 2012/2012 R2 Datacenter Edition, Red Hat Enterprise Linux 5/6/7, or Ubuntu 12/14 x64 server to apply a vertical Autoscale policy to. (If you attempt to add a vertical Autoscale policy to a server that
-    isn't based on one of the previously mentioned OSes, you will see no option available to do so. Bug in platform right now - new UI does not do this.) From the server settings page, mouseover the CPU utilization chart and click the <strong>EDIT </strong>button that appears.
+    isn't based on one of the previously mentioned OSes, you will see no option available to do so.) From the server settings page, mouseover the CPU utilization chart and click the <strong>EDIT </strong>button that appears.
     <br /><img src="../images/createautoscale-autoscale-server-settings.png" alt="autoscale-server-settings.png" />
   </li>
   <li>This will display the Edit CPU panel.
@@ -120,7 +120,7 @@ This KB article describes all of the steps for creating, applying, and testing b
 
   <img src="../images/createautoscale-new-h-scale-list.png" alt="new-h-scale-list.png" />
 
-8. Note: You will need to have a load balancer group created and a pool configured in order to move on to the next step. Please follow the instructions for [creating and configuring a load balancer](../Network/modifying-a-self-service-load-balancing-configuration.md) before moving on to the next step. Ideally, you should configure the load balancer with all the IP addresses (and ports) of the servers in the group you plan on applying the autoscale policy to. If you don't do this, the autoscale policy will take care of it for you, but it could take up to five minutes before the load balancer configuration is updated after the autoscale policy is applied to the group. Once you have a load balancer group and pool created and ready to use, continue on to the next steps.
+8. Note: You will need to have a load balancer group created and a pool configured in order to move on to the next step. Please follow the instructions for [creating and configuring a load balancer](../Network/creating-a-self-service-load-balancing-configuration.md) before moving on to the next step. Ideally, you should configure the load balancer with all the IP addresses (and ports) of the servers in the group you plan on applying the autoscale policy to. If you don't do this, the autoscale policy will take care of it for you, but it could take up to five minutes before the load balancer configuration is updated after the autoscale policy is applied to the group. Once you have a load balancer group and pool created and ready to use, continue on to the next steps.
 
 9. Horizontal Autoscale policies are added to existing server groups and not during the group creation process. Go to the Group Settings page for the group where you want to apply an Autoscale policy. (This group should have at least two identically configured servers in it. See the Autoscale FAQ for more information on how to manage horizontal Autoscale groups of servers.)
 

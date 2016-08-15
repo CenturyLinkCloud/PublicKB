@@ -35,7 +35,7 @@ Provides an additional channel for Partner services through the CenturyLink Clou
 
 ### Introduction
 
-Integrating your Partner service with the CenturyLink Add-on Engine marketplace is similar to the [existing AppFog Add-on Partner integration approach](../../AFv1/become-an-add-on-partner.md).
+Integrating your Partner service with the CenturyLink Add-on Engine marketplace is similar to the existing AppFog Add-on Partner integration approach.
 
 There are changes to be made to the Partner manifest and provisioning API to integrate with Add-on Engine. The following sections will describe the details around these needed changes.
 

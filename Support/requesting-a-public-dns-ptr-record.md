@@ -19,10 +19,11 @@
 </p>
 <p>&nbsp;&nbsp;Open a support ticket via the portal or by sending email to help@ctl.io.
   <br />&nbsp; In the body, please include the following:
+  <br />&nbsp; - Please include your PIN https://www.ctl.io/knowledge-base/support/pin-authentication-for-support-requests/
   <br />&nbsp;&nbsp;- Specify that the request is for the creation of a PTR record.
   <br />&nbsp; - Company account information (account name or account alias)
   <br />&nbsp; - Server Name in Control 
   <br />&nbsp; - Public IP address for the PTR record
   <br />&nbsp; - DNS name of the server for the PTR record
-  <br />&nbsp;&nbsp; - Datacenter which the target resides in (i.e. WA1 or UC1 or )</p>
+  <br />&nbsp; - Datacenter which the target resides in (i.e. WA1 or UC1 or )</p>
 <p>&nbsp;A ticket will be generated to track the request, and so that you will be apprised of updates as we process the request.</p>

@@ -1,5 +1,5 @@
 {{{
-  "title": "Verify CenturyLink Cloud IPS Install",
+  "title": "IPS - Verify Install",
   "date": "09-15-2015",
   "author": "Matthew Close",
   "attachments": [],

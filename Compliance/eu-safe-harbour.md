@@ -7,6 +7,8 @@
   "sticky": true
 }}}
 
+# **EU Safe Harbour**
+
 ![U.S.-EU-Safe-Harbor Small.jpeg](https://ucarecdn.com/b21b7d2f-8713-47b8-9c57-c023890f4090/)
 
 The European Court of Justice (ECJ) has cited that the Safe Harbour Agreement that exists between EU countries and the USA is not legitimate and therefore does not provide adequate protections for EU data transfer to the USA.
