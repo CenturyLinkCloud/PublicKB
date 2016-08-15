@@ -128,7 +128,7 @@ These steps reside inside the “Restoration Process” within the overall Incid
 
 | Type | Description | Email |
 |------|-------------|-------|
-| Management Escalation | On-call Management Team | escalation@t3n.zendesk.com |
+| Management Escalation | On-call Management Team | escalation@ctl.io |
 | Security SME Engagement | On-call Security SME | security@t3n.zendesk.com |
 | Security Management Escalation (Warning – Do Not Abuse) | Security Management Engagement | sec-esc@t3n.zendesk.com + Escalation Ticket # |
 | Executive Escalation (Warning – Do Not Abuse) | Executive Engagement – Enterprise Support Level Only | exec-esc@t3n.zendesk.com + Management Escalation Ticket # |
