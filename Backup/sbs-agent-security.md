@@ -1,6 +1,6 @@
 {{{
   "title": "SBS Agent Security Configurations",
-  "date": "03-8-2016",
+  "date": "03-08-2016",
   "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
@@ -16,8 +16,8 @@ The Backup agent's UI is password protected and restricted to 'localhost' viewin
 When SimpleBackupService is installed, the application is secured by the default username and password.
 
 The default values are:  
-Username: sbs  
-Password: backup
+* Username: sbs  
+* Password: backup
 
 The username, password and agent binding IP address can be customized by editing the ``sbs-agent.properties`` file located in the Simple Backup Service install directory.
 
@@ -35,4 +35,4 @@ The file contains the following text:
 #To open agent ui for all ip ranges, set to 0.0.0.0
 #server.address=127.0.0.1
 ```
-Simply remove the hash symbol from the lines you wish to change and replace the text after the “=“ symbols on those lines with the values of your choice; you can bind the server.address property to one of the sever's IP addresses, or set it to 0.0.0.0 to allow access to all the server's IP addresses. Be sure to save the file with these changes and [restart the Simple Backup Service](./restarting-simple-backup-service.md) agent for the changes to take affect.
+Simply remove the hash symbol from the lines you wish to change and replace the text after the “=“ symbols on those lines with the values of your choice. You can bind the server.address property to one of the sever's IP addresses, or set it to 0.0.0.0 to allow access to all the server's IP addresses. Be sure to save the file with these changes and [restart the Simple Backup Service](./restarting-simple-backup-service.md) agent for the changes to take affect.
