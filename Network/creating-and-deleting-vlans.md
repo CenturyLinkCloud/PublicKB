@@ -19,7 +19,7 @@
 </ul>
 <h3>Detailed Steps</h3>
 <ol>
-  <li>Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Network** > **Networks**.</p>
+Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Network** > **Networks**.
 
     ![Navigate to Firewall](../images/networks.png)
   </li>
