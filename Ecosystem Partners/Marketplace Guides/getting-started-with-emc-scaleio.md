@@ -59,11 +59,11 @@ The nodes in the cluster run the following components of interest:
 
 ### Deploying a EMC ScaleIO cluster
 
-1. Load the [EMC ScaleIO cluster][runner-cluster-permalink] runner job. 
+1. Load the [EMC ScaleIO cluster][runner-cluster-permalink] Runner job. 
 
-2. Select a datacenter and specify a server group name your cluster will provision into.
+2. Select a data center and specify a server group name your cluster will provision into.
 
-3. Configure your server buildout with name, cpu and memory.
+3. Configure your server buildout with name, cpu, and memory.
 
 4. Determine the number of servers for your cluster. A minimum of 5 servers are required.
    If the number of servers is greater than 5, additional nodes will configure as SDS components,
@@ -79,7 +79,7 @@ The nodes in the cluster run the following components of interest:
 8. Optionally provide an ssh key to install on all nodes. 
 
 
-On completion, the runner job will emit the IP address of the master MDM node. You'll want to jot this down 
+On completion, the Runner job will emit the IP address of the master MDM node. You'll want to jot this down 
 and use it for administrating the cluster. 
 
 
@@ -118,14 +118,14 @@ or the REST gateway. Both of which are outside the scope of this article.
 In order to have clients access your volumes, additional software in the form of kernel module must be installed. 
 Once the kernel module is installed, the client must be registered into the cluster. 
 
-To install on linux systems, a separate [SDC installer][runner-client-permalink] is available for clients. 
+To install on Linux systems, a separate [SDC installer][runner-client-permalink] is available for clients. 
 
 The SDC installer will require the IP address of the primary MDM node as well as the admin password. 
 
 
 ### Performance
 
-For optimal performance, consider using hyperscale or bareMetal server types for the SDS nodes. To do so, 
+For optimal performance, consider using hyperscale or Bare Metal server types for the SDS nodes. To do so, 
 pre-allocate these machines in a server group of your choice. Then point the cluster installer at the group. 
 
 
