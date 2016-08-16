@@ -42,4 +42,4 @@ You will receive a confirmation email from CenturyLink Cloud Trial Team verifyin
 * Partner works closely with the customer to insure they are using the trial, answer questions as they arise, insure it’s a good customer experience, and monitor the customer’s usage so there are no surprise billings if the credit is depleted.
 * Partner contacts the CenturyLink Trial Team to confirm the customers decision.
 
-*(If we do not hear back from (you) partner when the credit is depleted, CenturyLink will automatically begin billing on a monthly basis for that customer's usage).*
+*(If we do not hear back from, the partner, when the credit is depleted, CenturyLink will automatically begin billing on a monthly basis for that customer's usage).*
