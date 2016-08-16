@@ -1,6 +1,6 @@
 {{{
   "title": "Operating System Root Drive Size",
-  "date": "4-6-2015",
+  "date": "8-16-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -22,4 +22,4 @@ The list below details the Root storage sizes of the Virtual Operating Systems p
 * Windows 2008 R2 Standard | 64-bit (60 GB)
 * Windows 2008 R2 Datacenter Edition | 64-bit (60 GB)
 * Windows 2012 Datacenter Edition | 64-bit (60 GB)
-* Windows 2012 R2 Datacenter Edition | 64-bit (60 GB)
+* Windows 2012 R2 Datacenter Edition | 64-bit (64 GB)
