@@ -1,3 +1,0 @@
-[submodule "lib"]
-	path = lib
-	url = git@github.com:CenturyLinkCloud/KB-Commit-Analyzer.git

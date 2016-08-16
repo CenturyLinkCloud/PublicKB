@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started with CloudBerry Lab Backup Enterprise - Blueprint",
-  "date": "09-21-2015",
-  "author": "Bob Stolzberg",
+  "date": "08-14-2016",
+  "author": "Eugene Rudinsky",
   "attachments": [],
   "contentIsHTML": false
 }}}
