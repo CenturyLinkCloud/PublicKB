@@ -1,6 +1,6 @@
 {{{
   "title": "Pricing, Billing and Invoicing for Partners",
-  "date": "02-11-2015",
+  "date": "08-17-2016",
   "author": "",
   "attachments": [
     {
@@ -20,20 +20,20 @@
 ## The Basics of Pricing and Discounts
 
 ### Cloud Portal Pricing
-Prices in the Control Portal are displayed at list price. The customer never sees the partner’s discounted price.
+Prices in the Control Portal are displayed at list price unless you, the Partner, decides to change the pricing using the Set Your Own Price feature. The customer only sees what is displayed and never sees the partner’s discounted price.
 
 ### CenturyLink Invoice to Partner
 When you receive an invoice from CenturyLink, your contracted discount will be applied.
 
-## Invoicing Customers and Special Pricing
+## Special Pricing
 
-### Partner Invoice to Customer
-As a partner, you are responsible for invoicing your customers. The subsequent slide describes how to get detailed billing data for your customers.
+If you want to charge your customer a higher rate than what is in the portal or offer them a discount, you can do this in two ways.
+This can be done manually at the time of invoice.  You’d simply communicate the difference to your customer.  In this method, your pricing is unknown to CenturyLink and is NOT reflected in the CenturyLink Cloud Portal.  
 
-### Special Pricing Scenarios
-**Customer Discount** - You can extend a discount at the time of invoice. Communicate to your customer that prices displayed in the CenturyLink Cloud Portal are at list price; their invoice will reflect their discount.
+## Set Your Own Price Feature
+The Set Your Own Price Feature provides a way Partners can set custom prices for their sub accounts.  The following link provides a detailed overview of the Set Your Own Price feature.
 
-**Rates Higher Than List** - If you want to charge a price higher than list price (because you are offering additional services), a manual process is used to reflect this in the portal. Email noc@ctl.io to make this request.
+Please review the [Set Your Own Price Feature](../General/setting-prices-for-sub-accounts.md)
 
 ## Getting Billing Data and Reports
 
