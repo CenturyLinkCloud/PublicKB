@@ -119,7 +119,7 @@ Vertical Autoscale policies can be added to existing servers or during the serve
    * Once you have a load balancer group and pool created and ready to use, continue on to the next steps.
 
 ### Configuring Horizontal Autoscale - Existing Server
-1. Horizontal Autoscale policies are added to existing server groups, not during the group creation process. Go to the Group Settings page for the group where you want to apply an Autoscale policy. (This group should have at least two identically configured servers in it. See the [Autoscale FAQ](/autoscale-faq.md) for more information on how to manage horizontal Autoscale groups of servers.)
+1. Horizontal Autoscale policies are added to existing server groups, not during the group creation process. Go to the Group Settings page for the group where you want to apply an Autoscale policy. (This group should have at least two identically configured servers in it. See the [Autoscale FAQ](autoscale-faq.md) for more information on how to manage horizontal Autoscale groups of servers.)
 
 2. Click the **Horizontal Autoscale** tab and click **select a horizontal autoscale policy** to show the available policies to select.
 
