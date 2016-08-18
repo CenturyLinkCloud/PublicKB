@@ -12,9 +12,9 @@ For some scenarios, you may want more than one private IP associated with a clou
 
 ### Detailed Steps
 
-1. Log into the Control Portal.
-1. From the top menu, locate the **Design Blueprint** option under the **Blueprints** section.
-![Data Center Menu](../images/2015-03-19_moreprivateip-01.png "Data Center Menu")
+1. Log into the Control Portal. 
+2. Using the left navigation bar, click on **Orchestration** > **Design Blueprint**.
+![Data Center Menu](../images/design-blueprint.png)
 1. Give the new Blueprint a name, version number, visibility setting, and description. When finished, click the **next: add servers** button at the bottom.
 ![Data Center Menu](../images/2015-03-19_moreprivateip-02.png "Data Center Menu")
 1. Because we are going to run this Blueprint against an existing server, there is no need to explicitly **add** a server to this Blueprint. Click the **next: tasks & order** button.
@@ -24,8 +24,8 @@ For some scenarios, you may want more than one private IP associated with a clou
 1. On the Blueprint designer, see the automatic prompt to choose which server to run this **Add IP Address** task on. Because we want this to be reusable for any server, choose the **Select During Deployment** option from the dropdown list and click the **add task** button.
 
 1. Click the **next: review** button, and assess the Blueprint. If satisfied, click the **submit for publishing** button.
-1. From the top menu, locate the **Blueprint Library** option under the **Blueprints** section.
-![Data Center Menu](../images/2015-03-19_moreprivateip-05.png "Data Center Menu")
+1. From the left navigation bar, click on **Orchestration** > **Blueprints Library**.
+![Data Center Menu](../images/blueprint-lib.png)
 1. Switch to the **Servers** view and identify the server that needs additional private IP addresses. Record the name of that server.
 ![Data Center Menu](../images/2015-03-19_moreprivateip-07.png "Data Center Menu")
 1. The previously-built Blueprint will be available immediately in whichever cloud data center you built it in, and within minutes, be available in every cloud data center around the world. Click on the new Blueprint from within the Library to view the details.
