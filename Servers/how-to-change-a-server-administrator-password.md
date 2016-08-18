@@ -12,11 +12,10 @@
   <li>Next you will need to have the original password for the server which was sent to you when your server was created. If this password has changed you will need to contact the&nbsp;<a href="mailto:noc@tier3.com">NOC</a>&nbsp;and this will create
     a ticket for you which will be responded promptly.</li>
 </ol>
-<p>If you meet both the requirements then you will just need to get logged in and follow the steps below:</p>
-<p>From the&nbsp;<a href="https://control.tier3.com/">dashboard page</a>, click on <strong>Servers</strong>&nbsp;link in the main navigation menu.</p>
+ If you meet both the requirements then you will just need to get logged in to the Control Portal and follow the steps below:
+From the left navigation menu choose **Infrastructure** > **Servers**.
 
-<p><img src="https://t3n.zendesk.com/attachments/token/CTySCeoKef2l3ep8IsXwVqPoP/?name=Screen+Shot+2014-10-16+at+11.01.28+AM.png" alt="Screen_Shot_2014-10-16_at_11.01.28_AM.png" />
-</p>
+![Infrastructure-servers-new-gui](../images/Infrastructure-servers-new-gui.png)
 
 <p>This will take you to the Servers page, which lists the servers in your environment. Select the server who's administrator password you wish to change then click on the "settings" button.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/GW8PgekfbySURoDbb1tCjIy8T/?name=Screen+Shot+2014-10-16+at+11.03.10+AM.png" alt="Screen_Shot_2014-10-16_at_11.03.10_AM.png" />
