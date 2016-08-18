@@ -46,9 +46,9 @@ For Mac (OS X):
 Now that we have the OpenVPN client installed, we need to install the certificate/OpenVPN configuration.
 
 * Logon to your user account in the [Control Portal](https://control.ctl.io).
-* Hover over the green menu in the Control Portal, then click `VPN` under Network.
+* From the left navigation bar, Click on **Network** > **VPN**
 
-  ![Getting Started: How to securely connect to your server](../images/getting-started-how-to-securely-connect-to-your-server3.png)
+  ![Getting Started: How to securely connect to your server](../images/getting-started-how-to-securely-connect-to-your-server-new.png)
 
 * On the VPN Configuration page, you will see `default` under VPN Certificates.  Click on the `download` button.
 
