@@ -18,7 +18,7 @@
 
 ### Overview
 
-CenturyLink Cloud customers can deploy evaluation Microsoft SQL Server software within the Control Portal. By using the CenturyLink Cloud public blueprint customers have multiple ways to install this business critical database software.
+CenturyLink Cloud customers can deploy evaluation Microsoft SQL Server software within the Control Portal. By using the CenturyLink Cloud public Blueprint customers have multiple ways to install this business critical database software.
 
 ### Use Cases
 * Potential customers who wish to leverage our [Free Trial](//www.ctl.io/free-trial) program to test drive CenturyLink Cloud and avoid using up credits with paid production Microsoft SQL Licenses.
@@ -46,17 +46,17 @@ SQL Server 2016 Evaluation 64-bit (Enterprise Edition)|Windows 2012 Datacenter 6
 
 ### General Notes
 
-The following are quick tips/notes based on past experiences with customers leveraging this blueprint
+The following are quick tips/notes based on past experiences with customers leveraging this Blueprint
 
 * Customers who wish to move to a production/paid license must [deploy a new virtual machine and SQL instance](../Blueprints/deploy-microsoft-sql-server-using-blueprint.md) with the version desired and migrate their data.
-* The blueprint deploys evaluation software that includes all the features of Enterprise edition.
-* It is not possible at the current time to install SQL to a drive other than C:\ via blueprint. Customers can modify the SQL database, tempdb, log locations post install to other volumes using SQL tools
-* Customers can **add features** to an existing SQL instance by running the blueprint multiple times on the same server and only selecting the additional features required.
-* Customers can **add new** SQL instances by running the blueprint multiple times on the same server.
+* The Blueprint deploys evaluation software that includes all the features of Enterprise edition.
+* It is not possible at the current time to install SQL to a drive other than C:\ via Blueprint. Customers can modify the SQL database, tempdb, log locations post install to other volumes using SQL tools.
+* Customers can **add features** to an existing SQL instance by running the Blueprint multiple times on the same server and only selecting the additional features required.
+* Customers can **add new** SQL instances by running the Blueprint multiple times on the same server.
 
 ### Installing Microsoft SQL Server Evaluation using Execute Package
 
-1. Navigate to the Infrastructure, Servers Menu in Control.
+1. Navigate to the Infrastructure > Servers Menu in Control.
 
     ![servers menu in control portal](../images/evaluate-microsoft-sql-server-using-blueprints-01.png)
 
@@ -78,7 +78,7 @@ The following are quick tips/notes based on past experiences with customers leve
 
 ### Installing Microsoft SQL Server Evaluation using Blueprint Library
 
-1. Navigate to Orchestration, Blueprint Library in Control.
+1. Navigate to Orchestration > Blueprint Library in Control.
 
     ![navigate to blueprint library](../images/evaluate-microsoft-sql-server-using-blueprints-05.png)
 
