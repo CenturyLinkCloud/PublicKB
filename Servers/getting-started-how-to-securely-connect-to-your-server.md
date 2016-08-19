@@ -48,7 +48,7 @@ Now that we have the OpenVPN client installed, we need to install the certificat
 * Logon to your user account in the [Control Portal](https://control.ctl.io).
 * From the left navigation bar, Click on **Network** > **VPN**
 
-  ![Getting Started: How to securely connect to your server](../images/getting-started-how-to-securely-connect-to-your-server-new.png)
+  ![Getting Started: How to securely connect to your server](../images/connect-to-your-server-new.png)
 
 * On the VPN Configuration page, you will see `default` under VPN Certificates.  Click on the `download` button.
 
