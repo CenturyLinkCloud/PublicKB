@@ -15,8 +15,6 @@
  If you meet both the requirements then you will just need to get logged in to the Control Portal and follow the steps below:
 From the left navigation menu choose **Infrastructure** > **Servers**.
 
-![Infrastructure-servers-new-gui](../images/Infrastructure-servers-new-gui.png)
-
 <p>This will take you to the Servers page, which lists the servers in your environment. Select the server who's administrator password you wish to change then click on the "settings" button.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/GW8PgekfbySURoDbb1tCjIy8T/?name=Screen+Shot+2014-10-16+at+11.03.10+AM.png" alt="Screen_Shot_2014-10-16_at_11.03.10_AM.png" />
 </p>
