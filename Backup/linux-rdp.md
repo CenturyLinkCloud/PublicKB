@@ -10,8 +10,8 @@
 
 The new Simple Backup Service (SBS) currently requires a web browser to perform restore operations. If you do not want to [allow remote web based connections to the Backup Agent](./sbs-agent-security.md), you may want to connect directly to the machine via RDP and use a web browser and connect to the local server’s SBS web interface. It is relatively simple to add a desktop with RDP capability to a Linux server to be able to easily establish a typical RDP session to a remote Linux server and get a desktop complete with browser etc.
 
-How:  
-(To install RDP services on a remote Red Hat 7x server for example, other OSes and versions may have similar)
+### Steps  
+Here are the commands to install RDP services on a remote Red Hat 7x server, for example. Other OSes and versions may have similar procedures.
 ```
 # Establish a remote SSH session as root and install and configure a desktop with RDP on RHEL7x
 # Install a full desktop

@@ -17,12 +17,13 @@
 <ul>
   <li>Must have Account Administrator permissions on the platform</li>
 </ul>
-<h3>Detailed Steps</h3>
-<ol>
-  <li>Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Network** > **Networks**.</p>
+### Detailed Steps
 
-    ![Navigate to Firewall](../images/networks.png)
-  </li>
+Log on to the [Control Portal](https://control.ctl.io/). 
+Using the left side navigation bar, click on **Network** > **Networks**.
+
+  ![Navigate to Firewall](../images/networks.png)
+ 
   <li>Click the "add network" button to add a new VLAN to the account. Note that each VLAN has 217 usable addresses as blocks are reserved for OpenVPN usage and other purposes. Be aware that there is no confirmation prompt upon clicking this button as a Cloud
     Blueprint is immediately launched to provision the network. This provisioning process adds routes the VPN server for the account and ensures that this account is ready to use.
     <br /><img src="https://t3n.zendesk.com/attachments/token/evzrkdjjxpuagk4/?name=vlan-createdelete02.png" alt="vlan-createdelete02.png" />

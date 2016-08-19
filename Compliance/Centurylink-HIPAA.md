@@ -65,8 +65,6 @@ Below is an example of CenturyLink’s HIPAA enabling architecture.
 
 ![HIPAA Arch.png](https://ucarecdn.com/77d5ea83-c5e2-4018-bd50-46f1579d9d40/)
 
-
-
 ## Products and Services
 As a trusted Business Associate, CenturyLink securely protects, stores and manages its customers data with reliable solutions that makes it readily accessible when and where they need it.
 
@@ -131,7 +129,7 @@ CenturyLink adheres to the administrative, physical, and technical safeguards an
 CenturyLink recognizes that some customers may need to conduct on-site audits of how their services are delivered. CenturyLink permits annual audits to ensure our customer’s services are aligned with security and policy requirements. The customer may perform this service audit or any designated third party auditor(s) who enters into a standard Auditor Access and Confidentiality Agreement.
 
 ## Characteristics of a Business Associate
-When a covered entity decides to outsource HIPAA compliant hosting to a business associate, they need to look for certain indicators of compliance to ensure due diligence in vetting their service provider. Due diligence can help a covered entity prevent a potential data breach resulting in costly fines and reputational and business damage.
+When a covered entity decides to outsource HIPAA compliant hosting to a business associate, they need to look for certain indicators of compliance to ensure due diligence in vetting their service provider. Due diligence can help a covered entity prevent a potential data breach resulting in costly fines, as well as damage to reputation and business.
 
 ## HIPAA Attestation and Compliance Services Report
 As the number of reported data breaches and the cost of data breaches to the healthcare industry rise, it becomes imperative for a CE to select a BA that has invested in an independent audit and can provide a copy of their audit report to ensure they are following compliant policies and procedures.

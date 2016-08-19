@@ -31,4 +31,4 @@ Below is the message released from CenturyLink legal / marketing that we are abl
 ***“With the recent decision of the European Court of Justice invalidating the U.S. Safe Harbor Certification Program, CenturyLink is reviewing its options for an alternative compliance framework.  CenturyLink fully intends to retain the administrative, technical, and physical security controls currently deployed to protect customer data and support its global compliance programs as it examines other frameworks that will continue to enable data transfers across its global Hybrid IT services.  We will keep all customers informed as we choose a path forward in response to the Court’s decision.”***
 
 
-Additional questions, please contact your sales represenative who will work with their Pricing and Offer Management contact.
+Additional questions, please contact your sales representative who will work with their Pricing and Offer Management contact.
