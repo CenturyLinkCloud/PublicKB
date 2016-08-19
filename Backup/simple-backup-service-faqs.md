@@ -159,6 +159,10 @@ A: Common causes of obscured restore files:
 
 A: The number of restore points depends on the backup frequency as selected in the policy. Note that the frequency is the measurement of time between the end of the last backup and the next backup.
 
+**Q: How do I stop an in-progress restore from completing?**
+
+A: Restarting the Simple Backup Service on the server will stop all running restore task(s), but it will also stop any backups that are in progress. See https://www.ctl.io/knowledge-base/backup/restarting-simple-backup-service/ for steps to restart in Linux and Windows.
+
 ### Policies
 
 **Q: Can I adjust the storage region of a server?**
