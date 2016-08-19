@@ -14,7 +14,7 @@ For some scenarios, you may want more than one private IP associated with a clou
 
 1. Log into the Control Portal. 
 2. Using the left navigation bar, click on **Orchestration** > **Design Blueprint**.
-![Data Center Menu](../images/design-blueprint.png)
+![Design Blueprint](../images/design-blueprint.png)
 1. Give the new Blueprint a name, version number, visibility setting, and description. When finished, click the **next: add servers** button at the bottom.
 ![Data Center Menu](../images/2015-03-19_moreprivateip-02.png "Data Center Menu")
 1. Because we are going to run this Blueprint against an existing server, there is no need to explicitly **add** a server to this Blueprint. Click the **next: tasks & order** button.
