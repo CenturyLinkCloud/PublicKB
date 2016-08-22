@@ -121,7 +121,7 @@ Security Incidents follow a standard Incident Process. Incident Response teams c
 * If an incident is security related, security SMEs are engaged in the same manner as other SMEs.
 * If an incident is determined to be a security breach of the CenturyLink Cloud environment, post-incident response and communication will be led by the Security.
 
-* [Learn More About What to Expect form a Security Issue](../support/what-can-you-expect-from-tier-3-on-a-security-issue.md)
+* [Learn More About What to Expect form a Security Issue](../Support/what-can-you-expect-from-tier-3-on-a-security-issue.md)
 
 ### Compromised Customer Machines/Abuse
 These steps reside inside the “Restoration Process” within the overall Incident Management process.
