@@ -120,19 +120,19 @@ Follow these steps to access and use the CloudBerry software.
 
 6. To add CenturyLink Cloud Storage: Via your web browser, in your CenturyLink Cloud Portal, navigate to “Object Storage” in the top menu.
 
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-14.png)
+  ![CTL control panel - select object storage](../../images/cloudberrylab/ctl-control-panel-object-storage.jpg)
 
 7. Press “Create the bucket”, then enter the bucket name.
 
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-15.png)
+  ![CTL control panel create bucket](../../images/cloudberrylab/ctl-control-panel-object-storage-create-bucket.jpg)
 
 8. Go to the bucket properties.
 
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-16.png)
+  ![CTL control panel bucket properties](../../images/cloudberrylab/ctl-control-panel-bucket-properties.jpg)
 
 9. Copy the endpoint without bucket name paste it to the account credentials window in Cloudberry Backup.
 
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-17.png)
+  ![CTL getting bucket endpoint, control panel](../../images/cloudberrylab/ctl-control-panel-getting-bucket-endpoint.jpg)
 
 10. Paste it to the account credentials window in Cloudberry Backup > Service point.
 
@@ -142,15 +142,15 @@ Follow these steps to access and use the CloudBerry software.
 
 11.	Go back to the buckets window and choose the tab “Users”.
 
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-19.png)
+  ![CTL - user management](../../images/cloudberrylab/ctl-control-panel-user-management.jpg)
 
 12.	Choose the user.
 
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-20.png)
+  ![CTL - select user](../../images/cloudberrylab/ctl-control-panel-select-user.jpg)
 
 13.	Copy your secret and access keys.
 
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-21.png)
+  ![CTL getting users credentials](../../images/cloudberrylab/ctl-user-credentials.jpg)
 
 14.	Paste your secret and access keys to the account credentials window in Cloudberry Backup and enter any Display name you like.
 
