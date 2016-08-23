@@ -90,7 +90,6 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Jenkins](../Ecosystem Partners/Marketplace Guides/getting-started-with-jenkins-blueprint.md)   	| Blueprint    | Continuous integration system    |
 | [Microsoft Team Foundation Server](..//Ecosystem Partners/Marketplace Guides/getting-started-with-microsoft-tfs.md)    | Blueprint     | Development team collaboration   |
 | [Phabricator](../Ecosystem Partners/Marketplace Guides/getting-started-with-phabricator-blueprint.md)   	| Blueprint    | Code Collaboration Suite    |
-| [Pivotal Cloud Foundry](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-cloud-foundry.md)   	| Blueprint    | Cloud Foundry PaaS    |
 | [Pootle](../Ecosystem Partners/Marketplace Guides/getting-started-with-pootle-blueprint.md)   	| Blueprint    | Translation Management   |
 | [Railo](../Ecosystem Partners/Marketplace Guides/getting-started-with-railo-blueprint.md)   	| Blueprint    | CFML   |
 | [ReviewBoard](../Ecosystem Partners/Marketplace Guides/getting-started-with-reviewboard-blueprint.md)   	| Blueprint    | Code Collaboration Suite   |
@@ -104,7 +103,6 @@ Quickly deploy and successfully use software and technology from any of our cert
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
-| [CloudEra](../Managed Services/getting-started-with-cloudera-on-centurylink-cloud.md)   	| Blueprint (Managed)   | Industry-leading Hadoop implementation    |
 | [Clusterpoint](../Ecosystem Partners/Marketplace Guides/getting-started-with-clusterpoint-blueprint.md)   	| Blueprint    | Scale out Database    |
 | [ClustrixDB](../Ecosystem Partners/Marketplace Guides/getting-started-with-clustrixDB-on-centof6.md)   	| Blueprint    | Scale out Database    |
 | [Coffing Data Warehouseing](../Ecosystem Partners/Marketplace Guides/getting-started-with-coffing-data-warehousing-nexus-chameleon-blueprint.md) 	| Blueprint  | Data Warehouse  |
@@ -117,9 +115,6 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [MongoDB](../Ecosystem Partners/Marketplace Guides/getting-started-with-mongodb-blueprint.md)   	| Blueprint    | High performance document oriented NoSQL database    |
 | [MySQL](../Managed Services/getting-started-with-managed-mysql.md)   	| Blueprint (Managed)   | Broadly adopted open source relational database management system   |
 | [Orientdb](../Ecosystem Partners/Marketplace Guides/getting-started-with-orientdb.md)   	| Blueprint   | Scale out NoSQL Database   |
-| [Pivotal GemFire](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-gemfire-blueprint.md)   	| Blueprint    | In-memory distributed database for high scale custom applications    |
-| [Pivotal Greenplum](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-greenplum-blueprint.md)   	| Blueprint    | Enterprise-grade analytical data warehouse    |
-| [Pivotal HD + HAWQ](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-hd-hawq.md)   	| Blueprint    | Enterprise-grade Hadoop cluster    |
 | [Qubida Analytics](../Ecosystem Partners/Marketplace Guides/getting-started-with-qubida-blueprint.md)   	| Blueprint    | Big Data BI    |
 | [XtremeData dbX](../Ecosystem Partners/Marketplace Guides/getting-started-with-xtremedata-dbx-blueprint.md)  | Blueprint  | On-Demand Big Data Analytics with real-time ingest |
 | [ZoomData](../Ecosystem Partners/Marketplace Guides/getting-started-with-zoomdata-blueprint.md)  | Blueprint  | Visual analytics of big data |

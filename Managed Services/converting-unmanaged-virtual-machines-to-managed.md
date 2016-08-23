@@ -27,6 +27,7 @@ Users employed by companies that have agreed to terms with [CenturyLink Sales](h
 * It is advised that customers perform the conversion during a maintenance window due to potential impact on running services.
 * It is recommended to create a snapshot of the VM before running the management process
 * Normally, a single CPI Blueprint will take between ten and thirty minutes to complete. However, this can be influenced by jobs in the queue
+* Due to security concerns, customers will be unable to convert a sub-account VM to Managed while using an IP address from a parent account network. The network chosen for the VM must belong to the same account upon which the machine resides.
 * To preconfigure network access, prior to making an unmanaged VM Managed, please be sure at least one [new, managed server](../Managed Services/created-a-managed-server-now-what.md) has been created in the desired VLAN/Network.
 
 
@@ -38,9 +39,9 @@ The table below provides a matrix of the supported locations and Operating Syste
 GB3 - Great Britain (Slough)<p>VA1 - US East (Sterling)<p>UC1 - US West (Santa Clara)<p>US Central (Chicago) - IL1<p>Canada (Toronto - Mississauga) - CA3<p>APAC (Singapore) - SG1|Red Hat Enterprise Linux 5 - 64-bit<p>Red Hat Enterprise Linux 6 - 64-bit<p>Red Hat Enterprise Linux 7 - 64-bit<p>Windows 2008 R2 Standard - 64-bit<p>Windows 2008 R2 Enterprise - 64-bit<p>Windows 2008 R2 DataCenter Edition - 64-bit<p>Windows 2012 DataCenter Edition - 64-bit<p>Windows 2012 R2 DataCenter Edition - 64-bit<p>
 
 ### Converting Unmanaged Windows Virtual Machines to Managed
-1. In the Control Portal, navigate to the Blueprint Library and select a Cloud location that supported managed operating system services.
+1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**. Select a Cloud location that supports managed operating system services.
 
-    ![Select cloud location](../images/converting-unmanaged-virtual-machines-to-managed-01.png)
+    ![Select cloud location](../images/vm-to-managed1.png)
 
 2. Using the search feature, input **CPI** to filter the blueprints.
 
@@ -63,27 +64,27 @@ GB3 - Great Britain (Slough)<p>VA1 - US East (Sterling)<p>UC1 - US West (Santa C
     ![queue windows conversion](../images/converting-unmanaged-virtual-machines-to-managed-06.png)
 
 ### Converting Unmanaged Linux Virtual Machines to Managed
-1. In the Control Portal, navigate to the Blueprint Library and select a Cloud location that supported managed operating system services.
+1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**. Select a Cloud location that supports managed operating system services.
 
-    ![Select cloud location](../images/converting-unmanaged-virtual-machines-to-managed-01.png)
+    ![Select cloud location](../images/vm-to-managed1.png)
 
 2. Using the search feature, input **CPI** to filter the blueprints.
 
     ![search for CPI and filter](../images/converting-unmanaged-virtual-machines-to-managed-02.png)
 
-3. Choose the **Managed-RHEL for CPI** blueprint and select the deploy blueprint icon.
+3. Choose the **Managed-RHEL for CPI** blueprint and select the **deploy blueprint** button.
 
     ![deploy CPI linux blueprint](../images/converting-unmanaged-virtual-machines-to-managed-07.png)
 
-4. In Step 1 (customize blueprint) select the Linux Virtual Machine you wish to convert to a managed server.  Each of the 3 customization areas **require** the user to select the virtual machine you wish to convert and all of them should be set to the same instance.
+4. In Step 1 (customize blueprint) select the Linux Virtual Machine you wish to convert to a managed server. Each of the 3 customization areas **require** the user to select the virtual machine you wish to convert and all of them should be set to the same instance.
 
     ![customize blueprint](../images/converting-unmanaged-virtual-machines-to-managed-08.png)
 
-5. In Step 2 validate your inputs and select the deploy blueprint button.
+5. In Step 2 validate your inputs and select the **deploy blueprint** button.
 
     ![deploy blueprint](../images/converting-unmanaged-virtual-machines-to-managed-09.png)
 
-6. Validate the Job completes in the queue
+6. Validate the job completes in the queue
 
     ![queue linux conversion](../images/converting-unmanaged-virtual-machines-to-managed-10.png)
 

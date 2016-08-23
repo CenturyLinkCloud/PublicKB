@@ -18,12 +18,27 @@
 * [Frequency](#frequency)
 * [Retention](#retention)
 * [Inclusions and Exclusions](#inclusions-and-exclusions)
+* [Billing](#billing)
 
 ### Requirements
 
-**Q: What are the network requirements for SBS, if any?**
+**Q: What are the network requirements for Simple Backup Service (SBS), if any?**
 
-A: Simple Backup Service requires outbound internet traffic over port 443. CLC VMs allow outbound traffic by default using NAT.
+A: SSH for root is required to allow the Blueprint to initially install the Backup Agent on the target server; it may be disabled after the initial instillation as it is not needed for the agent to function. The Simple Backup Service also requires outbound internet traffic over port 443. CenturyLink Cloud VMs allow outbound traffic by default using NAT. Alternatively, firewall rules may be configured utilizing the endpoints listed below.
+
+```
+up-va1.backup.ctl.io
+up-de1.backup.ctl.io
+up-ca3.backup.ctl.io
+up-sg1.backup.ctl.io
+up-uc1.backup.ctl.io
+up-gb3.backup.ctl.io
+```
+Additional endpoints will need to be configured based on the Storage Region selected as indicated in the [How it Works](./simple-backup-service-how-it-works.md) KB article.
+
+**Q: What OSes are supported?**
+
+A: All Operating Systems that are currently buildable in the CenturyLink Cloud Control Portal are supported. Customer imported OVA/OVF OSes and 32-bit OSes are not supported.
 
 **Q: How can I use Simple Backup Service on a server that doesn't have internet access?**
 
@@ -39,6 +54,10 @@ A: No, SBS provides file-level backup protection. In fact, SBS does not backup c
 
 ### Agent
 
+**Q: What are the minimum requirements of a VM for the SBS agent to run?**
+
+A: Although the SBS agent will run on 1 Core, 1GB of RAM VM's, the overall speed and performance might not be optimal. There could be resource contention on the server during a backup as well, depending on the other processes running on the server at that time.
+
 **Q: What are the logon credentials for the backup agent?**
 
 A: Please review the [SBS Agent Security Configurations](./sbs-agent-security.md) KB article for details.
@@ -51,9 +70,19 @@ A: Not currently at this time. Each properties file must be updated individually
 
 A: Please review the [SBS Agent Security Configurations](./sbs-agent-security.md) KB article for details.
 
+**Q: Where can I find the backup agent's logs on my machine?**
+
+A: Logs can be viewed at the following locations:
+  * Linux: /var/lib/simple-backup-service
+  * Windows: C:\Windows\System32\config\systemprofile\appdata\local\simplebackupservice
+
+**Q: What can I find in the backup agent's logs?**
+
+A: The backup agent's logs have details about the backups that have ran on the system. This is helpful if you are trying to identify causes of backup failures as the failed files will be listed in the logs.
+
 **Q: If a new version of the the agent is available, what are the steps to update the agent on my server?**
 
-A: No steps required by the user. The agent will automatically update itself, given that the server is powered on, agent is running and the server is connected to the internet.
+A: No steps required by the user. The agent automatically updates itself, given that the server is powered on, agent is running and the server is connected to the internet.
 
 **Q: If I reboot my server, do I need to restart the agent?**
 
@@ -81,6 +110,10 @@ A: There are two places in the agent that show the status of your backups. First
 
 A: Yes, see the sbs-backup-files-failed.csv file located on your system for details.
 
+**Q: Where are my backups actually stored?**
+
+A: The SBS agent on the server transfers backup data to one of six different backup storage regions, each built on top of cloud object storage. CenturyLink sources this object storage from a combination of its own cloud platform, as well as 3rd party cloud providers such as Amazon Web Services. For more information, see our [How It Works](https://www.ctl.io/knowledge-base/backup/simple-backup-service-how-it-works/) KB article.
+
 ### Restores
 
 **Q: What does an "IN_PROGRESS" status restore mean?**
@@ -89,7 +122,7 @@ A: An "IN_PROGRESS" status for a restore job indicates the data is actively bein
 
 **Q: Can I select specific files/folders to restore from a restore point?**
 
-A: Currently the only restore option available is a full restore of all files from a specific point in time (based on the retention period); all files that existed at that point in time will be restored. We have selective file restore on the roadmap and understand that it is a very important feature to most people, but we do not have an estimated release date yet.
+A: Currently, the only restore option available is a full restore of all files from a specific point in time (based on the retention period); all files that existed at that point in time will be restored. We have selective file restore on the roadmap and understand that it is a very important feature to most people, but we do not have an estimated release date yet.
 
 **Q: Can restores be performed to another server?**
 
@@ -126,6 +159,10 @@ A: Common causes of obscured restore files:
 
 A: The number of restore points depends on the backup frequency as selected in the policy. Note that the frequency is the measurement of time between the end of the last backup and the next backup.
 
+**Q: How do I stop an in-progress restore from completing?**
+
+A: Restarting the Simple Backup Service on the server will stop all running restore task(s), but it will also stop any backups that are in progress. See https://www.ctl.io/knowledge-base/backup/restarting-simple-backup-service/ for steps to restart in Linux and Windows.
+
 ### Policies
 
 **Q: Can I adjust the storage region of a server?**
@@ -150,9 +187,9 @@ A: An inactive policy essentially disables all servers while the server status o
 
 **Q: How can I view the policies applied to a server?**
 
-A: Currently, the most efficient method of viewing all the policies applied to a server is to navigate from Control Portal and drill into the server from the Policy Details page. Steps detailed below:
+A: Currently, the most efficient method of viewing all the policies applied to a server is to navigate from Control Portal and drill into the server from the Policy Details page. Steps are detailed below:
 
-  1. From your server within Control Portal, click the "manage" button in the "Backup Level" section to view all policies associated with your account alias.
+  1. From your server within Control Portal, click **manage** in the Simple Backup section to view all policies associated with your account alias.
   2. Click a policy to drill into the policy details to view all associated servers.
   3. Click a server to view all applied policies.
 
@@ -164,7 +201,7 @@ A: This depends on how long a backup takes to complete. The frequency timer will
 
 **Q: Can I manually initiate a backup outside of my regularly scheduled frequency?**
 
-A: Yes, from the Backup Agent, users can select the “Backup” button from the Home Dashboard or the Policy Details page. This will place a request at the top of the backup queue and will be processed as soon possible.
+A: Yes, from the Backup Agent, click the **Backup** button from the Home Dashboard or the Policy Details page. This places a request at the top of the backup queue and will be processed as soon possible.
 
 **Q: Can I schedule backups to execute at a specific time in the day?**
 
@@ -217,3 +254,21 @@ A: Not at this time; currently the exclusion list overrides the inclusion list. 
 **Q: Are wildcard characters supported for inclusion/exclusion backup paths when creating a Backup Policy?**
 
 A: Wildcard characters are not directly supported at this time. However, all sub-folders and files of an included path will be backed up unless specifically added to the exclusion list. All sub-folders and files of an exclusion path will be omitted from backup.
+
+### Billing
+
+**Q: How is my bill calculated?**
+
+A: SBS provides a simplified billing model. The cost per GB for backups is calculated on the actual data stored on an hourly basis. The actual data stored varies based on the backup retention, frequency, and your data change rate. After your first initial backup, each subsequent backup will capture and store changes to your data. The restore cost is a flat rate based on the restored amount of data in GBs.
+
+* Backup Cost Calculation Example:
+
+  10 GB of data backed up starting on the 15th of the month assuming no changes throughout the reamining duration of the month.
+
+  Hourly GB Usage = (10 GB of backup x 15 days x 24 hours) = 3,600 GB
+
+  Billable GB amount based on the monthly rate = 3,600 GB usage / 720 hours in a month = 5 GB
+
+**Q: Are there any additional costs or hidden fees associated with SBS?**
+
+A: No, there are no hidden fees or additional costs (data transfer, storage, licenses, etc.).
