@@ -1,24 +1,29 @@
 {{{
-  "title": "Getting Started with CloudBerry Lab Backup Enterprise - Blueprint",
-  "date": "09-21-2015",
-  "author": "Bob Stolzberg",
+  "title": "Getting Started with Cloudberry Lab Backup Enterprise - Blueprint",
+  "date": "08-14-2016",
+  "author": "<a href='https://twitter.com/EvgenyRudinsky'>@EvgenyRudinsky<a/>",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-![CloudBerry Logo](../../images/ecosystem-CloudBerry-logo.png)
+![CloudBerry Lab - #1 Cross Platform Cloud Backup](../../images/cloudberrylab/cloudberrylab-logo.png)
 
 ### Partner Profile
 CloudBerry Lab - Provides data backup solutions that allow backing up to all top cloud storage services.
 
-[http://www.CloudBerryLab.com](http://www.CloudBerryLab.com)
+[http://www.cloudberrylab.com](http://www.cloudberrylab.com)
 
-#### Contact CloudBerry Lab
+#### Contact Cloudberry lab
 ##### Customer Sales and Support:
-* Support Email - [support@CloudBerryLab.com](mailto:support@cloudberrylab.com)
-* Support Telephone - (212) 863 9918
-* Sales Email - [sales@CloudBerryLab.com](mailto:sales@cloudberrylab.com)
-* Sales Telephone - (212) 863 9918
+* Customer support
+  * Email: [support@cloudberrylab.com](mailto:support@cloudberrylab.com)
+  * Telephone: (212) 863 9918
+* Solution Architects group
+  * Email: [sa-team@cloudberrylab.com](mailto:sa-team@cloudberrylab.com)
+  * Telephones: US 1 (917) 720 3791; UK 44 (0) 20 7193 0300
+* Sales team
+  * Email: [sales@cloudberrylab.com](mailto:sales@cloudberrylab.com)
+  * Telephone: (212) 863 9918
 
 ### Description
 CloudBerry Lab has integrated their backup technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Backup to Cloud Object Storage solution.
@@ -97,56 +102,75 @@ Follow these steps to access and use the CloudBerry software.
 2. Launch the software.
    * You will see a Cloudberry Backup Enterprise Edition Icon on the desktop.
    * Double click it to launch.
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-10.png)
+
+    ![Cloudberry Ultimate Backup for Windows](../../images/cloudberrylab/cloudberrylab-ultimate-backup.jpg)
 
 3. Add an account.
    * Go to “File” > “Add new account”.
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-11.png)
 
-4. Choose S3 Compatible.
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-12.png)
+    ![Cloudberry Ultimate backup - Acc New Account](../../images/cloudberrylab/cloudberrylab-ultimate-backup-add-account.jpg)
+
+4. Choose CenturyLink
+
+    ![Cloudberry Ultimate Backup - select cloud storage CenturyLink](../../images/cloudberrylab/cloudberrylab-select-cloud-storage-centurylink-focused.jpg)
 
 5. You’ll be requested to enter your CenturyLink Cloud Storage account credentials.
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-13.png)
+
+  ![Cloudberry Lab Ultimate Backup CenturyLink Configuration](../../images/cloudberrylab/cloudberrylab-add-new-storage-account-centurylink-access-credentials.jpg)
 
 6. To add CenturyLink Cloud Storage: Via your web browser, in your CenturyLink Cloud Portal, navigate to “Object Storage” in the top menu.
+
    ![CloudBerry Image](../../images/ecosystem-CloudBerry-14.png)
 
 7. Press “Create the bucket”, then enter the bucket name.
+
    ![CloudBerry Image](../../images/ecosystem-CloudBerry-15.png)
 
 8. Go to the bucket properties.
+
    ![CloudBerry Image](../../images/ecosystem-CloudBerry-16.png)
 
 9. Copy the endpoint without bucket name paste it to the account credentials window in Cloudberry Backup.
+
    ![CloudBerry Image](../../images/ecosystem-CloudBerry-17.png)
 
 10. Paste it to the account credentials window in Cloudberry Backup > Service point.
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-18.png)
+
+  ![Cloudberry Lab - service endpoint for CenturyLink](../../images/cloudberrylab/cloudberrylab-centurylink-endpoint.jpg)
+
+  NB! by default it is "canada.os.ctl.io", but if you've being instructed to use different, follow and change (e.g. ca.tier3.io).
 
 11.	Go back to the buckets window and choose the tab “Users”.
+
    ![CloudBerry Image](../../images/ecosystem-CloudBerry-19.png)
 
 12.	Choose the user.
+
    ![CloudBerry Image](../../images/ecosystem-CloudBerry-20.png)
 
 13.	Copy your secret and access keys.
+
    ![CloudBerry Image](../../images/ecosystem-CloudBerry-21.png)
 
 14.	Paste your secret and access keys to the account credentials window in Cloudberry Backup and enter any Display name you like.
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-22.png)
+
+  ![Cloudberry Ultimate Backup - storage account configuration (access / secret key pair)](../../images/cloudberrylab/cloudberrylab-centurylink-storage-account-configuration.jpg)
 
 15. Now you can see all the buckets you have created through your CenturyLink dashboard and create new buckets.
-   * Press “ok”.
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-23.png)
+   * Select existing bucket or create new and press "OK".
+
+      ![Cloudberry Ultimate Backup - list and create bucket for CenturyLink](../../images/cloudberrylab/cloudberrylab-centurylink-list-create-bucket.jpg)
 
 16.	To start creating your first backup plan, press the button “Files”.
-   * Proceed to the second step and choose the S3 Compatible connection option.
-   * Then the connection you have created.
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-24.png)
+
+    * Proceed to the second step and choose the "CenturyLink" option.
+    * Then the connection you have created.
+
+        ![Cloudberry Ultimate Backup - select CenturyLink account](../../images/cloudberrylab/cloudberrylab-backup-to-centurylink-account.jpg)
 
 17.	All further information you can in the Help topics:
-   ![CloudBerry Image](../../images/ecosystem-CloudBerry-25.png)
+
+  ![CloudBerry Image](../../images/ecosystem-CloudBerry-25.png)
 
 ### Pricing
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no CloudBerry Labs license costs or additional fees bundled in.
@@ -159,5 +183,5 @@ By the first run of Cloudberry Backup you activate the free trial, which is vali
 You can purchase online by visiting [this link](http://www.cloudberrylab.com/enterprise-cloud-backup-software.aspx).
 
 #### Who should I contact for support?
-* For issues directly related to the CloudBerry software or licensing, please contact [support@CloudBerryLab.com](mailto:support@cloudberrylab.com) or via telephone: (212) 863 9918.
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new) .
+* For issues directly related to the Cloudberry lab software or licensing, please contact [support@CloudBerryLab.com](mailto:support@cloudberrylab.com) or via telephone: (212) 863 9918.
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
