@@ -170,8 +170,6 @@ Follow these steps to access and use the CloudBerry software.
 
 17.	All further information you can in the Help topics:
 
-  ![CloudBerry Image](../../images/ecosystem-CloudBerry-25.png)
-
 ### Pricing
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no CloudBerry Labs license costs or additional fees bundled in.
 
