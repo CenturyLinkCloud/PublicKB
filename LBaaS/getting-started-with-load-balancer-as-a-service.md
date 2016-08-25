@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started with Load Balancer as a Service",
-  "date": "12-20-2015",
-  "author": "Thomas Broadwell",
+  "date": "8-25-2016",
+  "author": "Matthew Farrell",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -20,13 +20,12 @@ LBaaS is a load balancing solution that is meant to provide both server load bal
 
 ### LBaaS Feature List
 
-* Programmable API (UI coming soon)
+* Programmable API
   - Create, Read, Update, Delete
 * Highly Available, Resilient Infrastructure
 * Load Balancing Protocols: HTTP (any port), TCP (any port)
 *	Load Balancing Algorithms: Round Robin, Least Connections
 *	Persistence: Source IP (Cookie Insert coming soon!)
-*	Performance: TBD
 * Basic Health Checks: TCP Listeners (TCP Send/Expect coming soon!)
 *	Port Forwarding/Redirect
 
