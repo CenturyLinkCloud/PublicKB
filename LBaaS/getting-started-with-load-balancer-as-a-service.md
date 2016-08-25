@@ -30,7 +30,184 @@ LBaaS is a load balancing solution that is meant to provide both server load bal
 * Basic Health Checks: TCP Listeners (TCP Send/Expect coming soon!)
 *	Port Forwarding/Redirect
 
-### Configuration and Management
+### Create a Load Balancer: User Interface
+
+To get started with the User Interface (UI), select the Network Icon
+inside of Control Portal:
+
+![](../images/LBaaS/GettingStarted/image1.png)
+
+Next, select Load Balancer from list of Network objects:
+
+![](../images/LBaaS/GettingStarted/image2.png)
+
+Now, let’s get started creating a Load Balancer. Click ‘create load
+balancer’
+
+![](../images/LBaaS/GettingStarted/image3.png)
+
+* (1)Select a location (Data Center) you wish to deploy the load balancer
+to and
+* (2) provide it a Name along with a
+* (3) description (if needed)
+* (4) Select Create Load Balancer
+
+![](../images/LBaaS/GettingStarted/image4.png)
+
+Upon creating your load balancer, the UI will refresh to show you the
+Status of your load balancer
+
+![](../images/LBaaS/GettingStarted/image5.png)
+
+Once Status has changed from ‘creating’ to ‘active’ your Load Balancer
+is ready to add pools (Please note, a manual refresh of the page may be
+required to see an updated status)
+
+![](../images/LBaaS/GettingStarted/image6.png)
+
+### Adding Pool(s) – User Interface
+
+Now that the Load Balancer is created, we need to add pools. After
+selecting the Load Balancer from the previous screen, click on either of
+the ‘add pool’ buttons
+
+![](../images/LBaaS/GettingStarted/image7.png)
+
+After selecting ‘add pool’, you will now need to populate the following
+fields:
+
+1.  **mode/port**: For LBaaS enabled data centers, users can select
+    either http or TCP for mode and can populate any port (above 23) to
+    load balance against. (Please note for all non-LBaaS enabled
+    centers, users will only be offered a selection of http for mode and
+    will only be able to load balance against port 80 or 443).
+
+2.  **Method**: Select between round robin and least connection
+
+3.  **Persistence**: Select between None and Source IP
+
+### Adding Node(s) – User Interface
+
+At this point it is time to add node(s), do so by selecting the ‘add
+node’ button. Enter the IP of the node and the desired port (to add
+additional nodes to the pool, simply repeat this step)
+
+![](../images/LBaaS/GettingStarted/image8.png)
+
+### Health Checks – User Interface
+
+LBaaS uses health checks to determine if a backend server is available
+to process requests. This avoids having to manually remove a server from
+the backend if it becomes unavailable. The default health check is to
+try to establish a TCP connection to the server (i.e. it checks if the
+backend server is listening on the configured IP address and port).
+
+If a server fails a health check, and therefore is unable to serve
+requests, it is automatically disabled in the backend i.e. traffic will
+not be forwarded to it until it becomes healthy again. If all servers in
+a backend fail, the service will become unavailable until at least one
+of those backend servers becomes healthy again.
+
+### Configure Health Checks via UI
+
+To enable health checks in the UI, simply slide the enable health checks
+button from ‘no’ to ‘yes’ (Please note non-LBaaS enabled data centers
+will be able to see the health check button, but will be unable to
+enable health checks at this time). Simply set the health check
+parameters based on the definitions provided below.
+
+![](../images/LBaaS/GettingStarted/image9.png)
+
+### Health Check Definitions
+
+Target Port: This is the target protocol and port pair. Either HTTP or
+TCP and a selection in the range of valid ports from 1 through 65535.
+The format is “http:3381”, for example.
+
+Unhealthy Threshold: The number of consecutive health check failures
+before moving the instance to the unhealthy state. Integer values
+between 2 and 10 are allowed.
+
+Healthy Threshold: The number of consecutive health check successes
+requires before moving the instance to the healthy state. Integer values
+between 2 and 10 are allowed.
+
+Health Check Interval Seconds: The interval in seconds between health
+checks. Integer values between 5 and 300 are allowed.
+
+After adding health checks, if desired, you will be redirected back to
+the list of available pools. At this point, the status will be set to
+creating. Within minutes the status will be set to active. And that’s
+it!
+
+### Updating a Pool via the UI
+
+To update a pool, first, select the load balancer instance the pool is
+associated to
+
+![](../images/LBaaS/GettingStarted/image10.png)
+
+Next, drill in to the appropriate pool:
+
+![](../images/LBaaS/GettingStarted/image11.png)
+
+Once in the pool, make any necessary changes and when finished select
+‘save’ to commit the changes. Once the changes are committed, you will
+be redirected back to the list of pools, which will show a status of
+‘updating’
+
+![](../images/LBaaS/GettingStarted/image12.png)
+
+Once the updates are complete, the status will change to ‘active’
+
+![](../images/LBaaS/GettingStarted/image13.png)
+
+### Delete a Pool via UI
+
+To delete a pool, select the appropriate load balancer the pool is
+associated to
+
+![](../images/LBaaS/GettingStarted/image10.png)
+
+From the list of available pools, select the pool you wish to delete
+
+![](../images/LBaaS/GettingStarted/image11.png)
+
+Once in the pool, select the delete pool button
+
+![](../images/LBaaS/GettingStarted/image14.png)
+
+Upon selecting delete, you will be prompted to confirm your decision to
+complete. Upon selecting ‘Yes, I am sure’, you will be redirected back
+to the list of pools, to which you can see a status of ‘deleting’ on the
+pool in question
+
+![](../images/LBaaS/GettingStarted/image15.png)
+
+Once the pool has successfully been deleted, the page will refresh and
+the deleted pool will no longer appear in the list of available pools.
+
+### Deleting or Updating a Load Balancer via UI
+
+To Delete or Update a load balancer, select the appropriate Load
+Balancer
+
+![](../images/LBaaS/GettingStarted/image10.png)
+
+Select the ‘settings’ button
+
+![](../images/LBaaS/GettingStarted/image16.png)
+
+Once inside of the settings, you can update the name and/or description
+of the Load Balancer. To commit your changes, select save.
+
+Alternatively, if you wish to delete the load balancer in question,
+select the delete button
+
+![](../images/LBaaS/GettingStarted/image17.png)
+
+
+### API Configuration and Management
 
 Manage your LBaaS from anywhere with an API. Create LBaaS VIPs and pools, add/remove servers from pool, and delete LBaaS configurations through a REST API that supports only JSON for all operations.
 
