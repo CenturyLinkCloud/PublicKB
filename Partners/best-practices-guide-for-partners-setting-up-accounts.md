@@ -1,6 +1,6 @@
 {{{
   "title": "Best Practices Guide for Partners Setting Up Accounts in CenturyLink Cloud",
-  "date": "05-20-2015",
+  "date": "08-17-2016",
   "author": "",
   "attachments": [],
   "contentIsHTML": false
@@ -14,7 +14,7 @@ This guide is designed to educate Partners on the best ways to set up and organi
 
 * **Sub Accounts** - Sub Accounts are added under a Parent Account.
 
-* **Trials** - Trial accounts are a sales tool for you to extend to customers the opportunity to use CenturyLink Cloud – free of charge - for 30 days or up to $500.
+* **Trials** - Trial accounts are a sales tool for you to extend to customers the opportunity to use CenturyLink Cloud – free of charge - with a credit of $500 or $2,500.
 
 ### Getting Started
 Use Sub Accounts to create your Account Hierarchy. Sub Accounts are used to create the following:
@@ -76,7 +76,7 @@ Customer Accounts are just what the name suggests:  accounts for your customers.
 * for example: ABC Services
 
 ### Customer Trials
-Trials are Customer Accounts. Trials give customers a chance to stand up resources and see how our cloud performs on an actual project or workload. They are not billed for the 1st 30 days of use or $500.
+Trials are Customer Accounts. Trials give customers a chance to stand up resources and see how our cloud performs on an actual project or workload. The Trial program provides a creidt of either $500 or $2,500 to new prospects.
 
 When a Trial is converted to a regular, paying customer, the customer does not need to recreate the work they’ve done during the Trial. The cloud environment for trial customers is exactly the same as the environment for paying customers.
 
@@ -85,7 +85,7 @@ To request a trial, use the following process:
 
 1. Create a Customer Account in the Control Portal.
 
-2. Request a Customer Trial via email to cloudpartnerhelp@centurylinkcloud.com
+2. Request a Customer Trial via email to cloudpartnerhelp@centurylink.com
 
 3. The Email Subject should read as follows:  
    * Request – Partner Name – Customer Alias
@@ -96,22 +96,20 @@ To request a trial, use the following process:
    * Partner Contact Email
    * Customer Name
    * Customer Alias (Portal Alias)
-   * Trial Start Date
+   * Amount of Credit Requested- either $500 or $2,500
 
 5. You will receive a confirmation email from the CenturyLink Cloud team confirming the trial has been setup for the customer.
 
-### Tips for Setting up Customer Trials
-It’s best to group Trials together so that you can easily view, track, and manage at any point in time which customers are conducting a trial. After 30 days, CenturyLink starts billing you (the Partner) for your customer’s usage. When a trial is created, an Account Alias is also created. Trials should be created using the following naming convention:
+### Tips for Where to Set up a Trial in Your Hierarchy
+It’s best to place your Trial Subaccount where it will ultimately reside in the hierarchy as a billable account. This helps the Partner avoid having to delete and rebuild the customer's infrastructure at the end of the trial. 
 
-“Trial- Customer Name” + ”30 days out from Trial start date(end of Trial date).” For example, if you create a trial for your customer – ABC Corp – on 08/06/16, create the account this way:
-* + Trial– ABC Corp – 08/06/16
+###Monitor the Trial 
+Partners should work closely with the prospect and monitor the status of their trials. This will improve the customer experience and increase the chance of that prospect becoming a billable customer. This is important as you’ll be able to monitor how the customer is using the trial, answer questions that arise, and insure there are no surprises if the prospect uses the entire trial credit amount. 
 
-7 days before the end of the Trial, the CenturyLink Cloud Team lets you know that the customer Trial is about to expire. This is a good time to follow-up with the customer to determine whether they want to convert to a paying customer.
-
-At the end of the Trial, the CenturyLink Cloud Team contacts you by email letting you know that the customer Trial has expired and we will begin billing you (the partner) for that customer’s usage.
+After the credit amount is depleted, CenturyLink starts billing you (the Partner) for your customer’s usage. When a trial is created, an Account Alias is also created
 
 ### End of Trial with Customer Canceling Services
-If the customer does not convert to a paying customer, you must email the CenturyLink Cloud Team - cloudpartnerhelp@centurylinkcloud.com informing them of the customer’s decision to not become a paying customer and ask for the account to be closed. You need to close the account before the end of the trial date. Otherwise, you will be billed for that customer’s usage on the date following the end of the trial period.
+If the customer does not convert to a paying customer, you must email the CenturyLink Cloud Team - cloudpartnerhelp@centurylinkcloud.com informing them of the customer’s decision to not become a paying customer and ask for the account to be closed. You need to close the account before the credit is deplted or you will be billed for that customer’s usage.
 
 The customer account will be removed from the Control Portal by CenturyCloud Team after the request is made.
 
