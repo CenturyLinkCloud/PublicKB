@@ -1,11 +1,11 @@
 {{{
-"title": "How to Delete a Server in the Control Portal",
-"date": "08-30-2016",
-"author": Brandy Smith",
-"attachments": [],
-"related-products" : [],
-"contentIsHTML": false,
-"sticky": false
+  "title": "How to Delete a Server in the Control Portal",
+  "date": "08-30-2016",
+  "author": "Brandy Smith",
+  "attachments": [],
+  "related-products" : [],
+  "contentIsHTML": false,
+  "sticky": false
 }}}
 
 ### Overview
