@@ -12,9 +12,9 @@ Cloud Network Administrators, Application Developers
 
 ### Overview
 
-CenturyLink Load Balancer as a Service helps you build highly scalable and highly available applications by providing application-level (HTTP & TCP) load balancing. It also offers various persistence methods to ensure that a user, once connected, continues to be connected to the same application instance.
+CenturyLink Load-Balancer-as-a-Service (LBaaS) helps you build highly scalable and highly available applications by providing application-level (HTTP & TCP) load balancing. It also offers various persistence methods to ensure that a user, once connected, continues to be connected to the same application instance.
 
-### What is Load Balancer as a Service?
+### What is Load-Balancer-as-a-Service?
 
 LBaaS is a load balancing solution that is meant to provide both server load balancing and high availability in an industry standard manner.
 
@@ -46,21 +46,21 @@ balancer’
 ![](../images/LBaaS/GettingStarted/image3.png)
 
 * (1)Select a location (Data Center) you wish to deploy the load balancer
-to and
-* (2) provide it a Name along with a
-* (3) description (if needed)
+to 
+* (2) Provide it a Name 
+* (3) Provide description (if needed)
 * (4) Select Create Load Balancer
 
 ![](../images/LBaaS/GettingStarted/image4.png)
 
 Upon creating your load balancer, the UI will refresh to show you the
-Status of your load balancer
+status of your load balancer
 
 ![](../images/LBaaS/GettingStarted/image5.png)
 
-Once Status has changed from ‘creating’ to ‘active’ your Load Balancer
+Once status has changed from ‘creating’ to ‘active’ your Load Balancer
 is ready to add pools (Please note, a manual refresh of the page may be
-required to see an updated status)
+required to see an updated status).
 
 ![](../images/LBaaS/GettingStarted/image6.png)
 
@@ -68,7 +68,7 @@ required to see an updated status)
 
 Now that the Load Balancer is created, we need to add pools. After
 selecting the Load Balancer from the previous screen, click on either of
-the ‘add pool’ buttons
+the ‘add pool’ buttons.
 
 ![](../images/LBaaS/GettingStarted/image7.png)
 
@@ -89,7 +89,7 @@ fields:
 
 At this point it is time to add node(s), do so by selecting the ‘add
 node’ button. Enter the IP of the node and the desired port (to add
-additional nodes to the pool, simply repeat this step)
+additional nodes to the pool, simply repeat this step).
 
 ![](../images/LBaaS/GettingStarted/image8.png)
 
@@ -142,7 +142,7 @@ it!
 ### Updating a Pool via the UI
 
 To update a pool, first, select the load balancer instance the pool is
-associated to
+associated to.
 
 ![](../images/LBaaS/GettingStarted/image10.png)
 
@@ -157,29 +157,29 @@ be redirected back to the list of pools, which will show a status of
 
 ![](../images/LBaaS/GettingStarted/image12.png)
 
-Once the updates are complete, the status will change to ‘active’
+Once the updates are complete, the status will change to ‘active’.
 
 ![](../images/LBaaS/GettingStarted/image13.png)
 
 ### Delete a Pool via UI
 
 To delete a pool, select the appropriate load balancer the pool is
-associated to
+associated to.
 
 ![](../images/LBaaS/GettingStarted/image10.png)
 
-From the list of available pools, select the pool you wish to delete
+From the list of available pools, select the pool you wish to delete.
 
 ![](../images/LBaaS/GettingStarted/image11.png)
 
-Once in the pool, select the delete pool button
+Once in the pool, select the delete pool button.
 
 ![](../images/LBaaS/GettingStarted/image14.png)
 
 Upon selecting delete, you will be prompted to confirm your decision to
 complete. Upon selecting ‘Yes, I am sure’, you will be redirected back
 to the list of pools, to which you can see a status of ‘deleting’ on the
-pool in question
+pool in question.
 
 ![](../images/LBaaS/GettingStarted/image15.png)
 
@@ -189,11 +189,11 @@ the deleted pool will no longer appear in the list of available pools.
 ### Deleting or Updating a Load Balancer via UI
 
 To Delete or Update a load balancer, select the appropriate Load
-Balancer
+Balancer.
 
 ![](../images/LBaaS/GettingStarted/image10.png)
 
-Select the ‘settings’ button
+Select the ‘settings’ button.
 
 ![](../images/LBaaS/GettingStarted/image16.png)
 
@@ -201,7 +201,7 @@ Once inside of the settings, you can update the name and/or description
 of the Load Balancer. To commit your changes, select save.
 
 Alternatively, if you wish to delete the load balancer in question,
-select the delete button
+select the delete button.
 
 ![](../images/LBaaS/GettingStarted/image17.png)
 
@@ -210,7 +210,7 @@ select the delete button
 
 Manage your LBaaS from anywhere with an API. Create LBaaS VIPs and pools, add/remove servers from pool, and delete LBaaS configurations through a REST API that supports only JSON for all operations.
 
-This API is RESTful, using JSON messages over HTTP and relying on the standard HTTP verbs including GET, POST, PUT and, DELETE. The general URL format of the service is:
+This API is RESTful, using JSON messages over HTTP and relying on the standard HTTP verbs including GET, POST, PUT, and DELETE. The general URL format of the service is:
 https://api.loadbalancer.ctl.io/{accountAlias}/{datacenter}/loadbalancers
 
 The request format is specified using the ‘Content-Type’ header and is required for operations that have a request body. The response format should be specified in requests using the ‘Accept’ header.
@@ -219,7 +219,7 @@ The request format is specified using the ‘Content-Type’ header and is requi
 
 Authentication to the API is done with the same credentials used to access the CenturyLink Cloud Control Portal. The username and password are provided to the API and in return, the user gets back a credentials object. This object contains a valid bearer token, which must be provided on each subsequent API request and can be reused for up to 2 weeks. The HTTP request must also include a Content-Type header set to application/json.
 
-### Configure the Load Balancer as a Service (LBaaS)
+### Configure the Load Balancer-as-a-Service (LBaaS)
 
 ### Create LBaaS
 
@@ -694,4 +694,4 @@ Target Port: This is the target protocol and port pair. Either HTTP or TCP and a
 
 ### Support
 
-For questions about the service, feel free to get us on Slack @ #load-balancing or via email at LBaaS-feedback@ctl.io.
+For questions about the service, contact the LBaaS team on Slack @ #load-balancing or via email at LBaaS-feedback@ctl.io.
