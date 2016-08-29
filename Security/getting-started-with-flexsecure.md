@@ -17,7 +17,7 @@ FlexSecure Passwordless authentication:
 * No need to remember passwords.
 * Quick and easy integration into applications.
 * Authenticate users once and add additional contexts such as pin-based security authentication.
-* Easy user adoption, since the passwordless authentication link is delivered by SMS.
+* Easy user adoption, since the Passwordless authentication link is delivered by SMS.
 
 ### Description
 FlexSecure solves a unifying problem -- the need to dynamically secure access to resources and data based on the user and their level of authorized access. Many solutions exist for granting access in a static way, but no single solution exists that can adjust the security authentication requirements in real-time, based on dynamic factors in the security equation.
@@ -45,23 +45,23 @@ After gaining access, the account administrator should follow the steps below to
 
 1. Set up the systems and their policies.
 
-    ![Setup Name](../../images/flexsecure-setup-name.png)
-	  ![Setup Passwordless Authentication](../../images/flexsecure-setup-passwordless.png)
-	  ![Setup Pin](../../images/flexsecure-setup-pin.png)
+    ![Setup Name](../images/flexsecure-setup-name.png)
+	  ![Setup Passwordless Authentication](../images/flexsecure-setup-passwordless.png)
+	  ![Setup Pin](../images/flexsecure-setup-pin.png)
 
 2. Set up the users.
 
-    ![Setup Users](../../images/flexsecure-setup-users.png)
+    ![Setup Users](../images/flexsecure-setup-users.png)
 
 3. Set up the systems that a user can access.
 
-    ![Setup Access](../../images/flexsecure-setup-access.png)
+    ![Setup Access](../images/flexsecure-setup-access.png)
 
-**To add passwordless authentication**
+**To add Passwordless authentication**
 
 1. Change the login process to accept an email address.
 
-2. Configure the system policy to be passwordless.
+2. Configure the system policy to be Passwordless.
 
 3. Once the email has been entered, make the following API call on the back-end:
 
