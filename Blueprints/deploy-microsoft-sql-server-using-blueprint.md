@@ -22,7 +22,7 @@ CenturyLink Cloud customers can procure and deploy Microsoft SQL Server licensin
 ### Prerequisites
 
 * A CenturyLink Cloud Account
-* ~20 GB Free Storage on C:\
+* ~15 GB Free Storage on C:\
 * Operating System and SQL Server Edition aligns in a supported fashion:
 
 SQL Server Edition|Supported Operating Systems
