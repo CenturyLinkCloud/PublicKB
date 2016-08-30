@@ -103,5 +103,5 @@ systemctl start xrdp.service
 # You may now RDP to Linux from Windows 
 # NOTE: Set mstsc to use 16bit High Color (24bit / 32bit will NOT work)
 ```
-```
+
 ![](../images/backup/rdp/RHEL7x_RDP_SBS_example.png)
