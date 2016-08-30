@@ -1,10 +1,19 @@
 {{{
   "title": "Deploy Microsoft SQL Server using Blueprint",
-  "date": "2-24-2016",
+  "date": "8-30-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
 }}}
+
+### Table of Contents
+
+* [Overview](#overview)
+* [Prerequisites](#prerequisites)
+* [Exceptions](#exceptions)
+* [General Notes](#general-notes)
+* [Installing Microsoft SQL Server using Execute Package](#installing-microsoft-sql-server-using-execute-package)
+* [Installing Microsoft SQL Server using Blueprint Library](#installing-microsoft-sql-server-using-blueprint-library)
 
 ### Overview
 
@@ -13,27 +22,21 @@ CenturyLink Cloud customers can procure and deploy Microsoft SQL Server licensin
 ### Prerequisites
 
 * A CenturyLink Cloud Account
-* Supported Guest Operating Systems are deployed and in a running state:
-    * Windows 2008 R2 Standard 64-bit
-    * Windows 2008 R2 Enterprise 64-bit
-    * Windows 2008 R2 Datacenter 64-bit
-    * Windows 2012 Datacenter 64-bit
-    * Windows 2012 R2 Datacenter 64-bit
-* ~15 GB Free Storage on C:\
-* The Supported SQL Server Editions via blueprint are as follows:
-    * SQL Server 2008 R2 Web Edition
-    * SQL Server 2008 R2 Standard Edition
-    * SQL Server 2008 R2 Enterprise Edition
-    * SQL Server 2012 Web Edition
-    * SQL Server 2012 Standard Edition
-    * SQL Server 2012 Enterprise Edition
-    * SQL Server 2014 Web Edition
-    * SQL Server 2014 Standard Edition
-    * SQL Server 2014 Enterprise Edition
+* ~20 GB Free Storage on C:\
+* Operating System and SQL Server Edition aligns in a supported fashion:
+
+SQL Server Edition|Supported Operating Systems
+------------------|---------------------------
+SQL Server 2008 R2 Web Edition 64-bit<br>SQL Server 2008 R2 Standard Edition 64-bit<br>SQL Server 2008 R2 Enterprise Edition 64-bit|Windows 2008 R2 Standard 64-bit<br>Windows 2008 R2 Enterprise 64-bit<br>Windows 2008 R2 Datacenter 64-bit<br>Windows 2012 Datacenter 64-bit<br>Windows 2012 R2 Datacenter 64-bit
+SQL Server 2012 Web Edition 64-bit<br>SQL Server 2012 Standard Edition 64-bit<br>SQL Server 2012 Enterprise Edition 64-bit|Windows 2008 R2 Standard 64-bit<br>Windows 2008 R2 Enterprise 64-bit<br>Windows 2008 R2 Datacenter 64-bit<br>Windows 2012 Datacenter 64-bit<br>Windows 2012 R2 Datacenter 64-bit
+SQL Server 2014 Web Edition 64-bit<br>SQL Server 2014 Standard Edition 64-bit<br>SQL Server 2014 Enterprise Edition 64-bit|Windows 2008 R2 Standard 64-bit<br>Windows 2008 R2 Enterprise 64-bit<br>Windows 2008 R2 Datacenter 64-bit<br>Windows 2012 Datacenter 64-bit<br>Windows 2012 R2 Datacenter 64-bit
+SQL Server 2016 Web Edition 64-bit<br>SQL Server 2016 Standard Edition 64-bit<br>SQL Server 2016 Enterprise Edition 64-bit|Windows 2012 Datacenter 64-bit<br>Windows 2012 R2 Datacenter 64-bit
+
 * Validate the Hardware and Software Requirements for Installing SQL Server are met:
     * [SQL Server 2008 R2](//msdn.microsoft.com/en-us/library/ms143506%28v=sql.105%29.aspx)
     * [SQL Server 2012](//msdn.microsoft.com/en-us/library/ms143506%28v=sql.110%29.aspx)
     * [SQL Server 2014](//msdn.microsoft.com/en-us/library/ms143506%28v=sql.120%29.aspx)
+    * [SQL Server 2016](//msdn.microsoft.com/en-us/library/ms143506%28v=sql.130%29.aspx)
 
 ### Exceptions
 
@@ -45,22 +48,22 @@ The following are quick tips/notes based on past experiences with customers leve
 
 * It is not possible at the current time to install SQL to a drive other than C:\ via blueprint. Customers can modify the SQL database, tempdb, log locations post install to other volumes using SQL tools
 * The fee's for Microsoft SQL server will be applied automatically to the customers invoice when using the public blueprint. These fee's are available in the [Pricing Catalog](//www.ctl.io/pricing). If you are unsure what these fee's are please contact your account manager.
-* Licensing fee's are adjusted based on number of vCPU allocated to a virtual machine. By using tools like Autoscale, customers billing will be modified as vCPU configurations change.
+* Licensing fee's are adjusted based on number of vCPU allocated to a virtual machine. Customers billing will be modified as vCPU configurations change.
 * Customers can **add features** to an existing SQL instance by running the blueprint multiple times on the same server and only selecting the additional features required.
 * Customers can **add new** SQL instances by running the blueprint multiple times on the same server.
 * The blueprint does not allow for version mobility.  Customers who want to change the edition deployed must create a new server and SQL instance with the version desired and migrate their data.
 
-### Installing Microsoft SQL Server using Group Tasks
+### Installing Microsoft SQL Server using Execute Package
 
-1. Navigate to the Servers Menu in Control.
+1. Navigate to **Orchestration, Scripts** in Control.
 
     ![servers menu in control portal](../images/deploy-microsoft-sql-server-using-blueprint-01.png)
 
-2. Browse to the Group that houses the VM(s) you want to deploy SQL. Select More Actions, Execute Package.
+2. Browse to the Group that houses the VM(s) you want to deploy SQL. Select M**Execute Package**.
 
     ![select execute package](../images/deploy-microsoft-sql-server-using-blueprint-02.png)
 
-3. Search for **SQL** and select the **Install SQL Server on Windows** blueprint.
+3. Search for **Install SQL** and select the **Install SQL Server on Windows** (for version 2008/2012/2014) or **Install SQL Server 2016 on Windows** (for version 2016) script.
 
     ![search for SQL and choose script](../images/deploy-microsoft-sql-server-using-blueprint-03.png)
 
@@ -72,24 +75,24 @@ The following are quick tips/notes based on past experiences with customers leve
 
     ![select installation options](../images/deploy-microsoft-sql-server-using-blueprint-04.png)
 
-### Installing Microsoft SQL Server using Blueprints Library
+### Installing Microsoft SQL Server using Blueprint Library
 
-1. Navigate to the Blueprint Library in Control.
+1. Navigate to **Orchestration, Blueprint Library** in Control.
 
     ![navigate to blueprint library](../images/deploy-microsoft-sql-server-using-blueprint-05.png)
 
-2. Search for **SQL** and select **Install SQL Server on Existing Server.**
+2. Search for **Install SQL** and select **Install SQL Server on Existing Server** (for version 2008/2012/2014) or **Install SQL Server 2016 on Existing Server** (for version 2016).  Select the appropriate Blueprint.
 
-    ![search menu](../images/deploy-microsoft-sql-server-using-blueprint-06.png)![install sql blueprint](../images/deploy-microsoft-sql-server-using-blueprint-07.png)
+    ![search menu with blueprint choices](../images/deploy-microsoft-sql-server-using-blueprint-06.png)
 
 3. Select Deploy blueprint.
 
-    ![deploy blueprint](../images/deploy-microsoft-sql-server-using-blueprint-08.png)
+    ![deploy blueprint](../images/deploy-microsoft-sql-server-using-blueprint-07.png)
 
 4. Input the appropriate parameters based on the SQL server requirements for your application and select the Virtual Machine you wish to execute the install against.
 
-    ![input parameters](../images/deploy-microsoft-sql-server-using-blueprint-09.png)
+    ![input parameters](../images/deploy-microsoft-sql-server-using-blueprint-08.png)
 
 5. Confirm the virtual machine(s), features and select Deploy Blueprint.
 
-    ![confirm inputs and deploy](../images/deploy-microsoft-sql-server-using-blueprint-10.png)
+    ![confirm inputs and deploy](../images/deploy-microsoft-sql-server-using-blueprint-09.png)
