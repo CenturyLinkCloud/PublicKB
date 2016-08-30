@@ -18,12 +18,12 @@
     * Windows Server - Provisions Windows 2012 Server in CLC
   * Microsoft Database Products:
     * Microsoft SQL Server - Provisions Windows 2012 Server with SQL server.  Supports the following SQL editions:
-     * SQL Server 2012 Web Edition
-     * SQL Server 2012 Standard Edition
-     * SQL Server 2012 Enterprise Edition
-     * SQL Server 2014 Web Edition
-     * SQL Server 2014 Standard Edition
-     * SQL Server 2014 Enterprise Edition
+      * SQL Server 2012 Web Edition
+      * SQL Server 2012 Standard Edition
+      * SQL Server 2012 Enterprise Edition
+      * SQL Server 2014 Web Edition
+      * SQL Server 2014 Standard Edition
+      * SQL Server 2014 Enterprise Edition
     * Microsoft SQL Server Evaluation Edition - Provisions Windows 2012 Server with SQL Server evaluation edition.  Customers can elect between version 2012 or 2014.  Evaluation edition provides customers the ability to test Enterprise features.
   * VM Snapshot Product - Create a snapshot of your servers, by Group or by Server. Existing VM snapshot is automatically deleted prior to creating the new one.
     [Snapshot Product](../../images/Runner-VM-Snapshot.png)
