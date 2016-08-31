@@ -19,6 +19,7 @@ CenturyLink Cloud customers
 2. To create a new FTP User, click **Create FTP User**.
 
 3. Enter the alias for the User Alias and click **Create User**. **Note**: Your account alias is prepended to the user name.
+
    ![Create FTP User](../images/clc-ftp-create-user.png)
 
 4. A strong password is automatically assigned to the user. User information also includes the server name to which the user is assigned.
