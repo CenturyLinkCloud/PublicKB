@@ -23,7 +23,7 @@ Zoomdata has integrated their technology with the CenturyLink Cloud platform. Th
 
 Zoomdata is the world’s fastest solution for visual analytics of big data. Zoomdata enables business users to visually consume and interact with all the data in the modern enterprise. While specifically built for modern data sources -- including Cloudera -- Zoomdata also works with relational databases and popular cloud applications. Using patented Data Sharpening and Micro-query technologies, Zoomdata empowers business users to visually consume data in seconds, even across billions of rows of data. Zoomdata Fusion enables interactive analytics across disparate data sources, bridging modern and legacy data architectures, blending real-time streams and historical data, and unifying enterprise data on-premises and in the cloud. Zoomdata brings visual analytics to all business users -- not just data analysts -- via an intuitive user interface that can be used out of the box or embedded in custom applications.
 
-Technology from Zoomdata helps CenturyLink Cloud customers visually consume and interact with data in Managed Cloudera and other CenturyLink Cloud data services by implementing Zoomdata Server - now available as part of the CenturyLink Cloud Blueprint Engine.
+Technology from Zoomdata helps CenturyLink Cloud customers visually consume and interact with CenturyLink Cloud data services by implementing Zoomdata Server - now available as part of the CenturyLink Cloud Blueprint Engine.
 
 ### Audience
 CenturyLink Cloud Users, Big Data Enthusiasts
@@ -34,13 +34,12 @@ After reading this article, the user should feel comfortable getting started usi
 After executing the steps in this Getting Started document, the users will have a functioning Zoomdata Server with which they can start developing big data discovery and self-service visual analytics solutions.
 
 * Getting started with Zoomdata on CenturyLink Cloud
-* How to connect Zoomdata to Managed Cloudera
 
 ### Offer
 Zoomdata has included a free 30 day trial in a specifi Trial Blueprint. If you are deploying the Zoomdata Production Server or Installing the Zoomdata Server on Existing Hardware please complete [this contact form](http://www.zoomdata.com/centurylink) so that a Zoomdata representative can help you setup a license on your Zoomdata Server.
 
 ### Prerequisite
-Zoomdata is designed to deliver visual analytics for big data deployments. Through a library of big data connectors, that include Cloudera, Hortonworks, MongDB, Spark, MySQL, SQLServer and Solr, Zoomdata makes it easy to connect, stream and visualize your big data deployments.
+Zoomdata is designed to deliver visual analytics for big data deployments. Through a library of big data connectors, that include Cloudera, Hortonworks, MongoDB, Spark, MySQL, SQLServer and Solr, Zoomdata makes it easy to connect, stream and visualize your big data deployments.
 
 Zoomdata runs best on CentOS v6.5, with a server that has a minimum of 4 ours, and 16GB or RAM.
 
@@ -48,45 +47,41 @@ Zoomdata runs best on CentOS v6.5, with a server that has a minimum of 4 ours, a
 Follow these step by step instructions to deploy Zoomdata.
 
 1. Open the Blueprint Library.
-   * Access your Blueprint Library by selecting the “Blueprints Library” under the Blueprints heading from the green drop down menu.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
 
 2. Search for the Blueprint.
-   * To search for the Zoomdata Blueprint, type “Zoomdata” under “Refine Results” in the right panel and click the “Go” button.
-   ![Zoomdata Image](../../images/ecosystem-zoomdata-1.png)
+   * To search for the Zoomdata Blueprint, type “Zoomdata” under “Refine Results” in the right panel and click the `Go` button.
 
 3. Choose the Blueprint.
    * There are three Zoomdata Blueprints are available for installations.
-   * Trial Server:  This minimum configuration is perfect for testing out Zoomdata for a 30 day trial.
+   * Trial Server: This minimum configuration is perfect for testing out Zoomdata for a 30 day trial.
    * Production Server:  This configuration has been optimized for a production environment. Please contact [sales@zoomdata.com](mailto:sales@zoomdata.com) to purchase a license.
    * Install Zoomdata Server on Linux: This configuration can be applied to any hardware configuration. Please contact [sales@zoomdata.com](mailto:sales@zoomdata.com) to purchase a license.
-   ![Zoomdata Image](../../images/ecosystem-zoomdata-2.png)
 
 4. Choose and Deploy the Blueprint.
    * Click the `deploy blueprint` button to begin configuring your installation.
 
 5. Configure the Blueprint.
-   * On the first page, “Customize Blueprint”, ensure the following options are configured.
+   Ensure the following options are configured:
    * Key fields to complete are the password and the Primary DNS field (select ZDHost).
    * The Auto Patching and Install MongoDB sections should be left with their default settings.
    * The Install Zoomdata section requires Company Name, First Name, Last Name, Email Address and Phone Number. The Spark JVM Memory setting is optional and used by Zoomdata for SparkIT functionality and DataFrames. Leave this field blank if your server has less than 10 GB of RAM. Specify in GB. For example: XXg where XX is the amount of RAM to allocate. Leave at least 3 GB to your OS.
-   ![Zoomdata Image](../../images/ecosystem-zoomdata-3.png)
 
 6. Review and Confirm the Blueprint.
    * You will come to a confirmation view of what your Blueprint looks like.
    * Verify your configuration details.
-   * Then click the green “deploy Blueprint” button at the bottom.
+   * Click the `deploy blueprint` button.
 
 7. Monitor the Activity Queue.
-   * After clicking Deploy Blueprint, the job will be submitted into a queue and you will be taken to a monitoring page where you can see the progress of each step the Blueprint goes through.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * The job will be submitted into a queue and you will be taken to a monitoring page where you can see the progress of each step the Blueprint goes through.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
 
-6. Jump In!
+8. Jump In!
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete.
    * Please do not use the application until you have received this email notification.
 
 ### Access and use Zoomdata
 Follow these steps to access and use the Zoomdata software.
-
 1. Access the VM.
    * Please log in to your server using the VPN access.
    * [Click here for VPN configuration instructions](../../Network/how-to-configure-client-vpn.md).

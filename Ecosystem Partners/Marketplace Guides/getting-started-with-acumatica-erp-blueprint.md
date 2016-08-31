@@ -35,7 +35,7 @@ Acumatica Knwoledge Base Article - [Getting Started with Acumatica ERP Blueprint
 Follow these step by step instructions to get started with a single-server Acumatica ERP deployment.
 
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Acumatica” in the keyword search on the right side of the page.
    * Click the “Install Acumatica ERP” blueprint.
 
@@ -77,7 +77,7 @@ Follow these step by step instructions to get started with a single-server Acuma
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
 
 7. Get Busy!
    * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
@@ -87,7 +87,6 @@ Follow these step by step instructions to get started with a single-server Acuma
 
 ### Pricing
 The costs listed above in Steps 1 and 2 are for the CenturyLink Cloud infrastructure only. There are no Acumatica license costs or additional fees bundled in.
-
 
 ### Frequently Asked Questions
 ### Where do I obtain my Acumatica License?

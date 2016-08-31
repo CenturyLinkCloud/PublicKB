@@ -38,7 +38,7 @@ AbanteCart is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
 1. Locate the AbanteCart Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “AbanteCart” in the keyword search on the right side of the page.
    * Locate the 'Install AbanteCart on Linux' Blueprint.
 
@@ -74,7 +74,7 @@ AbanteCart is available as a Blueprint for deployment on a new server.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Deploy AbanteCart to an existing server (alternate option)
@@ -115,7 +115,7 @@ AbanteCart is available as a Script Package for deployment on an existing server
 
 5. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access your AbanteCart server

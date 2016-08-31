@@ -43,6 +43,12 @@ If you are a customer that happens to use our sub-account feature, there is a ne
 
 If you belong to a large organization with a long list of accounts, you can filter the list of accounts by account name or alias using the filter input box to quickly change account context. The full account hierarchy for each sub-account is displayed, so it is easier to understand what sub-account belongs to whom.
 
+### Help and Support
+
+To access help and support options, a menu is available at the upper right next to the username of the person currently signed in. Clicking the question mark icon will reveal your support options.
+
+![Screenshot of the support options in the new Control Portal navigation bar](../images/menu-support.png)
+
 ### Custom Colors and Logos
 
 The most commonly customized color option (header bar color) has been maintained, and we have removed the rarely used, or confusing options. The logo, favicon, and mobile icons have remained unchanged. If you wish to update the color scheme of your account after seeing the navigation update, view your [organization color settings page](https://control.ctl.io/Organization/Settings/theme).

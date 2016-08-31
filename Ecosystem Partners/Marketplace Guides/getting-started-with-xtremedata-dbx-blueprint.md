@@ -27,10 +27,6 @@ XtremeData has integrated their dbX technology with the CenturyLink Cloud platfo
 
 XtremeData delivers high performance, full-featured ANSI SQL database engine designed for performance at all scales, up to 100s of terabytes. ANSI SQL. Simple to deploy, simple to administer, simple to scale up. Any data schema any data location.
 
-Learn more from our discussion with Ravi Chandran, XtremeData's CTO:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1LO2TIOvJGw" frameborder="0" allowfullscreen style="margin-left:1em;"></iframe>
-
 ### Audience
 CenturyLink Cloud Users
 
@@ -40,22 +36,17 @@ Single button deploy of a new cluster including a master host, a standby master 
 #### Steps
 1. Locate the Blueprint in the Blueprint Library.
    * Determine whether you will be building a test cluster with small nodes or a production cluster whose nodes that have increased CPU and RAM available.
-
-  <img src="../../images/xtremedata/dbx_blueprint_tile.png" style="margin-left:1em;border:0;max-width:250px;">
-
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for `dbX Cluster` in the keyword search on the right side of the page.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * Search for `dbX Cluster` in the keyword search on the right side of the page.
 
 2. Click the `deploy blueprint` button.
 
 3. Set Required parameters.
-   <img src="../../images/xtremedata/dbx_deploy_parameters.png" style="margin-left:1em;max-width:450px;">
-
    * **Head Server** - Select the first option `DBXHD`
    * **Cluster Name** - set unique identifier for all hosts in this cluster
    * **Notification Email** - Email address to receive build notification and dbX access information
    * **SMTP server info** (optional) Send messages through specific mail server
    * **Debug** (optional) Use under XtremeData support guidance
-
 
 4. Set Optional Parameters
    * Password/Confirm Password (This is the root password for the server. Keep this in a secure place).
@@ -73,10 +64,9 @@ Single button deploy of a new cluster including a master host, a standby master 
 7. Deployment Complete.
    * Once the Blueprint has finished execution you will receive an email confirming the newly deployed assets.
    * If you do not receive an email like the one shown below your cluster may have had a deployment error - review the *Blueprint Build Log* for error messages.
-   <img src="../../images/xtremedata/dbx_deploy_success_email.png" style="border:0;">
 
 8. Access Web xdAdmin Console.
-   * Access the xdAdmin web console via https on port 2400. Authenticate using your root user and associated credentials.
+   * Access the xdAdmin web console via https on port `2400`. Authenticate using your root user and associated credentials.
    <img src="../../images/xtremedata/web_gui_screenshot.png" style="border:0;">
 
 9. Enable public access (optional).

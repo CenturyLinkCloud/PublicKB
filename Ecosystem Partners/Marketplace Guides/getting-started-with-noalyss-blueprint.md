@@ -11,11 +11,9 @@
 ### Technology Profile
 
 ### Description
-
 Through the CenturyLink Blueprint integration, Noalyss provides a click-through solution to install and configure Noalyss on the Linux platform. Formerly known as PhpCompta, NOALYSS is an ERP system that includes a double-entry accounting system adapted to Belgian and French accounting practices. Features include account monitoring, a shared calendar, stock management, tax returns, forecasting, electronic transmission of documents and more. Please note that the Noalyss Installer is in English, but the application itself is only in French.
 
 For more information, please visit http://www.phpcompta.org.
-
 
 ### Audience
 CenturyLink Cloud Users
@@ -23,12 +21,10 @@ CenturyLink Cloud Users
 ### Impact
 After reading this article, the user should feel comfortable getting started using the Bitnami Blueprint technology on CenturyLink Cloud.
 
-
 ### Prerequisite
 * Access to the CenturyLink Cloud platform as an authorized user.
 
 ### Postrequisite
-
 * If you want to access your application over the internet, please perform the following tasks after you receive an email notifying you that the Blueprint completed successfully:
 
 * If you need to connect to your server via the Internet, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
@@ -41,7 +37,7 @@ Noalyss is available as a Blueprint for deployment on a new server.
 
 #### Steps to Deploy Blueprint
 1. Locate the Bitnami Noalyss Stack Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Noalyss” in the keyword search on the right side of the page.
    * Locate the 'Install Bitnami Noalyss on Linux' Blueprint.
 
@@ -61,27 +57,24 @@ Noalyss is available as a Blueprint for deployment on a new server.
    * Your real name, e.g., User Name
    * Password
 
-
 4. Review and Confirm the Blueprint.
    * Click `next: step 2`.
    * Verify your configuration details.
 
 5. Deploy the Blueprint.
-   * Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
+   * Once verified, click the `deploy blueprint` button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
-
 
 ### Deploy Noalyss to an existing server (alternate option)
 
 Bitnami Noalyss Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
 #### Steps
-
 1. Deploy or Identify an Existing Server.
    * Identify the server targeted for Noalyss installation.
    * The Operating system must be supported by the Script Package.
@@ -109,13 +102,12 @@ Bitnami Noalyss Stack is available as a Script Package for deployment on an exis
 
 5. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 
 ### Access your Noalyss server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
-
 1. Check email to obtain Server Name and IP Address Login information.
 2. Log in to the server and start having fun!
 

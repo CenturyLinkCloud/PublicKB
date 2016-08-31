@@ -22,7 +22,7 @@ After reading this article, the user should understand how to install TimeKeeper
 
 ### Prerequisite
 * Access to the CenturyLink Cloud platform as an authorized user.
-* TimeKeeper license file available by emailing support@fsmlabs.com
+* TimeKeeper license file available by emailing support@fsmlabs.com.
 
 ### Postrequisite
 After the installation users should take the following steps
@@ -49,7 +49,7 @@ These are the instructions to be executed for existing server installation. Time
 
 3. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * YTo monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Pricing

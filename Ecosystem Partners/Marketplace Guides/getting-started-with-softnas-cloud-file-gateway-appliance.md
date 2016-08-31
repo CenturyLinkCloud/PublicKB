@@ -52,33 +52,30 @@ CenturyLink Cloud Users, Storage Administrators, IT Managers
 
 ### Prerequisites
 * Access to the CenturyLink Cloud platform as an authorized user
-* Control Portal account with password authentication (two factor authentication not yet supported)
+* Control Portal account with password authentication (two-factor authentication not yet supported)
+
 
 ### Steps to Deploy a New SoftNAS Appliance
-1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
-   * Search for "SoftNAS Appliance" in the keyword search on the right side of the page.
-   <img src="../../images/softnas/blueprint_tile.png" style="border:0;max-width:250px;">
 
-2. Click the `deploy blueprint` button.
+1. **Locate the Appliance in the Runner Catalog**
 
-3. Set Required parameters.
-  * **Control User Password** - The password associated with your login
-  <img src="../../images/bpimager/deploy_parameters.png">
+ Starting from the CenturyLink Control Panel, navigate to Orchestration > Runner. Search for "SoftNAS" in the keyword search on the right side of the page.
 
-4. Set Optional Parameters.
-   * Password/Confirm Password (This is the root password for the server. Keep this in a secure place).
-   * Set DNS to “Manually Specify” and use “8.8.8.8” (or any other public DNS server of your choice).
-   * Optionally set the server name prefix.
-   * The default values are fine for every other option.
+2. **Click the SoftNAS tile.**
 
-5. Review and Confirm the Blueprint.
+3. **Set Deployment Parameters.**
 
-6. Deploy the Blueprint.
-   * Once verified, click the `deploy blueprint` button.
-   * You will see the deployment details stating the Blueprint is queued for execution.
+  * Specify the Datacenter, Network and Server Group you'd like to use.
 
-7. Deployment Complete
+  * Optionally customize the Name Prefix for the server.
+
+  * Provide your login credentials for Account Alias, Username and Password
+
+4. **Click Run**
+
+  Once verified, click on the **run** button. You will see the deployment log scrolling through.
+
+5. Deployment Complete
    * Once the Blueprint has finished execution you will receive a number of emails.
    * The first will indicate the server has been deployed and the second will come a few minutes later once the appliance has been fully activated.
    * If you do not receive an email like the one shown below you may have had a deployment error - review the *Blueprint Build Log* to for error messages.
