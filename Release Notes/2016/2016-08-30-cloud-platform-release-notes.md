@@ -12,7 +12,7 @@
 * __Runner__
 
   * New Server Operation Products - Runner now gives you the ability to control server operations like Delete, Reboot, Power On, and Shutdown.
-    [Server Operations](../../images/Runner-New-Server-Operations.png)
+    ![Server Operations](../../images/Runner-New-Server-Operations.png)
   * Status Email Notifications - Allows customers to be emailed notifications of status updates.
   * Windows Server Products:
     * Windows Server - Provisions Windows 2012 Server in CLC
@@ -26,7 +26,7 @@
       * SQL Server 2014 Enterprise Edition
     * Microsoft SQL Server Evaluation Edition - Provisions Windows 2012 Server with SQL Server evaluation edition.  Customers can elect between version 2012 or 2014.  Evaluation edition provides customers the ability to test Enterprise features.
   * VM Snapshot Product - Create a snapshot of your servers, by Group or by Server. Existing VM snapshot is automatically deleted prior to creating the new one.
-    [Snapshot Product](../../images/Runner-VM-Snapshot.png)
+    ![Snapshot Product](../../images/Runner-VM-Snapshot.png)
   * Scheduled Products - Users now have the ability to create and manage schedules for products.
 
 
