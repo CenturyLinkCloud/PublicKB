@@ -32,9 +32,9 @@
 
 ### Enhancements (1)
 
-* __Simple Backup Service - New Version of the SBS agent will be deployed starting Sep 6, 2016__
+* __Simple Backup Service - New Version of the SBS agent will be deployed starting Aug 31st, 2016__
 
-  Starting on September 6th, Simple Backup Service will begin upgrading customer servers to a new version of the SBS Agent. There will be no interruption in service to Simple Backup during this time, and no customer action is required as part of the upgrade. The new agent will offer better service reliability and improved performance of backup and restore operations.
+  Starting on Aug 31st, Simple Backup Service will begin upgrading customer servers to a new version of the SBS Agent. There will be no interruption in service to Simple Backup during this time, and no customer action is required as part of the upgrade. The new agent will offer better service reliability and improved performance of backup and restore operations.
 
   Agents will automatically upgrade themselves on a rolling schedule, given that the server is powered on, agent is running and the server is connected to the internet. Additionally, the Agent will download a new manifest file to its application directory that will be used for normal backup record keeping and maintenance.
 
