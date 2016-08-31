@@ -1,5 +1,5 @@
 {{{
-  "title": "Installing docflock email adapter on Windows”,
+  "title": "Installing docflock email adapter on Windows Blueprint”,
   "date": “August 2, 2016”,
   "author": “John Baldwin“,
   "attachments": [],
