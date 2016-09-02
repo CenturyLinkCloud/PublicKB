@@ -10,7 +10,7 @@
 
 ### Product Overview
 
-[Network Exchange](https://www.ctl.io/network-exchange/) provides a secure, high speed, redundant, private network to connect your CenturyLink Cloud environment to other environments.  It is the preferred alternative to using the Internet or IPSec for customers needing to connect their CLC environments to other, non-CLC environments.  Network Exchange is ideal for your hybrid environment and applications as well as storage and backups.  Network Exchange includes ease of setup and management via the CLC Portal, coupled with CLC network automation, and pre-deployed network infrastructure.  All with usage based, pay as you go billing.
+[Network Exchange](https://www.ctl.io/network-exchange/) provides a secure, high speed, redundant, private network to connect your CenturyLink Cloud environment to other environments.  It is the preferred alternative to using the Internet or IPSec for customers needing to connect their CLC environments to other, non-CLC environments. Network Exchange is ideal for your hybrid environment and applications as well as storage and backups. Network Exchange includes ease of setup and management via the CLC Portal, coupled with CLC network automation, and pre-deployed network infrastructure. All with usage based, pay as you go billing.
 
 **Q: How is Network Exchange secure?**
 
@@ -68,7 +68,7 @@
 
 **A:** This is not currently provided, but can be obtained via a request to Support, [help@ctl.io](mailto:help@ctl.io).
 
-**Q: Can I us Network Exchange to create a connection to my other locations/environments that are connected to my IQ network?**
+**Q: Can I use Network Exchange to create a connection to my other locations/environments that are connected to my IQ network?**
 
 **A:** Currently, only connectivity between CenturyLink Cloud servers and Dedicated Cloud Compute in the same data center is available via Network Exchange and the HAN. Connecting to locations/servers on your IQ network via Network Exchange is not currently available. Please consult your account manager for options for connecting other locations/environments.
 
