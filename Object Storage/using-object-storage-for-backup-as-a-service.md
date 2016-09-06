@@ -1,9 +1,9 @@
 {{{
-  »title»: »Using Object Storage for Backup as a Service»,
-  »date»: »08-14-2016»,
-  »author»: »<a href='https://twitter.com/EvgenyRudinsky'>@EvgenyRudinsky<a/>»,
-  »attachments»: [],
-  »contentIsHTML»: false
+  "title": "Using Object Storage for Backup as a Service",
+  "date": "08-14-2016",
+  "author": <a href='https://twitter.com/EvgenyRudinsky'>@EvgenyRudinsky<a/>",
+  "attachments": [],
+  "contentIsHTML": false
 }}}
 
 ### Overview
@@ -145,7 +145,7 @@ CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storag
 
   ![Cloudberry Ultimate - Image Based](../images/cloudberrylab/cloudberry-ultimate-image-based-backup.jpg)
 
-2. It starts backup wizard, give it a name, select »Image Based Backup».
+2. It starts backup wizard, give it a name, select «Image Based Backup».
 
   ![Cloudberry Ultimate - System state backup](../images/cloudberrylab/cloudberrylab-ultimate-system-state.jpg)
 
