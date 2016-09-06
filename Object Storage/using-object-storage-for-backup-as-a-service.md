@@ -204,5 +204,5 @@ In case of product issues:
 
   [1d5c9166]: http://kb.cloudberrylab.com "Knowledge base Cloudberry lab"
 
-  [2154d91f]: support@cloudberrylab.com "support@cloudberrylab.com"
-  [84cfd457]: sa-team@cloudberrylab.com "sa-team@cloudberrylab.com"
+  [2154d91f]: support@cloudberrylab.com "mailto:support@cloudberrylab.com"
+  [84cfd457]: sa-team@cloudberrylab.com "mailto:sa-team@cloudberrylab.com"
