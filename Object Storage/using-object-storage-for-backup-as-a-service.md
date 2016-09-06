@@ -1,7 +1,7 @@
 {{{
   "title": "Using Object Storage for Backup as a Service",
   "date": "08-14-2016",
-  "author": <a href='https://twitter.com/EvgenyRudinsky'>@EvgenyRudinsky<a/>",
+  "author": "<a href='https://twitter.com/EvgenyRudinsky'>@EvgenyRudinsky<a/>",
   "attachments": [],
   "contentIsHTML": false
 }}}
