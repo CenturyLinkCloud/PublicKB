@@ -199,10 +199,7 @@ CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storag
 In case of product issues:
 
 1. Check [knowledge base][1d5c9166];
-2. Support email - [support@cloudberrylab.com][2154d91f];
-3. Solutions Architects email - [sa-team@cloudberrylab.com][84cfd457].
+2. Support email - [support@cloudberrylab.com](mailto:support@cloudberrylab.com);
+3. Solutions Architect group email - [sa-team@cloudberrylab.com](mailto:sa-team@cloudberrylab.com).
 
   [1d5c9166]: http://kb.cloudberrylab.com "Knowledge base Cloudberry lab"
-
-  [2154d91f]: support@cloudberrylab.com "mailto:support@cloudberrylab.com"
-  [84cfd457]: sa-team@cloudberrylab.com "mailto:sa-team@cloudberrylab.com"
