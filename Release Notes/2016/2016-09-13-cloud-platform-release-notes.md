@@ -6,18 +6,6 @@
 "contentIsHTML": false
 }}}
 
-### New Features ()
-
-* __Product__
-
-  * Bullet1 - Text.
-
-
-
-  * Bullet2:
-    * Sub-bullet1 - Text.
-
-
 ### Enhancements (1)
 
 * __Ubuntu 16.04 Support__
@@ -31,3 +19,14 @@
 * __Relational DB now available in Runner!__
 
   Users can now incorporate Relational DB into a Runner job to deploy a MySQL-compatible Relational DB instance to IL1, VA1, NY1, UC1, GB3, SG1 or CA3.  Visit https://runner.ctl.io to view Relational DB in the marketplace and https://www.ctl.io/relational-database/ for additional product information. [Standard pricing applies](https://www.ctl.io/pricing/).
+
+  ![Relational DB](../../images/RelationalDBinRunner.png)
+
+### Bug Fixes (2)
+
+  * __Control Portal - Minor User Interface improvements__
+
+  We resolved the following bugs on our Control Portal user interface:
+
+    - Sometimes, when a user tried to create a new server but hit an account resource limit, the error notification message they received didn't clearly indicate why they couldn't create a server.
+    - The user flow for creating new Anti Affinity policies from the new server page was broken.
