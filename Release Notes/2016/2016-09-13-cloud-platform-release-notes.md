@@ -27,7 +27,5 @@
 
   * __Control Portal - Minor User Interface improvements__
 
-  We resolved the following bugs on our Control Portal user interface:
-
-    - Sometimes, when a user tried to create a new server but hit an account resource limit, the error notification message they received didn't clearly indicate why they couldn't create a server.
+    - Occasionally, when a user tried to create a new server but hit an account resource limit, the error notification message they received didn't clearly indicate why they couldn't create a server.
     - The user flow for creating new Anti Affinity policies from the new server page was broken.
