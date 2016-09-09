@@ -13,7 +13,7 @@
 
   CenturyLink Cloud now supports Ubuntu 16 as an OS template for servers. Customers can now create and deploy 64-bit Ubuntu 16 virtual instances to all data centers. Check out [what’s new in version 16](http://www.ubuntu.com/server) and read the [Ubuntu 16.04 Release Notes](https://wiki.ubuntu.com/XenialXerus/ReleaseNotes/16.04) for more information.
 
-  ![Ubuntu16.04](../../images/Ubuntu16_04_dropdown.png)
+  ![Ubuntu 16.04](../../images/09-13-16Ubuntu16_04.png)
 
 ### Announcements (1)
 
