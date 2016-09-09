@@ -19,7 +19,7 @@ Our team of engineers has deep operational expertise to quickly and efficiently 
 ### Supported Conference Call Medium
 CenturyLink Cloud **only** supports troubleshooting and conference calls over phone bridges.
 
-Please note: We request at least 1 business day of notice for scheduling troubleshooting conference calls in order to guarantee an engineering resource can attend. If a more immediate troubleshooting session is required, we are able to staff at best effort and will confirm availability.
+Please note: We request at least 1 business day of notice for scheduling troubleshooting conference calls in order to guarantee an engineer can attend. If a more immediate troubleshooting session is required, we are able to staff at best effort and will confirm availability.
 
 ### Supported Areas of Troubleshooting
 CenturyLink Cloud service task engineering supports troubleshooting of the infrastructure environment, as well as offering advice on networking and system configurations.  We do not support Operating System or Application level troubleshooting.
