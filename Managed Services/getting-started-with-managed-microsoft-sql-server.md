@@ -104,7 +104,7 @@ The Microsoft SQL Server (MS-SQL) database is a comprehensive and integrated dat
 
 **Q: How is the CenturyLink Cloud for Managed Microsoft SQL priced?**
 
-A: CenturyLink Cloud Managed MS SQL is priced by the instance, billed hourly.
+A: Please see [Pricing Catalog](//www.ctl.io/pricing/#/va1) for more information. 
 
 **Q: How do I request MSSQL Mirroring or MSSQL AlwaysOn Configuration?**
 
@@ -120,7 +120,7 @@ A: Please see [Managed SQL with BYOL](#managed-sql-with-byol) for details.
 
 **Q: How are licensing costs incurred?**
 
-A: SQL licenses costs are calculated separate from the managed SQL hourly costs based on the edition and number of CPUs on the virtual machine.
+A: SQL licenses costs are calculated separate from the managed SQL hourly costs based on the edition and number of CPUs on the virtual machine. Please see [Pricing Catalog](//www.ctl.io/pricing/#/va1) for more information. 
 
 **Q: Can un-managed Microsoft SQL Instances be converted to Managed (or vice versa)?**
 
