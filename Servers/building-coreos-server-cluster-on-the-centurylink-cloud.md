@@ -129,6 +129,8 @@ Detailed Steps
   </li>
   <li><em>You will not be able to "add public ip" using the "add public ip" option on the server details page.&nbsp;</em>
   </li>
+   <li><em>CoreOS is a "read only" OS, so normal methods of expanding filesystems will not be successful. To increase space on this OS, you will need to add space to the 0:0 drive via control, and then reboot the machine. Adding space to the 0:1 partition, or adding additional drives is not possible at this time</em>
+   </li>
 </ul>
 <h3>Deploy Additional CoreOS Servers into the Cluster</h3>
 <p>You can repeat steps 1-9 from above, following the same procedure you did to create your first CoreOS server, and the blueprint will add it to the cluster that was created at the time that the first CoreOS server was provisioned.</p>

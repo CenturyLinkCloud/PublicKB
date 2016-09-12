@@ -45,7 +45,7 @@ Below, each action available in the Control Portal is explained and demonstrated
 2. Click the **create bucket** button.
 
 3. Enter a **bucket name** value.
-   * The name has to start and end with lowercase letters or numbers, and can only contain lowercase letters, numbers, dashes, and dots. This value must be unique globally. If the name of the bucket is not unique, you receive an alert asking you to choose a new bucket name.
+   * The name has to start and end with lowercase letters or numbers, and can only contain lowercase letters, numbers, and dashes. This value must be unique globally. If the name of the bucket is not unique, you receive an alert asking you to choose a new bucket name.
    * Select an **owner** from from the drop-down arrow. The owner is an important decision as the API retrieves lists of buckets by the owner name.
    * Select an Object Storage region from the drop-down arrow.
    ![using-object-storage-from-the-control-portal-07](../images/using-object-storage-from-the-control-portal-07.png)  

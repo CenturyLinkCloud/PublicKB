@@ -1,6 +1,6 @@
 {{{
   "title": "Partner Resources",
-  "date": "05-06-2015",
+  "date": "08-17-2016",
   "author": "",
   "attachments": [],
   "contentIsHTML": false
@@ -14,7 +14,7 @@
 ## Definitions and Contact Information
 
 ### Definition
-**Sales Support** - is simply defined as transactional support needed to close a CenturyLink Cloud deal. CenturyLink provides reasonable assistance and access to technical resources to ensure deal closure. Sales Support resources includes the information, capabilities and team available for Partners to close CenturyLink Cloud deals.
+**Sales Support** - is simply defined as transactional support needed to close a CenturyLink Cloud deal. CenturyLink provides reasonable assistance and access to technical resources to ensure deal closure. Sales Support resources include the information, capabilities and team available for Partners to close CenturyLink Cloud deals.
 
 The Partner Resource Center (PRC) is your central point of contact for Sales Support. You can reach them at:
 * cloudpartnerhelp@centurylink.com
@@ -95,7 +95,7 @@ The Network Operations Center (NOC) is available to support your infrastructure 
 * Incident Response
 * Service Tasks Requests
 
-Contact the Network Operations Center at noc@ctl.io.
+Contact the Network Operations Center at help@ctl.io.
 
 ## Billing Inquiries and Contact
 Types of Inquiries:

@@ -1,6 +1,6 @@
 {{{
   "title": "Support Escalation Process for Partners",
-  "date": "04-29-2015",
+  "date": "08-16-2016",
   "author": "",
   "attachments": [],
   "contentIsHTML": false
@@ -47,7 +47,7 @@ For example, create xyz@yourcompany.com. This is an important step as the alias 
 #### Create ZenDesk account (using the Email created for Support)
 Our support ticketing system, ZenDesk is where you can track all the updates to your support tickets. After your email address for support please follow the following steps to set up the ZenDesk account.
 
-1. Log into https://t3n.zendesk.com.
+1. Log into https://support.ctl.io.
 
 2. Click **Sign up** on the upper right hand side of the page and fill the form shown below. Please enter the email address you created for the support team.
    **Note**: CenturyLink recognizes only the email address associated with ZenDesk. Any support request from another email address is not converted into a ticket. Please use the same email address for escalation.
@@ -96,9 +96,13 @@ The following table describes list of operational support activities and request
 | Troubleshooting point-to-point VPN issues | CenturyLink will investigate any network latency and/or service interruptions within the CenturyLink Cloud Platform and with our ISP vendors. Any upstream troubleshooting request is a separate billable support engagement. |
 | DDOS investigation | Commercially reasonable efforts are employed to mitigate, investigate, and resolve DDOS attacks and/or other security intrusions that affect the shared platform. |
 
-### Ticket Prioritization Matrix
+### Ticket Prioritization Matrix and Escalations
 Tickets are worked according to priority in the order in which they are received. The priority designation indicates the level, extent, and impact on the partner.
 * [Learn More About Ticket Prioritization](../Support/ticket-prioritization-matrix.md)
+
+If after reviewing the Ticket Prioritization Matrix you need to escalate a ticket, the following article details the escalation process.
+
+* [Learn More About Ticket Escalations](../Support/how-do-i-escalate-a-ticket.md)
 
 ### Service Tasks
 Our team of network engineers has deep operational expertise to quickly and efficiently perform common platform activities. Just give us the details on your request and, within one business day, we'll reply with an estimate, along with a projected completion date for the task. Service task estimation and duties are performed during business hours, Monday through Friday, 9 am - 5 pm Pacific Standard Time.
@@ -113,9 +117,11 @@ Our Support team is on call 24x7 with Engineers and Leads on shifts (i.e., rotat
 * **Executive Overhead**: CenturyLink Cloud Executive Staff
 
 ### Security Issues
-Security Incidents follow a standard Incident Process. Incident Response team coordinate with legal, marketing, and executive team.
+Security Incidents follow a standard Incident Process. Incident Response teams coordinate with legal, marketing, and executive team.
 * If an incident is security related, security SMEs are engaged in the same manner as other SMEs.
 * If an incident is determined to be a security breach of the CenturyLink Cloud environment, post-incident response and communication will be led by the Security.
+
+* [Learn More About What to Expect form a Security Issue](../Support/what-can-you-expect-from-tier-3-on-a-security-issue.md)
 
 ### Compromised Customer Machines/Abuse
 These steps reside inside the “Restoration Process” within the overall Incident Management process.
@@ -128,10 +134,7 @@ These steps reside inside the “Restoration Process” within the overall Incid
 
 | Type | Description | Email |
 |------|-------------|-------|
-| Management Escalation | On-call Management Team | escalation@t3n.zendesk.com |
-| Security SME Engagement | On-call Security SME | security@t3n.zendesk.com |
-| Security Management Escalation (Warning – Do Not Abuse) | Security Management Engagement | sec-esc@t3n.zendesk.com + Escalation Ticket # |
-| Executive Escalation (Warning – Do Not Abuse) | Executive Engagement – Enterprise Support Level Only | exec-esc@t3n.zendesk.com + Management Escalation Ticket # |
+| Management Escalation | On-call Management Team | escalation@ctl.io |
 
 ### How to get access to CenturyLink Cloud Status updates?
 You can get updates through CenturyLink Cloud Status in two ways:
