@@ -1,6 +1,6 @@
 {{{
   "title": "Linux Template Releases",
-  "date": "08-04-2016",
+  "date": "09-02-2016",
   "author": "Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
@@ -26,3 +26,4 @@ RedHat Enterprise Linux 6|Release 6.8 (Santiago)
 RedHat Enterprise Linux 7|Release 7.2 (Maipo)
 Ubuntu 12|12.04.5 LTS
 Ubuntu 14|14.04.4 LTS
+Ubuntu 16|16.04.1 LTS
