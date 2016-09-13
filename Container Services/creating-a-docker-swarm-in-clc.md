@@ -14,7 +14,7 @@ A Swarm is a collection (cluster) of nodes running Docker Engine following a dec
 
 By using our plugin for Docker Machine, customers can create a Docker swarm on CenturyLink Cloud by running a small number of Docker Machine commands to create the nodes. We can then run the Docker CLI commands required to create the swarm by setting the machine context using Docker Machine.
 
-## Before We Start
+### Before We Start
 
 The following requirements are needed to create a Docker swarm in CenturyLink Cloud.
 
@@ -25,7 +25,7 @@ The following requirements are needed to create a Docker swarm in CenturyLink Cl
 If you don’t have a CenturyLink Cloud account yet, no problem. Head over to their website and [sign up for a free trial](https://www.ctl.io/free-trial/).
 
 
-## Swarm Creation
+### Swarm Creation
 
 Creating a docker swarm is made of a number of different steps. The steps have been divded into the following sections:
 
@@ -165,7 +165,7 @@ You should see output similar to the following:
 ![docker-machine ls](../images/docker_swarm_mode/node-ls.png)
 This shows various information including the status of each node and which manager has been elected the leader.
 
-## Whats Next? 
+### Whats Next? 
 Now you have a working Docker swarm running in CLC you are ready to start managing and deploying services to the swarm. Its recommended that you follow the swarm mode tutorial from this starting point: https://docs.docker.com/engine/swarm/manage-nodes/
 
 
