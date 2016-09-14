@@ -27,7 +27,7 @@ s3fs is a FUSE filesystem that allows you to mount a S3 compatible bucket as a l
 
 -   Identify a CentOS Linux platform that you would like to have s3fs installed
 
--   Understanding the functions of Object Storage (beyond the scope of this article), to learn more, please see this [KB](../Object Storage/load-balancing-dedicated-vs-shared.md)
+-   Understanding the functions of Object Storage (beyond the scope of this article), to learn more, please see this [KB](../Object Storage/introducing-object-storage.md)
 
 -   Ability to install packages on the server
 
@@ -35,7 +35,7 @@ s3fs is a FUSE filesystem that allows you to mount a S3 compatible bucket as a l
 
 ### Use Case Scenarios
 
-As Object Storage is access using internet, it can be used in many scenarios.  While mounting Object Storage as a Linux file system make consuming Object Storage much easier, keep in mind that it is only accessed through internet, hence the speed and latency is not the same as local storage.  With this in mind, using Object Storage in a file system can be a good alternative to expensive local storage.  Use cases can be:
+As Object Storage is access using Internet, it can be used in many scenarios.  While mounting Object Storage as a Linux file system make consuming Object Storage much easier, keep in mind that it is only accessed through Internet, hence the speed and latency is not the same as local storage.  With this in mind, using Object Storage in a file system can be a good alternative to expensive local storage.  Use cases can be:
 
 -   Data archiving
 
@@ -70,7 +70,7 @@ s3fs deployment is done with the following commands on the CentOS 7 server:
     sudo make install
 ```
 -   Once install, access to the Object Storage screen in the Control Portal
-![s3fs-objectstorage](../Images/s3fs/s3fs-objectstorage.png)
+![s3fs-objectstorage](../images/s3fs/s3fs-objectstorage.png)
 
 - Located the user and bucket for this deployment and record both the "Access Key ID" and "Secret Access Key"
 
