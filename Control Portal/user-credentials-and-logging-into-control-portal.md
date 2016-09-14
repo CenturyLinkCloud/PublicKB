@@ -13,17 +13,17 @@ There are at least two different types of user credentials that you need to main
 CenturyLink Cloud customers
 
 ### Control Portal Credentials
-Control Portal credentials are maintained in your Profile, which can be accessed by clicking your user name drop-down located in the upper right corner of the Dashboard and selecting **Your Profile**.
-![Control Portal Header](../images/dashboard-header.png)
+1. Control Portal credentials are maintained in your Profile, which can be accessed by clicking your user name drop-down located in the upper right corner of the Dashboard and selecting **Your Profile**.
+   ![Control Portal Header](../images/dashboard-header.png)
 
-You are then directed to your Profile information for the Control Portal.
-![Profile Page](../images/profile-info-page.png)
+2. You are then directed to your Profile information for the Control Portal.
+   ![Profile Page](../images/profile-info-page.png)
 
-Clicking the password line enables you to change your password.
-![Customize Password](../images/customize-password.png)
+3. Clicking the password line enables you to change your password.
+   ![Customize Password](../images/customize-password.png)
 
-This is the password you use to login to the Control Portal.
-![Control Portal Login](../images/control-portal-login.png)
+4. This is the password you use to login to the Control Portal.
+   ![Control Portal Login](../images/control-portal-login.png)
 
 **Note:** Your account may have SAML enabled allowing for Single Sign-On capabilities. For more information, refer to this Knowledge Base article about enabling SAML.
 * [Control Portal](https://www.ctl.io/knowledge-base/control-portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal/)
