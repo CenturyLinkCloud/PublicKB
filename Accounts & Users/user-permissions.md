@@ -1,6 +1,6 @@
 {{{
   "title": "User Permissions",
-  "date": "11-6-2014",
+  "date": "9-16-2016",
   "author": "Troy Schneringer",
   "attachments": [],
   "contentIsHTML": false
@@ -12,10 +12,10 @@ The permissions settings page includes a list of roles and their respective desc
 
 ### Steps
 
-To edit permissions go to Control Portal &gt; Account &gt; Permissions.
+To view or edit permissions go to Control Portal &gt; Settings &gt; Permissions.
 
-1. Select the user for whom you would like to edit permissions
-2. Set roles
+1. Select the user for whom you would like to view or edit permissions
+2. If you want to make a change, set roles
 
   ![User Permissions](../images/user-permissions.png)
 
