@@ -70,7 +70,7 @@ s3fs deployment is done with the following commands on the CentOS 7 server:
     sudo make install
 ```
 -   Once install, access to the Object Storage screen in the Control Portal
-![s3fs-objectstorage](../images/s3fs/s3fs-objectstorage.png)
+![s3fs-objectstorage](../Images/s3fs/s3fs-objectstorage.png)
 
 - Located the user and bucket for this deployment and record both the "Access Key ID" and "Secret Access Key"
 
