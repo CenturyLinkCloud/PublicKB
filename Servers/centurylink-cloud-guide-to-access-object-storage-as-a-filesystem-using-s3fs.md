@@ -103,7 +103,7 @@ In preparation. There are several factors need to be considered:
 
 
 ### Troubleshooting
-- Debug and run s3fs in foreground can help during Troubleshooting (-d x 2 to direct messages to STDOUT):
+- Debug and run s3fs in foreground can help during troubleshooting (-d x 2 to direct messages to STDOUT):
 
     ```
     s3fs mybucket:/ /path_to_mountpoint -o passwd_file=/path_to_password_file/password -o url=https://canada.os.ctl.io/ -d -d -f -o f2 -o curldbg
