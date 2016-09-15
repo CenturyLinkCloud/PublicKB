@@ -27,7 +27,7 @@ s3fs is a FUSE filesystem that allows you to mount a S3 compatible bucket as a l
 
 -   Identify a CentOS Linux platform that you would like to have s3fs installed
 
--   Understanding the functions of Object Storage (beyond the scope of this article), to learn more, please see this [KB](../Object Storage/introducing-object-storage.md)
+-   Understanding the functions of Object Storage (beyond the scope of this article), to learn more, please see this [knowledge article](../Object Storage/introducing-object-storage.md)
 
 -   Ability to install packages on the server
 
@@ -77,7 +77,7 @@ In preparation. There are several factors need to be considered:
 
 3.  Located the user and bucket for this deployment and record both the "Access Key ID" and "Secret Access Key"
 
-4.  Create a password file with the "Secret Access Key" and make proper permission on the file, for example"
+4.  Create a password file with the "Access Key ID" and "Secret Access Key" and make proper permission on the file, for example:
     ```
     echo access_key_id:secret_access_key > /path_to_password_file/password_s3fs
     chmod 666 /path_to_password_file/password_s3fs
@@ -85,16 +85,20 @@ In preparation. There are several factors need to be considered:
 5.  Once the above steps are completed, create a directory for the mount point of the new filesystem
 
 ### Testing
-- Test the installation with the command below (URL can be either useast.os.ctl.io or canada.os.ctl.io depending on the region of the bucket, for the current list of Object Storage end points, please see [this](../Object Storage/object-storage-regions-and-service-points.md)):
+- Test the installation with the command below (URL can be either useast.os.ctl.io or canada.os.ctl.io depending on the region of the bucket, for the current list of Object Storage end points, please see [this knowledge article](../Object Storage/object-storage-regions-and-service-points.md)):
 
     ```
     s3fs mybucket:/ /path_to_mountpoint -o passwd_file=/path_to_password_file/password_s3fs -o url=https://canada.os.ctl.io/
     ```
 
-- If the command ran successfully, then a /etc/fstab entry can be inserted to mount the Object Storage bucket permanently
+- If the command ran successfully, then a /etc/fstab entry can be inserted to mount the Object Storage bucket permanently (debug level set at info, it can be removed to minimized logging):
 
     ```
     s3fs#mybucket:/ /path_to_mountpoint fuse _netdev,dbglevel=info,allow_other,nodnscache,retries=5,url=https://canada.os.ctl.io/,passwd_file=/path_to_password_file/password_s3fs
+    ```
+    or
+    ```
+    mybucket:/ /path_to_mountpoint fuse.s3fs _netdev,dbglevel=info,allow_other,nodnscache,retries=5,url=https://canada.os.ctl.io/,passwd_file=/path_to_password_file/password_s3fs
     ```
 
 
