@@ -60,6 +60,7 @@ In preparation. There are several factors need to be considered:
 ### Deployment
 
 1.  s3fs deployment is done with the following commands on the CentOS 7 server:
+
     ```
     sudo yum install automake fuse fuse-devel gcc-c++ git libcurl-devel libxml2-devel make openssl-devel
     git clone https://github.com/s3fs-fuse/s3fs-fuse.git
@@ -69,25 +70,29 @@ In preparation. There are several factors need to be considered:
     make
     sudo make install
     ```
-2.   Once install, access to the Object Storage screen in the Control Portal
+
+2.  Once install, access to the Object Storage screen in the Control Portal
 
     ![s3fs-objectstorage](../images/s3fs/s3fs-objectstorage.png)
 
-3.   Located the user and bucket for this deployment and record both the "Access Key ID" and "Secret Access Key"
+3.  Located the user and bucket for this deployment and record both the "Access Key ID" and "Secret Access Key"
 
-4.   Create a password file with the "Secret Access Key" and make proper permission on the file, for example"
+4.  Create a password file with the "Secret Access Key" and make proper permission on the file, for example"
     ```
     echo access_key_id:secret_access_key > /path_to_password_file/password_s3fs
     chmod 666 /path_to_password_file/password_s3fs
     ```
-5.   Once the above steps are completed, create a directory for the mount point of the new filesystem
+5.  Once the above steps are completed, create a directory for the mount point of the new filesystem
 
 ### Testing
-- Test the installation with the command below (URL can be either useast.os.ctl.io or canada.os.ctl.io depending on the region of the bucket, for the current list of Object Storage end points, please see [this](../ObjectStorage/object-storage-regions-and-service-points.md)):
+- Test the installation with the command below (URL can be either useast.os.ctl.io or canada.os.ctl.io depending on the region of the bucket, for the current list of Object Storage end points, please see [this](../Object Storage/object-storage-regions-and-service-points.md)):
+
     ```
     s3fs mybucket:/ /path_to_mountpoint -o passwd_file=/path/to/passwd -o url=https://canada.os.ctl.io/
     ```
+
 - If the command ran successfully, then a /etc/fstab entry can be inserted to mount the Object Storage bucket permanently
+
     ```
     s3fs#mybucket:/ /path_to_mountpoint fuse _netdev,dbglevel=info,allow_other,nodnscache,retries=5,url=https://canada.os.ctl.io/,passwd_file=/root/password
     ```
@@ -95,6 +100,7 @@ In preparation. There are several factors need to be considered:
 
 ### Troubleshooting
 - Debug and run s3fs in foreground can help during Troubleshooting (-d x 2 to direct messages to STDOUT):
+
     ```
     s3fs mybucket:/ /path_to_mountpoint -o passwd_file=/path_to_password_file/password -o url=https://canada.os.ctl.io/ -d -d -f -o f2 -o curldbg
     ```
