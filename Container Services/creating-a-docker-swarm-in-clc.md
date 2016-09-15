@@ -1,5 +1,5 @@
 {{{
-  "title": "Creating a Docker Swarm in CLC",
+  "title": "Creating a Docker Swarm on CenturyLink Cloud",
   "date": "07-09-2016",
   "author": "Richard Case",
   "attachments": [],
@@ -10,11 +10,11 @@
 
 The release of Docker Engine v1.12 introduced swarm mode for creating and managing a cluster of Docker Engines which is referred to as a swarm. This replaces Docker Swarm which was previously a separate application.
 
-A Swarm is a collection (cluster) of nodes running Docker Engine following a decentralized design where services can be deployed. Swarm mode includes scaling, service discovery, desired state and many other features. For an overview of Swarm mode see: https://docs.docker.com/engine/swarm/
+A Swarm is a collection (cluster) of nodes running Docker Engine following a decentralized design where services can be deployed. Swarm mode includes scaling, service discovery, desired state, and many other features. For an overview of Swarm mode see: https://docs.docker.com/engine/swarm/
 
-By using our plugin for Docker Machine, customers can create a Docker swarm on CenturyLink Cloud by running a small number of Docker Machine commands to create the nodes. We can then run the Docker CLI commands required to create the swarm by setting the machine context using Docker Machine.
+By using our plugin for Docker Machine, users can create a Docker swarm on CenturyLink Cloud by running a small number of Docker Machine commands to create the nodes. Thus allowing for the ability to run the Docker CLI commands required to create the swarm by setting the machine context using Docker Machine.
 
-### Before We Start
+### Prerequisites
 
 The following requirements are needed to create a Docker swarm in CenturyLink Cloud.
 
@@ -22,16 +22,16 @@ The following requirements are needed to create a Docker swarm in CenturyLink Cl
 - [CenturyLink Cloud Docker Machine Plugin](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-docker-machine/) 
 - A CenturyLink Cloud account
 
-If you don’t have a CenturyLink Cloud account yet, no problem. Head over to their website and [sign up for a free trial](https://www.ctl.io/free-trial/).
+If you don’t have a CenturyLink Cloud account yet, no problem. [Sign up for a free trial](https://www.ctl.io/free-trial/).
 
 
 ### Swarm Creation
 
-Creating a docker swarm is made of a number of different steps. The steps have been divded into the following sections:
+Creating a Docker swarm is made of a number of different steps. The steps have been divided into the following sections:
 
 * [Environment Setup](#environment-setup)
 * [Node Creation](#node-creation)
-* [Create the swarm](#create-the-swarm)
+* [Create the Swarm](#create-the-swarm)
 * [Add Manager Nodes](#add-manager-nodes)
 * [Add Worker Nodes](#add-worker-nodes)
 * [Validate the Cluster](#validate-the-cluster)
@@ -44,30 +44,30 @@ Creating a docker swarm is made of a number of different steps. The steps have b
  **Node Type**|**Advice**
   -------------|-------------
   Worker|For production environments more than 1 node is recommended.
-  Manager|For production environments more than 1 node is recommended. Additionally, due to the use of the Raft concensus algorithm in the manager nodes its recommended that there are a odd number of manager nodes. 
+  Manager|For production environments more than 1 node is recommended. Additionally, due to the use of the Raft consensus algorithm in the manager nodes it's recommended that there are an odd number of manager nodes. 
 
-NOTE: By default the manager nodes will be used to run tasks in addition to the worker nodes. The manager nodes are used to submit tasks and they performance the management and orchestration function of the swarm 
+**NOTE:** By default, the manager nodes will be used to run tasks in addition to the worker nodes. The manager nodes are used to submit tasks and they performance the management and orchestration function of the swarm 
 
-NOTE: More Information on Raft can be found here http://thesecretlivesofdata.com/raft/
+**NOTE:** More information on Raft can be found here http://thesecretlivesofdata.com/raft/
 
-2) Open a command prompt and set the CLC_USERNAME, CLC_PASSWORD and CLC_ALIAS environment variables for your CLC account. For example on Linux & OSX:
+2) Open a command prompt and set the CLC_USERNAME, CLC_PASSWORD and CLC_ALIAS environment variables for your CLC account. For example, on Linux & OSX:
 ```
 export CLC_USERNAME='<username>'
 export CLC_PASSWORD='<password>'
 export CLC_ALIAS='<alias>'
 ```
 
-3) Connect to CLC using VPN.
+3) Connect to CLC using VPN. To learn more about ways to connect such as persistent VPN or direct connection, please review [Network Access Options for Connecting to the CenturyLink Cloud Platform](../Network/network-access-options-for-connecting-to-centurylink-clouds-platform.md).
 
-### Node creation
+### Node Creation
 
 1) Create the manager nodes by running the following command once for each manager to create:
 ```
 docker-machine create -d clc --clc-server-group "DockerSwarm" --clc-server-location "GB3" MANAGER1
 ```
-NOTE: Docker machine will use *MANAGER1* as the identifier for this manager node. Therefore, when creating multiple manager nodes make sure this name is unique.
+**NOTE:** Docker machine will use *MANAGER1* as the identifier for this manager node. Therefore, when creating multiple manager nodes make sure this name is unique.
 
-NOTE: The *clc-server-group* and *clc-server-location* command line options are not required and if they are omitted defaults will be used. For a full list of the supported command line options run this command:
+**NOTE:** The *clc-server-group* and *clc-server-location* command line options are not required and if they are omitted defaults will be used. For a full list of the supported command line options run this command:
 ```
 docker-machine create -d clc
 ```
@@ -85,7 +85,7 @@ docker-machine ls
 The output will be similar to the following:
 ![docker-machine ls](../images/docker_swarm_mode/docker-machine-ls.png)
 
-### Create the swarm
+### Create the Swarm
 
 1) Set the Docker environment variables for the first of the manager nodes by first running:
 ```
@@ -104,9 +104,9 @@ The output of the command will contain the command that will be used later to jo
 
 ![docker-machine ls](../images/docker_swarm_mode/docker-swarm-init.png)
 
-NOTE: There are a number of command line options that can be specified when creating the swarm. See: https://docs.docker.com/engine/reference/commandline/swarm_init/
+**NOTE:** There are a number of command line options that can be specified when creating the swarm. See: https://docs.docker.com/engine/reference/commandline/swarm_init/
 
-### Add manager nodes
+### Add Manager Nodes
 
 1) Whilst the Docker environment variables are still set to the first manager node run the following command:
 ```
@@ -134,7 +134,7 @@ The output of the command should indicate that the node joined the swarm as a ma
 
 4) Repeat steps 2) & 3) for each of the remaining manager nodes that need to join the swarm.
 
-### Add worker nodes
+### Add Worker Nodes
 
 1) Set the Docker environment variables for the worker node to join to the existing swarm by first running:
 ```
@@ -155,7 +155,7 @@ The output of the command should indicate that the node joined the swarm as a wo
 
 3) Repeat steps 1) & 2) for each of the remaining worker nodes that need to join the swarm.
 
-### Validate the cluster
+### Validate the Cluster
 
 1) Run the following command to list all the nodes in a swarm with their status:
 ```
@@ -165,8 +165,8 @@ You should see output similar to the following:
 ![docker-machine ls](../images/docker_swarm_mode/node-ls.png)
 This shows various information including the status of each node and which manager has been elected the leader.
 
-### Whats Next? 
-Now you have a working Docker swarm running in CLC you are ready to start managing and deploying services to the swarm. Its recommended that you follow the swarm mode tutorial from this starting point: https://docs.docker.com/engine/swarm/manage-nodes/
+### What's Next? 
+Now you have a working Docker swarm running on the CenturyLink Cloud you are ready to start managing and deploying services to the swarm. It's recommended that you follow the swarm mode tutorial from this starting point: https://docs.docker.com/engine/swarm/manage-nodes/
 
 
 
