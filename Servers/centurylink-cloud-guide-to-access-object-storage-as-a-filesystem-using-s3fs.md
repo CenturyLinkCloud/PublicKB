@@ -88,13 +88,13 @@ In preparation. There are several factors need to be considered:
 - Test the installation with the command below (URL can be either useast.os.ctl.io or canada.os.ctl.io depending on the region of the bucket, for the current list of Object Storage end points, please see [this](../Object Storage/object-storage-regions-and-service-points.md)):
 
     ```
-    s3fs mybucket:/ /path_to_mountpoint -o passwd_file=/path/to/passwd -o url=https://canada.os.ctl.io/
+    s3fs mybucket:/ /path_to_mountpoint -o passwd_file=/path_to_password_file/password_s3fs -o url=https://canada.os.ctl.io/
     ```
 
 - If the command ran successfully, then a /etc/fstab entry can be inserted to mount the Object Storage bucket permanently
 
     ```
-    s3fs#mybucket:/ /path_to_mountpoint fuse _netdev,dbglevel=info,allow_other,nodnscache,retries=5,url=https://canada.os.ctl.io/,passwd_file=/root/password
+    s3fs#mybucket:/ /path_to_mountpoint fuse _netdev,dbglevel=info,allow_other,nodnscache,retries=5,url=https://canada.os.ctl.io/,passwd_file=/path_to_password_file/password_s3fs
     ```
 
 
