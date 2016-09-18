@@ -1,5 +1,5 @@
 {{{
-  "title": "CenturyLink Cloud Guide to Access Object Storage as a filesystem using s3fs",
+  "title": "CenturyLink Cloud Guide to Access Object Storage as a Filesystem Using s3fs",
   "date": "09-14-2016",
   "author": "Gavin Lai",
   "attachments": [],
@@ -35,7 +35,7 @@ s3fs is a FUSE filesystem that allows you to mount a S3 compatible bucket as a l
 
 ### Use Case Scenarios
 
-As Object Storage is access using Internet, it can be used in many scenarios.  While mounting Object Storage as a Linux file system make consuming Object Storage much easier, keep in mind that it is only accessed through Internet, hence the speed and latency is not the same as local storage.  With this in mind, using Object Storage in a file system can be a good alternative to expensive local storage.  Use cases can be:
+As Object Storage is accessed using the Internet, it can be used in many scenarios.  While mounting Object Storage as a Linux file system makes consuming Object Storage much easier, keep in mind that it is only accessed via the Internet, hence the speed and latency is not the same as local storage.  With this in mind, using Object Storage in a file system can be a good alternative to expensive local storage.  Use cases can be:
 
 -   Data archiving
 
@@ -52,7 +52,7 @@ If encryption is a requirement, please see [s3QL](//github.com/s3ql/s3ql), files
 
 In preparation. There are several factors need to be considered:
 
--   Deployment of s3fs will install git, gcc along with make and fuse (for full list of packages, please refer to [s3fs GitHub site](//github.com/s3fs-fuse/s3fs-fuse))
+-   Deployment of s3fs will install Git, gcc along with Make and Fuse (for full list of packages, please refer to [s3fs GitHub site](//github.com/s3fs-fuse/s3fs-fuse))
 
 -   Mountpoint for the Object Storage filesystem
 
@@ -71,11 +71,11 @@ In preparation. There are several factors need to be considered:
     sudo make install
     ```
 
-2.  Once install, access to the Object Storage screen in the Control Portal
+2.  Once installed, access to the Object Storage screen in the Control Portal
 
     ![s3fs-objectstorage](../images/s3fs/s3fs-objectstorage.png)
 
-3.  Located the user and bucket for this deployment and record both the "Access Key ID" and "Secret Access Key"
+3.  Locate the user and bucket for this deployment and record both the "Access Key ID" and "Secret Access Key"
 
 4.  Create a password file with the "Access Key ID" and "Secret Access Key" and make proper permission on the file, for example:
     ```
@@ -103,7 +103,7 @@ In preparation. There are several factors need to be considered:
 
 
 ### Troubleshooting
-- Debug and run s3fs in foreground can help during troubleshooting (-d x 2 to direct messages to STDOUT):
+- Debug and run s3fs in the foreground can help during troubleshooting (-d x 2 to direct messages to STDOUT):
 
     ```
     s3fs mybucket:/ /path_to_mountpoint -o passwd_file=/path_to_password_file/password -o url=https://canada.os.ctl.io/ -d -d -f -o f2 -o curldbg
@@ -111,5 +111,5 @@ In preparation. There are several factors need to be considered:
 
 
 ### Support
-* For issues related to deploying s3fs, accessing the deployed software, please visit the [s3fs Website](//github.com/s3fs-fuse/s3fs-fuse)
-* For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying any Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](//t3n.zendesk.com/tickets/new).
+* For issues related to deploying s3fs or accessing the deployed software, please visit the [s3fs Website](//github.com/s3fs-fuse/s3fs-fuse)
+* For issues related to cloud infrastructure (VM's, network, etc), or if you experience a problem deploying any Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](//t3n.zendesk.com/tickets/new).
