@@ -1,6 +1,6 @@
 {{{
   "title": "Load Balancing Comparison Matrix",
-  "date": "8-18-2015",
+  "date": "9-20-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -33,8 +33,8 @@ The links below provide additional details on the capabilities and features of t
 
 * [Deploy a Dedicated Citrix VPX Appliance using Service Task](../Service Tasks/deploy-a-dedicated-citrix-vpx-appliance.md)
 * [Shared vs Dedicated Network Load Balancing Architecture Considerations](../Network/load-balancing-dedicated-vs-shared.md)
-* [Netscaler VPX Overview](//www.citrix.com/products/netscaler-application-delivery-controller/features/platforms/vpx.html)
-* [Netscaler Editions](//www.citrix.com/products/netscaler-application-delivery-controller/features/editions.html)
+* [Netscaler VPX Overview](//www.citrix.com/products/netscaler-adc/platforms.html#virtual)
+* [Netscaler Editions](//www.citrix.com/products/netscaler-adc/platforms.html#editions)
 * [Netscaler Load Balancing Algorithms](//docs.citrix.com/en-us/netscaler/10-5/ns-tmg-wrapper-10-con/ns-lb-wrapper-con-10/ns-lb-customizing-lbalgorithms-wrapper-con.html)
 * [How To: Configure Shared Load Balancing Services via Self-Service](../Network/creating-a-self-service-load-balancing-configuration.md)
 * [Dedicated Load Balancing Management](../Network/dedicated-load-balancer-basic-management.md)
