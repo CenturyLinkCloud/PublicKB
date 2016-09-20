@@ -1,7 +1,7 @@
 {{{
   "title": "Blueprints Best Practices",
-  "date": "1-19-2015",
-  "author": "Keith Resar",
+  "date": "2-17-2016",
+  "author": "<a href='https://twitter.com/KeithResar'>@KeithResar</a>",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -52,10 +52,13 @@ If your deployment workflow involves multiple servers, such as deploying a new c
 If you only need to define a "master" server - see the [Master and Slave Node Blueprint Example Package](https://github.com/CenturyLinkCloud/Ecosystem/tree/master/Blueprints/Reference%20Templates/Master%20and%20Slave%20Node%20Blueprint%20Example%20Package%20-%20Linux) on Github.  In this pattern the "master" is selected by the deploying user at deploy time from a drop down menu. Make careful use of the "Global" variable type as referenced in [Blueprints Script and Software Package Management](blueprints-script-and-software-package-management.md).
 
 ### Adding to Existing Environment
-If you are adding capacity to an existing environment the most common pattern is a drop down where you can select an existing asset which the new server is able register with.
+If you are adding capacity to an existing environment the most common pattern is a drop down form where you can select an existing asset which the new server is able register with.
 
 ### Caching Package Parameters
 The parameter types and other metadata is embedded within the Blueprint definition.  Changes to parameter names, types, etc. in an included package will not be reflected until the blueprint is edited and republished.
+
+### General Blueprint Structure
+Blueprints allow tasks, such as executing scripts or modifying system virtual hardware, to be executed either as part of a server build or after the server-build completes (Add Server vs. Tasks & Order pages).  Best practices are to execute tasks within the Add Server page wherever possible.
 
 ### Advanced Needs
 If your state needs are more advanced, such as requiring key exchange, automated registering of new assets, self-discovery, etc. we recommend investigating the [bpbroker](https://github.com/CenturyLinkCloud/bpbroker) toolset which was specifically created to support this workflow.

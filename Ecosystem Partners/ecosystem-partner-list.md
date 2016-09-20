@@ -51,8 +51,9 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Alert Logic Web Security Manager](../Ecosystem Partners/Marketplace Guides/getting-started-with-alert-logic-web-security-manager-partner-template.md)   	| Template    | Web security manager appliance    |
 | [Alert Logic Threat Manager](../Ecosystem Partners/Marketplace Guides/getting-started-with-alert-logic-threat-manager-partner-template.md)   	| Template    | Threat manager appliance    |
 | [Cavirin Automated Risk Analysis Platform](../Ecosystem Partners/Marketplace Guides/getting-started-with-cavirin-automated-risk-analysis-platform-partner-template.md)   	| Template    | Governance and compliance appliance    |
-| [FlexSecure](../Ecosystem Partners/Marketplace Guides/getting-started-with-flexsecure.md)   	| Blueprint    | Context-based Security-as-a-Service platform    |
+| [FlexSecure](../Security/getting-started-with-flexsecure.md)   	| Blueprint    | Context-based Security-as-a-Service platform    |
 | [OSSEC](../Ecosystem Partners/Marketplace Guides/getting-started-with-ossec-blueprints.md)   	| Template    | HIDS    |
+| [SMS Passcode](../Ecosystem Partners/Marketplace Guides/getting-started-with-smspasscode-template.md)   	| Template   | Multifactor Authentication    |
 | [Symas](../Ecosystem Partners/Marketplace Guides/getting-started-with-symas-open-ldap-silver.md)   	| Blueprint   | LDAP    |
 | [Vormetric](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-dsm.md)   	| Template    | Data encryption and key management    |
 | [Vormetric](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-encryption-agent-deployment-blueprints.md)   	| Blueprint    | Data encryption and key management    |
@@ -89,7 +90,6 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Jenkins](../Ecosystem Partners/Marketplace Guides/getting-started-with-jenkins-blueprint.md)   	| Blueprint    | Continuous integration system    |
 | [Microsoft Team Foundation Server](..//Ecosystem Partners/Marketplace Guides/getting-started-with-microsoft-tfs.md)    | Blueprint     | Development team collaboration   |
 | [Phabricator](../Ecosystem Partners/Marketplace Guides/getting-started-with-phabricator-blueprint.md)   	| Blueprint    | Code Collaboration Suite    |
-| [Pivotal Cloud Foundry](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-cloud-foundry.md)   	| Blueprint    | Cloud Foundry PaaS    |
 | [Pootle](../Ecosystem Partners/Marketplace Guides/getting-started-with-pootle-blueprint.md)   	| Blueprint    | Translation Management   |
 | [Railo](../Ecosystem Partners/Marketplace Guides/getting-started-with-railo-blueprint.md)   	| Blueprint    | CFML   |
 | [ReviewBoard](../Ecosystem Partners/Marketplace Guides/getting-started-with-reviewboard-blueprint.md)   	| Blueprint    | Code Collaboration Suite   |
@@ -103,7 +103,6 @@ Quickly deploy and successfully use software and technology from any of our cert
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
-| [CloudEra](../Managed Services/getting-started-with-cloudera-on-centurylink-cloud.md)   	| Blueprint (Managed)   | Industry-leading Hadoop implementation    |
 | [Clusterpoint](../Ecosystem Partners/Marketplace Guides/getting-started-with-clusterpoint-blueprint.md)   	| Blueprint    | Scale out Database    |
 | [ClustrixDB](../Ecosystem Partners/Marketplace Guides/getting-started-with-clustrixDB-on-centof6.md)   	| Blueprint    | Scale out Database    |
 | [Coffing Data Warehouseing](../Ecosystem Partners/Marketplace Guides/getting-started-with-coffing-data-warehousing-nexus-chameleon-blueprint.md) 	| Blueprint  | Data Warehouse  |
@@ -116,9 +115,6 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [MongoDB](../Ecosystem Partners/Marketplace Guides/getting-started-with-mongodb-blueprint.md)   	| Blueprint    | High performance document oriented NoSQL database    |
 | [MySQL](../Managed Services/getting-started-with-managed-mysql.md)   	| Blueprint (Managed)   | Broadly adopted open source relational database management system   |
 | [Orientdb](../Ecosystem Partners/Marketplace Guides/getting-started-with-orientdb.md)   	| Blueprint   | Scale out NoSQL Database   |
-| [Pivotal GemFire](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-gemfire-blueprint.md)   	| Blueprint    | In-memory distributed database for high scale custom applications    |
-| [Pivotal Greenplum](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-greenplum-blueprint.md)   	| Blueprint    | Enterprise-grade analytical data warehouse    |
-| [Pivotal HD + HAWQ](../Ecosystem Partners/Marketplace Guides/getting-started-with-pivotal-hd-hawq.md)   	| Blueprint    | Enterprise-grade Hadoop cluster    |
 | [Qubida Analytics](../Ecosystem Partners/Marketplace Guides/getting-started-with-qubida-blueprint.md)   	| Blueprint    | Big Data BI    |
 | [XtremeData dbX](../Ecosystem Partners/Marketplace Guides/getting-started-with-xtremedata-dbx-blueprint.md)  | Blueprint  | On-Demand Big Data Analytics with real-time ingest |
 | [ZoomData](../Ecosystem Partners/Marketplace Guides/getting-started-with-zoomdata-blueprint.md)  | Blueprint  | Visual analytics of big data |
@@ -161,13 +157,14 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [CiviCRM](../Ecosystem Partners/Marketplace Guides/getting-started-with-civicrm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
 | [Conxio](../Ecosystem Partners/Marketplace Guides/getting-started-with-conxio-everywhere.md)   	| Blueprint    | Secure Communications Platform |
 | [Diaspora](../Ecosystem Partners/Marketplace Guides/getting-started-with-diaspora-blueprint.md)   	| Blueprint    | Private social networking    |
+| [Doflock](../Ecosystem Partners/Marketplace Guides/getting-started-with-docflock-mail-adapter.md)   	| Blueprint    | Secure email management    |
 | [Fat Free CRM](../Ecosystem Partners/Marketplace Guides/getting-started-with-fat-free-crm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
 | [Hyper accurate time services from FSM Labs](../Ecosystem Partners/Marketplace Guides/getting-started-with-timekeeper.md)    | Blueprint     | Hyper accurate time services |
 | [Horde Groupware Webmail](../Ecosystem Partners/Marketplace Guides/getting-started-with-horde-blueprint.md)   	| Blueprint    | Mail, Calendar, Address Book, Tasks, and Notes Communication Suite    |
 | [Live Helper Chat](../Ecosystem Partners/Marketplace Guides/getting-started-with-livehelperchat-blueprint.md)   	| Blueprint    | Live chat    |
 | [Microsoft Active Directory ](../Managed Services/getting-started-with-managed-active-directory.md)  	| Blueprint (Managed)   | Directory Service     |
 | [NOALYSS](../Ecosystem Partners/Marketplace Guides/getting-started-with-noalyss-blueprint.md)  	| Blueprint   | Dobule Entry Accounting (ERP)	|
-| [Netwrix](../Ecosystem Partners/Marketplace Guides/getting-started-with-Netwrix-Auditor.md)  	| Blueprint   | Auditing of network components	|
+| [Netwrix](../Ecosystem Partners/Marketplace Guides/getting-started-with-netwrix-auditor-80.md)  	| Blueprint   | Auditing of network components	|
 | [OpenCart](../Ecosystem Partners/Marketplace Guides/getting-started-with-opencart-blueprint.md)  	| Blueprint   | eCommerce platform     |
 | [OpenProject](../Ecosystem Partners/Marketplace Guides/getting-started-with-openproject-blueprint.md)  	| Blueprint   | Project Management     |
 | [OXID](../Ecosystem Partners/Marketplace Guides/getting-started-with-oxid-blueprint.md)  	| Blueprint   | eCommerce platform     |

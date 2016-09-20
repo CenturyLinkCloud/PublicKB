@@ -1,6 +1,6 @@
 {{{
   "title": "Pricing, Billing and Invoicing for Partners",
-  "date": "2-11-2015",
+  "date": "08-17-2016",
   "author": "",
   "attachments": [
     {
@@ -12,47 +12,37 @@
   "contentIsHTML": false
 }}}
 
-### Overview
+## Overview
 * How pricing and discount data are displayed in the portal.
 * Invoicing customers and special pricing scenarios.
 * Getting billing data and the schedule for receiving billing reports.
 
-### The Basics of Pricing and Discounts
+## The Basics of Pricing and Discounts
 
-#### Cloud Portal Pricing
+### Cloud Portal Pricing
+Prices in the Control Portal are displayed at list price unless you, the Partner, decides to change the pricing using the Set Your Own Price feature. The customer only sees what is displayed and never sees the partner’s discounted price.
 
-Prices in the Cloud Portal are displayed at list price. The customer never sees the partner’s discounted price.
+### CenturyLink Invoice to Partner
+When you receive an invoice from CenturyLink, your contracted discount will be applied.
 
-#### CenturyLink Invoice to Partner
+## Special Pricing
 
-When you receive the invoice from CenturyLink, your contracted discount will be applied.
+If you want to charge your customer a higher rate than what is in the portal or offer them a discount, you can do this in two ways.
+This can be done manually at the time of invoice.  You’d simply communicate the difference to your customer.  In this method, your pricing is unknown to CenturyLink and is NOT reflected in the CenturyLink Cloud Portal.  
 
-### Invoicing Customers and Special Pricing
+## Set Your Own Price Feature
+The Set Your Own Price Feature provides a way Partners can set custom prices for their sub accounts.  The following link provides a detailed overview of the Set Your Own Price feature.
 
-#### Partner Invoice to Customer
+Please review the [Set Your Own Price Feature](../General/setting-prices-for-sub-accounts.md)
 
-As a partner, you are responsible for invoicing your customers. The subsequent slide describes how to get detailed billing data for your customers.
+## Getting Billing Data and Reports
 
-#### Special Pricing Scenarios
+### Method 1: Billing Report
+**How It Works:** - CenturyLink will email a report with the previous month’s billing data in .CSV format to an email alias of your choice.  Use this data to invoice your customers.
+**Timing:** - The report is sent by the 2nd business day of the month.
+**About The Report:** - The report is broken out by account and prices displayed are at list price.
+**Sample Billing Report:** - See the attachment at the bottom of this article.
 
-**Customer Discount**
-
-You can extend a discount at the time of invoice. Communicate to your customer that prices displayed in the CenturyLink Cloud Portal are at list price; their invoice will reflect their discount.
-
-**Rates Higher Than List**
-
-If you want to charge a price higher than list price (because you are offering additional services), a manual process is used to reflect this in the portal.  Email noc@ctl.io to make this request.
-
-### Getting Billing Data and Reports
-
-**Method 1: Billing Report**
-
-**How It Works:** CenturyLink will email a report with the previous month’s billing data in .CSV format to an email alias of your choice.  Use this data to invoice your customers.
-**Timing:** Report is sent by the 2nd business day of the month.
-**About The Report:** The report is broken out by account and prices displayed are at list price.
-**Sample Billing Report:** See the attachment at the bottom of this article.
-
-**Method 2: API Integration (Optional)**
-
-**How It Works:** You can integrate with CenturyLink Cloud’s APIs to pull billing data automatically.
-**Resources:** Find out more about these capabilities at the following link: https://www.ctl.io/api-docs/v1/#billing
+### Method 2: API Integration (Optional)
+**How It Works:** - You can integrate with CenturyLink Cloud’s APIs to pull billing data automatically.
+**Resources:** - Find out more about these capabilities at the following link: https://www.ctl.io/api-docs/v1/#billing

@@ -8,11 +8,14 @@
 
 <p>Apache Tomcat is an open source software implementation of the Java Servlet and JavaServer Pages technologies. As a collaboration of best-of-breed developers from around the world, Apache Tomcat has rapidly become one of the leading Web servers. Here's
   how to create a managed Tomcat environment in CenturyLink Cloud.</p>
-<p><strong>1. Click on the “CLC Managed Apache Tomcat” Blueprint. <strong>NOTE: Before you can deploy Managed Tomcat, you must create a Managed Red Hat server.</strong></strong>
+
+**NOTE**: Before you can deploy Managed Tomcat, you must create a Managed Red Hat server.
+
+<p><strong>1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**. Click on the “CLC Managed Apache Tomcat” Blueprint.
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/0mnoFcduDqW2Q8csh3CG1CafP/?name=BP.jpg" alt="BP.jpg" />
 </p>
-<p><strong>2. Click on the "Deploy Blueprint" button.</strong>
+<p><strong>2. Click on the *deploy blueprint** button.</strong>
 </p>
 <p>&nbsp;<img src="https://t3n.zendesk.com/attachments/token/VPcBGcrYCE170ILRDTGJHUFGr/?name=Deploy.jpg" alt="Deploy.jpg" /></p>
 <p><strong>3. Fill out the appropriate details for the CLC Managed Apache Tomcat Blueprint.</strong>
@@ -26,7 +29,7 @@
 </p>
 <p><strong><img src="https://t3n.zendesk.com/attachments/token/83eKsGvOxxkIDSNlEZranoX0U/?name=Verify.jpg" alt="Verify.jpg" />&nbsp;</strong>
 </p>
-<p><strong>5. Once verified, please click on the 'deploy blueprint' button. You will be presented with the deployment details along with an email stating the Blueprint has been queued.</strong>
+<p><strong>5. Once verified, please click on the **deploy blueprint** button. You will be presented with the deployment details along with an email stating the Blueprint has been queued.</strong>
 </p>
 <p><strong><img src="https://t3n.zendesk.com/attachments/token/TnNBlrI0ceVHGNoZ5PeDxXnHP/?name=Queue.jpg" alt="Queue.jpg" /></strong></p>
 <p>&nbsp;You will receive an email that your Blueprint has been installed when the Blueprint is complete.</p>

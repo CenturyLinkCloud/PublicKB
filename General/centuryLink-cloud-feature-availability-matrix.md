@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Feature Availability Matrix",
-  "date": "1-25-2016",
+  "date": "6-20-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -21,7 +21,8 @@ The CenturyLink Cloud provides a vast array of services for customers to consume
 [Hyperscale Computing](//www.ctl.io/hyperscale)|US West (Santa Clara) - UC1<br>US Central (Chicago) - IL1<br>US East (New York) - NY1<br>US East (Sterling) - VA1<br>Great Britain (Slough) - GB3<br>Canada (Toronto - Mississauga) - CA3<br>APAC (Singapore) - SG1
 [Bare Metal](//www.ctl.io/bare-metal)|US East (Sterling) - VA1<br>Great Britain (Slough) - GB3
 [AppFog](//www.ctl.io/appfog)|US East<sup>1</sup><br>US West<sup>1</sup>
-[Relational Database - MySQL-compatible](//www.ctl.io/relational-database)|US West (Santa Clara) - UC1<br>US Central (Chicago) - IL1<br>US East (Sterling) - VA1
+[Relational DB - MySQL-compatible](//www.ctl.io/relational-database)|US West (Santa Clara) - UC1<br>US Central (Chicago) - IL1<br>US East (Sterling) - VA1<br>US East (New York) - NY1<br>Canada (Toronto - Mississauga) - CA3<br>Great Britain (Slough) - GB3<br>APAC (Singapore) - SG1
+[Load Balancer as a Service (LBaaS)](//www.ctl.io/load-balancing/)|US West (Santa Clara) - UC1<br>US East (Sterling) - VA1
 [Managed Operating System Services](//www.ctl.io/managed-services/operating-system)|US West (Santa Clara) - UC1<br>US East (Sterling) - VA1<br>US Central (Chicago) - IL1<br>Great Britain (Slough) - GB3<br>Canada (Toronto - Mississauga) - CA3<br>APAC (Singapore) - SG1
 [Managed Applications](//www.ctl.io/managed-services)|US West (Santa Clara) - UC1<br>US East (Sterling) - VA1<br>US Central (Chicago) - IL1<br>Great Britain (Slough) - GB3<br>Canada (Toronto - Mississauga) - CA3<br>APAC (Singapore) - SG1
 [Managed Backup](//www.ctl.io/managed-services/backup)|US West (Santa Clara) - UC1<br>US Central (Chicago) - IL1<br>US East (Sterling) - VA1<br>Great Britain (Slough) - GB3<br>APAC (Singapore) - SG1<br>Canada (Toronto - Mississauga) - CA3
