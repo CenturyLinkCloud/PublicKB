@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to CLI",
-  "date": "07-22-2016",
+  "date": "09-23-2016",
   "author": "Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
@@ -552,6 +552,12 @@ clc load-balancer-pool delete --data-center CA2 --load-balancer-name CLITest --p
 The option allows the previous command finishes before running the next command
 ```
 clc wait
+```
+**Execute a package**
+CLI can execute a script or package (requires package ID and parameters for executing the package)
+    - [API](//www.ctl.io/api-docs/v1/#blueprint)
+```
+clc server execute-package --server-ids CA2ABCDMYSQLU01 --package "package-id=fcddbdf6-f5cc-4038-a088-b4e572ae2e22,parameters=xxxx yyyy"
 ```
 ### Network/Firewall
 **Adding a secondary network card on a server**
