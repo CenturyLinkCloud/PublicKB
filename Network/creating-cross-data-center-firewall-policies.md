@@ -1,21 +1,21 @@
 {{{
   "title": "Creating Cross Data Center Firewall Policies",
-  "date": "1-7-2015",
-  "author": "Richard Seroter",
+  "date": "9-23-2016",
+  "author": "",
   "attachments": [],
   "contentIsHTML": true
 }}}
 
 <h3>Creating Cross Data Center Firewall Policies</h3>
 <p>In addition to being able to connect networks within a particular data center through&nbsp;<a href="connecting-data-center-networks-through-firewall-policies.md">Intra Data Center firewall policies</a>,
-  users can also create firewall policies that span cloud data centers. This helps enterprises build sophisticated, secure network topologies that take advantage of the CenturyLink Cloud's global footprint while meeting an organization's functional needs.</p>
+  users can also create firewall policies that span cloud data centers. This helps enterprises build sophisticated and secure network topologies that take advantage of our global footprint while meeting an organization's functional needs.</p>
 <h3>General Notes</h3>
 <ul>
   <li>In the current iteration customers cannot apply Firewall ACL's to traffic traversing cross data center policies.</li>
-  <li>Each CenturyLink Cloud Data Center location provides unique private IP networks to customers. Thus eliminating any risk of overlapping IP space that would require a NAT with this service.</li>
+  <li>Each CenturyLink Cloud Data Center location provides unique private IP networks to customers. This eliminates the risk of overlapping IP space, hence no NAT is required in the implementation.</li>
 </ul>
 <h3><strong>Detailed Steps</strong></h3>
-<p><strong><br /></strong>1. <a href="https://t3n.zendesk.com/entries/21806469-Creating-and-Deleting-VLANs">Create network VLAN(s)</a>&nbsp;in each of the respective CenturyLink Cloud Data Centers.</p>
+<p><strong><br /></strong>1. <a href="https://www.ctl.io/knowledge-base/network/creating-and-deleting-vlans/">Create network VLAN(s)</a>&nbsp;in each of the respective CenturyLink Cloud Data Centers.</p>
 <p>2. Validate the networks are in place in your CenturyLink Cloud account using the&nbsp;<strong>Networks&nbsp;</strong>menu item and selecting the appropriate Data Center. In the sample below, networks exists in both UC1 (Santa Clara) &amp;
   DE1 (Germany). </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/GyMTPFj5yNAuMs8gwXVUKExEZ/?name=01.png" alt="01.png" />
