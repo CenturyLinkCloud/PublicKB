@@ -559,7 +559,7 @@ Package ID can be found using:
 
 - [API](//www.ctl.io/api-docs/v1/#blueprint)
 
-- UUID (Package ID) as part of the URL under the control portal (Orchestration->scripts/package->script_required)(example: https://control.ctl.io/Blueprints/Packages/Details?uuid=aaddbdf6-f5cc-4038-a088-b4e572ae2e22&classification=Script&type=AccountLibrary)
+- UUID (Package ID) as part of the URL under the control portal (Orchestration->scripts/package->script_required)(example: https://control.ctl.io/Blueprints/Packages/Details?uuid=c3c6642e-24e1-4c37-b56a-1cf1476ee360&classification=Script&type=AccountLibrary)
 
 ```
 clc server execute-package --server-ids CA2ABCDMYSQLU01 --package "package-id=fcddbdf6-f5cc-4038-a088-b4e572ae2e22,parameters=xxxx yyyy"
