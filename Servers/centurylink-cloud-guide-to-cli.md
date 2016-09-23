@@ -14,7 +14,7 @@
 * [READ commands](#read-commands)
 * [Billing and Accounting](#billing-and-accounting)
 * [Commands change the environment](#commands-change-the-environment)
-* [Advanced Usage](#advanced-usage)
+* [Advanced Usage(Wait/Execute packages)](#advanced-usage)
   * [Network/Firewall](#networkfirewall)
   * [Snapshot](#snapshot)
   * [Site to Site VPN](#sitetositevpncreatedeletelistupdate)
@@ -555,7 +555,12 @@ clc wait
 ```
 **Execute a package**
 CLI can execute a script or package (requires package ID and parameters for executing the package)
-    - [API](//www.ctl.io/api-docs/v1/#blueprint)
+Package ID can be found using:
+
+- [API](//www.ctl.io/api-docs/v1/#blueprint)
+
+- UUID (Package ID) as part of the URL under the control portal (Orchestration->scripts/package->script_required)(example: https://control.ctl.io/Blueprints/Packages/Details?uuid=aaddbdf6-f5cc-4038-a088-b4e572ae2e22&classification=Script&type=AccountLibrary)
+
 ```
 clc server execute-package --server-ids CA2ABCDMYSQLU01 --package "package-id=fcddbdf6-f5cc-4038-a088-b4e572ae2e22,parameters=xxxx yyyy"
 ```
