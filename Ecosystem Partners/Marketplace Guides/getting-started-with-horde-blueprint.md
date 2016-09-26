@@ -22,16 +22,12 @@ CenturyLink Cloud Users
 ### Impact
 After reading this article, the user should feel comfortable getting started using the Bitnami Blueprint technology on CenturyLink Cloud.
 
-
 ### Prerequisite
 * Access to the CenturyLink Cloud platform as an authorized user.
 
 ### Postrequisite
-
 * If you want to access your application over the internet, please perform the following tasks after you receive an email notifying you that the Blueprint completed successfully.
-
 * If you need to connect to your server via the Internet, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
-
 * [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
    * The default ports to access the application are: `80`, `443`.
 
@@ -40,7 +36,7 @@ Horde Groupware Webmail is available as a Blueprint for deployment on a new serv
 
 #### Steps to Deploy Blueprint
 1. Locate the Bitnami Horde Groupware Webmail Stack Blueprint.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Horde Groupware Webmail” in the keyword search on the right side of the page.
    * Locate the 'Install Bitnami Horde Groupware Webmail on Linux' Blueprint.
 
@@ -58,7 +54,6 @@ Horde Groupware Webmail is available as a Blueprint for deployment on a new serv
    * MySQL Server port, e.g., 3306
    * Password
 
-
 4. Review and Confirm the Blueprint.
    * Click `next: step 2`.
    * Verify your configuration details.
@@ -69,7 +64,7 @@ Horde Groupware Webmail is available as a Blueprint for deployment on a new serv
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 
@@ -102,9 +97,8 @@ Bitnami Horde Groupware Webmail Stack is available as a Script Package for deplo
 
 5. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
-
 
 ### Access your Horde Groupware Webmail server
 After your Blueprint deploys successfully, please follow these instructions to access your server:

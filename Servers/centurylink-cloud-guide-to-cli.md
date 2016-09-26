@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to CLI",
-  "date": "07-07-2016",
+  "date": "09-23-2016",
   "author": "Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
@@ -14,9 +14,10 @@
 * [READ commands](#read-commands)
 * [Billing and Accounting](#billing-and-accounting)
 * [Commands change the environment](#commands-change-the-environment)
-* [Advanced Usage](#advanced-usage)
+* [Advanced Usage(Wait/Execute packages)](#advanced-usage)
   * [Network/Firewall](#networkfirewall)
   * [Snapshot](#snapshot)
+  * [Site to Site VPN](#sitetositevpncreatedeletelistupdate)
 * [Application Services control](#application-services-control)
   * [Relational Database Service](#relational-database-service)
   * [Intrusion Prevention Service](#intrusion-prevention-service)
@@ -40,7 +41,7 @@ Comparison of the two CLI tools:
 | CLI         |   Python            | Go                  |
 | ---------   | ------------------- | -----------------   |
 | API version | Mostly v1 (some v2) |         v2          |
-| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> backup <br> billing <br> crossdc-firewall-policy <br> custom-fields <br> data-center <br> db <br> firewall-policy <br> group <br> ips <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> os-patch <br> server <br> wait <br>      |
+| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> backup <br> billing <br> crossdc-firewall-policy <br> custom-fields <br> data-center <br> db <br> firewall-policy <br> group <br> ips <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> os-patch <br> server <br> site-to-site-vpn <br> wait <br>      |
 
 
 
@@ -137,25 +138,26 @@ Output of `clc -–help`:
 ```
 To get full usage information run clc without arguments.
 Available resources:
-        load-balancer
-        billing
-        autoscale-policy
-        backup
-        crossdc-firewall-policy
-        group
-        data-center
-        firewall-policy
-        wait
-        server
-        load-balancer-pool
-        ips
-        network
-        anti-affinity-policy
-        custom-fields
-        login
-        db
-        os-patch
-        alert-policy
+    alert-policy
+    anti-affinity-policy
+    autoscale-policy
+    backup
+    billing
+    crossdc-firewall-policy
+    custom-fields
+    data-center
+    db
+    firewall-policy
+    group
+    ips
+    load-balancer
+    load-balancer-pool
+    login
+    network
+    os-patch
+    server
+    site-to-site-vpn
+    wait
 
 ```
 
@@ -551,6 +553,17 @@ The option allows the previous command finishes before running the next command
 ```
 clc wait
 ```
+**Execute a package**
+CLI can execute a script or package (requires package ID and parameters for executing the package)
+Package ID can be found using:
+
+- [API](//www.ctl.io/api-docs/v1/#blueprint)
+
+- UUID (Package ID) as part of the URL under the control portal (Orchestration->scripts/package->script_required)(example: https://control.ctl.io/Blueprints/Packages/Details?uuid=c3c6642e-24e1-4c37-b56a-1cf1476ee360&classification=Script&type=AccountLibrary)
+
+```
+clc server execute-package --server-ids CA2ABCDMYSQLU01 --package "package-id=fcddbdf6-f5cc-4038-a088-b4e572ae2e22,parameters=xxxx yyyy"
+```
 ### Network/Firewall
 **Adding a secondary network card on a server**
 Please refer to the [Add or Remove Network Interface to Server using Go CLI](../Network/add-or-remove-network-interface-to-server-using-go-cli.md)
@@ -577,7 +590,12 @@ clc server get --server-name CA3ABCDTAKE02 --query details.snapshots.id --output
 ```
 clc server delete-snapshot --server-name CA3ABCDTAKE02 --snapshot-id 1
 ```
-
+### Site to Site VPN (create/delete/list/update)
+**Create Site to Site VPN**
+```
+clc site-to-site-vpn create --local "alias=CA2,subnets=10.x.x.0/24" --remote "siteName=NH,deviceType=pfsense,address=76.x.x.x,subnets=192.168.1.0/24" --ipsec "encryption=aes128,hashing=sha1_96,protocol=esp,pfs=group2,lifetime=28800" --ike "encryption=aes128,hashing=sha1_96,diffieHellmanGroup=group2,preSharedKey=b7fd0390436a4556a17c42f79d782eb9,lifetime=28800,mode=main,deadPeerDetection=false,natTraversal=false,remoteIdentity=false"
+```
+### Scripting
 **Create a json file for repeat usage of frequent use commands**
 
 For the example below, servername.json is created to list all the hostname of all servers in the account:

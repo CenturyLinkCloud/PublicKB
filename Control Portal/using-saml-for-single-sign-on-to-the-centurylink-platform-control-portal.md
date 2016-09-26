@@ -31,9 +31,8 @@ The steps below walk through the process of building an entire SSO and SAML scen
 **Steps**
 
 **1. Provision server to act as Identity Provider.**
-* Log into the CenturyLink Cloud Control Portal and choose to create a new Blueprint. This takes you to the Blueprint Designer wizard.
 
-![Blueprint Menu](../images/saml02.png)
+* Log into the CenturyLink Cloud Control Portal and choose to create a new Blueprint. Using the left navigation bar, choose **Orchestration** > **Design Blueprint**. 
 
 * Include a single (Windows Server 2008 or above) server to the Blueprint and add packages to **Install DNS**, **Install Active Directory**, **Reboot**, **Install IIS**, and **Add a Public IP**. The DNS and Active Directory packages give us a custom domain to work with, and an identity directory for our user records. Microsoft Internet Information Services (IIS) provides a web application host for the Active Directory Federation Services (ADFS) web services used later on. Finally, the public IP address exposes our server to the public internet where applications (like the CenturyLink Cloud Control Portal) can access it for a SAML exchange.
 

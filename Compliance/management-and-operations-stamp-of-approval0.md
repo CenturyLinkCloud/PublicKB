@@ -53,22 +53,22 @@ Atlanta 1
 
 Burbank 1
 
-Chicago 2, 3 & 4
+Chicago 2, 3, & 4
 
-Denver 1, 2 & 3
+Denver 1, 2, & 3
 
-London 1, 3, 4, 5 & 6
+London 1, 3, 4, 5, & 6
 
 Los Angeles 1
 
-New Jersey 2, 2x, 3 & 4
+New Jersey 2, 2x, 3, & 4
 
 Orange County 2 Phase I
 
-Santa Clara 4, 5, 8 & 9
+Santa Clara 4, 5, 8, & 9
 
-Seattle 2, 3 & 4
+Seattle 2, 3, & 4
 
 Sunnyvale 1 & 2
 
-Washington DC 2, 3 & 4
+Washington DC 2, 3, & 4

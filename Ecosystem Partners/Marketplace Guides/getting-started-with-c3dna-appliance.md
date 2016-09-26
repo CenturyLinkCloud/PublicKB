@@ -6,13 +6,10 @@
   "contentIsHTML": false
 }}}
 
-
-
 ### Technology Profile
 <img src="../../images/c3dna/c3dna_logo.png" style="border:0;float:right;max-width: 150px;">
 
-C<sup>3</sup>DNA provides a single platform to support Self-reliant Application Lifecycle Management including migrating entire
-applications between datacenters by just moving the App in only 4 easy steps: Discover, Profile, Migrate, and Assure.
+C<sup>3</sup>DNA provides a single platform to support Self-reliant Application Lifecycle Management including migrating entire applications between data centers by just moving the App in only 4 easy steps: Discover, Profile, Migrate, and Assure.
 
 http://www.c3dna.com/product.html
 
@@ -21,26 +18,24 @@ http://www.c3dna.com/product.html
 |:- |:- |
 | sales@c3dna.com  | support@c3dna.com  |
 
-
 ### Description
 C<sup>3</sup>DNA’s self-reliant Application Lifecycle Management platform is completely Application driven. By “focusing on the App” we enable easy migration of entire applications between data centers. Our platform tackles the problem at the source and delivers application portability at the app layer. Applications become infrastructure agnostic, self-reliant, portable across clouds and can be “cloudify” in a few steps.
-
 
 ### Audience
 CenturyLink Cloud Users
 
 ### Prerequisites
 * Access to the CenturyLink Cloud platform as an authorized user
-* control.ctl.io account with password authentication (two factor authentication not yet supported)
-
+* control.ctl.io account with password authentication (two-factor authentication not yet supported)
 
 ### Steps to Deploy a New Appliance
 1. Locate the Blueprint in the Blueprint Library.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library. Search for "C3DNA Controller Appliance" in the keyword search on the right side of the page.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
+   * Search for "C3DNA Controller Appliance" in the keyword search on the right side of the page.
 
    <img src="../../images/c3dna/blueprint_tile.png" style="border:0;max-width:250px;">
 
-2. Click the Deploy Blueprint button.
+2. Click the `deploy blueprint` button.
 
 3. Set Required parameters.
 
@@ -59,7 +54,7 @@ CenturyLink Cloud Users
 5. Review and Confirm the Blueprint.
 
 6. Deploy the Blueprint.
-   * Once verified, click on the **deploy blueprint** button.
+   * Once verified, click the `deploy blueprint` button.
    * You will see the deployment details stating the Blueprint is queued for execution.
 
 7. Deployment Complete.
@@ -95,16 +90,14 @@ CenturyLink Cloud Users
 
 
 ### Pricing
-The costs listed above in the above steps are for the infrastructure only. This install includes a free trial for one application  (maxiumum of 30 platforms, 2 web, 1 standard app, 1 standard DB).
+The costs listed above in the above steps are for the infrastructure only. This install includes a free trial for one application (maximum of 30 platforms, 2 web, 1 standard app, 1 standard DB).
 
 After deploying this Blueprint, you may secure additional entitlements to the technology using the following steps:
 * Email: sales@c3dna.com
 
-
 ### Frequently Asked Questions
 **Where do I obtain my license?**
 * Email sales@c3dna.com.
-
 
 **Who should I contact for support?**
 * For issues related to deploying C<sup>3</sup>DNA email support@c3dna.com.

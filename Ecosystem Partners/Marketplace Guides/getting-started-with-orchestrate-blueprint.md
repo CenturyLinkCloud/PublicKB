@@ -6,23 +6,21 @@
   "contentIsHTML": false
 }}}
 
+![Orchestrate.](../../images/orchestrate-0.gif)
+
 ### Overview
 After reading this article, the user should feel comfortable getting started using the partner technology on CenturyLink Cloud.
 
 This article will demonstrate how to create a new Orchestrate account and deploy a demo application on CenturyLink Cloud.
 
 ### Partner Profile
-![Orchestrate.](../../images/orchestrate-0.gif)
-
 Orchestrate – A complete database service with the NoSQL queries you need
 
 https://www.ctl.io/orchestrate/
 
 #### Customer Support
-
-centurylinkcloud-sales@orchestrate.io
-
-CenturyLink Cloud Account Alias: OIO
+* centurylinkcloud-sales@orchestrate.io
+* CenturyLink Cloud Account Alias: OIO
 
 ### Description
 Orchestrate has integrated their technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for the Orchestrate solution.
@@ -36,10 +34,8 @@ CenturyLink Cloud Users
 
 ### Steps
 1. Locate the Blueprint in the Blueprint Library.
-   * Click either of the items at right to access that Blueprint directly.
-   * Alternately, starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Orchestrate” in the keyword search on the right side of the page.
-   ![Orchestrate.io](../../images/orchestrate-1.png)
 
 2. Click the `deploy blueprint` button.
 
@@ -50,7 +46,6 @@ CenturyLink Cloud Users
    * Set DNS to “Manually Specify” and use “8.8.8.8” (or any other public DNS server of your choice).
    * Optionally set the server name prefix.
    * The default values are fine for every other option.
-   ![](../../images/orchestrate-3.png)
 
 5. Review and Confirm the Blueprint
    * Verify your configuration details.

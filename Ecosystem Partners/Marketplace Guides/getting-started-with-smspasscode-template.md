@@ -1,5 +1,4 @@
-﻿
-{{{
+﻿{{{
   "title": "Deploying SMS PASSCODE on CenturyLink Cloud",
   "date": "12-30-2015",
   "author": "Max Ranzau",
@@ -73,7 +72,6 @@ Your account alias and PIN are available from your account info page and your us
 
 #### Steps to Complete Installation
 Once the Template is copied and server is created, complete the following steps to complete the SMS Passcode installation:
-
 1. Log into the new server, using administrator + password used when server was instantiated.
 
 2. Close/minimize the server manager, which will be open per default.

@@ -1,5 +1,3 @@
-
-
 {{{
   "title": "Getting Started with OSS Mesosphere - Blueprint",
   "date": "11-09-2015",
@@ -11,21 +9,16 @@
 <img src="../../images/ecosystem-mesosphere-logo.png" style="border:0;max-width: 300px;"/>
 
 ### Technology Profile
-
 Notes on installing a basic [Mesosphere](https://mesosphere.com) cluster to CenturyLink Cloud.
 
-This article assumes familiarity with Mesosphere and a basic working knowledge of the CenturyLink Cloud Control Panel. 
-
+This article assumes familiarity with Mesosphere and a basic working knowledge of the CenturyLink Cloud Control Portal.
 
 ### Description
-
 This article pertains to version 0.1 of the Mesosphere Cluster blueprint and as such should be considered a technical preview. Advanced Mesosphere administration and scaling is beyond the scope of this article.
 
-For more information, visit the official Mesosphere [documentation](https://docs.mesosphere.com/) and [support](https://docs.mesosphere.com/support/).
+For more information, visit the official Mesosphere [documentation](https://docs.mesosphere.com/) and [support](https://docs.mesosphere.com/support/) sites.
 
 This Blueprint bundles the Open-Source Community release of Mesosphere. More information for commercial support for Mesosphere is available [here](https://mesosphere.com/product/).
-
-
 
 ### Audience
 Architects, DevOps, Cluster administrators
@@ -35,28 +28,23 @@ After reading this article, the user should be able to access a Mesosphere clust
 
 The initial version supports Mesos 0.25, Marathon 0.11, and docker 1.9 (docker-engine).
 
-Bare-Metal support is not yet supported.
+Bare Metal support is not yet supported.
 
 ### Prerequisites
-
 Required Compute:
-
 * ~10 cores, ~20GB memory, ~100GB disk
 
 ### Postrequisite
 To access your application from a computer outside the CenturyLink Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
-
-   * Recommended: Set up a [Load Balancer](../../Network/creating-a-self-service-load-balancing-configuration.md) for your slave nodes. Note, you'll need to gather the IP addresses of your slave nodes as well as install an http(s) server for this to be useful.
-   * Optional: [VPN Access](../../Network/how-to-configure-client-vpn.md) (optional) will allow you to access the mesos masters directly for troubleshooting/logs/etc.
-   * Optional: Set up a [Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) or [Load Balancer](../../Network/creating-a-self-service-load-balancing-configuration.md) on your master nodes to access Marathon publicly.
-
+* Recommended: Set up a [Load Balancer](../../Network/creating-a-self-service-load-balancing-configuration.md) for your slave nodes. Note, you'll need to gather the IP addresses of your slave nodes as well as install an http(s) server for this to be useful.
+* Optional: [VPN Access](../../Network/how-to-configure-client-vpn.md) (optional) will allow you to access the mesos masters directly for troubleshooting/logs/etc.
+* Optional: Set up a [Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) or [Load Balancer](../../Network/creating-a-self-service-load-balancing-configuration.md) on your master nodes to access Marathon publicly.
 
 ### Deploying the Mesosphere Blueprint
 
 #### Steps to Deploy Blueprint
-
 1. Locate the "Mesosphere Cluster" Blueprint.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “mesosphere” in the keyword search on the right side of the page.
    * Locate the "Mesosphere Cluster" Blueprint.
 
@@ -88,11 +76,10 @@ To access your application from a computer outside the CenturyLink Cloud network
 
 10. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Deploy additional slaves to an existing cluster
-
 "Mesosphere Installer" is available as a Script Package for horizontally scaling your cluster.
 
 #### Steps
@@ -114,7 +101,7 @@ To access your application from a computer outside the CenturyLink Cloud network
 
 5. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access the Marathon UI
@@ -190,7 +177,6 @@ Here is an example job to test routing:
 
 
 For example, `curl -vv -H "Host: dirlist.foobar.com"" 34.34.34.34` should resolve to the `dirlist` container.
-
 
 ### Troubleshooting
 If on the initial install your apps are not running and stuck in deployment, restart the cluster of servers once.
