@@ -157,7 +157,7 @@ Yes, encryption can be enabled on servers with the configurable RAID controllers
 
 For complete customization, you may use the [PERCCLI Utility provided by Dell](http://www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=3XDPP) to configure the controller and disks as desired.  Also, you can find the [PERCCLI Reference Guide](http://topics-cdn.dell.com/pdf/poweredge-rc-h730_Reference%20Guide_en-us.pdf) here.
 
-In addition, Runner jobs will soon be made available to help automate certain common configurations
+In addition, Runner jobs will soon be made available to help automate certain common configurations making RAID configurations easier.
 
 **Can I customize my network interface configuration on a Bare Metal server?**
 
