@@ -21,16 +21,17 @@ For additional details see our [Product Page](https://www.ctl.io/bare-metal/) an
 
 CenturyLink will be deactivating the SMTP Relay Service on December 1st, 2016.
 
-We are making this change in order to ensure our customers have a fast, scalable and reliable email delivery service.
+We are making this change in order to ensure our customers have a fast, scalable, and reliable email delivery service.
 
 We realize that this will require existing customers migrate off of this service and we apologize for the inconvenience.
 
-For more information about this change, please see (https://www.ctl.io/knowledge-base/support/smtp-relay-deactivation-faq/)
+For more information about this change, please see this [document](https://www.ctl.io/knowledge-base/support/smtp-relay-deactivation-faq/).
 
 ### Announcements (1)
 
 * __New Look & Features for Status Page__
 
-  [Status.ctl.io](https://status.ctl.io/) has a new look and we have added new features. Check out our FAQs for more information: (https://www.ctl.io/knowledge-base/general/centurylink-cloud-status-faq/)
+[Status.ctl.io](https://status.ctl.io/) has a new look and we have added new features. Check out our 
+[FAQ](https://www.ctl.io/knowledge-base/general/centurylink-cloud-status-faq/) for more information.
 
   ![Status](../../images/2016-09-27_Status.png)
