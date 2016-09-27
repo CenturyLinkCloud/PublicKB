@@ -11,7 +11,8 @@ CenturyLink will be deactivating the [SMTP Relay Service](https://www.ctl.io/kno
 
 ### Deactivation Date
 
-This change is currently scheduled to occur on December 1st, 2016. If there are changes to this date, we will update this document. 
+This change is currently scheduled to occur on December 1st, 2016. If there are changes to this date, we will update this document.
+
 
 ### What exactly is Changing?
 
@@ -21,7 +22,7 @@ This change is currently scheduled to occur on December 1st, 2016. If there are 
 
 ### Why is this change happening?
 
-In short, we are making this change in order to ensure our customers have a working, fast, scalable and reliable email service. Since our existing SMTP Relay service has recently been performing poorly for our customers, we wanted to take an action that improved the service level our customers were recieving.
+Companies that succeed know their core competency, do it better than others and stay focused. At CenturyLink we know our core competency focuses on our infrastructure and services around network, cloud, hosting, voice and security.  In areas that are not our core competency we partner with best of breed providers.  To that vain, we are now decommissioning our SMTP relay service and instead are offering you the ability to migrate to our ecosystem partners. We provide you a list of partners where this is their core competency so you will receive the level of service you expect from CenturyLink and our partners.
 
 ### Why have we chosen to de-activate our service versus improving our service?
 
