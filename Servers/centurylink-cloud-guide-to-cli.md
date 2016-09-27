@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to CLI",
-  "date": "09-23-2016",
+  "date": "09-26-2016",
   "author": "Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
@@ -565,6 +565,21 @@ Package ID can be found using:
 clc server execute-package --server-ids CA2ABCDMYSQLU01 --package "package-id=fcddbdf6-f5cc-4038-a088-b4e572ae2e22,parameters=xxxx yyyy"
 ```
 ### Network/Firewall
+**Adding a public IP address to a server**
+
+  - NATing with an existing private IP with UDP port 4040 open
+  ```
+  clc server add-public-ip-address --server-name CA3ABCD2TSQL01  --internal-ip-address 10.110.23.16 --ports port=4040,protocol=udp
+  ```
+  - Nating with a new private IP with TCP port range 8080 to 8090 open
+  ```
+  clc server add-public-ip-address --server-name CA3ABCD2TSQL01 --ports port=8080,portTo=8090,protocol=tcp
+  ```
+  - Update a public IP port and source IP restriction
+  ```
+  clc server update-public-ip-address --server-name CA3ABCD2TSQL01 --public-ip xxx.xxx.xxx.xxx --ports port=8080,portTo=8085,protocol=tcp --source-restrictions "CDIR=xxx.xxx.xxx.xxx/32"
+  ```
+
 **Adding a secondary network card on a server**
 Please refer to the [Add or Remove Network Interface to Server using Go CLI](../Network/add-or-remove-network-interface-to-server-using-go-cli.md)
 
