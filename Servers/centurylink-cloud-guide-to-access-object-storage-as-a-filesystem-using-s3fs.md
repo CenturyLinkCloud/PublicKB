@@ -58,7 +58,8 @@ In preparation. There are several factors need to be considered:
 
 
 ### Deployment
-
+There are two methods to deploy s3fs in CenturyLink Cloud, it can be done manually or using a package.
+**Manual deployment**
 1.  s3fs deployment is done with the following commands on the CentOS 7 server:
 
     ```
@@ -84,6 +85,17 @@ In preparation. There are several factors need to be considered:
     ```
 5.  Once the above steps are completed, create a directory for the mount point of the new filesystem
 
+**Execute using a package**
+A script (S3fs on CentOS 7) is created to speed up the deployment of s3fs on CenturyLink Cloud.  The detail of the package is available [here](//control.ctl.io/Blueprints/Packages/Details?uuid=e12db1ac-9783-45fa-b3f6-ab07c3ab195a&classification=Script&type=AccountLibrary).  The package can be install via the portal, API or CLI.  For API, please refer to the [Execute Package API]()//www.ctl.io/api-docs/v2/#server-actions-execute-package).  The CLI deployment can be done following the command in the [CenturyLink Cloud Guide to CLI](//www.ctl.io/knowledge-base/servers/centurylink-cloud-guide-to-cli/#advanced-usage).  When using the portal, this [Knowledge article](../knowledge-base/servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/)
+
+In the portal, the package can be found by searching for s3fs:
+
+![Search Window](../images/s3fs/s3fs-package-library.png)
+
+The parameters required for this script are:
+
+![s3fs parameters](../images/s3fs.s3fs-parameters.png)
+
 ### Testing
 - Test the installation with the command below (URL can be either useast.os.ctl.io or canada.os.ctl.io depending on the region of the bucket, for the current list of Object Storage end points, please see [this knowledge article](../Object Storage/object-storage-regions-and-service-points.md)):
 
@@ -91,7 +103,7 @@ In preparation. There are several factors need to be considered:
     s3fs mybucket:/ /path_to_mountpoint -o passwd_file=/path_to_password_file/password_s3fs -o url=https://canada.os.ctl.io/
     ```
 
-- If the command ran successfully, then a /etc/fstab entry can be inserted to mount the Object Storage bucket permanently (debug level set at info, it can be removed to minimized logging):
+- If the command ran successfully, then a /etc/fstab entry can be inserted to mount the Object Storage bucket permanently, a fstab_entry file is created in the /root directory if the package is used (debug level set at info, it can be removed to minimized logging):
 
     ```
     s3fs#mybucket:/ /path_to_mountpoint fuse _netdev,dbglevel=info,allow_other,nodnscache,retries=5,url=https://canada.os.ctl.io/,passwd_file=/path_to_password_file/password_s3fs
