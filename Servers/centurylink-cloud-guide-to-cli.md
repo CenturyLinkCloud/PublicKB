@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to CLI",
-  "date": "07-22-2016",
+  "date": "09-26-2016",
   "author": "Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
@@ -14,7 +14,7 @@
 * [READ commands](#read-commands)
 * [Billing and Accounting](#billing-and-accounting)
 * [Commands change the environment](#commands-change-the-environment)
-* [Advanced Usage](#advanced-usage)
+* [Advanced Usage(Wait/Execute packages)](#advanced-usage)
   * [Network/Firewall](#networkfirewall)
   * [Snapshot](#snapshot)
   * [Site to Site VPN](#sitetositevpncreatedeletelistupdate)
@@ -553,7 +553,33 @@ The option allows the previous command finishes before running the next command
 ```
 clc wait
 ```
+**Execute a package**
+CLI can execute a script or package (requires package ID and parameters for executing the package)
+Package ID can be found using:
+
+- [API](//www.ctl.io/api-docs/v1/#blueprint)
+
+- UUID (Package ID) as part of the URL under the control portal (Orchestration->scripts/package->script_required)(example: https://control.ctl.io/Blueprints/Packages/Details?uuid=c3c6642e-24e1-4c37-b56a-1cf1476ee360&classification=Script&type=AccountLibrary)
+
+```
+clc server execute-package --server-ids CA2ABCDMYSQLU01 --package "package-id=fcddbdf6-f5cc-4038-a088-b4e572ae2e22,parameters=xxxx yyyy"
+```
 ### Network/Firewall
+**Adding a public IP address to a server**
+
+  - NATing with an existing private IP with UDP port 4040 open
+  ```
+  clc server add-public-ip-address --server-name CA3ABCD2TSQL01  --internal-ip-address 10.110.23.16 --ports port=4040,protocol=udp
+  ```
+  - Nating with a new private IP with TCP port range 8080 to 8090 open
+  ```
+  clc server add-public-ip-address --server-name CA3ABCD2TSQL01 --ports port=8080,portTo=8090,protocol=tcp
+  ```
+  - Update a public IP port and source IP restriction
+  ```
+  clc server update-public-ip-address --server-name CA3ABCD2TSQL01 --public-ip xxx.xxx.xxx.xxx --ports port=8080,portTo=8085,protocol=tcp --source-restrictions "CDIR=xxx.xxx.xxx.xxx/32"
+  ```
+
 **Adding a secondary network card on a server**
 Please refer to the [Add or Remove Network Interface to Server using Go CLI](../Network/add-or-remove-network-interface-to-server-using-go-cli.md)
 
