@@ -59,6 +59,7 @@ In preparation. There are several factors need to be considered:
 
 ### Deployment
 There are two methods to deploy s3fs in CenturyLink Cloud, it can be done manually or using a package.
+
 **Manual deployment**
 1.  s3fs deployment is done with the following commands on the CentOS 7 server:
 
@@ -87,7 +88,13 @@ There are two methods to deploy s3fs in CenturyLink Cloud, it can be done manual
 
 **Execute using a package**
 
-A script (S3fs on CentOS 7) is created to speed up the deployment of s3fs on CenturyLink Cloud.  The detail of the package is available [here](//control.ctl.io/Blueprints/Packages/Details?uuid=e12db1ac-9783-45fa-b3f6-ab07c3ab195a&classification=Script&type=AccountLibrary).  The package can be install via the portal, API or CLI.  For API, please refer to the [Execute Package API]()//www.ctl.io/api-docs/v2/#server-actions-execute-package).  The CLI deployment can be done following the command in the [CenturyLink Cloud Guide to CLI](//www.ctl.io/knowledge-base/servers/centurylink-cloud-guide-to-cli/#advanced-usage).  When using the portal, this [Knowledge article](../knowledge-base/servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/)
+A script (S3fs on CentOS 7) is created to speed up the deployment of s3fs on CenturyLink Cloud.  The detail of the package is available [here](//control.ctl.io/Blueprints/Packages/Details?uuid=e12db1ac-9783-45fa-b3f6-ab07c3ab195a&classification=Script&type=AccountLibrary).  The package can be install via the portal, API or CLI.  
+
+For API, please refer to the [Execute Package API](//www.ctl.io/api-docs/v2/#server-actions-execute-package).  
+
+The CLI deployment can be done following the command in the [CenturyLink Cloud Guide to CLI](//www.ctl.io/knowledge-base/servers/centurylink-cloud-guide-to-cli/#advanced-usage).  
+
+When using the portal, this [Knowledge article](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md)
 
 In the portal, the package can be found by searching for s3fs:
 
