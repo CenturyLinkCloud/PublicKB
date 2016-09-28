@@ -11,7 +11,7 @@
 #### Running in SafeHaven Appliance (CMS/SRN)
 
 | Name|  Description| Version (source download link) |  License Type (Link to license)|
-|--|--|--|--|
+|---|---|---|---|
 |Ubuntu Linux| Base OS| [64bit 14.04 LTS](http://cdimage.ubuntu.com/releases/14.04/release/source/) | [Collection of Open Source Licenses](http://www.ubuntu.com/project/about-ubuntu/licensing)|
 |SCST| iSCST Target| [v3.0.0](http://scst.sourceforge.net/downloads.html) | [GPL](http://www.gnu.org/licenses/gpl-3.0.en.html)|
 |vSphere SDK|Development Kit for Vmware |5.5| [VI SDK Developer License Agreement](http://communities.vmware.com/docs/DOC-7983)|
@@ -19,7 +19,7 @@
 #### Running in Protected Windows Guest
 
 | Name|  Description| Version (source download link) |  License Type (Link to license)|
-|--|--|--|--|
+|---|---|---|---|
 |iPXE| network bootloader| [git repo](https://git.ipxe.org/ipxe.git) |[GPLv2 or later+few BSD](http://ipxe.org/licensing)|
 |grub4dos and grubinst|Windows Boot Loader| [grub4dos-0.4.4 and grubinst-1.0.1](http://sourceforge.net/projects/grub4dos/files/?source=navbar) |[GPLv2 or later](https://gna.org/projects/grub4dos/)|
 |nvspbind|Windows NIC binding tool|[March 11,2010](http://archive.msdn.microsoft.com/nvspbind/Release/ProjectReleases.aspx?ReleaseId=3837)|[MSDN Code Gallery Licenses](http://archive.msdn.microsoft.com/nvspbind/Project/License.aspx)|
@@ -30,7 +30,7 @@
 
 
 | Name|  Description| Version (source download link) |  License Type (Link to license)|
-|--|--|--|--|
+|---|---|---|---|
 |Java| Java Virtual Machine | "1.8" | [Oracle Binary Code License](http://www.oracle.com/technetwork/java/javase/jre-8-readme-2095710.html)|
 |Eclipse RCP| Standard Windows Toolkit | "Indigo" | [EPL](http://www.eclipse.org/org/documents/epl-v10.php)|
 |VI Java| VMware infrastructure API for java | "2.1" | BSD|
