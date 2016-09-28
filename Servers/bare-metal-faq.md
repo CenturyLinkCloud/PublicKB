@@ -23,16 +23,18 @@ Server configurations are available depending on data center locations.  Please 
   * Storage is 4x2TB 7200 RAID 5 (5.46TB usable)
 * 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC
   * Storage is 6x2TB 7200 RAID 5 (9.09TB usable)
-* 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC
+* 24 cores (2.3GHz 2x12 E5), 128 GB RAM, dual 10Gb NIC
   * Storage is 1x960GB SSD (960GB usable)  
-* 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC
+* 24 cores (2.3GHz 2x12 E5), 128 GB RAM, dual 10Gb NIC
   * Storage is 1x3.84TB SSD (3.84TB usable)  
-* 24 cores (2.3GHz 2x10 E5), 512 GB RAM, dual 10Gb NIC
+* 24 cores (2.3GHz 2x12 E5), 512 GB RAM, dual 10Gb NIC
   * Storage is 1x3.84TB SSD (3.84TB usable)    
 * 20 cores (2.3GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC
-  * Storage is 12x6TB 7200 RAID Configurable (72TB usable)  
-* 16 cores (2.4GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC
-  * Storage is 4x6TB 7200 RAID Configurable (24TB usable)  
+  * Storage is 2x800GB SSD (1.6TB usable)
+  * Storage is 12x2TB 7200 RAID/JBOD Configurable (24TB usable)  
+* 16 cores (2.4GHz 2x8 E5), 256 GB RAM, dual 10Gb NIC
+  * Storage is 2x800GB SSD (1.6TB usable)
+  * Storage is 4x4TB 7200 RAID/JBOD Configurable (16TB usable)  
 
 **Why don't I see the option to provision a Bare Metal?**
 
@@ -48,11 +50,11 @@ As we expand our Bare Metal product offering, we are trying to match customer de
 | 4 cores (3.6GHz E3), 16 GB RAM, 10Gb NIC Storage is 2x1TB 7200 RAID 1 (0.91TB usable)                         | ✔                        | ✔                            |                          |                          |                                 |
 | 12 cores (2.4GHz 2x6 E5), 64 GB RAM, dual 10Gb NIC Storage is 4x2TB 7200 RAID 5 (5.46TB usable)            | ✔                        | ✔                            |                          |                          |                                 |
 | 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC Storage is 6x2TB 7200 RAID 5 (9.09TB usable)          | ✔                        | ✔                            |                          |                          |                                 |
-| 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC Storage is 1x960GB SSD (960GB usable)                 |                          |                              | ✔                        | ✔                        | ✔                               |
-| 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC Storage is 1x3.84TB SSD (3.84TB usable)               |                          |                              | ✔                        | ✔                        | ✔                               |
-| 24 cores (2.3GHz 2x10 E5), 512 GB RAM, dual 10Gb NIC Storage is 1x3.84TB SSD (3.84TB usable)               |                          |                              | ✔                        | ✔                        | ✔                               |
-| 20 cores (2.3GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC Storage is 12x6TB 7200 RAID Configurable (72TB usable) |                          |                              | ✔                        | ✔                        | ✔                               |
-| 16 cores (2.4GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC Storage is 4x6TB 7200 RAID Configurable (24TB usable) |                          |                              | ✔                        | ✔                        | ✔                               |
+| 24 cores (2.3GHz 2x12 E5), 128 GB RAM, dual 10Gb NIC Storage is 1x960GB SSD (960GB usable)                 |                          |                              | ✔                        | ✔                        | ✔                               |
+| 24 cores (2.3GHz 2x12 E5), 128 GB RAM, dual 10Gb NIC Storage is 1x3.84TB SSD (3.84TB usable)               |                          |                              | ✔                        | ✔                        | ✔                               |
+| 24 cores (2.3GHz 2x12 E5), 512 GB RAM, dual 10Gb NIC Storage is 1x3.84TB SSD (3.84TB usable)               |                          |                              | ✔                        | ✔                        | ✔                               |
+| 20 cores (2.3GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC Storage is 12x2TB 7200 RAID/JBOD Configurable (24TB usable) |                          |                              | ✔                        | ✔                        | ✔                               |
+| 16 cores (2.4GHz 2x8 E5), 256 GB RAM, dual 10Gb NIC Storage is 4x4TB 7200 RAID/JBOD Configurable (16TB usable) |                          |                              | ✔                        | ✔                        | ✔                               |
 
 **Why am I seeing an error saying "limit exceeded" for CPU, memory, or storage when I try to provision a Bare Metal server?**
 
@@ -147,9 +149,11 @@ Storage is pre-defined and not customizable for the following server configurati
 
 Storage is customizable for the following server configurations. The user will be able to select from available options upon provisioning of a server.  Please see additional FAQ on Enabling encryption  on RAID controller below.
 * 20 cores (2.3GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC
-  * Storage is 12x6TB 7200 RAID Configurable (72TB usable)  
+  * Storage is 2x800GB SSD (1.6TB usable)
+  * Storage is 12x2TB 7200 RAID/JBOD Configurable (24TB usable)  
 * 16 cores (2.4GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC
-  * Storage is 4x6TB 7200 RAID Configurable (24TB usable)  
+  * Storage is 2x800GB SSD (1.6TB usable)
+  * Storage is 4x4TB 7200 RAID/JBOD Configurable (16TB usable)  
 
 **Can I configure encryption on the RAID controller?**
 
