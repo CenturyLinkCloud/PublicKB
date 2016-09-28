@@ -155,7 +155,14 @@ Storage is customizable for the following server configurations. The user will b
 
 Yes, encryption can be enabled on servers with the configurable RAID controllers.  That being said, **DO NOT set a "PASS PHRASE" on the RAID controller.**  If a pass phrase is set, data may become unrecoverable because servers will prompt for the phrase upon each reboot and console access is not available for you to use.
 
-For complete customization, you may use the [PERCCLI Utility provided by Dell](http://www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=3XDPP) to configure the controller and disks as desired.  Also, you can find the [PERCCLI Reference Guide](http://topics-cdn.dell.com/pdf/poweredge-rc-h730_Reference%20Guide_en-us.pdf) here.
+For complete customization to configure the RAID controller and disks as desired, you may wish to download and install the following tools provided by Dell:
+
+* [OpenManage Server Administrator (OMSA)](http://www.dell.com/support/contents/us/en/04/article/Product-Support/Self-support-Knowledgebase/enterprise-resource-center/SystemsManagement/OMSA)
+  * [OMSA User Guide](http://www.dell.com/support/manuals/us/en/19/dell-openmanage-server-administrator-v8.3/OMSA_UG/Introduction?guid=GUID-D8D65820-62E7-4AA9-A074-FB9F79BCD7CF&lang=en-us)
+
+For command line scripting:
+* [PERCCLI Utility provided by Dell](http://www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=3XDPP)
+  * [PERCCLI Reference Guide](http://topics-cdn.dell.com/pdf/poweredge-rc-h730_Reference%20Guide_en-us.pdf)
 
 In addition, Runner jobs will soon be made available to help automate certain common configurations making RAID configurations easier.
 
