@@ -86,6 +86,7 @@ There are two methods to deploy s3fs in CenturyLink Cloud, it can be done manual
 5.  Once the above steps are completed, create a directory for the mount point of the new filesystem
 
 **Execute using a package**
+
 A script (S3fs on CentOS 7) is created to speed up the deployment of s3fs on CenturyLink Cloud.  The detail of the package is available [here](//control.ctl.io/Blueprints/Packages/Details?uuid=e12db1ac-9783-45fa-b3f6-ab07c3ab195a&classification=Script&type=AccountLibrary).  The package can be install via the portal, API or CLI.  For API, please refer to the [Execute Package API]()//www.ctl.io/api-docs/v2/#server-actions-execute-package).  The CLI deployment can be done following the command in the [CenturyLink Cloud Guide to CLI](//www.ctl.io/knowledge-base/servers/centurylink-cloud-guide-to-cli/#advanced-usage).  When using the portal, this [Knowledge article](../knowledge-base/servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/)
 
 In the portal, the package can be found by searching for s3fs:
@@ -94,7 +95,7 @@ In the portal, the package can be found by searching for s3fs:
 
 The parameters required for this script are:
 
-![s3fs parameters](../images/s3fs.s3fs-parameters.png)
+![s3fs parameters](../images/s3fs/s3fs-parameters.png)
 
 ### Testing
 - Test the installation with the command below (URL can be either useast.os.ctl.io or canada.os.ctl.io depending on the region of the bucket, for the current list of Object Storage end points, please see [this knowledge article](../Object Storage/object-storage-regions-and-service-points.md)):
