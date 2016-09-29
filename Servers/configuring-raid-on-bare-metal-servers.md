@@ -65,50 +65,55 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
 **Changing the RAID controller mode:**
 
-1.  Connect to OMSA
+  1.  Connect to OMSA
 
-2.  To change controller mode click “Storage” and pick “Change controller mode” under available tasks and click Execute.
+  2.  To change controller mode click “Storage” and pick “Change controller mode” under available tasks and click Execute.
 
 ![](./media/image2.png)
 
-3.  Change controller mode to desired mode and hit “Apply changes”. You can see the current controller mode on this page.
 
-4.  Changing the controller mode requires a reboot.
+  3.  Change controller mode to desired mode and hit “Apply changes”. You can see the current controller mode on this page.
 
-5.  If you are changing from RAID to HBA mode, you will need to delete any security keys, and existing RAID volumes before it will let you switch to HBA mode. Don’t forget to convert your disks back to “Non-RAID disks”.
+  4.  Changing the controller mode requires a reboot.
 
-6.  Restart the machine.
+  5.  If you are changing from RAID to HBA mode, you will need to delete any security keys, and existing RAID volumes before it will let you switch to HBA mode. Don’t forget to convert your disks back to “Non-RAID disks”.
+
+  6.  Restart the machine.
 
 **Creating a RAID volume:**
 
-1.  Connect to OMSA
+  1.  Connect to OMSA
 
-2.  Before we can create a RAID we must convert the disks to RAID mode. Click storage, then under available tasks for the controller choose “Convert to RAID Capable Disks”
+  2.  Before we can create a RAID we must convert the disks to RAID mode. Click storage, then under available tasks for the controller choose “Convert to RAID Capable Disks”
 
 ![](./media/image3.png)
 
-3.  Select your disks you wish to create a RAID volume with and select apply.
 
-4.  Now choose “Create Virtual Disk” from the Available task list.
+  3.  Select your disks you wish to create a RAID volume with and select apply.
+
+  4.  Now choose “Create Virtual Disk” from the Available task list.
 
 ![](./media/image4.png)
 
-5.  Choose “Express Wizard” and choose your desired RAID level from the dropdown list and hit continue.
 
-6.  Type in a name for your volume. Validate that all of the settings you expect are correct. Note that you may set up a hot spare at this time if you choose and your RAID setting allows it.
+  5.  Choose “Express Wizard” and choose your desired RAID level from the dropdown list and hit continue.
+
+  6.  Type in a name for your volume. Validate that all of the settings you expect are correct. Note that you may set up a hot spare at this time if you choose and your RAID setting allows it.
 
 ![](./media/image5.png)
 
-7.  Once proceeding, you should have a new RAID volume available. You will need to format it, and assign it a drive letter before you can use it.
+
+  7.  Once proceeding, you should have a new RAID volume available. You will need to format it, and assign it a drive letter before you can use it.
 
 **Deleting a RAID Volume:**
 
-1.  Connect to OMSA
+  1.  Connect to OMSA
 
-2.  Expand “Storage” -&gt; PERC H730 Adapter -&gt; Virtual Disks
+  2.  Expand “Storage” -&gt; PERC H730 Adapter -&gt; Virtual Disks
 
-3.  Choose “Delete” from the available tasks on the Virtual Disk you wish to delete.
+  3.  Choose “Delete” from the available tasks on the Virtual Disk you wish to delete.
 
 ![](./media/image6.png)
 
-4.  It will warn you that all data will be lost. Confirm and your volume has been deleted.
+
+  4.  It will warn you that all data will be lost. Confirm and your volume has been deleted.
