@@ -116,4 +116,4 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 ![](./media/image6.png)
 
 
-  4.  It will warn you that all data will be lost. Confirm and your volume has been deleted.
+    4.  It will warn you that all data will be lost. Confirm and your volume has been deleted.
