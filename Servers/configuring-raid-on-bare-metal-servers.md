@@ -27,7 +27,7 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
   2.  Run and Extract
 
-    ![](./media/image1.png)
+    ![](../images/bare_metal_omsa_1.png)
 
 
   3.  Run installer from C:\\OpenManager\\windows\\setup.exe
