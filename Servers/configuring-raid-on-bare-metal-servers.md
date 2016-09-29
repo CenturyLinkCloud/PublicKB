@@ -69,7 +69,7 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
   2.  To change controller mode click “Storage” and pick “Change controller mode” under available tasks and click Execute.
 
-![](./media/image2.png)
+    ![](./media/image2.png)
 
 
   3.  Change controller mode to desired mode and hit “Apply changes”. You can see the current controller mode on this page.
@@ -86,21 +86,21 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
   2.  Before we can create a RAID we must convert the disks to RAID mode. Click storage, then under available tasks for the controller choose “Convert to RAID Capable Disks”
 
-![](./media/image3.png)
+    ![](./media/image3.png)
 
 
   3.  Select your disks you wish to create a RAID volume with and select apply.
 
   4.  Now choose “Create Virtual Disk” from the Available task list.
 
-![](./media/image4.png)
+    ![](./media/image4.png)
 
 
   5.  Choose “Express Wizard” and choose your desired RAID level from the dropdown list and hit continue.
 
   6.  Type in a name for your volume. Validate that all of the settings you expect are correct. Note that you may set up a hot spare at this time if you choose and your RAID setting allows it.
 
-![](./media/image5.png)
+    ![](./media/image5.png)
 
 
   7.  Once proceeding, you should have a new RAID volume available. You will need to format it, and assign it a drive letter before you can use it.
@@ -113,7 +113,7 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
   3.  Choose “Delete” from the available tasks on the Virtual Disk you wish to delete.
 
-![](./media/image6.png)
+    ![](./media/image6.png)
 
 
-    4.  It will warn you that all data will be lost. Confirm and your volume has been deleted.
+  4.  It will warn you that all data will be lost. Confirm and your volume has been deleted.
