@@ -59,7 +59,7 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
 **Connecting to OMSA:**
 
-1.  To connect to OMSA, after installing go to https://<yourIPaddress>:1311
+1.  To connect to OMSA, after installing go to ```https://<yourIPaddress>:1311```
 
 2.  You will be prompted to enter credentials. Use the administrator or root user and password to log in.
 
