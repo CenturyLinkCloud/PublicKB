@@ -1,4 +1,16 @@
-{{{ "title": "Configuring the RAID controller on Bare Metal using OpenManage Server Administrator (OMSA)", "date": "9-29-2016", "author": "Joseph Nguyen", "attachments": \[\], "contentIsHTML": false }}}
+### {{{
+
+###  "title": "Configuring the RAID controller on Bare Metal using OpenManage Server Administrator (OMSA)",
+
+###  "date": "9-29-2016",
+
+###  "author": "Joseph Nguyen",
+
+###  "attachments": \[\],
+
+###  "contentIsHTML": false
+
+### }}}
 
 ### Description
 
@@ -12,9 +24,7 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
 ### Steps
 
-**Installing OMSA:**
-
-**Windows**
+**Installing OMSA for Windows:**
 
 1.  To start, download [OMSA install files.](http://www.dell.com/support/contents/us/en/04/article/Product-Support/Self-support-Knowledgebase/enterprise-resource-center/SystemsManagement/OMSA)
 
@@ -26,7 +36,7 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
 2.  Perform install
 
-**CentOS/Red Hat**
+**Installing OMSA for CentOS/Red Hat:**
 
 1.  \# wget -q -O - http://linux.dell.com/repo/hardware/dsu/bootstrap.cgi | bash
 
@@ -36,7 +46,7 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
 4.  \# reboot
 
-**Ubuntu**
+**Installing OMSA for Ubuntu:**
 
 1.  \# echo 'deb http://linux.dell.com/repo/community/ubuntu trusty openmanage' | sudo tee -a /etc/apt/sources.list.d/linux.dell.com.sources.list
 
@@ -48,7 +58,7 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
 5.  \# apt-get install srvadmin-all
 
-6.  6. reboot
+6.  reboot
 
 **Connecting to OMSA**
 
