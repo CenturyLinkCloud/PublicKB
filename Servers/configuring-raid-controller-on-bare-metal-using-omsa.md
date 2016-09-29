@@ -18,7 +18,11 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
 > ![](./media/image1.png)
 
+<<<<<<< HEAD
 2.  Run installer from C:\\OpenManage\\windows\\setup.exe
+=======
+3.  Run installer from C:\\OpenManage\\windows\\setup.exe
+>>>>>>> origin/master
 
 4.  Perform install
 
