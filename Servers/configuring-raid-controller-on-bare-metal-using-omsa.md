@@ -14,86 +14,94 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
 **Installing OMSA:**
 
-*Windows*
+**Windows**
 
-1. To start, download [OMSA install files.](http://www.dell.com/support/contents/us/en/04/article/Product-Support/Self-support-Knowledgebase/enterprise-resource-center/SystemsManagement/OMSA)
+1.  To start, download [OMSA install files.](http://www.dell.com/support/contents/us/en/04/article/Product-Support/Self-support-Knowledgebase/enterprise-resource-center/SystemsManagement/OMSA)
 
-2. Run and Extract PIC1
+2.  Run and Extract
 
-3. Run installer from C:.execute
+> ![](./media/image1.png)
 
-4. Perform install
+1.  Run installer from C:\\OpenManage\\windows\\setup.exe
 
-*CentOS/Red Hat*
+2.  Perform install
 
-1. \# wget -q -O - http://linux.dell.com/repo/hardware/dsu/bootstrap.cgi | bash
+**CentOS/Red Hat**
 
-2. \# yum install dell-system-update -y
+1.  \# wget -q -O - http://linux.dell.com/repo/hardware/dsu/bootstrap.cgi | bash
 
-3. \# yum install srvadmin-all -y
+2.  \# yum install dell-system-update -y
 
-4. \# reboot
+3.  \# yum install srvadmin-all -y
 
-*Ubuntu*
+4.  \# reboot
 
-1. \# echo 'deb http://linux.dell.com/repo/community/ubuntu trusty openmanage' | sudo tee -a /etc/apt/sources.list.d/linux.dell.com.sources.list
+**Ubuntu**
 
-2. \# gpg --keyserver pool.sks-keyservers.net --recv-key 1285491434D8786F
+1.  \# echo 'deb http://linux.dell.com/repo/community/ubuntu trusty openmanage' | sudo tee -a /etc/apt/sources.list.d/linux.dell.com.sources.list
 
-3. \# gpg -a --export 1285491434D8786F | sudo apt-key add –
+2.  \# gpg --keyserver pool.sks-keyservers.net --recv-key 1285491434D8786F
 
-4. \# apt-get update
+3.  \# gpg -a --export 1285491434D8786F | sudo apt-key add –
 
-5. \# apt-get install srvadmin-all 6. reboot
+4.  \# apt-get update
+
+5.  \# apt-get install srvadmin-all
+
+6.  6. reboot
 
 **Connecting to OMSA**
 
-1. To connect to OMSA, after installing go to [https://:1311](NULL)
+1.  To connect to OMSA, after installing go to
 
-2. You will be prompted to enter credentials. Use the administrator or root user and password to log in.
+2.  You will be prompted to enter credentials. Use the administrator or root user and password to log in.
 
 **Changing the RAID controller mode**
 
-1. Connect to OMSA
+1.  Connect to OMSA
 
-2. To change controller mode click “Storage” and pick “Change controller mode” under available tasks and click Execute.
+2.  To change controller mode click “Storage” and pick “Change controller mode” under available tasks and click Execute.
 
-PIC2
+> ![](./media/image2.png)
 
-3. Change controller mode to desired mode and hit “Apply changes”. You can see the current controller mode on this page.
+1.  Change controller mode to desired mode and hit “Apply changes”. You can see the current controller mode on this page.
 
-1. Changing the controller mode requires a reboot.
+2.  Changing the controller mode requires a reboot.
 
-2. If you are changing from RAID to HBA mode, you will need to delete any security keys, and existing RAID volumes before it will let you switch to HBA mode. Don’t forget to convert your disks back to “Non-RAID disks”.
+3.  If you are changing from RAID to HBA mode, you will need to delete any security keys, and existing RAID volumes before it will let you switch to HBA mode. Don’t forget to convert your disks back to “Non-RAID disks”.
 
-4. Restart the machine.
+4.  Restart the machine.
 
 **Creating a RAID volume**
 
-1. Connect to OMSA
+1.  Connect to OMSA
 
-2. Before we can create a RAID we must convert the disks to RAID mode. Click storage, then under available tasks for the controller choose “Convert to RAID Capable Disks” PIC3
+2.  Before we can create a RAID we must convert the disks to RAID mode. Click storage, then under available tasks for the controller choose “Convert to RAID Capable Disks”
 
-3. Select your disks you wish to create a RAID volume with and select apply.
+> ![](./media/image3.png)
 
-4. Now choose “Create Virtual Disk” from the Available task list. PIC4
+1.  Select your disks you wish to create a RAID volume with and select apply.
 
-5. Choose “Express Wizard” and choose your desired RAID level from the dropdown list and hit continue.
+2.  Now choose “Create Virtual Disk” from the Available task list.
 
-6. Type in a name for your volume. Validate that all of the settings you expect are correct. Note that you may set up a hot spare at this time if you choose and your RAID setting allows it.
+> ![](./media/image4.png)
 
-PIC5
+1.  Choose “Express Wizard” and choose your desired RAID level from the dropdown list and hit continue.
 
-7. Once proceeding, you should have a new RAID volume available. You will need to format it, and assign it a drive letter before you can use it.
+2.  Type in a name for your volume. Validate that all of the settings you expect are correct. Note that you may set up a hot spare at this time if you choose and your RAID setting allows it.
+
+> ![](./media/image5.png)
+
+1.  Once proceeding, you should have a new RAID volume available. You will need to format it, and assign it a drive letter before you can use it.
 
 **Deleting a RAID Volume**
 
-1. Connect to OMSA
+1.  Connect to OMSA
 
-2. Expand “Storage”  PERC H730 Adapter  Virtual Disks
+2.  Expand “Storage”  PERC H730 Adapter  Virtual Disks
 
-3. Choose “Delete” from the available tasks on the Virtual Disk you wish to delete.
+3.  Choose “Delete” from the available tasks on the Virtual Disk you wish to delete.
 
-PIC6
+> ![](./media/image6.png)
 
-4. It will warn you that all data will be lost. Confirm and your volume has been deleted.
+1.  It will warn you that all data will be lost. Confirm and your volume has been deleted.
