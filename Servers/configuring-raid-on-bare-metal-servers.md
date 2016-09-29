@@ -30,8 +30,8 @@ This article will walk you through how to use Dell's OpenManage Server Administr
     ![](./media/image1.png)
 
 
-    3.  Run installer from C:\\OpenManager\\windows\\setup.exe
-    4.  Perform install
+  3.  Run installer from C:\\OpenManager\\windows\\setup.exe
+  4.  Perform install
 
 **Installing OMSA for CentOS/Red Hat:**
 
