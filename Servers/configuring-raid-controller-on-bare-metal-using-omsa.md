@@ -1,17 +1,3 @@
-### {{{
-
-###  "title": "Configuring the RAID controller on Bare Metal using OpenManage Server Administrator (OMSA)",
-
-###  "date": "9-29-2016",
-
-###  "author": "Joseph Nguyen",
-
-###  "attachments": \[\],
-
-###  "contentIsHTML": false
-
-### }}}
-
 ### Description
 
 This will only apply to Bare Metal server types where configurable RAID/JBOD is supported. For additional information on which server support this feature refer to our [Bare Metal FAQ](link).
@@ -108,7 +94,7 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
 1.  Connect to OMSA
 
-2.  Expand “Storage”  PERC H730 Adapter  Virtual Disks
+2.  Expand “Storage” -&gt; PERC H730 Adapter -&gt; Virtual Disks
 
 3.  Choose “Delete” from the available tasks on the Virtual Disk you wish to delete.
 
