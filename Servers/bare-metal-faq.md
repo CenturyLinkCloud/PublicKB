@@ -56,6 +56,8 @@ As we expand our Bare Metal product offering, we are trying to match customer de
 | 20 cores (2.3GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC Storage is 12x2TB 7200 RAID/JBOD Configurable (24TB usable) |                          |                              | ✔                        | ✔                        | ✔                               |
 | 16 cores (2.4GHz 2x8 E5), 256 GB RAM, dual 10Gb NIC Storage is 4x4TB 7200 RAID/JBOD Configurable (16TB usable) |                          |                              | ✔                        | ✔                        | ✔                               |
 
+<sup>1</supp> Scheduled launch for AU1 is the week of October 3rd 2016
+
 **Why am I seeing an error saying "limit exceeded" for CPU, memory, or storage when I try to provision a Bare Metal server?**
 
 All accounts start with a pre-defined resource (CPU/memory/storage) limit per data center. Bare Metal server resources are included as part of these limits. If you've reached the limits for your account, you may contact Customer Care to [request an increase on your resource limits](../Control Portal/how-to-increase-resources-on-account.md).
