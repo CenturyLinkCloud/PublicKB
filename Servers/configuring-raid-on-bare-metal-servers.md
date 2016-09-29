@@ -5,7 +5,7 @@
 "author": "Joe Nguyen & Bryan Friedman",
 "attachments": [],
 "contentIsHTML": false,
-"sticky": false 
+"sticky": false
 }}}
 
 
@@ -23,15 +23,15 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
 **Installing OMSA for Windows:**
 
-1.  To start, download [OMSA install files.](http://www.dell.com/support/contents/us/en/04/article/Product-Support/Self-support-Knowledgebase/enterprise-resource-center/SystemsManagement/OMSA)
+  1.  To start, download [OMSA install files.](http://www.dell.com/support/contents/us/en/04/article/Product-Support/Self-support-Knowledgebase/enterprise-resource-center/SystemsManagement/OMSA)
 
-2.  Run and Extract
+  2.  Run and Extract
 
-![](./media/image1.png)
+    ![](./media/image1.png)
 
-2.  Run installer from C:\\OpenManage\\windows\\setup.exe
-3.  Run installer from C:\\OpenManage\\windows\\setup.exe
-4.  Perform install
+
+    3.  Run installer from C:\\OpenManager\\windows\\setup.exe
+    4.  Perform install
 
 **Installing OMSA for CentOS/Red Hat:**
 
@@ -57,13 +57,13 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
 6.  reboot
 
-**Connecting to OMSA**
+**Connecting to OMSA:**
 
 1.  To connect to OMSA, after installing go to
 
 2.  You will be prompted to enter credentials. Use the administrator or root user and password to log in.
 
-**Changing the RAID controller mode**
+**Changing the RAID controller mode:**
 
 1.  Connect to OMSA
 
@@ -79,7 +79,7 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
 6.  Restart the machine.
 
-**Creating a RAID volume**
+**Creating a RAID volume:**
 
 1.  Connect to OMSA
 
@@ -101,7 +101,7 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
 7.  Once proceeding, you should have a new RAID volume available. You will need to format it, and assign it a drive letter before you can use it.
 
-**Deleting a RAID Volume**
+**Deleting a RAID Volume:**
 
 1.  Connect to OMSA
 
