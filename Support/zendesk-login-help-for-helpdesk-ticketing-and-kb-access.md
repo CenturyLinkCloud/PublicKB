@@ -1,20 +1,20 @@
 {{{
-  "title": "Zendesk Login Help for Helpdesk ticketing and KB access",
-  "date": "11-12-2014",
-  "author": "Jon McClary",
+  "title": "Accessing the Support ticketing web interface",
+  "date": "9-22-2016",
+  "author": "Erik Jensen",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
 ### Description (Goal/Purpose)
-CenturyLink Cloud utilizes Zendesk ([support.ctl.io](https://support.ctl.io)) for ticketing. This allows for the ability to receive email updates and create/view tickets in a web interface. The creation of a free account is required for access which is different than a [Control Portal](https://control.ctl.io) account.
+CenturyLink Cloud implements with Zendesk ([support.ctl.io](https://support.ctl.io)) for support ticketing services. This provides our customers with the capability to receive email updates on tickets they have opened with us.  It also enables access to the support web interface, where users can create, view, and edit request tickets. Access to the support web interface requires the creation of a Zendesk account, which is separate from your [Control Portal](https://control.ctl.io) user account.
 
 ### Audience
 Customers
 
 ### Detailed Steps
 ##### Scenario A:
-You have communicated with CenturyLink Cloud in the past. This means your email address likely already registered, but your account does not a password set.
+You have communicated with CenturyLink Cloud in the past using email. The email address should already be registered in Zendesk, but your account may not have a password set unless you've taken steps to do so.
 * [Request a password reset link be emailed to you.](https://t3n.zendesk.com/auth/v2/login/password_reset)
 
 ##### Scenario B:
