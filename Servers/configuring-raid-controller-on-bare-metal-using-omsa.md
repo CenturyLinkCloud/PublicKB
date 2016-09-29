@@ -18,9 +18,9 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
 > ![](./media/image1.png)
 
-1.  Run installer from C:\\OpenManage\\windows\\setup.exe
+3.  Run installer from C:\\OpenManage\\windows\\setup.exe
 
-2.  Perform install
+4.  Perform install
 
 **Installing OMSA for CentOS/Red Hat:**
 
@@ -60,13 +60,13 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
 > ![](./media/image2.png)
 
-1.  Change controller mode to desired mode and hit “Apply changes”. You can see the current controller mode on this page.
+3.  Change controller mode to desired mode and hit “Apply changes”. You can see the current controller mode on this page.
 
-2.  Changing the controller mode requires a reboot.
+4.  Changing the controller mode requires a reboot.
 
-3.  If you are changing from RAID to HBA mode, you will need to delete any security keys, and existing RAID volumes before it will let you switch to HBA mode. Don’t forget to convert your disks back to “Non-RAID disks”.
+5.  If you are changing from RAID to HBA mode, you will need to delete any security keys, and existing RAID volumes before it will let you switch to HBA mode. Don’t forget to convert your disks back to “Non-RAID disks”.
 
-4.  Restart the machine.
+6.  Restart the machine.
 
 **Creating a RAID volume**
 
@@ -76,19 +76,19 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
 > ![](./media/image3.png)
 
-1.  Select your disks you wish to create a RAID volume with and select apply.
+3.  Select your disks you wish to create a RAID volume with and select apply.
 
-2.  Now choose “Create Virtual Disk” from the Available task list.
+4.  Now choose “Create Virtual Disk” from the Available task list.
 
 > ![](./media/image4.png)
 
-1.  Choose “Express Wizard” and choose your desired RAID level from the dropdown list and hit continue.
+5.  Choose “Express Wizard” and choose your desired RAID level from the dropdown list and hit continue.
 
-2.  Type in a name for your volume. Validate that all of the settings you expect are correct. Note that you may set up a hot spare at this time if you choose and your RAID setting allows it.
+6.  Type in a name for your volume. Validate that all of the settings you expect are correct. Note that you may set up a hot spare at this time if you choose and your RAID setting allows it.
 
 > ![](./media/image5.png)
 
-1.  Once proceeding, you should have a new RAID volume available. You will need to format it, and assign it a drive letter before you can use it.
+7.  Once proceeding, you should have a new RAID volume available. You will need to format it, and assign it a drive letter before you can use it.
 
 **Deleting a RAID Volume**
 
@@ -100,4 +100,4 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
 > ![](./media/image6.png)
 
-1.  It will warn you that all data will be lost. Confirm and your volume has been deleted.
+4.  It will warn you that all data will be lost. Confirm and your volume has been deleted.
