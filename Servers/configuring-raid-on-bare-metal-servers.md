@@ -95,7 +95,7 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
   ![](../images/bare_metal_omsa_4.png)
 
-5.  Choose “Express Wizard” and choose your desired RAID level from the dropdown list and hit continue.
+5.  Choose **Express Wizard** or **Advanced Wizard** and your desired RAID level from the dropdown list and hit continue. Advanced Wizard is recommended for most cases as it permits the user to define the number of disks in the RAID Virtual Disk instead of using predefined configurations.
 
 6.  Type in a name for your volume. Validate that all of the settings you expect are correct. Note that you may set up a hot spare at this time if you choose and your RAID setting allows it.
 
