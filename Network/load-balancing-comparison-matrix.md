@@ -9,7 +9,7 @@
 
 ### Overview
 
-CenturyLink Cloud offers customers a wide range of load balancing solutions in our product catalog.  Customers who wish to quickly review the choices along with features and capabilities can use the comparison matrix below.  choice of shared or dedicated load balancing services delivered using Citrix Netscaler VPX devices. The matrix below provides a high level comparison of the two offerings allowing customers to make informed decisions on their **Layer 4** load balancing solution.
+CenturyLink Cloud offers customers a wide range of load balancing solutions in our product catalog.  Customers who wish to quickly review the choices along with features and capabilities can use the comparison matrix below.  choice of shared or dedicated load balancing services delivered using Citrix Netscaler VPX devices.
 
 ### Comparison Matrix
 
@@ -25,6 +25,7 @@ SSL Offloading|No|No|Yes|Yes
 SLA<sup>2</sup>|Yes|Yes|No|No
 Support<sup>3</sup>|Yes|Yes|No|No
 Locations|VA1<br>UC1|Any|Any|Any
+OSI Model<sup>5</sup>|Layer 4|Layer 4|Layer 4<br>Layer 7|Layer 4<br>Layer 7
 
 <sup>1: Control Integration at a minimum allows a customer to implement the service on-demand, operate it via self-service in the UX (or using API) with a pay as you go model.</sup>
 
@@ -33,6 +34,8 @@ Locations|VA1<br>UC1|Any|Any|Any
 <sup>3: Support is defined as an agreement between CenturyLink and the customer to provide technical support and incident management for the load balancing service</sup>
 
 <sup>4: [CenturyLink offers](ctl.io/pricing) various pricing models for the Citrix VPX virtual appliance based on performance and availability needs.  Customers can elect to upgrade **edition** and **availability** configurations at any time.
+
+<sup>5: Layer 4 is related to fourth layer of the OSI model: transport level. For example: TCP and UDP protocols are transport level.<br>Layer 7 is related to seventh layer of the OSI model: application level. For example: HTTP, FTP, SMTP, DNS protocols are application level.
 
 ### Additional Details
 The links below provide supporting material that can assist a customer with further evaluating the proper load balancing service for their needs.
