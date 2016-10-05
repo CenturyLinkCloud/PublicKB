@@ -24,7 +24,7 @@ Health Checks|No|Yes|Yes|Yes
 SSL Offloading|No|No|Yes|Yes
 SLA<sup>2</sup>|Yes|Yes|No|No
 Support<sup>3</sup>|Yes|Yes|No|No
-Locations|VA1<br>UC1|Any|Any|Any
+Locations|Any|VA1<br>UC1|Any|Any
 OSI Model<sup>5</sup>|Layer 4|Layer 4|Layer 4<br>Layer 7|Layer 4<br>Layer 7
 
 <sup>1: Control Integration at a minimum allows a customer to implement the service on-demand, operate it via self-service in the UX (or using API) with a pay as you go model.</sup>
