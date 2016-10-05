@@ -23,16 +23,18 @@ Server configurations are available depending on data center locations.  Please 
   * Storage is 4x2TB 7200 RAID 5 (5.46TB usable)
 * 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC
   * Storage is 6x2TB 7200 RAID 5 (9.09TB usable)
-* 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC
+* 24 cores (2.3GHz 2x12 E5), 128 GB RAM, dual 10Gb NIC
   * Storage is 1x960GB SSD (960GB usable)  
-* 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC
+* 24 cores (2.3GHz 2x12 E5), 128 GB RAM, dual 10Gb NIC
   * Storage is 1x3.84TB SSD (3.84TB usable)  
-* 24 cores (2.3GHz 2x10 E5), 512 GB RAM, dual 10Gb NIC
+* 24 cores (2.3GHz 2x12 E5), 512 GB RAM, dual 10Gb NIC
   * Storage is 1x3.84TB SSD (3.84TB usable)    
 * 20 cores (2.3GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC
-  * Storage is 12x6TB 7200 RAID Configurable (72TB usable)  
-* 16 cores (2.4GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC
-  * Storage is 4x6TB 7200 RAID Configurable (24TB usable)  
+  * Storage is 2x800GB SSD (1.6TB usable)
+  * Storage is 12x2TB 7200 RAID/JBOD Configurable (24TB usable)  
+* 16 cores (2.4GHz 2x8 E5), 256 GB RAM, dual 10Gb NIC
+  * Storage is 2x800GB SSD (1.6TB usable)
+  * Storage is 4x4TB 7200 RAID/JBOD Configurable (16TB usable)  
 
 **Why don't I see the option to provision a Bare Metal?**
 
@@ -43,16 +45,16 @@ There are a couple reasons you might not see the option for Bare Metal servers. 
 Not all data centers will carry all server types.
 As we expand our Bare Metal product offering, we are trying to match customer demand with server types by locations.  Please see table below for availability of server types by data centers. If you would like to see certain server types in specific data centers, we would love to hear from you. Please drop us a note by submitting a [Feature Request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/) including a brief explanation of your use case and the need for the particular configuration of resources and location.
 
-| Data Centers                                                                                                 | US East (Sterling) - VA1 | Great Britain (Slough) - GB3 | US East (New York) - NY1 | Canada (Vancouver) - CA1 | APAC (Australia - Sydney) - AU1 |
-|--------------------------------------------------------------------------------------------------------------|--------------------------|------------------------------|--------------------------|--------------------------|---------------------------------|
-| 4 cores (3.6GHz E3), 16 GB RAM, 10Gb NIC Storage is 2x1TB 7200 RAID 1 (0.91TB usable)                         | ✔                        | ✔                            |                          |                          |                                 |
-| 12 cores (2.4GHz 2x6 E5), 64 GB RAM, dual 10Gb NIC Storage is 4x2TB 7200 RAID 5 (5.46TB usable)            | ✔                        | ✔                            |                          |                          |                                 |
-| 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC Storage is 6x2TB 7200 RAID 5 (9.09TB usable)          | ✔                        | ✔                            |                          |                          |                                 |
-| 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC Storage is 1x960GB SSD (960GB usable)                 |                          |                              | ✔                        | ✔                        | ✔                               |
-| 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC Storage is 1x3.84TB SSD (3.84TB usable)               |                          |                              | ✔                        | ✔                        | ✔                               |
-| 24 cores (2.3GHz 2x10 E5), 512 GB RAM, dual 10Gb NIC Storage is 1x3.84TB SSD (3.84TB usable)               |                          |                              | ✔                        | ✔                        | ✔                               |
-| 20 cores (2.3GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC Storage is 12x6TB 7200 RAID Configurable (72TB usable) |                          |                              | ✔                        | ✔                        | ✔                               |
-| 16 cores (2.4GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC Storage is 4x6TB 7200 RAID Configurable (24TB usable) |                          |                              | ✔                        | ✔                        | ✔                               |
+Location|Available Configurations<sup>1</sup>
+--------|------------------------
+US East (Sterling)-VA1|4 cores E3/16 GB RAM/2x1TB 7200 RAID 1 (0.91TB usable)<br>12 cores E5/64 GB RAM/4x2TB 7200 RAID 5 (5.46TB usable)<br>20 cores E5/128 GB RAM/6x2TB 7200 RAID 5 (9.09TB usable)
+Great Britain (Slough)-GB3|4 cores E3/16 GB RAM/2x1TB 7200 RAID 1 (0.91TB usable)<br>12 cores E5/64 GB RAM/4x2TB 7200 RAID 5 (5.46TB usable)<br>20 cores E5/128 GB RAM/6x2TB 7200 RAID 5 (9.09TB usable)
+US East (New York)-NY1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
+Canada (Vancouver)-CA1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
+Australia (Sydney)-AU1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
+
+<sup>1: All Physical servers include 10Gbps Network Interfaces</sup><br>
+<sup>2: SATA Disks are attached to Dell PERC H730 RAID Controllers and can operate in HBA/JBOD or RAID mode<sup>
 
 **Why am I seeing an error saying "limit exceeded" for CPU, memory, or storage when I try to provision a Bare Metal server?**
 
@@ -147,15 +149,24 @@ Storage is pre-defined and not customizable for the following server configurati
 
 Storage is customizable for the following server configurations. The user will be able to select from available options upon provisioning of a server.  Please see additional FAQ on Enabling encryption  on RAID controller below.
 * 20 cores (2.3GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC
-  * Storage is 12x6TB 7200 RAID Configurable (72TB usable)  
+  * Storage is 2x800GB SSD (1.6TB usable)
+  * Storage is 12x2TB 7200 RAID/JBOD Configurable (24TB usable)  
 * 16 cores (2.4GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC
-  * Storage is 4x6TB 7200 RAID Configurable (24TB usable)  
+  * Storage is 2x800GB SSD (1.6TB usable)
+  * Storage is 4x4TB 7200 RAID/JBOD Configurable (16TB usable)  
 
 **Can I configure encryption on the RAID controller?**
 
 Yes, encryption can be enabled on servers with the configurable RAID controllers.  That being said, **DO NOT set a "PASS PHRASE" on the RAID controller.**  If a pass phrase is set, data may become unrecoverable because servers will prompt for the phrase upon each reboot and console access is not available for you to use.
 
-For complete customization, you may use the [PERCCLI Utility provided by Dell](http://www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=3XDPP) to configure the controller and disks as desired.  Also, you can find the [PERCCLI Reference Guide](http://topics-cdn.dell.com/pdf/poweredge-rc-h730_Reference%20Guide_en-us.pdf) here.
+For complete customization to configure the RAID controller and disks as desired, you may wish to download and install the following tools provided by Dell:
+
+* [OpenManage Server Administrator (OMSA)](http://www.dell.com/support/contents/us/en/04/article/Product-Support/Self-support-Knowledgebase/enterprise-resource-center/SystemsManagement/OMSA)
+  * [OMSA User Guide](http://www.dell.com/support/manuals/us/en/19/dell-openmanage-server-administrator-v8.3/OMSA_UG/Introduction?guid=GUID-D8D65820-62E7-4AA9-A074-FB9F79BCD7CF&lang=en-us)
+
+For command line scripting:
+* [PERCCLI Utility provided by Dell](http://www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=3XDPP)
+  * [PERCCLI Reference Guide](http://topics-cdn.dell.com/pdf/poweredge-rc-h730_Reference%20Guide_en-us.pdf)
 
 In addition, Runner jobs will soon be made available to help automate certain common configurations making RAID configurations easier.
 

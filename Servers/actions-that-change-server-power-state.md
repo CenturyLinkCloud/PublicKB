@@ -1,6 +1,6 @@
 {{{
   "title": "Actions That Change Server Power State",
-  "date": "09-4-2015",
+  "date": "09-29-2016",
   "author": "Chris Little",
   "attachments": [],
   "related-products" : [],
@@ -21,6 +21,7 @@ This guide provides a list of the Operating Systems and Control Portal actions t
 * RedHat Enterprise Linux 7
 * Ubuntu 12
 * Ubuntu 14
+* Ubuntu 16
 * Windows Server 2008 R2
 * Windows Server 2012
 * Windows Server 2012 R2
@@ -29,8 +30,8 @@ This guide provides a list of the Operating Systems and Control Portal actions t
 
 **Action**|**Scale Up**|**Scale Down**
 ----------|------------|--------------
-Change amount of RAM|CentOS 5<br>CentOS 6<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 12<br>Ubuntu 14<br>Windows Server 2008 R2|CentOS 5<br>CentOS 6<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 12<br>Ubuntu 14<br>Windows Server 2008 R2<br>Windows Server 2012<br>Windows Server 2012 R2
-Change number of vCPUs|CentOS 5<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>Windows Server 2008 R2|CentOS 5<br>CentOS 6<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 12<br>Ubuntu 14<br>Windows Server 2008 R2<br>Windows Server 2012<br>Windows Server 2012 R2
+Change amount of RAM|CentOS 5<br>CentOS 6<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 12<br>Ubuntu 14<br>Ubuntu 16<br>Windows Server 2008 R2|CentOS 5<br>CentOS 6<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 12<br>Ubuntu 14<br>Ubuntu 16<br>Windows Server 2008 R2<br>Windows Server 2012<br>Windows Server 2012 R2
+Change number of vCPUs|CentOS 5<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>Ubuntu 16<br>Windows Server 2008 R2|CentOS 5<br>CentOS 6<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 12<br>Ubuntu 14<br>Ubuntu 16<br>Windows Server 2008 R2<br>Windows Server 2012<br>Windows Server 2012 R2
 
 ### Actions That Affect **ALL** Operating System Templates
 
