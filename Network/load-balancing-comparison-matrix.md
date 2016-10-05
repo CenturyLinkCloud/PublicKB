@@ -35,9 +35,7 @@ OSI Model<sup>5</sup>|Layer 4|Layer 4|Layer 4<br>Layer 7|Layer 4<br>Layer 7
 
 <sup>4: [CenturyLink offers](//ctl.io/pricing) various pricing models for the Citrix VPX virtual appliance based on performance and availability needs.  Customers can elect to upgrade **edition** and **availability** configurations at any time.
 
-<sup>5: Please see the definitions of Layer 4 & Layer 7 below:</sup>
-  <sup>Layer 4 is related to fourth layer of the OSI model: transport level. For example: TCP and UDP protocols are transport level.</sup>
-  <sup>Layer 7 is related to seventh layer of the OSI model: application level. For example: HTTP, FTP, SMTP, DNS protocols are application level.</sup>
+<sup>5: Layer 4 is related to fourth layer of the OSI model: transport level. For example: TCP and UDP protocols are transport level. Layer 7 is related to seventh layer of the OSI model: application level. For example: HTTP, FTP, SMTP, DNS protocols are application level.</sup>
 
 ### Additional Details
 The links below provide supporting material that can assist a customer with further evaluating the proper load balancing service for their needs.
