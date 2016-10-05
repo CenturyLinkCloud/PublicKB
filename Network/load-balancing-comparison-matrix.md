@@ -35,11 +35,11 @@ OSI Model<sup>5</sup>|Layer 4|Layer 4|Layer 4<br>Layer 7|Layer 4<br>Layer 7
 
 <sup>3: [Support](//www.ctl.io/support/) is defined as an agreement between CenturyLink and the customer to provide technical support and incident management for the load balancing service. **Limited Support provides customer service engineers to confirm the infrastructure state and virtual machine state.  Customers are responsible for all Day 1, 2 and N operational support.**</sup>
 
-<sup>4: [CenturyLink offers](//ctl.io/pricing) various pricing models for the Citrix VPX virtual appliance based on performance and availability needs.  Customers can elect to upgrade **edition** and **availability** configurations at any time.
+<sup>4: [CenturyLink offers](//ctl.io/pricing) various pricing models for the Citrix VPX virtual appliance based on performance and availability needs.  Customers can elect to upgrade **[edition](//www.citrix.com/products/netscaler-adc/platforms.html#editions)** and **availability** configurations at any time.
 
 <sup>5: Layer 4 is related to fourth layer of the OSI model: transport level. For example: TCP and UDP protocols are transport level. Layer 7 is related to seventh layer of the OSI model: application level. For example: HTTP, FTP, SMTP, DNS protocols are application level.</sup>
 
-<sup>6: CenturyLink provides lifecycle management based on Day 0 (Install), 1 (Configure, Operate), 2 (Optimize, Compliance) and N (Upgrade, Patching) methodologies.  Customers are responsible for any operational support that is not included in the base offering.
+<sup>6: CenturyLink provides lifecycle management based on Day 0 (Install: Import, IP Device), 1 (Configure, Operate), 2 (Optimize, Compliance) and N (Upgrade, Patching) methodologies.  Customers are responsible for any operational support that is not included in the base offering.
 
   ![Lifecycle Management](../images/lifecycle-management.png)
 
