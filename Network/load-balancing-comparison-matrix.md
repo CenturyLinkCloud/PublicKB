@@ -23,8 +23,8 @@ Persistence|SourceIP|SourceIP|[Listing](http://docs.citrix.com/en-us/netscaler/1
 Health Checks|No|Yes|Yes|Yes
 SSL Offloading|No|No|Yes|Yes
 Global Server Load Balancing|No|No|Optional|Optional
-SLA<sup>2</sup>|Yes|Yes|No|No
-Support<sup>3</sup>|Yes|Yes|No|No
+[SLA](//www.ctl.io/legal/sla/)<sup>2</sup>|Yes|Yes|No|No
+[Support](../Support/how-do-i-report-a-support-issue.md)<sup>3</sup>|Yes|Yes|No|No
 Lifecycle Management<sup>6</sup>|Day 0<br>Day 2<br>Day N|Day 0<br>Day 2<br>Day N|Day 0|Day 0
 Locations|Any|VA1<br>UC1|Any|Any
 OSI Model<sup>5</sup>|Layer 4|Layer 4|Layer 4<br>Layer 7|Layer 4<br>Layer 7
@@ -40,6 +40,8 @@ OSI Model<sup>5</sup>|Layer 4|Layer 4|Layer 4<br>Layer 7|Layer 4<br>Layer 7
 <sup>5: Layer 4 is related to fourth layer of the OSI model: transport level. For example: TCP and UDP protocols are transport level. Layer 7 is related to seventh layer of the OSI model: application level. For example: HTTP, FTP, SMTP, DNS protocols are application level.</sup>
 
 <sup>6: CenturyLink provides lifecycle management based on Day 0 (Install), 1 (Configure, Operate), 2 (Optimize, Compliance) and N (Upgrade, Patching) methodologies.  Customers are responsible for any operational support that is not included in the base offering.
+
+  ![Lifecycle Management](../images/lifecycle-management.png)
 
 ### Additional Details
 The links below provide supporting material that can assist a customer with further evaluating the proper load balancing service for their needs.
