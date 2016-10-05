@@ -13,20 +13,20 @@ CenturyLink Cloud offers customers a wide range of load balancing solutions in o
 
 ### Comparison Matrix
 
-**Feature**|**LBaaS<br>(Legacy)**|**LBaaS**|**Citrix VPX<sup>4</sup><br>(Dedicated)**|**[Ecosystem](../Ecosystem Partners\Partner Integration Resources/ecosystem-program-resources.md)**
+**Feature**|**LBaaS<br>(Legacy)**|**LBaaS**|**Citrix VPX<sup>4</sup><br>(Dedicated)**|**[Ecosystem](../Ecosystem Partners/Partner Integration Resources/ecosystem-program-resources.md)**
 -----------|---------------------|---------|-----------------------------------------|-------------
 Control Integration<sup>1</sup>|Yes|Yes|No|No
 High Availability|Yes|Yes|Optional|Optional
 Mode/Port|TCP/80<br>TCP/443|HTTP<br>TCP|Any|Any
 Method|Round Robin<br>Least Connection|Round Robin<br>Least Connection|[Listing](http://docs.citrix.com/en-us/netscaler/11-1/load-balancing/load-balancing-customizing-algorithms.html)|Varies by<br>Vendor
 Persistence|SourceIP|SourceIP|[Listing](http://docs.citrix.com/en-us/netscaler/11-1/load-balancing/load-balancing-persistence/persistence.html)|Varies by<br>Vendor
-Health Checks|No|Yes|Yes|Yes
+Health Checks|No|[Yes](../LBaaS/getting-started-with-load-balancer-as-a-service.md/#health-checks-user-interface)|Yes|Yes
 SSL Offloading|No|No|Yes|Yes
 Global Server Load Balancing|No|No|Optional|Optional
 [SLA](//www.ctl.io/legal/sla/)<sup>2</sup>|Yes|Yes|No|No
 [Support](../Support/how-do-i-report-a-support-issue.md)<sup>3</sup>|Yes|Yes|No|No
 Lifecycle Management<sup>6</sup>|Day 0<br>Day 2<br>Day N|Day 0<br>Day 2<br>Day N|Day 0|Day 0
-Locations|Any|VA1<br>UC1|Any|Any
+[Locations](../General/centurylink-cloud-data-center-locations.md)|Any|VA1<br>UC1|Any|Any
 OSI Model<sup>5</sup>|Layer 4|Layer 4|Layer 4<br>Layer 7|Layer 4<br>Layer 7
 
 <sup>1: Control Integration at a minimum allows a customer to implement the service on-demand, operate it via self-service in the UX (or using API) with a pay as you go model.</sup>
