@@ -23,17 +23,17 @@ Persistence|SourceIP|SourceIP|[Listing](http://docs.citrix.com/en-us/netscaler/1
 Health Checks|No|[Yes](../LBaaS/getting-started-with-load-balancer-as-a-service.md/#health-checks-user-interface)|Yes|Yes
 SSL Offloading|No|No|Yes|Yes
 Global Server Load Balancing|No|No|Optional|Optional
-[SLA](//www.ctl.io/legal/sla/)<sup>2</sup>|Yes|Yes|No|No
-[Support](../Support/how-do-i-report-a-support-issue.md)<sup>3</sup>|Yes|Yes|No|No
+[SLA](//www.ctl.io/legal/sla/)<sup>2</sup>|Yes|Yes|Limited|Limited
+[Support](../Support/how-do-i-report-a-support-issue.md)<sup>3</sup>|Yes|Yes|Limited|Limited
 Lifecycle Management<sup>6</sup>|Day 0<br>Day 2<br>Day N|Day 0<br>Day 2<br>Day N|Day 0|Day 0
 [Locations](../General/centurylink-cloud-data-center-locations.md)|Any|VA1<br>UC1|Any|Any
 OSI Model<sup>5</sup>|Layer 4|Layer 4|Layer 4<br>Layer 7|Layer 4<br>Layer 7
 
 <sup>1: Control Integration at a minimum allows a customer to implement the service on-demand, operate it via self-service in the UX (or using API) with a pay as you go model.</sup>
 
-<sup>2: SLA is defined as an agreement between CenturyLink and the customer to honor service availability via a master service agreement. </sup>
+<sup>2: [SLA](//www.ctl.io/legal/sla/) is defined as an agreement between CenturyLink and the customer to honor service availability for load balancing specific services via a master service agreement. [Limited SLA's include Virtual Machine availability only.](//www.ctl.io/legal/sla/)</sup>
 
-<sup>3: Support is defined as an agreement between CenturyLink and the customer to provide technical support and incident management for the load balancing service</sup>
+<sup>3: [Support](//www.ctl.io/support/) is defined as an agreement between CenturyLink and the customer to provide technical support and incident management for the load balancing service. **Limited Support provides customer service engineers to confirm the infrastructure state and virtual machine state.  Customers are responsible for all Day 1 operational support.**</sup>
 
 <sup>4: [CenturyLink offers](//ctl.io/pricing) various pricing models for the Citrix VPX virtual appliance based on performance and availability needs.  Customers can elect to upgrade **edition** and **availability** configurations at any time.
 
