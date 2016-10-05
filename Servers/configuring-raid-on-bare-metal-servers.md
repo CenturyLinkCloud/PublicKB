@@ -11,7 +11,7 @@
 
 ### Description
 
-This will only apply to Bare Metal server types where configurable RAID/JBOD is supported. For additional information on which server support this feature refer to our [Bare Metal FAQ](bare-metal-faq.md).
+This will only apply to Bare Metal server types where configurable RAID/JBOD is supported. For additional information on which servers support this feature refer to our [Bare Metal FAQ](bare-metal-faq.md).
 
 This article will walk you through how to use Dell's OpenManage Server Administrator tool on Bare Metal. By the end, you should be able to Create and Delete RAID volumes to meet your specific needs.
 
