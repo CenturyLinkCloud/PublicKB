@@ -13,7 +13,7 @@ CenturyLink Cloud offers customers a wide range of load balancing solutions in o
 
 ### Comparison Matrix
 
-**Feature**|**LBaaS<br>(Legacy)**|**LBaaS**|**Citrix VPX<sup>4</sup><br>(Dedicated)**|**Ecosystem**
+**Feature**|**LBaaS<br>(Legacy)**|**LBaaS**|**Citrix VPX<sup>4</sup><br>(Dedicated)**|**[Ecosystem](../Ecosystem Partners\Partner Integration Resources/ecosystem-program-resources.md)**
 -----------|---------------------|---------|-----------------------------------------|-------------
 Control Integration<sup>1</sup>|Yes|Yes|No|No
 High Availability|Yes|Yes|Optional|Optional
