@@ -22,8 +22,10 @@ Method|Round Robin<br>Least Connection|Round Robin<br>Least Connection|[Listing]
 Persistence|SourceIP|SourceIP|[Listing](http://docs.citrix.com/en-us/netscaler/11-1/load-balancing/load-balancing-persistence/persistence.html)|Varies by<br>Vendor
 Health Checks|No|Yes|Yes|Yes
 SSL Offloading|No|No|Yes|Yes
+Global Server Load Balancing|No|No|Optional|Optional
 SLA<sup>2</sup>|Yes|Yes|No|No
 Support<sup>3</sup>|Yes|Yes|No|No
+Lifecycle Management<sup>6</sup>|Day 0<br>Day 2<br>Day N|Day 0<br>Day 2<br>Day N|Day 0|Day 0
 Locations|Any|VA1<br>UC1|Any|Any
 OSI Model<sup>5</sup>|Layer 4|Layer 4|Layer 4<br>Layer 7|Layer 4<br>Layer 7
 
@@ -36,6 +38,8 @@ OSI Model<sup>5</sup>|Layer 4|Layer 4|Layer 4<br>Layer 7|Layer 4<br>Layer 7
 <sup>4: [CenturyLink offers](//ctl.io/pricing) various pricing models for the Citrix VPX virtual appliance based on performance and availability needs.  Customers can elect to upgrade **edition** and **availability** configurations at any time.
 
 <sup>5: Layer 4 is related to fourth layer of the OSI model: transport level. For example: TCP and UDP protocols are transport level. Layer 7 is related to seventh layer of the OSI model: application level. For example: HTTP, FTP, SMTP, DNS protocols are application level.</sup>
+
+<sup>6: CenturyLink provides lifecycle management based on Day 0 (Install), 1 (Configure, Operate), 2 (Optimize, Compliance) and N (Upgrade, Patching) methodologies.  Customers are responsible for Day 'X' management when its not included in the service.  
 
 ### Additional Details
 The links below provide supporting material that can assist a customer with further evaluating the proper load balancing service for their needs.
