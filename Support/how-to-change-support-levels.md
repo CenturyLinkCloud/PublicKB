@@ -1,29 +1,25 @@
 {{{
-  "title": "How To Change Support Levels",
-  "date": "11-30-2015",
-  "author": "Chris Little",
+  "title": "How To Change Your Account Support Level",
+  "date": "9-21-2016",
+  "author": "Erik Jensen",
   "attachments": []
 }}}
 
 ### Overview
 CenturyLink Cloud offers three different types of [Support Levels](https://www.ctl.io/support/):
-* Developer (All online sign up customers)
+* Developer (Default for customers who have signed up via the web)
 * Professional (Default option for contracts)
 * Enterprise (Premier level of support)
 
 ### Determine Your Current Support Level
-1. Determine your current Support Level by logging into the [Control Portal](https://control.ctl.io), then choose SETTINGS under ACCOUNT.
+1. Determine your current Support Level by logging into the [Control Portal](https://control.ctl.io), then click "Settings" and "Account Settings".
 
-  ![Current Support Level](../images/how-to-change-support-levels1.png)
-
-2. Click on Customer Support under the Settings Tab.
-
-  ![Support Service Level](../images/how-to-change-support-levels2.png)
+2. Click on Support under the Settings Tab.
 
 ### Change your Support Level
-You can request a change to your Support Level by sending an email, with the following information, to [help@ctl.io](mailto:help@ctl.io):
-* Account Alias to which changes are to be made.
-* Support Level you are requesting.
-* Your customer PIN for security verification.
+You can request a change to your Support level by sending an email to [help@ctl.io](mailto:help@ctl.io) with the following information:
+* Account Alias to be changed
+* Support Level (Developer, Professional, or Enterprise)
+* Your Control account username and [account PIN](https://www.ctl.io/knowledge-base/support/pin-authentication-for-support-requests/) for security verification purposes
 
-Once your email is received, it will be forwarded to Customer Care, who may reach out for further information/discussion. You will receive a confirmation once the change has been made.
+Your email will generate a ticket to the Customer Care team, who may reach out for further information. You will receive a confirmation once the change has been made to the account.

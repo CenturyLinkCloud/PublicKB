@@ -39,7 +39,7 @@ Mantis is available as a Blueprint for deployment on a new server.
 
 #### Steps to deploy to an existing server Blueprint
 1. Locate the Mantis Stack Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Mantis” in the keyword search on the right side of the page.
    * Locate the 'Install Mantis on Linux' Blueprint.
 
@@ -60,7 +60,7 @@ Mantis is available as a Blueprint for deployment on a new server.
    * Password
 
 4. Review and Confirm the Blueprint.
-   * Click “next: step 2.”
+   * Click `next: step 2`.
    * Verify your configuration details.
 
 5. Deploy the Blueprint.
@@ -69,16 +69,16 @@ Mantis is available as a Blueprint for deployment on a new server.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
-
 
 ### Deploy Mantis to an existing server (alternate option)
 Mantis Stack is available as a Script Package for deployment on an existing server based on your own sizing requirements or to support more advanced configurations such as customized Blueprint Workflows to repeatably deploy multiple stacks on servers.
 
 #### Steps to deploy to an existing server
 1. Deploy or Identify an Existing Server.
-   * Identify the server targeted for Mantis installation. The Operating system must be supported by the Script Package. See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
+   * Identify the server targeted for Mantis installation. The Operating system must be supported by the Script Package.
+   * See the [Creating a new enterprise cloud server](../../Servers/creating-a-new-enterprise-cloud-server.md) KB for more information on completing this step.
 
 2. Select to Execute the Package on a Server Group.
    * Packages can be executed on one more more servers in a Group. Search for the public script package named **Install Mantis on Linux**.
@@ -101,14 +101,13 @@ Mantis Stack is available as a Script Package for deployment on an existing serv
 
 5. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access your Mantis server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
-
-  1. Check email to obtain Server Name and IP Address Login information.
-  2. Log in to the server and start having fun!
+1. Check email to obtain Server Name and IP Address Login information.
+2. Log in to the server and start having fun!
 
 ### Pricing
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Bitnami license costs or additional fees bundled in.

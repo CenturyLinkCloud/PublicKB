@@ -24,29 +24,31 @@ After reading this article, the user should feel comfortable getting started usi
 
 
 ### Prerequisite
-- Access to the CenturyLink Cloud platform as an authorized user
-- Existing Linux x64 server and login access
+* Access to the CenturyLink Cloud platform as an authorized user
+* Existing Linux x64 server and login access
 
 ### Postrequisite
-
-- If you need to connect to your server via the internet, add a Public IP address to your server.  For more information, view this link: http://www.ctl.io/knowledge-base/network/how-to-add-public-ip-to-virtual-machine.md
+* If you need to connect to your server via the internet, add a Public IP address to your server.
+* For more information, view this link: http://www.ctl.io/knowledge-base/network/how-to-add-public-ip-to-virtual-machine.md
 
     ![ip.jpg](https://t3n.zendesk.com/attachments/token/kObGC9P2IjP1ate0NexwFNiXz/?name=ip.jpg)
 
-- Allow incoming traffic for ports to an existing server by managing Firewall rules.  For more information, view this link: http://www.ctl.io/knowledge-base/network/creating-cross-data-center-firewall-policies/
+* Allow incoming traffic for ports to an existing server by managing Firewall rules.  For more information, view this link: http://www.ctl.io/knowledge-base/network/creating-cross-data-center-firewall-policies/
 
     ![port.jpg](https://t3n.zendesk.com/attachments/token/1Ufw0JjIWW8XfASYLh4x3Irl9/?name=port.jpg)
 
-
 ### Install Bitnami Magento on Linux Blueprint
 1. Locate the Bitnami Magento Blueprint.
-   * Starting from the CenturyLink Control Portal, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “Magento” in the keyword search on the right side of the page.
    * Locate the 'Install Bitnami Magento on Linux' Blueprint.
 
-2. Choose and Deploy the Blueprint. Click the “Install Bitnami Magento on Linux” Blueprint.
+2. Choose and Deploy the Blueprint.
+   * Click the “Install Bitnami Magento on Linux” Blueprint.
 
-3. Configure the Blueprint. Complete the information below:
+3. Configure the Blueprint.
+   Complete the information below:
+
    * Execute on Server: Select a Linux x64 server to deploy the Blueprint on.
    * Magento Site Name, e.g., Spatula City
    * Base User Real Name, e.g., John Doe
@@ -66,18 +68,17 @@ After reading this article, the user should feel comfortable getting started usi
    * Start Magento after install?, e.g., Yes
 
 4. Review and Confirm the Blueprint.
-   * Click “next: step 2”.
+   * Click `next: step 2`.
    * Verify your configuration details.
 
 5. Deploy the Blueprint.
-   * Once verified, click on the ‘deploy Blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
+   * Once verified, click on the `deploy blueprint` button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page to allow you to track the progress of the deployment.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the Blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
-
 
 ### Access your Magento server
 After your Blueprint deploys successfully, please follow these instructions to access your server:
@@ -94,5 +95,5 @@ CenturyLink Cloud works with Bitnami to provide open source software integration
 
 #### Who should I contact for support?
 * For issues related to deploying the Bitnami Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the Bitnami Support website: http://www.bitnami.com/support
-* For issues related to cloud infrastructure (VM’s, network, etc), please open a CenturyLink Cloud Support ticket: https://t3n.zendesk.com/tickets/new.
+* For issues related to cloud infrastructure (VM’s, network, etc.), please open a CenturyLink Cloud Support ticket: https://t3n.zendesk.com/tickets/new.
 * For Magento Support, please visit http://www.magentocommerce.com/knowledge-base.

@@ -15,7 +15,7 @@
 <p><strong><em>About Designated Support</em></strong>
 </p>
 <p>Customers who purchase 160 hours or greater blocks of time are assigned a designated person within the Service Engineering team as a primary point of contact. Additional designated contacts are assigned per block of 160 hour support purchased.</p>
-<p>This primary point of contact will works a specified shift based on the Customer’s needs. Consultative requests are performed during that shift. The 160 hour block of time assumes a designated point of contact working 40 hours per week, with a four week
+<p>This primary point of contact will work a specified shift based on the Customer’s needs. Consultative requests are performed during that shift. The 160 hour block of time assumes a designated point of contact working 40 hours per week, with a four week
   per month average. It also assumes that services are performed evenly throughout the month.</p>
 <p>CenturyLink will begin staffing of 160 hour block resources when Customer orders Service Engineering; it may take up to two months to hire personnel.</p>
 <p><strong><em>Cloud Expertise, Not OS &amp; Application Level Expertise</em></strong>

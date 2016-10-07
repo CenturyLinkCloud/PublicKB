@@ -17,7 +17,7 @@
 
 <h3>Prerequisites</h3>
 <ul>
-  <li>Access to CenturyLink Control Portal: https://control.tier3.com</li>
+  <li>Access to CenturyLink Control Portal: https://control.ctl.io</li>
   <li>Access to the server that being re-sized</li>
   <li>No server snapshots in place.</li>
 </ul>
