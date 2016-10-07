@@ -1,5 +1,5 @@
 {{{
-  "title": "Replication and Failover",
+  "title": "Replication and Failover - MySQL Relational DB",
   "date": "01-25-2016",
   "author": "Christine Parr",
   "attachments": [],
@@ -30,6 +30,6 @@ CenturyLink's Relational DB Service is a MySQL-compatible database-as-a-service 
 2. A customer can determine if their database instance is currently running on the primary or replica by selecting the database subscription in question from the "Database Instances" screen. When you click on the subscription in question, it takes you to a details page with a line for Active Instance. This line indicates either 'Primary' or 'Replica'.
 
 3. Manual Failover - To perform a manual failover, navigate to the same location in the UI as described in Step 2 above and click the 'failover' button in the top left corner. This action triggers failover, and the active instance is show as being on the replica.
-   ![Failover](../images/rdbs-failover.png)
+   ![Failover](../images/rdbs-failover1.png)
 
 4. If you have questions or feedback, please submit them to our team by emailing <a href="mailto:rdbs-help@ctl.io">rdbs-help@ctl.io</a>.
