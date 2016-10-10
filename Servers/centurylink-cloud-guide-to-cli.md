@@ -9,6 +9,7 @@
 
 * [Overview](#overview)
 * [Prerequisites](#prerequisites)
+* [Keywords](#Keywords)
 * [Use Case Scenarios](#use-case-scenarios)
 * [Installation of CenturyLink Cloud CLI](#installation-of-centurylink-cloud-cli)
 * [READ commands](#read-commands)
@@ -52,6 +53,21 @@ Comparison of the two CLI tools:
 -   Scripting knowledge will help on fully utilizing the CLI
 -   Python 2.7 installed in the environment for Python based CLI
 -   API user account [please see this KB for detail](//www.ctl.io/knowledge-base/accounts-&-users/creating-users/)
+
+### Keywords
+When running commands (GO CLI command/Python CLI command)
+-   alias - Account Alias, it can be found in the top left corner of the portal
+-   name - name of the server or group, when creating a new server, the length limit is 6 characters
+-   location - name of the data centers (e.g. IL1, VA1, CA1)
+-   network-name/network - name of the VLAN, [they can be listed using CLI](#read-commands)
+-   type - server type, either standard or hyperscale
+-   storage-type/backup-level - storage type, current option is standard
+-   group-name/group - name of the group within the account
+
+Output and error message
+-   alias - In both the output and error messages, alias can be server name/account/location alias
+-   name - depending on the query, it can me server name, location, account name etc
+
 
 ### Use Case Scenarios
 This tool enables system administrators to interface with CenturyLink Cloud without programming with the API or the using the Control Portal.  Automation can be achieved using scripting and other automation tools.
