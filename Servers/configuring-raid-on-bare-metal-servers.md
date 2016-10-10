@@ -11,7 +11,7 @@
 
 ### Description
 
-This will only apply to Bare Metal server types where configurable RAID/JBOD is supported. For additional information on which server support this feature refer to our [Bare Metal FAQ](bare-metal-faq.md).
+This will only apply to Bare Metal server types where configurable RAID/JBOD is supported. For additional information on which servers support this feature refer to our [Bare Metal FAQ](bare-metal-faq.md).
 
 This article will walk you through how to use Dell's OpenManage Server Administrator tool on Bare Metal. By the end, you should be able to Create and Delete RAID volumes to meet your specific needs.
 
@@ -95,7 +95,7 @@ This article will walk you through how to use Dell's OpenManage Server Administr
 
   ![](../images/bare_metal_omsa_4.png)
 
-5.  Choose “Express Wizard” and choose your desired RAID level from the dropdown list and hit continue.
+5.  Choose **Express Wizard** or **Advanced Wizard** and your desired RAID level from the dropdown list and hit continue. Advanced Wizard is recommended for most cases as it permits the user to define the number of disks in the RAID Virtual Disk instead of using predefined configurations.
 
 6.  Type in a name for your volume. Validate that all of the settings you expect are correct. Note that you may set up a hot spare at this time if you choose and your RAID setting allows it.
 
