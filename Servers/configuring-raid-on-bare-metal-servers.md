@@ -50,7 +50,7 @@ Customers who implement particular Bare Metal server types are able to customize
 
 3. ```yum install srvadmin-all -y```
 
-4. ```reboot```
+4. Reboot the server
 
 ### Installing OMSA for Ubuntu
 
@@ -64,7 +64,7 @@ Customers who implement particular Bare Metal server types are able to customize
 
 5. ```apt-get install srvadmin-all```
 
-6. ```reboot```
+6. Reboot the server
 
 ### Connecting to OMSA
 
