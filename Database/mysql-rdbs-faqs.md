@@ -1,5 +1,5 @@
 {{{
-  "title": "FAQs: Relational DB Service",
+  "title": "FAQs: MySQL Relational DB Service",
   "date": "02-28-2016",
   "author": "Christine Parr",
   "attachments": [],
@@ -9,7 +9,7 @@
 }}}
 
 ### Audience
-This article is to support customers of Relational DB Service, CenturyLink's MySQL compatible database-as-a-service product. These responses in this FAQ document are specific to using the service through the Control Portal.
+This article is to support customers of Relational DB Service, CenturyLink's database-as-a-service product. The responses in this FAQ document are specific MySQL-compatible Relational DB.
 
 ### Frequently Asked Questions
 **Q: How will I connect to my MySQL instance?**
@@ -62,7 +62,7 @@ A: At the time of Relational DB subscription creation, the user will define back
 
 **Q: Where are my backups being held?**
 
-A: For disaster recovery purposes, backups are held offsite at least 350 miles away from your primary database. Backups are also held in the same country as the associated Relational DB instance to maintain data sovereignty.
+A: For disaster recovery purposes, backups are held offsite at least 350 miles away from your primary database. All North American instances are held in North America, All GB3 instances remain in the European Union and SG1 backups remain in Singapore.
 
 **Q: Will the product support the use of standard MySQL management tools including the ability to monitor and report on database tasks within the tool?**
 

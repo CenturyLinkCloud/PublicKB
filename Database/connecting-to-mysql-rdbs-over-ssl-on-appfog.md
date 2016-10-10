@@ -1,5 +1,5 @@
 {{{
-  "title": "Connecting to Relational DB over SSL on AppFogv2",
+  "title": "Connecting to MySQL Relational DB over SSL on AppFogv2",
   "date": "01-25-2016",
   "author": "Lane Maxwell",
   "attachments": [],
