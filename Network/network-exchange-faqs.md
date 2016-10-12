@@ -18,7 +18,7 @@
 
 **Q: Can anyone use Network Exchange?**
 
-**A:** Anyone who already has or will create a CenturyLink Cloud account and has a valid endpoint to connect to.  An example would be someone wanting to connect their CenturyLink Cloud VM’s to their CenturyLink Dedicated Cloud Compute (DCC) environment or their COLO environment in the same data center.
+**A:** Anyone who already has or will create a CenturyLink Cloud account and has a valid endpoint to connect to.  An example would be someone wanting to connect their CenturyLink Cloud VM’s to their CenturyLink Dedicated Cloud Compute (DCC) environment.
 
 **Q: Where do I go for support of Network Exchange?**
 
