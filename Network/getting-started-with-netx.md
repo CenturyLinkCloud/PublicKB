@@ -16,7 +16,7 @@
 
 •	CenturyLink Cloud customer environment at UC1
 •	A CNS (Cloud Network Service) connection to your DCC (Dedicated Cloud Compute) environment
-•	The network VLANs of the CenturyLink Managed Hosting endpoint
+•	The network VLANs of the CenturyLink Managed Hosting endpoint, as provided by your CenturyLink network rep •
 
 ### Exceptions
 
