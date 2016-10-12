@@ -62,7 +62,7 @@
 
 **Q: Can I view the speed/performance of each of my connections?**
 
-**A:** There are no provided tools at this time to view the speed and performance of a virtual circuit.
+**A:** There are no tools available to view the speed and performance of a virtual circuit at this time.
 
 **Q: Where can I view usage information about my Network Exchange virtual circuits?**
 
