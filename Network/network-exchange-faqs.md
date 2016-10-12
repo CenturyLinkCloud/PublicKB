@@ -70,7 +70,7 @@
 
 **Q: Can I use Network Exchange to create a connection to my other locations/environments that are connected to my IQ network?**
 
-**A:** Currently, only connectivity between CenturyLink Cloud servers and Dedicated Cloud Compute in the same data center is available via Network Exchange and the HAN. Connecting to locations/servers on your IQ network via Network Exchange is not currently available. Please consult your account manager for options for connecting other locations/environments.
+**A:** Currently, only connectivity between CenturyLink Cloud servers and Dedicated Cloud Compute is available via Network Exchange and the HAN. Connecting to locations/servers on your IQ network via Network Exchange is not currently available. Please consult your account manager for options for connecting other locations/environments.
 
 **Q: How do I use Network Exchange to create a connection to my other clouds?**
 
