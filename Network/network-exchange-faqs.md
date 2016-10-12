@@ -58,7 +58,7 @@
 
 **Q: What is a “virtual circuit”?  Is it different than a “connection”?**
 
-**A:** A virtual circuit is the same as a connection. A virtual circuit is the enabled network path between a CenturyLink Cloud environment and respective product endpoint.
+**A:** Yes, a virtual circuit is the same as a connection. A virtual circuit is a logically isolated network path that may share physical connectivity with other virtual circuits, but is completely private. 
 
 **Q: Can I view the speed/performance of each of my connections?**
 
