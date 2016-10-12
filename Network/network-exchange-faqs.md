@@ -10,7 +10,7 @@
 
 ### Product Overview
 
-[Network Exchange](https://www.ctl.io/network-exchange/) provides a secure, high speed, redundant, private network to connect your CenturyLink Cloud environment to other environments.  It is the preferred alternative to using the Internet or IPSec for customers needing to connect their CLC environments to other, non-CLC environments. Network Exchange is ideal for your hybrid environment and applications as well as storage and backups. Network Exchange includes ease of setup and management via the CLC Portal, coupled with CLC network automation, and pre-deployed network infrastructure. All with usage based, pay as you go billing.
+[Network Exchange](https://www.ctl.io/network-exchange/) provides a secure, high speed, redundant, private network to connect your CenturyLink Cloud (CLC) environment to other environments.  It is the preferred alternative to using the Internet or IPSec for customers needing to connect their CLC environments to other, non-CLC environments. Network Exchange is ideal for your hybrid environment and applications as well as storage and backups. Network Exchange includes ease of setup and management via the CLC Portal, coupled with CLC network automation, and pre-deployed network infrastructure. All with usage based, pay as you go billing.
 
 **Q: How is Network Exchange secure?**
 
