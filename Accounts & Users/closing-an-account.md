@@ -1,5 +1,5 @@
 {{{
-  "title": "Closing your Account",
+  "title": "Closing Your Account",
   "date": "11-04-2015",
   "author": "Richard Seroter",
   "keywords": ["terminate", "account"],
@@ -22,5 +22,5 @@ We're sorry to see you go, but we want to make sure your off-boarding experience
 2. __Delete your running, stopped, and archived servers.__ While we will delete these resources for you upon successful verification of your account closure request, there could be time in between when you're still incurring costs. To prevent that, use the API or Control Portal to clean up your servers.
 3. __Delete services with an hourly/monthly charge.__ Like mentioned above, there may be a few hours or days between your initial request to close an account, and verification of that user. To avoid accruing any charges during that period, remove any for-pay services such as: virtual networks, public IP addresses, site to site VPNs, load balancer pools, Object Storage buckets, and AppFog applications.
 4. __Click the "Request to close" link found under Account --> Info.__ This link immediately triggers a request (without an additional confirmation prompt) to the CenturyLink team, who will then close your account.  There is no guarantee that any server data or configurations can be retrieved after this point.
-![Close account](../images/2015-11-03_closeaccount01.png)  
+![Close account](../images/close-your-account.png)  
 5. __Customer receives their final invoice.__ After the close of the current month, you will receive your final invoice from CenturyLink.
