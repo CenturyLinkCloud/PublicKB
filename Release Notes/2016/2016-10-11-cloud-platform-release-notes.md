@@ -11,7 +11,7 @@
 
 * __status.ctl.io__
 
-  We've updated our layout and made upcoming maintenances easier to find! Under our main status message, we identify when our next maintenance is scheduled. This is also a link that redirects below the grid to show the list of all scheduled maintenance events on the main page of status.ctl.io.
+We've updated our layout and made upcoming maintenances easier to find! Under our main status message, we identify when our next maintenance is scheduled. This is also a link that redirects below the grid to show the list of all scheduled maintenance events on the main page of status.ctl.io.
 
 Take a look at status.ctl.io to see our new layout. We will continue to send notifications for upcoming maintenance. You can subscribe to notifications that matter to you by clicking 'Manage Notifications' on the status page.
 
