@@ -17,7 +17,7 @@ CenturyLink Cloud customers can choose which data centers to make available to t
 ### Detailed Steps
 
 1. Log into the Control Portal
-1. From the top menu, locate the **Settings** option under the **Account** section.
+1. From the menu, locate the **Settings** option under the **Account** section.
 ![Navigation Menu](../images/data-center-nav-menu.png)
 1. Choose the **Data Center** sub tab.
 ![Data Center Menu](../images/data-center-tab.png)
