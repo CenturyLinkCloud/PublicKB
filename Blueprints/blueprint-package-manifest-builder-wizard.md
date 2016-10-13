@@ -7,28 +7,24 @@
 }}}
 
 Take advantage of our web-based [Blueprint Package Manifest Builder Wizard](http://centurylinkcloud.github.io/blueprint-package-manifest-builder/) to:
-
-* Discover the user and system generated data collector widgets
-* Create a functional package.manifest file
-* Export customized shell script templates
+* Discover the user and system generated data collector widgets.
+* Create a functional package.manifest file.
+* Export customized shell script templates.
 
 For a more in-depth review of how to manually create a Blueprint Package or to review package specifications reference the [Blueprints Script and Software Package Management article](blueprints-script-and-software-package-management.md).
 
 ### Wizard UI
-
-The wizard screen is divided into four primary components.  See details on each in the Wizard Usage section of this article.
+The wizard screen is divided into four primary components. See details on each in the Wizard Usage section of this article.
 
 [![](../images/blueprint-package-manifest-wizard-1.png)](http://centurylinkcloud.github.io/blueprint-package-manifest-builder/)
 
-1. Package Foundational Definition.  Define package-level attributes such as names and identifiers
-2. User and System Parameter widgets.  Drag and drop one or more of these into section (3) as you build your package design.
-3. Zero or more parameters.  Add these by dragging widgets from the user and system parameter columns in section (2).
-4. Template export functions
+1. Package Foundational Definition. Define package-level attributes such as names and identifiers
+2. User and System Parameter widgets. Drag and drop one or more of these into section (3) as you build your package design.
+3. Zero or more parameters. Add these by dragging widgets from the user and system parameter columns in section (2).
+4. Template export functions.
 
 ### Wizard Usage
-
 Access the [Blueprint Package Manifest Builder Wizard](http://centurylinkcloud.github.io/blueprint-package-manifest-builder/) and follow these steps to successfully create your package.
-
 
 1. **Package Foundational Definition**
 
