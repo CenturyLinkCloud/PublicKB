@@ -25,7 +25,7 @@ A Template is the basic model from which each Server gets created. The platform 
 
 A Blueprint is a saved workflow that can be defined and re-played at any time on the platform. During the Blueprint design process, customers do not incur billable costs. Customers are simply creating a workflow plan that orders steps across three categories: (1) cloud provisioning tasks; (2) software package installs; (3) script package execution. Users can add and reorder steps to the workflow as needed. Customers can define incredibly complex environments and invoke them at any time with single-click simplicity. The platform will also estimate the running costs of the Blueprint once deployed.
 
-![Difference 2](../images/understanding-the-difference-between-templates-blueprints-and-packages-4.png")
+![Difference 2](../images/understanding-the-difference-between-templates-blueprints-and-packages-4.png)
 
 *Image 2 - Reorder tasks in the Blueprint designer*.
 
