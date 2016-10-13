@@ -26,7 +26,7 @@ You can manage users on your account by going to the Control Portal > Settings >
 
 ### API Users
 
-You can manage users for version 1 of the API on your account by going to the Control Portal &gt; Account &gt; API.
+You can manage users for version 1 of the API on your account by going to the Control Portal > Settings > API.
 
 1. Click on the "Create API User" button.
 2. Enter an email address. The entered email address must be unique.

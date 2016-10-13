@@ -12,12 +12,12 @@ CenturyLink Cloud customers can choose which data centers to make available to t
 
 ### Audience
 
-- [Account administrators and security managers](role-permissions-matrix.md)
+[Account administrators and security managers](role-permissions-matrix.md)
 
 ### Detailed Steps
 
-1. Log into the Control Portal
-1. From the menu, locate the **Settings** option under the **Account** section.
+1. Log-in to the Control Portal.
+1. From the menu, go to Settings > Account Profile.
 ![Navigation Menu](../images/data-center-nav-menu.png)
 1. Choose the **Data Center** sub tab.
 ![Data Center Menu](../images/data-center-tab.png)

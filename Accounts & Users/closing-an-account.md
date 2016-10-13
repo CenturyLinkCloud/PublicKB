@@ -14,7 +14,7 @@ We're sorry to see you go, but we want to make sure your off-boarding experience
 
 ### Exceptions
 
-* Cloud Term Commitment Customers: If you have a cloud term commitment, please contract your sales representative to execute a terminate service order.
+Cloud Term Commitment Customers: If you have a cloud term commitment, please contract your sales representative to execute a terminate service order.
 
 ### Steps for closing your account
 
