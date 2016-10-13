@@ -21,6 +21,6 @@ CenturyLink Cloud users are locked out of their account after 4 failed login att
 * An Account Administrator is contacted and views the user's record.
 * The Account Administrator unchecks the "Is Locked" checkbox. If the user contacts the CenturyLink Cloud NOC, then the user's password will also be reset as part of the unlock procedure.
 
-<img src="../images/user-lockout.png" alt="Lock User Checkbox in the Control Portal" />
+! [Unlocking account](control-portal-unlocking-account.png)
 
 The user is now able to log into the Control Portal.

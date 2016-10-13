@@ -10,9 +10,9 @@ Users can be configured for both the Control Portal and the API.
 
 ### Control Portal Users
 
-You can manage users on your account by going to the Control Portal &gt; Account &gt; Users.
+You can manage users on your account by going to the Control Portal > Settings > Users.
 
-NOTE: Permissions must be configured for a user after they are created in order to have access within the control. Learn more about [User Permissions](user-permissions.md).
+**Note:** Permissions must be configured for a user after they are created in order to have access within the control. Learn more about [User Permissions](user-permissions.md).
 
 1. Click the "Create New User" button.
 
