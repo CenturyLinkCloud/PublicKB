@@ -10,7 +10,7 @@
 
 ### Product Overview
 
-[Network Exchange](https://www.ctl.io/network-exchange/) provides a secure, high speed, redundant, private network to connect your CenturyLink Cloud environment to other environments.  It is the preferred alternative to using the Internet or IPSec for customers needing to connect their CLC environments to other, non-CLC environments. Network Exchange is ideal for your hybrid environment and applications as well as storage and backups. Network Exchange includes ease of setup and management via the CLC Portal, coupled with CLC network automation, and pre-deployed network infrastructure. All with usage based, pay as you go billing.
+[Network Exchange](https://www.ctl.io/network-exchange/) provides a secure, high speed, redundant, private network to connect your CenturyLink Cloud (CLC) environment to other environments.  It is the preferred alternative to using the Internet or IPSec for customers needing to connect their CLC environments to other, non-CLC environments. Network Exchange is ideal for your hybrid environment and applications as well as storage and backups. Network Exchange includes ease of setup and management via the CLC Portal, coupled with CLC network automation, and pre-deployed network infrastructure. All with usage based, pay as you go billing.
 
 **Q: How is Network Exchange secure?**
 
@@ -18,7 +18,7 @@
 
 **Q: Can anyone use Network Exchange?**
 
-**A:** Anyone who already has or will create a CenturyLink Cloud account and has a valid endpoint to connect to.  An example would be someone wanting to connect their CenturyLink Cloud VM’s to their CenturyLink Dedicated Cloud Compute (DCC) environment or their COLO environment in the same data center.
+**A:** Anyone who already has or will create a CenturyLink Cloud account and has a valid endpoint to connect to.  An example would be someone wanting to connect their CenturyLink Cloud VM’s to their CenturyLink Dedicated Cloud Compute (DCC) environment.
 
 **Q: Where do I go for support of Network Exchange?**
 
@@ -58,11 +58,11 @@
 
 **Q: What is a “virtual circuit”?  Is it different than a “connection”?**
 
-**A:** A virtual circuit is the same as a connection. A virtual circuit is the enabled network path between a CenturyLink Cloud environment and respective product endpoint.
+**A:** Yes, a virtual circuit is the same as a connection. A virtual circuit is a logically isolated network path that may share physical connectivity with other virtual circuits, but is completely private. 
 
 **Q: Can I view the speed/performance of each of my connections?**
 
-**A:** There are no provided tools at this time to view the speed and performance of a virtual circuit.
+**A:** There are no tools available to view the speed and performance of a virtual circuit at this time.
 
 **Q: Where can I view usage information about my Network Exchange virtual circuits?**
 
@@ -70,7 +70,7 @@
 
 **Q: Can I use Network Exchange to create a connection to my other locations/environments that are connected to my IQ network?**
 
-**A:** Currently, only connectivity between CenturyLink Cloud servers and Dedicated Cloud Compute in the same data center is available via Network Exchange and the HAN. Connecting to locations/servers on your IQ network via Network Exchange is not currently available. Please consult your account manager for options for connecting other locations/environments.
+**A:** Currently, only connectivity between CenturyLink Cloud servers and Dedicated Cloud Compute is available via Network Exchange and the HAN. Connecting to locations/servers on your IQ network via Network Exchange is not currently available. Please consult your account manager for options for connecting other locations/environments.
 
 **Q: How do I use Network Exchange to create a connection to my other clouds?**
 
