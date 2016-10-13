@@ -14,7 +14,6 @@
 
 ### Prerequisites
 
-•	Access to the CenturyLink Cloud Portal as an authorized user
 •	CenturyLink Cloud customer environment at UC1
 •	A CNS (Cloud Network Service) connection to your DCC (Dedicated Cloud Compute) environment
 •	The network VLANs of the CenturyLink Managed Hosting endpoint
