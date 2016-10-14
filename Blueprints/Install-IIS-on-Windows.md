@@ -24,11 +24,12 @@ By leveraging [CenturyLink Cloud Public Blueprints](../Blueprints/centurylink-cl
 
 ### Perform Install IIS on Windows using Group Tasks
 1. Navigate to the Servers Menu in Control.
+
    ![Portal Servers Menu](../images/Install-IIS-on-Windows-01.png)
 
 2. Browse to the Group that houses the VM(s) you want to Install IIS. Select Action, Execute Package.
    ![execute package on group](../images/Install-IIS-on-Windows-02.png)
-
+   
 3. Search for **IIS** and select the **Install IIS 7.5 or 8 on Windows** script.
    ![Search for IIS](../images/Install-IIS-on-Windows-03.png)
 

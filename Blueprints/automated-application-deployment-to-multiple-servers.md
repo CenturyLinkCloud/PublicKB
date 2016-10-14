@@ -103,7 +103,7 @@ For details on creating script packages in general, refer to the article [Bluepr
 1. From the group page, select **execute package** from the actions menu.
 
 2. Select the package you uploaded in the previous steps. It should be listed under "private" as seen here:
-   ![exec-pkg-git.png](../images/blueprints-auto-app-deploy-exec-pkg-git.png)"
+   ![exec-pkg-git.png](../images/blueprints-auto-app-deploy-exec-pkg-git.png)
 
 3. Now enter the values for the parameters that were defined as the prompts indicate. First, the path to your Git repository, then the path to deploy the app to on the server, and finally whether you want to clone the repository, or just pull the latest code. The first time you deploy the app, you should choose "Clone" to set it up for the first time, but every time after, select "Pull" to simply update the code with the latest release.
    ![it-params.png](../images/blueprints-auto-app-deploy-git-params.png)

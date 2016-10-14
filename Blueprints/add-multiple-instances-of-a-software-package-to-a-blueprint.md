@@ -21,6 +21,7 @@ Users can set unique parameters for each instance of a software package in a Blu
    * Company Size
    * Description of the Blueprint
    * Tag Capabilities
+
    ![Blueprint Designer](../images/add-multiple-packages-1.png)
 
 4. Click **next:add servers**.
@@ -32,8 +33,8 @@ Users can set unique parameters for each instance of a software package in a Blu
 
 6. Click **next: tasks & order** and then **+add task**.
    * Choose a software package or script that is known to have installation parameters. Then, click **add**.
-   ![Run Global Task](../images/add-multiple-packages-3.png)
 
+   ![Run Global Task](../images/add-multiple-packages-3.png)
 
 7. In the Add Task window, use the drop-down to select which server that the package applies to. Then, click **add task**.
    * Blueprint authors can select specific servers or choose the “Select During Deployment” option.
@@ -71,6 +72,7 @@ In this variation of the section above, the software is selected at the same tim
    * Company Size
    * Description of the Blueprint
    * Tag Capabilities
+
    ![Blueprint Designer](../images/add-multiple-packages-1.png)
 
 4. Click **next:add servers**.
@@ -80,13 +82,14 @@ In this variation of the section above, the software is selected at the same tim
    ![Add Servers](../images/add-multiple-packages-2.png)
 
 6. On the server configuration page, click **Install Software** and select a software package. Then, click **add** and **apply**.
+
    ![Install Software on Server](../images/add-multiple-packages-7.png)
 
 7. Repeat the process and add a software package to the second server.
 
 8. Click **next: task & order**.
    ![Task & Order](../images/add-multiple-packages-8.png)
-
+   
 9. Click **next: review**.
    * This step allows you to review the Blueprint configuration and make any changes before publishing.
    * Click on any of the steps located on the left to make changes.

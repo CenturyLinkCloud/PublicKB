@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-### Description (goal/purpose)
+### Description
 Your Windows Server must be properly configured in order for PowerShell based Blueprints to successfully run against it. Most images are already configured properly, however if you receive an error about failing to open the Remote PowerShell connection, the following KB article may help you resolve the issue.
 
 ### Audience

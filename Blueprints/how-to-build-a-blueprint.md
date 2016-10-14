@@ -24,6 +24,7 @@ The purpose of this documentation is to introduce and explain the process and de
    * Company Size
    * Description of the Blueprint
    * Tag Capabilities
+
    ![Blueprint Designer](../images/how-to-build-2.png)
 
 5. Click **Next: add server**.
@@ -31,6 +32,7 @@ The purpose of this documentation is to introduce and explain the process and de
 6. Define Servers (optional).
    * This step is optional as a Blueprint may consist solely of configuration against an existing environment.
    * To define the server(s), click **+ add server**.
+
    ![Add Server](../images/how-to-build-3.png)
 
 7. From the server template drop-down, then enter information for the following:
@@ -38,6 +40,7 @@ The purpose of this documentation is to introduce and explain the process and de
    * description
    * CPU
    * memory
+   
    ![Server Settings](../images/how-to-build-4.png)
 
 8. Click **next: tasks & order**.
