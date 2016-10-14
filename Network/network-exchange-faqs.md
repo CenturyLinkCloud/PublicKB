@@ -82,7 +82,7 @@
 
 **Q: What should I expect with regards to usage and billing?**
 
-**A:** Network Exchange is usage based. Usage and billing is calculated on the quantity of GBs that have passed the Network Exchange switches for the customer’s unique virtual circuits for the month. This includes both ingress and egress traffic. Meaning, both the inbound and outbound traffic to/from a customer’s CLC environment.
+**A:** Network Exchange is usage based. Usage and billing is calculated on the quantity of GBs that have passed the Network Exchange switches for the customer’s unique virtual circuits for the month. This includes egress traffic only. Meaning, both the inbound and outbound traffic to/from a customer’s CLC environment.
 
 **Q: What kind of workloads or scenarios is Network Exchange designed for?**
 
@@ -90,8 +90,8 @@
 
 **Q: Where is Network Exchange available?**
 
-**A:** At time of launch, Network Exchange will be available at Santa Clara, which is CenturyLink Cloud UC1 and CenturyLink SC8 and SC9. It will be available for customers who have CenturyLink Cloud (CLC) and Dedicated Cloud Compute (DCC) at the data center.
+**A:** At time of launch, Network Exchange will be available at Santa Clara, which is CenturyLink Cloud UC1 and CenturyLink SC8 and SC9. It will be available for customers who have CenturyLink Cloud (CLC) and Dedicated Cloud Compute (DCC) at the data center. In the near future, Network Exchange will be rolled out to additional global metropolitan areas.
 
 **Q: Do I need to add routes to my CLC servers or DCC servers?**
 
-**A:** No. This is not needed because of BGP.
+**A:** No. Routing is managed automatically by BGP.
