@@ -1,5 +1,5 @@
 {{{
-  "title": "Sign Up for Usage Alerts",
+  "title": "Sign Up for Consumption Alerts",
   "date": "01-25-2016",
   "author": "Christine Parr",
   "attachments": [],
@@ -9,10 +9,10 @@
 }}}
 
 ### Audience
-This article is to support customers of Relational DB Service, CenturyLink's MySQL-compatible database-as-a-service product. These instructions are specific to provisioning service directly through the Control Portal.
+This article is to support customers of Relational DB Service, CenturyLink's database-as-a-service product. These instructions are specific to signing up for consumption alerts through the Control Portal.
 
 ### Overview
-CenturyLink's Relational DB Service is a MySQL-compatible database-as-a-service that provides instant access to a database instance with SSL support, daily backups, basic monitoring, and a replication option. Users can configure the amount of CPU, Memory, and Storage based on their database needs. They can choose to replicate their instance in datacenter for a more highly available solution. As the customer's capacity needs grown, they can easily scale their CPU, RAM ,and/or Storage with the click of a button.
+CenturyLink's Relational DB Service is a database-as-a-service that provides instant access to a database instance with SSL support, daily backups, basic monitoring, and a replication option. Users can configure the amount of CPU, Memory, and Storage based on their database needs. They can choose to replicate their instance in datacenter for a more highly available solution. As the customer's capacity needs grown, they can easily scale their CPU, RAM ,and/or Storage with the click of a button.
 
 ### Prerequisites
 * Access to the CenturyLink Cloud Platform as an authorized user
@@ -40,7 +40,7 @@ CenturyLink's Relational DB Service is a MySQL-compatible database-as-a-service 
 4. To delete a notification, simply click on the small 'x' next to the email address field from which you no longer want to receive notifications.
 
 5. To create an additional notification, click the 'add notification' button. This allows you to enter another email address. You can also change which items you want to be notified on by selecting or un-selecting CPU or Storage.
-   ![EditNotification](../images/rdbs-editnotifications.png)
+   ![EditNotification](../images/rdbs-edit-notifications.png)
 
 6. After each change, click the 'save' button.
 

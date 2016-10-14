@@ -1,6 +1,6 @@
 {{{
   "title": "How do I get support for CenturyLink Cloud services?",
-  "date": "3-14-2016",
+  "date": "9-21-2016",
   "author": "",
   "attachments": [],
   "contentIsHTML": false,
@@ -33,7 +33,7 @@ CenturyLink Cloud offers [flexible support options](//www.ctl.io/support/) for c
 US: 888.638.6771<br>UK: +44.118.322.6100<br>Singapore: +65.6305.8099| incident@centurylink.com | request@centurylink.com
 
 ### Email Support
-1. Use the form below and populate the data points.
+1. Use the template below, providing relevant information for each line item.  It is very important that you include your username and [user PIN](../Support/pin-authentication-for-support-requests.md) when submitting a support request as we use this information as a means of authenticating the request.
 
     ```
     Account Alias:
@@ -97,12 +97,12 @@ Singapore|+65 3158 9575
 
 **I have an email thread with my sales team on this issue. Why is this not being worked?**
 
-The CenturyLink Cloud support staff do not use email to provide support. All issues are tracked in the ZenDesk ticketing system.
+The CenturyLink Cloud Customer Care team does not use email to provide support. All issues are tracked in the ZenDesk ticketing system.
 
-**I have an old ticket, let's just reopen the ticket.**
+**I just reopened a ticket - now what?**
 
-When you reopen a ticket, it goes to the engineer that solved. Our engineers work shifts and therefore it is possible that engineer is off shift. In this case, the ticket update may never be seen for days because they are off.
+When you reopen a ticket by responding after it's been marked "solved" (and within 72 hours), it is returned to the Support queue and a Customer Care engineer will respond in accordance with our [Ticket Prioritization Matrix. ](../Support/ticket-prioritization-matrix.md)
 
 **How long do you wait before closing a ticket?**
 
-After a ticket has been Solved, the automation will close the the ticket after 3 days. All subsequent communication to the closed ticket will create a new ticket at Low priority.
+After a ticket has been Solved, the automation will close the the ticket after 72 hours (3 days). All subsequent communication to the closed ticket will create a new "follow-up" ticket at normal priority.
