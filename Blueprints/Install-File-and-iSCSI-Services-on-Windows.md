@@ -21,6 +21,7 @@ By leveraging [CenturyLink Cloud Public Blueprints](../Blueprints/centurylink-cl
 
 ### Perform Install File and iSCSI Services on Windows using Group Tasks
 1. Navigate to the Servers Menu in Control.
+   
    ![Portal Servers Menu](../images/Install-File-and-iSCSI-Services-on-Windows-01.png)
 
 2. Browse to the Group that houses the VM(s) you want to Install File and iSCSI services. Select Action, Execute Package.

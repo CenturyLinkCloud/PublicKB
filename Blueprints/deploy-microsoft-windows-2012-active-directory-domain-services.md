@@ -28,7 +28,9 @@ The following are general notes based for customers leveraging this Blueprint:
 Customers who wish to layer Windows 2012 Active Directory Domain Services onto existing Virtual Machines can use the steps below to automate this process. When deploying a greenfield environment with new virtual servers it is recommended customers use the Blueprint model described later in this KB article titled "Deploying Windows 2012 Active Directory Domain Services using Blueprints."
 
 1. Navigate to the Servers Menu in Control.
+
    ![](../images/deploy-active-directory-1.png)
+   
 2. Browse to the Group that houses the VM(s) you want to deploy Active Directory Domain Services.  Select Action, Execute Package.
    ![](../images/deploy-active-directory-2.png)
 3. Search for 'active directory', select the Install Active Directory on Windows 2012 (1 of 2) [Primary Node] Blueprint and finally choose the virtual server you wish to be the primary domain controller. We must deploy the primary domain controller initially prior to creating a secondary. Input the Domain Name (FQDN) and safe mode administrator password for the new domain.
