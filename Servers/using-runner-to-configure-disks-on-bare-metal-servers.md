@@ -12,7 +12,7 @@
 
 Customers who build particular Bare Metal server types have the ability to customize the configuration using both JBOD (HBA) and RAID modes.  For those customers who would like an automated process to configure disks on Bare Metal (see below for prerequisites), please follow the instructions below.
 
-If you'd prefer a more hands on approach, you can follow the step-by-step instructions in the [Configure the RAID controller on Bare Metal servers](../Servers/configuring-raid-on-bare-metal-servers.md) KB article.
+If you'd prefer a more hands on approach, you can follow the step-by-step instructions in the [Configure the RAID controller on Bare Metal servers](https://www.ctl.io/knowledge-base/servers/configuring-raid-on-bare-metal-servers.md) KB article.
 
 ### Prerequisites
 
