@@ -91,7 +91,7 @@ You've built your new Bare Metal server.  Now it's time to configure the disks.
 
 When the job completes successfully, the status bar will turn green (as above).
 
-Before running the Bare Metal Storage Configuration Runner job
+Disk configuration (Windows Server 2012) before running the Bare Metal Storage Configuration Runner job on a Bare Metal server with 1 x 128GB SSD, 2 x 800GB SSD and 4 x 4TB 7200rpm disks.
 
  ![Bare Metal Job Execution](../images/bare_metal_runner_disks_6.png)
 
