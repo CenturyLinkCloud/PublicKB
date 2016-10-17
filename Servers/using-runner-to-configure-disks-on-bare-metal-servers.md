@@ -88,3 +88,5 @@ You've built your new Bare Metal server.  Now it's time to configure the disks.
  After the job is submitted to Runner, you will be directed to the Job Execution page, where you are able to follow the progress of the job.
 
  ![Bare Metal Job Execution](../images/bare_metal_runner_disks_5.png)
+
+When the job completes successfully, the status bar will turn green (as above). If you have any issues, please check out the [Runner FAQ](https://www.ctl.io/knowledge-base/runner/runner-faqs.md) in our Knowledge Base.
