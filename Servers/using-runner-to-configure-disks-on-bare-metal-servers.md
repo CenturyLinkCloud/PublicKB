@@ -10,9 +10,9 @@
 
 ### Overview
 
-Customers who build particular Bare Metal server types have the ability to customize the configuration using both JBOD (HBA) and RAID modes.  For those customers who would like an automated process to configure disks on Bare Metal (see below for prerequisites), please follow the instructions below.
+Customers who build particular Bare Metal server types (see below for prerequisites), have the ability to customize the configuration using both JBOD (HBA) and RAID modes. For those customers who would like an automated process to configure all disks on your Bare Metal server into one RAID set or JBOD, please follow the instructions below.
 
-If you'd prefer a more hands on approach, you can follow the step-by-step instructions in the [Configure the RAID controller on Bare Metal servers](../Servers/configuring-raid-on-bare-metal-servers.md) KB article.
+If you'd prefer to carve the disks up in more of a custom fashion, such as multiple RAID sets or something more complicated, you can follow the step-by-step instructions in the [Configure the RAID controller on Bare Metal servers](../Servers/configuring-raid-on-bare-metal-servers.md) KB article.
 
 ### Prerequisites
 
@@ -89,4 +89,14 @@ You've built your new Bare Metal server.  Now it's time to configure the disks.
 
  ![Bare Metal Job Execution](../images/bare_metal_runner_disks_5.png)
 
-When the job completes successfully, the status bar will turn green (as above). If you have any issues, please check out the [Runner FAQ](../runner/runner-faqs.md) in our Knowledge Base.
+When the job completes successfully, the status bar will turn green (as above).
+
+Before running the Bare Metal Storage Configuration Runner job
+
+ ![Bare Metal Job Execution](../images/bare_metal_runner_disks_6.png)
+
+After running the Bare Metal Storage Configuration Runner job using the RAID-10 option.
+
+ ![Bare Metal Job Execution](../images/bare_metal_runner_disks_7.png)
+
+If you have any issues, please check out the [Runner FAQ](../runner/runner-faqs.md) in our Knowledge Base.
