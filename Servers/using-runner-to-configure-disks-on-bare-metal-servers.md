@@ -41,7 +41,7 @@ You've built your new Bare Metal server.  Now it's time to configure the disks.
 * **Controller Personality** - Select the Controller Personality:
   - RAID-Mode (RAID-x)
   - HBA-Mode (JBOD)
-* **Partition/Format/Mount All Raw Disks** - Select whether or not you would like Runner to create a partition, format, and mount all *raw* disks, including ones not attached to the disk array controller.
+* **Partition/Format/Mount All Raw Disks** - Select whether you would like Runner to create a partition, format, and mount all raw disks, including ones not attached to the disk array controller.
 
   **Please note:** If HBA-Mode (JBOD) is selected, the following RAID option values will be ignored.
 
@@ -84,3 +84,6 @@ You've built your new Bare Metal server.  Now it's time to configure the disks.
       - john.doe@ctl.io
 
  * Click "run"
+
+ After the job is submitted to Runner, you will be directed to the Job Execution page, where you are able to follow the progress of the job.
+ 
