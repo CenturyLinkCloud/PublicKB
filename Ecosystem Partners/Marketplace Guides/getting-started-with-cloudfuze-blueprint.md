@@ -50,7 +50,7 @@ After executing the steps in this Getting Started document, the users will have 
 CloudFuze has included a free 30 day trial in a specific Trial Blueprint. If you are deploying the CloudFuze Production Server or Installing the CloudFuze Server on Existing Hardware please complete [this contact form] (http://www.CloudFuze.com/centurylink) so that a CloudFuze representative can help you setup a license on your CloudFuze Server.
 
 ### Prerequisite
-If you are deploying from “CenturyLink BluePrints Library” all the prerequisites are configured. There is no need to perform any tasks.
+If you are deploying from “CenturyLink Blueprints Library” all the prerequisites are configured. There is no need to perform any tasks.
 
 CloudFuze runs best on CentOS v6.5, with a server that has a minimum of 4 ours, and 16GB or RAM.
 

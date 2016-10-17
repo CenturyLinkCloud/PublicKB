@@ -1,6 +1,6 @@
 {{{
   "title": "Load Balancing Comparison Matrix",
-  "date": "10-05-2016",
+  "date": "10-10-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -13,14 +13,14 @@ CenturyLink Cloud offers customers a wide range of load balancing solutions in o
 
 ### Comparison Matrix
 
-**Feature**|**LBaaS<br>(Legacy)**|**LBaaS**|**Citrix VPX<sup>4</sup><br>(Dedicated)**|**[Ecosystem](../Ecosystem Partners/Partner Integration Resources/ecosystem-program-resources.md)**
+**Feature**|**LBaaS<br>(Legacy)**|**LBaaS**|**Citrix VPX<sup>4</sup><br>(Dedicated)**|**[Marketplace](../Ecosystem Partners/Partner Integration Resources/ecosystem-program-resources.md)**
 -----------|---------------------|---------|-----------------------------------------|-------------
 Control Integration<sup>1</sup>|Yes|Yes|No|No
 High Availability|Yes|Yes|Optional|Optional
 Mode/Port|TCP/80<br>TCP/443|HTTP<br>TCP/Any|Any|Any
 Method|Round Robin<br>Least Connection|Round Robin<br>Least Connection|[Listing](http://docs.citrix.com/en-us/netscaler/11-1/load-balancing/load-balancing-customizing-algorithms.html)|Varies by<br>Vendor
 Persistence|SourceIP|SourceIP|[Listing](http://docs.citrix.com/en-us/netscaler/11-1/load-balancing/load-balancing-persistence/persistence.html)|Varies by<br>Vendor
-Health Checks|No|[Yes](../LBaaS/getting-started-with-load-balancer-as-a-service.md/#health-checks-user-interface)|Yes|Yes
+Health Checks|No|[Yes](../LBaaS/getting-started-with-load-balancer-as-a-service.md)|Yes|Yes
 SSL Offloading|No|No|Yes|Yes
 Global Server Load Balancing|No|No|Optional|Optional
 [SLA](//www.ctl.io/legal/sla/)<sup>2</sup>|Yes|Yes|Limited|Limited
