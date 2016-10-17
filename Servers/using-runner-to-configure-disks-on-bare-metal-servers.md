@@ -86,4 +86,5 @@ You've built your new Bare Metal server.  Now it's time to configure the disks.
  * Click "run"
 
  After the job is submitted to Runner, you will be directed to the Job Execution page, where you are able to follow the progress of the job.
- 
+
+ ![Bare Metal Job Execution](../images/bare_metal_runner_disks_5.png)
