@@ -14,7 +14,7 @@ Chyrp is a lightweight, PHP-powered blogging engine with an intuitive WYSIWYG ed
 ### Description
 The CenturyLink Chyrp Blueprint provides a click-through solution to install and configure Chyrp on the Linux platform.
 
-For more information, please visit [Chyrp](http://chyrp.net).
+For more information, please visit [Chyrp](https://github.com/chyrp/chyrp).
 
 ### Audience
 CenturyLink Cloud Users

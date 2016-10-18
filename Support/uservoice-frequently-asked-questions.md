@@ -1,18 +1,18 @@
 {{{
   "title": "CenturyLink Cloud & UserVoice Frequently Asked Questions",
-  "date": "4-24-2015",
-  "author": "Jared Ruckle",
+  "date": "9-22-2016",
+  "author": "Erik Jensen",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
 ## Overview
 
-CenturyLink Cloud's UserVoice site is an interactive channel. Here, customers can suggest feature enhancements, and vote on the ideas of others.
+CenturyLink Cloud's UserVoice site is an interactive channel. Here, customers can suggest feature enhancements, and vote on the ideas of others.  We strongly encourage customers to gain access to our UserVoice and apply your votes on the features you'd like to see implemented in the platform!
 
 ### How do I get access?
 
-Submit a ticket to [features@ctl.io](mailto:features@ctl.io) requesting access to UserVoice. The login page is available [here](http://centurylinkcloud.uservoice.com/forums/207923-feature-suggestions).
+Submit an email to [features@ctl.io](mailto:features@ctl.io) requesting access to UserVoice, and indicate the email account you'd like it associated with if it differs from the one you used to send the request. The login page is available [here](http://centurylinkcloud.uservoice.com/forums/207923-feature-suggestions).
 
 ### Can I encourage others from my company to sign-up for UserVoice?
 Yes, there is no specific limit on number of users per company.
@@ -29,5 +29,5 @@ Status of ideas are regularly updated as the product roadmap progresses. “Supp
 
 Refer to [this KB](../Support/how-do-i-submit-a-feature-request.md).
 
-### I just submitted a feature request. So now what?
+### I just submitted a feature request.  Now what?
 Refer to [this KB](../Support/i-just-submitted-a-feature-request-now-what.md).

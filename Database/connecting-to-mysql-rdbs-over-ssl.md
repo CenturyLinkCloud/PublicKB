@@ -1,5 +1,5 @@
 {{{
-  "title": "Connecting to Relational DB over SSL-enabled Connection",
+  "title": "Connecting to MySQL Relational DB over SSL-enabled Connection",
   "date": "01-25-2016",
   "author": "Lane Maxwell",
   "attachments": [],
