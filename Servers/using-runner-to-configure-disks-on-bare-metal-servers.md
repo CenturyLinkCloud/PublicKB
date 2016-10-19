@@ -111,4 +111,4 @@ After running the Bare Metal Storage Configuration Runner job using the RAID-10 
 
  ![Bare Metal Job Execution](../images/bare_metal_runner_disks_7.png)
 
-If you have any issues, please check out the [Runner FAQ](../runner/runner-faqs.md) in our Knowledge Base.
+If you have any issues, please check out the [Runner FAQ](../Runner/runner-faqs.md) in our Knowledge Base.
