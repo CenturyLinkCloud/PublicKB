@@ -27,6 +27,7 @@ By leveraging [CenturyLink Cloud Public Blueprints](centurylink-cloud-public-blu
 
 ### Perform Active Directory Domain Join on Windows using Group Tasks
 1. Navigate to the Servers Menu in Control.
+   
    ![AD Join on Windows 1](../images/Perform_Active_Directory_Domain_Join_on_Windows_01.png)
 
 2. Browse to the Group that houses the VM(s) you want to Join to a domain. Select Action, Execute Package.

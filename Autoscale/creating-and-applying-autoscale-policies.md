@@ -1,6 +1,6 @@
 {{{
   "title": "Creating and Applying Autoscale Policies",
-  "date": "12-22-2014",
+  "date": "10-17-2016",
   "author": "Richard Seroter",
   "attachments": [],
   "contentIsHTML": false
@@ -32,18 +32,19 @@ This KB article describes all of the steps for creating, applying, and testing b
 3. On the left side of the screen, click **Vertical Autoscale**. This page shows all existing vertical Autoscale policies, the details of each, and the servers assigned to them.
 
 4. Click **vertical autoscale policy**. Define the general policy characteristics.
-   ![Autoscale Policy](../images/createautoscale-autoscale-parameters.png)
 
-   Parameter | Description 
-   ----------|-------------
-   name | name of the autoscale policy
-   cpu range | the allowable minimum and maximum number of CPUs for the server. This range is used for each server that the policy is applied to. If you have three servers each using the same policy, they each have the capability to use the maximum number of CPUs. 
-   threshold period | how long a server must be at the minimum or maximum usage before an Autoscale action occurs.
-   cool down period | how long to wait after performing one Autoscale event before considering another. This setting helps prevent a rapid fire set of Autoscale events before the server has a chance to recognize the positive effects from the initial scale event. If a server is likely to have temporary spikes that don't warrant a scaling event, choose a longer period. 
-   scale up | The first value defines the upper limit of CPU utilization. When a server is at the upper limit for a single threshold period, a scale up event occurs (unless it occurs within a cool down period).
-   scale up increment | Choose how many CPUs to add (1, 2, 4) during a particular scaling event. 
-   scale down | The first value determines the lower limit of CPU utilization. When a server is at the lower limit for a single threshold period within the scale down window, a scale down event occurs. 
-   scale down window | TC time that you can tolerate a reboot of the system to reduce the CPU allocation (for example when most users may be offline). Choose a small window if a reboot is particularly disruptive to the system. However, make sure that the window is wide enough to catch periods of low utilization. 
+  ![Autoscale Policy](../images/createautoscale-autoscale-parameters.png)
+
+  Parameter|Description
+  ---------|-----------
+  name|name of the autoscale policy
+  cpu range|the allowable minimum and maximum number of CPUs for the server. This range is used for each server that the policy is applied to. If you have three servers each using the same policy, they each have the capability to use the maximum number of CPUs.
+  threshold period|how long a server must be at the minimum or maximum usage before an Autoscale action occurs.
+  cool down period|how long to wait after performing one Autoscale event before considering another. This setting helps prevent a rapid fire set of Autoscale events before the server has a chance to recognize the positive effects from the initial scale event. If a server is likely to have temporary spikes that don't warrant a scaling event, choose a longer period.
+  scale up|The first value defines the upper limit of CPU utilization. When a server is at the upper limit for a single threshold period, a scale up event occurs (unless it occurs within a cool down period).
+  scale up increment|Choose how many CPUs to add (1, 2, 4) during a particular scaling event.
+  scale down|The first value determines the lower limit of CPU utilization. When a server is at the lower limit for a single threshold period within the scale down window, a scale down event occurs.
+  scale down window|TC time that you can tolerate a reboot of the system to reduce the CPU allocation (for example when most users may be offline). Choose a small window if a reboot is particularly disruptive to the system. However, make sure that the window is wide enough to catch periods of low utilization.
 
 5. Review the notice at the bottom of the page. The notice indicates that if you apply a policy to a server that is outside the bounds of the policy's CPU range (e.g., a policy with a maximum CPU count of 6 is applied to a server that is currently using 10 CPUs), then no scale up events occurs until the first scale down event pulls the server within the policy's range.
 
@@ -93,22 +94,23 @@ Vertical Autoscale policies can be added to existing servers or during the serve
 3. On the left side of the screen, click **Horizontal Autoscale**. This page shows all existing vertical Autoscale policies, the details of each, and the servers assigned to them.
 
 4. Click **horizontal autoscale policy**. Define the general policy characteristics.
-   ![Autoscale Policy](../images/createautoscale-h-autoscale-parameters.png)
 
-   Parameter | Description
-   ----------|------------
-   name | name of the autoscale policy
-   minimum servers| Defines the minimum number of for the servers to remain on at all times.
-   maximum servers | The max server count is determined by the number of provisioned servers within the group the policy is applied to.
-   metrics | Choose which metrics to include in the threshold, CPU and/or memory. This determines what metrics the threshold can be set on when defining the scale out and scale in triggers.
-   increment | Choose how many servers to turn on (1, 2, 4) during a particular scaling event.
-   cpu greater than | Define the upper limit of utilization. There are percentage fields for each of the metrics you set. If you selected both, you have the operator option to select whether both thresholds must be reached or just one of them. When a server is at the upper limit as defined for a single threshold period, a scale out event occurs (unless it occurs within a cool down period).
-   memory greater than | Define the upper limit of utilization. There are percentage fields for each of the metrics you set. If you selected both, you have the operator option to select whether both thresholds must be reached or just one of them. When a server is at the upper limit as defined for a single threshold period, a scale out event occurs (unless it occurs within a cool down period).
-   decrement | Choose how many servers to turn off (1, 2, 4) during a particular scaling event.
-   cpu less than | Define the lower limit of utilization. There are percentage fields for each of the metrics you set. If you selected both, you have the operator option to select whether both thresholds must be reached or just one of them. When a server is at the lower limit as defined for a single threshold period within the scale down window, a scale down event occurs.
-   memory less than | Define the lower limit of utilization. There are percentage fields for each of the metrics you set. If you selected both, you have the operator option to select whether both thresholds must be reached or just one of them. When a server is at the lower limit as defined for a single threshold period within the scale down window, a scale down event occurs.
-   threshold period | Defines the duration the resource must be outside the bounds of min/max usage in order to autoscale (5 minutes, 10 minutes, 15 minutes, 30 minutes).
-   cool down period | Defines how long to wait after performing one Autoscale event before considering another (15 minutes, 20 minutes, 30 minutes).
+  ![Autoscale Policy](../images/createautoscale-h-autoscale-parameters.png)
+
+  Parameter|Description
+  ---------|-----------
+  name|name of the autoscale policy
+  minimum servers|Defines the minimum number of for the servers to remain on at all times.
+  maximum servers|The max server count is determined by the number of provisioned servers within the group the policy is applied to.
+  metrics|Choose which metrics to include in the threshold, CPU and/or memory. This determines what metrics the threshold can be set on when defining the scale out and scale in triggers.
+  increment|Choose how many servers to turn on (1, 2, 4) during a particular scaling event.
+  cpu greater than|Define the upper limit of utilization. There are percentage fields for each of the metrics you set. If you selected both, you have the operator option to select whether both thresholds must be reached or just one of them. When a server is at the upper limit as defined for a single threshold period, a scale out event occurs (unless it occurs within a cool down period).
+  memory greater than|Define the upper limit of utilization. There are percentage fields for each of the metrics you set. If you selected both, you have the operator option to select whether both thresholds must be reached or just one of them. When a server is at the upper limit as defined for a single threshold period, a scale out event occurs (unless it occurs within a cool down period).
+  decrement|Choose how many servers to turn off (1, 2, 4) during a particular scaling event.
+  cpu less than|Define the lower limit of utilization. There are percentage fields for each of the metrics you set. If you selected both, you have the operator option to select whether both thresholds must be reached or just one of them. When a server is at the lower limit as defined for a single threshold period within the scale down window, a scale down event occurs.
+  memory less than|Define the lower limit of utilization. There are percentage fields for each of the metrics you set. If you selected both, you have the operator option to select whether both thresholds must be reached or just one of them. When a server is at the lower limit as defined for a single threshold period within the scale down window, a scale down event occurs.
+  threshold period|Defines the duration the resource must be outside the bounds of min/max usage in order to autoscale (5 minutes, 10 minutes, 15 minutes, 30 minutes).
+  cool down period|Defines how long to wait after performing one Autoscale event before considering another (15 minutes, 20 minutes, 30 minutes).
 
 5. Click **save policy**. Your policy is now part of the list of Horizontal Autoscale policies.
    ![Autoscale Policy](../images/createautoscale-new-h-scale-list.png)
