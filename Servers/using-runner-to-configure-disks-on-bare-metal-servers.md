@@ -92,7 +92,6 @@ You've built your new Bare Metal server.  Now it's time to configure the disks.
     - Recipient
       - john.doe@ctl.io
 
-
 14. Click **run**
 
 Once the job is submitted to Runner, you will be directed to the Job Execution page, where you are able to follow the progress of the job.
