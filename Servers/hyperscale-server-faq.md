@@ -38,6 +38,8 @@ A: Any workload where redundant storage architecture is needed; also, workloads 
 
 A: Anti-affinity policies make it possible to spread workloads across physical hosts. When a new server is created and references an anti-affinity policy, the CenturyLink Cloud platform makes sure that all the servers in that policy are distributed.
 
+When a physical failure of a Hyperscale host occurs, Centurylink will attempt recovery of the inventory and data, in the event that recovery is unsuccessful no VM inventory or data present on the Hyperscale host will be available.
+
 **Q: Does Hyperscale support automatic vMotion?**
 
 A: No, Hyperscale does not support automatic vMotion because it uses 100% local storage.
