@@ -10,7 +10,7 @@
 
 ### Overview
 
-Location and endpoint information for current or prospective customers of Network Exchange.
+Location and endpoint information for current or prospective customers of [Network Exchange](https://www.ctl.io/network-exchange/).
 
 ### Audience
 

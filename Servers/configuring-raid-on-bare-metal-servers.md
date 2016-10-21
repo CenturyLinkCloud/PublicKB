@@ -1,116 +1,119 @@
 
 {{{
 "title": "Configure the RAID controller on Bare Metal servers",
-"date": "09-30-2016",
+"date": "10-10-2016",
 "author": "Joe Nguyen & Bryan Friedman",
 "attachments": [],
 "contentIsHTML": false,
 "sticky": false
 }}}
 
+### Table of Contents
 
-### Description
+* [Overview](#overview)
+* [Prerequisites](#prerequisites)
+* [Installing OMSA for Windows](#installing-omsa-for-windows)
+* [Installing OMSA for CentOS or RHEL](#installing-omsa-for-centos-or-rhel)
+* [Installing OMSA for Ubuntu](#installing-omsa-for-ubuntu)
+* [Connecting to OMSA](#connecting-to-omsa)
+* [Changing the RAID controller Mode](#changing-the-raid-controller-mode)
+* [Creating a RAID Volume](#creating-a-raid-volume)
+* [Deleting a RAID Volume](#deleting-a-raid-volume)
 
-This will only apply to Bare Metal server types where configurable RAID/JBOD is supported. For additional information on which servers support this feature refer to our [Bare Metal FAQ](bare-metal-faq.md).
+### Overview
 
-This article will walk you through how to use Dell's OpenManage Server Administrator tool on Bare Metal. By the end, you should be able to Create and Delete RAID volumes to meet your specific needs.
+Customers who implement particular Bare Metal server types are able to customize the configuration using both JBOD (HBA) and RAID modes.  For additional information on which servers support this feature refer to our [Bare Metal FAQ](../Servers/bare-metal-faq.md).  Using this guide customers will leverage the Dell OpenManage Server Administrator (OMSA) to create and delete RAID volumes to meet specific performance and availability needs.
 
-### Prerequisite
+### Prerequisites
 
--   Bare Metal server that supports configurable RAID/JBOD configuration.
+* Purchase a Bare Metal Server that support JBOD/RAID:
+  * 20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA
+  * 16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA
 
-### Steps
+### Installing OMSA for Windows
 
-**Installing OMSA for Windows:**
+1. Download [OMSA.](http://www.dell.com/support/contents/us/en/04/article/Product-Support/Self-support-Knowledgebase/enterprise-resource-center/SystemsManagement/OMSA)
 
-1.  To start, download [OMSA install files.](http://www.dell.com/support/contents/us/en/04/article/Product-Support/Self-support-Knowledgebase/enterprise-resource-center/SystemsManagement/OMSA)
+2. Run and Extract
 
-2.  Run and Extract
+    ![OMSA self-extractor](../images/bare_metal_omsa_1.png)
 
-  ![](../images/bare_metal_omsa_1.png)
+3. Run the installer in C:\OpenManager\windows\setup.exe
 
+4. Use the default installer options.
 
-3.  Run installer from C:\\OpenManager\\windows\\setup.exe
+### Installing OMSA for CentOS or RHEL
 
-4.  Perform install
+1. ```wget -q -O - http://linux.dell.com/repo/hardware/dsu/bootstrap.cgi | bash```
 
-**Installing OMSA for CentOS/Red Hat:**
+2. ```yum install dell-system-update -y```
 
-1.  \# wget -q -O - http://linux.dell.com/repo/hardware/dsu/bootstrap.cgi | bash
+3. ```yum install srvadmin-all -y```
 
-2.  \# yum install dell-system-update -y
+4. Reboot the server
 
-3.  \# yum install srvadmin-all -y
+### Installing OMSA for Ubuntu
 
-4.  \# reboot
+1. ```echo 'deb http://linux.dell.com/repo/community/ubuntu trusty openmanage' | sudo tee -a /etc/apt/sources.list.d/linux.dell.com.sources.list```
 
-**Installing OMSA for Ubuntu:**
+2. ```gpg --keyserver pool.sks-keyservers.net --recv-key 1285491434D8786F```
 
-1.  \# echo 'deb http://linux.dell.com/repo/community/ubuntu trusty openmanage' | sudo tee -a /etc/apt/sources.list.d/linux.dell.com.sources.list
+3. ```gpg -a --export 1285491434D8786F | sudo apt-key add –```
 
-2.  \# gpg --keyserver pool.sks-keyservers.net --recv-key 1285491434D8786F
+4. ```apt-get update```
 
-3.  \# gpg -a --export 1285491434D8786F | sudo apt-key add –
+5. ```apt-get install srvadmin-all```
 
-4.  \# apt-get update
+6. Reboot the server
 
-5.  \# apt-get install srvadmin-all
+### Connecting to OMSA
 
-6.  reboot
+1. To connect to OMSA navigate to ```https://<yourIPaddress>:1311```
 
-**Connecting to OMSA:**
+2. You will be prompted to enter credentials. Use the administrator or root user and password to log in.
 
-1.  To connect to OMSA, after installing go to ```https://<yourIPaddress>:1311```
+### Changing the RAID controller Mode
 
-2.  You will be prompted to enter credentials. Use the administrator or root user and password to log in.
+1. Connect to OMSA
 
-**Changing the RAID controller mode:**
+2. To change controller mode click **Storage** and select **Change Controller Mode** under available tasks and click Execute.
 
-1.  Connect to OMSA
+    ![RAID controller mode](../images/bare_metal_omsa_2.png)
 
-2.  To change controller mode click “Storage” and pick “Change controller mode” under available tasks and click Execute.
-
-  ![](../images/bare_metal_omsa_2.png)
-
-
-3.  Change controller mode to desired mode and hit “Apply changes”. You can see the current controller mode on this page.
-
+3. Change controller mode to desired mode and hit **Apply changes** and **Reboot the server immediately**. You can see the current controller mode on this page.
   * Changing the controller mode requires a reboot.
-  * If you are changing from RAID to HBA mode, you will need to delete any security keys, and existing RAID volumes before it will let you switch to HBA mode. Don’t forget to convert your disks back to “Non-RAID disks”.
+  * If you are changing from RAID to HBA mode, you will need to delete any security keys, and existing RAID volumes before it will let you switch to HBA mode. Don’t forget to convert your disks back to **Non-RAID disks**.
 
-4.  Restart the machine.
+### Creating a RAID volume
 
-**Creating a RAID volume:**
+1. Connect to OMSA
 
-1.  Connect to OMSA
+2. Before we can create a RAID we must convert the disks to RAID mode. Select **Storage**, then under available tasks for the controller choose **Convert to RAID Capable Disks.**
 
-2.  Before we can create a RAID we must convert the disks to RAID mode. Click storage, then under available tasks for the controller choose “Convert to RAID Capable Disks”
+    ![Convert to RAID capable disks](../images/bare_metal_omsa_3.png)
 
-  ![](../images/bare_metal_omsa_3.png)
+3. Select the disks you wish to convert to RAID capable and apply.
 
+4. Now choose “Create Virtual Disk” from the Available task list.
 
-3.  Select your disks you wish to create a RAID volume with and select apply.
+    ![Create virtual disk](../images/bare_metal_omsa_4.png)
 
-4.  Now choose “Create Virtual Disk” from the Available task list.
+5. Choose **Express Wizard** or **Advanced Wizard** and your desired RAID level from the drop down list and hit continue. Advanced Wizard is recommended for most cases as it permits the user to define the number of disks in the RAID Virtual Disk instead of using predefined configurations.
 
-  ![](../images/bare_metal_omsa_4.png)
+6. Type in a name for your volume. Validate that all of the settings you expect are correct. Note that you may set up a hot spare at this time if you choose and your RAID setting allows it.
 
-5.  Choose **Express Wizard** or **Advanced Wizard** and your desired RAID level from the dropdown list and hit continue. Advanced Wizard is recommended for most cases as it permits the user to define the number of disks in the RAID Virtual Disk instead of using predefined configurations.
+    ![RAID virtual disk details](../images/bare_metal_omsa_5.png)
 
-6.  Type in a name for your volume. Validate that all of the settings you expect are correct. Note that you may set up a hot spare at this time if you choose and your RAID setting allows it.
+7. Once completed, you should have a new RAID volume available. You will need to format it, and assign it a drive letter or mount point within the Operating System before you can use it.
 
-  ![](../images/bare_metal_omsa_5.png)
+### Deleting a RAID Volume
 
-7.  Once proceeding, you should have a new RAID volume available. You will need to format it, and assign it a drive letter before you can use it.
+1. Connect to OMSA
 
-**Deleting a RAID Volume:**
+2. Navigate to **Storage, PERC H730 Adapter, Virtual Disks.**
 
-1.  Connect to OMSA
+3. Choose **Delete** from the available tasks on the Virtual Disk you wish to delete.
 
-2.  Expand “Storage” -&gt; PERC H730 Adapter -&gt; Virtual Disks
+    ![delete virtual disk](../images/bare_metal_omsa_6.png)
 
-3.  Choose “Delete” from the available tasks on the Virtual Disk you wish to delete.
-
-  ![](../images/bare_metal_omsa_6.png)
-
-4.  It will warn you that all data will be lost. Confirm and your volume has been deleted.
+4. OMSA will warn you that all data will be lost. Confirm this dialog box and your volume will be deleted.

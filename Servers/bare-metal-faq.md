@@ -1,6 +1,6 @@
 {{{
   "title": "Bare Metal FAQ",
-  "date": "09-27-2016",
+  "date": "10-20-2016",
   "author": "Joseph Nguyen & Bryan Friedman",
   "attachments": [],
   "contentIsHTML": false,
@@ -116,6 +116,23 @@ No, there are a select number of management capabilities available through the C
 
 Yes, the password is set at the time of server creation and can be changed after the fact. The password should only be [changed through the Control portal](../Servers/how-to-change-a-server-administrator-password.md) or API.  Changing the password through the OS will cause the “show credentials” link in the Control portal to no longer display accurate credentials.
 
+**What are the configuration ID's for building bare metal servers using the API?**
+
+Customers can retrieve the available configuration ID's, pricing and SKU details using the [Get Data Center Bare Metal Capabilities API.](//www.ctl.io/api-docs/v2/#data-centers-get-data-center-bare-metal-capabilities)
+
+Separately, we have listed the configuration ID's in the table below:
+
+Configuration|ConfigurationID
+-------------|----------------
+4 core, 16 GB RAM, 2x 1TB HDD|529e2592a3e640a7c2617b5e8bc8feaed94eac22
+12 core, 64 GB RAM, 4x 2TB HDD|f24b18ba2ce23657657444601649c7b8b7f9b60c
+20 core, 128 GB RAM, 6x 2TB HDD|8057e3629403e92d6693352ad17a807dc8970aef
+24 core, 128 GB RAM, 1x 960GB SSD|331afd25f49e10187c9095a33bd16209e013a56f
+24 core, 128 GB RAM, 1x 3.84TB SSD|44ed64b3174dc99f6f549b3707eefcc58fd701de
+24 core, 512 GB RAM, 1x 3.84TB SSD|7f6a073eb8e13626ee01c1ab5e698cf1c25ca073
+20 core, 256 GB RAM, 2x800GB SSD + 12x2TB HDD|43e0a50bf7ab9e80c493b1c8bf5da75dfba3f7e1
+16 core, 256 GB RAM, 2x800GB SSD + 4x4TB HDD|2516e341b960652f01563933d72523d9c222a437
+
 **Where are Bare Metal servers available geographically?**
 
 Bare Metal servers availability can be viewed on the [CenturyLink Cloud data centers page](https://www.ctl.io/data-centers/#/filters/Bare%20Metal).
@@ -176,7 +193,7 @@ Yes, Bare Metal servers do support multiple vNIC configurations. Additional vNIC
 
 **Can I bring my own OS image?**
 
-No, the available Operating Systems include Windows 2012 Standard Edition R2, Windows 2012 Datacenter Edition, RHEL6, CentOS 6, and Ubuntu 14. If there is a particular OS image you would like to see incorporated please [submit a feature request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/).
+No, the available Operating Systems include Windows 2012 R2 Standard Edition, Windows 2012 R2 Datacenter Edition, RHEL6, CentOS 6, and Ubuntu 14. If there is a particular OS image you would like to see incorporated please [submit a feature request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/).
 
 As an alternative to a custom image, Bare Metal servers do support the [execute package](https://www.ctl.io/knowledge-base/servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/) action from the Control Portal as well as through the [API](https://www.ctl.io/api-docs/v2/#server-actions-execute-package), allowing you to install the same software or run the same scripts on many servers at once.
 
