@@ -1,6 +1,6 @@
 {{{
   "title": "How To: Clone a Virtual Machine OS Instance",
-  "date": "8-12-2015",
+  "date": "10-24-2016",
   "author": "Chris Little",
   "attachments": [],
   "related-products" : [],
@@ -16,7 +16,6 @@ A clone is a copy of an existing virtual machine. When the cloning operation is 
 
 * Cloning is unsupported for customers who leverage virtual machines with the multi-vNIC feature
 * Source machines must not be domain joined.
-* Before attempting to clone a virtual machine, all snapshots must be removed.  A virtual machine with an active snapshot will fail the clone process.
 
 ### Important Notices
 
@@ -39,3 +38,12 @@ Cloning is not supported from powered off servers. The source server must be pow
 3. Customers can monitor the Queue for status of the Clone process or wait for email notification.
 
     ![Clone Queue](../images/how-to-clone-a-virtual-machine-os-instance-03.png)
+
+### FAQ
+
+**Q: Can I clone a server with a [snapshot](../Servers/creating-and-managing-server-snapshots.md) in place?**
+
+A: Yes this is a supported function.  However there are a couple of nuances to understand when executing such an action:
+  * The source server will be powered off during the clone operation
+  * The existing snapshot on the source machine will remain intact
+  * The cloned server will not have a snapshot.  It will be a clone of the current state of the source server, including any changes post snapshot
