@@ -148,5 +148,14 @@ Script done, file is running_makestub_for_windows.sh.log
 
 ```
 
+As a reference, the options to this command is as following:
+```
+root@CA2SHSJSTW12-01:~# ./makestub_for_windows.sh  -h
+usage: makestub_for_windows.sh [options]
+      -h,         --help          display this help screen
+      -d,         --defaults      use the default values wherever suggested
+      -s <SRN-IP> --srn <SRN-IP>  (private) IP address of SRN serving the iSCSI target
+      -i <IQN>    --iqn <IQN>     IQN of the Windows iSCSI target to connect to
+```
 
 
