@@ -14,15 +14,139 @@ An alternative method has been developed to use the open source Ubuntu-14 templa
 
 ### 1. Information Gathering before Onboarding
 
+We should gather information about servers to protect, for each Windows VM, we need to know its NIC model and PCI slot.
+A table like this needs to be filled:
+
+|VM Name|NIC Model|NIC PCI Slot|
+|---|---|---|
+|VM-1|VMXNET3|192|
+|VM-2|VMXNET3|192|
+|VM-3|VMXNET3|224|
+|VM-4|VMXNET3|192|
+...
+
+Notes
+* The method described in this document only works for the VMXNET3 NIC type. If the production VM runs E1000 or E1000E NIC type, it is highly recommended to replace them with a VMXNET3 NIC.
+* If there are multiple NICs, any one of the NICs can be chosen as the match in the discovery recovery site and it does not have to be the one on production site connecting to the iSCSI target.
+* SafeHavne-4 does not support recovery VMs with multiple NICs.
+
 ### 2. Create CLC Templates before Onboarding
+
+* Get a list of unique VMXNET3 PCI Slot numbers for the production VM. For example, the above table has two unique numbers: 192 and 224.
+* For each of the unique PCI Slot number that is not 160 (which is the standard CLC Ubunyu-14 template configuration)
+  * Deploy a Ubuntu-14 in recovery CLC site
+  * Send a ticket to help@ctl.io to change its PCI slot number from 160 to this new number that exists in production
+  * Once the change is confirmed with the ```lspci -v``` conmmand, convert this VM to a template with names such as ```MakeStub Template: Ubuntu-14 on PCI Slot 192```.
 
 ### 3. Create Protection Groups during Onboarding
 
 #### 3.2 (Not released yet) Automatically Deploy the Recovery Proxy
 This is a feature that is not yet available in SafeHaven-4.0.0.
 
+When deploying a recovery proxy server in CLC in the SafeHaven GUI protection group provision wizard, we need to make sure the template created in step 2 with matching **PCI Slot** number is chosen.
+
 #### 3.1 Manually Deploy from Template and Choose exsting VM as Recovery Proxy
 This is the only method to be used in SafeHaven-4.0.0 if a Linux OS is to be used as the stub to protect a Windows VM.
+
+When deploying a recovery proxy server manually in CLC, we need to make sure the template created in step 2 with matching **PCI Slot** number is chosen.
+
+##### 3.1.1 Interactively during a Test Failover: Auto iSCSI Discovery
+If the iSCSI target is present (for example during the test failover), one can simply run the ```makestub_for_windows.sh``` command. An interactive interface will guide the user to 
+* install necessary packages
+* enter the SRN IP address
+* choose the proper iSCSI target IQN found by auto discovery
+
+An example:
+```
+root@CA2SHSJSTW08-01:~# ./makestub_for_windows.sh 
+Script started, file is running_makestub_for_windows.sh.log
+Linux Makestub for Windows on Ubuntu-14
+Need to install the following (required) packages: open-iscsi lsscsi
+Install now or exit [y/n]: y
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  lsscsi open-iscsi
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 303 kB of archives.
+After this operation, 2,327 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ trusty/main lsscsi amd64 0.27-2 [35.6 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ trusty/main open-iscsi amd64 2.0.873-3ubuntu9 [268 kB]
+Fetched 303 kB in 0s (1,381 kB/s)
+Selecting previously unselected package lsscsi.
+(Reading database ... 85825 files and directories currently installed.)
+Preparing to unpack .../lsscsi_0.27-2_amd64.deb ...
+Unpacking lsscsi (0.27-2) ...
+Selecting previously unselected package open-iscsi.
+Preparing to unpack .../open-iscsi_2.0.873-3ubuntu9_amd64.deb ...
+Unpacking open-iscsi (2.0.873-3ubuntu9) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Processing triggers for ureadahead (0.100.0-16) ...
+ureadahead will be reprofiled on next reboot
+Setting up lsscsi (0.27-2) ...
+Setting up open-iscsi (2.0.873-3ubuntu9) ...
+Processing triggers for ureadahead (0.100.0-16) ...
+Restarting iSCSI service.
+Please enter the iSCSI Target Server IP address (your SRN Private IP) at this site: 10.55.220.184
+Discovering iSCSI targets on 10.55.220.184 ...
+Select the target IQN of your Protection Group:
+1)  iqn.2016-09.io.ctl:Windows-PG-Win12R2-external
+2)  iqn.2016-09.io.ctl:Windows-PG-Win08R2-external
+#?2
+Created /opt/datagardens/dg.conf
+Checking networking configuration ...
+Determining boot interface configuration
+Boot Device Configuration:
+NIC Device:   eth0
+IP            10.55.220.24
+Gateway:      10.55.220.1
+PCI Slot:     192
+Does PCI Slot Number 192 agree with the NIC of your original VM [y/n]: y
+SRN 10.55.220.184 is on a different subnet than stub - gateway 10.55.220.1 will be cleared on boot
+Created /boot/iscsi.ipxe
+Created /etc/grub.d/42_datagardens_custom_entry (mode 755)
+Adding 'iSCSI boot of iqn.2016-09.io.ctl:Windows-PG-Win08R2-external via 10.55.220.184' boot entry to local grub configuration
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-3.13.0-83-generic
+Found initrd image: /boot/initrd.img-3.13.0-83-generic
+Found linux image: /boot/vmlinuz-3.13.0-32-generic
+Found initrd image: /boot/initrd.img-3.13.0-32-generic
+done
+Script done, file is running_makestub_for_windows.sh.log
+```
+
+
+##### 3.1.2 (Recommended) Silently: Without Test Failover
+
+It is recommended to perform the MakeStub procedure while the production VMs are in the onboarding process. For this reason, a test failover is not possible. The IQN can be copied from the SafeHaven Console's Targets tab.
+
+```
+root@CA2SHSJSTW12-01:~# ./makestub_for_windows.sh  -d -s 10.55.220.184 -i iqn.2016-09.io.ctl:Windows-PG-Win12R2-external
+Script started, file is running_makestub_for_windows.sh.log
+Linux Makestub for Windows on Ubuntu-14
+Created /opt/datagardens/dg.conf
+Checking networking configuration ...
+Determining boot interface configuration
+Boot Device Configuration:
+NIC Device:   eth0
+IP            10.55.220.54
+Gateway:      10.55.220.1
+PCI Slot:     192
+Does PCI Slot Number 192 agree with the NIC of your original VM [y/n]: y
+SRN 10.55.220.184 is on a different subnet than stub - gateway 10.55.220.1 will be cleared on boot
+Created /boot/iscsi.ipxe
+Created /etc/grub.d/42_datagardens_custom_entry (mode 755)
+Adding 'iSCSI boot of iqn.2016-09.io.ctl:Windows-PG-Win12R2-external via 10.55.220.184' boot entry to local grub configuration
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-3.13.0-83-generic
+Found initrd image: /boot/initrd.img-3.13.0-83-generic
+Found linux image: /boot/vmlinuz-3.13.0-32-generic
+Found initrd image: /boot/initrd.img-3.13.0-32-generic
+done
+Script done, file is running_makestub_for_windows.sh.log
+
+```
 
 
 
