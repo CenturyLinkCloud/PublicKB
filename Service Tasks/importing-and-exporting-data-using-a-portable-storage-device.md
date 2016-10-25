@@ -23,7 +23,6 @@ CenturyLink Cloud supports importing and exporting data through portable storage
   * dm-crypt, p7zip or GPG for Linux OS variants
 * Include all power sources and connection cables required for the device
 * USB 2.0 or above
-* Limit 1 TB/drive
 
 ### Device retention
 Portable devices will not be kept for more than 5 days after the transfer is completed. If arrangements have not been made to return the device. The device will be detached and destroyed.

@@ -1,7 +1,7 @@
 {{{
   "title": "Using Self-Service VM Import",
-  "date": "2-3-2015",
-  "author": "Jared Ruckle",
+  "date": "08-17-2016",
+  "author": "Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -23,8 +23,8 @@
   * The transfer of the OVF may take several hours, depending on the size of the file and the speed of your connection.
   * Any packet loss during the transfer may result in import failure.
 
-6. When the upload is complete, click Import Server in the CenturyLink Cloud navigation menu.
-  ![menu](https://t3n.zendesk.com/attachments/token/CRSKh8OsGWcM0BnPWspvW47Rk/?name=Screen+Shot+2015-02-04+at+7.41.31+AM.png)
+6. When the upload is complete, click Import Server under Infrastructure in the CenturyLink Cloud navigation menu.
+  ![menu](../images/portal/portal-import-server.png)
 
 7. You will then see your collection of uploaded OVFs.
   ![import server](https://t3n.zendesk.com/attachments/token/uvYOmyt2Jd2E3ASHrSvrtwUpG/?name=VM_Import.png)
@@ -37,4 +37,3 @@
 
 10. Upon successful import, your VM will appear in your chosen data center and group location within a few hours.
   * **Note**: Exact timing for the availability of your new VM in the Control Portal depends on several factors, so there is not standard availability time for imported VMs.
-

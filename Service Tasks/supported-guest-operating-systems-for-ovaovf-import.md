@@ -29,6 +29,7 @@ It is recommended that customers leverage our [Self-Service OVF Import Capabilit
 * RedHat Enterprise Linux 7 | 64-bit
 * Ubuntu 12 LTS | 64-bit
 * Ubuntu 14 LTS | 64-bit
+* Ubuntu 16 LTS | 64-bit
 * Windows 2008 R2 Enterprise | 64-bit
 * Windows 2008 R2 Standard | 64-bit
 * Windows 2008 R2 Datacenter Edition | 64-bit
