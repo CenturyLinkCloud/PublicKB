@@ -12,6 +12,17 @@ Before SafeHaven-4.0.1, the customer is required to deploy a Windows VM as a rec
 An alternative method has been developed to use the open source Ubuntu-14 template which does not have any OS licensing cost in CLC. This should allow the customers to reduce cost for their SafeHaven disaster recovery solution in a significant way. This documents outlines the manual procedure that is necessary as of the SafeHaven-4.0.1 release which hopefully will soon be automated in future releases.
 
 
+### 1. Information Gathering before Onboarding
+
+### 2. Create CLC Templates before Onboarding
+
+### 3. Create Protection Groups during Onboarding
+
+#### 3.2 (Not released yet) Automatically Deploy the Recovery Proxy
+This is a feature that is not yet available in SafeHaven-4.0.0.
+
+#### 3.1 Manually Deploy from Template and Choose exsting VM as Recovery Proxy
+This is the only method to be used in SafeHaven-4.0.0 if a Linux OS is to be used as the stub to protect a Windows VM.
 
 
 
