@@ -8,7 +8,7 @@
 
 **Initial Customer Communications**
 
-The [European Union Directive](//www.ctl.io/compliance/eu-directive/) page on the [CenturyLink Compliance](//www.ctl.io/compliance/) is an excellent starting point to gain information. As well, the CAIQ crosswalk can be downloaded on the [CSA STAR](//www.ctl.io/compliance/star/) page for initial identification with regards to how CenturyLink Cloud answers specifically to the [95/46/EC - European Union Data Protection Directive](//eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31995L0046:en:HTML).
+The [European Union Directive](//www.ctl.io/compliance/eu-directive/) page on the [CenturyLink Compliance](//www.ctl.io/compliance/) is an excellent starting point to gain information. As well, the CAIQ crosswalk can be downloaded on the [CSA STAR](//www.ctl.io/compliance/star/) page for initial identification with regards to how CenturyLink Cloud answers specifically to the [95/46/EC - European Union Data Protection Directive](http://ec.europa.eu/justice/data-protection/international-transfers/transfer/index_en.htm).
 
 **What is the CenturyLink European Union Appendix 2**
 
@@ -28,7 +28,7 @@ CenturyLink’s technical and organizational security measures apply to standard
 
 **Location of Contract and Appendix**
 
-[European Union Only-Contractual Clauses](//ec.europa.eu/justice/data-protection/international-transfers/transfer/index_en.htm) can be downloaded from the European Commission site. CenturyLink is able to sign Standard Contractual Clauses with customers following a review process. Once the review is complete, CenturyLink can sign the Clauses using the standard Appendix 2, which includes the security measures CenturyLink has in place to protect data.
+[European Union Only-Contractual Clauses](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31995L0046:en:HTML) can be downloaded from the European Commission site. CenturyLink is able to sign Standard Contractual Clauses with customers following a review process. Once the review is complete, CenturyLink can sign the Clauses using the standard Appendix 2, which includes the security measures CenturyLink has in place to protect data.
 
 **General Inquiries**
 

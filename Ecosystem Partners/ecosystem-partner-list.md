@@ -51,7 +51,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Alert Logic Web Security Manager](../Ecosystem Partners/Marketplace Guides/getting-started-with-alert-logic-web-security-manager-partner-template.md)   	| Template    | Web security manager appliance    |
 | [Alert Logic Threat Manager](../Ecosystem Partners/Marketplace Guides/getting-started-with-alert-logic-threat-manager-partner-template.md)   	| Template    | Threat manager appliance    |
 | [Cavirin Automated Risk Analysis Platform](../Ecosystem Partners/Marketplace Guides/getting-started-with-cavirin-automated-risk-analysis-platform-partner-template.md)   	| Template    | Governance and compliance appliance    |
-| [FlexSecure](../Ecosystem Partners/Marketplace Guides/getting-started-with-flexsecure.md)   	| Blueprint    | Context-based Security-as-a-Service platform    |
+| [FlexSecure](../Security/getting-started-with-flexsecure.md)   	| Blueprint    | Context-based Security-as-a-Service platform    |
 | [OSSEC](../Ecosystem Partners/Marketplace Guides/getting-started-with-ossec-blueprints.md)   	| Template    | HIDS    |
 | [SMS Passcode](../Ecosystem Partners/Marketplace Guides/getting-started-with-smspasscode-template.md)   	| Template   | Multifactor Authentication    |
 | [Symas](../Ecosystem Partners/Marketplace Guides/getting-started-with-symas-open-ldap-silver.md)   	| Blueprint   | LDAP    |
@@ -103,7 +103,6 @@ Quickly deploy and successfully use software and technology from any of our cert
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
-| [CloudEra](../Managed Services/getting-started-with-cloudera-on-centurylink-cloud.md)   	| Blueprint (Managed)   | Industry-leading Hadoop implementation    |
 | [Clusterpoint](../Ecosystem Partners/Marketplace Guides/getting-started-with-clusterpoint-blueprint.md)   	| Blueprint    | Scale out Database    |
 | [ClustrixDB](../Ecosystem Partners/Marketplace Guides/getting-started-with-clustrixDB-on-centof6.md)   	| Blueprint    | Scale out Database    |
 | [Coffing Data Warehouseing](../Ecosystem Partners/Marketplace Guides/getting-started-with-coffing-data-warehousing-nexus-chameleon-blueprint.md) 	| Blueprint  | Data Warehouse  |
@@ -158,6 +157,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [CiviCRM](../Ecosystem Partners/Marketplace Guides/getting-started-with-civicrm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
 | [Conxio](../Ecosystem Partners/Marketplace Guides/getting-started-with-conxio-everywhere.md)   	| Blueprint    | Secure Communications Platform |
 | [Diaspora](../Ecosystem Partners/Marketplace Guides/getting-started-with-diaspora-blueprint.md)   	| Blueprint    | Private social networking    |
+| [Doflock](../Ecosystem Partners/Marketplace Guides/getting-started-with-docflock-mail-adapter.md)   	| Blueprint    | Secure email management    |
 | [Fat Free CRM](../Ecosystem Partners/Marketplace Guides/getting-started-with-fat-free-crm-blueprint.md)   	| Blueprint    | Customer Relationship Manager (CRM)    |
 | [Hyper accurate time services from FSM Labs](../Ecosystem Partners/Marketplace Guides/getting-started-with-timekeeper.md)    | Blueprint     | Hyper accurate time services |
 | [Horde Groupware Webmail](../Ecosystem Partners/Marketplace Guides/getting-started-with-horde-blueprint.md)   	| Blueprint    | Mail, Calendar, Address Book, Tasks, and Notes Communication Suite    |

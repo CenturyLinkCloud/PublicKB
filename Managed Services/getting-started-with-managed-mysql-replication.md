@@ -21,7 +21,7 @@ This guide provides (2) unique options and customers should evaluate their needs
 
 ### Creating a Managed MySQL Master-Master Replication Service using Blueprints
 
-1. Search for the **CLC Managed MySQL Master Master Replication** Blueprint in the Blueprint library. Select the Blueprint, followed by the deploy blueprint button.
+1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**. Search for the **CLC Managed MySQL Master Master Replication** Blueprint in the Blueprint library. Select the Blueprint, followed by the deploy blueprint button.
 
       ![MySQL Multi-Master Blueprint](../images/getting-started-with-managed-mysql-replication-01.png)
 
@@ -64,7 +64,7 @@ This guide provides (2) unique options and customers should evaluate their needs
 
 **Q: How is the CenturyLink Cloud for Managed Oracle MySQL Replication priced?**
 
-A: CenturyLink Cloud Managed Oracle MySQL Replication is priced per install, billed hourly depending on the version of Replication you are using. The hourly rate encompasses all servers in the replicated environment, but is in addition to the hourly rate charged for MySQL licensing and management. Refer to our [Pricing Catalog](//www.ctl.io/pricing) for more information. 
+A: CenturyLink Cloud Managed Oracle MySQL Replication is priced per install, billed hourly depending on the version of Replication you are using. The hourly rate encompasses all servers in the replicated environment, but is in addition to the hourly rate charged for MySQL licensing and management. Refer to our [Pricing Catalog](//www.ctl.io/pricing) for more information.
 
 **Q: What Versions of Oracle MySQL Replication are supported?**
 

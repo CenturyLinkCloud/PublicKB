@@ -24,7 +24,7 @@ Each free trial includes:
 * Free orientation from a CenturyLink Cloud solution architect
 * Email & phone support from the solution architect during the trial
 * Self-service access CenturyLink Cloud services, including cloud servers, block storage, load balancers, VLANs, and much more
-* [Developer Support](http://www.ctl.io/support/) - this can be upgraded after the trial at anytime
+* [Developer Support](http://www.ctl.io/support/) - this can be upgraded at anytime. If you are still in your trial period, the expense will be covered by your trial credit.
 
 There are also some limits on rapid scale-up of resources; contact [help@ctl.io](mailto:help@ctl.io) or your solution architect for more details.
 

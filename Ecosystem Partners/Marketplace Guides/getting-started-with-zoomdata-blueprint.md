@@ -23,7 +23,7 @@ Zoomdata has integrated their technology with the CenturyLink Cloud platform. Th
 
 Zoomdata is the world’s fastest solution for visual analytics of big data. Zoomdata enables business users to visually consume and interact with all the data in the modern enterprise. While specifically built for modern data sources -- including Cloudera -- Zoomdata also works with relational databases and popular cloud applications. Using patented Data Sharpening and Micro-query technologies, Zoomdata empowers business users to visually consume data in seconds, even across billions of rows of data. Zoomdata Fusion enables interactive analytics across disparate data sources, bridging modern and legacy data architectures, blending real-time streams and historical data, and unifying enterprise data on-premises and in the cloud. Zoomdata brings visual analytics to all business users -- not just data analysts -- via an intuitive user interface that can be used out of the box or embedded in custom applications.
 
-Technology from Zoomdata helps CenturyLink Cloud customers visually consume and interact with data in Managed Cloudera and other CenturyLink Cloud data services by implementing Zoomdata Server - now available as part of the CenturyLink Cloud Blueprint Engine.
+Technology from Zoomdata helps CenturyLink Cloud customers visually consume and interact with CenturyLink Cloud data services by implementing Zoomdata Server - now available as part of the CenturyLink Cloud Blueprint Engine.
 
 ### Audience
 CenturyLink Cloud Users, Big Data Enthusiasts
@@ -34,13 +34,12 @@ After reading this article, the user should feel comfortable getting started usi
 After executing the steps in this Getting Started document, the users will have a functioning Zoomdata Server with which they can start developing big data discovery and self-service visual analytics solutions.
 
 * Getting started with Zoomdata on CenturyLink Cloud
-* How to connect Zoomdata to Managed Cloudera
 
 ### Offer
 Zoomdata has included a free 30 day trial in a specifi Trial Blueprint. If you are deploying the Zoomdata Production Server or Installing the Zoomdata Server on Existing Hardware please complete [this contact form](http://www.zoomdata.com/centurylink) so that a Zoomdata representative can help you setup a license on your Zoomdata Server.
 
 ### Prerequisite
-Zoomdata is designed to deliver visual analytics for big data deployments. Through a library of big data connectors, that include Cloudera, Hortonworks, MongDB, Spark, MySQL, SQLServer and Solr, Zoomdata makes it easy to connect, stream and visualize your big data deployments.
+Zoomdata is designed to deliver visual analytics for big data deployments. Through a library of big data connectors, that include Cloudera, Hortonworks, MongoDB, Spark, MySQL, SQLServer and Solr, Zoomdata makes it easy to connect, stream and visualize your big data deployments.
 
 Zoomdata runs best on CentOS v6.5, with a server that has a minimum of 4 ours, and 16GB or RAM.
 
