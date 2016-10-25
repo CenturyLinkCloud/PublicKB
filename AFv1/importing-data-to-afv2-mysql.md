@@ -1,6 +1,6 @@
 {{{
   "title": "Importing Data Into AppFog v2 MySQL",
-  "date": "10-21-2015",
+  "date": "02-08-2016",
   "author": "Ben Heisel",
   "attachments": [],
   "related-products" : [],
@@ -14,31 +14,18 @@ This document is for users of AppFog v1 for migration to the next generation of 
 
 Before deleting any applications or services on AppFog v1 ensure you have local copies. Once apps and services are deleted it is **permanent**. We will not be able to provide a backup.
 
-### Importing Data Into CenturyLink MySQL DBaaS
-* To learn how to create, bind, and determine connection credentials review our Knowledge Base article on [Using CenturyLink MySQL with AppFog Applications](../Database/connecting-to-mysql-dbaas-over-ssl-on-appfog.md).
-* You can access your database from the command line using the credentials provided by the VCAP_SERVICES environment variable. You can also [Connect to MySQL DBaaS over SSL on AppFogv2](../Database/connecting-to-mysql-dbaas-over-ssl-on-appfog.md). The certificate needs to be in proper .pem format:
+When migration is complete your billing subscription can be canceled from the [Account](https://console.appfog.com/#account) page of the web console. Please be sure to cancel your subscription as we are not aware when individual user migration is complete. The billing system will not automatically prorate the subscription and issue a refund. If applicable, please open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com to receive a prorated refund of your subscription.
+
+
+### Importing Data Into CenturyLink MySQL Relational DB Service
+* To learn how to create, bind, and determine connection credentials review our Knowledge Base article on [Using CenturyLink MySQL with AppFog Applications](../AppFog/using-ctl-mysql-with-appfog-apps.md).
+* You can access your database from the command line or a third-party tool using the credentials provided by the VCAP_SERVICES environment variable. The VCAP_SERVICES variable can be viewed using `cf env <APP_NAME>` from the CLI, or by navigating to your application in the web control portal by selecting the AppFog icon, choosing the application, then selecting Environment. You can also [Connect to MySQL Relational DB over SSL on AppFogv2](../Database/connecting-to-mysql-rdbs-over-ssl-on-appfog.md). The certificate needs to be in proper .pem format:
 
 ```
 -----BEGIN CERTIFICATE-----
-MIIDgTCCAmmgAwIBAgIJAMubOSUqSIZOMA0GCSqGSIb3DQEBCwUAMFcxGTAXBgNV
-BAoMEENlbnR1cnlMaW5rREJhYVMxHTAbBgNVBAsMFENlcnRpZmljYXRlQXV0aG9y
-aXR5MRswGQYDVQQDDBJDZW50dXJ5TGlua0RCYWFTQ0EwHhcNMTUwNjEyMDExMzIx
-WhcNMjUwNjA5MDExMzIxWjBXMRkwFwYDVQQKDBBDZW50dXJ5TGlua0RCYWFTMR0w
-GwYDVQQLDBRDZXJ0aWZpY2F0ZUF1dGhvcml0eTEbMBkGA1UEAwwSQ2VudHVyeUxp
-bmtEQmFhU0NBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzN5bNNjV
-GLZzq1vpGzgIDBdKzZtl625QSCVXu5vOGKZxsQDdMcflDylOPlOyJmg6t9KEkduQ
-KJvZhAoR03/ftqsYTNvzsbzyTraZb3fK7NZhbPLml9JLGrCeN0F3XmmYCKy+hoDA
-IegCOk4QazHu2XvVp/ATFc+w9jzEb6uHRrfvXtBPoGV3Td5tqfLEx+ZC9JAm6Ri3
-/eT8D+ys+sKYUyPPqJD12QN/ceWjvBrlCpyca2QoBb7OfZOZR8Q/xhxznYLsqBda
-4gWov23bGOVj9vSD/2kr9eSO+Ap739Awlso/hOjB/abDumsW9t1NPYSdscjxTD+t
-2EVcdGrvT5CT+QIDAQABo1AwTjAdBgNVHQ4EFgQULNhBKIj12kTdxWrg/hwMbtSk
-ND4wHwYDVR0jBBgwFoAULNhBKIj12kTdxWrg/hwMbtSkND4wDAYDVR0TBAUwAwEB
-/zANBgkqhkiG9w0BAQsFAAOCAQEAbuEg3VquJxgg5exRtdgff9tWTozM0OozJc6d
-oYgV11oH8NtvKLkwbChgGHKL1bXmMxTfW4vUk3FhuiO5S85oi0vvDGPq5gqM6oxr
-tbhaml7Nd0OoNCvRsGJiINKS3G8JRKmZ3+WA55wQEjZC5KuPlgB5XO418byYYDnc
-/k08pmEr8ztymAjVvc6rzlK0ZmUJqQnIEk+cDTHNYbALQwJ7+QZMbOGj1v/9w05M
-xFpTIBmySTP2+leCTP2qnJUiFc9yzfcMPQs6wS1KOOTwWS5LAqEUicZ17hCOMUi+
-1J1oVss1KdfPYfhSmbCbPg1ELwEHvnE7Bo4ildRlPGeSSb+gZw==
+...
+<CERTIFICATE>
+...
 -----END CERTIFICATE-----
 ```
 
@@ -54,9 +41,9 @@ System-Provided:
     "credentials": {
      "certificate": "-----BEGIN CERTIFICATE-----\n{...}\n-----END CERTIFICATE-----",
      "dbname": "default",
-     "host": "25dd22ae-0065-454b-8uw3-14c09814cec2.il1.dbaas.ctl.io",
-     "password": "GKQY0qbxn7i24Ftt",
-     "port": 49340,
+     "host": "<HOST_ADDRESS>",
+     "password": "<PASSWORD>",
+     "port": <PORT_NUMBER>,
      "username": "admin"
     },
     "label": "ctl_mysql",
@@ -66,15 +53,15 @@ System-Provided:
    }
   ],
   ```
-  
+
 #### Example Connection:
-  
+
   ```
-  mysql -h 25dd22ae-0065-454b-8uw3-14c09814cec2.il1.dbaas.ctl.io -u admin -p
+  mysql -h <HOST_ADDRESS> -u admin -p -P <PORT_NUMBER>
   ```
-  * At the prompt enter the password `GKQY0qbxn7i24Ftt`.
+  * At the prompt enter the password `<PASSWORD>`.
   * To import a MySQL dump file the the default database:
-  
+
   ```
-  mysql -h 25dd22ae-0065-454b-8uw3-14c09814cec2.il1.dbaas.ctl.io default -u admin -p --ssl-ca=/path/to/file/ca-cert.pem -P 49340 < /path/to/file/db_dump.sql
+  mysql -h <HOST_ADDRESS> default -u admin -p --ssl-ca=/path/to/file/ca-cert.pem -P <PORT_NUMBER> < /path/to/file/db_dump.sql
   ```

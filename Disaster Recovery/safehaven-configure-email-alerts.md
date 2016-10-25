@@ -7,30 +7,27 @@
 }}}
 
 ### Overview:
-
 SafeHaven provides automatic reports on the cluster health and performance. If, for instance, the allocated bandwidth is inadequate and a protection group is at risk of not meeting its target RPO, SafeHaven flags the problem and will send notifications if configured to do so. Enabling and configuring email alerts is quite simple, especially when leveraging the [CenturyLink Cloud SMTP Relay service](../Mail/smtp-relay-services-simple.md), though the process is the same from a SafeHaven configuration perspective.
 
 ### Walkthrough:
+1. Navigate to the "SMTP Relay" section of the portal. Create a new SMTP relay, if one does not already exist. If a relay already exists, note the credentials and URL (relay@t3mx.com)
 
-1. Navigate to the "SMTP Relay" section of the portal. Create a new SMTP relay, if one does not already exist. If a relay exists, note the credentials and URL (relay@t3mx.com)
-
-2. Open a console connection to the cluster's CMS server. Open the "Administration" tab and select "Configure Email Notification"
+2. Open a console connection to the cluster's CMS server. Open the "Administration" tab and select "Configure Email Notification".
 
 3. Enter the relevant information for your SMTP relay server:
+   ![SafeHavenEmail](../images/safehaven-configure-email-alerts.PNG)
 
- ![SafeHavenEmail](../images/safehaven-configure-email-alerts.PNG)
+   **PLEASE NOTE THAT CERTAIN SPECIAL CHARACTERS ARE NOT SUPPORTED IN THE PASSWORD FIELD AND WILL CAUSE ALERTING TO FAIL. THE CHARACTERS ARE:** ``` #, =, : and space```
 
 4. Verify that the "Report Settings" configuration and timing is correct:
-
- ![SafeHavenEmail1](../images/safehaven-configure-email-alerts-01.PNG)
+   ![SafeHavenEmail1](../images/safehaven-configure-email-alerts-01.PNG)
 
 5. Click "Configure and Test" when finished. The task should run successfully and show as such in the logs.
 
-6. Verify that the SMTP.conf file has been created successfully: first, SSH into the CMS as Administrator.
+6. Verify that the SMTP.conf file has been created successfully. First, SSH into the CMS as Administrator.
 
-7. View the file /etc/ssmtp/ssmtp.conf, the entries should match the information input in the previous step 3:
-
- ![SMTPconf](../images/safehaven-configure-email-alerts-02.PNG)
+7. View the /etc/ssmtp/ssmtp.conf file. The entries should match the information input in Step 3.
+   ![SMTPconf](../images/safehaven-configure-email-alerts-02.PNG)
 
 8. If the file is blank, then the contents must be manually specified. Two example entries follow, one commented and one simple, both of which provide the same core pieces of information. Once the ssmtp.conf entry has been created, SafeHaven reports should then start being sent to address specified during configuration.
 
@@ -59,13 +56,23 @@ hostname=mycompany.com
 FromLineOverride=NO
 ```
 
-The more concise version is as follows:
-/
+A more concise version is as follows:
+
 ```
 root=postmaster
-mailhub=relay@t3mx.com:25
+mailhub=relay.t3mx.com:25
 FromLineOverride=NO
 AuthUser=UserName@t3mx.com
 AuthPass=*****************
 UseSTARTTLS=no
 ```
+
+### Connecting to the SMTP Relay Service:
+Connecting to the SMTP service is very easy as it is done via port 25 from inside the CenturyLink Cloud. Here are the settings:
+
+* SMTP Host: relay.t3mx.com
+* SMTP Host Port: 25
+* User: (provided in your Control Portal as the alias)
+* Password: (provided in your Control Portal)
+
+You also need to add an SPF record as follows: `v=spf1 ip4:66.150.160.0/24`.

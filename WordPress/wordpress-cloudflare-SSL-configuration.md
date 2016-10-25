@@ -5,9 +5,9 @@
   "attachments": [],
   "contentIsHTML": false
 }}}
-### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.### Overview:
+### IMPORTANT NOTECenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.### Overview:
 
-There are multiple methods that could be used to terminate SSL for an existing CenturyLink Cloud WordPress site. This method covers using CloudFlare CDN's SSL Termination.
+There are multiple methods that could be used to terminate SSL for an existing site hosted on the CenturyLink WordPress hosting plaform. This method covers using CloudFlare CDN's SSL Termination.
 
 ### This article assumes the following:
 
@@ -15,11 +15,11 @@ There are multiple methods that could be used to terminate SSL for an existing C
 
 ### Prerequisites:
 
-1. A CenturyLink WordPress site
-2. A Custom Fully Qualified Domain Name (FQDN) added to your WordPress Site.
+1. A site hosted on the CenturyLink WordPress hosting platform.
+2. A Custom Fully Qualified Domain Name (FQDN) added to your WordPress site.
 3. An existing [CloudFlare] (https://www.cloudflare.com/) account 
 4. Your customer site name must be configured for use with CloudFlare.
-### CloudFlare Settings SupportedFollowing the [Configure SSL on Cloud Flare] (https://support.cloudflare.com/hc/en-us/articles/204468848-How-do-I-access-or-change-any-of-my-SSL-settings-) Knowledge Base Article, these are the settings CenturyLink WordPress suports.
+### CloudFlare Settings SupportedFollowing the [Configure SSL on Cloud Flare] (https://support.cloudflare.com/hc/en-us/articles/204468848-How-do-I-access-or-change-any-of-my-SSL-settings-) Knowledge Base Article, these are the settings CenturyLink suports.
 
 * SSL (with SPDY)						= Full, FLexible, or Off (Strict is not currently supported)
 * HTTP Strict Transport Security (HSTS)

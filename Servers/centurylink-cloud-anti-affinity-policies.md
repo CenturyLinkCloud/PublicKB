@@ -15,7 +15,7 @@ Anti-affinity policies make it possible to spread workloads across physical host
 * A Hyperscale Virtual Machine. Customers can only apply Anti-Affinity Policies to Hyperscale Virtual Machines. Standard Virtual Machines are not supported at this time.
 
 ### Creating an Anti-Affinity Policy
-1. Navigate to Policies, Hypsercale Anti-Affinity link in the Control Portal menu
+1. In the left navigation pane click on **Infrastructure** > **Policies** > **Hypsercale Anti-Affinity** 
 
     ![anti-affinity policy GUI](../images/centuryLink_cloud_anti-affinity_policies_01.png)
 

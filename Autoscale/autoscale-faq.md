@@ -8,7 +8,7 @@
 
 ### Description
 
-CenturyLink Cloud supports both vertical and horizontal autoscale policies that allow for the automatic scaling of resources based on user-defined thresholds. Based on these thresholds, vertical autoscale policies will add and remove CPU allocation to and from a given server, whereas horizontal autoscale policies power on and off instances within a (load balanced) group of servers.
+CenturyLink Cloud supports both vertical and horizontal autoscale policies that allow for the automatic scaling of resources based on user-defined thresholds. Based on these thresholds, vertical autoscale policies add and remove CPU allocation to and from a given server, whereas horizontal autoscale policies power on and off instances within a (load balanced) group of servers.
 
 This FAQ addresses commonly asked questions about the service. For a walkthrough of this service, see the [Creating and Applying Autoscale Policies](creating-and-applying-autoscale-policies.md).
 
@@ -20,7 +20,7 @@ Autoscale makes it possible for a server or group of servers to self-regulate an
 
 **What's the difference between horizontal and vertical Autoscale policies?**
 
-Vertical autoscaling (scaling up/down) adds (or removes) CPUs to (or from) an existing server based on the policy thresholds set. This policy gets applied on a server by server basis. See details below on when servers are scaled up or down for moreinformation on what triggers a vertical autoscale event. Horizontal autoscaling (scaling out/in) powers on (or off) servers within a group and adds (or removes) them from the load balancer configuration based on the thresholds set in the policy. This policy is applied at the group level and will affect every server within the group. See details below on when servers are scaled out or in for more information on what triggers a horizontal autoscale event.
+Vertical autoscaling (scaling up/down) adds (or removes) CPUs to (or from) an existing server based on the policy thresholds set. This policy gets applied on a server by server basis. See details below on when servers are scaled up or down for more information on what triggers a vertical autoscale event. Horizontal autoscaling (scaling out/in) powers on (or off) servers within a group and adds (or removes) them from the load balancer configuration based on the thresholds set in the policy. This policy is applied at the group level and affects every server within the group. See details below on when servers are scaled out or in for more information on what triggers a horizontal autoscale event.
 
 **When should I use horizontal Autoscale vs. vertical Autoscale?**
 
@@ -32,7 +32,7 @@ Though it is not explicitly disabled by the platform, it is not recommended that
 
 **What Operating Systems support Autoscale?**
 
-Vertical Autoscale can be applied to any server type that supports a "hot add" of CPU resources without a reboot. Those OSes include: Windows Server 2012 Datacenter Edition, Red Hat Enterprise Linux 5/6/7 x64, and Ubuntu 10/12/14 x64. Horizontal Autoscale is applied at the group level and will work with any server types within that group.
+Vertical Autoscale can be applied to any server type that supports a "hot add" of CPU resources without a reboot. Those OSes include: Windows Server 2012/2012 R2 Datacenter Edition, Red Hat Enterprise Linux 5/6/7 x64, and Ubuntu 12/14 x64. Horizontal Autoscale is applied at the group level and works with any server types within that group.
 
 **How often are you sampling the virtual machine for utilization data points?**
 
@@ -48,11 +48,11 @@ A policy takes effect instantly.
 
 **When does a server scale up?**
 
-A server scales up when its utilization meets or exceeds the user-defined threshold for a user-defined period of time. Let's consider an example. If you create a policy with a 85% utilization threshold and a threshold period of 10 minutes, this means that if the server has at least 85% utilization for a 10 minute period, then an autoscale event will occur and capacity will be immediately added. Currently, vertical Autoscale policy thresholds can only be defined for CPU utilization.
+A server scales up when its utilization meets or exceeds the user-defined threshold for a user-defined period of time. Let's consider an example. If you create a policy with a 85% utilization threshold and a threshold period of 10 minutes, this means that if the server has at least 85% utilization for a 10 minute period, then an autoscale event occurs and capacity wis immediately added. Currently, vertical Autoscale policy thresholds can only be defined for CPU utilization.
 
 **When does a server scale down?**
 
-Scaling down resources requires a server reboot. Thus, this requires more careful configuration than a scale up event. The customer creates a "scale down window" in UTC time that determines when it's safe for a server to reboot. Then, if the server goes below a minimum usage threshold for as long as the threshold period - and this occurs during a scale down window - the server will be rebooted and capacity removed. If a server is at a minimum usage for a threshold period but outside the scale down window, then no scale event occurs. This design prevents a server from going offline during busy periods. Currently, vertical Autoscale policy thresholds can only be defined for CPU utilization.
+Scaling down resources requires a server reboot. Thus, this requires more careful configuration than a scale up event. The customer creates a "scale down window" in UTC time that determines when it's safe for a server to reboot. Then, if the server goes below a minimum usage threshold for as long as the threshold period - and this occurs during a scale down window - the server is rebooted and capacity removed. If a server is at a minimum usage for a threshold period but outside the scale down window, then no scale event occurs. This design prevents a server from going offline during busy periods. Currently, vertical Autoscale policy thresholds can only be defined for CPU utilization.
 
 **Can I still manually change CPU allocation after assigning a vertical Autoscale policy?**
 
@@ -76,15 +76,15 @@ While certain Operating Systems support the addition of capacity without  a rebo
 
 **When does a server group scale out?**
 
-A server group will scale out when the overall average utilization of the servers within the group meets or exceeds the user-defined threshold for a user-defined period of time. Let's consider an example. If you create a policy with a 85% utilization threshold and a threshold period of 10 minutes, this means that if the server group has at least 85% utilization for a 10 minute period, then an autoscale event will occur and the number of incremental additional servers that was specified will be powered on and added to the load balancer configuration. Horizontal Autoscale policy thresholds can be defined based on a combination of CPU and/or memory utilization.
+A server group scales out when the overall average utilization of the servers within the group meets or exceeds the user-defined threshold for a user-defined period of time. Let's consider an example. If you create a policy with a 85% utilization threshold and a threshold period of 10 minutes, this means that if the server group has at least 85% utilization for a 10 minute period, then an autoscale event occurs and the number of incremental additional servers that was specified is powered on and added to the load balancer configuration. Horizontal Autoscale policy thresholds can be defined based on a combination of CPU and/or memory utilization.
 
 **When does a server group scale in?**
 
-A server group will scale in when the overall average utilization of the servers within the group drops below the user-defined threshold for a user-defined period of time. Let's consider an example. If you create a policy with a 25% utilization threshold and a threshold period of 10 minutes, this means that if the server group has less than 25% utilization for a 10 minute period, then an autoscale event will occur and the number of decremental servers that was specified will be powered off and removed from the load balancer configuration. Horizontal Autoscale policy thresholds can be defined based on a combination of CPU and/or memory utilization.
+A server group scales in when the overall average utilization of the servers within the group drops below the user-defined threshold for a user-defined period of time. Let's consider an example. If you create a policy with a 25% utilization threshold and a threshold period of 10 minutes, this means that if the server group has less than 25% utilization for a 10 minute period, then an autoscale event occurs and the number of decremental servers that was specified is powered off and removed from the load balancer configuration. Horizontal Autoscale policy thresholds can be defined based on a combination of CPU and/or memory utilization.
 
 **How frequently is the load balancer configuration updated with new or deleted servers?**
 
-The load balancer pool tied to a horizontal Autoscale policy is synced to the servers in the associated group every five minutes, meaning that every five minutes the pool will be cleaned up to purge any servers that were deleted and add any new servers that were added. This is purely a housekeeping task, however, as the load balancer will not route traffic to servers that don't exist or are powered off. See the article on how to maintain servers in a horizontal Autoscale group for more information on best practices for adding or removing servers from the group.
+The load balancer pool tied to a horizontal Autoscale policy is synced to the servers in the associated group every five minutes, meaning that every five minutes the pool is cleaned up to purge any servers that were deleted and add any new servers that were added. This is purely a housekeeping task, however, as the load balancer does not route traffic to servers that don't exist or are powered off. See the article on how to maintain servers in a horizontal Autoscale group for more information on best practices for adding or removing servers from the group.
 
 **Why doesn't horizontal Autoscale support provisioning and deprovisioning servers instead of just powering on and off existing ones?**
 
@@ -96,7 +96,7 @@ Yes, it is up to you to manage the servers within the horizontal Autoscale group
 
 **How does a horizontal Autoscale policy determine which server(s) to power on (or off) first when an Autoscale event is triggered?**
 
-Servers will be turned off and on based on the name of the server. This is one reason why it is very important to ensure that all servers in the group are identical as mentioned above.
+Servers are turned off and on based on the name of the server. This is one reason why it is very important to ensure that all servers in the group are identical as mentioned above.
 
 **What's the best way to add or remove servers from my horizontal Autoscale group?**
 
@@ -107,16 +107,16 @@ While the Control Portal does not allow you to set scheduled times for autoscali
 
 **What happens if I want to remove a horizontal Autoscale policy from my group?**
 
-You are free to remove the policy at any time. What will happen is that everything stays in place (server power state, load balancer configuration), but the system no longer applies scaling rules based on aggregate usage.
+You are free to remove the policy at any time. What happens is that everything stays in place (server power state, load balancer configuration), but the system no longer applies scaling rules based on aggregate usage.
 
 **Can I use an existing load balancer pool for my group's horizontal Autoscale configuration?**
 
-Yes. However, the service will remove any server from the load balancer that is not part of the group associated with the policy. Only choose this option if you wish to apply a horizontal Autoscale policy to a group of servers that is already set up
+Yes. However, the service removes any server from the load balancer that is not part of the group associated with the policy. Only choose this option if you wish to apply a horizontal Autoscale policy to a group of servers that is already set up
   in the chosen load balancer pool!
 
 **What happens if I set the load balancer option to "None" on a Autoscale policy that's applied to a group?**
 
-If you choose to remove the load balancer from a group's horizontal Autoscale policy, then the system will remove all the servers from that load balancer pool. The servers will remain in their current power state and will continue to scale in and out based on aggregate usage. In this scenario, a scale event will NOT be accompanied by any changes to a load balancer.
+If you choose to remove the load balancer from a group's horizontal Autoscale policy, then the system removes all the servers from that load balancer pool. The servers remain in their current power state and continue to scale in and out based on aggregate usage. In this scenario, a scale event is NOT accompanied by any changes to a load balancer.
 
 **May I create managed servers in my horizontal Autoscale group?**
 
@@ -128,7 +128,7 @@ No. When applying a horizontal Autoscale policy to a group, you have the option 
 
 **Do I have to pay for servers in my horizontal Autoscale group even when they are powered off and not in use?**
 
-You will not be charged for CPU and memory usage when the server is powered off, however you will pay for the storage attached to these servers and any software licensing costs associated with them. (Also for managed servers, the management fee will still apply even for powered off servers.)
+You are not charged for CPU and memory usage when the server is powered off, however you pay for the storage attached to these servers and any software licensing costs associated with them. (Also for managed servers, the management fee is still apply even for powered off servers.)
 
 **Can I use horizontal Autoscale policies to add servers to application clusters (i.e. caching or database clusters)?**
 

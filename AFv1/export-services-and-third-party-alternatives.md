@@ -14,12 +14,15 @@ This document is for users of AppFog v1 for migration to the next generation of 
 
 Before deleting any applications or services on AppFog v1 ensure you have local copies. Once apps and services are deleted it is **permanent**. We will not be able to provide a backup.
 
+When migration is complete your billing subscription can be canceled from the [Account](https://console.appfog.com/#account) page of the web console. Please be sure to cancel your subscription as we are not aware when individual user migration is complete. The billing system will not automatically prorate the subscription and issue a refund. If applicable, please open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com to receive a prorated refund of your subscription.
+
+
 
 ### Export Services
 The export utility in AppFog v1 is subject to timeout for databases larger than approximately 100M. Please verify your data before deleting any services. For databases near 100M or that experience export errors please login to open a [Support Ticket](https://support.appfog.com/tickets/new) or email support@appfog.com and we will provide a dump of your database.
 
 1. Export using the tunnel:
-  * [Tunneling](service-database-content-management-tunneling.md) on AppFog v1.
+  * Tunneling on AppFog v1.
   * From the command line:
 <pre>af tunnel</pre>
   * Select the service to export.
@@ -29,8 +32,23 @@ The export utility in AppFog v1 is subject to timeout for databases larger than 
 2: mysql
 3: mysqldump
 </pre>
-2. Export a MySQL database using phpMyAdmin:
-  * Deploy a [phpMyAdmin on AppFog](phpmyadmin-on-appfog.md) jumpstart app.
+2. Export a MySQL database using the `export-service` command:
+  * Use `export-service` to generate a dump URI.
+  * Download the file from the URL.
+  * Give the file the ZIP file extension.
+  * Decompress the ZIP and navigate to the content folder in your current directory.
+  * Decompress the SQL file from the Gunzip (GZ) file.
+  * An example is below:
+<pre>af export-service \<service_name\>
+mkdir \<service_name\>
+cd \<service_name\>
+wget -c -O \<service_name\>.zip \<URL_provided_by_export-service_command\>
+unzip \<service_name\>.zip
+cd content
+gunzip *.gz
+</pre>
+3. Export a MySQL database using phpMyAdmin:
+  * Deploy a phpMyAdmin on AppFog jumpstart app.
   * Use the phpMyAdmin export utility.
   * For large databases that still experience timeouts you can export the database in chunks, selecting single or multiple tables at a time.
 
