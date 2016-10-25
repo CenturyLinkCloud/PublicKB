@@ -715,7 +715,7 @@ clc ips install --server-name CA3ABCDTAKE02
 ```
 **Set the notification (options: Webhook, Slack, syslog and Email) with email**
 ```
-clc ips set-notifications --server-name CA3ABCDTAKE02 --notification-destinations "type-code"="EMAIL","email-address"="monitor@abcd.com"
+clc ips set-notifications --server-name CA3ABCDTAKE02 --notification-destinations '"type-code"="EMAIL","email-address"="monitor@abcd.com"'
 ```
 
 ### Patching Service
