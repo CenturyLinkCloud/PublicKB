@@ -1,5 +1,5 @@
 {{{
-  "title": Boot Stub into local disk instead of iSCSI",
+  "title": Boot Recovery Proxy into local disk instead of iSCSI",
   "date": "10-26-2016",
   "author": "Anshul Arora",
   "attachments": [],
@@ -17,5 +17,9 @@ server has data disks then attach data disks of same size to the stub
 ###2. Initiate Test Failover
 
 ###3. In-band To Out-of-band Conversion
-Run In-band To Out-of-band Converter 
+Run In-band To Out-of-band Converter
+
+![InbandToOutofband](../images/inband2out.png)
+
+Select SCST(iSCSI) disk as the source disk and VMware disk as destination. Carefully map the iSCSI disks to the Disks of the Recovery Server so the the boot
 
