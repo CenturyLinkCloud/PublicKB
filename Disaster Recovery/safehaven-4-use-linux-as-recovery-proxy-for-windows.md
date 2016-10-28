@@ -40,17 +40,25 @@ Notes
 
 ### 3. Create Protection Groups during Onboarding
 
-#### 3.2 (Not released yet) Automatically Deploy the Recovery Proxy
+#### 3.1 (Not released yet) Automatically Deploy the Recovery Proxy
 This is a feature that is not yet available in SafeHaven-4.0.0.
 
 When deploying a recovery proxy server in CLC in the SafeHaven GUI protection group provision wizard, we need to make sure the template created in step 2 with matching **PCI Slot** number is chosen.
 
-#### 3.1 Manually Deploy from Template and Choose exsting VM as Recovery Proxy
+Note that if the production VM is running on VMXNET3 NIC on PCI Slot 160, the default CLC template of ```Ubuntu 14|64bit``` should be used.
+
+#### 3.2 Manually Deploy from Template and Choose exsting VM as Recovery Proxy
 This is the only method to be used in SafeHaven-4.0.0 if a Linux OS is to be used as the stub to protect a Windows VM.
 
-When deploying a recovery proxy server manually in CLC, we need to make sure the template created in step 2 with matching **PCI Slot** number is chosen.
+When deploying a recovery proxy server manually in CLC, we need to make sure the template created in step 2 with matching **PCI Slot** number is chosen. Note that if the production VM is running on VMXNET3 NIC on PCI Slot 160, the default CLC template of ```Ubuntu 14|64bit``` should be used.
 
-##### 3.1.1 Interactively during a Test Failover: Auto iSCSI Discovery
+Once the stub VM is deployed from the chosen template, obtain the ```makestub_for_windows.sh``` by running the following commands as root:
+```
+wget https://www.dropbox.com/s/r8emtxq2rt8edls/makestub_for_windows.sh
+chmod +x makestub_for_windows.sh
+```
+
+##### 3.2.1 Interactively during a Test Failover: Auto iSCSI Discovery
 If the iSCSI target is present (for example during the test failover), one can simply run the ```makestub_for_windows.sh``` command. An interactive interface will guide the user to 
 * install necessary packages
 * enter the SRN IP address
@@ -117,7 +125,7 @@ Script done, file is running_makestub_for_windows.sh.log
 ```
 
 
-##### 3.1.2 (Recommended) Silently: Without Test Failover
+##### 3.2.2 (Recommended) Silently: Without Test Failover
 
 It is recommended to perform the MakeStub procedure while the production VMs are in the onboarding process. For this reason, a test failover is not possible. The IQN can be copied from the SafeHaven Console's Targets tab.
 
