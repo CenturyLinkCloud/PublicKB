@@ -1,6 +1,6 @@
 {{{
   "title": "How To: Clone a Virtual Machine OS Instance",
-  "date": "10-24-2016",
+  "date": "10-28-2016",
   "author": "Chris Little",
   "attachments": [],
   "related-products" : [],
@@ -14,8 +14,9 @@ A clone is a copy of an existing virtual machine. When the cloning operation is 
 
 ### Exclusions
 
-* Cloning is unsupported for customers who leverage virtual machines with the multi-vNIC feature
+* Cloning is not supported for customers who leverage virtual machines with the multi-vNIC feature
 * Source machines must not be domain joined.
+* Cloning is not supported for customers using our [Managed Operating System Services](//www.ctl.io/managed-services/operating-system/)
 
 ### Important Notices
 
