@@ -10,6 +10,7 @@
 
 The official support of Windows Server 2008R1 was discontinued since the release of SafeHaven-3.1.1 in December, 2015. This document provides a good-will method for customers to get SafeHaven Disaster Recovery as a Servce(DRaaS) protection on their legacy servers still running Windows Server 2008R1. Customers are strongly advised to upgrade to a newer server OS instead of keep running this legacy Windows server 2008R1 OS. Use this document only if there is absolutely no other options.
 
+Also please note that **only 64bit** Windows 20008R1 is supported. The 32bit Windows 2008R1 is not supported.
 
 ### What's the Same as for Supported OS
 
