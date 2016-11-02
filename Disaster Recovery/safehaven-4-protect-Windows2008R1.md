@@ -31,32 +31,32 @@ Also please note that this method does not support automated LRA installation. O
 
 ##### Install Prerequisite: PowerShell v2
 
-Before installing LRA, we have to get powershell v2 installed.
+Before installing LRA, we have to get powershell v2 installed. If you already have powrshell v2 installed, you can skip this step. Note that Powershell v1 is not sufficient for this use case
 
-Note that this procedure is only tested on Windows 2008R1 Service Pack 2. If you are on a different service pack level, the procedure might be different. For example, you might have to install certain powershell related Windows updates before you can  enable this feature.
+
 
 * Open Server Manager and natigate to Features->Add Features
-* Choose "Windows PowerShell" as a new feature to be added
-![win08r1_install_ps.png](../images/SH-4/win08r1_install_ps.png)
-* Follow the wizard and it would install powershell 1.0
+* Download and install Powershell v2 from https://www.microsoft.com/en-ca/download/details.aspx?id=20430. Specifically, it installs a Windows update named **KB968930**
+* A server restart is required after the powershell v2 installation: it may take some time since it goes through the Windows update procedure
+* Confirm the powershell version by running this command in powershell
 
 ```
 Windows PowerShell
-Copyright (C) 2006 Microsoft Corporation. All rights reserved.
+Copyright (C) 2009 Microsoft Corporation. All rights reserved.
 
 PS C:\Users\Administrator> get-host
 
 
 Name             : ConsoleHost
-Version          : 1.0.0.0
-InstanceId       : 7c1d4f66-3613-411e-8e93-e620ba1ca406
+Version          : 2.0
+InstanceId       : 287d5f86-2d4e-42ba-a475-5ec36c926a14
 UI               : System.Management.Automation.Internal.Host.InternalHostUserInterface
 CurrentCulture   : en-US
 CurrentUICulture : en-US
 PrivateData      : Microsoft.PowerShell.ConsoleHost+ConsoleColorProxy
+IsRunspacePushed : False
+Runspace         : System.Management.Automation.Runspaces.LocalRunspace
 ```
-* Powershell version 1 is not enough for our purpose. We need to upgrade to version 2.
-
 
 ##### Driver Installation
 
@@ -65,5 +65,8 @@ PrivateData      : Microsoft.PowerShell.ConsoleHost+ConsoleColorProxy
 
 ##### Start Replication with Manager.exe
 
-Lanuch Manager.exe the same way as for supported OSes
+Lanuch Manager.exe the same way as for supported OSes. The only difference is on the page choosing the mapping between source and destination disks
+* For supported OSes, the uninitialized disks are hidden from the source disk column
+* For Win2008R1, since the concept of initialized/uninitialized disk does not exist, no such filtering would be done.
 
+Note that a similar behavior is observed in the InbandToOutofbandConverter.exe
