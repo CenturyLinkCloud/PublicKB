@@ -49,7 +49,7 @@ Upon installation the agent initially conducts a full backup as indicated by the
 * *Deleted files* – Files deleted from a server are retained in storage until the policy retention period lapses.
 * *Unchanged files* – No additional files are added to storage. The original files do not expire based on the retention until the file on the server is changed and a new version is backed up, or the file is deleted from the server.
 
-### ull vs. Incremental Backups
+### Full vs. Incremental Backups
 As mentioned above, all data is transferred to Objected Storage when the backup agent gets installed on the server. Incremental backups occur according to the frequency defined in the backup policy and cover the added, changed, or deleted files and folders specifically. This model has the same level of customer data protection as a constant full backup. It offers the benefits of reduced backup speed, minimized data transfer cost, and minimized storage cost. The bottom line is a fast, reliable, and affordable backup solution. In addition, there are also tactics you can use to help [reduce restore costs](https://www.ctl.io/knowledge-base/backup/minimizing-restore-costs/) as well.
 
 ### Backup Duration
