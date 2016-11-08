@@ -104,6 +104,7 @@ DNS:
 ![DNS](../images/estimator/dns.png)
 
 ### Services
+
 CenturyLink Cloud offers different services and the cost estimation can be under the individual service page.
 
 Appfog
@@ -124,6 +125,7 @@ Relational DB
 
 
 ### Billing
+
 ![Billing](../images/estimator/billing.png)
 
 If a detail break down of the usage is required, "Usage History" can be found under "Settings" -> "Billing".  In this section, a monthly usage report can be viewed and download for accounting purposes.  The details include:
@@ -139,7 +141,7 @@ If a detail break down of the usage is required, "Usage History" can be found un
  - Support costs
  - Discount or credit if applicable
 
-Below is a table to summarize the services included in portal cost estimation:
+### Summary
 
 Below is a table to summarize the services included in portal cost estimation:
 
