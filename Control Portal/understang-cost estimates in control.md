@@ -141,7 +141,7 @@ If a detail break down of the usage is required, "Usage History" can be found un
 
 Below is a table to summarize the services included in portal cost estimation:
 
--  | CPU | Memory | Disk | OS-license | Database-License | VLANs | VPN | Load-Balancer | Object-Storage | Public-IP | Simple-Backup | Appfog | Relational-DB | DNS | Bandwidth
+View-Resource  | CPU | Memory | Disk | OS-license | Database-License | VLANs | VPN | Load-Balancer | Object-Storage | Public-IP | Simple-Backup | Appfog | Relational-DB | DNS | Bandwidth
 ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------
 Main Dashboard Month Estimate | x | x | x | x | x | x | x | x | x | x | x | x | X | X |
 Data Center View | x | x | x | x | | | | | | | | | | |
