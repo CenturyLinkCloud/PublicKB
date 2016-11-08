@@ -18,8 +18,8 @@ __Required Actions__: All AppFog users should upgrade their CLI to the most rece
 __Known Issues__: cf-release v245 contains an issue staging Python buildpack-based apps and any apps using any buildpack that doesn't return a process type in the staging result. In the meantime, the workaround is to add a file called `Procfile` to the application root directory, containing the command: `web: python <appname.py>` (<appname.py> is the Python app name, e.g. `hello-world.py` ). More info on Procfiles [here](https://docs.cloudfoundry.org/buildpacks/prod-server.html#procfile).
 
 - __Scheduled Maintenance__: The maintenance windows were scheduled as follows:
-> - The AppFog US West (UC1) upgrade began on Mon Oct 31 at 8:00 AM PDT (GMT-7). 
-> - The AppFog US East (VA1) upgrade began on Wed Nov 2 at 8:00 AM PDT (GMT-7).
+- The AppFog US West (UC1) upgrade began on Mon Oct 31 at 8:00 AM PDT (GMT-7). 
+- The AppFog US East (VA1) upgrade began on Wed Nov 2 at 8:00 AM PDT (GMT-7).
 
 
 ### Announcements (1)
