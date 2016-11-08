@@ -7,11 +7,9 @@
 }}}
 
 ### Description
-
 Below is a list of public packages that have been made available on the CenturyLink Cloud. For information on deploying them, follow the instructions for [Using Group Tasks to Install Software and Run Scripts on Groups](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md). In some cases, the package listing below links to another article with more details on how to use that specific package. If you have a package that might be useful for public consumption, please refer to [Creating Public Blueprint Packages](../Blueprints/creating-public-blueprint-packages.md) for more information on how to do this.
 
 ### Windows Packages
-
 - Install .NET Framework 4.5 on Windows
 - [Install Active Directory on Windows 2012 (1 of 2) \[Primary Node\]](../Blueprints/deploy-microsoft-windows-2012-active-directory-domain-services.md)
 - [Install Active Directory on Windows 2012 (2 of 2) \[Secondary Node\]](../Blueprints/deploy-microsoft-windows-2012-active-directory-domain-services.md)

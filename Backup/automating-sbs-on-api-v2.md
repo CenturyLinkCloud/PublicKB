@@ -61,21 +61,21 @@ to confirm the script and access the .txt output file. The file contains the log
 
     ![sbspowershellscriptlogging.png](../images/sbspowershellscriptlogging.png)
 
-11. You can also check the Control Portal to see the policies that were created. Navigate to control.ctl.io and login with your CenturyLink Cloud credentials. When your dashboard is loaded, navigate to the Servers section in the menu, and click Policies.
+11. You can also check the Control Portal to see the policies that were created. Navigate to the [Control Portal](https://control.ctl.io) and login with your CenturyLink Cloud credentials.
 
-12. In the Policies dashboard, click Simple Backup Service. It is located at the bottom of the navigation options on the left-hand side of the window.
+12. From the Navigation Menu, click **Infrastructure > Policies**. On the Policies page, click **Simple Backup Service**.
 
     ![sbspowershellportalmainpage.png](../images/sbspowershellportalmainpage.png)
 
-13. The SBS policies that you created will appear here.
+13. The SBS policies that you create appear here.
 
     ![sbspowershellportalpolicies.png](../images/sbspowershellportalpolicies.png)
 
-14. Click on one of the policies to see the servers that it was applied to, as well as its settings.
+14. Click one of the policies to see the servers that it applies to, as well as its settings.
 
     ![sbspowershellportalpolicydetails.png](../images/sbspowershellportalpolicydetails.png)
 
-    **Note:** If you want to remove an SBS policy from a server, just click the server's name on this page and then the delete button.
+15. If you want to remove an SBS policy from a server, just click the server's name on this page and then click **delete**.
 
     ![sbspowershellportaldeletepolicy.png](../images/sbspowershellportaldeletepolicy.png)
 

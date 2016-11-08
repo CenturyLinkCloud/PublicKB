@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-The purpose of this guide is to provide step by step instructions for configuring Windows 2012 R2 with ADFS 3.0 to authenticate with CenturyLink Cloud SAML.  For simplicity sake, a single server will be used for directory services and certificate services.  Depending on your company's requirements you may choose to use multiple servers for the various roles and services that are required.  If you choose to segregate the roles and services this guide will still provide a useful instruction set for configuration guidelines.
+The purpose of this guide is to provide step by step instructions for configuring Windows 2012 R2 with ADFS 3.0 to authenticate with CenturyLink Cloud SAML.  For simplicity sake, a single server will be used for directory services and certificate services.Depending on your company's requirements you may choose to use multiple servers for the various roles and services that are required. If you choose to segregate the roles and services this guide will still provide a useful instruction set for configuration guidelines.
 
 ### Description
 CenturyLink Cloud supports the use of Security Assertion Markup Language (SAML) for exchanging user authentication data as XML between trusted parties. This industry standard protocol empowers our customers to use their **own** identity management system for authenticating users of the CenturyLink Cloud Control Portal.
@@ -38,9 +38,7 @@ All steps in this guide require Domain Administrator permissions in Active Direc
 
 **1. Provision server to act as Identity Provider.**
 
-Log into the CenturyLink Cloud Control Portal and choose to create a new Blueprint. This takes you to the Blueprint Designer wizard.
-
-![Blueprint Menu](../images/adfs_saml_2012_02.png)
+Log into the CenturyLink Cloud Control Portal and choose to create a new Blueprint. Using the left navigation bar, choose **Orchestration** > **Design Blueprint**. 
 
 1.  Using Blueprint Designer you have several choices for versioning, privacy settings, etc.  In this step you can choose the settings that are appropriate for your intended use.  There is one required field, Description.  Populate with a description that is accurate for your use.
 
