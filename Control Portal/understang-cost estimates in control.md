@@ -145,18 +145,16 @@ If a detail break down of the usage is required, "Usage History" can be found un
 
 Below is a table to summarize the services included in portal cost estimation:
 
-| - | CPU | Memory | Disk | OS license | Database License | VLANs | VPN | Load Balancer | Object Storage | Public IP | Simple Backup | Appfog | Relational DB | DNS | Bandwidth |
-| ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
-| Main Dashboard Month Estimate | x | x | x | x | x | x | x | x | x | x | x | x | X | X | |
-| Data Center View | x | x | x | x | | | | | | | | | | | |
-| Group View | x | x | x | x | | | | | | | | | | | |
-| Server View | x | x | x | x | | | | | | | | | | | |
-| Network | | | | | | x | | | | | | | | | |
-| Load Balancer | | | | | | | | x | | | | | | | |
-| Site to Site VPN | | | | | | | x | | | | | | | | |
-| DNS  | | | | | | | | | | | | | | x | |
-| Appfog | | | | | | | | | | | | x | | | |
-| Backup | | | | | | | | | | | x | | | | |
-| Object Storage | | | | | | | | | x | | | | | | |
-| Relational DB | | | | | | | | | | | | | x | | |
-| Billing | x | x | x | x | x | x | x | x | x | x | x | x | x | x | x |
+| Portal | Estimates |
+| ------------ | ------------ |
+| Main Dashboard Month Estimate | CPU<br>Memory<br>Disk<br>OS license<br>Database License<br>VLANs<br>VPN<br>Load Balancer<br>Object Storage<br>Public IP<br>Simple BAckup<br>Appfog<br>Relational DB<br>DNS |
+| Data Center View<br>Group View<br>Server View | CPU<br>Memory<br>Disk<br>OS license |
+| Network | VLANs |
+| Load Balancer | Load Balancer |
+| Site to Site VPN | VPN |
+| DNS  | DNS |
+| Appfog | Appfog break down by region |
+| Backup | Simple Backup |
+| Object Storage | Object Storage (month estimate/current hour/month to date) |
+| Relational DB | Relational DB |
+| Billing | CPU<br>Memory<br>Disk<br>OS license<br>Database License (per server)<br>VLANs<br>VPN<br>Load Balancer<br>Object Storage<br>Public IP (per data center)<br>Simple Backup<br>Appfog<br>Relational DB<br>DNS<br>Bandwidth<br>Credit |
