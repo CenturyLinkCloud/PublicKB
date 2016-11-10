@@ -127,6 +127,7 @@ Relational DB
 ### Billing
 
 ![Billing](../images/estimator/billing.png)
+![Billing Details](../image/estimator/billing-managed.png)
 
 If a detail break down of the usage is required, "Usage History" can be found under "Settings" -> "Billing".  In this section, a monthly usage report can be viewed and download for accounting purposes.  The details include:
  - Usage Total of the accounting
@@ -157,4 +158,4 @@ Below is a table to summarize the services included in portal cost estimation:
 | Backup | Simple Backup |
 | Object Storage | Object Storage (month estimate/current hour/month to date) |
 | Relational DB | Relational DB |
-| Billing | CPU<br>Memory<br>Disk<br>OS license<br>Database License (per server)<br>VLANs<br>VPN<br>Load Balancer<br>Object Storage<br>Public IP (per data center)<br>Simple Backup<br>Appfog<br>Relational DB<br>DNS<br>Bandwidth<br>Credit |
+| Billing | CPU<br>Memory<br>Disk<br>OS license<br>Database License (per server)<br>VLANs<br>VPN<br>Load Balancer<br>Object Storage<br>Public IP (per data center)<br>Simple Backup<br>Appfog<br>Relational DB<br>DNS<br>Bandwidth<br>Support<br>Credit |
