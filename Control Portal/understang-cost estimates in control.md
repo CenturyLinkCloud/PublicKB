@@ -16,6 +16,7 @@
 - [Network](#network)
 - [Services](#services)
 - [Billing](#billing)
+- [Summary](#summary)
 
 ### Overview
 One of the best features of the Control Portal is the cost estimatation in every level within the account.  In this knowledge article, we will have a look of what are included in each level of the Control Portal.
