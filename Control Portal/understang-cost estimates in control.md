@@ -19,8 +19,8 @@
 - [Summary](#summary)
 
 ### Overview
-One of the best features of the Control Portal is the cost estimatation in every level within the account.  In this knowledge article, we will have a look of what are included in each level of the Control Portal.
-Monthly and hourly estimates are found in the following level of the Portal:
+One of the best features of the Control Portal is the cost estimation in every level within the account.  In this knowledge article, we will have a look at what is included in each level of the Control Portal.
+Monthly and hourly estimates are found in the following levels of the Portal:
 - Main Dashboard
 - Data Centers
 - Groups
@@ -67,7 +67,7 @@ For the following views, the estimations are displayed with the following data:
 ![Datacenter](../images/estimator/datacenter.png)
 
 Jumping from the main dashboard to an individual data center, the cost estimation will be more data center infrastructure focused.  The list of items included in the cost estimation in the data center level are:
- - All infrastructure costs (CPU, Memory, disk) and OS licenses (where applicable) from the data center
+ - All infrastructure costs (CPU, Memory, disk) and OS licenses (where applicable) within the data center
  - Managed Services costs (Managed OS, Active Directory, Databases, Web server)
 
 ### Group view
@@ -106,7 +106,7 @@ DNS:
 
 ### Services
 
-CenturyLink Cloud offers different services and the cost estimation can be under the individual service page.
+CenturyLink Cloud offers different services for which the cost estimation can be found under the individual service page.
 
 Appfog
 
@@ -129,8 +129,8 @@ Relational DB
 
 ![Billing](../images/estimator/billing.png)
 
-If a detail break down of the usage is required, "Usage History" can be found under "Settings" -> "Billing".  In this section, a monthly usage report can be viewed and download for accounting purposes.  The details include:
- - Usage Total of the accounting
+If a detailed breakdown of the usage is required, "Usage History" can be found under "Settings" -> "Billing".  In this section, a monthly usage report can be viewed and downloaded for accounting purposes.  The details include:
+ - Usage Total of the account
  - Group sub-total of each Group
  - Simple Backup Service usage for individual server
  - Microsoft SQL licenses for individual server including server name
