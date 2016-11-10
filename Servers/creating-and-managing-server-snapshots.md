@@ -1,6 +1,6 @@
 {{{
   "title": "Creating and Managing Server Snapshots",
-  "date": "4-26-2016",
+  "date": "10-24-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -13,6 +13,7 @@ Snapshots are a feature of our platform that allow a machine to be quickly rever
 * Using snapshots with a very high rate of change can cause significant performance degradation when the snapshot is removed. Your server may **lose connectivity** or become **unavailable** for several minutes or longer during the removal process.
 * Snapshots are not supported on Standard Virtual Servers with greater than 1 TB of  Storage Allocated. Hyperscale Servers cannot leverage the Snapshot feature.
 * Configuration changes to Virtual Servers, such as CPU/RAM/Disk, cannot be performed while a snapshot is present.  
+* Cloning of virtual servers with a snapshot is a supported operation.  Please review [How To: Clone a Virtual Machine](../Servers/how-to-clone-a-virtual-machine-os-instance.md) for more information.
 
 ### Create a snapshot of an existing server
 
