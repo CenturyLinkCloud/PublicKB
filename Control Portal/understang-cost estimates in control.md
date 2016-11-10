@@ -19,8 +19,7 @@
 - [Summary](#summary)
 
 ### Overview
-One of the best features of the Control Portal is the cost estimation in every level within the account.  In this knowledge article, we will have a look at what is included in each level of the Control Portal.
-Monthly and hourly estimates are found in the following levels of the Portal:
+One of the best features of the Control Portal is the cost estimation in every level within the account.  In this knowledge article, we will have a look at what is included in each level of the Control Portal.  Monthly and hourly estimates are found in the following levels of the Portal:
 - Main Dashboard
 - Data Centers
 - Groups
