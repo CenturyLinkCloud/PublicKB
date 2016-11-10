@@ -128,8 +128,6 @@ Relational DB
 
 ![Billing](../images/estimator/billing.png)
 
-![Billing Details](../images/estimator/billing-managed.png)
-
 If a detail break down of the usage is required, "Usage History" can be found under "Settings" -> "Billing".  In this section, a monthly usage report can be viewed and download for accounting purposes.  The details include:
  - Usage Total of the accounting
  - Group sub-total of each Group
@@ -142,6 +140,10 @@ If a detail break down of the usage is required, "Usage History" can be found un
  - Public IP per data center
  - Support costs
  - Discount or credit if applicable
+
+Screesnshot of the detail usage breakdown:
+![Billing Details](../images/estimator/billing-managed.png)
+
 
 ### Summary
 
