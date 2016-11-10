@@ -11,8 +11,8 @@
 - [Overview](#overview)
 - [Dashboard](#main-dashboard)
 - [Data Center View](#data-center-view)
-- [Group View](#connectvpn)
-- [Server View](#deployowncloud)
+- [Group View](#group-view)
+- [Server View](#server-view)
 - [Network](#network)
 - [Services](#services)
 - [Billing](#billing)
@@ -88,19 +88,19 @@ The estimate for a server will show:
 
 Under Network menu, the cost of VLANs, Share Load Balanacer, DNS and Site to Site VPN can be found within the configuration page of the service.
 
-For Networks:
+#### Networks:
 
 ![Network](../images/estimator/network.png)
 
-For Load Balancers:
+#### Load Balancers:
 
 ![LoadBalancer](../images/estimator/loadbalancer.png)
 
-Site to Site VPN:
+#### Site to Site VPN:
 
 ![VPN](../images/estimator/vpn.png)
 
-DNS:
+#### DNS:
 
 ![DNS](../images/estimator/dns.png)
 
@@ -108,19 +108,19 @@ DNS:
 
 CenturyLink Cloud offers different services for which the cost estimation can be found under the individual service page.
 
-Appfog
+#### Appfog
 
 ![Appfog](../images/estimator/appfog.png)
 
-Backup
+#### Backup
 
 ![Backup](../images/estimator/backup.png)
 
-Object Storage
+#### Object Storage
 
 ![ObjectStorage](../images/estimator/objectstorage.png)
 
-Relational DB
+#### Relational DB
 
 ![Database](../images/estimator/database.png)
 
