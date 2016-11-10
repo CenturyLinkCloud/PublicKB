@@ -127,7 +127,8 @@ Relational DB
 ### Billing
 
 ![Billing](../images/estimator/billing.png)
-![Billing Details](../image/estimator/billing-managed.png)
+
+![Billing Details](../images/estimator/billing-managed.png)
 
 If a detail break down of the usage is required, "Usage History" can be found under "Settings" -> "Billing".  In this section, a monthly usage report can be viewed and download for accounting purposes.  The details include:
  - Usage Total of the accounting
