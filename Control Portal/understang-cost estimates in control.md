@@ -70,14 +70,14 @@ Jumping from the main dashboard to an individual data center, the cost estimatio
  - All infrastructure costs (CPU, Memory, disk) and OS licenses (where applicable) within the data center
  - Managed Services costs (Managed OS, Active Directory, Databases, Web server)
 
-### Group view
+### Group View
 ![Group](../images/estimator/group.png)
 
 For an indiviual group, its estimate is similar to the Data Center View.  
  - All infrastructure costs (CPU, Memory, disk) and OS licenses (where applicable) from the data center
  - Managed Services costs (Managed OS, Active Directory, Databases, Web server)
 
-### Server view
+### Server View
 ![Server](../images/estimator/server.png)
 
 The estimate for a server will show:
