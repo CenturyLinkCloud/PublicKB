@@ -52,7 +52,7 @@ The following are quick tips/notes based on past experiences with customers leve
 1. Navigate to **Orchestration, Scripts** in Control.
    ![servers menu in control portal](../images/deploy-microsoft-sql-server-using-blueprint-01.png)
 
-2. Browse to the Group that houses the VM(s) you want to deploy SQL. Select M**Execute Package**.
+2. Browse to the Group that houses the VM(s) you want to deploy SQL. Select **Execute Package**.
    ![select execute package](../images/deploy-microsoft-sql-server-using-blueprint-02.png)
 
 3. Search for **Install SQL** and select the **Install SQL Server on Windows** (for version 2008/2012/2014) or **Install SQL Server 2016 on Windows** (for version 2016) script.
