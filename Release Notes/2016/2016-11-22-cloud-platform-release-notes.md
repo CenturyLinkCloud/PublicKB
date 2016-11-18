@@ -14,9 +14,18 @@
 
 We are still accepting beta customer requests for our MSSQL Relational DB Beta. The beta service is currently limited to IL1 and includes a single instance of MSSQL with private routing, daily backups held for 7 days and configurable backup time. Keep watching release notes for announcements on when new beta features and locations are added. If you are interested in joining the beta program, please visit [https://www.ctl.io/relational-database/#MSSQLbeta](https://www.ctl.io/relational-database/#MSSQLbeta) .
 
-### Enhancements (1)
 
-* __Runner - Enhancements:__
+### Enhancements (2)
+
+* __Simple Backup Service - New Storage Destination (Australia) :__
+
+ * The Simple Backup Service has added a new target destination for the backed up files, Australia (APAC). 
+ * We also are implementing several backup agent improvements and bug fixes
+ 
+ ![SimpleBackupChanges](../../images/2016-11-22_simplebackupchanges.png)
+
+
+* __Runner - UI Improvements__
 
 Made the following user interface improvements to the Runner product:
 
@@ -25,9 +34,9 @@ Made the following user interface improvements to the Runner product:
 - Product Group field now supports in-line group creation.
 - Recent Executions are now available on all pages.
 - Users can now refresh catalogs directly from the settings/catalog page.
-- General Improvements, bug fixes, and tweaks.
 
 ![RunnerUIChanges](../../images/2016-11-22_RunnerUI.png)
+
 
 
 ### Announcements (1)
