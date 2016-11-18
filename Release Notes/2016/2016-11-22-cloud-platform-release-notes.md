@@ -16,7 +16,9 @@ We are still accepting beta customer requests for our MSSQL Relational DB Beta. 
 
 ### Enhancements (1)
 
-* __Runner - User Interface Changes:__
+* __Runner - Enhancements:__
+
+Made the following user interface improvements to the Runner product:
 
 - Added navigation banner to all pages.
 - Updated APIs and refactored UI for better performance.
@@ -30,7 +32,7 @@ We are still accepting beta customer requests for our MSSQL Relational DB Beta. 
 
 ### Announcements (1)
 
-* __Orchestrate - End of Life
+* __Orchestrate - End of Life:__
 
 CenturyLink has announced that it will be retiring the Orchestrate NoSQL Database service. We want to help make this transition as smooth as possible, so we are providing our customers a 120 day transition period. In the coming days, a best practices guide for migrating data will be sent to current Orchestrate users.
 
