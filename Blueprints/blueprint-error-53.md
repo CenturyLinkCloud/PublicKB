@@ -7,7 +7,6 @@
 }}}
 
 ### Symptom
-
 Blueprint packages that end with an error on each execution with the following error message:
 
 ```
@@ -15,13 +14,9 @@ Blueprint packages that end with an error on each execution with the following e
 ```
 
 ### Cause
-
-This is caused when an **Execution Mode** mismatch occurs between the package itself and the operating system
-the package is being executed on.
-
+This is caused when an **Execution Mode** mismatch occurs between the package itself and the operating system the package is being executed on.
 
 ### Resolution
-
 Change the `Execution/Mode` setting in the problem `package.manifest` file.
 
 ```
@@ -35,5 +30,3 @@ Change the `Execution/Mode` setting in the problem `package.manifest` file.
 
 * **Linux** based operating systems but have a mode of **Ssh**
 * **Windows** based operating systems but have a mode of **Command** or **PowerShell**
-
-
