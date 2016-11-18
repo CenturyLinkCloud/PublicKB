@@ -593,7 +593,7 @@ clc server execute-package --server-ids CA2ABCDMYSQLU01 --package "package-id=fc
   ```
   - Update a public IP port and source IP restriction
   ```
-  clc server update-public-ip-address --server-name CA3ABCD2TSQL01 --public-ip xxx.xxx.xxx.xxx --ports port=8080,portTo=8085,protocol=tcp --source-restrictions "CDIR=xxx.xxx.xxx.xxx/32"
+  clc server update-public-ip-address --server-name CA3ABCD2TSQL01 --public-ip xxx.xxx.xxx.xxx --ports port=8080,portTo=8085,protocol=tcp --source-restrictions "CIDR=xxx.xxx.xxx.xxx/32"
   ```
 
 **Adding a secondary network card on a server**
@@ -715,7 +715,7 @@ clc ips install --server-name CA3ABCDTAKE02
 ```
 **Set the notification (options: Webhook, Slack, syslog and Email) with email**
 ```
-clc ips set-notifications --server-name CA3ABCDTAKE02 --notification-destinations "type-code"="EMAIL","email-address"="monitor@abcd.com"
+clc ips set-notifications --server-name CA3ABCDTAKE02 --notification-destinations '"type-code"="EMAIL","email-address"="monitor@abcd.com"'
 ```
 
 ### Patching Service

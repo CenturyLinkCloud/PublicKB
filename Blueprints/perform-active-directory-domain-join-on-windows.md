@@ -26,10 +26,8 @@ By leveraging [CenturyLink Cloud Public Blueprints](centurylink-cloud-public-blu
 * The Perform Active Directory Domain Join on Windows Script will not perform an automated reboot of the Windows Virtual Machine. Customers are encouraged to reboot the VM at their convenience.
 
 ### Perform Active Directory Domain Join on Windows using Group Tasks
-1. Navigate to the Servers Menu in Control.
+1. In the Control Portal, within the left navigation bar choose **Create** > **Server**.
    
-   ![AD Join on Windows 1](../images/Perform_Active_Directory_Domain_Join_on_Windows_01.png)
-
 2. Browse to the Group that houses the VM(s) you want to Join to a domain. Select Action, Execute Package.
    ![AD Join on Windows 2](../images/Perform_Active_Directory_Domain_Join_on_Windows_02.png)
 

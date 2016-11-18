@@ -297,6 +297,7 @@ foreach (S3Bucket bucket in resp.Buckets)
 ```
 
 3. Add a second action that queries the contents within a given bucket. This code reuses the client object created earlier, and calls the "ListObjects" operation to get back a list of objects.
+
 ```
 /*
 
@@ -340,15 +341,15 @@ Node.js is a popular platform for building high-performing JavaScript-friendly a
 3. Create a **credentials.json** file that contains the Object Storage credentials and region.
 
 ```
-    <pre>{
+  {
 
-   "accessKeyId": "KEYID",
+      "accessKeyId": "KEYID",
 
-   "secretAccessKey": "SECRET",
+      "secretAccessKey": "SECRET",
 
-   "region":"Canada"
+      "region":"Canada"
 
-}
+    }
 ```
 
 4. In the route (controller), add the code to respond to the page load event. This code queries Object Storage via the AWS SDK for Node. See that it loads the credentials file, and passes the Object Storage URL and signature version into the object constructor. The l[istBuckets operation](http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3_20060301.html#listBuckets-property) returns an array of buckets. Here, that array is returned to the view.
