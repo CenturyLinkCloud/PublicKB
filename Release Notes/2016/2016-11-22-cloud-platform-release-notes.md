@@ -25,6 +25,8 @@ We are still accepting beta customer requests for our MSSQL Relational DB Beta. 
 - Users can now refresh catalogs directly from the settings/catalog page.
 - General Improvements, bug fixes, and tweaks.
 
+![RunnerUIChanges](../../images/2016-11-22_RunnerUI.png)
+
 
 ### Announcements (1)
 
