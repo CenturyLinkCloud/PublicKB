@@ -18,7 +18,7 @@ You can manage users on your account by going to the Control Portal > Settings >
 
 2. Fill in all required fields. The entered email address must be unique as it will also be the username.
 
-    ![Create User](control-portal-create-user.png)
+    ![Create User](../images/control-portal-create-user.png)
 
 3. Optionally fill in additional information
 
