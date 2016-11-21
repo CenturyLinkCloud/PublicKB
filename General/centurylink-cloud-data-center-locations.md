@@ -12,7 +12,7 @@ Some important details about our locations are listed below. You can also refer 
 ---------------------------------|------------|--------------------|--------------------
 US West (Seattle) - WA1|Internap|3355 S 120th Place<br>Seattle, WA 98168|[provider details](http://www.internap.com/data-centers/data-center-locations/seattle/)
 US West (Santa Clara) - UC1|CenturyLink|4700 Old Ironsides<br>Santa Clara, CA 95054|[provider details](http://www.centurylinktechnology.com/data-centers/north-america/santa-clara)
-US Central (Salt Lake City) - UT1|Viawest|572 Delong St.<br>Salt Lake City, UT 84104-3901|[provider details](http://www.viawest.com/data-center-communities/salt-lake-city-ut)
+US Central (Salt Lake City) - UT1 (New VM provisioning disabled at this location due to capacity constraints.)|Viawest|572 Delong St.<br>Salt Lake City, UT 84104-3901|[provider details](http://www.viawest.com/data-center-communities/salt-lake-city-ut)
 US Central (Chicago) - IL1|Equinix|1905 Lunt Ave.<br>Elk Grove, IL 60007|[provider details](http://www.equinix.com/en_US/locations/united-states/chicago-data-centers/)
 US East (New York) - NY1|Equinix|755 Secaucus Rd.<br>Secaucus, NJ 07094|[provider details](http://www.equinix.com/en_US/locations/united-states/new-york-data-centers/)
 US East (Sterling) - VA1<br>US East (Sterling) - VA2|CenturyLink|45901 Nokes Blvd<br>Sterling Virginia, 20166|[provider details](http://www.centurylinktechnology.com/data-centers/north-america/washington-dc)
