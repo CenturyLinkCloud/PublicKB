@@ -27,7 +27,7 @@ User permissions flow down to all children below the sub account where they're c
 
 ### Network Access in Subaccounts
 
-By default network access is completely segmented between all accounts and subaccounts.  When configuring a subaccount an administrator may elect to "Share Parent Networks".  When this is enabled the parent account networks are visible to the subaccount.  Servers in the subaccount can be deployed on parent networks or their own networks.
+By default network access is completely segmented between all accounts and subaccounts. When configuring a subaccount an administrator may elect to "Share Parent Networks". When this is enabled the parent account networks are visible to the subaccount. Servers in the subaccount can be deployed on parent networks or their own networks.
 
 ![Network Access in Subaccounts](../images/account-hierarchy-3.png)
 

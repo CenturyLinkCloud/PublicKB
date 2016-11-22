@@ -15,6 +15,7 @@
     "General",
     "Mail",
     "Managed Services",
+    "Marketplace",
     "Network",
     "Object Storage",
     "Orchestrate",

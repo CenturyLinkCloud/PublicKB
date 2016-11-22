@@ -14,17 +14,16 @@ service.
 ![break-down](../images/SAHA-delivering-procedure.png)
 
 ### Get an Order From Marketing Team
-To start the process, you simply contact the SafeHaven team,
+To start the process, contact the SafeHaven team,
 safehavenmarketing@ctl.io, requesting a free trial or direct order. A SafeHaven
-sales lead will deliver a demo and work with you to do the capacity plan and
-compatibility validation. You will be transferred to SafeHaven on-boarding team
+sales lead will deliver a demo and work to create a capacity plan and
+compatibility validation. You will then be transferred to SafeHaven on-boarding team
 when the PoC or direct order is approved.
 
 ### Start Working With On-Boarding Team
-SafeHaven on-boarding team provides customized design based on your specific
-requirements. An experienced on-boarding engineer will be assigned to pair with you to provide professional guidance on how to setup SafeHaven environment and manage the DR solution. The on-boarding project normally takes 30 to 45 days to complete. Depending on your specific requirements and the number of servers to protect, the on-boarding time varies.
+The SafeHaven on-boarding team provides customized designs based on your specific
+requirements. An experienced on-boarding engineer will be assigned to provide professional guidance on how to setup your SafeHaven environment and manage the DR solution. The on-boarding project normally takes 30 to 45 days to complete, depending on your specific requirements and the number of servers to protect.
 
 ### Get Help From Customer Care Team
-After on-boarding SafeHaven, you should be able to manage the solution by
-yourself. If you need help, contact our Customer Care team. This
+If you need assistance after your on-boarding is complete, contact our Customer Care team. This
 [Knowledge Base](https://www.ctl.io/knowledge-base/support/how-do-i-report-a-support-issue/) article explains how to open a ticket requesting support. 
