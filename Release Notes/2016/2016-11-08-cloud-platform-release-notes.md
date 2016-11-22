@@ -7,7 +7,7 @@
 }}}
 
 
-### Enhancements (3)
+### Enhancements (1)
 
 * __AppFog Cloud Foundry Upgrade:__
 
