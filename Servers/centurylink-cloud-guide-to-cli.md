@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to CLI",
-  "date": "07-22-2016",
+  "date": "09-26-2016",
   "author": "Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
@@ -9,12 +9,13 @@
 
 * [Overview](#overview)
 * [Prerequisites](#prerequisites)
+* [Keywords](#Keywords)
 * [Use Case Scenarios](#use-case-scenarios)
 * [Installation of CenturyLink Cloud CLI](#installation-of-centurylink-cloud-cli)
 * [READ commands](#read-commands)
 * [Billing and Accounting](#billing-and-accounting)
 * [Commands change the environment](#commands-change-the-environment)
-* [Advanced Usage](#advanced-usage)
+* [Advanced Usage(Wait/Execute packages)](#advanced-usage)
   * [Network/Firewall](#networkfirewall)
   * [Snapshot](#snapshot)
   * [Site to Site VPN](#sitetositevpncreatedeletelistupdate)
@@ -52,6 +53,21 @@ Comparison of the two CLI tools:
 -   Scripting knowledge will help on fully utilizing the CLI
 -   Python 2.7 installed in the environment for Python based CLI
 -   API user account [please see this KB for detail](//www.ctl.io/knowledge-base/accounts-&-users/creating-users/)
+
+### Keywords
+When running commands (GO CLI command/Python CLI command)
+-   alias - Account Alias, it can be found in the top left corner of the portal
+-   name - name of the server or group, when creating a new server, the length limit is 6 characters
+-   location - name of the data centers (e.g. IL1, VA1, CA1)
+-   network-name/network - name of the VLAN, [they can be listed using CLI](#read-commands)
+-   type - server type, either standard or hyperscale
+-   storage-type/backup-level - storage type, current option is standard
+-   group-name/group - name of the group within the account
+
+Output and error message
+-   alias - In both the output and error messages, alias can be server name/account/location alias
+-   name - depending on the query, it can me server name, location, account name etc
+
 
 ### Use Case Scenarios
 This tool enables system administrators to interface with CenturyLink Cloud without programming with the API or the using the Control Portal.  Automation can be achieved using scripting and other automation tools.
@@ -553,7 +569,33 @@ The option allows the previous command finishes before running the next command
 ```
 clc wait
 ```
+**Execute a package**
+CLI can execute a script or package (requires package ID and parameters for executing the package)
+Package ID can be found using:
+
+- [API](//www.ctl.io/api-docs/v1/#blueprint)
+
+- UUID (Package ID) as part of the URL under the control portal (Orchestration->scripts/package->script_required)(example: https://control.ctl.io/Blueprints/Packages/Details?uuid=c3c6642e-24e1-4c37-b56a-1cf1476ee360&classification=Script&type=AccountLibrary)
+
+```
+clc server execute-package --server-ids CA2ABCDMYSQLU01 --package "package-id=fcddbdf6-f5cc-4038-a088-b4e572ae2e22,parameters=xxxx yyyy"
+```
 ### Network/Firewall
+**Adding a public IP address to a server**
+
+  - NATing with an existing private IP with UDP port 4040 open
+  ```
+  clc server add-public-ip-address --server-name CA3ABCD2TSQL01  --internal-ip-address 10.110.23.16 --ports port=4040,protocol=udp
+  ```
+  - Nating with a new private IP with TCP port range 8080 to 8090 open
+  ```
+  clc server add-public-ip-address --server-name CA3ABCD2TSQL01 --ports port=8080,portTo=8090,protocol=tcp
+  ```
+  - Update a public IP port and source IP restriction
+  ```
+  clc server update-public-ip-address --server-name CA3ABCD2TSQL01 --public-ip xxx.xxx.xxx.xxx --ports port=8080,portTo=8085,protocol=tcp --source-restrictions "CIDR=xxx.xxx.xxx.xxx/32"
+  ```
+
 **Adding a secondary network card on a server**
 Please refer to the [Add or Remove Network Interface to Server using Go CLI](../Network/add-or-remove-network-interface-to-server-using-go-cli.md)
 
@@ -673,7 +715,7 @@ clc ips install --server-name CA3ABCDTAKE02
 ```
 **Set the notification (options: Webhook, Slack, syslog and Email) with email**
 ```
-clc ips set-notifications --server-name CA3ABCDTAKE02 --notification-destinations "type-code"="EMAIL","email-address"="monitor@abcd.com"
+clc ips set-notifications --server-name CA3ABCDTAKE02 --notification-destinations '"type-code"="EMAIL","email-address"="monitor@abcd.com"'
 ```
 
 ### Patching Service

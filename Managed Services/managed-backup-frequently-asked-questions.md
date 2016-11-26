@@ -73,7 +73,7 @@ The CenturyLink Technology Solutions Client Service Center is also available to 
 
 **Q: What if I want my backups to be kept for longer than two weeks?**
 
-A:  At this time 2 weeks is the only retention period available.  Our [upcoming simple backup service](../Support/backup-service-changes-faq.md) will provide options for customer defined retention periods.
+A:  At this time 2 weeks is the only retention period available.  Our [Simple Backup Service](../Backup/getting-started-with-simple-backup.md) provides options for customer defined retention periods.
 
 **Q: What should I do if I need a restore?**
 
