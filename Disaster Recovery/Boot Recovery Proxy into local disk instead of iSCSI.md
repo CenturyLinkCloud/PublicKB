@@ -19,7 +19,7 @@ server has data disks then attach data disks of same size to the stub
 ###3. In-band To Out-of-band Conversion
 Run In-band To Out-of-band Converter
 
-![InbandToOutofband](../images/inband2out.png)
+![InbandToOutofband](../images/SH4.0/createcheckpoint.png)
 
 Select SCST(iSCSI) disk as the source disk and VMware disk as destination. Carefully map the iSCSI disks to the Disks of the Recovery Server so the the boot
 
