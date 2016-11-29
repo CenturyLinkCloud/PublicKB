@@ -54,31 +54,40 @@ The following are quick tips/notes based on past experiences with customers leve
 
 ### Installing Microsoft SQL Server using Execute Package
 1. Navigate to **Orchestration, Scripts** in Control.
-   ![servers menu in control portal](../images/deploy-microsoft-sql-server-using-blueprint-01.png)
+
+  ![servers menu in control portal](../images/deploy-microsoft-sql-server-using-blueprint-01.png)
 
 2. Browse to the Group that houses the VM(s) you want to deploy SQL. Select **Execute Package**.
-   ![select execute package](../images/deploy-microsoft-sql-server-using-blueprint-02.png)
+
+  ![select execute package](../images/deploy-microsoft-sql-server-using-blueprint-02.png)
 
 3. Search for **Install SQL** and select the **Install SQL Server on Windows** (for version 2008/2012/2014) or **Install SQL Server 2016 on Windows** (for version 2016) script.
-   ![search for SQL and choose script](../images/deploy-microsoft-sql-server-using-blueprint-03.png)
+
+  ![search for SQL and choose script](../images/deploy-microsoft-sql-server-using-blueprint-03.png)
 
 4. Select SQL Installation Options.
    * Input the appropriate parameters based on the SQL server requirements for your application.
    * Select the VM(s) in the Group you want to deploy SQL. Customers can choose an individual VM or multiple. (Quick Tip: Only supported Guest Operating Systems will be shown.)
-   ![select installation options](../images/deploy-microsoft-sql-server-using-blueprint-04.png)
+
+  ![select installation options](../images/deploy-microsoft-sql-server-using-blueprint-04.png)
 
 ### Installing Microsoft SQL Server using Blueprint Library
 1. Navigate to **Orchestration, Blueprint Library** in Control.
-   ![navigate to Blueprint library](../images/deploy-microsoft-sql-server-using-blueprint-05.png)
+
+  ![navigate to Blueprint library](../images/deploy-microsoft-sql-server-using-blueprint-05.png)
 
 2. Search for **Install SQL** and select **Install SQL Server on Existing Server** (for version 2008/2012/2014) or **Install SQL Server 2016 on Existing Server** (for version 2016). Select the appropriate Blueprint.
-   ![search menu with Blueprint choices](../images/deploy-microsoft-sql-server-using-blueprint-06.png)
+
+  ![search menu with Blueprint choices](../images/deploy-microsoft-sql-server-using-blueprint-06.png)
 
 3. Select Deploy Blueprint.
-   ![deploy Blueprint](../images/deploy-microsoft-sql-server-using-blueprint-07.png)
+
+  ![deploy Blueprint](../images/deploy-microsoft-sql-server-using-blueprint-07.png)
 
 4. Input the appropriate parameters based on the SQL server requirements for your application and select the Virtual Machine you wish to execute the install against.
-   ![input parameters](../images/deploy-microsoft-sql-server-using-blueprint-08.png)
+
+  ![input parameters](../images/deploy-microsoft-sql-server-using-blueprint-08.png)
 
 5. Confirm the virtual machine(s), features and select Deploy Blueprint.
-   ![confirm inputs and deploy](../images/deploy-microsoft-sql-server-using-blueprint-09.png)
+
+  ![confirm inputs and deploy](../images/deploy-microsoft-sql-server-using-blueprint-09.png)
