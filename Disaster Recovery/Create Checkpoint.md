@@ -5,5 +5,7 @@
   "attachments": [],
   "contentIsHTML": false
 }}}
-### Create Checkpoint
+
+## Create Checkpoint
 This method allows a user to create a checkpoint. Right click on the Protection Group and then click on "Create Checkpoint" from the drop-down menu
+![Create Checkpoint](../images/createcheckpoint.png)
