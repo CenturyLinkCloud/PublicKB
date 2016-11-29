@@ -12,8 +12,8 @@ This article explains how to edit the WAN throttle. Basically, it is used to cha
 ###Editing WAN Throttle
 1. Right click on the Protection Group and then click on Edit WAN Throttle from the drop down menu.
 
-![Create Checkpoint](../images/SH4.0/editwanthrottle1.png)
+   ![Create Checkpoint](../images/SH4.0/editwanthrottle1.png)
 
 2. Enter the desired value for maximum WAN replication rate. It can be set to Unlimited by checking the box in front of Unlimited.
 
-![Create Checkpoint](../images/SH4.0/editwanthrottle2.png)
+   ![Create Checkpoint](../images/SH4.0/editwanthrottle2.png)
