@@ -1,6 +1,6 @@
 {{{
   "title": "Deploy Microsoft SQL Server using Blueprint",
-  "date": "8-30-2016",
+  "date": "11-29-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -8,6 +8,7 @@
 
 ### Table of Contents
 * [Overview](#overview)
+* [Socket to vCPU Allocation](#socket-to-vcpu-allocation)
 * [Prerequisites](#prerequisites)
 * [Exceptions](#exceptions)
 * [General Notes](#general-notes)
@@ -16,6 +17,9 @@
 
 ### Overview
 CenturyLink Cloud customers can procure and deploy Microsoft SQL Server licensing within the Control Portal. Microsoft SQL Server is licensed via the Microsoft SPLA program. By using the CenturyLink Cloud public Blueprint customers have multiple ways to consume and install this business critical database software.
+
+### Socket to vCPU Allocation
+It is recommended customers review our delivery model for [Sockets to vCPU](../Servers/platform-socket-to-vcpu-allocation.md) prior to deploying Microsoft SQL Server to be fully aware of the platform default operations when allocating vCPUs for use with the database service.
 
 ### Prerequisites
 * A CenturyLink Cloud Account
