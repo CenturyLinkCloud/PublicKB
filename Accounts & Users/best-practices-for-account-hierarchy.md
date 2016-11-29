@@ -48,7 +48,8 @@ Design your account hierarchy before you start adding users or provisioning reso
     * Only the backoffice account will be able to access the Internet, and customer’s org will set policies restricting Internet access direct from all other accounts/VLANs
     * Load Balancers can be placed on the backoffice account/vlans, and the web servers in the Market account/vlan will need to use these LBs for their web app
     * The IT Intranet and Help Desk accounts/VLANs will be restricted to only access each other.
-  <img src="../images/acct-structure1.png">
+
+![Account Structure]../images/acct-structure1.png)
 
 
 ### For additional information please see the following articles:
