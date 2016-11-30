@@ -1,19 +1,17 @@
-
-
-
-
-
-
-
-
-
-###CMS
+{{{
+  "title": SafeHaven 4.0 Network Requirements",
+  "date": "11-29-2016",
+  "author": "Anshul Arora",
+  "attachments": [],
+  "contentIsHTML": false
+}}}
+### CMS
 
 * TCP/22: ssh (remote management)
 * TCP/20081: SafeHaven cluster communication with SRNs and GUI. **SSL encrypted.**
 * UDP/20081: SafeHaven cluster heartbeat communications with SRNs.
 
-### On SRN
+### SRN
 There are 3 logically separated networks (which can be arbitrarily combined into actual NIC interface in real implementations)
 * SafeHaven cluster service network
 * SafeHaven data replication network
