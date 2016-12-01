@@ -1,10 +1,14 @@
 {{{
   "title": SafeHaven 4.0 Network Requirements",
   "date": "11-29-2016",
-  "author": "Anshul Arora",
+  "author": "Shi Jin",
   "attachments": [],
   "contentIsHTML": false
 }}}
+
+### Article Overview
+This article covers different TCP and UDP ports required to be opened on CMS, SRN and guest for SafeHaven 4.0.
+
 ### CMS
 
 * TCP/22: ssh (remote management)
