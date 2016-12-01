@@ -1,10 +1,13 @@
 {{{
   "title": "Deploy Microsoft SQL Server using Blueprint",
-  "date": "11-29-2016",
+  "date": "12-01-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
 }}}
+
+### **IMPORTANT NOTICE**
+**As of December 1, 2016, the service fees for Microsoft SQL Licensing on CenturyLink Cloud changed from 1 vCPU minimum to a 4 vCPU minimum, and moved from hourly usage based billing to fixed monthly billing. If you have questions about this change or did not receive notifications on this change please contact customer care at help@ctl.io.**
 
 ### Table of Contents
 * [Overview](#overview)
@@ -47,7 +50,7 @@ The following are quick tips/notes based on past experiences with customers leve
 
 * It is not possible at the current time to install SQL to a drive other than C:\ via Blueprint. Customers can modify the SQL database, tempdb, log locations post install to other volumes using SQL tools
 * The fee's for Microsoft SQL server will be applied automatically to the customers invoice when using the public Blueprint. These fee's are available in the [Pricing Catalog](//www.ctl.io/pricing). If you are unsure what these fee's are please contact your account manager.
-* Licensing fee's are adjusted based on number of vCPU allocated to a virtual machine. Customers billing will be modified as vCPU configurations change.
+* Licensing fee's are adjusted based on number of vCPU allocated to a virtual machine with a minimum of 4 vCPU license fees incurred.  Customers billing will be modified as vCPU configurations change.
 * Customers can **add features** to an existing SQL instance by running the Blueprint multiple times on the same server and only selecting the additional features required.
 * Customers can **add new** SQL instances by running the Blueprint multiple times on the same server.
 * The Blueprint does not allow for version mobility.  Customers who want to change the edition deployed must create a new server and SQL instance with the version desired and migrate their data.
