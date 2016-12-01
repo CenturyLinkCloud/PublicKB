@@ -8,7 +8,7 @@
 
 ### Overview
 
-CenturyLink Cloud dedicated Load Balancers provisioned in a customer's environment are customer managed devices, which includes management of the vendor license. Dedicated Load Balancers are typically provisioned with a license with an expiration date of one year. An expired license may impact functionality of the Load Balancer. To obtain a new license a [Support Request](../Support/how-do-i-report-a-support-issue.md) should be submitted.
+CenturyLink Cloud dedicated Load Balancers provisioned in a customer's environment are customer managed devices, which includes management of the vendor license. Dedicated Load Balancers licenses are typically provisioned with an expiration date of one year. An expired license may impact functionality of the Load Balancer. To obtain a new license a [Support Request](../Support/how-do-i-report-a-support-issue.md) should be submitted.
 
 ### Audience
 
@@ -24,7 +24,7 @@ CenturyLink Cloud customers with a dedicated Citrix Netscaler Load Balancer
 
 The Netscaler Load Balancer uses FlexLM licensing to license features on the product. A license check is done when the VPX boots. The licensing daemon (service) will start, check for a valid license and then stop the daemon (service). The VPX will then enable certain features determined by the license daemon (service). If a license is expired or invalid, the Netscaler will stop passing traffic.
 
-#### How to determine if a VPX is not passing traffic due to an expired license
+### How to determine if a VPX is not passing traffic due to an expired license
 
 #### CLI method
 
@@ -47,25 +47,30 @@ The Netscaler Load Balancer uses FlexLM licensing to license features on the pro
 
 1. SSH or use PuTTY on Windows to login to the VPX management IP
 2. In the CLI, type the command word shell to get to a unix shell prompt
-```
+ ```
   shell
   ```
+  
 3. Review the /var/log/license.log file to determine the location and filename of the license file in use.
-```
+ ```
   cat /var/log/license.log | grep -v lmgrd  | grep "License file"
   ```
+  
 4. The license file should be in the /nsconfig/license directory. The license.log file can be listed to determine when was the last time the VPX ran the license daemon to check the license.
-```
+ ```
   ls -la /var/log/license.log
   ```
+  
 5. Navigate to the /nsconfig/license directory.
-```
+ ```
   cd /nsconfig/license
   ```
+  
 6. Review the file listed as the license file obtained in step 3. This example uses the license file named license.lic.
-```
+ ```
   cat license.lic | grep INCREMENT
   ```
+  
 7. Observe the lines in the file that start with the word **INCREMENT** in all capital letters. This line contains the license expiration date.
 
 ### Notes
