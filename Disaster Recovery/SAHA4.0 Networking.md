@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-This article covers different TCP and UDP ports required to be opened on CMS, SRN and guest for SafeHaven 4.0.
+This article covers different TCP and UDP ports required to be opened on CMS, SRN and local guest for SafeHaven 4.0.
 
 ### CMS
 
