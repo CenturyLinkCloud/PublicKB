@@ -46,9 +46,7 @@ Vormetric has provided a Virtual Appliance - called a Partner Template - that ca
 ### Impact
 After reading this article, the user should feel comfortable deploying the Vormetric DSM technology on CenturyLink Cloud. Vormetric has provided a Virtual Appliance - what we call a Partner Template - that can be deployed to your CenturyLink Cloud account via a Service Task.
 
-This deployment process for Partner Templates currently requires manual interaction via the Service Task process, but will be further automated in future releases of the CenturyLink Cloud Platform.
-
-If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@ctl.io](mailto:features@ctl.io).
+This task can be requested using the Runner task at [Vormetric Runner Job](https://runner.ctl.io/product/bd967fd2-1fb5-4d8c-8dca-43a753624bcd-vormetric-dsm-task)
 
 ### Prerequisite
 * Access to the CenturyLink Cloud platform as an authorized user.
@@ -68,31 +66,7 @@ If you are interested in seeing this type of Partner Template deployment as an a
 
 ### Detailed Steps to Deploy Vormetric DSM
 Vormetric DSM deploys in a virtual appliance model, as a CenturyLink Cloud *Partner Template*. Follow these step by step instructions to deploy a Vormetric DSM in to your CenturyLink Cloud account:
-* Open a service task request ticket via email to ServiceTasks@ctl.io with the following details. You will need to edit some of the information below.
-
-----
-TO: ServiceTasks@ctl.io
-
-EMAIL SUBJECT:   Ecosystem Partner Template Import Request
-
-CLC Support Team,
-
-Please create a ticket to import the Ecosystem Partner Template image  referenced below to my CenturyLink Cloud Account:
-- Import CenturyLink Ecosystem Partner Source Image: Vormetric DSM
-- My CenturyLink Cloud Account Alias: ####
-- My CenturyLink Cloud Account PIN:  ######
-- Data Center to import image to: ###
-- Server Name to import image as: ##########
-- VLAN in the account to add the Server to: ########
-- Additional Notes or work to be done: None
-
-Please let me know if you have any questions or issues. Kindly send me a reply once the work has been completed and let us know the IP address of the server where this technology has been deployed.
-
-Thank you very much,
-
-Your_Name_Here
-
------
+* Run the job located at This task can be requested using the Runner task at [Vormetric Runner Job](https://runner.ctl.io/product/bd967fd2-1fb5-4d8c-8dca-43a753624bcd-vormetric-dsm-task)
 
 ### Accessing and Configuring your Vormetric partner template
 Follow these steps to access and configure your Vormetric partner template once you receive an email from Service Tasks confirming the partner template has been deployed to your account.
@@ -101,7 +75,9 @@ Follow these steps to access and configure your Vormetric partner template once 
 2. Change your password and configure your DSM based on your requirements. Please view the support information on [http://www.Vormetric.com](http://www.Vormetric.com) for more information.
 
 ### Pricing
-There are no Vormetric license costs included. The cost to deploy the Vormetric Partner Template will be billed as a Service Task, but CenturyLink will provide a credit for those costs. In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees is [available here](http://www.ctl.io/service-tasks).
+Vormetric license fees are billed for this installation. Pricing depends on the version chosen.  The product selection dropdown in the Runner job details pricing for each option.  
+
+The cost to deploy the Vormetric Partner Template will be billed as a Service Task, but CenturyLink will provide a credit for those costs. In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees is [available here](http://www.ctl.io/service-tasks).
 
 #### Process to request credit for Service Task fee
 Follow this process to request credit on your account to re-imburse any expense to deploy the Partner Template.
