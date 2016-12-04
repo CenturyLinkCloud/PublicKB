@@ -33,7 +33,7 @@ OSI Model<sup>5</sup>|Layer 4|Layer 4|Layer 4<br>Layer 7|Layer 4<br>Layer 7
 
 <sup>2: [SLA](//www.ctl.io/legal/sla/) is defined as an agreement between CenturyLink and the customer to honor service availability for load balancing specific services via a master service agreement. [Limited SLA's include Virtual Machine availability only.](//www.ctl.io/legal/sla/)</sup>
 
-<sup>3: [Support](//www.ctl.io/support/) is defined as an agreement between CenturyLink and the customer to provide technical support and incident management for the load balancing service. **Limited Support provides customer service engineers to confirm the infrastructure state and virtual machine state.  Customers are responsible for all Day 1, 2 and N operational support.**</sup>
+<sup>3: [Support](//www.ctl.io/support/) is defined as an agreement between CenturyLink and the customer to provide technical support and incident management for the load balancing service. Tracking a Dedicated Load Balancer license expiration date is performed by the customer, please reference our <a href="dedicated-load-balancer-license-management.md">License Management Article</a>. **Limited Support provides customer service engineers to confirm the infrastructure state and virtual machine state.  Customers are responsible for all Day 1, 2 and N operational support.**</sup>
 
 <sup>4: [CenturyLink offers](//ctl.io/pricing) various pricing models for the Citrix VPX virtual appliance based on performance and availability needs.  Customers can elect to upgrade **[edition](//www.citrix.com/products/netscaler-adc/platforms.html#editions)** and **availability** configurations at any time.
 
