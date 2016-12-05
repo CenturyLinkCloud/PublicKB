@@ -11,12 +11,12 @@ CenturyLink will be deactivating the [SMTP Relay Service](https://www.ctl.io/kno
 
 ### Deactivation Date
 
-This change is currently scheduled to occur on December 1st, 2016. If there are changes to this date, we will update this document.
+The SMTP Relay Service is being End of Serviced (EOS) on December 1, 2016 with an End of Life (EOL) on January 15, 2017. Please refer to our SMTP Retirement FAQ for more information.
 
 
 ### What exactly is Changing?
 
-* We will be de-activating the SMTP Relay service on December 1st 2016. At this time, our email service will be offline.
+* We will be de-activating the SMTP Relay service on January 15, 2017. At this time, our email service will be offline.
 * We recommend that existing SMTP Relay customers that are actively using this service migrate off of this service before the deactivation date.
 * We have provided a few recommendations for external SMTP Relay services in this document.
 
