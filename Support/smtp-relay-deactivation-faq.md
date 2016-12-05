@@ -55,7 +55,7 @@ There are many great external SMTP Relay services available that provide you a w
 For those of you who want to 'Do It YourSelf' you can configure your servers to send emails themselves, versus using a service. This requires your normal system administration like functions and isn't recommended unless sending emails is one of your core business requirements. There are plenty of guides on the Internet on how to do this. For example:
 
 * [CL Blueprint & Halon Software](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-halon-partner-template/) - Use a CL Cloud Blueprint to install the Halon SMTP Software for sending emails.
-* [Windows & IIS](http://bit.ly/1MILrwv) - Setup windows SMTP server to send emails.
+* [Windows & IIS](https://support.office.com/en-us/article/How-to-configure-IIS-for-relay-with-Office-365-eb57abd2-3859-4e79-b721-2ed1f0f579c9?ui=en-US&rs=en-US&ad=US) - Setup windows SMTP server to send emails.
 * [Linux & PostFix](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-ubuntu-14-04) - Setup the Postfix SMTP email server on linux to send emails.
 
 
