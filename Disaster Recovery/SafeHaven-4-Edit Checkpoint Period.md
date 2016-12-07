@@ -1,5 +1,5 @@
 {{{
-  "title": Create Checkpoint Period",
+  "title": Edit Checkpoint Period",
   "date": "11-29-2016",
   "author": "Anshul Arora",
   "attachments": [],
