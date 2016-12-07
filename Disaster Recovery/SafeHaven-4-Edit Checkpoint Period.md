@@ -12,6 +12,6 @@
 ![Create Checkpoint](../images/SH4.0/editcheckpoint1.png)
 
 2. Enable Periodic Checkpoints by checking “Checkpoints enabled” option.
-3. Enter the value for periodic checkpoints. It can be as low as 30 seconds.
+3. Enter a value, which can be as low as 30 seconds, for the checkpoint period and then click on "OK".
 
 ![Create Checkpoint](../images/SH4.0/editcheckpoint2.png)
