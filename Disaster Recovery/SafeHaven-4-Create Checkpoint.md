@@ -1,5 +1,5 @@
 {{{
-  "title": Create Checkpoint",
+  "title": "Create Checkpoint",
   "date": "11-29-2016",
   "author": "Anshul Arora",
   "attachments": [],
