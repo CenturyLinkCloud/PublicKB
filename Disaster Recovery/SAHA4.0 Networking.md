@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-This article covers different TCP and UDP ports required to be opened on CMS, SRN and local guest for SafeHaven 4.0.
+This article covers different TCP and UDP ports required to be opened on CMS, SRN, and local guest for SafeHaven 4.0.
 
 ### CMS
 
@@ -21,16 +21,16 @@ There are 3 logically separated networks (which can be arbitrarily combined into
 * SafeHaven data replication network
 * Local network
 
-#### 1. On SafeHaven cluster service network
+#### 1. On SafeHaven Cluster Service Network
 * TCP/22: ssh (remote management and start/stop safehaven-service via CMS)
 * TCP/20082: SafeHaven cluster communication with peer SRNs and CMS. **SSL encrypted.**
 * UDP/20082: SafeHaven cluster heartbeat communications with peer SRNs and CMS
 
-#### 2. On SafeHaven data replication network
+#### 2. On SafeHaven Data Replication Network
 
 * TCP/22: ssh (remote SRN establishes a SSH tunnel to master SRN for actual data replication)
 
-#### 3. On Local network
+#### 3. On Local Network
 
 * TCP/80: http (web server to provide binaries downloads and certificates for protected servers)
 * TCP/3260: iSCSI (iSCSI targets to be connected by protected servers for local replication)
