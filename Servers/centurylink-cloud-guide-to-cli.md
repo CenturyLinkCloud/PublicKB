@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to CLI",
-  "date": "09-26-2016",
+  "date": "11-24-2016",
   "author": "Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
@@ -9,7 +9,7 @@
 
 * [Overview](#overview)
 * [Prerequisites](#prerequisites)
-* [Keywords](#Keywords)
+* [Keywords](#keywords)
 * [Use Case Scenarios](#use-case-scenarios)
 * [Installation of CenturyLink Cloud CLI](#installation-of-centurylink-cloud-cli)
 * [READ commands](#read-commands)
@@ -18,18 +18,19 @@
 * [Advanced Usage(Wait/Execute packages)](#advanced-usage)
   * [Network/Firewall](#networkfirewall)
   * [Snapshot](#snapshot)
-  * [Site to Site VPN](#sitetositevpncreatedeletelistupdate)
+  * [Site to Site VPN](#site-to-site-vpn)
 * [Application Services control](#application-services-control)
   * [Relational Database Service](#relational-database-service)
   * [Intrusion Prevention Service](#intrusion-prevention-service)
   * [Patching Service](#patching-service)
   * [Simple Backup Service](#simple-backup-service)
+  * [Webhooks](#webhooks)
 * [Support](#support)
 
 ### Overview
 
 There are two CLI interfaces available on CenturyLink Cloud, GO based
-CLI for API v2 [(explains here)](//github.com/CenturyLinkCloud/clc-go-cli) and [Python based CLI for API v1 and v2](//github.com/CenturyLinkCloud/clc-python-sdk)
+CLI for API v2 [(explains here, currently version 1.1)](//github.com/CenturyLinkCloud/clc-go-cli) and [Python based CLI for API v1 and v2](//github.com/CenturyLinkCloud/clc-python-sdk)
 
 For accounts, users, [API v1](//ca.ctl.io/api-docs/v1/u5o/) provides the access to this information. For the rest of the data, [API v2](//www.ctl.io/api-docs/v2/) can be used to access this information.
 
@@ -42,7 +43,7 @@ Comparison of the two CLI tools:
 | CLI         |   Python            | Go                  |
 | ---------   | ------------------- | -----------------   |
 | API version | Mostly v1 (some v2) |         v2          |
-| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> backup <br> billing <br> crossdc-firewall-policy <br> custom-fields <br> data-center <br> db <br> firewall-policy <br> group <br> ips <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> os-patch <br> server <br> site-to-site-vpn <br> wait <br>      |
+| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> backup <br> billing <br> crossdc-firewall-policy <br> custom-fields <br> data-center <br> db <br> firewall-policy <br> group <br> ips <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> os-patch <br> server <br> site-to-site-vpn <br> version <br> wait <br> webhook <br>     |
 
 
 
@@ -63,6 +64,7 @@ When running commands (GO CLI command/Python CLI command)
 -   type - server type, either standard or hyperscale
 -   storage-type/backup-level - storage type, current option is standard
 -   group-name/group - name of the group within the account
+-   configuration-id - ID of bare metal from output of `clc data-center get-baremetal-capabilities`
 
 Output and error message
 -   alias - In both the output and error messages, alias can be server name/account/location alias
@@ -173,7 +175,9 @@ Available resources:
     os-patch
     server
     site-to-site-vpn
+    version
     wait
+    webhook
 
 ```
 
@@ -222,7 +226,12 @@ HardwareGroupUUID,Name,Description,Cpu,MemoryGB,Status,TotalDiskSpaceGB,ServerTy
 
 ### READ commands
 (No changes made with the following commands)
+***Version for Support purposes***
 
+**Show the current version**
+```
+clc version
+```
 ***List and Find***
 
 **List all accounts**
@@ -311,6 +320,11 @@ WIN2008R2ENT-64
 WIN2008R2STD-64
 WIN2012DTC-64
 WIN2012R2DTC-64
+```
+
+**Show Bare Metal Server available in a DC**
+```
+clc data-center get-baremetal-capabilities --data-center CA1
 ```
 
 **Show all “active” servers**
@@ -494,6 +508,11 @@ clc server create --name test1 --description "test" --group-name TestingCLI --te
 --network-name vlan_771_10.xxx.yyy --cpu 1 --memory-gb 1 --type standard --storage-type standard --additional-disks sizeGB=50,type=raw
 ```
 
+**Create a bare metal server**
+```
+clc server create --name test1 --group-name "My Test" --root-password xxxxxxxxx --network-name "vlan_1000_10.xxx.yyy" --type bareMetal --configuration-id 2516e341b960652f01563933d72523d9c222a437 --os-type windows2012R2DataCenter_64Bit
+```
+
 **Create a new VLAN in a datacenter**
 ```
 clc network create --data-center ca3
@@ -593,7 +612,7 @@ clc server execute-package --server-ids CA2ABCDMYSQLU01 --package "package-id=fc
   ```
   - Update a public IP port and source IP restriction
   ```
-  clc server update-public-ip-address --server-name CA3ABCD2TSQL01 --public-ip xxx.xxx.xxx.xxx --ports port=8080,portTo=8085,protocol=tcp --source-restrictions "CDIR=xxx.xxx.xxx.xxx/32"
+  clc server update-public-ip-address --server-name CA3ABCD2TSQL01 --public-ip xxx.xxx.xxx.xxx --ports port=8080,portTo=8085,protocol=tcp --source-restrictions "CIDR=xxx.xxx.xxx.xxx/32"
   ```
 
 **Adding a secondary network card on a server**
@@ -621,7 +640,7 @@ clc server get --server-name CA3ABCDTAKE02 --query details.snapshots.id --output
 ```
 clc server delete-snapshot --server-name CA3ABCDTAKE02 --snapshot-id 1
 ```
-### Site to Site VPN (create/delete/list/update)
+### Site to Site VPN
 **Create Site to Site VPN**
 ```
 clc site-to-site-vpn create --local "alias=CA2,subnets=10.x.x.0/24" --remote "siteName=NH,deviceType=pfsense,address=76.x.x.x,subnets=192.168.1.0/24" --ipsec "encryption=aes128,hashing=sha1_96,protocol=esp,pfs=group2,lifetime=28800" --ike "encryption=aes128,hashing=sha1_96,diffieHellmanGroup=group2,preSharedKey=b7fd0390436a4556a17c42f79d782eb9,lifetime=28800,mode=main,deadPeerDetection=false,natTraversal=false,remoteIdentity=false"
@@ -878,6 +897,26 @@ clc backup get-stored-data --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx
 ```
 ```
 clc backup get-restore-point-details --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --server-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  --backup-finished-start-date 2016-02-06 --backup-finished-end-date 2016-04-07 --sort-by retentionExpiredDate
+```
+
+### Webhooks
+CLI can be used to configure webhooks, this enable customers to leverage the alert notification webhook services built into CenturyLink Cloud with 3rd party web apps or services.  The current event list are: "Account.Created", "Account.Delted", "Account.Updated", "Alert.Notificiation", "Server.Created", "Server.Deleted", "Server.Updated", "User.Created", "User.Deleted", "User.Updated".  To learn more on setup webhook in CenturyLink Cloud, please see [Configuring Webhooks and Consuming Notificatios](../General/consuming-webhook-alerts-with-3rd-party-web-apps.md).
+
+***List all current webhook***
+```
+clc webhook list
+```
+***Create a new webhook notification***
+```
+clc webhook add-targeturi --event Server.Created --target-uri "https://zapier.com/hooks/catch/your-zpaier-id/"
+```
+***Delete an event notification***
+```
+clc webhook delete --event Server.Created
+```
+***Update and existing notification***
+```
+clc update --event Server.Deleted --recursive true --target-uri "https://zapier.com/hooks/catch/your-zpaier-id/"
 ```
 
 ### Support
