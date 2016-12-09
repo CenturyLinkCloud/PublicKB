@@ -1,5 +1,5 @@
 {{{
-  "title": "Edit Checkpoint Period",
+  "title": "SafeHaven-4-Edit Checkpoint Period",
   "date": "11-29-2016",
   "author": "Anshul Arora",
   "attachments": [],
