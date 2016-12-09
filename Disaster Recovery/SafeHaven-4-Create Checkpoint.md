@@ -8,7 +8,7 @@
 ## Article Overview
 This article explains how to create a checkpoint using SafeHaven Console..
 
-## Create Checkpoint
+### Create Checkpoint
 
 Right click on the Protection Group and then click on "Create Checkpoint" from the drop-down menu.
 
