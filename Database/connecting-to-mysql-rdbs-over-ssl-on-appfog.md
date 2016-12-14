@@ -1,5 +1,5 @@
 {{{
-  "title": "Connecting to Relational DB over SSL on AppFogv2",
+  "title": "Connecting to MySQL Relational DB over SSL on AppFogv2",
   "date": "01-25-2016",
   "author": "Lane Maxwell",
   "attachments": [],
@@ -7,14 +7,11 @@
   "contentIsHTML": false
 }}}
 
+### Audience
+This article is to support AppFog customers using the ctl_mysql service through the AppFog AddOn Engine. The ctl_mysql service is Centurylink's MySQL-compatible Relational Database Service. For instructions on how to use your cert after purchasing through the Relational DB UI, see our Knowledge Base article titled [Connecting to MySQL Relational DB Over SSL](../Database/connecting-to-mysql-rdbs-over-ssl.md).
 
-
-#### Audience
-
-This article is to support AppFog customers using the ctl_mysql service through the AppFog AddOn Engine.  The ctl_mysql service is Centurylink's MySQL-compatible Relational Database Service.  For instructions on how to use your cert after purchasing through the Relational DB UI, see [Connecting to MySQL Relational DB Over SSL](../Database/connecting-to-mysql-rdbs-over-ssl.md).
-
-## Connecting over SSL-enabled Connection
-Provisioning the Relational DB MySQL instance through the AddOn Engine will return a collection of variables as defined below.
+### Connecting over SSL-enabled Connection
+Provisioning the Relational DB MySQL instance through the AddOn Engine returns a collection of variables as defined below.
 
 ```
 {
@@ -27,23 +24,24 @@ Provisioning the Relational DB MySQL instance through the AddOn Engine will retu
   "id": "lane"
 }
 ```
-1.  Begin by creating a file from the contents of the certificate variable.  Example: dbaas_instance.pem
+1. Begin by creating a file from the contents of the certificate variable.
+   Example: dbaas_instance.pem
 
-2.  Connect specifying the `--ssl-ca` parameter and pass in the newly created certificate.  
-`mysql -h 10.0.0.1 -u admin -p ---ssl-ca=dbaas_instance.pem`
+2. Connect specifying the `--ssl-ca` parameter and pass in the newly created certificate.
+   `mysql -h 10.0.0.1 -u admin -p ---ssl-ca=dbaas_instance.pem`
 
-3.  Once logged in, validate the SSL connection by using the show command.
+3. Once logged in, validate the SSL connection by using the show command.
+   `mysql> show status like 'Ssl_cipher';`
 
-`mysql> show status like 'Ssl_cipher';`
+   ```
+   +---------------+--------------------+
+   | Variable_name | Value              |
+   +---------------+--------------------+
+   | Ssl_cipher    | DHE-RSA-AES256-SHA |
+   +---------------+--------------------+
+   1 row in set (0.07 sec)
 
-```
-+---------------+--------------------+
-| Variable_name | Value              |
-+---------------+--------------------+
-| Ssl_cipher    | DHE-RSA-AES256-SHA |
-+---------------+--------------------+
-1 row in set (0.07 sec)
+   mysql>
+   ```
 
-mysql>
-```
-<p>4.  If you have questions or feedback, please submit them to our team by emailing <a href="mailto:rdbs-help@ctl.io">rdbs-help@ctl.io</a>.
+4. If you have questions or feedback, please submit them to our team by emailing <a href="mailto:rdbs-help@ctl.io">rdbs-help@ctl.io</a>.

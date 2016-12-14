@@ -229,11 +229,11 @@ Once you have deployed the Primary OpenVPN Access Server (or standby node) custo
   dpkg -i URL_of-new_package
   ```
 
-  For current version 2.0.26 the commands are:
+  For current version 2.1.4 the commands are:
 
   ```
-  wget http://swupdate.openvpn.org/as/openvpn-as-2.0.26-Ubuntu14.amd_64.deb
-  dpkg -i openvpn-as-2.0.26-Ubuntu14.amd_64.deb
+  wget http://swupdate.openvpn.org/as/openvpn-as-2.1.4-Ubuntu14.amd_64.deb
+  dpkg -i openvpn-as-2.1.4-Ubuntu14.amd_64.deb
   ```
 
 2. Apply the latest Ubuntu updates and upgrades.

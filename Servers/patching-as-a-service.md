@@ -74,8 +74,8 @@ For any method you choose, the following table will assist you with data needed 
 
 **Operating Systems** | **Blueprint Name** | **Script Package Name** | **Package ID**
  --- | --- | --- | ---
- Windows 2012 and 2012R2 | Auto Patching Windows 2012 | Auto Patching Windows 2012 | b229535c-a313-4a31-baf8-6aa71ff4b9ed
- Red Hat Enterprise Linux 5, 6, and 7 OR CentOS 5 and 6 | Yum Update Script | Yum Update | c3c6642e-24e1-4c37-b56a-1cf1476ee360
+ Windows 2012 and 2012 R2 | Auto Patching Windows 2012 | Auto Patching Windows 2012 | b229535c-a313-4a31-baf8-6aa71ff4b9ed
+ Red Hat Enterprise Linux 5/6/7 OR CentOS 5/6 | Auto Patching RHEL and CentOS blueprint | Auto Patching RHEL/CentOS | c3c6642e-24e1-4c37-b56a-1cf1476ee360
 
 
 ### Option 1: Blueprint
@@ -88,7 +88,7 @@ Using a Blueprint, you can deploy patches against a single server through Contro
 
 The process initiated by the script package may include several, automated reboots, so - regardless how you choose to execute the package - please disable alerts by putting the server(s) in maintenance mode first.
 
-2\. Select the Blueprint
+2\. Select the Orchestration, Blueprint Library
 
 Locate and select the appropriate Blueprint within the Blueprint Library. See the table above for the name of the Blueprint.
 
@@ -132,7 +132,7 @@ The process initiated by the script package may include several, automated reboo
 
 2\. Execute Action
 
-Navigate to the group and select "execute package" from the [action drop-down](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md). The name of the package to search for is in the table above.
+Navigate to Infrastructure, Servers and the required group.  Select "execute package" from the [action drop-down](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md). The name of the package to search for is in the table above.
 
 
 ![Patching_GroupActionWindows](../images/Patching/PatchaaS_GroupAction.png)

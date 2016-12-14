@@ -7,7 +7,7 @@
   "contentIsHTML": false
 }}}
 
-![Magento Logo](../../images/appsfreedom-logo.png)
+![appsFreedom Logo](../../images/appsfreedom-logo.png)
 
 ### Technology Profile
 This blueprint allows company's of user size 1-100 deploy appsFreedom Platform - Basic edition.
@@ -47,7 +47,7 @@ To access your application from a computer outside the CenturyLink Cloud network
 
 #### Steps to Deploy Blueprint
 1. Locate the appsFreedom Platform - Basic edition Blueprint.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for “appsFreedom” in the keyword search on the right side of the page.
    * Locate the 'appsFreedom Platform - Basic edition' Blueprint.
 
@@ -94,12 +94,12 @@ To access your application from a computer outside the CenturyLink Cloud network
    * Verify your configuration details.
 
 5. Deploy the Blueprint.
-   * Once verified, click on the ‘deploy blueprint’ button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
+   * Once verified, click the `deploy blueprint` button. You will see the deployment details along with an email stating the Blueprint is queued for execution.
    * This will kick off the blueprint deploy process and load a page to allow you to track the progress of the deployment.
 
 6. Monitor the Activity Queue.
    * Monitor the Deployment Queue to view the progress of the blueprint.
-   * You can access the queue at any time by clicking the Queue link under the Blueprints menu on the main navigation drop-down.
+   * To monitor progress, click **Queue** from the Nav Menu on the left.
    * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Pricing

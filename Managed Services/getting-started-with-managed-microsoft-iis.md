@@ -10,7 +10,7 @@
   tasks. MS-IIS Web server application offers a reliable, high performance, and secure vehicle for delivering HTTP content to end users.</p>
 <p>&nbsp;Here's how to create a managed IIS environment in CenturyLink Cloud. <strong>NOTE: Before you can deploy Managed Microsoft IIS, you must create a Managed Windows server.</strong>
 </p>
-<p><strong>1. Navigate to the Blueprints library, and search for IIS. Then, click on the “CLC Managed MS IIS” Blueprint.</strong>
+<p><strong>1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**. Search for IIS. Then, click on the “CLC Managed MS IIS” Blueprint.</strong>
 </p>
 <p><img src="https://t3n.zendesk.com/attachments/token/MK7x7CMCYckPkZWt5h8pB492m/?name=Blueprint.jpg" alt="Blueprint.jpg" />
 </p>
@@ -40,7 +40,7 @@
 <p>A:&nbsp;No, MS IIS can only be installed once per server, but IIS is capable of hosting&nbsp;thousands of web sites per server.</p>
 <p><strong>Q: What Versions of MS IIS does CenturyLink Cloud support?</strong>
 </p>
-<p>A:&nbsp;CenturyLink Cloud Supports Microsoft IIS 7.5 and&nbsp;Microsoft IIS 8.0.</p>
+<p>A:&nbsp;CenturyLink Cloud Supports Microsoft IIS 7.5, Microsoft IIS 8.0 and&nbsp;Microsoft IIS 8.5.</p>
 <p><strong>Q: What operating systems are supported for Managed MS IIS?</strong>
 </p>
 <p>A: Managed Windows 2008 R2, Managed Windows 2012 R2.

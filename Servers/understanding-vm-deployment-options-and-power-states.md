@@ -1,6 +1,6 @@
 {{{
   "title": "Understanding VM Deployment Options and Power States",
-  "date": "3-15-2016",
+  "date": "10-11-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -12,7 +12,7 @@
 
 **How To:** [How To Create A Customer Specific OS Template](../Servers/how-to-create-customer-specific-os-templates.md)
 
-**Costs** Customer specific template storage is billed on a per GB basis as Standard Storage. Out of the box Virtual Machine templates in the CenturyLink Cloud platform do not incur a storage fee.
+**Costs** Customer specific template storage is billed on a per GB basis as Standard Storage. Out of the box Virtual Machine templates in the CenturyLink Cloud platform do not incur a storage fee. Visit our [pricing catalog](https://www.ctl.io/pricing) for rates.
 
 **Sample Use Case** ISV would like to build a virtual machine base template that includes the OS, software packages and security customization to improve speed of delivery to their client base.
 
@@ -22,7 +22,7 @@
 
 **How To:** [How To Clone A Virtual Machine Instance](../Servers/how-to-clone-a-virtual-machine-os-instance.md)
 
-**Costs** As a virtual machine clone is a completely separate copy of a VM, it is billed per hour based on the resources assigned.
+**Costs** As a virtual machine clone is a completely separate copy of a VM, it is billed per hour based on the resources assigned. Visit our [pricing catalog](https://www.ctl.io/pricing) for rates.
 
 **Sample Use Case** IT department needs to reproduce and find a resolution to a software bug that is affecting theircustomers. In order to avoid changes and downtime to the production environment , a clone of the problem virtual machine is created allowing for further troubleshooting without customer impact.
 
@@ -44,7 +44,9 @@
 
 ![pause function](../images/understanding-vm-deployment-options-and-power-states-01.png)
 
-**Costs:** In the pause state, a customer pays for storage consumed by the virtual machine and licensing costs. Compute and memory costs are not levied. *All Managed Services costs are Levied in a pause state*.
+**Costs:** In the pause state, a customer pays for storage consumed by the virtual machine and licensing costs. Compute and memory costs are not levied. *All Managed Services costs are Levied in a pause state*. Visit our [pricing catalog](https://www.ctl.io/pricing) for rates.
+
+**Exceptions:** [Bare Metal](//www.ctl.io/bare-metal) servers cannot leverage the pause feature.
 
 **Sample Use Case:** A customer maintains a development and staging environment for their production workloads. This environment is only used during business hours 8 AM to 8 PM EST. The IT department, in order to save costs, creates a scheduled pause and power on event during off hours. This automated task eliminates CPU & RAM fee's between the 8 PM and 8 AM EST time window for these environments.
 
@@ -56,7 +58,9 @@
 
 ![shutdown function](../images/understanding-vm-deployment-options-and-power-states-03.png)
 
-**Costs:** In the shutdown/Power Off state, a customer pays for storage allocated to the virtual machine, licensing costs and *Managed Application Services*. Compute, memory and *Managed OS* costs are not levied.
+**Costs:** In the shutdown/Power Off state, a customer pays for storage allocated to the virtual machine, licensing costs and *Managed Application Services*. Compute, memory and *Managed OS* costs are not levied. Visit our [pricing catalog](https://www.ctl.io/pricing) for rates.
+
+**Exceptions:** [Bare Metal](//www.ctl.io/bare-metal) servers will continue to bill the normal hourly rate regardless of the state of the server
 
 **Sample Use Case:** A Managed Server customer maintains a development and staging environment for their production workloads. This environment is only used during business hours 8 AM to 8 PM EST. The IT department, in order to save costs, creates a scheduled shutdown event during off hours. This automated task eliminates CPU, RAM and Managed Server fee's between the 8 PM and 8 AM EST time window for these environments.
 
@@ -68,6 +72,8 @@
 
 ![archive function](../images/understanding-vm-deployment-options-and-power-states-02.png)
 
-**Costs:** In the archive state, a customer pays only for the archival storage consumed by the virtual machine (at a reduced rate). Compute, memory and licensing costs are not levied.  *Managed Services customers cannot leverage the Archive Feature*.
+**Costs:** In the archive state, a customer pays only for the archival storage consumed by the virtual machine (at a reduced rate). Compute, memory and licensing costs are not levied. Visit our [pricing catalog](https://www.ctl.io/pricing) for rates.
+
+**Exceptions:** [Bare Metal](//www.ctl.io/bare-metal) and **Managed Services** customers cannot leverage the Archive feature.
 
 **Sample Use Case:** The business department has a reporting server that pulls data on a monthly basis from a 3rd party and generates reports for business analysis. This virtual machine is only required for 2 days per month and otherwise is unused. To save costs, the IT department schedules the server to be placed in archive and brought out of archived for operation during just these 2 days of the month.

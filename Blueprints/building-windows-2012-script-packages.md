@@ -40,7 +40,7 @@ In order to facilitate knowledge of the CenturyLink Cloud platform this article 
 * [Windows 2012 Roles](https://technet.microsoft.com/en-us/library/hh831669.aspx)
 
 ### Support Information
-Customers are responsible for building, testing and managing private or privateshared Script blueprints in their environment.
+Customers are responsible for building, testing and managing private or privateshared Script Blueprints in their environment.
 
 ### Install Windows 2012 File Services
 This sample package installs File Server, BranchCache for Network Files, Data Deduplication, DFS Namespaces, DFS Replication, File Server Resource Manager, File Server VSS Agent Service Server for NFS.
