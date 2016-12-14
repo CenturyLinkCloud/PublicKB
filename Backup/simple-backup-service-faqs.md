@@ -1,7 +1,7 @@
 {{{
   "title": "Simple backup FAQs",
-  "date": "04-08-2016",
-  "author": "Justin Withington",
+  "date": "12-14-2016",
+  "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -122,7 +122,7 @@ A: An "IN_PROGRESS" status for a restore job indicates the data is actively bein
 
 **Q: Can I select specific files/folders to restore from a restore point?**
 
-A: Currently, the only restore option available is a full restore of all files from a specific point in time (based on the retention period); all files that existed at that point in time will be restored. We have selective file restore on the roadmap and understand that it is a very important feature to most people, but we do not have an estimated release date yet.
+A: Yes, in the restore section there is an option to perform a full restore, or selective file restore. Using the selective file restore option allows you to enter the full path to a file or folder and the option to add multiple paths to restore.
 
 **Q: Can restores be performed to another server?**
 
@@ -161,7 +161,7 @@ A: The number of restore points depends on the backup frequency as selected in t
 
 **Q: How do I stop an in-progress restore from completing?**
 
-A: Restarting the Simple Backup Service on the server will stop all running restore task(s), but it will also stop any backups that are in progress. See https://www.ctl.io/knowledge-base/backup/restarting-simple-backup-service/ for steps to restart in Linux and Windows.
+A: Restarting the Simple Backup Service on the server will stop all running restore task(s). See https://www.ctl.io/knowledge-base/backup/restarting-simple-backup-service/ for steps to restart in Linux and Windows.
 
 ### Policies
 
