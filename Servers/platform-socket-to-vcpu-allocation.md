@@ -1,6 +1,6 @@
 {{{
   "title": "Platform Socket to vCPU Allocation",
-  "date": "11-29-2016",
+  "date": "12-14-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -13,10 +13,10 @@ When creating a virtual machine on **CenturyLink Cloud**, Servers will be create
 Number of vCPUs|Virtual Sockets|Cores per Sockets
 ---------------|---------------|-----------------
 1|1|1
-2|2|2
-3|3|3
-4|4|4
-5|5|5
+2|2|1
+3|3|1
+4|4|1
+5|5|1
 
 *and so on....*
 
