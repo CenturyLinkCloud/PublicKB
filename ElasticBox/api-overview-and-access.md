@@ -39,11 +39,11 @@ Follow these steps to get a token from your ElasticBox account.
 
 2. From the user drop-down menu on the right, click **Authentication Tokens**.
 
-![api1](../../images/EBapi1.png)
+![api1](../images/EBapi1.png)
 
 3. Enter a descriptive name for the token and click **Create Token**.
 
-![api2](../../images/EBapi2.png)
+![api2](../images/EBapi2.png)
 
 4. Use the clipboard icon to copy the token to then pass it in your API request headers.
 
@@ -61,4 +61,4 @@ As part of the request headers, specify the latest version of the ElasticBox rel
 
 Headers for a sample request look like this.
 
-![api3](../../images/EBapi3.png)
+![api3](../images/EBapi3.png)
