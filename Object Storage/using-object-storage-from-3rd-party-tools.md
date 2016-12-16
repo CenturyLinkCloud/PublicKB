@@ -52,27 +52,41 @@ CenturyLink Cloud now has a robust, geo-distributed Object Storage service capab
 1. Download a copy of [CyberDuck for OS X](https://update.cyberduck.io/Cyberduck-4.7.2.zip) from the product website.
 
 2. Install CyberDuck and run the program. It looks like this when it starts up without any **Connections** (aka: Service Points or Servers) configured.
+
    ![cyberduck new install](../images/cyberduck-new-install.png)
 
-3. In the Control Portal, navigate to the Object Storage service and view the user record that you want to configure CyberDuck to use. Record the **Access Key ID** and the **Secret Access Key** for use in the tool.
+3. Download the CyberDuck profile [AWS S3 AWS2 Signature Version Profile for HTTPS](https://svn.cyberduck.io/trunk/profiles/S3%20AWS2%20Signature%20Version%20%28HTTPS%29.cyberduckprofile) to allow for AWS2 version authentication.
+
+4. In the Control Portal, navigate to the Object Storage service and view the user record that you want to configure CyberDuck to use. Record the **Access Key ID** and the **Secret Access Key** for use in the tool.
+
    ![Access Keys](../images/kb-object-storage-access-keys.png)
 
-4. Also you will need the **Service Point** (aka server) where your bucket exists (or will exist). In the Control Portal, on the Object Storage bucket listing page, either create a new bucket, or click on an existing bucket. When the **Bucket Info and Settings** page is displayed, copy/save the portion of the **bucket URL** that follows the bucket name. In this example, the bucket **Service Point** (server name) is: **canada.os.ctl.io**.
+5. Also you will need the **Service Point** (aka server) where your bucket exists (or will exist). In the Control Portal, on the Object Storage bucket listing page, either create a new bucket, or click on an existing bucket. When the **Bucket Info and Settings** page is displayed, copy/save the portion of the **bucket URL** that follows the bucket name. In this example, the bucket **Service Point** (server name) is: **canada.os.ctl.io**.
+
    ![object storage bucket info](../images/object-storage-bucket-info-and-settings.png)
 
-5. Back in CyberDuck, click the **Open Connection** icon (upper left corner) in order to configure the connection details for your Object Storage bucket. Select **S3 (Amazon Simple Storage)** from the drop down. In the **Server** field, enter the name of the **Service point**. Leave Port field set to **443**. Populate the **Username** field with your **Access Key ID** and populate the **Password** field with your **Secret Access key**.
+6. Open the **AWS S3 AWS2 Signature Version Profile for HTTPS**.  In the **Server** field, enter the name of the **Service point**. Change the Port field to **443**. Populate the **Username** field with your **Access Key ID**. Close the window. This will create a bookmark in your **Bookmarks** list.
+
+7. Open the connection by clicking on the bookmark.  Populate the **Password** field with your **Secret Access key**.  Then click **Login**.
+
+  1. For creating connections later, replace steps the previous 2 steps with this: Click the **Open Connection** icon (upper left corner) in order to configure the connection details for your Object Storage bucket. Select **S3 (Amazon Simple Storage)** from the drop down. In the **Server** field, enter the name of the **Service point**. Leave Port field set to **443**. Populate the **Username** field with your **Access Key ID** and populate the **Password** field with your **Secret Access key**.
+
    ![cyberduck setup connection](../images/cyberduck-setup-connection.png)
 
-6. After you have configured the Object Storage connection, CyberDuck will list the available buckets at that **Connection**. You can double-click on a bucket to upload files or even drag-and-drop files into the bucket.
+8. After you have configured the Object Storage connection, CyberDuck will list the available buckets at that **Connection**. You can double-click on a bucket to upload files or even drag-and-drop files into the bucket.
+
    ![cyberduck established connection](../images/cyberduck-established-connection.png)
 
-7. Now that CyberDuck is configured to quickly connect to your CenturyLink Cloud Object Storage account and access the stored buckets, you should bookmark the account for easy access. Click the **Bookmark icon** to navigate to the Bookmark page.
+9. Now that CyberDuck is configured to quickly connect to your CenturyLink Cloud Object Storage account and access the stored buckets, you should bookmark the account for easy access. Click the **Bookmark icon** to navigate to the Bookmark page.
+
    ![cyberduck bookmark page](../images/cyberduck-bookmark-page.png)
 
-8. Click the **Add Connection button** to add this Object Storage account to your Bookmarks.
+10. Click the **Add Connection button** to add this Object Storage account to your Bookmarks.
+
    ![cyberduck bookmark added](../images/cyberduck-bookmark-added.png)
 
-9. Permissions can be applied at both the bucket and object level. A user could have **FULL ACCESS** rights for the bucket (and thus be able to add and remove objects) but only have **READ** rights to an individual object (and therefore couldn't update that object).
+11. Permissions can be applied at both the bucket and object level. A user could have **FULL ACCESS** rights for the bucket (and thus be able to add and remove objects) but only have **READ** rights to an individual object (and therefore couldn't update that object).
+
    ![cyberduck bucket permissions](../images/cyberduck-bucket-permissions.png)
 
    ![cyberduck object permissions](../images/cyberduck-object-permissions.png)
