@@ -13,6 +13,7 @@
     "Disaster Recovery",
     "Ecosystem Partners",
     "General",
+    "LBaaS",
     "Mail",
     "Managed Services",
     "Marketplace",
