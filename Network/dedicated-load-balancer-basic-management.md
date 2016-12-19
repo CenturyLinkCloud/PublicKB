@@ -69,5 +69,7 @@
     on the Load Balancer. You can do this by going to Network -&gt; Routes -RNAT via the Netscaler UI. Contact the NOC if you need additional help with this.</li>
   <li>When Load Balancing websites, its recommended to setup additional monitors on the Service Group instead of just Ping/TCP. An http-ecv monitor will verify each member of the Service Group is responding correctly before sending traffic to it. You
     can find assistance with this monitor here:&nbsp;http://support.citrix.com/article/CTX120921</li>
+  <li>Tracking a Dedicated Load Balancer license expiration date is performed by the customer, please reference our <a href="dedicated-load-balancer-license-management.md">License Management Article</a>.</li>
+
 </ul>
 <h3>&nbsp;</h3>
