@@ -91,7 +91,7 @@ Follow these steps to access and configure the Voretric Agent application.
    * To manually configure the Vormetric agent, please [follow the instructions on the Vormetric support website](http://www.Vormetric.com).
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Vormetric license costs or additional fees bundled in.
+The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. Costs for the agent are bundled into your purchase of the DSM. It is assumed that you have purchased the DSM through the CenturyLink marketplace.  For other arrangements, please contact your CenturyLink sales representative to coordinate with the Vormetric team on your behalf. 
 
 ### Frequently Asked Questions
 #### Where do I obtain my Vormetric License or entitlements?

@@ -8,7 +8,7 @@
 
 ### General
 
-The Service Catalog is accessible in the Control Portal by Account Administrators only. It can be found under the Account menu in the green navigation bar.
+The Service Catalog is accessible in the Control Portal by Account Administrators only. It can be found under the Account menu under Setting in the Navigation Menu.
 
 ### Settings
 
