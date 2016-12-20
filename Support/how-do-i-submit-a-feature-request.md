@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-## Description (goal/purpose)
+### Description (goal/purpose)
 
 CenturyLink Cloud releases software updates every month and we're focused on delivering customer-driven innovation. How can you submit ideas for new features? CTL Cloud offers a few primary channels for customers and partners to use. This KB article outlines the preferred mechanisms.
 
