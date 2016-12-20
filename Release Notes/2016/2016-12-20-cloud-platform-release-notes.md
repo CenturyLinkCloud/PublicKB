@@ -26,7 +26,7 @@
 
 	- __Online Cloud Estimator__ - [ElasticBox](https://elasticbox.com/) is now available on the [Cloud Estimator](www.ctl.io/estimator/)
 
-	- __Alternative Activation__ - CTL.io now offers an account activation process that does not require a credit card or fraud check. This process also circumvents IP, Cores, Storage, Memory, Bare Metal and Sub Account restrictions associated with WEBC accounts. This form of activation is not publicly available and is targeted at Sales Assisted Customers. Sale Representatives interested in using this feature can apply for an Alternative Activation URL [here](https://cloudhelp.ctl.io/alternative-activation/). CloudHelp and CTL.io Digital Onboarding will be releasing more details about this feature in the weeks to come. If you have more questions in the interim, contact [Rich Dubose](mailto:rich.dubose@ctl.io).
+	- __Alternative Activation__ - For new customers who do not have credit card for online sign up, please contact your sales representative to proceed without a credit card.
 
 
 ### Early Adopter Program (1)
