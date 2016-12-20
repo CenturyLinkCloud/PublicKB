@@ -31,17 +31,13 @@ cf version 6.11.0-bba7fcf-2015-04-14T16:45:03+00:00
 
 ### Login to AppFog
 
-Now that we have the Cloud Foundry CLI installed, lets login to AppFog. Go to the AppFog overview page in the Control Portal by navigation using the “AppFog" link listed in the drop down navigation bar:
+Now that we have the Cloud Foundry CLI installed, lets login to AppFog. Go to the AppFog overview page in the Control Portal by navigating to Services > AppFog on the left-side vertical navigation bar:
 
-![AppFog in Dropdown Navigation](../images/appfog-in-dropdown-nav.png)
-
-Or you may also navigate to AppFog via the icon on the left-side vertical navigation bar:
-
-![AppFog icon in Vertical Navigation](../images/appfog-icon-nav.png)
+![AppFog in Navigation](../images/appfog_vertical_nav.png)
 
 Now navigate to the "US East" AppFog region from the left-side navigation tree:
 
-![AppFog Organization Overview in US East Region](../images/appfog-org-overview.png)
+![AppFog Organization Overview in US East Region](../images/appfog_us_east.png)
 
 Copy the full `cf login` shell command from the "Overview" tab. The command should look similar to:
 
