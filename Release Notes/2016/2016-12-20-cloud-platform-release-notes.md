@@ -16,9 +16,9 @@
 
 *	__Network Exchange (NetX)__
 
-  - __DC2 Data Center Operational__ - [NetX](https://www.ctl.io/network-exchange/) users are able to now provision connections in our DC2 data center
+  - __DC2 Data Center Operational__ - [NetX](https://www.ctl.io/network-exchange/) is now available in our DC2 data center.
 
-	- __Interface Rate Limiting__ - [NetX](https://www.ctl.io/network-exchange/) users are now able to rate limit an endpoint, virtual or physical, to either 100Mbps, 500Mbps, 1Gbps, or 10Gbps.<p>
+  - __Interface Rate Limiting__ - Users are now able to rate limit an endpoint, virtual or physical, to either 100Mbps, 500Mbps, 1Gbps, or 10Gbps.<p>
 
   ![NetX Interface Rate Limiting Screenshot](../../images/2016-12-20_ReleaseNotes2.png)
 
