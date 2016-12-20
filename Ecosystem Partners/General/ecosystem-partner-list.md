@@ -88,7 +88,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Codiad](../Marketplace Guides/getting-started-with-codiad-blueprint.md)   	| Blueprint    | Development Framework    |
 | [GitLab](../Marketplace Guides/getting-started-with-gitlab-blueprint.md)   	| Blueprint    | Code collaboration repository    |
 | [Jenkins](../Marketplace Guides/getting-started-with-jenkins-blueprint.md)   	| Blueprint    | Continuous integration system    |
-| [Microsoft Team Foundation Server](..//Ecosystem Partners/Marketplace Guides/getting-started-with-microsoft-tfs.md)    | Blueprint     | Development team collaboration   |
+| [Microsoft Team Foundation Server](../Marketplace Guides/getting-started-with-microsoft-tfs.md)    | Blueprint     | Development team collaboration   |
 | [Phabricator](../Marketplace Guides/getting-started-with-phabricator-blueprint.md)   	| Blueprint    | Code Collaboration Suite    |
 | [Pootle](../Marketplace Guides/getting-started-with-pootle-blueprint.md)   	| Blueprint    | Translation Management   |
 | [Railo](../Marketplace Guides/getting-started-with-railo-blueprint.md)   	| Blueprint    | CFML   |
