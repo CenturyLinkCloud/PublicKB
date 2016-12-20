@@ -32,14 +32,14 @@ Quickly deploy and successfully use software and technology from any of our cert
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
-| [Apache HTTP Server](../Managed Services/getting-started-with-managed-apache.md)   	| Blueprint (Managed)   | Multi-purpose web server    |
-| [Apache Tomcat Server](../Managed Services/getting-started-with-managed-tomcat.md)   	| Blueprint (Managed)   | Web application server    |
+| [Apache HTTP Server](../../Managed Services/getting-started-with-managed-apache.md)   	| Blueprint (Managed)   | Multi-purpose web server    |
+| [Apache Tomcat Server](../../Managed Services/getting-started-with-managed-tomcat.md)   	| Blueprint (Managed)   | Web application server    |
 | [AppsFreedom](../Marketplace Guides/getting-started-with-appsfreedom-centOS.md)   	| Blueprint   | Mobile application development platform    |
 | [CloudMine](../Marketplace Guides/getting-started-with-cloudmine-blueprint.md)   	| Blueprint    | Mobile backend    |
 | [Heirloom Elastic COBOL](../Marketplace Guides/getting-started-with-elastic-cobol.md)     | Blueprint | Legacy COBOL Code migration |
 | [LAMP](../Marketplace Guides/getting-started-with-lamp-stack-blueprint.md)   	| Blueprint    | Linux, Apache, MariaDB/MySQL, and PHP/Perl/Python bundle    |
 | [Magento](../Marketplace Guides/getting-started-with-magento-blueprint.md)   	| Blueprint    | Ecommerce Shopping cart    |
-| [Microsoft Internet Information Services (IIS)](../Managed Services/getting-started-with-managed-microsoft-iis.md)   	| Blueprint (Managed)   | Web application server    |
+| [Microsoft Internet Information Services (IIS)](../../Managed Services/getting-started-with-managed-microsoft-iis.md)   	| Blueprint (Managed)   | Web application server    |
 | [Node.js](../Marketplace Guides/getting-started-with-nodejs-blueprint.md)   	| Blueprint    | Node.js Javascript runtime    |
 | [PrestaShop](../Marketplace Guides/getting-started-with-prestashop-blueprint.md)   	| Blueprint    | E-commerce platform    |
 | [Red Hat JBoss](../Marketplace Guides/getting-started-with-jboss-blueprint.md)   	| Blueprint    | Java application server    |
@@ -51,7 +51,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Alert Logic Web Security Manager](../Marketplace Guides/getting-started-with-alert-logic-web-security-manager-partner-template.md)   	| Template    | Web security manager appliance    |
 | [Alert Logic Threat Manager](../Marketplace Guides/getting-started-with-alert-logic-threat-manager-partner-template.md)   	| Template    | Threat manager appliance    |
 | [Cavirin Automated Risk Analysis Platform](../Marketplace Guides/getting-started-with-cavirin-automated-risk-analysis-platform-partner-template.md)   	| Template    | Governance and compliance appliance    |
-| [FlexSecure](../Security/getting-started-with-flexsecure.md)   	| Blueprint    | Context-based Security-as-a-Service platform    |
+| [FlexSecure](../../Security/getting-started-with-flexsecure.md)   	| Blueprint    | Context-based Security-as-a-Service platform    |
 | [OSSEC](../Marketplace Guides/getting-started-with-ossec-blueprints.md)   	| Template    | HIDS    |
 | [SMS Passcode](../Marketplace Guides/getting-started-with-smspasscode-template.md)   	| Template   | Multifactor Authentication    |
 | [Symas](../Marketplace Guides/getting-started-with-symas-open-ldap-silver.md)   	| Blueprint   | LDAP    |
@@ -111,9 +111,9 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Hortonworks Hadoop](../Marketplace Guides/getting-started-with-hortonworks-hadoop-blueprint.md)   	| Blueprint    | Distributed NoSQL database    |
 | [MapR](../Marketplace Guides/getting-started-with-mapr-blueprint.md)   	| Blueprint    | Enterprise-grade Hadoop cluster    |
 | [MEAN Stack](../Marketplace Guides/getting-started-with-mongodb-blueprint.md)   	| Blueprint    | MongoDB, Express, Angular, Node.js bundle    |
-| [Microsoft SQL Server](../Managed Services/getting-started-with-managed-microsoft-sql-server.md)   	| Blueprint (Managed)   | Enterprise-grade relational database management system   |
+| [Microsoft SQL Server](../../Managed Services/getting-started-with-managed-microsoft-sql-server.md)   	| Blueprint (Managed)   | Enterprise-grade relational database management system   |
 | [MongoDB](../Marketplace Guides/getting-started-with-mongodb-blueprint.md)   	| Blueprint    | High performance document oriented NoSQL database    |
-| [MySQL](../Managed Services/getting-started-with-managed-mysql.md)   	| Blueprint (Managed)   | Broadly adopted open source relational database management system   |
+| [MySQL](../../Managed Services/getting-started-with-managed-mysql.md)   	| Blueprint (Managed)   | Broadly adopted open source relational database management system   |
 | [Orientdb](../Marketplace Guides/getting-started-with-orientdb.md)   	| Blueprint   | Scale out NoSQL Database   |
 | [Qubida Analytics](../Marketplace Guides/getting-started-with-qubida-blueprint.md)   	| Blueprint    | Big Data BI    |
 | [XtremeData dbX](../Marketplace Guides/getting-started-with-xtremedata-dbx-blueprint.md)  | Blueprint  | On-Demand Big Data Analytics with real-time ingest |
@@ -162,7 +162,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Hyper accurate time services from FSM Labs](../Marketplace Guides/getting-started-with-timekeeper.md)    | Blueprint     | Hyper accurate time services |
 | [Horde Groupware Webmail](../Marketplace Guides/getting-started-with-horde-blueprint.md)   	| Blueprint    | Mail, Calendar, Address Book, Tasks, and Notes Communication Suite    |
 | [Live Helper Chat](../Marketplace Guides/getting-started-with-livehelperchat-blueprint.md)   	| Blueprint    | Live chat    |
-| [Microsoft Active Directory ](../Managed Services/getting-started-with-managed-active-directory.md)  	| Blueprint (Managed)   | Directory Service     |
+| [Microsoft Active Directory ](../../Managed Services/getting-started-with-managed-active-directory.md)  	| Blueprint (Managed)   | Directory Service     |
 | [NOALYSS](../Marketplace Guides/getting-started-with-noalyss-blueprint.md)  	| Blueprint   | Dobule Entry Accounting (ERP)	|
 | [Netwrix](../Marketplace Guides/getting-started-with-netwrix-auditor-80.md)  	| Blueprint   | Auditing of network components	|
 | [OpenCart](../Marketplace Guides/getting-started-with-opencart-blueprint.md)  	| Blueprint   | eCommerce platform     |
@@ -230,8 +230,8 @@ Quickly deploy and successfully use software and technology from any of our cert
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
-| [Microsoft Windows Server ](../Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
-| [Red Hat Enterprise Linux](../Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
+| [Microsoft Windows Server ](../../Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
+| [Red Hat Enterprise Linux](../../Managed Services/managed-operating-system-frequently-asked-questions.md)  	| Blueprint (Managed)   | Server OS     |
 
 
 ### Other
