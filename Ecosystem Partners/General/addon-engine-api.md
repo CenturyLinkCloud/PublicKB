@@ -67,7 +67,7 @@ Here is a description of each body attribute:
 | ---------      | ----------------- |
 | `uuid`         | Add-on Engine generated unique service instance ID |
 | `plan`         | Plan ID from Partner defined manifest |
-| `callback_url` | URL partner can use to access creator's Account info, see [callbacks](./Partner Integration Resources/appfog-addon-provider-app-info-api.md) |
+| `callback_url` | URL partner can use to access creator's Account info, see [callbacks](../Partner Integration Resources/appfog-addon-provider-app-info-api.md) |
 | `region`       | Region that service is being provisioned for, current values could be 'useast' or 'uswest' |
 | `clc.account`  | CenturyLink Cloud account alias |
 
@@ -260,5 +260,5 @@ Response:
 
 ### Additional References
 
-* Add-on engine partner [callbacks](./Partner Integration Resources/appfog-addon-provider-app-info-api.md)
+* Add-on engine partner [callbacks](../Partner Integration Resources/appfog-addon-provider-app-info-api.md)
 * [Uploading service manifests](upload-service-manifests-to-addon-engine.md)
