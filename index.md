@@ -12,6 +12,7 @@
     "Database",
     "Disaster Recovery",
     "Ecosystem Partners",
+    "ElasticBox",
     "General",
     "LBaaS",
     "Mail",
