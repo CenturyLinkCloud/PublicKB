@@ -9,19 +9,19 @@
 ### Using the API: from Registering a Provider to the Deployment of an Instance
 
 This guide shows all the steps you need to deploy a box using the ElasticBox API.
-* [Authentication and Deployment Variables](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-box/#authentication-and-deployment-variables)
-* [Register a Provider](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-box/#register-a-provider)
-* [Create a New Deployment Policy Box](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-box/#create-a-new-deployment-policy-box)
-* [Create a Box](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-box/#create-a-box)
-* [Deploy the Instance](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-box/#deploy-the-instance)
-* [Terminate the Instance](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-box/#terminate-the-instance)
+* [Authentication and Deployment Variables](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-box.md/#authentication-and-deployment-variables)
+* [Register a Provider](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-box.md/#register-a-provider)
+* [Create a New Deployment Policy Box](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-box.md/#create-a-new-deployment-policy-box)
+* [Create a Box](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-box.md/#create-a-box)
+* [Deploy the Instance](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-box.md/#deploy-the-instance)
+* [Terminate the Instance](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-box.md/#terminate-the-instance)
 
 **Note:** We use cURL commands to send HTTP requests to the API objects in JSON. JSON is the required format for all API requests and responses.
 
 Now let’s look at the script in sections to understand how you can make API calls from any code you like.
 
 ### Authenticate with ElasticBox
-Before calling to the API you have to sig in into the ElasticBox website and [getting an authentication token](https://www.ctl.io/knowledge-base/ElasticBox/overview-access/#api-get-token). You use this token as an http header to perform every call to the ElasticBox API.
+Before calling to the API you have to sig in into the ElasticBox website and [getting an authentication token](https://www.ctl.io/knowledge-base/ElasticBox/overview-access.md/#api-get-token). You use this token as an http header to perform every call to the ElasticBox API.
 
 **Declare Deployment Variables**
 In this case we decided to use AWS so we will need the account key and secret to register it as provider. Box deployment arguments such as owner, environment and token are declared as variables because they can differ between deployments. That way, each time you run the script, you can pass different arguments.
@@ -114,7 +114,7 @@ fi;
 ```
 
 ### Create a Custom Box in Order to Deploy It Using the Previous Deployment Policy Box
-In a POST request to the Box object, we send the features for our script box. Also we will use two already created blobs. You can take a look to the [blobs](https://www.ctl.io/knowledge-base/ElasticBox/blobs/), API doc if you need to know how you can create them.
+In a POST request to the Box object, we send the features for our script box. Also we will use two already created blobs. You can take a look to the [blobs](https://www.ctl.io/knowledge-base/ElasticBox/blobs.md/), API doc if you need to know how you can create them.
 ```
 # We create a box to deploy with that policy box, in this case we are going to use a previously uploaded scripts.
 payload="{

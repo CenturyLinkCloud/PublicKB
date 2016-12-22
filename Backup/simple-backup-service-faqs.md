@@ -64,7 +64,7 @@ A: Please review the [SBS Agent Security Configurations](./sbs-agent-security.md
 
 **Q: Can I change the backup agent credentials for all my instances in one place?**
 
-A: Not currently at this time. Each properties file must be updated individually.
+A: Not at this time. Each properties file must be updated individually.
 
 **Q: How can I access my backup agent from a remote machine?**
 
@@ -78,7 +78,7 @@ A: Logs can be viewed at the following locations:
 
 **Q: What can I find in the backup agent's logs?**
 
-A: The backup agent's logs have details about the backups that have ran on the system. This is helpful if you are trying to identify causes of backup failures as the failed files will be listed in the logs.
+A: The backup agent's logs have details about the backups that have run on the system. This is helpful if you are trying to identify causes of backup failures as the failed files will be listed in the logs.
 
 **Q: If a new version of the the agent is available, what are the steps to update the agent on my server?**
 
@@ -175,7 +175,7 @@ A: A policy will show its status as "Pending_Install" until the SBS agent checks
 
 **Q: What happens when polices are disabled by the user?**
 
-A: When a policy is disabled backups will stop being performed for the associated server and paths tied to the policy . A count down of the retention period will begin based on the policy details. For example, if the retention period is 14 days, then once the policy is disabled, the files will be retained in storage for 14 days, then removed from storage.
+A: When a policy is disabled, backups will stop being performed for the associated server and paths tied to the policy. A countdown of the retention period will begin based on the policy details. For example, if the retention period is 14 days, then once the policy is disabled, the files will be retained in storage for 14 days, then removed from storage.
 
 **Q: What if an inactive policy is enabled while the current backups are counting down their retention period?**
 
@@ -201,17 +201,17 @@ A: This depends on how long a backup takes to complete. The frequency timer will
 
 **Q: Can I manually initiate a backup outside of my regularly scheduled frequency?**
 
-A: Yes, from the Backup Agent, click the **Backup** button from the Home Dashboard or the Policy Details page. This places a request at the top of the backup queue and will be processed as soon possible.
+A: Yes. From the Backup Agent, click the **Backup** button from the Home Dashboard or the Policy Details page. This places a request at the top of the backup queue and will be processed as soon possible.
 
 **Q: Can I schedule backups to execute at a specific time in the day?**
 
-A: No, the policy frequency determines when the next backup will be executed or the user may manually trigger a backup. Once a backup has completed, the frequency will start to countdown and the next backup will occur when the frequency countdown has expired. If you want to prevent backups from occurring during peak business hours, you will need to stop and restart the service accordingly.
+A: No. The policy frequency determines when the next backup will be executed or the user may manually trigger a backup. Once a backup has completed, the frequency will start to countdown and the next backup will occur when the frequency countdown has expired. If you want to prevent backups from occurring during peak business hours, you will need to stop and restart the service accordingly.
 
 ### Retention
 
 **Q: Can I completely delete my backed up files from storage regardless of the retention period?**
 
-A: No, this is a manual process at this time. A [support request](https://www.ctl.io/knowledge-base/support/how-do-i-report-a-support-issue/#exceptions) will need to be opened to have this performed.
+A: No. This is a manual process at this time. A [support request](https://www.ctl.io/knowledge-base/support/how-do-i-report-a-support-issue/#exceptions) will need to be opened to have this performed.
 
 **Q: Why do unchanged files not follow retention?**
 
@@ -249,7 +249,7 @@ A: Please refer to the list below:
 
 **Q: Can I opt to backup the files that are automatically excluded from backups?**
 
-A: Not at this time; currently the exclusion list overrides the inclusion list. The reason these are not included is because SBS is intended to backup the apps and data that are specific and important to your business. SBS is not intended to be a full server restore. Since OS files are not included, the speed and performance of the backups are increased, while also minimizing backup costs.
+A: Not at this time. Currently, the exclusion list overrides the inclusion list. The reason these are not included is because SBS is intended to backup the apps and data that are specific and important to your business. SBS is not intended to be a full server restore. Since OS files are not included, the speed and performance of the backups are increased, while also minimizing backup costs.
 
 **Q: Are wildcard characters supported for inclusion/exclusion backup paths when creating a Backup Policy?**
 

@@ -7,13 +7,13 @@
 }}}
 
 ### Sample: Deploy a MongoDB instance via the API
-Here you can see how to deploy a mongoDB instance using the ElasticBox API. Typically you want to structure API calls to mirror your workflow in ElasticBox. Most workflows involve tasks such as these: defining a [box](https://www.ctl.io/knowledge-base/ElasticBox/boxes/), for example a Jenkins box to automate continuous integration and delivery; registering a [provider](https://www.ctl.io/knowledge-base/ElasticBox/providers/) like AWS, Google Cloud, vSphere, OpenStack, or CloudStack to host your box application deployments; creating a [deployment profile](https://www.ctl.io/knowledge-base/ElasticBox/deploying-managing-instances/#profile) to specify provider specific options for a deployment; deploying an instance to launch a box in the virtual environment; or performing lifecycle tasks like deploying, reconfiguring, and terminating an instance.
+Here you can see how to deploy a mongoDB instance using the ElasticBox API. Typically you want to structure API calls to mirror your workflow in ElasticBox. Most workflows involve tasks such as these: defining a [box](https://www.ctl.io/knowledge-base/ElasticBox/boxes.md/), for example a Jenkins box to automate continuous integration and delivery; registering a [provider](https://www.ctl.io/knowledge-base/ElasticBox/providers.md/) like AWS, Google Cloud, vSphere, OpenStack, or CloudStack to host your box application deployments; creating a [deployment profile](https://www.ctl.io/knowledge-base/ElasticBox/deploying-managing-instances.md/#profile) to specify provider specific options for a deployment; deploying an instance to launch a box in the virtual environment; or performing lifecycle tasks like deploying, reconfiguring, and terminating an instance.
 In this sample, we follow this workflow to deploy a MongoDB instance using the existing MongoDB public box:
-* [Declare deployment arguments](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-mongodb/#declare-deployment-arguments)
-* [Authenticate with ElasticBox](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-mongodb/#authenticate-with-elasticbox)
-* [Create a deployment profile](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-mongodb/#create-a-deployment-profile)
-* [Deploy a MongoDB instance](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-mongodb/#deploy-a-mongodb-instance)
-* [Terminate the instance](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-mongodb/#terminate-the-instance)
+* [Declare deployment arguments](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-mongodb.md/#declare-deployment-arguments)
+* [Authenticate with ElasticBox](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-mongodb.md/#authenticate-with-elasticbox)
+* [Create a deployment profile](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-mongodb.md/#create-a-deployment-profile)
+* [Deploy a MongoDB instance](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-mongodb.md/#deploy-a-mongodb-instance)
+* [Terminate the instance](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-mongodb.md/#terminate-the-instance)
 
 **Note:** We use cURL commands to send HTTP requests to the API objects in JSON. JSON is the required format for all API requests and responses.
 
@@ -34,7 +34,7 @@ password=$2
 ```
 
 ### Authenticate with ElasticBox
-All API calls start with signing in to the ElasticBox website and [getting an authentication token](https://www.ctl.io/knowledge-base/ElasticBox/overview-access/#api-get-token). You use this token to perform tasks in your ElasticBox workflow. In this example, we pass the token in the format as shown to all of the API requests that relate to deploying MongoDB.
+All API calls start with signing in to the ElasticBox website and [getting an authentication token](https://www.ctl.io/knowledge-base/ElasticBox/overview-access.md/#api-get-token). You use this token to perform tasks in your ElasticBox workflow. In this example, we pass the token in the format as shown to all of the API requests that relate to deploying MongoDB.
 ```
 ElasticBox-Token:8ccc8203-2efd-44a9-8819-e95fd2277be2
 ```
