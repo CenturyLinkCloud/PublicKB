@@ -1,9 +1,9 @@
 {{{
-“title”: “Get Control and Insights with Cloud Reporting”,
-“date”: “09-01-2016”,
-“author”: “”,
-“attachments”: [],
-“contentIsHTML”: false
+"title": "Get Control and Insights with Cloud Reporting",
+"date": "09-01-2016",
+"author": "",
+"attachments": [],
+"contentIsHTML": false
 }}}
 
 ### Get Control and Insights with Cloud Reporting

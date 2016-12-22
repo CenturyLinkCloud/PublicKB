@@ -1,9 +1,9 @@
 {{{
-“title”: “Give Admin Access to ElasticBox”,
-“date”: “09-01-2016”,
-“author”: “”,
-“attachments”: [],
-“contentIsHTML”: false
+"title": "Give Admin Access to ElasticBox",
+"date": "09-01-2016",
+"author": "",
+"attachments": [],
+"contentIsHTML": false
 }}}
 
 ### Give Admin Access to ElasticBox

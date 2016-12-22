@@ -1,9 +1,9 @@
 {{{
-“title”: “Enable User Authentication”,
-“date”: “09-01-2016”,
-“author”: “”,
-“attachments”: [],
-“contentIsHTML”: false
+"title": "Enable User Authentication",
+"date": "09-01-2016",
+"author": "",
+"attachments": [],
+"contentIsHTML": false
 }}}
 
 ### Enable User Authentication

@@ -1,9 +1,9 @@
 {{{
-“title”: “Manage ElasticBox Assets & Monitor Usage”,
-“date”: “09-01-2016”,
-“author”: “”,
-“attachments”: [],
-“contentIsHTML”: false
+"title": "Manage ElasticBox Assets & Monitor Usage",
+"date": "09-01-2016",
+"author": "",
+"attachments": [],
+"contentIsHTML": false
 }}}
 
 ### Manage ElasticBox Assets & Monitor Usage
