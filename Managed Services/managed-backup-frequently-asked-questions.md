@@ -28,7 +28,7 @@ A: There could be a few causes:
 * It is possible your company has not yet executed a Master Services Agreement (MSA) with CenturyLink Technology Solutions. To obtain a MSA – or if you believe you should already have one in place – please contact a CenturyLink Sales Representative toll free at:
     * United States: 1-888-638-6771
     * Canada: 1-877-387-3764
-    * Europe, Middle East and Africa: +44 (0) 207 400 5600
+    * Europe, Middle East and Africa: +44 (0) 118 309 4886
     * Japan: +81 3 5214 0180
     * Hong Kong: +852 3079 4461
     * Singapore: +65 6591 8824
