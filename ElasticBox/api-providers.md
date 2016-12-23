@@ -590,15 +590,19 @@ To add an Azure subscription in ElasticBox, you first have to upload the Elastic
 ```
 
 ### GET /services/providers
+
 Gets available providers from the personal workspace of the authenticated user.
 
 **GET /services/providers**
+
 * 200
 
 **Error Response Codes**
+
 * Bad Request (400)
 
 **Request**
+
 ```
 Headers:
 
@@ -608,6 +612,7 @@ ElasticBox-Release: 4.0
 ```
 
 **Response parameters**
+
 |Parameter | Type | Description |
 |---------------|--------|-----------------|
 |updated | string | Date of the last update.|
