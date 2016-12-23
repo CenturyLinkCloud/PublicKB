@@ -1107,16 +1107,20 @@ ElasticBox-Release: 4.0
 ```
 
 **GET /services/providers/{provider_id}**
+
 Fetches an existing provider when you give the provider ID.
 
 **Normal Response Codes**
+
 * 202
 
 **Error Response Codes**
+
 * Forbidden (403)
 * Not Found (404)
 
 **Request**
+
 ```
 Headers:
 
@@ -1126,6 +1130,7 @@ ElasticBox-Release: 4.0
 ```
 
 **Response parameters**
+
 | Parameter | Type | Description |
 |----------------|--------|-----------------|
 | updated | string | Date of the last update. |
@@ -7268,18 +7273,22 @@ ElasticBox-Release: 4.0
 ```
 
 **PUT /services/providers/{provider_id}**
+
 Updates an existing provider when you give the provider ID. Pass the provider object in the request body to update these fields: name, description, and members.
 
 For AWS, you can also update the key and secret. For VMware vShpere, you can also update the username, secret, and endpoint.
 
 **Normal Response Codes**
+
 * 200
 
 **Error Response Codes**
+
 * Invalid Data (400)
 * Conflict (409)
 
 **Request parameters**
+
 |Parameter | Type | Description |
 |---------------|--------|-----------------|
 |updated | string | Date of the last update.|
@@ -8480,17 +8489,21 @@ Body:
 ```
 
 **DELETE /services/providers/{provider_id}**
+
 Deletes an existing provider when you give the provider ID.
 
 **Normal Response Codes**
+
 * 202
 
 **Error Response Codes**
+
 * Invalid Data (400)
 * Forbidden (403)
 * Active service using the provider (400)
 
 **Request**
+
 ```
 Headers:
 
@@ -8504,12 +8517,15 @@ DELETE /services/providers/{provider_id}
 ```
 
 **PUT /services/providers/{provider_id}/sync**
+
 Syncs an existing provider when you give the provider ID.
 
 **Normal Response Codes**
+
 * 202
 
 **Error Response Codes**
+
 * Forbidden (403)
 * Not Found (404)
 
@@ -8523,16 +8539,20 @@ ElasticBox-Release: 4.0
 ```
 
 **GET /services/providers/{provider_id}/logs**
+
 Retrieves the logs of a provider when you give the provider ID.
 
 **Normal Response Codes**
+
 * 200
 
 **Error Response Codes**
+
 * Forbidden (403)
 * Not Found (404)
 
 **Request**
+
 ```
 Headers:
 
@@ -8542,6 +8562,7 @@ ElasticBox-Release: 4.0
 ```
 
 **Response parameters**
+
 |Parameter | Type | Description |
 |---------------|--------|-----------------|
 |workspace | string | Id of the workspace who perform the action.|
@@ -8579,17 +8600,21 @@ ElasticBox-Release: 4.0
 ```
 
 **POST /services/providers/{provider_id}/images**
+
 Adds a new machine image to a provider when you give the provider ID.
 
 **Normal Response Codes**
+
 * 202
 
 **Error Response Codes**
+
 * Invalid Data (400)
 * Forbidden (403)
 * Not Found (404)
 
 **Request Parameters**
+
 |Parameter | Type | Description|
 |---------------|--------|----------------|
 |location | string | Image location.
@@ -8615,17 +8640,21 @@ Body:
 ```
 
 **DELETE /services/providers/{provider_id}/images/{machine_image_id}**
+
 Deletes an existing machine image when you give the provider ID and the machine image ID.
 
 **Normal Response Codes**
+
 * 202
 
 **Error Response Codes**
+
 * Location query parameter is missing (400)
 * Forbidden (403)
 * Not Found (404)
 
 **Request Parameters**
+
 | Parameter | Type	|Description |
 |---------------|----------|----------------|
 |location | string | Location of the machine image to be deleted.|
