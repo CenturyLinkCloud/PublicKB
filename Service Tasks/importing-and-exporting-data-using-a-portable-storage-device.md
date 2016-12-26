@@ -1,6 +1,6 @@
 {{{
   "title": "Importing and Exporting data using a portable storage device",
-  "date": "9-29-2015",
+  "date": "12-26-2016",
   "author": "Dana Bowlin",
   "attachments": [],
   "contentIsHTML": false
@@ -16,64 +16,71 @@ CenturyLink Cloud supports importing and exporting data through portable storage
 * CenturyLink Cloud Customers
 
 ### Prerequisites
-* All data must be encrypted, the following tools are recommended:
-  * BitLocker for Windows if using a supported OS version
+* All data must be encrypted.  The following tools are supported:
+  * BitLocker Compatible Mode for Windows if using a supported OS version
   * 7-Zip for Windows with AES-256 and password
   * GnuPrivacyGuard (GPG) for Windows if BitLocker is not supported
   * dm-crypt, p7zip or GPG for Linux OS variants
 * Include all power sources and connection cables required for the device
 * USB 2.0 or above
+* Drive formatted with NTFS filesystem – FAT32 will not support large files
+* Drive cannot have any external locking mechanisms that could require multiple touches to remain available
+* For data import, ensure that there is enough disk space available on server
+* Prepaid return shipping label
 
 ### Device retention
 Portable devices will not be kept for more than 5 days after the transfer is completed. If arrangements have not been made to return the device. The device will be detached and destroyed.
 
 ### Domain specific NTFS ACLs
-If you are using domain specific ACLs. You must grant the "everyone" group full permissions. Without these permissions we will not have acces to copy or wipe data.
+If you are using domain specific ACLs. You must grant the "everyone" group full permissions. Without these permissions, we will not have access to copy or wipe data.
 
 ### Detailed Steps
 
-##### Requesting an Import
-Create a Ticket through the Centurylink Cloud Ticketing system
+##### Requesting an Import/Export
+1. Create a Ticket through the CenturyLink Cloud Ticketing system
   * Indicate the datacenter where the portable device will be sent
-  * Indicate the ship date and expected arrival date of the device
+  * Indicate the expected ship date and expected arrival date of the device
   * Provide the password for the encryption only via the ticket
   * Provide the location address to send the device after the data copy is completed
-  * Provide the account or sub-account information for the data destination
-  * Provide any more details about the data to be imported
-  * Provide pre-paid shipping method and/or Fedex account number to be charged for return shipping.
+  * Provide the names of the servers involved
+  * Provide details on what needs to be imported/exported (OVA/OVF and/or pathnames to files/directories)
+  * Provide any additional details about the data to be imported/exported
+  * Provide pre-paid shipping method and/or FedEx account number to be charged for return shipping.
 
-##### Import Process
-1. Ship or deliver portable device to the datacenter - include the support ticket number (created in the Request steps above) on/with the package.
+2. Our team will reply with the data center mailing address and a data center logistics ticket number must be included on the shipping label. Note that the logistics number is different than the CenturyLink Cloud ticket number.
+
+##### Import/Export Process
+1. Ship or deliver portable device to the datacenter - include the support ticket number (provided by Service Task) on the shipping label.
 
 2. Our team will receive the device, connect the device to our network and begin the process to copy the data.
 
-3. Our team will update the ticket for this request as we progress with the work.
+3. Our team will periodically update the ticket for this request as we progress with the work.
 
-4. Once the data is copied and the request is completed, Centurylink Cloud will wipe the portable data drive and ship the device back to the address noted in the request, via the pre-paid return shipping method provided.
+4. Once the data is copied and the request is completed, CenturyLink Cloud will ship the device via the pre-paid return shipping method provided.
 
-##### Requesting an Export
-1. Create a Ticket though the Centurylink Cloud Ticketing system.
-  * Indicate the datacenter where the portable device will be sent
-  * Indicate when the portable device will be sent
-  * Provide tracking information for the shipment
+Note that the drive will be wiped prior to return shipping if used for import.
 
-2. Ship or deliver the portable device to the datacenter
-  * Your device will be received by the datacenter team
-  * Our team will connect the device to our network and begin the process to export the data and copy the data to the portable device
-  * Our team will update the ticket for this request as we progress with the work
-  * Once the data is copied and the request is completed, Centurylink Cloud will encrypt the portable data drive, set a password and ship the device back to the address noted in the request
-  * You will receive the password via a different delivery method
+If our team needs to apply encryption to an export, a password will be provided in the ticket.
+
 
 ### FAQs
 
 **Q: Will CenturyLink Cloud provide for shipping costs?**
 
-A: No, shipping costs will be the responsible of the customer. When Centurylink Cloud sends the device back, we will charge the cost of shipping to your account.
+A: No, shipping costs are the responsibility of the customer. The customer should provide prepaid return shipping label in the shipping materials.
 
 **Q: Can I provide unencrypted data?**
 
 A: No, we will not accept any portable devices that are not encrypted. We will not ship any data out of the data center that is not encrypted. 
 
+**Q: Can I use Windows 10 XTS-AES bitlocker encryption? (Windows 10 version 1511 or later)**
+
+A: No, please encrypt drive with compatible mode.
+
+**Q: Can CenturyLink Cloud provide a portable device?**
+
+A: Yes, we can provide a portable device.  Associated cost will be added as a one-time charge to your bill.  Note that this method can take 3-5 business days to procure and ship from our supplier.
+ 
 **Q: Where can I ship data?**
 
 A: Data must come from the country in which the datacenter is located. We will not ship data out of the country of origin.
@@ -84,4 +91,6 @@ A: Check out our [Data Centers Location page](//www.ctl.io/data-centers) for det
 
 **Q: What limitations of liability are imposed?**
 
-A: CenturyLink Cloud is not responsible for the loss or damage of the device, please ensure that you have a back up of your data.
+A: CenturyLink Cloud is not responsible for the loss or damage of the device, please ensure that you have a backup of your data.  Customer acknowledges that portable devices contain no malicious content, and will not damage or compromise CenturyLink Cloud equipment.
+
+
