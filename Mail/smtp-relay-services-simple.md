@@ -1,10 +1,12 @@
 {{{
   "title": "SMTP Relay Services (Simple)",
-  "date": "12-2-2014",
-  "author": "Jared Wray",
+  "date": "11-28-2016",
+  "author": "Erik Jensen",
   "attachments": [],
   "contentIsHTML": false
 }}}
+
+### IMPORTANT NOTE: The SMTP Relay Service is being End of Serviced on December 1, 2016 with an End Of Life on January 15, 2017. Please refer to our SMTP Retirement FAQ for more information. Please refer to our [SMTP Retirement FAQ](../Support/smtp-relay-deactivation-faq.md) for more information.
 
 SMTP Relay can be used to do application level email relay without the need of managing your own SMTP server/service. The current offering is prices at $0.10 per 1000 emails sent via the service and billed at the account level.</p>
 <p>You can sign up for the service easily by going to the Contol Portal &gt; Services &gt; SMTP Relay. From here you can create an SMTP relay account by doing the following:</p>
