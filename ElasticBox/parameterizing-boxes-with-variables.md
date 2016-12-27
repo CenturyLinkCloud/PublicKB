@@ -11,7 +11,7 @@ It works like this: define variables in box automation. Then refer to them in bo
 
 Boxes support eight variable types depending on the data type or usage like any programming language. They are box, binding, port, text, file, options, password, and number.
 
-In this article:
+**In this article:**
 
 * Creating variables
 * Box type
@@ -70,7 +70,7 @@ Here you have a box variable called INSTALLER that points to the Package Install
 
 You can access all the variables of the Package Installer box with this syntax:
 
-`{{ BOX_VARIABLE_NAME.VARIABLE_NAME }}`
+{{ BOX_VARIABLE_NAME.VARIABLE_NAME }}
 
 You can also override their values within the context of the parent box.
 
@@ -114,7 +114,7 @@ In this example, for a binding called bindingA, we can get the connection data f
 }
 ```
 
-To get value of a variable named connection_string, we apply this Jinja to look up the binding to the first deployed instance: `{{ bindingA[0].connection_string }}`
+To get value of a variable named connection_string, we apply this Jinja to look up the binding to the first deployed instance: {{ bindingA[0].connection_string }}
 
 As an alternative to Jinja, you can do the same thing with text expressions. For example, since CloudFormation boxes don’t support event scripts, you can use text expression variables to process binding connections.
 
@@ -154,7 +154,7 @@ A plain text variable called USERNAME is used to create a directory on the virtu
 su - {{ USERNAME }} “mkdir .ssh”
 ```
 
-Here’s another example of two CloudFormation boxes that connect over a binding using a text expression: An EC2 box binds to a security group CloudFormation box through a binding called CFBinding. To pass the binding connection string, the EC2 box has a text expression set to `{{ CFBinding.InstanceID }}`. Here, CFBinding refers to the security group CloudFormation box where InstanceId is a variable. As a result when deployed, the EC2 box launches a Linux instance in a security group using CloudFormation.
+Here’s another example of two CloudFormation boxes that connect over a binding using a text expression: An EC2 box binds to a security group CloudFormation box through a binding called CFBinding. To pass the binding connection string, the EC2 box has a text expression set to {{ CFBinding.InstanceID }}. Here, CFBinding refers to the security group CloudFormation box where InstanceId is a variable. As a result when deployed, the EC2 box launches a Linux instance in a security group using CloudFormation.
 
 ### File Type
 
@@ -233,7 +233,7 @@ echo This returns the value of ${COUNT}
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](//elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

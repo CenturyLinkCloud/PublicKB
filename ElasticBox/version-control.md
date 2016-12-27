@@ -7,7 +7,7 @@
 
 In large-scale, complex deployments where tens or hundreds of distributed applications run from a single box configuration, you need a way to manage changes to box configurations and handle those updates to running instances. Versioning and auto updates help with that.
 
-In this article:
+**In this article:**
 
 * Versioning a box
 * Version semantics
@@ -47,7 +47,7 @@ If you don’t set instances to auto-update, no worries. A visual cue on the Ins
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](//elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

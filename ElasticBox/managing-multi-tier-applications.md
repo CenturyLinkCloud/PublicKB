@@ -40,9 +40,9 @@ Here is how the binded instances show after the instance is online.
 
 The bindings information is provided in the event scripts (except the install scripts) and configuration files (via elasticbox conf). A binding is a jinja2 list which contains many information of the target instance to be used. The most commonly used information are addresses and variables.
 
-To access a variable on the box of the target instance, just use it’s variable name. For example `binding[0].varName` access to the `varName` variable of the first instance in the binding.
+To access a variable on the box of the target instance, just use it’s variable name. For example binding[0].varName access to the varName variable of the first instance in the binding.
 
-To access the addresses of the target instance, you can use `binding[1].address.private` or `binding[1].public`.
+To access the addresses of the target instance, you can use binding[1].address.private or binding[1].public.
 
 This allows you to access the private address or, if it’s not available, the public one.
 
@@ -121,7 +121,7 @@ As another example, here we launch the Node.js application specifying its bindin
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](//elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

@@ -37,7 +37,7 @@ elasticbox set <childbox_variable_name>.<variable_name> <variable_value> -box <b
 
 **Example**
 
-This event script uses the Set command to generate a dynamic string based on the password, address, and username variables. At deploy time, when the script is executed, the resulting value stored in `MONGODB_CONNECTION_STRING` is used to log in to the MongoDB instance.
+This event script uses the Set command to generate a dynamic string based on the password, address, and username variables. At deploy time, when the script is executed, the resulting value stored in MONGODB_CONNECTION_STRING is used to log in to the MongoDB instance.
 
 ```
 elasticbox set MONGODB_CONNECTION_STRING "mongodb://$user:$pass@$address.public:27017/elasticbox?safe=true"
@@ -64,7 +64,7 @@ elasticbox config -i <input_file> -o <output_file> -box <box_name> -t <template_
 
 **Example**
 
-Suppose you upload a `CHEF_DEFAULT_RB` file to the Chef box. This file has a Rails cookbook script that refers to three Chef box variables (`folder`, `RAILS_APP`, and `CLONE_URL`).
+Suppose you upload a CHEF_DEFAULT_RB file to the Chef box. This file has a Rails cookbook script that refers to three Chef box variables (folder, RAILS_APP, and CLONE_URL).
 
 Here are the file contents:
 
@@ -104,7 +104,7 @@ curl -ks ${CHEF_DEFAULT_RB} | elasticbox config -o
 cookbooks/${CHEF_COOKBOOK_NAME}/recipes/default.rb
 ```
 
-At deploy time, ElasticBox runs the Config command on the `CHEF_DEFAULT_RB` file, replaces the variables with actual deploying values, and stores the file as default.rb in the specified path on the virtual machine.
+At deploy time, ElasticBox runs the Config command on the CHEF_DEFAULT_RB file, replaces the variables with actual deploying values, and stores the file as default.rb in the specified path on the virtual machine.
 
 ### Notify Command
 
@@ -124,11 +124,11 @@ The most common use is to send a notification after executing one or several ela
 
 **Example**
 
-A common pattern is to have variables that symbolize the state of the instance and use elasticbox notify to specify that status. For example, you could have a `REPLICA_SET_READY` variable. When the MongoDB replica set is initialized you set it to true in the instance and execute elasticbox notify. All instances binding to the previous one can check the variable `REPLICA_SET_READY` and execute some configurations if the value is true. If it is not true then it can skip that configuration, and they will be reconfigured (and that code executed) by that instance when the service is ready.
+A common pattern is to have variables that symbolize the state of the instance and use elasticbox notify to specify that status. For example, you could have a REPLICA_SET_READY variable. When the MongoDB replica set is initialized you set it to true in the instance and execute elasticbox notify. All instances binding to the previous one can check the variable REPLICA_SET_READY and execute some configurations if the value is true. If it is not true then it can skip that configuration, and they will be reconfigured (and that code executed) by that instance when the service is ready.
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](//elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

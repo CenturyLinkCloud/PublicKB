@@ -31,6 +31,7 @@ Manage and perform provider actions.
 Creates a new provider account in ElasticBox and gets the status of the provider.
 
 **Normal Code**
+
 * 202 accepted
 
 **Error Codes**
@@ -59,6 +60,7 @@ ElasticBox-Release: 4.0
 | credentials | object | Required. Contains the credential object, which is either the AWS role ARN name if using ElasticBox as a SaaS or the key and secret if using ElasticBox as an appliance. |
 
 **Amazon Web Services request body**
+
 ```
 {
    "icon": "images/platform/aws.png",
@@ -80,6 +82,7 @@ ElasticBox-Release: 4.0
 | credentials | object | Required. Contains the credential object, which is either the AWS role ARN name if using ElasticBox as a SaaS or the key and secret if using ElasticBox as an appliance. |
 
 **Amazon Web Services Gov request body**
+
 ```
 {
   "icon": "images/platform/govcloud.png",
@@ -105,6 +108,7 @@ ElasticBox-Release: 4.0
 | password | string | Required. Specify the password. |
 
 **Rackspace request body**
+
 ```
 {
    "icon": "images/platform/rackspace.png",
@@ -121,6 +125,7 @@ ElasticBox-Release: 4.0
 ```
 
 **OpenStack request body**
+
 ```
 {
    "icon": "images/platform/openstack.png",
@@ -145,6 +150,7 @@ ElasticBox-Release: 4.0
 | endpoint | string | Required. Specify the vCenter server URL. |
 
 **VSphere request body**
+
 ```
 {
    "icon": "images/platform/vsphere.png",
@@ -169,6 +175,7 @@ ElasticBox-Release: 4.0
 | organization | string | Required. Organization. |
 
 **VCloud request body**
+
 ```
 {
   "icon": "images/platform/vcloud.png",
@@ -193,6 +200,7 @@ ElasticBox-Release: 4.0
 | credentials | object | Required. Specify either the refresh_token object or the key. You can get the refresh_token from Google OAuth 2.0 to allow ElasticBox to make API requests on your behalf. Or you can provide the JSON key for the project service account. |
 
 **Google Cloud request body**
+
 ```
 {
    "icon": "images/platform/google.png",
@@ -218,6 +226,7 @@ To add an Azure subscription in ElasticBox, you first have to upload the Elastic
 | subscription | string | Required. Specify the Azure subscription ID.|
 
 **Azure request body**
+
 ```
 {
    "icon": "images/platform/azure-storage.png",
@@ -239,6 +248,7 @@ To add an Azure subscription in ElasticBox, you first have to upload the Elastic
 | secret_key | string | Required. Specify the API secret for the CloudStack user account. |
 
 **CloudStack request body**
+
 ```
 {
    "icon": "images/platform/cloudstack.png",
@@ -261,6 +271,7 @@ To add an Azure subscription in ElasticBox, you first have to upload the Elastic
 | api_key | string | Required. Specify the API key for the SoftLayer user. |
 
 **SoftLayer request body**
+
 ```
 {
    "icon": "images/platform/softlayer.png",
@@ -301,6 +312,7 @@ To add an Azure subscription in ElasticBox, you first have to upload the Elastic
 | credentials | object | Returns the Amazon Web Services role ARN if using ElasticBox as a SaaS or identifies the key and secret if using ElasticBox as an appliance. |
 
 **AWS response body**
+
 ```
 {
    "updated": "2015-01-05 18:36:26.227970",
@@ -335,6 +347,7 @@ To add an Azure subscription in ElasticBox, you first have to upload the Elastic
 | identity_url | string | Returns the OpenStack identity service endpoint. |
 
 **Rackspace response example**
+
 ```
 {
   "username": "_the_username",
@@ -367,6 +380,7 @@ To add an Azure subscription in ElasticBox, you first have to upload the Elastic
 ```
 
 **Openstack response example**
+
 ```
 {
   "username": "_the_username",
@@ -407,6 +421,7 @@ To add an Azure subscription in ElasticBox, you first have to upload the Elastic
 | endpoint | string | Returns the vCenter server URL. |
 
 **VSphere response example**
+
 ```
 {
   "username": "_the_username",
@@ -446,6 +461,7 @@ To add an Azure subscription in ElasticBox, you first have to upload the Elastic
 | credentials | object | Returns either the access_token and refresh_token objects or the key. Returns a key if you provided a JSON key for the project service account. |
 
 **Google Cloud response example**
+
 ```
 {
   "updated": "2015-10-30 12:34:09.062710",
@@ -485,6 +501,7 @@ To add an Azure subscription in ElasticBox, you first have to upload the Elastic
 | subscription_id | string | Returns the Azure subscription ID that the provider account uses. |
 
 **Azure response example**
+
 ```
 {
   "updated": "2015-10-30 12:49:38.014690",
@@ -522,6 +539,7 @@ To add an Azure subscription in ElasticBox, you first have to upload the Elastic
 | secret_key | string | Returns the API secret for the CloudStack user account. |
 
 **CloudStack response example**
+
 ```
 {
   "updated": "2015-10-30 12:28:22.315749",
@@ -560,6 +578,7 @@ To add an Azure subscription in ElasticBox, you first have to upload the Elastic
 | api_key | string | Returns the API key for the SoftLayer user. |
 
 **SoftLayer response example**
+
 ```
 {
   "username": "_the_username",
@@ -8535,6 +8554,7 @@ Syncs an existing provider when you give the provider ID.
 * Not Found (404)
 
 **Request**
+
 ```
 Headers:
 
@@ -8680,7 +8700,7 @@ DELETE /services/providers/{provider_id}/images/{machine_image_id}?location=us-e
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](//elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

@@ -82,11 +82,11 @@ As soon as we add the variables, ElasticBox automatically generates an EXPOSE in
 
 ![dockercontainers5.png](../images/ElasticBox/dockercontainers5.png)
 
-Text, number, or options type variables are handled at deploy time as [Docker environment variables](//docs.docker.com/engine/reference/builder/). Use this syntax to refer to them in Dockerfiles: `{{variable_name}}`
+Text, number, or options type variables are handled at deploy time as [Docker environment variables](//docs.docker.com/engine/reference/builder/). Use this syntax to refer to them in Dockerfiles: {{variable_name}}
 
-A file variable is handy to run additional commands using RUN or trigger an executable file using CMD. But first you must copy it from the ElasticBox remote URL to the container’s filesystem at the path you specify using [ADD](//docs.docker.com/engine/reference/builder/) in the Dockerfile: `ADD {{file_variable_name}} destination_path_in_container`
+A file variable is handy to run additional commands using RUN or trigger an executable file using CMD. But first you must copy it from the ElasticBox remote URL to the container’s filesystem at the path you specify using [ADD](//docs.docker.com/engine/reference/builder/) in the Dockerfile: ADD {{file_variable_name}} destination_path_in_container
 
-[Bindings](../ElasticBox/parameterizing-boxes-with-variables.md) pass connections strings or deployment values to connect with other Docker containers or boxes. To bind to another Docker container or box, create a binding and pass binding references via text expression variables with this syntax: `{{ binding_name.variable_name }}`
+[Bindings](../ElasticBox/parameterizing-boxes-with-variables.md) pass connections strings or deployment values to connect with other Docker containers or boxes. To bind to another Docker container or box, create a binding and pass binding references via text expression variables with this syntax: {{ binding_name.variable_name }}
 
 Here we connect to a box that deploys an S3 bucket using a binding. As Dockerfiles don’t allow scripts, we use a text expression to pass the binding reference.
 
@@ -128,7 +128,7 @@ Here’s what happens when you reinstall or reconfigure:
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](//elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

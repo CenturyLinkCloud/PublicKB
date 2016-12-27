@@ -7,13 +7,13 @@
 
 The ElasticBox CloudFormation box type runs on the [AWS CloudFormation service](//docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
-ElasticBox works with the AWS CloudFormation API to provision the stack in your AWS account. So why use ElasticBox when you can launch CloudFormation templates directly in Amazon? Here’s why.
+ElasticBox works with the AWS CloudFormation API to provision the stack in your AWS account. So why use ElasticBox when you can launch CloudFormation templates directly in Amazon? [Here’s why](//www.ctl.io/knowledge-base/elasticbox/#1).
 
 ElasticBox supports all CloudFormation templates available from AWS. Leverage services such as EC2, Elastic Block Store, Simple Notification Service, Elastic Load Balancing and Auto Scaling, RDS, S3, DynamoDB, Elastic IPs, and much more.
 
 [AWS RDS services](../ElasticBox/using-your-aws-account.md) such as MySQL, MS SQL, PostgreSQL, Oracle, and [Memcached](../ElasticBox/using-your-aws-account.md), [S3](../ElasticBox/using-your-aws-account.md), [DynamoDB](../ElasticBox/using-your-aws-account.md) are readymade CloudFormation templates. To use these services, configure a CloudFormation box of the type and select an AWS account registered in ElasticBox.
 
-In this article:
+**In this article:**
 
 * Create a CloudFormation Template and Launch a Stack
 * Update a CloudFormation stack in real-time
@@ -27,7 +27,7 @@ We use a sample Wordpress template to show how to create and launch a CloudForma
 
 **Step 1. Create the template**
 
-1. Log in to ElasticBox.
+1. [Log in](//elasticbox.com/login) to ElasticBox.
 
 2. Click **Boxes > New > CloudFormation > CloudFormation Template**. Give the box a meaningful name to identify it in the box service catalog. Specify other [metadata](../ElasticBox/boxes.md).
 
@@ -96,7 +96,7 @@ Once live, you can continue to make changes to your CloudFormation template from
 
 **Steps**
 
-1. Log in to ElasticBox.
+1. [Log in](//elasticbox.com/login) to ElasticBox.
 
 2. Click Instances and select the CloudFormation instance you want to update. In this example, we’ll select the WordPress instance launched earlier.
 
@@ -132,17 +132,17 @@ To illustrate, we create a second CloudFormation box to scale the WordPress blog
 
 3. In the WordPress box, specify a connection string to activate the binding.
 
-    Under Variables, click **New** and select the text expression variable type. Enter this connection string: `{{ autoscalebinding.address }}`
+    Under Variables, click **New** and select the text expression variable type. Enter this connection string: {{ autoscalebinding.address }}
 
     ![cloudformationboxes13.png](../images/ElasticBox/cloudformationboxes13.png)
 
-	The expression can contain any string value or variables from templates. It can also contain system variables like instance, username, addresses. In general, follow this syntax: `{{ binding_name.variable_name }}`
+	The expression can contain any string value or variables from templates. It can also contain system variables like instance, username, addresses. In general, follow this syntax: {{ binding_name.variable_name }}
 
 When you next launch the WordPress box, its instance automatically connects to an Autoscaling instance over the binding.
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](//elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

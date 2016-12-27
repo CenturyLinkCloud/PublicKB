@@ -5,7 +5,7 @@
 "contentIsHTML": false
 }}}
 
-In this article:
+**In this article:**
 
 * Box events
 * Event types
@@ -17,7 +17,7 @@ In this article:
 
 The lifecycle of a service or application is managed virtually by box events like install, configure, start, stop, and dispose. Each event corresponds to its event script type on the box. ElasticBox supports writing event scripts in all languages supported by the base Linux and Windows base images. These include Bash, PowerShell, Salt, Ansible, Chef, and Puppet.
 
-The ElasticBox agent executes and stores the output of the event scripts in a default directory in the virtual machine instance: `/var/elasticbox/<instance_id>` where `instance_id` is the ID of the instance. You can refer to this directory as `${folder}` in the event scripts to move the output of the executed scripts elsewhere.
+The ElasticBox agent executes and stores the output of the event scripts in a default directory in the virtual machine instance: /var/elasticbox/<instance_id> where instance_id is the ID of the instance. You can refer to this directory as ${folder} in the event scripts to move the output of the executed scripts elsewhere.
 
 ### Event Types
 
@@ -49,7 +49,7 @@ ElasticBox executes events in the order they’re displayed in the box events se
 
 ![installconfigureandotherevents1.png](../images/ElasticBox/installconfigureandotherevents1.png)
 
-See how each event has a pre-event type. The install has `pre_install`, configure has `pre_configure`, and so on. Pre-events fulfill certain conditions before performing the next step. For example, you may want use the pre-event to install dependencies or download files or create folders and directories. Pre-events always run before child box events.
+See how each event has a pre-event type. The install has pre_install, configure has pre_configure, and so on. Pre-events fulfill certain conditions before performing the next step. For example, you may want use the pre-event to install dependencies or download files or create folders and directories. Pre-events always run before child box events.
 
 ### Event Error Codes
 
@@ -97,6 +97,7 @@ lockfile=/var/lock/subsys/nginx
 On Windows machines, we run commands using the PowerShell File parameter.
 
 * When the File parameter encounters fatal errors, it stops running a command but doesn’t return an exit error code.
+
 * When it encounters non-fatal errors, it continues on to the next operation without returning an error code by default.
 
 To work around these limitations and capture errors in the instance, we suggest returning event codes for fatal, non-fatal errors and exceptions:
@@ -117,7 +118,7 @@ trap {
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](//elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

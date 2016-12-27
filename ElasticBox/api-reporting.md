@@ -19,19 +19,23 @@ Get the cost report of your organization.
 Gets the report of the amount spent per instance and day of a period of time.
 
 **Normal Response Codes**
+
 * 200
 
 **Common Error Response Codes**
+
 * Wrong date format (400)
 * User not authorized to get the reports (403)
 * Organization not found (404)
 
 **URL parameters**
+
 * organization: name of the organization
 * start: day of the start date in format ‘YYYY-MM-DD’
 * end: day of the end date in format ‘YYYY-MM-DD’
 
 **Request Headers**
+
 ```
 Elasticbox-Token: your_authentication_token
 ElasticBox-Release: 4.0
@@ -43,6 +47,7 @@ ElasticBox-Release: 4.0
 | Cost |  Array | List of cost per instance. Contains the following properties:<ul><li>cost: Array of ints. Each number in the list represents the amount of fraction of dollar cents spent that day in the specific instance.</li><li>service: Service associated with the instance, contains among other properties:</li><ul><li>state_history: List of changes in the state of the instance. Each state contains the following properties:</li><ul><li>started: Required. String that represents the date in UTC when it changed its state.</li><li>state: Required. “up” or “down”. Tells whether the instance was up or down.</li><li>completed: String that represents the date in UTC when it finished the current state.</li></ul></ul></ul> |
 
 **Response Body**
+
 ```
 {
    "cost":[
@@ -124,25 +129,30 @@ ElasticBox-Release: 4.0
 Gets the report of the amount spent per instance and day of a period of time in CSV format.
 
 **Normal Response Codes**
+
 * 200
 
 **Common Error Response Codes**
+
 * Wrong date format (400)
 * User not authorized to get the reports (403)
 * Organization not found (404)
 
 **URL Parameters**
+
 * Organization_name: name of the organization
 * start: day of the start date in format ‘YYYY-MM-DD’
 * end: day of the end date in format ‘YYYY-MM-DD’
 
 **Request Headers**
+
 ```
 Elasticbox-Token: your_authentication_token
 ElasticBox-Release: 4.0
 ```
 
 **Response Body**
+
 ```
 SERVICE_ID,DAY (in Date Range),SIZE,REGION,PROVIDER_TYPE,PROVIDER_ID,PROFILE_SCHEMA,CREATED (UTC),TYPE,COST (cents of $),EVENT_TYPE,INSTANCES,SIZE.CPU,SIZE.MEMORY,SIZE.DISK,CPU UNIT,MEMORY UNIT,DISK UNIT,ALLOCATED.CPU (Max.),ALLOCATED.MEMORY (Max.),ALLOCATED.DISK (Max.)
   eb-o125v,2015-10-18,m1.small,us-east-1,Amazon Web Services,5908ee9b-0c0a-4af6-8eef-2dc9f95d033a,http://elasticbox.net/schemas/aws/ec2/profile,2015-11-12 16:29:31.993282,Linux Compute,0
@@ -151,7 +161,7 @@ SERVICE_ID,DAY (in Date Range),SIZE,REGION,PROVIDER_TYPE,PROVIDER_ID,PROFILE_SCH
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](//elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
