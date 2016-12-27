@@ -8,9 +8,9 @@
 
 ### Workspaces & Sharing
 In this article:
-* [Overview](https://www.ctl.io/knowledge-base/ElasticBox/workspaces-and-collaboration/#overview)
-* [Creating and Adding Members to Workspaces](https://www.ctl.io/knowledge-base/ElasticBox/workspaces-and-collaboration/#creating-and-adding-members-to-workspaces)
-* [Sharing Boxes, Instances, and Providers](https://www.ctl.io/knowledge-base/ElasticBox/workspaces-and-collaboration/#sharing-boxes-instances-and-providers)
+* [Overview](https://www.ctl.io/knowledge-base/ElasticBox/workspaces-and-collaboration.md/#overview)
+* [Creating and Adding Members to Workspaces](https://www.ctl.io/knowledge-base/ElasticBox/workspaces-and-collaboration.md/#creating-and-adding-members-to-workspaces)
+* [Sharing Boxes, Instances, and Providers](https://www.ctl.io/knowledge-base/ElasticBox/workspaces-and-collaboration.md/#sharing-boxes-instances-and-providers)
 
 ### Overview
 In ElasticBox, boxes let you deliver applications predictably. Sharing enables others to reuse your box configuration or work collaboratively to build better applications.

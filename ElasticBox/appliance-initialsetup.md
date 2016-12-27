@@ -10,13 +10,13 @@
 Once you install the appliance, set it up for others in your organization to use. At the least, assign a friendly hostname or vanity URL to point users to ElasticBox. Optionally, configure other settings such as add SSH keys to access the appliance, sync NTP system time, enable outbound email notifications, or switch to a new device to store appliance and ElasticBox data.
 
 **In this article:**
-* [Initial ElasticBox Setup](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup/#initial-elasticbox-setup)
-* [Changing the ElasticBox Hostname](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup/#changing-the-elasticbox-hostname)
-* [Changing the Appliance Admin Account Password](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup/#changing-the-appliance-admin-account-password)
-* [Adding your SSH Key (optional)](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup/#adding-your-ssh-key-optional)
-* [Changing NTP Time Zone (optional)](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup/#changing-ntp-time-zone-optional)
-* [Enabling SMTP Outbound Email (optional)](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup/#enabling-smtp-outbound-email-optional)
-* [Switching Appliance Device Root Storage](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup/#switching-appliance-device-root-storage)
+* [Initial ElasticBox Setup](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#initial-elasticbox-setup)
+* [Changing the ElasticBox Hostname](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#changing-the-elasticbox-hostname)
+* [Changing the Appliance Admin Account Password](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#changing-the-appliance-admin-account-password)
+* [Adding your SSH Key (optional)](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#adding-your-ssh-key-optional)
+* [Changing NTP Time Zone (optional)](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#changing-ntp-time-zone-optional)
+* [Enabling SMTP Outbound Email (optional)](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#enabling-smtp-outbound-email-optional)
+* [Switching Appliance Device Root Storage](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#switching-appliance-device-root-storage)
 
 ### Initial ElasticBox Setup
 
@@ -35,12 +35,12 @@ Once you install the appliance, set it up for others in your organization to use
    From the menu drop-down at the top right, click **Setup Console**. From this page, you can manage settings for the appliance.
    ![appliance-setup3.png](../images/ElasticBox/appliance-setup3.png)
 
-   * [Change the hostname](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup/#change-the-hostname) to a friendly URL.
-   * Optionally, [change the default admin account password](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup/#change-the-default-admin-account-password).
-   * Optionally, add [SSH keys](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup/#ssh-keys) to manage access to the appliance virtual machine.
-   * Optionally, [change the NTP time zone](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup/#change-the-ntp-time-zone), which affects the timestamp in the appliance logs.
-   * Optionally, [enable outbound email](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup/#enable-outbound-email) for notifications.
-   * Optionally, [switch the appliance device storage](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup/#switch-the-appliance-device-storage) to increase storage or processing speed.
+   * [Change the hostname](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#change-the-hostname) to a friendly URL.
+   * Optionally, [change the default admin account password](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#change-the-default-admin-account-password).
+   * Optionally, add [SSH keys](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#ssh-keys) to manage access to the appliance virtual machine.
+   * Optionally, [change the NTP time zone](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#change-the-ntp-time-zone), which affects the timestamp in the appliance logs.
+   * Optionally, [enable outbound email](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#enable-outbound-email) for notifications.
+   * Optionally, [switch the appliance device storage](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#switch-the-appliance-device-storage) to increase storage or processing speed.
 
 4. Create a new admin account for your enterprise
    Follow this step if using the ElasticBox Enterprise Edition.
