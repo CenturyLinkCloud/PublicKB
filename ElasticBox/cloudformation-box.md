@@ -63,12 +63,16 @@ We use a sample Wordpress template to show how to create and launch a CloudForma
 	 Variables in CloudFormation boxes:
 
     * The template accepts only String, Number, or CommaDelimitedList types. So any variables you add to the box are converted to one of these types. Text, file, password, URL, and email variables are treated as string parameters. Number and port variables are treated as number parameters.
+
     * Bindings have a special use and are explained later in this walkthrough.
+
     * Variables imported from a template are always required at deploy time even if you don’t flag them as such in the box. Since they must contain values at launch time, you can set a default value when creating them or supply them at deploy time.
+
     * At this time, [box type variables](../ElasticBox/parameterizing-boxes-with-variables.md) are not supported.
+
     * The file variable is a useful way to include a script that you want to execute in your stack. When you add a file, ElasticBox stores it on a secure server and declares the file variable as a parameter with a URL value in the parameters section of the template. To execute the file, you can add a script in the user data section of the template. Or depending on your resource type, reference it from the resource properties section. One example for using a file is to store it in the S3 bucket that you launch as part of the stack.
 
-    **Note:** As you’re authoring, it’s important to check that the template is valid. While ElasticBox validates the correctness of the JSON format and the template syntax correctness, we can’t know whether resources specified are available in your AWS account or whether property values of a resource are valid. For that level of checking, it’s best to test launch the CloudFormation box instance from ElasticBox and refine the template in real-time.
+**Note:** As you’re authoring, it’s important to check that the template is valid. While ElasticBox validates the correctness of the JSON format and the template syntax correctness, we can’t know whether resources specified are available in your AWS account or whether property values of a resource are valid. For that level of checking, it’s best to test launch the CloudFormation box instance from ElasticBox and refine the template in real-time.
 
 **Step 3. Launch the CloudFormation stack**
 
