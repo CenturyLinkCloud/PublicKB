@@ -1,6 +1,6 @@
 {{{
   "title": "SafeHaven 4.0.0 Release Notes",
-  "date": "22-12-2016",
+  "date": "12-28-2016",
   "author": "Shi Jin",
   "attachments": [],
   "contentIsHTML": false
