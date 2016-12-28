@@ -29,13 +29,13 @@ You need a CloudStack environment and access to the management console.
 ![cloudstack-log-in-console-1.png](../images/ElasticBox/cloudstack-log-in-console-1.png)
 
 2. Click **Accounts** > **<your user account>**.
-![EBcloudstack-selectyouraccount-underaccounts-2.png](../images/ElasticBox/EBcloudstack-selectyouraccount-underaccounts-2.png)
+![cloudstack-selectyouraccount-underaccounts-2.png](../images/ElasticBox/cloudstack-selectyouraccount-underaccounts-2.png)
 
 3. Click **View Users** and select your user account.
-![EBcloudstack-clickviewusers-credentials.png-3.png](../images/ElasticBox/EBcloudstack-clickviewusers-credentials.png-3.png)
+![cloudstack-clickviewusers-credentials.png-3.png](../images/ElasticBox/cloudstack-clickviewusers-credentials.png-3.png)
 
 4. If available, copy the existing API and secret keys. Otherwise, click the generate keys icon to create them.
-![EBcloudstack-copyorgenerateapiandsecretkeys-credentials-4.png](../images/ElasticBox/EBcloudstack-copyorgenerateapiandsecretkeys-credentials-4.png)
+![cloudstack-copyorgenerateapiandsecretkeys-credentials-4.png](../images/ElasticBox/cloudstack-copyorgenerateapiandsecretkeys-credentials-4.png)
 
 ### Registering CloudStack in ElasticBox
 
@@ -44,7 +44,7 @@ You need a CloudStack environment and access to the management console.
 2. Click **Providers** > **New Provider.**
 3. Select **CloudStack.**
 4. Enter your CloudStack user API credentials.
-![EBcloudstack-enteruserapicredentials-register-elasticbox-5.png](../images/ElasticBox/EBcloudstack-enteruserapicredentials-register-elasticbox-5.png)
+![cloudstack-enteruserapicredentials-register-elasticbox-5.png](../images/ElasticBox/cloudstack-enteruserapicredentials-register-elasticbox-5.png)
 
 * **URL.** API endpoint to the CloudStack management server that typically has this format, **http://10.0.128.21:8080/client/api.**
 * **API Key.** Part of the user [API credentials](../ElasticBox/using-cloudstack.md) generated for the user account in the CloudStack management console.
