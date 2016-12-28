@@ -92,7 +92,7 @@ In case of multi-tier applications deployed to different roles, follow these tip
 
 * To allow traffic to web role instances, we automatically open HTTP port 80 for both public (input) and private (internal) endpoints. We also open any other ports that you define on the box.
 * To allow traffic to worker role instances, you have to first define port variables on the box, which we open for both public (input) and private (internal) endpoints.
-* To allow web and worker role instances to communicate with each other, make sure they’re deployed to the same availability set. Configure [bindings](../ElasticBox/managing-multi-tier-applications.md) to connect their boxes. Then print {{ bindingname.address }}:{{ bindingname.port }} in a configure event script to connect by querying the instance IP address and port.
+* To allow web and worker role instances to communicate with each other, make sure they’re deployed to the same availability set. Configure [bindings](../ElasticBox/managing-multi-tier-applications.md) to connect their boxes. Then print ``{{ bindingname.address }}:{{ bindingname.port }}`` in a configure event script to connect by querying the instance IP address and port.
 
 ![azure-webworkerroles-depprofile-7.png](../images/ElasticBox/azure-webworkerroles-depprofile-7.png)
 
@@ -100,12 +100,12 @@ In case of multi-tier applications deployed to different roles, follow these tip
 
 **Deployment**
 
-| **Option**  |  **Description** |
+| **Option**  | **Description** |
 |----------|:-----|
 | Provider | Select the Azure provider you want to use to deploy. |
 
 **Resource**
-| **Option**  |  **Description** |
+| **Option**  | **Description** |
 |----------|:-----|
 | Role | Select Web Role or Worker Role. See [Virtual Machine Role](../ElasticBox/using-azure.md) to deploy to that instead. |
 | OS Family | Select the guest OS to run in the worker role instance. Note that Windows 2008 images are not synced at this time because the ElasticBox agent doesn’t work on them. |
@@ -117,7 +117,7 @@ In case of multi-tier applications deployed to different roles, follow these tip
 
 **Network**
 
-| **Option**  |  **Description** |
+| **Option**  | **Description** |
 |----------|:-----|
 | Location | Select a virtual network, region, or affinity group to physically place the instance.<li>**Virtual Networks**. To let the instance connect to services in Azure, select a virtual private network that you previously created in your subscription. See the Azure help on creating virtual networks.</li><li>**Regions**. Select a region to place the instance.</li><li>**Affinity Groups**. Select an affinity group, if you created one to keep the instance close to other regional resources in the datacenter.</li> |
 
@@ -148,7 +148,7 @@ To deploy in ElasticBox, simply select your box based on Linux or Windows, and [
 
 **Deployment**
 
-| **Option**  | Windows or Linux |  **Description** |
+| **Option**  | Windows or Linux | **Description** |
 |----------|------|:-----|
 | Provider | Both |	Select your Azure subscription or one that’s shared with you in ElasticBox. |
 
@@ -165,7 +165,7 @@ To deploy in ElasticBox, simply select your box based on Linux or Windows, and [
 
 **Network**
 
-| **Option**  | Windows or Linux |  **Description** |
+| **Option**  | Windows or Linux | **Description** |
 |----------|------|:-----|
 | Location | Both | Select a virtual network, region, or affinity group to physically place the instance.<li>**Virtual Networks.** To let the instance connect to services in Azure, select a virtual private network that you previously created in your subscription. See the Azure help on [creating virtual networks](https://msdn.microsoft.com/library/azure/jj156074.aspx).</li><li>**Regions.** Select a region to place the instance.</li><li>**Affinity Groups.** Select an affinity group, if you created one to keep the instance close to other regional resources in the datacenter.</li> |
 | Availability Set | Both | Select Automatic to let Azure create an availability set for fault tolerance. This protects the virtual machine against single points of failure in the same cloud service and region. For more information, see [Manage the Availability of Virtual Machines](https://azure.microsoft.com/en-us/documentation/articles/manage-availability-virtual-machines/). |
@@ -230,13 +230,13 @@ Provide these variable values before you deploy a SQL Database to Azure.
 
 **Network**
 
-| **Option**  |  **Description** |
+| **Option**  | **Description** |
 |----------|:-----|
 | Location | Select the region where you want the database instance to deploy. |
 
 **Allowed IP Addresses**
 
-| **Option**  |  **Description** |
+| **Option**  | **Description** |
 |----------|:-----|
 | Subnet | Enter the IP address ranges in the CIDR format to form virtual subnets that firewall and allow only machines in those IP address ranges to connect to the SQL server. |
 
