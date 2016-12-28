@@ -48,7 +48,7 @@ You need a CloudStack environment and access to the management console.
 
 * **URL.** API endpoint to the CloudStack management server that typically has this format, **http://10.0.128.21:8080/client/api.**
 * **API Key.** Part of the user [API credentials](../ElasticBox/using-cloudstack.md) generated for the user account in the CloudStack management console.
-* **Secret Key.** Part of the user [API credentials]../ElasticBox/using-cloudstack.md) generated for the user account in the CloudStack management console.
+* **Secret Key.** Part of the user [API credentials] (../ElasticBox/using-cloudstack.md) generated for the user account in the CloudStack management console.
 5. Click **Save.**
 
 ### Bootstrapping CloudStack Templates
@@ -67,9 +67,9 @@ In order for ElasticBox to configure, deploy, and manage box configurations in C
 
 **Steps**
 1. Log in to the Windows virtual machine template using remote desktop protocol (RDP).
-2. [Download the script from this URL](//elasticbox.com/agent/windows/cloudstack/template_customization_script.ps1).
+2. [Download the script from this URL](https://elasticbox.com/agent/windows/cloudstack/template_customization_script.ps1).
 3. Right-click the script file and click **Run PowerShell**.
-**Note:** For information on creating custom templates, see the [Apache CloudStack help](//docs.cloudstack.apache.org/projects/cloudstack-administration/en/latest/templates.html#exporting-templates).
+**Note:** For information on creating custom templates, see the [Apache CloudStack help](https://docs.cloudstack.apache.org/projects/cloudstack-administration/en/latest/templates.html#exporting-templates).
 
 ### Deploying in CloudStack
 
