@@ -70,7 +70,7 @@ Here you have a box variable called INSTALLER that points to the Package Install
 
 You can access all the variables of the Package Installer box with this syntax:
 
-{{ BOX_VARIABLE_NAME.VARIABLE_NAME }}
+`\\{{ BOX_VARIABLE_NAME.VARIABLE_NAME }}`
 
 You can also override their values within the context of the parent box.
 
@@ -78,7 +78,7 @@ For example, to access the UPGRADE_ON_INSTALL variable in the Package Installer 
 
 ```
 #!/bin/bash
-if [[{{ INSTALLER.UPGRADE_ON_INSTALL }} = “false”]] then
+if [[\{{ INSTALLER.UPGRADE_ON_INSTALL }} = “false”]] then
 echo “It’s false”
 fi
 ```
@@ -108,13 +108,13 @@ Apply Jinja templating to binding variables in the box configure script to get i
 In this example, for a binding called bindingA, we can get the connection data for all instances that bindingA points to with this Jinja reference:
 
 ```
-{% for binding in bindingA %}
-        server {{ binding.address.private or binding.address.public }}:{{ binding.http or binding.https or fallback_binding_port }};
-{% endfor %}
+\{% for binding in bindingA %}
+        server \{{ binding.address.private or binding.address.public }}:\{{ binding.http or binding.https or fallback_binding_port }};
+\{% endfor %}
 }
 ```
 
-To get value of a variable named connection_string, we apply this Jinja to look up the binding to the first deployed instance: {{ bindingA[0].connection_string }}
+To get value of a variable named connection_string, we apply this Jinja to look up the binding to the first deployed instance: `\\{{ bindingA[0].connection_string }}`
 
 As an alternative to Jinja, you can do the same thing with text expressions. For example, since CloudFormation boxes don’t support event scripts, you can use text expression variables to process binding connections.
 
@@ -141,9 +141,9 @@ More on text expressions:
 * Text expressions save you the trouble of storing and passing strings in event scripts. They let you manage box configuration changes in one place instead of in several scripts.
 * CloudFormation templates don’t allow event scripts. So when binding from CloudFormation boxes, use text expressions to store binding variable references.
 * To refer to variables, follow this Jinja syntax. You can traverse any number of child boxes.
-  * Parent box variables: {{ variable_name }}
-  * Child box variables one level deep: {{ child_box.variable_name }}
-  * Child box variables two levels deep: {{ child_box_1.child_box_2.variable_name }}
+  * Parent box variables: `\\{{ variable_name }}`
+  * Child box variables one level deep: `\\{{ child_box.variable_name }}`
+  * Child box variables two levels deep: `\\{{ child_box_1.child_box_2.variable_name }}`
 
 **Examples**
 
@@ -151,10 +151,10 @@ A plain text variable called USERNAME is used to create a directory on the virtu
 
 ```
 #!/bin/bash
-su - {{ USERNAME }} “mkdir .ssh”
+su - \{{ USERNAME }} “mkdir .ssh”
 ```
 
-Here’s another example of two CloudFormation boxes that connect over a binding using a text expression: An EC2 box binds to a security group CloudFormation box through a binding called CFBinding. To pass the binding connection string, the EC2 box has a text expression set to {{ CFBinding.InstanceID }}. Here, CFBinding refers to the security group CloudFormation box where InstanceId is a variable. As a result when deployed, the EC2 box launches a Linux instance in a security group using CloudFormation.
+Here’s another example of two CloudFormation boxes that connect over a binding using a text expression: An EC2 box binds to a security group CloudFormation box through a binding called CFBinding. To pass the binding connection string, the EC2 box has a text expression set to `\\{{ CFBinding.InstanceID }}`. Here, CFBinding refers to the security group CloudFormation box where InstanceId is a variable. As a result when deployed, the EC2 box launches a Linux instance in a security group using CloudFormation.
 
 ### File Type
 
@@ -176,14 +176,14 @@ To access this file from an event script on the box, use a command like cURL or 
 
 ```
 #!/bin/bash
-curl -ks {{ CONFIG_PARAMS }} -o
+curl -ks \{{ CONFIG_PARAMS }} -o
 ```
 
 Since the file refers to variables in the box, pass the file through the ElasticBox Config command from an event script as shown. ElasticBox replaces these variables with dynamic values when deploying the box:
 
 ```
 #!/bin/bash
-curl -ks {{ CONFIG_PARAMS }} | elasticbox config -o /tmp/configfile.cf
+curl -ks \{{ CONFIG_PARAMS }} | elasticbox config -o /tmp/configfile.cf
 ```
 
 ### Options Type
@@ -198,7 +198,7 @@ Here’s a variable called TRUE_OR_FALSE with two possible values, true and fals
 
 ```
 #!/bin/bash
-if [[ “{{ TRUE_OR_FALSE }}” = “true” ]] then
+if [[ “\{{ TRUE_OR_FALSE }}” = “true” ]] then
 echo “the value is true”
 fi
 ```
@@ -214,7 +214,7 @@ Use it to assign a sensitive string value that’s hidden by the ElasticBox inte
 This script returns the value of a password variable.
 
 ```
-echo This returns the value of {{ DB_PASSWORD }}
+echo This returns the value of \{{ DB_PASSWORD }}
 ```
 
 ### Number Type
@@ -228,7 +228,7 @@ Use it to store integer values and access them in event scripts just like text v
 This script returns the value of the number variable.
 
 ```
-echo This returns the value of ${COUNT}
+echo This returns the value of $\{COUNT}
 ```
 
 ### Contacting ElasticBox Support
