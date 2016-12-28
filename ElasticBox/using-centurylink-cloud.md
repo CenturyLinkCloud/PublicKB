@@ -45,9 +45,9 @@ Note a couple of things about instances you deploy on CenturyLink Cloud through 
 
 | **Option**  |  **Description** |
 |----------|:-----|
-| Datacenter |	Select a location to place the instance, for example, UC1. |
+| Datacenter | Select a location to place the instance, for example, UC1. |
 | Group |	Select placement group for the new instance. |
-| Template |	Select from a list of CenturyLink Cloud Linux or Windows images. Images are specific to the box service type, that is, Linux or Windows. |
+| Template | Select from a list of CenturyLink Cloud Linux or Windows images. Images are specific to the box service type, that is, Linux or Windows. |
 | Managed |	Allow CenturyLink manage this server. |
 | Instances | Specify the number of instances to provision. |
 
@@ -61,8 +61,8 @@ Note a couple of things about instances you deploy on CenturyLink Cloud through 
 **Compute**
 | **Option**  |  **Description** |
 |----------|:-----|
-| CPUs |	Select virtual CPUs for the instance. You can get up to 16 cores. |
-| Memory |	Allocate RAM for the instance. You can get up to 128 GB. |
+| CPUs | Select virtual CPUs for the instance. You can get up to 16 cores. |
+| Memory | Allocate RAM for the instance. You can get up to 128 GB. |
 
 **Disks**
 
