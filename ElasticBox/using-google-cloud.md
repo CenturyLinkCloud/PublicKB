@@ -16,6 +16,7 @@ To deploy, create a deployment profile in ElasticBox where you select your Googl
 Based on the settings, we work with the Google Compute Engine APIs to launch your applications in the default or custom network. We provision instances per your network firewall rules and routes, create ephemeral IP addresses, and persistent root disk resources. We support Compute Engine services for all regions and availability zones with ready-made or custom images from your Google account.
 
 **In this article:**
+
 * [Connecting your Google Cloud account](../ElasticBox/using-your-google-cloud-account.md)
 * [Deploying in Google Cloud](../ElasticBox/using-your-google-cloud-account.md)
 
@@ -28,6 +29,7 @@ Connect your Google account in ElasticBox in a couple of steps.
 Associate your Google account in Google Cloud by creating a project, enabling billing, and turning on the Google Compute Engine API. If you’ve already done this, skip to [step 2.](../ElasticBox/using-your-google-cloud-account.md)
 
 **Steps**
+
 1. Sign in to [Google developers console](https://console.developers.google.com/) with your google account.
 2. Create a project. Click **Create Project** and give a meaningful name and ID. Copy the project ID, which you’ll shortly need to share in ElasticBox.
 ![googlecloud-createproject-1.png](../images/ElasticBox/googlecloud-createproject-1.png)
@@ -41,6 +43,7 @@ Associate your Google account in Google Cloud by creating a project, enabling bi
 ### Step 2. Connect the Account in ElasticBox
 
 **Steps**
+
 1. Sign in to [ElasticBox](//www.elasticbox.com/login).
 2. Click **Providers** > **Add Provider.**
 3. In the dialog, select **Google Compute**.
@@ -65,6 +68,7 @@ The [deployment policy ](../ElasticBox/deploymentpolicy-box.md)for Google Cloud 
 | Provider | This shows the name or GUID of the Google Cloud provider account in ElasticBox. If you don’t have access to the provider account, you see the GUID. |
 
 **Resource**
+
 ![googlecloud-resource-deployment-options-6.png](../images/ElasticBox/googlecloud-resource-deployment-options-6.png)
 
 | **Deployment Option**  |  **Description** |
@@ -75,6 +79,7 @@ The [deployment policy ](../ElasticBox/deploymentpolicy-box.md)for Google Cloud 
 | Instances |	Select the number of instances to provision. Multiple instances are launched within the same selected network and firewall. |
 
 **Network**
+
 ![googlecloud-deployment-options-network-7.png](../images/ElasticBox/googlecloud-deployment-options-network-7.png)
 
 | **Deployment Option**  |  **Description** |
@@ -83,11 +88,11 @@ The [deployment policy ](../ElasticBox/deploymentpolicy-box.md)for Google Cloud 
 | Tags	| Specify tags to control how traffic is handled for the instance. Tags identify the network resources applied to the instance, such as firewall rules and routes. For example, when you select a firewall rule in the deployment profile, its target tag is automatically added to this field. Apart from tags related to firewalls and routes, you can tag the instance with other meaningful labels by simply typing them here Remember that these are different from [metadata tags](../ElasticBox/resource-tags.md) that help you track ElasticBox resources consumed by an instance. |
 | Firewall Rules | Select the firewall rules to apply. Listed here are the default network firewall rules that allow http, https traffic to the network, its default routes, which specify how to reach the Internet and other instances internally are automatically applied. A firewall rule specifies the IP address range, ports, and protocols through which traffic is allowed to and from the instance. The rule is applied to the instance via tags. |
 | Routes | Select routes that dictate how packets of data leaving the instance should reach the destination. If you selected the default instance along with any custom firewall rules you created for the project in Google Cloud. Listed here are only the custom routes you configured for the network through Google Cloud. When you select them, their associated tag is added to the tag field and then applied to the instance at deploy time. |
-| Ephemeral IP | Select to assign an external IP address that traffic outside of the network use to communicate with the instance. An ephemeral IP address is assigned to the instance until the instance is terminated.
-If you leave the option unselected, an external IP address is not assigned to the virtual machine. As a result, outside traffic will not be able to communicate with the instance. For more information, see [Instances and Networks](https://developers.google.com/compute/docs/instances-and-network). |
+| Ephemeral IP | Select to assign an external IP address that traffic outside of the network use to communicate with the instance. An ephemeral IP address is assigned to the instance until the instance is terminated. If you leave the option unselected, an external IP address is not assigned to the virtual machine. As a result, outside traffic will not be able to communicate with the instance. For more information, see [Instances and Networks](https://developers.google.com/compute/docs/instances-and-network). |
 | IP Forwarding	| By default, Google Cloud checks that packets routed from the instance match source and destination IP addresses. If you don’t want Google to check this, deselect the option. To learn more, see [Networking and Firewalls](https://developers.google.com/compute/docs/networking#canipforward). |
 
 **Disks**
+
 ![googlecloud-deployment-options-disks-8.png](../images/ElasticBox/googlecloud-deployment-options-disks-8.png)
 Boost primary storage for the virtual machine by adding standard persistent root disk resources. They provide bulk storage or sequential I/O with large block sizes.
 
