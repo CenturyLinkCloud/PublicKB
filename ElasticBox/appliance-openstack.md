@@ -7,12 +7,12 @@
 }}}
 
 ### Installing the Virtual Appliance in OpenStack
-ElasticBox can run as a virtual appliance in your OpenStack private cloud in Grizzly or Havana. Here are the requirements, high-level steps, and a [video](https://www.ctl.io/knowledge-base/ElasticBox/appliance-openstack/#video) that shows how to install the appliance.
+ElasticBox can run as a virtual appliance in your OpenStack private cloud in Grizzly or Havana. Here are the requirements, high-level steps, and a [video](https://www.ctl.io/knowledge-base/ElasticBox/appliance-openstack.md/#video) that shows how to install the appliance.
 
 **In this article:**
-* [OpenStack Requirements](https://www.ctl.io/knowledge-base/ElasticBox/appliance-openstack/#openstack-requirements)
-* [Installing the Appliance in OpenStack](https://www.ctl.io/knowledge-base/ElasticBox/appliance-openstack/#installing-the-appliance-in-openstack)
-* [Next Steps](https://www.ctl.io/knowledge-base/ElasticBox/appliance-openstack/#next-steps)
+* [OpenStack Requirements](https://www.ctl.io/knowledge-base/ElasticBox/appliance-openstack.md/#openstack-requirements)
+* [Installing the Appliance in OpenStack](https://www.ctl.io/knowledge-base/ElasticBox/appliance-openstack.md/#installing-the-appliance-in-openstack)
+* [Next Steps](https://www.ctl.io/knowledge-base/ElasticBox/appliance-openstack.md/#next-steps)
 
 ### OpenStack Requirements
 ElasticBox requires the following OpenStack services:
@@ -36,8 +36,8 @@ Follow the video for detailed help.
 3. Launch an instance of ElasticBox from the appliance image and flavor.
 
 ### Next Steps
-* [Configure networking](https://www.ctl.io/knowledge-base/ElasticBox/appliance-networking/)
-* [Set up the appliance for use](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup/)
+* [Configure networking](https://www.ctl.io/knowledge-base/ElasticBox/appliance-networking.md/)
+* [Set up the appliance for use](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/)
 
 ### Contacting ElasticBox Support
 We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](https://elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
