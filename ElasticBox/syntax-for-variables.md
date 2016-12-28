@@ -5,7 +5,7 @@
 "contentIsHTML": false
 }}}
 
-When configuring an application deployment in a box, you can define its deployment parameters as variables. In order for ElasticBox to execute them during a deployment, they need to be referenced in the configuration [event scripts](../ElasticBox/start-stop-and-upgrade-boxes.md) following the Jinja2 syntax in these sections. [Jinja2](//jinja.pocoo.org/docs/dev/) is a templating language in Python that we follow for the variable syntax conventions.
+When configuring an application deployment in a box, you can define its deployment parameters as variables. In order for ElasticBox to execute them during a deployment, they need to be referenced in the configuration [event scripts](../ElasticBox/start-stop-and-upgrade-boxes.md) following the Jinja2 syntax in these sections. [Jinja2](http://jinja.pocoo.org/docs/dev/) is a templating language in Python that we follow for the variable syntax conventions.
 
 **In this article:**
 
