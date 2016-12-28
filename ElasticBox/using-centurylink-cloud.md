@@ -23,6 +23,7 @@ You need a [CenturyLink Cloud account](//www.ctl.io/) to be able to deploy from 
 
 1. In ElasticBox, go to Providers > New Provider and select **CenturyLink.**
 2. Enter the CenturyLink username and password as shown and save.
+
 ![centurylink-add-provider-credentials-1.png](../images/ElasticBox/centurylink-add-provider-credentials-1.png)
 
 ### Deploy to CenturyLink Cloud from ElasticBox
