@@ -136,11 +136,11 @@ To illustrate, we create a second CloudFormation box to scale the WordPress blog
 
 3. In the WordPress box, specify a connection string to activate the binding.
 
-    Under Variables, click **New** and select the text expression variable type. Enter this connection string: `\\{{ autoscalebinding.address }}`
+    Under Variables, click **New** and select the text expression variable type. Enter this connection string: `\{{ autoscalebinding.address }}`
 
     ![cloudformationboxes13.png](../images/ElasticBox/cloudformationboxes13.png)
 
-	The expression can contain any string value or variables from templates. It can also contain system variables like instance, username, addresses. In general, follow this syntax: `\\{{ binding_name.variable_name }}`
+	The expression can contain any string value or variables from templates. It can also contain system variables like instance, username, addresses. In general, follow this syntax: `\{{ binding_name.variable_name }}`
 
 When you next launch the WordPress box, its instance automatically connects to an Autoscaling instance over the binding.
 
