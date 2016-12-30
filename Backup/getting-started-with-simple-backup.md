@@ -11,7 +11,7 @@
 Simple Backup Service – Getting Started Guide
 =============================================================
 
-Simple Backup Service (SBS) provides file level backups. This version of the UI allows users to quickly setup backups as well as perform other backup related activities. Additionally, there is no need to stand-up any additional infrastructure (servers, network, storage) because this is all part of the service. An agent will be automatically installed on the server during provisioning. Servers must have connectivity to the internet for instillation of the agent, and backup functionality. Users choose which servers and data to backed up, as well as the frequency of the backups and retention periods.
+Simple Backup Service (SBS) provides file level backups. This version of the UI allows users to quickly setup backups as well as perform other backup related activities. Additionally, there is no need to stand-up any additional infrastructure (servers, network, storage) because this is all part of the service. An agent will be automatically installed on the server during provisioning. Servers must have connectivity to the internet for installation of the agent, and backup functionality. Users choose which servers and data to back up, as well as the frequency of the backups and retention periods.
 
 For additional information, please visit our [FAQ section](./simple-backup-service-faqs.md) or additional [Knowledge Base](//www.ctl.io/knowledge-base/backup/#1) articles.
 

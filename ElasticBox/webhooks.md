@@ -56,8 +56,8 @@ The box configures Apache using the virtual.conf file variable. To create the we
 
 mkdir -p /var/www/webhook
 
-curl -k {{ VIRTUAL_CONF }} -o /etc/httpd/conf.d/default.conf
-curl -k {{ WEBHOOK_PY }} | elasticbox config -o /var/www/webhook/webhook.py
+curl -k \{{ VIRTUAL_CONF }} -o /etc/httpd/conf.d/default.conf
+curl -k \{{ WEBHOOK_PY }} | elasticbox config -o /var/www/webhook/webhook.py
 ```
 
 Here’s the Python script to create the web service endpoint:
