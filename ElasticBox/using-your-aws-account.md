@@ -13,7 +13,7 @@ Deploy to AWS from ElasticBox as follows.
 * For AWS RDS, AWS S3, AWS DynamoDB, and AWS Memcached, use readymade CloudFormation boxes.
 * For any other AWS service, configure a custom [CloudFormation box](../ElasticBox/cloudformation-box.md).
 
-We orchestrate with AWS APIs in the backend to provision, install, and manage the lifecyle of your workloads based on the box configuration.
+We orchestrate with AWS APIs in the backend to provision, install, and manage the lifecycle of your workloads based on the box configuration.
 
 **In this article:**
 * Connect your AWS account in ElasticBox
@@ -24,7 +24,7 @@ We orchestrate with AWS APIs in the backend to provision, install, and manage th
 
 Before you deploy in AWS, you need to connect your AWS account in ElasticBox. Watch this video for details.
 
-<iframe src="https://player.vimeo.com/video/126177639" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="//player.vimeo.com/video/126177639" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 **Steps**
 1. Create a custom AWS policy and copy, paste these permissions:
@@ -190,7 +190,7 @@ By default, ElasticBox makes the latest AWS Linux and Windows AMIs along with an
 
 ![aws-machine-image-1.png](..//images/ElasticBox/aws-machine-image-1.png)
 
-**Note:** For this to work you may have go to the AWS marketplace and accept the license agreement for that AMI. Although most AMIs come pre-installed with [cloud-init](http://cloudinit.readthedocs.org/en/latest/), some may not, in which case you must install it. ElasticBox requires cloud-init to bootstrap the ElasticBox agent.
+**Note:** For this to work you may have go to the AWS marketplace and accept the license agreement for that AMI. Although most AMIs come pre-installed with [cloud-init](https://cloudinit.readthedocs.org/en/latest/), some may not, in which case you must install it. ElasticBox requires cloud-init to bootstrap the ElasticBox agent.
 
 ### Deploy to Your AWS Account
 When you deploy a box, we show [deployment policies](../ElasticBox/deploymentpolicy-box/) whose claims match the required tags of the box.
@@ -226,7 +226,7 @@ To deploy workloads to an EC2 instance, create a [deployment policy](../ElasticB
 AMI | Select a public, private, or shared AWS or an AWS community based AMI available by location. |
 Instance Type |	Select an instance type that’s pre-determined by the size of compute, memory, and network resources from the list that AWS provides, for example, db.t1.micro. |
 Keypairs | Select a key pair you created in AWS to connect to the instance or select None if you don’t want SSH access to the instance. |
-IAM Role | Select one to assign an existing IAM role to the instance. This allows the instance to make and accept API requests securely using the permissions defined by the role. To let ElasticBox view and pass the existing role to the instance, update the ElasticBox IAM role policy with the listed permissions. To learn more about IAM roles, see the [AWS docs](//docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#permission-to-pass-iam-roles). |
+IAM Role | Select one to assign an existing IAM role to the instance. This allows the instance to make and accept API requests securely using the permissions defined by the role. To let ElasticBox view and pass the existing role to the instance, update the ElasticBox IAM role policy with the listed permissions. To learn more about IAM roles, see the [AWS docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#permission-to-pass-iam-roles). |
 | Instances |	Select the number of instances to launch. |
 
 **Network**
@@ -237,7 +237,7 @@ IAM Role | Select one to assign an existing IAM role to the instance. This allow
 | Availability Zone |	Select an availability zone, such as us-east-1a if deploying in EC2 or select a subnet if deploying in your VPC. |
 | Placement Group |	Select an existing placement group from AWS to cluster instances for high network performance. Some instances can get 10 Gbps connectivity depending on their instance type. To learn more, see the [AWS docs](//docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html). To let ElasticBox view and direct the instance to the placement group, update the ElasticBox IAM role policy with the [listed permissions](../ElasticBox/using-your-aws-account.md). |
 | Security Groups |	Select security groups to route traffic to the instance. If you didn’t create a security group in AWS for EC2 or a VPC, select **Automatic** for ElasticBox to create one on your behalf. |
-| Elastic IP |	When launching to AWS, select Elastic IP to allocate a fresh static IP address from the EC2 or VPC pool and associate it to the instance depending on whether you’re deploying to EC2 classic or your VPC. If you’re using dynamic DNS to assign an IP address in EC2 or want to allow internet traffic to communicate with your instance in a non default VPC, then use Elastic IPs to guarantee public access. **Note:** You can’t autoscale the instance when you choose an Elastic IP for it. For more information, see the [AWS help](//docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html). |
+| Elastic IP |	When launching to AWS, select Elastic IP to allocate a fresh static IP address from the EC2 or VPC pool and associate it to the instance depending on whether you’re deploying to EC2 classic or your VPC. If you’re using dynamic DNS to assign an IP address in EC2 or want to allow internet traffic to communicate with your instance in a non default VPC, then use Elastic IPs to guarantee public access. **Note:** You can’t autoscale the instance when you choose an Elastic IP for it. For more information, see the [AWS help](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html). |
 
 **Elastic Block Store**
 Instance types come with a default root device volume. To get storage on top of the default volume, add EBS volumes under Elastic Block Store.
@@ -251,7 +251,7 @@ Select from General Purpose (SSD), Provisioned IOPS (SSD) or Magnetic volume typ
 Follow these steps to add more volumes.
 
 **Steps**
-1. Configure volumes. Select a [type](//docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html), [device mapping](//docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html), size, and IOPS where available.
+1. Configure volumes. Select a [type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html), [device mapping](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html), size, and IOPS where available.
 
 
 |  **Type** | **Usage**  | **Size** | **IOPS** |
@@ -268,7 +268,7 @@ When you save the profile and launch instances with additional volumes, we creat
 Turn on to allow AWS to automatically scale to the number of instances you specified (under Instances). ElasticBox creates a launch configuration and an auto scaling group that lets AWS scale an instance up or down based on CPU usage. If the usage reaches the 80 percent threshold, AWS launches a new instance. The number of instances launched is limited to the maximum number specified under Instances.
 **Load Balancing**
 Load balancing evenly distributes load to your application instances hosted on EC2 or a VPC across all availability zones in a region. When you enable and configure it for an instance, ElasticBox automatically sets up load balancing.
-To set up, add a new listener or select an existing one. Then specify the protocol and ports through which traffic flows from the client to the load balancer node (front-end) and from the load balancer to the instance (backend). To allow traffic over HTTPS, SSL, you must [upload a certificate](//docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/US_SettingUpLoadBalancerHTTPS.html) to AWS. The default settings require that your EC2 servers are active and accept requests via the port specified for the load balancing listener. Accepted ports are 25, 80, 443, and 1024 to 65535.
+To set up, add a new listener or select an existing one. Then specify the protocol and ports through which traffic flows from the client to the load balancer node (front-end) and from the load balancer to the instance (backend). To allow traffic over HTTPS, SSL, you must [upload a certificate](https://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/US_SettingUpLoadBalancerHTTPS.html) to AWS. The default settings require that your EC2 servers are active and accept requests via the port specified for the load balancing listener. Accepted ports are 25, 80, 443, and 1024 to 65535.
 
 ![aws-deppolicy-loadbalancing-autoscaling-4.png](../images/ElasticBox/aws-deppolicy-loadbalancing-autoscaling-4.png)
 
@@ -301,7 +301,7 @@ Create a new policy box of type “Amazon EC2 Container Service” or use the on
 Cluster | Select the cluster where you want to deploy you container. |
 CPU Units |	The number of cpu units to reserve for the container. A container instance has 1,024 cpu units for every CPU core. |
 Memory | The number of MiB of memory to reserve for the container. If your container attempts to exceed the memory allocated here, the container is killed. |
-IAM Role | Select one to assign an existing IAM role to the instance. This allows the instance to make and accept API requests securely using the permissions defined by the role. To let ElasticBox view and pass the existing role to the instance, update the ElasticBox IAM role policy with the listed permissions. To learn more about IAM roles, see the [AWS docs](//docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#permission-to-pass-iam-roles). |
+IAM Role | Select one to assign an existing IAM role to the instance. This allows the instance to make and accept API requests securely using the permissions defined by the role. To let ElasticBox view and pass the existing role to the instance, update the ElasticBox IAM role policy with the listed permissions. To learn more about IAM roles, see the [AWS docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#permission-to-pass-iam-roles). |
 | Instances | Select the number of instances to launch. |
 
 **Network**
@@ -346,8 +346,8 @@ Use the ebcli to post the image to your box
 
 Deploy the instance as you would do for a regular deployment, but instead, select the previously created deployment profile. The box will be deployed as a container within the ECS cluster selected in the Deployment Policy.
 
-###
-AWS RDS
+### AWS RDS
+
 In ElasticBox, RDS services are available as CloudFormation boxes. To define an RDS service like MySQL, go to the Boxes page. Click **New** > **CloudFormation**. Under Managed Boxes, select **MySQL Database**. Select an AWS provider account registered in ElasticBox.
 
 In the same way, you can define other RDS services like MS SQL, Oracle, or PostgresSQL. Configure the RDS service with these options.
