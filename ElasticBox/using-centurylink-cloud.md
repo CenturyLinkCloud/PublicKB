@@ -23,6 +23,7 @@ You need a [CenturyLink Cloud account](//www.ctl.io/) to be able to deploy from 
 
 1. In ElasticBox, go to Providers > New Provider and select **CenturyLink.**
 2. Enter the CenturyLink username and password as shown and save.
+
 ![centurylink-add-provider-credentials-1.png](../images/ElasticBox/centurylink-add-provider-credentials-1.png)
 
 ### Deploy to CenturyLink Cloud from ElasticBox
@@ -44,9 +45,9 @@ Note a couple of things about instances you deploy on CenturyLink Cloud through 
 
 | **Option**  |  **Description** |
 |----------|:-----|
-| Datacenter |	Select a location to place the instance, for example, UC1. |
+| Datacenter | Select a location to place the instance, for example, UC1. |
 | Group |	Select placement group for the new instance. |
-| Template |	Select from a list of CenturyLink Cloud Linux or Windows images. Images are specific to the box service type, that is, Linux or Windows. |
+| Template | Select from a list of CenturyLink Cloud Linux or Windows images. Images are specific to the box service type, that is, Linux or Windows. |
 | Managed |	Allow CenturyLink manage this server. |
 | Instances | Specify the number of instances to provision. |
 
@@ -60,8 +61,8 @@ Note a couple of things about instances you deploy on CenturyLink Cloud through 
 **Compute**
 | **Option**  |  **Description** |
 |----------|:-----|
-| CPUs |	Select virtual CPUs for the instance. You can get up to 16 cores. |
-| Memory |	Allocate RAM for the instance. You can get up to 128 GB. |
+| CPUs | Select virtual CPUs for the instance. You can get up to 16 cores. |
+| Memory | Allocate RAM for the instance. You can get up to 128 GB. |
 
 **Disks**
 

@@ -48,7 +48,7 @@ Follow these steps to install elasticbox-init on a Linux template.
 **Steps**
 1. Log in to the vSphere client and open the Linux virtual machine.
 2. SSH into the virtual machine.
-3. [Install the VMware tools.](//www.vmware.com/support/ws55/doc/ws_newguest_tools_linux.html)
+3. [Install the VMware tools.](https://www.vmware.com/support/ws55/doc/ws_newguest_tools_linux.html)
 4. Run this command with root privileges to install elasticbox-init:
 
 `curl -L https://elasticbox.com/agent/linux/vsphere/template_customization_script.sh | sudo bash`
@@ -59,8 +59,8 @@ Follow these steps to run a script that creates a scheduled task on a Windows Se
 
 **Steps**
 1. Log in to the Windows Server 2012 virtual machine template using remote desktop protocol (RDP).
-2. [Install the VMware tools](//kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1018377).
-3. [Download the scheduled task script.](//elasticbox.com/agent/windows/vsphere/template_customization_script.ps1)
+2. [Install the VMware tools](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1018377).
+3. [Download the scheduled task script.](https://elasticbox.com/agent/windows/vsphere/template_customization_script.ps1)
 **Note:** If running ElasticBox as an appliance, replace elasticbox.com with the appliance hostname or IP address.
 4. Right-click the script and click **Run PowerShell**.
 

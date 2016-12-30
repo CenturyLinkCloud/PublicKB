@@ -16,10 +16,10 @@ Automate application deployments through ElasticBox when you launch to Linux or 
 
 ### Register SoftLayer Provider in ElasticBox
 
-You need a [SoftLayer account](//www.softlayer.com/info/free-cloud) to be able to deploy from ElasticBox. When you have an account, follow these steps to register it in ElasticBox to automate your deployments.
+You need a [SoftLayer account](http://www.softlayer.com/info/free-cloud) to be able to deploy from ElasticBox. When you have an account, follow these steps to register it in ElasticBox to automate your deployments.
 
 **Steps**
-1. Log in to the [SoftLayer portal](//control.softlayer.com/).
+1. Log in to the [SoftLayer portal](https://control.softlayer.com/).
 2. Under Account > Users > API Key, click **Generate** to create an API Key or click **View** to copy it. ElasticBox needs the key to make API requests on your behalf.
 ![softlayer-getapikey-1.png](../images/ElasticBox/softlayer-getapikey-1.png)
 3. Copy the API key.

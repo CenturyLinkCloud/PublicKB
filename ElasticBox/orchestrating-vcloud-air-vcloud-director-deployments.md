@@ -19,8 +19,8 @@ Do you use vCloud Air as the VMware public cloud or vCloud Director as your VMwa
 
 To orchestrate vCloud Air and vCloud Director deployments through ElasticBox, you need the following setup:
 
-* [Install VMware tools](//pubs.vmware.com/vcd-51/index.jsp?topic=%2Fcom.vmware.vcloud.users.doc_51%2FGUID-9BB72070-65E9-4458-84C3-05D8247C7343.html) on vApp templates in the catalog. This doesn’t apply to public vApp templates, which already have them.
-* Enable [outbound Internet connectivity](//kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2053464) for vCloud Air or vCloud Director
+* [Install VMware tools](https://pubs.vmware.com/vcd-51/index.jsp?topic=%2Fcom.vmware.vcloud.users.doc_51%2FGUID-9BB72070-65E9-4458-84C3-05D8247C7343.html) on vApp templates in the catalog. This doesn’t apply to public vApp templates, which already have them.
+* Enable [outbound Internet connectivity](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2053464) for vCloud Air or vCloud Director
 
 ### Connect vCloud Air or vCloud Director in ElasticBox
 
@@ -33,7 +33,7 @@ Follow these steps to add a provider in ElasticBox that integrates with your vir
 
 **URL.**
 	* vCloud Director. Enter the URL to access the vCloud Director portal.
-	* vCloud Air. Enter the login URL followed by the compute API endpoint in this format, <vCloud_air_login_URL>/api/compute. **Example: //us-california-1-3.vchs.vmware.com/api/compute/**
+	* vCloud Air. Enter the login URL followed by the compute API endpoint in this format, <vCloud_air_login_URL>/api/compute. **Example: https://us-california-1-3.vchs.vmware.com/api/compute/**
 * **Organization**. Enter the organization name or GUID.
 	* For vCloud Air, select the virtual data center to see the org name in the URL as in this example: ?orgName=c946391d-a811-40c5-b39e-df8bf2b88917.
 	* For vCloud Director, enter system if the user is a global administrator.
@@ -67,20 +67,20 @@ Edit the deployment policy to set the following parameters for deploying to vClo
 | Virtual Data Center |	Select the virtual data center from vCloud Air or vCloud Director. |
 | Network |	Select the network for the virtual data center. |
 | IP Allocation | Assign IP addresses to the VM from the network attached to the virtual data center.<li>**DHCP.** Select this option to get an IP address dynamically where the network gateway acts as a DHCP router.</li><li>**Static IP Pool.** Select this option to get an IP address from a range of IP addresses configured for the network.</li><li>**Static Manual.** If you select this option, ElasticBox finds the next available IP address from the virtual data center network and requests vCloud Air or vCloud Director to assign it to the VM.</li> |
-| Storage Profile | Choose a [storage option](//vcloud.vmware.com/service-offering/block-storage) for vCloud Air.<li>**Standard.** Persistent block storage for occasional or event driven data access.</li><li>**SSD-Accelerated.** Higher performance block storage.</li> |
+| Storage Profile | Choose a [storage option](http://vcloud.vmware.com/service-offering/block-storage) for vCloud Air.<li>**Standard.** Persistent block storage for occasional or event driven data access.</li><li>**SSD-Accelerated.** Higher performance block storage.</li> |
 
 **Compute**
 
 | **Option**  |  **Description** |
 |----------|:-----|
-| Virtual CPUs | Specify the number of CPUs. See the [VMware docs](//pubs.vmware.com/vca/index.jsp?topic=%2Fcom.vmware.vca.od.ug.doc%2FGUID-6180A0A5-E390-449D-8FD6-CD8601554EAE.html) for vCloud Air VM CPU limit. |
-| Memory | Specify the virtual RAM in GB. See the [VMware docs](//pubs.vmware.com/vca/index.jsp?topic=%2Fcom.vmware.vca.od.ug.doc%2FGUID-6180A0A5-E390-449D-8FD6-CD8601554EAE.html) for vCloud Air VM RAM limit. |
+| Virtual CPUs | Specify the number of CPUs. See the [VMware docs](http://pubs.vmware.com/vca/index.jsp?topic=%2Fcom.vmware.vca.od.ug.doc%2FGUID-6180A0A5-E390-449D-8FD6-CD8601554EAE.html) for vCloud Air VM CPU limit. |
+| Memory | Specify the virtual RAM in GB. See the [VMware docs](http://pubs.vmware.com/vca/index.jsp?topic=%2Fcom.vmware.vca.od.ug.doc%2FGUID-6180A0A5-E390-449D-8FD6-CD8601554EAE.html) for vCloud Air VM RAM limit. |
 
 **Disks**
 
 | **Option**  |  **Description** |
 |----------|:-----|
-| Disk | Specify the storage capacity in GB. See the [VMware docs](//pubs.vmware.com/vca/index.jsp?topic=%2Fcom.vmware.vca.od.ug.doc%2FGUID-6180A0A5-E390-449D-8FD6-CD8601554EAE.html) for vCloud Air VM storage limit. |
+| Disk | Specify the storage capacity in GB. See the [VMware docs](http://pubs.vmware.com/vca/index.jsp?topic=%2Fcom.vmware.vca.od.ug.doc%2FGUID-6180A0A5-E390-449D-8FD6-CD8601554EAE.html) for vCloud Air VM storage limit. |
 
 ### Contacting ElasticBox Support
 
