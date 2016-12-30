@@ -47,8 +47,8 @@ You need a CloudStack environment and access to the management console.
 ![cloudstack-enteruserapicredentials-register-elasticbox-5.png](../images/ElasticBox/cloudstack-enteruserapicredentials-register-elasticbox-5.png)
 
 * **URL.** API endpoint to the CloudStack management server that typically has this format, **http://10.0.128.21:8080/client/api.**
-* **API Key.** Part of the user [API credentials](../ElasticBox/using-cloudstack.md) generated for the user account in the CloudStack management console.
-* **Secret Key.** Part of the user [API credentials] (../ElasticBox/using-cloudstack.md) generated for the user account in the CloudStack management console.
+* **API Key.** Part of the user [API credentials](./using-cloudstack.md) generated for the user account in the CloudStack management console.
+* **Secret Key.** Part of the user [API credentials] (./using-cloudstack.md) generated for the user account in the CloudStack management console.
 5. Click **Save.**
 
 ### Bootstrapping CloudStack Templates
