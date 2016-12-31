@@ -9,7 +9,7 @@
 ### Give Admin Access to ElasticBox
 When you sign up for the ElasticBox Enterprise Edition, you get a default administrator account that lets you globally manage settings for all ElasticBox users in your organization. Besides the default account, you can give any ElasticBox user administrator access through the admin console under Organization > Administrators.
 
-**To give admin access**
+**To Give Admin Access**
 1. Log in to ElasticBox as the default administrator.
 2. Go to the Admin Console located in menu drop-down at the top right corner of your workspace.
    ![admin-access1.png](../images/ElasticBox/admin-access1.png)
@@ -18,7 +18,7 @@ When you sign up for the ElasticBox Enterprise Edition, you get a default admini
    ![admin-access2.png](../images/ElasticBox/admin-access2.png)
 
 To revoke administrator privileges for a user, click X against their name under **Organization > Administrators**.
-Administrators can manage several org-wide settings that include [user authentication](./user-authentication.md), the [ElasticBox appliance](./appliance-overview.md), [provider access](./provider-access.md), [admin boxes](./deploymentpolicy-box.md), [webhooks](./webhooks.md), and [instance tags](./resource-tags.md). To get a good idea of things you can do, see [Overview](./admin-overview.md).
+Administrators can manage several org-wide settings that include [user authentication](https://www.ctl.io/knowledge-base/ElasticBox/user-authentication.md/), the [ElasticBox appliance](https://www.ctl.io/knowledge-base/ElasticBox/appliance-overview.md/), [provider access](https://www.ctl.io/knowledge-base/ElasticBox/provider-access.md/), [admin boxes](https://www.ctl.io/knowledge-base/ElasticBox/deploymentpolicy-box.md/#deppolicy-adminbox), [webhooks](https://www.ctl.io/knowledge-base/ElasticBox/webhooks.md/), and [instance tags](https://www.ctl.io/knowledge-base/ElasticBox/resource-tags.md/). To get a good idea of things you can do, see [Overview](https://www.ctl.io/knowledge-base/ElasticBox/admin-overview.md/).
 
 ### Contacting ElasticBox Support
 We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
