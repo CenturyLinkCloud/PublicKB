@@ -17,7 +17,7 @@ The console gives you control in three ways to set up, manage, and monitor:
 * **Monitor** - Across the organization, the console shows information on how various assets like providers, boxes, instances, and workspaces are being used. You can draw insights based on this information. You can see patterns, trends, and behaviors. This is valuable information to help you make educated decisions to monitor resource usage and improve productivity workflows. That means you can design better ways to bring developers and operations personnel closer together to better deliver applications in your organization.
 
 ### Contacting ElasticBox Support
-We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](https://elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
