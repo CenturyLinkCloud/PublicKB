@@ -5,7 +5,7 @@
 "contentIsHTML": false
 }}}
 
-Container boxes enable you to define and deploy [Docker](//docs.docker.com/engine/understanding-docker/) images in Linux environments. The advantage of deploying to Docker containers through ElasticBox is to be able to consume Dockerfiles directly in boxes. Secondly, you can bind together distributed, multi-tier applications that involve automation in boxes and Docker containers.
+Container boxes enable you to define and deploy [Docker](https://docs.docker.com/engine/understanding-docker/) images in Linux environments. The advantage of deploying to Docker containers through ElasticBox is to be able to consume Dockerfiles directly in boxes. Secondly, you can bind together distributed, multi-tier applications that involve automation in boxes and Docker containers.
 
 **In this article:**
 
@@ -16,13 +16,13 @@ Container boxes enable you to define and deploy [Docker](//docs.docker.com/engin
 
 ### How Docker Works in ElasticBox
 
-Docker works in ElasticBox through the Docker Container service box, a Linux box that understands Docker commands when deployed. In the box you model your application in a Dockerfile, which helps create the image of your application in a Docker container. Write Dockerfile commands not only in [Docker instructions](//docs.docker.com/engine/reference/builder/), but also in Bash and PowerShell.
+Docker works in ElasticBox through the Docker Container service box, a Linux box that understands Docker commands when deployed. In the box you model your application in a Dockerfile, which helps create the image of your application in a Docker container. Write Dockerfile commands not only in [Docker instructions](https://docs.docker.com/engine/reference/builder/), but also in Bash and PowerShell.
 
 At deploy time, ElasticBox executes the Docker box like any other box in the virtual environment. ElasticBox treats the Docker container like a [box variable](../ElasticBox/parameterizing-boxes-with-variables.md) and the Dockerfile as a [file variable](../ElasticBox/parameterizing-boxes-with-variables.md) inside it. On the virtual machine, ElasticBox first installs the Docker client from which we install the Docker container using the daemon BUILD command.
 
 ### Configuring and Deploying Docker Containers
 
-See how deploying to Docker containers works in ElasticBox using [ElasticSearch](//www.elastic.co/products) as an example. ElasticSearch is a RESTful search engine that makes it easy to analyze, explore, and visualize data. To get started, we create a container box and then configure the application in a Dockerfile.
+See how deploying to Docker containers works in ElasticBox using [ElasticSearch](https://www.elastic.co/products) as an example. ElasticSearch is a RESTful search engine that makes it easy to analyze, explore, and visualize data. To get started, we create a container box and then configure the application in a Dockerfile.
 
 **Create a Docker Container box**
 
@@ -82,11 +82,11 @@ As soon as we add the variables, ElasticBox automatically generates an EXPOSE in
 
 ![dockercontainers5.png](../images/ElasticBox/dockercontainers5.png)
 
-Text, number, or options type variables are handled at deploy time as [Docker environment variables](//docs.docker.com/engine/reference/builder/). Use this syntax to refer to them in Dockerfiles: {{variable_name}}
+Text, number, or options type variables are handled at deploy time as [Docker environment variables](https://docs.docker.com/engine/reference/builder/). Use this syntax to refer to them in Dockerfiles: `\{{variable_name}}`
 
-A file variable is handy to run additional commands using RUN or trigger an executable file using CMD. But first you must copy it from the ElasticBox remote URL to the container’s filesystem at the path you specify using [ADD](//docs.docker.com/engine/reference/builder/) in the Dockerfile: ADD {{file_variable_name}} destination_path_in_container
+A file variable is handy to run additional commands using RUN or trigger an executable file using CMD. But first you must copy it from the ElasticBox remote URL to the container’s filesystem at the path you specify using [ADD](https://docs.docker.com/engine/reference/builder/) in the Dockerfile: ADD `\{{file_variable_name}}` destination_path_in_container
 
-[Bindings](../ElasticBox/parameterizing-boxes-with-variables.md) pass connections strings or deployment values to connect with other Docker containers or boxes. To bind to another Docker container or box, create a binding and pass binding references via text expression variables with this syntax: {{ binding_name.variable_name }}
+[Bindings](../ElasticBox/parameterizing-boxes-with-variables.md) pass connections strings or deployment values to connect with other Docker containers or boxes. To bind to another Docker container or box, create a binding and pass binding references via text expression variables with this syntax: `\{{ binding_name.variable_name }}`
 
 Here we connect to a box that deploys an S3 bucket using a binding. As Dockerfiles don’t allow scripts, we use a text expression to pass the binding reference.
 
