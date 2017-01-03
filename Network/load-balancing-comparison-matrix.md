@@ -48,6 +48,6 @@ The links below provide supporting material that can assist a customer with furt
 
 * [Citrix Netscaler VPX Documentation](http://docs.citrix.com/en-us/netscaler/11-1.html)
 * [Citrix Netscaler VPX Editions](//www.citrix.com/products/netscaler-adc/platforms.html#editions)
-* [CenturyLink Ecosystem Partners](../Ecosystem Partners/ecosystem-partner-list.md)
+* [CenturyLink Ecosystem Partners](../Ecosystem Partners/General/ecosystem-partner-list.md)
 * [CenturyLink Pricing Catalog](//ctl.io/pricing)
 * [CenturyLink Cloud Legal Documentation (SLA, Service Guide etc)](//www.ctl.io/legal/)
