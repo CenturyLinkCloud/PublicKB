@@ -39,8 +39,8 @@ An instance is an instantiated version of a box launched to provider’s virtual
 
 * Listed here are all the variables defined in the main box as well as those within nested boxes or box type variables.
 * Required variables are marked with an asterisk. To see all variables including optional ones, click Show More.
-* When a variable is required, you must specify its value to launch an instance of the box. If optional, you can launch without giving values, and do it later in the [lifecycle editor](.//lifecycle-editor.md).
-* [Binding type variables](./documentation/parameterizing-boxes-with-variables.md) are also listed here. Depending on how it’s defined in the box, you can select as its value any instance or that of a specific box type deploying or active in the workspace.
+* When a variable is required, you must specify its value to launch an instance of the box. If optional, you can launch without giving values, and do it later in the [lifecycle editor](./lifecycle-editor.md).
+* [Binding type variables](./parameterizing-boxes-with-variables.md) are also listed here. Depending on how it’s defined in the box, you can select as its value any instance or that of a specific box type deploying or active in the workspace.
 
 ### Creating a Deployment Profile
 
@@ -64,7 +64,7 @@ A deployment profile defines settings for your infrastructure that are applied a
 
 Settings in the deployment profile vary by the provider you deploy to. For provider specific deployment settings, see these articles:
 * [Using CenturyLink Cloud](./using-centurylink.md)
-* [Using Google Cloud](.//using-your-google-cloud-account.md)
+* [Using Google Cloud](./using-your-google-cloud-account.md)
 * [Using Your AWS Account](./using-your-aws-account.md)
 * [Using the vSphere Private Datacenter](./using-the-vmware-vsphere-private-datacenter.md)
 * [Using Your OpenStack Cloud](./using-the-openstack-cloud.md)
