@@ -1210,14 +1210,18 @@ In this sample request, the instance is tagged and scheduled to terminate at a g
 Terminates, force-terminates, or deletes an existing instance based on its instance ID.
 
 **Normal Response Codes**
+
 * 202
+
 **Error Response Codes**
+
 * Invalid Operation (400)
 * Forbidden (403)
 * Not Found (404)
 * Operation Conflict (409)
 
 **Request Parameters**
+
 |  Parameter  |     Type      |	Description |
 |----------|:-------------|-----|
 | operation | string | Operation type must be one of the following values: terminate, force_terminate and delete |
@@ -1239,8 +1243,11 @@ DELETE /services/instances/{instance_id}?operation=force_terminate
 Gets the service on the instance given its instance ID.
 
 **Normal Response Codes**
+
 * 200
+
 **Error Response Codes**
+
 * Forbidden (403)
 * Not Found (404)
 
@@ -1255,6 +1262,7 @@ ElasticBox-Release: 4.0
 ```
 
 **Response Parameters**
+
 |  Parameter  |     Type      |	Description |
 |----------|:-------------|-----|
 | profile | object | Service profile. |
@@ -1337,16 +1345,21 @@ ElasticBox-Release: 4.0
 ```
 
 ### GET /services/instances/{instance_id}/activity
+
 Gets all activity logs from operations run on an instance given its instance ID.
 
 **Normal Response Codes**
+
 * 200
+
 **Error Response Codes**
+
 * Forbidden (403)
 * Not Found (404)
 
 **Request Parameters**
-|  Parameter  |     Type      |	Description |
+
+|  Parameter  | Type      |	Description |
 |----------|:-------------|-----|
 | (Optional) operation | string | The specific operation id, there are seven types of operations: deploy, shutdown, poweron, reinstall, reconfigure, terminate and terminate_service. |
 
@@ -1365,6 +1378,7 @@ GET /services/instances/{instance_id}/activity?operation=deploy
 ```
 
 **Response Parameters**
+
 |  Parameter  |     Type      |	Description |
 |----------|:-------------|-----|
 |* box | string | Box name. |
@@ -1422,11 +1436,17 @@ GET /services/instances/{instance_id}/activity?operation=deploy
 ```
 
 ### GET /services/instances/{instance_id}/machine_logs
+
 Gets the logs of one machine for a deployed instance given its instance ID.
+
 **Normal Response Codes**
+
 * 200
+
 **Error Response Codes**
+
 * Forbidden (403)
+
 * Not Found (404)
 
 **Request Parameters**
@@ -1453,6 +1473,7 @@ GET /services/instances/{instance_id}/machine_logs?machine_name={machine_name}
 ```
 
 **Response**
+
 ```
 Executing pre_install-{instance_id} script
 ...
@@ -1468,13 +1489,19 @@ configure-{instance_id} successfully executed.
 ### GET /services/instances/{instance_id}/binding
 
 Gets the binding of an instance when you give the instance ID.
+
 **Normal Response Codes**
+
 * 200
+
 **Error Response Codes**
+
 * Forbidden (403)
+
 * Not Found (404)
 
 **Request**
+
 ```
 Headers:
 
@@ -1632,14 +1659,19 @@ ElasticBox-Release: 4.0
 ```
 
 ### PUT /services/instances/{instance_id}/deploy
+
 Re-deploy an existing instance, requires the specified id instance_id.
 
 **Normal Response Codes**
+
 * 202
+
 **Error Response Codes**
+
 * Operation Conflict (409)
 
 **Request**
+
 ```
 Headers:
 
@@ -1649,13 +1681,19 @@ ElasticBox-Release: 4.0
 ```
 
 ### PUT /services/instances/{instance_id}/poweron
+
 Powers on an existing instance when you give the instance ID.
+
 **Normal Response Codes**
+
 * 202
+
 **Error Response Codes**
+
 * Operation Conflict (409)
 
 **Request**
+
 ```
 Headers:
 
@@ -1669,11 +1707,15 @@ ElasticBox-Release: 4.0
 Shuts down an existing instance when you give the instance ID.
 
 **Normal Response Codes**
+
 * 202
+
 **Error Response Codes**
+
 * Operation Conflict (409)
 
 **Request**
+
 ```
 Headers:
 
@@ -1687,11 +1729,15 @@ ElasticBox-Release: 4.0
 Reinstalls an existing instance when you give its ID.
 
 **Normal Response Codes**
+
 * 202
+
 **Error Response Codes**
+
 * Operation Conflict (409)
 
 **Request**
+
 ```
 Headers:
 
@@ -1705,8 +1751,11 @@ ElasticBox-Release: 4.0
 Re-configures an existing instance when you give its ID.
 
 **Normal Response Codes**
+
 * 202
+
 **Error Response Codes**
+
 * Operation Conflict (409)
 
 **Request Parameters**

@@ -9,21 +9,22 @@
 ### Using the API: from Registering a Provider to the Deployment of an Instance
 
 This guide shows all the steps you need to deploy a box using the ElasticBox API.
-* [Authentication and Deployment Variables](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-box.md/#authentication-and-deployment-variables)
-* [Register a Provider](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-box.md/#register-a-provider)
-* [Create a New Deployment Policy Box](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-box.md/#create-a-new-deployment-policy-box)
-* [Create a Box](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-box.md/#create-a-box)
-* [Deploy the Instance](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-box.md/#deploy-the-instance)
-* [Terminate the Instance](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-box.md/#terminate-the-instance)
+* Authentication and Deployment Variables
+* Register a Provider
+* Create a New Deployment Policy Box
+* Create a Box
+* Deploy the Instance
+* Terminate the Instance
 
 **Note:** We use cURL commands to send HTTP requests to the API objects in JSON. JSON is the required format for all API requests and responses.
 
 Now let’s look at the script in sections to understand how you can make API calls from any code you like.
 
 ### Authenticate with ElasticBox
-Before calling to the API you have to sig in into the ElasticBox website and [getting an authentication token](https://www.ctl.io/knowledge-base/ElasticBox/overview-access.md/#api-get-token). You use this token as an http header to perform every call to the ElasticBox API.
+Before calling to the API you have to sig in into the ElasticBox website and [getting an authentication token](./admin-access.md). You use this token as an http header to perform every call to the ElasticBox API.
 
 **Declare Deployment Variables**
+
 In this case we decided to use AWS so we will need the account key and secret to register it as provider. Box deployment arguments such as owner, environment and token are declared as variables because they can differ between deployments. That way, each time you run the script, you can pass different arguments.
 ```
 aws_provider_key=$1
@@ -34,6 +35,7 @@ owner=$5
 ```
 
 ### Register a Provider in ElasticBox
+
 A provider is a public or private cloud account you can register in ElasticBox. In this case we choose AWS as provider. From the AWS account credential we will need the key and the secret right now.
 ```
 # Register the provider in Elastic Box
@@ -66,6 +68,7 @@ fi;
 ```
 
 ### Create a New Deployment Policy Box
+
 A deployment policy box is where you specify settings to deploy applications in a specific virtual environment. We send parameters for creating the deployment policy box in a POST request to the box object. If there’s an error in creating the policy box, we output the error. Else, we output the created box.
 ```
 # Once we have created the provider we can set the proper policy box
@@ -114,7 +117,8 @@ fi;
 ```
 
 ### Create a Custom Box in Order to Deploy It Using the Previous Deployment Policy Box
-In a POST request to the Box object, we send the features for our script box. Also we will use two already created blobs. You can take a look to the [blobs](https://www.ctl.io/knowledge-base/ElasticBox/blobs.md/), API doc if you need to know how you can create them.
+
+In a POST request to the Box object, we send the features for our script box. Also we will use two already created blobs. You can take a look to the [blobs](./api-blobs.md), API doc if you need to know how you can create them.
 ```
 # We create a box to deploy with that policy box, in this case we are going to use a previously uploaded scripts.
 payload="{
@@ -174,6 +178,7 @@ fi;
 ```
 
 ### Deploy the Instance
+
 To remove the instance from the virtual machine, we send a DELETE request to the Instances object with the instance ID. Then we check its response status. If it’s 200, we say that the specific instance is terminated. Else, we output the error state from the response.
 ```
 # Finally we are going to deploy the instance
@@ -215,6 +220,7 @@ fi;
 ```
 
 ### Terminate the Instance
+
 To remove the instance from the virtual machine, we send a DELETE request to the Instances object with the instance ID. Then we check its response status. If it’s 200, we say that the specific instance is terminated. Else, we output the error state from the response.
 ```
 curl -k -s \
@@ -230,7 +236,8 @@ echo "Undeployed box: $instance_id"
 ```
 
 ### Contacting ElasticBox Support
-We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](https://elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
