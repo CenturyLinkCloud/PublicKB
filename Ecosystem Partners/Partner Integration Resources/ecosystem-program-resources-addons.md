@@ -17,4 +17,4 @@ Prospective partners with questions should contact ecosystem@ctl.io
 
   * [Migrate a V1 AppFog service to V2](../Partner Integration Resources/howto-migrate-appfog-addon-to-addon-engine.md)
   * [Migrate a Heroku service to AppFog](../Partner Integration Resources/howto-migrate-heroku-addon-to-addon-engine.md)
-  * [Upload your service manifest to AppFog AddOn Engine](../upload-service-manifests-to-addon-engine.md)
+  * [Upload your service manifest to AppFog AddOn Engine](../General/upload-service-manifests-to-addon-engine.md)

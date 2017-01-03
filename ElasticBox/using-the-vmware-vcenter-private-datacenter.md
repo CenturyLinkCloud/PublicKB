@@ -10,9 +10,9 @@
 
 **In this article:**
 
-* [Prerequisites](../ElasticBox/using-the-vsphere-private-datacenter.md)
-* [Registering your vCenter in ElasticBox](../ElasticBox/using-the-vsphere-private-datacenter.md)
-* [Deploying in your vCenter](../ElasticBox/using-the-vsphere-private-datacenter.md)
+* Prerequisites
+* Registering your vCenter in ElasticBox
+* Deploying in your vCenter
 
 ### Prerequisites
 
@@ -114,7 +114,7 @@ Select deployment metadata from a deployment profile to launch VMs to your vCent
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
