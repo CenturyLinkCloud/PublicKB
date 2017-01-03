@@ -16,6 +16,7 @@ In this example, Infoblox provides a static IP and domain name for every instanc
 
 **Before You Begin**
 * Set up a custom specification in vCenter for Linux and Windows if deploying to both platforms.
+
 * Install Infoblox and set it up as follows:
 
    1. Create a network for every vCenter network to which you deploy from ElasticBox. This has the CIDR range of IP addresses Infoblox can assign. Under Data Management > Toolbar, click Add and Add Network.
@@ -33,11 +34,13 @@ In this example, Infoblox provides a static IP and domain name for every instanc
       When you deploy, ElasticBox maps the network you select in the deployment policy to these Infoblox network attributes to derive the right IP configuration.
 
 **Steps**
+
 1. Create a custom Infoblox web service. We define the web service in a box. [Contact us](mailto:support@elasticbox.com) to share the box with you.
 
    ![admin-webhooks3.png](../images/ElasticBox/admin-webhooks3.png)
 
 **Install script**
+
 This box installs Python, Python dependencies, and the Apache web server.
 ```
 #!/bin/bash
@@ -50,7 +53,9 @@ pip install --upgrade requests
 ```
 
 **Configure script**
+
 The box configures Apache using the virtual.conf file variable. To create the web service endpoint, it runs the webhook.py script from a file variable.
+
 ```
 #!/bin/bash
 
@@ -61,6 +66,7 @@ curl -k \{{ WEBHOOK_PY }} | elasticbox config -o /var/www/webhook/webhook.py
 ```
 
 Here’s the Python script to create the web service endpoint:
+
 ```
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
@@ -187,16 +193,19 @@ application = bottle.default_app()
 ```
 
 2. Deploy the custom Infoblox web service box. We provide values for the address, password, and user. These are admin credentials to access Infoblox.
+
    ![admin-webhooks4.png](../images/ElasticBox/admin-webhooks4.png)
 
-3. Add the custom Infoblox web service endpoint as a webhook. Under [Admin Console](https://www.ctl.io/knowledge-base/ElasticBox/admin-overview.md/) > Webhooks, enter the endpoint of the deployed webservice as a webhook like this: http://endpoint_of_webservice_instance/requestIP
+3. Add the custom Infoblox web service endpoint as a webhook. Under [Admin Console](..ElasticBox/admin-overview.md) > Webhooks, enter the endpoint of the deployed webservice as a webhook like this: http://endpoint_of_webservice_instance/requestIP
+
    ![admin-webhooks5.png](../images/ElasticBox/admin-webhooks5.png)
 
 4. To see the Infoblox integration in action, we deploy an instance from ElasticBox to vCenter.
 In the deployment policy, we select a custom specification. This acts as a holder for the network information ElasticBox gets from InfoBlox. vCenter overrides the values of the custom specification with the values from Infoblox.
 
 ### Contacting ElasticBox Support
-We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](https://elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
