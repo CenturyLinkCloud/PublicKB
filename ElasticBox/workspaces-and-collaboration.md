@@ -8,11 +8,12 @@
 
 ### Workspaces & Sharing
 In this article:
-* [Overview](https://www.ctl.io/knowledge-base/ElasticBox/workspaces-and-collaboration.md/#overview)
-* [Creating and Adding Members to Workspaces](https://www.ctl.io/knowledge-base/ElasticBox/workspaces-and-collaboration.md/#creating-and-adding-members-to-workspaces)
-* [Sharing Boxes, Instances, and Providers](https://www.ctl.io/knowledge-base/ElasticBox/workspaces-and-collaboration.md/#sharing-boxes-instances-and-providers)
+* Overview
+* Creating and Adding Members to Workspaces
+* Sharing Boxes, Instances, and Providers
 
 ### Overview
+
 In ElasticBox, boxes let you deliver applications predictably. Sharing enables others to reuse your box configuration or work collaboratively to build better applications.
 
 ElasticBox lets you share three types of assets: boxes, instances, and providers. You decide the level of access that works best when you share. Share with users or with workspaces and give them view or edit access. When you share with a workspace, all workspace members get equal access to an asset.
@@ -20,9 +21,11 @@ ElasticBox lets you share three types of assets: boxes, instances, and providers
 A workspace is a shared environment in which members of that workspace can access the same providers, boxes, and instances. When you first sign in to ElasticBox, you only have a personal workspace called My Workspace. After that, you can create your own workspaces or be invited to others’. Workspaces are contextual. When you switch workspaces you see a whole different group of instances, boxes, and providers, which belong only to that workspace.
 
 **Example**
+
 Say you have a Jenkins box that integrates and stages code for testing. You want to collaborate with other Jenkins experts to make the box configuration highly usable. So you give their workspace edit access. Next, the QA team needs this box to deploy and run tests, so you give their workspace view access. Now the QA team can deploy Jenkins instances, but as you’d expect, they aren’t allowed to change the underlying Jenkins box definition.
 
 ### Creating and Adding Members to Workspaces
+
 To create a workspace, click **New Workspace**.
 ![workspace-and-sharing1.png](../images/ElasticBox/workspace-and-sharing1.png)
 
@@ -81,7 +84,7 @@ Also you may give view access to make an instance available for others to use, s
 Sharing providers has its benefits. You can give view access to company-approved providers and let users deploy to that particular provider. When teams deploy to a shared provider, you can track org-wide usage and compliance cohesively. Provider accounts can be shared only in the Enterprise Edition.
 
 ### Contacting ElasticBox Support
-We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](https://elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
