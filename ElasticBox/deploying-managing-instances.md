@@ -9,10 +9,10 @@
 
 **In this article:**
 
-* [Deploying a new instance](../ElasticBox/deploying-managing-instances.md)
-* [Creating a deployment profile](../ElasticBox/deploying-managing-instances.md)
-* [Scheduling Instances](../ElasticBox/deploying-managing-instances.md)
-* [Handling instance lifecycle states](../ElasticBox/deploying-managing-instances.md)
+* Deploying a new instance
+* Creating a deployment profile
+* Scheduling Instances
+* Handling instance lifecycle states
 
 ### Deploying a New Instance
 
@@ -22,7 +22,7 @@ An instance is an instantiated version of a box launched to provider’s virtual
 1. Click **Instances** > **New Instance**
 2. Select a box. You can search and look through the tabs.
 
-![deploy-instance-selectboxfromcatalog-1.png](../images/ElasticBox/deploy-instance-selectboxfromcatalog-1.png)
+  ![deploy-instance-selectboxfromcatalog-1.png](../images/ElasticBox/deploy-instance-selectboxfromcatalog-1.png)
 
 * **My Boxes**. Shows boxes you created in your workspace.
 * **Shared with Me**. Shows boxes others shared with you.
@@ -31,16 +31,16 @@ An instance is an instantiated version of a box launched to provider’s virtual
 
 3. In the New Instance dialog, specify the environment name and deployment profile.
 **Environment.** Give a name to recognize the instance.
-**Deployment Profile.** Select a previously created deployment profile or create a new one. For details, see Creating a [Deployment Profile](../ElasticBox/deploying-managing-instances.md).
+**Deployment Profile.** Select a previously created deployment profile or create a new one. For details, see Creating a [Deployment Profile](./deploying-managing-instances.md).
 
 4. In the New Instance dialog, pass deployment parameters under **Variables**. Before launching, you can override and provide fresh values.
 
-![instance-provideconfigurationvalues-2.png](../images/ElasticBox/instance-provideconfigurationvalues-2.png)
+  ![instance-provideconfigurationvalues-2.png](../images/ElasticBox/instance-provideconfigurationvalues-2.png)
 
 * Listed here are all the variables defined in the main box as well as those within nested boxes or box type variables.
 * Required variables are marked with an asterisk. To see all variables including optional ones, click Show More.
-* When a variable is required, you must specify its value to launch an instance of the box. If optional, you can launch without giving values, and do it later in the [lifecycle editor](../ElasticBox/lifecycle-editor.md).
-* [Binding type variables](../ElasticBox/documentation/parameterizing-boxes-with-variables.md) are also listed here. Depending on how it’s defined in the box, you can select as its value any instance or that of a specific box type deploying or active in the workspace.
+* When a variable is required, you must specify its value to launch an instance of the box. If optional, you can launch without giving values, and do it later in the [lifecycle editor](.//lifecycle-editor.md).
+* [Binding type variables](./documentation/parameterizing-boxes-with-variables.md) are also listed here. Depending on how it’s defined in the box, you can select as its value any instance or that of a specific box type deploying or active in the workspace.
 
 ### Creating a Deployment Profile
 
@@ -50,26 +50,26 @@ A deployment profile defines settings for your infrastructure that are applied a
 
 1. In the New Instance dialog, click **New Profile**.
 
-![instance-createnewdeploymentprofile-3.png](../images/ElasticBox/instance-createnewdeploymentprofile-3.png)
+  ![instance-createnewdeploymentprofile-3.png](../images/ElasticBox/instance-createnewdeploymentprofile-3.png)
 
 2. Enter a profile name. Typically deployment profiles are named for the stage in the application lifecycle they represent, such as Dev, Test, QA, Pre-Production, and Production. However you could also use them to represent geographical or logical environments.
 
-![instance-createnewdeploymentprofile-name-4.png](../images/ElasticBox/instance-createnewdeploymentprofile-name-4.png)
+  ![instance-createnewdeploymentprofile-name-4.png](../images/ElasticBox/instance-createnewdeploymentprofile-name-4.png)
 
 3. Click **Create**.
 
 4. Configure the deployment profile settings for the box you selected from the catalog.
 
-![instance-configuredeploymentsettings-5.png](../images/ElasticBox/instance-configuredeploymentsettings-5.png)
+  ![instance-configuredeploymentsettings-5.png](../images/ElasticBox/instance-configuredeploymentsettings-5.png)
 
 Settings in the deployment profile vary by the provider you deploy to. For provider specific deployment settings, see these articles:
-* [Using CenturyLink Cloud](../ElasticBox/using-centurylink.md)
-* [Using Google Cloud](../ElasticBox/using-your-google-cloud-account.md)
-* [Using Your AWS Account](../ElasticBox/using-your-aws-account.md)
-* [Using the vSphere Private Datacenter](../ElasticBox/using-the-vsphere-private-datacenter.md)
-* [Using Your OpenStack Cloud](../ElasticBox/using-the-openstack-cloud.md)
-* [Using CloudStack](../ElasticBox/using-cloudstack.md)
-* [Using Azure](../ElasticBox/deploying-and-managing-instances/using-azure.md)
+* [Using CenturyLink Cloud](./using-centurylink.md)
+* [Using Google Cloud](.//using-your-google-cloud-account.md)
+* [Using Your AWS Account](./using-your-aws-account.md)
+* [Using the vSphere Private Datacenter](./using-the-vmware-vsphere-private-datacenter.md)
+* [Using Your OpenStack Cloud](./using-the-openstack-cloud.md)
+* [Using CloudStack](./using-cloudstack.md)
+* [Using Azure](./using-azure.md)
 
 **Note:** If you’re deploying to public cloud providers like AWS or Google Compute, you’ll most likely be charged by the cloud provider for the virtual infrastructure you provision. Familiarize yourself with their pricing model as ElasticBox assumes no responsibility for costs incurred.
 
@@ -77,7 +77,7 @@ Settings in the deployment profile vary by the provider you deploy to. For provi
 
 Save on compute and hosting costs by scheduling instances at launch time. Rather than remember to turn off a machine manually, schedule it to stop automatically at your convenience. When launching, you can schedule an instance to shut down or terminate at a given UTC time.
 
-We notify you of instances about to expire in 24 hours by email at around 12 AM UTC. From the email, you can navigate to the instance page and change the schedule if you like. If you don’t get this email, check your email spam filters or check if [SMTP outbound is on](../ElasticBox/appliance-initialsetup.md) in the setup console for the ElasticBox appliance.
+We notify you of instances about to expire in 24 hours by email at around 12 AM UTC. From the email, you can navigate to the instance page and change the schedule if you like. If you don’t get this email, check your email spam filters or check if [SMTP outbound is on](./appliance-initialsetup.md) in the setup console for the ElasticBox appliance.
 
 Follow these steps to schedule an instance.
 
@@ -86,9 +86,13 @@ Follow these steps to schedule an instance.
 2. Select a box you want to deploy.
 3. In the New Instance dialog, select the **Shutdown** or **Terminate** operation from the **Expiration** drop-down.
 Select **Always on** if you don’t want to schedule anything. Shutdown powers off the instance while Terminate deletes the instance on the provider’s side.
-![schedule-instance-chooseoperation-6.png](../images/ElasticBox/schedule-instance-chooseoperation-6.png)
+
+  ![schedule-instance-chooseoperation-6.png](../images/ElasticBox/schedule-instance-chooseoperation-6.png)
+
 4. For the selected operation, set a predefined or custom UTC schedule.
-![schedule-instance-selectschedule-7.png](../images/ElasticBox/schedule-instance-selectschedule-7.png)
+
+  ![schedule-instance-selectschedule-7.png](../images/ElasticBox/schedule-instance-selectschedule-7.png)
+
 5. When done, click **Deploy**.
 
 **Note:** Even if you don’t schedule an instance at the time of deploying, you can do so later. Once online, you can go to an instance page and in **Edit Details**, set the schedule.
@@ -101,27 +105,34 @@ Instance actions (on the instances page or the lifecycle editor) trigger deploym
 
 Some actions are available only after the instance changes state. For example, you can’t forcibly terminate an instance until you’ve terminated it first.
 
-Go to the Admin Console to [manage several instances](../ElasticBox/manage-assets-monitor-usage.md) spread across users and workspaces in your organization.
-![instance-states-8.png](../images/ElasticBox/instance-states-8.png)
+Go to the Admin Console to [manage several instances](./manage-assets-monitor-usage.md) spread across users and workspaces in your organization.
+
+  ![instance-states-8.png](../images/ElasticBox/instance-states-8.png)
 
 **Reconfigure**
 This executes the configure events from the box.
+
 **Reinstall**
 This re-runs the install scripts from your boxes onto the existing virtual infrastructure. This is useful if you made changes to your scripts within this instance, say to upgrade the instance to a new box version. A reconfigure automatically follows the reinstall.
+
 **Power On**
 This virtually powers on your instance. It’s useful in case you’ve shut the instance down. After powering on, the configure and start scripts from the box execute.
+
 **Shut Down**
 This runs the stop scripts from your box instance and cleanly shuts down the OS. It’s useful if your instance does not need to be up 24/7. As some cloud providers only charge for running instances, this can save money.
+
 **Terminate**
 This executes the dispose scripts from your box instance and then deletes the virtual infrastructure. You can’t revert the action and since you can lose data, be sure that you want to perform this action in the first place.
+
 **Force Terminate**
 If a Terminate fails for some reason (maybe a broken dispose script) then this forcibly deletes the virtual infrastructure. If you previously terminated or deleted an instance from the provider’s side, the instance may linger in Force Terminate in ElasticBox. Give it a couple of minutes then try to force-terminate again.
+
 **Delete**
 Click the delete icon after you Terminate or Force Terminate an instance. Until then, the box instance page and logs are retained in the Elasticbox database. But delete completely removes the box instance page.
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
