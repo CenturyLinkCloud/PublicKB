@@ -10,13 +10,13 @@
 Once you install the appliance, set it up for others in your organization to use. At the least, assign a friendly hostname or vanity URL to point users to ElasticBox. Optionally, configure other settings such as add SSH keys to access the appliance, sync NTP system time, enable outbound email notifications, or switch to a new device to store appliance and ElasticBox data.
 
 **In this article:**
-* [Initial ElasticBox Setup](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#initial-elasticbox-setup)
-* [Changing the ElasticBox Hostname](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#changing-the-elasticbox-hostname)
-* [Changing the Appliance Admin Account Password](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#changing-the-appliance-admin-account-password)
-* [Adding your SSH Key (optional)](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#adding-your-ssh-key-optional)
-* [Changing NTP Time Zone (optional)](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#changing-ntp-time-zone-optional)
-* [Enabling SMTP Outbound Email (optional)](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#enabling-smtp-outbound-email-optional)
-* [Switching Appliance Device Root Storage](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#switching-appliance-device-root-storage)
+* Initial ElasticBox Setup
+* Changing the ElasticBox Hostname
+* Changing the Appliance Admin Account Password
+* Adding your SSH Key (optional)
+* Changing NTP Time Zone (optional)
+* Enabling SMTP Outbound Email (optional)
+* Switching Appliance Device Root Storage
 
 ### Initial ElasticBox Setup
 
@@ -24,8 +24,8 @@ Once you install the appliance, set it up for others in your organization to use
 1. Log in to ElasticBox on the appliance
 2. Get the ElasticBox IP address from the appliance VM console.
    ![appliance-setup1.png](../images/ElasticBox/appliance-setup1.png)
-   Log in to ElasticBox with the default appliance admin credentials:
 
+   Log in to ElasticBox with the default appliance admin credentials:
    * username: **admin@elasticbox.com**
    * password: elasticbox123
 
@@ -35,12 +35,12 @@ Once you install the appliance, set it up for others in your organization to use
    From the menu drop-down at the top right, click **Setup Console**. From this page, you can manage settings for the appliance.
    ![appliance-setup3.png](../images/ElasticBox/appliance-setup3.png)
 
-   * [Change the hostname](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#change-the-hostname) to a friendly URL.
-   * Optionally, [change the default admin account password](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#change-the-default-admin-account-password).
-   * Optionally, add [SSH keys](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#ssh-keys) to manage access to the appliance virtual machine.
-   * Optionally, [change the NTP time zone](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#change-the-ntp-time-zone), which affects the timestamp in the appliance logs.
-   * Optionally, [enable outbound email](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#enable-outbound-email) for notifications.
-   * Optionally, [switch the appliance device storage](https://www.ctl.io/knowledge-base/ElasticBox/appliance-initialsetup.md/#switch-the-appliance-device-storage) to increase storage or processing speed.
+   * Change the hostname to a friendly URL.
+   * Optionally, change the default admin account password.
+   * Optionally, add SSH keys to manage access to the appliance virtual machine.
+   * Optionally, change the NTP time zone, which affects the timestamp in the appliance logs.
+   * Optionally, enable outbound email for notifications.
+   * Optionally, switch the appliance device storage to increase storage or processing speed.
 
 4. Create a new admin account for your enterprise
    Follow this step if using the ElasticBox Enterprise Edition.
@@ -51,7 +51,7 @@ Once you install the appliance, set it up for others in your organization to use
    Log back in as the appliance admin using the credentials in step 1. Add your new user account as an administrator in the Admin Console. Going forward, use this admin account to manage the appliance and settings for your organization.
 
 ### Changing the ElasticBox Hostname
-Hostname is a friendly name for the ElasticBox IP address for example, yourcompany.com:80 or name.example.com:443. The hostname should point to the IP adress of the appliance virtual machine. To allow users to connect, also make sure your network firewall allows inbound traffic to the appliance IP address via TCP ports 80, 443, 5671, and 5672.
+Hostname is a friendly name for the ElasticBox IP address for example, yourcompany.com:80 or name.example.com:443. The hostname should point to the IP address of the appliance virtual machine. To allow users to connect, also make sure your network firewall allows inbound traffic to the appliance IP address via TCP ports 80, 443, 5671, and 5672.
 ![appliance-setup4.png](../images/ElasticBox/appliance-setup4.png)
 
 **Steps**
@@ -134,7 +134,7 @@ When you install the appliance, the appliance VM by default gets 100 GB of virtu
 When you switch the disk, the appliance reboots and becomes unavailable for a few minutes. In that time, it copies over existing data from the other disk like specific appliance settings, logs, the database, and the saved state of RabbitMQ. It also copies all the generated data to the second disk. When the appliance VM is back online, you can start using ElasticBox.
 
 ### Contacting ElasticBox Support
-We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](https://elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
