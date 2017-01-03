@@ -74,9 +74,9 @@ Copy, paste this script in a text file, save in XML, and upload to a file variab
     <manageHook>true</manageHook>
     <credentials>
         <com.cloudbees.jenkins.Credential>
-            <username>{{ GITHUB_USER }}</username>
+            <username>\{{ GITHUB_USER }}\</username>
             <apiUrl>https://api.github.com</apiUrl>
-            <oauthAccessToken>{{ GITHUB_ACCESS_TOKEN }}</oauthAccessToken>
+            <oauthAccessToken>\{{ GITHUB_ACCESS_TOKEN }}\</oauthAccessToken>
         </com.cloudbees.jenkins.Credential>
     </credentials>
 </com.cloudbees.jenkins.GitHubPushTrigger_-DescriptorImpl>
@@ -95,7 +95,7 @@ Copy, paste the script in a text file, save in XML, and upload as shown.
     <keepDependencies>false</keepDependencies>
     <properties>
         <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.9.1">
-            <projectUrl>{{ GITHUB_PROJECT_URL }}</projectUrl>
+            <projectUrl>\{{ GITHUB_PROJECT_URL }}\</projectUrl>
         </com.coravy.hudson.plugins.github.GithubProjectProperty>
     </properties>
     <scm class="hudson.plugins.git.GitSCM" plugin="git@2.2.7">
@@ -104,7 +104,7 @@ Copy, paste the script in a text file, save in XML, and upload as shown.
             <hudson.plugins.git.UserRemoteConfig>
                 <name>origin</name>
                 <refspec>+refs/heads/*:refs/remotes/origin/*</refspec>
-                <url>{{ GIT_REPOSITORY_URL }}</url>
+                <url>\{{ GIT_REPOSITORY_URL }}\</url>
             </hudson.plugins.git.UserRemoteConfig>
         </userRemoteConfigs>
         <branches>
@@ -145,7 +145,7 @@ Copy, paste the script in a text file, save in XML, and upload as shown.
     <keepDependencies>false</keepDependencies>
     <properties>
         <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.9.1">
-            <projectUrl>{{ GITHUB_PROJECT_URL }}</projectUrl>
+            <projectUrl>\{{ GITHUB_PROJECT_URL }}\</projectUrl>
         </com.coravy.hudson.plugins.github.GithubProjectProperty>
     </properties>
     <scm class="hudson.plugins.git.GitSCM" plugin="git@2.2.7">
@@ -154,7 +154,7 @@ Copy, paste the script in a text file, save in XML, and upload as shown.
             <hudson.plugins.git.UserRemoteConfig>
                 <name>origin</name>
                 <refspec>+refs/pull/*:refs/remotes/origin/pr/*</refspec>
-                <url>{{ GIT_REPOSITORY_URL }}</url>
+                <url>\{{ GIT_REPOSITORY_URL }}\</url>
             </hudson.plugins.git.UserRemoteConfig>
         </userRemoteConfigs>
         <branches>
@@ -226,7 +226,7 @@ function install_template() {
 JENKINS_HOME=~jenkins
 
 # Install plugins specified in variable PLUGINS
-PLUGINS="{{ PLUGINS }}"
+PLUGINS="\{{ PLUGINS }}\"
 if [ -n "${PLUGINS}" ]
 then
     # Get the latest plugin info for update center
@@ -248,14 +248,14 @@ fi
 
 
 # Configure GitHub plugin with GitHub user ID and access token specified in the variable GITHUB_USER and GITHUB_ACCESS_TOKEN
-install_template {{ GITHUB_PLUGIN_CONFIG }} ${JENKINS_HOME}/com.cloudbees.jenkins.GitHubPushTrigger.xml
+install_template \{{ GITHUB_PLUGIN_CONFIG }}\ ${JENKINS_HOME}/com.cloudbees.jenkins.GitHubPushTrigger.xml
 
 # Install CI/CD job templates
 mkdir -p ${JENKINS_HOME}/jobs/pull-request
-install_template {{ PULL_REQUEST_JOB }} ${JENKINS_HOME}/jobs/pull-request/config.xml
+install_template \{{ PULL_REQUEST_JOB }}\ ${JENKINS_HOME}/jobs/pull-request/config.xml
 
 mkdir ${JENKINS_HOME}/jobs/merge
-install_template {{ MERGE_JOB }} ${JENKINS_HOME}/jobs/merge/config.xml
+install_template \{{ MERGE_JOB }}\ ${JENKINS_HOME}/jobs/merge/config.xml
 
 chown -R jenkins:jenkins ${JENKINS_HOME}/jobs
 
@@ -317,16 +317,6 @@ Enter details as given:
 ### Contacting ElasticBox Support
 
 We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
-
-For issues related to API calls, send the request body along with details related to the issue.
-
-In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
-Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
-
-### Contacting ElasticBox Support
-
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). If the above troubleshooting tips did not rectify the problem please contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
