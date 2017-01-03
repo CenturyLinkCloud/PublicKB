@@ -8,12 +8,21 @@
 
 ### Enable User Authentication
 <<<<<<< HEAD
+<<<<<<< HEAD
 In ElasticBox enterprise organizations, users can sign in using any of the single sign-on authentication options you enable in the [admin console](./admin-overview.md).
 ![admin-user1.png](../images/ElasticBox/admin-user1.png)
 
 **In this article:**
 * Single sign-on with Google, GitHub, or username, password
 * Single sign-on with LDAP
+=======
+In ElasticBox enterprise organizations, users can sign in using any of the single sign-on authentication options you enable in the [admin console](../ElasticBox/admin-overview.md/).
+![admin-user1.png](../images/ElasticBox/admin-user1.png)
+
+**In this article:**
+* [Single sign-on with Google, GitHub, or username, password](../ElasticBox/user-authentication.md)
+* [Single sign-on with LDAP](../ElasticBox/user-authentication.md)
+>>>>>>> CenturyLinkCloud/master
 =======
 In ElasticBox enterprise organizations, users can sign in using any of the single sign-on authentication options you enable in the [admin console](../ElasticBox/admin-overview.md/).
 ![admin-user1.png](../images/ElasticBox/admin-user1.png)
@@ -37,9 +46,15 @@ When users sign in to ElasticBox with their LDAP credentials, we don’t store t
 
 **In this article:**
 <<<<<<< HEAD
+<<<<<<< HEAD
 * Setting up LDAP in ElasticBox
 * Syncing with LDAP groups
 * Giving LDAP accounts admin access
+=======
+* [Setting up LDAP in ElasticBox](../ElasticBox/user-authentication.md)
+* [Syncing with LDAP groups](../ElasticBox/user-authentication.md)
+* [Giving LDAP accounts admin access](../ElasticBox/user-authentication.md)
+>>>>>>> CenturyLinkCloud/master
 =======
 * [Setting up LDAP in ElasticBox](../ElasticBox/user-authentication.md)
 * [Syncing with LDAP groups](../ElasticBox/user-authentication.md)
@@ -50,10 +65,17 @@ When users sign in to ElasticBox with their LDAP credentials, we don’t store t
 
 **Steps**
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Sign in to ElasticBox as the default administrator.
 2. From the user menu drop-down on the top right, select **Admin Console**.
 3. Under Authentication, enable LDAP by turning it on.
 4. For each LDAP source, provide information to [connect](./user-authentication.md) and the conditions to [search users](./user-authentication.md) and [sync groups](./user-authentication.md). This information is divided into:
+=======
+1. Sign in to ElasticBox as the [default administrator](../ElasticBox/enterprise-setup-onboarding.md).
+2. From the user menu drop-down on the top right, select **Admin Console**.
+3. Under Authentication, enable LDAP by turning it on.
+4. For each LDAP source, provide information to [connect](../ElasticBox/user-authentication.md) and the conditions to [search users](../ElasticBox/user-authentication.md) and [sync groups](../ElasticBox/user-authentication.md). This information is divided into:
+>>>>>>> CenturyLinkCloud/master
 =======
 1. Sign in to ElasticBox as the [default administrator](../ElasticBox/enterprise-setup-onboarding.md).
 2. From the user menu drop-down on the top right, select **Admin Console**.
@@ -94,9 +116,15 @@ This gives your developers, operations engineers, or IT admins access to the sam
 
 **Steps**
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Sign in as the default administrator.
 2. From the user menu drop-down on the top right, select **Admin Console**.
 3. Under Authentication, make sure LDAP is on and [set up with at least one source with the conditions to sync groups](./user-authentication.md).
+=======
+1. Sign in as the [default administrator](../ElasticBox/enterprise-setup-onboarding.md).
+2. From the user menu drop-down on the top right, select **Admin Console**.
+3. Under Authentication, make sure LDAP is on and [set up with at least one source with the conditions to sync groups](../ElasticBox/user-authentication.md).
+>>>>>>> CenturyLinkCloud/master
 =======
 1. Sign in as the [default administrator](../ElasticBox/enterprise-setup-onboarding.md).
 2. From the user menu drop-down on the top right, select **Admin Console**.
@@ -118,7 +146,11 @@ As good practice, you should give an LDAP user in your organization administrati
 
 ### Contacting ElasticBox Support
 <<<<<<< HEAD
+<<<<<<< HEAD
 We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+=======
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+>>>>>>> CenturyLinkCloud/master
 =======
 We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 >>>>>>> CenturyLinkCloud/master

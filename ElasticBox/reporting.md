@@ -14,9 +14,15 @@ Reports show cloud costs and resource usage in public and private clouds. It inc
 If reporting is turned on for your enterprise, ElasticBox Administrators can access it from the admin console. Reports also help you make budget-friendly decisions and curb costs through cost center budgeting.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 * Reports - Show cost and usage for a given date range.
 * Pricing list - Shows public cloud pricing for Linux and Windows VMs by instance type. The pricing helps us measure costs for public cloud reports. Since private clouds don’t have that information, we report on resource usage.
 * Cost center budgeting] - Lets you set and enforce a quota on how much user or team workspaces can consume from a cloud account per month.
+=======
+* [Reports](../ElasticBox/reporting.md). Show cost and usage for a given date range.
+* [Pricing list](../ElasticBox/reporting.md). Shows public cloud pricing for Linux and Windows VMs by instance type. The pricing helps us measure costs for public cloud reports. Since private clouds don’t have that information, we report on resource usage.
+* [Cost center budgeting](../ElasticBox/reporting.md/). Lets you set and enforce a quota on how much user or team workspaces can consume from a cloud account per month.
+>>>>>>> CenturyLinkCloud/master
 =======
 * [Reports](../ElasticBox/reporting.md). Show cost and usage for a given date range.
 * [Pricing list](../ElasticBox/reporting.md). Shows public cloud pricing for Linux and Windows VMs by instance type. The pricing helps us measure costs for public cloud reports. Since private clouds don’t have that information, we report on resource usage.
@@ -119,7 +125,11 @@ Cost Centers help you set and enforce a quota on how much users or team workspac
 
 ### Contacting ElasticBox Support
 <<<<<<< HEAD
+<<<<<<< HEAD
 We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+=======
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+>>>>>>> CenturyLinkCloud/master
 =======
 We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 >>>>>>> CenturyLinkCloud/master

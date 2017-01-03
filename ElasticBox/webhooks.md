@@ -196,7 +196,7 @@ application = bottle.default_app()
 
    ![admin-webhooks4.png](../images/ElasticBox/admin-webhooks4.png)
 
-3. Add the custom Infoblox web service endpoint as a webhook. Under [Admin Console](./admin-overview.md) > Webhooks, enter the endpoint of the deployed webservice as a webhook like this: http://endpoint_of_webservice_instance/requestIP
+3. Add the custom Infoblox web service endpoint as a webhook. Under [Admin Console](..ElasticBox/admin-overview.md) > Webhooks, enter the endpoint of the deployed webservice as a webhook like this: http://endpoint_of_webservice_instance/requestIP
 
    ![admin-webhooks5.png](../images/ElasticBox/admin-webhooks5.png)
 
@@ -204,7 +204,8 @@ application = bottle.default_app()
 In the deployment policy, we select a custom specification. This acts as a holder for the network information ElasticBox gets from InfoBlox. vCenter overrides the values of the custom specification with the values from Infoblox.
 
 ### Contacting ElasticBox Support
-We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
