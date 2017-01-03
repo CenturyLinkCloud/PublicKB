@@ -5,7 +5,7 @@
 "contentIsHTML": false
 }}}
 
-The ElasticBox CloudFormation box type runs on the [AWS CloudFormation service](//docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+The ElasticBox CloudFormation box type runs on the [AWS CloudFormation service](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 ElasticBox works with the AWS CloudFormation API to provision the stack in your AWS account. So why use ElasticBox when you can launch CloudFormation templates directly in Amazon? [Here’s why](//www.ctl.io/knowledge-base/elasticbox/#1).
 
@@ -27,13 +27,13 @@ We use a sample Wordpress template to show how to create and launch a CloudForma
 
 **Step 1. Create the template**
 
-1. [Log in](//elasticbox.com/login) to ElasticBox.
+1. [Log in](https://elasticbox.com/login) to ElasticBox.
 
 2. Click **Boxes > New > CloudFormation > CloudFormation Template**. Give the box a meaningful name to identify it in the box service catalog. Specify other [metadata](../ElasticBox/boxes.md).
 
      ![cloudformationboxes1.png](../images/ElasticBox/cloudformationboxes1.png)
 
-3. In the box Configuration tab under Template, click **New**. In this walkthrough, we import a [sample WordPress template](//s3.amazonaws.com/cloudformation-templates-us-east-1/WordPress_Single_Instance_With_RDS.template) from a URL. When we save, contents from the URL are ported over.
+3. In the box Configuration tab under Template, click **New**. In this walkthrough, we import a [sample WordPress template](https://s3.amazonaws.com/cloudformation-templates-us-east-1/WordPress_Single_Instance_With_RDS.template) from a URL. When we save, contents from the URL are ported over.
 
     ![cloudformationboxes2.png](../images/ElasticBox/cloudformationboxes2.png)
 
@@ -46,11 +46,11 @@ We use a sample Wordpress template to show how to create and launch a CloudForma
 
 **Step 2. Author the template**
 
-1. Start with a [sample AWS CloudFormation template](//aws.amazon.com/cloudformation/aws-cloudformation-templates/) and click **Edit** to modify. Here we use the sample WordPress template.
+1. Start with a [sample AWS CloudFormation template](https://aws.amazon.com/cloudformation/aws-cloudformation-templates/) and click **Edit** to modify. Here we use the sample WordPress template.
 
      ![cloudformationboxes3.png](../images/ElasticBox/cloudformationboxes3.png)
 
-	 **Note:** CloudFormation templates have their own taxonomy you must follow. Although a template typically has several sections, only Resources is required. For information and examples on how to declare each section, see [Template Anatomy](//docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html) and [Template Reference](//docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-reference.html).
+	 **Note:** CloudFormation templates have their own taxonomy you must follow. Although a template typically has several sections, only Resources is required. For information and examples on how to declare each section, see [Template Anatomy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html) and [Template Reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-reference.html).
 
 2. Customize input parameters. Although optional, if you have them in the template, they’re automatically shown under Variables. You can customize several parameters as in this example.
 
@@ -100,7 +100,7 @@ Once live, you can continue to make changes to your CloudFormation template from
 
 **Steps**
 
-1. [Log in](//elasticbox.com/login) to ElasticBox.
+1. [Log in](https://elasticbox.com/login) to ElasticBox.
 
 2. Click Instances and select the CloudFormation instance you want to update. In this example, we’ll select the WordPress instance launched earlier.
 
@@ -124,7 +124,7 @@ To illustrate, we create a second CloudFormation box to scale the WordPress blog
 
 **Steps**
 
-1. Create a CloudFormation box using the [AWS autoscaling template](//s3-us-west-2.amazonaws.com/cloudformation-templates-us-west-2/AutoScalingMultiAZWithNotifications.template).
+1. Create a CloudFormation box using the [AWS autoscaling template](https://s3-us-west-2.amazonaws.com/cloudformation-templates-us-west-2/AutoScalingMultiAZWithNotifications.template).
 
     ![cloudformationboxes11.png](../images/ElasticBox/cloudformationboxes11.png)
 
@@ -136,11 +136,11 @@ To illustrate, we create a second CloudFormation box to scale the WordPress blog
 
 3. In the WordPress box, specify a connection string to activate the binding.
 
-    Under Variables, click **New** and select the text expression variable type. Enter this connection string: {{ autoscalebinding.address }}
+    Under Variables, click **New** and select the text expression variable type. Enter this connection string: `\{{ autoscalebinding.address }}`
 
     ![cloudformationboxes13.png](../images/ElasticBox/cloudformationboxes13.png)
 
-	The expression can contain any string value or variables from templates. It can also contain system variables like instance, username, addresses. In general, follow this syntax: {{ binding_name.variable_name }}
+	The expression can contain any string value or variables from templates. It can also contain system variables like instance, username, addresses. In general, follow this syntax: `\{{ binding_name.variable_name }}`
 
 When you next launch the WordPress box, its instance automatically connects to an Autoscaling instance over the binding.
 

@@ -18,7 +18,7 @@ AWS GovCloud is available only by request. Contact [support](support%40elasticbo
 
 ### Connect to AWS GovCloud from ElasticBox
 
-Access to AWS GovCloud requires a [special signup process](//docs.aws.amazon.com/govcloud-us/latest/UserGuide/getting-set-up.html). When you have a GovCloud account, connect to it in ElasticBox with a role based ARN following the same steps as you would for a regular AWS account.
+Access to AWS GovCloud requires a [special signup process](http://docs.aws.amazon.com/govcloud-us/latest/UserGuide/getting-set-up.html). When you have a GovCloud account, connect to it in ElasticBox with a role based ARN following the same steps as you would for a regular AWS account.
 
 [Step 1. Delegate a role for ElasticBox in your AWS GovCloud account to allow third-party API access.](../ElasticBox/using-your-aws-account.md)
 
@@ -45,7 +45,7 @@ Deploy to any of the services in the AWS GovCloud region.
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
