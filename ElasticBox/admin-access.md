@@ -18,10 +18,17 @@ When you sign up for the ElasticBox Enterprise Edition, you get a default admini
    ![admin-access2.png](../images/ElasticBox/admin-access2.png)
 
 To revoke administrator privileges for a user, click X against their name under **Organization > Administrators**.
+<<<<<<< HEAD
 Administrators can manage several org-wide settings that include [user authentication](./user-authentication.md), the [ElasticBox appliance](./appliance-overview.md), [provider access](./provider-access.md), [admin boxes](./deploymentpolicy-box.md), [webhooks](./webhooks.md), and [instance tags](./resource-tags.md). To get a good idea of things you can do, see [Overview](./admin-overview.md).
 
 ### Contacting ElasticBox Support
 We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+=======
+Administrators can manage several org-wide settings that include [user authentication](../ElasticBox/user-authentication.md), the [ElasticBox appliance](../ElasticBox/appliance-overview.md), [provider access](../ElasticBox/provider-access.md), [admin boxes](../ElasticBox/deploymentpolicy-box.md), [webhooks](../ElasticBox/webhooks.md), and [instance tags](../ElasticBox/resource-tags.md). To get a good idea of things you can do, see [Overview](../ElasticBox/admin-overview.md).
+
+### Contacting ElasticBox Support
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](https://elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+>>>>>>> CenturyLinkCloud/master
 
 For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log

@@ -7,12 +7,21 @@
 }}}
 
 ### Installing the Virtual Appliance in OpenStack
+<<<<<<< HEAD
 ElasticBox can run as a virtual appliance in your OpenStack private cloud in Grizzly or Havana. Here are the requirements, high-level steps, and a video that shows how to install the appliance.
 
 **In this article:**
 * OpenStack Requirements
 * Installing the Appliance in OpenStack
 * Next Steps
+=======
+ElasticBox can run as a virtual appliance in your OpenStack private cloud in Grizzly or Havana. Here are the requirements, high-level steps, and a [video](../ElasticBox/appliance-openstack.md) that shows how to install the appliance.
+
+**In this article:**
+* [OpenStack Requirements](../ElasticBox/appliance-openstack.md)
+* [Installing the Appliance in OpenStack](../ElasticBox/appliance-openstack.md/)
+* [Next Steps](../ElasticBox/appliance-openstack.md)
+>>>>>>> CenturyLinkCloud/master
 
 ### OpenStack Requirements
 ElasticBox requires the following OpenStack services:
@@ -36,11 +45,19 @@ Follow the video for detailed help.
 3. Launch an instance of ElasticBox from the appliance image and flavor.
 
 ### Next Steps
+<<<<<<< HEAD
 * [Configure networking](./appliance-networking.md)
 * [Set up the appliance for use](./appliance-initialsetup.md)
 
 ### Contacting ElasticBox Support
 We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+=======
+* [Configure networking](../ElasticBox/appliance-networking.md)
+* [Set up the appliance for use](../ElasticBox/appliance-initialsetup.md)
+
+### Contacting ElasticBox Support
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+>>>>>>> CenturyLinkCloud/master
 
 For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log

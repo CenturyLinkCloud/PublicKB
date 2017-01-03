@@ -13,9 +13,15 @@ Reports show cloud costs and resource usage in public and private clouds. It inc
 
 If reporting is turned on for your enterprise, ElasticBox Administrators can access it from the admin console. Reports also help you make budget-friendly decisions and curb costs through cost center budgeting.
 
+<<<<<<< HEAD
 * Reports - Show cost and usage for a given date range.
 * Pricing list - Shows public cloud pricing for Linux and Windows VMs by instance type. The pricing helps us measure costs for public cloud reports. Since private clouds don’t have that information, we report on resource usage.
 * Cost center budgeting] - Lets you set and enforce a quota on how much user or team workspaces can consume from a cloud account per month.
+=======
+* [Reports](../ElasticBox/reporting.md). Show cost and usage for a given date range.
+* [Pricing list](../ElasticBox/reporting.md). Shows public cloud pricing for Linux and Windows VMs by instance type. The pricing helps us measure costs for public cloud reports. Since private clouds don’t have that information, we report on resource usage.
+* [Cost center budgeting](../ElasticBox/reporting.md/). Lets you set and enforce a quota on how much user or team workspaces can consume from a cloud account per month.
+>>>>>>> CenturyLinkCloud/master
 
 ### Reports
 Reports are in the admin console under Providers > Reports. They show the cost and resources consumed by public and private cloud deployments. There are two kinds of reports–overview and cloud specific reports. The overview report gives the overall big picture while cloud specific reports drill-down data by cloud.
@@ -112,7 +118,11 @@ Cost Centers help you set and enforce a quota on how much users or team workspac
    ![admin-reports14.png](../images/ElasticBox/admin-reports14.png)
 
 ### Contacting ElasticBox Support
+<<<<<<< HEAD
 We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+=======
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+>>>>>>> CenturyLinkCloud/master
 
 For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
