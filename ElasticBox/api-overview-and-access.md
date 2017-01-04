@@ -41,13 +41,13 @@ Follow these steps to get a token from your ElasticBox account.
 
 ![api1](../images/EBapi1.png)
 
-3. Enter a descriptive name for the token and click **Create Token**.
+  3. Enter a descriptive name for the token and click **Create Token**.
 
 ![api2](../images/EBapi2.png)
 
-4. Use the clipboard icon to copy the token to then pass it in your API request headers.
+  4. Use the clipboard icon to copy the token to then pass it in your API request headers.
 
-### More on tokens
+### More on Tokens
 
 * You can create and use up to 50 tokens.
 * Tokens never expire. To invalidate an API call, simply delete the token that’s used.
@@ -62,3 +62,15 @@ As part of the request headers, specify the latest version of the ElasticBox rel
 Headers for a sample request look like this.
 
 ![api3](../images/EBapi3.png)
+
+### Contacting ElasticBox Support
+
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+
+For issues related to API calls, send the request body along with details related to the issue.
+
+In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
+Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
+Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+
+
