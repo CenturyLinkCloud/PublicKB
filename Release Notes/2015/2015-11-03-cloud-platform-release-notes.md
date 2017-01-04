@@ -117,7 +117,7 @@ Start controlling your storage sprawl by [deploying CloudFuze](https://www.ctl.i
 
   Customers should consider using the built-in CPU/memory/storage monitoring available in the Control Portal (https://www.ctl.io/knowledge-base/network/monitors-that-are-supported/).
 
-  Additional options include managed servers (https://www.ctl.io/knowledge-base/managed-services/managed-operating-system-frequently-asked-questions/) or any number of our powerful ecosystem options (https://www.ctl.io/knowledge-base/ecosystem-partners/ecosystem-partner-list/#management-and-monitoring).
+  Additional options include managed servers (https://www.ctl.io/knowledge-base/managed-services/managed-operating-system-frequently-asked-questions/) or any number of our powerful ecosystem options (https://www.ctl.io/knowledge-base/ecosystem-partners/general/ecosystem-partner-list/#management-and-monitoring).
 
 ### Selected Bug Fixes (1)
 

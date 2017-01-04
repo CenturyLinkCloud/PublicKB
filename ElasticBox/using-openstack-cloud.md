@@ -10,9 +10,9 @@
 If OpenStack is implemented at your end, you can use ElasticBox to automatically launch configured application instances from boxes onto the cloud. Both the Grizzly and Havana OpenStack releases are supported in the ElasticBox Enterprise Edition.
 
 **In this article:**
-* [OpenStack prerequisites](../ElasticBox/using-the-openstack-cloud.md)
-* [Registering your OpenStack project in ElasticBox](../ElasticBox/using-the-openstack-cloud.md)
-* [Deploying in your OpenStack project](../ElasticBox/using-the-openstack-cloud.md)
+* OpenStack prerequisites
+* Registering your OpenStack project in ElasticBox
+* Deploying in your OpenStack project
 
 ### OpenStack Prerequisites
 
@@ -34,7 +34,7 @@ The credentials are in an OpenStack RC file in the OpenStack dashboard.
 ![openstack-get-credentials-1.png](../images/ElasticBox/openstack-get-credentials-1.png)
 
 **Steps**
-1. [Log in to the OpenStack dashboard](//docs.openstack.org/user-guide/content/log_in_dashboard.html). Choose the project for which you want to download the OpenStack RC file.
+1. [Log in to the OpenStack dashboard](http://docs.openstack.org/user-guide/index.html). Choose the project for which you want to download the OpenStack RC file.
 Under **Access & Security** > **API Access**, click **Download OpenStack RC File**. The filename has an openrc.sh format.
 **Note:** It contains the project (tenant name) and username. You’ll need this to register the project in ElasticBox. The password is what you entered to login to the dashboard.
 
@@ -69,7 +69,7 @@ Select these deployment options to [launch an instance](../ElasticBox/deploying-
 | **Option**  |  **Description** |
 |----------|:-----|
 | Project |	This is the project in which you wish to launch instances. |
-| Image | Select the Linux or Windows image on which to launch the box.  OpenStack supports many of the vendor specific [disk and container image formats](//docs.openstack.org/grizzly/openstack-compute/admin/content/image-formats.html). |
+| Image | Select the Linux or Windows image on which to launch the box.  OpenStack supports many of the vendor specific [disk and container image formats](http://docs.openstack.org/developer/glance/formats.html). |
 | Flavor | Pick an image size as defined in OpenStack for RAM, disk, number of cores, and so on. By default, you can choose from the five default flavors or create custom flavors in OpenStack and then select them here. |
 | Keypairs | The keypairs you generated in OpenStack are available in this drop-down. This allows you to SSH into the instance using the private key downloaded to your machine. |
 | Instances | Select the number of instances you want to launch for the project. |
@@ -88,8 +88,8 @@ Increase the instance storage and add better I/O performance for your applicatio
 | **Option**  |  **Description** |
 |----------|:-----|
 | Networks | Select the network associated with the project. The network routes traffic to and from the instances based on the security group settings. |
-| Security Group |	Select a custom or automatic security group. The security group defines the firewall rules to allow traffic to and from the instance. Remember that within a security group all instances can talk to each other. Custom. If you created a custom security group in OpenStack, then select it from the drop-down. You can also choose the default security group that’s available for every project in OpenStack. The default security group blocks all incoming traffic to the instance and allows only outgoing traffic.**Automatic.** Choose this to let ElasticBox create a firewall rule that allows not only all outgoing traffic but also incoming traffic through the port set on the box:<li>Rule (All TCP). This applies settings from the TCP rule template.</li><li>Remote (CIDR). This allows access by CIDR, a block of IP addresses.</li><li>CIDR (0.0.0.0/0). This limits access to just the block of IP addresses specified.</li> |
-| Floating IP Pool | If configured, select a pool of floating IP addresses for the project. When the instance is launched, OpenStack dynamically assigns an IP address from this floating pool to the instance. This allows traffic from the outside world to the instance via the public IP address. For more details, see the OpenStack help on [IP addresses](//docs.openstack.org/user-guide-admin/content/manage_ip_addresses.html). |
+| Security Group | Select a custom or automatic security group. The security group defines the firewall rules to allow traffic to and from the instance. Remember that within a security group all instances can talk to each other. Custom. If you created a custom security group in OpenStack, then select it from the drop-down. You can also choose the default security group that’s available for every project in OpenStack. The default security group blocks all incoming traffic to the instance and allows only outgoing traffic. **Automatic.** Choose this to let ElasticBox create a firewall rule that allows not only all outgoing traffic but also incoming traffic through the port set on the box:<li>Rule (All TCP). This applies settings from the TCP rule template.</li><li>Remote (CIDR). This allows access by CIDR, a block of IP addresses.</li><li>CIDR (0.0.0.0/0). This limits access to just the block of IP addresses specified.</li> |
+| Floating IP Pool | If configured, select a pool of floating IP addresses for the project. When the instance is launched, OpenStack dynamically assigns an IP address from this floating pool to the instance. This allows traffic from the outside world to the instance via the public IP address. For more details, see the OpenStack help on [IP addresses](http://docs.openstack.org/admin-guide/index.html). |
 
 **Variables**
 
@@ -97,7 +97,7 @@ These are dependencies defined on the box. To deploy the box dependencies on the
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

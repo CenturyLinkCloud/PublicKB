@@ -8,13 +8,13 @@
 
 ### Using Rackspace
 
-If you deploy workloads to [Rackspace Cloud](//mycloud.rackspace.com/), avoid configuring servers manually and get them running exactly the way you want consistently each time using ElasticBox. You can automatically provision or de-provision and run a sequence of commands and workflows to manage modules and applications remotely from ElasticBox. For more information, learn how [ElasticBox can solve your DevOps use cases](//www.ctl.io/knowledge-base/ElasticBox).
+If you deploy workloads to [Rackspace Cloud](https://mycloud.rackspace.com/), avoid configuring servers manually and get them running exactly the way you want consistently each time using ElasticBox. You can automatically provision or de-provision and run a sequence of commands and workflows to manage modules and applications remotely from ElasticBox. For more information, learn how [ElasticBox can solve your DevOps use cases](//www.ctl.io/elasticbox/).
 
 In Rackspace Cloud, we manage your workloads on Linux servers, and provision and orchestrate deployments through the open source OpenStack Nova Python client.
 
 **In this article:**
-* [Register Rackspace Cloud in ElasticBox](../ElasticBox/using-rackspacecloud.md)
-* [Deploy on Rackspace Cloud from ElasticBox](../ElasticBox/using-rackspacecloud.md)
+* Register Rackspace Cloud in ElasticBox
+* Deploy on Rackspace Cloud from ElasticBox
 
 ### Register Rackspace Cloud in ElasticBox
 
@@ -27,7 +27,7 @@ You require an account on [Rackspace Cloud](https://mycloud.rackspace.com/) to a
 ![rackspace-entercredentials-1.png](../images/ElasticBox/rackspace-entercredentials-1.png)
 
 * **Identity URL.** This the endpoint of the Rackspace Cloud Identity API, which authenticates access and is also the entry point to any other service API.
-* **Project. **Enter the tenant ID available at the top of the username drop-down in the [Rackspace Cloud console](//mycloud.rackspace.com/).
+* **Project. **Enter the tenant ID available at the top of the username drop-down in the [Rackspace Cloud console](https://mycloud.rackspace.com/).
 * **Username.** Enter the username for a user that has full access to your Rackspace Cloud account. We need it to make API requests as this user.
 * **Password.** Enter the password for the user.
 
@@ -59,7 +59,7 @@ Select these deployment options when you [launch a new instance](../ElasticBox/d
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

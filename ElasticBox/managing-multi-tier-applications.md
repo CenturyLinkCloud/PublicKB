@@ -50,17 +50,17 @@ To do something for each instance in the binding, you can use a jinja2 loop. For
 
 ```
 {% for i in binding %}
-{{ i.address.public or i.address.private }}
+\{{ i.address.public or i.address.private }}
 {% endfor %}
 ```
 
 Lastly, the list of bindings provides direct access to the first instance attributes. For example,
 
-{{ binding.varName }}
+`\{{ binding.varName }}`
 
 is equivalent to
 
-{{ binding[0].varName }}
+`\{{ binding[0].varName }}`
 
 ### Bindings automatic reconfiguration
 
@@ -98,7 +98,7 @@ Here the ‘services’ binding variable polls each instance fulfilling the bind
 ```
 upstream services {
 {% for binding in services %}
-    server {{ binding.address.public or binding.address.private }}:{{ binding.PORT }};
+    server \{{ binding.address.public or binding.address.private }}:\{{ binding.PORT }};
 {% endfor %}
 }
 ```

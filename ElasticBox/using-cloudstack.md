@@ -12,10 +12,10 @@ You can deploy and manage box configurations on Linux and Windows virtual machin
 
 **In this article:**
 
-* [Getting CloudStack Credentials](../ElasticBox/using-cloudstack.md)
-* [Registering CloudStack in ElasticBox](../ElasticBox/using-cloudstack.md)
-* [Bootstrapping CloudStack Templates](../ElasticBox/using-cloudstack.md)
-* [Deploying in CloudStack](../ElasticBox/using-cloudstack.md)
+* Getting CloudStack Credentials
+* Registering CloudStack in ElasticBox
+* Bootstrapping CloudStack Templates
+* Deploying in CloudStack
 
 ### Getting CloudStack Credentials
 
@@ -28,14 +28,14 @@ You need a CloudStack environment and access to the management console.
 1. Log in to your CloudStack management console as a user or administrator.
 ![cloudstack-log-in-console-1.png](../images/ElasticBox/cloudstack-log-in-console-1.png)
 
-2. Click **Accounts** > **<your user account>**.
-![EBcloudstack-selectyouraccount-underaccounts-2.png](../images/ElasticBox/EBcloudstack-selectyouraccount-underaccounts-2.png)
+2. Click **Accounts** > **your user account**.
+![cloudstack-selectyouraccount-underaccounts-2.png](../images/ElasticBox/cloudstack-selectyouraccount-underaccounts-2.png)
 
 3. Click **View Users** and select your user account.
-![EBcloudstack-clickviewusers-credentials.png-3.png](../images/ElasticBox/EBcloudstack-clickviewusers-credentials.png-3.png)
+![cloudstack-clickviewusers-credentials.png-3.png](../images/ElasticBox/cloudstack-clickviewusers-credentials.png-3.png)
 
 4. If available, copy the existing API and secret keys. Otherwise, click the generate keys icon to create them.
-![EBcloudstack-copyorgenerateapiandsecretkeys-credentials-4.png](../images/ElasticBox/EBcloudstack-copyorgenerateapiandsecretkeys-credentials-4.png)
+![cloudstack-copyorgenerateapiandsecretkeys-credentials-4.png](../images/ElasticBox/cloudstack-copyorgenerateapiandsecretkeys-credentials-4.png)
 
 ### Registering CloudStack in ElasticBox
 
@@ -44,11 +44,11 @@ You need a CloudStack environment and access to the management console.
 2. Click **Providers** > **New Provider.**
 3. Select **CloudStack.**
 4. Enter your CloudStack user API credentials.
-![EBcloudstack-enteruserapicredentials-register-elasticbox-5.png](../images/ElasticBox/EBcloudstack-enteruserapicredentials-register-elasticbox-5.png)
+![cloudstack-enteruserapicredentials-register-elasticbox-5.png](../images/ElasticBox/cloudstack-enteruserapicredentials-register-elasticbox-5.png)
 
 * **URL.** API endpoint to the CloudStack management server that typically has this format, **http://10.0.128.21:8080/client/api.**
-* **API Key.** Part of the user [API credentials](../ElasticBox/using-cloudstack.md) generated for the user account in the CloudStack management console.
-* **Secret Key.** Part of the user [API credentials]../ElasticBox/using-cloudstack.md) generated for the user account in the CloudStack management console.
+* **API Key.** Part of the user [API credentials](./using-cloudstack.md) generated for the user account in the CloudStack management console.
+* **Secret Key.** Part of the user [API credentials] (./using-cloudstack.md) generated for the user account in the CloudStack management console.
 5. Click **Save.**
 
 ### Bootstrapping CloudStack Templates
@@ -67,13 +67,13 @@ In order for ElasticBox to configure, deploy, and manage box configurations in C
 
 **Steps**
 1. Log in to the Windows virtual machine template using remote desktop protocol (RDP).
-2. [Download the script from this URL](//elasticbox.com/agent/windows/cloudstack/template_customization_script.ps1).
+2. [Download the script from this URL](https://elasticbox.com/agent/windows/cloudstack/template_customization_script.ps1).
 3. Right-click the script file and click **Run PowerShell**.
-**Note:** For information on creating custom templates, see the [Apache CloudStack help](//docs.cloudstack.apache.org/projects/cloudstack-administration/en/latest/templates.html#exporting-templates).
+**Note:** For information on creating custom templates, see the [Apache CloudStack help](https://docs.cloudstack.apache.org/projects/cloudstack-administration/en/latest/templates.html#exporting-templates).
 
 ### Deploying in CloudStack
 
-When you’re ready to [launch an instance](../ElasticBox/deploying-managing-instance.md) in CloudStack, you can define Linux or Windows deployment options in a deployment profile. ElasticBox passes the compute offering, disk offering, and template options you provide in the profile as parameters to CloudStack, which then spins up the virtual machine.
+When you’re ready to [launch an instance](./deploying-managing-instances.md) in CloudStack, you can define Linux or Windows deployment options in a deployment profile. ElasticBox passes the compute offering, disk offering, and template options you provide in the profile as parameters to CloudStack, which then spins up the virtual machine.
 
 **Deployment**
 
@@ -100,7 +100,7 @@ When you’re ready to [launch an instance](../ElasticBox/deploying-managing-ins
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

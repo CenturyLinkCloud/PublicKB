@@ -7,19 +7,19 @@
 
 ### Using SoftLayer
 
-Automate application deployments through ElasticBox when you launch to Linux or Windows virtual servers in the IBM SoftLayer public cloud. ElasticBox simplifies deployments with a dedicated focus on applications rather than infrastructure. See the [benefits and use cases](//www.ctl.io/knowledge-base/ElasticBox).
+Automate application deployments through ElasticBox when you launch to Linux or Windows virtual servers in the IBM SoftLayer public cloud. ElasticBox simplifies deployments with a dedicated focus on applications rather than infrastructure.
 
 **In this article:**
 
-* [Register SoftLayer provider in ElasticBox](../ElasticBox/using-softlayer.md)
-* [Deploy to SoftLayer from ElasticBox](../ElasticBox/using-softlayer.md)
+* Register SoftLayer provider in ElasticBox
+* Deploy to SoftLayer from ElasticBox
 
 ### Register SoftLayer Provider in ElasticBox
 
-You need a [SoftLayer account](//www.softlayer.com/info/free-cloud) to be able to deploy from ElasticBox. When you have an account, follow these steps to register it in ElasticBox to automate your deployments.
+You need a [SoftLayer account](http://www.softlayer.com/info/free-cloud) to be able to deploy from ElasticBox. When you have an account, follow these steps to register it in ElasticBox to automate your deployments.
 
 **Steps**
-1. Log in to the [SoftLayer portal](//control.softlayer.com/).
+1. Log in to the [SoftLayer portal](https://control.softlayer.com/).
 2. Under Account > Users > API Key, click **Generate** to create an API Key or click **View** to copy it. ElasticBox needs the key to make API requests on your behalf.
 ![softlayer-getapikey-1.png](../images/ElasticBox/softlayer-getapikey-1.png)
 3. Copy the API key.
@@ -48,7 +48,7 @@ Note a couple of things about instances you deploy on SoftLayer through ElasticB
 | Cores | Select virtual CPUs for the instance. For dedicated processing speed that others don’t share, choose private. You can get up to 8 private cores and up to 16 public. |
 | Memory | Allocate RAM for the instance. |
 | Operating System | Select from a list of SoftLayer Linux or Windows images. Images are specific to the box service type, that is, Linux or Windows. |
-| SSH Key |	Select a public key to SSH into the Linux or Windows instance. | The drop-down shows keys added to your SoftLayer account. |
+| SSH Key |	Select a public key to SSH into the Linux or Windows instance. The drop-down shows keys added to your SoftLayer account. |
 | Instances | Specify the number of instances to provision. |
 
 **Block Devices**
@@ -64,7 +64,7 @@ By default, the machine is provisioned with 25GB local disk space. You can incre
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

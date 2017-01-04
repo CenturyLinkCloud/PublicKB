@@ -8,12 +8,12 @@
 
 ### Using CenturyLink Cloud
 
-Automate application deployments through ElasticBox when you launch to Linux or Windows virtual servers in the CenturyLink Cloud public cloud. ElasticBox simplifies deployments with a dedicated focus on applications rather than infrastructure. [See the benefits and use cases.](/www.ctl.io/knowledge-base/ElasticBox/documentation/)
+Automate application deployments through ElasticBox when you launch to Linux or Windows virtual servers in the CenturyLink Cloud public cloud. ElasticBox simplifies deployments with a dedicated focus on applications rather than infrastructure.
 
 **In this article:**
 
-* [Register CenturyLink Cloud provider in ElasticBox](../ElasticBox/using-centurylink.md)
-* [Deploy to CenturyLink Cloud from ElasticBox](../ElasticBox/using-centurylink/.md)
+* Register CenturyLink Cloud provider in ElasticBox
+* Deploy to CenturyLink Cloud from ElasticBox
 
 ### Register CenturyLink Cloud Provider in ElasticBox
 
@@ -21,8 +21,9 @@ You need a [CenturyLink Cloud account](//www.ctl.io/) to be able to deploy from 
 
 **Steps**
 
-1. In ElasticBox, go to Providers > New Provider and select **CenturyLink.**
+1. In ElasticBox, go to **Providers** > **New Provider** and select **CenturyLink.**
 2. Enter the CenturyLink username and password as shown and save.
+
 ![centurylink-add-provider-credentials-1.png](../images/ElasticBox/centurylink-add-provider-credentials-1.png)
 
 ### Deploy to CenturyLink Cloud from ElasticBox
@@ -44,9 +45,9 @@ Note a couple of things about instances you deploy on CenturyLink Cloud through 
 
 | **Option**  |  **Description** |
 |----------|:-----|
-| Datacenter |	Select a location to place the instance, for example, UC1. |
+| Datacenter | Select a location to place the instance, for example, UC1. |
 | Group |	Select placement group for the new instance. |
-| Template |	Select from a list of CenturyLink Cloud Linux or Windows images. Images are specific to the box service type, that is, Linux or Windows. |
+| Template | Select from a list of CenturyLink Cloud Linux or Windows images. Images are specific to the box service type, that is, Linux or Windows. |
 | Managed |	Allow CenturyLink manage this server. |
 | Instances | Specify the number of instances to provision. |
 
@@ -58,10 +59,11 @@ Note a couple of things about instances you deploy on CenturyLink Cloud through 
 | Public IP	| Check the box to attach a public IP address to the new instance. |
 
 **Compute**
+
 | **Option**  |  **Description** |
 |----------|:-----|
-| CPUs |	Select virtual CPUs for the instance. You can get up to 16 cores. |
-| Memory |	Allocate RAM for the instance. You can get up to 128 GB. |
+| CPUs | Select virtual CPUs for the instance. You can get up to 16 cores. |
+| Memory | Allocate RAM for the instance. You can get up to 128 GB. |
 
 **Disks**
 
@@ -69,7 +71,7 @@ By default, the machine is provisioned with 17GB local disk space. You can add m
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
