@@ -10,18 +10,20 @@
 
 | Resource |      Description    |
 |----------|:-------------|
-| [GET /services/organizations/{organization_name}](../ElasticBox/organizations.md) |  Gets the schema of the given organization. |
-| [PUT /services/organizations/{organization_name}](../ElasticBox/organizations.md) |    Updates an existing organization.  |
-| [PUT /organizations/{organization_name}/sync_groups](../ElasticBox/organizations.md) | Queues a request to sync LDAP groups. |
+| [GET /services/organizations/{organization_name}](./organizations-api.md) |  Gets the schema of the given organization. |
+| [PUT /services/organizations/{organization_name}](./organizations-api.md) |    Updates an existing organization.  |
+| [PUT /organizations/{organization_name}/sync_groups](./organizations-api.md) | Queues a request to sync LDAP groups. |
 
 ### GET /services/organizations/{organization_name}
 
 Gets the schema of a given organization.
 
 **Normal Response Codes**
+
 * 200
 
 **Common Error Response Codes**
+
 * User doesn’t belong to the organization (403)
 * Not Found (404)
 
@@ -277,13 +279,16 @@ ElasticBox-Release: 4.0
 Updates an existing organization given its name. Only the organization administrator can update.
 
 **Normal Response Codes**
+
 * 200
 
 **Common Error Response Codes**
+
 * User doesn’t belong to the organization (403)
 * Not Found (404)
 
 **Request Headers**
+
 ```
 Content-Type: application/json
 Elasticbox-Token: your_authentication_token
@@ -291,6 +296,7 @@ ElasticBox-Release: 4.0
 ```
 
 **Request Body**
+
 ```
 {
    "schema":"http://elasticbox.net/schemas/organization",
@@ -973,7 +979,7 @@ ElasticBox-Release: 4.0
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

@@ -26,10 +26,11 @@ For the upgrade process to the new virtual appliance, please follow the steps be
 8. Log out and wait for the new appliance to restart. This process will take some time as it needs to migrate the data.
 9. Login with the same credentials you used for the old appliance.
 
-In case you experience any issues, [contact support](https://www.ctl.io/knowledge-base/ElasticBox/contacting-support.md/). We will walk you through the appliance upgrading process.
+In case you experience any issues, [contact support](mailto:support@elasticbox.com). We will walk you through the appliance upgrading process.
 
 ### Contacting ElasticBox Support
-We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](https://elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log

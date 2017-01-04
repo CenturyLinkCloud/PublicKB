@@ -21,15 +21,15 @@ On the Boxes page, click **New > Deployment Policy**. Select a cloud provider ad
 
 Click **Edit** to customize the policy. Select the resource, network, and other deployment settings from the cloud provider. See the provider help for details.
 
-* [Google Cloud](../ElasticBox/using-your-google-cloud-account.md)
-* [Amazon Web Services](../ElasticBox/using-your-aws-account.md)
-* [AWS GovCloud](../ElasticBox/using-awsgovcloud.md)
-* [VMware vCenter](../ElasticBox/using-the-vsphere-private-datacenter.md)
-* [Azure](../ElasticBox/using-azure.md)
-* [OpenStack](../ElasticBox/using-the-openstack-cloud.md)
-* [Rackspace Cloud](../ElasticBox/using-rackspacecloud.md)
-* [CloudStack](../ElasticBox/using-cloudstack.md)
-* [SoftLayer](../ElasticBox/using-softlayer.md)
+* [Google Cloud](./using-google-cloud.md)
+* [Amazon Web Services](./using-your-aws-account.md)
+* [AWS GovCloud](./using-aws-govcloud.md)
+* [VMware vCenter](./using-the-wmware-vcenter-private-datacenter.md)
+* [Azure](./using-azure.md)
+* [OpenStack](./using-openstack-cloud.md)
+* [Rackspace Cloud](./using-rackspace-cloud.md)
+* [CloudStack](./using-cloudstack.md)
+* [SoftLayer](./using-softlayer.md)
 
 ### Give Access to the Policy
 
@@ -52,7 +52,7 @@ Admin boxes are useful in these deployment scenarios:
 * **Register virtual machines on a server**. For every virtual machine deployed, an admin box, for example, can register it to a Chef Master server and then release it when the machine terminates.
 * **Install certificates**. An admin can install certificates locally on every virtual machine in production as a simple example.
 
-### Creating and executing an admin box
+### Creating and Executing an Admin Box
 
 To create an admin box, open a deployment policy and add a script box under Variables. Typically, you want to add a script box that matches the policy OS type. In a Windows policy for example, add a script box that runs on Windows. A policy can have as many admin boxes as needed.
 
