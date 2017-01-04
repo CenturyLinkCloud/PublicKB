@@ -310,7 +310,7 @@ Enter details as given:
 **Description**. Enter information to identify your ElasticBox account in Jenkins jobs.
 **End Point URL**. Enter a custom URL if using ElasticBox as an appliance.
 **Max. No. of Instances**. This is the total number of instances Jenkins will launch through your account. We recommend at least 5.
-**Authentication Token**. [Get a token](./api-get-token.md) and paste it here. If you use username, password to access ElasticBox, get one by clicking **Get Authentication Token**.
+**Authentication Token**. [Get a token](./api-overview-and-access.md) and paste it here. If you use username, password to access ElasticBox, get one by clicking **Get Authentication Token**.
 2. Click **Verify Authentication Token** to see if Jenkins can connect to ElasticBox.
 3. Click **Save** when done.
 
