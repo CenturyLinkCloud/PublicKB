@@ -74,6 +74,7 @@ This gives your developers, operations engineers, or IT admins access to the sam
 1. Sign in as the [default administrator](../ElasticBox/enterprise-setup-onboarding.md).
 2. From the user menu drop-down on the top right, select **Admin Console**.
 3. Under Authentication, make sure LDAP is on and [set up with at least one source with the conditions to sync groups](../ElasticBox/user-authentication.md).
+
 4. Turn on** LDAP Group Sync**.
    ![admin-user6.png](../images/ElasticBox/admin-user6.png)
 

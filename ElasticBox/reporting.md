@@ -25,7 +25,7 @@ This section has some report samples to help understand how much users consume a
 ### Overview Report
 To see the report, select **Overview** under Providers > Reports in the admin console and select a date range.
 
-**Sample #1: **How much do we spend on cloud deployments daily, weekly, monthly, or over time?
+**Sample #1:** How much do we spend on cloud deployments daily, weekly, monthly, or over time?
 
 This example shows total dollars spent on public and private cloud deployments in the last 10 weeks. Select a different date range to see other weekly or monthly data. For daily values, highlight a specific day in the chart.
 ![admin-reports1.png](../images/ElasticBox/admin-reports1.png)
@@ -59,7 +59,7 @@ If we look under Sizes in this AWS report, we see that t1.micro is the most depl
 
 **Sample #6:** Where do users most deploy?
 
-To what regions or datacenters do users most deploy in AWS? That’s what this AWS report answers under Locations.
+To what regions or data centers do users most deploy in AWS? That’s what this AWS report answers under Locations.
 
 ![admin-reports6.png](../images/ElasticBox/admin-reports6.png)
 
