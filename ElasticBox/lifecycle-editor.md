@@ -34,7 +34,7 @@ Edit the box configuration of a running instance by modifying its event scripts 
 
 **Changing Events**
 
-[Events](../ElasticBox/start-stop-and-upgrade-boxes.md) let you control the lifecycle of your application in the virtual infrastructure. Change them to modify how your application behaves.
+[Events](./start-stop-and-upgrade-boxes.md) let you control the lifecycle of your application in the virtual infrastructure. Change them to modify how your application behaves.
 
 ![lifecycle-editor-3.png](../images/ElasticBox/lifecycle-editor-3.png)
 
@@ -44,7 +44,7 @@ Edit the box configuration of a running instance by modifying its event scripts 
 
 **Changing Variable Values**
 
-You can redeploy an instance with different parameters by changing the [variable](../ElasticBox/parameterizing-boxes-with-variables.md) values.
+You can redeploy an instance with different parameters by changing the [variable](./parameterizing-boxes-with-variables.md) values.
 
 * To edit variable values, click the pencil icon for a variable and change its value.
 * To edit file type variables, click the pencil icon and click **Edit File**.
@@ -53,7 +53,7 @@ You can redeploy an instance with different parameters by changing the [variable
 
 **Changing Binding Variable Values**
 
-When an instance depends on another box or service–like a load balancer, caching, or database service–you can link them together with a [binding](../ElasticBox/parameterizing-boxes-with-variables.md). In the Lifecycle Editor, you can modify the binding value to select a different instance.
+When an instance depends on another box or service–like a load balancer, caching, or database service–you can link them together with a [binding](./parameterizing-boxes-with-variables.md). In the Lifecycle Editor, you can modify the binding value to select a different instance.
 
 ![lifecycle-editor-5.png](../images/ElasticBox/lifecycle-editor-5.png)
 
@@ -62,7 +62,7 @@ When an instance depends on another box or service–like a load balancer, cachi
 
 ### Re-Launching the Instance with Changes
 
-Once you’ve saved changes in the lifecycle editor, they are locally stored until you trigger a lifecycle action on the instance. You can re-apply changes to the running instance by triggering an install or configure event, which runs the box event scripts in the virtual infrastructure. To learn about other actions you can take, see [Handling Instance Lifecycle States](../ElasticBox/deploying-managing-instances.md).
+Once you’ve saved changes in the lifecycle editor, they are locally stored until you trigger a lifecycle action on the instance. You can re-apply changes to the running instance by triggering an install or configure event, which runs the box event scripts in the virtual infrastructure. To learn about other actions you can take, see [Handling Instance Lifecycle States](./deploying-managing-instances.md).
 
 In this example, we click **Reinstall** to run install type events in the virtual environment. Install type events include all the install and post install event scripts in the main and nested boxes.
 
@@ -95,7 +95,7 @@ Click the up arrow to push or the down arrow to pull as shown in the variables s
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
