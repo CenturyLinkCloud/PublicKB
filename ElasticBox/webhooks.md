@@ -196,7 +196,7 @@ application = bottle.default_app()
 
    ![admin-webhooks4.png](../images/ElasticBox/admin-webhooks4.png)
 
-3. Add the custom Infoblox web service endpoint as a webhook. Under [Admin Console](..ElasticBox/admin-overview.md) > Webhooks, enter the endpoint of the deployed webservice as a webhook like this: http://endpoint_of_webservice_instance/requestIP
+3. Add the custom Infoblox web service endpoint as a webhook. Under [Admin Console](./admin-overview.md) > Webhooks, enter the endpoint of the deployed webservice as a webhook like this: http://endpoint_of_webservice_instance/requestIP
 
    ![admin-webhooks5.png](../images/ElasticBox/admin-webhooks5.png)
 
