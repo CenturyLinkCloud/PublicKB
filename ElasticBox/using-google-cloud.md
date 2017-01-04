@@ -17,8 +17,8 @@ Based on the settings, we work with the Google Compute Engine APIs to launch you
 
 **In this article:**
 
-* [Connecting your Google Cloud account](../ElasticBox/using-your-google-cloud-account.md)
-* [Deploying in Google Cloud](../ElasticBox/using-your-google-cloud-account.md)
+* Connecting your Google Cloud account
+* Deploying in Google Cloud
 
 ### Connecting Your Google Cloud Account
 
@@ -32,13 +32,16 @@ Associate your Google account in Google Cloud by creating a project, enabling bi
 
 1. Sign in to [Google developers console](https://console.developers.google.com/) with your google account.
 2. Create a project. Click **Create Project** and give a meaningful name and ID. Copy the project ID, which you’ll shortly need to share in ElasticBox.
-![googlecloud-createproject-1.png](../images/ElasticBox/googlecloud-createproject-1.png)
+
+  ![googlecloud-createproject-1.png](../images/ElasticBox/googlecloud-createproject-1.png)
+
 3. Add billing. Under Billing & Settings, click **Enable Billing.**
 
 **Note:** You have to provide credit card details for usage based billing. See Google’s pricing policy for costs incurred to host on the Google Cloud Platform. ElasticBox assumes no responsibility for these costs.
 
 4. Turn on Google Compute Engine. Under APIS & AUTH > APIs, turn Google Compute Engine to **ON.**
-![googlecloud-turnoncomputeengineapi-2.png](../images/ElasticBox/googlecloud-turnoncomputeengineapi-2.png)
+
+  ![googlecloud-turnoncomputeengineapi-2.png](../images/ElasticBox/googlecloud-turnoncomputeengineapi-2.png)
 
 ### Step 2. Connect the Account in ElasticBox
 
@@ -94,13 +97,15 @@ The [deployment policy ](../ElasticBox/deploymentpolicy-box.md)for Google Cloud 
 **Disks**
 
 ![googlecloud-deployment-options-disks-8.png](../images/ElasticBox/googlecloud-deployment-options-disks-8.png)
+
 Boost primary storage for the virtual machine by adding standard persistent root disk resources. They provide bulk storage or sequential I/O with large block sizes.
 
 Specify these options when you add a disk resource:
 * **Size:** Specify a size from 10 GB up to 10 TB (10,240 GB). Larger machine types offer higher I/O levels.
 * **Delete on Terminate:** Specify whether to delete the root persistent disk once you terminate the instance. By default it is deleted, but you can uncheck the option if you want to preserve it.
 
-Things to know:
+**Things to know:**
+
 * Since disks are zone based resources, they are launched in the same zone as the virtual machine. Each disk is attached with a drive name like /dev/sda for example.
 * You can attach up to 16 standard persistent root disks with a combined size less than or equal to 10 TB or you can attach one disk 10 TB in size. For each disk that you add, ElasticBox requests Google Cloud to provision and mount an empty persistent disk to the virtual machine.
 
@@ -108,7 +113,7 @@ For more information, see [persistent disks](https://developers.google.com/compu
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

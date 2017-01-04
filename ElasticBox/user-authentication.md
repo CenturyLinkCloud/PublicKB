@@ -7,12 +7,12 @@
 }}}
 
 ### Enable User Authentication
-In ElasticBox enterprise organizations, users can sign in using any of the single sign-on authentication options you enable in the [admin console](https://www.ctl.io/knowledge-base/ElasticBox/admin-overview.md/).
+In ElasticBox enterprise organizations, users can sign in using any of the single sign-on authentication options you enable in the [admin console](../ElasticBox/admin-overview.md/).
 ![admin-user1.png](../images/ElasticBox/admin-user1.png)
 
 **In this article:**
-* [Single sign-on with Google, GitHub, or username, password](https://www.ctl.io/knowledge-base/ElasticBox/user-authentication.md/#single-sign-on-with-google-github-or-username-password)
-* [Single sign-on with LDAP](https://www.ctl.io/knowledge-base/ElasticBox/user-authentication.md/#single-sign-on-with-ldap)
+* [Single sign-on with Google, GitHub, or username, password](../ElasticBox/user-authentication.md)
+* [Single sign-on with LDAP](../ElasticBox/user-authentication.md)
 
 ### Single sign-on with Google, GitHub, or username, password
 To allow users to sign in with an ElasticBox username and password, turn on that option under Authentication in the admin console.
@@ -27,17 +27,17 @@ Add LDAP sources in ElasticBox to match the structure of LDAP in your organizati
 When users sign in to ElasticBox with their LDAP credentials, we don’t store their passwords. The login session passes on their credentials to each LDAP source defined in ElasticBox. The LDAP server looks the user up by their username or Use Principal Name (UPN), typically in the **yourname@example.com** format. The server responds with an authorized or unauthorized request. If authorized, we grant the user access in ElasticBox. Else, we deny access.
 
 **In this article:**
-* [Setting up LDAP in ElasticBox](https://www.ctl.io/knowledge-base/ElasticBox/user-authentication.md/#setting-up-ldap-in-elasticbox)
-* [Syncing with LDAP groups](https://www.ctl.io/knowledge-base/ElasticBox/user-authentication.md/#syncing-with-ldap-groups)
-* [Giving LDAP accounts admin access](https://www.ctl.io/knowledge-base/ElasticBox/user-authentication.md/#giving-ldap-accounts-admin-access)
+* [Setting up LDAP in ElasticBox](../ElasticBox/user-authentication.md)
+* [Syncing with LDAP groups](../ElasticBox/user-authentication.md)
+* [Giving LDAP accounts admin access](../ElasticBox/user-authentication.md)
 
 ### Setting Up LDAP in ElasticBox
 
 **Steps**
-1. Sign in to ElasticBox as the [default administrator](https://www.ctl.io/knowledge-base/ElasticBox/enterprise-setup-onboarding.md/#enterprise-setup).
+1. Sign in to ElasticBox as the [default administrator](../ElasticBox/enterprise-setup-onboarding.md).
 2. From the user menu drop-down on the top right, select **Admin Console**.
 3. Under Authentication, enable LDAP by turning it on.
-4. For each LDAP source, provide information to [connect](https://www.ctl.io/knowledge-base/ElasticBox/user-authentication.md/#connection) and the conditions to [search users](https://www.ctl.io/knowledge-base/ElasticBox/user-authentication.md/#users) and [sync groups](https://www.ctl.io/knowledge-base/ElasticBox/user-authentication.md/#groups). This information is divided into:
+4. For each LDAP source, provide information to [connect](../ElasticBox/user-authentication.md) and the conditions to [search users](../ElasticBox/user-authentication.md) and [sync groups](../ElasticBox/user-authentication.md). This information is divided into:
 
    **Connection**
    ![admin-user2.png](../images/ElasticBox/admin-user2.png)
@@ -71,9 +71,10 @@ LDAP groups get automatic access to team workspaces in ElasticBox when you enabl
 This gives your developers, operations engineers, or IT admins access to the same deployment assets to do their part in automating with necessary access levels. Follow these steps to sync with LDAP groups.
 
 **Steps**
-1. Sign in as the [default administrator](https://www.ctl.io/knowledge-base/ElasticBox/enterprise-setup-onboarding.md/#enterprise-setup).
+1. Sign in as the [default administrator](../ElasticBox/enterprise-setup-onboarding.md).
 2. From the user menu drop-down on the top right, select **Admin Console**.
-3. Under Authentication, make sure LDAP is on and [set up with at least one source with the conditions to sync groups](https://www.ctl.io/knowledge-base/ElasticBox/user-authentication.md/#setting-up-ldap-in-elasticbox).
+3. Under Authentication, make sure LDAP is on and [set up with at least one source with the conditions to sync groups](../ElasticBox/user-authentication.md).
+
 4. Turn on** LDAP Group Sync**.
    ![admin-user6.png](../images/ElasticBox/admin-user6.png)
 
@@ -89,7 +90,7 @@ As good practice, you should give an LDAP user in your organization administrati
 3. Make the LDAP user an administrator. From here on, use that LDAP user account to manage ElasticBox.
 
 ### Contacting ElasticBox Support
-We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](https://elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log

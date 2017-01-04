@@ -8,7 +8,7 @@
 ### Deploying to Any Infrastructure
 
 **In this article:**
-* [Overview](./deploying-and-managing-instances.md)
+* Overview
 * [How to deploy with the ElasticBox agent](./deploying-and-managing-instances.md)
 * [ElasticBox agent command](./deploying-and-managing-instances.md)
 
@@ -20,18 +20,20 @@ You can launch boxes on any infrastructure by running the ElasticBox agent. The 
 
 ### How to Deploy with the ElasticBox Agent
 
-Run the ElasticBox agent on the Linux machine where you want to launch the box. Once the box is launched, sign in to ElasticBox and access the instance from the [Instances page](https://elasticbox.com/#/instances) to edit its box makeup, debug, or manage its lifecycle. Follow these steps to launch a box on your infrastructure.
+Run the ElasticBox agent on the Linux machine where you want to launch the box. Once the box is launched, sign in to ElasticBox and access the instance from the Instances to edit its box makeup, debug, or manage its lifecycle. Follow these steps to launch a box on your infrastructure.
 
 **Before You Begin**
+
 * Make sure you have a box configured and ready to launch.
 * Get the target infrastructure where you want to launch your box up and running first. This can be any Linux machine running a supported image.
 
 **Steps**
+
 1. SSH into the machine to run the agent. Here as an example, we SSH into a Linux machine running Ubuntu 12.04 in AWS.
 
 `ssh -i /Users/mrina/Documents/AWS_Private_PublicKeyPairs/AWSEC2_KeyPair/useast-mrina.pem ec2-user@54.163.174.41`
 
-2. Launch an instance of a box using the the ElasticBox agent. In this example, we launch an instance of the public [MongoDB box](https://elasticbox.com/#boxes/4b51ce66-038a-4c70-acf3-ca52c979857e/mongodb-server) in AWS.
+2. Launch an instance of a box using the the ElasticBox agent. In this example, we launch an instance of the public [MongoDB box](./sample-deploy-mongodb.md) in AWS.
 
 `curl -sLk https://ebx.co | sudo bash -s -- -b "MongoDB Server" -n "test" -V username=admin123 -V password=password12345 -t 314a36ad-74b6-4205-9e33-eac9970e4a1b`
 
@@ -49,7 +51,7 @@ Use cURL to download and run the agent with piped parameters.
 |----------|:-----|
 | -b | Specify a box by name or ID. If you give the name, the latest version of the box is launched. If you give the ID that specific version of the box is launched. You can get the ID from the box URL. |
 | -n | Give a name to identify the environment where you launch the box, such as dev or test. If you don’t provide one, ElasticBox uses the box name or ID. |
-| -t | Enter your [authentication token](./overview-access.md), which you can get from your account in the ElasticBox website. If you run the agent command without this parameter, you’re prompted to enter it later. |
+| -t | Enter your [authentication token](./admin-access.md), which you can get from your account in the ElasticBox website. If you run the agent command without this parameter, you’re prompted to enter it later. |
 | -V | If a box needs values for certain variables before launching, you can pass each in this format: -V variable_name1=variable_value -V variable_name2=variable_value |
 | -o | Optionally, specify in lowercase the box owner ID to tag an instance with this information. You can get the ID when you try to share the box with an owner. The owner can be an account or a workspace. The owner ID is visible within parentheses next to the display name. |
 | -d | Optionally, see all the values in each step of the shell script as it executes the box you specified in the target environment. |
