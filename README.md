@@ -108,6 +108,10 @@ If your fork and branch are behind by a number of commits (meaning there have be
 
 ## KB Article Format
 
+### Category Directory Structure
+
+You can use 1 level of nested categories by creating sub directories under the main category directory.  However, if a Category has any sub directories, all articles must be within those sub directories.
+
 ### Front Matter
 
 
