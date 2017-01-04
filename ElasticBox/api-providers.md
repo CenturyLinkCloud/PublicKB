@@ -37,6 +37,7 @@ Creates a new provider account in ElasticBox and gets the status of the provider
 **Error Codes**
 
 **Request Headers**
+
 ```
 content-type:application/json
 Elasticbox-Token: your_authentication_token

@@ -8,13 +8,13 @@
 
 ### Using Rackspace
 
-If you deploy workloads to [Rackspace Cloud](https://mycloud.rackspace.com/), avoid configuring servers manually and get them running exactly the way you want consistently each time using ElasticBox. You can automatically provision or de-provision and run a sequence of commands and workflows to manage modules and applications remotely from ElasticBox. For more information, learn how [ElasticBox can solve your DevOps use cases](//www.ctl.io/knowledge-base/ElasticBox).
+If you deploy workloads to [Rackspace Cloud](https://mycloud.rackspace.com/), avoid configuring servers manually and get them running exactly the way you want consistently each time using ElasticBox. You can automatically provision or de-provision and run a sequence of commands and workflows to manage modules and applications remotely from ElasticBox. For more information, learn how [ElasticBox can solve your DevOps use cases](//www.ctl.io/elasticbox/).
 
 In Rackspace Cloud, we manage your workloads on Linux servers, and provision and orchestrate deployments through the open source OpenStack Nova Python client.
 
 **In this article:**
-* [Register Rackspace Cloud in ElasticBox](../ElasticBox/using-rackspacecloud.md)
-* [Deploy on Rackspace Cloud from ElasticBox](../ElasticBox/using-rackspacecloud.md)
+* Register Rackspace Cloud in ElasticBox
+* Deploy on Rackspace Cloud from ElasticBox
 
 ### Register Rackspace Cloud in ElasticBox
 
@@ -59,7 +59,7 @@ Select these deployment options when you [launch a new instance](../ElasticBox/d
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
