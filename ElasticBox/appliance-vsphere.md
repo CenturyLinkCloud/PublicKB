@@ -29,10 +29,13 @@ If you don’t have internet access in the vCenter, download all the files and i
 4. (Optional) Edit the name and select the folder where the appliance will live. Click **Next**.
 5. Select the cluster and a host that will run the appliance. Click **Next**.
    ![appliance-vcenter1.png](../images/ElasticBox/appliance-vcenter1.png)
+
 6. Choose a cluster resource pool if available to centrally manage the compute and storage resources for the appliance.
    ![appliance-vcenter2.png](../images/ElasticBox/appliance-vcenter2.png)
+
 7. Select the datastore to store the appliance. The datastore virtual disk format is set to Thin. Thin provision conserves disk space and expands as needed. This means the appliance uses the space required now but takes up more space as usage grows.
    ![appliance-vcenter3.png](../images/ElasticBox/appliance-vcenter3.png)
+
 8. Review the appliance settings before you deploy. Select **Power on after deployment**. Click **Finish**.
    ![appliance-vcenter4.png](../images/ElasticBox/appliance-vcenter4.png)
 
