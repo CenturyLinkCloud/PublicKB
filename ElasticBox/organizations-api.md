@@ -10,9 +10,9 @@
 
 | Resource |      Description    |
 |----------|:-------------|
-| [GET /services/organizations/{organization_name}](../ElasticBox/organizations.md) |  Gets the schema of the given organization. |
-| [PUT /services/organizations/{organization_name}](../ElasticBox/organizations.md) |    Updates an existing organization.  |
-| [PUT /organizations/{organization_name}/sync_groups](../ElasticBox/organizations.md) | Queues a request to sync LDAP groups. |
+| [GET /services/organizations/{organization_name}](./organizations-api.md) |  Gets the schema of the given organization. |
+| [PUT /services/organizations/{organization_name}](./organizations-api.md) |    Updates an existing organization.  |
+| [PUT /organizations/{organization_name}/sync_groups](./organizations-api.md) | Queues a request to sync LDAP groups. |
 
 ### GET /services/organizations/{organization_name}
 
@@ -979,7 +979,7 @@ ElasticBox-Release: 4.0
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
