@@ -56,7 +56,7 @@ ids (optional)|	plain	  | string	 | Comma-separate list of boxes IDs
 
 ```
 [
-        {
+  {
     "schema": "http://elasticbox.net/schemas/boxes/script",
     "updated": "2015-05-27 08:25:49.363170",
     "automatic_updates": "off",
@@ -134,7 +134,7 @@ ids (optional)|	plain	  | string	 | Comma-separate list of boxes IDs
     "draft_from": "aa5a019a-5dd6-4669-a591-ec52783b123e",
     "icon": "images/platform/redis.png"
   },
-{
+  {
     "schema": "http://elasticbox.net/schemas/boxes/script",
     "updated": "2015-05-27 08:25:49.536624",
     "automatic_updates": "off",
@@ -364,7 +364,8 @@ Body:
             "value":"80",
             "visibility":"public"
 
-        },{
+        },
+        {
             "automatic_updates":"off",
             "name":"Wordpress_base",
             "required":false,
@@ -379,16 +380,16 @@ Body:
             "value":"2a7a5f6b-280d-47de-afaa-65db5dd85816",
             "visibility":"public"
 
-        }
-        ],
-        "uri":"/services/boxes/9192cb3e-04e2-4c50-b8a5-a25c980479d4",
-        "visibility":"workspace",
-        "events":{},
-        "members":[],
-        "owner":"project",
-        "organization":"elasticbox",
-        "id":"60cef61c-73dc-41d9-a32f-70f49a509c66",
-        "name":"Wordpress Starter Box"
+  }
+  ],
+  "uri":"/services/boxes/9192cb3e-04e2-4c50-b8a5-a25c980479d4",
+  "visibility":"workspace",
+  "events":{},
+  "members":[],
+  "owner":"project",
+  "organization":"elasticbox",
+  "id":"60cef61c-73dc-41d9-a32f-70f49a509c66",
+  "name":"Wordpress Starter Box"
 }
 ```
 **Response Parameters**
