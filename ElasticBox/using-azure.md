@@ -7,16 +7,16 @@
 
 ### Using Azure
 
-Microsoft Azure hosts applications in virtual machines and in cloud services via Web, Worker roles. ElasticBox supports deploying to all three models through the [Virtual Machine Role](../ElasticBox/using-azure.md), [Web and Worker roles](../ElasticBox/using-azure.md). In addition, we support [Microsoft SQL Database Service](../ElasticBox/using-azure.md) through Azure. Take a look at the [benefits of deploying to Azure using ElasticBox](../ElasticBox/using-azure.md).
+Microsoft Azure hosts applications in virtual machines and in cloud services via Web, Worker roles. ElasticBox supports deploying to all three models through the [Virtual Machine Role](./using-azure.md), [Web and Worker roles](./using-azure.md). In addition, we support [Microsoft SQL Database Service](./using-azure.md) through Azure. Take a look at the [benefits of deploying to Azure using ElasticBox](./using-azure.md).
 
 **Note:** If you’re running ElasticBox as an appliance in your private datacenter, you can deploy only to the virtual machine role.
 To learn about Azure hosting services, see the [Azure help](https://azure.microsoft.com/en-us/documentation/articles/choose-web-site-cloud-service-vm/).
 
 **In this article:**
-* [Before You Begin](../ElasticBox/using-azure.md)
-* [Benefits of Deploying to Azure Using ElasticBox](../ElasticBox/using-azure.md)
-* [Registering Your Azure Subscription in ElasticBox](../ElasticBox/using-azure.md)
-* [Deploying in Azure](../ElasticBox/using-azure.md)
+* Before You Begin
+* Benefits of Deploying to Azure Using ElasticBox
+* Registering Your Azure Subscription in ElasticBox
+* Deploying in Azure
 
 ### Before You Begin
 
@@ -56,7 +56,7 @@ Follow these steps.
 	2. Sign in to the [Azure Portal](https://manage.windowsazure.com/).
 Click Settings > Management Certificates > UPLOAD A MANAGEMENT CERTIFICATE.
 ![azure-upload-elasticbox-certificate-3.png](../images/ElasticBox/azure-upload-elasticbox-certificate-3.png)
-3. Under FILE > click BROWSE FOR FILE to select the certificate from your local machine.
+3. Under **FILE** > click **BROWSE FOR FILE** to select the certificate from your local machine.
 4. Under Subscription, be sure to select your subscription.
 ![azure-upload-eb-certificate-4.png](../images/ElasticBox/azure-upload-eb-certificate-4.png)
 5. Click the checkmark to save.
@@ -69,13 +69,13 @@ Click Settings > Management Certificates > UPLOAD A MANAGEMENT CERTIFICATE.
 ### Deploying in Azure
 
 You can deploy to the following services in Azure:
-* [Web and Worker Roles](../ElasticBox//using-azure.md)
-* [Virtual machine role](../ElasticBox/using-azure.md)
-* [Microsoft SQL Database Service](../ElasticBox//using-azure.md)
+* Web and Worker Roles
+* Virtual machine role
+* Microsoft SQL Database Service
 
 Although all the services are available to Windows based applications, Azure supports only the VM role for Linux applications.
 
-When you’re all set to [launch a new instance](../ElasticBox/deploying-managing-instances.md) in Azure, ElasticBox presents deployment profile options for the roles or for the database service.
+When you’re all set to [launch a new instance](./deploying-managing-instances.md) in Azure, ElasticBox presents deployment profile options for the roles or for the database service.
 
 ### Web and Worker Roles
 
@@ -85,7 +85,7 @@ A web role lets you deploy a Windows web server farm running IIS while a worker 
 
 When you deploy a Windows box to a web or worker role, we automatically create a cloud service for your selected affinity group and region and generate the cspkg, csdef, and cscfg files to make boxes and scripts in them run in Azure cloud services.
 
-To deploy in Azure, first upload your application code as file or URL variables in a Windows box. There, add any port variables to open endpoints. And add event scripts as needed to configure the application on the virtual machine. Then [launch an instance](../ElasticBox/deploying-managing-instances.md) of the box and choose from the following deployment options.
+To deploy in Azure, first upload your application code as file or URL variables in a Windows box. There, add any port variables to open endpoints. And add event scripts as needed to configure the application on the virtual machine. Then [launch an instance](./deploying-managing-instances.md) of the box and choose from the following deployment options.
 
 **Note:** At this time, we only support deploying to the Production environment in Azure.
 In case of multi-tier applications deployed to different roles, follow these tips to allow traffic to the instances and to let them communicate with each other:
@@ -105,6 +105,7 @@ In case of multi-tier applications deployed to different roles, follow these tip
 | Provider | Select the Azure provider you want to use to deploy. |
 
 **Resource**
+
 | **Option**  | **Description** |
 |----------|:-----|
 | Role | Select Web Role or Worker Role. See [Virtual Machine Role](../ElasticBox/using-azure.md) to deploy to that instead. |
@@ -113,7 +114,7 @@ In case of multi-tier applications deployed to different roles, follow these tip
 | Size | Select a size to set the number of CPU cores, memory, and disk size to store your OS files, process temporary memory, and store application data. For more information, see the [Azure help](https://msdn.microsoft.com/en-us/library/azure/dn197896.aspx). Note that D-Series sizes use solid-state drive disks. |
 | Username | Specify a username to be able to RDP into the instance directly. |
 | Password | Specify a password to be able to RDP into the instance directly. |
-| Instances | Specify the number of web or worker role instances to spawn. Note that at this time, we don’t autoscale or load balance web or worker role instances. To enable that, you have to manually configure these options in [Azure](https://msdn.microsoft.com/en-us/library/hh680914(v=PandP.50).aspx). |
+| Instances | Specify the number of web or worker role instances to spawn. Note that at this time, we don’t autoscale or load balance web or worker role instances. To enable that, you have to manually configure these options in [Azure](https://msdn.microsoft.com/en-us/library/hh680914). |
 
 **Network**
 
@@ -134,13 +135,13 @@ To autoscale Web or Worker roles, configure these settings in the Azure deployme
 * Set the number of instances to at least two to meet high availability SLAs from Azure. Here, you can control autoscaling by setting the maximum number of instances to scale.
 * Turn Autoscaling to **ON**.
 
-For more information, see the [Azure help](https://msdn.microsoft.com/en-us/library/hh680945(v=pandp.50).aspx).
+For more information, see the [Azure help](https://msdn.microsoft.com/en-us/library/hh680945).
 
 ### Virtual Machine Role
 
 The virtual machine role lets you build and manage highly customizable and flexible OS environments. For more information, see [the Azure help](https://msdn.microsoft.com/library/azure/jj156003.aspx).
 
-To deploy in ElasticBox, simply select your box based on Linux or Windows, and [create a new instance](../ElasticBox/deploying-managing-instances.md). Then, choose from the following deployment options.
+To deploy in ElasticBox, simply select your box based on Linux or Windows, and [create a new instance](./deploying-managing-instances.md). Then, choose from the following deployment options.
 
 ![azure-vm-deploymentoptions-9.png](../images/ElasticBox/azure-vm-deploymentoptions-9.png)
 
@@ -153,12 +154,13 @@ To deploy in ElasticBox, simply select your box based on Linux or Windows, and [
 | Provider | Both |	Select your Azure subscription or one that’s shared with you in ElasticBox. |
 
 **Resource**
+
 | **Option**  | Windows or Linux |  **Description** |
 |----------|------|:-----|
-| Role | Windows | Select the **Virtual Machine Role **to deploy to a Windows environment that you want to customize and manage. To deploy to other roles, see [Web and Worker Roles](../ElasticBox/using-azure.md). |
+| Role | Windows | Select the **Virtual Machine Role **to deploy to a Windows environment that you want to customize and manage. To deploy to other roles, see Web and Worker Roles section in this documentation. |
 | Image | Both | Choose from [images ](https://msdn.microsoft.com/en-us/library/azure/dn790290.aspx)that are custom or stock OS images or are generalized, specialized VM images. The drop-down shows images relevant to a Windows or Linux deployment. Note that Windows 2008 images are not synced at this time because the ElasticBox agent doesn’t work on them. |
-| Size | Both |	Select a virtual machine size from the basic or standard tier options including [D-Series](https://azure.microsoft.com/blog/2014/09/22/new-d-series-virtual-machine-sizes/). Each option such as A1 sets the number of CPU cores, OS disk memory, and number of input and output operations per second (IOPS) for the virtual machine. Size affects pricing. For more information, see [Virtual Machine and Cloud Service Sizes](https://msdn.microsoft.com/en-us/library/azure/dn197896.aspx). |
-| Username | Windows | Specify the root admin account username required to access and manage Windows machines. For Linux machines, the Service ID shown in the ElasticBox instance page is the admin account username, for example, eb-gm3vg.Inbound traffic from the Internet or virtual networks to Windows virtual machines is allowed through Remote Desktop (RDP) with these default port settings.<li>**Endpoint Type**: RDP</li><li>**Protocol**: TCP</li><li>**Public Port**: 3389</li><li>**Private Port**: 3389</li> |
+| Size | Both |	Select a virtual machine size from the basic or standard tier options including [D-Series](https://azure.microsoft.com/blog/2014/09/22/new-d-series-virtual-machine-sizes/). Each option such as A1 sets the number of CPU cores, OS disk memory, and number of input and output operations per second (IOPS) for the virtual machine. Size affects pricing. For more information, see [Virtual Machine and Cloud Service Sizes](https://msdn.microsoft.com/en-us/library/azure/dn197896.aspx).|
+| Username | Windows | Specify the root admin account username required to access and manage Windows machines. For Linux machines, the Service ID shown in the ElasticBox instance page is the admin account username, for example, eb-gm3vg. Inbound traffic from the Internet or virtual networks to Windows virtual machines is allowed through Remote Desktop (RDP) with these default port settings.<li>**Endpoint Type**: RDP</li><li>**Protocol**: TCP</li><li>**Public Port**: 3389</li><li>**Private Port**: 3389</li>|
 |Password |	Windows | Required for root admin access to Windows virtual machines. The password must be at least 8 characters long containing 3 of the following: a lowercase, an uppercase, a number, or a special character. |
 | SSH Certificate |	Linux |	 Required for Linux virtual machines. Create and upload a X.509 SSH certificate with the .cer extension accepted by Azure. SSH is required to allow inbound traffic from the Internet or from virtual networks to Linux virtual machines. These are default port settings for SSH access.<li>**Endpoint Type**: SSH</li><li>**Protocol**: TCP</li><li>**Public Port**: 22</li><li>**Private Port**: 22</li> |
 | Instances | Both | Select the maximum number of virtual machines to deploy when you enable autoscaling and load balancing. |
@@ -243,14 +245,14 @@ Provide these variable values before you deploy a SQL Database to Azure.
 Some useful things to keep in mind about Azure SQL Database deployments:
 
 * When you hit deploy, we create a SQL database in a SQL server.
-* When you delete the instance, we delete both the server and the database. * To save data, you can always [copy the database](https://msdn.microsoft.com/library/azure/ff951624.aspx) to a target server or [export the database](https://msdn.microsoft.com/en-us/library/hh335292.aspx#export) to a storage blob before deleting.
+* When you delete the instance, we delete both the server and the database. To save data, you can always [copy the database](https://msdn.microsoft.com/library/azure/ff951624.aspx) to a target server or [export the database](https://msdn.microsoft.com/en-us/library/hh335292.aspx#export) to a storage blob before deleting.
 * Use the [Azure Management Portal](http://azure.microsoft.com/en-us/documentation/articles/sql-database-get-started/) or [SQL Server Management Studio](https://azure.microsoft.com/en-us/documentation/articles/sql-database-manage-azure-ssms/) to manage SQL databases.
 * Connect to the database using the [connection string information](http://msdn.microsoft.com/en-us/library/azure/ee336282.aspx) from the Azure Management Portal.
 * Retrieve, update, or delete database data using [Transact-SQL queries](https://azure.microsoft.com/en-us/documentation/articles/sql-database-get-started/#AddData).
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
