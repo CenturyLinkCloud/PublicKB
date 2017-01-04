@@ -19,9 +19,11 @@
 Gets the schema of a given organization.
 
 **Normal Response Codes**
+
 * 200
 
 **Common Error Response Codes**
+
 * User doesn’t belong to the organization (403)
 * Not Found (404)
 
@@ -277,13 +279,16 @@ ElasticBox-Release: 4.0
 Updates an existing organization given its name. Only the organization administrator can update.
 
 **Normal Response Codes**
+
 * 200
 
 **Common Error Response Codes**
+
 * User doesn’t belong to the organization (403)
 * Not Found (404)
 
 **Request Headers**
+
 ```
 Content-Type: application/json
 Elasticbox-Token: your_authentication_token
@@ -291,6 +296,7 @@ ElasticBox-Release: 4.0
 ```
 
 **Request Body**
+
 ```
 {
    "schema":"http://elasticbox.net/schemas/organization",
