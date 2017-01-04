@@ -18,6 +18,7 @@ When you sign up for the ElasticBox Enterprise Edition, you get a default admini
    ![admin-access2.png](../images/ElasticBox/admin-access2.png)
 
 To revoke administrator privileges for a user, click X against their name under **Organization > Administrators**.
+
 Administrators can manage several org-wide settings that include [user authentication](../ElasticBox/user-authentication.md), the [ElasticBox appliance](../ElasticBox/appliance-overview.md), [provider access](../ElasticBox/provider-access.md), [admin boxes](../ElasticBox/deploymentpolicy-box.md), [webhooks](../ElasticBox/webhooks.md), and [instance tags](../ElasticBox/resource-tags.md). To get a good idea of things you can do, see [Overview](../ElasticBox/admin-overview.md).
 
 ### Contacting ElasticBox Support
