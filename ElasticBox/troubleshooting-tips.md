@@ -1,9 +1,9 @@
 {{{
-“title”: “Troubleshooting Tips”,
-“date”: “09-01-2016”,
-“author”: “”,
-“attachments”: [],
-“contentIsHTML”: false
+"title": "Troubleshooting Tips",
+"date": "09-01-2016",
+"author": "",
+"attachments": [],
+"contentIsHTML": false
 }}}
 
 ### Tips on Troubleshooting ElasticBox

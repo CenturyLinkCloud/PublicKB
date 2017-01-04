@@ -1,9 +1,9 @@
 {{{
-“title”: “Launching Slaves via ElasticBox”,
-“date”: “09-01-2016”,
-“author”: “”,
-“attachments”: [],
-“contentIsHTML”: false
+"title": "Launching Slaves via ElasticBox",
+"date": "09-01-2016",
+"author": "",
+"attachments": [],
+"contentIsHTML": false
 }}}
 
 Slave nodes run Jenkins tasks on remote machines in any cloud. If you configure cloud plugins like AWS to launch slaves and then write command line scripts to set up slave build environments then ElasticBox and the ElasticBox Jenkins plugin can save you the hassle of both tasks.
