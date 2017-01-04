@@ -1461,310 +1461,310 @@ Body:
 }
 ```
 ### Example: Update a CloudFormation Stack in Real-Time
- +
- +1. POST http://elasticbox.com/services/blobs/upload/simple_template.json
- +
- +Uploads the modified template data.
- +
- +**Request**
- +
- +![box39](../images/ElasticBox/box39.png)
- +
- +```
- +Body:
- +
- +{
- +    "Resources" : {
- +        "HelloBucket" : {
- +            "Type" : "AWS::S3::Bucket"
- +        }
- +    }
- +}
- +
- +```
- +
- +**Response**
- +
- +```
- +{
- +    "url": "/services/blobs/download/5630d61d14841250525226aa/simple_template.json",
- +    "upload_date": "2015-10-28 14:05:17.752627",
- +    "length": 0,
- +    "content_type": "application/json"
- +}
- +```
- +
- +2. PUT http://elasticbox.com/services/instances/{instance_id}
- +
- +Updates the instance with the template changes.
- +
- +**Request**
- +
- +![box40](../images/ElasticBox/box40.png)
- +
- +```
- +{
- +  "box": "91645eed-173f-4aac-a713-69c6be7582fe",
- +  "bindings": [
- +
- +  ],
- +  "updated": "2015-10-28 13:48:24.367626",
- +  "automatic_updates": "off",
- +  "name": "CF WordPress 2",
- +  "service": {
- +    "type": "CloudFormation Service",
- +    "id": "eb-5cn45",
- +    "machines": [
- +
- +    ]
- +  },
- +  "tags": [
- +
- +  ],
- +  "deleted": null,
- +  "policy_box": {
- +    "profile": {
- +      "location": "ap-northeast-1",
- +      "schema": "http://elasticbox.net/schemas/aws/cloudformation/profile"
- +    },
- +    "updated": "2015-10-28 13:46:55.247211",
- +    "automatic_updates": "off",
- +    "requirements": [
- +
- +    ],
- +    "description": "CF test",
- +    "created": "2015-10-27 12:11:24.734064",
- +    "deleted": null,
- +    "variables": [
- +      {
- +        "required": false,
- +        "type": "Binding",
- +        "name": "Binding",
- +        "value": "5030fc49-773a-42fa-b569-c551e4f90d77",
- +        "visibility": "private"
- +      }
- +    ],
- +    "provider_id": "7e841966-1dec-4460-a981-1db4e1eec10c",
- +    "visibility": "workspace",
- +    "template": {
- +      "url": "/services/blobs/download/5630d1cf14841250525226a6/template.json",
- +      "upload_date": "2015-10-28 13:46:55.186875",
- +      "length": 104,
- +      "content_type": "text/x-shellscript"
- +    },
- +    "members": [
- +
- +    ],
- +    "owner": "operations",
- +    "organization": "elasticbox",
- +    "schema": "http://elasticbox.net/schemas/boxes/cloudformation",
- +    "type": "CloudFormation Service",
- +    "id": "91645eed-173f-4aac-a713-69c6be7582fe",
- +    "name": "CF WordPress 2"
- +  },
- +  "created": "2015-10-28 13:47:15.567441",
- +  "uri": "/services/instances/i-ywf1hu",
- +  "state": "done",
- +  "boxes": [
- +    {
- +      "updated": "2015-10-28 13:46:55.247211",
- +      "automatic_updates": "off",
- +      "requirements": [
- +
- +      ],
- +      "description": "CF test",
- +      "created": "2015-10-27 12:11:24.734064",
- +      "deleted": null,
- +      "variables": [
- +        {
- +          "required": false,
- +          "type": "Binding",
- +          "name": "Binding",
- +          "value": "5030fc49-773a-42fa-b569-c551e4f90d77",
- +          "visibility": "private"
- +        }
- +      ],
- +      "visibility": "workspace",
- +      "template": {
- +        "url": "/services/blobs/download/5630d61d14841250525226aa/simple_template.json",
- +        "upload_date": "2015-10-28 13:46:55.186875",
- +        "length": 104,
- +        "content_type": "text/x-shellscript"
- +      },
- +      "members": [
- +
- +      ],
- +      "owner": "operations",
- +      "organization": "elasticbox",
- +      "schema": "http://elasticbox.net/schemas/boxes/cloudformation",
- +      "type": "CloudFormation Service",
- +      "id": "91645eed-173f-4aac-a713-69c6be7582fe",
- +      "name": "CF WordPress 2"
- +    }
- +  ],
- +  "schema": "http://elasticbox.net/schemas/instance",
- +  "members": [
- +
- +  ],
- +  "owner": "operations",
- +  "variables": [
- +
- +  ],
- +  "operation": {
- +    "event": "deploy",
- +    "workspace": "operations",
- +    "created": "2015-10-28 13:47:15.746398"
- +  },
- +  "id": "i-ywf1hu",
- +  "icon": null
- +}
- +```
- +**Response**
- +
- +```
- +{
- +  "box": "91645eed-173f-4aac-a713-69c6be7582fe",
- +  "bindings": [
- +
- +  ],
- +  "updated": "2015-10-28 14:44:49.999798",
- +  "automatic_updates": "off",
- +  "name": "CF WordPress 2",
- +  "service": {
- +    "type": "CloudFormation Service",
- +    "id": "eb-5cn45",
- +    "machines": [
- +
- +    ]
- +  },
- +  "tags": [
- +
- +  ],
- +  "deleted": null,
- +  "policy_box": {
- +    "profile": {
- +      "location": "ap-northeast-1",
- +      "schema": "http://elasticbox.net/schemas/aws/cloudformation/profile"
- +    },
- +    "updated": "2015-10-28 13:46:55.247211",
- +    "automatic_updates": "off",
- +    "requirements": [
- +
- +    ],
- +    "description": "CF test",
- +    "created": "2015-10-27 12:11:24.734064",
- +    "deleted": null,
- +    "variables": [
- +      {
- +        "required": false,
- +        "type": "Binding",
- +        "name": "Binding",
- +        "value": "5030fc49-773a-42fa-b569-c551e4f90d77",
- +        "visibility": "private"
- +      }
- +    ],
- +    "provider_id": "7e841966-1dec-4460-a981-1db4e1eec10c",
- +    "visibility": "workspace",
- +    "template": {
- +      "url": "/services/blobs/download/5630d1cf14841250525226a6/template.json",
- +      "upload_date": "2015-10-28 13:46:55.186875",
- +      "length": 104,
- +      "content_type": "text/x-shellscript"
- +    },
- +    "members": [
- +
- +    ],
- +    "owner": "operations",
- +    "organization": "elasticbox",
- +    "schema": "http://elasticbox.net/schemas/boxes/cloudformation",
- +    "type": "CloudFormation Service",
- +    "id": "91645eed-173f-4aac-a713-69c6be7582fe",
- +    "name": "CF WordPress 2"
- +  },
- +  "created": "2015-10-28 13:47:15.567441",
- +  "uri": "/services/instances/i-ywf1hu",
- +  "state": "done",
- +  "boxes": [
- +    {
- +      "updated": "2015-10-28 13:46:55.247211",
- +      "automatic_updates": "off",
- +      "description": "CF test",
- +      "deleted": null,
- +      "variables": [
- +        {
- +          "required": false,
- +          "type": "Binding",
- +          "name": "Binding",
- +          "value": "5030fc49-773a-42fa-b569-c551e4f90d77",
- +          "visibility": "private"
- +        }
- +      ],
- +      "visibility": "workspace",
- +      "members": [
- +
- +      ],
- +      "owner": "operations",
- +      "id": "91645eed-173f-4aac-a713-69c6be7582fe",
- +      "requirements": [
- +
- +      ],
- +      "name": "CF WordPress 2",
- +      "created": "2015-10-27 12:11:24.734064",
- +      "template": {
- +        "url": "/services/blobs/download/5630d61d14841250525226aa/simple_template.json",
- +        "upload_date": "2015-10-28 13:46:55.186875",
- +        "length": 104,
- +        "content_type": "text/x-shellscript"
- +      },
- +      "organization": "elasticbox",
- +      "type": "CloudFormation Service",
- +      "schema": "http://elasticbox.net/schemas/boxes/cloudformation"
- +    }
- +  ],
- +  "schema": "http://elasticbox.net/schemas/instance",
- +  "members": [
- +
- +  ],
- +  "owner": "operations",
- +  "variables": [
- +
- +  ],
- +  "operation": {
- +    "event": "deploy",
- +    "workspace": "operations",
- +    "created": "2015-10-28 13:47:15.746398"
- +  },
- +  "id": "i-ywf1hu",
- +  "icon": null
- +}
- +```
- +
- +3. PUT http://elasticbox.com/services/instances/{instance_id}/reconfigure
- +
- +Reconfigures the stack based on the changes.
- +
- +**Request**
- +
- +![box41](../images/ElasticBox/box41.png)
- +
- +```
- +Body:
- +
- +{
- +   "id":"i-ywf1hu",
- +   "method":"reconfigure"
- +}
- +```
- +**Response**
- +
- +None.
- +
- +### Contacting ElasticBox Support
- +
- +We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
- +
- +For issues related to API calls, send the request body along with details related to the issue.
- +
- +In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
- +Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
- +Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+
+ 1. POST http://elasticbox.com/services/blobs/upload/simple_template.json
+
+ Uploads the modified template data.
+
+ **Request**
+
+ ![box39](../images/ElasticBox/box39.png)
+
+ ```
+ Body:
+
+ {
+     "Resources" : {
+         "HelloBucket" : {
+             "Type" : "AWS::S3::Bucket"
+         }
+     }
+ }
+
+ ```
+
+ **Response**
+
+ ```
+ {
+     "url": "/services/blobs/download/5630d61d14841250525226aa/simple_template.json",
+     "upload_date": "2015-10-28 14:05:17.752627",
+     "length": 0,
+     "content_type": "application/json"
+ }
+ ```
+
+ 2. PUT http://elasticbox.com/services/instances/{instance_id}
+
+ Updates the instance with the template changes.
+
+ **Request**
+
+ ![box40](../images/ElasticBox/box40.png)
+
+ ```
+ {
+   "box": "91645eed-173f-4aac-a713-69c6be7582fe",
+   "bindings": [
+
+   ],
+   "updated": "2015-10-28 13:48:24.367626",
+   "automatic_updates": "off",
+   "name": "CF WordPress 2",
+   "service": {
+     "type": "CloudFormation Service",
+     "id": "eb-5cn45",
+     "machines": [
+
+     ]
+   },
+   "tags": [
+
+   ],
+   "deleted": null,
+   "policy_box": {
+     "profile": {
+       "location": "ap-northeast-1",
+       "schema": "http://elasticbox.net/schemas/aws/cloudformation/profile"
+     },
+     "updated": "2015-10-28 13:46:55.247211",
+     "automatic_updates": "off",
+     "requirements": [
+
+    ],
+     "description": "CF test",
+     "created": "2015-10-27 12:11:24.734064",
+     "deleted": null,
+     "variables": [
+       {
+         "required": false,
+         "type": "Binding",
+         "name": "Binding",
+         "value": "5030fc49-773a-42fa-b569-c551e4f90d77",
+         "visibility": "private"
+       }
+     ],
+     "provider_id": "7e841966-1dec-4460-a981-1db4e1eec10c",
+     "visibility": "workspace",
+     "template": {
+       "url": "/services/blobs/download/5630d1cf14841250525226a6/template.json",
+       "upload_date": "2015-10-28 13:46:55.186875",
+       "length": 104,
+       "content_type": "text/x-shellscript"
+     },
+     "members": [
+
+     ],
+     "owner": "operations",
+     "organization": "elasticbox",
+     "schema": "http://elasticbox.net/schemas/boxes/cloudformation",
+     "type": "CloudFormation Service",
+     "id": "91645eed-173f-4aac-a713-69c6be7582fe",
+     "name": "CF WordPress 2"
+   },
+   "created": "2015-10-28 13:47:15.567441",
+   "uri": "/services/instances/i-ywf1hu",
+   "state": "done",
+   "boxes": [
+     {
+       "updated": "2015-10-28 13:46:55.247211",
+      "automatic_updates": "off",
+       "requirements": [
+
+       ],
+       "description": "CF test",
+       "created": "2015-10-27 12:11:24.734064",
+       "deleted": null,
+       "variables": [
+         {
+           "required": false,
+           "type": "Binding",
+           "name": "Binding",
+           "value": "5030fc49-773a-42fa-b569-c551e4f90d77",
+           "visibility": "private"
+         }
+       ],
+       "visibility": "workspace",
+       "template": {
+         "url": "/services/blobs/download/5630d61d14841250525226aa/simple_template.json",
+        "upload_date": "2015-10-28 13:46:55.186875",
+         "length": 104,
+         "content_type": "text/x-shellscript"
+       },
+       "members": [
+
+       ],
+       "owner": "operations",
+       "organization": "elasticbox",
+      "schema": "http://elasticbox.net/schemas/boxes/cloudformation",
+       "type": "CloudFormation Service",
+       "id": "91645eed-173f-4aac-a713-69c6be7582fe",
+       "name": "CF WordPress 2"
+     }
+   ],
+   "schema": "http://elasticbox.net/schemas/instance",
+   "members": [
+
+   ],
+   "owner": "operations",
+   "variables": [
+
+   ],
+   "operation": {
+     "event": "deploy",
+     "workspace": "operations",
+    "created": "2015-10-28 13:47:15.746398"
+   },
+   "id": "i-ywf1hu",
+   "icon": null
+ }
+ ```
+ **Response**
+
+ ```
+ {
+   "box": "91645eed-173f-4aac-a713-69c6be7582fe",
+   "bindings": [
+
+   ],
+   "updated": "2015-10-28 14:44:49.999798",
+   "automatic_updates": "off",
+   "name": "CF WordPress 2",
+   "service": {
+     "type": "CloudFormation Service",
+     "id": "eb-5cn45",
+     "machines": [
+
+     ]
+   },
+   "tags": [
+
+   ],
+   "deleted": null,
+   "policy_box": {
+     "profile": {
+      "location": "ap-northeast-1",
+       "schema": "http://elasticbox.net/schemas/aws/cloudformation/profile"
+     },
+     "updated": "2015-10-28 13:46:55.247211",
+     "automatic_updates": "off",
+     "requirements": [
+
+     ],
+     "description": "CF test",
+     "created": "2015-10-27 12:11:24.734064",
+     "deleted": null,
+     "variables": [
+       {
+         "required": false,
+         "type": "Binding",
+        "name": "Binding",
+         "value": "5030fc49-773a-42fa-b569-c551e4f90d77",
+         "visibility": "private"
+       }
+    ],
+     "provider_id": "7e841966-1dec-4460-a981-1db4e1eec10c",
+     "visibility": "workspace",
+     "template": {
+       "url": "/services/blobs/download/5630d1cf14841250525226a6/template.json",
+       "upload_date": "2015-10-28 13:46:55.186875",
+       "length": 104,
+       "content_type": "text/x-shellscript"
+     },
+     "members": [
+
+     ],
+     "owner": "operations",
+     "organization": "elasticbox",
+     "schema": "http://elasticbox.net/schemas/boxes/cloudformation",
+     "type": "CloudFormation Service",
+     "id": "91645eed-173f-4aac-a713-69c6be7582fe",
+     "name": "CF WordPress 2"
+   },
+   "created": "2015-10-28 13:47:15.567441",
+   "uri": "/services/instances/i-ywf1hu",
+   "state": "done",
+   "boxes": [
+     {
+       "updated": "2015-10-28 13:46:55.247211",
+       "automatic_updates": "off",
+       "description": "CF test",
+       "deleted": null,
+       "variables": [
+         {
+           "required": false,
+           "type": "Binding",
+          "name": "Binding",
+          "value": "5030fc49-773a-42fa-b569-c551e4f90d77",
+          "visibility": "private"
+        }
+      ],
+       "visibility": "workspace",
+       "members": [
+
+       ],
+       "owner": "operations",
+      "id": "91645eed-173f-4aac-a713-69c6be7582fe",
+      "requirements": [
+
+       ],
+       "name": "CF WordPress 2",
+       "created": "2015-10-27 12:11:24.734064",
+       "template": {
+         "url": "/services/blobs/download/5630d61d14841250525226aa/simple_template.json",
+         "upload_date": "2015-10-28 13:46:55.186875",
+         "length": 104,
+         "content_type": "text/x-shellscript"
+       },
+       "organization": "elasticbox",
+       "type": "CloudFormation Service",
+       "schema": "http://elasticbox.net/schemas/boxes/cloudformation"
+     }
+   ],
+   "schema": "http://elasticbox.net/schemas/instance",
+   "members": [
+
+   ],
+   "owner": "operations",
+   "variables": [
+
+   ],
+   "operation": {
+     "event": "deploy",
+     "workspace": "operations",
+     "created": "2015-10-28 13:47:15.746398"
+   },
+   "id": "i-ywf1hu",
+   "icon": null
+ }
+ ```
+
+ 3. PUT http://elasticbox.com/services/instances/{instance_id}/reconfigure
+
+ Reconfigures the stack based on the changes.
+
+ **Request**
+
+ ![box41](../images/ElasticBox/box41.png)
+
+ ```
+ Body:
+
+ {
+    "id":"i-ywf1hu",
+    "method":"reconfigure"
+ }
+ ```
+ **Response**
+
+ None.
+
+ ### Contacting ElasticBox Support
+
+ We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+
+ For issues related to API calls, send the request body along with details related to the issue.
+
+ In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
+ Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
+ Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
