@@ -5,15 +5,13 @@
 "contentIsHTML": false
 }}}
 
-
-### Orchestrating vCloud Air and vCloud Director Deployments
-
 Do you use vCloud Air as the VMware public cloud or vCloud Director as your VMware private cloud? Connect them in ElasticBox for complete workload automation. Once you define the automation of your workloads in ElasticBox, you can launch them to other clouds as well as VMware. vCloud Air and vCloud Director are available in ElasticBox through the vCloud Director provider, which supports vCloud Director API version 5.1 and above.
 
 **In this article:**
-* [Pre-requisites](../ElasticBox/cloudair-director.md)
-* [Connect vCloud Air or vCloud Director in ElasticBox](../ElasticBox/cloudair-director.md)
-* [Deploy to vCloud Air or vCloud Director](../ElasticBox/cloudair-director.md)
+
+* Pre-requisites
+* Connect vCloud Air or vCloud Director in ElasticBox
+* Deploy to vCloud Air or vCloud Director
 
 ### Pre-Requisites
 
@@ -27,18 +25,27 @@ To orchestrate vCloud Air and vCloud Director deployments through ElasticBox, yo
 Follow these steps to add a provider in ElasticBox that integrates with your virtual data center in vCloud Air public cloud or vCloud Director private cloud. Each provider connects to the virtual data center in that specific location.
 
 **Steps**
-1. In ElasticBox, on the Providers page, click **New Provider**.
-2. Select **VMware vCloud Director** and enter the credentials as given.
-![vcloudair-director-connectinelasticbox-1.png](../images/ElasticBox/vcloudair-director-connectinelasticbox-1.png)
 
-**URL.**
-	* vCloud Director. Enter the URL to access the vCloud Director portal.
-	* vCloud Air. Enter the login URL followed by the compute API endpoint in this format, <vCloud_air_login_URL>/api/compute. **Example: https://us-california-1-3.vchs.vmware.com/api/compute/**
+1. In ElasticBox, on the Providers page, click **New Provider**.
+
+2. Select **VMware vCloud Director** and enter the credentials as given.
+
+    ![vcloudair-director-connectinelasticbox-1.png](../images/ElasticBox/vcloudair-director-connectinelasticbox-1.png)
+
+**URL**
+
+	* **vCloud Director**. Enter the URL to access the vCloud Director portal.
+
+	* **vCloud Air**. Enter the login URL followed by the compute API endpoint in this format, `<vCloud_air_login_URL>/api/compute`.
+
+    **Example:** https://us-california-1-3.vchs.vmware.com/api/compute/
+
 * **Organization**. Enter the organization name or GUID.
-	* For vCloud Air, select the virtual data center to see the org name in the URL as in this example: ?orgName=c946391d-a811-40c5-b39e-df8bf2b88917.
+	* For vCloud Air, select the virtual data center to see the org name in the URL as in this example: `?orgName=c946391d-a811-40c5-b39e-df8bf2b88917`.
 	* For vCloud Director, enter system if the user is a global administrator.
-* **Username.** Enter the username to log in to vCloud Air or to the vCloud Director portal.
-* **Password.** Enter the password for the vCloud Air or vCloud Director portal.
+
+* **Username**. Enter the username to log in to vCloud Air or to the vCloud Director portal.
+* **Password**. Enter the password for the vCloud Air or vCloud Director portal.
 
 ### Deploy to vCloud Air or vCloud Director
 
