@@ -1,9 +1,9 @@
 {{{
-“title”: “Overview of the Jenkins ElasticBox Plugin”,
-“date”: “09-01-2016”,
-“author”: “”,
-“attachments”: [],
-“contentIsHTML”: false
+"title": "Overview of the Jenkins ElasticBox Plugin",
+"date": "09-01-2016",
+"author": "",
+"attachments": [],
+"contentIsHTML": false
 }}}
 
 If you use Jenkins to continuously test and integrate code changes in development, staging, or production, you’d want to use the [Jenkins ElasticBox plugin](https://wiki.jenkins-ci.org/display/JENKINS/ElasticBox+CI) to fully automate touchless deployments.

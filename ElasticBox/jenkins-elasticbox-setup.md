@@ -1,9 +1,9 @@
 {{{
-“title”: “Setting Up Jenkins with ElasticBox”,
-“date”: “09-01-2016”,
-“author”: “”,
-“attachments”: [],
-“contentIsHTML”: false
+"title": "Setting Up Jenkins with ElasticBox",
+"date": "09-01-2016",
+"author": "",
+"attachments": [],
+"contentIsHTML": false
 }}}
 
 To continuously integrate and deploy through ElasticBox, you need a Jenkins server set up to work with your source control management system (SCM) and the [ElasticBox plugin](https://wiki.jenkins-ci.org/display/JENKINS/ElasticBox+CI).
