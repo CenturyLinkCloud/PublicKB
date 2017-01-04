@@ -1,4 +1,4 @@
-{{{ 
+{{{
 "title": "API Blobs",
 "date": "09-01-2016",
 "author": "",
@@ -9,9 +9,9 @@
 
 **Resource**|**Description**
 ------------|----------
-[POST /services/blobs/upload](./post-services-blobs-upload.md) | Uploads a file using multi-part form data.
-[POST /services/blobs/upload/{file_name}](./post-services-blobs-upload.md) | Creates a blob from submitted data.
-[GET /services/blobs/download/{file_id}/{file_name}](./post-services-blobs-upload.md) | Downloads a file uploaded previously.
+[POST /services/blobs/upload](./api-blobs.md) | Uploads a file using multi-part form data.
+[POST /services/blobs/upload/{file_name}](./api-blobs.md) | Creates a blob from submitted data.
+[GET /services/blobs/download/{file_id}/{file_name}](./api-blobs.md) | Downloads a file uploaded previously.
 
 **POST /services/blobs/upload**
 

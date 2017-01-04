@@ -7,20 +7,25 @@
 }}}
 
 ### Sample: Deploy a MongoDB instance via the API
-Here you can see how to deploy a mongoDB instance using the ElasticBox API. Typically you want to structure API calls to mirror your workflow in ElasticBox. Most workflows involve tasks such as these: defining a [box](https://www.ctl.io/knowledge-base/ElasticBox/boxes.md/), for example a Jenkins box to automate continuous integration and delivery; registering a [provider](https://www.ctl.io/knowledge-base/ElasticBox/providers.md/) like AWS, Google Cloud, vSphere, OpenStack, or CloudStack to host your box application deployments; creating a [deployment profile](https://www.ctl.io/knowledge-base/ElasticBox/deploying-managing-instances.md/#profile) to specify provider specific options for a deployment; deploying an instance to launch a box in the virtual environment; or performing lifecycle tasks like deploying, reconfiguring, and terminating an instance.
+
+Here you can see how to deploy a mongoDB instance using the ElasticBox API. Typically you want to structure API calls to mirror your workflow in ElasticBox. Most workflows involve tasks such as these: defining a [box](../ElasticBox/boxes.md), for example a Jenkins box to automate continuous integration and delivery; registering a [provider](../ElasticBox/providers.md) like AWS, Google Cloud, vSphere, OpenStack, or CloudStack to host your box application deployments; creating a [deployment profile](../ElasticBox/deploying-managing-instances.md) to specify provider specific options for a deployment; deploying an instance to launch a box in the virtual environment; or performing lifecycle tasks like deploying, reconfiguring, and terminating an instance.
+
 In this sample, we follow this workflow to deploy a MongoDB instance using the existing MongoDB public box:
-* [Declare deployment arguments](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-mongodb.md/#declare-deployment-arguments)
-* [Authenticate with ElasticBox](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-mongodb.md/#authenticate-with-elasticbox)
-* [Create a deployment profile](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-mongodb.md/#create-a-deployment-profile)
-* [Deploy a MongoDB instance](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-mongodb.md/#deploy-a-mongodb-instance)
-* [Terminate the instance](https://www.ctl.io/knowledge-base/ElasticBox/sample-deploy-mongodb.md/#terminate-the-instance)
+
+* Declare deployment arguments
+* Authenticate with ElasticBox
+* Create a deployment profile
+* Deploy a MongoDB instance
+* Terminate the instance
 
 **Note:** We use cURL commands to send HTTP requests to the API objects in JSON. JSON is the required format for all API requests and responses.
 
 Now let’s look at the script in sections to understand how you can make API calls from any code you like.
 
 ### Declare Deployment Arguments
+
 MongoDB deployment arguments such as username, password, environment, owner are declared as variables because they can differ between deployments. That way, each time you run the script, you can pass different arguments. In this case we decided to use AWS as provider so we will need the account key and secret to register it as provider. Those are variables too.
+
 ```
 aws_provider_key=$1
 aws_provider_secret=$2
@@ -34,13 +39,16 @@ password=$2
 ```
 
 ### Authenticate with ElasticBox
-All API calls start with signing in to the ElasticBox website and [getting an authentication token](https://www.ctl.io/knowledge-base/ElasticBox/overview-access.md/#api-get-token). You use this token to perform tasks in your ElasticBox workflow. In this example, we pass the token in the format as shown to all of the API requests that relate to deploying MongoDB.
+
+All API calls start with signing in to the ElasticBox website and [getting an authentication token](../ElasticBox/api-overview-and-access.md). You use this token to perform tasks in your ElasticBox workflow. In this example, we pass the token in the format as shown to all of the API requests that relate to deploying MongoDB.
 ```
 ElasticBox-Token:8ccc8203-2efd-44a9-8819-e95fd2277be2
 ```
 
 ### Create a Deployment Policy Box
+
 A deployment policy box is where you specify settings to deploy applications in a specific virtual environment. We send parameters for creating the deployment profile in a POST request to the Profiles object. If there’s an error in creating the profile, we output the error. Else, we output the created profile.
+
 ```
 payload="{
         \"owner\": \"$owner\",
@@ -88,7 +96,9 @@ fi;
 ```
 
 ### Deploy a MongoDB Instance
+
 In a POST request to the Instances object, we send along the deployment profile with other instance parameters to launch a MongoDB instance in the virtual environment.
+
 ```
 #Deploy the instance
 payload="{
@@ -144,6 +154,7 @@ fi;
 We store the response and check if the instance launched. If it failed to launch, we output an error or say that the instance is available and give its ID.
 
 While the instance is launching, we check its state every 30 seconds with a GET request to the Instances object by passing the instance ID. Then we evaluate whether to wait or continue: If it’s still processing, we say so and wait or we output the current instance state and move to the next task.
+
 ```
 COUNTER=0
 while [ $COUNTER -lt $cycles_to_wait ]; do
@@ -169,7 +180,9 @@ done
 ```
 
 ### Terminate the instance
+
 To remove the instance from the virtual machine, we send a DELETE request to the Instances object with the instance ID. Then we check its response status. If it’s 200, we say that the specific instance is terminated. Else, we output the error state from the response.
+
 ```
 status=$(curl -s -k \
   -X DELETE \
@@ -190,6 +203,7 @@ fi
 ```
 
 While waiting for the instance to terminate, we do a GET on the Instances object with the instance ID to know the operation running on the instance and its current state. If it’s processing, we say so and wait for it to complete or we output the operation that was run and the instance state.
+
 ```
 #Wait for the instance to be terminated
 COUNTER=0
@@ -216,6 +230,7 @@ done
 ```
 
 Lastly, we delete the instance and its logs from ElasticBox by sending a DELETE request with the instance ID to the Instances object. Once done, we say that the instance is deleted. Similarly we delete the deployment policy box with a DELETE request to the Profiles object and confirm that it’s done.
+
 ```
 #Remove the deployment policy box
 status=$(curl -s -k \
@@ -237,7 +252,8 @@ fi
 ```
 
 ### Contacting ElasticBox Support
-We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](https://elasticbox.com/documentation/troubleshooting/troubleshooting-tips/), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
