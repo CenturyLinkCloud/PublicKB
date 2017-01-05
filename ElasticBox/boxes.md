@@ -8,7 +8,7 @@
 
 ### Boxes
 
-Boxes are the templates that store application automation. An instance is a box you install on virtual infrastructure provisioned to a public, private cloud provider, or your own infrastructure. Take a [quick tour](./login-and-quick-tour.md) to understand the layout of boxes and instances in ElasticBox.
+Boxes are the templates that store application automation. An instance is a box you install on virtual infrastructure provisioned to a public, private cloud provider, or your own infrastructure. Take a [quick tour](//www.ctl.io/guides/) to understand the layout of boxes and instances in ElasticBox.
 
 Boxes contain scripts, variables, and metadata to automate processes when instantiated on cloud infrastructure. Stitched together, boxes model complex processes like deploying or upgrading multi-tier enterprise scale applications.
 
