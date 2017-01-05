@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description (goal/purpose)</h3>
-<p>CenturyLink Cloud uses Zendesk to manage support tickets.&nbsp;&nbsp;This KB shows you how to check the current priority level and status of your support tickets that are associated to your account.</p>
+<p>CenturyLink Cloud uses Zendesk to manage support tickets. This KB shows you how to check the current priority level and status of support tickets that are associated to your account.</p>
 <h3>Audience</h3>
 <ul>
   <li>Customers</li>
@@ -20,7 +20,7 @@
 <h3>Detailed Steps</h3>
 <ol>
   <li>Log into your <a href="https://t3n.zendesk.com">Zendesk account</a>.</li>
-  <li>Click on your user name in the upper right of the browser window, then click "My activities"
+  <li>Click on your user name in the upper right of the browser window, then click "My activities".
     <br /><img alt />
   </li>
   <li>Under "My activities", your tickets are located in two areas identified as "My requests" and "Requests I'm CC'd on".  Select the area, and then select the ticket by clicking on the hyperlinked Subject field.

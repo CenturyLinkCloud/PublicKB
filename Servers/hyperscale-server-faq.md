@@ -18,7 +18,6 @@ A: Today, Hyperscale servers can use up to 16 vCPUs, 128GB of memory, and 1 TB o
 A: Hyperscale Virtual Servers differ from Standard Virtual Servers in 4 ways:
 
 * Storage: Hyperscale storage is 100% SSD, instead of a mix of spindle/SSD. Consequently, users can expect different storage levels between Hyperscale and CenturyLink Cloud servers.
-* Backups: Hyperscale servers do not include the automatic backup function found in CenturyLink Cloud Servers. This is largely because Hyperscale is designed for distributed apps that don’t typically deal with backups.
 * Advanced Tasks: Snapshots, Clone, Convert to Template and Archive features are not available on Hyperscale Instances.
 * Geographies: Hyperscale is only available in the SG1, NY1, IL1, CA3, GB3, UC1 & VA1 datacenters, with new locations coming online quarterly. Cloud servers, in contrast, can be deployed across 13 federated data centers
 

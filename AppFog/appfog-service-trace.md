@@ -43,7 +43,7 @@ This will create a Trace service for your targeted Space and establish the singl
 cf create-service trace freebeta name-of-my-trace-instance
 ```
 
-#### Binding Trace to an Applications
+#### Binding Trace to Applications
 
 You must bind the Trace instance you have created to each application you would like to monitor with it. If you bind a Trace instance but fail to install and include the npm package in your application, the Trace dashboard will not recieve your application's monitoring events:
 

@@ -23,9 +23,6 @@
 
 * **AppFog v2 Limited Beta.** This new platform for creating and managing cloud-native applications is available as a Limited Beta.  Based on Cloud Foundry v2, the service makes it easier for developers to build and scale applications.  If you are interested in becoming a beta tester, please contact [**the AppFog team**](mailto:appfog-feedback@ctl.io).
 
-  ![AppFog Navigation UI](../../images/appfog-icon-nav.png)
-
-
 ### Minor Enhancements (3)
 
 * **Cloud Network Services (CNS) available in NY1.** CenturyLink Cloud deployments in NY1 can now be connected to other environments using Cloud Network Services. This capability delivers private, secure, and high-speed connectivity between traditional and cloud environments.
