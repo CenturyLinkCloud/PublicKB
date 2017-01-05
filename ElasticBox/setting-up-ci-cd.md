@@ -135,7 +135,7 @@ Update Box is an ElasticBox build step in the Jenkins job that lets you upload t
 ![jenkins-github-7.png](../images/ElasticBox/jenkins-github-7.png)
 
 ### See CI/CD in Action
-To see Jenkins CI/CD in action, try the [tutorial](./jenkins-elasticboxplugin.md). It takes you through a typical deployment workflow automated entirely with the help of the ElasticBox plugin.
+To see Jenkins CI/CD in action, try the tutorial. It takes you through a typical deployment workflow automated entirely with the help of the ElasticBox plugin.
 
 ### Contacting ElasticBox Support
 We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
