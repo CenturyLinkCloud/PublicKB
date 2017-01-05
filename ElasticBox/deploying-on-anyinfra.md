@@ -9,8 +9,8 @@
 
 **In this article:**
 * Overview
-* [How to deploy with the ElasticBox agent](./deploying-and-managing-instances.md)
-* [ElasticBox agent command](./deploying-and-managing-instances.md)
+* How to deploy with the ElasticBox agent
+* ElasticBox agent command
 
 ### Overview
 
@@ -61,7 +61,7 @@ Use cURL to download and run the agent with piped parameters.
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

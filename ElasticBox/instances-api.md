@@ -12,26 +12,26 @@ Manage and perform actions on instances.
 
 |  Resource |      Description     |
 |----------|:-------------|
-| [GET /services/instances](../ElasticBox/api-instances.md)|  Gets the list of instances. |
-| [POST /services/instances](../ElasticBox/api-instances.md) |    Creates a new instance.   |
+| [GET /services/instances](./instances-api.md) |  Gets the list of instances. |
+| [POST /services/instances](./instances-api.md) |    Creates a new instance.   |
 
 **Perform Instance Operations**
 
 |  Resource |      Description     |
 |----------|:-------------|
-|[GET /services/instances/{instance_id}](../ElasticBox/api-instances.md)| Fetches an existing instance.|
-| [PUT /services/instances/{instance_id}](../ElasticBox/api-instances.md) | Updates an existing instance. |
-| [DELETE /services/instances/{instance_id}](../ElasticBox/api-instances.md) | Terminates, force-terminates, or deletes an existing instance.|
-| [GET /services/instances/{instance_id}/service](../ElasticBox/api-instances.md)| Gets the instance service. |
-| [GET /services/instances/{instance_id}/activity](../ElasticBox/api-instances.md) | Gets all activity logs from the executed operations of an instance. |
-| [GET /services/instances/{instance_id}/machine_logs](../ElasticBox/api-instances.md) | Gets the logs of all machines of a deployed instance. |
-| [GET /services/instances/{instance_id}/binding_instances ](../ElasticBox/api-instances.md) Gets the binding of a instance. |
-| [GET /services/instances/{instance_id}/operations](../ElasticBox/api-instances.md) | Gets all operations of an instance. |
-| [PUT /services/instances/{instance_id}/deploy](../ElasticBox/api-instances.md) | Re-deploy an existing instance. |
-| [PUT /services/instances/{instance_id}/poweron](../ElasticBox/api-instances.md) | Power-on an existing instance. |
-| [PUT /services/instances/{instance_id}/shutdown](../ElasticBox/api-instances.md) | 	Shutdown an existing instance. |
-| [PUT /services/instances/{instance_id}/reinstall](../ElasticBox/api-instances.md) | Re-install an existing instance. |
-| [PUT /services/instances/{instance_id}/reconfigure ](../ElasticBox/api-instances.md)| Re-configure an existing instance. |
+|[GET /services/instances/{instance_id}](./instances-api.md)| Fetches an existing instance.|
+| [PUT /services/instances/{instance_id}](./instances-api.md) | Updates an existing instance. |
+| [DELETE /services/instances/{instance_id}](./instances-api.md) | Terminates, force-terminates, or deletes an existing instance.|
+| [GET /services/instances/{instance_id}/service](./instances-api.md)| Gets the instance service. |
+| [GET /services/instances/{instance_id}/activity](./instances-api.md) | Gets all activity logs from the executed operations of an instance. |
+| [GET /services/instances/{instance_id}/machine_logs](./instances-api.md) | Gets the logs of all machines of a deployed instance. |
+| [GET /services/instances/{instance_id}/binding_instances ](./instances-api.md) Gets the binding of a instance. |
+| [GET /services/instances/{instance_id}/operations](./instances-api.md) | Gets all operations of an instance. |
+| [PUT /services/instances/{instance_id}/deploy](./instances-api.md) | Re-deploy an existing instance. |
+| [PUT /services/instances/{instance_id}/poweron](./instances-api.md) | Power-on an existing instance. |
+| [PUT /services/instances/{instance_id}/shutdown](./instances-api.md) | 	Shutdown an existing instance. |
+| [PUT /services/instances/{instance_id}/reinstall](./instances-api.md) | Re-install an existing instance. |
+| [PUT /services/instances/{instance_id}/reconfigure ](./instances-api.md)| Re-configure an existing instance. |
 
 ### GET /services/instances
 
@@ -1781,7 +1781,7 @@ Body:
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

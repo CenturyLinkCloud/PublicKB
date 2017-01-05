@@ -37,6 +37,7 @@ Creates a new provider account in ElasticBox and gets the status of the provider
 **Error Codes**
 
 **Request Headers**
+
 ```
 content-type:application/json
 Elasticbox-Token: your_authentication_token
@@ -8700,7 +8701,7 @@ DELETE /services/providers/{provider_id}/images/{machine_image_id}?location=us-e
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

@@ -26,7 +26,7 @@ Connect your Google account in ElasticBox in a couple of steps.
 
 ### Step 1. Associate Google Account in Google Cloud
 
-Associate your Google account in Google Cloud by creating a project, enabling billing, and turning on the Google Compute Engine API. If you’ve already done this, skip to [step 2.](../ElasticBox/using-your-google-cloud-account.md)
+Associate your Google account in Google Cloud by creating a project, enabling billing, and turning on the Google Compute Engine API. If you’ve already done this, skip to step 2.
 
 **Steps**
 
@@ -60,7 +60,7 @@ We sync with the Google Cloud APIs to register ready-made and custom images avai
 
 ### Deploying in Google Cloud
 
-The [deployment policy ](../ElasticBox/deploymentpolicy-box.md)for Google Cloud abstracts some basic infrastructure options. Choose a Google Cloud deployment policy when launching a box to the cloud. If your admin hasn’t shared a policy, create it for the Google Cloud account in ElasticBox.
+The [deployment policy ](./deploymentpolicy-box.md)for Google Cloud abstracts some basic infrastructure options. Choose a Google Cloud deployment policy when launching a box to the cloud. If your admin hasn’t shared a policy, create it for the Google Cloud account in ElasticBox.
 
 **Note:** To consume custom networks, routes, custom firewall rules, and options like non-persistent disks, load balancing, or disk snapshots, configure them directly in the Google Developers Console.
 
