@@ -63,11 +63,11 @@ A deployment profile defines settings for your infrastructure that are applied a
   ![instance-configuredeploymentsettings-5.png](../images/ElasticBox/instance-configuredeploymentsettings-5.png)
 
 Settings in the deployment profile vary by the provider you deploy to. For provider specific deployment settings, see these articles:
-* [Using CenturyLink Cloud](./using-centurylink.md)
-* [Using Google Cloud](./using-your-google-cloud-account.md)
+* [Using CenturyLink Cloud](./using-centurylink-cloud.md)
+* [Using Google Cloud](./using-google-cloud.md)
 * [Using Your AWS Account](./using-your-aws-account.md)
-* [Using the vSphere Private Datacenter](./using-the-vmware-vsphere-private-datacenter.md)
-* [Using Your OpenStack Cloud](./using-the-openstack-cloud.md)
+* [Using the vSphere Private Datacenter](./using-the-vmware-vcenter-private-datacenter.md)
+* [Using Your OpenStack Cloud](./using-openstack-cloud.md)
 * [Using CloudStack](./using-cloudstack.md)
 * [Using Azure](./using-azure.md)
 

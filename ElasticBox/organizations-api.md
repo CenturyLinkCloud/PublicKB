@@ -10,18 +10,20 @@
 
 | Resource |      Description    |
 |----------|:-------------|
-| [GET /services/organizations/{organization_name}](../ElasticBox/organizations.md) |  Gets the schema of the given organization. |
-| [PUT /services/organizations/{organization_name}](../ElasticBox/organizations.md) |    Updates an existing organization.  |
-| [PUT /organizations/{organization_name}/sync_groups](../ElasticBox/organizations.md) | Queues a request to sync LDAP groups. |
+| [GET /services/organizations/{organization_name}](./organizations-api.md) |  Gets the schema of the given organization. |
+| [PUT /services/organizations/{organization_name}](./organizations-api.md) |    Updates an existing organization.  |
+| [PUT /organizations/{organization_name}/sync_groups](./organizations-api.md) | Queues a request to sync LDAP groups. |
 
 ### GET /services/organizations/{organization_name}
 
 Gets the schema of a given organization.
 
 **Normal Response Codes**
+
 * 200
 
 **Common Error Response Codes**
+
 * User doesn’t belong to the organization (403)
 * Not Found (404)
 
@@ -277,13 +279,16 @@ ElasticBox-Release: 4.0
 Updates an existing organization given its name. Only the organization administrator can update.
 
 **Normal Response Codes**
+
 * 200
 
 **Common Error Response Codes**
+
 * User doesn’t belong to the organization (403)
 * Not Found (404)
 
 **Request Headers**
+
 ```
 Content-Type: application/json
 Elasticbox-Token: your_authentication_token
@@ -291,6 +296,7 @@ ElasticBox-Release: 4.0
 ```
 
 **Request Body**
+
 ```
 {
    "schema":"http://elasticbox.net/schemas/organization",
@@ -809,7 +815,7 @@ ElasticBox-Release: 4.0
 | setup | boolean | This is read-only. It indicates that the ElasticBox appliance is set up and ready for use. |
 | administrators | array | List of users who can administer the organization |
 | domains | string | Domains that are a part of the organization |
-| authentication | object | List of the authentication methods to allow single sign-on in the organization. Contains the following properties:<li>github: Boolean. If enabled, it is true, else false.</li><li>google: Boolean. If enabled, it is true, else false.</li><li>password: Boolean. If enabled, it is true, else false.</li><li>ldap: Boolean. If enabled, it is true, else false.</li><li>ldap_config: Object that contains the LDAP service settings:</li><li>ldap_group_sync: Boolean. By default it’s false. Specify as true to enable synchronizing with LDAP groups.</li><li>sources: Array of [LDAP sources](../ElasticBox/user-authentication). Each source has the following properties:</li><li>host: Required. String identifies the hostname or IP address of the LDAP service.</li><li>groups_dn: String specifies a fully qualified group name.</li><li>group_dn_filter: String defines an entity on the LDAP server. All groups are synchronised as children of this entity.</li><li>email_field: String specifies the email field name by which to look up users. Typically, this field is called email.</li><li>ldap_search_password: String specifies the password for the LDAP service account to look up users who try to log in</li><li>ldap_search_user: String specifies the username of the LDAP service account to look up users who try to log in.</li> |
+| authentication | object | List of the authentication methods to allow single sign-on in the organization. Contains the following properties:<li>github: Boolean. If enabled, it is true, else false.</li><li>google: Boolean. If enabled, it is true, else false.</li><li>password: Boolean. If enabled, it is true, else false.</li><li>ldap: Boolean. If enabled, it is true, else false.</li><li>ldap_config: Object that contains the LDAP service settings:</li><li>ldap_group_sync: Boolean. By default it’s false. Specify as true to enable synchronizing with LDAP groups.</li><li>sources: Array of [LDAP sources](../ElasticBox/user-authentication.md). Each source has the following properties:</li><li>host: Required. String identifies the hostname or IP address of the LDAP service.</li><li>groups_dn: String specifies a fully qualified group name.</li><li>group_dn_filter: String defines an entity on the LDAP server. All groups are synchronised as children of this entity.</li><li>email_field: String specifies the email field name by which to look up users. Typically, this field is called email.</li><li>ldap_search_password: String specifies the password for the LDAP service account to look up users who try to log in</li><li>ldap_search_user: String specifies the username of the LDAP service account to look up users who try to log in.</li> |
 | ldap_last_sync_completed | string | Timestamp of the last successful LDAP group sync, for example, 2015-04-06 14:28:12.874910. Value is null if ldap_group_sync is set to false. |
 | ldap_groups | array | List of objects, each of which is an LDAP group. Each group has two properties:<li>dn: String identifier for the group.</li><li>name: String name shown in the workspace web interface.</li> |
 | providers | array | List of cloud providers the organization can enable to register and deploy. Each provider type has the following properties enabled:<li>Boolean value of true if enabled, else false.</li><li>type: String values of the supported cloud providers: Amazon Web Services, Openstack, VMWare vSphere, Google Compute, Microsoft Azure, Cloudstack, SoftLayer, VMware vCloud Director, Amazon Web Services GovCloud, Rackspace.</li><li>description: String that briefly enumerates the services from the cloud provider.</li><li>pricing: Array of pricing information for Linux and Windows compute instance types. Only available for Amazon Web Services.</li> |
@@ -973,7 +979,7 @@ ElasticBox-Release: 4.0
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

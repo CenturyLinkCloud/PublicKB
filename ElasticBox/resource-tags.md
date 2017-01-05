@@ -56,7 +56,7 @@ Only ElasticBox users in the administrator role can apply tags. Follow these ste
 2. From the menu drop-down on the top right, select the **Admin Console**.
 3. Click **Providers > Tags**.
 4. Enter a key and value for the tag.
-   * To enter a [preset value](https://www.ctl.io/knowledge-base/ElasticBox/resource-tags.md/#preset-or-custom-tags), click the Custom Value drop-down to select one.
+   * To enter a preset value, click the Custom Value drop-down to select one.
    * To enter a custom value, simply type in the Custom Value field.
    * **Note:** The maximum length is 125 characters for the key and 250 characters for the value. Tags that contain unicode non-ASCII characters (ex: +=*&!@#) are ignored. Such tags are not applied to the instance in Google Cloud and OpenStack.
 
@@ -112,7 +112,7 @@ In addition to preset and custom tags, ElasticBox tags instances with CloudForma
    ![admin-tags7.png](../images/ElasticBox/admin-tags7.png)
 
 ### Contacting ElasticBox Support
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log

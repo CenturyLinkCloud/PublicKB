@@ -24,7 +24,7 @@ Click **Edit** to customize the policy. Select the resource, network, and other 
 * [Google Cloud](./using-google-cloud.md)
 * [Amazon Web Services](./using-your-aws-account.md)
 * [AWS GovCloud](./using-aws-govcloud.md)
-* [VMware vCenter](./using-the-wmware-vsphere-private-datacenter.md)
+* [VMware vCenter](./using-the-vmware-vcenter-private-datacenter.md)
 * [Azure](./using-azure.md)
 * [OpenStack](./using-openstack-cloud.md)
 * [Rackspace Cloud](./using-rackspace-cloud.md)
