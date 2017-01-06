@@ -1,6 +1,6 @@
 {{{
   "title": "SafeHaven-4-Network Requirements",
-  "date": "01-05-2017",
+  "date": "01-06-2017",
   "author": "Shi Jin",
   "attachments": [],
   "contentIsHTML": false
@@ -39,8 +39,8 @@ There are 3 logically separated networks which can be arbitrarily combined into 
 
 #### Networking Requirement to Make API Calls
 
-* For VMware site, the SRN within it needs to have a network connectivity to the vCenter site
-* For CLC site, the SRN within it needs to have access to http://api.ctl.io/
+* For VMware site, the SRN within it needs to have a network connectivity to the vCenter server to make vSphere API calls
+* For CLC site, the SRN within it needs to have access to https://api.ctl.io/
 
 ### Windows Machine Running the GUI
 
