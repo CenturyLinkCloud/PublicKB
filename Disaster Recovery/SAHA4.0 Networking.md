@@ -37,6 +37,16 @@ There are 3 logically separated networks which can be arbitrarily combined into 
 * TCP/3260: iSCSI (iSCSI targets to be connected by protected servers for local replication)
 * TCP/5671: RabbitMQ (local communication between SRN and protected servers), **SSL encrypted**
 
+#### Networking Requirement to Make API Calls
+
+* For VMware site, the SRN within it needs to have a network connectivity to the vCenter site
+* For CLC site, the SRN within it needs to have access to http://api.ctl.io/
+
+### Windows Machine Running the GUI
+
+* It needs to have network connectivity to the CMS, ie, access TCP port 20081 of the CMS.
+* If there is a VMware site, this client machine also needs network connectivity to the vCenter server, ie, it should be able to run VMware vSphere client and connect to the vCenter server.
+
 ### About Internet Access
 
 Once installed, the SafeHaven cluster does not need Internet to operate as long as there is a way for the customer to use the GUI to login to CMS and the API calls  from SRNs can reach the service it needs to contact. But as a general rule, it is a lot easier to assume all nodes have access to Internet as ongoing clients and this normally does not impose any significant security risk since there is no service provided to the internet.
