@@ -1,6 +1,6 @@
 {{{
   "title": "SafeHaven-4-Network Requirements",
-  "date": "01-05-2017",
+  "date": "01-06-2017",
   "author": "Shi Jin",
   "attachments": [],
   "contentIsHTML": false
@@ -36,6 +36,16 @@ There are 3 logically separated networks which can be arbitrarily combined into 
 * TCP/80: http (web server to provide binaries downloads and certificates for protected servers)
 * TCP/3260: iSCSI (iSCSI targets to be connected by protected servers for local replication)
 * TCP/5671: RabbitMQ (local communication between SRN and protected servers), **SSL encrypted**
+
+#### Networking Requirement to Make API Calls
+
+* For VMware site, the SRN within it needs to have a network connectivity to the vCenter server to make vSphere API calls
+* For CLC site, the SRN within it needs to have access to https://api.ctl.io/
+
+### Windows Machine Running the GUI
+
+* It needs to have network connectivity to the CMS, ie, access TCP port 20081 of the CMS.
+* If there is a VMware site, this client machine also needs network connectivity to the vCenter server, ie, it should be able to run VMware vSphere client and connect to the vCenter server.
 
 ### About Internet Access
 
