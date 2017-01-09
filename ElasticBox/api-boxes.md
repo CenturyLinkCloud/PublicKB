@@ -1157,7 +1157,7 @@ Removes the CloudFormation box from the boxes catalog.
 1. [POST /services/profiles](./api-blobs.md)
 This step is optional. Passes deployment settings in a new deployment profile to launch the box in the provider’s infrastructure. See example launch a CloudFormation.
 
-2. [POST /services/instances](./instance-api.md)
+2. [POST /services/instances](./instances-api.md)
 Creates a new instance of the CloudFormation box.
 
 **Update a CloudFormation Stack in Real-Time**
@@ -1165,10 +1165,10 @@ Creates a new instance of the CloudFormation box.
 1. [POST /services/blobs/upload](./api-blobs.md)
 Uploads the modified template data. See example update a CloudFormation.
 
-2. [PUT /services/instances/{instance_id}](./instance-api.md)
+2. [PUT /services/instances/{instance_id}](./instances-api.md)
 Updates the instance with the template changes. See example update a CloudFormation part 2.
 
-3. [PUT /services/instances/{instance_id}/reconfigure](./instance-api.md)
+3. [PUT /services/instances/{instance_id}/reconfigure](./instances-api.md)
 Reconfigures the stack based on the changes. See example update a CloudFormation part 3.
 
 ### Example: Create a CloudFormation box with template
