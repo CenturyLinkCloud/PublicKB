@@ -22,7 +22,7 @@ You can manage users on your account by going to the Control Portal > Settings >
 
 3. Optionally fill in additional information
 
-4. Once a user is created an email will be sent to the email address supplied with the required information for logging in.
+4. Once a user is created an email containing the required information for logging in will be sent to the email address you created.
 
 ### API Users
 

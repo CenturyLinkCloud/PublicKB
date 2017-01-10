@@ -16,7 +16,7 @@ User unlocking the record must have Account Administrator privileges
 
 ### Detailed Steps
 
-* Four consecutive log in failures (incorrect password or username)
+* Four consecutive log in failures (incorrect password or username).
 * The user receives a message that their user account is locked out.
 * An Account Administrator is contacted and views the user's record.
 * The Account Administrator unchecks the "Is Locked" checkbox. If the user contacts the CenturyLink Cloud NOC, then the user's password will also be reset as part of the unlock procedure.

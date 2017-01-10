@@ -44,7 +44,7 @@
     <li>Site Name (ex. Montreal Office)</li>
     <li>Device Type (ex. Cisco ASA5520 v8.3)</li>
     <li>VPN Peer IPv4 Address: &nbsp;Static IP of the peering interface on your device</li>
-    <li>Tunnel Encrypted Subnets: &nbsp;The network blocks you wish to have be reached on your end of the tunnel -&nbsp;<strong>these must be private IP blocks (RFC-1918)</strong>
+    <li>Tunnel Encrypted Subnets: &nbsp;The network blocks you wish to have be reached on your end of the tunnel -&nbsp;<strong>these must be private IP blocks (RFC-1918). Please note that the 172.17.1.0/24 network is in use by CLC for management purposes and should not be used as a remote network. If your remote networks conflict with the CLC customer network blocks in use for the specified datacenter then your VPN becomes a Non-standard configuration that will require NAT. You can email help@ctl.io for a list of CLC customer network blocks for a specified datacenter.</strong>
     </li>
   </ul>
 </ul>

@@ -28,7 +28,7 @@ Together, Vormetric and CenturyLink deliver data-centric security services that 
 
 The Data-centric Security-as-a-Service (DSaaS) solution enables IT organizations to efficiently deploy data-centric security across CenturyLink Partner Templates with the Vormetric Transparent Encryption SW agents and the Vormetric Data Security Manager products. Now, IT security managers can define what files and folders are restricted, who is allowed to view the data, when access is allowed and what operations can be performed by the individual or group. With the Vormetric data security solution, businesses now reduce their data breach risk, guard against unauthorized data access, meet executive data privacy business requirements and satisfy security compliance regulations that govern your market.
 
-Below is a solution diagram illustrating the Data Security Manager (DSM) deployment options available from the [CenturyLink Cloud Partner Template](https://www.ctl.io/knowledge-base/ecosystem-partners/getting-started-with-vormetric-dsm/).
+Below is a solution diagram illustrating the Data Security Manager (DSM) deployment options available from the [CenturyLink Cloud Partner Template](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-vormetric-dsm/).
 
 ![DSM Topology Diagram](../../images/vormetric-dsm-diagram.png)
 
@@ -91,7 +91,7 @@ Follow these steps to access and configure the Voretric Agent application.
    * To manually configure the Vormetric agent, please [follow the instructions on the Vormetric support website](http://www.Vormetric.com).
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. Costs for the agent are bundled into your purchase of the DSM. It is assumed that you have purchased the DSM through the CenturyLink marketplace.  For other arrangements, please contact your CenturyLink sales representative to coordinate with the Vormetric team on your behalf. 
+The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. Costs for the agent are bundled into your purchase of the DSM. It is assumed that you have purchased the DSM through the CenturyLink marketplace.  For other arrangements, please contact your CenturyLink sales representative to coordinate with the Vormetric team on your behalf.
 
 ### Frequently Asked Questions
 #### Where do I obtain my Vormetric License or entitlements?

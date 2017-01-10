@@ -37,7 +37,7 @@ $ cd django_sample
 $ pip install -r requirements.txt
 ```
 
-Once all of the dependent libraries are downloaded and installed, you will need make **manage.py** executable and apply migrations. Then you can start the app.
+Once all of the dependent libraries are downloaded and installed, you will need to make **manage.py** executable and apply migrations. Then you can start the app.
 ```
 $ chmod +x manage.py
 $ ./manage.py migrate
