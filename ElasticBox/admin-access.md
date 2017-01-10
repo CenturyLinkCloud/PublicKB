@@ -14,7 +14,7 @@ When you sign up for the ElasticBox Enterprise Edition, you get a default admini
 2. Go to the Admin Console located in menu drop-down at the top right corner of your workspace.
    ![admin-access1.png](../images/ElasticBox/admin-access1.png)
 
-3. Under **Organization > Administrators**, type the user’s name in the search field and select to add them.
+3. Under **Organization > Administrators**, type the user’s name in the search field and select to add them.<br>
    ![admin-access2.png](../images/ElasticBox/admin-access2.png)
 
 To revoke administrator privileges for a user, click X against their name under **Organization > Administrators**.
