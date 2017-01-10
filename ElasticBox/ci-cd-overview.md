@@ -30,7 +30,7 @@ Without the plugin, normally you’d have to manually set up slaves, provision e
 * [Setting Up Jenkins with ElasticBox](./jenkins-elasticbox-setup.md)
 * [Launching Slaves via ElasticBox](./jenkins-elasticbox-slaves.md)
 * [Setting Up CI/CD with ElasticBox and Jenkins](./setting-up-ci-cd.md)
-* [Jenkins CI/CD Tutorial](//www.ctl.io/guides/)
+* [Jenkins CI/CD Tutorial](./jenkins-ci-cd-tutorial.md)
 
 ### Contacting ElasticBox Support
 

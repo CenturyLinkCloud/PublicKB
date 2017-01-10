@@ -634,7 +634,7 @@ ElasticBox-Release: 4.0
 **Response parameters**
 
 |Parameter | Type | Description |
-|---------------|--------|-----------------|
+|----------|------|-------------|
 |updated | string | Date of the last update.|
 |description | string | Provider description.|
 |created | string | Creation date.|
@@ -7315,7 +7315,7 @@ For AWS, you can also update the key and secret. For VMware vShpere, you can als
 **Request parameters**
 
 |Parameter | Type | Description |
-|---------------|--------|-----------------|
+|----------|------|-------------|
 |updated | string | Date of the last update.|
 |description | string | Provider description.|
 |created | string | Creation date.|
@@ -8590,7 +8590,7 @@ ElasticBox-Release: 4.0
 **Response parameters**
 
 |Parameter | Type | Description |
-|---------------|--------|-----------------|
+|----------|------|-------------|
 |workspace | string | Id of the workspace who perform the action.|
 |provider_id | string | Provider unique identifier.|
 |created | string | Creation date.|
@@ -8642,10 +8642,10 @@ Adds a new machine image to a provider when you give the provider ID.
 **Request Parameters**
 
 |Parameter | Type | Description|
-|---------------|--------|----------------|
-|location | string | Image location.
-|name | string | Image name.
-|description | string | Image description.
+|----------|------|------------|
+|location | string | Image location. |
+|name | string | Image name. |
+|description | string | Image description. |
 
 ```
 Headers:
@@ -8681,9 +8681,9 @@ Deletes an existing machine image when you give the provider ID and the machine 
 
 **Request Parameters**
 
-| Parameter | Type	|Description |
-|---------------|----------|----------------|
-|location | string | Location of the machine image to be deleted.|
+| Parameter | Type | Description |
+|-----------|------|-------------|
+|location | string | Location of the machine image to be deleted. |
 
 ```
 Headers:
