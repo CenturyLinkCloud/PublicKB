@@ -61,7 +61,7 @@ Under Build > Add build step, click **Execute shell**. Enter Bash Shell commands
 
 **Step 5. Deploy the MySQL Database Service box.**
 
-Under Build > Add build step, click **ElasticBox - Deploy Box**. Select the MySQL Database Service box from your workspace. To select the [deployment profile](./deploying-and-managing-instances.md) here, you have to create it for the box in your workspace first.
+Under Build > Add build step, click **ElasticBox - Deploy Box**. Select the MySQL Database Service box from your workspace. To select the [deployment profile](./deploying-managing-instances.md) here, you have to create it for the box in your workspace first.
 
 ![tutorial-jenkins-5.png](../images/ElasticBox/tutorial-jenkins-5.png)
 
