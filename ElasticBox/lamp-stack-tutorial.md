@@ -20,7 +20,7 @@ The entire quick start takes 30 minutes or less to complete. By the end, you’l
 
 ### Before You Begin
 * Sign in to ElasticBox or sign up, it’s free!
-* Optionally, get a feel for building a basic [Hello World](./hello-world-in-elasticbox.md) box.
+* Optionally, get a feel for building a basic Hello World box.
 * [Register an AWS cloud account](./using-your-aws-account.md) as a provider in ElasticBox.
 
 ___
