@@ -11,7 +11,7 @@ ElasticBox works with the AWS CloudFormation API to provision the stack in your 
 
 ElasticBox supports all CloudFormation templates available from AWS. Leverage services such as EC2, Elastic Block Store, Simple Notification Service, Elastic Load Balancing and Auto Scaling, RDS, S3, DynamoDB, Elastic IPs, and much more.
 
-[AWS RDS services](../ElasticBox/using-your-aws-account.md) such as MySQL, MS SQL, PostgreSQL, Oracle, and [Memcached](../ElasticBox/using-your-aws-account.md), [S3](../ElasticBox/using-your-aws-account.md), [DynamoDB](../ElasticBox/using-your-aws-account.md) are readymade CloudFormation templates. To use these services, configure a CloudFormation box of the type and select an AWS account registered in ElasticBox.
+[AWS RDS services](./using-your-aws-account.md) such as MySQL, MS SQL, PostgreSQL, Oracle, and [Memcached](./using-your-aws-account.md), [S3](./using-your-aws-account.md), [DynamoDB](./using-your-aws-account.md) are readymade CloudFormation templates. To use these services, configure a CloudFormation box of the type and select an AWS account registered in ElasticBox.
 
 **In this article:**
 
@@ -29,7 +29,7 @@ We use a sample Wordpress template to show how to create and launch a CloudForma
 
 1. [Log in](https://elasticbox.com/login) to ElasticBox.
 
-2. Click **Boxes > New > CloudFormation > CloudFormation Template**. Give the box a meaningful name to identify it in the box service catalog. Specify other [metadata](../ElasticBox/boxes.md).
+2. Click **Boxes > New > CloudFormation > CloudFormation Template**. Give the box a meaningful name to identify it in the box service catalog. Specify other [metadata](./boxes.md).
 
      ![cloudformationboxes1.png](../images/ElasticBox/cloudformationboxes1.png)
 
@@ -68,7 +68,7 @@ We use a sample Wordpress template to show how to create and launch a CloudForma
 
     * Variables imported from a template are always required at deploy time even if you don’t flag them as such in the box. Since they must contain values at launch time, you can set a default value when creating them or supply them at deploy time.
 
-    * At this time, [box type variables](../ElasticBox/parameterizing-boxes-with-variables.md) are not supported.
+    * At this time, [box type variables](./parameterizing-boxes-with-variables.md) are not supported.
 
     * The file variable is a useful way to include a script that you want to execute in your stack. When you add a file, ElasticBox stores it on a secure server and declares the file variable as a parameter with a URL value in the parameters section of the template. To execute the file, you can add a script in the user data section of the template. Or depending on your resource type, reference it from the resource properties section. One example for using a file is to store it in the S3 bucket that you launch as part of the stack.
 
@@ -84,7 +84,7 @@ We use a sample Wordpress template to show how to create and launch a CloudForma
 
 3. For Region, select the location and availability zone to launch the stack.
 
-4. Optionally, add tags, [auto schedule the instance](../ElasticBox/deploying-managing-instances.md), and set [auto updates](../ElasticBox/boxes.md).
+4. Optionally, add tags, [auto schedule the instance](./deploying-managing-instances.md), and set [auto updates](./boxes.md).
 
 5. Under Variables, set values for each parameter based on the **AllowedValues** property in the template parameters section.
 
@@ -118,7 +118,7 @@ Once live, you can continue to make changes to your CloudFormation template from
 
 ### Connect to Other CloudFormation Boxes over Bindings
 
-Large CloudFormation deployments are challenging to manage in a single template. To simplify, break the template into smaller, manageable CloudFormation boxes and connect them with [bindings](../ElasticBox/managing-multi-tier-applications.md). Then use [text expressions](../ElasticBox/parameterizing-boxes-with-variables.md) to call the bindings. When you do, they’re added to the parameter section of the template. At deploy time, the CloudFormation service calls the binding to connect and pass values between boxes.
+Large CloudFormation deployments are challenging to manage in a single template. To simplify, break the template into smaller, manageable CloudFormation boxes and connect them with [bindings](./managing-multi-tier-applications.md). Then use [text expressions](./parameterizing-boxes-with-variables.md) to call the bindings. When you do, they’re added to the parameter section of the template. At deploy time, the CloudFormation service calls the binding to connect and pass values between boxes.
 
 To illustrate, we create a second CloudFormation box to scale the WordPress blog instance automatically when past its load limit. In the following steps, we add a binding and call it to connect the WordPress box to the autoscaling box.
 
@@ -146,7 +146,7 @@ When you next launch the WordPress box, its instance automatically connects to a
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

@@ -15,12 +15,12 @@ The appliance is available as a free download. Experience all the same functiona
 Request a download link from [support](mailto:support@elasticbox.com).
 
 ### Next Up
-* [Installing the Appliance in vCenter](../ElasticBox/appliance-vsphere.md)
-* [Installing the Appliance in OpenStack](../ElasticBox/appliance-openstack.md)
-* [Configuring the Appliance Network Settings](../ElasticBox/appliance-networking.md)
-* [Setting Up ElasticBox](../ElasticBox/appliance-initialsetup.md)
-* [Upgrading the Appliance](../ElasticBox/appliance-upgrading.md)
-* [Appliance Migration](../ElasticBox/appliance-migration.md)
+* [Installing the Appliance in vCenter](./appliance-vsphere.md)
+* [Installing the Appliance in OpenStack](./appliance-openstack.md)
+* [Configuring the Appliance Network Settings](./appliance-networking.md)
+* [Setting Up ElasticBox](./appliance-initialsetup.md)
+* [Upgrading the Appliance](./appliance-upgrading.md)
+* [Appliance Migration](./appliance-migration.md)
 
 ### Contacting ElasticBox Support
 We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.

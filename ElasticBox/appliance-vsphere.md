@@ -10,10 +10,10 @@
 If you don’t have internet access in the vCenter, download all the files and import them locally into your vCenter network. If you have access, you can directly import the appliance in the open virtualization format (OVF) and vCenter will download the disk images for you.
 
 **In this article:**
-* [vCenter Requirements](../ElasticBox/appliance-vsphere.md)
-* [Installing the Appliance in vCenter](../ElasticBox/appliance-vsphere.md)
-* [Connecting the Appliance to the vCenter Network](../ElasticBox/appliance-vsphere.md)
-* [Next Steps](../ElasticBox/appliance-vsphere.md)
+* vCenter Requirements
+* Installing the Appliance in vCenter
+* Connecting the Appliance to the vCenter Network
+* Next Steps
 
 ### vCenter Requirements
 * Datacenter running vSphere vCenter 5.0 or later
@@ -30,8 +30,8 @@ If you don’t have internet access in the vCenter, download all the files and i
 5. Select the cluster and a host that will run the appliance. Click **Next**.
    ![appliance-vcenter1.png](../images/ElasticBox/appliance-vcenter1.png)
 
-6. Choose a cluster resource pool if available to centrally manage the compute and storage resources for the appliance.
-   ![appliance-vcenter2.png](../images/ElasticBox/appliance-vcenter2.png)
+6. Choose a cluster resource pool if available to centrally manage the compute and storage resources for the appliance.<br>
+    ![appliance-vcenter2.png](../images/ElasticBox/appliance-vcenter2.png)
 
 7. Select the datastore to store the appliance. The datastore virtual disk format is set to Thin. Thin provision conserves disk space and expands as needed. This means the appliance uses the space required now but takes up more space as usage grows.
    ![appliance-vcenter3.png](../images/ElasticBox/appliance-vcenter3.png)
@@ -53,8 +53,8 @@ In these steps, you connect the ElasticBox appliance to the vCenter datacenter n
 3. Now start the appliance. Right-click the appliance, click **Power > Power On**.
 
 ### Next Steps
-* [Configure networking](../ElasticBox/appliance-networking.md)
-* [Set up the appliance for use](../ElasticBox/appliance-initialsetup.md)
+* [Configure networking](./appliance-networking.md)
+* [Set up the appliance for use](./appliance-initialsetup.md)
 
 ### Contacting ElasticBox Support
 We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.

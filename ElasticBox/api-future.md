@@ -18,13 +18,13 @@ This article covers the main API changes to the endpoints for boxes, instances, 
 ### What’s new
 
 |  Endpoint     | Added, Changed, or Removed   |
-|------------------|--------------------------------------------|
-|  Instances    | **Added**<br>     * **New Endpoint** that updates an active instance by applying a box version.<br>       * PUT /services/instances/{instance_id}/pull.<br><br>* Parameters: automatic_updates, box, policy_box <br>* PUT /services/instances/{instance_id}<br> * GET /services/instances<br><br> * Parameters: automatic_updates, box, policy_box, instance_tags, ipv4_address (only for [deploying using the ElasticBox agent on any infrastructure](./deploying-on-anyinfra.md)). <br> * POST /services/instances <br> * POST /services/instances/dryrun <br><br> **Removed** <br> * Parameter: environment.<br> * PUT /services/instances/{instance_id} <br> * GET /services/instances <br> * Parameter: environment, profile, variables. <br> * POST /services/instances <br> *POST /services/instances/dryrun |
-|  Boxes    | **Added**<br>  **Changed**<br> The boxes endpoint accepts four box types now. When you call a box, use one of the following schemas:<br> * Script box <br> * Deployment policy box <br> * CloudFormation box <br> * Docker container box <br> <br> **Removed** <br>  Parameters: <br> * tags are deprecated. Use requirements or claims instead. <br> * service |
-| Workspaces | **Removed**  <br> This particular operation on the workspaces endpoint:  <br> * GET /services/workspaces/{workspace_id}/profiles |
-| Profiles | **Removed** <br> All operations on the profiles endpoint are deprecated and replaced by deployment policy boxes <br> * GET /services/profiles <br> * POST /services/profiles <br> * GET /services/profiles/{profile_id} <br> * PUT /services/profiles/{profile_id} <br> * DELETE /services/profiles/{profile_id} |
-| Organizations	| **Removed** <br> * Parameter: admin_boxes <br> * GET /services/organizations/{organization_name} <br> * POST /services/organizations <br> * PUT /services/organizations/{organization_name} |
-| Providers | **Removed** <br> * Parameter: admin_box <br> * GET /services/providers <br> * POST /services/providers <br> * GET /services/providers/{provider_id} <br> * PUT /services/providers/{provider_id} |
+|---------------|------------------------------|
+|  Instances    | **Added** <br>    + **New Endpoint** that updates an active instance by applying a box version.<br>       + PUT /services/instances/{instance_id}/pull.<br><br>+ Parameters: automatic_updates, box, policy_box <br>+ PUT /services/instances/{instance_id}<br> + GET /services/instances<br><br> + Parameters: automatic_updates, box, policy_box, instance_tags, ipv4_address (only for [deploying using the ElasticBox agent on any infrastructure](./deploying-on-anyinfra.md)). <br> + POST /services/instances <br> + POST /services/instances/dryrun <br><br> **Removed** <br> + Parameter: environment.<br> + PUT /services/instances/{instance_id} <br> + GET /services/instances <br> + Parameter: environment, profile, variables. <br> + POST /services/instances <br> + POST /services/instances/dryrun |
+|  Boxes    | **Added**<br>  **Changed**<br> The boxes endpoint accepts four box types now. When you call a box, use one of the following schemas:<br> + Script box <br> + Deployment policy box <br> + CloudFormation box <br> + Docker container box <br> <br> **Removed** <br>  Parameters: <br> + tags are deprecated. Use requirements or claims instead. <br> + service |
+| Workspaces | **Removed**  <br> This particular operation on the workspaces endpoint:  <br> + GET /services/workspaces/{workspace_id}/profiles |
+| Profiles | **Removed** <br> All operations on the profiles endpoint are deprecated and replaced by deployment policy boxes <br> + GET /services/profiles <br> + POST /services/profiles <br> + GET /services/profiles/{profile_id} <br> + PUT /services/profiles/{profile_id} <br> + DELETE /services/profiles/{profile_id} |
+| Organizations	| **Removed** <br> + Parameter: admin_boxes <br> + GET /services/organizations/{organization_name} <br> + POST /services/organizations <br> + PUT /services/organizations/{organization_name} |
+| Providers | **Removed** <br> + Parameter: admin_box <br> + GET /services/providers <br> + POST /services/providers <br> + GET /services/providers/{provider_id} <br> + PUT /services/providers/{provider_id} |
 
 ___
 
@@ -62,6 +62,7 @@ ___
 This box’s type behaves just like the old boxes.
 
 **Endpoint**
+
 /services/boxes
 
 **Schema**
@@ -80,8 +81,8 @@ This box’s type behaves just like the old boxes.
 
 | Parameter | Type | Description |
 |---------------|---------|----------------|
-| events | object | Optional. Contains these events: pre_configure, configure, pre_install, install, pre_start, start, stop, post_stop, dispose, post_dispose. Each refers to a blob of the script. <br> **Note: **The post_install, post_configure, and post_start events are deprecated. The new events are pre_install, pre_configure, and pre_start.
-| version | object	| Optional. Requires these properties: <br> * box: Of type guid. Identifies the ID of the box to which the version belongs. <br> * description. Of type string, describes the change to the box version. <br> * number. Of type object, specifies the version number as an integer in this format: major, minor, and patch. For example to represent version 1.4.5, you would specify major:1, <br> minor:4, patch:5. |
+| events | object | Optional. Contains these events: pre_configure, configure, pre_install, install, pre_start, start, stop, post_stop, dispose, post_dispose. Each refers to a blob of the script. <br> **Note:** The post_install, post_configure, and post_start events are deprecated. The new events are pre_install, pre_configure, and pre_start.
+| version | object	| Optional. Requires these properties: <br> + box: Of type guid. Identifies the ID of the box to which the version belongs. <br> + description. Of type string, describes the change to the box version. <br> + number. Of type object, specifies the version number as an integer in this format: major, minor, and patch. For example to represent version 1.4.5, you would specify major:1, <br> minor:4, patch:5. |
 
 **Deployment Policy Box**
 
@@ -304,10 +305,10 @@ environment
 **New parameters**
 
 | Parameter | Type | Description |
-|---------------|---------|----------------|
+|-----------|------|-------------|
 | automatic_updates | string | Required. Specify an option: off, major, minor, or patch. Default is off. |
-box | string | Required. ID of the box (not version) deployed on the instance. |
-policy_box | string | Optional. Is a deployment policy or a CloudFormation box. |
+| box | string | Required. ID of the box (not version) deployed on the instance. |
+| policy_box | string | Optional. Is a deployment policy or a CloudFormation box. |
 
 **Request**
 
@@ -358,16 +359,16 @@ environment, profile, variables
 **New parameters**
 
 | Parameter | Type | Description |
-|---------------|---------|----------------|
+|-----------|------|-------------|
 | automatic_updates | string | Required. Specify an option: off, major, minor, or patch. Default is off. |
-box | object | Required. Contains two parameters: <br> * id: Of type string, is the ID of the script box (not version) to deploy on the instance. <br> * variables: Of type array, are the variables from the script box. |
-policy_box | object | Required. Contains two parameters: <br> * id: Of type string, is the ID of the deployment policy box (not version) to deploy on the instance. <br> * variables: Of type array, are the variables from the deployment policy box. |
+| box | object | Required. Contains two parameters: <br> + id: Of type string, is the ID of the script box (not version) to deploy on the instance. <br> + variables: Of type array, are the variables from the script box. |
+| policy_box | object | Required. Contains two parameters: <br> + id: Of type string, is the ID of the deployment policy box (not version) to deploy on the instance. <br> + variables: Of type array, are the variables from the deployment policy box. |
 | instance_tags | Array | Optional. Custom tags to describe an instance. |
 | ipv4_address | string | Optional. IP address of the machine where you want to run the ElasticBox agent to deploy a box. |
 
 **Request**
 
-Contians the schema to deploy an instance.
+Contains the schema to deploy an instance.
 
 ```
 {
