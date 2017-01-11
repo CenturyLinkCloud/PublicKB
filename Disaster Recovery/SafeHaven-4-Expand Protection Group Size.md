@@ -13,7 +13,7 @@ This article explains how to expand the size of a Protection Group. This can be 
 
 ### Edit Storage
 Go to the Centurylink Portal, select the Production SRN and click on "Edit Storage"  
-![ConfigureEmail](../images/SH4.0/expandpg1.png) 
+![ConfigureEmail](../images/SH4.0/ExpandPG/expandpg1.png) 
 
 ### Add Raw Disk
 * On Production SRN  
@@ -23,21 +23,21 @@ Add 10% of the additional disk for local Cache and 100% for local Replica.
 Add 100% of the additional disk.
 
 Click on Add storage and select Raw Disk from the drop down menu. DO NOT expand existing storage or add a partition.  
-![ConfigureEmail](../images/SH4.0/expandpg2.png) 
+![ConfigureEmail](../images/SH4.0/ExpandPG/expandpg2.png) 
 
 Enter a value for the new raw disk and click on apply. This has to be repeated for the Recovery SRN. Once the approprite amount of storage has been added to both the production and the recovery SRNs, it needs to be claimed in the storage pool associated with the Protection Group.  
-![ConfigureEmail](../images/SH4.0/expandpg2_1.png)   
+![ConfigureEmail](../images/SH4.0/ExpandPG/expandpg2_1.png)   
 
 ### Claim Storage Pool
 Next step is to claim the newly added storage to the storage pool associated with the Protection group. In order to find out the storage pool associated with the protection group, click on the protection group and see "Data Volume Storage Pool" under "Data Center" for both active(Production) and Peer(recovery) datacenters.  
-![ConfigureEmail](../images/SH4.0/expandpg2_2.png)   
+![ConfigureEmail](../images/SH4.0/ExpandPG/expandpg2_2.png)   
 
 To claim the storage to storage pool, select the appropriate SRN and then click on "Claim Storage Pool".   
-![ConfigureEmail](../images/SH4.0/expandpg3.png)   
+![ConfigureEmail](../images/SH4.0/ExpandPG/expandpg3.png)   
 
 Select the Newly Added storage and add it to an existining storage pool. Select the right storage pool from the drop down menu and click on claim.  
 Note: This has to be done for both Production and Recovery SRN.  
-![ConfigureEmail](../images/SH4.0/expandpg4.png)   
+![ConfigureEmail](../images/SH4.0/ExpandPG/expandpg4.png)   
 
 
 
