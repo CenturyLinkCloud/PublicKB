@@ -14,7 +14,7 @@
 - [Connect to the server via OpenVPN](#connect-to-the-server-via-openvpn)
 - [Steps to deploy ownCloud to an existing server](#steps-to-deploy-owncloud-to-an-existing-server)
 - [Configure ownCloud connection to CenturyLink MySQL Relational DB](#configure-owncloud-connection-to-centurylink-mysql-relational-db-service)
-- [Configure ownCloud to utilize SMTP Relay](#configure-owncloud-to-utilize-smtp-relay)
+- [Configure ownCloud to utilize a SMTP service](#configure-owncloud-to-utilize-smtp-service)
 - [Configure ownCloud to utilize Object Storage](#configure-owncloud-to-utilize-object-storage)
 
 ### Technology Profile
@@ -162,9 +162,10 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 		  ```
 
 
-### Configure ownCloud to utilize SMTP Relay
+### Configure ownCloud to utilize SMTP Services
 
-- Configure SMTP Relay [SMTP Relay](../Mail/smtp-relay-services-simple.md)
+Alerts and notications cane be sent out using SMTP, if you have subscribe to a SMTP provider, it can be configured using steps below:
+
 - From the owncloud main page, select ***Admin*** from the user account
 
 ![drop down menu](../images/owncloud/oc-drop-down.png)
@@ -173,7 +174,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 
 ![Mail Server](../images/owncloud/mail-server.png)
 
-- Configure the SMTP Relay user based on SMTP Relay information from the portal
+- Configure the SMTP  user based on SMTP information from your provider
 
 ![mail server config](../images/owncloud/oc-mail-relay-account.png)
 
