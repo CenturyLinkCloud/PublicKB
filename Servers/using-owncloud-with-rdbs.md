@@ -21,7 +21,7 @@
 ownCloud is a personal productivity powerhouse. It gives you universal access to all your files, contacts, calendars and bookmarks across all of your devices. Unlike many of the shared repository services out there, with ownCloud, you have your own, private repo. However, just like the public repo companies, with ownCloud you can share your files with friends and co-workers. If you need it, ownCloud even integrates with other storage providers. Best of all, ownCloud is open source and free!
 
 ### Description
-This CenturyLink Cloud knowledge article provides a walkthrough to install and configure ownCloud on the Linux platform (from scratch and Blueprint), customize ownCloud to utilize CenturyLink Cloud's Relational DB Service, SMTP Relay and Object Storage.
+This CenturyLink Cloud knowledge article provides a walkthrough to install and configure ownCloud on the Linux platform (from scratch and Blueprint), customize ownCloud to utilize CenturyLink Cloud's Relational DB Service and Object Storage.
 
 For more information, please visit [http://owncloud.org](//owncloud.org)
 
@@ -233,7 +233,7 @@ Alerts and notications cane be sent out using SMTP, if you have subscribe to a S
      ),
     }
     ```
-Now, the ownCloud server is set up to consume Database as a Service, SMTP Relay and Object Storage, this will minimize the administration of the local environment and eliminate resource constraint on the server.  
+Now, the ownCloud server is set up to consume Database as a Service and Object Storage, this will minimize the administration of the local environment and eliminate resource constraint on the server.  
 
 ### Pricing
 The costs associated with this deployment are for the CenturyLink Cloud infrastructure only.  There are no ownCloud license costs or additional fees bundled in.
