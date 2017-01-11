@@ -32,7 +32,8 @@ Enter a value for the new raw disk and click on apply. This has to be repeated f
 ![ConfigureEmail](../images/SH4.0/ExpandPG/expandpg2_1.png)   
 
 ### Claim Storage Pool
-Next step is to claim the newly added storage to the storage pool associated with the Protection group. In order to find out the storage pool associated with the protection group, click on the protection group and see "Data Volume Storage Pool" under "Data Center" for both active(Production) and Peer(recovery) datacenters.  
+Next step is to claim the newly added storage to the storage pool associated with the Protection group. In order to find out the storage pool associated with the protection group, click on the protection group and see "Data Volume Storage Pool" under "Data Center" for both active(Production) and Peer(recovery) datacenters.   
+
 ![ConfigureEmail](../images/SH4.0/ExpandPG/expandpg2_2.png)   
 
 To claim the storage to storage pool, select the appropriate SRN and then click on "Claim Storage Pool".   
