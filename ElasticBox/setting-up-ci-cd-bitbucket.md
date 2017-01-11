@@ -128,11 +128,11 @@ Below is a diagram of workflow and how all the components work together.
 
     * Notice that it finally deploys the war package in the Tomcat server.
 
-   ![jenkins-bitbucket-23.png](../images/ElasticBox/jenkins-bitbucket-23.png)
+    ![jenkins-bitbucket-23.png](../images/ElasticBox/jenkins-bitbucket-23.png)
 
     * And it works!!
 
-   ![jenkins-bitbucket-24.png](../images/ElasticBox/jenkins-bitbucket-24.png)
+    ![jenkins-bitbucket-24.png](../images/ElasticBox/jenkins-bitbucket-24.png)
 
  9. All the pieces working together.
 

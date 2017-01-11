@@ -45,6 +45,7 @@ Once you install the appliance, set it up for others in your organization to use
    * Optionally, switch the appliance device storage to increase storage or processing speed.
 
 4. Create a new admin account for your enterprise
+
    Follow this step if using the ElasticBox Enterprise Edition.
    ElasticBox provides a default appliance admin account, which gives full access to manage the appliance and administer ElasticBox settings for your organization. This is like a master key, so use it only in case of emergency. To administer the appliance and ElasticBox on a regular basis, create and use a fresh admin account.
 
@@ -67,6 +68,7 @@ Hostname is a friendly name for the ElasticBox IP address for example, yourcompa
    * Users in the network can browse to the ElasticBox UI.
 
 4. When done, scroll down and click **Save Settings**.
+
    **IMPORTANT:** When you change the hostname, any instances you launched previously can potentially become unavailable if the appliance obtains its IP address dynamically. To avoid this, set a static address for the appliance.
 
 ### Changing the Appliance Admin Account Password
@@ -99,7 +101,7 @@ This shows the network time protocol (NTP) setting on the appliance. By default,
 4. When done, scroll down and click **Save Settings**.
 
 | Setting | Description |
-|-----------|-----------------|
+|---------|-------------|
 | Primary <br> NTP Server | URL or IP address of the primary NTP server. |
 | Secondary <br> NTP Server | Optional. URL or IP address of the secondary NTP server. |
 | Time Zone | Appliance host system time zone. |
@@ -115,7 +117,7 @@ We recommend that you specify SMTP server settings to be able to auto send outbo
 4. When done, click **Save Settings**.
 
 | Setting | Description |
-|-----------|-----------------|
+|---------|-------------|
 | Server Address | Specify the hostname or IP address of the SMTP mail server, for example, smtp.example.com. |
 | Port | Typically, you can specify 25 for SMTP and 465 for SMTPS. |
 | No-Reply Address | Specify the email address to use in the sender address (or from) field of notification messages. |

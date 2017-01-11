@@ -35,8 +35,9 @@ ElasticBox-Release: 4.0
 ```
 
 **Response Parameters**
+
 | Parameter | Type | Description |
-|----------------|--------|----------------|
+|-----------|------|-------------|
 | url | string | The URL of the uploaded file. |
 | length | integer | The file length in bytes. |
 | upload_date | string | The upload date. |
