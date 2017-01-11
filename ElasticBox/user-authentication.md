@@ -35,8 +35,11 @@ When users sign in to ElasticBox with their LDAP credentials, we don’t store t
 
 **Steps**
 1. Sign in to ElasticBox as the [default administrator](//www.ctl.io/guides/).
+
 2. From the user menu drop-down on the top right, select **Admin Console**.
+
 3. Under Authentication, enable LDAP by turning it on.
+
 4. For each LDAP source, provide information to connect and the conditions to search users and sync groups. This information is divided into:
 
    **Connection**
@@ -62,6 +65,7 @@ When users sign in to ElasticBox with their LDAP credentials, we don’t store t
    * **Group Object Filter:** The filter that all groups must satisfy. It must be a valid query. Nodes must fulfill both this and '(|(objectClass=groupOfNames)(objectClass=group)(objectClass=groupOfUniqueNames)(objectClass=posixGroup))'.
 
 5. Click **Test Connection** to verify the configuration.
+
 6. Click **Save** to keep the information.
 
 ### Syncing with LDAP Groups
@@ -72,7 +76,9 @@ This gives your developers, operations engineers, or IT admins access to the sam
 
 **Steps**
 1. Sign in as the [default administrator](//www.ctl.io/guides/).
+
 2. From the user menu drop-down on the top right, select **Admin Console**.
+
 3. Under Authentication, make sure LDAP is on and set up with at least one source with the conditions to sync groups.
 
 4. Turn on** LDAP Group Sync**.
@@ -86,7 +92,9 @@ As good practice, you should give an LDAP user in your organization administrati
 
 **Steps**
 1. Sign in to ElasticBox as the LDAP user. This registers the user in ElasticBox with a personal workspace.
+
 2. Log out and log back in as the default administrator.
+
 3. Make the LDAP user an administrator. From here on, use that LDAP user account to manage ElasticBox.
 
 ### Contacting ElasticBox Support

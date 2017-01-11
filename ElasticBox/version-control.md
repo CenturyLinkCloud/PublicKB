@@ -1,4 +1,5 @@
-{{{ "title": "Version Control and Auto-Updates",
+{{{
+"title": "Version Control and Auto-Updates",
 "date": "09-01-2016",
 "author": "",
 "attachments": [],
