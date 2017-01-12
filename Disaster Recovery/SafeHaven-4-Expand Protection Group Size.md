@@ -54,7 +54,7 @@ Enter the new value for the size of the Protection Group and then click on Ok.
 
 ![ConfigureEmail](../images/SH4.0/ExpandPG/expandpg6.png)  
 
-Once the Resize job finishes, the Protection Group Size can be verified by clicking on the Protection Group.  
+Once the Resize job finishes, the Protection Group Size can be verified by clicking on the Protection Group and checking the protection group size.
 
 ![ConfigureEmail](../images/SH4.0/ExpandPG/expandpg7.png) 
 
