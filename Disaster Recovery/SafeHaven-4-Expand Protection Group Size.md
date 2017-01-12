@@ -52,7 +52,7 @@ Once the storage has been claimed on both the Production and Recovery SRN, next 
 
 Enter the new value for the size of the Protection Group and then click on Ok.  
 
-![ConfigureEmail](../images/SH4.0/ExpandPG/expandpg5.png) 
+![ConfigureEmail](../images/SH4.0/ExpandPG/expandpg6.png) 
 
 
 
