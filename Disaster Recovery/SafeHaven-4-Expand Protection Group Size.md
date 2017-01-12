@@ -45,6 +45,16 @@ Note: This has to be done for both Production and Recovery SRN.
 
 ![ConfigureEmail](../images/SH4.0/ExpandPG/expandpg4.png)   
 
+### Expand Protection Group   
+Once the storage has been claimed on both the Production and Recovery SRN, next step is to expand the Protection Group. In order to do so, click on the appropriate Protection Group and then click on "Expand".  
+
+![ConfigureEmail](../images/SH4.0/ExpandPG/expandpg5.png)   
+
+Enter the new value for the size of the Protection Group and then click on Ok.  
+
+![ConfigureEmail](../images/SH4.0/ExpandPG/expandpg5.png) 
+
+
 
 
 
