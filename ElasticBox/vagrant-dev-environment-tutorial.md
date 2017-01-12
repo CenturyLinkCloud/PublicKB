@@ -81,7 +81,7 @@ This installs Javascript runtime for the Rails app.
     ```
     #!/bin/bash
 
-    {{ 'apt-get update' if APT_GET_UPDATE == 'yes' }}
+    \{{ 'apt-get update' if APT_GET_UPDATE == 'yes' }}
     apt-get -q -y install nodejs
     ```
 
@@ -158,7 +158,7 @@ This installs MySQL server and creates a database.
     # especially if they contain "#" chars...
     # Remember to edit /etc/mysql/debian.cnf when changing the socket location.
     [client]
-    port    = {{ MYSQL_PORT }}
+    port    = \{{ MYSQL_PORT }}
     socket    = /var/run/mysqld/mysqld.sock
 
     # Here is entries for some specific programs
@@ -176,7 +176,7 @@ This installs MySQL server and creates a database.
     user    = mysql
     pid-file  = /var/run/mysqld/mysqld.pid
     socket    = /var/run/mysqld/mysqld.sock
-    port    = {{ MYSQL_PORT }}
+    port    = \{{ MYSQL_PORT }}
     basedir   = /usr
     datadir   = /var/lib/mysql
     tmpdir    = /tmp
@@ -185,18 +185,18 @@ This installs MySQL server and creates a database.
     #
     # Instead of skip-networking the default is now to listen only on
     # localhost which is more compatible and is not less secure.
-    bind-address    = {{ BIND_ADDRESS }}
+    bind-address    = \{{ BIND_ADDRESS }}
     #
     # * Fine Tuning
     #
     key_buffer    = 16M
-    max_allowed_packet  = {{ MAX_ALLOWED_PACKET }}
+    max_allowed_packet  = \{{ MAX_ALLOWED_PACKET }}
     thread_stack    = 192K
     thread_cache_size       = 8
     # This replaces the startup script and checks MyISAM tables if needed
     # the first time they are touched
     myisam-recover         = BACKUP
-    #max_connections        = {{ MAX_CONNECTIONS }}
+    #max_connections        = \{{ MAX_CONNECTIONS }}
     #table_cache            = 64
     #thread_concurrency     = 10
     #
@@ -215,7 +215,7 @@ This installs MySQL server and creates a database.
     #
     # Error log - should be very few entries.
     #
-    log_error = {{ LOG_ERROR }}
+    log_error = \{{ LOG_ERROR }}
     #
     # Here you can see queries with especially long duration
     #log_slow_queries = /var/log/mysql/mysql-slow.log
@@ -252,7 +252,7 @@ This installs MySQL server and creates a database.
     [mysqldump]
     quick
     quote-names
-    max_allowed_packet  = {{ MAX_ALLOWED_PACKET }}
+    max_allowed_packet  = \{{ MAX_ALLOWED_PACKET }}
 
     [mysql]
     #no-auto-rehash # faster start of mysql but no tab completion
@@ -271,15 +271,15 @@ This installs MySQL server and creates a database.
 
     ```
 	  #!/bin/bash
-    {{ 'apt-get update' if APT_GET_UPDATE == 'yes' }}
+    \{{ 'apt-get update' if APT_GET_UPDATE == 'yes' }}
     export DEBIAN\_FRONTEND=noninteractive
     apt-get -q -y install mysql-server
     elasticbox config -i config/database.template.yml -o config/database.yml
     # Set Password
-    mysqladmin -u root password {{ ROOT_PASSWORD }}
+    mysqladmin -u root password \{{ ROOT_PASSWORD }}
 
     # Make accessible from all ips
-    mysql -uroot -p{{ ROOT_PASSWORD }} --execute "GRANT ALL PRIVILEGES ON *.* to 'root'@'%'; FLUSH PRIVILEGES;"
+    mysql -uroot -p\{{ ROOT_PASSWORD }} --execute "GRANT ALL PRIVILEGES ON *.* to 'root'@'%'; FLUSH PRIVILEGES;"
     ```
 
     ![tutorial-vagrant-5.png](../images/ElasticBox/tutorial-vagrant-5.png)
@@ -308,7 +308,7 @@ This box installs a development environment with the sample Rails app, runtimes,
     ```
     #!/bin/bash
     source "/usr/local/rvm/scripts/rvm"
-    cd {{ rails.github.git_repo.CLONE_DIRECTORY }}
+    cd \{{ rails.github.git_repo.CLONE_DIRECTORY }}
     cp config/database.yml.example config/database.yml
 
     # ruby dev packages to support building gems from source
@@ -327,7 +327,7 @@ This box installs a development environment with the sample Rails app, runtimes,
     ```
     #!/bin/bash
     source "/usr/local/rvm/scripts/rvm"
-    cd {{ rails.github.git_repo.CLONE_DIRECTORY }} && rails server -p {{ rails.rails.http }} -d
+    cd \{{ rails.github.git_repo.CLONE_DIRECTORY }} && rails server -p \{{ rails.rails.http }} -d
     ```
 
     ![tutorial-vagrant-6.png](../images/ElasticBox/tutorial-vagrant-6.png)
