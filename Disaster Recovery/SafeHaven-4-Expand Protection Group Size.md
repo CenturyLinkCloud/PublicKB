@@ -36,11 +36,13 @@ Next step is to claim the newly added storage to the storage pool associated wit
 
 ![ConfigureEmail](../images/SH4.0/ExpandPG/expandpg2_2.png)   
 
-To claim the storage to storage pool, select the appropriate SRN and then click on "Claim Storage Pool".   
+To claim the storage to storage pool, select the appropriate SRN and then click on "Claim Storage Pool".  
+
 ![ConfigureEmail](../images/SH4.0/ExpandPG/expandpg3.png)   
 
 Select the Newly Added storage and add it to an existining storage pool. Select the right storage pool from the drop down menu and click on Claim.  
 Note: This has to be done for both Production and Recovery SRN.  
+
 ![ConfigureEmail](../images/SH4.0/ExpandPG/expandpg4.png)   
 
 
