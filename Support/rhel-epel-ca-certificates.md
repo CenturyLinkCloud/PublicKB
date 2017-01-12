@@ -1,5 +1,5 @@
 {{{
-  "title": "When yum check-update fails",
+  "title": "RHEL 6, CA Certificates, and yum check-update",
   "date": "01-12-2017",
   "author": "Type-y McTyper",
   "attachments": [],
@@ -13,7 +13,7 @@ On RHEL 6, we've seen issues where `yum check-update` returns some errors, which
 > Trying other mirror.
 
 
-To correct the error, you have to update 'ca-certificates' with the 'epel' repo disabled:
+To correct the error, you can try to update 'ca-certificates' with the 'epel' repo disabled:
 
 ```sh
 yum --disablerepo=epel update ca-certificates
