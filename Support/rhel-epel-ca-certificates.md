@@ -1,0 +1,19 @@
+{{{
+  "title": "When yum check-update fails",
+  "date": "01-12-2017",
+  "author": "Type-y McTyper",
+  "attachments": [],
+  "contentIsHTML": false
+}}}
+
+On RHEL 6, we've seen issues where `yum check-update` returns some errors, which might include:
+
+https://mirrors.kernel.org/fedora-epel/6/x86_64/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for epel
+Trying other mirror.
+
+
+
+
+To correct the error, you have to update 'ca-certificates' with the 'epel' repo disabled:
+yum --disablerepo=epel update ca-certificates
+
