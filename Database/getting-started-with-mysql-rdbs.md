@@ -1,5 +1,5 @@
 {{{
-  "title": "Getting Started with Relational DB Service",
+  "title": "Getting Started with MySQL Relational DB Service",
   "date": "02-29-2016",
   "author": "Christine Parr",
   "attachments": [],
@@ -9,10 +9,10 @@
 }}}
 
 ### Audience
-This article is to support customers of Relational DB Service, CenturyLink's MySQL-compatible database-as-a-service product. These instructions are specific to provisioning service directly through the Control Portal.
+This article is to support customers of Relational DB Service, CenturyLink's database-as-a-service product.  These instructions are specific to getting started provisioning and using a MySQL-compatible instance directly through the Control Portal.
 
 ### Overview
-CenturyLink's Relational DB Service is a MySQL-compatible database-as-a-service that provides instant access to a database instance with SSL support, daily backups, basic monitoring, and a replication option. Users can configure the amount of CPU, Memory, and Storage based on their database needs. They can choose to replicate their instance in a datacenter for a more highly available solution. As the customer's capacity needs grown, they can easily scale their CPU, RAM, and/or Storage with the click of a button.
+CenturyLink's MySQL-compatible Relational DB Service is a database-as-a-service product that provides instant access to a MySQL-compatible database instance with SSL support, daily backups, restore functionality, basic monitoring and a replication option with auto-failover. Users can configure the amount of CPU, Memory, and Storage based on their database needs. They can choose to replicate their instance in a datacenter for a more highly available solution. As the customer's capacity needs grow, they can easily scale their CPU, RAM, and/or Storage with the click of a button.
 
 For users who would like some sizing guidance, below are a few common configurations:
 
@@ -38,8 +38,8 @@ CPUs: 1 Core<br>Memory: 1 GB<br>Storage: 1 GB |CPUs: 1 Core<br>Memory: 2 GB<br>S
 6. Customize your Backup Schedule if you wish. If no customization is made, backups will run at 0:00 UTC.
 
 7. Define your Backup Retention. You may select any retention policy between 1 day - 35 days.
-   * **Note: Your Relational DB subscription includes up to 100% of your allocated storage amount in backup storage. Backup storage that exceeds the size of your allocated storage is billed at the 'Additional Backup Storage' rates defined in the pricing catalogue. Backups are compressed in order to reduce the amount of backup storage used.**
-
+   * **Note: Your Relational DB subscription includes up to 100% of your allocated storage amount in backup storage. Backup storage that exceeds the size of your allocated storage is billed at the 'Additional Backup Storage' rates defined in the pricing catalog. Backups are compressed in order to reduce the amount of backup storage used.**
+<p>
 8. Click “Create Database”. Your database information is quickly returned, including connection string. You can then choose to download your certificate.
    ![DBDetails](../images/rdbs-dbdetails.png)
 
@@ -48,13 +48,19 @@ CPUs: 1 Core<br>Memory: 1 GB<br>Storage: 1 GB |CPUs: 1 Core<br>Memory: 2 GB<br>S
 
 10. Click on any instance to view subscription details and available backups or perform any of the following actions:
    * Download your certificate.
-   * Failover between Primary and Replica (for replicated instances only).
+   * Failover between primary and replica (for replicated instances only).
    * Change your alert notification settings.
    * Change your scheduled backup time.
    * Change your backup retention policy.
    * Scale subscription size.
    * Delete your instance.
-   * Delete a Backup.
+   * Delete a backup.
+   * Edit the Configuration Profile for an instance.
+   * Perform a manual backup.
+   * Perform a restore.
+   * Restart your database instance.
+<p>
+
    ![SubscriptionDetails](../images/rdbs-subscriptiondetails.png)
 
 11. Use the connection string information provided to administer your MySQL instance using standard command line interface or from your favorite MySQL client.

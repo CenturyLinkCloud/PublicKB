@@ -1,6 +1,6 @@
 {{{
   "title": "Load Balancing Comparison Matrix",
-  "date": "8-18-2015",
+  "date": "10-10-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -9,34 +9,45 @@
 
 ### Overview
 
-CenturyLink Cloud offers customers a choice of shared or dedicated load balancing services delivered using Citrix Netscaler VPX devices. The matrix below provides a high level comparison of the two offerings allowing customers to make informed decisions on their **Layer 4** load balancing solution.
+CenturyLink Cloud offers customers a wide range of load balancing solutions in our product catalog.  Customers who wish to quickly review the choices along with features and capabilities can use the comparison matrix below.
 
 ### Comparison Matrix
 
-**Feature**|**Shared**|**Dedicated**
------------|----------|-------------
-Control Self-Service|Yes|No
-Availability|Highly Available Pair|Single Instance or Highly Available pair options available<sup>1</sup>
-Load Balancing VIP Ports|TCP/80 & TCP/443|Any
-Load Balancing Algorithms|Round Robin<br>Least Connection|[Citrix Complete Listing](http://support.citrix.com/proddocs/topic/netscaler-load-balancing-93/ns-lb-customizing-lbalgorithms-wrapper-con.html)
-Costing Model|per VIP (NLB Group)|Per Device: VPX-200 or VPX-1000 available in Standard, Enterprise or Platinum Edition<sup>2</sup>
-Responsibility for Support and Management|CenturyLink Cloud|Customer via CLI or Web based UI
-Performance|HTTP throughput: up to 400 Mbps<br>**Performance is shared among all clients**|HTTP throughput: Up to 400 Mbps<br>SSL encrypted throughput: Up to 400 Mbps<br>HTTP compression throughput: Up to 350 Mbps<br>SSL VPN/ICA Proxy Concurrent Users: Up to 1500<br>New SSL requests/second: Up to 750
-SSL Offloading|No|Yes, Customer Configured
-Health Checks|Yes, TCP and PING|Yes, Customer Configured
+**Feature**|**LBaaS<br>(Legacy)**|**LBaaS**|**Citrix VPX<sup>4</sup><br>(Dedicated)**|**[Marketplace](../Ecosystem Partners/Partner Integration Resources/ecosystem-program-resources.md)**
+-----------|---------------------|---------|-----------------------------------------|-------------
+Control Integration<sup>1</sup>|Yes|Yes|No|No
+High Availability|Yes|Yes|Optional|Optional
+Mode/Port|TCP/80<br>TCP/443|HTTP<br>TCP/Any|Any|Any
+Method|Round Robin<br>Least Connection|Round Robin<br>Least Connection|[Listing](http://docs.citrix.com/en-us/netscaler/11-1/load-balancing/load-balancing-customizing-algorithms.html)|Varies by<br>Vendor
+Persistence|SourceIP|SourceIP|[Listing](http://docs.citrix.com/en-us/netscaler/11-1/load-balancing/load-balancing-persistence/persistence.html)|Varies by<br>Vendor
+Health Checks|No|[Yes](../LBaaS/getting-started-with-load-balancer-as-a-service.md)|Yes|Yes
+SSL Offloading|No|No|Yes|Yes
+Global Server Load Balancing|No|No|Optional|Optional
+[SLA](//www.ctl.io/legal/sla/)<sup>2</sup>|Yes|Yes|Limited|Limited
+[Support](../Support/how-do-i-report-a-support-issue.md)<sup>3</sup>|Yes|Yes|Limited|Limited
+Lifecycle Management<sup>6</sup>|Day 0<br>Day 2<br>Day N|Day 0<br>Day 2<br>Day N|Day 0|Day 0
+[Locations](../General/centurylink-cloud-data-center-locations.md)|Any|VA1<br>UC1|Any|Any
+OSI Model<sup>5</sup>|Layer 4|Layer 4|Layer 4<br>Layer 7|Layer 4<br>Layer 7
 
-1. **Customers can optionally pay for an upgrade from a single VPX to an HA pair using a service task**
-2. **Customers can optionally pay for in place upgrades of VPX-200 Devices to a higher performance VPX-1000, including the edition, using a service task**
+<sup>1: Control Integration at a minimum allows a customer to implement the service on-demand, operate it via self-service in the UX (or using API) with a pay as you go model.</sup>
+
+<sup>2: [SLA](//www.ctl.io/legal/sla/) is defined as an agreement between CenturyLink and the customer to honor service availability for load balancing specific services via a master service agreement. [Limited SLA's include Virtual Machine availability only.](//www.ctl.io/legal/sla/)</sup>
+
+<sup>3: [Support](//www.ctl.io/support/) is defined as an agreement between CenturyLink and the customer to provide technical support and incident management for the load balancing service. Tracking a Dedicated Load Balancer license expiration date is performed by the customer, please reference our [License Management Article](../Network/dedicated-load-balancer-license-management.md). **Limited Support provides customer service engineers to confirm the infrastructure state and virtual machine state.  Customers are responsible for all Day 1, 2 and N operational support.**</sup>
+
+<sup>4: [CenturyLink offers](//ctl.io/pricing) various pricing models for the Citrix VPX virtual appliance based on performance and availability needs.  Customers can elect to upgrade **[edition](//www.citrix.com/products/netscaler-adc/platforms.html#editions)** and **availability** configurations at any time.
+
+<sup>5: Layer 4 is related to fourth layer of the OSI model: transport level. For example: TCP and UDP protocols are transport level. Layer 7 is related to seventh layer of the OSI model: application level. For example: HTTP, FTP, SMTP, DNS protocols are application level.</sup>
+
+<sup>6: CenturyLink provides lifecycle management based on Day 0 (Install: Import, IP Device), 1 (Configure, Operate), 2 (Optimize, Compliance) and N (Upgrade, Patching) methodologies.  Customers are responsible for any operational support that is not included in the base offering.
+
+  ![Lifecycle Management](../images/lifecycle-management.png)
 
 ### Additional Details
-The links below provide additional details on the capabilities and features of the Citrix Netscaler VPX Platform.
+The links below provide supporting material that can assist a customer with further evaluating the proper load balancing service for their needs.
 
-* [Deploy a Dedicated Citrix VPX Appliance using Service Task](../Service Tasks/deploy-a-dedicated-citrix-vpx-appliance.md)
-* [Shared vs Dedicated Network Load Balancing Architecture Considerations](../Network/load-balancing-dedicated-vs-shared.md)
-* [Netscaler VPX Overview](//www.citrix.com/products/netscaler-application-delivery-controller/features/platforms/vpx.html)
-* [Netscaler Editions](//www.citrix.com/products/netscaler-application-delivery-controller/features/editions.html)
-* [Netscaler Load Balancing Algorithms](//docs.citrix.com/en-us/netscaler/10-5/ns-tmg-wrapper-10-con/ns-lb-wrapper-con-10/ns-lb-customizing-lbalgorithms-wrapper-con.html)
-* [How To: Configure Shared Load Balancing Services via Self-Service](../Network/creating-a-self-service-load-balancing-configuration.md)
-* [Dedicated Load Balancing Management](../Network/dedicated-load-balancer-basic-management.md)
-* [Deploying a Dedicated Citrix VPX Environment in a Multi-tenant Fashion](../Network/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion.md)
-* [System Limits for a NetScaler Appliance](http://support.citrix.com/article/ctx118716)
+* [Citrix Netscaler VPX Documentation](http://docs.citrix.com/en-us/netscaler/11-1.html)
+* [Citrix Netscaler VPX Editions](//www.citrix.com/products/netscaler-adc/platforms.html#editions)
+* [CenturyLink Ecosystem Partners](../Ecosystem Partners/General/ecosystem-partner-list.md)
+* [CenturyLink Pricing Catalog](//ctl.io/pricing)
+* [CenturyLink Cloud Legal Documentation (SLA, Service Guide etc)](//www.ctl.io/legal/)

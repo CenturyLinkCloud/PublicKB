@@ -24,7 +24,7 @@ CenturyLink’s Managed OS service helps you spend less time on the IT tasks tha
 
 It would be impossible to create an all-inclusive list of everything a product is not, but this section addresses some current or often-asked items.
 
-* Backups are not a part of the Managed OS service, but backups have been an available feature on Standard and Premium storage for all virtual machines. Effective May 1, 2016, the backup features associated with Standard and Premium storage will be retired.  On this date, the data on your storage volumes will no longer be backed up by default. It is highly recommended that you make arrangements to activate [Simple Backup Service](../Support/backup-service-changes-faq.md) for your Managed VMs.
+* Backups are not a part of the Managed OS service, but backups have been an available feature on Standard and Premium storage for all virtual machines. Effective May 1, 2016, the backup features associated with Standard and Premium storage will be retired.  On this date, the data on your storage volumes will no longer be backed up by default. It is highly recommended that you make arrangements to activate [Simple Backup Service](../Backup/getting-started-with-simple-backup.md) for your Managed VMs.
 
 **What do I pay for a managed VM?**
 
@@ -50,7 +50,7 @@ There could be a few causes:
 
     * United States: 1-800-871-9244
     * Canada: 1-877-387-3764
-    * Europe, Middle East &amp; Africa: +44 (0) 207 400 5600
+    * Europe, Middle East &amp; Africa: +44 (0) 118 309 4886
     * Japan: +81 3 6435 9658
     * Hong Kong: +852 2190 8798
     * Singapore: +65 6768 8098
