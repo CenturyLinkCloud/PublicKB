@@ -30,4 +30,4 @@
 
 * __MySQL Relational DB now includes streaming log files.__
 
-  Users of the MySQL can now view their database log files from within the UI.
+  Users of MySQL can now view their database log files from within the UI.
