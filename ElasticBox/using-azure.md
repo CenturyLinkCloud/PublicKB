@@ -1,4 +1,5 @@
-{{{ "title": "Using Azure",
+{{{
+"title": "Using Azure",
 "date": "09-01-2016",
 "author": "",
 "attachments": [],
@@ -24,19 +25,25 @@ You need an Azure subscription to be able to consume Azure services. Follow thes
 
 **Steps**
 1. Sign in to your Windows Live admin [account](https://account.windowsazure.com/Subscriptions).
+
 2. Click add subscription.
-![azure-add-new-subscription-1.png](../images/ElasticBox/azure-add-new-subscription-1.png)
+   ![azure-add-new-subscription-1.png](../images/ElasticBox/azure-add-new-subscription-1.png)
+
 3. You can use the free trial version or select and purchase a payment plan.
-**Note:** ElasticBox is not responsible for any costs incurred through deploying to Azure. For more information, see [Azure pricing](https://azure.microsoft.com/en-us/pricing/calculator/?scenario=virtual-machines).
+   * **Note:** ElasticBox is not responsible for any costs incurred through deploying to Azure. For more information, see [Azure pricing](https://azure.microsoft.com/en-us/pricing/calculator/?scenario=virtual-machines).
 
 ### Benefits of Deploying to Azure Using ElasticBox
 
 ElasticBox simplifies Azure deployments with these benefits:
 
 * **Automate VM deployments:** We automatically provision services that otherwise you’d have to individually configure and spawn in Azure. For example, we work with the Azure APIs to create a storage account, create availability sets, enable auto scaling, load balancing, and enable endpoints for your virtual machine deployments.
+
 * **Deploy easily to web and worker roles:** Typically to deploy in Azure, you have to install and set up the latest Visual Studio development environment, then install Azure SDK tools and extensions including the emulator. After that you must either directly upload your application files through Azure Blob storage or manually create a package (cspkg). But by deploying a web or worker role through ElasticBox, you can skip this fairly involved process.
+
 See how easy it is to get a web or worker role started in ElasticBox: Build a box, upload your application code and configuration files, select Azure deployment options, and deploy. We automatically create a cloud service and storage account for your web or worker role deployments.
+
 * **Switch between VM, web, and worker roles:** It’s easy to migrate from virtual machine to web or worker role deployments or vice versa because your configuration is encapsulated in boxes. Simply kill the VM machines and deploy your box into web or worker roles or the other way around.
+
 * **Focus on applications:** Once your machines are deployed in Azure through ElasticBox, you can focus on your application and easily handle the entire lifecycle of application instances. We do all the backend API operations to manage your instances. For example, when you delete an instance that you no longer need, we automatically delete the availability set, virtual machine instances, storage account and cloud service, associated with the instance.dsfsdsd
 
 ### Registering Your Azure Subscription in ElasticBox
@@ -46,24 +53,30 @@ Follow these steps.
 
 **Steps**
 1. [Log in to ElasticBox](https://elasticbox.com/login/).
+
 2. Click **Providers** > **New Provider**.
+
 3. In the dialog, select **Microsoft Azure**.
-![azure-add-provider-2.png](../images/ElasticBox/azure-add-provider-2.png)
+   ![azure-add-provider-2.png](../images/ElasticBox/azure-add-provider-2.png)
+
 4. Enter your Azure subscription credentials as shown.
-* Enter a useful name to identify the Azure subscription in ElasticBox.
-* Under Credentials, click **Download**. The elasticbox.cer certificate is saved to your local machine. Upload the certificate to your Azure portal. 	
-	1. This allows ElasticBox to manage your subscription based on resources you deploy.
-	2. Sign in to the [Azure Portal](https://manage.windowsazure.com/).
-Click Settings > Management Certificates > UPLOAD A MANAGEMENT CERTIFICATE.
-![azure-upload-elasticbox-certificate-3.png](../images/ElasticBox/azure-upload-elasticbox-certificate-3.png)
-3. Under **FILE** > click **BROWSE FOR FILE** to select the certificate from your local machine.
-4. Under Subscription, be sure to select your subscription.
-![azure-upload-eb-certificate-4.png](../images/ElasticBox/azure-upload-eb-certificate-4.png)
+   * Enter a useful name to identify the Azure subscription in ElasticBox.
+   * Under Credentials, click **Download**. The elasticbox.cer certificate is saved to your local machine. Upload the certificate to your Azure portal. 	
+      * This allows ElasticBox to manage your subscription based on resources you deploy.
+      * Sign in to the [Azure Portal](https://manage.windowsazure.com/).
+
+      Click Settings > Management Certificates > UPLOAD A MANAGEMENT CERTIFICATE.
+      ![azure-upload-elasticbox-certificate-3.png](../images/ElasticBox/azure-upload-elasticbox-certificate-3.png)
+      * Under **FILE** > click **BROWSE FOR FILE** to select the certificate from your local machine.
+      * Under Subscription, be sure to select your subscription.
+      ![azure-upload-eb-certificate-4.png](../images/ElasticBox/azure-upload-eb-certificate-4.png)
+
 5. Click the checkmark to save.
-* Copy your Azure subscription ID located under Settings in the Azure Management Portal.
-![azure-select-subscriptionid-5.png](../images/ElasticBox/azure-select-subscriptionid-5.png)
-* In ElasticBox, under Credentials, paste in the subscription ID.
-![azure-paste-subscriptionid-inelasticbox-6.png](../images/ElasticBox/azure-paste-subscriptionid-inelasticbox-6.png)
+   * Copy your Azure subscription ID located under Settings in the Azure Management Portal.
+   ![azure-select-subscriptionid-5.png](../images/ElasticBox/azure-select-subscriptionid-5.png)
+   * In ElasticBox, under Credentials, paste in the subscription ID.
+   ![azure-paste-subscriptionid-inelasticbox-6.png](../images/ElasticBox/azure-paste-subscriptionid-inelasticbox-6.png)
+
 6. Click **Save**.
 
 ### Deploying in Azure
@@ -92,7 +105,7 @@ In case of multi-tier applications deployed to different roles, follow these tip
 
 * To allow traffic to web role instances, we automatically open HTTP port 80 for both public (input) and private (internal) endpoints. We also open any other ports that you define on the box.
 * To allow traffic to worker role instances, you have to first define port variables on the box, which we open for both public (input) and private (internal) endpoints.
-* To allow web and worker role instances to communicate with each other, make sure they’re deployed to the same availability set. Configure [bindings](../ElasticBox/managing-multi-tier-applications.md) to connect their boxes. Then print '\{{ bindingname.address }}:\{{bindingname.port}}' in a configure event script to connect by querying the instance IP address and port.
+* To allow web and worker role instances to communicate with each other, make sure they’re deployed to the same availability set. Configure [bindings](./managing-multi-tier-applications.md) to connect their boxes. Then print '\{{ bindingname.address }}:\{{bindingname.port}}' in a configure event script to connect by querying the instance IP address and port.
 
 ![azure-webworkerroles-depprofile-7.png](../images/ElasticBox/azure-webworkerroles-depprofile-7.png)
 
@@ -100,15 +113,15 @@ In case of multi-tier applications deployed to different roles, follow these tip
 
 **Deployment**
 
-| **Option**  | **Description** |
-|----------|:-----|
+| Option | Description |
+|--------|-------------|
 | Provider | Select the Azure provider you want to use to deploy. |
 
 **Resource**
 
-| **Option**  | **Description** |
-|----------|:-----|
-| Role | Select Web Role or Worker Role. See [Virtual Machine Role](../ElasticBox/using-azure.md) to deploy to that instead. |
+| Option | Description |
+|--------|-------------|
+| Role | Select Web Role or Worker Role. See [Virtual Machine Role](./using-azure.md) to deploy to that instead. |
 | OS Family | Select the guest OS to run in the worker role instance. Note that Windows 2008 images are not synced at this time because the ElasticBox agent doesn’t work on them. |
 | OS Version | Select the guest OS version to run in the worker role instance. You can select a specific version or go with latest. If you choose latest, the OS is automatically upgraded to the latest version. |
 | Size | Select a size to set the number of CPU cores, memory, and disk size to store your OS files, process temporary memory, and store application data. For more information, see the [Azure help](https://msdn.microsoft.com/en-us/library/azure/dn197896.aspx). Note that D-Series sizes use solid-state drive disks. |
@@ -118,8 +131,8 @@ In case of multi-tier applications deployed to different roles, follow these tip
 
 **Network**
 
-| **Option**  | **Description** |
-|----------|:-----|
+| Option | Description |
+|--------|-------------|
 | Location | Select a virtual network, region, or affinity group to physically place the instance.<li>**Virtual Networks**. To let the instance connect to services in Azure, select a virtual private network that you previously created in your subscription. See the Azure help on creating virtual networks.</li><li>**Regions**. Select a region to place the instance.</li><li>**Affinity Groups**. Select an affinity group, if you created one to keep the instance close to other regional resources in the datacenter.</li> |
 
 **Autoscaling Web or Worker Role Instances**
@@ -149,14 +162,14 @@ To deploy in ElasticBox, simply select your box based on Linux or Windows, and [
 
 **Deployment**
 
-| **Option**  | Windows or Linux | **Description** |
-|----------|------|:-----|
+| Option | Windows or Linux | Description |
+|--------|------------------|-------------|
 | Provider | Both |	Select your Azure subscription or one that’s shared with you in ElasticBox. |
 
 **Resource**
 
-| **Option**  | Windows or Linux |  **Description** |
-|----------|------|:-----|
+| Option | Windows or Linux | Description |
+|--------|------------------|-------------|
 | Role | Windows | Select the **Virtual Machine Role **to deploy to a Windows environment that you want to customize and manage. To deploy to other roles, see Web and Worker Roles section in this documentation. |
 | Image | Both | Choose from [images ](https://msdn.microsoft.com/en-us/library/azure/dn790290.aspx)that are custom or stock OS images or are generalized, specialized VM images. The drop-down shows images relevant to a Windows or Linux deployment. Note that Windows 2008 images are not synced at this time because the ElasticBox agent doesn’t work on them. |
 | Size | Both |	Select a virtual machine size from the basic or standard tier options including [D-Series](https://azure.microsoft.com/blog/2014/09/22/new-d-series-virtual-machine-sizes/). Each option such as A1 sets the number of CPU cores, OS disk memory, and number of input and output operations per second (IOPS) for the virtual machine. Size affects pricing. For more information, see [Virtual Machine and Cloud Service Sizes](https://msdn.microsoft.com/en-us/library/azure/dn197896.aspx).|
@@ -167,8 +180,8 @@ To deploy in ElasticBox, simply select your box based on Linux or Windows, and [
 
 **Network**
 
-| **Option**  | Windows or Linux | **Description** |
-|----------|------|:-----|
+| Option | Windows or Linux | Description |
+|--------|------------------|-------------|
 | Location | Both | Select a virtual network, region, or affinity group to physically place the instance.<li>**Virtual Networks.** To let the instance connect to services in Azure, select a virtual private network that you previously created in your subscription. See the Azure help on [creating virtual networks](https://msdn.microsoft.com/library/azure/jj156074.aspx).</li><li>**Regions.** Select a region to place the instance.</li><li>**Affinity Groups.** Select an affinity group, if you created one to keep the instance close to other regional resources in the datacenter.</li> |
 | Availability Set | Both | Select Automatic to let Azure create an availability set for fault tolerance. This protects the virtual machine against single points of failure in the same cloud service and region. For more information, see [Manage the Availability of Virtual Machines](https://azure.microsoft.com/en-us/documentation/articles/manage-availability-virtual-machines/). |
 
@@ -205,8 +218,8 @@ Provide these variable values before you deploy a SQL Database to Azure.
 
 ![azure-sqldatabase-deploymentvariables-11.png](../images/ElasticBox/azure-sqldatabase-deploymentvariables-11.png)
 
-| **Variable**  |  **Description** |
-|----------|:-----|
+| Variable | Description |
+|----------|-------------|
 | username | Provide a username to be able to log in to the SQL server hosting the database. |
 | password | Provide a password to be able to log in to the SQL server hosting the database. |
 | port | By default, port 1433 is opened to allow traffic from outside of the Azure virtual network to the database. It’s the only way to communicate with the database when outside the Azure network. |
@@ -218,28 +231,28 @@ Provide these variable values before you deploy a SQL Database to Azure.
 
 **Deployment**
 
-| **Option**  |  **Description** |
-|----------|:-----|
+| Option | Description |
+|--------|-------------|
 | Provider | Select an Azure provider account that you want to use to deploy. |
 
 **Resource**
 
-| **Option**  |  **Description** |
-|----------|:-----|
+| Option | Description |
+|--------|-------------|
 | Edition |	Choose from Basic, Standard, and Premium editions. Web and Business are soon to be retired. |
 | Performance Level | [Performance levels](https://msdn.microsoft.com/en-us/library/azure/dn741336.aspx) are available for different tiers of Standard or Premium editions. Each tier indicates the disk throughput units (DTUs) for CPU, memory, read, and write capacity of the edition. |
 | Max Size | Select the maximum size up to which the database can grow. This varies by edition. See the [Azure help](https://azure.microsoft.com/en-us/pricing/details/sql-database/) to learn more. |
 
 **Network**
 
-| **Option**  | **Description** |
-|----------|:-----|
+| Option | Description |
+|--------|-------------|
 | Location | Select the region where you want the database instance to deploy. |
 
 **Allowed IP Addresses**
 
-| **Option**  | **Description** |
-|----------|:-----|
+| Option | Description |
+|--------|-------------|
 | Subnet | Enter the IP address ranges in the CIDR format to form virtual subnets that firewall and allow only machines in those IP address ranges to connect to the SQL server. |
 
 Some useful things to keep in mind about Azure SQL Database deployments:
@@ -254,8 +267,6 @@ Some useful things to keep in mind about Azure SQL Database deployments:
 
 We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
-For issues related to API calls, send the request body along with details related to the issue.
-
-In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
-Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
+* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
+* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

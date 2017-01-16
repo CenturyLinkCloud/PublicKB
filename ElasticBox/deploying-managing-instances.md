@@ -24,10 +24,11 @@ An instance is an instantiated version of a box launched to provider’s virtual
 
   ![deploy-instance-selectboxfromcatalog-1.png](../images/ElasticBox/deploy-instance-selectboxfromcatalog-1.png)
 
-* **My Boxes**. Shows boxes you created in your workspace.
-* **Shared with Me**. Shows boxes others shared with you.
-* **Quick Starts**. Shows default boxes available to all ElasticBox users. These include service boxes such as Linux Compute, Windows Compute; includes AWS services like MySQL Database, Oracle Database, DynamoDB, PostgreSQL Database, and S3 bucket; and includes the Azure Microsoft SQL Database service. You can directly launch an instance to these database services. While you can’t modify those boxes, you can combine them with other boxes to build multi-tiered applications.
-**Note:** Don’t find a box you’re looking for? Check if you’re in the right workspace. Remember that you may not have access if the box is no longer shared with you.
+    * **My Boxes**. Shows boxes you created in your workspace.
+    * **Shared with Me**. Shows boxes others shared with you.
+    * **Quick Starts**. Shows default boxes available to all ElasticBox users. These include service boxes such as Linux Compute, Windows Compute; includes AWS services like MySQL Database, Oracle Database, DynamoDB, PostgreSQL Database, and S3 bucket; and includes the Azure Microsoft SQL Database service. You can directly launch an instance to these database services. While you can’t modify those boxes, you can combine them with other boxes to build multi-tiered applications.
+
+    **Note:** Don’t find a box you’re looking for? Check if you’re in the right workspace. Remember that you may not have access if the box is no longer shared with you.
 
 3. In the New Instance dialog, specify the environment name and deployment profile.
 **Environment.** Give a name to recognize the instance.
@@ -37,10 +38,10 @@ An instance is an instantiated version of a box launched to provider’s virtual
 
   ![instance-provideconfigurationvalues-2.png](../images/ElasticBox/instance-provideconfigurationvalues-2.png)
 
-* Listed here are all the variables defined in the main box as well as those within nested boxes or box type variables.
-* Required variables are marked with an asterisk. To see all variables including optional ones, click Show More.
-* When a variable is required, you must specify its value to launch an instance of the box. If optional, you can launch without giving values, and do it later in the [lifecycle editor](./lifecycle-editor.md).
-* [Binding type variables](./parameterizing-boxes-with-variables.md) are also listed here. Depending on how it’s defined in the box, you can select as its value any instance or that of a specific box type deploying or active in the workspace.
+    * Listed here are all the variables defined in the main box as well as those within nested boxes or box type variables.
+    * Required variables are marked with an asterisk. To see all variables including optional ones, click Show More.
+    * When a variable is required, you must specify its value to launch an instance of the box. If optional, you can launch without giving values, and do it later in the [lifecycle editor](./lifecycle-editor.md).
+    * [Binding type variables](./parameterizing-boxes-with-variables.md) are also listed here. Depending on how it’s defined in the box, you can select as its value any instance or that of a specific box type deploying or active in the workspace.
 
 ### Creating a Deployment Profile
 
@@ -62,16 +63,16 @@ A deployment profile defines settings for your infrastructure that are applied a
 
   ![instance-configuredeploymentsettings-5.png](../images/ElasticBox/instance-configuredeploymentsettings-5.png)
 
-Settings in the deployment profile vary by the provider you deploy to. For provider specific deployment settings, see these articles:
-* [Using CenturyLink Cloud](./using-centurylink-cloud.md)
-* [Using Google Cloud](./using-google-cloud.md)
-* [Using Your AWS Account](./using-your-aws-account.md)
-* [Using the vSphere Private Datacenter](./using-the-vmware-vcenter-private-datacenter.md)
-* [Using Your OpenStack Cloud](./using-openstack-cloud.md)
-* [Using CloudStack](./using-cloudstack.md)
-* [Using Azure](./using-azure.md)
+    Settings in the deployment profile vary by the provider you deploy to. For provider specific deployment settings, see these articles:
+    * [Using CenturyLink Cloud](./using-centurylink-cloud.md)
+    * [Using Google Cloud](./using-google-cloud.md)
+    * [Using Your AWS Account](./using-your-aws-account.md)
+    * [Using the vSphere Private Datacenter](./using-the-vmware-vcenter-private-datacenter.md)
+    * [Using Your OpenStack Cloud](./using-openstack-cloud.md)
+    * [Using CloudStack](./using-cloudstack.md)
+    * [Using Azure](./using-azure.md)
 
-**Note:** If you’re deploying to public cloud providers like AWS or Google Compute, you’ll most likely be charged by the cloud provider for the virtual infrastructure you provision. Familiarize yourself with their pricing model as ElasticBox assumes no responsibility for costs incurred.
+    **Note:** If you’re deploying to public cloud providers like AWS or Google Compute, you’ll most likely be charged by the cloud provider for the virtual infrastructure you provision. Familiarize yourself with their pricing model as ElasticBox assumes no responsibility for costs incurred.
 
 ### Scheduling Instances
 
@@ -95,9 +96,9 @@ Select **Always on** if you don’t want to schedule anything. Shutdown powers o
 
 5. When done, click **Deploy**.
 
-**Note:** Even if you don’t schedule an instance at the time of deploying, you can do so later. Once online, you can go to an instance page and in **Edit Details**, set the schedule.
+    **Note:** Even if you don’t schedule an instance at the time of deploying, you can do so later. Once online, you can go to an instance page and in **Edit Details**, set the schedule.
 
-Besides the user interface, you can automatically schedule instances using the instances API with a POST or PUT request.
+    Besides the user interface, you can automatically schedule instances using the instances API with a POST or PUT request.
 
 ### Handling Instance Lifecycle States
 
@@ -128,7 +129,7 @@ This executes the dispose scripts from your box instance and then deletes the vi
 If a Terminate fails for some reason (maybe a broken dispose script) then this forcibly deletes the virtual infrastructure. If you previously terminated or deleted an instance from the provider’s side, the instance may linger in Force Terminate in ElasticBox. Give it a couple of minutes then try to force-terminate again.
 
 **Delete**
-Click the delete icon after you Terminate or Force Terminate an instance. Until then, the box instance page and logs are retained in the Elasticbox database. But delete completely removes the box instance page.
+Click the delete icon after you Terminate or Force Terminate an instance. Until then, the box instance page and logs are retained in the ElasticBox database. But delete completely removes the box instance page.
 
 ### Contacting ElasticBox Support
 

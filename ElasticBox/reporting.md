@@ -13,9 +13,9 @@ Reports show cloud costs and resource usage in public and private clouds. It inc
 
 If reporting is turned on for your enterprise, ElasticBox Administrators can access it from the admin console. Reports also help you make budget-friendly decisions and curb costs through cost center budgeting.
 
-* [Reports](../ElasticBox/reporting.md). Show cost and usage for a given date range.
-* [Pricing list](../ElasticBox/reporting.md). Shows public cloud pricing for Linux and Windows VMs by instance type. The pricing helps us measure costs for public cloud reports. Since private clouds don’t have that information, we report on resource usage.
-* [Cost center budgeting](../ElasticBox/reporting.md/). Lets you set and enforce a quota on how much user or team workspaces can consume from a cloud account per month.
+* **Reports** - Show cost and usage for a given date range.
+* **Pricing List** - Shows public cloud pricing for Linux and Windows VMs by instance type. The pricing helps us measure costs for public cloud reports. Since private clouds don’t have that information, we report on resource usage.
+* **Cost Center Budgeting** - Lets you set and enforce a quota on how much user or team workspaces can consume from a cloud account per month.
 
 ### Reports
 Reports are in the admin console under Providers > Reports. They show the cost and resources consumed by public and private cloud deployments. There are two kinds of reports–overview and cloud specific reports. The overview report gives the overall big picture while cloud specific reports drill-down data by cloud.
@@ -102,11 +102,14 @@ Cost Centers help you set and enforce a quota on how much users or team workspac
 **Steps**
 
 1. Create a cost center. In the admin console under Cost Centers, click **New Cost Center** and name the group or division whose usage you want to monitor.
+
 2. Assign workspaces. Look up and add workspaces of users, teams, or projects. **Note:** A workspace can only belong to one cost center at a time.
+
 3. Set quota for each cloud account. Choose how much money or resources selected users or workspaces can consume from a cloud account per month. For public clouds, you can set a budget while you can limit by the amount of CPU, memory, and disk resources for private clouds.
    ![admin-reports13.png](../images/ElasticBox/admin-reports13.png)
 
 4. Enforce quota. Turn on to put the limits in place.
+
 5. Save.
    Once you set up cost centers, you can track to see how teams or projects are spending monthly, whether they’re staying within budget in the last 30 days or over the past month. If they go over 90% quota, they’re shown in red. When they’re pretty close to hitting the quota limit, you can proactively send an email alerting them.
    ![admin-reports14.png](../images/ElasticBox/admin-reports14.png)

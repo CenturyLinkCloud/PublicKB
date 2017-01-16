@@ -34,22 +34,23 @@ Provide your own Git repository through a text variable called GIT_REPOSITORY_UR
 
 	![integrate-jenkins2](../images/ElasticBox/integrate-jenkins2.png)
 
-Pass the GitHub access token in a text variable.
+3. Pass the GitHub access token in a text variable.
 
-![integrate-jenkins3](../images/ElasticBox/integrate-jenkins3.png)
+   ![integrate-jenkins3](../images/ElasticBox/integrate-jenkins3.png)
 
-To get it, sign in to your [GitHub](https://github.com/) account. Under settings, go to **Applications** > **Personal access tokens** > **Generate new token**. Describe why you need the token. Under scope, select **repo** and **repo: status**. Then click **Generate Token**. Copy and paste it as shown.
-Provide your GitHub project URL in a text variable called GITHUB_PROJECT_URL.
+   To get it, sign in to your [GitHub](https://github.com/) account. Under settings, go to **Applications** > **Personal access tokens** > **Generate new token**. Describe why you need the token. Under scope, select **repo** and **repo: status**. Then click **Generate Token**. Copy and paste it as shown.
 
-![integrate-jenkins4](../images/ElasticBox/integrate-jenkins4.png)
+   Provide your GitHub project URL in a text variable called GITHUB_PROJECT_URL.
 
-Provide your GitHub username as a text variable called GITHUB_USER.
+   ![integrate-jenkins4](../images/ElasticBox/integrate-jenkins4.png)
 
-![integrate-jenkins5](../images/ElasticBox/integrate-jenkins5.png)
+   Provide your GitHub username as a text variable called GITHUB_USER.
 
-Open HTTP port 8080 on the Jenkins server through a port variable called HTTP to allow Internet traffic.
+   ![integrate-jenkins5](../images/ElasticBox/integrate-jenkins5.png)
 
-![integrate-jenkins6](../images/ElasticBox/integrate-jenkins6.png)
+   Open HTTP port 8080 on the Jenkins server through a port variable called HTTP to allow Internet traffic.
+
+   ![integrate-jenkins6](../images/ElasticBox/integrate-jenkins6.png)
 
 Refer to the ElasticBox, Git, and GitHub plugin dependencies in a text variable called PLUGINS.
 Enter this value:
@@ -185,13 +186,14 @@ Copy, paste the script in a text file, save in XML, and upload as shown.
     <buildWrappers/>
 </project>
 ```
+
 Add the following events to install Jenkins server and the plugins.
 Install Jenkins. Copy, paste the script in the install event and save.
 
 ```
 #/bin/bash
 
-# For certain images In some clouds like GCE, pacakges are being installed by the provider at this point, so we need to wait for the installation to finish
+# For certain images In some clouds like GCE, packages are being installed by the provider at this point, so we need to wait for the installation to finish
 WAIT_SECONDS=0
 while [[ -f /var/lib/apt/lists/lock && ${WAIT_SECONDS} -lt 180 ]]
 do
@@ -207,6 +209,7 @@ echo deb http://pkg.jenkins-ci.org/debian-stable binary/ > /etc/apt/sources.list
 apt-get -y update
 apt-get -y --force-yes install jenkins git
 ```
+
 Install the plugins, the build job templates, and configure GitHub plugins with username, access token, and repository URL. Copy, paste the script in the post_configure event and save.
 
 ```
@@ -270,29 +273,41 @@ Select a Debian Ubuntu Linux image when deploying the Jenkins server box. You ca
 **Before You Begin**
 
 Configure your cloud provider network to allow Internet traffic to the Jenkins server. Make the instance IP address public and set the firewall port to 8080. Additionally, open another port to let Jenkins slaves talk to the server. Assign this port any number you like.
+
 Here we configure the Google Cloud network to allow Internet traffic through port 8080 and Jenkins slave traffic through port 55555.
 
 ![integrate-jenkins11](../images/ElasticBox/integrate-jenkins11.png)
 
 1. Log in to the [Google Cloud console](https://console.developers.google.com/apis/library).
+
 2. Select the project associated with your Google provider account in ElasticBox.
+
 3. Expand Compute > Compute Engine > Networks. Select the default network. Under Firewall rules, click Create new.
+
 4. Enter details as shown to open ports 8080 and 55555. Note that ElasticBox uses the target tag to detect the firewall rule.
+
 5. Sync your provider account in ElasticBox to fetch the rule.
 
 **Steps to deploy Jenkins server**
 
 1. Sign in to ElasticBox.
+
 2. Go to the Jenkins server box you built.
-3. On its box page, click Deploy.
+
+3. On its box page, click **Deploy**.
+
 4. In the instance dialog, name the deployment, and create a new policy to select Google Cloud deployment settings.
+
 5. In the policy, select a Debian Ubuntu Linux image. Although a g1.small machine type will do, select n1-standard-2 to deploy faster.
+
 6. Under Network, select the firewall rule from Google Cloud. Select Ephemeral IP to make the instance IP address public.
 
-![integrate-jenkins12](../images/ElasticBox/integrate-jenkins12.png)
+   ![integrate-jenkins12](../images/ElasticBox/integrate-jenkins12.png)
 
 7. Click **Save**.
+
 8. Back in the instance dialog, check the Jenkins server deployment variables such as the repository URL, access token, project URL, and GitHub username.
+
 9. Click **Deploy** to launch the Jenkins server.
 
 When online, in the instance page under **Endpoints**, click the public IP address to open the Jenkins server management portal. You can see that the server has all the GitHub plugins and the build job templates.
@@ -305,21 +320,20 @@ In your Jenkins server management interface, follow these steps to register your
 
 **Steps**
 
-1. Under Jenkins > Manage Jenkins > Configure System > Cloud, click **Add a new cloud** and select **ElasticBox**.
-Enter details as given:
-**Description**. Enter information to identify your ElasticBox account in Jenkins jobs.
-**End Point URL**. Enter a custom URL if using ElasticBox as an appliance.
-**Max. No. of Instances**. This is the total number of instances Jenkins will launch through your account. We recommend at least 5.
-**Authentication Token**. [Get a token](./api-overview-and-access.md) and paste it here. If you use username, password to access ElasticBox, get one by clicking **Get Authentication Token**.
+1. Under Jenkins > Manage Jenkins > Configure System > Cloud, click **Add a new cloud** and select **ElasticBox**. Enter details as given:
+   * **Description**. Enter information to identify your ElasticBox account in Jenkins jobs.
+   * **End Point URL**. Enter a custom URL if using ElasticBox as an appliance.
+   * **Max. No. of Instances**. This is the total number of instances Jenkins will launch through your account. We recommend at least 5.
+   * **Authentication Token**. [Get a token](./api-overview-and-access.md) and paste it here. If you use username, password to access ElasticBox, get one by clicking **Get Authentication Token**.
+
 2. Click **Verify Authentication Token** to see if Jenkins can connect to ElasticBox.
+
 3. Click **Save** when done.
 
 ### Contacting ElasticBox Support
 
 We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
-For issues related to API calls, send the request body along with details related to the issue.
-
-In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
-Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
+* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
+* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

@@ -18,7 +18,7 @@ Container boxes enable you to define and deploy [Docker](https://docs.docker.com
 
 Docker works in ElasticBox through the Docker Container service box, a Linux box that understands Docker commands when deployed. In the box you model your application in a Dockerfile, which helps create the image of your application in a Docker container. Write Dockerfile commands not only in [Docker instructions](https://docs.docker.com/engine/reference/builder/), but also in Bash and PowerShell.
 
-At deploy time, ElasticBox executes the Docker box like any other box in the virtual environment. ElasticBox treats the Docker container like a [box variable](../ElasticBox/parameterizing-boxes-with-variables.md) and the Dockerfile as a [file variable](../ElasticBox/parameterizing-boxes-with-variables.md) inside it. On the virtual machine, ElasticBox first installs the Docker client from which we install the Docker container using the daemon BUILD command.
+At deploy time, ElasticBox executes the Docker box like any other box in the virtual environment. ElasticBox treats the Docker container like a [box variable](./parameterizing-boxes-with-variables.md) and the Dockerfile as a [file variable](./parameterizing-boxes-with-variables.md) inside it. On the virtual machine, ElasticBox first installs the Docker client from which we install the Docker container using the daemon BUILD command.
 
 ### Configuring and Deploying Docker Containers
 
@@ -26,7 +26,7 @@ See how deploying to Docker containers works in ElasticBox using [ElasticSearch]
 
 **Create a Docker Container box**
 
-From the Boxes page, click **New > Container**. In the dialog, enter a name to identify it in the box service catalog. And optionally enter other [metadata](../ElasticBox/boxes.md). Then save to continue.
+From the Boxes page, click **New > Container**. In the dialog, enter a name to identify it in the box service catalog. And optionally enter other [metadata](./boxes.md). Then save to continue.
 
 ![dockercontainers1.png](../images/ElasticBox/dockercontainers1.png)
 
@@ -96,7 +96,7 @@ Here we connect to a box that deploys an S3 bucket using a binding. As Dockerfil
 
 **Deploy the Docker Box**
 
-You can launch the Docker box in any environment including public, private clouds or a datacenter. Here we launch the ElasticSearch Docker box in AWS. In the ElasticSearch box page, click **Deploy**. Choose a deployment policy box that contains deployment settings for a cloud provider and optionally add tags, [auto schedule](../ElasticBox/deploying-managing-instances.md) the container, and specify other [metadata](../ElasticBox/boxes.md).
+You can launch the Docker box in any environment including public, private clouds or a datacenter. Here we launch the ElasticSearch Docker box in AWS. In the ElasticSearch box page, click **Deploy**. Choose a deployment policy box that contains deployment settings for a cloud provider and optionally add tags, [auto schedule](./deploying-managing-instances.md) the container, and specify other [metadata](./boxes.md).
 
 ![dockercontainers8.png](../images/ElasticBox/dockercontainers8.png)
 
@@ -113,7 +113,7 @@ Note these limitations when using Docker in ElasticBox.
 
 ### Managing the Lifecycle of Docker Containers
 
-You can manage the [lifecycle](../ElasticBox/deploying-managing-instances.md) of Docker containers like any other box. This means after deploying, you can change the Dockerfile configuration and relaunch it in the same instance using the instance [lifecycle editor](../ElasticBox/lifecycle-editor.md). Go to the instance page and click **Lifecycle Editor**.
+You can manage the [lifecycle](./deploying-managing-instances.md) of Docker containers like any other box. This means after deploying, you can change the Dockerfile configuration and relaunch it in the same instance using the instance [lifecycle editor](./lifecycle-editor.md). Go to the instance page and click **Lifecycle Editor**.
 
 ![dockercontainers9.png](../images/ElasticBox/dockercontainers9.png)
 
@@ -128,10 +128,8 @@ Here’s what happens when you reinstall or reconfigure:
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
-For issues related to API calls, send the request body along with details related to the issue.
-
-In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
-Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
+* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
+* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

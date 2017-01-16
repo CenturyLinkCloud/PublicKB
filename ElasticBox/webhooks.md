@@ -20,16 +20,17 @@ In this example, Infoblox provides a static IP and domain name for every instanc
 * Install Infoblox and set it up as follows:
 
    1. Create a network for every vCenter network to which you deploy from ElasticBox. This has the CIDR range of IP addresses Infoblox can assign. Under Data Management > Toolbar, click Add and Add Network.
+
    2. Add global extensible attributes for the vCenter networks. Under Administration > Extensible Attributes, add these four:
    ![admin-webhooks1.png](../images/ElasticBox/admin-webhooks1.png)
 
-      * **Network.** Name of the vCenter network.
-      * **Gateway.** Address of the vCenter network gateway node.
-      * **Netmask.** Subnet address for the vCenter network.
-      * **DNS Suffix.** Domain name suffix that registers and resolves the DNS name.
+      * **Network** - Name of the vCenter network.
+      * **Gateway** - Address of the vCenter network gateway node.
+      * **Netmask** - Subnet address for the vCenter network.
+      * **DNS Suffix** - Domain name suffix that registers and resolves the DNS name.
 
    3. Add the four global extensible attributes to each network. Edit each network. Under Extensible Attributes, add the four attributes and specify values.
-   ![admin-webhooks2.png](../images/ElasticBox/admin-webhooks2.png)
+      ![admin-webhooks2.png](../images/ElasticBox/admin-webhooks2.png)
 
       When you deploy, ElasticBox maps the network you select in the deployment policy to these Infoblox network attributes to derive the right IP configuration.
 
@@ -39,58 +40,59 @@ In this example, Infoblox provides a static IP and domain name for every instanc
 
    ![admin-webhooks3.png](../images/ElasticBox/admin-webhooks3.png)
 
-**Install script**
+   **Install script**
 
-This box installs Python, Python dependencies, and the Apache web server.
-```
-#!/bin/bash
+   This box installs Python, Python dependencies, and the Apache web server.
 
-yum -y install httpd mod_wsgi python-virtualenv
-curl -k https://bootstrap.pypa.io/get-pip.py | python
+   ```
+   #!/bin/bash
 
-pip install --upgrade bottle
-pip install --upgrade requests
-```
+   yum -y install httpd mod_wsgi python-virtualenv
+   curl -k https://bootstrap.pypa.io/get-pip.py | python
 
-**Configure script**
+   pip install --upgrade bottle
+   pip install --upgrade requests
+   ```
 
-The box configures Apache using the virtual.conf file variable. To create the web service endpoint, it runs the webhook.py script from a file variable.
+   **Configure script**
 
-```
-#!/bin/bash
+   The box configures Apache using the virtual.conf file variable. To create the web service endpoint, it runs the webhook.py script from a file variable.
 
-mkdir -p /var/www/webhook
+   ```
+   #!/bin/bash
 
-curl -k \{{ VIRTUAL_CONF }} -o /etc/httpd/conf.d/default.conf
-curl -k \{{ WEBHOOK_PY }} | elasticbox config -o /var/www/webhook/webhook.py
-```
+   mkdir -p /var/www/webhook
 
-Here’s the Python script to create the web service endpoint:
+   curl -k \{{ VIRTUAL_CONF }} -o /etc/httpd/conf.d/default.conf
+   curl -k \{{ WEBHOOK_PY }} | elasticbox config -o /var/www/webhook/webhook.py
+   ```
 
-```
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
+   Here’s the Python script to create the web service endpoint:
 
-'''
-ElasticBox Confidential
-Copyright (c) 2013 All Rights Reserved, ElasticBox Inc.
+   ```
+   #!/usr/bin/python
+   # -*- coding: utf-8 -*-
 
-NOTICE:  All information contained herein is, and remains the property
-of ElasticBox. The intellectual and technical concepts contained herein are
-proprietary and may be covered by U.S. and Foreign Patents, patents in process,
-and are protected by trade secret or copyright law. Dissemination of this
-information or reproduction of this material is strictly forbidden unless prior
-written permission is obtained from ElasticBox
-'''
+   '''
+   ElasticBox Confidential
+   Copyright (c) 2013 All Rights Reserved, ElasticBox Inc.
 
-import json
-import bottle
-import requests
+   NOTICE:  All information contained herein is, and remains the property
+   of ElasticBox. The intellectual and technical concepts contained herein are
+   proprietary and may be covered by U.S. and Foreign Patents, patents in process,
+   and are protected by trade secret or copyright law. Dissemination of this
+   information or reproduction of this material is strictly forbidden unless prior
+   written permission is obtained from ElasticBox
+   '''
 
-from bottle import route, run, request
+   import json
+   import bottle
+   import requests
+
+   from bottle import route, run, request
 
 
-def allocate_address_with_infoblox(network, name):
+   def allocate_address_with_infoblox(network, name):
     net_url = \
         'https:///wapi/v1.4/network?_return_fields=extattrs&*Network=%s'
     ip_url = \
@@ -132,27 +134,27 @@ def allocate_address_with_infoblox(network, name):
             }
 
 
-def search(items, name):
-    for item in items:
-        if item['name'] == name:
-            return item['value']
+   def search(items, name):
+       for item in items:
+           if item['name'] == name:
+               return item['value']
 
-    return ''
+       return ''
 
 
-@route('/requestIP', method='POST')
-def requestIP():
-    body = json.load(request.body)
-    machine = body['machine']
-    service = body['service']
-    instance = body['instance']
+   @route('/requestIP', method='POST')
+   def requestIP():
+       body = json.load(request.body)
+       machine = body['machine']
+       service = body['service']
+       instance = body['instance']
 
-    variables = []
+       variables = []
 
-    if 'vsphere' in machine['schema']:
-        if instance['operation'] == 'terminate':
-            print 'Deallocate IP address'
-            return {}
+       if 'vsphere' in machine['schema']:
+           if instance['operation'] == 'terminate':
+               print 'Deallocate IP address'
+               return {}
 
         is_infoblox = True
         variables = instance['variables']
@@ -185,12 +187,12 @@ def requestIP():
     return machine
 
 
-@route('/test//', method='GET')
-def testIP(network, name):
-    return allocate_address_with_infoblox(network, name)
+   @route('/test//', method='GET')
+   def testIP(network, name):
+       return allocate_address_with_infoblox(network, name)
 
-application = bottle.default_app()
-```
+   application = bottle.default_app()
+   ```
 
 2. Deploy the custom Infoblox web service box. We provide values for the address, password, and user. These are admin credentials to access Infoblox.
 

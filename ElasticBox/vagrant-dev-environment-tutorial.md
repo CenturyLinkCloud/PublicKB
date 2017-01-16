@@ -33,6 +33,7 @@ This tutorial helps you learn these concepts:
 To get started, set up the following:
 
 1. Sign up for an ElasticBox account. It’s free!
+
 2. Fork a sample Rails app from this [GitHub repository](https://github.com/railstutorial/sample_app_rails_4). Clone it in your Mac laptop as shown. This creates a local copy of the sample Rails app.
 
     ![tutorial-vagrant-1.png](../images/ElasticBox/tutorial-vagrant-1.png)
@@ -75,13 +76,15 @@ This installs Javascript runtime for the Rails app.
 **Steps**
 
 1. Create a new box called Nodejs based on Linux Compute.
+
 2. Add an options variable called APT_GET_UPDATE with a **no** value.
+
 3. Copy/paste this script in a **post\_install** event:
 
     ```
     #!/bin/bash
 
-    {{ 'apt-get update' if APT_GET_UPDATE == 'yes' }}
+    \{{ 'apt-get update' if APT_GET_UPDATE == 'yes' }}
     apt-get -q -y install nodejs
     ```
 
@@ -96,6 +99,7 @@ This installs all the dependencies for the Rails app.
 **Steps**
 
 1. Create a new box called Rails Dependencies based on Linux Compute.
+
 2. Add the following variables:
     * Port variable called http set to **3000**.
     * Box variable called ruby pointing to the default **Ruby** box.
@@ -111,6 +115,7 @@ ___
 **Steps**
 
 1. Create a new box called Rails with GitHub based on Linux Compute.
+
 2. Add these box variables:
     * Box variable called rails pointing to the **Rails Dependencies** box.
     * Box variable called github pointing to the **GitHub** box.
@@ -127,6 +132,7 @@ This installs MySQL server and creates a database.
 **Steps**
 
 1. Create a new box called MySQL Ubuntu based on Linux Compute.
+
 2. Add the following variables:
     * Options variable called APT_GET_UPDATE set to **yes**
     * Text variable called BIND_ADDRESS set to **0.0.0.0**
@@ -158,7 +164,7 @@ This installs MySQL server and creates a database.
     # especially if they contain "#" chars...
     # Remember to edit /etc/mysql/debian.cnf when changing the socket location.
     [client]
-    port    = {{ MYSQL_PORT }}
+    port    = \{{ MYSQL_PORT }}
     socket    = /var/run/mysqld/mysqld.sock
 
     # Here is entries for some specific programs
@@ -176,7 +182,7 @@ This installs MySQL server and creates a database.
     user    = mysql
     pid-file  = /var/run/mysqld/mysqld.pid
     socket    = /var/run/mysqld/mysqld.sock
-    port    = {{ MYSQL_PORT }}
+    port    = \{{ MYSQL_PORT }}
     basedir   = /usr
     datadir   = /var/lib/mysql
     tmpdir    = /tmp
@@ -185,18 +191,18 @@ This installs MySQL server and creates a database.
     #
     # Instead of skip-networking the default is now to listen only on
     # localhost which is more compatible and is not less secure.
-    bind-address    = {{ BIND_ADDRESS }}
+    bind-address    = \{{ BIND_ADDRESS }}
     #
     # * Fine Tuning
     #
     key_buffer    = 16M
-    max_allowed_packet  = {{ MAX_ALLOWED_PACKET }}
+    max_allowed_packet  = \{{ MAX_ALLOWED_PACKET }}
     thread_stack    = 192K
     thread_cache_size       = 8
     # This replaces the startup script and checks MyISAM tables if needed
     # the first time they are touched
     myisam-recover         = BACKUP
-    #max_connections        = {{ MAX_CONNECTIONS }}
+    #max_connections        = \{{ MAX_CONNECTIONS }}
     #table_cache            = 64
     #thread_concurrency     = 10
     #
@@ -215,7 +221,7 @@ This installs MySQL server and creates a database.
     #
     # Error log - should be very few entries.
     #
-    log_error = {{ LOG_ERROR }}
+    log_error = \{{ LOG_ERROR }}
     #
     # Here you can see queries with especially long duration
     #log_slow_queries = /var/log/mysql/mysql-slow.log
@@ -252,7 +258,7 @@ This installs MySQL server and creates a database.
     [mysqldump]
     quick
     quote-names
-    max_allowed_packet  = {{ MAX_ALLOWED_PACKET }}
+    max_allowed_packet  = \{{ MAX_ALLOWED_PACKET }}
 
     [mysql]
     #no-auto-rehash # faster start of mysql but no tab completion
@@ -271,15 +277,15 @@ This installs MySQL server and creates a database.
 
     ```
 	  #!/bin/bash
-    {{ 'apt-get update' if APT_GET_UPDATE == 'yes' }}
+    \{{ 'apt-get update' if APT_GET_UPDATE == 'yes' }}
     export DEBIAN\_FRONTEND=noninteractive
     apt-get -q -y install mysql-server
     elasticbox config -i config/database.template.yml -o config/database.yml
     # Set Password
-    mysqladmin -u root password {{ ROOT_PASSWORD }}
+    mysqladmin -u root password \{{ ROOT_PASSWORD }}
 
     # Make accessible from all ips
-    mysql -uroot -p{{ ROOT_PASSWORD }} --execute "GRANT ALL PRIVILEGES ON *.* to 'root'@'%'; FLUSH PRIVILEGES;"
+    mysql -uroot -p\{{ ROOT_PASSWORD }} --execute "GRANT ALL PRIVILEGES ON *.* to 'root'@'%'; FLUSH PRIVILEGES;"
     ```
 
     ![tutorial-vagrant-5.png](../images/ElasticBox/tutorial-vagrant-5.png)
@@ -293,11 +299,13 @@ This box installs a development environment with the sample Rails app, runtimes,
 **Steps**
 
 1. Create a new box called **Rails Dev Env** based on Linux Compute.
+
 2. Add the following variables:
     * Box variable called mysql that points to the** MySQL Ubuntu** box
     * Box variable called rails that points to the **Rails with GitHub** box
 
 3. Expand the rails box variable all the way down to the ruby box. Set RVM_RUBY_VERSION to **ruby-2.0.0-p576**.
+
 4. Expand the github box variable, and in the git_repo box, set values for these variables as follows:
     * BRANCH to **master**
     * CLONE_DIRECTORY to **/vagrant**
@@ -308,7 +316,7 @@ This box installs a development environment with the sample Rails app, runtimes,
     ```
     #!/bin/bash
     source "/usr/local/rvm/scripts/rvm"
-    cd {{ rails.github.git_repo.CLONE_DIRECTORY }}
+    cd \{{ rails.github.git_repo.CLONE_DIRECTORY }}
     cp config/database.yml.example config/database.yml
 
     # ruby dev packages to support building gems from source
@@ -327,7 +335,7 @@ This box installs a development environment with the sample Rails app, runtimes,
     ```
     #!/bin/bash
     source "/usr/local/rvm/scripts/rvm"
-    cd {{ rails.github.git_repo.CLONE_DIRECTORY }} && rails server -p {{ rails.rails.http }} -d
+    cd \{{ rails.github.git_repo.CLONE_DIRECTORY }} && rails server -p \{{ rails.rails.http }} -d
     ```
 
     ![tutorial-vagrant-6.png](../images/ElasticBox/tutorial-vagrant-6.png)
@@ -417,6 +425,7 @@ Let’s now run some tests to verify that the dev environment is working.
 **Steps**
 
 1. Open a new terminal in your Mac laptop and go to the sample_app_rails_4 directory.
+
 2. SSH into the virtual machine:
 
     ```
