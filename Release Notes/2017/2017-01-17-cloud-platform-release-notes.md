@@ -8,7 +8,7 @@
 
 ### New Features (1)
 
-* __Network Exchange: "Admin" user__ A new user class, "admin" has been created that allows designated user accounts to access any customer's configurations for modify/delete assistance. Additional capabilities and controls will be added in subsequent releases.
+* __Added Network Exchange "Admin" user.__ A new user class, "admin" has been created that allows designated user accounts to access any customer's configurations for modify/delete assistance. Additional capabilities and controls will be added in subsequent releases.
 
 ### Early Adopter Program Updates (2)
 
@@ -22,4 +22,4 @@ If you are interested in becoming a beta user, please visit https://www.ctl.io/r
 
 ### Enhancements (1)
 
-* __MySQL Relational DB now includes streaming log files.__ 
+* __MySQL Relational DB now includes streaming log files.__
