@@ -59,8 +59,8 @@ Edit the deployment policy to set the following parameters for deploying to vClo
 
 **Resource**
 
-| **Option**  |  **Description** |
-|----------|:-----|
+| Option | Description |
+|--------|-------------|
 | Organization | Select the organization in vCloud Air or vCloud Director. The organization is a virtual container for vApp templates, vApps, media images, and disks. |
 | Catalog |	Select the catalog that contains the vApp template for deployment. The catalog stores vApp templates and media files. Select from shared, private, and public catalogs that your organization can access. |
 | vApp Template | Select a vApp template from the catalog. VMs imported as OVFs then uploaded as templates are also listed. |
@@ -69,8 +69,8 @@ Edit the deployment policy to set the following parameters for deploying to vClo
 
 **Placement**
 
-| **Option**  |  **Description** |
-|----------|:-----|
+| Option | Description |
+|--------|-------------|
 | Virtual Data Center |	Select the virtual data center from vCloud Air or vCloud Director. |
 | Network |	Select the network for the virtual data center. |
 | IP Allocation | Assign IP addresses to the VM from the network attached to the virtual data center.<li>**DHCP.** Select this option to get an IP address dynamically where the network gateway acts as a DHCP router.</li><li>**Static IP Pool.** Select this option to get an IP address from a range of IP addresses configured for the network.</li><li>**Static Manual.** If you select this option, ElasticBox finds the next available IP address from the virtual data center network and requests vCloud Air or vCloud Director to assign it to the VM.</li> |
@@ -78,23 +78,21 @@ Edit the deployment policy to set the following parameters for deploying to vClo
 
 **Compute**
 
-| **Option**  |  **Description** |
-|----------|:-----|
+| Option | Description |
+|--------|-------------|
 | Virtual CPUs | Specify the number of CPUs. See the [VMware docs](http://pubs.vmware.com/vca/index.jsp?topic=%2Fcom.vmware.vca.od.ug.doc%2FGUID-6180A0A5-E390-449D-8FD6-CD8601554EAE.html) for vCloud Air VM CPU limit. |
 | Memory | Specify the virtual RAM in GB. See the [VMware docs](http://pubs.vmware.com/vca/index.jsp?topic=%2Fcom.vmware.vca.od.ug.doc%2FGUID-6180A0A5-E390-449D-8FD6-CD8601554EAE.html) for vCloud Air VM RAM limit. |
 
 **Disks**
 
-| **Option**  |  **Description** |
-|----------|:-----|
+| Option | Description |
+|--------|-------------|
 | Disk | Specify the storage capacity in GB. See the [VMware docs](http://pubs.vmware.com/vca/index.jsp?topic=%2Fcom.vmware.vca.od.ug.doc%2FGUID-6180A0A5-E390-449D-8FD6-CD8601554EAE.html) for vCloud Air VM storage limit. |
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
-For issues related to API calls, send the request body along with details related to the issue.
-
-In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
-Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
+* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
+* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

@@ -1,4 +1,5 @@
-{{{ "title": "Using Google Cloud",
+{{{
+"title": "Using Google Cloud",
 "date": "09-01-2016",
 "author": "",
 "attachments": [],
@@ -31,30 +32,35 @@ Associate your Google account in Google Cloud by creating a project, enabling bi
 **Steps**
 
 1. Sign in to [Google developers console](https://console.developers.google.com/) with your google account.
+
 2. Create a project. Click **Create Project** and give a meaningful name and ID. Copy the project ID, which you’ll shortly need to share in ElasticBox.
 
   ![googlecloud-createproject-1.png](../images/ElasticBox/googlecloud-createproject-1.png)
 
 3. Add billing. Under Billing & Settings, click **Enable Billing.**
 
-**Note:** You have to provide credit card details for usage based billing. See Google’s pricing policy for costs incurred to host on the Google Cloud Platform. ElasticBox assumes no responsibility for these costs.
+   **Note:** You have to provide credit card details for usage based billing. See Google’s pricing policy for costs incurred to host on the Google Cloud Platform. ElasticBox assumes no responsibility for these costs.
 
 4. Turn on Google Compute Engine. Under APIS & AUTH > APIs, turn Google Compute Engine to **ON.**
 
-  ![googlecloud-turnoncomputeengineapi-2.png](../images/ElasticBox/googlecloud-turnoncomputeengineapi-2.png)
+   ![googlecloud-turnoncomputeengineapi-2.png](../images/ElasticBox/googlecloud-turnoncomputeengineapi-2.png)
 
 ### Step 2. Connect the Account in ElasticBox
 
 **Steps**
 
 1. Sign in to [ElasticBox](//www.elasticbox.com/login).
-2. Click **Providers** > **Add Provider.**
+
+2. Click **Providers > Add Provider**.
+
 3. In the dialog, select **Google Compute**.
+
 4. Under Credentials, click **Connect a Google Account**. Via Google OAuth, ElasticBox requests access to your project to view and manage Google Cloud resources on your behalf. Once you accept, you should see your Google account appear in the dialog. For a deeper understanding of how we securely request access, see the [Google help](https://developers.google.com/compute/docs/api/how-tos/authorization).
-![googlecloud-connectgoogleaccount-3.png](../images/ElasticBox/googlecloud-connectgoogleaccount-3.png)
-![googlecloud-elasticboxrequestsaccess-4.png](../images/ElasticBox/googlecloud-elasticboxrequestsaccess-4.png)
+   ![googlecloud-connectgoogleaccount-3.png](../images/ElasticBox/googlecloud-connectgoogleaccount-3.png)
+   ![googlecloud-elasticboxrequestsaccess-4.png](../images/ElasticBox/googlecloud-elasticboxrequestsaccess-4.png)
+
 5. Copy, paste the Project ID for the project you created in the Google Developers Console and save.
-![googlecloud-enterprojectid-5.png](../images/ElasticBox/googlecloud-enterprojectid-5.png)
+   ![googlecloud-enterprojectid-5.png](../images/ElasticBox/googlecloud-enterprojectid-5.png)
 
 We sync with the Google Cloud APIs to register ready-made and custom images available for the account as well as resources like network configurations, firewalls, routes, and more.
 
@@ -66,16 +72,16 @@ The [deployment policy ](./deploymentpolicy-box.md)for Google Cloud abstracts so
 
 **Deployment**
 
-| **Deployment Option**  |  **Description** |
-|----------|:-----|
+| Deployment Option | Description |
+|-------------------|-------------|
 | Provider | This shows the name or GUID of the Google Cloud provider account in ElasticBox. If you don’t have access to the provider account, you see the GUID. |
 
 **Resource**
 
 ![googlecloud-resource-deployment-options-6.png](../images/ElasticBox/googlecloud-resource-deployment-options-6.png)
 
-| **Deployment Option**  |  **Description** |
-|----------|:-----|
+| Deployment Option | Description |
+|-------------------|-------------|
 | Zone |	This is the location (ex: us-central1-a) that hosts your instance and where traffic to the instance is served by Google Cloud. It consists of the the region followed by the zone. |
 | Machine Type | Google Compute has preset machine sizes for standard, high memory, high CPU, and shared core categories. Each category determines the number of cores, memory, and scratch disk space available to the instance. For details on what type (ex: n1-standard-2) to select, see [Machine Types](https://developers.google.com/compute/docs/machine-types#standard). |
 | Image |	This lists the ready-to-use images (ex: debian-7) provided by Google as well as custom images you created to boot your instance. |
@@ -85,8 +91,8 @@ The [deployment policy ](./deploymentpolicy-box.md)for Google Cloud abstracts so
 
 ![googlecloud-deployment-options-network-7.png](../images/ElasticBox/googlecloud-deployment-options-network-7.png)
 
-| **Deployment Option**  |  **Description** |
-|----------|:-----|
+| Deployment Option | Description |
+|-------------------|-------------|
 | Network |	Select a network to direct traffic in and out of the instance. The default network for the project is automatically selected here. If you added a custom network, you can select it from the drop-down. Note that the network configuration relies on firewall rules and routes you specify for the project. |
 | Tags	| Specify tags to control how traffic is handled for the instance. Tags identify the network resources applied to the instance, such as firewall rules and routes. For example, when you select a firewall rule in the deployment profile, its target tag is automatically added to this field. Apart from tags related to firewalls and routes, you can tag the instance with other meaningful labels by simply typing them here Remember that these are different from [metadata tags](./resource-tags.md) that help you track ElasticBox resources consumed by an instance. |
 | Firewall Rules | Select the firewall rules to apply. Listed here are the default network firewall rules that allow http, https traffic to the network, its default routes, which specify how to reach the Internet and other instances internally are automatically applied. A firewall rule specifies the IP address range, ports, and protocols through which traffic is allowed to and from the instance. The rule is applied to the instance via tags. |
@@ -115,8 +121,6 @@ For more information, see [persistent disks](https://developers.google.com/compu
 
 We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
-For issues related to API calls, send the request body along with details related to the issue.
-
-In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
-Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
+* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
+* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

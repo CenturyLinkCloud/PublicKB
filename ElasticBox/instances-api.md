@@ -10,39 +10,44 @@ Manage and perform actions on instances.
 
 **Create or List Instances**
 
-|  Resource |      Description     |
-|----------|:-------------|
-| [GET /services/instances](./instances-api.md) |  Gets the list of instances. |
-| [POST /services/instances](./instances-api.md) |    Creates a new instance.   |
+| Resource | Description |
+|----------|-------------|
+| GET /services/instances | Gets the list of instances. |
+| POST /services/instances | Creates a new instance. |
+
 
 **Perform Instance Operations**
 
-|  Resource |      Description     |
-|----------|:-------------|
-|[GET /services/instances/{instance_id}](./instances-api.md)| Fetches an existing instance.|
-| [PUT /services/instances/{instance_id}](./instances-api.md) | Updates an existing instance. |
-| [DELETE /services/instances/{instance_id}](./instances-api.md) | Terminates, force-terminates, or deletes an existing instance.|
-| [GET /services/instances/{instance_id}/service](./instances-api.md)| Gets the instance service. |
-| [GET /services/instances/{instance_id}/activity](./instances-api.md) | Gets all activity logs from the executed operations of an instance. |
-| [GET /services/instances/{instance_id}/machine_logs](./instances-api.md) | Gets the logs of all machines of a deployed instance. |
-| [GET /services/instances/{instance_id}/binding_instances ](./instances-api.md) Gets the binding of a instance. |
-| [GET /services/instances/{instance_id}/operations](./instances-api.md) | Gets all operations of an instance. |
-| [PUT /services/instances/{instance_id}/deploy](./instances-api.md) | Re-deploy an existing instance. |
-| [PUT /services/instances/{instance_id}/poweron](./instances-api.md) | Power-on an existing instance. |
-| [PUT /services/instances/{instance_id}/shutdown](./instances-api.md) | 	Shutdown an existing instance. |
-| [PUT /services/instances/{instance_id}/reinstall](./instances-api.md) | Re-install an existing instance. |
-| [PUT /services/instances/{instance_id}/reconfigure ](./instances-api.md)| Re-configure an existing instance. |
+| Resource | Description |
+|----------|-------------|
+| GET /services/instances/{instance_id}| Fetches an existing instance.|
+| PUT /services/instances/{instance_id} | Updates an existing instance. |
+| DELETE /services/instances/{instance_id} | Terminates, force-terminates, or deletes an existing instance.|
+| GET /services/instances/{instance_id}/service | Gets the instance service. |
+| GET /services/instances/{instance_id}/activity | Gets all activity logs from the executed operations of an instance. |
+| GET /services/instances/{instance_id}/machine_logs | Gets the logs of all machines of a deployed instance. |
+| GET /services/instances/{instance_id}/binding_instances | Gets the binding of a instance. |
+| GET /services/instances/{instance_id}/operations | Gets all operations of an instance. |
+| PUT /services/instances/{instance_id}/deploy | Re-deploy an existing instance. |
+| PUT /services/instances/{instance_id}/poweron | Power-on an existing instance. |
+| PUT /services/instances/{instance_id}/shutdown | 	Shutdown an existing instance. |
+| PUT /services/instances/{instance_id}/reinstall | Re-install an existing instance. |
+| PUT /services/instances/{instance_id}/reconfigure | Re-configure an existing instance. |
 
 ### GET /services/instances
 
 Gets instances that are accessible in the personal workspace of the authenticated user.
 
 **Normal Response Codes**
+
 * 200
+
 **Error Response Codes**
+
 * Bad Request (400)
 
 **Request**
+
 ```
 Headers:
 
@@ -53,8 +58,8 @@ ElasticBox-Release: 4.0
 
 **Response Parameters**
 
-|  Parameter  |     Type      |	Description |
-|----------|:-------------|-----|
+| Parameter | Type |Description |
+|-----------|------|------------|
 |created | string | Creation date. |
 | updated |  string | Date of the last update. |
 | members | array | List of members whom you shared the instance. |
@@ -305,14 +310,17 @@ ElasticBox-Release: 4.0
 Creates a new instance and gets the created instance.
 
 **Normal Response Codes**
+
 * 202
+
 **Error Response Codes**
+
 * Invalid Data (400)
 
 **Request Parameters**
 
-|  Parameter  |     Type      |	Description |
-|----------|:-------------|-----|
+| Parameter | Type |Description |
+|-----------|------|------------|
 | schema | string | Required. Instance schema URI. |
 | owner | string | ID of the workspace where the instance is posted. |
 | box | Object | Box object with its id and a list of overridden variable objects at deployment time |
@@ -365,8 +373,8 @@ Body: notice that the request schedules the instance to shut down in five hours.
 
 **Response Parameters**
 
-|  Parameter  |     Type      |	Description |
-|----------|:-------------|-----|
+| Parameter | Type |Description |
+|-----------|------|------------|
 | lease | array | If scheduled, this object displays these parameters for the instance:<li>released. Is a true or false boolean value. False means that the operation scheduled on the instance is not executed yet.</li><li>expire. Specifies in UTC format YYYY-MM-DD HH:MM:SS.SSSSSS, the time and date for stopping an instance. It applies only when an instance is set to terminate or shut down.</li><li>operation. Specifies the stop operation scheduled as either **shutdown** or **terminate**. When not scheduled, the instance is set to **alwayson**.</li> |
 | bindings | array | List of instance bindings. |
 | binding | object | Binding contained in the bindings list, each binding object contains the parameters: instance and name. |
@@ -566,13 +574,17 @@ Response:
 Fetches an existing instance given its ID.
 
 **Normal Response Codes**
+
 * 200
+
 **Error Response Codes**
+
 * Invalid Data (400)
 * Forbidden (403)
 * Not Found (404)
 
 **Request**
+
 ```
 Headers:
 
@@ -583,8 +595,8 @@ ElasticBox-Release: 4.0
 
 **Response Parameters**
 
-|  Parameter  |     Type      |	Description |
-|----------|:-------------|-----|
+| Parameter | Type |Description |
+|-----------|------|------------|
 | bindings | array | List of instance bindings. |
 | binding | object | Binding contained in the bindings list, each binding object contains the parameters: instance and name. |
 | updated |  string | Date of the last update. |
@@ -788,18 +800,20 @@ ElasticBox-Release: 4.0
 Given the instance ID, updates only these fields of an existing instance: boxes, tags, schedule, members, and variables. The request body should contain an instance object.
 
 **Normal Response Codes**
+
 * 200
 * 202
 
 **Error Response Codes**
+
 * Invalid Data (400)
 * Forbidden (403)
 * Not Found (404)
 
 **Request Parameters**
 
-|  Parameter  |     Type      |	Description |
-|----------|:-------------|-----|
+| Parameter | Type |Description |
+|-----------|------|------------|
 | bindings | array | List of instance bindings. |
 | binding | object | Binding contained in the bindings list, each binding object contains the parameters: instance and name. |
 | updated |  string | Date of the last update. |
@@ -1016,8 +1030,8 @@ In this sample request, the instance is tagged and scheduled to terminate at a g
 
 **Response Parameters**
 
-|  Parameter  |     Type      |	Description |
-|----------|:-------------|-----|
+| Parameter | Type |Description |
+|-----------|------|------------|
 | bindings | array | List of instance bindings. |
 | binding | object | Binding contained in the bindings list, each binding object contains the parameters: instance and name. |
 | updated | string | Date of the last update. |
@@ -1214,6 +1228,7 @@ Terminates, force-terminates, or deletes an existing instance based on its insta
 **Normal Response Codes**
 
 * 202
+
 **Error Response Codes**
 
 * Invalid Operation (400)
@@ -1223,8 +1238,8 @@ Terminates, force-terminates, or deletes an existing instance based on its insta
 
 **Request Parameters**
 
-|  Parameter  |     Type      |	Description |
-|----------|:-------------|-----|
+| Parameter | Type |Description |
+|-----------|------|------------|
 | operation | string | Operation type must be one of the following values: terminate, force_terminate and delete |
 
 ```
@@ -1264,8 +1279,8 @@ ElasticBox-Release: 4.0
 
 **Response Parameters**
 
-|  Parameter  |     Type      |	Description |
-|----------|:-------------|-----|
+| Parameter | Type |Description |
+|-----------|------|------------|
 | profile | object | Service profile. |
 | profile.subnet | string | Profile subnet. |
 | profile.image | string | Profile image. |
@@ -1360,8 +1375,8 @@ Gets all activity logs from operations run on an instance given its instance ID.
 
 **Request Parameters**
 
-|  Parameter  |     Type      |	Description |
-|----------|:-------------|-----|
+| Parameter | Type |Description |
+|-----------|------|------------|
 | (Optional) operation | string | The specific operation id, there are seven types of operations: deploy, shutdown, poweron, reinstall, reconfigure, terminate and terminate_service. |
 
 ```
@@ -1380,8 +1395,8 @@ GET /services/instances/{instance_id}/activity?operation=deploy
 
 **Response Parameters**
 
-|  Parameter  |     Type      |	Description |
-|----------|:-------------|-----|
+| Parameter | Type |Description |
+|-----------|------|------------|
 |* box | string | Box name. |
 | username | string | User who performed the activity. |
 |* machine | string | Machine. |
@@ -1439,6 +1454,7 @@ GET /services/instances/{instance_id}/activity?operation=deploy
 ### GET /services/instances/{instance_id}/machine_logs
 
 Gets the logs of one machine for a deployed instance given its instance ID.
+
 **Normal Response Codes**
 
 * 200
@@ -1450,8 +1466,8 @@ Gets the logs of one machine for a deployed instance given its instance ID.
 
 **Request Parameters**
 
-|  Parameter  |     Type      |	Description |
-|----------|:-------------|-----|
+| Parameter | Type |Description |
+|-----------|------|------------|
 | machine_name | string | 	The name of the machine you want to retrieve the log. You can get the name of the machine from the instance document. |
 | (Optional) box | string | Box name. |
 | (Optional) event | string | Event type, there may be nine event lists: configure, dispose, install, post_dispose, post_stop, pre_configure, pre_install, pre_start, start and stop. |
@@ -1488,6 +1504,7 @@ configure-{instance_id} successfully executed.
 ### GET /services/instances/{instance_id}/binding
 
 Gets the binding of an instance when you give the instance ID.
+
 **Normal Response Codes**
 
 * 200
@@ -1509,8 +1526,8 @@ ElasticBox-Release: 4.0
 
 **Response Parameters**
 
-|  Parameter  |     Type      |	Description |
-|----------|:-------------|-----|
+| Parameter | Type |Description |
+|-----------|------|------------|
 | updated | string | Date of the last update. |
 | operation | string | Last operation, there are seven types of operations: deploy , shutdown , poweron , reinstall , reconfigure , terminate and terminate_service |
 | name | string | Instance name. |
@@ -1592,6 +1609,7 @@ ElasticBox-Release: 4.0
 ### GET /services/instances/{instance_id}/operations
 
 Gets all operations run on an instance when you give the instance ID.
+
 **Normal Response Codes**
 
 * 200
@@ -1612,8 +1630,8 @@ ElasticBox-Release: 4.0
 ```
 **Response Parameters**
 
-|  Parameter  |     Type      |	Description |
-|----------|:-------------|-----|
+| Parameter | Type |Description |
+|-----------|------|------------|
 | username | string | User name. |
 | updated | string | Date of the last update. |
 | created | string | Creation date. |
@@ -1729,8 +1747,11 @@ ElasticBox-Release: 4.0
 Reinstalls an existing instance when you give its ID.
 
 **Normal Response Codes**
+
 * 202
+
 **Error Response Codes**
+
 * Operation Conflict (409)
 
 **Request**
@@ -1757,8 +1778,8 @@ Re-configures an existing instance when you give its ID.
 
 **Request Parameters**
 
-|  Parameter  |     Type      |	Description |
-|----------|:-------------|-----|
+| Parameter | Type |Description |
+|-----------|------|------------|
 | id | string | Instance ID. |
 | method | string | Operation on the instance. |
 

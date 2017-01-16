@@ -12,17 +12,17 @@ A provider is a public or private cloud account you register in ElasticBox. Elas
 
 | Clouds | Developer <br> (SaaS) Free | Developer <br> (Appliance) Free | Enterprise <br> (Saas) | Enterprise <br> (Appliance) |
 |-----|:-----:|:-----:|:-----:|:-----:|
-| [Century Link Cloud](../ElasticBox/using-centurylink-cloud.md) | | ✓ | ✓ | ✓ |
-| [Amazon Web Services](../ElasticBox/using-your-aws-account.md) | ✓ | ✓ | ✓ | ✓ |
-| [Google Cloud](../ElasticBox/using-google-cloud.md) | ✓ | ✓ | ✓ | ✓ |
-| [Microsoft Azure](../ElasticBox/using-azure.md) | ✓ | ✓ | ✓ | ✓ |
-| [VMware vCenter](../ElasticBox/using-the-vmware-vcenter-private-datacenter.md) |  | ✓ | ✓ | ✓ |
-| [vCloud Air and vCloud Director](../ElasticBox/orchestrating-vcloud-air-vcloud-director-deployments.md) |  |  | ✓ | ✓ |
-| [OpenStack Cloud](../ElasticBox/using-openstack-cloud.md) |  | ✓ | ✓ | ✓ |
-| [CloudStack](../ElasticBox/using-cloudstack.md) |  | ✓ | ✓ | ✓ |
-| [Rackspace Cloud](../ElasticBox/using-rackspace-cloud.md) |  |  | ✓ | ✓ |
-| [SoftLayer](../ElasticBox/using-softlayer.md) |  |  | ✓ | ✓ |
-| [AWS GovCloud](../ElasticBox/using-aws-govcloud.md) |  |  | ✓ <br> Available upon request | ✓ <br> Available upon request |
+| [Century Link Cloud](./using-centurylink-cloud.md) | | ✓ | ✓ | ✓ |
+| [Amazon Web Services](./using-your-aws-account.md) | ✓ | ✓ | ✓ | ✓ |
+| [Google Cloud](./using-google-cloud.md) | ✓ | ✓ | ✓ | ✓ |
+| [Microsoft Azure](./using-azure.md) | ✓ | ✓ | ✓ | ✓ |
+| [VMware vCenter](./using-the-vmware-vcenter-private-datacenter.md) |  | ✓ | ✓ | ✓ |
+| [vCloud Air and vCloud Director](./orchestrating-vcloud-air-vcloud-director-deployments.md) |  |  | ✓ | ✓ |
+| [OpenStack Cloud](./using-openstack-cloud.md) |  | ✓ | ✓ | ✓ |
+| [CloudStack](./using-cloudstack.md) |  | ✓ | ✓ | ✓ |
+| [Rackspace Cloud](./using-rackspace-cloud.md) |  |  | ✓ | ✓ |
+| [SoftLayer](./using-softlayer.md) |  |  | ✓ | ✓ |
+| [AWS GovCloud](./using-aws-govcloud.md) |  |  | ✓ <br> Available upon request | ✓ <br> Available upon request |
 
 ### Contacting ElasticBox Support
 We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.

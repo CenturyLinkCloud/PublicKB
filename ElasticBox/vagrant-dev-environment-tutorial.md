@@ -33,6 +33,7 @@ This tutorial helps you learn these concepts:
 To get started, set up the following:
 
 1. Sign up for an ElasticBox account. It’s free!
+
 2. Fork a sample Rails app from this [GitHub repository](https://github.com/railstutorial/sample_app_rails_4). Clone it in your Mac laptop as shown. This creates a local copy of the sample Rails app.
 
     ![tutorial-vagrant-1.png](../images/ElasticBox/tutorial-vagrant-1.png)
@@ -75,7 +76,9 @@ This installs Javascript runtime for the Rails app.
 **Steps**
 
 1. Create a new box called Nodejs based on Linux Compute.
+
 2. Add an options variable called APT_GET_UPDATE with a **no** value.
+
 3. Copy/paste this script in a **post\_install** event:
 
     ```
@@ -96,6 +99,7 @@ This installs all the dependencies for the Rails app.
 **Steps**
 
 1. Create a new box called Rails Dependencies based on Linux Compute.
+
 2. Add the following variables:
     * Port variable called http set to **3000**.
     * Box variable called ruby pointing to the default **Ruby** box.
@@ -111,6 +115,7 @@ ___
 **Steps**
 
 1. Create a new box called Rails with GitHub based on Linux Compute.
+
 2. Add these box variables:
     * Box variable called rails pointing to the **Rails Dependencies** box.
     * Box variable called github pointing to the **GitHub** box.
@@ -127,6 +132,7 @@ This installs MySQL server and creates a database.
 **Steps**
 
 1. Create a new box called MySQL Ubuntu based on Linux Compute.
+
 2. Add the following variables:
     * Options variable called APT_GET_UPDATE set to **yes**
     * Text variable called BIND_ADDRESS set to **0.0.0.0**
@@ -293,11 +299,13 @@ This box installs a development environment with the sample Rails app, runtimes,
 **Steps**
 
 1. Create a new box called **Rails Dev Env** based on Linux Compute.
+
 2. Add the following variables:
     * Box variable called mysql that points to the** MySQL Ubuntu** box
     * Box variable called rails that points to the **Rails with GitHub** box
 
 3. Expand the rails box variable all the way down to the ruby box. Set RVM_RUBY_VERSION to **ruby-2.0.0-p576**.
+
 4. Expand the github box variable, and in the git_repo box, set values for these variables as follows:
     * BRANCH to **master**
     * CLONE_DIRECTORY to **/vagrant**
@@ -417,6 +425,7 @@ Let’s now run some tests to verify that the dev environment is working.
 **Steps**
 
 1. Open a new terminal in your Mac laptop and go to the sample_app_rails_4 directory.
+
 2. SSH into the virtual machine:
 
     ```

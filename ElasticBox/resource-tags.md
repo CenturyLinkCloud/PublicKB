@@ -35,7 +35,7 @@ A tag consists of a key and a value. You can tag with a custom or preset value.
 * **Preset** - Choose from preset values such as box name, environment, and so on. Preset values give specific information about an instance. Choose a value from this table.
 
 | Preset Value | Description |
-|-------------------|----------------|
+|--------------|-------------|
 | Box name | Name of the box deployed. |
 | Environment | Environment name the user gave in the deployment profile when deploying the instance. |
 | Instance ID | ID assigned by ElasticBox, for example, i-extwmf. |
@@ -53,12 +53,15 @@ Only ElasticBox users in the administrator role can apply tags. Follow these ste
 
 **Steps**
 1. [Log in to ElasticBox](http://elasticbox.com/login/).
+
 2. From the menu drop-down on the top right, select the **Admin Console**.
+
 3. Click **Providers > Tags**.
+
 4. Enter a key and value for the tag.
    * To enter a preset value, click the Custom Value drop-down to select one.
    * To enter a custom value, simply type in the Custom Value field.
-   * **Note:** The maximum length is 125 characters for the key and 250 characters for the value. Tags that contain unicode non-ASCII characters (ex: +=*&!@#) are ignored. Such tags are not applied to the instance in Google Cloud and OpenStack.
+   * **Note:** The maximum length is 125 characters for the key and 250 characters for the value. Tags that contain unicode non-ASCII characters (ex: +=\*&!@#) are ignored. Such tags are not applied to the instance in Google Cloud and OpenStack.
 
 5. When done, click (+) to add the tag.
 
@@ -74,8 +77,11 @@ In addition to preset and custom tags, ElasticBox tags instances with CloudForma
 
 **Steps**
 1. [Log in to the AWS console](https://console.aws.amazon.com/) as your IAM user.
+
 2. Select the region where your instance is deployed.
+
 3. Click **Services > EC2 > Instances.**
+
 4. Select an instance and click the **Tags** tab to manage the applied tags.
    ![admin-tags3.png](../images/ElasticBox/admin-tags3.png)
 
@@ -83,7 +89,9 @@ In addition to preset and custom tags, ElasticBox tags instances with CloudForma
 
 **Steps**
 1. [Log in to the Google Cloud Console](https://console.developers.google.com/).
+
 2. Under projects, select the project where ElasticBox instances are deployed.
+
 3. Under Compute Engine, click **VM instances** and manage the tags applied under Custom metadata.
    ![admin-tags4.png](../images/ElasticBox/admin-tags4.png)
 
@@ -91,7 +99,9 @@ In addition to preset and custom tags, ElasticBox tags instances with CloudForma
 
 **Steps**
 1. Log in to your OpenStack dashboard.
+
 2. Select the project to which ElasticBox instances are deployed.
+
 3. Under **Instances**, select the instance whose tags you want to view. The tags are listed under Meta.
    ![admin-tags5.png](../images/ElasticBox/admin-tags5.png)
 
@@ -99,7 +109,9 @@ In addition to preset and custom tags, ElasticBox tags instances with CloudForma
 
 **Steps**
 1. Log in to your VMware vSphere thin client for vCenter 5.0 or later.
+
 2. Locate the virtual machine launched through ElasticBox in vSphere. Use the Service ID of the instance in ElasticBox to find it.
+
 3. Under **Custom Fields**, the tags applied to the instance are listed.
    ![admin-tags6.png](../images/ElasticBox/admin-tags6.png)
 
@@ -107,7 +119,9 @@ In addition to preset and custom tags, ElasticBox tags instances with CloudForma
 
 **Steps**
 1. Log in to your CloudStack management console.
+
 2. Under Instances, select the instance launched through ElasticBox. Use its ElasticBox Service ID to find it.
+
 3. In the instance Details tab, scroll down to see the tags applied.
    ![admin-tags7.png](../images/ElasticBox/admin-tags7.png)
 

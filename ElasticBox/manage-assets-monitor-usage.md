@@ -58,7 +58,7 @@ Take a look at all the instances in the organization by their state under **Inst
 
 ![admin-assets4.png](../images/ElasticBox/admin-assets4.png)
 
-* * Select all the online instances and trigger instance actions in bulk from the Bulk Actions menu. You can trigger operations like reinstall, reconfigure, shut down, terminate. See what these [instance operations](./deploying-managing-instances.md) mean.
+* Select all the online instances and trigger instance actions in bulk from the Bulk Actions menu. You can trigger operations like reinstall, reconfigure, shut down, terminate. See what these [instance operations](./deploying-managing-instances.md) mean.
 * Select all terminated instances and delete them at one shot.
 * Click the instance to access its page directly.
 * See to which provider an instance is deployed. Then go to the provider page to see who owns it.
