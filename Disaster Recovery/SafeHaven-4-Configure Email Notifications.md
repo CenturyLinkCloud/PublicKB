@@ -5,7 +5,7 @@
   "attachments": [],
   "contentIsHTML": false
 }}}
-## Article Overview
+### Article Overview
 This article explains how to configure email notifications using SafeHaven-4 console
 
 ### Configuring Email Notifications
