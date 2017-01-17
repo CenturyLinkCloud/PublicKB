@@ -20,11 +20,11 @@ For Azure, we are currently limited to serving customers who are not resellers (
 
 Access to ElasticBox.
 
-Credentials for a [CenturyLink Cloud Account Administrator](../Accounts-&-Users/user-permissions.md). If you do not have access to CenturyLink Cloud, please contact your CenturyLink representative. (More on that, below.)
+Credentials for a [CenturyLink Cloud Account Administrator](../Accounts & Users/user-permissions.md). If you do not have access to CenturyLink Cloud, please contact your CenturyLink representative. (More on that, below.)
 
-A working Knowledge how to use [ElasticBox providers](https://elasticbox.com/documentation/core-concepts/providers/).
+A working Knowledge how to use [ElasticBox providers](https://ElasticBox.com/documentation/core-concepts/providers/).
 
-An understanding of the features and benefits of [Partner Cloud Integration](../elasticbox/partner-cloud-integration.md)
+An understanding of the features and benefits of [Partner Cloud Integration](../ElasticBox/partner-cloud-integration.md)
 
 For each CLC account hoping to integrate with Azure, both CenturyLink's and Microsoft's Terms and Conditions must be accepted. These will be presented to any user attempting to create a new "Azure Resource Manager" provider in ElasticBox.
 

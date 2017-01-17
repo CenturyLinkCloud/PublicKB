@@ -23,9 +23,9 @@ For Azure, we are currently limited to serving customers who are not resellers (
 
 Access to ElasticBox.
 
-Credentials for a [CenturyLink Cloud Account Administrator](../Accounts-&-Users/user-permissions.md)
+Credentials for a [CenturyLink Cloud Account Administrator](../Accounts & Users/user-permissions.md)
 
-A working Knowledge how to use [ElasticBox providers](https://elasticbox.com/documentation/core-concepts/providers/).
+A working Knowledge how to use [ElasticBox providers](https://ElasticBox.com/documentation/core-concepts/providers/).
 
 For each CLC account hoping to integrate with Azure, both CenturyLink's and Microsoft's Terms and Conditions must be accepted. These will be presented to any user attempting to create a new "Azure Resource Manager" provider in ElasticBox.
 
@@ -44,7 +44,7 @@ Current features of Partner Cloud Integration include:
 
 **Standard Support Details:**
 
-Please see our Knowledge-base article detailing [Azure platform-level support](../elasticbox/partner-cloud-integration-azure-support.md).
+Please see our Knowledge-base article detailing [Azure platform-level support](../ElasticBox/partner-cloud-integration-azure-support.md).
 
 For additional details on support responsibilities for our partners and their SLAs we support, please see the table below.
 
@@ -53,7 +53,7 @@ For additional details on support responsibilities for our partners and their SL
 
 
 **Partner Pricing Details:**
-* **Azure:** Pricing available to CenturyLink customers is shown [here](https://www.ctl.io/pricing), with some variability as Microsoft changes pricing daily. Available products are also listed [here](../elasticbox/partner-cloud-integration-azure-permissions.md). If your organization has agreements with Microsoft which differ from what is shown, please submit a ticket for review. We are constantly working to increase the scope of what is offered through Azure and it is likely we have plans to offer what you require.
+* **Azure:** Pricing available to CenturyLink customers is shown [here](https://www.ctl.io/pricing), with some variability as Microsoft changes pricing daily. Available products are also listed [here](../ElasticBox/partner-cloud-integration-azure-permissions.md). If your organization has agreements with Microsoft which differ from what is shown, please submit a ticket for review. We are constantly working to increase the scope of what is offered through Azure and it is likely we have plans to offer what you require.
 
 
 **Availability**

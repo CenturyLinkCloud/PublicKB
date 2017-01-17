@@ -16,7 +16,7 @@ All ElasticBox Customers with ARM Providers supported by CenturyLink
 
 ### Prerequisites
 
-You will need to have followed [the New ARM Provider process](../elasticbox/partner-cloud-integration-azure-new.md) at some point already.
+You will need to have followed [the New ARM Provider process](../ElasticBox/partner-cloud-integration-azure-new.md) at some point already.
 
 You will need to delete the associated Azure provider at some point, before or after submitting the request described below.
 

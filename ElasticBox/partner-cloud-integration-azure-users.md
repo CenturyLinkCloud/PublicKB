@@ -16,9 +16,9 @@ All of our customers are invited to use Cloud Integration.
 
 ### Prerequisites
 
-Knowledge of ElasticBox's [partner cloud integration](../elasticbox/partner-cloud-integration.md) feature.
+Knowledge of ElasticBox's [partner cloud integration](../ElasticBox/partner-cloud-integration.md) feature.
 
-An existing [ARM Provider created by ElasticBox](../elasticbox/partner-cloud-integration-azure-new.md).
+An existing [ARM Provider created by ElasticBox](../ElasticBox/partner-cloud-integration-azure-new.md).
 
 ### Important Information
 
@@ -33,4 +33,4 @@ Within the request, please provide the list of users who require Access and a se
 
 Once you have the user, navigate to https://portal.azure.com/. If you automatically sign into a portal without being asked for your credentials, that can be confusing. You are likely already logged into another Microsoft account. Sign out of the account, navigate back to https://portal.azure.com/, and try again.
 
-All users will be given CenturyLink's [customized set of Azure permissions]((../elasticbox/partner-cloud-integration-azure-permissions).
+All users will be given CenturyLink's [customized set of Azure permissions](../ElasticBox/partner-cloud-integration-azure-permissions).

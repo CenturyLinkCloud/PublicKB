@@ -16,9 +16,9 @@ All of our customers are invited to use Cloud Integration.
 
 ### Prerequisites
 
-Knowledge of ElasticBox's [partner cloud integration](../elasticbox/partner-cloud-integration.md) feature.
+Knowledge of ElasticBox's [partner cloud integration](../ElasticBox/partner-cloud-integration.md) feature.
 
-Knowledge of how to [get started with cloud-integrated Azure](../elasticbox/partner-cloud-integration-azure-new.md)
+Knowledge of how to [get started with cloud-integrated Azure](../ElasticBox/partner-cloud-integration-azure-new.md)
 
 ### Important Information
 
