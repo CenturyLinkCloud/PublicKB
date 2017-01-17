@@ -22,17 +22,13 @@ AppFog supports the following common application runtimes: Java, Node.js, PHP, P
 
 ### Enable AppFog in Control Portal
 
-Go to https://control.ctl.io, login, and you will see “AppFog" listed in the drop down navigation bar:
+Go to https://control.ctl.io, login, and navigate to Services > AppFog on the left-side vertical navigation bar:
 
-![AppFog in Dropdown Navigation](../images/appfog-in-dropdown-nav.png)
+![AppFog in Navigation](../images/appfog_gettingstarted_1.png)
 
-You may also navigate to AppFog via the icon on the left-side vertical navigation bar:
+Now it is time to enable deployment to AppFog regions, US East and/or US West. Each region has its own "add region" button to enable it in your AppFog:
 
-![AppFog icon in Vertical Navigation](../images/appfog-icon-nav.png)
-
-Navigate to AppFog using either navigation approach. Now it is time to enable deployment to AppFog regions, US East and/or US West. Each region has its own "add region" button to enable it in your AppFog:
-
-![AppFog Overview](../images/appfog-overview.png)
+![AppFog Overview](../images/appfog_gettingstarted_2.png)
 
 If the region has already been enabled then a link will appear to send you to the region overview page and no "add region" button will be displayed on the region row.
 
