@@ -49,7 +49,7 @@ Associate your Google account in Google Cloud by creating a project, enabling bi
 
 **Steps**
 
-1. Sign in to [ElasticBox](//www.elasticbox.com/login).
+1. Sign in to [ElasticBox](//www.ctl.io/elasticbox/).
 
 2. Click **Providers > Add Provider**.
 

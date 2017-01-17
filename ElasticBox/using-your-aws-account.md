@@ -21,11 +21,11 @@ We orchestrate with AWS APIs in the backend to provision, install, and manage th
 * Add custom AMIs in ElasticBox
 * Deploy to Your AWS Account
 
-### Connect Your AWS Account in ElasticBox
+## Connect Your AWS Account in ElasticBox
 
 Before you deploy in AWS, you need to connect your AWS account in ElasticBox. Watch this video for details.
 
-<iframe src="//player.vimeo.com/video/126177639" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe frameborder="0" height="316" src="//player.vimeo.com/video/126177639" width="561"></iframe>
 
 **Steps**
 1. Create a custom AWS policy and copy, paste these permissions:
@@ -272,8 +272,11 @@ When you save the profile and launch instances with additional volumes, we creat
 **Note:** At this time, you cannot encrypt the volumes or take volume snapshots through ElasticBox.
 
 **Auto Scaling**
+
 Turn on to allow AWS to automatically scale to the number of instances you specified (under Instances). ElasticBox creates a launch configuration and an auto scaling group that lets AWS scale an instance up or down based on CPU usage. If the usage reaches the 80 percent threshold, AWS launches a new instance. The number of instances launched is limited to the maximum number specified under Instances.
+
 **Load Balancing**
+
 Load balancing evenly distributes load to your application instances hosted on EC2 or a VPC across all availability zones in a region. When you enable and configure it for an instance, ElasticBox automatically sets up load balancing.
 To set up, add a new listener or select an existing one. Then specify the protocol and ports through which traffic flows from the client to the load balancer node (front-end) and from the load balancer to the instance (backend). To allow traffic over HTTPS, SSL, you must [upload a certificate](https://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/US_SettingUpLoadBalancerHTTPS.html) to AWS. The default settings require that your EC2 servers are active and accept requests via the port specified for the load balancing listener. Accepted ports are 25, 80, 443, and 1024 to 65535.
 
@@ -290,7 +293,7 @@ To deploy workloads to an ECS instances:
 * Image Lifecycle
 * Deploy the Instance
 
-**Note:** This documentation assumes that you have an ECS cluster already deployed in your AWS account. If you don’t have one, you can deploy a CloudFormation Box using this CloudFormation template as blueprint. After the instance is deployed, don’t forget to synchronize the provider in order to fetch the latest changes.
+**Note:** This documentation assumes that you have an ECS cluster already deployed in your AWS account. If you don’t have one, you can deploy a [CloudFormation Box](./cloudformation-box.md) using this [CloudFormation template](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-ecs.html) as blueprint. After the instance is deployed, don’t forget to synchronize the provider in order to fetch the latest changes.
 
 #### Deployment Policy
 
@@ -326,11 +329,14 @@ Create a new policy box of type “Amazon EC2 Container Service” or use the on
 ### Image Lifecycle
 
 **Build the Image**
+
 Use the ebcli to build the image.
 
 **Sintax**
 
-`ebcli build ”<box ID>” [-t “<image name>”] [--image <image name>] [--boxes-path <boxes path>]`
+```
+ebcli build ”<box ID>” [-t “<image name>”] [--image <image name>] [--boxes-path <boxes path>]
+```
 
 
 **Parameters**
@@ -346,14 +352,18 @@ Use the docker client to push the image to your favorite docker registry. If you
 
 **Syntax**
 
-`docker push “<image name>”`
+```
+docker push “<image name>”
+```
 
 ### Post the Image
 Use the ebcli to post the image to your box
 
 **Syntax**
 
-`ebcli post “<docker image>”`
+```
+ebcli post “<docker image>”
+```
 
 ### Deploy the Instance
 

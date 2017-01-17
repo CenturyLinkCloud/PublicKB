@@ -32,11 +32,11 @@ Follow these steps to add a provider in ElasticBox that integrates with your vir
 
     ![vcloudair-director-connectinelasticbox-1.png](../images/ElasticBox/vcloudair-director-connectinelasticbox-1.png)
 
-**URL**
+* **URL**
 
-	* **vCloud Director**. Enter the URL to access the vCloud Director portal.
+   * **vCloud Director**. Enter the URL to access the vCloud Director portal.
 
-	* **vCloud Air**. Enter the login URL followed by the compute API endpoint in this format, `<vCloud_air_login_URL>/api/compute`.
+   * **vCloud Air**. Enter the login URL followed by the compute API endpoint in this format, `<vCloud_air_login_URL>/api/compute`.
 
     **Example:** https://us-california-1-3.vchs.vmware.com/api/compute/
 
