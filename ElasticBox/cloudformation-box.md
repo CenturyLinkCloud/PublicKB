@@ -27,7 +27,7 @@ We use a sample Wordpress template to show how to create and launch a CloudForma
 
 **Step 1. Create the template**
 
-1. [Log in](https://elasticbox.com/login) to ElasticBox.
+1. [Log in](https://www.ctl.io/elasticbox/) to ElasticBox.
 
 2. Click **Boxes > New > CloudFormation > CloudFormation Template**. Give the box a meaningful name to identify it in the box service catalog. Specify other [metadata](./boxes.md).
 
@@ -100,7 +100,7 @@ Once live, you can continue to make changes to your CloudFormation template from
 
 **Steps**
 
-1. [Log in](https://elasticbox.com/login) to ElasticBox.
+1. [Log in](https://www.ctl.io/elasticbox/) to ElasticBox.
 
 2. Click Instances and select the CloudFormation instance you want to update. In this example, we’ll select the WordPress instance launched earlier.
 

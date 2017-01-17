@@ -33,12 +33,12 @@ Mark variables like port, text, file, options, password, and number as required 
 
 **Variable Visibility**
 
-A few settings such as Public, Private, and Internal determine variable privacy. Variables have public visibility if you don’t set anything.
+A few settings such as **Public**, **Private**, and **Internal** determine variable privacy. Variables have public visibility if you don’t set anything.
 
 **Public:**
 
-Allows customizing values at deploy time.
-Allows parent boxes and bindings to see and access values.
+* Allows customizing values at deploy time.
+* Allows parent boxes and bindings to see and access values.
 
 **Private:**
 
@@ -46,8 +46,8 @@ Same as the public setting except that bindings can’t access their values.
 
 **Internal:**
 
-Hides variables at deploy time.
-Bindings can’t access their values.
+* Hides variables at deploy time.
+* Bindings can’t access their values.
 
 ### Box Type
 
@@ -93,7 +93,7 @@ In this section, we look at how to define bindings. To connect instances at depl
 
 To define a binding, add a variable of type Binding. Then set its criteria in one of two ways:
 
-* Any Box Instance. In the Value drop-down, select Any Box Instance to bind to any active instance in the current workspace.
+* Any Box Instance. In the Value drop-down, select **Any Box Instance** to bind to any active instance in the current workspace.
 
     ![parameterizingboxeswithvariables2.png](../images/ElasticBox/parameterizingboxeswithvariables2.png)
 
@@ -116,7 +116,7 @@ In this example, for a binding called bindingA, we can get the connection data f
 
 To get value of a variable named connection_string, we apply this Jinja to look up the binding to the first deployed instance: `\{{ bindingA[0].connection_string }}`
 
-As an alternative to Jinja, you can do the same thing with text expressions. For example, since CloudFormation boxes don’t support event scripts, you can use text expression variables to process binding connections.
+As an alternative to Jinja, you can do the same thing with text expressions. For example, since CloudFormation boxes don’t support event scripts, you can use [text expression variables](./parameterizing-boxes-with-variables.md) to process binding connections.
 
 ### Port Type
 

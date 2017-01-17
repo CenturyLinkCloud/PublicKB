@@ -17,10 +17,10 @@ With the Enterprise Edition, you get an organization of unlimited users with dif
 Specifically, the Enterprise Edition exclusively offers several cool features.
 
 * Use ElasticBox as a SaaS platform or as a virtual appliance in your private cloud.
-* In addition to public clouds, deploy in private clouds like [vSphere](./using-the-vmware-vcenter-private-datacenter.md), [OpenStack](./using-the-openstack-cloud.md), and [CloudStack](./using-cloudstack.md).
+* In addition to public clouds, deploy in private clouds like [vSphere](./using-the-vmware-vcenter-private-datacenter.md), [OpenStack](./using-openstack-cloud.md), and [CloudStack](./using-cloudstack.md).
 * Get [sharing and collaboration features](./workspaces-and-collaboration.md) to let users share providers, boxes, and instances with each other as they work on applications in shared workspaces.
 * [Administer ElasticBox](./admin-overview.md) to complement your IT application management workflows. Manage all users and assets centrally, and monitor and report on resource usage.
-* Manage deployments org-wide through [tagging](./resource-tags.md), [webhooks](./webhooks.md) that integrate with custom IPAM or CMDB solutions, or [admin boxes](./admin-boxes.md) that let you make sure deployments consistently comply with company policies.
+* Manage deployments org-wide through [tagging](./resource-tags.md), [webhooks](./webhooks.md) that integrate with custom IPAM or CMDB solutions, or admin boxes that let you make sure deployments consistently comply with company policies.
 
 **Upgrade to Enterprise Edition**
 In order to benefit from all the powerful features in ElasticBox, we recommend upgrading to the Enterprise Edition. For more information, [contact sales](mailto:support@elasticbox.com).

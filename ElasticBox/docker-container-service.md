@@ -1,4 +1,5 @@
-{{{ "title": "Docker Containers",
+{{{
+"title": "Deploying to Docker Containers from ElasticBox",
 "date": "09-01-2016",
 "author": "",
 "attachments": [],

@@ -47,19 +47,19 @@ To see cloud specific reports, select the cloud from the drop-down under Provide
 
 **Sample #4:** Which accounts for a particular cloud add up the most hours or cost?
 
-Under Accounts in this AWS report, see which AWS accounts in the last 5 weeks racked up the most compute hours and cost. It’s easy to extrapolate that some accounts though they may have used more compute time still cost less. Spot them and share their best practices for the rest of the team to follow.
+Under **Accounts** in this AWS report, see which AWS accounts in the last 5 weeks racked up the most compute hours and cost. It’s easy to extrapolate that some accounts though they may have used more compute time still cost less. Spot them and share their best practices for the rest of the team to follow.
 In this view, you can deselect accounts to filter for relevant data in the chart.
 ![admin-reports4.png](../images/ElasticBox/admin-reports4.png)
 
 **Sample #5:** In a given cloud, which compute instance size is most used?
 
-If we look under Sizes in this AWS report, we see that t1.micro is the most deployed instance type. You can get other such insights from cloud specific reports.
+If we look under **Sizes** in this AWS report, we see that t1.micro is the most deployed instance type. You can get other such insights from cloud specific reports.
 
 ![admin-reports5.png](../images/ElasticBox/admin-reports5.png)
 
 **Sample #6:** Where do users most deploy?
 
-To what regions or data centers do users most deploy in AWS? That’s what this AWS report answers under Locations.
+To what regions or data centers do users most deploy in AWS? That’s what this AWS report answers under **Locations**.
 
 ![admin-reports6.png](../images/ElasticBox/admin-reports6.png)
 

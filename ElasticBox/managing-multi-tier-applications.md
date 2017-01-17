@@ -56,11 +56,15 @@ To do something for each instance in the binding, you can use a jinja2 loop. For
 
 Lastly, the list of bindings provides direct access to the first instance attributes. For example,
 
-`\{{ binding.varName }}`
+```
+\{{ binding.varName }}
+```
 
 is equivalent to
 
-`\{{ binding[0].varName }}`
+```
+\{{ binding[0].varName }}
+```
 
 ### Bindings automatic reconfiguration
 
