@@ -5,10 +5,10 @@
   "attachments": [],
   "contentIsHTML": false
 }}}
-## Article Overview
+### Article Overview
 This article explains how to expand the size of a Protection Group. This can be useful when a user wants to expand disk size or add a new disk to an already protected VM, or add a new VM to an existing Protection Group. In either case, the first step is to expand the size of the Protection Group.
 
-## Add storage to the Production and Recovery SRN  
+### Add storage to the Production and Recovery SRN  
 
 
 ### Edit Storage
