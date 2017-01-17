@@ -37,7 +37,7 @@ Your aggregated charges in Azure will appear as a single CenturyLink Public Clou
 
 Currently, we will only create new Azure customer accounts. If you have an existing, Azure customer account for which you would like CenturyLink to assume support and billing responsibility, please contact your CenturyLink representative to discuss.
 
-CenturyLink will manage Azure permissions for our customers to ensure we can support all resources provisioned there. Please review the [Azure permissions](../elasticbox/partner-cloud-integration-azure-permissions.md) to determine what Azure products and services are offered, currently. If there are other products or services you would like to allow CenturyLink to support, please email CloudIntegration-feedback@ctl.io or submit a service request.
+CenturyLink will manage Azure permissions for our customers to ensure we can support all resources provisioned there. Please review the [Azure permissions](../ElasticBox/partner-cloud-integration-azure-permissions.md) to determine what Azure products and services are offered, currently. If there are other products or services you would like to allow CenturyLink to support, please email CloudIntegration-feedback@ctl.io or submit a service request.
 
 
 ### Steps

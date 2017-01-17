@@ -67,7 +67,7 @@ For additional details on support responsibilities for our partners and their SL
 
   We are currently able to offer this service only to offices inside the United States. Our automation prevents offering this service to CLC accounts which have billing addresses outsides the US. Please submit a support ticket if you feel your situation requires additional review.
 
-  To get started with Azure, please review [Partner Cloud: Getting Started With Azure Customer](../elasticbox/partner-cloud-integration-azure-new.md)
+  To get started with Azure, please review [Partner Cloud: Getting Started With Azure Customer](../ElasticBox/partner-cloud-integration-azure-new.md)
 
 
 **Partner Responsibility:**
