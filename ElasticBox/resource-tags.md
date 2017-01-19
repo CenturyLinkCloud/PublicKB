@@ -9,7 +9,7 @@
 ### Tag Instances
 Tags give information about an instance deployed through ElasticBox. They let you report on provider resources consumed by ElasticBox users. They inform what box, provider, user, workspace, and such from ElasticBox were involved in deploying an instance.
 
-As an ElasticBox administrator, you get to apply 10 tags for your organization. From the admin console, once you can add preset or custom tags, they’re applied to the provider when a user launches an instance to any public or private cloud such as AWS, vSphere, Google Cloud, Azure, OpenStack, and CloudStack. They are applied on instances launched in Linux, Windows, CloudFormation, and RDS services.
+As an ElasticBox administrator, you get to apply 10 tags for your organization. From the [admin console](./admin-overview.md), once you can add preset or custom tags, they’re applied to the provider when a user launches an instance to any public or private cloud such as AWS, vSphere, Google Cloud, Azure, OpenStack, and CloudStack. They are applied on instances launched in Linux, Windows, CloudFormation, and RDS services.
 
 You can use tags to report on usage metrics from the provider’s interface. Tags help you understand how ElasticBox resources are spread across your organization. Use them to identify usage patterns and optimize resources for your teams and users.
 
@@ -37,7 +37,7 @@ A tag consists of a key and a value. You can tag with a custom or preset value.
 | Preset Value | Description |
 |--------------|-------------|
 | Box name | Name of the box deployed. |
-| Environment | Environment name the user gave in the deployment profile when deploying the instance. |
+| Environment | Environment name the user gave in the [deployment profile](./deploying-managing-instances.md) when deploying the instance. |
 | Instance ID | ID assigned by ElasticBox, for example, i-extwmf. |
 | Provider name | Provider defined in ElasticBox to which the instance was deployed. |
 | Service instance ID | Unique ID for every machine created for the instance, for example eb-ek73d-1, eb-ek73d-2. Some instances like AWS S3 don’t generate machines. In these cases, the Service ID also serves as the Service Instance ID. |
@@ -52,7 +52,7 @@ Only ElasticBox users in the administrator role can apply tags. Follow these ste
 ![admin-tags2.png](../images/ElasticBox/admin-tags2.png)
 
 **Steps**
-1. [Log in to ElasticBox](http://elasticbox.com/login/).
+1. [Log in to ElasticBox](//www.ctl.io/elasticbox/).
 
 2. From the menu drop-down on the top right, select the **Admin Console**.
 

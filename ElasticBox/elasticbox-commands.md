@@ -97,7 +97,7 @@ end
 
 In order for ElasticBox to act on this file at deploy time, use cURL or WGET commands in an event script on the Chef box to download the file into the virtual machine. Then, pass the file through the Config command in the event script so that ElasticBox executes the Chef box variables in it.
 
-Here the Config Command is run on the file:
+**Here the Config Command is run on the file:**
 
 ```
 curl -ks ${CHEF_DEFAULT_RB} | elasticbox config -o

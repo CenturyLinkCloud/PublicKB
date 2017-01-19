@@ -12,7 +12,7 @@ Learn how ElasticBox works in minutes with Hello World.
 
 Configure a box with reusable, infrastructure-independent configuration that you can deploy to any public or private cloud provider. What’s more, you can collaborate with your team to manage the deployments.
 
-Before you start, sign up for an ElasticBox account. It’s free!
+Before you start, sign up for an ElasticBox account.
 
 Then, follow these simple steps.
 
@@ -54,7 +54,7 @@ ___
 
 ### Add a provider and deployment policy
 
-You’ve configured the Hello World box. To deploy, you first need to connect to a cloud provider like [AWS](./using-your-aws-account.md), [Google Cloud](./using-your-google-cloud-account.md), [vSphere](./using-the-vsphere-private-datacenter.md), [OpenStack](./using-the-openstack-cloud.md), [CloudStack](./using-cloudstack.md), or [Azure](./using-azure.md) to launch the box using their services. For this walkthrough, we’ll use AWS.
+You’ve configured the Hello World box. To deploy, you first need to connect to a cloud provider like [AWS](./using-your-aws-account.md), [Google Cloud](./using-google-cloud.md), [vSphere](./using-the-vmware-vcenter-private-datacenter.md), [OpenStack](./using-openstack-cloud.md), [CloudStack](./using-cloudstack.md), or [Azure](./using-azure.md) to launch the box using their services. For this walkthrough, we’ll use AWS.
 
 **Add a provider**
 

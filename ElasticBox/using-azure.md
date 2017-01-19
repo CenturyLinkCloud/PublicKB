@@ -8,7 +8,7 @@
 
 ### Using Azure
 
-Microsoft Azure hosts applications in virtual machines and in cloud services via Web, Worker roles. ElasticBox supports deploying to all three models through the [Virtual Machine Role](./using-azure.md), [Web and Worker roles](./using-azure.md). In addition, we support [Microsoft SQL Database Service](./using-azure.md) through Azure. Take a look at the [benefits of deploying to Azure using ElasticBox](./using-azure.md).
+Microsoft Azure hosts applications in virtual machines and in cloud services via Web, Worker roles. ElasticBox supports deploying to all three models through the Virtual Machine Role, Web and Worker roles. In addition, we support Microsoft SQL Database Service through Azure. Take a look at the [benefits of deploying to Azure using ElasticBox.
 
 **Note:** If you’re running ElasticBox as an appliance in your private datacenter, you can deploy only to the virtual machine role.
 To learn about Azure hosting services, see the [Azure help](https://azure.microsoft.com/en-us/documentation/articles/choose-web-site-cloud-service-vm/).
@@ -40,7 +40,7 @@ ElasticBox simplifies Azure deployments with these benefits:
 
 * **Deploy easily to web and worker roles:** Typically to deploy in Azure, you have to install and set up the latest Visual Studio development environment, then install Azure SDK tools and extensions including the emulator. After that you must either directly upload your application files through Azure Blob storage or manually create a package (cspkg). But by deploying a web or worker role through ElasticBox, you can skip this fairly involved process.
 
-See how easy it is to get a web or worker role started in ElasticBox: Build a box, upload your application code and configuration files, select Azure deployment options, and deploy. We automatically create a cloud service and storage account for your web or worker role deployments.
+   See how easy it is to get a web or worker role started in ElasticBox: Build a box, upload your application code and configuration files, select Azure deployment options, and deploy. We automatically create a cloud service and storage account for your web or worker role deployments.
 
 * **Switch between VM, web, and worker roles:** It’s easy to migrate from virtual machine to web or worker role deployments or vice versa because your configuration is encapsulated in boxes. Simply kill the VM machines and deploy your box into web or worker roles or the other way around.
 
@@ -52,7 +52,7 @@ To connect to Azure in ElasticBox, you need to upload the elasticbox.cer to your
 Follow these steps.
 
 **Steps**
-1. [Log in to ElasticBox](https://elasticbox.com/login/).
+1. [Log in to ElasticBox](https://www.ctl.io/elasticbox/).
 
 2. Click **Providers** > **New Provider**.
 
@@ -133,7 +133,7 @@ In case of multi-tier applications deployed to different roles, follow these tip
 
 | Option | Description |
 |--------|-------------|
-| Location | Select a virtual network, region, or affinity group to physically place the instance.<li>**Virtual Networks**. To let the instance connect to services in Azure, select a virtual private network that you previously created in your subscription. See the Azure help on creating virtual networks.</li><li>**Regions**. Select a region to place the instance.</li><li>**Affinity Groups**. Select an affinity group, if you created one to keep the instance close to other regional resources in the datacenter.</li> |
+| Location | Select a virtual network, region, or affinity group to physically place the instance.<li>**Virtual Networks**. To let the instance connect to services in Azure, select a virtual private network that you previously created in your subscription. See the Azure help on [creating virtual networks](http://msdn.microsoft.com/library/azure/jj156074.aspx).</li><li>**Regions**. Select a region to place the instance.</li><li>**Affinity Groups**. Select an affinity group, if you created one to keep the instance close to other regional resources in the datacenter.</li> |
 
 **Autoscaling Web or Worker Role Instances**
 
@@ -175,7 +175,7 @@ To deploy in ElasticBox, simply select your box based on Linux or Windows, and [
 | Size | Both |	Select a virtual machine size from the basic or standard tier options including [D-Series](https://azure.microsoft.com/blog/2014/09/22/new-d-series-virtual-machine-sizes/). Each option such as A1 sets the number of CPU cores, OS disk memory, and number of input and output operations per second (IOPS) for the virtual machine. Size affects pricing. For more information, see [Virtual Machine and Cloud Service Sizes](https://msdn.microsoft.com/en-us/library/azure/dn197896.aspx).|
 | Username | Windows | Specify the root admin account username required to access and manage Windows machines. For Linux machines, the Service ID shown in the ElasticBox instance page is the admin account username, for example, eb-gm3vg. Inbound traffic from the Internet or virtual networks to Windows virtual machines is allowed through Remote Desktop (RDP) with these default port settings.<table class="internal"><tr style="background-color:#f8f8f9;border-left: solid 1px;border-right: solid 1px"><th>**Endpoint Type**</th><th>**Protocol**</th><th>**Public Port**</th><th>**Private Port**</th></tr><tr><td>RDP</td><td>TCP</td><td>3389</td><td>3389</td></tr></table>|
 |Password |	Windows | Required for root admin access to Windows virtual machines. The password must be at least 8 characters long containing 3 of the following: a lowercase, an uppercase, a number, or a special character. |
-| SSH Certificate |	Linux |	 Required for Linux virtual machines. Create and upload a X.509 SSH certificate with the .cer extension accepted by Azure. SSH is required to allow inbound traffic from the Internet or from virtual networks to Linux virtual machines. These are default port settings for SSH access.<table class="internal"><tr style="background-color:#f8f8f9;border-left: solid 1px;border-right: solid 1px"><th>**Endpoint Type**</th><th>**Protocol**</th><th>**Public Port**</th><th>**Private Port**</th></tr><tr><td>SSH</td><td>TCP</td><td>22</td><td>22</td></tr></table>|
+| SSH Certificate |	Linux |	 Required for Linux virtual machines. Create and upload a [X.509 SSH certificate with the .cer extension](http://azure.microsoft.com/en-us/documentation/articles/linux-use-ssh-key/) accepted by Azure. SSH is required to allow inbound traffic from the Internet or from virtual networks to Linux virtual machines. These are default port settings for SSH access.<table class="internal"><tr style="background-color:#f8f8f9;border-left: solid 1px;border-right: solid 1px"><th>**Endpoint Type**</th><th>**Protocol**</th><th>**Public Port**</th><th>**Private Port**</th></tr><tr><td>SSH</td><td>TCP</td><td>22</td><td>22</td></tr></table>|
 | Instances | Both | Select the maximum number of virtual machines to deploy when you enable autoscaling and load balancing. |
 
 **Network**

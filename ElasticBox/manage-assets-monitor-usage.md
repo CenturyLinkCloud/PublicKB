@@ -8,7 +8,7 @@
 
 ### Manage ElasticBox Assets & Monitor Usage
 
-From the admin console, you get full purview over assets others created in your organization. This includes users, providers, boxes, instances, and workspaces. While you can control assets with some bulk actions, you get complete access as if you were its owner directly from the asset page linked from the console.
+From the [admin console](./admin-overview.md), you get full purview over assets others created in your organization. This includes users, providers, boxes, instances, and workspaces. While you can control assets with some bulk actions, you get complete access as if you were its owner directly from the asset page linked from the console.
 
 **In this article:**
 
@@ -28,7 +28,7 @@ In the admin console, **Users** shows a list of all users in the organization wh
 * Change their username if you need to.
 * In the **Unmanaged** tab, see which users signed up for ElasticBox with their company email, but are not added to your ElasticBox organization. This is likely if they signed up before your organization was officially created in ElasticBox. To add them to your organization, give us a list of these users. After that, you’ll see them under the **Managed** tab.
 * At a glance, you can tell when a user created their account to get an idea for when they started using ElasticBox.
-* To delete users or convert their personal workspace into a team one, see Workspaces.
+* To delete users or convert their personal workspace into a team one, see Workspaces below.
 
 ### Manage Providers
 

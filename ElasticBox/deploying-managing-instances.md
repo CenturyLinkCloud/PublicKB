@@ -100,7 +100,7 @@ Select **Always on** if you don’t want to schedule anything. Shutdown powers o
 
     **Note:** Even if you don’t schedule an instance at the time of deploying, you can do so later. Once online, you can go to an instance page and in **Edit Details**, set the schedule.
 
-    Besides the user interface, you can automatically schedule instances using the instances API with a POST or PUT request.
+    Besides the user interface, you can automatically schedule instances using the instances API with a [POST](./instances.md) or [PUT](./instances.md) request.
 
 ### Handling Instance Lifecycle States
 
@@ -113,24 +113,31 @@ Go to the Admin Console to [manage several instances](./manage-assets-monitor-us
   ![instance-states-8.png](../images/ElasticBox/instance-states-8.png)
 
 **Reconfigure**
+
 This executes the configure events from the box.
 
 **Reinstall**
+
 This re-runs the install scripts from your boxes onto the existing virtual infrastructure. This is useful if you made changes to your scripts within this instance, say to upgrade the instance to a new box version. A reconfigure automatically follows the reinstall.
 
 **Power On**
+
 This virtually powers on your instance. It’s useful in case you’ve shut the instance down. After powering on, the configure and start scripts from the box execute.
 
 **Shut Down**
+
 This runs the stop scripts from your box instance and cleanly shuts down the OS. It’s useful if your instance does not need to be up 24/7. As some cloud providers only charge for running instances, this can save money.
 
 **Terminate**
+
 This executes the dispose scripts from your box instance and then deletes the virtual infrastructure. You can’t revert the action and since you can lose data, be sure that you want to perform this action in the first place.
 
 **Force Terminate**
+
 If a Terminate fails for some reason (maybe a broken dispose script) then this forcibly deletes the virtual infrastructure. If you previously terminated or deleted an instance from the provider’s side, the instance may linger in Force Terminate in ElasticBox. Give it a couple of minutes then try to force-terminate again.
 
 **Delete**
+
 Click the delete icon after you Terminate or Force Terminate an instance. Until then, the box instance page and logs are retained in the ElasticBox database. But delete completely removes the box instance page.
 
 ### Contacting ElasticBox Support

@@ -37,6 +37,11 @@ A vCenter user needs minimum rights to be able to authenticate, deploy and manag
 | Scheduled task | <li>Create tasks</li><li>Run task</li> |
 | Tasks | <li>Create tasks</li> |
 | Virtual machine (Configuration) | <li>Add new disk</li><li>Add or remove device</li><li>Advanced</li><li>Change CPU count</li><li>Change resource</li><li>Memory</li><li>Modify device settings</li><li>Remove disk</li><li>Rename</li><li>Reset guest information</li><li>Set annotation</li><li>Settings</li> |
+| Virtual machine (Interaction) | <li>Answer question</li><li>Configure CD media</li><li>Power Off</li><li>Power On</li> |
+| Virtual machine (Inventory) | <li>Create from existing</li><li>Create new</li><li>Remove</li> |
+| Virtual machine (Provisioning) | <li>Customize</li><li>Deploy template</li><li>Modify customization specification</li><li>Read customization specifications</li> |
+
+
 
 ### Bootstrapping VM Templates with the ElasticBox Agent
 
@@ -54,11 +59,14 @@ Follow these steps to install elasticbox-init on a Linux template.
 
 4. Run this command with root privileges to install elasticbox-init:
 
-   `curl -L https://elasticbox.com/agent/linux/vsphere/template_customization_script.sh | sudo bash`
+   ```
+	 curl -L https://elasticbox.com/agent/linux/vsphere/template_customization_script.sh | sudo bash
+	 ```
 
    * **Note:** If running ElasticBox as an appliance, replace elasticbox.com with the appliance hostname or IP address.
 
 **Windows**
+
 Follow these steps to run a script that creates a scheduled task on a Windows Server 2012 template. When you deploy, ElasticBox clones this template and installs the agent using the scheduled task.
 
 **Steps**
