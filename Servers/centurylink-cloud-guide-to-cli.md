@@ -853,7 +853,7 @@ clc server update '{"ServerId": "CA3ABCDSVR01","Disks" : {"Keep" : [{ "DiskId": 
 ```
 **Increase Disk 0:3 size to 40 GB**
 ```
-./clc server update '{"ServerId": "CA3ABCDSVR01","Disks" : {"Keep" : [{ "DiskId": "0:0", "SizeGB": 1},{ "DiskId": "0:1", "SizeGB": 2},{ "DiskId": "0:2", "SizeGB": 16},{ "DiskId": "0:3", "SizeGB": 40}]}}'
+clc server update '{"ServerId": "CA3ABCDSVR01","Disks" : {"Keep" : [{ "DiskId": "0:0", "SizeGB": 1},{ "DiskId": "0:1", "SizeGB": 2},{ "DiskId": "0:2", "SizeGB": 16},{ "DiskId": "0:3", "SizeGB": 40}]}}'
 ```
 **Removing Disk 0:3 from the server (Backup data before removal)**
 ```
