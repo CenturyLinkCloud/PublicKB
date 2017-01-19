@@ -100,7 +100,7 @@ Select **Always on** if you don’t want to schedule anything. Shutdown powers o
 
     **Note:** Even if you don’t schedule an instance at the time of deploying, you can do so later. Once online, you can go to an instance page and in **Edit Details**, set the schedule.
 
-    Besides the user interface, you can automatically schedule instances using the instances API with a [POST](./instances.md) or [PUT](./instances.md) request.
+    Besides the user interface, you can automatically schedule instances using the instances API with a [POST](./instances-api.md) or [PUT](./instances-api.md) request.
 
 ### Handling Instance Lifecycle States
 
