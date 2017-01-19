@@ -15,7 +15,6 @@ Manage and perform actions on boxes.
 | GET /services/boxes | Gets the list of boxes that are accessible in the personal workspace. |
 | POST /services/boxes | Creates a new box. |
 
-
 **Perform Box Operations**
 
 | Resource | Description |
@@ -68,7 +67,7 @@ GET /services/boxes?ids=05b76b08-5238-4e05-ae5f-8ea8afe00378
 
 | Parameter | Style | Type | Description |
 |--------------|-----------|----------|--------------|
-| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <br> + public: Visible to ElasticBox users across all organizations. <br> + organization: Visible to all users in the organization where the box was created. <br> + workspace: By default, the box is visible only to members of the workspace where it was created. |
+| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <li>public: Visible to ElasticBox users across all organizations.</li> <li>organization: Visible to all users in the organization where the box was created.</li> <li>workspace: By default, the box is visible only to members of the workspace where it was created.</li> |
 | organization | plain | string | Organization to which the box belongs. |
 | updated | plain | string | Date of the last update. |
 | description | plain | string | Box description. |
@@ -272,7 +271,7 @@ Creates a new box in the personal workspace and gets the created box.
 |-----------|-------|------|-------------|
 | requirements | plain | array | Box requirements. |
 | owner | plain | string | Box owner, the user name for a personal workspace and the workspace name for a team workspace. |
-| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <br> + public: Visible to ElasticBox users across all organizations. <br> + organization: Visible to all users in the organization where the box was created. <br> + workspace: By default, the box is visible only to members of the workspace where it was created. |
+| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <li>public: Visible to ElasticBox users across all organizations.</li> <li>organization: Visible to all users in the organization where the box was created.</li> <li>workspace: By default, the box is visible only to members of the workspace where it was created.</li> |
 | name | plain | string | Box name. |
 | description | plain | string | Box description. |
 | icon | plain | string | Icon url. |
@@ -305,7 +304,7 @@ Body:
 
 | Parameter | Style | Type | Description |
 |-----------|-------|------|-------------|
-| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <br> + public: Visible to ElasticBox users across all organizations. <br> + organization: Visible to all users in the organization where the box was created. <br> + workspace: By default, the box is visible only to members of the workspace where it was created. |
+| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <li>public: Visible to ElasticBox users across all organizations.</li> <li>organization: Visible to all users in the organization where the box was created.</li> <li>workspace: By default, the box is visible only to members of the workspace where it was created.</li> |
 | organization | plain | string | Organization to which the box belongs. |
 | updated | plain | string | Date of the last update. |
 | description | plain | string | Box description. |
@@ -345,7 +344,7 @@ Body:
 }
 ```
 
-### GET /services/boxes/{box_id}**
+### GET /services/boxes/{box_id}
 
 Fetches an existing box, requires the specified id box_id.
 
@@ -373,7 +372,7 @@ ElasticBox-Release: 4.0
 
 | Parameter | Style | Type | Description |
 |-----------|-------|------|-------------|
-| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <br> + public: Visible to ElasticBox users across all organizations. <br> + organization: Visible to all users in the organization where the box was created. <br> *+ workspace: By default, the box is visible only to members of the workspace where it was created. |
+| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <li>public: Visible to ElasticBox users across all organizations.</li> <li>organization: Visible to all users in the organization where the box was created.</li> <li>workspace: By default, the box is visible only to members of the workspace where it was created.</li> |
 | organization | plain | string | Organization to which the box belongs. |
 | updated | plain | string | Date of the last update. |
 | description | plain | string | Box description. |
@@ -522,7 +521,7 @@ Body:
 
 | Parameter | Style | Type | Description |
 |-----------|-------|------|-------------|
-| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <br> + public: Visible to ElasticBox users across all organizations. <br> + organization: Visible to all users in the organization where the box was created. <br> + workspace: By default, the box is visible only to members of the workspace where it was created. |
+| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <li>public: Visible to ElasticBox users across all organizations.</li> <li>organization: Visible to all users in the organization where the box was created.</li> <li>workspace: By default, the box is visible only to members of the workspace where it was created.</li> |
 | organization | plain | string | Organization to which the box belongs. |
 | updated | plain | string | Date of the last update. |
 | description | plain | string | Box description. |
@@ -638,7 +637,7 @@ ElasticBox-Release: 4.0
 
 | Parameter | Style | Type | Description |
 |-----------|-------|------|-------------|
-| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <br> + public: Visible to ElasticBox users across all organizations. <br> + organization: Visible to all users in the organization where the box was created. <br> + workspace: By default, the box is visible only to members of the workspace where it was created. |
+| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <li>public: Visible to ElasticBox users across all organizations.</li> <li>organization: Visible to all users in the organization where the box was created.</li> <li>workspace: By default, the box is visible only to members of the workspace where it was created.</li> |
 | organization | plain | string | Organization to which the box belongs. |
 | updated | plain | string | Date of the last update. |
 | description | plain | string | Box description. |
@@ -864,7 +863,7 @@ ElasticBox-Release: 4.0
 | owner | plain | string | Box owner. |
 | id | plain | array | Box unique identificator. |
 | icon | plain | string | Box icon uri. |
-| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <br> + public: Visible to ElasticBox users across all organizations. <br> + organization: Visible to all users in the organization where the box was created. <br> + workspace: By default, the box is visible only to members of the workspace where it was created. |
+| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <li>public: Visible to ElasticBox users across all organizations.</li> <li>organization: Visible to all users in the organization where the box was created.</li> <li>workspace: By default, the box is visible only to members of the workspace where it was created.</li> |
 | organization | plain | string | Organization to which the box belongs. |
 | name | plain | string | Box name. |
 | created | plain | string | Creation date. |
@@ -962,7 +961,7 @@ Compares a box to the submitted box, requires the specified id box_id.
 | owner | plain | string | Box owner. |
 | id | plain | array | Box unique identificator. |
 | icon | plain | string | Box icon uri. |
-| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <br> + public: Visible to ElasticBox users across all organizations. <br> + organization: Visible to all users in the organization where the box was created. <br> + workspace: By default, the box is visible only to members of the workspace where it was created. |
+| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <li>public: Visible to ElasticBox users across all organizations.</li> <li>organization: Visible to all users in the organization where the box was created.</li> <li>workspace: By default, the box is visible only to members of the workspace where it was created.</li> |
 | organization | plain | string | Organization to which the box belongs. |
 | name | plain | string | Box name. |
 | created | plain | string | Creation date. |

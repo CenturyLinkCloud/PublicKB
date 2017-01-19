@@ -24,7 +24,7 @@ Once you install the appliance, set it up for others in your organization to use
 
 1. Log in to ElasticBox on the appliance
 
-2. Get the ElasticBox IP address from the appliance VM console.
+   * Get the ElasticBox IP address from the appliance VM console.
    ![appliance-setup1.png](../images/ElasticBox/appliance-setup1.png)
 
    Log in to ElasticBox with the default appliance admin credentials:
@@ -33,7 +33,8 @@ Once you install the appliance, set it up for others in your organization to use
 
    ![appliance-setup2.png](../images/ElasticBox/appliance-setup2.png)
 
-3. Set up ElasticBox.
+2. Set up ElasticBox.
+
    From the menu drop-down at the top right, click **Setup Console**. From this page, you can manage settings for the appliance.
    ![appliance-setup3.png](../images/ElasticBox/appliance-setup3.png)
 
@@ -44,7 +45,7 @@ Once you install the appliance, set it up for others in your organization to use
    * Optionally, enable outbound for notifications.
    * Optionally, switch the appliance device storage to increase storage or processing speed.
 
-4. Create a new admin account for your enterprise
+3. Create a new admin account for your enterprise
 
    Follow this step if using the ElasticBox Enterprise Edition.
    ElasticBox provides a default appliance admin account, which gives full access to manage the appliance and administer ElasticBox settings for your organization. This is like a master key, so use it only in case of emergency. To administer the appliance and ElasticBox on a regular basis, create and use a fresh admin account.

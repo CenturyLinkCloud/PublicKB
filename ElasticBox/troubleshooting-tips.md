@@ -67,19 +67,20 @@ An instance can’t update its state because the ElasticBox agent can’t connec
 
 **Solution**
 
-Restart the agent on the Linux or Windows instance:
-Linux:
+1. Restart the agent on the Linux or Windows instance:
 
-```
-sudo /usr/elasticbox/elasticbox restart
-```
+   Linux:
 
-Windows (run in command prompt):
+   ```
+   sudo /usr/elasticbox/elasticbox restart
+   ```
 
-```
-net stop elasticbox
-net start elasticbox
-```
+   Windows (run in command prompt):
+
+   ```
+   net stop elasticbox
+   net start elasticbox
+   ```
 
 2. In ElasticBox, open the lifecycle editor of the instance and click **Reinstall**. The instance should reflect the proper status.
 
@@ -97,13 +98,13 @@ When box scripts exit with 100 typically because of apt-get failures, the Elasti
 
 **Solution**
 
-Place the apt-get exit code in the file executing it and to the last line of executable code, add this:
+* Place the apt-get exit code in the file executing it and to the last line of executable code, add this:
 
-```
-[[ "$?" -eq "100" ]] && exit 1
-```
+   ```
+   [[ "$?" -eq "100" ]] && exit 1
+   ```
 
-Restart the agent on the Linux or Windows instance.
+* Restart the agent on the Linux or Windows instance.
 
 ### Instance is Still Terminating
 
@@ -145,5 +146,6 @@ When you configure the hostname, SSL certificate, or block device for the applia
 
 **Solution**
 
-[Contact support](mailto:support@elasticbox.com). We will walk you through recovering the appliance. Send us the appliance version number shown at the top of the setup console. And send us the logs you can download from the Logs section of the appliance setup console.
+[Contact support](mailto:support@elasticbox.com). We will walk you through recovering the appliance. Send us the appliance version number shown at the top of the [setup console](./appliance-initialsetup.md). And send us the logs you can download from the Logs section of the appliance setup console.
+
 Logs help us debug your appliance issues. The .log files include recent audit information like who did what, user connections, and contain the logs of all the services.

@@ -22,7 +22,7 @@ It takes 90 minutes to go through this tutorial. By the end, you’d know how to
 ### Before You Begin
 
 You need the following:
-* Get an ElasticBox account. You can sign up for free.
+* Get an ElasticBox account.
 * Fork a repository of this [GitHub project](https://github.com/ElasticBox/Easy-PHP-MySQL). You’ll use this to make some code changes and trigger a Jenkins build.
 * Build a [LAMP Stack box with a binding to a MySQL Database box](./lamp-stack-tutorial.md). Create and save a [deployment profile](./lamp-stack-tutorial.md) for both boxes, but don’t deploy.
 * [Install Jenkins server](./jenkins-elasticbox-setup.md) and [set it up](./jenkins-elasticbox-setup.md).

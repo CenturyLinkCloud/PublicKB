@@ -19,7 +19,7 @@ The entire quick start takes 30 minutes or less to complete. By the end, you’l
 * Deploy the LAMP Stack app
 
 ### Before You Begin
-* Sign in to ElasticBox or sign up, it’s free!
+* Sign in to ElasticBox.
 * Optionally, get a feel for building a basic Hello World box.
 * [Register an AWS cloud account](./using-your-aws-account.md) as a provider in ElasticBox.
 
