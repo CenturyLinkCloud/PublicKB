@@ -339,10 +339,20 @@ clc server list --all --filter name=CA3ABCDADM01 --query change-info.{created-by
 
 **Display power state and hostname**
 ```
-clc-cli --cols Name PowerState --config.ini servers list-all
+clc-cli --cols Name PowerState --config config.ini servers list-all
 ```
 ```
 clc server list --all --query details.{power-state,host-name}
+```
+
+**Display power state and Display Name**
+For Windows command:
+```
+clc server list --all --query Display-Name,details | findstr "DisplayName PowerState"
+```
+In Linux:
+```
+clc server list --all --query Display-Name,details | grep -e DisplayName -e PowerState
 ```
 
 **All paused servers (or started and stopped)**
@@ -833,6 +843,20 @@ T Framework 4.6 and 4.6.1 for Windows 8.1 and Server 2012 R2 for x64 (KB3135998)
     "Start_time": "2016-04-05 04:14:10",
     "Status": "COMPLETED"
 }
+```
+### Storage
+Currently only works on MacOSX and Linux CLI, fixes for Windows version is pending:
+**Adding a new 20GB disk to an existing server**
+```
+clc server update '{"ServerId": "CA3ABCDSVR01","Disks" : {"Keep" : [{ "DiskId": "0:0", "SizeGB": 1},{ "DiskId": "0:1", "SizeGB": 2},{ "DiskId": "0:2", "SizeGB": 16},{ "SizeGB": 20}]}}'
+```
+**Increase Disk 0:3 size to 40 GB**
+```
+./clc server update '{"ServerId": "CA3ABCDSVR01","Disks" : {"Keep" : [{ "DiskId": "0:0", "SizeGB": 1},{ "DiskId": "0:1", "SizeGB": 2},{ "DiskId": "0:2", "SizeGB": 16},{ "DiskId": "0:3", "SizeGB": 40}]}}'
+```
+**Removing Disk 0:3 from the server (Backup data before removal)**
+```
+clc server update '{"ServerId": "CA3ABCDSVR01","Disks" : {"Keep" : [{ "DiskId": "0:0", "SizeGB": 1},{ "DiskId": "0:1", "SizeGB": 2},{ "DiskId": "0:2", "SizeGB": 16}]}}'
 ```
 
 ### Simple Backup Service
