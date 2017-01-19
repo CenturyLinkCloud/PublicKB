@@ -23,6 +23,7 @@
   * [Relational Database Service](#relational-database-service)
   * [Intrusion Prevention Service](#intrusion-prevention-service)
   * [Patching Service](#patching-service)
+  * [Storage](#storage)
   * [Simple Backup Service](#simple-backup-service)
   * [Webhooks](#webhooks)
 * [Support](#support)
