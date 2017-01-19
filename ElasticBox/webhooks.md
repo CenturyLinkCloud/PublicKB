@@ -78,10 +78,10 @@ In this example, Infoblox provides a static IP and domain name for every instanc
    #!/usr/bin/python
    # -*- coding: utf-8 -*-
 
-   '''
    ElasticBox Confidential
    Copyright (c) 2013 All Rights Reserved, ElasticBox Inc.
 
+   '''
    NOTICE:  All information contained herein is, and remains the property
    of ElasticBox. The intellectual and technical concepts contained herein are
    proprietary and may be covered by U.S. and Foreign Patents, patents in process,
@@ -95,7 +95,6 @@ In this example, Infoblox provides a static IP and domain name for every instanc
    import requests
 
    from bottle import route, run, request
-
 
    def allocate_address_with_infoblox(network, name):
        net_url = \
@@ -138,14 +137,12 @@ In this example, Infoblox provides a static IP and domain name for every instanc
                'preferred_nameserver': '8.8.8.8',
                }
 
-
    def search(items, name):
        for item in items:
            if item['name'] == name:
                return item['value']
 
        return ''
-
 
    @route('/requestIP', method='POST')
    def requestIP():
@@ -190,7 +187,6 @@ In this example, Infoblox provides a static IP and domain name for every instanc
                    }
 
        return machine
-
 
    @route('/test//', method='GET')
    def testIP(network, name):

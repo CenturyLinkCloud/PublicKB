@@ -1089,7 +1089,7 @@ In this sample request, the instance is tagged and scheduled to terminate at a g
 | icon | string | Instance icon uri. |
 | id | array | Instance unique identifier. |
 | schema | string | Instance schema uri. |
-| lease | array | Schedules an instance with two parameters:<li>expire. Specifies in UTC format YYYY-MM-DD HH:MM:SS.SSSSSS, the time and date for stopping an instance. It’s required only when an instance is set to terminate or shut down.</li><li>operation. Specifies an instance to stop with **shutdown** or **terminate**. When not scheduled, the instance is set to **alwayson**.</li> |
+| lease | array | Schedules an instance with two parameters:<li>released. Is a true or false boolean value. False means that the operation scheduled on the instance is not executed yet.</li><li>expire. Specifies in UTC format YYYY-MM-DD HH:MM:SS.SSSSSS, the time and date for stopping an instance. It’s required only when an instance is set to terminate or shut down.</li><li>operation. Specifies an instance to stop with **shutdown** or **terminate**. When not scheduled, the instance is set to **alwayson**.</li> |
 
 ```
 {

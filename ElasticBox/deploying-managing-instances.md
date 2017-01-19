@@ -31,8 +31,10 @@ An instance is an instantiated version of a box launched to provider’s virtual
     **Note:** Don’t find a box you’re looking for? Check if you’re in the right workspace. Remember that you may not have access if the box is no longer shared with you.
 
 3. In the New Instance dialog, specify the environment name and deployment profile.
-**Environment.** Give a name to recognize the instance.
-**Deployment Profile.** Select a previously created deployment profile or create a new one. For details, see [Creating a Deployment Profile](./deploying-managing-instances.md).
+
+   **Environment.** Give a name to recognize the instance.
+
+   **Deployment Profile.** Select a previously created deployment profile or create a new one. For details, see Creating a Deployment Profile.
 
 4. In the New Instance dialog, pass deployment parameters under **Variables**. Before launching, you can override and provide fresh values.
 

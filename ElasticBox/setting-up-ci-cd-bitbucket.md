@@ -37,6 +37,7 @@ To add ElasticBox build steps in Jenkins jobs, go to the job page. Under Build, 
     ![jenkins-bitbucket-3.png](../images/ElasticBox/jenkins-bitbucket-3.png)
 
 3. We will need an Apache Tomcat 7.
+
     In order to keep it simple we decided to create a tomcat box in ElasticBox to deploy the apache tomcat server.
 
     ![jenkins-bitbucket-4.png](../images/ElasticBox/jenkins-bitbucket-4.png)
@@ -50,12 +51,15 @@ Below is a diagram of workflow and how all the components work together.
 
 1. Set up the Jenkins instance (in our case we will deploy the box we have created previously).
 
-    * Deploy the box.
+   * Deploy the box.
 
-    ![jenkins-bitbucket-6.png](../images/ElasticBox/jenkins-bitbucket-6.png)
+   ![jenkins-bitbucket-6.png](../images/ElasticBox/jenkins-bitbucket-6.png)
 
-    * Choose the policy box.
-    ![jenkins-bitbucket-7.png](../images/ElasticBox/jenkins-bitbucket-7.png)
+   * Choose the policy box.
+
+   ![jenkins-bitbucket-7.png](../images/ElasticBox/jenkins-bitbucket-7.png)
+
+   * Deployed.
 
 2. Configure the ElasticBox cloud in the Jenkins Manager section.
 
@@ -134,7 +138,7 @@ Below is a diagram of workflow and how all the components work together.
 
     ![jenkins-bitbucket-24.png](../images/ElasticBox/jenkins-bitbucket-24.png)
 
- 9. All the pieces working together.
+9. All the pieces working together.
 
     ![jenkins-bitbucket-25.png](../images/ElasticBox/jenkins-bitbucket-25.png)
 

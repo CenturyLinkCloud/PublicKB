@@ -30,241 +30,236 @@ Follow these steps to build and deploy Jenkins server from a box. The box instal
 	![integrate-jenkins1](../images/ElasticBox/integrate-jenkins1.png)
 
 2. Add the following variables to store Jenkins server deployment values.
-Provide your own Git repository through a text variable called GIT_REPOSITORY_URL.
+   * Provide your own Git repository through a text variable called GIT_REPOSITORY_URL.
 
 	![integrate-jenkins2](../images/ElasticBox/integrate-jenkins2.png)
 
-3. Pass the GitHub access token in a text variable.
+   * Pass the GitHub access token in a text variable.
 
    ![integrate-jenkins3](../images/ElasticBox/integrate-jenkins3.png)
 
-   To get it, sign in to your [GitHub](https://github.com/) account. Under settings, go to **Applications** > **Personal access tokens** > **Generate new token**. Describe why you need the token. Under scope, select **repo** and **repo: status**. Then click **Generate Token**. Copy and paste it as shown.
+   To get it, sign in to your [GitHub account](https://github.com/). Under settings, go to **Applications** > **Personal access tokens** > **Generate new token**. Describe why you need the token. Under scope, select **repo** and **repo: status**. Then click **Generate Token**. Copy and paste it as shown.
 
-   Provide your GitHub project URL in a text variable called GITHUB_PROJECT_URL.
+   * Provide your GitHub project URL in a text variable called GITHUB_PROJECT_URL.
 
    ![integrate-jenkins4](../images/ElasticBox/integrate-jenkins4.png)
 
-   Provide your GitHub username as a text variable called GITHUB_USER.
+   * Provide your GitHub username as a text variable called GITHUB_USER.
 
    ![integrate-jenkins5](../images/ElasticBox/integrate-jenkins5.png)
 
-   Open HTTP port 8080 on the Jenkins server through a port variable called HTTP to allow Internet traffic.
+   * Open HTTP port 8080 on the Jenkins server through a port variable called HTTP to allow Internet traffic.
 
    ![integrate-jenkins6](../images/ElasticBox/integrate-jenkins6.png)
 
-Refer to the ElasticBox, Git, and GitHub plugin dependencies in a text variable called PLUGINS.
+   * Refer to the ElasticBox, Git, and GitHub plugin dependencies in a text variable called PLUGINS.
 Enter this value:
 
-```
-elasticbox git github
+   ```
+   elasticbox git github
 
-```
+   ```
 
-![integrate-jenkins7](../images/ElasticBox/integrate-jenkins7.png)
+   ![integrate-jenkins7](../images/ElasticBox/integrate-jenkins7.png)
 
-Add a plugin that triggers GitHub to push pull requests.
+   * Add a plugin that triggers GitHub to push pull requests.
 
-![integrate-jenkins8](../images/ElasticBox/integrate-jenkins8.png)
+   ![integrate-jenkins8](../images/ElasticBox/integrate-jenkins8.png)
 
-Copy, paste this script in a text file, save in XML, and upload to a file variable called GITHUB_PLUGIN_CONFIG.
+   Copy, paste this script in a text file, save in XML, and upload to a file variable called GITHUB_PLUGIN_CONFIG.
 
-```
+   ```
+   <?xml version='1.0' encoding='UTF-8'?>
+    <com.cloudbees.jenkins.GitHubPushTrigger_-DescriptorImpl plugin="github@1.9.1">
+       <manageHook>true</manageHook>
+       <credentials>
+           <com.cloudbees.jenkins.Credential>
+               <username>\{{ GITHUB_USER }}\</username>
+               <apiUrl>https://api.github.com</apiUrl>
+               <oauthAccessToken>\{{ GITHUB_ACCESS_TOKEN }}\</oauthAccessToken>
+           </com.cloudbees.jenkins.Credential>
+       </credentials>
+   </com.cloudbees.jenkins.GitHubPushTrigger_-DescriptorImpl>
+   ```
+   * Add the merge build job template as a file variable called MERGE_JOB.
 
-<?xml version='1.0' encoding='UTF-8'?>
-<com.cloudbees.jenkins.GitHubPushTrigger_-DescriptorImpl plugin="github@1.9.1">
-    <manageHook>true</manageHook>
-    <credentials>
-        <com.cloudbees.jenkins.Credential>
-            <username>\{{ GITHUB_USER }}\</username>
-            <apiUrl>https://api.github.com</apiUrl>
-            <oauthAccessToken>\{{ GITHUB_ACCESS_TOKEN }}\</oauthAccessToken>
-        </com.cloudbees.jenkins.Credential>
-    </credentials>
-</com.cloudbees.jenkins.GitHubPushTrigger_-DescriptorImpl>
+   ![integrate-jenkins9](../images/ElasticBox/integrate-jenkins9.png)
 
-```
-Add the merge build job template as a file variable called MERGE_JOB.
+   Copy, paste the script in a text file, save in XML, and upload as shown.
 
-![integrate-jenkins9](../images/ElasticBox/integrate-jenkins9.png)
+   ```
+   <project>
+       <actions/>
+       <description/>
+       <keepDependencies>false</keepDependencies>
+       <properties>
+           <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.9.1">
+               <projectUrl>\{{ GITHUB_PROJECT_URL }}\</projectUrl>
+           </com.coravy.hudson.plugins.github.GithubProjectProperty>
+       </properties>
+       <scm class="hudson.plugins.git.GitSCM" plugin="git@2.2.7">
+           <configVersion>2</configVersion>
+           <userRemoteConfigs>
+               <hudson.plugins.git.UserRemoteConfig>
+                   <name>origin</name>
+                   <refspec>+refs/heads/*:refs/remotes/origin/*</refspec>
+                   <url>\{{ GIT_REPOSITORY_URL }}\</url>
+               </hudson.plugins.git.UserRemoteConfig>
+           </userRemoteConfigs>
+           <branches>
+               <hudson.plugins.git.BranchSpec>
+                   <name>master</name>
+               </hudson.plugins.git.BranchSpec>
+           </branches>
+           <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+           <submoduleCfg class="list"/>
+           <extensions/>
+       </scm>
+       <canRoam>true</canRoam>
+       <disabled>true</disabled>
+       <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+       <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+       <triggers>
+           <com.cloudbees.jenkins.GitHubPushTrigger plugin="github@1.9.1">
+               <spec/>
+           </com.cloudbees.jenkins.GitHubPushTrigger>
+       </triggers>
+       <concurrentBuild>false</concurrentBuild>
+       <builders/>
+       <publishers/>
+       <buildWrappers/>
+   </project>
+   ```
 
-Copy, paste the script in a text file, save in XML, and upload as shown.
+   * Add the pull request job template as a file variable called PULL_REQUEST_JOB.
 
-```
-<project>
-    <actions/>
-    <description/>
-    <keepDependencies>false</keepDependencies>
-    <properties>
-        <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.9.1">
-            <projectUrl>\{{ GITHUB_PROJECT_URL }}\</projectUrl>
-        </com.coravy.hudson.plugins.github.GithubProjectProperty>
-    </properties>
-    <scm class="hudson.plugins.git.GitSCM" plugin="git@2.2.7">
-        <configVersion>2</configVersion>
-        <userRemoteConfigs>
-            <hudson.plugins.git.UserRemoteConfig>
-                <name>origin</name>
-                <refspec>+refs/heads/*:refs/remotes/origin/*</refspec>
-                <url>\{{ GIT_REPOSITORY_URL }}\</url>
-            </hudson.plugins.git.UserRemoteConfig>
-        </userRemoteConfigs>
-        <branches>
-            <hudson.plugins.git.BranchSpec>
-                <name>master</name>
-            </hudson.plugins.git.BranchSpec>
-        </branches>
-        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
-        <submoduleCfg class="list"/>
-        <extensions/>
-    </scm>
-    <canRoam>true</canRoam>
-    <disabled>true</disabled>
-    <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
-    <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-    <triggers>
-        <com.cloudbees.jenkins.GitHubPushTrigger plugin="github@1.9.1">
-            <spec/>
-        </com.cloudbees.jenkins.GitHubPushTrigger>
-    </triggers>
-    <concurrentBuild>false</concurrentBuild>
-    <builders/>
-    <publishers/>
-    <buildWrappers/>
-</project>
-```
+   ![integrate-jenkins10](../images/ElasticBox/integrate-jenkins10.png)
 
-Add the pull request job template as a file variable called PULL_REQUEST_JOB.
+   Copy, paste the script in a text file, save in XML, and upload as shown.
 
-![integrate-jenkins10](../images/ElasticBox/integrate-jenkins10.png)
+   ```
+   <project>
+       <actions/>
+       <description/>
+      <keepDependencies>false</keepDependencies>
+      <properties>
+          <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.9.1">
+              <projectUrl>\{{ GITHUB_PROJECT_URL }}\</projectUrl>
+          </com.coravy.hudson.plugins.github.GithubProjectProperty>
+      </properties>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@2.2.7">
+          <configVersion>2</configVersion>
+          <userRemoteConfigs>
+              <hudson.plugins.git.UserRemoteConfig>
+                  <name>origin</name>
+                  <refspec>+refs/pull/*:refs/remotes/origin/pr/*</refspec>
+                  <url>\{{ GIT_REPOSITORY_URL }}\</url>
+              </hudson.plugins.git.UserRemoteConfig>
+          </userRemoteConfigs>
+          <branches>
+              <hudson.plugins.git.BranchSpec>
+                  <name>${PR_COMMIT}</name>
+              </hudson.plugins.git.BranchSpec>
+          </branches>
+          <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+          <submoduleCfg class="list"/>
+          <extensions/>
+      </scm>
+      <canRoam>true</canRoam>
+      <disabled>true</disabled>
+      <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+      <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+      <triggers>
+          <com.elasticbox.jenkins.triggers.PullRequestBuildTrigger plugin="elasticbox@0.9.7">
+            <spec></spec>
+            <triggerPhrase>.*test\W+this\W+please.*</triggerPhrase>
+            <whitelist></whitelist>
+          </com.elasticbox.jenkins.triggers.PullRequestBuildTrigger>
+      </triggers>
+      <concurrentBuild>false</concurrentBuild>
+      <builders/>
+      <publishers>
+          <com.cloudbees.jenkins.GitHubCommitNotifier plugin="github@1.9.1"/>
+      </publishers>
+      <buildWrappers/>
+  </project>
+  ```
 
-Copy, paste the script in a text file, save in XML, and upload as shown.
+3. Add the following events to install Jenkins server and the plugins.
+   * Install Jenkins. Copy, paste the script in the install event and save.
 
-```
-<project>
-    <actions/>
-    <description/>
-    <keepDependencies>false</keepDependencies>
-    <properties>
-        <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.9.1">
-            <projectUrl>\{{ GITHUB_PROJECT_URL }}\</projectUrl>
-        </com.coravy.hudson.plugins.github.GithubProjectProperty>
-    </properties>
-    <scm class="hudson.plugins.git.GitSCM" plugin="git@2.2.7">
-        <configVersion>2</configVersion>
-        <userRemoteConfigs>
-            <hudson.plugins.git.UserRemoteConfig>
-                <name>origin</name>
-                <refspec>+refs/pull/*:refs/remotes/origin/pr/*</refspec>
-                <url>\{{ GIT_REPOSITORY_URL }}\</url>
-            </hudson.plugins.git.UserRemoteConfig>
-        </userRemoteConfigs>
-        <branches>
-            <hudson.plugins.git.BranchSpec>
-                <name>${PR_COMMIT}</name>
-            </hudson.plugins.git.BranchSpec>
-        </branches>
-        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
-        <submoduleCfg class="list"/>
-        <extensions/>
-    </scm>
-    <canRoam>true</canRoam>
-    <disabled>true</disabled>
-    <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
-    <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-    <triggers>
-        <com.elasticbox.jenkins.triggers.PullRequestBuildTrigger plugin="elasticbox@0.9.7">
-          <spec></spec>
-          <triggerPhrase>.*test\W+this\W+please.*</triggerPhrase>
-          <whitelist></whitelist>
-        </com.elasticbox.jenkins.triggers.PullRequestBuildTrigger>
-    </triggers>
-    <concurrentBuild>false</concurrentBuild>
-    <builders/>
-    <publishers>
-        <com.cloudbees.jenkins.GitHubCommitNotifier plugin="github@1.9.1"/>
-    </publishers>
-    <buildWrappers/>
-</project>
-```
+   ```
+   #/bin/bash
 
-Add the following events to install Jenkins server and the plugins.
-Install Jenkins. Copy, paste the script in the install event and save.
+   # For certain images In some clouds like GCE, packages are being installed by the provider at this point, so we need to wait for the installation to finish
+   WAIT_SECONDS=0
+   while [[ -f /var/lib/apt/lists/lock && ${WAIT_SECONDS} -lt 180 ]]
+   do
+       sleep 5
+       WAIT_SECONDS=$(( WAIT_SECONDS + 5 ))
+   done
 
-```
-#/bin/bash
+   # Install Jenkins and Git
+   curl -ks https://jenkins-ci.org/debian-stable/jenkins-ci.org.key | apt-key -y add -
+   echo deb http://pkg.jenkins-ci.org/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list
 
-# For certain images In some clouds like GCE, packages are being installed by the provider at this point, so we need to wait for the installation to finish
-WAIT_SECONDS=0
-while [[ -f /var/lib/apt/lists/lock && ${WAIT_SECONDS} -lt 180 ]]
-do
-    sleep 5
-    WAIT_SECONDS=$(( WAIT_SECONDS + 5 ))
-done
+   apt-get -y update
+   apt-get -y --force-yes install jenkins git
+   ```
 
-# Install Jenkins and Git
-curl -ks https://jenkins-ci.org/debian-stable/jenkins-ci.org.key | apt-key -y add -
-echo deb http://pkg.jenkins-ci.org/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list
+   * Install the plugins, the build job templates, and configure GitHub plugins with username, access token, and repository URL. Copy, paste the script in the post_configure event and save.
 
+   ```
+   #!/bin/bash
 
-apt-get -y update
-apt-get -y --force-yes install jenkins git
-```
+   set -e
 
-Install the plugins, the build job templates, and configure GitHub plugins with username, access token, and repository URL. Copy, paste the script in the post_configure event and save.
+   function install_template() {
+       SOURCE_URL=${1}
+       DESTINATION_PATH=${2}
+       curl -ks ${SOURCE_URL} -o ${DESTINATION_PATH}
+       elasticbox config -i ${DESTINATION_PATH} -o ${DESTINATION_PATH}
+       chown jenkins:jenkins ${DESTINATION_PATH}
+   }
 
-```
-#!/bin/bash
+   JENKINS_HOME=~jenkins
 
-set -e
+   # Install plugins specified in variable PLUGINS
+   PLUGINS="\{{ PLUGINS }}\"
+   if [ -n "${PLUGINS}" ]
+   then
+       # Get the latest plugin info for update center
+       mkdir -p ${JENKINS_HOME}/updates
+       curl -Ls http://updates.jenkins-ci.org/update-center.json | sed '1d;$d' > ${JENKINS_HOME}/updates/default.json
+       chown -R jenkins:jenkins ${JENKINS_HOME}/updates
 
-function install_template() {
-    SOURCE_URL=${1}
-    DESTINATION_PATH=${2}
-    curl -ks ${SOURCE_URL} -o ${DESTINATION_PATH}
-    elasticbox config -i ${DESTINATION_PATH} -o ${DESTINATION_PATH}
-    chown jenkins:jenkins ${DESTINATION_PATH}
-}
+       # Restart Jenkins and wait for it to be up
+       service jenkins restart
+       sleep 30
 
+       for PLUGIN_NAME in ${PLUGINS}
+       do
+           echo Installing plugin ${PLUGIN_NAME}
+           java -jar /var/cache/jenkins/war/WEB-INF/jenkins-cli.jar -s http://127.0.0.1:8080/ install-plugin ${PLUGIN_NAME}
+           echo Installed plugin ${PLUGIN_NAME}
+       done
+   fi
 
-JENKINS_HOME=~jenkins
+   # Configure GitHub plugin with GitHub user ID and access token specified in the variable GITHUB_USER and GITHUB_ACCESS_TOKEN
+   install_template \{{ GITHUB_PLUGIN_CONFIG }}\ ${JENKINS_HOME}/com.cloudbees.jenkins.GitHubPushTrigger.xml
 
-# Install plugins specified in variable PLUGINS
-PLUGINS="\{{ PLUGINS }}\"
-if [ -n "${PLUGINS}" ]
-then
-    # Get the latest plugin info for update center
-    mkdir -p ${JENKINS_HOME}/updates
-    curl -Ls http://updates.jenkins-ci.org/update-center.json | sed '1d;$d' > ${JENKINS_HOME}/updates/default.json
-    chown -R jenkins:jenkins ${JENKINS_HOME}/updates
+   # Install CI/CD job templates
+   mkdir -p ${JENKINS_HOME}/jobs/pull-request
+   install_template \{{ PULL_REQUEST_JOB }}\ ${JENKINS_HOME}/jobs/pull-request/config.xml
 
-    # Restart Jenkins and wait for it to be up
-    service jenkins restart
-    sleep 30
+   mkdir ${JENKINS_HOME}/jobs/merge
+   install_template \{{ MERGE_JOB }}\ ${JENKINS_HOME}/jobs/merge/config.xml
 
-    for PLUGIN_NAME in ${PLUGINS}
-    do
-        echo Installing plugin ${PLUGIN_NAME}
-        java -jar /var/cache/jenkins/war/WEB-INF/jenkins-cli.jar -s http://127.0.0.1:8080/ install-plugin ${PLUGIN_NAME}
-        echo Installed plugin ${PLUGIN_NAME}
-    done
-fi
+   chown -R jenkins:jenkins ${JENKINS_HOME}/jobs
 
-
-# Configure GitHub plugin with GitHub user ID and access token specified in the variable GITHUB_USER and GITHUB_ACCESS_TOKEN
-install_template \{{ GITHUB_PLUGIN_CONFIG }}\ ${JENKINS_HOME}/com.cloudbees.jenkins.GitHubPushTrigger.xml
-
-# Install CI/CD job templates
-mkdir -p ${JENKINS_HOME}/jobs/pull-request
-install_template \{{ PULL_REQUEST_JOB }}\ ${JENKINS_HOME}/jobs/pull-request/config.xml
-
-mkdir ${JENKINS_HOME}/jobs/merge
-install_template \{{ MERGE_JOB }}\ ${JENKINS_HOME}/jobs/merge/config.xml
-
-chown -R jenkins:jenkins ${JENKINS_HOME}/jobs
-
-# Restart Jenkins server
-service jenkins restart
-```
+   # Restart Jenkins server
+   service jenkins restart
+   ```
 
 ### Deploy the Jenkins Server Box
 
