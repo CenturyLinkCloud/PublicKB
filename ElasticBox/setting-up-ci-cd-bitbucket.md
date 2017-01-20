@@ -86,7 +86,7 @@ Below is a diagram of workflow and how all the components work together.
 
     ![jenkins-bitbucket-14.png](../images/ElasticBox/jenkins-bitbucket-14.png)
 
-   In the previous schema you saw that we selected the Tomcat box with its latest version. We also added the tag “tomcat” to that instance in order to easily locate them in our cloud. In this case, we have selected to deploy this box in the Google Compute Engine (GCE) using the policy box below:
+    In the previous schema you saw that we selected the Tomcat box with its latest version. We also added the tag “tomcat” to that instance in order to easily locate them in our cloud. In this case, we have selected to deploy this box in the Google Compute Engine (GCE) using the policy box below:
 
     ![jenkins-bitbucket-15.png](../images/ElasticBox/jenkins-bitbucket-15.png)
 
@@ -128,19 +128,19 @@ Below is a diagram of workflow and how all the components work together.
 
     * Notice that it finally deploys the war package in the Tomcat server.
 
-   ![jenkins-bitbucket-23.png](../images/ElasticBox/jenkins-bitbucket-23.png)
+    ![jenkins-bitbucket-23.png](../images/ElasticBox/jenkins-bitbucket-23.png)
 
     * And it works!!
 
-   ![jenkins-bitbucket-24.png](../images/ElasticBox/jenkins-bitbucket-24.png)
+    ![jenkins-bitbucket-24.png](../images/ElasticBox/jenkins-bitbucket-24.png)
 
  9. All the pieces working together.
 
-     ![jenkins-bitbucket-25.png](../images/ElasticBox/jenkins-bitbucket-25.png)
+    ![jenkins-bitbucket-25.png](../images/ElasticBox/jenkins-bitbucket-25.png)
 
 10. Tomcat deployed with ElasticBox Jenkins plugin.
 
-     ![jenkins-bitbucket-26.png](../images/ElasticBox/jenkins-bitbucket-26.png)
+    ![jenkins-bitbucket-26.png](../images/ElasticBox/jenkins-bitbucket-26.png)
 
 ### Reacting to changes in Bitbucket
 In our previous case we spent some time setting up our continuous integration environment. We’ve started using Jenkins, Bitbucket and the ElasticBox Jenkins plugin, and so far we’re pretty happy. The next goal for us is to set up a Bitbucket service hook to trigger our builds.
@@ -241,7 +241,7 @@ The build result notification:
 
 ![jenkins-bitbucket-48.png](../images/ElasticBox/jenkins-bitbucket-48.png)
 
-By means of simplicity we decided to use the plugins combination that you saw above, but there are some other ways to integrate Bitbucket and Jenkins.
+For means of simplicity we decided to use the plugins combination that you saw above, but there are some other ways to integrate Bitbucket and Jenkins.
 
 * [Post services in Bitbucket](https://confluence.atlassian.com/bitbucket/post-service-management-223216518.html) (push based).
 
@@ -258,8 +258,11 @@ By means of simplicity we decided to use the plugins combination that you saw ab
 * With other combination of plugins you could manage the pull request lifecycle too. For example using these plugins (having Stash but not Bitbucket):
 
     1. [Git Jenkins plugin](https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin)
+
     2. [Pre SCM Buildstep Jenkins plugin](https://wiki.jenkins-ci.org/display/JENKINS/pre-scm-buildstep)
+
     3. [Stash Notifier Jenkins plugin](https://wiki.jenkins-ci.org/display/JENKINS/StashNotifier+Plugin)
+
     4. [Pull Request Notifier Stash plugin](https://marketplace.atlassian.com/plugins/se.bjurr.prnfs.pull-request-notifier-for-stash/server/overview)
 
 You can see all details [here](https://christiangalsterer.wordpress.com/2015/04/23/continuous-integration-for-pull-requests-with-jenkins-and-stash/).

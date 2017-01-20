@@ -15,7 +15,6 @@
     "ElasticBox",
     "General",
     "LBaaS",
-    "Mail",
     "Managed Services",
     "Marketplace",
     "Network",

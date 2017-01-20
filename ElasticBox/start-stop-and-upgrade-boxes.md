@@ -21,7 +21,7 @@ The ElasticBox agent executes and stores the output of the event scripts in a de
 
 ### Event Types
 
-There are five types of events on a box. Each event executes depending on the [action](../ElasticBox/instances.md) triggered on a box instance.
+There are five types of events on a box. Each event executes depending on the [action](./instances.md) triggered on a box instance.
 
 **Install**
 
@@ -57,11 +57,11 @@ It’s good practice to use exit error codes in events to indicate if a task ran
 
 In both Windows and Linux event shell scripts, ElasticBox understands three types of exit codes that affect the instance state.
 
-|  Use Code  |  To indicate  |   Description   |  Instance State  |
-|------------|---------------|-----------------|------------------|
+| Use Code | To indicate | Description | Instance State |
+|----------|-------------|-------------|----------------|
 | 0 | Success | Script returns a zero. | Instance is online and available. |
-| Non-zero | Failure | Elasticbox fails the event script that returned non-zero. | Instance is unavailable. |
-| 100 | Reboot | Indicates that you want to reboot the service or virtual macine. The agent goes into sleep mode waiting for the reboot to complete. To reboot, run the reboot command for the OS type. For example, in Linux it is reboot, in Windows PowerShell it is Restart-computer. | Instance state unaffected. |
+| Non-zero | Failure | ElasticBox fails the event script that returned non-zero. | Instance is unavailable. |
+| 100 | Reboot | Indicates that you want to reboot the service or virtual machine. The agent goes into sleep mode waiting for the reboot to complete. To reboot, run the reboot command for the OS type. For example, in Linux it is reboot, in Windows PowerShell it is Restart-computer. | Instance state unaffected. |
 
 **Examples**
 
@@ -118,10 +118,8 @@ trap {
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
-For issues related to API calls, send the request body along with details related to the issue.
-
-In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
-Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
+* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
+* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

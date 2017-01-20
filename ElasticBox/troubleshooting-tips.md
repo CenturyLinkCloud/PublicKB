@@ -29,6 +29,7 @@ When you trigger a lifecycle operation on an instance, it goes into a processing
 Install the agent on the instance to bring it online. Then re-run the lifecycle operation.
 
 1. Connect to the instance by SSH or RDP.
+
 2. Install the agent. The command uses the token of the older agent to connect to the instance.
 Linux instances deployed from the ElasticBox cloud service:
 
@@ -123,6 +124,7 @@ Something causes the agent to hang even though it’s running on the instance.
 **Solution**
 
 1. Log in to the instance and kill the agent.
+
 2. Redeploy the instance from the lifecycle editor in ElasticBox. The agent should start deploying.
 
 ### Quick Start Box Not Installing Properly

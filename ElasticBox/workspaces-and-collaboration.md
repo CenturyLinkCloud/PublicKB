@@ -35,6 +35,7 @@ This brings up the New Workspace dialog. Here you can upload an icon for the new
 When you add a user, they automatically get access to the workspace and any assets it contains, such as providers, boxes, and instances.
 
 **Managing Workspaces**
+
 When you create a workspace, you are its owner and as such you can edit and manage it.
 To edit a workspace you created, click the pencil icon for the workspace.
 ![workspace-and-sharing3.png](../images/ElasticBox/workspace-and-sharing3.png)
@@ -56,14 +57,17 @@ When you create a box, launch an instance, or add a provider you own the asset b
    ![workspace-and-sharing7.png](../images/ElasticBox/workspace-and-sharing7.png)
 
 **Stop Sharing**
+
 To discontinue sharing with a user or workspace, open the sharing dialog, and remove them.
 ![workspace-and-sharing8.png](../images/ElasticBox/workspace-and-sharing8.png)
 
 **Transfer Ownership**
+
 Sometimes, because your role in the organization changes, you may want to transfer an asset you own to another user or workspace. To change owners, open the sharing dialog, and make another user or workspace the owner. An asset can only have one owner at a time.
 ![workspace-and-sharing9.png](../images/ElasticBox/workspace-and-sharing9.png)
 
 **Sharing Boxes**
+
 When you want others to change your current box configuration or collaborate with you to define a better box, give them edit access to it. Give view access only when they need to consume your box configuration, but not make changes, like deploying for example.
 
 View only gives them access to versions of the box, not the current state of its configuration, which may or may not be stable. When stable, the scripts and variables are working, version the box and then give view access to those that need it.
@@ -76,11 +80,13 @@ In view mode, users automatically get access to all versions of a box, but canâ€
 * Pull a box version into the instance lifecycle editor to update configuration.
 
 **Sharing Instances**
+
 A couple of reasons to share instances is to let others use it or get help with testing or debugging for example. If itâ€™s the latter, you can get help by giving them edit access to your instance. That lets them make changes to your instance configuration.
 
 Also you may give view access to make an instance available for others to use, say as a binding. For example, although view access to a database instance prevents developers from making changes to the database configuration, they can bind to it and run tests.
 
 **Sharing Providers**
+
 Sharing providers has its benefits. You can give view access to company-approved providers and let users deploy to that particular provider. When teams deploy to a shared provider, you can track org-wide usage and compliance cohesively. Provider accounts can be shared only in the Enterprise Edition.
 
 ### Contacting ElasticBox Support
