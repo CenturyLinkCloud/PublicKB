@@ -1,5 +1,5 @@
 {{{
-  "title": "Partner Cloud: Getting Started With Azure Customer",
+  "title": "Partner Cloud: Getting Started With A New Azure Customer",
   "date": "01-16-2017",
   "author": "Ben Swoboda",
   "attachments": [],
