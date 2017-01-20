@@ -1,5 +1,5 @@
 {{{
-"title": "Using Azure",
+"title": "Using Classic Azure",
 "date": "09-01-2016",
 "author": "",
 "attachments": [],
@@ -8,7 +8,15 @@
 
 ### Using Azure
 
-Microsoft Azure hosts applications in virtual machines and in cloud services via Web, Worker roles. ElasticBox supports deploying to all three models through the [Virtual Machine Role](./using-azure.md), [Web and Worker roles](./using-azure.md). In addition, we support [Microsoft SQL Database Service](./using-azure.md) through Azure. Take a look at the [benefits of deploying to Azure using ElasticBox](./using-azure.md).
+There are two different flavors of Azure and ElasticBox has providers for both. This document is in reference to Classic Azure.
+
+**Name** | **URL of Portal** | **Name of Related ElasticBox Provider** | **KB article**
+--- | --- | --- | ---
+Classic Azure | https://manage.windowsazure.com | Microsoft Azure | This document
+Microsoft Azure | https://portal.azure.com | Azure Resource Manager | <link>
+
+
+Microsoft's Classic Azure hosts applications in virtual machines and in cloud services via Web, Worker roles. ElasticBox supports deploying to all three models through the [Virtual Machine Role](./using-azure.md), [Web and Worker roles](./using-azure.md). In addition, we support [Microsoft SQL Database Service](./using-azure.md) through Classic Azure. Take a look at the [benefits of deploying to Azure using ElasticBox](./using-azure.md).
 
 **Note:** If you’re running ElasticBox as an appliance in your private datacenter, you can deploy only to the virtual machine role.
 To learn about Azure hosting services, see the [Azure help](https://azure.microsoft.com/en-us/documentation/articles/choose-web-site-cloud-service-vm/).

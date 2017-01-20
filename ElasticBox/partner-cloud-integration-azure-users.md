@@ -24,9 +24,9 @@ An existing [ARM Provider created by ElasticBox](../ElasticBox/partner-cloud-int
 
 To obtain a user, please submit a support request via one of the following methods:
 
-* Call 844-874-5167. This is a US domestic toll free number. (Please do not call if you are providing a list of users.)
-* Email CloudSupport@centurylink.com
-* Submit a support request via MSP Portal
+
+* Email support@elasticbox.com
+
 
 Our operations staff will confirm your identity according to protocol.
 Within the request, please provide the list of users who require Access and a secure, quick method for CenturyLink to provide temporary passwords. We will deliver the credentials only to the person who made the request.

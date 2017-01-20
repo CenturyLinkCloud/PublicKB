@@ -6,9 +6,10 @@
   "contentIsHTML": false
 }}}
 
-###Overview
+### Overview
 
 Partner Cloud Integration allows an ElasticBox user to create Azure Customer Accounts for which CenturyLink will provide Platform-level support. The following is a description of what platform-level support is and how to use it.
+
 
 ### Audience
 
@@ -24,23 +25,20 @@ Knowledge of how to [get started with cloud-integrated Azure](../ElasticBox/part
 
 **Contact Information**
 
-To submit a support request, you may do so via the following methods:
+To submit a support request, you may do so via the following method.
 
-* Call 844-874-5167. This is a US domestic toll free number.
-* Email CloudSupport@centurylink.com
-* Submit a support request via MSP Portal
+* Email support@elasticbox.com
+
 
 **Scope of Support**
 
-In the table below, Platform-level support (in bold) is juxtaposed with un-managed support and Managed OS so the customer has clear expectations for what kind of support they will receive.
-
-It is possible to expect all levels of support in the same environment. For instance, a user may load an un-managed application onto a Managed OS which exists within CenturyLink's Azure CSP purview. Installing an un-supported application within a Managed OS or managed environment does not cause CenturyLink's support responsibilities to transfer to that application.  
+See table below.
 
 Type of Support | Definition | Scope of CenturyLink Support
 --- | --- | ---
-Un-managed | Support for resources a customer might have anywhere in the world which do not have a Managed Operating System, are not within CenturyLink's re-seller authority, or do not have a contract for support. This includes Azure customer accounts that are not created by [ElasticBox's ARM Provider](../ElasticBox/partner-cloud-integration-azure-new.md) or brought under CenturyLink's reseller authority by an agreement with the customer. | *IN SCOPE*: Nothing; *OUTSIDE SCOPE*: Everything. The customer must provide support for un-managed resources
-**Platform-Level** | **CenturyLink becomes the first responder to any issues related to permitted resources within re-sold (CSP) Azure customer accounts and the ability to use those resources via normal means.** | ** *IN SCOPE*: See the list below. *OUTSIDE SCOPE*: Remote Administration, Monitoring and Remediation, Change Management and Patching **
-Managed OS | The objective of this service is to provide Remote Administration, Monitoring, ticketing specific to the resources, and Patching for the OS. (For the moment, this in-depth level of support for Windows and RedHat OS-es are not available in Azure.)|  *IN SCOPE*: Operating System support, including Remote Administration, Monitoring and Remediation, Change Management and Patching; *OUTSIDE SCOPE*: Infrastructure.
+Platform-Level | CenturyLink becomes the first responder to any issues related to permitted resources within re-sold (CSP) Azure customer accounts and the ability to use those resources via normal means. | **IN SCOPE**: See the list below. **OUTSIDE SCOPE**: Remote Administration, Monitoring and Remediation, Change Management and Patching. Also Customer accounts that are not within CenturyLink's list of CSP Azure Customers,
+
+At this time, Managed Operating System support is not available for Azure.
 
 **Scope of Platform-Level support**:
 
