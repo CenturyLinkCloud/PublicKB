@@ -13,7 +13,7 @@ There are two different flavors of Azure and ElasticBox has providers for both. 
 **Name** | **URL of Portal** | **Name of Related ElasticBox Provider** | **KB article**
 --- | --- | --- | ---
 Classic Azure | https://manage.windowsazure.com | Microsoft Azure | This document
-Microsoft Azure | https://portal.azure.com | Azure Resource Manager | [Using Microsoft Azure](./using-microsoft-azure)
+Microsoft Azure | https://portal.azure.com | Azure Resource Manager | [Using Microsoft Azure](./using-microsoft-azure.md)
 
 Microsoft's Classic Azure hosts applications in virtual machines and in cloud services via Web, Worker roles. ElasticBox supports deploying to all three models through the Virtual Machine Role, Web and Worker roles. In addition, we support Microsoft SQL Database Service through Azure. Take a look at the [benefits of deploying to Azure using ElasticBox.
 
