@@ -11,6 +11,11 @@ ElasticBox integrates with IPAM, DNS, DHCP, and CMDB network management solution
 
 A webhook requires a custom web service to connect to your network management solution. You can build this custom web service as a box. We show how this works for Infoblox as an example. Say you deploy an instance to vCenter from ElasticBox. ElasticBox calls the custom Infoblox web service over the webhook and provides the instance IP configuration. The web service passes it to Infoblox. Once the web service gets the IP and domain name from Infoblox, it returns the information to ElasticBox, which assigns the IP configuration to the instance.
 
+**In this article:**
+
+* Integrating with Infoblox
+
+
 ### Integrating with Infoblox
 In this example, Infoblox provides a static IP and domain name for every instance you deploy through ElasticBox in vCenter.
 
@@ -93,45 +98,45 @@ In this example, Infoblox provides a static IP and domain name for every instanc
 
 
    def allocate_address_with_infoblox(network, name):
-    net_url = \
-        'https:///wapi/v1.4/network?_return_fields=extattrs&*Network=%s'
-    ip_url = \
-        'https:///wapi/v1.4/%s?_function=next_available_ip&num=1'
-    a_record_url = 'https:///wapi/v1.4/record:a'
-    ptr_record_url = \
-        'https:///wapi/v1.4/record:ptr'
+       net_url = \
+           'https:///wapi/v1.4/network?_return_fields=extattrs&*Network=%s'
+       ip_url = \
+           'https:///wapi/v1.4/%s?_function=next_available_ip&num=1'
+       a_record_url = 'https:///wapi/v1.4/record:a'
+       ptr_record_url = \
+           'https:///wapi/v1.4/record:ptr'
 
-    auth = ('', '')
+       auth = ('', '')
 
-    networks = requests.get(net_url % network, auth=auth,
-                            verify=False).json()
+       networks = requests.get(net_url % network, auth=auth,
+                               verify=False).json()
 
-    if len(networks) > 0:
-        address = requests.post(ip_url % networks[0]['_ref'],
-                                auth=auth, verify=False).json()['ips'
-                ][0]
+       if len(networks) > 0:
+           address = requests.post(ip_url % networks[0]['_ref'],
+                                   auth=auth, verify=False).json()['ips'
+                   ][0]
 
-        dns_suffix = networks[0]['extattrs']['Suffix']['value']
-        name = '{0}.{1}'.format(dns_suffix, name)
+           dns_suffix = networks[0]['extattrs']['Suffix']['value']
+           name = '{0}.{1}'.format(dns_suffix, name)
 
-        a_record = {'ipv4addr': address, 'name': name,
-                    'view': 'default'}
-        ptr_record = {'ipv4addr': address, 'ptrdname': name,
-                      'view': 'default'}
+           a_record = {'ipv4addr': address, 'name': name,
+                       'view': 'default'}
+           ptr_record = {'ipv4addr': address, 'ptrdname': name,
+                         'view': 'default'}
 
-        a_response = requests.post(a_record_url, auth=auth,
-                                   data=json.dumps(a_record),
-                                   verify=False)
-        ptr_response = requests.post(ptr_record_url, auth=auth,
-                data=json.dumps(ptr_record), verify=False)
+           a_response = requests.post(a_record_url, auth=auth,
+                                      data=json.dumps(a_record),
+                                      verify=False)
+           ptr_response = requests.post(ptr_record_url, auth=auth,
+                   data=json.dumps(ptr_record), verify=False)
 
-        return {
-            'ipv4_address': address,
-            'subnet_mask': networks[0]['extattrs']['Netmask']['value'],
-            'default_gateway': networks[0]['extattrs']['Gateway'
-                    ]['value'],
-            'preferred_nameserver': '8.8.8.8',
-            }
+           return {
+               'ipv4_address': address,
+               'subnet_mask': networks[0]['extattrs']['Netmask']['value'],
+               'default_gateway': networks[0]['extattrs']['Gateway'
+                       ]['value'],
+               'preferred_nameserver': '8.8.8.8',
+               }
 
 
    def search(items, name):
@@ -156,35 +161,35 @@ In this example, Infoblox provides a static IP and domain name for every instanc
                print 'Deallocate IP address'
                return {}
 
-        is_infoblox = True
-        variables = instance['variables']
-        for variable in instance['variables']:
-            if variable['name'] == 'IPV4_ADDRESS' and variable['value'] \
-                != '':
-                is_infoblox = False
+           is_infoblox = True
+           variables = instance['variables']
+           for variable in instance['variables']:
+               if variable['name'] == 'IPV4_ADDRESS' and variable['value'] \
+                   != '':
+                   is_infoblox = False
 
-        if is_infoblox:
-            network = allocate_address_with_infoblox(service['profile'
-                    ]['network'], machine['name'])
-            if network:
-                machine['customization'] = \
-                    {'instance_networks': [network]}
-        else:
-            nameservers = find(variables, 'NAME_SERVERS')
-            preferred_nameserver = nameservers.split(',')[0]
-            alternate_nameserver = nameservers.split(',')[1]
+           if is_infoblox:
+               network = allocate_address_with_infoblox(service['profile'
+                       ]['network'], machine['name'])
+               if network:
+                   machine['customization'] = \
+                       {'instance_networks': [network]}
+           else:
+               nameservers = find(variables, 'NAME_SERVERS')
+               preferred_nameserver = nameservers.split(',')[0]
+               alternate_nameserver = nameservers.split(',')[1]
 
-            machine['customization'] = {
-                'ipv4_address': find(variables, 'IPV4_ADDRESS'),
-                'subnet_mask': find(variables, 'SUBNET_MASK'),
-                'default_gateway': find(variables, 'DEFAULT_GATEWAY'),
-                'preferred_nameserver': preferred_nameserver,
-                'alternate_nameserver': alternate_nameserver,
-                'dns_suffixes': find(variables, 'DNS_SUFFIXES'
-                        ).split(','),
-                }
+               machine['customization'] = {
+                   'ipv4_address': find(variables, 'IPV4_ADDRESS'),
+                   'subnet_mask': find(variables, 'SUBNET_MASK'),
+                   'default_gateway': find(variables, 'DEFAULT_GATEWAY'),
+                   'preferred_nameserver': preferred_nameserver,
+                   'alternate_nameserver': alternate_nameserver,
+                   'dns_suffixes': find(variables, 'DNS_SUFFIXES'
+                           ).split(','),
+                   }
 
-    return machine
+       return machine
 
 
    @route('/test//', method='GET')

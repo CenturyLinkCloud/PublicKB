@@ -67,7 +67,9 @@ In order for ElasticBox to configure, deploy, and manage box configurations in C
 
 2. Run this shell script as the root admin in the terminal.
 
-`curl -L https://elasticbox.com/agent/linux/cloudstack/template_customization_script.sh | sudo bash`
+   ```
+   curl -L https://elasticbox.com/agent/linux/cloudstack/template_customization_script.sh | sudo bash
+   ```
 
 ### Windows
 

@@ -7,7 +7,7 @@
 }}}
 
 ### Enable User Authentication
-In ElasticBox enterprise organizations, users can sign in using any of the single sign-on authentication options you enable in the [admin console](./admin-overview.md/).
+In ElasticBox enterprise organizations, users can sign in using any of the single sign-on authentication options you enable in the [admin console](./admin-overview.md).
 ![admin-user1.png](../images/ElasticBox/admin-user1.png)
 
 **In this article:**

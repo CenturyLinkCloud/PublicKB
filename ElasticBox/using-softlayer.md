@@ -8,7 +8,7 @@
 
 ### Using SoftLayer
 
-Automate application deployments through ElasticBox when you launch to Linux or Windows virtual servers in the IBM SoftLayer public cloud. ElasticBox simplifies deployments with a dedicated focus on applications rather than infrastructure.
+Automate application deployments through ElasticBox when you launch to Linux or Windows virtual servers in the IBM SoftLayer public cloud. ElasticBox simplifies deployments with a dedicated focus on applications rather than infrastructure. See [Benefits](//www.ctl.io/elasticbox/#Benefits) and [Use Cases](//www.ctl.io/elasticbox/#UseCases).
 
 **In this article:**
 
@@ -54,7 +54,7 @@ Note a couple of things about instances you deploy on SoftLayer through ElasticB
 | Cores | Select virtual CPUs for the instance. For dedicated processing speed that others don’t share, choose private. You can get up to 8 private cores and up to 16 public. |
 | Memory | Allocate RAM for the instance. |
 | Operating System | Select from a list of SoftLayer Linux or Windows images. Images are specific to the box service type, that is, Linux or Windows. |
-| SSH Key |	Select a public key to SSH into the Linux or Windows instance. The drop-down shows keys added to your SoftLayer account. |
+| SSH Key |	Select a public key to SSH into the Linux or Windows instance. The drop-down shows keys [added to your SoftLayer account](https://knowledgelayer.softlayer.com/procedure/add-ssh-key). |
 | Instances | Specify the number of instances to provision. |
 
 
