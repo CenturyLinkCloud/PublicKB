@@ -1,5 +1,5 @@
 {{{
-  "title": "Partner Cloud Integration: Obtaining Users to Portal.Azure.Com",
+  "title": "Partner Cloud: Getting Started With A New Azure Customer",
   "date": "1-16-2017",
   "author": "Ben Swoboda",
   "attachments": [],

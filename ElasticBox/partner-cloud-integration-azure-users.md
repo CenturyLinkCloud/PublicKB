@@ -22,7 +22,7 @@ An existing [ARM Provider created by ElasticBox](../ElasticBox/partner-cloud-int
 
 ### Important Information
 
-To obtain a user, please submit a support request via one of the following methods:
+To obtain a user, please submit a support request via the following method:
 
 
 * Email support@elasticbox.com
