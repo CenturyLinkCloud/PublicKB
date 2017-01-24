@@ -51,7 +51,7 @@ Follow these steps to get a token from your ElasticBox account.
 
 * You can create and use up to 50 tokens.
 * Tokens never expire. To invalidate an API call, simply delete the token that’s used.
-* When making API calls to the Providers resource, additional provider token limits may apply. To learn about these limits, check your provider documentation.
+* When making API calls to the [Providers resource](./providers.md), additional provider token limits may apply. To learn about these limits, check your provider documentation.
 
 ### ElasticBox-Release
 

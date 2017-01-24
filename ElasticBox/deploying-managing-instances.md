@@ -31,8 +31,10 @@ An instance is an instantiated version of a box launched to provider’s virtual
     **Note:** Don’t find a box you’re looking for? Check if you’re in the right workspace. Remember that you may not have access if the box is no longer shared with you.
 
 3. In the New Instance dialog, specify the environment name and deployment profile.
-**Environment.** Give a name to recognize the instance.
-**Deployment Profile.** Select a previously created deployment profile or create a new one. For details, see [Creating a Deployment Profile](./deploying-managing-instances.md).
+
+   **Environment.** Give a name to recognize the instance.
+
+   **Deployment Profile.** Select a previously created deployment profile or create a new one. For details, see Creating a Deployment Profile.
 
 4. In the New Instance dialog, pass deployment parameters under **Variables**. Before launching, you can override and provide fresh values.
 
@@ -98,7 +100,7 @@ Select **Always on** if you don’t want to schedule anything. Shutdown powers o
 
     **Note:** Even if you don’t schedule an instance at the time of deploying, you can do so later. Once online, you can go to an instance page and in **Edit Details**, set the schedule.
 
-    Besides the user interface, you can automatically schedule instances using the instances API with a [POST](./instances.md) or [PUT](./instances.md) request.
+    Besides the user interface, you can automatically schedule instances using the instances API with a [POST](./instances-api.md) or [PUT](./instances-api.md) request.
 
 ### Handling Instance Lifecycle States
 

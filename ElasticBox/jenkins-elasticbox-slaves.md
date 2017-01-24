@@ -54,7 +54,7 @@ Configure a Jenkins slave in ElasticBox. Later, you’ll call this slave from Je
    wget $JENKINS_URL/jnlpJars/slave.jar -O slave.jar
    ```
 
-**Start**. This script starts the slave agent.
+   **Start**. This script starts the slave agent.
 
    ```
    #!/bin/bash
@@ -101,11 +101,14 @@ Run Jenkins jobs using slaves launched via ElasticBox on any cloud. Be sure to [
 **Steps**
 
 1. Go to the configure system page at **http://<your Jenkins host>/configure.**
-Set up Jenkins to launch slaves using the slave box. Click **Add** for **Slave Configurations**.
+
+2. Set up Jenkins to launch slaves using the slave box. Click **Add** for **Slave Configurations**.
 
 	![eb-slaves6](../images/ElasticBox/eb-slaves6.png)
 
-2. In this section, select the slave box from the ElasticBox workspace. Optionally, tag the slave instance. Set **Min. No. of Instances** to 0 when you don’t want to keep idle slaves alive. Set **Max. No. of Instances** to the number of slaves you want at any given time to run Jenkins jobs.
+3. In this section, select the slave box from the ElasticBox workspace. Optionally, tag the slave instance.
+
+	 Set **Min. No. of Instances** to 0 when you don’t want to keep idle slaves alive. Set **Max. No. of Instances** to the number of slaves you want at any given time to run Jenkins jobs.
 
    **IMPORTANT**: Add a label to identify the slave to Jenkins. Use underscores or dashes, but not spaces. When you create a build job (as we’ll do in the next section), you can provide this label to make Jenkins select this slave.
 
@@ -113,12 +116,13 @@ Set up Jenkins to launch slaves using the slave box. Click **Add** for **Slave C
 
    The plugin uses the JENKINS_URL and JNLP_SLAVE_OPTIONS variables to pass Jenkins server information slaves need to connect. Leave them empty.
 
-3. Under Deployment, select a policy from the ElasticBox workspace or enter a claim tag to use any policy that matches the tag.
-   Click Advanced. For **Retention Time**, specify in minutes how long the plugin should wait before terminating an idle slave. If the slave is idle for more than 30 minutes, which is the default, the plugin terminates the slave from your provider. But for this to work, your slave must be connected to the Jenkins server.
+4. Under Deployment, select a policy from the ElasticBox workspace or enter a claim tag to use any policy that matches the tag.
+
+	 Click Advanced. For **Retention Time**, specify in minutes how long the plugin should wait before terminating an idle slave. If the slave is idle for more than 30 minutes, which is the default, the plugin terminates the slave from your provider. But for this to work, your slave must be connected to the Jenkins server.
 
    Under **Max. No. of Builds**, set the most builds the slave can execute. If the slave hits that number, the plugin terminates it.
 
-4. Save the slave setup.
+5. Save the slave setup.
 
 
 ### Enable Slaves to Connect through a Port

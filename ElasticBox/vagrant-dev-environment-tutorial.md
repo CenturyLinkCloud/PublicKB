@@ -32,7 +32,7 @@ This tutorial helps you learn these concepts:
 
 To get started, set up the following:
 
-1. Sign up for an ElasticBox account. It’s free!
+1. Sign up for an ElasticBox account.
 
 2. Fork a sample Rails app from this [GitHub repository](https://github.com/railstutorial/sample_app_rails_4). Clone it in your Mac laptop as shown. This creates a local copy of the sample Rails app.
 
@@ -67,7 +67,7 @@ ___
 
 ### Define Dev Environment in Boxes
 
-We log in to ElasticBox and define modules of the Rails dev environment in multiple boxes and stack them into a single box at the end.
+We log in to ElasticBox and define modules of the Rails dev environment in multiple [boxes](./boxes.md) and stack them into a single box at the end.
 
 **Nodejs Box**
 
@@ -158,7 +158,7 @@ This installs MySQL server and creates a database.
     #
     # For explanations see
     # http://dev.mysql.com/doc/mysql/en/server-system-variables.html
-
+    #
     # This will be passed to all mysql clients
     # It has been reported that passwords should be enclosed with ticks/quotes
     # especially if they contain "#" chars...
@@ -166,7 +166,7 @@ This installs MySQL server and creates a database.
     [client]
     port    = \{{ MYSQL_PORT }}
     socket    = /var/run/mysqld/mysqld.sock
-
+    #    
     # Here is entries for some specific programs
     # The following values assume you have at least 32M ram
 
@@ -253,7 +253,6 @@ This installs MySQL server and creates a database.
     # ssl-ca=/etc/mysql/cacert.pem
     # ssl-cert=/etc/mysql/server-cert.pem
     # ssl-key=/etc/mysql/server-key.pem
-
 
     [mysqldump]
     quick

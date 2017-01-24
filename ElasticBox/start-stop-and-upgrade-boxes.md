@@ -21,7 +21,7 @@ The ElasticBox agent executes and stores the output of the event scripts in a de
 
 ### Event Types
 
-There are five types of events on a box. Each event executes depending on the [action](./instances.md) triggered on a box instance.
+There are five types of events on a box. Each event executes depending on the [action](./instances-api.md) triggered on a box instance.
 
 **Install**
 
