@@ -20,7 +20,7 @@ For Azure, we are currently limited to serving billable customers who are not re
 
 Access to ElasticBox.
 
-Credentials for a [CenturyLink Cloud Account Administrator](../Accounts-&-Users/user-permissions.md). If you do not have access to CenturyLink Cloud, please contact your CenturyLink representative. (More on that, below.)
+Credentials for a [CenturyLink Cloud Account Administrator](../Accounts & Users/user-permissions.md). If you do not have access to CenturyLink Cloud, please contact your CenturyLink representative. (More on that, below.)
 
 A working Knowledge how to use [ElasticBox providers](https://elasticbox.com/documentation/core-concepts/providers/).
 
