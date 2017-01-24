@@ -49,16 +49,16 @@ Your goal is to set up a new ElasticBox provider that has been designed to creat
 3. Select New
 4. Select "Azure Resource Manager"
 
-![Azure Resource Manager Provider](../images/CINT_New_ARM1.png)
+![Azure Resource Manager Provider](../images/ElasticBox/CINT_New_ARM1.png)
 
 5. Select the "Create a new Azure customer account" option
 
-![Create New Azure Account](../images/CINT_New_ARM2.png)
+![Create New Azure Account](../images/ElasticBox/CINT_New_ARM2.png)
 
 6. Provide a name for the provider that identifies it for your purposes.
 7. Click the "Connect a CLC Account" button and provide your CenturyLink Cloud Account Administrator credentials
 
-![Create New Azure Account](../images/CINT_New_ARM3.png)
+![Create New Azure Account](../images/ElasticBox/CINT_New_ARM3.png)
 
 8. From the drop-down menu, select the CenturyLink Cloud account you would like to bill against.
 9. Accept the Terms and Conditions
