@@ -1,14 +1,15 @@
 {{{
-  "title": "Partner Cloud Integration: Obtaining Users to Portal.Azure.Com",
-  "date": "1-16-2017",
+  "title": "Partner Cloud Integration: Azure Platform-level Support",
+  "date": "01-16-2017",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-###Overview
+### Overview
 
-ElasticBox is a wonderful tool for addressing many customers' needs. Regardless, a user may still want to log into portal.azure.com from occasionally to modify resources there.
+Partner Cloud Integration allows an ElasticBox user to create Azure Customer Accounts for which CenturyLink will provide Platform-level support. The following is a description of what platform-level support is and how to use it.
+
 
 ### Audience
 
@@ -16,21 +17,41 @@ All of our customers are invited to use Cloud Integration.
 
 ### Prerequisites
 
-Knowledge of ElasticBox's [partner cloud integration](../ElasticBox/partner-cloud-integration.md) feature.
+Knowledge of ElasticBox's [partner cloud integration](./partner-cloud-integration.md) feature.
 
-An existing [ARM Provider created by ElasticBox](../ElasticBox/partner-cloud-integration-azure-new.md).
+Knowledge of how to [get started with cloud-integrated Azure](./partner-cloud-integration-azure-new.md)
 
 ### Important Information
 
-To obtain a user, please submit a support request via one of the following methods:
+**Contact Information**
 
+To submit a support request, you may do so via the following method.
 
 * Email support@elasticbox.com
 
 
-Our operations staff will confirm your identity according to protocol.
-Within the request, please provide the list of users who require Access and a secure, quick method for CenturyLink to provide temporary passwords. We will deliver the credentials only to the person who made the request.
+**Scope of Support**
 
-Once you have the user, navigate to https://portal.azure.com/. If you automatically sign into a portal without being asked for your credentials, that can be confusing. You are likely already logged into another Microsoft account. Sign out of the account, navigate back to https://portal.azure.com/, and try again.
+See table below.
 
-All users will be given CenturyLink's [customized set of Azure permissions](../ElasticBox/partner-cloud-integration-azure-permissions.md).
+Type of Support | Definition | Scope of CenturyLink Support
+--- | --- | ---
+Platform-Level | CenturyLink becomes the first responder to any issues related to permitted resources within re-sold (CSP) Azure customer accounts and the ability to use those resources via normal means. | **IN SCOPE**: See the list below. **OUTSIDE SCOPE**: Remote Administration, Monitoring and Remediation, Change Management and Patching. Also Customer accounts that are not within CenturyLink's list of CSP Azure Customers
+
+At this time, Managed Operating System support is not available for Azure.
+
+**Scope of Platform-Level support**:
+
+  * https://portal.azure.com user creation and permissions
+  * Issues regarding Azure Customer Account Sign-up and Set-up through ElasticBox ARM providers
+  * Knowledge Base and FAQs
+  * Azure Service availability
+  * Azure Billing
+  * Subscription management
+  * Tier 1 Technical Support
+  * Escalations to Microsoft
+  * Azure resource configuration review
+  * Azure Control Portal
+  * Partner cloud month-to-date totals
+  * Partner cloud estimates
+  * Terms and Agreements

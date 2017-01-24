@@ -1,5 +1,5 @@
 {{{
-  "title": "Partner Cloud Integration: Obtaining Users to Portal.Azure.Com",
+  "title": "Partner Cloud: Getting Started With A New Azure Customer",
   "date": "1-16-2017",
   "author": "Ben Swoboda",
   "attachments": [],
@@ -16,9 +16,9 @@ All of our customers are invited to use Cloud Integration.
 
 ### Prerequisites
 
-Knowledge of ElasticBox's [partner cloud integration](../ElasticBox/partner-cloud-integration.md) feature.
+Knowledge of ElasticBox's [partner cloud integration](./partner-cloud-integration.md) feature.
 
-An existing [ARM Provider created by ElasticBox](../ElasticBox/partner-cloud-integration-azure-new.md).
+An existing [ARM Provider created by ElasticBox](./partner-cloud-integration-azure-new.md).
 
 ### Important Information
 
@@ -33,4 +33,4 @@ Within the request, please provide the list of users who require Access and a se
 
 Once you have the user, navigate to https://portal.azure.com/. If you automatically sign into a portal without being asked for your credentials, that can be confusing. You are likely already logged into another Microsoft account. Sign out of the account, navigate back to https://portal.azure.com/, and try again.
 
-All users will be given CenturyLink's [customized set of Azure permissions](../ElasticBox/partner-cloud-integration-azure-permissions.md).
+All users will be given CenturyLink's [customized set of Azure permissions](./partner-cloud-integration-azure-permissions.md).
