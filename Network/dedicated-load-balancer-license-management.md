@@ -3,7 +3,7 @@
   "date": "12-01-2016",
   "author": "Ben Heisel",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 ### Overview
@@ -16,7 +16,7 @@ CenturyLink Cloud customers with a dedicated Citrix Netscaler Load Balancer
 
 ### Prerequisites
 
-* Must have an Admin login to your netscaler
+* Must have an Admin login to your Netscaler
 * Must be able to SSH to the RNAT IP of the HA pair (typically ends with .101)
 * Basic understanding of [Basic Management Using the CLI](../Network/dedicated-load-balancer-using-cli-basic-management.md)
 
@@ -24,9 +24,9 @@ CenturyLink Cloud customers with a dedicated Citrix Netscaler Load Balancer
 
 The Netscaler Load Balancer uses FlexLM licensing to license features on the product. A license check is done when the VPX boots. The licensing daemon (service) will start, check for a valid license and then stop the daemon (service). The VPX will then enable certain features determined by the license daemon (service). If a license is expired or invalid, the Netscaler will stop passing traffic.
 
-### How to determine if a VPX is not passing traffic due to an expired license
+### How to Determine if a VPX is not Passing Traffic due to an Expired License
 
-#### CLI method
+#### CLI Method
 
 1. SSH or use PuTTY on Windows to login to VPX management IP 
 2. In the CLI run:
@@ -34,17 +34,17 @@ The Netscaler Load Balancer uses FlexLM licensing to license features on the pro
   show ns license
  ```
  
-3. Review the output. If the Model Number ID lists 1 instead of the proper model and the Load Balancing feature says NO, the license is expired. The Model ID should read the correct model (ie: 200) and the Load Balancing feature should say YES.
+3. Review the output. If the Model Number ID lists 1 instead of the proper model and the Load Balancing feature says NO, the license is expired. The Model ID should read the correct model (i.e.: 200) and the Load Balancing feature should say YES.
 
-#### GUI method
+#### GUI Method
 
 1. Open a browser and login to the VPX management IP.
-2. On the left hand side menu, navigate to System->Licenses
-3. Review output. If the Model ID lists 1 instead of the proper model and the Load Balancing feature does not have a green checkmark, the license is expired. The Model ID should reflect the correct model (ie: 200) and the Load Balancing feature should have a green checkmark.
+2. On the left-hand side menu, navigate to System->Licenses
+3. Review output. If the Model ID lists 1 instead of the proper model and the Load Balancing feature does not have a green checkmark, the license is expired. The Model ID should reflect the correct model (i.e.: 200) and the Load Balancing feature should have a green checkmark.
 
 ### Determine the License Expiration Date
 
-**Note:** This step can only be performed via SSH and the CLI. The license expiration date in not available in the GUI
+**Note:** This step can only be performed via SSH and the CLI. The license expiration date in not available in the GUI.
 
 1. SSH or use PuTTY on Windows to login to the VPX management IP
 2. In the CLI, type the command word shell to get to a unix shell prompt
@@ -76,6 +76,6 @@ The Netscaler Load Balancer uses FlexLM licensing to license features on the pro
 
 ### Notes
 
-* Multiple licenses (including expired ones) can be present on the system. The Netscaler will enable all of the proper features from the valid license file.
+* Multiple licenses (including expired ones) can be present on the system. The Netscaler will enable all the proper features from the valid license file.
 * A new license can be added to a running Netscaler while it is running with an expired license. Upon restart, the Netscaler will use the new license, resulting in less downtime of the pools.
 * Updating the license on a Netscaler HA pair can be performed without downtime.

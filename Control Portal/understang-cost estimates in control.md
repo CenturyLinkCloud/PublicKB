@@ -1,6 +1,6 @@
 {{{
   "title": "Understanding Cost Estimates in Control Portal",
-  "date": "11-07-2016",
+  "date": "12-13-2016",
   "author": "Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
@@ -46,10 +46,10 @@ There are four values at the top of the dashboard.
  - Relational Database Services
  - Appfog
 
-***Current Hour*** includes:
+***Current Hour*** includes (MSSQL is no longer included as billing has been changed to monthly):
  - All infrastructure costs (CPU, Memory, disk) and OS licenses (where applicable) from all datacenters
  - Managed Services costs (Managed OS, Active Directory, Databases, Web server)
- - Microsoft SQL licenses(account wide)
+  
 
 ***One Time Changes*** includes:
  - Any Service Task charges

@@ -50,7 +50,7 @@ There could be a few causes:
 
     * United States: 1-800-871-9244
     * Canada: 1-877-387-3764
-    * Europe, Middle East &amp; Africa: +44 (0) 207 400 5600
+    * Europe, Middle East &amp; Africa: +44 (0) 118 309 4886
     * Japan: +81 3 6435 9658
     * Hong Kong: +852 2190 8798
     * Singapore: +65 6768 8098
