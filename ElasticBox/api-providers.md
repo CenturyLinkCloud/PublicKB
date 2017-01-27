@@ -7326,8 +7326,8 @@ For AWS, you can also update the key and secret. For VMware vShpere, you can als
 |members | array | List of members with access to the provider.|
 |owner | string | Provider owner.|
 |type | string | Provider type, there are two possible providers: Amazon Web Services or VMware vShpere. |
-id | string | Provider unique identificator.|
-icon | string | Provider Icon uri.|
+|id | string | Provider unique identificator.|
+|icon | string | Provider Icon uri.|
 
 ```
 Headers:

@@ -18,8 +18,8 @@ Manage and perform actions on workspaces.
 
 **Perform Other Workspace Operations**
 
-| Parameter | Type |Description |
-|-----------|------|------------|
+| Parameter | Description |
+|-----------|-------------|
 | GET /services/workspaces/{workspace_id} | Fetches an existing workspace.|
 | PUT /services/workspaces/{workspace_id}| Updates an existing workspace.|
 | DELETE /services/workspaces/{workspace_id}| Deletes an existing workspace.|
