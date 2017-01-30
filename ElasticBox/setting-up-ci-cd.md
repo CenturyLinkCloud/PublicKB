@@ -14,7 +14,8 @@ The [ElasticBox Jenkins plugin](https://wiki.jenkins-ci.org/display/JENKINS/Elas
 
 To add ElasticBox build steps in Jenkins jobs, go to the job page. Under Build, click **Add build step** and select an ElasticBox deploy, manage, or update step.
 
-In this article:
+**In this article:**
+
 * Manage GitHub pull requests
 * Deploy configurations from ElasticBox
 * Manage instance lifecycle through ElasticBox
@@ -55,6 +56,7 @@ Add the ElasticBox Deploy build step in Jenkins jobs to launch automated configu
 * **Number of Instances** - Specify the number of instances for the plugin to launch to the provider in the deployment profile. This overrides the instances number in the deployment profile.
 
 **Tag instances**
+
 Under Tags, enter one or more keywords separated by comma. These keywords can include Jenkins build parameters or environment variables in the ${variable_name} format. The instance deployed from this build step is tagged with these keywords. Make sure the tags are unique if you want to bind to this build step from a subsequent one.
 
 **Schedule instances**
@@ -85,6 +87,7 @@ Under **Advanced**, you can optionally configure more deployment settings.
 **Wait for operations to timeout**. In any of the ElasticBox build steps, you can timeout an operation in minutes if it fails to run in that specified time. By default, the ElasticBox Jenkins plugin waits 60 minutes before timing out an operation. But you can specify a custom wait time.
 
 **Generate instance information**
+
 Under **Inject environment variables**, enter an instance name. ElasticBox uses it to generate instance information you can pass as environment variables in following build steps or build jobs. For example, if you enter MYSQL, you get the following environment variables for the instance:
 * MYSQL: Instance ID
 * MYSQL_URL: Instance URL
@@ -112,6 +115,7 @@ Add the ElasticBox Manage build step in Jenkins jobs to manage the lifecycle of 
 To run an operation, select the ElasticBox account registered in Jenkins, the workspace where the instance is located, and the operation under **Add operation**. Select **Reconfigure**, **Reinstall**, **Start**, **Stop**, **Terminate**, or **Update**.
 
 **Reconfigure, reinstall, start, stop, or terminate an instance**
+
 Under **Tags**, enter tags for instances. Tags can come from a deploy build step or can be tags applied to instances deployed through ElasticBox. Tags can include Jenkins build parameters and environment variables in the ${variable_name} format. Separate tags by comma. Any operation you select runs on all tagged instances.
 
 **Ask Jenkins to wait for an operation to complete**
@@ -119,15 +123,19 @@ Under **Tags**, enter tags for instances. Tags can come from a deploy build step
 Check the **Wait for completion** option if you want subsequent build steps to wait for this one to complete before starting the next. To run build steps in parallel, uncheck it.
 
 **Wait for operations to timeout**
+
 In any of the ElasticBox build steps, you can timeout an operation in minutes if it fails to run in that specified time. By default, the ElasticBox Jenkins plugin waits 60 minutes before timing out an operation. But you can specify a custom wait time.
 
 **Delete terminated instances**
+
 In a terminate operation, check **Delete after termination** to delete instances after terminating.
 
 **Force terminate instances**
+
 Instead of terminating an instance, you can force it to terminate by selecting **Force terminate** in a terminate operation.
 
 **Update instances**
+
 In the **Update** operation, enter tags to identify a deployed instance you want to update. Update its runtime by providing deployment values of a box you pick. To apply these changes to the instance, run reinstall or reconfigure in subsequent operations.
 
 ### Update Box File Variables
@@ -135,7 +143,7 @@ Update Box is an ElasticBox build step in the Jenkins job that lets you upload t
 ![jenkins-github-7.png](../images/ElasticBox/jenkins-github-7.png)
 
 ### See CI/CD in Action
-To see Jenkins CI/CD in action, try the tutorial. It takes you through a typical deployment workflow automated entirely with the help of the ElasticBox plugin.
+To see Jenkins CI/CD in action, try the [tutorial](./jenkins-ci-cd-tutorial.md). It takes you through a typical deployment workflow automated entirely with the help of the ElasticBox plugin.
 
 ### Contacting ElasticBox Support
 We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.

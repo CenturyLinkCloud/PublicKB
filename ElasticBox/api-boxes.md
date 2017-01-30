@@ -1,4 +1,5 @@
-{{{ "title": "Boxes API",
+{{{
+"title": "Boxes API",
 "date": "09-01-2016",
 "author": "",
 "attachments": [],
@@ -7,56 +8,85 @@
 
 Manage and perform actions on boxes.
 
-### Create or List Boxes
+**Create or List Boxes**
 
-**Resource**|**Description**
-------------|----------
-GET /services/boxes | Gets the list of boxes that are accessible in the personal workspace.
-POST /services/boxes | Creates a new box.
+| Resource | Description |
+|----------|-------------|
+| GET /services/boxes | Gets the list of boxes that are accessible in the personal workspace. |
+| POST /services/boxes | Creates a new box. |
 
-### Perform Box Operations
+**Perform Box Operations**
 
-**Resource**|**Description**
-------------|----------
-GET /services/boxes/{box_id} | Fetches an existing box.
-PUT /services/boxes/{box_id} | Updates an existing box.
-DELETE /services/box/{box_id} | Deletes an existing box.
-GET /services/boxes/{box_id}/stack | Gets the box stack.
-GET /services/boxes/{box_id}/bindings | Gets the box bindings.
-GET /services/boxes/{box_id}/versions | Get the list of box versions.
-PUT /services/boxes/{box_id}/diff | Get the diff between two boxes.
+| Resource | Description |
+|----------|-------------|
+| GET /services/boxes/{box_id} | Fetches an existing box. |
+| PUT /services/boxes/{box_id} | Updates an existing box. |
+| DELETE /services/box/{box_id} | Deletes an existing box. |
+| GET /services/boxes/{box_id}/stack | Gets the box stack. |
+| GET /services/boxes/{box_id}/bindings | Gets the box bindings. |
+| GET /services/boxes/{box_id}/versions | Get the list of box versions. |
+| PUT /services/boxes/{box_id}/diff  | Get the diff between two boxes. |
 
-CloudFormation Box
+**CloudFormation Box**
 
-The ElasticBox CloudFormation box runs on the AWS CloudFormation service. It lets you create and customize templates that you can launch as a single stack of combined services in AWS. Manage CloudFormation configurations in ElasticBox using these [API actions](./api-boxes.md).
-GET /services/boxes
+The ElasticBox CloudFormation box runs on the AWS CloudFormation service. It lets you create and customize templates that you can launch as a single stack of combined services in AWS. Manage CloudFormation configurations in ElasticBox using these [API actions](./boxes.md).
+
+### GET /services/boxes
 
 Gets boxes that are accessible in the personal workspace of the authenticated user.
 
 **Normal Response Codes:**
+
 * 200
 
 **Error Response Codes:**
+
 * Bad Request (400)
 
 **Request Headers**
 
-**Parameter** | **Style** | **Type** | **Description**
---------------|-----------|----------|---------------
-ids (optional)|	plain	  | string	 | Comma-separate list of boxes IDs
+| Parameter | Style | Type | Description |
+|-----------|-------|------|-------------|
+| ids (optional) | plain | string | Comma-separate list of boxes IDs |
 
+```
+Headers:
 
-![box1.png](../images/ElasticBox/box1.png)
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
-![box2.png](../images/ElasticBox/box2.png)
+```
+Body:
+
+GET /services/boxes?ids=05b76b08-5238-4e05-ae5f-8ea8afe00378
+```
 
 **Response Parameters**
 
-![box3.png](../images/ElasticBox/box3.png)  ![box4.png](../images/ElasticBox/box4.png)
+| Parameter | Style | Type | Description |
+|--------------|-----------|----------|--------------|
+| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <li>public: Visible to ElasticBox users across all organizations.</li> <li>organization: Visible to all users in the organization where the box was created.</li> <li>workspace: By default, the box is visible only to members of the workspace where it was created.</li> |
+| organization | plain | string | Organization to which the box belongs. |
+| updated | plain | string | Date of the last update. |
+| description | plain | string | Box description. |
+| requirements | plain | array | Box requirements. |
+| variables | plain | array | List of box variables, each variable object contains the parameters: type, name and value. |
+| created | plain | string | Creation date. |
+| uri | plain | string | Box uri. |
+| id | plain | array | Box unique identificator. |
+| schema | plain | string | Box schema uri. |
+| members | plain | array | List of Box members. |
+| owner | plain | string | Box owner. |
+| icon | plain | string | Box icon uri. |
+| events | plain | array | List of Box events, there may be nine event lists: configure, dispose, install, pre_configure, pre_dispose, pre_install, pre_start, pre_stop, start and stop. |
+| event | plain | object | Event contained in one of the event lists, each event object contains the  parameters: url, upload_date, length and destination_path. |
+| name | plain | string | Box name. |
 
 ```
 [
-  {
+        {
     "schema": "http://elasticbox.net/schemas/boxes/script",
     "updated": "2015-05-27 08:25:49.363170",
     "automatic_updates": "off",
@@ -134,7 +164,7 @@ ids (optional)|	plain	  | string	 | Comma-separate list of boxes IDs
     "draft_from": "aa5a019a-5dd6-4669-a591-ec52783b123e",
     "icon": "images/platform/redis.png"
   },
-  {
+{
     "schema": "http://elasticbox.net/schemas/boxes/script",
     "updated": "2015-05-27 08:25:49.536624",
     "automatic_updates": "off",
@@ -221,7 +251,8 @@ ids (optional)|	plain	  | string	 | Comma-separate list of boxes IDs
   }
 ]
 ```
-POST/services/boxes
+
+### POST/services/boxes
 
 Creates a new box in the personal workspace and gets the created box.
 
@@ -236,15 +267,59 @@ Creates a new box in the personal workspace and gets the created box.
 
 **Request parameters**
 
-![box5.png](../images/ElasticBox/box5.png)
-
-![box6.png](../images/ElasticBox/box6.png)
-
-![box7.png](../images/ElasticBox/box7.png)
+| Parameter | Style | Type | Description |
+|-----------|-------|------|-------------|
+| requirements | plain | array | Box requirements. |
+| owner | plain | string | Box owner, the user name for a personal workspace and the workspace name for a team workspace. |
+| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <li>public: Visible to ElasticBox users across all organizations.</li> <li>organization: Visible to all users in the organization where the box was created.</li> <li>workspace: By default, the box is visible only to members of the workspace where it was created.</li> |
+| name | plain | string | Box name. |
+| description | plain | string | Box description. |
+| icon | plain | string | Icon url. |
+| schema | plain | string | Box schema. |
 
 **Response parameters**
 
-![box8.png](../images/ElasticBox/box8.png) ![box9.png](../images/ElasticBox/box9.png)
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
+
+```
+Body:
+
+{
+    "owner": "project",
+    "schema":"http://elasticbox.net/schemas/boxes/script",
+    "requirements":["linux"],
+    "automatic_updates":"off",
+    "name":"Wordpress Starter Box",
+    "description":"Wordpress Started for our showcase"
+}
+```
+
+**Response parameters**
+
+| Parameter | Style | Type | Description |
+|-----------|-------|------|-------------|
+| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <li>public: Visible to ElasticBox users across all organizations.</li> <li>organization: Visible to all users in the organization where the box was created.</li> <li>workspace: By default, the box is visible only to members of the workspace where it was created.</li> |
+| organization | plain | string | Organization to which the box belongs. |
+| updated | plain | string | Date of the last update. |
+| description | plain | string | Box description. |
+| requirements | plain | array | Box requirements. |
+| variables | plain | array | List of box variables, each variable object contains the parameters: type, name and value. |
+| created | plain | string | Creation date. |
+| uri | plain | string | Box uri. |
+| id | plain | array | Box unique identificator. |
+| schema | plain | string | Box schema uri. |
+| members | plain | array | List of Box members. |
+| owner | plain | string | Box owner. |
+| icon | plain | string | Box icon uri. |
+| events | plain | array | List of Box events, there may be nine event lists: configure, dispose, install, pre_configure, pre_dispose, pre_install, pre_start, pre_stop, start and stop. |
+| event | plain | object | Event contained in one of the event lists, each event object contains the parameters: url, upload_date, length and destination_path. |
+| name | plain | string | Box name. |
 
 ```
 {
@@ -269,7 +344,7 @@ Creates a new box in the personal workspace and gets the created box.
 }
 ```
 
-**GET /services/boxes/{box_id}**
+### GET /services/boxes/{box_id}
 
 Fetches an existing box, requires the specified id box_id.
 
@@ -285,11 +360,34 @@ Fetches an existing box, requires the specified id box_id.
 
 **Request**
 
-![box10.png](../images/ElasticBox/box10.png)
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
 **Response Parameters**
 
-![box11.png](../images/ElasticBox/box11.png) ![box12.png](../images/ElasticBox/box12.png)
+| Parameter | Style | Type | Description |
+|-----------|-------|------|-------------|
+| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <li>public: Visible to ElasticBox users across all organizations.</li> <li>organization: Visible to all users in the organization where the box was created.</li> <li>workspace: By default, the box is visible only to members of the workspace where it was created.</li> |
+| organization | plain | string | Organization to which the box belongs. |
+| updated | plain | string | Date of the last update. |
+| description | plain | string | Box description. |
+| requirements | plain | array | Box requirements. |
+| variables | plain | array | List of box variables, each variable object contains the parameters: type, name and value. |
+| created | plain | string | Creation date. |
+| uri | plain | string | Box uri. |
+| id | plain | array | Box unique identificator. |
+| schema | plain | string | Box schema uri. |
+| members | plain | array | List of Box members. |
+| owner | plain | string | Box owner. |
+| icon | plain | string | Box icon uri. |
+| events | plain | array | List of Box events, there may be nine event lists: configure, dispose, install, pre_configure, pre_dispose, pre_install, pre_start, pre_stop, start and stop. |
+| event | plain | object | Event contained in one of the event lists, each event object contains the  parameters: url, upload_date, length and destination_path. |
+| name | plain | string | Box name. |
 
 ```
 {
@@ -313,7 +411,8 @@ Fetches an existing box, requires the specified id box_id.
   "name": "Wordpress Starter Box"
 }
 ```
-**PUT /services/boxes/{box_id}**
+
+### PUT /services/boxes/{box_id}
 
 Requires the box ID to update an existing box. The request body must contain the box object and can only update the following fields: files, variables, ports, requirements, description, icon, name, events, and members.
 
@@ -327,13 +426,38 @@ Requires the box ID to update an existing box. The request body must contain the
 
 **Request Headers**
 
-![box13.png](../images/ElasticBox/box13.png)
+```
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
 **Request Parameters**
 
-![box14.png](../images/ElasticBox/box14.png)  ![box15.png](../images/ElasticBox/box15.png)
+| Parameter | Style | Type | Description |
+|-----------|-------|------|-------------|
+| updated | plain | string | Date of the last update. |
+| description | plain | string | Box description. |
+| requirements | plain | array | Box requirements. |
+| variables | plain | array | List of box variables, each variable object contains the parameters: type, name and value. |
+| created | plain | string | Creation date. |
+| uri | plain | string | Box uri. |
+| id | plain | array | Box unique identificator. |
+| schema | plain | string | Box schema uri. |
+| members | plain | array | List of Box members. |
+| owner | plain | string | Box owner. |
+| icon | plain | string | Box icon uri. |
+| events | plain | array | List of Box events, there may be nine event lists: configure, dispose, install, pre_configure, pre_dispose, pre_install, pre_start, pre_stop, start and stop. |
+| event | plain | object | Event contained in one of the event lists, each event object contains the  parameters: url, upload_date, length and destination_path. |
+| name | plain | string | Box name. |
 
-![box16.png](../images/ElasticBox/box16.png)
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
 ```
 Body:
@@ -364,8 +488,7 @@ Body:
             "value":"80",
             "visibility":"public"
 
-        },
-        {
+        },{
             "automatic_updates":"off",
             "name":"Wordpress_base",
             "required":false,
@@ -379,21 +502,41 @@ Body:
             "type":"Binding",
             "value":"2a7a5f6b-280d-47de-afaa-65db5dd85816",
             "visibility":"public"
+
         }
-  ],
-  "uri":"/services/boxes/9192cb3e-04e2-4c50-b8a5-a25c980479d4",
-  "visibility":"workspace",
-  "events":{},
-  "members":[],
-  "owner":"project",
-  "organization":"elasticbox",
-  "id":"60cef61c-73dc-41d9-a32f-70f49a509c66",
-  "name":"Wordpress Starter Box"
+        ],
+        "uri":"/services/boxes/9192cb3e-04e2-4c50-b8a5-a25c980479d4",
+        "visibility":"workspace",
+        "events":{},
+        "members":[],
+        "owner":"project",
+        "organization":"elasticbox",
+        "id":"60cef61c-73dc-41d9-a32f-70f49a509c66",
+        "name":"Wordpress Starter Box"
 }
+
 ```
+
 **Response Parameters**
 
-![box17.png](../images/ElasticBox/box17.png)  ![box18.png](../images/ElasticBox/box18.png)
+| Parameter | Style | Type | Description |
+|-----------|-------|------|-------------|
+| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <li>public: Visible to ElasticBox users across all organizations.</li> <li>organization: Visible to all users in the organization where the box was created.</li> <li>workspace: By default, the box is visible only to members of the workspace where it was created.</li> |
+| organization | plain | string | Organization to which the box belongs. |
+| updated | plain | string | Date of the last update. |
+| description | plain | string | Box description. |
+| requirements | plain | array | Box requirements. |
+| variables | plain | array | List of box variables, each variable object contains the parameters: type, name and value. |
+| created | plain | string | Creation date. |
+| uri | plain | string | Box uri. |
+| id | plain | array | Box unique identificator. |
+| schema | plain | string | Box schema uri. |
+| members | plain | array | List of Box members. |
+| owner | plain | string | Box owner. |
+| icon | plain | string | Box icon uri. |
+| events | plain | array | List of Box events, there may be nine event lists: configure, dispose, install, pre_configure, pre_dispose, pre_install, pre_start, pre_stop, start and stop. |
+| event | plain | object | Event contained in one of the event lists, each event object contains the  parameters: url, upload_date, length and destination_path. |
+| name | plain | string | Box name. |
 
 ```
 {
@@ -448,7 +591,7 @@ Body:
 }
 ```
 
-**DELETE /services/boxes/{box_id}**
+### DELETE /services/boxes/{box_id}
 
 Deletes an existing box, requires the specified id box_id.
 
@@ -462,9 +605,15 @@ Deletes an existing box, requires the specified id box_id.
 
 **Request**
 
-![box19.png](../images/ElasticBox/box19.png)
+```
+Headers:
 
-**GET /services/boxes/{box_id}/stack**
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
+
+### GET /services/boxes/{box_id}/stack
 
 Gets the box stack. The box stack is a list of boxes. All boxes that are a box variable of the given box are included. The first box is always the given box.
 
@@ -476,11 +625,34 @@ Gets the box stack. The box stack is a list of boxes. All boxes that are a box v
 
 **Request**
 
-![box20.png](../images/ElasticBox/box20.png)
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
 **Response Parameters**
 
-![box21.png](../images/ElasticBox/box21.png)  ![box22.png](../images/ElasticBox/box22.png)
+| Parameter | Style | Type | Description |
+|-----------|-------|------|-------------|
+| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <li>public: Visible to ElasticBox users across all organizations.</li> <li>organization: Visible to all users in the organization where the box was created.</li> <li>workspace: By default, the box is visible only to members of the workspace where it was created.</li> |
+| organization | plain | string | Organization to which the box belongs. |
+| updated | plain | string | Date of the last update. |
+| description | plain | string | Box description. |
+| tags | plain | array | Box tags. |
+| variables | plain | array | List of box variables, each variable object contains the parameters: type, name and value. |
+| created | plain | string | Creation date. |
+| uri | plain | string | Box uri. |
+| id | plain | array | Box unique identificator. |
+| schema | plain | string | Box schema uri. |
+| members | plain | array | List of Box members. |
+| owner | plain | string | Box owner. |
+| icon | plain | string | Box icon uri. |
+| events | plain | array | List of Box events, there may be nine event lists: configure, dispose, install, pre_configure, pre_dispose, pre_install, pre_start, pre_stop, start and stop. |
+| event | plain | object | Event contained in one of the event lists, each event object contains the  parameters: url, upload_date, length and destination_path. |
+| name | plain | string | Box name. |
 
 ```
 
@@ -619,7 +791,7 @@ Gets the box stack. The box stack is a list of boxes. All boxes that are a box v
 
 ```
 
-GET /services/boxes/{box_id}/bindings
+### GET /services/boxes/{box_id}/bindings
 
 Gets a list of box objects that are bindings of the request box, requires the specified id box_id.
 
@@ -630,11 +802,22 @@ Gets a list of box objects that are bindings of the request box, requires the sp
 * Bad Request (400)
 * Request
 
-![box23.png](../images/ElasticBox/box23.png)
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
 **Response Parameters**
 
-![box24.png](../images/ElasticBox/box24.png)
+| Parameter | Style | Type | Description |
+|-----------|-------|------|-------------|
+| uri | plain | string | Box uri. |
+| id | plain | array | Box unique identificator. |
+| icon | plain | string | Box icon uri. |
+| name | plain | string | Box name. |
 
 ```
 [
@@ -646,9 +829,10 @@ Gets a list of box objects that are bindings of the request box, requires the sp
   }
 ]
 ```
-GET /services/boxes/{box_id}/versions
 
-Gets a list of box versions, requires the specified id box_id. If the box is un-versioned is the empty list.
+### GET /services/boxes/{box_id}/versions
+
+Gets a list of box versions, requires the specified id box_id. If the box is unversioned is the empty list.
 
 **Normal Response Codes**
 * 200
@@ -659,11 +843,35 @@ Gets a list of box versions, requires the specified id box_id. If the box is un-
 
 **Request**
 
-![box25.png](../images/ElasticBox/box25.png)
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
 **Response Parameters**
 
-![box26.png](../images/ElasticBox/box26.png)  ![box27.png](../images/ElasticBox/box27.png)
+| Parameter | Style | Type | Description |
+|-----------|-------|------|-------------|
+| updated | plain | string | Date of the last update. |
+| description | plain | string | Box description. |
+| tags | plain | array | Box tags. |
+| variables | plain | array | List of box variables, each variable object contains the parameters: type, name and value. |
+| members | plain | array | List of Box members. |
+| owner | plain | string | Box owner. |
+| id | plain | array | Box unique identificator. |
+| icon | plain | string | Box icon uri. |
+| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <li>public: Visible to ElasticBox users across all organizations.</li> <li>organization: Visible to all users in the organization where the box was created.</li> <li>workspace: By default, the box is visible only to members of the workspace where it was created.</li> |
+| organization | plain | string | Organization to which the box belongs. |
+| name | plain | string | Box name. |
+| created | plain | string | Creation date. |
+| uri | plain | string | Box uri. |
+| version | plain | object | The box version object contains the parameters box, description and workspace. |
+| events | plain | array | List of Box events, there may be nine event lists: configure, dispose, install, pre_configure, pre_dispose, pre_install, pre_start, pre_stop, start and stop. |
+| event | plain | object | Event contained in one of the event lists, each event object contains the  parameters: url, upload_date, length and destination_path. |
+| schema | plain | string | Box schema uri. |
 
 ```
 [
@@ -729,7 +937,8 @@ Gets a list of box versions, requires the specified id box_id. If the box is un-
   }
 ]
 ```
-PUT /services/boxes/{box_id}/diff
+
+### PUT /services/boxes/{box_id}/diff
 
 Compares a box to the submitted box, requires the specified id box_id.
 
@@ -742,9 +951,33 @@ Compares a box to the submitted box, requires the specified id box_id.
 
 **Request parameters**
 
-![box28.png](../images/ElasticBox/box28.png)  ![box29.png](../images/ElasticBox/box29.png)
+| Parameter | Style | Type | Description |
+|-----------|-------|------|-------------|
+| updated | plain | string | Date of the last update. |
+| description | plain | string | Box description. |
+| tags | plain | array | Box tags. |
+| variables | plain | array | List of box variables, each variable object contains the parameters: type, name and value. |
+| members | plain | array | List of Box members. |
+| owner | plain | string | Box owner. |
+| id | plain | array | Box unique identificator. |
+| icon | plain | string | Box icon uri. |
+| visibility | plain | string | Indicates at what level the box is visible. By default, boxes are visible to the workspace they’re created in. Can have one of these values: <li>public: Visible to ElasticBox users across all organizations.</li> <li>organization: Visible to all users in the organization where the box was created.</li> <li>workspace: By default, the box is visible only to members of the workspace where it was created.</li> |
+| organization | plain | string | Organization to which the box belongs. |
+| name | plain | string | Box name. |
+| created | plain | string | Creation date. |
+| uri | plain | string | Box uri. |
+| version | plain | object | The box version object contains the parameters box, description and workspace. |
+| events | plain | array | List of Box events, there may be nine event lists: configure, dispose, install, pre_configure, pre_dispose, pre_install, pre_start, pre_stop, start and stop. |
+| event | plain | object | Event contained in one of the event lists, each event object contains the  parameters: url, upload_date, length and destination_path. |
+| schema | plain | string | Box schema uri. |
 
-![box30.png](../images/ElasticBox/box30.png)
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
 ```
 Body:
@@ -811,9 +1044,20 @@ Body:
 
 ```
 
+
 **Response parameters**
 
-![box31.png](../images/ElasticBox/box31.png)
+| Parameter | Style | Type | Description |
+|-----------|-------|------|-------------|
+| box_variables | plain | object | Differences in the box variables, the object contains a title and three lists: removed, added and changed. |
+| box_variables.removed | plain | array | List of box variables removed, each variable object contains the parameters: type, name and value. |
+| box_variables.added | plain | array | List of box variables added, each variable object contains the parameters: type, name and value. |
+| box_variables.changed | plain | array | List of box variables changed, each variable object contains the parameters: type, name and value. |
+| box_details | plain | object | Differences in the box details, the object contains a title and three lists: removed, added and changed. |
+| box_profile_properties | plain | object | Differences in the box profile properties, the object contains a title and three lists: removed, added and changed. Available for Policy boxes. |
+| box_events | plain | array | List of box events. |
+| changed | plain | boolean | There have been changes between versions. |
+
 
 ```
 {
@@ -874,6 +1118,7 @@ Body:
   "changed": true
 }
 ```
+
 ### Create and Launch a CloudFormation Box
 
 **Create a CloudFormation box with template**
@@ -882,14 +1127,14 @@ Body:
 Creates a box of the CloudFormation service type. See example create a CloudFormation.
 
 2. [GET /services/blobs/download/{file_id}/{file_name}](./api-blobs.md)
-Fetches contents from a given file or URL. See example create a CloudFormation part 2.
+Fetches contents from a given file or URL. See example create a CloudFormation, part 2.
 Submits a blank JSON template as a blob.
 
 3. [POST /services/blobs/upload/{file_name}](./api-blobs.md)
-Creates a blob from template data submitted through a file or URL. Here template data is in the request body. See example create a CloudFormation part 3.
+Creates a blob from template data submitted through a file or URL. Here template data is in the request body. See example create a CloudFormation, part 3.
 
 4. [PUT /services/boxes/{box_id}](./api-boxes.md)
-Updates the CloudFormation box with the template. See example create a CloudFormation part 4.
+Updates the CloudFormation box with the template. See example create a CloudFormation, part 4.
 
 **Modify the CloudFormation Template**
 
@@ -897,7 +1142,7 @@ Updates the CloudFormation box with the template. See example create a CloudForm
 Creates a blob from modified template data. See example modify a CloudFormation.
 
 2. [PUT /services/boxes/{box_id}](./api-boxes.md)
-Updates the CloudFormation box. See example modify a CloudFormation part 2.
+Updates the CloudFormation box. See example modify a CloudFormation, part 2.
 
 **Delete a CloudFormation Box**
 
@@ -906,7 +1151,7 @@ Removes the CloudFormation box from the boxes catalog.
 
 **Launch a CloudFormation Box**
 
-1. POST /services/profiles
+1. [POST /services/profiles](./api-blobs.md)
 This step is optional. Passes deployment settings in a new deployment profile to launch the box in the provider’s infrastructure. See example launch a CloudFormation.
 
 2. [POST /services/instances](./instances-api.md)
@@ -916,23 +1161,28 @@ Creates a new instance of the CloudFormation box.
 
 1. [POST /services/blobs/upload](./api-blobs.md)
 Uploads the modified template data. See example update a CloudFormation.
-PUT /services/instances/{instance_id}
+
+2. [PUT /services/instances/{instance_id}](./instances-api.md)
 Updates the instance with the template changes. See example update a CloudFormation part 2.
 
-2. [PUT /services/instances/{instance_id}/reconfigure](./instances-api.md)
+3. [PUT /services/instances/{instance_id}/reconfigure](./instances-api.md)
 Reconfigures the stack based on the changes. See example update a CloudFormation part 3.
 
 ### Example: Create a CloudFormation box with template
 
-1. POST https://elasticbox.com/services/boxes/
+**1. POST https://elasticbox.com/services/boxes/**
 
 Creating a box of the CloudFormation service type.
 
 **Request**
 
-![box32.png](../images/ElasticBox/box32.png)
+```
+Headers:
 
-**Response**
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
 ```
 Body:
@@ -943,8 +1193,8 @@ Body:
     "name":"Wordpress Starter CF",
     "description":"Wordpress Started for our showcase"
 }
-
 ```
+
 **Response**
 
 ```
@@ -969,13 +1219,19 @@ Body:
 
 ```
 
-2. GET https://elasticbox.com/services/blobs/download/{blob_id}/file_name
+**2. GET https://elasticbox.com/services/blobs/download/{blob_id}/file_name**
 
 Fetches contents from a given URL. Once we have checked that the template is the right one, we could assign it to the CloudFormation box.
 
 **Request**
 
-![box33.png](../images/ElasticBox/box33.png)
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
 **Response**
 
@@ -992,9 +1248,11 @@ Fetches contents from a given URL. Once we have checked that the template is the
          "AllowedPattern":"[\\x20-\\x7E]*",
          "ConstraintDescription":"can contain only ASCII characters."
       },
-      ...
-   },
-   ...
+    ...
+   }
+...
+...
+
    "Outputs":{
       "WebsiteURL":{
          "Value":{
@@ -1016,19 +1274,23 @@ Fetches contents from a given URL. Once we have checked that the template is the
       }
    }
 }
-
 ```
 
-3. POST https://elasticbox.com/services/blobs/upload/template.json
+**3. POST https://elasticbox.com/services/blobs/upload/template.json**
 
 Another option is to create the template from the data submitted through a URL.
 
 **Request**
 
-![box34.png](../images/ElasticBox/box34.png)
+```
+Headers:
 
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
 ```
 
+```
 Body:
 
 {
@@ -1043,9 +1305,10 @@ Body:
          "AllowedPattern":"[\\x20-\\x7E]*",
          "ConstraintDescription":"can contain only ASCII characters."
       },
-      ...
+    ...
    },
-   ...
+...
+...
    "Outputs":{
       "WebsiteURL":{
          "Value":{
@@ -1081,13 +1344,19 @@ Body:
 }
 ```
 
-4. PUT https://elasticbox.com/services/boxes/{box_id}
+**4. PUT https://elasticbox.com/services/boxes/{box_id}**
 
 Finally we are going to update the CloudFormation box with one of the templates we have obtained in the last two steps.
 
 **Request**
 
-![box35](../images/ElasticBox/box35.png)
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
 ```
 Body:
@@ -1112,6 +1381,7 @@ Body:
     }
 }
 ```
+
 **Response**
 
 ```
@@ -1159,13 +1429,19 @@ Body:
 
 ### Example: Modify the CloudFormation Template
 
-1. POST http://elasticbox.com/services/blobs/upload/template.json
+**1. POST http://elasticbox.com/services/blobs/upload/template.json**
 
 Creates a blob from modified template data.
 
 **Request**
 
-![box36](../images/ElasticBox/box41.png)
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
 ```
 Body:
@@ -1208,6 +1484,7 @@ Body:
     }
 }
 ```
+
 **Response**
 
 ```
@@ -1218,13 +1495,20 @@ Body:
    "content_type":"text/x-shellscript"
 }
 ```
-2. PUT http://elasticbox.com/services/boxes/{box_id}
+
+**2. PUT http://elasticbox.com/services/boxes/{box_id}**
 
 Updates the CloudFormation box.
 
 **Request**
 
-![box37](../images/ElasticBox/box37.png)
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
 ```
 Body:
@@ -1249,6 +1533,7 @@ Body:
     }
 }
 ```
+
 **Response**
 
 ```
@@ -1296,13 +1581,19 @@ Body:
 
 ### Example: Launch a CloudFormation Box
 
-1. POST https://elasticbox.com/services/instances
+**1. POST https://elasticbox.com/services/instances**
 
 Creates a new instance of the CloudFormation box.
 
 **Request**
 
-![box38](../images/ElasticBox/box38.png)
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
 ```
 Body:
@@ -1338,6 +1629,7 @@ Body:
   }
 }
 ```
+
 **Response**
 
 ```
@@ -1460,13 +1752,19 @@ Body:
 
 ### Example: Update a CloudFormation Stack in Real-Time
 
-1. POST http://elasticbox.com/services/blobs/upload/simple_template.json
+**1. POST http://elasticbox.com/services/blobs/upload/simple_template.json**
 
 Uploads the modified template data.
 
 **Request**
 
-![box39](../images/ElasticBox/box39.png)
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
 ```
 Body:
@@ -1492,13 +1790,19 @@ Body:
 }
 ```
 
-2. PUT http://elasticbox.com/services/instances/{instance_id}
+**2. PUT http://elasticbox.com/services/instances/{instance_id}**
 
 Updates the instance with the template changes.
 
 **Request**
 
-![box40](../images/ElasticBox/box40.png)
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
 ```
 {
@@ -1527,7 +1831,9 @@ Updates the instance with the template changes.
     },
     "updated": "2015-10-28 13:46:55.247211",
     "automatic_updates": "off",
-    "requirements": [],
+    "requirements": [
+
+    ],
     "description": "CF test",
     "created": "2015-10-27 12:11:24.734064",
     "deleted": null,
@@ -1615,6 +1921,7 @@ Updates the instance with the template changes.
   "icon": null
 }
 ```
+
 **Response**
 
 ```
@@ -1735,13 +2042,19 @@ Updates the instance with the template changes.
 }
 ```
 
-3. PUT http://elasticbox.com/services/instances/{instance_id}/reconfigure
+**3. PUT http://elasticbox.com/services/instances/{instance_id}/reconfigure**
 
 Reconfigures the stack based on the changes.
 
 **Request**
 
-![box41](../images/ElasticBox/box41.png)
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
 ```
 Body:
@@ -1751,16 +2064,14 @@ Body:
    "method":"reconfigure"
 }
 ```
+
 **Response**
 
 None.
 
 ### Contacting ElasticBox Support
+We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
-
-For issues related to API calls, send the request body along with details related to the issue.
-
-In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
-Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
+* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
+* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

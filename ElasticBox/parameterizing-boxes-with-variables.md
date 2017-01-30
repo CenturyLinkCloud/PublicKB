@@ -7,7 +7,7 @@
 
 An application’s deployment lifecycle is parameterized in boxes using variables. Parameters denote dynamic data like database connection strings, endpoints, and application settings. Since you can’t know all possible values for the different environments and don’t want to hard-code sensitive information like passwords, it’s a good idea to define such data as variables.
 
-It works like this: define variables in box automation. Then refer to them in box [event scripts](../ElasticBox/start-stop-and-upgrade-boxes.md) with Jinja templating [syntax](../ElasticBox/syntax-for-variables.md). For each environment like development, staging, production, you can customize deployments by passing different values to the variables. ElasticBox executes the event scripts replacing variables with the values you give at deploy time.
+It works like this: define variables in box automation. Then refer to them in box [event scripts](./start-stop-and-upgrade-boxes.md) with Jinja templating [syntax](./syntax-for-variables.md). For each environment like development, staging, production, you can customize deployments by passing different values to the variables. ElasticBox executes the event scripts replacing variables with the values you give at deploy time.
 
 Boxes support eight variable types depending on the data type or usage like any programming language. They are box, binding, port, text, file, options, password, and number.
 
@@ -33,12 +33,12 @@ Mark variables like port, text, file, options, password, and number as required 
 
 **Variable Visibility**
 
-A few settings such as Public, Private, and Internal determine variable privacy. Variables have public visibility if you don’t set anything.
+A few settings such as **Public**, **Private**, and **Internal** determine variable privacy. Variables have public visibility if you don’t set anything.
 
 **Public:**
 
-Allows customizing values at deploy time.
-Allows parent boxes and bindings to see and access values.
+* Allows customizing values at deploy time.
+* Allows parent boxes and bindings to see and access values.
 
 **Private:**
 
@@ -46,14 +46,14 @@ Same as the public setting except that bindings can’t access their values.
 
 **Internal:**
 
-Hides variables at deploy time.
-Bindings can’t access their values.
+* Hides variables at deploy time.
+* Bindings can’t access their values.
 
 ### Box Type
 
 Add a box type variable to consume the configuration of another box in your workspace. This is how you stack to achieve multi-tier applications. Child boxes within deploy on the same virtual infrastructure as the parent box.
 
-Stack as many child boxes as you like, as long as they match the parent box Windows or Linux type. To understand the order in which parent and child box scripts execute, see [Event Execution Order](../ElasticBox/start-stop-and-upgrade-boxes.md).
+Stack as many child boxes as you like, as long as they match the parent box Windows or Linux type. To understand the order in which parent and child box scripts execute, see [Event Execution Order](./start-stop-and-upgrade-boxes.md).
 
 ![parameterizingboxeswithvariables1.png](../images/ElasticBox/parameterizingboxeswithvariables1.png)
 
@@ -89,11 +89,11 @@ Bindings provide component connectivity for mutli-tier applications, load balanc
 
 **Defining Bindings**
 
-In this section, we look at how to define bindings. To connect instances at deploy time using bindings, [see here](../ElasticBox/managing-multi-tier-applications.md).
+In this section, we look at how to define bindings. To connect instances at deploy time using bindings, [see here](./managing-multi-tier-applications.md).
 
 To define a binding, add a variable of type Binding. Then set its criteria in one of two ways:
 
-* Any Box Instance. In the Value drop-down, select Any Box Instance to bind to any active instance in the current workspace.
+* Any Box Instance. In the Value drop-down, select **Any Box Instance** to bind to any active instance in the current workspace.
 
     ![parameterizingboxeswithvariables2.png](../images/ElasticBox/parameterizingboxeswithvariables2.png)
 
@@ -116,7 +116,7 @@ In this example, for a binding called bindingA, we can get the connection data f
 
 To get value of a variable named connection_string, we apply this Jinja to look up the binding to the first deployed instance: `\{{ bindingA[0].connection_string }}`
 
-As an alternative to Jinja, you can do the same thing with text expressions. For example, since CloudFormation boxes don’t support event scripts, you can use text expression variables to process binding connections.
+As an alternative to Jinja, you can do the same thing with text expressions. For example, since CloudFormation boxes don’t support event scripts, you can use [text expression variables](./parameterizing-boxes-with-variables.md) to process binding connections.
 
 ### Port Type
 
@@ -166,7 +166,7 @@ More on file type variables:
 
 * Each file can be as large as 10 MB.
 * Use an event script on the box to download the file to the virtual machine when deploying.
-* Files can contain variable references, including box or binding type variables. But to act on them, you must execute the file with a [Config command](../ElasticBox/elasticbox-commands.md) in a box event script.
+* Files can contain variable references, including box or binding type variables. But to act on them, you must execute the file with a [Config command](./elasticbox-commands.md) in a box event script.
 
 ### Example
 
@@ -233,10 +233,8 @@ echo This returns the value of ${COUNT}
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
-For issues related to API calls, send the request body along with details related to the issue.
-
-In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
-Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
+* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
+* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

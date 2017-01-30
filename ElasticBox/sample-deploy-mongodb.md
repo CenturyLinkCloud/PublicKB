@@ -41,6 +41,7 @@ password=$2
 ### Authenticate with ElasticBox
 
 All API calls start with signing in to the ElasticBox website and [getting an authentication token](./api-overview-and-access.md). You use this token to perform tasks in your ElasticBox workflow. In this example, we pass the token in the format as shown to all of the API requests that relate to deploying MongoDB.
+
 ```
 ElasticBox-Token:8ccc8203-2efd-44a9-8819-e95fd2277be2
 ```
