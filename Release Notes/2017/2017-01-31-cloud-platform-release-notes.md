@@ -8,7 +8,7 @@
 
 ### New Features (1)
 
-* __New Metadata API.__
+* __Runner: New Metadata API.__
 
   * New API to support CRUD operations on metadata.
     Including the creation of configuration and instance data types.
