@@ -12,7 +12,7 @@ The Ecosystem Provider Portal &ndash; or EPP &ndash; is an application that allo
 
 Sign into the [Provider Portal](http://provider-portal.staging.ctl.io/#/login) using your credentials. You will be redirected to the Welcome screen.
 
-![EPP1](../images/EPP1.png)
+![EPP1](../../images/EPP1.png)
 
 ### Company Information
 
@@ -22,14 +22,14 @@ Click the **Company Information** tab. This will take you to your **Provider Det
 - Click the **Preview** tab to see how your markdown will render.
 - Click **Save** once you are satisfied.
 
-![EPP2](../images/EPP2.png)
+![EPP2](../../images/EPP2.png)
 
 ### Creating a New Product
 
 From within your **Provider Details** page, a list of your products that have been added to the Marketplace will be listed. If you're a new Provider, you may not see any products listed.
 To add a new product simply click the green **add product** button.
 
-![EPP3](../images/EPP3.png)
+![EPP3](../../images/EPP3.png)
 
 This will display a blank **Product Details** form.
 
@@ -37,7 +37,7 @@ This will display a blank **Product Details** form.
 * Enter Version (optional).
 * Click **Create**.
 
-![EPP4](../images/EPP4.png)
+![EPP4](../../images/EPP4.png)
 
 Once you click **Create** an updated **Product Details** page will appear with additional fields to fill out regarding the product.
 
@@ -45,7 +45,7 @@ Once you click **Create** an updated **Product Details** page will appear with a
 	- Files must be 1MB or smaller.
 	- Accepts the following image file types: PNG, BMP, JPG or GIF.
 
-![EPP5](../images/EPP5.png)
+![EPP5](../../images/EPP5.png)
 
 Next, complete the additional fields. Notice, some fields are required, while others are optional.    
 
@@ -90,7 +90,7 @@ Click **Create** at top or bottom of form.
 
 Click **Request Publication** at the bottom of the form.
 
-![EPP6](../images/EPP6.png)
+![EPP6](../../images/EPP6.png)
 
 *This will send a request to the CenturyLink Marketplace team to review and publish your product. If there are any questions/issues regarding the submission, a Marketplace team member will reach out to you directly. Otherwise your product will be published within two business days.*
 
@@ -125,12 +125,12 @@ It is required that partners enter an End User License Agreement(EULA) for each 
 To add the (EULA) sign in to the EPP and navigate to the **Product** tab in the top navigation bar.
 This will take you to the product details page for your company.
 
-![EPP7](../images/EPP7.png)
+![EPP7](../../images/EPP7.png)
 
 Click on a product to add the (EULA) to.
 Once within the product click on the **Legal** tab in the far left side of the page.
 
-![EPP8](../images/EPP8.png)
+![EPP8](../../images/EPP8.png)
 
 Within the **Legal** tab you can add, edit, and preview the (EULA).
   - This field accepts markdown.
@@ -148,7 +148,7 @@ This will take you to the product details page for your company.
 Click on a product to add the service task information to.
 Once within the product click on the **Service** tab in the far left side of the page.
 
-![EPP11](../images/EPP11.png)
+![EPP11](../../images/EPP11.png)
 
 Fill in the required fields.
 If you need assistance within this tab reach out to the [Ecosystem team](mailto:support@ecosystem@ctl.io).
@@ -159,11 +159,11 @@ If you need assistance within this tab reach out to the [Ecosystem team](mailto:
 
 **A:** If you forget your password for signing into the Provider Portal, just click Forgot your password?
 
-![EPP9](../images/EPP9.png)
+![EPP9](../../images/EPP9.png)
 
 This will display a new form where you input your user name, and a new password will be emailed to you.
 
-![EPP10](../images/EPP10.png)
+![EPP10](../../images/EPP10.png)
 
 **Q: What if I forget my User Name?**
 
@@ -189,11 +189,11 @@ A:
 
 Selecting **Preview** above a form field lets you see how the markdown you entered for that field will render. Below is how markdown content will render in **Edit** mode.
 
-  ![EPP12](../images/EPP12.png)
+  ![EPP12](../../images/EPP12.png)
 
 Here's how that same content appears when rendered in **Preview** mode.
 
-  ![EPP13](../images/EPP13.png)
+  ![EPP13](../../images/EPP13.png)
 
 2.	**Product Details Page: Edit vs. Preview**
 
@@ -202,11 +202,11 @@ Clicking the **Preview** button at top or bottom of the **Product Details** page
 
 Below is what it looks like in **Edit** mode.
 
-![EPP14](../images/EPP14.png)
+![EPP14](../../images/EPP14.png)
 
 Now let's see what it looks like in **Preview** mode.
 
-![EPP15](../images/EPP15.png)
+![EPP15](../../images/EPP15.png)
 
 These modes are helpful to check your overall markdown, however, it is still not how the customer will see your product.
 
@@ -214,17 +214,17 @@ These modes are helpful to check your overall markdown, however, it is still not
 
 Clicking **Preview** in Marketplace at the top of the form allows you to view exactly how your product will be presented on the Marketplace to customers.
 
-![EPP16](../images/EPP16.png)
+![EPP16](../../images/EPP16.png)
 
 Here's how that same product will appear in Marketplace (**preview mode**).
 
-![EPP17](../images/EPP17.png)
+![EPP17](../../images/EPP17.png)
 
 Once you're in the Marketplace **preview mode**, you can also click switch to **published mode**, but only after your product has been published.
 
 **Q: I clicked “switch to published mode” but see a 404 page. Why am I getting this error?**
 
-![EPP18](../images/EPP18.png)
+![EPP18](../../images/EPP18.png)
 
 **A:** You may have already completed your data entry and requested publication, but your product won’t be viewable in published mode until the CenturyLink Cloud Marketplace Team has approved and published it.
 
