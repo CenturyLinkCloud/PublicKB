@@ -11,6 +11,7 @@ For the upgrade process to the new virtual appliance, please follow the steps be
 
 1. Shutdown and backup your ElasticBox appliance with your preferred method, i.e., clone.
 2. Switch the old appliance device root storage to have its data exported to an external virtual disk.
+
    **Note**: The virtual appliance, by default, requires 100 GB of virtual disk space. For increased storage capacity and faster performance, attach a new virtual disk to the VM which will act as the primary storage device for the appliance. **Please do this before you initiate the ElasticBox service on the virtual appliance**. See steps a-d:
    * In vSphere vCenter, power off the VM and attach a second virtual disk with more CPU, RAM, and disk space. For more information, see the vCenter 5.0 and vCenter 5.5 help guide.
    * Power on the VM appliance. In the appliance **Setup Console** under **Block Device**, select the second disk as the primary appliance storage.
@@ -30,7 +31,7 @@ In case you experience any issues, [contact support](mailto:support@elasticbox.c
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log

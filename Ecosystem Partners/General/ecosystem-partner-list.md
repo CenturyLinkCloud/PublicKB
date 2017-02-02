@@ -73,11 +73,11 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Chef Server](../Marketplace Guides/getting-started-with-chef-server-blueprint.md)   	| Blueprint    | Configuration management    |
 | [Docker Machine](../Marketplace Guides/getting-started-with-docker-machine.md)   	| Blueprint    | Automated Docker provisioning |
 | [Docker Trusted Registry](../Marketplace Guides/getting-started-with-docker-trusted-registry-blueprint.md)   	| Blueprint    | Store and manage Docker images within CenturyLink Cloud |
-| [Dynatrace](../Marketplace Guides/getting-started-with-dynatrace-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
+| [Dynatrace AppMon](../Marketplace Guides/getting-started-with-dynatrace-blueprints.md)   	| Blueprint    | Application performance monitoring (APM)    |
 | [HPE LoadRunner](../Marketplace Guides/getting-started-with-hp-loadrunner-blueprint.md)   	| Blueprint    | Load Testing    |
 | [Mesosphere](../Marketplace Guides/getting-started-with-mesosphere-blueprint.md)   	| Blueprint    | Datacenter operating system |
 | [Rundeck](../Marketplace Guides/getting-started-with-rundeck-blueprint.md)   	| Blueprint    | Job scheduler and runbook automation   |
-| [Ruxit](../Marketplace Guides/getting-started-with-ruxit-blueprint.md)   	| Blueprint    | Application performance monitoring (APM)   |
+| [Dynatrace SaaS](../Marketplace Guides/getting-started-with-ruxit-blueprint.md)   	| Blueprint    | Application performance monitoring (APM)   |
 
 
 ### Development Toolchain

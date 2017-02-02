@@ -5,7 +5,7 @@
   "attachments": [],
   "contentIsHTML": false
 }}}
-### Table of Content
+### Table of Contents
 * [Overview](#overview)
 * [Socket to vCPU Allocation](#socket-to-vcpu-allocation)
 * [Prerequisites](#prerequisites)
@@ -40,6 +40,8 @@ It is recommended customers review our delivery model for [Sockets to vCPU](../S
 * Microsoft SQL Server 2012 Enterprise Edition
 * Microsoft SQL Server 2014 Standard Edition
 * Microsoft SQL Server 2014 Enterprise Edition
+* Microsoft SQL Server 2016 Standard Edition
+* Microsoft SQL Server 2016 Enterprise Edition
 
 ### Important Information
 * The costs shown in the Blueprint UI do not include licenses fees, only managed services fees

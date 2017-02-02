@@ -21,17 +21,20 @@ Once you install the appliance, set it up for others in your organization to use
 ### Initial ElasticBox Setup
 
 **Steps**
-1. Log in to ElasticBox on the appliance
-2. Get the ElasticBox IP address from the appliance VM console.
-   ![appliance-setup1.png](../images/ElasticBox/appliance-setup1.png)
-   Log in to ElasticBox with the default appliance admin credentials:
 
+1. Log in to ElasticBox on the appliance
+
+   * Get the ElasticBox IP address from the appliance VM console.
+   ![appliance-setup1.png](../images/ElasticBox/appliance-setup1.png)
+
+   Log in to ElasticBox with the default appliance admin credentials:
    * username: **admin@elasticbox.com**
    * password: elasticbox123
 
    ![appliance-setup2.png](../images/ElasticBox/appliance-setup2.png)
 
-3. Set up ElasticBox.
+2. Set up ElasticBox.
+
    From the menu drop-down at the top right, click **Setup Console**. From this page, you can manage settings for the appliance.
    ![appliance-setup3.png](../images/ElasticBox/appliance-setup3.png)
 
@@ -42,7 +45,8 @@ Once you install the appliance, set it up for others in your organization to use
    * Optionally, enable outbound for notifications.
    * Optionally, switch the appliance device storage to increase storage or processing speed.
 
-4. Create a new admin account for your enterprise
+3. Create a new admin account for your enterprise
+
    Follow this step if using the ElasticBox Enterprise Edition.
    ElasticBox provides a default appliance admin account, which gives full access to manage the appliance and administer ElasticBox settings for your organization. This is like a master key, so use it only in case of emergency. To administer the appliance and ElasticBox on a regular basis, create and use a fresh admin account.
 
@@ -51,10 +55,11 @@ Once you install the appliance, set it up for others in your organization to use
    Log back in as the appliance admin using the credentials in step 1. Add your new user account as an administrator in the Admin Console. Going forward, use this admin account to manage the appliance and settings for your organization.
 
 ### Changing the ElasticBox Hostname
-Hostname is a friendly name for the ElasticBox IP address for example, yourcompany.com:80 or name.example.com:443. The hostname should point to the IP adress of the appliance virtual machine. To allow users to connect, also make sure your network firewall allows inbound traffic to the appliance IP address via TCP ports 80, 443, 5671, and 5672.
+Hostname is a friendly name for the ElasticBox IP address for example, yourcompany.com:80 or name.example.com:443. The hostname should point to the IP address of the appliance virtual machine. To allow users to connect, also make sure your network firewall allows inbound traffic to the appliance IP address via TCP ports 80, 443, 5671, and 5672.
 ![appliance-setup4.png](../images/ElasticBox/appliance-setup4.png)
 
 **Steps**
+
 1. Browse to ElasticBox with the IP address in the appliance console and log in as an admin.
 2. From the menu drop-down at the top right, click **Setup Console**.
 3. Under Hostname, specify a valid IP or hostname that resolves to a valid IP address. Make sure that it’s a fully qualified domain name that meets the following criteria:
@@ -64,6 +69,7 @@ Hostname is a friendly name for the ElasticBox IP address for example, yourcompa
    * Users in the network can browse to the ElasticBox UI.
 
 4. When done, scroll down and click **Save Settings**.
+
    **IMPORTANT:** When you change the hostname, any instances you launched previously can potentially become unavailable if the appliance obtains its IP address dynamically. To avoid this, set a static address for the appliance.
 
 ### Changing the Appliance Admin Account Password
@@ -96,7 +102,7 @@ This shows the network time protocol (NTP) setting on the appliance. By default,
 4. When done, scroll down and click **Save Settings**.
 
 | Setting | Description |
-|-----------|-----------------|
+|---------|-------------|
 | Primary <br> NTP Server | URL or IP address of the primary NTP server. |
 | Secondary <br> NTP Server | Optional. URL or IP address of the secondary NTP server. |
 | Time Zone | Appliance host system time zone. |
@@ -112,7 +118,7 @@ We recommend that you specify SMTP server settings to be able to auto send outbo
 4. When done, click **Save Settings**.
 
 | Setting | Description |
-|-----------|-----------------|
+|---------|-------------|
 | Server Address | Specify the hostname or IP address of the SMTP mail server, for example, smtp.example.com. |
 | Port | Typically, you can specify 25 for SMTP and 465 for SMTPS. |
 | No-Reply Address | Specify the email address to use in the sender address (or from) field of notification messages. |
@@ -134,7 +140,7 @@ When you install the appliance, the appliance VM by default gets 100 GB of virtu
 When you switch the disk, the appliance reboots and becomes unavailable for a few minutes. In that time, it copies over existing data from the other disk like specific appliance settings, logs, the database, and the saved state of RabbitMQ. It also copies all the generated data to the second disk. When the appliance VM is back online, you can start using ElasticBox.
 
 ### Contacting ElasticBox Support
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log

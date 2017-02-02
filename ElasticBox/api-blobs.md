@@ -1,19 +1,20 @@
 {{{
-"title": "API Blobs",
+"title": "Blobs API",
 "date": "09-01-2016",
 "author": "",
 "attachments": [],
 "contentIsHTML": false
 }}}
+
 **Manage Blobs**
 
-**Resource**|**Description**
-------------|----------
-[POST /services/blobs/upload](./api-blobs.md) | Uploads a file using multi-part form data.
-[POST /services/blobs/upload/{file_name}](./api-blobs.md) | Creates a blob from submitted data.
-[GET /services/blobs/download/{file_id}/{file_name}](./api-blobs.md) | Downloads a file uploaded previously.
+| Resource | Description |
+|----------|-------------|
+| POST /services/blobs/upload | Uploads a file using multi-part form data. |
+| POST /services/blobs/upload/{file_name} | Creates a blob from submitted data. |
+| GET /services/blobs/download/{file_id}/{file_name} | Downloads a file uploaded previously. |
 
-**POST /services/blobs/upload**
+### POST /services/blobs/upload
 
 Uploads a file using multi-part form data when you give these parameters in the request body: url, length, upload_date, and content_type.
 
@@ -25,11 +26,22 @@ Uploads a file using multi-part form data when you give these parameters in the 
 
 * Bad Request (400)
 
-![blob1](../images/ElasticBox/blob1.png)
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
 **Response Parameters**
 
-![blob2](../images/ElasticBox/blob2.png)
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| url | string | The URL of the uploaded file. |
+| length | integer | The file length in bytes. |
+| upload_date | string | The upload date. |
+| content_type | string | The content type of the file. |
 
 ```
 {
@@ -38,9 +50,9 @@ Uploads a file using multi-part form data when you give these parameters in the 
    "length":1287,
    "content_type":"image/png"
 }
-
 ```
-**POST /services/blobs/upload/{file_name}**
+
+### POST /services/blobs/upload/{file_name}
 
 Creates a blob from submitted data when you give the file name.
 
@@ -52,20 +64,78 @@ Creates a blob from submitted data when you give the file name.
 
 **Request Parameters**
 
-![blob3](../images/ElasticBox/blob3.png)
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tags | string | Box tags. |
+| bindings | string | List of Box bindings. |
+| binding | object | Binding contained in the bindings list, each binding have a box and a name. |
+| owner | string | Box owner, the user name for a personal workspace and the workspace name for a team workspace. |
+| name | string | Box name. |
+| description | string | Box description. |
+| service | string | Required. Can be one of these types: Linux Compute, Windows Compute, CloudFormation Service, MySQL Database Service, Microsoft SQL Database Service, Oracle Database Service, PostgreSQL Database Service, Memcached Service, S3 Bucket, and Dynamo DB Domain. |
+| icon | string | Icon url. |
+| schema | string | Box schema. |
 
-![blob4](../images/ElasticBox/blob4.png)
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
 
 **Response Parameters**
 
-![blob5](../images/ElasticBox/blob5.png)
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| url | string | The URL of the uploaded file. |
+| length | integer | The file length in bytes. |
+| upload_date | string | The upload date. |
+| content_type | string | The content type of the file. |
+
+```
+{
+   "url":"/services/blobs/download/53357ac57d0083310b7c960b/miblob",
+   "upload_date":"2014-03-28 13:36:05.227905",
+   "length":143951,
+   "content_type":"multipart/form-data"
+}
+```
+
+### GET /services/blobs/download/{file_id}/{file_name}
+
+Downloads a file uploaded previously when you give the file_id and the file_name. You can get the full download URL from the response body of the file upload request.
+
+**Normal Response Codes**
+
+* 200
+
+**Error Response Codes**
+
+* Bad Request (400)
+
+**Request**
+
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
+
+**Response Parameters**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| url | string | The URL of the uploaded file. |
+| length | integer | The file length in bytes. |
+| upload_date | string | The upload date. |
+| content_type | string | The content type of the file. |
 
 ### Contacting ElasticBox Support
+We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
-
-For issues related to API calls, send the request body along with details related to the issue.
-
-In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
-Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
+* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
+* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

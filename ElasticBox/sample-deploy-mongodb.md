@@ -8,7 +8,7 @@
 
 ### Sample: Deploy a MongoDB instance via the API
 
-Here you can see how to deploy a mongoDB instance using the ElasticBox API. Typically you want to structure API calls to mirror your workflow in ElasticBox. Most workflows involve tasks such as these: defining a [box](../ElasticBox/boxes.md), for example a Jenkins box to automate continuous integration and delivery; registering a [provider](../ElasticBox/providers.md) like AWS, Google Cloud, vSphere, OpenStack, or CloudStack to host your box application deployments; creating a [deployment profile](../ElasticBox/deploying-managing-instances.md) to specify provider specific options for a deployment; deploying an instance to launch a box in the virtual environment; or performing lifecycle tasks like deploying, reconfiguring, and terminating an instance.
+Here you can see how to deploy a mongoDB instance using the ElasticBox API. Typically you want to structure API calls to mirror your workflow in ElasticBox. Most workflows involve tasks such as these: defining a [box](./boxes.md), for example a Jenkins box to automate continuous integration and delivery; registering a [provider](./providers.md) like AWS, Google Cloud, vSphere, OpenStack, or CloudStack to host your box application deployments; creating a [deployment profile](./deploying-managing-instances.md) to specify provider specific options for a deployment; deploying an instance to launch a box in the virtual environment; or performing lifecycle tasks like deploying, reconfiguring, and terminating an instance.
 
 In this sample, we follow this workflow to deploy a MongoDB instance using the existing MongoDB public box:
 
@@ -40,7 +40,8 @@ password=$2
 
 ### Authenticate with ElasticBox
 
-All API calls start with signing in to the ElasticBox website and [getting an authentication token](../ElasticBox/api-overview-and-access.md). You use this token to perform tasks in your ElasticBox workflow. In this example, we pass the token in the format as shown to all of the API requests that relate to deploying MongoDB.
+All API calls start with signing in to the ElasticBox website and [getting an authentication token](./api-overview-and-access.md). You use this token to perform tasks in your ElasticBox workflow. In this example, we pass the token in the format as shown to all of the API requests that relate to deploying MongoDB.
+
 ```
 ElasticBox-Token:8ccc8203-2efd-44a9-8819-e95fd2277be2
 ```
@@ -179,7 +180,7 @@ while [ $COUNTER -lt $cycles_to_wait ]; do
 done
 ```
 
-### Terminate the instance
+### Terminate the Instance
 
 To remove the instance from the virtual machine, we send a DELETE request to the Instances object with the instance ID. Then we check its response status. If it’s 200, we say that the specific instance is terminated. Else, we output the error state from the response.
 
@@ -253,7 +254,7 @@ fi
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log

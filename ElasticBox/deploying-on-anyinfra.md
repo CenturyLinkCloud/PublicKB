@@ -1,4 +1,5 @@
-{{{ "title": "Deploying to Any Infrastructure",
+{{{
+"title": "Deploying to Any Infrastructure",
 "date": "09-01-2016",
 "author": "",
 "attachments": [],
@@ -9,8 +10,8 @@
 
 **In this article:**
 * Overview
-* [How to deploy with the ElasticBox agent](./deploying-and-managing-instances.md)
-* [ElasticBox agent command](./deploying-and-managing-instances.md)
+* How to deploy with the ElasticBox agent
+* ElasticBox agent command
 
 ### Overview
 
@@ -31,11 +32,15 @@ Run the ElasticBox agent on the Linux machine where you want to launch the box. 
 
 1. SSH into the machine to run the agent. Here as an example, we SSH into a Linux machine running Ubuntu 12.04 in AWS.
 
-`ssh -i /Users/mrina/Documents/AWS_Private_PublicKeyPairs/AWSEC2_KeyPair/useast-mrina.pem ec2-user@54.163.174.41`
+   ```
+   ssh -i /Users/mrina/Documents/AWS_Private_PublicKeyPairs/AWSEC2_KeyPair/useast-mrina.pem ec2-user@54.163.174.41
+   ```
 
 2. Launch an instance of a box using the the ElasticBox agent. In this example, we launch an instance of the public [MongoDB box](./sample-deploy-mongodb.md) in AWS.
 
-`curl -sLk https://ebx.co | sudo bash -s -- -b "MongoDB Server" -n "test" -V username=admin123 -V password=password12345 -t 314a36ad-74b6-4205-9e33-eac9970e4a1b`
+   ```
+   curl -sLk https://ebx.co | sudo bash -s -- -b "MongoDB Server" -n "test" -V username=admin123 -V password=password12345 -t 314a36ad-74b6-4205-9e33-eac9970e4a1b
+   ```
 
 ### ElasticBox Agent Command
 
@@ -43,8 +48,10 @@ Use cURL to download and run the agent with piped parameters.
 
 **Syntax**
 
-`curl -sLk https://ebx.co | sudo bash -s -- -b "<box name or ID>" -n "<environment nameID>" -t <your_authentication_tokenID> -V <variable_name="variable value"ID> [-o "ID<owner IDID>"] [-d] [-H] [h] [f]
-`
+```
+curl -sLk https://ebx.co | sudo bash -s -- -b "<box name or ID>" -n "<environment nameID>" -t <your_authentication_tokenID> -V <variable_name="variable value"ID> [-o "ID<owner IDID>"] [-d] [-H] [h] [f]
+```
+
 **Parameters**
 
 | **Parameter**  |  **Description** |
@@ -61,10 +68,8 @@ Use cURL to download and run the agent with piped parameters.
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screenshots where possible.
 
-For issues related to API calls, send the request body along with details related to the issue.
-
-In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
-Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
+* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
+* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

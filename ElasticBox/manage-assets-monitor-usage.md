@@ -8,7 +8,7 @@
 
 ### Manage ElasticBox Assets & Monitor Usage
 
-From the admin console, you get full purview over assets others created in your organization. This includes users, providers, boxes, instances, and workspaces. While you can control assets with some bulk actions, you get complete access as if you were its owner directly from the asset page linked from the console.
+From the [admin console](./admin-overview.md), you get full purview over assets others created in your organization. This includes users, providers, boxes, instances, and workspaces. While you can control assets with some bulk actions, you get complete access as if you were its owner directly from the asset page linked from the console.
 
 **In this article:**
 
@@ -28,7 +28,7 @@ In the admin console, **Users** shows a list of all users in the organization wh
 * Change their username if you need to.
 * In the **Unmanaged** tab, see which users signed up for ElasticBox with their company email, but are not added to your ElasticBox organization. This is likely if they signed up before your organization was officially created in ElasticBox. To add them to your organization, give us a list of these users. After that, you’ll see them under the **Managed** tab.
 * At a glance, you can tell when a user created their account to get an idea for when they started using ElasticBox.
-* To delete users or convert their personal workspace into a team one, see Workspaces.
+* To delete users or convert their personal workspace into a team one, see Workspaces below.
 
 ### Manage Providers
 
@@ -58,7 +58,7 @@ Take a look at all the instances in the organization by their state under **Inst
 
 ![admin-assets4.png](../images/ElasticBox/admin-assets4.png)
 
-* Select all the online instances and trigger instance actions in bulk from the Bulk Actions menu. You can trigger operations like reinstall, reconfigure, shut down, terminate. See what these [instance operations](../ElasticBox/deploying-managing-instances.md) mean.
+* Select all the online instances and trigger instance actions in bulk from the Bulk Actions menu. You can trigger operations like reinstall, reconfigure, shut down, terminate. See what these [instance operations](./deploying-managing-instances.md) mean.
 * Select all terminated instances and delete them at one shot.
 * Click the instance to access its page directly.
 * See to which provider an instance is deployed. Then go to the provider page to see who owns it.
@@ -97,7 +97,7 @@ With such insights you can enact best practices and policies to enable people to
 
 ### Contacting ElasticBox Support
 
-We’re sorry you’re having an issue in [ElasticBox](//www.ctl.io/elasticbox/). Please review the [troubleshooting tips](../ElasticBox/troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
+We’re sorry you’re having an issue in [ElasticBox](https://www.ctl.io/elasticbox/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [ElasticBox support](mailto:support@elasticbox.com) with details and screen shots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue. In the case of a box error, share the box in the workspace that your organization and ElasticBox can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
