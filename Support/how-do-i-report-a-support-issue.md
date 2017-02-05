@@ -64,7 +64,7 @@ Customers in the **Professional and Enterprise** support tier can leverage our r
 
 2. Provide your Account Alias, [user PIN](../Support/pin-authentication-for-support-requests.md) and description of the problem to the support engineer.
 
-#### Chat System Requirements
+##### Chat System Requirements
 * Supported operating systems: Windows XP, Vista, 7, 8, 8.1, 10, Mac OS X 10.8 and newer 
 * Supported browsers: Chrome 31 and newer, Mozilla Firefox 29 and newer, Internet Explorer 7 and newer, Safari 6 and newer, Opera 12 and newer
 
