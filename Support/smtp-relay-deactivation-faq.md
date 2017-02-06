@@ -7,7 +7,7 @@
 
 ### Description
 
-In September 2016, CenturyLink announced that we would be retiring our SMTP Relay Service by the end of the year. After hearing from customers about the challenges they faced when transitioning to a new service, we have decided to extend our End of Life (EOL) date to February 14, 2016. This way, we are able to ensure that our customers have enough time to carry out the necessary testing and implementation plans to facilitate successful migrations to alternative SMTP delivery services.
+In September 2016, CenturyLink announced that we would be retiring our SMTP Relay Service by the end of the year. After hearing from customers about the challenges they faced when transitioning to a new service, we have decided to extend our End of Life (EOL) date to February 14, 2017. This way, we are able to ensure that our customers have enough time to carry out the necessary testing and implementation plans to facilitate successful migrations to alternative SMTP delivery services.
 
 ### Deactivation Date
 
