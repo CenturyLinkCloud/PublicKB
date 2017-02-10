@@ -8,12 +8,6 @@
 
 <h3>Description&nbsp;</h3>
 <p>This KB will go over the basics of creating a Load Balancer VIP and Service Group when using dedicated Load Balancers</p>
-<h3>Prerequisites</h3>
-<ul>
-  <li>Must have a dedicated Netscaler available in your environment</li>
-  <li>Must have an Admin login to your netscaler</li>
-      <br />
-    </a
   </li>
   <li>Understand the basic architecture of how a Netscaler works. See KB:<a href="./load-balancing-dedicated-vs-shared.md">Load Balancing Dedicated vs Shared</a>
       <br />
