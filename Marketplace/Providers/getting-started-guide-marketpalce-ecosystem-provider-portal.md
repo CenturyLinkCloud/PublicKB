@@ -10,7 +10,7 @@ The Ecosystem Provider Portal (EPP) is an application that allows CenturyLink Cl
 
 ### Signing In
 
-Sign into the [Provider Portal](http://provider-portal.staging.ctl.io/#/login) using your credentials. You will be redirected to the Welcome screen.
+Sign into the [Provider Portal](http://provider-portal.ctl.io/#/login) using your credentials. You will be redirected to the Welcome screen.
 
 ![EPP1](../../images/EPP1.png)
 
@@ -84,7 +84,7 @@ From the **Provider Details** page, you can find a list of your products that ha
 
 ### Making Changes to a Product
 
-1. Log into the [Provider Portal](http://provider-portal.staging.ctl.io/#/login) and click the **Products** tab. This opens a window containing a list of your products that have been added to the Marketplace.
+1. Log into the [Provider Portal](http://provider-portal.ctl.io/#/login) and click the **Products** tab. This opens a window containing a list of your products that have been added to the Marketplace.
 
 2. Navigate to the **Product Details** page for the product you want to change.
 
@@ -114,7 +114,7 @@ This is a great way to simplify entering similar products into the Marketplace.
 
 It is a requirement that partners enter an End User License Agreement (EULA) for each product in the Marketplace. It is also the responsibility of the partner to ensure that the (EULA)s for their products in the Marketplace are kept current.
 
-1. To add the (EULA), sign into the [Provider Portal](http://provider-portal.staging.ctl.io/#/login) and navigate to the **Product** tab. This will take you to the product details page for your company.
+1. To add the (EULA), sign into the [Provider Portal](http://provider-portal.ctl.io/#/login) and navigate to the **Product** tab. This will take you to the product details page for your company.
 
 	 ![EPP7](../../images/EPP7.png)
 
@@ -136,7 +136,7 @@ It is a requirement that partners enter an End User License Agreement (EULA) for
 
 Some products are assigned service tasks. This is determined between the partner and the CenturyLink Ecosystem engineer during the integration process. If a product requires service tasks, you can add information as needed by accessing the **Service Task** tab per the directions below:
 
-1. Sign into the [Provider Portal](http://provider-portal.staging.ctl.io/#/login) and navigate to the **Product** tab. This takes you to the product details page for your company.
+1. Sign into the [Provider Portal](http://provider-portal.ctl.io/#/login) and navigate to the **Product** tab. This takes you to the product details page for your company.
 
 2. Click on a product to add service task information.
 
