@@ -8,7 +8,10 @@
 
 <p>MySQL&nbsp;is an open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL).</p>
 <p>Here's how to create a managed MySQL environment in CenturyLink Cloud.</p>
-<p><strong>1. </strong>Search for the "MySQL" in the Blueprint library. Then, click on the “CLC Managed Oracle MySQL Enterprise” Blueprint. After that, click on the deploy blueprint button.&nbsp;<strong><strong>NOTE: Before you can deploy Managed MySQL, you must create a Managed Red Hat server.</strong></strong>
+
+**NOTE**: Before you can deploy Managed MySQL, you must create a Managed Red Hat server.</strong></strong>
+
+<p><strong>1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**. Search for the "MySQL" in the Blueprint library. Then, click on the “CLC Managed Oracle MySQL Enterprise” Blueprint. After that, click on the **deploy blueprint** button.
 </p>
 <p><strong><img src="https://t3n.zendesk.com/attachments/token/ipTUFXewdtsL8lJwQvDbHtuWG/?name=mysql.png" alt="mysql.png" /></strong>
 </p>
@@ -31,7 +34,7 @@
 <p>A: CenturyLink Cloud Managed Oracle MySQL Enterprise is priced by the VM, billed hourly.</p>
 <p><strong>Q: What Versions of Oracle MySQL Enterprise are supported?</strong>
 </p>
-<p>A: CenturyLink Cloud Supports&nbsp;MySQL v5.5, MySQL 5.6.</p>
+<p>A: CenturyLink Cloud Supports&nbsp;MySQL v5.5, MySQL 5.6 and MySQL 5.7.</p>
 <p><strong>Q: What operating systems are supported for Managed Oracle MySQL?</strong>
 </p>
 <p>A: Managed Red Hat.

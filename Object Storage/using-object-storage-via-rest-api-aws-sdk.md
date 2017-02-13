@@ -1,41 +1,38 @@
 {{{
   "title": "Using Object Storage via REST API, AWS SDK",
-  "date": "1-7-2015",
+  "date": "01-07-2015",
   "author": "Richard Seroter",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
-<h3>Description</h3>
-<p><a href="http://www.ctl.io/object-storage">CenturyLink Cloud&nbsp;3 Object Storage</a> is an ideal repository for unstructured data ranging from media files to database backups. The Object Storage service is Amazon S3 compatible
-  which means that code and tools that work with Amazon S3 should work seamlessly with CenturyLink Cloud Object Storage. In this KB article, we'll show you how to use the raw REST API and the AWS SDK (for .NET and Node.js) to interact with Object Storage.</p>
-<h3>Audience</h3>
-<ul>
-  <li>Developers</li>
-</ul>
-<h3>Prerequisites</h3>
-<ul>
-  <li>Have users and buckets created in Object Storage. See the KB article <a href="using-object-storage-from-the-control-portal.md">Using Object Storage from the Control Portal</a> for a walkthrough of
-    users and buckets.</li>
-</ul>
-<h3>Using the Object Storage REST API from .NET</h3>
-<p>The CenturyLink Cloud Object Storage service is based on Riak CS Enterprise, which offers an Amazon S3-compatible web services endpoint. The endpoint has the same authentication, resources, and payloads as defined in the <a href="http://docs.aws.amazon.com/AmazonS3/latest/API/APIRest.html"
- >Amazon S3 documentation</a>. The steps below show how to consume Object Storage from a custom .NET application.&nbsp;<strong>Note that the <a href="https://github.com/Tier3/Examples/tree/master/ObjectStorage/Tier3.ObjectStorageViaAPI.DotNet">source code for this sample application</a> can be downloaded from GitHub.</strong>
-</p>
-<h4>Detailed Steps</h4>
-<ol>
-  <li>Go to the CenturyLink Cloud Control Portal to acquire your user credentials. First, find the&nbsp;<strong>Users</strong> tab on the Object Storage page.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/O3Dgbm3wtiqDBEDc2q40Gtq88/?name=01.png" alt="01.png" />
-  </li>
-  <li>Click on the user who owns the buckets (or has access to an individual bucket) that you want to access. Locate and record the&nbsp;<strong>access key id&nbsp;</strong>and <strong>secret access key</strong> values. These act as your credentials for all
-    API operations.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/0yttspxzxvt6zdl/?name=objectstorage-api03.png" alt="objectstorage-api03.png" />
-  </li>
-  <li>Create a new Visual Studio project. In this example, the project is a&nbsp;<strong>Console</strong> application.&nbsp;</li>
-  <li>Define a new "helper" function that can generate the <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html#ConstructingTheAuthenticationHeader">proper authentication header </a>that the service expects. The
-    function below accepts values used to generate the authentication string, and is encoded and signed.
-    <br />
-    <pre>///
+### Description
+CenturyLink Cloud [Object Storage](http://www.ctl.io/object-storage) is an ideal repository for unstructured data ranging from media files to database backups. The Object Storage service is Amazon S3 compatible which means that code and tools that work with Amazon S3 should work seamlessly with CenturyLink Cloud Object Storage. This KB article shows you how to use the raw REST API and the AWS SDK (for .NET and Node.js) to interact with Object Storage.
+
+### Audience
+* Developers
+
+### Prerequisites
+* Have users and buckets created in Object Storage.
+* See the KB article [Using Object Storage from the Control Portal](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) for a walkthrough of users and buckets.
+
+### Using the Object Storage REST API from .NET
+The CenturyLink Cloud Object Storage service offers an Amazon S3-compatible web services endpoint. The endpoint has the same authentication, resources, and payloads as defined in the [Amazon S3 documentation](http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html). The steps below show how to consume Object Storage from a custom .NET application. **Note** that the [source code for this sample application](https://github.com/Tier3/Examples/tree/master/ObjectStorage/Tier3.ObjectStorageViaAPI.DotNet) can be downloaded from GitHub.
+
+### Detailed Steps
+Log into the Control Portal to acquire your user credentials.
+
+1. From the Navigation Menu, Click **Services > Object Storage**. On the Object Storage page, click the **Users** tab.
+
+2. Click the user name associated with the buckets (or has access to an individual bucket) that you want to access. Locate and record the **access key id** and the **secret access key** values. These act as your credentials for all API operations.
+   ![Access Keys](../images/kb-object-storage-access-keys.png)
+
+3. Create a new Visual Studio project. In this example, the project is a **Console** application.
+
+4. Define a new "helper" function that can generate the [proper authentication header](http://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html#ConstructingTheAuthenticationHeader) that the service expects. The function below accepts values used to generate the authentication string, and is encoded and signed.
+
+```
+///
 
 /// Helper function to generate the required authentication header for messages to S3 endpoint
 
@@ -74,25 +71,22 @@ private static string GenerateApiAuthHeader(string verb, string timestamp, strin
             return Convert.ToBase64String(bytes);
 
         }
+```
 
-</pre>
-  </li>
-  <li>Define variables to hold the authentication credentials for Object Storage. In the example below, these values are stored in the application's configuration file.
-    <br />
-    <pre>private static string adminAccessKey = System.Configuration.ConfigurationManager.AppSettings["ObjectStorageKey"];
+5. Define variables to hold the authentication credentials for Object Storage. In the example below, these values are stored in the application's configuration file.
+
+```
+private static string adminAccessKey = System.Configuration.ConfigurationManager.AppSettings["ObjectStorageKey"];
 
 private static string adminAccessSecret = System.Configuration.ConfigurationManager.AppSettings["ObjectStorageSecret"];
+```
 
-</pre>
-  </li>
-  <li>Write the code that calls the Object Storage endpoint and requests a list of all buckets. The code below sets the URL for object storage (which is based on which region you are querying; this URL can be seem by looking at the settings for one of your
-    buckets). The authorization header<a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html#RESTAuthenticationTimeStamp"> requires a timestamp</a> (as authentication is only valid for a certain period) and this
-    value is formatted in the manner expected by the endpoint. After the authentication header is generated by our helper function, the appropriate headers are added to the request and&nbsp;an HTTP GET request is issued against the Object Storage URL.
-    The response is retrieved as a string and loaded into an XML object for formatting.
-    <br />
-    <pre>//set up variables used by this method
+6. Write the code that calls the Object Storage endpoint and requests a list of all buckets. The code below sets the URL for Object Storage (which is based on which region you are querying; this URL can be seem by looking at the settings for one of your buckets). The authorization header [requires a timestamp](http://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html#RESTAuthenticationTimeStamp) (as authentication is only valid for a certain period) and this value is formatted in the manner expected by the endpoint. After the authentication header is generated by our helper function, the appropriate headers are added to the request and an HTTP GET request is issued against the Object Storage URL. The response is retrieved as a string and loaded into an XML object for formatting.
 
-string s3Url = "https://ca.tier3.io/";
+```
+//set up variables used by this method
+
+string s3Url = "https://canada.os.ctl.io/";
 
 XDocument resultDoc = new XDocument();
 
@@ -163,13 +157,12 @@ using (var client = new HttpClient())
     }
 
 }
+```
 
-</pre>
-  </li>
-  <li>Add code that queries Object Storage for the objects contained within an individual bucket. This is slightly different than the previous action in that the resource name (in this case, the bucket name) is added to the URL and passed into the helper
-    method.
-    <br />
-    <pre>Console.WriteLine("ACTION: Enter the name of a bucket to open: ");
+7. Add code that queries Object Storage for the objects contained within an individual bucket. This is slightly different than the previous action in that the resource name (in this case, the bucket name) is added to the URL and passed into the helper method.
+
+```
+Console.WriteLine("ACTION: Enter the name of a bucket to open: ");
 
 string inputbucket = Console.ReadLine();
 
@@ -177,7 +170,7 @@ string inputbucket = Console.ReadLine();
 
 //url updated to include the resource (bucket) value
 
-s3Url = "https://ca.tier3.io/" + inputbucket;
+s3Url = "https://canada.os.ctl.io/" + inputbucket;
 
 
 
@@ -251,33 +244,28 @@ using (var client2 = new HttpClient())
 
 }
 
-</pre>
-  </li>
-  <li>Run the application and first see that all Object Storage buckets are returned, and then ask for the contents of a single bucket.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/bkeyeatvpms07td/?name=kb-objectstorage.gif" alt="kb-objectstorage.gif" />
-  </li>
-</ol>
+```
 
-<h3>Using Amazon SDK for .NET to Interact with Object Storage</h3>
-<p>The Amazon Web Services team created and maintain a set of SDKs for developers to use when interacting with their cloud platform. Because CenturyLink Cloud Object Storage is S3-compatible, developers can reuse these existing SDKs when interacting with
-  Object Storage. An SDK is typically MUCH easier to work with than a raw API as much of the complexity is hidden.&nbsp;&nbsp;<strong>Note that the&nbsp;<a href="https://github.com/Tier3/Examples/tree/master/ObjectStorage/Tier3.ObjectStorageViaAPI.DotNet">source code for this sample application</a>&nbsp;can be downloaded from GitHub.</strong>
-</p>
-<h4>Detailed Steps</h4>
-<ol>
-  <li>Download the <a href="http://aws.amazon.com/sdkfornet/">AWS SDK for .NET</a>&nbsp;and install it. Or, open Visual Studio and install the SDK as part of a <a href="http://nuget.org/">NuGet package</a>. To install the NuGet
-    package, right click the Visual Studio project, choose "Manage NuGet Packages", search for "AWS" and install the package into this project.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/ng4xwk0kmb3v398/?name=objectstorage-api01.png" alt="objectstorage-api01.png" />
-  </li>
-  <li>Add code that uses the AWS SDK to read the list of buckets from Object Storage. First, a configuration object is instantiated and the CenturyLink Cloud Object Storage URL is provided. Then, the client object is created and provided the credentials and
-    configuration. The SDK uses strong typing, so the client object specifically calls "ListBuckets" and gets back a list of buckets with properties such as "BucketName."
-    <br />
-    <pre>//create configuration that points to different URL
+8. Run the application and first see that all Object Storage buckets are returned, and then ask for the contents of a single bucket.
+   ![kb-objectstorage.gif](https://t3n.zendesk.com/attachments/token/bkeyeatvpms07td/?name=kb-objectstorage.gif)
+
+### Using Amazon SDK for .NET to Interact with Object Storage
+The Amazon Web Services team created and maintain a set of SDKs for developers to use when interacting with their cloud platform. Because CenturyLink Cloud Object Storage is S3-compatible, developers can reuse these existing SDKs when interacting with Object Storage. An SDK is typically MUCH easier to work with than a raw API as much of the complexity is hidden. **Note** that the [source code for this sample application](https://github.com/Tier3/Examples/tree/master/ObjectStorage/Tier3.ObjectStorageViaAPI.DotNet) can be downloaded from GitHub.
+
+### Detailed Steps
+1. Download the <a href="http://aws.amazon.com/sdkfornet/">AWS SDK for .NET</a>&nbsp;and install it. Or, open Visual Studio and install the SDK as part of a <a href="http://nuget.org/">NuGet package</a>. To install the NuGet package, right click the Visual Studio project, choose "Manage NuGet Packages", search for "AWS" and install the package into this project.
+   ![objectstorage-api01.png](https://t3n.zendesk.com/attachments/token/ng4xwk0kmb3v398/?name=objectstorage-api01.png)
+
+2. Add code that uses the AWS SDK to read the list of buckets from Object Storage. First, a configuration object is instantiated and the CenturyLink Cloud Object Storage URL is provided. Then, the client object is created and provided the credentials and configuration. The SDK uses strong typing, so the client object specifically calls "ListBuckets" and gets back a list of buckets with properties such as "BucketName."
+
+```
+//create configuration that points to different URL
 
 AmazonS3Config config = new AmazonS3Config()
 
 {
 
-     ServiceURL = "ca.tier3.io"
+     ServiceURL = "canada.os.ctl.io"
 
 };
 
@@ -306,12 +294,12 @@ foreach (S3Bucket bucket in resp.Buckets)
     Console.WriteLine("-" + bucket.BucketName);
 
 }
+```
 
-</pre>
-  </li>
-  <li>Add a second action that queries the contents within a given bucket. This code reuses the client object created earlier, and calls the "ListObjects" operation to get back a list of objects.
-    <br />
-    <pre>/*
+3. Add a second action that queries the contents within a given bucket. This code reuses the client object created earlier, and calls the "ListObjects" operation to get back a list of objects.
+
+```
+/*
 
 * List objects in a single bucket
 
@@ -336,41 +324,38 @@ foreach (S3Object obj in objResp.S3Objects)
      Console.WriteLine("-" + obj.Key);
 
 }
+```
 
-</pre>
-  </li>
-  <li>Run the application and see the list of buckets and then the list of objects in a selected bucket.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/gbflxnbusallb3r/?name=kb-objectstorage2.gif" alt="kb-objectstorage2.gif" />
-  </li>
-</ol>
+4. Run the application and see the list of buckets and then the list of objects in a selected bucket.
+   ![kb-objectstorage2.gif](https://t3n.zendesk.com/attachments/token/gbflxnbusallb3r/?name=kb-objectstorage2.gif)
 
-<h3>Using the Amazon SDK for Node.js to Interact with Object Storage</h3>
-<p>Node.js is a popular platform for building high-performing JavaScript-friendly applications. Amazon Web Services also ships an SDK for Node.js, and that SDK works perfectly with CenturyLink Cloud Object Storage.&nbsp;&nbsp;<strong>Note that the&nbsp;<a href="https://github.com/Tier3/Examples/tree/master/ObjectStorage/Tier3.ObjectStorageViaApi.Node">source code for this sample application</a>&nbsp;can be downloaded from GitHub.</strong>
-</p>
-<h4>Detailed Steps</h4>
-<ol>
-  <li>Create a <a href="http://nodejs.org/">new Node.js project</a>. This example solution uses the <a href="http://expressjs.com/">Express framework</a> to provide an MVC foundation to the application.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/agqgzziwti8eium/?name=objectstorage-api04.png" alt="objectstorage-api04.png" />
-  </li>
-  <li>Use the Node Package Manager (npm) to install the <a href="http://aws.amazon.com/sdkfornodejs/">AWS SDK for Node</a> by using the&nbsp;<strong>npm install aws-sdk</strong> command.</li>
-  <li>Create a&nbsp;<strong>credentials.json</strong> file that contains the Object Storage credentials and region.
-    <br />
-    <pre>{
+### Using the Amazon SDK for Node.js to Interact with Object Storage
+Node.js is a popular platform for building high-performing JavaScript-friendly applications. Amazon Web Services also ships an SDK for Node.js, and that SDK works perfectly with CenturyLink Cloud Object Storage. **Note** that the [source code for this sample application](https://github.com/Tier3/Examples/tree/master/ObjectStorage/Tier3.ObjectStorageViaApi.Node) can be downloaded from GitHub.
 
-   "accessKeyId": "KEYID",
+### Detailed Steps
+1. Create a [new Node.js project](http://nodejs.org/"). This example solution uses the [Express framework](http://expressjs.com/) to provide an MVC foundation to the application.
+   ![objectstorage-api04.png](https://t3n.zendesk.com/attachments/token/agqgzziwti8eium/?name=objectstorage-api04.png)
 
-   "secretAccessKey": "SECRET",
+2. Use the Node Package Manager (npm) to install the [AWS SDK for Node](http://aws.amazon.com/sdkfornodejs/) by using the `npm install aws-sdk` command.
 
-   "region":"Canada"
+3. Create a **credentials.json** file that contains the Object Storage credentials and region.
 
-}
+```
+  {
 
-</pre>
-  </li>
-  <li>In the route (controller), add the code to respond to the page load event. This code queries Object Storage via the AWS SDK for Node. See that it loads the credentials file, and passes the Object Storage URL into the object constructor. The <a href="http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3_20060301.html#listBuckets-property"
-   >listBuckets operation</a>&nbsp;returns an array of buckets. Here, that array is returned to the view.&nbsp;
-    <br />
-    <pre>var AWS = require('aws-sdk');
+      "accessKeyId": "KEYID",
+
+      "secretAccessKey": "SECRET",
+
+      "region":"Canada"
+
+    }
+```
+
+4. In the route (controller), add the code to respond to the page load event. This code queries Object Storage via the AWS SDK for Node. See that it loads the credentials file, and passes the Object Storage URL and signature version into the object constructor. The l[istBuckets operation](http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3_20060301.html#listBuckets-property) returns an array of buckets. Here, that array is returned to the view.
+
+```
+var AWS = require('aws-sdk');
 
 
 
@@ -380,7 +365,7 @@ exports.index = function(req, res){
 
     AWS.config.loadFromPath('./credentials.json');
 
-    var s3 = new AWS.S3({endpoint:'https://ca.tier3.io'});
+    var s3 = new AWS.S3({endpoint:'https://canada.os.ctl.io', signatureVersion:'v2'});
 
 
 
@@ -395,12 +380,12 @@ exports.index = function(req, res){
     });
 
 };
+```
 
-</pre>
-  </li>
-  <li>On the Express view, the code loops through each bucket and prints the name of the bucket in a table cell.
-    <br />
-    <pre>table(class="table table-striped table-bordered table-hover")
+5. On the Express view, the code loops through each bucket and prints the name of the bucket in a table cell.
+
+```
+table(class="table table-striped table-bordered table-hover")
 
    thead
 
@@ -417,10 +402,6 @@ exports.index = function(req, res){
              td.cell
 
                | #{bucket.Name}
+```
 
-</pre>
-  </li>
-  <li>Run the Node.js application and see that the list of CenturyLink Cloud Object Storage buckets is retrieved and displayed on the page.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/dxgm0jeqv4sio02/?name=objectstorage-api05.png" alt="objectstorage-api05.png" />
-  </li>
-</ol>
+6. Run the Node.js application and see that the list of CenturyLink Cloud Object Storage buckets is retrieved and displayed on the page.

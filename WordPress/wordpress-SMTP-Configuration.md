@@ -1,67 +1,46 @@
 {{{
   "title": "WordPress SMTP Configuration",
-  "date": "07-20-2015",
-  "author": "Bill Burge",
+  "date": "10-02-2015",
+  "author": "Bill Burge, Gregory McWilliams",
   "attachments": [],
   "contentIsHTML": false
 }}}
-### IMPORTANT NOTECenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.## Overview
+### IMPORTANT NOTECenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.
 
-Out of the box, WordPress sends email using the [PHP mail()](http://php.net/manual/en/function.mail.php) function. This function is unauthenticated and, for this reason, CenturyLink Cloud WordPress does not allow this functionality and does not include an alternate SMTP relay.  In order to send WordPress user emails, like password resets, you will first need to configure a SMTP server using one of the many freely available plugins found on [WordPress.org](https://wordpress.org/plugins/)
+### Overview
 
-As one example, [Postman SMTP Mailer](https://wordpress.org/plugins/postman-smtp/ "Postman SMTP Mailer") is capable of using many freely available SMTP servers as well as your enterprise's own. 
-
-**NOTE:** [Postman 1.5.13](https://downloads.wordpress.org/plugin/postman-smtp.1.5.13.zip) is the latest version of the plugin supported by CenturyLink WordPress.
+Out of the box, WordPress sends email using the [PHP mail()](http://php.net/manual/en/function.mail.php) function. This function is unauthenticated and, for this reason, CenturyLink WordPress hosting does not allow this functionality and includes the Easy WP SMTP plugin instead. Your WordPress site comes preconfigured with a limited SendGrid account. This account is limited to 1000 emails per month. Sending 1 email to 1000 recipients will immediately use all of these credits for the month. If you would like to send more emails, you will first need to reconfigure the SMTP plugin.
 
 **In this example, Gmail will be used as the SMTP Relay and assumes the following:**
 
 1. Ownership of a Gmail account.
 2. Activation of the the [Less Secure Apps](https://www.google.com/settings/security/lesssecureapps) functionality of Gmail.
-3. A working knowledge of how to install WordPress plugins to a CenturyLink Cloud WordPress site following the Knowledgebase article for [WordPress Plugin Installation](wordpress-plugin-installation.md).
 
-## Example SMTP Plugin Configuration
+## Example Easy WP SMTP Plugin Configuration
 
-1. Download and install [Postman SMTP Mailer](https://wordpress.org/plugins/postman-smtp/) to your WordPress site.
+3. Browse to Settings > Easy WP SMTP
 
-2. Activate Postman SMTP
+  ![](../images/wp_easy_smtp/wp_easy_smtp_settings.png)
 
-  ![](../images/wp_postman_smtp/wp_postman_smtp01.png)
+4. Update the following settings with specifics for your SMTP Relay and click _Save Changes_.
 
-3. Browse to Settings > Postman SMTP
+  **General Settings:**
+  
+  * From Email Address
+  * From Name
+  * SMTP Host
+  * Type of Encription
+  * SMTP Port
+  * SMTP Authentication
+  * SMTP Username
+  * SMTP Password
 
-  ![](../images/wp_postman_smtp/wp_postman_smtp02.png)
+  ![](../images/wp_easy_smtp/wp_easy_smtp_general_settings.png)
 
-4. Select configure manually.
+5. Input the following options for testing email configuration and click Send Test Email.
 
-  ![](../images/wp_postman_smtp/wp_postman_smtp03.png)
+  ![](../images/wp_easy_smtp/wp_easy_smtp_email.png)
 
-5. Update the following settings with specifics for your SMTP Relay and click _Save Changes_.
+6. If successful you will see the following success message.
 
-  **Transport Settings:**
-
-  * Authentication
-  * Security
-  * Outgoing Mail Server Hostname
-  * Outgoing Mail Server Port
-
-  **Authentication:**
-
-  * Username
-  * Password
-
-  ![](../images/wp_postman_smtp/wp_postman_smtp04.png)
-
-6. Select Send a Test Email.
-
-  ![](../images/wp_postman_smtp/wp_postman_smtp05.png)
-
-7. Input a Recipient Email Address and click Next.
-
-  ![](../images/wp_postman_smtp/wp_postman_smtp06.png)
-
-8. If successful you will see the following success message.
-
-  ![](../images/wp_postman_smtp/wp_postman_smtp07.png)
-
-
-
+  ![](../images/wp_easy_smtp/wp_easy_smtp_success.png)

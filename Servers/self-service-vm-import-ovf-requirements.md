@@ -1,7 +1,7 @@
 {{{
   "title": "Self-Service VM Import / OVF Requirements",
-  "date": "6-24-2015",
-  "author": "Jared Ruckle",
+  "date": "10-1-2015",
+  "author": "Eric Schubert",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -25,11 +25,14 @@ However, some OVFs may still require significant “prep” work, depending on t
 * Only one SCSI controller is allowed
 * Must have a single NIC
 * Only a single image should be present; multiple images (for example a vApp) are not supported.  Refer to the [Open Virtualization Format White Paper](http://www.dmtf.org/sites/default/files/standards/documents/DSP2017_2.0.0.pdf) for more information.
-* The OVF file name must not include a "."
+* The OVF file name must not include a "." or a "-"
 * Ping should not be blocked on the firewall
 * The VMware hardware version (vmx) must be 8 or lower
 * The latest version of VMware tools must be installed (you will get the error message that reads "the guest operations agent is out of date" if your version is not correct)
 * The OVF must be exported from VMware; other hypervisors are not supported
+* The current Administrator / Root password must be input during the import process
+* Avoid usage of disk type 'monolithicSparse' for VMDK disks
+* Must have a valid DNS address
 
 ### Specific Requirements for Windows 2012 R2 DataCenter 64-bit / Windows 2008 R2 DataCenter 64-bit OVFs
 * The machine cannot be joined to a domain
@@ -47,7 +50,7 @@ However, some OVFs may still require significant “prep” work, depending on t
 * For Windows: PSEXEC must not be firewalled; PS Remoting is enabled; WinRM is enabled
 * For Red Hat: Ensure the root account’s shell is bash
 * We assume that Windows OS OVFs are properly licensed under Volume Licensing; upon successful import, the OVF is then licensed using CenturyLink's SPLA agreement with Microsoft. No changes are made to the license key during import.
-* Bring your own licensing is not supported
+* Bring your own licensing is not supported for neither Windows nor Red Hat.
 * All OVF files will be stored in the FTP server located in your account's home data center
 * All OVF files will be deleted 5 days after initial import; please import your images soon after completion of the FTP transfer
 * Managed services are not available on imported VMs

@@ -1,45 +1,41 @@
 {{{
-  "title": "What can you expect from CenturyLink Cloud on a Security Issue",
-  "date": "11-12-2014",
+  "title": "What to expect from CenturyLink Cloud on a Security Issue",
+  "date": "9-22-2016",
   "author": "Gavin McMurdo",
   "attachments": [],
   "contentIsHTML": true
 }}}
 
 <h3>Description (goal/purpose)</h3>
-<p>This KB covers what behavior customers can expect from CenturyLink Cloud Operations in the case of a security incident. </p>
+<p>This KB covers what behavior customers can expect from CenturyLink Cloud Operations in the case of a Security Incident. </p>
 <h3>Audience</h3>
 <ul>
   <li>CenturyLink Cloud Customers</li>
 </ul>
 <h3>"A server in CenturyLink Cloud's public cloud is being scanned"</h3>
 <ol>
-  <li>This is a very common situation and statistically, this will happen to any server exposed on the Internet at least once every 72 hours. The majority of these scans are throttled in order to avoid detection. As such this will not trigger
-    any any alarm and therefore the CenturyLink Cloud Operations will not be aware of the attack.</li>
+  <li>This is a very common situation and, statistically, this will happen to any server exposed on the Internet at least once every 72 hours. The majority of these scans are throttled in order to avoid detection. As such this will not trigger alarms, and CenturyLink Cloud engineers will not be aware of the attack.</li>
 </ol>
 <h3>"A server in CenturyLink Cloud's public cloud is being attacked"</h3>
 <ol>
-  <li>Low-volume attack: The majority of attacks are throttled in order to avoid detection and to leverage a server exploit. As such this will not trigger any any alarm and therefore the CenturyLink Cloud Operations will not be aware of the attack.</li>
-  <li>High-volume attack (DDoS): &nbsp;These types of attacks are designed to overwhelm the capabilities of the server. If the volume of the attack is high enough, it will will be detected by the CenturyLink Cloud controls and as the CenturyLink Cloud Operations staff
-    will initiate a Security incident. In the majority of cases, the #1 priority is to mitigate the attack and therefore it is possible that the mitigation might interrupt the operations of the server. e.g. black holing the server IP if it
-    is being DDoS attacked. The CenturyLink Cloud Operations team will open a ticket with the server administrators defined in control.</li>
+  <li>Low-volume attack: The majority of attacks are throttled in order to avoid detection and to leverage a server exploit. As such this will not trigger any any alarm, and therefore CenturyLink Cloud Operations will not be aware of the attack.</li>
+  <li>High-volume attack (DDoS): These types of attacks are designed to overwhelm the capabilities of the server. If the volume of the attack is high enough, it will will be detected by CenturyLink Cloud's monitoring infrastruture and CenturyLink Cloud's support engineering staff
+    will initiate a Security Incident. In the majority of cases, the #1 priority is to mitigate the attack, and therefore it is possible that the mitigation might require that we disable the offending server(s). The CenturyLink Cloud support team will open a ticket to the account administrators, identified in Control.</li>
 </ol>
 <div>
   <h3>"Someone has filed an abuse complaint"</h3>
   <ol>
-    <li>The CenturyLink Cloud Operations team will initiate a Security Incident and will open a ticket against the reported server. The account contacts in control will be notified of the ticket via email.</li>
-    <li>CenturyLink Cloud is contractually bound to ensure that these complaints are investigated and therefore if the server owners do not investigate this report, in extreme cases, we are required to suspend the operation of the server. </li>
+    <li>The CenturyLink Cloud support team will initiate a Security Incident and open a ticket against the server(s) identified in the report, submitted to account administrators. They are notified via email.</li>
+    <li>CenturyLink Cloud is contractually bound to ensure that these complaints are investigated. If server administrators do not investigate this report within an expected timeframe, it may be necessary for us to suspend operation of the server. </li>
   </ol>
 </div>
 <div>
-  <h3>"What does CenturyLink Cloud Operations team do in a Security Incident?"</h3>
+  <h3>"What does the CenturyLink Cloud support team do during a Security Incident?"</h3>
   <ol>
-    <li>1. The team will attempt to determine if the security reports is valid. If they have access to the devices in question, such as our cloud infrastructure or a customer Managed Services server, we will investigate it.</li>
-    <li>If we do not have access to the server, the team will open a ticket in the CenturyLink Cloud ticketing system will all of the account administrators of that server on the ticket. The customer will be asked to investigate the issue.</li>
-    <li>In extreme cases where the security&nbsp;incident&nbsp;is impacting other customers or Internet users, DDoS attack, the team will take steps to mitigate the&nbsp;situation.</li>
+    <li>Notify our Security team about the incident.</li>
+    <li>Assess the validity of security reports and other signals being receivied. If the support team has access to the affected devices, such as our cloud infrastructure or a Managed server, we will investigate it.</li>
+    <li>If we do not have access to the server, the team will open a ticket in the CenturyLink Cloud ticketing system with all of the account administrators of that server on the ticket. The customer will be asked to take prompt action by investigating the issue.</li>
+    <li>In cases where the Security&nbsp;Incident&nbsp;is determined to be adversely impacting other customers, our engineers will take immediate steps to mitigate the situation and verify that service is fully restored to normal operating status.</li>  
   </ol>
-  
-  
-  
 </div>
 <div>&nbsp;</div>

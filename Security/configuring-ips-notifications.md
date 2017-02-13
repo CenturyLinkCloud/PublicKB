@@ -1,7 +1,7 @@
 {{{
   "title": "Configuring Intrusion Prevention System (IPS) Notifications",
-  "date": "08-11-2015",
-  "author": "Stephanie Wong",
+  "date": "02-19-2016",
+  "author": "Client-Security",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -12,26 +12,23 @@
 
 The Platform CenturyLink IPS utilizes an Agent installed on your Virtual Machine (VM) that will monitor that VM for suspicious activity. If suspicious activity is found, the Agent will log it and may block or stop the activity, and will report it based on the IPS policy. There is a default policy associated to each VM that is automatically tuned based on the host operating system and installed applications.
 
-The Blueprint allows a customer that has purchased the IPS service from Platform CenturyLink to modify how they would like to be notified regarding IPS security events. This Blueprint will only change notification settings for the server it is run against.
+The Blueprint allows a customer that has purchased the IPS service from Platform CenturyLink to modify how they would like to be notified regarding IPS security events. This Blueprint will only change **Slack** notification settings for the server it is run against.
+
+Our [API](../Security/ips-api.md) allows for a customer to set notification destinations for **WebHook (Slack, for example)**, **Email**, and **Syslog**.  
 
 ### Prerequisites
 
 * A CenturyLink Cloud Account
 * Virtual Machine with CenturyLink Intrusion Prevention Agent installed
-* Slack channel & WebHook URL (See Utilizing SLACK for IPS Event Notifications)
+* Slack channel & WebHook URL [(See Utilizing SLACK for IPS Event Notifications)](utilizing-slack-for-ips-event-notifications.md)
 
-### Supported Managed Operating Systems
+### Configuration Process via Blueprints
 
-* Red Hat Enterprise Linux 5 (64-bit only)
-* Red Hat Enterprise Linux 6 (64-bit only)
-* Microsoft Windows Server 2008 (64-bit only)
-* Microsoft Windows Server 2012 (64-bit only)
+1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**.
 
-### Installation Process
+  ![Control Portal](../images/client-security/IPSblueprintcontrolportal.png)
 
-1. Search for **IPS Notification** in the Blueprint library. Then, click on the desired Operating System blueprint to configure Notifications.
-
-  ![Control Portal](../images/notificationupdate_controlportal.png)
+2. Search for **IPS Notification** in the Blueprint library. Then, click on the desired Operating System blueprint to configure Notifications.
 
   ![Notification Update RHEL](../images/notificationupdate_rhel_blueprintname.png) ![Notification Update Windows](../images/notificationupdate_windows_blueprintname.png)
 
@@ -42,7 +39,7 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 3. Select the appropriate Virtual Machine to execute on.
 
   * Enter and confirm User Password
-  * Provide WebHook URL (See "Utilizing SLACK for IPS Event Notifications")
+  * Provide WebHook URL [(See "Utilizing SLACK for IPS Event Notifications")](utilizing-slack-for-ips-event-notifications.md)
   * Click **next: step 2.**
 
   ![Configure Notifications RHEL Fields](../images/notificationupdate_rhel_blueprintfields.png)
@@ -57,6 +54,9 @@ The Blueprint allows a customer that has purchased the IPS service from Platform
 
 6. An email notification will be sent to the initiator of the Blueprint for both queuing and completion.
 
+### Configuration Process via our API
+This can be found in the following document [IPS-API](ips-api.md).
+
 ### Frequently Asked Questions
 
 **What is a WebHook?**
@@ -69,11 +69,11 @@ Not at this time. If you would like to recommend another, please send request de
 
 **Do you retain the data after the event notification is sent?**
 
-Yes, we retain the data for 60 days.  If you need a longer data retention period, we are working on additional add-on functionality to store this data.  If you are interested, please send request details to [features@ctl.io](mailto:features@ctl.io).
+Yes, we retain the data for 13 weeks.  If you are interested in a longer retention period, please send request details to [features@ctl.io](mailto:features@ctl.io).
 
 **Are you storing the full payload in another location?**
 
-Yes, we retain the data in another location for 60 days.
+Yes, we retain the data in another location for 13 weeks.
 
 **Do you support a text message or paging service?**
 
