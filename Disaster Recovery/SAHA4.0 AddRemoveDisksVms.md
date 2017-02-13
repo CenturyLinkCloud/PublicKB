@@ -60,4 +60,18 @@ To remove a disk from replication, first run "DgSyncEx.exe select disk <number>"
 
 ### Adding a new protected VM to a Protection Group
 
+1. Safehaven Console
+
+Adding a new VM is much like provisioning a new Protection Group. Select the protection group you'd like to add a VM to and click the "Virtual Servers" tab. Then select "Add VMs" and a familiar provisioning wizard will allow you to add a new VM like you did during onboarding. As outlined in the "Adding a disk to a protected VM" guide above, additional storage space in the protection group may be required. Refer to the [Protection Group Expansion KB](https://link.com) for more information. 
+
+If you'd like to automatically install the Local Replication Agent to the VM, the wizard has the option available. Alternatively, you can install it manually. See the [Local Replication Agent KB](https://link.com) for more information.
+
 ### Removing a protected VM from a Protection Group
+
+1. Safehaven Console
+
+Removing a VM is much like removing a disk. Select the protection group and then the "Virtual Servers" tab. You can select the VM you wish to remove and click "Remove VM from PG" to delete it. **Note:** Your VM will not be modified.
+
+2. Protected Guest
+
+Log into the protected guest and uninstall the Safehaven Local Replication Agent via the "Uninstall" program in the Safehaven folder. This will uninstall the agent, remove all replication, as well as remove the folder, restoring your VM to an unprotected state.
