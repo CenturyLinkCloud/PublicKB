@@ -82,7 +82,7 @@ If you'd like to automatically install the Local Replication Agent to the VM, th
 
 **1. Safehaven Console**
 
-Removing a VM is much like removing a disk. Select the protection group and then the "Virtual Servers" tab. You can select the VM you wish to remove and click "Remove VM from PG" to delete it. **Note:** Your VM will not be modified.
+Removing a VM is much like removing a disk. Select the protection group and then the "Virtual Servers" tab. You can select the VM you wish to unprotect and click "Remove VM from PG" to delete it. **Note:** Your production VM will not be modified.
 
 At this time it is not possible to reduce the size of a protection group.
 
