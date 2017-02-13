@@ -1,5 +1,5 @@
 {{{
-  "title": "Partner Cloud Integration",
+  "title": "Partner Cloud Integration: Usage Estimates for Azure",
   "date": "01-17-2017",
   "author": "Ben Swoboda",
   "attachments": [],
