@@ -38,11 +38,11 @@ Once your protection group has enough space, you can open the "Virtual Servers" 
 
 Login to the production server and go to Disk Management. You should see the disk has a new size. You may need to rescan/refresh for the changes to be updated.  
 
-[img_disk_management]
+![Disk Management](../images/SH4.0/disk_management.png)
 
 Open the "Safehaven 4.0 DRaaS Windows Replication Agent/tools" folder with an admin command line shell and run "DgSyncEx.exe list". Note that new sizes show up. If you have already resized your source disk, the prompt may warn you that the size has changed. You may need to run "DgSyncEx.exe rescan" if the disks have not yet refreshed.
 
-[img_dgsyncex_list]
+![DgSyncEx](../images/SH4.0/dgsyncex_list.png)
 
 Once the sizes between the two disks match, replication should automatically resume. You can see the progress reset below 100% if there is remaining data to be synced.
 
