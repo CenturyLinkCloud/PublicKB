@@ -52,6 +52,8 @@ Once the sizes between the two disks match, replication should automatically res
 
 Open the "Virtual Servers" tab for your protection group. Select the VM and the disk that you wish to remove and click "Delete".
 
+At this time it is not possible to reduce the size of a protection group.
+
 **2. Protected Guest**
 
 Open the "Safehaven 4.0 DRaaS Windows Replication Agent/tools" folder with an admin command line shell and run "DgSyncEx.exe list". The prompt may warn you that a disk is missing. You may need to run "DgSyncEx.exe rescan" if the disks have not yet refreshed.
@@ -71,6 +73,8 @@ If you'd like to automatically install the Local Replication Agent to the VM, th
 **1. Safehaven Console**
 
 Removing a VM is much like removing a disk. Select the protection group and then the "Virtual Servers" tab. You can select the VM you wish to remove and click "Remove VM from PG" to delete it. **Note:** Your VM will not be modified.
+
+At this time it is not possible to reduce the size of a protection group.
 
 **2. Protected Guest**
 
