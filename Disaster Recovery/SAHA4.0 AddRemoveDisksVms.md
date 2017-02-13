@@ -1,3 +1,13 @@
+{{{
+  "title": "SafeHaven 4.0: Adding, Removing, and Expanding: Disks and VMs",
+  "date": "02-13-2017",
+  "author": "Aaron Young",
+  "attachments": [],
+  "contentIsHTML": false
+}}}
+
+### Article Overview
+This article walks you through the process of adding, removing, and expanding disks or VMs within your SafeHaven protection groups. Steps are provided for both the protected guest and the safehaven console.
 
 
 ### Adding a new disk to a protected VM
