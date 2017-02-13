@@ -30,7 +30,7 @@ From the **Provider Details** page, you can find a list of your products that ha
 
 1. To add a new product click the green **add product** button. A blank **Product Details** form opens.
 
-		![EPP3](../../images/EPP3.png)
+ 	![EPP3](../../images/EPP3.png)
 
 2. In the **Display Name** field, enter the name of your product.
 
@@ -142,7 +142,7 @@ Some products are assigned service tasks. This is determined between the partner
 
 3. Once inside the product click, the **Service** tab.
 
-		![EPP11](../../images/EPP11.png)
+  ![EPP11](../../images/EPP11.png)
 
 4. Fill in the required fields. If you need assistance filing in the information on this tab, reach out to the [Ecosystem team](mailto:support@ecosystem@ctl.io).
 
@@ -179,7 +179,7 @@ This opens a new form where you input your user name, and a new password will be
 
 Here's how that same content looks when rendered in **Preview** mode.
 
-	![EPP13](../../images/EPP13.png)
+  ![EPP13](../../images/EPP13.png)
 
 2.	**Product Details Page: Edit vs. Preview**
    * Clicking the **Preview** button on the **Product Details** page allows you to see the whole page rendered, as opposed to single elements.
@@ -216,4 +216,4 @@ Once you're in the Marketplace **preview mode**, you can also switch to **publis
 * [GitHub Markdown Editor](https://markdown-it.github.io/)
 * The CenturyLink Cloud [Marketplace](https://www.ctl.io/marketplace/)
 * CenturyLink [Marketplace Provider Program Guide](../../Ecosystem Partners/Partner Integration Resources/centurylink-cloud-ecosystem-program-guide.md) Knowledge Base article.
-* For questions or suggestions on how to make this Guide more useful, email the [Marketplace team](mailto:digital-services@ctl.io).
+* For questions or suggestions on how to make this Guide more useful, email the [Marketplace team](mailto:Marketplace@ctl.io).
