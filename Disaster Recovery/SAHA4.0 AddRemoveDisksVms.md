@@ -8,7 +8,7 @@ Adding a new disk to a protection group requires available space inside the prot
 
 You can view your protected disks in the "Virtual Servers" tab of your protection group, as well as the available space.
 
-[img_virtual_servers]
+![Virtual Servers Tab](../images/SH4.0/virtual_servers.png)
 
 Once your protection group has enough space, you can open the "Virtual Servers" tab and select the VM you would like to add a disk for, and then select "Create Disk for replication target" to open the wizard. Specify the properties of the disk and click "Finish".
 
@@ -16,15 +16,15 @@ Once your protection group has enough space, you can open the "Virtual Servers" 
 
 Login to the production server and go to Disk Management. You should see a new source disk (ISCSI) show up. You may need to rescan/refresh for the changes to be updated.  
 
-[img_disk_management]
+![Disk Management](../images/SH4.0/disk_management.png)
 
 Open the "Safehaven 4.0 DRaaS Windows Replication Agent/tools" folder with an admin command line shell and run "DgSyncEx.exe list". Note that new disks show up. You may need to run "DgSyncEx.exe rescan" if the disks have not yet refreshed.
 
-[img_dgsyncex_list]
+![DgSyncEx](../images/SH4.0/dgsyncex_list.png)
 
 Enter the following commands in image 3 to manually start replication from the unprotected disk to the new ISCSI disk.
 
-[img_dgsyncex_mark_map]
+![Marking and Mapping](../images/SH4.0/dgsyncex_mark_map.png)
 
 ### Expanding a protected disk
 
