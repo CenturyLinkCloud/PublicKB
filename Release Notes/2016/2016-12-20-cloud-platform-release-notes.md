@@ -24,7 +24,7 @@
 
 * __CTL.IO__
 
-	- __Online Cloud Estimator__ - [Cloud Application Manager](/cloud-application-manager/) is now available on the [Cloud Estimator](/estimator/).
+	- __Online Cloud Estimator__ - [Cloud Application Manager](//www.ctl.io/cloud-application-manager/) is now available on the [Cloud Estimator](//www.ctl.io/estimator/).
 
 	- __Alternative Activation__ - For new customers who do not have credit card for online sign up, please contact your sales representative to proceed without a credit card.
 

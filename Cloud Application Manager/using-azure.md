@@ -82,7 +82,7 @@ Follow these steps.
    * Copy your Azure subscription ID located under Settings in the Azure Management Portal.
    ![azure-select-subscriptionid-5.png](../images/cloud-application-manager/azure-select-subscriptionid-5.png)
    * In Cloud Application Manager, under Credentials, paste in the subscription ID.
-   ![azure-paste-subscriptionid-in-cloud-application-manager-6.png](../images/CloudApplicationManager/azure-paste-subscriptionid-in-cloud-application-manager-6.png)
+   ![azure-paste-subscriptionid-in-cloud-application-manager-6.png](../images/cloud-application-manager/azure-paste-subscriptionid-in-cloud-application-manager-6.png)
 
 6. Click **Save**.
 
