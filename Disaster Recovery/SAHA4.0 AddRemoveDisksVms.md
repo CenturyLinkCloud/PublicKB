@@ -11,14 +11,14 @@ This article walks you through the process of adding, removing, and expanding di
 
 ### Contents
 
-** Windows **
+**Windows**
 * Adding a new disk to a protected VM
 * Expanding a protected disk
 * Removing a disk from a protected VM
 * Adding a new VM to your protection group
 * Removing a VM from your protection group
 
-** Linux
+**Linux**
 * Increasing the size of your filesystem
 
 ### Windows
