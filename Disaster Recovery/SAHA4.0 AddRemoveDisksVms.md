@@ -204,3 +204,34 @@ You may also wish to run rsync again. You can find the schedule using "crontab -
  /opt/datagardens/bin/repeatedRsync
  ```
   
+### Adding a new VM to your protection group
+
+**1. Safehaven Console**
+
+Adding a new VM is much like provisioning a new Protection Group. Select the protection group you'd like to add a VM to and click the "Virtual Servers" tab. Then select "Add VMs" and a familiar provisioning wizard will allow you to add a new VM like you did during onboarding. Additional storage space in the protection group may be required. Refer to the [Protection Group Expansion KB](https://link.com) for more information. 
+
+**2. Protected Guest**
+
+Log into the protected guest and simply run:
+
+```
+cd safehaven_linux_onboarding_scripts
+./rsync2iscsi.sh
+```
+
+### Removing a VM from your protection group
+
+**1. Safehaven Console**
+
+Removing a VM is much like removing a disk. Select the protection group and then the "Virtual Servers" tab. You can select the VM you wish to unprotect and click "Remove VM from PG" to delete it. **Note:** Your production VM will not be modified.
+
+At this time it is not possible to reduce the size of a protection group.
+
+**2. Protected Guest**
+
+Log into the protected guest and simply run:
+
+```
+cd safehaven_linux_onboarding_scripts
+./wipe_existing_protection.sh
+```
