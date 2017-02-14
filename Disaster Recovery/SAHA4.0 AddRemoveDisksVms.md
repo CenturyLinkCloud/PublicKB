@@ -113,7 +113,7 @@ Log into the protected guest and uninstall the Safehaven Local Replication Agent
 ### Linux LVM
 ___
 
-Linux has a wide variety of configurations. The principles applied in this LVM filesystem guide can be used for any configuration. The end goal is that the source filesystem has a mapped iscsi filesystem.
+Linux has a wide variety of configurations. The principles applied in this LVM partition guide can be used for any configuration. *The end goal is that the source filesystem has a mapped iscsi filesystem.*
 
 ### Adding/Expanding a disk for a protected VM
 
