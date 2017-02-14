@@ -23,6 +23,11 @@ This article walks you through the process of adding, removing, and expanding di
 
 ### Windows
 ----
+**Requirements**
+
+1. Safehaven Console
+2. Administrator access to protected guest
+
 ### Adding a new disk to a protected VM
 
 **1. Safehaven Console**
