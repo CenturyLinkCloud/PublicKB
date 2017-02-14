@@ -19,9 +19,7 @@ This article walks you through the process of adding, removing, and expanding di
 * Removing a VM from your protection group
 
 **Linux LVM**
-* Adding a new disk to a protected VM
-* Expanding a protected disk
-* Removing a disk from a protected VM
+* Adding/Expanding a disk for a protected VM
 * Adding a new VM to your protection group
 * Removing a VM from your protection group
 
@@ -117,7 +115,7 @@ ___
 
 Linux has a wide variety of configurations. The principles applied in this LVM filesystem guide can be used for any configuration. The end goal is that the source filesystem has a mapped iscsi filesystem.
 
-### Adding a new disk to a protected VM
+### Adding/Expanding a disk for a protected VM
 
 Run "lsblk" to see your disk layout.
 
@@ -130,9 +128,9 @@ sda                     8:0    0    2G  0 disk
 └─sda2                  8:2    0  1.5G  0 part 
   ├─rhel-root         253:0    0  2.3G  0 lvm  /
   └─rhel-swap         253:1    0  204M  0 lvm  [SWAP]
-sdb                     8:16   0    5G  0 disk 
+sdb                     8:16   0    2G  0 disk 
 ├─sdb1                  8:17   0  500M  0 part 
-└─sdb2                  8:18   0  3.5G  0 part 
+└─sdb2                  8:18   0  1.5G  0 part 
   ├─vg_iscsi7-swap_lv 253:2    0  204M  0 lvm  
   └─vg_iscsi7-root_lv 253:3    0  2.3G  0 lvm  
 sr0                    11:0    1 1024M  0 rom  
@@ -149,9 +147,9 @@ sda                     8:0    0    2G  0 disk
 └─sda2                  8:2    0  1.5G  0 part 
   ├─rhel-root         253:0    0  3.3G  0 lvm  /
   └─rhel-swap         253:1    0  204M  0 lvm  [SWAP]
-sdb                     8:16   0    5G  0 disk 
+sdb                     8:16   0    2G  0 disk 
 ├─sdb1                  8:17   0  500M  0 part 
-└─sdb2                  8:18   0  3.5G  0 part 
+└─sdb2                  8:18   0  1.5G  0 part 
   ├─vg_iscsi7-swap_lv 253:2    0  204M  0 lvm  
   └─vg_iscsi7-root_lv 253:3    0  2.3G  0 lvm  
 sdc                     8:32   0    1G  0 disk 
@@ -179,17 +177,15 @@ sda                     8:0    0    2G  0 disk
 └─sda2                  8:2    0  1.5G  0 part 
   ├─rhel-root         253:0    0  3.3G  0 lvm  /
   └─rhel-swap         253:1    0  204M  0 lvm  [SWAP]
-sdb                     8:16   0    5G  0 disk 
+sdb                     8:16   0    2G  0 disk 
 ├─sdb1                  8:17   0  500M  0 part 
-├─sdb2                  8:18   0  3.5G  0 part 
-│ ├─vg_iscsi7-swap_lv 253:2    0  204M  0 lvm  
-│ └─vg_iscsi7-root_lv 253:3    0  3.3G  0 lvm  
-└─sdb3                  8:19   0    1G  0 part 
+└─sdb2                  8:18   0  1.5G  0 part 
+  ├─vg_iscsi7-swap_lv 253:2    0  204M  0 lvm  
   └─vg_iscsi7-root_lv 253:3    0  3.3G  0 lvm  
 sdc                     8:32   0    1G  0 disk 
 └─rhel-root           253:0    0  3.3G  0 lvm  /
-sdd
-└─vg_iscsi7_root_lv   253:4    0  3.3G  0 lvm
+sdd                     8:48   0    1G  0 lvm
+└─vg_iscsi7_root_lv   253:3    0  3.3G  0 lvm
 sr0                    11:0    1 1024M  0 rom  
 
 ```
