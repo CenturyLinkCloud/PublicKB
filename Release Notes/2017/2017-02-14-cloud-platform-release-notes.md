@@ -1,5 +1,5 @@
 {{{
-"title": "Cloud Platform - Release Notes:February 14, 2017",
+"title": "Cloud Platform - Release Notes: February 14, 2017",
 "date": "2-14-2017",
 "author": "Stephanie Wong",
 "attachments": [],
