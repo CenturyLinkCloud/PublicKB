@@ -94,7 +94,7 @@ To remove a disk from replication, first run "DgSyncEx.exe select disk *num*" wh
 
 **1. Safehaven Console**
 
-Adding a new VM is much like provisioning a new Protection Group. Select the protection group you'd like to add a VM to and click the "Virtual Servers" tab. Then select "Add VMs" and a familiar provisioning wizard will allow you to add a new VM like you did during onboarding. As outlined in the "Adding a disk to a protected VM" guide above, additional storage space in the protection group may be required. Refer to the [Protection Group Expansion KB](https://link.com) for more information. 
+Adding a new VM is much like provisioning a new Protection Group. Select the protection group you'd like to add a VM to and click the "Virtual Servers" tab. Then select "Add VMs" and a familiar provisioning wizard will allow you to add a new VM like you did during onboarding. If protection group expansion is required, you will be able to provision more storage at this time. 
 
 If you'd like to automatically install the Local Replication Agent to the VM, the wizard has the option available. Alternatively, you can install it manually. See the [Local Replication Agent KB](https://link.com) for more information.
 
@@ -208,7 +208,7 @@ You may also wish to run rsync again. You can find the schedule using "crontab -
 
 **1. Safehaven Console**
 
-Adding a new VM is much like provisioning a new Protection Group. Select the protection group you'd like to add a VM to and click the "Virtual Servers" tab. Then select "Add VMs" and a familiar provisioning wizard will allow you to add a new VM like you did during onboarding. Additional storage space in the protection group may be required. Refer to the [Protection Group Expansion KB](https://link.com) for more information. 
+Adding a new VM is much like provisioning a new Protection Group. Select the protection group you'd like to add a VM to and click the "Virtual Servers" tab. Then select "Add VMs" and a familiar provisioning wizard will allow you to add a new VM like you did during onboarding.  If protection group expansion is required, you will be able to provision more storage at this time. 
 
 **2. Protected Guest**
 
