@@ -18,8 +18,12 @@ This article walks you through the process of adding, removing, and expanding di
 * Adding a new VM to your protection group
 * Removing a VM from your protection group
 
-**Linux**
-* Increasing the size of your filesystem
+**Linux LVM**
+* Adding a new disk to a protected VM
+* Expanding a protected disk
+* Removing a disk from a protected VM
+* Adding a new VM to your protection group
+* Removing a VM from your protection group
 
 ### Windows
 ----
@@ -108,6 +112,99 @@ At this time it is not possible to reduce the size of a protection group.
 
 Log into the protected guest and uninstall the Safehaven Local Replication Agent via the "Uninstall" program in the Safehaven folder. This will uninstall the agent, remove all replication, as well as remove the folder, restoring your VM to an unprotected state.
 
-### Linux
+### Linux LVM
 ___
-### Expanding your filesystem
+
+Linux has a wide variety of configurations. The principles applied in this LVM filesystem guide can be used for any configuration. The end goal is that the source filesystem has a mapped iscsi filesystem.
+
+### Adding a new disk to a protected VM
+
+Run "lsblk" to see your disk layout.
+
+```
+[root@localhost ~]# lsblk
+NAME                  MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+fd0                     2:0    1    4K  0 disk 
+sda                     8:0    0    2G  0 disk 
+├─sda1                  8:1    0  500M  0 part /boot
+└─sda2                  8:2    0  1.5G  0 part 
+  ├─rhel-root         253:0    0  2.3G  0 lvm  /
+  └─rhel-swap         253:1    0  204M  0 lvm  [SWAP]
+sdb                     8:16   0    5G  0 disk 
+├─sdb1                  8:17   0  500M  0 part 
+└─sdb2                  8:18   0  3.5G  0 part 
+  ├─vg_iscsi7-swap_lv 253:2    0  204M  0 lvm  
+  └─vg_iscsi7-root_lv 253:3    0  2.3G  0 lvm  
+sr0                    11:0    1 1024M  0 rom  
+```
+
+In this instance, "sdb" is our ISCSI disk provided by Safehaven. You can see that at the moment the sizes match. After we add a disk to our guest eg. "sdc" and add it to the root logical volume, it might look something like this. If you're not familiar with doing this, the steps are detailed in the next section.
+
+```
+[root@localhost ~]# lsblk
+NAME                  MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+fd0                     2:0    1    4K  0 disk 
+sda                     8:0    0    2G  0 disk 
+├─sda1                  8:1    0  500M  0 part /boot
+└─sda2                  8:2    0  1.5G  0 part 
+  ├─rhel-root         253:0    0  3.3G  0 lvm  /
+  └─rhel-swap         253:1    0  204M  0 lvm  [SWAP]
+sdb                     8:16   0    5G  0 disk 
+├─sdb1                  8:17   0  500M  0 part 
+└─sdb2                  8:18   0  3.5G  0 part 
+  ├─vg_iscsi7-swap_lv 253:2    0  204M  0 lvm  
+  └─vg_iscsi7-root_lv 253:3    0  2.3G  0 lvm  
+sdc                     8:32   0    1G  0 disk 
+└─rhel-root           253:0    0  3.3G  0 lvm  /
+sr0                    11:0    1 1024M  0 rom  
+```
+
+We should now add a corresponding disk for Safehaven through the "Virtual Servers" tab of the Safehaven Console. As with the previous example, it may be necessary to rescan the scsi bus and add the new disk to the logical volume using the standard commands. e.g.:
+
+```
+echo 1 > /sys/class/scsi_device/3\:0\:0\:0/device/rescan
+pvcreate /dev/sdd
+vgextend vg_iscsi7 /dev/sdd
+lvextend /dev/vg_iscsi7/root_lv /dev/sdd
+```
+
+Afterwards the layout should look like this:
+
+```
+[root@localhost ~]# lsblk
+NAME                  MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+fd0                     2:0    1    4K  0 disk 
+sda                     8:0    0    2G  0 disk 
+├─sda1                  8:1    0  500M  0 part /boot
+└─sda2                  8:2    0  1.5G  0 part 
+  ├─rhel-root         253:0    0  3.3G  0 lvm  /
+  └─rhel-swap         253:1    0  204M  0 lvm  [SWAP]
+sdb                     8:16   0    5G  0 disk 
+├─sdb1                  8:17   0  500M  0 part 
+├─sdb2                  8:18   0  3.5G  0 part 
+│ ├─vg_iscsi7-swap_lv 253:2    0  204M  0 lvm  
+│ └─vg_iscsi7-root_lv 253:3    0  3.3G  0 lvm  
+└─sdb3                  8:19   0    1G  0 part 
+  └─vg_iscsi7-root_lv 253:3    0  3.3G  0 lvm  
+sdc                     8:32   0    1G  0 disk 
+└─rhel-root           253:0    0  3.3G  0 lvm  /
+sdd
+└─vg_iscsi7_root_lv   253:4    0  3.3G  0 lvm
+sr0                    11:0    1 1024M  0 rom  
+
+```
+ 
+We've resized the logical volumes at this point, but we haven't yet extended the filesystems. 
+
+```
+mount /dev/mapper/vg_iscsi7-root_lv /mnt/vgiscsi
+xfs_growfs /mnt/vgiscsi
+umount /mnt/
+```
+
+You may also wish to run rsync again. You can find the schedule using "crontab -l" or run it yourself.
+  
+```
+ /opt/datagardens/bin/repeatedRsync
+ ```
+  
