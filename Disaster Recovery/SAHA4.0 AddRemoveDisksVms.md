@@ -9,7 +9,20 @@
 ### Article Overview
 This article walks you through the process of adding, removing, and expanding disks or VMs within your SafeHaven protection groups. Steps are provided for both the protected guest and the safehaven console.
 
+### Contents
 
+** Windows **
+* Adding a new disk to a protected VM
+* Expanding a protected disk
+* Removing a disk from a protected VM
+* Adding a new VM to your protection group
+* Removing a VM from your protection group
+
+** Linux
+* Increasing the size of your filesystem
+
+### Windows
+----
 ### Adding a new disk to a protected VM
 
 **1. Safehaven Console**
@@ -89,3 +102,7 @@ At this time it is not possible to reduce the size of a protection group.
 **2. Protected Guest**
 
 Log into the protected guest and uninstall the Safehaven Local Replication Agent via the "Uninstall" program in the Safehaven folder. This will uninstall the agent, remove all replication, as well as remove the folder, restoring your VM to an unprotected state.
+
+### Linux
+___
+### Expanding your filesystem
