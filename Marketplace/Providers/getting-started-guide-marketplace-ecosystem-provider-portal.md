@@ -223,5 +223,5 @@ Once you're in the Marketplace **preview mode**, you can also switch to **publis
 * [GitHub Markdown Editor](https://markdown-it.github.io/)
 * The CenturyLink Cloud [Marketplace](https://www.ctl.io/marketplace/)
 * CenturyLink [Marketplace Provider Program Guide](../../Ecosystem Partners/Partner Integration Resources/centurylink-cloud-ecosystem-program-guide.md) Knowledge Base article.
-* Marketplace Provider [Onboarding Resource Guide](../Marketplace/Providers/onboarding-resources.md).
+* Marketplace Provider [Onboarding Resource Guide](./Marketplace/Providers/onboarding-resources.md).
 * For questions or suggestions on how to make this Guide more useful, email the [Marketplace team](mailto:Marketplace@ctl.io).
