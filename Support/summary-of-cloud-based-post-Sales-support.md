@@ -20,7 +20,7 @@ CenturyLink offers customers world-class support services to match any organizat
 * Service Engineers standing by to perform specific platform activities - 15+ other tasks that are generally <$5000. Please see https://www.ctl.io/service-tasks/ for more information
 
 ### Designated Service Engineers
-* Designated Service Engineers (DSE) are available in 20, 40, 60, 80, 160 and multiples of 160-hour blocks per month. These front-line engineers focused on day-to-day technical support and service tasks. Please see https://www.ctl.io/support/ for more information.
+* Designated Service Engineers (DSE) are available in 20, 40, 60, 80, 160 and multiples of 160-hour blocks per month. These front-line engineers focus on day-to-day technical support and service tasks. Please see https://www.ctl.io/support/ for more information.
 
 ### Technical Account Managers / Customer Excellence
 * TAMs are your CLC lifecycle business partner and go-to contact for general support, business strategy, infrastructure planning, proactive reporting/metrics evaluation, service credits, executive reviews. Please see https://www.ctl.io/support/ for more information.
