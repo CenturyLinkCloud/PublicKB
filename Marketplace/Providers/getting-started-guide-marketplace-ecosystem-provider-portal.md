@@ -18,11 +18,18 @@ Sign into the [Provider Portal](http://provider-portal.ctl.io/#/login) using you
 
 Click the **Company Information** tab. This takes you to your **Provider Details** page, which was created for you when we established your CenturyLink Marketplace profile. Here you can review, edit, update your company information, and change the logo.
 
+![EPP2](../../images/EPP2.png)
+
 - Uses Markdown formatting. Most Markdown is recognized.
 - Click the **Preview** tab to see how your Markdown renders.
 - Click **Save** once you are satisfied.
 
-![EPP2](../../images/EPP2.png)
+### Marketplace Provider Agreement (MPA)
+
+On the **Provider Details** page is also where you must agree to the Marketplace Provider Agreement(MPA), which governs the Terms & Conditions of your products entry into the Marketplace.
+It can be found [here](https://www.ctl.io/legal/marketplace/). Once you have read and agree to the terms, click the check box and click **Save**.
+
+![EPPMPA](../../images/MPA.png)
 
 ### Creating a New Product
 
@@ -206,7 +213,7 @@ Once you're in the Marketplace **preview mode**, you can also switch to **publis
 
 **Q: I clicked “switch to published mode” but see a 404 error page. Why am I getting this error?**
 
-	 ![EPP18](../../images/EPP18.png)
+![EPP18](../../images/EPP18.png)
 
 **A:** You may have already completed your data entry and requested publication, but your product isn't viewable in published mode until the CenturyLink Cloud Marketplace Team approves and publishes the content.
 
@@ -216,4 +223,5 @@ Once you're in the Marketplace **preview mode**, you can also switch to **publis
 * [GitHub Markdown Editor](https://markdown-it.github.io/)
 * The CenturyLink Cloud [Marketplace](https://www.ctl.io/marketplace/)
 * CenturyLink [Marketplace Provider Program Guide](../../Ecosystem Partners/Partner Integration Resources/centurylink-cloud-ecosystem-program-guide.md) Knowledge Base article.
+* Marketplace Provider [Onboarding Resource Guide](./onboarding-resources.md).
 * For questions or suggestions on how to make this Guide more useful, email the [Marketplace team](mailto:Marketplace@ctl.io).
