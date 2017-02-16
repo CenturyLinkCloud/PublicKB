@@ -29,6 +29,6 @@ To register AWS EC2 instance, an additional step is required. Cloud Application 
 
 ![Register Instance Manual Intervention](../images/cloud-application-manager/aws-registerinstance-manualintervention.png)
 
-![Agent Install](../images/cloud-application-manager/aws-provider-agentinstallscript.png)
+![Agent Install](../images/cloud-application-manager/aws-provider-agentInstallscript.png)
 
 ![Register Instance Successful](../images/cloud-application-manager/aws-provider-registerinstancesuccessful.png)
