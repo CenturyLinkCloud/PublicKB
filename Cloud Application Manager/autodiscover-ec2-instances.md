@@ -23,9 +23,9 @@ To register AWS EC2 instance, an additional step is required. Cloud Application 
 
 ### Auto-discover and register AWS EC2 instances in Cloud Application Manager
 
-![Unregistered Instances](../images/cloud-application-manager/aws-provider-unregisteredinstances.png)
+![Unregistered Instances](../images/cloud-application-manager/aws-provider-unregisteredInstances.png)
 
-![Register Instance](../images/cloud-application-manager/aws-provider-registerinstance.png)
+![Register Instance](../images/cloud-application-manager/aws-provider-registerInstance.png)
 
 ![Register Instance Manual Intervention](../images/cloud-application-manager/aws-registerinstance-manualintervention.png)
 
