@@ -3,7 +3,8 @@
 "date": "09-01-2016",
 "author": "",
 "attachments": [],
-"contentIsHTML": false
+"contentIsHTML": false,
+"sticky": true
 }}}
 
 ### Cloud Application Manager Editions

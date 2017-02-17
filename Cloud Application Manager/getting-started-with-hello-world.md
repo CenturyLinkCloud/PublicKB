@@ -3,7 +3,8 @@
 "date": "09-01-2016",
 "author": "",
 "attachments": [],
-"contentIsHTML": false
+"contentIsHTML": false,
+"sticky": true
 }}}
 
 ### Hello World in Cloud Application Manager
