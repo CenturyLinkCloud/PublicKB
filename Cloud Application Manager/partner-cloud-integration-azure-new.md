@@ -21,7 +21,7 @@ For Azure, we are currently limited to serving billable customers who are not re
 
 * Access to Cloud Application Manager.
 
-* Credentials for a [CenturyLink Cloud Account Administrator](../Accounts & Users/user-permissions.md). If you do not have access to CenturyLink Cloud, please contact your CenturyLink representative or sign up for an account [here](https://www.ctl.io/free-trial/). 
+* Credentials for a [CenturyLink Cloud Account Administrator](../Accounts & Users/user-permissions.md). If you do not have access to CenturyLink Cloud, please contact your CenturyLink representative or sign up for an account [here](https://www.ctl.io/free-trial/).
 
 * A working knowledge of how to use [Cloud Application Manager providers](https://elasticbox.com/documentation/core-concepts/providers/).
 
