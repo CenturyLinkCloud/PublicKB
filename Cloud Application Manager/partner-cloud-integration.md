@@ -23,7 +23,7 @@ For Azure, we are currently limited to serving customers who are not resellers (
 
 Access to Cloud Application Manager.
 
-Credentials for a [CenturyLink Cloud Account Administrator](../../Accounts & Users/user-permissions.md)
+Credentials for a [CenturyLink Cloud Account Administrator](../Accounts & Users/user-permissions.md)
 
 A working Knowledge how to use [Cloud Application Manager providers](https://ElasticBox.com/documentation/core-concepts/providers/).
 
