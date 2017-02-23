@@ -49,15 +49,15 @@ There are 3 logically separated networks which can be arbitrarily combined into 
 
 ### About Internet Access
 
-Once installed, the SafeHaven cluster does not need Internet to operate as long as there is a way for the customer to use the GUI to login to CMS and the API calls  from SRNs can reach the service it needs to contact. But as a general rule, it is a lot easier to assume all nodes have access to Internet as ongoing clients and this normally does not impose any significant security risk since there is no service provided to the internet.
+Once installed, the SafeHaven cluster does not need Internet to operate if there is a way for the customer to use the GUI to login to CMS and the API calls  from SRNs can reach the service it needs to contact. But as a general rule, it is a lot easier to assume all nodes have access to Internet as ongoing clients and this normally does not impose any significant security risk since there is no service provided to the Internet.
 
 #### The SafeHaven Cluster Installation Phase
 
-In order to finish the installation of the SafeHaven-4 cluster, the CMS/SRN nodes needs to 
+In order to finish the installation of the SafeHaven-4 cluster, the CMS/SRN nodes need to 
 * download the debian package specified by the user via the GUI cluster installation wizard
 * install necessary dependency packages from 
   * standard Ubuntu release repositories for standard Ubuntu packages. A typical URL is http://us.archive.ubuntu.com/ubuntu/. However, the actual URL used might be a selected mirror that has better connectivity.
-  * or the specific release URLs for those packages not shipped as part of the standard Ubuntu distribution. For example, the ansible winrm package is downloaded from https://github.com/diyan/pywinrm directly. 
+  * or the specific release URLs for those packages not shipped as part of the standard Ubuntu distribution. For example, the Ansible winrm package is downloaded from https://github.com/diyan/pywinrm directly. 
 
 In summary, it is difficult to come up with a comprehensive list of URLs that needs to be white listed in the firewall rules to allow access. It is recommended to temporarily allow outgoing Internet connections during the installation phase, at least temporarily.
 
@@ -72,6 +72,6 @@ The SafeHaven releaes note page (like [this for SafeHaven-4.0.0](https://www.ctl
 
 #### Summary and Recommendation to Firewall Internet Access White Listing
 
-* Temporarily allow all Internet acess (http and https) during cluster installation phase.
+* Temporarily allow all Internet access (http and https) during cluster installation phase.
 * White list https://*.ctl.io/ which could cover anything provided by CenturyLink Cloud.
 
