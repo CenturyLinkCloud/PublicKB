@@ -30,37 +30,67 @@ ___
 
 **Create a MySQL Database box**
 
-On the Boxes page, click New > CloudFormation and select MySQL Database. Name it MySQL DB and select an AWS provider account registered in Cloud Application Manager because this box needs the AWS CloudFormation service. Save.
+For this tutorial we will use an Amazon RDS, as the box is already pre-configured.
+
+On the Boxes page, click **New** > **Template** and select **MySQL Database**. Choose the MySql Icon, name it MySQL DB and select your AWS provider. This example box needs the AWS CloudFormation service. Save.
 
 ![tutorial-lamp-stack-1.png](../images/cloud-application-manager/tutorial-lamp-stack-1.png)
+
+**Define Policy configuration**
+
+In order to make the db available on the apache server we will need to tune the policy configuration. In this tutorial we would put all the instances on the same VPC.
+
+In the **Code** Tab, edit Policy. Select eu-west-1 as in **Region** combo, under **Placement** select any vpc you have already defined in **Cloud** combo, in our case vpc-c00dc7a5. Select 'default VPC security group' in **Security Groups** under **Network**
+
+![tutorial-lamp-stack-2.png](../images/cloud-application-manager/tutorial-lamp-stack-2.png)
+
+**Define the database name, user and password**
+
+After selecting the new box, in the **Code** Tab on variables you can change the user, password and database name. In this tutorial we will use **sampledb** as database name.
+
+![tutorial-lamp-stack-3.png](../images/cloud-application-manager/tutorial-lamp-stack-3.png)
+
+### Define the Deployment Policy
+
+If you have already [registered an AWS account](./using-your-aws-account.md) you should have three policy boxes on **Boxes** menu: default-large-us-east-1, default-medium-us-east-1 and default-small-us-east-1.
+
+Select default-small-us-east-1 tools and click on **Clone Box**.
+
+![tutorial-lamp-stack-4.png](../images/cloud-application-manager/tutorial-lamp-stack-4.png)
+
+On the pop-up define the new Box name as 'default-vpc-eu-west-1' and save.
+
+Select the new Box. On **code** tab, edit the policy menu. Define **Region** on Resource, **Cloud** on Placement, and **Security Groups** on Network to have the same values as the mySql box. In this tutorial 'eu-west-1', 'vpc-c00dc7a5' and  'default VPC security group'
+
+![tutorial-lamp-stack-5.png](../images/cloud-application-manager/tutorial-lamp-stack-5.png)
 
 ### Define the LAMP Stack App Tier
 
 **Step 1. Create a LAMP Stack box.**
 
-On the Boxes page, click **New > Script**. Name it LAMP Stack. Since LAMP needs Linux, tag it under Requirements. Save. Optionally, upload a matching icon to easily identify the box in the catalog.
+On the Boxes page, click **New** > **Script**. Name it LAMP Stack. Since LAMP needs Linux, tag it under Requirements. Save. Optionally, upload a matching icon to easily identify the box in the catalog.
 
-![tutorial-lamp-stack-2.png](../images/cloud-application-manager/tutorial-lamp-stack-2.png)
+![tutorial-lamp-stack-6.png](../images/cloud-application-manager/tutorial-lamp-stack-6.png)
 
 **Step 2. Indicate a relationship to the database tier with a binding.**
 
- In the Configuration tab, under Variables, click **New**. Select **Binding**. Call it mysql_service and bind to the MySQL DB box you created earlier.
+ In the Code tab, on Variables, click **New**. Select **Binding**. Call it mysql_service and bind to the MySQL DB box you created earlier.
 
 **Note:** Variable names are case sensitive, so name exactly as given.
 
-At this stage, you’re selecting a box not a real instance for the binding. You’ll select the actual instance at deploy time. Since you need a database, make the binding required. You’re saying you need an available database instance before deploying the app tier.
+At this stage, you're selecting a box not a real instance for the binding. You'll select the actual instance at deploy time.
 
 Save when done to create the variable.
 
-![tutorial-lamp-stack-3.png](../images/cloud-application-manager/tutorial-lamp-stack-3.png)
+![tutorial-lamp-stack-7.png](../images/cloud-application-manager/tutorial-lamp-stack-7.png)
 
 **Step 3. Allow traffic to and from the app tier with a port variable.**
 
-In the Configuration tab, under Variables, click New. Select Port. Call it PORT and give 80 as the value.
+In the Code tab, on Variables, click **New**. Select **Port**. Call it HTTP and give 80 as the value.
 
 Save when done to create the variable.
 
-![tutorial-lamp-stack-4.png](../images/cloud-application-manager/tutorial-lamp-stack-4.png)
+![tutorial-lamp-stack-8.png](../images/cloud-application-manager/tutorial-lamp-stack-8.png)
 
 **Step 4: Add data for the database using a file variable.**
 
@@ -84,31 +114,31 @@ CREATE DATABASE sampledb;
     INSERT INTO users VALUES ('Michael','Snow','88, Alamo Road','dianak', 'd3bf2a5557ce22c2b971');
 ```
 
-In the LAMP box Configuration tab, under Variables, click **New**. Select **File**. Call it SQL_SCRIPT and upload the file you saved. This file will be pushed to the database at deploy time.
+In the LAMP box Code tab, on Variables, click **New**. Select **File**. Call it SQL_SCRIPT and upload the file you saved. This file will be pushed to the database at deploy time.
 
-![tutorial-lamp-stack-5.png](../images/cloud-application-manager/tutorial-lamp-stack-5.png)
+![tutorial-lamp-stack-9.png](../images/cloud-application-manager/tutorial-lamp-stack-9.png)
 
 **Step 5. Nest the default GitHub box to install PHP from GitHub.**
 
-In the Configuration tab, under Variables, click **New**. Select **Box**. Call it GIT_HUB and pick the default GitHub box as the value.
+In the Code tab, under Variables, click **New**. Select **Box**. Call it GIT_HUB and pick the default GitHub box as the value.
 
 Save when done to create the variable.
 
-![tutorial-lamp-stack-6.png](../images/cloud-application-manager/tutorial-lamp-stack-6.png)
+![tutorial-lamp-stack-10.png](../images/cloud-application-manager/tutorial-lamp-stack-10.png)
 
 Now configure the GitHub default box to pull down PHP scripts at deploy time. Expand the GitHub box and the box variable inside called git_repo. In the context of the LAMP Stack box, edit the clone URL variable and set its value as follows:
 
 CLONE_URL: **https://github.com/ElasticBox/Easy-PHP-MySQL.git**
 
-![tutorial-lamp-stack-7.png](../images/cloud-application-manager/tutorial-lamp-stack-7.png)
+![tutorial-lamp-stack-11.png](../images/cloud-application-manager/tutorial-lamp-stack-11.png)
 
-![tutorial-lamp-stack-8.png](../images/cloud-application-manager/tutorial-lamp-stack-8.png)
+![tutorial-lamp-stack-12.png](../images/cloud-application-manager/tutorial-lamp-stack-12.png)
 
 **Step 6. Add events to install the LAMP stack app tier.**
 
 Under Events > install, click **install**.
 
-![tutorial-lamp-stack-9.png](../images/cloud-application-manager/tutorial-lamp-stack-9.png)
+![tutorial-lamp-stack-13.png](../images/cloud-application-manager/tutorial-lamp-stack-13.png)
 
 Copy, paste the following code in the install event dialog, then save.
 
@@ -141,11 +171,13 @@ Copy, paste the following code in the install event dialog, then save.
 
     chkconfig httpd on
 
+    # This is only to show the configuration for this sample.
+
     # Verify that httpd is on by running:
 
     chkconfig --list httpd
 
-    # This shoul output something similar to the next line, showing httpd is on in runlevels 2, 3, 4, and 5:
+    # This should output something similar to the next line, showing httpd is on in runlevels 2, 3, 4, and 5:
 
     # httpd           0:off   1:off   2:on    3:on    4:on    5:on    6:off
 
@@ -198,8 +230,6 @@ Under Events > start, click **start**. Copy, paste the following code and save. 
 
 Yay! You just defined a simple LAMP stack application and connected its tiers with a binding.
 
-![tutorial-lamp-stack-10.png](../images/cloud-application-manager/tutorial-lamp-stack-10.png)
-
 ___
 
 
@@ -211,35 +241,12 @@ To deploy the app, you need AWS as a provider because we’re using the AWS Clou
 
 **Launch the Database Tier**
 
-Before deploying the app tier, you need an active database instance, so launch the database box first. On the Instances page, click **New**. Select the MySQL DB box. Enter values for the username and password variables. The app tier pulls these values through the binding to connect to the database. Click **Deploy**.
-
-![tutorial-lamp-stack-11.png](../images/cloud-application-manager/tutorial-lamp-stack-11.png)
-
-
-**Launch the App Tier**
-
-You need a deployment policy to consume the right AWS resources for the LAMP Stack box. From the Boxes page, click **New > Deployment Policy**. Select the AWS provider account registered in Cloud Application Manager to which you deployed the database. Call the box AWS Policy. Tag Linux as a service the policy provides under Claims. By doing so, you’ll be able to select this policy when deploying the LAMP box. Save.
-
-![tutorial-lamp-stack-12.png](../images/cloud-application-manager/tutorial-lamp-stack-12.png)
-
-From the Instances page, click **New** and select the LAMP Stack box. For the deployment policy, select the AWS Policy you just created. For the mysql_service binding, select the database instance you previously launched. Also schedule the instance to terminate an hour after deploying to save money. Click **Deploy** to create an instance of the app tier.
-
-![tutorial-lamp-stack-13.png](../images/cloud-application-manager/tutorial-lamp-stack-13.png)
-
-See how Cloud Application Manager launches the database and the app tiers on separate machines. Once the app tier comes online, you see it connected to the database.
+Before deploying the app tier, you need an active database instance, so launch the database box first. On the Instances page, click **New**. Select the MySQL DB box. Enter values for the username and password variables. The app tier pulls these values through the binding to connect to the database. To define this binding add a **tag**, it will be use later on Lamp instance. Click **Deploy**.
 
 ![tutorial-lamp-stack-14.png](../images/cloud-application-manager/tutorial-lamp-stack-14.png)
 
-You can browse to the application from the IP address on the Endpoints tab to see the results of your hard work.
+**Launch the App Tier**
+
+From the Instances page, click **New** and select the LAMP Stack box. For the deployment policy, select the AWS Policy you created. For the mysql_service binding, select the tag you define in the instance you previously launched. Also schedule the instance to terminate an hour after deploying. Click **Deploy** to create an instance of the app tier.
 
 ![tutorial-lamp-stack-15.png](../images/cloud-application-manager/tutorial-lamp-stack-15.png)
-
-### Contacting Cloud Application Manager Support
-
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
-
-For issues related to API calls, send the request body along with details related to the issue.
-
-In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
-* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
