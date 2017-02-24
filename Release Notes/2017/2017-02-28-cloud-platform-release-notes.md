@@ -1,11 +1,34 @@
-{{{ "title": "Cloud Platform - Release Notes: February 14, 2017", "date": "2-14-2017", "author": "Stephanie Wong", "attachments": [], "contentIsHTML": false }}}
+{{{ "title": "Cloud Platform - Release Notes: February 28, 2017", "date": "2-28-2017", "author": "Rob Lesieur", "attachments": [], "contentIsHTML": false }}}
 
-Announcements (1)
+Ecosystem - Partner Integrations (1)
 
-Orchestrate End of Service on Mar 17, 2017
-Orchestrate will be removed from service on 3/17/2017. Customers unsure of a migration strategy should consult the guide that was provided to all users with the service removal announcement.
+Product Tiles Recently Published:
+
+### Commercial Products ###
+* Zentera CoIP Agent
+
+### Open Source Products ###
+* Bitnami Gitlab
+* Bitnami Wordpress
+* Bitnami Elasticsearch
+* Bitnami ERPNext 
+* Bitnami Jasper
+* Bitnami Redmine
+* Bitnami SugarCRM
+* Bitnami SuiteCRM
+* Bitnami Tomcat
+* Couchbase NoSQL Database Community Edition
+* Docker Engine
+* Docker Universal Control Plane
+* Etcd Key-Value store
+* Hashicorp Consul
+* Hashicorp Vault 
+* GrayLog Log Management
+* Kubernetes Product-grade Container Orchestration
+* LAMP Stack (Linux, Apache, MySQL, PHP/Python/Perl)
+* MongoDB Cluster for High Availability
 
 Enhancements (1)
 
-Managed MSSQL Database
-MSSQL 2016 has been certified on the platform and is now available
+* Added Help Icon and Corresponding Documentation for Status Webhooks in your Notification Preferences.
+* Added a button to test webhook integration
