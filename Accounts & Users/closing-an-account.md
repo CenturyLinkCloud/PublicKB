@@ -10,7 +10,7 @@
 
 ### Overview
 
-We're sorry to see you go, but we want to make sure your off-boarding experience is as easy as possible. Follow the steps below to ensure that your account closure goes off without a hitch.
+We're sorry to see you go, but we want to make sure your off-boarding experience is as easy as possible. Follow the steps below to ensure that your account closure goes off without a hitch.  Please be aware that it is not possible to recover an account or the associated assets after the account is deleted.  Proceed cautiously to ensure you've recovered all data before proceeding to deletion.
 
 ### Exceptions
 

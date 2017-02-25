@@ -1,6 +1,6 @@
 {{{
   "title": "Simple Backup How It Works",
-  "date": "12-14-2016",
+  "date": "1-24-2017",
   "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
@@ -20,14 +20,15 @@ Define and apply a policy to the server. A backup agent is then installed on the
 
 SBS utilizes S3 protocol to leverage a combination of [CLC Object Storage](https://www.ctl.io/object-storage/) and AWS Objects Storage. Backups are securely transferred into Object Storage and reside in storage for the duration of the retention period. Restores are initiated by the customer, at which point the files are brought back to the server for customer use. Partnering with 3rd party cloud providers such as AWS allows additional flexibility for our customers to choose their desired Object Storage region. For a list of storage regions and the associated provider, please see the chart below.
 
-| Backup Region | Storage Target | Endpoint |
-| --- | --- | --- |
-| APAC (Singapore) | AWS Object Storage (Singapore) - APS1 | `s3-ap-southeast-1.amazonaws.com` |
-| EU (Germany) | AWS Object Storage (Frankfurt) - EUC1 | `s3.eu-central-1.amazonaws.com` or `s3-eu-central-1.amazonaws.com`
-| EU (Ireland) | AWS Object Storage (Ireland) - EU | `s3-eu-west-1.amazonaws.com` |
-| US East | AWS Object Storage (Northern Virginia) - USE1 | `s3.amazonaws.com` or `s3-external-1.amazonaws.com` |
-| US West | AWS Object Storage (Oregon) - USW2 | `s3-us-west-2.amazonaws.com` |
-| Canada | CLC Object Storage (Canada) - CA3 | `canada.os.ctl.io` |
+Backup Region|Storage Target|Endpoint
+-------------|--------------|---------
+APAC (Singapore)|AWS Object Storage (Singapore) - APS1|s3-ap-southeast-1.amazonaws.com
+APAC (Sydney)|AWS Object Storage (Sydney) - APS2|s3-ap-southeast-2.amazonaws.com
+EU (Germany)|AWS Object Storage (Frankfurt) - EUC1|s3.eu-central-1.amazonaws.com<br>s3-eu-central-1.amazonaws.com
+EU (Ireland)|AWS Object Storage (Ireland) - EU|s3-eu-west-1.amazonaws.com
+US East|AWS Object Storage (Northern Virginia) - USE1|s3.amazonaws.com<br>s3-external-1.amazonaws.com
+US West|AWS Object Storage (Oregon) - USW2|s3-us-west-2.amazonaws.com
+Canada|CenturyLink Object Storage (Canada)|canada.os.ctl.io
 
 ### Backup Policies
 Backup Policies are user-defined configurations that you specify through the [Control Portal](https://control.ctl.io/). Servers are added to policies and start backing up based on the policy details. There is no limit on the number of servers you can add to a policy. Likewise, a server can be added to multiple policies. Backup Policy details include:
