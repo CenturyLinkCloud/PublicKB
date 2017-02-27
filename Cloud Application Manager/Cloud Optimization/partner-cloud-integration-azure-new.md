@@ -21,7 +21,7 @@ For Azure, we are currently limited to serving billable customers who are not re
 
 * Access to Cloud Application Manager.
 
-* Credentials for a [CenturyLink Cloud Account Administrator](../Accounts & Users/user-permissions.md). If you do not have access to CenturyLink Cloud, please contact your CenturyLink representative or sign up for an account [here](https://www.ctl.io/free-trial/).
+* Credentials for a [CenturyLink Cloud Account Administrator](../../Accounts & Users/user-permissions.md). If you do not have access to CenturyLink Cloud, please contact your CenturyLink representative or sign up for an account [here](https://www.ctl.io/free-trial/).
 
 * A working knowledge of how to use [Cloud Application Manager providers](https://elasticbox.com/documentation/core-concepts/providers/).
 
@@ -50,16 +50,16 @@ The following steps will walk through how to set up a new Cloud Application Mana
 3. Select New
 4. Select "Azure Resource Manager"
 
-  ![Azure Resource Manager Provider](../images/cloud-application-manager/CINT_New_ARM1.png)
+  ![Azure Resource Manager Provider](../../images/cloud-application-manager/CINT_New_ARM1.png)
 
 5. Select the "Create a new Azure customer account" option
 
-  ![Create New Azure Account](../images/cloud-application-manager/CINT_New_ARM2.png)
+  ![Create New Azure Account](../../images/cloud-application-manager/CINT_New_ARM2.png)
 
 6. Provide a name for the provider that identifies it for your purposes
 7. Click the "Connect a CLC Account" button and provide your CenturyLink Cloud Account Administrator credentials
 
-  ![Create New Azure Account](../images/cloud-application-manager/CINT_New_ARM3.png)
+  ![Create New Azure Account](../../images/cloud-application-manager/CINT_New_ARM3.png)
 
 8. From the drop-down menu, select the CenturyLink Cloud account you would like to bill against.
 9. Accept the Terms and Conditions

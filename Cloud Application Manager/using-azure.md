@@ -31,12 +31,14 @@ To learn about Azure hosting services, see the [Azure help](https://azure.micros
 You need an Azure subscription to be able to consume Azure services. Follow these steps to create one.
 
 **Steps**
-1. Sign in to your Windows Live admin [account](https://account.windowsazure.com/Subscriptions).
+1. Sign in to your [account](https://portal.azure.com/).
 
-2. Click add subscription.
+2. Open Subscriptions.
+
+3. Click add subscription.
    ![azure-add-new-subscription-1.png](../images/cloud-application-manager/azure-add-new-subscription-1.png)
 
-3. You can use the free trial version or select and purchase a payment plan.
+4. You can use the free trial version or select and purchase a payment plan.
    * **Note:** Cloud Application Manager is not responsible for any costs incurred through deploying to Azure. For more information, see [Azure pricing](https://azure.microsoft.com/en-us/pricing/calculator/?scenario=virtual-machines).
 
 ### Benefits of Deploying to Azure Using Cloud Application Manager
