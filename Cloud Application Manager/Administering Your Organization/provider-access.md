@@ -1,29 +1,18 @@
 {{{
-  "title": "Partner Cloud: Requirements for Data Center Edition",
-  "date": "02-20-2017",
-  "author": "Ben Swoboda",
-  "attachments": [],
-  "contentIsHTML": false
+"title": "Enable Access to Cloud Providers",
+"date": "09-01-2016",
+"author": "",
+"attachments": [],
+"contentIsHTML": false
 }}}
 
-### Overview
+### Enable Access to Cloud Providers
+By default, all public and private cloud providers are enabled for Cloud Application Manager users. As an Cloud Application Manager administrator, you can enable or disable providers for the entire organization in the [admin console](./admin-overview.md). You can turn off a particular provider if you don’t want people to deploy to it.
 
-Azure Cloud Integration is available to Cloud Application Manager Data Center Edition as well as the Cloud Edition. There are special connectivity requirements that must be considered.
+Enabling provider access does not automatically register providers for use but determines which ones users can connect and deploy to.
 
-### Audience
-
-Users or the Cloud Application Manager Data Center Edition
-
-### Prerequisites
-
-Knowledge of how to [get started with cloud-integrated Azure](./partner-cloud-integration-azure-new.md)
-
-### Important Information
-
-The Data Center Addition will need to have outbound port 443 for the following:
-
-* https://api.ctl.io
-* https://cloudintegration.ctl.io
+In the admin console, you can control access under **Providers > Clouds**.
+![admin-cloud1.png](../../images/cloud-application-manager/admin-cloud1.png)
 
 ### Contacting Cloud Application Manager Support
 
