@@ -1,13 +1,19 @@
-{{{ "title": "Cloud Platform - Release Notes: February 28, 2017", "date": "2-28-2017", "author": "Rob Lesieur", "attachments": [], "contentIsHTML": false }}}
+{{{ 
+"title": "Cloud Platform - Release Notes: February 28, 2017", 
+"date": "2-28-2017", 
+"author": "Rob Lesieur", 
+"attachments": [], 
+"contentIsHTML": false 
+}}}
 
-Ecosystem - Partner Integrations (1)
+###Ecosystem - Partner Integrations (20)###
 
-Product Tiles Recently Published:
+####Product Tiles Recently Published:####
 
-### Commercial Products ###
+##### Commercial Products #####
 * Zentera CoIP Agent
 
-### Open Source Products ###
+##### Open Source Products #####
 * Bitnami Gitlab
 * Bitnami Wordpress
 * Bitnami Elasticsearch
@@ -28,7 +34,7 @@ Product Tiles Recently Published:
 * LAMP Stack (Linux, Apache, MySQL, PHP/Python/Perl)
 * MongoDB Cluster for High Availability
 
-Enhancements (1)
+###Enhancements (2)###
 
 * Added Help Icon and Corresponding Documentation for Status Webhooks in your Notification Preferences.
 * Added a button to test webhook integration
