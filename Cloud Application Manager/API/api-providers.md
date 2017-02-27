@@ -80,7 +80,7 @@ ElasticBox-Release: 4.0
 
 |  Parameter  |      Type     |   Description   |
 |-------------|---------------|-----------------|
-| credentials | object | Required. Contains the credential object, which is either the [AWS role ARN name](./using-your-aws-account.md) if using Cloud Application Manager as a SaaS or the key and secret if using Cloud Application Manager as an appliance. |
+| credentials | object | Required. Contains the credential object, which is either the [AWS role ARN name](../Deploying Anywhere/using-your-aws-account.md) if using Cloud Application Manager as a SaaS or the key and secret if using Cloud Application Manager as an appliance. |
 
 **Amazon Web Services Gov request body**
 

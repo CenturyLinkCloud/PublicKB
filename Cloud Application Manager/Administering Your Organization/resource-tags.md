@@ -37,7 +37,7 @@ A tag consists of a key and a value. You can tag with a custom or preset value.
 | Preset Value | Description |
 |--------------|-------------|
 | Box name | Name of the box deployed. |
-| Environment | Environment name the user gave in the [deployment profile](./deploying-managing-instances.md) when deploying the instance. |
+| Environment | Environment name the user gave in the [deployment profile](../Deploying Anywhere/deploying-managing-instances.md) when deploying the instance. |
 | Instance ID | ID assigned by Cloud Application Manager, for example, i-extwmf. |
 | Provider name | Provider defined in Cloud Application Manager to which the instance was deployed. |
 | Service instance ID | Unique ID for every machine created for the instance, for example eb-ek73d-1, eb-ek73d-2. Some instances like AWS S3 don’t generate machines. In these cases, the Service ID also serves as the Service Instance ID. |

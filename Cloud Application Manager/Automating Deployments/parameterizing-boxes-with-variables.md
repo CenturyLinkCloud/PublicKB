@@ -122,7 +122,7 @@ As an alternative to Jinja, you can do the same thing with text expressions. For
 
 Use it to store TCP/IP port information. Access it from event scripts using Jinja just like text variables. At deploy time, Cloud Application Manager uses this port to open a connection to the instance if you select the **Automatic** security group option in the deployment profile.
 
-![parameterizingboxeswithvariables3.png](..//..images/cloud-application-manager/parameterizingboxeswithvariables3.png)
+![parameterizingboxeswithvariables3.png](../../images/cloud-application-manager/parameterizingboxeswithvariables3.png)
 
 ### Text Type
 

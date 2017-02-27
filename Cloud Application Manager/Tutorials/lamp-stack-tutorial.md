@@ -138,7 +138,7 @@ CLONE_URL: **https://github.com/ElasticBox/Easy-PHP-MySQL.git**
 
 Under Events > install, click **install**.
 
-![tutorial-lamp-stack-13.png](../images/cloud-application-manager/tutorial-lamp-stack-13.png)
+![tutorial-lamp-stack-13.png](../../images/cloud-application-manager/tutorial-lamp-stack-13.png)
 
 Copy, paste the following code in the install event dialog, then save.
 

@@ -24,7 +24,7 @@ The following error will appear if the CenturyLink Cloud account alias you provi
 
 Here's how you might arrive at this error message. After you log into Cloud Application Manager, click the **Provider** tab on the top toolbar.
 
-![Cloud Application Manager Create New Provider](../images/cloud-application-manager-error3.png)
+![Cloud Application Manager Create New Provider](../../images/cloud-application-manager-error3.png)
 
 Then click **New Provider** on the left navigation bar.
 

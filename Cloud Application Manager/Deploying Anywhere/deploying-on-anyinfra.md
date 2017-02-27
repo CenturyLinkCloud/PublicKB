@@ -58,7 +58,7 @@ curl -sLk https://ebx.co | sudo bash -s -- -b "<box name or ID>" -n "<environmen
 |----------|:-----|
 | -b | Specify a box by name or ID. If you give the name, the latest version of the box is launched. If you give the ID that specific version of the box is launched. You can get the ID from the box URL. |
 | -n | Give a name to identify the environment where you launch the box, such as dev or test. If you don’t provide one, Cloud Application Manager uses the box name or ID. |
-| -t | Enter your [authentication token](./admin-access.md), which you can get from your account in the Cloud Application Manager website. If you run the agent command without this parameter, you’re prompted to enter it later. |
+| -t | Enter your [authentication token](../Administering Your Organization/admin-access.md), which you can get from your account in the Cloud Application Manager website. If you run the agent command without this parameter, you’re prompted to enter it later. |
 | -V | If a box needs values for certain variables before launching, you can pass each in this format: -V variable_name1=variable_value -V variable_name2=variable_value |
 | -o | Optionally, specify in lowercase the box owner ID to tag an instance with this information. You can get the ID when you try to share the box with an owner. The owner can be an account or a workspace. The owner ID is visible within parentheses next to the display name. |
 | -d | Optionally, see all the values in each step of the shell script as it executes the box you specified in the target environment. |

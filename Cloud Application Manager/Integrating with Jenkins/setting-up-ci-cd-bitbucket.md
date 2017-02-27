@@ -25,7 +25,7 @@ To add Cloud Application Manager build steps in Jenkins jobs, go to the job page
 
     Example: In this [repo](https://bitbucket.org/oserna/hello-world-war) you can find a Java web application:
 
-    ![jenkins-bitbucket-1.png](../images/cloud-application-manager/jenkins-bitbucket-1.png)
+    ![jenkins-bitbucket-1.png](../../images/cloud-application-manager/jenkins-bitbucket-1.png)
 
     The repo was cloned in the local environment:
 

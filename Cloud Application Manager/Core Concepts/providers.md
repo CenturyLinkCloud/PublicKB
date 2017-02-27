@@ -12,17 +12,17 @@ A provider is a public or private cloud account you register in Cloud Applicatio
 
 | Clouds | Developer <br> (SaaS) Free | Developer <br> (Appliance) Free | Enterprise <br> (Saas) | Enterprise <br> (Appliance) |
 |-----|:-----:|:-----:|:-----:|:-----:|
-| [Century Link Cloud](./using-centurylink-cloud.md) | | ✓ | ✓ | ✓ |
-| [Amazon Web Services](./using-your-aws-account.md) | ✓ | ✓ | ✓ | ✓ |
-| [Google Cloud](./using-google-cloud.md) | ✓ | ✓ | ✓ | ✓ |
-| [Microsoft Azure](./using-azure.md) | ✓ | ✓ | ✓ | ✓ |
-| [VMware vCenter](./using-the-vmware-vcenter-private-datacenter.md) |  | ✓ | ✓ | ✓ |
-| [vCloud Air and vCloud Director](./orchestrating-vcloud-air-vcloud-director-deployments.md) |  |  | ✓ | ✓ |
-| [OpenStack Cloud](./using-openstack-cloud.md) |  | ✓ | ✓ | ✓ |
-| [CloudStack](./using-cloudstack.md) |  | ✓ | ✓ | ✓ |
-| [Rackspace Cloud](./using-rackspace-cloud.md) |  |  | ✓ | ✓ |
-| [SoftLayer](./using-softlayer.md) |  |  | ✓ | ✓ |
-| [AWS GovCloud](./using-aws-govcloud.md) |  |  | ✓ <br> Available upon request | ✓ <br> Available upon request |
+| [Century Link Cloud](../Deploying Anywhere/using-centurylink-cloud.md) | | ✓ | ✓ | ✓ |
+| [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md) | ✓ | ✓ | ✓ | ✓ |
+| [Google Cloud](../Deploying Anywhere/using-google-cloud.md) | ✓ | ✓ | ✓ | ✓ |
+| [Microsoft Azure](../Deploying Anywhere/using-azure.md) | ✓ | ✓ | ✓ | ✓ |
+| [VMware vCenter](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md) |  | ✓ | ✓ | ✓ |
+| [vCloud Air and vCloud Director](../Deploying Anywhere/orchestrating-vcloud-air-vcloud-director-deployments.md) |  |  | ✓ | ✓ |
+| [OpenStack Cloud](../Deploying Anywhere/using-openstack-cloud.md) |  | ✓ | ✓ | ✓ |
+| [CloudStack](../Deploying Anywhere/using-cloudstack.md) |  | ✓ | ✓ | ✓ |
+| [Rackspace Cloud](../Deploying Anywhere/using-rackspace-cloud.md) |  |  | ✓ | ✓ |
+| [SoftLayer](../Deploying Anywhere/using-softlayer.md) |  |  | ✓ | ✓ |
+| [AWS GovCloud](../Deploying Anywhere/using-aws-govcloud.md) |  |  | ✓ <br> Available upon request | ✓ <br> Available upon request |
 
 ### Contacting Cloud Application Manager Support
 

@@ -34,7 +34,7 @@ Edit the box configuration of a running instance by modifying its event scripts 
 
 **Changing Events**
 
-[Events](../Automating Deployment/start-stop-and-upgrade-boxes.md) let you control the lifecycle of your application in the virtual infrastructure. Change them to modify how your application behaves.
+[Events](../Automating Deployments/start-stop-and-upgrade-boxes.md) let you control the lifecycle of your application in the virtual infrastructure. Change them to modify how your application behaves.
 
 ![lifecycle-editor-3.png](../../images/cloud-application-manager/lifecycle-editor-3.png)
 
@@ -44,7 +44,7 @@ Edit the box configuration of a running instance by modifying its event scripts 
 
 **Changing Variable Values**
 
-You can redeploy an instance with different parameters by changing the [variable](../Automating Deployment/parameterizing-boxes-with-variables.md) values.
+You can redeploy an instance with different parameters by changing the [variable](../Automating Deployments/parameterizing-boxes-with-variables.md) values.
 
 * To edit variable values, click the pencil icon for a variable and change its value.
 * To edit file type variables, click the pencil icon and click **Edit File**.
@@ -53,7 +53,7 @@ You can redeploy an instance with different parameters by changing the [variable
 
 **Changing Binding Variable Values**
 
-When an instance depends on another box or service–like a load balancer, caching, or database service–you can link them together with a [binding](../Automating Deployment/parameterizing-boxes-with-variables.md). In the Lifecycle Editor, you can modify the binding value to select a different instance.
+When an instance depends on another box or service–like a load balancer, caching, or database service–you can link them together with a [binding](../Automating Deployments/parameterizing-boxes-with-variables.md). In the Lifecycle Editor, you can modify the binding value to select a different instance.
 
 ![lifecycle-editor-5.png](../../images/cloud-application-manager/lifecycle-editor-5.png)
 

@@ -7,11 +7,11 @@
 
 The Cloud Application Manager CloudFormation box type runs on the [AWS CloudFormation service](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
-Cloud Application Manager works with the AWS CloudFormation API to provision the stack in your AWS account. So why use Cloud Application Manager when you can launch CloudFormation templates directly in Amazon? [Here’s why](//www.ctl.io/knowledge-base/cloud-application-manager/#1).
+Cloud Application Manager works with the AWS CloudFormation API to provision the stack in your AWS account. So why use Cloud Application Manager when you can launch CloudFormation templates directly in Amazon? [Here’s why](https://www.ctl.io/knowledge-base/cloud-application-manager/#1).
 
 Cloud Application Manager supports all CloudFormation templates available from AWS. Leverage services such as EC2, Elastic Block Store, Simple Notification Service, Elastic Load Balancing and Auto Scaling, RDS, S3, DynamoDB, Elastic IPs, and much more.
 
-[AWS RDS services](..Deploying Anywhere/using-your-aws-account.md) such as MySQL, MS SQL, PostgreSQL, Oracle, and [Memcached](..Deploying Anywhere/using-your-aws-account.md), [S3](..Deploying Anywhere/using-your-aws-account.md), [DynamoDB](..Deploying Anywhere/using-your-aws-account.md) are readymade CloudFormation templates. To use these services, configure a CloudFormation box of the type and select an AWS account registered in Cloud Application Manager.
+[AWS RDS services](../Deploying Anywhere/using-your-aws-account.md) such as MySQL, MS SQL, PostgreSQL, Oracle, and [Memcached](../Deploying Anywhere/using-your-aws-account.md), [S3](../Deploying Anywhere/using-your-aws-account.md), [DynamoDB](../Deploying Anywhere/using-your-aws-account.md) are readymade CloudFormation templates. To use these services, configure a CloudFormation box of the type and select an AWS account registered in Cloud Application Manager.
 
 **In this article:**
 
@@ -27,7 +27,7 @@ We use a sample Wordpress template to show how to create and launch a CloudForma
 
 **Step 1. Create the template**
 
-1. [Log in](//www.ctl.io/cloud-application-manager/) to Cloud Application Manager.
+1. [Log in](https://www.ctl.io/cloud-application-manager/) to Cloud Application Manager.
 
 2. Click **Boxes > New > CloudFormation > CloudFormation Template**. Give the box a meaningful name to identify it in the box service catalog. Specify other [metadata](../Core Concepts/boxes.md).
 

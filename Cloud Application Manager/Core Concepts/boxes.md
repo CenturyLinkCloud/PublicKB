@@ -19,11 +19,11 @@ So how do boxes work? A typical application stack may consist of multiple boxes,
 **New Box**
 
 To create a new one, click **New**. Select a box type to match your automation:
-* [Script](../Automating Deployment/script-box.md) - To automate using Bash, PowerShell, Salt, Ansible, Puppet, or Chef.
-* [Deployment Policy](../Automating Deployment/deploymentpolicy-box.md) - To select and share infrastructure resources, networking, and more from a cloud provider.
-* [Application](../Automating Deployment/application-box.md) - To configure several boxes to deploy an application with a single click.
-* [CloudFormation](../Automating Deployment/cloudformation-box.md) - To automate using AWS CloudFormation templates.
-* [Container](../Automating Deployment/docker-container-service.md) - To automate using container technology like Docker.
+* [Script](../Automating Deployments/script-box.md) - To automate using Bash, PowerShell, Salt, Ansible, Puppet, or Chef.
+* [Deployment Policy](../Automating Deployments/deploymentpolicy-box.md) - To select and share infrastructure resources, networking, and more from a cloud provider.
+* [Application](../Automating Deployments/application-box.md) - To configure several boxes to deploy an application with a single click.
+* [CloudFormation](../Automating Deployments/cloudformation-box.md) - To automate using AWS CloudFormation templates.
+* [Container](../Automating Deployments/docker-container-service.md) - To automate using container technology like Docker.
 
 Give it a name, optionally a description, and define some basic metadata:
 
@@ -41,10 +41,10 @@ Once you create a box, you can configure and manage it in these sections.
 
 | Section | Description |
 |------------|----------------|
-| Configuration | Automate how a piece of software deploys in the virtual environment by by parameterizing with [variables](./parameterizing-boxes-with-variables.md) and [events](./start-stop-and-upgrade-boxes.md). |
+| Configuration | Automate how a piece of software deploys in the virtual environment by by parameterizing with [variables](../Automating Deployments/parameterizing-boxes-with-variables.md) and [events](../Automating Deployments/start-stop-and-upgrade-boxes.md). |
 | Versions | Keep track deployment configuration changes with the help of versioning. Versions let you consume different configurations of the same box in multiple deployments. From this tab, you can create a new version, see a diff of what changed, or restore a version as the box draft. |
 | Share | Invite team members to [collaborate](./workspaces-and-collaboration.md) and improve the configuration or just let them deploy the box. |
-| Deploy | [Launch a new instance](./deploying-managing-instances.md) of the box draft with this option. This lets you select a specific deployment policy to launch on a cloud provider. |
+| Deploy | [Launch a new instance](../Deploying Anywhere/deploying-managing-instances.md) of the box draft with this option. This lets you select a specific deployment policy to launch on a cloud provider. |
 | Gear Menu | From here, you can edit basic metadata of the box or delete it. |
 
 ### Contacting Cloud Application Manager Support

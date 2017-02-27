@@ -24,7 +24,7 @@ Click **Edit** to customize the policy. Select the resource, network, and other 
 * [Google Cloud](../Deploying Anywhere/using-google-cloud.md)
 * [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md)
 * [AWS GovCloud](../Deploying Anywhere/using-aws-govcloud.md)
-* [VMware vCenter](./using-the-vmware-vcenter-private-datacenter.md)
+* [VMware vCenter](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)
 * [Azure](../Deploying Anywhere/using-azure.md)
 * [OpenStack](../Deploying Anywhere/using-openstack-cloud.md)
 * [Rackspace Cloud](../Deploying Anywhere/using-rackspace-cloud.md)
