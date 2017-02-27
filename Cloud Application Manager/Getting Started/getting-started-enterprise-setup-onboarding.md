@@ -22,7 +22,7 @@ In Cloud Application Manager SaaS, each enterprise is hosted as a tenant in a mu
 
 **Get an enterprise account**
 
-To get an enterprise account, [contact sales](mailto:support@elasticbox.com). You’ll receive an enterprise domain at **yourcompanyname.elasticbox.com**. You also get a default admin account to manage the enterprise with the username as **operations+yourorgdomainnameelasticbox.com**. This default admin account lets you see and manage all users, assets, and resources in your organization from the [admin console](./admin-overview.md).
+To get an enterprise account, [contact sales](mailto:support@elasticbox.com). You’ll receive an enterprise domain at **yourcompanyname.elasticbox.com**. You also get a default admin account to manage the enterprise with the username as **operations+yourorgdomainname@elasticbox.com**. This default admin account lets you see and manage all users, assets, and resources in your organization from the [admin console](./admin-overview.md).
 
 ___
 
