@@ -12,18 +12,18 @@ When you sign up for the Cloud Application Manager Enterprise Edition, you get a
 **To Give Admin Access**
 1. Log in to Cloud Application Manager as the default administrator.
 2. Go to the Admin Console located in menu drop-down at the top right corner of your workspace.
-   ![admin-access1.png](../images/cloud-application-manager/admin-access1.png)
+   ![admin-access1.png](../../images/cloud-application-manager/admin-access1.png)
 
 3. Under **Organization > Administrators**, type the user’s name in the search field and select to add them.<br>
-   ![admin-access2.png](../images/cloud-application-manager/admin-access2.png)
+   ![admin-access2.png](../../images/cloud-application-manager/admin-access2.png)
 
 To revoke administrator privileges for a user, click X against their name under **Organization > Administrators**.
 
-Administrators can manage several org-wide settings that include [user authentication](./user-authentication.md), the [Cloud Application Manager appliance](./appliance-overview.md), [provider access](./provider-access.md), [admin boxes](./deploymentpolicy-box.md), [webhooks](./webhooks.md), and [instance tags](./resource-tags.md). To get a good idea of things you can do, see [Overview](./admin-overview.md).
+Administrators can manage several org-wide settings that include [user authentication](./user-authentication.md), the [Cloud Application Manager appliance](../Appliance/appliance-overview.md), [provider access](./provider-access.md), [admin boxes](../Automating Deployment/deploymentpolicy-box.md), [webhooks](./webhooks.md), and [instance tags](./resource-tags.md). To get a good idea of things you can do, see [Overview](./admin-overview.md).
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

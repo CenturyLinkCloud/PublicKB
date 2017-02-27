@@ -18,15 +18,15 @@ With the Enterprise Edition, you get an organization of unlimited users with dif
 Specifically, the Enterprise Edition exclusively offers several cool features.
 
 * Use Cloud Application Manager as a SaaS platform or as a virtual appliance in your private cloud.
-* In addition to public clouds, deploy in private clouds like [vSphere](./using-the-vmware-vcenter-private-datacenter.md), [OpenStack](./using-openstack-cloud.md), and [CloudStack](./using-cloudstack.md).
-* Get [sharing and collaboration features](./workspaces-and-collaboration.md) to let users share providers, boxes, and instances with each other as they work on applications in shared workspaces.
-* [Administer Cloud Application Manager](./admin-overview.md) to complement your IT application management workflows. Manage all users and assets centrally, and monitor and report on resource usage.
-* Manage deployments org-wide through [tagging](./resource-tags.md), [webhooks](./webhooks.md) that integrate with custom IPAM or CMDB solutions, or admin boxes that let you make sure deployments consistently comply with company policies.
+* In addition to public clouds, deploy in private clouds like [vSphere](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md), [OpenStack](../Deploying Anywhere/using-openstack-cloud.md), and [CloudStack](../Deploying Anywhere/using-cloudstack.md).
+* Get [sharing and collaboration features](../Core Concepts/workspaces-and-collaboration.md) to let users share providers, boxes, and instances with each other as they work on applications in shared workspaces.
+* [Administer Cloud Application Manager](../Administering Your Organization/admin-overview.md) to complement your IT application management workflows. Manage all users and assets centrally, and monitor and report on resource usage.
+* Manage deployments org-wide through [tagging](../Administering Your Organization/resource-tags.md), [webhooks](../Administering Your Organization/webhooks.md) that integrate with custom IPAM or CMDB solutions, or admin boxes that let you make sure deployments consistently comply with company policies.
 
 **Upgrade to Enterprise Edition**
-In order to benefit from all the powerful features in Cloud Application Manager, we recommend upgrading to the Enterprise Edition. For more information, [contact sales](mailto:support@elasticbox.com).
+In order to benefit from all the powerful features in Cloud Application Manager, we recommend upgrading to the Enterprise Edition. For more information, [contact sales](mailto:cloudsupport@centurylink.com).
 
-If you’re running the Developer Edition as an [appliance](./appliance-overview.md), you can directly upgrade from the product following these steps:
+If you’re running the Developer Edition as an [appliance](../Appliance/appliance-overview.md), you can directly upgrade from the product following these steps:
 
 **Steps**
 
@@ -38,7 +38,7 @@ This sends an email to our sales team who will contact you to create an Cloud Ap
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

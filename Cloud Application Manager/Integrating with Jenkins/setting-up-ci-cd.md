@@ -24,7 +24,7 @@ To add Cloud Application Manager build steps in Jenkins jobs, go to the job page
 ### Manage GitHub Pull Requests
 The plugin simplifies the GitHub pull request lifecycle for workloads run through Cloud Application Manager. While you need the GitHub plugin to provide the repository, project URL, and access credentials, you don’t need the GitHub pull request builder plugin, which is a lot of work to setup.
 
-![jenkins-github-1.png](../images/cloud-application-manager/jenkins-github-1.png)
+![jenkins-github-1.png](../../images/cloud-application-manager/jenkins-github-1.png)
 
 When you check the **Manage GitHub pull request lifecycle with Cloud Application Manager** option in the Jenkins job, the plugin performs the following things:
 * Automatically detects commits to the GitHub repository specified in the Jenkins job.
@@ -47,7 +47,7 @@ Cloud Application Manager provides parameters that contain information about Git
 Add the Cloud Application Manager Deploy build step in Jenkins jobs to launch automated configuration defined in boxes from an Cloud Application Manager account.
 
 **Select a box to deploy**
-![jenkins-github-2.png](../images/cloud-application-manager/jenkins-github-2.png)
+![jenkins-github-2.png](../../images/cloud-application-manager/jenkins-github-2.png)
 
 * **Cloud** - Select the Cloud Application Manager account you registered on the Jenkins server.
 * **Workspace** - Choose the Cloud Application Manager workspace from where you want to deploy the box.
@@ -60,7 +60,7 @@ Add the Cloud Application Manager Deploy build step in Jenkins jobs to launch au
 Under Tags, enter one or more keywords separated by comma. These keywords can include Jenkins build parameters or environment variables in the ${variable_name} format. The instance deployed from this build step is tagged with these keywords. Make sure the tags are unique if you want to bind to this build step from a subsequent one.
 
 **Schedule instances**
-![jenkins-github-3.png](../images/cloud-application-manager/jenkins-github-3.png)
+![jenkins-github-3.png](../../images/cloud-application-manager/jenkins-github-3.png)
 
 When deploying boxes through Jenkins build jobs, you can plan to expire the instance at future hour or custom time and date to save money and resources in the process.
 
@@ -72,13 +72,13 @@ In the deploy build step, under Expiration, schedule an instance as follows:
 
 Under **Variables**, pass deployment values for variables defined in the box. If you have a variable here that binds to a box from a previous build step, then you can use tags to refer to the box. For example, in a previous deploy build step a MySQL database box is tagged mysql-db. When binding to this box from a later build step we refer to the tag as shown.
 
-![jenkins-github-4.png](../images/cloud-application-manager/jenkins-github-4.png)
+![jenkins-github-4.png](../../images/cloud-application-manager/jenkins-github-4.png)
 
 **Configure other settings**
 
 Under **Advanced**, you can optionally configure more deployment settings.
 
-![jenkins-github-5.png](../images/cloud-application-manager/jenkins-github-5.png)
+![jenkins-github-5.png](../../images/cloud-application-manager/jenkins-github-5.png)
 
 **Tell Jenkins what to do when an instance of the box already exists**. In case an instance of this box is already there, under **If instance already exists**, choose whether Jenkins should still deploy, skip deploying, reinstall, reconfigure, or delete the existing instance and deploy.
 
@@ -107,10 +107,10 @@ Multiple instances
 * MYSQL_PRIVATE_ADDRESS: List of private IP addresses for the instances
 
 ### Manage Instance Lifecycle through Cloud Application Manager
-Add the Cloud Application Manager Manage build step in Jenkins jobs to manage the lifecycle of instances in a workspace with [specific operations](./deploying-managing-instances.md).
+Add the Cloud Application Manager Manage build step in Jenkins jobs to manage the lifecycle of instances in a workspace with [specific operations](../Deploying Anywhere/deploying-managing-instances.md).
 
 **Select an instance operation**
-![jenkins-github-6.png](../images/cloud-application-manager/jenkins-github-6.png)
+![jenkins-github-6.png](../../images/cloud-application-manager/jenkins-github-6.png)
 
 To run an operation, select the Cloud Application Manager account registered in Jenkins, the workspace where the instance is located, and the operation under **Add operation**. Select **Reconfigure**, **Reinstall**, **Start**, **Stop**, **Terminate**, or **Update**.
 
@@ -140,14 +140,14 @@ In the **Update** operation, enter tags to identify a deployed instance you want
 
 ### Update Box File Variables
 Update Box is an Cloud Application Manager build step in the Jenkins job that lets you upload the file variables to a box in a specific workspace. Add this build step to upload files from a working folder where the Jenkins job runs to a box in Cloud Application Manager.
-![jenkins-github-7.png](../images/cloud-application-manager/jenkins-github-7.png)
+![jenkins-github-7.png](../../images/cloud-application-manager/jenkins-github-7.png)
 
 ### See CI/CD in Action
-To see Jenkins CI/CD in action, try the [tutorial](./jenkins-ci-cd-tutorial.md). It takes you through a typical deployment workflow automated entirely with the help of the Cloud Application Manager plugin.
+To see Jenkins CI/CD in action, try the [tutorial](../Tutorials/jenkins-ci-cd-tutorial.md). It takes you through a typical deployment workflow automated entirely with the help of the Cloud Application Manager plugin.
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

@@ -10,7 +10,6 @@
 
 Partner Cloud Integration allows an Cloud Application Manager user to create Azure Customer Accounts for which CenturyLink will provide Platform-level support. The following is a description of what platform-level support is and how to use it.
 
-
 ### Audience
 
 All of our customers are invited to use Cloud Integration.
@@ -22,13 +21,6 @@ Knowledge of Cloud Application Manager's [partner cloud integration](./partner-c
 Knowledge of how to [get started with cloud-integrated Azure](./partner-cloud-integration-azure-new.md)
 
 ### Important Information
-
-**Contact Information**
-
-To submit a support request, you may do so via the following method.
-
-* Email support@elasticbox.com
-
 
 **Scope of Support**
 
@@ -55,3 +47,14 @@ At this time, Managed Operating System support is not available for Azure.
   * Partner cloud month-to-date totals
   * Partner cloud estimates
   * Terms and Agreements
+
+
+### Contacting Cloud Application Manager Support
+
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+
+For issues related to API calls, send the request body along with details related to the issue.
+
+In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
+* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

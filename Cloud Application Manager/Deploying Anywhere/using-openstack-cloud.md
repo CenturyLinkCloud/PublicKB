@@ -32,7 +32,7 @@ Cloud Application Manager requires the following services in OpenStack:
 
 The credentials are in an OpenStack RC file in the OpenStack dashboard.
 
-![openstack-get-credentials-1.png](../images/cloud-application-manager/openstack-get-credentials-1.png)
+![openstack-get-credentials-1.png](../../images/cloud-application-manager/openstack-get-credentials-1.png)
 
 **Steps**
 1. [Log in to the OpenStack dashboard](http://docs.openstack.org/user-guide/index.html). Choose the project for which you want to download the OpenStack RC file.
@@ -45,7 +45,7 @@ The credentials are in an OpenStack RC file in the OpenStack dashboard.
 
 Enter the OpenStack project credentials you downloaded from the OpenStack dashboard to allow Cloud Application Manager to make API requests.
 
-![openstack-register-project-2.png](../images/cloud-application-manager/openstack-register-project-2.png)
+![openstack-register-project-2.png](../../images/cloud-application-manager/openstack-register-project-2.png)
 
 **Steps**
 1. In Cloud Application Manager, click **Providers** > **New Provider.**
@@ -110,7 +110,7 @@ These are dependencies defined on the box. To deploy the box dependencies on the
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

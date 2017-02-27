@@ -26,7 +26,7 @@ You need a [CenturyLink Cloud account](//www.ctl.io/) to be able to deploy from 
 
 2. Enter the CenturyLink username and password as shown and save.
 
-   ![centurylink-add-provider-credentials-1.png](../images/cloud-application-manager/centurylink-add-provider-credentials-1.png)
+   ![centurylink-add-provider-credentials-1.png](../../images/cloud-application-manager/centurylink-add-provider-credentials-1.png)
 
 ### Deploy to CenturyLink Cloud from Cloud Application Manager
 
@@ -76,7 +76,7 @@ By default, the machine is provisioned with 17GB local disk space. You can add m
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

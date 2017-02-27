@@ -8,7 +8,7 @@
 
 ### Set up a Development Environment Using Cloud Application Manager and Vagrant
 
-In this 90-minute walkthrough, learn how to launch production-ready development and test environments from boxes on to your laptop using the [Cloud Application Manager agent](./deploying-on-anyinfra.md). With boxes, you can launch development environments in the same way as production letting developers test changes realistically.
+In this 90-minute walkthrough, learn how to launch production-ready development and test environments from boxes on to your laptop using the [Cloud Application Manager agent](../Deploying Anywhere/deploying-on-anyinfra.md). With boxes, you can launch development environments in the same way as production letting developers test changes realistically.
 
 **Scenario**
 
@@ -36,7 +36,7 @@ To get started, set up the following:
 
 2. Fork a sample Rails app from this [GitHub repository](https://github.com/railstutorial/sample_app_rails_4). Clone it in your Mac laptop as shown. This creates a local copy of the sample Rails app.
 
-    ![tutorial-vagrant-1.png](../images/cloud-application-manager/tutorial-vagrant-1.png)
+    ![tutorial-vagrant-1.png](../../images/cloud-application-manager/tutorial-vagrant-1.png)
 
 3. Install VirtualBox, a free open source virtualizer to run your dev environment. To install, run this command in your Mac laptop terminal:
 
@@ -67,7 +67,7 @@ ___
 
 ### Define Dev Environment in Boxes
 
-We log in to Cloud Application Manager and define modules of the Rails dev environment in multiple [boxes](./boxes.md) and stack them into a single box at the end.
+We log in to Cloud Application Manager and define modules of the Rails dev environment in multiple [boxes](../Core Concepts/boxes.md) and stack them into a single box at the end.
 
 **Nodejs Box**
 
@@ -88,7 +88,7 @@ This installs Javascript runtime for the Rails app.
     apt-get -q -y install nodejs
     ```
 
-    ![tutorial-vagrant-2.png](../images/cloud-application-manager/tutorial-vagrant-2.png)
+    ![tutorial-vagrant-2.png](../../images/cloud-application-manager/tutorial-vagrant-2.png)
 
 ___
 
@@ -105,7 +105,7 @@ This installs all the dependencies for the Rails app.
     * Box variable called ruby pointing to the default **Ruby** box.
     * Box variable called nodejs pointing to the **Nodejs** box.
 
-    ![tutorial-vagrant-3.png](../images/cloud-application-manager/tutorial-vagrant-3.png)
+    ![tutorial-vagrant-3.png](../../images/cloud-application-manager/tutorial-vagrant-3.png)
 
 ___
 
@@ -120,7 +120,7 @@ ___
     * Box variable called rails pointing to the **Rails Dependencies** box.
     * Box variable called github pointing to the **GitHub** box.
 
-    ![tutorial-vagrant-4.png](../images/cloud-application-manager/tutorial-vagrant-4.png)
+    ![tutorial-vagrant-4.png](../../images/cloud-application-manager/tutorial-vagrant-4.png)
 
 ___
 
@@ -287,7 +287,7 @@ This installs MySQL server and creates a database.
     mysql -uroot -p\{{ ROOT_PASSWORD }} --execute "GRANT ALL PRIVILEGES ON *.* to 'root'@'%'; FLUSH PRIVILEGES;"
     ```
 
-    ![tutorial-vagrant-5.png](../images/cloud-application-manager/tutorial-vagrant-5.png)
+    ![tutorial-vagrant-5.png](../../images/cloud-application-manager/tutorial-vagrant-5.png)
 
 ___
 
@@ -337,7 +337,7 @@ This box installs a development environment with the sample Rails app, runtimes,
     cd \{{ rails.github.git_repo.CLONE_DIRECTORY }} && rails server -p \{{ rails.rails.http }} -d
     ```
 
-    ![tutorial-vagrant-6.png](../images/cloud-application-manager/tutorial-vagrant-6.png)
+    ![tutorial-vagrant-6.png](../../images/cloud-application-manager/tutorial-vagrant-6.png)
 
 ___
 
@@ -375,7 +375,7 @@ Launch the Rails Dev Env box on your Mac laptop virtual machine running on Vagra
 
 2. Move the Vagrantfile to the sample_app_rails_4 folder cloned in your Mac laptop. Commit and push this change to your forked repo in GitHub.
 
-    ![tutorial-vagrant-7.png](../images/cloud-application-manager/tutorial-vagrant-7.png)
+    ![tutorial-vagrant-7.png](../../images/cloud-application-manager/tutorial-vagrant-7.png)
 
 3. In your Mac laptop terminal, go to the sample_app_rails_4 directory as in this example:
 
@@ -391,11 +391,11 @@ Launch the Rails Dev Env box on your Mac laptop virtual machine running on Vagra
 
     Right away, the box is provisioned per the Vagrantfile and it soon registers in Cloud Application Manager. Check your Cloud Application Manager workspace for the online Rails Dev Env instance. This can take a few minutes.
 
-    ![tutorial-vagrant-8.png](../images/cloud-application-manager/tutorial-vagrant-8.png)
+    ![tutorial-vagrant-8.png](../../images/cloud-application-manager/tutorial-vagrant-8.png)
 
 5. Once online, from the instance **Endpoints** tab, copy the Rails app IP address.
 
-    ![tutorial-vagrant-9.png](../images/cloud-application-manager/tutorial-vagrant-9.png)
+    ![tutorial-vagrant-9.png](../../images/cloud-application-manager/tutorial-vagrant-9.png)
 
 6. In your Mac laptop terminal, SSH into your Vagrant virtual machine from the sample_app_rails_4 directory:
 
@@ -413,7 +413,7 @@ Launch the Rails Dev Env box on your Mac laptop virtual machine running on Vagra
     xdg-open
     ```
 
-    ![tutorial-vagrant-10.png](../images/cloud-application-manager/tutorial-vagrant-10.png)
+    ![tutorial-vagrant-10.png](../../images/cloud-application-manager/tutorial-vagrant-10.png)
 
 ___
 
@@ -451,7 +451,7 @@ Let’s now run some tests to verify that the dev environment is working.
 
 You should see all the tests pass. Congratulations! You’ve successfully deployed a Rails development environment on your laptop using Cloud Application Manager and Vagrant.
 
-![tutorial-vagrant-11.png](../images/cloud-application-manager/tutorial-vagrant-11.png)
+![tutorial-vagrant-11.png](../../images/cloud-application-manager/tutorial-vagrant-11.png)
 
 To quit the Vagrant virtual environment, run this command:
 
@@ -465,9 +465,9 @@ After completing the tutorial, be sure to terminate the instance in your Cloud A
 vagrant destroy
 ```
 
-### Contacting Cloud Application Manager Support
+#### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

@@ -27,30 +27,30 @@ Follow these steps to build and deploy Jenkins server from a box. The box instal
 
 1. On the Boxes page, click **New Box**. Enter these details and save.
 
-	![integrate-jenkins1](../images/cloud-application-manager/integrate-jenkins1.png)
+	![integrate-jenkins1](../../images/cloud-application-manager/integrate-jenkins1.png)
 
 2. Add the following variables to store Jenkins server deployment values.
    * Provide your own Git repository through a text variable called GIT_REPOSITORY_URL.
 
-	![integrate-jenkins2](../images/cloud-application-manager/integrate-jenkins2.png)
+	![integrate-jenkins2](../../images/cloud-application-manager/integrate-jenkins2.png)
 
    * Pass the GitHub access token in a text variable.
 
-   ![integrate-jenkins3](../images/cloud-application-manager/integrate-jenkins3.png)
+   ![integrate-jenkins3](../../images/cloud-application-manager/integrate-jenkins3.png)
 
    To get it, sign in to your [GitHub account](https://github.com/). Under settings, go to **Applications** > **Personal access tokens** > **Generate new token**. Describe why you need the token. Under scope, select **repo** and **repo: status**. Then click **Generate Token**. Copy and paste it as shown.
 
    * Provide your GitHub project URL in a text variable called GITHUB_PROJECT_URL.
 
-   ![integrate-jenkins4](../images/cloud-application-manager/integrate-jenkins4.png)
+   ![integrate-jenkins4](../../images/cloud-application-manager/integrate-jenkins4.png)
 
    * Provide your GitHub username as a text variable called GITHUB_USER.
 
-   ![integrate-jenkins5](../images/cloud-application-manager/integrate-jenkins5.png)
+   ![integrate-jenkins5](../../images/cloud-application-manager/integrate-jenkins5.png)
 
    * Open HTTP port 8080 on the Jenkins server through a port variable called HTTP to allow Internet traffic.
 
-   ![integrate-jenkins6](../images/cloud-application-manager/integrate-jenkins6.png)
+   ![integrate-jenkins6](../../images/cloud-application-manager/integrate-jenkins6.png)
 
    * Refer to the Cloud Application Manager, Git, and GitHub plugin dependencies in a text variable called PLUGINS.
 Enter this value:
@@ -60,11 +60,11 @@ Enter this value:
 
    ```
 
-   ![integrate-jenkins7](../images/cloud-application-manager/integrate-jenkins7.png)
+   ![integrate-jenkins7](../../images/cloud-application-manager/integrate-jenkins7.png)
 
    * Add a plugin that triggers GitHub to push pull requests.
 
-   ![integrate-jenkins8](../images/cloud-application-manager/integrate-jenkins8.png)
+   ![integrate-jenkins8](../../images/cloud-application-manager/integrate-jenkins8.png)
 
    Copy, paste this script in a text file, save in XML, and upload to a file variable called GITHUB_PLUGIN_CONFIG.
 
@@ -83,7 +83,7 @@ Enter this value:
    ```
    * Add the merge build job template as a file variable called MERGE_JOB.
 
-   ![integrate-jenkins9](../images/cloud-application-manager/integrate-jenkins9.png)
+   ![integrate-jenkins9](../../images/cloud-application-manager/integrate-jenkins9.png)
 
    Copy, paste the script in a text file, save in XML, and upload as shown.
 
@@ -133,7 +133,7 @@ Enter this value:
 
    * Add the pull request job template as a file variable called PULL_REQUEST_JOB.
 
-   ![integrate-jenkins10](../images/cloud-application-manager/integrate-jenkins10.png)
+   ![integrate-jenkins10](../../images/cloud-application-manager/integrate-jenkins10.png)
 
    Copy, paste the script in a text file, save in XML, and upload as shown.
 
@@ -271,7 +271,7 @@ Configure your cloud provider network to allow Internet traffic to the Jenkins s
 
 Here we configure the Google Cloud network to allow Internet traffic through port 8080 and Jenkins slave traffic through port 55555.
 
-![integrate-jenkins11](../images/cloud-application-manager/integrate-jenkins11.png)
+![integrate-jenkins11](../../images/cloud-application-manager/integrate-jenkins11.png)
 
 1. Log in to the [Google Cloud console](https://console.developers.google.com/apis/library).
 
@@ -297,7 +297,7 @@ Here we configure the Google Cloud network to allow Internet traffic through por
 
 6. Under Network, select the firewall rule from Google Cloud. Select Ephemeral IP to make the instance IP address public.
 
-   ![integrate-jenkins12](../images/cloud-application-manager/integrate-jenkins12.png)
+   ![integrate-jenkins12](../../images/cloud-application-manager/integrate-jenkins12.png)
 
 7. Click **Save**.
 
@@ -319,7 +319,7 @@ In your Jenkins server management interface, follow these steps to register your
    * **Description**. Enter information to identify your Cloud Application Manager account in Jenkins jobs.
    * **End Point URL**. Enter a custom URL if using Cloud Application Manager as an appliance.
    * **Max. No. of Instances**. This is the total number of instances Jenkins will launch through your account. We recommend at least 5.
-   * **Authentication Token**. [Get a token](./api-overview-and-access.md) and paste it here. If you use username, password to access Cloud Application Manager, get one by clicking **Get Authentication Token**.
+   * **Authentication Token**. [Get a token](../API/api-overview-and-access.md) and paste it here. If you use username, password to access Cloud Application Manager, get one by clicking **Get Authentication Token**.
 
 2. Click **Verify Authentication Token** to see if Jenkins can connect to Cloud Application Manager.
 
@@ -327,7 +327,7 @@ In your Jenkins server management interface, follow these steps to register your
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

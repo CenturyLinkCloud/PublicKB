@@ -10,9 +10,9 @@
 
 Deploy to AWS from Cloud Application Manager as follows.
 
-* For EC2 (Linux and Windows) use [deployment policies](./deploymentpolicy-box.md). Select a policy when you launch workloads from boxes.
+* For EC2 (Linux and Windows) use [deployment policies](../Automating Deployments/deploymentpolicy-box.md). Select a policy when you launch workloads from boxes.
 * For AWS RDS, AWS S3, AWS DynamoDB, and AWS Memcached, use readymade CloudFormation boxes.
-* For any other AWS service, configure a custom [CloudFormation box](./cloudformation-box.md).
+* For any other AWS service, configure a custom [CloudFormation box](../Automating Deployments/cloudformation-box.md).
 
 We orchestrate with AWS APIs in the backend to provision, install, and manage the lifecycle of your workloads based on the box configuration.
 
@@ -191,12 +191,12 @@ Before you deploy in AWS, you need to connect your AWS account in Cloud Applicat
 
 By default, Cloud Application Manager makes the latest AWS Linux and Windows AMIs along with any custom AMIs available in your AWS account. You can add others by clicking **New** and entering the AMI number.
 
-![aws-machine-image-1.png](..//images/cloud-application-manager/aws-machine-image-1.png)
+![aws-machine-image-1.png](../../images/cloud-application-manager/aws-machine-image-1.png)
 
 **Note:** For this to work you may have go to the AWS marketplace and accept the license agreement for that AMI. Although most AMIs come pre-installed with [cloud-init](https://cloudinit.readthedocs.org/en/latest/), some may not, in which case you must install it. Cloud Application Manager requires cloud-init to bootstrap the Cloud Application Manager agent.
 
 ### Deploy to Your AWS Account
-When you deploy a box, we show [deployment policies](./deploymentpolicy-box.md) whose claims match the required tags of the box.
+When you deploy a box, we show [deployment policies](../Automating Deployments/deploymentpolicy-box.md) whose claims match the required tags of the box.
 
 RDS, S3, DynamoDB, and Memcached are CloudFormation boxes. To deploy to an RDS service, such as MySQL, MS SQL, Oracle, or PostgresSQL, configure its CloudFormation box.
 
@@ -211,9 +211,9 @@ RDS, S3, DynamoDB, and Memcached are CloudFormation boxes. To deploy to an RDS s
 **Note:** If your AWS account has new AMIs, key pairs, security groups, and the like, you must sync with the AWS account in Cloud Application Manager to pick up all the changes.
 
 ### EC2 (Linux and Windows)
-To deploy workloads to an EC2 instance, create a [deployment policy](./deploymentpolicy-box.md) for an AWS account or use the one your admin shared with you.
+To deploy workloads to an EC2 instance, create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) for an AWS account or use the one your admin shared with you.
 
-![aws-deployment-policy-2.png](../images/cloud-application-manager/aws-deployment-policy-2.png)
+![aws-deployment-policy-2.png](../../images/cloud-application-manager/aws-deployment-policy-2.png)
 
 
 **Deployment**
@@ -248,7 +248,7 @@ To deploy workloads to an EC2 instance, create a [deployment policy](./deploymen
 **Elastic Block Store**
 Instance types come with a default root device volume. To get storage on top of the default volume, add EBS volumes under Elastic Block Store.
 
-![aws-depprofile-elasticblockstore-settings-3.png](../images/cloud-application-manager/aws-depprofile-elasticblockstore-settings-3.png)
+![aws-depprofile-elasticblockstore-settings-3.png](../../images/cloud-application-manager/aws-depprofile-elasticblockstore-settings-3.png)
 
 Select from General Purpose (SSD), Provisioned IOPS (SSD) or Magnetic volume types. Optionally, EBS-optimize them to dedicate I/O throughput from the instance to the volumes. Check **EBS Optimized** for any of the supported instance types: m3.xlarge, m3.2xlarge, c3.xlarge, c3.2xlarge, c3.4xlarge, g2.2xlarge, r3.xlarge, r3.2xlarge.
 
@@ -280,7 +280,7 @@ Turn on to allow AWS to automatically scale to the number of instances you speci
 Load balancing evenly distributes load to your application instances hosted on EC2 or a VPC across all availability zones in a region. When you enable and configure it for an instance, Cloud Application Manager automatically sets up load balancing.
 To set up, add a new listener or select an existing one. Then specify the protocol and ports through which traffic flows from the client to the load balancer node (front-end) and from the load balancer to the instance (backend). To allow traffic over HTTPS, SSL, you must [upload a certificate](https://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/US_SettingUpLoadBalancerHTTPS.html) to AWS. The default settings require that your EC2 servers are active and accept requests via the port specified for the load balancing listener. Accepted ports are 25, 80, 443, and 1024 to 65535.
 
-![aws-deppolicy-loadbalancing-autoscaling-4.png](../images/cloud-application-manager/aws-deppolicy-loadbalancing-autoscaling-4.png)
+![aws-deppolicy-loadbalancing-autoscaling-4.png](../../images/cloud-application-manager/aws-deppolicy-loadbalancing-autoscaling-4.png)
 
 When deploying via AWS, we register the instance to the load balancer and automatically create a security group for the load balancer so that it can communicate with the instance through the protocols and ports you set in the deployment profile.
 
@@ -293,7 +293,7 @@ To deploy workloads to an ECS instances:
 * Image Lifecycle
 * Deploy the Instance
 
-**Note:** This documentation assumes that you have an ECS cluster already deployed in your AWS account. If you don’t have one, you can deploy a [CloudFormation Box](./cloudformation-box.md) using this [CloudFormation template](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-ecs.html) as blueprint. After the instance is deployed, don’t forget to synchronize the provider in order to fetch the latest changes.
+**Note:** This documentation assumes that you have an ECS cluster already deployed in your AWS account. If you don’t have one, you can deploy a [CloudFormation Box](../Automating Deployments/cloudformation-box.md) using this [CloudFormation template](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-ecs.html) as blueprint. After the instance is deployed, don’t forget to synchronize the provider in order to fetch the latest changes.
 
 #### Deployment Policy
 
@@ -403,7 +403,7 @@ In Cloud Application Manager, S3 is a readymade CloudFormation box. To define an
 
 Configure the S3 bucket with these options. Select a port (usually 80) through which the storage instance communicates over the network.
 
-![aws-s3bucket-cloudformationbox-5.png](../images/cloud-application-manager/aws-s3bucket-cloudformationbox-5.png)
+![aws-s3bucket-cloudformationbox-5.png](../../images/cloud-application-manager/aws-s3bucket-cloudformationbox-5.png)
 
 | Deployment Option | Description |
 |-------------------|-------------|
@@ -435,7 +435,7 @@ The memcached box adds in-memory caching for your application. By deploying thro
 
 Refer to these options to configure a memcached service through Cloud Application Manager. We set defaults for settings like the cache subnet group, which you can select if you have a VPC.
 
-![aws-deploymentpolicy-memcached-6.png](../images/cloud-application-manager/aws-deploymentpolicy-memcached-6.png)
+![aws-deploymentpolicy-memcached-6.png](../../images/cloud-application-manager/aws-deploymentpolicy-memcached-6.png)
 
 | Deployment Option | Description |
 |-------------------|-------------|
@@ -453,7 +453,7 @@ Refer to these options to configure a memcached service through Cloud Applicatio
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

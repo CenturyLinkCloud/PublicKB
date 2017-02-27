@@ -17,7 +17,7 @@
 
 You can launch boxes on any infrastructure by running the Cloud Application Manager agent. The agent is required to execute box variables and scripts and run lifecycle operations. To install the agent, you run a Bash command. The infrastructure can be a virtual machine in your laptop, physical machines on premise, a datacenter, or any cloud provider environment. We support running it on Linux distributions Debian 6 and 7, Ubuntu 12.04 and 14.04, RedHat 6.x, CentOS 6.x, and any AWS Linux AMI. No matter where you choose to deploy, boxes launch consistently as they would on any cloud provider.
 
-![deploy-via-myserver-1.png](../images/cloud-application-manager/deploy-via-myserver-1.png)
+![deploy-via-myserver-1.png](../../images/cloud-application-manager/deploy-via-myserver-1.png)
 
 ### How to Deploy with the Cloud Application Manager Agent
 
@@ -36,7 +36,7 @@ Run the Cloud Application Manager agent on the Linux machine where you want to l
    ssh -i /Users/mrina/Documents/AWS_Private_PublicKeyPairs/AWSEC2_KeyPair/useast-mrina.pem ec2-user@54.163.174.41
    ```
 
-2. Launch an instance of a box using the the Cloud Application Manager agent. In this example, we launch an instance of the public [MongoDB box](./sample-deploy-mongodb.md) in AWS.
+2. Launch an instance of a box using the the Cloud Application Manager agent. In this example, we launch an instance of the public [MongoDB box](../API/sample-deploy-mongodb.md) in AWS.
 
    ```
    curl -sLk https://ebx.co | sudo bash -s -- -b "MongoDB Server" -n "test" -V username=admin123 -V password=password12345 -t 314a36ad-74b6-4205-9e33-eac9970e4a1b
@@ -68,7 +68,7 @@ curl -sLk https://ebx.co | sudo bash -s -- -b "<box name or ID>" -n "<environmen
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

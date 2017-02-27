@@ -12,7 +12,6 @@ Partner Cloud Integration allows an Cloud Application Manager user to leverage C
 
 For our initial release, we have integrated with Microsoft Azure.
 
-
 ### Audience
 
 All of our customers are invited to use Cloud Integration.
@@ -25,13 +24,11 @@ Access to Cloud Application Manager.
 
 Credentials for a [CenturyLink Cloud Account Administrator](../../Accounts & Users/user-permissions.md)
 
-A working Knowledge how to use [Cloud Application Manager providers](https://ElasticBox.com/documentation/core-concepts/providers/).
+A working knowledge of how to use [Cloud Application Manager providers](../Core Concepts/providers.md).
 
 For each CLC account hoping to integrate with Azure, both CenturyLink's and Microsoft's Terms and Conditions must be accepted. These will be presented to any user attempting to create a new "Azure Resource Manager" provider in Cloud Application Manager.
 
-
 ### Important Information
-
 
 Current features of Partner Cloud Integration include:
 * **Mapping New Azure Customer Accounts with CLC Account:** For each CLC account meeting the requirements (above), a new Azure Customer account will be created and a relationship between the CLC and Azure accounts will be persisted.
@@ -51,10 +48,8 @@ For additional details on support responsibilities for our partners and their SL
 **Additional Support and Management:**
 * The true strength of Cloud Integration is that it opens to door for trained, CenturyLink resources to do work for you on your behalf, in Azure. If you are interested in contracting with CenturyLink to provide design, implementation, or ongoing, additional support, request an engagement with your sales representative.
 
-
 **Partner Pricing Details:**
 * **Azure:** Pricing available to CenturyLink customers is shown [here](https://www.ctl.io/pricing), with some variability as Microsoft changes pricing daily. Available products are also listed [here](./partner-cloud-integration-azure-permissions.md). If your organization has agreements with Microsoft which differ from what is shown, please submit a ticket for review. We are constantly working to increase the scope of what is offered through Azure and it is likely we have plans to offer what you require.
-
 
 **Availability**
 * **General:**
@@ -69,7 +64,6 @@ For additional details on support responsibilities for our partners and their SL
 
   To get started with Azure, please review [Partner Cloud: Getting Started With Azure Customer](./partner-cloud-integration-azure-new.md)
 
-
 **Partner Responsibility:**
 
   Partner | Cloud | Responsibility | Details
@@ -79,3 +73,13 @@ CenturyLink | Azure | ** Managed OS. ** For the moment, this in-depth level of s
 CenturyLink IT Service Management | Azure | **Per agreement.** Design and delivery. Potentially including application architecture, consulting services, solution design, configuration, installation and migration.| Contact your account representative.
 CenturyLink Service Management | Azure | **Per agreement** For run-state environments following design and deliver. Potentially including Account Management, Technical Account management, governance, and application management. | Contact your account representative.
 Microsoft | Azure | **Infrastructure** Troubleshoot and provide technical guidance for customer issues escalated through CenturyLink including undocumented scenarios and service impacting events.  | [Microsoft SLA](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37)
+
+### Contacting Cloud Application Manager Support
+
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+
+For issues related to API calls, send the request body along with details related to the issue.
+
+In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
+* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

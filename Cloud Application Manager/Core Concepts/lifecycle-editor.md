@@ -22,11 +22,11 @@ The Lifecycle Editor offers a single, unified interface to test and refine your 
 
 Right after you launch an instance, the Lifecycle Editor is available on the instance profile page. To get to it, click an instance from the Instances page as shown.
 
-![lifecycle-editor-1.png](../images/cloud-application-manager/lifecycle-editor-1.png)
+![lifecycle-editor-1.png](../../images/cloud-application-manager/lifecycle-editor-1.png)
 
 The instance profile page shows the activity feed of the instance during its entire lifecycle and lets you take actions on the instance. Click the Lifecycle Editor to edit and make changes on the running instance.
 
-![lifecycle-editor-2.png](../images/cloud-application-manager/lifecycle-editor-2.png)
+![lifecycle-editor-2.png](../../images/cloud-application-manager/lifecycle-editor-2.png)
 
 ### Modifying a Box Instance
 
@@ -34,9 +34,9 @@ Edit the box configuration of a running instance by modifying its event scripts 
 
 **Changing Events**
 
-[Events](./start-stop-and-upgrade-boxes.md) let you control the lifecycle of your application in the virtual infrastructure. Change them to modify how your application behaves.
+[Events](../Automating Deployment/start-stop-and-upgrade-boxes.md) let you control the lifecycle of your application in the virtual infrastructure. Change them to modify how your application behaves.
 
-![lifecycle-editor-3.png](../images/cloud-application-manager/lifecycle-editor-3.png)
+![lifecycle-editor-3.png](../../images/cloud-application-manager/lifecycle-editor-3.png)
 
 1. To edit an event, traverse the box topology, and select the event. In this example, we selected the install event of the NODE box.
 2. Make event script changes in the event tab. The tab shows an asterisk to indicate any unsaved changes.
@@ -44,31 +44,31 @@ Edit the box configuration of a running instance by modifying its event scripts 
 
 **Changing Variable Values**
 
-You can redeploy an instance with different parameters by changing the [variable](./parameterizing-boxes-with-variables.md) values.
+You can redeploy an instance with different parameters by changing the [variable](../Automating Deployment/parameterizing-boxes-with-variables.md) values.
 
 * To edit variable values, click the pencil icon for a variable and change its value.
 * To edit file type variables, click the pencil icon and click **Edit File**.
 
-![lifecycle-editor-4.png](../images/cloud-application-manager/lifecycle-editor-4.png)
+![lifecycle-editor-4.png](../../images/cloud-application-manager/lifecycle-editor-4.png)
 
 **Changing Binding Variable Values**
 
-When an instance depends on another box or service–like a load balancer, caching, or database service–you can link them together with a [binding](./parameterizing-boxes-with-variables.md). In the Lifecycle Editor, you can modify the binding value to select a different instance.
+When an instance depends on another box or service–like a load balancer, caching, or database service–you can link them together with a [binding](../Automating Deployment/parameterizing-boxes-with-variables.md). In the Lifecycle Editor, you can modify the binding value to select a different instance.
 
-![lifecycle-editor-5.png](../images/cloud-application-manager/lifecycle-editor-5.png)
+![lifecycle-editor-5.png](../../images/cloud-application-manager/lifecycle-editor-5.png)
 
 1. Under the Variables section, click the pencil icon to edit the binding variable.
 2. For its value, select a deploying or running instance from your current workspace. To reset the current value, click the trash icon.
 
 ### Re-Launching the Instance with Changes
 
-Once you’ve saved changes in the lifecycle editor, they are locally stored until you trigger a lifecycle action on the instance. You can re-apply changes to the running instance by triggering an install or configure event, which runs the box event scripts in the virtual infrastructure. To learn about other actions you can take, see [Handling Instance Lifecycle States](./deploying-managing-instances.md).
+Once you’ve saved changes in the lifecycle editor, they are locally stored until you trigger a lifecycle action on the instance. You can re-apply changes to the running instance by triggering an install or configure event, which runs the box event scripts in the virtual infrastructure. To learn about other actions you can take, see [Handling Instance Lifecycle States](../Deploying Anywhere/deploying-managing-instances.md).
 
 In this example, we click **Reinstall** to run install type events in the virtual environment. Install type events include all the install and post install event scripts in the main and nested boxes.
 
 **Note:** When an action is triggered, the instance is in the process of changing state. During this time, it’s in view-only mode and you can’t edit its configuration. But, you can view logs. Once the scripts are executed, you can go back to editing the instance.
 
-![lifecycle-editor-6.png](../images/cloud-application-manager/lifecycle-editor-6.png)
+![lifecycle-editor-6.png](../../images/cloud-application-manager/lifecycle-editor-6.png)
 
 ### Viewing Instance Logs
 
@@ -76,7 +76,7 @@ The logs panel presents the standard output of event scripts that were executed 
 
 Click **Logs** to monitor the progress on the instance while its being re-installed and reconfigured.
 
-![lifecycle-editor-7.png](../images/cloud-application-manager/lifecycle-editor-7.png)
+![lifecycle-editor-7.png](../../images/cloud-application-manager/lifecycle-editor-7.png)
 
 ### Versioning with Push and Pull
 
@@ -86,7 +86,7 @@ Additionally you can also pull a version from the box definition. This is useful
 
 Click the up arrow to push or the down arrow to pull as shown in the variables section.
 
-![lifecycle-editor-8.png](../images/cloud-application-manager/lifecycle-editor-8.png)
+![lifecycle-editor-8.png](../../images/cloud-application-manager/lifecycle-editor-8.png)
 
 * Push creates a new version of the box in the box catalog based on the changes made in the Lifecycle Editor. This updates both the event scripts of that box as well as the variable contents.
 * Pull copies the version you select of the box from the box catalog and brings it onto the box instance. This is useful for either upgrading an instance to a new version of a box or for reverting changes.
@@ -95,7 +95,7 @@ Click the up arrow to push or the down arrow to pull as shown in the variables s
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

@@ -16,7 +16,6 @@ By configuring the slave node once in Cloud Application Manager, you can reuse i
 * Configure Jenkins to build with slaves using Cloud Application Manager
 * Find a slave from Cloud Application Manager
 
-
 ### Configure a Slave
 
 Configure a Jenkins slave in Cloud Application Manager. Later, you’ll call this slave from Jenkins using the Cloud Application Manager plugin.
@@ -28,13 +27,13 @@ Configure a Jenkins slave in Cloud Application Manager. Later, you’ll call thi
 
 2. Create a Jenkins slave box. From the Boxes page, click **New** > **Script**. Name the box, tag it Linux, and save.
 
-	![eb-slaves1](../images/cloud-application-manager/eb-slaves1.png)
+	![eb-slaves1](../../images/cloud-application-manager/eb-slaves1.png)
 
 3. Configure the box. Under Configuration > Variables, create two text variables (JENKINS_URL and JNLP_SLAVE_OPTIONS) in uppercase and leave their values empty.
 
-	![eb-slaves2](../images/cloud-application-manager/eb-slaves2.png)
+	![eb-slaves2](../../images/cloud-application-manager/eb-slaves2.png)
 
-	![eb-slaves3](../images/cloud-application-manager/eb-slaves3.png)
+	![eb-slaves3](../../images/cloud-application-manager/eb-slaves3.png)
 
    Under Configuration > Events, add an install, start, and stop script. Copy, paste each script below and save:
 **install**. This script installs the latest version of Java if unavailable and downloads the slave agent from the Jenkins server.
@@ -86,11 +85,11 @@ Configure a Jenkins slave in Cloud Application Manager. Later, you’ll call thi
 
    Under Claims, type or select a linux tag. Claim tags define the policy at a high level. It defines the type of platform, flavor, image, and so on. When configuring the slave in Jenkins, you provide this claim tag to deploy the slave. The claim tag must match the requirement tag in the Jenkins slave box.
 
-  ![eb-slaves4](../images/cloud-application-manager/eb-slaves4.png)
+  ![eb-slaves4](../../images/cloud-application-manager/eb-slaves4.png)
 
    Edit the policy. Make sure you select a Debian Ubuntu Linux image, select a firewall rule that allows traffic to the instance, and make the machine IP ephemeral to open it to Internet traffic. Save the policy.
 
-   ![eb-slaves5](../images/cloud-application-manager/eb-slaves5.png)
+   ![eb-slaves5](../../images/cloud-application-manager/eb-slaves5.png)
 
 ### Configure Jenkins to Build with Slaves Using Cloud Application Manager
 
@@ -104,7 +103,7 @@ Run Jenkins jobs using slaves launched via Cloud Application Manager on any clou
 
 2. Set up Jenkins to launch slaves using the slave box. Click **Add** for **Slave Configurations**.
 
-	![eb-slaves6](../images/cloud-application-manager/eb-slaves6.png)
+	![eb-slaves6](../../images/cloud-application-manager/eb-slaves6.png)
 
 3. In this section, select the slave box from the Cloud Application Manager workspace. Optionally, tag the slave instance.
 
@@ -112,7 +111,7 @@ Run Jenkins jobs using slaves launched via Cloud Application Manager on any clou
 
    **IMPORTANT**: Add a label to identify the slave to Jenkins. Use underscores or dashes, but not spaces. When you create a build job (as we’ll do in the next section), you can provide this label to make Jenkins select this slave.
 
-	![eb-slaves7](../images/cloud-application-manager/eb-slaves7.png)
+	![eb-slaves7](../../images/cloud-application-manager/eb-slaves7.png)
 
    The plugin uses the JENKINS_URL and JNLP_SLAVE_OPTIONS variables to pass Jenkins server information slaves need to connect. Leave them empty.
 
@@ -135,7 +134,7 @@ When defining the [Jenkins server box](./jenkins-cloud-application-manager-setup
 
 2. Select **Enable Security** and set **Fixed** to 55555 as shown. Save the setting.
 
-  ![eb-slaves8](../images/cloud-application-manager/eb-slaves8.png)
+  ![eb-slaves8](../../images/cloud-application-manager/eb-slaves8.png)
 
 
 ### Attach Slave to a Build Job
@@ -148,7 +147,7 @@ Follow these steps to attach a slave from Cloud Application Manager to run Jenki
 
 2. Select **Restrict where this project can be run**. Under **Label Expression**, type and select the label for the Cloud Application Manager slave that you gave when setting it up in Jenkins. This causes Jenkins to pick any available slave by that label.
 
-	![eb-slaves9](../images/cloud-application-manager/eb-slaves9.png)
+	![eb-slaves9](../../images/cloud-application-manager/eb-slaves9.png)
 
 3. Save the job.
 
@@ -163,19 +162,19 @@ Follow these steps to locate slaves launched via Cloud Application Manager in ca
 
 2. Click the slave if active. It’s typically named as <Jenkins slave box environment name——–ID>. Here’s an example.
 
-	![eb-slaves10](../images/cloud-application-manager/eb-slaves10.png)
+	![eb-slaves10](../../images/cloud-application-manager/eb-slaves10.png)
 
 3. Click Configure. This shows settings for the slave.
 
-   ![eb-slaves11](../images/cloud-application-manager/eb-slaves11.png)
+   ![eb-slaves11](../../images/cloud-application-manager/eb-slaves11.png)
 
 4. Notice the Cloud Application Manager link to the slave instance. Click to open the slave instance in Cloud Application Manager. From there, you can debug the slave in the lifecycle editor or check the logs.
 
-   ![eb-slaves12](../images/cloud-application-manager/eb-slaves12.png)
+   ![eb-slaves12](../../images/cloud-application-manager/eb-slaves12.png)
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

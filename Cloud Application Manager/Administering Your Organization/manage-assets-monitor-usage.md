@@ -23,7 +23,7 @@ From the [admin console](./admin-overview.md), you get full purview over assets 
 
 In the admin console, **Users** shows a list of all users in the organization who use Cloud Application Manager. From this view you can do nifty things to manage them:
 
-![admin-assets1.png](../images/cloud-application-manager/admin-assets1.png)
+![admin-assets1.png](../../images/cloud-application-manager/admin-assets1.png)
 
 * Change their username if you need to.
 * In the **Unmanaged** tab, see which users signed up for Cloud Application Manager with their company email, but are not added to your Cloud Application Manager organization. This is likely if they signed up before your organization was officially created in Cloud Application Manager. To add them to your organization, give us a list of these users. After that, you’ll see them under the **Managed** tab.
@@ -34,7 +34,7 @@ In the admin console, **Users** shows a list of all users in the organization wh
 
 Under **Providers**, you can see a list of all the provider accounts users in the organization have added. Here are some options to manage providers in this view.
 
-![admin-assets2.png](../images/cloud-application-manager/admin-assets2.png)
+![admin-assets2.png](../../images/cloud-application-manager/admin-assets2.png)
 
 * See which provider accounts are online. Online means they’re available for deploying. If unavailable, you can sync to get them online or go to the individual provider page and see what’s wrong by looking at the logs.
 * A quick look tells you in whose workspace a provider belongs. If it’s an individual workspace, you know they added that provider.
@@ -45,7 +45,7 @@ Under **Providers**, you can see a list of all the provider accounts users in th
 
 All boxes in the organization are listed under **Boxes** in the admin console. You can manage boxes from everyone’s workspace here.
 
-![admin-assets3.png](../images/cloud-application-manager/admin-assets3.png)
+![admin-assets3.png](../../images/cloud-application-manager/admin-assets3.png)
 
 * Select any box to change its name, add an icon, describe, or tag it. Or go to the box page directly to do these things as well as share or change box ownership.
 * Delete unused boxes by selecting them in bulk and clicking delete from the Bulk Actions menu.
@@ -56,9 +56,9 @@ All boxes in the organization are listed under **Boxes** in the admin console. Y
 
 Take a look at all the instances in the organization by their state under **Instances** in the admin console. You get a quick tally of the total number of instances there are, how many of them are online, shut down, terminated, or processing.
 
-![admin-assets4.png](../images/cloud-application-manager/admin-assets4.png)
+![admin-assets4.png](../../images/cloud-application-manager/admin-assets4.png)
 
-* Select all the online instances and trigger instance actions in bulk from the Bulk Actions menu. You can trigger operations like reinstall, reconfigure, shut down, terminate. See what these [instance operations](./deploying-managing-instances.md) mean.
+* Select all the online instances and trigger instance actions in bulk from the Bulk Actions menu. You can trigger operations like reinstall, reconfigure, shut down, terminate. See what these [instance operations](../Deploying Anywhere/deploying-managing-instances.md) mean.
 * Select all terminated instances and delete them at one shot.
 * Click the instance to access its page directly.
 * See to which provider an instance is deployed. Then go to the provider page to see who owns it.
@@ -69,7 +69,7 @@ Take a look at all the instances in the organization by their state under **Inst
 
 View all the team and individual workspaces in your organization under **Workspaces** in the admin console. You can manage workspaces for your organization as follows:
 
-![admin-assets5.png](../images/cloud-application-manager/admin-assets5.png)
+![admin-assets5.png](../../images/cloud-application-manager/admin-assets5.png)
 
 * Add members to a team workspace or make someone the workspace owner.
 * Change the workspace name, icon, or delete the workspace.
@@ -97,7 +97,7 @@ With such insights you can enact best practices and policies to enable people to
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

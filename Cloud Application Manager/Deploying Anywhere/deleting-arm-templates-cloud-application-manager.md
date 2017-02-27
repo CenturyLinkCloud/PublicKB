@@ -18,7 +18,7 @@ This video will show you how to delete a template instance in an existing Azure 
 
 To get started with Cloud Application Manager, sign up for an account and register your cloud service (CenturyLink, AWS or Azure, for example) as a provider.
 
-![Cloud Application Manager Login](../images/cloud-application-manager-dashboard.png)
+![Cloud Application Manager Login](../../images/cloud-application-manager-dashboard.png)
 
 ### Instances
 
@@ -26,13 +26,13 @@ After you log-in into Cloud Application Manager, click the **Instances** tab on 
 
 Select the instance you want to terminate.
 
-![Cloud Application Manager Using ARM Templates 1](../images/cloud-application-manager-delete-arm-template-1.png)
+![Cloud Application Manager Using ARM Templates 1](../../images/cloud-application-manager-delete-arm-template-1.png)
 
 ### Terminate Instance
 
 Click the **Bulk Options** tab and click **Force Terminate**.
 
-![Cloud Application Manager Using ARM Templates 2](../images/cloud-application-manager-delete-arm-template-2.png)
+![Cloud Application Manager Using ARM Templates 2](../../images/cloud-application-manager-delete-arm-template-2.png)
 
 You can see how Cloud Application Manager seamlessly works to terminate the instance you created with an ARM template.
 
@@ -42,6 +42,16 @@ Once the termination process is complete, the activity page of the instance will
 
 If you try to ssh to the instance, you will no longer be able to access it because it was instantly deleted.
 
-![Cloud Application Manager Using ARM Templates 3](../images/cloud-application-manager-delete-arm-template-3.png)
+![Cloud Application Manager Using ARM Templates 3](../../images/cloud-application-manager-delete-arm-template-3.png)
 
 See this [video](https://www.ctl.io/guides/cloud-application-manager/using-arm-templates-cloud-application-manager/)for information on setting up and using ARM templates.
+
+### Contacting Cloud Application Manager Support
+
+We’re sorry you’re having an issue in [Cloud Application Manager](/https:/www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+
+For issues related to API calls, send the request body along with details related to the issue.
+
+In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
+* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

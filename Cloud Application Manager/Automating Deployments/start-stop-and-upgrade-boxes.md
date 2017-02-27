@@ -21,7 +21,7 @@ The Cloud Application Manager agent executes and stores the output of the event 
 
 ### Event Types
 
-There are five types of events on a box. Each event executes depending on the [action](./instances-api.md) triggered on a box instance.
+There are five types of events on a box. Each event executes depending on the [action](../API/instances-api.md) triggered on a box instance.
 
 **Install**
 
@@ -47,7 +47,7 @@ It’s run when you click Terminate on a successfully deployed instance. The eve
 
 Cloud Application Manager executes events in the order they’re displayed in the box events section. For example, this box nests a git box which in turn nests a git repo box. If we expand the events, we can see the order in which the scripts execute at deploy time.
 
-![installconfigureandotherevents1.png](../images/cloud-application-manager/installconfigureandotherevents1.png)
+![installconfigureandotherevents1.png](../../images/cloud-application-manager/installconfigureandotherevents1.png)
 
 See how each event has a pre-event type. The install has pre_install, configure has pre_configure, and so on. Pre-events fulfill certain conditions before performing the next step. For example, you may want use the pre-event to install dependencies or download files or create folders and directories. Pre-events always run before child box events.
 
@@ -118,7 +118,7 @@ trap {
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

@@ -18,7 +18,7 @@ In large-scale, complex deployments where tens or hundreds of distributed applic
 
 A box must be versioned to push its updates automatically to live instances deployed from it. To create a version, navigate to the box and click the Versions tab. Click **New Version** and save with an appropriate version number.
 
-![versioncontrolandautoupdates1.png](../images/cloud-application-manager/versioncontrolandautoupdates1.png)
+![versioncontrolandautoupdates1.png](../../images/cloud-application-manager/versioncontrolandautoupdates1.png)
 
 * Use **Major** to indicate a lot of changes. For example, you may alter the box configuration with different child boxes or variables or a binding.
 * Use **Minor** to indicate small changes. For example, instead of apt-get you now install and compile software from a Git repo.
@@ -38,17 +38,17 @@ Major, minor, and patch follow semantic versioning standards. Cloud Application 
 
 When launching an instance, choose the level of auto update you’re comfortable applying. Go with **All Updates** if you are not concerned about big or small configuration changes. Otherwise, choose **Minor and Patch Updates** or **Patch Updates**, which make sure the configuration remains unchanged, for the most part.
 
-![versioncontrolandautoupdates2.png](../images/cloud-application-manager/versioncontrolandautoupdates2.png)
+![versioncontrolandautoupdates2.png](../../images/cloud-application-manager/versioncontrolandautoupdates2.png)
 
-If you don’t set instances to auto-update, no worries. A visual cue on the Instances page reminds you when changes are available from the related box. You can always manually update from the Instances page. Select the instance and under the Bulk Actions or the gear icon of the instance, click **Update Instance**. From here, you can update the instance with a specific version. An update always triggers a [reinstall operation](./deploying-managing-instances.md).
+If you don’t set instances to auto-update, no worries. A visual cue on the Instances page reminds you when changes are available from the related box. You can always manually update from the Instances page. Select the instance and under the Bulk Actions or the gear icon of the instance, click **Update Instance**. From here, you can update the instance with a specific version. An update always triggers a [reinstall operation](../Deploying Anywhere/deploying-managing-instances.md).
 
-![versioncontrolandautoupdates3.png](../images/cloud-application-manager/versioncontrolandautoupdates3.png)
+![versioncontrolandautoupdates3.png](../../images/cloud-application-manager/versioncontrolandautoupdates3.png)
 
 **Note:** When deploying a box from the Instances page, you consume the latest configuration of the parent and child boxes unless you chose a specific version for the child boxes. To deploy a different version of the parent box, launch it from the box page. From the Versions tab > gear icon, click **Deploy** on a select version.
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

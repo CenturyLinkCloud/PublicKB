@@ -24,9 +24,9 @@ It takes 90 minutes to go through this tutorial. By the end, you’d know how to
 You need the following:
 * Get an Cloud Application Manager account.
 * Fork a repository of this [GitHub project](https://github.com/ElasticBox/Easy-PHP-MySQL). You’ll use this to make some code changes and trigger a Jenkins build.
-* Build a [LAMP Stack box with a binding to a MySQL Database box](./lamp-stack-tutorial.md). Create and save a [deployment profile](./lamp-stack-tutorial.md) for both boxes, but don’t deploy.
-* [Install Jenkins server](./jenkins-cloud-application-manager-setup.md) and [set it up](./jenkins-cloud-application-manager-setup.md).
-* Define a [slave box configuration](./jenkins-cloud-application-manager-slaves.md) in Cloud Application Manager and [configure Jenkins to build using the slave](./jenkins-cloud-application-manager-slaves.md).
+* Build a [LAMP Stack box with a binding to a MySQL Database box](./lamp-stack-tutorial.md). Create and save a deployment profile for both boxes, but don’t deploy.
+* Install Jenkins server and [set it up](../Integrating with Jenkins/jenkins-cloud-application-manager-setup.md).
+* Define a slave box configuration in Cloud Application Manager and [configure Jenkins to build using the slave](../Integrating with Jenkins/jenkins-cloud-application-manager-slaves.md).
 
 ___
 
@@ -37,19 +37,19 @@ Now that you’ve installed Jenkins server and registered your Cloud Application
 
 When you install Jenkins server you get a pull-request job template. Create a new project called test-pullrequest and copy the template.
 
-![tutorial-jenkins-1.png](../images/cloud-application-manager/tutorial-jenkins-1.png)
+![tutorial-jenkins-1.png](../../images/cloud-application-manager/tutorial-jenkins-1.png)
 
 **Step 2. Select a slave from Cloud Application Manager to run the job.**
 
-In the build job, select Restrict where this project can be run. Type the label for the slave box you added when [setting up Jenkins server](./setting-up-ci-cd.md).
+In the build job, select Restrict where this project can be run. Type the label for the slave box you added when [setting up Jenkins server](../Integrating with Jenkins/setting-up-ci-cd.md).
 
-![tutorial-jenkins-2.png](../images/cloud-application-manager/tutorial-jenkins-2.png)
+![tutorial-jenkins-2.png](../../images/cloud-application-manager/tutorial-jenkins-2.png)
 
 **Step 3. Automate pull request triggers.**
 
 Since we’re using GitHub to submit code changes via pull requests, we’ll manage the lifecycle of pull requests through the Cloud Application Manager Jenkins plugin. Under Build Triggers, check **Cloud Application Manager GitHub Pull Request Lifecycle Management**.
 
-![tutorial-jenkins-3.png](../images/cloud-application-manager/tutorial-jenkins-3.png)
+![tutorial-jenkins-3.png](../../images/cloud-application-manager/tutorial-jenkins-3.png)
 
 This setting triggers the job to build when you create a new pull request or update it. When you close the pull request, it triggers the job to delete the instances associated with the pull request saving compute resources in the process.
 
@@ -57,13 +57,13 @@ This setting triggers the job to build when you create a new pull request or upd
 
 Under Build > Add build step, click **Execute shell**. Enter Bash Shell commands to run any unit tests on your pull request.
 
-![tutorial-jenkins-4.png](../images/cloud-application-manager/tutorial-jenkins-4.png)
+![tutorial-jenkins-4.png](../../images/cloud-application-manager/tutorial-jenkins-4.png)
 
 **Step 5. Deploy the MySQL Database Service box.**
 
 Under Build > Add build step, click **Cloud Application Manager - Deploy Box**. Select the MySQL Database Service box from your workspace. To select the [deployment profile](./deploying-managing-instances.md) here, you have to create it for the box in your workspace first.
 
-![tutorial-jenkins-5.png](../images/cloud-application-manager/tutorial-jenkins-5.png)
+![tutorial-jenkins-5.png](../../images/cloud-application-manager/tutorial-jenkins-5.png)
 
 * Make sure you select **Cloud Application Manager Automatic Version** as this is a default box.
 * Tag the instance with a unique label to identify it in the pull request.
@@ -77,7 +77,7 @@ This step deploys the LAMP Stack application box and binds to the MySQL Database
 
 Under Build > Add build step, click **Cloud Application Manager - Deploy Box**. As before, select your Cloud Application Manager account registered in Jenkins, your workspace where the LAMP Stack box is located, the LAMP Stack box, a version, and a deployment profile to launch it.
 
-![tutorial-jenkins-6.png](../images/cloud-application-manager/tutorial-jenkins-6.png)
+![tutorial-jenkins-6.png](../../images/cloud-application-manager/tutorial-jenkins-6.png)
 
 * Schedule a time to terminate the instance under Expiration.
 * Under Variables, bind to the mysql\_service box by providing its tag as shown.
@@ -87,7 +87,7 @@ Under Build > Add build step, click **Cloud Application Manager - Deploy Box**. 
 
 This step optionally runs any shell commands you give to test the LAMP Stack application.
 
-![tutorial-jenkins-7.png](../images/cloud-application-manager/tutorial-jenkins-7.png)
+![tutorial-jenkins-7.png](../../images/cloud-application-manager/tutorial-jenkins-7.png)
 
 **Step 8. Enter your own GitHub project URL in the job.**
 
@@ -95,15 +95,15 @@ Enter your own forked URL of the [GitHub project](https://github.com/ElasticBox/
 
 Here’s an example:
 
-![tutorial-jenkins-8.png](../images/cloud-application-manager/tutorial-jenkins-8.png)
+![tutorial-jenkins-8.png](../../images/cloud-application-manager/tutorial-jenkins-8.png)
 
-![tutorial-jenkins-9.png](../images/cloud-application-manager/tutorial-jenkins-9.png)
+![tutorial-jenkins-9.png](../../images/cloud-application-manager/tutorial-jenkins-9.png)
 
 **Step 9. Enable build, save job, and verify.**
 
 You’re almost done. Remember we copied this job from the template that’s disabled? To enable, deselect **Disable Build**.
 
-![tutorial-jenkins-10.png](../images/cloud-application-manager/tutorial-jenkins-10.png)
+![tutorial-jenkins-10.png](../../images/cloud-application-manager/tutorial-jenkins-10.png)
 
 Save the job. Verify that it’s configured properly by checking the logs. Under Manage Jenkins > System Log, Jenkins should show something like this:
 
@@ -130,45 +130,45 @@ print "<HTML><BODY><H1>Showing the users of the sampledb that has been created i
 
 Make sure you compare the pull request against your own master branch as seen here.
 
-![tutorial-jenkins-11.png](../images/cloud-application-manager/tutorial-jenkins-11.png)
+![tutorial-jenkins-11.png](../../images/cloud-application-manager/tutorial-jenkins-11.png)
 
 Go ahead, submit a pull request from your forked repo as shown.
 
-![tutorial-jenkins-12.png](../images/cloud-application-manager/tutorial-jenkins-12.png)
+![tutorial-jenkins-12.png](../../images/cloud-application-manager/tutorial-jenkins-12.png)
 
 Soon as you create the request, you should see a build trigger automatically.
 
-![tutorial-jenkins-13.png](../images/cloud-application-manager/tutorial-jenkins-13.png)
+![tutorial-jenkins-13.png](../../images/cloud-application-manager/tutorial-jenkins-13.png)
 
 **Step 2. Check your workspace for deployed instances.**
 
 Do you see the slave, LAMP Stack, and database instances online?
 
-![tutorial-jenkins-14.png](../images/cloud-application-manager/tutorial-jenkins-14.png)
+![tutorial-jenkins-14.png](../../images/cloud-application-manager/tutorial-jenkins-14.png)
 
 Click the LAMP Stack instance to verify that your pull request changes are there.
 
-![tutorial-jenkins-15.png](../images/cloud-application-manager/tutorial-jenkins-15.png)
+![tutorial-jenkins-15.png](../../images/cloud-application-manager/tutorial-jenkins-15.png)
 
-![tutorial-jenkins-16.png](../images/cloud-application-manager/tutorial-jenkins-16.png)
+![tutorial-jenkins-16.png](../../images/cloud-application-manager/tutorial-jenkins-16.png)
 
 **Step 3. Check Jenkins build log.**
 
 In Jenkins, look for the build job log at **http://<your Jenkins host>/job/test-pullrequest/lastBuild/console**. See that the build ran successfully for this specific job.
 
-![tutorial-jenkins-17.png](../images/cloud-application-manager/tutorial-jenkins-17.png)
+![tutorial-jenkins-17.png](../../images/cloud-application-manager/tutorial-jenkins-17.png)
 
 **Step 4. You’re ready to merge.**
 
 When the build finishes, a message is automatically posted to your GitHub request. Since you’ve verified changes in the test instance, you can now merge them through another build job in Jenkins.
 
-![tutorial-jenkins-18.png](../images/cloud-application-manager/tutorial-jenkins-18.png)
+![tutorial-jenkins-18.png](../../images/cloud-application-manager/tutorial-jenkins-18.png)
 
 See how easy that was to automate a test build for code you checked in? If you want to take it a step further, set up a merge job using the merge job template to automatically deploy changes to staging, and then to production.
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

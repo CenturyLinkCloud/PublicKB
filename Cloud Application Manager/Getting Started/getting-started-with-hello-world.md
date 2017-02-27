@@ -26,7 +26,7 @@ Then, follow these simple steps.
 
 On the Boxes page, click **New > Script** box. Under Requirements, select Linux to indicate that the box needs a Linux OS to deploy and save.
 
-![getting-started-hello-1.png](../images/cloud-application-manager/getting-started-hello-1.png)
+![getting-started-hello-1.png](../../images/cloud-application-manager/getting-started-hello-1.png)
 
 **Add a greeting variable**
 
@@ -34,13 +34,13 @@ Configure the box to install a greeting in the virtual environment. To store you
 
 **Note**: Add a port variable with a value of 22 if you plan to SSH into the Hello World instance after deploying.
 
-![getting-started-hello-2.png](../images/cloud-application-manager/getting-started-hello-2.png)
+![getting-started-hello-2.png](../../images/cloud-application-manager/getting-started-hello-2.png)
 
 **Automate the box install**
 
 To install the greeting on the instance, add an install event. Under **Configuration > Events > install**, click **install**.
 
-![getting-started-hello-3.png](../images/cloud-application-manager/getting-started-hello-3.png)
+![getting-started-hello-3.png](../../images/cloud-application-manager/getting-started-hello-3.png)
 
 In the event editor, paste this bash script to call the Greeting variable:
 
@@ -55,18 +55,18 @@ ___
 
 ### Add a provider and deployment policy
 
-You’ve configured the Hello World box. To deploy, you first need to connect to a cloud provider like [AWS](./using-your-aws-account.md), [Google Cloud](./using-google-cloud.md), [vSphere](./using-the-vmware-vcenter-private-datacenter.md), [OpenStack](./using-openstack-cloud.md), [CloudStack](./using-cloudstack.md), or [Azure](./using-azure.md) to launch the box using their services. For this walkthrough, we’ll use AWS.
+You’ve configured the Hello World box. To deploy, you first need to connect to a cloud provider like [AWS](../Deploying Anywhere/using-your-aws-account.md), [Google Cloud](../Deploying Anywhere/using-google-cloud.md), [vSphere](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md), [OpenStack](../Deploying Anywhere/using-openstack-cloud.md), [CloudStack](../Deploying Anywhere/using-cloudstack.md), or [Azure](../Deploying Anywhere/using-azure.md) to launch the box using their services. For this walkthrough, we’ll use AWS.
 
 **Add a provider**
 
 On the Providers page, click **New Provider** to add your AWS account.
 
-* If you’re on Cloud Application Manager in the cloud, enter the [Cloud Application Manager role ARN](./using-your-aws-account.md) from your AWS account.
+* If you’re on Cloud Application Manager in the cloud, enter the [Cloud Application Manager role ARN](../Deploying Anywhere/using-your-aws-account.md) from your AWS account.
 * If you’re on the Cloud Application Manager appliance, enter the [AWS root account key ID and secret credentials](https://console.aws.amazon.com/iam/home?#security_credential) or create an IAM user and enter those credentials.
 
 Once you connect to AWS, all the default AMIs, VPCs, security groups, key pairs, and available services in your account are automatically accessible from Cloud Application Manager.
 
-![getting-started-hello-4.png](../images/cloud-application-manager/getting-started-hello-4.png)
+![getting-started-hello-4.png](../../images/cloud-application-manager/getting-started-hello-4.png)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 Next, create a deployment policy to select the services and infrastructure resources from the provider. In the Boxes page, click **New > Deployment Policy** box.
 
-![getting-started-hello-5.png](../images/cloud-application-manager/getting-started-hello-5.png)
+![getting-started-hello-5.png](../../images/cloud-application-manager/getting-started-hello-5.png)
 
 * Under Provider, select the AWS account you added.
 Under Claims, select Linux as the service the policy provides to deployments. Then save.
@@ -85,12 +85,12 @@ ___
 
 On the Boxes page, hover on the hello world box and click the play button to deploy.
 
-![getting-started-hello-6.png](../images/cloud-application-manager/getting-started-hello-6.png)
+![getting-started-hello-6.png](../../images/cloud-application-manager/getting-started-hello-6.png)
 
 * Under Deployment Policy, select the policy box you created.
 * Optionally, tag the instance with useful information like dev or test.
 * Under Expiration, set the instance to automatically terminate in an hour.
-   **Note**: When you deploy to any cloud, the cloud provider may charge you. So it’s a good idea to [auto schedule the instance](./deploying-managing-instances.md) to terminate right after this tutorial to avoid costs.
+   **Note**: When you deploy to any cloud, the cloud provider may charge you. So it’s a good idea to [auto schedule the instance](../Deploying Anywhere/deploying-managing-instances.md) to terminate right after this tutorial to avoid costs.
 * Under Variables, you can enter a different greeting before you deploy.
 
 You’re all set to to launch the hello world box in AWS. Click **Deploy**.
@@ -103,7 +103,7 @@ You just configured and deployed a simple hello world app in minutes to the clou
 
 On the Instances page, click the Hello World instance. Click **Share**. Add your team members and give them view or edit access. They can now access this instance from their personal workspaces.
 
-![getting-started-hello-7.png](../images/cloud-application-manager/getting-started-hello-7.png)
+![getting-started-hello-7.png](../../images/cloud-application-manager/getting-started-hello-7.png)
 
 Congrats, you successfully shared an automated configuration with others and can now collaborate to build an even better one!
 
@@ -111,7 +111,7 @@ ___
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

@@ -35,7 +35,7 @@ Associate your Google account in Google Cloud by creating a project, enabling bi
 
 2. Create a project. Click **Create Project** and give a meaningful name and ID. Copy the project ID, which you’ll shortly need to share in Cloud Application Manager.
 
-  ![googlecloud-createproject-1.png](../images/cloud-application-manager/googlecloud-createproject-1.png)
+  ![googlecloud-createproject-1.png](../../images/cloud-application-manager/googlecloud-createproject-1.png)
 
 3. Add billing. Under Billing & Settings, click **Enable Billing.**
 
@@ -43,7 +43,7 @@ Associate your Google account in Google Cloud by creating a project, enabling bi
 
 4. Turn on Google Compute Engine. Under APIS & AUTH > APIs, turn Google Compute Engine to **ON.**
 
-   ![googlecloud-turnoncomputeengineapi-2.png](../images/cloud-application-manager/googlecloud-turnoncomputeengineapi-2.png)
+   ![googlecloud-turnoncomputeengineapi-2.png](../../images/cloud-application-manager/googlecloud-turnoncomputeengineapi-2.png)
 
 ### Step 2. Connect the Account in Cloud Application Manager
 
@@ -56,17 +56,17 @@ Associate your Google account in Google Cloud by creating a project, enabling bi
 3. In the dialog, select **Google Compute**.
 
 4. Under Credentials, click **Connect a Google Account**. Via Google OAuth, Cloud Application Manager requests access to your project to view and manage Google Cloud resources on your behalf. Once you accept, you should see your Google account appear in the dialog. For a deeper understanding of how we securely request access, see the [Google help](https://developers.google.com/compute/docs/api/how-tos/authorization).
-   ![googlecloud-connectgoogleaccount-3.png](../images/cloud-application-manager/googlecloud-connectgoogleaccount-3.png)
-   ![google-cloud-cloud-application-manager-requests-access-4.png](../images/cloud-application-manager/google-cloud-cloud-application-manager-requests-access-4.png)
+   ![googlecloud-connectgoogleaccount-3.png](../../images/cloud-application-manager/googlecloud-connectgoogleaccount-3.png)
+   ![google-cloud-cloud-application-manager-requests-access-4.png](../../images/cloud-application-manager/google-cloud-cloud-application-manager-requests-access-4.png)
 
 5. Copy, paste the Project ID for the project you created in the Google Developers Console and save.
-   ![googlecloud-enterprojectid-5.png](../images/cloud-application-manager/googlecloud-enterprojectid-5.png)
+   ![googlecloud-enterprojectid-5.png](../../images/cloud-application-manager/googlecloud-enterprojectid-5.png)
 
 We sync with the Google Cloud APIs to register ready-made and custom images available for the account as well as resources like network configurations, firewalls, routes, and more.
 
 ### Deploying in Google Cloud
 
-The [deployment policy ](./deploymentpolicy-box.md)for Google Cloud abstracts some basic infrastructure options. Choose a Google Cloud deployment policy when launching a box to the cloud. If your admin hasn’t shared a policy, create it for the Google Cloud account in Cloud Application Manager.
+The [deployment policy ](../Automating Deployments/deploymentpolicy-box.md)for Google Cloud abstracts some basic infrastructure options. Choose a Google Cloud deployment policy when launching a box to the cloud. If your admin hasn’t shared a policy, create it for the Google Cloud account in Cloud Application Manager.
 
 **Note:** To consume custom networks, routes, custom firewall rules, and options like non-persistent disks, load balancing, or disk snapshots, configure them directly in the Google Developers Console.
 
@@ -78,7 +78,7 @@ The [deployment policy ](./deploymentpolicy-box.md)for Google Cloud abstracts so
 
 **Resource**
 
-![googlecloud-resource-deployment-options-6.png](../images/cloud-application-manager/googlecloud-resource-deployment-options-6.png)
+![googlecloud-resource-deployment-options-6.png](../../images/cloud-application-manager/googlecloud-resource-deployment-options-6.png)
 
 | Deployment Option | Description |
 |-------------------|-------------|
@@ -89,7 +89,7 @@ The [deployment policy ](./deploymentpolicy-box.md)for Google Cloud abstracts so
 
 **Network**
 
-![googlecloud-deployment-options-network-7.png](../images/cloud-application-manager/googlecloud-deployment-options-network-7.png)
+![googlecloud-deployment-options-network-7.png](../../images/cloud-application-manager/googlecloud-deployment-options-network-7.png)
 
 | Deployment Option | Description |
 |-------------------|-------------|
@@ -102,7 +102,7 @@ The [deployment policy ](./deploymentpolicy-box.md)for Google Cloud abstracts so
 
 **Disks**
 
-![googlecloud-deployment-options-disks-8.png](../images/cloud-application-manager/googlecloud-deployment-options-disks-8.png)
+![googlecloud-deployment-options-disks-8.png](../../images/cloud-application-manager/googlecloud-deployment-options-disks-8.png)
 
 Boost primary storage for the virtual machine by adding standard persistent root disk resources. They provide bulk storage or sequential I/O with large block sizes.
 
@@ -119,7 +119,7 @@ For more information, see [persistent disks](https://developers.google.com/compu
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

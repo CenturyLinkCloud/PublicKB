@@ -29,7 +29,7 @@ In the admin console, you can add tags under Providers > Tags.
 
 ### Preset or Custom Tags
 A tag consists of a key and a value. You can tag with a custom or preset value.
-![admin-tags1.png](../images/cloud-application-manager/admin-tags1.png)
+![admin-tags1.png](../../images/cloud-application-manager/admin-tags1.png)
 
 * **Custom** - Enter any value that’s meaningful to categorize instances, like department name.
 * **Preset** - Choose from preset values such as box name, environment, and so on. Preset values give specific information about an instance. Choose a value from this table.
@@ -49,7 +49,7 @@ A tag consists of a key and a value. You can tag with a custom or preset value.
 
 ### Applying Tags for Your Organization
 Only Cloud Application Manager users in the administrator role can apply tags. Follow these steps to apply one.
-![admin-tags2.png](../images/cloud-application-manager/admin-tags2.png)
+![admin-tags2.png](../../images/cloud-application-manager/admin-tags2.png)
 
 **Steps**
 1. [Log in to Cloud Application Manager](//www.ctl.io/cloud-application-manager/).
@@ -83,7 +83,7 @@ In addition to preset and custom tags, Cloud Application Manager tags instances 
 3. Click **Services > EC2 > Instances.**
 
 4. Select an instance and click the **Tags** tab to manage the applied tags.
-   ![admin-tags3.png](../images/cloud-application-manager/admin-tags3.png)
+   ![admin-tags3.png](../../images/cloud-application-manager/admin-tags3.png)
 
 ### Google Cloud
 
@@ -93,7 +93,7 @@ In addition to preset and custom tags, Cloud Application Manager tags instances 
 2. Under projects, select the project where Cloud Application Manager instances are deployed.
 
 3. Under Compute Engine, click **VM instances** and manage the tags applied under Custom metadata.
-   ![admin-tags4.png](../images/cloud-application-manager/admin-tags4.png)
+   ![admin-tags4.png](../../images/cloud-application-manager/admin-tags4.png)
 
 ### OpenStack
 
@@ -103,7 +103,7 @@ In addition to preset and custom tags, Cloud Application Manager tags instances 
 2. Select the project to which Cloud Application Manager instances are deployed.
 
 3. Under **Instances**, select the instance whose tags you want to view. The tags are listed under Meta.
-   ![admin-tags5.png](../images/cloud-application-manager/admin-tags5.png)
+   ![admin-tags5.png](../../images/cloud-application-manager/admin-tags5.png)
 
 ### vSphere
 
@@ -113,7 +113,7 @@ In addition to preset and custom tags, Cloud Application Manager tags instances 
 2. Locate the virtual machine launched through Cloud Application Manager in vSphere. Use the Service ID of the instance in Cloud Application Manager to find it.
 
 3. Under **Custom Fields**, the tags applied to the instance are listed.
-   ![admin-tags6.png](../images/cloud-application-manager/admin-tags6.png)
+   ![admin-tags6.png](../../images/cloud-application-manager/admin-tags6.png)
 
 ### CloudStack
 
@@ -123,11 +123,11 @@ In addition to preset and custom tags, Cloud Application Manager tags instances 
 2. Under Instances, select the instance launched through Cloud Application Manager. Use its Cloud Application Manager Service ID to find it.
 
 3. In the instance Details tab, scroll down to see the tags applied.
-   ![admin-tags7.png](../images/cloud-application-manager/admin-tags7.png)
+   ![admin-tags7.png](../../images/cloud-application-manager/admin-tags7.png)
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

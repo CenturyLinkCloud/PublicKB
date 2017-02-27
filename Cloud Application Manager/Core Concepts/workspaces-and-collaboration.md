@@ -28,10 +28,10 @@ Say you have a Jenkins box that integrates and stages code for testing. You want
 ### Creating and Adding Members to Workspaces
 
 To create a workspace, click **New Workspace**.
-![workspace-and-sharing1.png](../images/cloud-application-manager/workspace-and-sharing1.png)
+![workspace-and-sharing1.png](../../images/cloud-application-manager/workspace-and-sharing1.png)
 
 This brings up the New Workspace dialog. Here you can upload an icon for the new workspace, give it a name, and add users. To add users just start to type the name of the user in the Members field. Cloud Application Manager generates a list based on a match of the text.
-![workspace-and-sharing2.png](../images/cloud-application-manager/workspace-and-sharing2.png)
+![workspace-and-sharing2.png](../../images/cloud-application-manager/workspace-and-sharing2.png)
 
 When you add a user, they automatically get access to the workspace and any assets it contains, such as providers, boxes, and instances.
 
@@ -39,33 +39,33 @@ When you add a user, they automatically get access to the workspace and any asse
 
 When you create a workspace, you are its owner and as such you can edit and manage it.
 To edit a workspace you created, click the pencil icon for the workspace.
-![workspace-and-sharing3.png](../images/cloud-application-manager/workspace-and-sharing3.png)
+![workspace-and-sharing3.png](../../images/cloud-application-manager/workspace-and-sharing3.png)
 
 In this dialog, you can add and remove users as well as delete the workspace.
-![workspace-and-sharing4.png](../images/cloud-application-manager/workspace-and-sharing4.png)
+![workspace-and-sharing4.png](../../images/cloud-application-manager/workspace-and-sharing4.png)
 
 ### Sharing Boxes, Instances, and Providers
 When you create a box, launch an instance, or add a provider you own the asset by default. You can control how others use it by giving them view or edit access. Edit access gives users the same level of access as the owner. Only, they can’t delete the asset.
 
 **Steps**
 1. From the box, instance, or provider detail page, click **Share**.
-   ![workspace-and-sharing5.png](../images/cloud-application-manager/workspace-and-sharing5.png)
+   ![workspace-and-sharing5.png](../../images/cloud-application-manager/workspace-and-sharing5.png)
 
 2. In the sharing dialog, type the name of the users or workspaces you want to share with and select them.
-   ![workspace-and-sharing6.png](../images/cloud-application-manager/workspace-and-sharing6.png)
+   ![workspace-and-sharing6.png](../../images/cloud-application-manager/workspace-and-sharing6.png)
 
 3. For each user or workspace that you added, give view or edit access. They get edit access by default.
-   ![workspace-and-sharing7.png](../images/cloud-application-manager/workspace-and-sharing7.png)
+   ![workspace-and-sharing7.png](../../images/cloud-application-manager/workspace-and-sharing7.png)
 
 **Stop Sharing**
 
 To discontinue sharing with a user or workspace, open the sharing dialog, and remove them.
-![workspace-and-sharing8.png](../images/cloud-application-manager/workspace-and-sharing8.png)
+![workspace-and-sharing8.png](../../images/cloud-application-manager/workspace-and-sharing8.png)
 
 **Transfer Ownership**
 
 Sometimes, because your role in the organization changes, you may want to transfer an asset you own to another user or workspace. To change owners, open the sharing dialog, and make another user or workspace the owner. An asset can only have one owner at a time.
-![workspace-and-sharing9.png](../images/cloud-application-manager/workspace-and-sharing9.png)
+![workspace-and-sharing9.png](../../images/cloud-application-manager/workspace-and-sharing9.png)
 
 **Sharing Boxes**
 
@@ -92,7 +92,7 @@ Sharing providers has its benefits. You can give view access to company-approved
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

@@ -8,7 +8,7 @@
 
 ### Upgrading the Appliance
 It’s pretty simple to upgrade the Cloud Application Manager Enterprise appliance. Follow these steps.
-![appliance-upgrading1.png](../images/cloud-application-manager/appliance-upgrading1.png)
+![appliance-upgrading1.png](../../images/cloud-application-manager/appliance-upgrading1.png)
 
 **Steps**
 1. Download the latest virtual appliance files.
@@ -19,7 +19,7 @@ It’s pretty simple to upgrade the Cloud Application Manager Enterprise applian
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

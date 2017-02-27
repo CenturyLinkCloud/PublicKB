@@ -36,7 +36,7 @@ Enter your company Active Directory credentials in the username, password fields
 
    **Note**: When you log in with your AD credentials, GitHub or Google accounts, Cloud Application Manager does not have access to your password. We use your email to create a profile and workspace for you.
 
-![getting-started-login-1.png](../images/cloud-application-manager/getting-started-login-1.png)
+![getting-started-login-1.png](../../images/cloud-application-manager/getting-started-login-1.png)
 
 ___
 
@@ -53,18 +53,18 @@ When you log in, the top navigation bar guides you to the main areas of Cloud Ap
 
 **Workspaces**
 
-![getting-started-login-2.png](../images/cloud-application-manager/getting-started-login-2.png)
+![getting-started-login-2.png](../../images/cloud-application-manager/getting-started-login-2.png)
 
-When you log in, you’re in your personal workspace. From the workspace drop-down, you can access team workspaces if you belong to them, or create one and add others to share Cloud Application Manager assets and collaborate. To learn more, see [Workspaces & Sharing](./workspaces-and-collaboration.md).
+When you log in, you’re in your personal workspace. From the workspace drop-down, you can access team workspaces if you belong to them, or create one and add others to share Cloud Application Manager assets and collaborate. To learn more, see [Workspaces & Sharing](../Core Concepts/workspaces-and-collaboration.md).
 
 ___
 
 **Instances**
 
-![getting-started-login-3.png](../images/cloud-application-manager/getting-started-login-3.png)
+![getting-started-login-3.png](../../images/cloud-application-manager/getting-started-login-3.png)
 
 * Click **New Instance** to launch instances of boxes to a provider environment in the public or private cloud.
-* Manage instances you’ve [launched](./deploying-managing-instances.md) through the web interface, the API, or on [any infrastructure using the Cloud Application Manager agent](./deploying-on-anyinfra.md). Here you can quickly [manage the lifecycle](./deploying-managing-instances.md) of several instances from the Bulk Actions menu or handle them individually from the gear menu.
+* Manage instances you’ve [launched](../Deploying Anywhere/deploying-managing-instances.md) through the web interface, the API, or on [any infrastructure using the Cloud Application Manager agent](../Deploying Anywhere/deploying-on-anyinfra.md). Here you can quickly [manage the lifecycle](../Deploying Anywhere/deploying-managing-instances.md) of several instances from the Bulk Actions menu or handle them individually from the gear menu.
 * Find an instance by searching any part of its name, or click filtered views of instances you launched or that were shared with you. Or locate them by tags.
 
 ___
@@ -73,7 +73,7 @@ ___
 
 The Boxes page shows everything you create including boxes shared with you.
 
-![getting-started-login-4.png](../images/cloud-application-manager/getting-started-login-4.png)
+![getting-started-login-4.png](../../images/cloud-application-manager/getting-started-login-4.png)
 
 * Click **New** to create a box. Automate configuration by selecting a box type: Script, Deployment Policy, CloudFormation, Container.
 * Cloud Application Manager provides a public service box catalog, which you find when you filter by the public tag. Public boxes are available to all users. These are pre-configured, which means you can directly deploy or nest them in other boxes. Since they’re publicly available to everyone, you can’t modify their configuration, but you can pass your own parameters before deploying. Examples of public boxes include MongoDB, Puppet, Chef Solo, Rails, Redis, RabbitMQ, WordPress among others.
@@ -85,7 +85,7 @@ ___
 
 **Providers**
 
-![getting-started-login-5.png](../images/cloud-application-manager/getting-started-login-5.png)
+![getting-started-login-5.png](../../images/cloud-application-manager/getting-started-login-5.png)
 
 * Connect to a provider to orchestrate deployments. Click **New Provider** to add AWS, Azure, vSphere, Google Cloud, OpenStack, or CloudStack.
 * Locate a provider through search or by type.
@@ -95,7 +95,7 @@ ___
 
 **Your Account**
 
-![getting-started-login-6.png](../images/cloud-application-manager/getting-started-login-6.png)
+![getting-started-login-6.png](../../images/cloud-application-manager/getting-started-login-6.png)
 
 * From the username drop-down, access your account profile where you can change your username or reset password if you’re using username and password to log in.
 * Access the Admin Console from here to administer your Cloud Application Manager organization.
@@ -105,15 +105,15 @@ ___
 
 **Help**
 
-Get help from [docs](./#1/) or contact [support](mailto:support@elasticbox.com).
+Get help from our [Knowledge Base](../../) or contact [support](mailto:cloudsupport@centurylink.com).
 
-![getting-started-login-7.png](../images/cloud-application-manager/getting-started-login-7.png)
+![getting-started-login-7.png](../../images/cloud-application-manager/getting-started-login-7.png)
 
 ___
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

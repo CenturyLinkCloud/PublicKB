@@ -11,7 +11,7 @@
 As an administrator for Cloud Application Manager, you get special privileges. You can access to Cloud Application Manager like any other regular user. On top of that, you get an overview of everything users do in your organization. You get to set it up for them to use and control all assets they create in Cloud Application Manager.
 The Admin Console is the interface where you manage and control settings for your organization. Access the console from the top right menu of your workspace after you log in to Cloud Application Manager.
 
-![admin-overview1.png](../images/cloud-application-manager/admin-overview1.png)
+![admin-overview1.png](../../images/cloud-application-manager/admin-overview1.png)
 
 The console gives you control in three ways to set up, manage, and monitor:
 
@@ -21,7 +21,7 @@ The console gives you control in three ways to set up, manage, and monitor:
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

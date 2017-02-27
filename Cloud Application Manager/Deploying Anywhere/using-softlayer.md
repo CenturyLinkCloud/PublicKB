@@ -23,20 +23,20 @@ You need a [SoftLayer account](http://www.softlayer.com/info/free-cloud) to be a
 1. Log in to the [SoftLayer portal](https://control.softlayer.com/).
 
 2. Under Account > Users > API Key, click **Generate** to create an API Key or click **View** to copy it. Cloud Application Manager needs the key to make API requests on your behalf.
-   ![softlayer-getapikey-1.png](../images/cloud-application-manager/softlayer-getapikey-1.png)
+   ![softlayer-getapikey-1.png](../../images/cloud-application-manager/softlayer-getapikey-1.png)
 
 3. Copy the API key.
 
 4. In Cloud Application Manager, go to Providers > New Provider and select **SoftLayer**.
 
 5. Enter the SoftLayer username and API Key as shown and save.
-   ![softlayer-entercredentials-2.png](../images/cloud-application-manager/softlayer-entercredentials-2.png)
+   ![softlayer-entercredentials-2.png](../../images/cloud-application-manager/softlayer-entercredentials-2.png)
 
 ### Deploy to SoftLayer from Cloud Application Manager
 Select from the following deployment profile options to launch workloads on Linux or Windows machines.
 
 Note a couple of things about instances you deploy on SoftLayer through Cloud Application Manager.
-* Tags. You can apply up to six provider tags on any instance you deploy on SoftLayer if you’ve [defined the tags](./resource-tags.md) in the Cloud Application Manager admin console.
+* Tags. You can apply up to six provider tags on any instance you deploy on SoftLayer if you’ve [defined the tags](../Administering Your Organization/resource-tags.md) in the Cloud Application Manager admin console.
 * Instance name. Depending on the number of instances you spin up through Cloud Application Manager, each instance is assigned a name that has the format of service_ID-instance_number.domain.com.
 
 
@@ -72,7 +72,7 @@ By default, the machine is provisioned with 25GB local disk space. You can incre
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

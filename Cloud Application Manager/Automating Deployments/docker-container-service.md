@@ -27,19 +27,19 @@ See how deploying to Docker containers works in Cloud Application Manager using 
 
 **Create a Docker Container box**
 
-From the Boxes page, click **New > Container**. In the dialog, enter a name to identify it in the box service catalog. And optionally enter other [metadata](./boxes.md). Then save to continue.
+From the Boxes page, click **New > Container**. In the dialog, enter a name to identify it in the box service catalog. And optionally enter other [metadata](../Core Concepts/boxes.md). Then save to continue.
 
-![dockercontainers1.png](../images/cloud-application-manager/dockercontainers1.png)
+![dockercontainers1.png](../../images/cloud-application-manager/dockercontainers1.png)
 
 **Create a Dockerfile**
 
 You now see a box layout where you can configure your application’s deployment with [variables](./parameterizing-boxes-with-variables.md) and the Dockerfile.
 
-![dockercontainers2.png](../images/cloud-application-manager/dockercontainers2.png)
+![dockercontainers2.png](../../images/cloud-application-manager/dockercontainers2.png)
 
 Let’s add a Dockerfile to construct the ElasticSearch image that will run in the Docker container. Under Dockerfile, click **New**. In the dialog, click **Create a Blank Dockerfile**. This creates an empty Dockerfile.
 
-![dockercontainers3.png](../images/cloud-application-manager/dockercontainers3.png)
+![dockercontainers3.png](../../images/cloud-application-manager/dockercontainers3.png)
 
 Edit to add instructions that install ElasticSearch.
 
@@ -77,11 +77,11 @@ Instructions in the Dockerfile are straightforward: On top of a Linux base image
 
 To allow traffic to and from ElasticSearch in the Docker container on its host, we need to specify ports. To do that we add port variables. Under Variables, click **New**. Here we create one to allow HTTP traffic through port 9200 and another for ElasticSearch to communicate internally over port 9300.
 
-![dockercontainers4.png](../images/cloud-application-manager/dockercontainers4.png)
+![dockercontainers4.png](../../images/cloud-application-manager/dockercontainers4.png)
 
 As soon as we add the variables, Cloud Application Manager automatically generates an EXPOSE instruction for them in the Dockerfile. This tells the Docker container to listen on ports 9200 and 9300.
 
-![dockercontainers5.png](../images/cloud-application-manager/dockercontainers5.png)
+![dockercontainers5.png](../../images/cloud-application-manager/dockercontainers5.png)
 
 Text, number, or options type variables are handled at deploy time as [Docker environment variables](https://docs.docker.com/engine/reference/builder/). Use this syntax to refer to them in Dockerfiles: `\{{variable_name}}`
 
@@ -91,15 +91,15 @@ A file variable is handy to run additional commands using RUN or trigger an exec
 
 Here we connect to a box that deploys an S3 bucket using a binding. As Dockerfiles don’t allow scripts, we use a text expression to pass the binding reference.
 
-![dockercontainers6.png](../images/cloud-application-manager/dockercontainers6.png)
+![dockercontainers6.png](../../images/cloud-application-manager/dockercontainers6.png)
 
-![dockercontainers7.png](../images/cloud-application-manager/dockercontainers7.png)
+![dockercontainers7.png](../../images/cloud-application-manager/dockercontainers7.png)
 
 **Deploy the Docker Box**
 
-You can launch the Docker box in any environment including public, private clouds or a datacenter. Here we launch the ElasticSearch Docker box in AWS. In the ElasticSearch box page, click **Deploy**. Choose a deployment policy box that contains deployment settings for a cloud provider and optionally add tags, [auto schedule](./deploying-managing-instances.md) the container, and specify other [metadata](./boxes.md).
+You can launch the Docker box in any environment including public, private clouds or a datacenter. Here we launch the ElasticSearch Docker box in AWS. In the ElasticSearch box page, click **Deploy**. Choose a deployment policy box that contains deployment settings for a cloud provider and optionally add tags, [auto schedule](../Deploying Anywhere/deploying-managing-instances.md) the container, and specify other [metadata](../Deploying Anywhere/boxes.md).
 
-![dockercontainers8.png](../images/cloud-application-manager/dockercontainers8.png)
+![dockercontainers8.png](../../images/cloud-application-manager/dockercontainers8.png)
 
 Expand ElasticSearch to see all the variables from the docker box. See how you can change deployment values before deploying. Click **Deploy** to launch the box.
 
@@ -114,13 +114,13 @@ Note these limitations when using Docker in Cloud Application Manager.
 
 ### Managing the Lifecycle of Docker Containers
 
-You can manage the [lifecycle](./deploying-managing-instances.md) of Docker containers like any other box. This means after deploying, you can change the Dockerfile configuration and relaunch it in the same instance using the instance [lifecycle editor](./lifecycle-editor.md). Go to the instance page and click **Lifecycle Editor**.
+You can manage the [lifecycle](../Deploying Anywhere/deploying-managing-instances.md) of Docker containers like any other box. This means after deploying, you can change the Dockerfile configuration and relaunch it in the same instance using the instance [lifecycle editor](../Core Concepts/lifecycle-editor.md). Go to the instance page and click **Lifecycle Editor**.
 
-![dockercontainers9.png](../images/cloud-application-manager/dockercontainers9.png)
+![dockercontainers9.png](../../images/cloud-application-manager/dockercontainers9.png)
 
 In the editor, you can edit the Dockerfile, variables, and use the actions drop-down to relaunch changes in the instance. To process these actions on the container in the backend, we run Docker daemon commands such as BUILD, RUN, KILL, and REMOVE.
 
-![dockercontainers10.png](../images/cloud-application-manager/dockercontainers10.png)
+![dockercontainers10.png](../../images/cloud-application-manager/dockercontainers10.png)
 
 Here’s what happens when you reinstall or reconfigure:
 
@@ -129,7 +129,7 @@ Here’s what happens when you reinstall or reconfigure:
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

@@ -27,16 +27,16 @@ You need a CloudStack environment and access to the management console.
 
 **Steps**
 1. Log in to your CloudStack management console as a user or administrator.
-   ![cloudstack-log-in-console-1.png](../images/cloud-application-manager/cloudstack-log-in-console-1.png)
+   ![cloudstack-log-in-console-1.png](../../images/cloud-application-manager/cloudstack-log-in-console-1.png)
 
 2. Click **Accounts** > **your user account**.
-   ![cloudstack-selectyouraccount-underaccounts-2.png](../images/cloud-application-manager/cloudstack-selectyouraccount-underaccounts-2.png)
+   ![cloudstack-selectyouraccount-underaccounts-2.png](../../images/cloud-application-manager/cloudstack-selectyouraccount-underaccounts-2.png)
 
 3. Click **View Users** and select your user account.
-   ![cloudstack-clickviewusers-credentials.png-3.png](../images/cloud-application-manager/cloudstack-clickviewusers-credentials.png-3.png)
+   ![cloudstack-clickviewusers-credentials.png-3.png](../../images/cloud-application-manager/cloudstack-clickviewusers-credentials.png-3.png)
 
 4. If available, copy the existing API and secret keys. Otherwise, click the generate keys icon to create them.
-   ![cloudstack-copyorgenerateapiandsecretkeys-credentials-4.png](../images/cloud-application-manager/cloudstack-copyorgenerateapiandsecretkeys-credentials-4.png)
+   ![cloudstack-copyorgenerateapiandsecretkeys-credentials-4.png](../../images/cloud-application-manager/cloudstack-copyorgenerateapiandsecretkeys-credentials-4.png)
 
 ### Registering CloudStack in Cloud Application Manager
 
@@ -48,7 +48,7 @@ You need a CloudStack environment and access to the management console.
 3. Select **CloudStack.**
 
 4. Enter your CloudStack user API credentials.
-   ![cloudstack-enteruserapicredentials-register-cloud-application-manager-5.png](../images/cloud-application-manager/cloudstack-enteruserapicredentials-register-cloud-application-manager-5.png)
+   ![cloudstack-enteruserapicredentials-register-cloud-application-manager-5.png](../../images/cloud-application-manager/cloudstack-enteruserapicredentials-register-cloud-application-manager-5.png)
 
    * **URL** - API endpoint to the CloudStack management server that typically has this format, **http://10.0.128.21:8080/client/api.**
    * **API Key** - Part of the user API credentials generated for the user account in the CloudStack management console.
@@ -112,7 +112,7 @@ When you’re ready to [launch an instance](./deploying-managing-instances.md) i
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com)
 
 For issues related to API calls, send the request body along with details related to the issue.
 

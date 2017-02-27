@@ -15,21 +15,21 @@ Give access to cloud provider infrastructure using a deployment policy box. Poli
 
 ### Create a Deployment Policy
 
-On the Boxes page, click **New > Deployment Policy**. Select a cloud provider added in Cloud Application Manager and optionally add [claim tags](./boxes.md). Click **Save** to continue.
+On the Boxes page, click **New > Deployment Policy**. Select a cloud provider added in Cloud Application Manager and optionally add [claim tags](../Core Concepts/boxes.md). Click **Save** to continue.
 
-![deploymentpolicyboxes1.png](../images/cloud-application-manager/deploymentpolicyboxes1.png)
+![deploymentpolicyboxes1.png](../../images/cloud-application-manager/deploymentpolicyboxes1.png)
 
 Click **Edit** to customize the policy. Select the resource, network, and other deployment settings from the cloud provider. See the provider help for details.
 
-* [Google Cloud](./using-google-cloud.md)
-* [Amazon Web Services](./using-your-aws-account.md)
-* [AWS GovCloud](./using-aws-govcloud.md)
+* [Google Cloud](../Deploying Anywhere/using-google-cloud.md)
+* [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md)
+* [AWS GovCloud](../Deploying Anywhere/using-aws-govcloud.md)
 * [VMware vCenter](./using-the-vmware-vcenter-private-datacenter.md)
-* [Azure](./using-azure.md)
-* [OpenStack](./using-openstack-cloud.md)
-* [Rackspace Cloud](./using-rackspace-cloud.md)
-* [CloudStack](./using-cloudstack.md)
-* [SoftLayer](./using-softlayer.md)
+* [Azure](../Deploying Anywhere/using-azure.md)
+* [OpenStack](../Deploying Anywhere/using-openstack-cloud.md)
+* [Rackspace Cloud](../Deploying Anywhere/using-rackspace-cloud.md)
+* [CloudStack](../Deploying Anywhere/using-cloudstack.md)
+* [SoftLayer](../Deploying Anywhere/using-softlayer.md)
 
 ### Give Access to the Policy
 
@@ -56,15 +56,15 @@ Admin boxes are useful in these deployment scenarios:
 
 To create an admin box, open a deployment policy and add a script box under Variables. Typically, you want to add a script box that matches the policy OS type. In a Windows policy for example, add a script box that runs on Windows. A policy can have as many admin boxes as needed.
 
-![deploymentpolicyboxes2.png](../images/cloud-application-manager/deploymentpolicyboxes2.png)
+![deploymentpolicyboxes2.png](../../images/cloud-application-manager/deploymentpolicyboxes2.png)
 
 When a box launches on a deployment policy containing an admin box, Cloud Application Manager wraps it like a child box in the admin box deployment. In each main event type such as install, configure, start, stop, the admin box runs first followed by events of the box launched. To execute admin box events before others within each event sub category like pre-install, install, move the commands to the admin box pre-install, pre-configure, and pre-start events.
 
-![deploymentpolicyboxes3.png](../images/cloud-application-manager/deploymentpolicyboxes3.png)
+![deploymentpolicyboxes3.png](../../images/cloud-application-manager/deploymentpolicyboxes3.png)
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

@@ -30,7 +30,7 @@ Follow these steps to add a provider in Cloud Application Manager that integrate
 
 2. Select **VMware vCloud Director** and enter the credentials as given.
 
-    ![vcloud-air-director-connect-in-cloud-application-manager-1.png](../images/cloud-application-manager/vcloud-air-director-connect-in-cloud-application-manager-1.png)
+    ![vcloud-air-director-connect-in-cloud-application-manager-1.png](../../images/cloud-application-manager/vcloud-air-director-connect-in-cloud-application-manager-1.png)
 
 * **URL**
 
@@ -49,11 +49,11 @@ Follow these steps to add a provider in Cloud Application Manager that integrate
 
 ### Deploy to vCloud Air or vCloud Director
 
-Create a [deployment policy](./deploymentpolicy-box.md) to encapsulate parameters required to deploy Linux or Windows vApps through the vCloud Air or vCloud Director provider in Cloud Application Manager. At deploy time, Cloud Application Manager auto provisions vApps, one template per VM, and orchestrates workload automation on them.
+Create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) to encapsulate parameters required to deploy Linux or Windows vApps through the vCloud Air or vCloud Director provider in Cloud Application Manager. At deploy time, Cloud Application Manager auto provisions vApps, one template per VM, and orchestrates workload automation on them.
 
 **Note:** Auto provisioning may fail if you specify virtual CPUs, memory, and virtual disk capacity that exceeds the limit in your virtual data center.
 
-![vcloudair-director-deployment-policy-2.png](../images/cloud-application-manager/vcloudair-director-deployment-policy-2.png)
+![vcloudair-director-deployment-policy-2.png](../../images/cloud-application-manager/vcloudair-director-deployment-policy-2.png)
 
 Edit the deployment policy to set the following parameters for deploying to vCloud Air or vCloud Director.
 
@@ -91,7 +91,7 @@ Edit the deployment policy to set the following parameters for deploying to vClo
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

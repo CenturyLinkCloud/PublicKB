@@ -10,7 +10,7 @@
 
 AWS GovCloud is an isolated region designed to handle workloads of sensitive data. Why spin up machines and SSH into them to run workloads manually, when you can automate and deploy faster using [Cloud Application Manager](//www.ctl.io/guides/#cloud-application-manager)?
 
-AWS GovCloud is available only by request. Contact [support](mailto:support@elasticbox.com) to enable it for your organization.
+AWS GovCloud is available only by request. Contact [support](mailto:cloudsupport@centurylink.com) to enable it for your organization.
 
 **In this article:**
 * Connect to AWS GovCloud from Cloud Application Manager
@@ -42,11 +42,11 @@ Deploy to any of the services in the AWS GovCloud region.
 * [AWS RDS](./using-your-aws-account.md)
 * [AWS S3](./using-your-aws-account.md)
 * [AWS DynamoDB](./using-your-aws-account.md)
-* [AWS CloudFormation](./cloudformation-box.md)
+* [AWS CloudFormation](../Automating Deplooyments/cloudformation-box.md)
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

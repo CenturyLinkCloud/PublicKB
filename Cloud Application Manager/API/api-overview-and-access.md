@@ -39,11 +39,11 @@ Follow these steps to get a token from your Cloud Application Manager account.
 
 2. From the user drop-down menu on the right, click **Authentication Tokens**.
 
-    ![api1](../images/EBapi1.png)
+    ![api1](../../images/EBapi1.png)
 
 3. Enter a descriptive name for the token and click **Create Token**.
 
-    ![api2](../images/EBapi2.png)
+    ![api2](../../images/EBapi2.png)
 
 4. Use the clipboard icon to copy the token to then pass it in your API request headers.
 
@@ -51,7 +51,7 @@ Follow these steps to get a token from your Cloud Application Manager account.
 
 * You can create and use up to 50 tokens.
 * Tokens never expire. To invalidate an API call, simply delete the token that’s used.
-* When making API calls to the [Providers resource](./providers.md), additional provider token limits may apply. To learn about these limits, check your provider documentation.
+* When making API calls to the [Providers resource](./api-providers.md), additional provider token limits may apply. To learn about these limits, check your provider documentation.
 
 ### ElasticBox-Release
 
@@ -71,7 +71,7 @@ ElasticBox-Release: 4.0
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

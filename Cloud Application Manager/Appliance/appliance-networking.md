@@ -11,13 +11,13 @@ Once up and running, configure how the appliance connects to the network. By def
 
 **Steps**
 1. Locate the VM console where you installed the appliance in vCenter or OpenStack.
-   ![appliance-networking1.png](../images/cloud-application-manager/appliance-networking1.png)
+   ![appliance-networking1.png](../../images/cloud-application-manager/appliance-networking1.png)
 
 2. In the Advanced Menu, select **Networking > Static IP**.
-   ![appliance-networking2.png](../images/cloud-application-manager/appliance-networking2.png)
+   ![appliance-networking2.png](../../images/cloud-application-manager/appliance-networking2.png)
 
 3. Enter settings based on your network configuration to set up a static IP address for the appliance. When done, click **Apply**.
-   ![appliance-networking3.png](../images/cloud-application-manager/appliance-networking3.png)
+   ![appliance-networking3.png](../../images/cloud-application-manager/appliance-networking3.png)
 
    * **IP Address** - Unique IPv4 address the appliance needs to connect to the network.
    * **Netmask** - Subnet mask or address of nearest local area network, for example, 255.255.255.0.
@@ -28,7 +28,7 @@ Once up and running, configure how the appliance connects to the network. By def
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

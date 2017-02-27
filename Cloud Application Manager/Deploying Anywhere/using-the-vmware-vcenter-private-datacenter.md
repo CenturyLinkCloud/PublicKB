@@ -41,8 +41,6 @@ A vCenter user needs minimum rights to be able to authenticate, deploy and manag
 | Virtual machine (Inventory) | <li>Create from existing</li><li>Create new</li><li>Remove</li> |
 | Virtual machine (Provisioning) | <li>Customize</li><li>Deploy template</li><li>Modify customization specification</li><li>Read customization specifications</li> |
 
-
-
 ### Bootstrapping VM Templates with the Cloud Application Manager Agent
 
 vCenter templates need elasticbox-init to allow the Cloud Application Manager agent to execute box scripts at deploy time.
@@ -92,13 +90,13 @@ In order to deploy to a vCenter private datacenter, you must first provide infor
 3. Enter the endpoint URL for the vCenter server and a username, password to the vCenter API.
    * **Note:** The endpoint URL must be in the form of **https://<servername>** or **https://<ipaddress>**. Be sure to use https and not http.
 
-   ![add-vsphere-provider-1.png](../images/cloud-application-manager/add-vsphere-provider-1.png)
+   ![add-vsphere-provider-1.png](../../images/cloud-application-manager/add-vsphere-provider-1.png)
 
 ### Deploying in Your vCenter
 
 Select deployment metadata from a deployment profile to launch VMs to your vCenter Server.
 
-![vsphere-deployment-profile-2.png](../images/cloud-application-manager/vsphere-deployment-profile-2.png)
+![vsphere-deployment-profile-2.png](../../images/cloud-application-manager/vsphere-deployment-profile-2.png)
 
 
 **Deployment**
@@ -136,7 +134,7 @@ Select deployment metadata from a deployment profile to launch VMs to your vCent
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

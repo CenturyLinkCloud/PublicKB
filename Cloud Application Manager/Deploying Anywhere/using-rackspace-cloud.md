@@ -26,7 +26,7 @@ You require an account on [Rackspace Cloud](https://mycloud.rackspace.com/) to a
 
 2. Select **Rackspace** and enter the credentials as shown.
 
-   ![rackspace-entercredentials-1.png](../images/cloud-application-manager/rackspace-entercredentials-1.png)
+   ![rackspace-entercredentials-1.png](../../images/cloud-application-manager/rackspace-entercredentials-1.png)
 
    * **Identity URL** - This the endpoint of the Rackspace Cloud Identity API, which authenticates access and is also the entry point to any other service API.
    * **Project** - Enter the tenant ID available at the top of the username drop-down in the [Rackspace Cloud console](https://mycloud.rackspace.com/).
@@ -64,7 +64,7 @@ Select these deployment options when you [launch a new instance](./deploying-man
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

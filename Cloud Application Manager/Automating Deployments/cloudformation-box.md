@@ -11,7 +11,7 @@ Cloud Application Manager works with the AWS CloudFormation API to provision the
 
 Cloud Application Manager supports all CloudFormation templates available from AWS. Leverage services such as EC2, Elastic Block Store, Simple Notification Service, Elastic Load Balancing and Auto Scaling, RDS, S3, DynamoDB, Elastic IPs, and much more.
 
-[AWS RDS services](./using-your-aws-account.md) such as MySQL, MS SQL, PostgreSQL, Oracle, and [Memcached](./using-your-aws-account.md), [S3](./using-your-aws-account.md), [DynamoDB](./using-your-aws-account.md) are readymade CloudFormation templates. To use these services, configure a CloudFormation box of the type and select an AWS account registered in Cloud Application Manager.
+[AWS RDS services](..Deploying Anywhere/using-your-aws-account.md) such as MySQL, MS SQL, PostgreSQL, Oracle, and [Memcached](..Deploying Anywhere/using-your-aws-account.md), [S3](..Deploying Anywhere/using-your-aws-account.md), [DynamoDB](..Deploying Anywhere/using-your-aws-account.md) are readymade CloudFormation templates. To use these services, configure a CloudFormation box of the type and select an AWS account registered in Cloud Application Manager.
 
 **In this article:**
 
@@ -29,13 +29,13 @@ We use a sample Wordpress template to show how to create and launch a CloudForma
 
 1. [Log in](//www.ctl.io/cloud-application-manager/) to Cloud Application Manager.
 
-2. Click **Boxes > New > CloudFormation > CloudFormation Template**. Give the box a meaningful name to identify it in the box service catalog. Specify other [metadata](./boxes.md).
+2. Click **Boxes > New > CloudFormation > CloudFormation Template**. Give the box a meaningful name to identify it in the box service catalog. Specify other [metadata](../Core Concepts/boxes.md).
 
-     ![cloudformationboxes1.png](../images/cloud-application-manager/cloudformationboxes1.png)
+     ![cloudformationboxes1.png](../../images/cloud-application-manager/cloudformationboxes1.png)
 
 3. In the box Configuration tab under Template, click **New**. In this walkthrough, we import a [sample WordPress template](https://s3.amazonaws.com/cloudformation-templates-us-east-1/WordPress_Single_Instance_With_RDS.template) from a URL. When we save, contents from the URL are ported over.
 
-    ![cloudformationboxes2.png](../images/cloud-application-manager/cloudformationboxes2.png)
+    ![cloudformationboxes2.png](../../images/cloud-application-manager/cloudformationboxes2.png)
 
     Besides URL, you have a couple of other options to create a template:
 
@@ -48,17 +48,17 @@ We use a sample Wordpress template to show how to create and launch a CloudForma
 
 1. Start with a [sample AWS CloudFormation template](https://aws.amazon.com/cloudformation/aws-cloudformation-templates/) and click **Edit** to modify. Here we use the sample WordPress template.
 
-     ![cloudformationboxes3.png](../images/cloud-application-manager/cloudformationboxes3.png)
+     ![cloudformationboxes3.png](../../images/cloud-application-manager/cloudformationboxes3.png)
 
 	 **Note:** CloudFormation templates have their own taxonomy you must follow. Although a template typically has several sections, only Resources is required. For information and examples on how to declare each section, see [Template Anatomy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html) and [Template Reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-reference.html).
 
 2. Customize input parameters. Although optional, if you have them in the template, they’re automatically shown under Variables. You can customize several parameters as in this example.
 
-     ![cloudformationboxes4.png](../images/cloud-application-manager/cloudformationboxes4.png)
+     ![cloudformationboxes4.png](../../images/cloud-application-manager/cloudformationboxes4.png)
 
 	 You can customize further by adding parameters under Variables. In this example, we added an Options variable to set the database engine version at deploy time. When we save the variable, notice how it’s automatically added as a parameter to the template in the correct JSON format.
 
-	 ![cloudformationboxes5.png](../images/cloud-application-manager/cloudformationboxes5.png)
+	 ![cloudformationboxes5.png](../../images/cloud-application-manager/cloudformationboxes5.png)
 
 	 Variables in CloudFormation boxes:
 
@@ -80,11 +80,11 @@ We use a sample Wordpress template to show how to create and launch a CloudForma
 
 2. For Provider, select an AWS cloud account added in Cloud Application Manager.
 
-    ![cloudformationboxes6.png](../images/cloud-application-manager/cloudformationboxes6.png)
+    ![cloudformationboxes6.png](../../images/cloud-application-manager/cloudformationboxes6.png)
 
 3. For Region, select the location and availability zone to launch the stack.
 
-4. Optionally, add tags, [auto schedule the instance](./deploying-managing-instances.md), and set [auto updates](./boxes.md).
+4. Optionally, add tags, [auto schedule the instance](../Deploying Anywhere/deploying-managing-instances.md), and set [auto updates](../Core Concepts/boxes.md).
 
 5. Under Variables, set values for each parameter based on the **AllowedValues** property in the template parameters section.
 
@@ -92,7 +92,7 @@ We use a sample Wordpress template to show how to create and launch a CloudForma
 
     **Note:** When launched successfully, outputs for the stack are available in the instance lifecycle editor. Click **Lifecycle Editor** on the instance page and look under Outputs.
 
-	![cloudformationboxes7.png](../images/cloud-application-manager/cloudformationboxes7.png)
+	![cloudformationboxes7.png](../../images/cloud-application-manager/cloudformationboxes7.png)
 
 ### Update a CloudFormation Stack in Real-Time
 
@@ -106,15 +106,15 @@ Once live, you can continue to make changes to your CloudFormation template from
 
 3. On the instance page, click **Lifecycle Editor**.
 
-    ![cloudformationboxes8.png](../images/cloud-application-manager/cloudformationboxes8.png)
+    ![cloudformationboxes8.png](../../images/cloud-application-manager/cloudformationboxes8.png)
 
 4. Update the template and test launch the stack. You can change any section of the template or rewrite it entirely. When ready to update the stack in AWS, click **Reconfigure**. In this example, we increased the RDS database size by changing the value of the DBAllocatedStorage parameter.
 
-    ![cloudformationboxes9.png](../images/cloud-application-manager/cloudformationboxes9.png)
+    ![cloudformationboxes9.png](../../images/cloud-application-manager/cloudformationboxes9.png)
 
 5. (Optional) Push updates back to the CloudFormation box. When you’re satisfied changing and testing the template in the instance, you can push it back to the CloudFormation box as a version. To do this, click the up arrow icon under Variables. This allows you or others in the future to choose a version that best suits your deployment.
 
-    ![cloudformationboxes10.png](../images/cloud-application-manager/cloudformationboxes10.png)
+    ![cloudformationboxes10.png](../../images/cloud-application-manager/cloudformationboxes10.png)
 
 ### Connect to Other CloudFormation Boxes over Bindings
 
@@ -126,19 +126,19 @@ To illustrate, we create a second CloudFormation box to scale the WordPress blog
 
 1. Create a CloudFormation box using the [AWS autoscaling template](https://s3-us-west-2.amazonaws.com/cloudformation-templates-us-west-2/AutoScalingMultiAZWithNotifications.template).
 
-    ![cloudformationboxes11.png](../images/cloud-application-manager/cloudformationboxes11.png)
+    ![cloudformationboxes11.png](../../images/cloud-application-manager/cloudformationboxes11.png)
 
 2. Go to the WordPress box and add a binding to the Autoscaling box.
 
      Make the binding required to make sure you always bind to an autoscaled instance before deploying WordPress.
 
-	 ![cloudformationboxes12.png](../images/cloud-application-manager/cloudformationboxes12.png)
+	 ![cloudformationboxes12.png](../../images/cloud-application-manager/cloudformationboxes12.png)
 
 3. In the WordPress box, specify a connection string to activate the binding.
 
     Under Variables, click **New** and select the text expression variable type. Enter this connection string: `\{{ autoscalebinding.address }}`
 
-    ![cloudformationboxes13.png](../images/cloud-application-manager/cloudformationboxes13.png)
+    ![cloudformationboxes13.png](../../images/cloud-application-manager/cloudformationboxes13.png)
 
 	The expression can contain any string value or variables from templates. It can also contain system variables like instance, username, addresses. In general, follow this syntax: `\{{ binding_name.variable_name }}`
 
@@ -146,7 +146,7 @@ When you next launch the WordPress box, its instance automatically connects to a
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

@@ -19,11 +19,11 @@ So how do boxes work? A typical application stack may consist of multiple boxes,
 **New Box**
 
 To create a new one, click **New**. Select a box type to match your automation:
-* [Script](./script-box.md) - To automate using Bash, PowerShell, Salt, Ansible, Puppet, or Chef.
-* [Deployment Policy](./deploymentpolicy-box.md) - To select and share infrastructure resources, networking, and more from a cloud provider.
-* [Application](./application-box.md) - To configure several boxes to deploy an application with a single click.
-* [CloudFormation](./cloudformation-box.md) - To automate using AWS CloudFormation templates.
-* [Container](./docker-container-service.md) - To automate using container technology like Docker.
+* [Script](../Automating Deployment/script-box.md) - To automate using Bash, PowerShell, Salt, Ansible, Puppet, or Chef.
+* [Deployment Policy](../Automating Deployment/deploymentpolicy-box.md) - To select and share infrastructure resources, networking, and more from a cloud provider.
+* [Application](../Automating Deployment/application-box.md) - To configure several boxes to deploy an application with a single click.
+* [CloudFormation](../Automating Deployment/cloudformation-box.md) - To automate using AWS CloudFormation templates.
+* [Container](../Automating Deployment/docker-container-service.md) - To automate using container technology like Docker.
 
 Give it a name, optionally a description, and define some basic metadata:
 
@@ -37,7 +37,7 @@ Give it a name, optionally a description, and define some basic metadata:
 **Box Sections**
 
 Once you create a box, you can configure and manage it in these sections.
-![core-concepts-boxes1.png](../images/cloud-application-manager/core-concepts-boxes1.png)
+![core-concepts-boxes1.png](../../images/cloud-application-manager/core-concepts-boxes1.png)
 
 | Section | Description |
 |------------|----------------|
@@ -49,7 +49,7 @@ Once you create a box, you can configure and manage it in these sections.
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

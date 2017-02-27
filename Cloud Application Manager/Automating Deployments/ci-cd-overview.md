@@ -10,7 +10,7 @@ If you use Jenkins to continuously test and integrate code changes in developmen
 
 Here is a typical continuous integration and deployment (CI/CD) workflow that starts with developers checking in code and goes a full circle to launch changes in development, testing, staging, and production. See how Cloud Application Manager automates the workflow in every step of the way.
 
-![jenkins-eb](../images/cloud-application-manager/jenkins-eb.png)
+![jenkins-eb](../../images/cloud-application-manager/jenkins-eb.png)
 
 
 ### Supported CI/CD scenarios
@@ -27,14 +27,14 @@ Without the plugin, normally you’d have to manually set up slaves, provision e
 
 ### Next Up
 
-* [Setting Up Jenkins with Cloud Application Manager](./jenkins-cloud-application-manager-setup.md)
-* [Launching Slaves via Cloud Application Manager](./jenkins-cloud-application-manager-slaves.md)
-* [Setting Up CI/CD with Cloud Application Manager and Jenkins](./setting-up-ci-cd.md)
-* [Jenkins CI/CD Tutorial](./jenkins-ci-cd-tutorial.md)
+* [Setting Up Jenkins with Cloud Application Manager](../Integrating with Jenkins/jenkins-cloud-application-manager-setup.md)
+* [Launching Slaves via Cloud Application Manager](../Integrating with Jenkins/jenkins-cloud-application-manager-slaves.md)
+* [Setting Up CI/CD with Cloud Application Manager and Jenkins](../Integrating with Jenkins/setting-up-ci-cd.md)
+* [Jenkins CI/CD Tutorial](../Tutorials/jenkins-ci-cd-tutorial.md)
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

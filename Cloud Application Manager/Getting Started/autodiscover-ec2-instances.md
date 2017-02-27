@@ -23,12 +23,22 @@ To register AWS EC2 instance, an additional step is required. Cloud Application 
 
 ### Auto-discover and register AWS EC2 instances in Cloud Application Manager
 
-![Unregistered Instances](../images/cloud-application-manager/aws-provider-unregisteredInstances.png)
+![Unregistered Instances](../../images/cloud-application-manager/aws-provider-unregisteredInstances.png)
 
-![Register Instance](../images/cloud-application-manager/aws-provider-registerInstance.png)
+![Register Instance](../../images/cloud-application-manager/aws-provider-registerInstance.png)
 
-![Register Instance Manual Intervention](../images/cloud-application-manager/aws-registerinstance-manualintervention.png)
+![Register Instance Manual Intervention](../../images/cloud-application-manager/aws-registerinstance-manualintervention.png)
 
-![Agent Install](../images/cloud-application-manager/aws-provider-agentInstallscript.png)
+![Agent Install](../../images/cloud-application-manager/aws-provider-agentInstallscript.png)
 
-![Register Instance Successful](../images/cloud-application-manager/aws-provider-registerinstancesuccessful.png)
+![Register Instance Successful](../../images/cloud-application-manager/aws-provider-registerinstancesuccessful.png)
+
+### Contacting Cloud Application Manager Support
+
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+
+For issues related to API calls, send the request body along with details related to the issue.
+
+In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
+* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

@@ -25,18 +25,18 @@ Once you install the appliance, set it up for others in your organization to use
 1. Log in to Cloud Application Manager on the appliance
 
    * Get the Cloud Application Manager IP address from the appliance VM console.
-   ![appliance-setup1.png](../images/cloud-application-manager/appliance-setup1.png)
+   ![appliance-setup1.png](../../images/cloud-application-manager/appliance-setup1.png)
 
    Log in to Cloud Application Manager with the default appliance admin credentials:
    * username: **admin@elasticbox.com**
    * password: elasticbox123
 
-   ![appliance-setup2.png](../images/cloud-application-manager/appliance-setup2.png)
+   ![appliance-setup2.png](../../images/cloud-application-manager/appliance-setup2.png)
 
 2. Set up Cloud Application Manager.
 
    From the menu drop-down at the top right, click **Setup Console**. From this page, you can manage settings for the appliance.
-   ![appliance-setup3.png](../images/cloud-application-manager/appliance-setup3.png)
+   ![appliance-setup3.png](../../images/cloud-application-manager/appliance-setup3.png)
 
    * Change the hostname to a friendly URL.
    * Optionally, change the default admin account password.
@@ -56,7 +56,7 @@ Once you install the appliance, set it up for others in your organization to use
 
 ### Changing the Cloud Application Manager Hostname
 Hostname is a friendly name for the Cloud Application Manager IP address for example, yourcompany.com:80 or name.example.com:443. The hostname should point to the IP address of the appliance virtual machine. To allow users to connect, also make sure your network firewall allows inbound traffic to the appliance IP address via TCP ports 80, 443, 5671, and 5672.
-![appliance-setup4.png](../images/cloud-application-manager/appliance-setup4.png)
+![appliance-setup4.png](../../images/cloud-application-manager/appliance-setup4.png)
 
 **Steps**
 
@@ -74,15 +74,15 @@ Hostname is a friendly name for the Cloud Application Manager IP address for exa
 
 ### Changing the Appliance Admin Account Password
 Change the appliance admin account password to keep it secure.
-![appliance-setup5.png](../images/cloud-application-manager/appliance-setup5.png)
+![appliance-setup5.png](../../images/cloud-application-manager/appliance-setup5.png)
 
-![appliance-setup6.png](../images/cloud-application-manager/appliance-setup6.png)
+![appliance-setup6.png](../../images/cloud-application-manager/appliance-setup6.png)
 
-![appliance-setup7.png](../images/cloud-application-manager/appliance-setup7.png)
+![appliance-setup7.png](../../images/cloud-application-manager/appliance-setup7.png)
 
 ### Adding Your SSH Key (Optional)
 Allow SSH access to the appliance virtual machine for the appliance admin account. You can SSH into the appliance virtual machine only using the keys you add here. SSH access is helpful if you want to look at logs and such.
-![appliance-setup8.png](../images/cloud-application-manager/appliance-setup8.png)
+![appliance-setup8.png](../../images/cloud-application-manager/appliance-setup8.png)
 
 **Steps**
 1. Browse to Cloud Application Manager with the IP address in the appliance console and log in as an admin.
@@ -93,7 +93,7 @@ Allow SSH access to the appliance virtual machine for the appliance admin accoun
 
 ### Changing NTP Time Zone (Optional)
 This shows the network time protocol (NTP) setting on the appliance. By default, it’s set to the time zone of the host running the appliance. You can optionally change the NTP server and time zone. The appliance uses this to determine the timestamp in logs.
-![appliance-setup9.png](../images/cloud-application-manager/appliance-setup9.png)
+![appliance-setup9.png](../../images/cloud-application-manager/appliance-setup9.png)
 
 **Steps**
 1. Browse to Cloud Application Manager with the IP address in the appliance console and log in as an admin.
@@ -109,7 +109,7 @@ This shows the network time protocol (NTP) setting on the appliance. By default,
 
 ### Enabling SMTP Outbound Email (Optional)
 We recommend that you specify SMTP server settings to be able to auto send outbound email notifications in Cloud Application Manager. The no-reply address is used in the From field. Under Email, click **ON** to enable outbound email.
-![appliance-setup10.png](../images/cloud-application-manager/appliance-setup10.png)
+![appliance-setup10.png](../../images/cloud-application-manager/appliance-setup10.png)
 
 **Steps**
 1. Browse to Cloud Application Manager with the IP address in the appliance console and log in as an admin.
@@ -133,7 +133,7 @@ When you install the appliance, the appliance VM by default gets 100 GB of virtu
 **Steps**
 1. In vSphere vCenter, power off the appliance VM and attach a second virtual disk with more CPU, RAM, and disk space. For more information, see the [vCenter 5.0](http://pubs.vmware.com/vsphere-50/topic/com.vmware.ICbase/PDF/vsphere-esxi-vcenter-server-50-storage-guide.pdf) and [vCenter 5.5](http://pubs.vmware.com/vsphere-55/topic/com.vmware.ICbase/PDF/vsphere-esxi-vcenter-server-55-storage-guide.pdf) help.
 2. Power on the appliance VM. In the appliance Setup Console under Block Device, select the second disk as the primary appliance storage.
-   ![appliance-setup11.png](../images/cloud-application-manager/appliance-setup11.png)
+   ![appliance-setup11.png](../../images/cloud-application-manager/appliance-setup11.png)
 
 3. When done, click **Save Settings**.
 
@@ -141,7 +141,7 @@ When you switch the disk, the appliance reboots and becomes unavailable for a fe
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

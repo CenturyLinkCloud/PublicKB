@@ -36,7 +36,7 @@ You need an Azure subscription to be able to consume Azure services. Follow thes
 2. Open Subscriptions.
 
 3. Click add subscription.
-   ![azure-add-new-subscription-1.png](../images/cloud-application-manager/azure-add-new-subscription-1.png)
+   ![azure-add-new-subscription-1.png](../../images/cloud-application-manager/azure-add-new-subscription-1.png)
 
 4. You can use the free trial version or select and purchase a payment plan.
    * **Note:** Cloud Application Manager is not responsible for any costs incurred through deploying to Azure. For more information, see [Azure pricing](https://azure.microsoft.com/en-us/pricing/calculator/?scenario=virtual-machines).
@@ -66,7 +66,7 @@ Follow these steps.
 2. Click **Providers** > **New Provider**.
 
 3. In the dialog, select **Microsoft Azure**.
-   ![azure-add-provider-2.png](../images/cloud-application-manager/azure-add-provider-2.png)
+   ![azure-add-provider-2.png](../../images/cloud-application-manager/azure-add-provider-2.png)
 
 4. Enter your Azure subscription credentials as shown.
    * Enter a useful name to identify the Azure subscription in Cloud Application Manager.
@@ -75,16 +75,16 @@ Follow these steps.
       * Sign in to the [Azure Portal](https://manage.windowsazure.com/).
 
       Click Settings > Management Certificates > UPLOAD A MANAGEMENT CERTIFICATE.
-      ![azure-upload-cloud-application-manager-certificate-3.png](../images/cloud-application-manager/azure-upload-cloud-application-manager-certificate-3.png)
+      ![azure-upload-cloud-application-manager-certificate-3.png](../../images/cloud-application-manager/azure-upload-cloud-application-manager-certificate-3.png)
       * Under **FILE** > click **BROWSE FOR FILE** to select the certificate from your local machine.
       * Under Subscription, be sure to select your subscription.
-      ![azure-upload-eb-certificate-4.png](../images/cloud-application-manager/azure-upload-eb-certificate-4.png)
+      ![azure-upload-eb-certificate-4.png](../../images/cloud-application-manager/azure-upload-eb-certificate-4.png)
 
 5. Click the checkmark to save.
    * Copy your Azure subscription ID located under Settings in the Azure Management Portal.
-   ![azure-select-subscriptionid-5.png](../images/cloud-application-manager/azure-select-subscriptionid-5.png)
+   ![azure-select-subscriptionid-5.png](../../images/cloud-application-manager/azure-select-subscriptionid-5.png)
    * In Cloud Application Manager, under Credentials, paste in the subscription ID.
-   ![azure-paste-subscriptionid-in-cloud-application-manager-6.png](../images/cloud-application-manager/azure-paste-subscriptionid-in-cloud-application-manager-6.png)
+   ![azure-paste-subscriptionid-in-cloud-application-manager-6.png](../../images/cloud-application-manager/azure-paste-subscriptionid-in-cloud-application-manager-6.png)
 
 6. Click **Save**.
 
@@ -114,9 +114,9 @@ In case of multi-tier applications deployed to different roles, follow these tip
 
 * To allow traffic to web role instances, we automatically open HTTP port 80 for both public (input) and private (internal) endpoints. We also open any other ports that you define on the box.
 * To allow traffic to worker role instances, you have to first define port variables on the box, which we open for both public (input) and private (internal) endpoints.
-* To allow web and worker role instances to communicate with each other, make sure they’re deployed to the same availability set. Configure [bindings](./managing-multi-tier-applications.md) to connect their boxes. Then print '\{{ bindingname.address }}:\{{bindingname.port}}' in a configure event script to connect by querying the instance IP address and port.
+* To allow web and worker role instances to communicate with each other, make sure they’re deployed to the same availability set. Configure [bindings](../Automating Deployments/managing-multi-tier-applications.md) to connect their boxes. Then print '\{{ bindingname.address }}:\{{bindingname.port}}' in a configure event script to connect by querying the instance IP address and port.
 
-![azure-webworkerroles-depprofile-7.png](../images/cloud-application-manager/azure-webworkerroles-depprofile-7.png)
+![azure-webworkerroles-depprofile-7.png](../../images/cloud-application-manager/azure-webworkerroles-depprofile-7.png)
 
 ### Azure Web and Worker Role Deployment Options
 
@@ -151,7 +151,7 @@ To support cloud bursting scenarios, you can proactively plan for scaling your a
 Cloud Application Manager supports autoscaling by monitoring CPU thresholds. If CPU usage hits 80%, a new instance is added in that role. Similarly if CPU usage is at 60% or below, the role instances are scaled down.
 
 To autoscale Web or Worker roles, configure these settings in the Azure deployment profile before deploying:
-![azure-webworkerrole-autoscale-instances-8.png](../images/cloud-application-manager/azure-webworkerrole-autoscale-instances-8.png)
+![azure-webworkerrole-autoscale-instances-8.png](../../images/cloud-application-manager/azure-webworkerrole-autoscale-instances-8.png)
 
 * Select a machine size for the role that has the sufficient number of cores to support scaling.
 * Set the number of instances to at least two to meet high availability SLAs from Azure. Here, you can control autoscaling by setting the maximum number of instances to scale.
@@ -165,7 +165,7 @@ The virtual machine role lets you build and manage highly customizable and flexi
 
 To deploy in Cloud Application Manager, simply select your box based on Linux or Windows, and [create a new instance](./deploying-managing-instances.md). Then, choose from the following deployment options.
 
-![azure-vm-deploymentoptions-9.png](../images/cloud-application-manager/azure-vm-deploymentoptions-9.png)
+![azure-vm-deploymentoptions-9.png](../../images/cloud-application-manager/azure-vm-deploymentoptions-9.png)
 
 ### Azure Deployment Options
 
@@ -215,7 +215,7 @@ When you enable autoscaling, you also want to turn on load balancing to direct t
 
 Here we’ve set an instance to autoscale and load balance with a limit of up to three machines. To allow traffic to each instance spawned, the port variable on the box is mapped as both the public and private port through which Internet traffic reaches the instance.
 
-![azure-configureautoscaling-loadbalancing-depprofile-10.png](../images/cloud-application-manager/azure-configureautoscaling-loadbalancing-depprofile-10.png)
+![azure-configureautoscaling-loadbalancing-depprofile-10.png](../../images/cloud-application-manager/azure-configureautoscaling-loadbalancing-depprofile-10.png)
 
 ### Microsoft SQL Database Service
 
@@ -225,7 +225,7 @@ Here we’ve set an instance to autoscale and load balance with a limit of up to
 
 Provide these variable values before you deploy a SQL Database to Azure.
 
-![azure-sqldatabase-deploymentvariables-11.png](../images/cloud-application-manager/azure-sqldatabase-deploymentvariables-11.png)
+![azure-sqldatabase-deploymentvariables-11.png](../../images/cloud-application-manager/azure-sqldatabase-deploymentvariables-11.png)
 
 | Variable | Description |
 |----------|-------------|
@@ -236,7 +236,7 @@ Provide these variable values before you deploy a SQL Database to Azure.
 
 ### Azure SQL Database Service Deployment Options
 
-![azure-sqldatabase-depprofile-12.png](../images/cloud-application-manager/azure-sqldatabase-depprofile-12.png)
+![azure-sqldatabase-depprofile-12.png](../../images/cloud-application-manager/azure-sqldatabase-depprofile-12.png)
 
 **Deployment**
 
@@ -274,7 +274,7 @@ Some useful things to keep in mind about Azure SQL Database deployments:
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

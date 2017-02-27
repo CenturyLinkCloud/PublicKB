@@ -55,7 +55,7 @@ Add a box type variable to consume the configuration of another box in your work
 
 Stack as many child boxes as you like, as long as they match the parent box Windows or Linux type. To understand the order in which parent and child box scripts execute, see [Event Execution Order](./start-stop-and-upgrade-boxes.md).
 
-![parameterizingboxeswithvariables1.png](../images/cloud-application-manager/parameterizingboxeswithvariables1.png)
+![parameterizingboxeswithvariables1.png](../../images/cloud-application-manager/parameterizingboxeswithvariables1.png)
 
 Parent box visibility into child boxes:
 
@@ -95,7 +95,7 @@ To define a binding, add a variable of type Binding. Then set its criteria in on
 
 * Any Box Instance. In the Value drop-down, select **Any Box Instance** to bind to any active instance in the current workspace.
 
-    ![parameterizingboxeswithvariables2.png](../images/cloud-application-manager/parameterizingboxeswithvariables2.png)
+    ![parameterizingboxeswithvariables2.png](../../images/cloud-application-manager/parameterizingboxeswithvariables2.png)
 
 * Specific box type. In the Value drop-down, choose a particular box type from OS compatible boxes (Windows or Linux Compute) in the workspace. We recommend this option as it allows binding to active instances in the workspace that match the box type.
 
@@ -116,19 +116,19 @@ In this example, for a binding called bindingA, we can get the connection data f
 
 To get value of a variable named connection_string, we apply this Jinja to look up the binding to the first deployed instance: `\{{ bindingA[0].connection_string }}`
 
-As an alternative to Jinja, you can do the same thing with text expressions. For example, since CloudFormation boxes don’t support event scripts, you can use [text expression variables](./parameterizing-boxes-with-variables.md) to process binding connections.
+As an alternative to Jinja, you can do the same thing with text expressions. For example, since CloudFormation boxes don’t support event scripts, you can use text expression variables to process binding connections.
 
 ### Port Type
 
 Use it to store TCP/IP port information. Access it from event scripts using Jinja just like text variables. At deploy time, Cloud Application Manager uses this port to open a connection to the instance if you select the **Automatic** security group option in the deployment profile.
 
-![parameterizingboxeswithvariables3.png](../images/cloud-application-manager/parameterizingboxeswithvariables3.png)
+![parameterizingboxeswithvariables3.png](..//..images/cloud-application-manager/parameterizingboxeswithvariables3.png)
 
 ### Text Type
 
 Use this type to store strings like usernames, paths, file names, connection strings, endpoints URLs, binding values, and so on.
 
-![parameterizingboxeswithvariables4.png](../images/cloud-application-manager/parameterizingboxeswithvariables4.png)
+![parameterizingboxeswithvariables4.png](../../images/cloud-application-manager/parameterizingboxeswithvariables4.png)
 
 Specify them in plain text or as expressions.
 
@@ -160,7 +160,7 @@ Here’s another example of two CloudFormation boxes that connect over a binding
 
 Use it to upload a file with binary or ASCII data. Files usually store configuration data used by applications.
 
-![parameterizingboxeswithvariables5.png](../images/cloud-application-manager/parameterizingboxeswithvariables5.png)
+![parameterizingboxeswithvariables5.png](../../images/cloud-application-manager/parameterizingboxeswithvariables5.png)
 
 More on file type variables:
 
@@ -190,7 +190,7 @@ curl -ks \{{ CONFIG_PARAMS }} | elasticbox config -o /tmp/configfile.cf
 
 Use it to provide a drop-down of values for users to choose from when deploying the box.
 
-![parameterizingboxeswithvariables6.png](../images/cloud-application-manager/parameterizingboxeswithvariables6.png)
+![parameterizingboxeswithvariables6.png](../../images/cloud-application-manager/parameterizingboxeswithvariables6.png)
 
 **Example**
 
@@ -207,7 +207,7 @@ fi
 
 Use it to assign a sensitive string value that’s hidden by the Cloud Application Manager interface. Access it just like text variables in event scripts. Typically, you use passwords to give admin accounts access to the virtual machine or applications in it.
 
-![parameterizingboxeswithvariables7.png](../images/cloud-application-manager/parameterizingboxeswithvariables7.png)
+![parameterizingboxeswithvariables7.png](../../images/cloud-application-manager/parameterizingboxeswithvariables7.png)
 
 **Example**
 
@@ -221,7 +221,7 @@ echo This returns the value of \{{ DB_PASSWORD }}
 
 Use it to store integer values and access them in event scripts just like text variables.
 
-![parameterizingboxeswithvariables8.png](../images/cloud-application-manager/parameterizingboxeswithvariables8.png)
+![parameterizingboxeswithvariables8.png](../../images/cloud-application-manager/parameterizingboxeswithvariables8.png)
 
 **Example**
 
@@ -233,7 +233,7 @@ echo This returns the value of ${COUNT}
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

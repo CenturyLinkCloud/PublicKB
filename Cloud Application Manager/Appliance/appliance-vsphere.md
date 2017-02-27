@@ -28,16 +28,16 @@ If you don’t have internet access in the vCenter, download all the files and i
 3. In the wizard, under Deploy from a file or URL, paste in the URL. Click **Next**.
 4. (Optional) Edit the name and select the folder where the appliance will live. Click **Next**.
 5. Select the cluster and a host that will run the appliance. Click **Next**.
-   ![appliance-vcenter1.png](../images/cloud-application-manager/appliance-vcenter1.png)
+   ![appliance-vcenter1.png](../../images/cloud-application-manager/appliance-vcenter1.png)
 
 6. Choose a cluster resource pool if available to centrally manage the compute and storage resources for the appliance.<br>
-    ![appliance-vcenter2.png](../images/cloud-application-manager/appliance-vcenter2.png)
+    ![appliance-vcenter2.png](../../images/cloud-application-manager/appliance-vcenter2.png)
 
 7. Select the datastore to store the appliance. The datastore virtual disk format is set to Thin. Thin provision conserves disk space and expands as needed. This means the appliance uses the space required now but takes up more space as usage grows.
-   ![appliance-vcenter3.png](../images/cloud-application-manager/appliance-vcenter3.png)
+   ![appliance-vcenter3.png](../../images/cloud-application-manager/appliance-vcenter3.png)
 
 8. Review the appliance settings before you deploy. Select **Power on after deployment**. Click **Finish**.
-   ![appliance-vcenter4.png](../images/cloud-application-manager/appliance-vcenter4.png)
+   ![appliance-vcenter4.png](../../images/cloud-application-manager/appliance-vcenter4.png)
 
 ### Connecting the Appliance to the vCenter Network
 In these steps, you connect the Cloud Application Manager appliance to the vCenter datacenter network and then turn it on.
@@ -45,7 +45,7 @@ In these steps, you connect the Cloud Application Manager appliance to the vCent
 **Steps**
 1. In the vSphere Client, right-click the Cloud Application Manager appliance that you just installed.
 2. Click **Edit Settings > Hardware tab**. The OVF template pre-selects the required processing speed and the network adapter. Make sure they are set as follows:
-   ![appliance-vcenter5.png](../images/cloud-application-manager/appliance-vcenter5.png)
+   ![appliance-vcenter5.png](../../images/cloud-application-manager/appliance-vcenter5.png)
 
    * CPUs. Two CPU virtual sockets to increase parallel processing.
    * Network adapter. A valid network to connect the appliance to your datacenter.
@@ -58,7 +58,7 @@ In these steps, you connect the Cloud Application Manager appliance to the vCent
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:support@elasticbox.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](..Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
