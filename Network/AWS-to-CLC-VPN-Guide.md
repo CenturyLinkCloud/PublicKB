@@ -1,5 +1,5 @@
 {{{
-  "title": "AWS to CLC VPN Guide",
+  "title": "AWS to CenturyLink Cloud VPN Guide",
   "date": "2-28-2017",
   "author": "Sayed Haider",
   "attachments": [],
@@ -8,7 +8,7 @@
 }}}
 
 ### Overview
-You can connect your VPC to CLC networks by using a VPN connection. The following steps guide you on how to use the AWS Management page to configure the AWS VPN.
+You can connect your [Amazon AWS VPC](//aws.amazon.com) to [CenturyLink Cloud](//www.ctl.io) networks by using a VPN connection. The following steps guide you on how to use the AWS Management page to configure the AWS VPN.
 
 ### Steps
 1. Login to the AWS Console and navigate to VPC service dashboard.
