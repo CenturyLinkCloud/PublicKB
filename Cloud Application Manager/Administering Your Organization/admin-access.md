@@ -11,11 +11,15 @@ When you sign up for the Cloud Application Manager Enterprise Edition, you get a
 
 **To Give Admin Access**
 1. Log in to Cloud Application Manager as the default administrator.
-2. Go to the Admin Console located in menu drop-down at the top right corner of your workspace.
+2. Access to the menu located in the top left, open it and click on **Organizations**.
    ![admin-access1.png](../../images/cloud-application-manager/admin-access1.png)
-
-3. Under **Organization > Administrators**, type the user’s name in the search field and select to add them.<br>
+   
+3. Once you are in the Organization scope, you will have access to the **Settings** tab in the principal navigation menu.
    ![admin-access2.png](../../images/cloud-application-manager/admin-access2.png)
+
+4. Under Organization > Administrators, type the user’s name in the search field and select to add them.
+   ![admin-access3.png](../../images/cloud-application-manager/admin-access3.png)
+
 
 To revoke administrator privileges for a user, click X against their name under **Organization > Administrators**.
 
