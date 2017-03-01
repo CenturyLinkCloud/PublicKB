@@ -19,13 +19,12 @@ This article covers the main API changes to the endpoints for boxes, instances, 
 
 |  Endpoint     | Added, Changed, or Removed   |
 |---------------|------------------------------|
-|  Instances    | **Added** <br> <ul><li>**New Endpoint** that updates an active instance by applying a box version.</li> <ul><li>PUT /services/instances/{instance_id}/pull.</li></ul> <li>Parameters: automatic_updates, box, policy_box <ul><li>PUT /services/instances/{instance_id}</li> <li>GET /services/instances</li></ul> <li>Parameters: automatic_updates, box, policy_box, instance_tags, ipv4_address (only for [deploying using the Cloud Application Manager agent on any infrastructure](../Deploying Anywhere/deploying-on-anyinfra.md)).</li><ul><li>POST /services/instances</li> <li>POST /services/instances/dryrun</li></ul> <br>**Removed**<br> <li>Parameter: environment.</li> <ul><li>PUT /services/instances/{instance_id}</li> <li>GET /services/instances</li></ul> <li>Parameter: environment, profile, variables.</li> <ul><li>POST /services/instances</li> <li>POST /services/instances/dryrun</li></ul> |
-|  Boxes  | **Changed**<br> The boxes endpoint accepts four box types now. When you call a box, use one of the following schemas:<li> Script box </li> <li>Deployment policy box</li> <li>CloudFormation box</li> <li>Docker container box</li> <br> **Removed** <br>  Parameters: <br> <li>tags are deprecated. Use requirements or claims instead.</li> <li>service</li> |
-| Workspaces | **Removed**  <br> This particular operation on the workspaces endpoint:  <li>GET /services/workspaces/{workspace_id}/profiles</li> |
-| Profiles | **Removed** <br> All operations on the profiles endpoint are deprecated and replaced by deployment policy boxes <br> <li>GET /services/profiles</li> <li>POST /services/profiles</li> <li>GET /services/profiles/{profile_id}</li> <li>PUT /services/profiles/{profile_id}</li> <li>DELETE /services/profiles/{profile_id}</li> |
-| Organizations	| **Removed** <br> <ul><li>Parameter: admin_boxes</li> <ul><li>GET /services/organizations/{organization_name}</li> <li>POST /services/organizations</li> <li>PUT /services/organizations/{organization_name}</li> </ul></ul>|
-| Providers | **Removed** <br> <ul><li>Parameter: admin_box</li> <ul><li>GET /services/providers</li> <li>POST /services/providers</li> <li>GET /services/providers/{provider_id}</li> <li>PUT /services/providers/{provider_id}</li> </ul></ul> |
-
+|  Instances    | **Added** <br> <ul><li>**New Endpoint** that updates an active instance by applying a box version.</li> <ul><li>PUT /services/instances/{instance_id}/pull.</li></ul> <li>Parameters: automatic_updates, box, policy_box </li> <ul><li>PUT /services/instances/{instance_id}</li> <li>GET /services/instances</li></ul> <li>Parameters: automatic_updates, box, policy_box, instance_tags, ipv4_address (only for [deploying using the Cloud Application Manager agent on any infrastructure](../Deploying Anywhere/deploying-on-anyinfra.md)).</li> <ul><li>POST /services/instances</li> <li>POST /services/instances/dryrun</li></ul></ul> <br>**Removed**<br> <ul><li>Parameter: environment.</li> <ul><li>PUT /services/instances/{instance_id}</li> <li>GET /services/instances</li></ul> <li>Parameter: environment, profile, variables.</li> <ul><li>POST /services/instances</li> <li>POST /services/instances/dryrun</li></ul></ul> |
+|  Boxes  | **Changed**<br> The boxes endpoint accepts four box types now. When you call a box, use one of the following schemas: <ul><li> Script box </li> <li>Deployment policy box</li> <li>CloudFormation box</li> <li>Docker container box</li></ul> <br> **Removed** <br> Parameters: <br> <ul><li>tags are deprecated. Use requirements or claims instead.</li> <li>service</li></ul> |
+| Workspaces | **Removed**  <br> This particular operation on the workspaces endpoint: <br> <ul><li>GET /services/workspaces/{workspace_id}/profiles</li></ul> |
+| Profiles | **Removed** <br> All operations on the profiles endpoint are deprecated and replaced by deployment policy boxes <br> <ul><li>GET /services/profiles</li> <li>POST /services/profiles</li> <li>GET /services/profiles/{profile_id}</li> <li>PUT /services/profiles/{profile_id}</li> <li>DELETE /services/profiles/{profile_id}</li></ul> |
+| Organizations	| **Removed** <br> <ul><li>Parameter: admin_boxes</li> <ul><li>GET /services/organizations/{organization_name}</li> <li>POST /services/organizations</li> <li>PUT /services/organizations/{organization_name}</li></ul></ul> |
+| Providers | **Removed** <br> <ul><li>Parameter: admin_box</li> <ul><li>GET /services/providers</li> <li>POST /services/providers</li> <li>GET /services/providers/{provider_id}</li> <li>PUT /services/providers/{provider_id}</li></ul></ul> |
 ___
 
 
@@ -81,8 +80,8 @@ This box’s type behaves just like the old boxes.
 
 | Parameter | Type | Description |
 |---------------|---------|----------------|
-| events | object | Optional. Contains these events: pre_configure, configure, pre_install, install, pre_start, start, stop, post_stop, dispose, post_dispose. Each refers to a blob of the script. <br> **Note:** The post_install, post_configure, and post_start events are deprecated. The new events are pre_install, pre_configure, and pre_start.
-| version | object	| Optional. Requires these properties: <li>box: Of type guid. Identifies the ID of the box to which the version belongs.</li> <li>description. Of type string, describes the change to the box version.</li> <li>number. Of type object, specifies the version number as an integer in this format: major, minor, and patch. For example to represent version 1.4.5, you would specify major:1,</li> <br> minor:4, patch:5. |
+| events | object | Optional. Contains these events: pre_configure, configure, pre_install, install, pre_start, start, stop, post_stop, dispose, post_dispose. Each refers to a blob of the script. <br> **Note:** The post_install, post_configure, and post_start events are deprecated. The new events are pre_install, pre_configure, and pre_start. |
+| version | object	| Optional. Requires these properties: <br> <ul><li>box: Of type guid. Identifies the ID of the box to which the version belongs.</li> <li>description. Of type string, describes the change to the box version.</li> <li>number. Of type object, specifies the version number as an integer in this format: major, minor, and patch. For example to represent version 1.4.5, you would specify major:1, minor:4, patch:5.</li></ul> |
 
 **Deployment Policy Box**
 
@@ -194,7 +193,7 @@ Returns an array of the boxes (cloudformation, docker, script, policy).
 }
 },
 {
-     "automatic_updates": "off",
+    "automatic_updates": "off",
     "requirements": [],
     "name": "MyCloudFormation",
      ...
@@ -206,7 +205,7 @@ Returns an array of the boxes (cloudformation, docker, script, policy).
         "docker"
     ],
     "name": "Docker RabbitMQ",
-"dockerfile": {
+    "dockerfile": {
         "url": "/services/blobs/download/54feda7093abba06c7591422/Dockerfile",
         "upload_date": "2015-03-10 11:50:07.960399",
         "length": 30,
@@ -361,8 +360,8 @@ environment, profile, variables
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | automatic_updates | string | Required. Specify an option: off, major, minor, or patch. Default is off. |
-| box | object | Required. Contains two parameters: <li>id: Of type string, is the ID of the script box (not version) to deploy on the instance.</li> <li> variables: Of type array, are the variables from the script box.</li> |
-| policy_box | object | Required. Contains two parameters: <li>id: Of type string, is the ID of the deployment policy box (not version) to deploy on the instance.</li> <li>variables: Of type array, are the variables from the deployment policy box.</li> |
+| box | object | Required. Contains two parameters: <br> <ul><li>id: Of type string, is the ID of the script box (not version) to deploy on the instance.</li> <li>variables: Of type array, are the variables from the script box.</li></ul> |
+| policy_box | object | Required. Contains two parameters: <br> <ul><li>id: Of type string, is the ID of the deployment policy box (not version) to deploy on the instance.</li> <li>variables: Of type array, are the variables from the deployment policy box.</li></ul> |
 | instance_tags | Array | Optional. Custom tags to describe an instance. |
 | ipv4_address | string | Optional. IP address of the machine where you want to run the Cloud Application Manager agent to deploy a box. |
 
@@ -1823,9 +1822,9 @@ ___
     "id": "http://elasticbox.net/schemas//versionable",
     "type": "object",
     "properties": {
-      "draft_from": {
-        "$ref": "http://elasticbox.net/schemas/guid"
-    },
+        "draft_from": {
+            "$ref": "http://elasticbox.net/schemas/guid"
+        },
         "version": {
             "type": "object",
             "required": [
