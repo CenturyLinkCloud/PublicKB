@@ -20,17 +20,16 @@ You will need to have followed [the New ARM Provider process](./partner-cloud-in
 
 You will need to delete the associated Azure provider at some point, before or after submitting the request described below.
 
-
 ### Important Information
 
 Submit a support request to remove your Azure Customer Account. To submit a support request, you may do so via the following methods:
 
 * Call 844-874-5167. This is a US domestic toll free number.
-* Email CloudSupport@centurylink.com
+* Email cloudsupport@centurylink.com
 * Submit a support request via SavvisStation Portal
 
 Please provide the following information for the delete:
 
-* Your's first and last name (It must be a user registered with CenturyLink for the account)
+* Your first and last name (must be a user registered with CenturyLink for the account)
 * Your company's name
 * Your request to delete your Azure Customer account and your reason for the request.
