@@ -86,7 +86,7 @@ GET /services/boxes?ids=05b76b08-5238-4e05-ae5f-8ea8afe00378
 
 ```
 [
-        {
+  {
     "schema": "http://elasticbox.net/schemas/boxes/script",
     "updated": "2015-05-27 08:25:49.363170",
     "automatic_updates": "off",
@@ -164,7 +164,7 @@ GET /services/boxes?ids=05b76b08-5238-4e05-ae5f-8ea8afe00378
     "draft_from": "aa5a019a-5dd6-4669-a591-ec52783b123e",
     "icon": "images/platform/redis.png"
   },
-{
+  {
     "schema": "http://elasticbox.net/schemas/boxes/script",
     "updated": "2015-05-27 08:25:49.536624",
     "automatic_updates": "off",
