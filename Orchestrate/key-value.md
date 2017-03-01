@@ -65,4 +65,4 @@ HTTP/1.1 201 Created
 
 For more about patch requests, see the [Patch API Reference](https://orchestrate.io/docs/apiref#keyvalue-patch).
 
-[Next: Search](https://www.ctl.io/knowledge-base/orchestrate/Search/)
+[Next: Search](https://www.ctl.io/knowledge-base/orchestrate/search/)
