@@ -43,6 +43,8 @@ CenturyLink will manage Azure permissions for our customers to ensure we can sup
 
 The following steps will walk through how to set up a new Cloud Application Manager provider that has been designed to create an Azure Customer account within the scope of CenturyLink's responsibility.
 
+Videos of these steps can be found [here](https://www.ctl.io/guides/).
+
 1. Log into Cloud Application Manager.
 2. Select the Providers tab
 3. Select New
