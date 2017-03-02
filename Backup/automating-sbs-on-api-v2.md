@@ -319,4 +319,4 @@ forEach ($Server in $serverDetails)
 
 ### Want to Know More About the Simple Backup Service?
 
-Check out our SBS product page [here](//www.ctl.io/simple-backup-service/). The CenturyLink Cloud [Knowledge Base](../Backup) also has a number of articles on backup, including [Getting Started with Simple Backup](../backup/getting-started-with-simple-backup) and [Simple Backup How It Works](../backup/simple-backup-service-how-it-works).
+Check out our SBS product page [here](//www.ctl.io/simple-backup-service/). The CenturyLink Cloud [Knowledge Base](../Backup) also has a number of articles on backup, including [Getting Started with Simple Backup](./getting-started-with-simple-backup.md) and [Simple Backup How It Works](./simple-backup-service-how-it-works.md).
