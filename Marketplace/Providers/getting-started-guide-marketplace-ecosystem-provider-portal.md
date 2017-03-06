@@ -10,7 +10,7 @@ The Ecosystem Provider Portal (EPP) is an application that allows CenturyLink Cl
 
 ### Signing In
 
-Sign into the [Provider Portal](http://provider-portal.ctl.io/#/login) using your credentials. You will be redirected to the Welcome screen.
+Sign into the [Provider Portal](https://provider-portal.ctl.io/#/login) using your credentials. You will be redirected to the Welcome screen.
 
 ![EPP1](../../images/EPP1.png)
 
@@ -131,7 +131,8 @@ It is a requirement that partners enter an End User License Agreement (EULA) for
 
 	 ![EPP8](../../images/EPP8.png)
 
-4. On the **Legal** tab you can add, edit, and preview the (EULA).
+4. On the **Legal** tab you can add a link to the (EULA) for each product. While this field accepts markdown text, we highly recommend that providers put links to an actual URL that hosts the (EULA), to ensure that the customer is always viewing the most recent version. It is the responsibility of the provider to ensure that the (EULA) is current.
+
    * This field accepts markdown.
    * Click the **Preview** tab to see how the Markdown renders.
 
