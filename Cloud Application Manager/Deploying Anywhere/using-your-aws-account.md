@@ -12,7 +12,7 @@ Deploy to AWS from Cloud Application Manager as follows.
 
 * For EC2 (Linux and Windows) use [deployment policies](../Automating Deployments/deploymentpolicy-box.md). Select a policy when you launch workloads from boxes.
 * For AWS RDS, AWS S3, AWS DynamoDB, and AWS Memcached, use readymade CloudFormation boxes.
-* For any other AWS service, configure a custom [CloudFormation box](../Automating Deployments/cloudformation-box.md).
+* For any other AWS service, configure a custom [CloudFormation box](../Automating Deployments/template-box.md).
 
 We orchestrate with AWS APIs in the backend to provision, install, and manage the lifecycle of your workloads based on the box configuration.
 
@@ -20,6 +20,7 @@ We orchestrate with AWS APIs in the backend to provision, install, and manage th
 * Connect your AWS account in Cloud Application Manager
 * Add custom AMIs in Cloud Application Manager
 * Deploy to Your AWS Account
+* Auto-Discover Instances
 
 ## Connect Your AWS Account in Cloud Application Manager
 
@@ -293,7 +294,7 @@ To deploy workloads to an ECS instances:
 * Image Lifecycle
 * Deploy the Instance
 
-**Note:** This documentation assumes that you have an ECS cluster already deployed in your AWS account. If you don’t have one, you can deploy a [CloudFormation Box](../Automating Deployments/cloudformation-box.md) using this [CloudFormation template](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-ecs.html) as blueprint. After the instance is deployed, don’t forget to synchronize the provider in order to fetch the latest changes.
+**Note:** This documentation assumes that you have an ECS cluster already deployed in your AWS account. If you don’t have one, you can deploy a [CloudFormation Box](../Automating Deployments/template-box.md) using this [CloudFormation template](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-ecs.html) as blueprint. After the instance is deployed, don’t forget to synchronize the provider in order to fetch the latest changes.
 
 #### Deployment Policy
 
@@ -371,7 +372,7 @@ Deploy the instance as you would do for a regular deployment, but instead, selec
 
 ### AWS RDS
 
-In Cloud Application Manager, RDS services are available as CloudFormation boxes. To define an RDS service like MySQL, go to the Boxes page. Click **New** > **CloudFormation**. Under Managed Boxes, select **MySQL Database**. Select an AWS provider account registered in Cloud Application Manager.
+In Cloud Application Manager, RDS services are available as CloudFormation boxes. To define an RDS service like MySQL, go to the Boxes page. Click **New** > **Template Box**. Under Managed Boxes, select **MySQL Database**. Select an AWS provider account registered in Cloud Application Manager.
 
 In the same way, you can define other RDS services like MS SQL, Oracle, or PostgresSQL. Configure the RDS service with these options.
 
@@ -399,7 +400,7 @@ In the same way, you can define other RDS services like MS SQL, Oracle, or Postg
 
 ### AWS S3
 
-In Cloud Application Manager, S3 is a readymade CloudFormation box. To define an S3 bucket, go to the Boxes page. Click **New** > **CloudFormation**. Under Managed Boxes, select **S3 Bucket**. Select an AWS provider account registered in Cloud Application Manager.
+In Cloud Application Manager, S3 is a readymade CloudFormation box. To define an S3 bucket, go to the Boxes page. Click **New** > **Template Box**. Under Managed Boxes, select **S3 Bucket**. Select an AWS provider account registered in Cloud Application Manager.
 
 Configure the S3 bucket with these options. Select a port (usually 80) through which the storage instance communicates over the network.
 
@@ -412,7 +413,7 @@ Configure the S3 bucket with these options. Select a port (usually 80) through w
 
 ### AWS DynamoDB
 
-In Cloud Application Manager, DynamoDB is a readymade CloudFormation box. To define a DynamoDB service, go to the Boxes page. Click **New** > **CloudFormation**. Under Managed Boxes, select **DynamoDB**. Select an AWS provider account registered in Cloud Application Manager.
+In Cloud Application Manager, DynamoDB is a readymade CloudFormation box. To define a DynamoDB service, go to the Boxes page. Click **New** > **Template Box**. Under Managed Boxes, select **DynamoDB**. Select an AWS provider account registered in Cloud Application Manager.
 
 Configure DynamoDB with these options. Select a port (usually 80) through which the database instance communicates over the network.
 
@@ -429,7 +430,7 @@ Configure DynamoDB with these options. Select a port (usually 80) through which 
 
 ### AWS Memcached
 
-in Cloud Application Manager, memcached is a readymade CloudFormation box. To define a memcached service, go to the Boxes page. Click **New** > **CloudFormation**. Under Managed Boxes, select **Memcached**. Select an AWS provider account registered in Cloud Application Manager.
+in Cloud Application Manager, memcached is a readymade CloudFormation box. To define a memcached service, go to the Boxes page. Click **New** > **Template Box**. Under Managed Boxes, select **Memcached**. Select an AWS provider account registered in Cloud Application Manager.
 
 The memcached box adds in-memory caching for your application. By deploying through Cloud Application Manager an application deployed on another cloud can take advantage of the caching service in AWS ElastiCache. To connect to the memcached service from another application use a binding. You need the cache cluster hostname and port from the binding to connect. When launching, use the default port 11211 or specify another value to allow inbound or outbound calls to the nodes in the cache cluster.
 
