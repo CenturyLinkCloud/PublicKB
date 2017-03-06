@@ -12,7 +12,13 @@
 
 The Cloud Application Manager CloudFormation box type runs on the [AWS CloudFormation service](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
-Cloud Application Manager works with the AWS CloudFormation API to provision the stack in your AWS account. So why use Cloud Application Manager when you can launch CloudFormation templates directly in Amazon? [Here’s why](https://www.ctl.io/knowledge-base/cloud-application-manager/#1).
+The Cloud Application Manager enables the deployment and management of AWS services using an API.
+
+So why use the Cloud Application Manager to launch services directly in Amazon?
+
+Cloud Application Manager allows customers to standardize enterprise services across multiple cloud and infrastructure environments. By using cloud native templates, IT organizations can build a catalog of applications and services that users can consume on-demand. Not only can it manage services across multiple providers but also multiple subscriptions by using the abstraction between applications and infrastructure (e.g. deployment policies).
+
+It supports all CloudFormation templates available from AWS. Leverage services such as EC2, Elastic Block Store, Simple Notification Service, Elastic Load Balancing and Auto Scaling, RDS, S3, DynamoDB, Elastic IPs, and much more.
 
 Cloud Application Manager supports all CloudFormation templates available from AWS. Leverage services such as EC2, Elastic Block Store, Simple Notification Service, Elastic Load Balancing and Auto Scaling, RDS, S3, DynamoDB, Elastic IPs, and much more.
 
