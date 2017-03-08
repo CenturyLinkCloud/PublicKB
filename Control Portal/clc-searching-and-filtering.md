@@ -7,48 +7,45 @@
 }}}
 
 ### Article Overview
-There are several ways to perform searching tasks within the CenturyLink Cloud Control Portal. These include methods to search for servers, groups, metadata related to descriptions and custom fields - as well as filtering infrastructure & appfog lists for specific items.
+There are several ways to perform searching tasks within the CenturyLink Cloud Control Portal. These include methods to search for servers, groups, metadata related to descriptions and custom fields, as well as filtering infrastructure or other lists for specific items.
 
 ### Filtering Infrastructure & AppFog Lists
-At times it may prove beneficial to filter your list of Infrastructure or AppFog down to the items you want to focus on.  This can be accomplished by utilizing the **FILTER** option located at the top of your lists.  Lets walk through filtering our Infrastructure to only show us servers with **SRN** in their name.  Note that this filter applies across all of your Infrastructure, even spread out across multiple datacenters (within the same account).
+At times it may want to filter your list of Infrastructure down to particular items so you can focus on them. This can be accomplished by using the **Filter** option located at the top of your lists.
 
-1. Select "FILTER"
+This example filters on servers with **SRN** in the name. Note that the filter applies across all of your infrastructure, even to servers that are spread across multiple data centers (within the same account).
 
-  ![FILTER](../images/clc-searching-and-filtering-1.png)
+1. From the Navigation Panel, click **Infrastructure > Servers**.
 
-2. In the white bar, enter any text that your server name contains.
+2. Click the 'spy glass' at the top of the list.
+   ![Filter](../images/clc-searching-and-filtering-1.png)
 
-  ![FILTER](../images/clc-searching-and-filtering-2.png)
+3. In the filter text box, enter **SRN**.
+   ![Text Box](../images/clc-searching-and-filtering-2.png)
 
-3. While the filter is still applied you can navigate between all the results.  Once completed, simply select the **x** on the filter bar to bring back all Infrastructure.
+4. While the filter is still applied you can navigate between all the results. Close the filter by clicking the **x** on the filter bar. Canceling the filter brings all Infrastructure back into view.
 
-  ![FILTER](../images/clc-searching-and-filtering-3.png)
+### Global Searching in the Control Portal
+The Global search feature in the Control Portal can be found in the upper right hand corner. You can use it to search across different kinds of information in the platform. Some of the searchable items (Server and User results) are:
+* Servers (by Name or IP)
+* Server metadata (Description field information / custom fields)
+* Accounts (Platform Users and API)
 
-### Global Searching within the Control Portal
-The Global search feature within the portal is accessed in the upper right hand corner, and can be used to search across a plethora of information within the platform.  Some of the items searchable from here are (Server and User results):
+Selecting any item in the search will take you to that item. The following steps include examples on searching basics:
 
-  - Servers (by Name or IP)
-  - Server metadata (Description field information / custom fields)
-  - Accounts (Platform Users and API)
+1. Click the 'spy glass' located in the upper right corner of the Dashboard near your user name. This opens a global Search window.
+   ![Search Window](../images/clc-searching-and-filtering-3.png)
 
-Selecting any item in the search will take you to that item.  The following steps include examples on some searching basics:
+2. Enter you search criteria. This example uses a simple text string.
+   ![Search Criteria](../images/clc-searching-and-filtering-4.png)
 
-1. Select the global search bar and enter in any query, for this first example we will search for a user in the platform (billing man)
+   Multiple results are returned that match the query. The left side contains the list of items. The right side contains the type of result.
 
-  ![FILTER](../images/clc-searching-and-filtering-4.png)
+3. Clicking an item takes you to the page for that item.
+   ![FILTER](../images/clc-searching-and-filtering-5.png)
 
-  Notice how multiple results are returned matching our query.  On the right side we are informed the type of result returned as well.  Selecting on our request will then take us to the page with relevant information
+4. This time search for who created the server. This example search on a user name. Click on a line item takes you to the drill-down information.
+   ![FILTER](../images/clc-searching-and-filtering-6.png)
 
-2. Select the appropriate result to be taken to the correct page.
+   The more specific the search, the more fine tuned the results. This example takes you to the User Profile page.
 
-  ![FILTER](../images/clc-searching-and-filtering-5.png)
-
-3. Perform another search, this time with a server description in mind.  For this example I'll search for one that has (active directory) in the description
-
-  ![FILTER](../images/clc-searching-and-filtering-6.png)
-
-  Notice that the more specific the search, the more fine tuned the results.  Selecting this server will then take me directly to that server in my infrastructure lists
-
-  ![FILTER](../images/clc-searching-and-filtering-7.png)
-
-Making use of the powerful search and filtering abilities within the platform can greatly aid in managing large deployments.  Use of these features helps you to quickly navigate to and find key components at a moments notice.
+Make use of the powerful search and filtering abilities in the platform. It can greatly aid in managing large deployments. Using these features helps you to quickly navigate to and find key components very quickly.

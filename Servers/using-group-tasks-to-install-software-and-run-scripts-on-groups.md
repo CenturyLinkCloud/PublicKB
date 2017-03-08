@@ -17,13 +17,8 @@
 <p><strong>Steps:</strong>
 </p>
 <p><strong>1. Navigate to a Group of Servers</strong>
-</p>
-<ul>
-  <li>Locate the “Servers (Beta)” page on the Control Portal navigation menu.&nbsp;
-    <br />
-    <br /><img src="https://t3n.zendesk.com/attachments/token/v0U5q4KliOpYqfIZrV3cNOl6x/?name=servers-beta-menu.png" alt="servers-beta-menu.png" />
-  </li>
-  <li>Locate the Group that contains servers that needs a bulk script or software installation. In the example below, the Group is named “Application Servers.”&nbsp;
+  <p>Using the left navigation menu choose Infrastructure > Servers.
+  <p>Locate the Group that contains servers that needs a bulk script or software installation. In the example below, the Group is named “Application Servers.”&nbsp;
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/jqJrgUtppupA68Z3wyjiKm9HX/?name=app-servers-group.png" alt="app-servers-group.png" />
   </li>

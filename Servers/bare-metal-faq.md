@@ -1,7 +1,7 @@
 {{{
   "title": "Bare Metal FAQ",
-  "date": "06-29-2015",
-  "author": "Bryan O'Neal",
+  "date": "10-20-2016",
+  "author": "Joseph Nguyen & Bryan Friedman",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": false
@@ -15,6 +15,7 @@ This FAQ addresses commonly asked questions about the service. For further infor
 
 
 **What are the available configurations for Bare Metal servers?**
+Server configurations are available depending on data center locations.  Please see matrix below for availability of configurations by data centers.
 
 * 4 cores (3.6GHz E3), 16 GB RAM, 10Gb NIC
   * Storage is 2x1TB 7200 RAID 1 (0.91TB usable)
@@ -22,10 +23,38 @@ This FAQ addresses commonly asked questions about the service. For further infor
   * Storage is 4x2TB 7200 RAID 5 (5.46TB usable)
 * 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC
   * Storage is 6x2TB 7200 RAID 5 (9.09TB usable)
+* 24 cores (2.3GHz 2x12 E5), 128 GB RAM, dual 10Gb NIC
+  * Storage is 1x960GB SSD (960GB usable)  
+* 24 cores (2.3GHz 2x12 E5), 128 GB RAM, dual 10Gb NIC
+  * Storage is 1x3.84TB SSD (3.84TB usable)  
+* 24 cores (2.3GHz 2x12 E5), 512 GB RAM, dual 10Gb NIC
+  * Storage is 1x3.84TB SSD (3.84TB usable)    
+* 20 cores (2.3GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC
+  * Storage is 2x800GB SSD (1.6TB usable)
+  * Storage is 12x2TB 7200 RAID/JBOD Configurable (24TB usable)  
+* 16 cores (2.4GHz 2x8 E5), 256 GB RAM, dual 10Gb NIC
+  * Storage is 2x800GB SSD (1.6TB usable)
+  * Storage is 4x4TB 7200 RAID/JBOD Configurable (16TB usable)  
 
-**Why don't I see the option to provision a Bare Metal server type?**
+**Why don't I see the option to provision a Bare Metal?**
 
-There are a couple reasons you might not see the option for Bare Metal servers.  First, check your data center and the current [availability for Bare Metal servers](https://www.ctl.io/data-centers/#/filters/Bare%20Metal).  Bare Metal servers are not available in all data centers. If you are in a data center where Bare Metal servers should be available, contact Customer Care to have them check to see if Bare Metal servers need to be enabled for your account.
+There are a couple reasons you might not see the option for Bare Metal servers.  First, check your data center and the current [availability for Bare Metal servers](https://www.ctl.io/data-centers/#/filters/Bare%20Metal).  Bare Metal servers are not available in all data centers.  If you are in a data center where Bare Metal servers should be available, contact Customer Care to have them check to see if Bare Metal servers need to be enabled for your account.
+
+**Why doesn't all server types options appear as an option to provision?**
+
+Not all data centers will carry all server types.
+As we expand our Bare Metal product offering, we are trying to match customer demand with server types by locations.  Please see table below for availability of server types by data centers. If you would like to see certain server types in specific data centers, we would love to hear from you. Please drop us a note by submitting a [Feature Request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/) including a brief explanation of your use case and the need for the particular configuration of resources and location.
+
+Location|Available Configurations<sup>1</sup>
+--------|------------------------
+US East (Sterling)-VA1|4 cores E3/16 GB RAM/2x1TB 7200 RAID 1 (0.91TB usable)<br>12 cores E5/64 GB RAM/4x2TB 7200 RAID 5 (5.46TB usable)<br>20 cores E5/128 GB RAM/6x2TB 7200 RAID 5 (9.09TB usable)
+Great Britain (Slough)-GB3|4 cores E3/16 GB RAM/2x1TB 7200 RAID 1 (0.91TB usable)<br>12 cores E5/64 GB RAM/4x2TB 7200 RAID 5 (5.46TB usable)<br>20 cores E5/128 GB RAM/6x2TB 7200 RAID 5 (9.09TB usable)
+US East (New York)-NY1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
+Canada (Vancouver)-CA1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
+Australia (Sydney)-AU1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
+
+<sup>1: All Physical servers include 10Gbps Network Interfaces</sup><br>
+<sup>2: SATA Disks are attached to Dell PERC H730 RAID Controllers and can operate in HBA/JBOD or RAID mode<sup>
 
 **Why am I seeing an error saying "limit exceeded" for CPU, memory, or storage when I try to provision a Bare Metal server?**
 
@@ -49,19 +78,27 @@ Bare Metal servers share the same network as CenturyLink Cloud virtual servers s
 
 **Since these servers use local storage, how do I avoid application failure if underlying hardware fails?**
 
-It is your responsibility to maintain any data recovery or restoration process that may be necessary in the case of a critical hardware failure. An integrated backup solution will be available at some point but is not currently.
+It is the responsibility of the customer to maintain any data recovery or restoration process that may be necessary in the case of a critical hardware failure. CenturyLink Simple Backup Service is integrated to all Bare Metal server configurations to protect against data loss in the event of a hardware failure. For more information on CenturyLink Simple Back Service, reference the [Simple Backup Service](https://www.ctl.io/simple-backup-service/)    
 
 **How is hardware support and replacement handled for Bare Metal servers?**
 
-CenturyLink is responsible for all hardware replacement for Bare Metal servers.  We monitor the Bare Metal servers underlying hardware using agentless SNMP monitoring via iLO.  If an incident is detected a ticket for investigation is automatically generated and the customer is notified. In the case where a server becomes completely unavailable the process to replace the server will begin immediately with consent from the customer. For additional service level details please reference the Bare Metal servers SLA on the [SLA page](https://www.ctl.io/legal/sla/).
+CenturyLink is responsible for all hardware replacement for Bare Metal servers.  We monitor the Bare Metal servers underlying hardware using agentless SNMP monitoring via iLO.  If an incident is detected a ticket for investigation is automatically generated and the customer is notified.
+
+For servers located in VA1 or GB3 only the following SLA will apply:
+* In the case where a server becomes completely unavailable the process to replace the server will begin immediately with consent from the customer. For additional service level details please reference the Bare Metal servers SLA on the [SLA page](https://www.ctl.io/legal/sla/).
+
+For server located in all other data centers, other than VA1 or GB3, then the following SLA will apply:
+* In the case where a server becomes completely unavailable the customer will be required to create a new server and migrate all data to the new server.
+
+For additional service level details please reference the Bare Metal servers SLA on the [SLA page](https://www.ctl.io/legal/sla/).
 
 **What are the security features available for Bare Metal servers?**
 
-Bare Metal servers can be incorporated in the same firewall policies currently available with other CenturyLink Cloud server types. All Bare Metal servers are also provisioned with fully encrypted local storage for the protection of customer data.
+Bare Metal servers can be incorporated in the same firewall policies currently available with other CenturyLink Cloud server types. Some Bare Metal servers are pre-configured with fully encrypted local storage while others are left to the users to configure. Please see additional FAQ on “storage customizations” and "configuring RAID controller" below for details on encryption and server options.
 
 **What should I do if I do not see the configuration of CPU/Memory/Storage I want?**
 
-We've initially launched with a limited number of Bare Metal server configuration types and fully expect to expand upon the number of types and quantity available of each based on customer feedback.  The server configuration screen will provide an up to date indication of our available server types.  If you do not see a configuration type there that suits your needs, please submit a [Feature Request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/) including a brief explanation of your use case and the need for a particular configuration of resources.
+We've initially launched with a limited number of Bare Metal server configuration types and have added new Bare Metal server configurations.  We fully expect to continue expanding upon the number of types and quantity available of each based on customer feedback.  The server configuration screen will provide an up to date indication of our available server types.  If you do not see a configuration type there that suits your needs, please submit a [Feature Request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/) including a brief explanation of your use case and the need for a particular configuration of resources.
 
 **What features do Bare Metal servers share with CenturyLink Cloud virtual servers?**
 
@@ -79,6 +116,23 @@ No, there are a select number of management capabilities available through the C
 
 Yes, the password is set at the time of server creation and can be changed after the fact. The password should only be [changed through the Control portal](../Servers/how-to-change-a-server-administrator-password.md) or API.  Changing the password through the OS will cause the “show credentials” link in the Control portal to no longer display accurate credentials.
 
+**What are the configuration ID's for building bare metal servers using the API?**
+
+Customers can retrieve the available configuration ID's, pricing and SKU details using the [Get Data Center Bare Metal Capabilities API.](//www.ctl.io/api-docs/v2/#data-centers-get-data-center-bare-metal-capabilities)
+
+Separately, we have listed the configuration ID's in the table below:
+
+Configuration|ConfigurationID
+-------------|----------------
+4 core, 16 GB RAM, 2x 1TB HDD|529e2592a3e640a7c2617b5e8bc8feaed94eac22
+12 core, 64 GB RAM, 4x 2TB HDD|f24b18ba2ce23657657444601649c7b8b7f9b60c
+20 core, 128 GB RAM, 6x 2TB HDD|8057e3629403e92d6693352ad17a807dc8970aef
+24 core, 128 GB RAM, 1x 960GB SSD|331afd25f49e10187c9095a33bd16209e013a56f
+24 core, 128 GB RAM, 1x 3.84TB SSD|44ed64b3174dc99f6f549b3707eefcc58fd701de
+24 core, 512 GB RAM, 1x 3.84TB SSD|7f6a073eb8e13626ee01c1ab5e698cf1c25ca073
+20 core, 256 GB RAM, 2x800GB SSD + 12x2TB HDD|43e0a50bf7ab9e80c493b1c8bf5da75dfba3f7e1
+16 core, 256 GB RAM, 2x800GB SSD + 4x4TB HDD|2516e341b960652f01563933d72523d9c222a437
+
 **Where are Bare Metal servers available geographically?**
 
 Bare Metal servers availability can be viewed on the [CenturyLink Cloud data centers page](https://www.ctl.io/data-centers/#/filters/Bare%20Metal).
@@ -89,7 +143,10 @@ Contact our Customer Care group by submitting a support request using the link a
 
 **How is data destruction handled in the cases of hard drive failure/replacement and/or server relinquishment for Bare Metal servers?**
 
-All local storage associated with Bare Metal servers is fully encrypted.  As such, destruction is not necessary to protect sensitive data.  New encryption keys are automatically generated for each newly provisioned server. Encryption is controlled exclusively by the disk array controller and not within the OS or elsewhere. We control the encryption keys and each key is tied directly to the logical volume on the array controller. When the logical volume is deleted there is no recovery path as the associated key is destroyed at the same time by the array controller. Thus, the data is rendered unrecoverable as part of our routine rediscovery and provisioning process for servers being decommissioned.
+The mechanism which we use to render all stored data unrecoverable depends upon the server configuration you are using.
+* SSDs use Instant Secure Erase (ISE) to render all data unrecoverable as part of our routine rediscovery and provisioning process for servers being decommissioned.
+* Any server configuration pre-configured for RAID 1 or RAID 5 are fully encrypted. As such, destruction is not necessary to protect sensitive data.  New encryption keys are automatically generated for each newly provisioned server. Encryption is controlled exclusively by the disk array controller and not within the OS or elsewhere. We control the encryption keys and each key is tied directly to the logical volume on the array controller. When the logical volume is deleted there is no recovery path as the associated key is destroyed at the same time by the array controller. Thus, the data is rendered unrecoverable as part of our routine rediscovery and provisioning process for servers being decommissioned.
+* Any server configuration where customized storage is available, full encryption will be left for the customer to define.
 
 **Do I still get billed for a Bare Metal server that is turned off?**
 
@@ -97,7 +154,38 @@ Yes, Bare Metal servers are dedicated to you once they have been provisioned and
 
 **Can I customize my storage configuration on a Bare Metal server?**
 
-No, the storage configurations provisioned for Bare Metal servers are all either RAID 1 or RAID 5 depending on the server configuration type and tampering with that configuration could result in loss of management access which could disrupt support. Each server is provisioned with two partitions, one 300GB boot partition and a second partition for the remaining storage capacity for that particular configuration type.
+Yes and No.
+
+Storage is pre-defined and not customizable for the following server configurations.
+* 4 cores (3.6GHz E3), 16 GB RAM, 10Gb NIC
+  * Storage is 2x1TB 7200 RAID 1 (0.91TB usable)
+* 12 cores (2.4GHz 2x6 E5), 64 GB RAM, dual 10Gb NIC
+  * Storage is 4x2TB 7200 RAID 5 (5.46TB usable)
+* 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC
+  * Storage is 6x2TB 7200 RAID 5 (9.09TB usable)
+
+Storage is customizable for the following server configurations. The user will be able to select from available options upon provisioning of a server.  Please see additional FAQ on Enabling encryption  on RAID controller below.
+* 20 cores (2.3GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC
+  * Storage is 2x800GB SSD (1.6TB usable)
+  * Storage is 12x2TB 7200 RAID/JBOD Configurable (24TB usable)  
+* 16 cores (2.4GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC
+  * Storage is 2x800GB SSD (1.6TB usable)
+  * Storage is 4x4TB 7200 RAID/JBOD Configurable (16TB usable)  
+
+**Can I configure encryption on the RAID controller?**
+
+Yes, encryption can be enabled on servers with the configurable RAID controllers.  That being said, **DO NOT set a "PASS PHRASE" on the RAID controller.**  If a pass phrase is set, data may become unrecoverable because servers will prompt for the phrase upon each reboot and console access is not available for you to use.
+
+For complete customization to configure the RAID controller and disks as desired, you may wish to download and install the following tools provided by Dell:
+
+* [OpenManage Server Administrator (OMSA)](http://www.dell.com/support/contents/us/en/04/article/Product-Support/Self-support-Knowledgebase/enterprise-resource-center/SystemsManagement/OMSA)
+  * [OMSA User Guide](http://www.dell.com/support/manuals/us/en/19/dell-openmanage-server-administrator-v8.3/OMSA_UG/Introduction?guid=GUID-D8D65820-62E7-4AA9-A074-FB9F79BCD7CF&lang=en-us)
+
+For command line scripting:
+* [PERCCLI Utility provided by Dell](http://www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=3XDPP)
+  * [PERCCLI Reference Guide](http://topics-cdn.dell.com/pdf/poweredge-rc-h730_Reference%20Guide_en-us.pdf)
+
+In addition, Runner jobs will soon be made available to help automate certain common configurations making RAID configurations easier.
 
 **Can I customize my network interface configuration on a Bare Metal server?**
 
@@ -105,7 +193,7 @@ Yes, Bare Metal servers do support multiple vNIC configurations. Additional vNIC
 
 **Can I bring my own OS image?**
 
-No, the available Operating Systems include Windows 2012 Standard Edition R2, Windows 2012 Datacenter Edition, RHEL6, CentOS 6, and Ubuntu 14. If there is a particular OS image you would like to see incorporated please [submit a feature request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/).
+No, the available Operating Systems include Windows 2012 R2 Standard Edition, Windows 2012 R2 Datacenter Edition, RHEL6, CentOS 6, and Ubuntu 14. If there is a particular OS image you would like to see incorporated please [submit a feature request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/).
 
 As an alternative to a custom image, Bare Metal servers do support the [execute package](https://www.ctl.io/knowledge-base/servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/) action from the Control Portal as well as through the [API](https://www.ctl.io/api-docs/v2/#server-actions-execute-package), allowing you to install the same software or run the same scripts on many servers at once.
 
@@ -194,3 +282,7 @@ Windows VMs in a Hyper-V environment on Bare Metal servers should use IPs in the
 **Does CenturyLink provide OS media (ISO's) for guest VMs on Windows 2012 Datacenter Edition with Hyper-V?**
 
 Customers are responsible for supplying their own guest VM OS media when using the Windows 2012 Datacenter Edition virtualization features.
+
+**Can I use Runner to automate my deployment and provisioning of Bare Metal?**
+
+Yes, CenturyLink Runner is integrated with Bare Metal to automate your deployments and provisioning of your servers. For more information on how to leverage Runner on Bare Metal, reference [CenturyLink Runner](https://www.ctl.io/runner/)   

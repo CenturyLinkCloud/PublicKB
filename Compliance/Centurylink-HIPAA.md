@@ -9,7 +9,7 @@
 }}}
 
 
-CenturyLink’s Compliance Management team is dedicated to continually improving and maintaining critical compliance certifications such as **Health Insurance Portability and Accountability Act** ([HIPAA](http://www.hhs.gov/ocr/privacy/)). Through our disciplined assessment and audit processes, CenturyLink has implemented comprehensive practices for HIPAA and **Health Information Technology for Economic and Clinical Health Act** ([HITECH](http://www.hhs.gov/ocr/privacy/hipaa/administrative/enforcementrule/hitechenforcementifr.html)) leveraging widely recognized security standards such as: SSAE 16 SOC 1, 2 & 3 and ISO 27001 to help enable our customers meet their privacy and security rules for **Protected Health Information** (PHI). HIPAA sets the standard for protecting sensitive patient data. Any company that deals with PHI must ensure that all the required physical, network and process security measures are in place and followed.
+CenturyLink’s Compliance Management team is dedicated to continually improving and maintaining critical compliance certifications such as **Health Insurance Portability and Accountability Act** ([HIPAA](http://www.hhs.gov/ocr/privacy/)). Through our disciplined assessment and audit processes, CenturyLink has implemented comprehensive practices for HIPAA and **Health Information Technology for Economic and Clinical Health Act** ([HITECH](http://www.hhs.gov/ocr/privacy/hipaa/administrative/enforcementrule/hitechenforcementifr.html)) leveraging widely recognized security standards such as: SSAE 16 SOC 1 and 2, and ISO 27001 to help enable our customers meet their privacy and security rules for **Protected Health Information** (PHI). HIPAA sets the standard for protecting sensitive patient data. Any company that deals with PHI must ensure that all the required physical, network and process security measures are in place and followed.
 
 This includes **Covered Entities** (CE), anyone who provides treatment, payment and operations in healthcare, **Business Associates** (BA), and anyone with access to patient information that provides support in treatment, payment or operations. Subcontractors or business associates of business associates must also be in compliance.
 
@@ -64,8 +64,6 @@ Compliance and security is obviously a top-level consideration whenever consider
 Below is an example of CenturyLink’s HIPAA enabling architecture.
 
 ![HIPAA Arch.png](https://ucarecdn.com/77d5ea83-c5e2-4018-bd50-46f1579d9d40/)
-
-
 
 ## Products and Services
 As a trusted Business Associate, CenturyLink securely protects, stores and manages its customers data with reliable solutions that makes it readily accessible when and where they need it.
@@ -131,7 +129,7 @@ CenturyLink adheres to the administrative, physical, and technical safeguards an
 CenturyLink recognizes that some customers may need to conduct on-site audits of how their services are delivered. CenturyLink permits annual audits to ensure our customer’s services are aligned with security and policy requirements. The customer may perform this service audit or any designated third party auditor(s) who enters into a standard Auditor Access and Confidentiality Agreement.
 
 ## Characteristics of a Business Associate
-When a covered entity decides to outsource HIPAA compliant hosting to a business associate, they need to look for certain indicators of compliance to ensure due diligence in vetting their service provider. Due diligence can help a covered entity prevent a potential data breach resulting in costly fines and reputational and business damage.
+When a covered entity decides to outsource HIPAA compliant hosting to a business associate, they need to look for certain indicators of compliance to ensure due diligence in vetting their service provider. Due diligence can help a covered entity prevent a potential data breach resulting in costly fines, as well as damage to reputation and business.
 
 ## HIPAA Attestation and Compliance Services Report
 As the number of reported data breaches and the cost of data breaches to the healthcare industry rise, it becomes imperative for a CE to select a BA that has invested in an independent audit and can provide a copy of their audit report to ensure they are following compliant policies and procedures.
@@ -147,12 +145,6 @@ A HIPAA Attestation Letter is specific to healthcare and the protection of PHI, 
 **[SOC 1](https://www.ctl.io/compliance/soc-1-ssae-16/)** - CenturyLink provides an annual Statement on Standards for Attestation Engagements (SSAE) No. 16. The certification validates CenturyLink’s commitment to operational excellence and client satisfaction. The SSAE 16 SOC 1 Type 2 report indicates that an independent service auditor has formally evaluated and issued an opinion on the description of selected CenturyLink systems.
 
 **[SOC 2](https://www.ctl.io/compliance/soc-2/)** - In addition to individual data center audits, CenturyLink also publishes a Service Organization Controls 2(SOC 2), Type II report. The SOC 2 report provides the auditor’s detailed evaluation of the design suitability and effectiveness of the controls. The design is required to meet the criteria for the security and availability principles set forth in TSP Section 100, Trust Services Principles, Criteria, and Illustrations for Security, Availability, Processing Integrity, Confidentiality, and Privacy.
-
-**[SOC 3](https://www.ctl.io/compliance/soc-2/)** - The SOC 3 report is a general-use report that provides the auditor’s report on whether the system achieved the trust services criteria for Security, Availability, Processing Integrity, Confidentiality, and Privacy. No descriptions of tests and results or opinions on the system descriptions are provided. CenturyLink Cloud maintains effective controls over its IT Managed Services, IaaS, and PaaS System to provide reasonable assurance that:
-*	*Security*: The system is protected against unauthorized access (both physical and logical).
-*	*Availability*: The system is available for operation and use as committed or agreed.
-
-A copy of the CenturyLink Cloud SOC 3 report can be downloaded here: **[SOC 3 Report](https://www.ctl.io/lp/resources/centurylink-cloud-soc-3-report.pdf)**
 
 **ISO 27001**
 CenturyLink has received certification of the ISO/IEC 27001:2013 Information Security Management System (ISMS) Standard for data centers located in United States, Singapore, United Kingdom, Germany, and Japan. The certificate addresses global network services and managed hosting services in Asia and EMEA. As well as colocation services (including physical security and facilities management) for data centers in Asia, EMEA, and North America. ISO 27001 is an International Standard providing a model for establishing, operating, monitoring, and improving ISMS.

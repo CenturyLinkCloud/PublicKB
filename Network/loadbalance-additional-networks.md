@@ -37,3 +37,4 @@ Dedicated Load Balancers offer the capability of load balancing traffic destined
 
 * This example was performed on Netscaler VPX version 10.5
 * Please review the [Load Balancing Comparison Matrix](../Network/load-balancing-comparison-matrix.md) the review the capabilities of dedicated vs shared load balancers
+* Tracking a Dedicated Load Balancer license expiration date is performed by the customer, please reference our [License Management Article](../Network/dedicated-load-balancer-license-management.md)

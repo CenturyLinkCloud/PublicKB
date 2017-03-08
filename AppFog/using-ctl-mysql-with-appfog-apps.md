@@ -24,8 +24,8 @@ You can find it via the Cloud Foundry CLI by running the following command in a 
 ```
 $ cf marketplace
 ...
-service       plans                           description   
-ctl_mysql     micro, small, medium, large     CenturyLink's Relational DB Service, MySQL-compatible database-as-a-service with SSL encryption option and daily backups held 7 days.  Please see https://www.ctl.io/legal/ for terms of service.
+service       plans                              description   
+ctl_mysql     mysql_single, mysql_replicated     CenturyLink's Relational DB Service, MySQL-compatible database-as-a-service with SSL encryption option and daily backups held 7 days.  Please see https://www.ctl.io/legal/ for terms of service.
 ```
 
 ### Create a Relational DB Service Instance
@@ -35,7 +35,7 @@ In order to do this you must be [logged into an AppFog region](login-using-cf-cl
 command will create a new micro Relational DB service instance named `acmedb`:
 
 ```
-$ cf create-service ctl_mysql micro acmedb
+$ cf create-service ctl_mysql mysql_single acmedb
 ```
 
 The `cf create-service` command will provision a new MySQL-compatible instance that can later be
@@ -72,7 +72,7 @@ System-Provided:
     },
     "label": "ctl_mysql",
     "name": "acmedb",
-    "plan": "micro",
+    "plan": "mysql_single",
     "tags": []
    }
   ],
@@ -81,6 +81,28 @@ System-Provided:
 
 These credentials can be populated into a MySQL client library for the specific runtime for your application.
 Below we will show an example using Node.js and the MySQL client module.
+
+### Delete a Relational DB Service Instance
+
+To delete a Relational DB service use the `cf delete-service` command.
+
+```
+cf delete-service acmedb
+```
+
+Before deleting a service it must be unbound from any applications using the `cf unbind-service` command.
+
+```
+cf unbind-service myapp acmedb
+```
+
+Note: Attempts to immediately delete a newly created Relational DB service will result in the below error. Waiting several minutes to pass after creating a new Relational DB instance will allow the service to be deleted.
+
+```
+FAILED 
+Server error, status code: 502, error code: 10001, message: Service instance tezt: The service broker returned an invalid response for the request to https://addons.ctl.io/brokers/cfv2/usea 
+st/v2/service_instances/c724ac99-5119-4f08-bf10-410344bacbcc. Status Code: 409 Conflict, Body: {}
+```
 
 ### Example: Using Environment Credentials in Node.js
 

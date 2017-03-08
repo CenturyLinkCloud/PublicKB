@@ -13,7 +13,7 @@ Application developers
 
 ### Regions & Region Scope
 
-AppFog exists across multiple regions
+AppFog exists across these regions
 * **US East**
 * **US West**
 

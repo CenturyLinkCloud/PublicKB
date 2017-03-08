@@ -25,7 +25,7 @@
 
 <p><strong>Q: How do I create alert policies in the Control Portal?</strong>
 </p>
-<p>A: Visit the&nbsp;<strong>Alerts</strong> page using the main navigation men, then choose&nbsp;<strong>create alert policy</strong>. Provide a name for the policy and a specific utilization threshold for CPU/memory/storage that should trigger an alert.
+<p>A: Visit the&nbsp;<strong>Alerts</strong> page using the main navigation menu, then choose&nbsp;<strong>create alert policy</strong>. Provide a name for the policy and a specific utilization threshold for CPU/memory/storage that should trigger an alert.
   <br
   /><img src="https://t3n.zendesk.com/attachments/token/dluhifjpnr6kuw7/?name=monitoringfaq01.png" alt="monitoringfaq01.png" />
 </p>
@@ -53,7 +53,7 @@
 
 <p><strong>Q: How do alert webhooks work?</strong>
 </p>
-<p>A: <a href="https://t3n.zendesk.com/entries/22916235-Webhooks-FAQ">Webhooks </a>are a powerful way to build a more event-driven relationship with your cloud environment. Users of webhooks can integrate internal systems with the resources
+<p>A: <a href="https://www.ctl.io/api-docs/v2/#webhooks-webhooks-faq">Webhooks </a>are a powerful way to build a more event-driven relationship with your cloud environment. Users of webhooks can integrate internal systems with the resources
   running in the cloud. Alerts are now available as webhooks! Whenever an alert fires, the CenturyLink Cloud platform sends out a JSON-encoded message to a web address specified by the user. These JSON messages include the name of alert, account name,
   server name, and threshold violation details. Users can choose to also receive webhook events for alerts raised in any sub accounts.
   <br /><img src="https://t3n.zendesk.com/attachments/token/jtiu0cckldrrzll/?name=monitoringfaq05.png" alt="monitoringfaq05.png" />

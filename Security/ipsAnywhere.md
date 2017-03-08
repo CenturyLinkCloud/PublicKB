@@ -90,7 +90,7 @@ Command One
 
 Command Two
 
-> (New-Object System.Net.WebClient).DownloadFile("https://api.ts.client-security.ctl.io/ips/scripts/install.ps1","$env:temp\install.ps1") ; cd $env:temp ; .\install.ps1 -controlUser "your.clc.account" -controlUserPassword "your.clc.password" -accountAlias "your.clc.account,alias" -cloudProvider "your.cloud.provider"
+> (New-Object System.Net.WebClient).DownloadFile("https://api.client-security.ctl.io/ips/scripts/install.ps1","$env:temp\install.ps1") ; cd $env:temp ; .\install.ps1 -controlUser "your.clc.account" -controlUserPassword "your.clc.password" -accountAlias "your.clc.account,alias" -cloudProvider "your.cloud.provider"
 
 ##### Content Properties
 
@@ -130,7 +130,7 @@ Command One
 
 Command Two
 
-> (New-Object System.Net.WebClient).DownloadFile("https://api.ts.client-security.ctl.io/ips/scripts/uninstall.ps1","$env:temp\uninstall.ps1") ; cd $env:temp ; .\uninstall.ps1 -controlUser "your.clc.account" -controlUserPassword "your.clc.password"
+> (New-Object System.Net.WebClient).DownloadFile("https://api.client-security.ctl.io/ips/scripts/uninstall.ps1","$env:temp\uninstall.ps1") ; cd $env:temp ; .\uninstall.ps1 -controlUser "your.clc.account" -controlUserPassword "your.clc.password"
 
 ##### Content Properties
 

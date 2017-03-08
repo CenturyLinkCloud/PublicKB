@@ -10,16 +10,15 @@
 
 In order to remove Simple Backup Service from your system, please follow the instructions below for Windows and Linux accordingly.
 
-**Windows**
+### Windows
 
-1. Navigate to the Windows Control Panel
-2. Click on the 'Uninstall a Program' option
-3. Select the SimpleBackupService Program
-4. Click the Uninstall button and confirm your selection
+1. Navigate to the Windows Control Panel.
+2. Click the **Uninstall a Program** option.
+3. Select the **SimpleBackupService** Program.
+4. Click **Uninstall** and confirm your selection.
 
-**Linux**
-
-1. Enter the following text in the Linux Command Line:
+### Linux
+Enter the following text in the Linux Command Line:
 
 ```
 service simplebackupservice stop
