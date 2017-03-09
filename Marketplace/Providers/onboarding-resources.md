@@ -10,7 +10,7 @@ The CenturyLink Cloud Marketplace allows customers to purchase software from an 
 
 ### Provider Portal
 
-Once your account has been setup, you will be notified via email and provided the information needed to access the [Provider Portal](http://provider-portal.ctl.io/). Providers will use the same credentials they setup while creating their CenturyLink Cloud account to log into the Provider Portal.
+Once your account has been setup, you will be notified via email and provided the information needed to access the [Provider Portal](https://provider-portal.ctl.io/). Providers will use the same credentials they setup while creating their CenturyLink Cloud account to log into the Provider Portal.
 
 The Provider Portal provides you with multiple resources.
 
