@@ -12,7 +12,7 @@ After reading this article, the reader should know how to deploy the [Zentera](h
 
 ### Partner Profile
 
-![zentera-logo](../images/Marketplace/zentera-logo.jpg)
+![zentera-logo](../../images/Marketplace/zentera-logo.jpg)
 
 Zentera's CoIP solution directly addresses the security and networking needs of the multi-cloud market. CoIP's security capabilities are deeply integrated with its virtual overlay network, accelerating productivity, and business agility. CoIP works with any transport in any environment, does not interfere with existing infrastructure, and can be up and running in less than a day. The company is a Red Herring Top 100 winner and Info Security PG Magazine 2017 Top Startup of the Year based in Silicon Valley, and offers CoIP through select partners.
 
@@ -58,7 +58,7 @@ CenturyLink customers with Multi-cloud deployments.
 
 * Access to the CenturyLink Cloud platform as an authorized user
 
-* [Create a New VM](/guides/servers/create-a-custom-server/) if you don't have an existing VM.
+* [Create a New VM](https://www.ctl.io/guides/servers/create-a-custom-server/) if you don't have an existing VM.
 
 * Enable port 22 and 443. Port 22 can be disabled after the Runner has been successfully installed.
 
@@ -104,7 +104,7 @@ In the zCenter Portal, Click the API Management Tab on the left bar.
 
 * Click **Save** then Download.
 
-![Zentera-gs-1](../images/Marketplace/Zentera-gs-1.png)
+![Zentera-gs-1](../../images/Marketplace/Zentera-gs-1.png)
 
 **Step 5: Create a Cloud Server Pool on zCenter and Save the Cloud Pool Tag for Later Use with the Runner**
 
@@ -118,7 +118,7 @@ In the zCenter Portal, Click the API Management Tab on the left bar.
 
 * Locate and Copy Cloud Pool Tag from zCenter
 
-![Zentera-gs-2](../images/Marketplace/Zentera-gs-2.png)
+![Zentera-gs-2](../../images/Marketplace/Zentera-gs-2.png)
 
 * You can remain logged in. You will be returning to zCenter at the end of this Runner job.
 
@@ -130,7 +130,7 @@ In the zCenter Portal, Click the API Management Tab on the left bar.
 
 * Click on **Zentera zLink Agent Installer for RedHat, CentOS, SuSE, and Ubuntu, Debian, or Windows 2012.**
 
-![Zentera-gs-3](../images/Marketplace/Zentera-gs-3.png)
+![Zentera-gs-3](../../images/Marketplace/Zentera-gs-3.png)
 
 * Click on **Run**.
 
@@ -138,7 +138,7 @@ In the zCenter Portal, Click the API Management Tab on the left bar.
 
 * Copy and paste the **CoIP Controller Appliance URL** (your zCenter URL), **zCenter API Keys** and zCenter Cloud Server Pool Tag into the dialogue box.
 
-![Zentera-gs-4](../images/Marketplace/Zentera-gs-4.png)
+![Zentera-gs-4](../../images/Marketplace/Zentera-gs-4.png)
 
 * Review your information and click **Run**.
 
@@ -154,7 +154,7 @@ In the zCenter Portal, Click the API Management Tab on the left bar.
 
 * Verify that your VM is listed here.
 
-![Zentera-gs-5](../images/Marketplace/Zentera-gs-5.png)
+![Zentera-gs-5](../../images/Marketplace/Zentera-gs-5.png)
 
 ### Post-Installation Note
 
@@ -175,4 +175,4 @@ Purchase license by sending email: [ctl-sales@zentera.net](mailto:ctl-sales@zent
 **Who should I contact for support?**
 
 For issues related to deploying the Zentera CoIP on CenturyLink Cloud, please contact [ctl-support@zentera.net](mailto:ctl-support@zentera.net).
-For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../support/how-do-i-report-a-support-issue.md).
+For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
