@@ -1,6 +1,6 @@
 {{{
   "title": "Summary of Cloud Based Post-Sales Support Options",
-  "date": "3-31-2015",
+  "date": "9-22-2016",
   "author": "Dave Burkhardt",
   "attachments": [],
   "contentIsHTML": false
@@ -13,16 +13,16 @@ CenturyLink offers customers world-class support services to match any organizat
 ### CLoud Onboarding Services:
 * All CenturyLink Cloud QuickStart Onboardings. Please see https://www.ctl.io/onboarding/ for more information.
 
-### CLC NOC
-* 24/7 Break/Fix Support. Please see https://www.ctl.io/support/ for more information.
+### CenturyLink Cloud Customer Care (support) team
+* 24/7 support of your cloud infrastructure and resources. The Customer Care team is "Always On", available to answer your questions regarding the Platform and work to resolve any isseus you are having with the service. Please see https://www.ctl.io/support/ for more information.
 
 ### Service Tasks
 * Service Engineers standing by to perform specific platform activities - 15+ other tasks that are generally <$5000. Please see https://www.ctl.io/service-tasks/ for more information
 
-### Designated & Shared Services Engineer
-* Designated Shared Service Engineers are available in 20, 40, 60, 80, 160 and multiples of 160-hour blocks per month. These front-line engineers focused on day-to-day technical support and service tasks. Please see https://www.ctl.io/support/ for more information.
+### Designated Service Engineers
+* Designated Service Engineers (DSE) are available in 20, 40, 60, 80, 160 and multiples of 160-hour blocks per month. These front-line engineers focus on day-to-day technical support and service tasks. Please see https://www.ctl.io/support/ for more information.
 
-### Technical Account Managers:
+### Technical Account Managers / Customer Excellence
 * TAMs are your CLC lifecycle business partner and go-to contact for general support, business strategy, infrastructure planning, proactive reporting/metrics evaluation, service credits, executive reviews. Please see https://www.ctl.io/support/ for more information.
 
 ### Managed OS/Apps

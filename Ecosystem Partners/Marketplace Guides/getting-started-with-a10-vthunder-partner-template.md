@@ -1,12 +1,12 @@
 {{{
   "title": "Getting Started with A10 vThunder Appliance - Partner Template",
-  "date": "6-18-2015",
+  "date": "06-18-2015",
   "author": "Bob Stolzberg",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-![logo](http://www.a10networks.com/images/logo_s.png)
+![A10 Logo](../../images/a10-logo.png)
 
 ### Partner Profile
 A10 Networks - An industry leader in data security and cloud security solutions.
@@ -25,14 +25,14 @@ A10 Networks - An industry leader in data security and cloud security solutions.
 
 A10 has pioneered a new generation of application networking technologies. Our solutions enable enterprises, service providers, Web giants and government organizations to accelerate, secure and optimize the performance of their data center applications and networks. Our Advanced Core Operating System (ACOS®) platform is designed to deliver substantially greater performance and security relative to prior generation application networking products. Our software-based ACOS architecture provides the flexibility that enables us to expand our business with additional products to solve a growing array of networking and security challenges across cloud computing and mobility. A10 Networks has a portfolio of application-layer networking products that assure user-to-application connectivity is available, accelerated and secure.
 
-For more information, visit [http://www.a10networks.com](http://www.a10networks.com)
+For more information, visit [http://www.a10networks.com](http://www.a10networks.com).
 
 ### Solution Overview
 A10 has integrated their vThunder virtual appliance with the CenturyLink Cloud to provide users with maximum flexibility. vThunder virtual appliances are available for both application delivery controller (ADC) and carrier grade networking (CGN) product lines. With vThunder virtual appliances you gain a flexible and easy-to-deploy appliance featuring advanced services for any enterprises, web giant or service provider, on demand.
 
 The vThunder ADC provides advanced L4-7 ADC services (including security) and server load balancing (SLB). The vThunder CGN provides IPv4 scaling with carrier grade NAT (CGNAT) and IPv6 migration capabilities.
 
-For more information, view the product information on A10's website: [http://www.a10networks.com/products/vThunder.php](http://www.a10networks.com/products/vThunder.php)
+For more information, view the product information on A10's website: [http://www.a10networks.com/products/vThunder.php](http://www.a10networks.com/products/vThunder.php).
 
 ### Offer
 A10 is making their vThunder Appliance available for CenturyLink Cloud Users to deploy to their account.  In order to purchase a license or entitlement, please contact A10 Sales using the contact information above.
@@ -45,23 +45,23 @@ After reading this article, the user should feel comfortable deploying the A10 v
 
 This deployment process for Partner Templates currently requires manual interaction via the Service Task process, but will be further automated in future releases of the CenturyLink Cloud Platform.
 
-If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@ctl.io](mailto:features@ctl.io)
+If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@ctl.io](mailto:features@ctl.io).
 
 ### Prerequisite
-- Access to the CenturyLink Cloud platform as an authorized user.
-- Create a Network VLAN you want the A10 vThunder Appliance to reside on.  Creating a new VLAN follows best practices so users can secure the private VIPs with firewalls.
+* Access to the CenturyLink Cloud platform as an authorized user.
+* Create a Network VLAN you want the A10 vThunder Appliance to reside on.  Creating a new VLAN follows best practices so users can secure the private VIPs with firewalls.
 
 ### Postrequisite
-- If you want to access your A10 vThunder Appliance over the internet, please perform the following tasks once your A10 vThunder Appliance has been deployed to your account:
+* If you want to access your A10 vThunder Appliance over the internet, please perform the following tasks once your A10 vThunder Appliance has been deployed to your account:
 
-1. [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
+* [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal.
 
-2. [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal
+* [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal.
 
 ### Detailed Steps to Deploy A10 vThunder Appliance Partner Template
 Follow these step by step instructions to deploy a A10 vThunder Appliance in to your CenturyLink Cloud account:
 
-- Open a service task request ticket via email to ServiceTasks@ctl.io with the following details.  You will need to edit some of the information below.
+* Open a service task request ticket via email to ServiceTasks@ctl.io with the following details.  You will need to edit some of the information below.
 
 ----
 TO: ServiceTasks@ctl.io
@@ -114,7 +114,7 @@ Once the Service Task team deploy's your A10 vThunder Appliance, you will get a 
 - Refer to the email from Service Tasks with the IP address, and then navigate to http://<YOURTHREATMANAGERIPADDRESS> via a web browser from a server on the same VLAN. Alternatively, if you want to connect via internet, you'll need to add a Public IP and then connect via web browser.
 - Enter your appliance hostname and unique registration key into the Appliance Name and Registration Key fields
 - Click Register Appliance button
-- For additional information on how to configure your A10 vThunder Appliance, please visit the support website at [http:///www.A10Networks.com/support/](http:///www.A10Networks.com/support/)
+- For additional information on how to configure your A10 vThunder Appliance, please visit the support website at [A10 Networks/](http:///www.A10Networks.com/support/).
 
 ### Pricing
 There are no A10 license costs included.  The cost to deploy the A10 vThunder Partner Template will be billed as a Service Task, but CenturyLink will provide a credit for those costs.  In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees is [available here](http://www.ctl.io/service-tasks).
@@ -122,7 +122,7 @@ There are no A10 license costs included.  The cost to deploy the A10 vThunder Pa
 #### Process to request credit for Service Task fee
 Follow this process to request credit on your account to re-imburse any expense to deploy the Partner Template:
 
-* Please copy and paste the email below and send it to [ecosystem@ctl.io](mailto:ecosystem@ctl.io)
+* Please copy and paste the email below and send it to [ecosystem@ctl.io](mailto:ecosystem@ctl.io).
 
 ----
 
@@ -151,4 +151,4 @@ You can contact A10 directly using the information below.  Existing CenturyLink 
   - Email [support@a10networks.com](mailto:support@a10networks.com)
   - Telephone: (888) 822-7210 or international (408) 325-8676
 
-* For issues related to CenturyLink cloud infrastructure (VM’s, storage, network, etc), or if you experience a problem deploying the partner template, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new)
+* For issues related to CenturyLink cloud infrastructure (VMs, storage, network, etc.), or if you experience a problem deploying the partner template, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

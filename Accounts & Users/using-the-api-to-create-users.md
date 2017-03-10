@@ -7,23 +7,26 @@
 }}}
 
 ### Description
-The CenturyLink Cloud API can be used to perform the same actions programmatically as you can from within the Control Portal. The below example shows how to create a user via the API.
+You can use the CenturyLink Cloud API to perform the same actions programmatically as you can from within the Control Portal. The below example shows how to create a user via the API.
 
-For more details about the specific API functions used below, you may reference the complete [API documentation](https://www.ctl.io/api-docs/v1/).
+For more details about the specific API functions used below, reference the complete [API documentation](https://www.ctl.io/api-docs/v1/).
 
 ### Steps
-Creating a user requires two steps.  First, you must authenticate to the API (v1) using an account with appropriate permissions to create a user in the target account.  Second, create the account.
+There are two steps to creating a user.  
+
+1. Authenticate to the API (v1) using an account with appropriate permissions to create a user in the target account.  
+2. Create the account.
 
 #### 1. Prerequisites
-Prior to creating a user via the API, you must have an API user created.  You will need the API key and password.  You can find directions on how to do that [here](https://www.ctl.io/knowledge-base/accounts-&-users/creating-users/).
+Prior to creating a user via the API, you must have an API user created. To do that, you will need the API key and password.  Directions for creating a user via the API can be referenced [here](https://www.ctl.io/knowledge-base/accounts-&-users/creating-users/).
 
 #### 2. Authentication
-While there are multiple ways to authenticate, this example uses the REST method.  In PowerShell you can authenticate using this code:
+While there are multiple ways to authenticate, this example uses the REST method. In PowerShell you can authenticate using this code:
   ```
-  Invoke-RestMethod -URI "https://api.ctl.io/REST/Auth/Logon" -Method POST -ContentType application/json -Body "{'APIKey':  '[Your APIKey]', 'Password':  '[Your APIPassword]'}" -SessionVariable
+  Invoke-RestMethod -URI "https://api.ctl.io/REST/Auth/Logon" -Method POST -ContentType application/json -Body "{'APIKey': '[Your APIKey]', 'Password': '[Your APIPassword]'}" -SessionVariable session
   ```
 
-Be sure to replace the API key and password in the string.  Once you authenticate successfully, you will receive a message similar to the following:
+Be sure to replace the API key and password in the string. Once you authenticate successfully, you will receive a message similar to the following:
   ```
   Success    : True
   Message    : Login Successful
@@ -32,7 +35,7 @@ Be sure to replace the API key and password in the string.  Once you authenticat
 #### 3. Create User
 The API for creating a user is available at [https://www.ctl.io/api-docs/v1/#users-createuser](https://www.ctl.io/api-docs/v1/#users-createuser).
 
-At a minimum, you must specify UserName, AccountAlias, EmailAddress, FirstName, and LastName.  While it is not required, adding Roles at the same time is recommended.  A sample PowerShell call may look like this:
+At a minimum, you must specify UserName, AccountAlias, EmailAddress, FirstName, and LastName. While it is not required, adding Roles at the same time is recommended. A sample PowerShell call may look like this:
   ```
   $UserInfo = @"
   {

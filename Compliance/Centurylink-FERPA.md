@@ -123,14 +123,8 @@ Other CenturyLink audits can give you additional guidance and insight into ongoi
 
 **[SOC 2](https://www.ctl.io/compliance/soc-2/)** - In addition to individual data center audits, CenturyLink also publishes a Service Organization Controls 2(SOC 2), Type II report. The SOC 2 report provides the auditor’s detailed evaluation of the design suitability and effectiveness of the controls. The design is required to meet the criteria for the security and availability principles set forth in TSP Section 100, Trust Services Principles, Criteria, and Illustrations for Security, Availability, Processing Integrity, Confidentiality, and Privacy.
 
-**[SOC 3](https://www.ctl.io/compliance/soc-2/)** - The SOC 3 report is a general-use report that provides the auditor’s report on whether the system achieved the trust services criteria for Security, Availability, Processing Integrity, Confidentiality, and Privacy. No descriptions of tests and results or opinions on the system descriptions are provided. CenturyLink Cloud maintains effective controls over its IT Managed Services, IaaS, and PaaS System to provide reasonable assurance that:
-*	*Security*: The system is protected against unauthorized access (both physical and logical).
-*	*Availability*: The system is available for operation and use as committed or agreed.
-
-A copy of the CenturyLink Cloud SOC 3 report can be downloaded here: **[SOC 3 Report](https://www.ctl.io/lp/resources/centurylink-cloud-soc-3-report.pdf)**
-
 **[ISO 27001](https://www.ctl.io/compliance/ISO27001/)**
-CenturyLink has received certification of the ISO/IEC 27001:2005 Information Security Management System (ISMS) Standard for data centers located in United States, Singapore, United Kingdom, Germany, and Japan. The certificate addresses global network services and managed hosting services in Asia and EMEA. As well as colocation services (including physical security and facilities management) for data centers in Asia, EMEA, and North America. ISO 27001 is an International Standard providing a model for establishing, operating, monitoring, and improving ISMS.
+CenturyLink has received certification of the ISO/IEC 27001:2013 Information Security Management System (ISMS) Standard for data centers located in United States, Singapore, United Kingdom, Germany, and Japan. The certificate addresses global network services and managed hosting services in Asia and EMEA. As well as colocation services (including physical security and facilities management) for data centers in Asia, EMEA, and North America. ISO 27001 is an International Standard providing a model for establishing, operating, monitoring, and improving ISMS.
 
 The ISO 27001 certification allows CenturyLink to demonstrate effective information security processes are defined and implemented. ISO 27001 conducts interim audits annually to support a three-year renewal cycle. The most recent renewal certification audit was completed in 2013.
 

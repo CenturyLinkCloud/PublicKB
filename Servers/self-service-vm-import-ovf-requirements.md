@@ -32,6 +32,7 @@ However, some OVFs may still require significant “prep” work, depending on t
 * The OVF must be exported from VMware; other hypervisors are not supported
 * The current Administrator / Root password must be input during the import process
 * Avoid usage of disk type 'monolithicSparse' for VMDK disks
+* Must have a valid DNS address
 
 ### Specific Requirements for Windows 2012 R2 DataCenter 64-bit / Windows 2008 R2 DataCenter 64-bit OVFs
 * The machine cannot be joined to a domain

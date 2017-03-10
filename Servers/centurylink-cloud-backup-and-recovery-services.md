@@ -1,103 +1,89 @@
 {{{
-  "title": "CenturyLink Cloud Backup and Recovery Services",
-  "date": "09-21-2015",
+  "title": "CenturyLink Cloud Backup Services",
+  "date": "3-22-2016",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
 }}}
 
-The CenturyLink Cloud Platform provides clients with various integrated and custom solutions to protect and rapidly recovery data.
+### Table of Contents
+
+* [Overview](#overview)
+* [Audience](#audience)
+* [Exclusions](#exclusions)
+* [Simple Backup Service](#simple-backup-service)
+* [Managed Backup](#managed-backup)
+* [Marketplace Provider Program Partners](#marketplace-provider-program-partners)
+* [Comparison Matrix](#comparison-matrix)
+
+### Overview
+Data is the lifeblood of any organization—and keeping that data safely backed up and accessible in the event of file corruption is crucial. On top of that, organizations have different data retention policies that govern how long certain types of information should be backed up and where it should be physically hosted.  Customers easily backup and restore data with a wide range of [CenturyLink Cloud](//www.ctl.io) and [Marketplace Provider Program Partners.](//www.ctl.io/marketplace/program/)
+
+### Audience
+* CenturyLink Customers
 
 ### Exclusions
-* Managed Backup Customers
+* Disaster Recovery and Business Continuity Service Offerings
 
-### Standard Server Backup &amp; Recovery Services
-All **Standard** Servers in the CenturyLink Cloud platform include a nightly file system backup of the Operating System's running state. These nightly backups start around 8pm (local server time) but are staggered to minimize impact on load. The backups will be retained based on choice during VM provisioning. **These backups are not application aware and as such do not provide transactional consistency. Refer to the Database and Exchange portions of this KB for options to meet this need.**
+### [Simple Backup Service](//www.ctl.io/simple-backup-service/)
+For servers running in the public cloud, Simple Backup Service offers the ultimate in reliability and convenience. Just point-and-click to create backup policies that meet your requirements, then apply them to servers in the CenturyLink Cloud.
 
-* Standard Backup: 5 Days of rolling backups, retained within the local data center
-* Premium Backup: 14 Days of rolling backups, with copies stored locally and the two most recent copies replicated to a secondary data center. Data Center pairings can be found in the [DR Matrix](../Servers/disaster-recovery-comparison-matrix.md).
+From there, Simple Backup Service does the rest for you—data is automatically backed up in secure object storage and retained according to the policy. Restores are simple too—just click on a “point-in-time” backup event, and the data will be automatically restored within minutes.
 
-### File Server Backup &amp; Recovery Services
+**Peace of Mind Reliability & Security**
+* The Simple Backup Service “just works”—backup operations are completely automated. Data is transferred from your server to secure object storage over the Internet. The backups are stored for as long as you specify.
+* Restores are simple—just select the point-in-time backup you want to restore from, click and it’s done.
+* Data in transit between the client and the backup infrastructure uses a secure TLS (transport layer security) connection. All backups are fully encrypted for storage and decrypted upon restore.
 
-CenturyLink Cloud clients can perform file server backup and recovery using various methodologies.
+**Comply with Enterprise Data Retention Policies**
+* Create and apply policies for data retention that match common corporate guidelines.
+* Customize every aspect of your data backups—including location, frequency of backup, and retention period.
+* Supports data sovereignty, with backup sites in the US, Canada, the EU and APAC.
+* Store data for as long as required—days, month, or years.
 
-#### Self-Service Volume Shadow Copy Service (VSS) File Backup
+**Flexible & Easy to Use**
+* The Simple Backup Service is integrated with the Control Portal, and API accessible.
+* Point-and-click to install the backup agent—no need to SSH or RDP to get started.
+* Pay-as-you-go billing—estimates of charges for the service are included in the Control Portal as well.
+* Keep backups efficient, by specifying only the file paths you need. Only files in those paths will be backed up. Configure folders to exclude as well.
+* Supports both virtual machines and Bare Metal cloud servers on the CenturyLink Platform.
 
-Implementing VSS on a file server provides IT administrators a simple way to restore previous versions of files in a self-service manner. VSS Shadow copies can be scheduled and are stored locally on the virtual machine. See [Configuring Windows File Level Backups VSS](../Servers/configuring-windows-file-level-backup-vss.md) for details on enabling VSS file backups.
+### [Managed Backup](//www.ctl.io/managed-services/backup/)
+For workloads requiring advanced backup capabilities, CenturyLink offers Managed Backup services featuring Symantec NetBackup. Quickly provision servers with advanced backup features with a single click. The service includes: file and folder level backups and restores, encryption at rest, 2-week retention periods and replication to a secondary site.
 
-#### Virtual Machine Backup
+Managed Backup is a superior alternative to many do-it-yourself options. Why? No significant work is required by users, no wasted spend on infrastructure, and no need to write any code or connect to APIs. In addition, there are no setup fees and no bandwidth charges for the service.
 
-As file systems are part of the daily Virtual Machine backup process no additional steps are required to leverage daily backups of file server data. These backups are point in time backups on a daily basis. Clients who are looking for self-service, more frequent file server backups or customized retention policies can leverage Object Storage.
+**Managed Backup Highlights**
+* Self-Service: Upon creation of a server, or even after a server has already been provisioned, managed backup services can be turned on and off. The backup service runs automatically from there.
+* Restore: Restores can be performed at the file and folder level. And data can be restored from any daily backup performed in the current 14 day window.
+* Encryption: Data is encrypted at rest on backup infrastructure using the Blowfish algorithm.
+* NetBackup Agent Access: Manage the details of your backups from the NetBackup agent, with restores available upon request.
+* Digital Offsite Vaulting (“DOV”): Data is backed up at a secondary facility, offering geographic diversity for enterprise systems. Using DOV, data is transferred and retained at a CenturyLink data center different than where the data backup originated (this is done via a secure, private CenturyLink network connection). Customer data is retained on disk for two weeks, with other options available upon request.
+* Supported Operating Systems:
+  * Managed Microsoft Windows Server 2008 R2
+  * Managed Microsoft Windows Server 2012 R2
+  * Managed Red Hat Enterprise Linux 5
+  * Managed Red Hat Enterprise Linux 6
+  * Managed Red Hat Enterprise Linux 7
+* [Available Locations](../General/centuryLink-cloud-feature-availability-matrix.md)
 
-#### Object Storage
+### [Marketplace Provider Program Partners](//www.ctl.io/marketplace/program)
+The CenturyLink Marketplace Provider Program is designed to provide additional value within CenturyLink’s enterprise cloud computing platform through partnerships with innovative cloud technology and service providers. By integrating their technology into CenturyLink Cloud, our technology partners can take advantage of a differentiated, digital route-to-market: presented as part of a enterprise-grade automation platform which powers one of the largest pools of IT infrastructure in the world.
 
-For clients who are interested in custom data retention policies (length, frequency) over and above the included platform features customers can implement backup services powered by Object Storage. Using 3rd party backup software customers can store data on the CenturyLink Cloud Geo-redundant [Object Storage platform](../Object Storage/using-object-storage-for-backup-as-a-service.md).
+**Marketplace Provider Program Partners Highlights**
+* Bring Your Own License (BYOL)
+* Customer implemented and Operated
+* Complete control over the backup environment
+* Leverage existing, proven technology deployed in other operating environments outside CenturyLink cloud
+* Implement your own Encryption standards
+* Advanced feature sets such as Hot backup agents for MS SQL and Hyper-V Integration on Bare Metal
+* [List of Partners](../Ecosystem Partners/General/ecosystem-partner-list.md)
 
-### Database Backup &amp; Recovery Services
+### Comparison Matrix
 
-Virtual Machine backups included in the platform do not allow for a crash consistent database backups due to the nature of their design (in flight transactions etc). CenturyLink Cloud clients can implement two methods to achieve crash consistent database backups on the platform.
-
-* Leverage integrated database backup tool kits that ship with database software such as Oracle RMAN or SQL Maintenance. These tools create backups of logs and databases to localized or remote volumes in a scheduled manner. Typically, localized database volume backups are acceptable for smaller environments. Larger database environments may benefit from implementing a storage server, accessible via CIFS or NFS, to centrally house all database backups. There are numerous 3rd party database backup products available that can also be leveraged in this fashion.
-* For Microsoft SQL environments clients can elect to implement 3rd party backup software backed by Object Storage. These tools typically allow for hot backups using VSS of SQL server transaction logs and databases to a centralized repository. Clients can control the frequency of database backups (including logs) and can achieve very aggressive recovery point objectives (RPO) and recovery time objectives (RTO) for their mission critical SQL database services. Refer to [Using Object Storage for Backup as a Service](../Object Storage/using-object-storage-for-backup-as-a-service.md).
-
-### Microsoft Exchange Backup &amp; Recovery Services
-
-To safely backup and restore Microsoft Exchange mailbox data CenturyLink Cloud recommends implementation of an Object Storage solution. Using 3rd party backup clients allows for complete recovery of message/mailbox (Exchange) data. Clients are free to determine their retention periods and frequency for Microsoft application data. Refer to [Using Object Storage for Backup as a Service](../Object Storage/using-object-storage-for-backup-as-a-service.md).
-
-*The use of Object Storage is not meant to replace application high availability features such as Exchange DAG*
-
-### Recovery Options
-
-#### Complete VM Restoration
-
-A complete VM restoration can be performed based on the retention period chosen. This type of restore is typically used to recover from operating system or other OS related failures (i.e. BSOD).
-
-#### File or Directory Restoration
-
-Specific files and/or directories can be restored upon request based on retention period selected. The CenturyLink Cloud NOC will attach the entire volume on which the data resides to the virtual machine, allowing clients to selectively retrieve/restore the files/directories required. By attaching volumes customers can be assured their data is not accessed by support personnel for security reasons.
-
-Clients who implement Object Storage for File Services can leverage the 3rd Party software GUI to restore files/directories on-demand.
-
-#### Application Restoration
-Clients who implement application backup services using Object Storage can perform very granular data recovery. The 3rd party client interface permits SQL DBAs and Exchange administrators to restore messages, mailboxes, logs, databases and various other data components on-demand.
-
-### How to Request Data Restoration
-
-To request service please submit a ticket to the CenturyLink Cloud NOC. Include the following information:
-
-  * Customer Name
-  * Server Name
-  * Type of Recovery (VM, Volume)
-  * Desired restore point
-  * Any specific recovery specification or instructions (i.e. restore location)
-
-### Frequently Asked Questions
-
-**How long will it take to restore my data?**
-
-Data restoration times are a variable component. The volume of data to be restored affects the time to restore. Clients are encouraged to request a time estimate based on the restore request from the NOC.
-
-**How far back can data be restored?**
-
-Virtual Machine Data restoration is based on the retention chosen for the server (5 or 14 Days). Data is restored from scheduled nightly backups. Clients who implement object storage services may have unique retention periods.
-
-Clients can invoke [snapshots via the Control Portal](../Servers/creating-and-managing-server-snapshots.md) for point-in-time recovery from environment changes or upgrades.
-
-**Are copies stored in the secondary regional data center secure?**
-
-Virtual Machine backups are encrypted using AES-128 or higher during transfer between CenturyLink Cloud federated regional data centers. These transfers take place over IPSEC Tunnels.
-
-**How long until a deleted VM is fully removed from the system?**
-
-The virtual machine will be removed from the system based on what type of retention period is selected. Data will be removed from the system on the 6th or 15th day depending on retention chosen.
-
-**Can a recently deleted VM be restored with the original name previously used in Control?**
-
-No, we are not able to restore the VM with its previous name in Control after it has been deleted.
-
-**Do daily backups occur regardless of the VM's operating state?  (running, stopped, paused, archived)**
-
-VMs in running, stopped or paused states receive daily backups. VMs in the archived state do not receive daily backups.
-
-
+**Product**|**Availability**|**Data Storage**|**Cost Model**|**Integration**|**Support**
+-----------|----------------|-------------------|----------------|--------------|---------------|-----------
+Simple Backup Service|<ul><li>Global</li><li>Virtual and Bare Metal Servers</li></ul>|<ul><li>Supports data sovereignty</li><li>Stored in customer selected Geo-redundant Object Storage</li><li>Built-in Encryption</li></ul>|Pay as you go (per GB)|<ul><li>Self-Service & API Accessible</li><li>File System Agent</li><li>Supports all Operating System Templates on the platform</li></ul>|CenturyLink Provided Support
+Managed Backup|<ul><li>Six Locations</li><li>**Managed** Virtual Servers</li></ul>|<ul><li>Supports data sovereignty</li><li>Digital Vaulting to specific locations</li><li>Built-in Encryption</li></ul>|Tiered pricing model based on average protected storage|<ul><li>Customer provisioned, CenturyLink Managed</li><li>File System Agent</li><li>Supports **Managed** Windows 2008/2012 R2 and RHEL 5/6/7</li></ul>|CenturyLink Provided Support
+Marketplace Provider Program Partners|<ul><li>Global</li><li>Virtual and Bare Metal Servers</li></ul>|<ul><li>Supports data sovereignty</li><li>Stored in customer selected Geo-redundant Object Storage</li><li>Customer Defined Encryption</li></ul>|Bring your own license (BYOL)|<ul><li>Customer provisioned and Operated</li><li>File System, Hypervisor & Hot Backup Agents</li><li>Supports all Operating System Templates on the platform</li></ul>|Partner Provided Software Support

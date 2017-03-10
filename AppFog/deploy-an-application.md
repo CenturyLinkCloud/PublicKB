@@ -19,7 +19,7 @@ We currently support applications using the following application runtimes in Ap
 * [Node.js](deploy-nodejs-application.md)
 * [Ruby](deploy-ruby-application.md)
 * [PHP](deploy-php-application.md)
-* Python
+* [Python](deploy-python-application.md)
 * Go
 * [Static websites](deploy-static-website.md)
 

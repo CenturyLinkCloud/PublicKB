@@ -26,18 +26,12 @@ A: From the Control Portal menu, select “Create Server.” You will then be pr
 A: There could be a few causes:
 * Be sure you are creating the server in a data center that supports the managed backup service (an updated list is [available here](//www.ctl.io/managed-services/backup/)).
 * It is possible your company has not yet executed a Master Services Agreement (MSA) with CenturyLink Technology Solutions. To obtain a MSA – or if you believe you should already have one in place – please contact a CenturyLink Sales Representative toll free at:
-    * United States: 1-855-287-2541
+    * United States: 1-888-638-6771
     * Canada: 1-877-387-3764
-    * Europe, Middle East and Africa: +44 (0) 207 400 5600
+    * Europe, Middle East and Africa: +44 (0) 118 309 4886
     * Japan: +81 3 5214 0180
     * Hong Kong: +852 3079 4461
     * Singapore: +65 6591 8824
-
-**Q: What's the difference between Managed Backup and Premium Storage?**
-
-A: Both options provide a two-week retention period and offsite backups. But Managed Backup also offers the ability for customers to work with the managed backup support team to customize retention policies and backup schedules. There are options for including – or excluding - specific files/folders from a backup policy. Premium Storage simply provides nightly VM backups, making it difficult to restore selected files or folders, while Managed Backup performs full and incremental backups on a nightly basis and can be turned on and off as needed. Managed Backup also encrypts the backup data at rest. Encryption is provided on the backup infrastructure servers after a backup has been performed; the encryption key in only avalible to our operations staff and the backup systems.
-
-Users are likely best served by choosing *either* Managed Backup *or* Premium Storage. For Hyperscale servers, Managed Backup is recommended.
 
 **Q: How much does the Managed Backup service cost? Why is the cost not included in the estimates shown in Control Portal?**
 
@@ -79,7 +73,7 @@ The CenturyLink Technology Solutions Client Service Center is also available to 
 
 **Q: What if I want my backups to be kept for longer than two weeks?**
 
-A:  At this time 2 weeks is the only retention period available.  Our [upcoming simple backup service](../Support/backup-service-changes-faq.md) will provide options for customer defined retention periods.
+A:  At this time 2 weeks is the only retention period available.  Our [Simple Backup Service](../Backup/getting-started-with-simple-backup.md) provides options for customer defined retention periods.
 
 **Q: What should I do if I need a restore?**
 
