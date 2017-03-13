@@ -34,7 +34,7 @@ This article walks you through the process of adding, removing, and expanding di
 
 **1. Safehaven Console**
 
-Adding a new disk to a protection group requires available space inside the protection group.  The space required is the total sum storage capacity of all disks to be protected. For example, if a protection group is 60GB in size, and the currently protected disks only use 40GB, then 20GB of space remains for additional protection. If your protection group does not have enough free space, you will be unable to add the disk until you expand it. See the [Protection Group Expansion KB](PublicKB/Disaster Recovery/SafeHaven-4-Expand Protection Group Size.md) for more information. 
+Adding a new disk to a protection group requires available space inside the protection group.  The space required is the total sum storage capacity of all disks to be protected. For example, if a protection group is 60GB in size, and the currently protected disks only use 40GB, then 20GB of space remains for additional protection. If your protection group does not have enough free space, you will be unable to add the disk until you expand it. See the [Protection Group Expansion KB](../SafeHaven-4-Expand Protection Group Size.md) for more information. 
 
 You can view your protected disks in the "Virtual Servers" tab of your protection group, as well as the available space.
 
