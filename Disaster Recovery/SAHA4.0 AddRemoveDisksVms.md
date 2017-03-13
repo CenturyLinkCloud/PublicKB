@@ -96,7 +96,7 @@ To remove a disk from replication, first run "DgSyncEx.exe select disk *num*" wh
 
 Adding a new VM is much like provisioning a new Protection Group. Select the protection group you'd like to add a VM to and click the "Virtual Servers" tab. Then select "Add VMs" and a familiar provisioning wizard will allow you to add a new VM like you did during onboarding. If protection group expansion is required, you will be able to provision more storage at this time. 
 
-If you'd like to automatically install the Local Replication Agent to the VM, the wizard has the option available. Alternatively, you can install it manually. See the [Local Replication Agent KB](https://link.com) for more information.
+If you'd like to automatically install the Local Replication Agent to the VM, the wizard has the option available. Alternatively, you can install it manually. See the Local Replication Agent section in the Recovery Operations Guide for more information.
 
 ### Removing a protected VM from a Protection Group
 
