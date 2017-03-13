@@ -155,6 +155,8 @@ Before you deploy in AWS, you need to connect your AWS account in Cloud Applicat
             "elasticloadbalancing:DescribeLoadBalancers",
             "elasticloadbalancing:RegisterInstancesWithLoadBalancer",
             "elasticloadbalancing:SetLoadBalancerPoliciesOfListener",
+            "elasticloadbalancing:ModifyLoadBalancerAttributes",
+            "elasticloadbalancing:ConfigureHealthCheck",
             "sts:AssumeRole",
             "iam:CreateUser",
             "iam:DeleteUser",
