@@ -63,9 +63,5 @@ integrate LBaaS into all of our Data Centers in short order!
 **A:** This is an easy one! You don’t have to do anything! However, there is a catch (there’s always a catch!). All existing Shared Load
 Balancer instances created prior to LBaaS availability will remain in tact and operation just as they are today. Unfortunately, this means that those previous instances will not be LBaaS enabled. We’re working on a feature that will allow for uninterrupted upgrade from the existing Shared Load Balancer to LBaaS. Until that feature is completed, customers can remain on SLB should they choose or create a new VIP using LBaaS and migrate their services.
 
-**Q:** As an existing Customer, how will this new service impact my
-bill/invoice?
-
-**A:** Good question! Our existing Shared Load Balancer service pricing is [still available online](//www.ctl.io/pricing). Any existing load balancer deployed prior to LBaaS availability will continue to bill at this rate. This also holds true for any data center that has not yet been LBaaS-enabled.  
 
 Any new instances of the new LBaaS service after service availability will be priced according to our [pricing catalog](//www.ctl.io/pricing).
