@@ -3,7 +3,8 @@
 "date": "02-02-2017",
 "author": "",
 "attachments": [],
-"contentIsHTML": false
+"contentIsHTML": false,
+"sticky": true
 }}}
 
 The Ecosystem Provider Portal (EPP) is an application that allows CenturyLink Cloud Provider Partners to manage the display of their products on the CenturyLink Marketplace. Once an Ecosystem Provider has certified a product, a member of the Ecosystem Team provides the partner with a welcome email and credentials to log into EPP.
