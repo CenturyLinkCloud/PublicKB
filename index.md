@@ -19,7 +19,6 @@
     "Marketplace",
     "Network",
     "Object Storage",
-    "Orchestrate",
     "Partners",
     "Release Notes",
     "Runner",
