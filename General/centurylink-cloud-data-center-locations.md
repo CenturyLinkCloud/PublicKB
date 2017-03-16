@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Data Center Locations",
-  "date": "12-9-2015",
+  "date": "3-15-2017",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -20,7 +20,7 @@ Great Britain (Portsmouth) - GB1|Peer 1 Hosting|Langstone Technology Park<br>Lan
 Great Britain (Slough) - GB3|CenturyLink|630 Ajax Avenue<br>Slough, Berkshire, SL1 4DG|[provider details](http://www.centurylinktechnology.com/data-centers/europe/london)
 Canada (Toronto - Mississauga) - CA3|CenturyLink|6800 Millcreek Drive<br>Mississauga, Ontario L5N4J9|[provider details](http://www.centurylinktechnology.com/data-centers/north-america/toronto)
 Canada (Toronto - Markam) - CA2|Peer 1 Hosting|20 Pullman Court<br>Toronto, Ontario M1X 1E4|[provider details](http://www.peer1.com/infrastructure/datacenter-toronto)
-Canada (Vancouver) - CA1|Peer 1 Hosting|555 West Hastings Street<br>Vancouver, BC V6B 4N5|[provider details](http://www.peer1.com/infrastructure/datacenter-vancouver)
+Canada (Vancouver) - CA1|CenturyLink|555 West Hastings Street<br>Vancouver, BC V6B 4N6|[provider details](http://www.centurylink.com/business/enterprise/colocation/data-centers/vancouver.html)
 Germany (Frankfurt) - DE1|Equinix|Lärchenstrasse 110<br>65933 Frankfurt- Griesheim Germany|[provider details](http://www.equinix.com/en_US/locations/germany/frankfurt-data-centers/)
 APAC (Singapore) - SG1|CenturyLink|29A International Business Park<br>Jurong East Singapore 609934|[provider details](http://www.centurylink.com/business/enterprise/colocation/data-centers/singapore.html)
 Australia - AU1|CenturyLink|4 Eden Park Dr <br>Macquarie Park NSW 2113|[provider details](http://www.centurylink.com/business/enterprise/colocation/data-centers/australia/australia.html)
