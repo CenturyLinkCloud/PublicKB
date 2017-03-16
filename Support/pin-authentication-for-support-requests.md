@@ -25,7 +25,7 @@ To access or change your PIN follow the steps below.
 ### Set Your Own PIN
 If you wish to manually set your PIN, mouse-over the PIN field and click. You can then enter a custom PIN (numeric, no alphabetic or special characters, 10 character limit).  Once completed save your new PIN.
 
-    ![set custom PIN](../images/pin-authentication-for-support-requests-03.png)
+  ![set custom PIN](../images/pin-authentication-for-support-requests-03.png)
 
 ### Notes
 When submitting a support request, if you have multiple accounts, please indicate which username corresponds to the PIN you are supplying.
