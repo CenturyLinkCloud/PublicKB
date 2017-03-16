@@ -31,7 +31,7 @@
 ### Overview
 
 There are two CLI interfaces available on CenturyLink Cloud, GO based
-CLI for API v2 [(explains here, currently version 1.1)](//github.com/CenturyLinkCloud/clc-go-cli) and [Python based CLI for API v1 and v2](//github.com/CenturyLinkCloud/clc-python-sdk)
+CLI for API v2 [(explains here, currently version 1.1)](https://github.com/CenturyLinkCloud/clc-go-cli) and [Python based CLI for API v1 and v2](//github.com/CenturyLinkCloud/clc-python-sdk)
 
 For accounts, users, [API v1](//ca.ctl.io/api-docs/v1/u5o/) provides the access to this information. For the rest of the data, [API v2](//www.ctl.io/api-docs/v2/) can be used to access this information.
 

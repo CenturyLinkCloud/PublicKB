@@ -1,6 +1,6 @@
 {{{
   "title": "Partner Cloud: Getting Started With A New Azure Customer Account",
-  "date": "12-28-16",
+  "date": "03-03-17",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -21,9 +21,9 @@ For Azure, we are currently limited to serving billable customers who are not re
 
 * Access to Cloud Application Manager.
 
-* Credentials for a [CenturyLink Cloud Account Administrator](../../Accounts & Users/user-permissions.md). If you do not have access to CenturyLink Cloud, please contact your CenturyLink representative or sign up for an account [here](https://www.ctl.io/free-trial/).
+* Credentials for a [CenturyLink Cloud Account Administrator](../../Accounts & Users/user-permissions.md) - this is only necessary so that Azure billing data can link to an usage-based CenturyLink billing account.  If you do not have access to CenturyLink Cloud, please contact your CenturyLink representative or sign up for an account [here](https://www.ctl.io/free-trial/).
 
-* A working knowledge of how to use [Cloud Application Manager providers](https://elasticbox.com/documentation/core-concepts/providers/).
+* A working knowledge of how to use [Cloud Application Manager providers](../Core Concepts/providers.md).
 
 * An understanding of the features and benefits of [Partner Cloud Integration](./partner-cloud-integration.md)
 
@@ -42,6 +42,8 @@ CenturyLink will manage Azure permissions for our customers to ensure we can sup
 ### Steps
 
 The following steps will walk through how to set up a new Cloud Application Manager provider that has been designed to create an Azure Customer account within the scope of CenturyLink's responsibility.
+
+Videos of these steps can be found [here](https://www.ctl.io/guides/).
 
 1. Log into Cloud Application Manager.
 2. Select the Providers tab

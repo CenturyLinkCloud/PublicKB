@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-###Overview
+### Overview
 
 Partner Cloud Integration allows an Cloud Application Manager user to create Azure Customer Accounts. If you want to stop usage and completely shut down that Azure Customer Account, you must do more than delete the provider in Cloud Application Manager. You will also need to tell CenturyLink to turn off the actual Azure account.
 
