@@ -84,6 +84,7 @@ Currently, CLC limits a VM to 15 disks, a total of 4TB capacity and a maximum of
 
 * [Debian Package for CMS/SRN](https://download.safehaven.ctl.io/SH-4.0.1/safehaven-4.0.1.deb): to be used in the installer
 * [GUI Package](https://download.safehaven.ctl.io/SH-4.0.1/SafeHavenConsole-4.0.1.zip): zip file containing the JRE, runs on any Windows platform
+  * [SafeHavenClient.4.0.1_win32.jar](https://download.safehaven.ctl.io/SH-4.0.1/SafeHavenClient.4.0.1_win32.jar): to replace existing SafeHavenClient.jar on already downloaded 4.0.0 GUI folder.
 * Windows Downloads:
   * [Driver Installer](https://download.safehaven.ctl.io/SH-4.0.1/safehaven_windows_driver-4.0.1.exe)
   * [MakeStub.exe](https://download.safehaven.ctl.io/SH-4.0.1/MakeStub-4.0.1.exe)
