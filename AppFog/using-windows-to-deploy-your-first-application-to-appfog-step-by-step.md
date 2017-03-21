@@ -19,11 +19,11 @@ The guide assumes that the reader has no experience with Cloud Foundry and does 
 
 #### 1. Install Java JDK
 
-Download and install the appropriate Java SE Development Kit, also known as Java JDK.  The download location is http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html.  This guide will use the Windows x64 version.
+Download and install the appropriate Java SE Development Kit, also known as Java JDK.  The download location is http://www.oracle.com/technetwork/java/javase/downloads/index.html.  This guide will use the Windows x64 version.
 
 ![Installing Java JDK](../images/Deploying-Your-First-Application-to-AppFog-Step-By-Step-01.png)
 
-Follow the standard installation steps, accepting all defaults.  This will install the Java application to C:\Program Files\Java\jre7.  After installation completes you will need to create two System variables.  These can be set by opening Control Panel – System – Advanced System Settings – Environment Variables.  You will add a new System Variable named “java_home” with the path “C:\Program Files\Java\jre7”.  Next you will modify the existing PATH variable to add the additional path, “C:\Program Files\Java\jre7” if it does not already exist.  Once complete you can open a new Command Prompt to ensure the command “Echo %java_home%” and “Echo %path% both return C:\Program Files\Java\jre7 in the response.
+Follow the standard installation steps, accepting all defaults.  This will install the Java application to C:\Program Files\Java\jre1.8.0_121.  After installation completes you will need to create two System variables.  These can be set by opening Control Panel – System – Advanced System Settings – Environment Variables.  You will add a new System Variable named “java_home” with the path “C:\Program Files\Java\jre1.8.0_121”.  Next you will modify the existing PATH variable to add the additional path, “C:\Program Files\Java\jre1.8.0_121” if it does not already exist.  Once complete you can open a new Command Prompt to ensure the command “Echo %java_home%” and “Echo %path% both return C:\Program Files\Java\jre1.8.0_121 in the response.
 
 ![Configuring Java JDK Environment Variables](../images/Deploying-Your-First-Application-to-AppFog-Step-By-Step-02.png)
 
