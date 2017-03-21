@@ -11,18 +11,25 @@
 - SafeHaven Version: 4.0.1
 - Release Date: March 20, 2017
 
-#### 1.New Features
+#### 1.New Features and Enhancements
 
-
-
-
+* Introduce using Linux VMs as recovery proxy servers for protected Windows servers
+* Add support to 64bit Windows Server 2008 R1 with the conditions
+  * Manual LRA installation only 
+  * Only support 64bit version
+  * Requires Powershell v2
+* Enhanced hard quota managing policy for Local Cache protection groups
+* New Windows tool to report on amount of IOs for a given period
+* Improved support for MANUAL site
+* Improved E-Mail Reporting and Management
+* Enhanced WAN data replication performance
 
 #### 2. Support Matrix
 
 ##### 2.1 OS
 
-* Windows: Windows2008R2, Win2012R1, Win2012R2
-* Linux: RHEL (CentOS)-5/6/7, Ubuntu-12/14/16, openSUSE-11/13
+* Windows (64bit only): Windows2008R1, Windows2008R2, Win2012R1, Win2012R2
+* Linux (32bit and 64bit): RHEL (CentOS)-5/6/7, Ubuntu-12/14/16, openSUSE-11/13
 
 
 ##### 2.2 Data Center Types
@@ -33,7 +40,7 @@
  
 ##### 2.3 Data Protection Types
 
-* Local Repica
+* Local Replica
 * Local Cache
 
 ##### 2.4 Limits of standard deployments ( SRN on 2 CPUs, 4GB RAM)
