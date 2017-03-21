@@ -23,6 +23,7 @@
 * Improved support for MANUAL site
 * Improved E-Mail Reporting and Management
 * Enhanced WAN data replication performance
+* Add support for NAT (does not work with the hairpin problem)
 
 #### 2. Support Matrix
 
