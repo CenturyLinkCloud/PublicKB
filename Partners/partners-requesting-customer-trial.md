@@ -10,8 +10,8 @@
 CenturyLink Cloud delivers some of the highest performing infrastructure in the industry (Source: Cloud Harmony Report). Our infrastructure delivers databases with higher IOPS, Websites with faster response times, storage with greater availability, as well as various other advantageous benefits for your customer.
 
 **Offering customers a free trial often leads to wins:**
-Partners can offer prsopective customers a **Free Trial of $500 or $2,500** in services backed by CenturyLink Cloud's Architecture & Support Teams. Experience the CenturyLink Cloud platform via the free trial today and receive:
-* A credit of either $500 or $2500 usage.
+Partners can offer prsopective customers a **Free Trial of $500** in services backed by CenturyLink Cloud's Architecture & Support Teams. Experience the CenturyLink Cloud platform via the free trial today and receive:
+* A credit of $500 in usage, no time limit applied.
 * Access to CenturyLink Cloud products and services.
 * High performance, fast deployment times, and intuitive management capabilities that will push your business forward.
 
@@ -28,7 +28,7 @@ The body of the email should include:
 * Partner Contact Email
 * Customer Name
 * Customer Alias (Portal Alias)
-* Trial Start Date and amount of credit requested ($500 or $2,500)
+* Trial Start Date and amount of credit requested ($500 or less)
 
 You will receive a confirmation email from CenturyLink Cloud Trial Team verifying the trial.
 
