@@ -8,7 +8,7 @@
 
 ### Overview
 
-Software Providers that are classified as Software as a Service (SaaS) generally will not be required to work with our Ecosystem Team to automate a deployment into a customer's infrastructure. However, SaaS Providers will need to implement one of the integration types below. During the Marketplace Provider Onboarding Program, we will discuss which integration type you should integrate. 
+Software Providers that are classified as Software as a Service (SaaS) generally will not be required to work with our Ecosystem Team to automate a deployment into a customer's infrastructure. However, SaaS Providers will need to implement one of the integration types below. During the Marketplace Provider Onboarding Program, we will discuss which integration type is the best fit. 
 
 ### Integration Types
 
@@ -18,9 +18,9 @@ Software Providers that are classified as Software as a Service (SaaS) generally
 
 The tracking pixel option allows CenturyLink to monitor demand & accounts created by the CenturyLink Cloud Marketplace drives to your organizations website & product.
 
-Below is a Javascript tracking pixel that may be used to integrate with the CenturyLink Cloud Marketplace. You will need the Provider Key that you were provided during onboarding with the tracking pixel. If you were not provided a Provider Key or require a new one to be issued, contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
+Below is a JavaScript tracking pixel that may be used to integrate with the CenturyLink Cloud Marketplace. You will need the Provider Key that you were provided during onboarding with the tracking pixel. If you were not provided a Provider Key or require a new one to be issued, contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
 
-**Javascript Tracking Pixel**
+**JavaScript Tracking Pixel**
 ```
 'use strict';
 const request = require('request'),
@@ -69,7 +69,7 @@ createSaasTracking(process.argv[2], process.argv[3], process.argv[4], process.ar
 
 ##### Provision Account
 
-The CenturyLink Cloud Marketplace will provide the user interface & collect the information that is required to provision an account on your platform. However, we do not collect Private Card Information (PCI) on your behave. The information we are prepared to collect include:
+The CenturyLink Cloud Marketplace will provide the user interface & collect the information that is required to provision an account on your platform. However, we do not collect Private Card Information (PCI) on your behalf. The information we are prepared to collect include:
 
 * Username
 * Password
@@ -82,11 +82,11 @@ The CenturyLink Cloud Marketplace will provide the user interface & collect the 
 * State or Province
 * Zip or Postal Code
 * Phone Number
-* **Resller Key**
+* **Reseller Key**
 
-Only the **bold** fields are required from a CenturyLink perspective. However, you will be able to specify which data points are displayed to your persepective buyer, as well as which are required form them to complete.
+Only the **bold** fields are required from a CenturyLink perspective. However, you will be able to specify which data points are displayed to your perspective buyer, as well as which are required for them to complete.
 
-We understand that there will be need to variability with the API name among our providers but would prefer the following scheme when possible: ```/provider-name-provision-account/```. 
+We understand that there will be a need for variability with the API names among our providers but would prefer the following scheme when possible: ```/provider-name-provision-account/```. 
 
 The parameters will be passed via a json payload. The exact json message will vary between providers. We've provided an example below.
 
@@ -106,14 +106,14 @@ The status codes your API will need to return are:
 
 ##### Update Subscription
 
-*The full endpoint for the* ```/update-subscription/``` *is not published in this article for security reasons. Your organization will be provided documentation for the endpointduring onboarding*
+*The full endpoint for the* ```/update-subscription/``` *is not published in this article for security reasons. Your organization will be provided documentation for the endpoint during onboarding*
 
 The elements passed to the ```/update-subscription/``` API include (**bold** items are required):
 
 * **coid** - The ID assigned to the customer from your organization.
 * **expired** - True or False. The element should be set to 'true' if the customer has terminated services with your organization. Set the element to 'false' if the services are ongoing.
 * expired-date - If **expired** is set to true, this element must be populated with the date the consumer terminated services.
-* **sku** - The SKU ID for the product in the CenturyLink Clould Marketplace. This will be provided to you by CenturyLink.
+* **sku** - The SKU ID for the product in the CenturyLink Cloud Marketplace. This will be provided to you by CenturyLink.
 * count - If the subscription is based on a usage model & or the cost is based off of an incremental value, pass the aggregated usage value in this element.
 * **providerkey** - The value of this element will be provided to you by CenturyLink.
 
@@ -138,4 +138,4 @@ An example json payload the ```/update-subscription/``` API is provided below.
   * **expired** set to 'true' & **expired-date** not provided
 * 50x - Server Side Error
 
-Depending on how your product is billed, you may be required to call ```/update-subscription/``` multiple times per customer subscription so we can ensure the customer is appropriately billled for your services. For any questions, please contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
+Depending on how your product is billed, you may be required to call ```/update-subscription/``` multiple times per customer subscription so we can ensure the customer is appropriately billed for your services. For any questions, please contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
