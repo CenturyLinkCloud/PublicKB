@@ -18,11 +18,29 @@ This article is to support customers of Runner, a product that enables teams, de
 
 The Service Account alias is a secure store of a users credentials. These credentials are associated with a Job and a Schedule. When the schedule fires these credentials will be used to authenticate to CenturyLink Cloud to retrieve the necessary tokens to execute the job. The credentials are stored in a secure format separate from the job definition and other account identifying elements.
 
+ - [Create Service Account Via Runner UI](#CreateServiceAccountUI)
+ - [Create Service Account Via Runner API](#CreateServiceAccount)
+ - [Get Service Account Via Runner API](#GetServiceAccount)
+ - [Update Service Account Via Runner API](#UpdateServiceAccount)
 
- - [Create Service Account](#CreateServiceAccount)
- - [Get Service Account](#GetServiceAccount)
- - [Update Service Account](#UpdateServiceAccount)
 
+#### CREATE SERVICE ACCOUNT VIA RUNNER UI <a id="CreateServiceAccountUI">
+
+To create a Service Account through the Runner UI, first click the Help & Settings drop-down and select Settings.
+
+![](../images/runner/runner-serviceaccount-1.jpg)
+
+On the left side, select Service Accounts and this will bring up a view showing you
+all of your existing Service Accounts. Click on the add button and a form will appear
+where you can enter the required information.
+
+![](../images/runner/runner-serviceaccount-2.jpg)
+
+* (1): Enter the Service Account Alias, this can be anything you want but it should be descriptive.
+* (2): Enter the CenturyLink Cloud User Name that you want associated with this Service Account.
+* (3): Enter the password that corresponds with the User Name you entered above.
+
+Click the Save button and your service account will be created.
 
 #### CREATE SERVICE ACCOUNT <a id="CreateServiceAccount"></a>
 
