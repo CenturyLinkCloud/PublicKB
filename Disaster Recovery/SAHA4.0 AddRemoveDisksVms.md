@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-This article walks you through the process of adding, removing, and expanding disks or VMs within your SafeHaven protection groups. Steps are provided for both the protected guest and the safehaven console.
+This article walks through the process of adding, removing, and expanding disks or VMs within your SafeHaven protection groups. Steps are provided for both the protected guest and the SafeHaven console.
 
 ### Contents
 
@@ -27,7 +27,7 @@ This article walks you through the process of adding, removing, and expanding di
 ----
 **Requirements**
 
-1. Safehaven Console
+1. SafeHaven Console
 2. Administrator access to protected guest
 
 ### Adding a new disk to a protected VM
@@ -48,7 +48,7 @@ Login to the production server and go to Disk Management. You should see a new s
 
 ![Disk Management](../images/SH4.0/disk_management.png)
 
-Open the "Safehaven 4.0 DRaaS Windows Replication Agent/tools" folder with an admin command line shell and run "DgSyncEx.exe list". Note that new disks show up. You may need to run "DgSyncEx.exe rescan" if the disks have not yet refreshed.
+Open the "SafeHaven 4.0 DRaaS Windows Replication Agent/tools" folder with an admin command line shell and run "DgSyncEx.exe list". Note that new disks show up. You may need to run "DgSyncEx.exe rescan" if the disks have not yet refreshed.
 
 ![DgSyncEx](../images/SH4.0/dgsyncex_list.png)
 
@@ -58,7 +58,7 @@ Enter the following commands in image 3 to manually start replication from the u
 
 ### Expanding a protected disk
 
-**1. Safehaven Console**
+**1. SafeHaven Console**
 
 Expanding a disk in a protection group requires available space inside the protection group.  The space required is the total sum storage capacity of all disks to be protected. For example, if a protection group is 60GB in size, and the currently protected disks only use 40GB, then 20GB of space remains for additional expansion. If your protection group does not have enough free space, you will be unable to expand the disk until you expand the protection group. See the [Protection Group Expansion KB](SafeHaven-4-Expand Protection Group Size.md) for more information. 
 
@@ -70,7 +70,7 @@ Login to the production server and go to Disk Management. You should see the dis
 
 ![Disk Management](../images/SH4.0/disk_management.png)
 
-Open the "Safehaven 4.0 DRaaS Windows Replication Agent/tools" folder with an admin command line shell and run "DgSyncEx.exe list". Note that new sizes show up. If you have already resized your source disk, the prompt may warn you that the size has changed. You may need to run "DgSyncEx.exe rescan" if the disks have not yet refreshed.
+Open the "SafeHaven 4.0 DRaaS Windows Replication Agent/tools" folder with an admin command line shell and run "DgSyncEx.exe list". Note that new sizes show up. If you have already resized your source disk, the prompt may warn you that the size has changed. You may need to run "DgSyncEx.exe rescan" if the disks have not yet refreshed.
 
 ![DgSyncEx](../images/SH4.0/dgsyncex_list.png)
 
@@ -78,7 +78,7 @@ Once the sizes between the two disks match, replication should automatically res
 
 ### Removing a disk from a protected VM
 
-**1. Safehaven Console**
+**1. SafeHaven Console**
 
 Open the "Virtual Servers" tab for your protection group. Select the VM and the disk that you wish to remove and click "Delete".
 
@@ -86,13 +86,13 @@ At this time it is not possible to reduce the size of a protection group.
 
 **2. Protected Guest**
 
-Open the "Safehaven 4.0 DRaaS Windows Replication Agent/tools" folder with an admin command line shell and run "DgSyncEx.exe list". The prompt may warn you that a disk is missing. You may need to run "DgSyncEx.exe rescan" if the disks have not yet refreshed.
+Open the "SafeHaven 4.0 DRaaS Windows Replication Agent/tools" folder with an admin command line shell and run "DgSyncEx.exe list". The prompt may warn you that a disk is missing. You may need to run "DgSyncEx.exe rescan" if the disks have not yet refreshed.
 
 To remove a disk from replication, first run "DgSyncEx.exe select disk *num*" where *num* is the disk you wish to remove from replication.  Then run "DgSyncEx.exe unmap".  You can run "DgSyncEx.exe list" to see your changes.
 
 ### Adding a new protected VM to a Protection Group
 
-**1. Safehaven Console**
+**1. SafeHaven Console**
 
 Adding a new VM is much like provisioning a new Protection Group. Select the protection group you'd like to add a VM to and click the "Virtual Servers" tab. Then select "Add VMs" and a familiar provisioning wizard will allow you to add a new VM like you did during onboarding. If protection group expansion is required, you will be able to provision more storage at this time. 
 
@@ -100,7 +100,7 @@ If you'd like to automatically install the Local Replication Agent to the VM, th
 
 ### Removing a protected VM from a Protection Group
 
-**1. Safehaven Console**
+**1. SafeHaven Console**
 
 Removing a VM is much like removing a disk. Select the protection group and then the "Virtual Servers" tab. You can select the VM you wish to unprotect and click "Remove VM from PG" to delete it. **Note:** Your production VM will not be modified.
 
@@ -108,7 +108,7 @@ At this time it is not possible to reduce the size of a protection group.
 
 **2. Protected Guest**
 
-Log into the protected guest and uninstall the Safehaven Local Replication Agent via the "Uninstall" program in the Safehaven folder. This will uninstall the agent, remove all replication, as well as remove the folder, restoring your VM to an unprotected state.
+Log into the protected guest and uninstall the SafeHaven Local Replication Agent via the "Uninstall" program in the SafeHaven folder. This will uninstall the agent, remove all replication, as well as remove the folder, restoring your VM to an unprotected state.
 
 ### Linux LVM
 ___
@@ -136,7 +136,7 @@ sdb                     8:16   0    2G  0 disk
 sr0                    11:0    1 1024M  0 rom  
 ```
 
-In this instance, "sdb" is our ISCSI disk provided by Safehaven. You can see that at the moment the sizes match. After we add a disk to our guest eg. "sdc" and add it to the root logical volume, it might look something like this. If you're not familiar with doing this, the steps are detailed in the next section.
+In this instance, "sdb" is our ISCSI disk provided by SafeHaven. You can see that at the moment the sizes match. After we add a disk to our guest eg. "sdc" and add it to the root logical volume, it might look something like this. If you're not familiar with doing this, the steps are detailed in the next section.
 
 ```
 [root@localhost ~]# lsblk
@@ -157,7 +157,7 @@ sdc                     8:32   0    1G  0 disk
 sr0                    11:0    1 1024M  0 rom  
 ```
 
-We should now add a corresponding disk for Safehaven through the "Virtual Servers" tab of the Safehaven Console. As with the previous example, it may be necessary to rescan the scsi bus and add the new disk to the logical volume using the standard commands. e.g.:
+We should now add a corresponding disk for SafeHaven through the "Virtual Servers" tab of the Safehaven Console. As with the previous example, it may be necessary to rescan the scsi bus and add the new disk to the logical volume using the standard commands. e.g.:
 
 ```
 echo 1 > /sys/class/scsi_device/3\:0\:0\:0/device/rescan
@@ -206,7 +206,7 @@ You may also wish to run rsync again. You can find the schedule using "crontab -
   
 ### Adding a new VM to your protection group
 
-**1. Safehaven Console**
+**1. SafeHaven Console**
 
 Adding a new VM is much like provisioning a new Protection Group. Select the protection group you'd like to add a VM to and click the "Virtual Servers" tab. Then select "Add VMs" and a familiar provisioning wizard will allow you to add a new VM like you did during onboarding.  If protection group expansion is required, you will be able to provision more storage at this time. 
 
@@ -221,7 +221,7 @@ cd safehaven_linux_onboarding_scripts
 
 ### Removing a VM from your protection group
 
-**1. Safehaven Console**
+**1. SafeHaven Console**
 
 Removing a VM is much like removing a disk. Select the protection group and then the "Virtual Servers" tab. You can select the VM you wish to unprotect and click "Remove VM from PG" to delete it. **Note:** Your production VM will not be modified.
 

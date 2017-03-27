@@ -23,7 +23,7 @@ In the sample below in CA3 we have a network created and named NLB_10.100.97.0/2
 [Create a formal request to the Service Task team.](../Service Tasks/requesting-service-tasks-on-centurylink-cloud.md)
 In order to properly process your request to deploy Citrix VPX device(s) customers will need to supply the Service Task team with the following information.
 
-* The Account alias of the Account you wish to deploy the VPX(s) into. The alias is found on the Account, Info page
+* The [Account alias](../Support/determine-control-portal-alias.md) of the Account you wish to deploy the VPX(s) into.
 * The Data Center in which you wish the VPX(s) to be deployed
 * The Network into which the VPX(s) should be deployed. In this example above NLB_10.100.97.0/24 was leveraged.
 * The Server Group you'd like the VPX(s) deployed into

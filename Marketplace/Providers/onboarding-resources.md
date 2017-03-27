@@ -3,7 +3,8 @@
 "date": "02-10-2017",
 "author": "Rich DuBose",
 "attachments": [],
-"contentIsHTML": false
+"contentIsHTML": false,
+"sticky": true
 }}}
 
 The CenturyLink Cloud Marketplace allows customers to purchase software from an extensive list of Software Providers that partner with CenturyLink. During the CenturyLink Marketplace Onboarding Program, there are a variety of tasks that not only need to be completed by the CenturyLink Marketplace team, but the provider as well. The Onboarding Program is meant to streamline the process of getting partner products into the Marketplace. This Knowledge Base Article provides critical information necessary for becoming a Marketplace Provider.
