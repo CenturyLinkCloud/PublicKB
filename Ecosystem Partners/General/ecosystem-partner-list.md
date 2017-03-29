@@ -58,7 +58,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Vormetric](../Marketplace Guides/getting-started-with-vormetric-dsm.md)   	| Template    | Data encryption and key management    |
 | [Vormetric](../Marketplace Guides/getting-started-with-vormetric-encryption-agent-deployment-blueprints.md)   	| Blueprint    | Data encryption and key management    |
 | [Waratek AppSecurity](../Marketplace Guides/getting-started-with-waratek-appsecurity.md)   	| Blueprint    | Secure Java Runtime    |
-| [Zetera CoIP](../Marketplace Guides/getting-started-with-zentera-coip-agent.md)   	| Blueprint    | Secure hybrid network fabric    |
+| [Zetera CoIP](../../Marketplace/Getting Started Guides/getting-started-with-zentera-coip.md)   	| Runner   | Secure hybrid network fabric    |
 
 
 ### Management and Monitoring
