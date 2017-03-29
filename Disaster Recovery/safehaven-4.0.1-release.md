@@ -13,9 +13,9 @@
 
 #### 1.New Features and Enhancements
 
-* Introduce using Linux VMs as recovery proxy servers for protected Windows servers
-* Add support to 64bit Windows Server 2008 R1 with the conditions
-  * Manual LRA installation only 
+* Introduced Linux VMs as recovery proxy servers for protected Windows servers
+* Added support to 64bit Windows Server 2008 R1 with the conditions
+  * Manual LRA installation only
   * Only support 64bit version
   * Requires Powershell v2
 * Enhanced hard quota managing policy for Local Cache protection groups
@@ -23,7 +23,7 @@
 * Improved support for MANUAL site
 * Improved E-Mail Reporting and Management
 * Enhanced WAN data replication performance
-* Add support for NAT (does not work with the hairpin problem)
+* Added support for NAT (does not work with the hairpin problem)
 
 #### 2. Support Matrix
 
@@ -37,8 +37,8 @@
 
 * VMware vSphere
 * CLC
-* MANUAL 
- 
+* MANUAL
+
 ##### 2.3 Data Protection Types
 
 * Local Replica
@@ -65,27 +65,27 @@
 |VMs per PG|5|
 |Minimum number of CPU per protected Windows VM|2|single core might work but might have problems in some cases|
 
-Currently, CLC limits a VM to 15 disks, a total of 4TB capacity and a maximum of 1TB per disk capacity. 
+Currently, CLC limits a VM to 15 disks, a total of 4TB capacity and a maximum of 1TB per disk capacity.
   * With special requests to the customer request team, they can typically accommodate up to 12TB per VM with maximum individual disk capacity limited to 4TB.
   * The CLC default limits might change in the near future.
 
- 
+
 ##### 2.6 Known Limitations
 
-* We do not support Windows VMs using E1000E NIC
-* Linux VM onboarding: we do not support the protected guest running on a different subnet from the SRN iSCSI IP. 
+* We do not support Windows VMs using E1000E NIC.
+* Linux VM onboarding: we do not support the protected guest running on a different subnet from the SRN iSCSI IP.
 
 
 ##### 2.7 Password Limitations
 
- 
-* CMS root password: no constrains
-* SRN root password: ```'``` (single quote) and ```^``` are legitimate Linux characters but not supported by SH-4.0. GUI will warn about it. 
-* SafeHaven user password: no constrains
+
+* CMS root password: no constraints
+* SRN root password: ```'``` (single quote) and ```^``` are legitimate Linux characters but not supported by SH-4.0. GUI will warn about it.
+* SafeHaven user password: no constraints
 * Windows Ansible password: not supporting ```"``` (double quote)
 * Email SSMTP password (#227): not supporting  ```# : =``` and ``` ``` (space)
-* vSphere password (#420):  password cannot have space at the beginning or the end.
-* CLC password: no constrains
+* vSphere password (#420):  password cannot have space at the beginning or the end
+* CLC password: no constraints
 
 
 ### Download Links
