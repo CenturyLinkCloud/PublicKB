@@ -22,15 +22,15 @@ To create a new one, click **New**. Select a box type to match your automation:
 * [Script](../Automating Deployments/script-box.md) - To automate using Bash, PowerShell, Salt, Ansible, Puppet, or Chef.
 * [Deployment Policy](../Automating Deployments/deploymentpolicy-box.md) - To select and share infrastructure resources, networking, and more from a cloud provider.
 * [Application](../Automating Deployments/application-box.md) - To configure several boxes to deploy an application with a single click.
-* [CloudFormation](../Automating Deployments/cloudformation-box.md) - To automate using AWS CloudFormation templates.
+* [Template](../Automating Deployments/template-box.md) - To automate using AWS CloudFormation templates or ARM templates.
 * [Container](../Automating Deployments/docker-container-service.md) - To automate using container technology like Docker.
 
 Give it a name, optionally a description, and define some basic metadata:
 
 | Metadata | Box Type | What it Means |
 |--------------|--------------|---------------------|
-| Requirements | Script,<br> CloudFormation,<br> Container | It’s good practice to tag the runtime that the box requires to deploy. Cloud Application Manager auto suggests tags like Linux, Ubuntu, Java and so on. When ready to launch the box, you are presented with deployment policies that match the requirements. These deployment policies provide the right infrastructure or services the box needs to deploy.<br>**Note:** In CloudFormation boxes, the tags help look instances for bindings. |
-| Automatic<br>Updates | Script,<br>CloudFormation,<br>Container | Select the level of updates to automatically apply to instances you launch of a box version:<br>+ **Off** - It’s turned off by default.<br>+ **All Updates** - Applies all changes.<br>+ **Minor & Patch Updates** - Applies minor and patch changes to the version deployed.<br>+ **Patch Updates** - Applies only the patch changes to the version deployed. |
+| Requirements | Script,<br> Template,<br> Container | It’s good practice to tag the runtime that the box requires to deploy. Cloud Application Manager auto suggests tags like Linux, Ubuntu, Java and so on. When ready to launch the box, you are presented with deployment policies that match the requirements. These deployment policies provide the right infrastructure or services the box needs to deploy.<br>**Note:** In CloudFormation boxes, the tags help look instances for bindings. |
+| Automatic<br>Updates | Script,<br>Template,<br>Container | Select the level of updates to automatically apply to instances you launch of a box version:<br>+ **Off** - It’s turned off by default.<br>+ **All Updates** - Applies all changes.<br>+ **Minor & Patch Updates** - Applies minor and patch changes to the version deployed.<br>+ **Patch Updates** - Applies only the patch changes to the version deployed. |
 | Provider | Deployment<br>Policy | Select the cloud provider registered in Cloud Application Manager for which you will carve out infrastructrure resources in the policy. |
 | Claims | Deployment<br>Policy | Tag the services and infrastructure that a policy provides like Linux, Ubuntu 12.04, load balancing, and so on for deployments. Add claims so that boxes with matching requirements can successfully deploy using the right policy. |
 
@@ -41,7 +41,7 @@ Once you create a box, you can configure and manage it in these sections.
 
 | Section | Description |
 |------------|----------------|
-| Configuration | Automate how a piece of software deploys in the virtual environment by by parameterizing with [variables](../Automating Deployments/parameterizing-boxes-with-variables.md) and [events](../Automating Deployments/start-stop-and-upgrade-boxes.md). |
+| Configuration | Automate how a piece of software deploys in the virtual environment by parameterizing with [variables](../Automating Deployments/parameterizing-boxes-with-variables.md) and [events](../Automating Deployments/start-stop-and-upgrade-boxes.md). |
 | Versions | Keep track deployment configuration changes with the help of versioning. Versions let you consume different configurations of the same box in multiple deployments. From this tab, you can create a new version, see a diff of what changed, or restore a version as the box draft. |
 | Share | Invite team members to [collaborate](./workspaces-and-collaboration.md) and improve the configuration or just let them deploy the box. |
 | Deploy | [Launch a new instance](../Deploying Anywhere/deploying-managing-instances.md) of the box draft with this option. This lets you select a specific deployment policy to launch on a cloud provider. |

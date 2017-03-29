@@ -85,7 +85,7 @@ As soon as we add the variables, Cloud Application Manager automatically generat
 
 Text, number, or options type variables are handled at deploy time as [Docker environment variables](https://docs.docker.com/engine/reference/builder/). Use this syntax to refer to them in Dockerfiles: `\{{variable_name}}`
 
-A file variable is handy to run additional commands using RUN or trigger an executable file using CMD. But first you must copy it from the Cloud Application Manager remote URL to the container’s filesystem at the path you specify using [ADD](https://docs.docker.com/engine/reference/builder/) in the Dockerfile: ADD `\{{file_variable_name}}` destination_path_in_container
+A file variable is handy to run additional commands using RUN or trigger an executable file using CMD. But first you must copy it from the Cloud Application Manager remote URL to the container’s filesystem at the path you specify using [ADD](https://docs.docker.com/engine/reference/builder/) in the Dockerfile: ADD `\{{file_variable_name}}` destination_path_in_container.
 
 [Bindings](./parameterizing-boxes-with-variables.md) pass connections strings or deployment values to connect with other Docker containers or boxes. To bind to another Docker container or box, create a binding and pass binding references via text expression variables with this syntax: `\{{ binding_name.variable_name }}`
 

@@ -1,40 +1,18 @@
-{{{ 
-"title": "Cloud Platform - Release Notes: February 28, 2017", 
-"date": "2-28-2017", 
-"author": "Rob Lesieur", 
-"attachments": [], 
-"contentIsHTML": false 
+{{{
+"title": "Cloud Platform - Release Notes: February 28, 2017",
+"date": "2-28-2017",
+"author": "Rob Lesieur",
+"attachments": [],
+"contentIsHTML": false
 }}}
 
-###Ecosystem - Partner Integrations (20)###
+### The CenturyLink Marketplace:
 
-####Product Tiles Recently Published:####
+The [CenturyLink Marketplace](https://www.ctl.io/marketplace/) provides self-service, on-demand provisioning of partner services on the CenturyLink Platform. Check the [Marketplace updates](../../Marketplace/Marketplace Updates/Marketplace Updates February 2017.md) for for a growing list of current products available in the Marketplace.  If you would like to join the CenturyLink Cloud Marketplace Provider Program, you can learn more [here](/marketplace-program/). 
 
-##### Commercial Products #####
-* Zentera CoIP Agent
+### Enhancements (2)
 
-##### Open Source Products #####
-* Bitnami Gitlab
-* Bitnami Wordpress
-* Bitnami Elasticsearch
-* Bitnami ERPNext 
-* Bitnami Jasper
-* Bitnami Redmine
-* Bitnami SugarCRM
-* Bitnami SuiteCRM
-* Bitnami Tomcat
-* Couchbase NoSQL Database Community Edition
-* Docker Engine
-* Docker Universal Control Plane
-* Etcd Key-Value store
-* Hashicorp Consul
-* Hashicorp Vault 
-* GrayLog Log Management
-* Kubernetes Product-grade Container Orchestration
-* LAMP Stack (Linux, Apache, MySQL, PHP/Python/Perl)
-* MongoDB Cluster for High Availability
+[CenturyLink Cloud Status](https://status.ctl.io/) Updates:
 
-###Enhancements (2)###
-
-* Added Help Icon and Corresponding Documentation for Status Webhooks in your Notification Preferences.
-* Added a button to test webhook integration
+* Added help icon and corresponding documentation for status webhooks in notification preferences.
+* Added a button to test webhook integration.
