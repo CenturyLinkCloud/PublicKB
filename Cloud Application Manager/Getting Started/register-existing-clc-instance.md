@@ -16,11 +16,11 @@ This tutorial will show you how to import an existing VM instance that was auto-
 
 Within the Cloud Application Manager workspace, navigate to your CenturyLink Cloud provider and run the sync function by clicking **Sync**.
 
-![Run Sync](../images/cloud-application-manager/cam-register-existing-clc-instance-1.png)
+![Run Sync](../../images/cloud-application-manager/cam-register-existing-clc-instance-1.png)
 
 The sync process will discover unregistered CenturyLink Cloud instances and list them under the **Unregistered Instances** tab.
 
-![Locate Unregistered Instances](../images/cloud-application-manager/cam-register-existing-clc-instance-2.png)
+![Locate Unregistered Instances](../../images/cloud-application-manager/cam-register-existing-clc-instance-2.png)
 
 ### Register the Instance
 
@@ -28,7 +28,7 @@ Under the Unregistered Instances tab, click the instance you want to import and 
 
 Provide any details for the instance in the fields provided.
 
-![Register Instance](../images/cloud-application-manager/cam-register-existing-clc-instance-3.png)
+![Register Instance](../../images/cloud-application-manager/cam-register-existing-clc-instance-3.png)
 
 Click **Register** to register the instance.
 

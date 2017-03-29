@@ -16,11 +16,11 @@ This tutorial will show you how to import an existing Windows instance that was 
 
 Within the Cloud Application Manager workspace, navigate to your AWS provider and run the sync function by clicking **Sync**.
 
-![Run Sync](../images/cloud-application-manager/cam-register-existing-aws-windows-instance-1.png)
+![Run Sync](../../images/cloud-application-manager/cam-register-existing-aws-windows-instance-1.png)
 
 The sync process will discover unregistered AWS instances and list them under the **Unregistered Instances** tab.
 
-![Locate Unregistered Instances](../images/cloud-application-manager/cam-register-existing-aws-windows-instance-2.png)
+![Locate Unregistered Instances](../../images/cloud-application-manager/cam-register-existing-aws-windows-instance-2.png)
 
 ### Register the Instance
 
@@ -28,7 +28,7 @@ Under the Unregistered Instances tab, click the instance you want to import and 
 
 Provide any details for the instance in the fields provided.
 
-![Register Instance](../images/cloud-application-manager/cam-register-existing-aws-windows-instance-3.png)
+![Register Instance](../../images/cloud-application-manager/cam-register-existing-aws-windows-instance-3.png)
 
 Click **Register** to register the instance.
 
@@ -38,13 +38,13 @@ Cloud Application Manager returns an error message because the agent installatio
 
 Copy the agent installation script provided in the **Activity** tab in the log details.
 
-![Copy agent installation script](../images/cloud-application-manager/cam-register-existing-aws-windows-instance-4.png)
+![Copy agent installation script](../../images/cloud-application-manager/cam-register-existing-aws-windows-instance-4.png)
 
 Log-in to the instance residing in your AWS provider.
 
 Execute the agent installation script.
 
-![Execute agent installation script](../images/cloud-application-manager/cam-register-existing-aws-windows-instance-5.png)
+![Execute agent installation script](../../images/cloud-application-manager/cam-register-existing-aws-windows-instance-5.png)
 
 Once the script is executed, the instance will be available in Cloud Application Manager.
 
