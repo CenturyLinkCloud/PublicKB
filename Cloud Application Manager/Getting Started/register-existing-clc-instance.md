@@ -12,7 +12,7 @@
 
 This tutorial will show you how to import an existing VM instance that was auto-discovered in your CenturyLink Cloud provider using [Cloud Application Manager](https://www.ctl.io/cloud-application-manager).
 
-### Find an AWS Windows Instance
+### Find a CenturyLink Cloud Windows Instance
 
 Within the Cloud Application Manager workspace, navigate to your CenturyLink Cloud provider and run the sync function by clicking **Sync**.
 
