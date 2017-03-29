@@ -1,6 +1,6 @@
 {{{
   "title": "SafeHaven 4: Use Linux as Recovery Proxy for Windows",
-  "date": "24-10-2016",
+  "date": "10-24-2016",
   "author": "Shi Jin",
   "attachments": [],
   "contentIsHTML": false

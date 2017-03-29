@@ -11,12 +11,12 @@ CenturyLink will be deactivating the [SMTP Relay Service](https://www.ctl.io/kno
 
 ### Deactivation Date
 
-This change is currently scheduled to occur on December 1st, 2016. If there are changes to this date, we will update this document.
+The SMTP Relay Service is being End of Serviced (EOS) on December 1, 2016 with an End of Life (EOL) on January 15, 2017. Please refer to our SMTP Retirement FAQ for more information.
 
 
 ### What exactly is Changing?
 
-* We will be de-activating the SMTP Relay service on December 1st 2016. At this time, our email service will be offline.
+* We will be de-activating the SMTP Relay service on January 15, 2017. At this time, our email service will be offline.
 * We recommend that existing SMTP Relay customers that are actively using this service migrate off of this service before the deactivation date.
 * We have provided a few recommendations for external SMTP Relay services in this document.
 
@@ -55,7 +55,7 @@ There are many great external SMTP Relay services available that provide you a w
 For those of you who want to 'Do It YourSelf' you can configure your servers to send emails themselves, versus using a service. This requires your normal system administration like functions and isn't recommended unless sending emails is one of your core business requirements. There are plenty of guides on the Internet on how to do this. For example:
 
 * [CL Blueprint & Halon Software](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-halon-partner-template/) - Use a CL Cloud Blueprint to install the Halon SMTP Software for sending emails.
-* [Windows & IIS](http://bit.ly/1MILrwv) - Setup windows SMTP server to send emails.
+* [Windows & IIS](https://support.office.com/en-us/article/How-to-configure-IIS-for-relay-with-Office-365-eb57abd2-3859-4e79-b721-2ed1f0f579c9?ui=en-US&rs=en-US&ad=US) - Setup windows SMTP server to send emails.
 * [Linux & PostFix](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-ubuntu-14-04) - Setup the Postfix SMTP email server on linux to send emails.
 
 
