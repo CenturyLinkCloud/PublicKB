@@ -1,6 +1,6 @@
 {{{
   "title": "Simple Backup How It Works",
-  "date": "05-02-2016",
+  "date": "1-24-2017",
   "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
@@ -20,14 +20,15 @@ Define and apply a policy to the server. A backup agent is then installed on the
 
 SBS utilizes S3 protocol to leverage a combination of [CLC Object Storage](https://www.ctl.io/object-storage/) and AWS Objects Storage. Backups are securely transferred into Object Storage and reside in storage for the duration of the retention period. Restores are initiated by the customer, at which point the files are brought back to the server for customer use. Partnering with 3rd party cloud providers such as AWS allows additional flexibility for our customers to choose their desired Object Storage region. For a list of storage regions and the associated provider, please see the chart below.
 
-| Backup Region | Storage Target | Endpoint |
-| --- | --- | --- |
-| APAC (Singapore) | AWS Object Storage (Singapore) - APS1 | `s3-ap-southeast-1.amazonaws.com` |
-| EU (Germany) | AWS Object Storage (Frankfurt) - EUC1 | `s3.eu-central-1.amazonaws.com` or `s3-eu-central-1.amazonaws.com`
-| EU (Ireland) | AWS Object Storage (Ireland) - EU | `s3-eu-west-1.amazonaws.com` |
-| US East | AWS Object Storage (Northern Virginia) - USE1 | `s3.amazonaws.com` or `s3-external-1.amazonaws.com` |
-| US West | AWS Object Storage (Oregon) - USW2 | `s3-us-west-2.amazonaws.com` |
-| Canada | CLC Object Storage (Canada) - CA3 | `canada.os.ctl.io` |
+Backup Region|Storage Target|Endpoint
+-------------|--------------|---------
+APAC (Singapore)|AWS Object Storage (Singapore) - APS1|s3-ap-southeast-1.amazonaws.com
+APAC (Sydney)|AWS Object Storage (Sydney) - APS2|s3-ap-southeast-2.amazonaws.com
+EU (Germany)|AWS Object Storage (Frankfurt) - EUC1|s3.eu-central-1.amazonaws.com<br>s3-eu-central-1.amazonaws.com
+EU (Ireland)|AWS Object Storage (Ireland) - EU|s3-eu-west-1.amazonaws.com
+US East|AWS Object Storage (Northern Virginia) - USE1|s3.amazonaws.com<br>s3-external-1.amazonaws.com
+US West|AWS Object Storage (Oregon) - USW2|s3-us-west-2.amazonaws.com
+Canada|CenturyLink Object Storage (Canada)|canada.os.ctl.io
 
 ### Backup Policies
 Backup Policies are user-defined configurations that you specify through the [Control Portal](https://control.ctl.io/). Servers are added to policies and start backing up based on the policy details. There is no limit on the number of servers you can add to a policy. Likewise, a server can be added to multiple policies. Backup Policy details include:
@@ -50,7 +51,7 @@ Upon installation the agent initially conducts a full backup as indicated by the
 * *Unchanged files* – No additional files are added to storage. The original files do not expire based on the retention until the file on the server is changed and a new version is backed up, or the file is deleted from the server.
 
 ### Full vs. Incremental Backups
-As mentioned above, all data is transferred to Objected Storage when the backup agent gets installed on the server. Incremental backups occur according to the frequency defined in the backup policy and cover the added, changed, or deleted files and folders specifically. This model has the same level of customer data protection as a constant full backup. It offers the benefits of reduced backup speed, minimized data transfer cost, and minimized storage cost. The bottom line is a fast, reliable, and affordable backup solution. In addition, there are also tactics you can use to help [reduce restore costs](https://www.ctl.io/knowledge-base/backup/minimizing-restore-costs/) as well.
+As mentioned above, all data is transferred to Objected Storage when the backup agent gets installed on the server. Incremental backups occur according to the frequency defined in the backup policy and cover the added, changed, or deleted files and folders specifically. This model has the same level of customer data protection as a constant full backup. It offers the benefits of reduced backup speed, minimized data transfer cost, and minimized storage cost. The bottom line is a fast, reliable, and affordable backup solution.
 
 ### Backup Duration
 The length of time needed to complete the backup varies. Several factors come into play such as whether it's the initial backup, a subsequent incremental backup, the number of files and folders, files sizes, other processes running on the server, bandwidth, ingest rates into Object Storage, or region and distance to the target storage, etc. In any case, the frequency timer does not restart until the previous backup has completed.
@@ -66,7 +67,7 @@ You can enable or disable a server or policy as needed. An inactive policy essen
 If the backup agent is unable to communicate with the SBS infrastructure, data will not be set to expire. The feature ensures that data is safe and restorable in the case of server failure or Internet connectivity issues. Servers removed from a policy are treated as if the server status is set to inactive and the retention period starts.
 
 ### Restoration
-A new restoration point is created at the completion of every backup, full or incremental. The restore point contains a backup date and time stamp which is actually the point-in-time that the backup job completed. Executing a restore is easy. You manage restoration points through the Control Portal or via [API calls](https://www.ctl.io/api-docs/v2/#simple-backup). Select the "point-in-time" backup event, specify a destination directory, and click **restore**. That's it! Your data is restored automatically within minutes. You can also delete restoration points that are no longer needed.
+A new restoration point is created at the completion of every backup, full or incremental. The restore point contains a backup date and time stamp which is actually the point-in-time that the backup job completed. Executing a restore is easy. You manage restoration points through the backup agent's UI. Select the "point-in-time" backup event, specify a destination directory, and optionally specify the exact file(s) or directories to restore and click **restore**. That's it! Your data is restored automatically within minutes. You can also delete restoration points that are no longer needed.
 
 In order to prevent the accidental overwriting of data, a new directory is created under the restoration path you provide. The directory uses the restoration point ID as the name and contains all of the restored data.
 
