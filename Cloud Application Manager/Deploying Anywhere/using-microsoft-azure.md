@@ -10,12 +10,12 @@
 
 There are two different flavors of Azure and Cloud Application Manager has providers for both. This document is in reference to Classic Azure.
 
-**Name** | **URL of Portal** | **Name of Related Cloud Application Manager Provider** | **KB article**
+*Name** | **URL of Portal** | **Name of Related Cloud Application Manager Provider** | **KB article**
 --- | --- | --- | ---
-Classic Azure | https://manage.windowsazure.com | Microsoft Azure | [Using Classic Azure](./using-azure.md)
-Microsoft Azure | https://portal.azure.com | Azure Resource Manager | This document
+Classic Azure | https://manage.windowsazure.com | Classic Azure | This document
+Microsoft Azure | https://portal.azure.com | Microsoft Azure  | [Using Microsoft Azure](./using-microsoft-azure.md)
 
-Each of Cloud Application Manager's Azure Resource Manager Providers gives you the option of setting it up either for an existing or a new Azure Customer Account. Existing accounts are your responsibility and will continue to be billed to you by Azure. New Accounts will automatically be generated on your behalf and the credentials pulled into the Provider via [Cloud Optimization](../Cloud Optimization/partner-cloud-integration.md), allowing you to hand off platform-level support and billing to CenturyLink.
+Each of Cloud Application Manager's Microsoft Azure Providers gives you the option of setting it up either for an existing or a new Azure Customer Account. Existing accounts are your responsibility and will continue to be billed to you by Azure. New Accounts will automatically be generated on your behalf and the credentials pulled into the Provider via [Cloud Optimization](../Cloud Optimization/partner-cloud-integration.md), allowing you to hand off platform-level support and billing to CenturyLink.
 
 If you want to learn how to use the New Account feature, please visit [Partner Cloud: Getting Started With a New Azure Customer](../Cloud Optimization/partner-cloud-integration-azure-new.md). The rest of this article assumes you will be using an existing, Azure Customer Account without any integration with CenturyLink.
 
@@ -36,14 +36,14 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
 4. Select *Contributor* role. (If you do not see the Contributor role, you may need to talk to your administrator.)
 5. Search for the application you just created in step 2 and click OK!
 6. Return to the "App Registrations" panel in Step 2. Select the app, and select "Keys" in the "Settings" panel. Give the key any name and expiration date, and select "Save." The value of the key will be generated. Copy and keep the value (secret key) as you won't see it anymore once you navigate away.
-7. Complete your Azure Resource Manager Provider for an existing account with the information below:
+7. Complete your Microsoft Azure Provider for an existing account with the information below:
 > Subscription ID: The active subscription ID<br>
 > Client ID: The Application ID<br>
 > Secret: The key value generated in Step 4<br>
 > Tenant: Name of Customer URL (everything after @)<br>
 
 
-Right now, template boxes are the only ones supported for Azure Resource Manager. If you cannot find a specific template that you are looking for in Cloud Application Manager be sure to check out the [Azure github quickstart templates](https://github.com/Azure/azure-quickstart-templates).
+Right now, template boxes are the only ones supported for Microsoft Azure through Cloud Application Manager. If you cannot find a specific template that you are looking for in Cloud Application Manager be sure to check out the [Azure github quickstart templates](https://github.com/Azure/azure-quickstart-templates).
 
 ### Contacting Cloud Application Manager Support
 
