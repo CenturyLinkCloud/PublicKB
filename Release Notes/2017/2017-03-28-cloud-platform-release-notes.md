@@ -106,7 +106,7 @@
 | Minimum number of CPU per protected Windows VM |	2 |	single core might work but might have problems in some cases |
 
   * Currently, CLC limits a VM to 15 disks, a total of 4TB capacity and a maximum of 1TB per disk capacity.
-    * With special requests to the customer request team, they can typically accommodate up to 12TB per VM with maximum individual disk capacity limited to 4TB.  
+    * With [special requests](https://www.ctl.io/knowledge-base/support/submitting-custom-requests/) to the Custom Requests team, they can typically accommodate up to 12TB per VM with maximum individual disk capacity limited to 4TB.  
     * The CLC default limits might change in the near future.
 
 
