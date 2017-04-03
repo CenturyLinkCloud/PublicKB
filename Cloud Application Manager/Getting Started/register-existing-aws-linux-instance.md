@@ -12,7 +12,7 @@
 
 This tutorial will show you how to import an existing Linux instance that was auto-discovered in your AWS provider using [Cloud Application Manager](https://www.ctl.io/cloud-application-manager).
 
-### Find an AWS Windows Instance
+### Find an AWS Linux Instance
 
 Within the Cloud Application Manager workspace, navigate to your AWS provider and run the sync function by clicking **Sync**.
 
