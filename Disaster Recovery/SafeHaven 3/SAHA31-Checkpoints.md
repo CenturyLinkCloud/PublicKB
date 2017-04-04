@@ -13,7 +13,7 @@ This article walks you through the process of enabling, modifying, viewing, and 
 1. Open your SafeHaven Console and login to the CMS.
 
 2. Select **Edit Checkpoint Period**.
-   ![Edit Checkpoints](../images/SAHA31-Checkpoints-1.png)
+   ![Edit Checkpoints](../../images/SAHA31-Checkpoints-1.png)
 
 3. Under Checkpoint Period, ensure that **Checkpoints Enabled** is check marked and that a proper period time is specified. This is the frequency of checkpoints taken by SafeHaven.
    ![Checkpoints Enabled](../images/SAHA31-Checkpoints-2.png)
