@@ -40,6 +40,7 @@ To view both automatic and manual checkpoints, take follow the next steps.
 
 1. Open the SafeHaven Console and login to the CMS.
 
+
 2. Select **Show History** under the Checkpoints group.
    ![Show History Checkpoints](../../images/SAHA31-Checkpoints-7.png)
 
