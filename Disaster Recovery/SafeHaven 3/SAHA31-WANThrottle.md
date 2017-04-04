@@ -17,13 +17,13 @@ The WAN Throttle is set in KB/s.
 1. Launch the SafeHaven Console.
 
 2. Select the correct Protection Group that you wish to modify.
-   ![Protection Group](../images/SAHA31-WANThrottle-1.png)
+   ![Protection Group](../../images/SAHA31-WANThrottle-1.png)
 
 3. Click **Edit WAN Throttle** from the Replication Monitor Section. You can also monitor current replication statistics from this section.
-   ![Edit WAN](../images/SAHA31-WANThrottle-2.png)
+   ![Edit WAN](../../images/SAHA31-WANThrottle-2.png)
 
 4. Check mark **Unlimited** for no throttle or specify your maximum KB/s limit in the **Maximum Rate** field.
-   ![Edit Throttle](../images/SAHA31-WANThrottle-3.png)
+   ![Edit Throttle](../../images/SAHA31-WANThrottle-3.png)
 
 5. Confirm that the change was completed by monitoring the tasks jobs at the bottom of the console screen.
-   ![Confirm Change](../images/SAHA31-WANThrottle-4.png)
+   ![Confirm Change](../../images/SAHA31-WANThrottle-4.png)

@@ -38,7 +38,7 @@ Adding a new disk to a protection group requires available space inside the prot
 
 You can view your protected disks in the "Virtual Servers" tab of your protection group, as well as the available space.
 
-![Virtual Servers Tab](../images/SH4.0/virtual_servers.png)
+![Virtual Servers Tab](../../images/SH4.0/virtual_servers.png)
 
 Once your protection group has enough space, you can open the "Virtual Servers" tab and select the VM you would like to add a disk for, and then select "Create Disk for replication target" to open the wizard. Specify the properties of the disk and click "Finish".
 
@@ -46,15 +46,15 @@ Once your protection group has enough space, you can open the "Virtual Servers" 
 
 Login to the production server and go to Disk Management. You should see a new source disk (ISCSI) show up. You may need to rescan/refresh for the changes to be updated.  
 
-![Disk Management](../images/SH4.0/disk_management.png)
+![Disk Management](../../images/SH4.0/disk_management.png)
 
 Open the "SafeHaven 4.0 DRaaS Windows Replication Agent/tools" folder with an admin command line shell and run "DgSyncEx.exe list". Note that new disks show up. You may need to run "DgSyncEx.exe rescan" if the disks have not yet refreshed.
 
-![DgSyncEx](../images/SH4.0/dgsyncex_list.png)
+![DgSyncEx](../../images/SH4.0/dgsyncex_list.png)
 
 Enter the following commands in image 3 to manually start replication from the unprotected disk to the new ISCSI disk.
 
-![Marking and Mapping](../images/SH4.0/dgsyncex_mark_map.png)
+![Marking and Mapping](../../images/SH4.0/dgsyncex_mark_map.png)
 
 ### Expanding a protected disk
 
@@ -68,11 +68,11 @@ Once your protection group has enough space, you can open the "Virtual Servers" 
 
 Login to the production server and go to Disk Management. You should see the disk has a new size. You may need to rescan/refresh for the changes to be updated.  
 
-![Disk Management](../images/SH4.0/disk_management.png)
+![Disk Management](../../images/SH4.0/disk_management.png)
 
 Open the "SafeHaven 4.0 DRaaS Windows Replication Agent/tools" folder with an admin command line shell and run "DgSyncEx.exe list". Note that new sizes show up. If you have already resized your source disk, the prompt may warn you that the size has changed. You may need to run "DgSyncEx.exe rescan" if the disks have not yet refreshed.
 
-![DgSyncEx](../images/SH4.0/dgsyncex_list.png)
+![DgSyncEx](../../images/SH4.0/dgsyncex_list.png)
 
 Once the sizes between the two disks match, replication should automatically resume. You can see the progress reset below 100% if there is remaining data to be synced.
 

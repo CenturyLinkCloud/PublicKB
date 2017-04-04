@@ -39,25 +39,25 @@ Download and extract the following software to a known location on the Windows m
    * Select correct the deployment type.
    * We will always select **Configure Safe Haven cluster by selecting pre-installed SafeHaven Nodes**.
 
-   ![Deployment Type](../images/SAHA31-ClusterConfiguration-1.png)
+   ![Deployment Type](../../images/SAHA31-ClusterConfiguration-1.png)
 
 2. Enter a **name** for the Production Site Information. (This should be something descriptive - like ProductionDATACENTERALIAS.)
-   ![Site Name](../images/SAHA31-ClusterConfiguration-2.png)
+   ![Site Name](../../images/SAHA31-ClusterConfiguration-2.png)
 
 3. Select the correct Production side **type**.
-   ![Connection Type](../images/SAHA31-ClusterConfiguration-3.png)
+   ![Connection Type](../../images/SAHA31-ClusterConfiguration-3.png)
 
    * If your production environment is in the CenturyLink Cloud, then you would select  `Automated through CenturyLink Cloud`
    * If your production environment is on your premise then you would select `Automated through VMWare vCenter Server`
 
 4. Update the Connection Details with the correct **API information**.
-   ![Connection Details](../images/SAHA31-ClusterConfiguration-4.png)
+   ![Connection Details](../../images/SAHA31-ClusterConfiguration-4.png)
 
    * For CenturyLink Cloud Connection types, enter in your API v1 User Information. (You may want to create a special user just for this.)
    * For On-Prem types, you enter in a VMWare vCenter user.
 
 5. Select the correct Production SRN from the environment servers listed. Select the correct Production Datacenter from the Locations list, followed by the **SRN** contained in that location.
-   ![Production SRN](../images/SAHA31-ClusterConfiguration-5.png)
+   ![Production SRN](../../images/SAHA31-ClusterConfiguration-5.png)
 
    * Note that if your API / VMWare information is wrong on the previous screen, you will not see the correct infrastructure to select from.
 
@@ -66,13 +66,13 @@ Download and extract the following software to a known location on the Windows m
 7. Select the correct DR side **type**.
 
 8. Update the Connection Details with the correct **API information**.
-   ![DR Site Name](../images/SAHA31-ClusterConfiguration-6.png)
+   ![DR Site Name](../../images/SAHA31-ClusterConfiguration-6.png)
 
 9. Select the correct **CMS** from the environment servers listed. Select the correct DR Datacenter from the Locations list, followed by the **CMS** contained within that location.
-   ![CMS](../images/SAHA31-ClusterConfiguration-7.png)
+   ![CMS](../../images/SAHA31-ClusterConfiguration-7.png)
 
 10. Select the correct **DR SRN** from the environment servers listed. Select the correct DR Datacenter from the Locations list, followed by the **SRN** contained within that location.
-   ![DR SRN](../images/SAHA31-ClusterConfiguration-8.png)
+   ![DR SRN](../../images/SAHA31-ClusterConfiguration-8.png)
 
 11. Complete the required sections for the Custer Configuration section. Provide passwords, the SafeHaven distribution URL, and confirming other predefined settings.
    * **CMS Section**
@@ -81,17 +81,17 @@ Download and extract the following software to a known location on the Windows m
      * **SafeHaven distribution URL** - This is the NO SBD link for the current code level of your SafeHaven Environment.
      * ***3.1.1*** - https://www.dropbox.com/sh/7837hqfwe31wzrh/AACryIOIhfFGw4kMBINDkIGUa/SH3.1.1-GA-Dec15-2015/SafeHaven3.1.1-GA_nosbd_12-16-2015_bin.tar.gz?dl=0
 
-   ![Cluster Config - CMS](../images/SAHA31-ClusterConfiguration-9.png)
+   ![Cluster Config - CMS](../../images/SAHA31-ClusterConfiguration-9.png)
 
    * **Replication Nodes Section**
      * **Root Password** - This is the root password for the SRN node that was previously defined during the build process. Specify a password for both the Production side and the DR side.
 
-   ![Cluster Config - Replication](../images/SAHA31-ClusterConfiguration-10.png)
+   ![Cluster Config - Replication](../../images/SAHA31-ClusterConfiguration-10.png)
 
      * **Confirm other settings. However, do not modify any port information.**
 
 12. Click **Configure** to begin the configuration process. Once the process has completed successfully the following window is displayed indicating the configuration was successful.
-   ![Cluster Config - done](../images/SAHA31-ClusterConfiguration-11.png)
+   ![Cluster Config - done](../../images/SAHA31-ClusterConfiguration-11.png)
 
 You should now be able to connect to your cluster by using the correct GUI version of the Console software. Note that you'll connect to the CMS from here.
-![Correct GUI](../images/SAHA31-ClusterConfiguration-12.png)
+![Correct GUI](../../images/SAHA31-ClusterConfiguration-12.png)
