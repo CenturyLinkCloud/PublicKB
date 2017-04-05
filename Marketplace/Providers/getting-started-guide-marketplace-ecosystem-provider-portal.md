@@ -1,13 +1,13 @@
 {{{
 "title": "Getting Started Guide: Marketplace & Provider Portal",
-"date": "02-02-2017",
+"date": "04-04-2017",
 "author": "",
 "attachments": [],
 "contentIsHTML": false,
 "sticky": true
 }}}
 
-The Provider Portal (PP) is an application that allows CenturyLink Cloud Provider Partners to manage the display of their products on the CenturyLink Marketplace. Once a Provider has certified a product, a member of the Ecosystem Team provides the partner with a welcome email and credentials to log into PP.
+The Provider Portal (PP) is an application that allows CenturyLink Cloud Provider Partners to manage the display of their products on the CenturyLink Marketplace. Once a Provider has certified a product, a member of the Marketplace Team provides the partner with a welcome email and credentials to log into PP.
 
 ### Signing In
 
@@ -67,7 +67,7 @@ From the **Provider Details** page, you can find a list of your products that ha
 
 7. You may provide other supplemental product information including:
    * **Dependencies** (optional).
-   * **Support Information** (optional).
+   * **Support Information** (required).
    * **Contact Information** (optional).
    * **Use Cases** for the product (optional).
    * **Product Features** (required). Enter at least one feature.
@@ -155,6 +155,7 @@ Some products are assigned service tasks. This is determined between the partner
 
 4. Fill in the required fields. If you need assistance filing in the information on this tab, reach out to the [Ecosystem team](mailto:support@ecosystem@ctl.io).
 
+
 ### Frequently Asked Questions
 
 **Q: What if I have forgotten my EPP password?**
@@ -224,6 +225,5 @@ Once you're in the Marketplace **preview mode**, you can also switch to **publis
 
 * [GitHub Markdown Editor](https://markdown-it.github.io/)
 * The CenturyLink Cloud [Marketplace](https://www.ctl.io/marketplace/)
-* CenturyLink [Marketplace Provider Program Guide](../../Ecosystem Partners/Partner Integration Resources/centurylink-cloud-ecosystem-program-guide.md) Knowledge Base article.
 * Marketplace Provider [Onboarding Resource Guide](./onboarding-resources.md).
 * For questions or suggestions on how to make this Guide more useful, email the [Marketplace team](mailto:Marketplace@ctl.io).
