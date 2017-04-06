@@ -1,5 +1,5 @@
 {{{
-"title": "Getting Started Guide: Vormetric's Data Security Manager",
+"title": "Getting Started Guide: Vormetric's Data Security Manager and Agents",
 "date": "04-05-2017",
 "author": "",
 "attachments": [],
@@ -46,7 +46,7 @@ This Runner job performs the following:
 
 ### Postrequisite(s)
 
-None. However, Vormetric Encryption Agents can be installed using this [CenturyLink Marketplace Tile](https://www.ctl.io/marketplace/partner/VRSJ/product/Vormetric%20Encryption%20Agent/).
+None. However, Vormetric Encryption Agents can be installed using this [CenturyLink Marketplace Tile](https://www.ctl.io/marketplace/partner/VRSJ/product/Vormetric%20Encryption%20Agent/). The Vormetric Encryption Agent connects to the Vormetric Data Security Manager (DSM) Server, which is licensed to support up to a specified number of Encryption agents (Windows and Linux). E.g. The "Vormetric DSM Bundle - 15 agents" will support up to 15 Vormetric Encryption Agents.
 
 ### Pricing
 
