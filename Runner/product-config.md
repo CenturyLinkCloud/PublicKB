@@ -9,11 +9,11 @@
 }}}
 
 
-## Audience
+### Audience
 
 This article is to support customers of Runner, a product that enables teams, developers, and engineers to quickly provision, interact, and modify their environments anywhere - CenturyLink Cloud, third-party cloud providers, and on-premises.
 
-## Catalog & Product Overview
+### Catalog & Product Overview
 
 A Runner product allows for a user to build a form around their Ansible playbooks to allow for dynamic user inputs at runtime. A Runner catalog is a git repository that contains a collection of products.
 
@@ -65,11 +65,11 @@ In the below image, you can see the public Runner Library repository. Through th
 
 ![](../images/runner/runner-product-4.jpg)
 
-### README.md
+#### README.md
 
 As part of configuring a new product, your product folder must have a README.md file. This file should provide details about how your product works and the various options that are provided. The contents of this file are then rendered into the Runner UI when your product is loaded.
 
-### config.yml
+#### config.yml
 
 The config.yml file tells Runner all the necessary details about your product and is also where you configure your product form. Below are the required fields that you must put in your config.yml in order to have your Runner product page render properly.
 
@@ -91,7 +91,7 @@ organizationUrl | URL for your company website
 
 The config.yml file is used to not only provide information about your product, but can also be used to build dynamic forms to provide information to your playbook. Below are the various field types you can use to acquire information from the user and pass it to your playbook.
 
-### type:
+#### type:
 - [datacenters](#datacenters)
 - [groups](#groups)
 - [servers](#servers)
