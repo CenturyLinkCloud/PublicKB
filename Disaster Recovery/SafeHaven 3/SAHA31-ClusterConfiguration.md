@@ -9,7 +9,7 @@
 ## Article Overview
 This article walks you through the configuration of the SafeHaven Cluster. This process configures your CMS (Central Management Server) and SRN (SafeHaven Replication Node) roles within your environment. This should be followed by an engineer-level employee looking to deploy a new cluster.
 
-You should already have deployed your SafeHaven nodes to run this process against. If you have not yet completed that step, please see the [SafeHaven 3.0/3.1 - Build a base-image template from scratch using Ubuntu 14](../Disaster Recovery/build-safehaven-base-image-template-from-ubuntu.md))
+You should already have deployed your SafeHaven nodes to run this process against. If you have not yet completed that step, please see the [SafeHaven 3.0/3.1 - Build a base-image template from scratch using Ubuntu 14](../SafeHaven 3/build-safehaven-base-image-template-from-ubuntu.md))
 
 ## Requirements
 
