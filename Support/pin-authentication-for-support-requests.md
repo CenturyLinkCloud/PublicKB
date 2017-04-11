@@ -1,24 +1,31 @@
 {{{
   "title": "PIN Authentication for Support Requests",
-  "date": "1-5-2015",
-  "author": "Jake Malmad",
+  "date": "3-16-2017",
+  "author": "",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
-<p>When submitting a support request, CenturyLink Cloud requires that the user supply a pre-defined, unique&nbsp;PIN number as a secondary means of authentication. This measure is designed to add an additional layer of security to prevent account impersonation
-  and unauthorized changes.</p>
-<p>To access or change your PIN, login to the Control Portal. Once you have logged in, click your <strong>Username </strong> in the top right hand corner of the page&nbsp;and select “<strong>Your Profile</strong>”</p>
-</p>
+### Overview
+When submitting a support request, CenturyLink requires that the user supply a pre-defined, unique PIN number as a secondary means of authentication. This measure is designed to add an additional layer of security to prevent account impersonation and unauthorized changes.
 
-<p>Your PIN will be displayed on the following screen:</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/rtG4U4GYrbRZPA0Da61qnLC7k/?name=pin.png" alt="pin.png" />
-</p>
-<p>If you wish to manually set your PIN, highlight the PIN field and click. You can then enter a custom PIN (numeric, no alphabetic or special characters, 10 character limit)</p>
-<p>
-  <a><img src="https://t3n.zendesk.com/attachments/token/yvkzz4tl53c4lp6/?name=pin4.JPG" alt="pin4.JPG" />
-  </a>
-</p>
-<p>Click “<strong>Save</strong>” to finish setting your custom PIN.</p>
+### Determine Your PIN
+To access or change your PIN follow the steps below.
 
-<p> <strong>*** Note ***</strong></p> <p>When submitting a support request, if you have multiple accounts, please indicate which username corresponds to the PIN you are supplying.</p>
+1. login to the [Control Portal.](//control.ctl.io)
+
+2. Once you have logged in, click your **Username** in the top right hand corner of the page and select **Your Profile.**
+
+    ![profile page link](../images/pin-authentication-for-support-requests-01.png)
+
+3. Your PIN will be displayed on the user profile page.
+
+    ![profile user page](../images/pin-authentication-for-support-requests-02.png)
+
+### Set Your Own PIN
+If you wish to manually set your PIN, mouse-over the PIN field and click. You can then enter a custom PIN (numeric, no alphabetic or special characters, 10 character limit).  Once completed save your new PIN.
+
+  ![set custom PIN](../images/pin-authentication-for-support-requests-03.png)
+
+### Notes
+When submitting a support request, if you have multiple accounts, please indicate which username corresponds to the PIN you are supplying.

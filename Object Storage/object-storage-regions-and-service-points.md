@@ -15,4 +15,5 @@ Here is a list of the different regions, the individual data centers that compri
 |Region|Primary Data Center|Secondary Data Center|Service Point|
 |---|---|---|---:|
 |Canada|CA1|CA3|canada.os.ctl.io|
+|US-West|WA1|UC1|uswest.os.ctl.io|
 |US-East|VA1|NY1|useast.os.ctl.io|
