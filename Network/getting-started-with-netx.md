@@ -21,16 +21,6 @@ Network Exchange is offered in a pay-as-you-go billing model in which the NetX U
 •	The VLAN IDs supplied from ordering a Cloud Network Service ("CNS") connection to your Managed Hosting environment, if the NetX User wishes to connect a Managed Hosting type Exchange Port. The associated data center ID will also be required for each Managed Hosting Exchange Port. Please see the Knowledge Base article [Network Exchange Managed Hosting Exchange Ports](https://www.ctl.io/knowledge-base/network/netx-managed-hosting-exchange-port) for detailed instructions.  
 •	The data center ID is required for each Colocation Exchange Port being connected via NetX. Please see the Knowledge Base article [Network Exchange Colocation Exchange Ports](https://www.ctl.io/knowledge-base/network/netx-colocation-exchange-port) for detailed instructions.  
 
-{{{
-  "title": "Getting Started with Network Exchange",
-  "date": "04-07-2017",
-  "author": "Rob Lesieur",
-  "attachments": [],
-  "related-products" : [],
-  "contentIsHTML": false,
-  "sticky": false
-}}}
-
 ### Product Overview
 
 [Network Exchange](//www.ctl.io/network-exchange/ "Network Exchange Landing Page") ("NetX") provides secure, reliable, automated interconnectivity between service networks offered by NetX Providers, including managed hosting, colocation and cloud environments. A NetX Provider is any service provider who has integrated their networking domain for interconnect provisioning by NetX. A NetX User is any credentialed users of NetX who has Provider-defined access privileges to two or more NetX Providers.  This is the party who ultimately consumes Network Exchange, regardless of the Provider with which they have a direct contractual relationship. An instance of Network Exchange is itself referred to as an Exchange. It is an interconnect between two or more NetX Providers. A NetX User may have one or more Exchanges. A connectivity point for a NetX Provider for a given Exchange is referred to as an Exchange Port. For example, "Colocation" is a type of Exchange Port. 
