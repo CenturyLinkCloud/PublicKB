@@ -49,7 +49,7 @@ From the left side navigation menu, click on **Products** > **Network Exchange**
 
 On the Network Exchange main screen, select  “**Create an Exchange**” 
 
-![netx home](../images/netxhome.png)
+![netx home](../images/network/netx-home-page.png)
 
 On the Network Exchange “**Create an Exchange**” screen, in the "Name Your Exchange" dialogue box:
 a.	Enter the “**Exchange Name**”. This name be appended with a randomly generated number to create a unique identifier for this Exchange.
@@ -58,15 +58,27 @@ c.	Enter the “**Account Alias**”. This four character ID must be a valid sub
 d. Click "**Next**". 
 On the Network Exchange “**Select Feature for Endpoint 1**” screen, in the "Name Your Exchange" dialogue box:
 a. Select the endpoint from the drop down menu for "Select Endpoint Type" from the options of "COLO" (Colocation), "HAN" (Managed Hosting), or "CTL_CLOUD". Endpoints may be added in any order. 
-d. Click "**Next**". 
+b. Click "**Next**". 
 
-Follow the instructions for the selected endpoint type from the options, below.
+![netx vlan](../images/network/netx-create-window.png)
+
+Follow the instructions for the selected endpoint type from the options, below. You may add endpoints in any order and in any combination per supported configurations. The desired Exchange Ports / data center combination(s) per Exchange should be validated as a supported configuration in the Knowledge Base article [Network Exchange Valid Exchange Configurations](https://www.ctl.io/knowledge-base/network/netx-valid-exchange-configurations) 
 
 #### Create a CTL Cloud Endpoint
+a. Select "CTL_Cloud" from the "**Select Endpoint Type**" drop down menu. 
+b. Click "**Next**".
+You may cancel this operation by clicking the red X on the screen, or, by selecting the "**Back**" button.
+You will navigate to the "Create a CTL Cloud Endpoint" flyout. 
+a. Select a CLC data center from the "**CTL Cloud Datacenter**" drop down menu. 
+b. Click "**Next**".  
+You may cancel this operation by clicking the red X on the screen, or, by selecting the "**Back**" button.  
 
-#### Create a COLO Endpoint
+#### Create a colocation Endpoint
+a. Select "COLO" from the "**Select Endpoint Type**" drop down menu. 
+b. Click "**Next**".
+You may cancel this operation by clicking the red X on the screen, or, by selecting the "**Back**" button.
 
-#### Create a HAN Endpoint
+#### Create a Managed Hosting Endpoint
 b.	Enter the “**Vlan A**” value
 c.	Enter the “**Vlan B**” value
 d.	Click on “**Create**”
