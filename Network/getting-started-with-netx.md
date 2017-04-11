@@ -71,11 +71,17 @@ You may cancel this operation by clicking the red X on the screen, or, by select
 You will navigate to the "Create a CTL Cloud Endpoint" flyout. 
 a. Select a CLC data center from the "**CTL Cloud Datacenter**" drop down menu. 
 b. Click "**Next**".  
-You may cancel this operation by clicking the red X on the screen, or, by selecting the "**Back**" button.  
+You may cancel this operation by clicking the red X on the screen, or, by selecting the "**Back**" button.
+
+![netx vlan](../images/network/netx-CLC-create.png)
 
 #### Create a colocation Endpoint
 a. Select "COLO" from the "**Select Endpoint Type**" drop down menu. 
 b. Click "**Next**".
+You may cancel this operation by clicking the red X on the screen, or, by selecting the "**Back**" button.
+You will navigate to the "Create a CTL Cloud Endpoint" flyout. 
+a. Select a CLC data center from the "**CTL Cloud Datacenter**" drop down menu. 
+b. Click "**Next**".  
 You may cancel this operation by clicking the red X on the screen, or, by selecting the "**Back**" button.
 
 #### Create a Managed Hosting Endpoint
