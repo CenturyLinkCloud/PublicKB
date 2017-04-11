@@ -47,8 +47,8 @@ Note that there are two ways to create a protection group and they have differen
 
 ##### 3.1.1 (Recommended) Automatically Deploy and Configure the Recovery Proxy during PG Creation
 
-![prov_wizard_option1.PNG](../images/SH-4.0/prov_wizard_option1.PNG)
-![prov_wizard_option1_conf.PNG](../images/SH-4.0/prov_wizard_option1_conf.PNG)
+![prov_wizard_option1.PNG](../../images/SH-4.0/prov_wizard_option1.PNG)
+![prov_wizard_option1_conf.PNG](../../images/SH-4.0/prov_wizard_option1_conf.PNG)
 
 
 When deploying a recovery proxy server in CLC in the SafeHaven GUI protection group provision wizard, we need to make sure the template created in step 2 with matching **PCI Slot** number is chosen.
@@ -62,7 +62,7 @@ Notes
 
 
 ##### 3.1.2 (Advanced) Automatically Run Makestub for PG Created by Choosing Existing Recovery Servers
-![prov_wizard_option2A.PNG](../images/SH-4.0/prov_wizard_option2A.PNG)
+![prov_wizard_option2A.PNG](../../images/SH-4.0/prov_wizard_option2A.PNG)
 On the next page, please make sure only Ubuntu-14 Linux VMs deployed from the proper templates that matches the corresponding production VM NIC model and PCI slot are chosen as recovery proxies.
 
 Once the PG is created, the user launch the Makestbu wizard by right clicking on the PG and choose "installation->Install SafeHaven MakeStub".
@@ -72,7 +72,7 @@ Notes
 * If all the recovery VMs are Windows, then this wizard will allow the user to configure them automatically using the Windows method.
 * If all the recovery VMs are Linux, then this wizard will allow the user to configure them automatically using the Linux method.
 * If the recovery VMs in the PG are of different OS (Windows and LINUX), the wizard would refuse to proceed and the user has no option but to manually configure them to boot from iSCSI target running the proper binary in each guest. Please refer to section 3.2 of this document.
-![makestub_mixedOS.PNG](../images/SH-4.0/makestub_mixedOS.PNG)
+![makestub_mixedOS.PNG](../../images/SH-4.0/makestub_mixedOS.PNG)
 
 #### 3.2 Manually Deploy from Template and Choose exsting VM as Recovery Proxy
 This is the only method to be used in SafeHaven-4.0.0 if a Linux OS is to be used as the stub to protect a Windows VM.

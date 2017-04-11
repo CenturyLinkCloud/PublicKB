@@ -13,14 +13,14 @@ This article explains how to change SafeHaven license key from the SafeHaven Con
 
 Click on Administration Tab and then click on “Enter New License”.  
 
-![Create Checkpoint](../images/SH4.0/Newlicensekey1.png)  
+![Create Checkpoint](../../images/SH4.0/Newlicensekey1.png)  
 
 
 Enter the License key and then click on "OK"   
 
-![Create Checkpoint](../images/SH4.0/Newlicensekey2.png)  
+![Create Checkpoint](../../images/SH4.0/Newlicensekey2.png)  
 
 
 In order to confirm the new license key, click on “Administrator@cluster” and then go to the “License Manager” tab. Information related to the license key such as expiry date, number of protected servers, and number of SRNs can be found here.  
 
-![Create Checkpoint](../images/SH4.0/Newlicensekey3.png)
+![Create Checkpoint](../../images/SH4.0/Newlicensekey3.png)

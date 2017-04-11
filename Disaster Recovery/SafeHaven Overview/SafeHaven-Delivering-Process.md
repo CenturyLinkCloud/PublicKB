@@ -11,7 +11,7 @@
 ### Overview
 This article covers major steps to use SafeHaven as a disaster recovery
 service.
-![break-down](../images/SAHA-delivering-procedure.png)
+![break-down](../../images/SAHA-delivering-procedure.png)
 
 ### Get an Order From Marketing Team
 To start the process, contact the SafeHaven team,
