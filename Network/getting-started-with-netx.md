@@ -32,7 +32,7 @@ Login to [Control Portal](//control.ctl.io) using your ctl.io username and passw
 
 From the left side navigation menu, click on **Products** > **Network Exchange**
 
-![nav menu](../images/navmenunetx.png)
+![nav menu](../images/network/navmenunetx.png)
 
 On the Network Exchange main screen, select  “**create managed connection**” or click on the “**create connection**” drop-down and select “**Managed Hosting**”.
 
