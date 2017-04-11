@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started with Network Exchange",
-  "date": "09-06-2016",
-  "author": "Mark Lee",
+  "date": "04-07-2017",
+  "author": "Rob Lesieur",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -10,17 +10,19 @@
 
 ### Product Overview
 
-[Network Exchange](//www.ctl.io/network-exchange/) provides a secure, high speed, redundant, private network to connect your CenturyLink Cloud environment to other environments.  It is the preferred alternative to using the Internet or IPSec for customers needing to connect their CLC environments to other, non-CLC environments.  Network Exchange is ideal for your hybrid environment and applications as well as storage and backups.  Network Exchange includes ease of setup and management via the CLC Portal, coupled with CLC network automation, and pre-deployed network infrastructure.  All with usage based, pay as you go billing.
+[Network Exchange](//www.ctl.io/network-exchange/ "Network Exchange Landing Page") ("NetX") provides secure, reliable, automated interconnectivity between service networks offered by NetX Providers, including managed hosting, colocation and cloud environments. A NetX Provider is any service provider who has integrated their networking domain for interconnect provisioning by NetX. A NetX User is any credentialed users of NetX who has Provider-defined access privileges to two or more NetX Providers.  This is the party who ultimately consumes Network Exchange, regardless of the Provider with which they have a direct contractual relationship. An instance of Network Exchange is itself referred to as an Exchange. It is an interconnect between two or more NetX Providers. A NetX User may have one or more Exchanges. A connectivity point for a NetX Provider for a given Exchange is referred to as an Exchange Port. For example, "Colocation" is a type of Exchange Port. 
+
+Network Exchange is offered in a pay-as-you-go billing model in which the NetX User pays only for the bandwidth they consume for billable Exchange Port types. Please refer to the Knowledge Base article [Network Exchange Availability Matrix](https://www.ctl.io/knowledge-base/network/netx-exchange-billing)  for details on how billing is calculated. 
 
 ### Prerequisites
-
-•	CenturyLink Cloud customer environment at UC1
-•	A CNS (Cloud Network Service) connection to your DCC (Dedicated Cloud Compute) environment
-•	The network VLANs of the CenturyLink Managed Hosting endpoint, as provided by your CenturyLink network rep •
+•	The desired Exchange Port type should be verified as supported at the desired data center(s). Please refer to the Knowledge Base article [Network Exchange Availability Matrix](https://www.ctl.io/knowledge-base/network/netx-exchange-port-availability-matrix).
+•	The desired Exchange Ports / data center combination(s) per Exchange should be validated as a supported configuration in the Knowledge Base article [Network Exchange Valid Exchange Configurations](https://www.ctl.io/knowledge-base/network/netx-valid-exchange-configurations) once Exchange Port availability has been validated, per the previous step.
+•	A CenturyLink Cloud customer environment must be established at the CLC data center(s) that the NetX User wishes to connect to. Please see the Knowledge Base article [Network Exchange CenturyLink Cloud Exchange Ports](https://www.ctl.io/knowledge-base/network/netx-centurylink-cloud-exchange-port) for detailed instructions.
+•	The VLAN IDs supplied from ordering a Cloud Network Service ("CNS") connection to your Managed Hosting environment, if the NetX User wishes to connect a Managed Hosting type Exchange Port. The associated data center ID will also be required for each Managed Hosting Exchange Port. Please see the Knowledge Base article [Network Exchange Managed Hosting Exchange Ports](https://www.ctl.io/knowledge-base/network/netx-managed-hosting-exchange-port) for detailed instructions.
+•	The data center ID is required for each Colocation Exchange Port being connected via NetX. Please see the Knowledge Base article [Network Exchange Colocation Exchange Ports](https://www.ctl.io/knowledge-base/network/netx-colocation-exchange-port) for detailed instructions.
 
 ### Exceptions
-
-Although CenturyLink Cloud Network Exchange is designed to provide connectivity between the CLC Platform and other platforms, not all platforms and all locations are tested and ready at this time.  Availability is noted in the Prerequisite section above.  Refer to this document, the location and endpoints document, and the CLC release notes for updates to Network Exchange.
+Network Exchange is designed to enable connectivity between any supported Exchange Port type in any supported data center. Under certain circumstances, not all supported Exchange Port types will be available at every supported data center. Any exceptions to this general rule will be noted in the Knowledge Base article [Network Exchange Valid Exchange Configurations](https://www.ctl.io/knowledge-base/network/netx-valid-exchange-configurations) in the addendum. Retirement of known exceptions will be published in the [CenturyLink Cloud release notes](https://www.ctl.io/knowledge-base/release-notes). 
 
 ### Creating a Connection
 
@@ -43,7 +45,7 @@ c.	Enter the “**Vlan B**” value
 d.	Click on “**Create**”
 e.	**Note:** VlanA and VlanB are provided by a CenturyLink account manager and are based on the Vlans that are set up in the in the CenturyLink data center’s managed hosting network. Contact your account manager for this information.
 
-![netx vlan](../images/netx vlan.png)
+![netx vlan](../images/network/netx vlan.png)
 
 The virtual circuit will be created.  The screen will show the following which indicates the virtual circuit has been created and it is active.
 
@@ -53,19 +55,19 @@ The virtual circuit will be created.  The screen will show the following which i
 
 While logged into Control Portal, from the Network Exchange main screen, click on the row showing the virtual circuit.
 
-![netx delete](../images/netx delete.png)
+![netx delete](../images/network/netx delete.png)
 
 The circuit details will display.  Click on **Delete Virtual Circuit**.
 
-![netx delete vc](../images/netx delete vc.png)
+![netx delete vc](../images/network/netx delete vc.png)
 
 Click **Yes** to acknowledge the delete request.
 
-![netx delete yes](../images/netx delete yes.png)
+![netx delete yes](../images/network/netx delete yes.png)
 
 The virtual circuit will be deleted.  The screen will refresh. The prior virtual circuit will not display (no further user action required).
 
-![netx final delete](../images/netx final delete.png)
+![netx final delete](../images/network/netx final delete.png)
 
 ### FAQs
 
@@ -84,3 +86,4 @@ The virtual circuit will be deleted.  The screen will refresh. The prior virtual
 **Q: Who should I contact for Support?**
 
 **A:** For additional information, questions, and support of the CLC Network Exchange UI, please refer to the [Network Exchange](//www.ctl.io/network-exchange/) product page for additional information and resources.  Check back often as the content will be updated frequently.  Support requests should be emailed to [help@ctl.io](mailto:help@ctl.io).
+
