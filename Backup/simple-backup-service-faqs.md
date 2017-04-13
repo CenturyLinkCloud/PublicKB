@@ -54,7 +54,7 @@ A: No, SBS provides file-level backup protection. In fact, SBS does not backup c
 
 **Q: Does SBS support server cloning?**
 
-A: No, currently SBS does not support cloning. If the agent is installed on a server and the server is cloned there can be data continuity issues between the backups of the source and cloned server. If a server is going to be cloned, the SBS agent must be [uninstalled] (./removing-simple-backup-service.md) first, and the agent properly installed on all servers needed after they are cloned.
+A: No, currently SBS does not support cloning. If the agent is installed on a server and the server is cloned there can be data continuity issues between the backups of the source and cloned server. If a server is going to be cloned, the SBS agent must be [uninstalled](./removing-simple-backup-service.md) first, and the agent properly installed on all servers needed after they are cloned.
 
 ### Agent
 
