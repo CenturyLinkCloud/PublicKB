@@ -138,7 +138,7 @@ Follow these steps to access and use the CloudBerry software.
 
   ![Cloudberry Lab - service endpoint for CenturyLink](../../images/cloudberrylab/cloudberrylab-centurylink-endpoint.jpg)
 
-  NB! by default it is "canada.os.ctl.io", but if you've being instructed to use different, follow and change (e.g. ca.tier3.io).
+  The list of service points are available [in our knowledgebase.](../../Object Storage/object-storage-regions-and-service-points.md)
 
 11.	Go back to the buckets window and choose the tab “Users”.
 

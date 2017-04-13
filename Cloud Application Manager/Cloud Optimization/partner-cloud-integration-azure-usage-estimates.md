@@ -18,7 +18,7 @@ All CenturyLink customers are invited to use Cloud Integration.
 
 * Knowledge of Cloud Application Manager's [partner cloud integration](./partner-cloud-integration.md) feature.
 
-* An existing [ARM Provider created by Cloud Application Manager](./partner-cloud-integration-azure-new.md).
+* An existing [Microsoft Azure Provider created by Cloud Application Manager](./partner-cloud-integration-azure-new.md).
 
 * At least one hour worth of Azure usage.
 

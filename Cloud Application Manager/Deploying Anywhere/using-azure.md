@@ -12,8 +12,8 @@ There are two different flavors of Azure and Cloud Application Manager has provi
 
 **Name** | **URL of Portal** | **Name of Related Cloud Application Manager Provider** | **KB article**
 --- | --- | --- | ---
-Classic Azure | https://manage.windowsazure.com | Microsoft Azure | This document
-Microsoft Azure | https://portal.azure.com | Azure Resource Manager | [Using Microsoft Azure](./using-microsoft-azure.md)
+Classic Azure | https://manage.windowsazure.com | Classic Azure | This document
+Microsoft Azure | https://portal.azure.com | Microsoft Azure  | [Using Microsoft Azure](./using-microsoft-azure.md)
 
 Microsoft's Classic Azure hosts applications in virtual machines and in cloud services via Web, Worker roles. Cloud Application Manager supports deploying to all three models through the Virtual Machine Role, Web and Worker roles. In addition, we support Microsoft SQL Database Service through Azure. Take a look at the [benefits of deploying to Azure using Cloud Application Manager.
 
