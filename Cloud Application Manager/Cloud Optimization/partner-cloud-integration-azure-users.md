@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-###Overview
+### Overview
 
 Cloud Application Manager is a wonderful tool for addressing many customers' needs. Regardless, a user may still want to log into portal.azure.com from occasionally to modify resources there.
 
@@ -18,7 +18,7 @@ All of our customers are invited to use Cloud Integration.
 
 Knowledge of Cloud Application Manager's [partner cloud integration](./partner-cloud-integration.md) feature.
 
-An existing [ARM Provider created by Cloud Application Manager](./partner-cloud-integration-azure-new.md).
+An existing [Microsoft Azure Provider created by Cloud Application Manager](./partner-cloud-integration-azure-new.md).
 
 ### Important Information
 
