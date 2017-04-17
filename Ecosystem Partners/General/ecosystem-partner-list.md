@@ -1,6 +1,6 @@
 {{{
   "title": "Ecosystem Partner List",
-  "date": "01-26-2016",
+  "date": "04-10-2017",
   "author": "CenturyLink Ecosystem",
   "attachments": [],
   "contentIsHTML": false,
@@ -27,6 +27,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [NGiNX](../Marketplace Guides/getting-started-with-nginx-blueprint.md)   	| Blueprint    | Web traffic manager    |
 | [OpenVPN AS](../Marketplace Guides/getting-started-with-openvpnas-appliance.md)   	| Blueprint (Virtual Appliance)    | Secure access manager    |
 | [Silver Peak](../Marketplace Guides/getting-started-with-silver-peak-partner-template.md)   	| Template    | WAN acceleration    |
+| [Fortinet](../Marketplace Guides/getting-started-with-fortinet.md)   	| Virtual Appliance    | Next-Generation Firewall (NGFW)    |
 
 ### Development Frameworks
 
