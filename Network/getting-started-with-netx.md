@@ -1,15 +1,24 @@
-{{{ "title": "Getting Started with Network Exchange", "date": "04-07-2017", "author": "Rob Lesieur", "attachments": [], "related-products" : [], "contentIsHTML": false, "sticky": false }}}
-Product Overview
+{{{ 
+  "title": "Getting Started with Network Exchange", 
+  "date": "04-07-2017", "author": "Rob Lesieur", 
+  "attachments": [], 
+  "related-products" : [], 
+  "contentIsHTML": false, 
+  "sticky": false 
+  }}}   
+  
+###Product Overview
 Network Exchange ("NetX") provides secure, reliable, automated interconnectivity between service networks offered by NetX Providers, including managed hosting, colocation and cloud environments. A NetX Provider is any service provider who has integrated their networking domain for interconnect provisioning by NetX. A NetX User is any credentialed users of NetX who has Provider-defined access privileges to two or more NetX Providers. This is the party who ultimately consumes Network Exchange, regardless of the Provider with which they have a direct contractual relationship. An instance of Network Exchange is itself referred to as an Exchange. It is an interconnect between two or more NetX Providers. A NetX User may have one or more Exchanges. A connectivity point for a NetX Provider for a given Exchange is referred to as an Exchange Port. For example, "Colocation" is a type of Exchange Port.
 Network Exchange is offered in a pay-as-you-go billing model in which the NetX User pays only for the bandwidth they consume for billable Exchange Port types. Please refer to the Knowledge Base article Network Exchange Availability Matrix for details on how billing is calculated.
-Prerequisites
-• The desired Exchange Port type should be verified as supported at the desired data center(s). Please refer to the Knowledge Base article Network Exchange Availability Matrix.
-• The desired Exchange Ports / data center combination(s) per Exchange should be validated as a supported configuration in the Knowledge Base article Network Exchange Valid Exchange Configurations once Exchange Port availability has been validated, per the previous step.
-• Each Exchange Port type has certain prerequisites, capabilities and caveats that should be understood before setting up an Exchange. Please see the following Knowledge Base documents for details:
-• Network Exchange CenturyLink Cloud Exchange Ports 
-• Network Exchange Managed Hosting Exchange Ports 
-• Network Exchange Colocation Exchange Ports 
-• Network Exchange Dedicated Access Exchange Ports 
+###Prerequisites
+• The desired Exchange Port type should be verified as supported at the desired data center(s). Please refer to the Knowledge Base article Network Exchange Availability Matrix.  
+• The desired Exchange Ports / data center combination(s) per Exchange should be validated as a supported configuration in the Knowledge Base article Network Exchange Valid Exchange Configurations once Exchange Port availability has been validated, per the previous step.  
+• Each Exchange Port type has certain prerequisites, capabilities and caveats that should be understood before setting up an Exchange. Please see the following Knowledge Base documents for details:  
+• Network Exchange CenturyLink Cloud Exchange Ports   
+• Network Exchange Managed Hosting Exchange Ports   
+• Network Exchange Colocation Exchange Ports   
+• Network Exchange Dedicated Access Exchange Ports   
+
 Exceptions
 Network Exchange is designed to enable connectivity between any supported Exchange Port type in any supported data center. Under certain circumstances, not all supported Exchange Port types will be available at every supported data center. Any exceptions to this general rule will be noted in the Knowledge Base article Network Exchange Valid Exchange Configurations in the addendum. Retirement of known exceptions will be published in the CenturyLink Cloud release notes.
 Creating a Connection
