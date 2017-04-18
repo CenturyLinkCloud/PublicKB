@@ -21,6 +21,9 @@ Our [API](../Security/ips-api.md) allows for a customer to set notification dest
 * A CenturyLink Cloud Account
 * Virtual Machine with CenturyLink Intrusion Prevention Agent installed
 * Slack channel & WebHook URL [(See Utilizing SLACK for IPS Event Notifications)](utilizing-slack-for-ips-event-notifications.md)
+* Add the following Firewall Rules if configuring Syslog
+  * dsm01.client-security.ctl.io 514/upd
+  * dsm02.client-security.ctl.io 514/udp
 
 ### Configuration Process via Blueprints
 
