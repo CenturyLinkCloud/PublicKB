@@ -1,5 +1,5 @@
 {{{
-  "title": "Login to new UI",
+  "title": "Logon to new UI",
   "date": "04-19-2017",
   "author": "Anthony Hakim",
   "attachments": [],
