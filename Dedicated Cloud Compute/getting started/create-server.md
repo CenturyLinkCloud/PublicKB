@@ -10,7 +10,7 @@
 
 ### Description
 
-The User Interface (UI) for Dedicated Cloud Compute (DCC) has been updated with a new look and feel. This documents the process to logon and launch the new UI.
+The User Interface (UI) for Dedicated Cloud Compute (DCC) has been updated with a new look and feel. This documents the process to follow to logon and launch the new UI.
 
 ### Audience
 
