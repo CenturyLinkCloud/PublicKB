@@ -24,7 +24,7 @@ CenturyLink Cloud customers with a dedicated Citrix Netscaler Load Balancer
 
 The Netscaler Load Balancer uses FlexLM licensing to license features on the product. A license check is done when the VPX boots. The licensing daemon (service) will start, check for a valid license and then stop the daemon (service). The VPX will then enable certain features determined by the license daemon (service). If a license is expired or invalid, the Netscaler will stop passing traffic.
 
-### <a name="check-traffic">Determining If a VPX Is Not Passing Traffic Due to an Expired License</a>
+### Determining If a VPX Is Not Passing Traffic Due to an Expired License
 
 #### CLI Method
 
@@ -42,7 +42,7 @@ The Netscaler Load Balancer uses FlexLM licensing to license features on the pro
 2. On the left-hand side menu, navigate to System->Licenses
 3. Review output. If the Model ID lists 1 instead of the proper model and the Load Balancing feature does not have a green checkmark, the license is expired. The Model ID should reflect the correct model (i.e.: 200) and the Load Balancing feature should have a green checkmark.
 
-### <a name="check-license-expiration">Determining the License Expiration Date</a>
+### Determining the License Expiration Date
 
 **Note:** This step can only be performed via SSH and the CLI. The license expiration date in not available in the GUI.
 
@@ -74,7 +74,7 @@ The Netscaler Load Balancer uses FlexLM licensing to license features on the pro
   
 7. Observe the lines in the file that start with the word **INCREMENT** in all capital letters. This line contains the license expiration date.
 
-### <a name="update-license">Updating Licenses</a>
+### Updating Licenses
 
 CLC will provide the license file(s) with corresponding LB management and RNAT IP addresses. You or your team should have received the login credentials for your dedicated load balancer during its creation, but let us know if you need assistance with this.
 
@@ -82,7 +82,7 @@ There are two methods depending on if you are updating a lone LB or an HA pair. 
 
 #### HA Pair
 
-Users may need to [configure Java](../general/how-to-configure-java-settings-to-access-web-user-interfaces.md) to ensure they can access the Web GUI.
+Users may need to [configure Java](../General/how-to-configure-java-settings-to-access-web-user-interfaces.md) to ensure they can access the Web GUI.
 
 
 1. The following steps will need to be performed on each node, starting with the secondary load balancer first.
