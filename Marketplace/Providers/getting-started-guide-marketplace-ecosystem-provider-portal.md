@@ -28,7 +28,8 @@ Click the **Company Information** tab. This takes you to your **Provider Details
 ### Marketplace Provider Agreement (MPA)
 
 On the **Provider Details** page is also where you must agree to the Marketplace Provider Agreement(MPA), which governs the Terms & Conditions of your products entry into the Marketplace.
-It can be found [here](https://www.ctl.io/legal/marketplace/). Once you have read and agree to the terms, click the check box and click **Save**.
+It can be found [here](https://www.ctl.io/legal/marketplace/). Once you have read and agree to the terms, click the check box and click **Save**. 
+**Note** While it is not necessary to accept the MPA to add products and content, it is a required step for any products to be published to the Marketplace. 
 
 ![EPPMPA](../../images/MPA.png)
 
@@ -83,6 +84,16 @@ From the **Provider Details** page, you can find a list of your products that ha
 10. Click **Create**.
 
 11. Click **Request Publication**. This forwards a request to the CenturyLink Marketplace team notifying them to review and publish your product. If there are questions/issues related to the submission, a Marketplace team member will contact you. Otherwise, your product is published within two business days.
+**Note: 
+Required steps for publication of products are as follows:
+
+1) MPA has been reviewed and accepted.
+2) W-9 has been submitted to the Marketplace team, reviewed, and approved. 
+3) Product EULA URL is listed under the product EULA field. 
+4) Support information is listed under the product support field. 
+5) Technical integration has been completed and tested.
+6) Billing integration has been completed and tested. 
+
 
    ![EPP6](../../images/EPP6.png)
 
