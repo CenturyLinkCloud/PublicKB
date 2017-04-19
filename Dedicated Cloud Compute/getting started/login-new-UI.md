@@ -16,6 +16,10 @@ The User Interface (UI) for Dedicated Cloud Compute (DCC) has been updated with 
 
 Dedicated Cloud Compute customers.
 
+### Assumptions
+
+* You have a SavvisStation Portal account and are able to logon successfully.
+
 ### Process
 
 1. Go to [SavvisStation Portal](https://www.savvisstation.savvis.com/) and logon with your username and password.
