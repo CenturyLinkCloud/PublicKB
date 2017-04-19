@@ -53,6 +53,7 @@ CenturyLink Cloud Users, Storage Administrators, IT Managers
 ### Prerequisites
 * Access to the CenturyLink Cloud platform as an authorized user
 * Control Portal account with password authentication (two-factor authentication not yet supported)
+* Your network must have internet access. Specialized networks unable to complete setup via runner will require a service task to be completed.
 
 
 ### Steps to Deploy a New SoftNAS Appliance
