@@ -13,12 +13,11 @@
 <p><strong>Steps:</strong>
 </p>
 <div><strong>1. Start "Create Server" Process.</strong>
-</div>
-<ul>
-  <li>There are two places to initiate this process. The first is from the top-most navigation menu under the <strong>Servers</strong> section.
-    <br />
-    <br /><img src="https://t3n.zendesk.com/attachments/token/4nWmChpcg7AfDt5QDcGoLyuoN/?name=createserver16.png" alt="createserver16.png" />
-  </li>
+<p>There are two places to initiate this process. 
+<p>The first is from the left navigation menu, choose Create > Server.
+   <br />
+   ![new-server-gui](../images/create-server-new-gui.png)
+   
   <li>The second place to trigger this process is from within the Servers UI. From the Servers page, select the <strong>New Server (+) </strong>icon<strong>. </strong>
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/J17PuvEMgJSePQgWApGEtscTj/?name=01.png" alt="01.png" /><img src="https://t3n.zendesk.com/attachments/token/65AvXyfs7BQLgQ7vgpkIke2Ed/?name=02.png" alt="02.png" />
