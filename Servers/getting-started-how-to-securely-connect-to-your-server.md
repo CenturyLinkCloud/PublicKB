@@ -9,9 +9,9 @@
 }}}
 
 ## You have a shiny new virtual server - now what?
-Congratulations! You've just built a new virtual server on CenturyLink Cloud - we assume you have created a new virtual server.  If not, [follow this other guide first](../Servers/creating-a-new-enterprise-cloud-server.md), then return to this guide.
+Congratulations! You've just built a new virtual server on CenturyLink Cloud - we assume you have created a new virtual server. If not, [follow this other guide first](../Servers/creating-a-new-enterprise-cloud-server.md), then return to this guide.
 
-Now what?  How do you securely connect to your server(s)?  Some customers have the option of using a site-to-site VPN tunnel, MPLS, CNS, etc.  If your company doesn't have these options available, then follow the steps below to use OpenVPN.
+Now what? How do you securely connect to your server(s)?  Some customers have the option of using a site-to-site VPN tunnel, MPLS, CNS, etc.  If your company doesn't have these options available, then follow the steps below to use OpenVPN.
 
 ## Connect to your shiny new virtual server
 In order to connect to your shiny new virtual server, you will need to:
@@ -46,9 +46,9 @@ For Mac (OS X):
 Now that we have the OpenVPN client installed, we need to install the certificate/OpenVPN configuration.
 
 * Logon to your user account in the [Control Portal](https://control.ctl.io).
-* Hover over the green menu in the Control Portal, then click `VPN` under Network.
+* From the left navigation bar, Click on **Network** > **VPN**
 
-  ![Getting Started: How to securely connect to your server](../images/getting-started-how-to-securely-connect-to-your-server3.png)
+  ![Getting Started: How to securely connect to your server](../images/connect-to-your-server-new.png)
 
 * On the VPN Configuration page, you will see `default` under VPN Certificates.  Click on the `download` button.
 
