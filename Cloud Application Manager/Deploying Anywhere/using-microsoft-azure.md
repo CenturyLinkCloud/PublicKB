@@ -1,6 +1,6 @@
 {{{
 "title": "Using Microsoft Azure",
-"date": "01-20-2017",
+"date": "04-19-2017",
 "author": "",
 "attachments": [],
 "contentIsHTML": false
@@ -37,7 +37,7 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
 > Subscription ID: The active subscription ID<br>
 > Client ID: The Application ID<br>
 > Secret: The key value generated in Step 4<br>
-> Tenant: Name of Customer URL (everything after @)<br>
+> Tenant: Copy from Azure Active Directory > Properties > Directory ID<br>
 
 If you cannot find a specific template that you are looking for in Cloud Application Manager be sure to check out the [Azure github quickstart templates](https://github.com/Azure/azure-quickstart-templates).
 
