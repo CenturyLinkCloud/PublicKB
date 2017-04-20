@@ -48,7 +48,7 @@
 
 |Maximum of Item|Limit|Comments|
 |---|---|---|
-|Number of Sites per CMS|8|
+|Number of Sites per CMS|64|
 |Number of SRNs per CMS|64|
 |Number of Disks attached to SRN as storage pools|12|CLC default limit of disks per VM is 15|
 |Number of Protected Disks (in protected VMs) per SRN|20|
