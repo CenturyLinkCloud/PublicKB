@@ -84,41 +84,58 @@ There are two methods depending on if you are updating a lone LB or an HA pair. 
 
 Users may need to [configure Java](../General/how-to-configure-java-settings-to-access-web-user-interfaces.md) to ensure they can access the Web GUI.
 
-
 1. The following steps will need to be performed on each node, starting with the secondary load balancer first.
    - For non-Windows users connect to the RNAT IP over SSH and add `.old` to the license filename, then use SCP to upload the file to `/nsconfig/license`.
-   - For Windows users, there are instructions for doing this via [WinSCP](https://winscp.net) below.
+   - For Windows users, here are instructions for doing this via [WinSCP](https://winscp.net):
       1. Connect to the RNAT IP.
-      1. You will see a screen with an explorer pane on the left and one on the right. The left one is your local machine. The right one is the NetScaler to which you just connected.
-      1. In the right pane, double-click the up arrow.
-      1. Double-click "nsconfig" to open that folder.
-      1. Open the license folder.
-      1. On the left pane, browse to the local license file.
-      1. On the right pane, add `.old` to the current license name.
-      1. Drag the new license from the left pane to the right pane.
-3. Once the new license has been uploaded to both nodes, identify and reboot the secondary device to pick up the new license.
-4. Open two tabs in a web browser.
-5. Connect to one management IP in one tab and the other management IP in the other tab.
-6. On the left, expand "System" then click "High Availability". You will then see which is the primary node and which is the secondary node.
-1. Start on the secondary device, expand "System", click diagnostics, then in the menu select command line interface.
-1. Enter `reboot`.
-1. Enter `yes` if prompted.
-1. Wait for the secondary device to finish booting (you will be able to log back in via the website).
-1. In the GUI of the secondary device, open the command line interface again like you just did a few steps ago.
-1. Enter `show ha node`. The output should indicate that the appliance is a secondary node and the state of synchronization.
-1. If synchronization is *not* disabled, run `set ha node -hasync disabled`.
-1. Run `force failover` to switch the secondary to primary.
-1. Reboot the secondary node (formerly the primary node) so it can pick up the new license.
-1. Some settings can get lost during this process. Repeat these next steps for each device.
+      2. You will see a screen with an explorer pane on the left and one on the right. The left one is your local machine. The right one is the NetScaler to which you just connected.
+      3. In the right pane, double-click the up arrow.
+      4. Double-click "nsconfig" to open that folder.
+      5. Open the license folder.
+      6. On the left pane, browse to the local license file.
+      7. On the right pane, add `.old` to the current license name.
+      8. Drag the new license from the left pane to the right pane.
+2. Once the new license has been uploaded to both nodes, identify and reboot the secondary device to pick up the new license.
+3. Open two tabs in a web browser.
+4. Connect to one management IP in one tab and the other management IP in the other tab.
+5. On the left, expand "System" then click "High Availability". You will then see which is the primary node and which is the secondary node.
+6. Start on the secondary device, expand "System", click diagnostics, then in the menu select command line interface.
+7. Enter `reboot`.
+8. Enter `yes` if prompted.
+9. Wait for the secondary device to finish booting (you will be able to log back in via the website).
+10. In the GUI of the secondary device, open the command line interface again like you just did a few steps ago.
+11. Enter `show ha node`. The output should indicate that the appliance is a secondary node and the state of synchronization.
+12. If synchronization is *not* disabled, run `set ha node -hasync disabled`.
+13. Run `force failover` to switch the secondary to primary.
+14. Reboot the secondary node (formerly the primary node) so it can pick up the new license.
+15. Some settings can get lost during this process. Repeat these next steps for each device.
    1. Expand the "System" section, then verify that Load Balancing and SSL Offloading have a green check in the Licenses section.
-   1. Check the bottom of the left-hand column, it should say "model ID: 200". If not, you need to check and possibly re-apply the license file or reach out to our support team for assistance.
-   1. Click "Settings" on the left-hand menu, then click the "Configure basic features" link in the main frame.
-   1. Check everything *except NetScaler Gateway* and click OK.
-   1. Click the "Configure advanced features" link.
-   1. Enable "responder" and click OK.
-1. Now it's time to verify functionality. Connect to GUI on your new primary device (the first one you rebooted, or connect via RNAT).
-1. Click "Dashboard" at top left.
-1. Ensure that the “Established Client vs Server Connections” graph shows active connections.
+   2. Check the bottom of the left-hand column, it should say "model ID: 200". If not, you need to check and possibly re-apply the license file or reach out to our support team for assistance.
+   3. Click "Settings" on the left-hand menu, then click the "Configure basic features" link in the main frame.
+   4. Check everything *except NetScaler Gateway* and click OK.
+   5. Click the "Configure advanced features" link.
+   6. Enable "responder" and click OK.
+16. Now it's time to verify functionality. Connect to GUI on your new primary device (the first one you rebooted, or connect via RNAT).
+17. Click "Dashboard" at top left.
+18. Ensure that the “Established Client vs Server Connections” graph shows active connections.
+
+#### Standalone
+
+This process is very similar to handling the HA pair except no failover is needed.
+
+
+1. Rename the expired license file, then copy the new license to the NetScaler.
+   - For non-Windows users connect to the RNAT IP over SSH and add `.old` to the license filename, then use SCP to upload the file to `/nsconfig/license`.
+   - For Windows users, here are instructions for doing this via [WinSCP](https://winscp.net):
+      1. Connect to the RNAT IP.
+      2. You will see a screen with an explorer pane on the left and one on the right. The left one is your local machine. The right one is the NetScaler to which you just connected.
+      3. In the right pane, double-click the up arrow.
+      4. Double-click "nsconfig" to open that folder.
+      5. Open the license folder.
+      6. On the left pane, browse to the local license file.
+      7. On the right pane, add `.old` to the current license name.
+      8. Drag the new license from the left pane to the right pane.
+2. Reboot the NetScaler.
 
 ### Notes
 
