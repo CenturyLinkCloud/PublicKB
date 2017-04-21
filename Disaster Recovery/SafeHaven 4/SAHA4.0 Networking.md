@@ -68,7 +68,7 @@ During normal operations, there is only one possible outgoing Internet access wh
 
 #### Code Update
 
-The SafeHaven releaes note page (like [this for SafeHaven-4.0.0](https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-4.0.0-release/)) contains links to the debian package which is using URL like https://download.safehaven.ctl.io/. For example, the SafeHaven-4.0.0 debian package is at https://download.safehaven.ctl.io/SH-4.0.0/safehaven-4.0.0.deb.
+The SafeHaven releaes note page (like [this for SafeHaven-4.0.0](https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-4/safehaven-4.0.1-release/)) contains links to the debian package which is using URL like https://download.safehaven.ctl.io/. For example, the SafeHaven-4.0.0 debian package is at https://download.safehaven.ctl.io/SH-4.0.0/safehaven-4.0.0.deb.
 
 #### Summary and Recommendation to Firewall Internet Access White Listing
 
