@@ -18,18 +18,18 @@ Dedicated Cloud Compute customers.
 
 ### Assumptions
 
-* You have a SavvisStation Portal account and are able to logon successfully.
+* You have a SavvisStation Portal account and can logon successfully.
 
 ### Process
 
 1. Go to [SavvisStation Portal](https://www.savvisstation.savvis.com/) and logon with your username and password.
 
-  ![SSP Logon](../../images/dcc/dcc-logon-ssp.png)
+  ![SSP Logon](../../images/dcc/logon-ssp.png)
 
 2. Once logged on to SavvisStation Portal (SSP), hover your mouse over Savvis Cloud, then select Dedicated Cloud Compute.
 
-  ![Launch DCC](../../images/dcc/dcc-launch.png)
+  ![Launch DCC](../../images/dcc/launch-dcc-ui.png)
 
 3. The DCC UI will open in a new tab.
 
-  ![DCC UI](../../images/dcc/dcc-ui.png)
+  ![DCC UI](../../images/dcc/new-ui.png)
