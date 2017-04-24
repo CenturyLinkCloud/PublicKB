@@ -14,6 +14,6 @@ Products added to the CenturyLink Marketplace March 2017 include:
 
 * [Alert Logic Web Security Manager - Premier](https://www.ctl.io/marketplace/partner/PST/product/Alert%20Logic%20Web%20Security%20Manager%20-%20Premier/)
 
-* [Vormetric/Thales Single DSM for HA configuration](https://www.ctl.io/marketplace/partner/VRSJ/product/Single%20DSM%20for%20HA%20configuration/)
+* [Vormetric Transparent Encryption - DSM 10](https://www.ctl.io/marketplace/partner/VRSJ/product/Vormetric%20Transparent%20Encryption%20-%20DSM%2010/)
 
-* [Vormetric/Thales Transparent Encryption](https://www.ctl.io/marketplace/partner/VRSJ/product/Vormetric%20Transparent%20Encryption%20-%20DSM%2010/)
+* [Vormetric Encryption Agent](https://www.ctl.io/marketplace/partner/VRSJ/product/Vormetric%20Encryption%20Agent/)
