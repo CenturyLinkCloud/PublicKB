@@ -63,7 +63,7 @@ Network Exchange is designed to enable connectivity between any supported Exchan
 
 ### Creating An Exchange
 
-![NetX Portal](../../images/netx-getting-started-guide-2.png)
+![NetX Portal](../images/netx-getting-started-guide-2.png)
 
 On the Network Exchange **Create an Exchange** screen, in the **Name Your
 Exchange** dialogue box:
@@ -93,7 +93,7 @@ Exchange** dialogue box:
 
 Follow the instructions for the selected endpoint type from the options, below. You may add endpoints in any order and in any combination per supported configurations. The desired Exchange Ports / data center combination(s) per Exchange should be validated as a supported configuration in the Knowledge Base article [Network Exchange Valid Exchange Configurations]().
 
-![NetX Portal](../../images/netx-getting-started-guide-3.png)
+![NetX Portal](../images/netx-getting-started-guide-3.png)
 
 ### Create a CTL Cloud Endpoint
 
@@ -103,7 +103,7 @@ Follow the instructions for the selected endpoint type from the options, below. 
 
     **Note:** You may cancel this operation by clicking the red X on the screen, or, by selecting the **Back** button. You will navigate to the **Create a CTL Cloud Endpoint** flyout.
 
-    ![NetX Portal](../../images/netx-getting-started-guide-4.png)
+    ![NetX Portal](../images/netx-getting-started-guide-4.png)
 
 3. Select a CLC data center from the **CTL Cloud Datacenter** drop down menu.
 
@@ -115,7 +115,7 @@ Follow the instructions for the selected endpoint type from the options, below. 
 the "Back" button.
 * If this is your first endpoint, you will be prompted to enter a second endpoint. If you have entered an endpoint previously, you will be navigated to the **Review Your Request** flyout. See instructions below on how to proceed.
 
-![NetX Portal](../../images/netx-getting-started-guide-5.png)
+![NetX Portal](../images/netx-getting-started-guide-5.png)
 
 ### Create a Colocation or “Dedicated Access" Endpoint
 
@@ -125,7 +125,7 @@ the "Back" button.
 
     **Note:** "Dedicated access" refers to a dedicated connection between Network Exchange and a CenturyLink Managed Service, that bypasses HAN.
 
-    ![NetX Portal](../../images/netx-getting-started-guide-6.png)
+    ![NetX Portal](../images/netx-getting-started-guide-6.png)
 
 3. Navigate to the **Create a COLO Endpoint** flyout.
 
@@ -133,7 +133,7 @@ the "Back" button.
 
 5. Select the routing type: Static or BGP.
 
-![NetX Portal](../../images/netx-getting-started-guide-7.png)
+![NetX Portal](../images/netx-getting-started-guide-7.png)
 
 **For static endpoints**
 
@@ -146,7 +146,7 @@ the "Back" button.
 * You may cancel this operation by clicking the red X on the screen, or, by selecting the "Back" button.
 * If this is your first endpoint, you will be prompted to enter a second endpoint. If you have entered an endpoint previously, you will be navigated to the **Review Your Request** flyout. See instructions below on how to proceed.
 
-![NetX Portal](../../images/netx-getting-started-guide-8.png)
+![NetX Portal](../images/netx-getting-started-guide-8.png)
 
 **For BGP endpoints**
 
@@ -161,7 +161,7 @@ the **Back** button.
 * If this is your first endpoint, you will be prompted to enter a second endpoint. If you
 have entered an endpoint previously, you will be navigated to the **Review Your Request** flyout. See instructions below on how to proceed.
 
-![NetX Portal](../../images/netx-getting-started-guide-9.png)
+![NetX Portal](../images/netx-getting-started-guide-9.png)
 
 ### Create a Managed Hosting Endpoint
 
@@ -169,7 +169,7 @@ have entered an endpoint previously, you will be navigated to the **Review Your 
 
 2. Click **Next**. You may cancel this operation by clicking the red X on the screen, or, by selecting the **Back** button.
 
-    ![NetX Portal](../../images/netx-getting-started-guide-10.png)
+    ![NetX Portal](../images/netx-getting-started-guide-10.png)
 
 3. Navigate to the **Create a CTL HAN Endpoint** flyout.
 
@@ -187,7 +187,7 @@ have entered an endpoint previously, you will be navigated to the **Review Your 
 * You may cancel this operation by clicking the red X on the screen, or, by selecting the "Back" button.
 * If this is your first endpoint, you will be prompted to enter a second endpoint. If you have entered an endpoint previously, you will be navigated to the **Review Your Request** flyout. See instructions below on how to proceed.
 
-![NetX Portal](../../images/netx-getting-started-guide-11.png)
+![NetX Portal](../images/netx-getting-started-guide-11.png)
 
 ### Completing Your Request
 
@@ -197,7 +197,7 @@ Upon selecting two endpoints, you will reach the “Review Your Request” flyou
 
 2. Click on “Submit”. You will be navigated to the main Network Exchange screen which will display the Exchange you have just created and the status of the build. During creation the status will display “BUILDING” and that Exchange will not be accessible. Upon completion, the status will change to “ACTIVE”.
 
-![NetX Portal](../../images/netx-getting-started-guide-12.png)
+![NetX Portal](../images/netx-getting-started-guide-12.png)
 
 ### Adding an Endpoint to an Exchange
 
@@ -205,11 +205,11 @@ Upon selecting two endpoints, you will reach the “Review Your Request” flyou
 
 2. Select **Add Additional Endpoint**.
 
-    ![NetX Portal](../../images/netx-getting-started-guide-13.png)
+    ![NetX Portal](../images/netx-getting-started-guide-13.png)
 
 3. Click **Next**.
 
-    ![NetX Portal](../../images/netx-getting-started-guide-14.png)
+    ![NetX Portal](../images/netx-getting-started-guide-14.png)
 
 4. Select the endpoint type from the drop down list.
 
@@ -217,7 +217,7 @@ Upon selecting two endpoints, you will reach the “Review Your Request” flyou
 
 6. Follow the instructions for the particular endpoint type, above. Note that instead of displaying a “BUILDING” status as in the Completing Your Request section above, this action displays a “UPDATING” status.
 
-![NetX Portal](../../images/netx-getting-started-guide-15.png)
+![NetX Portal](../images/netx-getting-started-guide-15.png)
 
 ### Removing an Endpoint from an Exchange
 
@@ -231,7 +231,7 @@ Upon selecting two endpoints, you will reach the “Review Your Request” flyou
 
 4. Click **Yes** or **No** when prompted. The status will indicate “UPDATING” during the deletion process.
 
-![NetX Portal](../../images/netx-getting-started-guide-16.png)
+![NetX Portal](../images/netx-getting-started-guide-16.png)
 
 ### Deleting an Exchange
 
@@ -241,7 +241,7 @@ Upon selecting two endpoints, you will reach the “Review Your Request” flyou
 
 3. Click **Yes** or **No** when prompted. The status will indicate “DELETING” during the deletion process.
 
-![NetX Portal](../../images/netx-getting-started-guide-17.png)
+![NetX Portal](../images/netx-getting-started-guide-17.png)
 
 ### Q & A
 
