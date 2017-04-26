@@ -59,7 +59,7 @@ Network Exchange is designed to enable connectivity between any supported Exchan
 
 2. From the left side navigation menu, click on **Products > NetX**.
 
-    ![NetX Portal](../../images/netx-getting-started-guide-1.png)
+    ![NetX Portal](../images/netx-getting-started-guide-1.png)
 
 ### Creating An Exchange
 
