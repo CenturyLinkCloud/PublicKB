@@ -1,6 +1,6 @@
 {{{
   "title": "Partner Cloud: Azure User Permissions ",
-  "date": "01-16-2017",
+  "date": "04-24-2017",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -16,9 +16,9 @@ All Permissions, shown below, either represent an Azure action or a Category of 
 
 **Service or Product Category** | **Permitted Azure Actions**
 ---- | ----
-General Resources | Deployments; Read availability statuses
+General Resources | Deployments<br>Read availability statuses
 Microsoft Insights | Alert rules
 Resource Groups | All
-Network and Load Balancers | Virtual Networks; Application gateways; join a backend gateway address pool; DNS availability check result; DNS Zone; Load Balancer; Network Interface; Network Security Group; Network Watcher; Operation (Get Operation Resource); Operation Result (Get operation result); Public IP Address; Route Table; Traffic Manager Profile; Usage Metric; Virtual Network; Virtual Network Subnet; Virtual Network Virtual Machines
-Storage | Name Availability; Operations; Storage Accounts; Usage Metrics
-Compute | Availability sets; Available Compute Operations; Disks; Operation; Snapshots; Usage Metrics; Virtual Machine Scale Sets; Virtual Machine Sizes; Virtual Machines;
+Network and Load Balancers | Virtual Networks<br>Application gateways<br>join a backend gateway address pool<br>DNS availability check result<br>DNS Zone<br>Load Balancer<br>Network Interface<br>Network Security Group<br>Network Watcher<br>Operation (Get Operation Resource)<br>Operation Result (Get operation result)<br>Public IP Address<br>Route Table<br>Traffic Manager Profile<br>Usage Metric<br>Virtual Network<br>Virtual Network Subnet<br>Virtual Network Virtual Machines
+Storage | Name Availability<br>Operations<br>Storage Accounts<br>Usage Metrics
+Compute | Availability sets<br>Available Compute Operations<br>Disks<br>Operation<br>Snapshots<br>Usage Metrics<br>Virtual Machine Scale Sets<br>Virtual Machine Sizes<br>Virtual Machines
