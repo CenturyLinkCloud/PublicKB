@@ -47,13 +47,13 @@
 
 <p>Choose a load balancer persistence type. The choices include "standard" or "sticky." The standard option employs no persistence and is best for stateless web applications. If an application does require server-based state, then choose the sticky option.
   The sticky choice uses source IP + destination IP address-based persistence to tie users to the target server.</p>
-<p><strong>How do the load balancer method and persistence work together?&nbsp;</strong>If you choose round robin or least connection along with <strong>standard</strong> persistence, then requests are routed without any concern for where the last user's
-  request came from. If you choose round robin or least connection along with <strong>sticky</strong> persistence, then the FIRST request will be routed based on either round robin or least connection, and each subsequent request from that source IP address
+<p><strong>How do the load balancer method and persistence work together?&nbsp;</strong>If you choose round robin or least connection along with <strong>None</strong> persistence, then requests are routed without any concern for where the last user's
+  request came from. If you choose round robin or least connection along with <strong>Source IP</strong> persistence, then the FIRST request will be routed based on either round robin or least connection, and each subsequent request from that source IP address
   will return to the server that responded to the initial request.
   <br />
   <br />
 </p>
-<p><img src="https://t3n.zendesk.com/attachments/token/wpLlbtlmdfCgRetQV89D6aRnh/?name=07.png" alt="07.png" />
+![](../images/LBaaS/Misc/persistence.png)
 </p>
 
 <p>Add a line item for each server that is included in this load balancing pool. Include the server's&nbsp;<strong>private&nbsp;</strong><strong>IP</strong> address (visible from the server overview page) and the port that is serving the content. To add
