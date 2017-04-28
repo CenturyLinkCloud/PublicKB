@@ -138,7 +138,7 @@
       * MakeStub.exe - https://download.safehaven.ctl.io/SH-4.0.1/MakeStub-4.0.1.exe
 
     * Script to Turn a Ubuntu-14 VM as a Recovery Proxy for Protected Windows VM - https://download.safehaven.ctl.io/SH-4.0.1/makestub_for_windows.sh
-    * Linux Onboarding Script - https://www.ctl.io/knowledge-base/disaster-recovery/linux-onboarding-releases/
+    * Linux Onboarding Script - https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-4/linux-onboarding-releases/
 
 
 * __MSSQL DBaaS Beta__
