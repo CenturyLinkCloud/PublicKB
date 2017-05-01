@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Feature Availability Matrix",
-  "date": "3-30-2017",
+  "date": "5-1-2017",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -28,6 +28,7 @@ The CenturyLink Cloud provides a vast array of services for customers to consume
 [Managed Applications](//www.ctl.io/managed-services)|US West (Santa Clara) - UC1<br>US East (Sterling) - VA1<br>US Central (Chicago) - IL1<br>Great Britain (Slough) - GB3<br>Canada (Toronto - Mississauga) - CA3<br>APAC (Singapore) - SG1
 [Managed Backup](//www.ctl.io/managed-services/backup)|US West (Santa Clara) - UC1<br>US Central (Chicago) - IL1<br>US East (Sterling) - VA1<br>Great Britain (Slough) - GB3<br>APAC (Singapore) - SG1<br>Canada (Toronto - Mississauga) - CA3
 [Cloud Network Services](//www.ctl.io/blog/post/use-cloud-network-service-for-making-hybrid-cloud-a-reality)|US West (Seattle) - WA1<br>US West (Santa Clara) - UC1<br>US Central (Chicago) - IL1<br>US East (New York) - NY1<br>US East (Sterling) - VA1<br>Great Britain (Portsmouth) - GB1<br>Great Britain (Slough) - GB3<br>Canada (Toronto - Mississauga) - CA3<br>Germany (Frankfurt) - DE1<br>APAC (Singapore) - SG1
+[Network Exchange](//www.ctl.io/network-exchange/)|US West (Santa Clara) - UC1<br>US Central (Chicago) - IL1<br>US East (New York) - NY1<br>US East (Sterling) - VA1<br>US East (Sterling) - VA2<br>Great Britain (Slough) - GB3<br>Canada (Toronto - Mississauga) - CA3
 [Object Storage](//www.ctl.io/object-storage)|Canada Region<sup>1</sup><br>US East<sup>1</sup><br>US West<sup>1</sup>
 
 1.  **Service is delivered by Region but is accessible as a public service globally**
