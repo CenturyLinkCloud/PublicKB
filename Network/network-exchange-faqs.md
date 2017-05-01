@@ -64,11 +64,7 @@
 
 **Q: Can I view the usage/speed/performance of each of my connections?**
 
-<<<<<<< HEAD
 **A:** Both ingress and egress traffic measurements are provided per endpoint.
-=======
-**A:** Both ingress and egress traffic measurements are provided per endpoint. 
->>>>>>> CenturyLinkCloud/master
 
 **Q: What kind of workloads or scenarios is Network Exchange designed for?**
 
