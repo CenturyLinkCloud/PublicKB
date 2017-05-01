@@ -12,7 +12,6 @@
 
 The table, below, documents the metropolitan areas where Network Exchange is offered and the type and identity of endpoints that are available there for inclusion into an Exchange. Please note any constraints in the following section.
 
-<<<<<<< HEAD
 | Metro Area | Colocation / Dedicated Cloud Compute | Managed Hosting | CenturyLink Cloud |
 |-----------------|:-----------------------------:|:-----------------:|:-------------------:|
 | Ashburn, VA | DC2 | DC2, DC3, DC4 | VA1, VA2 |
@@ -21,7 +20,7 @@ The table, below, documents the metropolitan areas where Network Exchange is off
 | New Jersey | NJ2 | NJ2, NJ2X | NY1 |
 | London, UK | LO1 | LO1 | GB3 |
 | Toronto, Canada | TR1 | TR1 | CA3 |
-=======
+
 Metro Area|Colocation/<br>Dedicated Cloud Compute|Managed Hosting|CenturyLink Cloud
 ----------|------------------------------------|---------------|-----------------
 Ashburn, VA|DC2|DC2<br>DC3<br>DC4|VA1<br>VA2
@@ -30,7 +29,6 @@ Chicago, IL|CH3|CH3|IL1
 New Jersey|NJ2|NJ2<br>NJ2X|NY1
 London, UK|LO1|LO1|GB3
 Toronto, Canada|TR1|TR1|CA3
->>>>>>> CenturyLinkCloud/master
 
 Please monitor Network Exchange release notes on ctl.io for additional site availability.
 
