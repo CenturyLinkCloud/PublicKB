@@ -12,7 +12,8 @@
 
 The table, below, documents the metropolitan areas where Network Exchange is offered and the type and identity of endpoints that are available there for inclusion into an Exchange. Please note any constraints in the following section.
 
-| Metro Area | Colocation / Dedicated Cloud Compute | Managed Hosting | CenturyLink Cloud | |-----------------|:-----------------------------:|:-----------------:|:-------------------:|
+| Metro Area | Colocation / Dedicated Cloud Compute | Managed Hosting | CenturyLink Cloud |
+|-----------------|:-----------------------------:|:-----------------:|:-------------------:|
 | Ashburn, VA | DC2 | DC2, DC3, DC4 | VA1, VA2 |
 | Santa Clara, CA | SC8 | SC8, SC9 | UC1 |
 | Chicago, IL | CH3 | CH3 | IL1 |
