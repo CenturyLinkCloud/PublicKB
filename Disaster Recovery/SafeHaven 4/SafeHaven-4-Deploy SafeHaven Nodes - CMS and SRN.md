@@ -1,41 +1,51 @@
 {{{
-  "title": "SafeHaven-4-Deploy SafeHaven Nodes - CMS and SRNs",
+  "title": "SafeHaven-4-Deploy SafeHaven Nodes - CMS and SRN in CenturyLink Cloud",
   "date": "05-01-2016",
   "author": "Sharon Wang",
   "attachments": [],
   "contentIsHTML": false
 }}}
+
 ## Article Overview
-This article explains how to Deploy the server that will become the CMS and SRNs.
+This article explains how to deploy the Central Management Server(CMS) and SafeHaven Replication Node(SRN) in CenturyLink Cloud.
+
+A single CMS server is required for a single SafeHaven Cluster. Typically CMS resides in the DR datacenter so that users can access it and manage their SafeHaven environment, even if the production datacenter is unavailable. In this scenario our DR site is CA2-Canada(Toronto) in CenturyLink Cloud.
+
+SRN resides in both production and DR datacenters. A single SafeHaven cluster can have upto 64 SRN's registered. Total number of SRN's depend on 
 
 ### Assumption
-This article assumes that you already have an account for the CenturyLink Cloud. Begin by logging into the Control Portal.
+This article assumes that you already have an account in CenturyLink Cloud. Begin by logging into the Control Portal at https://control.ctl.io 
 
 ![Upgrade](../../images/SH4.0/Create%20Nodes/Nodes1.png)
 
-### Deploy the server that will become the CMS  
+### Deploy the Central Management Server (CMS)
 
-We now will deploy the server that will become the Central Management Server (CMS) for the SafeHaven Cluster. This server acts as the master server for the Cluster.  Commands from the SafeHaven Console are parsed by the CMS and then sent for execution to the appropriate SRNs in the appropriate data centers.
+We now will deploy the server that will become the Central Management Server (CMS) for the SafeHaven Cluster. CMS acts as a master server for the SafeHaven Cluster and commands from the SafeHaven Console (GUI) are parsed by the CMS and then sent for execution to the appropriate SRNs in the appropriate data centers.
 
-Select Servers under the Infrastructure tab.
+Select **Servers** under the **Infrastructure** tab.
 
 ![Upgrade](../../images/SH4.0/Create%20Nodes/Nodes2.png)
 
-Next select the data center you want for recovery and create a server group for the SafeHaven nodes in that data center. 
+
+Select the **Recovery DataCenter** (in this case its CA2-Canada (Toronto)) and the appropriate **Server Group** to deploy the CMS.
 
 ![Upgrade](../../images/SH4.0/Create%20Nodes/Nodes3.png)
 
-Within that group create a server by selecting create and then server from the drop-down menu.
+
+Select the **Server Group** and click on **Create Server** from the drop-down menu.
 
 ![Upgrade](../../images/SH4.0/Create%20Nodes/Nodes4.png)
 
-The Create Server panel appears. Select the Standard server type.
+
+Under the **Create Server** section, select the **Standard** server type.
 
 ![Upgrade](../../images/SH4.0/Create%20Nodes/Nodes5.png)
 
-Under operating system, select Ubuntu 14 | 64 bit. Provide a name for the CMS server and a description.  Provide a root password and confirm it.
+
+Select **Ubuntu 14 | 64 bit** as the **Operating System** type. Provide a **Name** and **Description** for the CMS. Provide a strong **root password** and confirm it.
 
 ![Upgrade](../../images/SH4.0/Create%20Nodes/Nodes6.png)
+
 
 Configure the CMS server with 2 virtual CPU and 4 GB of memory.
 
