@@ -62,6 +62,10 @@
 
 **A:** An exchange consists of two or more endpoints, all of which may communicate with each other.
 
-**Q: Can I view the usage/speed/performance of each of my connections?A: Both ingress and egress traffic measurements are provided per endpoint. Q: What kind of workloads or scenarios is Network Exchange designed for?**
+**Q: Can I view the usage/speed/performance of each of my connections?**
+
+**A:** Both ingress and egress traffic measurements are provided per endpoint. 
+
+**Q: What kind of workloads or scenarios is Network Exchange designed for?**
 
 **A:** Network Exchange is designed for most common Hybrid IT workloads. For example, applications reliant on data or services in other environments, file transfer of large or small amounts of data, reliably accessing data/resources in another environment, replication, backups, along with being a key element for a business continuity or a disaster recovery strategy. It is not intended for streaming video or voice.
