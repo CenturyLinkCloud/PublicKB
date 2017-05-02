@@ -10,7 +10,7 @@ This article explains how to create a SafeHaven Cluster.
 
 ### Requirements
 1) Pre-deployed CMS server in CenturyLink Cloud.
-2) Network access for the CMS.
+2) Network access to the CMS.
 
 ### Assumption
 This article assumes that the user has already deployed the CMS server in CenturyLink Cloud.
@@ -18,96 +18,55 @@ This article assumes that the user has already deployed the CMS server in Centur
 To create the CMS please refer to [SafeHaven-4-Deploy CMS and SRN in CenturyLink Cloud](SafeHaven-4-Deploy%20CMS%20and%20SRN%20in%20CenturyLink%20Cloud.md)
 
 
-### Deploy SafeHaven Console 
+### SafeHaven Cluster Installation
 
 Begin by downloading the latest SafeHaven Console (GUI) from the **GUI Package** download link (https://download.safehaven.ctl.io/SH-4.0.1/SafeHavenConsole-4.0.1.zip) under the **Download Links** section of the [SafeHaven 4.0.1 Release Notes](safehaven-4.0.1-release.md).
 
-
-After the download completes, launch the Console by clicking on its icon. Select Create New Cluster, accept the license agreement, and select Next.
+Launch the Console by clicking on its icon. Select **Create New Cluster**.
 
 ![Upgrade](../../images/SH4.0/Cluster/01.png)
 
+Accept the **End User License Agreement** and click **Next**.
+
 ![Upgrade](../../images/SH4.0/Cluster/02.png)
 
-Enter the name of your organization and the license key provided to you by your Onboarding Engineer.
+Enter the **Customer Name** and the **License key** provided to you by your CenturyLink Onboarding Engineer.
 
 ![Upgrade](../../images/SH4.0/Cluster/03.png)
 
-Enter the name you selected for the CMS along with the client and service access IP addresses and the administrator password. Enter the CMS root password and the SafeHaven distribution URL provided to you by your account manager. Enter 20081 for the Service Port, 20081 for the Heartbeat Port and 0000 for the installation ID. 
+Enter the following fields:
+1) CMS hostname in the **Node Name**
+2) **Client Access IP** (CMS IP that used to connect to the SafeHaven Console GUI) and **Service Access IP** (CMS IP that is used for communication between CMS and SRN). Typically CMS Private IP address is entered in these fields. You can get this information from the CenturyLink Control Portal.
+3) Set the **Administrator Password** (Password required to login to the SafeHaven Console GUI to manange the SafeHaven)
+4) Enter the **CMS root password**. You can get this information from the CenturyLink Control Portal.
+5) Click on **Test Login** to confirm connectivity to the CMS.
+5) Copy the **Debian Package for CMS/SRN** link from the **Download Links** section of the [SafeHaven 4.0.1 Release Notes](safehaven-4.0.1-release.md) and enter it in the **SafeHaven 4.0.1 distribution URL** section. Please contact your CenturyLink Onboarding Engineer if you have any questions regarding the latest version of **Debian Package for CMS/SRN**.
+6) Do not modify the Service Port (TCP) , Heartbeat Port (UDP) , Installation ID.
+
+Click **Next**
 
 ![Upgrade](../../images/SH4.0/Cluster/04.png)
 
-You will need to wait a few moments while the SafeHaven software is downloaded, installed, and configured. When this process is complete, a pop-up window appears to let you know that the installation was successful. Select OK and then Finish. Note that the CMS will reboot as part of the installation procedure. After the CMS reboot, log in to the SafeHaven Console using the IP address for the CMS server and the administrator credentials.
+Wait for the SafeHaven software to complete the configuration of the CMS server. When this process is complete, a pop-up window appears to let you know that the installation is successful. Select **OK** and then **Finish**. 
+Note that the CMS will reboot as part of the installation procedure.
+
+### Login to the SafeHaven Console
+
+Login to the **SafeHaven Console** by using the **Client Access IP address** for the CMS (typically the private IP of CMS). Enter **Administrator** in the **User** field and enter the Administrator **Password** you had set during the cluster installation procedure stated above. Click **Log In**.
 
 ![Upgrade](../../images/SH4.0/Cluster/05.png)
 
-A pop-up panel appears requesting installation of an SSL certificate. Select Install.This will require Administrator right
+**Install** the SSL Certificate (This will require Administrator rights).
 
 ![Upgrade](../../images/SH4.0/Cluster/06.png)
 
-The SafeHaven Console will appear. You have now completed the installation of the software for the SafeHaven nodes.
-
-### Register the production and recovery data centers
-
-Within the SafeHaven Console, right-click on the CMS in the Navigation Tree and select Register Data Center from the drop-down menu. First, we will register the recovery data center.
+The **SafeHaven Cluster** will appear. The SafeHaven Cluster has now been created and you can start configuring it now.
 
 ![Upgrade](../../images/SH4.0/Cluster/07.png)
 
-Enter a name for the data center and the data center type. In this case, we assume you will recover in the CenturyLink Cloud so the data center type is CenturyLink Cloud. Select Register.
+### Next Step:
 
-![Upgrade](../../images/SH4.0/Cluster/08.png)
-
-Next register the production data center by following a similar procedure. If your production data center is at your premises or at co-location facility and managed directly through VMware vCenter Server, select VMware vSphere as the data center type. If your private data center does not have access to VMware vCenter Server, select Manual as the data center type.
-
-Now select the recovery data center in the Navigation Tree and select Change Credentials in the main data panel.
-
-![Upgrade](../../images/SH4.0/Cluster/09.png)
-
-A pop-up panel appears. Enter your user name and password for CenturyLink Cloud administration.
-
-![Upgrade](../../images/SH4.0/Cluster/10.png)
-
-Enter your account alias, identify the data center with one of the CenturyLink data centers and select Finish.
-
-![Upgrade](../../images/SH4.0/Cluster/11.png)
-
-Now perform the same tasks for the production data center. You have now registered the production and recovery data center with the SafeHaven Cluster.
-
-### Register the SRNs
-
-Right-click on the recovery data center within the Navigation Tree and select Register SRN from the drop-down menu.
-
-![Upgrade](../../images/SH4.0/Cluster/12.png)
-
-A pop-up panel appears. Provide a name for the SRN. You may want to match the name already provided for the SRN by the CenturyLink Cloud. Next provide the root password, the Service IP, WAN Replication IP, and local iSCSI IP along with the service ports for TCP and UDP (both have default values of 20082). Select Register.
-
-![Upgrade](../../images/SH4.0/Cluster/13.png)
-
-If you need additional SRNs in the recovery data center, use a similar procedure to register them as well.
-
-Using a similar procedure, register the SRNs in the production data center.
-
-### Establish peering between SRNs and claim storage
-
-Next we must establish peering relationships between SRNs in the production and recovery data centers. Select an SRN in the recovery data center. Select the Peers tab in the main data panel, then select Add peer.
-
-![Upgrade](../../images/SH4.0/Cluster/14.png)
-
-A pop-up panel appears. Provide the root password for the recovery SRN. Next, identify the SRN in the production data center which needs to act as a peer. Provide its root password as well. Select Register.
-
-![Upgrade](../../images/SH4.0/Cluster/15.png)
-
-Finally, you need to claim storage pools for each SRN. In the Navigation Tree, select an SRN in the recovery data center. In the main data panel under the Properties tab, select Claim Storage Pool.
-
-![Upgrade](../../images/SH4.0/Cluster/16.png)
-
-A pop-up panel appears. Select the radio button to Claim a New Storage Pool. Provide the new pool a name. Select Claim.
-
-![Upgrade](../../images/SH4.0/Cluster/17.png)
-
-Perform a similar task for all other SRNs in the recovery data center and also for the SRNs in the production data center. 
-
-
+ [SafeHaven-4-Register Sites and SRN within a SafeHaven Cluster](SafeHaven-4-Register%20Sites%20and%20SRN%20within%20a%20SafeHaven%20Cluster.md).
 
 
 
