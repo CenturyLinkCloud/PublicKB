@@ -83,7 +83,7 @@ Configure the SRN with **2 vCPU** and **4GB of memory**.(bare minimum requiremen
 
 Under the **Network** section, select a **network** (VLAN) that will have connectivity to the peer SRN, CMS and the appropriate recovery / production servers(depending on the environemnt) and enter the appropriate **Primary and Secondary DNS**. Click on **Create Server**. Wait for the server to get deployed.
 
-![Upgrade](../../images/SH4.0/Create%20Nodes/Nodes12.png)
+![Upgrade](../../images/SH4.0/Create%20Nodes/Nodes19.png)
 
 
 
