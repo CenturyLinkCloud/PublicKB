@@ -221,6 +221,10 @@ A: No. This is a manual process at this time. A [support request](https://www.ct
 
 A: This provides the ability to utilize incremental backups with consistent full backup protection. By not expiring unchanged files, there is no need to retransfer them to object storage, which minimizes data transfer costs and provides quicker backups. Bottom line is that it provides quicker and cheaper backups for our users.
 
+**Q: What is the maximum retention period for backups?**
+
+A: 18263 days (approximately 50 years)
+
 ### Inclusions and Exclusions
 
 **Q: Which files/folders are automatically excluded from the backups?**
