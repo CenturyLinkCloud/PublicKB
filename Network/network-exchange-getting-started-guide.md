@@ -1,5 +1,5 @@
 {{{
-  "title": "Network Exchange Connectivity Matrix and Configuration Guide",
+  "title": "Network Exchange Getting Started Guide",
   "date": "04-27-2017",
   "author": "Rob Lesieur",
   "attachments": [],

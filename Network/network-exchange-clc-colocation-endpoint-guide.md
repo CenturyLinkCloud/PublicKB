@@ -15,7 +15,7 @@
 
 ### Colocation Endpoint Capabilities
 
-* Up to 10Gb/s of shared bandwidth to and from the colocation site. Network performance is offered as “best effort”. [reference SLA]
+* Up to 10Gb/s of shared bandwidth to and from the colocation site. Network performance is offered as “best effort”. 
 * Choices of 1Gb/s and 10Gb/s dedicated connectivity between the End User’s equipment and Network Exchange equipment.
 * Fully automated setup and tear down of connections to the End User’s dedicated ports on the terminating Network Exchange equipment.
 * BGP is used for dynamically managing routes between Network Exchange and the End User’s network.
