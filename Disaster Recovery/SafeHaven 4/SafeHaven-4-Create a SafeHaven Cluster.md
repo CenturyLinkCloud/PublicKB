@@ -9,7 +9,12 @@
 This article explains how to create a SafeHaven Cluster.
 
 ### Assumption
-This article assumes that you already created CMS and SRN servers with storage attached to SRNs.
+This article assumes that the user has already deployed the CMS and SRN servers.
+
+To create CMS and SRN, please refer to the following KB articles:
+1) [SafeHaven-4-Deploy CMS and SRN in CenturyLink Cloud](SafeHaven-4-Deploy%20CMS%20and%20SRN%20in%20CenturyLink%20Cloud.md)
+
+2) [SafeHaven-4-Deploy SRN in VMware (Private or On-premise DataCenter)](SafeHaven-4-Deploy%20SRN%20in%20VMware%20(Private%20or%20On-premise%20DataCenter).md)
 
 ### Deploy SafeHaven Console 
 
