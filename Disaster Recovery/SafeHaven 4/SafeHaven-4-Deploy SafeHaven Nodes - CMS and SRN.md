@@ -7,7 +7,7 @@
 }}}
 ## Article Overview
 This article explains how to Deploy the server that will become the CMS and SRNs.
-test
+
 ### Assumption
 This article assumes that you already have an account for the CenturyLink Cloud. Begin by logging into the Control Portal.
 
