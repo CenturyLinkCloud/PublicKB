@@ -11,7 +11,7 @@ This article explains how to deploy the Central Management Server(CMS) and SafeH
 
 A single CMS server is required for a single SafeHaven Cluster. Typically CMS resides in the DR datacenter so that users can access it and manage their SafeHaven environment, even if the production datacenter is unavailable. In this scenario our DR site is CA2-Canada(Toronto) in CenturyLink Cloud.
 
-SRN resides in both production and DR datacentersand work in pairs. A single SafeHaven Cluster can have upto 64 SRN's registered. Total number of SRN's depend on the size and type of environment that needs to be protected. 
+SRN resides in both production and DR datacenters and work in pairs. A single SafeHaven Cluster can have upto 64 SRN's registered. Total number of SRN's depend on the size and type of environment that needs to be protected. 
 
 Please refer to the **Support Matrix** section in the [SafeHaven 4.0.1 Release Notes](safehaven-4.0.1-release.md) for more information.
 
