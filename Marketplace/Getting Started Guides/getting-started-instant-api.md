@@ -172,6 +172,6 @@ This concludes our quick start step-by-step guide on creating your very first AP
 
 For issues related to cloud infrastructure (VM's, network, etc.) or if you experience a problem deploying the Blueprint or Script Package, open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or through the CenturyLink Cloud Support website.
 
-For InstantAPI support related questions, please send an email to: [support@instantapi.com](support@instantapi.com).
+For InstantAPI support related questions, please send an email to: [support@instantapi.com](mailto:support@instantapi.com).
 
 For enterprise sales, please send an email to: [sales@instantapi.com](mailto:sales@instantapi.com).
