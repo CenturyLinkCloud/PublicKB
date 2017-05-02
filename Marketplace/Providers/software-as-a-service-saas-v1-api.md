@@ -8,7 +8,7 @@
 
 ### Overview
 
-*New integrations with the v1 API are not permitted after April 8, 2017. All providers should should reference the SaaS v2 API documentation*
+*New integrations with the v1 API are not permitted after April 8, 2017. All providers should should reference the [SaaS v2 API documentation](/software-as-a-service-saas-v2-api.md)*
 
 CenturyLink has created multiple opportunities for software vendors to integrate with the Cloud Marketplace. Each of these methods is designed for the provider to be as independent as possible as they work through the integration process.  To be included in the Cloud Marketplace, a SaaS provider must implement one of these methods. During the Marketplace Provider Onboarding Program, we will discuss which integration type is the best fit. 
 ### Integration Types
