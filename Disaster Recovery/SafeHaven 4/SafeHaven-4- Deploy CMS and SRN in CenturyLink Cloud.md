@@ -13,7 +13,7 @@ A single CMS server is required for a single SafeHaven Cluster. Typically CMS re
 
 SRN resides in both production and DR datacenters. A single SafeHaven Cluster can have upto 64 SRN's registered. Total number of SRN's depend on the size and type of environment that needs to be protected. 
 
-Please refer to the **Support Matrix** section in the **SafeHaven 4.0.1 Release Notes**: PublicKB/Disaster Recovery/SafeHaven 4/safehaven-4.0.1-release.md for more information.
+Please refer to the **Support Matrix** section in the [SafeHaven 4.0.1 Release Notes](safehaven-4.0.1-release.md) for more information.
 
 ### Requirements
 
