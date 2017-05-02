@@ -86,7 +86,10 @@ Under the **Network** section, select a **network** (VLAN) that will have connec
 ![Upgrade](../../images/SH4.0/Create%20Nodes/Nodes19.png)
 
 
+You have now completed the deployment of CMS and SRN in CenturyLink Cloud. After completing the deployment of all the required SRNs, you can then start installation of the SafeHaven Cluster.
 
+### Next Step
+[SafeHaven-4-Create a SafeHaven Cluster](SafeHaven-4-Create%20a%20SafeHaven%20Cluster.md)
 
 
 
