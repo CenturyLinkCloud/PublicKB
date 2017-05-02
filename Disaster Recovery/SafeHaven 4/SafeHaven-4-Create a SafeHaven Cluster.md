@@ -9,17 +9,19 @@
 This article explains how to create a SafeHaven Cluster.
 
 ### Requirements
-Pre-deployed CMS server in CenturyLink Cloud.
+1) Pre-deployed CMS server in CenturyLink Cloud.
+2) Network access for the CMS.
 
 ### Assumption
 This article assumes that the user has already deployed the CMS server in CenturyLink Cloud.
 
-To create CMS and SRN, please refer to [SafeHaven-4-Deploy CMS and SRN in CenturyLink Cloud](SafeHaven-4-Deploy%20CMS%20and%20SRN%20in%20CenturyLink%20Cloud.md)
+To create the CMS please refer to [SafeHaven-4-Deploy CMS and SRN in CenturyLink Cloud](SafeHaven-4-Deploy%20CMS%20and%20SRN%20in%20CenturyLink%20Cloud.md)
 
 
 ### Deploy SafeHaven Console 
 
-Begin by downloading the latest compatible SafeHaven Console (GUI) from the GUI Package download link (https://download.safehaven.ctl.io/SH-4.0.1/SafeHavenConsole-4.0.1.zip) under the Download Links section of the SafeHaven 4.0.1 release notes : https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-4/safehaven-4.0.1-release/
+Begin by downloading the latest SafeHaven Console (GUI) from the **GUI Package** download link (https://download.safehaven.ctl.io/SH-4.0.1/SafeHavenConsole-4.0.1.zip) under the **Download Links** section of the [SafeHaven 4.0.1 Release Notes](safehaven-4.0.1-release.md).
+
 
 After the download completes, launch the Console by clicking on its icon. Select Create New Cluster, accept the license agreement, and select Next.
 
