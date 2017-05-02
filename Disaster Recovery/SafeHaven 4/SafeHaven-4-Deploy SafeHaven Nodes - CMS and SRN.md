@@ -47,13 +47,16 @@ Select **Ubuntu 14 | 64 bit** as the **Operating System** type. Provide a **Name
 ![Upgrade](../../images/SH4.0/Create%20Nodes/Nodes6.png)
 
 
-Configure the CMS server with 2 virtual CPU and 4 GB of memory.
+Configure the CMS server with **1 vCPU** and **2GB of memory**.
 
 ![Upgrade](../../images/SH4.0/Create%20Nodes/Nodes7.png)
 
-Under the Network section, select a VLAN that will have connectivity to the SRNs and select the appropriate production and recovery DNS servers. Select create server.
+
+Under the **Network** section, select a **network** (VLAN) that will have connectivity to the all the SRNs (both in production and DR datacenter) and select the appropriate **Primary and Secondary DNS**. Click on **Create Server**.
 
 ![Upgrade](../../images/SH4.0/Create%20Nodes/Nodes8.png)
+
+
 
 ### Deploy server for SRN in the recovery data center  
 
