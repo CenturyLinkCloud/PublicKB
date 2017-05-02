@@ -11,10 +11,17 @@ This article explains how to deploy the Central Management Server(CMS) and SafeH
 
 A single CMS server is required for a single SafeHaven Cluster. Typically CMS resides in the DR datacenter so that users can access it and manage their SafeHaven environment, even if the production datacenter is unavailable. In this scenario our DR site is CA2-Canada(Toronto) in CenturyLink Cloud.
 
-SRN resides in both production and DR datacenters. A single SafeHaven Cluster can have upto 64 SRN's registered. Total number of SRN's depend on the size and type of environment that needs to be protected. Please refer to the **Support Matrix** section in the **SafeHaven 4.0.1 Release Notes**: PublicKB/Disaster Recovery/SafeHaven 4/safehaven-4.0.1-release.md for more information.
+SRN resides in both production and DR datacenters. A single SafeHaven Cluster can have upto 64 SRN's registered. Total number of SRN's depend on the size and type of environment that needs to be protected. 
 
-### Assumption
-This article assumes that you already have an account in CenturyLink Cloud. Begin by logging into the Control Portal at https://control.ctl.io 
+Please refer to the **Support Matrix** section in the **SafeHaven 4.0.1 Release Notes**: PublicKB/Disaster Recovery/SafeHaven 4/safehaven-4.0.1-release.md for more information.
+
+### Requirements
+
+Login access to the CenturyLink Cloud Portal at https://control.ctl.io.
+
+### Assumptions
+
+This article assumes that the user has login access to the CenturyLink Cloud Portal. Begin by logging into the Control Portal at https://control.ctl.io 
 
 ![Upgrade](../../images/SH4.0/Create%20Nodes/Nodes1.png)
 
