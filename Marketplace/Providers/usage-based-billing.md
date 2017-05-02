@@ -8,6 +8,6 @@
  
  ###Usage Based Billing
  
- Many providers require a usage based element to their subscription model. The CenturyLink Cloud Marketplace does support **Usage Based Billing** via our v2 SaaS API (Circle Back & Embed Link).
+ Many providers require a usage based element to their subscription model. The CenturyLink Cloud Marketplace does support **Usage Based Billing** via our v2 [SaaS API](/software-as-a-service-saas-v2-api.md).
  
  For more information, please contact us at [Marketplace@ctl.io](mailto: marketplace@ctl.io).
