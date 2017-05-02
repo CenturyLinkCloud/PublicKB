@@ -1,5 +1,5 @@
 {{{
-  "title": "SafeHaven-4-Deploy SafeHaven Nodes - CMS and SRN",
+  "title": "SafeHaven-4-Deploy SafeHaven Nodes - CMS and SRNs",
   "date": "05-01-2016",
   "author": "Sharon Wang",
   "attachments": [],
