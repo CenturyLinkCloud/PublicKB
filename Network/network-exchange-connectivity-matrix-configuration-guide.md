@@ -12,7 +12,6 @@
 
 The table, below, documents the metropolitan areas where Network Exchange is offered and the type and identity of endpoints that are available there for inclusion into an Exchange. Please note any constraints in the following section.
 
-
 Metro Area|Colocation/<br>Dedicated Cloud Compute|Managed Hosting|CenturyLink Cloud
 ----------|------------------------------------|---------------|-----------------
 Ashburn, VA|DC2|DC2<br>DC3<br>DC4|VA1<br>VA2
