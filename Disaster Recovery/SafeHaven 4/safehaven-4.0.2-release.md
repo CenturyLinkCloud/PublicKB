@@ -17,9 +17,9 @@ This is a patch release for [SafeHaven 4.0.1](https://www.ctl.io/knowledge-base/
 1. Removed of the use of `/var/cms/dvol_list` file on CMS the writing of which at some busy situations might  too much disk IO, thus impacting CMS performance.
 2. Allows the deletion of a protection group even if it is in a "Failover" state.
 3. Slight improvement of the test failover temporary space allocation policy
-  * There is minimal temporary space requirement of 2GB.
-  * GUI will suggest a default 5GB temporary space.
-  * Automatic deletion of the test failover instance when there is less than 1GB of free space left.
+   * There is minimal temporary space requirement of 2GB.
+   * GUI will suggest a default 5GB temporary space.
+   * Automatic deletion of the test failover instance when there is less than 1GB of free space left.
 
 
 ### Download Links
