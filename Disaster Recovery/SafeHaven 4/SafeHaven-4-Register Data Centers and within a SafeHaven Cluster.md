@@ -1,5 +1,5 @@
 {{{
-  "title": "SafeHaven-4-Register Sites and SRN within a SafeHaven Cluster",
+  "title": "SafeHaven-4-Register Data Center and SRN within a SafeHaven Cluster",
   "date": "05-03-2016",
   "author": "Mahima Kumar",
   "attachments": [],
@@ -7,27 +7,41 @@
 }}}
 
 ## Article Overview
+This article focusses on how to: 
+1) Register datacenters and SRN's within the SafeHaven Console for CenturyLink Cloud, VMware vSphere and Manual (Standalone VMware ESXi hosts and DCC) datacenter type
+2) Pair the SRN's together to set up Protection Groups
+
+A single SafeHaven Cluster can have upto 64 datacenters registered within itself and each production and recovery datacenter has to be registered within the SafeHaven Console before protecting/recovering any workload.
+There are 4 **Data Center Type** types available: 
+1) VMware vSphere
+2) VMware vCloud Director
+3) CenturyLink Cloud
+4) Manual (Standalone VMware ESXi hosts and DCC)
+
+NOTE: For CenturyLink Cloud, each sub-account has to be registered as a separate datacenter.
 
 ### Requirements
+1) SafeHaven Cluster already installed
+2) CMS and SRNs to have proper network connectivity as per [SAHA4.0 Networking](SAHA4.0%20Networking.md)
 
+### Assumptions
+SafeHaven Cluster already installed with proper network connectivity between CMS and SRN.
 
-### Register the production and recovery data centers
+### Register Data Center in CenturyLink Cloud
 
-Within the SafeHaven Console, right-click on the CMS in the Navigation Tree and select Register Data Center from the drop-down menu. First, we will register the recovery data center.
+Within the SafeHaven Console, right-click on the **Administrator@Cluster** in the Navigation Tree on the left and select **Register Data Center** from the drop-down menu.
 
 ![Upgrade](../../images/SH4.0/Cluster/07.png)
 
-Enter a name for the data center and the data center type. In this case, we assume you will recover in the CenturyLink Cloud so the data center type is CenturyLink Cloud. Select Register.
+Enter **Data Center Name** and select **CenturyLink Cloud** as the **Data Center Type**. Click **Register**.
 
 ![Upgrade](../../images/SH4.0/Cluster/08.png)
 
-Next register the production data center by following a similar procedure. If your production data center is at your premises or at co-location facility and managed directly through VMware vCenter Server, select VMware vSphere as the data center type. If your private data center does not have access to VMware vCenter Server, select Manual as the data center type.
-
-Now select the recovery data center in the Navigation Tree and select Change Credentials in the main data panel.
+Now click on the Data Center you registered and under the **Properties** Panel click on **Change Credentials**.
 
 ![Upgrade](../../images/SH4.0/Cluster/09.png)
 
-A pop-up panel appears. Enter your user name and password for CenturyLink Cloud administration.
+Enter your **CenturyLink Username** and **Password** for CenturyLink Cloud administration. Click **Next**.
 
 ![Upgrade](../../images/SH4.0/Cluster/10.png)
 
