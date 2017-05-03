@@ -1,3 +1,15 @@
+{{{
+  "title": "SafeHaven-4-Register Sites and SRN within a SafeHaven Cluster",
+  "date": "05-03-2016",
+  "author": "Mahima Kumar",
+  "attachments": [],
+  "contentIsHTML": false
+}}}
+
+## Article Overview
+
+### Requirements
+
 
 ### Register the production and recovery data centers
 
