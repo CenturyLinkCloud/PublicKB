@@ -1,5 +1,5 @@
 {{{
-  "title": "SafeHaven-4-Register DataCenters, SRN and peer SRN's",
+  "title": "SafeHaven-4-Register Data Center and SRN within a SafeHaven Cluster",
   "date": "05-03-2016",
   "author": "Mahima Kumar",
   "attachments": [],
@@ -27,9 +27,30 @@ NOTE: For CenturyLink Cloud, each sub-account has to be registered as a separate
 ### Assumptions
 SafeHaven Cluster already installed with proper network connectivity between CMS and SRN.
 
-### Register Data Center in CenturyLink Cloud
+### Register Data Centers
+
+#### VMware Data Center
 
 Within the SafeHaven Console, right-click on the **Administrator@Cluster** in the Navigation Tree on the left and select **Register Data Center** from the drop-down menu.
+
+![Upgrade](../../images/SH4.0/Cluster/07.png)
+
+Enter **Data Center Name** and select the **Data Center Type**. Click **Register**.
+
+![Upgrade](../../images/SH4.0/Cluster2/01.png)
+
+Now click on the Data Center you registered and under the **Properties** Panel click on **Register**.
+
+![Upgrade](../../images/SH4.0/Cluster2/03.png)
+
+Create a name as your **vCenter Identifier**, enter your credentials for you VMware Data Centernk Cloud administration. Click **Next**.
+
+![Upgrade](../../images/SH4.0/Cluster2/04.png)
+
+
+#### Centurylink Cloud Data Center
+
+WWithin the SafeHaven Console, right-click on the **Administrator@Cluster** in the Navigation Tree on the left and select **Register Data Center** from the drop-down menu.
 
 ![Upgrade](../../images/SH4.0/Cluster/07.png)
 
@@ -84,3 +105,4 @@ A pop-up panel appears. Select the radio button to Claim a New Storage Pool. Pro
 ![Upgrade](../../images/SH4.0/Cluster/17.png)
 
 Perform a similar task for all other SRNs in the recovery data center and also for the SRNs in the production data center. 
+
