@@ -14,12 +14,17 @@
 ### New Features and Enhancements
 
 This is a patch release for [SafeHaven 4.0.1](https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-4/safehaven-4.0.1-release/). The following three feature/bug-fixes are introduced.
-1. Removed of the use of `/var/cms/dvol_list` file on CMS the writing of which at some busy situations might  too much disk IO, thus impacting CMS performance.
+1. Improving CMS performance under certain conditions by reducing file writes.
 2. Allows the deletion of a protection group even if it is in a "Failover" state.
 3. Slight improvement of the test failover temporary space allocation policy
    * There is minimal temporary space requirement of 2GB.
    * GUI will suggest a default 5GB temporary space.
    * Automatic deletion of the test failover instance when there is less than 1GB of free space left.
+   
+### Upgrade from 4.0.1 to 4.0.2
+
+* No change for OVA, Driver Installer, MakeStub.exe
+* [SafeHaven-4-Upgrade Procedure for Minor Releases(Syntropy and GUI Console)](https://github.com/MahimaKumar/PublicKB/blob/master/Disaster%20Recovery/SafeHaven%204/SafeHaven-4-Upgrade%20Procedure%20for%20Minor%20Releases(Syntropy%20and%20GUI%20Console).md)
 
 
 ### Download Links
