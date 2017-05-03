@@ -93,8 +93,6 @@ You have now completed the deployment of CMS and SRN in CenturyLink Cloud. After
 
 
 
-test
-
 
 
 
