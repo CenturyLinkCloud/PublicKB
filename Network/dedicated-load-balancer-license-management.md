@@ -8,7 +8,7 @@
 
 ### Overview
 
-CenturyLink Cloud dedicated Load Balancers provisioned in a customer's environment are customer managed devices, which includes management of the vendor license. Dedicated Load Balancers licenses are typically provisioned with an expiration date of one year. An expired license may impact functionality of the Load Balancer. To obtain a new license a [Support Request](../Support/how-do-i-report-a-support-issue.md) should be submitted.
+CenturyLink Cloud (CLC) dedicated Load Balancers provisioned in a customer's environment are customer-managed devices, which includes management of the vendor license. Dedicated Load Balancers licenses are typically provisioned with an expiration date of one year. An expired license may impact functionality of the Load Balancer. To obtain a new license a [Support Request](../Support/how-do-i-report-a-support-issue.md) should be submitted.
 
 ### Audience
 
@@ -24,7 +24,7 @@ CenturyLink Cloud customers with a dedicated Citrix Netscaler Load Balancer
 
 The Netscaler Load Balancer uses FlexLM licensing to license features on the product. A license check is done when the VPX boots. The licensing daemon (service) will start, check for a valid license and then stop the daemon (service). The VPX will then enable certain features determined by the license daemon (service). If a license is expired or invalid, the Netscaler will stop passing traffic.
 
-### How to Determine if a VPX is not Passing Traffic due to an Expired License
+### Determining If a VPX Is Not Passing Traffic Due to an Expired License
 
 #### CLI Method
 
@@ -42,7 +42,7 @@ The Netscaler Load Balancer uses FlexLM licensing to license features on the pro
 2. On the left-hand side menu, navigate to System->Licenses
 3. Review output. If the Model ID lists 1 instead of the proper model and the Load Balancing feature does not have a green checkmark, the license is expired. The Model ID should reflect the correct model (i.e.: 200) and the Load Balancing feature should have a green checkmark.
 
-### Determine the License Expiration Date
+### Determining the License Expiration Date
 
 **Note:** This step can only be performed via SSH and the CLI. The license expiration date in not available in the GUI.
 
@@ -73,6 +73,69 @@ The Netscaler Load Balancer uses FlexLM licensing to license features on the pro
   ```
   
 7. Observe the lines in the file that start with the word **INCREMENT** in all capital letters. This line contains the license expiration date.
+
+### Updating Licenses
+
+CLC will provide the license file(s) with corresponding LB management and RNAT IP addresses. You or your team should have received the login credentials for your dedicated load balancer during its creation, but let us know if you need assistance with this.
+
+There are two methods depending on if you are updating a lone LB or an HA pair. Steps for each situation are below.
+
+#### HA Pair
+
+Users may need to [configure Java](../General/how-to-configure-java-settings-to-access-web-user-interfaces.md) to ensure they can access the Web GUI.
+
+1. The following steps will need to be performed on each node, starting with the secondary load balancer first.
+   - For non-Windows users connect to the RNAT IP over SSH and add `.old` to the license filename, then use SCP to upload the file to `/nsconfig/license`.
+   - For Windows users, here are instructions for doing this via [WinSCP](https://winscp.net):
+      1. Connect to the RNAT IP.
+      2. You will see a screen with an explorer pane on the left and one on the right. The left one is your local machine. The right one is the NetScaler to which you just connected.
+      3. In the right pane, double-click the up arrow.
+      4. Double-click "nsconfig" to open that folder.
+      5. Open the license folder.
+      6. On the left pane, browse to the local license file.
+      7. On the right pane, add `.old` to the current license name.
+      8. Drag the new license from the left pane to the right pane.
+2. Once the new license has been uploaded to both nodes, identify and reboot the secondary device to pick up the new license.
+3. Open two tabs in a web browser.
+4. Connect to one management IP in one tab and the other management IP in the other tab.
+5. On the left, expand "System" then click "High Availability". You will then see which is the primary node and which is the secondary node.
+6. Start on the secondary device, expand "System", click diagnostics, then in the menu select command line interface.
+7. Enter `reboot`.
+8. Enter `yes` if prompted.
+9. Wait for the secondary device to finish booting (you will be able to log back in via the website).
+10. In the GUI of the secondary device, open the command line interface again like you just did a few steps ago.
+11. Enter `show ha node`. The output should indicate that the appliance is a secondary node and the state of synchronization.
+12. If synchronization is *not* disabled, run `set ha node -hasync disabled`.
+13. Run `force failover` to switch the secondary to primary.
+14. Reboot the secondary node (formerly the primary node) so it can pick up the new license.
+15. Some settings can get lost during this process. Repeat these next steps for each device.
+   1. Expand the "System" section, then verify that Load Balancing and SSL Offloading have a green check in the Licenses section.
+   2. Check the bottom of the left-hand column, it should say "model ID: 200". If not, you need to check and possibly re-apply the license file or reach out to our support team for assistance.
+   3. Click "Settings" on the left-hand menu, then click the "Configure basic features" link in the main frame.
+   4. Check everything *except NetScaler Gateway* and click OK.
+   5. Click the "Configure advanced features" link.
+   6. Enable "responder" and click OK.
+16. Now it's time to verify functionality. Connect to GUI on your new primary device (the first one you rebooted, or connect via RNAT).
+17. Click "Dashboard" at top left.
+18. Ensure that the “Established Client vs Server Connections” graph shows active connections.
+
+#### Standalone
+
+This process is very similar to handling the HA pair except no failover is needed.
+
+
+1. Rename the expired license file, then copy the new license to the NetScaler.
+   - For non-Windows users connect to the RNAT IP over SSH and add `.old` to the license filename, then use SCP to upload the file to `/nsconfig/license`.
+   - For Windows users, here are instructions for doing this via [WinSCP](https://winscp.net):
+      1. Connect to the RNAT IP.
+      2. You will see a screen with an explorer pane on the left and one on the right. The left one is your local machine. The right one is the NetScaler to which you just connected.
+      3. In the right pane, double-click the up arrow.
+      4. Double-click "nsconfig" to open that folder.
+      5. Open the license folder.
+      6. On the left pane, browse to the local license file.
+      7. On the right pane, add `.old` to the current license name.
+      8. Drag the new license from the left pane to the right pane.
+2. Reboot the NetScaler.
 
 ### Notes
 
