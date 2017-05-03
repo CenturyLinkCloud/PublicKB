@@ -10,7 +10,7 @@ This article explains how to perform a minor upgrade for SafeHaven.
 
 Minor Upgrade includes:
 * **SafeHaven Syntropy Service**
-* **SafeHaven GUI Console Upgrade**
+* **SafeHaven GUI Console**
 
 ### Assumption
 
@@ -20,9 +20,9 @@ This article assumes that the existing SafeHaven cluster is running on version 4
 
 Confirm that there are no jobs running in the SafeHaven Console at the time of the upgrade.
 
-### Update SafeHaven software (Syntropy)
+### SafeHaven Syntropy Service
 
-Login to your existing SafeHaven Cluster version and validate both **Syntropy version** and **SafeHaven Console version** is 4.0.1 by clicking on **About CenturyLink SafeHaven Console** under the **Help** tab.
+Login to your existing SafeHaven Cluster version and validate both **Syntropy version** and **SafeHaven Console version** are 4.0.1 by clicking on **About CenturyLink SafeHaven Console** under the **Help** tab.
 
 ![Upgrade](../../images/SH4.0/Upgrade/upgrade_1.png)
 
@@ -32,26 +32,25 @@ Click **Update Code...** under the **Administration** tab.
 ![Upgrade](../../images/SH4.0/Upgrade/upgrade_2.png)
 
 
-Input the URL of the update debian file, link (https://download.safehaven.ctl.io/SH-4.0.2/safehaven-4.0.2.deb) under the **Download Links** section of the [SafeHaven 4.0.2 release notes](safehaven-4.0.2-release.md)
+Input the URL [Debian Package for CMS/SRN](https://download.safehaven.ctl.io/SH-4.0.2/safehaven-4.0.2.deb) which can be found under the **Download Links** section of the [SafeHaven 4.0.2 release notes](safehaven-4.0.2-release.md)
 
-Then input CMS root Password, click "Update" to start the update
-
-**NOTE**: The latest official SafeHaven is 4.0.2 when this article is been written, if you are running on later version, please contact SafeHaven team for assistance 
+Then input **CMS root Password** and click **Update** to start the update
 
 ![Upgrade](../../images/SH4.0/Upgrade/upgrade_3.png)
 
-After the update is finished, click on "OK" then "OK and Close" to leave the wizard.
+After the **Update** is finished, click **OK** and then **OK and Close**
 
 ![Upgrade](../../images/SH4.0/Upgrade/upgrade_4.png)
 
+Close the SafeHaven Console.
 
-### Download the new SafeHaven Console 
+### SafeHaven GUI Console 
 
-Download the latest compatible SafeHaven Console (GUI) from the GUI Package download link (https://download.safehaven.ctl.io/SH-4.0.2/SafeHavenConsole-4.0.2.zip) under the Download Links section of the SafeHaven 4.0.2 release notes : https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-4/safehaven-4.0.2-release/
+Download the latest compatible SafeHaven Console (GUI) [GUI Package](https://download.safehaven.ctl.io/SH-4.0.2/SafeHavenConsole-4.0.2.zip) which can be found under the **Download Links** section of the [SafeHaven 4.0.2 release notes](safehaven-4.0.2-release.md)
 
-Unzip the downloaded package and login to the cluster using the new console
+Unzip the downloaded package and launch the **safehaven-console.exe**. Enter the credentials and **Login** to the SafeHaven Console.
 
-Double check if the versions of SafeHaven Console and Syntropy are compatible.
+Confirm that the upgrade has been completed successfully by validating both **Syntropy version** and **SafeHaven Console version** are 4.0.2
 
 ![Upgrade](../../images/SH4.0/Upgrade/upgrade_5.png)
 
