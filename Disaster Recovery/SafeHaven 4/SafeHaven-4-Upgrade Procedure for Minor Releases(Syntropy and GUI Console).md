@@ -9,7 +9,7 @@
 This article explains how to upgrade SafeHaven software and console.
 
 ### Assumption
-This article assumes that the existing cluster is 4.0.1-rc8 or later. In this example, both Syntropy version and SafeHaven Console version are 4.0.1-rc9
+This article assumes that the existing cluster is 4.0.1 or later. In this example, both Syntropy version and SafeHaven Console version are 4.0.1
 
 ![Upgrade](../../images/SH4.0/Upgrade/upgrade_1.png)
 
@@ -23,11 +23,11 @@ Click on Administration on tools bar and then click on "Update Code.." from the 
 ![Upgrade](../../images/SH4.0/Upgrade/upgrade_2.png)
 
 
-Input the URL of the update debian file, link (https://download.safehaven.ctl.io/SH-4.0.1/safehaven-4.0.1.deb) under the Download Links section of the SafeHaven 4.0.1 release notes : https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-4/safehaven-4.0.1-release/.
+Input the URL of the update debian file, link (https://download.safehaven.ctl.io/SH-4.0.2/safehaven-4.0.2.deb) under the Download Links section of the SafeHaven 4.0.2 release notes : https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-4/safehaven-4.0.2-release/.
 
 Then input CMS root Password, click "Update" to start the update
 
-**NOTE**: The latest official SafeHaven is 4.0.1 when this article is been written, if you are running on later version, please contact SafeHaven team for assistance 
+**NOTE**: The latest official SafeHaven is 4.0.2 when this article is been written, if you are running on later version, please contact SafeHaven team for assistance 
 
 ![Upgrade](../../images/SH4.0/Upgrade/upgrade_3.png)
 
@@ -38,7 +38,7 @@ After the update is finished, click on "OK" then "OK and Close" to leave the wiz
 
 ### Download the new SafeHaven Console 
 
-Download the latest compatible SafeHaven Console (GUI) from the GUI Package download link (https://download.safehaven.ctl.io/SH-4.0.1/SafeHavenConsole-4.0.1.zip) under the Download Links section of the SafeHaven 4.0.1 release notes : https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-4/safehaven-4.0.1-release/
+Download the latest compatible SafeHaven Console (GUI) from the GUI Package download link (https://download.safehaven.ctl.io/SH-4.0.2/SafeHavenConsole-4.0.2.zip) under the Download Links section of the SafeHaven 4.0.2 release notes : https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-4/safehaven-4.0.2-release/
 
 Unzip the downloaded package and login to the cluster using the new console
 
