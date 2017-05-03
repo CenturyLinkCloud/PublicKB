@@ -21,15 +21,15 @@ Login access to the CenturyLink Cloud Portal at https://control.ctl.io.
 
 ### Assumptions
 
-This article assumes that the user has login access to the CenturyLink Cloud Portal. Begin by logging into the Control Portal at https://control.ctl.io 
+This article assumes that the user has login access to the CenturyLink Cloud Portal. Login to the **CenturyLink Control Portal**  https://control.ctl.io with your credentials.
 
 ![Upgrade](../../images/SH4.0/Create%20Nodes/Nodes1.png)
 
 ### Deploy the Central Management Server(CMS) in CenturyLink Cloud
 
-We will deploy the Central Management Server (CMS) for the SafeHaven Cluster. CMS acts as a master server for the SafeHaven Cluster and commands from the SafeHaven Console (GUI) are parsed by the CMS and then sent for execution to the appropriate SRNs in the appropriate data centers.
+We will deploy the Central Management Server (CMS) for the SafeHaven Cluster. CMS acts as a master server for the SafeHaven Cluster and commands from the SafeHaven Console (GUI) are parsed by the CMS and then sent for execution to the appropriate SRNs in the appropriate datacenters.
 
-Login to the **CenturyLink Control Portal** with your credentials and Select **Servers** under the **Infrastructure** tab.
+Select **Servers** under the **Infrastructure** tab.
 
 ![Upgrade](../../images/SH4.0/Create%20Nodes/Nodes2.png)
 
