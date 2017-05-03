@@ -1,3 +1,15 @@
+{{{
+  "title": "SafeHaven-4-Attach and Claim Storage on SRN",
+  "date": "05-03-2016",
+  "author": "Mahima Kumar",
+  "attachments": [],
+  "contentIsHTML": false
+}}}
+
+## Article Overview
+This article explains how to attach and claim storage on SRN before creating Protection Groups.
+
+### Requirements
 
 ### Add storage to each SRN  
 
