@@ -11,7 +11,7 @@
 - SafeHaven Version: 4.0.2.
 - Release Date: May 3, 2017
 
-#### 1.New Features and Enhancements
+### New Features and Enhancements
 
 This is a patch release for [SafeHaven 4.0.1](https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-4/safehaven-4.0.1-release/). The following three feature/bug-fixes are introduced.
 1. Removed of the use of `/var/cms/dvol_list` file on CMS the writing of which at some busy situations might  too much disk IO, thus impacting CMS performance.
