@@ -54,3 +54,4 @@ Confirm that the upgrade has been completed successfully by validating both **Sy
 
 ![Upgrade](../../images/SH4.0/Upgrade/upgrade_5.png)
 
+Upgrade is now complete.
