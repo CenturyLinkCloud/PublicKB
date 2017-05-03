@@ -1,5 +1,5 @@
 {{{
-  "title": "SafeHaven-4-Register Data Center and SRN within a SafeHaven Cluster",
+  "title": "SafeHaven-4-Register DataCenters, SRN and peer SRN's",
   "date": "05-03-2016",
   "author": "Mahima Kumar",
   "attachments": [],
