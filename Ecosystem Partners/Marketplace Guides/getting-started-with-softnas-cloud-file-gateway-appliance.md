@@ -78,9 +78,9 @@ CenturyLink Cloud Users, Storage Administrators, IT Managers
 
   Once verified, click on the **run** button. You will see the deployment log scrolling through.
 
-   *   * **Note**: if you access the appliance via the Control Portal, it will report that it is an Ubuntu operating system. This is not accurate; the build process layers the appliance over the Ubuntu OS and modifies it to the operating system required by the appliance. This is expected behavior, and does not affect the operations of the appliance.
+   * **Note**: if you access the appliance via the Control Portal, it will report that it is an Ubuntu operating system. This is not accurate; the build process layers the appliance over the Ubuntu OS and modifies it to the operating system required by the appliance. This is expected behavior, and does not affect the operations of the appliance.
    
-6. Adding Storage To Your Appliance.
+5. Adding Storage To Your Appliance.
    * Additional storage can be allocated at the time of deployment as noted above.
    * If additional storage is desired after initial deployment please [submit a support request](../../Support/how-do-i-report-a-support-issue.md) to reassign the /boot disk to 0:0
      * The method of deployment for the appliance results in /boot being assigned to disk 0:1
@@ -93,7 +93,7 @@ CenturyLink Cloud Users, Storage Administrators, IT Managers
      * Wait for the storage to be added.
    * Login to the SoftNAS Cloud Gateway and configure the new storage.
 
-7. Accessing Your Appliance.
+6. Accessing Your Appliance.
    * Access your appliance by navigating to the server's private IP address with your web browser over https (e.g. https://youripaddress/).
    * Login to the SoftNAS web console with the username `softnas` and password `Pass4W0rd`
    * Follow the on-screen instructions to accept the SoftNAS user agreements and proceed to using the service. Documentation is available within the application, as well as a helpful checklist to get started.
@@ -107,7 +107,7 @@ CenturyLink Cloud Users, Storage Administrators, IT Managers
 
    * For more information on how to use the SoftNAS solution, please visit: [http://www.softnas.com/support/](http://www.softnas.com/support/)
 
-8. Allowing Access from Public Internet (optional).
+7. Allowing Access from Public Internet (optional).
    * [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for ports below:
    * For administrative access and use, open the following ports:
      * TCP Ports: 443
