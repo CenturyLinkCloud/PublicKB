@@ -49,15 +49,15 @@ Quickly deploy and successfully use software and technology from any of our cert
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
-| [Alert Logic Web Security Manager](../Marketplace Guides/getting-started-with-alert-logic-web-security-manager-partner-template.md)   	| Template    | Web security manager appliance    |
-| [Alert Logic Threat Manager](../Marketplace Guides/getting-started-with-alert-logic-threat-manager-partner-template.md)   	| Template    | Threat manager appliance    |
+| [Alert Logic Web Security Manager](../../marketplace/getting-started-guides/getting-started-alert-logic-web-security-manager.md)   	| Runner   | Web security manager appliance    |
+| [Alert Logic Log Manager](../../marketplace/getting-started-guides/getting-started-alert-logic-log-manager.md)   	| Runner    | Log Management    |
 | [Cavirin Automated Risk Analysis Platform](../Marketplace Guides/getting-started-with-cavirin-automated-risk-analysis-platform-partner-template.md)   	| Template    | Governance and compliance appliance    |
-| [FlexSecure](../../Security/getting-started-with-flexsecure.md)   	| Blueprint    | Context-based Security-as-a-Service platform    |
+| [FlexSecure](../../marketplace/getting-started-guides/getting-started-with-flexsecure.md)   	| SaaS    | Context-based Security-as-a-Service platform    |
 | [OSSEC](../Marketplace Guides/getting-started-with-ossec-blueprints.md)   	| Template    | HIDS    |
 | [SMS Passcode](../Marketplace Guides/getting-started-with-smspasscode-template.md)   	| Template   | Multifactor Authentication    |
 | [Symas](../Marketplace Guides/getting-started-with-symas-open-ldap-silver.md)   	| Blueprint   | LDAP    |
-| [Vormetric](../Marketplace Guides/getting-started-with-vormetric-dsm.md)   	| Template    | Data encryption and key management    |
-| [Vormetric](../Marketplace Guides/getting-started-with-vormetric-encryption-agent-deployment-blueprints.md)   	| Blueprint    | Data encryption and key management    |
+| [Vormetric Encryption Agent ](../../marketplace/getting-started-guides/getting-started-vormetric-data-security-manager.md)   	| Runner  | Data encryption and key management    |
+| [Vormetric DSM Bundle with Quickstart On-boarding Package](../../marketplace/getting-started-guides/getting-started-vormetric-data-security-manager.md)   	| Runner     | Encryption solution    |
 | [Waratek AppSecurity](../Marketplace Guides/getting-started-with-waratek-appsecurity.md)   	| Blueprint    | Secure Java Runtime    |
 | [Zetera CoIP](../../Marketplace/Getting Started Guides/getting-started-with-zentera-coip.md)   	| Runner   | Secure hybrid network fabric    |
 
