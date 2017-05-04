@@ -13,7 +13,7 @@
 
 ### New Features and Enhancements
 
-This is a patch release for [SafeHaven 4.0.1](https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-4/safehaven-4.0.1-release/). 
+This is a patch release for [SafeHaven 4.0.1](safehaven-4.0.1-release.md)
 
 The following three features/bug-fixes have been introduced:
 1. Improving CMS performance under certain conditions by reducing file writes.
@@ -27,7 +27,7 @@ The following three features/bug-fixes have been introduced:
 
 * **No changes for OVA, Driver Installer, MakeStub.exe packages**
 
-* **Upgrade Procedure from 4.0.1 to 4.0.2** : [SafeHaven-4-Upgrade Procedure for Minor Releases(Syntropy and GUI Console)](SafeHaven-4-Upgrade%20Procedure%20for%20Minor%20Releases(Syntropy%20and%20GUI%20Console).md)
+* **Upgrade Procedure from 4.0.1 to 4.0.2** : [Upgrade Procedure for Minor Releases(Syntropy and GUI Console)](Upgrade-Procedure-for-Minor-Releases-Syntropy-and-GUI.md)
 
 
 ### Download Links

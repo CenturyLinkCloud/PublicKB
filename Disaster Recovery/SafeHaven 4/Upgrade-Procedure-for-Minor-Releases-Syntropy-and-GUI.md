@@ -1,5 +1,5 @@
 {{{
-  "title": "SafeHaven-4-Upgrade Procedure for Minor Releases(Syntropy and GUI Console)",
+  "title": "Upgrade Procedure for Minor Releases(Syntropy and GUI Console)",
   "date": "05-03-2016",
   "author": "Sharon Wang",
   "attachments": [],
