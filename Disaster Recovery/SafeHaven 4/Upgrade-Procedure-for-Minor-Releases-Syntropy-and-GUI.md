@@ -5,6 +5,7 @@
   "attachments": [],
   "contentIsHTML": false
 }}}
+
 ## Article Overview
 This article explains how to perform a minor upgrade for SafeHaven.
 
