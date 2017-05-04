@@ -27,7 +27,7 @@ The following three features/bug-fixes have been introduced:
 
 * **No changes for OVA, Driver Installer, MakeStub.exe packages**
 
-* **Upgrade Procedure from 4.0.1 to 4.0.2** [SafeHaven-4-Upgrade Procedure for Minor Releases(Syntropy and GUI Console)](SafeHaven-4-Upgrade%20Procedure%20for%20Minor%20Releases(Syntropy%20and%20GUI%20Console).md)
+* **Upgrade Procedure from 4.0.1 to 4.0.2** : [SafeHaven-4-Upgrade Procedure for Minor Releases(Syntropy and GUI Console)](SafeHaven-4-Upgrade%20Procedure%20for%20Minor%20Releases(Syntropy%20and%20GUI%20Console).md)
 
 
 ### Download Links
