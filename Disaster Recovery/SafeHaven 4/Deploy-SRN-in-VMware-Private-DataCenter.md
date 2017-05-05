@@ -1,6 +1,6 @@
 
 {{{
-  "title": "SafeHaven-4-Deploy SRN in VMware (Private or On-premise DataCenter)",
+  "title": "Deploy SRN in VMware (Private or On-premise DataCenter)",
   "date": "05-04-2016",
   "author": "Mahima Kumar",
   "attachments": [],
