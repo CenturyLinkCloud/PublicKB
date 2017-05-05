@@ -32,7 +32,7 @@ Release Date: May 3, 2017
 
 
 
-[SafeHaven 4.0.2 version](PublicKB/Disaster Recovery/SafeHaven 4/safehaven-4.0.2-release.md)
+[SafeHaven 4.0.2 version](../../SafeHaven 4/safehaven-4.0.2-release.md)
 
 
 
