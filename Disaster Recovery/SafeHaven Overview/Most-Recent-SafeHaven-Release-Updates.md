@@ -46,7 +46,7 @@ Release Date: May 3, 2017
 
 
 
-[SafeHaven 4.0.1 version](PublicKB/Disaster Recovery/SafeHaven 4/safehaven-4.0.1-release.md)
+[SafeHaven 4.0.1 version](../SafeHaven%204/safehaven-4.0.1-release.md)
 
 
 
@@ -54,7 +54,7 @@ Release Date: May 3, 2017
 
 
 
-[SafeHaven 4.0.0 version](PublicKB/Disaster Recovery/SafeHaven 4/safehaven-4.0.0-release.md)
+[SafeHaven 4.0.0 version](../SafeHaven%204/safehaven-4.0.0-release.md)
 
 
 
