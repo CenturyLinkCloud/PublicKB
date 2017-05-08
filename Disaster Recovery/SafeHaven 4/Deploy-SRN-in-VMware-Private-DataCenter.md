@@ -7,7 +7,7 @@
   "contentIsHTML": false
 }}}
 
-## Article Overview
+### Article Overview
 
 This article explains how to deploy the SafeHaven Replication Node(SRN) in VMware (Private or On-premise DataCenter).
 
