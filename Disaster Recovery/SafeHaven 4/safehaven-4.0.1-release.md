@@ -80,7 +80,7 @@ Currently, CLC limits a VM to 15 disks, a total of 4TB capacity and a maximum of
 
 
 * CMS root password: no constraints
-* SRN root password: ```'``` (single quote) and ```^``` are legitimate Linux characters but not supported by SH-4.0. GUI will warn about it.
+* SRN root password: ```'``` (single quote) and ```^``` are legitimate Linux characters but not supported by SH-4.0. GUI will warn about it. Not supporting: ```# and $```
 * SafeHaven user password: no constraints
 * Windows Ansible password: not supporting ```"``` (double quote)
 * Email SSMTP password (#227): not supporting  ```# : =``` and ``` ``` (space)
