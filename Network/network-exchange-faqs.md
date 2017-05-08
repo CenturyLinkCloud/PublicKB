@@ -58,10 +58,22 @@
 
 **A:** An exchange may contain as many endpoints as are available at that location. The customer may create multiple exchanges, within the availability of endpoints for the location.
 
-**Q: What is an “exchange”?**
+**Q: What is an “Exchange”?**
 
 **A:** An exchange consists of two or more endpoints, all of which may communicate with each other.
 
-**Q: Can I view the usage/speed/performance of each of my connections?A: Both ingress and egress traffic measurements are provided per endpoint. Q: What kind of workloads or scenarios is Network Exchange designed for?**
+**Q: Can I view the usage/speed/performance of each of my connections?**
+
+**A:** Both ingress and egress traffic measurements are provided per endpoint.
+
+**Q: What kind of workloads or scenarios is Network Exchange designed for?**
 
 **A:** Network Exchange is designed for most common Hybrid IT workloads. For example, applications reliant on data or services in other environments, file transfer of large or small amounts of data, reliably accessing data/resources in another environment, replication, backups, along with being a key element for a business continuity or a disaster recovery strategy. It is not intended for streaming video or voice.
+
+**Q: I'm a Cloud Network Service (CNS) customer. How does Network Exchange affect my CNS service?**
+
+**A:** Network Exchange is a new service, indepdendent of Cloud Network Service. It will be operated in parallel with CNS and eventually replace it. CenturyLink will provide a migration path from CNS to Network Exchange and guide customers through the process. CNS customers will be provided ample notice prior to beginning the migration process. 
+
+**Q: I'm a Cloud Network Service (CNS) customer. Can I use Network Exchange at the same time as CNS?**
+
+**A:** Yes. A customer can use both CNS and Network Exchange at the same time so long as each is operated under it's own subaccount on CLC. Different VLANs must be used for CTL Managed Hosting endpoints.

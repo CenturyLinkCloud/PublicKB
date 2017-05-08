@@ -55,6 +55,10 @@ A: Customers are billed a nominal fee per public IP on a monthly basis. Public I
 
 A: As the platform uses a 1 to 1 NAT (public to private) and /24 network sizes the current maximum number of public IPs is 219 per VM. Bare Metal servers are only permitted a single public IP currently.
 
+**Q: My server is housed in a datacenter in a non-US country.  Why do geolocation services show me as being in the United States?**
+ 
+ A:  All IPs in CenturyLink Cloud datacenters worldwide are registered to a mailing address in the United States via a third-party registrar.  As such, most GeoIP services will show the IPs as being in the US, rather than in the country the datacenter is housed in.  This is an effect of our relationship with our registrars and cannot be changed either per customer or per datacenter.
+ 
 **Q: Who do I contact for support or questions regarding Public IP listings?**
 
 A: For service issues [please contact support.](../Support/how-do-i-report-a-support-issue.md)
