@@ -12,8 +12,8 @@ This article explains how to create a SafeHaven Cluster.
 
 ### Requirements
 
-1) Pre-deployed CMS server.
-2) Network access to the CMS.
+1 Pre-deployed CMS server.
+2 Network access to the CMS.
 
 ### Assumptions
 
@@ -40,13 +40,13 @@ Enter the **Customer Name** and the **License key** provided to you by your Cent
 ![Upgrade](../../images/SH4.0/Cluster/03.png)
 
 Fill in the following fields:
-1) CMS hostname in the **Node Name**
-2) **Client Access IP** (CMS IP that used to connect to the SafeHaven Console GUI) and **Service Access IP** (CMS IP that is used for communication between CMS and SRN). Typically CMS Private IP address is entered in these fields. You can get this information from the CenturyLink Control Portal.
-3) Set the **Administrator Password** (Password required to login to the SafeHaven Console GUI to manange the SafeHaven)
-4) Enter the **CMS root password**. You can get this information from the CenturyLink Control Portal.
-5) Click on **Test Login** to confirm connectivity to the CMS.
-5) Copy the **Debian Package for CMS/SRN** link from the **Download Links** section of the [SafeHaven 4.0.2 Release Notes](safehaven-4.0.2-release.md) and enter it in the **SafeHaven 4.0.2 distribution URL** section. Please contact your CenturyLink Cloud Onboarding Engineer if you have any questions regarding the latest version of **Debian Package for CMS/SRN**.
-6) Do not modify the Service Port (TCP) , Heartbeat Port (UDP) , Installation ID.
+1 CMS hostname in the **Node Name**
+2 **Client Access IP** (CMS IP that used to connect to the SafeHaven Console GUI) and **Service Access IP** (CMS IP that is used for communication between CMS and SRN). Typically CMS Private IP address is entered in these fields. You can get this information from the CenturyLink Control Portal.
+3 Set the **Administrator Password** (Password required to login to the SafeHaven Console GUI to manange the SafeHaven)
+4 Enter the **CMS root password**. You can get this information from the CenturyLink Control Portal.
+5 Click on **Test Login** to confirm connectivity to the CMS.
+6 Copy the **Debian Package for CMS/SRN** link from the **Download Links** section of the [SafeHaven 4.0.2 Release Notes](safehaven-4.0.2-release.md) and enter it in the **SafeHaven 4.0.2 distribution URL** section. Please contact your CenturyLink Cloud Onboarding Engineer if you have any questions regarding the latest version of **Debian Package for CMS/SRN**.
+7 Do not modify the Service Port (TCP) , Heartbeat Port (UDP) , Installation ID.
 
 Click **Next**
 
