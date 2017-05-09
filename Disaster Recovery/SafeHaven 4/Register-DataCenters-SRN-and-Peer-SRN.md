@@ -15,17 +15,17 @@ This article focusses on how to:
 A single SafeHaven Cluster can have upto 64 datacenters registered within itself which can be accessed through a single pane of glass. Each production and recovery datacenter has to be registered within the SafeHaven Console.
 
 There are 4 **Data Center Type** types available:
-1) VMware vSphere
-2) VMware vCloud Director
-3) CenturyLink Cloud
-4) Manual (Standalone VMware ESXi hosts and DCC)
+1. VMware vSphere
+2. VMware vCloud Director
+3. CenturyLink Cloud
+4. Manual (Standalone VMware ESXi hosts and DCC)
 
 **NOTE**: For CenturyLink Cloud, each sub-account has to be registered as a separate datacenter.
 
 ### Requirements
 
-1) SafeHaven Cluster already installed.
-2) CMS and SRNs to have proper network connectivity as per [SAHA4.0 Networking](./SAHA4.0 Networking.md)
+1. SafeHaven Cluster already installed.
+2. CMS and SRNs to have proper network connectivity as per [SAHA4.0 Networking](./SAHA4.0 Networking.md)
 
 ### Assumptions
 
@@ -102,12 +102,12 @@ Enter **Data Center Name** and select **Manual** as the **Data Center Type**. Cl
 ![Upgrade](../../images/SH4.0/Cluster2/08.png)
 
 Fill in the following fields:
-1)SRN hostname as the **Node Name**
-2)SRN **Root Password** (set at the time of SRN deployment)
-3)**Service IP**: SRN IP used to communicate with other SafeHaven Nodes (SRN and CMS). Typically set as the Private IP of the SRN.
-4)**WAN Replication IP**: SRN IP used to communicate with the peer SRN for WAN replication. Typically set as the Private IP of the SRN.
-5)**Local iSCSI IP**: SRN IP used to communicate with the production/recovery servers in that particular Data Center. Typically set as the Private IP of the SRN.
-6) Do not modify the Service Port (TCP) and Heartbeat Port (UDP)
+1. SRN hostname as the **Node Name**
+2. SRN **Root Password** (set at the time of SRN deployment)
+3. **Service IP**: SRN IP used to communicate with other SafeHaven Nodes (SRN and CMS). Typically set as the Private IP of the SRN.
+4. **WAN Replication IP**: SRN IP used to communicate with the peer SRN for WAN replication. Typically set as the Private IP of the SRN.
+5. **Local iSCSI IP**: SRN IP used to communicate with the production/recovery servers in that particular Data Center. Typically set as the Private IP of the SRN.
+6. Do not modify the Service Port (TCP) and Heartbeat Port (UDP)
 
 **NOTE**: Incase SRN has multiple NIC's, Service IP and WAN Replication IP will be the Primary IP of the SRN which has proper network connectivity to other SRN's and CMS. Local iSCSI IP will be set to 0.0.0.0
 
