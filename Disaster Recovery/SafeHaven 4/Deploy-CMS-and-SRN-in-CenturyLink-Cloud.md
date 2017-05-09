@@ -2,7 +2,7 @@
 
   "title": "SafeHaven-4-Deploy CMS and SRN in CenturyLink Cloud",
 
-  "date": "05-04-2016",
+  "date": "05-04-2017",
 
   "author": "Sharon Wang",
 
