@@ -26,7 +26,7 @@ The CenturyLink Marketplace allows customers to purchase software from an extens
 
 * There is training material located within the provider portal.
 
-* There is additional training material available in the [Getting Started Guide: Marketplace & Provider Portal](../Marketplace/Providers/getting-started-guide-marketplace-ecosystem-provider-portal.md), which will serve as your primary guide for creating your product in the Provider Portal. We recommend using it in conjunction with the training videos provided within the Portal.
+* There is additional training material available in the [Getting Started Guide: Marketplace & Provider Portal](./getting-started-guide-marketplace-ecosystem-provider-portal.md), which will serve as your primary guide for creating your product in the Provider Portal. We recommend using it in conjunction with the training videos provided within the Portal.
 
 We update the guide monthly with any updates that have been released. If for some reason, you feel as though the guide is missing information or if you have additional questions, please let us know at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
 
@@ -47,4 +47,4 @@ We update the guide monthly with any updates that have been released. If for som
 
 Technical and billing portions of the integration with the Marketplace can vary widely based on provider & are not included in this checklist. Members of the CenturyLink Cloud Ecosystem or Digital Teams will work with the provider’s technical teams to design the integration.
 
-Additional Provider Resources can be found [here](/marketplace/providers/#1).
+Additional Provider Resources can be found [here](./#1).
