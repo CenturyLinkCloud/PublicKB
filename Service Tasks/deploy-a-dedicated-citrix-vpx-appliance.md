@@ -1,6 +1,6 @@
 {{{
   "title": "Deploy a Dedicated Citrix VPX Appliance",
-  "date": "5-3-2017",
+  "date": "5-9-2017",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -13,7 +13,7 @@ This knowledge base article will guide a customer through the process of deployi
 
 **Q: How is a Dedicated Citrix VPX Priced?**
 
-**A:** Refer to our [Pricing Catalog](https://www.ctl.io/pricing) under Load Balancing for Citrix VPX License fees. These fees include **only** the license costs on a monthly basis. Compute usage for each appliance is based on a **2 vCPU/2GB RAM/20GB Storage** Virtual Machine size.  Customers can leverage our [Price Estimator Online](https://www.ctl.io/estimator/) to determine this cost based on location. When using **Highly Available** configurations **both** licensing and compute costs will be **multiplied 2x**.
+**A:** Refer to our [Pricing Catalog](https://www.ctl.io/pricing) under Load Balancing for Citrix VPX License fees. These fees include **only** the license costs on a monthly basis. Compute usage for each appliance is based on a **2vCPU/2GB RAM/20GB Storage** Virtual Machine size.  Customers can leverage our [Price Estimator Online](https://www.ctl.io/estimator/) to determine this cost based on location. When using **Highly Available** configurations **both** licensing and compute costs will be **multiplied 2x**.
 
 ### Deploy a Load Balancing VLAN
 
