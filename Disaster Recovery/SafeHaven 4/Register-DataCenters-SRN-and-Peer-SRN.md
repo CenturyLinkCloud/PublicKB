@@ -9,8 +9,8 @@
 ### Article Overview
 
 This article focusses on how to:
-1) Register Data Centers and SRN's within the SafeHaven Console for CenturyLink Cloud, VMware vSphere and Manual(Standalone VMware ESXi hosts and DCC) datacenter type.
-2) Pair the SRN's together to set up Protection Groups.
+1. Register Data Centers and SRN's within the SafeHaven Console for CenturyLink Cloud, VMware vSphere and Manual(Standalone VMware ESXi hosts and DCC) datacenter type.
+2. Pair the SRN's together to set up Protection Groups.
 
 A single SafeHaven Cluster can have upto 64 datacenters registered within itself which can be accessed through a single pane of glass. Each production and recovery datacenter has to be registered within the SafeHaven Console.
 
