@@ -18,13 +18,13 @@ Dedicated Cloud Compute customers.
 
 ### Assumptions
 
-* You have a SavvisStation Portal account and can logon successfully.
+* You have a SavvisStation Portal account and can log on successfully.
 
 ### Add Server Process
 
-1. Logon and go to the new DCC UI. For more information, please refer to the [Logon to New UI](./logon-new-UI.md) KB article.
+1. Log-in and go to the new DCC UI. For more information, please refer to the [Logon to New UI](./logon-new-UI.md) KB article.
 
-2. Once logged on the DCC UI, click Create | Add Server.
+2. Once logged in the DCC UI, click Create > Add Server.
 
   ![DCC UI](../../images/dcc/add-svr.png)
 
