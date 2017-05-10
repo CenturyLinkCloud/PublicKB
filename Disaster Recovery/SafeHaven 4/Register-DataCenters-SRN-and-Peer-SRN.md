@@ -14,7 +14,7 @@ This article focusses on how to:
 
 A single SafeHaven Cluster can have upto 64 datacenters registered within itself which can be accessed through a single pane of glass. Each production and recovery datacenter has to be registered within the SafeHaven Console.
 
-There are 4 **Data Center Type** types available:
+There are 4 **Data Center Types** available:
 1. VMware vSphere
 2. VMware vCloud Director
 3. CenturyLink Cloud
