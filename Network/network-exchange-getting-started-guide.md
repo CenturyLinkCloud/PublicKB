@@ -69,7 +69,7 @@ Exchange** dialogue box:
 
 1. In the top-left corner of the screen, select the (sub)account to be used for this Exchange.
 
-2. Enter the **Exchange Name**. This name be appended with a randomly generated
+2. Enter the **Exchange Name**. This name will be appended with a randomly generated
 number to create a unique identifier for this Exchange. Note that this field may not contain spaces.
 
 3. Enter the **Description**. This free form text is used to describe the Exchange you are

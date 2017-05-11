@@ -1,6 +1,6 @@
 {{{
   "title": "Upgrade Procedure for Minor Releases(Syntropy and GUI Console)",
-  "date": "05-03-2016",
+  "date": "05-03-2017",
   "author": "Sharon Wang",
   "attachments": [],
   "contentIsHTML": false
