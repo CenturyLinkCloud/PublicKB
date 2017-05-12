@@ -1,7 +1,7 @@
 {{{
   "title": "The Runner Minion",
-  "date": "04-29-2016",
-  "author": "Benjamin Harristhal",
+  "date": "05-12-2017",
+  "author": "Justin Colbert",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -110,13 +110,9 @@ Register the Runner Minion to receive an access token. Please note that all call
 The below command will then launch your new Runner minion
 
 ```
-docker run -it  centurylink/rnr-minion --token=<token>
+docker run -dit  centurylink/rnr-minion --token=<token>
 ```
 
-#### Making use of your new Minion
-Once your Minion is up and running, there are two ways that you can use it. First, if you specified any networks whenever you registered your minion, Runner will automatically route traffic destined for those subnets to your Minion. Second, by adding a rnr_location property to any host like in the image below, you can tell Runner to route all tasks destined for that server through the specified Minion.
-
-![](../images/runner/rnr_location.jpg)
 
 #### Minion Specific SSH Key
 One benefit of using your own Minion, is the ability for a user to set a private SSH key to use for all connections routed through their Minion. By starting a Minion with the below command, the specified SSH Private key will be used for all outbound connections unless a different set of credentials are manually specified in the job definition.
@@ -124,3 +120,8 @@ One benefit of using your own Minion, is the ability for a user to set a private
 ```
 docker run -dit -v <path/to/ssh_key>:/data01/minion/ssh_key centurylink/rnr-minion --token=<token>
 ```
+
+#### Making use of your new Minion
+Once your Minion is up and running, there are two ways that you can use it. First, if you specified any networks whenever you registered your minion, Runner will automatically route traffic destined for those subnets to your Minion. Second, by adding a rnr_location property to any host like in the image below, you can tell Runner to route all tasks destined for that server through the specified Minion.
+
+![](../images/runner/rnr_location.jpg)
