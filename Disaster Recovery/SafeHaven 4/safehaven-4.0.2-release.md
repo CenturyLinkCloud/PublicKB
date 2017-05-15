@@ -22,13 +22,20 @@ The following three features/bug-fixes have been introduced:
    * There is a bare minimum temporary space requirement of 2GB.
    * GUI will suggest a default of 5GB temporary space.
    * Automatic deletion of the test failover instance when there is less than 1GB of free space left.
-   
+ 
+ ### Upgrade Path
+
+|Upgrade From|GUI and Syntropy|SBD (WAN replication kernel module on SRN)|Windows Agent|
+|----|----|----|----|
+|4.0.0| Yes, no interruptions|Manual upgrade possible by support ticket to help@ctl.io|Yes, reboot needed|
+|4.0.1| Yes, no interruptions|No change, therefore no need|No change, therefore no need|
+
+
 ### Upgrade from 4.0.1 to 4.0.2
 
 * **No changes for OVA, Driver Installer, MakeStub.exe packages**
 
 * **Upgrade Procedure from 4.0.1 to 4.0.2** : [Upgrade Procedure for Minor Releases(Syntropy and GUI Console)](Upgrade-Procedure-for-Minor-Releases-Syntropy-and-GUI.md)
-
 
 ### Download Links
 
