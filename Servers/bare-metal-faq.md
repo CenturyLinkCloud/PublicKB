@@ -244,9 +244,14 @@ Click `Next >` two more times until you reach the Confirmation screen. Finally, 
 
 Once the server comes back up, log in as Administrator again. To finish the configuration you'll need to go back and create at least one virtual switch, but be very careful to follow the steps below so you don't lose network connectivity.
 
-First, open Network and Sharing Center from Control Panel and look for the connection labeled `team0 - VLAN <ID>` where `<ID>` is the VLAN tag. Take note of this number as you will need it in a following step.
+First, open Network and Sharing Center from Control Panel and look for the connection labeled `team0 - VLAN <ID>` where `<ID>` is the VLAN tag. Click on the connection `team0 - VLAN <ID>`, then select Properties. 
 
 ![Note the VLAN ID](../images/bare-metal-faq-4.png)
+
+Note the `<ID>` number and adapapter as you will need them in the following steps, in this example "2332" and "Microsoft Network Adapter Multiplexor Driver #2".
+
+![Note the adapter](../images/bare-metal-faq-7.PNG)
+
 
 Now, launch `Hyper-V Manager`, right click on the server name, and select `Virtual Switch Manager...`.
 
@@ -257,6 +262,11 @@ Click `Create Virtual Switch` (you probably want an External type). Give the swi
 ![Enter the VLAN ID](../images/bare-metal-faq-6.png)
 
 Click `OK` and then `Yes` to apply the changes. You are now free to set up virtual machines connected to this virtual switch.
+
+Once you have created a virtual machine, select the VM in Hyper-V Manager, right click and select Settings. From the Setting menu select Network Adapter, assign the virtual switch created above "Test-Switch" in our example, select the check box to "Enable virtual LAN identifiation", and enter the vlan `<ID>` noted earlier.
+
+![VM adapter setting](../images/bare-metal-faq-8.PNG)
+
 
 **How do I activate my Windows VMs provisioned on a Windows 2012 Datacenter Edition Bare Metal server?**
 

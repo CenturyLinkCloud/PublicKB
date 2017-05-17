@@ -36,7 +36,7 @@ Your charges in Azure will appear as a CenturyLink Public Cloud line item, label
 
 If you have an existing, Azure customer account for which you would like CenturyLink to assume support and billing responsibility, please contact your CenturyLink representative to discuss.
 
-CenturyLink will manage Azure permissions for our customers to ensure we can support all resources provisioned there. The [Azure permissions can be viewed here](./partner-cloud-integration-azure-permissions.md) to determine what Azure products and services are offered, currently. If there are other resources you would like to allow CenturyLink to support, please email [CloudIntegration-feedback@ctl.io](mailto:cloudintegration@ctl.io) or submit a [service request](./partner-cloud-integration-azure-support.md).
+CenturyLink will manage Azure permissions for our customers to ensure we can support all resources provisioned there. The [Azure permissions can be viewed here](./partner-cloud-integration-azure-capabilities.md) to determine what Azure products and services are offered, currently. If there are other resources you would like to allow CenturyLink to support, please email [CloudIntegration-feedback@ctl.io](mailto:cloudintegration@ctl.io) or submit a [service request](./partner-cloud-integration-azure-support.md).
 
 ### Steps
 
