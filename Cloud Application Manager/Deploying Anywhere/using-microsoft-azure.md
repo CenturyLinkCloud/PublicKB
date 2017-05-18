@@ -1,6 +1,6 @@
 {{{
 "title": "Using Microsoft Azure",
-"date": "01-20-2017",
+"date": "04-19-2017",
 "author": "",
 "attachments": [],
 "contentIsHTML": false
@@ -19,10 +19,7 @@ Each of Cloud Application Manager's Microsoft Azure Providers gives you the opti
 
 If you want to learn how to use the New Account feature, please visit [Partner Cloud: Getting Started With a New Azure Customer](../Cloud Optimization/partner-cloud-integration-azure-new.md). The rest of this article assumes you will be using an existing, Azure Customer Account without any integration with CenturyLink.
 
-If you do have an existing Azure account that you want CenturyLink to manage or support, please contact cloudsupport@centurylink.com. Please provide the name and domain of your account. Also, please describe any products, services, or resources within your Customer Account that are not currently shown in this list of [permitted products](../Cloud Optimization/partner-cloud-integration-azure-permissions.md). We likely have already have begun work to enable your products.
-
-
-
+If you do have an existing Azure account that you want CenturyLink to manage or support, please contact cloudsupport@centurylink.com. Please provide the name and domain of your account. Also, please describe any products, services, or resources within your Customer Account that are not currently shown in this list of [permitted products](../Cloud Optimization/partner-cloud-integration-azure-capabilities.md). We likely have already have begun work to enable your products.
 
 ### Before You Begin
 
@@ -40,10 +37,116 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
 > Subscription ID: The active subscription ID<br>
 > Client ID: The Application ID<br>
 > Secret: The key value generated in Step 4<br>
-> Tenant: Name of Customer URL (everything after @)<br>
+> Tenant: Copy from Azure Active Directory > Properties > Directory ID<br>
+
+If you cannot find a specific template that you are looking for in Cloud Application Manager be sure to check out the [Azure github quickstart templates](https://github.com/Azure/azure-quickstart-templates).
+
+### Registering Your Microsoft Azure Subscription (ARM) in Cloud Application Manager
+
+To connect to Microsoft Azure in Cloud Application Manager, you need to follow these steps.
+
+**Steps**
+
+1. In Cloud Application Manager, go to **Providers** > **New Provider** and select **Microsoft Azure**.
+   ![microsoft-azure-add-provider-1.png](../../images/cloud-application-manager/microsoft-azure-add-provider-1.png)
+
+2. Fill the form with Subscription ID, Application ID, Secret and Tenant obtained in previous section and save.
+   ![microsoft-azure-credentials-2.png](../../images/cloud-application-manager/microsoft-azure-credentials-2.png)
+
+Once pressed the save button our new provider starts to synchronize with our azure account from which you will get the following information:
+
+* VM images of windows family operating systems.
+* VM images of operating systems of Linux family.
+* Region list which we can deploy the mentioned services as well as the templates of Azure Resource Manager.
+* List of deployed Virtual Machines that are currently not being managed from Cloud Application Manager.
+
+During synchronization, we can get warnings about locations may be ignored because there are no associated virtual networks to them. This is because Cloud Application Manager does not create virtual networks but requires one in the deployment operation of one virtual machine.
+
+The result of the synchronization process will be the creation of one ARM template box and two policy boxes (Windows and RHEL respectively) in case of exist a virtual network in our account.
+
+### Deploying Instances in Azure
+
+You can deploy to the following services in Azure:
+
+* Windows based virtual machines
+* Linux based virtual machines
+* Azure resource manager templates
+
+**Azure OS Images Available to Deploy in Cloud Application Manager**
+
+As part of the result of synchronization process you can find a list of available operative systems that you can use in your policy boxes. You can check this list in **Providers** page > **Configuration**.
+
+![microsoft-azure-os-images-available-to-deploy-3.png](../../images/cloud-application-manager/microsoft-azure-os-images-available-to-deploy-3.png)
+
+This images are what we show in image list from policy box edition.
+
+**Microsoft Azure Compute Deployment Options**
+
+To deploy a virtual machine with compute services you can edit one of windows or RHEL policy boxes or create a new one. Then you can save your changes and click **Deploy**.
+
+![microsoft-azure-compute-deployment-options-4.png](../../images/cloud-application-manager/microsoft-azure-compute-deployment-options-4.png)
+
+**Resources**
+
+| Option | Description |
+|--------|-------------|
+| Location | Select the region where you want to deploy the virtual machine. Each location has available its own images, networks and sizes so is the first parameter you have to choose.<br>Only locations with networks available are shown. |
+| OS Image | Select the guest OS to run in the worker role instance. Note that Windows 2008 images are not synced at this time because the Cloud Application Manager agent doesn’t work on them. |
+| Size | Select a size to set the number of CPU cores, memory, and disk size to store your OS files, process temporary memory, and store application data. For more information, see the [Azure help](https://msdn.microsoft.com/en-us/library/azure/dn197896.aspx). Note that D-Series sizes use solid-state drive disks. |
+| Username | Specify a username to be able to RDP or SSH into the instance directly. |
+| Password | Specify a password to be able to RDP or SSH into the instance directly. |
+| SSH Certificate | Only in Linux machines you can specify a certificate to access via ssh. |
+| Instances | Specify the number of instances to spawn. Note that at this time, we don’t autoscale or load balance instances. To enable that, you have to manually configure these options in [Azure](https://msdn.microsoft.com/en-us/library/hh680914). |
 
 
-Right now, template boxes are the only ones supported for Microsoft Azure through Cloud Application Manager. If you cannot find a specific template that you are looking for in Cloud Application Manager be sure to check out the [Azure github quickstart templates](https://github.com/Azure/azure-quickstart-templates).
+**Network**
+
+| Option | Description |
+|--------|-------------|
+| Virtual Network |	This network has to be created before because Cloud Application Manager doesn't deploy any. |
+| Subnet | This subnet is the resource related to  the virtual machine's network interface. Actually a virtual network is not used at deployment time. |
+
+If you can't create any policy box on Windows Azure provider probably you have to create a virtual network from azure portal or you may deploy a new one with a template as we describe in following section.
+
+**Microsoft Azure ARM Template Deployment Options**
+
+Azure ARM Templates are supported on Cloud Application Manager with Microsoft Azure provider. You can deploy whatever you want with the same syntax you use on Azure APIs and portal. For this purpose you can create a custom deployment policy and deploy it with an ARM Template box together.
+
+**Steps**
+
+1. Create Deployment Policy:
+   * Go to **Boxes** > **New** > **Deployment Policy**.
+   ![microsoft-azure-create-new-deployment-policy-5.png](../../images/cloud-application-manager/microsoft-azure-create-new-deployment-policy-5.png)
+   * **Select Azure Resource Manager** on the menu.
+   ![microsoft-azure-select-arm-new-deployment-policy-box-6.png](../../images/cloud-application-manager/microsoft-azure-select-arm-new-deployment-policy-box-6.png)
+   * Select provider, name and description fields.
+   ![microsoft-azure-select-provider-name-7.png](../../images/cloud-application-manager/microsoft-azure-select-provider-name-7.png)
+   * Click **Save**.
+
+2. Edit Deployment Policy.
+   * Go to **Template** > **Code** and press **Edit**.
+   * Put your own template and click **Save**.
+
+3. Deploy Template.
+   ![microsoft-azure-deploy-template-8.png](../../images/cloud-application-manager/microsoft-azure-deploy-template-8.png)
+   * From Template click **Deploy**.
+   * **Select** one ARM Template Box.
+   * Choose a name and description for the new instance.
+   * Press **Deploy**.
+
+### Registering Existing Instances from your Azure Account
+
+You can import existing Virtual Machines into you workspace only in one click. The list of available instances you can import come with your Microsoft Azure provider synchronization.
+
+**Available Instances**
+
+As part of the result of synchronization process you can find a list of available virtual machines that already exist in your account but not used yet in Cloud Application Manager. You can import an existing one clicking **Import** button.
+
+The only requirement is instance must be in Running status.
+
+![microsoft-azure-available-instances-9.png](../../images/cloud-application-manager/microsoft-azure-available-instances-9.png)
+
+We strongly recommend synchronize your Azure provider before you try to register the virtual machine. This due to such instance may be registered by another user before you try to register it. This way you can avoid this kind of problems.
 
 ### Contacting Cloud Application Manager Support
 

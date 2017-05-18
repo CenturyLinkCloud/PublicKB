@@ -105,15 +105,9 @@ ___
 
 **Help**
 
-Get help from our [Knowledge Base](../../) or contact [support](mailto:cloudsupport@centurylink.com).
+Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md) for help. Or you may contact [support](mailto:cloudsupport@centurylink.com) from within the Cloud Application Manager interface.
 
 ![getting-started-login-7.png](../../images/cloud-application-manager/getting-started-login-7.png)
-
-___
-
-### Contacting Cloud Application Manager Support
-
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
