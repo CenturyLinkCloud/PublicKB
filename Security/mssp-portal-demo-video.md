@@ -5,6 +5,7 @@
 "attachments": [],
 "related-products" : [],
 "contentIsHTML": false
+"sticky": false
 }}}
 
 The Managed Security Services Portal is an easy-to-use, intuitive, single pane of glass platform that allows our security operations staff to monitor and detect threats to your system. Customers also have access to the portal for complete transparency and visibility into emerging threats.
