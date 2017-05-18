@@ -1,6 +1,6 @@
 {{{
 "title": "MSSP - Pre-install Guide for Security Log Monitoring",
-"date": "05-25-2017",
+"date": "05-23-2017",
 "author": "",
 "attachments": [],
 "related-products" : [],
@@ -36,13 +36,13 @@ The following describes the steps customers need to take to help ensure successf
 
     Log Collection Platform (LCP) - Hardware Requirements
 
-    ![](../images/mssp-security-log-monitoring-pre-install-guide-1,png)
+    ![Hardware requirements](../images/mssp-security-log-monitoring-pre-install-guide-1.png)
 
 3. Customer provides necessary network connectivity for the log collection platform.
 
     Log Collection Platform (LCP) - Network Connectivity Requirements
 
-    ![](../images/mssp-security-log-monitoring-pre-install-guide-2.png)
+    ![Network requirements](../images/mssp-security-log-monitoring-pre-install-guide-2.png)
 
 4. Customer works with CenturyLink Implementation to customize the log collection platform.
 
