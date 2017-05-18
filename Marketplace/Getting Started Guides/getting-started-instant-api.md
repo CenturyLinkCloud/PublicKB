@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-![InstantAPI](../../images/Marketplace/Alert-Logic-logo.png)
+![InstantAPI](../../images/Marketplace/InstantAPI_logo.png)
 
 ### Technology profile
 
@@ -142,15 +142,14 @@ In the above example we have put the API key before the version being tested for
 
 The API key can also be added to the URL as a query string parameter as follows:
 
-https://ctl-us01.api.run/staged/demo/domainbroker/domain?apikey=
+https://ctl-us-try.api.run/staged/demo/domainbroker/domain?apikey=
 
 It can also be added to the HTTP Header of the call (normally done via code).
 If you added paging support you can also add query string parameters for limit (amount of items to return) and skip (used to get results after the first items) these are used commonly for paging purposes.
 
 Copy your Master API Key and replace the value for apikey shown above and pasted into your browser. Once done you should see a result as a JSON response based on your API call as shown below. This is how our test API call URL looked like:
 
-https://try.api.run/GLCVcB7FBcG4Oyfct3UbTkq1i6IkLOGx/staged/demo/domain/list?domainna
-me=google
+ https://ctl-us-try.api.run/GLCVcB7FBcG4Oyfct3UbTkq1i6IkLOGx/staged/demo/domain/list?domainname=google
 
 ![IAPI-13.png](../../images/Marketplace/IAPI-13.png)
 
