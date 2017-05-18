@@ -3,14 +3,15 @@
 "date": "02-10-2017",
 "author": "Rich DuBose",
 "attachments": [],
-"contentIsHTML": false
+"contentIsHTML": false,
+"sticky": true
 }}}
 
 The CenturyLink Cloud Marketplace allows customers to purchase software from an extensive list of Software Providers that partner with CenturyLink. During the CenturyLink Marketplace Onboarding Program, there are a variety of tasks that not only need to be completed by the CenturyLink Marketplace team, but the provider as well. The Onboarding Program is meant to streamline the process of getting partner products into the Marketplace. This Knowledge Base Article provides critical information necessary for becoming a Marketplace Provider.
 
 ### Provider Portal
 
-Once your account has been setup, you will be notified via email and provided the information needed to access the [Provider Portal](http://provider-portal.ctl.io/). Providers will use the same credentials they setup while creating their CenturyLink Cloud account to log into the Provider Portal.
+Once your account has been setup, you will be notified via email and provided the information needed to access the [Provider Portal](https://provider-portal.ctl.io/). Providers will use the same credentials they setup while creating their CenturyLink Cloud account to log into the Provider Portal.
 
 The Provider Portal provides you with multiple resources.
 

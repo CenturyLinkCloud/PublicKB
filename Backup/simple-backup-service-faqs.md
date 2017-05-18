@@ -52,6 +52,10 @@ A: No further backups occur from the server to storage. If a backup agent is una
 
 A: No, SBS provides file-level backup protection. In fact, SBS does not backup certain [OS files](#inclusions-and-exclusions) or provide snapshot capability. Users can still perform [manual snapshots on-demand](https://www.ctl.io/knowledge-base/servers/creating-and-managing-server-snapshots/) and as scheduled tasks within the server settings. For full [Disaster Recovery](https://www.ctl.io/knowledge-base/support/introducing-new-options-for-backups/#how-does-the-simple-backup-service-compare-to-other-options-are-available-on-centurylink-cloud) services, there are a number of options available internally or through Certified Ecosystem partners.
 
+**Q: Does SBS support server cloning?**
+
+A: No, currently SBS does not support cloning. If the agent is installed on a server and the server is cloned there can be data continuity issues between the backups of the source and cloned server. If a server is going to be cloned, the SBS agent must be [uninstalled](./removing-simple-backup-service.md) first, and the agent properly installed on all servers needed after they are cloned.
+
 ### Agent
 
 **Q: What are the minimum requirements of a VM for the SBS agent to run?**
@@ -216,6 +220,10 @@ A: No. This is a manual process at this time. A [support request](https://www.ct
 **Q: Why do unchanged files not follow retention?**
 
 A: This provides the ability to utilize incremental backups with consistent full backup protection. By not expiring unchanged files, there is no need to retransfer them to object storage, which minimizes data transfer costs and provides quicker backups. Bottom line is that it provides quicker and cheaper backups for our users.
+
+**Q: What is the maximum retention period for backups?**
+
+A: 18263 days (approximately 50 years)
 
 ### Inclusions and Exclusions
 

@@ -107,7 +107,7 @@ The answer varies depending on the workload and your requirements. Along those l
 * Support Model: Supported by CenturyLink (since the product is integrated into the Control Portal); on-boarding from CenturyLink is also included
 * To Get Started: Contact your account team, or [visit the product page](https://www.ctl.io/disaster-recovery/)
 * Other resources:
-  * [This section of the knowledge base](../Disaster Recovery) has additional articles on Safe Haven.
+  * [This section of the knowledge base](https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-3/#1) has additional articles on Safe Haven.
 
 #### CommVault
 * When to use it: Data and file backup, with many powerful features and capabilities to protect data across a variety of platforms, and to host data across a variety of storage media. OS-level images are supported.

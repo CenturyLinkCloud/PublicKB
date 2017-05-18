@@ -11,6 +11,7 @@
     "Container Services",
     "Control Portal",
     "Database",
+    "Dedicated Cloud Compute",
     "Disaster Recovery",
     "Ecosystem Partners",
     "General",
@@ -19,12 +20,11 @@
     "Marketplace",
     "Network",
     "Object Storage",
-    "Orchestrate",
     "Partners",
     "Release Notes",
     "Runner",
     "Security",
-    "Service Tasks",
-    "Servers"
+    "Servers",
+    "Service Tasks"
   ]
 }}}
