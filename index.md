@@ -10,6 +10,7 @@
     "Compliance",
     "Container Services",
     "Control Portal",
+    "Private Node",
     "Database",
     "Dedicated Cloud Compute",
     "Disaster Recovery",
