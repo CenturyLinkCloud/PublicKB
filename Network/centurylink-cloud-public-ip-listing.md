@@ -26,14 +26,15 @@ Below is the current CenturyLink public IP listing. It is updated regularly as p
 **Data Center**|**IP Blocks**
 ---------------|----------
 AU1|65.127.194.144/29<br>65.151.184.0/23<br>65.151.186.0/23
-CA1|216.187.73.144/28<br>64.69.71.128/25<br>65.39.180.0/24<br>65.39.184.0/25<br>216.187.110.0/24
+CA1|216.187.73.144/28<br>64.69.71.128/25<br>65.39.180.0/24<br>65.39.184.0/25<br>216.187.110.0/24<br>65.151.128.0/23<br>65.151.130.0/23
 CA2|70.33.239.96/28<br>66.155.96.0/24<br>66.155.100.0/24<br>69.28.224.128/25<br>70.33.208.0/25<br>70.33.239.128/25<br>107.6.43.0/24
 CA3|206.152.25.96/28<br>206.152.32.0/21<br>206.152.45.0/24
 DE1|66.155.5.0/28<br>66.155.4.0/24<br>66.155.94.0/24<br>66.155.95.0/24
-GB1|176.74.176.144/28<br>66.155.18.0/24<br>66.155.27.0/24<br>66.155.28.0/24<br>176.74.168.0/25<br>176.74.179.0/25<br>66.155.19.0/24
+DE3|65.151.172.0/22
+GB1|176.74.176.144/28<br>66.155.18.0/24<br>66.155.27.0/24<br>66.155.28.0/24<br>176.74.168.0/25<br>176.74.179.0/25<br>66.155.19.0/24<br>65.151.144.0/22
 GB3|206.142.225.192/28<br>206.142.240.0/21<br>207.82.88.0/24
 IL1|64.94.35.32/28<br>64.74.98.0/24<br>66.150.105.0/24<br>66.151.15.0/24<br>69.25.149.0/24<br>72.5.203.0/24<br>74.217.15.0/24<br>72.5.194.0/24<br>64.74.229.0/24
-NY1|74.217.51.192/28<br>74.201.135.0/24<br>74.201.140.0/24<br>74.201.226.0/24<br>74.201.232.0/24<br>74.201.237.0/24<br>74.201.240.0/24<br>206.128.136.0/24<br>74.201.165.0/24
+NY1|74.217.51.192/28<br>74.201.135.0/24<br>74.201.140.0/24<br>74.201.226.0/24<br>74.201.232.0/24<br>74.201.237.0/24<br>74.201.240.0/24<br>74.201.165.0/24
 SG1|205.139.20.0/28<br>205.139.16.0/22<br>205.139.24.0/25
 UC1|64.15.180.16/28<br>64.15.182.0/24<br>64.15.183.0/24<br>64.15.184.0/21<br>64.15.176.0/24<br>64.211.224.0/25
 UT1|8.22.8.0/28<br>8.22.9.0/24<br>8.23.156.0/24
@@ -55,6 +56,10 @@ A: Customers are billed a nominal fee per public IP on a monthly basis. Public I
 
 A: As the platform uses a 1 to 1 NAT (public to private) and /24 network sizes the current maximum number of public IPs is 219 per VM. Bare Metal servers are only permitted a single public IP currently.
 
+**Q: My server is housed in a datacenter in a non-US country.  Why do geolocation services show me as being in the United States?**
+ 
+ A:  All IPs in CenturyLink Cloud datacenters worldwide are registered to a mailing address in the United States via a third-party registrar.  As such, most GeoIP services will show the IPs as being in the US, rather than in the country the datacenter is housed in.  This is an effect of our relationship with our registrars and cannot be changed either per customer or per datacenter.
+ 
 **Q: Who do I contact for support or questions regarding Public IP listings?**
 
 A: For service issues [please contact support.](../Support/how-do-i-report-a-support-issue.md)
