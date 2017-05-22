@@ -8,13 +8,13 @@
 
 ### Overview
 
-Software Providers that are classified as Software as a Service (SaaS) generally will not be required to work with our Ecosystem Team to automate a deployment into a customer's infrastructure. However, SaaS Providers will need to implement one of the integration types below. During the Marketplace Provider Onboarding Program, we will discuss which integration type is the best fit. 
+Software Providers that are classified as Software as a Service (SaaS) generally will not be required to work with our Ecosystem Team to automate a deployment into a customer's infrastructure. However, SaaS Providers will need to implement one of the integration types below. During the Marketplace Provider Onboarding Program, we will discuss which integration type is the best fit.
 
 ### Integration Types
 
 #### Tracking Pixel
 
-**Overview** 
+**Overview**
 
 The tracking pixel option allows CenturyLink to monitor demand & accounts created by the CenturyLink Cloud Marketplace drives to your organizations website & product.
 
@@ -86,7 +86,7 @@ The CenturyLink Cloud Marketplace will provide the user interface & collect the 
 
 Only the **bold** fields are required from a CenturyLink perspective. However, you will be able to specify which data points are displayed to your perspective buyer, as well as which are required for them to complete.
 
-We understand that there will be a need for variability with the API names among our providers but would prefer the following scheme when possible: ```/provider-name-provision-account/```. 
+We understand that there will be a need for variability with the API names among our providers but would prefer the following scheme when possible: ```/provider-name-provision-account/```.
 
 The parameters will be passed via a json payload. The exact json message will vary between providers. We've provided an example below.
 
@@ -101,10 +101,12 @@ The parameters will be passed via a json payload. The exact json message will va
 The status codes your API will need to return are:
 
 * 201 - Account Provisioning Successful (Co ID from your platform to be returned)
-* 40x - Account Provisioning Failure 
+* 40x - Account Provisioning Failure
 * 50x - Server Side Error
 
 ##### Update Subscription
+
+** JP - we only have an API for usage-based billing.  subscription-based automatically bills each month.  -- we may need a new endpoint to terminate a subscription /JP**
 
 *The full endpoint for the* ```/update-subscription/``` *is not published in this article for security reasons. Your organization will be provided documentation for the endpoint during onboarding*
 
@@ -133,7 +135,7 @@ An example json payload the ```/update-subscription/``` API is provided below.
 ```/update-subscriptions/``` will return the following status codes.
 
 * 201 - Subscription Successfully Updated
-* 40x - Account Provisioning Failure 
+* 40x - Account Provisioning Failure
   * Required element(s) not provided
   * **expired** set to 'true' & **expired-date** not provided
 * 50x - Server Side Error
