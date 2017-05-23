@@ -31,7 +31,7 @@ Application Product Engineering has tested and certified Apache Tomcat
 
 The Software Policy to use for RHEL 6 and 7 have been combined into a single policy.  The script which installs the package is now able to detect which major version of RHEL is targeted for the install, and utilizes the appropriate RHN channel for the installation.
 
-* __Safe Haven__
+ __Safe Haven__
 
 This is a patch release for SafeHaven 4.0.1
 
