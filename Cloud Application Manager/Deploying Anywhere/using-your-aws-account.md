@@ -60,7 +60,7 @@ Before you deploy in AWS, you need to connect your AWS account in Cloud Applicat
             "cloudformation:ListStackResources",
             "cloudformation:UpdateStack",
             "cloudformation:ValidateTemplate",
-            “cloudwatch:DescribeAlarms”,
+            "cloudwatch:DescribeAlarms",
             "dynamodb:CreateTable",
             "dynamodb:DeleteTable",
             "dynamodb:DescribeTable",
