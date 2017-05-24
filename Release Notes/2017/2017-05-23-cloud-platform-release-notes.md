@@ -1,4 +1,4 @@
-{{{
+ {{{
 "title": "Cloud Platform - Release Notes: May 23, 2017",
 "date": "5-23-2017",
 "author": "Bob Jackson",
@@ -8,28 +8,30 @@
 
 ### New Features (1)
 
-* __Cloud Application Manager__
+ __Cloud Application Manager__
 
-- Bulk Import of auto discovered instances
-Cloud Application Manager now allows users to register auto discovered instances in bulk. Full instructions on how to use this new feature are available at the Knowledge Base section on our website.
+Bulk Import of auto discovered instances
 
-- Microsoft Azure Resale available for U.K. based customers
-Azure resale to companies based in the United Kingdom is Live! From the Azure Provider, users whose main registered address with CenturyLink is in the United Kingdom, will be permitted to automatically provision new Azure accounts for consolidated billing and platform level support. The capabilities that CenturyLink will Resell will still be the same as defined [here.] (../../Cloud Application Manager/Cloud Optimization/partner-cloud-integration-azure-capabilities.md) 
+- Cloud Application Manager now allows users to register auto discovered instances in bulk. Full instructions on how to use this new feature are available at the Knowledge Base section on our website.
+
+Microsoft Azure Resale available for U.K. based customers
+
+- Azure resale to companies based in the United Kingdom is Live! From the Azure Provider, users whose main registered address with CenturyLink is in the United Kingdom, will be permitted to automatically provision new Azure accounts for consolidated billing and platform level support. The capabilities that CenturyLink will Resell will still be the same as defined [here.] (../../Cloud Application Manager/Cloud Optimization/partner-cloud-integration-azure-capabilities.md)
 
 ### Enhancements (3)
 
-* __Load Balancer as a Service__
+ __Load Balancer as a Service__
 
 Load Balancer as a Service has added URI as a supported load balancing method. This new capability is now available in addition to Least Connection, Round Robin, and Source IP support.
 
-* __Managed Applications__
+ __Managed Applications__
 
 Application Product Engineering has tested and certified Apache Tomcat
 7.0.77, 8.0.43 and 8.5.14 on RHEL  6 and 7.
 
 The Software Policy to use for RHEL 6 and 7 have been combined into a single policy.  The script which installs the package is now able to detect which major version of RHEL is targeted for the install, and utilizes the appropriate RHN channel for the installation.
 
-* __Safe Haven__
+ __Safe Haven__
 
 This is a patch release for SafeHaven 4.0.1
 
