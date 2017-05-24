@@ -24,7 +24,7 @@ This is a script to work through some basic functionality in the new DCC UI.
 
 Navigate to [savvisstation.com](///savvisstation.savvis.com/.cccLoginPage;jsessionid=75E6A07F4341A0D71F8D442CC282202D) and log-in. Once portal has loaded, navigate to **Savvis Cloud > New Dedicated Cloud Compute Portal.**
 
-![savvvisstationportal.png](../images/savvvisstationportal.png)
+![savvvisstationportal.png](../../images/savvvisstationportal.png)
 
 This will open the new DCC Portal in a new tab.
 
