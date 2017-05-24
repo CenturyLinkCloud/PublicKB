@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-![InstantAPI](../../images/Marketplace/Alert-Logic-logo.png)
+![InstantAPI](../../images/Marketplace/InstantAPI_logo.png)
 
 ### Technology profile
 
