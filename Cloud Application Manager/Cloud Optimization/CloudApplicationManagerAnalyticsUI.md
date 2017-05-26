@@ -25,10 +25,10 @@ Here your linked account will detail opportunities for you to reduce your cloud 
 This section evaluates your cloud provider account against over 300 checks to ensure proper utilization of your infrastructure in the categories of cost, security, availability and usage.   
 
 
-##### Workspaces
+##### Accounts
 ![AnalyticsWorkspaceScreenShot](..\..\images\AnalyticsWorkspaceScreenShot170601.png)
 
-After logging in, the user will be able to choose from a list of accounts, for which they have [Administrator access](https://www.ctl.io/knowledge-base/cloud-application-manager/core-concepts/workspaces-and-collaboration/#workspaces) to a workspace that has a valid cloud provider account. After choosing the targeted accounts analytics data will be displayed.
+After logging in, the user will be able to choose from a list of accounts, for which they have [Administrator access](https://www.ctl.io/knowledge-base/cloud-application-manager/core-concepts/workspaces-and-collaboration/#workspaces) to a workspace and that has a valid cloud provider account. After choosing the targeted accounts analytics data will be displayed.
 
 If a provider account is duplicated in one or more workspaces they will be highlighted accordingly.  
 
