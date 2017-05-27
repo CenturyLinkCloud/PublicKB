@@ -7,7 +7,7 @@
 "contentIsHTML": false
 }}}
 
-Once an [order is provisioned](../Dedicated Cloud Compute/Getting Started/dcc-ui-provisioning-orders.md) in the new Dedicated Cloud Compute (DCC) UI, you can view, lock/unlock, edit, deploy, and delete the order. [Go here](../knowledge-base/dedicated-cloud-compute/getting-started/dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
+Once an [order is provisioned](../Dedicated Cloud Compute/getting started/dcc-ui-provisioning-orders.md) in the new Dedicated Cloud Compute (DCC) UI, you can view, lock/unlock, edit, deploy, and delete the order. [Go here](../Dedicated Cloud Compute/getting started/dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
 
 ### View an Order
 
@@ -17,7 +17,7 @@ To view an order:
 
 2. The **Server Operations** view shows each order, which can be expanded to show the details of the order.
 
-![dashboard](../images/dcc-ui-working-with-orders-1.png)
+![dashboard](../../images/dcc-ui-working-with-orders-1.png)
 
 ### Lock/Unlock an Order
 
@@ -27,7 +27,7 @@ To view an order:
 
 3. To unlock the server, click the **actions dropdown list and select **Unlock**.
 
-![dashboard](../images/dcc-ui-working-with-orders-2.png)
+![dashboard](../../images/dcc-ui-working-with-orders-2.png)
 
 ### Edit an Order
 
@@ -41,17 +41,17 @@ You can also lock and unlock the order, as well as editing the details of an ord
 
 4. The **Saved Order** page contains all the order details that you can edit.
 
-![dashboard](../images/dcc-ui-working-with-orders-3.png)
+![dashboard](../../images/dcc-ui-working-with-orders-3.png)
 
 ### Deploy an Order
 
 1. Once you have created an order, lock the order so it can be deployed (make sure you have made all changes to the order before locking it).
 
-![dashboard](../images/dcc-ui-working-with-orders-4.png)
+![dashboard](../../images/dcc-ui-working-with-orders-4.png)
 
 2. You can then send a notification email to admins so that they know the order is ready for approval and deployment.
 
-![dashboard](../images/dcc-ui-working-with-orders-5.png)
+![dashboard](../../images/dcc-ui-working-with-orders-5.png)
 
 **Note:** If you have admin/deploy rights for DCC, you can deploy an order by locating the order and going through the deploy process on the order page.
 
@@ -61,4 +61,4 @@ You can also lock and unlock the order, as well as editing the details of an ord
 
 2. Click **Delete**. This deletes the server. The server can also be deleted on the order details page you can access from the **actions** dropdown menu.
 
-![dashboard](../images/dcc-ui-working-with-orders-6.png)
+![dashboard](../../images/dcc-ui-working-with-orders-6.png)

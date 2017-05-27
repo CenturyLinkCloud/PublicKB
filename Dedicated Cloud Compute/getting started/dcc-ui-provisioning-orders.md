@@ -7,7 +7,7 @@
 "contentIsHTML": false
 }}}
 
-You can provision orders in the new Dedicated Cloud Compute (DCC) UI. Steps include adding and deleting a VM, adding a datastore, and adding and deleting a disk. [Go here](../knowledge-base/dedicated-cloud-compute/getting-started/dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
+You can provision orders in the new Dedicated Cloud Compute (DCC) UI. Steps include adding and deleting a VM, adding a datastore, and adding and deleting a disk. [Go here](../Dedicated Cloud Compute/getting started/dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
 
 ### Add VM/Delete VM
 
@@ -15,11 +15,11 @@ You can provision orders in the new Dedicated Cloud Compute (DCC) UI. Steps incl
 
 2. Make selections in the datacenter, cluster, billing account number, and operating system fields. Each selection will populate and enable other fields on the page. Once these four fields have been filled, the estimate cost button on the left side of the page will become available.
 
-    ![dashboard](../images/dcc-ui-provisioning-orders-1.png)
+    ![dashboard](../../images/dcc-ui-provisioning-orders-1.png)
 
 3. Optional: Click the **Estimate Cost** button. This will display the install and monthly costs and discounts for a VM with the selected options.
 
-    ![dashboard](../images/dcc-ui-provisioning-orders-2.png)
+    ![dashboard](../../images/dcc-ui-provisioning-orders-2.png)
 
 4. Make selections in the vcpu, vram, and interface 1 fields. This will finish populating all the required fields in the form and enable the **Save Order** button.
 
@@ -31,9 +31,9 @@ You can also add data storage to the VM/server order.
 
 2. Select the storage location and size.
 
-    ![dashboard](../images/dcc-ui-provisioning-orders-3.png)
+    ![dashboard](../../images/dcc-ui-provisioning-orders-3.png)
 
-3. Click **Save Order**. This will put your order in the **Saved Orders** section, which you can then [deploy](../Dedicated Cloud Compute/Getting Started/dcc-ui-working-with-orders.md).
+3. Click **Save Order**. This will put your order in the **Saved Orders** section, which you can then [deploy](../Dedicated Cloud Compute/getting started/dcc-ui-working-with-orders.md).
 
 ### Add Disk/Delete Disk
 

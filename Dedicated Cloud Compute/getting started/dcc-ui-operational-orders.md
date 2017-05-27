@@ -7,7 +7,7 @@
 "contentIsHTML": false
 }}}
 
-The new Dedicated Cloud Compute (DCC) UI gives the ability to perform power operations and tier changes on servers/VMs. [Go here](../knowledge-base/dedicated-cloud-compute/getting-started/dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
+The new Dedicated Cloud Compute (DCC) UI gives the ability to perform power operations and tier changes on servers/VMs. [Go here](../Dedicated Cloud Compute/getting started/dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
 
 ### Power Operations
 
@@ -21,7 +21,7 @@ To perform power operations:
 
 3. The **Overview** tab contains the power operations buttons in a toolbar at the top of the page.
 
-![dashboard](../images/dcc-ui-operational-orders-1.png)
+![dashboard](../../images/dcc-ui-operational-orders-1.png)
 
 ### Change Tier
 
@@ -33,4 +33,4 @@ The server/VM tier can also be changed on the server page.
 
 3. The **Resouces** tab should appear. The **vcpu** and **vram** dropdowns will allow you to change the tier for the VM.
 
-![dashboard](../images/dcc-ui-operational-orders-2.png)
+![dashboard](../../images/dcc-ui-operational-orders-2.png)
