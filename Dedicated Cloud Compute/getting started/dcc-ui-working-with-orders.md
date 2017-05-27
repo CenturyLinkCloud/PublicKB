@@ -7,7 +7,7 @@
 "contentIsHTML": false
 }}}
 
-Once an [order is provisioned](../Dedicated Cloud Compute/getting started/dcc-ui-provisioning-orders.md) in the new Dedicated Cloud Compute (DCC) UI, you can view, lock/unlock, edit, deploy, and delete the order. [Go here](../Dedicated Cloud Compute/getting started/dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
+Once an [order is provisioned](../getting started/dcc-ui-provisioning-orders.md) in the new Dedicated Cloud Compute (DCC) UI, you can view, lock/unlock, edit, deploy, and delete the order. [Go here](../getting started/dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
 
 ### View an Order
 
@@ -47,11 +47,11 @@ You can also lock and unlock the order, as well as editing the details of an ord
 
 1. Once you have created an order, lock the order so it can be deployed (make sure you have made all changes to the order before locking it).
 
-![dashboard](../../images/dcc-ui-working-with-orders-4.png)
+    ![dashboard](../../images/dcc-ui-working-with-orders-4.png)
 
 2. You can then send a notification email to admins so that they know the order is ready for approval and deployment.
 
-![dashboard](../../images/dcc-ui-working-with-orders-5.png)
+    ![dashboard](../../images/dcc-ui-working-with-orders-5.png)
 
 **Note:** If you have admin/deploy rights for DCC, you can deploy an order by locating the order and going through the deploy process on the order page.
 

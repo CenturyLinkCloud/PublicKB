@@ -7,7 +7,7 @@
 "contentIsHTML": false
 }}}
 
-The new Dedicated Cloud Compute (DCC) UI in the SavvisStation Portal contains information on clusters, hosts, VMs, images, and utilization metrics. [Go here](../Dedicated Cloud Compute/getting started/dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
+The new Dedicated Cloud Compute (DCC) UI in the SavvisStation Portal contains information on clusters, hosts, VMs, images, and utilization metrics. [Go here](../getting started/dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
 
 ### Clusters
 
@@ -19,7 +19,7 @@ The dashboard view groups all virtual resources together by parent data center, 
 
 The Hosts tab displays all the hosts in a drop-down menu that appears. This view shows the Host's details. Circular graphs show the CPU and RAM usage with charts showing the same over a 12-hour period.
 
-![](../../images/dcc-ui-viewing-dcc-resources-2.png)
+![dashboard](../../images/dcc-ui-viewing-dcc-resources-2.png)
 
 ### Virtual Machines
 
@@ -27,7 +27,7 @@ Each cluster expands to a list of VMs in the cluster by preferred name. VMs that
 
 Clicking on a VM name shows the VM's details. The circular graphs show the vCPU and vRAM usage, with charts showing the same over a 12-hour period.
 
-![](../../images/dcc-ui-viewing-dcc-resources-3.png)
+![dashboard](../../images/dcc-ui-viewing-dcc-resources-3.png)
 
 ### Images
 
