@@ -36,7 +36,7 @@ In addition, developers also created the Automation Business Logic Layer (ABL) t
 * Orchestrating provisioning tasks against infrastructure systems including storage, vCenter, CHEF, HP Server Automation (HP SA), etc.
 
 **Figure 2.**
-![ablinteractionsdcc.png](../../images/ablinteractions.png)
+![ablinteractionsdcc.png](../../images/ablinteractionsdcc.png)
 
 **References**
 * API – https://confluence.savvis.net/x/3vGCBg
