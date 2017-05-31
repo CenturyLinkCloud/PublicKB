@@ -14,7 +14,7 @@ The Cloud Application Manager [Monitoring UI](https://monitoring.cam.ctl.io) is 
 This document describes how to access the Monitoring UI, and provides a breakdown of the different views that are available in each of the main components of the UI which consists of Events, Policies, Servers, Suppression, and Graphing.
 
 
-![MonitoringLeftNavScreenShot](..\..\images\MonitoringLeftNavScreenShot170601.png)
+![MonitoringLeftNavScreenShot](../../images/MonitoringLeftNavScreenShot170601.png)
 
 
 ##### Servers
@@ -33,14 +33,14 @@ Monitoring policies are groupings of one or more server checks available to be a
 For servers that have 'metric' server checks applied to them, for which all Managed OS server do for CPU, Memory and Disk by default, you can display the data in area, line or multi-bar formats over the selected period of time via specific timeframes or generalized (i.e. now, last hour).
 
 ##### Workspaces
-![MonitoringWorkspaceScreenShot](..\..\images\MonitoringWorkSpaceScreenShot170601.png)
+![MonitoringWorkspaceScreenShot](../../images/MonitoringWorkSpaceScreenShot170601.png)
 
 After logging in the user will be in their personal workspace. Click on the workspace switcher to choose the workspace of which server(s) you wish to view.  
 
 
 ### Logging into the Monitoring UI.
 
-![GlobalNavScreenShot][..\..\images\GlobalNavScreenShot170601.png]
+![GlobalNavScreenShot][../../images/GlobalNavScreenShot170601.png]
 
 After logging into Cloud Application Manager you can navigate to the Monitoring UI by clicking on the monitoring link as shown below.
 
