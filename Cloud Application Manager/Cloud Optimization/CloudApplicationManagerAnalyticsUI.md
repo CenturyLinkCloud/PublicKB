@@ -32,7 +32,6 @@ After logging in, the user will be able to choose from a list of accounts, for w
 If a provider account is duplicated in one or more workspaces they will be highlighted accordingly.
 
 ##### Logging into the Analytics UI
-
 ![GlobalNavScreenShot](../../images/GlobalNavScreenShot170601-1.png)
 
 After logging into Cloud Application Manager you can navigate to the Anlaytics UI by clicking on the Optimization link as shown below.  
