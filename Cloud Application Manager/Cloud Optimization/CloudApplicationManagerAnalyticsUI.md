@@ -14,23 +14,28 @@ The Cloud Application Manager [Analytics UI](https://analytics.cam.ctl.io) is a 
 This document describes how to access the Analytics UI and provides a breakdown of the different views that are available in each of the main components of the UI which consists of Savings and Best Practices.
 
 
-![AnalyticsLeftNavScreenShot](..\..\images\AnalyticsLeftNavScreenShot170601.png)
+![AnalyticsLeftNavScreenShot](../../images/AnalyticsLeftNavScreenShot170601.png)
 
 
 ##### Savings
 Here your linked account will detail opportunities for you to reduce your cloud spend due to resources that are idle, unused or mis-provisioned.  
-
 
 ##### Best Practices
 This section evaluates your cloud provider account against over 300 checks to ensure proper utilization of your infrastructure in the categories of cost, security, availability and usage.   
 
 
 ##### Accounts
-![AnalyticsWorkspaceScreenShot](..\..\images\AnalyticsWorkspaceScreenShot170601.png)
+![AnalyticsWorkspaceScreenShot](../../images/AnalyticsWorkspaceScreenShot170601.png)
 
 After logging in, the user will be able to choose from a list of accounts, for which they have [Administrator access](https://www.ctl.io/knowledge-base/cloud-application-manager/core-concepts/workspaces-and-collaboration/#workspaces) to a workspace and that has a valid cloud provider account. After choosing the targeted accounts analytics data will be displayed.
 
-If a provider account is duplicated in one or more workspaces they will be highlighted accordingly.  
+If a provider account is duplicated in one or more workspaces they will be highlighted accordingly.
+
+##### Logging into the Analytics UI
+
+![GlobalNavScreenShot](../../images/GlobalNavScreenShot170601-1.png)
+
+After logging into Cloud Application Manager you can navigate to the Monitoring UI by clicking on the monitoring link as shown below.  
 
 
 #### Adding provider to CAM
