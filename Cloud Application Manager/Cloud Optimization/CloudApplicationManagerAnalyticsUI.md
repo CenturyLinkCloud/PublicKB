@@ -33,7 +33,7 @@ If a provider account is duplicated in one or more workspaces they will be highl
 
 ##### Logging into the Analytics UI
 
-![GlobalNavScreenShot](../../images/GlobalNavScreenShot170601-1.png)
+![GlobalNavScreenShot](../../images/GlobalNavScreenShot170601-5.png)
 
 After logging into Cloud Application Manager you can navigate to the Anlaytics UI by clicking on the Optimization link as shown below.  
 
