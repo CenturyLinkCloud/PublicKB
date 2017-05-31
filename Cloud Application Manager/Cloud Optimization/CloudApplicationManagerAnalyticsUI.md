@@ -32,10 +32,10 @@ After logging in, the user will be able to choose from a list of accounts, for w
 If a provider account is duplicated in one or more workspaces they will be highlighted accordingly.
 
 ##### Logging into the Analytics UI
+![GlobalNavScreenShot](../../images/GlobalNavScreenShot170601-1.png)
 
-![GlobalNavScreenShot](../../images/GlobalNavScreenShot170601-2.png)
+After logging into Cloud Application Manager you can navigate to the Anlaytics UI by clicking on the Optimization link as shown below.  
 
-After logging into Cloud Application Manager you can navigate to the Analytics UI by clicking on the Optimization link as shown below.  
 
 #### Adding provider to CAM
 In order to view a cloud providers analytics data a user must have [Administrator access](https://www.ctl.io/knowledge-base/cloud-application-manager/core-concepts/workspaces-and-collaboration/#workspaces), to a [shared workspace](https://www.ctl.io/knowledge-base/cloud-application-manager/core-concepts/workspaces-and-collaboration/#sharing-boxes-instances-and-providers) where a valid on-boarded cloud provider has been added. You can speak to your companies Cloud Application Manager Organization Admin to add you as an 'administrator' to a shared workspace that has already had the target cloud provider account added as a 'provider' or you can add valid credentials to the 'providers' in your personal workspace.  
