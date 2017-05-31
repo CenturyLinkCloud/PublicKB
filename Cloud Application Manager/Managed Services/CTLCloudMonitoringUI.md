@@ -6,7 +6,6 @@
   "contentIsHTML": false
 }}}
 
-
 ### Introduction
 The Cloud Application Manager [Monitoring UI](https://monitoring.cam.ctl.io) is a centralized location where users can view policies, alerts and general configuration for servers that are being monitored as part of our [Managed OS Anywhere](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/) offering. If interested in using this service/feature in a standalone fashion or suggestions for enhancements please contact us at [feature@ctl.io](mailto:feature@ctl.io).  
 

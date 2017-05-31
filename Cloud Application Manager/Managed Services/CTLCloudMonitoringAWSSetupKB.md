@@ -7,7 +7,7 @@
 }}}
 
 ### Introduction
-To supplement our [Managed OS Anywhere](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/) offering in AWS we have released functionality to monitoring a customers servers via CloudWatch to augment our existing OS level monitoring capabilities as an optional feature.
+To supplement our [Managed OS Anywhere](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/) offering in AWS we have released functionality to monitoring a customers servers via CloudWatch to augment our existing OS level monitoring capabilities as an optional feature. 
 
 ### Overview
 The following process automates the configuration of an your AWS account for CenturyLink’s Cloud Application Manager AWS Native Monitoring functionality utilizing AWS CloudFormation functionality. You can inspect the code [here](https://s3.us-east-2.amazonaws.com/ctl-cloudoptimization/CTLCloudMonitoringIAMPolicy.template.json).
