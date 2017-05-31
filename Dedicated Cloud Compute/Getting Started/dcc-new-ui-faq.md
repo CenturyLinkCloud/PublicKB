@@ -1,4 +1,4 @@
-{{{ "title": "New DCC UI FAQ",
+{{{ "title": "New Dedicated Cloud Compute UI FAQ",
 "date": "06-1-2017",
 "author": "",
 "attachments": [],

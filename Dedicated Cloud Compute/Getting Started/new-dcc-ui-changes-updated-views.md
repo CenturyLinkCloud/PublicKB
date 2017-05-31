@@ -1,4 +1,4 @@
-{{{ "title": "New DCC UI Changes and Updated Views",
+{{{ "title": "New Dedicated Cloud Compute UI Changes and Updated Views",
 "date": "06-1-2017",
 "author": "",
 "attachments": [],
