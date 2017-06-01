@@ -66,7 +66,7 @@ Experienced users of the old/existing SSP, will recognize **Figure 5.**, and how
 **Figure 6.**
 ![datacentersiteclusterview2.png](../../images/datacentersiteclusterview2.png)
 
- Another change with the new UI is how customers view their stored images.  The old SSP provided a centralized *Image Management Dashboard* under Symphony Orchestrator where customers could view and work with all their saved images. **Figure 7.** shows how new UI uses a decentralized view that lists available images under each cluster.
+ Another change with the new UI is how customers view their stored images. The old SSP provided a centralized *Image Management Dashboard* under Symphony Orchestrator where customers could view and work with all their saved images. **Figure 7.** shows how new UI uses a decentralized view that lists available images under each cluster.
 
 **Figure 7.**
 ![newimagemanagementviewdccui3.png](../../images/newimagemanagementviewdccui3.png)
