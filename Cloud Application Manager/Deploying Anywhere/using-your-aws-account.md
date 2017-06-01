@@ -29,7 +29,7 @@ Before you deploy in AWS, you need to connect your AWS account in Cloud Applicat
 <iframe frameborder="0" height="316" src="//player.vimeo.com/video/126177639" width="561"></iframe>
 
 **Steps**
-1. Create a custom AWS policy and copy, paste these permissions:
+1. Create a custom AWS policy and copy, paste these permissions and name it CAM_Policy:
 
    ```
    {
@@ -37,6 +37,18 @@ Before you deploy in AWS, you need to connect your AWS account in Cloud Applicat
    "Statement":[
    {
         "Action":[
+            "autoscaling:CreateAutoScalingGroup",
+            "autoscaling:CreateLaunchConfiguration",
+            "autoscaling:DeleteAutoScalingGroup",
+            "autoscaling:DeleteLaunchConfiguration",
+            "autoscaling:DescribeScalingActivities",
+            "autoscaling:DescribeAutoScalingGroups",
+            "autoscaling:DescribeAutoScalingInstances",
+            "autoscaling:DescribeLaunchConfigurations",
+            "autoscaling:ResumeProcesses",
+            "autoscaling:SuspendProcesses",
+            "autoscaling:TerminateInstanceInAutoScalingGroup",
+            "autoscaling:UpdateAutoScalingGroup",
             "cloudformation:CreateStack",
             "cloudformation:DeleteStack",
             "cloudformation:DescribeStackEvents",
@@ -48,7 +60,7 @@ Before you deploy in AWS, you need to connect your AWS account in Cloud Applicat
             "cloudformation:ListStackResources",
             "cloudformation:UpdateStack",
             "cloudformation:ValidateTemplate",
-            "elasticache:*",
+            "cloudwatch:DescribeAlarms",
             "dynamodb:CreateTable",
             "dynamodb:DeleteTable",
             "dynamodb:DescribeTable",
@@ -99,6 +111,33 @@ Before you deploy in AWS, you need to connect your AWS account in Cloud Applicat
             "ec2:StartInstances",
             "ec2:StopInstances",
             "ec2:TerminateInstances",
+            "ecs:ListClusters",
+            "elasticache:*",
+            "elasticloadbalancing:CreateLoadBalancer",
+            "elasticloadbalancing:CreateLoadBalancerPolicy",
+            "elasticloadbalancing:DeleteLoadBalancer",
+            "elasticloadbalancing:DeleteLoadBalancerPolicy",
+            "elasticloadbalancing:DeregisterInstancesFromLoadBalancer",
+            "elasticloadbalancing:DescribeInstanceHealth",
+            "elasticloadbalancing:DescribeLoadBalancerPolicies",
+            "elasticloadbalancing:DescribeLoadBalancers",
+            "elasticloadbalancing:RegisterInstancesWithLoadBalancer",
+            "elasticloadbalancing:SetLoadBalancerPoliciesOfListener",
+            "elasticloadbalancing:ModifyLoadBalancerAttributes",
+            "elasticloadbalancing:ConfigureHealthCheck",
+            "iam:CreateUser",
+            "iam:DeleteUser",
+            "iam:ListAccessKeys",
+            "iam:ListUserPolicies",
+            "iam:ListServerCertificates",
+            "iam:PutUserPolicy",
+            "iam:GetUser",
+            "iam:CreateAccessKey",
+            "iam:DeleteUserPolicy",
+            "iam:DeleteAccessKey",
+            "iam:PassRole",
+            "iam:ListRoles",
+            "iam:ListInstanceProfilesForRole",
             "rds:AuthorizeDBSecurityGroupIngress",
             "rds:AddTagsToResource",
             "rds:CreateDBInstance",
@@ -133,44 +172,7 @@ Before you deploy in AWS, you need to connect your AWS account in Cloud Applicat
             "s3:PutBucketCORS",
             "s3:PutBucketPolicy",
             "s3:PutBucketTagging",
-            "autoscaling:CreateAutoScalingGroup",
-            "autoscaling:CreateLaunchConfiguration",
-            "autoscaling:DeleteAutoScalingGroup",
-            "autoscaling:DeleteLaunchConfiguration",
-            "autoscaling:DescribeScalingActivities",
-            "autoscaling:DescribeAutoScalingGroups",
-            "autoscaling:DescribeAutoScalingInstances",
-            "autoscaling:DescribeLaunchConfigurations",
-            "autoscaling:ResumeProcesses",
-            "autoscaling:SuspendProcesses",
-            "autoscaling:TerminateInstanceInAutoScalingGroup",
-            "autoscaling:UpdateAutoScalingGroup",
-            "elasticloadbalancing:CreateLoadBalancer",
-            "elasticloadbalancing:CreateLoadBalancerPolicy",
-            "elasticloadbalancing:DeleteLoadBalancer",
-            "elasticloadbalancing:DeleteLoadBalancerPolicy",
-            "elasticloadbalancing:DeregisterInstancesFromLoadBalancer",
-            "elasticloadbalancing:DescribeInstanceHealth",
-            "elasticloadbalancing:DescribeLoadBalancerPolicies",
-            "elasticloadbalancing:DescribeLoadBalancers",
-            "elasticloadbalancing:RegisterInstancesWithLoadBalancer",
-            "elasticloadbalancing:SetLoadBalancerPoliciesOfListener",
-            "elasticloadbalancing:ModifyLoadBalancerAttributes",
-            "elasticloadbalancing:ConfigureHealthCheck",
-            "sts:AssumeRole",
-            "iam:CreateUser",
-            "iam:DeleteUser",
-            "iam:ListAccessKeys",
-            "iam:ListUserPolicies",
-            "iam:ListServerCertificates",
-            "iam:PutUserPolicy",
-            "iam:GetUser",
-            "iam:CreateAccessKey",
-            "iam:DeleteUserPolicy",
-            "iam:DeleteAccessKey",
-            "iam:PassRole",
-            "iam:ListRoles",
-            "iam:ListInstanceProfilesForRole"
+            "sts:AssumeRole"
         ],
         "Sid":"Stmt1378777340000",
         "Resource":[
@@ -182,7 +184,7 @@ Before you deploy in AWS, you need to connect your AWS account in Cloud Applicat
    }
    ```
 
-2. Create an IAM role with this information and attach the policy.
+2. Create an IAM role with the role type of **Role for cross-account access**, and the Specific role is **Provide access between you AWS account and a 3rd party AWS account**. Then, add this information and attach the policy.
    * Account ID: 540339316802
    * External ID: elasticbox
    * Require MFA: Leave unselected
