@@ -1,6 +1,6 @@
 {{{
 "title": "Cloud Platform - Release Notes: June 8 2017",
-"date": "6-8-2017",
+"date": "6-6-2017",
 "author": "Chris Meyer",
 "attachments": [],
 "contentIsHTML": false
