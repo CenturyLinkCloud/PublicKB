@@ -7,7 +7,7 @@
 }}}
 
 <h2>Overview</h2>
-<p>While Control Portal allows for turning Managed Backup on and off for a given server, getting details about the status of recent backups or changing the target of the backups using an exclusions list are not yet supported through this interface. This functionality is provided, however, by the Netbackup Client installed on the server itself. After gaining access to the server remotely through either RDP on Windows or SSH on Linux, you can use the following instructions to review status or set paths for exclusion. For help using the Netbackup Client for exclusions or viewing status, you may also contact the CenturyLink Technology Solutions Client Service Center at 1-888-638-6771.</p>
+<p>While Control Portal allows for turning Managed Backup on and off for a given server, getting details about the status of recent backups or changing the target of the backups using an exclusions list are not yet supported through this interface. This functionality is provided, however, by the Netbackup Client installed on the server itself. After gaining access to the server remotely through either RDP on Windows or SSH on Linux, you can use the following instructions to review status or set paths for exclusion. For help using the Netbackup Client for exclusions or viewing status, you may also contact the CenturyLink Client Service Center at 1-888-638-6771.</p>
 <h2>Using Netbackup Client</h2>
 <h3>Reviewing Backup Status</h3>
 <p>Netbackup Client can be used to obtain the status of recent backups on both Windows and Linux machines.</p>
