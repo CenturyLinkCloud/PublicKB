@@ -9,7 +9,7 @@
 
 ### Unified Storage – Standard Increments
 
-With Unified Storage, customers have the choice of block or file storage. They also can choose from multiple performance levels, including:
+With Unified Storage, customers have the choice of block or file storage. They can also choose from multiple performance levels, including:
 
 |  Performance Level  |  Increments   |  IOPS  |
 |---------------------|---------------|--------|
@@ -35,7 +35,7 @@ You can add Unified Storage to virtual servers in an existing cluster. The steps
     * datacenter
     * cluster
     * billing account number (ban)
-    * storage type (Note: The storage type drop-down labels are Velocity, Vital, and Value when the cluster type you select is Unified Storage. When the cluster type is Utility Storage, the drop-down labels are QOS1, QOS2, QOS3, and QOS4.
+    * storage type (**Note:** The storage type drop-down labels are Velocity, Vital, and Value when the cluster type you select is Unified Storage. When the cluster type is Utility Storage, the drop-down labels are QOS1, QOS2, QOS3, and QOS4.
     * storage amount
 
 5. Click **estimated cost** to calculate the cost of installation and monthly charges.
@@ -43,7 +43,7 @@ You can add Unified Storage to virtual servers in an existing cluster. The steps
 
 ### View, Deploy, and Manage the Saved Order
 
-After saving an order the Saved Order window appears. You can also view saved orders by choosing **Orders > Saved Orders**. Then, highlight the order name and click **actions > View Details**.
+After saving your order the Saved Order window appears. You can also view saved orders by choosing **Orders > Saved Orders**. Then, highlight the order name and click **actions > View Details**.
 
 **Note:** Currently, there isn’t an option to modify a product once it is added to the order. The customer must delete it from the order and then add a new product.
 
