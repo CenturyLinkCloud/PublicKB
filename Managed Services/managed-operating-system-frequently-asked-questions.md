@@ -46,7 +46,7 @@ Please review the articles dedicated to:
 There could be a few causes:
 
 * Be sure you are creating the server in a data center that supports managed services.
-* It is possible your company has not yet executed a Master Services Agreement (MSA) with CenturyLink Technology Solutions. To obtain a MSA – or if you believe you should already have one in place – please contact a CenturyLink Sales Representative toll free at:
+* It is possible your company has not yet executed a Master Services Agreement (MSA) with CenturyLink. To obtain a MSA – or if you believe you should already have one in place – please contact a CenturyLink Sales Representative toll free at:
 
     * United States: 1-800-871-9244
     * Canada: 1-877-387-3764
@@ -102,7 +102,7 @@ Files can be transferred by simply drag and drop in Windows Explorer from your r
 
 **Who do I contact if I have trouble with my Managed VM?**
 
-The CenturyLink Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at the numbers below, or send email to request@centurylink.com for Managed OS issues. If there is an incident, email can be sent to incident@centurylink.com.
+The CenturyLink Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at the numbers below, or send email to request@centurylink.com for Managed OS issues. If there is an incident, email can be sent to incident@centurylink.com.
 
 * US: 888.638.6771
 * UK: +44.118.322.6100

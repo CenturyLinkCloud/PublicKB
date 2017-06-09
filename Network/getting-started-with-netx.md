@@ -1,7 +1,7 @@
 {{{
-  "title": "Getting Started with Network Exchange",
-  "date": "09-06-2016",
-  "author": "Mark Lee",
+  "title": "Network Exchange Getting Started Guide",
+  "date": "04-27-2017",
+  "author": "Rob Lesieur",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -10,77 +10,286 @@
 
 ### Product Overview
 
-[Network Exchange](//www.ctl.io/network-exchange/) provides a secure, high speed, redundant, private network to connect your CenturyLink Cloud environment to other environments.  It is the preferred alternative to using the Internet or IPSec for customers needing to connect their CLC environments to other, non-CLC environments.  Network Exchange is ideal for your hybrid environment and applications as well as storage and backups.  Network Exchange includes ease of setup and management via the CLC Portal, coupled with CLC network automation, and pre-deployed network infrastructure.  All with usage based, pay as you go billing.
+[Network Exchange](//www.ctl.io/network-exchange/) provides secure, reliable, automated interconnectivity between service networks offered by Network Exchange Providers, including managed hosting, colocation and cloud environments. A Network Exchange Provider is any service provider who has integrated their networking domain for interconnect provisioning by Network Exchange. A Network Exchange User is any credentialed user of Network Exchange who has provider-defined access privileges to two or more Network Exchange Providers. This is the party who ultimately consumes Network Exchange, regardless of the Provider with which they have a direct contractual relationship. An instance of Network Exchange is itself referred to as an Exchange. It is an interconnect between two or more Network Exchange Providers. A Network Exchange User may have one or more Exchanges. A connectivity point for a Network Exchange Provider for a given Exchange is referred to as an Exchange Port. For example, "Colocation" is a type of Exchange Port.
+
+Network Exchange is offered in a pay-as-you-go billing model in which the Network Exchange User pays only for the bandwidth they consume for billable Exchange Port types. Please refer to the Knowledge Base article [Network Exchange Billing Guide ](./network-exchange-billing-guide.md) for details on how billing is calculated.
+
+**Note:** All equipment and connectivity is redundant in Network Exchange, including cross connects to colocation and direct connect endpoint types. Non-redundant connectivity is not supported.
+
+### Glossary
+
+* **Network Exchange:** Provides secure, reliable, automated interconnectivity between service networks within a metro-area computing environment.
+  * **Network Exchange Provider:** Any service provider who has integrated their networking domain for interconnect Network Exchange.  
+    This integration comes in two common sub-types:
+    	* **Software Defined Integration:** Dynamic allocation of networks, IPs and
+routing by an API-driven resource model
+   	 * **Configured Integration:** Automated allocation of networks, IPs and routing by Provider-defined manual entry for which the Provider is responsible
+  * **Network Exchange User:** Any credentialed users of Network Exchange who has Provider-defined access privileges to two or more Network Exchange Providers.  This is the party who ultimately consumes Network Exchange, regardless of the Provider with which they have a direct contractual relationship.
+    * **Exchange:** An interconnect between two or more Network Exchange Providers. A Network Exchange User may have one or more Exchanges.
+    * **Exchange Port:** The connectivity point for a Network Exchange Provider for a given Exchange.
+
+* Common Provider business models include:
+  * **Hosted Service Provider:** Primarily provides SaaS or managed services on infrastructure hosted by CenturyLink o External Managed Service Provider: Primarily provides services to others on infrastructure not operated by CTL, i.e. IaaS clouds, SaaS platforms, Colocation providers.
+  * **External Network Service Provider:** Primarily provides WAN services, e.g. Level3, Comcast.
+  * **CenturyLink Managed Service Provider:** Any CTL-provided service, e.g. CLC, DCC, Managed Hosting, Network Exchange or CenturyLink Managed Network Provider: Any CTL-provided network, e.g. IQ, CTL-SDWAN
+* **On-Net Provider:** A service provider, fitting any of the above sub-models, who is directly or indirectly reachable via Network Exchange
+* **On-Net Traffic:** Network traffic that leaves Network Exchange to a CenturyLink Managed Service Provider, CenturyLink Managed Network Provider or Hosted Service Provider
+* **Egress Traffic:** Network traffic that leaves Network Exchange to an External Managed Service Provider or External Network Service Provider
+* **Network Exchange Reseller:** A Provider who also offers white-labeled Network Exchange interconnectivity, providing their customers access to all On-Net Providers.
 
 ### Prerequisites
 
-•	CenturyLink Cloud customer environment at UC1
-•	A CNS (Cloud Network Service) connection to your DCC (Dedicated Cloud Compute) environment
-•	The network VLANs of the CenturyLink Managed Hosting endpoint, as provided by your CenturyLink network rep •
+* You must be logged in to perform the functions outlined in this guide.
+* The desired Exchange Port type should be verified as supported at the desired data center(s). Please refer to the Knowledge Base article [Network Exchange Availability Matrix](./network-exchange-connectivity-matrix-configuration-guide.md).
+* The desired Exchange Ports / data center combination(s) per Exchange should be validated as a supported configuration in the Knowledge Base article [Network Exchange Configuration Guide](./network-exchange-connectivity-matrix-configuration-guide.md) once Exchange Port availability has been validated, per the previous step.
+* Each Exchange Port type has certain prerequisites, capabilities and caveats that should be understood before setting up an Exchange. Please see the following Knowledge Base documents for details:
+	* [Network Exchange CenturyLink Cloud Exchange Ports](./network-exchange-clc-endpoint-guide.md)
+	* [Network Exchange Managed Hosting Exchange Ports](./network-exchange-clc-managed-hosting-endpoint-guide.md)
+	* [Network Exchange Colocation Exchange Ports](./network-exchange-clc-colocation-endpoint-guide.md)
+	* [Network Exchange Dedicated Access Exchange Ports](./network-exchange-clc-dedicated-access-endpoint-guide.md)
 
 ### Exceptions
 
-Although CenturyLink Cloud Network Exchange is designed to provide connectivity between the CLC Platform and other platforms, not all platforms and all locations are tested and ready at this time.  Availability is noted in the Prerequisite section above.  Refer to this document, the location and endpoints document, and the CLC release notes for updates to Network Exchange.
+Network Exchange is designed to enable connectivity between any supported Exchange Port type in any supported data center. Under certain circumstances, not all supported Exchange Port types will be available at every supported data center. Any exceptions to this general rule will be noted in the Knowledge Base article [Network Exchange Configuration Guide](./network-exchange-connectivity-matrix-configuration-guide.md) in the addendum. Retirement of known exceptions will be published in the [CenturyLink Cloud release notes](//www.ctl.io/knowledge-base/release-notes/2017/#1).
 
-### Creating a Connection
+### Log-in to Network Exchange
 
-Login to [Control Portal](//control.ctl.io) using your ctl.io username and password.
+1. Log-in to [Control Portal](https://control.ctl.io/auth/Login?ReturnUrl=%2f) using your ctl.io username and password.
 
-![control portal sign in](../images/control portal sign in netx.png)
+2. From the left side navigation menu, click on **Products > Network Exchange**.
+  
+   ![Network Exchange Portal](../images/netx-getting-started-guide-1-v2.png)
 
-From the left side navigation menu, click on **Products** > **Network Exchange**
+### Creating An Exchange
 
-![nav menu](../images/navmenunetx.png)
+   ![Network Exchange Portal](../images/netx-getting-started-guide-2-v2.png)
 
-On the Network Exchange main screen, select  “**create managed connection**” or click on the “**create connection**” drop-down and select “**Managed Hosting**”.
+Click on the "Create an Exchange" button.
 
-![netx home](../images/netxhome.png)
+   ![Network Exchange Portal](../images/netx-getting-started-guide-3-v2.png)
 
-On the Network Exchange “**create connection**” screen, select:
-a.	Select the “**Cloud Location**”
-b.	Enter the “**Vlan A**” value
-c.	Enter the “**Vlan B**” value
-d.	Click on “**Create**”
-e.	**Note:** VlanA and VlanB are provided by a CenturyLink account manager and are based on the Vlans that are set up in the in the CenturyLink data center’s managed hosting network. Contact your account manager for this information.
+In the top-left corner of the screen, select the (sub)account to be used for this Exchange.
 
-![netx vlan](../images/netx vlan.png)
+In the **Name Your Exchange** dialogue box:
 
-The virtual circuit will be created.  The screen will show the following which indicates the virtual circuit has been created and it is active.
+1. Enter the **Exchange Name**. This name will be appended with a randomly generated
+number to create a unique identifier for this Exchange. Note that this field may not contain spaces.
 
-![netx virtual circuit creation](../images/netx virtual circuit creation.png)
+2. Enter the **Description**. This free form text is used to describe the Exchange you are
+creating. This field should be utilized to differentiate amongst Exchanges.
 
-### Deleting a Virtual Circuit
+43. Only usage-based billing is available at this time and therefore no selection is required for **Billing Type**.
 
-While logged into Control Portal, from the Network Exchange main screen, click on the row showing the virtual circuit.
+    **Note:** “Account Alias” is a four character ID that will be auto-populated after the first step, and thus does not need to be manually entered.
 
-![netx delete](../images/netx delete.png)
+    **Note:** CenturyLink Service Delivery teams acting on behalf of a customer should enter the customer’s Account Alias here.
 
-The circuit details will display.  Click on **Delete Virtual Circuit**.
+4. Click **Next**.
 
-![netx delete vc](../images/netx delete vc.png)
+   ![Network Exchange Portal](../images/netx-getting-started-guide-3a-v2.png)
 
-Click **Yes** to acknowledge the delete request.
+On the Network Exchange **Select Feature 1** screen:
 
-![netx delete yes](../images/netx delete yes.png)
+1. Select the endpoint from the drop down menu for **Select Feature Type** from the options of **Cloud**, **Colocation**, **Managed Hosting**. Endpoints may be added in any order.
 
-The virtual circuit will be deleted.  The screen will refresh. The prior virtual circuit will not display (no further user action required).
+2. Click **Next**.
 
-![netx final delete](../images/netx final delete.png)
+Follow the instructions for the selected endpoint type from the options, below. You may add endpoints in any order and in any combination per supported configurations. The desired Exchange Ports / data center combination(s) per Exchange should be validated as a supported configuration in the Knowledge Base article [Network Exchange Configuration Guide](./network-exchange-connectivity-matrix-configuration-guide.md).
 
-### FAQs
+### Create a Cloud Endpoint
 
-**Q: Where can I find more information?**
+   ![Network Exchange Portal](../images/netx-getting-started-guide-4-v2.png)
 
-**A:** The [Network Exchange](//www.ctl.io/network-exchange/) product page has additional information and links to resources.
+1. Select **Cloud** from the **Select Feature Type** drop down menu.
 
-**Q: Where do I obtain the VLANs required for creating a connection?**
+2. Click **Next**.
 
-**A:** These VLANs are provided by CenturyLink and are part of a CNS (Cloud Network Service) order. CenturyLink account managers, sales engineers, and implementation engineers will work with you to order and implement CNS connection to your DCC environment.
+    **Note:** You may cancel this operation by clicking the red X on the screen, or, by selecting the **Back** button. 
 
-**Q: How many connections can I create?**
+      ![Network Exchange Portal](../images/netx-getting-started-guide-5-v2.png)
 
-**A:** Only one virtual circuit per product type can be created at initial launch.  For example, one virtual circuit can be created between your CLC environment and your DCC environment.
+1. Select the provider from the **Select Provider** drop down menu. 
+
+2. Click **Next**.
+
+    **Note:** You may cancel this operation by clicking the red X on the screen, or, by selecting the **Back** button. 
+    
+     ![Network Exchange Portal](../images/netx-getting-started-guide-6-v2.png)
+
+1. Select a data center from the **Datacenter** drop down menu.
+
+2. Click **Next**.
+
+**Notes**
+
+* You may cancel this operation by clicking the red X on the screen, or, by selecting
+the "Back" button.
+* If this is your first endpoint, you will be prompted to enter a second endpoint. If you have entered an endpoint previously, you will be navigated to the **Review Your Request** flyout. See instructions below on how to proceed.
+
+### Create a Colocation or “Dedicated Access" Endpoint
+
+   ![Network Exchange Portal](../images/netx-getting-started-guide-7-v2.png)
+
+1. Select **Colocation** from the **Select Feature Type** drop down menu.
+
+2. Click **Next**. You may cancel this operation by clicking the red X on the screen, or, by selecting the **Back** button.
+
+    **Note:** "Dedicated access" refers to a dedicated connection between Network Exchange and a CenturyLink Managed Service, that bypasses HAN.
+
+     ![Network Exchange Portal](../images/netx-getting-started-guide-8-v2.png)
+
+1. Select the provider from the **Select Provider** drop down menu.
+
+2. Click **Next**.
+
+    **Note:** You may cancel this operation by clicking the red X on the screen, or, by selecting the **Back** button.
+  
+     ![Network Exchange Portal](../images/netx-getting-started-guide-9-v2.png)
+
+1. Select a colocation data center from the **Datacenter** drop down menu.
+
+2. Select the Routing Type: Static or BGP.
+
+3. Click "**Next**"
+
+     ![Network Exchange Portal](../images/netx-getting-started-guide-10-v2.png)
+
+**For static endpoints**
+
+1. Select the static route to be applied to the connection. 
+
+2. Select the CIDR for the route.
+
+3. Click **Next**.
+
+**Notes**
+
+* You may cancel this operation by clicking the red X on the screen, or, by selecting the "Back" button.
+* If this is your first endpoint, you will be prompted to enter a second endpoint. If you have entered an endpoint previously, you will be navigated to the **Review Your Request** flyout. See instructions below on how to proceed.
+
+     ![Network Exchange Portal](../images/netx-getting-started-guide-11-v2.png)
+
+
+**For BGP endpoints**
+
+1. Enter the private ASN for your network.
+
+2. Click **Next**.
+
+**Notes:**
+
+* You may cancel this operation by clicking the red X on the screen, or, by selecting
+the **Back** button.
+* If this is your first endpoint, you will be prompted to enter a second endpoint. If you
+have entered an endpoint previously, you will be navigated to the **Review Your Request** flyout. See instructions below on how to proceed.
+
+
+### Create a Managed Hosting Endpoint
+
+   ![Network Exchange Portal](../images/netx-getting-started-guide-12-v2.png)
+
+1. Select **Managed Hosting** from the **Select Feature Type** drop down menu.
+
+2. Click **Next**. You may cancel this operation by clicking the red X on the screen, or, by selecting the **Back** button.
+
+   ![Network Exchange Portal](../images/netx-getting-started-guide-13-v2.png)
+   
+Select the **Provider** from the drop down list.
+
+   ![Network Exchange Portal](../images/netx-getting-started-guide-14-v2.png)
+
+1. Select the **Datacenter** from the drop down list.
+
+2. Enter the **VLAN A** value.
+
+3. Enter the **VLAN B** value.
+
+4. Click **Next**.
+
+**Notes:**
+
+* VLAN "A" and VLAN "B" are provided by a CenturyLink account manager and are based on the VLANs that are set up in the in the CenturyLink data center’s managed hosting network. Please see [Network Exchange Managed Hosting Exchange Ports](./network-exchange-clc-managed-hosting-endpoint-guide.md) for details on how to obtain these.
+* You may cancel this operation by clicking the red X on the screen, or, by selecting the "Back" button.
+* If this is your first endpoint, you will be prompted to enter a second endpoint. If you have entered an endpoint previously, you will be navigated to the **Review Your Request** flyout. See instructions below on how to proceed.
+
+### Completing Your Request
+
+   ![Network Exchange Portal](../images/netx-getting-started-guide-15-v2.png)
+
+Upon selecting two endpoints, you will reach the “Review Your Request” flyout.
+
+1. Review your request to ensure the specifications for the Exchange you have configured.
+
+2. Click on “Submit”. You will be navigated to the main Network Exchange screen which will display the Exchange you have just created and the status of the build. During creation the status will display “BUILDING” and that Exchange will not be accessible. Upon completion, the status will change to “ACTIVE”.
+
+Note: The values displayed will reflect user selections. The image provided is for reference only.
+
+### Adding an Endpoint to an Exchange
+
+   ![Network Exchange Portal](../images/netx-getting-started-guide-16-v2.png)
+
+1. Select the desired Exchange, which must have an “ACTIVE” status.
+
+2. Select **Add Additional Endpoint**.
+
+   ![Network Exchange Portal](../images/netx-getting-started-guide-17-v2.png)
+
+* Click **Next**.
+
+6. Follow the instructions for the particular endpoint type, above. Note that instead of displaying a “BUILDING” status as in the Completing Your Request section above, this action displays a “UPDATING” status.
+
+   ![Network Exchange Portal](../images/netx-getting-started-guide-18-v2.png)
+
+### Removing an Endpoint from an Exchange
+
+   ![Network Exchange Portal](../images/netx-getting-started-guide-19-v2.png)
+
+**Note:** Endpoints may not be deleted from an Exchange if there are less than three endpoints.
+
+1. Select the Exchange containing the endpoint you wish to delete.
+
+2. Select the endpoint you wish to delete.
+
+3. Click **Delete Endpoint**.
+
+4. Click **Yes** or **No** when prompted. The status will indicate “UPDATING” during the deletion process.
+
+
+### Deleting an Exchange
+
+   ![Network Exchange Portal](../images/netx-getting-started-guide-20-v2.png) 
+   
+1. Select the Exchange you wish to delete.
+
+2. Click **Delete Exchange**.
+
+3. Click **Yes** or **No** when prompted. The status will indicate “DELETING” during the deletion process.
+
+### Q & A
+
+**Q: How many Exchanges may an End User have?**
+
+**A:** There are currently no limitations on the number of Exchanges per End User. See the Knowledge Base article [Network Exchange Configuration Guide](./network-exchange-connectivity-matrix-configuration-guide.md) for more details.
+
+**Q: How many endpoints may be in an Exchange?**
+
+**A:** An Exchange may include a number of endpoints up to the maximum Exchange Port
+types available in a metro area served by Network Exchange. See the Knowledge Base article [Network Exchange Configuration Guide](./network-exchange-connectivity-matrix-configuration-guide.md) for more details.
+
+**Q: How do I convert from Cloud Network Service to Network Exchange?**
+
+**A:** A Knowledge Base article Migrating from Cloud Network Service to Network Exchange will be provided in the future that will discuss this in detail.
+
+**Q: Can I change the name of an Exchange once it’s created.**
+
+**A:** No. You will have to delete and recreate the Exchange with the name of your choice.
+
+**Q: How do I know when I can use an Exchange?**
+
+**A:** Exchanges will pass traffic any time it has an “ACTIVE” status. Note that for
+colocation and direct connect endpoints, cross connects must be in place and the destination networks including the connectivity endpoints must be configured correctly
+for traffic to pass.
 
 **Q: Who should I contact for Support?**
 
-**A:** For additional information, questions, and support of the CLC Network Exchange UI, please refer to the [Network Exchange](//www.ctl.io/network-exchange/) product page for additional information and resources.  Check back often as the content will be updated frequently.  Support requests should be emailed to [help@ctl.io](mailto:help@ctl.io).
+**A:** Support requests should be emailed to [help@ctl.io](mailto:help@ctl.io).

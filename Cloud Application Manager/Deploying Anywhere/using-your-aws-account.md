@@ -29,7 +29,7 @@ Before you deploy in AWS, you need to connect your AWS account in Cloud Applicat
 <iframe frameborder="0" height="316" src="//player.vimeo.com/video/126177639" width="561"></iframe>
 
 **Steps**
-1. Create a custom AWS policy and copy, paste these permissions:
+1. Create a custom AWS policy and copy, paste these permissions and name it CAM_Policy:
 
    ```
    {
@@ -60,7 +60,7 @@ Before you deploy in AWS, you need to connect your AWS account in Cloud Applicat
             "cloudformation:ListStackResources",
             "cloudformation:UpdateStack",
             "cloudformation:ValidateTemplate",
-            “cloudwatch:DescribeAlarms”,
+            "cloudwatch:DescribeAlarms",
             "dynamodb:CreateTable",
             "dynamodb:DeleteTable",
             "dynamodb:DescribeTable",
