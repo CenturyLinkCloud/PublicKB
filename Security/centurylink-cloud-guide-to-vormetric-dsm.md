@@ -202,7 +202,7 @@ Decentralized management with business or product owners of practice areas defin
 ### Host Agent Installation
 CenturyLink Cloud customers should leverage our automated blueprint engine to deploy Host Agents across their account hierachy.  The orchestration software makes it easy for users to deploy solutions, reducing operational support costs and speeding time to implementation.
 
-* [Deploy Vormetric Host Agent](../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-encryption-agent-deployment-blueprints.md)
+* [Deploy Vormetric Host Agent](//www.ctl.io/marketplace/partner/VRSJ/product/Vormetric%20Encryption%20Agent)
 * [Video Tutorial](//vimeo.com/136635748)
 
 ### Creating Encryption Keys
@@ -524,7 +524,7 @@ CenturyLink Cloud customers, depending on their technical requirements, implemen
 [Standard Virtual Server](../Servers/centurylink-cloud-backup-and-recovery-services.md)|Standard Virtual Servers include either a 5 or 14 day daily virtual server backup of the entire instance. Using this service with encrypted data sets should be transparent during a backup or virtual server restore action as the entire virtual server is impacted.  Host agents will communicate with the Vormetric DSM and receive the same policy with key access even if you restore a virtual server to a previous state.
 [Simple Backup Service](//www.ctl.io/simple-backup-service)|The Simple Backup Service leverages a client agent to backup and restore data to the server.  As such as part of policy creation a security rule must be put in place that **permits** the backup agent executable **read/write** to the Guardpoint.  Agent based backups are the only situation in which a security rule should permit read/write to a Guardpoint.  Its important to note that should you restore data, using the agent, to a location outside the Guardpoint policy configuration changes will be required in order to permit access to this new location and apply the encryption key. An example policy that includes a security rule for a backup agent can be seen below.
 [Managed Backup](//www.ctl.io/managed-services/backup)|Managed Backup services leverage client agents similar to Simple Backup Services.  As such the rules and approach would mirror the process already detailed.
-[Ecosystem](../Ecosystem Partners/ecosystem-partner-list.md)|3rd Party Ecosystem partners such as [Commvault](../Ecosystem Partners/Marketplace Guides/getting-started-with-commvault-storage-blueprint.md) generally leverage client agents similar to Managed Backup services.  As such the rules and approach would mirror the process already detailed.
+[Ecosystem](../Ecosystem Partners/General/ecosystem-partner-list.md)|3rd Party Ecosystem partners such as [Commvault](../Ecosystem Partners/Marketplace Guides/getting-started-with-commvault-storage-blueprint.md) generally leverage client agents similar to Managed Backup services.  As such the rules and approach would mirror the process already detailed.
 [Snapshots](../Servers/creating-and-managing-server-snapshots.md)|While technically a snapshot is not a backup it does facilitate the restoration of an entire virtual server to a previous state.  Using this service with encrypted data sets should be transparent during a snapshot or revert snapshot action as the entire virtual server is impacted.  Host agents will communicate with the Vormetric DSM and receive the same policy with key access even if you revert a snapshot to a previous state.
 
 **Example Unstructured Data Policy**
