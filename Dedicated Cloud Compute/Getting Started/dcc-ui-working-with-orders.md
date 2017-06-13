@@ -7,7 +7,7 @@
 "contentIsHTML": false
 }}}
 
-Once an [order is provisioned](../getting started/dcc-ui-provisioning-orders.md) in the new Dedicated Cloud Compute (DCC) UI, you can view, lock/unlock, edit, deploy, and delete the order. [Go here](../getting started/dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
+Once an [order is provisioned](./dcc-ui-provisioning-orders.md) in the new Dedicated Cloud Compute (DCC) UI, you can view, lock/unlock, edit, deploy, and delete the order. [Go here](./dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
 
 ### View an Order
 
@@ -25,7 +25,7 @@ To view an order:
 
 2. Click the arrow on the **actions** dropdown list and select **Lock**. This locks the order to changes and makes it available to admins to approve and deploy the order.
 
-3. To unlock the server, click the **actions dropdown list and select **Unlock**.
+3. To unlock the server, click the **actions** dropdown list and select **Unlock**.
 
 ![dashboard](../../images/dcc-ui-working-with-orders-2.png)
 
