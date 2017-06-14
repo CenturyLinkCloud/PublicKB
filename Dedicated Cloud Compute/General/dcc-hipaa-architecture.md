@@ -11,7 +11,7 @@ Security and compliance are big issues in the world of data management and stora
 
 Dedicated Cloud Compute (DCC) has a recommended architecture plan for HIPAA compliance that ensures that many of the HIPAA standards for [technical safeguards](https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/securityrule/techsafeguards.pdf) are met. HIPAA covers many areas of requirements (not just technical), but this architecture focuses on meeting the needs of the technical ones. Below is a diagram of that architecture, along with an explanation of the HIPAA standards that elements of the architecture comply with.
 
-![HIPAA Architecture](../images/dcc-hipaa-architecture.png)
+![HIPAA Architecture](../../images/dcc-hipaa-architecture.png)
 
 |      HIPAA Standard        |    Location    | Explanation |
 |----------------------------|----------------|-------------|
