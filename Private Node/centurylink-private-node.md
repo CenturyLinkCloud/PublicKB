@@ -29,7 +29,7 @@ CenturyLink Private Node includes the following for the Baseline Deployment Spec
 
 Baseline Deployment|Features & Capacity
 -------------------|--------
-1/4 Rack|308 Physical Cores<br>2,816GB of Physical RAM<br>110TB Usable Flash SSD Storage<br>essary for CenturyLink to operate, monitor and manage the solution<br>Enterprise support level SLA<br>CenturyLink colocation space, power and physical security
+1/4 Rack|308 Physical Cores<br>2,816GB of Physical RAM<br>110TB Usable Flash SSD Storage<br>Management infrastructure necessary for CenturyLink to operate, monitor and manage the solution<br>Enterprise support level SLA<br>CenturyLink colocation space, power and physical security
 
 ### Expansion Modules
 
