@@ -1,6 +1,6 @@
 {{{
   "title": "Network Exchange Getting Started Guide",
-  "date": "04-27-2017",
+  "date": "06-14-2017",
   "author": "Rob Lesieur",
   "attachments": [],
   "related-products" : [],
@@ -130,7 +130,7 @@ the "Back" button.
 
    ![Network Exchange Portal](../images/netx-getting-started-guide-7-v2.png)
 
-1. Select **Colocation** from the **Select Feature Type** drop down menu.
+1. Select **Colocation** or **Dedicated Access** from the **Select Feature Type** drop down menu.
 
 2. Click **Next**. You may cancel this operation by clicking the red X on the screen, or, by selecting the **Back** button.
 
