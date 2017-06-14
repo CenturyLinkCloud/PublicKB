@@ -25,7 +25,7 @@ To view an order:
 
 2. Click the arrow on the **actions** dropdown list and select **Lock**. This locks the order to changes and makes it available to admins to approve and deploy the order.
 
-3. To unlock the server, click the **actions dropdown list and select **Unlock**.
+3. To unlock the server, click the **actions** dropdown list and select **Unlock**.
 
 ![dashboard](../../images/dcc-ui-working-with-orders-2.png)
 

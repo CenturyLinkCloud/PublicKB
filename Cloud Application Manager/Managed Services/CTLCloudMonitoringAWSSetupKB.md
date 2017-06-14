@@ -15,7 +15,7 @@ The following process automates the configuration of an your AWS account for Cen
 If you prefer the manual setup steps can be found [here](CTLCloudMonitoringAWSSetupKB-Manual.md)
 
 #### CenturyLink Cloud Application Manager AWS Native Monitoring Configuration Steps:
-•	Open [Link](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/new?stackName=CTL-CloudApplicationManagerMonitoring-IAM-Stack&templateURL=https%3A%2F%2Fs3.us-east-2.amazonaws.com%2Fctl-cloudoptimization%2FCTLCloudMonitoringIAMPolicy.template.json)
+* Open [Link](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/new?stackName=CTL-CloudApplicationManagerMonitoring-IAM-Stack&templateURL=https%3A%2F%2Fs3.us-east-2.amazonaws.com%2Fctl-cloudoptimization%2FCTLCloudMonitoringIAMPolicy.template.json)
 * Login to targeted AWS account, if not already.
 * Click “Next”
 * Click “Next” again
