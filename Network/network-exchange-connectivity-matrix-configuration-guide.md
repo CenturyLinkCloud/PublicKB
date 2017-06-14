@@ -14,7 +14,7 @@ The table, below, documents the metropolitan areas where Network Exchange is off
 
 Metro Area|Colocation/<br>Dedicated Cloud Compute|Managed Hosting|CenturyLink Cloud
 ----------|------------------------------------|---------------|-----------------
-Ashburn, VA|DC2|DC2<br>DC3<br>DC4|VA1<br>VA2
+Ashburn, VA|DC2|DC2<br>DC3<br>DC4|VA1<br>
 Santa Clara, CA|SC8|SC8<br>SC9|UC1
 Chicago, IL|CH3|CH3|IL1
 New Jersey|NJ2|NJ2<br>NJ2X|NY1
