@@ -1,6 +1,6 @@
 {{{
 "title": "Dedicated Cloud Compute - HIPAA Architecture",
-"date": "06-05-2017",
+"date": "06-15-2017",
 "author": "",
 "attachments": [],
 "related-products" : [],
