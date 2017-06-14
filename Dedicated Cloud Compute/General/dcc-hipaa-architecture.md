@@ -14,7 +14,7 @@ Dedicated Cloud Compute (DCC) has a recommended architecture plan for HIPAA comp
 ![HIPAA Architecture](../../images/dcc-hipaa-architecture.png)
 
 |      HIPAA Standard        |    Location    | Explanation |
-|----------------------------|----------------|-------------|
+|----------------------------|:--------------:|-------------|
 |    HIPAA 164.310(d)(1)     |  B  | Create a retrievable, exact copy of ePHI, when needed, before movement of equipment. |
 |    HIPAA 164.312(a)(1)     |  C  | Assign a unique and/or number for identifying and tracking user identity. |
 |    HIPAA 164.312(a)(1)     |  D  | Implement a mechanism to encrypt and decrypt ePHI. |
