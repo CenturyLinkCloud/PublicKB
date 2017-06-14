@@ -268,7 +268,7 @@ Each time a host user or application attempts to access a GuardPoint file, the a
 ----------|------------|--------|-----------|----------|-----------
 **1**|&#42;|&#42;|SQL_Server_Set|&#42;|Permit<br>Apply Key
 **2**|&#42;|Admin_Set|&#42;|Read|Permit<br>Audit
-**3**|&#42;|&#42;|&#42;|&#42;|Deny<br>Audit**
+**3** |&#42;|&#42;|&#42;|&#42;|Deny<br>Audit
 
 Policy Summary:
 
@@ -285,7 +285,7 @@ Policy Summary:
 ----------|------------|--------|-----------|----------|-----------
 **1**|&#42;|Trust_Set|&#42;|&#42;|Permit<br>Apply Key
 **2**|&#42;|&#42;|Backup_Set|Read/Write|Permit
-**3**|&#42;|&#42;|&#42;|&#42;|Deny<br>Audit**
+**3** |&#42;|&#42;|&#42;|&#42;|Deny<br>Audit
 
 Policy Summary:
 
@@ -531,8 +531,8 @@ CenturyLink Cloud customers, depending on their technical requirements, implemen
 
 **Policy**|**Resource**|**User**|**Process**|**Action**|**Effects**
 ----------|------------|--------|-----------|----------|-----------
-**1** |&#42;|Trust_Set|&#42;|&#42;|Permit<br>Apply Key
-**2** |&#42;|&#42;|Backup_Set|Read/Write|Permit
+**1**|&#42;|Trust_Set|&#42;|&#42;|Permit<br>Apply Key
+**2**|&#42;|&#42;|Backup_Set|Read/Write|Permit
 **3** |&#42;|&#42;|&#42;|&#42;|Deny<br>Audit
 
 Policy Summary:
