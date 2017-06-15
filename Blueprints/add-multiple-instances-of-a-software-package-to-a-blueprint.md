@@ -1,4 +1,4 @@
-{{{
+ {{{
   "title": "Add Multiple Instances of a Software Package to a Blueprint",
   "date": "10-12-2016",
   "author": "Daniel Morton",
@@ -89,7 +89,7 @@ In this variation of the section above, the software is selected at the same tim
 
 8. Click **next: task & order**.
    ![Task & Order](../images/add-multiple-packages-8.png)
-   
+
 9. Click **next: review**.
    * This step allows you to review the Blueprint configuration and make any changes before publishing.
    * Click on any of the steps located on the left to make changes.
