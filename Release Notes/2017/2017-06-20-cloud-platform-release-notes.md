@@ -38,7 +38,7 @@
 
 * __Object Storage__
 
-  - __Enhancements to backend infrastructure__
+  - __Enhancements to the backend infrastructure__
   
     Enhancements to backend infrastructure to increase stability and overall availability of the platform.
      
