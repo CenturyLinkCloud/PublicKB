@@ -49,16 +49,19 @@ US: 888.638.6771<br>UK: +44.118.322.6100<br>Singapore: +65.6305.8099| incident@c
 
 3. Determine the priority level using the [Ticket Prioritization Matrix. ](../Support/ticket-prioritization-matrix.md)
 
-3. Send an email to [help@ctl.io](mailto:help@ctl.io) **or** [high@ctl.io](mailto:high@ctl.io) based on the priority.  Alternatively, you may select the **?** icon inside the Control Portal and choose **submit a support request.**
+4. Submit request:
+* Send an email to [help@ctl.io](mailto:help@ctl.io) **or** [high@ctl.io](mailto:high@ctl.io) based on the priority.
 
-    ![submit a support request](../images/how-do-i-get-support-for-centurylink-cloud-services-01.png)
+* Alternatively, you may select the **?** icon inside the Control Portal and choose **submit a support request.** This will create a new ticket in our Support ticketing system. As described in the [Support Ticketing](../Support/zendesk-login-help-for-helpdesk-ticketing-and-kb-access.md) article, this is a separate user account from the Control Portal.
+
+    ![submit a support request](../images/how-do-i-get-support-for-centurylink-cloud-services-01.PNG)
 
 ### Chat Support
 Customers in the **Professional and Enterprise** support tier can leverage our real-time chat system.
 
 1. Login to the [Control Portal](//control.ctl.io), select the **?** icon and choose **Chat with support.**
 
-    ![Chat with support](../images/how-do-i-get-support-for-centurylink-cloud-services-02.png)
+    ![Chat with support](../images/how-do-i-get-support-for-centurylink-cloud-services-02.PNG)
 
     ![chat dialog box](../images/how-do-i-get-support-for-centurylink-cloud-services-03.png)
 
