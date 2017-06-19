@@ -28,7 +28,8 @@ Click the **Company Information** tab. This takes you to your **Provider Details
 ### Marketplace Provider Agreement (MPA)
 
 On the **Provider Details** page is also where you must agree to the Marketplace Provider Agreement(MPA), which governs the Terms & Conditions of your products entry into the Marketplace.
-It can be found [here](https://www.ctl.io/legal/marketplace/). Once you have read and agree to the terms, click the check box and click **Save**.
+It can be found [here](https://www.ctl.io/legal/marketplace/). Once you have read and agree to the terms, click the check box and click **Save**. 
+**Note** While it is not necessary to accept the MPA to add products and content, it is a required step for any products to be published to the Marketplace. 
 
 ![EPPMPA](../../images/MPA.png)
 
@@ -83,12 +84,19 @@ From the **Provider Details** page, you can find a list of your products that ha
 10. Click **Create**.
 
 11. Click **Request Publication**. This forwards a request to the CenturyLink Marketplace team notifying them to review and publish your product. If there are questions/issues related to the submission, a Marketplace team member will contact you. Otherwise, your product is published within two business days.
+**Note: 
+Required steps for publication of products are as follows:
+
+1) MPA has been reviewed and accepted.
+2) W-9 has been submitted to the Marketplace team, reviewed, and approved. 
+3) Product EULA URL is listed under the product EULA field. 
+4) Support information is listed under the product support field. 
+5) Technical integration has been completed and tested.
+6) Billing integration has been completed and tested. 
+
 
    ![EPP6](../../images/EPP6.png)
 
-12. Click **Preview in Marketplace**. This opens a new browser tab to display your product in Staging.
-   * If you click **switch to published mode** you may receive a 404 error as the product has not been published yet.
-   * Close the new browser tab to return to your Product Details page.
 
 ### Making Changes to a Product
 
@@ -179,7 +187,7 @@ This opens a new form where you input your user name, and a new password will be
 **Q: How long after I click Request Publication can I expect my product to be published?**
 **A:** Within 2 business days, the CenturyLink Cloud Marketplace Team will approve and publish your product. At that point, it will be fully available for customers in the [Marketplace](https://www.ctl.io/marketplace/).
 
-**Q: Why are there three different ways to Preview my content on the Product Detail page?**
+**Q: Why are there two different ways to Preview my content on the Product Detail page?**
 **A:** Here's the difference.
 
 1.	**Form Fields: Edit vs. Preview**
@@ -201,18 +209,6 @@ This is what it looks like in **Preview** mode.
 
    ![EPP15](../../images/EPP15.png)
 
-These modes are helpful to check your overall Markdown. However, it is still not how the customer sees your product.
-
-3. **Preview in Marketplace**
-   * Clicking **Preview** in Marketplace allows you to view exactly how your product is presented to customers on the Marketplace.
-
-   ![EPP16](../../images/EPP16.png)
-
-Here's how that same product appears in Marketplace (**preview mode**).
-
-   ![EPP17](../../images/EPP17.png)
-
-Once you're in the Marketplace **preview mode**, you can also switch to **published mode**, but only after your product has been published.
 
 **Q: I clicked “switch to published mode” but see a 404 error page. Why am I getting this error?**
 

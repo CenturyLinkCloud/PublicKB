@@ -13,7 +13,7 @@ When you sign up for the Cloud Application Manager Enterprise Edition, you get a
 1. Log in to Cloud Application Manager as the default administrator.
 2. Access to the menu located in the top left, open it and click on **Organizations**.
    ![admin-access1.png](../../images/cloud-application-manager/admin-access1.png)
-   
+
 3. Once you are in the Organization scope, you will have access to the **Settings** tab in the principal navigation menu.
    ![admin-access2.png](../../images/cloud-application-manager/admin-access2.png)
 
@@ -23,7 +23,7 @@ When you sign up for the Cloud Application Manager Enterprise Edition, you get a
 
 To revoke administrator privileges for a user, click X against their name under **Organization > Administrators**.
 
-Administrators can manage several org-wide settings that include [user authentication](./user-authentication.md), the [Cloud Application Manager appliance](../Appliance/appliance-overview.md), [provider access](./provider-access.md), [admin boxes](../Automating Deployment/deploymentpolicy-box.md), [webhooks](./webhooks.md), and [instance tags](./resource-tags.md). To get a good idea of things you can do, see [Overview](./admin-overview.md).
+Administrators can manage several org-wide settings that include [user authentication](./user-authentication.md), the [Cloud Application Manager appliance](../Appliance/appliance-overview.md), [provider access](./provider-access.md), [admin boxes](../Automating Deployments/deploymentpolicy-box.md), [webhooks](./webhooks.md), and [instance tags](./resource-tags.md). To get a good idea of things you can do, see [Overview](./admin-overview.md).
 
 ### Contacting Cloud Application Manager Support
 
