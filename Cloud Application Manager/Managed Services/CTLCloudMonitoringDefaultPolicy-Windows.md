@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-This document details the default policy used to monitor supported Windows servers as part of our Managed OS Anywhere](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/) offering. 
+This document details the default policy used to monitor supported Windows servers as part of our [Managed OS Anywhere](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/) offering. 
 
 
 Managed Windows Default Monitoring Policy
