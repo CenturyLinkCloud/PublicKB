@@ -9,7 +9,7 @@
 
 Security and compliance are big issues in the world of data management and storage, especially as more and more governing agencies set up rules to protect the security of that data. HIPAA, the [Health Insurance Portability and Accountability Act](https://www.hhs.gov/hipaa/for-professionals/index.html?language=en), sets rules around protected health information (PHI) and the required physical, network, and process security measures for PHI.
 
-Dedicated Cloud Compute (DCC) has a recommended architecture plan for HIPAA compliance that ensures that many of the HIPAA standards for [technical safeguards](https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/securityrule/techsafeguards.pdf) are met. HIPAA covers many areas of requirements (not just technical), but this architecture focuses on meeting the needs of the technical ones. Below is a diagram of that architecture, along with an explanation of the HIPAA standards that elements of the architecture comply with.
+Dedicated Cloud Compute (DCC) has a recommended architecture plan for HIPAA compliance which ensures that many of the HIPAA standards for [technical safeguards](https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/securityrule/techsafeguards.pdf) are met. HIPAA covers many areas of requirements (not just technical), but this architecture focuses on meeting the needs of the technical ones. Below is a diagram of that architecture, along with an explanation of the HIPAA standards that elements of the architecture comply with.
 
 ![HIPAA Architecture](../../images/dcc-hipaa-architecture.png)
 
