@@ -1,39 +1,31 @@
 {{{
-"title": "Using DCC",
+"title": "Using CenturyLink DCC",
 "date": "06-20-2017",
 "author": "",
 "attachments": [],
 "contentIsHTML": false
 }}}
 
-### Using DCC
+### Using CenturyLink DCC
 
 **Creating a provider**
 
-Creating and synchronizing a DCC provider is like the rest of Cloud Service Providers. The only difference is the way credentials are passed. For DCC Cloud Application Manager uses the username and password from the Dedicated Cloud Compute Portal (DCC).
+Select CenturyLink DCC from the Provider list and provide the username and password that is used to logon to CenturyLink DCC Portal.
 
-> User must have "customer purchase permission" and an associated billing account in DCC to be able to operate in Cloud Application Manager.<br>
+> User must have "customer purchase permission" and an associated billing account in CenturyLink DCC to be able to operate in Cloud Application Manager.<br>
 > If this is not the case open a ticket [Here](https://savvisstation.savvis.com) to get it fixed.<br>
 
 ![centurylink-add-provider-credentials-2.png](../../images/cloud-application-manager/centurylink-add-provider-credentials-2.png)
 
-Once the provider is saved, Cloud Application Manager will start syncing it. It will load all the different deployment options available to use wth the Policy Boxes and make them available on Cloud Application Manager's UI.
-
-The user is normally linked to a company and this company linked to a set of metadata like BillingSite, Clusters, Domains, etc.
-
-Virtual machines get deployed on clusters. If Cloud Application Manager doesn't have enough information to deploy a cluster, then the cluster will not be available as a deployment option for the Policy Boxes. Nonetheless, Cloud Application Manager will display an alert, as you can see on the following screenshot:
-
-![centurylink-cluster-error-alert.png](../../images/cloud-application-manager/centurylink-cluster-error-alert.png)
-
-When the synchronization process finishes, the list of Linux and Windows Services available to deploy on each cluster will be available on the provider's "Configuration" tab.
-
-![centurylink-services-list.png](../../images/cloud-application-manager/centurylink-services-list.png)
-
-**Editing Policy Boxes on DCC**
-
-Besides the services list, Cloud Application Manager will create two example Policy Boxes for Linux and Windows. These can be customized any time.
+Once the provider is saved, Cloud Application Manager will start synchronizing the Provider account. Once the synchronization is complete, Cloud Application Manager will create default Deployment Policies with the different deployment options available.
 
 ![centurylink-dcc-example-policy-boxes.png](../../images/cloud-application-manager/centurylink-dcc-example-policy-boxes.png)
+
+The user account used when creating the Provider, is linked to a Company, Billing Site, Clusters, Domains, etc.
+
+**Editing Policy Boxes on CenturyLink DCC**
+
+Besides the services list, Cloud Application Manager will create two example Policy Boxes for Linux and Windows. These can be customized any time.
 
 To do this, access the details by selecting "Code", then "Edit", where the following options will be available:
 
@@ -49,12 +41,22 @@ To do this, access the details by selecting "Code", then "Edit", where the follo
 | Instances | Cloud Application Manager can deploy several servers at once, with the restriction that all the operations will run on all the instances (start, stop, delete and script boxes installation). |
 | VCPU | Number of CPUs. |
 | VRAM | Amount of memory assigned to the Virtual Machine. |
-| Storage | Volume where the OS disk will be mounted. The user is responsible for assigning a segment with enough available space. Cloud Application Manager will only create the necessary disks to install the OS, if you need any extra disk you will need to add it from DCC portal. |
+| Storage | Volume where the OS disk will be mounted. The user is responsible for assigning a segment with enough available space. Cloud Application Manager will only create the necessary disks to install the OS, if you need any extra disk you will need to add it from CenturyLink DCC portal. |
 | Network | Net segment where the VM is configured. Please note that the IP address is set automatically, so the user must select a segment with available IP addresses. |
 
 ![centurylink-dcc-policy-box-options.png](../../images/cloud-application-manager/centurylink-dcc-policy-box-options.png)
 
 ![centurylink-dcc-policy-box-options-2.png](../../images/cloud-application-manager/centurylink-dcc-policy-box-options-2.png)
+
+**Deploying Instances from Deployment Policies**
+
+Virtual machines get deployed on clusters. If Cloud Application Manager doesn't have enough information to deploy a cluster, then the cluster will not be available as a deployment option for the Policy Boxes. Nonetheless, Cloud Application Manager will display an alert, as you can see on the following screenshot:
+
+![centurylink-cluster-error-alert.png](../../images/cloud-application-manager/centurylink-cluster-error-alert.png)
+
+When the synchronization process finishes, the list of Linux and Windows Services available to deploy on each cluster will be available on the provider's "Configuration" tab.
+
+![centurylink-services-list.png](../../images/cloud-application-manager/centurylink-services-list.png)
 
 Once the Box deploys, Cloud Application Manager will show the traces of what is happening with the provider. At the end of the process it will show us a script that will have to be manually executed on the newly created Virtual Machine.
 
@@ -62,6 +64,6 @@ Once the Box deploys, Cloud Application Manager will show the traces of what is 
 
 Credentials for the Virtual Machine are sent over email, and it should have privileges to install the Cloud Application Manager agent using the script shown above.
 
-> To run this script, the user needs access to the new Virtual Machines. This task, as the creation of the account, needs to be done by DCC.<br>
+> To run this script, the user needs access to the new Virtual Machines. This task, as the creation of the account, needs to be done by CenturyLink DCC.<br>
 
 Once this is done, the deployment process is finished.
