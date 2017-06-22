@@ -129,7 +129,7 @@ ___
 | profile | object | Describes all the properties to deploy an instance of a box. Contains the same data as the old deployment profile endpoint. Only accepts AWS information. It is not required by CloudFormation template boxes |
 | automatic_updates | string | Required. Specify an option: off, major, minor, or patch. Default is off. |
 | provider_id | object | Required. Specifies the ID of an AWS provider. |
-| type | object |	Required. Specifies a service. Accepted values are as follows: CloudFormation Service, MySQL Database Service, Microsoft SQL Database Service, Oracle Database Service, PostgreSQL Database Service, Memcached Service, S3 Bucket, Dynamo DB Domain. |
+| type | object |	Required. Specifies a service. Accepted value is: CloudFormation Service. |
 | draft_from | guid | Optional. ID of the box version that this box is a draft from. |
 | requirements | array | Required. Contains strings like tags. Specifies the runtime technologies a box requires to deploy. |
 
@@ -1395,18 +1395,6 @@ ___
                     "anyOf": [
                         {
                             "$ref": "http://elasticbox.net/schemas/aws/cloudformation/profile"
-                        },
-                        {
-                            "$ref": "http://elasticbox.net/schemas/aws/rds/profile"
-                        },
-                        {
-                            "$ref": "http://elasticbox.net/schemas/aws/elasticache/profile"
-                        },
-                        {
-                            "$ref": "http://elasticbox.net/schemas/aws/ddb/profile"
-                        },
-                        {
-                            "$ref": "http://elasticbox.net/schemas/aws/s3/profile"
                         }
                     ]
                 },
@@ -1446,14 +1434,7 @@ ___
                     "type": "string",
                     "default": "CloudFormation Service",
                     "enum": [
-                         "CloudFormation Service",
-                         "MySQL Database Service",
-                         "Microsoft SQL Database Service",
-                         "Oracle Database Service",
-                         "PostgreSQL Database Service",
-                         "Memcached Service",
-                         "S3 Bucket",
-                         "Dynamo DB Domain"
+                         "CloudFormation Service"
                     ]
                 },
                 "template": {
