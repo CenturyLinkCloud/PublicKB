@@ -9,7 +9,7 @@
 ### Overview
 This process details the steps needed to manually configure your AWS account for Cloud Application Manager Analytics functionality.
 
-If you prefer the set-up of your environment to be automated, you can find that procedure [here](CloudApplicationManagerAnlyticsAWSSetup.md).
+If you prefer the set-up of your environment to be automated, you can find that procedure [here](CloudApplicationManagerAnalyticsAWSSetup.md).
 
 #### Login to your AWS Account
 1. Login to the target AWS account [here](https://console.aws.amazon.com/iam).

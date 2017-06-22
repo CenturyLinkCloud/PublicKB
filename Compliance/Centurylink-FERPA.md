@@ -73,7 +73,7 @@ Compliance and security is obviously a top-level consideration whenever consider
 As a trusted partner, CenturyLink securely protects, stores and manages its customers data with reliable solutions that makes it readily accessible when and where they need it.
 
 *[CenturyLink Cloud Services](http://www.centurylink.com/business/enterprise/cloud/)*
-CenturyLink Cloud is the complete platform to easily manage your entire business application portfolio, from application development to business- critical workloads across public and private cloud infrastructure.
+The CenturyLink platform to easily manage your entire business application portfolio, from application development to business- critical workloads across public and private cloud infrastructure.
 *	Supports Hybrid
 	– Extend Exiting IT systems to Cloud Easily
 	– Secure, Low Latency Private Networking
