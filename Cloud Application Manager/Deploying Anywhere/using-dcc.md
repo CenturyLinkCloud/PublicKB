@@ -23,6 +23,10 @@ Once the provider is saved, Cloud Application Manager will start synchronizing t
 
 The user account used when creating the Provider, is linked to a Company, Billing Site, Clusters, Domains, etc.
 
+When the synchronization process finishes, the list of Linux and Windows Services available to deploy on each cluster will be available on the provider's "Configuration" tab.
+
+![centurylink-services-list.png](../../images/cloud-application-manager/centurylink-services-list.png)
+
 **Editing Policy Boxes on CenturyLink DCC**
 
 Besides the services list, Cloud Application Manager will create two example Policy Boxes for Linux and Windows. These can be customized any time.
@@ -53,10 +57,6 @@ To do this, access the details by selecting "Code", then "Edit", where the follo
 Virtual machines get deployed on clusters. If Cloud Application Manager doesn't have enough information to deploy a cluster, then the cluster will not be available as a deployment option for the Policy Boxes. Nonetheless, Cloud Application Manager will display an alert, as you can see on the following screenshot:
 
 ![centurylink-cluster-error-alert.png](../../images/cloud-application-manager/centurylink-cluster-error-alert.png)
-
-When the synchronization process finishes, the list of Linux and Windows Services available to deploy on each cluster will be available on the provider's "Configuration" tab.
-
-![centurylink-services-list.png](../../images/cloud-application-manager/centurylink-services-list.png)
 
 Once the Box deploys, Cloud Application Manager will show the traces of what is happening with the provider. At the end of the process it will show us a script that will have to be manually executed on the newly created Virtual Machine.
 
