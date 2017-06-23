@@ -22,7 +22,6 @@ It supports all CloudFormation templates available from AWS. Leverage services s
 
 Cloud Application Manager supports all CloudFormation templates available from AWS. Leverage services such as EC2, Elastic Block Store, Simple Notification Service, Elastic Load Balancing and Auto Scaling, RDS, S3, DynamoDB, Elastic IPs, and much more.
 
-[AWS RDS services](../Deploying Anywhere/using-your-aws-account.md) such as MySQL, MS SQL, PostgreSQL, Oracle, and [Memcached](../Deploying Anywhere/using-your-aws-account.md), [S3](../Deploying Anywhere/using-your-aws-account.md), [DynamoDB](../Deploying Anywhere/using-your-aws-account.md) are readymade CloudFormation templates. To use these services, configure a CloudFormation box of the type and select an AWS account registered in Cloud Application Manager.
 
 **In this article:**
 

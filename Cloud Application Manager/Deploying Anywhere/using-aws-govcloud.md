@@ -39,9 +39,6 @@ Cloud Application Manager provisions machines in EC2 or a VPC with deployment se
 Deploy to any of the services in the AWS GovCloud region.
 
 * [EC2 (Linux and Windows)](./using-your-aws-account.md)
-* [AWS RDS](./using-your-aws-account.md)
-* [AWS S3](./using-your-aws-account.md)
-* [AWS DynamoDB](./using-your-aws-account.md)
 * [AWS CloudFormation](../Automating Deployments/template-box.md)
 
 ### Contacting Cloud Application Manager Support
