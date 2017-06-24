@@ -26,7 +26,7 @@ An instance is an instantiated version of a box launched to provider’s virtual
 
     * **My Boxes**. Shows boxes you created in your workspace.
     * **Shared with Me**. Shows boxes others shared with you.
-    * **Quick Starts**. Shows default boxes available to all Cloud Application Manager users. These include service boxes such as Linux Compute, Windows Compute; includes AWS services like MySQL Database, Oracle Database, DynamoDB, PostgreSQL Database, and S3 bucket; and includes the Azure Microsoft SQL Database service. You can directly launch an instance to these database services. While you can’t modify those boxes, you can combine them with other boxes to build multi-tiered applications.
+    * **Quick Starts**. Shows default boxes available to all Cloud Application Manager users. These include service boxes such as Linux Compute and Windows Compute.
 
     **Note:** Don’t find a box you’re looking for? Check if you’re in the right workspace. Remember that you may not have access if the box is no longer shared with you.
 

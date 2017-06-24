@@ -18,9 +18,9 @@ After reading this article, the user should be able to provision infrastructure 
 Hashicorp Terraform – “Terraform provides a common configuration to launch infrastructure — from physical and virtual servers to email and DNS providers. Once launched, Terraform safely and efficiently changes infrastructure as the configuration is evolved.”
 
 ### Audience
-Terraform users wishing to deploy to CenturyLink Cloud. Familiarity with infrastructure automation and the terraform toolkit are required.
+Terraform users wishing to deploy to CenturyLink Cloud. Familiarity with infrastructure automation and the Terraform toolkit are required.
 
-Full [documentaiton](https://www.terraform.io/docs/providers/clc/index.html) for terraform on CLC.
+Full [documentation](https://www.terraform.io/docs/providers/clc/index.html) for using Terraform on CLC.
 
 ### Steps
 1. Install Terraform.
@@ -31,7 +31,7 @@ Full [documentaiton](https://www.terraform.io/docs/providers/clc/index.html) for
 
 	`CLC_USERNAME`, `CLC_PASSWORD`
 
-	Or via terraform variables:
+	Or via Terraform variables:
 	```
 		provider "clc" {
   			username = ""
@@ -39,10 +39,10 @@ Full [documentaiton](https://www.terraform.io/docs/providers/clc/index.html) for
             account = "" # optional
 		}
    ```
-    If not provided, account will default to the user's primary account. Sub-account may also be specified.
+    If an account is not provided, it will default to the user's primary account. A sub-account may also be specified.
 
 3. Test.
-	 Save the following into a file called `testing.tf`.
+	 Save the following into a file named `testing.tf`.
 	 ```
 		provider "clc" {
   			username = ""
@@ -67,11 +67,11 @@ Full [documentaiton](https://www.terraform.io/docs/providers/clc/index.html) for
 
 	`terraform plan`
 
-	If all goes well, terraform should report the execution plan it will lay down.
+	Terraform should report the execution plan it will lay down.
 
 	`terraform apply`
 
-  Apply will execute the plan and provision cloud resources.
+  will execute the plan and provision cloud resources.
 
   Check out the full options available for VMs (and other resources) on the
     [official docs](https://www.terraform.io/docs/providers/clc/index.html)
@@ -82,5 +82,5 @@ Full [documentaiton](https://www.terraform.io/docs/providers/clc/index.html) for
    * [mantl.io](https://github.com/CiscoCloud/mantl/blob/master/terraform/clc.sample.tf) - mesos from terraform + ansible
    * [terraform.py](https://github.com/CiscoCloud/terraform.py) - dynamic inventory for ansible
 
-5. Start terraform'ing.
-   Use the provided terraform resources to build out your infrastructure.
+5. Start Terraforming.
+   Use the provided Terraform resources to build out your infrastructure.

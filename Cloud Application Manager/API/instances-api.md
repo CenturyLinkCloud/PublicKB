@@ -67,7 +67,7 @@ ElasticBox-Release: 4.0
 | operation | string | Last operation, there are seven types of operations: deploy , shutdown , poweron , reinstall , reconfigure , terminate and terminate_service |
 | name | string | Instance name. |
 | service | object | Instance service. |
-| service.type | string | Required. Can be one of these types: Linux Compute, Windows Compute, CloudFormation Service, MySQL Database Service, Microsoft SQL Database Service, Oracle Database Service, PostgreSQL Database Service, Memcached Service, S3 Bucket, and Dynamo DB Domain. |
+| service.type | string | Required. Can be one of these types: Linux Compute, Windows Compute and CloudFormation Service. |
 | service.id | string | Service type. |
 | service.machines | array | List of service machines |
 | machine | object | Machine contained in the service machines list. |
@@ -78,7 +78,7 @@ ElasticBox-Release: 4.0
 | workflow.event | string | Workflow action event. |
 | workflow.script | string | Workflow action script uri. |
 | tags | array | Instance tags. |
-| boxes | array | List of boxes where each box object contains a service parameter. The service parameter can have one of these values: Linux Compute, Windows Compute, CloudFormation Service, MySQL Database Service, Microsoft SQL Database Service, Oracle Database Service, PostgreSQL Database Service, Memcached Service, S3 Bucket, and Dynamo DB Domain. |
+| boxes | array | List of boxes where each box object contains a service parameter. The service parameter can have one of these values: Linux Compute, Windows Compute and CloudFormation Service. |
 | uri |  string | Instance uri. |
 | state | string | Instance state, there are three possible states: processing , done and unavailable |
 | bindings | array | List of instance bindings. |
@@ -381,7 +381,7 @@ Body: notice that the request schedules the instance to shut down in five hours.
 | updated | string | Date of the last update. |
 |name | string | Instance name. |
 | service | Object | Instance service. |
-| service.type | string | Required. Can be one of these types: Linux Compute, Windows Compute, CloudFormation Service, MySQL Database Service, Microsoft SQL Database Service, Oracle Database Service, PostgreSQL Database Service, Memcached Service, S3 Bucket, and Dynamo DB Domain. |
+| service.type | string | Required. Can be one of these types: Linux Compute, Windows Compute and CloudFormation Service. |
 | service.id | string | Service type. |
 | service.machines | array | List of service machines. |
 | machine | object | Machine contained in the service machines list. |
@@ -399,7 +399,7 @@ Body: notice that the request schedules the instance to shut down in five hours.
 | box.organization | string | Organization to which the box belongs. |
 | box.updated | string | Date of the last update. |
 | box.description | string | Box description. |
-| box.service | string | Required. Can be one of these types: Linux Compute, Windows Compute, CloudFormation Service, MySQL Database Service, Microsoft SQL Database Service, Oracle Database Service, PostgreSQL Database Service, Memcached Service, S3 Bucket, and Dynamo DB Domain. |
+| box.service | string | Required. Can be one of these types: Linux Compute, Windows Compute and CloudFormation Service. |
 | box.tags | array | Box tags. |
 | box.variables | array | 	List of box variables, each variable object contains the parameters: type , name and value. |
 | box.created | string | Creation date. |
@@ -602,7 +602,7 @@ ElasticBox-Release: 4.0
 | updated |  string | Date of the last update. |
 | name | string | Instance name. |
 | service | object | Instance service. |
-| service.type | string | Required. Can be one of these types: Linux Compute, Windows Compute, CloudFormation Service, MySQL Database Service, Microsoft SQL Database Service, Oracle Database Service, PostgreSQL Database Service, Memcached Service, S3 Bucket, and Dynamo DB Domain. |
+| service.type | string | Required. Can be one of these types: Linux Compute, Windows Compute and CloudFormation Service. |
 | service.id | string | Service type. |
 | service.machines | array | List of service machines |
 | machine | object | Machine contained in the service machines list. |
@@ -620,7 +620,7 @@ ElasticBox-Release: 4.0
 | box.organization | string | Organization to which the box belongs. |
 | box.updated | string | Date of the last update. |
 | box.description | string | Box description. |
-| box.service | string | Required. Can be one of these types: Linux Compute, Windows Compute, CloudFormation Service, MySQL Database Service, Microsoft SQL Database Service, Oracle Database Service, PostgreSQL Database Service, Memcached Service, S3 Bucket, and Dynamo DB Domain. |
+| box.service | string | Required. Can be one of these types: Linux Compute, Windows Compute and CloudFormation Service. |
 | box.tags | array | Box tags. |
 | box.variables | array | 	List of box variables, each variable object contains the parameters: type , name and value. |
 | box.created | string | Creation date. |
@@ -819,7 +819,7 @@ Given the instance ID, updates only these fields of an existing instance: boxes,
 | updated |  string | Date of the last update. |
 | name | string | Instance name. |
 | service | object | Instance service. |
-| service.type | string | Required. Can be one of these types: Linux Compute, Windows Compute, CloudFormation Service, MySQL Database Service, Microsoft SQL Database Service, Oracle Database Service, PostgreSQL Database Service, Memcached Service, S3 Bucket, and Dynamo DB Domain. |
+| service.type | string | Required. Can be one of these types: Linux Compute, Windows Compute and CloudFormation Service. |
 | service.id | string | Service type. |
 | service.machines | array | List of service machines |
 | machine | object | Machine contained in the service machines list. |
@@ -837,7 +837,7 @@ Given the instance ID, updates only these fields of an existing instance: boxes,
 | box.organization | string | Organization to which the box belongs. |
 | box.updated | string | Date of the last update. |
 | box.description | string | Box description. |
-| box.service | string | Required. Can be one of these types: Linux Compute, Windows Compute, CloudFormation Service, MySQL Database Service, Microsoft SQL Database Service, Oracle Database Service, PostgreSQL Database Service, Memcached Service, S3 Bucket, and Dynamo DB Domain. |
+| box.service | string | Required. Can be one of these types: Linux Compute, Windows Compute and CloudFormation Service. |
 | box.tags | array | Box tags. |
 | box.variables | array | 	List of box variables, each variable object contains the parameters: type , name and value. |
 | box.created | string | Creation date. |
@@ -1037,7 +1037,7 @@ In this sample request, the instance is tagged and scheduled to terminate at a g
 | updated | string | Date of the last update. |
 |name | string | Instance name. |
 | service | Object | Instance service. |
-| service.type | string | Required. Can be one of these types: Linux Compute, Windows Compute, CloudFormation Service, MySQL Database Service, Microsoft SQL Database Service, Oracle Database Service, PostgreSQL Database Service, Memcached Service, S3 Bucket, and Dynamo DB Domain. |
+| service.type | string | Required. Can be one of these types: Linux Compute, Windows Compute and CloudFormation Service. |
 | service.id | string | Service type. |
 | service.machines | array | List of service machines. |
 | machine | object | Machine contained in the service machines list. |
@@ -1055,7 +1055,7 @@ In this sample request, the instance is tagged and scheduled to terminate at a g
 | box.organization | string | Organization to which the box belongs. |
 | box.updated | string | Date of the last update. |
 | box.description | string | Box description. |
-| box.service | string | Required. Can be one of these types: Linux Compute, Windows Compute, CloudFormation Service, MySQL Database Service, Microsoft SQL Database Service, Oracle Database Service, PostgreSQL Database Service, Memcached Service, S3 Bucket, and Dynamo DB Domain. |
+| box.service | string | Required. Can be one of these types: Linux Compute, Windows Compute and CloudFormation Service. |
 | box.tags | array | Box tags. |
 | box.variables | array | 	List of box variables, each variable object contains the parameters: type , name and value. |
 | box.created | string | Creation date. |
@@ -1532,7 +1532,7 @@ ElasticBox-Release: 4.0
 | operation | string | Last operation, there are seven types of operations: deploy , shutdown , poweron , reinstall , reconfigure , terminate and terminate_service |
 | name | string | Instance name. |
 | service| Object | Instance service. |
-| service.type | string | Required. Can be one of these types: Linux Compute, Windows Compute, CloudFormation Service, MySQL Database Service, Microsoft SQL Database Service, Oracle Database Service, PostgreSQL Database Service, Memcached Service, S3 Bucket, and Dynamo DB Domain. |
+| service.type | string | Required. Can be one of these types: Linux Compute, Windows Compute and CloudFormation Service. |
 | service.id | string | Service type. |
 | service.machines | array | List of service machines |
 | machine | object | Machine contained in the service machines list. |
@@ -1543,7 +1543,7 @@ ElasticBox-Release: 4.0
 | workflow.event | string | Workflow action event. |
 | workflow.script | string | Workflow action script uri. |
 | tags | array | Instance tags. |
-| boxes | array | List of boxes where each box object contains a service parameter. The service parameter can have one of these values: Linux Compute, Windows Compute, CloudFormation Service, MySQL Database Service, Microsoft SQL Database Service, Oracle Database Service, PostgreSQL Database Service, Memcached Service, S3 Bucket, and Dynamo DB Domain. |
+| boxes | array | List of boxes where each box object contains a service parameter. The service parameter can have one of these values: Linux Compute, Windows Compute and CloudFormation Service. |
 | uri |  string | Instance uri. |
 | state | string | Instance state, there are three possible states: processing , done and unavailable |
 | bindings | array | List of instance bindings. |

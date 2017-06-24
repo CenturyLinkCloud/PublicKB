@@ -1,6 +1,6 @@
 {{{
   "title": "Network Exchange Getting Started Guide",
-  "date": "06-14-2017",
+  "date": "06-16-2017",
   "author": "Rob Lesieur",
   "attachments": [],
   "related-products" : [],
@@ -20,10 +20,9 @@ Network Exchange is offered in a pay-as-you-go billing model in which the Networ
 
 * **Network Exchange:** Provides secure, reliable, automated interconnectivity between service networks within a metro-area computing environment.
   * **Network Exchange Provider:** Any service provider who has integrated their networking domain for interconnect Network Exchange.  
-    This integration comes in two common sub-types:
-    	* **Software Defined Integration:** Dynamic allocation of networks, IPs and
-routing by an API-driven resource model
-   	 * **Configured Integration:** Automated allocation of networks, IPs and routing by Provider-defined manual entry for which the Provider is responsible
+This integration comes in two common sub-types:
+    * **Software Defined Integration:** Dynamic allocation of networks, IPs and routing by an API-driven resource model
+    * **Configured Integration:** Automated allocation of networks, IPs and routing by Provider-defined manual entry for which the Provider is responsible
   * **Network Exchange User:** Any credentialed users of Network Exchange who has Provider-defined access privileges to two or more Network Exchange Providers.  This is the party who ultimately consumes Network Exchange, regardless of the Provider with which they have a direct contractual relationship.
     * **Exchange:** An interconnect between two or more Network Exchange Providers. A Network Exchange User may have one or more Exchanges.
     * **Exchange Port:** The connectivity point for a Network Exchange Provider for a given Exchange.
