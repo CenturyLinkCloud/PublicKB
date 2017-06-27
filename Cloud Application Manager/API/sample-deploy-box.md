@@ -43,7 +43,7 @@ A provider is a public or private cloud account you can register in Cloud Applic
 payload="{
   \"icon\": \"images/platform/aws.png\",
   \"type\": \"Amazon Web Services\",
-  \"description\": \"Manage EC2, ECS, S3, Dynamo DB, RDS, ElasticCache, and CloudFormation instances\",
+  \"description\": \"Manage EC2, ECS and Cloudformation instances\",
   \"schema\": \"http://elasticbox.net/schemas/aws/provider\",
   \"name\": \"AWS Example Provider via CURL\",
   \"credentials\": {
