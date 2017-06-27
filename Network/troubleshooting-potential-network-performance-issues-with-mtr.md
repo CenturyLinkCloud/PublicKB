@@ -3,7 +3,7 @@
 "date": "6-20-2017",
 "author": "John Bach",
 "attachments": [],
-"contentIsHTML": true 
+"contentIsHTML": false 
 }}}
 
 In the event a network performance issue is suspected, tools such as WinMTR (or MTR for Linux) can help isolate where a degradation might be occurring between two systems. That said, the instructions below provide a step-by-step guide how to utilize MTR to troubleshoot a potential issue:
