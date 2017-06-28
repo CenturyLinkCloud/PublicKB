@@ -15,7 +15,7 @@
 
 **DCC**: Dedicated Cloud Compute
 
-**Hyper-convergence**: A type of infrastructure system with a software-centric architecture that tightly integrates compute, storage, networking and virtualization resources and other technologies from scratch in a commodity hardware box supported by a single vendor.
+**Hyperconvergence**: A type of infrastructure system with a software-centric architecture that tightly integrates compute, storage, networking and virtualization resources and other technologies from scratch in a commodity hardware box supported by a single vendor.
 
 **Multiple NAT/Double NAT**: NAT (Network Address Translation) is being performed on a router, but additionally on another device connected in front of it resulting in double NAT. The public/private network boundary doesn't exist on the router as it is on the other device(s), which means that both the WAN and LAN sides of the router are private networks. Double NAT is a scenario where multiple routers on network are doing network address translation.
 
@@ -39,7 +39,7 @@
 
 **vCloud Director (vCD)**: VMware Inc.'s cloud computing management tool. It manages Infrastructure as a Service (IaaS) architectures by monitoring and controlling various cloud-computing components, such as security, virtual machine (VM) provisioning, billing and self-service access.
 
-**vCloud Foundation Architecture**: VMware Cloud Foundation™ is VMware’s new unified Software-Defined Data Center (SDDC) platform for private and public clouds. Cloud Foundation brings together VMware vSphere® (compute), vSAN™ (storage), and NSX® (network) virtualization into a natively integrated stack through automation and lifecycle management capabilities of the new VMware SDDC Manager™.
+**Cloud Foundation Architecture**: VMware Cloud Foundation™ is VMware’s new unified Software-Defined Data Center (SDDC) platform for private and public clouds. Cloud Foundation brings together VMware vSphere® (compute), vSAN™ (storage), and NSX® (network) virtualization into a natively integrated stack through automation and lifecycle management capabilities of the new VMware SDDC Manager™.
 
 **vLAN**: A virtual LAN (vLAN) is any broadcast domain that is partitioned and isolated in a computer network at the data link layer (OSI layer 2)
 
