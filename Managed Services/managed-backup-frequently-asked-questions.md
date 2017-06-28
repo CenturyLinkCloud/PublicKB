@@ -39,17 +39,12 @@ A: Managed Backup uses a tiered pricing model and will cost anywhere from $0.87 
 
 **Avg Protected Data Utilization**|**Monthly Price per GB**
 ----------------------------------|------------------------
-0-1|$1.10
-1-5|$1.08
-5-10|$1.05
-10-15|$1.03
-15-20|$1.01
-20-25|$0.98
-25-30|$0.96
-30-40|$0.94
-40-50|$0.91
-50-75|$0.89
-75-100|$0.87
+0-1,024|$0.49
+1,025-5,120|$0.47
+5,121-10,240|$0.46
+10,241-25,600|$0.45
+25,601-51,200|$0.44
+51,201-102,400|$0.42
 
 *For information on how "average protected data utilization" is calculated, review the attachment at the end of this KB.*
 
