@@ -40,7 +40,7 @@ After logging in the user will be in their personal workspace. Click on the work
 
 ### Logging into the Monitoring UI.
 
-![GlobalNavScreenShot][../../images/GlobalNavScreenShot170601.png]
+![GlobalNavScreenShot](../../images/GlobalNavScreenShot170601.png)
 
 After logging into Cloud Application Manager you can navigate to the Monitoring UI by clicking on the monitoring link as shown below.
 
