@@ -13,7 +13,7 @@ This guide provides step by step instructions to deploy an application to AppFog
 
 ### Prerequisites
 
-The guide assumes that the reader has no experience with Cloud Foundry and does not understand what it means to push an application to a cloud native application platform.  This guide requires the AppFog functionality to be enabled on your CenturyLink Cloud Platform account.  Later in this guide more detail will be provided on determining this setting.  This guide will use an application created and published by a third party named “spring-music” in order to demonstrate the functionality of Cloud Foundry.  The application is published on GitHub and instructions for obtaining this application will be provided when required.
+The guide assumes that the reader has no experience with Cloud Foundry and does not understand what it means to push an application to a cloud native application platform.  This guide requires the AppFog functionality to be enabled on your CenturyLink Cloud account.  Later in this guide more detail will be provided on determining this setting.  This guide will use an application created and published by a third party named “spring-music” in order to demonstrate the functionality of Cloud Foundry.  The application is published on GitHub and instructions for obtaining this application will be provided when required.
 
 ### Steps
 

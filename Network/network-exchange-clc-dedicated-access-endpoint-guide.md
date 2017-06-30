@@ -1,6 +1,6 @@
 {{{
   "title": "Network Exchange CenturyLink Cloud Dedicated Access Endpoint Guide",
-  "date": "04-27-2017",
+  "date": "06-16-2017",
   "author": "Rob Lesieur",
   "attachments": [],
   "related-products" : [],
@@ -24,7 +24,10 @@
 
 * Dedicated Access may be used for connecting directly to CenturyLink and third party networks and devices.
 * This document does not apply to CenturyLink endpoints reached via HAN. For HAN-connected endpoints, please refer to the CenturyLink Managed Hosting Endpoint Guide.
-* The End User must initiate a request with the colocation provider for a cross connect between Network Exchange and third party equipment following the provisioning of Network Exchange.
-* The End User must initiate a request with CenturyLink for redundant cross connects between Network Exchange and the desired Managed Hosting endpoint following the provisioning of Network Exchange. The End User may select either a 1Gb/s or 10Gb/s connection.
+* The End User must initiate a request for two instances of "HAE" (HAN Access Extension) - a cross connect - between Network Exchange and the End User’s equipment following the provisioning of Network Exchange. Network Exchange will provide the equipment location and ports to be connected to in order to complete the connections.
+* The user will have a choice between a 1Gbps and 10Gbps connection. The optics used to connect to Network Exchange are one of:
+  * QFX-SFP-1GE-LX SFP 1000BASE-LX Gigabit Ethernet Optics, 1,310 nm for 10 km transmission on single mode fiber-optic (SMF)
+  * QFX-SFP-10GE-LR SFP+ 10GBASE-LR 10 Gigabit Ethernet Optics, 1,310 nm for 10 km transmission on single mode fiber-optic (SMF)
+* Service Delivery will obtain the proper optics for the other end of the cross connect, matching speed and type (SMF). 
 * The Network Exchange fabric leverages the economics of shared networking while logically isolating network traffic between Exchanges, even within the same End User account. Dedicated access to CenturyLink Cloud is not supported with Network Exchange.
-* Currently, an End User may only add dedicated endpoint(s) present in the same metropolitan area as the serving instance of Network Exchange. Where more than one colocation endpoint is served, all may be included in a given Exchange. See the Network Exchange Availability Matrix and Configuration Guide for more information.
+* Currently, an End User may only add dedicated endpoint(s) present in the same metropolitan area as the serving instance of Network Exchange. Where more than one Dedicated Access endpoint is served, all may be included in a given Exchange. See the Network Exchange Availability Matrix and Configuration Guide for more information.
