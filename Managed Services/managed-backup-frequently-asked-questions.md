@@ -35,7 +35,7 @@ A: There could be a few causes:
 
 **Q: How much does the Managed Backup service cost? Why is the cost not included in the estimates shown in Control Portal?**
 
-A: Managed Backup uses a tiered pricing model and will cost anywhere from $0.87 to $1.10 per GB per month,and depending on how much average protected storage is being used (see table below). *Note: Existing managed hosting customers using Data Protect Backup will have cloud usage contribute to overall protected data utilization and also may have different pricing based on existing term commit agreements.* Though the costs for Managed Backup does not currently show up as part of the estimates in Control Portal, they will appear on your monthly invoice from CenturyLink as a separate line item. If you have detailed questions regarding billing, please contact your CenturyLink Sales Representative using one of the numbers above.
+A: Managed Backup uses a tiered pricing model and will cost anywhere from $0.42 to $0.49 per GB per month,and depending on how much average protected storage is being used (see table below). *Note: Existing managed hosting customers using Data Protect Backup will have cloud usage contribute to overall protected data utilization and also may have different pricing based on existing term commit agreements.* Though the costs for Managed Backup does not currently show up as part of the estimates in Control Portal, they will appear on your monthly invoice from CenturyLink as a separate line item. If you have detailed questions regarding billing, please contact your CenturyLink Sales Representative using one of the numbers above.
 
 **Avg Protected Data Utilization**|**Monthly Price per GB**
 ----------------------------------|------------------------
