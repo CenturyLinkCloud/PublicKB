@@ -40,7 +40,7 @@ A tag consists of a key and a value. You can tag with a custom or preset value.
 | Environment | Environment name the user gave in the [deployment profile](../Deploying Anywhere/deploying-managing-instances.md) when deploying the instance. |
 | Instance ID | ID assigned by Cloud Application Manager, for example, i-extwmf. |
 | Provider name | Provider defined in Cloud Application Manager to which the instance was deployed. |
-| Service instance ID | Unique ID for every machine created for the instance, for example eb-ek73d-1, eb-ek73d-2. Some instances like AWS S3 don’t generate machines. In these cases, the Service ID also serves as the Service Instance ID. |
+| Service instance ID | Unique ID for every machine created for the instance, for example eb-ek73d-1, eb-ek73d-2. |
 | Service ID | ID for the type of service deployed from the provider, for example eb-ek73d. |
 | User email | Email of the user who deployed the instance. |
 | User ID | A unique ID to identify the Cloud Application Manager user. |
@@ -73,7 +73,7 @@ One of the chief benefits of tagging is that you can report and analyze how Clou
 Refer to the following sections to view or manage the tags applied on a box instance launched in a specific cloud provider.
 
 ### AWS
-In addition to preset and custom tags, Cloud Application Manager tags instances with CloudFormation labels. Tags currently don’t apply to S3, Elastic Block Store, and Virtual Private Cloud instances. To report on tagged instances deployed in AWS, see [this article](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/usage-reports.html#usage-reports-prereqs).
+In addition to preset and custom tags, Cloud Application Manager tags instances with CloudFormation labels. Tags currently don’t apply to Elastic Block Store, and Virtual Private Cloud instances. To report on tagged instances deployed in AWS, see [this article](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/usage-reports.html#usage-reports-prereqs).
 
 **Steps**
 1. [Log in to the AWS console](https://console.aws.amazon.com/) as your IAM user.

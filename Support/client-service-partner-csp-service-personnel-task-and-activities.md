@@ -15,7 +15,8 @@
   <li>Provide product introduction or enhancements information</li>
   <li>Customer tours of CenturyLink Data Centers</li>
   <li>Contact Management and Administration - with new Customer contacts</li>
-  <li>Customer queries (e.g. what is the storage capacity available?) CenturyLink Technology Solutions Service Guide</li>
+  <li>Customer queries (e.g. what is the storage capacity available?)</li>
+  <li>CenturyLink Service Guide</li>
   <li>Customer advocate at CenturyLink</li>
   <li>Contractual queries</li>
   <li>Informing Customer on CenturyLink changes, such as Invoice layout, DCMW</li>
