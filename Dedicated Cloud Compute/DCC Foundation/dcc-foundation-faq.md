@@ -1,5 +1,5 @@
 {{{
- "title": "Dedicated Cloud Compute Foundation FAQs",
+ "title": "DCC Foundation FAQs",
  "date": "06-29-2017",
  "author": "",
  "attachments": [],

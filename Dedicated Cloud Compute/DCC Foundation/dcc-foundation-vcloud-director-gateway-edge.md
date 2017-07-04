@@ -1,5 +1,5 @@
 {{{
-"title": "Dedicated Cloud Compute Foundation - Edge Gateway in vCloud Director",
+"title": "DCC Foundation - Edge Gateway in vCloud Director",
 "date": "06-27-2017",
 "author": "",
 "attachments": [],

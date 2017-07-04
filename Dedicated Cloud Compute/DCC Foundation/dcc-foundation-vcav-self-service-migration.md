@@ -1,5 +1,5 @@
 {{{
-"title": "Dedicated Cloud Compute Foundation - Self-service Migration with vCloud Availability",
+"title": "DCC Foundation - Self-service Migration with vCloud Availability",
 "date": "06-27-2017",
 "author": "",
 "attachments": [],

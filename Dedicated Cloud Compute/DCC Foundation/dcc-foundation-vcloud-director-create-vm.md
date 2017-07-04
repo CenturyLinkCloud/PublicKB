@@ -1,5 +1,5 @@
 {{{
-"title": "Dedicated Cloud Compute Foundation - Create a VM in vCloud Director",
+"title": "DCC Foundation - Create a VM in vCloud Director",
 "date": "06-27-2017",
 "author": "",
 "attachments": [],
