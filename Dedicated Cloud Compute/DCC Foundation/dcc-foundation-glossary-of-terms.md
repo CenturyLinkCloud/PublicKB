@@ -1,5 +1,5 @@
 {{{
- "title": "Dedicated Cloud Compute Foundation - Glossary of Terms",
+ "title": "DCC Foundation - Glossary of Terms",
  "date": "06-29-2017",
  "author": "",
  "attachments": [],
