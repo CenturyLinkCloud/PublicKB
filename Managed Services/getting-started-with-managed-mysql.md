@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started with Managed MySQL",
-  "date": "10-14-2014",
-  "author": "Jared Ruckle",
+  "date": "7-5-2017",
+  "author": "CenturyLink",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -23,14 +23,19 @@ MySQL is an open source Relational Database Management System (RDBMS) that uses 
 ![getting-started-with-managed-mysql-04.png](../images/getting-started-with-managed-mysql-04.png)
 
 ### Frequently Asked Questions
-#### How is the CenturyLink Cloud for Managed Oracle MySQL Enterprise product priced?
-CenturyLink Cloud Managed Oracle MySQL Enterprise is priced by the VM and billed hourly.
 
-#### What versions of Oracle MySQL Enterprise are supported?
-CenturyLink Cloud Supports MySQL v5.5, MySQL 5.6 and MySQL 5.7.
+**Q: How is the CenturyLink Cloud for Managed Oracle MySQL Enterprise product priced?**
 
-#### What operating systems are supported for Managed Oracle MySQL?
-Managed Red Hat.
+A: Managed Oracle MySQL Enterprise is priced according to our [pricing catalog](//www.ctl.io/pricing) and includes MySQL Enterprise software as part of the ongoing fees for the service.
 
-#### Can *un-managed* MySQL Services be converted to *Managed* (or vice versa)?
-This capability is not available at this time.
+**Q: What versions of Oracle MySQL Enterprise are supported?**
+
+A: CenturyLink Cloud Supports MySQL v5.5, MySQL 5.6 and MySQL 5.7.
+
+**Q: What operating systems are supported for Managed Oracle MySQL?**
+
+A: **Managed** Red Hat Enterprise Linux
+
+**Q: Can *un-managed* MySQL Services be converted to *Managed* (or vice versa)?**
+
+A: This capability is not available at this time.
