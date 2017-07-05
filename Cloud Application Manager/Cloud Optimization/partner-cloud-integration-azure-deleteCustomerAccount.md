@@ -16,7 +16,7 @@ All Cloud Application Manager Customers with ARM Providers supported by CenturyL
 
 ### Prerequisites
 
-You will need to have followed [the New ARM Provider process](./partner-cloud-integration-azure-new.md) at some point already.
+You will need to have followed [the New Microsoft Azure Provider process](./partner-cloud-integration-azure-new.md) at some point already.
 
 You will need to delete the associated Azure provider at some point, before or after submitting the request described below.
 

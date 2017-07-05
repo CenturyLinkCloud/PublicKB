@@ -116,7 +116,7 @@ $ kiri login myusername --authendpoint https://api.ctl.io
 ```
 
 Once authenticated you can now upload and test Service Manifests located in your CenturyLink Cloud
-Control account. This ensures that one Partner is not able to see another Partner's Service Manifests.
+Control Portal account. This ensures that one Partner is not able to see another Partner's Service Manifests.
 
 Kiri can make a test provision call and will use the manifests `api.test` block
 ```

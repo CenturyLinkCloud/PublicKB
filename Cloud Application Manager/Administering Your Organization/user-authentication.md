@@ -12,12 +12,41 @@ In Cloud Application Manager enterprise organizations, users can sign in using a
 
 **In this article:**
 * Single sign-on with Google, GitHub, or username, password
+* Single sign-on with SAML
 * Single sign-on with LDAP
 
 ### Single sign-on with Google, GitHub, or username, password
 To allow users to sign in with an Cloud Application Manager username and password, turn on that option under Authentication in the admin console.
 
 Do the same and turn on Google or GitHub to let users sign in with those credentials without having to create an account exclusively for Cloud Application Manager. When they sign in, Cloud Application Manager provisions an account based on their Google or GitHub username.
+
+### Single Sign-On with SAML
+SAML SSO allows users to authenticate only once in an Identity Provider (IdP), and then, access to multiple applications that act as Service Providers (SP).
+
+Cloud Application Manager can be configured to act as a SP, and delegate the user management and authentication to a third party IdP.
+
+When users log in with SAML into Cloud Application Manager, the user is redirected to the SAML IdP site, who will authenticate to the user, asking credentials if is not logged yet, and then sending back to CAM.
+
+### Setting up a SAML IdP
+Enable SAML in Cloud Application Manager to let users log in using credentials managed by a SAML identity provider.
+
+1. Sign in to Cloud Application Manager as the [default administrator](//www.ctl.io/guides/).
+
+2. From the user menu drop-down on the top right, select **Admin Console**.
+
+3. Under Authentication, enable SAML by turning it on.
+
+4. Set up SAML IdP with the SP settings. This settings can be obtained clicking on "SP Metadata"
+download link:
+
+   ![admin-user-saml.png](../../images/cloud-application-manager/admin-user-saml.png)
+
+   Some of the common settings to configure in your SAML IdP are:
+
+   * **Single Sign On URL.** Service Provider endpoint that will be used to interchange messages during authentication. This value can be found on AssertionConsumerService XML element on SP metadata file.
+   * **Service Provider Entity ID.** This value must match with the entityID property on SP metadata file.
+
+5. Finally it's needed to download the IdP Metadata file and upload on CAM admin console.
 
 ### Single Sign-On with LDAP
 Enable LDAP in Cloud Application Manager to let users log in using credentials managed in OpenLDAP or Windows Active Directory.
