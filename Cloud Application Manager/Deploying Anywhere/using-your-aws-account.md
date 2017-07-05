@@ -37,6 +37,7 @@ Before you deploy in AWS, you need to connect your AWS account in Cloud Applicat
    "Statement":[
    {
         "Action":[
+            "support:*",
             "cloudformation:CreateStack",
             "cloudformation:DeleteStack",
             "cloudformation:DescribeStackEvents",
