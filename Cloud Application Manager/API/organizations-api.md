@@ -116,7 +116,7 @@ ElasticBox-Release: 4.0
       {
          "enabled":true,
          "type":"Amazon Web Services",
-         "description":"Manage EC2, S3, Dynamo DB, and RDS instances",
+         "description":"Manage EC2, ECS and Cloudformation instances",
          "pricing":[
             {
                "platform":"Linux Compute",
@@ -356,7 +356,7 @@ ElasticBox-Release: 4.0
       {
          "enabled":true,
          "type":"Amazon Web Services",
-         "description":"Manage EC2, S3, Dynamo DB, and RDS instances",
+         "description":"Manage EC2, ECS and Cloudformation instances",
          "pricing":[
             {
                "platform":"Linux Compute",
@@ -620,7 +620,7 @@ ElasticBox-Release: 4.0
       {
          "enabled":true,
          "type":"Amazon Web Services",
-         "description":"Manage EC2, S3, Dynamo DB, and RDS instances",
+         "description":"Manage EC2, ECS and Cloudformation instances",
          "pricing":[
             {
                "platform":"Linux Compute",
@@ -861,7 +861,7 @@ ElasticBox-Release: 4.0
       {
          "enabled":true,
          "type":"Amazon Web Services",
-         "description":"Manage EC2, S3, Dynamo DB, RDS, ElastiCache and CloudFormation instances.",
+         "description":"Manage EC2, ECS and Cloudformation instances",
          "pricing":[
 
          ]

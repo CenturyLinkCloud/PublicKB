@@ -72,7 +72,7 @@ Creates a blob from submitted data when you give the file name.
 | owner | string | Box owner, the user name for a personal workspace and the workspace name for a team workspace. |
 | name | string | Box name. |
 | description | string | Box description. |
-| service | string | Required. Can be one of these types: Linux Compute, Windows Compute, CloudFormation Service, MySQL Database Service, Microsoft SQL Database Service, Oracle Database Service, PostgreSQL Database Service, Memcached Service, S3 Bucket, and Dynamo DB Domain. |
+| service | string | Required. Can be one of these types: Linux Compute, Windows Compute, CloudFormation Service. |
 | icon | string | Icon url. |
 | schema | string | Box schema. |
 

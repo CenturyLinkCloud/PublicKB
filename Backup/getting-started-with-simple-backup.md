@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started With Simple Backup",
-  "date": "12-14-2016",
+  "date": "6-27-2017",
   "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
@@ -29,17 +29,17 @@ The following provides steps to get started:
 3. Complete the backup configuration inputs and click **create backup policy**.
    * Paths entered here are not validated against your server’s file system paths.
 
-   ![](../images/backup/getting-started/image2.png)
+   ![](../images/backup/getting-started/newimage2.png)
 
 4. The backup policy is created and the status is set to Active. You can view the new policy in the list of policies. From here, you can either:
    * Click **create a backup policy** to create another backup policy with a different configuration.
    * Click an existing policy to view details and/or add a server to the policy.
 
-   ![](../images/backup/getting-started/image3.png)
+   ![](../images/backup/getting-started/newimage3.png)
 
 5. Per the above screen, when clicking into a backup policy, you can view the details and/or add a server to the backup policy. Click **apply to server** to add a server to the backup policy.
 
-   ![](../images/backup/getting-started/image4.png)
+   ![](../images/backup/getting-started/newimage4.png)
 
 6. Selecting the location of the VM will populate the list of choices for the “server” drop-down. Select the storage region, then click **apply backup policy**.
 
