@@ -171,7 +171,8 @@ Before you deploy in AWS, you need to connect your AWS account in Cloud Applicat
             "s3:PutBucketCORS",
             "s3:PutBucketPolicy",
             "s3:PutBucketTagging",
-            "sts:AssumeRole"
+            "sts:AssumeRole",
+            "support:*"
         ],
         "Sid":"Stmt1378777340000",
         "Resource":[
