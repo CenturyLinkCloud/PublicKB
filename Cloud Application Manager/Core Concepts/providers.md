@@ -14,7 +14,7 @@ A provider is a public or private cloud account you register in Cloud Applicatio
 |-----|:-----:|:-----:|
 | [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md) | ✓ | ✓ |
 | [CenturyLink DCC](../Deploying Anywhere/using-dcc.md) | ✓ | ✓ |
-| [CenturyLink DCC Foundation](../../Dedicated Cloud Compute/Dedicated Cloud Compute Foundation/dcc-foundation-in-cloud-application-manager.md) | ✓ | ✓ |
+| [CenturyLink DCC Foundation](../../Dedicated Cloud Compute/DCC Foundation/dcc-foundation-in-cloud-application-manager.md) | ✓ | ✓ |
 | [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md) | ✓ | ✓ |
 | [Google Cloud](../Deploying Anywhere/using-google-cloud.md) | ✓ | ✓ |
 | [Microsoft Azure](../Deploying Anywhere/using-azure.md) | ✓ | ✓ |
