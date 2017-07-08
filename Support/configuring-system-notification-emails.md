@@ -18,9 +18,17 @@ All users of CenturyLink Cloud
 
 ### Prerequisites
 
-Must be assigned the Account Administrator role permission
+Must be assigned the [Account Administrator](//www.ctl.io/role-permissions-matrix) role permission to edit Notification Contacts
 
 ### Steps
+
+1. Navigate in the Control Portal to the Notifications tab. From the left-hand menu, Settings > Notifications  
+
+  ![Notification]!(../images/configuring-system-notification-emails1.png)
+
+2. Select the desired contact from the drop-down list of users.
+
+### Configuring Additional Recipients
 
 When you want to have notifications go out to additional email addresses, there are two methods to ensure that the appropriate users receive notifications.
 
