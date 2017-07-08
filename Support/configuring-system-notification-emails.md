@@ -24,7 +24,7 @@ Must be assigned the [Account Administrator](//www.ctl.io/role-permissions-matri
 
 1. Navigate in the Control Portal to the Notifications tab. From the left-hand menu, Settings > Notifications  
 
-  ![Notification]!(../images/configuring-system-notification-emails1.png)
+  ![Notification](../images/configuring-system-notification-emails1.PNG)
 
 2. Select the desired contact from the drop-down list of users.
 
