@@ -30,7 +30,7 @@ Must be assigned the [Account Administrator](//www.ctl.io/role-permissions-matri
 
 ### Configuring Additional Recipients
 
-When you want to have notifications go out to additional email addresses, there are two methods to ensure that the appropriate users receive notifications.
+In order to send emails to additional email addresses, there are two methods to ensure that the appropriate users receive notifications.
 
 1. Create a user account for each resource requiring notification and assign them the Account Admin role permission.
 2. Create an internal distribution list (i.e. CLCNotifications@companyname.com), use that email address to create an account in the Control Portal and then assign it the Account Administrator role permission. Please note that a "Welcome" email containing a password is emailed to each newly-created user in the Control Portal. If you do not want this automatic "Welcome" email to be disseminated, create the distribution list, create the user in the Control Portal, and then add the appropriate internal resources to the distribution list.
