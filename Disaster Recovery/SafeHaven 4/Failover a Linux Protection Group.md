@@ -12,7 +12,7 @@ This article explains how to Failover a Linux Protection Group from a production
 
 **NOTE**: Unlike Test-Failover, Failover is a disruptive operation and the user must understand the consequences of intiating a failover beforehand.
 
-**NOTE**:Once a protection group is in a failed over state, the recovery server sitting in the recovery(DR) datacenter becomes the active primary production site to which the users can connect and use for business continuity, until Failback is performed.
+**NOTE**: Once a protection group is in a failed over state, the recovery server sitting in the recovery(DR) datacenter becomes the active primary production site to which the users can connect and use for business continuity, until Failback is performed.
 
 **NOTE**: It is highly recommended that a user performs Test Failover before intiating a permanent Failover to confirm that the recovery instance boots correctly and the user can access it.
 
