@@ -1,7 +1,7 @@
 {{{
   "title": "Bare Metal FAQ",
-  "date": "10-20-2016",
-  "author": "Joseph Nguyen & Bryan Friedman",
+  "date": "7-10-2017",
+  "author": "CenturyLink",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": false
@@ -14,36 +14,8 @@ CenturyLink Bare Metal servers introduce the ability to provision and manage phy
 This FAQ addresses commonly asked questions about the service. For further information on this service and how it compares to virtual servers, see [Server Comparison Matrix](../Servers/server-comparison-matrix.md).
 
 
-**What are the available configurations for Bare Metal servers?**
+**What are the available configurations & locations for Bare Metal servers?**
 Server configurations are available depending on data center locations.  Please see matrix below for availability of configurations by data centers.
-
-* 4 cores (3.6GHz E3), 16 GB RAM, 10Gb NIC
-  * Storage is 2x1TB 7200 RAID 1 (0.91TB usable)
-* 12 cores (2.4GHz 2x6 E5), 64 GB RAM, dual 10Gb NIC
-  * Storage is 4x2TB 7200 RAID 5 (5.46TB usable)
-* 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC
-  * Storage is 6x2TB 7200 RAID 5 (9.09TB usable)
-* 24 cores (2.3GHz 2x12 E5), 128 GB RAM, dual 10Gb NIC
-  * Storage is 1x960GB SSD (960GB usable)  
-* 24 cores (2.3GHz 2x12 E5), 128 GB RAM, dual 10Gb NIC
-  * Storage is 1x3.84TB SSD (3.84TB usable)  
-* 24 cores (2.3GHz 2x12 E5), 512 GB RAM, dual 10Gb NIC
-  * Storage is 1x3.84TB SSD (3.84TB usable)    
-* 20 cores (2.3GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC
-  * Storage is 2x800GB SSD (1.6TB usable)
-  * Storage is 12x2TB 7200 RAID/JBOD Configurable (24TB usable)  
-* 16 cores (2.4GHz 2x8 E5), 256 GB RAM, dual 10Gb NIC
-  * Storage is 2x800GB SSD (1.6TB usable)
-  * Storage is 4x4TB 7200 RAID/JBOD Configurable (16TB usable)  
-
-**Why don't I see the option to provision a Bare Metal?**
-
-There are a couple reasons you might not see the option for Bare Metal servers.  First, check your data center and the current [availability for Bare Metal servers](https://www.ctl.io/data-centers/#/filters/Bare%20Metal).  Bare Metal servers are not available in all data centers.  If you are in a data center where Bare Metal servers should be available, contact Customer Care to have them check to see if Bare Metal servers need to be enabled for your account.
-
-**Why doesn't all server types options appear as an option to provision?**
-
-Not all data centers will carry all server types.
-As we expand our Bare Metal product offering, we are trying to match customer demand with server types by locations.  Please see table below for availability of server types by data centers. If you would like to see certain server types in specific data centers, we would love to hear from you. Please drop us a note by submitting a [Feature Request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/) including a brief explanation of your use case and the need for the particular configuration of resources and location.
 
 Location|Available Configurations<sup>1</sup>
 --------|------------------------
@@ -52,9 +24,19 @@ Great Britain (Slough)-GB3|4 cores E3/16 GB RAM/2x1TB 7200 RAID 1 (0.91TB usable
 US East (New York)-NY1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
 Canada (Vancouver)-CA1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
 Australia (Sydney)-AU1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
+Germany (Frankfurt)-DE3|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
+Great Britain (Portsmouth)-GB1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
 
 <sup>1: All Physical servers include 10Gbps Network Interfaces</sup><br>
 <sup>2: SATA Disks are attached to Dell PERC H730 RAID Controllers and can operate in HBA/JBOD or RAID mode<sup>
+
+**Why don't I see the option to provision a Bare Metal?**
+
+There are a couple reasons you might not see the option for Bare Metal servers.  First, check your data center and the current [availability for Bare Metal servers](https://www.ctl.io/data-centers/#/filters/Bare%20Metal).  Bare Metal servers are not available in all data centers.  If you are in a data center where Bare Metal servers should be available, contact Customer Care to have them check to see if Bare Metal servers need to be enabled for your account.
+
+**Why doesn't all server types options appear as an option to provision?**
+
+Not all data centers will carry all server types as shown above in the configuration and location matrix. As we expand our Bare Metal product offering, we are trying to match customer demand with server types by locations. If you would like to see certain server types in specific data centers, we would love to hear from you. Please drop us a note by submitting a [Feature Request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/) including a brief explanation of your use case and the need for the particular configuration of resources and location.
 
 **Why am I seeing an error saying "limit exceeded" for CPU, memory, or storage when I try to provision a Bare Metal server?**
 
