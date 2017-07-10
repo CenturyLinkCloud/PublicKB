@@ -10,7 +10,7 @@
 
 This article explains how to Failback a Linux Protection Group from a Recovery Datacenter back to its Production Datacenter. User should make sure that the production site is available before initiating a Failback.
 
-**NOTE**: Failback is a disruptive operation since the Recovery Server is powered Off and the production server is Powered On.
+**NOTE**: Failback is a disruptive operation since the Recovery Server is powered Off and the production server is Powered On during the operation.
 
 ### Requirements
 
@@ -31,7 +31,7 @@ Leave the ** Automated Power Operation** box checked, and click ** Next**.
 This will automatically shutdown the production server if it is still ON to avoid a "split-brain" scenario where both the production and recovery servers are ON at the same time
 ![Linux](../../images/SH4.0/LinuxFailover/LF18.png)
 
-At this step, synchronization of data from the DR SRN to the Production SRN is initiated. It may take some time to synzhronize all the changes in the DR side with production side depending upon number of changes in the Recovery Server after Failover. 
+At this step, synchronization of data from the DR SRN to the Production SRN is initiated. It may take some time to synzhronize all the changes in the DR side with production side depending upon number of changes written in the Recovery Server after Failover. 
 Wait till the Failback Resync is completed, and click ** Next**
 ![Linux](../../images/SH4.0/LinuxFailover/LF19.png)
 
@@ -45,7 +45,7 @@ Leave the **Skip** Test Failover box unchecked and choose a clean and 0 Bytes ch
 ![Linux](../../images/SH4.0/LinuxFailover/LF22.png)
 
 Wait till Test Failover and Power on are completed. Now the production VM should be powered ON. Log in to the production server.
-NOTE: Now the Production server will be configured to iSCSI boot using the disks of the Production SRN instead of its own local disks
+NOTE: Now the Production server will be configured to iSCSI boot using the disks of the Production SRN instead of its own local disks. It is **strongly Recommended** to take a snapshot of the Production VM at this point from CLC Portal.
 ![Linux](../../images/SH4.0/LinuxFailover/LF23.png)
 
 Go to the "Safehaven_linux_onboarding_scripts" directory
