@@ -41,8 +41,8 @@ This script will copy the data from the SRN's disks to the production VM's local
 Type ** YES** when the script asks ** Are you sure you want to continue?**
 ![Linux](../../images/SH4.0/LinuxFailover/LF37.png)
 
-The script will now copy all the files from the SRN;s disks to the production VM's local disks. This may take some time.
-Once the copy is complete, the script will automatically reboot the VM if run with -d option.
+The script will now copy all the files from the SRN's disks to the production VM's local disks. This may take some time.
+Once the copy is complete, the script will automatically reboot the VM if it was run with -d option.
 ![Linux](../../images/SH4.0/LinuxFailover/LF38.png)
 
 Go back to SafeHaven Console, check both **Manual setup needed** and ** Manual Reboot needed** boxes, then click ** Next**
