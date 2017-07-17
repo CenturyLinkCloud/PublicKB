@@ -15,10 +15,10 @@
     With the new workspace switcher, users will now be able to:
 
     * See the hierarchy of Organizations, CostCenters, and Workspaces.
-    * Mark a workspace as a favorite
-    * See a list of favorite workspac
+    * Mark a Workspace as a favorite
+    * See a list of favorite Workspaces
 
-    This will provide an easy way to navigate to frequently-visited Workspaces and a quick view of which Organization and Costcenter the Workspace belongs.
+ This will provide an easy way to navigate to frequently-visited Workspaces and a quick view of which Organization and Costcenter the Workspace belongs.
 
 * __IaaS__
 
