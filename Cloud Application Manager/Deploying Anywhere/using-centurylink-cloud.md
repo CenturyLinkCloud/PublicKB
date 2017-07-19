@@ -74,6 +74,20 @@ Note a couple of things about instances you deploy on CenturyLink Cloud through 
 
 By default, the machine is provisioned with 17GB local disk space. You can add more disks in RAW format or Partitioned, up to 1024 GB.
 
+### Shutdown and Terminate Instances in CenturyLink Cloud
+
+**Shutdown Instance**
+
+Initiates a graceful shutdown of the corresponding server or servers. Like the “off” power command, all memory and CPU charges cease, monitors are disabled, and the machine is left in a powered off state. Any licensing charges (if applicable) and storage charges continue accruing.
+
+More information [here](https://www.ctl.io/guides/servers/server-power-operations/).
+
+**Terminate Instance**
+
+The server is terminated and any disks are also deleted. The charges stop.
+
+The history of the instance on Cloud Application Manager is preserved until the instance is deleted.
+
 ### Contacting Cloud Application Manager Support
 
 We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
