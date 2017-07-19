@@ -24,4 +24,12 @@
 
   - __New Public Cloud Datacenter in Germany__
 
-    CenturyLink Cloud announced the general availability of the CenturyLink Cloud DE3 node. Our sixteenth public cloud service location, and second in Germany, DE3 enables CenturyLink Cloud customers to have greater flexibility when planning their cloud infrastructure strategy. For more information, refer to this [blog post](//www.ctl.io/blog/post/launch-centurylink-cloud-de3/).
+    General Availability of the CenturyLink Cloud DE3 node. Our sixteenth public cloud service location, and second in Germany, DE3 enables CenturyLink Cloud customers greater flexibility when planning their cloud infrastructure strategy. More information can be found at: https://www.ctl.io/blog/post/launch-centurylink-cloud-de3/.
+    
+  - __German Region Object Storage__
+  
+    General Availability of our fourth geo-redundant object storage region is available from Germany. Our Enterprise-grade object storage allows customers to store and manage files in a highly-scalable, fault-tolerant distributed datastore.
+
+  - __Microsoft Windows Server 2016 Datacenter Edition__
+  
+    Global availability of Microsoft Windows Server 2016 Datacenter Edition Operating System templates.
