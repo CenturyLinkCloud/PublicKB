@@ -1,5 +1,5 @@
 {{{
-"title": "Cloud Platform - Release Notes: June 20 2017",
+"title": "Cloud Platform - Release Notes: June 20, 2017",
 "date": "6-16-2017",
 "author": "Mahima Kumar",
 "attachments": [],
