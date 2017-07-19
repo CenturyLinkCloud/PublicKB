@@ -1,6 +1,6 @@
 {{{
   "title": "Simple Backup How It Works",
-  "date": "6-27-2017",
+  "date": "7-19-2017",
   "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
@@ -18,13 +18,14 @@ For example, you can specify the backup schedule, retention, location, self-serv
 
 Define and apply a policy to the server. A backup agent is then installed on the server. Backups of designated files and folders occur per the schedule defined in the backup policy. The server connects to the Internet through which the backup agent communicates directly with the backup infrastructure. No external server talks to the customer’s server.
 
-SBS utilizes S3 protocol to leverage a combination of [CLC Object Storage](https://www.ctl.io/object-storage/) and AWS Objects Storage. Backups are securely transferred into Object Storage and reside in storage for the duration of the retention period. Restores are initiated by the customer, at which point the files are brought back to the server for customer use. Partnering with 3rd party cloud providers such as AWS allows additional flexibility for our customers to choose their desired Object Storage region. For a list of storage regions and the associated provider, please see the chart below.
+SBS utilizes S3 protocol to leverage a combination of [Centurylink Cloud Object Storage](https://www.ctl.io/object-storage/) and AWS Objects Storage. Backups are securely transferred into Object Storage and reside in storage for the duration of the retention period. Restores are initiated by the customer, at which point the files are brought back to the server for customer use. Partnering with 3rd party cloud providers such as AWS allows additional flexibility for our customers to choose their desired Object Storage region. For a list of storage regions and the associated provider, please see the chart below.
 
 Backup Region|Storage Target|Endpoint
 -------------|--------------|---------
 APAC (Singapore)|AWS Object Storage (Singapore) - APS1|s3-ap-southeast-1.amazonaws.com
 APAC (Sydney)|AWS Object Storage (Sydney) - APS2|s3-ap-southeast-2.amazonaws.com
 EU (Germany)|AWS Object Storage (Frankfurt) - EUC1|s3.eu-central-1.amazonaws.com<br>s3-eu-central-1.amazonaws.com
+EU (Germany|CenturyLink Object Storage (Germany)|germany.os.ctl.io
 EU (Ireland)|AWS Object Storage (Ireland) - EU|s3-eu-west-1.amazonaws.com
 US East|AWS Object Storage (Northern Virginia) - USE1|s3.amazonaws.com<br>s3-external-1.amazonaws.com
 US West|AWS Object Storage (Oregon) - USW2|s3-us-west-2.amazonaws.com
