@@ -1,5 +1,5 @@
 {{{
-"title": "Cloud Platform - Release Notes: July 06 2017",
+"title": "Cloud Platform - Release Notes: July 06, 2017",
 "date": "7-06-2017",
 "author": "David Gardner",
 "attachments": [],
