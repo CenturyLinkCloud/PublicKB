@@ -1,6 +1,6 @@
 {{{
   "title": "Supported Operating Systems",
-  "date": "9-2-2016",
+  "date": "7-18-2017",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -26,6 +26,7 @@ The following operating systems are supported in CenturyLink Cloud:
 * Windows Server 2008 R2 Datacenter Edition
 * Windows Server 2012 Datacenter Edition
 * Windows Server 2012 R2 Datacenter Edition
+* Windows Server 2016 Datacenter Edition
 
 **NOTE: Only the 64-bit version of each OS is supported**
 
