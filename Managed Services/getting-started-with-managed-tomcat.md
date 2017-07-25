@@ -42,7 +42,7 @@
 <p>A: NO, however all versions of Tomcat support the installation and configuration of "Multiple JVM's" on the same Tomcat server.</p>
 <p><strong>Q: What Versions of Apache Tomcat does CenturyLink Cloud support? </strong>
 </p>
-<p>A: CenturyLink Cloud Supports Tomcat V6, Tomcat v7.</p>
+<p>A: CenturyLink Cloud Supports Tomcat V7.0, v8.0 and v8.5</p>
 <p><strong>Q: What operating systems are supported for Managed Apache? </strong>
 </p>
 <p>A: Managed Red Hat.
