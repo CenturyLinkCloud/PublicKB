@@ -41,7 +41,7 @@
 <p>A:&nbsp;NO, Apache can only be installed once per server, but Apache is capable of hosting many web sites per server.</p>
 <p><strong>Q: What Versions of Apache does CenturyLink Cloud support? </strong>
 </p>
-<p>A:&nbsp;CenturyLink Cloud Supports HTTPD-2.4 with PHP 7.0, HTTPD-2.4 with PHP 7.0.</p>
+<p>A:&nbsp;CenturyLink Cloud Supports HTTPD-2.4_Only, HTTPD-2.4 with PHP 7.0, HTTPD-2.4 with PHP 7.0.</p>
 <p><strong>Q: What operating systems are supported for Managed Apache? </strong>
 </p>
 <p>A: Managed Red Hat.
