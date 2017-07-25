@@ -1,0 +1,31 @@
+{{{
+  "category_order": [
+    "Support",
+    "Accounts & Users",
+    "AppFog",
+    "Autoscale",
+    "Backup",
+    "Blueprints",
+    "Cloud Application Manager",
+    "Compliance",
+    "Container Services",
+    "Control Portal",
+    "Database",
+    "Dedicated Cloud Compute",
+    "Disaster Recovery",
+    "Ecosystem Partners",
+    "General",
+    "LBaaS",
+    "Managed Services",
+    "Marketplace",
+    "Network",
+    "Object Storage",
+    "Partners",
+    "Private Node",
+    "Release Notes",
+    "Runner",
+    "Security",
+    "Servers",
+    "Service Tasks"
+  ]
+}}}

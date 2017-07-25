@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="54px" height="62px" viewBox="0 0 54 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Imported Layers</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="CLC_KB_Home_3a" sketch:type="MSArtboardGroup" transform="translate(-860.000000, -602.000000)">
+            <g id="Imported-Layers" sketch:type="MSLayerGroup" transform="translate(861.000000, 604.000000)">
+                <path d="M25.5,0 L25.5,50 L25.5,0 Z M51.194,25.339 C51.194,39.227 39.935,50.485 26.047,50.485 C12.159,50.485 0.9,39.227 0.9,25.339 C0.9,11.45 12.159,0.192 26.047,0.192 C39.935,0.192 51.194,11.45 51.194,25.339 L51.194,25.339 Z M39.742,25.339 C39.742,39.227 33.616,50.485 26.06,50.485 C18.504,50.485 12.378,39.227 12.378,25.339 C12.378,11.45 18.504,0.192 26.06,0.192 C33.616,0.192 39.742,11.45 39.742,25.339 L39.742,25.339 Z M51,25.5 L1,25.5 L51,25.5 Z M48,13.5 L4,13.5 L48,13.5 Z M48,37.5 L4,37.5 L48,37.5 Z M51.194,25.339 C51.194,39.227 39.935,50.485 26.047,50.485 C12.159,50.485 0.9,39.227 0.9,25.339 C0.9,11.45 12.159,0.192 26.047,0.192 C39.935,0.192 51.194,11.45 51.194,25.339 L51.194,25.339 Z" id="Stroke-1" stroke="#009245" stroke-width="3" sketch:type="MSShapeGroup"></path>
+                <path d="M28.941,56.88 C28.941,58.567 27.574,59.934 25.888,59.934 C24.202,59.934 22.835,58.567 22.835,56.88 C22.835,55.194 24.202,53.827 25.888,53.827 C27.574,53.827 28.941,55.194 28.941,56.88" id="Fill-2" fill="#009245" sketch:type="MSShapeGroup"></path>
+                <path d="M26.067,50.455 L26.067,56.953" id="Stroke-3" stroke="#009245" stroke-width="3" sketch:type="MSShapeGroup"></path>
+                <path d="M49.98,56.953 L2.076,56.953" id="Stroke-4" stroke="#009245" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
