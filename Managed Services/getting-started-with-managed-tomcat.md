@@ -19,7 +19,7 @@
 </p>
 <p><strong>**NOTE** Please choose the same server for both the Installation and Registration of Managed Apache Tomcat. This server must have Managed Red Hat installed, otherwise the Blueprint will fail.</strong>
 </p>
-<p>Ensure that the appropriate services that are included within Apache Tomcat are installed i.e., Tomcat v6, Tomcat v7</p>
+<p>Ensure that the appropriate services that are included within Apache Tomcat are installed i.e., Tomcat v7, Tomcat v8 or Tomcat v8.5</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/xNqSoYrP7HOmsMapUnJEMkL1l/?name=Step1.jpg" alt="Step1.jpg" />
 </p>
 <p><strong>4. Verify the information is correct (pictured below).</strong>
