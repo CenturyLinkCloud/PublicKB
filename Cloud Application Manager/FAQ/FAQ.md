@@ -1,6 +1,6 @@
 {{{
 "title": "FAQ",
-"date": "05-18-2017",
+"date": "07-14-2017",
 "author": "",
 "attachments": [],
 "contentIsHTML": false,
@@ -50,6 +50,12 @@ Yes, an execution of a Template Box is considered a single instance from billing
 
 ### When does a brown-field instance starts billing?
 After registering an auto-discovered instance, all brown-field instances start charging according to the Application Lifecycle Management pricing.
+
+### Is a Management Appliance required in order to deploy a Managed OS on AWS or Azure?
+Yes.  A Management Appliance must be deployed within the environment where the workload(s) to be managed exist.  
+
+### Is a customer charged for the deployment of a Management Appliance?
+The customer will not be charged for the Application Lifecycle Management nor the Managed OS of the deployed Management appliance.  The customer will be responsible for the cost of the infrastructure on which the Management Appliance is deployed.  The infrastructure type required for the Management Appliance:  Azure - Standard_A1_v2 or AWS - t2.medium
 
 ### When a user buys Managed OS on Azure OR AWS, is the user charged on Application Lifecycle Management?
 The user is charged on Application Lifecycle Management for the life of the instance. When a user buys Managed OS on Azure OR AWS on that instance, the additional charge for Managed OS is levied on the instance starting from the time the service is applied. The collective charges are $ 0.13 per instance-hour managed.

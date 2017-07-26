@@ -13,18 +13,14 @@ CenturyLink Cloud Web server application offers a reliable, high-performance, an
 * Managed Red Hat Enterprise Linux
 
 ### Supported Operating systems
-* Managed Red Hat Enterprise Linux 5
 * Managed Red Hat Enterprise Linux 6
 * Managed Red Hat Enterprise Linux 7
 
 ### Supported HTTPD and Framework Versions
 
 * HTTPD-2.4_Only
-* HTTPD-2.4_PHP-5.6
-* HTTPD-2.4_PHP-5.5
-* HTTPD-2.4_PHP-5.4
-* HTTPD-2.2_PHP-5.3_Prefork
-* HTTPD-2.2_PHP-5.3_Worker
+* HTTPD-2.4_PHP-7.0
+* HTTPD-2.4_PHP-7.1
 
 ### Steps to Deploy Managed Apache
 1. Log on to the [Control Portal](//control.ctl.io/).
