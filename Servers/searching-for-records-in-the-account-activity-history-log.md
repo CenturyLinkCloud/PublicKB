@@ -12,10 +12,7 @@
 <h3>Steps</h3>
 
 <ol>
-    <li>Navigate to the Account History through the navigation menu.</p>
-    <p><img src="https://t3n.zendesk.com/attachments/token/es4mazclyeukhky/?name=activityhistory01.png" alt="activityhistory01.png" /></p>
-    </li>
-    <li>
+    <li>Using the left navigation bar select Settings > Account Settings > Activity.</p>
     <p>Review the filtering options for the history list. Users can add keywords, apply a date range, and choose which accounts or sub-accounts to search.</p>
     <p><img src="https://t3n.zendesk.com/attachments/token/qfpqln5eznmced7/?name=activityhistory02.png" alt="activityhistory02.png" />
     </li>

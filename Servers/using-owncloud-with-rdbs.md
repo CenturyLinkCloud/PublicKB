@@ -14,14 +14,14 @@
 - [Connect to the server via OpenVPN](#connect-to-the-server-via-openvpn)
 - [Steps to deploy ownCloud to an existing server](#steps-to-deploy-owncloud-to-an-existing-server)
 - [Configure ownCloud connection to CenturyLink MySQL Relational DB](#configure-owncloud-connection-to-centurylink-mysql-relational-db-service)
-- [Configure ownCloud to utilize SMTP Relay](#configure-owncloud-to-utilize-smtp-relay)
+- [Configure ownCloud to utilize a SMTP service](#configure-owncloud-to-utilize-smtp-service)
 - [Configure ownCloud to utilize Object Storage](#configure-owncloud-to-utilize-object-storage)
 
 ### Technology Profile
 ownCloud is a personal productivity powerhouse. It gives you universal access to all your files, contacts, calendars and bookmarks across all of your devices. Unlike many of the shared repository services out there, with ownCloud, you have your own, private repo. However, just like the public repo companies, with ownCloud you can share your files with friends and co-workers. If you need it, ownCloud even integrates with other storage providers. Best of all, ownCloud is open source and free!
 
 ### Description
-This CenturyLink Cloud knowledge article provides a walkthrough to install and configure ownCloud on the Linux platform (from scratch and Blueprint), customize ownCloud to utilize CenturyLink Cloud's Relational DB Service, SMTP Relay and Object Storage.
+This CenturyLink Cloud knowledge article provides a walkthrough to install and configure ownCloud on the Linux platform (from scratch and Blueprint), customize ownCloud to utilize CenturyLink Cloud's Relational DB Service and Object Storage.
 
 For more information, please visit [http://owncloud.org](//owncloud.org)
 
@@ -162,9 +162,10 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 		  ```
 
 
-### Configure ownCloud to utilize SMTP Relay
+### Configure ownCloud to utilize SMTP Services
 
-- Configure SMTP Relay [SMTP Relay](../Mail/smtp-relay-services-simple.md)
+Alerts and notications cane be sent out using SMTP, if you have subscribe to a SMTP provider, it can be configured using steps below:
+
 - From the owncloud main page, select ***Admin*** from the user account
 
 ![drop down menu](../images/owncloud/oc-drop-down.png)
@@ -173,7 +174,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 
 ![Mail Server](../images/owncloud/mail-server.png)
 
-- Configure the SMTP Relay user based on SMTP Relay information from the portal
+- Configure the SMTP  user based on SMTP information from your provider
 
 ![mail server config](../images/owncloud/oc-mail-relay-account.png)
 
@@ -232,7 +233,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
      ),
     }
     ```
-Now, the ownCloud server is set up to consume Database as a Service, SMTP Relay and Object Storage, this will minimize the administration of the local environment and eliminate resource constraint on the server.  
+Now, the ownCloud server is set up to consume Database as a Service and Object Storage, this will minimize the administration of the local environment and eliminate resource constraint on the server.  
 
 ### Pricing
 The costs associated with this deployment are for the CenturyLink Cloud infrastructure only.  There are no ownCloud license costs or additional fees bundled in.

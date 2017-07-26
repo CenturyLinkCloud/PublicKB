@@ -1,6 +1,6 @@
 {{{
   "title": "How To:  Create Customer Specific OS Templates",
-  "date": "8-12-2015",
+  "date": "6-6-2016",
   "author": "Chris Little",
   "attachments": [],
   "related-products" : [],
@@ -20,7 +20,7 @@ CenturyLink Cloud customers may choose to create their own baseline OS templates
 
 **_DO NOT RUN THE CONVERT TO TEMPLATE FUNCTION ON A PRODUCTION/LIVE VIRTUAL SERVER_**. Customers should create a virtual instance with their specific configurations on a non-production virtual instance. The convert to template function actually modifies and moves the virtual machine to the templates group.
 
-Customers creating OS Templates for Windows Servers should carefully review the [Microsoft Sysprep for Server Roles TechNet Article](//technet.microsoft.com/en-us/library/hh824835.aspx). Sysprep is a component of creating an OS Template and as such certain OS Roles are not supported in both the template or clone process. **_For Windows Servers the CenturyLink Cloud Platform performs the sysprep function on behalf of customers when using the Convert To Template feature._**
+Customers creating OS Templates for Windows Servers should carefully review the [Microsoft Sysprep for Server Roles TechNet Article](//msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/sysprep-support-for-server-roles). Sysprep is a component of creating an OS Template and as such certain OS Roles are not supported in both the template or clone process. **_For Windows Servers the CenturyLink Cloud Platform performs the sysprep function on behalf of customers when using the Convert To Template feature._**
 
 ### Steps
 
@@ -52,15 +52,15 @@ Customers creating OS Templates for Windows Servers should carefully review the 
 
 **Q: I've created a custom template in Data Center A, but when I try to create a VM from the template in Data Center B it's not showing?**
 
-A: Customer created templates do not replicate to all data centers out of the box today. If you need templates copied to other data centers please create a support ticket. Feature sets for global template replication are coming soon.
+A: Customer created templates do not replicate to all data centers out of the box today. If you need templates copied to other data centers please [open a support request](../Support/how-do-i-report-a-support-issue.md).  Copying templates to a different account will incur a [VM Transfer](https://www.ctl.io/service-tasks/#vm-transfer) fee.
 
 **Q: I've created a custom template in my account, but when I try to create a VM from the template in my _sub_ accounts, it's not showing?**
 
-A: Make sure that when you perform the convert to template function that you are selecting the "Private Shared" option described in step #4 above. This setting allows customers to permit access to this template from sub accounts as well.
+A: Make sure that when you perform the convert to template function that you are selecting the "Private Shared" option described in step 4 above. This setting allows customers to permit access to this template from sub accounts as well.
 
 **Q: What fees are associated with use of custom OS templates?**
 
-A: Templates are stored in a group called 'Templates' within the server groups area of Control. Template storage is billed on a per GB basis as Standard Storage. Rates are available from your Sales Representative.
+A: Templates are stored in a group called 'Templates' within the server groups area of Control. Template storage is billed on a per GB basis as Standard Storage. Rates are available from your Sales Representative. 
 
 **Q: What format should my virtual machine use if I choose to leverage  self-service import?**
 

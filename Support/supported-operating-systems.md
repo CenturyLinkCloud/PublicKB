@@ -1,14 +1,14 @@
 {{{
   "title": "Supported Operating Systems",
-  "date": "11-24-2015",
-  "author": "Jared Ruckle",
+  "date": "7-18-2017",
+  "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
 ### What operating systems are supported in the CenturyLink Cloud?
 
-The following operating systems are supported in CenturyLink Cloud, as of April 2015:
+The following operating systems are supported in CenturyLink Cloud:
 
 * CentOS 5
 * CentOS 6
@@ -20,11 +20,13 @@ The following operating systems are supported in CenturyLink Cloud, as of April 
 * RedHat Enterprise Linux 7
 * Ubuntu 12
 * Ubuntu 14
+* Ubuntu 16
 * Windows Server 2008 R2 Standard
 * Windows Server 2008 R2 Enterprise
 * Windows Server 2008 R2 Datacenter Edition
 * Windows Server 2012 Datacenter Edition
 * Windows Server 2012 R2 Datacenter Edition
+* Windows Server 2016 Datacenter Edition
 
 **NOTE: Only the 64-bit version of each OS is supported**
 
@@ -39,6 +41,10 @@ Yes - the only requirement is that each custom template needs to "map" to a supp
 ### What is your operating system retirement policy?
 
 This is listed [here](../Servers/operating-system-template-retirement-policy.md).
+
+### Can I perform an in-place upgrade of the Operating System?
+
+No, in-place upgrades of the Operating System are not supported.  This means that you cannot, for example, upgrade a Windows Server 2012 Standard edition to Windows Server 2012 Datacenter edition.  It will be necessary to deploy a new server if you need a different OS edition.
 
 ### I'd like to deploy an operating system that is not supported. What are my options?
 

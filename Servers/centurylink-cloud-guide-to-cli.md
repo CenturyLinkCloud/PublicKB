@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Guide to CLI",
-  "date": "04-07-2016",
+  "date": "01-19-2017",
   "author": "Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
@@ -9,28 +9,34 @@
 
 * [Overview](#overview)
 * [Prerequisites](#prerequisites)
+* [Keywords](#keywords)
 * [Use Case Scenarios](#use-case-scenarios)
 * [Installation of CenturyLink Cloud CLI](#installation-of-centurylink-cloud-cli)
 * [READ commands](#read-commands)
 * [Billing and Accounting](#billing-and-accounting)
 * [Commands change the environment](#commands-change-the-environment)
-* [Advanced Usage](#advanced-usage)
+* [Advanced Usage(Wait/Execute packages)](#advanced-usage)
+  * [Network/Firewall](#networkfirewall)
+  * [Snapshot](#snapshot)
+  * [Site to Site VPN](#site-to-site-vpn)
 * [Application Services control](#application-services-control)
   * [Relational Database Service](#relational-database-service)
   * [Intrusion Prevention Service](#intrusion-prevention-service)
   * [Patching Service](#patching-service)
+  * [Storage](#storage)
   * [Simple Backup Service](#simple-backup-service)
+  * [Webhooks](#webhooks)
 * [Support](#support)
 
 ### Overview
 
 There are two CLI interfaces available on CenturyLink Cloud, GO based
-CLI for API v2 [(explains here)](//github.com/CenturyLinkCloud/clc-go-cli) and [Python based CLI for API v1 and v2](//github.com/CenturyLinkCloud/clc-python-sdk)
+CLI for API v2 [(explains here, currently version 1.1)](https://github.com/CenturyLinkCloud/clc-go-cli) and [Python based CLI for API v1 and v2](//github.com/CenturyLinkCloud/clc-python-sdk)
 
 For accounts, users, [API v1](//ca.ctl.io/api-docs/v1/u5o/) provides the access to this information. For the rest of the data, [API v2](//www.ctl.io/api-docs/v2/) can be used to access this information.
 
-The Python based SDK is crossed platform, the CLI can be ran on any Python 2.7 environment.  For detail usage of Python CLI and download, please see its [GitHub repository](//github.com/CenturyLinkCloud/clc-python-sdk/blob/master/README_CLI.md).  The pre-complied windows CLI executable can be downloaded from [here](//github.com/CenturyLinkCloud/clc-python-sdk/raw/master/src/dist/clc-cli.exe).
-The GO based CLI can be run on Mac OSX, Linux and Windows. For download page, please see the [CenturyLink Cloud CLI GitHub release page](//github.com/CenturyLinkCloud/clc-go-cli/releases).  
+The Python based SDK is crossed platform, the CLI can be ran on any Python 2.7 environment.  For detail usage of Python CLI and download, please see its [GitHub repository](//github.com/CenturyLinkCloud/clc-python-sdk).  The pre-complied windows CLI executable can be downloaded from [here](//github.com/CenturyLinkCloud/clc-python-sdk/raw/master/src/dist/clc-cli.exe).
+The GO based CLI can be run on Mac OSX, Linux and Windows. For release notes and download page, please see the [CenturyLink Cloud CLI GitHub release page](//github.com/CenturyLinkCloud/clc-go-cli/releases).  
 The resources available on both tools will output similar results, at this time, certain functions are only available on API v1, hence the need of both tools to capture all the functionalities of the platform.
 
 Comparison of the two CLI tools:
@@ -38,7 +44,7 @@ Comparison of the two CLI tools:
 | CLI         |   Python            | Go                  |
 | ---------   | ------------------- | -----------------   |
 | API version | Mostly v1 (some v2) |         v2          |
-| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> backup <br> billing <br> custom-fields <br> data-center <br> db <br> firewall-policy <br> group <br> ips <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> os-patch <br> server <br> wait <br>      |
+| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> backup <br> billing <br> crossdc-firewall-policy <br> custom-fields <br> data-center <br> db <br> firewall-policy <br> group <br> ips <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> os-patch <br> server <br> site-to-site-vpn <br> version <br> wait <br> webhook <br>     |
 
 
 
@@ -50,6 +56,22 @@ Comparison of the two CLI tools:
 -   Python 2.7 installed in the environment for Python based CLI
 -   API user account [please see this KB for detail](//www.ctl.io/knowledge-base/accounts-&-users/creating-users/)
 
+### Keywords
+When running commands (GO CLI command/Python CLI command)
+-   alias - Account Alias, it can be found in the top left corner of the portal
+-   name - name of the server or group, when creating a new server, the length limit is 6 characters
+-   location - name of the data centers (e.g. IL1, VA1, CA1)
+-   network-name/network - name of the VLAN, [they can be listed using CLI](#read-commands)
+-   type - server type, either standard or hyperscale
+-   storage-type/backup-level - storage type, current option is standard
+-   group-name/group - name of the group within the account
+-   configuration-id - ID of bare metal from output of `clc data-center get-baremetal-capabilities`
+
+Output and error message
+-   alias - In both the output and error messages, alias can be server name/account/location alias
+-   name - depending on the query, it can me server name, location, account name etc
+
+
 ### Use Case Scenarios
 This tool enables system administrators to interface with CenturyLink Cloud without programming with the API or the using the Control Portal.  Automation can be achieved using scripting and other automation tools.
 
@@ -57,13 +79,13 @@ This tool enables system administrators to interface with CenturyLink Cloud with
 
 ***In order to make easy distintion between the two CLIs, clc-cli is the Python based tool and clc is the GO based tool.***
 
-**Python Based CLI:**
+**Python Based CLI**
 
 Installation instruction is available [here](//github.com/CenturyLinkCloud/clc-python-sdk).  If pip is installed, then the following command will installed the CenturyLink Cloud Python SDK and CLI:
 ```
 pip install clc-sdk
 ```
-For authentication, it can be several way, please see the [README page of the CLI](//github.com/CenturyLinkCloud/clc-python-sdk/blob/master/README_CLI.md#authentication).  In order to use a system configuration file, a clc.ini (Windows) or clc_config (POSIX) needs to be created.  An example is shown below:
+For authentication, it can be several way, please see the [README page of the CLI](//github.com/CenturyLinkCloud/clc-python-sdk/).  In order to use a system configuration file, a clc.ini (Windows) or clc_config (POSIX) needs to be created.  An example is shown below:
 ```
 [global]
 V1_API_KEY=
@@ -108,7 +130,7 @@ Commands:
 ```
 
 
-**GO Based CLI:**
+**GO Based CLI**
 
 Installation is simple for the GO based CLI. Download the executable and run it. The detail
 of the installation steps can be found [here](//github.com/CenturyLinkCloud/clc-go-cli).
@@ -135,28 +157,32 @@ Output of `clc -–help`:
 ```
 To get full usage information run clc without arguments.
 Available resources:
-          login
-          autoscale-policy
-          db
-          backup
-          data-center
-          load-balancer
-          billing
-          ips
-          server
-          group
-          load-balancer-pool
-          custom-fields
-          os-patch
-          network
-          alert-policy
-          anti-affinity-policy
-          firewall-policy
-          wait
+    alert-policy
+    anti-affinity-policy
+    autoscale-policy
+    backup
+    billing
+    crossdc-firewall-policy
+    custom-fields
+    data-center
+    db
+    firewall-policy
+    group
+    ips
+    load-balancer
+    load-balancer-pool
+    login
+    network
+    os-patch
+    server
+    site-to-site-vpn
+    version
+    wait
+    webhook
 
 ```
 
-**Logging into the CenturyLink account:**
+**Logging into the CenturyLink account**
 
 Using command without a configuration file:
 ```
@@ -167,10 +193,10 @@ clc login –user username –password
 ```
 Or setup the configuration file as described in [Installation of CenturyLink Cloud CLI](#installation-of-centurylink-cloud-cli)
 
-**Output Format:**
+**Output Format**
 
 For output (with --format for clc-cli or –-output for clc), there are several options:
-‘JSON, TEXT, TABLE’, an additional option ‘csv’ for clc-cli.
+‘JSON, TEXT, TABLE’, and 'csv'.
 
 JSON:
 ```
@@ -201,7 +227,12 @@ HardwareGroupUUID,Name,Description,Cpu,MemoryGB,Status,TotalDiskSpaceGB,ServerTy
 
 ### READ commands
 (No changes made with the following commands)
+***Version for Support purposes***
 
+**Show the current version**
+```
+clc version
+```
 ***List and Find***
 
 **List all accounts**
@@ -220,7 +251,7 @@ clc-cli users lists
 ```
 clc-cli users get --alias ABCD --user "demo.user"
 ```
-**List all data centers:**
+**List all data centers**
 ```
 clc-cli accounts locations
 ```
@@ -228,7 +259,7 @@ clc-cli accounts locations
 clc data-centers list
 ```
 
-**List all servers in the account:**
+**List all servers in the account**
 ```
 clc-cli servers list
 ```
@@ -236,7 +267,7 @@ clc-cli servers list
 clc server list
 ```
 
-**For a particular data center:**
+**For a particular data center**
 ```
 clc-cli servers list --location CA3
 ```
@@ -248,7 +279,7 @@ Or
 ```
 clc server list -–filter “LocationID”=”CA3”
 ```
-**List hostname of all servers in a datacenter:**
+**List hostname of all servers in a datacenter**
 ```
 clc-cli --cols Name --config config.ini servers list --location CA3
 ```
@@ -261,12 +292,12 @@ clc server list –all --query location-id=ca3
 ```
 
 **Find all the hyperscale (or standard/baremetal) server in the
-account:**
+account**
 ```
 clc server list --all --filter type=hyperscale --query details.host-name
 ```
 
-**All OS/templates available in a DC:**
+**All OS/templates available in a DC**
 ```
 clc data-center get-deployment-capabilities --data-center CA3 --query templates.name --output text
 ```
@@ -292,25 +323,40 @@ WIN2012DTC-64
 WIN2012R2DTC-64
 ```
 
-**Show all “active” servers :**
+**Show Bare Metal Server available in a DC**
+```
+clc data-center get-baremetal-capabilities --data-center CA1
+```
+
+**Show all “active” servers**
 ```
 clc server list --all --filter status=active --output table
 ```
 
-**Who/when created a server:**
+**Who/when created a server**
 ```
 clc server list --all --filter name=CA3ABCDADM01 --query change-info.{created-by,created-date}
 ```
 
-**Display power state and hostname:**
+**Display power state and hostname**
 ```
-clc-cli --cols Name PowerState --config.ini servers list-all
+clc-cli --cols Name PowerState --config config.ini servers list-all
 ```
 ```
 clc server list --all --query details.{power-state,host-name}
 ```
 
-**All paused servers (or started and stopped):**
+**Display power state and Display Name**
+For Windows command:
+```
+clc server list --all --query Display-Name,details | findstr "DisplayName PowerState"
+```
+In Linux:
+```
+clc server list --all --query Display-Name,details | grep -e DisplayName -e PowerState
+```
+
+**All paused servers (or started and stopped)**
 For Windows command:
 ```
 clc server list --all --query details.{power-state,host-name} --output text | find "paused"
@@ -320,12 +366,12 @@ For Linux or MacOSX:
 clc server list --all --query details.{power-state,host-name} --output text | grep "paused"
 ```
 
-**Server name with number of CPUs and memory (in MB):**
+**Server name with number of CPUs and memory (in MB)**
 ```
 clc server list --all --query "details.{cpu,memoryMB,host-name}" --output text
 ```
 
-**Find IP addresses with server name:**
+**Find IP addresses with server name**
 ```
 clc-cli -f text --cols Name IPAddress --config.ini servers list-all
 ```
@@ -333,7 +379,7 @@ clc-cli -f text --cols Name IPAddress --config.ini servers list-all
 clc server list --all --query "details.{host-name,ipAddresses}" --output text
 ```
 
-**List all groups:**
+**List all groups**
 ```
 clc-cli group list
 ```
@@ -341,24 +387,24 @@ clc-cli group list
 clc group list –all
 ```
 
-**Find all empty groups:**
+**Find all empty groups**
 ```
 clc group list --filter 'servers-count=0'
 ```
 
-**Find all groups with servers:**
+**Find all groups with servers**
 ```
 clc group list --filter 'servers-count>0'
 ```
 
-**List all network in a datacenter:**
+**List all network in a datacenter**
 ```
 clc-cli networks list --location ca3
 ```
 ```
 clc network list --data-center ca3 --output table
 ```
-**Query the above result with Name, Description and Gateway:**
+**Query the above result with Name, Description and Gateway**
 ```
 clc network list --data-center ca3 --query Name,Description,Gateway --output table
 ```
@@ -389,7 +435,7 @@ clc billing get-invoice-data --year 2015 --month 12
 ```
 clc billing get-invoice-data --year 2015 --month 12 --query LineItems.{ServiceLocation,UnitCost} --output json
 ```
-**Get billing for a group:**
+**Get billing for a group**
 ```
 clc group get-billing-details --group-name Test
 ```
@@ -397,7 +443,7 @@ clc group get-billing-details --group-name Test
 
 *ArchiveCost, CurrentHour, MonthToDate, MonthlyEstimate, TemplateCost*
 
-**Get Billing for a server:**
+**Get Billing for a server**
 ```
 clc-cli billing server-estimate --server CA3ABCDTEST104
 ```
@@ -410,7 +456,7 @@ For Linux or MacOSX:
 clc group get-billing-details --group-name ceph --output text | grep “hostname”
 ```
 
-**From a Master account to look in a sub-account:**
+**From a Master account to look in a sub-account**
 ```
 clc-cli account get --alias SUBA
 cli-cli users list --alias SUBA
@@ -426,7 +472,7 @@ clc group list --data-center CA3 --account-alias SUBA
 clc billing get-invoice-data --account-alias SUBA --year 2016 --month 1
 ```
 
-**List group and server in a specific account:**
+**List group and server in a specific account**
 ```
 clc-cli groups list --alias ABCD
 ```
@@ -436,6 +482,14 @@ clc group list –account-alias ABCD
 ```
 clc server list –account-alias ABCD
 ```
+**List shared load balancer and load balanced pool**
+```
+clc load-balancer list --data-center ca2
+```
+```
+clc load-balancer-pool list --data-center ca2 --load-balancer-name CLITest
+```
+
 
 ### Commands change the environment
 (**Warning**: use with care)
@@ -448,7 +502,7 @@ clc-cli users create --alias ABCD --user "new.test" --email new.test@abcd.com --
 ```
 *Possible roles: ServerAdministrator,BillingManager,DNSManager,AccountAdministrator,AccountViewer,NetworkManager,SecurityManager,ServerOperator*
 
-**Create a group:**
+**Create a group**
 ```
 clc-cli groups create --location CA3 --alias ABCD --parnet DevOps --group TestingCLI --description "Testing group"
 ```
@@ -456,13 +510,18 @@ clc-cli groups create --location CA3 --alias ABCD --parnet DevOps --group Testin
 clc group create --name "TestCA3" --description "Test Servers" --parent-group-name "CA3 Hardware"
 ```
 
-**Create a server:**
+**Create a server**
 ```
-clc-cli servers create --alias ABCD --location CA3 --group TestingCLI --name test1 --template UBUNTU-14-64-TEMPLATE --backup-level Standard --cpu 1 --ram 1 --network vlan_771_10.56.171
+clc-cli servers create --alias ABCD --location CA3 --group TestingCLI --name test1 --template UBUNTU-14-64-TEMPLATE --backup-level Standard --cpu 1 --ram 1 --network vlan_771_10.xxx.yyy
 ```
 ```
 clc server create --name test1 --description "test" --group-name TestingCLI --template-name UBUNTU-14-64-TEMPLATE --root-password xxxxxxxxx
---network-name vlan_771_10.56.171 --cpu 1 --memory-gb 1 --type standard --storage-type standard --additional-disks sizeGB=50,type=raw
+--network-name vlan_771_10.xxx.yyy --cpu 1 --memory-gb 1 --type standard --storage-type standard --additional-disks sizeGB=50,type=raw
+```
+
+**Create a bare metal server**
+```
+clc server create --name test1 --group-name "My Test" --root-password xxxxxxxxx --network-name "vlan_1000_10.xxx.yyy" --type bareMetal --configuration-id 2516e341b960652f01563933d72523d9c222a437 --os-type windows2012R2DataCenter_64Bit
 ```
 
 **Create a new VLAN in a datacenter**
@@ -479,10 +538,35 @@ Output:
     "Verbs": null
 }
 ```
+**Create a new Shared Load Balancer in a datacenter (initially disabled)**
+```
+clc load-balancer create --data-center CA2 --name WebStore --description "For online store" --status disabled
+```
+Output:
+```
+{
+    "Description": "For online store",
+    "Id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "IpAddress": "www.xxx.yyy.zzz",
+    "Name": "WebStore",
+    "Pools": [],
+    "Status": "disabled"
+}
+```
+**Create a new Load Balacner Pool**
+```
+clc load-balancer-pool create --data-center ca2 --load-balancer-name CLITest --port 80 --method roundrobin --persistence standard
 
+```
+**Adding servers in the load balanced pool**
+```
+clc load-balancer update-nodes --data-center CA2 --load-balancer-name CLITest --pool-id xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --nodes "ip-address"="10.xxx.yyy.zzz","Private-Port"=443 "ip-address"="10.xxx.yyy.zzz","Private-Port"=443,"Status"=disabled
+
+
+```
 ***Delete***
 
-**Delete a server:**
+**Delete a server**
 ```
 clc-cli servers delete --server CA3ABCDTEST106
 ```
@@ -504,18 +588,56 @@ clc-cli groups delete --group TestGroup
 ```
 clc group delete -–group-name TestGroup
 ```
-
+**Delete a Load Balanced pool**
+```
+clc load-balancer-pool delete --data-center CA2 --load-balancer-name CLITest --pool-id xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
 
 ### Advanced Usage
+**Wait**
+The option allows the previous command finishes before running the next command
+```
+clc wait
+```
+**Execute a package**
+CLI can execute a script or package (requires package ID and parameters for executing the package)
+Package ID can be found using:
+
+- [API](//www.ctl.io/api-docs/v1/#blueprint)
+
+- UUID (Package ID) as part of the URL under the control portal (Orchestration->scripts/package->script_required)(example: https://control.ctl.io/Blueprints/Packages/Details?uuid=c3c6642e-24e1-4c37-b56a-1cf1476ee360&classification=Script&type=AccountLibrary)
+
+```
+clc server execute-package --server-ids CA2ABCDMYSQLU01 --package "package-id=fcddbdf6-f5cc-4038-a088-b4e572ae2e22,parameters=xxxx yyyy"
+```
+### Network/Firewall
+**Adding a public IP address to a server**
+
+  - NATing with an existing private IP with UDP port 4040 open
+  ```
+  clc server add-public-ip-address --server-name CA3ABCD2TSQL01  --internal-ip-address 10.110.23.16 --ports port=4040,protocol=udp
+  ```
+  - Nating with a new private IP with TCP port range 8080 to 8090 open
+  ```
+  clc server add-public-ip-address --server-name CA3ABCD2TSQL01 --ports port=8080,portTo=8090,protocol=tcp
+  ```
+  - Update a public IP port and source IP restriction
+  ```
+  clc server update-public-ip-address --server-name CA3ABCD2TSQL01 --public-ip xxx.xxx.xxx.xxx --ports port=8080,portTo=8085,protocol=tcp --source-restrictions "CIDR=xxx.xxx.xxx.xxx/32"
+  ```
 
 **Adding a secondary network card on a server**
 Please refer to the [Add or Remove Network Interface to Server using Go CLI](../Network/add-or-remove-network-interface-to-server-using-go-cli.md)
 
-**Create firewall rule with port tcp/22 between VLANs:**
+**Create firewall rule with port tcp/22 between VLANs**
 ```
-clc firewall-policy create --data-center CA1 --destination-account abcd --sources "10.56.250.0/24" --destinations "10.56.171.0/24" --ports tcp/22
+clc firewall-policy create --data-center CA1 --destination-account abcd --sources "10.aaa.bbb.0/24" --destinations "10.xxx.yyy.0/24" --ports tcp/22
 ```
-
+**Create a cross DC firewall policy with the same or sub account(initially disabled, can be enabled using update option)**
+```
+clc crossdc-firewall-policy create --data-center CA2 --destination-account-id abcd --destination-location-id va1 --destination-cidr "10.aaa.bbb.0/24" --source-cidr "10.xxx.yyy.0/24" --enabled false
+```
+### Snapshot
 **Create a snapshot for a server (maximum 10 days expiration)**
 ```
 clc server create-snapshot --server-ids CA3ABCDTAKE02 --snapshot-expiration-days 2
@@ -529,7 +651,12 @@ clc server get --server-name CA3ABCDTAKE02 --query details.snapshots.id --output
 ```
 clc server delete-snapshot --server-name CA3ABCDTAKE02 --snapshot-id 1
 ```
-
+### Site to Site VPN
+**Create Site to Site VPN**
+```
+clc site-to-site-vpn create --local "alias=CA2,subnets=10.x.x.0/24" --remote "siteName=NH,deviceType=pfsense,address=76.x.x.x,subnets=192.168.1.0/24" --ipsec "encryption=aes128,hashing=sha1_96,protocol=esp,pfs=group2,lifetime=28800" --ike "encryption=aes128,hashing=sha1_96,diffieHellmanGroup=group2,preSharedKey=b7fd0390436a4556a17c42f79d782eb9,lifetime=28800,mode=main,deadPeerDetection=false,natTraversal=false,remoteIdentity=false"
+```
+### Scripting
 **Create a json file for repeat usage of frequent use commands**
 
 For the example below, servername.json is created to list all the hostname of all servers in the account:
@@ -548,19 +675,19 @@ The following examples show the basic functions of what can be done from the CLI
 ### Relational Database Service
 For Relational DB, cli can manage creation, deletion, failover, notification and listing of different resources.  The `--help` option can be used to find out more on the options.  For details of Relational Database Service, please see this [knowledge article](../Database/getting-started-with-mysql-rdbs.md).
 
-**Listing all the available data centers for this service:**
+**Listing all the available data centers for this service**
 ```
 clc db list-datacenters
 ```
-**Listing database instances in a data center:**
+**Listing database instances in a data center**
 ```
 clc db list --data-center IL1
 ```
-**Querying the ID of the database:**
+**Querying the ID of the database**
 ```
 clc db list --data-center VA1 --query ID --output text
 ```
-**Creating a new database with replication:**
+**Creating a new database with replication**
 ```
 clc db create --instance-type MYSQL_REPLICATION --external-id yourdb --machine-config "cpu=1,memory=2,storage=15" --backup-retention-days 5 --users "name=admin,password=XXXX" --data-center IL1
 ```
@@ -604,7 +731,7 @@ Once created, an output similar to below would include the IP address, the certi
 }
 ```
 **Create notifications (options are 'CPU_UTILIZATION' or 'MEMORY_UTILIZATION'
-or 'STORAGE_UTILIZATION' to email or SMS) for the database instance:**
+or 'STORAGE_UTILIZATION' to email or SMS) for the database instance**
 ```
 clc db create-notification  --subscription-id 3185 --destination-type SMS --location xxxxxxxxx --notifications NotificationType=MEMORY_UTILIZATION
 ```
@@ -612,13 +739,13 @@ clc db create-notification  --subscription-id 3185 --destination-type SMS --loca
 ### Intrusion Prevention Service
 For details of Intrusion Prevention Service, please see [here](../Security/getting-started-with-ips.md).
 
-**Install Intrusion Prevention Service on a host:** (`uninstall` to uninstall)
+**Install Intrusion Prevention Service on a host** (`uninstall` to uninstall)
 ```
 clc ips install --server-name CA3ABCDTAKE02
 ```
-**Set the notification (options: Webhook, Slack, syslog and Email) with email:**
+**Set the notification (options: Webhook, Slack, syslog and Email) with email**
 ```
-clc ips set-notifications --server-name CA3ABCDTAKE02 --notification-destinations "type-code"="EMAIL","email-address"="monitor@abcd.com"
+clc ips set-notifications --server-name CA3ABCDTAKE02 --notification-destinations '"type-code"="EMAIL","email-address"="monitor@abcd.com"'
 ```
 
 ### Patching Service
@@ -718,6 +845,20 @@ T Framework 4.6 and 4.6.1 for Windows 8.1 and Server 2012 R2 for x64 (KB3135998)
     "Status": "COMPLETED"
 }
 ```
+### Storage
+Currently only works on MacOSX and Linux CLI, fixes for Windows version is pending:
+**Adding a new 20GB disk to an existing server**
+```
+clc server update '{"ServerId": "CA3ABCDSVR01","Disks" : {"Keep" : [{ "DiskId": "0:0", "SizeGB": 1},{ "DiskId": "0:1", "SizeGB": 2},{ "DiskId": "0:2", "SizeGB": 16},{ "SizeGB": 20}]}}'
+```
+**Increase Disk 0:3 size to 40 GB**
+```
+clc server update '{"ServerId": "CA3ABCDSVR01","Disks" : {"Keep" : [{ "DiskId": "0:0", "SizeGB": 1},{ "DiskId": "0:1", "SizeGB": 2},{ "DiskId": "0:2", "SizeGB": 16},{ "DiskId": "0:3", "SizeGB": 40}]}}'
+```
+**Removing Disk 0:3 from the server (Backup data before removal)**
+```
+clc server update '{"ServerId": "CA3ABCDSVR01","Disks" : {"Keep" : [{ "DiskId": "0:0", "SizeGB": 1},{ "DiskId": "0:1", "SizeGB": 2},{ "DiskId": "0:2", "SizeGB": 16}]}}'
+```
 
 ### Simple Backup Service
 Simple Backup Service provides a set and forget backup solution to CenturyLink Cloud customers, to learn more, please refer to this [knowledge article](../Backup/simple-backup-service-how-it-works.md).  With CLI access to Simple Backup Service, it gives customers more management flexibility on managing their backup.
@@ -761,7 +902,7 @@ clc backup get-os-types
 ```
 ***List of available/applied policies in the account***
 ```
-clc backup get-account-policies
+clc backup get-account-policies --account-alias ABCD
 ```
 ```
 clc backup get-account-policy --policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
@@ -781,6 +922,26 @@ clc backup get-stored-data --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx
 ```
 ```
 clc backup get-restore-point-details --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --server-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  --backup-finished-start-date 2016-02-06 --backup-finished-end-date 2016-04-07 --sort-by retentionExpiredDate
+```
+
+### Webhooks
+CLI can be used to configure webhooks, this enable customers to leverage the alert notification webhook services built into CenturyLink Cloud with 3rd party web apps or services.  The current event list are: "Account.Created", "Account.Delted", "Account.Updated", "Alert.Notificiation", "Server.Created", "Server.Deleted", "Server.Updated", "User.Created", "User.Deleted", "User.Updated".  To learn more on setup webhook in CenturyLink Cloud, please see [Configuring Webhooks and Consuming Notificatios](../General/consuming-webhook-alerts-with-3rd-party-web-apps.md).
+
+***List all current webhook***
+```
+clc webhook list
+```
+***Create a new webhook notification***
+```
+clc webhook add-targeturi --event Server.Created --target-uri "https://zapier.com/hooks/catch/your-zpaier-id/"
+```
+***Delete an event notification***
+```
+clc webhook delete --event Server.Created
+```
+***Update and existing notification***
+```
+clc update --event Server.Deleted --recursive true --target-uri "https://zapier.com/hooks/catch/your-zpaier-id/"
 ```
 
 ### Support

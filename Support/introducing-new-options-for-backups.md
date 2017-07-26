@@ -1,23 +1,23 @@
 {{{
   "title": "Introducing New Options for Backups, Plus An Update on the Retirement of Standard & Premium Backup Features",
-  "date": "4-14-2016",
+  "date": "9-21-2016",
   "author": "Jared Ruckle",
   "attachments": []
 }}}
 
-Article updated April 14, 2016; article first posted on February 22, 2016
+This article was updated June 1, 2016 to confirm the retirement of Standard & Premium backup features in the platform as communicated previously. Article was previously updated on May 4, 2016; article was first posted on February 22, 2016.
 
 ### Introducing New Options for Backups, Plus an Update on the Retirement of Standard & Premium Backup Features
 
-Late last year, CenturyLink notified customers that the backup features associated with [“Standard” and “Premium” storage were to be retired in early 2016](../Support/backup-service-changes-faq.md).
+Late last year, CenturyLink notified customers that the backup features associated with “Standard” and “Premium” storage were to be retired in 2016.
 
-We can now offer more clarity on this timing. **Effective May 1, 2016 Standard and Premium backup features will reach end of life in CenturyLink Cloud in all locations.** There is no impact to the persistent storage attached to servers, but the 5-day and 14-day backup capabilities will no longer function after this date.
+UPDATE - JUNE 1, 2016: Standard & Premium backup features are now retired. Please ensure your data is backed up and protected as needed.  There is no impact to the persistent storage attached to servers.
 
-The [Simple Backup Service will be generally available on March 29, 2016](https://www.ctl.io/simple-backup-service/). This integrated service will offer file-level backup protection, with highly customizable retention policies. The service will be available in all CenturyLink Cloud locations, with backup locations around the world.
+The [Simple Backup Service is CenturyLink Cloud's backup solution](https://www.ctl.io/simple-backup-service/). This integrated service offers file-level backup protection, with highly customizable retention policies. The service will be available in all CenturyLink Cloud locations, with backup locations around the world.
 
-In addition, we will be dropping the prices of block storage on April 1, a full month **before** the retirement of Standard & Premium backup features.
+In addition, we reduced the price of block storage on April 1, two full months **before** the retirement of Standard & Premium backup features.
 
-To assist customers during this transition, here are answers to a few common questions we’ve heard from customers in recent weeks.
+To assist customers during this transition, here are answers to a few common questions we’ve received from customers.
 
 ### Why is CenturyLink making this change?
 
@@ -32,19 +32,19 @@ Another reason: a lack of usage of the Standard and Premium backup services, par
 
 ### Is the price of storage going to drop? If so, by how much?
 
-Yes – since storage no longer includes bundled backup, we anticipate a price drop of **20% when compared to Standard** and **at least 75% compared to Premium**. We will announce final details of the new price on April 1, 2016. New pricing will take effect April 1, 2016.
+Yes – since storage no longer includes bundled backup, price reductions for block storage have been in place effective April 1, 2016.
 
 ### Will I still be able to take snapshots manually?
 
-Yes. Snapshots are a useful feature for very specific scenarios – such as right before making impactful changes to your systems. Users can still perform [snapshots on-demand and as scheduled tasks](../Servers/creating-and-managing-server-snapshots.md).
+Yes. Snapshots are a useful feature for very specific scenarios – such as right before making impactful changes to your systems. Users can still perform [snapshots on-demand and as scheduled tasks](../Servers/creating-and-managing-server-snapshots.md). [The CenturyLink Cloud CLI can also help automate this task](https://www.ctl.io/knowledge-base/servers/centurylink-cloud-guide-to-cli/).
 
 ### Is my team required to take action in order to protect my data after this change?
 
-Yes.  There are several options presented below. It is important to know that if your team does not choose to implement one of the options below - or utilize their own backup design - data will not be protected against loss or corruption.
+Yes.  There are several options presented below. It is important to know that if your team does not choose to implement one of the options below - or utilize their own backup solution - data will not be protected against loss or corruption.
 
 ### What happens to my backup data from Standard and Premium?
 
-Customers will no longer have access to their backup data from Standard and Premium storage features after April 30, 2016. Data from Standard and Premium backups are not carried over or otherwise migrated to the Simple Backup Service, or any other backup product. The Standard and Premium backup data will be inaccessible via Control or the APIs after April 30, 2016. Customers requiring access to this data should request backup restores as soon as possible via ticket at help@ctl.io.
+Customers will no longer have access to their backup data from Standard and Premium storage features after May 31, 2016. Data from Standard and Premium backups are not carried over or otherwise migrated to the Simple Backup Service, or any other backup product. The Standard and Premium backup data will be inaccessible via Control or the APIs after May 31, 2016. Customers requiring access to this data should request backup restores as soon as possible via ticket at help@ctl.io.
 
 ### What is the Simple Backup Service?
 
@@ -93,7 +93,10 @@ The answer varies depending on the workload and your requirements. Along those l
 * Availability: GA on March 29, 2016
 * Deployment Time: Instant – agents are installed locally on each server once a backup policy is applied to a given server
 * Support Model: Supported by CenturyLink (since the product is integrated into the Control Portal), with an integrated support experience
-* Getting Started: Review the [the form on the product page](https://www.ctl.io/simple-backup-service/).
+* Getting Started: Review the [the product page](https://www.ctl.io/simple-backup-service/), then login to the Control Portal to get started.
+* Other resources:
+  * [Simple Backup Service API Documentation](https://www.ctl.io/api-docs/v2/#simple-backup)
+  * [Powershell Script for the bulk application of Simple Backup Policies for all Servers in an Account](https://github.com/MattSchwabbyCLC/CLCSBSDeployment)
 
 #### Safe Haven, from CenturyLink
 * When to use it: Disaster Recovery between CenturyLink Cloud locations, with customized RTO/RPO targets.
@@ -104,7 +107,7 @@ The answer varies depending on the workload and your requirements. Along those l
 * Support Model: Supported by CenturyLink (since the product is integrated into the Control Portal); on-boarding from CenturyLink is also included
 * To Get Started: Contact your account team, or [visit the product page](https://www.ctl.io/disaster-recovery/)
 * Other resources:
-  * [This section of the knowledge base](../Disaster Recovery) has additional articles on Safe Haven.
+  * [This section of the knowledge base](https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-3/#1) has additional articles on Safe Haven.
 
 #### CommVault
 * When to use it: Data and file backup, with many powerful features and capabilities to protect data across a variety of platforms, and to host data across a variety of storage media. OS-level images are supported.
@@ -132,5 +135,18 @@ The answer varies depending on the workload and your requirements. Along those l
   * [Setting up disaster recovery using Visions Solutions Double-Take Availability](../Servers/setting-up-disaster-recovery-using-visions-solutions-double-take-availability.md)
   * [CenturyLink Cloud Guide to Double Take DR](../Servers/centurylink-cloud-guide-to-doubletake-dr.md)
 
+#### Managed Backup
+* When to use it: File-based backup, using the Symantec NetBackup offering
+* Requirements: Virtual machines running in supported locations (UC1, VA1, IL1, GB3, SG1, CA3)
+* Cost: Tiered pricing
+* Availability: GA, in selected sites
+* Deployment Time: Self-service, if you have a Master Service Agreement in place with CenturyLink. Refer to [the FAQs to learn more](../Managed Services/managed-backup-frequently-asked-questions.md).
+* Support Model: Supported by CenturyLink (since the product is integrated into the Control Portal)
+* To Get Started: Contact Vision Solutions directly via email at [CenturyLinkInfo@visionsolutions.com](mailto:CenturyLinkInfo@visionsolutions.com); evaluation licenses are available.
+* Other resources:
+  * [Managed Backup - Product Page](https://www.ctl.io/managed-services/backup/)
+  * [Enabling & Disabling Managed Backup](../Managed Services/enabling-and-disabling-managed-backup.md)
+  * [Managed Backup FAQs](../Managed Services/managed-backup-frequently-asked-questions.md)
+
 ### Summary
-This information should give you a good starting point to investigate specialized solutions that can meet your business requirements. In the coming weeks, we will post additional knowledge base articles – including sample code snippets for using the Simple Backup Service APIs, and recordings of demonstrations of the solutions mentioned above. If there’s more details or information you would require, please let us know via [help@ctl.io](mailto:help@ctl.io).
+This information should give you a good starting point to investigate specialized solutions that can meet your business requirements. If there’s more details or information you would require, please let us know via [help@ctl.io](mailto:help@ctl.io).

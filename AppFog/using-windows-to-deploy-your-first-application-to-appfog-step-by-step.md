@@ -1,6 +1,6 @@
 {{{
   "title": "Using Windows to Deploy Your First Application to AppFog, A Step by Step Guide",
-  "date": "06-10-2015",
+  "date": "03-23-2017",
   "author": "Kelly Malloy",
   "attachments": [],
   "related-products" : [],
@@ -13,29 +13,29 @@ This guide provides step by step instructions to deploy an application to AppFog
 
 ### Prerequisites
 
-The guide assumes that the reader has no experience with Cloud Foundry and does not understand what it means to push an application to a cloud native application platform.  This guide requires the AppFog functionality to be enabled on your CenturyLink Cloud Platform account.  Later in this guide more detail will be provided on determining this setting.  This guide will use an application created and published by a third party named “spring-music” in order to demonstrate the functionality of Cloud Foundry.  The application is published on GiHhub and instructions for obtaining this application will be provided when required.
+The guide assumes that the reader has no experience with Cloud Foundry and does not understand what it means to push an application to a cloud native application platform.  This guide requires the AppFog functionality to be enabled on your CenturyLink Cloud account.  Later in this guide more detail will be provided on determining this setting.  This guide will use an application created and published by a third party named “spring-music” in order to demonstrate the functionality of Cloud Foundry.  The application is published on GitHub and instructions for obtaining this application will be provided when required.
 
 ### Steps
 
 #### 1. Install Java JDK
 
-Download and install the appropriate Java SE Development Kit, also known as Java JDK.  The download location is http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html.  This guide will use the Windows x64 version.
+[Download and install](http://www.oracle.com/technetwork/java/javase/downloads/index.html) the appropriate Java SE Development Kit, also known as Java JDK.  This guide will use the Windows x64 version
 
 ![Installing Java JDK](../images/Deploying-Your-First-Application-to-AppFog-Step-By-Step-01.png)
 
-Follow the standard installation steps, accepting all defaults.  This will install the Java application to C:\Program Files\Java\jre7.  After installation completes you will need to create two System variables.  These can be set by opening Control Panel – System – Advanced System Settings – Environment Variables.  You will add a new System Variable named “java_home” with the path “C:\Program Files\Java\jre7”.  Next you will modify the existing PATH variable to add the additional path, “C:\Program Files\Java\jre7” if it does not already exist.  Once complete you can open a new Command Prompt to ensure the command “Echo %java_home%” and “Echo %path% both return C:\Program Files\Java\jre7 in the response.
+Follow the standard installation steps, accepting all defaults.  This will install the Java application to `C:\Program Files\Java\jre1.8.0_121`.  After installation completes you will need to create two System variables.  These can be set by opening Control Panel – System – Advanced System Settings – Environment Variables.  You will add a new System Variable named “java_home” with the path `C:\Program Files\Java\jre1.8.0_121`.  Next you will modify the existing PATH variable to add the additional path, `C:\Program Files\Java\jre1.8.0_121` if it does not already exist.  Once complete you can open a new Command Prompt to ensure the command “Echo %java_home%” and “Echo %path% both return `C:\Program Files\Java\jre1.8.0_121` in the response.
 
 ![Configuring Java JDK Environment Variables](../images/Deploying-Your-First-Application-to-AppFog-Step-By-Step-02.png)
 
 #### 2.	Install Cloud Foundry CLI
 
-Download and install the appropriate Cloud Foundry CLI version.  The download location is https://github.com/cloudfoundry/cli.  This guide will use the Windows 64 bit Stable Installers bundle.  Install the bundle using all default settings.
+[Download and install](https://github.com/cloudfoundry/cli) the appropriate Cloud Foundry CLI version.  This guide will use the Windows 64 bit Stable Installers bundle.  Install the bundle using all default settings.
 
 ![Installing Cloud Foundry CLI](../images/Deploying-Your-First-Application-to-AppFog-Step-By-Step-03.png)
 
 #### 3. Install GitHub
 
-Download and install GitHub for Windows.  The download location is https://windows.github.com/. Install the application using all default settings.  
+[Download and install](https://windows.github.com/) GitHub for Windows. Install the application using all default settings.  
 
 ![Installing GitHub](../images/Deploying-Your-First-Application-to-AppFog-Step-By-Step-04.png)
 
