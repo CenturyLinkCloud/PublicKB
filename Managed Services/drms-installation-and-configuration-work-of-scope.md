@@ -34,7 +34,7 @@ Checkpoint is a recovery point used to perform test failover and failover of a p
 
 On the top banner of SafeHaven console, click *Administration*, then choose *email list*, the following window will prompt out. Add the new emial address to receive periodic DR reports.
 
-![editemail](../images/drms-checkpoint-interval.png)
+![editemail](../images/drms-edit-email.png)
 
 #### 6. Change the Built-in Disaster Recovery Plan
 
