@@ -12,7 +12,6 @@
 	- Regular test
 	- Regular audit
 	- At-time-of-disaster failover services
-	- Failback services
 	- Develop and maintain the runbook
 	- Application recovery services
 </p>
