@@ -11,7 +11,6 @@
 Deploy to AWS from Cloud Application Manager as follows.
 
 * For EC2 (Linux and Windows) use [deployment policies](../Automating Deployments/deploymentpolicy-box.md). Select a policy when you launch workloads from boxes.
-* For AWS RDS, AWS S3, AWS DynamoDB, and AWS Memcached, use readymade CloudFormation boxes.
 * For any other AWS service, configure a custom [CloudFormation box](../Automating Deployments/template-box.md).
 
 We orchestrate with AWS APIs in the backend to provision, install, and manage the lifecycle of your workloads based on the box configuration.
@@ -28,161 +27,222 @@ Before you deploy in AWS, you need to connect your AWS account in Cloud Applicat
 
 <iframe frameborder="0" height="316" src="//player.vimeo.com/video/126177639" width="561"></iframe>
 
-**Steps**
-1. Create a custom AWS policy and copy, paste these permissions and name it CAM_Policy:
+**Choosing the right policy**
 
-   ```
-   {
-   "Version":"2012-10-17",
-   "Statement":[
-   {
-        "Action":[
-            "autoscaling:CreateAutoScalingGroup",
-            "autoscaling:CreateLaunchConfiguration",
-            "autoscaling:DeleteAutoScalingGroup",
-            "autoscaling:DeleteLaunchConfiguration",
-            "autoscaling:DescribeScalingActivities",
-            "autoscaling:DescribeAutoScalingGroups",
-            "autoscaling:DescribeAutoScalingInstances",
-            "autoscaling:DescribeLaunchConfigurations",
-            "autoscaling:ResumeProcesses",
-            "autoscaling:SuspendProcesses",
-            "autoscaling:TerminateInstanceInAutoScalingGroup",
-            "autoscaling:UpdateAutoScalingGroup",
-            "cloudformation:CreateStack",
-            "cloudformation:DeleteStack",
-            "cloudformation:DescribeStackEvents",
-            "cloudformation:DescribeStackResource",
-            "cloudformation:DescribeStackResources",
-            "cloudformation:DescribeStacks",
-            "cloudformation:GetTemplate",
-            "cloudformation:ListStacks",
-            "cloudformation:ListStackResources",
-            "cloudformation:UpdateStack",
-            "cloudformation:ValidateTemplate",
-            "cloudwatch:DescribeAlarms",
-            "dynamodb:CreateTable",
-            "dynamodb:DeleteTable",
-            "dynamodb:DescribeTable",
-            "dynamodb:ListTables",
-            "ec2:AssociateAddress",
-            "ec2:AttachVolume",
-            "ec2:AllocateAddress",
-            "ec2:AuthorizeSecurityGroupEgress",
-            "ec2:AuthorizeSecurityGroupIngress",
-            "ec2:CopyImage",
-            "ec2:CreateImage",
-            "ec2:CreateSecurityGroup",
-            "ec2:CreateSnapshot",
-            "ec2:CreateSubnet",
-            "ec2:CreateTags",
-            "ec2:CreateVolume",
-            "ec2:DeleteSecurityGroup",
-            "ec2:DeleteSubnet",
-            "ec2:DeleteTags",
-            "ec2:DeleteVolume",
-            "ec2:DescribeAccountAttributes",
-            "ec2:DescribeAddresses",
-            "ec2:DescribeAvailabilityZones",
-            "ec2:DescribeImageAttribute",
-            "ec2:DescribeImages",
-            "ec2:DescribeInstanceAttribute",
-            "ec2:DescribeInstanceStatus",
-            "ec2:DescribeInstances",
-            "ec2:DescribeKeyPairs",
-            "ec2:DescribePlacementGroups",
-            "ec2:DescribeRegions",
-            "ec2:DescribeSecurityGroups",
-            "ec2:DescribeSubnets",
-            "ec2:DescribeTags",
-            "ec2:DescribeVolumeAttribute",
-            "ec2:DescribeVolumeStatus",
-            "ec2:DescribeVolumes",
-            "ec2:DescribeVpcAttribute",
-            "ec2:DescribeVpcs",
-            "ec2:DescribeVpnConnections",
-            "ec2:DetachVolume",
-            "ec2:RebootInstances",
-            "ec2:RegisterImage",
-            "ec2:ReleaseAddress",
-            "ec2:RevokeSecurityGroupEgress",
-            "ec2:RevokeSecurityGroupIngress",
-            "ec2:RunInstances",
-            "ec2:StartInstances",
-            "ec2:StopInstances",
-            "ec2:TerminateInstances",
-            "ecs:ListClusters",
-            "elasticache:*",
-            "elasticloadbalancing:CreateLoadBalancer",
-            "elasticloadbalancing:CreateLoadBalancerPolicy",
-            "elasticloadbalancing:DeleteLoadBalancer",
-            "elasticloadbalancing:DeleteLoadBalancerPolicy",
-            "elasticloadbalancing:DeregisterInstancesFromLoadBalancer",
-            "elasticloadbalancing:DescribeInstanceHealth",
-            "elasticloadbalancing:DescribeLoadBalancerPolicies",
-            "elasticloadbalancing:DescribeLoadBalancers",
-            "elasticloadbalancing:RegisterInstancesWithLoadBalancer",
-            "elasticloadbalancing:SetLoadBalancerPoliciesOfListener",
-            "elasticloadbalancing:ModifyLoadBalancerAttributes",
-            "elasticloadbalancing:ConfigureHealthCheck",
-            "iam:CreateUser",
-            "iam:DeleteUser",
-            "iam:ListAccessKeys",
-            "iam:ListUserPolicies",
-            "iam:ListServerCertificates",
-            "iam:PutUserPolicy",
-            "iam:GetUser",
-            "iam:CreateAccessKey",
-            "iam:DeleteUserPolicy",
-            "iam:DeleteAccessKey",
-            "iam:PassRole",
-            "iam:ListRoles",
-            "iam:ListInstanceProfilesForRole",
-            "rds:AuthorizeDBSecurityGroupIngress",
-            "rds:AddTagsToResource",
-            "rds:CreateDBInstance",
-            "rds:CreateDBSecurityGroup",
-            "rds:CreateDBSnapshot",
-            "rds:DeleteDBInstance",
-            "rds:DeleteDBSecurityGroup",
-            "rds:DeleteDBSnapshot",
-            "rds:DescribeDBInstances",
-            "rds:DescribeDBParameterGroups",
-            "rds:DescribeDBParameters",
-            "rds:DescribeDBSecurityGroups",
-            "rds:DescribeDBSnapshots",
-            "rds:DescribeDBEngineVersions",
-            "rds:DescribeDBSubnetGroups",
-            "rds:DescribeOptionGroups",
-            "rds:ModifyDBInstance",
-            "rds:ModifyDBSubnetGroup",
-            "rds:RebootDBInstance",
-            "rds:RemoveTagsFromResource",
-            "rds:RestoreDBInstanceFromDBSnapshot",
-            "rds:RevokeDBSecurityGroupIngress",
-            "s3:CreateBucket",
-            "s3:DeleteBucket",
-            "s3:DeleteBucketPolicy",
-            "s3:GetBucketAcl",
-            "s3:GetBucketCORS",
-            "s3:GetBucketLocation",
-            "s3:ListAllMyBuckets",
-            "s3:ListBucket",
-            "s3:PutBucketAcl",
-            "s3:PutBucketCORS",
-            "s3:PutBucketPolicy",
-            "s3:PutBucketTagging",
-            "sts:AssumeRole"
-        ],
-        "Sid":"Stmt1378777340000",
-        "Resource":[
-   "*"
-        ],
-        "Effect":"Allow"
-   }
-   ]
-   }
-   ```
+The AWS IAM Policy regulates what Cloud Application Manager is allowed to do and see from your account. Depending on your usage you might want to restrict more or less the operations allowed.
+
+To be able to deploy AWS CloudFormation you will need to have the appropriated permissions in the policy, so you should give access to the services you are planning to use.
+
+For example, if you are planning to deploy RDS and ElastiCache from CloudFormation templates, it useful to give the permissions for: rds:\* and elasticache:\*
+
+Here is an example of a common policy that give access to some AWS services but not all:
+
+```
+{
+"Version": "2012-10-17",
+"Statement": [
+{
+    "Action": [
+        "autoscaling:*",
+        "cloudformation:*",
+        "cloudwatch:DescribeAlarms",
+        "dynamodb:*",
+        "ec2:*",
+        "ecs:ListClusters",
+        "elasticache:*",
+        "elasticloadbalancing:*",
+        "iam:CreateUser",
+        "iam:DeleteUser",
+        "iam:ListAccessKeys",
+        "iam:ListUserPolicies",
+        "iam:ListServerCertificates",
+        "iam:PutUserPolicy",
+        "iam:GetUser",
+        "iam:CreateAccessKey",
+        "iam:DeleteUserPolicy",
+        "iam:DeleteAccessKey",
+        "iam:PassRole",
+        "iam:ListRoles",
+        "iam:ListInstanceProfilesForRole",
+        "rds:*",
+        "route53:*",
+        "route53domains:*",
+        "s3:*",
+        "sns:*",
+        "sts:AssumeRole",
+        "support:*"
+    ],
+    "Sid": "Stmt1378777340000",
+    "Resource": [
+        "*"
+    ],
+    "Effect": "Allow"
+}
+]
+}
+```
+
+The full list of possible actions is described [here](http://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_actionsconditions.html).
+
+If you are not planning to use CloudFormation template boxes and you want to use Script Boxes and Deployment Policy Boxes, here is the minimal policy required for them to work:
+
+```
+{
+"Version": "2012-10-17",
+"Statement": [
+{
+    "Action": [
+        "autoscaling:CreateAutoScalingGroup",
+        "autoscaling:CreateLaunchConfiguration",
+        "autoscaling:DeleteAutoScalingGroup",
+        "autoscaling:DeleteLaunchConfiguration",
+        "autoscaling:DescribeScalingActivities",
+        "autoscaling:DescribeAutoScalingGroups",
+        "autoscaling:DescribeAutoScalingInstances",
+        "autoscaling:DescribeLaunchConfigurations",
+        "autoscaling:ResumeProcesses",
+        "autoscaling:SuspendProcesses",
+        "autoscaling:TerminateInstanceInAutoScalingGroup",
+        "autoscaling:UpdateAutoScalingGroup",
+        "cloudformation:CreateStack",
+        "cloudformation:DeleteStack",
+        "cloudformation:DescribeStackEvents",
+        "cloudformation:DescribeStackResource",
+        "cloudformation:DescribeStackResources",
+        "cloudformation:DescribeStacks",
+        "cloudformation:GetTemplate",
+        "cloudformation:ListStacks",
+        "cloudformation:ListStackResources",
+        "cloudformation:UpdateStack",
+        "cloudformation:ValidateTemplate",
+        "cloudwatch:DescribeAlarms",
+        "dynamodb:CreateTable",
+        "dynamodb:DeleteTable",
+        "dynamodb:DescribeTable",
+        "dynamodb:ListTables",
+        "ec2:AssociateAddress",
+        "ec2:AttachVolume",
+        "ec2:AllocateAddress",
+        "ec2:AuthorizeSecurityGroupEgress",
+        "ec2:AuthorizeSecurityGroupIngress",
+        "ec2:CopyImage",
+        "ec2:CreateImage",
+        "ec2:CreateSecurityGroup",
+        "ec2:CreateSnapshot",
+        "ec2:CreateSubnet",
+        "ec2:CreateTags",
+        "ec2:CreateVolume",
+        "ec2:DeleteSecurityGroup",
+        "ec2:DeleteSubnet",
+        "ec2:DeleteTags",
+        "ec2:DeleteVolume",
+        "ec2:DescribeAccountAttributes",
+        "ec2:DescribeAddresses",
+        "ec2:DescribeAvailabilityZones",
+        "ec2:DescribeImageAttribute",
+        "ec2:DescribeImages",
+        "ec2:DescribeInstanceAttribute",
+        "ec2:DescribeInstanceStatus",
+        "ec2:DescribeInstances",
+        "ec2:DescribeKeyPairs",
+        "ec2:DescribePlacementGroups",
+        "ec2:DescribeRegions",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeTags",
+        "ec2:DescribeVolumeAttribute",
+        "ec2:DescribeVolumeStatus",
+        "ec2:DescribeVolumes",
+        "ec2:DescribeVpcAttribute",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeVpnConnections",
+        "ec2:DetachVolume",
+        "ec2:RebootInstances",
+        "ec2:RegisterImage",
+        "ec2:ReleaseAddress",
+        "ec2:RevokeSecurityGroupEgress",
+        "ec2:RevokeSecurityGroupIngress",
+        "ec2:RunInstances",
+        "ec2:StartInstances",
+        "ec2:StopInstances",
+        "ec2:TerminateInstances",
+        "ecs:ListClusters",
+        "elasticache:*",
+        "elasticloadbalancing:CreateLoadBalancer",
+        "elasticloadbalancing:CreateLoadBalancerPolicy",
+        "elasticloadbalancing:DeleteLoadBalancer",
+        "elasticloadbalancing:DeleteLoadBalancerPolicy",
+        "elasticloadbalancing:DeregisterInstancesFromLoadBalancer",
+        "elasticloadbalancing:DescribeInstanceHealth",
+        "elasticloadbalancing:DescribeLoadBalancerPolicies",
+        "elasticloadbalancing:DescribeLoadBalancers",
+        "elasticloadbalancing:RegisterInstancesWithLoadBalancer",
+        "elasticloadbalancing:SetLoadBalancerPoliciesOfListener",
+        "elasticloadbalancing:ModifyLoadBalancerAttributes",
+        "elasticloadbalancing:ConfigureHealthCheck",
+        "iam:CreateUser",
+        "iam:DeleteUser",
+        "iam:ListAccessKeys",
+        "iam:ListUserPolicies",
+        "iam:ListServerCertificates",
+        "iam:PutUserPolicy",
+        "iam:GetUser",
+        "iam:CreateAccessKey",
+        "iam:DeleteUserPolicy",
+        "iam:DeleteAccessKey",
+        "iam:PassRole",
+        "iam:ListRoles",
+        "iam:ListInstanceProfilesForRole",
+        "rds:AuthorizeDBSecurityGroupIngress",
+        "rds:AddTagsToResource",
+        "rds:CreateDBInstance",
+        "rds:CreateDBSecurityGroup",
+        "rds:CreateDBSnapshot",
+        "rds:DeleteDBInstance",
+        "rds:DeleteDBSecurityGroup",
+        "rds:DeleteDBSnapshot",
+        "rds:DescribeDBInstances",
+        "rds:DescribeDBParameterGroups",
+        "rds:DescribeDBParameters",
+        "rds:DescribeDBSecurityGroups",
+        "rds:DescribeDBSnapshots",
+        "rds:DescribeDBEngineVersions",
+        "rds:DescribeDBSubnetGroups",
+        "rds:DescribeOptionGroups",
+        "rds:ModifyDBInstance",
+        "rds:ModifyDBSubnetGroup",
+        "rds:RebootDBInstance",
+        "rds:RemoveTagsFromResource",
+        "rds:RestoreDBInstanceFromDBSnapshot",
+        "rds:RevokeDBSecurityGroupIngress",
+        "s3:CreateBucket",
+        "s3:DeleteBucket",
+        "s3:DeleteBucketPolicy",
+        "s3:GetBucketAcl",
+        "s3:GetBucketCORS",
+        "s3:GetBucketLocation",
+        "s3:ListAllMyBuckets",
+        "s3:ListBucket",
+        "s3:PutBucketAcl",
+        "s3:PutBucketCORS",
+        "s3:PutBucketPolicy",
+        "s3:PutBucketTagging",
+        "sts:AssumeRole",
+        "support:*"
+    ],
+    "Sid": "Stmt1378777340000",
+    "Resource": [
+        "*"
+    ],
+    "Effect": "Allow"
+}
+]
+}
+```
+
+**Create an IAM Role with the Policy chosen**
+
+1. Create a custom AWS policy and copy, paste the permissions chosen before and name it CAM_Policy. You can edit these permissions before if some deployment fails because of the lack of permissions.
 
 2. Create an IAM role with the role type of **Role for cross-account access**, and the Specific role is **Provide access between you AWS account and a 3rd party AWS account**. Then, add this information and attach the policy.
    * Account ID: 540339316802
@@ -203,14 +263,10 @@ By default, Cloud Application Manager makes the latest AWS Linux and Windows AMI
 ### Deploy to Your AWS Account
 When you deploy a box, we show [deployment policies](../Automating Deployments/deploymentpolicy-box.md) whose claims match the required tags of the box.
 
-RDS, S3, DynamoDB, and Memcached are CloudFormation boxes. To deploy to an RDS service, such as MySQL, MS SQL, Oracle, or PostgresSQL, configure its CloudFormation box.
+RDS, DynamoDB, and Memcached are CloudFormation boxes. To deploy to an RDS service, such as MySQL, MS SQL, Oracle, or PostgresSQL, configure its CloudFormation box.
 
 * EC2 (Linux and Windows)
 * AWS ECS
-* AWS RDS
-* AWS S3
-* AWS DynamoDB
-* AWS Memcached
 * AWS CloudFormation
 
 **Note:** If your AWS account has new AMIs, key pairs, security groups, and the like, you must sync with the AWS account in Cloud Application Manager to pick up all the changes.
@@ -374,87 +430,34 @@ ebcli post “<docker image>”
 
 Deploy the instance as you would do for a regular deployment, but instead, select the previously created deployment profile. The box will be deployed as a container within the ECS cluster selected in the Deployment Policy.
 
-### AWS RDS
+### Shutdown and Terminate Instances in AWS
 
-In Cloud Application Manager, RDS services are available as CloudFormation boxes. To define an RDS service like MySQL, go to the Boxes page. Click **New** > **Template Box**. Under Managed Boxes, select **MySQL Database**. Select an AWS provider account registered in Cloud Application Manager.
+As soon as the state of an instance changes to shutdown or terminated, you stop incurring charges for that instance.
 
-In the same way, you can define other RDS services like MS SQL, Oracle, or PostgresSQL. Configure the RDS service with these options.
+**Shutdown Instance**
 
-**Note:** Under **Variables**, specify a user and password to be able to log in to the instance. And also specify a port to let the database instance communicate over the network.
+When a shutdown operation is executed from Cloud Application Manager, the instance is stopped. AWS don't charge hourly usage for a stopped instance, or data transfer fees, but AWS do charge for the storage for any Amazon EBS volumes. Each time you start a stopped instance AWS charge a full instance hour, even if you make this transition multiple times within a single hour.
 
-| Deployment Option | Description |
-|-------------------|-------------|
-| Provider | Select an AWS account for the provider that you added in Cloud Application Manager. |
-| Region | Select the region where you want to create the instance, for example, us-east-1. |
-| Engine | Available for MS SQL and MySQL database services. Select the edition of the database engine from the list that AWS supports, such as mysql5.5 or sqlserver-ex. |
-| Engine Version | Select a supported AWS version of the selected database engine. |
-| Param Group |	Values to configure the RDS database service are stored in the parameter group. If you didn’t set up one in AWS that you can select here, AWS uses a default parameter group with default values, such as default.mysql5.5 or default.sqlserver-ex-11.0. |
-| Option Group | Additional database options including encryption can be set in an option group that you create in AWS and then select here. Otherwise , AWS uses a default option group, such as default:oracle-se1-11-2. |
-| Instance Type | Select an instance class that’s determined by compute and memory size from the list that AWS provides, for example, db.t1.micro. |
-| Snapshot | If you take database snapshots in AWS, select one to launch the instance based on the snapshot. |
-| Allocated Storage | Choose the amount of storage for your data in GB or go with the minimum set by AWS. |
-| Cloud | Select to deploy an instance in EC2 or in a VPC that you created in AWS. |
-| Availability Zone | Select an availability zone, such as us-east-1a if deploying to EC2 or select a subnet if deploying to your VPC. |
-| Security Group | In AWS, if you created a security group to manage network access to your instance, select the group. Else, select **Automatic**. Cloud Application Manager creates a security group that only allows access to those instances that have a binding to this database instance. |
-| Upgrade Version |	Turn on to be able to upgrade to major versions of the database engine. |
-| IOPS | Turn on to use Provisioned IOPS for the database instance. Cloud Application Manager sets the IOPS rate at a ratio of 10 to 1 unit of allocated storage in GB. For example, if you allocated 10 GB of storage then IOPS is set at 100 input/output reads per second. |
-| Final Snapshot | Turn on to take a final snapshot of the database instance before deleting it with a terminate operation. This lets you restore the deleted instance later. |
-| Automatic Backups | Customize a preferred window for AWS to take automatic daily backups of your instance. If you don’t turn this on, by default, AWS backs up your data for a day. This is also where you tell AWS when to perform weekly maintenance. |
+While the instance is stopped, you can treat its root volume like any other volume, and modify it.
 
+You can modify the following attributes of an instance only when it is stopped:
 
-### AWS S3
+* Instance type
+* User data
+* Kernel
+* RAM disk
 
-In Cloud Application Manager, S3 is a readymade CloudFormation box. To define an S3 bucket, go to the Boxes page. Click **New** > **Template Box**. Under Managed Boxes, select **S3 Bucket**. Select an AWS provider account registered in Cloud Application Manager.
+**Terminate Instance**
 
-Configure the S3 bucket with these options. Select a port (usually 80) through which the storage instance communicates over the network.
+When you terminate an instance, the whole history of the instance is kept in Cloud Application Manager and you can use it as a reference for other instances, to copy the variables or to clone the instance. The instance in AWS is terminated.
 
-![aws-s3bucket-cloudformationbox-5.png](../../images/cloud-application-manager/aws-s3bucket-cloudformationbox-5.png)
+After you terminate an instance, it remains visible in the AWS console for a short while, and then the entry is automatically deleted. After an instance is terminated, resources such as tags and volumes are gradually disassociated from the instance.
 
-| Deployment Option | Description |
-|-------------------|-------------|
-| Provider | Select an AWS account for the provider that you added in Cloud Application Manager. |
-| Region | Select the region where you want to create the storage instance, for example, us-east-1. |
+When an instance terminates, the data on any instance store and EBS volumes associated with that instance are deleted.
 
-### AWS DynamoDB
+You can't connect to, restart or recover an instance after you've terminated it.
 
-In Cloud Application Manager, DynamoDB is a readymade CloudFormation box. To define a DynamoDB service, go to the Boxes page. Click **New** > **Template Box**. Under Managed Boxes, select **DynamoDB**. Select an AWS provider account registered in Cloud Application Manager.
-
-Configure DynamoDB with these options. Select a port (usually 80) through which the database instance communicates over the network.
-
-| Deployment Option | Description |
-|-------------------|-------------|
-| Provider | Select an AWS account for the provider that you added in Cloud Application Manager. |
-| Region | Select the region where you want to create the instance, for example, us-east-1. |
-| Read Throughput |	Specify the number of data reads per second on the DynamoDB instance. |
-| Write Throughput | Specify the number of data writes per second on the DynamoDB instance. |
-| Hash Key Type | Select a hash key of type number, binary, or string to define the primary key for the DynamoDB table. |
-| Hash Key Name | Select an attribute name for the hash key type such as ID, Customer ID, User ID, or ForumName. |
-| Range Key Type | Optionally, select a range key type if you’re defining the primary key to combine both hash and range attributes. This can be a number, string, or binary. |
-| Range Key Name | If you selected a range key type, give it a name like Subject or ReplyDateTime. |
-
-### AWS Memcached
-
-in Cloud Application Manager, memcached is a readymade CloudFormation box. To define a memcached service, go to the Boxes page. Click **New** > **Template Box**. Under Managed Boxes, select **Memcached**. Select an AWS provider account registered in Cloud Application Manager.
-
-The memcached box adds in-memory caching for your application. By deploying through Cloud Application Manager an application deployed on another cloud can take advantage of the caching service in AWS ElastiCache. To connect to the memcached service from another application use a binding. You need the cache cluster hostname and port from the binding to connect. When launching, use the default port 11211 or specify another value to allow inbound or outbound calls to the nodes in the cache cluster.
-
-Refer to these options to configure a memcached service through Cloud Application Manager. We set defaults for settings like the cache subnet group, which you can select if you have a VPC.
-
-![aws-deploymentpolicy-memcached-6.png](../../images/cloud-application-manager/aws-deploymentpolicy-memcached-6.png)
-
-| Deployment Option | Description |
-|-------------------|-------------|
-| Provider | The name or GUID of the Google Cloud provider account in Cloud Application Manager. If you don’t have access to the provider account, you see the GUID. |
-| Region | Select the location in AWS EC2 to launch the memcached service.|
-| Engine Version | Select the version of the cache software to use for the cache cluster.|
-| Param Group |	Select a parameter group you created for the AWS account or use the [default group](//docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/CacheParameterGroups.Memcached.html) that AWS creates based on the engine version you selected. The parameters control how the cache node behaves at runtime. |
-| Instance Type | Select the cache memory capacity per node. |
-| Nodes | Select the number of cache nodes to launch for the service. |
-| Cloud | Select whether to launch the cache cluster in the default EC2 VPC or in a VPC you created. |
-| Availability Zone | Select an availability zone or VPC subnet group for the cache cluster. |
-| Security Groups |	Select a cache security group to control access from specific hosts to your cache cluster. If you don’t already have a group for the AWS account, pick **Automatic**. This triggers AWS to create a default group. |
-| Upgrade Version |	Turn it **ON** to let AWS handle scheduled minor patches and upgrades in the cache cluster. |
-| Automatic Backups | Customize a preferred window for AWS to take automatic daily backups of your memcached instance. If you don’t turn this on, by default, AWS backs up your data for a day. This is also where you tell AWS when to perform weekly maintenance. |
+Before you terminate the instance, verify that you won't lose any data by checking that your Amazon EBS volumes won't be deleted on termination and that you've copied any data that you need from your instance store volumes to Amazon EBS or Amazon S3.
 
 ### Contacting Cloud Application Manager Support
 
