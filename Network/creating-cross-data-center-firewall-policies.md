@@ -3,50 +3,55 @@
   "date": "9-23-2016",
   "author": "",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
-<h3>Creating Cross Data Center Firewall Policies</h3>
-<p>In addition to being able to connect networks within a particular data center through&nbsp;<a href="connecting-data-center-networks-through-firewall-policies.md">Intra Data Center firewall policies</a>,
-  users can also create firewall policies that span cloud data centers. This helps enterprises build sophisticated and secure network topologies that take advantage of our global footprint while meeting an organization's functional needs.</p>
-<h3>General Notes</h3>
-<ul>
-  <li>In the current iteration customers cannot apply Firewall ACL's to traffic traversing cross data center policies.</li>
-  <li>Each CenturyLink Cloud Data Center location provides unique private IP networks to customers. This eliminates the risk of overlapping IP space, hence no NAT is required in the implementation.</li>
-</ul>
-<h3><strong>Detailed Steps</strong></h3>
-<p><strong><br /></strong>1. <a href="https://www.ctl.io/knowledge-base/network/creating-and-deleting-vlans/">Create network VLAN(s)</a>&nbsp;in each of the respective CenturyLink Cloud Data Centers.</p>
-<p>2. Validate the networks are in place in your CenturyLink Cloud account using the&nbsp;<strong>Networks&nbsp;</strong>menu item and selecting the appropriate Data Center. In the sample below, networks exists in both UC1 (Santa Clara) &amp;
-  DE1 (Germany). </p>
-<p><img src="https://t3n.zendesk.com/attachments/token/GyMTPFj5yNAuMs8gwXVUKExEZ/?name=01.png" alt="01.png" />
-</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/SMHQWeIGnCKI1DxPqO05vmMM1/?name=02.png" alt="02.png" />
-</p>
-<p><strong>OPTIONAL: &nbsp;Perform a test ICMP ping between virtual instances private IP addresses in different Cloud Data Centers. This test should fail as no Cross Data Center Firewall Rule is in place between networks in UC1 &amp; DE1.</strong>
-</p>
-<p><strong><img src="https://t3n.zendesk.com/attachments/token/7xDTkGLoXpfTOtPRF5DLFhOye/?name=09.png" alt="09.png" /></strong>
-</p>
-<p><strong><br /></strong>3. Using the left side navigation bar, click on **Network** > **Firewall**.
+###Creating Cross Data Center Firewall Policies
+In addition to being able to connect networks within a particular data center through [Intra Data Center](../connecting-data-center-networks-through-firewall-policies.md) firewall policies, users can also create firewall policies that span cloud data centers. This helps enterprises build sophisticated and secure network topologies that take advantage of our global footprint while meeting an organization's functional needs.
+
+###General Notes
+ * In the current iteration customers cannot apply Firewall ACL's to traffic traversing cross data center policies.
+ * Each CenturyLink Cloud Data Center location provides unique private IP networks to customers. This eliminates the risk of overlapping IP space, hence no NAT is required in the implementation.
+
+###Connecting Networks within a Single Account
+1. [Create network VLAN(s)](../creating-and-deleting-vlans.md) in each of the respective CenturyLink Cloud Data Centers.
+2. Validate the networks are in place in your CenturyLink Cloud account using the **Network** menu item and selecting the appropriate Data Center. In the sample below, networks exists in both UC1 (Santa Clara) & DE1 (Germany).
+
+  !validate network(../images/creating-cross-data-center-firewall-policies-01.png)
+
+  !validate network(../images/creating-cross-data-center-firewall-policies-02.png)
+
+**OPTIONAL:** Perform a test ICMP ping between virtual instances private IP addresses in different Cloud Data Centers. This test should fail as no Cross Data Center Firewall Rule is in place between networks in UC1 & DE1.
+
+  !ping test fail(../images/creating-cross-data-center-firewall-policies-03.png)
+
+3. Using the left side navigation bar, click on **Network** > **Firewall**.
 
   ![Navigate to Firewall](../images/firewall.png)
-<p>4. Select&nbsp;<strong>Either</strong>&nbsp;the source or destination CenturyLink Cloud Data Center node (as policies when applied are two-way rules). Next, choose to the&nbsp;<strong>Cross Data Center</strong>&nbsp;tab.</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/tGm0I9fmyLqfoSryqlOZ3ec6J/?name=04.png" alt="04.png" />
-</p>
-<p>5. Choose&nbsp;<strong>Add Policy, Set Local Address</strong>.</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/ZosfcyVHiBisY80dKQvzcvX6F/?name=05.png" alt="05.png" />
-</p>
-<p>6. Select the appropriate network or CIDR IP range for the local address(es). In this example, we are using the entire 10.120.69.0/24 network block for a local address in UC1.</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/gwgsREn2menIBpXzip0eEN150/?name=06.png" alt="06.png" />
-</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/anfgznJYPCTz1bawmJIkwebMJ/?name=07.png" alt="07.png" />
-</p>
-<p>7. Choose&nbsp;<strong>Set Remote Address(es). </strong>Select the appropriate network or CIDR IP range for the remote address(es). In this example, we are using the entire 10.110.226.0/24 network block for a remote address in DE1.</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/OegJVdmynpVnbllAXveAinPOq/?name=08.png" alt="08.png" />
-</p>
-<p>8. Once complete, press the&nbsp;<strong>Save</strong>&nbsp;button. Your new Cross Data Center Rule will take &lt;60 seconds to process in the Queue. You can review its progress using the Queue Menu item. </p>
-<p><img src="https://t3n.zendesk.com/attachments/token/haES1hGoEFg4Zt8RznoVleB5x/?name=10.png" alt="10.png" />
-</p>
-<p>9. Confirm the Cross Data Center Firewall Policy is functional by performing another ICMP ping test between virtual instances located in the (2) networks in different Data Center nodes. In this example, we are able to ping a virtual instances
-  in Germany (DE1) from Santa Clara (UC1). </p>
-<p><img src="https://t3n.zendesk.com/attachments/token/AzjfOwBAWjigeEC82VMxAAPpU/?name=11.png" alt="11.png" />
-</p>
+  
+4. Select **Either** the source or destination CenturyLink Cloud Data Center node (as policies when applied are two-way rules). Next, choose to the **Cross Data Center** tab.
+
+  !cross DC tab(../images/creating-cross-data-center-firewall-policies-04.png)
+
+5. Choose **Add Policy**, **Set Local Address**.
+
+  !Add Policy(../images/creating-cross-data-center-firewall-policies-05.png)
+
+6. Select the appropriate network or CIDR IP range for the local address(es). In this example, we are using the entire 10.120.69.0/24 network block for a local address in UC1.
+
+  !CIDR range(../images/creating-cross-data-center-firewall-policies-06.png)
+
+  !CIDR range(../images/creating-cross-data-center-firewall-policies-07.png)
+
+7. Choose **Set Remote Address(es)**. Select the appropriate network or CIDR IP range for the remote address(es). In this example, we are using the entire 10.110.226.0/24 network block for a remote address in DE1.
+
+  !CIDR range(../images/creating-cross-data-center-firewall-policies-08.png)
+
+8. Once complete, press the **Save** button. Your new Cross Data Center Rule will take about 60 seconds to process in the Queue. You can review its progress using the Queue Menu item.
+
+  !Policy complete(../images/creating-cross-data-center-firewall-policies-09.png)
+
+9. Confirm the Cross Data Center Firewall Policy is functional by performing another ICMP ping test between virtual instances located in the two networks in different Data Center nodes. In this example, we are able to ping a virtual instances in Germany (DE1) from Santa Clara (UC1).
+
+!Successful ping(../images/creating-cross-data-center-firewall-policies-10.png)
+
