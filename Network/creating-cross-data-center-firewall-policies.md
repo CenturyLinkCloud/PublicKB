@@ -8,7 +8,7 @@
 
 ### Creating Cross Data Center Firewall Policies
 
-In addition to being able to connect networks within a particular data center through [Intra Data Center](../network/connecting-data-center-networks-through-firewall-policies.md) firewall policies, users can also create firewall policies that span cloud data centers. This helps enterprises build sophisticated and secure network topologies that take advantage of our global footprint while meeting an organization's functional needs.
+In addition to being able to connect networks within a particular data center through [Intra Data Center](../Network/connecting-data-center-networks-through-firewall-policies.md) firewall policies, users can also create firewall policies that span cloud data centers. This helps enterprises build sophisticated and secure network topologies that take advantage of our global footprint while meeting an organization's functional needs.
 
 ### General Notes
 
@@ -17,7 +17,7 @@ In addition to being able to connect networks within a particular data center th
 
 ### Connecting Networks within a Single Account
 
-1. [Create network VLAN(s)](../network/creating-and-deleting-vlans.md) in each of the respective CenturyLink Cloud Data Centers.
+1. [Create network VLAN(s)](../Network/creating-and-deleting-vlans.md) in each of the respective CenturyLink Cloud Data Centers.
 2. Validate the networks are in place in your CenturyLink Cloud account using the **Network** menu item and selecting the appropriate Data Center. In the sample below, networks exists in both UC1 (Santa Clara) & DE1 (Germany).
 
   ![validate network](../images/creating-cross-data-center-firewall-policies-01.png)
