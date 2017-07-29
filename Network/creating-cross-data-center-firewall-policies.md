@@ -8,7 +8,7 @@
 
 ### Creating Cross Data Center Firewall Policies
 
-In addition to being able to connect networks within a particular data center through [Intra Data Center](../connecting-data-center-networks-through-firewall-policies.md) firewall policies, users can also create firewall policies that span cloud data centers. This helps enterprises build sophisticated and secure network topologies that take advantage of our global footprint while meeting an organization's functional needs.
+In addition to being able to connect networks within a particular data center through [Intra Data Center](../network/connecting-data-center-networks-through-firewall-policies.md) firewall policies, users can also create firewall policies that span cloud data centers. This helps enterprises build sophisticated and secure network topologies that take advantage of our global footprint while meeting an organization's functional needs.
 
 ### General Notes
 
@@ -17,7 +17,7 @@ In addition to being able to connect networks within a particular data center th
 
 ### Connecting Networks within a Single Account
 
-1. [Create network VLAN(s)](../creating-and-deleting-vlans.md) in each of the respective CenturyLink Cloud Data Centers.
+1. [Create network VLAN(s)](../network/creating-and-deleting-vlans.md) in each of the respective CenturyLink Cloud Data Centers.
 2. Validate the networks are in place in your CenturyLink Cloud account using the **Network** menu item and selecting the appropriate Data Center. In the sample below, networks exists in both UC1 (Santa Clara) & DE1 (Germany).
 
   ![validate network](../images/creating-cross-data-center-firewall-policies-01.png)
@@ -60,15 +60,15 @@ In addition to being able to connect networks within a particular data center th
   
 ### Connecting Networks Across a Parent & Sub-Account Hierarchy
 
-1. Create the appropriate Parent & Sub-Account Hierarchy.  Refer to the [Account Hierarchy Primer](../Accounts & Users/account-hierarchy-user-network-and-firewall-policy-primer.md) for more information. **Note**, policies between sub-accounts must be made from the shared **parent account**.
+1. Create the appropriate Parent & Sub-Account Hierarchy. Refer to the [Account Hierarchy Primer](../Accounts & Users/account-hierarchy-user-network-and-firewall-policy-primer.md) for more information. **Note**, policies between sub-accounts must be made from the shared **parent account**.
 
 2. Create network VLAN(s) in the respective CenturyLink Cloud Data Center and Accounts.  We recommend [applying friendly names](../Network/add-a-user-friendly-name-to-vlans.md) to Networks.
 
 3. Validate the networks are in place in your CenturyLink Cloud accounts using the Networks menu item and selecting the appropriate Data Center.  In the sample below, a "Web Services" network in NY1 & a "DB VLAN" network in IL1 under unique Accounts.  
 
-  ![Web VLAN](../images/creating-cross-data-center-firewall-policies-11.png)
+  ![Web VLAN](../images/creating-cross-data-center-firewall-policies-11.PNG)
 
-  ![DB VLAN](../images/creating-cross-data-center-firewall-policies-12.png)
+  ![DB VLAN](../images/creating-cross-data-center-firewall-policies-12.PNG)
 
 4. Create Virtual Instances within the appropriate network (VLAN). In this example, we have created two VMs as follows
 
@@ -79,7 +79,7 @@ In addition to being able to connect networks within a particular data center th
 
   **OPTIONAL:** Perform a test ICMP ping between the web server (Sub-account 1) & database server (Sub-account 2).  This test should fail as no Firewall Rule is in place between these networks in NY1 and IL1.
 
-![Ping Test](../images/creating-cross-data-center-firewall-policies-pingfail.png)  
+![Ping Test](../images/creating-cross-data-center-firewall-policies-pingfail.PNG)  
 
 5. From the **parent account**, using the left side navigation bar, click on **Network** > **Firewall**.
 
@@ -89,29 +89,29 @@ In addition to being able to connect networks within a particular data center th
 
 7. Choose the desired **Source Account** and **Destination Account** in which the desired networks reside.  In this example, in NY1 we chose Sub-account 1 and Sub-account 2.  
 
-  ![Source & Destination Accounts](../images/creating-cross-data-center-firewall-policies-13.png)
+  ![Source & Destination Accounts](../images/creating-cross-data-center-firewall-policies-13.PNG)
 
 8. Choose **Add Policy**, then **Set Local Address**.
 
-  ![Add Source Address](../images/creating-cross-data-center-firewall-policies-14.png)
+  ![Add Source Address](../images/creating-cross-data-center-firewall-policies-14.PNG)
 
 9. Select the appropriate source network followed by the subnet size.  Customers can choose to do an entire network (VLAN), CIDR blocks or individual IPs in the rule set.  In this example, we are choosing the Web Services (10.72.206.0/24) network and the entire /24 range of the subnet.
 
-  ![Select Source Network](../images/creating-cross-data-center-firewall-policies-15.png)
+  ![Select Source Network](../images/creating-cross-data-center-firewall-policies-15.PNG)
 
-  ![Source Network Complete](../images/creating-cross-data-center-firewall-policies-16.png)
+  ![Source Network Complete](../images/creating-cross-data-center-firewall-policies-16.PNG)
 
 10. Choose **Select Remote Address**.  Select the appropriate destination network followed by the subnet size.  Customers can choose to do an entire network (VLAN), CIDR blocks or individual IPs in the rule set.  In this example, we are choosing the DB VLAN (10.99.18.0/24) network and the individual DB VM (10.99.18.12) for this rule set.
 
-  ![Select Destination Network](../images/creating-cross-data-center-firewall-policies-17.png)
+  ![Select Destination Network](../images/creating-cross-data-center-firewall-policies-17.PNG)
 
 
 11. Once complete, press the **Save** button.  Your new Cross Data Center Rule will take on average about 60 seconds to process in the Queue.  You can review its progress using the Queue Menu item.
 
-  ![Firewall Rule Complete](../images/creating-cross-data-center-firewall-policies-18.png)
+  ![Firewall Rule Complete](../images/creating-cross-data-center-firewall-policies-18.PNG)
 
 12. Confirm the Cross Data Center Firewall Policy is functional by performing an ICMP Ping test between virtual instances located in the two networks.  In this example, we are able to ping from the Web VM (10.72.206.12) to the DB VM (10.99.18.12).  
 
-  ![Ping Test](../images/creating-cross-data-center-firewall-policies-19.png)
+  ![Ping Test](../images/creating-cross-data-center-firewall-policies-19.PNG)
 
 
