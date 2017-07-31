@@ -1,6 +1,6 @@
 {{{
   "title": "Configure Disaster Recovery Management Service",
-  "date": "25-07-2017",
+  "date": "07-31-2017",
   "author": "Shasha Zhu",
   "attachments": [],
   "contentIsHTML": false
