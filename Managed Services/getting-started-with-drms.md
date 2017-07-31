@@ -18,7 +18,7 @@ For customers lacking Disaster Recovery (DR) expertise or short of staff to main
  
 Disaster Recovery Management Service is deployed and maintained by CenturyLink. To start with DRMS, please submit a service request via CenturyLink support channel. 
  
-#### 1.	Go to CenturyLink support website and click the Submit a request link  	
+#### 1. Go to CenturyLink support website and click the Submit a request link  	
 
 ![WEBSITE](../images/drms-website.png) 
  
@@ -26,4 +26,4 @@ Disaster Recovery Management Service is deployed and maintained by CenturyLink. 
  
 ![REQUEST](../images/drms-request.png) 
  
-#### 3.  Upon receiving the request, CenturyLink will transfer your ticket to a cloud architect to work with you on designing and implement the DR solution for your IT environment. 
+#### 3. Upon receiving the request, CenturyLink will transfer your ticket to a cloud architect to work with you on designing and implement the DR solution for your IT environment. 
