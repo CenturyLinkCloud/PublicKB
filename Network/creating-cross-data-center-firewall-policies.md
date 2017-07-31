@@ -6,17 +6,17 @@
   "contentIsHTML": false
 }}}
 
-## Creating Cross Data Center Firewall Policies
+### Creating Cross Data Center Firewall Policies
 
 In addition to being able to connect networks within a particular data center through [Intra Data Center](../Network/connecting-data-center-networks-through-firewall-policies.md) firewall policies, users can also create firewall policies that span cloud data centers. This helps enterprises build sophisticated and secure network topologies that take advantage of our global footprint while meeting an organization's functional needs.
 
-## General Notes
+### General Notes
 
  * In the current iteration customers cannot apply Firewall ACL's to traffic traversing cross data center policies.
  * Each CenturyLink Cloud Data Center location provides unique private IP networks to customers. This eliminates the risk of overlapping IP space, hence no NAT is required in the implementation.
  * Policies between sub-accounts must be made from the shared parent account.
 
-## Connecting Networks within a Single Account
+### Connecting Networks within a Single Account
 
 1. [Create network VLAN(s)](../Network/creating-and-deleting-vlans.md) in each of the respective CenturyLink Cloud Data Centers.
 2. Validate the networks are in place in your CenturyLink Cloud account using the **Network** menu item and selecting the appropriate Data Center. In the sample below, networks exists in both UC1 (Santa Clara) & DE1 (Germany).
@@ -59,7 +59,7 @@ In addition to being able to connect networks within a particular data center th
 
   ![Successful ping](../images/creating-cross-data-center-firewall-policies-10.png)
   
-## Connecting Networks Across a Parent & Sub-Account Hierarchy
+### Connecting Networks Across a Parent & Sub-Account Hierarchy
 
 1. Create the appropriate Parent & Sub-Account Hierarchy. Refer to the [Account Hierarchy Primer](../Accounts & Users/account-hierarchy-user-network-and-firewall-policy-primer.md) for more information. **Note**, policies between sub-accounts must be made from the shared **parent account**.
 
