@@ -50,11 +50,11 @@ CenturyLink is now able to sell service to customers who have a geographic prefe
 
 CenturyLink Cloud Object Storage delivers robust, geo-based services capable of storing any type of digital content. Perfect for data backups, media distribution, and file transfers, the CenturyLink Cloud Object Storage is Amazon S3-compatible and accessible from the CenturyLink Cloud Control Portal or via API calls.
 
-For additional details see our [Product Page](https://www.ctl.io/object-storage/) and [Product Knowledge Base Page](../object-storage/#1).
+For additional details see our [Product Page](https://www.ctl.io/object-storage/) and [Product Knowledge Base Page](../../object-storage/#1).
 
 ### Bare Metal Servers
 
 **New Locations**
 
 Bare Metal Servers are now available in Portsmouth, Great Britain (GB1) and Frankfurt, Germany (DE3). Choose from our selection of 5 different server configurations, providing users with different options; more CPUs, more memory, SSDs, more local storage with configurable RAID. Simple Backup Services and Runner are supported.
-For additional details see our [Product Page](https://www.ctl.io/bare-metal/) and [FAQ](../../servers/bare-metal-faq/).
+For additional details see our [Product Page](https://www.ctl.io/bare-metal/) and [FAQ](../../servers/bare-metal-faq.md/).
