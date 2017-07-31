@@ -3,28 +3,34 @@
   "date": "07-25-2017",
   "author": "Shasha Zhu",
   "attachments": [],
- "contentIsHTML": true
+ "contentIsHTML": false
 }}}
 
-<p> For customers lacking Disaster Recovery (DR) expertise or short of staff to maintain DR solution, Disaster Recovery Management Service (DRMS) takes the responsibilities and delivers end-to-end services. Unlike other DRaaS solution, CTL DRMS carries out regular test, audit and ATOD failover services to ensure the reliability, accuracy and efficiency.  DRMS offers services including:
-	- White glove implementation
-	- 24 X 7 monitoring and maintenance
-	- Regular test
-	- Regular audit
-	- At-time-of-disaster failover services
-	- Failback services
-	- Develop and maintain the runbook
-	- Application recovery services
-</p>
- 
- <p> Disaster Recovery Management Service is deployed and maintained by CenturyLink. To start with DRMS, please submit a service request via CenturyLink support channel. </p>
- 
- <p> 1.	Go to CenturyLink support website and click the Submit a request link </p>
- 	
- <p>	![WEBSITE](../images/drms-website.png) </p>
- 
- <p>2. Choose *Normal* from priority drop-down menu, put *Request Disaster Recovery Management Service* as the subject, put the description and # of servers you want to protect and submit the request. </p>
- 
- <p>	![REQUEST](../images/drms-request.png) </p>
- 
- <p>3.  Upon receiving the request, CenturyLink will transfer your ticket to a cloud architect to work with you on designing and implement the DR solution for your IT environment. </p>
+### Overview
+For customers lacking Disaster Recovery (DR) expertise or that are short of staff to maintain a DR solution, Disaster Recovery Management Service (DRMS) takes the responsibilities and delivers end-to-end services. Unlike other DRaaS solutions, CenturyLink DRMS carries out regular audits, tests, and at-time-of-disaster (ATOD) failover services to ensure the reliability, accuracy, and efficiency of your DR solution. DRMS offers services including:
+
+* White-glove on boarding
+* 24 X 7 monitoring and maintenance
+* Semi-annual testing
+* Quarterly audits
+* ATOD failover services
+* Failback services
+* Runbook automation and maintenance
+* Application recovery services
+
+### Requesting the Service
+Disaster Recovery Management Service is deployed and maintained by CenturyLink. To start with DRMS, please submit a service request via CenturyLink support channel.
+
+1. Go to the CenturyLink support website. At the top of the screen, click **Submit a request**.
+   ![Support Website](../images/drms-website.png)
+
+2. From the drop-down menu, select **Normal**.
+   * Include **Request Disaster Recovery Management Service** as the subject.
+   * For the **Description**, enter the details of your request.
+   * Enter the number of servers you want to protect.
+   * Upload attachments, if any. (This is optional.)
+   * Click **Submit**.
+
+   ![Service Request Form](../images/drms-request.png)
+
+ 3. Upon receiving the request, CenturyLink transfers your ticket to a cloud architect to work with you on designing and implement the DR solution for your IT environment.

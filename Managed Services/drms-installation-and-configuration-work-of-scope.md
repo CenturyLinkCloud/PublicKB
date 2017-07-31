@@ -1,49 +1,53 @@
 {{{
   "title": "Configure Disaster Recovery Management Service",
-  "date": "25-07-2017",
+  "date": "07-25-2017",
   "author": "Shasha Zhu",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-After deploying SafeHaven and the monitoring system, CenturyLink shares with customer the credentials to log into SafeHaven console to view the solution. Customer can edit certain fields to accommodate the solution and their daily workloads. To ensure the integrity of the solution, it is highly recommended that customer ONLY edit the fields listed below. Customer can also ask for assistance or recommendation from CenturyLink before editing them. 
+### Overview
+After deploying SafeHaven and the monitoring system, CenturyLink provides the customer with credentials to log into the SafeHaven console to view the solution. The customer can edit certain fields to accommodate the solution and their daily workloads. In order to ensure the integrity of the solution, we strongly recommend that the customer edit **only** the fields listed below. The customer can also request assistance and/or recommendation from CenturyLink before editing them.
 
-#### 1. Log into the SafeHaven Console 
+### Console Access to the Solution
+1. Log into the CenturyLink SafeHaven Console.
+   ![SafeHaven Console Login](../images/drms-log-in-console.png)
 
-![login](../images/drms-log-in-console.png)
+2. Navigate around the SafeHaven Console.
+   * You are able to see the recovery site, SafeHaven replication nodes, and protection groups.
+   * Protection group information includes protected servers, WAN sync speed, recovery point data, storage usage, etc.
 
-#### 2. Overview from SafeHaven Console 
+   ![Console Navigation](../images/drms-overview.png)
 
-After logging into SafeHaven Console, you are able to see the recovery site, SafeHaven replication nodes, protection groups. For each of the protection group, you are able to see the protection group information including protected servers, WAN sync speed, recovery point information and storage usage etc. 
+3. Edit the Protection Group WAN sync rate.
+   * The default rate limit is 2048 KB/Sec.
+   * Depending on network bandwidth and server workflow, you can adjust the WAN rate from 1 KB/Sec to unlimited.
 
-![overview](../images/drms-overview.png)
+   ![Edit WAN Sync Rate](../images/drms-edit-wan-sync-rate.png)
 
-#### 3. Edit Protection Group WAN sync rate
+4. Edit the Checkpoint Interval.
+   * This is the time span between checkpoint.
+   * The interval can be as low as 30 seconds.
+   * The Checkpoint is a recovery point used for test failover and protection group failover.
+   * You can change the checkpoint interval to align with your DR strategy.
+   * You can also check all the checkpoints via the SafeHaven console.
 
-The default rate limit is 2048 KB/ Sec. Depends on the network bandwidth and server workflow, you can adjust the WAN rate from 1 KB/Sec to unlimited.
+   ![Editing the Checkpoint Interval](../images/drms-checkpoint-interval.png)
 
-![editsyncrate](../images/drms-edit-wan-sync-rate.png)
+5. Add email addresses to receive periodic DR report.
+   * In the SafeHaven console, click **Administration > email list**.
+   * Add the email addresses.
 
-#### 4. Edit Checkpoint Interval 
+   ![Add Recipients to the Email List](../images/drms-edit-email.png)
 
-Checkpoint is a recovery point used to perform test failover and failover of a protection group. Checkpoint interval is a time span the checkpoint is taken. Checkpoint interval can be as low as 30 seconds. You can change the checkpoint interval to align with your DR strategy.  You can also check all the checkpoints via SafeHaven console.
+6. Change the Built-in Disaster Recovery Plan.
+   * SafeHaven built-in recovery plan defines the recovery server and production servers boot up and power off sequences.
+   * You can edit the delay time as well.
 
-![editcheckpointinterval](../images/drms-checkpoint-interval.png)
+   ![Edit Recovery Plan Time Delay](../images/drms-recovery-plan.png)
 
-#### 5. Add Email to Receive Periodic DR Report 
+7. Failover a Protection Group.
+   * When disaster occurs, right-click the protection group and choose **Failover**.
+   * **Note:** We recommend having a phone conversation your CenturyLink DR Manager prior to invoking a failover operation.
 
-On the top banner of SafeHaven console, click *Administration*, then choose *email list*, the following window will prompt out. Add the new emial address to receive periodic DR reports.
-
-![editemail](../images/drms-checkpoint-interval.png)
-
-#### 6. Change the Built-in Disaster Recovery Plan
-
-SafeHaven built-in recovery plan defines the recovery server and production servers boot up and power off sequences. You are able to edit the delay time as well. 
-
-![changerecoveryplan](../images/drms-recovery-plan.png)
-
-#### 7. Failover A Protection Group
-
-When disaster happens, right click on the protection group and choose Failover option. Normally we recommend Customer have a conversation with CenturyLink first before invoking a failover operation. 
-
-![changerecoveryplan](../images/drms-failover.png)
+   ![Invoking a Failover](../images/drms-failover.png)
