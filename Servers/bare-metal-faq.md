@@ -1,6 +1,6 @@
 {{{
   "title": "Bare Metal FAQ",
-  "date": "7-31-2017",
+  "date": "8-1-2017",
   "author": "CenturyLink",
   "attachments": [],
   "contentIsHTML": false,
