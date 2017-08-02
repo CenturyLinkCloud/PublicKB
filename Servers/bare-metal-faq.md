@@ -24,8 +24,8 @@ Great Britain (Slough)-GB3|4 cores E3/16 GB RAM/2x1TB 7200 RAID 1 (0.91TB usable
 US East (New York)-NY1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
 Canada (Vancouver)-CA1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
 Australia (Sydney)-AU1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
-Germany (Frankfurt)-DE3|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x4TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
-Great Britain (Portsmouth)-GB1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x4TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
+Germany (Frankfurt)-DE3|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x4TB 7200 SATA<sup>2</sup><br>20 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
+Great Britain (Portsmouth)-GB1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x4TB 7200 SATA<sup>2</sup><br>20 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
 
 <sup>1: All Physical servers include 10Gbps Network Interfaces</sup><br>
 <sup>2: SATA Disks are attached to Dell PERC H730 RAID Controllers and can operate in HBA/JBOD or RAID mode<sup>
@@ -104,16 +104,21 @@ Customers can retrieve the available configuration ID's, pricing and SKU details
 
 Separately, we have listed the configuration ID's in the table below:
 
-Configuration|ConfigurationID
--------------|----------------
-4 core, 16 GB RAM, 2x 1TB HDD|529e2592a3e640a7c2617b5e8bc8feaed94eac22
-12 core, 64 GB RAM, 4x 2TB HDD|f24b18ba2ce23657657444601649c7b8b7f9b60c
-20 core, 128 GB RAM, 6x 2TB HDD|8057e3629403e92d6693352ad17a807dc8970aef
-24 core, 128 GB RAM, 1x 960GB SSD|331afd25f49e10187c9095a33bd16209e013a56f
-24 core, 128 GB RAM, 1x 3.84TB SSD|44ed64b3174dc99f6f549b3707eefcc58fd701de
-24 core, 512 GB RAM, 1x 3.84TB SSD|7f6a073eb8e13626ee01c1ab5e698cf1c25ca073
-20 core, 256 GB RAM, 2x800GB SSD + 12x2TB HDD|43e0a50bf7ab9e80c493b1c8bf5da75dfba3f7e1
-16 core, 256 GB RAM, 2x800GB SSD + 4x4TB HDD|2516e341b960652f01563933d72523d9c222a437
+Location|Configuration|ConfigurationID
+--------|-------------|----------------
+VA1<br>GB3|4 core, 16 GB RAM, 2x 1TB HDD|529e2592a3e640a7c2617b5e8bc8feaed94eac22
+VA1<br>GB3|12 core, 64 GB RAM, 4x 2TB HDD|f24b18ba2ce23657657444601649c7b8b7f9b60c
+VA1<br>GB3|20 core, 128 GB RAM, 6x 2TB HDD|8057e3629403e92d6693352ad17a807dc8970aef
+AU1<br>CA1<br>NY1|24 core, 128 GB RAM, 1x 960GB SSD|331afd25f49e10187c9095a33bd16209e013a56f
+AU1<br>CA1<br>NY1|24 core, 128 GB RAM, 1x 3.84TB SSD|44ed64b3174dc99f6f549b3707eefcc58fd701de
+AU1<br>CA1<br>NY1|24 core, 512 GB RAM, 1x 3.84TB SSD|7f6a073eb8e13626ee01c1ab5e698cf1c25ca073
+AU1<br>CA1<br>NY1|20 core, 256 GB RAM, 2x800GB SSD + 12x2TB HDD|43e0a50bf7ab9e80c493b1c8bf5da75dfba3f7e1
+AU1<br>CA1<br>NY1|16 core, 256 GB RAM, 2x800GB SSD + 4x4TB HDD|2516e341b960652f01563933d72523d9c222a437
+DE3<br>GB1|24 core, 128 GB RAM, 1x 960GB SSD|6f16f5f852ab701fd85779bfdbcb0d4f97b6932e
+DE3<br>GB1|24 core, 128 GB RAM, 1x 3.84TB SSD|4c3f0369c42c74f7ce34096ee9a6a79efaf72e0b
+DE3<br>GB1|24 core, 512 GB RAM, 1x 3.84TB SSD|715fc7b2d4affd6b87ff405684eb04a004951283
+DE3<br>GB1|20 core, 256 GB RAM, 2x800GB SSD + 12x4TB HDD|88a98572bad1bf5c03156475523ee6075a39be3a
+DE3<br>GB1|20 core, 256 GB RAM, 2x800GB SSD + 4x4TB HDD|e6e8aa03dbeb61e25af77c6134f307d4d9f9a0d6
 
 **Where are Bare Metal servers available geographically?**
 
@@ -147,10 +152,10 @@ Storage is pre-defined and not customizable for the following server configurati
   * Storage is 6x2TB 7200 RAID 5 (9.09TB usable)
 
 Storage is customizable for the following server configurations. The user will be able to select from available options upon provisioning of a server.  Please see additional FAQ on Enabling encryption  on RAID controller below.
-* 20 cores (2.3GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC
+* 20 cores, 256 GB RAM, dual 10Gb NIC
   * Storage is 2x800GB SSD (1.6TB usable)
   * Storage is 12x2TB or 12x4TB 7200 RAID/JBOD Configurable
-* 16 cores (2.4GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC
+* 16 or 20 cores, 256 GB RAM, dual 10Gb NIC
   * Storage is 2x800GB SSD (1.6TB usable)
   * Storage is 4x4TB 7200 RAID/JBOD Configurable
 
