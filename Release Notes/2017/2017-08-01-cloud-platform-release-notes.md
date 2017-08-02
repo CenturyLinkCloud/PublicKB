@@ -8,19 +8,18 @@
 
 ### New Features (1)
 
-### Cloud Application Manager
+***Cloud Application Manager***
 
 **Optimization**
 
-With our ongoing commitment to continually enhance our value add services to our AWS Reseller Customers, we have added the following ‘Security’ modules to our Cloud Application Manager’s Cloud Optimization site to supplement the existing reporting portfolio of ‘Best Practices’ and ‘Savings’ modules.
-
+With our ongoing commitment to continually enhance our value add services to our AWS Reseller Customers, we have added the following ‘Security’ modules to our Cloud Application Manager’s Cloud Optimization site to supplement the existing reporting portfolio of ‘Best Practices’ and ‘Savings’ modules.                                                                                                                    
 * **Change Monitoring** – Reports on changes to your AWS account including information on who made changes to the environment, the date the changes were made, and to what components.
 
 * **IAM Admin Users** – Report identifies the admin users in your AWS account and lists the IAM policy providing them that level of access. To access the new reports, navigate to the Cloud Optimization site after logging into Cloud Application Manager.
 
 Learn more about Cloud Application Manager [here](https://www.ctl.io/cloud-application-manager/).
 
-### Managed Services
+***Managed Services***
 
 For CenturyLink Managed Services customers, we have enhanced our graphing and metrics reporting capabilities along with our AWS CloudWatch Monitoring capabilities in our recently launched monitoring portal.
 
