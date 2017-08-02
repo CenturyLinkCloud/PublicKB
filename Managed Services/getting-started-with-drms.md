@@ -33,4 +33,4 @@ Disaster Recovery Management Service is deployed and maintained by CenturyLink. 
 
    ![Service Request Form](../images/drms-request.png)
 
- 3. Upon receiving the request, CenturyLink transfers your ticket to a cloud architect to work with you on designing and implement the DR solution for your IT environment.
+3. Upon receiving the request, CenturyLink transfers your ticket to a cloud architect to work with you on designing and implement the DR solution for your IT environment.
