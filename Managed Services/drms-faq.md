@@ -42,9 +42,9 @@ SafeHaven supports VMware vSphere based cloud platforms including: CenturyLink C
 
 | Primary Platform | Recovery Platform |
 |------------------------|--------------------------|
-| Century Link Cloud | Century Link Cloud |
-| Customer provided VMware Datacenter | Century Link Cloud |
-| Dedicated Cloud Compute | Century Link Cloud |
+| CenturyLink Cloud | CenturyLink Cloud |
+| Customer provided VMware Datacenter | CenturyLink Cloud |
+| Dedicated Cloud Compute | CenturyLink Cloud |
 
 **What application support is there during a recovery?**
 
