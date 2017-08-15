@@ -1,5 +1,5 @@
 {{{
-  "title": "Configure Disaster Recovery Management Service",
+  "title": "Configure Managed Disaster Recovery Services",
   "date": "07-25-2017",
   "author": "Shasha Zhu",
   "attachments": [],
@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-After deploying SafeHaven and the monitoring system, CenturyLink provides the customer with credentials to log into the SafeHaven console to view the solution. The customer can edit certain fields to accommodate the solution and their daily workloads. In order to ensure the integrity of the solution, we strongly recommend that the customer edit **only** the fields listed below. The customer can also request assistance and/or recommendation from CenturyLink before editing them.
+After deployment of the SafeHaven and the monitoring system, CenturyLink provides the customer with credentials to log into the SafeHaven console to view the solution. The customer can edit certain fields to accommodate the solution and their daily workloads. In order to ensure the integrity of the solution, we strongly recommend that the customer edit **only** the fields listed below. The customer can also request assistance and/or recommendation from CenturyLink before editing them.
 
 ### Console Access to the Solution
 1. Log into the CenturyLink SafeHaven Console.
@@ -26,9 +26,9 @@ After deploying SafeHaven and the monitoring system, CenturyLink provides the cu
    ![Edit WAN Sync Rate](../images/drms-edit-wan-sync-rate.png)
 
 4. Edit the Checkpoint Interval.
-   * This is the time span between checkpoint.
+   * This is the time span between checkpoints.
    * The interval can be as low as 30 seconds.
-   * The Checkpoint is a recovery point used for test failover and protection group failover.
+   * The checkpoint is a recovery point used for test failover and protection group failover.
    * You can change the checkpoint interval to align with your DR strategy.
    * You can also check all the checkpoints via the SafeHaven console.
 

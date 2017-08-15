@@ -1,16 +1,16 @@
 {{{
-"title": "Disaster Recovery Management Service FAQ",
+"title": "Managed Disaster Recovery Services FAQ",
 "date": "08-04-2017",
 "author": "Daniel Morton",
 "attachments": [],
 "contentIsHTML": false
 }}}
 
-**What is Disaster Recovery Management Service?**
+**What are Managed Disaster Recovery Services?**
 
-The Disaster Recovery Management Service (DRMS) offers a fully-managed disaster recovery (DR) solution that orchestrates multiple DR technologies for the customer. For customers who are lacking in DR expertise or who are short of staff to maintain a DR solution, DRMS takes the responsibilities of DR and delivers end-to-end services. Unlike other DRaaS solutions, CTL DRMS carries out regular testing, audits, and ATOD failover services to ensure the reliability, accuracy and efficiency of our product. The following services are included in DRMS:
+The Managed Disaster Recovery Services (MDRS) offer a fully-managed disaster recovery (DR) solution that orchestrates multiple DR technologies for the customer. For customers who lack DR expertise or who are short of staff to maintain a DR solution, MDRS takes the responsibilities of DR and delivers end-to-end services. Unlike other DRaaS solutions, CTL MDRS carries out regular testing, audits, and ATOD failover services to ensure the reliability, accuracy and efficiency of our product. The following services are included in MDRS:
 * White-glove implementation
-* 24 X 7 monitoring and maintenance
+* 24x7 monitoring and maintenance
 * Regular testing
 * Regular audits
 * At-time-of-disaster failover services
@@ -21,11 +21,11 @@ The Disaster Recovery Management Service (DRMS) offers a fully-managed disaster 
 
 CenturyLink provides an implementation that includes SafeHaven infrastructure deployment, Local Replication Agent (LRA) installation, recovery server configuration, protection group creation, monitoring of system deployment, initial data seeding, and acceptance testing.
 
-Note: Before the implementation, the customer is required to establish the network infrastructure, open the ports, prepare storage, reserve CPU and memory resources, and set up client servers according to the DR Management Service Implementation Guide and the Disaster Recovery Management Service Requirement.
+Note: Before the implementation, the customer is required to establish the network infrastructure, open the ports, prepare storage, reserve CPU and memory resources, and set up client servers according to the Managed Disaster Recovery Services Implementation Guide and the Managed Disaster Recovery Services Requirement.
 
 **Which operating systems are supported?**
 
-SafeHaven supports VMware vSphere based virtual Windows and Linux servers. The following OS matrix shows supported server types. For OS managed by CenturyLink, restoring Managed OS components on the recovery server is included in the failover services. 
+SafeHaven supports VMware vSphere based virtual Windows and Linux servers. The following OS matrix shows supported server types. For OS managed by CenturyLink, restoring Managed OS components on the recovery server is included in the failover services.
 
 | Supported Server | SafeHaven 4.0.2 Local Cache | SafeHaven 4.0.2 Local Replica |
 |-------------------------|:----------------:|:----------------------:|
@@ -52,11 +52,11 @@ For applications using native replication technologies, CenturyLink coordinates 
 
 **What configuration services does CenturyLink provide?**
 
-CenturyLink provides configuration of the primary disk replication, WAN sync rate, recovery point interval, periodic disaster recovery report system, and the SafeHaven built-in disaster recovery plan. For detailed information on specific configuration roles and responsibilities, refer to the *Managed Disaster Recovery Service Guide*.
+CenturyLink provides configuration of the primary disk replication, WAN sync rate, recovery point interval, periodic disaster recovery report system, and the SafeHaven built-in disaster recovery plan. For detailed information on specific configuration roles and responsibilities, refer to the *Managed Disaster Recovery Services Guide*.
 
 **What administrative access does the customer retain?**
 
-The customer is given administrative control to the SafeHaven solution via the SafeHaven Console. The customer is provided login credentials for the SafeHaven cluster from which the customer is able to view SafeHaven nodes, protected servers, protection groups, storage usage, replication status, recovery servers, etc. The customer can adjust certain settings according to their business needs. The customer can also perform certain administrative tasks. For detailed information on customer administrative tasks, refer to the *Managed Disaster Recovery Service Guide*.
+The customer is given administrative control to the SafeHaven solution via the SafeHaven Console. The customer is provided login credentials for the SafeHaven cluster from which the customer is able to view SafeHaven nodes, protected servers, protection groups, storage usage, replication status, recovery servers, etc. The customer can adjust certain settings according to their business needs. The customer can also perform certain administrative tasks. For detailed information on customer administrative tasks, refer to the *Managed Disaster Recovery Services Guide*.
 
 **What types of monitoring take place on servers?**
 
@@ -84,11 +84,11 @@ The following monitoring probes are in place for Windows production servers:
 * LRA replication status
 * Connection to local replication disk
 
-For detailed monitor information and frequency intervals, refer to the *Managed Disaster Recovery Service Guide*.
+For detailed monitor information and frequency intervals, refer to the *Managed Disaster Recovery Services Guide*.
 
 **What types of audit services are covered?**
 
-Audit services identify new servers, disks, applications, deletions, and network and computing resource alterations to the production environment, and also reflect the modifications at the recovery data center. For detailed information on audit scope, refer to the *Managed Disaster Recovery Service Guide*.
+Audit services identify new servers, disks, applications, deletions, and network and computing resource alterations to the production environment, and also reflect the modifications at the recovery data center. For detailed information on audit scope, refer to the *Managed Disaster Recovery Services Guide*.
 
 **What types of test services are covered?**
 
@@ -112,4 +112,4 @@ Generally speaking, the customer is responsible for the following:
 * Purchases the CenturyLink DR Manager, which coordinates the DR implementation, daily maintenance, test, audit, ATOD, and failback procedures.
 * Purchases and uses the CenturyLink Cloud as a recovery data center.
 
-Specific details of customer responsibility can be found in the *Managed Disaster Recovery Service Guide*.
+Specific details of customer responsibility can be found in the *Managed Disaster Recovery Services Guide*.
