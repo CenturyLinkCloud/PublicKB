@@ -148,6 +148,18 @@ The only requirement is instance must be in Running status.
 
 We strongly recommend synchronize your Azure provider before you try to register the virtual machine. This due to such instance may be registered by another user before you try to register it. This way you can avoid this kind of problems.
 
+### Shutdown and Terminate Instances in Azure
+
+**Shutdown Instance**
+
+When a shutdown operation is executed from Cloud Application Manager, the virtual machine is stopped on Azure but not deallocated, in order to maintain the VM configuration and not loose the IP address. This means that the virtual machine will continue billed.
+
+To deallocate a virtual machine stopped, you have to enter on Azure portal and click again on Stop.
+
+**Terminate Instance**
+
+When a terminate operation is executed from Cloud Application Manager, this operation execute the dispose scripts from your box instance and then deletes the virtual infrastructure. You can't revert the action and since you can lose data, be sure you want to perform this action in the first place.
+
 ### Contacting Cloud Application Manager Support
 
 We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
