@@ -1,5 +1,5 @@
 {{{
-"title": "Disaster Recovery Management Service Glossary of Terms",
+"title": "Managed Disaster Recovery Services Glossary of Terms",
 "date": "08-04-2017",
 "author": "Daniel Morton",
 "attachments": [],
@@ -18,9 +18,9 @@
 
 **Disaster Recovery Plan** - The Disaster Recovery Plan is a SafeHaven built-in plan which maps production servers to recovery servers and defines the boot up and power off sequence of the servers in each protection group.
 
-**Failback** - Failback is the process of restoring operations to the primary site. SafeHaven Failback is protection group based. There is no data loss for SafeHaven Failback. After SafeHaven Failback, the DR solution is restored to the same status as before disaster. During failback Disaster Recovery Management Service coordinates with different CenturyLink teams MS SQL, AD, SAP, etc., to restore applications.
+**Failback** - Failback is the process of restoring operations to the primary site. SafeHaven Failback is protection group based. There is no data loss for SafeHaven Failback. After SafeHaven Failback, the DR solution is restored to the same status as before disaster. During failback Managed Disaster Recovery Services coordinate with different CenturyLink teams MS SQL, AD, SAP, etc., to restore applications.
 
-**Failover** - Failover switches the workloads from the production site to the recovery site. SafeHaven Failover is protection group based so that applications and servers in the same group are consistent. SafeHaven Failover stops the WAN sync from the primary site to the recovery site and brings up the recovery servers based on the selected checkpoints. During failover Disaster Recovery Management Service coordinates with different CenturyLink teams MS SQL, AD, SAP, etc., to restore applications.
+**Failover** - Failover switches the workloads from the production site to the recovery site. SafeHaven Failover is protection group based so that applications and servers in the same group are consistent. SafeHaven Failover stops the WAN sync from the primary site to the recovery site and brings up the recovery servers based on the selected checkpoints. During failover Managed Disaster Recovery Services coordinate with different CenturyLink teams MS SQL, AD, SAP, etc., to restore applications.
 
 **In-Band-to-Out-of-Band Conversion** - In-Band-to-Out-of-Band Conversion is a procedure, which boots up recovery servers from local disks instead of the network disks.
 
