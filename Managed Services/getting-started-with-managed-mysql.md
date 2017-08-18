@@ -30,7 +30,7 @@ A: Managed Oracle MySQL Enterprise is priced according to our [pricing catalog](
 
 **Q: What versions of Oracle MySQL Enterprise are supported?**
 
-A: CenturyLink Cloud Supports MySQL v5.5, MySQL 5.6 and MySQL 5.7.
+A: CenturyLink Cloud Supports MySQL 5.6 and MySQL 5.7.
 
 **Q: What operating systems are supported for Managed Oracle MySQL?**
 
