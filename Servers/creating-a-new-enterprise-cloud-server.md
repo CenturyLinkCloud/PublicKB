@@ -75,7 +75,7 @@
 </div>
 <ul>
   <li>Select the account network, primary DNS and secondary DNS for this server. Accounts can have multiple networks within a particular data center. If the user wishes to change their network settings after the server has been provisioned, they must contact
-    the CenturyLink Cloud NOC who can, <strong>for a fee</strong>, change the vlan and re-IP the server.</li>
+    the CenturyLink Cloud NOC who can, <strong>for a fee</strong>, change the vlan and re-IP the server. If DNS servers are not specified, the server will be created with the default CenturyLink DNS servers: 172.17.1.26 (primary) and 172.17.1.27 (secondary).</li>
 </ul>
 <p><img src="https://t3n.zendesk.com/attachments/token/23gQG2zXrcfIpYWPx6DAQ2SmN/?name=08.png" alt="08.png" />
 </p>
