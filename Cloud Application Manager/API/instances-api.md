@@ -13,7 +13,7 @@ Manage and perform actions on instances.
 | Resource | Description |
 |----------|-------------|
 | GET /services/instances | Gets the list of instances. |
-| POST /services/instances | Creates a new instance. |
+| POST /services/instances | Creates a new instance, imports an unregistered instance or instances based on schema. |
 
 
 **Perform Instance Operations**
@@ -33,6 +33,9 @@ Manage and perform actions on instances.
 | PUT /services/instances/{instance_id}/shutdown | 	Shutdown an existing instance. |
 | PUT /services/instances/{instance_id}/reinstall | Re-install an existing instance. |
 | PUT /services/instances/{instance_id}/reconfigure | Re-configure an existing instance. |
+| PUT /services/instances/{instance_id}/import | Retry to import an unregistered instance. |
+| PUT /services/instances/{instance_id}/cancel_import | Cancel a failed import of an unregistered instance. |
+
 
 ### GET /services/instances
 
@@ -68,7 +71,7 @@ ElasticBox-Release: 4.0
 | name | string | Instance name. |
 | service | object | Instance service. |
 | service.type | string | Required. Can be one of these types: Linux Compute, Windows Compute and CloudFormation Service. |
-| service.id | string | Service type. |
+| service.id | string | Service unique identifier. |
 | service.machines | array | List of service machines |
 | machine | object | Machine contained in the service machines list. |
 | machine.state | string | Machine state, there are three possible states: processing , done and unavailable. |
@@ -368,6 +371,95 @@ Body: notice that the request schedules the instance to shut down in five hours.
        "expire": "2014-11-17 23:00:00.000000",
        "operation": "shutdown"
    }
+}
+```
+
+### POST /services/instances
+Register an unregistered instance: notice that it's the same endpoint to create a new instance.
+
+**Normal Response Codes**
+
+* 202
+
+**Error Response Codes**
+
+* Invalid Data (400)
+
+**Request Parameters**
+
+| Parameter | Type |Description |
+|-----------|------|------------|
+| schema | string | Required. Register Instance Request schema URI. |
+| owner | string | ID of the workspace where the instance is imported. |
+| name | string | Instance name to register. |
+| description | string | Instance description to register. |
+| unregistered_id | string | Instance unique identifier |
+| linux_username | string | Linux user to install agent |
+| private_key | string | Linux key to install agent  |
+| windows_username | string | Windows username to install agent |
+| windows_password | string | Windows password to install agent |
+| instance_tags | array | List of tags defined at deployment time. |
+| automatic_updates | string | One of the: major, minor, patch, off. Default off. |
+| lease | array | Schedules an instance with two parameters:<li>expire. Specifies in UTC format YYYY-MM-DD HH:MM:SS.SSSSSS, the time and date for stopping an instance. It’s required only when an instance is set to terminate or shut down.</li><li>operation. Specifies an instance to stop with **shutdown** or **terminate**. When not scheduled, the instance is set to **alwayson**.</li> |
+
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
+
+```
+Body:
+{
+   "schema": "http://elasticbox.net/schemas/register-instance-request",
+   "owner": "operations",
+   "name": "LDAP Box",
+   "unregistered_id": "7a99f95c-30e6-4986-9059-f6999d1jhgf9",
+   "description": "Ldap server registered",
+   "linux_username": "root",
+   "private_key": "-----BEGIN RSA PRIVATE KEY-----
+..................................................
+-----END RSA PRIVATE KEY-----",
+   "instance_tags": [],
+   "automatic_updates": "off",
+   "lease": {
+       "expire": "2017-11-11 23:00:00.000000",
+       "operation": "shutdown"
+   }
+}
+```
+
+For use bulk import, the request must have bulk import request schema, and a list of
+unregistered instances:
+
+```
+Body:
+{
+  "schema": "http://elasticbox.net/schemas/bulk-import-request",
+  "owner": "operations",
+  "unregistered_instances": [
+    {
+      "schema": "http://elasticbox.net/schemas/register-instance-request",
+      "name": "msql-a",
+      "unregistered_id": "5eed8408-3ece-45d9-8e78-3f3472bea165",
+      "instance_tags": [
+        "zoneA"
+      ]
+    },
+    {
+      "schema": "http://elasticbox.net/schemas/register-instance-request",
+      "name": "msql-b",
+      "unregistered_id": "6b9b9ecc-f22d-4101-991c-c55f8de80439",
+      "instance_tags": [
+        "zoneB"
+      ]
+    }
+  ],
+  "instance_tags": [
+    "registered"
+  ]
 }
 ```
 
@@ -1799,6 +1891,81 @@ Body:
   "method":"reconfigure"
 }
 ```
+
+### PUT /services/instances/{instance_id}/import
+
+Retry to import an unregistered instance. when you give its ID.
+
+**Normal Response Codes**
+
+* 202
+
+**Error Response Codes**
+
+* Forbidden (403)
+* Not Found (404)
+
+**Request Parameters**
+
+| Parameter | Type |Description |
+|-----------|------|------------|
+| id | string | Instance ID. |
+| method | string | Operation on the instance (import). |
+
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
+
+```
+Body:
+
+{
+  "id":"i-eruumb",
+  "method":"import"
+}
+```
+
+### PUT /services/instances/{instance_id}/cancel_import
+
+Cancel a failed import of an unregistered instance when you give its ID.
+
+**Normal Response Codes**
+
+* 202
+
+**Error Response Codes**
+
+* Forbidden (403)
+* Not Found (404)
+
+**Request Parameters**
+
+| Parameter | Type |Description |
+|-----------|------|------------|
+| id | string | Instance ID. |
+| method | string | Operation on the instance (cancel_import). |
+
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
+
+```
+Body:
+
+{
+  "id":"i-eruumb",
+  "method":"cancel_import"
+}
+```
+
 
 ### Contacting Cloud Application Manager Support
 
