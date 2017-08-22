@@ -28,7 +28,7 @@ This is a patch release for [SafeHaven 4.0.2](safehaven-4.0.2-release.md)
 
 ### Upgrade from 4.0.1 and 4.0.2
 
-* **No changes for OVA, or the SBD module in the SRN**
+* **OVA and SBD module in the SRN is the same for 4.0.1, 4.0.2 and 4.0.3**
 
 * **Upgrade Procedure** : [Upgrade Procedure for Minor Releases(Syntropy and GUI Console)](Upgrade-Procedure-for-Minor-Releases-Syntropy-and-GUI.md)
 
