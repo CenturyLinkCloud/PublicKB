@@ -13,7 +13,7 @@
 
 ### New Features and Enhancements
 
-This is a patch release for [SafeHaven 4.0.2](safehaven-4.0.2-release.md)
+This is a patch release for [SafeHaven 4.0.2](safehaven-4.0.2-release.md), which is a patch release for [SafeHaven 4.0.1](safehaven-4.0.1-release.md).
 
 * Add Support for Windows Server 2016
 * Automatically resize storage pool when the backing storage is resized
