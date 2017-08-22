@@ -32,11 +32,11 @@ This is a patch release for [SafeHaven 4.0.2](safehaven-4.0.2-release.md), which
 |----|----|----| 
 |GUI and Syntropy|Yes, no interruptions|Yes, no interruptions|
 |Windows Agent|Yes, reboot needed|Yes, reboot needed|
-|SBD (WAN replication kernel module on SRN)|No change, therefore no need for upgrade|No change, therefore no need for upgrade| 
+|SBD (WAN replication kernel module on SRN)|No change|No change| 
 
 ### Upgrade from 4.0.1 and 4.0.2
 
-* **OVA and SBD module in the SRN is the same for 4.0.1, 4.0.2 and 4.0.3**
+* **OVA and SBD module in the SRN is the same for 4.0.1, 4.0.2 and 4.0.3**: there is no need to upgrade them.
 
 * **Upgrade Procedure** : [Upgrade Procedure for Minor Releases(Syntropy and GUI Console)](Upgrade-Procedure-for-Minor-Releases-Syntropy-and-GUI.md)
   * Note that to upgrade from 4.0.1 to 4.0.3, there is no need to upgrade to 4.0.2 first
