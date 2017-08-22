@@ -31,9 +31,8 @@ This is a patch release for [SafeHaven 4.0.2](safehaven-4.0.2-release.md), which
 |Component|4.0.1->4.0.3|4.0.2->4.0.3|
 |----|----|----| 
 |GUI and Syntropy|Yes, no interruptions|Yes, no interruptions|
-|SBD (WAN replication kernel module on SRN)|No change, therefore no need for upgrade|No change, therefore no need for upgrade|
 |Windows Agent|Yes, reboot needed|Yes, reboot needed|
- 
+|SBD (WAN replication kernel module on SRN)|No change, therefore no need for upgrade|No change, therefore no need for upgrade| 
 
 ### Upgrade from 4.0.1 and 4.0.2
 
