@@ -15,7 +15,16 @@
 
 This is a patch release for [SafeHaven 4.0.2](safehaven-4.0.2-release.md)
 
- 
+* Add Support for Windows Server 2016
+* Automatically resize storage pool when the backing storage is resized
+* Fully support the migration use case
+* Fully support servers with more than 10 disks
+* Improve error logging in Windows server
+* Added resiliency to PG resize
+* Better support for Windows Dynamic Disks
+* Better error handling of re-failover
+* A number of minor GUI fixes such as typos, error messages, resolution problems etc
+
  
  ### Upgrade Path 
 
