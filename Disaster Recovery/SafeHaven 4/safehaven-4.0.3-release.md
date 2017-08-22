@@ -40,7 +40,7 @@ This is a patch release for [SafeHaven 4.0.2](safehaven-4.0.2-release.md)
 * **OVA and SBD module in the SRN is the same for 4.0.1, 4.0.2 and 4.0.3**
 
 * **Upgrade Procedure** : [Upgrade Procedure for Minor Releases(Syntropy and GUI Console)](Upgrade-Procedure-for-Minor-Releases-Syntropy-and-GUI.md)
-
+  * Note that to upgrade from 4.0.1 to 4.0.3, there is no need to upgrade to 4.0.2 first
 * Note that once Syntropy is upgraded, only the Windows agent with matching version can work with new protections
   * Potentially for an already protected Windows server, it is possible to only upgrade Syntropy to 4.0.3 and keep the Windows Agent to 4.0.1 or 4.0.2
   * Upgrading the Windows Agent from 4.0.1/4.0.2 to 4.0.3 requires a reboot of the production Windows server
