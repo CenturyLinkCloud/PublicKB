@@ -17,19 +17,24 @@ This is a patch release for [SafeHaven 4.0.2](safehaven-4.0.2-release.md)
 
  
  
- ### Upgrade Path
+ ### Upgrade Path 
 
-|Upgrade From|GUI and Syntropy|SBD (WAN replication kernel module on SRN)|Windows Agent|
-|----|----|----|----|
-|4.0.0| Yes, no interruptions|Manual upgrade possible by support ticket to help@ctl.io|Yes, reboot needed|
-|4.0.1| Yes, no interruptions|No change, therefore no need|No change, therefore no need|
-
+|Component|4.0.1->4.0.3|4.0.2->4.0.3|
+|----|----|----| 
+|GUI and Syntropy|Yes, no interruptions|Yes, no interruptions|
+|SBD (WAN replication kernel module on SRN)|No change, therefore no need for upgrade|No change, therefore no need for upgrade|
+|Windows Agent|Yes, reboot needed|Yes, reboot needed|
+ 
 
 ### Upgrade from 4.0.1 and 4.0.2
 
-* **No changes for OVA, Driver Installer, MakeStub.exe packages**
+* **No changes for OVA, or the SBD module in the SRN**
 
-* **Upgrade Procedure from 4.0.1 to 4.0.2** : [Upgrade Procedure for Minor Releases(Syntropy and GUI Console)](Upgrade-Procedure-for-Minor-Releases-Syntropy-and-GUI.md)
+* **Upgrade Procedure** : [Upgrade Procedure for Minor Releases(Syntropy and GUI Console)](Upgrade-Procedure-for-Minor-Releases-Syntropy-and-GUI.md)
+
+* Note that once Syntropy is upgraded, only the Windows agent with matching version can work with new protections
+  * Potentially for an already protected Windows server, it is possible to only upgrade Syntropy to 4.0.3 and keep the Windows Agent to 4.0.1 or 4.0.2
+  * Upgrading the Windows Agent from 4.0.1/4.0.2 to 4.0.3 requires a reboot of the production Windows server
 
 ### Download Links
 
