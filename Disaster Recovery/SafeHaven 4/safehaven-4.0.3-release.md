@@ -9,7 +9,7 @@
 ### Release Notes
 
 - SafeHaven Version: 4.0.3.
-- Release Date: August 21, 2017
+- Release Date: August 25, 2017
 
 ### New Features and Enhancements
 
