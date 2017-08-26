@@ -21,6 +21,7 @@
     "Network",
     "Object Storage",
     "Partners",
+    "Private Node",
     "Release Notes",
     "Runner",
     "Security",

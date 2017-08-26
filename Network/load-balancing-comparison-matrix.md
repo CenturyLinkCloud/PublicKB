@@ -1,6 +1,6 @@
 {{{
   "title": "Load Balancing Comparison Matrix",
-  "date": "3-13-2017",
+  "date": "7-10-2017",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -18,15 +18,16 @@ CenturyLink Cloud offers customers a wide range of load balancing solutions in o
 Control Integration<sup>1</sup>|Yes|Yes|No|No
 High Availability|Yes|Yes|Optional|Optional
 Mode/Port|TCP/80<br>TCP/443|HTTP<br>TCP/Any|Any|Any
-Method|Round Robin<br>Least Connection|Round Robin<br>Least Connection<br>SourceIP|[Listing](http://docs.citrix.com/en-us/netscaler/11-1/load-balancing/load-balancing-customizing-algorithms.html)|Varies by<br>Vendor
+Method|Round Robin<br>Least Connection|Round Robin<br>Least Connection<br>SourceIP<br>URL Hash|[Listing](http://docs.citrix.com/en-us/netscaler/11-1/load-balancing/load-balancing-customizing-algorithms.html)|Varies by<br>Vendor
 Persistence|SourceIP|SourceIP|[Listing](http://docs.citrix.com/en-us/netscaler/11-1/load-balancing/load-balancing-persistence/persistence.html)|Varies by<br>Vendor
 Health Checks|No|[Yes](../LBaaS/getting-started-with-load-balancer-as-a-service.md)|Yes|Yes
 SSL Offloading|No|No|Yes|Yes
+WAF|No|No|Optional|Optional
 Global Server Load Balancing|No|No|Optional|Optional
 [SLA](//www.ctl.io/legal/sla/)<sup>2</sup>|Yes|Yes|Limited|Limited
 [Support](../Support/how-do-i-report-a-support-issue.md)<sup>3</sup>|Yes|Yes|Limited|Limited
 Lifecycle Management<sup>6</sup>|Day 0<br>Day 2<br>Day N|Day 0<br>Day 2<br>Day N|Day 0|Day 0
-[Locations](../General/centurylink-cloud-data-center-locations.md)|Any|VA1<br>UC1<br>CA3<br>GB3<br>SG1|Any|Any
+[Locations](../General/centurylink-cloud-data-center-locations.md)|Any|VA1<br>UC1<br>CA3<br>GB3<br>SG1<br>DE3|Any|Any
 OSI Model<sup>5</sup>|Layer 4|Layer 4|Layer 4<br>Layer 7|Layer 4<br>Layer 7
 
 <sup>1: Control Integration at a minimum allows a customer to implement the service on-demand, operate it via self-service in the UX (or using API) with a pay as you go model.</sup>

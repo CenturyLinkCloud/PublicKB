@@ -19,11 +19,11 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [aiMobile](../Marketplace Guides/getting-started-with-aimobile.md)   	| Blueprint    | Application delivery controller    |
 | [aiProtect](../Marketplace Guides/getting-started-with-aiprotect.md)   	| Blueprint    | Application delivery controller    |
 | [aiScaler](../Marketplace Guides/getting-started-with-aiscaler.md)   	| Blueprint    | Application delivery controller    |
-| [Appcito CAFE](../Marketplace Guides/getting-started-with-appcito-cafe.md)   	| Blueprint    | Application delivery controller    |
+| [Appcito CAFE](https://www.appcito.com)   	 | Blueprint    | Application delivery controller    |
 | [Cohesive Networks VNS3](../Marketplace Guides/getting-started-with-cohesiveft-vns3-partner-template.md)   	| Template    | Network security appliance    |
 | [FortyCloud](../Marketplace Guides/getting-started-with-fortycloud-appliance.md)   	| Blueprint (Virtual Appliance)    | Network security appliance    |
 | [HALON](../Marketplace Guides/getting-started-with-halon-partner-template.md)   	| Template    | SMTP Platform    |
-| [LaGrange Systems CloudMaestro](../Marketplace Guides/getting-started-with-lagrange-systems-cloudmaestro-blueprint.md)   	| Blueprint    | Application Delivery Controller  |
+| [LaGrange Systems CloudMaestro](https://www.lagrangesystems.com)   	| Blueprint    | Application Delivery Controller  |
 | [NGiNX](../Marketplace Guides/getting-started-with-nginx-blueprint.md)   	| Blueprint    | Web traffic manager    |
 | [OpenVPN AS](../Marketplace Guides/getting-started-with-openvpnas-appliance.md)   	| Blueprint (Virtual Appliance)    | Secure access manager    |
 | [Silver Peak](../Marketplace Guides/getting-started-with-silver-peak-partner-template.md)   	| Template    | WAN acceleration    |
@@ -49,15 +49,15 @@ Quickly deploy and successfully use software and technology from any of our cert
 
 |Vendor Software  	|Integration    | Description   	|
 |:-	|:-	|
-| [Alert Logic Web Security Manager](../Marketplace Guides/getting-started-with-alert-logic-web-security-manager-partner-template.md)   	| Template    | Web security manager appliance    |
-| [Alert Logic Threat Manager](../Marketplace Guides/getting-started-with-alert-logic-threat-manager-partner-template.md)   	| Template    | Threat manager appliance    |
+| [Alert Logic Web Security Manager](../../Marketplace/Getting Started Guides/getting-started-alert-logic-web-security-manager.md)   	| Template    | Web security manager appliance    |
+| [Alert Logic Log Manager](../../Marketplace/Getting Started Guides/getting-started-alert-logic-log-manager.md)   	| Template    | Threat manager appliance    |
 | [Cavirin Automated Risk Analysis Platform](../Marketplace Guides/getting-started-with-cavirin-automated-risk-analysis-platform-partner-template.md)   	| Template    | Governance and compliance appliance    |
-| [FlexSecure](../../Security/getting-started-with-flexsecure.md)   	| Blueprint    | Context-based Security-as-a-Service platform    |
+| [FlexSecure](../../Marketplace/Getting Started Guides/getting-started-with-flexsecure.md)   	| Blueprint    | Context-based Security-as-a-Service platform    |
 | [OSSEC](../Marketplace Guides/getting-started-with-ossec-blueprints.md)   	| Template    | HIDS    |
 | [SMS Passcode](../Marketplace Guides/getting-started-with-smspasscode-template.md)   	| Template   | Multifactor Authentication    |
 | [Symas](../Marketplace Guides/getting-started-with-symas-open-ldap-silver.md)   	| Blueprint   | LDAP    |
-| [Vormetric](../Marketplace Guides/getting-started-with-vormetric-dsm.md)   	| Template    | Data encryption and key management    |
-| [Vormetric](../Marketplace Guides/getting-started-with-vormetric-encryption-agent-deployment-blueprints.md)   	| Blueprint    | Data encryption and key management    |
+| [Vormetric](../../Marketplace/Getting Started Guides/getting-started-vormetric-data-security-manager.md)   	| Template    | Data encryption and key management    |
+| [Vormetric](../../Marketplace/Getting Started Guides/getting-started-vormetric-data-security-manager.md)   	| Blueprint    | Data encryption and key management    |
 | [Waratek AppSecurity](../Marketplace Guides/getting-started-with-waratek-appsecurity.md)   	| Blueprint    | Secure Java Runtime    |
 | [Zetera CoIP](../../Marketplace/Getting Started Guides/getting-started-with-zentera-coip.md)   	| Runner   | Secure hybrid network fabric    |
 

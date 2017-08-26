@@ -49,7 +49,7 @@ For additional details on support responsibilities for our partners and their SL
 * The true strength of Cloud Integration is that it opens to door for trained, CenturyLink resources to do work for you on your behalf, in Azure. If you are interested in contracting with CenturyLink to provide design, implementation, or ongoing, additional support, request an engagement with your sales representative.
 
 **Partner Pricing Details:**
-* **Azure:** Pricing available to CenturyLink customers is shown [here](https://www.ctl.io/pricing), with some variability as Microsoft changes pricing daily. Available products are also listed [here](./partner-cloud-integration-azure-permissions.md). If your organization has agreements with Microsoft which differ from what is shown, please submit a ticket for review. We are constantly working to increase the scope of what is offered through Azure and it is likely we have plans to offer what you require.
+* **Azure:** Pricing available to CenturyLink customers is shown [here](https://www.ctl.io/pricing), with some variability as Microsoft changes pricing daily. Available products are also listed [here](./partner-cloud-integration-azure-capabilities.md). If your organization has agreements with Microsoft which differ from what is shown, please submit a ticket for review. We are constantly working to increase the scope of what is offered through Azure and it is likely we have plans to offer what you require.
 
 **Availability**
 * **General:**

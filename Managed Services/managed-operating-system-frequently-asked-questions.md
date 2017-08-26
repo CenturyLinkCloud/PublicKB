@@ -46,7 +46,7 @@ Please review the articles dedicated to:
 There could be a few causes:
 
 * Be sure you are creating the server in a data center that supports managed services.
-* It is possible your company has not yet executed a Master Services Agreement (MSA) with CenturyLink Technology Solutions. To obtain a MSA – or if you believe you should already have one in place – please contact a CenturyLink Sales Representative toll free at:
+* It is possible your company has not yet executed a Master Services Agreement (MSA) with CenturyLink. To obtain a MSA – or if you believe you should already have one in place – please contact a CenturyLink Sales Representative toll free at:
 
     * United States: 1-800-871-9244
     * Canada: 1-877-387-3764
@@ -102,7 +102,7 @@ Files can be transferred by simply drag and drop in Windows Explorer from your r
 
 **Who do I contact if I have trouble with my Managed VM?**
 
-The CenturyLink Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at the numbers below, or send email to request@centurylink.com for Managed OS issues. If there is an incident, email can be sent to incident@centurylink.com.
+The CenturyLink Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at the numbers below, or send email to request@centurylink.com for Managed OS issues. If there is an incident, email can be sent to incident@centurylink.com.
 
 * US: 888.638.6771
 * UK: +44.118.322.6100
@@ -113,7 +113,7 @@ The CenturyLink Technology Solutions Client Service Center is available to assis
 
 Your [Platform support](https://www.ctl.io/support/) options are distinct from Managed Support for a variety of reasons. You will find that public, platform support handles issues below the Operating System layer and some form of it is provided, regardless what flavor you choose, regardless what data center you choose. However, Managed Support is provided at your option within specific data centers for specific Operating Systems and Applications on CenturyLink Cloud (as well as other managed hosting products in the broader [CenturyLink Product Catalog](http://www.centurylink.com/business/enterprise/). Different teams with different skills sets are required and different methods are employed by each team.
 
-The contact methods described above will connect you with the Managed Support teams as quickly as possible. If you contact the NOC for an issue regarding a Managed Server that is not related to the platform, you will be politely asked to use the aforementioned contact methods. if you contact the Managed Support team for a platform issue,
+The contact methods described above will connect you with the Managed Support teams as quickly as possible. If you contact the NOC for an issue regarding a Managed Server that is not related to the platform, you will be politely asked to use the aforementioned contact methods. If you wish to contact the Managed Support team for a platform issue, please review this [support article](../Support/how-do-i-report-a-support-issue.md) for guidance. 
 
 **How can I remove Managed Services from a VM?**
 

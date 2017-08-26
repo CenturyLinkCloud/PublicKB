@@ -97,7 +97,7 @@ Here we connect to a box that deploys an S3 bucket using a binding. As Dockerfil
 
 **Deploy the Docker Box**
 
-You can launch the Docker box in any environment including public, private clouds or a datacenter. Here we launch the ElasticSearch Docker box in AWS. In the ElasticSearch box page, click **Deploy**. Choose a deployment policy box that contains deployment settings for a cloud provider and optionally add tags, [auto schedule](../Deploying Anywhere/deploying-managing-instances.md) the container, and specify other [metadata](../Deploying Anywhere/boxes.md).
+You can launch the Docker box in any environment including public, private clouds or a datacenter. Here we launch the ElasticSearch Docker box in AWS. In the ElasticSearch box page, click **Deploy**. Choose a deployment policy box that contains deployment settings for a cloud provider and optionally add tags, [auto schedule](../Deploying Anywhere/deploying-managing-instances.md) the container, and specify other [metadata](../Core Concepts/boxes.md).
 
 ![dockercontainers8.png](../../images/cloud-application-manager/dockercontainers8.png)
 
