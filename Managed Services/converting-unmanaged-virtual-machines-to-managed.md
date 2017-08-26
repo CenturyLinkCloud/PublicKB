@@ -19,7 +19,7 @@ Users employed by companies that have agreed to terms with [CenturyLink Sales](h
 
 ### Prerequisites
 - An understanding of the standard server creation process.
-- Some idea of the benefits included with [managed servers](../managed-operating-system-frequently-asked-questions.md).
+- Some idea of the benefits included with [managed servers](../Managed%20Services/managed-operating-system-frequently-asked-questions.md).
 
 ### Important Information
 - Conversion from **Managed** to **Unmanaged** Operating System Services is not currently a supported feature.
@@ -27,7 +27,7 @@ Users employed by companies that have agreed to terms with [CenturyLink Sales](h
 - It is recommended to create a snapshot of the VM before running the management process
 - Normally, a single CPI Blueprint will take between ten and thirty minutes to complete. However, this can be influenced by jobs in the queue
 - Due to security concerns, customers will be unable to convert a sub-account VM to Managed while using an IP address from a parent account network. The network chosen for the VM must belong to the same account upon which the machine resides.
-- To preconfigure network access, prior to making an unmanaged VM Managed, please be sure at least one [new, managed server](../created-a-managed-server-now-what.md) has been created in the desired VLAN/Network.
+- To preconfigure network access, prior to making an unmanaged VM Managed, please be sure at least one [new, managed server](../Managed%20Services/created-a-managed-server-now-what.md) has been created in the desired VLAN/Network.
 
 ### Compatibility Matrix
 The table below provides a matrix of the supported locations and Operating Systems for conversion.
