@@ -60,4 +60,6 @@ This is a patch release for [SafeHaven 4.0.2](safehaven-4.0.2-release.md), which
 * Windows Downloads:
   * [Driver Installer](https://download.safehaven.ctl.io/SH-4.0.3/safehaven_windows_driver-4.0.3.exe)
   * [MakeStub.exe](https://download.safehaven.ctl.io/SH-4.0.3/MakeStub-4.0.3.exe)
+  
+Please note that you can check the md5 checksum against the file named [MD5SUMS](https://download.safehaven.ctl.io/SH-4.0.3/MD5SUMS).
 
