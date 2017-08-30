@@ -35,8 +35,10 @@ Below is a table that will help you determine what permissions you wish to provi
   Cloud Optimization Option | Benefits | IAM Permissions given to CenturyLink | Automated changes |
   --- | --- | --- | ---
   Consolidated billing only | [AWS Charges on a CenturyLink Invoice](./partner-cloud-integration-consolidated-billing.md); Discounts on EC2 Usage for Standard Customers | None | The account becomes a member of an organization, owned by CenturyLink. This results in consolidated billing. Please see review this page's [Considerations](./partner-cloud-integration-aws-existing.md) section.
-  Cost Optimization | All the benefits listed above, plus [Analytics](./cloudapplicationmanageranalyticsui.md) | Read-Only | All the automated changes above, plus creates a role with a read-only policy and supplies the ARN back to CenturyLink's Analytics tool so that data regarding usage may be retrieved from the account.
+  Cost Optimization | All the benefits listed above, plus [Analytics](./CloudApplicationManagerAnalyticsUI.md) | Read-Only | All the automated changes above, plus creates a role with a read-only policy and supplies the ARN back to CenturyLink's Analytics tool so that data regarding usage may be retrieved from the account.
   Full Hardening | All the benefits listed above, plus AWS-recommendations within the account for security, compliance, and support. | Admin | All the automated changes above for the purpose of [support](). Creates IAM Policies and Roles for CenturyLink Operations Staff to give them access to your account. Configures a secure password policy. Sets up an S3 audit bucket for CloudTrail and activates CloudTrail on that bucket, auditing all buckets in the linked account. Sets up the AWS Config service for regular compliance monitoring. Performs the steps [here](https://www.ctl.io/knowledge-base/cloud-application-manager/deploying-anywhere/using-your-aws-account/), providing standard permissions to Cloud Application Manager and syncs the provider.
+
+More details regarding these roles and permissions are [here](./partner-cloud-integration-aws-hardening-permissions.md)
 
 
 ### Steps
@@ -66,7 +68,7 @@ Below is a table that will help you determine what permissions you wish to provi
 **Full Hardening**
 1. Provide your AWS Account ID in the required field.
 2. Log into your AWS Account
-3. Navigate to IAM and Create Your Own Policy with the following Data:
+3. Navigate to IAM, Click Policies, and Create Your Own Policy with the following Data:
 
   - Policy Name: CTLDeveloperPolicy
 
