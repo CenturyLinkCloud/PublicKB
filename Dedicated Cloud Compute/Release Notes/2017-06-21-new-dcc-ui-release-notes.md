@@ -1,5 +1,5 @@
 {{{
-"title": "New DCC UI Release Notes",
+"title": "New DCC UI Release Notes: June 21 2017",
 "date": "06-21-2017",
 "author": "Anthony Hakim",
 "attachments": [],

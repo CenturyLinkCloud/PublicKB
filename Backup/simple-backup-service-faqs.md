@@ -1,5 +1,5 @@
 {{{
-  "title": "Simple backup FAQs",
+  "title": "Simple Backup Service FAQs",
   "date": "6-27-2017",
   "author": "John Gerger",
   "attachments": [],
