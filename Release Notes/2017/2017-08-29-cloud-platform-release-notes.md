@@ -34,5 +34,4 @@
 
     - __Hyperscale server provisioning in IL1 and UC1 has been disabled__
 
-    Due to a lack of available capacity, the ability to provision Hyperscale servers has been disabled in the UC1 and IL1 locations. Other IaaS server types have not been affected.
-    
+    The ability to provision Hyperscale servers has been disabled in the UC1 and IL1 locations. Other IaaS server types have not been affected.
