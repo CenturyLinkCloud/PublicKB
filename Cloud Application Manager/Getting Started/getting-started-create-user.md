@@ -17,7 +17,7 @@ ___
 
 **Where can I create new users?**
 
-* After buying Cloud Application Manager, browse to https://[companyname].elasticbox.com/#/signup and fill out the form. Once your have filled out the form check your email to validate your email address.
+* After buying Cloud Application Manager, browse to https://[companyname].cam.ctl.io/#/signup and fill out the form. Once your have filled out the form check your email to validate your email address.
 
 * Click the "Validate Email" button located in the email received and you will be automatically logged into Cloud Application Manager.
 
@@ -25,7 +25,7 @@ ___
 
 You have a few options:
 
-* Sign in to Cloud Application Manager at https://[companyname].elasticbox.com/#/login with a username and password created using the process above.
+* Sign in to Cloud Application Manager at https://[companyname].cam.ctl.io/#/login with a username and password created using the process above.
 * Log-in with an existing Google account.
 * Log-in with your current GitHub credentials if your org admin has enabled GitHub sign in for Cloud Application Manager.
 
