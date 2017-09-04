@@ -22,7 +22,7 @@
 
     - __Additional Algorithm Support: Weights Enabled__
     
-    Load Balancing as a Service has expanded it's Algorithm support to include the ability to apply weights to designated nodes.  The concept of weights can be applied all support Algorithms (URL Hash, Source IP, Least Conn & Round Robin).  The ability to apply weights will help to ensure that nodes designated with a higher weight are then apportioned a greater number of request.
+    Load Balancing as a Service has expanded its Algorithm support to include the ability to apply weights to designated nodes.  The concept of weights can be applied to all support Algorithms (URL Hash, Source IP, Least Conn, and Round Robin).  The ability to apply weights will help to ensure that nodes designated with a higher weight are then apportioned a greater number of request.
 
     - __Additional Health Check Support: HTTP__
 
