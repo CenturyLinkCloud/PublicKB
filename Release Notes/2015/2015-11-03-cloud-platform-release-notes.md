@@ -88,7 +88,7 @@
 
 ### Ecosystem (3)
 
-* __Appcito.__ [Appcito](http://www.appcito.com) CAFE (Cloud Application Front End) is an easy-to-deploy, unified and cloud-native service that enables cloud application teams to select and deploy enterprise grade L4 to L7 application network services.  This cloud-native, proxy-based service gateway improves application delivery with a web-scale solution for load balancing, application security and continuous availability.  [Get started](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-appcito-cafe/) with the Appcito blueprint today.
+* __Appcito.__ [Appcito](http://www.appcito.com) CAFE (Cloud Application Front End) is an easy-to-deploy, unified and cloud-native service that enables cloud application teams to select and deploy enterprise grade L4 to L7 application network services.  This cloud-native, proxy-based service gateway improves application delivery with a web-scale solution for load balancing, application security and continuous availability.
 
 * __CloudFuze.__ [CloudFuze](https://www.cloudfuze.com/), provides management tools for cloud-based file and storage services.  Their integration allows customers of CenturyLink’s cloud platform to utilize one tool to track and manage information residing in diverse cloud file-sharing services with a common management framework.
 Start controlling your storage sprawl by [deploying CloudFuze](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-cloudfuze-blueprint/) on CenturyLink today.

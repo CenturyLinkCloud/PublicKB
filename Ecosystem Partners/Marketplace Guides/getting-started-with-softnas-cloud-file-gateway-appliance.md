@@ -53,6 +53,7 @@ CenturyLink Cloud Users, Storage Administrators, IT Managers
 ### Prerequisites
 * Access to the CenturyLink Cloud platform as an authorized user
 * Control Portal account with password authentication (two-factor authentication not yet supported)
+* Your network must have internet access. Specialized networks unable to complete setup via runner will require a service task to be completed.
 
 
 ### Steps to Deploy a New SoftNAS Appliance
@@ -68,6 +69,8 @@ CenturyLink Cloud Users, Storage Administrators, IT Managers
   * Specify the Datacenter, Network and Server Group you'd like to use.
 
   * Optionally customize the Name Prefix for the server.
+  
+  * Designate any additional storage desired
 
   * Provide your login credentials for Account Alias, Username and Password
 
@@ -75,25 +78,22 @@ CenturyLink Cloud Users, Storage Administrators, IT Managers
 
   Once verified, click on the **run** button. You will see the deployment log scrolling through.
 
-5. Deployment Complete
-   * Once the Blueprint has finished execution you will receive a number of emails.
-   * The first will indicate the server has been deployed and the second will come a few minutes later once the appliance has been fully activated.
-   * If you do not receive an email like the one shown below you may have had a deployment error - review the *Blueprint Build Log* to for error messages.
-
-  <div style="float:left;width:45%;margin-left:1em;">
-    *Email #1: Appliance deploy started*
-    <img src="../../images/bpimager/appliance_deploy_started.png" style="border:0;width:100%;">
-  </div>
-  <div style="float:right;width:45%;margin-right:1em;">
-    *Email #2: Appliance deploy complete*
-    <img src="../../images/bpimager/appliance_deploy_complete.png" style="border:0;width:100%;">
-  </div>
-  <br style="clear:both;">
-
-   * Wait for the second email indicating your appliance is ready for use before attempting to access the resource.
    * **Note**: if you access the appliance via the Control Portal, it will report that it is an Ubuntu operating system. This is not accurate; the build process layers the appliance over the Ubuntu OS and modifies it to the operating system required by the appliance. This is expected behavior, and does not affect the operations of the appliance.
+   
+5. Adding Storage To Your Appliance.
+   * Additional storage can be allocated at the time of deployment as noted above.
+   * If additional storage is desired after initial deployment please [submit a support request](../../Support/how-do-i-report-a-support-issue.md) to reassign the /boot disk to 0:0
+     * The method of deployment for the appliance results in /boot being assigned to disk 0:1
+     * Without reassignment of the /boot disk to 0:0, adding a new disk in the Control Portal will result in the new disk being assigned to 0:0. Upon reboot the appliance will attempt to boot from the new disk 0:0.
+   * After the support request is completed to reasign the /boot disk, add storage to the SoftNAS VM by using Control Portal.
+     * Navigate to the SoftNAS server in the Control Portal.
+     * Click on Edit Storage button.
+     * Add a Partition and size appropriately.
+     * Click the Save button.
+     * Wait for the storage to be added.
+   * Login to the SoftNAS Cloud Gateway and configure the new storage.
 
-8. Accessing Your Appliance.
+6. Accessing Your Appliance.
    * Access your appliance by navigating to the server's private IP address with your web browser over https (e.g. https://youripaddress/).
    * Login to the SoftNAS web console with the username `softnas` and password `Pass4W0rd`
    * Follow the on-screen instructions to accept the SoftNAS user agreements and proceed to using the service. Documentation is available within the application, as well as a helpful checklist to get started.
@@ -107,7 +107,7 @@ CenturyLink Cloud Users, Storage Administrators, IT Managers
 
    * For more information on how to use the SoftNAS solution, please visit: [http://www.softnas.com/support/](http://www.softnas.com/support/)
 
-9. Allowing Access from Public Internet (optional).
+7. Allowing Access from Public Internet (optional).
    * [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for ports below:
    * For administrative access and use, open the following ports:
      * TCP Ports: 443

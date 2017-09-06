@@ -38,7 +38,7 @@ A: No. The replica instance is used for high availability purposes only. A separ
 
 **Q: I understand that SSL Encryption options are available. Will my data be encrypted in transit and/or at rest?**
 
-A: Upon database subscription, you will be given the option to download a self-signed cert that can be consumed by your target application. When implemented, your database connection is encrypted as well as your data in transit. Please see the KB article on [Connecting to MySQL Relational DB Over SSL](../Database/connecting-to-mysql-rdbs-over-ssl.md) for additional details.
+A: Upon database subscription, you will be given the option to download a self-signed cert that can be consumed by your target application. When implemented, your database connection is encrypted as well as your data in transit. Please see the KB article on [Connecting to MySQL Relational DB Over SSL](../Database/connecting-to-mysql-rdbs-over-ssl.md) for additional details. At this time data-at-rest encryption is not supported.
 
 **Q: How will I know when my database instance is reaching maximum capacity?**
 

@@ -24,9 +24,9 @@ LBaaS is a load balancing solution that is meant to provide both server load bal
   - Create, Read, Update, Delete
 * Highly Available, Resilient Infrastructure
 * Load Balancing Protocols: HTTP (any port), TCP (any port)
-*	Load Balancing Algorithms: Round Robin, Least Connections
-*	Persistence: Source IP (Cookie Insert coming soon!)
-* Basic Health Checks: TCP Listeners (TCP Send/Expect coming soon!)
+*	Load Balancing Algorithms: Round Robin, Least Connections, Source IP Hash
+*	Persistence: Source IP
+* Health Checks: SSL, HTTP & TCP
 *	Port Forwarding/Redirect
 
 ### Create a Load Balancer: User Interface
@@ -46,8 +46,8 @@ balancer’
 ![](../images/LBaaS/GettingStarted/image3.png)
 
 * (1)Select a location (Data Center) you wish to deploy the load balancer
-to 
-* (2) Provide it a Name 
+to
+* (2) Provide it a Name
 * (3) Provide description (if needed)
 * (4) Select Create Load Balancer
 
@@ -81,7 +81,7 @@ fields:
     centers, users will only be offered a selection of http for mode and
     will only be able to load balance against port 80 or 443).
 
-2.  **Method**: Select between round robin and least connection
+2.  **Method**: Select between round robin, least connection or Source IP
 
 3.  **Persistence**: Select between None and Source IP
 
@@ -682,6 +682,8 @@ LBaaS uses health checks to determine if a backend server is available to proces
 
 If a server fails a health check, and therefore is unable to serve requests, it is automatically disabled in the backend i.e. traffic will not be forwarded to it until it becomes healthy again. If all servers in a backend fail, the service will become unavailable until at least one of those backend servers becomes healthy again.
 
+Users can also apply custom health checks at both the pool and node level.  Applying a health check at the pool level applies to all of the nodes in the pool.  A custom health check applied at the node level will on be relevant on the designated node and will supersede any health check applied at the pool level.
+
 ### Health Check Configurations
 
 Unhealthy Threshold: The number of consecutive health check failures before moving the instance to the unhealthy state. Integer values between 2 and 10 are allowed.
@@ -691,7 +693,3 @@ Healthy Threshold: The number of consecutive health check successes requires bef
 Interval Seconds: The interval in seconds between health checks. Integer values between 5 and 300 are allowed.
 
 Target Port: This is the target protocol and port pair. Either HTTP or TCP and a selection in the range of valid ports from 1 through 65535. The format is “http:3381”, for example.
-
-### Support
-
-For questions about the service, contact the LBaaS team on Slack @ #load-balancing or via email at LBaaS-feedback@ctl.io.

@@ -1,6 +1,6 @@
 {{{
   "title": "Supported Operating Systems",
-  "date": "9-2-2016",
+  "date": "7-18-2017",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -26,6 +26,7 @@ The following operating systems are supported in CenturyLink Cloud:
 * Windows Server 2008 R2 Datacenter Edition
 * Windows Server 2012 Datacenter Edition
 * Windows Server 2012 R2 Datacenter Edition
+* Windows Server 2016 Datacenter Edition
 
 **NOTE: Only the 64-bit version of each OS is supported**
 
@@ -40,6 +41,10 @@ Yes - the only requirement is that each custom template needs to "map" to a supp
 ### What is your operating system retirement policy?
 
 This is listed [here](../Servers/operating-system-template-retirement-policy.md).
+
+### Can I perform an in-place upgrade of the Operating System?
+
+No, in-place upgrades of the Operating System are not supported.  This means that you cannot, for example, upgrade a Windows Server 2012 Standard edition to Windows Server 2012 Datacenter edition.  It will be necessary to deploy a new server if you need a different OS edition.
 
 ### I'd like to deploy an operating system that is not supported. What are my options?
 
