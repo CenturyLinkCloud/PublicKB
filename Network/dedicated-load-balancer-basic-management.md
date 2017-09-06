@@ -23,7 +23,9 @@
 </ul>
 <h3>Notes</h3>
 <ul>
-  <li>Traffic destined to the Load Balancer will hit the <strong>Virtual Server(VIP)</strong> first. From there it will determine which <strong>member</strong> of the attached <strong>Service Group</strong> to send traffic too based on the <strong>Load Balancing Method.</strong>
+  <li>Traffic destined to the Load Balancer will hit the <strong>Virtual Server(VIP)</strong> first. From there it will determine which <strong>member</strong> of the attached <strong>Service Group</strong> to send traffic to based on the <strong>Load Balancing Method.</strong>
+  </li>
+  <li>For external access to the VIP, use the <a href="./how-to-add-public-ip-to-virtual-machine.md"> Add Public IP</a> function of Control to perform a 1 to 1 NAT <strong>Public IP</strong> to the <strong> VIP</strong>
   </li>
 </ul>
 <h3>Detailed Steps</h3>

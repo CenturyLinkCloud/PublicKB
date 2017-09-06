@@ -15,7 +15,7 @@ Apache Modules
         <p>Apache Module</p>
       </td>
       <td>
-        <p>Apache 2.2.x</p>
+        <p>Apache 2.2.x - depreciated</p>
       </td>
       <td>
         <p>Apache 2.4.x</p>
