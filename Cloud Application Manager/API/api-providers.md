@@ -23,8 +23,10 @@ Manage and perform provider actions.
 |------------|--------------|
 | PUT /services/providers/{provider_id}/sync |Syncs an existing provider.|
 | GET /services/providers/{provider_id}/logs | Gets the logs of a provider. |
+| GET /services/providers/{provider_id}/unregisted-instances | Gets the unregistered instances of a provider. |
 | POST /services/providers/{provider_id}/images | Adds a new machine image to a provider. |
 | DELETE /services/providers/{provider_id}/images/{machine_image_id} | Updates an existing provider. |
+
 
 ### POST /services/providers
 
@@ -3390,6 +3392,96 @@ ElasticBox-Release: 4.0
       "id":"3fa58165-2af8-47eb-99e9-98f68e76c9b2",
       "schema":"http://elasticbox.net/schemas/provider-log"
    }
+]
+```
+
+**GET /services/providers/{provider_id}/unregisted-instances**
+
+Retrieves a list of unregistered instances found in a provider when you give the provider ID.
+
+**Normal Response Codes**
+
+* 200
+
+**Error Response Codes**
+
+* Forbidden (403)
+* Not Found (404)
+
+**Request**
+
+```
+Headers:
+
+Content-Type: application/json
+Elasticbox-Token: your_authentication_token
+ElasticBox-Release: 4.0
+```
+
+**Response parameters**
+
+|Parameter | Type | Description |
+|----------|------|-------------|
+|profile | object | Instance profile. |
+| profile.subnet | string | Instance subnet. |
+| profile.image | string | Instance image. |
+| profile.keypair | string | Instance keypair. |
+| profile.location | string| Instance location. |
+| profile.security_groups | string | Instance security groups. |
+| profile.flavor | string | Instance flavor. |
+| profile.manageos | boolean | Instance Manage. |
+| profile.autoscalable | boolean | Instance autoscalable. |
+| profile.cloud | boolean | Cloud type. |
+| profile.schema | string | Instance schema uri. |
+|provider_id | string | Instance provider unique identifier. |
+|name | string | Instance name. |
+|created | string | Creation date.|
+|deleted | string | Logical deletion date. |
+|type | string | Can be one of these types: Linux Compute, Windows Compute and CloudFormation Service. |
+|server_info | object | Instance public and private ips and public dns.|
+|updated | array | Date of the update.|
+|power_state | string | Can be running or stopped.|
+|organization | string | Organization to which instance belongs.|
+|external_id | string | Instance external id. |
+|id | string | Instance unique identifier.|
+|schema | string | Unregistered-instance schema url.|
+
+```
+[
+  {
+    "profile": {
+      "subnet": "ca-central-1a",
+      "cloud": "vpc-083cc961",
+      "image": "ami-bf5ee2db",
+      "ebs_optimized": false,
+      "instances": 1,
+      "keypair": "Operations",
+      "security_groups": [],
+      "volumes": [],
+      "flavor": "t2.micro",
+      "schema": "http://elasticbox.net/schemas/aws/ec2/profile",
+      "managed_os": false,
+      "location": "ca-central-1"
+    },
+    "provider_id": "8c501fe3-54d7-49eb-b5d3-05016becabe3",
+    "name": "AWS LDAP Windows",
+    "created": "2017-06-15 11:40:00.243971",
+    "deleted": null,
+    "type": "Windows Compute",
+    "server_info": {
+      "public_ip": "52.62.222.233",
+      "private_ip": "172.33.22.199",
+      "public_dns": "ec2-52-62-222-233.ca-central-1.compute.amazonaws.com"
+    },
+    "updated": "2017-06-15 11:40:00.243971",
+    "power_state": "running",
+    "organization": "centurylink",
+    "external_id": "i-06bee885e4e806ca0",
+    "id": "957625f1-3c6f-423c-a8ac-430983c369f7",
+    "schema": "http://elasticbox.net/schemas/unregistered-instance"
+  },
+  {...},
+  {...}
 ]
 ```
 
