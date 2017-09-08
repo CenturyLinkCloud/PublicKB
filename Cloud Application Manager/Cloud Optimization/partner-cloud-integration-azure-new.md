@@ -13,7 +13,7 @@
 
 ### Audience
 
-All of our customers are invited to use Cloud Integration via Cloud Application Manager.
+All of our customers are invited to use Cloud Optimization via Cloud Application Manager.
 
 For Azure, we are currently limited to serving billable customers who are not resellers (or customers of resellers) with offices within the United States. Also, the associated CenturyLink Cloud account cannot be a demo account or internal for CenturyLink employees. If you need special considerations for setting up an account, please email [cloudintegration@ctl.io](mailto:cloudintegration@ctl.io).
 
@@ -31,12 +31,15 @@ For Azure, we are currently limited to serving billable customers who are not re
 
 ### Important Information
 
+![Microsoft Azure Provider Options](../../images/cloud-application-manager/CINT_Azure_Provider_Options.png)
 
-Your charges in Azure will appear as a CenturyLink Public Cloud line item, labeled as "**Integrated Azure Services Usage**".
+Cloud Application Manager Provider Verbiage | Description | Related Links
+--- | --- | ---
+Use an existing Azure customer account | This is not an optimized option. Customer pays Amazon for usage. | [Click here](../../Cloud Application Manager/Deploying Anywhere/using-microsoft-azure.md)
+Migrate my account to CenturyLink for consolidated billing and Platform Support | **This is a Cloud Optimized option.** This allows an existing customer account to move under CenturyLink's care. | [Click Here](./partner-cloud-integration-azure-existing.md)
+Create a new Azure customer account | **This is a Cloud Optimized option.** Begins the new account creation automation, enabling the customer to immediately enter CenturyLink's care. | This document
 
-If you have an existing, Azure customer account for which you would like CenturyLink to assume support and billing responsibility, please contact your CenturyLink representative to discuss.
-
-CenturyLink will manage Azure permissions for our customers to ensure we can support all resources provisioned there. The [Azure permissions can be viewed here](./partner-cloud-integration-azure-capabilities.md) to determine what Azure products and services are offered, currently. If there are other resources you would like to allow CenturyLink to support, please email [CloudIntegration-feedback@ctl.io](mailto:cloudintegration@ctl.io) or submit a [service request](./partner-cloud-integration-azure-support.md).
+Charges for [Azure usage](./partner-cloud-integration-consolidated-billing.md) will appear on invoices from CenturyLink.
 
 ### Steps
 
@@ -47,9 +50,9 @@ Videos of these steps can be found [here](https://www.ctl.io/guides/).
 1. Log into Cloud Application Manager.
 2. Select the Providers tab
 3. Select New
-4. Select "Microsoft Azure"
+4. In the Provider drop-down, select "Microsoft Azure"
 
-  ![Microsoft Azure Provider](../../images/cloud-application-manager/CINT_New_ARM1.2.png)
+  ![Microsoft Azure Provider](../../images/cloud-application-manager/CINT_New_ARM1.3.png)
 
 5. Provide a name for the provider that identifies it for your purposes
 

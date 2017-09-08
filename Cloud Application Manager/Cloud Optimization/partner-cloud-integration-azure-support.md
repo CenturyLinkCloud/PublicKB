@@ -8,11 +8,11 @@
 
 ### Overview
 
-Partner Cloud Integration allows an Cloud Application Manager user to create Azure Customer Accounts for which CenturyLink will provide Platform-level support. The following is a description of what platform-level support is and how to use it.
+Partner Cloud Integration allows an Cloud Application Manager user to create Microsoft Azure Customer Accounts or transfer an existing one for which CenturyLink will provide Platform-level support. The following is a description of what platform-level support is and how to use it.
 
 ### Audience
 
-All of our customers are invited to use Cloud Integration.
+All of our customers are invited to use Cloud Optimization via Cloud Application Manager.
 
 ### Prerequisites
 
@@ -22,6 +22,10 @@ Knowledge of how to [get started with cloud-integrated Azure](./partner-cloud-in
 
 ### Important Information
 
+CenturyLink recommends Customers utilize vendor-supported Operating Systems such as Microsoft Windows and RedHat Linux. Neither CenturyLink nor its cloud partners can provide support on free Operating Systems.
+
+For critical outages, always call 844-874-5167 (US only), 00-800-7475-7474 (UK) or 001-800-7475-7474 (Singapore) to ensure the fastest response time.
+
 **Scope of Support**
 
 See table below.
@@ -30,7 +34,7 @@ Type of Support | Definition | Scope of CenturyLink Support
 --- | --- | ---
 Platform-Level | CenturyLink becomes the first responder to any issues related to permitted resources within re-sold (CSP) Azure customer accounts and the ability to use those resources via normal means. | **IN SCOPE**: See the list below. **OUTSIDE SCOPE**: Remote Administration, Monitoring and Remediation, Change Management and Patching. Also Customer accounts that are not within CenturyLink's list of CSP Azure Customers
 
-At this time, Managed Operating System support is not available for Azure.
+Managed Services - which include Remote Administration, Monitoring and Remediation, Change Management and Patching - are also available for Azure. If Management is desired, please review your options [here](../Managed Services/)
 
 **Scope of Platform-Level support**:
 
@@ -52,6 +56,8 @@ At this time, Managed Operating System support is not available for Azure.
 ### Contacting Cloud Application Manager Support
 
 We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+
+For critical outages, always call 844-874-5167 (US only), 00-800-7475-7474 (UK) or 001-800-7475-7474 (Singapore) to ensure the fastest response time.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

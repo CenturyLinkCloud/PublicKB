@@ -11,6 +11,15 @@ The following process automates the configuration of your AWS account for Cloud 
 
 If you prefer to set-up your environment manually, you can find those setup instructions [here](CloudApplicationManagerAnalyticsAWSSetup-Manual.md).  
 
+### Audience
+
+Customers responsible for AWS Accounts which have been approved by Amazon Web Services to perform a Share-Shift into CenturyLink's care.
+
+### Prerequisites
+
+* The customer must already have an AWS account that has been specifically mentioned on the AWS Share-Shift. (Only approved accounts are authorized for this process.)
+* The customer must have reviewed the process for transferring an [existing Amazon Web Services account](./partner-cloud-integration-aws-existing.md)
+
 #### CenturyLink Cloud Optimization Configuration Steps:
 1. Open the CloudFormation template found [here](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/new?stackName=CTL-CloudOptimization-IAM-Stack&templateURL=https%3A%2F%2Fs3.us-east-2.amazonaws.com%2Fctl-cloudoptimization%2FCTLCloudOptimizationIAMPolicy.template.json).
 2. Login to the targeted AWS account, if not already.
@@ -25,4 +34,6 @@ If you prefer to set-up your environment manually, you can find those setup inst
 ##### When Stack Creation Is Complete
 1. Go to the “Outputs” tab.
 2. Copy the “CTLCloudOptimizationRoleARN” Key’s Value (i.e., AWS ARN).
-3. Paste the ARN into the Cloud Optimization Portal or send it to your on-boarding representative.
+3. Paste the ARN into the Cloud Optimization Portal or into the Account Role ARN field of the AWS provider.
+
+  ![Account Role ARN](../../images/cloud-application-manager/CINT_AWS_AccountRoleARN.1.png)
