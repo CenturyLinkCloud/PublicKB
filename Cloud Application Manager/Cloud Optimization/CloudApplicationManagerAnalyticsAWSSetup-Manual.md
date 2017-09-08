@@ -43,7 +43,7 @@ If you prefer the set-up of your environment to be automated, you can find that 
 #### Retrieve ARN role
 1. Select the CenturyLink Cloud Optimization AMI Role.
 2. Record listed ARN.
-3. Send ARN to your on-boarding representative
+3. Send ARN to your on-boarding representative.
 
 
 ##### CenturyLink Cloud Optimization IAM Policy
