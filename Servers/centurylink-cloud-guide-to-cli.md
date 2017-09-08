@@ -60,7 +60,7 @@ Comparison of the two CLI tools:
 When running commands (GO CLI command/Python CLI command)
 -   alias - Account Alias, it can be found in the top left corner of the portal
 -   name - name of the server or group, when creating a new server, the length limit is 6 characters
--   location - name of the data centers (e.g. IL1, VA1, CA1)
+-   data-center - name of the data centers (e.g. IL1, VA1, CA1)
 -   network-name/network - name of the VLAN, [they can be listed using CLI](#read-commands)
 -   type - server type, either standard or hyperscale
 -   storage-type/backup-level - storage type, current option is standard
@@ -68,7 +68,7 @@ When running commands (GO CLI command/Python CLI command)
 -   configuration-id - ID of bare metal from output of `clc data-center get-baremetal-capabilities`
 
 Output and error message
--   alias - In both the output and error messages, alias can be server name/account/location alias
+-   alias - In both the output and error messages, alias can be server name/account/data-center alias
 -   name - depending on the query, it can me server name, location, account name etc
 
 
@@ -489,7 +489,13 @@ clc load-balancer list --data-center ca2
 ```
 clc load-balancer-pool list --data-center ca2 --load-balancer-name CLITest
 ```
-
+**List all cross data center firewall rule for an account or data center**
+```
+clc crossdc-firewall-policy list --destination-acount-alias XXXX
+```
+```
+clc crossdc-firewall-policy list --data-center CA1
+```
 
 ### Commands change the environment
 (**Warning**: use with care)
