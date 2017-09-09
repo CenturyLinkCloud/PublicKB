@@ -24,7 +24,7 @@ Customers responsible for AWS Accounts which have been approved by Amazon Web Se
 1. Open the CloudFormation template found [here](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/new?stackName=CTL-CloudOptimization-IAM-Stack&templateURL=https%3A%2F%2Fs3.us-east-2.amazonaws.com%2Fctl-cloudoptimization%2FCTLCloudOptimizationIAMPolicy.template.json).
 2. Login to the targeted AWS account, if not already.
 3. Click “Next.”
-4. Enter the External ID: (As listed by Cloud Optimization).
+4. Enter the External ID: (As provided by your on-boarding representative).
 5. Click “Next.”
 6. (Optional): Set any Options.
 7. Click “Next.”
@@ -34,6 +34,6 @@ Customers responsible for AWS Accounts which have been approved by Amazon Web Se
 ##### When Stack Creation Is Complete
 1. Go to the “Outputs” tab.
 2. Copy the “CTLCloudOptimizationRoleARN” Key’s Value (i.e., AWS ARN).
-3. Paste the ARN into the Cloud Optimization Portal or into the Account Role ARN field of the AWS provider.
+3. Send ARN to your on-boarding representative or into the Account Role ARN field of the AWS provider.
 
   ![Account Role ARN](../../images/cloud-application-manager/CINT_AWS_AccountRoleARN.1.png)
