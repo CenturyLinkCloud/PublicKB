@@ -24,7 +24,7 @@ Specifically, the Enterprise Edition exclusively offers several cool features.
 * Manage deployments org-wide through [tagging](../Administering Your Organization/resource-tags.md), [webhooks](../Administering Your Organization/webhooks.md) that integrate with custom IPAM or CMDB solutions, or admin boxes that let you make sure deployments consistently comply with company policies.
 
 **Upgrade to Enterprise Edition**
-In order to benefit from all the powerful features in Cloud Application Manager, we recommend upgrading to the Enterprise Edition. For more information, [contact sales](mailto:cloudsupport@centurylink.com).
+In order to benefit from all the powerful features in Cloud Application Manager, we recommend upgrading to the Enterprise Edition. For more information, [contact sales](mailto:incident@CenturyLink.com).
 
 If you’re running the Developer Edition as an [appliance](../Appliance/appliance-overview.md), you can directly upgrade from the product following these steps:
 
@@ -38,7 +38,7 @@ This sends an email to our sales team who will contact you to create an Cloud Ap
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
