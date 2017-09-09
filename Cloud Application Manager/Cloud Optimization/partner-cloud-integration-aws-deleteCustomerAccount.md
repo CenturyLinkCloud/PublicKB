@@ -18,14 +18,18 @@ All Cloud Application Manager Customers with AWS Providers supported by CenturyL
 
 You will need to have followed an Optimized AWS account.
 
-You will need to delete the associated Azure provider at some point, before or after submitting the request described below.
+You will need to delete the associated AWS provider at some point, before or after submitting the request described below.
 
 ### Important Information
 
-Submit a support request to remove your Azure Customer Account. To submit a support request, you may do so via the following methods:
+Submit a support request to remove your AWS Customer Account. To submit a support request, you may do so via the following methods:
 
-* Call 844-874-5167. This is a US domestic toll free number.
-* Email cloudsupport@centurylink.com
+* Call at the following numbers:
+    * United States: 1-888-638-6771 (This is a US domestic toll free number)
+    * Canada: 1-866-296-5335
+    * EMEA: 00800 72884743
+    * Asia Pacific: +65 6768 8099
+* Email incident@CenturyLink.com
 * Submit a support request via SavvisStation Portal
 
 Please provide the following information for the delete:

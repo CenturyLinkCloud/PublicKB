@@ -24,7 +24,7 @@ An existing [Microsoft Azure Provider created by Cloud Application Manager](./pa
 
 To obtain a user, please submit a support request via the following method:
 
-* Email cloudsupport@centurylink.com
+* Email incident@CenturyLink.com
 
 Our operations staff will confirm your identity according to protocol.
 Within the request, please provide the list of users who require Access and a secure, quick method for CenturyLink to provide temporary passwords. We will deliver the credentials only to the person who made the request.
@@ -35,7 +35,7 @@ All users will be given CenturyLink's [customized set of Azure permissions](./pa
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

@@ -12,7 +12,7 @@ Run Cloud Application Manager on-premise as a virtual appliance in your vCenter 
 **Try the Appliance for Free**
 The appliance is available as a free download. Experience all the same functionality as the paid Enterprise Edition, except for advanced features like managing your Cloud Application Manager organization, sharing and monitoring resources, and deploying to private clouds. To get these features, upgrade to the Enterprise Edition.
 **Download the Cloud Application Manager Virtual Appliance**
-Request a download link from [support](mailto:cloudsupport@centurylink.com).
+Request a download link from [support](mailto:incident@CenturyLink.com).
 
 ### Next Up
 * [Installing the Appliance in vCenter](./appliance-vsphere.md)
@@ -24,7 +24,7 @@ Request a download link from [support](mailto:cloudsupport@centurylink.com).
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
