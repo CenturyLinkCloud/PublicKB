@@ -59,3 +59,7 @@ Your aggregated charges for all the services from any of your Cloud Optimized ac
 
 * Integrated Microsoft Azure Services IaaS
 * Integrated Microsoft Azure Services SaaS
+
+  *Exchange Rates*
+
+  The way CenturyLink temporarily handles arrears billing for non-US customers is to hold onto a record of all usage until the 27th of the month following the month of actual usage. We then use the conversion rate on the 27th to convert the usage to USD in order for it to be to processed. If you informed CenturyLink that you wanted your invoices to be in your country's currency, that charge will be converted to your currency again on the last day of the month, using that date's exchange rate. CenturyLink makes no guarantee the exchange rates will be the same on the 27th and last days of the month.
