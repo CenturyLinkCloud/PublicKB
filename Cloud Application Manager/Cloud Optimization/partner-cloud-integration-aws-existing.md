@@ -29,7 +29,7 @@ For Amazon Web Services, we are currently limited to serving billable customers 
 
 * An understanding of the features and benefits of [Partner Cloud Integration](./partner-cloud-integration.md)
 
-* For each CenturyLink Cloud account integrated with Amazon Web Services, both CenturyLink's AWS Terms and Conditions for the relevant territory must be accepted. These will be presented to any user attempting to create a new "Azure Resource Manager" provider in Cloud Application Manager.
+* For each CenturyLink Cloud account integrated with Amazon Web Services, both CenturyLink's AWS Terms and Conditions for the relevant territory must be accepted. These will be presented to any user attempting to create a new "Amazon Web Services" provider in Cloud Application Manager.
 
 ### Important Information
 
@@ -47,13 +47,15 @@ Most Amazon Web Services offering are available through CenturyLink.
 
 **Considerations**
 
-Customers may need to consider the following:
+CenturyLink highly recommends Full Hardening for all Customer accounts.
 
-* Historical usage data - such as that used by AWS Cost Explorer - will be lost when accounts migrate under a new Master Payer. CenturyLink recommends Customers download all necessary usage data to a safe repository prior to completing the following steps.
-* Cost Allocation tags, such as those used for AWS Cost Explorer, may need to be re-activated following migration. Until they are re-activated, you will not be able to filter with those tags. However, CenturyLink due to potential conflicts with our Infrastructure, a review of your tags will need to be completed prior to enablement. Please contact your sales representative prior to migration to discuss your tagging requirements.
-* AWS reports provided within the AWS Management Console will not provide accurate representation of private pricing, CenturyLink discounts, or managed costs. Also, aggregated date for all accounts will no longer be automatically available through a single Console view.
-* Reserved Instances must always stay with the account at which they were purchased.  If the Customer purchased Reserved Instances from a Master Payer they own, they can still use them.
-* AWS will not allow existing, customer-owned Master Payers to remain as Master Payers when accounts are moved to CenturyLink billing. If they are to move, it must transition in as a linked account:
+* **Data changes** For non-hardened accounts, AWS Billing reports (such as Cost Explorer) within the AWS Management Console will not provide accurate representation of private pricing, CenturyLink discounts, or managed costs. Also, aggregated date for all accounts will no longer be automatically available through a single Console view. Fully Hardened or Optimized accounts have access to use Cloud Application Manager's [Analytics](./CloudApplicationManagerAnalyticsUI.md) tool for usage details that would have been provided by AWS Billing Services such as Cost Explorer.
+* **Historical usage data** Such as that had been used by AWS Cost Explorer - will be lost when accounts migrate under a new Master Payer. CenturyLink recommends Customers download all necessary usage data to a safe repository prior to completing the following steps.
+* **Tagging changes.** The quantity of Cost Allocation tags available to Customers, such as those used for AWS Cost Explorer, are limited. Please contact your sales representative or submit a support ticket prior to migration to discuss your tagging requirements.
+* **Reserved Instances**
+  * Purchased prior to transferring to CenturyLink must always stay with the account at which they were purchased.  If the Customer purchased Reserved Instances from a Master Payer they own, they can still use them.
+  * Customers may contact CenturyLink if they wish to have their Reserved Instance limit increased.
+* **Master Payers.** AWS will not allow existing, customer-owned Master Payers to remain as Master Payers when accounts are moved to CenturyLink billing. If they are to move, it must transition in as a linked account:
   * [unlink all their member from their Master Payer](http://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_remove.html),
   * [delete their organization in the master](http://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org_delete.html),
   * complete the steps below for all their accounts.
@@ -77,9 +79,9 @@ The following steps will walk through how to set up a Cloud Application Manager 
 
   ![Migrate AWS Account](../../images/cloud-application-manager/CINT_Existing_AWS_Provider.2.png)
 
-7. Enter the Account ID
+7. Enter the AWS Account ID
 
-8. Enter one of the [recommended ARNs](./partner-cloud-integration-connect-aws.md) into the Account Role ARN field. The actions to follow correspond with the what permissions you provided when you selected the associated ARN.
+8. Determine what level of permissions you will be providing to CenturyLink. Enter one of the [recommended ARNs](./partner-cloud-integration-connect-aws.md) into the Account Role ARN field. The actions to follow correspond with the what permissions you provided when you selected the associated ARN. Once you have completed that, return to this document and continue.
 
 9. Accept the Terms and Conditions
 
@@ -115,12 +117,12 @@ The following steps will walk through how to set up a Cloud Application Manager 
 
   ![Navigate to Support Center](../../images/cloud-application-manager/CINT_AWS_SupportPlan_Change2.png)
 
-
+After your account becomes a member of the CenturyLink-owned AWS organization, consolidated billing will occur immediately. If you selected Full Hardening for your account, you may need to wait a while for our automation to run because it performs a scheduled to check for any new, member organizations which have given the appropriate access.
 
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

@@ -39,7 +39,7 @@ ___
 
 **Help**
 
-Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md) for help. Or you may contact [support](mailto:cloudsupport@centurylink.com) from within the Cloud Application Manager interface.
+Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md) for help. Or you may contact [support](mailto:incident@CenturyLink.com) from within the Cloud Application Manager interface.
 
 ![getting-started-login-7.png](../../images/cloud-application-manager/getting-started-login-7.png)
 
