@@ -34,13 +34,13 @@ Install the agent on the instance to bring it online. Then re-run the lifecycle 
 Linux instances deployed from the Cloud Application Manager cloud service:
 
 ```
-curl -ks ebx.co | sudo bash
+curl -sSL https://cam.ctl.io | sudo bash
 ```
 Windows instances deployed from the Cloud Application Manager cloud service (run the command as a PowerShell administrator):
 
 ```
-
-(New-Object Net.WebClient).DownloadString("http://ebx.co") | iex
+[Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
+(New-Object Net.WebClient).DownloadString("https://cam.ctl.io") | iex
 
 ```
 
