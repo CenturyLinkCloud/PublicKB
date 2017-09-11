@@ -20,7 +20,7 @@ ___
 
 **Where to log in?**
 
-* To access Cloud Application Manager in the cloud, browse to http://elasticbox.com/login or your Cloud Application Manager company URL.
+* To access Cloud Application Manager in the cloud, browse to http://cam.ctl.io/login or your Cloud Application Manager company URL.
 * To access Cloud Application Manager inside a private network, ask your administrator for the login URL.
 
    **Note**: Enable JavaScript on the browser to use Cloud Application Manager. If not, some elements of the web interface may not work or render properly. We support Cloud Application Manager on the latest Chrome, Safari, Firefox, and Internet Explorer browsers.

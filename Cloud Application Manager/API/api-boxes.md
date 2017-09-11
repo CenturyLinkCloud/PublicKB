@@ -1170,7 +1170,7 @@ Reconfigures the stack based on the changes. See example update a CloudFormation
 
 ### Example: Create a CloudFormation box with template
 
-**1. POST https://elasticbox.com/services/boxes/**
+**1. POST https://cam.ctl.io/services/boxes/**
 
 Creating a box of the CloudFormation service type.
 
@@ -1219,7 +1219,7 @@ Body:
 
 ```
 
-**2. GET https://elasticbox.com/services/blobs/download/{blob_id}/file_name**
+**2. GET https://cam.ctl.io/services/blobs/download/{blob_id}/file_name**
 
 Fetches contents from a given URL. Once we have checked that the template is the right one, we could assign it to the CloudFormation box.
 
@@ -1276,7 +1276,7 @@ ElasticBox-Release: 4.0
 }
 ```
 
-**3. POST https://elasticbox.com/services/blobs/upload/template.json**
+**3. POST https://cam.ctl.io/services/blobs/upload/template.json**
 
 Another option is to create the template from the data submitted through a URL.
 
@@ -1344,7 +1344,7 @@ Body:
 }
 ```
 
-**4. PUT https://elasticbox.com/services/boxes/{box_id}**
+**4. PUT https://cam.ctl.io/services/boxes/{box_id}**
 
 Finally we are going to update the CloudFormation box with one of the templates we have obtained in the last two steps.
 
@@ -1429,7 +1429,7 @@ Body:
 
 ### Example: Modify the CloudFormation Template
 
-**1. POST http://elasticbox.com/services/blobs/upload/template.json**
+**1. POST http://cam.ctl.io/services/blobs/upload/template.json**
 
 Creates a blob from modified template data.
 
@@ -1496,7 +1496,7 @@ Body:
 }
 ```
 
-**2. PUT http://elasticbox.com/services/boxes/{box_id}**
+**2. PUT http://cam.ctl.io/services/boxes/{box_id}**
 
 Updates the CloudFormation box.
 
@@ -1581,7 +1581,7 @@ Body:
 
 ### Example: Launch a CloudFormation Box
 
-**1. POST https://elasticbox.com/services/instances**
+**1. POST https://cam.ctl.io/services/instances**
 
 Creates a new instance of the CloudFormation box.
 
@@ -1752,7 +1752,7 @@ Body:
 
 ### Example: Update a CloudFormation Stack in Real-Time
 
-**1. POST http://elasticbox.com/services/blobs/upload/simple_template.json**
+**1. POST http://cam.ctl.io/services/blobs/upload/simple_template.json**
 
 Uploads the modified template data.
 
@@ -1790,7 +1790,7 @@ Body:
 }
 ```
 
-**2. PUT http://elasticbox.com/services/instances/{instance_id}**
+**2. PUT http://cam.ctl.io/services/instances/{instance_id}**
 
 Updates the instance with the template changes.
 
@@ -2042,7 +2042,7 @@ ElasticBox-Release: 4.0
 }
 ```
 
-**3. PUT http://elasticbox.com/services/instances/{instance_id}/reconfigure**
+**3. PUT http://cam.ctl.io/services/instances/{instance_id}/reconfigure**
 
 Reconfigures the stack based on the changes.
 
