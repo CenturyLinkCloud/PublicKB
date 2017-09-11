@@ -368,7 +368,7 @@ Launch the Rails Dev Env box on your Mac laptop virtual machine running on Vagra
     # Every Vagrant virtual environment requires a box to build off of.
     config.vm.box = "ubuntu/trusty64"
     config.vm.network "forwarded_port", guest: 3000, host: 3100
-    config.vm.provision :shell, inline: 'curl -kLsS ebx.co | sudo bash -s -- -b "Rails Dev Env" -n laptop -t 04329c63-78b7-4313-bc09-8090e3a7e93d'
+    config.vm.provision :shell, inline: 'curl -sSL https://cam.ctl.io | sudo bash -s -- -b "Rails Dev Env" -n laptop -t 04329c63-78b7-4313-bc09-8090e3a7e93d'
 
     end
     ```

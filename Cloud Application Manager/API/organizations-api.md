@@ -88,7 +88,7 @@ ElasticBox-Release: 4.0
       "lu"
    ],
    "domains":[
-      "elasticbox.com"
+      "cam.ctl.io"
    ],
    "authentication":{
       "github":false,
@@ -98,7 +98,7 @@ ElasticBox-Release: 4.0
       "ldap_config":{
          "sources":[
             {
-               "host":"ldap://ldap.elasticbox.com",
+               "host":"ldap://ldap.cam.ctl.io",
                "email_field":"mail"
             }
          ]
@@ -327,7 +327,7 @@ ElasticBox-Release: 4.0
       "lu"
    ],
    "domains":[
-      "elasticbox.com"
+      "cam.ctl.io"
    ],
    "authentication":{
       "github":false,
@@ -338,7 +338,7 @@ ElasticBox-Release: 4.0
       "ldap_config":{
          "sources":[
             {
-               "host":"ldap://ldap.elasticbox.com",
+               "host":"ldap://ldap.cam.ctl.io",
                "email_field":"mail"
             }
          ]
@@ -591,7 +591,7 @@ ElasticBox-Release: 4.0
       "lu"
    ],
    "domains":[
-      "elasticbox.com"
+      "cam.ctl.io"
    ],
    "authentication":{
       "github":false,
@@ -602,7 +602,7 @@ ElasticBox-Release: 4.0
       "ldap_config":{
          "sources":[
             {
-               "host":"ldap://ldap.elasticbox.com",
+               "host":"ldap://ldap.cam.ctl.io",
                "email_field":"mail"
             }
          ]
@@ -838,7 +838,7 @@ ElasticBox-Release: 4.0
       "operations"
    ],
    "domains":[
-      "elasticbox.com"
+      "cam.ctl.io"
    ],
    "authentication":{
       "ldap_config":{
