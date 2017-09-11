@@ -32,7 +32,7 @@ Follow the video for detailed help.
    * 2048 MB RAM
    * 100 GB root disk
 
-2. Create an image of the appliance. Under Image Location, paste the appliance image download link you got from  [support](mailto:cloudsupport@centurylink.com). The appliance image is in QCOW2 compressed format.
+2. Create an image of the appliance. Under Image Location, paste the appliance image download link you got from  [support](mailto:incident@CenturyLink.com). The appliance image is in QCOW2 compressed format.
 3. Launch an instance of Cloud Application Manager from the appliance image and flavor.
 
 ### Next Steps
@@ -41,7 +41,7 @@ Follow the video for detailed help.
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

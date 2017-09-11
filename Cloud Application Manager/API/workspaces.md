@@ -62,7 +62,6 @@ ElasticBox-Release: 4.0
 | ldap_groups | array | List of fully qualified names of LDAP groups that are members of a workspace. Present in Team Workspaces |
 | id | string | Workspace unique identifier. |
 | add_provider | xsd:boolean | Indicates true if a personal workspace has a provider. |
-| organization | string | Deprecated. Is public for a Developer Edition account or shows the ID of the organization the account belongs to. |
 | deploy_instance | xsd:boolean | Shows true when there are deployed instances in the personal workspace. |
 | email | string | User email, this parameter is used only in personal workspaces. |
 | owner | string | Refers to the username that owns the workspace. Present in Team Workspaces |
@@ -231,7 +230,6 @@ ElasticBox-Release: 4.0
 | ldap_groups | array | List of fully qualified names of LDAP groups that are members of a team workspace.
 | id | string | Workspace unique identifier. |
 | add_provider | xsd:boolean | Shows true if a personal workspace has a provider. |
-| organization | string | Is public for a Developer Edition account or shows the ID of the organization the account belongs to. |
 | deploy_instance | xsd:boolean | Shows true when there are deployed instances in the personal workspace. |
 | email | string | Shows the email of the user that owns the personal workspace. |
 | owner | string | Is the owner of a team workspace. |
@@ -826,7 +824,7 @@ Headers:
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
