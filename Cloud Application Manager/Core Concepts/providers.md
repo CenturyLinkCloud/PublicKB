@@ -14,7 +14,6 @@ A provider is a public or private cloud account you register in Cloud Applicatio
 |-----|:-----:|:-----:|
 | [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md) | ✓ | ✓ |
 | [CenturyLink DCC](../Deploying Anywhere/using-dcc.md) | ✓ | ✓ |
-| [CenturyLink DCC Foundation](../../Dedicated Cloud Compute/DCC Foundation/dcc-foundation-in-cloud-application-manager.md) | ✓ | ✓ |
 | [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md) | ✓ | ✓ |
 | [Google Cloud](../Deploying Anywhere/using-google-cloud.md) | ✓ | ✓ |
 | [Microsoft Azure](../Deploying Anywhere/using-azure.md) | ✓ | ✓ |
@@ -24,7 +23,7 @@ A provider is a public or private cloud account you register in Cloud Applicatio
 | [CloudStack](../Deploying Anywhere/using-cloudstack.md) | ✓ | ✓ |
 | [Rackspace Cloud](../Deploying Anywhere/using-rackspace-cloud.md) | ✓ | ✓ |
 | [SoftLayer](../Deploying Anywhere/using-softlayer.md) | ✓ | ✓ |
-| [AWS GovCloud](../Deploying Anywhere/using-aws-govcloud.md) | ✓ <br> Available upon request | ✓ <br> Available upon request |
+
 
 ### Contacting Cloud Application Manager Support
 
