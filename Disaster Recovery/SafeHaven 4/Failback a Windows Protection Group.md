@@ -78,6 +78,6 @@ Leave the ** Automated Power Operations** box checked, click on ** Next**
 After Migrate is finished, and the ** Connection Status** is ** Active**, click ** Finish** to exit the wizard.
 ![Linux](../../images/SH4.0/WindowsFB/WFB17.png)
 
-This concludes the failback of a Windows Protection Group, but the production server is still booting from the iSCSI disk. Therefore, the next step is to make the production server [Boot from Primary Data Storage](//www.ctl.io/knowledge-base/disaster-recovery/safehaven-4/boot-from-primary-data-storage-for-a-windows-protection-group/).
+This concludes the failback of a Windows Protection Group, but the production server is still booting from the iSCSI disk. Therefore, the next step is to make the production server [Boot from Primary Data Storage](./Boot from Primary Data Storage for a Windows Protection Group.md).
 
 
