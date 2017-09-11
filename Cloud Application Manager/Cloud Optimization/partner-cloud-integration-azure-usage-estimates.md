@@ -1,5 +1,5 @@
 {{{
-  "title": "Partner Cloud Integration: Usage Estimates for Azure",
+  "title": "Partner Cloud Integration: Usage Estimates for Optimized Accounts",
   "date": "01-17-2017",
   "author": "Ben Swoboda",
   "attachments": [],
@@ -12,54 +12,27 @@ Use this API operation when you want to get the estimates of month-to-date and e
 
 ### Audience
 
-All CenturyLink customers are invited to use Cloud Integration.
+All of our customers are invited to use Cloud Optimization via Cloud Application Manager.
 
 ### Prerequisites
 
 * Knowledge of Cloud Application Manager's [partner cloud integration](./partner-cloud-integration.md) feature.
 
-* An existing [Microsoft Azure Provider created by Cloud Application Manager](./partner-cloud-integration-azure-new.md).
-
-* At least one hour worth of Azure usage.
+* An existing [Optimized Provider created by Cloud Application Manager](./partner-cloud-integration.md).
 
 ### Important Information
 
 The estimates provided are based on the best information we have from our partner. It is possible for the estimate to be different than the total presented on a customer's invoice.
 
-To get the estimates, users will currently need to perform an API call.
 
-### Authentication
+ **Month-To-Date:** In dollars, what CenturyLink estimates you would be billed if the month ended today. The month-to-date amount is based on information CenturyLink gets from Azure and is not intended to be 100% accurate.
 
-Reference [API Documentation about authentication](https://www.ctl.io/api-docs/v2/#authentication) to retrieve the Bearer token to include in all other requests.
 
-### URL
-
-**Structure**
-
-```
-Get https://cloudintegration.ctl.io/accounts/{accountAlias}/azure/billingestimate
-```
-
-**Example**
-
-```
-Get https://cloudintegration.ctl.io/accounts/CINT/azure/billingestimate
-```
-
-### URI Parameters
-
-Just pass the Authentication and Content-Type Headers
-
-### Response
-
-**Name** | **Type** | **Description**
- --- | --- | ---
- mtdEstimate | float | In dollars, what CenturyLink estimates you would be billed if the month ended today. The month-to-date amount is based on information CenturyLink gets from Azure and is not intended to be 100% accurate.
- eomEstimate | float | In dollars, what CenturyLink estimates you would be billed at the end of the month. The month-end estimation formula is currently prorated based on the number of days in the month and the number of days remaining in the month. Therefore, any spikes or troughs in usage at the beginning of the month will result in inaccurate estimation. As the month progresses, the estimate should get more and more accurate.
+ **End-of-month Estimate:** In dollars, what CenturyLink estimates you would be billed at the end of the month. The month-end estimation formula is prorated, based on the number of days in the month and the number of days remaining in the month. The formula assumes any recent spikes will be continued for the remainder of the month. As the month progresses, the estimate should get more and more accurate.
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

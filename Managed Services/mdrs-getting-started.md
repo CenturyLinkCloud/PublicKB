@@ -14,7 +14,6 @@ Managed Disaster Recovery Services (MDRS) are ideal for customers who lack Disas
 * Semi-annual testing
 * Quarterly audits
 * ATOD failover services
-* Failback services
 * Runbook automation and maintenance
 * Application recovery services
 

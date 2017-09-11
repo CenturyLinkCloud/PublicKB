@@ -54,6 +54,7 @@ The following are quick tips/notes based on past experiences with customers leve
 * Customers can **add features** to an existing SQL instance by running the Blueprint multiple times on the same server and only selecting the additional features required.
 * Customers can **add new** SQL instances by running the Blueprint multiple times on the same server.
 * Due to Microsoft's licensing constraints, changing the version/edition is not possible. Customers who want to change this must create a new server and SQL instance with the version/edition desired and migrate their data.
+* To remove the SQL license from your server, it must be deleted. Customers are responsible for migrating their data prior to deleting the server. Microsoft will not accept license termination unless the VM is fully removed.
 
 ### Installing Microsoft SQL Server using Execute Package
 1. Browse to the Group that houses the VM(s) you want to deploy SQL. Select **Execute Package**.
