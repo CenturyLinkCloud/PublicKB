@@ -136,7 +136,7 @@ ElasticBox-Release: 4.0
    "description": "Manage cloud hosting, Linux and Windows machines",
    "schema": "http://elasticbox.net/schemas/openstack/provider",
    "name": "example openstack",
-   "identity_url": "http://openstack-26.elasticbox.com:5000/v2.0",
+   "identity_url": "http://openstack-26.cam.ctl.io:5000/v2.0",
    "project": "your_OpenStack_tenant",
    "username": "your_OpenStack_username",
    "password": "your_OpenStack_password",
@@ -186,7 +186,7 @@ ElasticBox-Release: 4.0
   "description": "Manage cloud hosting, Linux and Windows machines",
   "schema": "http://elasticbox.net/schemas/vcloud/provider",
   "name": "VMwareVCloudProvider",
-  "url": "https://v-cloud.elasticbox.com",
+  "url": "https://v-cloud.cam.ctl.io",
   "vorg": "system",
   "username": "_the_username",
   "password": "_the_password",
@@ -392,7 +392,7 @@ To add an Azure subscription in Cloud Application Manager, you first have to upl
   "description": "Manage cloud hosting, Linux and Windows machines",
   "created": "2015-10-30 12:26:14.331420",
   "deleted": null,
-  "identity_url": "http://openstack-36.elasticbox.com:5000/v2.0",
+  "identity_url": "http://openstack-36.cam.ctl.io:5000/v2.0",
   "uri": "/services/providers/57106d2a-ab5d-486a-988f-31a729a0c29d",
   "name": "OpenStackProvider",
   "project": "admin",
@@ -3561,7 +3561,7 @@ DELETE /services/providers/{provider_id}/images/{machine_image_id}?location=us-e
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
