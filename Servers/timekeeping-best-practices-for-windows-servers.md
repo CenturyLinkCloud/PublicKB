@@ -14,7 +14,7 @@
    * Configure your cloud server to use a network time source.
    * Disabling hardware time sync
 
-## Disabling VMWare Tools hardware time sync
+### Disabling VMWare Tools hardware time sync
 
 All virtual machines start up using the BIOS time on the host, even before the operating system has started. VMWare tools has a feature to keep this time in sync with the host even after the operating system is started.  
 
