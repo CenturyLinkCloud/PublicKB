@@ -1,6 +1,6 @@
 {{{
   "title": "Bare Metal FAQ",
-  "date": "8-1-2017",
+  "date": "9-13-2017",
   "author": "CenturyLink",
   "attachments": [],
   "contentIsHTML": false,
@@ -180,7 +180,17 @@ Yes, Bare Metal servers do support multiple vNIC configurations. Additional vNIC
 
 **Can I bring my own OS image?**
 
-No, the available Operating Systems include Windows 2012 R2 Standard Edition, Windows 2012 R2 Datacenter Edition, RHEL6, CentOS 6, and Ubuntu 14. If there is a particular OS image you would like to see incorporated please [submit a feature request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/).
+No, the available Operating Systems on bare metal are:
+* Windows 2012 R2 Standard Edition
+* Windows 2012 R2 Datacenter Edition
+* Red Hat Enterprise Linux 6
+* Red Hat Enterprise Linux 7
+* CentOS 6
+* CentOS 7
+* Ubuntu 14 LTS
+* Ubuntu 16 LTS
+
+If there is a particular OS image you would like to see incorporated please [submit a feature request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/).
 
 As an alternative to a custom image, Bare Metal servers do support the [execute package](https://www.ctl.io/knowledge-base/servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/) action from the Control Portal as well as through the [API](https://www.ctl.io/api-docs/v2/#server-actions-execute-package), allowing you to install the same software or run the same scripts on many servers at once.
 
@@ -231,7 +241,7 @@ Click `Next >` two more times until you reach the Confirmation screen. Finally, 
 
 Once the server comes back up, log in as Administrator again. To finish the configuration you'll need to go back and create at least one virtual switch, but be very careful to follow the steps below so you don't lose network connectivity.
 
-First, open Network and Sharing Center from Control Panel and look for the connection labeled `team0 - VLAN <ID>` where `<ID>` is the VLAN tag. Click on the connection `team0 - VLAN <ID>`, then select Properties. 
+First, open Network and Sharing Center from Control Panel and look for the connection labeled `team0 - VLAN <ID>` where `<ID>` is the VLAN tag. Click on the connection `team0 - VLAN <ID>`, then select Properties.
 
 ![Note the VLAN ID](../images/bare-metal-faq-4.png)
 
