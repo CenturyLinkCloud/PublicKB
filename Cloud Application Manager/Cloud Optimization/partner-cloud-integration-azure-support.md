@@ -38,7 +38,7 @@ Type of Support | Definition | Scope of CenturyLink Support
 --- | --- | ---
 Platform-Level | CenturyLink becomes the first responder to any issues related to permitted resources within re-sold (CSP) Azure customer accounts and the ability to use those resources via normal means. | **IN SCOPE**: See the list below. **OUTSIDE SCOPE**: Remote Administration, Monitoring and Remediation, Change Management and Patching. Also Customer accounts that are not within CenturyLink's list of CSP Azure Customers
 
-Managed Services - which include Remote Administration, Monitoring and Remediation, Change Management and Patching - are also available for Azure. If Management is desired, please review your options [here](https://www.ctl.io/cloud-application-manager/managed-services/).
+Managed Services - which include Remote Administration, Monitoring and Remediation, Change Management and Patching - are also available for Azure. If Management is desired, please review your options [here](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/).
 
 **Scope of Platform-Level support**:
 
