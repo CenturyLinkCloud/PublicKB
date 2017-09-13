@@ -40,7 +40,7 @@ Type of Support | Definition | Scope of CenturyLink Support
 --- | --- | ---
 Platform-Level | CenturyLink may act as the first responder to any issues related to permitted resources within re-sold AWS customer accounts and the ability to use those resources via normal means. | **IN SCOPE**: See the list below. **OUTSIDE SCOPE**: Remote Administration, Monitoring and Remediation, Change Management and Patching. Also Customer accounts that are not Optimized by Cloud Application Manager.
 
-Managed Services - which include Remote Administration, Monitoring and Remediation, Change Management and Patching - are also available for AWS. If Management is desired, please review your options [here](../Managed Services/)
+Managed Services - which include Remote Administration, Monitoring and Remediation, Change Management and Patching - are also available for AWS. If Management is desired, please review your options [here](https://www.ctl.io/cloud-application-manager/managed-services/).
 
 **Scope of Platform-Level support**:
 
