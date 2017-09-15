@@ -1,6 +1,6 @@
 {{{
-  "title": "Cloud Optimization AWS Configuration - Manual",
-  "date": "09-08-2017",
+  "title": "Cloud Application Manager Analytics AWS Configuration - Manual",
+  "date": "09-15-2017",
   "author": "Chris Meyer",
   "attachments": [],
   "contentIsHTML": false
@@ -15,38 +15,38 @@ If you prefer the set-up of your environment to be automated, you can find that 
 1. Login to the target AWS account [here](https://console.aws.amazon.com/iam).
 2. Access the IAM dashboard.
 
-#### Create CenturyLink Cloud Optimization IAM Policy
+#### Create CenturyLink Cloud Analytics IAM Policy
 1. Navigate to IAM "Policy."
 2. Click "Create Policy."
 3. Select "Create Your Own Policy."
-4. Name the Policy as follows: CTLCloudOptimizationPolicy.
+4. Name the Policy as follows: CTLCloudAnalyticsPolicy.
 5. Add the following Description: Access Policy for CTL's Cloud Optimization Functionality.
-6. Paste the CenturyLink Cloud Optimization IAM policy documented [below](#centuryLink-cloud-optimization-iam-policy).
+6. Paste the CenturyLink Cloud Analytics IAM policy documented [below](#centuryLink-cloud-analytics-iam-policy).
 7. Click "Validate Policy."
 8. Click "Create Policy."
 
-#### Create CenturyLink Cloud Optimization IAM Role
+#### Create CenturyLink Cloud Analytics IAM Role
 1. Navigate to IAM "Roles."
 2. Click "Create New Role."
 3. Click "Role for Cross-account access."
 4. Select "Provide access between your AWS account and 3rd party AWS account."
 5. Add Account ID as follows: 540339316802.
-6. Add External ID as follows: [as provided by Cloud Optimization].
+6. Add External ID as follows: [as provided by Cloud Analytics or your on-boarding representative].
 7. Do NOT check "require MFA."
 8. Click "Next Steps."
-9. Select "CTLCloudOptimizationPolicy."
+9. Select "CTLCloudAnalyticsPolicy."
 10. Click "Next Step."
-11. Name the Role as "CTLCloudOptimization."
-12. Add the following Description: "CTL's Cloud Optimization Functionality."
+11. Name the Role as "CTLCloudAnalytics"
+12. Add the following Description: "CTL's Cloud Analytics Functionality."
 13. Click "Create Role."
 
 #### Retrieve ARN role
-1. Select the CenturyLink Cloud Optimization AMI Role.
+1. Select the CenturyLink Cloud Analytics AMI Role.
 2. Record listed ARN.
 3. Send ARN to your on-boarding representative.
 
 
-##### CenturyLink Cloud Optimization IAM Policy
+##### CenturyLink Cloud Analytics IAM Policy
 ```
 
 {

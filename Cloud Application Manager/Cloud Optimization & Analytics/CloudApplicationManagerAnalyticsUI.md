@@ -1,5 +1,5 @@
 {{{
-  "title": "CenturyLink Cloud Optimization Introduction",
+  "title": "Cloud Application Manager Analytics Introduction",
   "date": "06-01-2017",
   "author": "Chris Meyer",
   "attachments": [],
@@ -34,7 +34,7 @@ If a provider account is duplicated in one or more workspaces they will be highl
 ##### Logging into the Analytics UI
 ![GlobalNavScreenShot](../../images/GlobalNavScreenShot170601-1.png)
 
-After logging into Cloud Application Manager you can navigate to the Anlaytics UI by clicking on the Optimization link as shown below.  
+After logging into Cloud Application Manager you can navigate to the Analytics UI by clicking on the Optimization link as shown below.  
 
 
 #### Adding provider to CAM
