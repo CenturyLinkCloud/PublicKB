@@ -26,8 +26,11 @@ For existing accounts moving under our care you may be required to change your a
 
 CenturyLink recommends Customers utilize vendor-supported Operating Systems such as Microsoft Windows and RedHat Linux. Neither your company, CenturyLink nor our cloud partners can obtain vendor support on free Operating Systems.
 
-For critical outages, always call 844-874-5167 (US only), 00-800-7475-7474 (UK) or 001-800-7475-7474 (Singapore) to ensure the fastest response time.
-
+For critical outages, to ensure the fastest response time always call
+- United States: 1-888-638-6771
+- Canada: 1-866-296-5335
+- EMEA: 00800 72884743
+- Asia Pacific: +65 6768 8099
 
 **Scope of Support**
 
@@ -37,7 +40,7 @@ Type of Support | Definition | Scope of CenturyLink Support
 --- | --- | ---
 Platform-Level | CenturyLink may act as the first responder to any issues related to permitted resources within re-sold AWS customer accounts and the ability to use those resources via normal means. | **IN SCOPE**: See the list below. **OUTSIDE SCOPE**: Remote Administration, Monitoring and Remediation, Change Management and Patching. Also Customer accounts that are not Optimized by Cloud Application Manager.
 
-Managed Services - which include Remote Administration, Monitoring and Remediation, Change Management and Patching - are also available for AWS. If Management is desired, please review your options [here](../Managed Services/)
+Managed Services - which include Remote Administration, Monitoring and Remediation, Change Management and Patching - are also available for AWS. If Management is desired, please review your options [here](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/).
 
 **Scope of Platform-Level support**:
 
@@ -60,9 +63,13 @@ Managed Services - which include Remote Administration, Monitoring and Remediati
 ### Contacting Cloud Application Manager Support
 
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
-For critical outages, always call 844-874-5167 (US only), 00-800-7475-7474 (UK) or 001-800-7475-7474 (Singapore) to ensure the fastest response time.
+For critical outages, to ensure the fastest response time always call
+- United States: 1-888-638-6771
+- Canada: 1-866-296-5335
+- EMEA: 00800 72884743
+- Asia Pacific: +65 6768 8099
 
 For issues related to API calls, send the request body along with details related to the issue.
 

@@ -52,7 +52,7 @@ Managed Services Anywhere
 
 Additional monitoring capabilities for Managed Operating System on AWS
 
-- CenturyLink Operators now can configure additional Cloud Watch alerts for Managed Operating System on AWS. Part of our support for Managed Operating System customers is our automated monitoring process, which constantly monitors a customer’s infrastructure and alerts our Support personnel to any issues. Our automated monitoring process relies on an agent installed on the AWS EC2 instance as part of “Delegate OS Management” functionality. We now can use AWS Cloud Watch to get additional insights into the managed instance. If you would like to take advantage of these additional monitoring capabilities, please reach out to us using our support options within Cloud Application Manager or write us at CloudSupport@centurylink.com
+- CenturyLink Operators now can configure additional Cloud Watch alerts for Managed Operating System on AWS. Part of our support for Managed Operating System customers is our automated monitoring process, which constantly monitors a customer’s infrastructure and alerts our Support personnel to any issues. Our automated monitoring process relies on an agent installed on the AWS EC2 instance as part of “Delegate OS Management” functionality. We now can use AWS Cloud Watch to get additional insights into the managed instance. If you would like to take advantage of these additional monitoring capabilities, please reach out to us using our support options within Cloud Application Manager or write us at incident@centurylink.com
 
 Cloud Optimization
 
@@ -64,4 +64,10 @@ Impact
 
 Support
 
-- As always if you have any questions, please feel free to write us at CloudSupport@CenturyLink.com. In addition to reaching us via email, you can now reach us via Phone at the following numbers: 844-874-5167 (US only), 00-800-7475-7474 (UK) or 001-800-7475-7474 (Singapore). For further information please visit https://www.ctl.io/cloud-application-manager/#Support
+- As always if you have any questions, please feel free to write us at incident@CenturyLink.com. In addition to reaching us via email, you can now reach us via Phone at the following numbers: 
+    - United States: 1-888-638-6771
+    - Canada: 1-866-296-5335
+    - EMEA: 00800 72884743
+    - Asia Pacific: +65 6768 8099
+
+- For further information please visit https://www.ctl.io/cloud-application-manager/#Support

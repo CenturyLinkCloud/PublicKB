@@ -68,7 +68,7 @@ In order for Cloud Application Manager to configure, deploy, and manage box conf
 2. Run this shell script as the root admin in the terminal.
 
    ```
-   curl -L https://elasticbox.com/agent/linux/cloudstack/template_customization_script.sh | sudo bash
+   curl -L https://cam.ctl.io/agent/linux/cloudstack/template_customization_script.sh | sudo bash
    ```
 
 ### Windows
@@ -76,7 +76,7 @@ In order for Cloud Application Manager to configure, deploy, and manage box conf
 **Steps**
 1. Log in to the Windows virtual machine template using remote desktop protocol (RDP).
 
-2. [Download the script from this URL](https://elasticbox.com/agent/windows/cloudstack/template_customization_script.ps1).
+2. [Download the script from this URL](https://cam.ctl.io/agent/windows/cloudstack/template_customization_script.ps1).
 
 3. Right-click the script file and click **Run PowerShell**.
    * **Note:** For information on creating custom templates, see the [Apache CloudStack help](https://docs.cloudstack.apache.org/projects/cloudstack-administration/en/latest/templates.html#exporting-templates).
@@ -112,7 +112,7 @@ When you’re ready to [launch an instance](./deploying-managing-instances.md) i
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com)
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com)
 
 For issues related to API calls, send the request body along with details related to the issue.
 

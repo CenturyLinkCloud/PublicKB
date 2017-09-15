@@ -43,6 +43,14 @@ Cloud Application Manager Provider Option | Description | Related Links
 
 Any Amazon Web Service offering is available through CenturyLink.
 
+**Considerations**
+
+New AWS Accounts will automatically be Fully Hardened.
+
+* **Data Access** Certain AWS Management Console reports will be restricted because they will not provide accurate representation of pricing, CenturyLink-provided discounts, or managed costs. Fully Hardened have access to use Cloud Application Manager's [Analytics](./CloudApplicationManagerAnalyticsUI.md) tool for usage details that would have been provided by AWS Billing Services such as Cost Explorer. Additionally, customers will not be given access to consolidated data within the CenturyLink-owned Master Payers.
+* **Reserved Instances**
+  * Customers may contact CenturyLink if they wish to have their Reserved Instance limit increased.
+
 ### Steps
 
 The following steps will walk through how to set up a new Cloud Application Manager provider that has been designed to create an Amazon Web Services Customer account within the scope of CenturyLink's responsibility.
@@ -80,7 +88,7 @@ An administrative username and password will then be given to the Cloud Applicat
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
