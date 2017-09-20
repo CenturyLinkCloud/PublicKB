@@ -40,25 +40,36 @@ Your aggregated charges for all the services from any of your Cloud Optimized ac
 
 **Monthly Usage**
 
+*AWS*
 * Integrated AWS Services IaaS
 * Integrated AWS Services SaaS
 * Integrated AWS EC2 Services
 * Integrated, AWS Reserve Instance Fees - IaaS
 * Integrated, AWS Reserve Instances - IaaS
 
+*Azure*
+* Integrated Microsoft Azure Services IaaS
+* Integrated Microsoft Azure Services SaaS
+
 
 **Reconciliation**
 
-* Update to Last Month’s AWS Services IaaS
-* Update for Last Month’s AWS Services SaaS
-* Update for Last Month’s AWS EC2 Services
-* Update for Last Month’s AWS Reserve Instance Fees - IaaS
-* Update for Last Month’s AWS Reserve Instances - IaaS
+*AWS*
+* Update to Previous Month AWS Services IaaS
+* Update to Previous Month  AWS Services SaaS
+* Update to Previous Month  AWS EC2 Services
+* Update to Previous Month AWS Reserve Instance Fees - IaaS
+* Update to Previous Month  AWS Reserve Instances - IaaS
+
+*AZURE* 
+* Update to Previous Month Microsoft Azure Services SaaS
+* Update to Previous Month Microsoft Azure Services IaaS
+
 
 **Arrears**
 
-* Integrated Microsoft Azure Services IaaS
-* Integrated Microsoft Azure Services SaaS
+Arrears billing will no longer be used for Azure after October 1, 2017.
+
 
   *Exchange Rates*
 
