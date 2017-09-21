@@ -53,7 +53,7 @@ More details regarding these roles and permissions are [here](./partner-cloud-in
 2. Open the CloudFormation template found [here](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/new?stackName=CTL-CloudOptimization-IAM-Stack&templateURL=https%3A%2F%2Fs3.us-east-2.amazonaws.com%2Fctl-cloudoptimization%2FCTLCloudOptimizationIAMPolicy.template.json).
 3. Login to the targeted AWS account, if not already.
 4. Click “Next.”
-5. Enter the External ID: (As listed by Cloud Optimization).
+5. Enter the External ID:  (As provided by your on-boarding representative).
 6. Click “Next.”
 7. (Optional): Set any Options.
 8. Click “Next.”
