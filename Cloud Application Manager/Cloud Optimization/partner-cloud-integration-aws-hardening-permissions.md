@@ -39,7 +39,7 @@ For new accounts created through Cloud Application Manager, MFA access is set up
 **CenturyLink Account Access by Role**
 
 CenturyLink or Customer Role | Type of User | Optimization scenario | IAM Permissions and Restrictions
---- | --- | ---
+--- | --- | --- | ---
 None | None | Consolidated Billing Only | None
 Cloud Analytics | Automated Tool | Cost Optimization or Full Hardening | Read-only capabilities for all products and services
 Customer Admin (see below) | Customer-defined | Full Hardening | Add, Change, and Delete capabilities for all services. No capabilities to review or usage, billing, payment methods, or budgets.
