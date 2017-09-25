@@ -72,8 +72,10 @@
 
 ### Announcements (1)
 
-Since introducing Cost Optimization and Analytics to Cloud Application Manager in January 2017, we have constantly improved the way we handle [consolidated billing]( https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-consolidated-billing/). Our latest update affects [Optimized, Azure customers](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration/). Instead of doing our billing in arrears, we will be gathering usage data daily. The benefit to our customers will be more timely charges on invoices plus usage estimates, visible through Cloud Application Manager.
+* __Cloud Application Manager__
 
-As a result of this transition, the next invoice from CenturyLink will include both arrears charges and charges from the most recent month for Optimized Azure. This means that on the next invoice (scheduled to go out October 1), some customers may see charges for August Azure usage and September usage in the same invoice. The charges will be represented as different line items.
+  Since introducing Cost Optimization and Analytics to Cloud Application Manager in January 2017, we have constantly improved the way we handle [consolidated billing]( https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-consolidated-billing/). Our latest update affects [Optimized, Azure customers](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration/). Instead of doing our billing in arrears, we will be gathering usage data daily. The benefit to our customers will be more timely charges on invoices plus usage estimates, visible through Cloud Application Manager.
 
-We are sorry about the inconveniences that this may cause and we encourage you to plan in advance. In Following October 1, estimates for your next bill will be included in Cloud Application Manager’s [billing dashboard](https://cam.ctl.io/#/billing).
+  As a result of this transition, the next invoice from CenturyLink will include both arrears charges and charges from the most recent month for Optimized Azure. This means that on the next invoice (scheduled to go out October 1), some customers may see charges for August Azure usage and September usage in the same invoice. The charges will be represented as different line items.
+
+  We are sorry about the inconveniences that this may cause and we encourage you to plan in advance. In Following October 1, estimates for your next bill will be included in Cloud Application Manager’s [billing dashboard](https://cam.ctl.io/#/billing).
