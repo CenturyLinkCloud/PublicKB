@@ -18,6 +18,7 @@ However, some OVFs may still require significant “prep” work, depending on t
 
 ### Your OVF Must Meet the Following Requirements to be Imported Successfully
 * File must be an OVF; OVAs are not supported
+* Manifest must use the SHA1 hashing algorithm
 * The VM must pass a “checksum” test to ensure there was no packet loss during the FTP transfer
 * Must be less than 1 TB in total size
 * Must not include a customized or specialized appliances
