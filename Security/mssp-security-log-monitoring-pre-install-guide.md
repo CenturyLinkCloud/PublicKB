@@ -14,7 +14,7 @@ The following describes the steps customers need to take to help ensure successf
 
 1. Customer works with CenturyLink Sales Engineer to complete onboarding questionnaire.
 
-    Pre-install information needed from customer:
+    **Pre-install information needed from customer:**
 
     * Contact details for customer point of contact for service deployment and configuration
     * Types of customer appliances that will utilize this service
@@ -22,7 +22,7 @@ The following describes the steps customers need to take to help ensure successf
     * Approximate quantity of each device type listed above and inventory of DNS, AD/LDAP, Email & Web servers
     * Compliance standards customer is held to, if any (ex. PCI, HIPAA, FISMA) and any compliance reporting requirements
 
-    Additional information needed from customer at time of install:
+    **Additional information needed from customer at time of install:**
 
     * Contact details for customer personnel requiring portal access (name, email address)
     * Incident escalation procedures, if any
@@ -50,8 +50,8 @@ The following describes the steps customers need to take to help ensure successf
 
 5. Customer configures their internal devices (log forwarding & firewall rules).
 
-    Customers are required to configure the technology transmitting or being connected to collect logs. This includes firewall configuration to allow log collection platform to receive log data. Customer  firewall rule requirements include:
+    Customers are required to configure the technology transmitting or being connected to collect logs. This includes firewall configuration to allow log collection platform to receive log data. Customer firewall rule requirements include:
 
     * CenturyLink MSSP appliance listens for logs on TCP/UDP 514, TCP 601 and TCP 6514 depending on the type of syslog being sent. Any firewalls between the source devices and the appliance should be opened for those ports.
-    * TCP 6514, TCP 6515, and TCP 443 need to be opened for the appliance to communicate with the MSSP portal (mss.centurylink.com/174.140.132.59) but only the appliance initiates the connection.
+    * TCP 6514, TCP 6515, and TCP 443 need to be opened for the appliance to communicate with the MSSP portal (mss.centurylink.com/174.140.132.59), but only the appliance initiates the connection.
     * UDP 53 needs to be opened from the appliance to the DNS servers speci ed in the appliance setup wizard.

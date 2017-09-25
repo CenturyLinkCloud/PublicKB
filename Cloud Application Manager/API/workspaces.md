@@ -62,7 +62,6 @@ ElasticBox-Release: 4.0
 | ldap_groups | array | List of fully qualified names of LDAP groups that are members of a workspace. Present in Team Workspaces |
 | id | string | Workspace unique identifier. |
 | add_provider | xsd:boolean | Indicates true if a personal workspace has a provider. |
-| organization | string | Deprecated. Is public for a Developer Edition account or shows the ID of the organization the account belongs to. |
 | deploy_instance | xsd:boolean | Shows true when there are deployed instances in the personal workspace. |
 | email | string | User email, this parameter is used only in personal workspaces. |
 | owner | string | Refers to the username that owns the workspace. Present in Team Workspaces |
@@ -231,7 +230,6 @@ ElasticBox-Release: 4.0
 | ldap_groups | array | List of fully qualified names of LDAP groups that are members of a team workspace.
 | id | string | Workspace unique identifier. |
 | add_provider | xsd:boolean | Shows true if a personal workspace has a provider. |
-| organization | string | Is public for a Developer Edition account or shows the ID of the organization the account belongs to. |
 | deploy_instance | xsd:boolean | Shows true when there are deployed instances in the personal workspace. |
 | email | string | Shows the email of the user that owns the personal workspace. |
 | owner | string | Is the owner of a team workspace. |
@@ -436,7 +434,7 @@ ElasticBox-Release: 4.0
 
    {
       "updated":"2014-03-21 17:27:18.731525",
-      "description":"Manage EC2, S3, Dynamo DB, and RDS instances",
+      "description":"Manage EC2, ECS and Cloudformation instances",
       "created":"2014-03-21 17:27:06.848858",
       "uri":"--Provider uri--",
       "name":"Amazon",
@@ -446,24 +444,6 @@ ElasticBox-Release: 4.0
          },
          {
             "name":"Windows Compute"
-         },
-         {
-            "name":"MySQL Database Service"
-         },
-         {
-            "name":"Microsoft SQL Database Service"
-         },
-         {
-            "name":"Oracle Database Service"
-         },
-         {
-            "name":"PostgreSQL Database Service"
-         },
-         {
-            "name":"S3 Bucket"
-         },
-         {
-            "name":"Dynamo DB Domain"
          }
       ],
       "state":"ready",
@@ -707,7 +687,7 @@ Headers:
 | operation | string | Last operation, there are seven types of operations: deploy, shutdown, poweron, reinstall, reconfigure, terminate and terminate_service. |
 | name | string | Instance name. |
 | service | Object | Instance service. |
-| service.type | string | Required. Can be one of these types: Linux Compute, Windows Compute, CloudFormation Service, MySQL Database Service, Microsoft SQL Database Service, Oracle Database Service, PostgreSQL Database Service, Memcached Service, S3 Bucket, and Dynamo DB Domain. |
+| service.type | string | Required. Can be one of these types: Linux Compute, Windows Compute and CloudFormation Service. |
 | service.id | string | Service type. |
 | service.machines | array | List of service machines. |
 | machine | object | Machine contained in the service machines list. |
@@ -718,7 +698,7 @@ Headers:
 | workflow.event | string | Workflow action event. |
 | workflow.script | string | Workflow action script uri. |
 | tags | array | Instance tags. |
-| boxes | array | List of boxes where each box object contains a service parameter. The service parameter can have one of these values: Linux Compute, Windows Compute, CloudFormation Service, MySQL Database Service, Microsoft SQL Database Service, Oracle Database Service, PostgreSQL Database Service, Memcached Service, S3 Bucket, and Dynamo DB Domain. |
+| boxes | array | List of boxes where each box object contains a service parameter. The service parameter can have one of these values: Linux Compute, Windows Compute and CloudFormation Service. |
 | uri | string | Instance uri. |
 | environment | string | Environment name. |
 | state | string | Instance state, there are three possible states: processing, done and unavailable. |
@@ -844,7 +824,7 @@ Headers:
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

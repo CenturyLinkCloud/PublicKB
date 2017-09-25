@@ -1,6 +1,6 @@
 {{{
-  "title": "Simple backup FAQs",
-  "date": "12-14-2016",
+  "title": "Simple Backup Service FAQs",
+  "date": "6-27-2017",
   "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
@@ -16,6 +16,7 @@
 * [Restores](#restores)
 * [Policies](#policies)
 * [Frequency](#frequency)
+* [Scheduling](#scheduling)
 * [Retention](#retention)
 * [Inclusions and Exclusions](#inclusions-and-exclusions)
 * [Billing](#billing)
@@ -159,10 +160,6 @@ A: Common causes of obscured restore files:
   - Permissions of the files and folders restored as assigned during backup execution.
   - Invalid path structure provided as a Restore Path. In this case, the files and folders will be restored to the C:Windows\System32 folder for Windows or the SimpleBackupService directory for Linux.
 
-**Q: Why am I seeing a different number of restore points than I expected?**
-
-A: The number of restore points depends on the backup frequency as selected in the policy. Note that the frequency is the measurement of time between the end of the last backup and the next backup.
-
 **Q: How do I stop an in-progress restore from completing?**
 
 A: Restarting the Simple Backup Service on the server will stop all running restore task(s). See https://www.ctl.io/knowledge-base/backup/restarting-simple-backup-service/ for steps to restart in Linux and Windows.
@@ -199,6 +196,18 @@ A: Currently, the most efficient method of viewing all the policies applied to a
 
 ### Frequency
 
+**Q: Where has the frequency setting gone when creating a new policy?**
+
+A: We have replaced the frequency method of backing up with a CRON style scheduling method. Please see below for more details.
+
+**Q: Will my backup policies that were setup with frequency still function?**
+
+A: YES! We have backwards compatibility for all backup policies that use the frequency method of backing up
+
+**Q: How do I change my old frequency based policies over to schedule based policies?**
+
+Simply select the policy you wish to change, click edit, and select the desired schedule for the new policy. Once it has been saved, the new schedule will take effect.
+
 **Q: If the backup frequency is every 4 hours, what should I expect?**
 
 A: This depends on how long a backup takes to complete. The frequency timer will not start until the previous backup has completed, so in this example the next backup will start 4 hours after the previous one has completed.
@@ -209,7 +218,21 @@ A: Yes. From the Backup Agent, click the **Backup** button from the Home Dashboa
 
 **Q: Can I schedule backups to execute at a specific time in the day?**
 
-A: No. The policy frequency determines when the next backup will be executed or the user may manually trigger a backup. Once a backup has completed, the frequency will start to countdown and the next backup will occur when the frequency countdown has expired. If you want to prevent backups from occurring during peak business hours, you will need to stop and restart the service accordingly.
+A: YES! This is part of our new Scheduling feature; for more details, please see the [getting started guide](./getting-started-with-simple-backup.md)
+
+### Scheduling
+
+**Q: What scheduling configurations are available?**
+
+A: You can configure a backup schedule on an hourly, daily, weekly, monthly or yearly basis.
+
+**Q: Can I set the hour of the day to backup?**
+
+A: Yes, all options except for hourly allow you to specify at what hour you want the backup to start.
+
+**Q: Can I specify a time for backups to NOT happen?**
+
+A: No, you can not currently specify a blackout period for backups.
 
 ### Retention
 

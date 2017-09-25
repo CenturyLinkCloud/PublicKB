@@ -27,11 +27,11 @@ For the upgrade process to the new virtual appliance, please follow the steps be
 8. Log out and wait for the new appliance to restart. This process will take some time as it needs to migrate the data.
 9. Login with the same credentials you used for the old appliance.
 
-In case you experience any issues, [contact support](mailto:cloudsupport@centurylink.com)). We will walk you through the appliance upgrading process.
+In case you experience any issues, [contact support](mailto:incident@CenturyLink.com)). We will walk you through the appliance upgrading process.
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

@@ -17,10 +17,10 @@ When a CenturyLink employee requires access to a Role in a customer environment,
 
 **Prerequisites**
 
-* Must have a CenturyLink Control Portal account (https://control.ctl.io).
+* Must have a CenturyLink Cloud Control Portal account (https://control.ctl.io).
 
 **Detailed Steps**
 
 **Option 1**: Request that the CenturyLink Cloud customer add you to the appropriate role. This is self-service for the customer.
 
-**Option 2**: Have the CenturyLink Cloud customer request you be added to the appropriate Role via the CenturyLink Cloud ticketing process. Make sure to include the specific Role(s) required and make sure the customer provides their Control Portal PIN for identity verification. Ensure the CenturyLink Cloud customer CC’s you on the request. Once the request is provided by the CenturyLink Cloud customer, permissions will be granted and the ticket will be processed per SLA.
+**Option 2**: Have the CenturyLink Cloud customer request you be added to the appropriate Role via the CenturyLink ticketing process. Make sure to include the specific Role(s) required and make sure the customer provides their Control Portal PIN for identity verification. Ensure the CenturyLink Cloud customer CC’s you on the request. Once the request is provided by the CenturyLink Cloud customer, permissions will be granted and the ticket will be processed per SLA.

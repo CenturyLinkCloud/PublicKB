@@ -10,13 +10,14 @@
 
 Partner Cloud Integration allows an Cloud Application Manager user to leverage CenturyLink’s partnerships with third-party cloud providers to easily manage a multi-cloud strategy.
 
-For our initial release, we have integrated with Microsoft Azure.
+We have integrated with Microsoft Azure and Amazon Web Services.
 
 ### Audience
 
-All of our customers are invited to use Cloud Integration.
+All of our customers are invited to use Cloud Application Manager's Cloud Integration capabilities.
 
-For Azure, we are currently limited to serving customers who are not resellers (or customers or resellers) with offices within the United States.
+For Azure, we are currently limited to serving customers who are not resellers (or customers or resellers) with offices within the United States and the United Kingdom.
+For Amazon Web Services we are currently limited to serving customers who are not resellers (or customers or resellers) with offices within the United States.
 
 ### Prerequisites
 
@@ -26,9 +27,15 @@ Credentials for a [CenturyLink Cloud Account Administrator](../../Accounts & Use
 
 A working Knowledge how to use [Cloud Application Manager providers](../Core Concepts/providers.md).
 
-For each CLC account hoping to integrate with Azure, both CenturyLink's and Microsoft's Terms and Conditions must be accepted. These will be presented to any user attempting to create a new "Azure Resource Manager" provider in Cloud Application Manager.
+For each CLC account hoping to integrate with Azure, both CenturyLink's and vendor-specific and region-specific Terms and Conditions must be accepted. These will be presented to any user attempting to select any of the following options for Microsoft Azure or Amazon Web Services providers in Cloud Application Manager.
+
+
 
 ### Important Information
+
+
+
+
 
 Current features of Partner Cloud Integration include:
 * **Mapping New Azure Customer Accounts with CLC Account:** For each CLC account meeting the requirements (above), a new Azure Customer account will be created and a relationship between the CLC and Azure accounts will be persisted.
@@ -38,6 +45,8 @@ Current features of Partner Cloud Integration include:
 * **Access to Azure's Control Portal:** If you would like to log into portal.azure.com, you will need a user. Please submit a request for user creation via a ticket. You may also simply continue to use Cloud Application Manager to manipulate Azure resources.
 * **Partner List Pricing:** Our pricing is consistent with whatever price our partners sell products.
 * **Support:** CenturyLink takes on responsibility for platform-level support with Azure resources related to IaaS: Virtual Machines, Storage, Network, and Resource Groups.
+
+
 
 **Standard Support Details:**
 
@@ -76,7 +85,7 @@ Microsoft | Azure | **Infrastructure** Troubleshoot and provide technical guidan
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

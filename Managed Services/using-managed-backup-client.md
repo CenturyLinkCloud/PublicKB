@@ -1,13 +1,13 @@
 {{{
   "title": "Using Managed Backup Client",
-  "date": "01-30-2015",
-  "author": "Bryan Friedman",
+  "date": "08-18-2017",
+  "author": "John Gerger",
   "attachments": [],
   "contentIsHTML": true
 }}}
 
 <h2>Overview</h2>
-<p>While Control Portal allows for turning Managed Backup on and off for a given server, getting details about the status of recent backups or changing the target of the backups using an exclusions list are not yet supported through this interface. This functionality is provided, however, by the Netbackup Client installed on the server itself. After gaining access to the server remotely through either RDP on Windows or SSH on Linux, you can use the following instructions to review status or set paths for exclusion. For help using the Netbackup Client for exclusions or viewing status, you may also contact the CenturyLink Technology Solutions Client Service Center at 1-888-638-6771.</p>
+<p>While Control Portal allows for turning Managed Backup on and off for a given server, getting details about the status of recent backups or changing the target of the backups using an exclusions list are not yet supported through this interface. This functionality is provided, however, by the Netbackup Client installed on the server itself. After gaining access to the server remotely through either RDP on Windows or SSH on Linux, you can use the following instructions to review status or set paths for exclusion. For help using the Netbackup Client for exclusions or viewing status, you may also contact the CenturyLink Client Service Center at 1-888-638-6771.</p>
 <h2>Using Netbackup Client</h2>
 <h3>Reviewing Backup Status</h3>
 <p>Netbackup Client can be used to obtain the status of recent backups on both Windows and Linux machines.</p>
@@ -18,7 +18,7 @@
 <li>For the command line tool, you can run the bpclimagelist command as follows <code>C:\Program Files\VERITAS\NetBackup\bin\bpclimagelist.exe -client &lthostname&gt</code> . This will display a list of the successful backups that have occurred for the past 14 days, which correlates with the 2 weeks of retention on the backups. If any dates are missing, this is an indicator of a backup that did not occur or failed. (In these cases, notification has been sent to the Operations Support Team at the time of failure to remedy the failed backup.)<br /><img src="https://t3n.zendesk.com/attachments/token/Z7Ij7nhSki6gamgajWTTi5Pb6/?name=windows-cmd-line.png" alt="windows-cmd-line.png" width="619" height="500" /></li>
 </ol>
 <p><strong>Linux</strong></p>
-<p>Linux provides the bpclimagelist command that can be ran as follows <code>/usr/openv/netbackup/bin/bpclimagelist -client `hostname --short`</code>&nbsp;. This will display&nbsp;a list of the successful backups that have occurred for the past 14 days, which correlates with the 2 weeks of retention on the backups. If any dates are missing, this is an indicator of a backup that did not occur or failed. (In these cases, notification has been sent to the Operations Support Team at the time of failure to remedy the failed backup.)<br /><img src="https://t3n.zendesk.com/attachments/token/n70hTP5bAs32Eg2jaAKs20sss/?name=linux-cmd-line.png" alt="linux-cmd-line.png" width="644" height="352" /></p>
+<p>Linux provides the bpclimagelist command that can be ran as follows <code>/usr/openv/netbackup/bin/bpclimagelist -client <hostname> -b</code>&nbsp;. This will display&nbsp;a list of the successful backups that have occurred for the past 14 days, which correlates with the 2 weeks of retention on the backups. If any dates are missing, this is an indicator of a backup that did not occur or failed. (In these cases, notification has been sent to the Operations Support Team at the time of failure to remedy the failed backup.)<br /><img src="https://t3n.zendesk.com/attachments/token/n70hTP5bAs32Eg2jaAKs20sss/?name=linux-cmd-line.png" alt="linux-cmd-line.png" width="644" height="352" /></p>
 <h3>Setting Exclusion Rules</h3>
 <p>NetBackup provides for the ability to exclude or filter data from a backup job while it is running. A backup job is created with a defined include list for the policy and in the case CenturyLink Cloud Managed Backup, includes the entire volume for all disks by default. By creating an exclude list, it is possible to remove entries from the backup job which would normally be covered by the running job.&nbsp;It is recommended to utilize small, simple exclude lists where possible as they will add additional processing overhead.</p>
 <p>The primary cases for defining an exclude list are when you would like to:</p>

@@ -1,13 +1,13 @@
 {{{
 "title": "Getting Started Guide: Marketplace & Provider Portal",
-"date": "04-04-2017",
-"author": "",
+"date": "06-27-2017",
+"author": "Brandy Smith",
 "attachments": [],
 "contentIsHTML": false,
 "sticky": true
 }}}
 
-The Provider Portal (PP) is an application that allows CenturyLink Cloud Provider Partners to manage the display of their products on the CenturyLink Marketplace. Once a Provider has certified a product, a member of the Marketplace Team provides the partner with a welcome email and credentials to log into PP.
+The Provider Portal (PP) is an application that allows CenturyLink Cloud Provider Partners to manage the display of their products on the CenturyLink Marketplace. Once a Provider has certified a product, a member of the Marketplace Team provides the partner with a welcome email and credentials to log into PP. **New** You can now log in using your Google credentials.
 
 ### Signing In
 
@@ -56,7 +56,13 @@ From the **Provider Details** page, you can find a list of your products that ha
 
    ![EPP5](../../images/EPP5.png)
 
-6. Complete any additional fields. Note: Some fields are required. Others are optional.
+6. Complete any additional fields. Note: Some fields are required. Others are optional. **Important** The Provider Portal supports Markdown within specified fields. When adding links or email addresses, please note that ensuring that you are using proper Markdown formatting is very important. Improper links will cause 404s. The correct format for links and emails are below. If you have any questions or concerns with loading content into the Provider Portal, please reach out to the [Marketplace team](mailto:Marketplace@ctl.io).
+
+**Markdown Link**
+```[Link Text](http://google.com)```
+
+**Email Link** `[email@xxx.com](mailto:email@xxx.com)`and emails are below. If you have any questions or concerns with loading content into the Provider Portal, please reach out to the [Marketplace team](mailto:Marketplace@ctl.io).
+
    * Enter **Short Description** (required).
    * Enter **Full Description** (required).
              - This field accepts Markdown formatting.
@@ -68,7 +74,7 @@ From the **Provider Details** page, you can find a list of your products that ha
 
 7. You may provide other supplemental product information including:
    * **Dependencies** (optional).
-   * **Support Information** (required).
+   * **Support Information** (required) Support is the responsibility of the provider.
    * **Contact Information** (optional).
    * **Use Cases** for the product (optional).
    * **Product Features** (required). Enter at least one feature.
@@ -107,6 +113,8 @@ Required steps for publication of products are as follows:
 3. Edit the details as needed, preview, and click **Save**.
 
 4. Click **Request Publication**. Note: You have to click this button or your changes won't be visible on the Marketplace.
+
+5. A CenturyLink Marketplace team member will review and approve the changes and publish. 
 
 ### Cloning a Product
 

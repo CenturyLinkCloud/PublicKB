@@ -22,5 +22,6 @@ Canada (Toronto - Mississauga) - CA3|Cyxtera (TR1)|6800 Millcreek Drive<br>Missi
 Canada (Toronto - Markam) - CA2|Peer 1 Hosting|20 Pullman Court<br>Toronto, Ontario M1X 1E4|[provider details](http://www.peer1.com/infrastructure/datacenter-toronto)
 Canada (Vancouver) - CA1|Cyxtera (VC1)|555 West Hastings Street<br>Vancouver, BC V6B 4N6|[provider details](https://www.cyxtera.com/images/vc1-vancouver-canada-ss111846.pdf)
 Germany (Frankfurt) - DE1|Equinix|Lärchenstrasse 110<br>65933 Frankfurt- Griesheim Germany|[provider details](http://www.equinix.com/en_US/locations/germany/frankfurt-data-centers/)
+Germany (Frankfurt) - DE3|Cyxtera (FR6)|Landstraße 296a<br>60314 Frankfurt am Main Germany|[provider details](https://www.cyxtera.com/images/fr6-frankfurt-germany-colocation-tearsheet.pdf)
 APAC (Singapore) - SG1|Cyxtera (SG2)|29A International Business Park<br>Jurong East Singapore 609934|[provider details](https://www.cyxtera.com/images/sg2-singapore-colocation-tearsheet-ss122015.pdf)
 Australia - AU1|Cyxtera (3PSY4)|4 Eden Park Dr <br>Macquarie Park NSW 2113|[provider details](https://www.cyxtera.com/images/sy4-sydney-australia-ss150682.pdf)

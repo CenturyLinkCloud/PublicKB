@@ -88,7 +88,7 @@ ElasticBox-Release: 4.0
       "lu"
    ],
    "domains":[
-      "elasticbox.com"
+      "cam.ctl.io"
    ],
    "authentication":{
       "github":false,
@@ -98,7 +98,7 @@ ElasticBox-Release: 4.0
       "ldap_config":{
          "sources":[
             {
-               "host":"ldap://ldap.elasticbox.com",
+               "host":"ldap://ldap.cam.ctl.io",
                "email_field":"mail"
             }
          ]
@@ -116,7 +116,7 @@ ElasticBox-Release: 4.0
       {
          "enabled":true,
          "type":"Amazon Web Services",
-         "description":"Manage EC2, S3, Dynamo DB, and RDS instances",
+         "description":"Manage EC2, ECS and Cloudformation instances",
          "pricing":[
             {
                "platform":"Linux Compute",
@@ -327,7 +327,7 @@ ElasticBox-Release: 4.0
       "lu"
    ],
    "domains":[
-      "elasticbox.com"
+      "cam.ctl.io"
    ],
    "authentication":{
       "github":false,
@@ -338,7 +338,7 @@ ElasticBox-Release: 4.0
       "ldap_config":{
          "sources":[
             {
-               "host":"ldap://ldap.elasticbox.com",
+               "host":"ldap://ldap.cam.ctl.io",
                "email_field":"mail"
             }
          ]
@@ -356,7 +356,7 @@ ElasticBox-Release: 4.0
       {
          "enabled":true,
          "type":"Amazon Web Services",
-         "description":"Manage EC2, S3, Dynamo DB, and RDS instances",
+         "description":"Manage EC2, ECS and Cloudformation instances",
          "pricing":[
             {
                "platform":"Linux Compute",
@@ -591,7 +591,7 @@ ElasticBox-Release: 4.0
       "lu"
    ],
    "domains":[
-      "elasticbox.com"
+      "cam.ctl.io"
    ],
    "authentication":{
       "github":false,
@@ -602,7 +602,7 @@ ElasticBox-Release: 4.0
       "ldap_config":{
          "sources":[
             {
-               "host":"ldap://ldap.elasticbox.com",
+               "host":"ldap://ldap.cam.ctl.io",
                "email_field":"mail"
             }
          ]
@@ -620,7 +620,7 @@ ElasticBox-Release: 4.0
       {
          "enabled":true,
          "type":"Amazon Web Services",
-         "description":"Manage EC2, S3, Dynamo DB, and RDS instances",
+         "description":"Manage EC2, ECS and Cloudformation instances",
          "pricing":[
             {
                "platform":"Linux Compute",
@@ -838,7 +838,7 @@ ElasticBox-Release: 4.0
       "operations"
    ],
    "domains":[
-      "elasticbox.com"
+      "cam.ctl.io"
    ],
    "authentication":{
       "ldap_config":{
@@ -861,7 +861,7 @@ ElasticBox-Release: 4.0
       {
          "enabled":true,
          "type":"Amazon Web Services",
-         "description":"Manage EC2, S3, Dynamo DB, RDS, ElastiCache and CloudFormation instances.",
+         "description":"Manage EC2, ECS and Cloudformation instances",
          "pricing":[
 
          ]
@@ -979,7 +979,7 @@ ElasticBox-Release: 4.0
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

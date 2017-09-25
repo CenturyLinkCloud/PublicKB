@@ -22,7 +22,6 @@ It supports all CloudFormation templates available from AWS. Leverage services s
 
 Cloud Application Manager supports all CloudFormation templates available from AWS. Leverage services such as EC2, Elastic Block Store, Simple Notification Service, Elastic Load Balancing and Auto Scaling, RDS, S3, DynamoDB, Elastic IPs, and much more.
 
-[AWS RDS services](../Deploying Anywhere/using-your-aws-account.md) such as MySQL, MS SQL, PostgreSQL, Oracle, and [Memcached](../Deploying Anywhere/using-your-aws-account.md), [S3](../Deploying Anywhere/using-your-aws-account.md), [DynamoDB](../Deploying Anywhere/using-your-aws-account.md) are readymade CloudFormation templates. To use these services, configure a CloudFormation box of the type and select an AWS account registered in Cloud Application Manager.
 
 **In this article:**
 
@@ -266,7 +265,7 @@ To illustrate, we create a second Azure Resource Manager box to scale the WordPr
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
