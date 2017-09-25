@@ -1,7 +1,7 @@
 {{{
  "title": "Software as a Service (SaaS) Integration - v2 API",
- "date": "04-02-2017",
- "author": "Rich DuBose",
+ "date": "09-26-2017",
+ "author": "Jim Phillips",
  "attachments": [],
  "contentIsHTML": false
  }}}
@@ -15,82 +15,68 @@ CenturyLink has created multiple opportunities for software vendors to integrate
 
 **Overview**
 
-*The endpoint for the* ```/saas-usage/``` *is not published in this article for security reasons. Your organization will be provided documentation for the endpoint & expected json payload during onboarding*
+*The endpoint for the* ```/saas-usage/``` *is not published in this article for security reasons. Your organization will be provided documentation for the endpoint & expected JSON payload during onboarding*
 
 ##### Provision Account
 
-The CenturyLink Cloud Marketplace will provide the user interface & collect the information that is required to provision an account on your platform. However, we do not collect Private Card Information (PCI) on your behalf. The information we are prepared to collect include:
+The CenturyLink Cloud Marketplace will provide the user interface & collect the information that is required to provision an account on your platform. However, we do not collect Private Card Information (PCI) on your behalf.
 
-* Username - varchar (55)
-* Password - varchar (40)
-* Company Name - varchar (100)
-* **Provider SKU ID** - varchar (60) (This was not a required field in the v1 API)
-* **Subscription ID** - varchar (100) (This was not a required field in the v1 API)
-* **Account Holders Name** - varchar (75)
-* **Email Address** - varchar (75)
-* Address # 1 - varchar (100)
-* Address # 2 - varchar (100)
-* Country - varchar (75)
-* State or Province - varchar (55)
-* Zip or Postal Code - varchar (55)
-* Phone Number - varchar (55)
-* **Reseller Key** - guid
+You will be able to specify which data points are displayed to your perspective buyer, as well as which are required for them to complete.  This is done through the [Product Provisioning Configuration](./software-as-as-service-product-provisioning.md). In addition to the user input, as configured, CenturyLink will provide the following fields which your API client must tie to the customer for recording usage-based product SKUs (see below) in the future:
 
-Only the **bold** fields are required from a CenturyLink perspective. However, you will be able to specify which data points are displayed to your perspective buyer, as well as which are required for them to complete.
+* provisioningGuid - String - Unique identifier of the provisioning event
+* productSkus - Array of strings - provisioned product SKU ids
 
 We understand that there will be a need for variability with the API names among our providers but would prefer the following scheme when possible: ```/provider-name-provision-account/```.
 
-The parameters will be passed via a json payload. The exact json message will vary between providers. We've provided an example below.
+The parameters will be passed via a JSON payload. The exact JSON message will vary between providers. We've provided an example below.
 
 ```
 {
-  "resellerkey": 'xxxx',
-  "name": "ACME Incorporated",
-  "email": "customer-email-address@customoredomain.com",
-  "provider-sku-id": "MRKTPLC-PROVIDER-NAME-PRODCT-NAME",
-  "subscription-id": "DATETIMESTAMP-USERALIAS-SKU-ID"
+  "provisioningGuid": "9ddz0a5e-f2d5-6eb5-89b9-7a42d0fbb836",
+  "productSkus": ["MRKTPLC-PROVIDER-NAME-PRODCT-NAME"],
+  "name": "some customer"m
+  "email": "customer-email-address@customoredomain.com"
 }
 ```
 
 The status codes your API will need to return are:
 
-* 201 - Account Provisioning Successful (CustomerID from your platform to be returned)
+* 200 - Account Provisioning Successful (CustomerID from your platform to be returned)
 * 40x - Account Provisioning Failure
 * 50x - Server Side Error
 
-##### Update Subscription
+##### Usage-Based Product SKUs
 
 *The full endpoint for the* ```/saas-usage/``` *is not published in this article for security reasons. Your organization will be provided documentation for the endpoint during onboarding*
 
-The elements passed to the ```/saas-usage/``` API include (**bold** items are required):
+Some of your products may include [Usage-based billing](./usage-based-billing.md).  Upon provisioning, you are required to track each customer's usage and report it to CenturyLink by the end of each month.  You may report usage for a customer at any time during the month, but keep in mind that every usage report sent is added to the customer's billing.  As such, it is **highly recommended** that you send a single month's usage at the end of each month for each customer.
 
-* **customerid** - The ID assigned to the customer from your organization.
-* **expired** - True or False. The element should be set to 'true' if the customer has terminated services with your organization. Set the element to 'false' if the services are ongoing.
-* expired-date - If **expired** is set to true, this element must be populated with the date the consumer terminated services.
-* **productSku** - The SKU ID for the product in the CenturyLink Cloud Marketplace. This will be provided to you by CenturyLink.
-* count - If the subscription is based on a usage model & or the cost is based off of an incremental value, pass the aggregated usage value in this element. This is passed to the provider organization during the account provisioning process & will need to be retained.
-* **subscriptionid** - The subscription you wish to update. This is passed to the provider organization during the account provisioning process & will need to be retained. **JP - we don't need to deal with subscriptions /JP**
-* **providerkey** - The value of this element will be provided to you by CenturyLink.
+The cutoff time to bill the customer for the current month is 3:45pm (CST) on the last day of each month.  Any usages reported after 6:00pm (CST) on the last day of the month will be applied to the next month's bill for the customer.  To allow time for processing, Please do not send usage reporting between 3:45pm (CST) and 6:00pm (CST) on the last day of the month.  
 
-An example json payload the ```/saas-usage/``` API is provided below.
+The elements passed to the ```/saas-usage/``` API must include the following items:
+
+* **providerKey** - String - Your unique identifier, provided by CenturyLink.
+* **customerid** - String - The ID assigned to the customer from your organization, returned by your API in the provisioning API call.
+* **provisioningGuid** - String - The unique identifier of the provisioning event.
+* **productSku** - String - The SKU id for the product in the CenturyLink Cloud Marketplace. This is provided as one of the array values in the provisioning API call.
+* **usageCount** - double - the amount
+
+An example JSON payload the ```/saas-usage/``` API is provided below.
 
 ```
 {
-	"customerId": '',
-  "expired": '', // not used
-  "expired-date": '', // not used
-  "productSku": '',
-  "usageCount": '',
-  "providerkey": '' // currently partnerId - may need code change
+  "providerKey": "SOME-UNIQUE-IDENTIFIER",
+  "provisioningGuid": "9ddz0a5e-f2d5-6eb5-89b9-7a42d0fbb836",
+	"customerId": "1234",
+  "productSku": "MRKTPLC-PROVIDER-NAME-PRODCT-NAME",
+  "usageCount": 100.5
 }
 ```
 
 ```/saas-usages/``` will return the following status codes.
 
-* 201 - Subscription Successfully Updated
-* 40x - Account Provisioning Failure - invalid input
-  * Required element(s) not provided
-  * **expired** set to 'true' & **expired-date** not provided
+* 200 - Subscription Successfully Updated
+* 40x - Invalid Input - provisioningGuid, providerKey, customerId, and productSku required.  usageCount must be a number
 * 50x - Server Side Error
 
-If your product bills by usage, you will be required to call ```/saas-usage/``` each month per customer subscription so we can ensure the customer is appropriately billed for your services. For any questions, please contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
+For any questions, please contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
