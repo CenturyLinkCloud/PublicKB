@@ -6,30 +6,44 @@
   "contentIsHTML": false
 }}}
 
+### Table of Contents
+
+* [Introduction](#introduction)
+* [Overview](#overview)
+* [Supported Versions](#supported-versions)
+* [Supported Editions](#supported-editions)
+* [Supported Operating Systems](#supported-operating-systems)
+* [License](#license)
+* [Installation Features](#installation-features)
+* [Configuration](#configuration)
+* [Administration](#administration)
+* [Deploying Managed MS SQL](#deploying-managed-ms-sql)
+
+
 ### Introduction
 The foundation of Microsoft’s comprehensive data platform, SQL Server delivers breakthrough performance for mission-critical applications – and it gets even better with CenturyLink Cloud Application Manager and our Managed Microsoft SQL service.
 
 ### Overview
 Cloud Application Manager’s Managed Services Anywhere allows customers to deploy workloads and delegate the management of the workload to CenturyLink, relieving themselves of the burdens of day to day monitoring, patching and Operational activities.  Through Cloud Application Manager, a customer can provision a new VM instance with MS SQL within their AWS provider and chose to have CenturyLink manage both the Operating System and MS SQL.
 
-**Supported Versions**
+#### Supported Versions
 *  Microsoft SQL Server 2008 R2
 *  Microsoft SQL Server 2012
 *  Microsoft SQL Server 2014
 
-**Supported Editions**
+#### Supported Editions
 *  Standard Edition
 *  Enterprise Edition
 
-**Supported Operating Systems**
+#### Supported Operating Systems
 *	Managed Microsoft Windows Server 2008 R2
 *	Managed Microsoft Windows Server 2012
 
-**License**
+#### License
 * Licensing for AWS and Azure deployments are provided by the Cloud Provider.  The cost for MS SQL server and the VM it is deployed upon will be reflected within the customer's cloud provider bill, or under the cloud provider's section in the CenturyLink consolidated bill for customers that have elected to utilize CenturyLink's consolidated billing feature.
 * CenturyLink DCC-Foundation supports a bring your own license (BYOL) model.  Customers can enter an activation key at deployment for a Managed MS SQL instance deployed on DCC-Foundation.
 
-**Installation Features**
+#### Installation Features
 * Prepare Server for Application Service (OS Specific Parameters)
 * Install Microsoft SQL Server (including available options and features)
 * Install applicable Microsoft SQL Server Service Packs
@@ -37,14 +51,14 @@ Cloud Application Manager’s Managed Services Anywhere allows customers to depl
 * Install CenturyLink Monitoring
 * Perform Quality Assurance against Microsoft SQL Server Installation/Hardening
 
-**Configuration**
+#### Configuration
 * Create/Configure Microsoft SQL Server service accounts and SPNs
 * Configure Login Auditing
 * Configure Database Encryption using TDE
 * Configure CenturyLink Monitoring
 * Configure CenturyLink approved and provided Database Backups and Maintenance Jobs
 
-**Administration**
+#### Administration
 * SQL Server Log Monitoring
 * Restart/Stop/Start Services
 * Update managed servers with all recommended security patches, service packs and hot-fixes upon customer request
@@ -52,7 +66,9 @@ Cloud Application Manager’s Managed Services Anywhere allows customers to depl
 *	Support for Microsoft SQL Server Analysis Services (SSAS)
 
 
-## Deploying Managed MS SQL to your AWS provider with CenturyLink Cloud Application Manager:
+## Deploying Managed MS SQL
+
+Deploying Managed MS SQL to your AWS provider with CenturyLink Cloud Application Manager:
 1.	In Boxes, Deployment Policies, search for “SAMPLE”
 2.	Select SAMPLE Managed MS SQL Deployment Policy 
 
