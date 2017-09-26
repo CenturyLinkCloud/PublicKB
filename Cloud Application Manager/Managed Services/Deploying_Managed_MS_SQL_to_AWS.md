@@ -30,7 +30,7 @@ Cloud Application Manager’s Managed Services Anywhere allows customers to depl
 **Disk configuration settings should remain as configured in SAMPLE Managed MS SQL deployment policy.**
 
 ![mgd_mssql-4.PNG](../../images/cloud-application-manager/mgd_mssql-4.PNG)
-![mgd_mssql-4.PNG](../../images/cloud-application-manager/mgd_mssql-5.JPG "Step 7b")
+![mgd_mssql-5.PNG](../../images/cloud-application-manager/mgd_mssql-5.PNG)
 
 8.	In Boxes, Deployment Policies, search for “CenturyLink Managed SQL Server”
 9.	Select CenturyLink Managed SQL Server Script Box
