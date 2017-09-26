@@ -12,7 +12,7 @@ Cloud Application Manager’s Managed Services Anywhere allows customers to depl
 #### Deploying Managed MS SQL to your AWS provider with CenturyLink Cloud Application Manager:
 1.	In Boxes, Deployment Policies, search for “SAMPLE”
 2.	Select SAMPLE Managed MS SQL Deployment Policy 
-![alt text](PublicKB/images/cloud-application-manager/mgd_mssql-1.JPG "Step 1 and 2")
+(../../images/cloud-application-manager/mgd_mssql-1.JPG "Step 1 and 2")
 3.	Select the Configure (Gear) dropdown 
 4.	Select “Clone”:
 ![alt text](PublicKB/images/cloud-application-manager/mgd_mssql-2.JPG "Step 3 and 4")
