@@ -13,24 +13,35 @@ Cloud Application Manager’s Managed Services Anywhere allows customers to depl
 1.	In Boxes, Deployment Policies, search for “SAMPLE”
 2.	Select SAMPLE Managed MS SQL Deployment Policy 
 
-![mgd-mssql-1.png](PublicKB/images/cloud-application-manager/mgd_mssql-1.png)
+![mgd-mssql-1.PNG](../../images/cloud-application-manager/mgd_mssql-1.PNG)
 
 3.	Select the Configure (Gear) dropdown 
 4.	Select “Clone”:
-![alt text](PublicKB/images/cloud-application-manager/mgd_mssql-2.JPG "Step 3 and 4")
+
+![mgd_mssql-2.PNG](../../images/cloud-application-manager/mgd_mssql-2.PNG)
+
 5.	Modify the Cloned Deployment Policy with your details (Icon, Name, Description) 
 6.	Select Save
-![alt text](PublicKB/images/cloud-application-manager/mgd_mssql-3.JPG "Step 5 and 6")
+
+![mgd_mssql-3.PNG](../../images/cloud-application-manager/mgd_mssql-3.PNG)
+
 7.	Edit your new Deployment Policy with your environment specific details (Resource, Placement and Network) and Save. 
 **NOTE:  The CenturyLink recommended Instance type is selected in the SAMPLE Managed MS SQL deployment.  Modification of this Instance type may result in significant performance issues.**
 **Disk configuration settings should remain as configured in SAMPLE Managed MS SQL deployment policy.**
-![alt text](PublicKB/images/cloud-application-manager/mgd_mssql-4.JPG "Step 7a")
-![alt text](PublicKB/images/cloud-application-manager/mgd_mssql-5.JPG "Step 7b")
+
+![mgd_mssql-4.PNG](../../images/cloud-application-manager/mgd_mssql-4.PNG)
+![mgd_mssql-4.PNG](../../images/cloud-application-manager/mgd_mssql-5.JPG "Step 7b")
+
 8.	In Boxes, Deployment Policies, search for “CenturyLink Managed SQL Server”
 9.	Select CenturyLink Managed SQL Server Script Box
-![alt text](PublicKB/images/cloud-application-manager/mgd_mssql-6.JPG "Step 8 and 9")
+
+![mgd_mssql-6.PNG](../../images/cloud-application-manager/mgd_mssql-6.PNG)
+
 10.	Select Deploy
-![alt text](PublicKB/images/cloud-application-manager/mgd_mssql-7.JPG "Step 10")
+
+![mgd_mssql-7.PNG](../../images/cloud-application-manager/mgd_mssql-7.PNG)
+
 11.	Update the Details of the instance that is to be deployed, selecting the appropriate Deployment Policy for your desired environment.
 12.	Select Deploy
-![alt text](PublicKB/images/cloud-application-manager/mgd_mssql-8.JPG "Step 11 and 12")
+
+![mgd_mssql-8.PNG](../../images/cloud-application-manager/mgd_mssql-8.PNG)
