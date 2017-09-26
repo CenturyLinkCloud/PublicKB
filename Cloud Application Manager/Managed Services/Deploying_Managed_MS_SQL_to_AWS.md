@@ -76,3 +76,5 @@ Cloud Application Manager’s Managed Services Anywhere allows customers to depl
 ##### Help
 
 Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md) for help. Or you may contact [support](http://managedservices.ctl.io) to request help.
+
+| CAM | Managed Services Anywhere | MSA | MSSQL | SQL
