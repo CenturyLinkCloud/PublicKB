@@ -9,6 +9,33 @@
 ### Introduction
 Cloud Application Manager’s Managed Services Anywhere allows customers to deploy workloads and delegate the management of the workload to CenturyLink, relieving themselves of the burdens of day to day monitoring, patching and Operational activities.  Through Cloud Application Manager, a customer can provision a new instance of MS SQL on their AWS provider and chose to have CenturyLink manage the deployed instance.
 
+### Overview
+The foundation of Microsoft’s comprehensive data platform, SQL Server delivers breakthrough performance for mission-critical applications – and it gets even better with CenturyLink Cloud and our Managed Microsoft SQL service.
+Achieve maximum performance by combining CenturyLink Managed Microsoft SQL Server with CenturyLink Cloud Hyperscale instances and autoscale capabilities. Combine this Microsoft SQL Server AlwaysOn to realize a grid solution that can deliver at least 15,000 IOPS to sustain even the most demanding workloads.
+
+**Supported Versions**
+*  Microsoft SQL Server 2008 R2
+*  Microsoft SQL Server 2012
+*  Microsoft SQL Server 2014
+
+**Supported Editions**
+*  Standard Edition
+*  Enterprise Edition
+
+**Supported Operating Systems**
+*	Managed Microsoft Windows Server 2008 R2
+*	Managed Microsoft Windows Server 2012
+
+**Supported Services**
+*	Support for Microsoft SQL Server Analysis Services (SSAS)
+*	Support for Microsoft SQL Server Reporting Services (SSRS)
+*	Support for Microsoft SQL Server Integration Services (SSIS)
+*	Support for Microsoft SQL Server Database Mirroring
+*	Support for Microsoft SQL Server Database Snapshots
+*	Support for Microsoft SQL Server Transparent Database Encryption (TDE)
+*	Support for Microsoft SQL Server AlwaysOn
+
+
 #### Deploying Managed MS SQL to your AWS provider with CenturyLink Cloud Application Manager:
 1.	In Boxes, Deployment Policies, search for “SAMPLE”
 2.	Select SAMPLE Managed MS SQL Deployment Policy 
