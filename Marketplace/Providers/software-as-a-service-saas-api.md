@@ -23,9 +23,9 @@ The CenturyLink Cloud Marketplace will provide the user interface & collect the 
 
 You will be able to specify which data points are displayed to your perspective buyer, as well as which are required for them to complete.  This is done through the [Product Provisioning Configuration](./software-as-a-service-product-provisioning.md). In addition to the user input, as configured, CenturyLink will provide the following fields which your API client must tie to the customer for recording usage-based product SKUs (see below) in the future:
 
-* provisioningGuid - String - Unique identifier of the provisioning event
-* productSkus - Array of strings - provisioned product SKU ids
-* productId - int - marketplace product id
+* **provisioningId** - String - Unique identifier (GUID) of the provisioning event
+* **productSkus** - Array of strings - provisioned product SKU ids
+* **productId** - int - marketplace product id
 
 We understand that there will be a need for variability with the API names among our providers but would prefer the following scheme when possible: ```/provider-name-provision-account/```.
 
@@ -33,7 +33,7 @@ The parameters will be passed via a JSON payload. The exact JSON message will va
 
 ```
 {
-  "provisioningGuid": "9ddz0a5e-f2d5-6eb5-89b9-7a42d0fbb836",
+  "provisioningId": "9ddz0a5e-f2d5-6eb5-89b9-7a42d0fbb836",
   "productSkus": ["MRKTPLC-PROVIDER-NAME-PRODCT-NAME"],
   "productId": 123,
   "name": "some customer",
@@ -59,7 +59,7 @@ The elements passed to the ```/saas-usage/``` API must include the following ite
 
 * **providerKey** - String - Your unique identifier, provided by CenturyLink.
 * **customerid** - String - The ID assigned to the customer from your organization, returned by your API in the provisioning API call.
-* **provisioningGuid** - String - The unique identifier of the provisioning event.
+* **provisioningId** - String - Unique identifier (GUID) of the provisioning event
 * **productSku** - String - The SKU id associated to the product in the CenturyLink Cloud Marketplace. This is provided as one of the array values in the provisioning API call.
 * **productId** - int - The product id for the product in the CenturyLink Cloud Marketplace. This is provided in the provisioning API call.
 * **usageCount** - double - the amount
@@ -69,7 +69,7 @@ An example JSON payload the ```/saas-usage/``` API is provided below.
 ```
 {
   "providerKey": "SOME-UNIQUE-IDENTIFIER",
-  "provisioningGuid": "9ddz0a5e-f2d5-6eb5-89b9-7a42d0fbb836",
+  "provisioningId": "9ddz0a5e-f2d5-6eb5-89b9-7a42d0fbb836",
 	"customerId": "1234",
   "productSku": "MRKTPLC-PROVIDER-NAME-PRODCT-NAME",
   "productId": 123
