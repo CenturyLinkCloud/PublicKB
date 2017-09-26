@@ -45,3 +45,7 @@ Cloud Application Manager’s Managed Services Anywhere allows customers to depl
 12.	Select Deploy
 
 ![mgd_mssql-8.PNG](../../images/cloud-application-manager/mgd_mssql-8.PNG)
+
+##### Help
+
+Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md) for help. Or you may contact [support](http://managedservices.ctl.io) to request help.
