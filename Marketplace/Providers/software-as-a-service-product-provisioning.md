@@ -8,7 +8,7 @@
 
 ### Overview
 
-Software Providers that are classified as Software as a Service (SaaS) need to implement the steps outlined in the [API documentation](./software-as-a-service-saas-v2-api.md).  
+Software Providers that are classified as Software as a Service (SaaS) need to implement the steps outlined in the [API documentation](./software-as-a-service-saas-api.md).  
 
 The next step is to create the Product Provisioning within the Provider Portal for each respective product. This document will outline the steps that the software provider needs to complete in the Provider Portal to support the SaaS integration.
 
