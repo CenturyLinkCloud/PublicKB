@@ -52,7 +52,7 @@ Cloud Application Manager’s Managed Services Anywhere allows customers to depl
 *	Support for Microsoft SQL Server Analysis Services (SSAS)
 
 
-#### Deploying Managed MS SQL to your AWS provider with CenturyLink Cloud Application Manager:
+## Deploying Managed MS SQL to your AWS provider with CenturyLink Cloud Application Manager:
 1.	In Boxes, Deployment Policies, search for “SAMPLE”
 2.	Select SAMPLE Managed MS SQL Deployment Policy 
 
