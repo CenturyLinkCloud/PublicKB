@@ -17,7 +17,7 @@ Simple Backup Anywhere extends Simple Backup outside of CenturyLink Cloud to all
 
 ### Getting Started with Backup Anywhere
 
-There are 2 methods available to install the Simple Backup agent on your non-CenturyLink Cloud servers. The easiest way to get started with backup anywhere is covered in this article and is administered through the [Simple Backup UI](http://backup.ctl.io) and is intended to install the agent on a single server at a time. An advanced instillation is available and covered in the [advanced guide](./Backup-Anywhere-Advanced-Install.md).
+There are 2 methods available to install the Simple Backup agent on your non-CenturyLink Cloud servers. The easiest way to get started with backup anywhere is covered in this article and is administered through the [Simple Backup UI](http://backup.ctl.io) and is intended to install the agent on a single server at a time. An advanced/manual installation is available and covered in the [manual install guide](./backup-anywhere-manual-install.md).
 
 * To get started with Backup Anywhere, simply select the Backup Anywhere heading in the [Simple Backup UI](http://backup.ctl.io).
 
@@ -27,11 +27,11 @@ There are 2 methods available to install the Simple Backup agent on your non-Cen
 
 ![](../images/backup/backup-anywhere/register-server.png)
 
-* You will then be presented with a download link for the agent installer and unique information about the installer file. This information is not needed for the instillation, it is for information purposes only. Simply click the link to download the installer script.
+* You will then be presented with a download link for the agent installer and unique information about the installer file. This information is not needed for the installation, it is for information purposes only. Simply click the link to download the installer script.
 
 ![](../images/backup/backup-anywhere/registered-server.png)
 
-* After downloading the script, move it to your server and execute the script to start the instillation of the Simple Backup agent.
+* After downloading the script, move it to your server and execute the script to start the installation of the Simple Backup agent.
 
  ![](../images/backup/backup-anywhere/agent-install.png)
 
