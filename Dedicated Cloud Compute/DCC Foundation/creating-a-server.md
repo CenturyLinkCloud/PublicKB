@@ -16,11 +16,11 @@ Once you've gone through this KB article and created a new virtual server, you c
 Note: This KB assumes you have followed the KB article on [Adding to your Catalog](add-to-catalog.md) in DCC Foundation.
 
 ## Steps
-* Login to your DCC Foundation environment
+* Login to your DCC Foundation environment.
 
   ![Login to DCC F](../../images/dccf/login-to-dcc-f.png)
 
-* Once logged in, you will see the __Quick Access__ page. The easiest way to create a virtual server is to click __Add vApp from Catalog__
+* Once logged in, you will see the __Quick Access__ page. The easiest way to create a virtual server is to click __Add vApp from Catalog__.
 
   ![Quick Access](../../images/dccf/creating-a-server1.png)
 
