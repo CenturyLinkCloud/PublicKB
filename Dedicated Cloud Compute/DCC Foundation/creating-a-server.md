@@ -8,14 +8,14 @@
   "sticky": false
 }}}
 
-## Description
+### Description
 In this KB article, we demonstrate how to provision a new virtual server in DCC Foundation.
 
 Once you've gone through this KB article and created a new virtual server, you can follow these guides to learn how to [Configure SSL VPN-Plus](configuring-sslvpn-plus.md) and [How to Securely Connect](how-to-securely-connect.md) to your DCC Foundation environment.
 
 Note: This KB assumes you have followed the KB article on [Adding to your Catalog](add-to-catalog.md) in DCC Foundation.
 
-## Steps
+### Steps
 * Login to your DCC Foundation environment.
 
   ![Login to DCC F](../../images/dccf/login-to-dcc-f.png)

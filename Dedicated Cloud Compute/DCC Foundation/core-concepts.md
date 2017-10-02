@@ -8,10 +8,10 @@
   "sticky": false
 }}}
 
-## Description
+### Description
 In this KB article, we will explore the core concepts that are within the VMware vCloud Director User Interface (UI), that makes up your DCC Foundation environment.
 
-## Core Concepts
+### Core Concepts
 VMware vCloud Director (vCD) provides role-based access to a Web console that allows the members of an organization to interact with the organization's resources to create and work with vApps and virtual machines (VMs).
 
 vCloud Director uses the following core components:
