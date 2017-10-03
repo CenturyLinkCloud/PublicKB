@@ -1,6 +1,6 @@
 {{{
   "title": "Runner Catalogs & Products",
-  "date": "03-30-2017",
+  "date": "10-03-2017",
   "author": "Justin Colbert",
   "attachments": [],
   "related-products" : [],
@@ -95,9 +95,16 @@ The config.yml file is used to not only provide information about your product, 
 - [datacenters](#datacenters)
 - [groups](#groups)
 - [servers](#servers)
+- [networks](#networks)
 - [textblock](#textblock)
 - [toggle](#toggle)
 - [slider](#slider)
+- [text](#text)
+- [textarea](#textarea)
+- [number](#number)
+- [select](#select)
+- [password](#password)
+- [passwordStrength](#passwordStrength)
 
 #### datacenters <a id="datacenters">
 The datacenters field will query the CenturyLink Cloud APIs and bring back all valid datacenters for an account alias.
@@ -107,6 +114,7 @@ parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
 displayName | The field name to display in the UI
+helpText | Can be used to add helptext below a item
 required | Is this item required for playbook execution (true / false)
 
 ##### Example
@@ -127,6 +135,7 @@ parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
 displayName | The field name to display in the UI
+helpText | Can be used to add helptext below a item
 multiple | Can you select multiple groups instead of just one (true / false)
 parent | Can be used to restrict to only groups in a certain datacenter. (datacenters corresponding name)
 required | Is this item required for playbook execution (true / false)
@@ -165,6 +174,7 @@ parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
 displayName | The field name to display in the UI
+helpText | Can be used to add helptext below a item
 multiple | Can you select multiple groups instead of just one (true / false)
 parent | Can be used to restrict to only groups in a certain datacenter. (datacenters corresponding name)
 required | Is this item required for playbook execution (true / false)
@@ -180,6 +190,31 @@ fields:
     required: true
     inventory: false
 ```
+
+
+#### networks <a id="networks">
+The networks field will query the CenturyLink Cloud APIs and display all networks for an account alias.
+
+##### Options
+parameter | comments
+--- | ---
+name | The name of the variable to pass to Ansible
+displayName | The field name to display in the UI
+helpText | Can be used to add helptext below a item
+parent | Can be used to restrict to only networks in a certain datacenter. (datacenters corresponding name)
+required | Is this item required for playbook execution (true / false)
+detail | Provide additional details about the network on the backend (true / false)
+
+##### Example
+```yaml
+fields:
+  - type: networks
+    name: my_network
+    displayName: Select your Network
+    required: true
+    detail: true
+```
+
 
 #### textblock <a id="textblock">
 The textblock field can be used to display various types of information or warning type text on the product form.
@@ -202,6 +237,7 @@ fields:
     level: warning
 ```
 
+
 #### toggle <a id="toggle">
 The toggle field generates a toggle button that can be used to send a true or false variable to Ansible
 
@@ -209,6 +245,7 @@ The toggle field generates a toggle button that can be used to send a true or fa
 parameter | comments
 name | The name of the variable to pass to Ansible
 displayName | The field text to display in the UI
+helpText | Can be used to add helptext below a item
 default | The default state of the toggle button (true / false)
 
 ##### Example
@@ -220,13 +257,15 @@ fields:
     default: true
 ```
 
-#### slider
+
+#### slider <a id="slider">
 The slider field allows you to generate a numeric slider
 
 ##### Options
 parameter | comments
 name | The name of the variable to pass to Ansible
 displayName | The field text to display in the UI
+helpText | Can be used to add helptext below a item
 min | The minimum value that can be selected
 max | The maximum value that can be selected
 default | The default value the slider will be initially set at
@@ -241,5 +280,161 @@ fields:
     min: 1
     max: 10
     default: 4
+    required: true
+```
+
+
+#### text <a id="text">
+The text field allows you to specify text as a value
+
+##### Options
+parameter | comments
+--- | ---
+name | The name of the variable to pass to Ansible
+displayName | The field text to display in the UI
+helpText | Can be used to add helptext below a item
+default | The default value of the text field
+minLength | The minimum text length allowable
+maxLength | The maximum text length allowable
+required | Is this item required for playbook execution (true / false)
+
+##### Example
+```yaml
+fields:
+  - type: text
+    name: text_value
+    displayName: "What would you like to name this item?"
+    helpText: "The name of your server for example?"
+    default: "Test12"
+    maxLength: 6
+    required: false
+```
+
+
+#### textarea <a id="textarea">
+The textarea field allows you to specify large blocks of text
+
+##### Options
+parameter | comments
+--- | ---
+name | The name of the variable to pass to Ansible
+displayName | The field text to display in the UI
+helpText | Can be used to add helptext below a item
+required | Is this item required for playbook execution (true / false)
+
+##### Example
+```yaml
+fields:
+  - type: textarea
+    name: license
+    displayName: "Copy in your license text"
+    required: true
+```
+
+
+#### number <a id="number">
+The number field allows you to specify a number
+
+##### Options
+parameter | comments
+--- | ---
+name | The name of the variable to pass to Ansible
+displayName | The field text to display in the UI
+default | The default number to show in the UI
+min | The minimum number allowable
+max | The maximum number allowable
+required | Is this item required for playbook execution (true / false)
+
+##### Example
+```yaml
+fields:
+  - type: number
+    name: some_number
+    displayName: "Enter a number"
+    default: 3
+    min: 1
+    max: 10
+    required: false
+```
+
+
+#### select <a id="select">
+The select field allows you to select values from a pre-defined list
+
+##### Options
+parameter | comments
+--- | ---
+name | The name of the variable to pass to Ansible
+displayName | The field text to display in the UI
+helpText | Can be used to add helptext below a item
+options | A list of options
+displayName (options) | A subset of options, this is what to display in the UI for your selection
+value (options) | A subset of options, this is the actual value passed through to ansible when the displayName is selected
+selected (options) | A subset of options, this specifies if this option should be selected by default (true / false)
+multiple | Are you allowed to select multiple options (true / false)
+required | Is this item required for playbook execution (true / false)
+
+##### Example
+```yaml
+fields:
+  - type: select
+    name: item_select
+    displayName: Select an item
+    options:
+      - displayName: "Item 1"
+        value: item1
+      - displayName: "Item 2"
+        value: item2
+        selected: true
+      - displayName: "Item 3"
+        value: item3
+    multiple: false
+    required: true
+```
+
+#### password <a id="password">
+The password field allows you to specify passwords while keeping the text hidden on the screen
+
+##### Options
+parameter | comments
+--- | ---
+name | The name of the variable to pass to Ansible
+displayName | The field text to display in the UI
+helpText | Can be used to add helptext below a item
+required | Is this item required for playbook execution (true / false)
+
+##### Example
+```yaml
+fields:
+  - type: password
+    name: srv_password
+    displayName: "Please enter a server password"
+    required: true
+```
+
+
+#### passwordStrength <a id="passwordStrength">
+The passwordStrength field allows you to specify passwords that conform to certain complexity standards
+
+##### Options
+parameter | comments
+--- | ---
+name | The name of the variable to pass to Ansible
+displayName | The field text to display in the UI
+helpText | Can be used to add helptext below a item
+validationMsg | A message to be displayed if the password doesn't meet complexity requirements
+requiredStrength | The required amount of different types of characters for a password to be valid (1 - 4)
+dissallowedCharacters | Specify which characters are not allowed
+required | Is this item required for playbook execution (true / false)
+
+##### Example
+```yaml
+fields:
+  - type: passwordStrength
+    name: srv_password
+    displayName: "Enter a strong password"
+    validationMsg: A password must be at least 9 characters and contain at least 3 of the following (uppercase letters, lowercase letters, numbers, symbols)
+    requiredStrength: 3
+    dissallowedCharacters: "/"
     required: true
 ```
