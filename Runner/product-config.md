@@ -243,6 +243,7 @@ The toggle field generates a toggle button that can be used to send a true or fa
 
 ##### Options
 parameter | comments
+--- | ---
 name | The name of the variable to pass to Ansible
 displayName | The field text to display in the UI
 helpText | Can be used to add helptext below a item
@@ -263,6 +264,7 @@ The slider field allows you to generate a numeric slider
 
 ##### Options
 parameter | comments
+--- | ---
 name | The name of the variable to pass to Ansible
 displayName | The field text to display in the UI
 helpText | Can be used to add helptext below a item
@@ -340,6 +342,7 @@ parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
 displayName | The field text to display in the UI
+helpText | Can be used to add helptext below a item
 default | The default number to show in the UI
 min | The minimum number allowable
 max | The maximum number allowable
