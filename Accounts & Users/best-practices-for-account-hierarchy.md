@@ -7,9 +7,9 @@
 }}}
 
 ### Overview
-CenturyLink Cloud’s (CLC) Account Hierarchy management features allows customers granular enablement and demarcation of: users, systems, groups, networks,
-billing, reporting, and/or sub-accounts that reside within the CLC platform. Customers with administrator access can create and manage these attributes
-within the CLC Control Portal. It is strongly recommended organizations should consider the following factors, limitations, and best practices before they
+CenturyLink Cloud’s Account Hierarchy management features allows customers granular enablement and demarcation of: users, systems, groups, networks,
+billing, reporting, and/or sub-accounts that reside within the CenturyLink Cloud platform. Customers with administrator access can create and manage these attributes
+within the CenturyLink Cloud Control Portal. It is strongly recommended organizations should consider the following factors, limitations, and best practices before they
 embark on leveraging the aforementioned features.
 
 ### Factors that Influence Account Configuration
@@ -48,7 +48,8 @@ Design your account hierarchy before you start adding users or provisioning reso
     * Only the backoffice account will be able to access the Internet, and customer’s org will set policies restricting Internet access direct from all other accounts/VLANs
     * Load Balancers can be placed on the backoffice account/vlans, and the web servers in the Market account/vlan will need to use these LBs for their web app
     * The IT Intranet and Help Desk accounts/VLANs will be restricted to only access each other.
-  <img src="../images/acct-structure1.png">
+
+![Account Structure]../images/acct-structure1.png)
 
 
 ### For additional information please see the following articles:

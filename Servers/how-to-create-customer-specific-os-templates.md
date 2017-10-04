@@ -20,7 +20,7 @@ CenturyLink Cloud customers may choose to create their own baseline OS templates
 
 **_DO NOT RUN THE CONVERT TO TEMPLATE FUNCTION ON A PRODUCTION/LIVE VIRTUAL SERVER_**. Customers should create a virtual instance with their specific configurations on a non-production virtual instance. The convert to template function actually modifies and moves the virtual machine to the templates group.
 
-Customers creating OS Templates for Windows Servers should carefully review the [Microsoft Sysprep for Server Roles TechNet Article](//technet.microsoft.com/en-us/library/hh824835.aspx). Sysprep is a component of creating an OS Template and as such certain OS Roles are not supported in both the template or clone process. **_For Windows Servers the CenturyLink Cloud Platform performs the sysprep function on behalf of customers when using the Convert To Template feature._**
+Customers creating OS Templates for Windows Servers should carefully review the [Microsoft Sysprep for Server Roles TechNet Article](//msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/sysprep-support-for-server-roles). Sysprep is a component of creating an OS Template and as such certain OS Roles are not supported in both the template or clone process. **_For Windows Servers the CenturyLink Cloud Platform performs the sysprep function on behalf of customers when using the Convert To Template feature._**
 
 ### Steps
 

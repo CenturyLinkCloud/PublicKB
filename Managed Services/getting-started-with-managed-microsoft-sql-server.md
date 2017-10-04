@@ -5,8 +5,9 @@
   "attachments": [],
   "contentIsHTML": false
 }}}
-### Table of Content
+### Table of Contents
 * [Overview](#overview)
+* [Socket to vCPU Allocation](#socket-to-vcpu-allocation)
 * [Prerequisites](#prerequisites)
 * [Supported Managed Operating Systems](#supported-managed-operating-systems)
 * [Supported Managed Microsoft SQL Server Editions](#supported-managed-microsoft-sql-server-editions)
@@ -18,6 +19,9 @@
 
 ### Overview
 The Microsoft SQL Server (MS-SQL) database is a comprehensive and integrated data management and analysis software application that enables the reliable management of mission-critical information.  This Managed Service is available for both CenturyLink provided Microsoft provided SQL server licenses and customer Bring Your Own License (BYOL).
+
+### Socket to vCPU Allocation
+It is recommended customers review our delivery model for [Sockets to vCPU](../Servers/platform-socket-to-vcpu-allocation.md) prior to deploying Microsoft SQL Server to be fully aware of the platform default operations when allocating vCPUs for use with the database service.
 
 ### Prerequisites
 * A CenturyLink Cloud Account
@@ -36,6 +40,8 @@ The Microsoft SQL Server (MS-SQL) database is a comprehensive and integrated dat
 * Microsoft SQL Server 2012 Enterprise Edition
 * Microsoft SQL Server 2014 Standard Edition
 * Microsoft SQL Server 2014 Enterprise Edition
+* Microsoft SQL Server 2016 Standard Edition
+* Microsoft SQL Server 2016 Enterprise Edition
 
 ### Important Information
 * The costs shown in the Blueprint UI do not include licenses fees, only managed services fees
@@ -104,11 +110,11 @@ The Microsoft SQL Server (MS-SQL) database is a comprehensive and integrated dat
 
 **Q: How is the CenturyLink Cloud for Managed Microsoft SQL priced?**
 
-A: Please see [Pricing Catalog](//www.ctl.io/pricing/#/va1) for more information. 
+A: Please see [Pricing Catalog](//www.ctl.io/pricing/#/va1) for more information.
 
 **Q: How do I request MSSQL Mirroring or MSSQL AlwaysOn Configuration?**
 
-A: MSSQL Mirroring and MSSQL AlwaysOn configurations are available as a service task request to the CenturyLink Cloud helpdesk.  After provisioning your MSSQL instances, you can request configuration of either service by simply opening a ticket with noc@ctl.io.  Configuration of the services are billed at a rate of $195/hr.  
+A: MSSQL Mirroring and MSSQL AlwaysOn configurations are [available as a paid service task request](//www.ctl.io/service-tasks/#mssql-alwayson-configuration).  After provisioning your MSSQL instances, you can request configuration of either service by simply [opening a service task request](../Service Tasks/requesting-service-tasks-on-centurylink-cloud.md).    
 
 **Q: Can the customer have multiple MS SQL instances installed on the same server?**
 
@@ -120,7 +126,7 @@ A: Please see [Managed SQL with BYOL](#managed-sql-with-byol) for details.
 
 **Q: How are licensing costs incurred?**
 
-A: SQL licenses costs are calculated separate from the managed SQL hourly costs based on the edition and number of CPUs on the virtual machine. Please see [Pricing Catalog](//www.ctl.io/pricing/#/va1) for more information. 
+A: SQL licenses costs are calculated separate from the managed SQL hourly costs based on the edition and number of CPUs on the virtual machine. Please see [Pricing Catalog](//www.ctl.io/pricing) for more information.
 
 **Q: Can un-managed Microsoft SQL Instances be converted to Managed (or vice versa)?**
 

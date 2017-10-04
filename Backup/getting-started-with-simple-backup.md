@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started With Simple Backup",
-  "date": "01-06-2016",
-  "author": "Mark Lee, Justing Withington, John Gerger",
+  "date": "6-27-2017",
+  "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -11,7 +11,7 @@
 Simple Backup Service – Getting Started Guide
 =============================================================
 
-Simple Backup Service (SBS) provides file level backups. This version of the UI allows users to quickly setup backups as well as perform other backup related activities. Additionally, there is no need to stand-up any additional infrastructure (servers, network, storage) because this is all part of the service. An agent will be automatically installed on the server during provisioning. Servers must have connectivity to the internet and restores for CLC VMs. Users choose which servers and data that require being backed up, as well as the frequency of the backups and retention periods.
+Simple Backup Service (SBS) provides file level backups. This version of the UI allows users to quickly setup backups as well as perform other backup related activities. Additionally, there is no need to stand-up any additional infrastructure (servers, network, storage) because this is all part of the service. An agent will be automatically installed on the server during provisioning. Servers must have connectivity to the internet for installation of the agent, and backup functionality. Users choose which servers and data to back up, as well as the frequency of the backups and retention periods.
 
 For additional information, please visit our [FAQ section](./simple-backup-service-faqs.md) or additional [Knowledge Base](//www.ctl.io/knowledge-base/backup/#1) articles.
 
@@ -29,17 +29,17 @@ The following provides steps to get started:
 3. Complete the backup configuration inputs and click **create backup policy**.
    * Paths entered here are not validated against your server’s file system paths.
 
-   ![](../images/backup/getting-started/image2.png)
+   ![](../images/backup/getting-started/newimage2.png)
 
 4. The backup policy is created and the status is set to Active. You can view the new policy in the list of policies. From here, you can either:
    * Click **create a backup policy** to create another backup policy with a different configuration.
    * Click an existing policy to view details and/or add a server to the policy.
 
-   ![](../images/backup/getting-started/image3.png)
+   ![](../images/backup/getting-started/newimage3.png)
 
 5. Per the above screen, when clicking into a backup policy, you can view the details and/or add a server to the backup policy. Click **apply to server** to add a server to the backup policy.
 
-   ![](../images/backup/getting-started/image4.png)
+   ![](../images/backup/getting-started/newimage4.png)
 
 6. Selecting the location of the VM will populate the list of choices for the “server” drop-down. Select the storage region, then click **apply backup policy**.
 
