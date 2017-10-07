@@ -36,7 +36,7 @@ Run the Cloud Application Manager agent on the Linux machine where you want to l
    ssh -i /Users/mrina/Documents/AWS_Private_PublicKeyPairs/AWSEC2_KeyPair/useast-mrina.pem ec2-user@54.163.174.41
    ```
 
-2. Launch an instance of a box using the the Cloud Application Manager agent. In this example, we launch an instance of the public [MongoDB box](../API/sample-deploy-mongodb.md) in AWS.
+2. Launch an instance of a box using the the Cloud Application Manager agent. In this example, we launch an instance of the public [MongoDB box](https://www.ctl.io/api-docs/cam/#examples-deploy-a-box) in AWS.
 
    ```
    curl -sSL https://cam.ctl.io | sudo bash -s -- -b "MongoDB Server" -n "test" -V username=admin123 -V password=password12345 -t 314a36ad-74b6-4205-9e33-eac9970e4a1b
