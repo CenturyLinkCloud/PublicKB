@@ -80,7 +80,7 @@ An example JSON payload the ```/saas-usage/``` API is provided below.
 ```/saas-usages/``` will return the following status codes.
 
 * 200 - Subscription Successfully Updated
-* 40x - Invalid Input - provisioningGuid, providerKey, customerId, and productSku required.  usageCount must be a number
+* 40x - Invalid Input - provisioningId, customerId, providerKey, productId, and productSku required.  usageCount must be a number
 * 50x - Server Side Error
 
 For any questions, please contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
