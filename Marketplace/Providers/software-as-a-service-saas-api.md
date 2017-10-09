@@ -69,10 +69,10 @@ An example JSON payload the ```/saas-usage/``` API is provided below.
 ```
 {
   "providerKey": "SOME-UNIQUE-IDENTIFIER",
+  "customerId": "1234",
   "provisioningId": "9ddz0a5e-f2d5-6eb5-89b9-7a42d0fbb836",
-	"customerId": "1234",
   "productSku": "MRKTPLC-PROVIDER-NAME-PRODCT-NAME",
-  "productId": 123
+  "productId": 123,
   "usageCount": 100.5
 }
 ```
