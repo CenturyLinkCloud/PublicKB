@@ -26,7 +26,7 @@ A: Yes. We have published APIs for all actions that can be performed in the UI. 
 
 **Q: Can I choose to replicate my data for higher availability?**
 
-A: Customers are given the option to replicate their database instance during the ordering/provisioning process. If replication is chosen, a replica instance will be created within the same datacenter. We use logic to ensure that the primary and replica instances do not share the same host or storage volume. The service will then monitor both primary and replica and will auto-failover to the replica instance if the primary becomes unavailable. Customers can also choose to perform a manual failover, if needed. For more information on replication and failover, see our KB on [Replication and Failover](../Database/replication-and-failover.md).
+A: Customers are given the option to replicate their database instance during the ordering/provisioning process. If replication is chosen, a replica instance will be created within the same datacenter. We use logic to ensure that the primary and replica instances do not share the same host or storage volume. The service will then monitor both primary and replica and will auto-failover to the replica instance if the primary becomes unavailable. Customers can also choose to perform a manual failover, if needed. For more information on replication and failover, see our KB on [Replication and Failover](rdbs-mysql-replication-and-failover.md).
 
 **Q: Is the replication synchronous or asynchronous?**
 
@@ -38,7 +38,7 @@ A: No. The replica instance is used for high availability purposes only. A separ
 
 **Q: I understand that SSL Encryption options are available. Will my data be encrypted in transit and/or at rest?**
 
-A: Upon database subscription, you will be given the option to download a self-signed cert that can be consumed by your target application. When implemented, your database connection is encrypted as well as your data in transit. Please see the KB article on [Connecting to MySQL Relational DB Over SSL](../Database/connecting-to-mysql-rdbs-over-ssl.md) for additional details. At this time data-at-rest encryption is not supported.
+A: Upon database subscription, you will be given the option to download a self-signed cert that can be consumed by your target application. When implemented, your database connection is encrypted as well as your data in transit. Please see the KB article on [Connecting to MySQL Relational DB Over SSL](rdbs-mysql-connecting-over-ssl.md) for additional details. At this time data-at-rest encryption is not supported.
 
 **Q: How will I know when my database instance is reaching maximum capacity?**
 
@@ -46,11 +46,11 @@ A: Customers have the option to sign up to receive email notification when their
 
 **Q: How can I grow or shrink my database instance?**
 
-A: Customers can easily scale their database instance size through the UI or API. CPU and RAM can be scaled up or down and storage can be scaled up only. Adding or removing memory or reducing CPU will require a database restart. Growing CPU or storage will not require a restart of the database. Please see the KB article on [Resizing a Relational DB Instance](../Database/resizing-mysql-rdbs-instance.md)
+A: Customers can easily scale their database instance size through the UI or API. CPU and RAM can be scaled up or down and storage can be scaled up only. Adding or removing memory or reducing CPU will require a database restart. Growing CPU or storage will not require a restart of the database. Please see the KB article on [Resizing a Relational DB Instance](rdbs-resizing-instance.md)
 
 **Q: I understand that CenturyLink is backing my data up daily. How can I access my backups in order to restore?**
 
-A: If you need to restore from an available backup, you can leverage the Restore Backup API or perform the restore in the Control Portal. For more information on performing database restores in Control, please see the KB on [Backups and Restores](../Database/backups-and-restores.md).
+A: If you need to restore from an available backup, you can leverage the Restore Backup API or perform the restore in the Control Portal. For more information on performing database restores in Control, please see the KB on [Backups and Restores](rdbs-backups-and-restores.md).
 
 **Q: Are my backups encrypted?**
 

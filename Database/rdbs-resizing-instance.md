@@ -23,7 +23,7 @@ CenturyLink's Relational DB Service is a database-as-a-service that provides ins
 2. Navigate to the “Database Instances” screen. Identify and click on the database subscription you would like to resize. This takes you to a details screen specific to that subscription.
 
 3. From the details screen, click the 'resources' button. This brings up a new section of the screen with slide bars that allows you to select the new size of your instance. Make your new selections and click 'save'. You then see the status change to "Configuring".
-   ![ReSizeDB](../images/rdbs-resize-db.png)
+   ![ReSizeDB](../images/rdbs/rdbs-resize-db.png)
 
 4. **The following resize requests result in a database restart and the UI will warn the user as such:**
    * Increasing Memory

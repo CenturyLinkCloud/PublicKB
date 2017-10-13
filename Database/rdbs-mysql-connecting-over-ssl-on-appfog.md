@@ -8,7 +8,7 @@
 }}}
 
 ### Audience
-This article is to support AppFog customers using the ctl_mysql service through the AppFog AddOn Engine. The ctl_mysql service is Centurylink's MySQL-compatible Relational Database Service. For instructions on how to use your cert after purchasing through the Relational DB UI, see our Knowledge Base article titled [Connecting to MySQL Relational DB Over SSL](../Database/connecting-to-mysql-rdbs-over-ssl.md).
+This article is to support AppFog customers using the ctl_mysql service through the AppFog AddOn Engine. The ctl_mysql service is Centurylink's MySQL-compatible Relational Database Service. For instructions on how to use your cert after purchasing through the Relational DB UI, see our Knowledge Base article titled [Connecting to MySQL Relational DB Over SSL](rdbs-mysql-connecting-over-ssl.md).
 
 ### Connecting over SSL-enabled Connection
 Provisioning the Relational DB MySQL instance through the AddOn Engine returns a collection of variables as defined below.

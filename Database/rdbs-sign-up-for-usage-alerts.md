@@ -25,7 +25,7 @@ CenturyLink's Relational DB Service is a database-as-a-service that provides ins
 3. After making your provisioning selections, you may choose to receive usage alerts by toggling the "Notifications" toggle to 'yes'. Enter the email address where you would like to receive alerts. Then click 'Create Database'.
 
 4. To subscribe to more than one email address, click on "Add Notification". This allows you to enter an additional email.
-   ![NotifyDBUsage](../images/rdbs-usagealerts-create.png)
+   ![NotifyDBUsage](../images/rdbs/rdbs-usagealerts-create.png)
 
 5. Email verification is required for each notification request. An email is sent to the email address entered, which provides a link to verify your address.
 
@@ -35,12 +35,12 @@ CenturyLink's Relational DB Service is a database-as-a-service that provides ins
 2. Navigate to the “Database Instances” screen. Identify and click on the database subscription on which you would like to change usage notifications. This takes you to a details screen specific to that subscription.
 
 3. Click the 'alerts' button. This brings up a new section of the screen that pre-populates any existing notification subscriptions.
-   ![ExistingNotification](../images/rdbs-existingnotification.png)
+   ![ExistingNotification](../images/rdbs/rdbs-existingnotification.png)
 
 4. To delete a notification, simply click on the small 'x' next to the email address field from which you no longer want to receive notifications.
 
 5. To create an additional notification, click the 'add notification' button. This allows you to enter another email address. You can also change which items you want to be notified on by selecting or un-selecting CPU or Storage.
-   ![EditNotification](../images/rdbs-edit-notifications.png)
+   ![EditNotification](../images/rdbs/rdbs-edit-notifications.png)
 
 6. After each change, click the 'save' button.
 
