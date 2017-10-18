@@ -12,7 +12,7 @@
 This article is to support customers of Relational DB Service, CenturyLink's database-as-a-service product. These instructions are specific to signing up for consumption alerts through the Control Portal.
 
 ### Overview
-CenturyLink's Relational DB Service is a database-as-a-service that provides instant access to a database instance with SSL support, daily backups, basic monitoring, and a replication option. Users can configure the amount of CPU, Memory, and Storage based on their database needs. They can choose to replicate their instance in datacenter for a more highly available solution. As the customer's capacity needs grown, they can easily scale their CPU, RAM ,and/or Storage with the click of a button.
+CenturyLink's Relational DB Service is a database-as-a-service that provides instant access to a database instance with SSL support, daily backups, basic monitoring, logs, metrics, and a replication option. Users can configure the amount of CPU, Memory, and Storage based on their database needs. They can choose to replicate their instance in datacenter for a more highly available solution. As the customer's capacity needs grown, they can easily scale their CPU, RAM, and/or Storage with the click of a button.
 
 ### Prerequisites
 * Access to the CenturyLink Cloud Platform as an authorized user

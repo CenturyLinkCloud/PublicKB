@@ -62,7 +62,7 @@ A: At the time of Relational DB subscription creation, the user will define back
 
 **Q: Where are my backups being held?**
 
-A: For disaster recovery purposes, backups are held offsite at least 350 miles away from your primary database. All North American instances are held in North America, All GB3 instances remain in the European Union and SG1 backups remain in Singapore.
+A: For disaster recovery purposes, backups are held offsite at least 350 miles away from your primary database. All North American instances are held in North America. All GB1 instances remain in London. All GB3 instances remain in Ireland. SG1 backups remain in Singapore.
 
 **Q: Will the product support the use of standard MySQL management tools including the ability to monitor and report on database tasks within the tool?**
 

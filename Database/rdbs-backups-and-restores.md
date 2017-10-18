@@ -17,11 +17,12 @@ CenturyLink's Relational DB Service is a database-as-a-service product that prov
 Access to the CenturyLink Cloud Platform as an authorized user
 
 ### Relational DB Backups
-The Relational DB service includes daily, automated Hot Backups as well as the ability to take a backup on demand. Users have the ability to define the time of day backups are run as well as a data retention policy. 
+The Relational DB service includes daily, automated Hot Backups as well as the ability to take a backup on demand. We also backup all database transaction logs allowing you to recover to a point-in-time.  Users have the ability to define the time of day backups are run as well as a data retention policy. 
 
 We make every effort to store backups off-site at least 350 miles from the datacenter housing the Relational DB instance it was backed up from.  Please reference the table below under the Data Sovereignty section.
 
 When a database is deleted, we automatically take one last backup for you.  
+
 The last valid backup will be kept for 3 months.  This is to help safeguard people from themselves.  And allows you a very easy way to recover if you choose to.  If you know for sure you won't use it you can manually delete that backup.
 
 ### Data Sovereignty
@@ -30,7 +31,8 @@ The below details where backups are held in relation to the datacenter location 
 **Primary Instance Datacenter Location**|**Backup Location**
 -----------|-----------
 UC1, VA1, IL1, NY1 | Oregon
-GB1, GB3 | London
+GB1 | London
+GB3 | Ireland
 CA3 | Oregon
 AU1, SG1 | Singapore 
 
@@ -66,9 +68,14 @@ Users may choose to take a backup at any time. Manual backups are retained in ac
 ### Restoring from Backup
 A Relational DB instance can be restored from any available backup within the same account of equal or smaller storage size.  
 
-This enables developers to easily move their development environment into a production environment simply by creating a backup of development, creating a new instance for production, and restoring that new instance from the development environment's backup.
-
-Similarly, the functionality enables users to pull back their production data into a test environment on a regular basis. Backups from a single instance can be restored to a replicated instance and vice versa, allowing the user to seamlessly transition data loads between environments with different levels of availability and performance.
+The benefits of this are:
+ - Restore a desired time back to the existing DB
+ - Easily moving Development DBs to Production when you're ready to GoLive
+ - If you have a production issue you can spin up a HotFix DB to test your code changes
+ - To enable Replication just create an new replicated DB and Restore to it
+ - To refresh your Dev and QA databases is now a simple task
+ 
+This functionality allows a user to seamlessly transition data loads between environments with different levels of availability and performance.
 
 A user can define a specific point in time within the last week as the restore point. You can also restore back further if you have the backups, but it's will be consistent at the time the backup finished.
 

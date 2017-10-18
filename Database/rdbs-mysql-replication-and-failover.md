@@ -20,7 +20,7 @@ CenturyLink's Relational DB Service is a MySQL-compatible database-as-a-service 
 1. Browse to CenturyLink Cloud’s Relational DB UI through the Control Portal or directly at [rdbs.ctl.io](https://rdbs.ctl.io).
 
 2. Click on 'Create Database'. From there, select your subscription details (database name, username, password, cpu, memory, and storage). If you want your instance to be replicated, simply, flip the Replication toggle to 'yes' and click on 'Create Database'.
-   ![CreateReplicatedDB](../images/rdbs/rdbs-createdb-replicated.png)
+   ![CreateReplicatedDB](../images/rdbs/rdbs-create-mysql-with-replication.png)
 
 3. The resulting provisioning creates a primary database instance, a replica database instance, and returns a single connection string. Replication is asynchronous over a local 10G connection, resulting in real-time replication assuming normal network conditions.
 
