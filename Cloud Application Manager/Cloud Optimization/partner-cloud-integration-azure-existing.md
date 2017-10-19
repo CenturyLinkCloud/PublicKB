@@ -33,7 +33,7 @@ For Azure, we are currently limited to serving billable customers who are not re
 
 ### Important Information
 
-![Microsoft Azure Provider Options](../../images/cloud-application-manager/CINT_Azure_Provider_Options.png)
+![Microsoft Azure Provider Options](../../images/cloud-application-manager/CINT_Azure_Provider_Options1.png)
 
 Cloud Application Manager Provider Verbiage | Description | Related Links
 --- | --- | ---
