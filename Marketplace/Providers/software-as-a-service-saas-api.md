@@ -69,10 +69,10 @@ An example JSON payload the ```/saas-usage/``` API is provided below.
 ```
 {
   "providerKey": "SOME-UNIQUE-IDENTIFIER",
+  "customerId": "1234",
   "provisioningId": "9ddz0a5e-f2d5-6eb5-89b9-7a42d0fbb836",
-	"customerId": "1234",
   "productSku": "MRKTPLC-PROVIDER-NAME-PRODCT-NAME",
-  "productId": 123
+  "productId": 123,
   "usageCount": 100.5
 }
 ```
@@ -80,7 +80,7 @@ An example JSON payload the ```/saas-usage/``` API is provided below.
 ```/saas-usages/``` will return the following status codes.
 
 * 200 - Subscription Successfully Updated
-* 40x - Invalid Input - provisioningGuid, providerKey, customerId, and productSku required.  usageCount must be a number
+* 40x - Invalid Input - provisioningId, customerId, providerKey, productId, and productSku required.  usageCount must be a number
 * 50x - Server Side Error
 
 For any questions, please contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
