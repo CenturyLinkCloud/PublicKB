@@ -26,7 +26,7 @@
 
   * Managed Microsoft Windows Server 2012
 
-  *Supported Cloud Providers*
+  *Supported Cloud Providers:*
   * AWS
   * Microsoft Azure
   * CenturyLink DCC-Foundation (coming soon)
