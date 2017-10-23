@@ -15,7 +15,7 @@
 
   __Cloud Optimization and Analytics__
 
-  Cloud Application Manager customers who utilize Microsoft Azure through CenturyLink for Consolidated Billing and Platform Support now may generate multiple [Azure subscriptions](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-azure-new/). Multiple Azure subscriptions provides your administrators the ability to easily manage users and resources for multiple Azure projects and departments by placing them in different Azure "accounts."
+  Cloud Application Manager customers who utilize Microsoft Azure through CenturyLink for Consolidated Billing and Platform Support now may generate multiple [Azure subscriptions](../../Cloud Application Manager/Cloud Optimization/partner-cloud-integration-azure-new.md). Multiple Azure subscriptions provides your administrators the ability to easily manage users and resources for multiple Azure projects and departments by placing them in different Azure "accounts."
 
   __Managed Services Anywhere__
 
