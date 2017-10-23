@@ -21,12 +21,11 @@
 
   Cloud Application Manager’s Managed Services Anywhere now includes support for Microsoft Internet Information Services (IIS).  IIS is an extensible web server created by Microsoft for use with the Windows family of OSes.  By selecting to deploy a Managed IIS server to AWS or Microsoft Azure - (CenturyLink DCC-Foundation coming soon) - customers get all the features of a managed server along with management of the IIS Server instance.  Simply Delegate Management to CenturyLink and receive Monitoring, Alerting, Ticketing, Remote Administration and Patching for both the VM and the IIS Server instance.
 
-  <p>
+
   *Supported Operating Systems:*
 
   * Managed Microsoft Windows Server 2012
 
-  <p>
   *Supported Cloud Providers*
   * AWS
   * Microsoft Azure
