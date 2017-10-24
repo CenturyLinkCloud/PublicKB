@@ -53,7 +53,7 @@ Please note that 4.0.4 only changes GUI and Syntropy on top of 4.0.3. Even thoug
 * [Script to Turn a Ubuntu-14 VM as a Recovery Proxy for Protected Windows VM](https://download.safehaven.ctl.io/SH-4.0.1/makestub_for_windows.sh)
 * [Linux Onboarding Script](./linux-onboarding-releases.md)
 
-### New Downloads
+#### New Downloads
 
 * [Debian Package for CMS/SRN](https://download.safehaven.ctl.io/SH-4.0.4/safehaven-4.0.4.deb): to be used in the cluster installer or GUI to update from SH-4.0.1/4.0.2/4.0.3
 * [GUI Package](https://download.safehaven.ctl.io/SH-4.0.4/SafeHavenConsole-4.0.4.zip): zip file containing the JRE, runs on any Windows platform
