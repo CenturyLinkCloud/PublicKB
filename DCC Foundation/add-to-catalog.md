@@ -18,29 +18,29 @@ DCC Foundation contains organization (private) catalogs, and access to the DCC F
 ### Steps to add an OVF Template
 * Login to your DCC Foundation environment.
 
-  ![Login to DCC F](../../images/dccf/login-to-dcc-f.png)
+  ![Login to DCC F](../images/dccf/login-to-dcc-f.png)
 
 * Once logged in, you can either click on __Catalogs__ at the top of the page, or click on __Manage Catalogs__ in the shortcuts pane on the right side of the page.
 
-  ![Catalog](../../images/dccf/add-to-catalog1.png)
+  ![Catalog](../images/dccf/add-to-catalog1.png)
 
 * In the __My Organization's Catalogs__ page, double-click your Catalog - in this case, __S632832-Catalog__.
 
-  ![Catalog](../../images/dccf/add-to-catalog2.png)
+  ![Catalog](../images/dccf/add-to-catalog2.png)
 
 * In the __vApp Templates__ window, click on the __Upload icon__ (leftmost icon as depicted below).
 
-  ![Catalog](../../images/dccf/add-to-catalog3.png)
+  ![Catalog](../images/dccf/add-to-catalog3.png)
 
 * In the __Upload OVF package as a vApp Template__ window, either enter the __URL__ to the OVF, or __Browse...__ to the __Local file__, then enter the __Name__ and optional Description, then click __Upload__.
 
-  ![Catalog](../../images/dccf/add-to-catalog4.png)
+  ![Catalog](../images/dccf/add-to-catalog4.png)
 
 * A window with the __Transfer progress__ will appear, then once complete, the vApp Template will begin importing.
 
-  ![Catalog](../../images/dccf/add-to-catalog5.png)
+  ![Catalog](../images/dccf/add-to-catalog5.png)
 
-  ![Catalog](../../images/dccf/add-to-catalog6.png)
+  ![Catalog](../images/dccf/add-to-catalog6.png)
 
 * Once the vApp Template is successfully imported, it can be used to deploy VMs inside of DCC Foundation.
 
@@ -49,7 +49,7 @@ In this example, we will work with the Engineering vApp to create a new vApp Tem
 
 * Click on __My Cloud__ and then in the left pane, click __vApps__. Right-click a vApp and select __Add to Catalog...__
 
-  ![Catalog](../../images/dccf/add-to-catalog7.png)
+  ![Catalog](../images/dccf/add-to-catalog7.png)
 
 * Select __Overwrite catalog item__ if you want the new catalog item to overwrite any existing vApp Template that has the same name. Type a __Name__ and optional Description for the vApp template. Specify a __Storage lease__ - the default storage lease is configured by your organization administrator.
 
@@ -59,6 +59,6 @@ In this example, we will work with the Engineering vApp to create a new vApp Tem
 
 * Click __OK__ to finish.
 
-  ![Catalog](../../images/dccf/add-to-catalog8.png)
+  ![Catalog](../images/dccf/add-to-catalog8.png)
 
   The vApp is saved as a vApp template and appears in the specified catalog.
