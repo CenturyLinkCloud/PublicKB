@@ -22,6 +22,10 @@ A Runner product allows for a user to build a form around their Ansible playbook
 * [Refresh a Runner Catalog](#refresh-a-runner-catalog)
 * [Create a Runner Product](#create-a-runner-product)
 * [Create Product Config](#create-product-config)
+  * [Readme File](#readme-file)
+  * [Config File](#config-file)
+  * [Required Elements](#required-elements)
+  * [Config Field Types](#config-field-types)
 
 ### Create a Runner Catalog
 
@@ -93,25 +97,11 @@ organizationUrl | URL for your company website
 
 The ```config.yml``` file is used to not only provide information about your product, but can also be used to build dynamic forms to provide information to your playbook. Below are the various field types you can use to acquire information from the user and pass it to your playbook.
 
-#### type:
-- [datacenters](#datacenters)
-- [groups](#groups)
-- [servers](#servers)
-- [networks](#networks)
-- [textblock](#textblock)
-- [toggle](#toggle)
-- [slider](#slider)
-- [text](#text)
-- [textarea](#textarea)
-- [number](#number)
-- [select](#select)
-- [password](#password)
-- [passwordStrength](#passwordStrength)
-
-#### datacenters <a id="datacenters">
+##### Datacenters
 The datacenters field will query the CenturyLink Cloud APIs and bring back all valid datacenters for an account alias.
 
-##### Options
+###### Options
+
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -119,20 +109,21 @@ displayName | The field name to display in the UI
 helpText | Can be used to add helptext below a item
 required | Is this item required for playbook execution (true / false)
 
-##### Example
+###### Example
+
 ```yaml
-fields:
-  - type: datacenters
-    name: my_datacenter
-    displayName: Select a Datacenter
-    required: true
-```
+  fields:
+    - type: datacenters
+      name: my_datacenter
+      displayName: Select a Datacenter
+      required: true
+  ```
 
 
-#### groups <a id="groups">
+##### Groups
 The groups field will query the CenturyLink Cloud APIs and display all groups for an account alias. The output can be restricted to a specific datacenter if you include a `parent` option.
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -142,7 +133,7 @@ multiple | Can you select multiple groups instead of just one (true / false)
 parent | Can be used to restrict to only groups in a certain datacenter. (datacenters corresponding name)
 required | Is this item required for playbook execution (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: groups
@@ -151,7 +142,7 @@ fields:
     multiple: true
     required: true
 ```
-##### Parent Example
+###### Parent Example
 ```yaml
 fields:
   - type: datacenters
@@ -168,10 +159,10 @@ fields:
 ```
 
 
-#### servers <a id="servers">
+##### Servers
 The servers field will query the CenturyLink Cloud APIs and display all servers for an account alias.
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -182,7 +173,7 @@ parent | Can be used to restrict to only groups in a certain datacenter. (datace
 required | Is this item required for playbook execution (true / false)
 inventory | Should the selected servers be added to your Ansible inventory (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: servers
@@ -194,10 +185,10 @@ fields:
 ```
 
 
-#### networks <a id="networks">
+##### Networks
 The networks field will query the CenturyLink Cloud APIs and display all networks for an account alias.
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -207,7 +198,7 @@ parent | Can be used to restrict to only networks in a certain datacenter. (data
 required | Is this item required for playbook execution (true / false)
 detail | Provide additional details about the network on the backend (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: networks
@@ -218,10 +209,10 @@ fields:
 ```
 
 
-#### textblock <a id="textblock">
+##### Textblock
 The textblock field can be used to display various types of information or warning type text on the product form.
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -229,7 +220,7 @@ title | The title of your textblock
 text | The text to display in your textblock
 level | The level of textblock to display (info / warning / danger)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: textblock
@@ -240,10 +231,10 @@ fields:
 ```
 
 
-#### toggle <a id="toggle">
+##### Toggle
 The toggle field generates a toggle button that can be used to send a true or false variable to Ansible
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -251,7 +242,7 @@ displayName | The field text to display in the UI
 helpText | Can be used to add helptext below a item
 default | The default state of the toggle button (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: toggle
@@ -261,10 +252,10 @@ fields:
 ```
 
 
-#### slider <a id="slider">
+##### Slider
 The slider field allows you to generate a numeric slider
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -275,7 +266,7 @@ max | The maximum value that can be selected
 default | The default value the slider will be initially set at
 required | Is this item required for playbook execution (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: slider
@@ -288,10 +279,10 @@ fields:
 ```
 
 
-#### text <a id="text">
+##### Text
 The text field allows you to specify text as a value
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -302,7 +293,7 @@ minLength | The minimum text length allowable
 maxLength | The maximum text length allowable
 required | Is this item required for playbook execution (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: text
@@ -315,10 +306,10 @@ fields:
 ```
 
 
-#### textarea <a id="textarea">
+##### Textarea
 The textarea field allows you to specify large blocks of text
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -326,7 +317,7 @@ displayName | The field text to display in the UI
 helpText | Can be used to add helptext below a item
 required | Is this item required for playbook execution (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: textarea
@@ -336,10 +327,10 @@ fields:
 ```
 
 
-#### number <a id="number">
+##### Number
 The number field allows you to specify a number
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -350,7 +341,7 @@ min | The minimum number allowable
 max | The maximum number allowable
 required | Is this item required for playbook execution (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: number
@@ -363,10 +354,10 @@ fields:
 ```
 
 
-#### select <a id="select">
+##### Select
 The select field allows you to select values from a pre-defined list
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -379,7 +370,7 @@ selected (options) | A subset of options, this specifies if this option should b
 multiple | Are you allowed to select multiple options (true / false)
 required | Is this item required for playbook execution (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: select
@@ -397,10 +388,10 @@ fields:
     required: true
 ```
 
-#### password <a id="password">
+##### Password
 The password field allows you to specify passwords while keeping the text hidden on the screen
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -408,7 +399,7 @@ displayName | The field text to display in the UI
 helpText | Can be used to add helptext below a item
 required | Is this item required for playbook execution (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: password
@@ -418,10 +409,10 @@ fields:
 ```
 
 
-#### passwordStrength <a id="passwordStrength">
+##### PasswordStrength
 The passwordStrength field allows you to specify passwords that conform to certain complexity standards
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -432,7 +423,7 @@ requiredStrength | The required amount of different types of characters for a pa
 dissallowedCharacters | Specify which characters are not allowed
 required | Is this item required for playbook execution (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: passwordStrength
