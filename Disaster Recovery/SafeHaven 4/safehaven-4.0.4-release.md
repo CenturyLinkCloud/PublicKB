@@ -35,9 +35,9 @@ Reference links to previous 4.0.x series releases:
 
 ### Upgrade from 4.0.3
 
-Please note that **4.0.4 only changes GUI and Syntropy on top of 4.0.3**. 
+* Please note that **4.0.4 only changes GUI and Syntropy on top of 4.0.3**. 
 
-Even though the Windows agent shows different versions for 4.0.3 and 4.0.4, there is no real difference between them. Therefore, **it is perfectly OK to run 4.0.3 Windows agent while the GUI and Syntropy are upgraded to version 4.0.4.**
+* Even though the Windows agent shows different versions for 4.0.3 and 4.0.4, there is no real difference between them. Therefore, **it is perfectly OK to run 4.0.3 Windows agent while the GUI and Syntropy are upgraded to version 4.0.4.**
 
 ### Upgrade from 4.0.1 and 4.0.2
 
