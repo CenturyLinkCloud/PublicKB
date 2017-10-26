@@ -13,7 +13,9 @@
 
 ### New Features and Enhancements
 
-This is a patch release for [SafeHaven 4.0.3](safehaven-4.0.3-release.md) with only one particular new feature: at time of automatically deploying the recovery proxies using the GUI, the user now have the choice of not to create a new folder.
+This is a patch release for [SafeHaven 4.0.3](safehaven-4.0.3-release.md) with only **ONE** particular new feature: 
+
+* at the time of automatically deploying the CLC recovery proxy servers using the SafeHaven GUI, the user now has a choice to NOT create  a new CLC folder. This will make it easier for the users to manage their DR infrastructure.
 
 Reference links to previous 4.0.x series releases:
 *  [SafeHaven 4.0.3](safehaven-4.0.3-release.md)
@@ -33,7 +35,9 @@ Reference links to previous 4.0.x series releases:
 
 ### Upgrade from 4.0.3
 
-Please note that 4.0.4 only changes GUI and Syntropy on top of 4.0.3. Even though the Windows agent shows different versions for 4.0.3 and 4.0.4, there is no real difference between them. Therefore, it is perfectly OK to run Windows agent with version 4.0.3 while the GUI and Syntropy are upgraded to version 4.0.4.
+Please note that **4.0.4 only changes GUI and Syntropy on top of 4.0.3**. 
+
+Even though the Windows agent shows different versions for 4.0.3 and 4.0.4, there is no real difference between them. Therefore, **it is perfectly OK to run 4.0.3 Windows agent while the GUI and Syntropy are upgraded to version 4.0.4.**
 
 ### Upgrade from 4.0.1 and 4.0.2
 
