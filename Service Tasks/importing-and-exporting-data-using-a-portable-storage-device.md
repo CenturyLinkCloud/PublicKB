@@ -38,14 +38,14 @@ If you are using domain specific ACLs. You must grant the "everyone" group full 
 
 ##### Requesting an Import/Export
 1. Create a Ticket through the CenturyLink Cloud Ticketing system
-  * Indicate the datacenter where the portable device will be sent
-  * Indicate the expected ship date and expected arrival date of the device
-  * Provide the password for the encryption only via the ticket
-  * Provide the location address to send the device after the data copy is completed
-  * Provide the names of the servers involved
-  * Provide details on what needs to be imported/exported (OVA/OVF and/or pathnames to files/directories)
-  * Provide any additional details about the data to be imported/exported
-  * Provide pre-paid shipping method and/or FedEx account number to be charged for return shipping.
+    * Indicate the datacenter where the portable device will be sent
+    * Indicate the expected ship date and expected arrival date of the device
+    * Provide the password for the encryption only via the ticket
+    * Provide the location address to send the device after the data copy is completed
+    * Provide the names of the servers involved
+    * Provide details on what needs to be imported/exported (OVA/OVF and/or pathnames to files/directories)
+    * Provide any additional details about the data to be imported/exported
+    * Provide pre-paid shipping method and/or FedEx account number to be charged for return shipping.
 
 2. Our team will reply with the data center mailing address and a data center logistics ticket number must be included on the shipping label. Note that the logistics number is different than the CenturyLink Cloud ticket number.
 
