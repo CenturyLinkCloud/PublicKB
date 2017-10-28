@@ -100,7 +100,7 @@ Select **Always on** if you don’t want to schedule anything. Shutdown powers o
 
     **Note:** Even if you don’t schedule an instance at the time of deploying, you can do so later. Once online, you can go to an instance page and in **Edit Details**, set the schedule.
 
-    Besides the user interface, you can automatically schedule instances using the instances API with a [POST ot PUT](../API/instances-api.md) request.
+    Besides the user interface, you can automatically schedule instances using the instances API with a [POST ot PUT](https://www.ctl.io/api-docs/cam/#application-lifecycle-management-instances-api) request.
 
 ### Handling Instance Lifecycle States
 
@@ -142,7 +142,7 @@ Click the delete icon after you Terminate or Force Terminate an instance. Until 
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

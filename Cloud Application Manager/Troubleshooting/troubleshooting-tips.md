@@ -34,13 +34,13 @@ Install the agent on the instance to bring it online. Then re-run the lifecycle 
 Linux instances deployed from the Cloud Application Manager cloud service:
 
 ```
-curl -ks ebx.co | sudo bash
+curl -sSL https://cam.ctl.io | sudo bash
 ```
 Windows instances deployed from the Cloud Application Manager cloud service (run the command as a PowerShell administrator):
 
 ```
-
-(New-Object Net.WebClient).DownloadString("http://ebx.co") | iex
+[Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
+(New-Object Net.WebClient).DownloadString("https://cam.ctl.io") | iex
 
 ```
 
@@ -136,7 +136,7 @@ A broken puppet manifest or chef recipe can cause the box to not install properl
 
 **Solution**
 
-[Contact support](mailto:cloudsupport@centurylink.com) to alert us of the broken box. In the meantime, you can define the install in a box using bash commands like apt-get, wget, cURL, and more.
+[Contact support](mailto:incident@CenturyLink.com) to alert us of the broken box. In the meantime, you can define the install in a box using bash commands like apt-get, wget, cURL, and more.
 
 ### Cloud Application Manager Appliance is Unavailable
 
@@ -146,6 +146,6 @@ When you configure the hostname, SSL certificate, or block device for the applia
 
 **Solution**
 
-[Contact support](mailto:cloudsupport@centurylink.com). We will walk you through recovering the appliance. Send us the appliance version number shown at the top of the [setup console](../Appliance/appliance-initialsetup.md). And send us the logs you can download from the Logs section of the appliance setup console.
+[Contact support](mailto:incident@CenturyLink.com). We will walk you through recovering the appliance. Send us the appliance version number shown at the top of the [setup console](../Appliance/appliance-initialsetup.md). And send us the logs you can download from the Logs section of the appliance setup console.
 
 Logs help us debug your appliance issues. The .log files include recent audit information like who did what, user connections, and contain the logs of all the services.
