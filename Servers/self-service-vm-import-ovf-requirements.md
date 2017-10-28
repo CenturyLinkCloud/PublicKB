@@ -34,7 +34,7 @@ Your OVF must meet the following requirements to be imported successfully.
 - Avoid usage of disk type "`monolithicSparse`" for VMDK disks.
 - Must have a valid DNS address.
 
-#### Specific Requirements for Windows 2012 R2 DataCenter 64-Bit / Windows 2008 R2 DataCenter 64-Bit OVFs
+#### Specific Requirements for Windows 2008/2012 R2 DataCenter 64-Bit OVFs
 - The machine cannot be joined to a domain. **NOTE:** Customers can join their virtual machine to a domain after the import process.
 - RDP needs to be available on the image.
 - RDP needs to be unblocked by Windows firewall.
