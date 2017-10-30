@@ -49,7 +49,6 @@ A tag consists of a key and a value. You can tag with a custom or preset value.
 
 ### Applying Tags for Your Organization
 Only Cloud Application Manager users in the administrator role can apply tags. Follow these steps to apply one.
-![admin-tags2.png](../../images/cloud-application-manager/admin-tags2.png)
 
 **Steps**
 1. [Log in to Cloud Application Manager.](//www.ctl.io/cloud-application-manager/)
