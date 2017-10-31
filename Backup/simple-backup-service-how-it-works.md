@@ -1,6 +1,6 @@
 {{{
   "title": "Simple Backup How It Works",
-  "date": "7-31-2017",
+  "date": "9-12-2017",
   "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
@@ -74,4 +74,4 @@ A new restoration point is created at the completion of every backup, full or in
 In order to prevent the accidental overwriting of data, a new directory is created under the restoration path you provide. The directory uses the restoration point ID as the name and contains all of the restored data.
 
 ### Security
-Backup are transferred from your server over the public Internet to Object Storage using TLSv1.2. The data is then encrypted at rest in the object store with 256-bit AES encryption server side. A unique key that is also encrypted with a master key when it is stored is used to secure your data. Keys are stored in separate locations from your data for extra protection. At this time user supplied keys are not supported. At this time, backups stored in the Canada region will not be encrypted.
+Backup are transferred from your server over the public Internet to Object Storage using TLSv1.2. The data is then encrypted at rest in the object store with 256-bit AES encryption server side for all AWS endpoints. A unique key that is also encrypted with a master key when it is stored is used to secure your data. Keys are stored in separate locations from your data for extra protection. At this time user supplied keys are not supported. CenturyLink Cloud endpoints (Canada & Germany) do not currently offer encryption at rest.
