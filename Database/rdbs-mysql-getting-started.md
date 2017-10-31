@@ -54,7 +54,7 @@ Storage: 1 GB |Storage: 2 GB|Storage: 64 GB|Storage: 256 GB |Storage: 512 GB
 
 6. Click “Create Database”. Your database information will be returned, including connection string.
    
-   ![DetailsPage](../images/rdbs/rdbs-mysql-details-page.png)
+   ![DetailsPage](../images/rdbs/rdbs-db-details-page-overview-mysql.png)
 
 7. You can view a list of all your database subscriptions with the datacenter and connection string information on the "Database Instances" tab.  Here you will see both MSSQL and MySQL instances if you are also a MySQL Relational DB customer.
    
@@ -77,7 +77,7 @@ Storage: 1 GB |Storage: 2 GB|Storage: 64 GB|Storage: 256 GB |Storage: 512 GB
      * Use the connection string information provided to connect from your favorite Database client.
    * Detail Tab Bar
 
-   ![DetailsPage](../images/rdbs/rdbs-mysql-details-page.png)
+   ![DetailsPage](../images/rdbs/rdbs-db-details-page-overview-mysql.png)
 
      * The Details Tab Bar (Backups)
         * Change your Backup Policy
