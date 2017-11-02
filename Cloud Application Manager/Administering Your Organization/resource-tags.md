@@ -15,7 +15,7 @@ You can use tags to report on usage metrics from the provider’s interface. Tag
 
 Cloud Application Manager supports tagging in the Enterprise Edition for AWS, Google Cloud, OpenStack, CloudStack, and vSphere.
 
-In the admin console, you can add tags under Providers > Tags.
+In the admin console, you can add tags under Tags section.
 
 **In this article:**
 * Preset or Custom Tags
@@ -54,18 +54,18 @@ Only Cloud Application Manager users in the administrator role can apply tags. F
 **Steps**
 1. [Log in to Cloud Application Manager](//www.ctl.io/cloud-application-manager/).
 
-2. From the menu drop-down on the top right, select the **Admin Console**.
+2. From the left menu, select the **Settings** option.
 
-3. Click **Providers > Tags**.
+3. In the **Tags** section, click **Add**.
 
 4. Enter a key and value for the tag.
    * To enter a preset value, click the Custom Value drop-down to select one.
    * To enter a custom value, simply type in the Custom Value field.
    * **Note:** The maximum length is 125 characters for the key and 250 characters for the value. Tags that contain unicode non-ASCII characters (ex: +=\*&!@#) are ignored. Such tags are not applied to the instance in Google Cloud and OpenStack.
 
-5. When done, click (+) to add the tag.
+5. When done, click **Save** to add the tag.
 
-**Note:** At this time, you can’t modify an existing tag, but you can remove and create another in its place. To remove a tag, go the admin console and under Providers > Tags, click (-) and the tick mark against it.
+**Note:** At this time, you can’t modify an existing tag, but you can remove and create another in its place. To remove a tag, go the admin console and under Tags, click (x) and the tick mark against it.
 
 ### Reporting on Cloud Application Manager Tags
 One of the chief benefits of tagging is that you can report and analyze how Cloud Application Manager resources are consumed throughout your organization. Currently, the reporting capabilities depend on what your cloud provider natively supports.

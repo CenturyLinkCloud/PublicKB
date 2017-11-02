@@ -44,12 +44,19 @@ ___
 
 When you log in, the top navigation bar guides you to the main areas of Cloud Application Manager.
 
+* Dashboard
 * Workspaces
 * Instances
 * Boxes
 * Providers
 * Your Account
 * Help
+
+**Dashboard**
+
+![getting-started-login-8.png](../../images/cloud-application-manager/getting-started-login-8.png)
+
+It is a global vision of the content and uses of the workspace. There you can see the number of the instances, boxes or providers and their status. In addition, there are two charts with the uses by day, week or month.
 
 **Workspaces**
 
