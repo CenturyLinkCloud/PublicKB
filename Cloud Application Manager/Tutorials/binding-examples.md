@@ -15,10 +15,8 @@ Bindings glue together different parts of a multi-tier application over the netw
     * Install Script
     * Configure Script
   * NFS client box
-* Using bindings in three steps
-* Step 1. Define binding variables
-* Step 2. Configure bindings for your application
-* Step 3. Tag bindings for instance connectivity
+* Three Tiers application
+
 
 ### Brief recap on Bindings
 
@@ -86,7 +84,7 @@ The easiest way to understanding the function of Bindings is to put it to use.  
     apt-get -y install nfs-kernel-server
   fi
   ```
-  The configure script is as follows:
+  The configure script is as follow:
   ```
   #!/bin/bash
   {% if server %}
@@ -128,9 +126,6 @@ The easiest way to understanding the function of Bindings is to put it to use.  
   From the configure script, the nfsserver.address.private and nfsserver.EXPORT_DIRECTORY are passed from the nfsserver box to nfsclient box.
   This is a simple example and this can be used in a more complex environment, like the JBoss example that will be covered in the next section.
 
-Here is how the binded instances show after the instance is online.
-
-![bindinglargescaledeployments1.png](../../images/cloud-application-manager/bindinglargescaledeployments1.png)
 
 ### Contacting Cloud Application Manager Support
 
