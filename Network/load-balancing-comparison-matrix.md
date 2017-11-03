@@ -1,6 +1,6 @@
 {{{
   "title": "Load Balancing Comparison Matrix",
-  "date": "10-24-2017",
+  "date": "11-3-2017",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
