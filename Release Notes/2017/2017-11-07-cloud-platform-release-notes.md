@@ -6,15 +6,15 @@
 "contentIsHTML": false 
 }}}
 
-### New Features (2)
+### New Features (3)
 
-* __Application Lifecycle Management__
+__Application Lifecycle Management__
 
    Cloud Application Manager now provides a Boxes Catalog view where you can see all available public boxes categorized as Featured, Managed Services, Plugins and Others to easily locate & deploy. More Public Boxes will be coming soon.
 
-* __Cloud Optimization and Analytics__
+__Cloud Optimization and Analytics__
 
-__Historical Monthly Cost Dashboard__
+* __Historical Monthly Cost Dashboard__
 
    Building on top of our recently released (Costing Dashboard)[https://www.ctl.io/knowledge-base/release-notes/2017/2017-09-26-cloud-platform-release-notes/] and current (Month Cost Dashboard)[https://www.ctl.io/knowledge-base/release-notes/2017/2017-10-10-cloud-platform-release-notes/] Cloud Application Manager customers with Optimized AWS providers now have access to monthly reporting that provides a granular breakdown of cost by service historically in order to further understand how an environment is performing financially over time.
 
@@ -24,7 +24,7 @@ __Managed Services Anywhere__
 
    Cloud Application Manager’s Managed Services Anywhere now includes support for Tomcat and Apache, enabling large-scale, mission-critical web applications to be deployed on AWS or Microsoft Azure (CenturyLink DCC-Foundation coming soon). By selecting to deploy Managed Tomcat and/or Apache servers to AWS or Microsoft Azure - (CenturyLink DCC-Foundation coming soon) - customers get all the features of a managed server along with management of the Tomcat / Apache instance. Simply Delegate Management to CenturyLink and receive Monitoring, Alerting, Ticketing, Remote Administration and Patching for both the VM and the Tomcat / Apache intance.
 
-__Supported Versions__
+* __Supported Versions__
 
 Supported Operating Systems:
 * Managed RHEL 6 or 7
@@ -53,21 +53,21 @@ Supported Cloud Providers:
 
 ### Bug Fixes
 
-* __DCC General Bug Fixes__
+__DCC General Bug Fixes__
 
-__Bug fixes for Create VM:__
+* __Bug fixes for Create VM:__
 
    Added validation error if the catalog is from a different cluster.
 
-__ESX Validation error handling in UI:__
+* __ESX Validation error handling in UI:__
 
    When a validation fails during add product, the API was returning a generic error code to the UI. This has been updated to return a more specific error message.
 
-__OS Validation bug fix:__
+* __OS Validation bug fix:__
 
    Added better wording for validation error message for CPU requirement check.
   
-* __Public Cloud IaaS Bug Fixes__
+__Public Cloud IaaS Bug Fixes__
   
 Resolved a bug where some V1 API responses were being truncated before all the data was returned.
 
