@@ -24,7 +24,7 @@ __Managed Services Anywhere__
 
    Cloud Application Manager’s Managed Services Anywhere now includes support for Tomcat and Apache, enabling large-scale, mission-critical web applications to be deployed on AWS or Microsoft Azure (CenturyLink DCC-Foundation coming soon). By selecting to deploy Managed Tomcat and/or Apache servers to AWS or Microsoft Azure - (CenturyLink DCC-Foundation coming soon) - customers get all the features of a managed server along with management of the Tomcat / Apache instance. Simply Delegate Management to CenturyLink and receive Monitoring, Alerting, Ticketing, Remote Administration and Patching for both the VM and the Tomcat / Apache intance.
 
-* __Supported Versions__
+__Supported Versions__
 
 Supported Operating Systems:
 * Managed RHEL 6 or 7
@@ -45,13 +45,13 @@ Supported Cloud Providers:
 
    Official Release Notes Link: https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-4/safehaven-4.0.4-release/
 
-### Announcements
+### Announcements (1)
 
 * __Public Cloud IaaS__
 
   Default location for new web sign up customers in the United States has been switched from NY1 to VA2.
 
-### Bug Fixes
+### Bug Fixes (7)
 
 __DCC General Bug Fixes__
 
