@@ -8,6 +8,10 @@
 
 ### New Features (2)
 
+* __Application Lifecycle Management__
+
+   Cloud Application Manager now provides a Boxes Catalog view where you can see all available public boxes categorized as Featured, Managed Services, Plugins and Others to easily locate & deploy. More Public Boxes will be coming soon.
+
 * __Cloud Optimization and Analytics__
 
 __Historical Monthly Cost Dashboard__
