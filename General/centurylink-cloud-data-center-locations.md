@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Data Center Locations",
-  "date": "5-2-2017",
+  "date": "11-6-2017",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -16,7 +16,7 @@ US Central (Salt Lake City) - UT1 (New VM provisioning disabled at this location
 US Central (Chicago) - IL1|Equinix|1905 Lunt Ave.<br>Elk Grove, IL 60007|[provider details](http://www.equinix.com/en_US/locations/united-states/chicago-data-centers/)
 US East (New York) - NY1|Equinix|755 Secaucus Rd.<br>Secaucus, NJ 07094|[provider details](http://www.equinix.com/en_US/locations/united-states/new-york-data-centers/)
 US East (Sterling) - VA1<br>US East (Sterling) - VA2|Cyxtera (DC2)|45901 Nokes Blvd<br>Sterling Virginia, 20166|[provider details](https://www.cyxtera.com/images/dc2-sterling-va-colocation-datasheet-ss111857.pdf)
-Great Britain (Portsmouth) - GB1|Peer 1 Hosting|Langstone Technology Park<br>Langstone Road<br>Havant, Hampshire PO9 1SA|[provider details](http://www.peer1.com/infrastructure/datacenter-portsmouth)
+Great Britain (Reading) - GB1|Cyxtera (L06)|Eskdale Road Winnersh Triangle<br>Wokingham, England RG41 5TS|[provider details](https://www.cyxtera.com/images/lo6-reading-england-colocation-tearsheet-ss111848.pdf)
 Great Britain (Slough) - GB3|Cyxtera (LO1)|630 Ajax Avenue<br>Slough, Berkshire, SL1 4DG|[provider details](https://www.cyxtera.com/images/lo1-slough-ss111861.pdf)
 Canada (Toronto - Mississauga) - CA3|Cyxtera (TR1)|6800 Millcreek Drive<br>Mississauga, Ontario L5N4J9|[provider details](https://www.cyxtera.com/images/tr1-toronto-canada-colocation-tearsheet-ss111866.pdf)
 Canada (Toronto - Markam) - CA2|Peer 1 Hosting|20 Pullman Court<br>Toronto, Ontario M1X 1E4|[provider details](http://www.peer1.com/infrastructure/datacenter-toronto)

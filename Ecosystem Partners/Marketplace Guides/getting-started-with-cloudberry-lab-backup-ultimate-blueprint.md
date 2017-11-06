@@ -1,6 +1,6 @@
 {{{
-  "title": "Getting Started with Cloudberry Lab Backup Enterprise - Blueprint",
-  "date": "08-14-2016",
+  "title": "Getting Started with Cloudberry Lab Backup Ultimate - Blueprint",
+  "date": "11-3-2017",
   "author": "<a href='https://twitter.com/EvgenyRudinsky'>@EvgenyRudinsky<a/>",
   "attachments": [],
   "contentIsHTML": false
@@ -60,23 +60,23 @@ After executing the steps in this Getting Started document, the users will have 
 * Configure the VPN access to the virtual server.
 
 ### Deploy CloudBerry Labs Blueprint
-Follow these step by step instructions to deploy Cloudberry Backup Enterprise Edition on your server and connect to you CenturyLink Object Storage account.
+Follow these step by step instructions to deploy Cloudberry Backup Ultimate Edition on your server and connect to you CenturyLink Object Storage account.
 
 1. Open the Blueprint Library.
    * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
 
 2. Search for the Blueprint.
-   * To search for the Blueprint, type “Cloudberry Backup Enterprise for Desktop and Server” under “Refine Results” in the right panel and click the `Go` button.
+   * To search for the Blueprint, type “Cloudberry Backup Ultimate Server” under “Refine Results” in the right panel and click the `Go` button.
 
 3. Choose the Blueprint.
-   * Click on the Blueprint titled “CloudBerry Backup Enterprise for Desktop and Server”.
+   * Click on the Blueprint titled “CloudBerry Backup Ultimate Server”.
 
 4. Deploy the Blueprint.
    * Click the `deploy blueprint` button to begin configuring your installation.
 
 5. Configure the Blueprint.
    * On the first page, “Customize Blueprint”, ensure the following options are configured.
-   * Choose the server, you would like to install Cloudberry Backup Enterprise on.
+   * Choose the server, you would like to install Cloudberry Backup Ultimate on.
    * Enter the e-mail, which you would like to use for trial activation.
    * Then, click `next step 2`.
 
@@ -100,7 +100,7 @@ Follow these steps to access and use the CloudBerry software.
    * Please, log in to your server using the VPN Access.
 
 2. Launch the software.
-   * You will see a Cloudberry Backup Enterprise Edition Icon on the desktop.
+   * You will see a Cloudberry Backup Ultimate Edition Icon on the desktop.
    * Double click it to launch.
 
     ![Cloudberry Ultimate Backup for Windows](../../images/cloudberrylab/cloudberrylab-ultimate-backup.jpg)
