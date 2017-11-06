@@ -1,7 +1,7 @@
 {{{
-  "title": "Simple backup FAQs",
-  "date": "04-08-2016",
-  "author": "Justin Withington",
+  "title": "Simple Backup Service FAQs",
+  "date": "6-27-2017",
+  "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -16,6 +16,7 @@
 * [Restores](#restores)
 * [Policies](#policies)
 * [Frequency](#frequency)
+* [Scheduling](#scheduling)
 * [Retention](#retention)
 * [Inclusions and Exclusions](#inclusions-and-exclusions)
 * [Billing](#billing)
@@ -52,6 +53,10 @@ A: No further backups occur from the server to storage. If a backup agent is una
 
 A: No, SBS provides file-level backup protection. In fact, SBS does not backup certain [OS files](#inclusions-and-exclusions) or provide snapshot capability. Users can still perform [manual snapshots on-demand](https://www.ctl.io/knowledge-base/servers/creating-and-managing-server-snapshots/) and as scheduled tasks within the server settings. For full [Disaster Recovery](https://www.ctl.io/knowledge-base/support/introducing-new-options-for-backups/#how-does-the-simple-backup-service-compare-to-other-options-are-available-on-centurylink-cloud) services, there are a number of options available internally or through Certified Ecosystem partners.
 
+**Q: Does SBS support server cloning?**
+
+A: No, currently SBS does not support cloning. If the agent is installed on a server and the server is cloned there can be data continuity issues between the backups of the source and cloned server. If a server is going to be cloned, the SBS agent must be [uninstalled](./removing-simple-backup-service.md) first, and the agent properly installed on all servers needed after they are cloned.
+
 ### Agent
 
 **Q: What are the minimum requirements of a VM for the SBS agent to run?**
@@ -64,7 +69,7 @@ A: Please review the [SBS Agent Security Configurations](./sbs-agent-security.md
 
 **Q: Can I change the backup agent credentials for all my instances in one place?**
 
-A: Not currently at this time. Each properties file must be updated individually.
+A: Not at this time. Each properties file must be updated individually.
 
 **Q: How can I access my backup agent from a remote machine?**
 
@@ -78,7 +83,7 @@ A: Logs can be viewed at the following locations:
 
 **Q: What can I find in the backup agent's logs?**
 
-A: The backup agent's logs have details about the backups that have ran on the system. This is helpful if you are trying to identify causes of backup failures as the failed files will be listed in the logs.
+A: The backup agent's logs have details about the backups that have run on the system. This is helpful if you are trying to identify causes of backup failures as the failed files will be listed in the logs.
 
 **Q: If a new version of the the agent is available, what are the steps to update the agent on my server?**
 
@@ -122,7 +127,7 @@ A: An "IN_PROGRESS" status for a restore job indicates the data is actively bein
 
 **Q: Can I select specific files/folders to restore from a restore point?**
 
-A: Currently, the only restore option available is a full restore of all files from a specific point in time (based on the retention period); all files that existed at that point in time will be restored. We have selective file restore on the roadmap and understand that it is a very important feature to most people, but we do not have an estimated release date yet.
+A: Yes, in the restore section there is an option to perform a full restore, or selective file restore. Using the selective file restore option allows you to enter the full path to a file or folder and the option to add multiple paths to restore.
 
 **Q: Can restores be performed to another server?**
 
@@ -155,13 +160,9 @@ A: Common causes of obscured restore files:
   - Permissions of the files and folders restored as assigned during backup execution.
   - Invalid path structure provided as a Restore Path. In this case, the files and folders will be restored to the C:Windows\System32 folder for Windows or the SimpleBackupService directory for Linux.
 
-**Q: Why am I seeing a different number of restore points than I expected?**
-
-A: The number of restore points depends on the backup frequency as selected in the policy. Note that the frequency is the measurement of time between the end of the last backup and the next backup.
-
 **Q: How do I stop an in-progress restore from completing?**
 
-A: Restarting the Simple Backup Service on the server will stop all running restore task(s), but it will also stop any backups that are in progress. See https://www.ctl.io/knowledge-base/backup/restarting-simple-backup-service/ for steps to restart in Linux and Windows.
+A: Restarting the Simple Backup Service on the server will stop all running restore task(s). See https://www.ctl.io/knowledge-base/backup/restarting-simple-backup-service/ for steps to restart in Linux and Windows.
 
 ### Policies
 
@@ -175,7 +176,7 @@ A: A policy will show its status as "Pending_Install" until the SBS agent checks
 
 **Q: What happens when polices are disabled by the user?**
 
-A: When a policy is disabled backups will stop being performed for the associated server and paths tied to the policy . A count down of the retention period will begin based on the policy details. For example, if the retention period is 14 days, then once the policy is disabled, the files will be retained in storage for 14 days, then removed from storage.
+A: When a policy is disabled, backups will stop being performed for the associated server and paths tied to the policy. A countdown of the retention period will begin based on the policy details. For example, if the retention period is 14 days, then once the policy is disabled, the files will be retained in storage for 14 days, then removed from storage.
 
 **Q: What if an inactive policy is enabled while the current backups are counting down their retention period?**
 
@@ -195,27 +196,57 @@ A: Currently, the most efficient method of viewing all the policies applied to a
 
 ### Frequency
 
+**Q: Where has the frequency setting gone when creating a new policy?**
+
+A: We have replaced the frequency method of backing up with a CRON style scheduling method. Please see below for more details.
+
+**Q: Will my backup policies that were setup with frequency still function?**
+
+A: YES! We have backwards compatibility for all backup policies that use the frequency method of backing up
+
+**Q: How do I change my old frequency based policies over to schedule based policies?**
+
+Simply select the policy you wish to change, click edit, and select the desired schedule for the new policy. Once it has been saved, the new schedule will take effect.
+
 **Q: If the backup frequency is every 4 hours, what should I expect?**
 
 A: This depends on how long a backup takes to complete. The frequency timer will not start until the previous backup has completed, so in this example the next backup will start 4 hours after the previous one has completed.
 
 **Q: Can I manually initiate a backup outside of my regularly scheduled frequency?**
 
-A: Yes, from the Backup Agent, click the **Backup** button from the Home Dashboard or the Policy Details page. This places a request at the top of the backup queue and will be processed as soon possible.
+A: Yes. From the Backup Agent, click the **Backup** button from the Home Dashboard or the Policy Details page. This places a request at the top of the backup queue and will be processed as soon possible.
 
 **Q: Can I schedule backups to execute at a specific time in the day?**
 
-A: No, the policy frequency determines when the next backup will be executed or the user may manually trigger a backup. Once a backup has completed, the frequency will start to countdown and the next backup will occur when the frequency countdown has expired. If you want to prevent backups from occurring during peak business hours, you will need to stop and restart the service accordingly.
+A: YES! This is part of our new Scheduling feature; for more details, please see the [getting started guide](./getting-started-with-simple-backup.md)
+
+### Scheduling
+
+**Q: What scheduling configurations are available?**
+
+A: You can configure a backup schedule on an hourly, daily, weekly, monthly or yearly basis.
+
+**Q: Can I set the hour of the day to backup?**
+
+A: Yes, all options except for hourly allow you to specify at what hour you want the backup to start.
+
+**Q: Can I specify a time for backups to NOT happen?**
+
+A: No, you can not currently specify a blackout period for backups.
 
 ### Retention
 
 **Q: Can I completely delete my backed up files from storage regardless of the retention period?**
 
-A: No, this is a manual process at this time. A [support request](https://www.ctl.io/knowledge-base/support/how-do-i-report-a-support-issue/#exceptions) will need to be opened to have this performed.
+A: No. This is a manual process at this time. A [support request](https://www.ctl.io/knowledge-base/support/how-do-i-report-a-support-issue/#exceptions) will need to be opened to have this performed.
 
 **Q: Why do unchanged files not follow retention?**
 
 A: This provides the ability to utilize incremental backups with consistent full backup protection. By not expiring unchanged files, there is no need to retransfer them to object storage, which minimizes data transfer costs and provides quicker backups. Bottom line is that it provides quicker and cheaper backups for our users.
+
+**Q: What is the maximum retention period for backups?**
+
+A: 18263 days (approximately 50 years)
 
 ### Inclusions and Exclusions
 
@@ -249,7 +280,7 @@ A: Please refer to the list below:
 
 **Q: Can I opt to backup the files that are automatically excluded from backups?**
 
-A: Not at this time; currently the exclusion list overrides the inclusion list. The reason these are not included is because SBS is intended to backup the apps and data that are specific and important to your business. SBS is not intended to be a full server restore. Since OS files are not included, the speed and performance of the backups are increased, while also minimizing backup costs.
+A: Not at this time. Currently, the exclusion list overrides the inclusion list. The reason these are not included is because SBS is intended to backup the apps and data that are specific and important to your business. SBS is not intended to be a full server restore. Since OS files are not included, the speed and performance of the backups are increased, while also minimizing backup costs.
 
 **Q: Are wildcard characters supported for inclusion/exclusion backup paths when creating a Backup Policy?**
 

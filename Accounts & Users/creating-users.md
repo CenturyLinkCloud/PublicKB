@@ -1,7 +1,7 @@
 {{{
   "title": "Creating Users",
-  "date": "10-16-2014",
-  "author": "Troy Schneringer",
+  "date": "10-26-2017",
+  "author": "CenturyLink Cloud Customer Care",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -12,7 +12,10 @@ Users can be configured for both the Control Portal and the API.
 
 You can manage users on your account by going to the Control Portal > Settings > Users.
 
-**Note:** Permissions must be configured for a user after they are created in order to have access within the control. Learn more about [User Permissions](user-permissions.md).
+**Important Notes:** 
+* Permissions must be configured for a user after they are created in order to have access within the control. Learn more about [User Permissions](user-permissions.md).
+
+* A Control account username must be globally unique in the platform and cannot be reused, or otherwise reissued/migrated into a different Control account. If the user account is deleted, it cannot be reinstated or repurposed for another user. This constraint is currently an intentional design specification built into the CenturyLink Cloud Control platform.
 
 1. Click the "Create New User" button.
 
@@ -22,7 +25,7 @@ You can manage users on your account by going to the Control Portal > Settings >
 
 3. Optionally fill in additional information
 
-4. Once a user is created an email will be sent to the email address supplied with the required information for logging in.
+4. Once a user is created an email containing the required information for logging in will be sent to the email address you created.
 
 ### API Users
 

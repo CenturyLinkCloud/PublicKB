@@ -23,9 +23,6 @@
 
 * **AppFog v2 Limited Beta.** This new platform for creating and managing cloud-native applications is available as a Limited Beta.  Based on Cloud Foundry v2, the service makes it easier for developers to build and scale applications.  If you are interested in becoming a beta tester, please contact [**the AppFog team**](mailto:appfog-feedback@ctl.io).
 
-  ![AppFog Navigation UI](../../images/appfog-icon-nav.png)
-
-
 ### Minor Enhancements (3)
 
 * **Cloud Network Services (CNS) available in NY1.** CenturyLink Cloud deployments in NY1 can now be connected to other environments using Cloud Network Services. This capability delivers private, secure, and high-speed connectivity between traditional and cloud environments.
@@ -53,8 +50,6 @@
 * [**Saratoga Flume**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-saratoga-data-flume-blueprint.md) - Helps CenturyLink Cloud customers address the business challenge of secure and reliable transmission of data across alternate network providers with high latency and varied availability.
 
 * [**MongoDB**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-mongodb-blueprint.md) - A cross-platform, NoSQL-style, document-oriented database. MongoDB’s structure is JSON-like, making integration of unstructured data in certain types of applications easier and faster.
-
-* [**AlertLogic**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-alert-logic-threat-manager-partner-template.md) - Delivers deep security insight and supports continuous monitoring against cyber-threats.  Built for web scale, the Alert Logic threat management solution combines a cloud-deployed endpoint solution with the power of an aggregated threat intelligence database.
 
 * [**Vision Solutions - DoubleTake**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md) - Best-of-breed technology helping customers address the business challenge of adopting cloud-based disaster recovery strategies and performing near-zero downtime migrations without risk across physical, virtual or cloud server platforms.
 
