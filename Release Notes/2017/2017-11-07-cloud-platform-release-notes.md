@@ -65,10 +65,10 @@ __OS Validation bug fix:__
   
 * __Public Cloud IaaS Bug Fixes__
   
-   Resolved a bug where some V1 API responses were being truncated before all the data was returned.
+Resolved a bug where some V1 API responses were being truncated before all the data was returned.
 
-   Fixed an issue where some VPN server creations were failing.
+Fixed an issue where some VPN server creations were failing.
 
-   Enhanced our functionality for adding disks to Virtual Machines running a Linux distribution as an Operating System - users will experience less failures.
+Enhanced our functionality for adding disks to Virtual Machines running a Linux distribution as an Operating System - users will experience less failures.
 
-   Resolved a bug that caused network flapping when deleting site to site VPNs in some scenarios.
+Resolved a bug that caused network flapping when deleting site to site VPNs in some scenarios.
