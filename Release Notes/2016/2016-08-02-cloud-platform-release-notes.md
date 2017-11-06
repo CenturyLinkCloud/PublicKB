@@ -13,7 +13,7 @@
 
 	Users are now able to restore a Relational DB instance to any point in time, from as far back as one week ago (or the customers' backup retention policy, whichever is shorter) to as recent as 10 minutes ago.<p>
 
-  ![RelationalDBLogo](../../images/rdbs-logo-black.png)
+  ![RelationalDBLogo](../../images/rdbs/rdbs-logo-black.png)
 
 * __Runner__
 

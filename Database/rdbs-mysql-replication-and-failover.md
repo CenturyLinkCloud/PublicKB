@@ -20,7 +20,7 @@ CenturyLink's Relational DB Service is a MySQL-compatible database-as-a-service 
 1. Browse to CenturyLink Cloud’s Relational DB UI through the Control Portal or directly at [rdbs.ctl.io](https://rdbs.ctl.io).
 
 2. Click on 'Create Database'. From there, select your subscription details (database name, username, password, cpu, memory, and storage). If you want your instance to be replicated, simply, flip the Replication toggle to 'yes' and click on 'Create Database'.
-   ![CreateReplicatedDB](../images/rdbs-createdb-replicated.png)
+   ![CreateReplicatedDB](../images/rdbs/rdbs-create-mysql-with-replication.png)
 
 3. The resulting provisioning creates a primary database instance, a replica database instance, and returns a single connection string. Replication is asynchronous over a local 10G connection, resulting in real-time replication assuming normal network conditions.
 
@@ -30,6 +30,6 @@ CenturyLink's Relational DB Service is a MySQL-compatible database-as-a-service 
 2. A customer can determine if their database instance is currently running on the primary or replica by selecting the database subscription in question from the "Database Instances" screen. When you click on the subscription in question, it takes you to a details page with a line for Active Instance. This line indicates either 'Primary' or 'Replica'.
 
 3. Manual Failover - To perform a manual failover, navigate to the same location in the UI as described in Step 2 above and click the 'failover' button in the top left corner. This action triggers failover, and the active instance is show as being on the replica.
-   ![Failover](../images/rdbs-failover1.png)
+   ![Failover](../images/rdbs/rdbs-failover1.png)
 
 4. If you have questions or feedback, please submit them to our team by emailing <a href="mailto:rdbs-help@ctl.io">rdbs-help@ctl.io</a>.
