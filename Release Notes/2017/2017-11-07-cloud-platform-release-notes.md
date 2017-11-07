@@ -24,7 +24,9 @@ __Managed Services Anywhere__
 
    Cloud Application Manager’s Managed Services Anywhere now includes support for Tomcat and Apache, enabling large-scale, mission-critical web applications to be deployed on AWS or Microsoft Azure (CenturyLink DCC-Foundation coming soon). By selecting to deploy Managed Tomcat and/or Apache servers to AWS or Microsoft Azure - (CenturyLink DCC-Foundation coming soon) - customers get all the features of a managed server along with management of the Tomcat / Apache instance. Simply Delegate Management to CenturyLink and receive Monitoring, Alerting, Ticketing, Remote Administration and Patching for both the VM and the Tomcat / Apache intance.
 
-__Supported Versions__
+Supported Versions:
+* Tomcat 7.0, 8.0 & 8.5
+* Apache (httpd) 2.4
 
 Supported Operating Systems:
 * Managed RHEL 6 or 7
