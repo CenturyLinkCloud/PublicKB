@@ -57,14 +57,14 @@ Only Cloud Application Manager users in the administrator role can apply tags. F
 
 3. Click **Settings and scroll to the Tags section**.
 
-4. Enter a key and value for the tag.
+4. Click **Add** and enter a key and value for the tag.
    * To enter a preset value, click the Custom Value drop-down to select one.
    * To enter a custom value, simply type in the Custom Value field.
    * **Note:** The maximum length is 125 characters for the key and 250 characters for the value. Tags that contain unicode non-ASCII characters (ex: +=\*&!@#) are ignored. Such tags are not applied to the instance in Google Cloud and OpenStack.
 
-5. When done, click (+) to add the tag.
+5. When done, click **Save** to add the tag.
 
-**Note:** At this time, you can’t modify an existing tag, but you can remove and create another in its place. To remove a tag, go the admin console and under Providers > Tags, click (-) and the tick mark against it.
+**Note:** At this time, you can’t modify an existing tag, but you can remove and create another in its place. To remove a tag, go the admin console and under Tags, click (x) and the tick mark against it.
 
 ### Reporting on Cloud Application Manager Tags
 One of the chief benefits of tagging is that you can report and analyze how Cloud Application Manager resources are consumed throughout your organization. Currently, the reporting capabilities depend on what your cloud provider natively supports.
