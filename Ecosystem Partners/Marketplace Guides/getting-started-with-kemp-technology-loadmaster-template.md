@@ -67,7 +67,7 @@ You may secure entitlements to the technology by contacting [KEMP](sales@kemptec
 ### **Frequently Asked Questions**<br>
 **Where do I obtain a KEMP license?**<br>
 Existing CenturyLink Enterprise Customers can contact their Account Representative for help obtaining a KEMP Technologies license, or contact KEMP Technologies directly:
-* Contact KEMP Technologies Sales via [Email KEMP Sales](sales@kemptechnologies.com)
+* Contact KEMP Technologies Sales via [Email KEMP Sales](mailto:sales@kemptechnologies.com)
 * Contact KEMP Technologies Sales via Phone: 1-844-470-5367<br>
 
 **Who should I contact for support?**
