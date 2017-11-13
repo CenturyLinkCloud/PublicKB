@@ -16,7 +16,7 @@ KEMP Technologies is the leading provider of application-centric load-balancing 
 |---------------|---------------- |
 | (mailto:support@kemptechnologies.com)<br>|(mailto:support@kemptechnologies.com)<br>|
 (844) 470-5367  |(844) 556-4398|
-|[KEMP Website](www.kemptechnologies.com)|[Support Web](https://www.kemptechnologies.com/support/) |
+|[KEMP Website](https://www.kemptechnologies.com)|[Support Web](https://www.kemptechnologies.com/support/) |
 
 # **Description**
 KEMP Technologies' has integrated their Virtual LoadMaster™, a Load balancing and Application Delivery Controller with the CenturyLink Cloud platform, publishing their virtual appliance as a CenturyLink Cloud Partner Template. The purpose of this KB article is to inform the reader of this integration. KEMP Technologies Virtual LoadMaster™ ​optimizes web and application infrastructure for high-performance, flexible scaling, security and ease of management.<br>
