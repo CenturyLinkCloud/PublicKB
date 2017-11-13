@@ -108,6 +108,10 @@ If your fork and branch are behind by a number of commits (meaning there have be
 
 ## KB Article Format
 
+### Category Directory Structure
+
+You can use 1 level of nested categories by creating sub directories under the main category directory.  However, if a Category has any sub directories, all articles must be within those sub directories.
+
 ### Front Matter
 
 
@@ -149,35 +153,41 @@ Use heading level 3 (###) as the highest heading level in the KB articles (for c
 
 ### Links
 
-KBs use full links (instead of relative links), with the "http:" or "https:" removed.
-
-  Links to KB articles should follow this format:
+Links to other KB articles should follow this format:
 
     ```
     [Link Text](../category/kb-article-name.md)
     [Link Text](../category/sub-category/kb-article-name.md)
     ```
 
-    so like this (folder names are case-sensitive):
+    Example (folder names are case-sensitive):
 
     ```
     [Packages Best Practices](../Blueprints/packages-best-practices.md)
-    [Using SAML for Single-Sign-On](../Control Portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md )
+    [Using SAML for Single-Sign-On](../Control Portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md)
     ```
 
-  Links to external sites should follow this format:
+Links to ctl.io sites (internal links) should follow this format:
 
     ```
     [Managed Microsoft SQL](//www.ctl.io/managed-services/ms-sql)
     ```
-    **Note:** The links have the "http:" or "https:" deleted so that the site will render regardless of the protocol (the ctl.io website only displays https; this ensures there are no conflicts.)
+    **Note:** The links have the "http:" or "https:" removed so that the site will render regardless of the protocol (the ctl.io website only displays https; this ensures there are no conflicts.)
 
-  Links to embedded videos, such as podcasts, should look like this:
+Links to external sites (not ctl.io) should be full, regular links and follow this format:
+
+    ```
+    [Github](https://github.com/)
+    ```
+
+Links to podcasts should look like this:
 
   ```
   <iframe id='ei8087582' src='//centurylinklabs.podomatic.com/embed/frame/posting/2016-06-06T12_59_45-07_00?json_url=http%3A%2F%2Fcenturylinklabs.podomatic.com%2Fentry%2Fembed_params%2F2016-06-06T12_59_45-07_00%3Fcolor%3D43bee7%26autoPlay%3Dfalse%26facebook%3Dtrue%26height%3D85%26width%3D620%26minicast%3Dfalse%26objembed%3D0&notb=1' height='85' width='620'frameborder='0' marginheight='0' marginwidth='0' scrolling='no' allowfullscreen></iframe>
   ```
   **Note:** Like the external site links, the "http:" and "https:" are removed from the links to eliminate conflicts.
+
+  Podcasts should be posted on the podomatic website as well.
 
 ### Images
 

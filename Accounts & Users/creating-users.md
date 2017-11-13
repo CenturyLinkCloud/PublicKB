@@ -1,7 +1,7 @@
 {{{
   "title": "Creating Users",
-  "date": "10-16-2014",
-  "author": "Troy Schneringer",
+  "date": "10-26-2017",
+  "author": "CenturyLink Cloud Customer Care",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -10,26 +10,30 @@ Users can be configured for both the Control Portal and the API.
 
 ### Control Portal Users
 
-You can manage users on your account by going to the Control Portal &gt; Account &gt; Users.
+You can manage users on your account by going to the Control Portal > Settings > Users.
 
-NOTE: Permissions must be configured for a user after they are created in order to have access within the control. Learn more about [User Permissions](user-permissions.md).
+**Important Notes:** 
+* Permissions must be configured for a user after they are created in order to have access within the control. Learn more about [User Permissions](user-permissions.md).
 
-1. Click the "Create New User" button
+* A Control account username must be globally unique in the platform and cannot be reused, or otherwise reissued/migrated into a different Control account. If the user account is deleted, it cannot be reinstated or repurposed for another user. This constraint is currently an intentional design specification built into the CenturyLink Cloud Control platform.
+
+1. Click the "Create New User" button.
+
 2. Fill in all required fields. The entered email address must be unique as it will also be the username.
 
-  <img src="../images/create-user-1.png" alt="" />
+    ![Create User](../images/control-portal-create-user.png)
+
 3. Optionally fill in additional information
 
-  <img src="../images/create-user-2.png" alt="" />
-4. Once a user is created an email will be sent to the email address supplied with the required information for logging in.
+4. Once a user is created an email containing the required information for logging in will be sent to the email address you created.
 
 ### API Users
 
-You can manage users for version 1 of the API on your account by going to the Control Portal &gt; Account &gt; API.
+You can manage users for version 1 of the API on your account by going to the Control Portal > Settings > API.
 
 1. Click on the "Create API User" button.
 2. Enter an email address. The entered email address must be unique.
 
-  NOTE: API users have full permission to account resources, and as such do not need permissions configured.
+  **Note:** API users have full permission to account resources, and as such do not need permissions configured.
 
-  NOTE: API v2 users control portal users rather than an API specific user.
+  **Note:** API v2 users control portal users rather than an API specific user.

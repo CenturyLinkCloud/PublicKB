@@ -1,25 +1,23 @@
 {{{
   "title": "Introducing New Options for Backups, Plus An Update on the Retirement of Standard & Premium Backup Features",
-  "date": "6-1-2016",
+  "date": "9-21-2016",
   "author": "Jared Ruckle",
   "attachments": []
 }}}
 
-Article updated June 1, 2016 to confirm the retirement of Standard & Premium backup features in the platform as communicated previously. Article was previously updated on May 4, 2016; article first posted on February 22, 2016
+This article was updated June 1, 2016 to confirm the retirement of Standard & Premium backup features in the platform as communicated previously. Article was previously updated on May 4, 2016; article was first posted on February 22, 2016.
 
 ### Introducing New Options for Backups, Plus an Update on the Retirement of Standard & Premium Backup Features
 
-Late last year, CenturyLink notified customers that the backup features associated with [“Standard” and “Premium” storage were to be retired in early 2016](../Support/backup-service-changes-faq.md).
+Late last year, CenturyLink notified customers that the backup features associated with “Standard” and “Premium” storage were to be retired in 2016.
 
-We can now offer more clarity on this timing. **Effective June 1, 2016 Standard and Premium backup features will reach end of life in CenturyLink Cloud in all locations. UPDATE ON JUNE 1, 2016: Standard & Premium backup features are now retired. Please continue to take steps to ensure data is backed up and protected as needed.**
+UPDATE - JUNE 1, 2016: Standard & Premium backup features are now retired. Please ensure your data is backed up and protected as needed.  There is no impact to the persistent storage attached to servers.
 
-There is no impact to the persistent storage attached to servers, but the 5-day and 14-day backup capabilities will no longer function after this date. A retirement date of May 1 was communicated earlier, but we are pushing this back a month to give customers more time to transition. **UPDATE ON JUNE 1, 2016: Standard & Premium backup have been retired. Please continue to take steps to ensure data is backed up and protected as needed.**
-
-The [Simple Backup Service is now generally available](https://www.ctl.io/simple-backup-service/). This integrated service offers file-level backup protection, with highly customizable retention policies. The service will be available in all CenturyLink Cloud locations, with backup locations around the world.
+The [Simple Backup Service is CenturyLink Cloud's backup solution](https://www.ctl.io/simple-backup-service/). This integrated service offers file-level backup protection, with highly customizable retention policies. The service will be available in all CenturyLink Cloud locations, with backup locations around the world.
 
 In addition, we reduced the price of block storage on April 1, two full months **before** the retirement of Standard & Premium backup features.
 
-To assist customers during this transition, here are answers to a few common questions we’ve heard from customers in recent weeks.
+To assist customers during this transition, here are answers to a few common questions we’ve received from customers.
 
 ### Why is CenturyLink making this change?
 
@@ -109,7 +107,7 @@ The answer varies depending on the workload and your requirements. Along those l
 * Support Model: Supported by CenturyLink (since the product is integrated into the Control Portal); on-boarding from CenturyLink is also included
 * To Get Started: Contact your account team, or [visit the product page](https://www.ctl.io/disaster-recovery/)
 * Other resources:
-  * [This section of the knowledge base](../Disaster Recovery) has additional articles on Safe Haven.
+  * [This section of the knowledge base](https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-3/#1) has additional articles on Safe Haven.
 
 #### CommVault
 * When to use it: Data and file backup, with many powerful features and capabilities to protect data across a variety of platforms, and to host data across a variety of storage media. OS-level images are supported.

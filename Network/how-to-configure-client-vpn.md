@@ -172,6 +172,6 @@ A: This is one of the most common issues with Windows and the OpenVPN client. Ma
 
 A: You cannot use it as a direct connect. To learn more about ways to connect such as persistent VPN or direct connection, please review [Network Access Options for Connecting to the CenturyLink Cloud Platform](../Network/network-access-options-for-connecting-to-centurylink-clouds-platform.md).
 
-**Q: Do I need to install an OpenVPN server?
+**Q: Do I need to install an OpenVPN server?**
 
 A: No, every customer account receives a dedicated OpenVPN server by default. Please note that it cannot be removed or disabled due to platform dependencies.

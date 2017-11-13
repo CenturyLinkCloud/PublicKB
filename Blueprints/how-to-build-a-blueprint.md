@@ -1,89 +1,75 @@
 {{{
   "title": "How to build a Blueprint",
-  "date": "12-2-2014",
-  "author": "Shantu Roy",
+  "date": "10-11-2016",
+  "author": "Daniel Morton",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
-<p>Updated: December 2nd, 2014 by Keith Resar</p>
-<h3>Description:</h3>
-<p>The purpose of this documentation is to introduce and explain the process and detail the steps on how to construct a blueprint.</p>
-<h3>Steps:</h3>
-<p><strong>1. Locate "Design a Blueprint"</strong>
-</p>
-<ul>
-  <li>Log into the CenturyLink Cloud Control Portal and from the power menubar select&nbsp;<strong>Design Blueprint</strong>
-  </li>
-</ul>
-<p><strong><img src="../images/Screen-Shot-2014-12-02-at-20741-PM.png" alt="Screen_Shot_2014-12-02_at_2.07.41_PM.png" /></strong>
-</p>
+### Description
+The purpose of this documentation is to introduce and explain the process and detail the steps on how to construct a Blueprint.
 
-<p><strong>2. Define Blueprint Metadata</strong>
-</p>
-<ul>
-  <li>Define a name, version number and privacy setting for the blueprint.
-    <br />
-    <br />
-  </li>
-  <li>Fill out information about company size, and a description that would help the user of the blueprint quickly understand the purpose of the blueprint. Lastly add in some information about the capabilities of the blueprint. All these items
-    help in searching for a blueprint later on.
-    <br /><img src="../images/Screen-Shot-2014-12-02-at-20953-PM.png" alt="Screen_Shot_2014-12-02_at_2.09.53_PM.png" />
-  </li>
-  <li>Click "Next" to progress to the next stage of Blueprint configuration.</li>
-</ul>
+### Steps
+1. Log into the CenturyLink Cloud Control Portal.
 
-<div><strong>3. Define Servers </strong>(optional)</div>
-<div>In this screen, define the servers that are needed to support the blueprint. Servers do NOT have to be defined as a blueprint could consist solely of configuration against an existing environment.</div>
-<div>
-  <ul>
-    <li>Select "Add Server" option.
-      <br /><img src="../images/Screen-Shot-2014-12-02-at-21349-PM.png" alt="Screen_Shot_2014-12-02_at_2.13.49_PM.png" />
-    </li>
-    <li>Pick an existing server template, name the server, provide a description and adjust the number of CPUs and memory needed for the server.
-      <br /><img src="../images/Screen-Shot-2014-12-02-at-21456-PM.png" alt="Screen_Shot_2014-12-02_at_2.14.56_PM.png" />
-    </li>
-    <li>Lastly any additional task(s) can be assigned. The tasks include and not limited to adding disks, network interfaces or even public ip mappings in addition to rebooting servers.&nbsp;
-      <br /><img src="../images/Screen-Shot-2014-12-02-at-21547-PM.png" alt="Screen_Shot_2014-12-02_at_2.15.47_PM.png" />
-    </li>
-    <li>Additional software and scripts can be installed as well; the selection can be from publicly available software packages all the way to private software packages that are unique to the customer. If any of the software packages require any parameters,
-      you will be prompted to enter in values.In addition to software packages, scripts can also be run against the server. <img src="../images/Screen-Shot-2014-12-02-at-21657-PM.png"
-      alt="Screen_Shot_2014-12-02_at_2.16.57_PM.png" />
-    </li>
-    <li>Once all the software, tasks and scripts have been selected, they can be arranged to the required execution order.
-      <br /><img src="../images/Screen-Shot-2014-12-02-at-21811-PM.png" alt="Screen_Shot_2014-12-02_at_2.18.11_PM.png" />
-    </li>
-    <li>Click the "Apply" button.</li>
-  </ul>
-  
-  <div><strong>4. Add an Existing Blueprint to this Blueprint</strong>
-  </div>
-  <div>During this step the option is available to call other blueprint from the one being designed. This feature greatly helps in giving the ability to treat blueprints as components and be able to be put together in a highly customizable way.</div>
-  <div>
-    <ul>
-      <li>On the third step of the Blueprint Designer, choose the "Add Blueprint" button.
-        <br /><img src="../images/Screen-Shot-2014-12-02-at-22147-PM.png" alt="Screen_Shot_2014-12-02_at_2.21.47_PM.png" />
-      </li>
-      <li>Select an existing blueprint nest into what you're currently creating. This modular design allows for easy re-use and nesting means no duplication definitions to maintain across your service catalog.
-        <br /><img src="../images/Screen-Shot-2014-12-02-at-22242-PM.png" alt="Screen_Shot_2014-12-02_at_2.22.42_PM.png" />
-      </li>
-    </ul>
-    <div><strong>&nbsp;</strong>
-    </div>
-    <div><strong>5. Publish the Blueprint</strong>
-    </div>
-    <div>This step allows you to review the blueprint configuration and make any last minute changes before it is published with the associated privacy attributes. The publishing mechanism submits the blueprint for an automated review by the build system.&nbsp;
-      Any inconsistencies are flagged and the publishing processes will error out if exceptions are encountered.</div>
-    <div><img src="../images/Screen-Shot-2014-12-02-at-22427-PM.png" alt="Screen_Shot_2014-12-02_at_2.24.27_PM.png" />
-    </div>
-    <div></div>
-    <div><strong>&nbsp;</strong>
-    </div>
-    <div><strong>6. Locate Published Blueprint</strong>
-    </div>
-    <div>Upon successful publication process, the blueprint will show up on the main blueprint dashboard. This dashboard by default will show all of blueprints that are available to be deployed by the user in the specific account. Additionally,
-      filtration criterion like author, size of company and operating system, can be applied to trim the displayed blueprints. These filterable components are on the right side of the screen.</div>
-    <div><img src="../images/Screen-Shot-2014-12-02-at-22556-PM.png" alt="Screen_Shot_2014-12-02_at_2.25.56_PM.png" />
-    </div>
-  </div>
-</div>
+2. From the Navigation Menu, select **Orchestration > Design Blueprint**.
+
+3. From the Data Center drop-down, select the region in which you want to deploy the Blueprint.
+   ![Data Center Region](../images/how-to-build-1.png)
+
+4. In the Blueprint Designer, provide the following information:
+   * Name
+   * Version Number
+   * Privacy Setting
+   * Company Size
+   * Description of the Blueprint
+   * Tag Capabilities
+
+   ![Blueprint Designer](../images/how-to-build-2.png)
+
+5. Click **Next: add server**.
+
+6. Define Servers (optional).
+   * This step is optional as a Blueprint may consist solely of configuration against an existing environment.
+   * To define the server(s), click **+ add server**.
+
+   ![Add Server](../images/how-to-build-3.png)
+
+7. From the server template drop-down, then enter information for the following:
+   * server name
+   * description
+   * CPU
+   * memory
+   
+   ![Server Settings](../images/how-to-build-4.png)
+
+8. Click **next: tasks & order**.
+   * Assign additional task(s). This include, for example, adding disks, network interfaces, or even public IP mappings.
+   * Additional software and scripts can be installed as well; the selection can be from publicly available software packages all the way to private software packages that are unique to the customer.
+   * If any of the software packages require other parameters, you are prompted to enter values.
+
+9. After selecting all the software, tasks, and scripts, rearranged them in the required execution order.
+
+10. Add an Existing Blueprint to this Blueprint. (optional)
+   * You have the option is available to call other Blueprint inside the one being designed. This feature provides the ability to treat Blueprints as components built in highly customizable way.
+   * Click **+add blueprint**.
+   ![Add Blueprint](../images/how-to-build-5.png)
+
+11. Select the Blueprint(s) you want and click **add blueprint**. (optional)
+   * This modular design allows for easy re-use and nesting means no duplication definitions to maintain across your service catalog.
+   ![Select Blueprint(s)](../images/how-to-build-6.png)
+
+12. Click **next: review**.
+   * This step allows you to review the Blueprint configuration and make any changes before publishing.
+   * Click on any of the steps located on the left to make changes.
+   ![Review Blueprint](../images/how-to-build-7.png)
+
+13. Click **submit for publishing**.
+   * The publishing mechanism submits the Blueprint for an automated review by the build system.
+   * Any inconsistencies are flagged and the publishing processes errors out if exceptions are found.
+
+14. From the Navigation Menu, select **Orchestration > Blueprint Library** to locate published Blueprint.
+   * Upon successful publication process, the Blueprint will show up on the Blueprint Library page.
+   * By default, all available Blueprints deployed by the user in the specific account are available.
+   * Use the Search box on the right to locate your Blueprint.
+   ![Blueprint Library](../images/how-to-build-8.png)
