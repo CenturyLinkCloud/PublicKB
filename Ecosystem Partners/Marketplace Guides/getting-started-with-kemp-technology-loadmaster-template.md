@@ -9,12 +9,12 @@
 
 
 # **Technology Profile**
-KEMP Technologies is the leading provider of application-centric load-balancing solutions, used by thousands of businesses that consider cloud, e-commerce and web applications as mission-critical to their long-term success. KEMP helps companies rapidly grow their business by providing 24/7 application availability, better cloud application performance and secure operations – while streamlining IT costs and maximizing affordability. [KEMP Technologies Website](http://www.kemptechnologies.com)
+KEMP Technologies is the leading provider of application-centric load-balancing solutions, used by thousands of businesses that consider cloud, e-commerce and web applications as mission-critical to their long-term success. KEMP helps companies rapidly grow their business by providing 24/7 application availability, better cloud application performance and secure operations – while streamlining IT costs and maximizing affordability. [KEMP Technologies Website](https://www.kemptechnologies.com)
 
 ### **Contact KEMP**
 | Sales Contact | Support Contact |
 |---------------|---------------- |
-| sales@kemptechnologies.com<br>|support@kemptechnologies.com<br>|
+| (mailto:support@kemptechnologies.com)<br>|(mailto:support@kemptechnologies.com)<br>|
 (844) 470-5367  |(844) 556-4398|
 |[KEMP Website](www.kemptechnologies.com)|[Support Web](https://www.kemptechnologies.com/support/) |
 
@@ -61,7 +61,7 @@ Please import the Ecosystem Partner Template image file referenced below to my C
 8. Change password (default username is "bal" and initial password is blank.
 9. Connect to Virtual LoadMaster™ via Web User Interface by using the appropriate assigned IP address and continue configuration of your application environment.
 
-*For more information on how to configure Virtual LoadMaster™, please visit: [KEMP Support Site](http://www.kemptechnologies.com/support/)*<br>
+*For more information on how to configure Virtual LoadMaster™, please visit: [KEMP Support Site](https://www.kemptechnologies.com/support)*<br>
 ###**Pricing**
 You may secure entitlements to the technology by contacting [KEMP](mailto:sales@kemptechnologies.com)<br>
 ### **Frequently Asked Questions**<br>
