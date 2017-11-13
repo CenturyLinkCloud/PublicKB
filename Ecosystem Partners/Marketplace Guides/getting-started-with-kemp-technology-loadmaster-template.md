@@ -72,7 +72,7 @@ Existing CenturyLink Enterprise Customers can contact their Account Representati
 
 **Who should I contact for support?**
 * For issues related to accessing the KEMP Technologies Virtual LoadMaster™ setup, configuration or for any licensing concerns, please visit the [KEMP Technologies Support Website](https://www.kemptechnologies.com/support)
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](http://../../Support/how-do-i-report-a-support-issue.md).<br>
+* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).<br>
 
 **What components are included in the KEMP Technologies licensing or entitlements?** <br>
 Customers are provided access to the Vitrual LoadMaster™ Appliance and support service for the software. Clients are still responsible for CenturyLink Cloud infrastructure services (compute, memory, storage, support, etc.) on top of the KEMP Technologies Licensing and Support services. These are not bundled with KEMP Technologies services or products.
