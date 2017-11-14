@@ -91,7 +91,7 @@ In addition, if you don't find the right image in that list, you could add a new
 | SKU | An instance of an offer, such as a major release of a distribution. |
 | Image Description | Name of the new image. If blank, a default value is set. |
 
-On the other hand, you could delete it using the "Trash" icon.
+On the other hand, you could remove it from available images using the "Trash" icon.
 
 ![microsoft-azure-delete-os-image-11.png](../../images/cloud-application-manager/microsoft-azure-delete-os-image-11.png)
 
