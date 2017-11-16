@@ -8,7 +8,7 @@
 
 ### New Features (3)
 
-![](../../images/release_notes/2017-11-16/relationaldb-logo-green.png)
+![](../../images/release_notes/2017-11-17/relationaldb-logo-green.png)
 
 
 * __MSSQL Relational DB is now Live!__
@@ -33,7 +33,7 @@ For more information, please visit: https://www.ctl.io/relational-database/relat
 - Now available in GB1
 - Server metrics for CPU, Disk and Memory are now available in the UI.  Users can view real-time metrics as well as historical views.
 
-![](../../images/release_notes/2017-11-16/RDBS_Metrics.png)
+![](../../images/release_notes/2017-11-17/RDBS_Metrics.png)
 
 __Cloud Application Manager__
 
@@ -73,7 +73,7 @@ Customers will no longer be able to order 3PAR QOS 4 when ordering Utility Stora
 Beginning [60 days following notice date], 2018, the service fees for Microsoft SQL Server on CenturyLink Cloud will change. As a result of a recent rate increase notification from Microsoft, we have re-evaluated our pricing for Microsoft SQL Server and are implementing the following price change to account for the increase and adjust based on the overall market .
 Customers will be billed the following new rate for any existing and new Microsoft SQL Server deployments.
 
-![](../../images/release_notes/2017-11-16/MSSQL_rate_change.png)
+![](../../images/release_notes/2017-11-17/MSSQL_rate_change.png)
 
 Should you have additional questions, please contact your Sales Representative or email help@ctl.io.
 
