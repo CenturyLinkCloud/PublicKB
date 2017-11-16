@@ -32,7 +32,7 @@ CenturyLink Cloud customers can deploy evaluation Microsoft SQL Server software 
 SQL Server Edition|Supported Operating Systems
 ------------------|---------------------------
 SQL Server 2014 Evaluation 64-bit (Enterprise Edition)|Windows 2012 Datacenter 64-bit<br>Windows 2012 R2 Datacenter 64-bit
-SQL Server 2016 Evaluation 64-bit (Enterprise Edition)|Windows 2012 Datacenter 64-bit<br>Windows 2012 R2 Datacenter 64-bit
+SQL Server 2016 Evaluation 64-bit (Enterprise Edition)|Windows 2012 Datacenter 64-bit<br>Windows 2012 R2 Datacenter 64-bit<br>Windows 2016 Datacenter 64-bit
 
 * Validate the Hardware and Software Requirements for Installing SQL Server are met:
     * [SQL Server 2014](//msdn.microsoft.com/en-us/library/ms143506%28v=sql.120%29.aspx)
