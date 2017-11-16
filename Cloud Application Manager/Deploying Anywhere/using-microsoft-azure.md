@@ -80,6 +80,21 @@ As part of the result of synchronization process you can find a list of availabl
 
 This images are what we show in image list from policy box edition.
 
+In addition, if you don't find the right image in that list, you could add a new image from the Azure Marketplace clicking in the "New" button at the top right corner and defining the following image properties: 
+
+![microsoft-azure-add-os-image-to-deploy-10.png](../../images/cloud-application-manager/microsoft-azure-add-os-image-to-deploy-10.png)
+
+| Option | Description |
+|--------|-------------|
+| Publisher | The organization that created the image. |
+| Offer | A group of related images created by a publisher. |
+| SKU | An instance of an offer, such as a major release of a distribution. |
+| Image Description | Name of the new image. If blank, a default value is set. |
+
+On the other hand, you could remove it from available images using the "Trash" icon.
+
+![microsoft-azure-delete-os-image-11.png](../../images/cloud-application-manager/microsoft-azure-delete-os-image-11.png)
+
 **Microsoft Azure Compute Deployment Options**
 
 To deploy a virtual machine with compute services you can edit one of windows or RHEL policy boxes or create a new one. Then you can save your changes and click **Deploy**.
