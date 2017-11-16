@@ -81,6 +81,12 @@ __Public Cloud IaaS__
 
   Should you have additional questions, please contact your Sales Representative or email help@ctl.io.
 
+__Cloud Application Manager__
+
+* __AWS Optimization and Analytics available for U.K. based customers__
+
+  AWS Optimization and Analytics for companies legally based in the United Kingdom is Live! From the AWS Provider, CAM org administrators, will be permitted to automatically complete [share-shift migrations](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-aws-existing/) or provision [new]( https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-aws-new/) AWS accounts for consolidated billing, analytics, and platform level support. 
+
 ### Bug Fixes (1)
 
 __DCC General Bug Fixes__
