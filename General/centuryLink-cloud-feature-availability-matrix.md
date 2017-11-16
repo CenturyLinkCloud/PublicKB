@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Feature Availability Matrix",
-  "date": "7-10-2017",
+  "date": "11-16-2017",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -21,8 +21,8 @@ The CenturyLink Cloud provides a vast array of services for customers to consume
 [Hyperscale Computing](//www.ctl.io/hyperscale)|US East (New York) - NY1<br>US East (Sterling) - VA1<br>Great Britain (Slough) - GB3<br>Canada (Toronto - Mississauga) - CA3<br>APAC (Singapore) - SG1
 [Bare Metal](//www.ctl.io/bare-metal)|US East (New York) - NY1<br>US East (Sterling) - VA1<br>APAC (Australia - Sydney) - AU1<br>Canada (Vancouver) - CA1<br>Great Britain (Slough) - GB3<br>Great Britain (Portsmouth) - GB1<br>Germany (Frankfurt) - DE3
 [AppFog](//www.ctl.io/appfog)|US East<sup>1</sup><br>US West<sup>1</sup>
-[Relational DB for MySQL](//www.ctl.io/relational-database/relational-db-mysql/)|US West (Santa Clara) - UC1<br>US Central (Chicago) - IL1<br>US East (Sterling) - VA1<br>US East (New York) - NY1<br>Canada (Toronto - Mississauga) - CA3<br>Great Britain (Slough) - GB3<br>APAC (Singapore) - SG1
-[Relational DB for MSSQL (Beta)](//www.ctl.io/relational-database/relational-db-mssql/)|US West (Santa Clara) - UC1<br>US Central (Chicago) - IL1<br>US East (Sterling) - VA1<br>US East (New York) - NY1<br>Canada (Toronto - Mississauga) - CA3<br>Great Britain (Slough) - GB3<br>APAC (Singapore) - SG1
+[Relational DB for MySQL](//www.ctl.io/relational-database/relational-db-mysql/)|US West (Santa Clara) - UC1<br>US Central (Chicago) - IL1<br>US East (Sterling) - VA1<br>US East (New York) - NY1<br>Canada (Toronto - Mississauga) - CA3<br>Great Britain (Slough) - GB3<br>Great Britain (Portsmouth) - GB1<br>APAC (Singapore) - SG1<br>APAC (Australia - Sydney) - AU1
+[Relational DB for MSSQL](//www.ctl.io/relational-database/relational-db-mssql/)|US West (Santa Clara) - UC1<br>US Central (Chicago) - IL1<br>US East (Sterling) - VA1<br>US East (New York) - NY1<br>Canada (Toronto - Mississauga) - CA3<br>Great Britain (Slough) - GB3<br>Great Britain (Portsmouth) - GB1<br>APAC (Singapore) - SG1<br>APAC (Australia - Sydney) - AU1
 [Load Balancer as a Service (LBaaS)](//www.ctl.io/load-balancing/)|US West (Santa Clara) - UC1<br>US East (Sterling) - VA1<br>Canada (Toronto - Mississauga) - CA3<br>Great Britain (Slough) - GB3<br>APAC (Singapore) - SG1<br>Germany (Frankfurt) - DE3
 [Managed Operating System Services](//www.ctl.io/managed-services/operating-system)|US West (Santa Clara) - UC1<br>US East (Sterling) - VA1<br>US Central (Chicago) - IL1<br>Great Britain (Slough) - GB3<br>Canada (Toronto - Mississauga) - CA3<br>APAC (Singapore) - SG1
 [Managed Applications](//www.ctl.io/managed-services)|US West (Santa Clara) - UC1<br>US East (Sterling) - VA1<br>US Central (Chicago) - IL1<br>Great Britain (Slough) - GB3<br>Canada (Toronto - Mississauga) - CA3<br>APAC (Singapore) - SG1
