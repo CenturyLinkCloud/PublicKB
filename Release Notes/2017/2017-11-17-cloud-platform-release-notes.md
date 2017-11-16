@@ -33,7 +33,7 @@
 - Now available in GB1
 - Server metrics for CPU, Disk and Memory are now available in the UI.  Users can view real-time metrics as well as historical views.
 
-![](../../images/release_notes/2017-11-17/RDBS_Metrics.png)
+  ![](../../images/release_notes/2017-11-17/RDBS_Metrics.png)
 
 __Cloud Application Manager__
 
