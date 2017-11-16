@@ -134,7 +134,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 |:-	|:-	|
 | [Datto](../Marketplace Guides/getting-started-with-datto-alto-blueprint.md)   	| Blueprint    | Alto Backup Appliance   |
 | [SoftNAS](../Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-appliance.md)   	| Blueprint    | NAS and Cloud Storage Gateway   |
-| [CloudBerry Lab Backup Enterprise](../Marketplace Guides/getting-started-with-cloudberry-lab-backup-enterprise-blueprint.md)   	| Blueprint    | Backup Software   |
+| [CloudBerry Lab Backup Enterprise](../Marketplace Guides/getting-started-with-cloudberry-lab-backup-ultimate-blueprint.md)   	| Blueprint    | Backup Software   |
 | [CloudFuze](../Marketplace Guides/getting-started-with-cloudfuze-blueprint.md)   	| Blueprint    | Cloud Storage Management   |
 
 ### Data Protection

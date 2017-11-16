@@ -79,8 +79,43 @@ An example JSON payload the ```/saas-usage/``` API is provided below.
 
 ```/saas-usages/``` will return the following status codes.
 
-* 200 - Subscription Successfully Updated
+* 200 - Usage Successfully Added
 * 40x - Invalid Input - provisioningId, customerId, providerKey, productId, and productSku required.  usageCount must be a number
+* 50x - Server Side Error
+
+##### Software Termination
+
+*The full endpoint for the* ```/saas-usage/end``` *is not published in this article for security reasons. Your organization will be provided documentation for the endpoint during onboarding*
+
+When a customer terminates his or her service through your website, you will need to notify us so we can stop billing the customer.  We have created an API endpoint.  The inputs are nearly identical to the ```/saas-usage``` endpoint detailed above, except the productSKUs is an array instead of a string and there is no usage count.
+
+The elements passed to the ```/saas-usage/end``` API must include the following items:
+
+* **providerKey** - String - Your unique identifier, provided by CenturyLink.
+* **customerid** - String - The ID assigned to the customer from your organization, returned by your API in the provisioning API call.
+* **provisioningId** - String - Unique identifier (GUID) of the provisioning event
+* **productSkus** - Array of Strings- The list of SKU ids associated to the product in the CenturyLink Cloud Marketplace for which the customer has terminated services.
+* **productId** - int - The product id for the product in the CenturyLink Cloud Marketplace. This is provided in the provisioning API call.
+
+An example JSON payload the ```/saas-usage/end``` API is provided below.
+
+```
+{
+  "providerKey": "SOME-UNIQUE-IDENTIFIER",
+  "customerId": "1234",
+  "provisioningId": "9ddz0a5e-f2d5-6eb5-89b9-7a42d0fbb836",
+  "productSkus": [
+    "MRKTPLC-PROVIDER-NAME-PRODUCT-NAME",
+    "MRKTPLC-PROVIDER-NAME-SECOND-PRODUCT"
+  ],
+  "productId": 123
+}
+```
+
+```/saas-usages/end``` will return the following status codes.
+
+* 200 - Termination notification received
+* 40x - Invalid Input - provisioningId, customerId, providerKey, productId, and productSkus required.
 * 50x - Server Side Error
 
 For any questions, please contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
