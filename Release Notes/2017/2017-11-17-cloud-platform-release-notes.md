@@ -51,7 +51,7 @@ __Simple Backup__
 
 * __Simple Backup Anywhere__
 
-  Simple Backup Anywhere has added support for AWS AMI Linux servers. For more information on Simple Backup Anywhere, please see our [KB Articles](https://www.ctl.io/knowledge-base/backup/backup-anywhere/)
+  Simple Backup Anywhere has added support for AWS AMI Linux servers. For more information on Simple Backup Anywhere, please see our [KB Articles](../Backup/backup-anywhere.md)
 
 
 ### Announcements (3)
@@ -85,7 +85,7 @@ __Cloud Application Manager__
 
 * __AWS Optimization and Analytics available for U.K. based customers__
 
-  AWS Optimization and Analytics for companies legally based in the United Kingdom is Live! From the AWS Provider, CAM org administrators, will be permitted to automatically complete [share-shift migrations](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-aws-existing/) or provision [new]( https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-aws-new/) AWS accounts for consolidated billing, analytics, and platform level support. 
+  AWS Optimization and Analytics for companies legally based in the United Kingdom is Live! From the AWS Provider, CAM org administrators, will be permitted to automatically complete [share-shift migrations](../../Cloud Application Manager/Cloud Optimization/partner-cloud-integration-aws-existing.md) or provision [new](../../Cloud Application Manager/Cloud Optimization/partner-cloud-integration-aws-new.md) AWS accounts for consolidated billing, analytics, and platform level support.
 
 ### Bug Fixes (1)
 
