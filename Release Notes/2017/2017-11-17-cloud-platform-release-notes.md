@@ -51,7 +51,7 @@ __Simple Backup__
 
 * __Simple Backup Anywhere__
 
-  Simple Backup Anywhere has added support for AWS AMI Linux servers. For more information on Simple Backup Anywhere, please see our [KB Articles](../Backup/backup-anywhere.md)
+  Simple Backup Anywhere has added support for AWS AMI Linux servers. For more information on Simple Backup Anywhere, please see our [KB Articles](../../Backup/backup-anywhere.md)
 
 
 ### Announcements (3)
