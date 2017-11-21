@@ -6,6 +6,8 @@
   "contentIsHTML": false
 }}}
 
+### v1.5.1, released on May 4, 2017
+https://download.safehaven.ctl.io/SH-4.0.4/safehaven_linux_onboarding_scripts_v1.5.1_2017-05-04.tar.gz
 
 ### v1.4.4, released on March 7, 2017
 
