@@ -33,8 +33,8 @@ CenturyLink Cloud customers can create complex network topologies to securely se
 
 3. Click the **X** button on the row of the target VLAN. If there are no servers currently attached the VLAN, the user will see a prompt similar to the image below. This prompt notifies the user that deleting the VLAN will also remove all corresponding firewall policies.
 
-  ![remove vlan button confirmation](../images/creating-and-deleting-vlans-02.png)
+      ![remove vlan button confirmation](../images/creating-and-deleting-vlans-02.png)
 
-If there are servers currently part of the VLAN, then the user will see a prompt the below image. The listed servers must either be deleted from the vlan prior to removal of the network.
+    If there are servers currently part of the VLAN, then the user will see a prompt the below image. The listed servers must either be deleted from the vlan prior to removal of the network.
 
-  ![remove servers](../images/creating-and-deleting-vlans-03.png)
+      ![remove servers](../images/creating-and-deleting-vlans-03.png)
