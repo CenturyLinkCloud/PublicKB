@@ -19,11 +19,11 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [aiMobile](../Marketplace Guides/getting-started-with-aimobile.md)   	| Blueprint    | Application delivery controller    |
 | [aiProtect](../Marketplace Guides/getting-started-with-aiprotect.md)   	| Blueprint    | Application delivery controller    |
 | [aiScaler](../Marketplace Guides/getting-started-with-aiscaler.md)   	| Blueprint    | Application delivery controller    |
-| [Appcito CAFE](../Marketplace Guides/getting-started-with-appcito-cafe.md)   	| Blueprint    | Application delivery controller    |
+| [Appcito CAFE](https://www.appcito.com)   	 | Blueprint    | Application delivery controller    |
 | [Cohesive Networks VNS3](../Marketplace Guides/getting-started-with-cohesiveft-vns3-partner-template.md)   	| Template    | Network security appliance    |
 | [FortyCloud](../Marketplace Guides/getting-started-with-fortycloud-appliance.md)   	| Blueprint (Virtual Appliance)    | Network security appliance    |
 | [HALON](../Marketplace Guides/getting-started-with-halon-partner-template.md)   	| Template    | SMTP Platform    |
-| [LaGrange Systems CloudMaestro](../Marketplace Guides/getting-started-with-lagrange-systems-cloudmaestro-blueprint.md)   	| Blueprint    | Application Delivery Controller  |
+| [LaGrange Systems CloudMaestro](https://www.lagrangesystems.com)   	| Blueprint    | Application Delivery Controller  |
 | [NGiNX](../Marketplace Guides/getting-started-with-nginx-blueprint.md)   	| Blueprint    | Web traffic manager    |
 | [OpenVPN AS](../Marketplace Guides/getting-started-with-openvpnas-appliance.md)   	| Blueprint (Virtual Appliance)    | Secure access manager    |
 | [Silver Peak](../Marketplace Guides/getting-started-with-silver-peak-partner-template.md)   	| Template    | WAN acceleration    |
@@ -134,7 +134,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 |:-	|:-	|
 | [Datto](../Marketplace Guides/getting-started-with-datto-alto-blueprint.md)   	| Blueprint    | Alto Backup Appliance   |
 | [SoftNAS](../Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-appliance.md)   	| Blueprint    | NAS and Cloud Storage Gateway   |
-| [CloudBerry Lab Backup Enterprise](../Marketplace Guides/getting-started-with-cloudberry-lab-backup-enterprise-blueprint.md)   	| Blueprint    | Backup Software   |
+| [CloudBerry Lab Backup Enterprise](../Marketplace Guides/getting-started-with-cloudberry-lab-backup-ultimate-blueprint.md)   	| Blueprint    | Backup Software   |
 | [CloudFuze](../Marketplace Guides/getting-started-with-cloudfuze-blueprint.md)   	| Blueprint    | Cloud Storage Management   |
 
 ### Data Protection

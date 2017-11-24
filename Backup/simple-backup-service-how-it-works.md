@@ -1,6 +1,6 @@
 {{{
   "title": "Simple Backup How It Works",
-  "date": "7-19-2017",
+  "date": "9-12-2017",
   "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
@@ -22,14 +22,15 @@ SBS utilizes S3 protocol to leverage a combination of [Centurylink Cloud Object 
 
 Backup Region|Storage Target|Endpoint
 -------------|--------------|---------
-APAC (Singapore)|AWS Object Storage (Singapore) - APS1|s3-ap-southeast-1.amazonaws.com
-APAC (Sydney)|AWS Object Storage (Sydney) - APS2|s3-ap-southeast-2.amazonaws.com
-EU (Germany)|AWS Object Storage (Frankfurt) - EUC1|s3.eu-central-1.amazonaws.com<br>s3-eu-central-1.amazonaws.com
-EU (Germany|CenturyLink Object Storage (Germany)|germany.os.ctl.io
-EU (Ireland)|AWS Object Storage (Ireland) - EU|s3-eu-west-1.amazonaws.com
-US East|AWS Object Storage (Northern Virginia) - USE1|s3.amazonaws.com<br>s3-external-1.amazonaws.com
-US West|AWS Object Storage (Oregon) - USW2|s3-us-west-2.amazonaws.com
-Canada|CenturyLink Object Storage (Canada)|canada.os.ctl.io
+APAC (Singapore)|Amazon Simple Storage Service S3 (Singapore) - ap-southeast-1|s3-ap-southeast-1.amazonaws.com
+APAC (Sydney)|Amazon Simple Storage Service S3 (Sydney) - ap-southeast-2|s3-ap-southeast-2.amazonaws.com
+EU (Germany)|Amazon Simple Storage Service S3 (Frankfurt) - eu-central-1|s3.eu-central-1.amazonaws.com<br>s3-eu-central-1.amazonaws.com
+EU (Germany|CenturyLink Cloud Germany|germany.os.ctl.io
+EU (Ireland)|Amazon Simple Storage Service S3 (Ireland) - eu-west-1|s3-eu-west-1.amazonaws.com
+EU (London)|Amazon Simple Storage Service S3 (London) - eu-west-2|s3-eu-west-2.amazonaws.com
+US East|Amazon Simple Storage Service S3 (Northern Virginia) - us-east-1|s3.amazonaws.com<br>s3-external-1.amazonaws.com
+US West|Amazon Simple Storage Service S3 (Oregon) - us-west-2|s3-us-west-2.amazonaws.com
+Canada|CenturyLink Cloud Canada|canada.os.ctl.io
 
 ### Backup Policies
 Backup Policies are user-defined configurations that you specify through the [Control Portal](https://control.ctl.io/). Servers are added to policies and start backing up based on the policy details. There is no limit on the number of servers you can add to a policy. Likewise, a server can be added to multiple policies. Backup Policy details include:
@@ -73,4 +74,4 @@ A new restoration point is created at the completion of every backup, full or in
 In order to prevent the accidental overwriting of data, a new directory is created under the restoration path you provide. The directory uses the restoration point ID as the name and contains all of the restored data.
 
 ### Security
-Backup are transferred from your server over the public Internet to Object Storage using TLSv1.2. The data is then encrypted at rest in the object store with 256-bit AES encryption server side. A unique key that is also encrypted with a master key when it is stored is used to secure your data. Keys are stored in separate locations from your data for extra protection. At this time user supplied keys are not supported. At this time, backups stored in the Canada region will not be encrypted.
+Backup are transferred from your server over the public Internet to Object Storage using TLSv1.2. The data is then encrypted at rest in the object store with 256-bit AES encryption server side for all AWS endpoints. A unique key that is also encrypted with a master key when it is stored is used to secure your data. Keys are stored in separate locations from your data for extra protection. At this time user supplied keys are not supported. CenturyLink Cloud endpoints (Canada & Germany) do not currently offer encryption at rest.

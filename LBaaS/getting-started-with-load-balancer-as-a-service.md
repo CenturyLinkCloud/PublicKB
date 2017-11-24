@@ -25,8 +25,8 @@ LBaaS is a load balancing solution that is meant to provide both server load bal
 * Highly Available, Resilient Infrastructure
 * Load Balancing Protocols: HTTP (any port), TCP (any port)
 *	Load Balancing Algorithms: Round Robin, Least Connections, Source IP Hash
-*	Persistence: Source IP (Cookie Insert coming soon!)
-* Basic Health Checks: TCP Listeners
+*	Persistence: Source IP
+* Health Checks: SSL, HTTP & TCP
 *	Port Forwarding/Redirect
 
 ### Create a Load Balancer: User Interface

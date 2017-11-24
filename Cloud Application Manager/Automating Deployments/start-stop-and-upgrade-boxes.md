@@ -21,7 +21,7 @@ The Cloud Application Manager agent executes and stores the output of the event 
 
 ### Event Types
 
-There are five types of events on a box. Each event executes depending on the [action](../API/instances-api.md) triggered on a box instance.
+There are five types of events on a box. Each event executes depending on the [action](https://www.ctl.io/api-docs/cam/#application-lifecycle-management-instances-api) triggered on a box instance.
 
 **Install**
 
@@ -118,7 +118,7 @@ trap {
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

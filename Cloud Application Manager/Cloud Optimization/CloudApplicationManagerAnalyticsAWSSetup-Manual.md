@@ -1,6 +1,6 @@
 {{{
   "title": "Cloud Optimization AWS Configuration - Manual",
-  "date": "06-01-2017",
+  "date": "09-08-2017",
   "author": "Chris Meyer",
   "attachments": [],
   "contentIsHTML": false
@@ -43,11 +43,12 @@ If you prefer the set-up of your environment to be automated, you can find that 
 #### Retrieve ARN role
 1. Select the CenturyLink Cloud Optimization AMI Role.
 2. Record listed ARN.
-3. Paste ARN into the Cloud Optimization Portal or send it to your on-boarding representative.
+3. Send ARN to your on-boarding representative.
 
 
 ##### CenturyLink Cloud Optimization IAM Policy
 ```
+
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -67,14 +68,7 @@ If you prefer the set-up of your environment to be automated, you can find that 
                 "cloudfront:GetStreamingDistributionConfig",
                 "cloudhsm:Describe*",
                 "cloudhsm:List*",
-                "cloudsearch:DescribeDomains",
-                "cloudsearch:DescribeServiceAccessPolicies",
-                "cloudsearch:DescribeStemmingOptions",
-                "cloudsearch:DescribeStopwordOptions",
-                "cloudsearch:DescribeSynonymOptions",
-                "cloudsearch:DescribeDefaultSearchField",
-                "cloudsearch:DescribeIndexFields",
-                "cloudsearch:DescribeRankExpressions",
+                "cloudsearch:Describe*",
                 "cloudtrail:DescribeTrails",
                 "cloudtrail:GetTrailStatus",
                 "cloudwatch:DescribeAlarms",
@@ -82,10 +76,7 @@ If you prefer the set-up of your environment to be automated, you can find that 
                 "cloudwatch:ListMetrics",
                 "config:DescribeConfigRules",
                 "config:GetComplianceDetailsByConfigRule",
-                "config:DescribeDeliveryChannels",
-                "config:DescribeDeliveryChannelStatus",
-                "config:DescribeConfigurationRecorders",
-                "config:DescribeConfigurationRecorderStatus",
+                "config:Describe*",
                 "datapipeline:ListPipelines",
                 "datapipeline:GetPipelineDefinition",
                 "datapipeline:DescribePipelines",
@@ -106,24 +97,12 @@ If you prefer the set-up of your environment to be automated, you can find that 
                 "ecs:DescribeTaskDefinition",
                 "ecs:ListTasks",
                 "ecs:DescribeTasks",
-                "elasticache:DescribeCacheClusters",
-                "elasticache:DescribeReservedCacheNodes",
-                "elasticache:DescribeCacheSecurityGroups",
-                "elasticache:DescribeCacheParameterGroups",
-                "elasticache:DescribeCacheParameters",
-                "elasticache:DescribeCacheSubnetGroups",
-                "elasticbeanstalk:DescribeApplications",
-                "elasticbeanstalk:DescribeConfigurationSettings",
-                "elasticbeanstalk:DescribeEnvironments",
-                "elasticbeanstalk:DescribeEvents",
-                "elasticloadbalancing:DescribeLoadBalancers",
-                "elasticloadbalancing:DescribeInstanceHealth",
-                "elasticloadbalancing:DescribeLoadBalancerAttributes",
-                "elasticloadbalancing:DescribeTags",
-                "elasticmapreduce:DescribeJobFlows",
-                "elasticmapreduce:DescribeStep",
-                "elasticmapreduce:DescribeCluster",
-                "elasticmapreduce:DescribeTags",
+                "elasticache:Describe*",
+                "elasticache:ListTagsForResource",
+                "elasticbeanstalk:Describe*",
+                "elasticfilesystem:Describe*",
+                "elasticloadbalancing:Describe*",
+                "elasticmapreduce:Describe*",
                 "elasticmapreduce:ListSteps",
                 "elasticmapreduce:ListInstanceGroups",
                 "elasticmapreduce:ListBootstrapActions",
@@ -148,7 +127,9 @@ If you prefer the set-up of your environment to be automated, you can find that 
                 "kms:Describe*",
                 "kms:Get*",
                 "kms:List*",
+                "kms:ListResourceTags",
                 "lambda:ListFunctions",
+                "lambda:ListTags",
                 "rds:Describe*",
                 "rds:ListTagsForResource",
                 "redshift:Describe*",
@@ -164,31 +145,29 @@ If you prefer the set-up of your environment to be automated, you can find that 
                 "s3:GetBucketWebsite",
                 "s3:GetBucketNotification",
                 "s3:GetLifecycleConfiguration",
-                "s3:GetNotificationConfiguration",
                 "s3:GetObject",
-                "s3:GetObjectMetadata",
                 "s3:List*",
-                "sdb:ListDomains",
-                "sdb:DomainMetadata",
                 "ses:ListIdentities",
                 "ses:GetSendStatistics",
                 "ses:GetIdentityDkimAttributes",
                 "ses:GetIdentityVerificationAttributes",
                 "ses:GetSendQuota",
-                "sns:GetSnsTopic",
-                "sns:GetTopicAttributes",
-                "sns:GetSubscriptionAttributes",
-                "sns:ListTopics",
-                "sns:ListSubscriptionsByTopic",
-                "sqs:ListQueues",
-                "sqs:GetQueueAttributes",
-                "storagegateway:Describe*",
-                "storagegateway:List*",
+                "sdb:ListDomains",
+                "sdb:DomainMetadata",
                 "support:*",
                 "swf:ListClosedWorkflowExecutions",
                 "swf:ListDomains",
                 "swf:ListActivityTypes",
                 "swf:ListWorkflowTypes",
+                "sns:GetTopicAttributes",
+                "sns:GetSubscriptionAttributes",
+                "sns:ListTopics",
+                "sns:ListSubscriptionsByTopic",
+                "ssm:List*",
+                "sqs:ListQueues",
+                "sqs:GetQueueAttributes",
+                "storagegateway:Describe*",
+                "storagegateway:List*",
                 "workspaces:DescribeWorkspaceDirectories",
                 "workspaces:DescribeWorkspaceBundles",
                 "workspaces:DescribeWorkspaces"
@@ -210,4 +189,5 @@ If you prefer the set-up of your environment to be automated, you can find that 
         }
     ]
 }
+
 ```

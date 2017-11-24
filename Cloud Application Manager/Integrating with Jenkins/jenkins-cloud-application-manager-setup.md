@@ -319,7 +319,7 @@ In your Jenkins server management interface, follow these steps to register your
    * **Description**. Enter information to identify your Cloud Application Manager account in Jenkins jobs.
    * **End Point URL**. Enter a custom URL if using Cloud Application Manager as an appliance.
    * **Max. No. of Instances**. This is the total number of instances Jenkins will launch through your account. We recommend at least 5.
-   * **Authentication Token**. [Get a token](../API/api-overview-and-access.md) and paste it here. If you use username, password to access Cloud Application Manager, get one by clicking **Get Authentication Token**.
+   * **Authentication Token**. [Get a token](https://www.ctl.io/api-docs/cam/#getting-started-api-overview-and-access) and paste it here. If you use username, password to access Cloud Application Manager, get one by clicking **Get Authentication Token**.
 
 2. Click **Verify Authentication Token** to see if Jenkins can connect to Cloud Application Manager.
 
@@ -327,7 +327,7 @@ In your Jenkins server management interface, follow these steps to register your
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
