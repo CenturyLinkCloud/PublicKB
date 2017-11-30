@@ -1,6 +1,6 @@
 {{{
   "title": "I want a managed server. So what do I do now?",
-  "date": "12-31-2015",
+  "date": "9-25-2017",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -17,10 +17,13 @@ Please also consider using the [CenturyLink Cloud v2.0 API](https://www.ctl.io/a
 
 Users employed by companies that have agreed to terms with [CenturyLink Sales](http://www.centurylink.com/) for the CenturyLink Cloud product.
 
-### Prerequisites
+### General Prerequisites
 * An understanding of the standard server creation process.
 * Some idea of the benefits included with [managed servers](../Managed Services/managed-operating-system-frequently-asked-questions.md)
 
+### Technical Requirements
+* The Managed Server build process requires HTTPS outbound connectivity (and DNS resolution) to the API endpoint webhook.managedos.ctl.io
+* Account impersonation is not supported when building Managed Servers. Account impersonation simply refers to the end users ability to leverage our [Account Hierarchy](../Accounts & Users/account-hierarchy-user-network-and-firewall-policy-primer.md) feature to login to a parent account and operate services in sub-accounts. For the provisioning process of Managed Servers, users of the platform should leverage a named user in the specific [account alias](../Support/determine-control-portal-alias.md) into which the server is being deployed.
 
 ### Important Information
 

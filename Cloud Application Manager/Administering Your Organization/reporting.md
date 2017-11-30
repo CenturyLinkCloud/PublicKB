@@ -1,118 +1,67 @@
 {{{
-"title": "Get Control and Insights with Cloud Reporting",
-"date": "09-01-2016",
+"title": "Get Control and Insights with Dashboard ",
+"date": "10-03-2017",
 "author": "",
 "attachments": [],
 "contentIsHTML": false
 }}}
 
-### Get Control and Insights with Cloud Reporting
-<iframe src="//player.vimeo.com/video/111544299" width="561" height="316" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+### Get Control and Insights with Dashboard
 
-Reports show cloud costs and resource usage in public and private clouds. It includes public clouds like AWS, Google Cloud, Azure and private clouds like VMware vCenter, VMware vCloud Director, and SoftLayer.
+The Dashboard shows cloud costs and resource usage in public and private clouds. It includes public clouds like AWS, Google Cloud, Azure and private clouds like VMware vCenter, VMware vCloud Director, and SoftLayer. It also helps you make budget-friendly decisions and curb costs through cost center budgeting.
 
-If reporting is turned on for your enterprise, Cloud Application Manager Administrators can access it from the admin console. Reports also help you make budget-friendly decisions and curb costs through cost center budgeting.
+Depending on the scope, different views and different data can be shown.
 
-* **Reports** - Show cost and usage for a given date range.
-* **Pricing List** - Shows public cloud pricing for Linux and Windows VMs by instance type. The pricing helps us measure costs for public cloud reports. Since private clouds don’t have that information, we report on resource usage.
-* **Cost Center Budgeting** - Lets you set and enforce a quota on how much user or team workspaces can consume from a cloud account per month.
+#### Workspace scope
 
-### Reports
-Reports are in the admin console under Providers > Reports. They show the cost and resources consumed by public and private cloud deployments. There are two kinds of reports–overview and cloud specific reports. The overview report gives the overall big picture while cloud specific reports drill-down data by cloud.
+In the workspace scope, the information shown is related to the use of resources made by the owner and/or shared users.
 
-This section has some report samples to help understand how much users consume and how much deployments cost.
-
-### Overview Report
-To see the report, select **Overview** under Providers > Reports in the admin console and select a date range.
-
-**Sample #1:** How much do we spend on cloud deployments daily, weekly, monthly, or over time?
-
-This example shows total dollars spent on public and private cloud deployments in the last 10 weeks. Select a different date range to see other weekly or monthly data. For daily values, highlight a specific day in the chart.
 ![admin-reports1.png](../../images/cloud-application-manager/admin-reports1.png)
 
-**Sample #2:** Which cloud costs the most?
+At the top, there are three boxes that contain the following information :
 
-The same report shows that AWS costs the most. The table in the report shows this data.
+* **Instances** - Total number of instances in this workspace and split by status.
+* **Boxes** - Total number of boxes in the workspace and their types.
+* **Providers** - Total number of providers defined in the workspace and divided by type.
+
+At the bottom, there are two charts which describe the use of providers and the lifecycle events. Both can be filtered by a date range. In regards to the lifecycle events, these can also be filtered by provider type.
+
+#### Cost Center scope
+
+In this scope, the information showed is focused on cost and provider usage.
+At the top, there are five boxes with the information described below:
+                                                          
+* **Monthly Quota** - This box contains the total cost per month and the relative cost by quota.
+* **Instances** - Total number of instances inside of the cost center with the line chart of the last month.
+* **Boxes** - Total number of boxes and the line chart of the last month.
+* **Providers** - Total number defined in the cost center with the line chart of the last month.
+* **Workspaces** - Total number of workspaces in this cost center.
+
 ![admin-reports2.png](../../images/cloud-application-manager/admin-reports2.png)
 
-**Sample #3:** How many instances were deployed daily, weekly, monthly, or over time?
+At the bottom, as well as it happens with the workspace scope, there are two charts, one with the provider usage and the other with the cost by workspace. Both can be filtered by date range. And the last one, can also be filtered by provider type. 
+If you filter by provider type, the chart shows the information organized by account, services, sizes or locations.
 
-Here you see the total number of active deployments in the last 10 weeks under the Instance tab. They include instances launched in that time as well as those launched beforehand but still active. Over time, the chart shows which periods saw a spike in deployments.
-
-To track data for other periods, select the appropriate weekly or monthly date range.
 ![admin-reports3.png](../../images/cloud-application-manager/admin-reports3.png)
 
-### Cloud Specific Reports
-To see cloud specific reports, select the cloud from the drop-down under Providers > Reports in the admin console.
+In the provider usage chart, the information described at the top, is the total cost spent, the instances that are alive, the prices by instance, and by day. The bars describe the cost of the usage by day and by provider.
 
-**Sample #4:** Which accounts for a particular cloud add up the most hours or cost?
+#### Organization scope
 
-Under **Accounts** in this AWS report, see which AWS accounts in the last 5 weeks racked up the most compute hours and cost. It’s easy to extrapolate that some accounts though they may have used more compute time still cost less. Spot them and share their best practices for the rest of the team to follow.
-In this view, you can deselect accounts to filter for relevant data in the chart.
+In this scope, the information showed is focused in cost and provider usage in every cost center.
+At the top, there are six boxes with the information described above:
+                                                          
+* **Current Total Spend** - This box contains the total cost per month.
+* **Instances** - Total number of instances inside of the organization with the line chart of the last month.
+* **Boxes** - Total number of boxes and the line chart of the last month.
+* **Providers** - Total number defined in the organization with the line chart of the last month.
+* **Workspaces** - Total number of workspaces in this organization.
+* **Cost Centers** - Total number of cost centers in the organization.
+
 ![admin-reports4.png](../../images/cloud-application-manager/admin-reports4.png)
 
-**Sample #5:** In a given cloud, which compute instance size is most used?
+At the bottom, there are two charts. One of them with the same information and behavior that the provider usage chart of the cost center scope, and the second one with the cost by cost center.
 
-If we look under **Sizes** in this AWS report, we see that t1.micro is the most deployed instance type. You can get other such insights from cloud specific reports.
-
-![admin-reports5.png](../../images/cloud-application-manager/admin-reports5.png)
-
-**Sample #6:** Where do users most deploy?
-
-To what regions or data centers do users most deploy in AWS? That’s what this AWS report answers under **Locations**.
-
-![admin-reports6.png](../../images/cloud-application-manager/admin-reports6.png)
-
-### Export Data
-To further analyze data or build custom reports of your own, export data as a CSV file.
-
-Under Admin Console > Providers > Reports, select a date range and click **Export**. This downloads data in a CSV file on to your local machine for the date range selected.
-
-![admin-reports7.png](../../images/cloud-application-manager/admin-reports7.png)
-
-Here’s a look at sample data from an exported CSV file. It shows deployed instances by their service ID, their values for each day in a specific date range, and date of their launching in UTC format. The data includes image size, the provider type, provider ID, profile schema, service type, and cost in cents.
-
-![admin-reports8.png](../../images/cloud-application-manager/admin-reports8.png)
-
-### Chart Visualizations
-In report charts, you can visualize data with these options.
-
-* View data as grouped or stacked. **Grouped** is better for comparing data sets within a specific date range. **Stacked** helps you understand the size of a sample relative to others and see how it trends over time.
-
-   ![admin-reports9.png](../../images/cloud-application-manager/admin-reports9.png)
-
-* Switch between Cost or Instance tabs to see the breakdown by cost or the number of instances.
-
-   ![admin-reports10.png](../../images/cloud-application-manager/admin-reports10.png)
-
-* Highlight shaded areas of the chart to see individual values.
-
-   ![admin-reports11.png](../../images/cloud-application-manager/admin-reports11.png)
-
-### Pricing List
-Pricing List in the admin console shows the latest prices of Linux and Windows VMs for the AWS, Google, and Azure public clouds. We use these prices to calculate cloud report costs. This listing is a good place to check price changes by cloud.
-
-To fine-tune your listing, filter by a specific cloud and region. Or search for a specific size (or flavor) as shown. Sort column headers to see prices from high to low or vice versa.
-
-![admin-reports12.png](../../images/cloud-application-manager/admin-reports12.png)
-
-### Cost Center Budgeting
-Cost Centers help you set and enforce a quota on how much users or team workspaces can consume from a cloud account per month. If they exceed the monthly quota, their workspace prevents them from deploying newly using that cloud account.
-
-**Steps**
-
-1. Create a cost center. In the admin console under Cost Centers, click **New Cost Center** and name the group or division whose usage you want to monitor.
-
-2. Assign workspaces. Look up and add workspaces of users, teams, or projects. **Note:** A workspace can only belong to one cost center at a time.
-
-3. Set quota for each cloud account. Choose how much money or resources selected users or workspaces can consume from a cloud account per month. For public clouds, you can set a budget while you can limit by the amount of CPU, memory, and disk resources for private clouds.
-   ![admin-reports13.png](../../images/cloud-application-manager/admin-reports13.png)
-
-4. Enforce quota. Turn on to put the limits in place.
-
-5. Save.
-   Once you set up cost centers, you can track to see how teams or projects are spending monthly, whether they’re staying within budget in the last 30 days or over the past month. If they go over 90% quota, they’re shown in red. When they’re pretty close to hitting the quota limit, you can proactively send an email alerting them.
-   ![admin-reports14.png](../../images/cloud-application-manager/admin-reports14.png)
 
 ### Contacting Cloud Application Manager Support
 

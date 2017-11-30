@@ -11,7 +11,7 @@ By default, all public and private cloud providers are enabled for Cloud Applica
 
 Enabling provider access does not automatically register providers for use but determines which ones users can connect and deploy to.
 
-In the admin console, you can control access under **Providers > Clouds**.
+In the admin console, you can control access under **Clouds**.
 ![admin-cloud1.png](../../images/cloud-application-manager/admin-cloud1.png)
 
 ### Contacting Cloud Application Manager Support

@@ -20,7 +20,7 @@ ___
 
 **Where to log in?**
 
-* To access Cloud Application Manager in the cloud, browse to http://elasticbox.com/login or your Cloud Application Manager company URL.
+* To access Cloud Application Manager in the cloud, browse to http://cam.ctl.io/login or your Cloud Application Manager company URL.
 * To access Cloud Application Manager inside a private network, ask your administrator for the login URL.
 
    **Note**: Enable JavaScript on the browser to use Cloud Application Manager. If not, some elements of the web interface may not work or render properly. We support Cloud Application Manager on the latest Chrome, Safari, Firefox, and Internet Explorer browsers.
@@ -44,12 +44,19 @@ ___
 
 When you log in, the top navigation bar guides you to the main areas of Cloud Application Manager.
 
+* Dashboard
 * Workspaces
 * Instances
 * Boxes
 * Providers
 * Your Account
 * Help
+
+**Dashboard**
+
+![getting-started-login-8.png](../../images/cloud-application-manager/getting-started-login-8.png)
+
+It is a global vision of the content and uses of the workspace. There you can see the number of the instances, boxes or providers and their status. In addition, there are two charts with the uses by day, week or month.
 
 **Workspaces**
 

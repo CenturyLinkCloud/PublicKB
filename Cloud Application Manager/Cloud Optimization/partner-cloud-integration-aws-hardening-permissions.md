@@ -26,8 +26,6 @@ For an existing AWS Account:
 
 ### Important Information
 
-
-
 **Root Level Access**
 
 Root level access is not provided to CenturyLink users for any account.
@@ -39,9 +37,7 @@ For new accounts created through Cloud Application Manager, MFA access is set up
 **CenturyLink Account Access by Role**
 
 CenturyLink or Customer Role | Type of User | Optimization scenario | IAM Permissions and Restrictions
---- | --- | ---
-None | None | Consolidated Billing Only | None
-Cloud Analytics | Automated Tool | Cost Optimization or Full Hardening | Read-only capabilities for all products and services
+--- | --- | --- | ---
 Customer Admin (see below) | Customer-defined | Full Hardening | Add, Change, and Delete capabilities for all services. No capabilities to review or usage, billing, payment methods, or budgets.
 Cloud Application Manager Account Optimization | Automated Tool | Full Hardening | Administration
 Cloud Application Manager Application Lifecycle Management | Automated Tool |Full Hardening | All the ability to manipulate resources as described [here](https://www.ctl.io/knowledge-base/cloud-application-manager/deploying-anywhere/using-your-aws-account/).
