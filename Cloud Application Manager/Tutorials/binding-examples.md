@@ -101,7 +101,9 @@ The easiest way to understanding the function of Bindings is to put it to use.  
   exit 0;
   ```
   Configure two new variables for this box, one is LOCAL_PATH for the mount point of the NFS client and the other one is the Binding variable.
+
   ![LOCAL_PATH variable](../../images/cloud-application-manager/binding-example/binding-example-nfsclient-variable-1.png)
+
   ![Binding](../../images/cloud-application-manager/binding-example/binding-example-nfsclient-variable-1.png)
 
   #### Application Box with NFS server and client
@@ -109,7 +111,7 @@ The easiest way to understanding the function of Bindings is to put it to use.  
   To create an application box, click on "New" -> "Application Box", Enter "NFS Demo"
   Edit the newly created Application Box in Code section of the portal, Click on "New" and type "NFS demo" in the search window
 
-  ![Application Box](..images/binding-example-application.png)
+  ![Application Box](../../images/cloud-application-manager/binding-example/binding-example-application.png)
   ![Edit Topology](../../images/cloud-application-manager/binding-example/binding-example-edit-topology.png)
 
   Click on "NFS Demo Server" and add "nfsserver" tag to the box
@@ -151,7 +153,7 @@ The similar steps are needed for the JBoss servers to bind to the database serve
 
 ![JBoss Application tagging to database ](../../images/cloud-application-manager/binding-example/jboss-application-tag.png)
 
-As the diagram above shows that the application servers are binding to the database to create the three tiers application.  Also this allows the application servers utilize the parameters within the binding environment, from load balancer box or database box.  To learn more on the details with application boxes, please refer to [this]()//www.ctl.io/knowledge-base/cloud-application-manager/automating-deployments/managing-multi-tier-applications/).  
+As the diagram above shows that the application servers are binding to the database to create the three tiers application.  Also this allows the application servers utilize the parameters within the binding environment, from load balancer box or database box.  To learn more on the details with application boxes, please refer to [this](//www.ctl.io/knowledge-base/cloud-application-manager/automating-deployments/managing-multi-tier-applications/).  
 The JBoss Application Boxes is available at [here](//cam.ctl.io/#/catalog), give it a try to experience the flexibility of Binding in Cloud Application Manger.  
 
 
