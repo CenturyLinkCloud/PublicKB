@@ -9,13 +9,14 @@ Bindings glue together different parts of a multi-tier application over the netw
 
 **In this article:**
 
-* Brief recap on Bindings
-* A Simple Example
-  * Create the NFS Server script boxes
-    * Install Script
-    * Configure Script
-  * NFS client box
-* Three Tiers application
+* [Brief recap on Bindings](#Brief recap on Bindings)
+* [A Simple Example](#a-simple-example)
+  * [Create the NFS Server script boxes](#create=the-nfs-server-script-boxes)
+    * [Install Script](#install-script)
+    * [Configure Script](#configure-script)
+  * [NFS client box](#nfs-celent-box)
+* [Three Tiers application](#three-tiers-application)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 
 ### Brief recap on Bindings
@@ -70,7 +71,9 @@ The easiest way to understanding the function of Bindings is to put it to use.  
   Add two varibales to the NFS server box (screenshots below). EXPORT_HOST for the network of the NFS clients and EXPORT_DIRECTORY is the directory of the file share.
 
   ![EXPORT_HOST variable](../../images/cloud-application-manager/binding-example/binding-example-variable-1.png)
+
   ![EXPORT_DIRECTORY variable](../../images/cloud-application-manager/binding-example/binding-example-variable-2.png)
+
 
  #### NFS client box
   ![New Script Box](../../images/cloud-application-manager/binding-example/binding-example-nfs-demo-client.png)
@@ -133,7 +136,7 @@ The easiest way to understanding the function of Bindings is to put it to use.  
 
 This example is consisted of 6 script boxes to create a redundant three tiers JBoss application environment.  The environment has a pair of MySQL servers in the backend, a pair of JBoss Application server and two load balancers in the DMZ.  
 
-  ![JBoss Application Topology](../../images/cloud-application-manager/binding-example/jboss-topolgy.png)
+  ![JBoss Application Topology](../../images/cloud-application-manager/binding-example/jboss-topology.png)
 
   In order to archieve redundancy, two tags are created for this environment, zone-a and zone-b.  The zones are labelled to utilize cloud providers’ multi-zones ability, like Availability Zones in AWS and Azure.  When the script box is tag with zone-a, only [deployment policy with zone-a](//www.ctl.io/knowledge-base/cloud-application-manager/automating-deployments/application-box/#creating-application-boxes) claim would be utilized to create an instance in zone a.  
   Services connect to each other using binding tags during deployment.  In this example, the Nginx load balancers are connected to the JBoss application servers as below:
@@ -154,7 +157,7 @@ The JBoss Application Boxes is available at [here](//cam.ctl.io/#/catalog), give
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](//www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
