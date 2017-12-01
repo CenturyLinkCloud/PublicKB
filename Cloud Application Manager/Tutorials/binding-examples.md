@@ -126,6 +126,31 @@ The easiest way to understanding the function of Bindings is to put it to use.  
   From the configure script, the nfsserver.address.private and nfsserver.EXPORT_DIRECTORY are passed from the nfsserver box to nfsclient box.
   This is a simple example and this can be used in a more complex environment, like the JBoss example that will be covered in the next section.
 
+### 3 Tiers application from Catalog
+  The next example is from [Cloud Applicaiton Manager Catalog](//cam.ctl.io/#/catalog), it is the JBoss Sample Application.  In this example, Binding tags are being used extensively.  To recap the concept of Binding Tags, there are couple of ways of utilizing them in a complex environment:
+    - Dynamic bindings: Tagged bindings discover instance connectivity dynamically. They serve as an auto-discovery mechanism where instances with binding tags can automatically connect to other instances that match those tags.
+    - One to many bindings: Bindings can connect one or many services together, again, using tags.
+
+This example is consisted of 6 script boxes to create a redundant three tiers JBoss application environment.  The environment has a pair of MySQL servers in the backend, a pair of JBoss Application server and two load balancers in the DMZ.  
+
+  ![JBoss Application Topology](../../images/cloud-application-manager/binding-example/jboss-topolgy.png)
+
+  In order to archieve redundancy, two tags are created for this environment, zone-a and zone-b.  The zones are labelled to utilize cloud providers’ multi-zones ability, like Availability Zones in AWS and Azure.  When the script box is tag with zone-a, only [deployment policy with zone-a](//www.ctl.io/knowledge-base/cloud-application-manager/automating-deployments/application-box/#creating-application-boxes) claim would be utilized to create an instance in zone a.  
+  Services connect to each other using binding tags during deployment.  In this example, the Nginx load balancers are connected to the JBoss application servers as below:
+
+  ![JBoss Application Binding](../../images/cloud-application-manager/binding-example/jboss-connection.png)
+
+The application servers are tagged with application-layer tags, which the load balancers are connecting to regardless of the location of zones (see below):
+
+  ![JBoss Application tagging](../../images/cloud-application-manager/binding-example/jboss-tags.png)
+
+The similar steps are needed for the JBoss servers to bind to the database servers:
+
+![JBoss Application tagging to database ](../../images/cloud-application-manager/binding-example/jboss-application-tag.png)
+
+As the diagram above shows that the application servers are binding to the database to create the three tiers application.  Also this allows the application servers utilize the parameters within the binding environment, from load balancer box or database box.  To learn more on the details with application boxes, please refer to [this]()//www.ctl.io/knowledge-base/cloud-application-manager/automating-deployments/managing-multi-tier-applications/).  
+The JBoss Application Boxes is available at [here](//cam.ctl.io/#/catalog), give it a try to experience the flexibility of Binding in Cloud Application Manger.  
+
 
 ### Contacting Cloud Application Manager Support
 
