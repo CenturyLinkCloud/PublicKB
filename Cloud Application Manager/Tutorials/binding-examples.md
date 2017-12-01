@@ -9,25 +9,25 @@ Bindings glue together different parts of a multi-tier application over the netw
 
 **In this article:**
 
-* [Brief recap on Bindings](#Brief recap on Bindings)
+* [Brief recap on Bindings](#brief-recap-on-bindings)
 * [A Simple Example](#a-simple-example)
-  * [Create the NFS Server script boxes](#create=the-nfs-server-script-boxes)
+  * [Create the NFS Server script box](#create-the-nfs-server-script-box)
     * [Install Script](#install-script)
     * [Configure Script](#configure-script)
-  * [NFS client box](#nfs-celent-box)
-* [Three Tiers application](#three-tiers-application)
+  * [NFS client box](#nfs-client-box)
+* [Three Tiers application from Catalog](#three-tiers-application-from catalog)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 
 ### Brief recap on Bindings
 
-Bindings are [variables](./parameterizing-boxes-with-variables.md) that you can add to boxes. They represent a connection from the deployed box to other instances. The detail explanation of Bindings can be found at this [knowledge article](./managing-multi-tier-applications.md).
+Bindings are [variables](../automating-deployment/parameterizing-boxes-with-variables.md) that you can add to boxes. They represent a connection from the deployed box to other instances. The detail explanation of Bindings can be found at this [knowledge article](../automating-deployment/managing-multi-tier-applications.md).
 
 ### A Simple Example
 
 The easiest way to understanding the function of Bindings is to put it to use.  This portion of the article will use Binding to establish a simple client server relation between to instances.  This article to walk through setting up a pair NFS server and client boxes with Bindings.
 
-#### Creating the NFS Server script boxes
+#### Creating the NFS Server script box
   Create the NFS server box in your workspace
   ![Create a new script box](../../images/cloud-application-manager/binding-example/binding-example-new-script.png)
 
