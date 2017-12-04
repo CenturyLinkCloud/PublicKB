@@ -78,13 +78,13 @@ __Public Cloud IaaS__
 
   Customers will be billed the following new rate for any existing and new Microsoft SQL Server deployments.
 
-      Product/Service|Description|Billing Type|Current Price|New Price
-      ---------------|-----------|------------|-------------|---------
-      Microsoft SQL Server Web Edition|Per vCPU license per month<sup>*</sup>|Monthly|$4.89|$8.00
-      Microsoft SQL Server Standard Edition|Per vCPU license per month<sup>*</sup>|Monthly|$79.00|$125.00
-      Microsoft SQL Server Enterprise Edition|Per vCPU license per month<sup>*</sup>|Monthly|$299.00|$440.00
+    Product/Service|Description|Billing Type|Current Price|New Price
+    ---------------|-----------|------------|-------------|---------
+    Microsoft SQL Server Web Edition|Per vCPU license per month<sup>*</sup>|Monthly|$4.89|$8.00
+    Microsoft SQL Server Standard Edition|Per vCPU license per month<sup>*</sup>|Monthly|$79.00|$125.00
+    Microsoft SQL Server Enterprise Edition|Per vCPU license per month<sup>*</sup>|Monthly|$299.00|$440.00
 
-      <sup>* 4 vCPU minimum per Microsoft licensing terms</sup>
+    <sup>* 4 vCPU minimum per Microsoft licensing terms</sup>
 
   Should you have additional questions, please contact your Sales Representative or email help@ctl.io.
 
