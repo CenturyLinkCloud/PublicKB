@@ -72,12 +72,19 @@ __Public Cloud IaaS__
 
 * __Notice of Microsoft SQL Server Fee Change__
 
-  *The following notice was sent to all MSSQL clients on Thursday, November 16th.*  
+  **The following notice was sent to all MSSQL clients on Thursday, November 16th.**  
 
-  Beginning [60 days following notice date], 2018, the service fees for Microsoft SQL Server on CenturyLink Cloud will change. As a result of a recent rate increase notification from Microsoft, we have re-evaluated our pricing for Microsoft SQL Server and are implementing the following price change to account for the increase and adjust based on the overall market .
+  Beginning [60 days following notice date], 2018, the service fees for Microsoft SQL Server on CenturyLink Cloud will change. As a result of a recent rate increase notification from Microsoft, we have re-evaluated our pricing for Microsoft SQL Server and are implementing the following price change to account for the increase and adjust based on the overall market.
+
   Customers will be billed the following new rate for any existing and new Microsoft SQL Server deployments.
 
-  ![](../../images/release_notes/2017-11-17/MSSQL_rate_change.png)
+      Product/Service|Description|Billing Type|Current Price|New Price
+      ---------------|-----------|------------|-------------|---------
+      Microsoft SQL Server Web Edition|Per vCPU license per month<sup>*</sup>|Monthly|$4.89|$8.00
+      Microsoft SQL Server Standard Edition|Per vCPU license per month<sup>*</sup>|Monthly|$79.00|$125.00
+      Microsoft SQL Server Enterprise Edition|Per vCPU license per month<sup>*</sup>|Monthly|$299.00|$440.00
+
+      <sup>* 4 vCPU minimum per Microsoft licensing terms</sup>
 
   Should you have additional questions, please contact your Sales Representative or email help@ctl.io.
 
