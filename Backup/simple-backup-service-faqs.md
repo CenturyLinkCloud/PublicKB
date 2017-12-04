@@ -1,6 +1,6 @@
 {{{
   "title": "Simple Backup Service FAQs",
-  "date": "6-27-2017",
+  "date": "11-17-2017",
   "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
@@ -105,11 +105,11 @@ A: An "IN_PROGRESS" status for a backup job means the data is actively being tra
 
 **Q: How do you handle backing up open files?**
 
-A: At this time, open files will not be backed up and a “Partial_Success” will be shown as the Restore Point Status.
+A: At this time, open files will not be backed up and a “Partial_Success” will be shown as the Restore Point Status if open files are encountered in the targeted backup path.
 
 **Q: How can I confirm that my backups were successful?**
 
-A: There are two places in the agent that show the status of your backups. First, in the Backup Jobs section, which shows all backups executed by this particular agent. Second, for additional information, selecting “Restore” from the Policy Details page will drill down into greater detail about backups for the specific Policy. Details include Backup Date, Status, and Protected Data (GBs).
+A: In the backup section of the control portal, under the backup policy in question there is a column that shows the last successful backup time for every server on the policy. Alternately, there are two places in the backup agent that show the status of your backups. First, in the Backup Jobs section, which shows all backups executed by this particular agent. Second, for additional information, selecting “Restore” from the Policy Details page will drill down into greater detail about backups for the specific Policy. Details include Backup Date, Status, and Protected Data (GBs).
 
 **Q: For a "Failed" or "Partial_Success" backup status, can I see which files failed and why?**
 
@@ -127,7 +127,7 @@ A: An "IN_PROGRESS" status for a restore job indicates the data is actively bein
 
 **Q: Can I select specific files/folders to restore from a restore point?**
 
-A: Yes, in the restore section there is an option to perform a full restore, or selective file restore. Using the selective file restore option allows you to enter the full path to a file or folder and the option to add multiple paths to restore.
+A: Yes, in the restore section there is an option to perform a full restore, or selective file restore. Using the selective restore option allows you to enter the full path to a file or folder and the option to add multiple paths to restore. While using the selective restore function you are able to use * as a wildcard in the path or filename.
 
 **Q: Can restores be performed to another server?**
 
