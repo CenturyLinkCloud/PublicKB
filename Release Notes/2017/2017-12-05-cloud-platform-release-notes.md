@@ -8,7 +8,6 @@
 
 ### New Features (1)
 
-
 __Cloud Application Manager__
 
 * __Anomaly Detection and Forecasting Alerting__
