@@ -1,5 +1,5 @@
 {{{
-"title": "Cloud Platform - Release Notes: November 17, 2017",
+"title": "Cloud Platform - Release Notes: December 5, 2017",
 "date": "12-05-2017",
 "author": "Ben Stephan",
 "attachments": [],
