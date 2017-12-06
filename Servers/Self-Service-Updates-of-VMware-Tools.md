@@ -29,11 +29,11 @@ If you would like to update the version of VMware Tools on your servers, this is
 
 1. Within the [Control Portal](https://control.ctl.io/) navigate to **Orchestration > Runner** in the menu.
 
-  ![Runner menu in portal](../images/Self-Service-Updates-of-VMware-Tools-01.png)
+    ![Runner menu in portal](../images/Self-Service-Updates-of-VMware-Tools-01.png)
 
 2. Select the **Update VMware Tools on Windows** Runner job by using the **Search** function or browsing the directory of public jobs.
 
-  ![vmware tools runner job](../images/Self-Service-Updates-of-VMware-Tools-02.png)
+    ![vmware tools runner job](../images/Self-Service-Updates-of-VMware-Tools-02.png)
 
 3. Review the **Update VMware Tools on Windows** runner job supported operating systems and step-by-step instructions carefully.
 
