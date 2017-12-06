@@ -35,6 +35,7 @@ If you would like to update the version of VMware Tools on your servers, this is
 
     ![vmware tools runner job](../images/Self-Service-Updates-of-VMware-Tools-02.png)
 
+
 3. Review the **Update VMware Tools on Windows** runner job supported operating systems and step-by-step instructions carefully.
 
 4. Select **Run** and populate the Runner job with the location, servers and other choices in the job. Optionally, use the scheduler to set the update to occur as a specific date/time.
