@@ -10,7 +10,7 @@ The CenturyLink Marketplace allows customers to purchase software from an extens
 
 **Create CenturyLink Cloud Account (Responsible Party: Provider)**
 
-* If your company already has a CenturyLink Cloud (CLC) account please provide the Marketplace representative that you are working with your account alias. If you do not know how to find your alias, instructions are outlined [here](././determine-control-portal-alias.md).
+* If your company already has a CenturyLink Cloud (CLC) account please provide the Marketplace representative that you are working with your account alias. If you do not know how to find your alias, instructions are outlined [here](../../Support/determine-control-portal-alias.md).
 
 * If your company does NOT have a CenturyLink Cloud account, a free account can be created [here](https://www.ctl.io/free-trial/).
 
