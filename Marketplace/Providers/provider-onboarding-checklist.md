@@ -1,6 +1,6 @@
 {{{
 "title": "Marketplace Onboarding Checklist",
-"date": "05-05-2017",
+"date": "12-07-2017",
 "author": "Brandy Smith",
 "attachments": [],
 "contentIsHTML": false
@@ -10,19 +10,21 @@ The CenturyLink Marketplace allows customers to purchase software from an extens
 
 **Create CenturyLink Cloud Account (Responsible Party: Provider)**
 
-* The account can be created from [here](https://www.ctl.io/free-trial/).
+* If your company already has a CenturyLink Cloud (CLC) account please provide the Marketplace representative that you are working with your account alias. If you do not know how to find your alias, instructions are outlined [here](././determine-control-portal-alias.md).
+
+* If your company does NOT have a CenturyLink Cloud account, a free account can be created [here](https://www.ctl.io/free-trial/).
 
 * There is no cost associated with creating or maintaining your account.
 
 * You will immediately receive a $500 credit.
 
-* Additionally, as part of the Ecosystem program, you will receive an additional $2,000/month stipend for the creation & maintenance of your solution on CenturyLink Cloud.
+* Additionally, as part of the Marketplace Provider program, you will receive an additional $2,000/month stipend for the creation & maintenance of your solution on CenturyLink Cloud.
 
 * You will be emailed your username & password for CenturyLink Cloud. You must login into the CenturyLink Cloud Portal to change your password.
 
 **Provider Portal Access (Responsible Party: Provider)**
 
-* Once you have created your CenturyLink Cloud account, you will also have access to the Provider Portal (https://provider-portal.ctl.io).
+* Once you have created your CenturyLink Cloud account provide the Marketplace representative that you are working with your (CLC) account alias. They will then create your Provider Portal account. You will then be able to access the [Provider Portal](https://provider-portal.ctl.io).
 
 * There is training material located within the provider portal.
 
