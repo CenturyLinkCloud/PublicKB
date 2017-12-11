@@ -19,7 +19,7 @@ For Amazon Web Services, we are currently limited to serving billable customers 
 
 ### Prerequisites
 
-* Approval from Amazon Web Services in the form of a Share-Shift agreement.
+* Approval from Amazon Web Services in the form of an agreement.
 
 * Access to Cloud Application Manager.
 
@@ -40,7 +40,7 @@ Charges for [AWS usage](./partner-cloud-integration-consolidated-billing.md) wil
 Cloud Application Manager Provider Option | Description | Related Links
 --- | --- | ---
  Use an existing AWS customer account | This is not an Optimized account and customer pays Amazon for usage. | [Click here](https://www.ctl.io/knowledge-base/cloud-application-manager/deploying-anywhere/using-your-aws-account/)
-   Migrate my account to CenturyLink for consolidated billing and Platform Support | **This is a Cloud Optimized option.** Provided Amazon has approved a share shift agreement, this allows an existing customer account to move under CenturyLink's care. | This page
+   Migrate my account to CenturyLink for consolidated billing and Platform Support | **This is a Cloud Optimized option.** Provided Amazon has approved agreement, this allows an existing customer account to move under CenturyLink's care. | This page
   Create a new AWS account for consolidated billing and Platform Support | **This is a Cloud Optimized option.** Initiates the new account creation process, enabling the customer to immediately enter CenturyLink's care without prior approval from AWS. | [Click Here](./partner-cloud-integration-aws-new.md)
 
 Most Amazon Web Services offering are available through CenturyLink.
