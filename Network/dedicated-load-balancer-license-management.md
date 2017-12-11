@@ -8,7 +8,7 @@
 
 ### Overview
 
-CenturyLink Cloud (CLC) dedicated Load Balancers provisioned in a customer's environment are customer-managed devices, which includes management of the vendor license. Dedicated Load Balancers licenses are typically provisioned with an expiration date of one year. An expired license may impact functionality of the Load Balancer. To obtain a new license a [Support Request](../Support/how-do-i-report-a-support-issue.md) should be submitted.
+CenturyLink Cloud (CLC) dedicated Load Balancers provisioned in a customer's environment are customer-managed devices, which includes management of the vendor license. Dedicated Load Balancers licenses are typically provisioned with an expiration date of one year. An expired license may impact functionality of the Load Balancer. To obtain a new license file a [Support Request](../Support/how-do-i-report-a-support-issue.md) should be submitted. Steps for installing the new license file are below.
 
 ### Audience
 
@@ -76,7 +76,7 @@ The Netscaler Load Balancer uses FlexLM licensing to license features on the pro
 
 ### Updating Licenses
 
-CLC will provide the license file(s) with corresponding LB management and RNAT IP addresses. You or your team should have received the login credentials for your dedicated load balancer during its creation, but let us know if you need assistance with this.
+CLC will provide the license file(s) with corresponding LB management and RNAT IP addresses; you are responsible for installation of the license file(s) on your devices. You or your team should have received the login credentials for your dedicated load balancer during its creation, but let us know if you need assistance with accessing the management functions of the load balancer.
 
 There are two methods depending on if you are updating a lone LB or an HA pair. Steps for each situation are below.
 
