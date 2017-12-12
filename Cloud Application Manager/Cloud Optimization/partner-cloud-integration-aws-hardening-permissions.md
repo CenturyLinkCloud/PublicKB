@@ -40,7 +40,7 @@ CenturyLink or Customer Role | Type of User | Optimization scenario | IAM Permis
 --- | --- | --- | ---
 Customer Admin (see below) | Customer-defined | Full Hardening | Add, Change, and Delete capabilities for all services. No capabilities to review or usage, billing, payment methods, or budgets.
 Cloud Application Manager Account Optimization | Automated Tool | Full Hardening | Administration
-Cloud Application Manager Application Lifecycle Management | Automated Tool |Full Hardening | All the ability to manipulate resources as described [here](https://www.ctl.io/knowledge-base/cloud-application-manager/deploying-anywhere/using-your-aws-account/).
+Cloud Application Manager Application Lifecycle Management | Automated Tool |Full Hardening | All the ability to manipulate resources as described [here](../Deploying Anywhere/using-your-aws-account.md).
 CenturyLink Operations | Operations Staff | Full Hardening | View-only capabilities for all products and services
 *CenturyLink Service Management* | *Service Management Staff* | *This is not an immediate part of any Optimization scenario but it is enabled by the Cloud Application Manager Account Optimization. This role is only applied when customer has purchased Service Management support from CenturyLink* |  *Add, Change, and Delete capabilities for all services. No capabilities to edit account details or budgets.*
 
