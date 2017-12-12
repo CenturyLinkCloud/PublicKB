@@ -13,11 +13,11 @@ If you prefer to set-up your environment manually, you can find those setup inst
 
 ### Audience
 
-Customers responsible for AWS Accounts which have been approved by Amazon Web Services to perform a Share-Shift into CenturyLink's care.
+Customers responsible for AWS Accounts which have been approved by Amazon Web Services to perform a transfer into CenturyLink's care.
 
 ### Prerequisites
 
-* The customer must already have an AWS account that has been specifically mentioned on the AWS Share-Shift. (Only approved accounts are authorized for this process.)
+* The customer must already have an AWS account that has been specifically mentioned in the AWS account transfer process. (Only approved accounts are authorized for this process.)
 * The customer must have reviewed the process for transferring an [existing Amazon Web Services account](./partner-cloud-integration-aws-existing.md)
 
 #### CenturyLink Cloud Optimization Configuration Steps:
