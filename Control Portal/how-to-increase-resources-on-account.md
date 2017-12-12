@@ -19,7 +19,7 @@ When building a new machine you receive a Control Portal error message indicatin
 
 1. Please contact Support via email: <a href="mailto:help@ctl.io">help@ctl.io</a>
 2. Inform them that you have reached a resource limitation.
-3. The Engineer [validates your identity](https://www.ctl.io/knowledge-base/support/pin-authentication-for-support-requests/) and then increases your limit.
+3. The Engineer [validates your identity](../Support/pin-authentication-for-support-requests.md) and then increases your limit.
 4. Once the Engineer increases the resources on your account, you may need to take the following steps inside the Control Portal to apply them to a restricted data center. Inherited limits are applied immediately.
 
 ### Steps
