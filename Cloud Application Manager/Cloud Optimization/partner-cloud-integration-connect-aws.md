@@ -8,15 +8,15 @@
 
 ### Overview
 
-Existing Accounts which are transferred into CenturyLink's care (a result of an approved Share-Shift agreement with AWS) need to consider the permissions they are required to give CenturyLink.
+Existing Accounts which are transferred into CenturyLink's care (a result of an approved account transfer process agreement with AWS) need to consider the permissions they are required to give CenturyLink.
 
 ### Audience
 
-Customers responsible for AWS Accounts which have been approved by Amazon Web Services to perform a Share-Shift into CenturyLink's care.
+Customers responsible for AWS Accounts which have been approved by Amazon Web Services to perform a transfer of the account into CenturyLink's care.
 
 ### Prerequisites
 
-* The customer must already have an AWS account that has been specifically mentioned on the AWS Share-Shift. (Only approved accounts are authorized for this process.)
+* The customer must already have an AWS account that has been specifically mentioned in the AWS account transfer process. (Only approved accounts are authorized for this process.)
 * The customer must have reviewed the process for transferring an [existing Amazon Web Services account](./partner-cloud-integration-aws-existing.md)
 
 

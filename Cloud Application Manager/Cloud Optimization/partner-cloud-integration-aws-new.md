@@ -37,8 +37,8 @@ Charges for [AWS usage](./partner-cloud-integration-consolidated-billing.md) wil
 
 Cloud Application Manager Provider Option | Description | Related Links
 --- | --- | ---
- Use an existing AWS customer account | This is not an Optimized account and customer pays Amazon for usage. | [Click here](../DeployingAnywhere/using-your-aws-account.md)
-   Migrate my account to CenturyLink for consolidated billing and Platform Support | **This is a Cloud Optimized option.** Provided Amazon has approved a share shift agreement, this allows an existing customer account to move under CenturyLink's care. | [Click Here](./partner-cloud-integration-aws-existing.md)
+ Use an existing AWS customer account | This is not an Optimized account and customer pays Amazon for usage. | [Click here](../Deploying Anywhere/using-your-aws-account.md)
+   Migrate my account to CenturyLink for consolidated billing and Platform Support | **This is a Cloud Optimized option.** Provided Amazon has approved the account transfer, this allows an existing customer account to move under CenturyLink's care. | [Click Here](./partner-cloud-integration-aws-existing.md)
   Create a new AWS account for consolidated billing and Platform Support | **This is a Cloud Optimized option.** Initiates the new account creation process, enabling the customer to immediately enter CenturyLink's care without prior approval from AWS. | This page
 
 Any Amazon Web Service offering is available through CenturyLink.

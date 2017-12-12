@@ -20,7 +20,7 @@ For a new AWS Account:
 * The customer must have reviewed the process for creating a [new Amazon Web Services account](./partner-cloud-integration-aws-new.md)
 
 For an existing AWS Account:
-* The customer must already have an AWS account that has been specifically mentioned on the AWS Share-Shift. (Only approved accounts are authorized for this process.)
+* The customer must already have an AWS account that has been specifically mentioned in the AWS account transfer process. (Only approved accounts are authorized for this process.)
 * The customer must have reviewed the process for transferring an [existing Amazon Web Services account](./partner-cloud-integration-aws-existing.md)
 
 
