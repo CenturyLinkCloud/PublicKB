@@ -11,7 +11,7 @@
 ### Overview
 This document describes how to access the Monitoring UI, and provides a breakdown of the different views that are available in each of the main components of the UI which consists of Events, Policies, Agents, Suppression, and Graphing.
  
-![MonitoringLeftNavScreenShot](../../images/MonitoringLeftNavScreenShot121317.jpg)
+![MonitoringLeftNavScreenShot](../../images/MonitoringLeftNavScreenShot121317.JPG)
   
 ##### Events
 On the Events tab there is a list of all active events (i.e. check that are out of their configured bound) for that workspace.  This includes statuses warning and critical, the check-type, its output, count and last occurrence.
