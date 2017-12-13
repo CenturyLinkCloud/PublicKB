@@ -8,15 +8,15 @@
 
 ### Overview
 
-Existing Accounts which are transferred into CenturyLink's care (a result of an approved Share-Shift agreement with AWS) need to consider the permissions they are required to give CenturyLink.
+Existing Accounts which are transferred into CenturyLink's care (a result of an approved account transfer process agreement with AWS) need to consider the permissions they are required to give CenturyLink.
 
 ### Audience
 
-Customers responsible for AWS Accounts which have been approved by Amazon Web Services to perform a Share-Shift into CenturyLink's care.
+Customers responsible for AWS Accounts which have been approved by Amazon Web Services to perform a transfer of the account into CenturyLink's care.
 
 ### Prerequisites
 
-* The customer must already have an AWS account that has been specifically mentioned on the AWS Share-Shift. (Only approved accounts are authorized for this process.)
+* The customer must already have an AWS account that has been specifically mentioned in the AWS account transfer process. (Only approved accounts are authorized for this process.)
 * The customer must have reviewed the process for transferring an [existing Amazon Web Services account](./partner-cloud-integration-aws-existing.md)
 
 
@@ -30,7 +30,7 @@ Below is a table that will help you understand the permissions you will provide 
 
   Cloud Optimization Option | Benefits | IAM Permissions given to CenturyLink | Automated changes |
   --- | --- | --- | ---
-  Full Hardening | All the benefits listed above, plus AWS-recommendations within the account for security, compliance, and support. | Admin | All the automated changes above for the purpose of [support](). Creates IAM Policies and Roles for CenturyLink Operations Staff to give them access to your account. Configures a secure password policy. Sets up an S3 audit bucket for CloudTrail and activates CloudTrail on that bucket, auditing all buckets in the linked account. Sets up the AWS Config service for regular compliance monitoring. Performs the steps [here](https://www.ctl.io/knowledge-base/cloud-application-manager/deploying-anywhere/using-your-aws-account/), providing standard permissions to Cloud Application Manager and syncs the provider.
+  Full Hardening | All the benefits listed above, plus AWS-recommendations within the account for security, compliance, and support. | Admin | All the automated changes above for the purpose of [support](). Creates IAM Policies and Roles for CenturyLink Operations Staff to give them access to your account. Configures a secure password policy. Sets up an S3 audit bucket for CloudTrail and activates CloudTrail on that bucket, auditing all buckets in the linked account. Sets up the AWS Config service for regular compliance monitoring. Performs the steps [here](../Deploying Anywhere/using-your-aws-account.md), providing standard permissions to Cloud Application Manager and syncs the provider.
 
 More details regarding these roles and permissions are [here](./partner-cloud-integration-aws-hardening-permissions.md)
 

@@ -19,7 +19,7 @@ By using our plugin for Docker Machine, users can create a Docker swarm on Centu
 The following requirements are needed to create a Docker swarm in CenturyLink Cloud.
 
 - [Docker v1.12 or later](https://www.docker.com/products/overview)
-- [CenturyLink Cloud Docker Machine Plugin](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-docker-machine/) 
+- [CenturyLink Cloud Docker Machine Plugin](../Ecosystem Partners/Marketplace Guides/getting-started-with-docker-machine.md) 
 - A CenturyLink Cloud account
 
 If you don’t have a CenturyLink Cloud account yet, no problem. [Sign up for a free trial](https://www.ctl.io/free-trial/).

@@ -43,4 +43,4 @@ When you create a new script package from the Scripts page, you have the option 
 ### Additional Information
 The FTP account may also be used for uploading OVF templates or VM images to import.
 
-See [Blueprints Script Package Management ](https://www.ctl.io/knowledge-base/blueprints/blueprints-script-and-software-package-management/) for more information on how to create and publish packages for upload.
+See [Blueprints Script Package Management](../Blueprints/blueprints-script-and-software-package-management.md) for more information on how to create and publish packages for upload.
