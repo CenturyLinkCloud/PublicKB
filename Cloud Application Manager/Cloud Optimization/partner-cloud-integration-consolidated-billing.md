@@ -25,6 +25,11 @@ All of our customers are invited to use Cloud Optimization via Cloud Application
 
 ### Important Information
 
+
+When a customer migrates an existing AWS account to CenturyLink, the customer will receive 2 bills for the first month. 
+
+The customer will still receive a bill from AWS for the month that the customer was migrated. AWS will send a bill that cover the usage from the beginning of the month to the time that the account was transferred to CenturyLink. CenturyLink will send a bill from the time the account was transferred till the end of the month.
+
 For tax purposes, CenturyLink defines most services either as IaaS or SaaS.
 
 The patterns of estimates and billing are currently as follows:
