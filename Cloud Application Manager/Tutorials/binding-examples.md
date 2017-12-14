@@ -1,6 +1,6 @@
 {{{ "title": "Binding Examples",
-"date": "11-02-2017",
-"author": "",
+"date": "12-14-2017",
+"author": "Gavin Lai",
 "attachments": [],
 "contentIsHTML": false
 }}}
