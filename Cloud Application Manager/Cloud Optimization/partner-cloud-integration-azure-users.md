@@ -15,9 +15,9 @@ Cloud Application Manager is a wonderful tool for addressing many customers' nee
 All of our customers are invited to use Cloud Optimization via Cloud Application Manager.
 ### Prerequisites
 
-Knowledge of Cloud Application Manager's [partner cloud integration](./partner-cloud-integration.md) feature.
+Knowledge of Cloud Application Manager's [partner cloud integration](partner-cloud-integration.md) feature.
 
-An existing [Microsoft Azure Provider created by Cloud Application Manager](./partner-cloud-integration-azure-new.md).
+An existing [Microsoft Azure Provider created by Cloud Application Manager](partner-cloud-integration-azure-new.md).
 
 ### Important Information
 

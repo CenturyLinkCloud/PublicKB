@@ -13,7 +13,7 @@ There are two different flavors of Azure and Cloud Application Manager has provi
 *Name** | **URL of Portal** | **Name of Related Cloud Application Manager Provider** | **KB article**
 --- | --- | --- | ---
 Classic Azure | https://manage.windowsazure.com | Classic Azure | This document
-Microsoft Azure | https://portal.azure.com | Microsoft Azure  | [Using Microsoft Azure](./using-microsoft-azure.md)
+Microsoft Azure | https://portal.azure.com | Microsoft Azure  | [Using Microsoft Azure](using-microsoft-azure.md)
 
 Each of Cloud Application Manager's Microsoft Azure Providers gives you the option of setting it up either for an existing or a new Azure Customer Account. Existing accounts are your responsibility and will continue to be billed to you by Azure. New Accounts will automatically be generated on your behalf and the credentials pulled into the Provider via [Cloud Optimization](../Cloud Optimization/partner-cloud-integration.md), allowing you to hand off platform-level support and billing to CenturyLink.
 

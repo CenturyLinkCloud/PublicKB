@@ -26,4 +26,4 @@ requirements. An experienced on-boarding engineer will be assigned to provide pr
 
 ### Get Help From Customer Care Team
 If you need assistance after your on-boarding is complete, contact our Customer Care team. This
-[Knowledge Base](https://www.ctl.io/knowledge-base/support/how-do-i-report-a-support-issue/) article explains how to open a ticket requesting support. 
+[Knowledge Base](../../Support/how-do-i-report-a-support-issue.md) article explains how to open a ticket requesting support. 

@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-This knowledge base article will guide a customer through the process of deploying dedicated Citrix VPX load balancer(s) via [Service Task](http://www.ctl.io/service-tasks) on the CenturyLink Cloud.
+This Knowledge Base article will guide a customer through the process of deploying dedicated Citrix VPX load balancer(s) via [Service Task](http://www.ctl.io/service-tasks) on the CenturyLink Cloud.
 
 ### FAQ
 

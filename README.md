@@ -2,14 +2,14 @@
 
 # CenturyLink Cloud Knowledge Base
 
-Welcome to the [CenturyLink Cloud](http://www.ctl.io) knowledge base (KB) repository. This is the source of information on all of our products and services available today. Please follow the guidelines below to contribute or make changes.
+Welcome to the [CenturyLink Cloud](http://www.ctl.io) Knowledge Base (KB) repository. This is the source of information on all of our products and services available today. Please follow the guidelines below to contribute or make changes.
 
 If you are new to Git and Github, we highly recommend spending 5 minutes reading this great article on [Understanding the Github Flow](https://guides.github.com/introduction/flow/). This repo follows the Github Flow.
 
 
 # Overview
 
-The repository is organized by category, and each folder represents a category. Within each category folder are markdown (.md) files that represent an individual knowledge base article.
+The repository is organized by category, and each folder represents a category. Within each category folder are markdown (.md) files that represent an individual Knowledge Base article.
 
 ## How To Make Contributions
 
@@ -115,7 +115,7 @@ You can use 1 level of nested categories by creating sub directories under the m
 ### Front Matter
 
 
-The top of each .md file contains metadata about the knowledge base article itself. It is used to list things such as author, date created, modified, keywords, title, etc. It should look like this:
+The top of each .md file contains metadata about the Knowledge Base article itself. It is used to list things such as author, date created, modified, keywords, title, etc. It should look like this:
 
 ```code
 {{{

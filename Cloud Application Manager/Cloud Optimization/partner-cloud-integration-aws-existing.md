@@ -27,13 +27,13 @@ For Amazon Web Services, we are currently limited to serving billable customers 
 
 * A working knowledge of how to use [Cloud Application Manager providers](../Core Concepts/providers.md).
 
-* An understanding of the features and benefits of [Partner Cloud Integration](./partner-cloud-integration.md)
+* An understanding of the features and benefits of [Partner Cloud Integration](partner-cloud-integration.md)
 
 * For each CenturyLink Cloud account integrated with Amazon Web Services, both CenturyLink's AWS Terms and Conditions for the relevant territory must be accepted. These will be presented to any user attempting to create a new "Amazon Web Services" provider in Cloud Application Manager.
 
 ### Important Information
 
-Charges for [AWS usage](./partner-cloud-integration-consolidated-billing.md) will appear on invoices from CenturyLink.
+Charges for [AWS usage](partner-cloud-integration-consolidated-billing.md) will appear on invoices from CenturyLink.
 
 ![Amazon Web Services Provider](../../images/cloud-application-manager/CINT_AWS_Provider_Options.png)
 
@@ -41,7 +41,7 @@ Cloud Application Manager Provider Option | Description | Related Links
 --- | --- | ---
  Use an existing AWS customer account | This is not an Optimized account and customer pays Amazon for usage. | [Click here](../Deploying Anywhere/using-your-aws-account.md)
    Migrate my account to CenturyLink for consolidated billing and Platform Support | **This is a Cloud Optimized option.** Provided Amazon has approved agreement, this allows an existing customer account to move under CenturyLink's care. | This page
-  Create a new AWS account for consolidated billing and Platform Support | **This is a Cloud Optimized option.** Initiates the new account creation process, enabling the customer to immediately enter CenturyLink's care without prior approval from AWS. | [Click Here](./partner-cloud-integration-aws-new.md)
+  Create a new AWS account for consolidated billing and Platform Support | **This is a Cloud Optimized option.** Initiates the new account creation process, enabling the customer to immediately enter CenturyLink's care without prior approval from AWS. | [Click Here](partner-cloud-integration-aws-new.md)
 
 Most Amazon Web Services offering are available through CenturyLink.
 
@@ -82,7 +82,7 @@ The following steps will walk through how to set up a Cloud Application Manager 
 
 7. Enter the AWS Account ID
 
-8. Determine what level of permissions you will be providing to CenturyLink. Enter one of the [recommended ARNs](./partner-cloud-integration-connect-aws.md) into the Account Role ARN field. The actions to follow correspond with the what permissions you provided when you selected the associated ARN. Once you have completed that, return to this document and continue.
+8. Determine what level of permissions you will be providing to CenturyLink. Enter one of the [recommended ARNs](partner-cloud-integration-connect-aws.md) into the Account Role ARN field. The actions to follow correspond with the what permissions you provided when you selected the associated ARN. Once you have completed that, return to this document and continue.
 
 9. Accept the Terms and Conditions
 

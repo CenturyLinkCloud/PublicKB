@@ -47,4 +47,4 @@ The following three features/bug-fixes have been introduced:
   * [Driver Installer](https://download.safehaven.ctl.io/SH-4.0.2/safehaven_windows_driver-4.0.2.exe)
   * [MakeStub.exe](https://download.safehaven.ctl.io/SH-4.0.2/MakeStub-4.0.2.exe)
 * [Script to Turn a Ubuntu-14 VM as a Recovery Proxy for Protected Windows VM](https://download.safehaven.ctl.io/SH-4.0.1/makestub_for_windows.sh)
-* [Linux Onboarding Script](./linux-onboarding-releases.md)
+* [Linux Onboarding Script](linux-onboarding-releases.md)
