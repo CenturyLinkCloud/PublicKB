@@ -7,7 +7,7 @@
 
 An application’s deployment lifecycle is parameterized in boxes using variables. Parameters denote dynamic data like database connection strings, endpoints, and application settings. Since you can’t know all possible values for the different environments and don’t want to hard-code sensitive information like passwords, it’s a good idea to define such data as variables.
 
-It works like this: define variables in box automation. Then refer to them in box [event scripts](start-stop-and-upgrade-boxes.md) with Jinja templating [syntax](./syntax-for-variables.md). For each environment like development, staging, production, you can customize deployments by passing different values to the variables. Cloud Application Manager executes the event scripts replacing variables with the values you give at deploy time.
+It works like this: define variables in box automation. Then refer to them in box [event scripts](start-stop-and-upgrade-boxes.md) with Jinja templating [syntax](syntax-for-variables.md). For each environment like development, staging, production, you can customize deployments by passing different values to the variables. Cloud Application Manager executes the event scripts replacing variables with the values you give at deploy time.
 
 Boxes support eight variable types depending on the data type or usage like any programming language. They are box, binding, port, text, file, options, password, and number.
 

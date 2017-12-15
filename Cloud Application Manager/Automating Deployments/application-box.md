@@ -5,7 +5,7 @@
 "contentIsHTML": false
 }}}
 
-The Application box deploys several instances that execute an application. An application box define a topology of [Script boxes](script-box.md), [Template boxes](./template-box.md) and [Container boxes](./docker-container-service.md).
+The Application box deploys several instances that execute an application. An application box define a topology of [Script boxes](script-box.md), [Template boxes](template-box.md) and [Container boxes](docker-container-service.md).
 
 **In this article:**
 

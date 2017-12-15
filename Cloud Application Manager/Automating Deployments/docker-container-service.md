@@ -19,7 +19,7 @@ Container boxes enable you to define and deploy [Docker](https://docs.docker.com
 
 Docker works in Cloud Application Manager through the Docker Container service box, a Linux box that understands Docker commands when deployed. In the box you model your application in a Dockerfile, which helps create the image of your application in a Docker container. Write Dockerfile commands not only in [Docker instructions](https://docs.docker.com/engine/reference/builder/), but also in Bash and PowerShell.
 
-At deploy time, Cloud Application Manager executes the Docker box like any other box in the virtual environment. Cloud Application Manager treats the Docker container like a [box variable](parameterizing-boxes-with-variables.md) and the Dockerfile as a [file variable](./parameterizing-boxes-with-variables.md) inside it. On the virtual machine, Cloud Application Manager first installs the Docker client from which we install the Docker container using the daemon BUILD command.
+At deploy time, Cloud Application Manager executes the Docker box like any other box in the virtual environment. Cloud Application Manager treats the Docker container like a [box variable](parameterizing-boxes-with-variables.md) and the Dockerfile as a [file variable](parameterizing-boxes-with-variables.md) inside it. On the virtual machine, Cloud Application Manager first installs the Docker client from which we install the Docker container using the daemon BUILD command.
 
 ### Configuring and Deploying Docker Containers
 
