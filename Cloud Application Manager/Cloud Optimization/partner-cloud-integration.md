@@ -50,7 +50,7 @@ Current features of Partner Cloud Integration include:
 
 **Standard Support Details:**
 
-Please see our Knowledge-base article detailing [Azure platform-level support](./partner-cloud-integration-azure-support.md).
+Please see our Knowledge Base article detailing [Azure platform-level support](./partner-cloud-integration-azure-support.md).
 
 For additional details on support responsibilities for our partners and their SLAs we support, please see the table below.
 

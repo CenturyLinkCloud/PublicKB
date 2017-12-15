@@ -72,7 +72,7 @@ To ensure Candidate solutions deliver both business value and trouble-free use, 
 
 * The solution performs as advertised and described in the application.
 
-* The user guides and applicable documentation are simple to follow, accurate and publishable to the CenturyLink Cloud knowledge base.
+* The user guides and applicable documentation are simple to follow, accurate and publishable to the CenturyLink Cloud Knowledge Base.
 
 * The solution integrates seamlessly with the CenturyLink Cloud automation framework in a manner that achieves low time-to-value in a self-service model.
 
