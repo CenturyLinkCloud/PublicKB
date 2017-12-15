@@ -10,7 +10,7 @@
 
 Cloud Optimization offers consolidated billing to make payments easy. Standard Consolidated billing includes usage discounts and simplified invoices.
 
-If you require more detail into your billing, that is also offered with [Analytics](../analytics/cloudapplicationmanageranalyticsui.md)
+If you require more detail into your billing, that is also offered with [Analytics](../Analytics/CloudApplicationManagerAnalyticsUI.md)
 
 ### Audience
 
