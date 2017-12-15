@@ -20,7 +20,7 @@ Bindings glue together different parts of a multi-tier application over the netw
 
 ### What are bindings?
 
-Bindings are [variables](./parameterizing-boxes-with-variables.md) that you can add to boxes. They represent a connection from the deployed box to other instances. Bindings are used to configure your event scripts of configuration files to work with the other instances.
+Bindings are [variables](parameterizing-boxes-with-variables.md) that you can add to boxes. They represent a connection from the deployed box to other instances. Bindings are used to configure your event scripts of configuration files to work with the other instances.
 
 ### Which instances does a binding connect to?
 
@@ -81,7 +81,7 @@ There are three steps to make bindings work. Say a Node.js application needs Mon
 
 **Step 1. Define Binding Variables**
 
-Binding variables are [defined in box automation](./parameterizing-boxes-with-variables.md). In this example, we defined two binding variables. One in the Nginx loadbalancer box to connect to Node.js application instances, and another in the Node.js application box to connect to the MongoDB database.
+Binding variables are [defined in box automation](parameterizing-boxes-with-variables.md). In this example, we defined two binding variables. One in the Nginx loadbalancer box to connect to Node.js application instances, and another in the Node.js application box to connect to the MongoDB database.
 
 In both cases, the bindings point to a box type, which allow the services to bind only to instances of the box type at deploy time.
 
@@ -107,7 +107,7 @@ upstream services {
 }
 ```
 
-Within the connection string, each element polls values of the Node.js application box variables, like the port. IP addresses are [default system variables](./syntax-for-variables.md) available for every instance. Besides IP addresses, bindings provide lots of helpful data about remote services. You can pretty much query ports or any other variables defined in box automation through bindings.
+Within the connection string, each element polls values of the Node.js application box variables, like the port. IP addresses are [default system variables](syntax-for-variables.md) available for every instance. Besides IP addresses, bindings provide lots of helpful data about remote services. You can pretty much query ports or any other variables defined in box automation through bindings.
 
 **Step 3. Tag Bindings for Instance Connectivity**
 

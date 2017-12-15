@@ -93,7 +93,7 @@ Configure a Jenkins slave in Cloud Application Manager. Later, you’ll call thi
 
 ### Configure Jenkins to Build with Slaves Using Cloud Application Manager
 
-Run Jenkins jobs using slaves launched via Cloud Application Manager on any cloud. Be sure to [connect your Cloud Application Manager account](./jenkins-cloud-application-manager-setup.md) in Jenkins before setting up the slave.
+Run Jenkins jobs using slaves launched via Cloud Application Manager on any cloud. Be sure to [connect your Cloud Application Manager account](jenkins-cloud-application-manager-setup.md) in Jenkins before setting up the slave.
 
 **Add Jenkins Slaves**
 
@@ -126,7 +126,7 @@ Run Jenkins jobs using slaves launched via Cloud Application Manager on any clou
 
 ### Enable Slaves to Connect through a Port
 
-When defining the [Jenkins server box](./jenkins-cloud-application-manager-setup.md), we opened port 55555 on the cloud provider network to allow slaves to connect to the Jenkins server. In these steps, we open this port (or another you chose) in Jenkins server.
+When defining the [Jenkins server box](jenkins-cloud-application-manager-setup.md), we opened port 55555 on the cloud provider network to allow slaves to connect to the Jenkins server. In these steps, we open this port (or another you chose) in Jenkins server.
 
 **Steps**
 

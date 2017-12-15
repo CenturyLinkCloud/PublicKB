@@ -16,9 +16,9 @@ All of our customers are invited to use Cloud Optimization via Cloud Application
 
 ### Prerequisites
 
-* Knowledge of Cloud Application Manager's [partner cloud integration](./partner-cloud-integration.md) feature.
+* Knowledge of Cloud Application Manager's [partner cloud integration](partner-cloud-integration.md) feature.
 
-* An existing [Optimized Provider created by Cloud Application Manager](./partner-cloud-integration.md).
+* An existing [Optimized Provider created by Cloud Application Manager](partner-cloud-integration.md).
 
 ### Important Information
 

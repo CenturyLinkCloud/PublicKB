@@ -62,7 +62,7 @@ The provider is responsible for completing the following steps to allow for thei
 1) If not yet a CenturyLink Cloud customer, providers must setup a [CenturyLink Cloud](https://www.ctl.io/free-trial/) account, the account is free to set up and will only accumulate charges for what you use on the account. Once becoming a certified Marketplace Provider, providers will be given access to the CenturyLink Marketplace Provider Portal, where they can accept the Marketplace Agreement, create product tiles, view their subscription reports, and more.
 
 2) Review and acceptance of the CenturyLink Marketplace Agreement(MPA), which is available [here](https://www.ctl.io/legal/marketplace/), within the Provider Portal.  
-MPA Legal guidance can be found [here](./marketplace-provider-agreement-guidance.md).
+MPA Legal guidance can be found [here](marketplace-provider-agreement-guidance.md).
 While the Marketplace team is available to discuss the MPA with potential providers to provide clarification on any aspects of the agreement, we will not accept red lines or amendments to the MPA.
 The Marketplace was built as a pre-approved commercialization contract vehicle, it is meant to provide low-friction on-boarding of providers and fast procurement time for sales and customers. The process of involving both the provider and CenturyLink legal teams to review, edit, approve, and execute red lines to the MPA adds friction to the process and breaks the scalability of the intended model.
 

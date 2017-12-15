@@ -7,7 +7,7 @@
 "sticky": true
 }}}
 
-The Provider Portal (PP) is an application that allows CenturyLink Cloud Provider Partners to manage the display of their products on the CenturyLink Marketplace. This guide is for providers who have already reviewed and completed the steps in the [Getting Started Guide: Marketplace & Provider Portal](./getting-started-guide-marketplace-ecosystem-provider-portal.md).
+The Provider Portal (PP) is an application that allows CenturyLink Cloud Provider Partners to manage the display of their products on the CenturyLink Marketplace. This guide is for providers who have already reviewed and completed the steps in the [Getting Started Guide: Marketplace & Provider Portal](getting-started-guide-marketplace-ecosystem-provider-portal.md).
 
 ### Signing In
 
@@ -77,5 +77,5 @@ The Help tab is where Providers can go to watch tutorial videos and find links t
 * Within the Provider Portal there are Green ? bubbles next to certain fields, click the ? to learn more.
 * [GitHub Markdown Editor](https://markdown-it.github.io/)
 * The CenturyLink Cloud [Marketplace](https://www.ctl.io/marketplace/)
-* Marketplace Provider [Onboarding Resource Guide](./onboarding-resources.md).
+* Marketplace Provider [Onboarding Resource Guide](onboarding-resources.md).
 * For questions or suggestions on how to make this Guide more useful, email the [Marketplace team](mailto:Marketplace@ctl.io).

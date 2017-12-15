@@ -18,7 +18,7 @@ All of our customers are invited to use Cloud Optimization via Cloud Application
 
 ### Prerequisites
 
-* An understanding of the features and benefits of [Partner Cloud Integration](./partner-cloud-integration.md)
+* An understanding of the features and benefits of [Partner Cloud Integration](partner-cloud-integration.md)
 
 * To experience consolidated billing, the user must have enabled at least one Cloud Optimized provider.
 

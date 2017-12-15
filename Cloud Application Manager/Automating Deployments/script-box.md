@@ -15,7 +15,7 @@ The Script box is the type you most commonly use to define deployments. It accep
 
 ### Creating Your First Script Box
 
-On the Boxes page, click **New > Script**. Enter a name, optionally a description and other [metadata](../Core Concepts/boxes.md). Save to continue. Configure the deployment using [events](./start-stop-and-upgrade-boxes.md) and [variables](./parameterizing-boxes-with-variables.md).
+On the Boxes page, click **New > Script**. Enter a name, optionally a description and other [metadata](../Core Concepts/boxes.md). Save to continue. Configure the deployment using [events](start-stop-and-upgrade-boxes.md) and [variables](./parameterizing-boxes-with-variables.md).
 
 When ready to test the configuration, click **Deploy**. Under the Deployment Box, search or select a deployment policy. Policies whose claims match the script box requirements appear here.
 

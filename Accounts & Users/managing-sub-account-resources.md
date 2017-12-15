@@ -9,7 +9,7 @@
 
 ### Overview
 
-Customers with [sub-accounts](./creating-a-sub-account.md) may want to manage existing or create new resources under that account. Follow these steps to change the account focus/context in Control for managing multiple accounts.
+Customers with [sub-accounts](creating-a-sub-account.md) may want to manage existing or create new resources under that account. Follow these steps to change the account focus/context in Control for managing multiple accounts.
 
 ### Changing your focus to another account
 

@@ -65,7 +65,7 @@ Enter the OpenStack project credentials you downloaded from the OpenStack dashbo
 
 ### Deploying in Your OpenStack Project
 
-Select these deployment options to [launch an instance](./deploying-managing-instances.md) with or without boxes that contain configured application workloads. Cloud Application Manager provisions the infrastructure in your OpenStack Cloud and installs the workloads from the boxes onto the instances.
+Select these deployment options to [launch an instance](deploying-managing-instances.md) with or without boxes that contain configured application workloads. Cloud Application Manager provisions the infrastructure in your OpenStack Cloud and installs the workloads from the boxes onto the instances.
 
 
 **Deployment**

@@ -15,7 +15,7 @@ Once you have created a CenturyLink Cloud account, or provided a Marketplace rep
 
 The Provider Portal provides you with multiple resources.
 
-The portal is where you will accept the Marketplace Agreement, create and setup your product, and more. For more information on how to setup your product, please see the [Getting Started Guide: Marketplace & Provider Portal](./getting-started-guide-marketplace-ecosystem-provider-portal.md).
+The portal is where you will accept the Marketplace Agreement, create and setup your product, and more. For more information on how to setup your product, please see the [Getting Started Guide: Marketplace & Provider Portal](getting-started-guide-marketplace-ecosystem-provider-portal.md).
 
 Once your product has been published, the Provider Portal contains reports that will:
 
@@ -42,6 +42,6 @@ A CenturyLink Cloud Account is required to be a provider on the CenturyLink Cl
 
 ### Getting Started Guide: Marketplace & Ecosystem Provider Portal
 
-The [Marketplace Getting Started Guide](./getting-started-guide-marketplace-ecosystem-provider-portal.md) will serve as your primary guide for creating your product in the Provider Portal. We recommend using it in conjunction with the training videos provided within the Portal. Our goal for the CenturyLink Cloud Marketplace is to provide a superior user experience with respect to learning about your product. If you'd like additional support developing your content, we're here to help. Contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
+The [Marketplace Getting Started Guide](getting-started-guide-marketplace-ecosystem-provider-portal.md) will serve as your primary guide for creating your product in the Provider Portal. We recommend using it in conjunction with the training videos provided within the Portal. Our goal for the CenturyLink Cloud Marketplace is to provide a superior user experience with respect to learning about your product. If you'd like additional support developing your content, we're here to help. Contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
 
 We update the guide monthly with any updates that have been released. If for some reason, you feel as though the guide is missing information or if you have additional questions, please let us know at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
