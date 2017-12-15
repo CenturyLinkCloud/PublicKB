@@ -47,7 +47,7 @@ Any Amazon Web Service offering is available through CenturyLink.
 
 New AWS Accounts will automatically be Fully Hardened.
 
-* **Data Access** Certain AWS Management Console reports will be restricted because they will not provide accurate representation of pricing, CenturyLink-provided discounts, or managed costs. Fully Hardened have access to use Cloud Application Manager's [Analytics](./CloudApplicationManagerAnalyticsUI.md) tool for usage details that would have been provided by AWS Billing Services such as Cost Explorer. Additionally, customers will not be given access to consolidated data within the CenturyLink-owned Master Payers.
+* **Data Access** Certain AWS Management Console reports will be restricted because they will not provide accurate representation of pricing, CenturyLink-provided discounts, or managed costs. Fully Hardened have access to use Cloud Application Manager's [Analytics](../Analytics/CloudApplicationManagerAnalyticsUI.md) tool for usage details that would have been provided by AWS Billing Services such as Cost Explorer. Additionally, customers will not be given access to consolidated data within the CenturyLink-owned Master Payers.
 * **Reserved Instances**
   * Customers may contact CenturyLink if they wish to have their Reserved Instance limit increased.
 
