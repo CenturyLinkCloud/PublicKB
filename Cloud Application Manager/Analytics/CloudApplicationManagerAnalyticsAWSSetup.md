@@ -18,7 +18,7 @@ Customers responsible for AWS Accounts which have been approved by Amazon Web Se
 ### Prerequisites
 
 * The customer must already have an AWS account that has been specifically mentioned in the AWS account transfer process. (Only approved accounts are authorized for this process.)
-* The customer must have reviewed the process for transferring an [existing Amazon Web Services account](./partner-cloud-integration-aws-existing.md)
+* The customer must have reviewed the process for transferring an [existing Amazon Web Services account](../Cloud Optimization/partner-cloud-integration-aws-existing.md)
 
 #### CenturyLink Cloud Optimization Configuration Steps:
 1. Open the CloudFormation template found [here](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/new?stackName=CTL-CloudOptimization-IAM-Stack&templateURL=https%3A%2F%2Fs3.us-east-2.amazonaws.com%2Fctl-cloudoptimization%2FCTLCloudOptimizationIAMPolicy.template.json).
