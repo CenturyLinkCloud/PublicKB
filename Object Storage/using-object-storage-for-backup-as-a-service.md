@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storage for backup and recovery of file systems or applications. As Object Storage is consumable by any customer in a public fashion, applications or servers can be located within the CenturyLink Cloud or on premise. There are various industry backup tools that support object storage as a repository for data. In this knowledge base we will focus on [Cloudberry Lab](http://www.cloudberrylab.com).
+CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storage for backup and recovery of file systems or applications. As Object Storage is consumable by any customer in a public fashion, applications or servers can be located within the CenturyLink Cloud or on premise. There are various industry backup tools that support object storage as a repository for data. In this Knowledge Base article we will focus on [Cloudberry Lab](http://www.cloudberrylab.com).
 
 [Cloudberry Ultimate Edition](http://www.cloudberrylab.com/enterprise-cloud-backup-software.aspx) permits backup of Microsoft Windows Server File Systems (backup files, folders, **network shares** and **system image**), Microsoft SQL and Microsoft Exchange data.
 
@@ -198,8 +198,8 @@ CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storag
 
 In case of product issues:
 
-1. Check [knowledge base][1d5c9166];
+1. Check [Knowledge Base][1d5c9166];
 2. Support email - [support@cloudberrylab.com](mailto:support@cloudberrylab.com);
 3. Solutions Architect group email - [sa-team@cloudberrylab.com](mailto:sa-team@cloudberrylab.com).
 
-  [1d5c9166]: http://kb.cloudberrylab.com "Knowledge base Cloudberry lab"
+  [1d5c9166]: http://kb.cloudberrylab.com "Knowledge Base Cloudberry lab"

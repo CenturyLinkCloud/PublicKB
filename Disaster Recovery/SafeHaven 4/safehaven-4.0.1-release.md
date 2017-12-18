@@ -98,4 +98,4 @@ Currently, CLC limits a VM to 15 disks, a total of 4TB capacity and a maximum of
   * [Driver Installer](https://download.safehaven.ctl.io/SH-4.0.1/safehaven_windows_driver-4.0.1.exe)
   * [MakeStub.exe](https://download.safehaven.ctl.io/SH-4.0.1/MakeStub-4.0.1.exe)
 * [Script to Turn a Ubuntu-14 VM as a Recovery Proxy for Protected Windows VM](https://download.safehaven.ctl.io/SH-4.0.1/makestub_for_windows.sh)
-* [Linux Onboarding Script](./linux-onboarding-releases.md)
+* [Linux Onboarding Script](linux-onboarding-releases.md)

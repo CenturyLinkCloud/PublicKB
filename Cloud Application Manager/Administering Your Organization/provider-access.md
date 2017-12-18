@@ -7,7 +7,7 @@
 }}}
 
 ### Enable Access to Cloud Providers
-By default, all public and private cloud providers are enabled for Cloud Application Manager users. As an Cloud Application Manager administrator, you can enable or disable providers for the entire organization in the [admin console](./admin-overview.md). You can turn off a particular provider if you don’t want people to deploy to it.
+By default, all public and private cloud providers are enabled for Cloud Application Manager users. As an Cloud Application Manager administrator, you can enable or disable providers for the entire organization in the [admin console](admin-overview.md). You can turn off a particular provider if you don’t want people to deploy to it.
 
 Enabling provider access does not automatically register providers for use but determines which ones users can connect and deploy to.
 

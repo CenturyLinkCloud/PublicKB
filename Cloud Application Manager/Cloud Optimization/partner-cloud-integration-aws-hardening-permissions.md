@@ -12,16 +12,16 @@ Amazon Web Services Accounts that are hardened by CenturyLink will provide our t
 
 ### Audience
 
-Users of accounts that already have or are considering full hardening. This is for all new AWS accounts created through Cloud Application Manager and any existing account moving into CenturyLink's care which [opts for full hardening](./partner-cloud-integration-connect-aws.md).
+Users of accounts that already have or are considering full hardening. This is for all new AWS accounts created through Cloud Application Manager and any existing account moving into CenturyLink's care which [opts for full hardening](partner-cloud-integration-connect-aws.md).
 
 ### Prerequisites
 
 For a new AWS Account:
-* The customer must have reviewed the process for creating a [new Amazon Web Services account](./partner-cloud-integration-aws-new.md)
+* The customer must have reviewed the process for creating a [new Amazon Web Services account](partner-cloud-integration-aws-new.md)
 
 For an existing AWS Account:
-* The customer must already have an AWS account that has been specifically mentioned on the AWS Share-Shift. (Only approved accounts are authorized for this process.)
-* The customer must have reviewed the process for transferring an [existing Amazon Web Services account](./partner-cloud-integration-aws-existing.md)
+* The customer must already have an AWS account that has been specifically mentioned in the AWS account transfer process. (Only approved accounts are authorized for this process.)
+* The customer must have reviewed the process for transferring an [existing Amazon Web Services account](partner-cloud-integration-aws-existing.md)
 
 
 ### Important Information
@@ -40,7 +40,7 @@ CenturyLink or Customer Role | Type of User | Optimization scenario | IAM Permis
 --- | --- | --- | ---
 Customer Admin (see below) | Customer-defined | Full Hardening | Add, Change, and Delete capabilities for all services. No capabilities to review or usage, billing, payment methods, or budgets.
 Cloud Application Manager Account Optimization | Automated Tool | Full Hardening | Administration
-Cloud Application Manager Application Lifecycle Management | Automated Tool |Full Hardening | All the ability to manipulate resources as described [here](https://www.ctl.io/knowledge-base/cloud-application-manager/deploying-anywhere/using-your-aws-account/).
+Cloud Application Manager Application Lifecycle Management | Automated Tool |Full Hardening | All the ability to manipulate resources as described [here](../Deploying Anywhere/using-your-aws-account.md).
 CenturyLink Operations | Operations Staff | Full Hardening | View-only capabilities for all products and services
 *CenturyLink Service Management* | *Service Management Staff* | *This is not an immediate part of any Optimization scenario but it is enabled by the Cloud Application Manager Account Optimization. This role is only applied when customer has purchased Service Management support from CenturyLink* |  *Add, Change, and Delete capabilities for all services. No capabilities to edit account details or budgets.*
 

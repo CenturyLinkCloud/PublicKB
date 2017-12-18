@@ -10,7 +10,7 @@
 
 This article explains how to boot from a Production VM from primary data storage after it has been configured to boot from iSCSI disks for failback. This is the last step for failback.
 
-**NOTE**: To follow this step the user MUST have already completed Failback Phase 1 and Phase 2 covered in [Failback a Windows Protection Group](./Failback a Windows Protection Group.md) KB Article
+**NOTE**: To follow this step the user MUST have already completed Failback Phase 1 and Phase 2 covered in [Failback a Windows Protection Group](Failback a Windows Protection Group.md) KB Article
 
 ### Requirements
 

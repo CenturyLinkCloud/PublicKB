@@ -1,5 +1,5 @@
 {{{
-"title": "Marketplace Updates July 2017",
+"title": "Marketplace Updates August 2017",
 "date": "08-31-2017",
 "author": "Brandy Smith",
 "attachments": [],
