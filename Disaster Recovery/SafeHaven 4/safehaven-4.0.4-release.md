@@ -75,4 +75,4 @@ For Windows Server 2008 R2 with the installation of an optional Microsoft hotfix
 
 Two downloads are provided:
 * [safehaven_windows_driver-4.0.4-hotfix1.exe](https://download.safehaven.ctl.io/SH-4.0.4/safehaven_windows_driver-4.0.4-hotfix1.exe): this installer would install the fixed Manager.exe
-* [manager.exe](): If the 4.0.4 driver is already installed, in order to avoid an uncessary reboot by installing a newer version of the driver, one can simply download the `manager.exe` and replace the installed one at `C:\Program Files\SafeHaven-4.0 DRaaS Windows Replication Agent\manager.exe` 
+* [manager.exe](): If the 4.0.4 driver is already installed, in order to avoid an uncessary reboot by installing a newer version of the driver, one can simply download the `manager.exe` and replace the installed one at `C:\Program Files\SafeHaven-4.0 DRaaS Windows Replication Agent\manager.exe` or the customized installation folder. 
