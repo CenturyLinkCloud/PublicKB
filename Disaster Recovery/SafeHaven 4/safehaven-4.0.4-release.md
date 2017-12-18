@@ -1,6 +1,6 @@
 {{{
   "title": "SafeHaven 4.0.4 Release Notes",
-  "date": "10-23-2017",
+  "date": "12-18-2017",
   "author": "Shi Jin",
   "attachments": [],
   "contentIsHTML": false
@@ -67,4 +67,11 @@ Reference links to previous 4.0.x series releases:
   * [MakeStub.exe](https://download.safehaven.ctl.io/SH-4.0.4/MakeStub-4.0.4.exe)
   
 Please note that you can check the md5 checksum against the file named [MD5SUMS](https://download.safehaven.ctl.io/SH-4.0.4/MD5SUMS).
+#### safehaven_windows_driver-4.0.4-hotfix1.exe
 
+Please note this hotfix release is only needed if you are having problem running the Manager.exe installed from the official 4.0.4 release above. 
+For Windows Server 2008 R2 with the installation of an optional Microsoft hotfix  [KB2647409](https://support.microsoft.com/kb/2647409), the Manager.exe installed by the official 4.0.4 SafeHaven Windows Driver would fail to proceed due to the failure to confirm the existence of a depedent Microsoft hotfix [KB2708857](https://support.microsoft.com/kb/2708857). This is because [KB2647409](https://support.microsoft.com/kb/2647409) already includes the fix needed for [KB2708857](https://support.microsoft.com/kb/2708857) so that these two mutually exclusive. The SafeHaven-4.0.4-hotfix1 provides a fix that would skip the check for [KB2708857](https://support.microsoft.com/kb/2708857) if [KB2647409](https://support.microsoft.com/kb/2647409) is already in place. 
+
+Two downloads are provided:
+* [safehaven_windows_driver-4.0.4-hotfix1.exe](https://download.safehaven.ctl.io/SH-4.0.4/safehaven_windows_driver-4.0.4-hotfix1.exe): this installer would install the fixed Manager.exe
+* [manager.exe](): If the 4.0.4 driver is already installed, in order to avoid an uncessary reboot by installing a newer version of the driver, one can simply download the `manager.exe` and replace the installed one at `C:\Program Files\SafeHaven-4.0 DRaaS Windows Replication Agent\manager.exe` 
