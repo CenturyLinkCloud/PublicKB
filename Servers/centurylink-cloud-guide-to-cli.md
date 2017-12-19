@@ -31,11 +31,11 @@
 ### Overview
 
 There are two CLI interfaces available on CenturyLink Cloud, GO based
-CLI for API v2 [(explains here, currently version 1.1)](//github.com/CenturyLinkCloud/clc-go-cli) and [Python based CLI for API v1 and v2](//github.com/CenturyLinkCloud/clc-python-sdk)
+CLI for API v2 [(explains here, currently version 1.1)](https://github.com/CenturyLinkCloud/clc-go-cli) and [Python based CLI for API v1 and v2](//github.com/CenturyLinkCloud/clc-python-sdk)
 
 For accounts, users, [API v1](//ca.ctl.io/api-docs/v1/u5o/) provides the access to this information. For the rest of the data, [API v2](//www.ctl.io/api-docs/v2/) can be used to access this information.
 
-The Python based SDK is crossed platform, the CLI can be ran on any Python 2.7 environment.  For detail usage of Python CLI and download, please see its [GitHub repository](//github.com/CenturyLinkCloud/clc-python-sdk/blob/master/README_CLI.md).  The pre-complied windows CLI executable can be downloaded from [here](//github.com/CenturyLinkCloud/clc-python-sdk/raw/master/src/dist/clc-cli.exe).
+The Python based SDK is crossed platform, the CLI can be ran on any Python 2.7 environment.  For detail usage of Python CLI and download, please see its [GitHub repository](//github.com/CenturyLinkCloud/clc-python-sdk).  The pre-complied windows CLI executable can be downloaded from [here](//github.com/CenturyLinkCloud/clc-python-sdk/raw/master/src/dist/clc-cli.exe).
 The GO based CLI can be run on Mac OSX, Linux and Windows. For release notes and download page, please see the [CenturyLink Cloud CLI GitHub release page](//github.com/CenturyLinkCloud/clc-go-cli/releases).  
 The resources available on both tools will output similar results, at this time, certain functions are only available on API v1, hence the need of both tools to capture all the functionalities of the platform.
 
@@ -60,7 +60,7 @@ Comparison of the two CLI tools:
 When running commands (GO CLI command/Python CLI command)
 -   alias - Account Alias, it can be found in the top left corner of the portal
 -   name - name of the server or group, when creating a new server, the length limit is 6 characters
--   location - name of the data centers (e.g. IL1, VA1, CA1)
+-   data-center - name of the data centers (e.g. IL1, VA1, CA1)
 -   network-name/network - name of the VLAN, [they can be listed using CLI](#read-commands)
 -   type - server type, either standard or hyperscale
 -   storage-type/backup-level - storage type, current option is standard
@@ -68,7 +68,7 @@ When running commands (GO CLI command/Python CLI command)
 -   configuration-id - ID of bare metal from output of `clc data-center get-baremetal-capabilities`
 
 Output and error message
--   alias - In both the output and error messages, alias can be server name/account/location alias
+-   alias - In both the output and error messages, alias can be server name/account/data-center alias
 -   name - depending on the query, it can me server name, location, account name etc
 
 
@@ -85,7 +85,7 @@ Installation instruction is available [here](//github.com/CenturyLinkCloud/clc-p
 ```
 pip install clc-sdk
 ```
-For authentication, it can be several way, please see the [README page of the CLI](//github.com/CenturyLinkCloud/clc-python-sdk/blob/master/README_CLI.md#authentication).  In order to use a system configuration file, a clc.ini (Windows) or clc_config (POSIX) needs to be created.  An example is shown below:
+For authentication, it can be several way, please see the [README page of the CLI](//github.com/CenturyLinkCloud/clc-python-sdk/).  In order to use a system configuration file, a clc.ini (Windows) or clc_config (POSIX) needs to be created.  An example is shown below:
 ```
 [global]
 V1_API_KEY=
@@ -489,7 +489,13 @@ clc load-balancer list --data-center ca2
 ```
 clc load-balancer-pool list --data-center ca2 --load-balancer-name CLITest
 ```
-
+**List all cross data center firewall rule for an account or data center**
+```
+clc crossdc-firewall-policy list --destination-acount-alias XXXX
+```
+```
+clc crossdc-firewall-policy list --data-center CA1
+```
 
 ### Commands change the environment
 (**Warning**: use with care)
@@ -673,7 +679,7 @@ Relational Database Service,Intrusion Prevention Service, Patching Service and S
 The following examples show the basic functions of what can be done from the CLI.
 
 ### Relational Database Service
-For Relational DB, cli can manage creation, deletion, failover, notification and listing of different resources.  The `--help` option can be used to find out more on the options.  For details of Relational Database Service, please see this [knowledge article](../Database/getting-started-with-mysql-rdbs.md).
+For Relational DB, cli can manage creation, deletion, failover, notification and listing of different resources.  The `--help` option can be used to find out more on the options.  For details of Relational Database Service, please see this [knowledge article](../Database/rdbs-mysql-getting-started.md).
 
 **Listing all the available data centers for this service**
 ```
@@ -924,7 +930,24 @@ clc backup get-stored-data --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx
 clc backup get-restore-point-details --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --server-policy-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  --backup-finished-start-date 2016-02-06 --backup-finished-end-date 2016-04-07 --sort-by retentionExpiredDate
 ```
 
-### Webhooks
+### Utilization Report
+
+CenturyLink Cloud stores the utilization report of a server for the past 14 days.  The statistics include CPU, Memory, Disk usage and Network.  There are three options of retrieving statistics:
+- latest (returns a single data point that reflects the last monitoring data collected)
+- hourly (returns data points for each sampleInterval value between the start and end times provided)
+- realtime (returns data from the last 4 hours, available in smaller increments)
+
+***Request a realtime statistics realtime from the Test group***
+```
+clc group get-monitoring-statistics --group-name Test --type realtime --start "2017-09-11 12:00:00" --sample-interval "01:00:00"
+```
+***Request statistics from September 1 to 7th in CSV format***
+```
+clc group get-monitoring-statistics --group-name Test --type hourly --start "2017-09-01 00:00:00" --end "2017-09-07 00:00:00" --sample-interval "01:00:00" --output csv
+```
+***Reuqest statistics realtime (last 4 hours) in 30 minutes interval***
+
+### Webhook (only avaiable until version v1.1.0-rc.2)
 CLI can be used to configure webhooks, this enable customers to leverage the alert notification webhook services built into CenturyLink Cloud with 3rd party web apps or services.  The current event list are: "Account.Created", "Account.Delted", "Account.Updated", "Alert.Notificiation", "Server.Created", "Server.Deleted", "Server.Updated", "User.Created", "User.Deleted", "User.Updated".  To learn more on setup webhook in CenturyLink Cloud, please see [Configuring Webhooks and Consuming Notificatios](../General/consuming-webhook-alerts-with-3rd-party-web-apps.md).
 
 ***List all current webhook***

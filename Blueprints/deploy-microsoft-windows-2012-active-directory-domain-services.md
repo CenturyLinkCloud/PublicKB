@@ -1,7 +1,7 @@
 {{{
   "title": "Deploy Microsoft Windows 2012 Active Directory Domain Services",
-  "date": "1-19-2015",
-  "author": "Keith Resar",
+  "date": "3-23-2017",
+  "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -30,8 +30,8 @@ Customers who wish to layer Windows 2012 Active Directory Domain Services onto e
 1. Navigate to the Servers Menu in Control.
 
    ![](../images/deploy-active-directory-1.png)
-   
-2. Browse to the Group that houses the VM(s) you want to deploy Active Directory Domain Services.  Select Action, Execute Package.
+
+2. Browse to the Group that houses the VM(s) you want to deploy Active Directory Domain Services.  Select Execute Package.
    ![](../images/deploy-active-directory-2.png)
 3. Search for 'active directory', select the Install Active Directory on Windows 2012 (1 of 2) [Primary Node] Blueprint and finally choose the virtual server you wish to be the primary domain controller. We must deploy the primary domain controller initially prior to creating a secondary. Input the Domain Name (FQDN) and safe mode administrator password for the new domain.
    ![](../images/deploy-active-directory-3.png)
@@ -53,5 +53,5 @@ Customers who wish to layer Windows 2012 Active Directory Domain Services onto e
 ### Deploying Windows 2012 Active Directory Domain Services using Blueprints
 Customers who are building greenfield environments in the CenturyLink Cloud may wish to use Blueprints to deploy Single or Dual Domain Controllers and Active Directory Domain Services in an automated fashion. Blueprint provide a tool for customers to build environments for multiple deployments.  
 
-To Deploy Windows 2012 Active Directory Domain Services using this approach follow the [How to Build a Blueprint](how-to-build-a-blueprint.md) knowledge base article and use the public script packages Install Active Directory on Windows 2012 (1 of 2) [Primary Node] & Install Active Directory on Windows 2012 (2 of 2) [Secondary Node] in conjunction with Windows 2012 Virtual Machine builds.
+To Deploy Windows 2012 Active Directory Domain Services using this approach follow the [How to Build a Blueprint](how-to-build-a-blueprint.md) Knowledge Base article and use the public script packages Install Active Directory on Windows 2012 (1 of 2) [Primary Node] & Install Active Directory on Windows 2012 (2 of 2) [Secondary Node] in conjunction with Windows 2012 Virtual Machine builds.
 ![](../images/deploy-active-directory-8.png)

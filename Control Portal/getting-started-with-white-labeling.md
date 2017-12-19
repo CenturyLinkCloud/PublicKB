@@ -28,7 +28,7 @@ CenturyLink Cloud includes several features that allow organizations to replace 
 
 2. Click **save**.
 
-3. After the change takes effect, the name appears in the header and on the login page of your [subdomain featuring an account alias](https://www.ctl.io/knowledge-base/release-notes/2015-03-05-cloud-platform-release-notes/).
+3. After the change takes effect, the name appears in the header and on the login page of your [subdomain featuring an account alias](../Release Notes/2015/2015-03-05-cloud-platform-release-notes.md).
 
 ### Customizing the Header Bar Color Scheme
 The colors used throughout the Control Portal can be changed to reflect your organization's color scheme.

@@ -11,6 +11,8 @@
     "Container Services",
     "Control Portal",
     "Database",
+    "DCC Foundation",
+    "Dedicated Cloud Compute",
     "Disaster Recovery",
     "Ecosystem Partners",
     "General",
@@ -19,12 +21,12 @@
     "Marketplace",
     "Network",
     "Object Storage",
-    "Orchestrate",
     "Partners",
+    "Private Node",
     "Release Notes",
     "Runner",
     "Security",
-    "Service Tasks",
-    "Servers"
+    "Servers",
+    "Service Tasks"
   ]
 }}}

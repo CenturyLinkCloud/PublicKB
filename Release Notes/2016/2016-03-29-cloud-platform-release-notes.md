@@ -35,7 +35,7 @@
 
 	Simple Backup Service offers comprehensive protection against file-level corruption for users of CenturyLink Cloud, including support for Standard, Hyperscale, and Bare Metal servers, all supported 64-bit Windows and Linux operating systems, and global reach. Available in all CenturyLink Cloud nodes globally.
 
-	For more information on Simple Backup Service, you can visit our [product page](https://www.ctl.io/simple-backup-service/) or our [Knowledge Base](https://www.ctl.io/knowledge-base/backup/).  To understand more about what this new launch means for Standard & Premium backup features, refer to [this KB](https://www.ctl.io/knowledge-base/support/backup-service-changes-faq/).
+	For more information on Simple Backup Service, you can visit our [product page](https://www.ctl.io/simple-backup-service/) or our [Knowledge Base](https://www.ctl.io/knowledge-base/backup/).
 
 
 ### Open Source Contributions (1)
@@ -48,7 +48,7 @@
 
 * __Update on the Retirement of Standard & Premium Backup Features -__ Introducing New Options for Backups, Plus an Update on the Retirement of Standard & Premium Backup Features.
 
- 	Late last year, CenturyLink notified customers that the [backup features associated with “Standard” and “Premium” storage were to be retired in early 2016.](https://www.ctl.io/knowledge-base/support/backup-service-changes-faq/)
+ 	Late last year, CenturyLink notified customers that the backup features associated with “Standard” and “Premium” storage were to be retired in early 2016.
 	We can now offer more clarity on this timing. Effective May 1, 2016 Standard and Premium backup features will reach end of life in CenturyLink Cloud in all locations. There is no impact to the persistent storage attached to servers, but the 5-day and 14-day backup capabilities will no longer function after this date.
 
-  For more information - including alternatives you may want to consider for backup and disaster recovery, [please refer to this knowledge base article.](https://www.ctl.io/knowledge-base/support/introducing-new-options-for-backups/)
+  For more information - including alternatives you may want to consider for backup and disaster recovery, [please refer to this Knowledge Base article.](https://www.ctl.io/knowledge-base/support/introducing-new-options-for-backups/)

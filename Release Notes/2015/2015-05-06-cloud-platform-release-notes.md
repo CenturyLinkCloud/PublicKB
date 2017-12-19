@@ -51,8 +51,6 @@
 
 * [**MongoDB**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-mongodb-blueprint.md) - A cross-platform, NoSQL-style, document-oriented database. MongoDB’s structure is JSON-like, making integration of unstructured data in certain types of applications easier and faster.
 
-* [**AlertLogic**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-alert-logic-threat-manager-partner-template.md) - Delivers deep security insight and supports continuous monitoring against cyber-threats.  Built for web scale, the Alert Logic threat management solution combines a cloud-deployed endpoint solution with the power of an aggregated threat intelligence database.
-
 * [**Vision Solutions - DoubleTake**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md) - Best-of-breed technology helping customers address the business challenge of adopting cloud-based disaster recovery strategies and performing near-zero downtime migrations without risk across physical, virtual or cloud server platforms.
 
 

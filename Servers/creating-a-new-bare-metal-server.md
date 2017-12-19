@@ -1,6 +1,6 @@
 {{{
   "title": "Creating a New Bare Metal Server",
-  "date": "3-14-2016",
+  "date": "9-13-2017",
   "author": "Bryan Friedman",
   "attachments": [],
   "contentIsHTML": false
@@ -27,7 +27,15 @@ Once you've gone through this KB article and created a new server, you can follo
 
   You should also notice the warning message that appears regarding no backups or storage redundancy. Customers who require backups for Bare Metal servers should review our [Simple Backup Service](//www.ctl.io/simple-backup-service).
 
-4. Now, choose the operating system for this server. Bare Metal servers currently offer a subset of the OS options offered for virtual machines on CenturyLink Cloud: Windows 2012 R2 Standard, Red Hat 6, CentOS 6, and Ubuntu 14.
+4. Now, choose the operating system for this server. Supported Operating systems are:
+  * Windows 2012 R2 Standard Edition
+  * Windows 2012 R2 Datacenter Edition
+  * Red Hat Enterprise Linux 6
+  * Red Hat Enterprise Linux 7
+  * CentOS 6
+  * CentOS 7
+  * Ubuntu 14 LTS
+  * Ubuntu 16 LTS
 
 5. Next, you'll need to set the server name, description, and administrator password for this server, just as you do with any CenturyLink Cloud server. As usual, the name entered is part of a formatted name that is arranged as: **(data center name)** + **(account alias)** + **(user-provided server name)** + **(counter index)**. The administrator password will set the "Administrator" password in Windows or the "root" password in Linux.
 
