@@ -17,7 +17,7 @@ Customers responsible for AWS Accounts which have been approved by Amazon Web Se
 ### Prerequisites
 
 * The customer must already have an AWS account that has been specifically mentioned in the AWS account transfer process. (Only approved accounts are authorized for this process.)
-* The customer must have reviewed the process for transferring an [existing Amazon Web Services account](./partner-cloud-integration-aws-existing.md)
+* The customer must have reviewed the process for transferring an [existing Amazon Web Services account](partner-cloud-integration-aws-existing.md)
 
 
 ### Important Information
@@ -32,7 +32,7 @@ Below is a table that will help you understand the permissions you will provide 
   --- | --- | --- | ---
   Full Hardening | All the benefits listed above, plus AWS-recommendations within the account for security, compliance, and support. | Admin | All the automated changes above for the purpose of [support](). Creates IAM Policies and Roles for CenturyLink Operations Staff to give them access to your account. Configures a secure password policy. Sets up an S3 audit bucket for CloudTrail and activates CloudTrail on that bucket, auditing all buckets in the linked account. Sets up the AWS Config service for regular compliance monitoring. Performs the steps [here](../Deploying Anywhere/using-your-aws-account.md), providing standard permissions to Cloud Application Manager and syncs the provider.
 
-More details regarding these roles and permissions are [here](./partner-cloud-integration-aws-hardening-permissions.md)
+More details regarding these roles and permissions are [here](partner-cloud-integration-aws-hardening-permissions.md)
 
 
 ### Steps
@@ -88,4 +88,4 @@ More details regarding these roles and permissions are [here](./partner-cloud-in
 
 ![Confirm joining](../../images/cloud-application-manager/CINT_AWS_Invitation4.png)
 
-  The status of the Cloud Application Manager provider will eventually change to "online: because it will should synchronize. Please return to [existing Amazon Web Services account](./partner-cloud-integration-aws-existing.md) and continue with the remaining steps.
+  The status of the Cloud Application Manager provider will eventually change to "online: because it will should synchronize. Please return to [existing Amazon Web Services account](partner-cloud-integration-aws-existing.md) and continue with the remaining steps.

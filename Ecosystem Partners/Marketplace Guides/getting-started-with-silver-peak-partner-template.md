@@ -136,4 +136,4 @@ Follow this process to request credit on your account to reimburse any expense t
 
 #### Who should I contact for support?
 * For issues related to deploying the Silver Peak partner template on CenturyLink Cloud, please contact [Silver Peak Customer Support](http://www.silver-peak.com/support).
-* or issues related to cloud infrastructure, please open a ticket using the CenturyLink Cloud [Support Process](https://www.ctl.io/knowledge-base/support/how-do-i-report-a-support-issue/).
+* or issues related to cloud infrastructure, please open a ticket using the CenturyLink Cloud [Support Process](../../Support/how-do-i-report-a-support-issue.md).

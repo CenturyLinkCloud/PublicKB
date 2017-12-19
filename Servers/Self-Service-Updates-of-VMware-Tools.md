@@ -22,7 +22,7 @@ If you would like to update the version of VMware Tools on your servers, this is
 
 ### Prerequisites
 * Administrative access to servers
-* Customers are advised to [Create a snapshot](./creating-and-managing-server-snapshots.md) if possible prior to any changes.
+* Customers are advised to [Create a snapshot](creating-and-managing-server-snapshots.md) if possible prior to any changes.
 * Customers should plan a maintenance window for their systems to perform a reboot post update.
 
 ### Detailed Steps for Windows Servers using Automation

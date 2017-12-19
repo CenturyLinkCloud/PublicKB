@@ -59,4 +59,4 @@ Note that the Management-PG is now active under WA1-DR datacenter instead of CA2
 
 ![Linux](../../images/SH4.0/WindowsFO/WF5.png)
 
-This concludes the failover of a Windows Protection Group. To failback a Windows Protection Group, please see [Failback a Windows Protection Group](./Failback a Windows Protection Group.md) KB Article.
+This concludes the failover of a Windows Protection Group. To failback a Windows Protection Group, please see [Failback a Windows Protection Group](Failback a Windows Protection Group.md) KB Article.

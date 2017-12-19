@@ -7,7 +7,7 @@
 }}}
 
 ### Description
-This knowledge base article documents the process required for Cloud Ecosystem Program partners to upload and publish Partner Templates to customers of the CenturyLink Cloud platform using an uploaded "virtual appliance" image.
+This Knowledge Base article documents the process required for Cloud Ecosystem Program partners to upload and publish Partner Templates to customers of the CenturyLink Cloud platform using an uploaded "virtual appliance" image.
 
 ### Audience
 - Cloud Ecosystem Program Members

@@ -11,7 +11,7 @@
 
   __Simple Backup now available anywhere!__
 
-  Simple Backup is now available anywhere! Simple Backup Anywhere extends Simple Backup outside of CenturyLink Cloud. This allows customers to backup and protect their workloads virtually anywhere outbound internet connectivity is available. You can now use Simple Backup on CenturyLink's traditional hosting platforms (DCC, Intelligent Hosting, Colo) as well as in other cloud provider environments. Please see our knowledge base article (https://www.ctl.io/knowledge-base/backup/backup-anywhere/) for more information about Simple Backup Anywhere.
+  Simple Backup is now available anywhere! Simple Backup Anywhere extends Simple Backup outside of CenturyLink Cloud. This allows customers to backup and protect their workloads virtually anywhere outbound internet connectivity is available. You can now use Simple Backup on CenturyLink's traditional hosting platforms (DCC, Intelligent Hosting, Colo) as well as in other cloud provider environments. Please see our Knowledge Base article (https://www.ctl.io/knowledge-base/backup/backup-anywhere/) for more information about Simple Backup Anywhere.
 
 * __Cloud Application Manager (CAM)__
 

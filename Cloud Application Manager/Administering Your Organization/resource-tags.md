@@ -9,7 +9,7 @@
 ### Tag Instances
 Tags give information about an instance deployed through Cloud Application Manager. They let you report on provider resources consumed by Cloud Application Manager users. They inform what box, provider, user, workspace, and such from Cloud Application Manager were involved in deploying an instance.
 
-As an Cloud Application Manager administrator, you get to apply 10 tags for your organization. From the [admin console](./admin-overview.md), once you can add preset or custom tags, they’re applied to the provider when a user launches an instance to any public or private cloud such as AWS, vSphere, Google Cloud, Azure, OpenStack, and CloudStack. They are applied on instances launched in Linux, Windows, CloudFormation, and RDS services.
+As an Cloud Application Manager administrator, you get to apply 10 tags for your organization. From the [admin console](admin-overview.md), once you can add preset or custom tags, they’re applied to the provider when a user launches an instance to any public or private cloud such as AWS, vSphere, Google Cloud, Azure, OpenStack, and CloudStack. They are applied on instances launched in Linux, Windows, CloudFormation, and RDS services.
 
 You can use tags to report on usage metrics from the provider’s interface. Tags help you understand how Cloud Application Manager resources are spread across your organization. Use them to identify usage patterns and optimize resources for your teams and users.
 
