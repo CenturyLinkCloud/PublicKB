@@ -21,11 +21,11 @@ When ready to test the configuration, click **Deploy**. Under the Deployment Box
 
 Don’t find what you need? Then click **Create a new deployment policy box**.
 
-The easiest way to understand script boxes is to build one. Follow this tutorial to build a simple box that says [Hello World](//www.ctl.io/guides/).
+The easiest way to understand script boxes is to build one. Follow this tutorial to build a simple box that says [Hello World](//www.ctl.io/knowledge-base/cloud-application-manager/getting-started/getting-started-with-hello-world/).
 
 ### Adding Child Script Boxes
 
-Let’s build on top of the [Hello World](//www.ctl.io/guides/) box as an example. To set up full-scale application deployments, you need to stitch components or micro components together. You do that by stacking child boxes within a parent. In this example, we’ll stack the Hello World box within another box.
+Let’s build on top of the [Hello World](//www.ctl.io/knowledge-base/cloud-application-manager/getting-started/getting-started-with-hello-world/) box as an example. To set up full-scale application deployments, you need to stitch components or micro components together. You do that by stacking child boxes within a parent. In this example, we’ll stack the Hello World box within another box.
 
 Create a new Script box and call it Greeting. Tag that it needs Linux. To learn more, see requirements and auto updates under [Box Basics](../Core Concepts/boxes.md).
 
