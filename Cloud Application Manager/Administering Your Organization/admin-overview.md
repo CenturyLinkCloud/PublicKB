@@ -9,7 +9,7 @@
 ### Overview
 
 As an administrator for Cloud Application Manager, you get special privileges. You can access to Cloud Application Manager like any other regular user. On top of that, you get an overview of everything users do in your organization. You get to set it up for them to use and control all assets they create in Cloud Application Manager.
-The Admin Console is the interface where you manage and control settings for your organization.
+The Settings is the interface where you manage and control Settings for your organization.
 
 **Steps**
 
@@ -20,7 +20,7 @@ The Admin Console is the interface where you manage and control settings for you
 3. Click on **Organizations** tab.
    ![admin-overview2.png](../../images/cloud-application-manager/admin-overview2.png)
 
-From here, you can get to the Admin Console in two different ways:
+From here, you can get to Settings in two different ways:
 
 * Clicking on the **edit/pencil button**, located in the top right of the organization card.
   ![admin-overview3.png](../../images/cloud-application-manager/admin-overview3.png)
@@ -29,9 +29,9 @@ From here, you can get to the Admin Console in two different ways:
   ![admin-overview4.png](../../images/cloud-application-manager/admin-overview4.png)
 
 
-The console allows you to set up organization wide configurations.
+The Settings allows you to set up organization wide configurations.
 
-The console is where you set up your organization for everyone to use. This includes things like enabling sign-in options, turning on access to cloud providers, tagging instances users launch, integrating to custom IPAM or CMDB solutions using webhooks, and configuring admin boxes.
+The Settings is where you set up your organization for everyone to use. This includes things like enabling sign-in options, turning on access to cloud providers, tagging instances users launch, integrating to custom IPAM or CMDB solutions using webhooks, and configuring admin boxes.
 
 
 ### Contacting Cloud Application Manager Support
