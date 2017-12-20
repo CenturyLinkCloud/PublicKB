@@ -87,7 +87,7 @@ Here we will create another script box that will act as a container for our appl
 
 ![msa-managed-mongodb-scriptbox.png](../images/managed-services-anywhere/msa-managed-mongodb-scriptbox.png)
 
-I have gone ahead and added the Managed Application script box (**TODO: explain how/where to find this script box**) as well as the MongoDB Server script box as variables.
+I have gone ahead and added the Managed Application script box as well as the MongoDB Server script box as variables.
 
 **Note: Select the appropriate platform (windows/linux) implementation of the Managed Application script box for your needs.**
 
