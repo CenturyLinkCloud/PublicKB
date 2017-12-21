@@ -29,7 +29,7 @@ We suggest, from experience, to develop the installation and configuration of yo
 
 So, that is what we will do for simplicity of this article; I will use an existing script box available in CAM.  I will use the MongoDB Server script box.
 
-![cam-mongodb-scriptbox.png](../images/cloud-application-manager/cam-mongodb-scriptbox.png)
+![cam-mongodb-scriptbox.png](../../images/cloud-application-manager/cam-mongodb-scriptbox.png)
 
 Now that my work here is done, let's move on to the next step.
 
@@ -41,19 +41,19 @@ Let's head over to the Monitoring page (https://monitoring.cam.ctl.io/) where we
 
 Clicking on the **Policies** link on the left which should render something like the following.
 
-![msa-managed-mongodb-watcher-policies.png](../images/managed-services-anywhere/msa-managed-mongodb-watcher-policies.png)
+![msa-managed-mongodb-watcher-policies.png](../../images/managed-services-anywhere/msa-managed-mongodb-watcher-policies.png)
 
 Go ahead and click **New**, which will show a pop-up modal. Here, enter a name and description. Take note of the name as it will be used later.
 
-![msa-managed-mongodb-watcher-policies-new.png](../images/managed-services-anywhere/msa-managed-mongodb-watcher-policies-new.png)
+![msa-managed-mongodb-watcher-policies-new.png](../../images/managed-services-anywhere/msa-managed-mongodb-watcher-policies-new.png)
 
 Here's our new policy with no checks currently. I'll just be adding a simple check. Go ahead and create all of the necessary checks for your application. Reference Watcher documentation for further information.
 
-![msa-managed-mongodb-watcher-nochecks.png](../images/managed-services-anywhere/msa-managed-mongodb-watcher-nochecks.png)
+![msa-managed-mongodb-watcher-nochecks.png](../../images/managed-services-anywhere/msa-managed-mongodb-watcher-nochecks.png)
 
 So, I added a process check. With your necessary checks in place, you can move on to the next step requesting use of the Managed Application script box.
 
-![msa-managed-mongodb-watcher-policies-onechecks.png](../images/managed-services-anywhere/msa-managed-mongodb-watcher-onechecks.png)
+![msa-managed-mongodb-watcher-policies-onechecks.png](../../images/managed-services-anywhere/msa-managed-mongodb-watcher-onechecks.png)
 
 ### Request use of Managed Application Script Box
 
@@ -85,13 +85,13 @@ Expect to receive an email from Managed Services Anywhere informing you of this 
 
 Here we will create another script box that will act as a container for our application installation/deployment as well as the efforts of make managed.  Below is our new Managed MongoDB Server script box.
 
-![msa-managed-mongodb-scriptbox.png](../images/managed-services-anywhere/msa-managed-mongodb-scriptbox.png)
+![msa-managed-mongodb-scriptbox.png](../../images/managed-services-anywhere/msa-managed-mongodb-scriptbox.png)
 
 I have gone ahead and added the Managed Application script box as well as the MongoDB Server script box as variables.
 
 **Note: Select the appropriate platform (windows/linux) implementation of the Managed Application script box for your needs.**
 
-![msa-managed-mongodb-scriptbox-vars.png](../images/managed-services-anywhere/msa-managed-mongodb-scriptbox-vars.png)
+![msa-managed-mongodb-scriptbox-vars.png](../../images/managed-services-anywhere/msa-managed-mongodb-scriptbox-vars.png)
 
 ### Pass Application Values to Managed Application Box
 
@@ -105,30 +105,53 @@ So, with all of that said, we will actually be using any lifecycle event prior t
 
 Below is an expanded view of the boxes included in this script box and their respective variables for reference.
 
-![msa-managed-mongodb-scriptbox-expanded.png](../images/managed-services-anywhere/msa-managed-mongodb-scriptbox-expanded.png)
+![msa-managed-mongodb-scriptbox-expanded.png](../../images/managed-services-anywhere/msa-managed-mongodb-scriptbox-expanded.png)
+
+Since the **APPLICATION_NAME**, **APPLICATION_DESCRIPTION**, and **APPLICATION_VERSION** are required values in the Managed Application script box, you will need to override these values in this new managed script box.  Since the underlying make managed application script box is **internal**, these values won't be visible at deploy time.  So, they will require a default value as shown in the example below.  You are then welcome to expose your own variables and custom scripts to override these values during the execution of a deployment.
+
+![msa-managed-mongodb-scriptbox-vars-defaults.png](../../images/managed-services-anywhere/msa-managed-mongodb-scriptbox-vars-defaults.png)
 
 Here is a figure of the partially expanded events section. Note that **configure** is the only populated event for the parent script box, as it is acting as a kind of mapping between the application script box and the Managed Application script box.
 
-![msa-managed-mongodb-events-expanded.png](../images/managed-services-anywhere/msa-managed-mongodb-events-expanded.png)
+![msa-managed-mongodb-events-expanded.png](../../images/managed-services-anywhere/msa-managed-mongodb-events-expanded.png)
 
 And you can see that I have populated the **configure** event with some code.  Below are the contents of that lifecycle event:
 
+> Bash Example:
+
 ```shell
+username="{{ mongo.username }}"
+password="{{ mongo.password }}"
+log_path="{{ mongo.LOG_PATH }}"
+port="{{ mongo.mongodb }}"
+db_path="{{ mongo.DB_PATH }}"
+
+config="{\"username\": \"$username\", \"password\": \"$password\", \"db_path\": \"$db_path\", \"logs\": \"$log_path\", \"db_port\": \"$port\"}"
+
+elasticbox set app.vars.APPLICATION_DESCRIPTION "My managed cross-platform document-oriented database"
+elasticbox set app.vars.APPLICATION_VERSION "{{ mongo.VERSION }}"
+elasticbox set app.vars.APPLICATION_CONFIG "$config"
+```
+
+> Powershell Example (if this were windows):
+
+```powershell
 $username = "{{ mongo.username }}"
 $password = "{{ mongo.password }}"
 $log_path = "{{ mongo.LOG_PATH }}"
-$port     = "{{ mongo.mongodb }}"
-$db_path  = "{{ mongo.DB_PATH }}"
+$port = "{{ mongo.mongodb }}"
+$db_path = "{{ mongo.DB_PATH }}"
 
 $config = "{'username': '$username', 'password': '$password', 'db_path': '$db_path', 'logs': '$log_path', 'db_port': '$port'}"
 
-elasticbox set app.vars.APPLICATION_NAME "mongodb"
 elasticbox set app.vars.APPLICATION_DESCRIPTION "My managed cross-platform document-oriented database"
 elasticbox set app.vars.APPLICATION_VERSION "{{ mongo.VERSION }}"
 elasticbox set app.vars.APPLICATION_CONFIG $config
 ```
 
-The above shell script is essentially mapping values from the MongoDB Server script box installation over to the Managed Application script box.  The **APPLICATION_CONFIG** is intended for any additional metadata you wish to provide about the application that would be valuable for its ongoing support.
+The above scripts are essentially mapping values from the MongoDB Server script box installation over to the Managed Application script box.  This is also where you might use your custom variables for overriding the default values.
+
+The **APPLICATION_CONFIG** is intended for any additional metadata you wish to provide about the application that would be valuable for its ongoing support.
 
 Also note the **APPLICATION_NAME**; this value is important as it will be used to map this application with its corresponding monitoring policy in the next step.
 
