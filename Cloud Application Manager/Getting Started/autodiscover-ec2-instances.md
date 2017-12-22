@@ -23,44 +23,56 @@ To register AWS EC2 instance, an additional step is required. Cloud Application 
 
 ### Auto-discover and register AWS EC2 instances in Cloud Application Manager
 
+
 * Choose an unregistered instance of your provider
+
 ![Unregistered Instances](../../images/cloud-application-manager/aws-registerInstance-tuto01.png)
 
 
 * Start registering
+
 ![Register Instance](../../images/cloud-application-manager/aws-registerInstance-tuto02.png)
 
 
-* Registration does not conclude successfully
+* Unsuccessful Registration
+
 ![Unsuccessful registering](../../images/cloud-application-manager/aws-registerInstance-tuto03.png)
 
 
-* Go to the detail of the instance
+* Go to the instance details
+
 ![Detail of unregistered instance](../../images/cloud-application-manager/aws-registerInstance-tuto04.png)
 
 
-* Get endpoint address for ssh connection
+* Get the endpoint address for ssh connection
+
 ![Endpoint address](../../images/cloud-application-manager/aws-registerInstance-tuto05.png)
 
 
 * Use your token key-pair and connect to the instance
+
 ![SSH connected](../../images/cloud-application-manager/aws-registerInstance-tuto06.png)
 
 
 * Copy the script for manual creation of the agent
+
 ![Copy script](../../images/cloud-application-manager/aws-registerInstance-tuto07.png)
 
 
 * Use your favorite editor to create the shell script and fix execution permission
+
 ![Create shell script](../../images/cloud-application-manager/aws-registerInstance-tuto08.png)
 
 
 * Start agent
+
 ![Start elasticbox agent](../../images/cloud-application-manager/aws-registerInstance-tuto09.png)
 
 
 * The instance is now successfully registered
+
 ![Start elasticbox agent](../../images/cloud-application-manager/aws-registerInstance-tuto10.png)
+
 
 
 
