@@ -10,7 +10,7 @@
 
 Learn how to create a Managed Application within CAM; one that would be supported and managed by CenturyLink.  At the time of writing this article, this is intended for internal users of CenturyLink and most specifically those familiar with Managed Services Anywhere.  As the process is refined, the creation of Managed Applications will be expanded to a wider audience. This includes customers wanting their custom applications managed by CenturyLink.
 
-Before you start, sign up for an Cloud Application Manager account (account currently expected to be within the CenturyLink organization).
+Before you start, sign up for a Cloud Application Manager account (account currently expected to be within the CenturyLink organization).
 
 Then, follow these simple steps.
 
@@ -79,7 +79,7 @@ App Maker Man or Woman
 The Managed Services Anywhere team will use their special powers to transform the policy into a JSON document that can be consumed and stored with a mapping to the simple application name provided.  This way, whenever the application is deployed, this monitoring policy definition will be applied.
 
 
-Expect to receive an email from Managed Services Anywhere informing you of this part of the process being complete. You should see the Managed Application script box in the workspace provided and with that you can complete the steps below. Additionally, the monitoring policy you created can then be deleted if you wish as the MSA team only used it as a reference.
+Expect to receive an email from Managed Services Anywhere informing you of this part of the process being complete. You should see the Managed Application script box in the workspace provided and with that you can complete the steps below. Additionally, the monitoring policy you created can then be deleted if you wish as the MSA team only uses it as a reference.
 
 ### Create Managed Script Box for Your Application
 
