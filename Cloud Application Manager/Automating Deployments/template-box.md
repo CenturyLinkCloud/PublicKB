@@ -150,11 +150,11 @@ To illustrate, we create a second CloudFormation box to scale the WordPress blog
 
 If some value of the binding is used in the WordPress box configuration, a text expression variable type must be created.
 
-Under Variables, click **New** and select the text expression variable type. Enter this connection string: `{{ autoscalebinding.address }}`
+Under Variables, click **New** and select the text expression variable type. Enter this connection string: `\{{ autoscalebinding.address }}`
 
 ![cloudformationboxes15.png](../../images/cloud-application-manager/cloudformationboxes15.png)
 
-The expression can contain any string value or variables from templates. It can also contain system variables like instance, username, addresses. In general, follow this syntax: `{{ binding_name.variable_name }}`
+The expression can contain any string value or variables from templates. It can also contain system variables like instance, username, addresses. In general, follow this syntax: `\{{ binding_name.variable_name }}`
 
 ### Deploy Using Azure Resource Manager Templates
 
