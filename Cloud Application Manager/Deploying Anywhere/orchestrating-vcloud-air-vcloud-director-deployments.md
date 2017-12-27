@@ -87,7 +87,7 @@ Edit the deployment policy to set the following parameters for deploying to vClo
 
 | Option | Description |
 |--------|-------------|
-| Disk | Specify the storage capacity in GB. See the [VMware docs](http://pubs.vmware.com/vca/index.jsp?topic=%2Fcom.vmware.vca.od.ug.doc%2FGUID-6180A0A5-E390-449D-8FD6-CD8601554EAE.html) for vCloud Air VM storage limit. |
+| Disk | Specify the storage capacity in GB. See the [VMware docs](http://pubs.vmware.com/vca/index.jsp?topic=%2Fcom.vmware.vca.od.ug.doc%2FGUID-6180A0A5-E390-449D-8FD6-CD8601554EAE.html) for vCloud Air VM storage limit. Adding disk storage capacity is supported. |
 
 ### Contacting Cloud Application Manager Support
 
