@@ -38,7 +38,7 @@ Each AWS Region is treated as a separate Datacenter within a SafeHaven Cluster.
 
 **Properties Panel** shows the Amazon Cloud information.
 
-###Video Tutorial
+### Video Tutorial
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3GLZj9FoFBg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
