@@ -15,7 +15,7 @@ Access to the Production SRN in CenturyLink Cloud and permissions to add raw dis
 ### Assumption
 This article assumes that:
 
-1. A SafeHaven cluster has been created successfully
+1. A SafeHaven cluster has been created successfully.
 2. Both production and recovery SRNs have been registered and peered
 
 ### Attach and Claim RAW Disks on Production SRN in CenturyLink Cloud
