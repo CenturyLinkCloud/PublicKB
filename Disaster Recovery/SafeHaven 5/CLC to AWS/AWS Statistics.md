@@ -11,7 +11,7 @@ This article focusses on how to check the AWS statistics of a Protection Group.
 
 ### Requirements
 1. Access to the SafeHaven Console (GUI).
-2. Protection Groups are created
+2. Protection Groups are created.
 
 ### Assumptions
 This article assumes that a SafeHaven cluster has already been created successfully. Periodic checkpoints for the Protection Group are enabled and a Failover with 2 instances are initiated.
