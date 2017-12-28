@@ -39,7 +39,7 @@ While the Test Failover command is in effect, instances of the Protection Group 
 
 8. To remove the Test Failover instance, right click the protection group and click **Manage Instance**. Select the Instance you want to terminate and click **Delete**. This will shutdown and terminate the EC2 Instance.
 
-###Video Tutorial
+### Video Tutorial
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rrBvCAI4HM4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 **NOTE**: **This step completes SafeHaven setup for a Protection Group. At this point the user MUST setup SafeHaven email alerts to receive regular cluster email reports as well as reports incase there is an outage in the Production datacenter. This is an absolutely critical peice for a complete DR solution.**
