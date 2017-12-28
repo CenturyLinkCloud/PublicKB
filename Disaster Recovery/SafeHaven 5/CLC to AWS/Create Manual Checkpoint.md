@@ -1,5 +1,5 @@
 {{{
-  "title": Create Manual Checkpoint",
+  "title": "Create Manual Checkpoint",
   "date": "12-27-2017",
   "author": "Anshul Arora",
   "attachments": [],
