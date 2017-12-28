@@ -58,7 +58,7 @@ Download the **GUI Package** from the **Download Links** section of [SafeHaven 5
 2. **Install** the SSL Certificate (This will require Administrator rights).
 3. The **SafeHaven Cluster** will appear and you can start configuring it.
 
-###Video Tutorial
+### Video Tutorial
 <iframe width="560" height="315" src="https://www.youtube.com/embed/f3EZhkA39ak" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 **Next Step** is to [Register Datacenters within SafeHaven Console](Register Datacenters within SafeHaven Console.md)
