@@ -91,7 +91,7 @@ In AWS Recovery site, a snapshot of the EBS Volume(s) is taken everytime a perio
 ### Production Site Outage-Declare Disaster
 The cause of a production site outage could be anything from a human error to a natural disaster. Incase there is an outage and the user declares a disaster event,  the users might not be able to access the production servers in the Production Datacenter. The users will get notified via email incase the production server replication stops, checkpoints become unclean or if the Production SRN goes down.
 
-![](../../images/SHOverview/DRinAWS/Failover.PNG)
+![](../../images/SHOverview/DRinAWS/failover.PNG)
 
 ### Failover to AWS
 Incase of a disaster event, users can login to the SafeHaven Console and with a few clicks, select the latest clean checkpoint/AMI and can Failover the entire Production Datacenter over to AWS.
