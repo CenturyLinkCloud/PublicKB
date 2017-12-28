@@ -1,5 +1,5 @@
 {{{
-  "title": "Create Linux Protection Group"
+  "title": "Create Linux Protection Group",
   "date": "12-27-2017",
   "author": "Anshul Arora",
   "attachments": [],
