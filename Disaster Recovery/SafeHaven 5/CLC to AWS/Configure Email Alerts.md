@@ -29,6 +29,6 @@ Before enabling the email alerts please make sure that the Protection Groups are
 6. Click on **Configure and Send Report**
 7. Go to recipient's mailbox and check the test email
 
-###Video Tutorial
+### Video Tutorial
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B3FA9xy5PwY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 **Next Step** is to [Add and Claim Storage on Production SRN in CenturyLink Cloud]
