@@ -100,6 +100,6 @@ Click **Connect**, then select **Next**.
 
 The initial replication of the production windows VM will start now. Close the command prompt window if required.
 
-###Video Tutorial
+### Video Tutorial
 **Manual LRA Installation**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Si5ATSx0fiI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
