@@ -26,7 +26,7 @@ It is assumed here that the user has an AWS account and a VPC created which has 
 3. Click on **Create**.
 
 ### Create CMS in AWS
-1. Go to **Services** > **EC2**
+1. Go to **Services** > **EC2**.
 2. Click on **Launch Instance**.
 3. Select **Community AMIs**, and search for **SafeHaven**. Select **SafeHaven-5 Base OS**.
 4. Select **t2.small** resource type, and click **Configure Instance Details**.
