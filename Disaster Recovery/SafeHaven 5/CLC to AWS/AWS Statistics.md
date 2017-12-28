@@ -27,5 +27,5 @@ There are 4 panels under this tab:
 4. AWS Instances: Shows the information of the AWS instances per the Protected Server inside a Protection Group
 
 
-###Video Tutorial
+### Video Tutorial
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HNQDGJS3lTo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
