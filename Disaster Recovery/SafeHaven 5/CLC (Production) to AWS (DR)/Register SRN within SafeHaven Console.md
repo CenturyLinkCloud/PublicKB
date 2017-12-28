@@ -33,7 +33,7 @@ Fill in the following fields:
 
 **NOTE**: Follow the same procedure to register the all the SRN's within the SafeHaven Console. For AWS SRN the Local iSCSI IP and Service IP  are the same.
 
-###Video tutorial
+### Video tutorial
 <iframe width="560" height="315" src="https://www.youtube.com/embed/smxX1hcuyYI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 **Next Step** is to [Add SRN Peer](Add SRN Peer.md)
