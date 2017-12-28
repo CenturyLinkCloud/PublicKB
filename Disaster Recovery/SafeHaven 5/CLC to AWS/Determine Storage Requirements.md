@@ -23,7 +23,7 @@ For Windows Production Servers, Local Cache mode is selected where storage amoun
 #### Local Replica for Linux Servers
 For Linux Production Servers, Local Replica mode is selected where storage amounting to "100% of the total used storage(full copy of data) + an additional 5% of the total used storage(for Checkpoints)" on the Production Server = 105% of the total used storage on the Production Server" is attached to the Production SRN.
 
-**NOTE**: Local Replica is not available for Windows.
+**NOTE**: Local Replica is not available for Windows
 
 #### Recovery SRN in AWS - Storage Requirements
 As the Recovery SRN retains a full copy of the production data called "Remote Replica", storage amounting to "100% of the total provisioned/used storage(full copy of data)" on the Production Server is attached to the Recovery SRN as EBS Volumes automatically.
