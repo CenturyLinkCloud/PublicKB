@@ -36,7 +36,7 @@ C:\Program Files\SafeHaven\tools>DgSyncEx.exe
 ```
 DgSyncEx>list
 ```
-###Video Tutorial
+### Video Tutorial
 <iframe width="560" height="315" src="https://www.youtube.com/embed/D6hQViavsWg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 **Next Step** is to [Configure Checkpoints](Configure Checkpoints.md)
