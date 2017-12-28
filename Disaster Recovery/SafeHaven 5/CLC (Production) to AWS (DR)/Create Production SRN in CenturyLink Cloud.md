@@ -32,5 +32,5 @@ You have now completed the deployment of SRN in CenturyLink Cloud.
 **Next Step** is to [Create CMS in AWS](Create CMS in AWS.md)
 
 
-###Video Tutorial
+### Video Tutorial
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GN8EhOBatIE" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
