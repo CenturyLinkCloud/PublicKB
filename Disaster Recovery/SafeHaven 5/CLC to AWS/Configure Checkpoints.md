@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-## Article Overview
+### Article Overview
 This article explains how to Configure Checkpoints for a Protection Group.
 
 ### Requirements
