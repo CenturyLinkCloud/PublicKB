@@ -43,4 +43,4 @@ Each AWS Region is treated as a separate Datacenter within a SafeHaven Cluster.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3GLZj9FoFBg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </p>
 
-**Next Step** is to [Register SRN within SafeHaven Console]
+**Next Step** is to [Register SRN within SafeHaven Console](Register SRN within SafeHaven Console.md)
