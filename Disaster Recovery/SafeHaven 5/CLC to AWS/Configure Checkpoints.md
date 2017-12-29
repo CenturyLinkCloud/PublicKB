@@ -28,6 +28,8 @@ Before enabling the periodic checkpoints please make sure that the replication i
 7. Wait for a few checkpoints to show up in the **Checkpoint History** tab before proceeding with any recovery operation like Test-Failover and Failover.
 
 ### Video Tutorial
+<p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B8VxbbKT094" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</p>
 
-**Next Step** is to [Test Failover to AWS]. User can also choose to [Create Manual Checkpoint]
+**Next Step** is to [Test Failover to AWS](Test Failover to AWS.md). User can also choose to [Create Manual Checkpoint](Create Manual Checkpoint.md)
