@@ -23,17 +23,16 @@ This article assumes that the user has already registered the SRN within the Saf
 
 2. In the Navigation Tree, select the **SRN** you want to add storage to, then scroll down on the main data panel and select **edit storage**.
 3. Select **add storage** and then in the drop-down menu select **raw disk**.
+   **NOTE**: **DO NOT** select a **partitoned** disk.
 
-	**NOTE**: **DO NOT** select a **partitoned** disk.
-
-3. Add required storage and **apply**. Wait for the job to complete.
+4. Add required storage and **apply**. Wait for the job to complete.
 
 **NOTE**: There is no need to allocate storage for the SRN on AWS, depending on the size of your Protection Group SafeHaven will automatically create the EBS volumes to meet the requirements.
 
 ### Claim storage pool for CenturyLink Cloud Production SRN
 1. Once the storage has been attached to the SRN, the next step is to login to the **SafeHaven Console**.
 2. Go to the Navigation Tree and select the Production SRN. In the **Properties Panel** select **Claim Storage Pool**.
-	**NOTE**: If you don't see a device listed click on **Rescan** in order to force a rescan of the SCSI bus on the SRN.
+**NOTE**: If you don't see a device listed click on **Rescan** in order to force a rescan of the SCSI bus on the SRN.
 
 3. If this is the first storage device you are claiming, then select the Storage Device you want to claim and select **Create a New Storage Pool for the Device**. Fill in the **Storage Pool Name** and click **Claim**.
 
