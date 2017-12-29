@@ -37,4 +37,5 @@ User must have an AWS account and permissions to deploy a server in the DR subne
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YH-XudTKrlQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </p>  
+
 **Next Step** is to [Create SafeHaven Cluster and Login to SafeHaven Console]
