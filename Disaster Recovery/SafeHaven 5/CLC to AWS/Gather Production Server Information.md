@@ -11,7 +11,7 @@ This article covers the information a user needs to gather before protecting a P
 This article does not cover any other aspect of the DR setup.
 
 ### Production Server Information
-Production Servers can either be Windows or Linux. Please refer to [SafeHaven 5.0 Use Case and Support Matrix] for more information.
+Production Servers can either be Windows or Linux. Please refer to [SafeHaven 5.0 Use Case and Support Matrix](../SafeHaven-5.0-Use-Case-and-Support-Matrix.md) for more information.
 
 Gather the following information for the servers you want to protect:
 
@@ -27,4 +27,4 @@ Gather the following information for the servers you want to protect:
 
 Apart from this other information regarding Domain Controllers, DNS Servers, transaction rate of SQL Servers, etc. have to be gathered as it impacts the overall disaster recovery setup. CenturyLink's onboarding resource will provide guidance on this.
 
-**Next Step** is to [Determine Storage Requirements]
+**Next Step** is to [Determine Storage Requirements](Determine Storage Requirements.md)
