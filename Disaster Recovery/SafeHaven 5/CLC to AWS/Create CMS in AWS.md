@@ -45,4 +45,4 @@ It is assumed here that the user has an AWS account and a VPC created which has 
 ### Video Tutorial
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eisNuJiHF2g" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-**Next Step** is to [Create DR SRN in AWS]
+**Next Step** is to [Create DR SRN in AWS](Create DR SRN in AWS.md)
