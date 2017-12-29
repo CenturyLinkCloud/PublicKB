@@ -27,4 +27,4 @@ Gather the following information for the servers you want to protect:
 
 Apart from this other information regarding Domain Controllers, DNS Servers, transaction rate of SQL Servers, etc. have to be gathered as it impacts the overall disaster recovery setup. CenturyLink's onboarding resource will provide guidance on this.
 
-**Next Step** is to [Determine Storage Requirements](Determine Storage Requirements.md)
+**Next Step** is to [Determine Storage Requirements](../Determine Storage Requirements.md)
