@@ -26,10 +26,10 @@ This article assumes that a Linux Protection group has been successfully created
 3. Extract the downloaded file.
    ```
    tar xvfz file_name
-   ```
-Note: the above file name can be different.
+   ```  
+   Note: the above file name can be different.
 
-4.  run the replication script : rsync2iscsi.sh
+4. Run the replication script : rsync2iscsi.sh  
    ```
    cd safehaven_linux_onboarding_scripts
    ```  
@@ -49,6 +49,8 @@ Note: the above file name can be different.
 5. Once the replication completes, the user can type **crontab -l** to see the hourly Rsync job that is running in the background. User can modify the cronjob interval as well as exclude certain files/folders from Rsync replication.
 
 ### Video Tutorial
+<p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0x9CRRQkZ0I" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</p>
 
 **Next Step** is to [Modify WAN Replication Rate]
