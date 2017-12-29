@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-## Article Overview
+### Article Overview
 This article explains how to deploy a SafeHaven Cluster. Once the cluster is deployed, a user can log in to SafeHaven Console to access their SafeHaven Environment and start the DR setup.
 
 ### Requirements
@@ -15,9 +15,9 @@ This article explains how to deploy a SafeHaven Cluster. Once the cluster is dep
 3. CMS server has internet access.
 
 ### Assumptions
-1.	CMS server has been created in AWS Recovery Datacenter.
-2.	The CMS server is reachable from the PC/machine you are running the SafeHaven Console on.
-3.	The CMS server has internet access.
+1. CMS server has been created in AWS Recovery Datacenter.
+2. The CMS server is reachable from the PC/machine you are running the SafeHaven Console on.
+3. The CMS server has internet access.
 
 ### Download the SafeHaven Console Application
 Download the **GUI Package** from the **Download Links** section of [SafeHaven 5.0 Release Notes]. Once the file is downloaded, extract it, and run **safehaven-console.exe**.
@@ -27,20 +27,20 @@ Download the **GUI Package** from the **Download Links** section of [SafeHaven 5
 1. Launch the **safehaven-console.exe**.
 2. Click on **Create new cluster**.
 3. Enter the **Organization Name** and the **License key** provided to you by your CenturyLink Onboarding Resource. Click **Next**.
-4. Fill in the following fields:
-	a. Enter **CMS Hostname**.
+4. Fill in the following fields:  
+   a. Enter **CMS Hostname**.
     
-    b. **CMS Access IP** (used to connect to the SafeHaven Console GUI) and **CMS Service IP** (used for communication between CMS 		and SRN's). Typically the CMS Private IP address is entered in these fields although they can differ in some cases. You can 	get this information from the CMS Server deployed in the recovery datacenter which is AWS in this case.
+   b. **CMS Access IP** (used to connect to the SafeHaven Console GUI) and **CMS Service IP** (used for communication between CMS 		and SRN's). Typically the CMS Private IP address is entered in these fields although they can differ in some cases. You can 	get this information from the CMS Server deployed in the recovery datacenter which is AWS in this case.
     
-	c. Set the **Administrator Password** (Password required to login to the SafeHaven Console GUI to manage the DR environment and 	initiate recovery operations).
-
-	d. Enter the **CMS root password**. You can get this information from the CMS Server deployed in the recovery datacenter which 		is AWS in this case.
+   c. Set the **Administrator Password** (Password required to login to the SafeHaven Console GUI to manage the DR environment and 	initiate recovery operations).  
+    
+   d. Enter the **CMS root password**. You can get this information from the CMS Server deployed in the recovery datacenter which 		is AWS in this case.
     
     **NOTE**: Best practice is to use different passwords for Administrator and root user.
     
-	e. Click on **Validate CMS Access** to confirm connectivity to the CMS.
+   e. Click on **Validate CMS Access** to confirm connectivity to the CMS.
 
-	f. Copy the **Debian Package for CMS/SRN** link from the **Download Links** section of the [SafeHaven 5.0 Release Notes] and enter it in the **SafeHaven distribution URL** field. Please contact your CenturyLink Cloud 		Onboarding Resource if you have any questions regarding the latest version of **Debian Package for CMS/SRN**. Do not modify the     Service Port (TCP), Heartbeat Port (UDP), Installation ID.
+   f. Copy the **Debian Package for CMS/SRN** link from the **Download Links** section of the [SafeHaven 5.0 Release Notes] and enter it in the **SafeHaven distribution URL** field. Please contact your CenturyLink Cloud 		Onboarding Resource if you have any questions regarding the latest version of **Debian Package for CMS/SRN**. Do not modify the     Service Port (TCP), Heartbeat Port (UDP), Installation ID.
 
 5. Click **Next**
 6. A warning message will appear.
@@ -59,6 +59,8 @@ Download the **GUI Package** from the **Download Links** section of [SafeHaven 5
 3. The **SafeHaven Cluster** will appear and you can start configuring it.
 
 ### Video Tutorial
+<p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/f3EZhkA39ak" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</p>
 
 **Next Step** is to [Register Datacenters within SafeHaven Console]
