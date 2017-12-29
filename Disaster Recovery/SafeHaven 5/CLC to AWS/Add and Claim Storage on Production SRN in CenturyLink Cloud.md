@@ -19,7 +19,7 @@ This article explains how to attach storage on a single SRN in CenturyLink Cloud
 This article assumes that the user has already registered the SRN within the SafeHaven Console and wants to add storage to the SRN before creating Protection Groups.
 
 ### Add storage to the Production SRN in CenturyLink Cloud
-1. Login to CLC Control portal https://control.ctl.io, select **Servers** under the **Infrastructure** tab. Confirm the Storage requirements for the Production Server (in this case Windows). Based on the Production Server O.S. Type and [Determine Storage Requirements], calculate the amount of storage that needs to be added.
+1. Login to CLC Control portal https://control.ctl.io, select **Servers** under the **Infrastructure** tab. Confirm the Storage requirements for the Production Server (in this case Windows). Based on the Production Server O.S. Type and [Determine Storage Requirements](Determine Storage Requirements.md), calculate the amount of storage that needs to be added.
 
 2. In the Navigation Tree, select the **SRN** you want to add storage to, then scroll down on the main data panel and select **edit storage**.
 3. Select **add storage** and then in the drop-down menu select **raw disk**.
@@ -41,6 +41,6 @@ This article assumes that the user has already registered the SRN within the Saf
 ### Video Tutorial
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CjH_Pts0tuk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-For **Windows** Protection Group, **Next Step** is to [Create Windows Protection Group, Install LRA and Start Replication]
+For **Windows** Protection Group, **Next Step** is to [Create Windows Protection Group, Install LRA and Start Replication](Create Windows Protection Group, Install LRA and Start Replication.md)
 
-For **Linux** Protection Group, **Next Step** is to [Create Linux Protection Group]
+For **Linux** Protection Group, **Next Step** is to [Create Linux Protection Group](Create Linux Protection Group.md)
