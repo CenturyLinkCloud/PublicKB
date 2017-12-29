@@ -16,25 +16,25 @@ SSH access to the Production Linux Server.
 This article assumes that a Linux Protection group has been successfully created.
 
 
-###Install Scripts and Start Replication for Linux Protection Group
+### Install Scripts and Start Replication for Linux Protection Group
 1. SSH into the Production Linux Server.
 
 2. Download the Linux Onboarding scripts. The Download URL can be found under the **Download Links** section in [SafeHaven 5.0.0 Release Notes]
-```
+   ```
 wget SafeHaven_Linux_Onboarding_Download_URL
-```
+   ```
 3. Extract the downloaded file.
-```
-tar xvfz file_name
-```
+   ```
+   tar xvfz file_name
+   ```
 Note: the above file name can be different.
 
 4.  run the replication script : rsync2iscsi.sh
 ```
-cd safehaven_linux_onboarding_scripts
+   cd safehaven_linux_onboarding_scripts
 ```
 ```
-./rsync2iscsi.sh -d
+   ./rsync2iscsi.sh -d
 ```
 **Note**: The above script will download some packages required for the replication.
 
