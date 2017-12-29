@@ -49,9 +49,12 @@ This article explains how setup SafeHaven at a high level and use SafeHaven for 
     
     c. [Configure Checkpoints](Configure Checkpoints.md)
 
-    d. [Create Manual Checkpoint](Create Manual Checkpoint.md)
-    
-14.  [Test Failover to AWS](Test Failover to AWS.md)
- 
-15.  [Failover to AWS](Failover to AWS.md)
+    d. [Create Manual Checkpoint](Create Manual Checkpoint.md)  
 
+14.  [Configure Email Alerts](Configure Email Alerts.md)
+    
+15.  [Test Failover to AWS](Test Failover to AWS.md)
+ 
+16.  [Failover to AWS](Failover to AWS.md)
+
+17. [AWS Statistics](AWS Statistics.md)
