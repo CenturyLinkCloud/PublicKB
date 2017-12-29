@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-## Article Overview
+### Article Overview
 Register Datacenters within the SafeHaven Console for CenturyLink Cloud and Amazon Cloud site types.
 
 ### Requirements
@@ -39,6 +39,8 @@ Each AWS Region is treated as a separate Datacenter within a SafeHaven Cluster.
 **Properties Panel** shows the Amazon Cloud information.
 
 ### Video Tutorial
+<p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3GLZj9FoFBg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</p>
 
 **Next Step** is to [Register SRN within SafeHaven Console]
