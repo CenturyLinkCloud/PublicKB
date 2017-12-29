@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-## Article Overview
+### Article Overview
 This article explains how to create a SRN (SafeHaven Replication Node) in AWS DR Datacenter.
 
 ### Requirements
@@ -34,6 +34,7 @@ User must have an AWS account and permissions to deploy a server in the DR subne
 **NOTE:** The default root password for the SRN will be provided upon SafeHaven License Request. **It is STRONGLY recommended to change the default root password for security purposes.**
 
 ### Video Tutorial
+<p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YH-XudTKrlQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
+</p>  
 **Next Step** is to [Create SafeHaven Cluster and Login to SafeHaven Console]
