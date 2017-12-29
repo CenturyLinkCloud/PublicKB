@@ -21,17 +21,17 @@ The following diagram illustrates the high-level network configuration of this s
 
 ![clc_aws_network](../../images/SH5.0/byoip/clc_aws_network.png)
 
-## Site-to-site VPN
+### Site-to-site VPN
 On CenturyLink cloud there is only one subnet that contains the multi-tier application as well as the SafeHaven SRN. There is a VPN between subnet 10.55.220.0/24 and subnet 172.30.1.0/24 on AWS.
 
 ![Upgrade](../../images/SH5.0/byoip/clc_vpn_config.png)
 
 On AWS the VPN is associated with the VPC which CIDR contains 172.30.1.0/24m and it must contain a route to the subnet on CLC.
-## VPC Peering
+### VPC Peering
 
 Given that it is required to have the bring your own IP range on CLC and AWS, a separate VPC is created on AWS to host the failover instances.  VPC peering allows us to route traffic between different CIDR blocks on AWS and isolate the traffic for failed over instances.
 
-## Routing tables
+### Routing tables
 By manipulating the routing tables of the subnets on AWS we can failover/test failover instances without impacting the production environment and keeping the multi-tier application isolated. For CLC there is no setup required other than the VPN configuration.
 
 For AWS:
@@ -48,7 +48,7 @@ igw-zzzzzz	Internet Gateway
 The route on BYOIP VPC to 172.30.1.0/24 over the VPC peering guarantees that the failed over instances can talk to the replica domain controller.
 
 
-## DHCP options
+### DHCP options
 In addition to the routing tables we need to configure the DHCP options set on the BYOIP VPC so any instances there will have the domain replica as the primary DNS server.
 
 ![Upgrade](../../images/SH5.0/byoip/dhcp_options.png)
