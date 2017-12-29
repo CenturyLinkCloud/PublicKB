@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-## Article Overview
+### Article Overview
 This article describes how to perform Test Failover to AWS from a Protection Group level. Test Failovers can be performed multiple times by the user to verify data integrity as well as for their annual DR tests.
 
 
@@ -28,7 +28,7 @@ While the Test Failover command is in effect, instances of the Protection Group 
 
 3. Under the Production Server Name, click on the **Selected Checkpoint**. This will open up a **Configuration Detail** section on the right side of the window.
 
-4. Select the **Instance type, VPC, Security group, Subnet and IP Address(or select DHCP)** for each of the AMI(s) selected on the previous step. Click **Launch**.
+4. Select the **Instance type, VPC, Security group, Subnet and IP Address(or select DHCP)** for each of the AMI(s) selected on the previous step. Click **Launch**.  
 **NOTE**: Please select a VPC with **Isolated Network.** Running a test failover instance in a non-isolated environment can adversly affect the production environment.
 
 5. The instance(s) will be created and the wizard will display the **Instance Name, state, the instance ID, and IP**. Login to the EC2 Instance using the Production Server credentials (local/cached/domain credentials) and confirm all the data is intact as well as applications are behaving as expected. After the instance is deployed you can optionally delete it from the wizard by selecting the instance row and clicking on the **Delete** button or Click on **Close** to end the Wizard.
@@ -40,7 +40,9 @@ While the Test Failover command is in effect, instances of the Protection Group 
 8. To remove the Test Failover instance, right click the protection group and click **Manage Instance**. Select the Instance you want to terminate and click **Delete**. This will shutdown and terminate the EC2 Instance.
 
 ### Video Tutorial
+<p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rrBvCAI4HM4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</p>
 
 **NOTE**: **This step completes SafeHaven setup for a Protection Group. At this point the user MUST setup SafeHaven email alerts to receive regular cluster email reports as well as reports incase there is an outage in the Production datacenter. This is an absolutely critical peice for a complete DR solution.**
 
