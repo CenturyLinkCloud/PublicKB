@@ -102,4 +102,6 @@ The initial replication of the production windows VM will start now. Close the c
 **Manual LRA Installation**
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Si5ATSx0fiI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</p>
+</p>  
+
+Once the Protection Group is created successfully, **Next** step is to [Modify WAN Replication Rate and Check Replication Status](Modify WAN Replication Rate and Check Replication Status for Windows.md)
