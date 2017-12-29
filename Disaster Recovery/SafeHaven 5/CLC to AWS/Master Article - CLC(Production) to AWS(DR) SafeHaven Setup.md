@@ -11,7 +11,7 @@ This article explains how setup SafeHaven at a high level and use SafeHaven for 
 
 ### SafeHaven Setup and Recovery Workflow
 
-1. [Gather Production Server Information]
+1. [Gather Production Server Information](../../Gather Production Server Information.md)
 
 2. [Determine Storage Requirements]
 
