@@ -19,7 +19,7 @@ This article assumes that:
 2. Both production and recovery SRNs have been registered and peered
 
 ### Attach and Claim RAW Disks on Production SRN in CenturyLink Cloud
-1. Login to CLC Control portal https://control.ctl.io, select **Servers** under the **Infrastructure** tab. Confirm the Storage requirements for the Production Server (in this case Linux). Based on the Production Server O.S. Type and [Determine Storage Requirements], calculate the amount of storage that needs to be added.
+1. Login to CLC Control portal https://control.ctl.io, select **Servers** under the **Infrastructure** tab. Confirm the Storage requirements for the Production Server (in this case Linux). Based on the Production Server O.S. Type and [Determine Storage Requirements](Determine Storage Requirements.md), calculate the amount of storage that needs to be added.
 
 2. In the Navigation Tree, select the **SRN** you want to add storage to, then scroll down on the main data panel and select **edit storage**.
 3. Select **add storage** and then in the drop-down menu select **raw disk**.  
@@ -66,4 +66,4 @@ For example, if you added a 17GB disk in step 1, then please add a second raw di
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pWIG16vY3Gs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </p>
 
-**Next Step** is to [Install Scripts and Start Replication for Linux Protection Group]
+**Next Step** is to [Install Scripts and Start Replication for Linux Protection Group](Install Scripts and Start Replication for Linux Protection Group.md)
