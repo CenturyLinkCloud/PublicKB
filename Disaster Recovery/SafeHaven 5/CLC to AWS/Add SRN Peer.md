@@ -20,7 +20,7 @@ Once all the production and recovery SRN's have been registered, then we must es
 
 1. Select an SRN in the production Data Center, navigate to the **Peers** tab and click on **Add Peer**.
 
-2. Select the **SRN 2** (sister SRN on AWS for SRN 1) and provide the **Root Password** for both the SRN's. Click **Register**.
+2. Select the **SRN 2** (peer SRN on AWS for SRN 1) and provide the **Root Password** for both the SRN's. Click **Register**.
 
 **NOTE**: A single production SRN can be paired with multiple recovery SRN's and vice-versa(Any:Any mapping is allowed and not limited to 1:1 mapping).
 
@@ -29,4 +29,4 @@ Once all the production and recovery SRN's have been registered, then we must es
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wtTgkhxLNGw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </p>
 
-**Next Step** is to [Add and Claim Storage on Production SRN in CenturyLink Cloud]
+**Next Step** is to [Add and Claim Storage on Production SRN in CenturyLink Cloud](Add and Claim Storage on Production SRN in CenturyLink Cloud.md)

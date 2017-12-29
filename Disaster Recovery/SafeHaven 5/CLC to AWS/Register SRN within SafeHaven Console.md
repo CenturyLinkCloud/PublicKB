@@ -38,4 +38,4 @@ Fill in the following fields:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/smxX1hcuyYI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </p>
 
-**Next Step** is to [Add SRN Peer]
+**Next Step** is to [Add SRN Peer](Add SRN Peer.md)

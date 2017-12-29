@@ -84,7 +84,7 @@ Intial replication is started and data is replicated over the WAN(Production Ser
 
 ![](../../images/SHOverview/DRinAWS/Replication.PNG)
 
-In AWS Recovery site, a snapshot of the EBS Volume(s) is taken everytime a periodic/scheduled checkpoint is triggered by SafeHaven. As a next step, AMI's (Amazon Machine Images) are created from these EBS snapshots. Based on the Checkpoint Retention Policy set by the user, these AMI's are retained for disaster recovery. User has the option to retain as many AMI's as they want and will get charged for incrementally stored EBS snapshots. As per Amazon's EBS snapshot billing, a user will only get charged for the blocks that have changed after the last snapshot is taken and will only be billed for the changed blocks.
+In AWS Recovery site, a snapshot of the EBS Volume(s) is taken everytime a periodic/scheduled checkpoint is triggered by SafeHaven. As a next step, AMI's (Amazon Machine Images) are created from these EBS snapshots. For Windows Protection Groups, we have to go through an AMI import procedure but for Linux Protection Groups  this step is not required. Based on the Checkpoint Retention Policy set by the user, these AMI's are retained for disaster recovery. User has the option to retain as many AMI's as they want and will get charged for incrementally stored EBS snapshots. As per Amazon's EBS snapshot billing, a user will only get charged for the blocks that have changed after the last snapshot is taken and will only be billed for the changed blocks.
 
 ![](../../images/SHOverview/DRinAWS/AMI.PNG)
 

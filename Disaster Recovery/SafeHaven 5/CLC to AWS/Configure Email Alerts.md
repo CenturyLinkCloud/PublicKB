@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-This article focusses on how to configure email alerts. **This is a critical step for DR solution, failing in configuring email alerts may result in customers not being notified of  SafeHaven environment issues even produstion site outrage**
+This article focusses on how to configure email alerts. **This is a critical step for DR solution, failing in configuring email alerts may result in customers not being notified of SafeHaven environment issues even produstion site outrage**
 
 ### Requirements
 1. Access to the SafeHaven Console (GUI).
@@ -30,5 +30,9 @@ Before enabling the email alerts please make sure that the Protection Groups are
 7. Go to recipient's mailbox and check the test email
 
 ### Video Tutorial
+<p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B3FA9xy5PwY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-**Next Step** is to [Add and Claim Storage on Production SRN in CenturyLink Cloud]
+ </p>  
+ 
+**Next Step** is to [Test Failover to AWS](Test Failover to AWS.md). User can also choose to [Create Manual Checkpoint](Create Manual Checkpoint.md)
+

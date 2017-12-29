@@ -10,7 +10,7 @@
 This article explains how to determine storage requirements for the DR setup. Storage is attached to the Production and Recovery SRN's.
 
 ### Assumptions
-User has gathered the required production server information. Refer to [Gather Production Server Information] for more information.
+User has gathered the required production server information. Refer to [Gather Production Server Information](Gather Production Server Information.md) for more information.
 
 ### SafeHaven Replication Node(SRN)
 SafeHaven Replication Node(SRN) is an Ubuntu 16 based lightweight virtual appliance(virtual machine)which transfers and retains production data.Depending on the O.S. Type of servers being protected and the mode of replication(Local Cache or Local Replica) selected, required amount of storage is attached on both the Production and Recovery SRN appliances.
@@ -23,9 +23,9 @@ For Windows Production Servers, Local Cache mode is selected where storage amoun
 #### Local Replica for Linux Servers
 For Linux Production Servers, Local Replica mode is selected where storage amounting to "100% of the total used storage(full copy of data) + an additional 5% of the total used storage(for Checkpoints)" on the Production Server = 105% of the total used storage on the Production Server" is attached to the Production SRN.
 
-**NOTE**: Local Replica is not available for Windows
+**NOTE**: Local Replica is not available for Windows.
 
 #### Recovery SRN in AWS - Storage Requirements
 As the Recovery SRN retains a full copy of the production data called "Remote Replica", storage amounting to "100% of the total provisioned/used storage(full copy of data)" on the Production Server is attached to the Recovery SRN as EBS Volumes automatically.
 
-**Next Step** is to [Setup AWS for SafeHaven-5 Using CloudFormation]
+**Next Step** is to [Setup AWS for SafeHaven-5 Using CloudFormation](Setup AWS for SafeHaven-5 using CloudFormation.md)
