@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-## Article Overview
+### Article Overview
 This article explains how to initiate Failover to AWS using SafeHaven incase of a disaster scenario where Production Datacenter is unavaiable and users lose access to the Production Server.
 
 ### Requirements
@@ -29,8 +29,8 @@ Users may not choose to perform Network Isolation incase of an actual Failover e
 
 4. Select the **Instance type, VPC, Security group, Subnet and IP Address(or select DHCP)** for each of the AMI(s) selected on the previous step. Click **Launch**.
 
-5. The instance(s) will be created and the wizard will display the **Instance Name, state, the instance ID, and IP**. Login to the EC2 Instance using the Production Server credentials (local/cached/domain credentials) and confirm all the data is intact as well as applications are behaving as expected.
-**NOTE:** **Do not click on the Delete button as it will terminate the Failed over Instance and this may impact business continuity incase of a disaster scenario.**
+5. The instance(s) will be created and the wizard will display the **Instance Name, state, the instance ID, and IP**. Login to the EC2 Instance using the Production Server credentials (local/cached/domain credentials) and confirm all the data is intact as well as applications are behaving as expected.  
+   **NOTE:** **Do not click on the Delete button as it will terminate the Failed over Instance and this may impact business continuity incase of a disaster scenario.**
 
 6. Click on **Close** to end the wizard. The Failover instance will still continue to run.
 
