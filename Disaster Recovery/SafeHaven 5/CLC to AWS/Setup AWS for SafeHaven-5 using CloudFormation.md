@@ -45,4 +45,4 @@ We should also find a `vmimport` role created with an inline policy that allows 
 By clicking on the **Trust relationships** tab of this role, we show trust to the VM Import/Export service (vmie.amazonaws.com)
 ![trust-policy](../../../images/SH5.0/AWSIAM/trust-policy.PNG)
 
-**Next Step** is to [Create Production SRN in CenturyLink Cloud]
+**Next Step** is to [Create Production SRN in CenturyLink Cloud](Create Production SRN in CenturyLink Cloud.md)
