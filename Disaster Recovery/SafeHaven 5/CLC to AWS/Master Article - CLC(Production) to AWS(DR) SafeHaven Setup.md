@@ -33,15 +33,15 @@ This article explains how setup SafeHaven at a high level and use SafeHaven for 
 
 11. [Add and Claim Storage on Production SRN in CenturyLink Cloud]
 
-12. [Create Windows Protection Group,Install LRA and Start Replication]
+12. [Create Windows Protection Group,Install LRA and Start Replication]  
 
-	a. [Modify WAN Replication Rate and Check Replication Status]
+    a. [Modify WAN Replication Rate and Check Replication Status]
 
     b. [Configure Checkpoints]
 
     c. [Create Manual Checkpoint]
 
-13. [Create Linux Protection Group]
+13. [Create Linux Protection Group]  
 	
     a. [Install Scripts and Start Replication for Linux Protection Group]
     
