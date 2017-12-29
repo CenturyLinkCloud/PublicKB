@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-## Article Overview
+### Article Overview
 This article covers all the supported use cases and support matrix for SafeHaven 5.0
 
 ## SafeHaven 5.0 Use Cases and Support Matrix
