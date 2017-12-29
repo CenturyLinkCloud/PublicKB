@@ -63,4 +63,4 @@ Download the **GUI Package** from the **Download Links** section of [SafeHaven 5
 <iframe width="560" height="315" src="https://www.youtube.com/embed/f3EZhkA39ak" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </p>
 
-**Next Step** is to [Register Datacenters within SafeHaven Console]
+**Next Step** is to [Register Datacenters within SafeHaven Console](Register Datacenters within SafeHaven Console.md)
