@@ -9,7 +9,7 @@
 ### Article Overview
 This article covers all the supported use cases and support matrix for SafeHaven 5.0
 
-## SafeHaven 5.0 Use Cases and Support Matrix
+### SafeHaven 5.0 Use Cases and Support Matrix
 Below is a list of all the supported use cases along with the support matrix.
 
 ### Disaster Recovery of a CLC Datacenter into another CLC Datacenter
