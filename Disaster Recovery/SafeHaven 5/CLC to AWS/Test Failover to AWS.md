@@ -48,4 +48,6 @@ While the Test Failover command is in effect, instances of the Protection Group 
 
 The user may go through [AWS Statistics](AWS Statistics.md) for information on EBS Volumes(s), AMIs, AWS Snapshots and running AWS Instances(test failover/failover)
 
-In case of an acutal Disaster Recovery event when there is a Production Datacenter outage and the user cannot access Production Servers, as a **Next Step** the user may [Failover to AWS](Failover to AWS.md). **NOTE: Failover can be a disruptive operation if not done properly**.
+In case of an acutal Disaster Recovery event when there is a Production Datacenter outage and the user cannot access Production Servers, as a **Next Step** the user may [Failover to AWS](Failover to AWS.md)  
+
+**NOTE: Failover can be a disruptive operation if not done properly**.
