@@ -11,7 +11,8 @@ This article explains how to deploy a SafeHaven Replication Node(SRN) in Century
 SRN resides in both production and DR datacenters and work in pairs. A single SafeHaven Cluster can have upto 64 SRN's registered. This article explains how to deploy SRN in CenturyLink Cloud Production Datacenter.
 
 ### Requirements
-Login access to the CenturyLink Cloud Portal at https://control.ctl.io.
+1. Login access to the CenturyLink Cloud Portal at https://control.ctl.io.
+2. Internet access on the Production SRN in CenturyLink Cloud once it is deployed.
 
 ### Assumptions
 This article assumes that the user has login access to the CenturyLink Cloud Portal.
