@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-## Article Overview
+### Article Overview
 This article covers the information a user needs to gather before protecting a Production Server using SafeHaven.
 This article does not cover any other aspect of the DR setup.
 
