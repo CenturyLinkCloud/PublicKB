@@ -19,8 +19,8 @@ Gather the following information for the servers you want to protect:
 2. O.S. Type
 3. Number of vCPU
 4. RAM
-5. Production Server Size (Storage) that has to be protected
-	a. Provisioned Storage for Windows
+5. Production Server Size (Storage) that has to be protected  
+    a. Provisioned Storage for Windows  
     b. Used Storage for Linux
 6. Network/VLAN Information/I.P. Address
 7. Server dependencies(grouping servers together)
