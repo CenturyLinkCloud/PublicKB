@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-## Article Overview
+### Article Overview
 This article explains how to:
 
 1. Edit WAN Replication Rate for a Protection Group
@@ -18,7 +18,7 @@ This article assumes that a SafeHaven cluster has already been created successfu
 ### Edit WAN Replication Rate for a Protection Group
 1. Log in to the SafeHaven Console
 2. Click on a protection group, and navigate to the **Properties** tab.
-**WAN  Replication Rate** is located under **Replication Monitor **. By default it is limited to 2048 KB/sec.
+**WAN  Replication Rate** is located under **Replication Monitor**. By default it is limited to 2048 KB/sec.
 
 3. To allow the Protection Group to use maximum available bandwidth, click **Edit** in front of 2048.
 Check the box in front of **Maximum Available Bandwidth**. Click **Ok**
@@ -37,6 +37,8 @@ C:\Program Files\SafeHaven\tools>DgSyncEx.exe
 DgSyncEx>list
 ```
 ### Video Tutorial
+<p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/D6hQViavsWg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</p>
 
 **Next Step** is to [Configure Checkpoints]
