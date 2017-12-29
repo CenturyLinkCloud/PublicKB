@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-## Article Overview
+### Article Overview
 This article explains how SafeHaven perfroms Disaster Recovery in AWS and how a complete image level recovery is performed incase a disaster event is declared.
 
 ### Assumptions
