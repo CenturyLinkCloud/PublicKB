@@ -10,7 +10,8 @@
 This article explains how to create a SRN (SafeHaven Replication Node) in AWS DR Datacenter.
 
 ### Requirements
-User must have an AWS account and permissions to deploy a server in the DR subnet.
+1. User must have an AWS account and permissions to deploy a server in the DR subnet.
+2. Internet access on DR-SRN in AWS.
 
 ### Assumptions
 1. It is assumed here that the user has an AWS account and a VPC created which has accessibility to CenturyLink Cloud Production Datacenter.
