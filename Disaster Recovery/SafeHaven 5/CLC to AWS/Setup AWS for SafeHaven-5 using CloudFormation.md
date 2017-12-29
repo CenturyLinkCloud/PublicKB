@@ -9,11 +9,11 @@
 ### Requirements
 Access to an AWS account.
 
-### How to Use [SetupSafeHavenIAM.json](../../../files/SetupSafeHavenIAM.json) to Setup AWS IAM
-1. Download [SetupSafeHavenIAM.json](../../../files/SetupSafeHavenIAM.json) to be used later. Feel free to open this file with a text editor to review its content.
+### How to Use [SetupSafeHavenIAM.json] to Setup AWS IAM
+1. Download [SetupSafeHavenIAM.json] to be used later. Feel free to open this file with a text editor to review its content.
 2. Login to AWS Console with a user with permission to change IAM (such as the root account user or Administrator)
 3. Go to the CloudFormation service
-4. Create a new Stack by  uploading this [SetupSafeHavenIAM.json](../../../files/SetupSafeHavenIAM.json) file
+4. Create a new Stack by  uploading this [SetupSafeHavenIAM.json] file
 ![createStack1](../../../images/SH5.0/AWSIAM/createStack1.PNG)
 * Provide a Stack name such as `SetupSafeHavenIAM`
 ![createStack2](../../../images/SH5.0/AWSIAM/createStack2.PNG)
