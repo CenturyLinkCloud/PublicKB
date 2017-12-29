@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-## Article Overview
+### Article Overview
 This article explains how to determine storage requirements for the DR setup. Storage is attached to the Production and Recovery SRN's.
 
 ### Assumptions
