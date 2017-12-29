@@ -45,7 +45,7 @@ This article explains how setup SafeHaven at a high level and use SafeHaven for 
 	
     a. [Install Scripts and Start Replication for Linux Protection Group](Install Scripts and Start Replication for Linux Protection Group.md)
     
-    b. [Modify WAN Replication Rate](Modify WAN Replication Rate and Check Replication Status for Windows)
+    b. [Modify WAN Replication Rate](Modify WAN Replication Rate and Check Replication Status for Windows.md)
     
     c. [Configure Checkpoints](Configure Checkpoints.md)
 
