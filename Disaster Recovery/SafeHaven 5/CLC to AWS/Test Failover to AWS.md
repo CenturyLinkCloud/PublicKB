@@ -44,6 +44,6 @@ While the Test Failover command is in effect, instances of the Protection Group 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rrBvCAI4HM4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </p>
 
-**NOTE**: **This step completes SafeHaven setup for a Protection Group. At this point the user MUST setup SafeHaven email alerts to receive regular cluster email reports as well as reports incase there is an outage in the Production datacenter. This is an absolutely critical peice for a complete DR solution.**
+The user may go through [AWS Statistics](AWS Statistics.md) for information on EBS Volumes(s), AMIs, AWS Snapshots and running AWS Instances(test failover/failover)
 
-In case of an acutal Disaster Recovery event when there is a Production Datacenter outage and the user cannot access Production Servers, as a **Next Step** the user may [Failover to AWS]. **NOTE: Failover can be a disruptive operation if not done properly**.
+In case of an acutal Disaster Recovery event when there is a Production Datacenter outage and the user cannot access Production Servers, as a **Next Step** the user may [Failover to AWS](Failover to AWS.md). **NOTE: Failover can be a disruptive operation if not done properly**.
