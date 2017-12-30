@@ -78,7 +78,7 @@ All policies summarized in this document are the result of intensive consultatio
 * **Policy Summary**
 > * View-only capabilities for all products and services.
 
-** CenturyLink Service Management Policy **
+**CenturyLink Service Management Policy**
 * **Targeted groups/tools/users**: Service Management Staff
 * **Intent**:This is not an immediate part of any Optimization scenario but it is enabled by the Cloud Application Manager Account Optimization. Access to a customer's account via this role is only given to a CenturyLink representative when the customer has purchased Service Management from CenturyLink.
 * **Change Requests**: You may wish to have this default role removed or altered at any time. Please submit a ticket describing the change you would like.
