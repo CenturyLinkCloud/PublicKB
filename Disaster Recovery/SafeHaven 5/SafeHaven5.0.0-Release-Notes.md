@@ -47,7 +47,7 @@ This is the first major release in the SafeHaven-5 product line and there is no 
 * Windows Downloads:
   * [Driver Installer](https://download.safehaven.ctl.io/SH-5.0.9/safehaven_windows_driver-5.0.0.exe)
   * [MakeStub.exe](https://download.safehaven.ctl.io/SH-5.0.0/MakeStub-5.0.0.exe)
-* [Linux SafeHaven Onboarding Scripts Downloads]
+* [Linux SafeHaven Onboarding Scripts Downloads](https://download.safehaven.ctl.io/SH-5.0.0/safehaven_linux_onboarding_scripts-5.0.0.tar.gz)
 
 Please note that you can check the md5 checksum against the file named [MD5SUMS](https://download.safehaven.ctl.io/SH-5.0.0/MD5SUMS).
 
