@@ -43,9 +43,9 @@ This is the first major release in the SafeHaven-5 product line and there is no 
 * [Ubuntu-16.vhdx](https://download.safehaven.ctl.io/SH-5.0.0/Ubuntu-16.vhdx): Hyper-V image for SRN/CMS appliances in a private Hyper-V envrionment.
 * [Debian Package for CMS/SRN](https://download.safehaven.ctl.io/SH-5.0.0/safehaven-5.0.0.deb): to be used in the cluster installer
 * [GUI Package](https://download.safehaven.ctl.io/SH-5.0.0/SafeHavenConsole-5.0.0.zip): zip file containing the JRE, runs on any Windows platform
-  * [SafeHavenClient.5.0.0_win32.jar](https://download.safehaven.ctl.io/SH-5.0.90/SafeHavenClient.5.0.0_win32.jar): the Java application that requires an existing 32bit JRE-8 to run on a Windows OS.
+  * [SafeHavenClient.5.0.0_win32.jar](https://download.safehaven.ctl.io/SH-5.0.0/SafeHavenClient.5.0.0_win32.jar): the Java application that requires an existing 32bit JRE-8 to run on a Windows OS.
 * Windows Downloads:
-  * [Driver Installer](https://download.safehaven.ctl.io/SH-5.0.9/safehaven_windows_driver-5.0.0.exe)
+  * [Driver Installer](https://download.safehaven.ctl.io/SH-5.0.0/safehaven_windows_driver-5.0.0.exe)
   * [MakeStub.exe](https://download.safehaven.ctl.io/SH-5.0.0/MakeStub-5.0.0.exe)
 * [Linux SafeHaven Onboarding Scripts Downloads](https://download.safehaven.ctl.io/SH-5.0.0/safehaven_linux_onboarding_scripts-5.0.0.tar.gz)
 
