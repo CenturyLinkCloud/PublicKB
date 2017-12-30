@@ -32,7 +32,7 @@ Root level access is not provided to CenturyLink users for any account. Root acc
 
 For existing accounts, the Customer administrator is asked to set up MFA access after configuration and keep their key in a secure location. Customers are also asked never to log in with root account access.
 
-For Master Payers and new accounts created through Cloud Application Manager, MFA access is set up after configuration of the account is complete. The key is kept in an encrypted vault within a domain separated from the main CenturyLink domain. 
+For Master Payers and new accounts created through Cloud Application Manager, MFA access is set up after configuration of the account is complete. The key is kept in an encrypted vault within a domain separated from the main CenturyLink domain.
 
 
 #### Federated access
@@ -83,4 +83,4 @@ All policies summarized in this document are the result of intensive consultatio
 * **Intent**:This is not an immediate part of any Optimization scenario but it is enabled by the Cloud Application Manager Account Optimization. Access to a customer's account via this role is only given to a CenturyLink representative when the customer has purchased Service Management from CenturyLink.
 * **Change Requests**: You may wish to have this default role removed or altered at any time. Please submit a ticket describing the change you would like.
 * **Policy Summary**:
-* > Add, Change, and Delete capabilities for all services. No capabilities to edit account details or budgets.*
+> * Add, Change, and Delete capabilities for all services. No capabilities to edit account details or budgets.*
