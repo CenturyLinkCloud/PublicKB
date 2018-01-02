@@ -16,6 +16,10 @@ __Invoice Detail Reporting for Optimization and Analytics__
 
 Cloud Application Manager Organization Administrators can navigate to the billing usage history to get more detail about what they were charged for optimized AWS or Azure provides. By clicking the drop-down for the Optimization SKUs, it will explain how each AWS account or Azure subscription contributed to that SKU's total. In addition, those charges can be further broken out by Service and Region. (Screenshots below)
 
+![Image1](../../images/cloud-application-manager/CAM_COA_DetailedBilling_2.png)
+
+![Image2](../../images/cloud-application-manager/CAM_COA_DetailedBilling_3.png)
+
 ###### Application Lifecycle Management
 
 __Public Boxes__
