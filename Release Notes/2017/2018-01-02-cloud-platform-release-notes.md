@@ -42,7 +42,7 @@ Going forward, customers will see two separate line items on their invoices, one
 
 - SafeHaven Version: 5.0.0
 - Release Date: December 29, 2017
-- Release Notes Link: [SafeHaven 5.0.0 Release Notes](SafeHaven5.0.0-Release-Notes.md)
+- Release Notes Link: [SafeHaven 5.0.0 Release Notes](../../Disaster%20Recovery/SafeHaven%205/SafeHaven5.0.0-Release-Notes.md)
 
 ##### New Use Case: Use of Amazon Web Services(AWS) as a Disaster Recovery Datacenter
 
@@ -54,7 +54,7 @@ One of the major feature's of this release is the capability to protect producti
 * KVM
 * Physical servers: all the available baremetal servers provided by CLC have been validated
 
-**NOTE**: Please refer to [SafeHaven-5.0-Use-Case-and-Support-Matrix](SafeHaven-5.0-Use-Case-and-Support-Matrix.md) for more information on all the use cases and support matrix.
+**NOTE**: Please refer to [SafeHaven-5.0-Use-Case-and-Support-Matrix](../../Disaster%20Recovery/SafeHaven%205/SafeHaven-5.0-Use-Case-and-Support-Matrix.md) for more information on all the use cases and support matrix.
 
 ##### Microsoft Virtual Shadow Copy (VSS) Enabled Checkpoints
 
