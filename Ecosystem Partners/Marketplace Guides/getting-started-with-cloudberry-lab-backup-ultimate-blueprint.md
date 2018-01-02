@@ -6,14 +6,13 @@
   "contentIsHTML": false
 }}}
 
-![CloudBerry Lab - #1 Cross Platform Cloud Backup](../../images/cloudberrylab/cloudberrylab-logo.png)
-
 ### Partner Profile
-CloudBerry Lab - Provides data backup solutions that allow backing up to all top cloud storage services.
+[CloudBerry Lab](http://www.cloudberrylab.com) - Provides data backup solutions that allow backing up to all top cloud storage services.
 
-[http://www.cloudberrylab.com](http://www.cloudberrylab.com)
+![CloudBerry Lab - # 1 Cross Platform Cloud Backup](../../images/cloudberrylab/cloudberrylab-logo.png)
 
-#### Contact Cloudberry lab
+
+### Contact Cloudberry lab
 ##### Customer Sales and Support:
 * Customer support
   * Email: [support@cloudberrylab.com](mailto:support@cloudberrylab.com)
