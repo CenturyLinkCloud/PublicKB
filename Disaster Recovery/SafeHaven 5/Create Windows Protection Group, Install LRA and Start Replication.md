@@ -10,7 +10,7 @@
 This article explains how to create Windows Protection Group and protect a Windows server Automatically as well as Manually.
 
 ### Requirements
-To protect a Windows server using SafeHaven, we need to install a Local Replication Agent (LRA) on the production server. In order to complete the LRA installation, a **Reboot** of the production server is required. **Please schedule a downtime windows for LRA installation.**
+To protect a Windows server using SafeHaven, we need to install a Local Replication Agent (LRA) on the production server. In order to complete the LRA installation, a **Reboot** of the production server is required. **Please schedule a downtime window for LRA installation.**
 
 ### Assumption
 This article assumes that:
@@ -39,9 +39,9 @@ This article assumes that:
 
 **NOTE**: LRA stands for Local Replication Agent which is the kernel level driver that CenturyLink provides to replicate Windows Production Servers. There are two methods by which LRA can be installed and initial replication can be started. User must select one of the two methods stated below.  
 
-1. Automatic/Ansible LRA installation and Automatically Start Initial Replication   
+Method 1. Automatic/Ansible LRA installation and Automatically Start Initial Replication   
 OR  
-2. Manual LRA Installation and Manually Start Initial Replication
+Method 2. Manual LRA Installation and Manually Start Initial Replication
 
 ### METHOD 1
 #### Automatic/Ansible LRA installation and Automatically Start Initial Replication
