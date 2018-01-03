@@ -43,6 +43,6 @@ This article assumes that the user has already registered the SRN within the Saf
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CjH_Pts0tuk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </p>
 
-For **Windows** Protection Group, **Next Step** is to [Create Windows Protection Group, Install LRA and Start Replication](Create Windows Protection Group, Install LRA and Start Replication.md)
+For **Windows** Protection Group, **Next Step** is to [Create Windows Protection Group, Install LRA and Start Replication](Create-Windows-Protection-Group-Install-LRA-and-Start-Replication.md)
 
 For **Linux** Protection Group, **Next Step** is to [Create Linux Protection Group](Create Linux Protection Group.md)
