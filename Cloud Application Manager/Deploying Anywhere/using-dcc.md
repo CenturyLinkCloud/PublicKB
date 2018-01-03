@@ -41,7 +41,7 @@ To do this, access the details by selecting "Code", then "Edit", where the follo
 | Datacenter | Clusters are grouped in [Datacenters](../../General/centurylink-cloud-data-center-locations.md). To select a Cluster, Cloud Application Manager needs to know the Datacenter the Cluster belongs to. |
 | Group |	You can choose the group in which you want the new instance to be included. |
 | Template | The list of templates that we can use to create the VM. |
-| Delegate OS Management | Select "on" if you want to [delegate OS management](../../Managed-Services/managed-operating-system-frequently-asked-questions.md). This option is off by default. |
+| Delegate OS Management | Select "on" if you want to [delegate OS management](../../Managed Services/managed-operating-system-frequently-asked-questions.md). This option is off by default. |
 | Horizontal Autoscale | This option enables the configuration of a horizontal autoscale: minimum instances, metrics,  incremental or decremental scale, threshold period, or cool down period. |
 | Instances | Cloud Application Manager can deploy several servers at once, with the restriction that all the operations run on all the instances (start, stop, delete, and script boxes installation). |
 | CPUs | The number of CPUs. |
