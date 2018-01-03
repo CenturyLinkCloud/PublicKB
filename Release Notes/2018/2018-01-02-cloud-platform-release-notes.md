@@ -32,7 +32,7 @@ Users can now send a request to publish a box version that he or she owns to mak
 
 ###### Application Lifecycle Management
 
-Going forward, customers will see two separate line items on their invoices, one for AWS EC2 on-demand instances and one for AWS EC2 usage associated with Reserved Instances. A 5% efficiency rebate will be applied to on-demand instance charges and appear as its own line item
+Instances List now also shows the instance IP adresses (either public or private) in the instances list, as well as the Support ID if present, to better find this important information of each instance at a glance in the list view, not having to get into the details view of each instance to find it, where it was already available.
 
 ### Announcements (1)
 
