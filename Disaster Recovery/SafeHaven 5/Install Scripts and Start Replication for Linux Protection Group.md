@@ -15,11 +15,10 @@ SSH access to the Production Linux Server.
 ### Assumption
 This article assumes that a Linux Protection group has been successfully created.
 
-
 ### Install Scripts and Start Replication for Linux Protection Group
 1. SSH into the Production Linux Server.
 
-2. Download the Linux Onboarding scripts. The Download URL can be found under the **Download Links** section in [SafeHaven 5.0.0 Release Notes]
+2. Download the Linux Onboarding scripts. The Download URL can be found under the **Download Links** section in [SafeHaven 5.0.0 Release Notes](SafeHaven5.0.0-Release-Notes.md.md)
    ```
    wget SafeHaven_Linux_Onboarding_Download_URL
    ```
