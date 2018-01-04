@@ -78,7 +78,7 @@ We use a sample Wordpress template to show how to create and launch a CloudForma
 
     * Variables imported from a template are always required at deploy time even if you don’t flag them as such in the box. Since they must contain values at launch time, you can set a default value when creating them or supply them at deploy time.
 
-    * At this time, [box type variables](./parameterizing-boxes-with-variables.md) are not supported.
+    * At this time, [box type variables](parameterizing-boxes-with-variables.md) are not supported.
 
     * The file variable is a useful way to include a script that you want to execute in your stack. When you add a file, Cloud Application Manager stores it on a secure server and declares the file variable as a parameter with a URL value in the parameters section of the template. To execute the file, you can add a script in the user data section of the template. Or depending on your resource type, reference it from the resource properties section. One example for using a file is to store it in the S3 bucket that you launch as part of the stack.
 
@@ -126,7 +126,7 @@ Once live, you can continue to make changes to your CloudFormation template from
 
 ### Connect to Other CloudFormation Boxes over Bindings
 
-Large CloudFormation deployments are challenging to manage in a single template. To simplify, break the template into smaller, manageable CloudFormation boxes and connect them with [bindings](./managing-multi-tier-applications.md). Then use [text expressions](./parameterizing-boxes-with-variables.md) to call the bindings. When you do, they’re added to the parameter section of the template. At deploy time, the CloudFormation service calls the binding to connect and pass values between boxes.
+Large CloudFormation deployments are challenging to manage in a single template. To simplify, break the template into smaller, manageable CloudFormation boxes and connect them with [bindings](managing-multi-tier-applications.md). Then use [text expressions](parameterizing-boxes-with-variables.md) to call the bindings. When you do, they’re added to the parameter section of the template. At deploy time, the CloudFormation service calls the binding to connect and pass values between boxes.
 
 To illustrate, we create a second CloudFormation box to scale the WordPress blog instance automatically when past its load limit. In the following steps, we add a binding and call it to connect the WordPress box to the autoscaling box.
 
@@ -215,9 +215,9 @@ We use a sample Wordpress template to show how to create and launch a Azure Reso
 
     * Variables imported from a template are always required at deploy time even if you don’t flag them as such in the box. Since they must contain values at launch time, you can set a default value when creating them or supply them at deploy time.
 
-    * The text variable can be parametrized through Jinja, for example to use binding information. See more documentation about this [here](./syntax-for-variables.md).
+    * The text variable can be parametrized through Jinja, for example to use binding information. See more documentation about this [here](syntax-for-variables.md).
 
-    * At this time, [box type variables](./parameterizing-boxes-with-variables.md) are not supported.
+    * At this time, [box type variables](parameterizing-boxes-with-variables.md) are not supported.
 
     * The file variable is a useful way to include a script that you want to execute in your stack. When you add a file, Cloud Application Manager stores it on a secure server and declares the file variable as a parameter with a URL value in the parameters section of the template. To execute the file, you can add a script in the user data section of the template. Or depending on your resource type, reference it from the resource properties section. One example for using a file is to store it in the S3 bucket that you launch as part of the stack.
 
@@ -251,7 +251,7 @@ Please, check with Azure documentation to know which live updates are allowed an
 
 ### Connect to Other Azure Resource Manager Boxes over Bindings
 
-Large Azure Resource Manager deployments are challenging to manage in a single template. To simplify, break the template into smaller, manageable ARM boxes and connect them with [bindings](./managing-multi-tier-applications.md). Then use [text expressions](./parameterizing-boxes-with-variables.md) to call the bindings. When you do, they’re added to the parameter section of the template. At deploy time, the Azure Resource Manager service calls the binding to connect and pass values between boxes.
+Large Azure Resource Manager deployments are challenging to manage in a single template. To simplify, break the template into smaller, manageable ARM boxes and connect them with [bindings](managing-multi-tier-applications.md). Then use [text expressions](parameterizing-boxes-with-variables.md) to call the bindings. When you do, they’re added to the parameter section of the template. At deploy time, the Azure Resource Manager service calls the binding to connect and pass values between boxes.
 
 To illustrate, we create a second Azure Resource Manager box to scale the WordPress blog instance automatically when past its load limit. In the following steps, we add a binding and call it to connect the WordPress box to the autoscaling box.
 

@@ -44,7 +44,7 @@ Applicants selected to move forward will have access to the Cloud Ecosystem Inte
 To ensure Candidate solutions deliver both business value and trouble-free use, CenturyLink requires each Candidate successfully pass a certification process. This includes validation that:
 
 + The solution performs as advertised and described in the application
-+ The user guides and applicable documentation are simple to follow, accurate and publishable to the CenturyLink Cloud knowledge base
++ The user guides and applicable documentation are simple to follow, accurate and publishable to the CenturyLink Cloud Knowledge Base
 + The solution integrates seamlessly with the CenturyLink Cloud automation framework in a manner that achieves low time-to-value in a self-service model
 + The solution delivers the business value outlined in the application
 

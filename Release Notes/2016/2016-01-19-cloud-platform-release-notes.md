@@ -8,7 +8,7 @@
 
 ### New Features (4)
 
-* __Object Storage now available in US-East.__ CenturyLink's [object storage service](https://www.ctl.io/object-storage/) is now available in the US East region. Like our improved Canadian offering, object storage in US East will provide high availability and redundancy over the familiar S3 interface.  More details are available on the [object storage product page (including pricing)](https://www.ctl.io/object-storage/), as well as the [knowledge base](https://www.ctl.io/knowledge-base/object-storage).
+* __Object Storage now available in US-East.__ CenturyLink's [object storage service](https://www.ctl.io/object-storage/) is now available in the US East region. Like our improved Canadian offering, object storage in US East will provide high availability and redundancy over the familiar S3 interface.  More details are available on the [object storage product page (including pricing)](https://www.ctl.io/object-storage/), as well as the [Knowledge Base](https://www.ctl.io/knowledge-base/object-storage).
 
 ![Object Storage US East](../../images/2016-01-19_objectstorageuseast.png)
 

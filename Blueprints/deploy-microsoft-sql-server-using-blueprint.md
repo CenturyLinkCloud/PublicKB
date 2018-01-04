@@ -1,13 +1,13 @@
 {{{
   "title": "Deploy Microsoft SQL Server using Blueprint",
-  "date": "8-15-2017",
+  "date": "12-8-2017",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
 ### **IMPORTANT NOTICE**
-**As of December 1, 2016, the service fees for Microsoft SQL Licensing on CenturyLink Cloud changed from 1 vCPU minimum to a 4 vCPU minimum, and moved from hourly usage based billing to fixed monthly billing. If you have questions about this change or did not receive notifications on this change please contact customer care at help@ctl.io.**
+**As of February 1, 2018 Microsoft SQL Server license fees will be increasing. If you have questions about this change or did not receive notifications on this change please contact customer care at help@ctl.io. Specifics around new costs can also be found in our [release notes.](../Release Notes/2017/2017-11-17-cloud-platform-release-notes.md)**
 
 ### Table of Contents
 * [Overview](#overview)
@@ -55,6 +55,7 @@ The following are quick tips/notes based on past experiences with customers leve
 * Customers can **add new** SQL instances by running the Blueprint multiple times on the same server.
 * Due to Microsoft's licensing constraints, changing the version/edition is not possible. Customers who want to change this must create a new server and SQL instance with the version/edition desired and migrate their data.
 * To remove the SQL license from your server, it must be deleted. Customers are responsible for migrating their data prior to deleting the server. Microsoft will not accept license termination unless the VM is fully removed.
+* Licensing fee's are billed with a minimum of 4 vCPU and in 2 vCPU increments for a full month. These fee's are also billed using a high watermark model in which the maximum vCPU assigned to a server during a given month will incurr cost.
 
 ### Installing Microsoft SQL Server using Execute Package
 1. Browse to the Group that houses the VM(s) you want to deploy SQL. Select **Execute Package**.
