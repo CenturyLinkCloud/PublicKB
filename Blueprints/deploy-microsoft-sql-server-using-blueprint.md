@@ -1,6 +1,6 @@
 {{{
   "title": "Deploy Microsoft SQL Server using Blueprint",
-  "date": "12-8-2017",
+  "date": "1-4-2018",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -17,6 +17,7 @@
 * [General Notes](#general-notes)
 * [Installing Microsoft SQL Server using Execute Package](#installing-microsoft-sql-server-using-execute-package)
 * [Installing Microsoft SQL Server using Blueprint Library](#installing-microsoft-sql-server-using-blueprint-library)
+* [Installing Microsoft SQL Server using Runner](#installing-microsoft-sql-server-using-runner)
 
 ### Overview
 CenturyLink Cloud customers can procure and deploy Microsoft SQL Server licensing within the Control Portal. Microsoft SQL Server is licensed via the Microsoft SPLA program. By using the CenturyLink Cloud public Blueprint customers have multiple ways to consume and install this business critical database software.
@@ -26,7 +27,7 @@ It is recommended customers review our delivery model for [Sockets to vCPU](../S
 
 ### Prerequisites
 * A CenturyLink Cloud Account
-* ~15 GB Free Storage on C:\
+* ~20 GB Free Storage on the selected install drive
 * Operating System and SQL Server Edition aligns in a supported fashion:
 
 SQL Server Edition|Supported Operating Systems
@@ -34,7 +35,7 @@ SQL Server Edition|Supported Operating Systems
 SQL Server 2008 R2 Web Edition 64-bit<br>SQL Server 2008 R2 Standard Edition 64-bit<br>SQL Server 2008 R2 Enterprise Edition 64-bit|Windows 2008 R2 Standard 64-bit<br>Windows 2008 R2 Enterprise 64-bit<br>Windows 2008 R2 Datacenter 64-bit<br>Windows 2012 Datacenter 64-bit<br>Windows 2012 R2 Datacenter 64-bit
 SQL Server 2012 Web Edition 64-bit<br>SQL Server 2012 Standard Edition 64-bit<br>SQL Server 2012 Enterprise Edition 64-bit|Windows 2008 R2 Standard 64-bit<br>Windows 2008 R2 Enterprise 64-bit<br>Windows 2008 R2 Datacenter 64-bit<br>Windows 2012 Datacenter 64-bit<br>Windows 2012 R2 Datacenter 64-bit
 SQL Server 2014 Web Edition 64-bit<br>SQL Server 2014 Standard Edition 64-bit<br>SQL Server 2014 Enterprise Edition 64-bit|Windows 2008 R2 Standard 64-bit<br>Windows 2008 R2 Enterprise 64-bit<br>Windows 2008 R2 Datacenter 64-bit<br>Windows 2012 Datacenter 64-bit<br>Windows 2012 R2 Datacenter 64-bit
-SQL Server 2016 Web Edition 64-bit<br>SQL Server 2016 Standard Edition 64-bit<br>SQL Server 2016 Enterprise Edition 64-bit|Windows 2012 Datacenter 64-bit<br>Windows 2012 R2 Datacenter 64-bit
+SQL Server 2016 Web Edition 64-bit<br>SQL Server 2016 Standard Edition 64-bit<br>SQL Server 2016 Enterprise Edition 64-bit|Windows 2012 Datacenter 64-bit<br>Windows 2012 R2 Datacenter 64-bit|Windows 2016 Datacenter 64-bit
 
 * Validate the Hardware and Software Requirements for Installing SQL Server are met:
     * [SQL Server 2008 R2](//msdn.microsoft.com/en-us/library/ms143506%28v=sql.105%29.aspx)
@@ -48,7 +49,7 @@ This KB does not apply to [Managed Microsoft SQL Customers](//www.ctl.io/managed
 ### General Notes
 The following are quick tips/notes based on past experiences with customers leveraging this Blueprint.
 
-* It is not possible at the current time to install SQL to a drive other than C:\ via Blueprint. Customers can modify the SQL database, tempdb, log locations post install to other volumes using SQL tools
+* Only the Microsoft SQL Server 2016 package allows a customer to select an install drive for the software. Legacy packages (MS SQL 2008, 2012 & 2014) installs to C:\. Customers can modify the SQL database, tempdb, log locations post install to other volumes using SQL tools.
 * The fee's for Microsoft SQL server will be applied automatically to the customers invoice when using the public Blueprint. These fee's are available in the [Pricing Catalog](//www.ctl.io/pricing). If you are unsure what these fee's are please contact your account manager.
 * Licensing fee's are adjusted based on number of vCPU allocated to a virtual machine with a minimum of 4 vCPU license fees incurred.  Customers billing will be modified as vCPU configurations change.
 * Customers can **add features** to an existing SQL instance by running the Blueprint multiple times on the same server and only selecting the additional features required.
@@ -92,3 +93,16 @@ The following are quick tips/notes based on past experiences with customers leve
 5. Confirm the virtual machine(s), features and select Deploy Blueprint.
 
   ![confirm inputs and deploy](../images/deploy-microsoft-sql-server-using-blueprint-09.png)
+
+### Installing Microsoft SQL Server using Runner
+1. Navigate to **Orchestration, Runner** in Control.
+
+  ![navigate to runner](../images/deploy-microsoft-sql-server-using-blueprint-10.png)
+
+2. Search for **sql**, select the **Install Microsoft SQL Server 2016 on Windows**, and choose **run**.
+
+  ![search for runner job](../images/deploy-microsoft-sql-server-using-blueprint-11.png)
+
+3. Input the appropriate parameters based on the SQL server requirements for your application and select the Virtual Machine(s) you wish to execute the install against. When ready select **run**.
+
+  ![select servers and features for runner](../images/deploy-microsoft-sql-server-using-blueprint-12.png)
