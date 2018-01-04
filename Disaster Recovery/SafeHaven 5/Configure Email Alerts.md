@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-This article focusses on how to configure email alerts. **This is a critical step for DR solution, failing in configuring email alerts may result in customers not being notified of SafeHaven environment issues even produstion site outrage**
+This article focusses on how to configure email alerts. **This is a critical step for DR solution, failing to configure email alerts may result in customers not being notified of SafeHaven environment issues in the event of production site outage**
 
 ### Requirements
 1. Access to the SafeHaven Console (GUI).

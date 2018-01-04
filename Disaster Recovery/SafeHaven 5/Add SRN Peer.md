@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-This article focusses on how to pair the SRN's together to set up Protection Groups.
+This article focusses on how to pair two SRNs together to set up Protection Groups.
 
 ### Requirements
 SRNs should already be registered within the SafeHaven Console.
@@ -16,13 +16,13 @@ SRNs should already be registered within the SafeHaven Console.
 SafeHaven Cluster already installed with proper network connectivity between CMS-SRN and SRN-SRN.
 
 ### Add SRN Peer
-Once all the production and recovery SRN's have been registered, then we must establish peering relationships between SRNs (ssh key exchange) in the production and recovery datacenters.
+Once all the production and recovery SRN(s) have been registered, then we must establish peering relationships between SRNs (ssh key exchange) in the production and recovery datacenters.
 
 1. Select an SRN in the production Data Center, navigate to the **Peers** tab and click on **Add Peer**.
 
 2. Select the **SRN 2** (peer SRN on AWS for SRN 1) and provide the **Root Password** for both the SRN's. Click **Register**.
 
-**NOTE**: A single production SRN can be paired with multiple recovery SRN's and vice-versa(Any:Any mapping is allowed and not limited to 1:1 mapping).
+**NOTE**: A single production SRN can be paired with multiple recovery SRNs and vice-versa(many-to-many mapping is allowed and not limited to one-to-one mapping).
 
 ### Video Tutorial
 <p>

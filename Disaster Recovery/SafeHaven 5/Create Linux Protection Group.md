@@ -36,9 +36,9 @@ For example, if you added a 17GB disk in step 1, then please add a second raw di
 
 7. Once the storage has been attached to the SRN, the next step is to login to the **SafeHaven Console**.
 8. Go to the Navigation Tree and select the Production SRN. In the **Properties Panel** select **Claim Storage Pool**.  
+
    **NOTE**: If you don't see a device listed click on **Rescan** in order to force a rescan of the SCSI bus on the SRN.  
-   
-   **NOTE**: Do not claim the First RAW disk added in Step 4. above. Select the Second RAW disk added for Checkpoint retention in Step 5. above., Storage Device you want to claim and select **Create a New Storage Pool for the Device**. Fill in the **Storage Pool Name** and click **Claim**.
+   **NOTE**: Do not claim the First RAW disk added in **Step 4** above. Select the Second RAW disk added for Checkpoint retention in **Step 5** above. Select the Storage Device you want to claim, and select **Create a New Storage Pool for the Device**. Fill in the **Storage Pool Name**, and click **Claim**.
 
 ### Create a Linux Protection Group
 1. Right click on the **Production SRN** and click **Create Protection Group**.
