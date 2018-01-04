@@ -35,7 +35,7 @@ SQL Server Edition|Supported Operating Systems
 SQL Server 2008 R2 Web Edition 64-bit<br>SQL Server 2008 R2 Standard Edition 64-bit<br>SQL Server 2008 R2 Enterprise Edition 64-bit|Windows 2008 R2 Standard 64-bit<br>Windows 2008 R2 Enterprise 64-bit<br>Windows 2008 R2 Datacenter 64-bit<br>Windows 2012 Datacenter 64-bit<br>Windows 2012 R2 Datacenter 64-bit
 SQL Server 2012 Web Edition 64-bit<br>SQL Server 2012 Standard Edition 64-bit<br>SQL Server 2012 Enterprise Edition 64-bit|Windows 2008 R2 Standard 64-bit<br>Windows 2008 R2 Enterprise 64-bit<br>Windows 2008 R2 Datacenter 64-bit<br>Windows 2012 Datacenter 64-bit<br>Windows 2012 R2 Datacenter 64-bit
 SQL Server 2014 Web Edition 64-bit<br>SQL Server 2014 Standard Edition 64-bit<br>SQL Server 2014 Enterprise Edition 64-bit|Windows 2008 R2 Standard 64-bit<br>Windows 2008 R2 Enterprise 64-bit<br>Windows 2008 R2 Datacenter 64-bit<br>Windows 2012 Datacenter 64-bit<br>Windows 2012 R2 Datacenter 64-bit
-SQL Server 2016 Web Edition 64-bit<br>SQL Server 2016 Standard Edition 64-bit<br>SQL Server 2016 Enterprise Edition 64-bit|Windows 2012 Datacenter 64-bit<br>Windows 2012 R2 Datacenter 64-bit|Windows 2016 Datacenter 64-bit
+SQL Server 2016 Web Edition 64-bit<br>SQL Server 2016 Standard Edition 64-bit<br>SQL Server 2016 Enterprise Edition 64-bit|Windows 2012 Datacenter 64-bit<br>Windows 2012 R2 Datacenter 64-bit<br>Windows 2016 Datacenter 64-bit
 
 * Validate the Hardware and Software Requirements for Installing SQL Server are met:
     * [SQL Server 2008 R2](//msdn.microsoft.com/en-us/library/ms143506%28v=sql.105%29.aspx)
