@@ -25,7 +25,7 @@ Before enabling the periodic checkpoints please make sure that the replication i
 4. Check the box in front of **Enable Scheduled Checkpoints**. These checkpoints will be VSS checkpoints for Windows on a best-effort basis.
 5. Put the number of scheduled checkpoints, as well as total number of checkpoints/AMI's that need to be retained per protected server.
 6. Click **Finish**
-7. Wait for a few checkpoints to show up in the **Checkpoint History** tab before proceeding with any recovery operation like Test-Failover and Failover.
+7. Wait for a few checkpoints to show up in the **Checkpoint History** tab before proceeding with any recovery operation like Test-Failover or Failover.
 
 ### Video Tutorial
 <p>

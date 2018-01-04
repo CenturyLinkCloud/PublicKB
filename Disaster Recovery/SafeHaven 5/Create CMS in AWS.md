@@ -19,11 +19,11 @@ It is assumed here that the user has an AWS account and a VPC created which has 
 
 ### Create a Security Group
 1. Click on **Security Groups** from the navigation tree, then click on **Create Security Group** button on the right.
-2. Name the security group and select the default VPN, click on ** Add Rule** button.  
-   a. Add ** Custom TCP Rule**, Port Range 20080-20084, Source Restricted  
-   b. Add ** Custom UDP Rule**, Port Range 20080-20084, Source Restricted  
+2. Name the security group and select the default VPN, click on **Add Rule** button.  
+   a. Add **Custom TCP Rule**, Port Range 20080-20084, Source Restricted  
+   b. Add **Custom UDP Rule**, Port Range 20080-20084, Source Restricted  
    c. Add **All ICMP Rule IPv4**, Source Restricted  
-   d. Add ** SSH**, Port Range 22, Source Restricted  
+   d. Add **SSH**, Port Range 22, Source Restricted  
 3. Click on **Create**.
 
 ### Create CMS in AWS
