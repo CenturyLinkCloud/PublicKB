@@ -60,6 +60,7 @@ The following are quick tips/notes based on past experiences with customers leve
 * Licensing fee's are billed with a minimum of 4 vCPU and in 2 vCPU increments for a full month. These fee's are also billed using a high watermark model in which the maximum vCPU assigned to a server during a given month will incurr cost.
 
 ### Installing Microsoft SQL Server using Execute Package
+
 1. Browse to the Group that houses the VM(s) you want to deploy SQL. Select **Execute Package**.
 
     ![select execute package](../images/deploy-microsoft-sql-server-using-blueprint-02.png)
@@ -75,6 +76,7 @@ The following are quick tips/notes based on past experiences with customers leve
     ![select installation options](../images/deploy-microsoft-sql-server-using-blueprint-04.png)
 
 ### Installing Microsoft SQL Server using Blueprint Library
+
 1. Navigate to **Orchestration, Blueprint Library** in Control.
 
     ![navigate to Blueprint library](../images/deploy-microsoft-sql-server-using-blueprint-05.png)
@@ -96,6 +98,7 @@ The following are quick tips/notes based on past experiences with customers leve
     ![confirm inputs and deploy](../images/deploy-microsoft-sql-server-using-blueprint-09.png)
 
 ### Installing Microsoft SQL Server using Runner
+
 1. Navigate to **Orchestration, Runner** in Control.
 
     ![navigate to runner](../images/deploy-microsoft-sql-server-using-blueprint-10.png)
