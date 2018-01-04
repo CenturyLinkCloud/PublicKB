@@ -9,7 +9,7 @@
 ### Article Overview
 This article explains how to boot from a Production VM using primary data storage after it has been configured to boot from iSCSI disks for failback. This is the last step for failback.
 
-**NOTE**: To follow this procedure the user MUST have already completed Failback Phase 1 and Phase 2 covered in the [Failback a Linux Protection Group](//www.ctl.io/knowledge-base/disaster-recovery/safehaven-4/failback-a-linux-protection-group/) KB Article.
+**NOTE**: To follow this procedure the user MUST have already completed Failback Phase 1 and Phase 2 covered in the [Failback a Linux Protection Group](Failback a Linux Protection Group.md) KB Article.
 
 ### Requirements
 1. The protection group has already been Failed Back from the DR site back to its production site. The Production site is now the active site.

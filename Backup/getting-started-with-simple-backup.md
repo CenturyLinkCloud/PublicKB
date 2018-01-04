@@ -13,7 +13,7 @@ Simple Backup Service – Getting Started Guide
 
 Simple Backup Service (SBS) provides file level backups. This version of the UI allows users to quickly setup backups as well as perform other backup related activities. Additionally, there is no need to stand-up any additional infrastructure (servers, network, storage) because this is all part of the service. An agent will be automatically installed on the server during provisioning. Servers must have connectivity to the internet for installation of the agent, and backup functionality. Users choose which servers and data to back up, as well as the frequency of the backups and retention periods.
 
-For additional information, please visit our [FAQ section](./simple-backup-service-faqs.md) or additional [Knowledge Base](//www.ctl.io/knowledge-base/backup/#1) articles.
+For additional information, please visit our [FAQ section](simple-backup-service-faqs.md) or additional [Knowledge Base](../Backup) articles.
 
 The following provides steps to get started:
 --------------------------------------------
@@ -50,9 +50,9 @@ The following provides steps to get started:
    ![](../images/backup/getting-started/image6.png)
 
 8. Accessing the agent on your server allows you to view details, execute a backup, or execute a restore.
-   * To access the agent directly, connect to your server, launch a browser, navigate to `http://localhost:15915`, and view the [Agent Security KB](./sbs-agent-security.md) to obtain credentials.
-   * Alternatively, you can also [configure the agent for remote access](./sbs-agent-security.md) and connect to the agent from your local computer browser if you have a VPN configured to connect into your servers; the address would be `http://<your servers IP address>:15915` (e.g., `http://10.11.12.13:15915`).
-   * [Installing RDP for Linux](./linux-rdp.md) also enables agent access.
+   * To access the agent directly, connect to your server, launch a browser, navigate to `http://localhost:15915`, and view the [Agent Security KB](sbs-agent-security.md) to obtain credentials.
+   * Alternatively, you can also [configure the agent for remote access](sbs-agent-security.md) and connect to the agent from your local computer browser if you have a VPN configured to connect into your servers; the address would be `http://<your servers IP address>:15915` (e.g., `http://10.11.12.13:15915`).
+   * [Installing RDP for Linux](linux-rdp.md) also enables agent access.
    * For Linux, a local firewall will need to be opened by executing the following commands:
 
    ```
@@ -83,7 +83,7 @@ For a Selective Restore:
 
 > curl -u **SBS_USERNAME**:**PASSWORD_HERE** -X POST -H "Content-Type: application/json" -d "{\"restorePointId\": \"**RESTORE_POINT_ID**\", \"policyId\": \"**POLICY_ID**\", \"path\": \"**RESTORE_DESTINATION**\", \"selectiveRestorePaths\": [\"**PATH_OF_FILE_TO_RESTORE**"]}" http://localhost:15915/sbs/restore
 
-Here is an example of a Full Restore using the information from step 12 above and the [default credentials](./sbs-agent-security.md).  
+Here is an example of a Full Restore using the information from step 12 above and the [default credentials](sbs-agent-security.md).  
 
 ```
 curl -u sbs:backup -X POST -H "Content-Type: application/json" -d "{\"restorePointId\": \"8719906c-5f1c-4cc3-bb21-2413285b641c20151221105404\", \"policyId\": \"8719906c-5f1c-4cc3-bb21-2413285b641c\", \"path\": \"C:\MyRestorePath\"]}" http://localhost:15915/sbs/restore

@@ -1,19 +1,18 @@
 {{{
   "title": "Getting Started with Cloudberry Lab Backup Ultimate - Blueprint",
-  "date": "11-3-2017",
+  "date": "12-29-2017",
   "author": "<a href='https://twitter.com/EvgenyRudinsky'>@EvgenyRudinsky<a/>",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-![CloudBerry Lab - #1 Cross Platform Cloud Backup](../../images/cloudberrylab/cloudberrylab-logo.png)
-
 ### Partner Profile
-CloudBerry Lab - Provides data backup solutions that allow backing up to all top cloud storage services.
+[CloudBerry Lab](http://www.cloudberrylab.com) - Provides data backup solutions that allow backing up to all top cloud storage services.
 
-[http://www.cloudberrylab.com](http://www.cloudberrylab.com)
+![CloudBerry Lab - # 1 Cross Platform Cloud Backup](../../images/cloudberrylab/cloudberrylab-logo.png)
 
-#### Contact Cloudberry lab
+
+### Contact Cloudberry lab
 ##### Customer Sales and Support:
 * Customer support
   * Email: [support@cloudberrylab.com](mailto:support@cloudberrylab.com)
@@ -59,7 +58,7 @@ After executing the steps in this Getting Started document, the users will have 
 * Existing Windows Platform server to deploy to.
 * Configure the VPN access to the virtual server.
 
-### Deploy CloudBerry Labs Blueprint
+### Deploy CloudBerry Labs Software via Blueprint
 Follow these step by step instructions to deploy Cloudberry Backup Ultimate Edition on your server and connect to you CenturyLink Object Storage account.
 
 1. Open the Blueprint Library.
@@ -77,7 +76,6 @@ Follow these step by step instructions to deploy Cloudberry Backup Ultimate Edit
 5. Configure the Blueprint.
    * On the first page, “Customize Blueprint”, ensure the following options are configured.
    * Choose the server, you would like to install Cloudberry Backup Ultimate on.
-   * Enter the e-mail, which you would like to use for trial activation.
    * Then, click `next step 2`.
 
 6. Review and Confirm the Blueprint.
@@ -89,9 +87,7 @@ Follow these step by step instructions to deploy Cloudberry Backup Ultimate Edit
    * After clicking Deploy Blueprint, the job will be submitted into a queue and you will be taken to a monitoring page where you can see the progress of each step the Blueprint goes through.
    * To monitor progress, click **Queue** from the Nav Menu on the left.
 
-8. Jump In!
-   * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete.
-   * Please do not use the application until you have received this email notification.
+8. Jump In! once the blueprint job completes.
 
 ### Access and use Cloudberry
 Follow these steps to access and use the CloudBerry software.
@@ -102,6 +98,7 @@ Follow these steps to access and use the CloudBerry software.
 2. Launch the software.
    * You will see a Cloudberry Backup Ultimate Edition Icon on the desktop.
    * Double click it to launch.
+   * If you plan to leverage the trial features select the **Start Trial** button and follow the instructions. Otherwise, input your license key.
 
     ![Cloudberry Ultimate Backup for Windows](../../images/cloudberrylab/cloudberrylab-ultimate-backup.jpg)
 

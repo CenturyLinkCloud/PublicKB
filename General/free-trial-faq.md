@@ -34,13 +34,8 @@ After you have entered the verification code, provided a valid credit card, and 
 
 ### Is there an expiration time on the free trial?
 
-No. There is not an expiration date placed on new trial accounts.
+Yes. The credits will expire after 90 days.
 
 ### Who do I contact if my account is not immediately created?
 
 Please send an email to [help@ctl.io](mailto:help@ctl.io) with relevant details.
-
-### Additional Sales Assistance
-If you'd like to talk to a sales representative about the trial program or any pre-sales activity they can be reached as follows:
-* US Sales: 1.855.388.1260
-* UK Sales: +44 (0) 118 309 4886
