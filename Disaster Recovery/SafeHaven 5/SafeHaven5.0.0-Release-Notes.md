@@ -12,7 +12,7 @@
 - Release Date: December 29, 2017
 
 ### New Features and Enhancements
-#### New Use Case: Use of Amazon Web Services(AWS) as a Disaster Recovery Datacenter
+#### New Use Case: Use of Amazon Web Services(AWS) as a Disaster Recovery Site
 
 One of the major feature's of this release is the capability to protect production servers on **multiple hypervisors** to failover to **AWS**. Examples of validated hypervisors are
 * VMware: including VMware based cloud platforms such as CLC, DCC-F, etc.
