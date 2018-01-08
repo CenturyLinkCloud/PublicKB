@@ -9,13 +9,13 @@
 ### Tag Instances
 Tags give information about an instance deployed through Cloud Application Manager. They let you report on provider resources consumed by Cloud Application Manager users. They inform what box, provider, user, workspace, and such from Cloud Application Manager were involved in deploying an instance.
 
-As an Cloud Application Manager administrator, you get to apply 10 tags for your organization. From the [admin console](./admin-overview.md), once you can add preset or custom tags, they’re applied to the provider when a user launches an instance to any public or private cloud such as AWS, vSphere, Google Cloud, Azure, OpenStack, and CloudStack. They are applied on instances launched in Linux, Windows, CloudFormation, and RDS services.
+As an Cloud Application Manager administrator, you get to apply 10 tags for your organization. From the [Settings](admin-overview.md), once you can add preset or custom tags, they’re applied to the provider when a user launches an instance to any public or private cloud such as AWS, vSphere, Google Cloud, Azure, OpenStack, and CloudStack. They are applied on instances launched in Linux, Windows, CloudFormation, and RDS services.
 
 You can use tags to report on usage metrics from the provider’s interface. Tags help you understand how Cloud Application Manager resources are spread across your organization. Use them to identify usage patterns and optimize resources for your teams and users.
 
 Cloud Application Manager supports tagging in the Enterprise Edition (SaaS & Virtual Appliance) for AWS, Google Cloud, OpenStack, CloudStack, and vSphere.
 
-In the admin console for your organization, you can add tags under Settings > Tags.
+In the Settings for your organization, you can add tags under Settings > Tags.
 
 ### In this article
 * Preset or Custom Tags
@@ -64,7 +64,7 @@ Only Cloud Application Manager users in the administrator role can apply tags. F
 
 5. When done, click **Save** to add the tag.
 
-**Note:** At this time, you can’t modify an existing tag, but you can remove and create another in its place. To remove a tag, go the admin console and under Tags, click (x) and the tick mark against it.
+**Note:** At this time, you can’t modify an existing tag, but you can remove and create another in its place. To remove a tag, go the Settings and under Tags, click (x) and the tick mark against it.
 
 ### Reporting on Cloud Application Manager Tags
 One of the chief benefits of tagging is that you can report and analyze how Cloud Application Manager resources are consumed throughout your organization. Currently, the reporting capabilities depend on what your cloud provider natively supports.

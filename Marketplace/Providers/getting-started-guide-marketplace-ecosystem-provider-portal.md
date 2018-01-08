@@ -250,5 +250,5 @@ This is what it looks like in **Preview** mode.
 * Within the Provider Portal there are Green ? bubbles next to certain fields, click the ? to learn more.
 * [GitHub Markdown Editor](https://markdown-it.github.io/)
 * The CenturyLink Cloud [Marketplace](https://www.ctl.io/marketplace/)
-* Marketplace Provider [Onboarding Resource Guide](./onboarding-resources.md).
+* Marketplace Provider [Onboarding Resource Guide](onboarding-resources.md).
 * For questions or suggestions on how to make this Guide more useful, email the [Marketplace team](mailto:Marketplace@ctl.io).

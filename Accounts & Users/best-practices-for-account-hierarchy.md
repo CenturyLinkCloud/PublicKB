@@ -53,5 +53,5 @@ Design your account hierarchy before you start adding users or provisioning reso
 
 
 ### For additional information please see the following articles:
-[Account Hierarchy User Network and Firewall Policy Primer](./account-hierarchy-user-network-and-firewall-policy-primer.md)
-[Creating a Sub Account](./creating-a-sub-account.md)
+[Account Hierarchy User Network and Firewall Policy Primer](account-hierarchy-user-network-and-firewall-policy-primer.md)
+[Creating a Sub Account](creating-a-sub-account.md)

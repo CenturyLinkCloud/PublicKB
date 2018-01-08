@@ -35,7 +35,7 @@ up-sg1.backup.ctl.io
 up-uc1.backup.ctl.io
 up-gb3.backup.ctl.io
 ```
-Additional endpoints will need to be configured based on the Storage Region selected as indicated in the [How it Works](./simple-backup-service-how-it-works.md) KB article.
+Additional endpoints will need to be configured based on the Storage Region selected as indicated in the [How it Works](simple-backup-service-how-it-works.md) KB article.
 
 **Q: What OSes are supported?**
 
@@ -55,7 +55,7 @@ A: No, SBS provides file-level backup protection. In fact, SBS does not backup c
 
 **Q: Does SBS support server cloning?**
 
-A: No, currently SBS does not support cloning. If the agent is installed on a server and the server is cloned there can be data continuity issues between the backups of the source and cloned server. If a server is going to be cloned, the SBS agent must be [uninstalled](./removing-simple-backup-service.md) first, and the agent properly installed on all servers needed after they are cloned.
+A: No, currently SBS does not support cloning. If the agent is installed on a server and the server is cloned there can be data continuity issues between the backups of the source and cloned server. If a server is going to be cloned, the SBS agent must be [uninstalled](removing-simple-backup-service.md) first, and the agent properly installed on all servers needed after they are cloned.
 
 ### Agent
 
@@ -65,7 +65,7 @@ A: Although the SBS agent will run on 1 Core, 1GB of RAM VM's, the overall speed
 
 **Q: What are the logon credentials for the backup agent?**
 
-A: Please review the [SBS Agent Security Configurations](./sbs-agent-security.md) KB article for details.
+A: Please review the [SBS Agent Security Configurations](sbs-agent-security.md) KB article for details.
 
 **Q: Can I change the backup agent credentials for all my instances in one place?**
 
@@ -73,7 +73,7 @@ A: Not at this time. Each properties file must be updated individually.
 
 **Q: How can I access my backup agent from a remote machine?**
 
-A: Please review the [SBS Agent Security Configurations](./sbs-agent-security.md) KB article for details.
+A: Please review the [SBS Agent Security Configurations](sbs-agent-security.md) KB article for details.
 
 **Q: Where can I find the backup agent's logs on my machine?**
 
@@ -97,7 +97,7 @@ A: The agent is setup to start on boot at install time.
 
 **Q: Where do I configure backups?**
 
-A: The Control Portal provides backup configuration functionality. Please refer to our [Getting Started Guide](./getting-started-with-simple-backup.md) for more details. Additionally, the [Backup API](https://www.ctl.io/api-docs/v2/#simple-backup) may be used for advanced scripting.
+A: The Control Portal provides backup configuration functionality. Please refer to our [Getting Started Guide](getting-started-with-simple-backup.md) for more details. Additionally, the [Backup API](https://www.ctl.io/api-docs/v2/#simple-backup) may be used for advanced scripting.
 
 **Q: What does an "IN_PROGRESS" status backup mean?**
 
@@ -117,7 +117,7 @@ A: Yes, see the sbs-backup-files-failed.csv file located on your system for deta
 
 **Q: Where are my backups actually stored?**
 
-A: The SBS agent on the server transfers backup data to one of six different backup storage regions, each built on top of cloud object storage. CenturyLink sources this object storage from a combination of its own cloud platform, as well as 3rd party cloud providers such as Amazon Web Services. For more information, see our [How It Works](./simple-backup-service-how-it-works.md) KB article.
+A: The SBS agent on the server transfers backup data to one of six different backup storage regions, each built on top of cloud object storage. CenturyLink sources this object storage from a combination of its own cloud platform, as well as 3rd party cloud providers such as Amazon Web Services. For more information, see our [How It Works](simple-backup-service-how-it-works.md) KB article.
 
 ### Restores
 
@@ -162,7 +162,7 @@ A: Common causes of obscured restore files:
 
 **Q: How do I stop an in-progress restore from completing?**
 
-A: Restarting the Simple Backup Service on the server will stop all running restore task(s). See [Restarting Simple Backup Service](./restarting-simple-backup-service.md) for steps to restart in Linux and Windows.
+A: Restarting the Simple Backup Service on the server will stop all running restore task(s). See [Restarting Simple Backup Service](restarting-simple-backup-service.md) for steps to restart in Linux and Windows.
 
 ### Policies
 
@@ -218,7 +218,7 @@ A: Yes. From the Backup Agent, click the **Backup** button from the Home Dashboa
 
 **Q: Can I schedule backups to execute at a specific time in the day?**
 
-A: YES! This is part of our new Scheduling feature; for more details, please see the [getting started guide](./getting-started-with-simple-backup.md)
+A: YES! This is part of our new Scheduling feature; for more details, please see the [getting started guide](getting-started-with-simple-backup.md)
 
 ### Scheduling
 
@@ -294,7 +294,7 @@ A: SBS provides a simplified billing model. The cost per GB for backups is calcu
 
 * Backup Cost Calculation Example:
 
-  10 GB of data backed up starting on the 15th of the month assuming no changes throughout the reamining duration of the month.
+  10 GB of data backed up starting on the 15th of the month assuming no changes throughout the remaining duration of the month.
 
   Hourly GB Usage = (10 GB of backup x 15 days x 24 hours) = 3,600 GB
 

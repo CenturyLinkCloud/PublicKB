@@ -1,6 +1,6 @@
 {{{
   "title": "SafeHaven 4.0.4 Release Notes",
-  "date": "10-23-2017",
+  "date": "12-18-2017",
   "author": "Shi Jin",
   "attachments": [],
   "contentIsHTML": false
@@ -55,7 +55,7 @@ Reference links to previous 4.0.x series releases:
 
 * [SHBase-4.0.1-Mar-20-2017.ova](https://download.safehaven.ctl.io/SH-4.0.1/SHBase-4.0.1-Mar-20-2017.ova): OVA to be imported to private VMware vSphere envrionment as templates for SRN/CMS appliances
 * [Script to Turn a Ubuntu-14 VM as a Recovery Proxy for Protected Windows VM](https://download.safehaven.ctl.io/SH-4.0.1/makestub_for_windows.sh)
-* [Linux Onboarding Script](./linux-onboarding-releases.md)
+* [Linux Onboarding Script](linux-onboarding-releases.md)
 
 #### New Downloads
 
@@ -68,3 +68,11 @@ Reference links to previous 4.0.x series releases:
   
 Please note that you can check the md5 checksum against the file named [MD5SUMS](https://download.safehaven.ctl.io/SH-4.0.4/MD5SUMS).
 
+#### safehaven_windows_driver-4.0.4-hotfix1.exe
+
+Please note this hotfix release is only needed if you are having problem running the Manager.exe installed from the official 4.0.4 release above. 
+
+For Windows Server 2008 R2 with the installation of an optional Microsoft hotfix  [KB2647409](https://support.microsoft.com/kb/2647409), the `Manager.exe` installed by the official 4.0.4 SafeHaven Windows driver would fail to proceed due to the failure to confirm the existence of a depedent Microsoft hotfix [KB2550978](https://support.microsoft.com/kb/2550978). This is because [KB2647409](https://support.microsoft.com/kb/2647409) already includes the fix needed for [KB2550978](https://support.microsoft.com/kb/2550978 ) so that [KB2647409](https://support.microsoft.com/kb/2647409) blocks the installation of [KB2550978](https://support.microsoft.com/kb/2550978)  (but not vice versa, ie, installing [KB2647409](https://support.microsoft.com/kb/2647409) after installing [KB2550978](https://support.microsoft.com/kb/2550978) is perfectly fine). The SafeHaven-4.0.4-hotfix1 provides a fix that would skip the check for [KB2550978](https://support.microsoft.com/kb/2550978) if [KB2647409](https://support.microsoft.com/kb/2647409) is already in place. 
+
+* New download link for [safehaven_windows_driver-4.0.4-hotfix1.exe](https://download.safehaven.ctl.io/SH-4.0.4/safehaven_windows_driver-4.0.4-hotfix1.exe)
+* If the 4.0.4 driver is already installed, in order to avoid an unecessary reboot, one can choose the "Customized Installation" instead of the default "Express Installation" and under the "Expert Installation" section, only select the "Install SafeHaven Manager" option. This way, only the `manager.exe` is replaced and no reboot is needed.

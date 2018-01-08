@@ -15,7 +15,7 @@ The MAX Backup & Recovery solution from LogicNow is an easy-to-use, highly secur
 ### Description
 
 MAX Backup & Recovery is integrated with the CenturyLink Cloud
-platform. The purpose of this knowledge base article is to help the
+platform. The purpose of this Knowledge Base article is to help the
 reader take advantage of this integration for the most comprehensive
 data protection and rapid control over servers.
 

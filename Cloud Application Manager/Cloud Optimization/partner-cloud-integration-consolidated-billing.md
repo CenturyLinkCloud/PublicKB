@@ -10,7 +10,7 @@
 
 Cloud Optimization offers consolidated billing to make payments easy. Standard Consolidated billing includes usage discounts and simplified invoices.
 
-If you require more detail into your billing, that is also offered with [Analytics](./CloudApplicationManagerAnalyticsUI.md)
+If you require more detail into your billing, that is also offered with [Analytics](../Analytics/CloudApplicationManagerAnalyticsUI.md)
 
 ### Audience
 
@@ -18,12 +18,16 @@ All of our customers are invited to use Cloud Optimization via Cloud Application
 
 ### Prerequisites
 
-* An understanding of the features and benefits of [Partner Cloud Integration](./partner-cloud-integration.md)
+* An understanding of the features and benefits of [Partner Cloud Integration](partner-cloud-integration.md)
 
 * To experience consolidated billing, the user must have enabled at least one Cloud Optimized provider.
 
 
 ### Important Information
+
+When a customer migrates an existing AWS account to CenturyLink, the customer will receive 2 bills for the first month.
+
+The customer will still receive a bill from AWS for the month that the customer was migrated. AWS will send a bill that cover the usage from the beginning of the month to the time that the account was transferred to CenturyLink. CenturyLink will send a bill from the time the account was transferred till the end of the month.
 
 For tax purposes, CenturyLink defines most services either as IaaS or SaaS.
 
