@@ -11,11 +11,11 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 ### SafeHaven Setup and Recovery Workflow
 
-1. [Gather Production Server Information](Gather Production Server Information.md)
+1. [Gather Production Server Information](../CLC to AWS/Gather Production Server Information.md)
 
-2. [Determine Storage Requirements](Determine Storage Requirements.md)
+2. [Determine Storage Requirements](../CLC to AWS/Determine Storage Requirements.md)
 
-3. [Setup AWS for SafeHaven-5 using CloudFormation](../General/Setup AWS for SafeHaven-5 using CloudFormation.md)
+3. [Setup AWS for SafeHaven-5 using CloudFormation](../../General/Setup AWS for SafeHaven-5 using CloudFormation.md)
 
 4. [Create Production SRN in VMware]
 
@@ -23,7 +23,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 6. [Create DR SRN in AWS](Create DR SRN in AWS.md)
 
-7. [Create SafeHaven Cluster and Login to SafeHaven Console](Create SafeHaven Cluster and Login to SafeHaven Console.md)
+7. [Create SafeHaven Cluster and Login to SafeHaven Console](../CLC to AWS/Create SafeHaven Cluster and Login to SafeHaven Console.md)
 
 8. [Register Datacenters within SafeHaven Console]
 
@@ -51,7 +51,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
     d. [Create Manual Checkpoint]
 
-14.  [Configure Email Alerts](Configure Email Alerts.md)
+14.  [Configure Email Alerts](../CLC to AWS/Configure Email Alerts.md)
     
 15.  [Test Failover to AWS]
  
