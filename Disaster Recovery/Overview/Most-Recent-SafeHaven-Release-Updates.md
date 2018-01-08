@@ -16,13 +16,7 @@
 
 This article provides information about the **Most Recent SafeHaven Release Updates** and provides links to the **Release Notes** for the same.
 
-### Most Recent SafeHaven version 5 Release
-
-Release Date: December 29, 2017
-
-[SafeHaven 5.0.0 version](../SafeHaven 5/General/SafeHaven5.0.0-Release-Notes.md)
-
-### Most Recent SafeHaven version 4 Release
+### Most Recent SafeHaven Release
 
 December 29, 2017: [SafeHaven 5.0.0](../SafeHaven 5/SafeHaven5.0.0-Release-Notes.md)
 
