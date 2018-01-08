@@ -20,10 +20,10 @@ This article explains how to deploy a SafeHaven Cluster. Once the cluster is dep
 3. The CMS server has internet access.
 
 ### Most Recent SafeHaven Release Updates
-Please ensure that you are using the most recent SafeHaven release update to create a new cluster. Please refer to [Most Recent SafeHaven Release Updates](../../General/Most-Recent-SafeHaven-Release-Updates.md) for information on what's most recent.
+Please ensure that you are using the most recent SafeHaven release update to create a new cluster. Please refer to [Most Recent SafeHaven Release Updates](../../../Overview/Most-Recent-SafeHaven-Release-Updates.md) for information on what's most recent.
 
 ### Download the SafeHaven Console Application
-Download the **GUI Package** from the **Download Links** section of the most recent SafeHaven release notes. In this case, it is [SafeHaven 5.0 Release Notes](SafeHaven5.0.0-Release-Notes.md). Once the file is downloaded, extract it, and run **safehaven-console.exe**.
+Download the **GUI Package** from the **Download Links** section of the most recent SafeHaven release notes. In this case, it is [SafeHaven 5.0 Release Notes](../../General/SafeHaven5.0.0-Release-Notes.md). Once the file is downloaded, extract it, and run **safehaven-console.exe**.
 
 
 ### Create a New SafeHaven Cluster
@@ -45,7 +45,7 @@ Download the **GUI Package** from the **Download Links** section of the most rec
    e. Click on **Validate CMS Access** to confirm connectivity to the CMS.
 
    f. Copy the **Debian Package for CMS/SRN** link from the **Download Links** section of the most recent SafeHaven release notes. 
-   In this case, it is  [SafeHaven 5.0 Release Notes](SafeHaven5.0.0-Release-Notes.md) and enter it in the **SafeHaven distribution URL** field. 
+   In this case, it is  [SafeHaven 5.0 Release Notes](../../General/SafeHaven5.0.0-Release-Notes.md) and enter it in the **SafeHaven distribution URL** field. 
    
    **NOTE**:Please contact your CenturyLink Cloud Onboarding Resource if you have any questions regarding the latest version of **Debian 
    Package for CMS/SRN**. Do not modify the Service Port (TCP), Heartbeat Port (UDP), Installation ID.
