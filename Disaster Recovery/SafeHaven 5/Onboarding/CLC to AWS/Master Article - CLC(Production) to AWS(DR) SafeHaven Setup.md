@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-This article explains how setup SafeHaven at a high level and use SafeHaven for recovery with all the KB article links in order for CLC(Production) to AWS(DR) use case.
+This article explains how to setup SafeHaven at a high level and use SafeHaven for recovery with all the KB article links in order for CLC(Production) to AWS(DR) use case.
 
 ### SafeHaven Setup and Recovery Workflow
 
