@@ -32,11 +32,13 @@ This tutorial helps you learn these concepts:
 
 To get started, set up the following:
 
-1. Sign up for an Cloud Application Manager account.
+1. Sign up for a Cloud Application Manager account.
 
 2. Fork a sample Rails app from this [GitHub repository](https://github.com/railstutorial/sample_app_rails_4). Clone it in your Mac laptop as shown. This creates a local copy of the sample Rails app.
 
     ![tutorial-vagrant-1.png](../../images/cloud-application-manager/tutorial-vagrant-1.png)
+
+    ![tutorial-vagrant-1-2.png](../../images/cloud-application-manager/tutorial-vagrant-1-2.png)
 
 3. Install VirtualBox, a free open source virtualizer to run your dev environment. To install, run this command in your Mac laptop terminal:
 
@@ -79,18 +81,24 @@ This installs Javascript runtime for the Rails app.
 
 2. Add an options variable called APT_GET_UPDATE with a **no** value.
 
-3. Copy/paste this script in a **post\_install** event:
+![tutorial-vagrant-1-3.png](../../images/cloud-application-manager/tutorial-vagrant-1-3.png)
+
+3. Copy/paste this script in a **install** event:
+
+![tutorial-vagrant-1-4.png](../../images/cloud-application-manager/tutorial-vagrant-1-4.png)
 
     ```
     #!/bin/bash
 
     \{{ 'apt-get update' if APT_GET_UPDATE == 'yes' }}
     apt-get -q -y install nodejs
+
     ```
 
-    ![tutorial-vagrant-2.png](../../images/cloud-application-manager/tutorial-vagrant-2.png)
+![tutorial-vagrant-2.png](../../images/cloud-application-manager/tutorial-vagrant-2.png)
 
 ___
+
 
 **Rails Dependencies Box**
 
@@ -272,7 +280,7 @@ This installs MySQL server and creates a database.
     !includedir /etc/mysql/conf.d/
     ```
 
-3. Copy/paste the following script in a **post_install** event:
+3. Copy/paste the following script in a **install** event:
 
     ```
 	  #!/bin/bash
@@ -310,7 +318,7 @@ This box installs a development environment with the sample Rails app, runtimes,
     * CLONE_DIRECTORY to **/vagrant**
     * CLONE_URL to **https://github.com/< your_fork_of_the_sample_Rails_app >**
 
-5. Copy/paste this script into a **post_configure** event:
+5. Copy/paste this script into a **configure** event:
 
     ```
     #!/bin/bash
@@ -329,7 +337,7 @@ This box installs a development environment with the sample Rails app, runtimes,
     bundle exec rake db:migrate
     ```
 
-6. Copy/paste this script into a start event:
+6. Copy/paste this script into a pre_start event:
 
     ```
     #!/bin/bash
@@ -380,7 +388,7 @@ Launch the Rails Dev Env box on your Mac laptop virtual machine running on Vagra
 3. In your Mac laptop terminal, go to the sample_app_rails_4 directory as in this example:
 
     ```
-    cd /Users/mrina/sample_app_rails_4
+    cd /Users/cristina/sample_app_rails_4
     ```
 
 4. Bring up the Vagrant Ubuntu image in VirtualBox and launch the Rails dev environment with this command:
@@ -473,4 +481,4 @@ For issues related to API calls, send the request body along with details relate
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+* Windows: RDP into the instance to locate the log at ProgramData/ElasticBox/Logs/elasticbox-agent.log
