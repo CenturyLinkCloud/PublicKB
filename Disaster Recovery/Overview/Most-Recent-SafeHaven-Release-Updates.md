@@ -2,7 +2,7 @@
 
   "title": "Most Recent SafeHaven Release Updates",
 
-  "date": "05-04-2016",
+  "date": "01-08-2018",
 
   "author": "Mahima Kumar",
 
@@ -18,31 +18,20 @@ This article provides information about the **Most Recent SafeHaven Release Upda
 
 ### Most Recent SafeHaven Release
 
-Release Date: October 23, 2017
-
-[SafeHaven 4.0.4 version](../SafeHaven 4/safehaven-4.0.4-release.md)
+December 29, 2017: [SafeHaven 5.0.0](../SafeHaven 5/SafeHaven5.0.0-Release-Notes.md)
 
 ### Previous SafeHaven Release
 
-1) Release Date: August 25, 2017
+|Release Date|Link to Release Notes|
+|---|---|
+|October 23, 2017| [SafeHaven 4.0.4](../SafeHaven 4/safehaven-4.0.4-release.md)|
+|August 25, 2017|[SafeHaven 4.0.3](../SafeHaven 4/safehaven-4.0.3-release.md)|
+|May 3, 2017 |[SafeHaven 4.0.2](../SafeHaven 4/safehaven-4.0.2-release.md)|
+|March 20, 2017 |[SafeHaven 4.0.1](../SafeHaven 4/safehaven-4.0.1-release.md)|
+|October 7, 2016|[SafeHaven 4.0.0](../SafeHaven 4/safehaven-4.0.0-release.md)|
 
-[SafeHaven 4.0.3 version](../SafeHaven 4/safehaven-4.0.3-release.md)
-
-2)Release Date: May 3, 2017
-
-[SafeHaven 4.0.2 version](../SafeHaven 4/safehaven-4.0.2-release.md)
-
-3)Release Date: March 20, 2017
-
-[SafeHaven 4.0.1 version](../SafeHaven 4/safehaven-4.0.1-release.md)
-
-4)Release Date: October 7, 2016
-
-[SafeHaven 4.0.0 version](../SafeHaven 4/safehaven-4.0.0-release.md)
-
-5)Prior to Dec. 28, 2016
+#### Prior to Dec. 28, 2016
 
 SafeHaven verson 3.1.1
 
 **NOTE**: For any queries regarding SafeHaven updates or releases, please contact the SafeHaven Support team  via ticket at **help@ctl.io**.
-
