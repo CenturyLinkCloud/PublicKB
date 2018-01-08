@@ -69,7 +69,7 @@ Method 2. Manual LRA Installation and Manually Start Initial Replication
 #### Manual LRA installation
 1. After the protection group is created, log into each of the Windows production server within the protection group.
 
-2. Download the latest compatible SafeHaven LRA software from the **Windows Downloads - Driver Installer** link which can be found under the **Download Links** of [SafeHaven 5.0.0 Release Notes].  
+2. Download the latest compatible SafeHaven LRA software from the **Windows Downloads - Driver Installer** link which can be found under the **Download Links** of [SafeHaven 5.0.0 Release Notes](../../General/SafeHaven5.0.0-Release-Notes.md).  
    **NOTE:** Please make sure the LRA agent is compatible with the SafeHaven release version you are using. For example: A SafeHaven LRA version 4.0.4 is NOT compatible with SafeHaven release version 5.  
    **NOTE**: The VM requires a reboot at the end of the LRA installlation.
 
