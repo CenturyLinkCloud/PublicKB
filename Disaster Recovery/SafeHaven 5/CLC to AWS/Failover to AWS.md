@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-This article explains how to initiate Failover to AWS using SafeHaven incase of a disaster scenario where Production Datacenter is unavaiable and users lose access to the Production Server.
+This article explains how to initiate Failover to AWS using SafeHaven incase of a disaster scenario where Production Datacenter is unavailable and users lose access to the Production Server.
 
 ### Requirements
 1. Access to the SafeHaven console (GUI).
