@@ -13,10 +13,7 @@ This article covers all the supported use cases and support matrix for SafeHaven
 Below is a list of all the supported use cases along with the support matrix.
 
 ### Disaster Recovery of a CLC Datacenter into another CLC Datacenter
-<<<<<<< 6bda4005f6d63ce82910c76537c9a5e65aaee10d
 
-=======
->>>>>>> Update SafeHaven-5.0-Use-Case-and-Support-Matrix.md
 ![Upgrade](../../images/SH5.0/SafeHaven-5.0-Use-Cases-and-Support-Matrix1/Case1.PNG)
 
 ### Disaster Recovery of an On-Prem VMware/DCC-Core site into a CLC Datacenter
@@ -36,7 +33,4 @@ Below is a list of all the supported use cases along with the support matrix.
 
 ### Disaster Recovery of a Physical Server into AWS Cloud
 ![Upgrade](../../images/SH5.0/SafeHaven-5.0-Use-Cases-and-Support-Matrix1/Case7.PNG)
-<<<<<<< 6bda4005f6d63ce82910c76537c9a5e65aaee10d
 
-=======
->>>>>>> Update SafeHaven-5.0-Use-Case-and-Support-Matrix.md
