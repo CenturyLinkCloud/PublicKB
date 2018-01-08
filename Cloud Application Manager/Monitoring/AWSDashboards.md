@@ -37,12 +37,13 @@ Our Cloud Application Manager Monitoring dashboard is specific to Amazon Web Ser
 
 #### Assumptions:
 
-•	User is setup as an admin in the workspace.
+•	User is setup as an admin in the workspace.  
 •	User has created required policies and roles within AWS and provided the required ARN information while registering AWS Provider or Update an existing AWS Provider. Separate specification will be provided to update the user experience of Provider creation to accommodate monitoring requirement.
 
 #### Required permissions in AWS:
 
-User should have the following actions in the IAM Policy for Monitoring site to display Cloud Watch metrics
+User should have the following actions in the IAM Policy for Monitoring site to display Cloud Watch metrics  
+```
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -56,14 +57,15 @@ User should have the following actions in the IAM Policy for Monitoring site to 
     }
   ]
 }
-
+```
 #### Navigation 
 
 Left Navigation:  
 When a user navigates to the Cloud Application Manager Monitoring site they will see a Dashboard tab on the left-hand side.  All configured AWS providers will be listed under the Dashboards tab.  You can only open one provider at a time.  Only the metrics related to that provider are listed (dynamically loaded).  An example would be that AWS may have 200 metrics available but the configured provider set up 22 CloudWatch metric checks.  Only the 22 will be shown and not every metric available.
 
- 
+ ![AWS Dashboard Left Nav](../../images/AWSDashboardLeftNav.PNG)
 
 Lazy Loading:  
-When a user selects a service listed under their provider, all metrics associated with that service will be loaded.  On the screen, just the graphs that are visible are loaded.  As you scroll left/right or up/down the graphs will start loading.  This is called lazy loading and improves performance by only loading the graphs that are visible.  Minimal charges may apply after AWS CloudWatch free tier limit is exceeded.  Please click here to view the AWS free tier details and pricing.
+When a user selects a service listed under their provider, all metrics associated with that service will be loaded.  On the screen, just the graphs that are visible are loaded.  As you scroll left/right or up/down the graphs will start loading.  This is called lazy loading and improves performance by only loading the graphs that are visible.  Minimal charges may apply after AWS CloudWatch free tier limit is exceeded.  Please [click here](https://aws.amazon.com/cloudwatch/pricing) to view the AWS free tier details and pricing.
  
+![AWS Dashboard](../../images/AWSDashboard.PNG)
