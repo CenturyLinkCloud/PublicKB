@@ -1,19 +1,26 @@
 {{{
 "title": "Getting Started Guide: Marketplace & Provider Portal",
-"date": "06-27-2017",
+"date": "12-07-2017",
 "author": "Brandy Smith",
 "attachments": [],
 "contentIsHTML": false,
 "sticky": true
 }}}
 
-The Provider Portal (PP) is an application that allows CenturyLink Cloud Provider Partners to manage the display of their products on the CenturyLink Marketplace. Once a Provider has certified a product, a member of the Marketplace Team provides the partner with a welcome email and credentials to log into PP. **New** You can now log in using your Google credentials.
+The Provider Portal (PP) is an application that allows CenturyLink Cloud Provider Partners to manage the display of their products on the CenturyLink Marketplace. Once a Provider has certified a product, a member of the Marketplace Team provides the partner with a welcome email and credentials to log into PP.
 
 ### Signing In
 
-Sign into the [Provider Portal](https://provider-portal.ctl.io/#/login) using your credentials. You will be redirected to the Welcome screen.
+Sign into the [Provider Portal](https://provider-portal.ctl.io/#/login) using your credentials. You will be redirected to the Welcome screen. **New** You can now log in using your Google credentials.
 
 ![EPP1](../../images/EPP1.png)
+
+### Provider Homepage
+
+Once logged in you will directed to your Provider Home page. The home page will have any message that the CenturyLink Marketplace team have sent you or have been created due to an error with a product deployment. There is also a Provider Workflow which is a dashboard that shows your company specific progress on onboarding tasks as well as product completion progress.
+You can hover over the pie charts on the dashboard for more information.
+
+![EPP](../../images/EPPnew7.png)
 
 ### Company Information
 
@@ -25,11 +32,21 @@ Click the **Company Information** tab. This takes you to your **Provider Details
 - Click the **Preview** tab to see how your Markdown renders.
 - Click **Save** once you are satisfied.
 
+You can sign up to be notified upon the creation of a subscription for your software on the Company Information page by adding the appropriate email addresses to be notified in the Notification Emails field and clicking **Save**.
+
+![EPP](../../images/EPPnew3.png)
+
+The company logo, content that is provided in the **Description** field and products that are available in the CenturyLink Marketplace are what the customer will see when clicking the company name in the Marketplace.
+
+This is a sample of the customer view of your Company Information on the Marketplace:
+
+![EPP](../../images/EPPnew.png)
+
 ### Marketplace Provider Agreement (MPA)
 
 On the **Provider Details** page is also where you must agree to the Marketplace Provider Agreement(MPA), which governs the Terms & Conditions of your products entry into the Marketplace.
-It can be found [here](https://www.ctl.io/legal/marketplace/). Once you have read and agree to the terms, click the check box and click **Save**. 
-**Note** While it is not necessary to accept the MPA to add products and content, it is a required step for any products to be published to the Marketplace. 
+It can be found [here](https://www.ctl.io/legal/marketplace/). Once you have read and agree to the terms, click the check box and click **Save**.
+**Note** While it is not necessary to accept the MPA to add products and content, it is a required step for any products to be published to the Marketplace.
 
 ![EPPMPA](../../images/MPA.png)
 
@@ -90,15 +107,17 @@ From the **Provider Details** page, you can find a list of your products that ha
 10. Click **Create**.
 
 11. Click **Request Publication**. This forwards a request to the CenturyLink Marketplace team notifying them to review and publish your product. If there are questions/issues related to the submission, a Marketplace team member will contact you. Otherwise, your product is published within two business days.
-**Note: 
+
+**Note**:
+
 Required steps for publication of products are as follows:
 
 1) MPA has been reviewed and accepted.
-2) W-9 has been submitted to the Marketplace team, reviewed, and approved. 
-3) Product EULA URL is listed under the product EULA field. 
-4) Support information is listed under the product support field. 
+2) W-9 has been submitted to the Marketplace team, reviewed, and approved.
+3) Product EULA URL is listed under the product EULA field.
+4) Support information is listed under the product support field.
 5) Technical integration has been completed and tested.
-6) Billing integration has been completed and tested. 
+6) Billing integration has been completed and tested.
 
 
    ![EPP6](../../images/EPP6.png)
@@ -114,7 +133,7 @@ Required steps for publication of products are as follows:
 
 4. Click **Request Publication**. Note: You have to click this button or your changes won't be visible on the Marketplace.
 
-5. A CenturyLink Marketplace team member will review and approve the changes and publish. 
+5. A CenturyLink Marketplace team member will review and approve the changes and publish.
 
 ### Cloning a Product
 
@@ -148,7 +167,7 @@ It is a requirement that partners enter an End User License Agreement (EULA) for
 
 	 ![EPP8](../../images/EPP8.png)
 
-4. On the **Legal** tab you can add a link to the (EULA) for each product. While this field accepts markdown text, we highly recommend that providers put links to an actual URL that hosts the (EULA), to ensure that the customer is always viewing the most recent version. It is the responsibility of the provider to ensure that the (EULA) is current.
+4. On the **Legal** tab you can add a link to the (EULA) for each product. It is the responsibility of the provider to ensure that the (EULA) is current.
 
    * This field accepts markdown.
    * Click the **Preview** tab to see how the Markdown renders.
@@ -227,7 +246,9 @@ This is what it looks like in **Preview** mode.
 
 ### Other Resources
 
+* Within the Provider Portal there is a [Help](https://provider-portal.ctl.io/#/help) tab that has links and videos on how to use the provider portal.
+* Within the Provider Portal there are Green ? bubbles next to certain fields, click the ? to learn more.
 * [GitHub Markdown Editor](https://markdown-it.github.io/)
 * The CenturyLink Cloud [Marketplace](https://www.ctl.io/marketplace/)
-* Marketplace Provider [Onboarding Resource Guide](./onboarding-resources.md).
+* Marketplace Provider [Onboarding Resource Guide](onboarding-resources.md).
 * For questions or suggestions on how to make this Guide more useful, email the [Marketplace team](mailto:Marketplace@ctl.io).

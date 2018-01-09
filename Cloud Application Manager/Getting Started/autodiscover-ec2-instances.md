@@ -23,15 +23,58 @@ To register AWS EC2 instance, an additional step is required. Cloud Application 
 
 ### Auto-discover and register AWS EC2 instances in Cloud Application Manager
 
-![Unregistered Instances](../../images/cloud-application-manager/aws-provider-unregisteredInstances.png)
 
-![Register Instance](../../images/cloud-application-manager/aws-provider-registerInstance.png)
+* Choose an unregistered instance of your provider
 
-![Register Instance Manual Intervention](../../images/cloud-application-manager/aws-registerinstance-manualintervention.png)
+![Unregistered Instances](../../images/cloud-application-manager/aws-registerInstance-tuto01.png)
 
-![Agent Install](../../images/cloud-application-manager/aws-provider-agentInstallscript.png)
 
-![Register Instance Successful](../../images/cloud-application-manager/aws-provider-registerinstancesuccessful.png)
+* Start registering
+
+![Register Instance](../../images/cloud-application-manager/aws-registerInstance-tuto02.png)
+
+
+* Unsuccessful Registration
+
+![Unsuccessful registering](../../images/cloud-application-manager/aws-registerInstance-tuto03.png)
+
+
+* Go to the instance details
+
+![Detail of unregistered instance](../../images/cloud-application-manager/aws-registerInstance-tuto04.png)
+
+
+* Get the endpoint address for ssh connection
+
+![Endpoint address](../../images/cloud-application-manager/aws-registerInstance-tuto05.png)
+
+
+* Use your token key-pair and connect to the instance
+
+![SSH connected](../../images/cloud-application-manager/aws-registerInstance-tuto06.png)
+
+
+* Copy the script for manual creation of the agent
+
+![Copy script](../../images/cloud-application-manager/aws-registerInstance-tuto07.png)
+
+
+* Use your favorite editor to create the shell script and fix execution permission
+
+![Create shell script](../../images/cloud-application-manager/aws-registerInstance-tuto08.png)
+
+
+* Start agent
+
+![Start elasticbox agent](../../images/cloud-application-manager/aws-registerInstance-tuto09.png)
+
+
+* The instance is now successfully registered
+
+![Start elasticbox agent](../../images/cloud-application-manager/aws-registerInstance-tuto10.png)
+
+
+
 
 ### Contacting Cloud Application Manager Support
 

@@ -21,7 +21,7 @@ CenturyLink has created multiple opportunities for software vendors to integrate
 
 The CenturyLink Cloud Marketplace will provide the user interface & collect the information that is required to provision an account on your platform. However, we do not collect Private Card Information (PCI) on your behalf.
 
-You will be able to specify which data points are displayed to your perspective buyer, as well as which are required for them to complete.  This is done through the [Product Provisioning Configuration](./software-as-a-service-product-provisioning.md). In addition to the user input, as configured, CenturyLink will provide the following fields which your API client must tie to the customer for recording usage-based product SKUs (see below) in the future:
+You will be able to specify which data points are displayed to your perspective buyer, as well as which are required for them to complete.  This is done through the [Product Provisioning Configuration](software-as-a-service-product-provisioning.md). In addition to the user input, as configured, CenturyLink will provide the following fields which your API client must tie to the customer for recording usage-based product SKUs (see below) in the future:
 
 * **provisioningId** - String - Unique identifier (GUID) of the provisioning event
 * **productSkus** - Array of strings - provisioned product SKU ids
@@ -51,7 +51,7 @@ The status codes your API will need to return are:
 
 *The full endpoint for the* ```/saas-usage/``` *is not published in this article for security reasons. Your organization will be provided documentation for the endpoint during onboarding*
 
-Some of your products may include [Usage-based billing](./usage-based-billing.md).  Upon provisioning, you are required to track each customer's usage and report it to CenturyLink by the end of each month.  You may report usage for a customer at any time during the month, but keep in mind that every usage report sent is added to the customer's billing.  As such, it is **highly recommended** that you send a single month's usage at the end of each month for each customer.
+Some of your products may include [Usage-based billing](usage-based-billing.md).  Upon provisioning, you are required to track each customer's usage and report it to CenturyLink by the end of each month.  You may report usage for a customer at any time during the month, but keep in mind that every usage report sent is added to the customer's billing.  As such, it is **highly recommended** that you send a single month's usage at the end of each month for each customer.
 
 The cutoff time to bill the customer for the current month is 3:45pm (CST) on the last day of each month.  Any usages reported after 6:00pm (CST) on the last day of the month will be applied to the next month's bill for the customer.  To allow time for processing, Please do not send usage reporting between 3:45pm (CST) and 6:00pm (CST) on the last day of the month.  
 

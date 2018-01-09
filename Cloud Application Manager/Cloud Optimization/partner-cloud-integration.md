@@ -50,7 +50,7 @@ Current features of Partner Cloud Integration include:
 
 **Standard Support Details:**
 
-Please see our Knowledge-base article detailing [Azure platform-level support](./partner-cloud-integration-azure-support.md).
+Please see our Knowledge Base article detailing [Azure platform-level support](partner-cloud-integration-azure-support.md).
 
 For additional details on support responsibilities for our partners and their SLAs we support, please see the table below.
 
@@ -58,7 +58,7 @@ For additional details on support responsibilities for our partners and their SL
 * The true strength of Cloud Integration is that it opens to door for trained, CenturyLink resources to do work for you on your behalf, in Azure. If you are interested in contracting with CenturyLink to provide design, implementation, or ongoing, additional support, request an engagement with your sales representative.
 
 **Partner Pricing Details:**
-* **Azure:** Pricing available to CenturyLink customers is shown [here](https://www.ctl.io/pricing), with some variability as Microsoft changes pricing daily. Available products are also listed [here](./partner-cloud-integration-azure-capabilities.md). If your organization has agreements with Microsoft which differ from what is shown, please submit a ticket for review. We are constantly working to increase the scope of what is offered through Azure and it is likely we have plans to offer what you require.
+* **Azure:** Pricing available to CenturyLink customers is shown [here](https://www.ctl.io/pricing), with some variability as Microsoft changes pricing daily. Available products are also listed [here](partner-cloud-integration-azure-capabilities.md). If your organization has agreements with Microsoft which differ from what is shown, please submit a ticket for review. We are constantly working to increase the scope of what is offered through Azure and it is likely we have plans to offer what you require.
 
 **Availability**
 * **General:**
@@ -71,7 +71,7 @@ For additional details on support responsibilities for our partners and their SL
 
   We are currently able to offer this service only to offices inside the United States. Our automation prevents offering this service to CLC accounts which have billing addresses outsides the US. Please submit a support ticket if you feel your situation requires additional review.
 
-  To get started with Azure, please review [Partner Cloud: Getting Started With Azure Customer](./partner-cloud-integration-azure-new.md)
+  To get started with Azure, please review [Partner Cloud: Getting Started With Azure Customer](partner-cloud-integration-azure-new.md)
 
 **Partner Responsibility:**
 

@@ -50,7 +50,7 @@ This is a patch release for [SafeHaven 4.0.2](safehaven-4.0.2-release.md), which
 
 * [SHBase-4.0.1-Mar-20-2017.ova](https://download.safehaven.ctl.io/SH-4.0.1/SHBase-4.0.1-Mar-20-2017.ova): OVA to be imported to private VMware vSphere envrionment as templates for SRN/CMS appliances
 * [Script to Turn a Ubuntu-14 VM as a Recovery Proxy for Protected Windows VM](https://download.safehaven.ctl.io/SH-4.0.1/makestub_for_windows.sh)
-* [Linux Onboarding Script](./linux-onboarding-releases.md)
+* [Linux Onboarding Script](linux-onboarding-releases.md)
 
 ### New Downloads
 

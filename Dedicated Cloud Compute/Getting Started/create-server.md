@@ -22,7 +22,7 @@ Dedicated Cloud Compute customers.
 
 ### Add Server Process
 
-1. Log-in and go to the new DCC UI. For more information, please refer to the [Logon to New UI](./logon-new-UI.md) KB article.
+1. Log-in and go to the new DCC UI. For more information, please refer to the [Logon to New UI](logon-new-UI.md) KB article.
 
 2. Once logged in the DCC UI, click Create > Add Server.
 

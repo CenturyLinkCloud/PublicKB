@@ -16,13 +16,13 @@ All of our customers are invited to use Cloud Optimization via Cloud Application
 
 ### Prerequisites
 
-Knowledge of Cloud Application Manager's [partner cloud integration](./partner-cloud-integration.md) feature.
+Knowledge of Cloud Application Manager's [partner cloud integration](partner-cloud-integration.md) feature.
 
-Knowledge of how to [get started with cloud-integrated Amazon Web Services](./partner-cloud-integration-aws-new.md)
+Knowledge of how to [get started with cloud-integrated Amazon Web Services](partner-cloud-integration-aws-new.md)
 
 ### Important Information
 
-For existing accounts moving under our care you may be required to change your accounts' Support plans. You must sign in with root account credentials (email address and password) to change your support plan. The cost of the support plan does not appear on your consolidated bill, but it is required so that CenturyLink may meet our Service Level Objectives and use our automated tools. In addition, Amazon Web Services requires it so that proper prioritization is given to any platform-level issues that may need to be addressed. Please review [get Started With an existing AWS Customer Account](./partner-cloud-integration-aws-existing.md))
+For existing accounts moving under our care you may be required to change your accounts' Support plans. You must sign in with root account credentials (email address and password) to change your support plan. The cost of the support plan does not appear on your consolidated bill, but it is required so that CenturyLink may meet our Service Level Objectives and use our automated tools. In addition, Amazon Web Services requires it so that proper prioritization is given to any platform-level issues that may need to be addressed. Please review [get Started With an existing AWS Customer Account](partner-cloud-integration-aws-existing.md))
 
 CenturyLink recommends Customers utilize vendor-supported Operating Systems such as Microsoft Windows and RedHat Linux. Neither your company, CenturyLink nor our cloud partners can obtain vendor support on free Operating Systems.
 

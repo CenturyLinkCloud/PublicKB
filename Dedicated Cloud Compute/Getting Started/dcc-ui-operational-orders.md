@@ -7,7 +7,7 @@
 "contentIsHTML": false
 }}}
 
-The new Dedicated Cloud Compute (DCC) UI gives the ability to perform power operations and tier changes on servers/VMs. [Go here](./dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
+The new Dedicated Cloud Compute (DCC) UI gives the ability to perform power operations and tier changes on servers/VMs. [Go here](dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
 
 ### Power Operations
 

@@ -20,7 +20,7 @@ Bindings glue together different parts of a multi-tier application over the netw
 
 ### What are bindings?
 
-Bindings are [variables](./parameterizing-boxes-with-variables.md) that you can add to boxes. They represent a connection from the deployed box to other instances. Bindings are used to configure your event scripts of configuration files to work with the other instances.
+Bindings are [variables](parameterizing-boxes-with-variables.md) that you can add to boxes. They represent a connection from the deployed box to other instances. Bindings are used to configure your event scripts of configuration files to work with the other instances.
 
 ### Which instances does a binding connect to?
 
@@ -68,7 +68,7 @@ is equivalent to
 
 ### Bindings automatic reconfiguration
 
-The bindings are calculated after any install event and before the reconfiguration. At that point all the matching instances are saved and will be available in the different events. Keeping the bindings up to date implies reconfiguring the instances to update the bindings and all configuration scripts and files. To help with this task, Cloud Application Manager automatically reconfigures the instances that require it after some changes. You can trust Cloud Application Manager to keep updated the following information:
+The bindings are calculated after any install event and before the reconfiguration. At that point, all the matching instances are saved and will be available in the different events. Keeping the bindings up to date implies reconfiguring the instances to update the bindings and all configuration scripts and files. To help with this task, Cloud Application Manager automatically reconfigures the instances that require it after some changes. You can trust Cloud Application Manager to keep updated the following information:
 
 * The target instances in each binding. This means deploying or terminating instances, or changing their tags, will automatically reconfigure the instances that require it to keep the information up to date.
 * The IP information shown by Cloud Application Manager. Every time we detect an IP change, the instances that point to that instance will reconfigure. The detection of IP is provider specific.
@@ -81,7 +81,7 @@ There are three steps to make bindings work. Say a Node.js application needs Mon
 
 **Step 1. Define Binding Variables**
 
-Binding variables are [defined in box automation](./parameterizing-boxes-with-variables.md). In this example, we defined two binding variables. One in the Nginx loadbalancer box to connect to Node.js application instances, and another in the Node.js application box to connect to the MongoDB database.
+Binding variables are [defined in box automation](parameterizing-boxes-with-variables.md). In this example, we defined two binding variables. One in the Nginx loadbalancer box to connect to Node.js application instances, and another in the Node.js application box to connect to the MongoDB database.
 
 In both cases, the bindings point to a box type, which allow the services to bind only to instances of the box type at deploy time.
 
@@ -91,7 +91,7 @@ In both cases, the bindings point to a box type, which allow the services to bin
 
 **Step 2. Configure Bindings for Your Application**
 
-To establish connectivity to a remote service, we must configure the bindings in the box. We do so in the box configure script. Here’s an example. To connect the Nginx loadbalancer to the Node.js application instances, we configure the bindings as follows. In the Nginx loadbalancer box configure script, we run the Cloud Application Manager config command to execute a file variable (ngix.conf)that has the connection string.
+To establish connectivity to a remote service, we must configure the bindings in the box. We do so in the box configure script. Here’s an example. To connect the Nginx loadbalancer to the Node.js application instances, we configure the bindings as follows. In the Nginx loadbalancer box configure script, we run the Cloud Application Manager config command to execute a file variable (ngix.conf) that has the connection string.
 
 ![bindinglargescaledeployments4.png](../../images/cloud-application-manager/bindinglargescaledeployments4.png)
 
@@ -107,7 +107,7 @@ upstream services {
 }
 ```
 
-Within the connection string, each element polls values of the Node.js application box variables, like the port. IP addresses are [default system variables](./syntax-for-variables.md) available for every instance. Besides IP addresses, bindings provide lots of helpful data about remote services. You can pretty much query ports or any other variables defined in box automation through bindings.
+Within the connection string, each element polls values of the Node.js application box variables, like the port. IP addresses are [default system variables](syntax-for-variables.md) available for every instance. Besides IP addresses, bindings provide lots of helpful data about remote services. You can pretty much query ports or any other variables defined in box automation through bindings.
 
 **Step 3. Tag Bindings for Instance Connectivity**
 
@@ -127,4 +127,4 @@ For issues related to API calls, send the request body along with details relate
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+* Windows: RDP into the instance to locate the log at ProgramData/ElasticBox/Logs/elasticbox-agent.log

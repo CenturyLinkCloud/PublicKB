@@ -16,7 +16,7 @@ Users or the Cloud Application Manager Data Center Edition
 
 ### Prerequisites
 
-Knowledge of how to get started with  [new cloud-optimized Azure](./partner-cloud-integration-azure-new.md),  [new cloud-optimized AWS](./partner-cloud-integration-aws-new.md), [existing cloud-optimized Azure](./partner-cloud-integration-azure-existing.md) or [existing cloud-optimized AWS](./partner-cloud-integration-aws-existing.md)
+Knowledge of how to get started with  [new cloud-optimized Azure](partner-cloud-integration-azure-new.md),  [new cloud-optimized AWS](partner-cloud-integration-aws-new.md), [existing cloud-optimized Azure](partner-cloud-integration-azure-existing.md) or [existing cloud-optimized AWS](partner-cloud-integration-aws-existing.md)
 
 ### Important Information
 

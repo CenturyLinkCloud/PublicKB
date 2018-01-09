@@ -36,8 +36,8 @@ Follow the video for detailed help.
 3. Launch an instance of Cloud Application Manager from the appliance image and flavor.
 
 ### Next Steps
-* [Configure networking](./appliance-networking.md)
-* [Set up the appliance for use](./appliance-initialsetup.md)
+* [Configure networking](appliance-networking.md)
+* [Set up the appliance for use](appliance-initialsetup.md)
 
 ### Contacting Cloud Application Manager Support
 
