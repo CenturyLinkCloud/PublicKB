@@ -32,7 +32,7 @@ Local Replica maintains a full copy of the Production VMs disk on both the produ
 Local replica is more expensive of the two solutions, since it maintains a full copy of the provisioned storage on the production SRN in comparison to local cache which requires just 10% of the provisioned storage.
 
 ### Failover and Failback
-Failover time is same for both local replica and local cache. 
+Failover time is same for both local replica and local cache.   
 Failback resync time is reduced significantly in local replica because there is already a local copy present on the production SRN and only the changes are synced from the DR side. Local cache, on the other hand, does not have a local copy at the production SRN, therefore full disk from the DR side needs to be synced back to the Production side. 
 
 ### Performance
