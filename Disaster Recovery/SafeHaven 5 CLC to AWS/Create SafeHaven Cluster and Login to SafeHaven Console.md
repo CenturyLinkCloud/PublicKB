@@ -45,7 +45,7 @@ Download the **GUI Package** from the **Download Links** section of the most rec
    e. Click on **Validate CMS Access** to confirm connectivity to the CMS.
 
    f. Copy the **Debian Package for CMS/SRN** link from the **Download Links** section of the most recent SafeHaven release notes. 
-   In this case, it is  [SafeHaven 5.0 Release Notes](../Safehaven 5 General/SafeHaven5.0.0-Release-Notes.md) and enter it in the **SafeHaven distribution URL** field. 
+   In this case, it is  [SafeHaven 5.0 Release Notes](../SafeHaven 5 General/SafeHaven5.0.0-Release-Notes.md) and enter it in the **SafeHaven distribution URL** field. 
    
    **NOTE**:Please contact your CenturyLink Cloud Onboarding Resource if you have any questions regarding the latest version of **Debian 
    Package for CMS/SRN**. Do not modify the Service Port (TCP), Heartbeat Port (UDP), Installation ID.
