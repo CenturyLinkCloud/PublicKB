@@ -15,7 +15,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 2. [Determine Storage Requirements](Determine Storage Requirements.md)
 
-3. [Setup AWS for SafeHaven-5 using CloudFormation](../../General/Setup AWS for SafeHaven-5 using CloudFormation.md)
+3. [Setup AWS for SafeHaven-5 using CloudFormation](../SafeHaven 5 General/Setup AWS for SafeHaven-5 using CloudFormation.md)
 
 4. [Create Production SRN in CenturyLink Cloud](Create Production SRN in CenturyLink Cloud.md)
 
