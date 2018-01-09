@@ -23,7 +23,7 @@ This article explains how to deploy a SafeHaven Cluster. Once the cluster is dep
 Please ensure that you are using the most recent SafeHaven release update to create a new cluster. Please refer to [Most Recent SafeHaven Release Updates](../Overview/Most-Recent-SafeHaven-Release-Updates.md) for information on what's most recent.
 
 ### Download the SafeHaven Console Application
-Download the **GUI Package** from the **Download Links** section of the most recent SafeHaven release notes. In this case, it is [SafeHaven 5.0 Release Notes](../SafeHaven%5%General/SafeHaven5.0.0-Release-Notes.md). Once the file is downloaded, extract it, and run **safehaven-console.exe**.
+Download the **GUI Package** from the **Download Links** section of the most recent SafeHaven release notes. In this case, it is [SafeHaven 5.0 Release Notes](../SafeHaven 5 General/SafeHaven5.0.0-Release-Notes.md). Once the file is downloaded, extract it, and run **safehaven-console.exe**.
 
 
 ### Create a New SafeHaven Cluster
