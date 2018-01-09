@@ -24,9 +24,9 @@ Production Datacenter Site type in this scenario can be:
 Any CenturyLink Cloud Datacenter can be used as the Recovery Site type in this scenario.
 
 ### Production Servers
-In this scenario there are three Production Servers that a user wants to protect. Each Production Server has a Local Disk attached to it which has to be replicated over to the Recovery Datacenter. Production Servers can either be Windows or Linux. Please refer to [SafeHaven 5.0 Use Case and Support Matrix] for more information.
+In this scenario there are three Production Servers that a user wants to protect. Each Production Server has a Local Disk attached to it which has to be replicated over to the Recovery Datacenter. Production Servers can either be Windows or Linux. Please refer to [SafeHaven 5.0 Use Case and Support Matrix](../SafeHaven 5/General/SafeHaven-5.0-Use-Case-and-Support-Matrix.md) for more information.
 
-Gather the following information for the servers you want to protect:
+Gather the following information for the servers you want to protect:)
 
 1. O.S. Type
 2. Number of vCPU
