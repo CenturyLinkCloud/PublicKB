@@ -19,9 +19,9 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 4. [Create Production SRN in VMware]
 
-5. [Create CMS in AWS](Create CMS in AWS.md)
+5. [Create CMS in AWS]
 
-6. [Create DR SRN in AWS](Create DR SRN in AWS.md)
+6. [Create DR SRN in AWS]
 
 7. [Create SafeHaven Cluster and Login to SafeHaven Console](../CLC to AWS/Create SafeHaven Cluster and Login to SafeHaven Console.md)
 
