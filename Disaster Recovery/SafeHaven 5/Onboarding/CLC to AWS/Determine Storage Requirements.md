@@ -28,4 +28,4 @@ For Linux Production Servers, Local Replica mode is selected where storage amoun
 #### Recovery SRN in AWS - Storage Requirements
 As the Recovery SRN retains a full copy of the production data called "Remote Replica", storage amounting to "100% of the total provisioned/used storage(full copy of data)" on the Production Server is attached to the Recovery SRN as EBS Volumes automatically.
 
-**Next Step** is to [Setup AWS for SafeHaven-5 Using CloudFormation](../../SafeHaven 5/General/Setup AWS for SafeHaven-5 using CloudFormation.md)
+**Next Step** is to [Setup AWS for SafeHaven-5 Using CloudFormation](../../General/Setup AWS for SafeHaven-5 using CloudFormation.md)
