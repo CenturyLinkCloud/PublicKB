@@ -20,16 +20,16 @@ Local Replica maintains a full copy of the Production VMs disk on both the produ
 * 10% of provisioned production storage on the Production SRN.
 * 125% of the provisioned storage on the DR SRN.
 * About 6GB on the DR SRN for Test Failover.
-* For example, a 100GB VM requires a storage of 10GB on Production SRN and 131GB (125GB + 6GB) on the DR SRN
+* For example, a 100GB Virtual Machine requires a storage of 10GB on Production SRN and 131GB (125GB + 6GB) on the DR SRN
 
 #### Local Replica Protection type
 * 125% of provisioned production storage on the Production SRN.
 * 125% of the provisioned storage on the DR SRN.
 * About 6GB on both Production and DR SRNs for Test Failover.
-* For example, a 100GB VM requires a storage of 131GB on Production SRN and 131GB on the DR SRN
+* For example, a 100GB Virtual Machine requires a storage of 131GB on Production SRN and 131GB on the DR SRN
 
 ### Cost
-Local replica is more expensive of the two solutions, since it maintains a full copy of disk on the production SRN in comparison to local cache which requires just 10% of storage.
+Local replica is more expensive of the two solutions, since it maintains a full copy of the provisioned storage on the production SRN in comparison to local cache which requires just 10% of the provisioned storage.
 
 ### Failover and Failback
 Failover time is same for both local replica and local cache. 
