@@ -9,7 +9,7 @@
 }}}
 
 ### Description
-In this KB article, we will demonstrate how to use [Simple Backup Anywhere](../../backup/simple-backup-service-how-it-works.md) to provide file and folder level backups and restores for VMs in DCC Foundation.
+In this KB article, we will demonstrate how to use [Simple Backup Anywhere](../backup/simple-backup-service-how-it-works.md) to provide file and folder level backups and restores for VMs in DCC Foundation.
 
 ### Prerequisites
 You will need the following in order to use Simple Backup Anywhere with DCC Foundation:
@@ -26,4 +26,4 @@ You will need the following in order to use Simple Backup Anywhere with DCC Foun
 * Install the agent on the server
 * Add the server to a backup policy
 
-For more details, please take a look at this [Simple Backup Anywhere](../../backup/backup-anywhere.md) KB article
+For more details, please take a look at this [Simple Backup Anywhere](../backup/backup-anywhere.md) KB article
