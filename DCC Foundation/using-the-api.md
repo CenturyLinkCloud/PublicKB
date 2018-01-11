@@ -32,7 +32,7 @@ To create a session object, you supply your credentials in an Authorization head
 
 Response:
 
-The response includes a re-usable x-vcloud-authorization authorization token and a Session element whose Link elements reference the vCloud API objects to which you have access rights.
+The response HEADER includes a re-usable x-vcloud-authorization authorization token and a Session element whose Link elements reference the vCloud API objects to which you have access rights.
 
 * Be sure to note the return header with key name x-vcloud-authorization. This will include a unique session hex number for this header, e.g. 117a0c919f9f4fa5975306d2a7831d95.
 * This header, including the token, must be included in each subsequent vCloud API request.
