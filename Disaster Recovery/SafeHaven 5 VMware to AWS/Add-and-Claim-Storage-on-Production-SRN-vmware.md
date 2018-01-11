@@ -23,7 +23,6 @@ This article assumes that the user has already registered the SRN within the Saf
 
 2. In the Navigation Tree, right click the **SRN** you want to add storage to, and click **Edit Settings**.
 3. Click **Add**, and select **Hard Disk**. click **Next**
-   **NOTE**: **DO NOT** select a **partitoned** disk.
 
 4. Select **Create a new virtual disk**, and click Next
 
