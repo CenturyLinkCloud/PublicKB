@@ -15,7 +15,7 @@ User has gathered the required production server information. Refer to [Gather P
 ### SafeHaven Replication Node(SRN)
 SafeHaven Replication Node(SRN) is an Ubuntu 16 based lightweight virtual appliance(virtual machine)which transfers and retains production data.Depending on the O.S. Type of servers being protected and the mode of replication(Local Cache or Local Replica) selected, required amount of storage is attached on both the Production and Recovery SRN appliances.
 
-### Production SRN in CenturyLink Cloud - Storage Requirements
+### Production SRN in CenturyLink Cloud/ VMWare - Storage Requirements
 
 #### Local Cache for Windows Servers
 For Windows Production Servers, Local Cache mode is selected where storage amounting to "10% of the total provisioned storage on the Production Server" is attached to the Production SRN. This Local Cache attached to the Production SRN acts as a buffer and transfers the production data coming from the Production Servers over to the Recovery SRN in AWS. This mode of replication saves storage related costs as the users do not have to pay for an additonal full copy of data on the Production SRN.
