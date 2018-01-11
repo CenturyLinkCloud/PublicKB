@@ -27,7 +27,7 @@ There are 2 methods available to install the Simple Backup agent on your non-Cen
 
 ![](../images/backup/backup-anywhere/register-server.png)
 
-* You will then be presented with a download link for the agent installer and unique information about the installer file. This information is not needed for the installation, it is for information purposes only. Simply click the link to download the installer script.
+* You will then be presented with a download link for the agent installer and unique information about the installer file. This information is not needed for the installation; it is for information purposes only. Simply click the link to download the installer script.
 
 ![](../images/backup/backup-anywhere/registered-server.png)
 
