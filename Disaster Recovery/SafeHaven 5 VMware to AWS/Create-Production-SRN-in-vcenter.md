@@ -50,4 +50,4 @@ Click **Next**.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-FooxE4w8LI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </p>
 
-**Next Step** is to [Create CMS in AWS](Create CMS in AWS.md)
+**Next Step** is to [Create CMS in AWS](../SafeHaven 5 CLC to AWS/Create CMS in AWS.md)
