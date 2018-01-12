@@ -19,7 +19,9 @@ This document describes how to access the Advanced Analytics capabilities within
 *  From the 'Sites' menu select 'Analytics'
 *  From the Analytics site's navigation menu choose 'Advanced Analytics'
 *  Click 'Sign In'
-
+   
+   
+   
 
 ![Advanced Analytics Screenshot](../../images/AdvancedAnalyticsScreenshot.png)
 
