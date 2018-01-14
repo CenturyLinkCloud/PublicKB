@@ -38,7 +38,11 @@ Follow these steps to build and deploy Jenkins server from a box. The box instal
 
    ![integrate-jenkins3](../../images/cloud-application-manager/integrate-jenkins3.png)
 
-   To get it, sign in to your [GitHub account](https://github.com/). Under settings, go to **Applications** > **Personal access tokens** > **Generate new token**. Describe why you need the token. Under scope, select **repo** and **repo: status**. Then click **Generate Token**. Copy and paste it as shown.
+   To get it, sign in to your [GitHub account](https://github.com/). Under settings, go to **Developer settings** > **Personal access tokens** > **Generate new token**. Describe why you need the token.
+
+   ![integrate-jenkins3-2](../../images/cloud-application-manager/integrate-jenkins3-2.png)
+
+	 Under scope, select **repo** and **repo: status**. Then click **Generate Token**. Copy and paste it as shown.
 
    * Provide your GitHub project URL in a text variable called GITHUB_PROJECT_URL.
 
@@ -186,7 +190,7 @@ Enter this value:
   ```
 
 3. Add the following events to install Jenkins server and the plugins.
-   * Install Jenkins. Copy, paste the script in the install event and save.
+   * Install Jenkins. Copy, paste the script in the pre_install event and save.
 
    ```
    #/bin/bash
@@ -207,7 +211,7 @@ Enter this value:
    apt-get -y --force-yes install jenkins git
    ```
 
-   * Install the plugins, the build job templates, and configure GitHub plugins with username, access token, and repository URL. Copy, paste the script in the post_configure event and save.
+   * Install the plugins, the build job templates, and configure GitHub plugins with username, access token, and repository URL. Copy, paste the script in the configure event and save.
 
    ```
    #!/bin/bash
@@ -287,23 +291,31 @@ Here we configure the Google Cloud network to allow Internet traffic through por
 
 1. Sign in to Cloud Application Manager.
 
-2. Go to the Jenkins server box you built.
+2. Create a new deployment policy box. **Boxes** > **New** > **Deployment Policy** and select **Virtual or Physical Machine**.
 
-3. On its box page, click **Deploy**.
+3. Select **Google Compute** as the provider. Give a name to the box and click on **Save**.
 
-4. In the instance dialog, name the deployment, and create a new policy to select Google Cloud deployment settings.
+4. Go to the new deployment policy box and modify it.
+
+![integrate-jenkins12](../../images/cloud-application-manager/integrate-jenkins12.png)
 
 5. In the policy, select a Debian Ubuntu Linux image. Although a g1.small machine type will do, select n1-standard-2 to deploy faster.
 
-6. Under Network, select the firewall rule from Google Cloud. Select Ephemeral IP to make the instance IP address public.
+6. Under **Network**, select the firewall rule from Google Cloud. Select **Ephemeral IP** to make the instance IP address public.
 
-   ![integrate-jenkins12](../../images/cloud-application-manager/integrate-jenkins12.png)
+![integrate-jenkins13](../../images/cloud-application-manager/integrate-jenkins13.png)
 
-7. Click **Save**.
+7. Click on **Save** to save the changes.
 
-8. Back in the instance dialog, check the Jenkins server deployment variables such as the repository URL, access token, project URL, and GitHub username.
+8. Go to the Jenkins server box you built.
 
-9. Click **Deploy** to launch the Jenkins server.
+9. On its box page, click **Deploy**.
+
+10. In the instance dialog, name the deployment, and select the new deployment policy box.
+
+11. Check the Jenkins server deployment variables such as the repository URL, access token, project URL, and GitHub username.
+
+12. Click **Deploy** to launch the Jenkins server.
 
 When online, in the instance page under **Endpoints**, click the public IP address to open the Jenkins server management portal. You can see that the server has all the GitHub plugins and the build job templates.
 
@@ -333,4 +345,4 @@ For issues related to API calls, send the request body along with details relate
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+* Windows: RDP into the instance to locate the log at /ProgramData/ElasticBox/Logs/elasticbox-agent.log
