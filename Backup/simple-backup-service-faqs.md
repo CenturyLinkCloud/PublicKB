@@ -1,6 +1,6 @@
 {{{
   "title": "Simple Backup Service FAQs",
-  "date": "6-27-2017",
+  "date": "11-17-2017",
   "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
@@ -35,7 +35,7 @@ up-sg1.backup.ctl.io
 up-uc1.backup.ctl.io
 up-gb3.backup.ctl.io
 ```
-Additional endpoints will need to be configured based on the Storage Region selected as indicated in the [How it Works](./simple-backup-service-how-it-works.md) KB article.
+Additional endpoints will need to be configured based on the Storage Region selected as indicated in the [How it Works](simple-backup-service-how-it-works.md) KB article.
 
 **Q: What OSes are supported?**
 
@@ -51,11 +51,11 @@ A: No further backups occur from the server to storage. If a backup agent is una
 
 **Q: Is SBS intended to be used for Disaster Recovery?**
 
-A: No, SBS provides file-level backup protection. In fact, SBS does not backup certain [OS files](#inclusions-and-exclusions) or provide snapshot capability. Users can still perform [manual snapshots on-demand](https://www.ctl.io/knowledge-base/servers/creating-and-managing-server-snapshots/) and as scheduled tasks within the server settings. For full [Disaster Recovery](https://www.ctl.io/knowledge-base/support/introducing-new-options-for-backups/#how-does-the-simple-backup-service-compare-to-other-options-are-available-on-centurylink-cloud) services, there are a number of options available internally or through Certified Ecosystem partners.
+A: No, SBS provides file-level backup protection. In fact, SBS does not backup certain [OS files](#inclusions-and-exclusions) or provide snapshot capability. Users can still perform [manual snapshots on-demand](../Servers/creating-and-managing-server-snapshots.md) and as scheduled tasks within the server settings. For full [Disaster Recovery](https://www.ctl.io/knowledge-base/support/introducing-new-options-for-backups/#how-does-the-simple-backup-service-compare-to-other-options-are-available-on-centurylink-cloud) services, there are a number of options available internally or through Certified Ecosystem partners.
 
 **Q: Does SBS support server cloning?**
 
-A: No, currently SBS does not support cloning. If the agent is installed on a server and the server is cloned there can be data continuity issues between the backups of the source and cloned server. If a server is going to be cloned, the SBS agent must be [uninstalled](./removing-simple-backup-service.md) first, and the agent properly installed on all servers needed after they are cloned.
+A: No, currently SBS does not support cloning. If the agent is installed on a server and the server is cloned there can be data continuity issues between the backups of the source and cloned server. If a server is going to be cloned, the SBS agent must be [uninstalled](removing-simple-backup-service.md) first, and the agent properly installed on all servers needed after they are cloned.
 
 ### Agent
 
@@ -65,7 +65,7 @@ A: Although the SBS agent will run on 1 Core, 1GB of RAM VM's, the overall speed
 
 **Q: What are the logon credentials for the backup agent?**
 
-A: Please review the [SBS Agent Security Configurations](./sbs-agent-security.md) KB article for details.
+A: Please review the [SBS Agent Security Configurations](sbs-agent-security.md) KB article for details.
 
 **Q: Can I change the backup agent credentials for all my instances in one place?**
 
@@ -73,7 +73,7 @@ A: Not at this time. Each properties file must be updated individually.
 
 **Q: How can I access my backup agent from a remote machine?**
 
-A: Please review the [SBS Agent Security Configurations](./sbs-agent-security.md) KB article for details.
+A: Please review the [SBS Agent Security Configurations](sbs-agent-security.md) KB article for details.
 
 **Q: Where can I find the backup agent's logs on my machine?**
 
@@ -97,7 +97,7 @@ A: The agent is setup to start on boot at install time.
 
 **Q: Where do I configure backups?**
 
-A: The Control Portal provides backup configuration functionality. Please refer to our [Getting Started Guide](./getting-started-with-simple-backup.md) for more details. Additionally, the [Backup API](https://www.ctl.io/api-docs/v2/#simple-backup) may be used for advanced scripting.
+A: The Control Portal provides backup configuration functionality. Please refer to our [Getting Started Guide](getting-started-with-simple-backup.md) for more details. Additionally, the [Backup API](https://www.ctl.io/api-docs/v2/#simple-backup) may be used for advanced scripting.
 
 **Q: What does an "IN_PROGRESS" status backup mean?**
 
@@ -105,11 +105,11 @@ A: An "IN_PROGRESS" status for a backup job means the data is actively being tra
 
 **Q: How do you handle backing up open files?**
 
-A: At this time, open files will not be backed up and a “Partial_Success” will be shown as the Restore Point Status.
+A: At this time, open files will not be backed up and a “Partial_Success” will be shown as the Restore Point Status if open files are encountered in the targeted backup path.
 
 **Q: How can I confirm that my backups were successful?**
 
-A: There are two places in the agent that show the status of your backups. First, in the Backup Jobs section, which shows all backups executed by this particular agent. Second, for additional information, selecting “Restore” from the Policy Details page will drill down into greater detail about backups for the specific Policy. Details include Backup Date, Status, and Protected Data (GBs).
+A: In the backup section of the control portal, under the backup policy in question there is a column that shows the last successful backup time for every server on the policy. Alternately, there are two places in the backup agent that show the status of your backups. First, in the Backup Jobs section, which shows all backups executed by this particular agent. Second, for additional information, selecting “Restore” from the Policy Details page will drill down into greater detail about backups for the specific Policy. Details include Backup Date, Status, and Protected Data (GBs).
 
 **Q: For a "Failed" or "Partial_Success" backup status, can I see which files failed and why?**
 
@@ -117,7 +117,7 @@ A: Yes, see the sbs-backup-files-failed.csv file located on your system for deta
 
 **Q: Where are my backups actually stored?**
 
-A: The SBS agent on the server transfers backup data to one of six different backup storage regions, each built on top of cloud object storage. CenturyLink sources this object storage from a combination of its own cloud platform, as well as 3rd party cloud providers such as Amazon Web Services. For more information, see our [How It Works](https://www.ctl.io/knowledge-base/backup/simple-backup-service-how-it-works/) KB article.
+A: The SBS agent on the server transfers backup data to one of six different backup storage regions, each built on top of cloud object storage. CenturyLink sources this object storage from a combination of its own cloud platform, as well as 3rd party cloud providers such as Amazon Web Services. For more information, see our [How It Works](simple-backup-service-how-it-works.md) KB article.
 
 ### Restores
 
@@ -127,7 +127,7 @@ A: An "IN_PROGRESS" status for a restore job indicates the data is actively bein
 
 **Q: Can I select specific files/folders to restore from a restore point?**
 
-A: Yes, in the restore section there is an option to perform a full restore, or selective file restore. Using the selective file restore option allows you to enter the full path to a file or folder and the option to add multiple paths to restore.
+A: Yes, in the restore section there is an option to perform a full restore, or selective file restore. Using the selective restore option allows you to enter the full path to a file or folder and the option to add multiple paths to restore. While using the selective restore function you are able to use * as a wildcard in the path or filename.
 
 **Q: Can restores be performed to another server?**
 
@@ -162,7 +162,7 @@ A: Common causes of obscured restore files:
 
 **Q: How do I stop an in-progress restore from completing?**
 
-A: Restarting the Simple Backup Service on the server will stop all running restore task(s). See https://www.ctl.io/knowledge-base/backup/restarting-simple-backup-service/ for steps to restart in Linux and Windows.
+A: Restarting the Simple Backup Service on the server will stop all running restore task(s). See [Restarting Simple Backup Service](restarting-simple-backup-service.md) for steps to restart in Linux and Windows.
 
 ### Policies
 
@@ -218,7 +218,7 @@ A: Yes. From the Backup Agent, click the **Backup** button from the Home Dashboa
 
 **Q: Can I schedule backups to execute at a specific time in the day?**
 
-A: YES! This is part of our new Scheduling feature; for more details, please see the [getting started guide](./getting-started-with-simple-backup.md)
+A: YES! This is part of our new Scheduling feature; for more details, please see the [getting started guide](getting-started-with-simple-backup.md)
 
 ### Scheduling
 
@@ -294,7 +294,7 @@ A: SBS provides a simplified billing model. The cost per GB for backups is calcu
 
 * Backup Cost Calculation Example:
 
-  10 GB of data backed up starting on the 15th of the month assuming no changes throughout the reamining duration of the month.
+  10 GB of data backed up starting on the 15th of the month assuming no changes throughout the remaining duration of the month.
 
   Hourly GB Usage = (10 GB of backup x 15 days x 24 hours) = 3,600 GB
 

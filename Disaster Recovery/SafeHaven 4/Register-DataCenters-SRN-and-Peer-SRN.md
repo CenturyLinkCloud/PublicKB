@@ -25,7 +25,7 @@ There are 4 **Data Center Types** available:
 ### Requirements
 
 1. SafeHaven Cluster already installed.
-2. CMS and SRNs to have proper network connectivity as per [SAHA4.0 Networking](./SAHA4.0 Networking.md)
+2. CMS and SRNs to have proper network connectivity as per [SAHA4.0 Networking](SAHA4.0 Networking.md)
 
 ### Assumptions
 

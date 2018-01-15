@@ -52,7 +52,7 @@
 
 
 ### Documentation (1)
-* [**Expanded API documentation**](http://www.ctl.io/api-docs/v2/) - New knowledge base articles for CenturyLink Cloud's V2 API have been added [here](http://www.ctl.io/api-docs/v2/). New actions covered include [Set Server Disks](http://www.ctl.io/api-docs/v2/#servers-set-server-disks), [Set Server CPU/Memory](http://www.ctl.io/api-docs/v2/#servers-set-server-cpumemory), and [Set Server Credentials](http://www.ctl.io/api-docs/v2/#servers-set-server-credentials), among others.
+* [**Expanded API documentation**](http://www.ctl.io/api-docs/v2/) - New Knowledge Base articles for CenturyLink Cloud's V2 API have been added [here](http://www.ctl.io/api-docs/v2/). New actions covered include [Set Server Disks](http://www.ctl.io/api-docs/v2/#servers-set-server-disks), [Set Server CPU/Memory](http://www.ctl.io/api-docs/v2/#servers-set-server-cpumemory), and [Set Server Credentials](http://www.ctl.io/api-docs/v2/#servers-set-server-credentials), among others.
 
 
 ### Ecosystem - New Blueprints (4)

@@ -29,7 +29,7 @@ WordPress Multisite allows a single WordPress installation to house a network of
 ## <a name="storage"></a>Local File Storage
 CenturyLink WordPress hosting __does not__ offer long term local file system storage for media, plugins, or themes. Traditional WordPress hosting on physical or virtual machines save site content to the local disk by default.  In the Cloud environment we have configured your WordPress site to work differently by allowing the site to use a previously created object storage bucket.
 
-For more details please check out the knowledge base articles to [create an object storage bucket](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) and how to [create a WordPress site with object storage](https://www.ctl.io/knowledge-base/wordpress/getting-started-with-wordpress-as-a-service/).
+For more details please check out the Knowledge Base articles to [create an object storage bucket](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) and how to [create a WordPress site with object storage](https://www.ctl.io/knowledge-base/wordpress/getting-started-with-wordpress-as-a-service/).
 
 > #### Media Content
 >CenturyLink WordPress hosting comes with a cloud storage plugin pre-installed. This is the preferred method of bypassing local file storage.

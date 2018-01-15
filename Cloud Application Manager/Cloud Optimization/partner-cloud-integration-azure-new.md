@@ -27,9 +27,9 @@ For Azure, we are currently limited to serving billable customers who are not re
 
 * A working knowledge of how to use [Cloud Application Manager providers](../Core Concepts/providers.md).
 
-* An understanding of the features and benefits of [Partner Cloud Integration](./partner-cloud-integration.md)
+* An understanding of the features and benefits of [Partner Cloud Integration](partner-cloud-integration.md)
 
-* For each CenturyLink Cloud account integrated with Azure, both CenturyLink's and Microsoft's Terms and Conditions must be accepted. These will be presented to any user attempting to create a new "Azure Resource Manager" provider in Cloud Application Manager.
+* For each CenturyLink Cloud account integrated with Azure, both CenturyLink's and Microsoft's Terms and Conditions must be accepted. These will be presented to any user attempting to create a new "Microsoft Azure" provider in Cloud Application Manager.
 
 ### Important Information
 
@@ -38,10 +38,10 @@ For Azure, we are currently limited to serving billable customers who are not re
 Cloud Application Manager Provider Verbiage | Description | Related Links
 --- | --- | ---
 Use an existing Azure customer account | This is not an optimized option. Customer pays Amazon for usage. | [Click here](../../Cloud Application Manager/Deploying Anywhere/using-microsoft-azure.md)
-Migrate my account to CenturyLink for consolidated billing and Platform Support | **This is a Cloud Optimized option.** This allows an existing customer account to move under CenturyLink's care. | [Click Here](./partner-cloud-integration-azure-existing.md)
+Migrate my account to CenturyLink for consolidated billing and Platform Support | **This is a Cloud Optimized option.** This allows an existing customer account to move under CenturyLink's care. | [Click Here](partner-cloud-integration-azure-existing.md)
 Create a new Azure customer account and Subscription or a new subscription for an existing account | **This is a Cloud Optimized option.** Begins the new account creation automation, enabling the customer to immediately enter CenturyLink's care. | This document
 
-Charges for [Azure usage](./partner-cloud-integration-consolidated-billing.md) will appear on invoices from CenturyLink.
+Charges for [Azure usage](partner-cloud-integration-consolidated-billing.md) will appear on invoices from CenturyLink.
 
 ### Steps
 

@@ -10,7 +10,7 @@
 **In this article:**
 
 * Deploying a new instance
-* Creating a deployment profile
+* Creating a deployment policy
 * Scheduling Instances
 * Handling instance lifecycle states
 
@@ -19,7 +19,7 @@
 An instance is an instantiated version of a box launched to provider’s virtual infrastructure or your own. Follow these steps to launch one.
 
 **Steps**
-1. Click **Instances** > **New Instance**
+1. Click **Instances** > **New**
 2. Select a box. You can search and look through the tabs.
 
   ![deploy-instance-selectboxfromcatalog-1.png](../../images/cloud-application-manager/deploy-instance-selectboxfromcatalog-1.png)
@@ -29,11 +29,11 @@ An instance is an instantiated version of a box launched to provider’s virtual
 
     **Note:** Don’t find a box you’re looking for? Check if you’re in the right workspace. Remember that you may not have access if the box is no longer shared with you.
 
-3. In the New Instance dialog, specify the environment name and deployment profile.
+3. In the New Instance dialog, specify the instance name and deployment policy.
 
-   **Environment.** Give a name to recognize the instance.
+   **Name.** Give a name to recognize the instance.
 
-   **Deployment Profile.** Select a previously created deployment profile or create a new one. For details, see Creating a Deployment Profile.
+   **Deployment Policy.** Select a previously created deployment policy or create a new one. For details, see Creating a Deployment Policy.
 
 4. In the New Instance dialog, pass deployment parameters under **Variables**. Before launching, you can override and provide fresh values.
 
@@ -44,34 +44,34 @@ An instance is an instantiated version of a box launched to provider’s virtual
     * When a variable is required, you must specify its value to launch an instance of the box. If optional, you can launch without giving values, and do it later in the [lifecycle editor](../Core Concepts/lifecycle-editor.md).
     * [Binding type variables](../Automating Deployments/parameterizing-boxes-with-variables.md) are also listed here. Depending on how it’s defined in the box, you can select as its value any instance or that of a specific box type deploying or active in the workspace.
 
-### Creating a Deployment Profile
+### Creating a Deployment Policy
 
-A deployment profile defines settings for your infrastructure that are applied at deployment time. These settings include the cloud provider that will host the deployed boxes, how the virtual infrastructure will be sized, and where it will be placed.
+A deployment policy defines settings for your infrastructure that are applied at deployment time. These settings include the cloud provider that will host the deployed boxes, how the virtual infrastructure will be sized, and where it will be placed.
 
 **Steps**
 
-1. In the New Instance dialog, click **New Profile**.
+1. In the New Instance dialog, click **Create a new deployment policy box**.
 
-  ![instance-createnewdeploymentprofile-3.png](../../images/cloud-application-manager/instance-createnewdeploymentprofile-3.png)
+  ![instance-createnewdeploymentprofile-3-2.png](../../images/cloud-application-manager/instance-createnewdeploymentprofile-3-2.png)
 
-2. Enter a profile name. Typically deployment profiles are named for the stage in the application lifecycle they represent, such as Dev, Test, QA, Pre-Production, and Production. However you could also use them to represent geographical or logical environments.
+2. Select a deployment policy box.
 
-  ![instance-createnewdeploymentprofile-name-4.png](../../images/cloud-application-manager/instance-createnewdeploymentprofile-name-4.png)
+  ![instance-createnewdeploymentprofile-name-4-2.png](../../images/cloud-application-manager/instance-createnewdeploymentprofile-find-4-2.png)
 
-3. Click **Create**.
+3. Configure the deployment policy settings for the box you selected from the catalog.
 
-4. Configure the deployment profile settings for the box you selected from the catalog.
+  ![instance-configuredeploymentsettings-5-2.png](../../images/cloud-application-manager/instance-configuredeploymentsettings-5-2.png)
 
-  ![instance-configuredeploymentsettings-5.png](../../images/cloud-application-manager/instance-configuredeploymentsettings-5.png)
+4. Click **Save**.
 
     Settings in the deployment profile vary by the provider you deploy to. For provider specific deployment settings, see these articles:
-    * [Using CenturyLink Cloud](./using-centurylink-cloud.md)
-    * [Using Google Cloud](./using-google-cloud.md)
-    * [Using Your AWS Account](./using-your-aws-account.md)
-    * [Using the vSphere Private Datacenter](./using-the-vmware-vcenter-private-datacenter.md)
-    * [Using Your OpenStack Cloud](./using-openstack-cloud.md)
-    * [Using CloudStack](./using-cloudstack.md)
-    * [Using Azure](./using-azure.md)
+    * [Using CenturyLink Cloud](using-centurylink-cloud.md)
+    * [Using Google Cloud](using-google-cloud.md)
+    * [Using Your AWS Account](using-your-aws-account.md)
+    * [Using the vSphere Private Datacenter](using-the-vmware-vcenter-private-datacenter.md)
+    * [Using Your OpenStack Cloud](using-openstack-cloud.md)
+    * [Using CloudStack](using-cloudstack.md)
+    * [Using Azure](using-azure.md)
 
     **Note:** If you’re deploying to public cloud providers like AWS or Google Compute, you’ll most likely be charged by the cloud provider for the virtual infrastructure you provision. Familiarize yourself with their pricing model as Cloud Application Manager assumes no responsibility for costs incurred.
 
@@ -84,16 +84,16 @@ We notify you of instances about to expire in 24 hours by email at around 12 AM 
 Follow these steps to schedule an instance.
 
 **Steps**
-1. From the Instances page, click **New Instance**.
+1. From the Instances page, click **New**.
 2. Select a box you want to deploy.
 3. In the New Instance dialog, select the **Shutdown** or **Terminate** operation from the **Expiration** drop-down.
 Select **Always on** if you don’t want to schedule anything. Shutdown powers off the instance while Terminate deletes the instance on the provider’s side.
 
-  ![schedule-instance-chooseoperation-6.png](../../images/cloud-application-manager/schedule-instance-chooseoperation-6.png)
+  ![schedule-instance-chooseoperation-6-2.png](../../images/cloud-application-manager/schedule-instance-chooseoperation-6-2.png)
 
 4. For the selected operation, set a predefined or custom UTC schedule.
 
-  ![schedule-instance-selectschedule-7.png](../../images/cloud-application-manager/schedule-instance-selectschedule-7.png)
+  ![schedule-instance-selectschedule-7-2.png](../../images/cloud-application-manager/schedule-instance-selectschedule-7-2.png)
 
 5. When done, click **Deploy**.
 
@@ -109,7 +109,7 @@ Some actions are available only after the instance changes state. For example, y
 
 Go to the Admin Console to [manage several instances](../Administering Your Organization/manage-assets-monitor-usage.md) spread across users and workspaces in your organization.
 
-  ![instance-states-8.png](../../images/cloud-application-manager/instance-states-8.png)
+  ![instance-states-8-2.png](../../images/cloud-application-manager/instance-states-8-2.png)
 
 **Reconfigure**
 
@@ -139,6 +139,18 @@ If a Terminate fails for some reason (maybe a broken dispose script) then this f
 
 Click the delete icon after you Terminate or Force Terminate an instance. Until then, the box instance page and logs are retained in the Cloud Application Manager database. But delete completely removes the box instance page.
 
+**Clone**
+
+This creates a new instance with selected instance’s settings, but you can modify all of them before launch the new deployment.
+
+**Update Instance**
+
+This lets you modify the box version, you can select one of the others box versions. After choose the new version, the instance is going to be reinstalled.
+
+**Edit Details**
+
+This shows the instance’s details that you can modify. These details are: icon, name, description, tags, expiration, updates (available for box versions only) and automatic reconfigure.
+
 ### Contacting Cloud Application Manager Support
 
 We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
@@ -147,4 +159,4 @@ For issues related to API calls, send the request body along with details relate
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+* Windows: RDP into the instance to locate the log at /ProgramData/ElasticBox/Logs/elasticbox-agent.log

@@ -25,20 +25,20 @@ For Amazon Web Services, we are currently limited to serving billable customers 
 
 * A working knowledge of how to use [Cloud Application Manager providers](../Core Concepts/providers.md).
 
-* An understanding of the features and benefits of [Partner Cloud Integration](./partner-cloud-integration.md)
+* An understanding of the features and benefits of [Partner Cloud Integration](partner-cloud-integration.md)
 
-* For each CenturyLink Cloud account integrated with Amazon Web Services, both CenturyLink's AWS Terms and Conditions for the relevant territory must be accepted. These will be presented to any user attempting to create a new "Azure Resource Manager" provider in Cloud Application Manager.
+* For each CenturyLink Cloud account integrated with Amazon Web Services, both CenturyLink's AWS Terms and Conditions for the relevant territory must be accepted. These will be presented to any user attempting to create a new "Microsoft Azure" provider in Cloud Application Manager.
 
 ### Important Information
 
-Charges for [AWS usage](./partner-cloud-integration-consolidated-billing.md) will appear on invoices from CenturyLink.
+Charges for [AWS usage](partner-cloud-integration-consolidated-billing.md) will appear on invoices from CenturyLink.
 
 ![Amazon Web Services Provider](../../images/cloud-application-manager/CINT_AWS_Provider_Options.png)
 
 Cloud Application Manager Provider Option | Description | Related Links
 --- | --- | ---
- Use an existing AWS customer account | This is not an Optimized account and customer pays Amazon for usage. | [Click here](https://www.ctl.io/knowledge-base/cloud-application-manager/deploying-anywhere/using-your-aws-account/)
-   Migrate my account to CenturyLink for consolidated billing and Platform Support | **This is a Cloud Optimized option.** Provided Amazon has approved a share shift agreement, this allows an existing customer account to move under CenturyLink's care. | [Click Here](./partner-cloud-integration-aws-existing.md)
+ Use an existing AWS customer account | This is not an Optimized account and customer pays Amazon for usage. | [Click here](../Deploying Anywhere/using-your-aws-account.md)
+   Migrate my account to CenturyLink for consolidated billing and Platform Support | **This is a Cloud Optimized option.** Provided Amazon has approved the account transfer, this allows an existing customer account to move under CenturyLink's care. | [Click Here](partner-cloud-integration-aws-existing.md)
   Create a new AWS account for consolidated billing and Platform Support | **This is a Cloud Optimized option.** Initiates the new account creation process, enabling the customer to immediately enter CenturyLink's care without prior approval from AWS. | This page
 
 Any Amazon Web Service offering is available through CenturyLink.
@@ -47,7 +47,7 @@ Any Amazon Web Service offering is available through CenturyLink.
 
 New AWS Accounts will automatically be Fully Hardened.
 
-* **Data Access** Certain AWS Management Console reports will be restricted because they will not provide accurate representation of pricing, CenturyLink-provided discounts, or managed costs. Fully Hardened have access to use Cloud Application Manager's [Analytics](./CloudApplicationManagerAnalyticsUI.md) tool for usage details that would have been provided by AWS Billing Services such as Cost Explorer. Additionally, customers will not be given access to consolidated data within the CenturyLink-owned Master Payers.
+* **Data Access** Certain AWS Management Console reports will be restricted because they will not provide accurate representation of pricing, CenturyLink-provided discounts, or managed costs. Fully Hardened have access to use Cloud Application Manager's [Analytics](../Analytics/CloudApplicationManagerAnalyticsUI.md) tool for usage details that would have been provided by AWS Billing Services such as Cost Explorer. Additionally, customers will not be given access to consolidated data within the CenturyLink-owned Master Payers.
 * **Reserved Instances**
   * Customers may contact CenturyLink if they wish to have their Reserved Instance limit increased.
 

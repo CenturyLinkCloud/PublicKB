@@ -19,7 +19,7 @@ Container boxes enable you to define and deploy [Docker](https://docs.docker.com
 
 Docker works in Cloud Application Manager through the Docker Container service box, a Linux box that understands Docker commands when deployed. In the box you model your application in a Dockerfile, which helps create the image of your application in a Docker container. Write Dockerfile commands not only in [Docker instructions](https://docs.docker.com/engine/reference/builder/), but also in Bash and PowerShell.
 
-At deploy time, Cloud Application Manager executes the Docker box like any other box in the virtual environment. Cloud Application Manager treats the Docker container like a [box variable](./parameterizing-boxes-with-variables.md) and the Dockerfile as a [file variable](./parameterizing-boxes-with-variables.md) inside it. On the virtual machine, Cloud Application Manager first installs the Docker client from which we install the Docker container using the daemon BUILD command.
+At deploy time, Cloud Application Manager executes the Docker box like any other box in the virtual environment. Cloud Application Manager treats the Docker container like a [box variable](parameterizing-boxes-with-variables.md) and the Dockerfile as a [file variable](parameterizing-boxes-with-variables.md) inside it. On the virtual machine, Cloud Application Manager first installs the Docker client from which we install the Docker container using the daemon BUILD command.
 
 ### Configuring and Deploying Docker Containers
 
@@ -33,7 +33,7 @@ From the Boxes page, click **New > Container**. In the dialog, enter a name to i
 
 **Create a Dockerfile**
 
-You now see a box layout where you can configure your application’s deployment with [variables](./parameterizing-boxes-with-variables.md) and the Dockerfile.
+You now see a box layout where you can configure your application’s deployment with [variables](parameterizing-boxes-with-variables.md) and the Dockerfile.
 
 ![dockercontainers2.png](../../images/cloud-application-manager/dockercontainers2.png)
 
@@ -87,7 +87,7 @@ Text, number, or options type variables are handled at deploy time as [Docker en
 
 A file variable is handy to run additional commands using RUN or trigger an executable file using CMD. But first you must copy it from the Cloud Application Manager remote URL to the container’s filesystem at the path you specify using [ADD](https://docs.docker.com/engine/reference/builder/) in the Dockerfile: ADD `\{{file_variable_name}}` destination_path_in_container.
 
-[Bindings](./parameterizing-boxes-with-variables.md) pass connections strings or deployment values to connect with other Docker containers or boxes. To bind to another Docker container or box, create a binding and pass binding references via text expression variables with this syntax: `\{{ binding_name.variable_name }}`
+[Bindings](parameterizing-boxes-with-variables.md) pass connections strings or deployment values to connect with other Docker containers or boxes. To bind to another Docker container or box, create a binding and pass binding references via text expression variables with this syntax: `\{{ binding_name.variable_name }}`
 
 Here we connect to a box that deploys an S3 bucket using a binding. As Dockerfiles don’t allow scripts, we use a text expression to pass the binding reference.
 

@@ -24,13 +24,9 @@ Here's how you might arrive at this error message. After you log into [Cloud App
 
 Then click **New Provider** on the left navigation bar.
 
-Select **Azure Resource Manager** to build a customer account in the current Microsoft Azure. Note: this is the new Azure, not the classic Azure. The dialog box that appears will enable you to create a new Azure customer account. Add a name for the account and select the **Create a new Azure customer account** option.
+Select **Microsoft Azure** to build a customer account in the current Microsoft Azure. Note: this is the new Azure, not the classic Azure. The dialog box that appears will enable you to create a new Azure customer account. Add a name for the account and select the **Create a new Azure Subscription** option.
 
 ![Cloud Application Manager New Provider Details](../../images/cloud-application-manager-error4.png)
-
-Click **Connect a CenturyLink Cloud Account** and enter your CLC account admin credentials. This ties Azure directly into the CenturyLink Cloud billing service.
-
-![Connect New Provider to a CenturyLink Cloud Account](../../images/cloud-application-manager-error5.png)
 
 ### The Exception Message
 
@@ -44,7 +40,7 @@ If you send us a ticket we will review your case.
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](./troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

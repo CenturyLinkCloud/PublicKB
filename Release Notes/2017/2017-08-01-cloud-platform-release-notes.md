@@ -55,5 +55,5 @@ For additional details, see our [Product Page](https://www.ctl.io/object-storage
 
 **New Locations**
 
-Bare Metal Servers are now available in Portsmouth, Great Britain (GB1) and Frankfurt, Germany (DE3). Choose from our selection of five different server configurations providing users with different options: more CPUs, more memory, SSDs, and more local storage with configurable RAID. Simple Backup Services and Runner are supported.
+Bare Metal Servers are now available in Reading, Great Britain (GB1) and Frankfurt, Germany (DE3). Choose from our selection of five different server configurations providing users with different options: more CPUs, more memory, SSDs, and more local storage with configurable RAID. Simple Backup Services and Runner are supported.
 For additional details, see our [Product Page](https://www.ctl.io/bare-metal/) and [FAQ](../../Servers/bare-metal-faq.md).

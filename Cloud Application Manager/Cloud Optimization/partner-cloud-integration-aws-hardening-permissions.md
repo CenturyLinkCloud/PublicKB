@@ -1,5 +1,5 @@
 {{{
-  "title": "Partner Cloud Integration: CenturyLink Permissions for Hardened AWS Accounts",
+  "title": "Partner Cloud Integration: CenturyLink Permissions and Access for Optimized AWS Accounts",
   "date": "08-30-2017",
   "author": "Ben Swoboda",
   "attachments": [],
@@ -12,37 +12,75 @@ Amazon Web Services Accounts that are hardened by CenturyLink will provide our t
 
 ### Audience
 
-Users of accounts that already have or are considering full hardening. This is for all new AWS accounts created through Cloud Application Manager and any existing account moving into CenturyLink's care which [opts for full hardening](./partner-cloud-integration-connect-aws.md).
+Users of accounts that already have or are considering CenturyLink Optimization of AWS Accounts. This is for all new AWS accounts created through Cloud Application Manager and any existing account moving into CenturyLink's care.
 
 ### Prerequisites
 
 For a new AWS Account:
-* The customer must have reviewed the process for creating a [new Amazon Web Services account](./partner-cloud-integration-aws-new.md)
+* The customer must have reviewed the process for creating a [new Amazon Web Services account](partner-cloud-integration-aws-new.md)
 
 For an existing AWS Account:
-* The customer must already have an AWS account that has been specifically mentioned on the AWS Share-Shift. (Only approved accounts are authorized for this process.)
-* The customer must have reviewed the process for transferring an [existing Amazon Web Services account](./partner-cloud-integration-aws-existing.md)
+* The customer must already have an AWS account that has been specifically mentioned in the AWS account transfer process. (Only approved accounts are authorized for this process.)
+* The customer must have reviewed the process for transferring an [existing Amazon Web Services account](partner-cloud-integration-aws-existing.md)
 
 
 ### Important Information
 
-**Root Level Access**
+#### Root Level Access
 
-Root level access is not provided to CenturyLink users for any account.
+Root level access is not provided to CenturyLink users for any account. Root account access should be avoided unless absolutely necessary. This is true for both Master Payer accounts owned by CenturyLink and any linked account owned by the customer.
 
-For existing accounts, the Customer administrator is asked to set up MFA access after configuration and keep their key in a secure location.
+For existing accounts, the Customer administrator is asked to set up MFA access after configuration and keep their key in a secure location. Customers are also asked never to log in with root account access.
 
-For new accounts created through Cloud Application Manager, MFA access is set up after configuration of the account is complete. The key is kept in an encrypted vault.
+For Master Payers and new accounts created through Cloud Application Manager, MFA access is set up after configuration of the account is complete. The key is kept in an encrypted vault within a domain separated from the main CenturyLink domain.
 
-**CenturyLink Account Access by Role**
 
-CenturyLink or Customer Role | Type of User | Optimization scenario | IAM Permissions and Restrictions
---- | --- | --- | ---
-Customer Admin (see below) | Customer-defined | Full Hardening | Add, Change, and Delete capabilities for all services. No capabilities to review or usage, billing, payment methods, or budgets.
-Cloud Application Manager Account Optimization | Automated Tool | Full Hardening | Administration
-Cloud Application Manager Application Lifecycle Management | Automated Tool |Full Hardening | All the ability to manipulate resources as described [here](https://www.ctl.io/knowledge-base/cloud-application-manager/deploying-anywhere/using-your-aws-account/).
-CenturyLink Operations | Operations Staff | Full Hardening | View-only capabilities for all products and services
-*CenturyLink Service Management* | *Service Management Staff* | *This is not an immediate part of any Optimization scenario but it is enabled by the Cloud Application Manager Account Optimization. This role is only applied when customer has purchased Service Management support from CenturyLink* |  *Add, Change, and Delete capabilities for all services. No capabilities to edit account details or budgets.*
+#### Federated access
+All the roles described below except for the Customer Admin maintain a trust with CenturyLink accounts. This allows certain CenturyLink users and automated tools access to customer accounts, inheriting the permissions and restrictions described with the roles below.
 
-* For customers with Existing accounts, the Customer Admin Role does not have much impact as the customer will already have their own users prior to moving into CenturyLink's care.
-* Restrictions to review usage, billing, payment methods, or budgets are in place because the data there will become misleading once the account in moved into CenturyLink's care. This is one of the reasons we provide our Cloud Application Manger Analytics.
+#### IAM Access
+The following categories explain how CenturyLink automatically provides or restricts access to internal and customer users.
+
+All policies summarized in this document are the result of intensive consultation with AWS MSP specialists, and are designed to be in accordance with partner requirements and suggested best practices. All policies have been reviewed and approved by the vendor and 3rd party auditors.
+
+**Customer Policy**
+* **Targeted groups/tools/users**: Any customer user. This policy is applied to all customer IAM Groups.
+* **Intent**: To either be added to existing customer IAM groups or to be given to new customer groups. This policy allows the user to manipulate all services within AWS, but restricts certain views and actions that would be confusing or cause conflict in an Optimized account.
+* **Change Requests**: CenturyLink expects to improve these policies over time to allow more permissions to the Customer users. If there are any concerns or desired exceptions regarding these policies, please submit a ticket and one of our Product Team members will be glad to discuss it with you.
+* **Policy Summary**
+> * Restricts the ability to link or unlink from an organization.
+> * Restricts deleting CenturyLink-defined IAM policies, roles and additional sundry functions (such as MFA/SAML deletion).
+> * Billing/Usage/Budgeting aspects of the portal are restricted to prevent confusion due to CenturyLink consolidated billing. (Optimized accounts have access to this data through Cloud Application Manager's Analytics tools.)
+
+**CenturyLink Developer Policy**
+* **Targeted groups/tools/users**:Cloud Application Manager's Optimization tool. A limited number of CenturyLink developers have access to the tool.
+* **Intent**: The Optimization tool should be able to configure customer accounts, affect IAM permissions, and swiftly remediate any issues.
+* **Change Requests**: Because CenturyLink must maintain administrative access, no changes can be made at this time. Please see the [Service Guide](https://www.ctl.io/legal/cloud-application-manager/service-guide/) for details.
+* **Policy Summary**:
+> * Full access
+
+
+**Cloud Application Manager Policy**
+* **Targeted groups/tools/users**: Cloud Application Manager
+* **Intent**: To permit Cloud Application Manager's application lifecycle management (ALM) capabilities.
+* **Change Requests**: [The standard CAM policy](https://www.ctl.io/knowledge-base/cloud-application-manager/deploying-anywhere/using-your-aws-account/) is meant to be customizable. If you would like to alter the ALM capabilities of Cloud Application Manager, please submit a ticket describing the policy you wish to apply.
+* **Policy Summary**
+> * All the ability to manipulate resources as described [here](../Deploying Anywhere/using-your-aws-account.md)
+> * Allows governance for all EC2 functions
+> * Full control of typical autoscaling/Cloud Formation/RDS/S3 tasks
+> * Allows IAM user/policy creation, deletion, listing and modification.
+> * Allows core Cloud Application Manager functionality and delegation for Managed Services Anywhere assistance.
+
+**CenturyLink Operations Policy**
+* **Targeted groups/tools/users**: Only CenturyLink Operations Staff
+* **Intent**: Provide CenturyLink Operations the ability to deliver Platform-level support to customers.
+* **Change Requests**: If you need Operations to apply special considerations regarding handling of your account, please submit a ticket for review.  
+* **Policy Summary**
+> * View-only capabilities for all products and services.
+
+**CenturyLink Service Management Policy**
+* **Targeted groups/tools/users**: Service Management Staff
+* **Intent**:This is not an immediate part of any Optimization scenario but it is enabled by the Cloud Application Manager Account Optimization. Access to a customer's account via this role is only given to a CenturyLink representative when the customer has purchased Service Management from CenturyLink.
+* **Change Requests**: You may wish to have this default role removed or altered at any time. Please submit a ticket describing the change you would like.
+* **Policy Summary**:
+> * Add, Change, and Delete capabilities for all services. No capabilities to edit account details or budgets.*

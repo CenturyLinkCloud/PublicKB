@@ -15,17 +15,17 @@ The Script box is the type you most commonly use to define deployments. It accep
 
 ### Creating Your First Script Box
 
-On the Boxes page, click **New > Script**. Enter a name, optionally a description and other [metadata](../Core Concepts/boxes.md). Save to continue. Configure the deployment using [events](./start-stop-and-upgrade-boxes.md) and [variables](./parameterizing-boxes-with-variables.md).
+On the Boxes page, click **New > Script**. Enter a name, optionally a description and other [metadata](../Core Concepts/boxes.md). Save to continue. Configure the deployment using [events](start-stop-and-upgrade-boxes.md) and [variables](parameterizing-boxes-with-variables.md).
 
 When ready to test the configuration, click **Deploy**. Under the Deployment Box, search or select a deployment policy. Policies whose claims match the script box requirements appear here.
 
 Don’t find what you need? Then click **Create a new deployment policy box**.
 
-The easiest way to understand script boxes is to build one. Follow this tutorial to build a simple box that says [Hello World](//www.ctl.io/guides/).
+The easiest way to understand script boxes is to build one. Follow this tutorial to build a simple box that says [Hello World](../Getting Started/getting-started-with-hello-world.md).
 
 ### Adding Child Script Boxes
 
-Let’s build on top of the [Hello World](//www.ctl.io/guides/) box as an example. To set up full-scale application deployments, you need to stitch components or micro components together. You do that by stacking child boxes within a parent. In this example, we’ll stack the Hello World box within another box.
+Let’s build on top of the [Hello World](../Getting Started/getting-started-with-hello-world.md) box as an example. To set up full-scale application deployments, you need to stitch components or micro components together. You do that by stacking child boxes within a parent. In this example, we’ll stack the Hello World box within another box.
 
 Create a new Script box and call it Greeting. Tag that it needs Linux. To learn more, see requirements and auto updates under [Box Basics](../Core Concepts/boxes.md).
 

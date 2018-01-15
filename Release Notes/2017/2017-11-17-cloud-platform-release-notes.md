@@ -60,7 +60,7 @@ __Public Cloud IaaS__
 
 * __GB1 Datacenter Announcement__
 
-  As part of normal service operation, CenturyLink evaluates the CenturyLink Cloud platform resources for capacity, performance and connectivity constraints.  Over the past 12 months, CenturyLink has identified that our GB1 node, in Portsmouth, was running on first generation hardware and would benefit from a hardware refresh.  However, our physical facility did not have the physical space necessary to facilitate an in-place expansion.  CenturyLink solved this problem by expanding the GB1 architecture across our high-capacity network to one of our other on-net datacenter facilities.
+  As part of normal service operation, CenturyLink evaluates the CenturyLink Cloud platform resources for capacity, performance and connectivity constraints.  Over the past 12 months, CenturyLink has identified that our GB1 node, in Reading, was running on first generation hardware and would benefit from a hardware refresh.  However, our physical facility did not have the physical space necessary to facilitate an in-place expansion.  CenturyLink solved this problem by expanding the GB1 architecture across our high-capacity network to one of our other on-net datacenter facilities.
 
   CenturyLink is happy to have successfully completed this significant upgrade to the GB1 node.  Customer instances in GB1 are now running in Reading on our latest-generation hyper-converged, hardware platform.  Our approach to capacity expansions is to make them completely in the background, as is expected of a cloud service.  Extensive network engineering focus and planning went into ensuring all resources were auto-balanced into the upgraded infrastructure seamlessly, without downtime or impact to customer instances.  Since the upgrade was completed, we have seen significant performance improvements and have confirmed this with benchmarking by Cloud Spectator, who showed a significant performance of our GB1 node compared to the prior assessment conducted in May 2017 on the older node architecture.
 
@@ -72,12 +72,19 @@ __Public Cloud IaaS__
 
 * __Notice of Microsoft SQL Server Fee Change__
 
-  *The following notice was sent to all MSSQL clients on Thursday, November 16th.*  
+  **The following notice was sent to all MSSQL clients on Thursday, November 16th.**  
 
-  Beginning [60 days following notice date], 2018, the service fees for Microsoft SQL Server on CenturyLink Cloud will change. As a result of a recent rate increase notification from Microsoft, we have re-evaluated our pricing for Microsoft SQL Server and are implementing the following price change to account for the increase and adjust based on the overall market .
+  Beginning [60 days following notice date], 2018, the service fees for Microsoft SQL Server on CenturyLink Cloud will change. As a result of a recent rate increase notification from Microsoft, we have re-evaluated our pricing for Microsoft SQL Server and are implementing the following price change to account for the increase and adjust based on the overall market.
+
   Customers will be billed the following new rate for any existing and new Microsoft SQL Server deployments.
 
-  ![](../../images/release_notes/2017-11-17/MSSQL_rate_change.png)
+    Product/Service|Description|Billing Type|Current Price|New Price
+    ---------------|-----------|------------|-------------|---------
+    Microsoft SQL Server Web Edition|Per vCPU license per month<sup>*</sup>|Monthly|$4.89|$8.00
+    Microsoft SQL Server Standard Edition|Per vCPU license per month<sup>*</sup>|Monthly|$79.00|$125.00
+    Microsoft SQL Server Enterprise Edition|Per vCPU license per month<sup>*</sup>|Monthly|$299.00|$440.00
+
+    <sup>* 4 vCPU minimum per Microsoft licensing terms</sup>
 
   Should you have additional questions, please contact your Sales Representative or email help@ctl.io.
 
