@@ -15,7 +15,7 @@ There are two different flavors of Azure and Cloud Application Manager has provi
 Classic Azure | https://manage.windowsazure.com | Classic Azure | This document
 Microsoft Azure | https://portal.azure.com | Microsoft Azure  | [Using Microsoft Azure](using-microsoft-azure.md)
 
-Microsoft's Classic Azure hosts applications in virtual machines and in cloud services via Web, Worker roles. Cloud Application Manager supports deploying to all three models through the Virtual Machine Role, Web and Worker roles. In addition, we support Microsoft SQL Database Service through Azure. Take a look at the [benefits of deploying to Azure using Cloud Application Manager.
+Microsoft's Classic Azure hosts applications in virtual machines and in cloud services via Web, Worker roles. Cloud Application Manager supports deploying to all three models through the Virtual Machine Role, Web and Worker roles. Take a look at the [benefits of deploying to Azure using Cloud Application Manager.
 
 **Note:** If you’re running Cloud Application Manager as an appliance in your private datacenter, you can deploy only to the virtual machine role.
 To learn about Azure hosting services, see the [Azure help](https://azure.microsoft.com/en-us/documentation/articles/choose-web-site-cloud-service-vm/).
@@ -93,7 +93,6 @@ Follow these steps.
 You can deploy to the following services in Azure:
 * Web and Worker Roles
 * Virtual machine role
-* Microsoft SQL Database Service
 
 Although all the services are available to Windows based applications, Azure supports only the VM role for Linux applications.
 
@@ -216,61 +215,6 @@ When you enable autoscaling, you also want to turn on load balancing to direct t
 Here we’ve set an instance to autoscale and load balance with a limit of up to three machines. To allow traffic to each instance spawned, the port variable on the box is mapped as both the public and private port through which Internet traffic reaches the instance.
 
 ![azure-configureautoscaling-loadbalancing-depprofile-10.png](../../images/cloud-application-manager/azure-configureautoscaling-loadbalancing-depprofile-10.png)
-
-### Microsoft SQL Database Service
-
-7In Cloud Application Manager, Microsoft Azure SQL Database service is available as a service box. Select the **Microsoft SQL Database Service** box from Instances > Quick Starts to [deploy a new instance](deploying-managing-instances.md). In the instance dialog, provide deployment variable values and select Azure deployment options.
-
-### Deployment Variables
-
-Provide these variable values before you deploy a SQL Database to Azure.
-
-![azure-sqldatabase-deploymentvariables-11.png](../../images/cloud-application-manager/azure-sqldatabase-deploymentvariables-11.png)
-
-| Variable | Description |
-|----------|-------------|
-| username | Provide a username to be able to log in to the SQL server hosting the database. |
-| password | Provide a password to be able to log in to the SQL server hosting the database. |
-| port | By default, port 1433 is opened to allow traffic from outside of the Azure virtual network to the database. It’s the only way to communicate with the database when outside the Azure network. |
-| database_name | Optionally, give the database a name. Else, we assign the instance service ID as its name. |
-
-### Azure SQL Database Service Deployment Options
-
-![azure-sqldatabase-depprofile-12.png](../../images/cloud-application-manager/azure-sqldatabase-depprofile-12.png)
-
-**Deployment**
-
-| Option | Description |
-|--------|-------------|
-| Provider | Select an Azure provider account that you want to use to deploy. |
-
-**Resource**
-
-| Option | Description |
-|--------|-------------|
-| Edition |	Choose from Basic, Standard, and Premium editions. Web and Business are soon to be retired. |
-| Performance Level | [Performance levels](https://msdn.microsoft.com/en-us/library/azure/dn741336.aspx) are available for different tiers of Standard or Premium editions. Each tier indicates the disk throughput units (DTUs) for CPU, memory, read, and write capacity of the edition. |
-| Max Size | Select the maximum size up to which the database can grow. This varies by edition. See the [Azure help](https://azure.microsoft.com/en-us/pricing/details/sql-database/) to learn more. |
-
-**Network**
-
-| Option | Description |
-|--------|-------------|
-| Location | Select the region where you want the database instance to deploy. |
-
-**Allowed IP Addresses**
-
-| Option | Description |
-|--------|-------------|
-| Subnet | Enter the IP address ranges in the CIDR format to form virtual subnets that firewall and allow only machines in those IP address ranges to connect to the SQL server. |
-
-Some useful things to keep in mind about Azure SQL Database deployments:
-
-* When you hit deploy, we create a SQL database in a SQL server.
-* When you delete the instance, we delete both the server and the database. To save data, you can always [copy the database](https://msdn.microsoft.com/library/azure/ff951624.aspx) to a target server or [export the database](https://msdn.microsoft.com/en-us/library/hh335292.aspx#export) to a storage blob before deleting.
-* Use the [Azure Management Portal](http://azure.microsoft.com/en-us/documentation/articles/sql-database-get-started/) or [SQL Server Management Studio](https://azure.microsoft.com/en-us/documentation/articles/sql-database-manage-azure-ssms/) to manage SQL databases.
-* Connect to the database using the [connection string information](http://msdn.microsoft.com/en-us/library/azure/ee336282.aspx) from the Azure Management Portal.
-* Retrieve, update, or delete database data using [Transact-SQL queries](https://azure.microsoft.com/en-us/documentation/articles/sql-database-get-started/#AddData).
 
 ### Contacting Cloud Application Manager Support
 

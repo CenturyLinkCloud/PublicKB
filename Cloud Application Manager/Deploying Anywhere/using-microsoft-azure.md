@@ -58,12 +58,17 @@ Once pressed the save button our new provider starts to synchronize with our azu
 
 * VM images of windows family operating systems.
 * VM images of operating systems of Linux family.
-* Region list which we can deploy the mentioned services as well as the templates of Azure Resource Manager.
+* Region list which we can deploy the mentioned services as well as the templates of Microsoft Azure.
 * List of deployed Virtual Machines that are currently not being managed from Cloud Application Manager.
 
 During synchronization, we can get warnings about locations may be ignored because there are no associated virtual networks to them. This is because Cloud Application Manager does not create virtual networks but requires one in the deployment operation of one virtual machine.
 
+![microsoft-azure-during-sync.png](../../images/cloud-application-manager/microsoft-azure-during-sync.png)
+
+
 The result of the synchronization process will be the creation of one ARM template box and two policy boxes (Windows and RHEL respectively) in case of exist a virtual network in our account.
+
+Samples and management appliance deployment policy could be installed too.
 
 ### Deploying Instances in Azure
 
@@ -71,7 +76,7 @@ You can deploy to the following services in Azure:
 
 * Windows based virtual machines
 * Linux based virtual machines
-* Azure resource manager templates
+* Microsoft Azure templates
 
 **Azure OS Images Available to Deploy in Cloud Application Manager**
 
@@ -81,7 +86,7 @@ As part of the result of synchronization process you can find a list of availabl
 
 This images are what we show in image list from policy box edition.
 
-In addition, if you don't find the right image in that list, you could add a new image from the Azure Marketplace clicking in the "New" button at the top right corner and defining the following image properties: 
+In addition, if you don't find the right image in that list, you could add a new image from the Azure Marketplace clicking in the "New" button at the top right corner and defining the following image properties:
 
 ![microsoft-azure-add-os-image-to-deploy-10.png](../../images/cloud-application-manager/microsoft-azure-add-os-image-to-deploy-10.png)
 
@@ -100,6 +105,8 @@ On the other hand, you could remove it from available images using the "Trash" i
 
 To deploy a virtual machine with compute services you can edit one of windows or RHEL policy boxes or create a new one. Then you can save your changes and click **Deploy**.
 
+![microsoft-azure-compute-deployment-options-pre4.png](../../images/cloud-application-manager/microsoft-azure-compute-deployment-options-pre4.png)
+
 ![microsoft-azure-compute-deployment-options-4.png](../../images/cloud-application-manager/microsoft-azure-compute-deployment-options-4.png)
 
 **Resources**
@@ -113,6 +120,7 @@ To deploy a virtual machine with compute services you can edit one of windows or
 | Password | Specify a password to be able to RDP or SSH into the instance directly. |
 | SSH Certificate | Only in Linux machines you can specify a certificate to access via ssh. |
 | Instances | Specify the number of instances to spawn. Note that at this time, we don’t autoscale or load balance instances. To enable that, you have to manually configure these options in [Azure](https://msdn.microsoft.com/en-us/library/hh680914). |
+| Delegate Management  | Delegate management to CenturyLink.  |
 
 
 **Network**
@@ -121,6 +129,14 @@ To deploy a virtual machine with compute services you can edit one of windows or
 |--------|-------------|
 | Virtual Network |	This network has to be created before because Cloud Application Manager doesn't deploy any. |
 | Subnet | This subnet is the resource related to  the virtual machine's network interface. Actually a virtual network is not used at deployment time. |
+|Security Group | Filter incoming and outgoing traffic for the virtual machine based on a set of rules. Multiple security groups in a zone can be selected for a virtual machine. For more information, see [Security Groups](http://docs.cloudstack.apache.org/projects/cloudstack-administration/en/4.3/networking_and_traffic.html#security-groups). |
+|Public IP Address   | The public IP Address exposes our server to the public internet where other applications can access it.|
+
+**Disks**
+
+| Option | Description |
+|--------|-------------|
+| Data Disk   |  Storage size for data in addition to the Local Disk|
 
 If you can't create any policy box on Windows Azure provider probably you have to create a virtual network from azure portal or you may deploy a new one with a template as we describe in following section.
 
@@ -133,7 +149,7 @@ Azure ARM Templates are supported on Cloud Application Manager with Microsoft Az
 1. Create Deployment Policy:
    * Go to **Boxes** > **New** > **Deployment Policy**.
    ![microsoft-azure-create-new-deployment-policy-5.png](../../images/cloud-application-manager/microsoft-azure-create-new-deployment-policy-5.png)
-   * **Select Azure Resource Manager** on the menu.
+   * **Select Microsoft Azure** on the menu.
    ![microsoft-azure-select-arm-new-deployment-policy-box-6.png](../../images/cloud-application-manager/microsoft-azure-select-arm-new-deployment-policy-box-6.png)
    * Select provider, name and description fields.
    ![microsoft-azure-select-provider-name-7.png](../../images/cloud-application-manager/microsoft-azure-select-provider-name-7.png)
@@ -158,7 +174,6 @@ You can import existing Virtual Machines into you workspace only in one click. T
 
 As part of the result of synchronization process you can find a list of available virtual machines that already exist in your account but not used yet in Cloud Application Manager. You can import an existing one clicking **Import** button.
 
-The only requirement is instance must be in Running status.
 
 ![microsoft-azure-available-instances-9.png](../../images/cloud-application-manager/microsoft-azure-available-instances-9.png)
 
