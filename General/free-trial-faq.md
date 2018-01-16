@@ -14,7 +14,7 @@ Prospective Users of CenturyLink Cloud
 
 ### How do I get a free trial?
 
-Visit [www.ctl.io/free-trial](http://www.ctl.io/free-trial). You will need a valid credit card (Visa or Mastercard are accepted) and a mobile phone that supports text messaging, which is used to verify your identity and prevent fraudulent usage.
+Visit [www.ctl.io/free-trial](http://www.ctl.io/free-trial). You will need a valid credit card (Visa or Mastercard only - American Express, Discover, and pre-paid credit cards are not accepted) and a mobile phone that supports text messaging, which is used to verify your identity and prevent fraudulent usage.
 
 ### What's included with a free trial?
 
@@ -30,7 +30,7 @@ When your trial is exhausted, you will be billed on a monthly basis based for co
 
 ### How long does it take to get a free trial account activated?
 
-After you have entered the verification code, provided a valid credit card (Visa or Mastercard only, and no pre-paid cards), and completed the activation form, your account will be created instantly. You will then receive an email with your account details. Representatives from CenturyLink Cloud will be in touch shortly thereafter to help you make the most of your trial.
+After you have entered the verification code, provided a valid credit card (Visa or Mastercard only - American Express, Discover, and pre-paid credit cards are not accepted), and completed the activation form, your account will be created instantly. You will then receive an email with your account details. Representatives from CenturyLink Cloud will be in touch shortly thereafter to help you make the most of your trial.
 
 ### Is there an expiration time on the free trial?
 
