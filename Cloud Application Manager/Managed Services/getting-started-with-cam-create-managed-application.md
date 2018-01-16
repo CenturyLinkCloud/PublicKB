@@ -16,7 +16,7 @@ Then, follow these simple steps.
 
 * Configure a script box for your application
 * Create Monitoring policy
-* Request use of Managed Application script box
+* Request Managed Application script box (Linux or Windows) be shared to your workspace
 * Create script box to be Managed version of your application
 * Add Managed Application script box as variable
 * Pass necessary values to Managed Application script box
@@ -39,9 +39,9 @@ Let's head over to the Monitoring page (https://monitoring.cam.ctl.io/) where we
 
 **Note: Create your policy in the same workspace as you created your managed application script box**
 
-Clicking on the **Policies** link on the left which should render something like the following.
+Clicking on the **Policies** link on the left which will render something like the following.
 
-![msa-managed-mongodb-watcher-policies.png](../../images/managed-services-anywhere/msa-managed-mongodb-watcher-policies.png)
+![msa-managed-mongodb-watcher-policies.png](../../images/managed-services-anywhere/msa-managed-mongodb-watcher-policies_v1.png)
 
 Go ahead and click **New**, which will show a pop-up modal. Here, enter a name and description. Take note of the name as it will be used later.
 
@@ -55,7 +55,11 @@ So, I added a process check. With your necessary checks in place, you can move o
 
 ![msa-managed-mongodb-watcher-policies-onechecks.png](../../images/managed-services-anywhere/msa-managed-mongodb-watcher-onechecks.png)
 
-### Request use of Managed Application Script Box
+### Request Managed Application script box (Linux or Windows) be shared to your workspace
+
+Here you will need to request the Managed Services Anywhere's Managed Application script box to be shared to a designated workspace of your choosing. It will be with this script box you will be able to trigger the Make Managed process for applications.
+
+**Note: Both a Windows and Linux version of the Managed Application script box will be shared with your workspace.**
 
 For now, this has some back and forth via email until automation can be put in place.  We found it important to make this available to you sooner rather than later.
 
@@ -79,7 +83,7 @@ App Maker Man or Woman
 The Managed Services Anywhere team will use their special powers to transform the policy into a JSON document that can be consumed and stored with a mapping to the simple application name provided.  This way, whenever the application is deployed, this monitoring policy definition will be applied.
 
 
-Expect to receive an email from Managed Services Anywhere informing you of this part of the process being complete. You should see the Managed Application script box in the workspace provided and with that you can complete the steps below. Additionally, the monitoring policy you created can then be deleted if you wish as the MSA team only uses it as a reference.
+Expect to receive an email from Managed Services Anywhere, within 2 business days, informing you of this part of the process being complete. You will see the Managed Application script box in the workspace provided and with that you can complete the steps below. Additionally, the monitoring policy you created can then be deleted if you wish as the MSA team only uses it as a reference.
 
 ### Create Managed Script Box for Your Application
 
@@ -109,11 +113,11 @@ Below is an expanded view of the boxes included in this script box and their res
 
 Since the **APPLICATION_NAME**, **APPLICATION_DESCRIPTION**, and **APPLICATION_VERSION** are required values in the Managed Application script box, you will need to override these values in this new managed script box.  Since the underlying make managed application script box is **internal**, these values won't be visible at deploy time.  So, they will require a default value as shown in the example below.  You are then welcome to expose your own variables and custom scripts to override these values during the execution of a deployment.
 
-![msa-managed-mongodb-scriptbox-vars-defaults.png](../../images/managed-services-anywhere/msa-managed-mongodb-scriptbox-vars-defaults.png)
+![msa-managed-mongodb-scriptbox-vars-defaults.png](../../images/managed-services-anywhere/msa-managed-mongodb-scriptbox-vars-defaults_v1.png)
 
 Here is a figure of the partially expanded events section. Note that **configure** is the only populated event for the parent script box, as it is acting as a kind of mapping between the application script box and the Managed Application script box.
 
-![msa-managed-mongodb-events-expanded.png](../../images/managed-services-anywhere/msa-managed-mongodb-events-expanded.png)
+![msa-managed-mongodb-events-expanded.png](../../images/managed-services-anywhere/msa-managed-mongodb-events-expanded_v1.png)
 
 And you can see that I have populated the **configure** event with some code.  Below are the contents of that lifecycle event:
 
