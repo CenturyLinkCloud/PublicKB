@@ -26,7 +26,7 @@ Each free trial includes:
 
 There are also some limits on rapid scale-up of resources, please contact [help@ctl.io](mailto:help@ctl.io) for more details.
 
-When your trial is exhausted, you will be billed on a monthly basis based for consumption of services in your account as per our [Pricing Catalog](https://www.ctl.io/pricing).
+When your trial is exhausted, you will be billed on a monthly basis for consumption of services in your account, as defined by our [Pricing Catalog](https://www.ctl.io/pricing).
 
 ### How long does it take to get a free trial account activated?
 
