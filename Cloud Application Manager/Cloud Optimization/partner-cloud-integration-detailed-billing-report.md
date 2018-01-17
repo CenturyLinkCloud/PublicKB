@@ -8,7 +8,7 @@
 
 ### Overview
 
-Optimizing Accounts allows a Cloud Application Manager user receive [consolidated bills](partner-cloud-integration-consolidated-billing.md). To get further detail of these invoices, users may review the billing history.
+Optimizing Accounts allows a Cloud Application Manager user to receive [consolidated bills](partner-cloud-integration-consolidated-billing.md). To get further details for these invoices, users may review the billing history.
 
 ### Audience
 
@@ -23,15 +23,15 @@ Cloud Application Manager organization administrator access.
 
 ### Important Information
 
-Starting January 1, 2018 data will be available according to the following methods for December 2017, going forward. November reconciliation SKUs (labled "Update to Previous Month...") which appear on the December invoice will not have any detail. If you do need detailed information for those prior months, please submit a support ticket.
+Starting January 1, 2018 data will be available according to the following methods for December 2017, going forward. November reconciliation SKUs (labled "Update to Previous Month...") which appear on the December invoice will not have any detail. If you need detailed information for those prior months, please submit a support ticket.
 
-To gain access to the information, navigate to the billing history within Cloud Application Manager by switching you context to an organization. Then select "Billing", then "Usage History."
+To gain access to the information, navigate to the billing history within Cloud Application Manager by switching your context to an organization. Then select "Billing", then "Usage History."
 
 Select a month.
 
 ![Select a Month](../../images/cloud-application-manager/CAM_COA_DetailedBilling_1.png)
 
-By clicking the drop-down for the Optimization Line Item, it will explain how each partner account or subscription contributed to that SKU's total.
+By clicking the dropdown for the Optimization Line Item, it will explain how each partner account or subscription contributed to that SKU's total.
 
 ![Select a Line Item](../../images/cloud-application-manager/CAM_COA_DetailedBilling_2.png)
 
