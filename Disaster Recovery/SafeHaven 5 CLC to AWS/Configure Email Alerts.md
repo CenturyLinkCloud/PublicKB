@@ -31,7 +31,7 @@ Before enabling the email alerts please make sure that the Protection Groups are
 
 ### Video Tutorial
 <p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B3FA9xy5PwY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u0J_-fyzzAE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
  </p>  
  
 **Next Step** is to [Test Failover to AWS](Test Failover to AWS.md). User can also choose to [Create Manual Checkpoint](Create Manual Checkpoint.md)
