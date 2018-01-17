@@ -44,6 +44,7 @@ The following categories explain how CenturyLink automatically provides or restr
 All policies summarized in this document are the result of intensive consultation with AWS MSP specialists, and are designed to be in accordance with partner requirements and suggested best practices. All policies have been reviewed and approved by the vendor and 3rd party auditors.
 
 **Customer Policy**
+* **Policy Name**: CTLCustomerPolicy
 * **Targeted groups/tools/users**: Any customer user. This policy is applied to all customer IAM Groups.
 * **Intent**: To either be added to existing customer IAM groups or to be given to new customer groups. This policy allows the user to manipulate all services within AWS, but restricts certain views and actions that would be confusing or cause conflict in an Optimized account.
 * **Change Requests**: CenturyLink expects to improve these policies over time to allow more permissions to the Customer users. If there are any concerns or desired exceptions regarding these policies, please submit a ticket and one of our Product Team members will be glad to discuss it with you.
@@ -53,6 +54,8 @@ All policies summarized in this document are the result of intensive consultatio
 > * Billing/Usage/Budgeting aspects of the portal are restricted to prevent confusion due to CenturyLink consolidated billing. (Optimized accounts have access to this data through Cloud Application Manager's Analytics tools.)
 
 **CenturyLink Developer Policy**
+* **Policy Name**: CTLDeveloperPolicy
+* **Role Name**: CTLDeveloperRole
 * **Targeted groups/tools/users**:Cloud Application Manager's Optimization tool. A limited number of CenturyLink developers have access to the tool.
 * **Intent**: The Optimization tool should be able to configure customer accounts, affect IAM permissions, and swiftly remediate any issues.
 * **Change Requests**: Because CenturyLink must maintain administrative access, no changes can be made at this time. Please see the [Service Guide](https://www.ctl.io/legal/cloud-application-manager/service-guide/) for details.
@@ -61,6 +64,8 @@ All policies summarized in this document are the result of intensive consultatio
 
 
 **Cloud Application Manager Policy**
+* **Policy Name**: CTLCAMPolicy
+* **Role Name**: CTLCAMRole
 * **Targeted groups/tools/users**: Cloud Application Manager
 * **Intent**: To permit Cloud Application Manager's application lifecycle management (ALM) capabilities.
 * **Change Requests**: [The standard CAM policy](https://www.ctl.io/knowledge-base/cloud-application-manager/deploying-anywhere/using-your-aws-account/) is meant to be customizable. If you would like to alter the ALM capabilities of Cloud Application Manager, please submit a ticket describing the policy you wish to apply.
@@ -72,6 +77,8 @@ All policies summarized in this document are the result of intensive consultatio
 > * Allows core Cloud Application Manager functionality and delegation for Managed Services Anywhere assistance.
 
 **CenturyLink Operations Policy**
+* **Policy Name**: CTLOperationsPolicy
+* **Role Name**: CTLOperationsRole
 * **Targeted groups/tools/users**: Only CenturyLink Operations Staff
 * **Intent**: Provide CenturyLink Operations the ability to deliver Platform-level support to customers.
 * **Change Requests**: If you need Operations to apply special considerations regarding handling of your account, please submit a ticket for review.  
@@ -79,6 +86,8 @@ All policies summarized in this document are the result of intensive consultatio
 > * View-only capabilities for all products and services.
 
 **CenturyLink Service Management Policy**
+* **Policy Name**: CTLServiceManagmentPolicy
+* **Role Name**: CTLServiceManagmentRole
 * **Targeted groups/tools/users**: Service Management Staff
 * **Intent**:This is not an immediate part of any Optimization scenario but it is enabled by the Cloud Application Manager Account Optimization. Access to a customer's account via this role is only given to a CenturyLink representative when the customer has purchased Service Management from CenturyLink.
 * **Change Requests**: You may wish to have this default role removed or altered at any time. Please submit a ticket describing the change you would like.
