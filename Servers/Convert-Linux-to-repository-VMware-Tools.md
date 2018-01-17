@@ -13,7 +13,9 @@ On Linux machines that have had their VMware Tools installed via the tools insta
 **Detailed Steps**
 
 We first need to remove the existing vSphere installed version of VMware Tools.  This is done by executing the following script that should exist if the vSphere installed version of VMware Tools is present.
-vmware-uninstall-tools.pl
+
+`vmware-uninstall-tools.pl`
+
 If any other versions of VMware Tools have been installed (including open-vm-tools older than 9.4.0 series), they must be removed. 
 
 **RHEL / CentOS:**
