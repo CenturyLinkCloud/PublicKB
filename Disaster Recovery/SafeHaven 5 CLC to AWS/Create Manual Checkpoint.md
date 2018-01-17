@@ -22,7 +22,7 @@ Protection Group has completed initial replication.
 ### Create Manual Checkpoint for Linux Protection Group
 1. **Login to the Production Linux Server** and run the following command to initiate Rsync job:
 ```
-/opt/datagardens//bin/repeatedRsync
+/opt/datagardens/bin/repeatedRsync
 ```
 2. Once the Rsync job completes on the production server, right click the protection group, and click **Create Manual Checkpoint**.
 3. Click **Create**.
