@@ -14,7 +14,7 @@ Protection Group has completed initial replication.
 
 ### Create Manual Checkpoint for Windows Protection Group
 1. Right click the protection group, and click **Create Manual Checkpoint**.
-2. Check **Use VSS** if a VSS checkpoint is needed **only for Windows**.
+2. Check **Use VSS** if a VSS checkpoint is needed for Windows.
 3. Click **Create**.
 4. The **Manual Checkpoint** job will appear at the bottom of the screen.
 5. Once **Create Image** job is complete, click on **Checkpoint History** to view the checkpoint. (This may take a few minutes/hours depending on the EBS Snapshot and AMI creation process.)
