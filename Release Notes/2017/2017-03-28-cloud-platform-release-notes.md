@@ -4,9 +4,9 @@
 
 * __Cloud Application Manager__
 
-  * Deployment Policy and Script boxes support for Azure Resource Manager Provider
+  * Deployment Policy and Script boxes support for Microsoft Azure Provider
 
-    Currently, the Microsoft Azure ARM provider allows users to deploy infrastructure and cloud native services using Azure Resource Manager templates. With this enhancement, users can create Deployment Policies and run Script boxes on infrastructure provisioned using Azure Resource Manager Provider. The new feature lets you deploy virtual machines (VMs) using the deployment policy boxes.
+    Currently, the Microsoft Azure ARM provider allows users to deploy infrastructure and cloud native services using Microsoft Azure templates. With this enhancement, users can create Deployment Policies and run Script boxes on infrastructure provisioned using Microsoft Azure Provider. The new feature lets you deploy virtual machines (VMs) using the deployment policy boxes.
 
     In order for you to leverage the new feature, you have to synchronize the Azure ARM provider. After the synchronization is complete, the Configuration tab will list all the operating systems that can be deployed.
 
