@@ -18,15 +18,15 @@ Go to the CLC portal at https://control.ctl.io and select **Site-to-Site VPN** u
 
 Click on the **+ site to site vpn** button.
 
-![update](../../images/SH5.0/clctoawsvpn/1.png)
+![update](../../images/SH5.0/clctoawsvpn/2.png)
 
 Select the appropriate CenturyLink Cloud datacenter as the **Control Portal Site**.
 
-![update](../../images/SH5.0/clctoawsvpn/1.png)
+![update](../../images/SH5.0/clctoawsvpn/3.png)
 
 Click on **add network block** under the Tunnel Encrypted Subnets
 
-![update](../../images/SH5.0/clctoawsvpn/1.png)
+![update](../../images/SH5.0/clctoawsvpn/3.5.png)
 
 Select the IP range you want to route over the VPN from one of the existing networks on your CLC datacenter.
 
@@ -35,22 +35,21 @@ Click on **add network block**.
 ### AWS Configuration Part 1:
 Sign in to the AWS console and go to the **VPC** service.
 
-![update](../../images/SH5.0/clctoawsvpn/1.png)
+![update](../../images/SH5.0/clctoawsvpn/4.png)
 
 #### Create a Virtual Private Gateway
 Click on **Virtual Private Gateways** on the left and then click on the **Create Virtual Private Gateway**. Give it a name in **Name tag** and select **Amazon default ASN**. Associate the gateway to the VPC that contains the subnet you want to route through the VPN.
 
-![update](../../images/SH5.0/clctoawsvpn/1.png)
+![update](../../images/SH5.0/clctoawsvpn/5.png)
 
 ### Create a Customer Gateway:
 Click on **Customer Gateway** on the left and then click on **Create Customer Gateway**.
+Give it a **Name** that describes what connection it is creating, example: CLC CA2. Select Routing as **Static** and enter the **IP Address** obtained from the CenturyLink Cloud Configuration Part 1 above.
 
-![update](../../images/SH5.0/clctoawsvpn/1.png)
-
-Give it a **Name** that describes what connection it is creating, like CLC CA2, select Routing as **Static** and enter the **IP Address** obtained from the CenturyLink Cloud Configuration Part 1 above.
+![update](../../images/SH5.0/clctoawsvpn/6.png)
 
 ### Create a VPN Connection:
-Click on **VPN Connections** in and then click on **Create VPN Connection**.
+Click on **VPN Connections** and then click on **Create VPN Connection**.
 
 ![update](../../images/SH5.0/clctoawsvpn/1.png)
 
