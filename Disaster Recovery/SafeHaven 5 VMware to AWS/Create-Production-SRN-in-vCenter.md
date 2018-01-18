@@ -1,5 +1,5 @@
 {{{
-  "title": "Create Production SRN in Vcenter",
+  "title": "Create Production SRN in vCenter",
   "date": "12-27-2017",
   "author": "Anshul Arora",
   "attachments": [],
@@ -7,11 +7,11 @@
 }}}
 
 ### Article Overview
-This article explains how to deploy a SafeHaven Replication Node(SRN) in VMWare Vcenter.
+This article explains how to deploy a SafeHaven Replication Node(SRN) in VMWare vCenter.
 SRN resides in both production and DR datacenters and work in pairs. A single SafeHaven Cluster can have upto 64 SRN's registered. This article explains how to deploy SRN in VMWare Production Datacenter.
 
 ### Requirements
-1. Login access to the VMWare vcenter
+1. Login access to the VMWare vCenter
 2. Internet access on the Production SRN once it is deployed.
 
 ### Assumptions
