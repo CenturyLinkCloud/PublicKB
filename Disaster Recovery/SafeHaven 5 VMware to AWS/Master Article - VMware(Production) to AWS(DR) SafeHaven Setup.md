@@ -17,39 +17,39 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 3. [Setup AWS for SafeHaven-5 using CloudFormation](../SafeHaven 5 General/Setup AWS for SafeHaven-5 using CloudFormation.md)
 
-4. [Create Production SRN in VMware]
+4. [Create Production SRN in VMware](Create-Production-SRN-in-vcenter.md)
 
-5. [Create CMS in AWS]
+5. [Create CMS in AWS](../SafeHaven 5 CLC to AWS/Create CMS in AWS.md)
 
-6. [Create DR SRN in AWS]
+6. [Create DR SRN in AWS](../SafeHaven 5 CLC to AWS/Create DR SRN in AWS.md)
 
 7. [Create SafeHaven Cluster and Login to SafeHaven Console](../SafeHaven 5 CLC to AWS/Create SafeHaven Cluster and Login to SafeHaven Console.md)
 
-8. [Register Datacenters within SafeHaven Console]
+8. [Register Datacenters within SafeHaven Console](Register-vcenter-SafeHaven Console.md)
 
-9. [Register SRN within SafeHaven Console]
+9. [Register SRN within SafeHaven Console](../SafeHaven 5 CLC to AWS/Register SRN within SafeHaven Console.md)
 
-10. [Add SRN Peer]
+10. [Add SRN Peer](../SafeHaven 5 CLC to AWS/Add SRN Peer.md)
 
-11. [Add and Claim Storage on Production SRN in CenturyLink Cloud]
+11. [Add and Claim Storage on Production SRN in VMWare vCenter](Add-and-Claim-Storage-on-Production-SRN-vmware.md)
 
-12. [Create Windows Protection Group,Install LRA and Start Replication]
+12. [Create Windows Protection Group,Install LRA and Start Replication](../SafeHaven 5 CLC to AWS/Create-Windows-Protection-Group-Install-LRA-and-Start-Replication.md)
 
-    a. [Modify WAN Replication Rate and Check Replication Status]
+    a. [Modify WAN Replication Rate and Check Replication Status](../SafeHaven 5 CLC to AWS/Modify WAN Replication Rate and Check Replication Status for Windows.md)
 
-    b. [Configure Checkpoints]
+    b. [Configure Checkpoints](../SafeHaven 5 CLC to AWS/Configure Checkpoints.md)
 
-    c. [Create Manual Checkpoint]
+    c. [Create Manual Checkpoint](../SafeHaven 5 CLC to AWS/Create Manual Checkpoint.md)
 
-13. [Create Linux Protection Group]
+13. [Create Linux Protection Group](Create-Linux-Protection-Group-vcenter.md)
 	
-    a. [Install Scripts and Start Replication for Linux Protection Group]
+    a. [Install Scripts and Start Replication for Linux Protection Group](../SafeHaven 5 CLC to AWS/Install Scripts and Start Replication for Linux Protection Group.md)
     
-    b. [Modify WAN Replication Rate]
+    b. [Modify WAN Replication Rate](../SafeHaven 5 CLC to AWS/Modify WAN Replication Rate and Check Replication Status for Windows.md)
     
-    c. [Configure Checkpoints]
+    c. [Configure Checkpoints](../SafeHaven 5 CLC to AWS/Configure Checkpoints.md)
 
-    d. [Create Manual Checkpoint]
+    d. [Create Manual Checkpoint](../SafeHaven 5 CLC to AWS/Create Manual Checkpoint.md) 
 
 14.  [Configure Email Alerts](../SafeHaven 5 CLC to AWS/Configure Email Alerts.md)
     
