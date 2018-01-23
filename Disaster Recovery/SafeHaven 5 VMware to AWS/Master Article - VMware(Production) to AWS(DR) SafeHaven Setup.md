@@ -53,8 +53,8 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 14.  [Configure Email Alerts](../SafeHaven 5 CLC to AWS/Configure Email Alerts.md)
     
-15.  [Test Failover to AWS]
+15.  [Test Failover to AWS](../SafeHaven 5 CLC to AWS/Test Failover to AWS.md)
  
-16.  [Failover to AWS]
+16.  [Failover to AWS](../SafeHaven 5 CLC to AWS/Failover to AWS.md)
 
-17. [AWS Statistics]
+17. [AWS Statistics](../SafeHaven 5 CLC to AWS/AWS Statistics.md)
