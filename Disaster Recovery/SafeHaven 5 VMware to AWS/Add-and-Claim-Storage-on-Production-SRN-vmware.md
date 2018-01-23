@@ -19,7 +19,7 @@ This article explains how to attach storage on a single SRN in VMWare. After the
 This article assumes that the user has already registered the SRN within the SafeHaven Console and wants to add storage to the SRN before creating Protection Groups.
 
 ### Add storage to the Production SRN in CenturyLink Cloud
-1. Login to VMWare Vcenter. Confirm the Storage requirements for the Production Server (in this case Windows). Right click the VM, and click **Edit Settings** to see the total provisioned storage. Based on the Production Server O.S. Type and [Storage Requirements](../SafeHaven5 CLC to AWS/Determine Storage Requirements.md), calculate the amount of storage that needs to be added.
+1. Login to VMWare Vcenter. Confirm the Storage requirements for the Production Server (in this case Windows). Right click the VM, and click **Edit Settings** to see the total provisioned storage. Based on the Production Server O.S. Type and [Storage Requirements](../SafeHaven 5 CLC to AWS/Determine Storage Requirements.md), calculate the amount of storage that needs to be added.
 
 2. In the Navigation Tree, right click the **SRN** you want to add storage to, and click **Edit Settings**.
 3. Click **Add**, and select **Hard Disk**. click **Next**
