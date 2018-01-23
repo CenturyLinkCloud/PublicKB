@@ -17,7 +17,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 3. [Setup AWS for SafeHaven-5 using CloudFormation](../SafeHaven 5 General/Setup AWS for SafeHaven-5 using CloudFormation.md)
 
-4. [Create Production SRN in vCenter](Create-Production-SRN-in-vcenter.md)
+4. [Create Production SRN in vCenter](Create-Production-SRN-in-vCenter.md)
 
 5. [Create CMS in AWS](../SafeHaven 5 CLC to AWS/Create CMS in AWS.md)
 
@@ -35,17 +35,19 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 12. [Create Windows Protection Group,Install LRA and Start Replication](../SafeHaven 5 CLC to AWS/Create-Windows-Protection-Group-Install-LRA-and-Start-Replication.md)
 
-    a. [Modify WAN Replication Rate and Check Replication Status](../SafeHaven 5 CLC to AWS/Modify WAN Replication Rate and Check Replication Status for Windows.md)
+    a. [Modify WAN Replication Rate and Check Replication Status](../SafeHaven 5 CLC to AWS/Modify WAN Replication Rate.md)
+    
+    b. [Check Replication Status](../SafeHaven 5 CLC to AWS/Check Replication Status.md)
+    
+    c. [Configure Checkpoints](../SafeHaven 5 CLC to AWS/Configure Checkpoints.md)
 
-    b. [Configure Checkpoints](../SafeHaven 5 CLC to AWS/Configure Checkpoints.md)
-
-    c. [Create Manual Checkpoint](../SafeHaven 5 CLC to AWS/Create Manual Checkpoint.md)
+    d. [Create Manual Checkpoint](../SafeHaven 5 CLC to AWS/Create Manual Checkpoint.md)
 
 13. [Create Linux Protection Group](Create-Linux-Protection-Group-vcenter.md)
 	
     a. [Install Scripts and Start Replication for Linux Protection Group](../SafeHaven 5 CLC to AWS/Install Scripts and Start Replication for Linux Protection Group.md)
     
-    b. [Modify WAN Replication Rate](../SafeHaven 5 CLC to AWS/Modify WAN Replication Rate and Check Replication Status for Windows.md)
+    b. [Modify WAN Replication Rate](../SafeHaven 5 CLC to AWS/Modify WAN Replication Rate.md)
     
     c. [Configure Checkpoints](../SafeHaven 5 CLC to AWS/Configure Checkpoints.md)
 
