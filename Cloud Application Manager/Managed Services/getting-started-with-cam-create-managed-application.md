@@ -165,4 +165,4 @@ Learn to publish your new Managed Application script box to the public catalog.
 
 This step can be done in parallel to the previous step of creating the monitoring policy.  There is no need to wait for a response from MSA before publishing your script box.
 
-Publishing your script box is explained well at the following location: https://www.ctl.io/knowledge-base/cloud-application-manager/tutorials/publish-script-box/
+Publishing your script box is explained well [here](https://www.ctl.io/knowledge-base/cloud-application-manager/tutorials/publish-script-box/).
