@@ -35,7 +35,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 12. [Create Windows Protection Group,Install LRA and Start Replication](../SafeHaven 5 CLC to AWS/Create-Windows-Protection-Group-Install-LRA-and-Start-Replication.md)
 
-    a. [Modify WAN Replication Rate and Check Replication Status](../SafeHaven 5 CLC to AWS/Modify WAN Replication Rate.md)
+    a. [Modify WAN Replication Rate](../SafeHaven 5 CLC to AWS/Modify WAN Replication Rate.md)
     
     b. [Check Replication Status](../SafeHaven 5 CLC to AWS/Check Replication Status.md)
     
