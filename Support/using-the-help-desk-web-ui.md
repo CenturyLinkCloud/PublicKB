@@ -20,10 +20,12 @@
 </ul> 
 </ul> 
 <h3>Additional Resources</h3> 
+<p><a href="https://www.ctl.io/knowledge-base/support/zendesk-login-help-for-helpdesk-ticketing-and-kb-access/">Accessing the Support ticketing web interface</a>
+</p>
 <p><a href="https://www.ctl.io/knowledge-base/support/ticket-prioritization-matrix/">Ticket Prioritization Matrix</a> 
 </p> 
 <p><a href="https://www.ctl.io/knowledge-base/support/how-do-i-escalate-a-ticket/">How To Escalate a Ticket</a> 
-</p> 
+</p>
 <h3>Additional Information</h3> 
 <p>Navigate to https://support.ctl.io and log in using your support site credentials</p> 
 <p>From the menu at the upper right you can select to submit a request or check your existing by clicking on your user profile and selecting "My activities".</p> 
