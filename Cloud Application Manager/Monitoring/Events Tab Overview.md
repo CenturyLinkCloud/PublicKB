@@ -24,17 +24,17 @@ The events tab provides a view of events that may be a warning/critical to your 
 •	User has created required policies and roles previously.
 
 ##### Navigation
-Left Navigation:
+Left Navigation:                                       
 When a user navigates to the Cloud Application Manager Monitoring site they will see an Events tab on the left-hand side.
 
+![EventsLeftNav.PNG](../../images/EventsLeftNav.PNG)
 
-Suppressing an event:
+Suppressing an event:                                
 You can suppress an agent as well as a check 
 
-
+![EventSuppression.png](../../images/EventSuppression.png)
 
 Once you click Suppress Agent or Check you will be taken to a new pop up.  You can set expirations from 15 minutes to 24 hours as well as no expiration at all.
 
-After logging into Cloud Application Manager you can navigate to the Monitoring UI by clicking on the monitoring link as shown below.
-
+![EventEditSuppression.png](../../images/EventEditSuppression.png)
 
