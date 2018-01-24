@@ -47,17 +47,13 @@ Import the following keys
 
 `echo -e "[vmware-tools]\nname=VMwareTools\nbaseurl=http://packages.vmware.com/tools/releases/latest/rhel6/\$basearch\nenabled=1\ngpgcheck=1" > /etc/yum.repos.d/vmware-tools.repo`
 
-**Ubuntu 12.04:**
-
-`echo "deb http://packages.vmware.com/tools/releases/latest/ubuntu precise main" > /etc/apt/sources.list.d/vmware-tools.list`
-
 **Ubuntu 14:04:**
 
 `echo "deb http://packages.vmware.com/packages/ubuntu trusty main" > /etc/apt/sources.list.d/vmware-tools.list`
 
 **Install VMware Tools**
 
-**RHEL/CentOS 5 & 6:**
+**RHEL/CentOS 6:**
 
 `yum install vmware-tools-esx-kmods vmware-tools-esx-nox`
 
