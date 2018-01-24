@@ -1,5 +1,5 @@
 {{{
-  "title": "ARTICLE TITLE",
+  "title": "AWS Dashboards",
   "date": "01-15-2015",
   "author": "Author Name",
   "attachments": [],
