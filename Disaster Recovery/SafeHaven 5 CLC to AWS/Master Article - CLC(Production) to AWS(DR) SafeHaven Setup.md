@@ -35,17 +35,19 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 12. [Create Windows Protection Group,Install LRA and Start Replication](Create-Windows-Protection-Group-Install-LRA-and-Start-Replication.md)
 
-    a. [Modify WAN Replication Rate and Check Replication Status](Modify WAN Replication Rate and Check Replication Status for Windows.md)
+    a. [Modify WAN Replication Rate](Modify WAN Replication Rate.md)
+    
+    b. [Check Replication Status](Check Replication Status.md)
 
-    b. [Configure Checkpoints](Configure Checkpoints.md)
+    c. [Configure Checkpoints](Configure Checkpoints.md)
 
-    c. [Create Manual Checkpoint](Create Manual Checkpoint.md)
+    d. [Create Manual Checkpoint](Create Manual Checkpoint.md)
 
 13. [Create Linux Protection Group](Create Linux Protection Group.md)
 	
     a. [Install Scripts and Start Replication for Linux Protection Group](Install Scripts and Start Replication for Linux Protection Group.md)
     
-    b. [Modify WAN Replication Rate](Modify WAN Replication Rate and Check Replication Status for Windows.md)
+    b. [Modify WAN Replication Rate](Modify WAN Replication Rate.md)
     
     c. [Configure Checkpoints](Configure Checkpoints.md)
 
