@@ -12,7 +12,7 @@
 ### Overview
 The events tab provides a view of events that may be a warning/critical to your infrastructure based policy checks.  Each event shows the Agent, statuses warning and critical, the check-type, its output, count and last occurrence.
 
-![MonitoringLeftNavScreenShot](../../images/MonitoringLeftNavScreenShot121317.JPG)
+![EventsPage.PNG](../../images/EventsPage.PNG)
 
 ##### Features
 •	Ability to look deeper into an event by agent or check
