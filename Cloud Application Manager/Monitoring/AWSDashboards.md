@@ -1,7 +1,7 @@
 {{{
   "title": "AWS Dashboards",
-  "date": "01-15-2015",
-  "author": "Author Name",
+  "date": "01-24-2018",
+  "author": "Jason Oldham",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
