@@ -26,7 +26,6 @@ Navigate to [https://support.ctl.io](https://support.ctl.io) and log in using yo
 From the menu at the upper right you can select to submit a request or check your existing by clicking on your user profile and selecting "My activities".
 
 *Checking on existing requests*
-
 From the "check your existing requests" section, click on the ticket you wish to see more information about.
 From here, you can view ticket details, including: 
 * The CenturyLink Engineer that's assigned to the request  
