@@ -17,9 +17,9 @@ Must have a username and password for [https://support.ctl.io](https://support.c
 * Note that the first time you submit a ticket via email, you will receive a *Welcome* response asking you to register. If you don't register you can use the forgot password workflow to reset your password via email.
 
 ### Additional Resources 
-[Accessing the Support ticketing web interface](/zendesk-login-help-for-helpdesk-ticketing-and-kb-access.md)  
-[Ticket Prioritization Matrix](/ticket-prioritization-matrix.md)  
-[How To Escalate a Ticket](/thow-do-i-escalate-a-ticket.md) 
+[Accessing the Support ticketing web interface](zendesk-login-help-for-helpdesk-ticketing-and-kb-access.md)  
+[Ticket Prioritization Matrix](ticket-prioritization-matrix.md)  
+[How To Escalate a Ticket](how-do-i-escalate-a-ticket.md) 
 
 ### Additional Information 
 Navigate to [https://support.ctl.io](https://support.ctl.io) and log in using your support site credentials. 
