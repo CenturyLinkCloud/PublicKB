@@ -10,8 +10,12 @@
 This article explains how to create Windows Protection Group and protect a Windows server Automatically as well as Manually.
 
 ### Requirements
-To protect a Windows server using SafeHaven, we need to install a Local Replication Agent (LRA) on the production server. In order to complete the LRA installation, a **Reboot** of the production server is required. **Please schedule a downtime window for LRA installation.**
+1. To protect a Windows server using SafeHaven, we need to install a Local Replication Agent (LRA) on the production server. In order to complete the LRA installation, a **Reboot** of the production server is required. **Please schedule a downtime window for LRA installation.**
 
+2. For Ansible LRA installation to work, make sure TCP 445 port Inbound is open on the production server by running the following command via Windows Commandline (run as administrator):
+```
+New-NetFirewallRule -DisplayName "psexec tcp 445" -Name "psexec tcp 445" -Profile Any -LocalPort 445 -Protocol TCP
+```
 ### Assumption
 This article assumes that:
 
@@ -104,4 +108,4 @@ The initial replication of the production windows VM will start now. Close the c
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Si5ATSx0fiI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </p>  
 
-Once the Protection Group is created successfully, **Next** step is to [Modify WAN Replication Rate and Check Replication Status](Modify WAN Replication Rate and Check Replication Status for Windows.md)
+Once the Protection Group is created successfully, **Next** step is to [Modify WAN Replication Rate](Modify WAN Replication Rate.md) and [check replication status](Check Replication Status.md)
