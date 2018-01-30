@@ -46,8 +46,8 @@ Relational DB is now available in DE1 and DE3 Datacenters.
 
 ##### DCC General Bug Fixes
 
-* Fixed CPU metrics calculations for Linux or Solaris VMs.
-* Fixed issue with Clone VM behavior when VM is locked.
+* Fixed CPU metrics calculations for Linux Virtual Machines.
+* Fixed issue with Clone Virtual Machine behavior when a Virtual Machine is locked.
 * Fixed Deploy Image and return single billing site for Deploy Image bug.
 * Fixed Populate Utility or Unified billingsite based on cluster selection.
 * Billing Site Authorization and Validation fix.
