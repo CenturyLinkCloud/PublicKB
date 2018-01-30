@@ -37,12 +37,21 @@ Associate your Google account in Google Cloud by creating a project, enabling bi
 
   ![googlecloud-createproject-1.png](../../images/cloud-application-manager/googlecloud-createproject-1.png)
 
+  ![googlecloud-createproject-2.png](../../images/cloud-application-manager/googlecloud-createproject-2.png)
+
+  ![googlecloud-createproject-3.png](../../images/cloud-application-manager/googlecloud-createproject-3.png)
+
 3. Add billing. Under Billing & Settings, click **Enable Billing.**
 
    **Note:** You have to provide credit card details for usage based billing. See Google’s pricing policy for costs incurred to host on the Google Cloud Platform. Cloud Application Manager assumes no responsibility for these costs.
 
+   ![googlecloud-billing1.png](../../images/cloud-application-manager/googlecloud-billing1.png)
+
+   ![googlecloud-billing2.png](../../images/cloud-application-manager/googlecloud-billing2.png)
+
 4. Turn on Google Compute Engine. Under APIS & AUTH > APIs, turn Google Compute Engine to **ON.**
 
+   ![googlecloud-turnoncomputeengineapi-1.png](../../images/cloud-application-manager/googlecloud-turnoncomputeengineapi-1.png)
    ![googlecloud-turnoncomputeengineapi-2.png](../../images/cloud-application-manager/googlecloud-turnoncomputeengineapi-2.png)
 
 ### Step 2. Connect the Account in Cloud Application Manager
@@ -86,6 +95,7 @@ The [deployment policy ](../Automating Deployments/deploymentpolicy-box.md)for G
 | Machine Type | Google Compute has preset machine sizes for standard, high memory, high CPU, and shared core categories. Each category determines the number of cores, memory, and scratch disk space available to the instance. For details on what type (ex: n1-standard-2) to select, see [Machine Types](https://developers.google.com/compute/docs/machine-types#standard). |
 | Image |	This lists the ready-to-use images (ex: debian-7) provided by Google as well as custom images you created to boot your instance. |
 | Instances |	Select the number of instances to provision. Multiple instances are launched within the same selected network and firewall. |
+| Autoscaling   | Autoscaling is a feature of managed instance groups. The autoscaler will collect information based on the policy, compare it to your desired target utilization, and determine if it needs to perform scaling.|
 
 **Network**
 

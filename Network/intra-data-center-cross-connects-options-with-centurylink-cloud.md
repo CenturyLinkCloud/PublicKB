@@ -24,7 +24,6 @@ The first decision a customer needs to determine is how they want to purchase th
 
   * Option 2 - The customer purchases the cross connect from CenturyLink Cloud:
     * Pros: CLC manages the implementation of the cross connect with the data center provider. The costs of the cross connect will come as part of the customer’s normal CLC monthly invoice.
-    * Cons: Cost of the cross connect is ~20% more expensive, since CenturyLink Cloud adds an administrative processing fee on top of our data center providers fees.
 
 Regardless, if a customer chooses to purchase the cross connect on their own, there still will be a fee that will include the following services:
   * Verify cross connect connectivity options with data center provider

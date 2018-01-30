@@ -294,7 +294,7 @@ A: SBS provides a simplified billing model. The cost per GB for backups is calcu
 
 * Backup Cost Calculation Example:
 
-  10 GB of data backed up starting on the 15th of the month assuming no changes throughout the reamining duration of the month.
+  10 GB of data backed up starting on the 15th of the month assuming no changes throughout the remaining duration of the month.
 
   Hourly GB Usage = (10 GB of backup x 15 days x 24 hours) = 3,600 GB
 

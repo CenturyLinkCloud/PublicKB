@@ -9,11 +9,11 @@
 }}}
 
 ### Description
-You've just built a new virtual server on DCC Foundation - we assume you have created a new virtual server. If not, follow this guide to [Create a Server](creating-a-server.md), then return to this guide.
+This KB article assumes that you've created a new virtual server on DCC Foundation. If not, follow this guide to [Create a Server](creating-a-server.md), then return to this guide.
 
-Now what? How do you securely connect to your servers? This KB article describes how to use SSLVPN-Plus to securely connect to your servers.
+Now what? How do you securely connect to your servers? This KB article describes how to use SSL VPN-Plus to securely connect to your servers.
 
-Note: This KB article is assumes that you have already setup SSL VPN-Plus in your DCC Foundation environment. If not, follow this guide to [Configure SSL VPN-Plus](configuring-sslvpn-plus.md), then return to this guide.
+Note: This KB article assumes that you have already setup SSL VPN-Plus in your DCC Foundation environment. If not, follow this guide to [Configure SSL VPN-Plus](configuring-sslvpn-plus.md), then return to this guide.
 
 ### Steps
 
