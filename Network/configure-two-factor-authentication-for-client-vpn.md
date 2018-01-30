@@ -10,7 +10,7 @@ Creating two factor authentication is very easy to do with Client VPN Service. H
 _WARNING: if you enable AD authentication, all existing users will need to re-download their VPN certificates as their existing certificates will no longer function._
 
 1. Go to Network > VPN from the Control Portal menu.
-  ![](../images/vpn-menu.png)
+  ![](../images/vpn2.png)
 
 2. From the VPN Configuration page, click the "edit settings" button. The VPN Settings popup will be displayed.
   ![](https://t3n.zendesk.com/attachments/token/cbwjrkakv5cekwj/?name=Screen_Shot_2012-02-01_at_1.18.28_PM.png)

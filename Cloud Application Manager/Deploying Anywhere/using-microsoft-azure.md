@@ -58,7 +58,7 @@ Once pressed the save button our new provider starts to synchronize with our azu
 
 * VM images of windows family operating systems.
 * VM images of operating systems of Linux family.
-* Region list which we can deploy the mentioned services as well as the templates of Azure Resource Manager.
+* Region list which we can deploy the mentioned services as well as the templates of Microsoft Azure.
 * List of deployed Virtual Machines that are currently not being managed from Cloud Application Manager.
 
 During synchronization, we can get warnings about locations may be ignored because there are no associated virtual networks to them. This is because Cloud Application Manager does not create virtual networks but requires one in the deployment operation of one virtual machine.
@@ -76,7 +76,7 @@ You can deploy to the following services in Azure:
 
 * Windows based virtual machines
 * Linux based virtual machines
-* Azure resource manager templates
+* Microsoft Azure templates
 
 **Azure OS Images Available to Deploy in Cloud Application Manager**
 
@@ -149,7 +149,7 @@ Azure ARM Templates are supported on Cloud Application Manager with Microsoft Az
 1. Create Deployment Policy:
    * Go to **Boxes** > **New** > **Deployment Policy**.
    ![microsoft-azure-create-new-deployment-policy-5.png](../../images/cloud-application-manager/microsoft-azure-create-new-deployment-policy-5.png)
-   * **Select Azure Resource Manager** on the menu.
+   * **Select Microsoft Azure** on the menu.
    ![microsoft-azure-select-arm-new-deployment-policy-box-6.png](../../images/cloud-application-manager/microsoft-azure-select-arm-new-deployment-policy-box-6.png)
    * Select provider, name and description fields.
    ![microsoft-azure-select-provider-name-7.png](../../images/cloud-application-manager/microsoft-azure-select-provider-name-7.png)

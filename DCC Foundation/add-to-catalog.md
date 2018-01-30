@@ -11,7 +11,7 @@
 ### Description
 In this KB article, we demonstrate how to add an Open Virtualization Format (OVF) Template to your Catalog in DCC Foundation. We also have step-by-step instructions on adding an Existing vApp to your Catalog. In this case, an existing vApp could consist of one or more VMs.
 
-A catalog is a container for vApp templates and media files in an organization. Organization administrators and catalog authors within DCC Foundation, can create catalogs in an organization. Catalog contents can be shared with other users within DCC Foundation.
+A catalog is a container for vApp templates and media files in an organization. Organization administrators and catalog authors within DCC Foundation can create catalogs in an organization. Catalog contents can be shared with other users within DCC Foundation.
 
 DCC Foundation contains organization (private) catalogs, and access to the DCC Foundation public catalog. Organization catalogs include vApp templates and media files that you can share with other users in the organization.
 

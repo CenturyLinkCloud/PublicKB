@@ -8,7 +8,7 @@
 
 ### Audience
 
-This article is meant to assist users of Cloud Application Manager with getting Application or Script boxes added the public catalog.
+This article is meant to assist users of Cloud Application Manager with getting Application or Script boxes added to the public catalog.
 
 ### Requesting a Box be published
 
@@ -24,4 +24,4 @@ Fill out the "Request to Publish Box" form. The "Publisher" field should be eith
 
 ![public-box-version-template.png](../../images/cloud-application-manager/public-box-publish-template.png)
 
-Once you have hit send, you will receive an email acknowledging that your box has been submitted for review. After your box has been reviewed by the CenturyLink team, you will receive an email notifying you if your box has been accepted to the public catalog or denied.
+Once you have hit send, you will receive an email acknowledging that your box has been submitted for review. After your box has been reviewed by the CenturyLink team, you will receive an email notifying you whether your box has been accepted to the public catalog or denied.
