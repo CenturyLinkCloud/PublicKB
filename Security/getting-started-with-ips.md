@@ -1,6 +1,6 @@
 {{{
   "title": "IPS - Getting Started",
-  "date": "05-12-2016",
+  "date": "2-1-2018",
   "author": "Client-Security",
   "attachments": [],
   "contentIsHTML": false,
@@ -81,22 +81,34 @@ If you need assistance, please send initial contact to [help@ctl.io](mailto:help
 
 ### Frequently Asked Questions
 
-**Can I make modifications to my existing policy to further customize or tune it?**
+**Q: How often is the IPS Agent baseline configuration rebuilt to implement new IPS rules?**
+
+Baseline configurations are rebuilt every 24 hours and new rules are applied automatically based on changes to the server configuration and/or services.
+
+**Q: How often are security patterns updated?**
+
+Servers will receive updated security patterns within 1 hour of release from the security vendor.
+
+**Q: How are IPS agent upgrades managed?**
+
+IPS Agents receive minor version updates as part of the service automatically. 
+
+**Q: Can I make modifications to my existing policy to further customize or tune it?**
 
 Not at this time, if you'd like to see this feature, please contact [features@ctl.io](mailto:features@ctl.io).
 
-**What does the IPS Product Provide?**
+**Q: What does the IPS Product Provide?**
 
 Platform CenturyLink's IPS service helps ensure secure protection against your Virtual Machine (VM) from known intrusion patterns that hackers utilize. It also allows you to spend less time on the maintenance of your system, instead allowing you to focus on the tasks for your core business.  We will ensure that all IPS agents have up-to-date signatures to prevent possible attacks.
 
-**How do I configure the notifications settings to send alerts?**
+**Q: How do I configure the notifications settings to send alerts?**
 
 Follow the process in the [Configuring IPS Notifications article](configuring-ips-notifications.md).
 
-**Will you be adding support for additional Operating Systems?**
+**Q: Will you be adding support for additional Operating Systems?**
 
-Yes, we are working on adding additional OSes. If you have a specific OS you would like to see supported, please contact features@ctl.io.
+Yes, we are working on adding additional operating systems. If you have a specific OS you would like to see supported, please contact features@ctl.io.
 
-**If I decommission a Virtual Machine, do I need to uninstall the IPS agent?**
+**Q: If I decommission a Virtual Machine, do I need to uninstall the IPS agent?**
 
 Yes, you still need to uninstall the IPS agent to avoid unnecessary charges. You can uninstall the agent via the uninstall IPS blueprint.
