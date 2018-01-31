@@ -127,7 +127,8 @@ The easiest way to understanding the function of Bindings is to put them to use.
   ![Binding](../../images/cloud-application-manager/binding-example/binding-example-binding.png)
 
 #### Use of Parameters in Binding
-  (Parameters in binding)[../../images/cloud-application-manager/binding-example/binding-example-binding-parameters.png]
+  [Parameters in binding](../../images/cloud-application-manager/binding-example/binding-example-binding-parameters.png)
+
   From the configure script, the nfsserver.address.private and nfsserver.EXPORT_DIRECTORY are passed from the nfsserver box to nfsclient box.
   This is a simple example and this can be used in a more complex environment, like the JBoss example that will be covered in the next section.
 
