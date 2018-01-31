@@ -1,5 +1,5 @@
 {{{ "title": "Binding Examples",
-"date": "12-14-2017",
+"date": "01-31-2018",
 "author": "Gavin Lai",
 "attachments": [],
 "contentIsHTML": false
@@ -25,7 +25,7 @@ Bindings are [variables](../automating-deployment/parameterizing-boxes-with-vari
 
 ### A Simple Example
 
-The easiest way to understanding the function of Bindings is to put it to use.  This portion of the article will use Binding to establish a simple client server relation between to instances.  This article to walk through setting up a pair NFS server and client boxes with Bindings.
+The easiest way to understanding the function of Bindings is to put them to use.  This portion of the article will use Binding to establish a simple client server relation between to instances.  This article walks through setting up a pair NFS server and client boxes with Bindings.
 
 #### Creating the NFS Server script box
   Create the NFS server box in your workspace
@@ -132,7 +132,7 @@ The easiest way to understanding the function of Bindings is to put it to use.  
   This is a simple example and this can be used in a more complex environment, like the JBoss example that will be covered in the next section.
 
 ### 3 Tiers application from Catalog
-  The next example is from [Cloud Applicaiton Manager Catalog](//cam.ctl.io/#/catalog), it is the JBoss Sample Application.  In this example, Binding tags are being used extensively.  To recap the concept of Binding Tags, there are couple of ways of utilizing them in a complex environment:
+  The next example is from [Cloud Application Manager Catalog](//cam.ctl.io/#/catalog), it is the JBoss Sample Application.  In this example, Binding tags are being used extensively.  To recap the concept of Binding Tags, there are couple of ways of utilizing them in a complex environment:
     - Dynamic bindings: Tagged bindings discover instance connectivity dynamically. They serve as an auto-discovery mechanism where instances with binding tags can automatically connect to other instances that match those tags.
     - One to many bindings: Bindings can connect one or many services together, again, using tags.
 
