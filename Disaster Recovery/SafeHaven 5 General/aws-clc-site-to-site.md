@@ -1,3 +1,15 @@
+{{{
+  "title": "Create Site-to-site VPN between CLC and AWS",
+  "date": "31-01-2018",
+  "author": "Anshul Arora",
+  "attachments": [],
+  "contentIsHTML": false
+}}}
+
+### Article Overview
+This article explains how to create a site-to-site VPN between AWS and CLC. It is assumed that the user has accounts in both AWS and CLC in order to create the VPN.
+
+
 ### Create VPC
 1. Go to **Services**. Click on VPC.
 2. Click on **Start VPC Wizard**  
