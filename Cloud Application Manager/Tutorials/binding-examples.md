@@ -21,7 +21,7 @@ Bindings glue together different parts of a multi-tier application over the netw
 
 ### Brief recap on Bindings
 
-Bindings are [variables](//www.ctl.io/knowledge-base/cloud-application-manager/automating-deployments/parameterizing-boxes-with-variables/) that you can add to boxes. They represent a connection from the deployed box to other instances. The detail explanation of Bindings can be found at this [knowledge article](//www.ctl.io/knowledge-base/cloud-application-manager/automating-deployments/managing-multi-tier-applications/).
+Bindings are [variables](../../Cloud Application Manager/Automating Deployments/parameterizing-boxes-with-variables.md) that you can add to boxes. They represent a connection from the deployed box to other instances. The detail explanation of Bindings can be found at this [knowledge article](../../Cloud Application Manager/Automating Deployments/managing-multi-tier-applications.md).
 
 ### A Simple Example
 
