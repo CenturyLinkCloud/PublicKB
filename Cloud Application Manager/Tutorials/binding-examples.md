@@ -154,7 +154,7 @@ The similar steps are needed for the JBoss servers to bind to the database serve
 
 ![JBoss Application tagging to database ](../../images/cloud-application-manager/binding-example/jboss-application-tag.png)
 
-As the diagram above shows that the application servers are binding to the database to create the three tiers application.  Also this allows the application servers utilize the parameters within the binding environment, from load balancer box or database box.  To learn more on the details with application boxes, please refer to [this](//www.ctl.io/knowledge-base/cloud-application-manager/automating-deployments/managing-multi-tier-applications/).  
+As the diagram above shows that the application servers are binding to the database to create the three tiers application.  Also this allows the application servers utilize the parameters within the binding environment, from load balancer box or database box.  To learn more on the details with application boxes, please refer to [this](../../Cloud Application Manager/Automating Deployments/managing-multi-tier-applications.md).  
 The JBoss Application Boxes is available at [here](//cam.ctl.io/#/catalog), give it a try to experience the flexibility of Binding in Cloud Application Manger.  
 
 
