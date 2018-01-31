@@ -9,7 +9,7 @@
 }}}
 
 ### Overview
-Policies are a collection of checks that can be configured and applied to one or more agents (link to agent kb).  This tab will show a list of all policies that the customer has set up.  Each policy will show the name, the description the customer gave, as well as how many checks are configured for the policy.
+Policies are a collection of checks that can be configured and applied to one or more agents.  This tab will show a list of all policies that the customer has set up.  Each policy will show the name, the description the customer gave, as well as how many checks are configured for the policy.
 
 ![PolicyPage](../../images/PolicyPage.PNG)
 
