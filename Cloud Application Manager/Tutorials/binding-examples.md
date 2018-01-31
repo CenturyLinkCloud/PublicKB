@@ -132,7 +132,7 @@ The easiest way to understanding the function of Bindings is to put them to use.
   From the configure script, the nfsserver.address.private and nfsserver.EXPORT_DIRECTORY are passed from the nfsserver box to nfsclient box.
   This is a simple example and this can be used in a more complex environment, like the JBoss example that will be covered in the next section.
 
-### 3 Tiers application from Catalog
+### Three Tiers application from Catalog
   The next example is from [Cloud Application Manager Catalog](//cam.ctl.io/#/catalog), it is the JBoss Sample Application.  In this example, Binding tags are being used extensively.  To recap the concept of Binding Tags, there are couple of ways of utilizing them in a complex environment:
     - Dynamic bindings: Tagged bindings discover instance connectivity dynamically. They serve as an auto-discovery mechanism where instances with binding tags can automatically connect to other instances that match those tags.
     - One to many bindings: Bindings can connect one or many services together, again, using tags.
