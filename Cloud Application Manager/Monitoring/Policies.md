@@ -31,8 +31,8 @@ From there you will be able to set up the metric or status checks you want to se
 
 To add a metric check you will access the check catalog and select the category you want.
 
-![PolicyCheckCatalog](../../images/APolicyCheckCatalog.PNG)
+![PolicyCheckCatalog](../../images/PolicyCheckCatalog.PNG)
 
 Once a category is selected a list of check types will be shown on the right-hand side.  
 
-![PolicyCheckDetail](../../images/PolicyCheckDetail.PNG)
+![PolicyCheckDetail](../../images/PolicyCheckDetail.png)
