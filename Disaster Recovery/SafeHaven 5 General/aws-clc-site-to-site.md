@@ -2,7 +2,6 @@
 1. Go to **Services**. Click on VPC.
 2. Click on **Start VPC Wizard**  
 3. Select **VPC with Public and Private Subnets and Hardware VPN Access**. Click **Select**.
-  * Step 2 : VPC with Public and Private Subnets and Hardware VPN Access.  
     a. Enter **IPv4 CIDR block** . This is going to be a /16 IP block that will be created under the VPC.  
        **IPv6 CIDR Block** : Select the defaul option, **No IPv6 CIDR Block**.  
        Enter **VPC name**.  
