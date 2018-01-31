@@ -15,7 +15,7 @@ Bindings glue together different parts of a multi-tier application over the netw
     * [Install Script](#install-script)
     * [Configure Script](#configure-script)
   * [NFS client box](#nfs-client-box)
-* [Three Tiers application from Catalog](#three-tiers-application-from catalog)
+* [Three Tiers application from Catalog](#three-tiers-application-from-catalog)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 
