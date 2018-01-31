@@ -12,7 +12,7 @@
 ### Overview
 A suppression silences a reoccurring event from alerting for a specified amount of time.  Here you will see the serer, the check type, and the reason.
 
-![SuppressionsPage](../../images/SuppressionsPage.PNG)
+![SuppressionsPage](../../images/SuppressionsPage.png)
 
 ##### Features
 •	Ability to view your suppressions and the servers it appeared on
