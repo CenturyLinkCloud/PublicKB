@@ -9,7 +9,6 @@
 ### Article Overview
 This article explains how to create a site-to-site VPN between AWS and CLC. It is assumed that the user has accounts in both AWS and CLC in order to create the VPN.
 
-
 ### Create VPC
 1. Go to **Services**. Click on VPC.
 2. Click on **Start VPC Wizard**  
@@ -52,7 +51,6 @@ This article explains how to create a site-to-site VPN between AWS and CLC. It i
       At the bottom left of the screen. Under tunnel details you can see the 2 tunnels created. The status will be down because CLC side of the tunnel has not been configured yet
 
 ### Continue the VPN Configuration on CLC
-
 1. Go back to the site-to-site VPN page in CLC cloud.
 
 2. Enter **Site Name** and **Device Name**(can be any name).  
@@ -85,6 +83,7 @@ Select the Private subnet under new VPC, and copy the **IPv4 CIDR** from under S
 
 ### NAT Gateway.
 The private subnet needs to be routed using a NAT Gateway.
+
 #### Elastic IP
 1. Click on **Elastic IPs** on the left side onder **Virtual Private Cloud**.  
 2. Click on **Allocate new address**.  Click **Alocate** 
