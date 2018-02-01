@@ -43,27 +43,27 @@ Current supported operating systems can be found here [Operating System Support]
 
 1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**.
 
-  ![Control Portal](../images/client-security/IPSblueprintcontrolportal.png)
+    ![Control Portal](../images/client-security/IPSblueprintcontrolportal.png)
 
 2. Search for **Install Intrusion Prevention** in the Refine Results section. Then, click **Install Intrusion Prevention on Linux** or **Install Intrusion Prevention on Windows**.  
 
-  ![Search Install Linux](../images/client-security/gettingIPS_rhel_blueprintname.png) ![Notification Update Windows](../images/client-security/gettingIPS_windows_blueprintname.png)
+    ![Search Install Linux](../images/client-security/gettingIPS_rhel_blueprintname.png) ![Notification Update Windows](../images/client-security/gettingIPS_windows_blueprintname.png)
 
 3. Click the **deploy blueprint** button.  
 
-  ![Configure Install Linux](../images/client-security/gettingIPS_rhel_configure.png)
+    ![Configure Install Linux](../images/client-security/gettingIPS_rhel_configure.png)
 
 4. From the **Execute on Server** drop down list, select the appropriate virtual machine. Enter and confirm the User Password.  Click the **next: step 2** button.  
 
-  ![Configure Notifications RHEL Fields](../images/client-security/gettingIPS_rhel_blueprintfields.png)
+    ![Configure Notifications RHEL Fields](../images/client-security/gettingIPS_rhel_blueprintfields.png)
 
 5. Review the Blueprint parameters and click **deploy blueprint**.  
 
-  ![Deploy Blueprint](../images/client-security/gettingIPS_rhel_deploy.png)
+    ![Deploy Blueprint](../images/client-security/gettingIPS_rhel_deploy.png)
 
-  **Note:** The Blueprint displays each step taken and its status during provisioning.  
+    **Note:** The Blueprint displays each step taken and its status during provisioning.  
 
-  ![Blueprint Status Log](../images/client-security/gettingIPS_rhel_logstatus.png)
+    ![Blueprint Status Log](../images/client-security/gettingIPS_rhel_logstatus.png)
 
 6. An email notification is sent to the initiator of the Blueprint for both queuing and completion.
 
