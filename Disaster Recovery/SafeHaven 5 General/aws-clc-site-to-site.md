@@ -57,11 +57,11 @@ This article explains how to create a site-to-site VPN between AWS and CLC. It i
 
 2. Enter **Site Name** and **Device Name**(can be any name).  
 
-**VPN Peer IPv4 Address** will the outside IP of tunnel 1 under AWS Tunnel details.  
+   **VPN Peer IPv4 Address** will the outside IP of tunnel 1 under AWS Tunnel details.  
 
 3. **Tunnel Encrypted Subnets** : Click **Add network block**. This is the private subnet from the AWS VPC. Go back to the AWS cloud, and click on **Subnets** on the left side under **Virtual Private Cloud**.  
 
-Select the Private subnet under new VPC, and copy the **IPv4 CIDR** from under Summary. Go back to CLC page and paste this IP under Tunnel encrypted subnets.   
+   Select the Private subnet under new VPC, and copy the **IPv4 CIDR** from under Summary. Go back to CLC page and paste this IP under      Tunnel encrypted subnets.   
 
 4. Click **next: phase 1**   
 
