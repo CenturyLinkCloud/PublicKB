@@ -1,6 +1,6 @@
 {{{
   "title": "Setup AWS VPC and VPN for SafeHaven5",
-  "date": "02-25-2018",
+  "date": "02-05-2018",
   "author": "Weiran Wang",
   "attachments": [],
   "contentIsHTML": false
