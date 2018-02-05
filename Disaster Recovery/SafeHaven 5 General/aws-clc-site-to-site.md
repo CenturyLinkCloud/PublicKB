@@ -16,45 +16,43 @@ This article explains how to create a site-to-site VPN between AWS and CLC. It i
 
 3. Click on **Start VPC Wizard**  
 
-4. Select **VPC with Public and Private Subnets and Hardware VPN Access**. Click **Select**.   
-   a. Enter **IPv4 CIDR block** . This is going to be a /16 IP block that will be created under the VPC.   
-      **IPv6 CIDR Block** : Select the defaul option, **No IPv6 CIDR Block**.  
-      Enter **VPC name**.  
+4. Select **VPC with Public and Private Subnets and Hardware VPN Access**. Click **Select**.     
+   * Enter **IPv4 CIDR block** . This is going to be a /16 IP block that will be created under the VPC.   
+     **IPv6 CIDR Block** : Select the defaul option, **No IPv6 CIDR Block**.  
+     Enter **VPC name**.  
        
-   b. Enter **Public subnet's IPv4 CIDR**. Enter a /24 IP block to use for the public subnet. This subnet should be within the range of       /16 IP clock specied in step a.
-      
-      Select an **availability zone** for the subnet. 
-      Enter the **Public subnet name**
+   * Enter **Public subnet's IPv4 CIDR**. Enter a /24 IP block to use for the public subnet. This subnet should be within the range of        /16 IP clock specied in step a.  
+     Select an **availability zone** for the subnet. 
+     Enter the **Public subnet name**
        
-   c. Enter **Private subnet's IPv4 CIDR**. Enter a /24 IP block to use for the private subnet. This subnet should be within the range         of /16 IP clock specied in step a.  
-   
-      Select an **availability zone** for the subnet.   
-      Enter the **Private subnet name**.
+   * Enter **Private subnet's IPv4 CIDR**. Enter a /24 IP block to use for the private subnet. This subnet should be within the range        of /16 IP clock specied in step a.  
+     Select an **availability zone** for the subnet.   
+     Enter the **Private subnet name**.
      
-   d. Click **Next**.
+   * Click **Next**.
      
 5. Configure your VPN.  
-   a. Enter **Customer Gateway IP**.   
-   To find this information, login to [Centurylin Portal] (https://control.ctl.io/).   
-   Click on **Network** > **Site-to-site VPN**  
-   Click **+site to site vpn**  
-   Select the right datacenter in front of **Control portal site**  
-   Copy the **VPN Peer IPv4 address** and paste it in **Customer Gateway IP** in AWS.
+   * Enter **Customer Gateway IP**.   
+     To find this information, login to [Centurylink Portal](https://control.ctl.io/)   
+     Click on **Network** > **Site-to-site VPN**  
+     Click **+site to site vpn**  
+     Select the right datacenter in front of **Control portal site**  
+     Copy the **VPN Peer IPv4 address** and paste it in **Customer Gateway IP** in AWS.
    
-   b. Enter **Customer Gateway name** and **VPN Connection name**.  
+   * Enter **Customer Gateway name** and **VPN Connection name**.  
    
-   c. Change **Routing type** to **Static**
+   * Change **Routing type** to **Static**
    
-   d. Go back to CLC **Site to Site VPN** page to get the **IP prefix**.
-      Click on **Add Network Block**. Select the **Network** and **subnet size**. click **Add network block**.
-      Copy the IP address in fron of **Tunnel Encrypted Subnets** and paste it under **IP prefix** in AWS.  
+   * Go back to CLC **Site to Site VPN** page to get the **IP prefix**.
+     Click on **Add Network Block**. Select the **Network** and **subnet size**. click **Add network block**.
+     Copy the IP address in fron of **Tunnel Encrypted Subnets** and paste it under **IP prefix** in AWS.  
       
-   e. Click **Create VPC**. This will initiate the VPC.
+   * Click **Create VPC**. This will initiate the VPC.
    
-   f. Click **ok**  
-      Select the newly created VPC.
-      click **VPN Connections**.  
-      At the bottom left of the screen. Under tunnel details you can see the 2 tunnels created. The status will be down because CLC side       of the tunnel has not been configured yet
+   * Click **ok**  
+     Select the newly created VPC.
+     click **VPN Connections**.  
+     At the bottom left of the screen. Under tunnel details you can see the 2 tunnels created. The status will be down because CLC side      of the tunnel has not been configured yet
 
 ### Continue the VPN Configuration on CLC
 1. Go back to the site-to-site VPN page in CLC cloud.
