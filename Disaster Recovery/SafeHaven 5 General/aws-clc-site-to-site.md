@@ -126,7 +126,7 @@ The private subnet needs to be routed using a NAT Gateway.
 
 This concludes the setup of VPN between Centurylink Cloud and AWS cloud.
 
-To configure security groups, please follow [configure security groups](/security-group.md)
+To configure security groups, please follow [configure security groups](security-group.md)
 
 ### Video Tutorial  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BcRTgbuj2Fo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
