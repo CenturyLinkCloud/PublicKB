@@ -10,9 +10,13 @@
 This article explains how to create a site-to-site VPN between AWS and CLC. It is assumed that the user has accounts in both AWS and CLC in order to create the VPN.
 
 ### Create VPC  
-1. Go to **Services**. Click on VPC.
-2. Click on **Start VPC Wizard**  
-3. Select **VPC with Public and Private Subnets and Hardware VPN Access**. Click **Select**.   
+1. Login to your AWS Console.
+
+2. Go to **Services**. Click on VPC.
+
+3. Click on **Start VPC Wizard**  
+
+4. Select **VPC with Public and Private Subnets and Hardware VPN Access**. Click **Select**.   
    a. Enter **IPv4 CIDR block** . This is going to be a /16 IP block that will be created under the VPC.   
       **IPv6 CIDR Block** : Select the defaul option, **No IPv6 CIDR Block**.  
       Enter **VPC name**.  
@@ -29,7 +33,7 @@ This article explains how to create a site-to-site VPN between AWS and CLC. It i
      
    d. Click **Next**.
      
-4. Configure your VPN.  
+5. Configure your VPN.  
    a. Enter **Customer Gateway IP**.   
    To find this information, login to [Centurylin Portal] (https://control.ctl.io/).   
    Click on **Network** > **Site-to-site VPN**  
