@@ -1,6 +1,6 @@
 {{{
   "title": "Create Site-to-site VPN between CLC and AWS",
-  "date": "31-01-2018",
+  "date": "01-31-2018",
   "author": "Anshul Arora",
   "attachments": [],
   "contentIsHTML": false
