@@ -9,23 +9,23 @@
 ### Article Overview
 This article explains how to create a site-to-site VPN between AWS and CLC. It is assumed that the user has accounts in both AWS and CLC in order to create the VPN.
 
-### Create VPC
+### Create VPC  
 1. Go to **Services**. Click on VPC.
 2. Click on **Start VPC Wizard**  
-3. Select **VPC with Public and Private Subnets and Hardware VPN Access**. Click **Select**.
-    a. Enter **IPv4 CIDR block** . This is going to be a /16 IP block that will be created under the VPC.  
-       **IPv6 CIDR Block** : Select the defaul option, **No IPv6 CIDR Block**.  
-       Enter **VPC name**.  
+3. Select **VPC with Public and Private Subnets and Hardware VPN Access**. Click **Select**.   
+   a. Enter **IPv4 CIDR block** . This is going to be a /16 IP block that will be created under the VPC.  
+      **IPv6 CIDR Block** : Select the defaul option, **No IPv6 CIDR Block**.  
+      Enter **VPC name**.  
        
-    b. Enter **Public subnet's IPv4 CIDR**. Enter a /24 IP block to use for the public subnet. This subnet should be within the range of /16 IP clock specied in step a.  
-       Select an **availability zone** for the subnet.   
-       Enter the **Public subnet name**
+   b. Enter **Public subnet's IPv4 CIDR**. Enter a /24 IP block to use for the public subnet. This subnet should be within the range of       /16 IP clock specied in step a.  
+      Select an **availability zone** for the subnet.   
+      Enter the **Public subnet name**
        
-    c. Enter **Private subnet's IPv4 CIDR**. Enter a /24 IP block to use for the private subnet. This subnet should be within the range of /16 IP clock specied in step a.  
-       Select an **availability zone** for the subnet.   
-       Enter the **Private subnet name**.
+   c. Enter **Private subnet's IPv4 CIDR**. Enter a /24 IP block to use for the private subnet. This subnet should be within the range         of /16 IP clock specied in step a.   
+      Select an **availability zone** for the subnet.   
+      Enter the **Private subnet name**.
      
-     d. Click **Next**.
+   d. Click **Next**.
      
 4. Configure your VPN.  
    a. Enter **Customer Gateway IP**.   
