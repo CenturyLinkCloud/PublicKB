@@ -1,6 +1,6 @@
 {{{
   "title": "Creating a Self-Service IPsec (Site-to-Site) VPN Tunnel",
-  "date": "11-5-2014",
+  "date": "1-29-2018",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": true
@@ -88,7 +88,7 @@
 <h3><strong>Non-standard configurations</strong></h3>
 <p>If you require any additional assistance beyond the options available in self-service, that would fall into the "non-standard" configuration category.</p>
 <p>We define non-standard configurations as anything deviating from the above process, or utilizing configuration options specifically listed as out-of-scope. These configurations need to be addressed as a <a href="http://www.ctl.io/products/support/service-tasks"
- ><strong>service task</strong></a> engagement. Contact your account manager with any questions.</p>
+ ><strong>Service Task</strong></a> engagement, which is a fee-based deployment performed manually on the applicable data center firewall (depending on the data center you wish to connect). Once the task is engaged as a Service Task, we will send you a standard form which we require to be filled out and sent back on the request ticket. This information will define the Site-to-Site VPN specifications we'll use to build and deploy the configuration. Contact your account manager with any questions, or send mail to help@ctl.io and we will advise further.</p>
 <p>Common reasons for non-standard VPN tunnels include:</p>
 <ul>
   <li>Requesting an engineer to perform a live turn-up with you on a conference call</li>
