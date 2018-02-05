@@ -13,15 +13,17 @@ This article explains how to create a site-to-site VPN between AWS and CLC. It i
 1. Go to **Services**. Click on VPC.
 2. Click on **Start VPC Wizard**  
 3. Select **VPC with Public and Private Subnets and Hardware VPN Access**. Click **Select**.   
-   a. Enter **IPv4 CIDR block** . This is going to be a /16 IP block that will be created under the VPC.  
+   a. Enter **IPv4 CIDR block** . This is going to be a /16 IP block that will be created under the VPC.   
       **IPv6 CIDR Block** : Select the defaul option, **No IPv6 CIDR Block**.  
       Enter **VPC name**.  
        
-   b. Enter **Public subnet's IPv4 CIDR**. Enter a /24 IP block to use for the public subnet. This subnet should be within the range of       /16 IP clock specied in step a.  
-      Select an **availability zone** for the subnet.   
+   b. Enter **Public subnet's IPv4 CIDR**. Enter a /24 IP block to use for the public subnet. This subnet should be within the range of       /16 IP clock specied in step a.
+      
+      Select an **availability zone** for the subnet. 
       Enter the **Public subnet name**
        
-   c. Enter **Private subnet's IPv4 CIDR**. Enter a /24 IP block to use for the private subnet. This subnet should be within the range         of /16 IP clock specied in step a.   
+   c. Enter **Private subnet's IPv4 CIDR**. Enter a /24 IP block to use for the private subnet. This subnet should be within the range         of /16 IP clock specied in step a.  
+   
       Select an **availability zone** for the subnet.   
       Enter the **Private subnet name**.
      
@@ -48,22 +50,18 @@ This article explains how to create a site-to-site VPN between AWS and CLC. It i
    f. Click **ok**  
       Select the newly created VPC.
       click **VPN Connections**.  
-      At the bottom left of the screen. Under tunnel details you can see the 2 tunnels created. The status will be down because CLC side of the tunnel has not been configured yet
+      At the bottom left of the screen. Under tunnel details you can see the 2 tunnels created. The status will be down because CLC side       of the tunnel has not been configured yet
 
 ### Continue the VPN Configuration on CLC
 1. Go back to the site-to-site VPN page in CLC cloud.
-
 2. Enter **Site Name** and **Device Name**(can be any name).  
 **VPN Peer IPv4 Address** will the outside IP of tunnel 1 under AWS Tunnel details.  
-
 3. **Tunnel Encrypted Subnets** : Click **Add network block**. This is the private subnet from the AWS VPC. Go back to the AWS cloud, and click on **Subnets** on the left side under **Virtual Private Cloud**.  
 Select the Private subnet under new VPC, and copy the **IPv4 CIDR** from under Summary. Go back to CLC page and paste this IP under Tunnel encrypted subnets.   
-
 4. Click **next: phase 1**   
 
 #### Phase 1
 1. Go back to AWS page, and click on **VPN Connections**. Click **Download Configuration**. Change the vendor to **pfsense** and click **Download**. From the configuration file, you can find all the AWS VPN configuration values. Make sure you copy the configuration for Tunnel 1 and not Tunnel 2.
-
 2. Copy the **pre-shared key** from the file and paste it in CLC in fron of **Pre-Shared Key**. Scroll down and click on **next: phase 2**
 
 #### Phase 2  
@@ -73,13 +71,9 @@ Select the Private subnet under new VPC, and copy the **IPv4 CIDR** from under S
 **Hashing Algorithm**: SHA1(96)    
 **PFS Enabled**: ON, Group 2  
 **Lifetime Value**: 1 hour  
-
 2. Click **Finish**.  
-
 3. Wait for the VPN job to finish, you can monitor the job by clicking on Status.  
-
 4. Go back to AWS page, click on **VPN connections**. The first tunnel should now be **UP**.  
-
 
 ### NAT Gateway.
 The private subnet needs to be routed using a NAT Gateway.
