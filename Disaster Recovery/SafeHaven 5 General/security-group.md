@@ -20,8 +20,8 @@ This article explains how create Security Group for SRN and CMS instances in AWS
 6.  Select the VPC that we created with the connection to production data center.
 7.  Click **Yes, Create**
 8.  When the wizard is done. Select the Security Group that the wizard created.
-9.  Select **Inbound Rules**, click **Edit** and add the following rules and save:
-[security-groups!](../../images/SH5.0/security-group/security_group.png)
+9.  Select **Inbound Rules**, click **Edit** and add the following rules and save:  
+![security-groups](../../images/SH5.0/security-group/security_group.png)
 
 
 ### Video Tutorial
