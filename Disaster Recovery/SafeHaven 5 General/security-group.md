@@ -1,5 +1,5 @@
 {{{
-  "title": "Setup AWS VPC and VPN for SafeHaven5",
+  "title": "Setup Security Group in AWS for SafeHaven5",
   "date": "02-05-2018",
   "author": "Weiran Wang",
   "attachments": [],
@@ -20,11 +20,9 @@ This article explains how create Security Group for SRN and CMS instances in AWS
 6.  Select the VPC that we created with the connection to production data center.
 7.  Click **Yes, Create**
 8.  When the wizard is done. Select the Security Group that the wizard created.
-9.  Select **Inbound Rules**, click **Edit** and add the following rules and save:
-| Type | Protocol | Port Range | Source | Description |
-|----------|---------|--------|---------|---------|
-| ALL Traffic  | All     | All   | Same security Group the wizard created |Internal Communication |
-| Custom TCP Rule  | TCP (6)   | 20080-20084 | Production Subnet |Production Site Traffic |
-| Custom UCP Rule  | UDP (17)   | 20080-20084 | Production Subnet |Production Site Traffic |
-| All ICMP - IPv4  | ICMP (1)  | All   | Production Subnet|Production Site Traffic |
-| SSH (22)  | TCP (6)   | 22 | Production Subnet |Production Site Traffic |
+9.  Select **Inbound Rules**, click **Edit** and add the following rules and save:  
+![security-groups](../../images/SH5.0/security-group/security_group.png)
+
+
+### Video Tutorial
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hjl4n3dr5sA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
