@@ -1,6 +1,6 @@
 {{{
   "title": "Deploy Microsoft SQL Server using Blueprint",
-  "date": "1-24-2018",
+  "date": "2-7-2018",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
