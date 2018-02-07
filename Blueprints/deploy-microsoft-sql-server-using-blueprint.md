@@ -49,7 +49,6 @@ This KB does not apply to [Managed Microsoft SQL Customers](//www.ctl.io/managed
 ### General Notes
 The following are quick tips/notes based on past experiences with customers leveraging this Blueprint.
 
-* The Microsoft SQL Server 2016 package requires a named instance installation. Default instance "MSSQLSERVER" is currently not supported and will result in the software not being installed. This will be corrected in the future for more flexibility to clients.
 * Only the Microsoft SQL Server 2016 package allows a customer to select an install drive for the software. Legacy packages (MS SQL 2008, 2012 & 2014) installs to `C:\`. Customers can modify the SQL database, tempdb, log locations post install to other volumes using SQL tools.
 * SQL Server Management Studio is no longer installed by default on SQL 2016 packages. Now that management tools like SSMS are packaged separate from the installer we are leaving it up to the customers to [install management software if they desire](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms).
 * The fee's for Microsoft SQL server will be applied automatically to the customers invoice when using the public Blueprint. These fee's are available in the [Pricing Catalog](//www.ctl.io/pricing). If you are unsure what these fee's are please contact your account manager.
