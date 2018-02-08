@@ -48,14 +48,21 @@ Your aggregated charges for all the services from any of your Cloud Optimized ac
 * Integrated AWS Services IaaS
 * Integrated AWS Services SaaS
 * Integrated AWS EC2 Services
+* AWS Monthly EC2 Reserved Instance Charges
 * Integrated, AWS Reserve Instance Fees - IaaS
 * Integrated, AWS Reserve Instances - IaaS
+
+**Efficiency Discount**
+
+For standard customers, CenturyLink provides a 5% efficiency discount to any on-demand EC2 usage (identified as "Integrated AWS EC2 Services"). That discount will appear as a credit on the customer's invoice as "Service Discount: Integrated AWS EC2 Services."
+
+Services described as "AWS Monthly EC2 Reserved Instance Charges" are exempt from the discount.
 
 *Azure*
 * Integrated Microsoft Azure Services IaaS
 * Integrated Microsoft Azure Services SaaS
 
-
+Standard customers currently get a 5% efficiency discount off the public, list price for Azure for all the line items described above. Currently, there is not a line item showing the credit. It is included in the line item itself.
 
 **Reconciliation**
 
@@ -63,23 +70,23 @@ Your aggregated charges for all the services from any of your Cloud Optimized ac
 * Update to Previous Month AWS Services IaaS
 * Update to Previous Month  AWS Services SaaS
 * Update to Previous Month  AWS EC2 Services
+* AWS Monthly EC2 Reserved Instance Charges
 * Update to Previous Month AWS Reserve Instance Fees - IaaS
 * Update to Previous Month  AWS Reserve Instances - IaaS
 
-*AZURE* 
+The Efficiency Discount pattern mentioned above is also applied to Reconciliation line items. 
+
+*AZURE*
+
 * Update to Previous Month Microsoft Azure Services SaaS
 * Update to Previous Month Microsoft Azure Services IaaS
 
-
-**Arrears**
-
-Arrears billing will no longer be used for Azure after October 1, 2017.
-
+The Efficiency Discount pattern mentioned above is also applied to Reconciliation line items. 
 
   *Exchange Rates*
-  
+
   The way CenturyLink handles Monthly Usage billing for non-US customers is obtain the current exchange rate of the day of the update, not necessarilly the rate for the day associated with the retrieved data (see table above).
-  
+
   The way CenturyLink handles Reconciliation billing for non-US customers is to obtain the exchange rate for the first day of the month for which the Reconciliation data is available, not the rate for any day associated with the month of the retrieved data.
 
   The way CenturyLink temporarily handles arrears billing for non-US customers is to hold onto a record of all usage until the 27th of the month following the month of actual usage. We then use the conversion rate on the 27th to convert the usage to USD in order for it to be to processed. If you informed CenturyLink that you wanted your invoices to be in your country's currency, that charge will be converted to your currency again on the last day of the month, using that date's exchange rate. CenturyLink makes no guarantee the exchange rates will be the same on the 27th and last days of the month.
