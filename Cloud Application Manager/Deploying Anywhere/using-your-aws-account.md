@@ -244,10 +244,13 @@ If you are not planning to use CloudFormation template boxes and you want to use
 
 1. Create a custom AWS policy and copy, paste the permissions chosen before and name it CAM_Policy. You can edit these permissions before if some deployment fails because of the lack of permissions.
 
-2. Create an IAM role with the role type of **Role for cross-account access**, and the Specific role is **Provide access between you AWS account and a 3rd party AWS account**. Then, add this information and attach the policy.
+2. Create an IAM role by clicking the create role button.  Then select the **Another AWS Account tab**. Provide the information below
+
    * Account ID: 540339316802
    * External ID: elasticbox
    * Require MFA: Leave unselected
+   
+   Then, add the policy you created (CAM_Policy) as well as the policy called ReadOnlyAccess. 
 
 3. Register the IAM role in Cloud Application Manager.
    * **Important:** If you use Cloud Application Manager as an appliance, connect to your AWS account using the secret and key credentials.
