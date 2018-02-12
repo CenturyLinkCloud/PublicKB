@@ -249,9 +249,10 @@ If you are not planning to use CloudFormation template boxes and you want to use
    * Account ID: 540339316802
    * External ID: elasticbox
    * Require MFA: Leave unselected
+                                                                                                                                                  
    
-   Then, add the policy you created (CAM_Policy) as well as the policy called ReadOnlyAccess. 
-
+   Then, add the policy you created (**CAM_Policy**) as well as the policy called **ReadOnlyAccess**. 
+                                                   
 3. Register the IAM role in Cloud Application Manager.
    * **Important:** If you use Cloud Application Manager as an appliance, connect to your AWS account using the secret and key credentials.
 
