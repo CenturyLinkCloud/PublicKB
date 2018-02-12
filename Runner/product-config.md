@@ -1,6 +1,6 @@
 {{{
   "title": "Runner Catalogs & Products",
-  "date": "10-03-2017",
+  "date": "10-24-2017",
   "author": "Justin Colbert",
   "attachments": [],
   "related-products" : [],
@@ -17,13 +17,17 @@ This article is to support customers of Runner, a product that enables teams, de
 
 A Runner product allows for a user to build a form around their Ansible playbooks to allow for dynamic user inputs at runtime. A Runner catalog is a git repository that contains a collection of products.
 
-- [Create a Runner Catalog](#CreateCatalog)
-- [Update a Runner Catalog](#UpdateCatalog)
-- [Refresh a Runner Catalog](#RefreshCatalog)
-- [Create a Runner Product](#CreateProduct)
-- [Create Product config.yml](#CreateProductConfig)
+* [Create a Runner Catalog](#create-a-runner-catalog)
+* [Update a Runner Catalog](#update-a-runner-catalog)
+* [Refresh a Runner Catalog](#refresh-a-runner-catalog)
+* [Create a Runner Product](#create-a-runner-product)
+* [Create Product Config](#create-product-config)
+  * [Readme File](#readme-file)
+  * [Config File](#config-file)
+  * [Required Elements](#required-elements)
+  * [Config Field Types](#config-field-types)
 
-### Create a Runner Catalog <a id="CreateCatalog">
+### Create a Runner Catalog
 
 A Runner Catalog is a github repository that contains one or more Runner proudcts. To create a Catalog, click the Help & Settings drop-down and select Settings.
 
@@ -43,35 +47,37 @@ On the left side, select Catalogs and this will bring up a view showing you all 
 Click the submit button and your catalog will be added. If you already have products configured in your repo they will start to show up in the private products section after several minutes.
 
 
-### Update a Runner Catalog <a id="UpdateCatalog">
+### Update a Runner Catalog
 
 To update a Runner Catalog, go back to the Catlogs screen and hover over the catalog you want to update. Click the gear icon and it will open the edit form where you can edit any necessary details.
 
 ![](../images/runner/runner-product-2.jpg)
 
 
-### Refresh a Runner Catalog <a id="RefreshCatalog">
+### Refresh a Runner Catalog
 
 Runner catalogs will refresh themselves every 5 minutes and scan your repository for new product directories. In the event that you need an immediate refresh or are not seeing your updates there is a manual refresh button that can be used. If you go to your catalogs, hover over the relevant catalog and hit the refresh button. This will trigger a forced reload of your catalog.
 
 ![](../images/runner/runner-product-3.jpg)
 
 
-### Create a Runner Product <a id="CreateProduct">
+### Create a Runner Product
 
-In order to have a product be recognized by Runner, it must first be present in its own folder in an existing catalog. Inside the folder, there must be a minimum of three files; your main playbook yaml file, a README.md file, and a product.yml file.
+In order to have a product be recognized by Runner, it must first be present in its own folder in an existing catalog. Inside the folder, there must be a minimum of three files; your main ```playbook.yaml``` file, a ```README.md``` file, and a ```product.yml``` file.
 
 In the below image, you can see the public Runner Library repository. Through the Runner interface, this repository is configured as a catalog and each folder that you see is a separate product within Runner.
 
 ![](../images/runner/runner-product-4.jpg)
 
-#### README.md
+### Create Product Config
 
-As part of configuring a new product, your product folder must have a README.md file. This file should provide details about how your product works and the various options that are provided. The contents of this file are then rendered into the Runner UI when your product is loaded.
+#### Readme File
 
-#### config.yml
+As part of configuring a new product, your product folder must have a ```README.md``` file. This file should provide details about how your product works and the various options that are provided. The contents of this file are then rendered into the Runner UI when your product is loaded.
 
-The config.yml file tells Runner all the necessary details about your product and is also where you configure your product form. Below are the required fields that you must put in your config.yml in order to have your Runner product page render properly.
+#### Config File
+
+The ```config.yml``` file tells Runner all the necessary details about your product and is also where you configure your product form. Below are the required fields that you must put in your ```config.yml``` in order to have your Runner product page render properly.
 
 #### Required Elements:
 parameter | comments
@@ -89,27 +95,13 @@ organizationUrl | URL for your company website
 
 #### Config Field Types
 
-The config.yml file is used to not only provide information about your product, but can also be used to build dynamic forms to provide information to your playbook. Below are the various field types you can use to acquire information from the user and pass it to your playbook.
+The ```config.yml``` file is used to not only provide information about your product, but can also be used to build dynamic forms to provide information to your playbook. Below are the various field types you can use to acquire information from the user and pass it to your playbook.
 
-#### type:
-- [datacenters](#datacenters)
-- [groups](#groups)
-- [servers](#servers)
-- [networks](#networks)
-- [textblock](#textblock)
-- [toggle](#toggle)
-- [slider](#slider)
-- [text](#text)
-- [textarea](#textarea)
-- [number](#number)
-- [select](#select)
-- [password](#password)
-- [passwordStrength](#passwordStrength)
-
-#### datacenters <a id="datacenters">
+##### Datacenters
 The datacenters field will query the CenturyLink Cloud APIs and bring back all valid datacenters for an account alias.
 
-##### Options
+###### Options
+
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -117,20 +109,21 @@ displayName | The field name to display in the UI
 helpText | Can be used to add helptext below a item
 required | Is this item required for playbook execution (true / false)
 
-##### Example
+###### Example
+
 ```yaml
-fields:
-  - type: datacenters
-    name: my_datacenter
-    displayName: Select a Datacenter
-    required: true
-```
+  fields:
+    - type: datacenters
+      name: my_datacenter
+      displayName: Select a Datacenter
+      required: true
+  ```
 
 
-#### groups <a id="groups">
+##### Groups
 The groups field will query the CenturyLink Cloud APIs and display all groups for an account alias. The output can be restricted to a specific datacenter if you include a `parent` option.
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -140,7 +133,7 @@ multiple | Can you select multiple groups instead of just one (true / false)
 parent | Can be used to restrict to only groups in a certain datacenter. (datacenters corresponding name)
 required | Is this item required for playbook execution (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: groups
@@ -149,7 +142,7 @@ fields:
     multiple: true
     required: true
 ```
-##### Parent Example
+###### Parent Example
 ```yaml
 fields:
   - type: datacenters
@@ -166,10 +159,10 @@ fields:
 ```
 
 
-#### servers <a id="servers">
+##### Servers
 The servers field will query the CenturyLink Cloud APIs and display all servers for an account alias.
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -180,7 +173,7 @@ parent | Can be used to restrict to only groups in a certain datacenter. (datace
 required | Is this item required for playbook execution (true / false)
 inventory | Should the selected servers be added to your Ansible inventory (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: servers
@@ -192,10 +185,10 @@ fields:
 ```
 
 
-#### networks <a id="networks">
+##### Networks
 The networks field will query the CenturyLink Cloud APIs and display all networks for an account alias.
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -205,7 +198,7 @@ parent | Can be used to restrict to only networks in a certain datacenter. (data
 required | Is this item required for playbook execution (true / false)
 detail | Provide additional details about the network on the backend (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: networks
@@ -216,10 +209,10 @@ fields:
 ```
 
 
-#### textblock <a id="textblock">
+##### Textblock
 The textblock field can be used to display various types of information or warning type text on the product form.
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -227,7 +220,7 @@ title | The title of your textblock
 text | The text to display in your textblock
 level | The level of textblock to display (info / warning / danger)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: textblock
@@ -238,10 +231,10 @@ fields:
 ```
 
 
-#### toggle <a id="toggle">
+##### Toggle
 The toggle field generates a toggle button that can be used to send a true or false variable to Ansible
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -249,7 +242,7 @@ displayName | The field text to display in the UI
 helpText | Can be used to add helptext below a item
 default | The default state of the toggle button (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: toggle
@@ -259,10 +252,10 @@ fields:
 ```
 
 
-#### slider <a id="slider">
+##### Slider
 The slider field allows you to generate a numeric slider
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -273,7 +266,7 @@ max | The maximum value that can be selected
 default | The default value the slider will be initially set at
 required | Is this item required for playbook execution (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: slider
@@ -286,10 +279,10 @@ fields:
 ```
 
 
-#### text <a id="text">
+##### Text
 The text field allows you to specify text as a value
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -300,7 +293,7 @@ minLength | The minimum text length allowable
 maxLength | The maximum text length allowable
 required | Is this item required for playbook execution (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: text
@@ -313,10 +306,10 @@ fields:
 ```
 
 
-#### textarea <a id="textarea">
+##### Textarea
 The textarea field allows you to specify large blocks of text
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -324,7 +317,7 @@ displayName | The field text to display in the UI
 helpText | Can be used to add helptext below a item
 required | Is this item required for playbook execution (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: textarea
@@ -334,10 +327,10 @@ fields:
 ```
 
 
-#### number <a id="number">
+##### Number
 The number field allows you to specify a number
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -348,7 +341,7 @@ min | The minimum number allowable
 max | The maximum number allowable
 required | Is this item required for playbook execution (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: number
@@ -361,10 +354,10 @@ fields:
 ```
 
 
-#### select <a id="select">
+##### Select
 The select field allows you to select values from a pre-defined list
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -377,7 +370,7 @@ selected (options) | A subset of options, this specifies if this option should b
 multiple | Are you allowed to select multiple options (true / false)
 required | Is this item required for playbook execution (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: select
@@ -395,10 +388,10 @@ fields:
     required: true
 ```
 
-#### password <a id="password">
+##### Password
 The password field allows you to specify passwords while keeping the text hidden on the screen
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -406,7 +399,7 @@ displayName | The field text to display in the UI
 helpText | Can be used to add helptext below a item
 required | Is this item required for playbook execution (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: password
@@ -416,10 +409,10 @@ fields:
 ```
 
 
-#### passwordStrength <a id="passwordStrength">
+##### PasswordStrength
 The passwordStrength field allows you to specify passwords that conform to certain complexity standards
 
-##### Options
+###### Options
 parameter | comments
 --- | ---
 name | The name of the variable to pass to Ansible
@@ -430,7 +423,7 @@ requiredStrength | The required amount of different types of characters for a pa
 dissallowedCharacters | Specify which characters are not allowed
 required | Is this item required for playbook execution (true / false)
 
-##### Example
+###### Example
 ```yaml
 fields:
   - type: passwordStrength

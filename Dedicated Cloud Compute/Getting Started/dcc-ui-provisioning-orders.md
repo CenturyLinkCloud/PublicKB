@@ -7,7 +7,7 @@
 "contentIsHTML": false
 }}}
 
-You can provision orders in the new Dedicated Cloud Compute (DCC) UI. Steps include adding and deleting a VM, adding a datastore, and adding and deleting a disk. [Go here](./dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
+You can provision orders in the new Dedicated Cloud Compute (DCC) UI. Steps include adding and deleting a VM, adding a datastore, and adding and deleting a disk. [Go here](dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
 
 ### Add VM/Delete VM
 
@@ -33,7 +33,7 @@ You can also add data storage to the VM/server order.
 
     ![dashboard](../../images/dcc-ui-provisioning-orders-3.png)
 
-3. Click **Save Order**. This will put your order in the **Saved Orders** section, which you can then [deploy](./dcc-ui-working-with-orders.md).
+3. Click **Save Order**. This will put your order in the **Saved Orders** section, which you can then [deploy](dcc-ui-working-with-orders.md).
 
 ### Add Disk/Delete Disk
 

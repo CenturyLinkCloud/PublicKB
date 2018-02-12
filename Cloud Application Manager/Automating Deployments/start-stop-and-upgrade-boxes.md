@@ -21,7 +21,7 @@ The Cloud Application Manager agent executes and stores the output of the event 
 
 ### Event Types
 
-There are five types of events on a box. Each event executes depending on the [action](../API/instances-api.md) triggered on a box instance.
+There are five types of events on a box. Each event executes depending on the [action](https://www.ctl.io/api-docs/cam/#application-lifecycle-management-instances-api) triggered on a box instance.
 
 **Install**
 

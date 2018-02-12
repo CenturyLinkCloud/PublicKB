@@ -199,7 +199,7 @@ In this example, Infoblox provides a static IP and domain name for every instanc
 
    ![admin-webhooks4.png](../../images/cloud-application-manager/admin-webhooks4.png)
 
-3. Add the custom Infoblox web service endpoint as a webhook. Under [Admin Console](./admin-overview.md) > Webhooks, enter the endpoint of the deployed webservice as a webhook like this: http://endpoint_of_webservice_instance/requestIP
+3. Add the custom Infoblox web service endpoint as a webhook. Under [Admin Console](admin-overview.md) > Webhooks, enter the endpoint of the deployed webservice as a webhook like this: http://endpoint_of_webservice_instance/requestIP
 
    ![admin-webhooks5.png](../../images/cloud-application-manager/admin-webhooks5.png)
 

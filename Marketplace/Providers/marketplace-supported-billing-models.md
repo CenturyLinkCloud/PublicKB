@@ -1,7 +1,7 @@
 {{{
  "title": "Marketplace Supported Billing Models",
- "date": "04-02-2017",
- "author": "Rich DuBose",
+ "date": "12-07-2017",
+ "author": "Brandy Smith",
  "attachments": [],
  "contentIsHTML": false
  }}}
@@ -10,7 +10,7 @@
 
  * Hourly
  * Monthly
- * Annual - We don't support annually - all billing is monthly, hourly, 1-time, usage-based
+ * Annual - The Marketplace does not support annual billing, however, we can take an annual charge and divide it by twelve and charge the customer that value monthly. Also, term commits can be implemented to a product. 
  * One-Time
  * [Usage Based](usage-based-billing.md)
 

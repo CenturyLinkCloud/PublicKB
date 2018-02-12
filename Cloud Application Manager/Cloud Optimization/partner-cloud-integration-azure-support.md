@@ -16,9 +16,9 @@ All of our customers are invited to use Cloud Optimization via Cloud Application
 
 ### Prerequisites
 
-Knowledge of Cloud Application Manager's [partner cloud integration](./partner-cloud-integration.md) feature.
+Knowledge of Cloud Application Manager's [partner cloud integration](partner-cloud-integration.md) feature.
 
-Knowledge of how to [get started with cloud-integrated Azure](./partner-cloud-integration-azure-new.md)
+Knowledge of how to [get started with cloud-integrated Azure](partner-cloud-integration-azure-new.md)
 
 ### Important Information
 

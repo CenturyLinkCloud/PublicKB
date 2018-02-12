@@ -11,6 +11,7 @@
     "Container Services",
     "Control Portal",
     "Database",
+    "DCC Foundation",
     "Dedicated Cloud Compute",
     "Disaster Recovery",
     "Ecosystem Partners",

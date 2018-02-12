@@ -35,7 +35,7 @@ You require an account on [Rackspace Cloud](https://mycloud.rackspace.com/) to a
 
 ### Deploy on Rackspace Cloud from Cloud Application Manager
 
-Select these deployment options when you [launch a new instance](./deploying-managing-instances.md) to spin up a workload on a Linux server in Rackspace Cloud.
+Select these deployment options when you [launch a new instance](deploying-managing-instances.md) to spin up a workload on a Linux server in Rackspace Cloud.
 
 
 **Deployment**
