@@ -24,7 +24,7 @@ London, UK|LO6|LO6|GB1
 Frankfurt, DE|FR6|FR6|DE1<br>DE3
 Toronto, Canada|TR1|TR1|CA3<br>CA2
 Sydney, AU|SY7|SY7|AU1
-Singapore, SG|SG2<br>SG8|SG1
+Singapore, SG|SG2|SG2<br>SG8|SG1
 
 
 ### Configuration Guide
