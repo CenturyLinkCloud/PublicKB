@@ -8,7 +8,7 @@
 
 ### Overview
 
-CenturyLink [Cloud Application Manager's](https://www.ctl.io/cloud-application-manager/) Cloud Optimization offers [consolidated billing](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-consolidated-billing/) to make payments easy. Part of the consolidated billing involves CenturyLink's strategy for billing Amazon Web Services [Reserved Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html).
+CenturyLink [Cloud Application Manager's](https://www.ctl.io/cloud-application-manager/) Cloud Optimization offers [consolidated billing](partner-cloud-integration-consolidated-billing.md)to make payments easy. Part of the consolidated billing involves CenturyLink's strategy for billing Amazon Web Services [Reserved Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html).
 
 
 ### Audience
@@ -20,13 +20,13 @@ Users of accounts that already have or are considering CenturyLink Optimization 
 
 For a new AWS Account:
 
-* The customer must have reviewed the process for creating a [new Amazon Web Services account](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-aws-new/) and is thinking about buying AWS Reserved Instances.
+* The customer must have reviewed the process for creating a [new Amazon Web Services account](partner-cloud-integration-aws-new.md) and is thinking about buying AWS Reserved Instances.
 
 For an existing AWS Account:
 
 * The customer must already have an AWS account that has been specifically mentioned in the AWS account transfer process. (Only approved accounts are authorized for this process.)
 
-* The customer must have reviewed the process for transferring an [existing Amazon Web Services account](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-aws-existing/)
+* The customer must have reviewed the process for transferring an [existing Amazon Web Services account](partner-cloud-integration-aws-existing.md)
 
 * The customer has purchased AWS Reserved Instances or is thinking about buying AWS Reserved Instances.
 
@@ -35,7 +35,7 @@ For an existing AWS Account:
 
 #### Customer Reserved Instances
 
-Reserved Instances purchased prior to transferring to CenturyLink may still be used and must always stay with the account at which they were purchased.  If the Customer purchased Reserved Instances from a Master Payer they own, they can still use those Reserved Instances while under CenturyLink's care. Please review the process for migrating an [existing Amazon Web Services account](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-aws-existing/), specifically the "Considerations" section.
+Reserved Instances purchased prior to transferring to CenturyLink may still be used and must always stay with the account at which they were purchased.  If the Customer purchased Reserved Instances from a Master Payer they own, they can still use those Reserved Instances while under CenturyLink's care. Please review the process for migrating an [existing Amazon Web Services account](partner-cloud-integration-aws-existing.md), specifically the "Considerations" section.
 
 Standard customer AWS accounts reside in one CenturyLink owned AWS Organization.
 
@@ -74,6 +74,6 @@ Line item description on your bill: Integrated, AWS Reserve Instances - SaaS
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](https://www.ctl.io/knowledge-base/cloud-application-manager/troubleshooting/troubleshooting-tips/), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
