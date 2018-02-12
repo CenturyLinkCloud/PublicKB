@@ -86,17 +86,18 @@ All policies summarized in this document are the result of intensive consultatio
 > * Get, List, and Describe capabilities for AWS Certificate Manager, Cloud Formation, CloudFront, Cloud HSM, CloudSearch, CloutTrail, CloudWatch, Config, Data Pipeline, Direct Connect, Dynamo DB, EC2, ECS, Elasticache, Elastic Beanstalk, EFS, ELB, Elastic Map Reduce, Elastisearch, Glacier, IAM, Kinesis, key Management Service, Lambda, RDS, Redshift, Route 53, S3, Simple Email Service, Simple DB, Support, Simple Workflow Service, Simple Notification Service, Simple Queue Service, Storage Gateway, and Workspaces.
 
 **Cloud Application Manager Policy**
-* **Policy Name**: CTLCAMPolicy
+* **Policy Name**: CTLCAMPolicy, ReadOnlyAccess
 * **Role Name**: CTLCAMRole
-* **Targeted groups/tools/users**: Cloud Application Manager
-* **Intent**: To permit Cloud Application Manager's application lifecycle management (ALM) capabilities.
-* **Change Requests**: [The standard CAM policy](https://www.ctl.io/knowledge-base/cloud-application-manager/deploying-anywhere/using-your-aws-account/) is meant to be customizable. If you would like to alter the ALM capabilities of Cloud Application Manager, please submit a ticket describing the policy you wish to apply.
+* **Targeted groups/tools/users**: Cloud Application Manager, Monitoring Service
+* **Intent**: To permit Cloud Application Manager's application lifecycle management (ALM) capabilities and to enable [Monitoring](../Monitoring/CTLCloudMonitoringUI.md).
+* **Change Requests**: [The standard CAM policy](../Deploying Anywhere/using-your-aws-account.md) is meant to be customizable. If you would like to alter the ALM capabilities of Cloud Application Manager, please submit a ticket describing the policy you wish to apply.
 * **Policy Summary**
 > * All the ability to manipulate resources as described [here](../Deploying Anywhere/using-your-aws-account.md)
 > * Allows governance for all EC2 functions
 > * Full control of typical autoscaling/Cloud Formation/RDS/S3 tasks
 > * Allows IAM user/policy creation, deletion, listing and modification.
 > * Allows core Cloud Application Manager functionality and delegation for Managed Services Anywhere assistance.
+> * Allows ReadOnlyAccess to enable the [Monitoring](../Monitoring/CTLCloudMonitoringUI.md) feature on Cloud Application Manager
 
 **CenturyLink Service Management Policy**
 * **Policy Name**: CTLServiceManagmentPolicy
