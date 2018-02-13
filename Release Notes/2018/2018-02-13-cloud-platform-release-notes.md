@@ -18,14 +18,14 @@ Cost Center administrators can now create new AWS & Azure Optimized providers wi
 
 
 ##### Managed Services Anywhere
-<p>
+
 ###### Support for Microsoft Windows 2016 Operating System
 
 Managed Services Anywhere now includes support for Microsoft Windows 2016 Standard and Datacenter on CenturyLink Cloud (CLC) along with AWS and Azure. Customers deploying the Windows 2016 Standard or Datacenter Operating System now have an option to "Delegate OS Management" to CenturyLink. With CenturyLink managing their virtual machine instances, customers enjoy all the benefits of [Managed Services Anywhere](https://www.ctl.io/legal/cloud-application-manager/service-guide/).
 
 
 #### CenturyLink Cloud
-<p>
+
 ###### Support for Microsoft Windows 2016 Operating System
 
 In addition to being available via Cloud Application Manager, Managed Windows 2016 is also available via CenturyLink Cloud Control portal.
