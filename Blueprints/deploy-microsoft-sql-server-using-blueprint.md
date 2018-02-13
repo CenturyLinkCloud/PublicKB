@@ -1,6 +1,6 @@
 {{{
   "title": "Deploy Microsoft SQL Server using Blueprint",
-  "date": "1-4-2018",
+  "date": "2-7-2018",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -49,7 +49,8 @@ This KB does not apply to [Managed Microsoft SQL Customers](//www.ctl.io/managed
 ### General Notes
 The following are quick tips/notes based on past experiences with customers leveraging this Blueprint.
 
-* Only the Microsoft SQL Server 2016 package allows a customer to select an install drive for the software. Legacy packages (MS SQL 2008, 2012 & 2014) installs to `C:\`. Customers can modify the SQL database, tempdb, log locations post install to other volumes using SQL tools.
+* The Microsoft SQL Server 2016 package allows a customer to select an install drive for the software. Legacy packages (MS SQL 2008, 2012 & 2014) installs to `C:\`. Customers can modify the SQL database, tempdb, log locations post install to other volumes using SQL tools.
+* The Microsoft SQL Server 2016 package leverages Windows Authentication during installation. This is based on Microsoft best practices. Customers who wish to use **mixed** mode authentication can [change the server authentication mode.](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/change-server-authentication-mode) 
 * SQL Server Management Studio is no longer installed by default on SQL 2016 packages. Now that management tools like SSMS are packaged separate from the installer we are leaving it up to the customers to [install management software if they desire](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms).
 * The fee's for Microsoft SQL server will be applied automatically to the customers invoice when using the public Blueprint. These fee's are available in the [Pricing Catalog](//www.ctl.io/pricing). If you are unsure what these fee's are please contact your account manager.
 * Licensing fee's are adjusted based on number of vCPU allocated to a virtual machine with a minimum of 4 vCPU license fees incurred.  Customers billing will be modified as vCPU configurations change.

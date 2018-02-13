@@ -29,7 +29,7 @@ For Azure, we are currently limited to serving billable customers who are not re
 
 * An understanding of the features and benefits of [Partner Cloud Integration](partner-cloud-integration.md)
 
-* For each CenturyLink Cloud account integrated with Azure, both CenturyLink's and Microsoft's Terms and Conditions must be accepted. These will be presented to any user attempting to create a new "Azure Resource Manager" provider in Cloud Application Manager.
+* For each CenturyLink Cloud account integrated with Azure, both CenturyLink's and Microsoft's Terms and Conditions must be accepted. These will be presented to any user attempting to create a new "Microsoft Azure" provider in Cloud Application Manager.
 
 ### Important Information
 

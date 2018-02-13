@@ -168,6 +168,7 @@ If you are not planning to use CloudFormation template boxes and you want to use
         "ec2:TerminateInstances",
         "ecs:ListClusters",
         "elasticache:*",
+        "elasticloadbalancing:ConfigureHealthCheck",
         "elasticloadbalancing:CreateLoadBalancer",
         "elasticloadbalancing:CreateLoadBalancerPolicy",
         "elasticloadbalancing:DeleteLoadBalancer",
@@ -177,10 +178,11 @@ If you are not planning to use CloudFormation template boxes and you want to use
         "elasticloadbalancing:DescribeLoadBalancerPolicies",
         "elasticloadbalancing:DescribeLoadBalancers",
         "elasticloadbalancing:DescribeTargetGroups",
-        "elasticloadbalancing:RegisterInstancesWithLoadBalancer",
-        "elasticloadbalancing:SetLoadBalancerPoliciesOfListener",
+        "elasticloadbalancing:DescribeTargetHealth",
         "elasticloadbalancing:ModifyLoadBalancerAttributes",
-        "elasticloadbalancing:ConfigureHealthCheck",
+        "elasticloadbalancing:RegisterInstancesWithLoadBalancer",
+        "elasticloadbalancing:RegisterTargets",
+        "elasticloadbalancing:SetLoadBalancerPoliciesOfListener",
         "iam:CreateUser",
         "iam:DeleteUser",
         "iam:ListAccessKeys",
@@ -266,6 +268,7 @@ By default, Cloud Application Manager makes the latest AWS Linux and Windows AMI
 **Note:** For this to work you may have go to the AWS marketplace and accept the license agreement for that AMI. Although most AMIs come pre-installed with [cloud-init](https://cloudinit.readthedocs.org/en/latest/), some may not, in which case you must install it. Cloud Application Manager requires cloud-init to bootstrap the Cloud Application Manager agent.
 
 ### Deploy to Your AWS Account
+
 When you deploy a box, we show [deployment policies](../Automating Deployments/deploymentpolicy-box.md) whose claims match the required tags of the box.
 
 RDS, DynamoDB, and Memcached are CloudFormation boxes. To deploy to an RDS service, such as MySQL, MS SQL, Oracle, or PostgresSQL, configure its CloudFormation box.
@@ -279,7 +282,7 @@ RDS, DynamoDB, and Memcached are CloudFormation boxes. To deploy to an RDS servi
 ### EC2 (Linux and Windows)
 To deploy workloads to an EC2 instance, create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) for an AWS account or use the one your admin shared with you.
 
-![aws-deployment-policy-2.png](../../images/cloud-application-manager/aws-deployment-policy-2.png)
+![aws-deployment-policy-2.png](../../images/cloud-application-manager/aws-deployment-policy-3.png)
 
 
 **Deployment**
@@ -296,7 +299,7 @@ To deploy workloads to an EC2 instance, create a [deployment policy](../Automati
 | Region | Select the region where you want to create the instance, for example, us-east-1.|
 | AMI | Select a public, private, or shared AWS or an AWS community based AMI available by location.|
 | Instance Type |	Select an instance type that’s pre-determined by the size of compute, memory, and network resources from the list that AWS provides, for example, db.t1.micro.|
-| Keypairs | Select a key pair you created in AWS to connect to the instance or select None if you don’t want SSH access to the instance.|  
+| Keypairs | Select a key pair you created in AWS to connect to the instance or select None if you don’t want SSH access to the instance.|
 |IAM Role | Select one to assign an existing IAM role to the instance. This allows the instance to make and accept API requests securely using the permissions defined by the role. To let Cloud Application Manager view and pass the existing role to the instance, update the Cloud Application Manager IAM role policy with the listed permissions. To learn more about IAM roles, see the [AWS docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#permission-to-pass-iam-roles).|
 | Instances |	Select the number of instances to launch.|
 
@@ -343,7 +346,17 @@ Turn on to allow AWS to automatically scale to the number of instances you speci
 
 **Load Balancing**
 
-Load balancing evenly distributes load to your application instances hosted on EC2 or a VPC across all availability zones in a region. When you enable and configure it for an instance, Cloud Application Manager automatically sets up load balancing.
+Load balancing evenly distributes load to your application instances hosted on EC2 or a VPC across all availability zones in a region.
+AWS supports three kinds of load balancers, classic load balancer, application load balancer and network load balancer.
+
+Both Application Load Balancers and Network Load Balancers send their traffic to Target Groups. Cloud Application Manager supports adding every machine of an instance to a Target Group and remove them once the instance is terminated. This allows you to attach an instance to both types of load balancers automatically. In addition to that, you can select multiple Target Groups. This allows the same instance to belong to several Load Balancers simultaniously.
+
+![aws-deppolicy-loadbalancing-target-group.png](../../images/cloud-application-manager/aws-deppolicy-loadbalancing-target-group.png)
+
+**Classic load balancers**
+
+In addition to the Application Load Balancer and the Network Load Balancer, Cloud Application Manager also support the Classic Load Balancers. When you enable and configure it for an instance, Cloud Application Manager automatically sets up the classic load balancing.
+
 To set up, add a new listener or select an existing one. Then specify the protocol and ports through which traffic flows from the client to the load balancer node (front-end) and from the load balancer to the instance (backend). To allow traffic over HTTPS, SSL, you must [upload a certificate](https://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/US_SettingUpLoadBalancerHTTPS.html) to AWS. The default settings require that your EC2 servers are active and accept requests via the port specified for the load balancing listener. Accepted ports are 25, 80, 443, and 1024 to 65535.
 
 ![aws-deppolicy-loadbalancing-autoscaling-4.png](../../images/cloud-application-manager/aws-deppolicy-loadbalancing-autoscaling-4.png)

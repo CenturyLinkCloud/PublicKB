@@ -47,11 +47,11 @@ Most Amazon Web Services offering are available through CenturyLink.
 
 **Considerations**
 
-CenturyLink highly recommends Full Hardening for all Customer accounts.
+CenturyLink highly recommends Optimization for all Customer accounts.
 
-* **Data changes** For non-hardened accounts, AWS Billing reports (such as Cost Explorer) within the AWS Management Console will not provide accurate representation of private pricing, CenturyLink discounts, or managed costs. Also, aggregated date for all accounts will no longer be automatically available through a single Console view. Fully Hardened or Optimized accounts have access to use Cloud Application Manager's [Analytics](../Analytics/CloudApplicationManagerAnalyticsUI.md) tool for usage details that would have been provided by AWS Billing Services such as Cost Explorer.
+* **Data changes** Optimized accounts have access to use Cloud Application Manager's [Analytics](../Analytics/CloudApplicationManagerAnalyticsUI.md) and [Monitoring](../Monitoring/CTLCloudMonitoringUI.md) tools for usage details that would have been provided by AWS Billing Services such as Cost Explorer and to offer our customers visibility into the status of their environment.
 * **Historical Usage Data** Such as that had been used by AWS Cost Explorer - will be lost when accounts migrate under a new Master Payer. CenturyLink recommends Customers download all necessary usage data to a safe repository prior to completing the following steps.
-* **Data Access** Customers will not be given access to consolidated data within the CenturyLink-owned Master Payers. Fully Hardened or Optimized accounts have access to use Cloud Application Manager's [Analytics](../Analytics/CloudApplicationManagerAnalyticsUI.md) tool for usage details.
+* **Data Access** Customers will not be given access to consolidated data within the CenturyLink-owned Master Payers. Optimized accounts have access to use Cloud Application Manager's [Analytics](../Analytics/CloudApplicationManagerAnalyticsUI.md) tool for usage details.
 * **Tagging Changes.** The quantity of Cost Allocation tags available to Customers, such as those used for AWS Cost Explorer, are limited. Please contact your sales representative or submit a support ticket prior to migration to discuss your tagging requirements.
 * **Reserved Instances**
   * Purchased prior to transferring to CenturyLink must always stay with the account at which they were purchased.  If the Customer purchased Reserved Instances from a Master Payer they own, they can still use them.

@@ -1,6 +1,6 @@
 {{{
   "title": "Converting unmanaged virtual machines to managed",
-  "date": "5-28-2015",
+  "date": "2-13-2018",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -34,7 +34,7 @@ The table below provides a matrix of the supported locations and Operating Syste
 
 **Cloud Location**| **Operating System**
 ----------------- | --------------------
-GB3 - Great Britain (Slough)<br>VA1 - US East (Sterling)<br>UC1 - US West (Santa Clara)<br>US Central (Chicago) - IL1<br>Canada (Toronto - Mississauga) - CA3<br>APAC (Singapore) - SG1|Red Hat Enterprise Linux 5 - 64-bit<br>Red Hat Enterprise Linux 6 - 64-bit<br>Red Hat Enterprise Linux 7 - 64-bit<br>Windows 2008 R2 Standard - 64-bit<br>Windows 2008 R2 Enterprise - 64-bit<br>Windows 2008 R2 DataCenter Edition - 64-bit<br>Windows 2012 DataCenter Edition - 64-bit<br>Windows 2012 R2 DataCenter Edition - 64-bit
+GB3 - Great Britain (Slough)<br>VA1 - US East (Sterling)<br>UC1 - US West (Santa Clara)<br>US Central (Chicago) - IL1<br>Canada (Toronto - Mississauga) - CA3<br>APAC (Singapore) - SG1|Red Hat Enterprise Linux 5 - 64-bit<br>Red Hat Enterprise Linux 6 - 64-bit<br>Red Hat Enterprise Linux 7 - 64-bit<br>Windows Server 2008 R2 Standard - 64-bit<br>Windows Server 2008 R2 Enterprise - 64-bit<br>Windows Server 2008 R2 DataCenter Edition - 64-bit<br>Windows 2012 Server DataCenter Edition - 64-bit<br>Windows Server 2012 R2 DataCenter Edition - 64-bit<br>Windows Server 2016 Datacenter Edition - 64-bit
 
 ### Converting Windows Virtual Machines
 1. Log into the [Control Portal](https://control.ctl.io). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**. Select a data center that supports managed operating system services.
