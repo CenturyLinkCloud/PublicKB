@@ -176,6 +176,7 @@ If you are not planning to use CloudFormation template boxes and you want to use
         "elasticloadbalancing:DescribeInstanceHealth",
         "elasticloadbalancing:DescribeLoadBalancerPolicies",
         "elasticloadbalancing:DescribeLoadBalancers",
+        "elasticloadbalancing:DescribeTargetGroups",
         "elasticloadbalancing:RegisterInstancesWithLoadBalancer",
         "elasticloadbalancing:SetLoadBalancerPoliciesOfListener",
         "elasticloadbalancing:ModifyLoadBalancerAttributes",
@@ -249,7 +250,7 @@ If you are not planning to use CloudFormation template boxes and you want to use
    * Account ID: 540339316802
    * External ID: elasticbox
    * Require MFA: Leave unselected
-                                                                                                                                                  
+                                                                                                                                       
    
    Then, add the policy you created (**CAM_Policy**) as well as the policy called **ReadOnlyAccess**. 
                                                    
