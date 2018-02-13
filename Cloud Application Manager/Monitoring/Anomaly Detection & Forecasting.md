@@ -15,24 +15,34 @@ This document will cover anomaly detection, confidence bands, and forecasting fu
 
 Holt Winters (Triple Exponential Smoothing)
 
-•	Well known forecasting model
-•	Considers three components of dataset
-     o	 Level: Behavior of the y-axis value over time
-     o	Trend: Behavior of the incline/slope of the dataset over time
-     o	Season: Repeating patterns in a dataset over a fixed time period
+•	Well known forecasting model                                                                       
+•	Considers three components of dataset         
+
+      o	Level: Behavior of the y-axis value over time
+
+      o	Trend: Behavior of the incline/slope of the dataset over time
+
+      o	Season: Repeating patterns in a dataset over a fixed time period
 
  ![Holt Winters](../../images/HoltWinters.PNG)
 
 
-#### Features:
+### Features:
 
 •	Can be applied to CloudWatch datasets and Watcher telemetry data
+
 •	You do not need to be a managed account to access graphs
+
 •	Customer must grant Cloud Application Manager access to see their CloudWatch data
+
      o	Provider’s ARN contains ReadOnlyAccess permission
+     
 •	The forecasting function can be projected arbitrarily in the future
+
 •	Ability to copy the metric ID to clipboard
+
 •	Intuitive legend to allow users to apply functions to the corresponding datasets on the graph
+
 
 **Forecast** – Graphs based on projected future states of metric data.  Future time periods can be specified for any metric (including those originating from AWS CloudWatch).
 
@@ -41,7 +51,7 @@ Holt Winters (Triple Exponential Smoothing)
 **Anomaly Detection** – Visual representation of the degree of aberration within a signal.
 
 
-#### Navigation 
+### Navigation 
 
 **Forecast:**
 To access the anomaly detection and forecasting function you first need to go to the Graphs tab.
