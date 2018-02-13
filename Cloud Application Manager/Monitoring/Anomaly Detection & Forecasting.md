@@ -18,7 +18,7 @@ Holt Winters (Triple Exponential Smoothing)
 •	Well known forecasting model                                                                       
 •	Considers three components of dataset         
 
-      o	Level: Behavior of the y-axis value over time
+      o Level: Behavior of the y-axis value over time
 
       o	Trend: Behavior of the incline/slope of the dataset over time
 
@@ -56,28 +56,27 @@ Holt Winters (Triple Exponential Smoothing)
 **Forecast:**
 To access the anomaly detection and forecasting function you first need to go to the Graphs tab.
 
-
- ![Graphs Left Nav](../../images/GraphsLeftNav.PNG)
+ ![GraphsLeftNav](../../images/GraphsLeftNav.PNG)
 
 From there you will select your Source and then the metrics you want to view.
 
-![Graph Source](../../images/Graphsource.PNG)
+![GraphSource](../../images/GraphSource.PNG)
 
 You will see that there is an f(X) button as well as a clipboard icon.  The clipboard icon allows you to copy the metric id to the clipboard.  The _f(X)_ allows you to add the anomaly detection, forecasting, and confidence band functionality.
  
-![Graph Functionality](../../images/graphfunctionality.PNG)
+![graphfunctionality](../../images/graphfunctionality.PNG)
 
 To view your original data (CPUUtilization) as well as the functional data you want to apply; you need to add the same dataset to the graph.
 
-![Graphs Adding Data](../../images/graphsaddingdata.PNG)
+![GraphsAddingData](../../images/GraphsAddingData.PNG)
 
 Once you have added the second metric you can add your functionality.  The legend will change to show your applied functionality in a new color. 
 
-![Graphs legend change](../../images/graphlegendchange.PNG)
+![Graphslegendchange](../../images/Graphlegendchange.PNG)
 
 _As a rule of thumb, requesting 2 weeks of data generates more meaningful results.  The more data that is available the more accurate you can expect the forecast to be._
 
-![Forecast Graph](../../images/forecastgraph.PNG)
+![Forecastgraph](../../images/Forecastgraph.PNG)
 
 **Anomaly Detection:**
 
@@ -85,4 +84,4 @@ To access anomaly detection, you would follow the same path as Forecast but woul
 
 _As a rule of thumb, you need to request at least 72 hours of data to generate more meaningful results.  The more data that is available (up to 2 weeks) the more accurate you can expect the forecast to be._
 
-![Anomaly Graph](../../images/anomalygraph.PNG)
+![AnomalyGraph](../../images/AnomalyGraph.PNG)
