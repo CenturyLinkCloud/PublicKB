@@ -17,11 +17,11 @@ To find the list of Object Storage users associated with your Control Portal acc
 
 1. In the Navigation Menu, click **Services > Object Storage**.  If the account has no active users, you will see a page that looks like this:
 
-![Object Storage No Buckets View](../images/object-storage-no-buckets-view.png)
+![Object Storage No Buckets View](../images/object-storage/no-buckets-view.png)
 
 2. Click on the **Users** tab.
 
-![Object Storage No Users View](../images/object-storage-no-users-view.png)
+![Object Storage No Users View](../images/object-storage/no-users-view.png)
 
 
 
@@ -31,7 +31,7 @@ To create a new Object Storage user:
 
 1. Navigate to the list of Object Storage users.  If the account has no active users, you will see a page that looks like this:
 
-![Object Storage No Buckets View](../images/object-storage-no-buckets-view.png)
+![Object Storage No Buckets View](../images/object-storage/no-buckets-view.png)
 
 2. Click the **create user** button.
 
@@ -39,11 +39,11 @@ To create a new Object Storage user:
 
 3. Click the **save** button.  After the user is created, it will be listed:
 
-![Object Storage Users View](../images/object-storage-users-view.png)
+![Object Storage Users View](../images/object-storage/users-view.png)
 
 Click on the row with the user in order to get details for that user, including the **access key ID** and **secret access key**:
 
-![Object Storage User](../images/object-storage-user.png)
+![Object Storage User](../images/object-storage/user.png)
 
 
 
@@ -66,11 +66,11 @@ To disable a user:
 
 1. Navigate to the user's details, which may look like this:
 
-![Object Storage User](../images/object-storage-user.png)
+![Object Storage User](../images/object-storage/user.png)
 
 2. Click the **status** row:
 
-![Object Storage User Status](../images/object-storage-user-status.png)
+![Object Storage User Status](../images/object-storage/user-status.png)
 
 3. Flip the toggle to the desired enabled status, and click the **save** button.
 
@@ -82,16 +82,16 @@ Users may be re-enabled.  To enable a user:
 
 1. Navigate to the list of Object Storage users.  If the account has no active users, you will see a page that looks like this:
 
-![Object Storage No Buckets View](../images/object-storage-no-buckets-view.png)
+![Object Storage No Buckets View](../images/object-storage/no-buckets-view.png)
 
 2. Use the dropdown box to change your view from **enabled** to **disabled** to list disabled users.
 3. Click the row with the disabled user to see its details:
 
-![Object Storage User](../images/object-storage-user.png)
+![Object Storage User](../images/object-storage/user.png)
 
 4. Click the **status** row:
 
-![Object Storage User Status](../images/object-storage-user-status.png)
+![Object Storage User Status](../images/object-storage/user-status.png)
 
 5. Flip the toggle to the desired enabled status, and click the **save** button.
 
@@ -103,11 +103,11 @@ It is possible to change the **secret access key** for a user.  You cannot speci
 
 1. Navigate to the list of Object Storage users:
 
-![Object Storage Users View](../images/object-storage-users-view.png)
+![Object Storage Users View](../images/object-storage/users-view.png)
 
 2. Click the row with the user to see its details:
 
-![Object Storage User](../images/object-storage-user.png)
+![Object Storage User](../images/object-storage/user.png)
 
 3. Click the **reset secret key** button.  The **secret access key** will change.
 
