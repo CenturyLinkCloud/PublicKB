@@ -6,9 +6,15 @@
 "contentIsHTML": false
 }}}
 
-### New Features (2)
+### New Features (4)
 
 #### Cloud Application Manager
+
+###### Cost Optimization and Analytics
+
+Going forward, the hardening process of Optimized, AWS accounts will include continuous compliance monitoring with auto-remediation steps to ensure your accounts are protected. The following scenarios will be handled in the following manners: Newly created IAM users that are not placed within a group will have all their permissions removed. Once they are placed in a group, permissions can be applied again. Newly created IAM groups will automatically have the [CTLCustomerPolicy applied](../../Cloud Application Manager/Cloud Optimization/partner-cloud-integration-aws-hardening-permissions.md). These steps are taken to ensure a seamless experience between Cloud Application Manager and your AWS account. This also allows CenturyLink to ensure your account continues to meet best practice security guidelines.
+
+Optimized, AWS accounts will automatically have AWS Monitoring Dashboards enabled in Cloud Application Manager. Please review the [AWS Dashboards article](../../Cloud Application Manager/Monitoring/awsdashboards.md) to learn how CAM automatically provides CloudWatch metrics for the AWS services you use to increase your understanding of your AWS environment. Prior to this enhancement, administrators were required to set it up manually.
 
 ###### Application Lifecycle Management
 
@@ -31,13 +37,21 @@ Managed Services Anywhere now includes support for Microsoft Windows 2016 Standa
 In addition to being available via Cloud Application Manager, Managed Windows 2016 is also available via CenturyLink Cloud Control portal.
 
 
-### Announcements (2)
+### Announcements (4)
 
 ##### Trial Credit Expiration
 
-On October 17, 2018, the trial terms and conditions were updated to notify customers trial credits will expire after 90 days. As of February 13, 2018, new customers receiving a $500 trial credit through the [trial program](https://www.ctl.io/free-trial/) will have their trial credit automatically expire after 90 days if the entire credit amount is not used prior to the expiration date. The date in which the credit will expire can be viewed in the Promotional Credits history under the Billing section of the customer's account.
+On October 17, 2017, the trial terms and conditions were updated to notify customers trial credits will expire after 90 days. As of February 13, 2018, new customers receiving a $500 trial credit through the [trial program](https://www.ctl.io/free-trial/) will have their trial credit automatically expire after 90 days if the entire credit amount is not used prior to the expiration date. The date in which the credit will expire can be viewed in the Promotional Credits history under the Billing section of the customer's account.
 
 
 ##### Dedicated Cloud Compute (DCC) OS Availability
 
 Windows Server 2003 is no longer available for new VMs (guests) in the DCC UI. Additionally, Windows Server 2003 will be removed for new VMs (guests) in SavvisStation Portal on February 17th, 2018.
+
+##### Microsoft Gold Certification
+
+The value of being a Cloud Application Manager Optimized Azure customer recently improved. CenturyLink has upgraded to a Microsoft Gold Level Cloud Platform Provider. This level is a sign of CenturyLink's dedication to training and experience supporting our Azure customers. Previous to this, benefits of CenturyLink's platform-level support included CenturyLink's domain knowledge and dedication to our customers. Now CenturyLink gains broader access to Microsoft subject-matter experts and increased training opportunities. Our customers continue to enjoy increasing benefits of trained, support resources without spending more for that change.
+
+##### Cloud Application Manager Earns 2018 Frost and Sullivan Award
+
+CenturyLink has received the [Frost & Sullivan 2018 Product Leadership Award](http://news.centurylink.com/2018-01-23-Frost-Sullivan-recognizes-CenturyLink-as-the-product-leader-in-hybrid-cloud-management-platforms-for-its-innovative-Cloud-Application-Manager-platform) for its innovative Cloud Application Manager hybrid cloud management platform, whose dynamic capabilities deliver added value by aligning IT teams around workloads and business initiatives as they pursue their digital transformation goals.
