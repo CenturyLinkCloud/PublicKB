@@ -9,9 +9,9 @@
 }}}
 
 ### Description
-In this KB article, we walk through the prerequisites needed to access basic functionality within the vCloud Director (vCD) Web Console environment.
+In this KB article, we walk through the prerequisites needed to enable functionality within the vCloud Director (vCD) Web Console environment for DCC Foundation.
 
-Basic functionality includes everything except the the ability to upload OVF packages and/or ISO images into your DCC Foundation Catalog, which is also covered in this KB, but typically not required for all users of DCC Foundation.
+Basic functionality includes everything except the the ability to upload OVF packages and/or ISO images into your DCC Foundation Catalog, which is also covered in this KB, but is typically not required for all users of DCC Foundation.
 
 For more information on adding to your Catalog, take a look at this KB article - [Adding to your Catalog in DCC Foundation](add-to-catalog.md).
 
