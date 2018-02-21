@@ -11,16 +11,16 @@ This document describes how to access the Monitoring UI, and provides a breakdow
 
 ![MonitoringLeftNavScreenShot](../../images/MonitoringLeftNavScreenShot121317.JPG)
 
-##### [Events](events.md)
+##### [Events](https://www.ctl.io/knowledge-base/cloud-application-manager/monitoring/events.md)
 On the Events tab there is a list of all active events (i.e. check that are out of their configured bound) for that workspace.  This includes statuses warning and critical, the check-type, its output, count and last occurrence.
 
-##### [Policies](policies.md)
+##### [Policies](https://www.ctl.io/knowledge-base/cloud-application-manager/monitoring/policies.md)
 Monitoring policies are groupings of one or more server checks available to be applied to a server within the selected workspace. Within the policy itself you can view the server checks and their associated configuration parameters along with the servers currently applied under that policy.  
 
 ##### Agents
 This section lists all of the servers being monitored for the selected workspace. Clicking on an individual agent will provide details specific to that server and also the current status of all checks being reported back from the server.  
 
-##### [Suppressions](suppressions.md)
+##### [Suppressions](https://www.ctl.io/knowledge-base/cloud-application-manager/monitoring/suppressions.md)
 In this area, you can view the server(s) of which traps have been suppressed, the period of time and reasoning for which the suppression is valid. Any server(s) listed here will not have its monitored events send to our operations center for investigation and resolution.  
 
 ##### Graphs
