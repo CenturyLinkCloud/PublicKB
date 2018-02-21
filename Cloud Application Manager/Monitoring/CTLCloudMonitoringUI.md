@@ -31,7 +31,7 @@ For servers that have 'metric' server checks applied to them, for which all Mana
 
 After logging in the user will be in their personal workspace. Click on the workspace switcher to choose the workspace of which agent(s) you wish to view.  
 
-#### [AWS Dashboards](awsdashboards.md)
+#### [AWS Dashboards](https://www.ctl.io/knowledge-base/cloud-application-manager/monitoring/awsdashboards.md)
 Our Cloud Application Manager Monitoring dashboard is specific to Amazon Web Services (AWS) providers. Our goal is to provide users of the Cloud Application Manager Monitoring site with CloudWatch metrics and graphs about their infrastructure and services residing with AWS.
 
 #### [Anomaly Detection and Forecasting]
