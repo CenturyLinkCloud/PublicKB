@@ -51,7 +51,7 @@ To access the anomaly detection and forecasting function you first need to go to
 
 From there you will select your Source and then the metrics you want to view.
 
-![Graph Source](../../images/Graphsource.PNG)
+![Graph Source](../../images/GraphSource.PNG)
 
 You will see that there is an f(X) button as well as a clipboard icon.  The clipboard icon allows you to copy the metric id to the clipboard.  The _f(X)_ allows you to add the anomaly detection, forecasting, and confidence band functionality.
  
@@ -59,15 +59,15 @@ You will see that there is an f(X) button as well as a clipboard icon.  The clip
 
 To view your original data (CPUUtilization) as well as the functional data you want to apply; you need to add the same dataset to the graph.
 
-![Graphs Adding Data](../../images/graphsaddingdata.PNG)
+![Graphs Adding Data](../../images/GraphsAddingData.PNG)
 
 Once you have added the second metric you can add your functionality.  The legend will change to show your applied functionality in a new color. 
 
-![Graphs legend change](../../images/graphlegendchange.PNG)
+![Graphs legend change](../../images/Graphlegendchange.PNG)
 
 _As a rule of thumb, requesting 2 weeks of data generates more meaningful results.  The more data that is available the more accurate you can expect the forecast to be._
 
-![Forecast Graph](../../images/forecastgraph.PNG)
+![Forecast Graph](../../images/Forecastgraph.PNG)
 
 **Anomaly Detection:**
 
@@ -75,4 +75,4 @@ To access anomaly detection, you would follow the same path as Forecast but woul
 
 _As a rule of thumb, you need to request at least 72 hours of data to generate more meaningful results.  The more data that is available (up to 2 weeks) the more accurate you can expect the forecast to be._
 
-![Anomaly Graph](../../images/anomalygraph.PNG)
+![Anomaly Graph](../../images/AnomalyGraph.PNG)
