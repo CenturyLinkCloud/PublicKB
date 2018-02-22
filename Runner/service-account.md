@@ -21,7 +21,7 @@ The Service Account alias is a secure store of a users credentials. These creden
 * [Create Service Account via Runner UI](#create-service-account-via-runner-ui)
 * [Create Service Account via Runner API](#create-service-account-via-runner-api)
 * [Get Service Account via Runner API](#get-service-account-via-runner-api)
-* [Update Service Account via Runner API](#UpdateServiceAccount)
+* [Update Service Account via Runner API](#update-service-account-via-runner-api)
 
 ### Create Service Account via Runner UI
 1. To create a Service Account through the Runner UI, first click the Help & Settings drop-down and select Settings.
