@@ -11,16 +11,16 @@ This document describes how to access the Monitoring UI, and provides a breakdow
 
 ![MonitoringLeftNavScreenShot](../../images/MonitoringLeftNavScreenShot121317.JPG)
 
-##### [Events](https://www.ctl.io/knowledge-base/cloud-application-manager/monitoring/events/)
+##### [Events](https://www.ctl.io/knowledge-base/cloud-application-manager/monitoring/events.md/)
 On the Events tab there is a list of all active events (i.e. check that are out of their configured bound) for that workspace.  This includes statuses warning and critical, the check-type, its output, count and last occurrence.
 
-##### [Policies](https://www.ctl.io/knowledge-base/cloud-application-manager/monitoring/policies/)
+##### [Policies](https://www.ctl.io/knowledge-base/cloud-application-manager/monitoring/policies.md/)
 Monitoring policies are groupings of one or more server checks available to be applied to a server within the selected workspace. Within the policy itself you can view the server checks and their associated configuration parameters along with the servers currently applied under that policy.  
 
 ##### Agents
 This section lists all of the servers being monitored for the selected workspace. Clicking on an individual agent will provide details specific to that server and also the current status of all checks being reported back from the server.  
 
-##### [Suppressions](https://www.ctl.io/knowledge-base/cloud-application-manager/monitoring/suppressions/)
+##### [Suppressions](https://www.ctl.io/knowledge-base/cloud-application-manager/monitoring/suppressions.md/)
 In this area, you can view the server(s) of which traps have been suppressed, the period of time and reasoning for which the suppression is valid. Any server(s) listed here will not have its monitored events send to our operations center for investigation and resolution.  
 
 ##### Graphs
@@ -31,7 +31,7 @@ For servers that have 'metric' server checks applied to them, for which all Mana
 
 After logging in the user will be in their personal workspace. Click on the workspace switcher to choose the workspace of which agent(s) you wish to view.  
 
-#### [AWS Dashboards](https://www.ctl.io/knowledge-base/cloud-application-manager/monitoring/awsdashboards/)
+#### [AWS Dashboards](https://www.ctl.io/knowledge-base/cloud-application-manager/monitoring/awsdashboards.md/)
 Our Cloud Application Manager Monitoring dashboard is specific to Amazon Web Services (AWS) providers. Our goal is to provide users of the Cloud Application Manager Monitoring site with CloudWatch metrics and graphs about their infrastructure and services residing with AWS.
 
 #### [Anomaly Detection and Forecasting]
