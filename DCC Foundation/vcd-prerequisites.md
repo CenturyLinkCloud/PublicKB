@@ -37,7 +37,7 @@ The vCloud Director Web Console is compatible with recent versions of Google Chr
 #### Chrome on Windows
 
 * Download and install Java Runtime Environment (latest version) if it not already installed, using the default settings.
-* Download and install VMware Client Integration Plug-in (CIP) using this [version](http://vsphereclient.vmware.com/vsphereclient/VMware-ClientIntegrationPlugin-6.0.0-6823256.exe) accepting the default settings.
+* [Download and install the Windows (Google Chrome) VMware Client Integration Plug-in (CIP)](https://kb.vmware.com/s/article/2145401) accepting the default settings.
 
 Configure the following settings in Chrome:
 
@@ -95,8 +95,7 @@ Note: When using the Upload OVF or Media functionality for the first time, you w
 On Macintosh platforms, the vCloud Director Web Console is compatible with the most recent version of Mozilla Firefox, Google Chrome, and Safari and with their immediate predecessor versions.
 
 #### Chrome on Mac
-
-* Download and install VMware Client Integration Plug-in (CIP) using this [version](http://vsphereclient.vmware.com/vsphereclient/VMware-ClientIntegrationPlugin-6.0.0-6823256.mac64.dmg).
+* [Download and install the Macintosh (Google Chrome) VMware Client Integration Plug-in (CIP)](https://kb.vmware.com/s/article/2145401).
 
 Configure the following settings in Chrome:
 
