@@ -1,7 +1,7 @@
 {{{
   "title": "CenturyLink Cloud Free Trial Frequently Asked Questions",
-  "date": "01-16-2018",
-  "author": "Anthony Hakim",
+  "date": "02-25-2018",
+  "author": "Anthony Hakim, Lyza Latham",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
