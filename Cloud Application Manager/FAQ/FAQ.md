@@ -96,11 +96,13 @@ ___
 Charges on your CenturyLink invoice are represented by an alias. Cloud Application Manager currently has three different types of alias' including Billing Account Alias, Cost Center Account Alias and Account Alias.
 
 
+
 ##### What is a Billing Account Alias?
 A billing account alias represents any charges directly associated to the organization level. Currently no charges are applied directly to the billing account alias.
 
 Cloud Application Manager Billing Account Alias
 ![Billing Account Alias](../../images/cloud-application-manager/cam-organization-alias.png)
+
 
 
 ##### What is a Cost Center Account Alias?
@@ -111,17 +113,18 @@ Cloud Application Manager Cost Center Alias
 
 
 
+
 ##### What is a Account Alias?
 An account alias represents any charges directly associated to a provider. Currently all features of Cloud Application Manager are directly associated to each provider
 
-The features of Cloud Application Manager
-[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
-[Managed Services Anywhere](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/)
-[Cloud Optimization](https://www.ctl.io/cloud-application-manager/cloud-optimization/)
-Platform Support
+The features of Cloud Application Manager<br>
+<br>
+[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)<br>
+[Managed Services Anywhere](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/)<br>
+[Cloud Optimization](https://www.ctl.io/cloud-application-manager/cloud-optimization/)<br>
+Platform Support<br>
 
-Each provider is associated to a cost center and is shown as such in the bill. 
-
+Each provider is associated to a cost center and is shown as such in the bill.
 
 Cloud Application Manager Account Alias
 ![Account Alias](../../images/cloud-application-manager/cam-provider-alias.png)
@@ -136,4 +139,4 @@ Customers can login to their Cloud Application Manager account for a [Detailed B
 Customers can also check out our knowledge base for more billing information for [Cloud Optimization charges](../Cloud Optimization/partner-cloud-integration-consolidated-billing.md).
 
 ##### What if I have more questions about the bill?
-If you have any other questions about your bill please contact [Cloud Application Manager Support.](https://www.ctl.io/cloud-application-manager/#Support)
+If you have any other questions about your bill please contact [Cloud Application Manager Support](https://www.ctl.io/cloud-application-manager/#Support).
