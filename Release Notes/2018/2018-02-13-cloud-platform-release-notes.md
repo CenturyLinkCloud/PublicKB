@@ -20,7 +20,7 @@ Optimized, AWS accounts will automatically have AWS Monitoring Dashboards enable
 
 Organization Administrators can now associate a CostCenter when creating a new user within the Organization. The new user's personal workspace will be created under that Cost Center, and all the resources deployed there in, will be charged to that specific Cost Center. Prior this enhancement, all personal workspaces were created under the default Cost Center.
 
-Cost Center administrators can now create new AWS & Azure Optimized providers within any workspace in that Cost Center, so that CenturyLink can provide Consolidated Billing and Cost Optimization on those accounts. Prior to this change, only Organization administrators were having such permissions.to the ALB address, if available.
+Cost Center administrators can now create new AWS & Azure Optimized providers within any workspace in that Cost Center, so that CenturyLink can provide Consolidated Billing and Cost Optimization on those accounts. Prior to this change, only Organization administrators were having such permissions.
 
 
 ##### Managed Services Anywhere
