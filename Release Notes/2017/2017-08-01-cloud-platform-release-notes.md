@@ -33,7 +33,7 @@ Learn more about CenturyLink Managed Services [here](https://www.ctl.io/product-
 
 The [CenturyLink Marketplace](https://www.ctl.io/marketplace/) added three new commercially available offerings with the following Partners:
 
-* [*OSNEXUS QuantaStor SDS EE with Gold Support*](https://www.ctl.io/marketplace/partner/ZV5T/product/QuantaStor%20SDS%20with%20Gold%20Support%20%28License%20Only%29/) - QuantaStor is a unified Software Defined Storage (SDS) platform designed to scale out to make storage management easy while reducing overall enterprise storage costs. This is a License Only purchase. The customer is responsible for deploying QuantaStor SDS separately on the infrastructure of their choosing.
+* [*OSNEXUS QuantaStor SDS EE with Gold Support*](https://www.ctl.io/marketplace/partner/ZV5T/product/QuantaStor%20SDS%20with%20Gold%20Support%20%20%28License%20Only%29/) - QuantaStor is a unified Software Defined Storage (SDS) platform designed to scale out to make storage management easy while reducing overall enterprise storage costs. This is a License Only purchase. The customer is responsible for deploying QuantaStor SDS separately on the infrastructure of their choosing.
 
 * [*Apex Datacom Call Me*](https://www.ctl.io/marketplace/partner/APEX/product/Call%20Me%20Express/) - Apex Call Me is a Click-to-Call solution that enables web marketers to convert more web visitors into customers. Apex Call Me works with any business phone system with a US or Canadian phone number.
 
@@ -55,5 +55,5 @@ For additional details, see our [Product Page](https://www.ctl.io/object-storage
 
 **New Locations**
 
-Bare Metal Servers are now available in Portsmouth, Great Britain (GB1) and Frankfurt, Germany (DE3). Choose from our selection of five different server configurations providing users with different options: more CPUs, more memory, SSDs, and more local storage with configurable RAID. Simple Backup Services and Runner are supported.
+Bare Metal Servers are now available in Reading, Great Britain (GB1) and Frankfurt, Germany (DE3). Choose from our selection of five different server configurations providing users with different options: more CPUs, more memory, SSDs, and more local storage with configurable RAID. Simple Backup Services and Runner are supported.
 For additional details, see our [Product Page](https://www.ctl.io/bare-metal/) and [FAQ](../../Servers/bare-metal-faq.md).

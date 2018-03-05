@@ -77,4 +77,4 @@ cf service name-of-my-trace-instance
 
 #### Who should I contact for support?
 * For issues related to provisioning the Trace service on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [Trace Support website](http://trace-docs.risingstack.com/)
-* For issues related to AppFog, please consult the [AppFog Knowledge Base](https://www.ctl.io/knowledge-base/appfog)
+* For issues related to AppFog, please consult the [AppFog Knowledge Base](../AppFog)

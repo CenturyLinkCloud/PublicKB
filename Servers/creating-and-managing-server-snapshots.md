@@ -1,6 +1,6 @@
 {{{
   "title": "Creating and Managing Server Snapshots",
-  "date": "10-24-2016",
+  "date": "9-12-2017",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -14,6 +14,7 @@ Snapshots are a feature of our platform that allow a machine to be quickly rever
 * Snapshots are not supported on Standard Virtual Servers with greater than 1 TB of  Storage Allocated. Hyperscale Servers cannot leverage the Snapshot feature.
 * Configuration changes to Virtual Servers, such as CPU/RAM/Disk, cannot be performed while a snapshot is present.  
 * Cloning of virtual servers with a snapshot is a supported operation.  Please review [How To: Clone a Virtual Machine](../Servers/how-to-clone-a-virtual-machine-os-instance.md) for more information.
+* Customers who leverage the [Simple Backup Service](//www.ctl.io/simple-backup-service/) should avoid the use of snapshots on a reccuring basis or while simple backup services are in use. Simple backup leverages a **local** file manifest to track file changes and should a customer revert to an old snapshot the ability to restore any backup sets taken **after** the snapshot was initiated will be lost without manual intervention from Customer Care. This is primarily due to the current manifest being replaced with an old snapshot copy when the entire Virtual Machine is reverted to an older state. 
 
 ### Create a snapshot of an existing server
 

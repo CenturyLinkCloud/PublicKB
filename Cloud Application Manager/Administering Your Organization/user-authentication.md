@@ -7,7 +7,7 @@
 }}}
 
 ### Enable User Authentication
-In Cloud Application Manager enterprise organizations, users can sign in using any of the single sign-on authentication options you enable in the [admin console](./admin-overview.md).
+In Cloud Application Manager enterprise organizations, users can sign in using any of the single sign-on authentication options you enable in the [admin console](admin-overview.md).
 ![admin-user1.png](../../images/cloud-application-manager/admin-user1.png)
 
 **In this article:**
@@ -128,7 +128,7 @@ As good practice, you should give an LDAP user in your organization administrati
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

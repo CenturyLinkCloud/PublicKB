@@ -1,6 +1,6 @@
 {{{
   "title": "I want a managed server. So what do I do now?",
-  "date": "12-31-2015",
+  "date": "2-13-2018",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -17,10 +17,13 @@ Please also consider using the [CenturyLink Cloud v2.0 API](https://www.ctl.io/a
 
 Users employed by companies that have agreed to terms with [CenturyLink Sales](http://www.centurylink.com/) for the CenturyLink Cloud product.
 
-### Prerequisites
+### General Prerequisites
 * An understanding of the standard server creation process.
 * Some idea of the benefits included with [managed servers](../Managed Services/managed-operating-system-frequently-asked-questions.md)
 
+### Technical Requirements
+* The Managed Server build process requires HTTPS outbound connectivity (and DNS resolution) to the API endpoint webhook.managedos.ctl.io
+* Account impersonation is not supported when building Managed Servers. Account impersonation simply refers to the end users ability to leverage our [Account Hierarchy](../Accounts & Users/account-hierarchy-user-network-and-firewall-policy-primer.md) feature to login to a parent account and operate services in sub-accounts. For the provisioning process of Managed Servers, users of the platform should leverage a named user in the specific [account alias](../Support/determine-control-portal-alias.md) into which the server is being deployed.
 
 ### Important Information
 
@@ -32,7 +35,7 @@ The table below provides a matrix of the supported locations and Operating Syste
 
 **Cloud Location**|**Operating System**
 ------------------|--------------------
-GB3 - Great Britain (Slough)<p>VA1 - US East (Sterling)<p>UC1 - US West (Santa Clara)<p>US Central (Chicago) - IL1<p>Canada (Toronto - Mississauga) - CA3<p>APAC (Singapore) - SG1|Red Hat Enterprise Linux 5 - 64-bit<p>Red Hat Enterprise Linux 6 - 64-bit<p>Red Hat Enterprise Linux 7 - 64-bit<p>Windows 2008 R2 Standard - 64-bit<p>Windows 2008 R2 Enterprise - 64-bit<p>Windows 2008 R2 DataCenter Edition - 64-bit<p>Windows 2012 DataCenter Edition - 64-bit<p>Windows 2012 R2 DataCenter Edition - 64-bit<p>
+GB3 - Great Britain (Slough)<br>VA1 - US East (Sterling)<br>UC1 - US West (Santa Clara)<br>US Central (Chicago) - IL1<br>Canada (Toronto - Mississauga) - CA3<br>APAC (Singapore) - SG1|Red Hat Enterprise Linux 5 - 64-bit<br>Red Hat Enterprise Linux 6 - 64-bit<br>Red Hat Enterprise Linux 7 - 64-bit<br>Windows Server 2008 R2 Standard - 64-bit<br>Windows Server 2008 R2 Enterprise - 64-bit<br>Windows Server 2008 R2 DataCenter Edition - 64-bit<br>Windows Server 2012 DataCenter Edition - 64-bit<br>Windows Server 2012 R2 DataCenter Edition - 64-bit<br>Windows Server 2016 Datacenter Edition - 64-bit
 
 ### Creating a Managed Server
 

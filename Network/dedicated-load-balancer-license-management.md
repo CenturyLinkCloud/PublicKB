@@ -8,7 +8,7 @@
 
 ### Overview
 
-CenturyLink Cloud (CLC) dedicated Load Balancers provisioned in a customer's environment are customer-managed devices, which includes management of the vendor license. Dedicated Load Balancers licenses are typically provisioned with an expiration date of one year. An expired license may impact functionality of the Load Balancer. To obtain a new license a [Support Request](../Support/how-do-i-report-a-support-issue.md) should be submitted.
+CenturyLink Cloud (CLC) dedicated Load Balancers provisioned in a customer's environment are customer-managed devices, which includes management of the vendor license. Dedicated Load Balancers licenses are typically provisioned with an expiration date of one year. An expired license may impact functionality of the Load Balancer. To obtain a new license file a [Support Request](../Support/how-do-i-report-a-support-issue.md) should be submitted. Steps for installing the new license file are below.
 
 ### Audience
 
@@ -76,7 +76,7 @@ The Netscaler Load Balancer uses FlexLM licensing to license features on the pro
 
 ### Updating Licenses
 
-CLC will provide the license file(s) with corresponding LB management and RNAT IP addresses. You or your team should have received the login credentials for your dedicated load balancer during its creation, but let us know if you need assistance with this.
+CLC will provide the license file(s) with corresponding LB management and RNAT IP addresses; you are responsible for installation of the license file(s) on your devices. You or your team should have received the login credentials for your dedicated load balancer during its creation, but let us know if you need assistance with accessing the management functions of the load balancer.
 
 There are two methods depending on if you are updating a lone LB or an HA pair. Steps for each situation are below.
 
@@ -96,28 +96,29 @@ Users may need to [configure Java](../General/how-to-configure-java-settings-to-
       7. On the right pane, add `.old` to the current license name.
       8. Drag the new license from the left pane to the right pane.
 2. Once the new license has been uploaded to both nodes, identify and reboot the secondary device to pick up the new license.
-3. Open two tabs in a web browser.
-4. Connect to one management IP in one tab and the other management IP in the other tab.
-5. On the left, expand "System" then click "High Availability". You will then see which is the primary node and which is the secondary node.
-6. Start on the secondary device, expand "System", click diagnostics, then in the menu select command line interface.
-7. Enter `reboot`.
-8. Enter `yes` if prompted.
-9. Wait for the secondary device to finish booting (you will be able to log back in via the website).
-10. In the GUI of the secondary device, open the command line interface again like you just did a few steps ago.
-11. Enter `show ha node`. The output should indicate that the appliance is a secondary node and the state of synchronization.
-12. If synchronization is *not* disabled, run `set ha node -hasync disabled`.
-13. Run `force failover` to switch the secondary to primary.
-14. Reboot the secondary node (formerly the primary node) so it can pick up the new license.
-15. Some settings can get lost during this process. Repeat these next steps for each device.
+   1. Open two tabs in a web browser.
+   2. Connect to one management IP in one tab and the other management IP in the other tab.
+   3. On the left, expand "System" then click "High Availability". You will then see which is the primary node and which is the secondary node.
+   4. Start on the secondary device, expand "System", click diagnostics, then in the menu select command line interface.
+   5. Enter `save ns config`
+   6. Enter `reboot`.
+   7. Enter `yes` if prompted.
+   8. Wait for the secondary device to finish booting (you will be able to log back in via the website).
+3. In the GUI of the secondary device, open the command line interface again like you just did a few steps ago.
+   1. Enter `show ha node`. The output should indicate that the appliance is a secondary node and the state of synchronization.
+   2. If synchronization is *not* disabled, run `set ha node -hasync disabled`.
+   3. Run `force failover` to switch the secondary to primary.
+   4. Reboot the secondary node (formerly the primary node) so it can pick up the new license.
+4. Some settings can get lost during this process. Repeat these next steps for each device.
    1. Expand the "System" section, then verify that Load Balancing and SSL Offloading have a green check in the Licenses section.
    2. Check the bottom of the left-hand column, it should say "model ID: 200". If not, you need to check and possibly re-apply the license file or reach out to our support team for assistance.
    3. Click "Settings" on the left-hand menu, then click the "Configure basic features" link in the main frame.
    4. Check everything *except NetScaler Gateway* and click OK.
    5. Click the "Configure advanced features" link.
    6. Enable "responder" and click OK.
-16. Now it's time to verify functionality. Connect to GUI on your new primary device (the first one you rebooted, or connect via RNAT).
-17. Click "Dashboard" at top left.
-18. Ensure that the “Established Client vs Server Connections” graph shows active connections.
+5. Now it's time to verify functionality. Connect to GUI on your new primary device (the first one you rebooted, or connect via RNAT).
+   1. Click "Dashboard" at top left.
+   2. Ensure that the “Established Client vs Server Connections” graph shows active connections.
 
 #### Standalone
 
@@ -135,7 +136,11 @@ This process is very similar to handling the HA pair except no failover is neede
       6. On the left pane, browse to the local license file.
       7. On the right pane, add `.old` to the current license name.
       8. Drag the new license from the left pane to the right pane.
-2. Reboot the NetScaler.
+2. Save the configuration and reboot
+   1. SSH or use PuTTY on Windows to login to the VPX management IP 
+   2. Enter `save ns config`
+   3. Enter `reboot`
+   4. Enter `yes` if prompted
 
 ### Notes
 

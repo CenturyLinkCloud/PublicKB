@@ -41,7 +41,7 @@ In this example, Infoblox provides a static IP and domain name for every instanc
 
 **Steps**
 
-1. Create a custom Infoblox web service. We define the web service in a box. [Contact us](mailto:cloudsupport@centurylink.com) to share the box with you.
+1. Create a custom Infoblox web service. We define the web service in a box. [Contact us](mailto:incident@CenturyLink.com) to share the box with you.
 
    ![admin-webhooks3.png](../../images/cloud-application-manager/admin-webhooks3.png)
 
@@ -199,7 +199,7 @@ In this example, Infoblox provides a static IP and domain name for every instanc
 
    ![admin-webhooks4.png](../../images/cloud-application-manager/admin-webhooks4.png)
 
-3. Add the custom Infoblox web service endpoint as a webhook. Under [Admin Console](./admin-overview.md) > Webhooks, enter the endpoint of the deployed webservice as a webhook like this: http://endpoint_of_webservice_instance/requestIP
+3. Add the custom Infoblox web service endpoint as a webhook. Under [Admin Console](admin-overview.md) > Webhooks, enter the endpoint of the deployed webservice as a webhook like this: http://endpoint_of_webservice_instance/requestIP
 
    ![admin-webhooks5.png](../../images/cloud-application-manager/admin-webhooks5.png)
 
@@ -208,7 +208,7 @@ In the deployment policy, we select a custom specification. This acts as a holde
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

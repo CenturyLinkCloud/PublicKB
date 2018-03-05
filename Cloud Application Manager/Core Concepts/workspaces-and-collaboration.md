@@ -50,7 +50,7 @@ The different levels are:
 
 If your organization is federated to other organizations, you can share the workspace with other organizations. When you federate a workspace, administrators of the other organization can access the workspace and you can add members of the other organization to the workspace. This is useful to get support from the Cloud Application Manager team support, you can federate a workspace with us to give us access to the assets to diagnose a support ticket.
 
-If you want to use this feature in different ways, please [contact us](mailto:cloudsupport@centurylink.com).
+If you want to use this feature in different ways, please [contact us](mailto:incident@CenturyLink.com).
 
 ### Cost Center
 

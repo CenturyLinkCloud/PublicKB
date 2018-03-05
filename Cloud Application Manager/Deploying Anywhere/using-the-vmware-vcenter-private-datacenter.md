@@ -58,10 +58,10 @@ Follow these steps to install elasticbox-init on a Linux template.
 4. Run this command with root privileges to install elasticbox-init:
 
    ```
-	 curl -L https://elasticbox.com/agent/linux/vsphere/template_customization_script.sh | sudo bash
+	 curl -L https://cam.ctl.io/agent/linux/vsphere/template_customization_script.sh | sudo bash
 	 ```
 
-   * **Note:** If running Cloud Application Manager as an appliance, replace elasticbox.com with the appliance hostname or IP address.
+   * **Note:** If running Cloud Application Manager as an appliance, replace cam.ctl.io with the appliance hostname or IP address.
 
 **Windows**
 
@@ -72,9 +72,9 @@ Follow these steps to run a script that creates a scheduled task on a Windows Se
 
 2. [Install the VMware tools](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1018377).
 
-3. [Download the scheduled task script.](https://elasticbox.com/agent/windows/vsphere/template_customization_script.ps1)
+3. [Download the scheduled task script.](https://cam.ctl.io/agent/windows/vsphere/template_customization_script.ps1)
 
-   * **Note:** If running Cloud Application Manager as an appliance, replace elasticbox.com with the appliance hostname or IP address.
+   * **Note:** If running Cloud Application Manager as an appliance, replace cam.ctl.io with the appliance hostname or IP address.
 
 4. Right-click the script and click **Run PowerShell**.
 
@@ -134,7 +134,7 @@ Select deployment metadata from a deployment profile to launch VMs to your vCent
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
