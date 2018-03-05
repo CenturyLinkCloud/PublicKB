@@ -6,11 +6,10 @@
   "contentIsHTML": true
 }}}
 
-<p>This can be done quite easily through the&nbsp;<a href="https://control.tier3.com/">CenturyLink Cloud Control Portal</a>. There are a couple of pre-requisites that you will need to be able to perform this task:</p>
+<p>This can be done quite easily through the&nbsp;<a href="https://control.ctl.io/">CenturyLink Cloud Control Portal</a>. It's important the Control Portal and your server's password match in order to perform certain control functions such as adding disks, IP addresses, and deploying blueprints. There are a couple of pre-requisites that you will need to be able to perform this task:</p>
 <ol>
   <li>First you must have an account which has Admin access for your company.&nbsp;&nbsp;</li>
-  <li>Next you will need to have the original password for the server which was sent to you when your server was created. If this password has changed you will need to contact the&nbsp;<a href="mailto:noc@tier3.com">NOC</a>&nbsp;and this will create
-    a ticket for you which will be responded promptly.</li>
+  <li>Next you will need to have the prior password for the server which was sent to you when your server was created. If this password has changed, please change it back within the Operating System to match the portal before proceeding.</li>
 </ol>
  If you meet both the requirements then you will just need to get logged in to the Control Portal and follow the steps below:
 From the left navigation menu choose **Infrastructure** > **Servers**.

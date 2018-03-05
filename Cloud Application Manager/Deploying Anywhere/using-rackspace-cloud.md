@@ -35,7 +35,7 @@ You require an account on [Rackspace Cloud](https://mycloud.rackspace.com/) to a
 
 ### Deploy on Rackspace Cloud from Cloud Application Manager
 
-Select these deployment options when you [launch a new instance](./deploying-managing-instances.md) to spin up a workload on a Linux server in Rackspace Cloud.
+Select these deployment options when you [launch a new instance](deploying-managing-instances.md) to spin up a workload on a Linux server in Rackspace Cloud.
 
 
 **Deployment**
@@ -64,7 +64,7 @@ Select these deployment options when you [launch a new instance](./deploying-man
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

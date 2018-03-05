@@ -1,6 +1,6 @@
 {{{
 "title": "Tag Instances",
-"date": "09-01-2016",
+"date": "10-30-2017",
 "author": "",
 "attachments": [],
 "contentIsHTML": false
@@ -9,15 +9,15 @@
 ### Tag Instances
 Tags give information about an instance deployed through Cloud Application Manager. They let you report on provider resources consumed by Cloud Application Manager users. They inform what box, provider, user, workspace, and such from Cloud Application Manager were involved in deploying an instance.
 
-As an Cloud Application Manager administrator, you get to apply 10 tags for your organization. From the [admin console](./admin-overview.md), once you can add preset or custom tags, they’re applied to the provider when a user launches an instance to any public or private cloud such as AWS, vSphere, Google Cloud, Azure, OpenStack, and CloudStack. They are applied on instances launched in Linux, Windows, CloudFormation, and RDS services.
+As an Cloud Application Manager administrator, you get to apply 10 tags for your organization. From the [Settings](admin-overview.md), once you can add preset or custom tags, they’re applied to the provider when a user launches an instance to any public or private cloud such as AWS, vSphere, Google Cloud, Azure, OpenStack, and CloudStack. They are applied on instances launched in Linux, Windows, CloudFormation, and RDS services.
 
 You can use tags to report on usage metrics from the provider’s interface. Tags help you understand how Cloud Application Manager resources are spread across your organization. Use them to identify usage patterns and optimize resources for your teams and users.
 
-Cloud Application Manager supports tagging in the Enterprise Edition for AWS, Google Cloud, OpenStack, CloudStack, and vSphere.
+Cloud Application Manager supports tagging in the Enterprise Edition (SaaS & Virtual Appliance) for AWS, Google Cloud, OpenStack, CloudStack, and vSphere.
 
-In the admin console, you can add tags under Providers > Tags.
+In the Settings for your organization, you can add tags under Settings > Tags.
 
-**In this article:**
+### In this article
 * Preset or Custom Tags
 * Applying Tags for Your Organization
 * Reporting on Cloud Application Manager Tags
@@ -49,23 +49,22 @@ A tag consists of a key and a value. You can tag with a custom or preset value.
 
 ### Applying Tags for Your Organization
 Only Cloud Application Manager users in the administrator role can apply tags. Follow these steps to apply one.
-![admin-tags2.png](../../images/cloud-application-manager/admin-tags2.png)
 
 **Steps**
-1. [Log in to Cloud Application Manager](//www.ctl.io/cloud-application-manager/).
+1. [Log in to Cloud Application Manager.](//www.ctl.io/cloud-application-manager/)
 
-2. From the menu drop-down on the top right, select the **Admin Console**.
+2. From the menu drop-down on the top right, select **Organizations > Your Org Name**
 
-3. Click **Providers > Tags**.
+3. Click **Settings and scroll to the Tags section**.
 
-4. Enter a key and value for the tag.
+4. Click **Add** and enter a key and value for the tag.
    * To enter a preset value, click the Custom Value drop-down to select one.
    * To enter a custom value, simply type in the Custom Value field.
    * **Note:** The maximum length is 125 characters for the key and 250 characters for the value. Tags that contain unicode non-ASCII characters (ex: +=\*&!@#) are ignored. Such tags are not applied to the instance in Google Cloud and OpenStack.
 
-5. When done, click (+) to add the tag.
+5. When done, click **Save** to add the tag.
 
-**Note:** At this time, you can’t modify an existing tag, but you can remove and create another in its place. To remove a tag, go the admin console and under Providers > Tags, click (-) and the tick mark against it.
+**Note:** At this time, you can’t modify an existing tag, but you can remove and create another in its place. To remove a tag, go the Settings and under Tags, click (x) and the tick mark against it.
 
 ### Reporting on Cloud Application Manager Tags
 One of the chief benefits of tagging is that you can report and analyze how Cloud Application Manager resources are consumed throughout your organization. Currently, the reporting capabilities depend on what your cloud provider natively supports.
@@ -127,7 +126,7 @@ In addition to preset and custom tags, Cloud Application Manager tags instances 
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

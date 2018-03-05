@@ -7,24 +7,24 @@
 }}}
 
 ### Cloud Application Manager Enterprise Appliance Overview
-Run Cloud Application Manager on-premise as a virtual appliance in your vCenter datacenter or OpenStack cloud. After you install and [set up Cloud Application Manager](./appliance-initialsetup.md) for use, you’re ready to automate deployments to any cloud and platform.
+Run Cloud Application Manager on-premise as a virtual appliance in your vCenter datacenter or OpenStack cloud. After you install and [set up Cloud Application Manager](appliance-initialsetup.md) for use, you’re ready to automate deployments to any cloud and platform.
 
 **Try the Appliance for Free**
 The appliance is available as a free download. Experience all the same functionality as the paid Enterprise Edition, except for advanced features like managing your Cloud Application Manager organization, sharing and monitoring resources, and deploying to private clouds. To get these features, upgrade to the Enterprise Edition.
 **Download the Cloud Application Manager Virtual Appliance**
-Request a download link from [support](mailto:cloudsupport@centurylink.com).
+Request a download link from [support](mailto:incident@CenturyLink.com).
 
 ### Next Up
-* [Installing the Appliance in vCenter](./appliance-vsphere.md)
-* [Installing the Appliance in OpenStack](./appliance-openstack.md)
-* [Configuring the Appliance Network Settings](./appliance-networking.md)
-* [Setting Up Cloud Application Manager](./appliance-initialsetup.md)
-* [Upgrading the Appliance](./appliance-upgrading.md)
-* [Appliance Migration](./appliance-migration.md)
+* [Installing the Appliance in vCenter](appliance-vsphere.md)
+* [Installing the Appliance in OpenStack](appliance-openstack.md)
+* [Configuring the Appliance Network Settings](appliance-networking.md)
+* [Setting Up Cloud Application Manager](appliance-initialsetup.md)
+* [Upgrading the Appliance](appliance-upgrading.md)
+* [Appliance Migration](appliance-migration.md)
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

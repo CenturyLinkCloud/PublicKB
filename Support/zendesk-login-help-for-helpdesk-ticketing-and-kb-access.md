@@ -24,3 +24,6 @@ You have _not_ communicated with CenturyLink Cloud in the past, but you would li
 ##### Scenario C:
 You already have a Zendesk account _and_ have logged in previously, but you have forgotten your password.
 * [Request a password reset link be emailed to you.](https://t3n.zendesk.com/auth/v2/login/password_reset)
+
+### Additional Resources 
+[Using the Help Desk Web UI](using-the-help-desk-web-ui.md)

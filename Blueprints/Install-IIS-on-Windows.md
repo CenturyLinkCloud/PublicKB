@@ -39,7 +39,7 @@ By leveraging [CenturyLink Cloud Public Blueprints](../Blueprints/centurylink-cl
 ### Install IIS on Windows using Blueprints
 Customers who are building environments in the CenturyLink Cloud may wish to use Blueprints to build servers and install IIS in an automated fashion. Blueprints provide a tool for customers to build environments for multiple deployments.
 
-To use this approach follow the [How to Build a Blueprint](../Blueprints/how-to-build-a-blueprint.md) knowledge base article and combine the Install IIS on Windows script with Windows Virtual Machine builds.
+To use this approach follow the [How to Build a Blueprint](../Blueprints/how-to-build-a-blueprint.md) Knowledge Base article and combine the Install IIS on Windows script with Windows Virtual Machine builds.
 
 ![Web Servers Environment build Blueprint](../images/Install-IIS-on-Windows-05.png)
 

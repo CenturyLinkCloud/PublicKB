@@ -123,7 +123,7 @@ The DCC Product Team is planning a **MVP** release to selected customers with th
    * **User-specified IP Address** – This is a sub-task of both adding a new VM and cloning a VM, which gives customers the ability to manually specify an IP Address rather than selecting one from a pool of ‘available’ addresses.
    * **Add Utility Storage (3Par and NetApp)** – This is the process to create a new datastore.
    * **Add/Delete Disk** – This is the process to add/delete a disk (VMDK file) on a VM.
-   * **Linked Help files** – The old UI had some basic help info for things like mount/unmount a drive, cloning limitations, etc. This feature will recreate that experience through knowledge base articles available at [Knowledge Base](https://www.ctl.io/knowledge-base/).
+   * **Linked Help files** – The old UI had some basic help info for things like mount/unmount a drive, cloning limitations, etc. This feature will recreate that experience through Knowledge Base articles available at [Knowledge Base](../..).
 
    The goal of the **GA** release will be to have complete feature parity with the old UI.  As such, there are several features the development teams will need to create after the MVP release. These include:
 

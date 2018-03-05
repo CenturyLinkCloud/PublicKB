@@ -27,7 +27,6 @@ Click **Edit** to customize the policy. Select the resource, network, and other 
 
 * [Google Cloud](../Deploying Anywhere/using-google-cloud.md)
 * [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md)
-* [AWS GovCloud](../Deploying Anywhere/using-aws-govcloud.md)
 * [VMware vCenter](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)
 * [Azure](../Deploying Anywhere/using-azure.md)
 * [OpenStack](../Deploying Anywhere/using-openstack-cloud.md)
@@ -68,7 +67,7 @@ When a box launches on a deployment policy containing an admin box, Cloud Applic
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

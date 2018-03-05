@@ -110,7 +110,6 @@ Quickly deploy and successfully use software and technology from any of our cert
 | [Couchbase](../Marketplace Guides/getting-started-with-couchbase-blueprint.md)   	| Blueprint    | Scale out Database    |
 | [DataStax Cassandra](../Marketplace Guides/getting-started-with-datastax-blueprint.md)   	| Blueprint    | Distributed NoSQL database    |
 | [Hortonworks Hadoop](../Marketplace Guides/getting-started-with-hortonworks-hadoop-blueprint.md)   	| Blueprint    | Distributed NoSQL database    |
-| [MapR](../Marketplace Guides/getting-started-with-mapr-blueprint.md)   	| Blueprint    | Enterprise-grade Hadoop cluster    |
 | [MEAN Stack](../Marketplace Guides/getting-started-with-mongodb-blueprint.md)   	| Blueprint    | MongoDB, Express, Angular, Node.js bundle    |
 | [Microsoft SQL Server](../../Managed Services/getting-started-with-managed-microsoft-sql-server.md)   	| Blueprint (Managed)   | Enterprise-grade relational database management system   |
 | [MongoDB](../Marketplace Guides/getting-started-with-mongodb-blueprint.md)   	| Blueprint    | High performance document oriented NoSQL database    |
@@ -134,7 +133,7 @@ Quickly deploy and successfully use software and technology from any of our cert
 |:-	|:-	|
 | [Datto](../Marketplace Guides/getting-started-with-datto-alto-blueprint.md)   	| Blueprint    | Alto Backup Appliance   |
 | [SoftNAS](../Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-appliance.md)   	| Blueprint    | NAS and Cloud Storage Gateway   |
-| [CloudBerry Lab Backup Enterprise](../Marketplace Guides/getting-started-with-cloudberry-lab-backup-enterprise-blueprint.md)   	| Blueprint    | Backup Software   |
+| [CloudBerry Lab Backup Enterprise](../Marketplace Guides/getting-started-with-cloudberry-lab-backup-ultimate-blueprint.md)   	| Blueprint    | Backup Software   |
 | [CloudFuze](../Marketplace Guides/getting-started-with-cloudfuze-blueprint.md)   	| Blueprint    | Cloud Storage Management   |
 
 ### Data Protection

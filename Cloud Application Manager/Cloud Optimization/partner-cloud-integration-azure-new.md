@@ -11,6 +11,8 @@
 
 [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/) offers the Cloud Integration feature, giving users the ability to benefit from CenturyLink's partnerships with other cloud providers. CenturyLink integrates the billing and assumes responsibility for Azure support. This document is specific to Azure.
 
+multiple Azure subscriptions provides your administrators the ability to easily manage users and resources for multiple Azure projects and departments by placing them in different Azure "Accounts.""
+
 ### Audience
 
 All of our customers are invited to use Cloud Optimization via Cloud Application Manager.
@@ -25,25 +27,29 @@ For Azure, we are currently limited to serving billable customers who are not re
 
 * A working knowledge of how to use [Cloud Application Manager providers](../Core Concepts/providers.md).
 
-* An understanding of the features and benefits of [Partner Cloud Integration](./partner-cloud-integration.md)
+* An understanding of the features and benefits of [Partner Cloud Integration](partner-cloud-integration.md)
 
-* For each CenturyLink Cloud account integrated with Azure, both CenturyLink's and Microsoft's Terms and Conditions must be accepted. These will be presented to any user attempting to create a new "Azure Resource Manager" provider in Cloud Application Manager.
+* For each CenturyLink Cloud account integrated with Azure, both CenturyLink's and Microsoft's Terms and Conditions must be accepted. These will be presented to any user attempting to create a new "Microsoft Azure" provider in Cloud Application Manager.
 
 ### Important Information
 
-![Microsoft Azure Provider Options](../../images/cloud-application-manager/CINT_Azure_Provider_Options.png)
+![Microsoft Azure Provider Options](../../images/cloud-application-manager/CINT_Azure_Provider_Options1.png)
 
 Cloud Application Manager Provider Verbiage | Description | Related Links
 --- | --- | ---
 Use an existing Azure customer account | This is not an optimized option. Customer pays Amazon for usage. | [Click here](../../Cloud Application Manager/Deploying Anywhere/using-microsoft-azure.md)
-Migrate my account to CenturyLink for consolidated billing and Platform Support | **This is a Cloud Optimized option.** This allows an existing customer account to move under CenturyLink's care. | [Click Here](./partner-cloud-integration-azure-existing.md)
-Create a new Azure customer account | **This is a Cloud Optimized option.** Begins the new account creation automation, enabling the customer to immediately enter CenturyLink's care. | This document
+Migrate my account to CenturyLink for consolidated billing and Platform Support | **This is a Cloud Optimized option.** This allows an existing customer account to move under CenturyLink's care. | [Click Here](partner-cloud-integration-azure-existing.md)
+Create a new Azure customer account and Subscription or a new subscription for an existing account | **This is a Cloud Optimized option.** Begins the new account creation automation, enabling the customer to immediately enter CenturyLink's care. | This document
 
-Charges for [Azure usage](./partner-cloud-integration-consolidated-billing.md) will appear on invoices from CenturyLink.
+Charges for [Azure usage](partner-cloud-integration-consolidated-billing.md) will appear on invoices from CenturyLink.
 
 ### Steps
 
-The following steps will walk through how to set up a new Cloud Application Manager provider that has been designed to create an Azure Customer account within the scope of CenturyLink's responsibility.
+The following steps will walk through how to set up a new Cloud Application Manager provider that has been designed to do one of the following:
+* Create a new Azure Customer account and a new Azure subscription  
+* If the CAM organization already has an Azure Customer with at least one subscription, create another Azure subscription.
+
+Subscriptions created in the manners above fall within the scope of CenturyLink's responsibility.
 
 Videos of these steps can be found [here](https://www.ctl.io/guides/).
 
@@ -56,9 +62,9 @@ Videos of these steps can be found [here](https://www.ctl.io/guides/).
 
 5. Provide a name for the provider that identifies it for your purposes
 
-6. Select the "Create a new Azure customer account" option. (If the user cannot see this option, they are not an organization Administrator.)
+6. Select the "Create a new Azure customer Subscription" option. (If the user cannot see this option, they are not an organization Administrator.)
 
-  ![Create New Azure Account](../../images/cloud-application-manager/CINT_New_ARM2.2.png)
+  ![Create New Azure Account](../../images/cloud-application-manager/CINT_New_ARM2.3.png)
 
 7. Accept the Terms and Conditions
 
@@ -71,7 +77,7 @@ Please expect at least a two-minute wait while our automated process performs th
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

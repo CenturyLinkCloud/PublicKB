@@ -1,6 +1,6 @@
 {{{
   "title": "Load Balancing Comparison Matrix",
-  "date": "8-29-2017",
+  "date": "10-24-2017",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -24,6 +24,7 @@ Health Checks|No|[Yes](../LBaaS/getting-started-with-load-balancer-as-a-service.
 SSL Offloading|No|No|Yes|Yes
 WAF|No|No|Optional|Optional
 Global Server Load Balancing|No|No|Optional|Optional
+GeoIP Filtering|No|No|Yes|Yes
 [SLA](//www.ctl.io/legal/sla/)<sup>2</sup>|Yes|Yes|Limited|Limited
 [Support](../Support/how-do-i-report-a-support-issue.md)<sup>3</sup>|Yes|Yes|Limited|Limited
 Lifecycle Management<sup>7</sup>|Day 0<br>Day 2<br>Day N|Day 0<br>Day 2<br>Day N|Day 0|Day 0

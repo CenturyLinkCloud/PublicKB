@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-When configuring an application deployment in a box, you can define its deployment parameters as variables. In order for Cloud Application Manager to execute them during a deployment, they need to be referenced in the configuration [event scripts](./start-stop-and-upgrade-boxes.md) following the Jinja2 syntax in these sections. [Jinja2](http://jinja.pocoo.org/docs/dev/) is a templating language in Python that we follow for the variable syntax conventions.
+When configuring an application deployment in a box, you can define its deployment parameters as variables. In order for Cloud Application Manager to execute them during a deployment, they need to be referenced in the configuration [event scripts](start-stop-and-upgrade-boxes.md) following the Jinja2 syntax in these sections. [Jinja2](http://jinja.pocoo.org/docs/dev/) is a templating language in Python that we follow for the variable syntax conventions.
 
 **In this article:**
 
@@ -39,7 +39,7 @@ To get variables values in the parent box event scripts, follow this syntax:
 
     **Note:** There’s no limit to the number of child boxes boxes you can traverse. For example, to get the value of a variable from a box nested two levels deep, use this syntax: `\{{ boxtype_variable_name.boxtype_variable_name.variable_name }}`
 
-To set or change variable values in the parent box event scripts, follow this syntax with the set command. For examples, see the [Set Command](./cloud-application-manager-commands.md).
+To set or change variable values in the parent box event scripts, follow this syntax with the set command. For examples, see the [Set Command](cloud-application-manager-commands.md).
 
 * elasticbox set `<variable_name> <variable_value>`: Sets the value of the variable.
 * elasticbox set `<boxtype_variable_name>.<variable_name> <variable_value>`: Sets the value of the variable in the box type variable. This is how you set values for variables in child boxes.
@@ -69,7 +69,7 @@ To get values of default deployment variables in parent box event scripts, follo
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:cloudsupport@centurylink.com) with details and screenshots where possible.
+We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
