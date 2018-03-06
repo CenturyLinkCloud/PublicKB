@@ -21,6 +21,8 @@ When a user navigates to the Cloud Application Manager Monitoring site they will
 ![PolicyLeftNav](../../images/PolicyLeftNav.PNG)
 
 Adding a New Policy:
+
+
 To create a new policy, you need to click the “New” button in the upper left-hand side.  After clicking the new button, a new pop-up appears where you can name and describe your policy.
 
 ![CreatePolicy](../../images/CreatePolicy.PNG)
