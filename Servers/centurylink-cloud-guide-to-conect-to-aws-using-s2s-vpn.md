@@ -10,11 +10,12 @@
 
 * [Overview](#overview)
 * [Create a Site to Site VPN in CenturyLink Cloud](#create-a-site-to-site-vpn-in-centurylink-cloud)
-* [Use Case Scenarios](#use-case-scenarios)
-* [Preparation](#preparation)
-* [Deployment](#deployment)
-* [Testing](#testing)
-* [Troubleshooting](#troubleshooting)
+* [Create VPC](#create-vpc)
+* [VPN setup with an existing VPC](#vpn-setup-with-an-existing-vpn)
+* [VPN Configuration on CLC](#deployment)
+  * [Phase 1](#phase-1)
+  * [Phase 2](#phase-2)  
+* [Verify AWS Route Tables ](#verify-aws-route-tables)
 * [Support](#support)
 
 ###  Overview
@@ -26,7 +27,7 @@ Before creating the VPN, a network diagram below would help to identify the VLAN
 
   ![aws-clc](../images/awsvpn/clc-aws.png)
 
-First is to obtain the public IP address of the CenturyLink Cloud VPN gateway, this can be obtained from CenturyLink Cloud portal under Network -> Site to Site VPN.  Detail is for the CenturyLink Cloud Site to Site VPN setup is available here.
+First is to obtain the public IP address of the CenturyLink Cloud VPN gateway, this can be obtained from CenturyLink Cloud portal under Network -> Site to Site VPN.  Detail is for the CenturyLink Cloud Site to Site VPN setup is available [here](../network/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md).
 
   ![aws-vpn](../images/awsvpn/clc-s2s.png)
 
@@ -40,7 +41,8 @@ Once the IP address is collected, the next step will be creating the VPN connect
 2. An existing AWS enironment with VPC, a Virtual Private Gateway is needed
 
 A quick view on the configuration on the AWS side:
-### Create VPC  
+### Create VPC
+
 1. In the AWS console, go to **Services**. Click on VPC and select the appropriate AWS region.
 
 2. Click on **Start VPC Wizard**
@@ -76,8 +78,11 @@ A quick view on the configuration on the AWS side:
      click **VPN Connections**.  
      At the bottom left of the screen. Under tunnel details you can see the 2 tunnels created. The status will be down because CLC side of the tunnel has not been configured yet
 
-Once the VPN is created, go to the **VPN Connections** page under **VPC** of AWS portal, click on **Download Configuration**.  Pick either "Generic" or "pfSense" from the drop down menu, as both are text file configuration.  Please take note of the following parameters for the CenturyLink Cloud side VPN configuration:
+Once the VPN is created, go to the **VPN Connections** page under **VPC** of AWS portal, click on **Download Configuration**.  Pick either "Generic" or "pfSense" from the drop down menu, as both are text file configuration.  
+
   ![clc-vpn-download](../images/awsvpn/aws-vpn-download.png)
+
+Please take note of the following parameters for the CenturyLink Cloud side VPN configuration:  
 ```
   Your VPN Connection ID 		  : vpn-xxxxxxxx
   Your Virtual Private Gateway ID  : vgw-xxxxxxxx
@@ -100,9 +105,14 @@ Once the VPN is created, go to the **VPN Connections** page under **VPC** of AWS
   Lifetime : 3600 seconds
 ```
 
-### With an Existing VPC###
+### VPN setup with an existing VPC
+
 1.	Under VPC, Virtual Private Gateways, create a VPG for the VPC if one does not exist
+
+  ![aws-vpg](../images/awsvpn/aws-vpg.png)
+
 2.	Once it is created, create a VPN connection under VPC on AWS portal
+  ![aws-vpn](../images/awsvpn/aws-vpn.png)
 3.	Provide
   a.	Name Tag
   b.	Virtual Private Gateway that the VPN is connecting
@@ -114,7 +124,7 @@ Once the VPN is created, go to the **VPN Connections** page under **VPC** of AWS
   f.	Tunnel Options: default
 4. Using the AWS VPN configuration file, with the information from the file, complete the VPN setup in CenturyLink Cloud Site to Site VPN setup
 
-### Continue the VPN Configuration on CLC
+### VPN Configuration on CLC
 1. From CenturyLink Cloud portal under Network -> Site to Site VPN.  Detail is for the CenturyLink Cloud Site to Site VPN setup is available here. Pick the VPN endpoint that is configured as part of the AWS VPN configuration and add the CenturyLink Cloud VLAN(s) as part of the VPN setup for **VPN Peer IPv4 Address**.
   ![aws-vpn](../images/awsvpn/clc-vpn-endpoint.png)
 
@@ -150,15 +160,16 @@ Click **Finish**.
 Once the CenturyLink VPN is created, check on the AWS portal and click on **VPN connections**. The tunnel should now be **UP**.  
 
 
-#### Edit Route Tables
-1. Once VPN setup is completed, verify the VPC Route Tables is correct, either the default gateway or the CenturyLink subnets should be routed through the Virtual Private Gateway
-2. Ensure Network ACL and Security Group are configured to allow traffic from the CLC network
+### Verify AWS Route Tables
+1. Once VPN setup is completed, verify the VPC Route Tables is correct, either the default route or the CenturyLink subnets should be routed through the Virtual Private Network
   ![aws-routing](../images/awsvpn/aws-routing.png)
+2. Ensure Network ACL and Security Group are configured to allow traffic from the CLC network
   ![acl](../images/awsvpn/acl.png)
+  ![aws-securitygroup](../images/awsvpn/aws-securitygroup.png)
 3. Initiate “ping” or SSH from a CLC server to a server in the AWS network to validate the connectivity
 
 
 
-This concludes the setup of VPN between Centurylink Cloud and AWS cloud.
+### Support
 
-To configure security groups, please follow [configure security groups](security-group.md)
+* For issues related to cloud infrastructure (VM's, network, etc), or if you experience a problem deploying any Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](//t3n.zendesk.com/tickets/new).
