@@ -11,7 +11,7 @@
 ### Overview
 Cloud Application Manager Monitoring now allows for Microsoft Azure checks.  These checks will provide base-level infrastructure metrics and logs for Azure services.
 
-![AzureCheckCatalog](../../../images/AzureCheckCatalog.PNG)
+![AzureCheckCatalog](../../images/AzureCheckCatalog.PNG)
 
 #### Navigation 
 
