@@ -27,15 +27,15 @@ To create a new policy, you need to click the “New” button in the upper left
 
 From there you will be able to set up the metric or status checks you want to see.  You can also set up the servers you want to associate the checks with as well.
 
-To add a metric check you will access the check catalog and select the category you want.
+To add a metric check you will access the check catalog and select the category you want.  Once a category is selected a list of check types will be shown on the right-hand side. 
 
 ![AzureCheckCatalog2](../../images/AzureCheckCatalog.PNG)
 
-Once a category is selected a list of check types will be shown on the right-hand side.  
+ To add a spcific check for Azure, you need to click on Azure Metric Check and configure it
 
-![AzureCAMResource](../../images/AzureCAMResource.png)
+![AzureCAMResource](../../images/AzureCAMResource.PNG)
 
-To add the specific metric information for Azure, log into Azure and go to All Resources.
+Log into the Azure portal (portal.azure.com) and go to All Resources.
 
 ![AzureLeftNav](../../images/AzureLeftNav.PNG)
 
@@ -47,4 +47,4 @@ Then you will need to go to Properties in the Azure portal and copy the resource
 
 ![AzureProperties](../../images/AzureProperties.PNG)
 
-Take the resource ID and paste it in Resource ID in the check catalog.  Post your critical over and warning over as well as your critical and warning under.
+Copy the resource ID and paste it in Resource ID in the check catalog.  Post your critical over and warning over as well as your critical and warning under.
