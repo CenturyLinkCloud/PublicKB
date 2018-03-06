@@ -115,7 +115,7 @@ The following are quick tips/notes based on past experiences with customers leve
 
 ### Changelog
 
-SQL Server 2016 Package:
+January 2018 - SQL Server 2016 Package:
   * Mixed Mode with SA password is removed per Microsoft best practice, customers can change the operating mode after install if they desire.
   * Added a feature to allow customers to install to different volumes, previously all installs forced to C:\
   * SQL Server Management Studio is no longer installed by default. Now that management tools like SSMS are packaged separate from the installer we are leaving it up to the customers to load management software if they desire.
