@@ -1,7 +1,7 @@
 {{{
   "title": "Simple Backup Anywhere",
-  "date": "9-24-2017",
-  "author": "John Gerger",
+  "date": "03-06-2018",
+  "author": "Kyle Miller",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -40,5 +40,63 @@ There are 2 methods available to install the Simple Backup agent on your non-Cen
 ![](../images/backup/backup-anywhere/policy-add.png)
 
 * You will then be presented with a list of all servers outside of CenturyLink Cloud that have the backup agent installed on them. Select the desired server to add to the policy and the storage region you would like to backup to
+
+### Using the API
+
+1. First retrieve the OS Type for your new server:
+    * GET https://api.backup.ctl.io/clc-backup-api/osTypes
+
+2. Submit a provisioning request for your new server:
+    * POST https://api.backup.ctl.io/clc-backup-api/provisioning
+    * Request Body:
+```
+{
+    "serverId":"{{ desired-friendly-name-to-refer-to-the-server }}",
+    "osType":"{{ get this from the query above }}"
+}
+```
+    * Response Body:
+```
+{
+	"provisioningToken":"PROVISIONUUID",
+	"clcAccountAlias":"ABCD",
+	"serverId":"your-submitted-server-alias",
+	"osType":"selected ostype",
+	"issuedTimestamp":1520345154921,
+	"redeemedTimestamp":0,
+	"revokedTimestamp":0
+}
+```
+
+3. Create an installer script for your new server:
+    * **Note**: write the response directly to an executable file
+    * POST https://api.backup.ctl.io/clc-backup-api/createInstallerScript
+    * Request Body:
+```
+PROVISIONUUID
+```
+    * Response Body:
+```
+{{ File contents for installer script }}
+```
+
+4. Excute the installer script on your host machine and wait for the script execution to complete
+
+5. Retrieve a current list of Anywhere servers and choose your server by serverId from the response:
+
+    * GET https://api.backup.ctl.io/clc-backup-api/datacenters/anywhereServers
+    * Response Body:
+```
+[
+    {
+    	"id":"UUID",
+    	"accountAlias":"ABCD",
+    	"osType":"selected ostype",
+    	"serverAlias":"your-submitted-server-alias"
+    }
+]
+```
+
+</a>
 
 * For more information on setting up backup policies please see our [getting started guide](getting-started-with-simple-backup.md)
