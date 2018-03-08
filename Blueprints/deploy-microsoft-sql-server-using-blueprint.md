@@ -18,6 +18,7 @@
 * [Installing Microsoft SQL Server using Execute Package](#installing-microsoft-sql-server-using-execute-package)
 * [Installing Microsoft SQL Server using Blueprint Library](#installing-microsoft-sql-server-using-blueprint-library)
 * [Installing Microsoft SQL Server using Runner](#installing-microsoft-sql-server-using-runner)
+* [Changelog](#changelog)
 
 ### Overview
 CenturyLink Cloud customers can procure and deploy Microsoft SQL Server licensing within the Control Portal. Microsoft SQL Server is licensed via the Microsoft SPLA program. By using the CenturyLink Cloud public Blueprint customers have multiple ways to consume and install this business critical database software.
@@ -111,3 +112,16 @@ The following are quick tips/notes based on past experiences with customers leve
 3. Input the appropriate parameters based on the SQL server requirements for your application and select the Virtual Machine(s) you wish to execute the install against. When ready select **run**.
 
     ![select servers and features for runner](../images/deploy-microsoft-sql-server-using-blueprint-12.png)
+
+### Changelog
+
+January 2018 - SQL Server 2016 Package:
+  * Mixed Mode with SA password is removed per Microsoft best practice, customers can change the operating mode after install if they desire.
+  * Added a feature to allow customers to install to different volumes, previously all installs forced to C:\
+  * SQL Server Management Studio is no longer installed by default. Now that management tools like SSMS are packaged separate from the installer we are leaving it up to the customers to load management software if they desire.
+  * Added PowerPivot as a new Analytics Services mode
+  * The script does some basic logging to C:\sqlinstall.log which could provide some general outputs above and beyond the limited capabilities of the blueprint engine. This can be helpful for basic troubleshooting.
+  * The installer method is no longer using command line models and relies on the MS SQL configurationfile.ini method which is more reliable.
+  * The package is converted from batch file to powershell.
+  * The package forces a reboot at the end of the install for better reliability.
+  * The Installer files are copied locally and then removed for better reliability and faster install time.
