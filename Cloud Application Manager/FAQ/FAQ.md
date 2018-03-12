@@ -115,14 +115,7 @@ Cloud Application Manager Cost Center Alias
 
 
 ##### What is a Account Alias?
-An account alias represents any charges directly associated to a provider. Currently all features of Cloud Application Manager are directly associated to each provider
-
-The features of Cloud Application Manager<br>
-<br>
-[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)<br>
-[Managed Services Anywhere](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/)<br>
-[Cloud Optimization](https://www.ctl.io/cloud-application-manager/cloud-optimization/)<br>
-Platform Support<br>
+An account alias represents any charges directly associated to a provider. Currently, all charges of Cloud Application Manager are directly associated to each provider.
 
 Each provider is associated to a cost center and is shown as such in the bill.
 
