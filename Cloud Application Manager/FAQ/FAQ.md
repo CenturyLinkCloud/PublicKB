@@ -7,7 +7,7 @@
 "sticky": true
 }}}
 
-###FAQ
+### FAQ
 
 Here you will find any frequently asked questions for different topics.
 
