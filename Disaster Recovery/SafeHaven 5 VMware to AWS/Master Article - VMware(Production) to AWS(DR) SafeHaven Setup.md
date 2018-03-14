@@ -1,5 +1,5 @@
 {{{
-  "title": "Master Article - CLC(Production) to AWS(DR) SafeHaven Setup",
+  "title": "Master Article - VMware(Production) to AWS(DR) SafeHaven Setup",
   "date": "12-27-2017",
   "author": "Mahima Kumar",
   "attachments": [],
