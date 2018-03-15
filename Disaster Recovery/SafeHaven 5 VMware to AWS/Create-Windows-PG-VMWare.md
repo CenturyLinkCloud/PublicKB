@@ -1,5 +1,5 @@
 {{{
-  "title": "Create Windows Protection Group, Install LRA and Start Replication",
+  "title": "Create Windows Protection Group, Install LRA and Start Replication - VMWare",
   "date": "01-15-2018",
   "author": "Anshul Arora",
   "attachments": [],
