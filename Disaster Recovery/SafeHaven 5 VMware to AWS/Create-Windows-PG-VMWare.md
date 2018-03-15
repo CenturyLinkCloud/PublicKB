@@ -1,7 +1,7 @@
 {{{
   "title": "Create Windows Protection Group, Install LRA and Start Replication",
-  "date": "12-27-2017",
-  "author": "Juan Aristizabal",
+  "date": "01-15-2018",
+  "author": "Anshul Arora",
   "attachments": [],
   "contentIsHTML": false
 }}}
