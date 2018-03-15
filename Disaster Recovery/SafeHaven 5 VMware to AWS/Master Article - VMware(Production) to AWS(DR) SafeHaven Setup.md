@@ -33,7 +33,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 11. [Add and Claim Storage on Production SRN in VMWare vCenter](Add-and-Claim-Storage-on-Production-SRN-vmware.md)
 
-12. [Create Windows Protection Group,Install LRA and Start Replication](../SafeHaven 5 CLC to AWS/Create-Windows-Protection-Group-Install-LRA-and-Start-Replication.md)
+12. [Create Windows Protection Group,Install LRA and Start Replication](Create-Windows-PG-VMWare.md)
 
     a. [Modify WAN Replication Rate](../SafeHaven 5 CLC to AWS/Modify WAN Replication Rate.md)
     
