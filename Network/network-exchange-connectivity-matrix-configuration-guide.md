@@ -1,6 +1,6 @@
 {{{
   "title": "Network Exchange Connectivity Matrix and Configuration Guide",
-  "date": "02-15-2018",
+  "date": "03-15-2018",
   "author": "Marco Paolillo",
   "attachments": [],
   "related-products" : [],
@@ -20,7 +20,7 @@ Chicago, IL|CH3|CH3|IL1
 New Jersey, NJ|NJ2|NJ2<br>NJ2X|NY1
 Seattle, WA|SE2|SE2|WA1
 London, UK|LO1|LO1|GB3
-London, UK|LO6|LO6|
+London, UK|LO6|LO6|GB1
 Frankfurt, DE|FR6|FR6|DE1
 Toronto, Canada|TR1|TR1|CA3
 Sydney, AU|SY7|SY7|AU1
