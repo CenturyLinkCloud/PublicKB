@@ -108,4 +108,4 @@ The initial replication of the production windows VM will start now. Close the c
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1MHkq1Qu5p4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </p>  
 
-Once the Protection Group is created successfully, **Next** step is to [../Safehaven 5 CLC to AWS/Modify WAN Replication Rate](Modify WAN Replication Rate.md) and [../Safehaven 5 CLC to AWS/check replication status](Check Replication Status.md)
+Once the Protection Group is created successfully, **Next** step is to [Modify WAN Replication Rate](../Safehaven 5 CLC to AWS/Modify WAN Replication Rate.md) and [check replication status](../Safehaven 5 CLC to AWS/Check Replication Status.md)
