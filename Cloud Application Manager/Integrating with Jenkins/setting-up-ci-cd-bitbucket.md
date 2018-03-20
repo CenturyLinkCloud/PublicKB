@@ -11,7 +11,7 @@ The Cloud Application Manager Jenkins plugin automates CI/CD on any cloud and SC
 
 **Note:** To get started, you need a Jenkins server with Bitbucket and Cloud Application Manager plugins.
 
-To add Cloud Application Manager build steps in Jenkins jobs, go to the job page. Under Build, click **Add Build Step** and select an Cloud Application Manager deploy, manage, or update step.
+To add Cloud Application Manager build steps in Jenkins jobs, go to the job page. Under Build, click **Add Build Step** and select a Cloud Application Manager deploy, manage, or update step.
 
 **In this article:**
 * Previous requirements
@@ -36,7 +36,7 @@ To add Cloud Application Manager build steps in Jenkins jobs, go to the job page
 
     ![jenkins-bitbucket-3.png](../../images/cloud-application-manager/jenkins-bitbucket-3.png)
 
-3. We will need an Apache Tomcat 7.
+3. We will need an Apache Tomcat 8.5.
 
     In order to keep it simple we decided to create a tomcat box in Cloud Application Manager to deploy the apache tomcat server.
 
@@ -55,7 +55,7 @@ Below is a diagram of workflow and how all the components work together.
 
    ![jenkins-bitbucket-6.png](../../images/cloud-application-manager/jenkins-bitbucket-6.png)
 
-   * Choose the policy box.
+   * Choose the deployment policy box.
 
    ![jenkins-bitbucket-7.png](../../images/cloud-application-manager/jenkins-bitbucket-7.png)
 
@@ -65,7 +65,7 @@ Below is a diagram of workflow and how all the components work together.
 
     ![jenkins-bitbucket-8.png](../../images/cloud-application-manager/jenkins-bitbucket-8.png)
 
-    * In the cloud section we add the Cloud Application Manager cloud:
+    * In the cloud section, we add the Cloud Application Manager cloud:
 
     ![jenkins-bitbucket-9.png](../../images/cloud-application-manager/jenkins-bitbucket-9.png)
 
@@ -77,11 +77,11 @@ Below is a diagram of workflow and how all the components work together.
 
 	![jenkins-bitbucket-11.png](../../images/cloud-application-manager/jenkins-bitbucket-11.png)
 
-5. In the Source Code Management section we have to configure the Bitbucket repository (Git should be installed in the Jenkins node):
+5. In the Source Code Management section, we have to configure the Bitbucket repository (Git should be installed in the Jenkins node):
 
     ![jenkins-bitbucket-12.png](../../images/cloud-application-manager/jenkins-bitbucket-12.png)
 
-    In this case the url will be: **https://oserna@bitbucket.org/oserna/hello-world-war.git**
+    In this case the url will be: **https://cgarciadelpozo@bitbucket.org/oserna/hello-world-war.git**
     Enter your credentials in order to access the repository.
 
     ![jenkins-bitbucket-13.png](../../images/cloud-application-manager/jenkins-bitbucket-13.png)
@@ -90,13 +90,15 @@ Below is a diagram of workflow and how all the components work together.
 
     ![jenkins-bitbucket-14.png](../../images/cloud-application-manager/jenkins-bitbucket-14.png)
 
-    In the previous schema you saw that we selected the Tomcat box with its latest version. We also added the tag “tomcat” to that instance in order to easily locate them in our cloud. In this case, we have selected to deploy this box in the Google Compute Engine (GCE) using the policy box below:
-
     ![jenkins-bitbucket-15.png](../../images/cloud-application-manager/jenkins-bitbucket-15.png)
+
+    In the previous schema you saw that we selected the Tomcat box with its latest version. We also added the tag “tomcat” to that instance in order to easily locate them in our cloud. In this case, we have selected to deploy this box in the Google Compute Engine (GCE) using the deployment policy box below:
+
+    ![jenkins-bitbucket-16.png](../../images/cloud-application-manager/jenkins-bitbucket-16.png)
 
 7. Now, once we have configured the Tomcat box that will be deployed, we need to build the source code that we have downloaded previously from the Bitbucket repository. Using a free style Jenkins job and not a maven Jenkins job, we will have to create a shell script step builder:
 
-    ![jenkins-bitbucket-16.png](../../images/cloud-application-manager/jenkins-bitbucket-16.png)
+    ![jenkins-bitbucket-17.png](../../images/cloud-application-manager/jenkins-bitbucket-17.png)
 
     Apache Maven should be previously installed and added to the path in order to execute the order:
 
@@ -104,15 +106,11 @@ Below is a diagram of workflow and how all the components work together.
         mvn clean install
     ```
 
-    ![jenkins-bitbucket-17.png](../../images/cloud-application-manager/jenkins-bitbucket-17.png)
-
     As you might have noticed, the last command in the shell deploys the just war created package in Tomcat.
 
     ```
     curl -v -T ${artifact} 'http://manager:manager@'${tomcat_host}':'${tomcat_port}'/manager/text/deploy?path=/'${context_path}''
     ```
-
-    ![jenkins-bitbucket-18.png](../../images/cloud-application-manager/jenkins-bitbucket-18.png)
 
 8. Let’s see how it works:
 
@@ -147,7 +145,7 @@ Below is a diagram of workflow and how all the components work together.
     ![jenkins-bitbucket-26.png](../../images/cloud-application-manager/jenkins-bitbucket-26.png)
 
 ### Reacting to changes in Bitbucket
-In our previous case we spent some time setting up our continuous integration environment. We’ve started using Jenkins, Bitbucket and the Cloud Application Manager Jenkins plugin, and so far we’re pretty happy. The next goal for us is to set up a Bitbucket service hook to trigger our builds.
+In our previous case, we spent some time setting up our continuous integration environment. We’ve started using Jenkins, Bitbucket and the Cloud Application Manager Jenkins plugin, and so far, we’re pretty happy. The next goal for us is to set up a Bitbucket service hook to trigger our builds.
 
 ![jenkins-bitbucket-27.png](../../images/cloud-application-manager/jenkins-bitbucket-27.png)
 
@@ -213,7 +211,7 @@ We also need to configure the part related to the Bitbucket Pull Request Builder
 
 ![jenkins-bitbucket-40.png](../../images/cloud-application-manager/jenkins-bitbucket-40.png)
 
-Once we have configured our plugins we will see the result from the Bitbucket perspective. So, every time we make a new feature in a new branch, we have created the “master_branch_feature_3” containing commit 13:
+Once we have configured our plugins we will see the result from the Bitbucket perspective. So, every time we make a new feature in a new branch, we have created the “master_branch_feature_2” containing commit 1:
 
 ![jenkins-bitbucket-41.png](../../images/cloud-application-manager/jenkins-bitbucket-41.png)
 
@@ -225,15 +223,11 @@ The commit inside:
 
 ![jenkins-bitbucket-43.png](../../images/cloud-application-manager/jenkins-bitbucket-43.png)
 
-Notice that we haven’t built the Pull Request in Jenkins yet (red figure in the first schema). But give it some time depending of the cron interval you set in the Jenkins job configuration and you will see the build being triggered and executed (see below):
-
-![jenkins-bitbucket-44.png](../../images/cloud-application-manager/jenkins-bitbucket-44.png)
-
-Notice that the build was triggered because of commit 13.
+Notice that the build was triggered because of commit 1.
 
 ![jenkins-bitbucket-45.png](../../images/cloud-application-manager/jenkins-bitbucket-45.png)
 
-The branch being checked out is the master_branch_feature_3.
+The branch being checked out is the master_branch_feature_2.
 
 ![jenkins-bitbucket-46.png](../../images/cloud-application-manager/jenkins-bitbucket-46.png)
 
@@ -279,4 +273,4 @@ For issues related to API calls, send the request body along with details relate
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+* Windows: RDP into the instance to locate the log at /ProgramData/ElasticBox/Logs/elasticbox-agent.log

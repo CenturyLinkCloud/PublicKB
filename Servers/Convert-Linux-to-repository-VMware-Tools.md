@@ -13,7 +13,9 @@ On Linux machines that have had their VMware Tools installed via the tools insta
 **Detailed Steps**
 
 We first need to remove the existing vSphere installed version of VMware Tools.  This is done by executing the following script that should exist if the vSphere installed version of VMware Tools is present.
-vmware-uninstall-tools.pl
+
+`vmware-uninstall-tools.pl`
+
 If any other versions of VMware Tools have been installed (including open-vm-tools older than 9.4.0 series), they must be removed. 
 
 **RHEL / CentOS:**
@@ -45,17 +47,13 @@ Import the following keys
 
 `echo -e "[vmware-tools]\nname=VMwareTools\nbaseurl=http://packages.vmware.com/tools/releases/latest/rhel6/\$basearch\nenabled=1\ngpgcheck=1" > /etc/yum.repos.d/vmware-tools.repo`
 
-**Ubuntu 12.04:**
-
-`echo "deb http://packages.vmware.com/tools/releases/latest/ubuntu precise main" > /etc/apt/sources.list.d/vmware-tools.list`
-
 **Ubuntu 14:04:**
 
 `echo "deb http://packages.vmware.com/packages/ubuntu trusty main" > /etc/apt/sources.list.d/vmware-tools.list`
 
 **Install VMware Tools**
 
-**RHEL/CentOS 5 & 6:**
+**RHEL/CentOS 6:**
 
 `yum install vmware-tools-esx-kmods vmware-tools-esx-nox`
 

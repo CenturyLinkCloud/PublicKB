@@ -29,7 +29,7 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
 
 1. Login to the [Azure portal](https://portal.azure.com/) using your Microsoft Account.
 2. Select *Azure Active Directory* in the menu, and then *App registrations*.
-3. Create a new Application Registration in the Azure Active Directory. <b>Be sure to select "Native" when selecting the application type.</b>
+3. Create a new Application Registration in the Azure Active Directory. <b>Be sure to select "Web app / API" when selecting the application type.</b>
 4. Log back in to the Azure portal and go to subscriptions tab, select *Access Control (IAM)* and then select  *+ Add* on the new screen.
 5. Select *Contributor* role. (If you do not see the Contributor role, you may need to talk to your administrator.)
 6. Search for the application you just created in step 2 and click OK!
