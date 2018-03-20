@@ -24,7 +24,7 @@ The below process details the steps to configure your AWS account for CenturyLin
 * Click 'Create Role'
 
 ##### Apply ARN Policy to CTL Management Appliance
-* Within in AWS navigate to the [EC2 section](http://console.aws.amazon.com/ec2/v2/)
+* Within AWS navigate to the [EC2 section](http://console.aws.amazon.com/ec2/v2/)
 * Right click CTL's Management Appliance, select 'Instance Settings' then 'Attach/Replace IAM role'
 * Select 'CTLCloudApplicationManagerMonitoring' from drop down
 * Click 'Apply'
