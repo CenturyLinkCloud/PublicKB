@@ -30,4 +30,4 @@ The below process details the steps to configure your AWS account for CenturyLin
 * Click 'Apply'
 
 ##### Contact Operations for Monitoring Policy Configuration
-* Contact our operations team [here](http://managedservices.ctl.io) to request the addition of AWS native monitoring checks to supplement existing monitoring coverage for the Managed OS offering.
+* Contact our operations team [here](http://managedservices.ctl.io) to request the configuration of AWS native monitoring checks in your enviorment to supplement existing monitoring coverage for the Managed OS offering.
