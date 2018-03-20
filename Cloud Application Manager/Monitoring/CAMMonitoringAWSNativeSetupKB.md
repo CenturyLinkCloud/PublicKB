@@ -7,10 +7,10 @@
 }}}
 
 ### Introduction
-To supplement our [Managed OS Anywhere](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/) offering in AWS we have released functionality to monitoring a customers servers via CloudWatch to augment our existing OS level monitoring capabilities as an optional feature. 
+To supplement our [Managed OS Anywhere](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/) offering we offer functionality to monitor native AWS Services via CloudWatch to augment our existing OS level monitoring capabilities as an optional feature. 
 
 ### Overview
-The below process details the steps to manual configure your AWS account for CenturyLink's AWS Native Monitoring functionality.
+The below process details the steps to configure your AWS account for CenturyLink's AWS Native Monitoring functionality.
 
 #### Create CenturyLink Cloud Monitoring IAM Role
 * Navigate to IAM 'Roles'
@@ -30,4 +30,4 @@ The below process details the steps to manual configure your AWS account for Cen
 * Click 'Apply'
 
 ##### Contact Operations for Monitoring Policy Configuration
-* Contact operations [here](http://managedservices.ctl.io) to request addition of AWS native monitoring checks to supplement existing monitoring coverage for the Managed OS offering.
+* Contact our operations team [here](http://managedservices.ctl.io) to request the addition of AWS native monitoring checks to supplement existing monitoring coverage for the Managed OS offering.
