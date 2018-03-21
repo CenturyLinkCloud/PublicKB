@@ -43,7 +43,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
     d. [Create Manual Checkpoint](../SafeHaven 5 CLC to AWS/Create Manual Checkpoint.md)
 
-13. [Create Linux Protection Group](Create-Linux-PG-Production-manual .md)
+13. [Create Linux Protection Group](Create-Linux-PG-Production-manual.md)
 	
     a. [Install Scripts and Start Replication for Linux Protection Group](../SafeHaven 5 CLC to AWS/Install Scripts and Start Replication for Linux Protection Group.md)
     
