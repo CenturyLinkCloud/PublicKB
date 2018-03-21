@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-This article explains how to setup SafeHaven at a high level and use SafeHaven for recovery with all the KB article links in order for Manual Site(DCC-F and Hyper-V) to AWS(DR) use case.
+This article explains how to setup SafeHaven at a high level and use SafeHaven for recovery with all the KB article links in order for Manual Site(DCC-F and Hyper-V) to AWS(DR) use case. To read more about a manual site click [here](Introduction to Manual Site.md)
 
 ### SafeHaven Setup and Recovery Workflow
 
