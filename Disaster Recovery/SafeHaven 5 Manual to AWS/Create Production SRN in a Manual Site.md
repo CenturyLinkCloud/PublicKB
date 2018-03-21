@@ -44,7 +44,7 @@ This article assumes that the user has login access to the Manual Production Sit
 **Note**: The SRN VM has been deployed. Next step is to edit some VM settings.
 
 8. Right click the VM, and click **Settings**
-9. Click on **Processor**, and increase the ** number of virtual processors** to 2
+9. Click on **Processor**, and increase the **number of virtual processors** to 2
 10. Right click the VM, and click **Start**.
 11. Right click the VM, and click **connect**.
 
