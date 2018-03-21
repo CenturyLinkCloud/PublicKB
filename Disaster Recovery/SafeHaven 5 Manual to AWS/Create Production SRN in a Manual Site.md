@@ -28,9 +28,9 @@ This article assumes that the user has login access to the Manual Production Sit
 3. Select **Generation 1**, and click **Next**.
 4. Enter **4092** MB in **Startup Memory**. Click **Next**
 5. Under Connection, select an  existing virtual switch. If you don't have any existing switch, then select **New Virtual Switch**. Click **Next**.
-6. Select **Use an existing virtual hard disk**.
-	Click **Browse** to select the SafeHaven Appliance Virtual Hard disk. It can be downloaded from SafeHaven Release notes: 
-	https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-5-general/safehaven5.0.0-release-notes/ 
+6. Select **Use an existing virtual hard disk**.  
+	Click **Browse** to select the SafeHaven Appliance Virtual Hard disk. It can be downloaded from SafeHaven Release notes:   
+	https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-5-general/safehaven5.0.0-release-notes/  
 	Click **Next**
 7. Click **Finish**
 
