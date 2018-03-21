@@ -1,5 +1,5 @@
 {{{
-  "title": "Add and Claim Storage on Production SRN in DCC Foundation",
+  "title": "Add and Claim Storage on Production SRN in a Manual Site",
   "date": "02-06-2018",
   "author": "Anshul Arora",
   "attachments": [],
@@ -28,10 +28,21 @@ This article assumes that the user has already registered the SRN within the Saf
 
 4. This successfully adds a hard disk to the SRN.
 
+### Add storage to the Production SRN in Hyper-V
+
+1. Right click the SRN VM, and click **Settings**.
+2. Click on **SCSI Controller** on the left, select **Hard Drive** and click **Add**.
+3. Select **Virtual hard disk**, and click **New**. 
+4. At the first page of the wizard, click **Next**.
+5. For **disk format**, select **VHDX**. Click **Next**.
+6. Select **Fixed size** for best IO performance.
+7. Enter a **Name** and the **Location** where the disk will be stored. Click **Next**.
+8. Enter the **Size** of the disk. Please refer to [Storage Requirements KB article](../SafeHaven 5 CLC to AWS/Determine Storage Requirements.md) to calculate the amount of storage needed on the SRN. Click **Next**.
+9. Click **Finish**.
 
 **NOTE**: There is no need to allocate storage for the SRN on AWS. Depending on the size of your Protection Group, SafeHaven will automatically create the EBS volumes to meet the requirements.
 
-### Claim storage pool for CenturyLink Cloud Production SRN
+### Claim storage pool on Production SRN
 1. Once the storage has been attached to the SRN, the next step is to login to the **SafeHaven Console**.
 2. Go to the Navigation Tree and select the Production SRN. In the **Properties Panel** select **Claim Storage Pool**.
 **NOTE**: If you don't see a device listed click on **Rescan** in order to force a rescan of the SCSI bus on the SRN.
