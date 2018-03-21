@@ -58,4 +58,4 @@ This article assumes that the user has already registered the SRN within the Saf
 
 For **Windows** Protection Group, **Next Step** is to [Create Windows Protection Group, Install LRA and Start Replication](../SafeHaven 5 CLC to AWS/Create-Windows-Protection-Group-Install-LRA-and-Start-Replication.md)
 
-For **Linux** Protection Group, **Next Step** is to [Create Linux Protection Group](../SafeHaven 5 Manual to AWS/Create-Linux-Protection-Group-DCCF.md)
+For **Linux** Protection Group, **Next Step** is to [Create Linux Protection Group](Create-Linux-PG-Production-manual.md)
