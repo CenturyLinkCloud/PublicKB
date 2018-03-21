@@ -17,10 +17,17 @@ Login access to the Manual Production Site.
 This article assumes that the user has login access to the Manual Production Site.
 
 ### Create Production SRN - If production site is DCC-Foundation
-1. Login to the **DCC-Foundation** portal with your credentials.
-2. Upload the **SafeHaven OVA** (from the latest Release notes) to the DCC-Foundation portal. Once that is complete click on **Catalog**, then **SafeHaven**.
-3. Right-Click on **SafeHavenApplianceOVA** and select **Add to My Cloud**
-4. Enter a name 
+1. Login to the **DCC-Foundation** portal with your credentials.  
+2. Upload the **SafeHaven OVA** (from the latest Release notes) to the DCC-Foundation portal. Once that is complete click on **Catalog**, then **SafeHaven**.  
+3. Right-Click on **SafeHavenApplianceOVA** and select **Add to My Cloud**  
+4. Enter a name for the VM, and click **Next**.  
+5. Under **Configure Resources** tab, enter the **Virtual Machine** name, **Computer Name** (Can be same as VM name).  
+   Click **Next**.
+6. Under **Network Mapping**, keep the default configuration, and click **Next**.
+7. Click **Next**, and go to **Custom Properties** page.  
+	Enter **2 Virtual CPUs** and **4 GB RAM**. Click **Next**.
+8. You may choose to power on the VM at the end of deployment. Click **FInish**.
+
 
 ### Create Production SRN - If production site is Hyper-V
 1. Right click the Hyper-V host, and click on **New** > **Virtual Machine**
