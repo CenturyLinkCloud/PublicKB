@@ -16,13 +16,13 @@
 ##### Customer Sales and Support:
 * Customer support
   * Email: [support@cloudberrylab.com](mailto:support@cloudberrylab.com)
-  * Telephone: (212) 863 9918
+  * Telephone:  US 1 (415) 301 7773 ext 1
 * Solution Architects group
   * Email: [sa-team@cloudberrylab.com](mailto:sa-team@cloudberrylab.com)
   * Telephones: US 1 (917) 720 3791; UK 44 (0) 20 7193 0300
 * Sales team
   * Email: [sales@cloudberrylab.com](mailto:sales@cloudberrylab.com)
-  * Telephone: (212) 863 9918
+  * Telephone: US 1 (415) 301 7773 ext 2
 
 ### Description
 CloudBerry Lab has integrated their backup technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Backup to Cloud Object Storage solution.
@@ -178,5 +178,5 @@ By the first run of Cloudberry Backup you activate the free trial, which is vali
 You can purchase online by visiting [this link](http://www.cloudberrylab.com/enterprise-cloud-backup-software.aspx).
 
 #### Who should I contact for support?
-* For issues directly related to the Cloudberry lab software or licensing, please contact [support@CloudBerryLab.com](mailto:support@cloudberrylab.com) or via telephone: (212) 863 9918.
+* For issues directly related to the Cloudberry lab software or licensing, please contact [support@CloudBerryLab.com](mailto:support@cloudberrylab.com) or via telephone: US 1 (415) 301 7773.
 * For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

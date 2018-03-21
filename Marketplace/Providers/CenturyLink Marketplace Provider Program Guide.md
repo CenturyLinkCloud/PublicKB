@@ -14,7 +14,7 @@ The CenturyLink Marketplace Provider Program Guide is designed to outline the pr
 * CenturyLink Marketplace Applicant, Candidate and Provider firms
 * CenturyLink Employees
 
-The CenturyLink Marketplace Provider Program is designed to provide additional value within CenturyLink’s enterprise cloud computing platform and other stratigic CenturyLink products and offerings, through partnerships with innovative technology and service providers. The CenturyLink Marketplace provides an online catalog of installable software and solutions, allowing consumers to browse and purchase in a self-service, low friction consumption model. The Marketplace also provides a quick and easy way for CenturyLink sales force to help customers purchase solutions.
+The CenturyLink Marketplace Provider Program is designed to provide additional value within CenturyLink’s enterprise cloud computing platform and other strategic CenturyLink products and offerings, through partnerships with innovative technology and service providers. The CenturyLink Marketplace provides an online catalog of installable software and solutions, allowing consumers to browse and purchase in a self-service, low friction consumption model. The Marketplace also provides a quick and easy way for CenturyLink sales force to help customers purchase solutions.
 By integrating their technology into the CenturyLink Marketplace, our technology partners can take advantage of a differentiated, digital route-to-market: presented as part of a enterprise-grade automation platform which powers one of the largest pools of IT infrastructure in the world.
 
 ## Benefits of Integrating with the CenturyLink Marketplace
@@ -95,18 +95,6 @@ Once these KB articles are completed and published, the Partner will coordinate 
 ## Onboarding
 
 As the provider works with the CenturyLink Integration Engineers to certify their product and billing integration, a Marketplace team member will concurrently work with the provider to onboard them through the process of building their public facing Marketplace tiles. The onboarding process consists of the provider accessing the CenturyLink Provider Portal and creating tiles for each product. While the Provider Portal was created to be a self-service tool, there are multiple [resources](https://www.ctl.io/knowledge-base/marketplace/providers/#1), just in time training videos, and access to a Marketplace team member to assist the provider throughout the process.
-
-## CenturyLink Software Alliance Program
-
-As part of the Certification process, each Marketplace provider will be assigned a sales account manager, who will work with the provider throughout the partnership to continuously build a program that is focused on expanding the profitability and overall success of your offering on the CenturyLink Marketplace.
-
-CenturyLink's Software Alliance Program provides software companies with business enablement and new routes to market. We enable companies through access to one of the broadest, world-class infrastructure portfolios in the industry, coupled with a comprehensive suite of managed and consultative services delivered by a team of experts. We provide new routes to market through our global customer footprint and rapidly growing partner network.
-
-CenturyLink defines progressive levels of Partnership, with deeper integration between Partner technologies and the Hybrid IT solutions offered by CenturyLink at each step. Each level offers a variety of business and marketing benefits designed to drive partner business success.
-
-CenturyLink supports technology partners that invest their valuable time and resources integrating with the platform. This support takes the form of integration resources, but also includes support for business development activities and joint marketing.
-
-To learn more about the CenturyLink Software Alliance Program, contact the [Software Alliance team](mailto:SoftwareAllianceTeam@CenturyLink.com).
 
 ## Product Lifecycle Management
 
