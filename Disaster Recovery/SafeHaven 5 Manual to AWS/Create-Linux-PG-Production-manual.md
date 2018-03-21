@@ -18,6 +18,7 @@ This article assumes that:
 1. A SafeHaven cluster has been created successfully.
 2. Both production and recovery SRNs have been registered and peered
 
+
 ### Attach and Claim RAW Disks on Production SRN in DCCF.
 1. Login to DCC portal. Confirm the Storage requirements for the Production Server (in this case Windows). Click the production VM, and go to **Hardware** tab to see the total provisioned storage. Based on the Production Server O.S. Type and [Storage Requirements](../SafeHaven 5 CLC to AWS/Determine Storage Requirements.md), calculate the amount of storage that needs to be added.
 
@@ -33,6 +34,8 @@ For example, if you added a 17GB disk in step 1, then please add a second raw di
 3. Click **Add**, and enter the size of the disk. Add one more disk using the same method.
 
 4. Click **Ok**. This successfully adds 2 hard disks to the SRN
+
+**NOTE**: For **Production SRN in Hyper-V**, please add same storage as above, and then follow the steps below.
 
 **NOTE**: There is no need to allocate storage for the SRN on AWS, depending on the size of your Protection Group SafeHaven will automatically create the EBS volumes to meet the requirements.
 
