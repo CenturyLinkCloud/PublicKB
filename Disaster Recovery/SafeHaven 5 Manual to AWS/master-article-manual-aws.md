@@ -3,7 +3,8 @@
   "date": "03-21-2018",
   "author": "Anshul Arora",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 ### Article Overview
