@@ -2,8 +2,13 @@
   "title": "Create Site-to-site VPN between CLC and AWS",
   "date": "03-06-2018",
   "author": "Gavin Lai",
-  "attachments": [],
-  "contentIsHTML": false
+  "attachments": [
+  {
+    "file_name": "Sample CloudFormation template to create VPC with VPN connectivity",
+    "url": "../attachments/vpn-vpc-cloudforamtion.zip",
+    "type": "application/zip"
+  },
+  ],
 }}}
 
 ### Table of contents
@@ -62,7 +67,7 @@ A quick view on the configuration on the AWS side:
 
    * Click **Next**.
 
-5. Configure your VPN.  
+4. Configure your VPN.  
    * Enter **Customer Gateway IP** using the public IP of the CenturyLink VPN gateway obtained from first step.   
 
    * Enter **Customer Gateway name** and **VPN Connection name**.  
@@ -104,6 +109,7 @@ Please take note of the following parameters for the CenturyLink Cloud side VPN 
   PFS key group :   2
   Lifetime : 3600 seconds
 ```
+An Alternative way to create a VPC with VPN connection is using CloudFormation tempalte, a sample is attached to this knowledge article.
 
 ### VPN setup with an existing VPC
 
