@@ -1,13 +1,13 @@
 {{{
-  "title": "Master Article - VMware(Production) to AWS(DR) SafeHaven Setup",
-  "date": "12-27-2017",
-  "author": "Mahima Kumar",
+  "title": "Master Article - Manual Site(Production) to AWS(DR) SafeHaven Setup",
+  "date": "03-21-2018",
+  "author": "Anshul Arora",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
 ### Article Overview
-This article explains how to setup SafeHaven at a high level and use SafeHaven for recovery with all the KB article links in order for VMware(Production) to AWS(DR) use case.
+This article explains how to setup SafeHaven at a high level and use SafeHaven for recovery with all the KB article links in order for Manual Site(DCC-F and Hyper-V) to AWS(DR) use case. To read more about a manual site click [here](Introduction to Manual Site.md)
 
 ### SafeHaven Setup and Recovery Workflow
 
@@ -17,7 +17,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 3. [Setup AWS for SafeHaven-5 using CloudFormation](../SafeHaven 5 General/Setup AWS for SafeHaven-5 using CloudFormation.md)
 
-4. [Create Production SRN in vCenter](Create-Production-SRN-in-vCenter.md)
+4. [Create Production SRN in vCenter](Create-Production-SRN-Manual.md)
 
 5. [Create CMS in AWS](../SafeHaven 5 CLC to AWS/Create CMS in AWS.md)
 
@@ -25,15 +25,15 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 7. [Create SafeHaven Cluster and Login to SafeHaven Console](../SafeHaven 5 CLC to AWS/Create SafeHaven Cluster and Login to SafeHaven Console.md)
 
-8. [Register Datacenters within SafeHaven Console](Register-vcenter-SafeHaven Console.md)
+8. [Register Datacenters within SafeHaven Console](Register-manual-SafeHaven-Console.md)
 
 9. [Register SRN within SafeHaven Console](../SafeHaven 5 CLC to AWS/Register SRN within SafeHaven Console.md)
 
 10. [Add SRN Peer](../SafeHaven 5 CLC to AWS/Add SRN Peer.md)
 
-11. [Add and Claim Storage on Production SRN in VMWare vCenter](Add-and-Claim-Storage-on-Production-SRN-vmware.md)
+11. [Add and Claim Storage on Production SRN in VMWare vCenter](Add-Claim-Storage-ProdSRN-manual.md)
 
-12. [Create Windows Protection Group,Install LRA and Start Replication](Create-Windows-PG-VMWare.md)
+12. [Create Windows Protection Group,Install LRA and Start Replication](Create-Windows-PG-manual.md)
 
     a. [Modify WAN Replication Rate](../SafeHaven 5 CLC to AWS/Modify WAN Replication Rate.md)
     
@@ -43,7 +43,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
     d. [Create Manual Checkpoint](../SafeHaven 5 CLC to AWS/Create Manual Checkpoint.md)
 
-13. [Create Linux Protection Group](Create-Linux-Protection-Group-vcenter.md)
+13. [Create Linux Protection Group](Create-Linux-PG-Production-manual.md)
 	
     a. [Install Scripts and Start Replication for Linux Protection Group](../SafeHaven 5 CLC to AWS/Install Scripts and Start Replication for Linux Protection Group.md)
     
@@ -59,4 +59,4 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
  
 16.  [Failover to AWS](../SafeHaven 5 CLC to AWS/Failover to AWS.md)
 
-17. [AWS Statistics](../SafeHaven 5 CLC to AWS/AWS Statistics.md)
+17.  [AWS Statistics](../SafeHaven 5 CLC to AWS/AWS Statistics.md)

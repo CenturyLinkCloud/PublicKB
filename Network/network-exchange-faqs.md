@@ -1,7 +1,7 @@
 {{{
   "title": "Network Exchange FAQs",
-  "date": "04-27-2017",
-  "author": "Rob Lesieur",
+  "date": "03-13-2018",
+  "author": "Marco Paolillo",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -10,7 +10,7 @@
 
 ### Product Overview
 
-[Network Exchange](https://www.ctl.io/network-exchange/) provides a secure, high speed, redundant, private network to connect compute islands together to support hybrid IT. It is the preferred alternative to using the Internet or IPSec VPN for customers needing to connect their CenturyLink Cloud (CLC) environments to other, non-CLC environments. Network Exchange is ideal for your hybrid environment and applications as well as storage and backups. Network Exchange includes ease of setup and management via the CLC Control Portal, coupled with CLC network automation, and pre-deployed network infrastructure. All with usage based, pay as you go billing.
+[Network Exchange](https://www.ctl.io/network-exchange/) provides a secure, high speed, redundant, private network to connect compute islands together to support hybrid IT. It is the preferred alternative to using the Internet or IPSec VPN for customers needing to connect their CenturyLink Cloud (CLC) environments to other, non-CLC environments. Network Exchange is ideal for your hybrid environment and applications as well as storage and backups. Network Exchange includes ease of setup and management via the CLC Control Portal, coupled with CLC network automation, and pre-deployed network infrastructure. 
 
 ### Frequently Asked questions
 

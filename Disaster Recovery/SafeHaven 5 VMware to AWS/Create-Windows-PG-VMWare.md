@@ -1,7 +1,7 @@
 {{{
-  "title": "Create Windows Protection Group, Install LRA and Start Replication",
-  "date": "12-27-2017",
-  "author": "Juan Aristizabal",
+  "title": "Create Windows Protection Group, Install LRA and Start Replication - VMWare",
+  "date": "01-15-2018",
+  "author": "Anshul Arora",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -64,7 +64,7 @@ Method 2. Manual LRA Installation and Manually Start Initial Replication
 ### Video Tutorial
 **Automatic LRA Installation**
 <p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Bqcwy0OvjGI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iQZiVhoynKg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </p>
 
 **NOTE**: Follow the steps below incase the user prefers to install the LRA and start the replication manually.
@@ -105,7 +105,7 @@ The initial replication of the production windows VM will start now. Close the c
 ### Video Tutorial
 **Manual LRA Installation**
 <p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Si5ATSx0fiI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1MHkq1Qu5p4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </p>  
 
-Once the Protection Group is created successfully, **Next** step is to [Modify WAN Replication Rate](Modify WAN Replication Rate.md) and [check replication status](Check Replication Status.md)
+Once the Protection Group is created successfully, **Next** step is to [Modify WAN Replication Rate](../SafeHaven 5 CLC to AWS/Modify WAN Replication Rate.md) and [check replication status](../SafeHaven 5 CLC to AWS/Check Replication Status.md)
