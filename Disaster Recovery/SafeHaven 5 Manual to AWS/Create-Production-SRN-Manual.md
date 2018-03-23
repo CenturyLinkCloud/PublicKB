@@ -51,7 +51,7 @@ This article assumes that the user has login access to the Manual Production Sit
 You have now completed the deployment of SRN in a Manual Site.
 
 ### Video Tutorial (SRN in DCC-F)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GN8EhOBatIE" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dMrEwtQm1I0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Video Tutorial (SRN in Hyper-V)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PmtNmA8hB58" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
