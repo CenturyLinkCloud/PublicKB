@@ -7,7 +7,7 @@
     "file_name": "Sample CloudFormation template to create VPC with VPN connectivity",
     "url": "../attachments/vpn-vpc-cloudforamtion.zip",
     "type": "application/zip"
-  },
+  }
   ],
   "contentIsHTML": false,
   "sticky": true
@@ -22,7 +22,7 @@
 * [VPN setup with an existing VPC](#vpn-setup-with-an-existing-vpc)
 * [VPN Configuration on CLC](#vpn-configuration-on-clc)
   * [Phase 1](#phase-1)
-  * [Phase 2](#phase-2)  
+  * [Phase 2](#phase-2)
 * [Verify AWS Route Tables ](#verify-aws-route-tables)
 * [Support](#support)
 
