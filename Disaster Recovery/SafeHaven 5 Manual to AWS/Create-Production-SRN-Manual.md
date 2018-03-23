@@ -56,4 +56,4 @@ You have now completed the deployment of SRN in a Manual Site.
 ### Video Tutorial (SRN in Hyper-V)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PmtNmA8hB58" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-**Next Step** is to [Create CMS in AWS]
+**Next Step** is to [Create CMS in AWS](../SafeHaven 5 CLC to AWS/Create CMS in AWS.md)
