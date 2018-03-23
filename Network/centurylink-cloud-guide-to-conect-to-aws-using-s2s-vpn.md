@@ -9,6 +9,8 @@
     "type": "application/zip"
   },
   ],
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 ### Table of contents
