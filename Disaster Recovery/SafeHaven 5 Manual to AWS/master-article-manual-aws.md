@@ -18,7 +18,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 3. [Setup AWS for SafeHaven-5 using CloudFormation](../SafeHaven 5 General/Setup AWS for SafeHaven-5 using CloudFormation.md)
 
-4. [Create Production SRN in vCenter](Create-Production-SRN-Manual.md)
+4. [Create Production SRN in DCC-F](Create-Production-SRN-Manual.md)
 
 5. [Create CMS in AWS](../SafeHaven 5 CLC to AWS/Create CMS in AWS.md)
 
