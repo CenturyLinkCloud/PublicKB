@@ -35,7 +35,7 @@ This guide will walk through the different scenarios of connecting to an AWS env
 
     ![aws-clc](../images/awsvpn/clc-aws.png)
 
-2. First is to obtain the public IP address of the CenturyLink Cloud VPN gateway, this can be obtained from CenturyLink Cloud portal under Network -> Site to Site VPN.  Detail is for the CenturyLink Cloud Site to Site VPN setup is available [here](../network/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md).
+2. First is to obtain the public IP address of the CenturyLink Cloud VPN gateway, this can be obtained from CenturyLink Cloud portal under Network -> Site to Site VPN.  Detail is for the CenturyLink Cloud Site to Site VPN setup is available [here](../Network/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md).
 
     ![aws-vpn](../images/awsvpn/clc-s2s.png)
 
