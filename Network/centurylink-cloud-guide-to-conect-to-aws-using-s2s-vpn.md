@@ -1,6 +1,6 @@
 {{{
   "title": "Create Site-to-site VPN between CLC and AWS",
-  "date": "03-06-2018",
+  "date": "03-23-2018",
   "author": "Gavin Lai",
   "attachments": [
   {
@@ -23,7 +23,7 @@
 * [VPN Configuration on CLC](#vpn-configuration-on-clc)
   * [Phase 1](#phase-1)
   * [Phase 2](#phase-2)  
-* [Verify AWS Route Tables ](#verify-aws-route-tables)
+* [Verify AWS Route Tables](#verify-aws-route-tables)
 * [Support](#support)
 
 ###  Overview
