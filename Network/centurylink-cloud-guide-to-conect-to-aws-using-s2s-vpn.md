@@ -25,7 +25,7 @@
 * [Support](#support)
 
 ###  Overview
-This guide will walk through the different scenarios of connecting to an AWS environment using Site to Site VPN, inlcuding connecting to new VPC, existing VPC through console and using a basic CloudFormation template.
+This guide will walk through the different scenarios of connecting to an AWS environment using Site to Site VPN, including connecting to new VPC, existing VPC through console and using a basic CloudFormation template.
 
 ### Create a Site to Site VPN in CenturyLink Cloud
 
