@@ -18,7 +18,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 3. [Setup AWS for SafeHaven-5 using CloudFormation](../SafeHaven 5 General/Setup AWS for SafeHaven-5 using CloudFormation.md)
 
-4. [Create Production SRN in DCC-F](Create-Production-SRN-Manual.md)
+4. [Create Production SRN in a Manual Site](Create-Production-SRN-Manual.md)
 
 5. [Create CMS in AWS](../SafeHaven 5 CLC to AWS/Create CMS in AWS.md)
 
@@ -32,7 +32,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 10. [Add SRN Peer](../SafeHaven 5 CLC to AWS/Add SRN Peer.md)
 
-11. [Add and Claim Storage on Production SRN in VMWare vCenter](Add-Claim-Storage-ProdSRN-manual.md)
+11. [Add and Claim Storage on Production SRN in a Manual Site](Add-Claim-Storage-ProdSRN-manual.md)
 
 12. [Create Windows Protection Group,Install LRA and Start Replication](Create-Windows-PG-manual.md)
 
