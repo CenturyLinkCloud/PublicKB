@@ -16,6 +16,7 @@
 * [Overview](#overview)
 * [Create a Site to Site VPN in CenturyLink Cloud](#create-a-site-to-site-vpn-in-centurylink-cloud)
 * [Create VPC](#create-vpc)
+* [Using CloudFormation Template](#using-cloudformation-template)
 * [VPN setup with an existing VPC](#vpn-setup-with-an-existing-vpn)
 * [VPN Configuration on CLC](#deployment)
   * [Phase 1](#phase-1)
@@ -110,7 +111,7 @@ Please take note of the following parameters for the CenturyLink Cloud side VPN 
   Lifetime : 3600 seconds
 ```  
 ### Using CloudFormation Template
-An Alternative way to create a VPC with VPN connection is using CloudFormation template, a sample is attached to this knowledge article.  CloudFormation templates can be deployed from AWS portal or Cloud Application Manager.  For detail on using AWS portal to deploy a CloudFormation template, please refer to this [article](//docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/GettingStarted.html).  When using [Cloud Application Manager](//www.ctl.io/cloud-application-manager/) for CloudFormation templates, please make sure to have the appropriated permissions in the AWS IAM policy, more detail can be found [here](../cloud-application-manager/deploying-anywhere/using-your-aws-account.md).  The process can be found in this [knowledge article](../cloud-application-manager/automating-deployments/template-box.md).
+An Alternative way to create a VPC with VPN connection is using CloudFormation template, a sample is attached to this knowledge article.  CloudFormation templates can be deployed from AWS portal or Cloud Application Manager.  For detail on using AWS portal to deploy a CloudFormation template, please refer to this [article](//docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/GettingStarted.html).  When using [Cloud Application Manager](//www.ctl.io/cloud-application-manager/) for CloudFormation templates, please make sure to have the appropriated permissions in the AWS IAM policy, more detail can be found [here](../Cloud Application Manager/Deploying Anywhere/using-your-aws-account.md).  The process can be found in this [knowledge article](../Cloud Application Manager/Automating Deployments/template-box.md).
 
 ### VPN setup with an existing VPC
 
