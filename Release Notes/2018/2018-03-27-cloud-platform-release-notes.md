@@ -38,8 +38,6 @@ CenturyLink Cloud has released a new load balancer service in our DE1, IL1 and N
 * Load balance on any port 23 and up
 * Configurable health checks
 
-A single instance hour of the LBaaS service will be priced at $0.025. In addition, each GB of data processed by the load balancing service will be priced at $0.008.
+These new features are now available in our CA3, DE1, DE3, GB3, IL1, NY1, SG1, UC1 and VA1 locations, with plans to enable additional locations. Be on the lookout for future announcements regarding service expansion. Please note, our Shared Load Balancer service will continue to be available in all other locations until they are LBaaS enabled. 
 
-These new features are now available in our CA3, DE1, DE3, GB3, IL1, NY1, SG1, UC1 and VA1 locations, with plans to enable additional locations. Be on the lookout for future announcements regarding service expansion.
-
-Please note, our Shared Load Balancer service will continue to be available in all other locations until they are LBaaS enabled. Shared Load Balancer customers in those data centers that do not have LBaaS will continue with pricing set at $0.04 per instance hour.
+For information on pricing for LBaaS and Shared Load Balancer, see [pricing](//www.ctl.io/pricing).
