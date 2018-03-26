@@ -27,4 +27,23 @@ Gather the following information for the servers you want to protect:
 
 Apart from this other information regarding Domain Controllers, DNS Servers, transaction rate of SQL Servers, etc. have to be gathered as it impacts the overall disaster recovery setup. CenturyLink's onboarding resource will provide guidance on this.
 
-**Next Step** is to [Determine Storage Requirements](Determine Storage Requirements.md)
+**Note** use the VM Dicovery tool enbeeded in the SafeHaven console to get the required information when the customer environment is VMware.
+
+1. Launch the SafeHaven console.
+2. Click on the VM Discovery button.
+
+Image1
+
+3. Provide the vCenter Server address or name and the credentials to access it. Then click on Next.
+
+Image2
+
+4. Select all the VMs in the inventory tree that you wish to protect with SafeHaven then click Next.
+
+Image3
+
+5. Review the information before you export it. Data like hostname and IP from the VMs is only available if VMware tools have been installed on the server.
+
+Image4
+
+6. Click on Export, then select the location for the .xls file.
