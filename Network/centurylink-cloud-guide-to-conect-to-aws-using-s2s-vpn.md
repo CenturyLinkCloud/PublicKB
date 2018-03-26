@@ -182,7 +182,9 @@ Once the CenturyLink VPN is created, check on the AWS portal and click on **VPN 
 3. Initiate “ping” or SSH from a CLC server to a server in the AWS network to validate the connectivity
 
 ### Custom configurations
-When considering redundant VPN connectivity to AWS from CLC, as some of the features required (like dead peer detection, DPD and routing configuration) are not managed through the Control Portal, the configuration can be done via a [service tas](//www.ctl.io/service-tasks/#vpn-tunnels-deployment).  
+Customers who require custom configuration can leverage our [service task](//www.ctl.io/service-tasks/#vpn-tunnels-deployment). Examples include:
+* Redundant VPN Tunnels
+* AES256 IPSEC Encryption
 
 ### Support
 
