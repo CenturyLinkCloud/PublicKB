@@ -35,4 +35,4 @@ Before enabling the periodic checkpoints please make sure that the replication i
 
 **Next Step** is to [Configure Email Alerts](Configure Email Alerts.md).
 
-**NOTE**: **At this point the user MUST setup SafeHaven email alerts to receive regular cluster email reports as well as reports incase there is an outage in the Production datacenter. This is an absolutely critical peice for a complete DR solution.**
+**NOTE**: **At this point the user MUST setup SafeHaven email alerts to receive regular cluster email reports as well as reports incase there is an outage in the Production datacenter. This is an absolutely critical piece for a complete DR solution.**
