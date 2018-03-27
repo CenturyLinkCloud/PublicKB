@@ -1,7 +1,7 @@
 {{{
   "title": "VPN Client Connection Troubleshooting",
-  "date": "4-3-2014",
-  "author": "jw@tier3.com",
+  "date": "3-21-2018",
+  "author": "john.mastin@ctl.io",
   "attachments": []
 }}}
 
@@ -81,6 +81,21 @@ Tue Nov 09 18:09:21 2010 us=283000 Socket Buffers: R=[8192-&gt;8192] S=[8192-&gt
 Tue Nov 09 18:09:21 2010 us=283000 UDPv4 link local: [undef]
 Tue Nov 09 18:09:21 2010 us=283000 UDPv4 link remote: 64.94.142.10:1249
 ```
+
+### I am getting an error stating 'ns-cert-type is DEPRECATED'
+
+If you are on Windows, you may see this error and not be able to connect using OpenVPN:
+```
+Thu Mar 15 14:04:32 2018 us=513966 WARNING: --ns-cert-type is DEPRECATED. Use --remote-cert-tls instead. 
+Thu Mar 15 14:04:32 2018 us=513966 OpenSSL: error:140AB18E:SSL routines:SSL_CTX_use_certificate:ca md too weak 
+Thu Mar 15 14:04:32 2018 us=513966 MANAGEMENT: Client disconnected 
+Thu Mar 15 14:04:32 2018 us=513966 Cannot load certificate file mycert.crt 
+Thu Mar 15 14:04:32 2018 us=513966 Exiting due to fatal error
+```
+There is a known issue with the latest OpenVPN client and your OpenVPN server.  Please download and use OpenVPN client 2.3.18-I602 from the OpenVPN downloads page: https://openvpn.net/index.php/open-source/downloads.html.
+
+If you are using Tunnelblick on macOS, you may see a pop-up warning you about ns-cert-type.  It is safe to click the OK button to dismiss the pop-up.  You should still be able to connect.
+
 
 ### I cannot access my server via ping or other methods
 
