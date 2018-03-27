@@ -10,6 +10,9 @@
 ### Article Overview
 This article explains how to setup SafeHaven at a high level and use SafeHaven for recovery with all the KB article links in order for Manual Site(DCC-F and Hyper-V) to AWS(DR) use case. To read more about a manual site click [here](Introduction to Manual Site.md)
 
+### Prerequisites
+* **Network and Ports requirements** - There are certain ports which need to be allowed in between the Production and DR vlans for SafeHaven to work. Please click [**here for Safehaven 5 Network and Ports requirements**](../SafeHaven 5 General/SafeHaven5-network-ports-requirements.md)
+
 ### SafeHaven Setup and Recovery Workflow
 
 1. [Gather Production Server Information](../SafeHaven 5 CLC to AWS/Gather Production Server Information.md)
