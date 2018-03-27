@@ -12,7 +12,7 @@ This article explains how to attach storage on a single SRN in DCC Foundation. A
 **NOTE**: For ease of management and troubleshooting it is recommended that the user creates one Storage Pool per Protection Group.
 
 ### Requirements
-1. Access to the Production SRN in DCC.
+1. Access to the Production SRN in DCC-Foundation.
 2. Access to the SafeHaven Cluster
 
 ### Assumptions
