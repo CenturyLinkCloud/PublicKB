@@ -20,8 +20,6 @@ This is a patch release for [SafeHaven 5.0.0](SafeHaven5.0.1-Release-Notes.md) w
 - Now supports the SRNs to be gracefully rebooted.
 
 ### Upgrade Path
-It is possible to upgrade a SafeHaven-5.0.0 cluster to SafeHaven-5.0.1.
-
 **NOTE**: Upgrade from SafeHaven-4 to SafeHaven-5 will be a fresh new installation.
 
 ### Download Links
