@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Free Trial Frequently Asked Questions",
-  "date": "02-25-2018",
+  "date": "03-13-2018",
   "author": "Anthony Hakim, Lyza Latham",
   "attachments": [],
   "related-products" : [],
@@ -24,7 +24,7 @@ Each free trial includes:
 * Self-service access to CenturyLink Cloud services, including cloud servers, block storage, load balancers, VLANs, and much more
 * [Developer Support](http://www.ctl.io/support/) - this can be upgraded at anytime upon request. If you are still in your trial period, the expense will be covered by your trial credit.
 
-There are also some limits on rapid scale-up of resources, please contact [help@ctl.io](mailto:help@ctl.io) for more details.
+Limits of 6 CPU, 10 GB RAM, and 200 GB Storage. There are also some limits on rapid scale-up of resources, please contact [help@ctl.io](mailto:help@ctl.io) for more details.
 
 When your trial is exhausted, you will be billed on a monthly basis for consumption of services in your account, as defined by our [Pricing Catalog](https://www.ctl.io/pricing).
 

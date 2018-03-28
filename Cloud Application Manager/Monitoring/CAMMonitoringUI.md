@@ -51,5 +51,5 @@ The Monitoring Portal is intended to offer our customers visibility into the sta
 
 ### Managed OS Default Policies
 
-* The default monitoring policy for supported linux images can be found [here](CTLCloudMonitoringDefaultPolicy-Linux.md)
-* The default monitoring policy for supported Windows images can be found [here](CTLCloudMonitoringDefaultPolicy-Windows.md)
+* The default monitoring policy for supported linux images can be found [here](CAMMonitoringDefaultPolicy-Linux.md)
+* The default monitoring policy for supported Windows images can be found [here](CAMMonitoringDefaultPolicy-Windows.md)

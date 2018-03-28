@@ -100,7 +100,7 @@ All policies summarized in this document are the result of intensive consultatio
 * **Policy Name**: CTLCAMPolicy, ReadOnlyAccess
 * **Role Name**: CTLCAMRole
 * **Targeted groups/tools/users**: Cloud Application Manager, Monitoring Service
-* **Intent**: To permit Cloud Application Manager's application lifecycle management (ALM) capabilities and to enable [Monitoring](../Monitoring/CTLCloudMonitoringUI.md).
+* **Intent**: To permit Cloud Application Manager's application lifecycle management (ALM) capabilities and to enable [Monitoring](../Monitoring/CAMMonitoringUI.md).
 * **Change Requests**: [The standard CAM policy](../Deploying Anywhere/using-your-aws-account.md) is meant to be customizable. If you would like to alter the ALM capabilities of Cloud Application Manager, please submit a ticket describing the policy you wish to apply.
 * **Policy Summary**
 > * All the ability to manipulate resources as described [here](../Deploying Anywhere/using-your-aws-account.md)
@@ -108,7 +108,7 @@ All policies summarized in this document are the result of intensive consultatio
 > * Full control of typical autoscaling/Cloud Formation/RDS/S3 tasks
 > * Allows IAM user/policy creation, deletion, listing and modification.
 > * Allows core Cloud Application Manager functionality and delegation for Managed Services Anywhere assistance.
-> * Allows ReadOnlyAccess to enable the [Monitoring](../Monitoring/CTLCloudMonitoringUI.md) feature on Cloud Application Manager
+> * Allows ReadOnlyAccess to enable the [Monitoring](../Monitoring/CAMMonitoringUI.md) feature on Cloud Application Manager
 
 **CenturyLink Service Management Policy**
 * **Policy Name**: CTLServiceManagmentPolicy
