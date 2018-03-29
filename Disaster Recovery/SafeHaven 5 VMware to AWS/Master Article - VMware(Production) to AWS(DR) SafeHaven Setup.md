@@ -3,11 +3,15 @@
   "date": "12-27-2017",
   "author": "Mahima Kumar",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 ### Article Overview
 This article explains how to setup SafeHaven at a high level and use SafeHaven for recovery with all the KB article links in order for VMware(Production) to AWS(DR) use case.
+
+### Prerequisites
+* **Network and Ports requirements** - There are certain ports which need to be allowed in between the Production and DR vlans for SafeHaven to work. Please click [**here for Safehaven 5 Network and Ports requirements**](../SafeHaven 5 General/SafeHaven-5.0-Network and Port Requirements.md)
 
 ### SafeHaven Setup and Recovery Workflow
 

@@ -1,7 +1,7 @@
 {{{
   "title": "Network Exchange CenturyLink Cloud Endpoint Guide",
   "date": "03-28-2018",
-  "author": "Rob Lesieur",
+  "author": "Marco Paolillo",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -16,6 +16,7 @@ To create a dedicated virtual routing table (Dedicated VR), the VR will need to 
 * The desired CenturyLink Cloud must be supported within Network Exchange. See the [Network Exchange Availability Matrix and Configuration Guide](https://www.ctl.io/knowledge-base/network/network-exchange-connectivity-matrix-configuration-guide/)
  for supported data centers.
 
+
 ### CLC Endpoint Capabilities
 
 * Up to 10Gb/s of shared bandwidth to and from CenturyLink Cloud. Network performance is offered as “best effort”. 
@@ -29,4 +30,5 @@ To create a dedicated virtual routing table (Dedicated VR), the VR will need to 
 * Currently, an End User may only add the CenturyLink Cloud endpoint(s) present in the same metropolitan area as the serving instance of Network Exchange. Where more than one CLC endpoint is served, all may be included in a given Exchange. See the [Network Exchange Availability Matrix and Configuration Guide](https://www.ctl.io/knowledge-base/network/network-exchange-connectivity-matrix-configuration-guide/) for available endpoints per metro area.
 * A CLC service ticket is not required to add or delete a CenturyLink Cloud endpoint.
 * For additional information regarding the Network Exchange architecture and use cases, please consult the [Network Exchange Architecture and Technical Guide](https://cloudhelp.ctl.io/knowledge-base/network-exchange-technical-guide/)
+
 
