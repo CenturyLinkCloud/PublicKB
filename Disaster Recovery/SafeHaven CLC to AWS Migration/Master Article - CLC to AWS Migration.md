@@ -1,6 +1,6 @@
 {{{
-  "title": "Configure Checkpoints",
-  "date": "12-27-2017",
+  "title": "Master Article - CLC to AWS Migration",
+  "date": "03-29-2018",
   "author": "Anshul Arora",
   "attachments": [],
   "contentIsHTML": false
