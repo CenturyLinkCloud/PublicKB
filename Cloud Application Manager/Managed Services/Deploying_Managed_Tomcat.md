@@ -73,7 +73,7 @@ Deploying Managed Tomcat to your provider with CenturyLink Cloud Application Man
   ![MgdTomcat1.PNG](../../images/cloud-application-manager/MgdTomcat1.PNG)
   ![MgdTomcat2.PNG](../../images/cloud-application-manager/MgdTomcat2.PNG)
 
-10.	Select Deploy
+3.	Select Deploy
 
 
 
