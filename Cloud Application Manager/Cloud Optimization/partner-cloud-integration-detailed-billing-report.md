@@ -38,6 +38,4 @@ For each line item, you will see to which provider name, provider alias, and acc
 You may select a line item and it will provide detail into all the services, by region, that contributed charges to that line item.
 
 
-In addition, if you select the account, those charges can be further broken out by Service and Region.
-
 ![Select an Account](../../images/cloud-application-manager/CAM_COA_DetailedBilling_3b.png)
