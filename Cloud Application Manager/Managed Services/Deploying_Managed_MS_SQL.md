@@ -73,6 +73,7 @@ Deploying Managed MS SQL to your provider with CenturyLink Cloud Application Man
 
   ![MgdMSSQL0.PNG](../../images/cloud-application-manager/MgdMSSQL0.PNG)
 The Sample Deployment policy is generated when the provider is made managed.  This policy's default configuration may be changed to suit the environment in which it is being installed.
+
 3.	Select the Configure (Gear) dropdown
 4.	Select “Clone”:
 5.	Modify the Cloned Deployment Policy with your details (Icon, Name, Description)
