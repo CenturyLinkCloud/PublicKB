@@ -77,7 +77,7 @@ Deploying Managed Apache to your provider with CenturyLink Cloud Application Man
   ![MgdApache1.PNG](../../images/cloud-application-manager/MgdApache1.PNG)
   ![MgdApache2.PNG](../../images/cloud-application-manager/MgdApache2.PNG)
 
-10.	Select Deploy
+3.	Select Deploy
 
 
 
