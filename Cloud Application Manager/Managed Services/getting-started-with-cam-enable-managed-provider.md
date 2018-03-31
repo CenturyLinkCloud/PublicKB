@@ -71,3 +71,7 @@ Upon completion of the Enable Managed Services process, you will observe new dep
 **Note:** Once the provider has been managed, all deployment policies configured on the provider will be toggled to Delegate Management On (as per provider configuration).
 
   ![MSA-Provider10.PNG](../../images/cloud-application-manager/MSA-Provider10.PNG)
+
+### Help
+
+Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md) for help. Or you may contact [support](http://managedservices.ctl.io) to request help.
