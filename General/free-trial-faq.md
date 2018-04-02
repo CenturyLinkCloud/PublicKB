@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Free Trial Frequently Asked Questions",
-  "date": "03-13-2018",
+  "date": "04-02-2018",
   "author": "Anthony Hakim, Lyza Latham",
   "attachments": [],
   "related-products" : [],
@@ -38,7 +38,7 @@ Yes. The trial credits will expire after 90 days.
 
 ### What if my trial account signup is unsuccessful?
 
-There are multiple reasons your account activation may have been unsuccessful. We have very stringent bot and fraud protection algorithms, third party services and business rules in place, all designed to protect existing customers with services residing on our infrastructure. These sometimes deliver a false positive, which may block a legitimate application. If you have trouble signing up, feel free to email [help@ctl.io](mailto:help@ctl.io) with a description of your problem. We'll do our best to resolve it for you quickly.
+There are multiple reasons your account activation may have been unsuccessful. We have very stringent bot and fraud protection algorithms, third party services and business rules in place, all designed to protect existing customers with services residing on our infrastructure. These sometimes deliver a false positive, which may block a legitimate application. If your address or credit card fails our third-party validation multiple times, you will not be permitted to submit the form again. If you have trouble signing up, feel free to email [help@ctl.io](mailto:help@ctl.io) with a description of your problem. We'll do our best to resolve it for you quickly.
 
 ### Who do I contact if my account is not immediately created, or if I have other questions?
 
