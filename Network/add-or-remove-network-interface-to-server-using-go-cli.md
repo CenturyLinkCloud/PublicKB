@@ -69,3 +69,5 @@ Customers may wish to implement additional network interfaces (NICs) on CenturyL
     ![Control secondary interface removed](../images/add-or-remove-network-interface-to-server-using-go-cli-03.png)
 
     ![Windows Adapters removed](../images/add-or-remove-network-interface-to-server-using-go-cli-04.png)
+    
+**Note:** You can use these API calls to move a Server from one VLAN to another, however you will need to open a support ticket ([help@ctl.io](mailto:help@ctl.io) or [support website](https://support.ctl.io/access/unauthenticated?return_to=https%3A%2F%2Ft3n.zendesk.com%2Ftickets%2Fnew)) to coordinate the swap of primary and secondary designations for the NICs in Control to allow for the deletion of the secondary NIC.  Default and static routes will need to be reviewed and possibly updated to match the new primary.

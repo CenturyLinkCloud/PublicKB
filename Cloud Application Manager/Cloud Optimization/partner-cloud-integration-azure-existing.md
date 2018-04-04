@@ -1,6 +1,6 @@
 {{{
   "title": "Partner Cloud: Getting Started With An Existing Azure Customer Account",
-  "date": "08-18-17",
+  "date": "03-31-18",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -15,7 +15,7 @@
 
 All of our customers are invited to use Cloud Optimization via Cloud Application Manager.
 
-For Azure, we are currently limited to serving billable customers who are not resellers (or customers of resellers) with offices within the United States. Also, the associated CenturyLink Cloud account cannot be a demo account or internal for CenturyLink employees. If you need special considerations for setting up an account, please email [cloudintegration@ctl.io](mailto:cloudintegration@ctl.io).
+For Azure, we are currently limited to serving billable customers who are not resellers (or customers of resellers) with offices within the United States the United Kingdom, and Canada. Also, the associated CenturyLink Cloud account cannot be a demo account or internal for CenturyLink employees. If you need special considerations for setting up an account, please email [cloudintegration@ctl.io](mailto:cloudintegration@ctl.io).
 
 ### Prerequisites
 
@@ -29,7 +29,7 @@ For Azure, we are currently limited to serving billable customers who are not re
 
 * An understanding of the features and benefits of [Partner Cloud Integration](partner-cloud-integration.md)
 
-* For each CenturyLink Cloud account integrated with Azure, both CenturyLink's and Microsoft's Terms and Conditions must be accepted. These will be presented to any user attempting to create a new "Azure Resource Manager" provider in Cloud Application Manager.
+* For each CenturyLink Cloud account integrated with Azure, both CenturyLink's and Microsoft's Terms and Conditions must be accepted. These will be presented to any user attempting to create a new "Microsoft Azure" provider in Cloud Application Manager.
 
 ### Important Information
 

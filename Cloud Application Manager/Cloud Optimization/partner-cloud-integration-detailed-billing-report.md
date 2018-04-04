@@ -1,6 +1,6 @@
 {{{
   "title": "Partner Cloud Integration: Detailed Billing Report",
-  "date": "12-30-2017",
+  "date": "03-30-2018",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -8,7 +8,7 @@
 
 ### Overview
 
-Optimizing Accounts allows a Cloud Application Manager user receive [consolidated bills](partner-cloud-integration-consolidated-billing.md). To get further detail of these invoices, users may review the billing history.
+Optimizing Accounts allows a Cloud Application Manager user to receive [consolidated bills](partner-cloud-integration-consolidated-billing.md). To get further details for these invoices, users may review the billing history.
 
 ### Audience
 
@@ -23,18 +23,19 @@ Cloud Application Manager organization administrator access.
 
 ### Important Information
 
-Starting January 1, 2018 data will be available according to the following methods for December 2017, going forward. November reconciliation SKUs (labled "Update to Previous Month...") which appear on the December invoice will not have any detail. If you do need detailed information for those prior months, please submit a support ticket.
+Starting January 1, 2018 data will be available according to the following methods for December 2017, going forward. November reconciliation SKUs (labeled "Update to Previous Month...") which appear on the December invoice will not have any detail. If you need detailed information for those prior months, please submit a support ticket.
 
-To gain access to the information, navigate to the billing history within Cloud Application Manager by switching you context to an organization. Then select "Billing", then "Usage History."
+To gain access to the information, navigate to the billing history within Cloud Application Manager by switching your context to an organization. Then select "Billing", then "Usage History."
 
 Select a month.
 
 ![Select a Month](../../images/cloud-application-manager/CAM_COA_DetailedBilling_1.png)
 
-By clicking the drop-down for the Optimization Line Item, it will explain how each partner account or subscription contributed to that SKU's total.
+For each line item, you will see to which provider name, provider alias, and account or subscription ID to which it is associated. This line item equates to lines items you would see on your CenturyLink invoice.
 
-![Select a Line Item](../../images/cloud-application-manager/CAM_COA_DetailedBilling_2.png)
+![Select a Line Item](../../images/cloud-application-manager/CAM_COA_DetailedBilling_2b.png)
 
-In addition, if you select the account, those charges can be further broken out by Service and Region.
+You may select a line item and it will provide detail into all the services, by region, that contributed charges to that line item.
 
-![Select an Account](../../images/cloud-application-manager/CAM_COA_DetailedBilling_3.png)
+
+![Select an Account](../../images/cloud-application-manager/CAM_COA_DetailedBilling_3b.png)

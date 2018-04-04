@@ -39,6 +39,18 @@ Also, if you are an Account Admin, you have the ability to see information for o
 ### Server Admin Credentials
 These credentials are different from your Control Portal user credentials. Server Admin credentials are used to gain access to a server you have created within your account. These credentials are typically set at the time when you create the server and can be changed from the server details page. **Note:** The password should be secure and strong, particularly if your server is accessible via the public Internet.
 
+Server Admin Credentials in the Control Portal should always be the same as what is on the server.  Out of sync passwords can impact opertions like:
+* On-Server Manipulation
+  * Disk add/delete/expand
+  * Network Interface add/modify
+  * Blueprint Execution 
+  * Script Execution
+  * Software package installation
+* Server Manipulation
+  * Cloning
+  * Template creation
+* Customer Care Engineer access upon customer request
+
 For more information on changing or retrieving server administrator passwords, please reference the following two Knowledge Base articles:
 * [How to Change a Server Administrator Password](../Servers/how-to-change-a-server-administrator-password.md)
 * [How to Retrieve a Root/Administrator Password](../Servers/how-to-retrieve-rootadministrator-password.md)
