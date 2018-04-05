@@ -78,7 +78,7 @@ If your users will be handling the process of departing, here is how to do it fr
 * https://console.aws.amazon.com/organizations/
 * Click "Leave Organization"
 
-![Leave  AWS Organization](../../images/cloud-application-manager/CAM_COA_LeaveOrg1.png)
+![Leave  AWS Organization](../../images/cloud-application-manager/CAM_COA_LeaveOrg1b.png)
 
 * If you are then accepting invitations to another organization, you may mimic the steps you performed when your account [became a member]((partner-cloud-integration-aws-existing.md) of the CenturyLink-governed AWS Organization after accepting Terms and Conditions.
 
