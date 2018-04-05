@@ -53,7 +53,7 @@ Departing AWS AccountIDs:
 AWS AccountIDs to which you currently do not have root access:
 Secure method of delivering root credentials to you:
 Who do you want to handle removing your member accounts from our AWS organization? (CenturyLink or your company):
-If your company, identify any AWS Users needing  permissions:
+If your company, identify any AWS Users needing permissions:
 Special Considerations:
 ```
 
