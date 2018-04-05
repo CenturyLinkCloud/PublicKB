@@ -88,8 +88,8 @@ If your users will be handling the process of departing, here is how to do it fr
 Data for standard customers accounts has been saved within the accounts. Two Simple Storage Service (S3) buckets have been created by CenturyLink.
 
  * You may keep the data, archive it, or delete it as you like.
-  * config-bucket-<accountID>
-  * ctlaudit-<accountID>
+>   * config-bucket-<accountID>
+>   * ctlaudit-<accountID>
 
 **Revoke CenturyLink Access**
 
