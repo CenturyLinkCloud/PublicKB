@@ -50,9 +50,10 @@ This article assumes that a SafeHaven cluster has already been created successfu
  9. Log into the Migrated Instance, and verify all the files.
  
  10. Once the migrated instance is verified, go back to Safehaven Console, right click the migrated protection group and click **Delete Protection Group**.    
- Make sure that **All coressponding Instances in AWS** option is unchecked.  
- You check **All coressponding AMI's and Snapshotsin AWS** if you wish to get rid of the AMIs and Snapshots related to the protection Group being Deleted.
+ Make sure that **All coressponding Instances in AWS** option is **unchecked**.  
+ You check **All coressponding AMI's and Snapshots in AWS** if you wish to get rid of the AMIs and Snapshots related to the protection Group being Deleted.
   
+  This successfully migrates a Protection Group to AWS Cloud.
 ### Video
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3zy2IbG5UBI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
