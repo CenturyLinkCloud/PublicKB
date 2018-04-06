@@ -1,33 +1,63 @@
 {{{
-  "title": "Master Article - CLC to AWS Migration",
-  "date": "03-29-2018",
+  "title": "Master Article - Migration to AWS",
+  "date": "04-06-2018",
   "author": "Anshul Arora",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 ## Article Overview
-This article explains how to Configure Checkpoints for a Protection Group.
+This article provides step by step links on how to migrate a VM from CLC datacenter on AWS datacenter
 
-### Requirements
-1. Access to the SafeHaven Console (GUI).
-2. Initial replication has been completed for the Protection Group.
+### Prerequisites
+* **Network and Ports requirements** - There are certain ports which need to be allowed in between the Production and DR vlans for SafeHaven to work. Please click [**here for Safehaven 5 Network and Ports requirements**](../SafeHaven 5 General/SafeHaven-5.0-Network and Port Requirements.md)
 
-### Assumptions
-This article assumes that a SafeHaven cluster has already been created successfully. Both production and recovery SRNs are registered and peered with storage pools claimed correctly. Initial replication has been completed for the Protection Group.
+### SafeHaven Setup and Recovery Workflow
 
-### Enable periodic Checkpoints
-Before enabling the periodic checkpoints please make sure that the replication is complete.
+1. [Gather Production Server Information](../SafeHaven 5 CLC to AWS/Gather Production Server Information.md)
 
-1. Click the protection group and navigate to the **Properties** tab.
-2. Click on **Configure Checkpoints** under **Checkpoints** section.
-3. Check the box in front of **Enable Periodic Checkpoints** and enter the **Checkpoint Interval** based on the RTO/RPO requirements.
-4. Check the box in front of **Enable Scheduled Checkpoints**. These checkpoints will be VSS checkpoints for Windows on a best-effort basis.
-5. Put the number of scheduled checkpoints, as well as total number of checkpoints/AMI's that need to be retained per protected server.
-6. Click **Finish**
-7. Wait for a few checkpoints to show up in the **Checkpoint History** tab before proceeding with any recovery operation like Test-Failover and Failover.
+2. [Determine Storage Requirements](../SafeHaven 5 CLC to AWS/Determine Storage Requirements.md)
 
-###Video Tutorial
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B8VxbbKT094" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+3. [Setup AWS for SafeHaven-5 using CloudFormation](../SafeHaven 5 General/Setup AWS for SafeHaven-5 using CloudFormation.md)
 
-**Next Step** is to [Test Failover to AWS]. User can also choose to [Create Manual Checkpoint]
+4. [Create Production SRN in CenturyLink Cloud](../SafeHaven 5 CLC to AWS/Create Production SRN in CenturyLink Cloud.md)
+
+5. [Create CMS in AWS](../SafeHaven 5 CLC to AWS/Create CMS in AWS.md)
+
+6. [Create DR SRN in AWS](../SafeHaven 5 CLC to AWS/Create DR SRN in AWS.md)
+
+7. [Create SafeHaven Cluster and Login to SafeHaven Console](../SafeHaven 5 CLC to AWS/Create SafeHaven Cluster and Login to SafeHaven Console.md)
+
+8. [Register Datacenters within SafeHaven Console][Register Datacenters within SafeHaven Console](../SafeHaven 5 CLC to AWS/Register Datacenters within a SafeHaven Console.md)
+
+9. [Register SRN within SafeHaven Console](../SafeHaven 5 CLC to AWS/Register SRN within SafeHaven Console.md)
+
+10. [Add SRN Peer](../SafeHaven CLC to AWS Migration/Add SRN Peer.md)
+
+11. [Add and Claim Storage on Production SRN in CenturyLink Cloud](../SafeHaven 5 CLC to AWS/Add and Claim Storage on Production SRN in CenturyLink Cloud.md)
+
+12. [Create Windows Protection Group,Install LRA and Start Replication](../SafeHaven 5 CLC to AWS/Create-Windows-Protection-Group-Install-LRA-and-Start-Replication.md)
+
+    a. [Modify WAN Replication Rate](../SafeHaven 5 CLC to AWS/Modify WAN Replication Rate.md)
+    
+    b. [Check Replication Status](../SafeHaven 5 CLC to AWS/Check Replication Status.md)
+    
+    c. [Configure Checkpoints](../SafeHaven 5 CLC to AWS/Configure Checkpoints.md)
+
+    d. [Create Manual Checkpoint](../SafeHaven 5 CLC to AWS/Create Manual Checkpoint.md)
+
+13. [Create Linux Protection Group](../SafeHaven 5 CLC to AWSCreate Linux Protection Group.md)
+	
+    a. [Install Scripts and Start Replication for Linux Protection Group](../SafeHaven 5 CLC to AWS/Install Scripts and Start Replication for Linux Protection Group.md)
+    
+    b. [Modify WAN Replication Rate](../SafeHaven 5 CLC to AWS/Modify WAN Replication Rate.md)
+    
+    c. [Configure Checkpoints](../SafeHaven 5 CLC to AWS/Configure Checkpoints.md)
+
+    d. [Create Manual Checkpoint](../SafeHaven 5 CLC to AWS/Create Manual Checkpoint.md) 
+
+14.  [Configure Email Alerts](../SafeHaven 5 CLC to AWS/Configure Email Alerts.md)
+    
+15.  [Migrate to AWS](../SafeHaven CLC to AWS Migration/Migrate-to-AWS.md)
+ 
