@@ -33,7 +33,7 @@ This article provides step by step links on how to migrate a VM from CLC datacen
 
 9. [Register SRN within SafeHaven Console](../SafeHaven 5 CLC to AWS/Register SRN within SafeHaven Console.md)
 
-10. [Add SRN Peer](../SafeHaven CLC to AWS Migration/Add SRN Peer.md)
+10. [Add SRN Peer](../SafeHaven 5 CLC to AWS/Add SRN Peer.md)
 
 11. [Add and Claim Storage on Production SRN in CenturyLink Cloud](../SafeHaven 5 CLC to AWS/Add and Claim Storage on Production SRN in CenturyLink Cloud.md)
 
@@ -47,7 +47,7 @@ This article provides step by step links on how to migrate a VM from CLC datacen
 
     d. [Create Manual Checkpoint](../SafeHaven 5 CLC to AWS/Create Manual Checkpoint.md)
 
-13. [Create Linux Protection Group](../SafeHaven 5 CLC to AWSCreate Linux Protection Group.md)
+13. [Create Linux Protection Group](../SafeHaven 5 CLC to AWS/Create Linux Protection Group.md)
 	
     a. [Install Scripts and Start Replication for Linux Protection Group](../SafeHaven 5 CLC to AWS/Install Scripts and Start Replication for Linux Protection Group.md)
     
@@ -59,5 +59,5 @@ This article provides step by step links on how to migrate a VM from CLC datacen
 
 14.  [Configure Email Alerts](../SafeHaven 5 CLC to AWS/Configure Email Alerts.md)
     
-15.  [Migrate to AWS](../SafeHaven CLC to AWS Migration/Migrate-to-AWS.md)
+15.  [Migrate to AWS](migrate-to-AWS.md)
  
