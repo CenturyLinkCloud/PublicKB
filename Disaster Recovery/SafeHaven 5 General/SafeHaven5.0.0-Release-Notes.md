@@ -1,3 +1,4 @@
+
 {{{
   "title": "SafeHaven 5.0.0 Release Notes",
   "date": "12-29-2017",
@@ -54,4 +55,5 @@ Please note that you can check the md5 checksum against the file named [MD5SUMS]
 
 ### Documentations
 
-[SafeHaven Inventory Sheet](../SafeHaven 5 Files/SafeHaven-Inventory-Sheet-1.xlsm)
+[SafeHaven Inventory Sheet](https://download.safehaven.ctl.io/SH-5-Docs/SafeHaven-Inventory-Sheet-1.xlsm)
+
