@@ -12,7 +12,7 @@
 - Release Date: March 27, 2018
 
 ### New Features and Enhancements
-This is a patch release for [SafeHaven 5.0.0](SafeHaven5.0.1-Release-Notes.md) with the following improvements:
+This is a patch release for [SafeHaven 5.0.0](SafeHaven5.0.0-Release-Notes.md) with the following improvements:
 - Ensured the proper vSphere library is installed in the [SafeHavenAppliance-5.0.1.ova](https://download.safehaven.ctl.io/SH-5.0.1/SafeHavenAppliance-5.0.1.ova)
 - An improved internal messaging implementation between SafeHaven nodes to meet even more demanding scalability and security requirements. 
 - Simplified communication  among SafeHaven nodes by not using UDP ports, making it easier to setup.
