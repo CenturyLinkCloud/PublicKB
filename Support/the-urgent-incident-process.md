@@ -24,7 +24,7 @@ What classifies as an urgent incident? The accepted definition at CenturyLink Cl
 
 ### The Stages of an Urgent Incident
 
-**Investigating** – The first stage of the process. As soon as it is determined an incident meets the urgent classification, the Incident Commander and CapCom engineer are paged for immediate engagement. The Incident Commander evaluates the situation and pages out the SME, if they are not already involved. The SME has 15 minutes to identify the issue and formulate a plan for restoration. If after 15 minutes they are unable to do so, another SME is brought in to assist. This 15 minute cycle continues until the cause of the incident is identified and a restoration path is agreed upon.
+**Investigating** – The first stage of the process. As soon as it's determined an incident meets the urgent classification, the Incident Commander and CapCom engineer are paged for immediate engagement. The Incident Commander evaluates the situation and pages out the SME, if they are not already involved. The SME has 15 minutes to identify the issue and formulate a plan for restoration. If after 15 minutes they are unable to do so, another SME is brought in to assist. This 15 minute cycle continues until the cause of the incident is identified and a restoration path is agreed upon.
 
 **Identified** – The cause of the incident is known, but the restoration plan is still being formulated. 
 

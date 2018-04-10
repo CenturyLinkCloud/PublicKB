@@ -1,13 +1,17 @@
 {{{
-  "title": "Master Article - CLC(Production) to AWS(DR) SafeHaven Setup",
+  "title": "Master Article - VMware(Production) to AWS(DR) SafeHaven Setup",
   "date": "12-27-2017",
   "author": "Mahima Kumar",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 ### Article Overview
 This article explains how to setup SafeHaven at a high level and use SafeHaven for recovery with all the KB article links in order for VMware(Production) to AWS(DR) use case.
+
+### Prerequisites
+* **Network and Ports requirements** - There are certain ports which need to be allowed in between the Production and DR vlans for SafeHaven to work. Please click [**here for Safehaven 5 Network and Ports requirements**](../SafeHaven 5 General/SafeHaven-5.0-Network and Port Requirements.md)
 
 ### SafeHaven Setup and Recovery Workflow
 
@@ -33,7 +37,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 11. [Add and Claim Storage on Production SRN in VMWare vCenter](Add-and-Claim-Storage-on-Production-SRN-vmware.md)
 
-12. [Create Windows Protection Group,Install LRA and Start Replication](../SafeHaven 5 CLC to AWS/Create-Windows-Protection-Group-Install-LRA-and-Start-Replication.md)
+12. [Create Windows Protection Group,Install LRA and Start Replication](Create-Windows-PG-VMWare.md)
 
     a. [Modify WAN Replication Rate](../SafeHaven 5 CLC to AWS/Modify WAN Replication Rate.md)
     
