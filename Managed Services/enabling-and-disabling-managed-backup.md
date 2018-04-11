@@ -16,7 +16,7 @@ The Managed Backup service can be configured on new or existing managed servers.
 
 2. From the Create Server page click the Managed Server toggle to turn it on and then the option for Managed Backup will appear. Click this toggle as well to enable Managed Backup on the new server. An updated [list of locations that support managed services can be found in our knowledge base.](../General/centuryLink-cloud-feature-availability-matrix.md)
 
-  ![toggle managed services via create server ux](../images/enabling-and-disabling-managed-backup-01.png)
+    ![toggle managed services via create server ux](../images/enabling-and-disabling-managed-backup-01.png)
 
 3. The list of operating systems will now be limited to only ones that are supported by both Managed Server and Managed Backup. Select the one you'd like to use for this server, [complete the remaining requested fields](../Servers/creating-a-new-enterprise-cloud-server.md) and click the "create server" button.
 
@@ -27,11 +27,11 @@ The Managed Backup service can be configured on new or existing managed servers.
 
 2. On the right side under the Server Info section, find the button for enabling or disabling Managed Backup.
 
-  ![existing server managed backup button](../images/enabling-and-disabling-managed-backup-02.png)
+    ![existing server managed backup button](../images/enabling-and-disabling-managed-backup-02.png)
 
 3. Selecting this button will slide down the Managed Backup configuration area where you may toggle Managed Backup on or off
 
-  ![toggle managed backup on or off](../images/enabling-and-disabling-managed-backup-03.png)
+    ![toggle managed backup on or off](../images/enabling-and-disabling-managed-backup-03.png)
 
 4. After setting the toggle, click "apply" and a Blueprint will run to configure the server as indicated.
 
@@ -40,7 +40,7 @@ The Managed Backup service can be configured on new or existing managed servers.
 ##### Error on New Server Creation - VA1
 As of Sept 10th, 2016, any customer that tries to create a new VM with Managed Backup enabled in the VA1 datacenter, on a network that was created after Sept 10th, 2016, will receive an error that looks like the below.
 
-  ![managed backup error](../images/managed backup - manual ticket error example.png)
+  ![managed backup error](../images/managed-backup-manual-ticket-error-example.png)
 
 Upon receiving this error, you will need to wait while we manually enable managed backup for the network you have chosen to create the new server. Updates on our progress will come via our ticketing system and this is a one time change that is needed for any new network that is created after Sept 10, 2016. Once this work is complete, you can go ahead and create servers on this network with managed backup enabled. Alternatively, you can go ahead and create a server on this network without managed backup. Then, after we are complete with this work, you can go ahead and add managed backup to this server.
 
