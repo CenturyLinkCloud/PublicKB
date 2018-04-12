@@ -1,6 +1,6 @@
 {{{
   "title": "Partner Cloud: Getting Started With A New Azure Customer Account",
-  "date": "03-03-17",
+  "date": "04-11-18",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -60,7 +60,7 @@ Videos of these steps can be found [here](https://www.ctl.io/guides/).
 
   ![Microsoft Azure Provider](../../images/cloud-application-manager/CINT_New_ARM1.3.png)
 
-5. Provide a name for the provider that identifies it for your purposes
+5. Write a name for the provider. The name you type will  become the name for your Subscription in Azure.
 
 6. Select the "Create a new Azure customer Subscription" option. (If the user cannot see this option, they are not an organization Administrator.)
 
