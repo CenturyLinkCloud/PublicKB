@@ -71,7 +71,7 @@ Deploying Managed MS SQL to your provider with CenturyLink Cloud Application Man
 1.	In Boxes, Deployment Policies, search for “SAMPLE Managed MS SQL”
 2.	Select SAMPLE Managed MS SQL Deployment Policy
 
-  ![MgdMSSQL0.PNG](../../images/cloud-application-manager/MgdMSSQL0.PNG)
+  ![MgdMSSQL0.png](../../images/cloud-application-manager/MgdMSSQL0.png)
 The Sample Deployment policy is generated when the provider is made managed.  This policy's default configuration may be changed to suit the environment in which it is being installed.
 
 3.	Select the Configure (Gear) dropdown
