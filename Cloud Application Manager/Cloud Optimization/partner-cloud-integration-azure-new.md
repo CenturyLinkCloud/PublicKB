@@ -74,6 +74,9 @@ Please expect at least a two-minute wait while our automated process performs th
 * Creates an Azure Customer account on your behalf
 * Creates a Microsoft Azure Subscription for that Customer account
 * Grants Cloud Application Manager the appropriate permissions to work on your behalf
+* Creates three deployment policies in your organization so that Azure deployments via ALM may occur with fewer work on your part.
+
+![Azure Deployment Policies ](../../images/cloud-application-manager/CAM_COA_AzureDeploymentPolicy.png)
 
 ### Contacting Cloud Application Manager Support
 
