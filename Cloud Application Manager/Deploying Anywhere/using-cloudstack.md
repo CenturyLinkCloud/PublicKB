@@ -83,7 +83,7 @@ In order for Cloud Application Manager to configure, deploy, and manage box conf
 
 ### Deploying in CloudStack
 
-When you’re ready to [launch an instance](./deploying-managing-instances.md) in CloudStack, you can define Linux or Windows deployment options in a deployment profile. Cloud Application Manager passes the compute offering, disk offering, and template options you provide in the profile as parameters to CloudStack, which then spins up the virtual machine.
+When you’re ready to [launch an instance](deploying-managing-instances.md) in CloudStack, you can define Linux or Windows deployment options in a deployment profile. Cloud Application Manager passes the compute offering, disk offering, and template options you provide in the profile as parameters to CloudStack, which then spins up the virtual machine.
 
 **Deployment**
 

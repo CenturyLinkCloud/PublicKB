@@ -49,9 +49,9 @@ Design your account hierarchy before you start adding users or provisioning reso
     * Load Balancers can be placed on the backoffice account/vlans, and the web servers in the Market account/vlan will need to use these LBs for their web app
     * The IT Intranet and Help Desk accounts/VLANs will be restricted to only access each other.
 
-![Account Structure]../images/acct-structure1.png)
+![Account Structure](../images/acct-structure1.png)
 
 
 ### For additional information please see the following articles:
-https://www.ctl.io/knowledge-base/accounts-&-users/account-hierarchy-user-network-and-firewall-policy-primer/
-https://www.ctl.io/knowledge-base/accounts-&-users/creating-a-sub-account/
+[Account Hierarchy User Network and Firewall Policy Primer](account-hierarchy-user-network-and-firewall-policy-primer.md)
+[Creating a Sub Account](creating-a-sub-account.md)

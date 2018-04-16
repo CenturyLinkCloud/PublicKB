@@ -27,7 +27,7 @@ CenturyLink Cloud customers
 ### Uploading Script Package
 When you create a new script package from the Scripts page, you have the option to upload via the Web Browser or via FTP. For smaller packages, it is easier to use the browser upload option. However, for packages that are larger than 4 MB, we recommend an FTP upload. This (and only this) is what the user(s) you created in the previous steps should be used for.
 
-1. From the Navigation Menu, select **Orchestration > FTP Users**. Then, click **New Script**.
+1. From the Navigation Menu, select **Orchestration > Scripts**. Then, click **New Script**.
    ![Upload New Script](../images/clc-ftp-new-script.png)
 
 2. When you click the **FTP Upload** option, you are given instructions on how to upload a package. It creates an FTP user for you, if you don't already have one.
@@ -43,4 +43,4 @@ When you create a new script package from the Scripts page, you have the option 
 ### Additional Information
 The FTP account may also be used for uploading OVF templates or VM images to import.
 
-See [Blueprints Script Package Management ](https://www.ctl.io/knowledge-base/blueprints/blueprints-script-and-software-package-management/) for more information on how to create and publish packages for upload.
+See [Blueprints Script Package Management](../Blueprints/blueprints-script-and-software-package-management.md) for more information on how to create and publish packages for upload.

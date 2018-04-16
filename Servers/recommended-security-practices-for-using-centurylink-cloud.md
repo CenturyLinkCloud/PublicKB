@@ -19,7 +19,7 @@ Failure to properly secure systems and applications that are exposed to the publ
 None.
 
 ### Detailed Steps
-1. Do not open SSH (port 22) or RDP (port 3389) to the public network. Customers wishing to manage their servers over SSH and RDP should use the provided software-based VPN or other private connection option such as Direct Connect, IPSec VPN, etc. More information about the VPN can be found in our knowledge base [here](https://www.ctl.io/knowledge-base/network/how-to-configure-client-vpn/).
+1. Do not open SSH (port 22) or RDP (port 3389) to the public network. Customers wishing to manage their servers over SSH and RDP should use the provided software-based VPN or other private connection option such as Direct Connect, IPSec VPN, etc. More information about the VPN can be found in our Knowledge Base [here](../Network/how-to-configure-client-vpn.md).
 2. Always set strong administrator passwords that are at least 12 characters long, include at least one lowercase letter, uppercase letter, number, and special character, and do not include dictionary words, even using common substitutions like "@" instead of "a".
 3. When opening an application to the public network such as HTTP or HTTPS, only open the specific port(s) needed, do not open all ports, or large ranges of ports.
 4. When building a new server or installing a new application onto a server, always run a patch update to install the latest operating system and application patches on the system.

@@ -24,7 +24,7 @@ It takes 90 minutes to go through this tutorial. By the end, you’d know how to
 You need the following:
 * Get an Cloud Application Manager account.
 * Fork a repository of this [GitHub project](https://github.com/ElasticBox/Easy-PHP-MySQL). You’ll use this to make some code changes and trigger a Jenkins build.
-* Build a [LAMP Stack box with a binding to a MySQL Database box](./lamp-stack-tutorial.md). Create and save a deployment profile for both boxes, but don’t deploy.
+* Build a [LAMP Stack box with a binding to a MySQL Database box](lamp-stack-tutorial.md). Create and save a deployment profile for both boxes, but don’t deploy.
 * Install Jenkins server and [set it up](../Integrating with Jenkins/jenkins-cloud-application-manager-setup.md).
 * Define a slave box configuration in Cloud Application Manager and [configure Jenkins to build using the slave](../Integrating with Jenkins/jenkins-cloud-application-manager-slaves.md).
 
@@ -120,9 +120,7 @@ ___
 
 The test-pullrequest job is now all set to build, test, and deploy any pull request you submit to your forked [GitHub project](https://github.com/ElasticBox/Easy-PHP-MySQL).
 
-**Step 1. Submit a pull request.**
-
-To do this, install GitHub for your desktop. Create a new branch based on your forked repo master and commit a change to index.php in this line:
+To submit a pull request, create a new branch based on your forked repo master and commit a change to index.php in this line:
 
 ```
 print "<HTML><BODY><H1>Showing the users of the sampledb that has been created in the RDS some seconds ago!</H1>\n";
@@ -140,15 +138,7 @@ Soon as you create the request, you should see a build trigger automatically.
 
 ![tutorial-jenkins-13.png](../../images/cloud-application-manager/tutorial-jenkins-13.png)
 
-**Step 2. Check your workspace for deployed instances.**
-
-Do you see the slave, LAMP Stack, and database instances online?
-
-![tutorial-jenkins-14.png](../../images/cloud-application-manager/tutorial-jenkins-14.png)
-
-Click the LAMP Stack instance to verify that your pull request changes are there.
-
-![tutorial-jenkins-15.png](../../images/cloud-application-manager/tutorial-jenkins-15.png)
+**Step 2. Check deployed instance.**
 
 ![tutorial-jenkins-16.png](../../images/cloud-application-manager/tutorial-jenkins-16.png)
 

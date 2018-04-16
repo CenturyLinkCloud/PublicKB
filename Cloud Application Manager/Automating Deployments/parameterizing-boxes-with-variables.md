@@ -7,7 +7,7 @@
 
 An application’s deployment lifecycle is parameterized in boxes using variables. Parameters denote dynamic data like database connection strings, endpoints, and application settings. Since you can’t know all possible values for the different environments and don’t want to hard-code sensitive information like passwords, it’s a good idea to define such data as variables.
 
-It works like this: define variables in box automation. Then refer to them in box [event scripts](./start-stop-and-upgrade-boxes.md) with Jinja templating [syntax](./syntax-for-variables.md). For each environment like development, staging, production, you can customize deployments by passing different values to the variables. Cloud Application Manager executes the event scripts replacing variables with the values you give at deploy time.
+It works like this: define variables in box automation. Then refer to them in box [event scripts](start-stop-and-upgrade-boxes.md) with Jinja templating [syntax](syntax-for-variables.md). For each environment like development, staging, production, you can customize deployments by passing different values to the variables. Cloud Application Manager executes the event scripts replacing variables with the values you give at deploy time.
 
 Boxes support eight variable types depending on the data type or usage like any programming language. They are box, binding, port, text, file, options, password, and number.
 
@@ -53,7 +53,7 @@ Same as the public setting except that bindings can’t access their values.
 
 Add a box type variable to consume the configuration of another box in your workspace. This is how you stack to achieve multi-tier applications. Child boxes within deploy on the same virtual infrastructure as the parent box.
 
-Stack as many child boxes as you like, as long as they match the parent box Windows or Linux type. To understand the order in which parent and child box scripts execute, see [Event Execution Order](./start-stop-and-upgrade-boxes.md).
+Stack as many child boxes as you like, as long as they match the parent box Windows or Linux type. To understand the order in which parent and child box scripts execute, see [Event Execution Order](start-stop-and-upgrade-boxes.md).
 
 ![parameterizingboxeswithvariables1.png](../../images/cloud-application-manager/parameterizingboxeswithvariables1.png)
 
@@ -89,7 +89,7 @@ Bindings provide component connectivity for mutli-tier applications, load balanc
 
 **Defining Bindings**
 
-In this section, we look at how to define bindings. To connect instances at deploy time using bindings, [see here](./managing-multi-tier-applications.md).
+In this section, we look at how to define bindings. To connect instances at deploy time using bindings, [see here](managing-multi-tier-applications.md).
 
 To define a binding, add a variable of type Binding. Then set its criteria in one of two ways:
 
@@ -166,7 +166,7 @@ More on file type variables:
 
 * Each file can be as large as 10 MB.
 * Use an event script on the box to download the file to the virtual machine when deploying.
-* Files can contain variable references, including box or binding type variables. But to act on them, you must execute the file with a [Config command](./cloud-application-manager-commands.md) in a box event script.
+* Files can contain variable references, including box or binding type variables. But to act on them, you must execute the file with a [Config command](cloud-application-manager-commands.md) in a box event script.
 
 ### Example
 

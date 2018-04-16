@@ -78,6 +78,8 @@ Configure a Jenkins slave in Cloud Application Manager. Later, you’ll call thi
 
    ```
 
+![eb-slaves3-1](../../images/cloud-application-manager/eb-slaves3-1.png)
+
 4. Create a deployment policy with infrastructure metadata to build the Jenkins slave environment.
    * IMPORTANT: Don’t deploy the Jenkins slave box! Just create the policy. Jenkins will use the policy to launch the slave on-demand via Cloud Application Manager to the cloud provider you choose.
 
@@ -87,13 +89,17 @@ Configure a Jenkins slave in Cloud Application Manager. Later, you’ll call thi
 
   ![eb-slaves4](../../images/cloud-application-manager/eb-slaves4.png)
 
-   Edit the policy. Make sure you select a Debian Ubuntu Linux image, select a firewall rule that allows traffic to the instance, and make the machine IP ephemeral to open it to Internet traffic. Save the policy.
+   Edit the policy.
+
+![eb-slaves4-1](../../images/cloud-application-manager/eb-slaves4-1.png)
+
+Make sure you select a Debian Ubuntu Linux image, select a firewall rule that allows traffic to the instance, and make the machine IP ephemeral to open it to Internet traffic. Save the policy.
 
    ![eb-slaves5](../../images/cloud-application-manager/eb-slaves5.png)
 
 ### Configure Jenkins to Build with Slaves Using Cloud Application Manager
 
-Run Jenkins jobs using slaves launched via Cloud Application Manager on any cloud. Be sure to [connect your Cloud Application Manager account](./jenkins-cloud-application-manager-setup.md) in Jenkins before setting up the slave.
+Run Jenkins jobs using slaves launched via Cloud Application Manager on any cloud. Be sure to [connect your Cloud Application Manager account](jenkins-cloud-application-manager-setup.md) in Jenkins before setting up the slave.
 
 **Add Jenkins Slaves**
 
@@ -103,7 +109,11 @@ Run Jenkins jobs using slaves launched via Cloud Application Manager on any clou
 
 2. Set up Jenkins to launch slaves using the slave box. Click **Add** for **Slave Configurations**.
 
-	![eb-slaves6](../../images/cloud-application-manager/eb-slaves6.png)
+![eb-slaves5-1](../../images/cloud-application-manager/eb-slaves5-1.png)
+
+**Note**: Previously, you have to install [ElasticBox plugin](https://plugins.jenkins.io/elasticbox) on your Jenkins server. You can find more information [here](https://plugins.jenkins.io/elasticbox).
+
+![eb-slaves6](../../images/cloud-application-manager/eb-slaves6.png)
 
 3. In this section, select the slave box from the Cloud Application Manager workspace. Optionally, tag the slave instance.
 
@@ -126,7 +136,7 @@ Run Jenkins jobs using slaves launched via Cloud Application Manager on any clou
 
 ### Enable Slaves to Connect through a Port
 
-When defining the [Jenkins server box](./jenkins-cloud-application-manager-setup.md), we opened port 55555 on the cloud provider network to allow slaves to connect to the Jenkins server. In these steps, we open this port (or another you chose) in Jenkins server.
+When defining the [Jenkins server box](jenkins-cloud-application-manager-setup.md), we opened port 55555 on the cloud provider network to allow slaves to connect to the Jenkins server. In these steps, we open this port (or another you chose) in Jenkins server.
 
 **Steps**
 
@@ -180,4 +190,4 @@ For issues related to API calls, send the request body along with details relate
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+* Windows: RDP into the instance to locate the log at /ProgramData/ElasticBox/Logs/elasticbox-agent.log

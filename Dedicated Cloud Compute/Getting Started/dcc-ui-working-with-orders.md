@@ -7,7 +7,7 @@
 "contentIsHTML": false
 }}}
 
-Once an [order is provisioned](./dcc-ui-provisioning-orders.md) in the new Dedicated Cloud Compute (DCC) UI, you can view, lock/unlock, edit, deploy, and delete the order. [Go here](./dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
+Once an [order is provisioned](dcc-ui-provisioning-orders.md) in the new Dedicated Cloud Compute (DCC) UI, you can view, lock/unlock, edit, deploy, and delete the order. [Go here](dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
 
 ### View an Order
 

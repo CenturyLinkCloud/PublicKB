@@ -56,7 +56,7 @@ Hosts Updater plug-in has not been installed. This gives access to the WordPress
 from the local git repository. As changes are made, they will be immediately live on the local site.
 
 When you are satisfied with your changes, you may commit them and push them back up to CenturyLink's git
-hosting. Please review the [knowledge base article on git cloning and pushing](wordPress-site-updates-with-git.md).
+hosting. Please review the [Knowledge Base article on git cloning and pushing](wordPress-site-updates-with-git.md).
 
 ### Note
 

@@ -7,7 +7,7 @@
 "contentIsHTML": false
 }}}
 
-The new Dedicated Cloud Compute (DCC) UI in the SavvisStation Portal contains information on clusters, hosts, VMs, images, and utilization metrics. [Go here](./dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
+The new Dedicated Cloud Compute (DCC) UI in the SavvisStation Portal contains information on clusters, hosts, VMs, images, and utilization metrics. [Go here](dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
 
 ### Clusters
 

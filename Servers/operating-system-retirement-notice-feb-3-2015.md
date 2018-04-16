@@ -15,7 +15,7 @@ In accordance with the OS template retirement policy, the following OS templates
 * CentOS 5 32-bit
 * CentOS 6 32-bit
 
-60 days from this notice (slated for early April), these templates will no longer be available in the Create Server experience.  The NOC team will also no longer troubleshoot OS-related tickets.
+60 days from this notice (slated for early April), these templates will no longer be available in the Create Server experience. Power operations, snapshot, and archive will still be available.
 
 120 days from the notice, Clone, Convert to Template, and Add Public IP will be disabled for affected VMs.  The Platform team will also no longer respond to OS-related tickets on affected VMs.
 

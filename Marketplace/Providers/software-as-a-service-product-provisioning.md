@@ -8,7 +8,7 @@
 
 ### Overview
 
-Software Providers that are classified as Software as a Service (SaaS) need to implement the steps outlined in the [API documentation](./software-as-a-service-saas-api.md).  
+Software Providers that are classified as Software as a Service (SaaS) need to implement the steps outlined in the [API documentation](software-as-a-service-saas-api.md).  
 
 The next step is to create the Product Provisioning within the Provider Portal for each respective product. This document will outline the steps that the software provider needs to complete in the Provider Portal to support the SaaS integration.
 
@@ -16,7 +16,7 @@ The next step is to create the Product Provisioning within the Provider Portal f
 
 1. Log into the [Provider Portal](https://provider-portal.ctl.io), using your CenturyLink Cloud credentials.
 
-2. If a product tile has yet to be created, you can do so by following the steps outlined in the [Getting Started Guide](./getting-started-guide-marketplace-ecosystem-provider-portal.md).
+2. If a product tile has yet to be created, you can do so by following the steps outlined in the [Getting Started Guide](getting-started-guide-marketplace-ecosystem-provider-portal.md).
 
 3. Once the product(s) has been created, the following will need to be completed for each product.
 

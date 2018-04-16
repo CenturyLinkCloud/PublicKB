@@ -10,7 +10,7 @@
 This Knowledge Base provides an overview for customers who are considering deploying an intra-data center cross connect. The labor for this deployment is a [service task](//www.ctl.io/service-tasks/), performed by platform engineers to specifications provided by the customer.
 
 ### Cross Connects Description and Benefits
-CenturyLink Cloud offers [multiple connectivity options](../Network/network-access-options-for-connecting-to-centurylink-clouds-platform.md) for its customers to leverage when deciding how they will connect to their resources deployed on CenturyLink Cloud’s platform (e.g., VPN tunnels, CNS, Cross Connects, etc). That said, as a point of clarity, this knowledge base article specifically pertains to the deployment of cross connects.
+CenturyLink Cloud offers [multiple connectivity options](../Network/network-access-options-for-connecting-to-centurylink-clouds-platform.md) for its customers to leverage when deciding how they will connect to their resources deployed on CenturyLink Cloud’s platform (e.g., VPN tunnels, CNS, Cross Connects, etc). That said, as a point of clarity, this Knowledge Base article specifically pertains to the deployment of cross connects.
 
 In summary, cross connects are directly connected redundant network circuits between two physically isolated organizations within a data center provider’s facility. Currently, CenturyLink Cloud has [presence within the data centers listed in our KB](../General/centurylink-cloud-data-center-locations.md). This direct connectivity allows for fast, low-latency secure connections – a perfect combination for enterprises who want to securely extend their network into the cloud. While this process may differ slightly in each data center, this article describes the general options and decisions that need to be considered.
 
@@ -24,7 +24,6 @@ The first decision a customer needs to determine is how they want to purchase th
 
   * Option 2 - The customer purchases the cross connect from CenturyLink Cloud:
     * Pros: CLC manages the implementation of the cross connect with the data center provider. The costs of the cross connect will come as part of the customer’s normal CLC monthly invoice.
-    * Cons: Cost of the cross connect is ~20% more expensive, since CenturyLink Cloud adds an administrative processing fee on top of our data center providers fees.
 
 Regardless, if a customer chooses to purchase the cross connect on their own, there still will be a fee that will include the following services:
   * Verify cross connect connectivity options with data center provider

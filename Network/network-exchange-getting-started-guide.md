@@ -12,7 +12,7 @@
 
 [Network Exchange](//www.ctl.io/network-exchange/) provides secure, reliable, automated interconnectivity between service networks offered by Network Exchange Providers, including managed hosting, colocation and cloud environments. A Network Exchange Provider is any service provider who has integrated their networking domain for interconnect provisioning by Network Exchange. A Network Exchange User is any credentialed user of Network Exchange who has provider-defined access privileges to two or more Network Exchange Providers. This is the party who ultimately consumes Network Exchange, regardless of the Provider with which they have a direct contractual relationship. An instance of Network Exchange is itself referred to as an Exchange. It is an interconnect between two or more Network Exchange Providers. A Network Exchange User may have one or more Exchanges. A connectivity point for a Network Exchange Provider for a given Exchange is referred to as an Exchange Port. For example, "Colocation" is a type of Exchange Port.
 
-Network Exchange is offered in a pay-as-you-go billing model in which the Network Exchange User pays only for the bandwidth they consume for billable Exchange Port types. Please refer to the Knowledge Base article [Network Exchange Billing Guide ](./network-exchange-billing-guide.md) for details on how billing is calculated.
+Network Exchange is offered in a pay-as-you-go billing model in which the Network Exchange User pays only for the bandwidth they consume for billable Exchange Port types. Please refer to the Knowledge Base article [Network Exchange Billing Guide ](network-exchange-billing-guide.md) for details on how billing is calculated.
 
 **Note:** All equipment and connectivity is redundant in Network Exchange, including cross connects to colocation and direct connect endpoint types. Non-redundant connectivity is not supported.
 
@@ -39,17 +39,17 @@ This integration comes in two common sub-types:
 ### Prerequisites
 
 * You must be logged in to perform the functions outlined in this guide.
-* The desired Exchange Port type should be verified as supported at the desired data center(s). Please refer to the Knowledge Base article [Network Exchange Availability Matrix](./network-exchange-connectivity-matrix-configuration-guide.md).
-* The desired Exchange Ports / data center combination(s) per Exchange should be validated as a supported configuration in the Knowledge Base article [Network Exchange Configuration Guide](./network-exchange-connectivity-matrix-configuration-guide.md) once Exchange Port availability has been validated, per the previous step.
+* The desired Exchange Port type should be verified as supported at the desired data center(s). Please refer to the Knowledge Base article [Network Exchange Availability Matrix](network-exchange-connectivity-matrix-configuration-guide.md).
+* The desired Exchange Ports / data center combination(s) per Exchange should be validated as a supported configuration in the Knowledge Base article [Network Exchange Configuration Guide](network-exchange-connectivity-matrix-configuration-guide.md) once Exchange Port availability has been validated, per the previous step.
 * Each Exchange Port type has certain prerequisites, capabilities and caveats that should be understood before setting up an Exchange. Please see the following Knowledge Base documents for details:
-	* [Network Exchange CenturyLink Cloud Exchange Ports](./network-exchange-clc-endpoint-guide.md)
-	* [Network Exchange Managed Hosting Exchange Ports](./network-exchange-clc-managed-hosting-endpoint-guide.md)
-	* [Network Exchange Colocation Exchange Ports](./network-exchange-clc-colocation-endpoint-guide.md)
-	* [Network Exchange Dedicated Access Exchange Ports](./network-exchange-clc-dedicated-access-endpoint-guide.md)
+	* [Network Exchange CenturyLink Cloud Exchange Ports](network-exchange-clc-endpoint-guide.md)
+	* [Network Exchange Managed Hosting Exchange Ports](network-exchange-clc-managed-hosting-endpoint-guide.md)
+	* [Network Exchange Colocation Exchange Ports](network-exchange-clc-colocation-endpoint-guide.md)
+	* [Network Exchange Dedicated Access Exchange Ports](network-exchange-clc-dedicated-access-endpoint-guide.md)
 
 ### Exceptions
 
-Network Exchange is designed to enable connectivity between any supported Exchange Port type in any supported data center. Under certain circumstances, not all supported Exchange Port types will be available at every supported data center. Any exceptions to this general rule will be noted in the Knowledge Base article [Network Exchange Configuration Guide](./network-exchange-connectivity-matrix-configuration-guide.md) in the addendum. Retirement of known exceptions will be published in the [CenturyLink Cloud release notes](//www.ctl.io/knowledge-base/release-notes/2017/#1).
+Network Exchange is designed to enable connectivity between any supported Exchange Port type in any supported data center. Under certain circumstances, not all supported Exchange Port types will be available at every supported data center. Any exceptions to this general rule will be noted in the Knowledge Base article [Network Exchange Configuration Guide](network-exchange-connectivity-matrix-configuration-guide.md) in the addendum. Retirement of known exceptions will be published in the [CenturyLink Cloud release notes](//www.ctl.io/knowledge-base/release-notes/2017/#1).
 
 ### Log-in to Network Exchange
 
@@ -93,7 +93,7 @@ On the Network Exchange **Select Feature 1** screen:
 
 2. Click **Next**.
 
-Follow the instructions for the selected endpoint type from the options, below. You may add endpoints in any order and in any combination per supported configurations. The desired Exchange Ports / data center combination(s) per Exchange should be validated as a supported configuration in the Knowledge Base article [Network Exchange Configuration Guide](./network-exchange-connectivity-matrix-configuration-guide.md).
+Follow the instructions for the selected endpoint type from the options, below. You may add endpoints in any order and in any combination per supported configurations. The desired Exchange Ports / data center combination(s) per Exchange should be validated as a supported configuration in the Knowledge Base article [Network Exchange Configuration Guide](network-exchange-connectivity-matrix-configuration-guide.md).
 
 ### Create a Cloud Endpoint
 
@@ -207,7 +207,7 @@ Select the **Provider** from the drop down list.
 
 **Notes:**
 
-* VLAN "A" and VLAN "B" are provided by a CenturyLink account manager and are based on the VLANs that are set up in the in the CenturyLink data center’s managed hosting network. Please see [Network Exchange Managed Hosting Exchange Ports](./network-exchange-clc-managed-hosting-endpoint-guide.md) for details on how to obtain these.
+* VLAN "A" and VLAN "B" are provided by a CenturyLink account manager and are based on the VLANs that are set up in the in the CenturyLink data center’s managed hosting network. Please see [Network Exchange Managed Hosting Exchange Ports](network-exchange-clc-managed-hosting-endpoint-guide.md) for details on how to obtain these.
 * You may cancel this operation by clicking the red X on the screen, or, by selecting the "Back" button.
 * If this is your first endpoint, you will be prompted to enter a second endpoint. If you have entered an endpoint previously, you will be navigated to the **Review Your Request** flyout. See instructions below on how to proceed.
 
@@ -268,12 +268,12 @@ Note: The values displayed will reflect user selections. The image provided is f
 
 **Q: How many Exchanges may an End User have?**
 
-**A:** There are currently no limitations on the number of Exchanges per End User. See the Knowledge Base article [Network Exchange Configuration Guide](./network-exchange-connectivity-matrix-configuration-guide.md) for more details.
+**A:** There are currently no limitations on the number of Exchanges per End User. See the Knowledge Base article [Network Exchange Configuration Guide](network-exchange-connectivity-matrix-configuration-guide.md) for more details.
 
 **Q: How many endpoints may be in an Exchange?**
 
 **A:** An Exchange may include a number of endpoints up to the maximum Exchange Port
-types available in a metro area served by Network Exchange. See the Knowledge Base article [Network Exchange Configuration Guide](./network-exchange-connectivity-matrix-configuration-guide.md) for more details.
+types available in a metro area served by Network Exchange. See the Knowledge Base article [Network Exchange Configuration Guide](network-exchange-connectivity-matrix-configuration-guide.md) for more details.
 
 **Q: How do I convert from Cloud Network Service to Network Exchange?**
 
