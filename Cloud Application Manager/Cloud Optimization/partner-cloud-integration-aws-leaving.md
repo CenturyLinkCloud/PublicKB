@@ -1,6 +1,6 @@
 {{{
   "title": "Partner Cloud: AWS Customers Leaving CenturyLink",
-  "date": "04-05-2018",
+  "date": "04-12-2018",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -57,7 +57,13 @@ If your company, identify any AWS Users needing permissions:
 Special Considerations:
 ```
 
-1. **How will you leave the CenturyLink-governed AWS Organization**
+1. **Prepare payment for accounts with expired credit cards and new accounts created with CenturyLink**
+
+AWS requires all accounts that are no longer part of an AWS Organization to have a valid payment method. You should prepare to have your company credit card on hand for your departure.  
+
+Since you received invoices through CenturyLink you were not required to have a credit card on accounts created with CenturyLink. All those accounts will not be able to leave CenturyLink until an administrator applies a credit card as the [payment method](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/edit-payment-method.html).
+
+2. **How will you leave the CenturyLink-governed AWS Organization**
 
 If you will be departing CenturyLink's organization to join another AWS organization, we recommend you have the other organization send invitations to you within fifteen days of your target date so that invitation will be queued up and ready when you depart. You can then handle everything at once. If that is not possible, then the most efficient way to schedule it is just to ask a CenturyLink admin to revoke your membership for all your accounts at once.
 
@@ -66,6 +72,8 @@ leaving the CenturyLink-governed AWS Organization will be handled by someone wit
 A CenturyLink administrator can remove membership from your org for all your accounts out at once.
 
 Obtaining the root account credentials must be done with your company's security in mind.  It is best if you coordinate that transition via phone to prevent security gaps. It will first require CenturyLink to remove Multi-Factor Authentication and change the email and password for the root account.
+
+
 
 ### Transition Activities
 
