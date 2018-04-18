@@ -68,16 +68,16 @@ Cloud Application Manager’s Managed Services Anywhere (MSA) allows customers t
 
 Deploying Managed Apache to your provider with CenturyLink Cloud Application Manager:
 
-1.	In Catalog, select the Managed Services Anywhere subcategory and then select the “CenturyLink Managed Apache httpd".  Deploy CenturyLink Managed Apache instance.
+1.  In Catalog, select the Managed Services Anywhere subcategory and then select the “CenturyLink Managed Apache httpd".  Deploy CenturyLink Managed Apache instance.
 
   ![MgdApache0.PNG](../../images/cloud-application-manager/MgdApache0.PNG)
 
-2.	Update the Details of the instance that is to be deployed, selecting the appropriate RHEL 6 or 7 Deployment Policy for your desired environment and the Features you would like enabled.
+2.  Update the Details of the instance that is to be deployed, selecting the appropriate RHEL 6 or 7 Deployment Policy for your desired environment and the Features you would like enabled.
 
   ![MgdApache1.PNG](../../images/cloud-application-manager/MgdApache1.PNG)
   ![MgdApache2.PNG](../../images/cloud-application-manager/MgdApache2.PNG)
 
-3.	Select Deploy
+3.  Select Deploy
 
 
 
