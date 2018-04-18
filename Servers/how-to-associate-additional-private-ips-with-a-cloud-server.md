@@ -18,22 +18,22 @@ If you experience issues or have questions with the execution of this blueprint 
 
 2. From the side menu bar, locate **Orchestration > Blueprint Library.** Select the data center your server is located in.
 
-  ![Data Center Menu](../images/additional-private-ips-1.png)
+    ![Data Center Menu](../images/additional-private-ips-1.png)
 
 3. Use the Search term 'ip address' to refine the library list and find the **Add Private IP Address** blueprint package.
 
-  ![search library](../images/additional-private-ips-2.png)
+    ![search library](../images/additional-private-ips-2.png)
 
 4. Select the blueprint package, and use the **deploy blueprint** button.
 
-  ![select and deploy package](../images/additional-private-ips-3.png)
+    ![select and deploy package](../images/additional-private-ips-3.png)
 
 5. Select the virtual machine you wish to add the additional IP address to from the server menu list, and proceed to **Next: Step 2**.
 
-  ![select server for ip address](../images/additional-private-ips-4.png)
+    ![select server for ip address](../images/additional-private-ips-4.png)
 
 6. Perform a final validation of the blueprint package and select **deploy blueprint**.
 
-  ![validate configuration](../images/additional-private-ips-5.png)
+    ![validate configuration](../images/additional-private-ips-5.png)
 
 7. Once the blueprint job completes validate the additional private ip address is present in the Control Portal & inside the Virtual Machine's Operating system.
