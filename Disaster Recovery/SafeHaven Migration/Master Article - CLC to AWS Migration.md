@@ -1,5 +1,5 @@
 {{{
-  "title": "Master Article - Migration to AWS",
+  "title": "Master Article - Migration from CLC to AWS",
   "date": "04-06-2018",
   "author": "Anshul Arora",
   "attachments": [],
@@ -29,7 +29,7 @@ This article provides step by step links on how to migrate a VM from CLC datacen
 
 7. [Create SafeHaven Cluster and Login to SafeHaven Console](../SafeHaven 5 CLC to AWS/Create SafeHaven Cluster and Login to SafeHaven Console.md)
 
-8. [Register Datacenters within SafeHaven Console][Register Datacenters within SafeHaven Console](../SafeHaven 5 CLC to AWS/Register Datacenters within a SafeHaven Console.md)
+8. [Register Datacenters within SafeHaven Console](../SafeHaven 5 CLC to AWS/Register Datacenters within a SafeHaven Console.md)
 
 9. [Register SRN within SafeHaven Console](../SafeHaven 5 CLC to AWS/Register SRN within SafeHaven Console.md)
 

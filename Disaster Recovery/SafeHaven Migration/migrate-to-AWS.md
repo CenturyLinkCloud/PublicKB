@@ -54,6 +54,9 @@ This article assumes that a SafeHaven cluster has already been created successfu
  You can check **All coressponding AMI's and Snapshots in AWS** option if you wish to get rid of the AMIs and Snapshots related to the protection Group being deleted.
   
   This successfully migrates a Protection Group to AWS Cloud.
+  
+#### Email Notification
+If you set up email notification already, after the migration job is completed, you will receive an email notifying your migration is either successful or failed.
 ### Video
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3zy2IbG5UBI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
