@@ -64,16 +64,16 @@ Cloud Application Manager’s Managed Services Anywhere (MSA) allows customers t
 
 Deploying Managed Tomcat to your provider with CenturyLink Cloud Application Manager:
 
-1.	In Catalog, select the Managed Services Anywhere subcategory and then select the “CenturyLink Managed Tomcat".  Deploy CenturyLink Managed Tomcat instance.
+1.  In Catalog, select the Managed Services Anywhere subcategory and then select the “CenturyLink Managed Tomcat".  Deploy CenturyLink Managed Tomcat instance.
 
   ![MgdTomcat0.PNG](../../images/cloud-application-manager/MgdTomcat0.PNG)
 
-2.	Update the Details of the instance that is to be deployed, selecting the appropriate RHEL 6 or 7 Deployment Policy for your desired environment and the Features you would like enabled.
+2.  Update the Details of the instance that is to be deployed, selecting the appropriate RHEL 6 or 7 Deployment Policy for your desired environment and the Features you would like enabled.
 
   ![MgdTomcat1.PNG](../../images/cloud-application-manager/MgdTomcat1.PNG)
   ![MgdTomcat2.PNG](../../images/cloud-application-manager/MgdTomcat2.PNG)
 
-3.	Select Deploy
+3.  Select Deploy
 
 
 
