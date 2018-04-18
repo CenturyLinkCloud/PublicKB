@@ -1,5 +1,5 @@
 {{{
-  "title": "Getting Started with Managed Applications in CAM",
+  "title": "Getting Started with CAM Integration Guide",
   "date": "12-18-2017",
   "author": "Keith Homco",
   "attachments": [],
