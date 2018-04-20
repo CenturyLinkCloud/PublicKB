@@ -631,6 +631,10 @@ clc server execute-package --server-ids CA2ABCDMYSQLU01 --package "package-id=fc
   ```
   clc server update-public-ip-address --server-name CA3ABCD2TSQL01 --public-ip xxx.xxx.xxx.xxx --ports port=8080,portTo=8085,protocol=tcp --source-restrictions "CIDR=xxx.xxx.xxx.xxx/32"
   ```
+  - Update a public IP port and define **multiple** IP restrictions
+  ```
+  clc server update-public-ip-address --server-name CA3CCVANET4701 --public-ip xxx.xxx.xxx.xxx --ports port=8080,portTo=8085,protocol=tcp --source-restrictions "CIDR=xxx.xxx.xxx.xxx/32" "CIDR=xxx.xxx.xxx.xxx/24"
+  ```
 
 **Adding a secondary network card on a server**
 Please refer to the [Add or Remove Network Interface to Server using Go CLI](../Network/add-or-remove-network-interface-to-server-using-go-cli.md)
