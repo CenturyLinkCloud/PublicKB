@@ -17,6 +17,15 @@ CenturyLink has created multiple opportunities for software vendors to integrate
 
 *The endpoint for the* ```/saas-usage/``` *is not published in this article for security reasons. Your organization will be provided documentation for the endpoint & expected JSON payload during onboarding*
 
+##### Dependencies 
+
+To build out the APIs, the SKUs must be created. The process for SKU creation is as follows:
+*	Provider submits pricing information to Marketplace team representative. 
+*	Marketplace team representative formats the SKUs and submits them to the CenturyLink Platform billing team to create the SKUs in staging. 
+*	Once created the Marketplace team representative will assign the SKUs to the providers ALIAS & associated products in the Provider Portal.
+* Provider can then use the SKUs to build out the API calls.
+
+
 ##### Deploy Software or Services
 
 The CenturyLink Cloud Marketplace will provide the user interface & collect the information that is required to deploy the software or services to an account on your platform. However, we do not collect Private Card Information (PCI) on your behalf.
@@ -154,5 +163,11 @@ An example JSON payload the ```/saas-usage/end``` API is provided below.
 * 200 - Termination notification received
 * 40x - Invalid Input - provisioningId, customerId, providerKey, productId, and productSkus required.
 * 50x - Server Side Error
+
+**Note**
+
+Return payload to CenturyLink upon completed registration  must return { “customerId”: “YOUR-CUSTOMERID-STRING” }  
+
+YOUR-CUSTOMERID-STRING can be a number, but you must pass it as a string.
 
 For any questions, please contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
