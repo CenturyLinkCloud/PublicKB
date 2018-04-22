@@ -20,9 +20,9 @@ CenturyLink has created multiple opportunities for software vendors to integrate
 ##### Dependencies 
 
 To build out the APIs, the SKUs must be created. The process for SKU creation is as follows:
-*	Provider submits pricing information to Marketplace team representative. 
-*	Marketplace team representative formats the SKUs and submits them to the CenturyLink Platform billing team to create the SKUs in staging. 
-*	Once created the Marketplace team representative will assign the SKUs to the providers ALIAS & associated products in the Provider Portal.
+* Provider submits pricing information to Marketplace team representative. 
+* Marketplace team representative formats the SKUs and submits them to the CenturyLink Platform billing team to create the SKUs in staging. 
+* Once created the Marketplace team representative will assign the SKUs to the provider's alias and associated products in the Provider Portal.
 * Provider can then use the SKUs to build out the API calls.
 
 
