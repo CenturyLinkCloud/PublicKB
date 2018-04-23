@@ -54,6 +54,18 @@ The status codes your API will need to return are:
 * 40x - Invalid inputs - The error message (body or string) will be displayed to the user
 * 50x - Server Side Error - A generic error message will be displayed to the user
 
+**Note**
+
+Return payload to CenturyLink upon completed registration must return the customerId: 
+
+```
+{ “customerId”: “YOUR-CUSTOMERID-STRING” }  
+```
+
+YOUR-CUSTOMERID-STRING can be a number, but you must pass it as a string.
+While customerId is the only required field, you can return any other information you wish.
+All returned data will be stored for future reference.
+
 ##### Delayed Billing Start
 
 Some providers require manual work before a customer begins use of the products.  To accommodate this, we have implemented delayed billing options, available for each defined SKU.  The options are to start billing immediately, at a specified time, or manually.  Most SKUs will start billing immediately (upon the customer purchase).
@@ -163,11 +175,5 @@ An example JSON payload the ```/saas-usage/end``` API is provided below.
 * 200 - Termination notification received
 * 40x - Invalid Input - provisioningId, customerId, providerKey, productId, and productSkus required.
 * 50x - Server Side Error
-
-**Note**
-
-Return payload to CenturyLink upon completed registration  must return { “customerId”: “YOUR-CUSTOMERID-STRING” }  
-
-YOUR-CUSTOMERID-STRING can be a number, but you must pass it as a string.
 
 For any questions, please contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
