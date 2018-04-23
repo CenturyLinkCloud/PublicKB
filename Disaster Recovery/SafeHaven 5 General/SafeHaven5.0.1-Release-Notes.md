@@ -34,4 +34,9 @@ This is a patch release for [SafeHaven 5.0.0](SafeHaven5.0.1-Release-Notes.md) w
 * [Linux SafeHaven Onboarding Scripts Downloads](https://download.safehaven.ctl.io/SH-5.0.1/safehaven_linux_onboarding_scripts-5.0.1.tar.gz)
 * [script to turn a Ubuntu-14 machine into a recovery proxy for Windows servers](https://download.safehaven.ctl.io/SH-5.0.1/makestub_for_windows.sh)
 
+### Documentations
+
+[SafeHaven Inventory Sheet](https://download.safehaven.ctl.io/SH-5-Docs/SafeHaven-Inventory-Sheet-1.xlsm)
+
+
 Please note that you can check the md5 checksum against the file named [MD5SUMS](https://download.safehaven.ctl.io/SH-5.0.1/MD5SUMS).
