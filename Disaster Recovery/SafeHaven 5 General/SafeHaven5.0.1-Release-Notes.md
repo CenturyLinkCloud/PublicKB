@@ -41,4 +41,4 @@ This is a patch release for [SafeHaven 5.0.0](SafeHaven5.0.1-Release-Notes.md) w
 
 Please note that you can check the md5 checksum against the file named [MD5SUMS](https://download.safehaven.ctl.io/SH-5.0.1/MD5SUMS).
 
-* To reboot SRNs protecting Linux Protection Groups please contact Safehaven team via help@ctl.io
+*To reboot SRNs protecting Linux Protection Groups please contact Safehaven team via help@ctl.io
