@@ -68,34 +68,33 @@ Cloud Application Manager’s Managed Services Anywhere (MSA) allows customers t
 ### Deploying Managed MS SQL
 
 Deploying Managed MS SQL to your provider with CenturyLink Cloud Application Manager:
-1.  In Boxes, Deployment Policies, search for “SAMPLE Managed MS SQL”
-2.  Select SAMPLE Managed MS SQL Deployment Policy
+1. In Boxes, Deployment Policies, search for “SAMPLE Managed MS SQL”
+2. Select SAMPLE Managed MS SQL Deployment Policy
 
   ![MgdMSSQL0.png](../../images/cloud-application-manager/MgdMSSQL0.png)
 The Sample Deployment policy is generated when the provider is made managed.  This policy's default configuration may be changed to suit the environment in which it is being installed.
 
-3.  Select the Configure (Gear) dropdown
-4.  Select “Clone”:
-5.  Modify the Cloned Deployment Policy with your details (Icon, Name, Description)
-6.  Select Save
+3. Select the Configure (Gear) dropdown
+4. Select “Clone”:
+5. Modify the Cloned Deployment Policy with your details (Icon, Name, Description)
+6. Select Save
 
   ![MgdMSSQL2.PNG](../../images/cloud-application-manager/MgdMSSQL2.PNG)
 
-7.  Edit your new Deployment Policy with your environment specific details (Resource, Placement and Network) and Save.
+7. Edit your new Deployment Policy with your environment specific details (Resource, Placement and Network) and Save.
 **NOTE:  The CenturyLink recommended Instance type is selected in the SAMPLE Managed MS SQL deployment.  Modification of this Instance type may result in significant performance issues.**
 **Disk configuration settings should remain as configured in SAMPLE Managed MS SQL deployment policy.**
 
   ![MgdMSSQL3.PNG](../../images/cloud-application-manager/MgdMSSQL3.PNG) ![MgdMSSQL4.PNG](../../images/cloud-application-manager/MgdMSSQL4.PNG)
 
-8.  In Catalog, select the Managed Services Anywhere subcategory and then select the “CenturyLink Managed SQL Server”.  Deploy CenturyLink Managed SQL Server.
+8. In Catalog, select the Managed Services Anywhere subcategory and then select the “CenturyLink Managed SQL Server”.  Deploy CenturyLink Managed SQL Server.
 
   ![MgdMSSQL5.PNG](../../images/cloud-application-manager/MgdMSSQL5.PNG)
 
-9.  Update the Details of the instance that is to be deployed, selecting the appropriate Deployment Policy for your desired environment.
+9. Update the Details of the instance that is to be deployed, selecting the appropriate Deployment Policy for your desired environment.
   ![MgdMSSQL6.PNG](../../images/cloud-application-manager/MgdMSSQL6.PNG)
 
-10.  Select Deploy
-
+10. Select Deploy
 
 
 ### Help
