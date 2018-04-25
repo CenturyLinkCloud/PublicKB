@@ -31,7 +31,7 @@ Any application or service instances hosted on AppFog will no longer be availabl
 
 We recommend migrating to a [Certified Cloud Foundry platform](https://www.cloudfoundry.org/certified-platforms/). Certified Cloud Foundry platforms use the same core Cloud Foundry software to ensure application and skill portability across providers.
 
-Two (2) popular Cloud Foundry platforms are listed below, but other options are listed on the [certified platforms list]((https://www.cloudfoundry.org/certified-platforms/).
+Two (2) popular Cloud Foundry platforms are listed below, but other options are listed on the [certified platforms list](https://www.cloudfoundry.org/certified-platforms/).
 
 * [Pivotal Application Service](https://run.pivotal.io/)
 * [IBM Bluemix](https://console.bluemix.net/registration/)
