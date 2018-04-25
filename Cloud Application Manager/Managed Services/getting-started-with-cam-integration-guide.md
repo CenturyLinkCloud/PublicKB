@@ -14,13 +14,13 @@ Before you start, sign up for a Cloud Application Manager account (account curre
 
 Then, follow these simple steps.
 
-* Configure a script box for your application
-* Create Monitoring policy
-* Request Managed Application script box (Linux or Windows) be shared to your workspace
-* Create script box to be Managed version of your application
-* Add Managed Application script box as variable
-* Pass necessary values to Managed Application script box
-* Publish your script box
+1. Configure a script box for your application
+2. Create Monitoring policy
+3. Request Managed Application script box (Linux or Windows) be shared to your workspace
+4. Create script box to be Managed version of your application
+5. Add Managed Application script box as variable
+6. Pass necessary values to Managed Application script box
+7. Publish your script box
 
 
 ### Configure Script Box for Your Application
