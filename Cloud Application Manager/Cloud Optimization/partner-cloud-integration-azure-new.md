@@ -1,6 +1,6 @@
 {{{
   "title": "Partner Cloud: Getting Started With A New Azure Customer Account",
-  "date": "03-03-17",
+  "date": "04-11-18",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -17,7 +17,7 @@ multiple Azure subscriptions provides your administrators the ability to easily 
 
 All of our customers are invited to use Cloud Optimization via Cloud Application Manager.
 
-For Azure, we are currently limited to serving billable customers who are not resellers (or customers of resellers) with offices within the United States. Also, the associated CenturyLink Cloud account cannot be a demo account or internal for CenturyLink employees. If you need special considerations for setting up an account, please email [cloudintegration@ctl.io](mailto:cloudintegration@ctl.io).
+For Azure, we are currently limited to serving billable customers who are not resellers (or customers of resellers) with offices within the United States the United Kingdom, and Canada. Also, the associated CenturyLink Cloud account cannot be a demo account or internal for CenturyLink employees. If you need special considerations for setting up an account, please email [cloudintegration@ctl.io](mailto:cloudintegration@ctl.io).
 
 ### Prerequisites
 
@@ -60,7 +60,7 @@ Videos of these steps can be found [here](https://www.ctl.io/guides/).
 
   ![Microsoft Azure Provider](../../images/cloud-application-manager/CINT_New_ARM1.3.png)
 
-5. Provide a name for the provider that identifies it for your purposes
+5. Write a name for the provider. The name you type will  become the name for your Subscription in Azure.
 
 6. Select the "Create a new Azure customer Subscription" option. (If the user cannot see this option, they are not an organization Administrator.)
 
@@ -74,6 +74,9 @@ Please expect at least a two-minute wait while our automated process performs th
 * Creates an Azure Customer account on your behalf
 * Creates a Microsoft Azure Subscription for that Customer account
 * Grants Cloud Application Manager the appropriate permissions to work on your behalf
+* Creates three deployment policies in your organization so that Azure deployments via ALM may occur with fewer work on your part.
+
+![Azure Deployment Policies ](../../images/cloud-application-manager/CAM_COA_AzureDeploymentPolicy.png)
 
 ### Contacting Cloud Application Manager Support
 

@@ -1,6 +1,6 @@
 {{{
   "title": "Partner Cloud Integration: AWS Platform-level Support",
-  "date": "08-21-2017",
+  "date": "03-30-2018",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -8,7 +8,7 @@
 
 ### Overview
 
-Partner Cloud Integration allows an Cloud Application Manager user to create Azure Customer Accounts for which CenturyLink will provide Platform-level support. The following is a description of what platform-level support is and how to use it.
+Partner Cloud Integration allows an Cloud Application Manager user to create AWS Customer Accounts for which CenturyLink will provide Platform-level support. The following is a description of what platform-level support is and how to use it.
 
 ### Audience
 
@@ -16,13 +16,13 @@ All of our customers are invited to use Cloud Optimization via Cloud Application
 
 ### Prerequisites
 
-Knowledge of Cloud Application Manager's [partner cloud integration](partner-cloud-integration.md) feature.
+Knowledge of Cloud Application Manager's [Cloud Optimization](partner-cloud-integration.md) feature.
 
-Knowledge of how to [get started with cloud-integrated Amazon Web Services](partner-cloud-integration-aws-new.md)
+Knowledge of how to [get started with Optimized Amazon Web Services](partner-cloud-integration-aws-new.md)
 
 ### Important Information
 
-For existing accounts moving under our care you may be required to change your accounts' Support plans. You must sign in with root account credentials (email address and password) to change your support plan. The cost of the support plan does not appear on your consolidated bill, but it is required so that CenturyLink may meet our Service Level Objectives and use our automated tools. In addition, Amazon Web Services requires it so that proper prioritization is given to any platform-level issues that may need to be addressed. Please review [get Started With an existing AWS Customer Account](partner-cloud-integration-aws-existing.md))
+For existing accounts moving under our care you may be required to change your accounts' Support plans. You must sign in with root account credentials (email address and password) to change your support plan to Enterprise Support. The cost of the support plan does not appear on your consolidated bill, but it is required so that CenturyLink may meet our Service Level Objectives and use our automated tools. In addition, Amazon Web Services requires it so that proper prioritization is given to any platform-level issues that may need to be addressed. Please review [get Started With an existing AWS Customer Account](partner-cloud-integration-aws-existing.md))
 
 CenturyLink recommends Customers utilize vendor-supported Operating Systems such as Microsoft Windows and RedHat Linux. Neither your company, CenturyLink nor our cloud partners can obtain vendor support on free Operating Systems.
 
@@ -46,14 +46,13 @@ Managed Services - which include Remote Administration, Monitoring and Remediati
 
   * AWS Console user creation and permissions
   * Issues regarding AWS Customer Account Sign-up and Set-up through Cloud Application Manager providers
-  * AWS Asset Configuration review AWS-Certified Operations Staff
+  * AWS Asset Configuration review by AWS-Certified Operations Staff
   * Knowledge Base and FAQs
   * AWS Service availability
   * AWS Billing
   * IAM Policies
-  * Tier 1 Technical Support
-  * Escalations to Amazon Web Services
-  * Amazon Web Services resource configuration review
+  * Tier 1-3 Technical Support
+  * Escalations to Amazon Web Services and integrated ticketing
   * AWS Management Console
   * Partner cloud month-to-date totals
   * Partner cloud estimates
