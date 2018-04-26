@@ -44,15 +44,15 @@ Once you have created an account your target (destination) Cloud Foundry platfor
 
 **General Migration Steps:**
 
-1) Connect to the AppFog region where your application and/or services are currently hosted (source). See the [Login to AppFog using the Cloud Foundry CLI](https://www.ctl.io/knowledge-base/appfog/login-using-cf-cli/) KB article for instructions.
+1. Connect to the AppFog region where your application and/or services are currently hosted (source). See the [Login to AppFog using the Cloud Foundry CLI](https://www.ctl.io/knowledge-base/appfog/login-using-cf-cli/) KB article for instructions.
 
-2) Identify any database services your app is using. From the CLI command line, use `cf services | grep <APP_NAME>` (where <APP_NAME> is the name of your application). You will need to migrate each database used by your application.
+2. Identify any database services your app is using. From the CLI command line, use `cf services | grep <APP_NAME>` (where <APP_NAME> is the name of your application). You will need to migrate each database used by your application.
 
-3) Recreate the database services on the target (destination) Cloud Foundry platform. Login to the target Cloud Foundry region (see the [Login Using CLI](https://www.ctl.io/knowledge-base/appfog/login-using-cf-cli/) KB article from Step 1).
+3. Recreate the database services on the target (destination) Cloud Foundry platform. Login to the target Cloud Foundry region (see the [Login Using CLI](https://www.ctl.io/knowledge-base/appfog/login-using-cf-cli/) KB article from Step 1).
 
-4) Migrate the data from the existing (source) AppFog database to the target (destination) database. The [Migrating a Database in Cloud Foundry](https://docs.cloudfoundry.org/devguide/services/migrate-db.html) guide is helpful.
+4. Migrate the data from the existing (source) AppFog database to the target (destination) database. The [Migrating a Database in Cloud Foundry](https://docs.cloudfoundry.org/devguide/services/migrate-db.html) guide is helpful.
 
-5) Deploy your app to the target (destination) Cloud Foundry region. If you have a `manifest.yml` file, simply run the `cf push` command. Refer to this article on [Using a Manifest File](http://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html). If you don't have a `manifest.yml` file, execute the following commands:
+5. Deploy your app to the target (destination) Cloud Foundry region. If you have a `manifest.yml` file, simply run the `cf push` command. Refer to this article on [Using a Manifest File](http://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html). If you don't have a `manifest.yml` file, execute the following commands:
 
   ```
   cf push <APP_NAME> --no-start
@@ -60,9 +60,9 @@ Once you have created an account your target (destination) Cloud Foundry platfor
   cf start <APP_NAME>
   ```
 
-6) After you have migrated your application(s) and database(s), you should test thoroughly to confirm they are working as expected.
+6. After you have migrated your application(s) and database(s), you should test thoroughly to confirm they are working as expected.
 
-7) Finally, after your testing is complete, redirect traffic from your original (source) app to your target (destination) app by updating your CNAME records and configure the "route" to your target app. This [Cloud Foundry article](https://docs.cloudfoundry.org/devguide/deploy-apps/routes-domains.html) is a good overview for configuring "routes".
+7. Finally, after your testing is complete, redirect traffic from your original (source) app to your target (destination) app by updating your CNAME records and configure the "route" to your target app. This [Cloud Foundry article](https://docs.cloudfoundry.org/devguide/deploy-apps/routes-domains.html) is a good overview for configuring "routes".
 
 _Note: `cf help` will list all available Cloud Foundry CLI commands. For more information, see the [Using Cloud Foundry CLI Tool](https://www.ctl.io/knowledge-base/appfog/using-cloud-foundry-cli-tool/) KB article._
 
