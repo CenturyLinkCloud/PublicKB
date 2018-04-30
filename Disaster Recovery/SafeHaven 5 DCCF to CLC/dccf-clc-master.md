@@ -1,5 +1,5 @@
 {{{
-  "title": "Master Article - Manual Site(Production) to AWS(DR) SafeHaven Setup",
+  "title": "Master Article - DCCF(Production) to CLC(DR) - SafeHaven Setup",
   "date": "04-30-2018",
   "author": "Anshul Arora",
   "attachments": [],
