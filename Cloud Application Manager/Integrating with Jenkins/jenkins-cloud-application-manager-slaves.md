@@ -50,7 +50,7 @@ Configure a Jenkins slave in Cloud Application Manager. Later, you’ll call thi
       apt-get -y install git
 
    # Download the Jenkins agent
-   wget $JENKINS_URL/jnlpJars/slave.jar -O slave.jar
+   wget {{ JENKINS_URL }}/jnlpJars/slave.jar -O slave.jar
    ```
 
    **Start**. This script starts the slave agent.
@@ -59,7 +59,7 @@ Configure a Jenkins slave in Cloud Application Manager. Later, you’ll call thi
    #!/bin/bash
 
    # Execute the agent and save the PID
-   nohup java -jar slave.jar $JNLP_SLAVE_OPTIONS > slave.log 2>&1 &
+   nohup java -jar slave.jar {{ JNLP_SLAVE_OPTIONS }} > slave.log 2>&1 &
 
    echo \$! > slave.pid
    ```
