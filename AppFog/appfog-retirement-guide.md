@@ -53,14 +53,14 @@ Once you have created an account your target (destination) Cloud Foundry platfor
 4. Migrate the data from the existing (source) AppFog database to the target (destination) database. The [Migrating a Database in Cloud Foundry](https://docs.cloudfoundry.org/devguide/services/migrate-db.html) guide is helpful.
 
 5. Deploy your app to the target (destination) Cloud Foundry region.
-  * If you have a `manifest.yml` file, simply run the `cf push` command. Refer to this article on [Using a Manifest File](http://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html).
-  * If you don't have a `manifest.yml` file, execute the following commands:
+   * If you have a `manifest.yml` file, simply run the `cf push` command. Refer to this article on [Using a Manifest File](http://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html).
+   * If you don't have a `manifest.yml` file, execute the following commands:
 
-  ```
-  cf push <APP_NAME> --no-start
-  cf bind <APP_NAME> <SERVICE_NAME>
-  cf start <APP_NAME>
-  ```
+   ```
+   cf push <APP_NAME> --no-start
+   cf bind <APP_NAME> <SERVICE_NAME>
+   cf start <APP_NAME>
+   ```
 
 6. After you have migrated your application(s) and database(s), you should test thoroughly to confirm they work as expected.
 
