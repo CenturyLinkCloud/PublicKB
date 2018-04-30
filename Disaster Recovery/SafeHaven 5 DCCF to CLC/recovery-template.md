@@ -22,3 +22,8 @@ This article explains how to create a template for recovery server in CLC.
 4. Right click the Network Adapter, and click **Properties**.
 5. Take a note of the **NIC Type** and **PCI slot number**.  
 ![NIC-PCI](../../images/SH5.0/NIC-PCI.png)
+
+### Create an instance with matching NIC and PCI.
+1. Login to Centurylink cloud portal. https://control.ctl.io/
+2. Click on the DR Datacenter.
+3. 
