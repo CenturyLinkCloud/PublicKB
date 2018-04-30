@@ -19,17 +19,15 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 2. [Determine Storage Requirements](../SafeHaven 5 CLC to AWS/Determine Storage Requirements.md)
 
-3. [Setup AWS for SafeHaven-5 using CloudFormation](../SafeHaven 5 General/Setup AWS for SafeHaven-5 using CloudFormation.md)
+3. [Create Production SRN in DCCF](../SafeHaven 5 Manual to AWS/Create-Production-SRN-Manual.md)
 
-4. [Create Production SRN in a Manual Site](Create-Production-SRN-Manual.md)
+5. [Create CMS in CLC](create-cms-clc.md)
 
-5. [Create CMS in AWS](../SafeHaven 5 CLC to AWS/Create CMS in AWS.md)
-
-6. [Create DR SRN in AWS](../SafeHaven 5 CLC to AWS/Create DR SRN in AWS.md)
+6. [Create DR SRN in CLC](create-dr-srn-clc.md)
 
 7. [Create SafeHaven Cluster and Login to SafeHaven Console](../SafeHaven 5 CLC to AWS/Create SafeHaven Cluster and Login to SafeHaven Console.md)
 
-8. [Register Datacenters within SafeHaven Console](Register-manual-SafeHaven-Console.md)
+8. [Register Datacenters within SafeHaven Console](register-dc-dccf-clc.md)
 
 9. [Register SRN within SafeHaven Console](../SafeHaven 5 CLC to AWS/Register SRN within SafeHaven Console.md)
 
