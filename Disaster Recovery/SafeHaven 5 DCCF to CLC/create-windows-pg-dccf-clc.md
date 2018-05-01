@@ -64,15 +64,24 @@ A Recovery Server template can make Protection group deployment easier if there 
      Make sure that the disk layout of the VM matches the production VM.
      Click **Next**.
   
-  8. Select a Protection type:
+  8. SafeHaven supports two types of protection types. Select a Protection type:
      **Local Replica** : 125% of total production VM's storage on the local SRN and 125% on the DR SRN.
      **Local Cache** : 10% of total production VM's storage on the local SRN and 125% on the DR SRN.   
-     Please [click here](../Overview/local-cache-vs-local-replica.md)More information on difference between local cache and local replica
+     Please [click here](../Overview/local-cache-vs-local-replica.md) for more information on difference between local cache and local replica
      
   9. If you selected **Local Replica**:  
      Under **Production Data Center**, Select a **primary storage pool** and **checkpoint storage pool**. It is completly fine to use the same pool for both primary storage and checkpoint storage.  
      Under **Recovery Data Center**, select **Primary storage pool** and **checkpoints storage pool**.  
      
      If you selected **Local Cache**.
+     Under **Production Data Center**, Select a **local cache storage pool**
+     Under **Recovery Data Center**, select **Primary storage pool** and **checkpoints storage pool**.  It is completly fine to use the same pool for both primary storage and checkpoint storage.  
+     Click **Next**
+     
+   9. Check **Automatically Install Windows LRA** if you want the SafeHaven Agent to be automatically installed on the production/source VM.   
+      **Note**:  it requires a **reboot of the production server**.  
+   
+      Leave the box **unchecked** if automatic installtion is not required.  
+      Click **Finish**.
      
      
