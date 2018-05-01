@@ -25,5 +25,33 @@ This article explains how to create a template for recovery server in CLC.
 
 ### Create an instance with matching NIC and PCI.
 1. Login to Centurylink cloud portal. https://control.ctl.io/
-2. Click on the DR Datacenter.
-3. 
+2. Click on the Datacenter that is required to be the DR Datacenter.
+3. Click **Create** button on the right to expand it.  
+  a. Click **Server**.  
+  b. Make sure that correct **Datacenter** and **Group** is selected.    
+     Select **Server Type** : **Standard**  
+     Select **Operating System** : **Ubuntu 14|64-bit**  
+     
+     **Note**: Ubuntu 14 VM is being used intentionally to protect a windows production server. The cost of an Ubuntu recovery server is very less compared to a Windows Recovery Server. Windows Recovery server should be used in case of **Migration**  
+     
+     Enter **Server Name**. Just 6 characters are allowed.  
+     Enter **admin/root password**
+     Give the server **1 CPUs** and **1 GB Memory**.  
+     **Note**: No need to add any additional storage at this point.  
+     Select a **Network**. This is the network where the Recovery Servers will be deployed.
+     Click **Create Server**.
+     **Note**: It may take a few minutes for the deployment to finish
+ 4. Once the VM has been created, send a request to **help@ctl.io** to change the NIC and PCI slot of the VM to match the Production Server. The request can also be submitted through **chat with support** button from Centurylink control portal.
+
+### Convert a VM into Template
+Once the NIC and PCI of the VM matches the production server, it can be converted into a template to be used multiple Protection Group Deployments.  
+**Note**: Do not convert a Production Server into a template. It can cause downtime.
+1. In Centurylink control portal, click on the VM that is to be converted into a template in DR Datacenter.
+2. Click **convert to template** button.
+   a. Make sure the **template location** is in DR Datacenter.
+   b. Enter the **admin or root password** of the VM that is being converted into a template.
+   c. Under **publish settings**, select **Private shared**.
+   d. Click **convert server to template**.
+ **Note**: It may take a few minutes to convert a VM into a template. All the templates are stored in **Templates** group.
+ 
+ 
