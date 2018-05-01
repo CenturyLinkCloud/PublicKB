@@ -79,9 +79,10 @@ A Recovery Server template can make Protection group deployment easier if there 
      Click **Next**
      
    9. Check **Automatically Install Windows LRA** if you want the SafeHaven Agent to be automatically installed on the production/source VM.   
-      **Note**:  it requires a **reboot of the production server**.  
+      
+      **Note**:  Automatic Installation requires a **reboot of the production server**.  It is advised to use this option only during maintenance window.
    
-      Leave the box **unchecked** if automatic installtion is not required.  
+      Leave the box **unchecked** if automatic installation is not required.  
       Click **Finish**.
      
      
