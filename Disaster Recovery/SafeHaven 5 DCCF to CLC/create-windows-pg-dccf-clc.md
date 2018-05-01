@@ -26,6 +26,17 @@ This article assumes that:
 ### Create a Recovery Server Template
 A Recovery Server template can make Protection group deployment easier if there are multiple production servers with same NIC and PCI slot. Please[ click here](recovery-template.md) for a KB article to create a recovery server template. 
 
+### Pre-deploy a Recovery Instance(Optional)
+It is possible to pre-deploy the recovery instance to speed up the Protection Group Deployment process.
+1. Login to Centurylink Cloud Portal https://control.ctl.io/
+2. Click on the DR Datacenter.
+3. Click on a group where the recovery instance should be deployed.
+4. Click on **create**, then select **server**.
+5. Deploy a VM using an Ubuntu-14 template that has same NIC and PCI slot number as the production server.
+   Please make sure that:
+   a. The VM has same CPU and RAM as the source VM.
+   b. The recovery vlan is selected to deploy the instance
+   
 ### Create a Windows Protection Group
 1. Right click on the **Production SRN** and select **Create Protection Group**.
 **NOTE**: Always start the Protection Group creation from the Production SRN.
@@ -43,19 +54,33 @@ A Recovery Server template can make Protection group deployment easier if there 
    
    **Note**: Make sure that disk layout matches the production VM.
    
- 5. Select **Automatically Deploy and Configure New recovery Proxy Servers**. Click **Next**.
- 
- 6. Select a **Parent Hardware Group**.    
-    Enter a **Stub Group Name** if required.  
-    Select **Linux** as the **OS base for all the Stub machines**  
-    Enter an **Alias**(maximum 6 characters) for the Recovery Server.  
-    Select a **Proxy Template**  
-**Note** : Make sure that the **Template** you select has the same **NIC and PCI slot number** as the production/source VM.  
+ 5. Select **Automatically Deploy and Configure New recovery Proxy Servers**. 
+    or
+    Select **Use pre-deployed proxy recovery server** , if the recovery server has already been deployed
     
-    Select the **Installed OS on Production Server**.  
-    In front of **"Connect all the server to"**, select the **DR vlan**. The Recovery instance will be deployed in this particular vlan.   
-    Enter the **administrator**(or root) password that you want to be set on the Recovery server.  
     Click **Next**.
+    
+ 6. If **Automatic deployment of the new recovery proxy instance** is selected:  
+ 
+    a. Select a **Parent Hardware Group**.    
+    b. Enter a **Stub Group Name** if required.  
+    c. Select **Linux** as the **OS base for all the Stub machines**  
+    d. Enter an **Alias**(maximum 6 characters) for the Recovery Server.  
+    e. Select a **Proxy Template**  
+**Note** : Make sure that the **Template** you select has the same **NIC and PCI slot number** as the production/source VM.  
+    f. Select the **Installed OS on Production Server**.  
+    g. In front of **"Connect all the server to"**, select the **DR vlan**. The Recovery instance will be deployed in this particular vlan.  
+    h. Enter the **administrator**(or root) password that you want to be set on the Recovery server.  
+       Click **Next**.  
+    
+    **OR**  
+      
+    If **pre-deployed proxy recovery server** is selected:    
+    
+    a. **Select** the Recovery server instance from the Recovery Datacenter.  
+       Click **Next**.  
+    b. Under **Mapping**, click on **select** and select the right recovery instance after clicking on down arrow.  
+       Click **Next**.  
     
   7. Enter a **Protection Group Name**.
      Click on the VM name. Click **Add Disk** on the right to the VM. 
@@ -83,6 +108,20 @@ A Recovery Server template can make Protection group deployment easier if there 
       **Note**:  Automatic Installation requires a **reboot of the production server**.  It is advised to use this option only during maintenance window.
    
       Leave the box **unchecked** if automatic installation is not required.  
-      Click **Finish**.
+      Click **Finish**.  
+     **Note**: This will Create a Protection group, Deploy a recovery instance and then configure it to boot using iSCSI target from the DR-SRN disk when ever Test-Failover/Failover is performed.  
+     **Note**: It may take some time for the PG to be deployed.  
+     
+   10. If **pre-deployed proxy recovery server** was selected while creating the PG, and the server has not been configured for iscsi boot, then:   
+       a. Right click the **Protection group** that was just created.  
+       b. Go to **Intallation** > **Install SafeHaven makestub**.  
+       c. Verify the Protectiongroup name , and click **Next**.  
+       d. Enter the root password of the VM.  
+       e. Check all the boxes.  
+       f. Click **Next**.
+       This will configure the recovery server to boot using iSCSI off the disks of the DR-SRN when a test-failover/failover operation is initiated.
+       
+       
+   
      
      
