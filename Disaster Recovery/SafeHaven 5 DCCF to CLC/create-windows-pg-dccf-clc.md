@@ -67,7 +67,7 @@ A Recovery Server template can make Protection group deployment easier if there 
   8. Select a Protection type:
      **Local Replica** : 125% of total production VM's storage on the local SRN and 125% on the DR SRN.
      **Local Cache** : 10% of total production VM's storage on the local SRN and 125% on the DR SRN.   
-     Please [click here](../Disaster Recovery/Overview/local-cache-vs-local-replica.md)More information on difference between local cache and local replica
+     Please [click here](../Overview/local-cache-vs-local-replica.md)More information on difference between local cache and local replica
      
   9. If you selected **Local Replica**:  
      Under **Production Data Center**, Select a **primary storage pool** and **checkpoint storage pool**. It is completly fine to use the same pool for both primary storage and checkpoint storage.  
