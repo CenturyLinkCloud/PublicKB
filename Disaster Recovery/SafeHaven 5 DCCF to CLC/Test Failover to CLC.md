@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-This article describes how to perform Test Failover to Century from a Protection Group level. Test Failovers can be performed multiple times by the user to verify data integrity as well as for their annual DR tests.
+This article describes how to perform Test Failover to CenturyLink Cloud from a Protection Group level. Test Failovers can be performed multiple times by the user to verify data integrity as well as for their annual DR tests.
 
 
 ### Requirements
@@ -28,9 +28,9 @@ While the Test Failover command is in effect, instances of the Protection Group 
 
 3. Wait till **Test Failover** and **Power On** complete, click on **Cancel** to close the wizard. If you click on **Finish**, the Test failover clone will be deleted.
 
-7. You can go to the **Active iSCSI Sessions** tab to modify the booting procedure, once the RDP port is open, you can log in to the recovery server to verdify the data consistancy.
+7. You can go to the **Active iSCSI Sessions** tab to monitor the booting procedure, once the RDP port is open, you can log in to the recovery server to verify the data consistency.
 
-8. To remove the Test Failover instance, right click the protection group and click **Delete Failover Clone**. This will shutdown the recovery server and delete the Test Failover clone.
+8. To remove the Test Failover instance, right-click the protection group and click **Delete Failover Clone**. This will shut down the recovery server and delete the Test Failover clone.
 
 The procedure is same for CLC/VMWare/Manual sites as source datacenters.
 
@@ -39,10 +39,7 @@ The procedure is same for CLC/VMWare/Manual sites as source datacenters.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rrBvCAI4HM4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </p>
 
-**NOTE:This step completes SafeHaven setup for a Protection Group.**
-
-The user may go through [AWS Statistics](AWS Statistics.md) for information on EBS Volumes(s), AMIs, AWS Snapshots and running AWS Instances(test failover/failover)
-
-In case of an acutal Disaster Recovery event when there is a Production Datacenter outage and the user cannot access Production Servers, as a **Next Step** the user may [Failover to AWS](Failover to AWS.md)  
+In case of an actual Disaster Recovery event when there is a Production Datacenter outage and the user cannot access Production Servers, as a **Next Step** the user may [Failover to AWS](Failover to CLC.md)  
 
 **NOTE: Failover can be a disruptive operation if not done properly**.
+
