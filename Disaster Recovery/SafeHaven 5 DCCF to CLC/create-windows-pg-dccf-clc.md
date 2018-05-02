@@ -43,24 +43,21 @@ It is possible to pre-deploy the recovery instance to speed up the Protection Gr
 
 2. Select the **Recovery SRN**, and click **Start Wizard**.  
 
-3. Enter the **Server Name**, **IP address**, and select **Windows** in OS type.
+3. Click **Add a Server**  
+   Enter the **Server Name**, **OS Family and OS Version**. 
+   Select **LRA** under Mirroring type.
+   Enter **IP address**.  
+   Enter the **CPU and Memory** so that it matches the production server
    Click **Add**. Click **Next**
    Click **Add** again if more than one VMs are needed in the protection group.
 
-4. Enter a name for the Protection Group. Check the **Edit** box.  
-   Expand the VM to edit disk layout. You can select an existing disk and change its size to match the production server.   
-   If the production VM has more than 1 disks, click **add disk** to add more disks.  
-   Click **Next**
-   
-   **Note**: Make sure that disk layout matches the production VM.
-   
- 5. Select **Automatically Deploy and Configure New recovery Proxy Servers**. 
+4. Select **Automatically Deploy and Configure New recovery Proxy Servers**. 
     or
-    Select **Use pre-deployed proxy recovery server** , if the recovery server has already been deployed
+   Select **Use pre-deployed proxy recovery server** , if the recovery server has already been deployed
     
-    Click **Next**.
+   Click **Next**.
     
- 6. If **Automatic deployment of the new recovery proxy instance** is selected:  
+5. If **Automatic deployment of the new recovery proxy instance** is selected:  
  
     a. Select a **Parent Hardware Group**.    
     b. Enter a **Stub Group Name** if required.  
@@ -82,19 +79,19 @@ It is possible to pre-deploy the recovery instance to speed up the Protection Gr
     b. Under **Mapping**, click on **select** and select the right recovery instance after clicking on down arrow.  
        Click **Next**.  
     
-  7. Enter a **Protection Group Name**.
+  6. Enter a **Protection Group Name**.
      Click on the VM name. Click **Add Disk** on the right to the VM. 
      Expand the VM to see the disks attached to it.
      Select a disk and click on **Resize Disk** to change the size of the disk.
      Make sure that the disk layout of the VM matches the production VM.
      Click **Next**.
   
-  8. SafeHaven supports two types of protection types. Select a Protection type:
+  7. SafeHaven supports two types of protection types. Select a Protection type:
      **Local Replica** : 125% of total production VM's storage on the local SRN and 125% on the DR SRN.
      **Local Cache** : 10% of total production VM's storage on the local SRN and 125% on the DR SRN.   
      Please [click here](../Overview/local-cache-vs-local-replica.md) for more information on difference between local cache and local replica
      
-  9. If you selected **Local Replica**:  
+  8. If you selected **Local Replica**:  
      Under **Production Data Center**, Select a **primary storage pool** and **checkpoint storage pool**. It is completly fine to use the same pool for both primary storage and checkpoint storage.  
      Under **Recovery Data Center**, select **Primary storage pool** and **checkpoints storage pool**.  
      
