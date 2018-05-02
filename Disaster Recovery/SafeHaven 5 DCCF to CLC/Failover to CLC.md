@@ -33,7 +33,7 @@ The procedure is same for CLC/VMWare/Manual sites as source datacenters.
 
 ### Video Tutorial
 <p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rrBvCAI4HM4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4RrPItZQXSU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </p>
 
 **NOTE: Failover can be a disruptive operation if not done properly**.
