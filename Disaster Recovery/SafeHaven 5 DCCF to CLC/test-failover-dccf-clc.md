@@ -39,7 +39,7 @@ The procedure is same for CLC/VMWare/Manual sites as source datacenters.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/W-55piXIArY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </p>
 
-In case of an actual Disaster Recovery event when there is a Production Datacenter outage and the user cannot access Production Servers, as a **Next Step** the user may [Failover to CLC](Failover to CLC.md)  
+In case of an actual Disaster Recovery event when there is a Production Datacenter outage and the user cannot access Production Servers, as a **Next Step** the user may [Failover to CLC](failover-dccf-clc.md)  
 
 **NOTE: Failover can be a disruptive operation if not done properly**.
 
