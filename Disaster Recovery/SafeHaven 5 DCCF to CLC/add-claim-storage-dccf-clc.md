@@ -7,8 +7,7 @@
 }}}
 
 ### Article Overview
-This article explains how to create a Linux Protection Group.
-
+This article explains how to add and claim storage to the SRNs in the production and DR side.
 ### Requirements
 Access to the Production SRN in CenturyLink Cloud and permissions to add raw disks to it.
 
