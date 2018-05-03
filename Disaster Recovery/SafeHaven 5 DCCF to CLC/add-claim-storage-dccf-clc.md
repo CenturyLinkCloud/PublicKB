@@ -1,5 +1,5 @@
 {{{
-  "title": "Create Linux Protection Group-DCCF to CLC",
+  "title": "Add and Claim Storage to SRNs-DCCF to CLC",
   "date": "05-03-2018",
   "author": "Anshul Arora",
   "attachments": [],
