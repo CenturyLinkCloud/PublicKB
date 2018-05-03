@@ -17,25 +17,23 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 1. [Gather Production Server Information](../SafeHaven 5 CLC to AWS/Gather Production Server Information.md)
 
-2. [Determine Storage Requirements](../SafeHaven 5 CLC to AWS/Determine Storage Requirements.md)
+2. [Create Production SRN in DCCF](../SafeHaven 5 Manual to AWS/Create-Production-SRN-Manual.md)
 
-3. [Create Production SRN in DCCF](../SafeHaven 5 Manual to AWS/Create-Production-SRN-Manual.md)
+3. [Create CMS in CLC](create-cms-clc.md)
 
-5. [Create CMS in CLC](create-cms-clc.md)
+4. [Create DR SRN in CLC](create-dr-srn-clc.md)
 
-6. [Create DR SRN in CLC](create-dr-srn-clc.md)
+5. [Create SafeHaven Cluster and Login to SafeHaven Console](../SafeHaven 5 CLC to AWS/Create SafeHaven Cluster and Login to SafeHaven Console.md)
 
-7. [Create SafeHaven Cluster and Login to SafeHaven Console](../SafeHaven 5 CLC to AWS/Create SafeHaven Cluster and Login to SafeHaven Console.md)
+6. [Register Datacenters within SafeHaven Console](register-dc-dccf-clc.md)
 
-8. [Register Datacenters within SafeHaven Console](register-dc-dccf-clc.md)
+7. [Register SRN within SafeHaven Console](../SafeHaven 5 CLC to AWS/Register SRN within SafeHaven Console.md)
 
-9. [Register SRN within SafeHaven Console](../SafeHaven 5 CLC to AWS/Register SRN within SafeHaven Console.md)
+8. [Add SRN Peer](../SafeHaven 5 CLC to AWS/Add SRN Peer.md)
 
-10. [Add SRN Peer](../SafeHaven 5 CLC to AWS/Add SRN Peer.md)
+9. [Add and Claim Storage on the SRNs](add-claim-storage-dccf-clc.md)
 
-11. [Add and Claim Storage on Production SRN in a Manual Site](Add-Claim-Storage-ProdSRN-manual.md)
-
-12. [Create Windows Protection Group,Install LRA and Start Replication](Create-Windows-PG-manual.md)
+10. [Create Windows Protection Group,Install LRA and Start Replication](create-windows-pg-dccf-clc.md)
 
     a. [Modify WAN Replication Rate](../SafeHaven 5 CLC to AWS/Modify WAN Replication Rate.md)
     
@@ -45,7 +43,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
     d. [Create Manual Checkpoint](../SafeHaven 5 CLC to AWS/Create Manual Checkpoint.md)
 
-13. [Create Linux Protection Group](Create-Linux-PG-Production-manual.md)
+11. [Create Linux Protection Group](create-linux-dccf-clc.md)
 	
     a. [Install Scripts and Start Replication for Linux Protection Group](../SafeHaven 5 CLC to AWS/Install Scripts and Start Replication for Linux Protection Group.md)
     
@@ -54,11 +52,12 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
     c. [Configure Checkpoints](../SafeHaven 5 CLC to AWS/Configure Checkpoints.md)
 
     d. [Create Manual Checkpoint](../SafeHaven 5 CLC to AWS/Create Manual Checkpoint.md) 
-
-14.  [Configure Email Alerts](../SafeHaven 5 CLC to AWS/Configure Email Alerts.md)
     
-15.  [Test Failover to AWS](../SafeHaven 5 CLC to AWS/Test Failover to AWS.md)
- 
-16.  [Failover to AWS](../SafeHaven 5 CLC to AWS/Failover to AWS.md)
+    e. [Configure Recovery Servrer]()
 
-17.  [AWS Statistics](../SafeHaven 5 CLC to AWS/AWS Statistics.md)
+12.  [Configure Email Alerts](../SafeHaven 5 CLC to AWS/Configure Email Alerts.md)
+    
+13.  [Test Failover to CLC](../SafeHaven 5 CLC to AWS/Test Failover to AWS.md)
+ 
+14.  [Failover to CLC](../SafeHaven 5 CLC to AWS/Failover to AWS.md)
+
