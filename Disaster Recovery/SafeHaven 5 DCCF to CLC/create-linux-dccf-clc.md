@@ -18,30 +18,6 @@ This article assumes that:
 1. A SafeHaven cluster has been created successfully.
 2. Both production and recovery SRNs have been registered and peered
 
-### Add and claim Storage on SRNs.
-**Adding Storage to the Production SRN in DCCF**
-1. Login to DCCF console.
-2. Click on the production SRN VM.
-3. Go to **Hardware** tab
-4. Under **Hard Disks**, click on **+Add** to add a new hard disk.
-5. Change the size of the disk . It should have **125% of total provisioned storage**, and **6GB per Protection group** for Failback Test Failover.  
-   For example, If Production VMs disk size is 16 GB, add a 26 GB(20 + 6) disk to the Production SRN.  
-
-**Adding Storage to the DR SRN in CLC**
-1. Login to Centurylink Cloud Portal.
-2. Click on the DR-SRN.
-3. Click on **Edit Storage**.
-4. Click on **Add storage**. Then select **raw disk**.
-5. Add same amount storage as was added on the Production SRN in DCCF in previous section.
-
-**Claim Storage in SafeHaven Console**
-1. Login to the SafeHaven Console.
-2. click on Production SRN.
-3. On the right side, click **Claim Storage**.
-4. Select the recently added disk, then select **Create a new Storage Pool for the Device**
-5. Enter a **Storage Pool Name**, and click **Claim**.
-6. Click on the DR SRN, and repeat steps 3 to 5.
-
 ### Create Recovery Server
 A recovery server boots off of disks of the DR SRN when a test failover/ failover operation is issued. 
 1. Go to Centurylink Cloud Portal.
