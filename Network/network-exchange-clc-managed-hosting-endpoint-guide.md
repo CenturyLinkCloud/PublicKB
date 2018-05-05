@@ -11,7 +11,7 @@
 ### Managed Hosting via HAN Endpoint Connectivity Prerequisites
 
 * End Users must establish a CenturyLink Cloud (CLC) master account and sub-accounts, the latter to create isolation between the networking resources of the business units of their enterprise. The Exchanges created under each sub-account will be logically isolated from one another.
-* The desired Managed Hosting site must be supported within Network Exchange. See the [Network Exchange Availability Matrix and Configuration Guide](Network/network-exchange-connectivity-matrix-configuration-guide.md) for supported data centers.
+* The desired Managed Hosting site must be supported within Network Exchange. See the [Network Exchange Availability Matrix and Configuration Guide](https://www.ctl.io/knowledge-base/network/network-exchange-connectivity-matrix-configuration-guide/) for supported data centers.
 * Two instances of Managed Hosting Network (HAN) VLAN Access are required and will be automatically ordered with this Endpoint.
 
 ### Managed Hosting via HAN Endpoint Capabilities
