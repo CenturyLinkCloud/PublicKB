@@ -11,12 +11,12 @@
 ### Managed Hosting via HAN Endpoint Connectivity Prerequisites
 
 * End Users must establish a CenturyLink Cloud (CLC) master account and sub-accounts, the latter to create isolation between the networking resources of the business units of their enterprise. The Exchanges created under each sub-account will be logically isolated from one another.
-* The desired Managed Hosting site must be supported within Network Exchange. See the [Network Exchange Availability Matrix and Configuration Guide](https://www.ctl.io/knowledge-base/network/network-exchange-connectivity-matrix-configuration-guide) for supported data centers.
+* The desired Managed Hosting site must be supported within Network Exchange. See the [Network Exchange Availability Matrix and Configuration Guide](/network/network-exchange-connectivity-matrix-configuration-guide.md) for supported data centers.
 * Two instances of Managed Hosting Network (HAN) VLAN Access are required and will be automatically ordered with this Endpoint.
 
 ### Managed Hosting via HAN Endpoint Capabilities
 
-* Rate limit choices of 1Gb/s and 10Gb/s through shared bandwidth to and from the [Managed Hosting Network (HAN)](https://www.ctl.io/architecture/cns-architecture/), which is a CenturyLink network infrastructure used to provide connectivity for Managed Server customers, NAS Customers, and other CenturyLink managed services. Network performance is offered as “best effort”.
+* Rate limit choices of 1Gb/s and 10Gb/s through shared bandwidth to and from the [Managed Hosting Network (HAN)](https://www.ctl.io/architecture/cns-architecture/), which is a CenturyLink network infrastructure used to provide connectivity for Managed Server customers, NAS Customers, and other CenturyLink managed services.
 * BGP is used for dynamically managing routes between Network Exchange and the End User’s network.
 * Near fully automated setup and tear down of connections between the Managed Hosting Network (HAN) and the dedicated ports on the terminating Network Exchange equipment. HAN requires additional configurations to be made outside of the Network Exchange portal.
 
