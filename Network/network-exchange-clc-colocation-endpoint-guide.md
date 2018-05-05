@@ -17,7 +17,8 @@
 
 * Choices of 1Gb/s and 10Gb/s dedicated connectivity between the End User’s equipment and Network Exchange equipment.
 * Options of a single line connection or a redundant connection (two physical connections) to increase gauranteed uptime.
-* Fully automated setup and tear down of connections to the End User’s dedicated ports on the terminating Network Exchange equipment.
+* For any existing CLC accounts that wish to use Network Exchange, it is necessary to migrate them to a Dedicated VR.  Having a dedicated virtual routing table allows each customer to have their own set of IPs’ from a cloud connectivity standpoint.  A Dedicated VR is also required for automation to work when creating connectivity to the cloud.  
+To create a dedicated virtual routing table (Dedicated VR), the VR will need to be created and all existing IP blocks the customer is using will need to converge to the new VR.  To initiate this process, create a ticket with the CenturyLink Cloud help desk.  
 * Routing Types of both BGP and Static are available.
 
 ### Notes
