@@ -69,8 +69,9 @@ Here is an example of a common policy that give access to some AWS services but 
         "route53domains:*",
         "s3:*",
         "sns:*",
-        "sts:AssumeRole",
-        "support:*"
+        "ce:*",
+        "support:*",
+        "sts:AssumeRole"
     ],
     "Sid": "Stmt1378777340000",
     "Resource": [
@@ -230,8 +231,12 @@ If you are not planning to use CloudFormation template boxes and you want to use
         "s3:PutBucketCORS",
         "s3:PutBucketPolicy",
         "s3:PutBucketTagging",
-        "sts:AssumeRole",
-        "support:*"
+        "ce:GetCostAndUsage",
+        "ce:GetReservationUtilization",
+        "ce:GetDimensionValues",
+        "ce:GetTags",
+        "support:*",
+        "sts:AssumeRole"        
     ],
     "Sid": "Stmt1378777340000",
     "Resource": [
