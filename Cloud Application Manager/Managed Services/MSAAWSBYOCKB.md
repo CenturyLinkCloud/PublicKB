@@ -8,7 +8,7 @@
 ### Content
 * [Overview](#Overview)
 * [AWS Configuration Requirements](#AWS\ Configuration\ Requirements)
-* [AWS Managed Services Anywhere IAM Policy](#AWS\ Managed\ \Services \Anywhere\ IAM\ Policy)
+* [AWS Managed Services Anywhere IAM Policy](#AWS\ Managed\ Services\ Anywhere\ IAM\ Policy)
 * [Supporting AWS Accounts in an Organization](Supporting\ AWS\ Accounts\ in\ an\ Organization)
 
 
