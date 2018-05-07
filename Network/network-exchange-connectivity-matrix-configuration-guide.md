@@ -7,7 +7,7 @@
   "contentIsHTML": false,
   "sticky": false
 }}}
-
+ 
 ### Availability Matrix
 
 The table, below, documents the metropolitan areas where Network Exchange is offered and the type and identity of Endpoints that are available there for inclusion into an Exchange. Please note any constraints in the following section.
