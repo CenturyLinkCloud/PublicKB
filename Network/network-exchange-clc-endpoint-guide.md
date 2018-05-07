@@ -1,6 +1,6 @@
 {{{
   "title": "Network Exchange CenturyLink Cloud Endpoint Guide",
-  "date": "05-01-2018",
+  "date": "05-07-2018",
   "author": "Jason Holland",
   "attachments": [],
   "related-products" : [],
@@ -13,7 +13,7 @@
 * End Users must establish a CenturyLink Cloud (CLC) master account and sub-accounts, the latter to create isolation between the networking resources of the business units of their enterprise. The Exchanges created under each sub-account will be logically isolated from one another.
 * For any existing CLC accounts that wish to use Network Exchange, it is necessary to migrate them to a Dedicated VR.  Having a dedicated virtual routing table allows each customer to have their own set of IPs’ from a cloud connectivity standpoint.  A Dedicated VR is also required for automation to work when creating connectivity to the cloud.  
 To create a dedicated virtual routing table (Dedicated VR), the VR will need to be created and all existing IP blocks the customer is using will need to converge to the new VR.  To initiate this process, create a ticket with the CenturyLink Cloud help desk.  
-* The desired CenturyLink Cloud must be supported within Network Exchange. See the *[Network Exchange Availability Matrix and Configuration Guide](network-exchange-clc-endpoint-guide.md)* for supported data centers.
+* The desired CenturyLink Cloud must be supported within Network Exchange. See the *[Network Exchange Availability Matrix and Configuration Guide](network-exchange-connectivity-matrix-configuration-guide.md)* for supported data centers.
 
 ### CLC Endpoint Capabilities
 
