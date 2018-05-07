@@ -10,7 +10,7 @@
 CenturyLink Cloud's S3 compatible storage service provides geo-redundant storage (GRS) services to deliver or store unstructured data. In delivering this service customers may need to understand best practices and scaling considerations to maintain optimal performance of the service.
 
 ### Platform Maximums
-* 1,200 req/sec (Get, Put, Delete, List) over a 60 second period **per Access Key ID (user)**.
+* 1,200 requests (Get, Put, Delete, List) over a 60 second period **per Access Key ID (user)**.
 
 ### Workload Types
 To design services to scale and performance we'll breakdown a few common types of workloads and align that with a general design best practice for the storage services.
