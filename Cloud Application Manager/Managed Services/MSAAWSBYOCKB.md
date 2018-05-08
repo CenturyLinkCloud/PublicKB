@@ -1,15 +1,15 @@
-{{{ 
-    "title": "CenturyLink Managed Services Anywhere AWS Buy-Your-Own-Cloud Requirements", "date": "05-7-2018", 
-    "author": "Chris Meyer", 
-    "attachments": [], 
-    "contentIsHTML": false 
+{{{
+    "title": "CenturyLink Managed Services Anywhere AWS Buy-Your-Own-Cloud Requirements", "date": "05-7-2018",
+    "author": "Chris Meyer",
+    "attachments": [],
+    "contentIsHTML": false
 }}}
 
 ### Content
 * [Overview](#Overview)
 * [AWS Configuration Requirements](#AWS\ Configuration\ Requirements)
-* [AWS Managed Services Anywhere IAM Policy](#AWS\ Managed\ \Services \Anywhere\ IAM\ Policy)
-* [Supporting AWS Accounts in an Organization](Supporting\ AWS\ Accounts\ in\ an\ Organization)
+* [AWS Managed Services Anywhere IAM Policy](#AWS\ Managed\ Services\ Anywhere\ IAM\ Policy)
+* [Supporting AWS Accounts in an Organization](#Supporting\ AWS\ Accounts\ in\ an\ Organization)
 
 
 #### Overview  
@@ -72,4 +72,4 @@ Managed Services Anywhere AWS IAM Policy (as of May 7st, 2018)
 
 
 ##### Supporting AWS Accounts in an Organization
-* We support managed AWS accounts that are under an AWS Organization assuming the same requirements as independent accounts are meet at the Organizational account level. 
+* We support managed AWS accounts that are under an AWS Organization assuming the same requirements as independent accounts are meet at the Organizational account level.
