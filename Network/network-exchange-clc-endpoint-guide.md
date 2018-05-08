@@ -1,6 +1,6 @@
 {{{
   "title": "Network Exchange CenturyLink Cloud Endpoint Guide",
-  "date": "05-07-2018",
+  "date": "05-08-2018",
   "author": "Jason Holland",
   "attachments": [],
   "related-products" : [],
