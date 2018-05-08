@@ -71,5 +71,5 @@ Managed Services Anywhere AWS IAM Policy (as of May 7st, 2018)
 ```
 
 
-##### Supporting AWS Accounts in an Organization
+### Supporting AWS Accounts in an Organization
 * We support managed AWS accounts that are under an AWS Organization assuming the same requirements as independent accounts are meet at the Organizational account level.
