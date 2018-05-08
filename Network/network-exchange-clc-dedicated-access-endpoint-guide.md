@@ -1,6 +1,6 @@
 {{{
   "title": "Network Exchange Dedicated Access Endpoint Guide",
-  "date": "05-01-2018",
+  "date": "05-08-2018",
   "author": "Jason Holland",
   "attachments": [],
   "related-products" : [],
@@ -11,7 +11,7 @@
 ### Dedicated Access Endpoint Connectivity Prerequisites
 
 * End Users must establish a CenturyLink Cloud (CLC) master account and sub-accounts, the latter to create isolation between the networking resources of the business units of their enterprise. The Exchanges created under each sub-account will be logically isolated from one another.
-* The desired site must be supported within Network Exchange. See the [Network Exchange Availability Matrix and Configuration Guide](https://www.ctl.io/knowledge-base/network/network-exchange-connectivity-matrix-configuration-guide/) for supported data centers.
+* The desired site must be supported within Network Exchange. See the [Network Exchange Availability Matrix and Configuration Guide](network-exchange-connectivity-matrix-configuration-guide.md) for supported data centers.
 
 ### Dedicated Access Endpoint Capabilities
 
@@ -23,10 +23,10 @@
 ### Notes
 
 * Dedicated Access may be used for connecting directly to CenturyLink Managed Hosting and third party networks and devices.
-* This document does not apply to CenturyLink endpoints reached via HAN. For HAN-connected endpoints, please refer to the [Network Exchange CenturyLink Managed Hosting via HAN Endpoint Guide](https://www.ctl.io/knowledge-base/network/network-exchange-clc-managed-hosting-endpoint-guide/).
+* This document does not apply to CenturyLink endpoints reached via HAN. For HAN-connected endpoints, please refer to the [Network Exchange CenturyLink Managed Hosting via HAN Endpoint Guide](network-exchange-clc-managed-hosting-endpoint-guide.md).
 * Additional purchase(s) required includes Hosting Access Extension (HAE) - a cross connect - with number of orders matching the number of connections, one for a single line or two for redundant connections. The cross connects will connect Network Exchange and the End User’s equipment following the provisioning of Network Exchange. Network Exchange will provide the equipment location and ports on the Network Exchange switches to be connected to, so the connections can be completed.
 * The user will have a choice between a 1Gbps and 10Gbps connection. The optics used to connect to Network Exchange are one of:
   * QFX-SFP-1GE-LX SFP 1000BASE-LX Gigabit Ethernet Optics, 1,310 nm for 10 km transmission on single mode fiber-optic (SMF)
   * QFX-SFP-10GE-LR SFP+ 10GBASE-LR 10 Gigabit Ethernet Optics, 1,310 nm for 10 km transmission on single mode fiber-optic (SMF)
 * Service Delivery will obtain the proper optics for the other end of the cross connect, matching speed and type (SMF). 
-* Currently, an End User may only add Dedicated Access Endpoint(s) present in the same metropolitan area as the serving instance of Network Exchange. Where more than one Dedicated Access endpoint is served, all may be included in a given Exchange. See the [Network Exchange Availability Matrix and Configuration Guide](https://www.ctl.io/knowledge-base/network/network-exchange-connectivity-matrix-configuration-guide/) for more information.
+* Currently, an End User may only add Dedicated Access Endpoint(s) present in the same metropolitan area as the serving instance of Network Exchange. Where more than one Dedicated Access endpoint is served, all may be included in a given Exchange. See the [Network Exchange Availability Matrix and Configuration Guide](network-exchange-connectivity-matrix-configuration-guide.md) for more information.
