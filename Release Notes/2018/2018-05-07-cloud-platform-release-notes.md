@@ -12,14 +12,15 @@
 
 ##### Managed Services Anywhere
 
-We are excited to launch few major enhancements to our Managed Services Anywhere product. As you are aware we have launched our initial set of Managed Services on AWS in February of 2017 and expanded to Azure in April of 2017. We are now announcing the following enhancements to our Managed Services Offering.
+We are excited to launch few major enhancements to our Managed Services Anywhere product. As you are aware we have launched our initial set of Managed Services on AWS in February of 2017 and expanded to Azure in April of 2017. We are now announcing additional enhancements to our Managed Services Offering.
 
 ###### Supported Platforms
 
 Besides AWS & Azure we are now expanding our supported platforms to include CenturyLink Private Cloud (Dedicated Cloud Compute – Foundation). CenturyLink Private Cloud (DCC-F) users can now signup for Cloud Application Manager and enable Managed Services and get the same features that they would get on AWS & Azure.
 
 ###### Improved set of fully supported services:
-Our initial Managed Services offering included Managed Operating System of Microsoft Windows and RedHat Enterprise Linux flavors. Our improved set of services available now will include
+
+Our initial Managed Services offering included Managed Operating System of Microsoft Windows and RedHat Enterprise Linux flavors. Our expanded set of services now include:
 
 A) Managed Operating System of Microsoft Windows and RedHat Enterprise Linux
 
@@ -29,7 +30,7 @@ C) AWS Services (Amazon EC2, VPC, Relational Database Services, EBS, S3, ELB, Ro
 
 D) Azure Services (Virtual Machines, Virtual Network, VPN Gateway, Security Groups, ExpressRoute, IP Addresses, Blob Storage, Queue Storage, Disk Storage
 
-E) Edge Gateway, VMware vCloud Director service features
+E) DCC-Foundation Edge Gateway & VMware vCloud Director service features
 
 ###### Service enablement
 Going forward customers can enable Managed Services by "Provider" instead of enabling by instance. Provider is a representation of an Account in the downstream cloud platform. Once Managed Services are enabled on a Provider, CenturyLink will provide full support on the services listed above.
@@ -43,7 +44,8 @@ $0 - $50k = 45%
 $50k - $250k = 40%
 $250k + = 35%
 
-If MSA is selected, Platform Support is not charged.
+Platform Support is not charged for the provider(s) where MSA is enabled.
+
 To find out more about the updates to Managed Services Anywhere please visit (https://www.ctl.io/cloud-application-manager/managed-services-anywhere/) and (https://www.ctl.io/knowledge-base/cloud-application-manager/faq/)
 
 ##### Cloud Optimization and Analytics
