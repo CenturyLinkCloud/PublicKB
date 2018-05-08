@@ -7,13 +7,12 @@
 
 ### Content
 * [Overview](#Overview)
-* [AWS Configuration Requirements](#AWS\ Configuration\ Requirements)
-* [AWS Managed Services Anywhere IAM Policy](#AWS\ Managed\ \Services \Anywhere\ IAM\ Policy)
-* [Supporting AWS Accounts in an Organization](Supporting\ AWS\ Accounts\ in\ an\ Organization)
+* [AWS Configuration Requirements](#AWS-Configuration-Requirements)
+* [AWS Managed Services Anywhere IAM Policy](#AWS-Managed-Services-Anywhere-IAM-Policy)
+* [Supporting AWS Accounts in an Organization](#Supporting-AWS-Accounts-in-an-Organization)
 
 
-#### Overview  
-
+### Overview 
 This KB details the requirements of Centurylink's Managed Services Anywhere (MSA) offering with customer provided AWS accounts.
 
 ### AWS Configuration Requirements
@@ -71,5 +70,5 @@ Managed Services Anywhere AWS IAM Policy (as of May 7st, 2018)
 ```
 
 
-##### Supporting AWS Accounts in an Organization
+### Supporting AWS Accounts in an Organization
 * We support managed AWS accounts that are under an AWS Organization assuming the same requirements as independent accounts are meet at the Organizational account level. 
