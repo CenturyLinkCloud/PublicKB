@@ -22,4 +22,4 @@ For more details: [Partner Cloud Integration: Detailed Billing Report](https://w
 
 ##### Cloud Application Manager
 
-Issue preventing optimized AWS account notifications from being reviewed by the Cloud Application Manager development team has been resolved.
+Issue preventing optimized AWS account notifications from being reviewed by Cloud Application Manager development team has been resolved.
