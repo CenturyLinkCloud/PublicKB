@@ -12,11 +12,11 @@
 
 ##### Managed Services Anywhere
 
-We are excited to launch few major enhancements to our Managed Services Anywhere product. As you are aware we have launched our initial set of Managed Services on AWS in February of 2017 and expanded to Azure in April of 2017. We are now announcing additional enhancements to our Managed Services Offering.
+We are excited to launch a few major enhancements to our Managed Services Anywhere product. As you are aware we launched our initial set of Managed Services on AWS in February of 2017 and expanded to Azure in April of 2017. We are now announcing additional enhancements to our Managed Services Offering.
 
 ###### Supported Platforms
 
-Besides AWS & Azure we are now expanding our supported platforms to include CenturyLink Private Cloud (Dedicated Cloud Compute – Foundation). CenturyLink Private Cloud (DCC-F) users can now signup for Cloud Application Manager and enable Managed Services and get the same features that they would get on AWS & Azure.
+Besides AWS and Azure, we are now expanding our supported platforms to include CenturyLink Private Cloud (Dedicated Cloud Compute – Foundation). CenturyLink Private Cloud (DCC-F) users can now signup for Cloud Application Manager and enable Managed Services and get the same features that they would get on AWS & Azure.
 
 ###### Improved set of fully supported services:
 
@@ -38,17 +38,9 @@ Going forward customers can enable Managed Services by "Provider" instead of ena
 ###### Billing
 Going forward Managed Services charge is calculated based on the spend of the Provider on which it is enabled unlike the per instance/per hour model. Managed Services are charged on a graduated spend.
 
-Graduated Pricing Tiers:
-
-$0 - $50k = 45%
-
-$50k - $250k = 40%
-
-$250k + = 35% 
-
 Platform Support is not charged for the provider(s) where MSA is enabled.
 
-To find out more about the updates to Managed Services Anywhere please visit (https://www.ctl.io/cloud-application-manager/managed-services-anywhere/) and (https://www.ctl.io/knowledge-base/cloud-application-manager/faq/)
+Find out more about the updates to Managed Services Anywhere in https://www.ctl.io/cloud-application-manager/managed-services-anywhere/ and [the FAQ](https://www.ctl.io/knowledge-base/cloud-application-manager/faq/)
 
 ##### Cloud Optimization and Analytics
 
