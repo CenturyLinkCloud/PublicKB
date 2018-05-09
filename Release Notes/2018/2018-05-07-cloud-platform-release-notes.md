@@ -41,8 +41,10 @@ Going forward Managed Services charge is calculated based on the spend of the Pr
 Graduated Pricing Tiers:
 
 $0 - $50k = 45%
+
 $50k - $250k = 40%
-$250k + = 35%
+
+$250k + = 35% 
 
 Platform Support is not charged for the provider(s) where MSA is enabled.
 
