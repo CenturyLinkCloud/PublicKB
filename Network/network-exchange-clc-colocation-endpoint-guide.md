@@ -11,7 +11,7 @@
 ### Colocation Endpoint Connectivity Prerequisites
 
 * End Users must establish a CenturyLink Cloud (CLC) master account and sub-accounts, the latter to create isolation between the networking resources of the business units of their enterprise. The Exchanges created under each sub-account will be logically isolated from one another.
-* The desired colocation site must be supported within Network Exchange. See the *[Network Exchange Availability Matrix and Configuration Guide](network-exchange-connectivity-matrix-configuration-guide.md)* for supported data centers.
+* The desired colocation site must be supported within Network Exchange. See the *[Network Exchange Availability Matrix and Configuration Guide](../Network/network-exchange-connectivity-matrix-configuration-guide.md)* for supported data centers.
 
 ### Colocation Endpoint Capabilities
 
@@ -30,4 +30,4 @@ To create a dedicated virtual routing table (Dedicated VR), the VR will need to 
   * CSCO-GLC-T 1000BASE-T SFP Copper SFP, Up to 100M (328 ft.) on Cat 5 unshielded twisted-pair copper cabling
 * The user will obtain the proper optics for their end of the cross connect, matching speed and type (SMF or Cat 5). 
 * The Network Exchange fabric leverages the economics of shared networking while logically isolating network traffic between Exchanges, even within the same End User account.
-* Currently, an End User may only add the colocation endpoint(s) present in the same metropolitan area as the serving instance of Network Exchange. Where more than one colocation endpoint is served, all may be included in a given Exchange. See the *[Network Exchange Availability Matrix and Configuration Guide](network-exchange-connectivity-matrix-configuration-guide.md)* for available endpoints per metro area. 
+* Currently, an End User may only add the colocation endpoint(s) present in the same metropolitan area as the serving instance of Network Exchange. Where more than one colocation endpoint is served, all may be included in a given Exchange. See the *[Network Exchange Availability Matrix and Configuration Guide](../Network/network-exchange-connectivity-matrix-configuration-guide.md)* for available endpoints per metro area. 

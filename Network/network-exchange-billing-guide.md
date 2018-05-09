@@ -1,6 +1,6 @@
 {{{
   "title": "Network Exchange Billing Guide",
-  "date": "05-01-2018",
+  "date": "05-09-2018",
   "author": "Jason Holland",
   "attachments": [],
   "related-products" : [],
@@ -27,7 +27,7 @@ Prices are based on the following parameters:
 3) Redundancy, and
 4) for CenturyLink Cloud, location
 
-* Discounts are given for contract terms of 1, 2, 3 and 4 years. Additional discounts may be granted based on total CenturyLink product purchases. 
+* Discounts are given for contract terms of 1, 2, and 3 years. Additional discounts may be granted based on total CenturyLink product purchases. 
 
 ### Network Exchange Pricing
 

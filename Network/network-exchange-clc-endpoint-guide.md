@@ -25,6 +25,6 @@ To create a dedicated virtual routing table (Dedicated VR), the VR will need to 
 ### Notes
 
 * The Network Exchange fabric leverages the economics of shared networking while logically isolating network traffic between Exchanges, even within the same End User account. Dedicated access to CenturyLink Cloud is not supported with Network Exchange.
-* Currently, an End User may only add the CenturyLink Cloud endpoint(s) present in the same metropolitan area as the serving instance of Network Exchange. Where more than one CLC endpoint is served, all may be included in a given Exchange. See the *[Network Exchange Availability Matrix and Configuration Guide](network-exchange-connectivity-matrix-configuration-guide.md)* for more information.
+* Currently, an End User may only add the CenturyLink Cloud endpoint(s) present in the same metropolitan area as the serving instance of Network Exchange. Where more than one CLC endpoint is served, all may be included in a given Exchange. See the *[Network Exchange Availability Matrix and Configuration Guide](../Network/network-exchange-connectivity-matrix-configuration-guide.md)* for more information.
 * A CLC service ticket is not required to add or delete a CenturyLink Cloud endpoint.
 * For additional information regarding the Network Exchange architecture and use cases, please see the *[Network Exchange Product Page](https://www.ctl.io/network-exchange/)*.
