@@ -53,5 +53,5 @@ A recovery server boots off of disks of the DR SRN when a test failover/ failove
 
 ### Video Tutorial
 <p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0x9CRRQkZ0I" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kJI63oXwmrg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </p>
