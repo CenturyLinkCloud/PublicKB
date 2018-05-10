@@ -18,27 +18,30 @@ Here you will find any frequently asked questions for different topics.
 ___
 
 ### Costs
-##### When is a customer charged with Application Lifecycle Management charges?
-When an instance is deploy and running using one of the following.
+##### How is the Managed Services Anywhere (MSA) charge calculated?
+MSA charges are calculated based on the spend on all managed providers.  
 
--Application box<br>
--Script box<br>
--Template<br>
--Container<br>
--Deployment Policy<br>
+##### When is a customer charged with Application Lifecycle Management (ALM) charges?
+ALM charges are accrued on a per hour basis for instances that are deployed via Cloud Application Manager boxes and running within a non-managed (MSA) provider.  When instances that have been deployed via the cloud provider's console are registered within Cloud Application Manager, the accrual of ALM charges will likewise occur.
+
+##### Is Application Lifecycle Management (ALM) included in Managed Services Anywhere (MSA) charges?
+Yes, ALM is included in MSA.  No additional ALM charges are billed for instances that are on a managed provider.
+
+##### Is platform support included in Managed Services Anywhere (MSA) charges?
+Yes, platform support is included in MSA.  No additional platform support charges are billed for managed providers.
 
 ##### What if an Application box has multiple script boxes?
-Each instance representing a script box or a template within an application box is considered its own instance from a billing perspective.
+On a non-managed provider, each instance representing a script box or a template within an application box is considered its own instance and ALM charges will be accrued per instance.  
 
 ##### If a customer deploys a script box on an existing instance will there be any additional charge?
 No. There will not be any additional charge if the customer deploys a script box on an existing instance that was deployed using a deployment policy.
 
-##### Is the platform support fee optional?
-No.
+##### Is the platform support fee optional on a non-managed provider?
+No, platform support is not optional on non-managed providers.  Platform support is included for managed providers.
 
 ##### How is an instance defined?
 An instance is the output of execution of one of the following box types. Application box may
-have more than one instance. In terms of billing, an instance is charged only for the uptime of the instance.
+have more than one instance. In terms of Application Lifecycle Management billing, an instance is charged only for the uptime of the instance.
 
 -Application box<br>
 -Script box<br>
@@ -47,13 +50,10 @@ have more than one instance. In terms of billing, an instance is charged only fo
 -Deployment Policy<br>
 
 ##### A Template Box can be used to deploy a collection of virtual machines along with more than one cloud native service. Is it still a single instance from billing perspective?
-Yes, an execution of a Template Box is considered a single instance from billing perspective even though the template can be used to deploy several virtual machines or cloud native services.
+Yes, an execution of a Template Box is considered a single instance from an Application Lifecycle Management (non-mangage provider) billing perspective even though the template can be used to deploy several virtual machines or cloud native services.
 
 ##### When does a brown-field instance starts billing?
-After registering an auto-discovered instance, all brown-field instances will start charging according to the Application Lifecycle Management pricing.
-
-##### When a user buys Managed OS on Azure OR AWS, is the user charged on Application Lifecycle Management?
-User is charged on Application Lifecycle Management for the life of the instance. When they buy Managed OS on Azure OR AWS on that instance, the additional charge for Managed OS is levied on the instance starting from the time of applying that service. The collective charges are $ 0.13 per instance- hour managed.
+After registering an auto-discovered instance on a non-managed provider, all brown-field instances will start charging according to the Application Lifecycle Management pricing. 
 
 ##### How are charges represented on the invoice?
 Cloud Application Manager charges are represented on the invoice as one or more of the following line items
