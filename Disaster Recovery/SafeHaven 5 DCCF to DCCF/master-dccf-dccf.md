@@ -1,5 +1,5 @@
 {{{
-  "title": "Master Article - DCCF(Production) to CLC(DR) - SafeHaven Setup",
+  "title": "Master Article - DCCF(Production) to DCC-F(DR) - SafeHaven Setup",
   "date": "05-09-2018",
   "author": "Anshul Arora",
   "attachments": [],
