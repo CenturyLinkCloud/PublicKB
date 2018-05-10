@@ -18,7 +18,7 @@
 
 * Rate limit choices of 1Gb/s and 10Gb/s through shared bandwidth to and from the [Managed Hosting Network (HAN)](https://www.ctl.io/architecture/cns-architecture/), which is a CenturyLink network infrastructure used to provide connectivity for Managed Server customers, NAS Customers, and other CenturyLink managed services.
 * BGP is used for dynamically managing routes between Network Exchange and the End User’s network.
-* Near fully automated setup and tear down of connections between the Managed Hosting Network (HAN) and the dedicated ports on the terminating Network Exchange equipment. HAN requires additional configurations to be made outside of the Network Exchange portal.
+* Near fully automated setup and tear down of connections between the Managed Hosting Network (HAN) and the dedicated ports on the terminating Network Exchange equipment. HAN requires additional configurations performed outside of the Network Exchange portal.
 
 ### Notes
 
