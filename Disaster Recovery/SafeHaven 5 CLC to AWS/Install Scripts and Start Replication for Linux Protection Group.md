@@ -52,4 +52,4 @@ This article assumes that a Linux Protection group has been successfully created
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0x9CRRQkZ0I" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </p>
 
-**Next Step** is to [Modify WAN Replication Rate](Modify WAN Replication Rate and Check Replication Status for Windows.md)
+**Next Step** is to [Modify WAN Replication Rate](Modify WAN Replication Rate.md)

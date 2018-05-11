@@ -1,7 +1,7 @@
 {{{
-  "title": "ARTICLE TITLE",
-  "date": "01-15-2015",
-  "author": "Author Name",
+  "title": "AWS Dashboards",
+  "date": "01-24-2018",
+  "author": "Jason Oldham",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -42,7 +42,7 @@ Our Cloud Application Manager Monitoring dashboard is specific to Amazon Web Ser
 
 #### Required permissions in AWS:
 
-User should have the following actions in the IAM Policy for Monitoring site to display Cloud Watch metrics  
+User should have the following actions (below) as well as ReadOnlyAccess in the IAM Policy for Monitoring site to display Cloud Watch metrics  
 ```
 {
   "Version": "2012-10-17",

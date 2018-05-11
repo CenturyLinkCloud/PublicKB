@@ -22,7 +22,7 @@ CenturyLink's Relational DB Service is a database-as-a-service product that prov
 
 2. Navigate to the “Database Instances” screen. Identify and click on the database subscription you would like to delete. This takes you to a details screen specific to that subscription.
 
-3. From the details screen. Click the 'delete' button in the upper right corner of the page. Then, click 'Yes' when prompted.
+3. From the details screen. Click the 'delete' button in the upper right corner of the page. Then, click 'Yes' when prompted. This will delete any replica databases as well. Note: it's not possible to delete a replica without deleting the entire instance.
    ![DeleteDB](../images/rdbs/rdbs-delete-db.png)
 
 4. As part of the Delete process, we automatically execute one last backup.  This backup will be kept for 3 months.  This is to help safeguard people from themselves.  And allows you a very easy way to recover if you choose to.  If you know for sure you won't use it you can manually delete that backup.

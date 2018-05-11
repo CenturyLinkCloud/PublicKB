@@ -105,7 +105,11 @@ A: An "IN_PROGRESS" status for a backup job means the data is actively being tra
 
 **Q: How do you handle backing up open files?**
 
-A: At this time, open files will not be backed up and a “Partial_Success” will be shown as the Restore Point Status if open files are encountered in the targeted backup path.
+A: For Windows, Open file backups are supported through VSS snapshots for any VSS compliant applications running on the Windows server. you can enable VSS backups on specific backup policies for Windows servers by checking the "Create VSS Snapshot" checkbox. This can be done when creating the policy, or by editing an existing policy.
+
+![](../images/backup/faq/vss.png)
+
+For Linux, open files will not be backed up and a “Partial_Success” will be shown as the Restore Point Status if open files are encountered in the targeted backup path.
 
 **Q: How can I confirm that my backups were successful?**
 
