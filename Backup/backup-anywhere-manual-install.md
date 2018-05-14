@@ -12,7 +12,7 @@
 
 [Simple Backup Service](https://www.ctl.io/simple-backup-service/) provides file and folder level backups and restores. The service is integrated with the [Control Portal](https://control.ctl.io/) and is [API accessible](https://www.ctl.io/api-docs/v2/#simple-backup). That gives you flexibility and ease of use to configure and customize backup policies.
 
-Simple Backup Anywhere extends Simple Backup outside of CenturyLink Cloud to allow users to backup and protect their workloads virtually anywhere outbound internet connectivity is available. Simple Backup Anywhere is currently available to all the versions of [supported operating systems on CenturyLink Cloud](../Support/supported-operating-systems.md).
+Simple Backup Anywhere extends Simple Backup outside of CenturyLink Cloud to allow users to backup and protect their workloads virtually anywhere outbound internet connectivity is available. Simple Backup Anywhere is  available to all the versions of [supported operating systems on CenturyLink Cloud](../Support/supported-operating-systems.md).
 
 ### Simple Backup Anywhere Manual Installation Guide
 

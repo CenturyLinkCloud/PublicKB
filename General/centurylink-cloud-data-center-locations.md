@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Data Center Locations",
-  "date": "11-6-2017",
+  "date": "3-20-2018",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -24,4 +24,4 @@ Canada (Vancouver) - CA1|Cyxtera (VC1)|555 West Hastings Street<br>Vancouver, BC
 Germany (Frankfurt) - DE1|Equinix|Lärchenstrasse 110<br>65933 Frankfurt- Griesheim Germany|[provider details](http://www.equinix.com/en_US/locations/germany/frankfurt-data-centers/)
 Germany (Frankfurt) - DE3|Cyxtera (FR6)|Landstraße 296a<br>60314 Frankfurt am Main Germany|[provider details](https://www.cyxtera.com/images/fr6-frankfurt-germany-colocation-tearsheet.pdf)
 APAC (Singapore) - SG1|Cyxtera (SG2)|29A International Business Park<br>Jurong East Singapore 609934|[provider details](https://www.cyxtera.com/images/sg2-singapore-colocation-tearsheet-ss122015.pdf)
-Australia - AU1|Cyxtera (3PSY4)|4 Eden Park Dr <br>Macquarie Park NSW 2113|[provider details](https://www.cyxtera.com/images/sy4-sydney-australia-ss150682.pdf)
+Australia - AU1|NextDC (S1)|4 Eden Park Dr <br>Macquarie Park NSW 2113|[provider details](https://www.nextdc.com/data-centres/s1-sydney-data-centre)
